@@ -1,0 +1,55 @@
+#
+# categories:
+# 0 = type defined (unique)
+# 1 = piece good (i.e. crates of XY)
+# 2 = mass good (i.e. ore, sand, coal)
+# 3 = oil type fluids
+#
+obj=good
+name=Passagiere
+metric=
+catg=0
+value=45
+speed_bonus=15
+weight_per_unit=75
+-----------------------
+obj=good
+name=Post
+metric=sack
+catg=0
+value=55
+speed_bonus=15
+weight_per_unit=50
+--------------------
+obj=good
+name=None
+metric=
+catg=0
+value=0
+speed_bonus=0
+weight_per_unit=0
+-----------------------
+obj=good
+name=Kohle
+metric=tonnen
+catg=2
+value=48
+speed_bonus=2
+weight_per_unit=1000
+-----------------------
+obj=good
+name=Oel
+metric=m3
+catg=3
+value=58
+speed_bonus=3
+weight_per_unit=900
+-----------------------
+obj=good
+name=Gasoline
+metric=m3
+catg=3
+value=120
+speed_bonus=4
+weight_per_unit=860
+-----------------------
