@@ -47,28 +47,12 @@ Dims=1,1,4
 NoInfo=1
 noconstruction=1
 intro_year=1
-BackImage[0][0][0][0][0][0]=ttd-depot-rail.1.4
+BackImage[0][0][0][0][0][0]=ttd-depot-rail.1.2
 FrontImage[0][0][0][0][0][0]=ttd-depot-rail.0.0
-BackImage[1][0][0][0][0][0]=ttd-depot-rail.1.5
+BackImage[1][0][0][0][0][0]=ttd-depot-rail.1.3
 FrontImage[1][0][0][0][0][0]=ttd-depot-rail.0.1
 FrontImage[2][0][0][0][0][0]=ttd-depot-rail.0.2
 FrontImage[3][0][0][0][0][0]=ttd-depot-rail.0.3
-icon=> ls-depot-rail.0.4
-cursor=ttd-depot-rail.0.5
---------------------
-Obj=building
-Name=TrainDepot
-# must be 1*1
-Dims=1,1,4
-NoInfo=1
-noconstruction=1
-intro_year=1
-BackImage[0][0][0][0][0][0]=ttd-depot-rail.1.4
-FrontImage[0][0][0][0][0][0]=ttd-depot-rail.0.0
-BackImage[1][0][0][0][0][0]=ttd-depot-rail.1.5
-FrontImage[1][0][0][0][0][0]=ttd-depot-rail.0.1
-FrontImage[2][0][0][0][0][0]=ttd-depot-rail.0.2
-FrontImage[3][0][0][0][0][0]=ttd-depot-rail.0.3
-icon=> ls-depot-rail.0.4
-cursor=ttd-depot-rail.0.5
+icon=> ls-depot-rail.1.0
+cursor=ttd-depot-rail.1.1
 --------------------

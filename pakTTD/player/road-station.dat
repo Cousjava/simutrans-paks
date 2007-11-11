@@ -9,10 +9,10 @@ NoInfo=1
 Dims=1,1,2
 intro_year=1400
 level=1
-BackImage[0][0][0][0][0][0]=ls-busstop.0.1
-FrontImage[0][0][0][0][0][0]=ls-busstop.0.0
-BackImage[1][0][0][0][0][0]=ls-busstop.0.2
-FrontImage[1][0][0][0][0][0]=ls-busstop.0.3
-icon=> ls-busstop.0.4
-cursor=ls-busstop.0.5
+BackImage[0][0][0][0][0][0]=ttd-busstop.0.1
+FrontImage[0][0][0][0][0][0]=ttd-busstop.0.0
+BackImage[1][0][0][0][0][0]=ttd-busstop.0.2
+FrontImage[1][0][0][0][0][0]=ttd-busstop.0.3
+icon=> ttd-busstop.0.4
+cursor=ttd-busstop.0.5
 --------------------
