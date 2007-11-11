@@ -1,0 +1,74 @@
+# all kinds of depots
+#
+Obj=building
+Name=AirDepot
+# must be 1*1
+Dims=1,1,4
+NoInfo=1
+FrontImage[0][0][0][0][0]=ttd-depot-air.0.0
+FrontImage[1][0][0][0][0]=ttd-depot-air.0.3
+FrontImage[2][0][0][0][0]=ttd-depot-air.0.2
+FrontImage[3][0][0][0][0]=ttd-depot-air.0.1
+icon=> ttd-depot-air.1.0
+cursor=ttd-depot-air.1.1
+--------------------
+Obj=building
+Name=CarDepot
+# must be 1*1
+Dims=1,1,4
+NoInfo=1
+FrontImage[0][0][0][0][0]=ttd-depot-road.0.0
+FrontImage[1][0][0][0][0]=ttd-depot-road.0.3
+FrontImage[2][0][0][0][0]=ttd-depot-road.0.2
+FrontImage[3][0][0][0][0]=ttd-depot-road.0.1
+icon=> ttd-depot-road.0.4
+cursor=ttd-depot-road.0.5
+--------------------
+Obj=building
+Name=TramDepot
+# must be 1*1
+Dims=1,1,4
+NoInfo=1
+noconstruction=1
+intro_year=1
+BackImage[0][0][0][0][0][0]=ttd-depot-tram.1.4
+FrontImage[0][0][0][0][0][0]=ttd-depot-tram.0.0
+BackImage[1][0][0][0][0][0]=ttd-depot-tram.1.5
+FrontImage[1][0][0][0][0][0]=ttd-depot-tram.0.1
+FrontImage[2][0][0][0][0][0]=ttd-depot-tram.0.2
+FrontImage[3][0][0][0][0][0]=ttd-depot-tram.0.3
+icon=> ls-depot-tram.0.4
+cursor=ttd-depot-tram.0.5
+--------------------
+Obj=building
+Name=TrainDepot
+# must be 1*1
+Dims=1,1,4
+NoInfo=1
+noconstruction=1
+intro_year=1
+BackImage[0][0][0][0][0][0]=ttd-depot-rail.1.4
+FrontImage[0][0][0][0][0][0]=ttd-depot-rail.0.0
+BackImage[1][0][0][0][0][0]=ttd-depot-rail.1.5
+FrontImage[1][0][0][0][0][0]=ttd-depot-rail.0.1
+FrontImage[2][0][0][0][0][0]=ttd-depot-rail.0.2
+FrontImage[3][0][0][0][0][0]=ttd-depot-rail.0.3
+icon=> ls-depot-rail.0.4
+cursor=ttd-depot-rail.0.5
+--------------------
+Obj=building
+Name=TrainDepot
+# must be 1*1
+Dims=1,1,4
+NoInfo=1
+noconstruction=1
+intro_year=1
+BackImage[0][0][0][0][0][0]=ttd-depot-rail.1.4
+FrontImage[0][0][0][0][0][0]=ttd-depot-rail.0.0
+BackImage[1][0][0][0][0][0]=ttd-depot-rail.1.5
+FrontImage[1][0][0][0][0][0]=ttd-depot-rail.0.1
+FrontImage[2][0][0][0][0][0]=ttd-depot-rail.0.2
+FrontImage[3][0][0][0][0][0]=ttd-depot-rail.0.3
+icon=> ls-depot-rail.0.4
+cursor=ttd-depot-rail.0.5
+--------------------

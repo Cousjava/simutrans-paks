@@ -1,0 +1,18 @@
+# all road stops (will be used for trams too)
+
+Obj=building
+Name=BusStop
+# must be 1*1
+type=busstop
+enables_pax=1
+NoInfo=1
+Dims=1,1,2
+intro_year=1400
+level=1
+BackImage[0][0][0][0][0][0]=ls-busstop.0.1
+FrontImage[0][0][0][0][0][0]=ls-busstop.0.0
+BackImage[1][0][0][0][0][0]=ls-busstop.0.2
+FrontImage[1][0][0][0][0][0]=ls-busstop.0.3
+icon=> ls-busstop.0.4
+cursor=ls-busstop.0.5
+--------------------
