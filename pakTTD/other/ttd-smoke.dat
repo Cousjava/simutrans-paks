@@ -1,0 +1,16 @@
+Obj=smoke
+Name=Steam
+Image[0]=ttd-smoke.0.5
+Image[1]=ttd-smoke.0.6
+Image[2]=ttd-smoke.0.7
+Image[3]=ttd-smoke.0.8
+Image[4]=ttd-smoke.0.9
+-----------------------
+Obj=smoke
+Name=Diesel
+Image[0]=ttd-smoke.0.0
+Image[1]=ttd-smoke.0.1
+Image[2]=ttd-smoke.0.2
+Image[3]=ttd-smoke.0.3
+Image[4]=ttd-smoke.0.4
+-----------------------

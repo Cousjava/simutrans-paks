@@ -1,0 +1,39 @@
+# Tram rails
+Obj=way
+Name=light_rails
+waytype=track
+system_type=7
+cost=10000
+maintenance=1000
+topspeed=70
+max_weight=180
+icon=> ttd-light-rail.1.5
+cursor=ttd-light-rail.1.6
+# unknown
+Image[-]=ttd-light-rail.0.0
+#single tracks
+Image[S]=ttd-light-rail.0.0
+Image[N]=ttd-light-rail.0.0
+Image[E]=ttd-light-rail.0.1
+Image[W]=ttd-light-rail.0.1
+# normal connection
+Image[NS]=ttd-light-rail.0.0
+Image[EW]=ttd-light-rail.0.1
+# tree ways
+Image[NSE]=ttd-light-rail.1.3
+Image[NSW]=ttd-light-rail.1.1
+Image[NEW]=ttd-light-rail.1.2
+Image[SEW]=ttd-light-rail.1.4
+# forway
+Image[NSEW]=ttd-light-rail.1.0
+# curves (here diagonals)
+Image[NE]=ttd-light-rail.0.4
+Image[SE]=ttd-light-rail.0.6
+Image[NW]=ttd-light-rail.0.5
+Image[SW]=ttd-light-rail.0.3
+# hangtyp * animation
+ImageUp[3]=ttd-light-rail.0.9
+ImageUp[6]=ttd-light-rail.0.10
+ImageUp[9]=ttd-light-rail.0.8
+ImageUp[12]=ttd-light-rail.0.7
+---
