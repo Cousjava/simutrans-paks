@@ -1,0 +1,35 @@
+Obj=way
+Name=asphalt_road
+cost=10000
+maintenance=800
+topspeed=130
+max_weight=100
+intro_year = 1940
+intro_month = 7
+waytype=road
+# skin
+icon=> asphalt-road.2.6
+cursor=asphalt-road.2.7
+# rbis * animation
+Image[-]=asphalt-road.0.2
+Image[N]=asphalt-road.1.6
+Image[S]=asphalt-road.1.4
+Image[E]=asphalt-road.1.7
+Image[W]=asphalt-road.1.5
+Image[NS]=asphalt-road.0.1
+Image[EW]=asphalt-road.0.1
+Image[NSE]=asphalt-road.1.1
+Image[NSW]=asphalt-road.1.2
+Image[NEW]=asphalt-road.1.0
+Image[SEW]=asphalt-road.1.3
+Image[NSEW]=asphalt-road.0.2
+Image[NE]=asphalt-road.0.5
+Image[SE]=asphalt-road.0.4
+Image[NW]=asphalt-road.0.6
+Image[SW]=asphalt-road.0.7
+# hangtyp * animation
+ImageUp[3]=asphalt-road.2.2
+ImageUp[6]=asphalt-road.2.1
+ImageUp[9]=asphalt-road.2.3
+ImageUp[12]=asphalt-road.2.0
+--------------------
