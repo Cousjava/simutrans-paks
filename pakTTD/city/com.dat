@@ -6,10 +6,57 @@
 # However for SImuTTD only res and com are used. Thus this would be also the place
 # for some industrial buildings
 #----------------------------------------------------------------------------
+#----------------------------------------------------------------------------
+# List of commercial buildings (Zephyris tropicals)
+#   Only 1*1 at the moment
+##Levels from 1 to n at the moment
+#----------------------------------------------------------------------------
+Obj=building
+Name=RES_95_09
+copyright=Zephyris
+Type=res
+Climates=tropic
+Level=9
+BackImage[0][0][0][1][0]=zephyris-tropical.1.1
+BackImage[0][0][0][0][0]=zephyris-tropical.2.1
+--
+Obj=building
+Name=RES_95_11
+copyright=Zephyris
+Type=res
+Climates=tropic
+Level=11
+BackImage[0][0][0][1][0]=zephyris-tropical.1.0
+BackImage[0][0][0][0][0]=zephyris-tropical.2.0
+--
+Obj=building
+Name=RES_95_13
+copyright=Zephyris
+Type=res
+Climates=tropic
+Level=13
+BackImage[0][0][0][1][0]=zephyris-tropical.1.2
+BackImage[0][0][0][0][0]=zephyris-tropical.2.2
+--
+Obj=building
+Name=RES_95_15
+copyright=Zephyris
+Type=res
+Climates=tropic
+Level=15
+BackImage[0][0][0][1][0]=zephyris-tropical.1.3
+BackImage[0][0][0][0][0]=zephyris-tropical.2.3
+--
+#----------------------------------------------------------------------------
+# List of commercial buildings (other)
+#   Only 1*1 at the moment
+##Levels from 1 to n at the moment
+#----------------------------------------------------------------------------
 Obj=building
 Name=COM_90_01
 copyright=Zimmlock
 Type=com
+Climates=arctic,rocky,tundra,temperate,mediterran,tropic,desert
 Level=1
 BackImage[0][0][0][0][0]=ttrs-com.0.0
 --------------------
@@ -17,6 +64,7 @@ Obj=building
 Name=COM_90_03
 copyright=Zimmlock
 Type=com
+Climates=arctic,rocky,tundra,temperate,mediterran
 Level=3
 BackImage[0][0][0][1][0]=ttrs-com.1.0
 BackImage[0][0][0][0][0]=ttrs-com.2.0
@@ -25,6 +73,7 @@ Obj=building
 Name=COM_90_04
 copyright=Zimmlock
 Type=com
+Climates=arctic,rocky,tundra,temperate,mediterran
 Level=4
 BackImage[0][0][0][0][0]=ttrs-com.0.1
 --------------------
@@ -32,6 +81,7 @@ Obj=building
 Name=COM_90_05
 copyright=Zimmlock
 Type=com
+Climates=arctic,rocky,tundra,temperate,mediterran
 Level=5
 BackImage[0][0][0][1][0]=ttrs-com.1.1
 BackImage[0][0][0][0][0]=ttrs-com.2.1
@@ -40,6 +90,7 @@ Obj=building
 Name=COM_90_06
 copyright=Zimmlock
 Type=com
+Climates=arctic,rocky,tundra,temperate,mediterran
 Level=8
 BackImage[0][0][0][0][0]=ttrs-com.0.2
 --------------------
@@ -47,6 +98,7 @@ Obj=building
 Name=COM_90_08
 copyright=Zimmlock
 Type=com
+Climates=arctic,rocky,tundra,temperate,mediterran
 Level=8
 BackImage[0][0][0][0][0]=ttrs-com.0.6
 --------------------
@@ -54,6 +106,7 @@ Obj=building
 Name=COM_90_09
 copyright=Zimmlock
 Type=com
+Climates=arctic,rocky,tundra,temperate,mediterran
 Level=9
 BackImage[0][0][0][0][0]=ttrs-com.0.7
 --------------------
@@ -61,6 +114,7 @@ Obj=building
 Name=COM_91_09
 copyright=Zimmlock
 Type=com
+Climates=arctic,rocky,tundra,temperate,mediterran
 Level=9
 BackImage[0][0][0][0][0]=ttrs-com.0.4
 --------------------
@@ -68,6 +122,7 @@ Obj=building
 Name=COM_90_10
 copyright=Zimmlock
 Type=com
+Climates=arctic,rocky,tundra,temperate,mediterran
 Level=10
 BackImage[0][0][0][0][0]=ttrs-com.0.3
 --------------------
@@ -75,6 +130,7 @@ Obj=building
 Name=COM_90_11
 copyright=Zimmlock
 Type=com
+Climates=arctic,rocky,tundra,temperate,mediterran
 Level=11
 BackImage[0][0][0][0][0]=ttrs-com.0.5
 --------------------
@@ -82,6 +138,7 @@ Obj=building
 Name=COM_90_12
 copyright=Zimmlock
 Type=com
+Climates=arctic,rocky,tundra,temperate,mediterran
 Level=12
 BackImage[0][0][0][1][0]=ttrs-com.1.5
 BackImage[0][0][0][0][0]=ttrs-com.2.5
@@ -90,6 +147,7 @@ Obj=building
 Name=COM_90_13
 copyright=Zimmlock
 Type=com
+Climates=arctic,rocky,tundra,temperate,mediterran
 Level=13
 BackImage[0][0][0][1][0]=ttrs-com.1.4
 BackImage[0][0][0][0][0]=ttrs-com.2.4
@@ -98,6 +156,7 @@ Obj=building
 Name=COM_90_14
 copyright=Zimmlock
 Type=com
+Climates=arctic,rocky,tundra,temperate,mediterran
 Level=14
 BackImage[0][0][0][1][0]=ttrs-com.1.6
 BackImage[0][0][0][0][0]=ttrs-com.2.6
@@ -106,6 +165,7 @@ Obj=building
 Name=COM_90_15
 copyright=Zimmlock
 Type=com
+Climates=arctic,rocky,tundra,temperate,mediterran
 Level=15
 BackImage[0][0][0][1][0]=ttrs-com.1.2
 BackImage[0][0][0][0][0]=ttrs-com.2.2
@@ -114,6 +174,7 @@ Obj=building
 Name=COM_90_16
 copyright=Zimmlock
 Type=com
+Climates=arctic,rocky,tundra,temperate,mediterran,tropic,desert
 Level=16
 BackImage[0][0][0][1][0]=ttrs-com.1.3
 BackImage[0][0][0][0][0]=ttrs-com.2.3
@@ -122,6 +183,7 @@ Obj=building
 Name=COM_90_18
 copyright=Zimmlock
 Type=com
+Climates=arctic,rocky,tundra,temperate,mediterran
 Level=18
 BackImage[0][0][0][2][0]=ttrs-com.3.1
 BackImage[0][0][0][1][0]=ttrs-com.4.1
@@ -131,6 +193,7 @@ Obj=building
 Name=COM_90_20
 copyright=Zimmlock
 Type=com
+Climates=arctic,rocky,tundra,temperate,mediterran
 Level=20
 BackImage[0][0][0][2][0]=ttrs-com.3.2
 BackImage[0][0][0][1][0]=ttrs-com.4.2
@@ -140,6 +203,7 @@ Obj=building
 Name=COM_90_22
 copyright=Zimmlock
 Type=com
+Climates=arctic,rocky,tundra,temperate,mediterran
 Level=22
 BackImage[0][0][0][2][0]=ttrs-com.3.4
 BackImage[0][0][0][1][0]=ttrs-com.4.4
@@ -149,6 +213,7 @@ Obj=building
 Name=COM_90_24
 copyright=Zimmlock
 Type=com
+Climates=arctic,rocky,tundra,temperate,mediterran
 Level=18
 BackImage[0][0][0][2][0]=ttrs-com.3.3
 BackImage[0][0][0][1][0]=ttrs-com.4.3
@@ -158,6 +223,7 @@ Obj=building
 Name=COM_90_26
 copyright=Zimmlock
 Type=com
+Climates=arctic,rocky,tundra,temperate,mediterran
 Level=26
 BackImage[0][0][0][2][0]=ttrs-com.3.0
 BackImage[0][0][0][1][0]=ttrs-com.4.0

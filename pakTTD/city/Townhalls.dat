@@ -8,6 +8,7 @@ Build_Time=0
 copyright=Caelan
 Passengers=50
 Dims=1,1
+Climates=arctic,rocky,tundra,temperate,mediterran,tropic
 BackImage[0][0][0][1][0]=city-extra.1.0
 BackImage[0][0][0][0][0]=city-extra.2.0
 --------------------
@@ -18,6 +19,7 @@ Build_Time=3150
 NoConstruction=1
 Passengers=100
 Dims=2,2,1
+Climates=arctic,rocky,tundra,temperate,mediterran,tropic
 BackImage[0][0][0][0][0]=city-extra.0.5
 BackImage[0][0][1][0][0]=city-extra.0.4
 BackImage[0][1][0][0][0]=city-extra.0.3
