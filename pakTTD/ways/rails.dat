@@ -1,0 +1,34 @@
+Obj=way
+Name=wooden_rails
+cost=12000
+maintenance=800
+topspeed=130
+max_weight=100
+intro_year = 1810
+waytype=track
+# skin
+icon=> wodden-rails.2.6
+cursor=wodden-rails.2.7
+# rbis * animation
+Image[-]=wodden-rails.0.2
+Image[N]=wodden-rails.0.1
+Image[S]=wodden-rails.0.1
+Image[E]=wodden-rails.0.0
+Image[W]=wodden-rails.0.0
+Image[NS]=wodden-rails.0.1
+Image[EW]=wodden-rails.0.0
+Image[SEW]=wodden-rails.1.0
+Image[NEW]=wodden-rails.1.1
+Image[NSE]=wodden-rails.1.2
+Image[NSW]=wodden-rails.1.3
+Image[NSEW]=wodden-rails.0.2
+Image[NW]=wodden-rails.0.4
+Image[SE]=wodden-rails.0.5
+Image[NE]=wodden-rails.0.6
+Image[SW]=wodden-rails.0.7
+# hangtyp * animation
+ImageUp[3]=wodden-rails.2.2
+ImageUp[6]=wodden-rails.2.1
+ImageUp[9]=wodden-rails.2.3
+ImageUp[12]=wodden-rails.2.0
+--------------------
