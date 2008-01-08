@@ -12,11 +12,11 @@
 ##Levels from 1 to n at the moment
 #----------------------------------------------------------------------------
 Obj=building
-Name=RES_95_09
+Name=RES_95_08
 copyright=Zephyris
 Type=res
 Climates=tropic
-Level=9
+Level=8
 BackImage[0][0][0][1][0]=zephyris-tropical.1.1
 BackImage[0][0][0][0][0]=zephyris-tropical.2.1
 --
@@ -174,7 +174,7 @@ Obj=building
 Name=COM_90_16
 copyright=Zimmlock
 Type=com
-Climates=arctic,rocky,tundra,temperate,mediterran,tropic,desert
+Climates=arctic,rocky,tundra,temperate,mediterran
 Level=16
 BackImage[0][0][0][1][0]=ttrs-com.1.3
 BackImage[0][0][0][0][0]=ttrs-com.2.3

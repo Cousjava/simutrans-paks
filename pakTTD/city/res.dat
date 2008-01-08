@@ -140,7 +140,7 @@ Obj=building
 Name=RES_90_15
 copyright=Caelan
 Type=res
-Climates=arctic,rocky,tundra,temperate,mediterran,tropic,desert
+Climates=arctic,rocky,tundra,temperate,mediterran
 Level=15
 BackImage[0][0][0][0][0]=ttrs-res.3.1
 --------------------
@@ -165,7 +165,7 @@ Obj=building
 Name=RES_90_21
 copyright=Zimmlock
 Type=res
-Climates=arctic,rocky,tundra,temperate,mediterran,tropic,desert
+Climates=arctic,rocky,tundra,temperate,mediterran
 Level=21
 BackImage[0][0][0][1][0]=ttrs-res.1.1
 BackImage[0][0][0][0][0]=ttrs-res.2.1
