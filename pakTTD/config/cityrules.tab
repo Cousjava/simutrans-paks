@@ -12,7 +12,7 @@
 minimum_city_distance = 32
 
 # chance for renovation versus new building (bigger number => less sprawling)
-renovation_percentage = 7
+renovation_percentage = 13
 
 # at which number of inhabitants we need a new market?
 industry_increase_every = 2000
