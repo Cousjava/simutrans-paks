@@ -37,7 +37,7 @@ BackImage[1][0][0][0][0][0]=ttd-depot-tram.1.5
 FrontImage[1][0][0][0][0][0]=ttd-depot-tram.0.1
 FrontImage[2][0][0][0][0][0]=ttd-depot-tram.0.2
 FrontImage[3][0][0][0][0][0]=ttd-depot-tram.0.3
-icon=> ls-depot-tram.0.4
+icon=> ttd-depot-tram.0.4
 cursor=ttd-depot-tram.0.5
 --------------------
 Obj=building
@@ -53,6 +53,25 @@ BackImage[1][0][0][0][0][0]=ttd-depot-rail.1.3
 FrontImage[1][0][0][0][0][0]=ttd-depot-rail.0.1
 FrontImage[2][0][0][0][0][0]=ttd-depot-rail.0.2
 FrontImage[3][0][0][0][0][0]=ttd-depot-rail.0.3
-icon=> ls-depot-rail.1.0
+BackImage[0][0][0][0][0][1]=ttd-depot-rail.1.2
+FrontImage[0][0][0][0][0][1]=ttd-depot-rail.2.0
+BackImage[1][0][0][0][0][1]=ttd-depot-rail.1.3
+FrontImage[1][0][0][0][0][1]=ttd-depot-rail.2.1
+FrontImage[2][0][0][0][0][1]=ttd-depot-rail.2.2
+FrontImage[3][0][0][0][0][1]=ttd-depot-rail.2.3
+icon=> ttd-depot-rail.1.0
 cursor=ttd-depot-rail.1.1
+--------------------
+Obj=building
+Name=ShipDepot
+# must be 1*1
+Dims=1,1,2
+copyright=red*star
+NoInfo=1
+noconstruction=1
+intro_year=1
+FrontImage[0][0][0][0][0][0]=ttd-depot-ship.0.0
+FrontImage[1][0][0][0][0][0]=ttd-depot-ship.0.1
+icon=> ttd-depot-ship.0.2
+cursor=ttd-depot-ship.0.3
 --------------------
