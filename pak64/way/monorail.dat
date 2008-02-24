@@ -1,0 +1,171 @@
+#
+# Monorails for Simutrans
+#
+# author: Hj. Malthaner
+# date:   08-Aug-04
+# update: 08-Aug-04
+# update: 3-Oct-05 prissi
+#
+Obj=way
+Name=elevated_monorail
+cost=500000
+maintenance=750
+topspeed=120
+max_weight=110
+intro_year = 1964
+intro_month = 9
+waytype=monorail_track
+system_type=1
+# skin
+cursor=way-monotrack.0.7
+icon=> way-monotrack.0.5
+# rbis * animation
+Image[-]=way-monotrack.1.0
+Image[N]=way-monotrack.0.4
+Image[S]=way-monotrack.1.6
+Image[E]=way-monotrack.1.7
+Image[W]=way-monotrack.0.3
+Image[NS]=way-monotrack.0.0
+Image[EW]=way-monotrack.0.1
+Image[NSE]=way-monotrack.1.3
+Image[NSW]=way-monotrack.1.1
+Image[NEW]=way-monotrack.1.2
+Image[SEW]=way-monotrack.1.4
+Image[NSEW]=way-monotrack.1.0
+Image[NE]=way-monotrack.2.1
+Image[SE]=way-monotrack.2.3
+Image[NW]=way-monotrack.2.2
+Image[SW]=way-monotrack.2.0
+Diagonal[NE]=way-monotrack.2.1
+Diagonal[SE]=way-monotrack.2.3
+Diagonal[NW]=way-monotrack.2.2
+Diagonal[SW]=way-monotrack.2.0
+# hangtyp * animation
+ImageUp[3]=way-monotrack.2.7
+ImageUp[6]=way-monotrack.2.6
+ImageUp[9]=way-monotrack.2.5
+ImageUp[12]=way-monotrack.2.4
+------------------------------------
+Obj=way
+Name=monorail
+cost=500000
+maintenance=750
+topspeed=160
+max_weight=110
+intro_year = 1964
+intro_month = 9
+waytype=monorail_track
+system_type=0
+# skin
+cursor=way-monotrack.0.2
+icon=> way-monotrack.0.6
+# rbis * animation
+Image[-]=way-monotrack.1.0
+Image[N]=way-monotrack.0.4
+Image[S]=way-monotrack.1.6
+Image[E]=way-monotrack.1.7
+Image[W]=way-monotrack.0.3
+Image[NS]=way-monotrack.0.0
+Image[EW]=way-monotrack.0.1
+Image[NSE]=way-monotrack.1.3
+Image[NSW]=way-monotrack.1.1
+Image[NEW]=way-monotrack.1.2
+Image[SEW]=way-monotrack.1.4
+Image[NSEW]=way-monotrack.1.0
+Image[NE]=way-monotrack.2.1
+Image[SE]=way-monotrack.2.3
+Image[NW]=way-monotrack.2.2
+Image[SW]=way-monotrack.2.0
+Diagonal[NE]=way-monotrack.2.1
+Diagonal[SE]=way-monotrack.2.3
+Diagonal[NW]=way-monotrack.2.2
+Diagonal[SW]=way-monotrack.2.0
+# hangtyp * animation
+ImageUp[3]=way-monotrack.2.7
+ImageUp[6]=way-monotrack.2.6
+ImageUp[9]=way-monotrack.2.5
+ImageUp[12]=way-monotrack.2.4
+------------------------------------
+Obj=bridge
+name=MonorailRamp
+waytype=monorail_track
+cost=700000
+maintenance=10000
+topspeed=120
+max_weight=110
+max_lenght=1
+intro_year=1964
+intro_month = 9
+cursor=way-monotrack.0.7
+icon=> way-monotrack.1.5
+pillar_distance=2
+BackImage[NS]=-
+BackImage[EW]=-
+BackRamp[N]=way-monotrack.2.4
+BackRamp[W]=way-monotrack.2.5
+BackRamp[S]=way-monotrack.2.7
+BackRamp[E]=way-monotrack.2.6
+BackStart[N]=way-monotrack.0.0
+BackStart[S]=way-monotrack.0.0
+BackStart[E]=way-monotrack.0.1
+BackStart[W]=way-monotrack.0.1
+---------------------------------------
+# normal signal
+obj=roadsign
+copyright=prissi
+name=SignalsMonorail
+waytype=monorail_track
+cost=750
+is_signal=1
+Image[0]=rail-signals.1.0
+Image[1]=rail-signals.1.1
+Image[2]=rail-signals.1.2
+Image[3]=rail-signals.1.3
+Image[4]=rail-signals.1.4
+Image[5]=rail-signals.1.5
+Image[6]=rail-signals.1.6
+Image[7]=rail-signals.1.7
+Icon=> rail-signals.1.12
+Cursor=rail-signals.1.13
+---------------------------------------
+# presignal
+obj=roadsign
+copyright=prissi
+Name=preSignalsMonorail
+waytype=monorail_track
+cost=1500
+is_presignal=1
+Image[0]=rail-signals.3.0
+Image[1]=rail-signals.3.1
+Image[2]=rail-signals.3.2
+Image[3]=rail-signals.3.3
+Image[4]=rail-signals.3.4
+Image[5]=rail-signals.3.5
+Image[6]=rail-signals.3.6
+Image[7]=rail-signals.3.7
+Image[8]=rail-signals.3.8
+Image[9]=rail-signals.3.9
+Image[10]=rail-signals.3.10
+Image[11]=rail-signals.3.11
+Icon=> rail-signals.3.12
+Cursor=rail-signals.3.13
+---------------------------------------
+# chosse signal
+obj=roadsign
+copyright=prissi
+Name=ChooseSignalsMonorail
+waytype=monorail_track
+cost=2500
+is_signal=1
+free_route=1
+Image[0]=rail-signals.5.0
+Image[1]=rail-signals.5.1
+Image[2]=rail-signals.5.2
+Image[3]=rail-signals.5.3
+Image[4]=rail-signals.5.4
+Image[5]=rail-signals.5.5
+Image[6]=rail-signals.5.6
+Image[7]=rail-signals.5.7
+Icon=> rail-signals.5.12
+Cursor=rail-signals.5.13
+---

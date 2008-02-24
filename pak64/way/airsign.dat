@@ -1,0 +1,15 @@
+# no entry sign
+obj=roadsign
+name=NoAirEntry
+copyright=timeshock
+cost=500
+waytype=air
+min_speed=0
+single_way=1
+image[0]=roadsign.0.0
+Image[1]=roadsign.0.1
+Image[2]=roadsign.0.2
+Image[3]=roadsign.0.3
+Icon=> roadsign.0.4
+Cursor=roadsign.0.5
+--------------------

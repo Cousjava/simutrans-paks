@@ -1,0 +1,58 @@
+
+Makeobj version 49 for simutrans 99.17.1 nightly and higher
+(c) 2002-2006 V. Meyer , Hj. Malthaner, M. Pristovsek (markus@pristovsek.de)
+
+writing invidual files to ./
+   reading file ./groundobj.dat
+   writing file ./ground_obj.See1.pak
+      packing ground_obj.See1
+   writing file ./ground_obj.See2.pak
+      packing ground_obj.See2
+   writing file ./ground_obj.See3.pak
+      packing ground_obj.See3
+   writing file ./ground_obj.See4.pak
+      packing ground_obj.See4
+   writing file ./ground_obj.rocks.pak
+      packing ground_obj.rocks
+   writing file ./ground_obj.bushes.pak
+      packing ground_obj.bushes
+   writing file ./ground_obj.flowers.pak
+      packing ground_obj.flowers
+   writing file ./ground_obj.moles.pak
+      packing ground_obj.moles
+   writing file ./ground_obj.Hochsitz1.pak
+      packing ground_obj.Hochsitz1
+   writing file ./ground_obj.Hochsitz2.pak
+      packing ground_obj.Hochsitz2
+   reading file ./moving_ground.dat
+   writing file ./ground_obj.gooses.pak
+      packing ground_obj.gooses
+   writing file ./ground_obj.gemsen.pak
+      packing ground_obj.gemsen
+   writing file ./ground_obj.sheeps.pak
+      packing ground_obj.sheeps
+   reading file ./texturegrounds.dat
+   writing file ./ground.LightTexture.pak
+      packing ground.LightTexture
+   writing file ./ground.ClimateTexture.pak
+      packing ground.ClimateTexture
+   writing file ./ground.ShoreTrans.pak
+      packing ground.ShoreTrans
+   writing file ./ground.SlopeTrans.pak
+      packing ground.SlopeTrans
+   writing file ./ground.Outside.pak
+      packing ground.Outside
+   writing file ./ground.Basement.pak
+      packing ground.Basement
+   writing file ./ground.Slopes.pak
+      packing ground.Slopes
+   writing file ./ground.Fence.pak
+      packing ground.Fence
+   writing file ./ground.Marker.pak
+      packing ground.Marker
+   writing file ./ground.Borders.pak
+      packing ground.Borders
+   writing file ./ground.Water.pak
+      packing ground.Water
+   writing file ./ground.Water.pak
+      packing ground.Water

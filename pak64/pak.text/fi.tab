@@ -1,0 +1,1388 @@
+################################################################################
+#                                                                              #
+#                Simutrans Scenario Specific Translation File                  #
+#                                Scenario: pak64                               #
+#                              Language: fi Suomi                              #
+#                             Encoding: ISO-8859-1                             #
+#                            Font : Prop-Latin1.bdf                            #
+#                           Date Created: 16.01 2008                           #
+#                                                                              #
+#                                   authors:                                   #
+#                        Jaakko Mäkinen - jaakko.makinen                       #
+#                                    note:                                     #
+#                            Mika Katajamäki - lahha                           #
+#                                    note:                                     #
+#                          Markus Pristovsek - prissi                          #
+#                            note: Administrator 64                            #
+#                          Suuriniemi Saku - suurinie                          #
+#                                    note:                                     #
+#                                                                              #
+################################################################################
+#____________________________________bridge_____________________________________
+#____________________________________bridge_____________________________________
+ClassicRail
+Rautatiesilta
+ClassicRoad
+Maantiesilta
+koka_Bridge_single
+Korotettu rata
+MaglevBridge
+Monorail-silta
+mlm_concrete_bridge
+Betoninen Monorail-silta
+ModernRoad
+Modermi betonisilta
+MonorailRamp
+Monorail-rata
+Schiffhebewerk
+Laivanosturi
+SteelRail
+Teräksinen rautatiesilta
+tb_classic_road
+Maantiesilta
+ViaductRail
+Kivisilta
+WoodenRoad
+Puinen tiesilta
+#___________________________________building____________________________________
+#___________________________________building____________________________________
+00_01_CITY
+Vanha kaupungintalo
+01_CITY
+Kaupungintalo
+02_CITY
+Kaupungintalo
+03_CITY
+Kaupungintalo
+03_CITY_A
+Kaupungintalo
+03_CITY_B
+Kaupungintalo
+03_CITY_C
+Kaupungintalo
+04_CITY
+Kaupungintalo
+04_CITY_A
+Kaupungintalo
+04_CITY_B
+Kaupungintalo
+04_CITY_C
+Kaupungintalo
+10_WOHN
+Kirkko (tehnyt Trikky)\n
+1930AirDepot
+1930-luvun lentokonehalli
+1headquarter
+Yhtiösi  pääkonttori
+2headquarter
+Yhtiösi pääkonttori
+3headquarter
+Yhtiösi pääkonttori
+A1_ALTE_KIRCHE
+Kuuluisa vanha  kirkko. Jokaisen\n pitäisi nähdä  tämä hieno \nrakennus.\n
+A2_SCHLOSS1
+Hassun kuninkaan  linna.  Tämä\non todella  näkemisen\narvoinen!\n
+A3_BURG1
+Vanhoja raunioita  jotka\nkertovat  paremmista ajoista. \nNe ovat aina  katsomisen\narvoisia.\n
+A4_SCHLOSS2
+Tämä vanha  linna on aina \nnäkemisen arvoinen.\n
+A5_STONEHENGE
+Muinainen kivimuodostelma.\nHyvin  salaperäistä!\n
+A6_DOME
+Tämä kaunis vanha  kirkko on\ntodellinen nähtävyys.\n
+AirDepot
+1900-luvun lentokone halli
+AirportShed1930
+Asema rakennus
+AirTerminal477
+Terminaali
+anfangShipStop
+Laiturin loppu (Etel. tai Itä)
+ANIM_CINEMA
+Elokuvateatteri (tehnyt\nTrikky)\n
+Avila_Big_StationBlg
+Suuri asema rakennus
+Avila_Small_StationBlg
+Pieni asema rakennus
+Avila_Warehouse_StationBlg
+Varasto
+BigPostOffice
+Suuri postitoimisto
+BigTerminal477
+Suuri terminaali
+Bulk_StationBlg
+Hiilivarasto
+CarDepot
+Autotalli
+Car_StationBlg
+Autoparkki
+ChannelStop
+Kanavalaituri
+COM_00_01
+Pienikauppa\n
+COM_00_02
+Yksityinen huolto-asema\n
+COM_00_03
+Autopesula\n
+COM_00_04
+Trikkyn puisto\n
+COM_00_05
+Läpi ajo -pankki. Kun ajat läpi\nlompakkosi taianomaisesti\ntyhjenee.\n
+COM_00_06
+Kylpylä OnniManni\n
+COM_00_07
+Pieni toimisto rakennus ja\nparkkipaikka\n
+COM_00_08
+Asuinrakennus\n
+COM_00_10
+Keskikokoinen toimisto\nraknennus\n
+COM_00_11
+Novan maalitukku\n
+COM_00_12
+Toimisto rakennus\n
+COM_00_13
+Erittäin modermi hotelli\n
+COM_00_14
+Tämä rakennus näyttää\nvanhalta tehtaalta, mutta se on\noikeasti erittäin organisoitunut\nlaiton vedonlyöntikeskus.\n
+COM_00_16
+Modermi toimista rakennus\n
+COM_00_18
+Modermi toimisto rakennus\n
+COM_00_19
+Suuri toimisto- ja hotelli\nrakennus. Arkkitehti yritti\ntehdä siitä Empire State\nBuildingin näköisen, mutta ei\nsaanu rakennus lupaa kymmentä\nkerrosta ylemmäs.\n
+COM_00_20
+Toimisto rakennus Wilho ja\nkumppanit oy.\n
+COM_00_21
+Barcelona suuri hotelli\n
+COM_00_22
+YK:n rakennus somaliassa\n
+COM_00_23
+Tässä huippu modernissa\nhotellissa on observatoorio\nkatolla. Se rakennettii\nHollywoodiin että turistit\nvoisivat katsella tähtiä.\n
+COM_01_01
+Kuumailmapallojen laskeutumis\nalue.\n
+COM_01_09
+Vanha elokuva teatteri. Täällä\nesitetään paljon musta-valko\nelokuvia, siksi se onkin Charlie\nChaplin -fanien suosima.\n
+COM_01_10
+Toimisto rakennus\n
+COM_01_12
+Ostoskeskus Grey & Greyer.\nOsta pukusi täältä ja sulaudut\njoka maastoon.\n
+COM_01_13
+Kolmio observatoorio. \n
+COM_01_14
+Hotelli. satelliitti lautanen\nkatolla.\n
+COM_01_16
+Moderni työpaikka\n
+COM_01_17
+Salainen FBI:n toimisto\n
+COM_01_18
+CIA:n sivu konttori\n
+COM_01_19
+Hassun näköinen toimistotalo\n
+COM_01_20
+World trade center. Matalempi\nversio\n
+COM_01_21
+Yö työ talo.\n
+COM_01_22
+ETA:n tekninen laboratorio\n
+COM_01_23
+Suuri toimistotorni\n
+COM_02_02
+Parkkipaikka\n
+COM_02_13
+Kansanhistoriallainen museo\n
+COM_02_14
+pieni ostoskeskus\n
+COM_02_15
+Toimisto talo\n
+COM_02_16
+Toimisto talo\n
+COM_02_17
+Keskikokoinen toimistotalo\n
+COM_02_20
+Toimisto talo\n
+COM_03_15
+Toimisto talo\n
+COM_10_01
+Puisto\n
+COM_10_02
+puisto\n
+COM_10_03
+Tuulimylly\n
+COM_10_05
+Navetta\n
+COM_10_07
+Maalaistalo\n
+COM_10_10
+Alppitalo\n
+COM_10_11
+Paritalo\n
+COM_10_12
+Paritalo\n
+Control_StationBlg
+Valvontatorni
+DenkFlor
+Muistomerkki \n\nTämä monumentti on omistettu\nFlor 'WF Ultd.' Wautersille,\nkuuluisalle insinöörille, joka loi\nmonia erinomaisia tie ja\nrautatie kulkuneuvoja. Hän on\nmyös tunnettu monien\nhyvintoimivien tehtaiden\nsuunnittelusta.\n
+DenkHajo
+Muisto merkki\n\nTämä muistomerkki on omistettu\nhansjörg Malthanerille, joka loi\nsimutranssin seisemässä\nvuodessa.\n
+DenkMHz
+Muistomerkki\n\nTämä muistomerkki on omistettu\nGeorg Heidukille renderöityjen\nrakennusten mestarille. Se\nedustaa hänen tarkkaa silmää\nyksityiskohdille.\n
+DenkOwen
+Muistomerkki\n\nTämä paikka on omistettu Owen\nRudgelle, kuuluisalle\nfinannsiexpertille, ja\nääniteknikolle.\n
+DenkSeth
+Muistomerkki \n\nTämä paikka on omistettu Seth C.\nTriggsille, kuuluisalle\narkkitehdille, joka suunnitteli\nmonia kauniita kaupunki-\nrakennuksia. Hän on myös\ntunnettu monista tutkimuksista,\nkuinka parantaa\nliikennejärjestelmiä.\n
+DenkTomas
+Muistomerkki\n\nTämä monumentti on omistettu\nTomas Kubesille, joka auttoi\nparantamaan Simutransia monin,\nmonin puolin neuvoilla ja kovalla\ntyöllä.\n
+DenkTrikky
+Muistomerkki\n\nTämä monumentti on omistettu\n'Trikky' Rick McGrealille,\nkuuluisalle arkkitehdille, joka\nsuunnitteli monia vaikuttavia\nrakennuksia.\n
+DenkVM
+Muistomerkki\n\nTämä monumentti on omistettu\nManfred 'VT Vienna'\nTomaschitzille, kuuluisallee\ninsinöörille, joka suunnitteli\nerittäin hyviä\nrautatiekulkuneuvoja.\n
+DenkVolker
+Muistomerkki \n\nTämän Stupan  rakensi Volker\nMeyer, joka paransi Simutransia\nmonilta, monilta alueilta.\n
+DRIVEINCINEMA
+Elokuvateatteri\n
+Eingang
+Aseman sisäänkäynti
+endShipStop
+laiturin loppu (Pohj. tai Läns.)
+Feste
+The Konubertsin linnake\n\nTämä massiivinen linna rakennettiin\n1400-luvun alussa.\n
+Fluid_StationBlg
+Öljysäiliö
+FreightTrainStop
+Tavara-asema
+Gas_StationBlg
+kaasusäiliö
+GCG1TrainStop
+Suuri asemahalli (vasen)
+GCG2TrainStop
+suuri asemahalli (oikea)
+Goods_StationBlg
+Varasto
+Gymnasium
+Yksityislukio\n\nTäällä opiskelee rikkaita ihmisiä.\n
+IND_00_01
+Varasto\n
+IND_00_02
+Tehdashalli\n
+IND_00_03
+Polttoainesäiliö\n
+IND_00_04
+Peltipaja\n
+IND_00_05
+Vesivarasto\n
+IND_00_06
+Tehdasrakennus\n
+IND_00_07
+Muuntaja-asema\n
+IND_00_08
+Vanha hiilivoimala\n
+IND_00_09
+Vanha paloasema\n
+IND_00_10
+Pieni tehdas\n
+IND_00_11
+Suuri tehdas\n
+IND_00_12
+Vanha konepaja\n
+IND_00_13
+Keramiikkatehdas\n
+IND_00_14
+Keramiikkatehdas\n
+IND_00_15
+Metallipaja\n
+IND_00_17
+Pieni lämpövoimala\n
+IND_00_18
+Pieni tehdas\n
+IND_01_01
+Parkkipaikka\n
+IND_01_03
+Suuri kaasusäiliö\n
+IND_01_04
+Metallipaja\n
+IND_01_05
+Kaasusäiliö\n
+IND_01_06
+Vanha konepaja\n
+IND_01_07
+Armeijan ylijäämävarasto\n
+IND_01_08
+Lannoitetehdas\n
+IND_01_09
+Nestesäiliö\n
+IND_01_10
+Työkalutehdas\n
+IND_01_11
+Pieni kangastehdas\n
+IND_01_12
+Lasinpuhaltamo\n
+IND_01_13
+Turpeenpolttolaitos\n
+IND_01_15
+Pieni hiilivoimala\n
+IND_02_02
+Metallipaja\n
+IND_02_09
+Kaasusäiliö\n
+LargeShipStop
+Suuri rahtinosturi
+leftShipStop
+Raskas nosturi
+LeuchtturmShipStop
+Majakka
+Lighthouse
+Majakka\n
+MainTerminal1930
+Aseman sisäänkäynti
+MHzSmallStation
+Asemarakennus (tehnyt MHz)
+midleShipStop
+Laituri
+ModernAirTerminal477
+Modermi lentoterminaali
+MonorailDepot
+Monorail-talli
+MonorailFoundation
+Monorail-aseman perusta
+MonorailGround
+Monorail-perustus
+OldTownhall
+Vanha kaupungintalo\n
+Patricks_Rock
+Patrickin kallio\n
+PlainAirStop
+Lentokonepysäkki
+PostOffice
+Postitoimisto
+PostStop
+Postilaatikko
+PSFreightTrainStop
+Tavara-asema
+PSHall1TrainStop
+Asemahalli lehtikoneella
+PSHall2TrainStop
+Asemahalli
+rampShipStop
+Ramppi
+Raven_Kirche
+Pyhän Meinradin kirkko\n\nErakko Meinrad eli kahden variksen\nkanssa. Hänet murhattiin, ja\nlegendan mukaan varikset\nseurasivat murhaajia ja toivat\nnämä oikeuden eteen.\nNykyään kyseisellä paikalla\nsijaitsee Einsiedelnin luostari.\n
+Residenz
+Residenssi\n\nPaikallinen joogaguru tapasi opettaa\nmeditointia ja sisäistä rauhaa\ntäällä. \n
+RES_00_01
+Pieni punainen tupa ja\nperunamaa\n
+RES_00_02
+Pieni talo ja kaalimaa\n
+RES_00_03
+Omakotitalo\n
+RES_00_04
+Asuinrakennus\n
+RES_00_05
+Kaksikerroksinen omakotitalo\n
+RES_00_06
+Pieni suihkulähde\n
+RES_00_07
+Omakotitalo\n
+RES_00_08
+Omakotitalo\n
+RES_00_09
+Puisto\n
+RES_00_10
+Moistboyn kartano\n
+RES_00_11
+Suuri talo puutarhalla\n
+RES_00_12
+Asuinrakennus\n
+RES_00_13
+Rivitalo\n
+RES_00_14
+Pieni kiinteistö\n
+RES_00_15
+Pieni kerrostalo\n
+RES_00_16
+Vanha huvila\n
+RES_00_17
+Vanha asuinrakennus\n
+RES_00_19
+Modermi kerrostalo\n
+RES_00_20
+Pilvenpiirtäjä\n
+RES_00_21
+Korkea kerrostalo\n
+RES_00_23
+Pyöreä kerrostalo\n
+RES_01_01
+Uudehko valmistalo suurella\nullakkohuoneella, jossa lapsilla\non tilaa peuhata.\n
+RES_01_02
+Alppitalo\n
+RES_01_03
+Pieni omakotitalo\n
+RES_01_04
+Maalaistalo\n
+RES_01_05
+Kaksikerroksinen paritalo\n
+RES_01_07
+Suuri luksusasunto\n
+RES_01_08
+Omakotitalo pienellä puutarhalla\n
+RES_01_10
+Moderni talo\n
+RES_01_12
+Tiilikerrostalo\n
+RES_01_13
+Opiskelija-asuntoja\n
+RES_01_14
+Loistokkaita huoneistoja\n
+RES_01_15
+Kaupungin ala-aste\n
+RES_01_16
+Maahanmuuttokeskus\n
+RES_01_17
+Vanhantyylisiä asuntoja ja\nliikkeitä\n
+RES_01_18
+Kerrostalo\n
+RES_01_19
+Kerrostalo\n
+RES_01_20
+Toimistokortteli\n
+RES_01_21
+Pilvenpiirtäjä\n
+RES_01_22
+Pilvenpiirtäjä\n
+RES_01_23
+Tämän talon on omistanut\nitselleen Mika "Lahha"\nKatajamäki, joka auttoi\nsuomenkielisten käännöksien\nkanssa.\n
+RES_02_01
+Alkukantainen maja\n
+RES_02_20
+Viiden tähden hotelli\n
+RES_11_01
+Pieni talo\n
+rightShipStop
+Laituri
+RUIN_0
+Keskiaikainen linna\n\nTämä linna raunioitui 400 vuotta\nsitten, mutta osa siitä on\nuudelleen rakennettu, ja se\ntoimii nykyään museona.\nNäkymät ovat fantastisia,\nmutta ne nähdäkseen täytyy\nkiivetä aivan liian monta porrasta.\n
+SandStationMHz
+Hiekkapohjainen asema
+ShipDepot
+Telakka
+STADIUM2
+Iso stadion\n
+Tennis_Court
+Tenniskenttä\n
+Terminal1930
+Lentoterminaali
+Theatre
+Teatteri\n
+Tower1930
+Lennonjohtotorni (1930)
+TowerMoistboy
+Lennojohtotorni (tehnyt Moistboy)
+TrainDepot
+Veturitalli
+TrainStopMaglev
+Monorail-pysäkki
+TrainStopMaglevIndicator
+Maglev-pysäkki
+TramDepot
+Raitiovaunutalli
+VictorianStation
+Viktoriaaninen asema
+Vorplatz
+Asemapiha
+Windmill
+Tuulimylly\n
+#____________________________________citycar____________________________________
+#____________________________________citycar____________________________________
+Ambulanz
+Ambulanssi
+FordT
+T-ford
+green_car
+Vihreä auto
+Motorrad
+Moottoripyörä
+orange_bus
+Oranssi pakettiauto
+Pickup
+Lava-auto
+Roadster
+Vanha auto
+yellow_car
+Keltainen auto
+#___________________________________crossing____________________________________
+#___________________________________crossing____________________________________
+Crossing1
+Tasoristeys
+Crossing2
+tasoristeys
+#____________________________________cursor_____________________________________
+#____________________________________cursor_____________________________________
+Baum
+Puu
+City
+Kaupunki
+Down
+Nuoli alas
+Marked
+Merkki
+Mouse
+Hiiri
+Query
+Tutkimistyökalu
+Remove
+Poista
+Schedule
+Pysäkki
+ShipDepotEW
+Telakka
+ShipDepotNS
+Telakka
+Signal
+Ratavalot
+Slope
+Rinnetyökalu
+Undocumented
+Dokumentoimaton
+Up
+Ylös-nuoli
+#__________________________________dummy_info___________________________________
+#__________________________________dummy_info___________________________________
+factory_Nutzwald_details
+<title>Viljelymetsistä</title><h1>Viljelymetsät</h1><p>Metsissä kasvaa tärkein uusiutuva materiaali ja energian lähde, Siitä valmistetaan korkea luokkaisia tuotteita ja paperia.</p>\n
+factory_Oelpumpe_details
+öljypumppu
+factory_Papierfabrik_details
+<title>Paperitehdas</title>\n<h1>Paperin valmistus</h1>\n<p>Nykyään valtaosa paperista valmistetaan teollisesti puukuiduista pitkälle automatisoidulla prosessilla. Eräät muutkin kuidut sopivat, mutta metsäteollisuus ei ole panostanut niiden tutkimukseen, koska puun riittävyys on vaikuttanut turvatulta. Taloudellinen ja ympäristöystävällinen tulevaisuuden vaihtoehto puulle on olkisellu.</p>\n<p>Kuitupuu tuotiin ennen tavallisemmin uittamalla proomujen avulla, nykyisin maateitse rekoilla, laivoilla tai rautateitse. Kuorimarummuissa puista poistetaan kuori. Rungot jatkavat matkaansa; kuoret poltetaan energiaksi tai käytetään maanparannusaineena. Osa puunrungoista haketetaan lastuiksi (puuhakkeeksi), jotka varastoidaan, osa hiotaan hiokemassaksi. Lastuista voidaan valmistaa puumassaa lähinnä kahdella eri tavalla: hake keitetään lipeässä, jolloin puusta liukenee ligniini, mutta runsaasti muutakin. Näin saadaan sellumassaa. Vaihtoehtoisesti hake hierretään mekaanisesti. Käsittelyjen tuloksena puusta muodostuu massaa (hioke, hierre tai sellu), joka pestään ja useimmiten valkaistaan (valkaisematonta massaa josta syntyy ruskeaa paperimateriaalia, käytetään lähinnä pakkauspaperien ja -kartonkien valmistukseen).</p>\n<p>Syntynyt kostea paperimassa laimennetaan perälaatikossa lisäämällä vettä, jolloin tuloksena on massaliuos, josta noin 99 prosenttia on vettä. Tässä vaiheessa voidaan massaan myös lisätä erinäisiä täyteaineita esimerkiksi kaoliinia, talkkia tai kalsiumkarbonaattia. Täyteainelisäyksen pääasialliset edut ovat opasiteetin (läpinäkymättömyyden) kasvaminen, matta- tai kiiltopintaisuuden säätely ja raaka-ainekustannuksien halventuminen. Tämä massa suihkutetaan viiraosalle muodostumaan ohueksi tasaiseksi rainaksi, ja sen jälkeen prosessin suurin tehtävä on poistaa vesi eri keinoilla. Ensin viiralla vettä valuu pois (suotautuminen), sitten raina puristetaan suurien telojen läpi (märkäpuristus), ja viimeksi paperiraina kulkee kuivatusosalle jossa se menee kuumien telojen pintaa pitkin huomattavan matkan, jolloin loput tasapainokosteuden ylittävästä vedestä poistuu haihtumalla (kuivatus).</p>\n<p>Näiden jälkeen paperi rullataan isolle konerullalle "tampuurille". Suihkutuksella, viiralla ja puristinteloilla paperi saa muotonsa. Kuivaan paperiin voidaan lisätä erilaisia päällysteitä ja pintakäsittelyaineita, jotka parantavat paperin ominaisuuksia paremmin sen käyttötarkoitukseen soveltuvaksi.</p>
+#____________________________________factory____________________________________
+#____________________________________factory____________________________________
+2Raffinerie
+Bensiinijalostamo
+3Raffinerie
+Jalostamo
+Autohaus
+Autokauppa
+Autohersteller
+Autotehdas
+bakery
+Leipomo
+brewery
+Panimo
+Buchgrosshandel
+Kirjatukku
+cannery
+Ruokapakkaamo
+Cementmill
+Sementtimylly
+ChemicalPlant
+Kemikaali tehdas
+CHEMIST
+Apteekki
+Concretefactory
+Betonitehdas
+cow_farm
+Karjatila
+dairy
+Meijeri
+Druckerei
+Kirjapaino
+Erzbergwerk
+Rautakaivos
+fish_pond
+Kalalampi
+fish_swarm
+Kalaparvi
+food_processing_plant
+Ruuanjalostuslaitos
+grain_farm
+Viljapelto
+grain_mill
+Mylly
+Incinerator
+Jätteidenpolttolaitos
+Kohlegrube
+Hiilikaivos
+Kohlekraftwerk
+Hiilivoimala
+Materialswholesale
+Tarviketukku
+Moebelfabrik
+Huonekalutehdas
+Moebelhaus
+Huonekalukauppa
+Nutzwald
+Viljelysmetsä
+Oelbohrinsel
+Öljynporauslautta
+Oelfeld
+Öljykenttä
+Oelkraftwerk
+Öljyvoimala
+Oelpumpe
+Öljypumppu
+Papierfabrik
+Paperitehdas
+Pharmaceutics
+Farmasia
+Raffinerie
+Muovijalostamo
+Saegewerk
+Saha
+Sandquarry
+Hiekkalouhos
+scrap_yard
+Kaatopaikka
+Stahlwerk
+Rautavalimo
+Stonequarry
+Kivilouhos
+supermarket
+Supermarketti
+TANKE
+Huoltoasema
+Windkraftwerk
+Tuulivoimala
+#_____________________________________good______________________________________
+#_____________________________________good______________________________________
+Autos
+autoa
+beer
+olutta
+Bretter
+lautoja
+Buecher
+kirjoja
+canned_food
+säilykkeitä
+Cement
+sementtiä
+Chemicals
+Kemikaaleja
+Concrete
+betonia
+Eisenerz
+rautamalmia
+fish
+kalaa
+flour
+jauhoja
+food
+ruokaa
+Gasoline
+Bensiiniä
+grain
+viljaa
+Holz
+tukkeja
+Kohle
+hiiltä
+meat
+lihaa
+Medicine
+lääkkeitä
+milk
+maitoa
+Moebel
+huonekaluja
+None
+tyhjä
+Oel
+öljyä
+Papier
+paperia
+Plastik
+muovia
+PrintersInk
+tulostusmustetta
+Sand
+hiekkaa
+Stahl
+terästä
+Stone
+kiveä
+waste
+jätettä
+#____________________________________ground_____________________________________
+#____________________________________ground_____________________________________
+Basement
+Pohjakerros
+Borders
+Reuna
+Fence
+Aita
+Outside
+Kentän ulkopuolella
+Slopes
+Rinteet
+Water
+vesi
+#_____________________________________menu______________________________________
+#_____________________________________menu______________________________________
+ColorMenu
+Värivalikko
+EditTools
+Erikoistyökalut
+ListTools
+Listat
+MainMenu
+Päävalikko
+ShipTools
+Laiva
+SlopeTools
+Rinnetyökalut
+SpecialTools
+Erikoistyökalut
+#_____________________________________misc______________________________________
+#_____________________________________misc______________________________________
+Construction
+Rakentaminen
+PowerDest
+Muuntaja
+PowerSource
+Muuntaja
+#__________________________________pedestrian___________________________________
+#__________________________________pedestrian___________________________________
+Couple
+Pariskunta
+Cyclist
+Pyöräilijä
+pedestrian_1
+Jalankulkija
+pedestrian_2
+Jalankulkija
+pedestrian_3
+Jalankulkija
+pedestrian_4
+Jalankulkija
+pedestrian_child
+lapsi
+pedestrian_dog
+koira
+Woman
+Nainen
+#_________________________________program_text__________________________________
+#_________________________________program_text__________________________________
+CATEGORY_01
+tavaraa
+CATEGORY_02
+raaka-aineita
+CATEGORY_03
+öljyä
+CATEGORY_04
+Jäähdytettyjä tavaroita
+CATEGORY_05
+nestemäistä ruokaa
+CATEGORY_06
+lankkuja
+#___________________________________roadsign____________________________________
+#___________________________________roadsign____________________________________
+ChooseSignals
+Valinta osoittimet
+choose_point
+Asemanvalintapiste
+Minimum80
+Vähimmäisnopeus 80 km/h
+NoEntry
+Pääsy kielletty
+preSignals
+Esiosoittimet
+preSignalsMonorail
+Esiosoittimet
+RailClose
+Radan pääte
+Signals
+Ratailmaisimet
+SignalsMonorail
+Monorail-osoittimet
+traffic_light
+Liikennevalot
+#_____________________________________smoke_____________________________________
+#_____________________________________smoke_____________________________________
+Diesel
+Diesel savu
+Industry_Fire
+tuli
+Industry_Smoke
+tehdassavu
+Steam
+höyryä
+#____________________________________symbol_____________________________________
+#____________________________________symbol_____________________________________
+AirStop
+Lastaus silta
+Builder
+Traktori
+BusStop
+Bussi pysäkki
+CarStop
+Lastaus asema
+Electricity
+Sähkö
+Flags
+liput
+Logo
+Logo
+Message
+Viesti
+MessageOptions
+Viestiasetukset
+NewWorld
+Uusi maailma
+NewYear
+Uusivuosi
+Passagiere
+matkustajaa
+Post
+postia
+Seasons
+Vuodenajat
+ShipStop
+Satama
+TrainStop
+Katettu asema
+Waren
+tavaroita
+#_____________________________________tree______________________________________
+#_____________________________________tree______________________________________
+Ahorn-1
+Tammi\n
+Ahorn-2
+Tammi\n
+Ahorn-Gruppe
+Tammi\n
+Birke-1
+Koivu\n
+Buche-1
+Vaahtera\n
+Busch_2
+Pensas\n
+Kiefer_1
+Mänty\n
+Kiefer_2
+Mänty\n
+Kiefer_3
+Mänty\n
+Kiefer_4
+Mänty\n
+Kiefer_5
+Mänty\n
+Latschenkiefer
+Vuorimänty\n
+Palmtree1
+Palmu\n
+Palmtrees
+Palmu\n
+Pappel-1
+Sypressi\n
+Pappel-2
+Sypressi\n
+Shunter-tree2
+Kuollut puu\n
+Tanne_1
+Kuusi\n
+Tanne_2
+Kuusi\n
+Tanne_3
+Kuusi\n
+Tanne_4
+Tammi\n
+Tanne_5
+Mänty\n
+Tanne_6
+Kuusia\n
+Tree4
+Mänty\n
+Tree5
+Puu\n
+Tree6
+Kuusi\n
+Willow
+Paju\n
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
+FastRoadTunnel
+Moottoritien tunneli
+RailTunnel
+Rautatietunneli
+RoadTunnel
+Tunneli
+#____________________________________vehicle____________________________________
+#____________________________________vehicle____________________________________
+0Ben103
+Bennhardt BR103 (sähkö)
+1Ben140
+Bennhardt BR140 (sähkö)
+1Dampflokomotive
+H-Trans 0-4-0T (höyry)
+1Diesellokomotive
+H-Trans BR212 (diesel)
+1Ellok
+H-Trans BR103 (sähkö)
+1Garrat
+RVg Garrat
+1Schienenbus
+H-Trans/TPI VT95 (dmu)
+1TPEllok
+TPI F7A (diesel)
+221A
+221A höyryveturi
+221A_tender
+221A tenderi
+2Ben155
+Bennhardt BR155 (sähkö)
+2Dampflokomotive
+H-Trans 4-6-0 (höyry)
+2Diesellokomotive
+H-Trans BR218 (diesel)
+2Ellok
+H-Trans Tigress I (sähkö)
+2Garrat
+RVg Garratt (keski)
+2TPEllok
+TPI Class 86/2 (sähkö)
+3Ben185
+Bennhardt BR185 (sähkö)
+3Diesellokomotive
+H-Trans BR218 (diesel)
+3Garrat
+RVg Garratt (taka)
+4Ben204
+Bennhardt BR204 (diesel)
+5Ben220
+Bennhardt BR220 (diesel)
+6Ben228
+Bennhardt BR228 (diesel)
+707
+Boeing 707
+7BenE11
+Bennhardt E11 (sähkö)
+A3-5
+Sveitsin valtionrautatiet A3 /5
+A3-5_tender
+Hiilivaunu (SBB A 3/5)
+A380
+Airbus A380
+Adler
+Adler höyryveturi
+AdlerPersonenwagen
+Adler matkustajavaunu
+Autotransportanhaenger
+Autoperävaunu
+Autotransporter
+H-Trans autonkuljetusvaunu
+Autotransportwagen
+TPI Lopomo autonkuljetusvaunu
+Be5-7
+BLS Be 5/7
+Beiwagen
+H-Trans/TPI VT95 matkustajavaunu
+Blimp
+Ilmalaiva
+Book_Trike
+Kirjarekka
+Boxcar
+Tavaravaunu
+BR01
+Höyryveturi
+Bretteranhaenger
+WF Ultd. Lankkuperävaunu
+Brettertransporter
+WF Ultd. lankkurekka
+Bretterwagen
+VT Vienna lautavaunu
+Buchanhaenger
+Kirjaperävaunu
+Buchtrailer
+Kirjavaunu
+Buchtrailer2
+Kirjaperävaunu II
+Buchtransporter
+Serj/H-Trans kirjarekka
+Buchwagen
+VT Vienna kirjavaunu
+Buessig
+Pikku bussi
+Bulkcarriage
+Hiilikärryt
+Bus
+H-Trans linja-auto
+Cargosprinter-Front
+Konttiveturi
+Cargosprinter-Mittel
+Konttivaunu
+Cargosprinter-Steuer
+Kontti-taka-veturi
+Cementanhaenger
+WF Ultd. Sementtiperävaunu
+Cementtrailer
+Sementti perävaunu
+Cementtransporter
+WF Ultd. Sementtirekka
+Cementwagen
+WF Ultd. Sementtivaunu
+ColinBigFerry
+Risteilyalus Colin
+ColinFastFerry
+Colin pika-alus
+ColinMotorBus
+Colin Bussi
+CombinoShort(T)
+Combino matkustajavaunu
+CombinoShortA(Mc)
+Combino veturi
+CombinoShortB(Mc)
+Combino-taka-veturi
+CombinoShortE(T)
+Combino matkustajavaunu
+Comet
+Komeetta
+Concept1Front
+Concept1 matkustaja veturi
+Concept1Mail
+Concept1 postivaunu
+Concept1Pass
+Concept1 matkustajavaunu
+Concept1Rear
+Concept1 taja-veturi
+Concept2Front
+Concept2 matkustajaveturi
+Concept2Mail
+Concept2 postivaunu
+Concept2Pass
+Concept matkustajavaunu
+Concept2Rear
+Concept2 takaveturi
+Concorde
+concorde
+Concretetransporter
+Betonirekka
+Concretewagen
+Betonivaunu
+Cooling_Container
+Jäähdytetty vaunu
+Cooling_Truck
+Kylmä tavara-auto
+Cooling_Waggon
+Kylmävaunu
+DC-3
+Douglass DC-3
+Deponielaster
+Jäterekka
+Deponielaster2
+Roska-auto
+DM8_CAR
+TPI Dm8 matkustajavaunu
+DM8_LOK1
+TPI Dm8 vetoyksikkö (dmu)
+DM8_LOK2
+TPI Dm8 työntöyksikkö (dmu)
+Doubledeck_city_bus
+Kaksikerroksinen turistibussi
+Doubledeck_intercitybus
+Kaksikerroksinen turistibussi
+E44
+E44 -veturi
+Eb3-5
+Sveitsin valtionrautatiet Eb 3/5
+ED17
+VR Ed17
+Ed2x2
+Eddings 2x2 Höyryveturi
+EinheitsTender
+Hiilivaunu
+EnCo_Steel_Ship
+EnCO teräsalus
+Erzanhaenger
+H-Trans rautamalmiperävaunu
+Erztrailer
+rautamalmi puoliperävaunu
+Erztransporter
+H-Trans rautamalmirekka
+Erzwagen
+H-Trans rautamalmivaunu
+F7back
+F7 A työntöyksikkö
+FastFerry
+O.Bang ilmatyynyalus
+Fishing_Boat
+kalastusalus
+Fishing_Boat_DanMacK
+Kalastusalus DanMack
+Flachwagen
+H-Trans kirjavaunu
+Fokker_F27
+Fokker F27
+GarbageTruck
+Roska-auto
+Guppy
+Matkustajakone
+H-Trans-Pantheress
+H-Trans Pantheress vetoyksikkö
+H-Trans-Pantheress-Back
+H-Trans Pantheress työntöyksikkö
+H-Trans-Tiger-Car
+H-Trans Tiger matkustajavaunu
+H-Trans-Tiger-Mail-Car
+H-Trans Tiger postivaunu
+H-Trans-Tigress-II-Back
+H-Trans Tigress II Taka (sähkö)
+H-Trans-Tigress-II-Front
+H-Trans Tigress II Etu (sähkö)
+Hadley-Page-V1500
+Hadley Page V1500
+Heavy_ore_truck
+Raskas malmirekka
+Hochbordwagen
+Hiilivaunu
+Holzanhaenger
+H-Trans tukkiperävaunu
+Holzschiff
+TPI/JET tukkialus
+Holztrailer
+Tukkiperävaunu
+Holztransporter
+H-Trans tukkirekka
+Holzwagen
+H-Trans puutavaravaunu
+Horsebookscariage
+Kirjakärryt
+Horsemailcariage
+Postikärryt
+Horsepapercariage
+Paperikärryt
+Horsepassengerscariage
+Matkustuskärryt
+Horses
+Hevoset
+Horsewoodcariage
+Puukärryt
+HVPosttransporter
+DIBU/H-Trans postiauto
+ICE_TD-back
+ICE TD taka
+ICE_TD-car
+ICE TD matkustajvaunu
+ICE_TD-front
+ICE TD etu
+Ik26
+Serj Ikarus-260
+IL-209S_Goods_Trailer
+IL-209S tavaraperävaunu
+IL-209S_Goods_Truck
+IL-209S Tavararekka
+IL-76
+IL-76 raskas postikone
+JNR_C11
+JNR C11 (2-6-4T)
+JumboJet
+Boeing 747 "Jumbo Jet"
+kkStB110
+St-B höyryveturi
+kkStB91
+St-B höyryveturi
+kkStB_tender
+St-B hiilivaunu
+Kohleanhaenger
+Hiiliperävaunu
+Kohleschiff
+WF Ultd. hiilialus
+Kohletransporter
+H-Trans hiilirekka
+Kohlewagen
+H-Trans hiilivaunu
+Kunststofanhaenger
+Muoviperävaunu
+Kunststofftransporter
+H-Trans muovisäiliöauto
+Li6
+Serj LiAZ-677
+Lockhead_Tristar
+Lockheed Tristar
+Lockheed10-Electra
+Lockheed Electra\n
+logs
+tukkeja
+Lowa
+Lowa-raitiovaunu
+Lowa_Anhaenger
+Lowa Anhanger -raitiovaunu
+MailExpress
+Postikone
+Milk_Truck
+H-trans Maitorekka
+Milk_Waggon
+Maitovaunu
+MJHN_Avocet
+MJHN Avocet
+Moebelanhaenger
+Huonekaluperävaunu
+Moebelschiff
+Huonekalualus
+Moebeltransporter
+WF Ultd. huonekalurekka
+Moebelwagen
+VT Vienna huonekaluvaunu
+Muellschiff
+Jätelaiva
+NeuOelwagen
+Öljyvaunu
+Oelanhaenger
+H-Trans öljysäiliöperävaunu
+Oeltankschiff
+TPI Lopomo öljytankkeri
+Oelwagen
+VT Vienna öljysäiliövaunu
+Oilbarge
+Öljyproomu
+Oiltrailer
+Öljysäiliövaunu
+OJetKunstoffschiff
+JET Muovilaiva
+OldOil
+Vanha öljyvaunu
+old_open_car
+Vanha hiilivaunu
+PaddelSteamer
+Vanha höyrylaiva
+Papieranhaenger
+Trikkyn Paperiperävaunu
+Papiertransporter
+WF Ultd. paperirekka
+Papierwagen
+VT Vienna paperivaunu
+Passagierwagen
+H-Trans matkustajavaunu
+Pferdebahn
+Hevoset
+Pferdebahnwagen
+Matkustajakärryt (hevosille)
+Postschiff
+Postialus
+Posttransporter
+H-Trans postiauto
+Postwagen
+H-Trans postivaunu
+PrPersonenwagen
+Matkustajavaunu
+PrPostwagen
+Postivaunu
+S220_CAR
+TPI S220 matkustajavaunu
+S220_LOK1
+TPI S220 vetoyksikkö (emu)
+S220_LOK2
+TPI S220 työntöyksikkö (emu)
+Sandanhaenger
+Hiekkaperävaunu
+Sandtransporter
+WF Ultd. Hiekkarekka
+Sandwagen
+WF Ultd./H-Trans Hiekkavaunu
+schooner
+Kuunari
+Serj-Mini
+Serj Maxi-Taxi
+Serj_Gaz-4_Goods_Truck
+Serj Gaz-4 Tavara-auto
+Sloop
+Slooppi (posti)
+SlowFerry
+H-Trans matkustajalautta
+Stahlanhaenger
+Teräsperävaunu
+Stahltransporter
+H-Trans teräsrekka
+Stahlwagen
+VT Vienna teräsvaunu
+Staubkesselwagen
+VT Vienna muovisäiliövaunu
+Steamer
+Höyrylaiva
+Stoneanhaenger
+Kiviperävaunu
+Stonetransporter
+WF Ultd. MK2 Kivirekka
+Stonewagen
+Kivivaunu
+SuperConstellation
+Super Constellation
+Tanklastzug
+H-Trans öljysäiliöauto
+Tatra-T4
+TATRA-T4 raitiovaunuveturi
+Tatra-T4_Wagon
+TATRA-T4 matkustajavaunu
+teaclipper
+Purjealus
+TENDER
+TPI Tender -hiilivaunu
+TPBeiwagen
+TPI VT98 matkustajavaunu
+TPDiesel
+TPI Class 26 (diesel)
+TPPassagierwagen
+TPI matkustajavaunu
+TPSchienenbus
+TPI VT98 (dmu)
+Tram_GT6_Kopf
+GT6 raitiovaunu
+Trike
+Trike hiekka-rekka
+Tugboat
+Hinaaja
+VolvoFH12
+Volvo FH12
+waste wagon
+Jätevaunu
+XMail
+Xpostivaunu
+XTest
+Xtestiveturi
+Zeppelin
+Zeppelin-ilmalaiva
+#______________________________________way______________________________________
+#______________________________________way______________________________________
+asphalt_road
+Asfaltti tie
+city_road
+Tie
+cobblestone_road
+Kivitie
+concrete_sleeper_track
+Betoni palkki rata
+dirt_road
+hiekkatie
+elevated_monorail
+Korotettu monorailrata
+gavel_road
+Soratie
+Kanal
+Kanava
+MaglevTrack
+Monorail-rata
+MaglevTrackElevated
+Korotettu Monorail-rata
+mip_cobblestone_road
+MIP Kivitie
+monorail
+Monorail
+Powerline
+Voimalinja
+Rillenschienen
+Raitiovaunurata
+runway_grass
+Nurmikiitorata
+runway_modern
+Kiitorata
+sand_track
+Hiekkapohjainen rata
+steel_sleeper_track
+Rautatie teräspalkeilla
+taxiway
+Rullausalue
+wooden_sleeper_track
+Rautatie puupalkeilla
+#__________________________________way-object___________________________________
+#__________________________________way-object___________________________________
+HighSpeedOverheadpower
+Suuren nopeuden ajolanka
+SlowOverheadpower
+Alhaisen nopeuden ajolanka

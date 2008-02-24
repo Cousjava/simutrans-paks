@@ -1,0 +1,408 @@
+################################################################################
+#                                                                              #
+#                Simutrans Scenario Specific Translation File                  #
+#                                Scenario: pak64                               #
+#                             Language: it Italiano                            #
+#                             Encoding: ISO-8859-1                             #
+#                            Font : Prop-Latin1.bdf                            #
+#                           Date Created: 16.01 2008                           #
+#                                                                              #
+#                                   authors:                                   #
+#                           Fabio Gonella - fagonella                          #
+#                                    note:                                     #
+#                          Raffaele Grimaldi - graffa                          #
+#                                    note:                                     #
+#                          Markus Pristovsek - prissi                          #
+#                            note: Administrator 64                            #
+#                                Marco - rabanne                               #
+#                                    note:                                     #
+#                                                                              #
+################################################################################
+#___________________________________building____________________________________
+#___________________________________building____________________________________
+01_CITY
+Municipio
+10_WOHN
+Chiesa (by Trikky)\n
+A1_ALTE_KIRCHE
+Antica chiesa. Tutti\ndovrebbero visitare questa\nfantastica costruzione!\n
+A2_SCHLOSS1
+Castello del Re Pazzo. \nMerita di essere visto!\n
+A3_BURG1
+Alcune rovine che\nraccontano di tempi migliori.\nVale la pena visitarle!\n
+A4_SCHLOSS2
+Questo vecchio maniero\nmerita di essere visitato!\n
+A5_STONEHENGE
+Antico anello di pietre.\nMolto misterioso!\n
+A6_DOME
+Questa splendida\ncattedrale antica è una\nvera e propria attrazione!\n
+ANIM_CINEMA
+Cinema (by Trikky)\n
+DenkFlor
+Monumento\n
+DenkOwen
+Monumento a Owen Rudge\n
+DenkSeth
+Monumento a Seth C. Triggs\n
+DenkTrikky
+Monumento a Trikky\n
+DenkVM
+Monumento\n
+DenkVolker
+Monumento a Volker Meyer\n
+DRIVEINCINEMA
+Cinema Drive-In\n
+Windmill
+Mulino a vento\n
+#____________________________________cursor_____________________________________
+#____________________________________cursor_____________________________________
+Baum
+Albero
+Remove
+Rimuovi
+#____________________________________factory____________________________________
+#____________________________________factory____________________________________
+2Raffinerie
+Raffineria (Benzina)
+Autohaus
+Concess. auto
+Autohersteller
+Fabbrica auto
+brewery
+Fabbrica di birra
+Buchgrosshandel
+Grossista di libri
+cannery
+Fabbrica di cibi in scatola
+Cementmill
+Cementificio
+CHEMIST
+Laboratorio chimico (by Seth)
+Concretefactory
+Fabbrica calcestruzzo
+cow_farm
+Allevamento bovino
+Druckerei
+Tipografia
+Erzbergwerk
+Miniera di ferro
+fish_pond
+Laghetto con pesci
+fish_swarm
+Branco di pesci
+food_processing_plant
+Industria alimentare
+grain_mill
+Macina per grano
+Kohlegrube
+Miniera di carbone
+Kohlekraftwerk
+Centrale elettr.
+Materialswholesale
+Grossista materiali
+Moebelfabrik
+Mobilificio
+Moebelhaus
+Home Market
+Nutzwald
+Bosco
+Oelbohrinsel
+Piattaforma petrolifera
+Oelfeld
+Pozzo di petrolio
+Papierfabrik
+Cartiera
+Pharmaceutics
+Industria farmaceutica
+Raffinerie
+Raffineria (Plastica)
+Saegewerk
+Segheria
+Sandquarry
+Cava di sabbia
+Stahlwerk
+Acciaieria
+Stonequarry
+Cava di pietra
+TANKE
+Distrib. benzina
+#_____________________________________good______________________________________
+#_____________________________________good______________________________________
+Autos
+Automobili
+beer
+Birra
+Bretter
+Tavole
+Buecher
+Libri
+canned_food
+Cibo in scatola
+Cement
+Cemento
+Chemicals
+Prodotti chimici
+Concrete
+Calcestruzzo
+Eisenerz
+Ferro
+fish
+Pesce
+flour
+Farina
+food
+Cibo
+Gasoline
+Benzina
+grain
+Grano
+Holz
+Legname
+Kohle
+Carbone
+meat
+Carne
+Medicine
+Medicinali
+milk
+Latte
+Moebel
+Mobili
+Oel
+Petrolio
+Papier
+Carta
+Plastik
+Plastica
+PrintersInk
+Inchiostro
+Sand
+Sabbia
+Stahl
+Acciaio
+Stone
+Pietra
+#_____________________________________menu______________________________________
+#_____________________________________menu______________________________________
+ShipTools
+Moli e porti
+#_____________________________________misc______________________________________
+#_____________________________________misc______________________________________
+Construction
+Costruzioni
+#_________________________________program_text__________________________________
+#_________________________________program_text__________________________________
+CATEGORY_01
+di merce imballata
+CATEGORY_02
+di merce grezza
+CATEGORY_03
+Petrol./Benz.
+CATEGORY_04
+di merce surgelata
+#____________________________________symbol_____________________________________
+#____________________________________symbol_____________________________________
+Passagiere
+Passeggeri
+Post
+Posta
+#____________________________________vehicle____________________________________
+#____________________________________vehicle____________________________________
+0Ben103
+Bennhardt BR103 (elettrica)
+1Ben140
+Bennhardt BR140 (elettrica)
+1Dampflokomotive
+H-Trans 0-4-0T (vapore)
+1Diesellokomotive
+H-Trans BR212 (diesel)
+1Ellok
+H-Trans BR103 (elettrica)
+1Schienenbus
+H-Trans/TPI VT95 (diesel)
+1TPEllok
+TPI F7A (diesel)
+2Ben155
+Bennhardt BR155 (elettrica)
+2Dampflokomotive
+H-Trans 4-6-0 (vapore)
+2Diesellokomotive
+H-Trans BR218 (diesel)
+2Ellok
+H-Trans Tigress I (elettrica)
+2TPEllok
+TPI Classe 86/2 (elettrica)
+3Ben185
+Bennhardt BR185 (elettrica)
+3Diesellokomotive
+H-Trans BR218 (diesel)
+4Ben204
+Bennhardt BR204 (diesel)
+5Ben220
+Bennhardt BR220 (diesel)
+6Ben228
+Bennhardt BR228 (diesel)
+7BenE11
+Bennhardt E11 (elettrica)
+Autotransportanhaenger
+H-Trans rimorchio per auto
+Autotransporter
+H-Trans trasporto auto
+Autotransportwagen
+TPI Lopomo vagone trasporto auto
+Beiwagen
+H-Trans/TPI VT95 carrozza passeggeri
+Bretteranhaenger
+WF Ultd. rimorchio per tavole di legno
+Brettertransporter
+WF Ultd. camion per tavole di legno
+Bretterwagen
+VT Vienna vagone per tavole di legno
+Buchanhaenger
+Serj/H-Trans rimorchio per libri
+Buchtransporter
+Serj/H-Trans camion per libri
+Buchwagen
+VT Vienna vagone per libri
+Bus
+H-Trans autobus
+Cementanhaenger
+WF Ultd. rimorchio per cemento
+Cementtransporter
+WF Ultd. camion per cemento
+Cementwagen
+WF Ultd. vagone per cemento
+Concretetransporter
+WF Ultd. camion per calcestruzzo
+Concretewagen
+WF Ultd. vagone per calcestruzzo
+Cooling_Waggon
+Vagone per merce surgelata
+DM8_CAR
+TPI DM8 carrozza passeggeri
+DM8_LOK1
+TPI DM8 locomotore anteriore (diesel)
+DM8_LOK2
+TPI DM8 locomotore posteriore (diesel)
+Erzanhaenger
+H-Trans rimorchio per ferro
+Erztransporter
+H-Trans camion per ferro
+Erzwagen
+H-Trans vagone per ferro
+FastFerry
+O.Bang traghetto veloce (hovercraft)
+Fishing_Boat
+Peschereccio
+Holzanhaenger
+JET rimorchio per legname
+Holzschiff
+TPI/JET nave per legname
+Holztransporter
+H-Trans camion per legname
+Holzwagen
+H-Trans vagone per legname
+Horsebookscariage
+Cavalli - Carro per libri
+Horsepapercariage
+Cavalli - Carro per carta
+Horsepassengerscariage
+Cavalli - Carrozza passeggeri
+Horses
+Cavalli
+Horsewoodcariage
+Cavalli - Carro per legno
+HVPosttransporter
+DIBU/H-Trans furgone postale
+Ik26
+Serj Ikarus-260 autobus
+Kohleanhaenger
+H-Trans rimorchio per carbone
+Kohleschiff
+WF Ultd. nave per carbone
+Kohletransporter
+H-Trans camion per carbone
+Kohlewagen
+H-Trans vagone per carbone
+Kunststofanhaenger
+H-Trans rimorchio per plastica
+Kunststofftransporter
+H-Trans camion per materie plastiche
+Li6
+Serj LiAZ-677 autobus
+Milk_Truck
+Camion per trasporto latte
+Milk_Waggon
+Vagone per trasporto latte
+Moebelanhaenger
+WF Ultd. rimorchio per mobili
+Moebelschiff
+Nave per mobili
+Moebeltransporter
+WF Ultd. camion per mobili
+Moebelwagen
+VT Vienna vagone per mobili
+Oelanhaenger
+H-Trans rimorchio cisterna per petrolio
+Oeltankschiff
+TPI Lopomo petroliera
+Oelwagen
+VT Vienna cisterna per petrolio
+OJetKunstoffschiff
+Nave per trasporto plastica
+Papieranhaenger
+Trikky rimorchio per carta
+Papiertransporter
+Trikky camion per carta
+Papierwagen
+VT Vienna vagone per carta
+Passagierwagen
+H-trans carrozza passeggeri
+Postschiff
+Nave postale
+Posttransporter
+H-Trans furgone postale
+Postwagen
+H-Trans vagone per posta/bagagli
+S220_CAR
+TPI S220 carrozza passeggeri
+S220_LOK1
+TPI S220 locomotore anteriore (elettrico)
+S220_LOK2
+TPI S220 locomotore posteriore (elettrico)
+Sandanhaenger
+WF Ultd. rimorchio per sabbia
+Sandtransporter
+WF Ultd. camion per sabbia
+Sandwagen
+WF Ultd./H-Trans vagone per sabbia
+Serj-Mini
+Serj Maxi-Taxi
+SlowFerry
+H-Trans traghetto passeggeri
+Stahlanhaenger
+H-Trans rimorchio per acciaio
+Stahltransporter
+H-Trans camion per acciaio
+Stahlwagen
+VT Vienna vagone per acciaio
+Staubkesselwagen
+VT Vienna vagone per materie plastiche
+Stoneanhaenger
+WF Ultd. rimorchio per pietra
+Stonetransporter
+WF Ultd. camion per pietra
+Stonewagen
+WF Ultd./H-Trans vagone per pietra
+Tanklastzug
+H-Trans camion cisterna per petrolio
+TENDER
+TPI Tender
+TPBeiwagen
+TPI VT98 carrozza passeggeri
+TPDiesel
+TPI Classe 26 (diesel)
+TPPassagierwagen
+TPI carrozza passeggeri
+TPSchienenbus
+TPI VT98 (diesel)

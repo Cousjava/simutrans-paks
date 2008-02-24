@@ -1,0 +1,410 @@
+################################################################################
+#                                                                              #
+#                Simutrans Scenario Specific Translation File                  #
+#                                Scenario: pak64                               #
+#                              Language: dk Dansk                              #
+#                             Encoding: ISO-8859-1                             #
+#                            Font : Prop-Latin1.bdf                            #
+#                           Date Created: 16.01 2008                           #
+#                                                                              #
+#                                   authors:                                   #
+#                      Michael Bisbjerg - michaelbisbjerg                      #
+#                                    note:                                     #
+#                          Markus Pristovsek - prissi                          #
+#                            note: Administrator 64                            #
+#                                                                              #
+################################################################################
+#____________________________________bridge_____________________________________
+#____________________________________bridge_____________________________________
+ClassicRail
+Byg jernbanebro (beton)
+ClassicRoad
+Byg vejbro (beton)
+SteelRail
+Byg jernbanebro (stål)
+#___________________________________building____________________________________
+#___________________________________building____________________________________
+01_CITY
+Rådhus
+04_CITY
+Rådhus
+10_WOHN
+Kirke (af Trikky)\n
+A1_ALTE_KIRCHE
+En berømt gammel  kirke. Alle \nbør besøge denne fantastiske \nbygning.\n
+A2_SCHLOSS1
+Den gale konges slot. Det er\nvirkelig  værd at besøge!\n
+A3_BURG1
+Nogle ruiner, som har set\nbedre tider. De er dog altid en\nrejse værd.\n
+A4_SCHLOSS2
+Dette slot er altid et besøg\nværd.\n
+A5_STONEHENGE
+En hemmelighedsfuld stenring.\nUrgammel og fuld af mystik!\n
+A6_DOME
+Denne vidunderlige gamle\nkatedral er en rigtig attraktion.\n
+ANIM_CINEMA
+Biografcenter (af Trikky)\n
+DenkFlor
+Dette monument tilegnes Flor\n'WF Ultd.' Wauters, den\nberømte ingeniør som skabte så\nmange glimrende køretøjer. Han\ner ligeledes kendt for at have\ndesignet mange velfungerende\nfabrikker.\n
+DenkOwen
+Denne plads tilegnes Owen\nRudge, den berømte\nfinansexpert og lydtekniker.\n
+DenkSeth
+Denne plads tilegnes Seth C.\nTriggs, den berømte arkitekt\nsom designede så mange\nsmukke bygninger. Han er\nligeledes kendt for at have\ngjort mange studier over\nhvorledes man kan forbedre\ntrafiksystemet.\n
+DenkTomas
+Dette monument tilegnes\nTomas Kubes, der forbedrede\nSimutrans på mange, mange\nområder med gode råd og\nhårdt arbejde.\n
+DenkTrikky
+Dette monument tilegnes\n'Trikky' Rick McGreal, den\nberømte arkitekt som\ndesignede så mange\nimponerende bygninger.\n
+DenkVM
+Dette monument tilegnes\nManfred 'VT Wien' Tomaschitz,\nden berømte ingeniør som\ndesignede mange utrolig gode\ntoge.\n
+DenkVolker
+Dette monument tilegnes\nVolker Meyer, som\nforbedrede Simutrans på\nmange, mange måder.\n
+DRIVEINCINEMA
+Drive-in bio\n
+RUIN_0
+En prægtig, gammel borgruin.\nKom forbi og mærk historiens\nvingesus!\n
+STADIUM2
+Dette olympiske- stadion kan\nrumme 100000 tilskuere.\n
+Tennis_Court
+Tennis anlæg.\n
+Theatre
+Teater. Ethvert besøg er en\nkulturel berigelse.\n
+Windmill
+Mølle\n
+#____________________________________cursor_____________________________________
+#____________________________________cursor_____________________________________
+Baum
+Træ
+#____________________________________factory____________________________________
+#____________________________________factory____________________________________
+2Raffinerie
+Raffinaderi (benzin)
+Autohaus
+Bilforhandler
+Autohersteller
+Bilfabrik
+Buchgrosshandel
+Boghandel
+Cementmill
+Cementfabrik
+CHEMIST
+Apotek (af Seth)
+Concretefactory
+Betonfabrik
+Druckerei
+Trykkeri
+Erzbergwerk
+Jernmine
+Kohlegrube
+Kulmine
+Kohlekraftwerk
+Kulkraftværk
+Materialswholesale
+Byggemarked
+Moebelfabrik
+Møbelfabrik
+Moebelhaus
+Møbelforretning
+Nutzwald
+Skovbrug
+Oelbohrinsel
+Olieplatform
+Oelfeld
+Oliekilde
+Papierfabrik
+Papirfabrik
+Pharmaceutics
+Medicinalfabrik
+Raffinerie
+Raffinaderi (plast)
+Saegewerk
+Savværk
+Sandquarry
+Grusgrav
+Stahlwerk
+Stålværk
+Stonequarry
+Stenbrud
+TANKE
+Benzinstation
+#_____________________________________good______________________________________
+#_____________________________________good______________________________________
+Autos
+biler
+Bretter
+brædder
+Buecher
+bøger
+Cement
+cement
+Chemicals
+kemikalier
+Concrete
+beton
+Eisenerz
+jernmalm
+Gasoline
+benzin
+Holz
+tømmer
+Kohle
+kul
+Medicine
+medikamenter
+Moebel
+møbler
+Oel
+olie
+Papier
+papir
+Plastik
+plast
+PrintersInk
+trykkerifarve
+Sand
+grus
+Stahl
+stål
+Stone
+sten
+#_____________________________________menu______________________________________
+#_____________________________________menu______________________________________
+ShipTools
+Havneanlæg
+SlopeTools
+Rampeanlæg
+#_____________________________________misc______________________________________
+#_____________________________________misc______________________________________
+Construction
+Byggeudgifter
+#_________________________________program_text__________________________________
+#_________________________________program_text__________________________________
+CATEGORY_01
+stykgods
+CATEGORY_02
+bulkgods
+CATEGORY_03
+olie/benzin
+CATEGORY_04
+Kølegods
+#____________________________________symbol_____________________________________
+#____________________________________symbol_____________________________________
+Passagiere
+passagerer
+Post
+post
+#____________________________________vehicle____________________________________
+#____________________________________vehicle____________________________________
+0Ben103
+Bennhardt BR103 (el)
+1Ben140
+Bennhardt BR140 (el)
+1Dampflokomotive
+H-Trans 0-4-0T (damp)
+1Diesellokomotive
+H-Trans BR212 (diesel)
+1Ellok
+H-Trans BR103 (el)
+1Schienenbus
+H-Trans/TPI VT95 (dmu)
+1TPEllok
+TPI F7A (diesel)
+2Ben155
+Bennhardt BR155 (el)
+2Dampflokomotive
+H-Trans 4-6-0 (damp)
+2Diesellokomotive
+H-Trans BR218 (diesel)
+2Ellok
+H-Trans Tigress I (el)
+2TPEllok
+TPI Class 86/2 (el)
+3Ben185
+Bennhardt BR185 (el)
+3Diesellokomotive
+H-Trans BR365 (diesel)
+4Ben204
+Bennhardt BR204 (diesel)
+5Ben220
+Bennhardt BR220 (diesel)
+6Ben228
+Bennhardt BR228 (diesel)
+7BenE11
+Bennhardt E11 (el)
+Autotransportanhaenger
+H-Trans Biltransportanhænger
+Autotransporter
+H-Trans Biltransport
+Autotransportwagen
+TPI Lopomo Biltransportvogn
+Beiwagen
+H-Trans/TPI VT95 Passagervogn
+Bretteranhaenger
+WF Ultd. Bræddeanhænger
+Brettertransporter
+WF Ultd. Bræddetransport
+Bretterwagen
+VT Wien Bræddevogn
+Buchanhaenger
+Serj/H-Trans Boganhænger
+Buchtransporter
+Serj/H-Trans Bogbil
+Buchwagen
+VT Wien Bogvogn
+Bus
+H-Trans Bus
+Cementanhaenger
+WF Ultd. Cementanhænger
+Cementtransporter
+WF Ultd. Cementtankbil
+Cementwagen
+WF Ultd. Cementtankvogn
+ColinBigFerry
+Colin Storfærge
+ColinFastFerry
+Colin Hurtigfærge
+ColinMotorBus
+Colin motorbus
+Concretetransporter
+WF Ultd. Betontankbil
+Concretewagen
+WF Ultd. Betontankvogn
+DM8_CAR
+TPI Dm8 Passagervogn
+DM8_LOK1
+TPI Dm8 Motorvogn front (dmu)
+DM8_LOK2
+TPI Dm8 Motorvogn bag (dmu)
+Erzanhaenger
+H-Trans Jernmalmsanhænger
+Erztransporter
+H-Trans Jernmalmsbil
+Erzwagen
+H-Trans Jernmalmsvogn
+FastFerry
+O.Bang Hurtigfærge
+H-Trans-Pantheress
+H-Trans Pantheress
+H-Trans-Tiger-Car
+H-Trans Tigress Passagervogn
+H-Trans-Tiger-Mail-Car
+H-Trans Tigress Postvogn
+H-Trans-Tigress-II-Back
+H-Trans-Tigress-II bag
+H-Trans-Tigress-II-Front
+H-Trans-Tigress-II front
+Holzanhaenger
+JET Tømmeranhænger
+Holzschiff
+TPI/JET Tømmerfragter
+Holztransporter
+H-Trans Tømmerbil
+Holzwagen
+H-Trans Tømmervogn
+Horsebookscariage
+Hest - Bogvogn
+Horsepapercariage
+Hest - Papirvogn
+Horsepassengerscariage
+Hest - Passagervogn
+Horses
+Hestespand
+Horsewoodcariage
+Hest - Tømmervogn
+HVPosttransporter
+DIBU/H-Trans Postbil
+Ik26
+Serj Ikaros-260
+IL-209S_Goods_Trailer
+IL-209S Stykgodsanhænger
+IL-209S_Goods_Truck
+IL-209S Stykgodstransport
+JNR_C11
+JNR C11 (2-6-4T)
+Kohleanhaenger
+H-Trans Kulanhænger
+Kohleschiff
+WF Ultd. Bulkgodsfragter
+Kohletransporter
+H-Trans Kulbil
+Kohlewagen
+H-Trans Kulvogn
+Kunststofanhaenger
+H-Trans Plastanhænger
+Kunststofftransporter
+H-Trans Plastbil
+Li6
+Serj LiAZ-677
+Moebelanhaenger
+WF Ultd. Møbelanhænger
+Moebelschiff
+WF Ultd. Stykgodsfragter
+Moebeltransporter
+WF Ultd. Møbeltransport
+Moebelwagen
+VT Wien Møbelvogn
+Oelanhaenger
+H-Trans Olietankanhænger
+Oeltankschiff
+TPI Lopomo Olietanker
+Oelwagen
+VT Wien Olietankvogn
+OJetKunstoffschiff
+JET Plastfragter
+Papieranhaenger
+Trikky Papiranhænger
+Papiertransporter
+Trikky Papirbil
+Papierwagen
+VT Wien Papirvogn
+Passagierwagen
+H-Trans Passagervogn
+Postschiff
+Postbåd
+Posttransporter
+H-Trans Postbil
+Postwagen
+H-Trans Post/Baggagevogn
+S220_CAR
+TPI S220 Passagervogn
+S220_LOK1
+TPI S220 Motorvogn front (emu)
+S220_LOK2
+TPI S220 Motorvogn bag (emu)
+Sandanhaenger
+WF Ultd. Grusanhænger
+Sandtransporter
+WF Ultd. Grustransport
+Sandwagen
+WF Ultd./H-Trans Grusvogn
+Serj-Mini
+Serj Maxi-Taxi
+Serj_Gaz-4_Goods_Truck
+Serj_Gaz-4 Stykgodstransport
+SlowFerry
+H-Trans Passagerfærge
+Stahlanhaenger
+H-Trans Stålanhænger
+Stahltransporter
+H-Trans Stålbil
+Stahlwagen
+VT Wien Stålvogn
+Staubkesselwagen
+VT Wien Plastvogn
+Stoneanhaenger
+WF Ultd. Stenanhænger
+Stonetransporter
+WF Ultd. Stentransport
+Stonewagen
+WF Ultd./H-Trans Stenvogn
+Tanklastzug
+H-Trans Olietankbil
+TENDER
+TPI Tender
+TPBeiwagen
+TPI VT98 Passagervogn
+TPDiesel
+TPI Class 26 (diesel)
+TPPassagierwagen
+TPI Passagervogn
+TPSchienenbus
+TPI VT98 (dmu)

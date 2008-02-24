@@ -1,0 +1,746 @@
+################################################################################
+#                                                                              #
+#                Simutrans Scenario Specific Translation File                  #
+#                                Scenario: pak64                               #
+#                             Language: es Espanol                             #
+#                             Encoding: ISO-8859-1                             #
+#                            Font : Prop-Latin1.bdf                            #
+#                           Date Created: 16.01 2008                           #
+#                                                                              #
+#                                   authors:                                   #
+#                            Federico Almada - fede                            #
+#                                    note:                                     #
+#                             Jan Li?ka - jan.licka                            #
+#                            note: DHL Exel Company                            #
+#                           José G. Moya Y. - jmoysae                          #
+#                         note: ES translation creator                         #
+#                          Markus Pristovsek - prissi                          #
+#                            note: Administrator 64                            #
+#                                                                              #
+################################################################################
+#____________________________________bridge_____________________________________
+#____________________________________bridge_____________________________________
+ClassicRail
+Puente ferroviario con vigas de cemento
+ClassicRoad
+Puente de cemento para carretera
+koka_Bridge_single
+Vía elevada
+MaglevBridge
+Puente monorrail
+mlm_concrete_bridge
+puente de hormigón
+ModernRoad
+Puente de carretera moderno (hormigón pretensado)
+MonorailRamp
+Rampa de monorrail
+Schiffhebewerk
+Puente levadizo
+SteelRail
+Puente ferroviario con vigas de acero
+ViaductRail
+Viaducto de ladrillo
+WoodenRoad
+Puente de madera para carreteras
+#___________________________________building____________________________________
+#___________________________________building____________________________________
+00_01_CITY
+Ayuntamiento antiguo
+01_CITY
+Ayuntamiento
+02_CITY
+Ayuntamiento
+03_CITY
+Ayuntamiento
+03_CITY_A
+Ayuntamiento
+03_CITY_B
+Ayuntamiento
+03_CITY_C
+Ayuntamiento
+04_CITY
+Ayuntamiento
+04_CITY_A
+Ayuntamiento
+04_CITY_B
+Ayuntamiento
+04_CITY_C
+Ayuntamiento
+10_WOHN
+Iglesia (por Trikky)\n
+1headquarter
+¡El cuartel general de tu compañía!
+2headquarter
+¡Los cuarteles generales de tu compañía!
+3headquarter
+¡El cuartel general de tu compañía!
+A1_ALTE_KIRCHE
+Iglesia Famosa  Una\nfamosa catedral antigua.\ncon magníficas pinturas.\nTodo el mundo  debería ver\neste fantástico  edificio.\n
+A2_SCHLOSS1
+Neuschwanstein El castillo\ndel rey loco. ¡Merece una\nvisita!\n
+A3_BURG1
+Algunas ruinas que hablan\nde tiempos mejores.\nSiempre son una  visita\ninteresante.\n
+A4_SCHLOSS2
+Viejo  castillo se merece\nuna visita.\n
+A5_STONEHENGE
+Stonehedge Un antiguo\nanillo de piedras. ¡Sienta el\nmisterio paseando entre\nsus monolitos!\n
+A6_DOME
+Catedral Antigua Ha sido el\ncorazón de esta ciudad\ndurante siglos.\n
+ANIM_CINEMA
+Cine (por Trikky)\n
+COM_00_02
+A todos los pilotos de\nciclomotor de la ciudad les\nencanta la gasolinera de\nMr. Reichmuth, porque aquí\nhay un surtidor automático\nde mezcla.\n
+COM_00_03
+Este garaje quisiera\nterminar de una vez por\ntodas su triste existencia y\nabrir finalmente un Área de\nservicio en la calle\nprincipal. Pero le falta todo:\nel dinero, el permiso de obras\ny la calle principal.\n
+COM_00_04
+Parque Trikky. Este parque\nestá adyacente a una\nuniversidad, y casi todos\nlos días se pueden ver\nestudiantes de ambos\nsexos ganduleando bajo\nlos árboles.\n
+COM_00_05
+Banco "drive through". Lo\nllaman "drive through" (en\nlugar de "drive in") porque\ncuando pasas a través de\nél tu cartera se vacía\nmágicamente. Normalmente\npuede verse al encargado\nfrotándose las manos con\nregocijo.\n
+COM_00_06
+En ninguna parte hay mejor\ncafé que en este Tejacafé.\n
+COM_00_07
+Pequeño edificio de\noficinas con aparcamiento\n
+COM_00_08
+Edificio de apartamentos\ncon algunas tiendas.\n
+COM_00_10
+Bloque de oficinas mediano.\n
+COM_00_11
+Bazar Baza. Un bazar\nbrillante y colorista donde\nse venden desde Velas de\nCera hasta Acorazados\nGrises.\n
+COM_00_12
+Bloque de oficinas\n
+COM_00_13
+Este hotel recién renovado\ndisimula su construcción en\nlos cúbicos 60.\n
+COM_00_14
+Este edificio parece una\nfábrica antigua, pero en\nrealidad es un chiringuito\nde apuestas ilegales\naltamente organizado.\n
+COM_00_16
+Edificio de oficinas\nmoderno.\n
+COM_00_18
+Edificio de oficinas\nmoderno\n
+COM_00_19
+Gran edificio moderno de\noficinas. El arquitecto\nintentó que se pareciera al\nEmpire State, pero no\nconsiguió permiso de obras\npara superar los 10 pisos.\n
+COM_00_20
+Torre de oficinas\n
+COM_00_21
+Gran hotel Barcelona\n
+COM_00_22
+Nuevo edificio de la ONU\npara Somalia.\n
+COM_00_23
+Este moderno complejo\nhotelero tiene un\nobservatorio en el último\npiso. Fue construido en\nHollywood, para qe los\nclientes pudieran mirar\ndiversos tipos de estrellas.\n
+COM_01_01
+Campo de despegue y\naterrizaje de globos de aire\ncaliente. Este lugar está\nfrecuentado por muchos\npolíticos: por eso no\npuedes ver botellas de gas.\n
+COM_01_09
+Viejo cine. Aquí se\nproyectan muchísimas\npelículas en blanco y\nnegro. Es muy polular entre\nlos fans de Charlie Chaplin.\n
+COM_01_10
+El ambulatorio de la ciudad. \n
+DenkFlor
+Dedicado a Flor 'WF Ultd.'\nWauters, el famoso\ningeniero que creó tantos\nvehículos de carretera y\nferroviarios. También\nfamoso por diseñar tantas\nfactorías productivas.\n
+DenkHajo
+Este monumento está\ndedicado a Hansjörg\nMathaner quien creó este\njuego en siete años Los\nsemidioses tardan más en\ntales trabajos.\n
+DenkMHz
+Este monumento está\ndedicado a Georg Heiduk\nmaestro en edificios\nrenderizados. Representa\nsu aguda visión de los\ndetalles.\n
+DenkOwen
+Lugar dedicado a Owen\nRudge, el famoso experto\nfinanciero y técnico de\nsonido.\n
+DenkSeth
+Este lugar está dedicado a\nSeth C. Triggs, el famoso\narquitecto que diseñó\ntantos edificios bellos.\nTambién fue famoso por\nsus estudios para mejorar\nel tráfico\n
+DenkTomas
+Este monumento se dedica\nTomas Kubes quien ayudó a\nmejorar Simutrans en\nmuchos, muchos aspectos\ncon sus consejos y  su\nesfuerzo.\n
+DenkTrikky
+Dedicado a 'Trikky' Rick\nMcGreal, el famoso\narquitecto que diseñó\ntantos edificios\nimpresionantes.\n
+DenkVM
+Dedicado a Manfred 'VT\nVienna' Tomaschitz, el\nfamoso ingeniero que\ndiseñó mucho material\nferroviario.\n
+DenkVolker
+Lugar construido  por Volker\nMeyer quien mejoró\nSimutrans en muchos,\nmuchos aspectos.\n
+DRIVEINCINEMA
+Autocine\n
+Gymnasium
+Liceo\n
+IND_01_01
+Aparcamiento\n\n¿No encuentra un\naparcamiento libre para su\ncoche? Entonces, ¿por qué\nno viene a la ciudad en\nautobús?\n
+IND_01_03
+Depósito de gas grande\n\nDepósito esférico para el\nalmacenamiento de gas\nnatural.\n
+IND_01_04
+Cobertizo de chapa\n\nEn un cobertizo de chapa\npuede hacer mucho frío en\ninvierno. Por tanto, hay que\nafanarse con el soplete\ndurante la primera hora de\ntrabajo. Durante el invierno,\nuno agradece no tener que\ncogerlo hasta el mediodía, a\nser es posible.\n
+IND_01_05
+Depósito de gas.\n\nEsperemos que las paredes sean\nsiempre lo suficientemente\nestables como para que el\ngas siga dentro.\n
+IND_01_06
+La tapicería Nalbrugger\ntapiza sillas y sillones de\ntodo tipo con cuero.\n
+IND_01_07
+Caseta de transformador\neléctrico.\n
+IND_01_08
+Fábrica de fertilizantes\n
+IND_01_09
+Depósito de combustible\n
+IND_01_10
+Fábrica de herramientas.\n\nDesde hace un siglo, forma\nparte del paisaje de la\nciudad, al igual que las\niglesias. Los martillos y\nalicates que fabrica hoy en\ndía no son útiles para el uso\ndoméstico, ya que la cabeza\ndel martillo es como una\ncabeza de clavo y los alicates\nson tan pequeños que uno\ndebería cogerlos con pinzas\nsin apretar demasiado, no se\nvaya a destruir una de estas\nmaravillas de la mecánica de\nprecisión.\n
+IND_01_11
+Esta fábrica se dedicaba\ninicialmente a coser blusas.\nLas mujeres podían ser\ncontratadas con salarios\nbajos, y la semana de 48\nhoras fue otro progreso\nnotable. Hoy día, las mujeres\ntras las computadoras se\nsientan en sus cubículos y\nvisten blusas, cosidas por\notras mujeres por bajos\nsalarios durante más de 48\nhoras a la semana en Filipinas.\n
+IND_01_12
+Esta fábrica de estilo\nbauhaus se ha dedicado\nsiempre a la producción de\ntubos. Desde el hierro\nfundido al plástico ha\nhabido un largo trecho.\n
+MainTerminal1930
+Terminal aeropuerto
+RES_00_01
+Casa pequeña con jardín\n
+RES_00_02
+Casa pequeña con jardín\n
+RES_00_03
+Casa pequeña con jardín\n
+RES_00_04
+Casa pequeña\n
+RES_00_05
+Casa mediana. Puede\nalbergar dos familias. Las\nparedes delgadas hacen un\npoco más incómoda la vida,\nespecialmente desde que\nal chico de la puerta de al\nlado le regalaron la batería\n(que, obviamente, no sabe\ntocar).\n
+RES_00_06
+Pequeña fuente. Aunque no\nsea tan magnífica como la\nde Génova, es hermoso\ncaminar alrededor de ella,\nespecialmente en verano.\n
+RES_00_07
+Casa mediana\n
+RES_00_08
+Casa mediana\n
+RES_00_09
+Pequeño parque con\nestanque para patos.\n
+RES_00_10
+La impresionante mansión\nde Moistboy\n
+RES_00_11
+Casa grande con jardín\n
+RES_00_13
+Casas pareadas con jardín.\n
+RES_00_14
+Apartamentos pequeños\n
+RES_00_15
+Bloque de pisos pequeño\n
+RES_00_16
+Villa antigua\n
+RES_00_19
+Apartamentos modernos\n
+RES_00_20
+Torre de pisos\n
+RES_01_01
+Casa prefabricada pequeña\ncon una gran habitación\npara el niño en la buhardilla.\n
+RES_01_02
+Casa con tejado de estilo\nalpino.\n
+RES_01_04
+Casa unifamiliar grande\n
+RES_01_07
+Casa de lujo grande\n
+RES_01_08
+Casa mediana con jardín\n
+RES_01_10
+Casa moderna\n
+RES_01_12
+Edificio de apartamentos de\nladrillo visto\n
+RES_01_13
+Pisos\n
+RES_01_14
+Pequeños apartamentos de\nlujo\n
+RES_01_17
+Pisos y tiendas de estilo\nclásico\n
+RES_01_19
+Torre de apartamentos\n
+RES_01_20
+Torre de oficinas\n
+RES_02_16
+Apartamentos de lujo con\nático\n
+RUIN_0
+Castillo Medieval\n\nLos señores de este castillo\nse aliaron con el bando\nequivocado durante la\nguerra de los 30 años. Sin\nembargo, todavía se puede\napreciar su poderío.\n
+ShipDepot
+Astillero
+STADIUM2
+Gran estadio<br /><br\n/>Alberga todas las\ncompeticiones\ninternacionales de la\nlocalidad.\n
+Tennis_Court
+Campo de ténis\n
+Theatre
+Music-Hall\n
+VictorianStation
+Estación de estilo victoriano
+Vorplatz
+Patio delantero
+Windmill
+Molino de viento\n
+#____________________________________citycar____________________________________
+#____________________________________citycar____________________________________
+green_car
+coche verde
+orange_bus
+autobús
+yellow_car
+Coche amarillo
+#____________________________________cursor_____________________________________
+#____________________________________cursor_____________________________________
+Marked
+Banderita
+Schedule
+Parada
+ShipDepotEW
+Astillero
+ShipDepotNS
+Astillero
+Signal
+Señal
+Slope
+Pendiente
+#__________________________________dummy_info___________________________________
+#__________________________________dummy_info___________________________________
+factory_Kohlegrube_details
+<title>Acerca de las Minas de carbón</title><h1>Minas de Carbón</h1><p>En las minas de carbón los mineros extraen carbón. Es un trabajo duro, pero el carbón es necesario para industrias tan importantes como las fundiciones y las centrales eléctricas.<p>
+factory_Nutzwald_details
+<title>Acerca de las explotaciones forestales</title><h1>Explotaciones forestales</h1><p>En los bosques crece el más importante de los materiales renovables y fuentes de energía, que explotado por los leñadores y transformado en materiales de alta calidad por las industrias del papel y la madera.</p>
+#____________________________________factory____________________________________
+#____________________________________factory____________________________________
+2Raffinerie
+Refinería (gasolina)
+Autohaus
+Concesionario coches
+Autohersteller
+Fábrica coches
+bakery
+Fábrica de pan
+brewery
+Fábrica de cervezas
+Buchgrosshandel
+Mayorista de libros
+cannery
+Fábrica de conservas
+Cementmill
+Fábrica de cemento
+CHEMIST
+Farmacia
+Concretefactory
+Fábrica de hormigón
+cow_farm
+Granja de vacuno
+dairy
+Central lechera
+Druckerei
+Imprenta
+Erzbergwerk
+Mina de hierro
+fish_pond
+Estanque de pesca
+fish_swarm
+Banco de peces
+food_processing_plant
+Industria alimentaria
+grain_farm
+Trigal
+grain_mill
+Molino de trigo
+Incinerator
+Incineradora
+Kohlegrube
+Mina de carbón
+Kohlekraftwerk
+Central térmica de carbón
+Materialswholesale
+Almacén de construcción
+Moebelfabrik
+Fábrica de muebles
+Moebelhaus
+Tienda de muebles
+Nutzwald
+Explotac. forestal
+Oelbohrinsel
+Plataforma petrolífera
+Oelfeld
+Pozo de petróleo
+Oelkraftwerk
+Central térmica de fueloil
+Papierfabrik
+Fábrica de papel
+Pharmaceutics
+Ind. Farmacéutica
+Raffinerie
+Refinería (plásticos)
+Saegewerk
+Aserradero
+Sandquarry
+Cantera de arena
+scrap_yard
+Planta de reciclado
+Stahlwerk
+Fundición hierro
+Stonequarry
+Cantera de piedra
+supermarket
+Supermercado
+TANKE
+Gasolinera
+Windkraftwerk
+Central eólica
+#_____________________________________good______________________________________
+#_____________________________________good______________________________________
+Autos
+Automóviles
+beer
+Cerveza
+Bretter
+Tablones
+Buecher
+Libros
+canned_food
+Conservas
+Cement
+Cemento
+Chemicals
+Productos químicos
+Concrete
+Hormigón
+Eisenerz
+Hierro
+fish
+Pescado
+food
+Alimentos
+Gasoline
+Gasolina
+grain
+Grano
+Holz
+Madera
+Kohle
+Carbón
+meat
+Carne
+Medicine
+Medicinas
+milk
+Leche
+Moebel
+Muebles
+Oel
+Petróleo
+Papier
+Papel
+Plastik
+Plásticos
+PrintersInk
+Tinta industrial
+Sand
+Arena
+Stahl
+Acero
+Stone
+Piedra
+waste
+Basura
+#____________________________________ground_____________________________________
+#____________________________________ground_____________________________________
+Slopes
+Pendientes
+Water
+Agua
+#_____________________________________menu______________________________________
+#_____________________________________menu______________________________________
+MainMenu
+Menú principal
+ShipTools
+Herramientas para barcos
+SlopeTools
+Rampas y pendientes
+SpecialTools
+Especial
+#__________________________________pedestrian___________________________________
+#__________________________________pedestrian___________________________________
+Woman
+mujer
+#_________________________________program_text__________________________________
+#_________________________________program_text__________________________________
+CATEGORY_01
+paquetes
+CATEGORY_02
+áridos
+CATEGORY_03
+petróleo/gasolina
+CATEGORY_04
+refrigerados
+CATEGORY_06
+Mercancías largas
+#___________________________________roadsign____________________________________
+#___________________________________roadsign____________________________________
+Signals
+Señales
+#____________________________________symbol_____________________________________
+#____________________________________symbol_____________________________________
+ShipStop
+Puerto
+Waren
+Mercancías
+#_____________________________________tree______________________________________
+#_____________________________________tree______________________________________
+Latschenkiefer
+Pino de montaña\n
+Tree6
+Abeto picea Picea abies \nConífera estrecha. Alcanza\nuna altura de 35 to 65m y\nun diámetro principal de 2m,\ny vive hasta 1000 años. Su\nhábitat natural es el norte y\nel este de Europa, así como\nlas montañas de Europa\nCentral. Por repoblación\nartificial se encuentra en\nzonas más bajas.  Uso:\nconstrucción interior y\nexterior, estibación,\nconstrucción de casetas,\naglomerado, cajas de\nresonancia para instrumentos\nmusicales, industrias de la\ncelulosa y el papel.\n
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
+RoadTunnel
+Túnel (carretera)
+#____________________________________vehicle____________________________________
+#____________________________________vehicle____________________________________
+0Ben103
+Bennhardt BR103
+1Ben140
+Bennhardt BR140
+1Dampflokomotive
+H-Trans 0-4-0T
+1Diesellokomotive
+H-Trans BR212
+1Ellok
+H-Trans BR103
+1Schienenbus
+H-Trans/TPI VT95
+1TPEllok
+TPI F7A
+2Ben155
+Bennhardt BR155
+2Dampflokomotive
+H-Trans 4-6-0
+2Diesellokomotive
+H-Trans BR218
+2Ellok
+H-Trans Tigresa I
+2TPEllok
+TPI Clase 86/2
+3Ben185
+Bennhardt BR185
+3Diesellokomotive
+H-Trans BR218
+4Ben204
+Bennhardt BR204
+5Ben220
+Bennhardt BR220
+6Ben228
+Bennhardt BR228
+707
+Boeing 707
+7BenE11
+Bennhardt E11
+Autotransportanhaenger
+Remolque para coches H-Trans
+Autotransporter
+H-Trans transporte automóviles
+Autotransportwagen
+TPI Lopomo Vagón para automóviles
+Beiwagen
+Coche adicional H-Trans/TPI VT95
+Bretteranhaenger
+Remolque para tablas WF Ultd.
+Brettertransporter
+WF Ultd. transporte tablas
+Bretterwagen
+VT Vienna Vagón para tablones
+Buchtransporter
+Camión para libros Serj/H-Trans
+Buchwagen
+VT Viena Vagón para libros
+Bus
+Autobús H-trans
+Cementanhaenger
+Remolque para cemento WF Ultd.
+Cementtransporter
+Camión cemento WF Ultd.
+Cementwagen
+WF Ultd. Vagón para cemento
+Concretetransporter
+Camión hormigón WF Ultd.
+Concretewagen
+WF Ultd. Vagón para hormigón
+Cooling_Container
+Container frigorífico
+Cooling_Truck
+Camión frigorífico
+Cooling_Waggon
+Vagón frigorífico
+Deponielaster
+Vertedero
+Deponielaster2
+Vertedero2
+DM8_CAR
+TPI DM8 Coche de pasajeros
+DM8_LOK1
+TPI DM8 Locomotora delantera (diesel)
+DM8_LOK2
+TPI DM8 Remolque con cabina
+Erzanhaenger
+Remolque hierro H-trans
+Erztransporter
+Camión para hierro H-trans
+Erzwagen
+Vagón para hierro
+FastFerry
+Ferry rápido (hovercraft)
+Fishing_Boat
+Barco de pesca
+GarbageTruck
+Camión de basura
+Guppy
+Guppy avión para libros
+H-Trans-Tiger-Car
+Coche de pasajeros H-Trans Tigresa
+H-Trans-Tiger-Mail-Car
+H-Trans Tigress mail car
+Heavy_ore_truck
+Camión pesado para minería
+Holzanhaenger
+JET remolque para madera
+Holzschiff
+TPI/JET barco para madera
+Holztransporter
+Camión para madera H-trans
+Holzwagen
+Vagón para troncos de madera
+Horsebookscariage
+Carreta de caballos para libros
+Horsepapercariage
+Carreta de caballos para papel
+Horsepassengerscariage
+Carro de caballos para pasajeros
+Horses
+Caballos
+Horsewoodcariage
+Carreta de caballos para madera
+HVPosttransporter
+Camión correo DIBU/H-Trans
+Ik26
+Autobús Serj Ikarus-260
+Kohleanhaenger
+Remolque carbón MK2
+Kohleschiff
+WF Ultd. barco para carbón
+Kohletransporter
+Camión para carbón H-trans
+Kohlewagen
+Tolva para carbón
+Kunststofanhaenger
+Remolque para plásticos H-Trans
+Kunststofftransporter
+Camión para plásticos H-trans
+Li6
+Autobús Serj LiAZ-677
+MailExpress
+Correo Aéreo
+Milk_Truck
+Camión para leche
+Milk_Waggon
+Vagón para leche
+Moebelanhaenger
+WF Ultd. Remolque para muebles
+Moebelschiff
+Barco para muebles TPI/JET
+Moebeltransporter
+WF Ultd. transporte muebles
+Moebelwagen
+VT Vienna Vagón para muebles
+Oelanhaenger
+Remolque petróleo H-trans
+Oeltankschiff
+Petrolero
+Oelwagen
+Vagón cisterna para petróleo
+Oilbarge
+barcaza para petróleo
+Oiltrailer
+Tráiler cisterna
+OJetKunstoffschiff
+Barco para plásticos JET
+OldOil
+Vagoneta petróleo
+old_open_car
+Vagoneta para carbón
+PaddelSteamer
+Vapor de rueda de paletas
+Papieranhaenger
+Remolque para papel Trikki
+Papiertransporter
+Trikky Camión para papel
+Papierwagen
+VT Viena Vagón para papel
+Passagierwagen
+H-trans Vagón para pasajeros
+Postschiff
+Barco para correo
+Posttransporter
+Camión correo H-trans
+Postwagen
+Furgón correo/equipajes
+S220_CAR
+TPI S220 Coche de pasajeros
+S220_LOK1
+TPI S220 Locomotora delantera
+S220_LOK2
+TPI S220 Locomotora posterior
+Sandanhaenger
+Remolque para arena WF Ultd.
+Sandtransporter
+Camión para arena
+Sandwagen
+WF Ultd./H-Trans Vagón para arena
+Serj-Mini
+Serj Maxi-Taxi
+Serj_Gaz-4_Goods_Truck
+Camión mercancías Serj Gaz-4
+Sloop
+Balandra de correo.
+SlowFerry
+Ferry convencional H-trans
+Stahlanhaenger
+Remolque para Acero H-Trans
+Stahltransporter
+Camión para acero H-trans
+Stahlwagen
+Vagón para acero
+Staubkesselwagen
+Vagón para plásticos
+Stoneanhaenger
+Remolque para piedra WF Ultd.
+Stonetransporter
+Camión para piedra MK2
+Stonewagen
+WF Ultd./H-Trans Vagón para piedra
+Tanklastzug
+Camión cisterna
+TENDER
+TPI Ténder
+TPBeiwagen
+Coche adicional para TPI VT98
+TPDiesel
+TPI Clase 26
+TPI_Std_2-6-4T
+TPI Std 2-6-4T
+TPPassagierwagen
+TPI Vagón pasajeros
+TPSchienenbus
+TPI VT98
+waste wagon
+Carro de basura
+XMail
+Monorrail para correo
+XTest
+Monorrail pasajeros
+Zeppelin
+Zepelín
+#______________________________________way______________________________________
+#______________________________________way______________________________________
+asphalt_road
+Carretera asfaltada
+cobblestone_road
+Carretera adoquinada
+concrete_sleeper_track
+Vía con traviesas de cemento
+dirt_road
+Carretera sin pavimentar
+gavel_road
+Carretera de gravilla
+MaglevTrack
+Vía monorraíl
+MaglevTrackElevated
+vía elevada monorraíl
+mip_cobblestone_road
+MIP carretera de adoquines
+Rillenschienen
+Vías de tranvía
+runway_grass
+Pista de hierba
+runway_modern
+Pista de aterrizaje
+steel_sleeper_track
+Vía con traviesas de acero
+wooden_sleeper_track
+Vía con traviesas de madera

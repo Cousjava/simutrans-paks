@@ -1,0 +1,1482 @@
+################################################################################
+#                                                                              #
+#                Simutrans Scenario Specific Translation File                  #
+#                                Scenario: pak64                               #
+#                             Language: de Deutsch                             #
+#                             Encoding: ISO-8859-1                             #
+#                            Font : Prop-Latin1.bdf                            #
+#                           Date Created: 16.01 2008                           #
+#                                                                              #
+#                                   authors:                                   #
+#                                 Benny - Benny                                #
+#                                    note:                                     #
+#                                Thomas - Benqo                                #
+#                                    note:                                     #
+#                          Andreas Mayer - BerserkerA3                         #
+#                                    note:                                     #
+#                                 compo - compo                                #
+#                                    note:                                     #
+#                             Dirk Burkholz - Dirk                             #
+#                     note: German translation coordinator                     #
+#                             Dirk W. - DirrrtyDirk                            #
+#                                    note:                                     #
+#                              Frank Penz - FrankP                             #
+#                          note: Administrator German                          #
+#                         Roman Schwörer - Gotthardlok                         #
+#                                    note:                                     #
+#                          Jack Verheydt - j.verheydt                          #
+#                                    note:                                     #
+#                             Jan Li?ka - jan.licka                            #
+#                            note: DHL Exel Company                            #
+#                             Pavel Cizek - jatypc                             #
+#                                    note:                                     #
+#                               Johannes - jf007                               #
+#                                    note:                                     #
+#                            Werner Czimek - Jimmac                            #
+#                                    note:                                     #
+#                            Katrin Homberg - Katrin                           #
+#                                    note:                                     #
+#                              Kristian - Kristian                             #
+#                              note: ICQ# 38569377                             #
+#                             Marcus Haupt - Marcus                            #
+#note: if I´m not available by email to proximity.de try mail@marcus-haupt.de (#
+#                          Martin Ritzert - martinalex                         #
+#                                    note:                                     #
+#                             Stefan Wuttich - mip                             #
+#                                    note:                                     #
+#                        Constantin Grabowski - Moistboy                       #
+#                                    note:                                     #
+#                              Markus Rex - msrex                              #
+#                                    note:                                     #
+#                              Tomá? Kube? - Napik                             #
+#           note: 128x128 dev. coordinator, SimuTranslator developer           #
+#                          Markus Pristovsek - prissi                          #
+#                            note: Administrator 64                            #
+#                            Oliver Mayer - rakishly                           #
+#                                    note:                                     #
+#                            Sven G. Knebel - Ratte                            #
+#                                    note:                                     #
+#                          Stephan Kreppner - Stephan                          #
+#                                    note:                                     #
+#                               Torsten - Torsten                              #
+#                                    note:                                     #
+#                                Uranor - Uranor                               #
+#                                    note:                                     #
+#                           Michael Olbricht - whoami                          #
+#                                    note:                                     #
+#                                                                              #
+################################################################################
+#____________________________________bridge_____________________________________
+#____________________________________bridge_____________________________________
+ClassicRail
+Eisenbahnbrücke (Beton)
+ClassicRoad
+Straßenbrücke (Beton)
+koka_Bridge_single
+aufgeständerte Strecke
+MaglevBridge
+Magnetschwebebahn-Brücke
+mlm_concrete_bridge
+Monorailbrücke
+ModernRoad
+Moderne Spannbetonbrücke
+MonorailRamp
+Einschienenbahn Rampe
+Schiffhebewerk
+Schiffshebewerk
+SteelRail
+Eisenbahnbrücke (Stahl)
+tb_classic_road
+Betonträgerbrücke
+ViaductRail
+Backsteinviadukt
+WoodenRoad
+Straßenbrücke aus Holz
+#___________________________________building____________________________________
+#___________________________________building____________________________________
+00_01_CITY
+Altes Rathaus
+01_CITY
+Rathaus
+02_CITY
+Rathaus
+03_CITY
+Neues Rathaus
+03_CITY_A
+Rathaus
+03_CITY_B
+Rathaus
+03_CITY_C
+Rathaus
+04_CITY
+Neues Rathaus
+04_CITY_A
+Rathaus
+04_CITY_B
+Rathaus
+04_CITY_C
+Rathaus
+10_WOHN
+Kirche\n\nGottesdienst ist jeden\nSonntag von 10-11 Uhr.\n
+1930AirDepot
+Hangar von 1930
+1headquarter
+Ihr Firmensitz!
+2headquarter
+Ihr Firmensitz!
+3headquarter
+Ihr Firmensitz!
+A1_ALTE_KIRCHE
+Gotische Kapelle\n\nberühmt für ihre Fresken,\ndie jeder einmal gesehen\nhaben sollte.\n
+A2_SCHLOSS1
+Neuschwanstein\n\nDas Schloss des verrückten\nKönigs. Eine großartige\nSehenswürdigkeit!\n
+A3_BURG1
+Burgruine\n\nEinst machten hier erfolgreich\nRaubritter die Gegend\nunsicher, bis die Bevölkerung\ndie Burg schleifte. Sie ist\nimmer einen Ausflug wert.\n
+A4_SCHLOSS2
+Herrensitz\n\nmit einer großartigen\nGemäldesammlung: Ein tolles\nAusflugsziel, auch bei Regen.\n
+A5_STONEHENGE
+Stonehenge\n\nFühle das Raunen der Megalithe,\nwenn du den Ring betrittst.\nManche sollen nie mehr\nzurückgekommen sein.\n
+A6_DOME
+Kathedrale\n\nDiese gotische Kathedrale\nbeherrscht seit fast einem\nJahrtausend das Stadtbild.\n
+AirDepot
+Hangar von 1900
+AirportShed1930
+Luftpost-Zwischenlager (von 1901)
+AirTerminal477
+50er-Jahre Terminal
+anfangShipStop
+Kai-Abschluss (S bzw. O)
+ANIM_CINEMA
+Multiplexkino\n\nDie Betreiber versuchen alles,\num das jugendliche Publikum\nanzulocken. Allein, dreckige\nStühle und unscharfes Bild\nliefert auch die Glotze zu\nHause.\n
+Avila_Big_StationBlg
+Großes Bahnhofsgebäude
+Avila_Small_StationBlg
+Kleines Bahnhofsgebäude
+Avila_Warehouse_StationBlg
+Güterhalle
+BigPostOffice
+Briefverteilzentrum
+BigTerminal477
+Großes Terminalgebäude
+Bulk_StationBlg
+Bekohlungsanlage
+CarDepot
+Depot für Straßenfahrzeuge
+Car_StationBlg
+PKW-Verladeplatz
+ChannelStop
+Binnenhafen
+COM_00_01
+Ein Kiosk, in dem es jede\nMenge billigen Krimskrams,\nohne den niemand leben kann,\ngibt. Ehrlich!\n
+COM_00_02
+Alle Mopedfahrer der Stadt\nlieben die Tankstelle von Herrn\nReichmuth, denn hier gibt es\neine vollautomatische\nZweitaktbenzin- Zapfsäule.\n
+COM_00_03
+Diese Hinterhof-Garage\nmöchte schon lange ihr\nSchattendasein beenden und\nendlich einen Schauraum an\nder Hauptstraße eröffnen. Aber\nes fehlt an allem: am Geld, an\nder Baubewilligung, und an der\nHauptstraße.\n
+COM_00_04
+In Trikkys Park ist über Mittag\nmeist etwas los, wenn die\nSchüler der benachbarten\nBerufsschule zu Mittag essen.\nDie Schule liess für 2\nMillionen eine Mensa\nerrichten, die aber von April bis\nOktober so gut wie leer ist. Der\nvon den Schülern gewüschte\nWintergarten wäre weitaus\nkostengünstiger gewesen, aber\ndie Verordnung über die\nVerpflegungsmöglichkeiten an\nhalböffentlichen Schulen hat das\neinfach nicht vorgesehen.\n
+COM_00_05
+Herr G. Hai, der Besitzer der\nBankengruppe, zu der auch\ndiese Filiale gehört, ist mit\nAbstand der reichste Mann in\ndieser Stadt. Dabei sieht so\neine Bankfiliale eigentlich ganz\nharmlos aus!\n
+COM_00_06
+Nirgendwo gibt es besseren\nKaffee als in diesem schönen\nDachcafé.\n
+COM_00_07
+Eines der ersten EDV-Zentren\nder Steuerverwaltung ist hier\nuntergebracht. Der riesige\nParkplatz zeugt von einer Zeit,\nin der hier noch mehr\nMenschen als Maschinen\narbeiteten.\n
+COM_00_08
+Ein Wohn- und Geschäftshaus\nkann trotz allem ein guter Ort\nfür Kinder sein, wenn ihnen\ndie Geschäftsleute nur soviel\nInteresse entgegenbringen,\nwie die Kinder an den\nVorgängen hinter den Kulissen\nhaben.\n
+COM_00_10
+Die Einfahrt zur Tiefgarage des\nBüroblocks ist zwar sehr\nsteil, aber dafür geht es unten\ngleich eng um die Kurve. Es\ngeht das Gerücht, dass der\nWerkstattbesitzer von nebenan\ndie Pläne leicht überarbeitet\nhat, als der Bauleiter einmal\nvergaß, die Tür des Bauwagens\nabzuschließen.\n
+COM_00_11
+Neben der Metzgerei Wild ist\ngleich die Gaststube zum\nLöwen, die ebenfalls dem\nMetzger gehört. Vegetarier\nsind hier nicht gern gesehen,\ndazu Metzger Wild:\n"Erbsenzähler, die nicht mit\nvollem Appetit essen können, kann\nich nicht in meiner Gaststube\nsitzen sehen. Ich habe dann\nimmer Angst, ich hätte ihnen\netwas verdorbenes vorgesetzt."\nSeinen Bauchumfang kennt\nMetzger Wild nicht - das\nMessband ist immer zu kurz.\n
+COM_00_12
+Büroblock vom Typ Trist &\nTrübe. Wenn man länger als\nzwei Jahre hier arbeitet, dann\nwird man selber trübsinnig.\n
+COM_00_13
+Quadratisch, Praktisch, doch\nheute unvermietbar. In den\nfünzigern Entworfen, in den\n60ern mit Architekturpreisen\nüberhäuft, in den 70ern\nendlich vermietet, in den\n80er Asbestsaniert, zog in den\n90ern vorübergehend die Stadt\nein, bis auch sie im neuen\nJahrtausend vor den\nErnergiekosten der Klimanalage\nkapitulierte.\n
+COM_00_14
+Der Bürokomplex eines\nHandelshauses. Links sitzt der\nEinkauf, rechts der Verkauf.\nWarum heisst der Mittelhof\nmit Glasdach wohl\n"Preishalle"?\n
+COM_00_16
+Die Büros der "Letzten\nSpeziellen Versicherung"\nstehen schon geraume Zeit\nleer. Bei ihr konnten sich nur\nschöne Frauen und auch nur\ngegen ungewollte Handküsse\nversichern lassen. Die\nFirmengründer waren mit dieser\nGeschäftsidee wohl doch etwas\nblauäugig.\n
+COM_00_18
+Eine eigenwillige\nBüroeinteilung zur\nLeistungssteigerung hat die\nLNX Softwähr GmbH. Die\nlangweiligen Arbeiten werden\nin den unteren Stockwerken\nerledigt. In den oberen Etagen ist\ndie Arbeit dann spannender als die\nschöne Aussicht.\n
+COM_00_19
+Sitz einer Internationalen\nOrganisation zur\nFriedenssicherung. Nur Indianer\nboykottieren sie - im\nGebäude herrscht\nRauchverbot.\n
+COM_00_20
+Die allweil gestressten Manager\ndieser Firma hatten es satt,\nimmer zu spät zu\nGeschäftsterminen zu\nerscheinen, nur weil Ihre\nChauffeure im Stau\nsteckengeblieben sind. Der\nfirmeneigene Helikopter bringt sie\njetzt pünktlich zu jedem Termin.\n
+COM_00_21
+Die begrünten Dächer der\nGrespa Bank sollten wieder\netwas Grün in die Stadt\nzurückbringen. Man will ja\nseine ökologische\nVerantwortung zum Ausdruck\nbringen. Praktisch sollen sie vor\nallem die badenden Mitarbeiter\nauf der Dachterrasse vor\nneidischen Blicken schützen.\n
+COM_00_22
+Das Hochhaus mit\ngeschwungener Glasfassade ist\nein Tempel des Wohlfühlens:\nIm Hotel Albuna können Sie\nsich so richtig verwöhnen\nlassen. Schliesslich haben Sie\nfür die Ferien hier auch hart\ngenug gearbeitet.\n
+COM_00_23
+Die Weltkugel am Dach deutet\nes schon an: Hier sitzt ein\nglobales Unternehmen. Da hier\naber nur die Führungsspitze\nsitzt, leuchtet abends kaum\nein Licht mehr, auch wenn in\nLos Angeles der Tag gerade erst\nbeginnt.\n
+COM_01_01
+Ein Start- und Landeplatz für\nHeissluftballone. Ein\nBallonrundflug über die Alpen\nkann ein unvergessliches\nErlebnis sein!\n
+COM_01_09
+Es ist noch gar nicht so lange\nher, war dies der scheinende\nTempel aller\nLichtspieltheater. Heute ist es\nnur noch ein altes Kino. Aber\ntief in den Mauern steckt\nnoch ein Schein des alten\nGlanzes!\n
+COM_01_10
+Das Arzthaus der Stadt. Die\nlangweilige Fassade hat man\nnachträglich mit dem\nvorgesetzten Eingang etwas\nauflockern wollen. Locker\nsollten auch die Patienten in\nden Zahnarztpraxen bleiben; es ist\nin dem Fall wirklich nicht\nbesonders empfehlenswert, sich\nbei Schmerz auf die Zähne\nbeissen zu wollen.\n\n
+COM_01_12
+Im Einkausfszentrum Grau &\nGrauer gibt es alles in allen\nSchattierungen von Grau.\nSelbst die Angestellten wirken\nirgendwie grau.\n
+COM_01_13
+Der Glasbau beherbergt eine\nBibliothek für den\nPublikumsverkehr sowie ein\nMuseum für Druckgrafik und\nBuchbinderhandwerk.\n
+COM_01_14
+Früher stand hier mal der\nerste Rundfunksender der\nStadt. Heute residiert hier\nder Kabelbetreiber Glotz-Line.\nMit der Satellitenantenne auf\ndem Dach ist man mit der\ngroßen weiten Welt verbunden.\n
+COM_01_16
+Sportwissenschaftliche\nFakultät. Der grosse Hörsaal ist\nzuoberst im Gebäude\nuntergebracht. Einen Lift gibt\nes natürlich nicht; und immer\nwieder wundern sich\nGastdozenten, warum junge\nSportstudenten, die gerade vom\nAusdauertraining kommen, sich\nüber den Architekten auslassen.\n
+COM_01_17
+Weltkonzerne wie die Hubega\nBau AG hassen zwar die\nBürokratie, aber wenn es\ndarum geht, selber mit grossen\nBürokomplexen aufzutrumpfen,\nsind sie immer vorne mit\ndabei. Immerhin, hier hat man\nAnleihen bei Mies van der Rohe\ngemacht.\n
+COM_01_18
+Vermögensverwalter "Global\nTrust" ist im globalen\nFondsgeschäft tätig. Ihre\nJunk-Bond-Fonds und ihre\nMikrokreditbanken in Indien\nund Peru haben in den letzten\nJahren überdurchschnittliche\nRenditen erzielt. Ob das auch in\nZukunft so sein wird?\nGeld-Zurück-Garantie gibt es an\nder Börse nicht!\n
+COM_01_19
+Die Octagon Rohstoffhandel\nAG konnte so stark\nexpandieren, dass sie ihr\nFirmenwahrzeichen zubauen\nmusste. Nur aus der\nLuftpersektive ist der\nursprünglich achteckige Grundriss\nnoch erkennbar.\n
+COM_01_20
+Wenn die Gebäudehülle des\nUniversitätsspitals in ihren\nAugen flimmert, gehen sie zum\nAugenspezialisten Dr. Koller.\nDoch seit der\nComputerhändler von nebenan\nweiss, wie Dr. Koller die Augen\nseiner Patienten testet, zieht er\ndiesem mit seinen\nFlachbildschirmen immer mehr\nPatienten ab.\n
+COM_01_21
+Außenlifte verleihen einem\nGebäude ein gewisses\nPrestige, doch wenn es\nhagelt, ziehen viele gerne die\nInnentreppe vor.\n
+COM_01_22
+Eine Internetfirma, die in dem\nBoomjahren nicht mehr\nwusste, wohin mit dem Geld,\nhat einen Dali-Sohn engagiert.\nDer war jedoch mit einer\nPicasso-Urenkelin verwandt,\nweswegen auch der Kubismus in\nden Plänen seine Spuren\nhinterließ.\n
+COM_01_23
+Das Gebäude gehört einem\nägyptischen globalen\nÖlzwischenhändler. Eigentlich\nsollte es ein ganzer Obelisk\nwerden, doch nachdem\nÖltanker nun doppelwandig\ngebaut werden müssen, war nur\nnoch Geld für ein Viertel-Obelisk\nda.\n
+COM_02_02
+Miet-mich-doch hat hier ihre\nAutos abgestellt. Die Preise\nsind unschlagbar günstig. Nur\ngibt es keine Bushaltestelle\nweit und breit, man muss mit\ndem Taxi kommen.\n
+COM_02_13
+Die Stadtsparkasse sieht wie\nein Bunker aus und ähnlich\ndick sind auch die Wändes des\nTresorraumes. Trotzdem\nhaben die Kunden immer noch\ndas Gefühl, dass ihr Geld\nleichter in die Bank kommt als\nwieder heraus.\n
+COM_02_14
+Einer der ersten Supermärkte\nmit integriertem Parkhaus.\nEigentlich sollten rechts und\nlinks daneben auch noch\nWohnblöcke entstehen, doch\nirgendwie war das Geld dafür\nschon vor deren Baubeginn alle.\nDaher gibt es nur eine attraktive\nFrontfassade, während man über\nden Rest besser nicht spricht.\n
+COM_02_15
+Die neue Mineralogie der\nUniversität. Hier kann man\nimmer noch Bergbau studieren,\nobwohl weit und breit kein\nBerg zu sehen ist. Dafür hat\nman dann extra under dem\nGebäude einen Schacht gegraben,\nwo man Müll und auch 300 Jahren\nStadtgeschichte abbaut.\n
+COM_02_16
+Die Firmen hier waren immer\nganz knapp dem Trend\nhinterher. Erst war es eine\nReederei in den 60er, ein\nAutobauer in den 70er, eine\nStahlfirma in den 80er. In den\n90er ist kurz mal ein Privatsender\neingezogen. Doch dann wurde\nAsbest an allen Ecken entdeckt\nund jetzt streiten sich\nDenkmalschützer und\nAbbruchfirma.\n
+COM_02_17
+Die riesigen Wärmetauscher\ndeuten es an: Unter dem Dach\nist die Sauna zur Motivation\nfür die Topangestellten. Doch\nes herrscht strenges\nRegiment: Ein Fehler und sie\nmüssen wieder an die\nÖlförderstation in Sibirien.\n
+COM_02_20
+Klar, hier sitzt eine Bank. Die\noberen Etagen hatte man\nallerdings an ein Callcenter\nvermietet, damit alle glauben,\nhier würde ihr Geld Tag und\nNacht arbeiten.\n
+COM_03_15
+Hier saß die erste Nationale\nVermögenstrust. Im Zuge der\nGlobalisierung und des WWWs\nbräuchte der Hauptsitz nicht\nmehr einzuschüchtern; aber\nder alte Stahlbeton war\ntatsächlich für 1000 Jahre\ngegossen.\n
+COM_10_01
+Heinzen aufgeschichtetes Heu\nbleibt bei unerwartetem Regen\nwenigstens teilweise trocken.\n
+COM_10_02
+Seit das Ordnungsamt die\nKnöllchen durch die\nPrivatwirtschaft vergeben\nlässt, sind die letzten\nParkscheinautomatfreien\nParkplätze selbst am Rand der\nStadt heiß begehrt.\n
+COM_10_03
+Die Windmühle Richtershof\nfunktionierte über\nJahrhunderte hinweg tadellos,\ndoch mit den ständig\nbetriebsbereiten elektrischen\nGrossanlagen konnte sie nicht\nmithalten.\n
+COM_10_05
+Ein gepflegter Kräutergarten\nist der Stolz jeder Bäuerin.\n
+COM_10_07
+Gasthäuser sind der\nTreffpunkt nicht nur für die\ndurstige Bevölkerung. Für\nTiere gibts Selbstbedienung\ndraussen am Brunnen.\n
+COM_10_10
+An der Pferdestation der Post\nkönnen die Zugtiere wieder\nauftanken. Der "Boxenstopp"\nwurde damals allerdings erst in\nMinuten gemessen.\n
+COM_10_11
+Süddeutsches Fachwerk:\nSchön anzusehen, aber die\nBesitzer sind nicht so\nglücklich: Weder mit dem\ntickenden Holzwurm hinter\nden Schindeln, noch mit der\nTatsache, dass alle Bilder ober\nund unten Nägel brauchen, um\nplatt an der Wand zu hängen.\n
+COM_10_12
+Zwei Pferde stehen vor der\nSchmiede. Auch sie wollen\nbeschlagen werden, aber\nbekannt ist Schmied Ambros\nvor allem für seine kunstvollen\nGeländer.\n
+Control_StationBlg
+Stellwerk
+DenkFlor
+Flor-Wauters-Denkmal\n\nDieses Denkmal ist Flor 'WF Ultd.'\nWauters, dem berühmten\nIngenieur,  der so viele\ngrossartige Straßen- und\nSchienenfahrzeuge\ngeschaffen hat, gewidmet. Er ist\nebenfalls bekannt, viele tadellos\nlaufende Fabriken entworfen zu\nhaben.\n
+DenkHajo
+Hajo-Malthaner-Denkmal\n\nDenkmal für Hajo, den Schöpfer\nvon Simutrans.\n
+DenkMHz
+Georg-Heiduk-Denkmal\n\nDiese Sternwarte steht für MHz\nund dessen scharfes Auge für\nDetails.\n
+DenkOwen
+Denkmal\n\nOwen Rudge-Platz. Er führte\nFinanzen und Soundtechnik in\nSimutrans ein.\n
+DenkSeth
+Denkmal\n\nDer Platz ist nach Seth C.\nTriggs, dem berühmten\nArchitekt so vieler hübscher\nStadtgebäude, benannt. Er ist\nauch für seine Studien über\ndie Verbesserung von\nVerkehrssystemen berühmt\ngeworden.\n
+DenkTomas
+Denkmal\n\nDie Statue im Park ist Tomas\nKubes gewidmet. Er hilft mit,\nSimutrans in vielen, vielen\nBereichen mit Rat und Tat zu\nverbessern.\n
+DenkTrikky
+Denkmal\n\nEin Denkmal zu Ehren von\n'Trikky' Rick McGreal, dem\nberühmten Architekten so\nvieler beeindruckender\nGebäude.\n
+DenkVM
+Denkmal\n\nDas Lokomotivdenkmal ist\nManfred 'VT Vienna'\nTomaschitz gewidmet. Er ist\nder berühmte Ingenieur vieler\nüberlegener\nSchienenfahrzeuge.\n
+DenkVolker
+Denkmal\n\nEine Skulptur für Volker Meyer,\nder Simutrans in vielen, vielen\nBereichen weitergebracht\nhat.\n
+DRIVEINCINEMA
+Autokino\n
+Eingang
+Eingang zur Hochbahn
+endShipStop
+Kai-Abschluss (N bzw. W)
+Feste
+Feste der Konuberts\n\nErbaut um 1400 sind die Wände so\ndick, dass sie allen Waffen und\nJahrhunderten trotzten. Die\nMarktfrauen freuts: So können\nsie selbst im Hochsommer auf\ndem Innenhof immer noch\nStricksachen verkaufen.\n
+Fluid_StationBlg
+Öltank
+FreightTrainStop
+Güterbahnhof
+Gas_StationBlg
+Gasbehälter
+GCG1TrainStop
+große Halle (linke Hälfte)
+GCG2TrainStop
+große Halle (rechte Hälfte)
+Goods_StationBlg
+Lagerhalle
+Gymnasium
+Oberstufenzentrum\n\n\n(Ehemals Oberrealschule, jetzt\nOberstufenzentrum mit\ngymnasialer Oberstufe)\nDiese Bildungsanstalt mittlerweile\ndeutlich mehr Schulreformen\nals Anstriche miterlebt. Immerhin\nheizen jetzt im Keller ein paar\nPCs statt des alten Kohleofens.\n
+IND_00_01
+Eine Lagerhalle. Kisten, Säcke\nund Fässer türmen sich bis zur\nDecke. Ob der Besitzer noch\nweiss, was hier alles\neingelagert ist?\n
+IND_00_02
+Ein Schuppen zur Lagerung von\nMaschinen und Ersatzteilen für\nden Großhandel.\n
+IND_00_03
+Tanklager der Firma Lützberg.\nMeist ist der Tank leer, denn\nseit Lieferungen per Bahn\nexakt auf den Termin\nerfolgen, werden auf der\nanderen Seite schon die\nnächsten Lastwagen vollgepumpt.\n
+IND_00_04
+Heizkessel und Rohre für\nKraftwerke produziert und\nmontiert die Warrima AG in der\nhalbröhrenförmigen Halle. Doch\nes ist ein sehr unstetes\nGeschäft; so wurden in der\nHalle auch schon Tunnelelemente\nvorgefertigt und Trams und Busse\nrevidiert. Aussergewöhnlich ist\ndie Bodenbeleuchtung, denn auch\nbei der Arbeit unter dem\nWerkstück möchte man noch\netwas sehen.\n
+IND_00_05
+Der Wasserspeicher der Stadt.\nEs ist nur das älteste\noberirdische Gebäude zu\nsehen, mittlerweile ist die\nAnlage um etliche\nunterirdische Reservoirs\nerweitert worden.\n
+IND_00_06
+Eine Fabrik mit den typischen\nZackendächern. Auf den\nSteilseiten befinden sich\nFenster, um wenigstens etwas\nLicht an die Arbeitsplätze der\nSchneider zu lassen. \n
+IND_00_07
+Eine Trafostation. Viel\nspannenderes als ein\nTypenschild mit der\nAufschrift 5000V gibt es\nnicht zu erwähnen.\n
+IND_00_08
+Nur ein eigenes\nKohlekraftwerk konnte damals\neine Fabrik zum Laufen bringen.\nTransmissionsriemen verliefen\nkreuz und quer durch die\nHallen und trieben Maschinen\n(in dem Fall Bohrmaschinen) an,\nlange bevor es eine\nElektrizitätsversorgung gab.\n
+IND_00_09
+Kohlesilos waren um 1900\nweit verbreitet und die\nWirtschaft damals von Kohle\nfast so abhängig wie heute\nvom Erdöl.\n
+IND_00_10
+Eine erste industrielle\nPolsterei. Matrazen mit\nFederkern waren damals der\nLuxusartikel fürs\nSchlafzimmer und ein\ninternationaler Exportschlager\nder Dormaban KG.\n
+IND_00_11
+Hoch hinaus wollten die\nGebrüder Trossel nach 1900\nmit ihrer Fabrik für\nKupferspulen. Die neue Technik\nder Elektrizitätsversorgung\nversprach, eine Goldgrube zu\nwerden, und weil die Brüder\nwussten, wie Drähte verlötet\nwerden, standen die Geldgeber\nSchlange; man ging von jährlich\n50% Wachstum aus und baute die\nFabrik so, dass sie erst in 5\nJahren ausgelastet sein soll. Doch\nschon nach 2 Jahren waren das\nGeld und auch die Gebrüder\nTrossel nicht mehr da. 100 Jahre\nspäter werden die Menschen\ndieses Phänomen "New\nEconomy" nennen.\n
+IND_00_12
+Dampflokomotiven brauchen\ngute Nieten zur Verschliessung\nder Feuerbüchse. Gegossen\nund geschmiedet wurden die\nNieten unter anderem in\ndieser Fabrik. Überall hat sich\nim Laufe der Zeit der Roststaub\nfestgesetzt.\n
+IND_00_13
+Die Töpferei Zwickner mit\nihren zwei Brennöfen ist ein\nTraditionsbetrieb und der\nHandarbeit verpflichtet. Alle\nStücke sind Unikate, kunstvoll\nbemalt erzielen sie hohe\nPreise. Als zweites Standbein ist\ndie Firma ins Wattegeschäft\neingestiegen.\n
+IND_00_14
+Farbige Glasfenster sind das\nProdukt der Ujetsch GmbH.\nDieser Firma bringen Scherben\ntatsächlich Glück,\nNeuaufträge sind selten, und\nso muss man hoffen, dass\nirgendwo etwas ersetzt werden\nmuss.\n
+IND_00_15
+Das Stanzwerk der Firma\nKochlattern ist ein frühes\nErgebnis der\nHardwareprogrammierung. Dank\nder Präzision der selbst\nentwickelten Stanzmaschinen\nwurde es möglich,\nLochkartensysteme zu\nentwickeln, bei der ein stündiges\nProgramm auf nur 20 cm\nMetallstreifen untergebracht\nwerden konnte, und die einzelnen\nProgrammschritte mit einem\nFehler von nur gerade 4 Sekunden\nstarteten.\n
+IND_00_16
+Rauchgasfilter und ähnliche\nUmweltschutzmassnahmen\nwaren beim Bau früher\nVerbrennungsanlagen noch\nunbekannt. Sie damit\nnachzurüsten, war ein\nkompliziertes und zudem teures\nUnterfangen, doch dank einer\nstarken Lobby im Parlament\nkonnten die Nachrüstfristen\nimmer weiter hinausgezögert\nwerden, bis die Anlage sowieso\nersetzt werden sollte.\n
+IND_00_17
+Schinken und andere\ngeräucherte Fleischprodukte\nkommen aus den Hallen der\nVincarna GmbH. Der Betrieb\nachtet sorgsam auf Hygiene,\ndoch bei der dunklen\nGebäudehülle und dem Duft von\nverbranntem Sägemehl die\nBetrachter nicht an Russ denken\nzu lassen, dazu bedarf es schon\nfast eines Hypnotiseurs.\n
+IND_00_18
+Das modernste\nBlockheizkraftwerk weit und\nbreit. Läuft mit Ergas, ohne\nRuß und und Kohlehalden.\n
+IND_01_01
+Sie finden keinen Parkplatz für\nihr Auto? Warum kommen Sie\ndann nicht mit dem Bus in die\nStadt?\n
+IND_01_03
+Gaskugel zur Speicherung von\nErdgas.\n
+IND_01_04
+In einer Blechhütte kann es\nim Winter ziemlich kalt\nwerden. Deshalb werden soviel\nSchweissarbeiten wie möglich\nin die erste Arbeitsstunde\nverlegt. Im Sommer dagegen\nist man froh, den Schneidbrenner\nmöglichst nicht vor Mittag\nanfassen zu müssen.\n
+IND_01_05
+Gaskessel\n
+IND_01_06
+Die Sattlerei Nalbrugger\nbezieht Stühle und Sessel\naller Art mit Leder.\n
+IND_01_07
+Transformatorhäuschen\n
+IND_01_08
+Die Niederdruck- Dampfturbine\naus der Frühzeit der\nElektrizität versorgte die\nallererste elektrische\nTrambahn der Stadt. Sie wird\nals Industriedenkmal im\nOriginalzustand erhalten und ist\ntrotz ihres Alters immer noch\nlauftüchtig, doch der\n800V-Gleichstrom findet keine\nAbnehmer mehr.\n
+IND_01_09
+Tanklager\n
+IND_01_10
+Die Werkzeugfabrik Hamzangl\ngehört seit einem Jahrhundert\nzum Dorfbild wie die Kirche.\nDie Hämmer und Zangen, die\nheute hergestellt werden,\nsind im Haushalt nicht\neinsetzbar, denn die\nHammerfläche ist weit kleiner als\nein Nagelkopf und die Zangen hält\nman besser nicht mit einer\nPinzette - drückt man zu stark,\nkönnten diese Wunderwerke der\nFeinmechanik zerstört werden.\n
+IND_01_11
+Blusen zusammennähen war in\nden ersten Tagen der Fabrik\nangesagt. Frauen konnten zu\nniedrigen Löhnen beschäftigt\nwerden, und die\n48-Stunden-Woche war ein\nFortschritt sondergleichen.\nHeute sitzen Frauen hinter\nComputern an ihren Calldesks und\ntragen Blusen, die andere Frauen\nzu niedrigen Löhnen wärend über\n48 Stunden in der Woche auf den\nPhilippinen zusammennähen.\n
+IND_01_12
+Die Hochfabrik im Bauhausstil\nist seit jeher ein Ort der\nRöhrenproduktion. Vom\nGusseisen zum\nMembrankunststoff war es\nfreilich ein weiter Weg.\n
+IND_01_13
+Schmutz prägt dieses\nFabrikgebäude. Schon kurz\nnach dem Bau hat die\nWirtschaftskrise die darin\nuntergebrachte Spinnerei in\ndie Knie gezwungen, und\nseither wechseln Mieter und\nBesitzer in atemberaubendem\nTempo. Glück hat dieses\nGebäude noch niemandem\ngebracht, entsprechend\nstiefmütterlich wird es gepflegt.\n
+IND_01_15
+In den 30er fing man an, in die\nHöhe zu bauen, und nach dem\nKrieg hat man noch schnell ein\nStockwerk draufgesetzt,\nwenn es auch nur die\nFilteranlagen unter dem Dach\nwaren.\n
+IND_02_01
+Jetzt ist von der\nGründerzeitfabrik nur noch ein\nbackstein- ummauerter\nSchrottplatz übrig geblieben.\n
+IND_02_02
+Das Gebäude war beim Bau\neine der ersten\nZementfabriken überhaupt. Der\nkleine Zementofen war ein\nKohlefresser sondergleichen,\nder Schütthaufen im\nHinterhof fast so hoch wie die\nFabrik selber. Heutige\nZementwerke sind um ein\nvielfaches grösser, Zement kann\nhier nicht mehr gewinnbringend\nhergestellt werden. Als\nSammelstelle für Altpneus ist das\nGelände aber hervorragend\nnutzbar.\n
+IND_02_06
+Schon damals wollten potente\nIndustrielle ihre Finanzkraft\nunter Beweis stellen und\nliessen ihre Fabriken von den\nbesten Architekten\nentwerfen. Die breiten Gänge\nüber der Maschinenfabrik boten\nden Zeichnern und Ingenieuren\nviel Raum und eine gute Übersicht\nüber die entstehenden\nMaschinen. Dem Chef stand\nnatürlich die Kontrolle der\nArbeitsmoral im Vordergrund.\n
+IND_02_09
+Tanklager\n\nHier war schon immer\nRauchverbot am Arbeitsplatz.\nDennoch, die einzige\nfreundliche Farbe ist ein\nwinterliches Schneeweiß.\n
+LargeShipStop
+großer Frachtkran
+leftShipStop
+Schwerlastkran
+LeuchtturmShipStop
+Überseekai mit Leuchtturm
+Lighthouse
+Leuchtturm\n\neinst der hellste Leuchtturm an\ndieser Küste. Doch seit die\nSchiffe per Radar-Autopilot\ndurch die Weltmeere\nrauschen, ist er heute nur\nnoch eine Touristenattraktion.\n
+MainTerminal1930
+Terminal-Haupthalle (1930)
+MHzSmallStation
+Bahnhofsgebäude
+midleShipStop
+Frachtkai
+ModernAirTerminal477
+Modernes Gate
+MonorailDepot
+Depot für Magnetschienenfahrzeuge
+MonorailFoundation
+Einschienenbahn Fundament
+OldTownhall
+Altes Rathaus\n
+Patricks_Rock
+Basaltschlot\n\nVor vielen Millionen Jahren ist\nder Vulkan erloschen, seine\nLava im Berg erstarrt. Nebst\ngeologisch interessierten\nLeuten kommen viele\nAusflügler und Wanderer zum\nFelsen, denn die Quellen an\nseinem Fuss sind glasklar und das\nWasser erfrischend kühl. Auf den\nFelsen selbst darf man allerdings\nnur noch mit einer\nSonderbewilligung klettern.\n
+PlainAirStop
+Flugzeughalt
+PostOffice
+Post
+PostStop
+Postkasten
+PSFreightTrainStop
+Güterbahnhof
+PSHall1TrainStop
+Bahnhofshalle mit Kiosk
+PSHall2TrainStop
+Bahnhofshalle
+rampShipStop
+Wasserrampe
+Raven_Kirche
+Kirche St. Meinrad\n\nDer Hl. Meinrad, ein Einsiedler,\nwurde der Legende nach von\nzwei Raben begleitet; als er\nden Märtyrertod starb,\nfolgten die Raben den\nMördern, was zu deren\nÜberführung führte. Am Ort seiner\nWaldhütte steht heute das\nKloster Einsiedeln.\n
+Residenz
+Schloss der zu Schnatterichs\n\nwurde mehrfach renoviert. Das\njetzige Aussehen stammt von\neinem Restaurierungsversuch\naus der Romantik, weshalb es\nimmer noch eine gefragte\nFilmkulisse ist.\n
+RES_00_01
+Ein kleines Haus mit Garten und\nBlumenbeeten.\n
+RES_00_02
+Ein kleines Haus mit Garten. Das\nNatursteinmauerwerk läßt\nerahnen, dass hier ein\nnaturverbundener Mensch lebt.\nWenn Sie im Frühling am Haus\nentlangspazieren, können Sie\nbei genügend Geduld Eidechsen\nbeim Sonnenbad sehen.\n
+RES_00_03
+Wer in einem so grossen\nEinfamilienhaus mit Garten\nwohnt, ist sicher nicht arm,\nund wollte wohl vor allem\ndem Gedränge des Stadtkerns\nentfliehen.\n
+RES_00_04
+Ein berühmter Wissenschaftler\nwohnt in dem ausgesprochen\nmodernen Haus. Im\nUntergeschoss sind Labors und\nForschungseinrichtungen.\nNachts, sagen die Nachbarn,\nnachts hört man die seltsamsten\nGeräusche aus dem Keller!\n
+RES_00_05
+Ein kleines Zweifamilienhaus.\nEigentlich sollte es schon\nlängst durch ein\nEnergiesparhaus ersetzt\nwerden.\n
+RES_00_06
+Ein kleiner Springbrunnen. Auch\nwenn er nicht so groß ist wie\njener in Genf, macht er den\nSpaziergängern Freude,\nbesonders im Sommer.\n
+RES_00_07
+Ein grosser Estrich ist das\nMarkenzeichen solcher\nBauernhäuser. Auch in diesem\nHaus wartet der über Jahre\nangesammelte Gerümpel\ndarauf, entsorgt zu werden\nund schönen, neuen\nDachwohnungen Platz zu machen.\n
+RES_00_08
+Doppelgarage einmal anders:\nnicht neben-, sondern\nhintereinander müssen die\nAutos hineingestellt werden!\nDas "Auto", das vorne in der\nGarage steht, wird\ndementsprechend wenig\ngebraucht. Zu mehr als zum\nZiehen von Motivwagen an\nUmzügen tuts der alte Traktor\nauch nicht mehr.\n
+RES_00_09
+Ein hübscher kleiner Park mit\nEntenteich ist immer ein\nTreffpunkt.\n
+RES_00_10
+Der erste Schritt zum\nFlachdach waren Formen, wie\nsie an diesem Haus zu\nbegutachten sind: zwar immer\nnoch aus Ziegeln, aber die\nDachschrägen sind soweit\naufgewölbt, dass sie in der Mitte\nfast waagrecht und aussen fast\nsenkrecht sind. So konnte noch\nein Stockwerk mehr als Wohnraum\ngenutzt werden.\n
+RES_00_11
+Ein großes Mehrfamilienhaus\nmit Garten. Das Haus hat schon\nmal bessere Tage gesehen,\naber dafür sind die Mieten\nerschwinglich, und die Lage\nist schön zentral.\n
+RES_00_12
+Nur nichts konventionelles!\nAuch die Inneneinrichtungen\nsind einzigartig: Es gibt\nausschliesslich Steckdosen\nfür Drehstrom, die\ndurchsichtige Badewanne wird\nvon innen mit zwei Neonröhren\nerleuchtet, der Backofen heizt\nmit einem Stirling-Motor, und\nBilder werden mittels Projektor\nan die Wand gemalt, denn der\nArchitekt hat Nägel in diesem\nHaus strikt verboten!\n
+RES_00_13
+Ein Doppelhaus mit 4\nWohnungen. Die Häuser sind\nspiegelbildlich gebaut; wenn\ndie Bewohner des einen\nHauses bei den Nachbarn\neingeladen sind, haben sich\ndie Gäste schon oft in der Tür\ngeirrt.\n
+RES_00_14
+Block A5 der Alterssiedlung\nGrattweid. Einen zackigen\nAbwart hat die Hausverwaltung\neingestellt, tüchtig und\nzuvorkommend. Wenn es sein\nmuss, putzt er auch nachts\nnoch das Tableau mit den\nHausglocken, und genauso schnell,\nwie er den alten Leuten die Türe\nöffnet, schließt er sie auch\nwieder, meist noch bevor die\nalten Leute bis zur Türe gelangen\nkönnen.\n
+RES_00_15
+Ein kleiner Wohnblock. Möge er\nnoch kräftig wachsen, blühen\nund gedeihen und viele\nNachkommen haben, sagt Frau\nInderbitzin zu ihrem\nRosenstock auf dem Balkon.\n
+RES_00_16
+Fast wie ein Museum ist die\nVilla Abendrot eingerichtet.\nVor lauter knalligen, abstrakten\nBildern ist kaum mehr ein\nStück der alten Tapete zu\nerkennen, aber gelbe Tapeten\nmit weißem Blumenmuster, vom\nZigarettenrauch ebenfalls vergilbt,\nsind auch nicht gerade eine\nZierde. Lassen wir die Bilder also\nhängen und freuen uns an ihnen.\n
+RES_00_17
+Schon in alten Häusern hat es\nverbrauchsabhängige\nHeizkostenabrechnungen\ngegeben - jeder musste das\nBrennholz für seinen Ofen\nselber bezahlen.\n
+RES_00_18
+Nach dem Abriss des\nNebengebäudes kam eine\nkahle Brandschutzmauer zum\nVorschein, die der\nVerschönerung bedurfte. Die\nörtliche Brauerei\nKlosterbrunnen hatte zwar nicht\ndie originellste, aber dafür die\nfür den Hausbesitzer\neinträglichste Idee: ein riesiges\nWerbefresko prangt an der Wand.\n
+RES_00_19
+Ein Versuch aus den 1960er\nJahren, billigen Wohnraum für\nalle zu schaffen.\n
+RES_00_20
+Dass ein Viertel des Blocks nur\nbis zur halben höhe gebaut\nworden ist, hat seine Ursache\nim Untergrund. Das Grundwasser\ndrückt dort nach oben und\nzwang die Bauherren, den Lift\nin eine Gebäudeecke zu\nversetzen. Das vorne sichtbare\nViertel ist nur noch über eine\nTreppe zugänglich, und mehr als 5\nEtagen zu Fuss wollte man den\nMietern nicht zumuten.\n
+RES_00_21
+Einst Architekturpreis der\nspäten Sechziger, hat man\nheute bei mehr als einer\nWindstärke Probleme im\nDurchgang nicht umgeblasen zu\nwerden. Immerhin hat das das\nProblem des\nKnallkörperzielwerfens\nentschärft, dass die anderen\nHäuser dieser Siedlung heute\naufweisen (von den anderen\nsozialen Verwerfungen ganz zu\nschweigen.) Und erst kürzlich\nschön renoviert.\n
+RES_00_23
+Jede Wohnung mit Fenster: Die\nIdee war gut, in selbst an die\nAusrichtung mit Fahrstuhl nach\nNorden war gedacht. Nur sind\ndie Räume nicht quadratisch\nund überall klaffen Lücken,\nweil man Möbel nur senkrecht\nzum Fenster aufstellen kann.\n
+RES_01_01
+Ein modernes Fertighaus mit\nausgebautem Dachboden ist\nideal für Familien mit Kindern\nund begrenzten finanziellen\nMöglichkeiten.\n
+RES_01_02
+Ein Nurdachhaus, eine\nKonstruktion, die im Winter\nauch höchsten Schneelasten\nstandhält. Auf gute Aussicht\nmuss man jedoch verzichten.\n
+RES_01_03
+Grössere Häuser waren vor\nallem ein Statussymbol von\nKaderangestellten; auf den\nBriefkästen las man des\nöfteren Dr. phil oder Dipl. Ing.\n
+RES_01_04
+Große Einzelhäuser sind oft\nWohnstätten hoher Beamter.\nUngezwungen geht es in\nsolchen Quartieren kaum zu;\nwenn jemand falsch parkt,\nwird er garantiert angezeigt,\nund wenn jemand Hecken\nschneidet und vergisst\nnachzumessen, ob sie kurz genug\nist, macht das hier nichts - der\nNachbar übernimmt das schon.\n
+RES_01_05
+Nicht ein offener Balkon.\nsondern eine überdachte\nVeranda muss es sein: Auch\nbei Regen sollen sich Kinder\ndraussen vergnügen können.\nDoch wenn Kinder sich einmal\nin etwas vertieft haben, merken\nsie sowieso nicht mehr, wie nass\nsie schon sind.\n
+RES_01_07
+Freunde der Mobilität gab es\nschon immer: Im Erdgeschoss\ngibt es tatsächlich einen\nkleinen Pferdestall und einen\nKutschenraum! Und wenn\nschon Pferde vorhanden sind,\ndarf der Hundezwinger natürlich\nauch nicht fehlen. Der Hauseingang\nliegt im 1. Stock, einen direkten\nZugang zum Pferdestall hat es aus\nverständlichen Gründen nicht.\n
+RES_01_08
+Ein Mehrfamilienhaus mit\nGarten. Ja, das sind sie, die\nneuen Eigentumswohnungen der\ngehobenen Klasse!\n
+RES_01_10
+Das Haus ist das Ergebnis eines\nexperimentierfreudigen\nArchitekts. Jedesmal, wenn\nNachwuchs angesagt war, hat\ner sein Haus vergrössert und\ndabei immer nach den\nneuesten Trends anbauen lassen.\nEin Lehrstück vor allem für den\nUnternehmer, der die erste\nGeneralrenovation in Angriff\ngenommen hat.\n
+RES_01_12
+Eine private Sportschule.\nTurnhalle und Hallenbad sind\nselbstverständlich integriert.\n
+RES_01_13
+Auch ein Wohnblock kann\nstilvolles Wohnen bieten. Diese\nAussage sollen die Erker am\nGebäude vermitteln. Auf Stil\nwurde jedoch zuviel Wert\ngelegt: In den achteckigen\nZimmern können grosse Möbel nur\nmit Platzverlust gestellt werden.\nFamilie Humbler hat die Lösung\ngefunden: Schränke werden\nRücken an Rücken mitten ins\nZimmer gestellt.\n
+RES_01_14
+Viele kleine Wohnungen sind in\ndem Block untergebracht,\njunge Einzelpersonen machen\nden Großteil der Bewohner\naus. Dem Vermieter passt das\nweniger, denn er hat das\nRisiko, dass gleich zwei Parteien\nunterschiedlichen Geschlechts\nmiteinander ausziehen.\n
+RES_01_15
+Große Wohnungen für große\nFamilien soll der Block\nbereithalten. Nur, was als\ngroße Familie gilt, ist im Lauf\nder Zeit immer kleiner\ngeworden.\n
+RES_01_16
+Den Anlass, die eine Hausseite\nrenovieren zu lassen, gab ein\nLastwagen, dessen Fahrer sich\nin der Distanz verschätzt hat.\nBezahlen muss die Gemeinde,\ndie gegen den Willen der\nGrundeigentümer die Bordsteine\nflach überteert hat.\n
+RES_01_17
+Ein hohes Wohnhaus mit\nGeschäftsräumen im\nErdgeschoss ist typisch für\ndie erste Hälfte des 20.\nJahrhunderts. Den grossen\nEinkaufszentren mit\nLadenflächen auf vielen\nGeschossen wird es einst\nweichen müssen.\n
+RES_01_18
+Der alte Herr Huber, den es\nnoch gibt, hört nicht mehr so\ngut; der Hausmeister, der ihm\nimmer und immer wieder\nversucht klarzumachen, dass\nman den vollautomatischen\nLift nicht mit der kleinen Kurbel\nganz nach oben drehen muss,\nstöhnt regelmässig "Mein Gott,\nWalter".\n
+RES_01_19
+Hochhaus mit Wohnungen\n
+RES_01_20
+Banlieu-Siedlung. So lieblos,\nwie das Gebäude für Leute\nder Unterschicht aus dem\nBoden gestampft worden ist,\nso trist ist das Leben für\nmanche seiner Bewohner.\n
+RES_01_21
+In die unteren fün\nStockwerte sollten noch\nnach und nach Gewerbe\neinziehen. Das hatte sich als\nschlechte Idee\nherausgestellt und so hat man\naus dem Fahrstuhl die Knöpfe für\n3. und 4. Stock sang- und klanglos\nausgebaut. Die Tauben freuts es\nallerdings.\n
+RES_01_22
+Am Anfang wollte jeder hin,\nheute leider fast jeder weg\nin die Vorstadt, die sich\ndurch die Zersiedleung längst\nin weiter Ferne befindet.\n
+RES_01_23
+Die Form soll von einer Wette\nstammen: Der Geschäftsleiter\nder Firma Volkeroth Hochbau\nverlor hier eine Million, weil\nder Bauplan mit seiner Initiale\ndurchging. Da aber bis zur\nFertigstellung eh der Etat\ndreifach überzogen wurde, war\ner danach deutlich reicher als\nvorher.\n
+RES_02_01
+Zu zugig kann es in solche\nHütten kaum sein: Wichtig ist\nder Schatten und der fest\nleicht erhobene Fussboden\ngegen allerhand Getier.\n
+RES_02_02
+Kein Schrebergarten: Nein,\neines der ältesten ständig\nbewohnten Häuser hier.\n
+RES_02_16
+Großzügig bemessene\nWohnungen befinden sich im\nBlock. Weniger großzügig sind\ndie Bewohner: Nachdem die\nHypothekarzinsen 2%\ngestiegen sind, ist das Wohnen\nhier trotz schöner Einrichtung\neher zur Belastung geworden.\n
+RES_02_20
+In dem Versuch, die\nBausünden der 60er\nattraktiver zu gestalten, hat\ndie Genossenschaft erst\nkürzlich mit dem Dachpool\ndie Lösung gefunden. Da\nkommt die globale Erwärmung\nauch gerade recht.\n
+RES_10_01
+Auch wenn es zweistöckig\naussieht: Oben ist nur ein\nSchlafraum, denn der Ofen in\nder Küche muss für das ganze\nHaus reichen.\n
+RES_10_05
+Ein eigenhändig renoviertes\nund modernisiertes\nFachwerkhaus mit\nwunderschönem Garten. Der\nEigentümer wird es sicher um\nkeinen Preis verkaufen wollen.\n
+RES_11_01
+Die reedgedeckte\nFischerhütte wurde,\nnachdem der letzte Fischer\nstarb, an den Rand der Stadt\nversetzt und als\nFreilichtmuseum ausgebaut.\n
+rightShipStop
+Frachtkai mit Landebrücke
+RUIN_0
+Ruinen\n\nDie Herren dieser großartigen\nBurg waren im 30jährigen\nKrieg mit den Falschen\nverbündet. Dennoch lässt sich\nimmer noch ihre einstige\nMacht erahnen.\n
+SandStationMHz
+Halt ohne Bahnsteig
+ShipDepot
+Werft
+STADIUM2
+Großes Stadion\n\nHier finden all die großen\ninternationalen Ereignisse statt.\n
+Tennis_Court
+Tennisplätze\n
+Terminal1930
+Flughafenabfertigungshalle v.1930
+Theatre
+Musicaltheater\n
+Tower1930
+Flughafenkontrollturm v.1930
+TowerMoistboy
+Kontrollturm
+TrainDepot
+Eisenbahndepot
+TrainStopMaglev
+Bahnsteig Magnetschwebebahn
+TrainStopMaglevIndicator
+Bahnsteig Magnetschwebebahn mit Anzeigetafel
+TramDepot
+Straßenbahndepot
+VictorianStation
+Stationsgebäude in viktorianischem Stil
+Vorplatz
+Bahnhofsvorplatz
+Windmill
+Windmühle\n
+#____________________________________citycar____________________________________
+#____________________________________citycar____________________________________
+Ambulanz
+Ambulanzfahrzeug
+FordT
+Ford Modell T
+green_car
+grünes Auto
+Motorrad
+Moped
+orange_bus
+VW-Bus
+Roadster
+Roadster
+yellow_car
+gelbes Auto
+#___________________________________crossing____________________________________
+#___________________________________crossing____________________________________
+Crossing1
+Bahnübergang
+Crossing2
+Bahnübergang
+rail-road-crossing
+Bahnübergang
+#____________________________________cursor_____________________________________
+#____________________________________cursor_____________________________________
+Baum
+Baum
+Marked
+Markierung setzen
+Query
+Abfragewerkzeug
+Remove
+Entfernen
+Schedule
+Haltepunkt
+ShipDepotEW
+Schiffsdepot
+ShipDepotNS
+Schiffsdepot
+Signal
+Signale
+#__________________________________dummy_info___________________________________
+#__________________________________dummy_info___________________________________
+factory_2Raffinerie_details
+<title>Raffinerie Details</title> In einer Raffinerie werden die Rohölbestandteile getrennt. Leichte Bestandteile werden zu Benzin, schwerere zu Heizöl, Dieselkraftstoff, Schmierstoffen und dergleichen. Die Nachfrage nach Benzin ist jedoch relativ grösser, als das Erdöl leichte Bestandteile enthält; durch Cracken (lange Molekülketten werden in kurze aufgebrochen) kann dieses Missverhältnis korrigiert werden.
+factory_3Raffinerie_details
+<title>Raffinerie Details</title> In einer Raffinerie werden die Rohölbestandteile getrennt. Leichte Bestandteile werden zu Benzin, schwerere zu Heizöl, Dieselkraftstoff, Schmierstoffen und dergleichen. Die Nachfrage nach Benzin ist jedoch relativ grösser, als das Erdöl leichte Bestandteile enthält; durch Cracken (lange Molekülketten werden in kurze aufgebrochen) kann dieses Missverhältnis korrigiert werden.
+factory_Autohaus_details
+<title>Autohaus Details</title> Das Herz des Autoliebhabers schlägt in diesen Schauräumen höher - leider überträgt sich das nicht auf deren Kontostand. Denn viele Bubenträume, die hier zum Greifen nahe sind, bleiben ein Traum.
+factory_Autohersteller_details
+<title>Autofabrik Details</title> Autos am laufenden Band werden in den Hallen montiert. Die Auswahl an Modellen und Marken ist überwältigend und verwirrend. Aber warum wollen so viele Leute ein Auto, dass 200 km/h fahren kann, wenn sowieso nicht mehr als 120km/h erlaubt sind?
+factory_ChemicalPlant_details
+<title>Chemiefabrik Details</title><h1>Chemiefabrik Details</h1><p>Schon seit Anfang des Jahrhunderts werden hier Chemikalien und Druckerfarbe produziert.</p>
+factory_Erzbergwerk_details
+<title>Erzbergwerk Details</title> Ein Erzbergwerk im Tagebau. Die ergiebigsten Eisenerzlager befinden sich in geologisch alten Gesteinsschichten; sie entstanden, als die ersten Photosynthesealgen die Meere mit Sauerstoff anreicherten und das im Meer gelöste Eisen sich als Rost auf den Stränden und auf dem Meeresgrund absetzte.
+factory_fish_pond_details
+<title>Fischzucht Details</title> Bei einigen Fischarten, vor allem Lachsen, lohnt sich ein Zuchtbetrieb.
+factory_fish_swarm_details
+<title>Fischgrund Details</title> Reiche Fischgründe galten lange Zeit als unerschöpfliche Nahrungsquelle, doch manche gelten heute als überfischt. In den grossen Schleppnetzen der industriellen Fischerei verfangen sich auch immer wieder geschützte Tiere.
+factory_Incinerator_details
+<title>Müllverbrennung</title><h1>Müllverbrennung Details</h1><p>Solche offenen Müllverbrennungsanlagen gehören eigentlich seit langem verboten. Denn bei den niedrigen Temperaturen entsteht Dioxin. In einigen Gegenden (zum Beispiel Japan) ist durch solche Anlagen der Boden stärker versucht als in Seveso.</p>\n
+factory_Kohlegrube_details
+<title>Kohlegrube Details</title><h1>Kohlegrube Details</h1><p>In der Kohlegrube fördern die Bergleute in schwerer Arbeit wertvolle Kohle. Kohle wird von Kraftwerken, Stahlwerken und anderen Industrien benötigt.</p>
+factory_Kohlekraftwerk_details
+<title>Kohlekraftwerk Details</title> Thermische Kraftwerke mit Kohlefeuerung bilden in manchen Ländern das Rückgrat der Stromversorgung, auch wenn viele Kraftwerke mittlerweile mit Öl oder Gas befeuert werden. Die Hitze der Kohlefeuerung bringt Wasser zum kochen, das dann eine Dampfturbine antreibt, die an die Generatoren gekoppelt ist.
+factory_Materialswholesale_details
+<title>Baumarkt Details</title> Alle Arten von Baumaterialien sind auf diesem Gelände erhältlich. Mindestens im Rohbau sollten sie ein Haus fertigstellen können, ohne einen anderen Lieferanten als diesen Baumarkt beiziehen zu müssen.
+factory_Moebelfabrik_details
+<title>Möbelfabrik Details</title> Auch Möbel sind Modetrends unterliegende Massenware geworden. Kaum ein Möbelstück aus dieser Fabrik ist noch durch die Hände eines echten Möbelschreiners gegangen, und dann meist auch nur, weil die Maschine nicht genau das gemacht hat, was sie sollte.
+factory_Moebelhaus_details
+<title>Möbelhaus Details</title> Wie erhöht man die Rendite pro Verkaufsfläche? Man verkauft die Möbel in Einzelteilen, zusammengelegt in Schachteln, und lässt sie von den Käufern zuhause zusammenbauen.
+factory_Nutzwald_details
+<title>Nutzwald Details</title><h1>Nutzwald Details</h1><p>In den Wäldern wächst der wichtigste nachwachsende Roh-, Bau- und Werkstoff sowie Energieträger Holz heran, der durch die Forstwirtschaft bereitgestellt und durch die Holz- und Papierwirtschaft in hochwertige Marktprodukte umgewandelt wird.</p>
+factory_Oelbohrinsel_details
+<title>Ölbohrinsel Details</title> Die Ölbohrinseln wurden in der 2. Hälfte des 20. Jahrhunderts entwickelt, als die Landressourcen den Ölbedarf nicht mehr decken konnten. Die Ölbohrinseln bohren riesige Öllagerstätten im Kontinentalschelf (0-200m unter dem Meer) an. Durch den dort vorherrschenden Druck kommt das Öl dann ohne menschliches Zutun in die Lager der Ölbohrinsel, die sich meist direkt über dem Meeresgrund befinden.
+factory_Oelkraftwerk_details
+<title>Ölkraftwerk Details</title><h1>Ölkraftwerk Details</h1><p>In den 60er Jahren war beschlossen worden, dass die Kohle für den Stahl benötigt wird und es wurden viele Ölkraftwerke gebaut. Auch lässt sich Öl besser auf kleinem Platz lagern.</p>
+factory_Oelpumpe_details
+<title>Pferdekopf-Ölpumpen</title><h1>Pferdekopf-Ölpumpe Details</h1><p>Die größten deutschen Ölfelder befinden sich westlich der Ems. Die dortigen Reserven wurden 1942 entdeckt und seitdem auch abgebaut. Das dort geförderte Öl ist jedoch so zähflüssig, dass es zunächst aus der Tiefe an die Oberfläche gepumpt werden muss. Durch den entfernt an ein Pferd erinnernden Maschinenaufbau und die nickende Bewegung werden die Pumpen im Volksmund als Pferdekopf-Pumpen bezeichnet und sind ein Wahrzeichen der Landschaft geworden.</p>
+factory_Papierfabrik_details
+<title>Papierfabrik Details</title> Papier besteht aus Zellstoff, der aus Holz gewonnen wird. Damit Papier wirklich weiss wird, muss es zusätzlich gebleicht werden.
+factory_Raffinerie_details
+<title>Raffinerie Details</title> In einer Raffinerie werden die Rohölbestandteile getrennt. Leichte Bestandteile werden zu Benzin, schwerere zu Heizöl, Dieselkraftstoff, Schmierstoffen und dergleichen. Die Nachfrage nach Benzin ist jedoch relativ grösser, als das Erdöl leichte Bestandteile enthält; durch Cracken (lange Molekülketten werden in kurze aufgebrochen) kann dieses Missverhältnis korrigiert werden.
+factory_Saegewerk_details
+<title>Sägewerk Details</title> Baumstämme werden auf die vom Abnehmer gewünschte Grösse zugeschnitten. Ein ringförmig angelegtes Holzlager kann darüber hinaus die Lärmbelastung für die Nachbarschaft verringern; bis Holz zu Brettern verarbeitet werden kann, muss es nach dem geschlagen werden noch einige Jahre trocknen.
+factory_Sandquarry_details
+<title>Sandgrube Details</title> Hier wird Sand abgebaut. Sand findet im Straßenbau, in der Glasherstellung, in Betonwerken und weiteren Industrien Verwendung.
+factory_scrap_yard_details
+<title>Recyclinghof Details</title>\nBringen Sie ihre Abfälle zu einer Sammelstelle wie dieser. Die Natur und die Altstoffhändler danken Ihnen.\n
+factory_Stahlwerk_details
+<title>Stahlwerk Details</title> Im Hochofen werden Eisenerz und Kohle zu Roheisen und C02. Die Gewinnung von Stahl aus Roheisen erfordert einen weiteren Prozess. Der Kohleanteil und somit der CO2-Ausstoss konnte in der Geschichte der Verhüttung immer weiter gesenkt werden.
+factory_Stonequarry_details
+<title>Steinbruch Details</title> Was in einem Steinbruch gemacht wird, ist eigentlich klar: Steine werden aus dem kompakten Fels gebrochen, heute meist mit Hilfe von Sprengladungen. Das Bild zeigt einen Steinbruch, der sich in die Tiefe frisst, in Berggegenden werden Steinbrüche oft in eine bestehende Felswand vorgetrieben.
+factory_TANKE_details
+<title>Tankstelle Details</title>\nEin aussterbendes Tankstellenmodell: kein Geschäft ist zu sehen.\n
+#____________________________________factory____________________________________
+#____________________________________factory____________________________________
+2Raffinerie
+Raffinerie (Benzin)
+3Raffinerie
+Raffinerie (B+KSt)
+Autohaus
+Autohaus
+Autohersteller
+Autohersteller
+bakery
+Großbäckerei
+brewery
+Brauerei
+Buchgrosshandel
+Buchhändler
+cannery
+Dosenabfüller
+Cementmill
+Zementfabrik
+ChemicalPlant
+Chemiewerk
+CHEMIST
+Apotheke
+Concretefactory
+Betonfabrik
+cow_farm
+Kuhställe
+dairy
+Milchverarbeiter
+Druckerei
+Druckerei
+Erzbergwerk
+Erzbergwerk
+fish_pond
+Fischteich
+fish_swarm
+Fischschwarm
+food_processing_plant
+Fertiggerichtehersteller
+grain_farm
+Getreidehof
+grain_mill
+Getreidemühle
+Incinerator
+Müllverbrennung
+Kohlegrube
+Kohlegrube
+Kohlekraftwerk
+Kohlekraftwerk
+Materialswholesale
+Baumarkt
+Moebelfabrik
+Möbelfabrik
+Moebelhaus
+Möbelhaus
+Nutzwald
+Nutzwald
+Oelbohrinsel
+Ölbohrinsel
+Oelfeld
+Ölfeld
+Oelkraftwerk
+Ölkraftwerk
+Oelpumpe
+Pferdekopf-Ölpumpe
+Papierfabrik
+Papierfabrik
+Pharmaceutics
+Pharmahersteller
+Raffinerie
+Raffinerie (Kunstst.)
+Saegewerk
+Sägewerk
+Sandquarry
+Sandgrube
+scrap_yard
+Recyclinghof
+Stahlwerk
+Stahlwerk
+Stonequarry
+Steinbruch
+supermarket
+Supermarkt
+TANKE
+Tankstelle
+Windkraftwerk
+Windkraftwerk\n
+#_____________________________________good______________________________________
+#_____________________________________good______________________________________
+Autos
+Autos
+beer
+Bier
+Bretter
+Bretter
+Buecher
+Bücher
+canned_food
+Dosen
+Cement
+Zement
+Chemicals
+Chemikalien
+Concrete
+Beton
+Eisenerz
+Eisenerz
+fish
+Fische
+flour
+Mehl
+food
+Fertiggerichte
+Gasoline
+Benzin
+grain
+Getreide
+Holz
+Holz
+Kohle
+Kohle
+meat
+Fleisch
+Medicine
+Medikamente
+milk
+Milch
+Moebel
+Möbel
+Oel
+Öl
+Papier
+Papier
+Plastik
+Kunststoffe
+PrintersInk
+Druckfarben
+Sand
+Sand
+Stahl
+Stahl
+Stone
+Stein
+waste
+Müll
+#____________________________________ground_____________________________________
+#____________________________________ground_____________________________________
+Basement
+Fundament
+Fence
+Zaun
+Water
+Wasser
+#_____________________________________menu______________________________________
+#_____________________________________menu______________________________________
+EditTools
+Karteneditor
+ListTools
+Listenverwaltung
+MainMenu
+Hauptmenü
+ShipTools
+Häfen und Werften
+SlopeTools
+Geländebauwerkzeuge
+SpecialTools
+Spezialbauwerkzeuge
+#_____________________________________misc______________________________________
+#_____________________________________misc______________________________________
+Construction
+Baustelle
+PowerDest
+Umspannwerk beim Verbraucher
+PowerSource
+Umspannwerk beim Kraftwerk
+Sidewalk
+Gehsteig
+#__________________________________pedestrian___________________________________
+#__________________________________pedestrian___________________________________
+Couple
+Paar (oder Pärchen)
+Cyclist
+Radfahrer
+pedestrian_1
+Fußgänger
+pedestrian_2
+Fußgänger
+pedestrian_3
+Fußgänger
+pedestrian_4
+Fußgänger
+pedestrian_child
+Kind
+pedestrian_dog
+Hund
+Woman
+Frau
+#_________________________________program_text__________________________________
+#_________________________________program_text__________________________________
+CATEGORY_01
+Stückgut
+CATEGORY_02
+Schüttgut
+CATEGORY_03
+Öl/Benzin
+CATEGORY_04
+Kühlwaren
+CATEGORY_05
+flüssige Lebensmittel
+CATEGORY_06
+Langholz
+#___________________________________roadsign____________________________________
+#___________________________________roadsign____________________________________
+ChooseSignals
+Auswahlsignale
+ChooseSignalsMonorail
+Auswahlsignale
+choose_point
+Stoppwähler
+LongBlockSignals
+Signale zur Blockreservierung
+Minimum80
+Mindestgeschwindigkeit 80 km/h
+NoAirEntry
+Rollbahnsperre (für eine Richtung)
+NoEntry
+Einfahrt verboten
+preSignals
+Zwei-Block-Signal
+preSignalsMonorail
+Zwei-Block-Signal
+RailClose
+Gleissperre
+Signals
+Signale
+SignalsMonorail
+Signale
+traffic_light
+Ampeln
+#_____________________________________smoke_____________________________________
+#_____________________________________smoke_____________________________________
+Diesel
+Diesel
+Industry_Fire
+Industriefeuer
+Industry_Smoke
+Industrierauch
+Steam
+Dampf
+#____________________________________symbol_____________________________________
+#____________________________________symbol_____________________________________
+AirStop
+Gangway
+BusStop
+Bushaltestelle
+CarStop
+Frachthof
+Electricity
+Elektrizität
+Flags
+Flaggen
+Passagiere
+Passagiere
+Post
+Post
+Seasons
+Jahreszeiten
+ShipStop
+Hafen
+TrainStop
+überdachter Bahnsteig
+Waren
+Waren
+#_____________________________________tree______________________________________
+#_____________________________________tree______________________________________
+Ahorn-1
+Ahorn\n
+Ahorn-2
+Ahorn\n
+Birke-1
+Birke\n
+Buche-1
+Buche\n
+Busch_2
+Busch\n
+Kiefer_1
+Kiefer\n
+Kiefer_2
+Kiefer\n
+Kiefer_3
+Kiefer\n
+Kiefer_4
+Kiefer\n
+Kiefer_5
+Kiefer\n
+Latschenkiefer
+Latsche (Bergkiefer, Legföhre)\nPinus montana\n\nImmergrüner nadeltragender Strauch bis\n6 m Höhe. Verbreitet in den\nGebirgen Mittel- und\nSüdeuropas bis in Höhen von\n2400m. Großflächige Bestände\nvor allem an der oberen\nWaldgrenze auf steinigen Böden\nund in Hochmooren. Das harte,\nharzreiche Holz wird auf den\nHochalmen als Brennholz\nverwendet. Aus den jungen\nSprossen gewinnt man Öl, das als\nDuftöl (Latschenkiefernöl) und\nInhalationsmittel verwendet\nwird.\n
+Palmtree1
+Palme\n
+Palmtrees
+Palmen\n
+Pappel-1
+Pappel\n
+Pappel-2
+Pappel\n
+Tanne_1
+Tanne\n
+Tanne_2
+Tanne\n
+Tanne_3
+Tanne\n
+Tanne_4
+Tanne\n
+Tanne_5
+Tanne\n
+Tanne_6
+Tanne\n
+Tree4
+Kiefern sind weltweit\ngesehen die wichtigsten\nBaumarten der\nForstwirtschaft. Meist\nanspruchslos und gutwüchsig,\nwerden sie oft an Stelle der\neinheimischen Baumarten für die\neffektive Wiederaufforstungen\nnach Waldzerstörungen und\nRodungen verwendet. Ursprung\nsind eigentlich aus kühl-feuchten\nKlimabereichen. Angebaut werden\nKiefern aber inzwischen weltweit\n- außer in der Antarktis.\n
+Tree6
+Fichte (Rotfichte, Rottanne)\nPicea abies\n\nWeitverbreiteter, schlanker, immergrüner\nNadelbaum. Er erreicht eine\nHöhe von 35 bis 65m, einen\nStammdurchmesser bis 2m und\nein Alter bis zu 1000 Jahren.\nNatürliche Standorte sind Nord-\nund Osteuropa sowie die Gebirge\nMitteleuropas. Durch künstliche\nVerbreitung auch in tieferen\nRegionen angesiedelt. Daher der\nName "Brotbaum der heimischen\nForstwirtschaft". Verwendung:\nAussen- und Innenbau,\nUntertagebau, Gerüstebau,\nSpanplatten, Resonanzholz für\nMusikinstrumente, Zellulose- und\nPapierindustrie.\n
+Willow
+Trauerweide\n
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
+FastRailTunnel
+Hochgeschwindigkeitstunnel
+FastRoadTunnel
+Autobahntunnel
+RailTunnel
+Eisenbahntunnel
+RoadTunnel
+Straßentunnel
+#____________________________________vehicle____________________________________
+#____________________________________vehicle____________________________________
+0Ben103
+DB BR 103
+1Ben140
+DB BR 140
+1Dampflokomotive
+H-Trans 0-4-0T
+1Diesellokomotive
+H-Trans BR212
+1Ellok
+H-Trans BR103
+1Garrat
+Garratt
+1Schienenbus
+Schienenbus
+1TPEllok
+F7 A
+221A
+Franz. 221 Schnellzuglok
+221A_tender
+221A Tender
+2Ben155
+DR BR250
+2Dampflokomotive
+H-Trans 4-6-0
+2Diesellokomotive
+DB BR 218
+2Ellok
+H-Trans Tigress I
+2Garrat
+Garratt (Mittelsegment)
+2TPEllok
+British Rail Class 86/2
+3Ben185
+DB BR185
+3Diesellokomotive
+H-Trans BR365
+3Garrat
+Garratt (Endsegment)
+4Ben204
+DR V114
+5Ben220
+DR V200 "Taigatrommel"
+6Ben228
+DR V119
+707
+Boeing 707
+7BenE11
+DB E11
+A3-5
+SBB A 3/5
+A3-5_tender
+Tender zu SBB A 3/5
+A380
+Airbus A380
+Adler
+Adler
+AdlerPersonenwagen
+Adler Personenwagen
+Autotrailer
+Autoanhänger
+Autotransportanhaenger
+H-Trans Autotransportanhänger
+Autotransporter
+H-Trans Autotransporter
+Autotransportwagen
+TPI Lopomo Autotransporter
+BB1280
+BB1280
+Be5-7
+BLS Be 5/7
+Beiwagen
+H-Trans/TPI VB95 Beiwagen
+Blimp
+Prallluftschiff
+Book_Trike
+Dreirädriger Lieferwagen
+Boxcar
+Stückgutwagen
+BR01
+BR01
+BR38
+BR 38 (Pr. P8)
+BR38-Tender
+BR38 Tender
+BR39
+BR39
+BR45
+BR45
+BR45-Tender
+BR45 Tender
+BR85
+BR85
+Bretteranhaenger
+WF Ultd. Bretteranhänger
+Brettertransporter
+WF Ultd. Brettertransporter
+Bretterwagen
+VT Wien Rungenwagen Bretter
+BRV36
+BRV36
+Buchanhaenger
+Anhänger für Bücher (Serj)
+Buchtrailer
+Sattelanhänger für Stückgut I
+Buchtrailer2
+Sattelanhänger für Stückgut II
+Buchtransporter
+Serj/H-Trans Stückguttransporter
+Buchwagen
+VT Wien Güterwagen
+Bulkcarriage
+Schüttgut-Pferdewagen
+Bus
+H-Trans Bus
+Cargosprinter-Front
+Cargosprinter
+Cargosprinter-Mittel
+Cargosprinter Mittelwagon
+Cargosprinter-Steuer
+Cargosprinter Schubmaschine
+Cementanhaenger
+WF Ultd. Zementanhänger
+Cementtrailer
+Sattelanhänger für Zement
+Cementtransporter
+WF Ultd. Zementkipper
+Cementwagen
+WF Ultd. Zementwaggon
+ColinBigFerry
+Großes Passagierschiff
+ColinFastFerry
+Schnellfähre
+ColinMotorBus
+Autobus
+Concept1Front
+Concept 1
+Concept1Mail
+Concept 1 Postwagen
+Concept1Pass
+Concept 1 Passagierwagen
+Concept1Rear
+Concept 1 hinterer Triebkopf
+Concept2Front
+Concept 2
+Concept2Mail
+Concept 2 Postwagen
+Concept2Pass
+Concept 2 Personenwagen
+Concept2Rear
+Concept 2 hinterer Triebkopf
+Concorde
+Concorde
+Concretetransporter
+WF Ultd. Betonmischer
+Concretewagen
+WF Ultd. Betonwaggon
+Cooling_Container
+Kühlcontainerwagen
+Cooling_Truck
+Kühl-LKW
+Cooling_Waggon
+Kühlwagen
+Deponielaster
+Deponielaster I
+Deponielaster2
+Deponielaster II
+DM8_CAR
+TPI Dm8 Passagierwagen
+DM8_LOK1
+TPI Dm8 Motorwagen
+DM8_LOK2
+TPI Dm8 Steuerwagen
+Doubledeck_city_bus
+Doppeldeckerbus
+Doubledeck_intercitybus
+Doppeldeckerbus (Intercity)
+Eb3-5
+SBB Eb 3/5
+EinheitsTender
+Einheitstender
+EnCo_Steel_Ship
+EnCo Stahlfrachtschiff
+Erzanhaenger
+H-Trans Erzanhänger
+Erztrailer
+Sattelanhänger für Schüttgut
+Erztransporter
+H-Trans Lkw MK2
+Erzwagen
+H-Trans Schüttgutwagen (für 30t)
+F7back
+F7 A Schiebelok
+FastFerry
+Luftkissenfahrzeug
+Fishing_Boat
+Fischfabrikschiff
+Fishing_Boat_DanMacK
+Fischereiboot
+Flachwagen
+Niederflurwagen
+Fokker_F27
+Fokker F27
+GarbageTruck
+Müllabfuhrwagen
+Guppy
+Super Guppy
+H-Trans-Pantheress
+Pantheress
+H-Trans-Pantheress-Back
+Pantheress (hinterer Triebkopf)
+H-Trans-Tiger-Car
+H-Trans Tigress Passagierwagen
+H-Trans-Tiger-Mail-Car
+H-Trans Tigress Postwagen
+H-Trans-Tigress-II-Back
+Tigress-II hinterer Triebkopf
+H-Trans-Tigress-II-Front
+Tigress-II
+Hadley-Page-V1500
+RVg Hadley-Page V1500
+Heavy_ore_truck
+Muldenkipper
+Hochbordwagen
+Kohlewaggon (18t)
+Holzanhaenger
+JET Langholzanhänger
+Holzschiff
+TPI/JET Holzfrachter
+Holztrailer
+Sattelanhänger für Langholz
+Holztransporter
+H-Trans Holztransporter
+Holzwagen
+H-Trans Rungenwagen Holz
+Horsebookscariage
+Kutsche für Stückgut
+Horsemailcariage
+Postkutsche
+Horsepapercariage
+Pferdewagen für Papier
+Horsepassengerscariage
+Kutsche
+Horses
+Pferdegespann
+Horsewoodcariage
+Pferdekarren für Holz
+HVPosttransporter
+DIBU/H-Trans Posttransporter
+ICE_TD-back
+ICE-TD Steuerwagen (hinten)
+ICE_TD-car
+ICE-TD Mittelwagen
+ICE_TD-front
+ICE-TD
+Ik26
+Serj Ikarus-260
+IL-209S_Goods_Trailer
+IL-209S LKW-Anhänger für Stückgut
+IL-209S_Goods_Truck
+IL-209S LKW für Stückgut
+IL-76
+IL-76
+JNR_C11
+JNR C11 (2-6-4T)
+JR_9600
+JR 9600
+JR_9600_tender
+JR9600 Tender
+Ju52
+Ju52
+JumboJet
+Boeing 747 "Jumbo Jet"
+Kohleanhaenger
+H-Trans Anhänger MK2
+Kohleschiff
+WF Ultd. Schüttgutfrachter
+Kohletransporter
+H-Trans Lkw
+Kohlewagen
+H-Trans Güterwagen MK2
+Kunststofanhaenger
+H-Trans Plastikanhänger
+Kunststofftransporter
+H-Trans Kunststofftransporter
+Li6
+Serj LiAZ-677
+Lockhead_Tristar
+Lockheed Tristar
+Lockheed10-Electra
+Lockheed 10 Electra
+logs
+Holzfloß
+Lowa
+Lowa
+Lowa_Anhaenger
+Lowa Anhänger
+MailExpress
+Postflugzeug
+Milk_Truck
+Milchlaster
+Milk_Waggon
+Milchwaggon
+MJHN_Avocet
+MJHN Avocet
+MJHN_Deltic
+British Rail Class 55 'Deltic'
+Moebelanhaenger
+WF Ultd. Möbelanhänger
+Moebelschiff
+TPI/JET Güterschiff
+Moebeltransporter
+WF Ultd. Stückguttransporter
+Moebelwagen
+VT Wien leichter Güterwagen
+Muellschiff
+Müllschiff
+NeuOelwagen
+Ölwaggon (80t)
+Oelanhaenger
+H-Trans Tankanhänger (Öl)
+Oeltankschiff
+TPI Lopomo Öltanker
+Oelwagen
+VT Wien Kesselwagen Öl
+Oilbarge
+Ölbarke
+Oiltrailer
+Sattelfahrzeug für Öl/Benzin
+OJetKunstoffschiff
+JET Kunststofffrachter
+OldOil
+Tankwagen I
+old_open_car
+Schüttgutwagon von 1837
+PaddelSteamer
+Segelschiff mit Hilfsmotor
+Papieranhaenger
+Trikky Papieranhänger
+Papiertransporter
+Trikky Papiertransporter
+Papierwagen
+VT Wien Papierrollenwagen
+Passagierwagen
+H-Trans Passagierwagen
+Pferdebahn
+Gespann für Pferdebahnen
+Pferdebahnwagen
+Personenwagen (pferdegezogen)
+Postschiff
+Postboot
+Posttransporter
+H-Trans Posttransporter
+Postwagen
+H-Trans Post-/Gepäckwagen
+PrPersonenwagen
+Personenwagen I
+PrPostwagen
+Post-/Gepäckwagen I
+RenaultTH5
+Renault TH5 Sattelschlepper
+S220_CAR
+TPI S220 Passagierwagen
+S220_LOK1
+TPI S220 Motorwagen
+S220_LOK2
+TPI S220 Steuerwagen
+Sandanhaenger
+WF Ultd. Sandanhänger
+Sandtransporter
+WF Ultd. Kipper
+Sandwagen
+WF Ultd./H-Trans Sandwaggon
+schooner
+Neuschottland Schoner
+SD40-2-back
+SD40-2 (zweite Lok)
+SD40-2-front
+SD40-2
+Serj-Mini
+Serj Maxi-Taxi
+Serj_Gaz-4_Goods_Truck
+Serj Gaz-4 Stückguttransporter
+Sloop
+Segelboot
+SlowFerry
+H-Trans Passagierfähre
+SMPoiltruck
+SMP Tankwagen
+Stahlanhaenger
+H-Trans Stahltransportanhänger
+Stahltransporter
+H-Trans Stahltransporter
+Stahlwagen
+VT Wien Güterwagen Stahl
+Staubkesselwagen
+VT Wien Staubkesselwagen
+Steamer
+Dampfschiff
+Stoneanhaenger
+WF Ultd. Steingutanhänger
+Stonetransporter
+WF Ultd. Kipper MK2
+Stonewagen
+WF Ultd./H-Trans Steinwaggon
+SuperConstellation
+Super Constellation
+T13
+T13
+T24
+T24
+Tanklastzug
+H-Trans Tanklastzug
+Tatra-T4
+Tatra T4
+Tatra-T4_Wagon
+Tatra-T4 Waggon
+TB13
+TB13
+TB24
+TB24
+teaclipper
+Segelschiff für Stückgut
+TENDER
+TPI Tender
+TPBeiwagen
+VB98 Beiwagen
+TPDiesel
+British Rail Class 26 (TPI)
+TPI_Std_2-6-4T
+TPI Std 2-6-4T
+TPPassagierwagen
+TPI Lopomo Passagierwagen
+TPSchienenbus
+VT98 Schienenbus
+Tram_GT6_Ende
+Straßenbahn GT6 (Abschlußwagen)
+Tram_GT6_Kopf
+Straßenbahn GT6
+Trike
+Schüttgutdreirad
+Tugboat
+Schleppkahn
+VolvoFH12
+Volvo FH12 Sattelschlepper
+waste wagon
+offener Müllwaggon
+Zeppelin
+Zeppelin
+#______________________________________way______________________________________
+#______________________________________way______________________________________
+asphalt_road
+Asphaltierte Straße
+city_road
+Stadtstraße
+cobblestone_road
+Pflasterstraße
+concrete_sleeper_track
+Schienen mit Betonschwellen
+dirt_road
+Unbefestigte Piste
+elevated_monorail
+erhöhte Einschienenbahn
+gavel_road
+Schotterstraße
+Kanal
+Kanal
+MaglevTrack
+Magnetschwebebahn-Trasse
+MaglevTrackElevated
+Magnetschwebebahn auf Stelzen
+mip_cobblestone_road
+MIP Pflasterstraße
+monorail
+Magnetschwebebahn
+Powerline
+Übertragungsleitung
+Rillenschienen
+Rillenschienen
+runway_grass
+Unbefestigte Startbahn
+runway_modern
+Moderne Startbahn
+sand_track
+Schienen ohne Unterbau
+steel_sleeper_track
+Schienen mit Stahlschwellen
+taxiway
+Rollfeld
+wooden_sleeper_track
+Schienen mit Holzschwellen
+#__________________________________way-object___________________________________
+#__________________________________way-object___________________________________
+HighSpeedOverheadpower
+Oberleitung (Hochgeschwindigkeitsstrecke)
+SlowOverheadpower
+Oberleitung (geringe Geschwindigkeit)

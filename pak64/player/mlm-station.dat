@@ -1,0 +1,34 @@
+Obj=building
+Name=TrainStopMaglev
+copyright=Timothy Baldock
+Type=monorailstop
+Dims=1,1,2
+waytype=monorail_track
+NoInfo=1
+menupos=1
+enables_pax=1
+cursor=mlmstation.2.0
+intro_year=1964
+icon=> mlmstation.1.0
+BackImage[0][0][0][0][0]=mlmstation.0.0
+BackImage[1][0][0][0][0]=mlmstation.0.1
+FrontImage[0][0][0][0][0]=mlmstation.1.2
+FrontImage[1][0][0][0][0]=mlmstation.1.3
+--------------------
+Obj=building
+Name=TrainStopMaglevIndicator
+copyright=Timothy Baldock
+Type=monorailstop
+Dims=1,1,2
+waytype=monorail_track
+NoInfo=1
+menupos=2
+enables_pax=1
+cursor=mlmstation.2.0
+intro_year=1964
+icon=> mlmstation.1.1
+BackImage[0][0][0][0][0]=mlmstation.0.0
+BackImage[1][0][0][0][0]=mlmstation.0.1
+FrontImage[0][0][0][0][0]=mlmstation.0.2
+FrontImage[1][0][0][0][0]=mlmstation.0.3
+--------------------

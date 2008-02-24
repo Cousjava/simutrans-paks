@@ -1,0 +1,50 @@
+
+Makeobj version 49 for simutrans 99.17.1 nightly and higher
+(c) 2002-2006 V. Meyer , Hj. Malthaner, M. Pristovsek (markus@pristovsek.de)
+
+writing invidual files to ./
+   reading file ./ships.dat
+   writing file ./vehicle.SlowFerry.pak
+      packing vehicle.SlowFerry
+   writing file ./vehicle.FastFerry.pak
+      packing vehicle.FastFerry
+   writing file ./vehicle.Godm_Spitz.pak
+      packing vehicle.Godm_Spitz
+   writing file ./vehicle.schooner.pak
+      packing vehicle.schooner
+   writing file ./vehicle.Viggen.pak
+      packing vehicle.Viggen
+   writing file ./vehicle.Steamer.pak
+      packing vehicle.Steamer
+   writing file ./vehicle.Turgot.pak
+      packing vehicle.Turgot
+   writing file ./vehicle.Postschiff.pak
+      packing vehicle.Postschiff
+   writing file ./vehicle.teaclipper.pak
+      packing vehicle.teaclipper
+   writing file ./vehicle.Tugboat.pak
+      packing vehicle.Tugboat
+   writing file ./vehicle.Oilbarge.pak
+      packing vehicle.Oilbarge
+   writing file ./vehicle.logs.pak
+      packing vehicle.logs
+   writing file ./vehicle.Moebelschiff.pak
+      packing vehicle.Moebelschiff
+   writing file ./vehicle.EnCo_Steel_Ship.pak
+      packing vehicle.EnCo_Steel_Ship
+   writing file ./vehicle.EnCo_Paper_Ship.pak
+      packing vehicle.EnCo_Paper_Ship
+   writing file ./vehicle.EnCo_Car_Ship.pak
+      packing vehicle.EnCo_Car_Ship
+   writing file ./vehicle.EnCo_Car_Ship.pak
+      packing vehicle.EnCo_Car_Ship
+   writing file ./vehicle.EnCo_Wood_Ship.pak
+      packing vehicle.EnCo_Wood_Ship
+   writing file ./vehicle.EnCo_Container_Ship.pak
+      packing vehicle.EnCo_Container_Ship
+   writing file ./vehicle.EnCo_Oil_Ship.pak
+      packing vehicle.EnCo_Oil_Ship
+   writing file ./vehicle.EnCo_Cement_Ship.pak
+      packing vehicle.EnCo_Cement_Ship
+   writing file ./vehicle.EnCo_Bulk_Ship.pak
+      packing vehicle.EnCo_Bulk_Ship

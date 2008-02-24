@@ -1,0 +1,131 @@
+# Engines2.dat
+#
+# Author: Hj. Malthaner
+# Update: 15-Oct-03: Hj.Malthaner
+# Update: 29-Aug-04: Hj.Malthaner - added TPI Std 2-6-4T
+#
+------------------------------
+obj=vehicle
+name=Be5-7
+waytype=electrified_track
+copyright=Hajo/prissi
+freight=None
+smoke=None
+speed=75
+cost=3400000
+weight=110
+power=1840
+RunningCost=3310
+sound=-1
+intro_year = 1913
+intro_month = 4
+retire_year = 1964
+Constraint[Prev][0]=Be5-7
+Constraint[Prev][1]=none
+EmptyImage[S]=Be5-7.0.0
+EmptyImage[W]=Be5-7.0.1
+EmptyImage[SE]=Be5-7.0.2
+EmptyImage[SW]=Be5-7.0.3
+-----------------------
+obj=vehicle
+name=A3-5
+copyright=Jacopo Coletto
+engine_type=steam
+freight=None
+smoke=Steam
+waytype=track
+speed=101
+cost=2800000
+weight=67
+length=7
+power=926
+RunningCost=630
+sound=3
+intro_year=1902
+retire_year=1964
+Constraint[Prev][0]=none
+Constraint[Next][0]=A3-5_tender
+EmptyImage[S]=A3-5.0.0
+EmptyImage[E]=A3-5.0.1
+EmptyImage[SE]=A3-5.0.2
+EmptyImage[SW]=A3-5.0.3
+EmptyImage[N]=A3-5.0.4
+EmptyImage[W]=A3-5.0.5
+EmptyImage[NW]=A3-5.0.6
+EmptyImage[NE]=A3-5.0.7
+------------------------------
+obj=vehicle
+name=A3-5_tender
+waytype=track
+copyright=Jacopo Coletto
+freight=None
+cost=100000
+weight=43
+length=5
+speed=101
+RunningCost=50
+sound=-1
+intro_year=1902
+retire_year=1964
+Constraint[Prev][0]=A3-5
+EmptyImage[S]=A3-5.1.0
+EmptyImage[E]=A3-5.1.1
+EmptyImage[SE]=A3-5.1.2
+EmptyImage[SW]=A3-5.1.3
+EmptyImage[N]=A3-5.1.4
+EmptyImage[W]=A3-5.1.5
+EmptyImage[NW]=A3-5.1.6
+EmptyImage[NE]=A3-5.1.7
+----------------
+obj=vehicle
+copyright=Jacopo Coletto
+name=Eb3-5
+waytype=track
+engine_type=steam
+freight=None
+smoke=Steam
+speed=75
+cost=750000
+weight=74
+power=730
+RunningCost=1270
+sound=3
+intro_year = 1911
+retire_year=1950
+Constraint[Prev][0]=Eb3-5
+Constraint[Prev][1]=none
+EmptyImage[S]=Eb3-5.0.0
+EmptyImage[E]=Eb3-5.0.1
+EmptyImage[SE]=Eb3-5.0.2
+EmptyImage[SW]=Eb3-5.0.3
+EmptyImage[N]=Eb3-5.0.4
+EmptyImage[W]=Eb3-5.0.5
+EmptyImage[NW]=Eb3-5.0.6
+EmptyImage[NE]=Eb3-5.0.7
+----------------
+obj=vehicle
+name=Ed2x2
+copyright=Jacopo Coletto
+engine_type=steam
+freight=None
+smoke=Steam
+waytype=track
+intro_year=1891
+retire_year=1938
+speed=55
+weight=59
+power=515
+cost=690000
+RunningCost=960
+sound=3
+Constraint[Prev][0]=Ed2x2
+Constraint[Prev][1]=none
+EmptyImage[S]=Ed2x2.0.4
+EmptyImage[E]=Ed2x2.0.5
+EmptyImage[SE]=Ed2x2.0.6
+EmptyImage[SW]=Ed2x2.0.7
+EmptyImage[N]=Ed2x2.0.0
+EmptyImage[W]=Ed2x2.0.1
+EmptyImage[NW]=Ed2x2.0.2
+EmptyImage[NE]=Ed2x2.0.3
+------------------------------

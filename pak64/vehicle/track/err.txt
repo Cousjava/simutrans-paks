@@ -1,0 +1,189 @@
+
+Makeobj version 49 for simutrans 99.17.1 nightly and higher
+(c) 2002-2006 V. Meyer , Hj. Malthaner, M. Pristovsek (markus@pristovsek.de)
+
+writing invidual files to ./
+   reading file ./engines.dat
+   writing file ./vehicle.1Diesellokomotive.pak
+      packing vehicle.1Diesellokomotive
+   writing file ./vehicle.2Diesellokomotive.pak
+      packing vehicle.2Diesellokomotive
+   writing file ./vehicle.3Diesellokomotive.pak
+      packing vehicle.3Diesellokomotive
+   writing file ./vehicle.1Dampflokomotive.pak
+      packing vehicle.1Dampflokomotive
+   writing file ./vehicle.1Ellok.pak
+      packing vehicle.1Ellok
+   writing file ./vehicle.SD40-2-front.pak
+      packing vehicle.SD40-2-front
+   writing file ./vehicle.SD40-2-back.pak
+      packing vehicle.SD40-2-back
+   writing file ./vehicle.Cargosprinter-Front.pak
+      packing vehicle.Cargosprinter-Front
+   writing file ./vehicle.Cargosprinter-Mittel.pak
+      packing vehicle.Cargosprinter-Mittel
+   writing file ./vehicle.Cargosprinter-Steuer.pak
+      packing vehicle.Cargosprinter-Steuer
+   writing file ./vehicle.1Garrat.pak
+      packing vehicle.1Garrat
+   writing file ./vehicle.2Garrat.pak
+      packing vehicle.2Garrat
+   writing file ./vehicle.3Garrat.pak
+      packing vehicle.3Garrat
+   writing file ./vehicle.1Ben140.pak
+      packing vehicle.1Ben140
+   writing file ./vehicle.1TPEllok.pak
+      packing vehicle.1TPEllok
+   writing file ./vehicle.F7back.pak
+      packing vehicle.F7back
+   writing file ./vehicle.0Ben103.pak
+      packing vehicle.0Ben103
+   writing file ./vehicle.3Ben185.pak
+      packing vehicle.3Ben185
+   writing file ./vehicle.2Ben155.pak
+      packing vehicle.2Ben155
+   writing file ./vehicle.Br234.pak
+      packing vehicle.Br234
+   reading file ./engines2.dat
+   writing file ./vehicle.ED17.pak
+      packing vehicle.ED17
+   writing file ./vehicle.BR01.pak
+      packing vehicle.BR01
+   writing file ./vehicle.BR38.pak
+      packing vehicle.BR38
+   writing file ./vehicle.BR38-Tender.pak
+      packing vehicle.BR38-Tender
+   writing file ./vehicle.BR39.pak
+      packing vehicle.BR39
+   writing file ./vehicle.EinheitsTender.pak
+      packing vehicle.EinheitsTender
+   writing file ./vehicle.BR45.pak
+      packing vehicle.BR45
+   writing file ./vehicle.BR45-Tender.pak
+      packing vehicle.BR45-Tender
+   writing file ./vehicle.BR85.pak
+      packing vehicle.BR85
+   writing file ./vehicle.E44.pak
+      packing vehicle.E44
+   writing file ./vehicle.JR_9600.pak
+      packing vehicle.JR_9600
+   writing file ./vehicle.JR_9600_tender.pak
+      packing vehicle.JR_9600_tender
+   writing file ./vehicle.JNR_C11.pak
+      packing vehicle.JNR_C11
+   writing file ./vehicle.BRV36.pak
+      packing vehicle.BRV36
+   writing file ./vehicle.ICE_TD-front.pak
+      packing vehicle.ICE_TD-front
+   writing file ./vehicle.ICE_TD-back.pak
+      packing vehicle.ICE_TD-back
+   writing file ./vehicle.ICE_TD-car.pak
+      packing vehicle.ICE_TD-car
+   reading file ./multiple-units.dat
+   writing file ./vehicle.TPSchienenbus.pak
+      packing vehicle.TPSchienenbus
+   writing file ./vehicle.TPBeiwagen.pak
+      packing vehicle.TPBeiwagen
+   writing file ./vehicle.Br614front.pak
+      packing vehicle.Br614front
+   writing file ./vehicle.Br614back.pak
+      packing vehicle.Br614back
+   writing file ./vehicle.Br614car.pak
+      packing vehicle.Br614car
+   writing file ./vehicle.X2000front.pak
+      packing vehicle.X2000front
+   writing file ./vehicle.X2000back.pak
+      packing vehicle.X2000back
+   writing file ./vehicle.X2000car.pak
+      packing vehicle.X2000car
+   reading file ./old-engines.dat
+   writing file ./vehicle.kkStB110.pak
+      packing vehicle.kkStB110
+   writing file ./vehicle.kkStB91.pak
+      packing vehicle.kkStB91
+   writing file ./vehicle.kkStB_tender.pak
+      packing vehicle.kkStB_tender
+   writing file ./vehicle.BB1280.pak
+      packing vehicle.BB1280
+   writing file ./vehicle.221A.pak
+      packing vehicle.221A
+   writing file ./vehicle.221A_tender.pak
+      packing vehicle.221A_tender
+   writing file ./vehicle.Adler.pak
+      packing vehicle.Adler
+   writing file ./vehicle.Hunslet.pak
+      packing vehicle.Hunslet
+   reading file ./swiss-engines.dat
+   writing file ./vehicle.Be5-7.pak
+      packing vehicle.Be5-7
+   writing file ./vehicle.A3-5.pak
+      packing vehicle.A3-5
+   writing file ./vehicle.A3-5_tender.pak
+      packing vehicle.A3-5_tender
+   writing file ./vehicle.Eb3-5.pak
+      packing vehicle.Eb3-5
+   writing file ./vehicle.Ed2x2.pak
+      packing vehicle.Ed2x2
+   reading file ./tigress.dat
+   writing file ./vehicle.2Ellok.pak
+      packing vehicle.2Ellok
+   writing file ./vehicle.H-Trans-Tigress-II-Front.pak
+      packing vehicle.H-Trans-Tigress-II-Front
+   writing file ./vehicle.H-Trans-Tigress-II-Back.pak
+      packing vehicle.H-Trans-Tigress-II-Back
+   writing file ./vehicle.H-Trans-Pantheress.pak
+      packing vehicle.H-Trans-Pantheress
+   writing file ./vehicle.H-Trans-Pantheress-Back.pak
+      packing vehicle.H-Trans-Pantheress-Back
+   writing file ./vehicle.H-Trans-Tiger-Car.pak
+      packing vehicle.H-Trans-Tiger-Car
+   writing file ./vehicle.H-Trans-Tiger-Mail-Car.pak
+      packing vehicle.H-Trans-Tiger-Mail-Car
+   reading file ./waggons.dat
+   writing file ./vehicle.Erzwagen.pak
+      packing vehicle.Erzwagen
+   writing file ./vehicle.old_open_car.pak
+      packing vehicle.old_open_car
+   writing file ./vehicle.Hochbordwagen.pak
+      packing vehicle.Hochbordwagen
+   writing file ./vehicle.Kohlewagen.pak
+      packing vehicle.Kohlewagen
+   writing file ./vehicle.Holzwagen.pak
+      packing vehicle.Holzwagen
+   writing file ./vehicle.NeuOelwagen.pak
+      packing vehicle.NeuOelwagen
+   writing file ./vehicle.Oelwagen.pak
+      packing vehicle.Oelwagen
+   writing file ./vehicle.OldOil.pak
+      packing vehicle.OldOil
+   writing file ./vehicle.Klappdeckelwagen.pak
+      packing vehicle.Klappdeckelwagen
+   writing file ./vehicle.Staubkesselwagen.pak
+      packing vehicle.Staubkesselwagen
+   writing file ./vehicle.Ucy.pak
+      packing vehicle.Ucy
+   writing file ./vehicle.Moebelwagen.pak
+      packing vehicle.Moebelwagen
+   writing file ./vehicle.Buchwagen.pak
+      packing vehicle.Buchwagen
+   writing file ./vehicle.Boxcar.pak
+      packing vehicle.Boxcar
+   writing file ./vehicle.Flachwagen.pak
+      packing vehicle.Flachwagen
+   writing file ./vehicle.CarFlat.pak
+      packing vehicle.CarFlat
+   writing file ./vehicle.Autotransportwagen.pak
+      packing vehicle.Autotransportwagen
+   writing file ./vehicle.Laaekks553_a.pak
+      packing vehicle.Laaekks553_a
+   writing file ./vehicle.Laaekks553_b.pak
+      packing vehicle.Laaekks553_b
+   writing file ./vehicle.Papierwagen.pak
+      packing vehicle.Papierwagen
+   writing file ./vehicle.Stahlwagen.pak
+      packing vehicle.Stahlwagen
+   writing file ./vehicle.Bretterwagen.pak
+      packing vehicle.Bretterwagen
+   reading file ./wagon-pass.dat
+   writing file ./vehicle.Passagierwagen.pak
+      packing vehicle.Passagierwagen

@@ -1,0 +1,17 @@
+--------------------
+Obj=building
+Name=TramDepot
+# must be 1*1
+Dims=1,1,4
+NoInfo=1
+FrontImage[0][0][0][0][0][0]=TramDepot64.0.0
+FrontImage[1][0][0][0][0][0]=TramDepot64.0.3
+FrontImage[2][0][0][0][0][0]=TramDepot64.0.2
+FrontImage[3][0][0][0][0][0]=TramDepot64.0.1
+FrontImage[0][0][0][0][0][1]=TramDepot64.1.0
+FrontImage[1][0][0][0][0][1]=TramDepot64.1.3
+FrontImage[2][0][0][0][0][1]=TramDepot64.1.2
+FrontImage[3][0][0][0][0][1]=TramDepot64.1.1
+icon=> TramDepot64.0.4
+cursor=TramDepot64.0.5
+--------------------

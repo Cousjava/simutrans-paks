@@ -1,0 +1,49 @@
+#
+# Monorail cars for Simutrans
+#
+# author: Hj. Malthaner
+# date:   09-Aug-04
+# update: 20-Aug-04
+# update: 3-Oct-05 prissi
+#
+obj=vehicle
+name=XTest
+waytype=monorail_track
+freight=Passagiere
+payload=76
+engine_type=fuel_cell
+speed=160
+cost=2400000
+weight=40
+power=800
+RunningCost=880
+sound=-1
+intro_year = 1964
+intro_month = 11
+Constraint[Prev][0]=XTest
+Constraint[Prev][1]=XMail
+Constraint[Prev][2]=none
+EmptyImage[S]=monocar1.0.0
+EmptyImage[W]=monocar1.0.1
+EmptyImage[SE]=monocar1.2.0
+EmptyImage[SW]=monocar1.2.2
+-----------------------
+obj=vehicle
+name=XMail
+waytype=monorail_track
+freight=Post
+payload=60
+speed=160
+cost=800000
+weight=10
+RunningCost=770
+sound=-1
+intro_year = 1964
+intro_month = 11
+Constraint[Prev][0]=XTest
+Constraint[Next][1]=XMail
+EmptyImage[S]=monocar2.0.0
+EmptyImage[W]=monocar2.0.1
+EmptyImage[SE]=monocar2.2.0
+EmptyImage[SW]=monocar2.2.2
+-----------------------

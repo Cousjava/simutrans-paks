@@ -1,0 +1,87 @@
+-------------
+Obj=building
+Name=MHzSmallStation
+copyright=MHz
+type=station
+extension_building=1
+enables_pax=1
+Dims=1,1,4
+NoInfo=1
+Level=1
+intro_year=1920
+# Order N,E,S,W
+BackImage[0][0][0][0][0][0]=halt_a.0.2
+BackImage[1][0][0][0][0][0]=halt_a.0.1
+BackImage[2][0][0][0][0][0]=halt_a.0.0
+BackImage[3][0][0][0][0][0]=halt_a.0.3
+BackImage[0][0][0][0][0][1]=halt_a.0.6
+BackImage[1][0][0][0][0][1]=halt_a.0.5
+BackImage[2][0][0][0][0][1]=halt_a.0.4
+BackImage[3][0][0][0][0][1]=halt_a.0.7
+icon=> halt_a.1.0
+cursor=halt_a.1.1
+-------------
+Obj=building
+Name=VictorianStation
+copyright=MHz
+type=station
+extension_building=1
+enables_pax=1
+NoInfo=1
+Level=4
+intro_year=1865
+# Order N,E,S,W
+Dims=2,1,2
+BackImage[0][0][1][0][0][0]=victorian_station_mhz.0.3
+BackImage[0][0][0][0][0][0]=victorian_station_mhz.0.2
+BackImage[1][0][0][0][0][0]=victorian_station_mhz.0.1
+BackImage[1][1][0][0][0][0]=victorian_station_mhz.0.0
+BackImage[0][0][1][0][0][1]=victorian_station_mhz.0.7
+BackImage[0][0][0][0][0][1]=victorian_station_mhz.0.6
+BackImage[1][0][0][0][0][1]=victorian_station_mhz.0.5
+BackImage[1][1][0][0][0][1]=victorian_station_mhz.0.4
+icon=> victorian_station_mhz.1.0
+cursor=victorian_station_mhz.1.3
+-------------
+Obj=building
+Name=Control_StationBlg
+copyright=MHz
+NoInfo=1
+type=station
+extension_building=1
+level=1
+BackImage[0][0][0][0][0][0]=player-station_blg.1.4
+BackImage[0][0][0][0][0][1]=player-station_blg.3.4
+icon=> player-station_blg.0.4
+cursor=player-station_blg.2.4
+---------------
+Obj=building
+Name=Vorplatz
+copyright=MHz
+NoInfo=1
+intro_year = 1871
+type=station
+enables_pax=1
+extension_building=1
+level=2
+Dims=1,1,2
+BackImage[0][0][0][0][0]=VorplatzMHz.0.1
+BackImage[1][0][0][0][0]=VorplatzMHz.0.0
+icon=> VorplatzMHz.0.2
+cursor=VorplatzMHz.0.4
+-------------
+Obj=building
+Name=Eingang
+copyright=MHz
+NoInfo=1
+intro_year = 1871
+type=station
+enables_pax=1
+extension_building=1
+level=4
+Dims=1,1,2
+BackImage[0][0][0][0][0]=VorplatzMHz.1.1
+BackImage[1][0][0][0][0]=VorplatzMHz.1.0
+icon=> VorplatzMHz.1.2
+cursor=VorplatzMHz.1.4
+-------------
