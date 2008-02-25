@@ -309,7 +309,6 @@ needs_ground=1
 intro_year=1905
 climates=tropic,mediterran,temperate,tundra,rocky,arctic
 BackImage[0][0][0][0][0][0]=res.3.7
-BackImage[0][0][0][0][0][1]=winter-res.3.7
 --------------------
 Obj=building
 Name=RES_12_08

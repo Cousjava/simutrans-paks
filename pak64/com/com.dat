@@ -387,8 +387,8 @@ Level=17
 chance=100
 intro_year=1965
 climates=tropic,mediterran,temperate
-BackImage[0][0][0][1][0][0]=com.6.8
-BackImage[0][0][0][0][0][0]=com.7.8
+BackImage[0][0][0][1][0][0]=com.6.7
+BackImage[0][0][0][0][0][0]=com.7.7
 --------------------
 Obj=building
 Name=COM_01_17
@@ -398,10 +398,10 @@ Level=17
 chance=100
 intro_year=1952
 climates=tropic,mediterran,temperate
-BackImage[0][0][0][1][0][0]=com.8.8
-BackImage[0][0][0][0][0][0]=com.9.8
-BackImage[0][0][0][1][0][1]=winter-com.8.8
-BackImage[0][0][0][0][0][1]=winter-com.9.8
+BackImage[0][0][0][1][0][0]=com.8.7
+BackImage[0][0][0][0][0][0]=com.9.7
+BackImage[0][0][0][1][0][1]=winter-com.8.7
+BackImage[0][0][0][0][0][1]=winter-com.9.7
 --------------------
 Obj=building
 Name=COM_02_17
@@ -424,8 +424,8 @@ chance=33
 intro_year=1961
 needs_ground=1
 climates=desert,tropic,mediterran,temperate,tundra,rocky,arctic
-BackImage[0][0][0][1][0][0]=com.6.9
-BackImage[0][0][0][0][0][0]=com.7.9
+BackImage[0][0][0][1][0][0]=com.6.8
+BackImage[0][0][0][0][0][0]=com.7.8
 ---
 Obj=building
 Name=COM_01_18
@@ -435,8 +435,8 @@ Level=19
 chance=100
 intro_year=1961
 climates=mediterran,temperate,tundra
-BackImage[0][0][0][1][0]=com.8.9
-BackImage[0][0][0][0][0]=com.9.9
+BackImage[0][0][0][1][0]=com.8.8
+BackImage[0][0][0][0][0]=com.9.8
 --------------------
 #Name=COM_00_19 skipped
 --------------------
