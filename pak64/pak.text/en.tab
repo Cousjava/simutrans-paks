@@ -5,7 +5,7 @@
 #                             Language: en English                             #
 #                                Encoding: ASCII                               #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 16.01 2008                           #
+#                           Date Created: 26.02 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                        Alexandre Frauenknecht - al_cff                       #
@@ -122,8 +122,6 @@ Town hall
 Town hall
 04_CITY_C
 Town hall
-10_WOHN
-Church\n
 1930AirDepot
 Air depot of 1930
 1headquarter
@@ -148,12 +146,12 @@ AirDepot
 Air depot of 1900
 AirportShed1930
 Airport shed for mail (1901)
+AirStop
+boarding bridge\n
 AirTerminal477
 Airport Terminal (1950)
 anfangShipStop
 quay end (S or E)
-ANIM_CINEMA
-Animation Cinema\n
 Avila_Big_StationBlg
 big station building
 Avila_Small_StationBlg
@@ -161,13 +159,17 @@ small station building
 Avila_Warehouse_StationBlg
 warehouse
 BigPostOffice
-Big post pffice
+Big post office
 BigTerminal477
 Big modern terminal
 Bulk_StationBlg
 coal station
+BusStop
+Bus stop\n
 CarDepot
 Depot for road vehicles
+CarStop
+Freight yard\n
 Car_StationBlg
 car shipment
 ChannelStop
@@ -176,12 +178,8 @@ COM_00_01
 Small shop\n
 COM_00_02
 Independent gas station\n\nIt's independent from the big\ntransportation companies\n(like yours), but there's no\nneed to remove it. It won't\ntake away any of your\nbusiness.\n
-COM_00_04
-Trikky's Park. This park is\nadjacent to a Uni, and\nmost days students of\nboth gender can be seen\nskiving among the trees.\n
 COM_00_05
 Drive through bank. It's\ncalled a drive through\nbecause you don't stop,\nand when you pass through\nyour wallet magically\nempties.The manager can\nusually be seen wringing his\nhands with glee.\n
-COM_00_07
-Small office building with\ncar park\n
 COM_00_08
 Apartment block with some\nshops.\n
 COM_00_10
@@ -190,40 +188,24 @@ COM_00_11
 Nova's Novelties. A very\nbright and colourful Novelty\nShop which sells\neverything from Wax Lamps\nto Grey Battleships. (Now\nthat's a novelty)\n
 COM_00_12
 Office Block\n
-COM_00_13
-This newly renovated hotel\nhides its construction in\nthe cubic 60ies.\n
 COM_00_14
 This building looks like an\nold style factory, but is in\nfact a highly organised\nillegal betting shop.\n
-COM_00_16
-Modern office building\n
 COM_00_18
 Modern office block\n
-COM_00_19
-Large modern office\nbuilding. The architect tried\nto make it look like the\nEmpire State Building, but\ncouldn't get planning\npermission to go any higher\nthan 10 stories.\n
-COM_00_20
-Office tower\n
-COM_00_21
-Barcelona grand hotel\n
 COM_00_22
 New UN building for Somalia.\n
-COM_00_23
-This very modern hotel\ncomplex has a Observatory\non the top floor. It was\nbuilt in Hollywood, so that\npatrons could look at\ndifferent types of stars.\n
 COM_01_01
 Hot Air Ballon take off and\nlanding site. This site is\nfrequented by a lot of\npoliticians, that's why you\ncan't see any gas bottles.\n
 COM_01_09
 Old cinema, Lots of old\nBlack & White movies\nshown here. It's very\npopoular with Charlie\nChaplin fans.\n
-COM_01_12
-Shopping mall Grey &\nGreyer. Buy a suite from\nhere and you can merge\ninto any background.\n
-COM_01_13
-A Triangulated Observatory.\nwhat for?? for observing\ntriangles of course.\n
 COM_01_17
 Medium office block\n
-COM_01_19
-Tall modern office block\n
-COM_02_15
-The faculty of mineralogy\nresides in the nice 60ies\nbuilding. They still teach\nmining engineers, although\nthere is no mini left around.\nTherefore, they excavate\nthe area below the\nbasesments and rejoice at\nthe high concentration of\nminerals in 300 years of city\ntrash.\n
-COM_10_03
-This old windmill used to be\nfor grinding corn, but now\nit's just an orniment.\n
+COM_02_19
+While the building itself is\nnot very notable its\nexternal elevator was soon\na tourist attraction. Even\nthough the tickets are\nexpensive, the real money\nis made by the kiosk next to\nthe queue for the elevator.\n
+COM_03_15
+Shortly before WWII this\ndepartment of the ministry\nof defense was errected,\ninfluenced be the futurists.\nUnfourtunately it was soon\nfound out that the\nferroconcrete was indeed\nmade to last a thousand\nyears. No way to beautify\nthis, even though today it is\nthe headquarter of a charity\norganisation.\n
+COM_04_15
+This office building has\nbeen retrofitted many\ntimes, as you can see by\nthe sattelite dish on the\ntop.  You will also notice a\nglass portion of the roof,\nwhich covers the swimming\npool three floors beneath. \nThe swimming pool has a\nslide, which is intended to\ninspire the computer\nprogrammers within, but\nunfortunately their mood is\noften wrecked when people\ndecide to take off their pants\nand sit on the glass roof.\n
 Control_StationBlg
 railway control centre
 DenkFlor
@@ -244,8 +226,6 @@ DenkVM
 Memorial\n\nThis monument is dedicated\nto Manfred 'VT Vienna'\nTomaschitz the famous\nengineer who designed\nmany superior rail vehicles.\n
 DenkVolker
 Memorial\n\nThis Stupa was built by Volker\nMeyer who improved\nSimutrans in many, many\nareas.\n
-DRIVEINCINEMA
-Drive-in cinema\n
 Eingang
 Entrance
 endShipStop
@@ -278,26 +258,14 @@ IND_00_05
 Water cistern\n
 IND_00_06
 Factory building\n
-IND_00_07
-A transformer station. \n\nNot to be confused with the\ntransfomer/generator\nstations for the game's\npower network.\n
-IND_00_08
-An old coal/steam power\nstation. Energy wasn't\ntransferred by electricity,\nbut by a system of wheels\nand transmission belts.\n
 IND_00_10
 Small factory\n
-IND_00_11
-Big factory\n
 IND_00_12
 Old machine factory\n
-IND_00_13
-Pottery Works\n
-IND_00_15
-Metal works\n
 IND_01_01
 Free parking. Some people\neven abandon their old\ncars here.\n
 IND_01_03
 Big gas tank\n
-IND_01_05
-Gas Tank\n\nLet's hope the hull is always\nstable enough to keep the\ngas inside.\n\n
 IND_01_08
 Fertilizer factory\n
 IND_01_09
@@ -348,8 +316,6 @@ RES_00_03
 Small house with garden\n
 RES_00_04
 Small house\n
-RES_00_05
-A medium house. Two\nfamilies can live here. Thin\nwalls make live sometimes\nnot that easy, especially\nsince the boy from next\ndoor got his drum set.\n(which he obviously can't\nplay.)\n
 RES_00_06
 A little fountain. Even if it\nis not so great as the one\nin Geneva, it is delighting\npeople walking around it,\nespecially in the\nsummertime.\n
 RES_00_07
@@ -364,24 +330,16 @@ RES_00_11
 Big house with garden\n
 RES_00_13
 Double house with garden\n
-RES_00_14
-Small apartments\n
-RES_00_15
-Small block of flats\n
 RES_00_16
 Old villa\n
 RES_00_17
 Even for old houses like\nthis, consumption-based\nheating cost billing existed\n- everyone had to pay for\nhis own firewood.\n
 RES_00_19
 Modern Appartments\n
-RES_00_20
-Flats tower\n
 RES_01_01
 Modern prefab house with a\nlarge room for the kid in the\nattic.\n
 RES_01_02
 A-Frame type house. Very\nstable, but with only a few\nwindows and walls, so it's\nnot really suitable for\npeople who like framed\npictures.\n
-RES_01_04
-Large detached house\n
 RES_01_07
 Large luxury house\n
 RES_01_08
@@ -390,16 +348,6 @@ RES_01_10
 Modern house\n
 RES_01_12
 Brick apartment building\n
-RES_01_13
-Flats\n
-RES_01_14
-Small luxury apartments\n
-RES_01_17
-Old style flats and shops\n
-RES_01_19
-Apartment tower\n
-RES_01_20
-Office block\n
 RES_02_16
 Luxury appartments with\npenthouse.\n
 rightShipStop
@@ -408,6 +356,8 @@ RUIN_0
 Medieval castle\n\nThis castle was becoming a\nruin, but parts of it have\nbeen reconstructed, and\nthe whole complex is a\nmuseum now.\nThe view over the landscape\nis fantastic, you just have to\nclimb lots of stairs to see it.\n
 SandStationMHz
 Stop without platform
+ShipStop
+Seaport\n
 STADIUM2
 Big stadium\n\nhosting all the international\nevents here.\n
 Tennis_Court
@@ -420,6 +370,8 @@ TowerMoistboy
 Airport tower (by Moistboy)
 TrainDepot
 Train depot
+TrainStop
+covered platform\n
 TrainStopMaglev
 Maglev station
 TrainStopMaglevIndicator
@@ -442,12 +394,6 @@ Motorrad
 Motor bike
 yellow_car
 Yellow car
-#___________________________________crossing____________________________________
-#___________________________________crossing____________________________________
-Crossing1
-Level crossing
-Crossing2
-Level crossing
 #____________________________________cursor_____________________________________
 #____________________________________cursor_____________________________________
 Baum
@@ -462,8 +408,6 @@ Signal
 Signals
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_fish_pond_details
-<title>Fish Pond Details</title>\n<h1>Fish Ponds</h1>\n<p>Pond is a body of water where even its deepest areas are reached by sunlight or where a human can walk across the entire body of water without being underneath. In some dialects of English, pond normally refers to small artificially created bodies of water.</p>\n<p>In medieval times in Europe, it was typical for many monasteries, castles, etc. (small, partly self-sufficient communities) to have fish ponds. These are still common in the East Asia (notably Japan), where koi carp may be kept.</p>\n<p>This pond is now used for breeding fish which can be later caught, transported, and processed to food. Swimming in it is forbidden.</p>\n<p>Pond works as extensive aquaculture based on local photosynthetical production, meaning that fish are not being fed by artificial food.</p>\n<p>Limiting for fish growth here is the available food supply by natural sources, commonly zooplankton feeding on pelagic algae or benthic animals, such as certain crustaceans and mollusks. Tilapia species filter feed directly on phytoplankton, which makes higher production possible. The photosynthetical production can be increased by fertilizing the pond water with artificial fertilizer mixtures, such as potash, phosphorus, nitrogen and micro elements. Because most fishes are carnivorous, they occupy a higher place in the trophic chain and therefore only a tiny fraction of primary photosynthetical production (typically 1%) will be converted into harvestable fish.</p>\n<p>As a result, without additional feeding the fish harvest will not exceed 200 kilograms of fish per hectare per year, equivalent to 1% of the gross photosynthetic production.</p>\n<p>In order to tap all available food sources in the pond, the aquaculturist will choose fish species which occupy different places in the pond ecosystem, e.g., a filter algae feeder such as tilapia, a benthic feeder such as carp or catfish and a zooplankton feeder (various carps) or submerged weeds feeder such as grass carp.</p>
 factory_Kohlegrube_details
 <title>About Coalmines</title><h1>Coalmines</h1><p>In coal mines the miners dig for coal. This is hard labour, but the coal is needed for such important industreis like iron foundries and power plants.<p>
 factory_Kohlekraftwerk_details
@@ -492,8 +436,6 @@ Autohaus
 Car shop
 Autohersteller
 Car factory
-bakery
-Bakery
 Buchgrosshandel
 Book wholesaler
 ChemicalPlant
@@ -502,22 +444,10 @@ CHEMIST
 Chemist
 Concretefactory
 Concrete factory
-cow_farm
-Cattle ranch
 Druckerei
 Printing works
 Erzbergwerk
 Iron ore mine
-fish_pond
-Fish Pond
-fish_swarm
-Fish Swarm
-food_processing_plant
-Food Processing Plant
-grain_farm
-Grain farm
-grain_mill
-Grain mill
 Kohlegrube
 Coal mine
 Kohlekraftwerk
@@ -544,8 +474,6 @@ Raffinerie
 Refinery (Plastics)
 Saegewerk
 Sawmill
-scrap_yard
-Scrap Yard
 Stahlwerk
 Iron foundry
 TANKE
@@ -560,18 +488,14 @@ Bretter
 Planks
 Buecher
 Books
-canned_food
-canned food
 Cement
 Cement
 Chemicals
 Chemicals
 Concrete
-Concrete
+Cement
 Eisenerz
 Iron ore
-food
-convenience food
 Gasoline
 Gasoline
 Holz
@@ -636,6 +560,8 @@ CATEGORY_05
 fluid foods
 CATEGORY_06
 woods
+CATEGORY_07
+powder/pellets
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 ChooseSignals
@@ -660,24 +586,14 @@ traffic_light
 Traffic lights
 #____________________________________symbol_____________________________________
 #____________________________________symbol_____________________________________
-AirStop
-boarding bridge
 Builder
 Bulldozer
-BusStop
-Bus stop
-CarStop
-Freight yard
 MessageOptions
 Message Options
 Passagiere
 passengers
 Post
 Mail
-ShipStop
-Seaport
-TrainStop
-covered platform
 Waren
 Goods
 #_____________________________________tree______________________________________
@@ -734,38 +650,24 @@ H-Trans BR212
 H-Trans BR103
 1Garrat
 Garratt
-1Schienenbus
-H-Trans/TPI VT95
 1TPEllok
 F7 A
 2Ben155
 Deutsche Bahn BR 155
-2Dampflokomotive
-H-Trans 4-6-0
 2Diesellokomotive
 German Railways class 218
 2Ellok
 H-Trans Tigress I
 2Garrat
 Garratt (middle)
-2TPEllok
-BR Class 86/2
 3Ben185
 Bennhardt BR185
 3Diesellokomotive
 H-Trans BR365
 3Garrat
 Garratt (rear)
-4Ben204
-Bennhardt BR204
-5Ben220
-Bennhardt BR220
-6Ben228
-Bennhardt BR228
 707
 Boeing 707
-7BenE11
-Bennhardt E11
 A3-5
 Swiss federal Railways A 3/5
 A3-5_tender
@@ -782,8 +684,6 @@ Autotransportwagen
 TPI Lopomo Car transport waggon
 Be5-7
 BLS Be 5/7
-Beiwagen
-H-Trans/TPI VT95 Pass. coach
 Book_Trike
 Parcel delivery trike
 Bretteranhaenger
@@ -810,16 +710,6 @@ Cargosprinter-Mittel
 Cargosprinter freight car
 Cargosprinter-Steuer
 Cargosprinter rear engine
-Cementanhaenger
-WF Ultd. Cement trailer
-Cementtransporter
-WF Ultd. Cement truck
-Cementwagen
-WF Ultd. Cement waggon
-ColinBigFerry
-ferry Colin
-ColinFastFerry
-Colin's fast ferry
 Comet
 De Havilland 'Comet'
 Concept1Front
@@ -840,22 +730,6 @@ Concept2Rear
 Concept 2 Rear Engine
 Concorde
 Concorde
-Concretetransporter
-WF Ultd. Concrete truck
-Concretewagen
-WF Ultd. Concrete waggon
-Cooling_Waggon
-Food cooling waggon
-Deponielaster
-Garbage truck I
-Deponielaster2
-Garbage truck II
-DM8_CAR
-TPI Dm8 Passenger coach
-DM8_LOK1
-TPI Dm8 Front engine
-DM8_LOK2
-TPI Dm8 Rear engine
 Eb3-5
 Swiss federal Railways Eb 3/5
 EinheitsTender
@@ -872,8 +746,6 @@ F7back
 F7 A rear engine
 FastFerry
 O.Bang Fast Ferry (hovercraft)
-Fishing_Boat_DanMacK
-Fishing boat
 Fokker_F27
 Fokker F27
 H-Trans-Pantheress
@@ -896,8 +768,6 @@ Hochbordwagen
 Coal waggon (18t)
 Holzanhaenger
 JET Wood trailer
-Holzschiff
-TPI/JET Wood ship
 Holztrailer
 Wood semitrailer
 Holztransporter
@@ -920,16 +790,12 @@ HVPosttransporter
 DIBU/H-Trans Mail van
 ICE_TD-front
 ICE-TD
-Ik26
-Serj Ikarus-260
 JNR_C11
 JNR C11 (2-6-4T)
 JumboJet
 Boeing 747 "Jumbo Jet"
 Kohleanhaenger
 H-Trans Trailer MK2
-Kohleschiff
-WF Ultd. Freight ship
 Kohletransporter
 H-Trans Truck
 Kohlewagen
@@ -938,36 +804,20 @@ Kunststofanhaenger
 H-Trans Plastics trailer
 Kunststofftransporter
 H-Trans Plastics truck
-Li6
-Serj LiAZ-677
 Lockhead_Tristar
 Lockheed Tristar
-MJHN_Avocet
-MJHN Avocet
-MJHN_Deltic
-BR Class 55 'Deltic'
-Moebelanhaenger
-WF Ultd. Furniture trailer
 Moebelschiff
 TPI/JET Goods ship
-Moebeltransporter
-WF Ultd. goods van
 Moebelwagen
 VT Vienna light freight car
-Muellschiff
-Ship for Waste Transportation
 NeuOelwagen
 Oil waggon (80t)
 Oelanhaenger
 H-Trans Oil tanker trailer
-Oeltankschiff
-TPI Lopomo Oil tanker
 Oelwagen
 VT Vienna Oil tanker
 Oiltrailer
 Oil semitrailer
-OJetKunstoffschiff
-JET Plastics ship
 OldOil
 Oil waggon (18t)
 Papieranhaenger
@@ -994,26 +844,14 @@ PrPostwagen
 Post/Luggage Waggon I
 RenaultTH5
 Renault TH5
-S220_CAR
-TPI S220 Passenger coach
-S220_LOK1
-TPI S220 Front engine
-S220_LOK2
-TPI S220 Rear engine
 Sandanhaenger
 WF Ultd. Sand trailer
 Sandtransporter
 WF Ultd. truck
-Sandwagen
-WF Ultd./H-Trans Sand waggon
 schooner
 Nova Scotia Schooner
 SD40-2-front
 SD40-2
-Serj-Mini
-Serj Maxi-Taxi
-Serj_Gaz-4_Goods_Truck
-Serj Gaz-4 Goods Truck
 SlowFerry
 H-Trans Passenger Ferry
 SMPoiltruck
@@ -1030,22 +868,14 @@ Stoneanhaenger
 WF Ultd. Stone trailer
 Stonetransporter
 WF Ultd. truck MK2
-Stonewagen
-WF Ultd./H-Trans Stone waggon
 SuperConstellation
 Super Constellation
 Tanklastzug
 H-Trans Oil tanker
 Tatra-T4
 Tatra T4
-TENDER
-TPI Tender
 TPBeiwagen
 TPI VT98 Passenger coach
-TPDiesel
-BR Class 26
-TPI_Std_2-6-4T
-TPI Std 2-6-4T
 TPPassagierwagen
 TPI Lopomo Passenger coach
 TPSchienenbus

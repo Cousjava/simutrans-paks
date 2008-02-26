@@ -5,7 +5,7 @@
 #                             Language: sv Svenska                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 16.01 2008                           #
+#                           Date Created: 26.02 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                Ewa Wiman - ewa                               #
@@ -18,8 +18,6 @@
 #___________________________________building____________________________________
 01_CITY
 Stadshus
-10_WOHN
-Kyrka (av Trikky)\n
 A1_ALTE_KIRCHE
 En berömd gammal  kyrka. Alla \nborde få se  den här\nfantastiska  byggnaden.\n
 A2_SCHLOSS1
@@ -32,8 +30,6 @@ A5_STONEHENGE
 En urgammal ring  av stenar. \nVäldigt mystiskt!\n
 A6_DOME
 Den här vackra  gamla\nkatedralen  är en riktig \nattraktion.\n
-ANIM_CINEMA
-Stor biograf (av Trikky)\n
 DenkFlor
 Det här monumentet tillägnas\nFlor 'WF Ultd.' Wauters, den\nberömde ingenjören som\nskapade så många bra väg- och\ntågfordon. Han är också\nvälkänd för att ha designat\nmånga väl fungerande fabriker.\n
 DenkOwen
@@ -46,8 +42,6 @@ DenkVM
 Det här monumentet tillägnas\nManfred 'VT Wien' Tomaschitz,\nden berömde ingenjören som\ndesignade många otroligt bra\ntågfordon.\n
 DenkVolker
 Det här monumentet tillägnas\nVolker Meyer, som\nförbättrade Simutrans på\nmånga, många sätt.\n
-DRIVEINCINEMA
-Drive-in bio\n
 Windmill
 Väderkvarn\n
 #____________________________________cursor_____________________________________
@@ -164,40 +158,24 @@ H-Trans 0-4-0T (ånga)
 H-Trans BR212 (diesel)
 1Ellok
 H-Trans BR103 (el)
-1Schienenbus
-H-Trans/TPI VT95 (dmu)
 1TPEllok
 TPI F7A (diesel)
 2Ben155
 Bennhardt BR155 (el)
-2Dampflokomotive
-H-Trans 4-6-0 (ånga)
 2Diesellokomotive
 H-Trans BR218 (diesel)
 2Ellok
 H-Trans Tigress I (el)
-2TPEllok
-TPI Class 86/2 (el)
 3Ben185
 Bennhardt BR185 (el)
 3Diesellokomotive
 H-Trans BR365 (diesel)
-4Ben204
-Bennhardt BR204 (diesel)
-5Ben220
-Bennhardt BR220 (diesel)
-6Ben228
-Bennhardt BR228 (diesel)
-7BenE11
-Bennhardt E11 (el)
 Autotransportanhaenger
 H-Trans Biltransporttrailer
 Autotransporter
 H-Trans Biltransport
 Autotransportwagen
 TPI Lopomo Biltransportvagn
-Beiwagen
-H-Trans/TPI VT95 Passagerarvagn
 Bretteranhaenger
 WF Ultd. Brädtrailer
 Brettertransporter
@@ -212,26 +190,6 @@ Buchwagen
 VT Wien Bokvagn
 Bus
 H-Trans Buss
-Cementanhaenger
-WF Ultd. Cementtrailer
-Cementtransporter
-WF Ultd. Cementtankbil
-Cementwagen
-WF Ultd. Cementtankvagn
-ColinBigFerry
-Colin Storfärja
-ColinFastFerry
-Colin Snabbfärja
-Concretetransporter
-WF Ultd. Betongtankbil
-Concretewagen
-WF Ultd. Betongtankvagn
-DM8_CAR
-TPI Dm8 Passagerarvagn
-DM8_LOK1
-TPI Dm8 främre lok (dmu)
-DM8_LOK2
-TPI Dm8 bakre lok (dmu)
 Erzanhaenger
 H-Trans Järnmalmstrailer
 Erztransporter
@@ -242,8 +200,6 @@ FastFerry
 O.Bang Snabbfärja (svävare)
 Holzanhaenger
 JET Timmertrailer
-Holzschiff
-TPI/JET Timmerskepp
 Holztransporter
 H-Trans Timmerbil
 Holzwagen
@@ -260,12 +216,8 @@ Horsewoodcariage
 Häst - Timmervagn
 HVPosttransporter
 DIBU/H-Trans Postbil
-Ik26
-Serj Ikaros-260
 Kohleanhaenger
 H-Trans Koltrailer
-Kohleschiff
-WF Ultd. Kolskepp
 Kohletransporter
 H-Trans Kolbil
 Kohlewagen
@@ -274,24 +226,14 @@ Kunststofanhaenger
 H-Trans Plasttrailer
 Kunststofftransporter
 H-Trans Plastbil
-Li6
-Serj LiAZ-677
-Moebelanhaenger
-WF Ultd. Möbeltrailer
 Moebelschiff
 WF Ultd. Möbelskepp
-Moebeltransporter
-WF Ultd. Möbelbil
 Moebelwagen
 VT Wien Möbelvagn
 Oelanhaenger
 H-Trans Oljetanktrailer
-Oeltankschiff
-TPI Lopomo Oljetanker
 Oelwagen
 VT Wien Oljetankvagn
-OJetKunstoffschiff
-JET Plastskepp
 Papieranhaenger
 Trikky Papperstrailer
 Papiertransporter
@@ -306,20 +248,10 @@ Posttransporter
 H-Trans Postbil
 Postwagen
 H-Trans Post/Baggagevagn
-S220_CAR
-TPI S220 Passagerarvagn
-S220_LOK1
-TPI S220 främre lok (emu)
-S220_LOK2
-TPI S220 bakre lok (emu)
 Sandanhaenger
 WF Ultd. Grustrailer
 Sandtransporter
 WF Ultd. Grusbil
-Sandwagen
-WF Ultd./H-Trans Grusvagn
-Serj-Mini
-Serj Maxi-Taxi
 SlowFerry
 H-Trans Passagerarfärja
 Stahlanhaenger
@@ -334,16 +266,10 @@ Stoneanhaenger
 WF Ultd. Stentrailer
 Stonetransporter
 WF Ultd. Stenbil
-Stonewagen
-WF Ultd./H-Trans Stenvagn
 Tanklastzug
 H-Trans Oljetankbil
-TENDER
-TPI Tender
 TPBeiwagen
 TPI VT98 Passagerarvagn
-TPDiesel
-TPI Class 26 (diesel)
 TPPassagierwagen
 TPI Passagerarvagn
 TPSchienenbus

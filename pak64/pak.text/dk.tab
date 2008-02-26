@@ -5,7 +5,7 @@
 #                              Language: dk Dansk                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 16.01 2008                           #
+#                           Date Created: 26.02 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                      Michael Bisbjerg - michaelbisbjerg                      #
@@ -28,8 +28,6 @@ Byg jernbanebro (stål)
 Rådhus
 04_CITY
 Rådhus
-10_WOHN
-Kirke (af Trikky)\n
 A1_ALTE_KIRCHE
 En berømt gammel  kirke. Alle \nbør besøge denne fantastiske \nbygning.\n
 A2_SCHLOSS1
@@ -42,8 +40,6 @@ A5_STONEHENGE
 En hemmelighedsfuld stenring.\nUrgammel og fuld af mystik!\n
 A6_DOME
 Denne vidunderlige gamle\nkatedral er en rigtig attraktion.\n
-ANIM_CINEMA
-Biografcenter (af Trikky)\n
 DenkFlor
 Dette monument tilegnes Flor\n'WF Ultd.' Wauters, den\nberømte ingeniør som skabte så\nmange glimrende køretøjer. Han\ner ligeledes kendt for at have\ndesignet mange velfungerende\nfabrikker.\n
 DenkOwen
@@ -58,8 +54,6 @@ DenkVM
 Dette monument tilegnes\nManfred 'VT Wien' Tomaschitz,\nden berømte ingeniør som\ndesignede mange utrolig gode\ntoge.\n
 DenkVolker
 Dette monument tilegnes\nVolker Meyer, som\nforbedrede Simutrans på\nmange, mange måder.\n
-DRIVEINCINEMA
-Drive-in bio\n
 RUIN_0
 En prægtig, gammel borgruin.\nKom forbi og mærk historiens\nvingesus!\n
 STADIUM2
@@ -204,40 +198,24 @@ H-Trans 0-4-0T (damp)
 H-Trans BR212 (diesel)
 1Ellok
 H-Trans BR103 (el)
-1Schienenbus
-H-Trans/TPI VT95 (dmu)
 1TPEllok
 TPI F7A (diesel)
 2Ben155
 Bennhardt BR155 (el)
-2Dampflokomotive
-H-Trans 4-6-0 (damp)
 2Diesellokomotive
 H-Trans BR218 (diesel)
 2Ellok
 H-Trans Tigress I (el)
-2TPEllok
-TPI Class 86/2 (el)
 3Ben185
 Bennhardt BR185 (el)
 3Diesellokomotive
 H-Trans BR365 (diesel)
-4Ben204
-Bennhardt BR204 (diesel)
-5Ben220
-Bennhardt BR220 (diesel)
-6Ben228
-Bennhardt BR228 (diesel)
-7BenE11
-Bennhardt E11 (el)
 Autotransportanhaenger
 H-Trans Biltransportanhænger
 Autotransporter
 H-Trans Biltransport
 Autotransportwagen
 TPI Lopomo Biltransportvogn
-Beiwagen
-H-Trans/TPI VT95 Passagervogn
 Bretteranhaenger
 WF Ultd. Bræddeanhænger
 Brettertransporter
@@ -252,28 +230,6 @@ Buchwagen
 VT Wien Bogvogn
 Bus
 H-Trans Bus
-Cementanhaenger
-WF Ultd. Cementanhænger
-Cementtransporter
-WF Ultd. Cementtankbil
-Cementwagen
-WF Ultd. Cementtankvogn
-ColinBigFerry
-Colin Storfærge
-ColinFastFerry
-Colin Hurtigfærge
-ColinMotorBus
-Colin motorbus
-Concretetransporter
-WF Ultd. Betontankbil
-Concretewagen
-WF Ultd. Betontankvogn
-DM8_CAR
-TPI Dm8 Passagervogn
-DM8_LOK1
-TPI Dm8 Motorvogn front (dmu)
-DM8_LOK2
-TPI Dm8 Motorvogn bag (dmu)
 Erzanhaenger
 H-Trans Jernmalmsanhænger
 Erztransporter
@@ -294,8 +250,6 @@ H-Trans-Tigress-II-Front
 H-Trans-Tigress-II front
 Holzanhaenger
 JET Tømmeranhænger
-Holzschiff
-TPI/JET Tømmerfragter
 Holztransporter
 H-Trans Tømmerbil
 Holzwagen
@@ -312,18 +266,10 @@ Horsewoodcariage
 Hest - Tømmervogn
 HVPosttransporter
 DIBU/H-Trans Postbil
-Ik26
-Serj Ikaros-260
-IL-209S_Goods_Trailer
-IL-209S Stykgodsanhænger
-IL-209S_Goods_Truck
-IL-209S Stykgodstransport
 JNR_C11
 JNR C11 (2-6-4T)
 Kohleanhaenger
 H-Trans Kulanhænger
-Kohleschiff
-WF Ultd. Bulkgodsfragter
 Kohletransporter
 H-Trans Kulbil
 Kohlewagen
@@ -332,24 +278,14 @@ Kunststofanhaenger
 H-Trans Plastanhænger
 Kunststofftransporter
 H-Trans Plastbil
-Li6
-Serj LiAZ-677
-Moebelanhaenger
-WF Ultd. Møbelanhænger
 Moebelschiff
 WF Ultd. Stykgodsfragter
-Moebeltransporter
-WF Ultd. Møbeltransport
 Moebelwagen
 VT Wien Møbelvogn
 Oelanhaenger
 H-Trans Olietankanhænger
-Oeltankschiff
-TPI Lopomo Olietanker
 Oelwagen
 VT Wien Olietankvogn
-OJetKunstoffschiff
-JET Plastfragter
 Papieranhaenger
 Trikky Papiranhænger
 Papiertransporter
@@ -364,22 +300,10 @@ Posttransporter
 H-Trans Postbil
 Postwagen
 H-Trans Post/Baggagevogn
-S220_CAR
-TPI S220 Passagervogn
-S220_LOK1
-TPI S220 Motorvogn front (emu)
-S220_LOK2
-TPI S220 Motorvogn bag (emu)
 Sandanhaenger
 WF Ultd. Grusanhænger
 Sandtransporter
 WF Ultd. Grustransport
-Sandwagen
-WF Ultd./H-Trans Grusvogn
-Serj-Mini
-Serj Maxi-Taxi
-Serj_Gaz-4_Goods_Truck
-Serj_Gaz-4 Stykgodstransport
 SlowFerry
 H-Trans Passagerfærge
 Stahlanhaenger
@@ -394,16 +318,10 @@ Stoneanhaenger
 WF Ultd. Stenanhænger
 Stonetransporter
 WF Ultd. Stentransport
-Stonewagen
-WF Ultd./H-Trans Stenvogn
 Tanklastzug
 H-Trans Olietankbil
-TENDER
-TPI Tender
 TPBeiwagen
 TPI VT98 Passagervogn
-TPDiesel
-TPI Class 26 (diesel)
 TPPassagierwagen
 TPI Passagervogn
 TPSchienenbus

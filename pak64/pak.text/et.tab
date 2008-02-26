@@ -5,7 +5,7 @@
 #                              Language: et Eesti                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 16.01 2008                           #
+#                           Date Created: 26.02 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Kaspar Kask - kasskaspu                           #
@@ -56,8 +56,6 @@ Raekoda
 Raekoda
 04_CITY_C
 Raekoda
-10_WOHN
-Kirik\n
 1930AirDepot
 Angaar aastast 1930
 1headquarter
@@ -82,12 +80,12 @@ AirDepot
 Angaar aastast 1900
 AirportShed1930
 Lennujaama kirjakuur (1901)
+AirStop
+lennukisild\n
 AirTerminal477
 Lennujaama terminal (1950)
 anfangShipStop
 Sadam
-ANIM_CINEMA
-Kino\n
 Avila_Big_StationBlg
 Suur jaamahoone
 Avila_Small_StationBlg
@@ -96,46 +94,32 @@ Avila_Warehouse_StationBlg
 ladu
 Bulk_StationBlg
 söejaam
+BusStop
+bussipeatus\n
 CarDepot
 garaa?
+CarStop
+parkla\n
 Car_StationBlg
 autoparkla
 ChannelStop
 kai
 COM_00_01
 Väike pood\n
-COM_00_04
-Trikky park\n
 COM_00_05
 läbisõidupank\n
-COM_00_07
-Väike büroohoone parklaga\n
 COM_00_08
 Kortermaja poodidega\n
 COM_00_10
 Keskmine büroohoone\n
 COM_00_12
 Büroohoone\n
-COM_00_13
-See hiljaaegu renoveeritud\nhotell peidab endas\n60ndate kontruktsiooni.\n
-COM_00_16
-Moodne büroohoone\n
 COM_00_18
 Moodne büroohoone\n
-COM_00_19
-Suur moodne büroohoone\n
-COM_00_20
-Bürootorn\n
-COM_00_21
-Barcelona Grand hotell\n
 COM_01_09
 Vana kino\n
-COM_01_12
-Grey & Greyer\nkaubanduskeskus\n
 COM_01_17
 Keskmine büroohoone\n
-COM_01_19
-Kõrge moodne büroohoone\n
 MHzSmallStation
 Jaamaehitis (MHz-ilt)
 midleShipStop
@@ -164,8 +148,6 @@ RES_00_03
 Väike aiaga maja\n
 RES_00_04
 Väike maja\n
-RES_00_05
-Keskmise suurusega maja.\nKaks perekonda võivad siin\nelada. Õhukesed seinad\nteevad elu mõnikord\nraskeks, eriti sest poiss\nkõrvalkorterist sai trummi,\nmida ta ilmselt mängida ei saa.\n
 RES_00_06
 Väike purskkaev. Kuigi see\nei ole nii suur kui Genevas,\nsee rõõmustab inimesi kes\nselle ümber käivad, eriti\nsuvel.\n
 RES_00_07
@@ -180,22 +162,14 @@ RES_00_11
 Suur maja aiaga\n
 RES_00_13
 Topeltmaja aiaga\n
-RES_00_14
-Väike kortermaja\n
-RES_00_15
-Väike kortermaja\n
 RES_00_16
 Vana villa\n
 RES_00_19
 Moodsad korterid\n
-RES_00_20
-Kortermaja\n
 RES_01_01
 Moodne paneelmaja suure\ntoaga pööningul lapse\njaoks.\n
 RES_01_02
 A-Frame tüüpi maja\n
-RES_01_04
-Suur eraldatud maja\n
 RES_01_07
 Suur luksmaja\n
 RES_01_08
@@ -204,16 +178,6 @@ RES_01_10
 Moodne maja\n
 RES_01_12
 Kortermaja\n
-RES_01_13
-Kortermaja\n
-RES_01_14
-Väikesed lukskorterid\n
-RES_01_17
-Vanas stiilis korterid ja\npoed\n
-RES_01_19
-Kortermaja\n
-RES_01_20
-Büroohoone\n
 RES_02_16
 Lukskorterid varikatusega\n
 Tennis_Court
@@ -256,14 +220,8 @@ Autohaus
 Autopood
 Autohersteller
 Autotehas
-bakery
-Pagar
-brewery
-Õlletehas
 Buchgrosshandel
 Raamatupood
-cannery
-konservitsehh
 Cementmill
 tsemenditehas
 ChemicalPlant
@@ -292,8 +250,6 @@ Tuuleelektrijaam
 #_____________________________________good______________________________________
 Autos
 Autod
-beer
-Õlu
 Bretter
 Plangud
 Buecher
@@ -338,14 +294,8 @@ traffic_light
 Valgusfoor
 #____________________________________symbol_____________________________________
 #____________________________________symbol_____________________________________
-AirStop
-lennukisild
 Builder
 buldooser
-BusStop
-bussipeatus
-CarStop
-parkla
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Latschenkiefer
@@ -366,36 +316,22 @@ H-Trans 0-4-0T
 H-Trans BR212
 1Ellok
 H-Trans BR103
-1Schienenbus
-H-Trans/TPI VT95
 1TPEllok
 F7 A
 221A
 Vedur
 2Ben155
 Deutsche Bahn BR 155
-2Dampflokomotive
-H-Trans 4-6-0
 2Diesellokomotive
 German Railways class 218
 2Ellok
 H-Trans Tigress I
-2TPEllok
-BR Class 86/2
 3Ben185
 Bennhardt BR185
 3Diesellokomotive
 H-Trans BR365
-4Ben204
-Bennhardt BR204
-5Ben220
-Bennhardt BR220
-6Ben228
-Bennhardt BR228
 707
 Boeing 707
-7BenE11
-Bennhardt E11
 A3-5
 Swiss federal Railways A 3/5
 A3-5_tender
@@ -410,8 +346,6 @@ Autotransportwagen
 TPI Lopomo autotranspordivagun
 Be5-7
 BLS Be 5/7
-Beiwagen
-H-Trans/TPI VT95 reisijatevagun
 Bretteranhaenger
 WF Ultd. Plangutreiler\n
 Brettertransporter
@@ -432,42 +366,20 @@ Buessig
 Buss
 Bus
 H-Trans Buss
-Cementanhaenger
-WF Ultd. tsemenditreiler
 Cementtrailer
 tsemenditreiler
-Cementtransporter
-WF Ultd. tsemendiveoauto
-Cementwagen
-WF Ultd. tsemendivagun
-ColinBigFerry
-praam Colin
 Horsemailcariage
 Hobupostivanker
-MJHN_Avocet
-MJHN Avocet
-MJHN_Deltic
-BR Class 55 'Deltic'
-Moebelanhaenger
-WF Ultd. Mööblitreiler
 Moebelschiff
 TPI/JET kaubalaev
-Moebeltransporter
-WF Ultd. kaubaauto
 Moebelwagen
 VT Vienna kerge kauba auto
-Muellschiff
-Jäätmeveoks kasutatav laev
 Oelanhaenger
 H-Trans õlitankeri treiler
-Oeltankschiff
-TPI Lopomo õlitanker
 Oelwagen
 VT Vienna õlitanker
 Oiltrailer
 Nafta poolhaagis
-OJetKunstoffschiff
-JET Plastmassilaev
 Papieranhaenger
 Trikky Paberitreiler
 Papiertransporter
@@ -484,14 +396,8 @@ PrPostwagen
 Posti/pagasivagun I
 RenaultTH5
 Renault TH5
-TENDER
-TPI Tender
 TPBeiwagen
 TPI VT98 Reisivagun
-TPDiesel
-BR Class 26
-TPI_Std_2-6-4T
-TPI Std 2-6-4T
 TPPassagierwagen
 TPI Lopomo reisivagun
 TPSchienenbus

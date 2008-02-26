@@ -5,7 +5,7 @@
 #                             Language: fr Francais                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 16.01 2008                           #
+#                           Date Created: 26.02 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                        Alexandre Frauenknecht - al_cff                       #
@@ -66,8 +66,6 @@ Mairie
 Mairie
 04_CITY_C
 Mairie
-10_WOHN
-Église\n
 1930AirDepot
 Hangar de 1930
 1headquarter
@@ -90,12 +88,14 @@ A6_DOME
 Cathédrale\n\nCette magnifique vieille\ncathédrale est une\nvéritable attraction.\n
 AirDepot
 Hangar
-ANIM_CINEMA
-Salle de cinéma\\n(par Trikky)\\n\n
+AirStop
+Passerelle d'embarquement\n
 BigPostOffice
 Grand Bureau De Poste
 BigTerminal477
 Grand Terminal
+BusStop
+Arrêt de bus\n
 CarDepot
 Depôt pour des véhicules routiers
 Car_StationBlg
@@ -108,42 +108,24 @@ COM_00_02
 Station service.\n\nAttention, les prix y sont\nexorbitants!\n
 COM_00_03
 Maboulle.\n\nUn bar-billard très branché.\n
-COM_00_04
-Parc de Trikky\n
 COM_00_05
 Petite banque.\n\nCette banque n'est, ma foi,\npas très sure. Les hold-up\ny sont monaie courante.\n
-COM_00_07
-Siège de Mangétomédo.\n\nDans ce bâtiment vous\ntrouverez le siège mondial\nd'une multinationale\npharmaceutique. Attention,\nc'est rempli d'escrots.\n
 COM_00_08
 Appartements avec des\nmagasins.\n
 COM_00_10
 Petit bloc de bureaux avec\nparking\n
 COM_00_12
 Immeuble de bureaux\n
-COM_00_13
-Hôtel 3 étoiles.\n\nLe service y est passable,\nmais on y dort très mal: les\nlits sont en béton.\n
 COM_00_14
 Ce bâtiement ressemble à\nune usine, mais il s'agit en\nfait d'un entrepôt pour le\ntraffic illégale de livres de\nprières.\n
-COM_00_16
-Bâtiment moderne de\nbureaux\n
 COM_00_18
 Bureaux moderne\n
-COM_00_19
-Grand bâtiment de bureaux\n
-COM_00_20
-Tour de bureaux\n
-COM_00_21
-Grand hotel "Bétapalmier"\n
 COM_00_22
 Bureaux de l'ONU, sorte\nd'embassade pour la région\n
 COM_01_09
 Vieux cinéma\n
-COM_01_12
-Petit centre commercial\n
 COM_01_17
 Immeuble de bureau\n
-COM_01_19
-Hauts bureaux modernes\n
 DenkFlor
 Monument\n\nCe monument est dédié à\nFlor 'WF Ultd.' Wauters, le\ncélèbre ingénieur qui créa\ntant de véhicules\nferroviaires et routiers. Il\nest aussi connu pour avoir\nréalisé de belles usines.\n
 DenkHajo
@@ -162,8 +144,6 @@ DenkVM
 Monument\n\nCe monument est dédié à\nManfred 'VT Vienna'\nTomaschitz le célèbre\ningénieur qui réalisa le\ndesign de nombreux\nvéhicules ferroviaires.\n
 DenkVolker
 Monument\n\ncette sculpture fut contruite\npar Volker Meyer qui a\nperfectionné Simutrans\ndans tant et tant de\ndomaines.\n
-DRIVEINCINEMA
-Cinéma Drive-in\n
 Eingang
 Entrée
 FreightTrainStop
@@ -174,8 +154,6 @@ IND_01_01
 Parking Gratuit\n\nIl y a même quelques\npersonnes qui abandonnent\nleur voiture ici.\n
 IND_01_03
 Grand Réservoir De Gaz\n
-IND_01_05
-Réservoir De Gaz\n\nEspérons que la coque soit assez\nrésistante que pour garder\nle gaz à l'intérieur.\n
 IND_01_08
 Fabrique D'Engrais\n
 IND_01_10
@@ -210,14 +188,6 @@ RES_00_11
 Grande maison avec jardin\n
 RES_00_13
 Maisons mitoyennes avec\njardins\n
-RES_00_14
-Petits appartements\n
-RES_00_15
-Petit bloc d'appartements\n
-RES_00_20
-Tour d'appartements\n
-RES_01_04
-Grande maison\n
 RES_01_07
 Grande maison luxueuse\n
 RES_01_08
@@ -226,14 +196,6 @@ RES_01_10
 Maison moderne\n
 RES_01_12
 Immeuble en briques\n
-RES_01_13
-Appartements\n
-RES_01_14
-Petits appartements\nluxueux\n
-RES_01_17
-Appartements et magasins\nà l'ancienne\n
-RES_01_19
-Tour d'appartements\n
 ShipDepot
 chantier naval
 STADIUM2
@@ -246,12 +208,6 @@ Moulin à vent\n
 #____________________________________citycar____________________________________
 Ambulanz
 Ambulance
-#___________________________________crossing____________________________________
-#___________________________________crossing____________________________________
-Crossing1
-Passage à niveau
-Crossing2
-Passage à niveau
 #____________________________________cursor_____________________________________
 #____________________________________cursor_____________________________________
 Baum
@@ -266,14 +222,8 @@ Autohaus
 Concessionnaire auto
 Autohersteller
 Usine de voitures
-bakery
-Boulangerie
-brewery
-Brasserie
 Buchgrosshandel
 Grossiste en livres
-cannery
-Conserverie
 Cementmill
 Cimenterie
 ChemicalPlant
@@ -282,24 +232,10 @@ CHEMIST
 Pharmacie
 Concretefactory
 Fabrique de béton
-cow_farm
-Ferme d'élevage
-dairy
-Laiterie
 Druckerei
 Imprimerie
 Erzbergwerk
 Mine de fer
-fish_pond
-Pisciculture
-fish_swarm
-Banc de poisson
-food_processing_plant
-Usine agroalimentaire
-grain_farm
-Ferme de culture
-grain_mill
-Meunerie
 Kohlegrube
 Mine de charbon
 Kohlekraftwerk
@@ -330,8 +266,6 @@ Stahlwerk
 Aciérie
 Stonequarry
 Carrière de pierre
-supermarket
-Supermarché
 TANKE
 Station-service
 Windkraftwerk
@@ -340,14 +274,10 @@ Eolienne
 #_____________________________________good______________________________________
 Autos
 Voitures
-beer
-Bière
 Bretter
 Planches
 Buecher
 Livres
-canned_food
-Conserves
 Cement
 Ciment
 Chemicals
@@ -356,26 +286,14 @@ Concrete
 Béton
 Eisenerz
 Minerai
-fish
-Poisson
-flour
-Farine
-food
-Plats cuisinés
 Gasoline
 Carburant
-grain
-Céréales
 Holz
 Bois
 Kohle
 Charbon
-meat
-Viande
 Medicine
 Medecine
-milk
-Lait
 Moebel
 Meuble
 Oel
@@ -426,10 +344,6 @@ Steam
 vapeur
 #____________________________________symbol_____________________________________
 #____________________________________symbol_____________________________________
-AirStop
-Passerelle d'embarquement
-BusStop
-Arrêt de bus
 Passagiere
 Passagers
 Post
@@ -452,34 +366,20 @@ H-Trans 0-4-0T
 H-Trans BR212
 1Ellok
 H-Trans BR103
-1Schienenbus
-H-Trans/TPI VT95
 1TPEllok
 F7 unité A
 2Ben155
 Deutsche Bahn BR 155
-2Dampflokomotive
-H-Trans 4-6-0
 2Diesellokomotive
 Deutsche Bahn BR 218
 2Ellok
 H-Trans Tigress I
-2TPEllok
-British Rail Classe 86/2
 3Ben185
 Bennhardt BR185
 3Diesellokomotive
 H-Trans BR365
-4Ben204
-Bennhardt BR204
-5Ben220
-Bennhardt BR220
-6Ben228
-Bennhardt BR228
 707
 Boeing 707
-7BenE11
-Bennhardt E11
 A3-5
 CFF A 3/5
 A380
@@ -492,8 +392,6 @@ Autotransportwagen
 Wagon à voitures TPI Lopomo
 Be5-7
 BLS Be 5/7
-Beiwagen
-Wagon passagers H-Trans/TPI VT95
 Bretteranhaenger
 Remorque à planche
 Brettertransporter
@@ -508,30 +406,8 @@ Buchwagen
 Wagon à livres VT Vienna
 Bus
 H-Trans Bus
-Cementanhaenger
-Remorque à ciment
-Cementtransporter
-WF Ultd. camion de ciment
-Cementwagen
-Wagon à ciment
-ColinBigFerry
-Paquebot Colin
-ColinFastFerry
-Ferry rapide
-ColinMotorBus
-autobus
 Comet
 De Havilland Comet
-Concretetransporter
-WF Ultd. camion de béton
-Concretewagen
-Wagon à béton
-DM8_CAR
-Wagon passagers TPI Dm8
-DM8_LOK1
-Locomotive avant TPI Dm8 (diesel)
-DM8_LOK2
-Locomotive arrière TPI Dm8 (diesel)
 Eb3-5
 CFF Eb 3/5
 Erzanhaenger
@@ -550,8 +426,6 @@ H-Trans-Tiger-Mail-Car
 H-Trans Tigress courrier
 Holzanhaenger
 Remorque à bois JET
-Holzschiff
-Cargo à bois TPI/JET
 Holztransporter
 Camion à bois H-Trans
 Holzwagen
@@ -570,12 +444,8 @@ Horsewoodcariage
 Charrette à bois
 HVPosttransporter
 Fourgon postal VELO/H-Trans
-Ik26
-Ikarus-260 Serj
 Kohleanhaenger
 Remorque à charbon
-Kohleschiff
-Cargo à charbon
 Kohletransporter
 Camion à charbon H-Trans
 Kohlewagen
@@ -584,26 +454,14 @@ Kunststofanhaenger
 Remorque à plastique
 Kunststofftransporter
 Camion à plastique H-Trans
-Li6
-LiAZ-677 Serj
 Lockhead_Tristar
 Lockheed Tristar
-MJHN_Deltic
-British Rail Class 55 'Deltic'
-Moebelanhaenger
-Remorque à meuble WF Ultd.
-Moebeltransporter
-WF Ultd. camion de meuble
 Moebelwagen
 Wagon à meuble WF Ultd.
 Oelanhaenger
 Remorque à pétrole
-Oeltankschiff
-Pétrolier TPI Lopomo
 Oelwagen
 Wagon citerne VT vienna
-OJetKunstoffschiff
-Vedette rapide
 Papieranhaenger
 Remorque à papier
 Papiertransporter
@@ -618,20 +476,10 @@ Posttransporter
 Fourgon postal H-Trans
 Postwagen
 Wagon de courrier H-Train
-S220_CAR
-Wagon passagers TPI S220
-S220_LOK1
-Locomotive avant TPI S220
-S220_LOK2
-Locomotive arrière TPI S220
 Sandanhaenger
 Remorque à sable
 Sandtransporter
 WF Ultd. camion de sable
-Sandwagen
-Wagon à sable
-Serj-Mini
-Maxi-Taxi Serj
 SlowFerry
 Ferry H-Trans
 Stahlanhaenger
@@ -646,16 +494,10 @@ Stoneanhaenger
 Remorque à pierre
 Stonetransporter
 WF Ultd. camion de pierres
-Stonewagen
-Wagon à pierre
 Tanklastzug
 Camion-citerne à pétrole H-Trans
-TENDER
-TPI Tender
 TPBeiwagen
 Wagon passagers TPI VT98
-TPDiesel
-British Rail Class 26
 TPPassagierwagen
 Wagon passagers TPI
 TPSchienenbus

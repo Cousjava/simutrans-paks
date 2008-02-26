@@ -5,7 +5,7 @@
 #                             Language: ja Japanese                            #
 #                                Encoding: UTF-8                               #
 #                               Font : m+10r.bdf                               #
-#                           Date Created: 16.01 2008                           #
+#                           Date Created: 26.02 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                           Kiyohide Nakaminami - AMI                          #
@@ -40,6 +40,8 @@ ModernRoad
 近代型道路橋
 MonorailRamp
 モノレール ランプ
+PowerBridge
+高圧線（橋）
 Schiffhebewerk
 運河エレベーター
 SteelRail
@@ -74,8 +76,6 @@ WoodenRoad
 政令指定都市役所\n
 04_CITY_C
 政令指定都市役所\n
-10_WOHN
-教会\n\n\n
 1930AirDepot
 1930年代格納庫\n
 1headquarter
@@ -100,12 +100,12 @@ AirDepot
 格納庫\n
 AirportShed1930
 30年代空港郵便局
+AirStop
+駐機場\n
 AirTerminal477
 空港ターミナル
 anfangShipStop
 港セット(南端・東端)
-ANIM_CINEMA
-映画館\n\n
 Avila_Big_StationBlg
 大型駅ビル
 Avila_Small_StationBlg
@@ -118,8 +118,12 @@ BigTerminal477
 大型ターミナル
 Bulk_StationBlg
 ばら荷積み降し設備
+BusStop
+バス停\n
 CarDepot
 車庫
+CarStop
+トラックヤード\n
 Car_StationBlg
 駅駐車場
 ChannelStop
@@ -130,14 +134,10 @@ COM_00_02
 個人経営のガススタンド\n\nそれは（あなたの会社のよ\nうな）大資本の運送会社か\nら独立した個人経営の店で\nす。あなたはこの店を取り\n除く必要はありません。\nこの店はあなたのビジネス\nから何も取り去らないでし\nょうから。\n\n
 COM_00_03
 この不便な立地を何とかす\nべく、長い間幹線道路への\n接続を試みてきたのですが\n・・・お金もなければ建設\n許可もない、そもそも幹線\n道路がありません。\n
-COM_00_04
-Trikky公園\n\nこの公園の近くには大学が\nあります。それで、ほとん\nど毎日、木々の間に授業を\nさぼってデートしている学\n生たちを見かけます。\n
 COM_00_05
 銀行。立ち止まる必要がな\nいのでドライブスルー銀行\nと呼ばれています。あなた\nが通り過ぎると、魔法のよ\nうに財布は空っぽになって\nいます。頭取がいつもにこ\nにこと揉み手しているのを\n見ることができます。\n
 COM_00_06
 このテラスで飲むコーヒー\nよりうまいコーヒーはない\nね。\n
-COM_00_07
-駐車場のある小さなオフィスビル\n\n
 COM_00_08
 貸店舗付きアパート\n\n
 COM_00_10
@@ -146,58 +146,34 @@ COM_00_11
 ノヴァのノベルティショッ\nプは、蝋ランプから灰色の\n戦艦まで（それは今の目で\nみるととても鮮烈です）あ\nらゆる品物を扱う、ピカピ\nカでカラフルなノベルティ\nショップです。\n
 COM_00_12
 オフィスビル\n\n
-COM_00_13
-この再び改装されたホテル\nは立派なガラス建築の後ろ\nに古い実態を隠しています。\n\n
 COM_00_14
 大手商社数社が事務所を構\nえる建物である。左側に購\n入部門が、右側に販売部門\nがある。ガラス天井の会議\n室は「価格の間」とでも呼\nぼうか・・・ \n
-COM_00_16
-近代的オフィスビル\n\n
 COM_00_18
 近代的なオフィスビル\n\n
-COM_00_19
-大きく近代的なオフィスビ\nルです。建築士はエンパイ\nア・ステート・ビルのよう\nな立派なものを建てようと\nしましたが、10階建てを越\nえる建築許可を得ることが\nできませんでした。\n
-COM_00_20
-高層オフィスビル\n\n
-COM_00_21
-バルセロナ・グランドホテル\n\n
 COM_00_22
 ソマリア問題に携わる部署\nが使う新しい国連の建物で\nす。\n
-COM_00_23
-この超近代的な複合ホテル\nは最上階に観測所を持って\nいます。近くに映画の撮影\n所があるので、後援者が空\nの星ではなく、スターを観\n察することもできます。\n
 COM_01_01
 熱気球の発着場です。この\n発着場にはしばしば政治業\n者が集まります。それが、\nあなたがガスボンベを見な\nい理由です。\n
 COM_01_09
 古い映画館、ここでは数多\nくのモノクロ映画が上映さ\nれます。チャーリー・チャ\nップリンのファンにはとて\nも人気が高いです。\n
 COM_01_10
 このオフィスビルの地下駐\n車場への坂は異常に急でカ\nーブもきつい。噂によると\n建設現場の主任が建設事務\n所の鍵を閉め忘れたときに、\n隣の工場の持ち主が、設計\n図を勝手に書き換えてしま\nったらしい。\n
-COM_01_12
-灰色デパート。ここでスー\nツを買えば、あなたも背景\nとけ込むことができます。\n\n
-COM_01_13
-三角形観測所。何のためで\nすって？　もちろん、三角\nを観測するためです。\n
-COM_01_14
-このビルはかつてこの街初\nめての放送局があった。い\nまはケーブルテレビを運営\nするグロッツ・リーネが住\nんでおり、屋上の衛星アン\nテナで世界中と交信してい\nる。\n
-COM_01_16
-運動科学の専門学校である。\n大講義室は最上階にあり、\n当然だがエレベーターは無\nい。「忍耐力」の授業を終\nえた学生がこの建物の構造\nに文句も言わずに最上階ま\nで上がってくるので、ゲス\nト講師が驚くことも珍しく\nない。\n
 COM_01_17
 中規模オフィスビル\n\n
 COM_01_18
 信頼の Global Trust は\n国際投資を中心に行う証券\n会社である。ここ数年は、\nインドとペルーのジャンク\n債投資とミニ証券が平均以\n上の利回りを記録している\nが、今後はどうなるか？証\n券取引に元本保証は無いか\nらね。\n
-COM_01_19
-オクタゴン（八角形）天然\n資源貿易株式会社は、近年\n著しい成長を記録しており、\nついに自社ビルを持つに至\nった。ただ折角の八角形断\n面のビルも、空中からしか\n確認できない。\n
 COM_01_21
 外付けの古いエレベーター\nは歴史の証。もし止まって\nもみな喜んで階段を上って\nいく。\n
 COM_01_22
 ITブームの中であまり知ら\nれていないが、実はかなり\n儲けているインターネット\n関連会社で、ダリの息子が\n経営しているとか。ピカソ\nの孫や、キュビスムがこの\n地に足跡を残した理由にも\n関わりがあるらしい。\n
-COM_01_23
-この建物はエジプトの石油\n仲買人が所有するもので、\n本来は完全な石柱となるは\nずだった。しかしタンカー\nのダブルハル化が義務付け\nられたため、四分の一を造\nる予算しか残っていなかっ\nた。\n
-COM_02_14
-この街初めての屋内駐車場\n付スーパーマーケットであ\nる。建物の左右もタイル張\nりにするはずだったが、そ\nれだけの資金が無かったた\nめ、前面のデザインは凝っ\nているが、側面の評判はよ\nろしくない。\n
+COM_02_19
+運動科学の専門学校である。\n大講義室は最上階にあり、\n当然だがエレベーターは無\nい。「忍耐力」の授業を終\nえた学生がこの建物の構造\nに文句も言わずに最上階ま\nで上がってくるので、ゲス\nト講師が驚くことも珍しく\nない。\n
 COM_03_15
 国内初の投資信託銀行がこ\nこで設立された。グローバ\nル化とインターネットの時\n代にこのような威圧的な建\n物は必要ないが、古い鉄筋\nコンクリートは1000年程度\nの耐久性があるので、取り\n壊されること無く残ってい\nる。\n
+COM_04_15
+このビルはかつてこの街初\nめての放送局があった。い\nまはケーブルテレビを運営\nするグロッツ・リーネが住\nんでおり、屋上の衛星アン\nテナで世界中と交信してい\nる。\n
 COM_10_01
 突然の雨で濡れてしまった\n干草も、ようやく乾いてき\nたようです。\n
-COM_10_03
-この風車はかつてとうもろ\nこしを挽くのに使われてい\nたが、今ではただの飾り物。\n
 COM_10_05
 手入れの行き届いたハーブ\n畑は、この農家の奥さんの\n誇り。\n
 COM_10_07
@@ -226,8 +202,6 @@ DenkVM
 記念碑\n\nこの記念碑は、数多くの優\nれた鉄道車輌を設計した有\n名な技術者であるManfred\n'VT　Vienna'Tomaschitz氏\nに捧げられています。\n\n
 DenkVolker
 記念碑\n\nこの台座は、様々な分野で\nSimutransを改良した\nVolker　Meyer氏を讃えて\n建てられました。\n\n
-DRIVEINCINEMA
-ドライブインシネマ\n\n
 Eingang
 高架駅地上改札
 endShipStop
@@ -260,28 +234,16 @@ IND_00_05
 この街の貯水槽。新しいタ\nンクは地価に建設されてい\nるため、一番古い地上のタ\nンクだけが見える。\n
 IND_00_06
 工場\n\n
-IND_00_07
-変電所。この変電所はあな\nたの会社の電力網とは関係\nがありませんので、混乱し\nないようにしてください。\n
-IND_00_08
-古い蒸気式の石炭パワープ\nラントです。エネルギーは\n電力ではなく、車輪と伝達\nベルトシステムによって送\nられます。\n
 IND_00_10
 小さな工場\n\n
-IND_00_11
-大きな工場\n\n
 IND_00_12
 古い機械工場\n\n
-IND_00_13
-陶器工房\n\n
 IND_00_14
 陶器工房\n\n
-IND_00_15
-金属工場\n\n
 IND_01_01
 駐車場\n
 IND_01_03
 大きなガスタンク\n\n
-IND_01_05
-ガスタンク\n\n内部にガスを保持するのに\n充分なだけ外殻が安定して\nいることを祈りましょう。\n
 IND_01_08
 肥料工場\n\n
 IND_01_09
@@ -352,22 +314,14 @@ RES_00_11
 庭のある大きな家\n\n
 RES_00_13
 庭のある２棟の家\n\n
-RES_00_14
-小さなアパート\n\n
-RES_00_15
-小さなアパート棟\n\n
 RES_00_16
 古い別荘\n\n
 RES_00_19
 近代的なアパート\n\n
-RES_00_20
-フラット式高層共同住宅\n\n
 RES_01_01
 屋根裏に子供のための大き\nい部屋を持っている近代的\nなプレハブの家\n
 RES_01_02
 Ａフレームタイプの家\n
-RES_01_04
-大きな一戸建て住宅\n
 RES_01_07
 大きな豪邸\n
 RES_01_08
@@ -376,12 +330,6 @@ RES_01_10
 近代的な住宅\n
 RES_01_12
 煉瓦造りのアパート\n
-RES_01_13
-フラット式共同住宅\n\n
-RES_01_14
-小型高級アパート\n\n
-RES_01_20
-オフィスビル\n\n
 rightShipStop
 港セット(大きい埠頭)
 RUIN_0
@@ -390,6 +338,10 @@ SandStationMHz
 旅客駅(プラットホームなし)
 ShipDepot
 造船所
+ShipDepotEW
+港(東西用)\n
+ShipStop
+港\n
 STADIUM2
 大型スタジアム\n\nあらゆる国際イベントが開\n催されます\n\n
 Tennis_Court
@@ -404,6 +356,8 @@ TowerMoistboy
 管制塔
 TrainDepot
 機関庫
+TrainStop
+駅\n
 TrainStopMaglev
 旅客駅
 TrainStopMaglevIndicator
@@ -434,12 +388,6 @@ Roadster
 ジャガー ロードスター
 yellow_car
 黄色い車
-#___________________________________crossing____________________________________
-#___________________________________crossing____________________________________
-Crossing1
-踏切
-Crossing2
-踏切
 #____________________________________cursor_____________________________________
 #____________________________________cursor_____________________________________
 Baum
@@ -454,8 +402,6 @@ Remove
 削除
 Schedule
 スケジュールカーソル
-ShipDepotEW
-港(東西用)
 ShipDepotNS
 港(南北用)
 Signal
@@ -472,14 +418,8 @@ Autohaus
 カーショップ
 Autohersteller
 自動車工場
-bakery
-パン屋
-brewery
-醸造所
 Buchgrosshandel
 書店
-cannery
-缶詰工場
 Cementmill
 セメント工場
 ChemicalPlant
@@ -488,26 +428,10 @@ CHEMIST
 薬局
 Concretefactory
 コンクリート工場
-cow_farm
-牛牧場
-dairy
-酪農場
 Druckerei
 印刷工場
 Erzbergwerk
 鉄鉱石鉱山
-fish_pond
-水産養殖場
-fish_swarm
-漁場
-food_processing_plant
-食品工場
-grain_farm
-穀物畑
-grain_mill
-製粉場
-Incinerator
-焼却炉
 Kohlegrube
 炭鉱
 Kohlekraftwerk
@@ -536,16 +460,14 @@ Raffinerie
 プラスチック精製所
 Saegewerk
 製材場
+SaegewerkMHz
+製材所
 Sandquarry
 砂採取場
-scrap_yard
-ゴミ集積場
 Stahlwerk
 製鉄所
 Stonequarry
 採石場
-supermarket
-スーパーマーケット
 TANKE
 ガソリンスタンド
 Windkraftwerk
@@ -554,14 +476,10 @@ Windkraftwerk
 #_____________________________________good______________________________________
 Autos
 自動車
-beer
-ビール
 Bretter
 板材
 Buecher
 書籍
-canned_food
-缶詰
 Cement
 セメント
 Chemicals
@@ -570,26 +488,14 @@ Concrete
 コンクリート
 Eisenerz
 鉄鉱石
-fish
-魚肉
-flour
-小麦粉
-food
-食品
 Gasoline
 ガソリン
-grain
-穀物
 Holz
 木材
 Kohle
 石炭
-meat
-肉
 Medicine
 薬
-milk
-ミルク
 Moebel
 家具
 Oel
@@ -606,8 +512,6 @@ Stahl
 鉄鋼
 Stone
 石
-waste
-ゴミ
 #____________________________________ground_____________________________________
 #____________________________________ground_____________________________________
 ClimateTexture
@@ -618,6 +522,10 @@ LightTexture
 地面の陰影
 Water
 水面
+#__________________________________ground_obj___________________________________
+#__________________________________ground_obj___________________________________
+flowers
+花
 #_____________________________________menu______________________________________
 #_____________________________________menu______________________________________
 EditTools
@@ -670,6 +578,8 @@ CATEGORY_05
 飲料
 CATEGORY_06
 長物貨物
+CATEGORY_07
+ペレット/粉体貨物
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 ChooseSignals
@@ -710,14 +620,8 @@ Steam
 蒸気煙
 #____________________________________symbol_____________________________________
 #____________________________________symbol_____________________________________
-AirStop
-駐機場
 Builder
 建築業者
-BusStop
-バス停
-CarStop
-トラックヤード
 Electricity
 電力供給
 Flags
@@ -736,10 +640,6 @@ Post
 郵便
 Seasons
 季節
-ShipStop
-港
-TrainStop
-駅
 Waren
 貨物
 #_____________________________________tree______________________________________
@@ -768,8 +668,6 @@ Latschenkiefer
 ムゴマツ\n
 Palmtree1
 ヤシの木\n
-Palmtrees
-ヤシ林\n
 Pappel-1
 ポプラ\n
 Pappel-2
@@ -814,8 +712,6 @@ H-Trans 0-4-0T タンク機関車
 H-Trans BR103
 1Garrat
 ガーラット型蒸気機関車
-1Schienenbus
-VT95 レールバス
 1TPEllok
 米国 EMD F7A
 221A
@@ -824,32 +720,20 @@ VT95 レールバス
 221A用炭水車
 2Ben155
 ドイツ東国鉄 BR155
-2Dampflokomotive
-H-Trans 4-6-0 テンダー機関車
 2Diesellokomotive
 ドイツ国鉄 BR218
 2Ellok
 Tigress I
 2Garrat
 ガーラット型蒸気機関車(中央部)
-2TPEllok
-英国鉄 86/2形 電気機関車
 3Ben185
 ドイツ国鉄 BR185
 3Diesellokomotive
 ドイツ国鉄 BR365
 3Garrat
 ガーラット型蒸気機関車(後部)
-4Ben204
-ドイツ東国鉄 BR204
-5Ben220
-ドイツ東国鉄 BR220
-6Ben228
-ドイツ東国鉄 BR228
 707
 ボーイング707
-7BenE11
-Bennhardt E11 電気機関車
 A3-5
 スイス国鉄 A 3/5 テンダー機関車
 A3-5_tender
@@ -872,8 +756,6 @@ BB1280
 BB1280 電気機関車
 Be5-7
 スイスBLS Be 5/7 電気機関車
-Beiwagen
-VT95 客車
 Blimp
 飛行船
 Book_Trike
@@ -924,20 +806,8 @@ Cargosprinter-Mittel
 カーゴスプリンター(中間車)
 Cargosprinter-Steuer
 カーゴスプリンター(後尾車)
-Cementanhaenger
-セメントトレーラー
 Cementtrailer
 セメントトレーラー
-Cementtransporter
-セメントトラック
-Cementwagen
-セメント貨車
-ColinBigFerry
-Colin 大型フェリー
-ColinFastFerry
-Colin 高速フェリー
-ColinMotorBus
-Colin モーターバス
 CombinoShort(T)
 コンビーノ 広電5000型C/D車
 CombinoShortA(Mc)
@@ -966,34 +836,12 @@ Concept2Rear
 コンセプト2 (後部動力車)
 Concorde
 コンコルド
-Concretetransporter
-WF Ultd. コンクリートミキサー
-Concretewagen
-WF Ultd. コンクリート貨車
-Cooling_Container
-低温コンテナ車
-Cooling_Truck
-冷蔵トラック
-Cooling_Waggon
-冷蔵貨車
 DaimlerStoll
 ダイムラー・ストール
 DC-3
 ダグラスDC-3
-Deponielaster
-清掃車
-Deponielaster2
-清掃車
-DM8_CAR
-Dm8 客車
-DM8_LOK1
-TPI Dm8 先頭動力車
-DM8_LOK2
-Dm8 後部制御車
 Doubledeck_city_bus
 二階建て市内バス
-Doubledeck_intercitybus
-二階建て高速バス
 E44
 DB E44
 Eb3-5
@@ -1004,30 +852,42 @@ Ed2x2
 Ed2x2 蒸気機関車
 EinheitsTender
 ドイツ国鉄 標準型炭水車
+EnCo_Bulk_Ship
+EnCo ばら荷運搬船
+EnCo_Car_Ship
+EnCo 自動車運搬船
+EnCo_Cement_Ship
+EnCo 粉体貨物運搬船
+EnCo_Container_Ship
+EnCo コンテナ運搬船
+EnCo_Oil_Ship
+EnCo 石油タンカー
+EnCo_Paper_Ship
+EnCo 紙運搬船
 EnCo_Steel_Ship
 EnCo 鉄鋼運搬船
+EnCo_Wood_Ship
+EnCo 木材運搬船
 Erzanhaenger
 ばら荷トレーラー
 Erztrailer
-鉄鉱石トレーラー
+ダンプトレーラー
 Erztransporter
-H-Trans 鉄鉱石輸送トラック
+H-Trans ばら荷トラック
 Erzwagen
 H-Trans 鉱石用無蓋車
 F7back
 米国 F7A (後向き)
 FastFerry
 O.Bang ホバークラフト
-Fishing_Boat
-漁船
-Fishing_Boat_DanMacK
-漁船DanMacK型
 Flachwagen
 高速有蓋車
 Fokker_F27
 フォッカー F27 フレンドシップ
-GarbageTruck
-清掃車
+Gelenkbus_Ende
+連節バス（後）
+Gelenkbus_Front
+連節バス（前）
 Guppy
 ボーイングB-377スーパーグッピー
 H-Trans-Pantheress
@@ -1045,13 +905,11 @@ H-Trans Tigress II 機関車
 Hadley-Page-V1500
 ハンドレページ V/1500
 Heavy_ore_truck
-大型鉱石トラック
+大型ダンプトラック
 Hochbordwagen
 高枠無蓋車
 Holzanhaenger
 JET 木材トレーラー
-Holzschiff
-TPI/JET 木材運搬船
 Holztrailer
 木材トレーラー
 Holztransporter
@@ -1080,12 +938,6 @@ ICE_TD-car
 ドイツ鉄道 ICE-TD (中間車)
 ICE_TD-front
 ドイツ鉄道 ICE-TD
-Ik26
-Ikarus 260
-IL-209S_Goods_Trailer
-IL-209S 貨物トレーラー
-IL-209S_Goods_Truck
-IL-209S 貨物トラック
 IL-76
 イリューシン Il-76
 JNR_C11
@@ -1106,8 +958,6 @@ kkStB_tender
 墺国鉄 炭水車
 Kohleanhaenger
 H-Trans トレーラー MK2
-Kohleschiff
-WF Ultd. 石炭運搬船
 Kohletransporter
 H-Trans トラック
 Kohlewagen
@@ -1116,8 +966,6 @@ Kunststofanhaenger
 H-Trans プラスチックトレーラー
 Kunststofftransporter
 H-Trans プラスチック運搬トラック
-Li6
-Serj LiAZ-677
 Lockhead_Tristar
 ロッキード トライスター
 Lockheed10-Electra
@@ -1130,42 +978,24 @@ Lowa_Anhaenger
 Lowa (付随車)
 MailExpress
 郵便飛行機
-Milk_Truck
-牛乳トラック
-Milk_Waggon
-ミルク用タンク車
-MJHN_Deltic
-英国鉄 55形 'Deltic' (急行用)
-Moebelanhaenger
-WF Ultd. 家具トレーラー
 Moebelschiff
 TPI/JET 貨物船
-Moebeltransporter
-WF Ultd. 家具輸送トラック
 Moebelwagen
 VT Vienna 軽貨物車
-Muellschiff
-廃棄物輸送船
 NeuOelwagen
 新型タンク車
 Oelanhaenger
 H-Trans　石油類輸送トレーラー
-Oeltankschiff
-TPI Lopomo 石油タンカー
 Oelwagen
 VT石油タンク車
 Oilbarge
 オイルバージ
 Oiltrailer
 石油トレーラー
-OJetKunstoffschiff
-JET プラスチック運搬船
 OldOil
 タンク車
 old_open_car
 旧式無蓋貨車
-PaddelSteamer
-外輪蒸気船
 Papieranhaenger
 紙用トレーラー
 Papiertransporter
@@ -1190,30 +1020,16 @@ PrPostwagen
 旧型郵便車
 RenaultTH5
 ルノー TH5 トラクタ
-S220_CAR
-TPI S220 客車
-S220_LOK1
-TPI S220 機関車
-S220_LOK2
-TPI S220 後部機関車
 Sandanhaenger
-WF Ultd. 砂トレーラー
+WF Ultd. ばら荷トレーラー
 Sandtransporter
-砂運搬用トラック
-Sandwagen
-砂運搬用無蓋貨車
+WF Ultd. ダンプトラック
 schooner
 帆船
 SD40-2-back
 米EMD SD40-2 ディーゼル機関車(後向き)
 SD40-2-front
 米EMD SD40-2 ディーゼル機関車
-Serj-Mini
-Serj マイクロバス
-Serj_Gaz-4_Goods_Truck
-Serj_Gaz-4 貨物トラック
-Sloop
-スループ
 SlowFerry
 H-Trans 旅客フェリー
 SMPoiltruck
@@ -1229,11 +1045,9 @@ VT-Vienna プラスチック貨車
 Steamer
 蒸気客船
 Stoneanhaenger
-WF Ultd. 石トレーラー
+WF Ultd. ばら荷トレーラー
 Stonetransporter
-WF Ultd. 採石輸送トラック MK2
-Stonewagen
-WF Ultd./H-Trans 石用無蓋車
+WF Ultd. ダンプトラック MK2
 SuperConstellation
 ロッキード Super Constellation
 T13
@@ -1252,14 +1066,8 @@ TB24
 TB24
 teaclipper
 快速帆船 ティークリッパー
-TENDER
-TPI 炭水車
 TPBeiwagen
 TPI VS98
-TPDiesel
-英国鉄 26形
-TPI_Std_2-6-4T
-TPI Std 2-6-4T
 TPPassagierwagen
 TPI Lopomo 客車
 TPSchienenbus
@@ -1274,8 +1082,6 @@ Tugboat
 タグボート
 VolvoFH12
 ボルボ FH12
-waste wagon
-廃棄物運搬車
 XMail
 XMail
 XTest

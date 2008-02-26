@@ -5,7 +5,7 @@
 #                            Language: pt Portugues                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 16.01 2008                           #
+#                           Date Created: 26.02 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                             Eric Oliveira - eric                             #
@@ -74,8 +74,6 @@ Prefeitura
 Prefeitura
 04_CITY_C
 Prefeitura
-10_WOHN
-Igreja\n
 1930AirDepot
 Hangar de 1930
 1headquarter
@@ -100,12 +98,12 @@ AirDepot
 Hangar de 1900
 AirportShed1930
 Depósito aeroportuário para correios (1901)
+AirStop
+Ponte de embarque\n
 AirTerminal477
 Terminal aeroportuário de 1950
 anfangShipStop
 Doca de carga
-ANIM_CINEMA
-Cinema\n
 Avila_Big_StationBlg
 Grande prédio de estação ferroviária
 Avila_Small_StationBlg
@@ -118,8 +116,12 @@ BigTerminal477
 Grande terminal aeroportuário
 Bulk_StationBlg
 Depósito de carvão
+BusStop
+Parada de ônibus\n
 CarDepot
 Garagem
+CarStop
+Baia de carga\n
 Car_StationBlg
 Pátio de carros
 ChannelStop
@@ -130,14 +132,10 @@ COM_00_02
 Posto de gasolina independente\n\nÉ independente das\ngrandes companhias de\ntransporte (como a sua),\nmas não há necessidade em\nremovê-lo. Não levará\nembora nada de seu negócio.\n
 COM_00_03
 Oficina mecânica\n
-COM_00_04
-Parque Trikky\n
 COM_00_05
 Banco\n
 COM_00_06
 Café\n
-COM_00_07
-Pequeno edifício de\nescritórios com\nestacionamento\n
 COM_00_08
 Bloco de apartamentos com\nalgumas lojas.\n
 COM_00_10
@@ -146,46 +144,24 @@ COM_00_11
 Comércio\n
 COM_00_12
 Torre de escritórios\n
-COM_00_13
-Hotel\n
 COM_00_14
 Comércio\n
-COM_00_16
-Prédio de escritórios\nmoderno\n
 COM_00_18
 Bloco de escritórios\nmoderno\n
-COM_00_19
-Grande edifício de\nescritórios moderno\n
-COM_00_20
-Torre de escritórios\n
-COM_00_21
-Grande Hotel Barcelona\n
 COM_00_22
 Edifício Century\n
-COM_00_23
-Edifício Esfera\n
 COM_01_01
 Escola de Balonismo\n
 COM_01_09
 Velho cinema\n
 COM_01_10
 Comércio\n
-COM_01_12
-Centro comercial\n
-COM_01_13
-Um Observatório Triangular\n\nPara quê?? para observar\ntriângulos, claro!\n
 COM_01_17
 Bloco de escritório médio\n
-COM_01_19
-Moderna torre de\\nescritórios\\n\n
-COM_01_23
-Edifício Milllennium\n
 COM_02_02
 Estacionamento\n
 COM_10_01
 Terreno com uma pequena\nlagoa\n
-COM_10_03
-Este velho moinho era para\nmoer milho, mas agora é\napena um edifício\nornamental.\n
 COM_10_05
 Uma antiga casa de\nmadeira\n
 Control_StationBlg
@@ -208,8 +184,6 @@ DenkVM
 Memorial Manfred 'VT\nVienna' Tomaschitz\n\nFamoso engenheiro que projetou\ntantos veículos ferroviários\nde alto nível.\n
 DenkVolker
 Stupa Volker Meyer\n\nEste "Stupa" foi construído\npor Volker Meyer que\ndesenvolveu o Simutrans\nem diversas áreas.\n
-DRIVEINCINEMA
-Cinema drive-in\n
 Eingang
 Entrada de estação
 endShipStop
@@ -242,32 +216,20 @@ IND_00_05
 Cisterna de água\n
 IND_00_06
 Prédio fabril\n
-IND_00_07
-Um transformador.\n\nNão confundir com os\ntransformadores ou\nestações de transmissão\npara a rede de energia do\njogo.\n
-IND_00_08
-Uma antiga central elétrica\na carvão.\n\nA energia não era\ntransferida através de\neletricidade, mas por um\nsistema de rodas e correias\nde transmissão.\n
 IND_00_09
 Fábrica de cimento\n
 IND_00_10
 Fábrica pequena\n
-IND_00_11
-Fábrica grande\n
 IND_00_12
 Velha fábrica de maquinaria\n
-IND_00_13
-Fábrica de cerâmica\n
 IND_00_14
 Fábrica de produtos ópticos\n
-IND_00_15
-Metalúrgica\n
 IND_00_16
 Transformador BB\n
 IND_01_01
 Estacionamento grátis.\n\nAlgumas pessoas mesmo\nabandonam os seus carros\nvelhos aqui.\n
 IND_01_03
 Tanques de gás liquefeito\n
-IND_01_05
-Tanque de gás\n\nEsperemos que a casca esteja\nsempre forte o bastante\npara manter o gás dentro.\n
 IND_01_07
 Transformador\n
 IND_01_08
@@ -332,8 +294,6 @@ RES_00_03
 Casa pequena com jardim\n
 RES_00_04
 Casa pequena\n
-RES_00_05
-Casas geminadas\n\nDuas famílias podem viver\naqui. Às vezes, as finas\nparedes fazem a vida não\nser fácil, especialmente\ndepois que um menino de\num dos vizinhos ganhou um\njogo de tambores (que ele não\nsabe tocar bem obviamente).\n
 RES_00_06
 Uma pequena fonte\n\nMesmo se ela não for tão grande\ncomo uma em Genebra, é\napreciada por pessoas que\ncaminham ao redor dela,\nespecialmente no verão.\n
 RES_00_07
@@ -348,22 +308,14 @@ RES_00_11
 Casa grande com jardim\n
 RES_00_13
 Casas geminadas com\njardim\n
-RES_00_14
-Apartamentos pequenos\n
-RES_00_15
-Pequeno edifício\nresidencial\n
 RES_00_16
 Velha vila\n
 RES_00_19
 Apartamentos modernos\n
-RES_00_20
-Edifício de flats\n
 RES_01_01
 Casa moderna pré-fabricada\ncom um quarto grande para\na criança no sótão.\n
 RES_01_02
 Chalezinho.\n\nMuito estável, mas com só\nalgumas janelas e paredes,\nassim não é realmente\nsatisfatório para pessoas\nque gostam de pôr quadros.\n
-RES_01_04
-Grande casa amarela\n
 RES_01_07
 Mansão\n
 RES_01_08
@@ -372,16 +324,6 @@ RES_01_10
 Casa moderna\n
 RES_01_12
 Prédio de apartamentos de\ntijolos\n
-RES_01_13
-Edifício de flats\n
-RES_01_14
-Pequenos apartamentos de\nluxo\n
-RES_01_17
-Prédio e lojas de estilo\nclássico\n
-RES_01_19
-Torre de apartamentos\n
-RES_01_20
-Prédio de escritórios\n
 RES_02_16
 Appartments de luxo com\ncobertura\n
 RES_12_15
@@ -394,6 +336,8 @@ SandStationMHz
 Estação sem plataforma
 ShipDepot
 Estaleiro\\n
+ShipStop
+Doca\\n\n
 STADIUM2
 Estádio de Futebol\n
 Tennis_Court
@@ -408,6 +352,8 @@ TowerMoistboy
 Torre de controle aéreo (1950)
 TrainDepot
 Depósito ferroviário\\n
+TrainStop
+Estação desativada\\n\n
 TrainStopMaglev
 Estação de Maglev
 TrainStopMaglevIndicator
@@ -438,12 +384,6 @@ Roadster
 Roadster
 yellow_car
 Carro amarelo
-#___________________________________crossing____________________________________
-#___________________________________crossing____________________________________
-Crossing1
-Passagem em nível
-Crossing2
-Passagem em nível
 #____________________________________cursor_____________________________________
 #____________________________________cursor_____________________________________
 Baum
@@ -452,6 +392,8 @@ Down
 Desaterro
 Marked
 Marcador
+Query
+Ferramenta de informação do terreno
 Remove
 Eliminar
 Signal
@@ -468,14 +410,8 @@ Autohaus
 Loja de automóveis
 Autohersteller
 Fábrica de automóveis
-bakery
-Padaria
-brewery
-Cervejaria
 Buchgrosshandel
 Livraria
-cannery
-Enlatadora
 Cementmill
 Cimenteira
 ChemicalPlant
@@ -484,26 +420,10 @@ CHEMIST
 Farmácia
 Concretefactory
 Concreteira
-cow_farm
-Fazenda de gado bovino
-dairy
-Laticínio
 Druckerei
 Editora
 Erzbergwerk
 Mina de ferro
-fish_pond
-Pesqueiro
-fish_swarm
-Fazenda marinha
-food_processing_plant
-Fábrica de alimentos
-grain_farm
-Fazenda de grãos
-grain_mill
-Moinho
-Incinerator
-Incinerador
 Kohlegrube
 Mina de carvão
 Kohlekraftwerk
@@ -534,14 +454,10 @@ Saegewerk
 Serraria
 Sandquarry
 Mina de areia
-scrap_yard
-Aterro
 Stahlwerk
 Siderúrgica
 Stonequarry
 Pedreira
-supermarket
-Supermercado
 TANKE
 Posto de Gasolina
 Windkraftwerk
@@ -550,14 +466,10 @@ Usina eólio-elétrica
 #_____________________________________good______________________________________
 Autos
 Automóveis
-beer
-Cerveja
 Bretter
 Tábuas
 Buecher
 Livros
-canned_food
-Enlatados
 Cement
 Cimento
 Chemicals
@@ -566,26 +478,14 @@ Concrete
 Concreto
 Eisenerz
 Ferro
-fish
-Peixe
-flour
-Farinha
-food
-Comida
 Gasoline
 Gasolina
-grain
-Grãos
 Holz
 Madeira
 Kohle
 Carvão
-meat
-Carne
 Medicine
 Medicamentos
-milk
-Leite
 Moebel
 Móveis
 Oel
@@ -602,8 +502,6 @@ Stahl
 Aço
 Stone
 Pedra
-waste
-Lixo
 #____________________________________ground_____________________________________
 #____________________________________ground_____________________________________
 Fence
@@ -696,28 +594,28 @@ traffic_light
 Semáforo
 #____________________________________symbol_____________________________________
 #____________________________________symbol_____________________________________
-AirStop
-Ponte de embarque
 Builder
 Escavadora
-BusStop
-Parada de ônibus
-CarStop
-Baia de carga
 Passagiere
 Passageiros
 Post
 Correio
-ShipStop
-Doca\\n
-TrainStop
-Estação desativada\\n
 Waren
 Bens
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
+Ahorn-1
+Bordo\n
+Ahorn-2
+Bordo\n
+Ahorn-Gruppe
+Bordos\n
 Birke-1
 Vidoeiro\n
+Buche-1
+Faia\n
+Busch_2
+Arbusto\n
 Kiefer_1
 Pinus\n
 Kiefer_2
@@ -732,12 +630,24 @@ Latschenkiefer
 Pinheiro da montanha\n
 Palmtree1
 Palmeira\n
-Palmtrees
-Palmeiras\n
 Pappel-1
 Álamo\n
 Pappel-2
 Álamo\n
+Shunter-tree2
+Salgueiro\n
+Tanne_1
+Abeto\n
+Tanne_2
+Abeto\n
+Tanne_3
+Abeto\n
+Tanne_4
+Abeto\n
+Tanne_5
+Abeto\n
+Tanne_6
+Abeto\n
 Tree6
 Abeto\n
 Willow
@@ -764,56 +674,56 @@ H-Trans 0-4-0T
 H-Trans BR212
 1Ellok
 H-Trans BR103
-1Schienenbus
-H-Trans/TPI VT95
+1Garrat
+Garratt, dianteira
 1TPEllok
 TPI F7A
+221A
+Locomotiva 221A
+221A_tender
+Alimentadora 221A
 2Ben155
 Bennhardt BR155
-2Dampflokomotive
-H-Trans 4-6-0
 2Diesellokomotive
 H-Trans BR218
 2Ellok
 H-Trans Tigress I
-2TPEllok
-TPI Classe 86/2
+2Garrat
+Garratt, intermediária
 3Ben185
 Bennhardt BR185
 3Diesellokomotive
 H-Trans BR365
-4Ben204
-Bennhardt BR204
-5Ben220
-Bennhardt BR220
-6Ben228
-Bennhardt BR228
+3Garrat
+Garratt, traseira
 707
 Boeing 707
-7BenE11
-Bennhardt E11
 A3-5
 Swiss federal Railways A 3/5
+A3-5_tender
+Alimentadora para SBB A 3/5
 A380
 Airbus A380
 Adler
 Adler
 AdlerPersonenwagen
 Vagão de passageiros Adler
-Autotransportanhaenger
+Autotrailer
 Reboque para automóveis
+Autotransportanhaenger
+Pequeno reboque para automóveis
 Autotransporter
 H-Trans Caminhão para automóveis
 Autotransportwagen
 Vagão para automóveis TPI Lopomo
 Be5-7
 BLS Be 5/7
-Beiwagen
-Carro para H-Trans/TPI VT95
 Blimp
 Zepelim
 Book_Trike
 Triciclo para livros
+Boxcar
+Vagão fechado
 BR01
 Locomotiva BR 01
 BR38
@@ -858,20 +768,8 @@ Cargosprinter-Mittel
 Vagão para gráfica
 Cargosprinter-Steuer
 Locomotiva para gráfica, trazeira
-Cementanhaenger
-Reboque cimenteiro WF Ultd.
 Cementtrailer
 Reboque para cimento
-Cementtransporter
-WF Utld. Caminhão para cimento
-Cementwagen
-WF Ultd. Vagão para cimento
-ColinBigFerry
-Grande Barca Colin
-ColinFastFerry
-Barca Rápida Colin
-ColinMotorBus
-Ônibus Colin
 Comet
 Comet
 Concept1Front
@@ -892,32 +790,14 @@ Concept2Rear
 Concept 2, traseira
 Concorde
 Concorde
-Concretetransporter
-WF Utld. Caminhão betoneira
-Concretewagen
-WF Ultd. Vagão para concreto
-Cooling_Container
-Vagão de congelados
-Cooling_Truck
-Caminhão de congelados
-Cooling_Waggon
-Vagão de congelados pequeno
 DaimlerStoll
 "Daimler Stoll"
-Deponielaster
-Caminhão lixeiro Deponielaster 1
-Deponielaster2
-Caminhão lixeiro Deponielaster 2
-DM8_CAR
-Carro TPI Dm8
-DM8_LOK1
-Locomotiva dianteira TPI Dm8
-DM8_LOK2
-Locomotiva traseira TPI Dm8
 Doubledeck_city_bus
 Ônibus urbano duplex
-Doubledeck_intercitybus
-Intermunicipal Doubledeck
+Eb3-5
+Locomotiva suíça Eb 3/5
+EinheitsTender
+Alimentadora padrão
 EnCo_Steel_Ship
 Navio de aço EnCo
 Erzanhaenger
@@ -932,16 +812,10 @@ F7back
 Locomotiva traseira F7 A
 FastFerry
 Barca rápida O.Bang ("hovercraft")
-Fishing_Boat
-Barco pesqueiro
-Fishing_Boat_DanMacK
-Barco pesqueiro DanMacK
 Flachwagen
 Vagão de caixas moderno
 Fokker_F27
 Fokker F27
-GarbageTruck
-Caminhão de lixo
 Guppy
 Avião cargueiro Guppy
 H-Trans-Pantheress
@@ -964,8 +838,6 @@ Hochbordwagen
 Velho vagão graneleiro
 Holzanhaenger
 JET reboque madeireiro
-Holzschiff
-TPI/JET Navio para madeira
 Holztrailer
 Semi-reboque para toras
 Holztransporter
@@ -986,14 +858,20 @@ Horsewoodcariage
 Carroça para toras
 HVPosttransporter
 Caminhão postal DIBU/H-Trans
+ICE_TD-back
+ICE-TD, traseira
+ICE_TD-car
+ICE-TD, vagão
 ICE_TD-front
 ICE-TD, frente
-Ik26
-Ônibus Serj Ikarus-260
 IL-76
 Avião postal IL-76
 JNR_C11
 JNR C11 (2-6-4T)
+JR_9600
+Locomotiva JR 9600
+JR_9600_tender
+Alimentadora JR 900
 JumboJet
 Boeing 747 "Jumbo Jet"
 kkStB110
@@ -1004,8 +882,6 @@ kkStB_tender
 Alimentadora kkStB
 Kohleanhaenger
 Reboque H-Trans MK2
-Kohleschiff
-WF Ultd. Navio mineraleiro
 Kohletransporter
 Caminhão H-trans
 Kohlewagen
@@ -1014,50 +890,30 @@ Kunststofanhaenger
 Reboque para plásticos
 Kunststofftransporter
 Caminhão para plástico H-trans
-Li6
-Ônibus Serj LiAZ-677
 Lockhead_Tristar
 Lockheed Tristar
 Lockheed10-Electra
 Lockheed 10 "Electra"
 logs
 Barcaça para madeira
-Milk_Truck
-Caminhão tanque para leite
-Milk_Waggon
-Vagão leiteiro
-MJHN_Avocet
-MJHN "Avocet"
-MJHN_Deltic
-MJHN "Deltic"
-Moebelanhaenger
-WF Ultd. Reboque-baú 1
 Moebelschiff
 TPI/JET Navio para móveis
-Moebeltransporter
-WF Ultd. Caminhão para móveis
 Moebelwagen
 Vagão para móveis VT Vienna
 NeuOelwagen
 Vagão petroleiro (80t)
 Oelanhaenger
 Reboque petroleiro H-trans
-Oeltankschiff
-Petroleiro TPI Lopomo
 Oelwagen
 Vagão-tanque VT Vienna
 Oilbarge
-Barcaça para petróleo
+Barcaça para petróleo 
 Oiltrailer
-Semi-reboque para petróleo
-OJetKunstoffschiff
-Navio para plásticos JET
+Semi-reboque para petróleo 
 OldOil
 Vagão tanque (18t)
 old_open_car
 Vagão gôndola (1837)
-PaddelSteamer
-Barca a vapor
 Papieranhaenger
 Reboque papeleiro Trikky
 Papiertransporter
@@ -1082,28 +938,20 @@ PrPostwagen
 Pequeno vagão postal
 RenaultTH5
 Renault TH5
-S220_CAR
-Carro TPI S220
-S220_LOK1
-Locomotiva dianteira TPI S220
-S220_LOK2
-Locomotiva traseira TPI S220
 Sandanhaenger
 Reboque para granéis WF Ultd
 Sandtransporter
 WF Utld. Caminhão 1
-Sandwagen
-WF Ultd. Vagão Graneleiro 1
 schooner
 Schooner
-Serj-Mini
-Serj Maxi-Táxi
-Serj_Gaz-4_Goods_Truck
-Caminhão baú Serj GAZ-4
-Sloop
-Escaler
+SD40-2-back
+SD40-2, traseira
+SD40-2-front
+SD40-2, dianteira
 SlowFerry
 Barca convencional H-trans
+SMPoiltruck
+Caminhão-tanque SMP
 Stahlanhaenger
 Reboque para aço
 Stahltransporter
@@ -1118,8 +966,6 @@ Stoneanhaenger
 Reboque para granéis 2
 Stonetransporter
 WF Utld. Caminhão 2
-Stonewagen
-WF Ultd. Vagão Graneleiro 2
 SuperConstellation
 "Super Constellation"
 Tanklastzug
@@ -1130,14 +976,8 @@ Tatra-T4_Wagon
 Tatra-T4, vagão
 teaclipper
 "Clipper"
-TENDER
-TPI Tender
 TPBeiwagen
 Carro para TPI VT98
-TPDiesel
-TPI Classe 26
-TPI_Std_2-6-4T
-TPI Std 2-6-4T
 TPPassagierwagen
 Carro TPI
 TPSchienenbus
@@ -1152,8 +992,6 @@ Tugboat
 Rebocador
 VolvoFH12
 Volvo FH12
-waste wagon
-Vagão lixeiro
 Zeppelin
 Zeppelin
 #______________________________________way______________________________________
@@ -1169,7 +1007,7 @@ Dormentes de concreto
 dirt_road
 Terra
 elevated_monorail
-Monitrilho elevado
+Monotrilho elevado
 gavel_road
 Cascalho
 Kanal

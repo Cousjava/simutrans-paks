@@ -5,7 +5,7 @@
 #                            Language: nl Nederlands                           #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 16.01 2008                           #
+#                           Date Created: 26.02 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                             Pavel Cizek - jatypc                             #
@@ -70,8 +70,6 @@ Stadhuis\n\noud stadhuis\n
 \nStadhuis\n
 04_CITY_C
 \nStadhuis\n
-10_WOHN
-Kerk\n
 1930AirDepot
 Eenvoudige Hangar
 1headquarter
@@ -96,12 +94,12 @@ AirDepot
 Hangar van 1900
 AirportShed1930
 Loods voor post (1901)
+AirStop
+Pier\n
 AirTerminal477
 Luchthaventerminal
 anfangShipStop
 kaai eind (Z of O)
-ANIM_CINEMA
-Bioscoop\n
 Avila_Big_StationBlg
 Grote passagiershal
 Avila_Small_StationBlg
@@ -114,6 +112,8 @@ BigTerminal477
 grote terminal
 Bulk_StationBlg
 bulkgoederen station
+BusStop
+Bushalte\n
 CarDepot
 Depot voor straatvoertuigen
 Car_StationBlg
@@ -126,14 +126,10 @@ COM_00_02
 witte benzinepomp\n
 COM_00_03
 schaatshal\n
-COM_00_04
-Trikky's Park\n
 COM_00_05
 Drive-in bank (door Seth)\n
 COM_00_06
 restaurant met dakterras\n
-COM_00_07
-Klein kantoorpand met\nparkeerplaats (door Trikky)\n
 COM_00_08
 Winkels en apartementen\n
 COM_00_10
@@ -142,74 +138,46 @@ COM_00_11
 De winkel van Sinkel\n
 COM_00_12
 Kantoorpand\n
-COM_00_13
-Verkezeraar (door Trikky)\n
 COM_00_14
 Illegale wietplantage in een\noude fabriekshal\n
-COM_00_16
-Modern kantoorgebouw (door\nTrikky)\n
 COM_00_18
-Modern kantoor pand (door\nTrikky)\n
-COM_00_19
-Groot, modern kantoorgebouw\n(by Trikky)\n
-COM_00_20
-Kantoor flat (door Trikky)\n
-COM_00_21
-Hollandia Hotel (door Wefer)\n
+Modern kantoor pand\n
 COM_00_22
 VN kantoor\n
-COM_00_23
-Hypermodern hotel\n
 COM_01_01
 Vertekpunt voor luchtballonnen\n
 COM_01_09
 Bioscoop (door Seth)\n
 COM_01_10
 Oude bioscoop, vergane glorie.\nTegenwoordig kun je er\nterecht voor cultfilms die je\nin andere bioscopen niet meer\nkunt zien\n
-COM_01_12
-Klein winkelcentrum met\nappartementen\n
-COM_01_13
-Een gebouw in de vorm van\neen driehoek. DIt was eerder\nhet huis van de toekomst van\nChriet Titulaer\n
-COM_01_14
-Oud kantoor met\nschotelantenne\n
-COM_01_16
-Groot kantoorgebouw met een\nbuitenlift. Vanuit de lift heb je\neen prachtig uitzicht op de\nstad\n
 COM_01_17
 Kantoorgebouw met\nparkeergarage\n
 COM_01_18
 Hoofdkantoor van\nverzekeringsmaatschappij 'Wij\nkeren nooit uit'\n
-COM_01_19
-Groot modern kantoorpand\n(door Trikky)\n
 COM_01_20
 Ziekenhuis met heliplatform\n
 COM_01_21
 Groot kantoorgebouw met\nvele ramen. Als je goed kijkt\nzul je zien dat er constant\neen glazenwasser bezig is met\nhet schoonhouden ervan.\n
 COM_01_22
 Hoofdkantoor van een\ninmiddels failliete dotcom\nbedrijf. Gelukkig was het\ngebouw beter bestand tegen\ngebakken lucht dan het\ndotcom bedrijf.\nTegenwoordig zit er een bank\nmet teveel geld.\n
-COM_01_23
-Het Paarse Huis, hoofdkantoor\nvan belangenorganisatie van\nwasmiddellenindustrie\n
 COM_02_02
 Parkeerterrein\n
 COM_02_13
 Warenhuis met parkeergarage\n
-COM_02_14
-Kantoorgebouw met\nparkeergarage\n
-COM_02_15
-Groot kantoorgebouw met\nsatelietverbinding\n
 COM_02_16
 Kantoorgebouw uit de jaren\n70\n
 COM_02_17
 Modern kantoorgebouw\n
-COM_02_20
-Brose toren\n
+COM_02_19
+Groot kantoorgebouw met een\nbuitenlift. Vanuit de lift heb je\neen prachtig uitzicht op de\nstad.\n
 COM_03_15
 Zeven provinciën hotel\n
+COM_04_15
+Oud kantoor met\nschotelantenne\n
 COM_10_01
 Park\n
 COM_10_02
 Landschapsarchitect MHz\nheeft dit prachtige park\nspeciaal voor de Simutrans\npopulatie ontworpen\n
-COM_10_03
-Oude graanmalen met schuur.\nTegenwoordig is deze molen\neen toeristische trekpleister\nen worden er souvenirs\nverkocht\n
 COM_10_05
 Historische arbeiderswoning\nmet grote kruidentuin\n
 COM_10_07
@@ -240,8 +208,6 @@ DenkVM
 Monument\n\nDit monument is opgedragen aan\nManfred 'VT Vienna'\nTomaschitz de beroemde\ningineur die veel treinen\nontworpen heeft.\n
 DenkVolker
 Monument\n\nGebouwd voor Volker Meyer. Een\ninspiratie voor Simutrans, op\nvele gebieden.\n
-DRIVEINCINEMA
-\nDrive-in bioscoop\n\n
 Eingang
 Ingang
 endShipStop
@@ -274,24 +240,14 @@ IND_00_05
 Watertoren (door Seth)\n
 IND_00_06
 Fabriek\n
-IND_00_07
-Transformatorhuisje\n
-IND_00_08
-Steenfabriek\n
 IND_00_09
 Cementmalerij (door Seth)\n
 IND_00_10
 Kleine fabriek (door Seth)\n
-IND_00_11
-Grote fabriek\n
 IND_00_12
 Machine fabriek (door O.S)\n
-IND_00_13
-Pottebakkerij (door Trikky)\n
 IND_00_14
 Glasfabriek\n
-IND_00_15
-Metaal fabriek (door Trikky)\n
 IND_00_16
 Smeerpijp\n
 IND_00_17
@@ -304,8 +260,6 @@ IND_01_03
 Tank voor de opslag van gas.\n
 IND_01_04
 Werkplaats\n
-IND_01_05
-opslagtank voor brandstof\n
 IND_01_06
 Leerbewerkingsbedrijf met als\nspecialiteit zadels voor\nhipische doeleinden.\n
 IND_01_07
@@ -382,8 +336,6 @@ RES_00_03
 Klein huis met tuin\n
 RES_00_04
 Klein huis (door Seth)\n
-RES_00_05
-Een twee onder een kap\nwoning\n
 RES_00_06
 Een fontein (door Trikky)\n
 RES_00_07
@@ -400,10 +352,6 @@ RES_00_12
 Modern huis (door Seth)\n
 RES_00_13
 Twee onder een kap met tuin\n
-RES_00_14
-Kleine appartementen (by\nTrikky)\n
-RES_00_15
-Sociale woningbouw (door\nTrikky)\n
 RES_00_16
 Oude villa\n
 RES_00_17
@@ -412,8 +360,6 @@ RES_00_18
 Huis met reclamebord\n
 RES_00_19
 Moderne appartementen\n
-RES_00_20
-Toren flats (door O.S.)\n
 RES_00_21
 Appartementencomplex\n
 RES_00_23
@@ -422,10 +368,6 @@ RES_01_01
 Modern prefab huis met grote\nzolderkamer\n
 RES_01_02
 A-Frame huis  (door Seth)\n
-RES_01_03
-Herenhuis\n
-RES_01_04
-Vrijstaand huis (door O.S.)\n
 RES_01_05
 Groot vrijstaand huis\n
 RES_01_07
@@ -436,30 +378,18 @@ RES_01_10
 Moderne woning\n
 RES_01_12
 Apartementencomplex van\nbaksteen\n
-RES_01_13
-Flats (door O.S.)\n
-RES_01_14
-Luxueuze appartementen (door\nTrikky)\n
 RES_01_15
 Grote gezinswoningen\n
 RES_01_16
 Vakwerkwoning\n
-RES_01_17
-Ouderwetse flats en winkels\n(door O.S.)\n
 RES_01_18
 Appartementencomplex\n
-RES_01_19
-Appartementencomplex (door\nWefer)\n
-RES_01_20
-Kantoorpand (door Trikky)\n
 RES_01_21
 Kantoren\n
 RES_01_22
 Groot kantorencomplex\n
 RES_01_23
 Torenflat\n
-RES_02_02
-Huis met tuin\n
 RES_02_16
 Luxe appartementen met een\npenthouse\n
 RES_02_20
@@ -514,6 +444,10 @@ SandStationMHz
 Zandstation
 ShipDepot
 Scheepswerf
+ShipDepotEW
+Scheepswerf (OW)\n
+ShipStop
+Haven\n
 STADIUM2
 Groot stadion\n\n Alle grote internationale\nevenementen vinden hier\nplaats.\n
 Tennis_Court
@@ -528,6 +462,8 @@ TowerMoistboy
 Verkeerstoren (door Moistboy)
 TrainDepot
 Trein remise
+TrainStop
+overdekt station\n
 TrainStopMaglev
 Monorail/Maglev halte
 TrainStopMaglevIndicator
@@ -558,12 +494,6 @@ Roadster
 Roadster
 yellow_car
 gele auto
-#___________________________________crossing____________________________________
-#___________________________________crossing____________________________________
-Crossing1
-spoorovergang
-Crossing2
-spoorovergang
 #____________________________________cursor_____________________________________
 #____________________________________cursor_____________________________________
 Baum
@@ -582,8 +512,6 @@ Remove
 Verwijderen
 Schedule
 Halte
-ShipDepotEW
-Scheepswerf (OW)
 ShipDepotNS
 Scheepswerf (NZ)
 Signal
@@ -604,14 +532,8 @@ factory_Autohaus_details
 Autodealer details
 factory_Autohersteller_details
 Autofabriek details
-factory_bakery_details
-Bakkerij details
-factory_brewery_details
-Brouwerij details
 factory_Buchgrosshandel_details
 Boekhandel details
-factory_cannery_details
-Conservenfabriek details
 factory_Cementmill_details
 Cementmolen details
 factory_ChemicalPlant_details
@@ -620,16 +542,10 @@ factory_CHEMIST_details
 Drogisterij details
 factory_Concretefactory_details
 Betonfabriek details
-factory_cow_farm_details
-Veehouderij details
-factory_dairy_details
-Melkfabriek details
 factory_Druckerei_details
 Drukkerij details
 factory_Erzbergwerk_details
 IJzerertsmijn details
-factory_fish_pond_details
-Visvijver details
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -640,14 +556,8 @@ Autohaus
 Auto dealer
 Autohersteller
 Autofabriek
-bakery
-Bakkerij
-brewery
-Brouwerij
 Buchgrosshandel
 Boekhandel
-cannery
-Conservenfabriek
 Cementmill
 Cementfabriek
 ChemicalPlant
@@ -656,24 +566,10 @@ CHEMIST
 Drogist (door Seth)
 Concretefactory
 Betonfabriek
-cow_farm
-Veehouderij
-dairy
-Melkfabriek
 Druckerei
 Drukkerij
 Erzbergwerk
 IJzererts mijn
-fish_pond
-Visvijver
-fish_swarm
-Visgrond
-food_processing_plant
-Voedingsmiddelenfabriek
-grain_farm
-Graanboerderij
-grain_mill
-Graanmolen
 Kohlegrube
 Kolenmijn
 Kohlekraftwerk
@@ -704,14 +600,10 @@ Saegewerk
 Houtzagerij
 Sandquarry
 Zandgroeve
-scrap_yard
-Recyclecentrum
 Stahlwerk
 Staalfabriek
 Stonequarry
 Steengroeve
-supermarket
-Supermarkt
 TANKE
 Benzinestation
 Windkraftwerk
@@ -720,14 +612,10 @@ Windturbine
 #_____________________________________good______________________________________
 Autos
 auto's
-beer
-bier
 Bretter
 planken
 Buecher
 Boeken
-canned_food
-conserven
 Cement
 cement
 Chemicals
@@ -736,26 +624,14 @@ Concrete
 beton
 Eisenerz
 ijzererts
-fish
-vis
-flour
-meel
-food
-voedsel
 Gasoline
 benzine
-grain
-graan
 Holz
 hout
 Kohle
 kolen
-meat
-vlees
 Medicine
 Medicamenten
-milk
-melk
 Moebel
 meubels
 None
@@ -774,8 +650,6 @@ Stahl
 Staal
 Stone
 Steen
-waste
-afval
 #____________________________________ground_____________________________________
 #____________________________________ground_____________________________________
 Basement
@@ -854,10 +728,6 @@ Steam
 Stoom
 #____________________________________symbol_____________________________________
 #____________________________________symbol_____________________________________
-AirStop
-Pier
-BusStop
-Bushalte
 NewYear
 Nieuwjaar
 Passagiere
@@ -866,10 +736,6 @@ Post
 post
 Seasons
 Jaargetijden
-ShipStop
-Haven
-TrainStop
-overdekt station
 Waren
 Goederen
 #_____________________________________tree______________________________________
@@ -920,8 +786,6 @@ H-Trans BR212
 H-Trans BR103 (elektrisch)
 1Garrat
 RVg Garratt
-1Schienenbus
-H-Trans/TPI VT95 (dsw)
 1TPEllok
 TPI F7A
 221A
@@ -930,28 +794,16 @@ JC 221A (stoom)
 JC 221A tender
 2Ben155
 Bennhardt BR155 (elektrisch)
-2Dampflokomotive
-H-Trans 4-6-0 (stoom)
 2Diesellokomotive
 H-Trans BR218 (diesel)
 2Ellok
 H-Trans Tigress I (electro)
-2TPEllok
-TPI Class 86/2 (electro)
 3Ben185
 Bennhardt BR185 (electro)
 3Diesellokomotive
 H-Trans BR365
-4Ben204
-Bennhardt BR204
-5Ben220
-Bennhardt BR220
-6Ben228
-Bennhardt BR228
 707
 Boeing 707
-7BenE11
-Bennhardt E-11
 A3-5
 SBB A 3/5 (Zwitserland)
 A3-5_tender
@@ -966,8 +818,6 @@ Autotransportwagen
 Canonball Autotransporter
 Be5-7
 BLS Be 5/7
-Beiwagen
-H-Trans/TPI VT95 Passagierswagon
 Bretteranhaenger
 WF Ultd. Planken oplegger
 Brettertransporter
@@ -992,18 +842,8 @@ Cargosprinter-Mittel
 Cargosprinter vrachtwagon
 Cargosprinter-Steuer
 Cargosprinter duwmachine
-Cementanhaenger
-WF Ultd. Cement oplegger
 Cementtrailer
 Oplegger voor cement
-Cementtransporter
-WF Ultd. Cement vrachtwagen
-Cementwagen
-WF Ultd. Cement wagon
-ColinBigFerry
-Colin Cruise schip
-ColinFastFerry
-Colin snel veer
 Concept1Front
 Concept 1
 Concept1Mail
@@ -1018,18 +858,6 @@ Concept2Mail
 Concept 2 post wagen
 Concept2Pass
 Concept 2 passagierswagon
-Concretetransporter
-WF Ultd. Beton vrachtwagen
-Concretewagen
-PMNV beton mixer 12
-Cooling_Waggon
-Voedselwaggon met koeling
-DM8_CAR
-TPI Dm8 Passagierswagon
-DM8_LOK1
-TPI Dm8 (diesel)
-DM8_LOK2
-TPI Dm8 Achter stel (dsw)
 Erzanhaenger
 H-Trans IJzererts aanhangwagen
 Erztrailer
@@ -1054,8 +882,6 @@ Heavy_ore_truck
 Zware vrachtwagen voor erts
 Holzanhaenger
 JET Hout oplegger
-Holzschiff
-TPI/JET Hout Schip
 Holztrailer
 Oplegger voor hout
 Holztransporter
@@ -1076,8 +902,6 @@ HVPosttransporter
 DIBU/H-Trans Post wagen
 ICE_TD-front
 ICE-TD
-Ik26
-Serj Ikarus-260
 JNR_C11
 JNR C11 (2-6-4T)
 JR_9600
@@ -1086,8 +910,6 @@ JumboJet
 Boeing 747 "Jumbo Jet"
 Kohleanhaenger
 H-Trans Kolen oplegger
-Kohleschiff
-WF Ultd. Kolen schip
 Kohletransporter
 H-Trans Kolen vrachtwagen
 Kohlewagen
@@ -1096,30 +918,20 @@ Kunststofanhaenger
 H-Trans Kunststof oplegger
 Kunststofftransporter
 H-Trans Kunststof vrachtwagen
-Li6
-Serj LiAZ-677
 Lockhead_Tristar
 Lockheed Tristar
-Moebelanhaenger
-WF Ultd. Meubel oplegger
 Moebelschiff
 RX Meubelschip
-Moebeltransporter
-WF Ultd. Meubel vrachtwagen
 Moebelwagen
 VT Vienna Meubel wagon
 NeuOelwagen
 Olie wagon (80t)
 Oelanhaenger
 H-Trans Olietank oplegger
-Oeltankschiff
-TPI Lopomo Olie tanker
 Oelwagen
 VT Vienna Olie tanker
 Oiltrailer
 Oplegger voor olie
-OJetKunstoffschiff
-JET Kunststof schip
 OldOil
 Olie wagon (18t)
 Papieranhaenger
@@ -1144,30 +956,16 @@ PrPostwagen
 Post wagon I
 RenaultTH5
 Renault TH5 trekker
-S220_CAR
-TPI S220 Passagierswagon
-S220_LOK1
-TPI S220 (elektrisch)
-S220_LOK2
-TPI S220 Achterstel (elektrisch)
 Sandanhaenger
 WF Ultd. zand aanhanger
 Sandtransporter
 WF Ultd. Zand vrachtwagen
-Sandwagen
-WF Ultd./H-Trans Zand wagon
 schooner
 Schoener
 SD40-2-back
 SD40-2 achterstel
 SD40-2-front
 SD40-2
-Serj-Mini
-Serj Maxi-Taxi
-Serj_Gaz-4_Goods_Truck
-Serj Gaz-4 goederen truck
-Sloop
-Zeilboot voor posttransport
 SlowFerry
 H-Trans Passagiers schip
 Stahlanhaenger
@@ -1184,8 +982,6 @@ Stoneanhaenger
 WF Ultd. Steen aanhanger
 Stonetransporter
 WF Ultd. Steen vrachtwagen
-Stonewagen
-WF Ultd./H-Trans Steen wagon
 SuperConstellation
 Super Constellation
 T13
@@ -1204,14 +1000,8 @@ TB24
 Bernhard TB24
 teaclipper
 Theeklipper
-TENDER
-TPI Tender
 TPBeiwagen
 TPI VT98 Passagierswagon
-TPDiesel
-TPI Class 26 (diesel)
-TPI_Std_2-6-4T
-TPI Std 2-6-4T (stoom)
 TPPassagierwagen
 TPI Lopomo Passagierswagon
 TPSchienenbus
@@ -1226,8 +1016,6 @@ Tugboat
 Sleepboot
 VolvoFH12
 Volvo FH12 trekker
-waste wagon
-afvalwagon
 XMail
 X prototype mailwagon
 XTest

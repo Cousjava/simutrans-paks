@@ -5,7 +5,7 @@
 #                            Language: sk Slovenèina                           #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 16.01 2008                           #
+#                           Date Created: 26.02 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                             Jan Poláèek - Jerome                             #
@@ -32,8 +32,6 @@ Oce?ový ?elezni?ný
 #___________________________________building____________________________________
 01_CITY
 Radnica
-10_WOHN
-Kostol (od Trikkyho)\n
 A1_ALTE_KIRCHE
 Slávny starý kostol, ktorý\nmusí ka?dý aspo? raz\nvidiet'.\n
 A2_SCHLOSS1
@@ -46,8 +44,8 @@ A5_STONEHENGE
 Tajuplný kruh zo skál,\nstarodávny a plný mýtov.\n
 A6_DOME
 Táto o?arujúca stará\ngotická katedrála je ve?kou\nturistickou atrakciou.\n
-ANIM_CINEMA
-Multikino (od Trikkyho)\n
+BusStop
+Autobusová/elektri?ková\nzastávka\n
 DenkFlor
 Pamätník Flora ,,WF Ultd.''\nWautersa, stavite?a\ntovární.\n
 DenkHajo
@@ -66,8 +64,6 @@ DenkVM
 Pamätník Manfreda ,,VT\nVienna''  Tomaschitza,\n?elezni?ného stavite?a.\n
 DenkVolker
 Pamätník Volkera Meyera,\nktorý zdokonalil Simutrans v\nmnohých oblastiach.\n
-DRIVEINCINEMA
-Autokino\n
 FreightTrainStop
 ?elezni?ná nákladná stanica
 GCG1TrainStop
@@ -86,12 +82,16 @@ PSHall2TrainStop
 Jednoduchá halová ?el. stanica
 RUIN_0
 Stará ruina, ktorá stále\ndoká?e pritiahnut' mnoho\nnáv?tevníkov.\n
+ShipStop
+Jednoduchý lodný prístav\n
 STADIUM2
 Tento ?tadión je domovom\nmnohých zábavných\n?portových udalostí ! Mô?e\npojat' a? 25.000 divákov.\n
 Tennis_Court
 Tenisové kurty\n
 Theatre
 Divadlo\n
+TrainStop
+?elezni?ná osobná stanica\n
 Windmill
 Veterný mlyn\n
 #____________________________________cursor_____________________________________
@@ -108,40 +108,18 @@ Autohaus
 Autopredaj?a
 Autohersteller
 Automobilka
-bakery
-Pekáre?
-brewery
-Pivovar
 Buchgrosshandel
 Kníhkupectvo
-cannery
-Potr. konzerváre?
 Cementmill
 Cementáre?
 CHEMIST
 Lekáre? (od Setha)
 Concretefactory
 Betonáre?
-cow_farm
-Farma na dobytok
-dairy
-Mliekáre?
 Druckerei
 Tla?iare?
 Erzbergwerk
 ?eleznorudná ba?a
-fish_pond
-Chovný rybník
-fish_swarm
-Lovisko rýb
-food_processing_plant
-Potravinárska fabrika
-grain_farm
-Farma na obilie
-grain_mill
-Mlyn na obilie
-Incinerator
-Spa?ov?a
 Kohlegrube
 Uho?ná ba?a
 Kohlekraftwerk
@@ -170,14 +148,10 @@ Saegewerk
 Píla
 Sandquarry
 Ba?a na piesok
-scrap_yard
-Skládka odpadu
 Stahlwerk
 Oceliare?
 Stonequarry
 Kame?olom
-supermarket
-Supermarket
 TANKE
 ?erpacia stanica
 Windkraftwerk
@@ -186,40 +160,24 @@ Veterná elektráre?
 #_____________________________________good______________________________________
 Autos
 Autá
-beer
-Pivo
 Bretter
 Dosky
 Buecher
 Knihy
-canned_food
-Potr. konzervy
 Chemicals
 Chemikálie
 Concrete
 Betón
 Eisenerz
 ?elezná ruda
-fish
-Ryby
-flour
-Múka
-food
-Potraviny
 Gasoline
 Benzín
-grain
-Obilie
 Holz
 Drevo
 Kohle
 Uhlie
-meat
-Mäso
 Medicine
 Lie?ivá
-milk
-Mlieko
 Moebel
 Nábytok
 None
@@ -238,8 +196,6 @@ Stahl
 Oce?
 Stone
 Kamenie
-waste
-smeti
 #_____________________________________menu______________________________________
 #_____________________________________menu______________________________________
 ListTools
@@ -276,16 +232,10 @@ Steam
 para
 #____________________________________symbol_____________________________________
 #____________________________________symbol_____________________________________
-BusStop
-Autobusová/elektri?ková zastávka
 Passagiere
 Pasa?ieri
 Post
 Po?ta
-ShipStop
-Jednoduchý lodný prístav
-TrainStop
-?elezni?ná osobná stanica
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -298,40 +248,24 @@ H-Trans 0-4-0T
 H-Trans BR212
 1Ellok
 H-Trans BR103
-1Schienenbus
-H-Trans/TPI VT95 motor. voze? (DMU)
 1TPEllok
 TPI F7A
 2Ben155
 Bennhardt BR155
-2Dampflokomotive
-H-Trans 4-6-0
 2Diesellokomotive
 H-Trans BR218
 2Ellok
 CKD Pegas
-2TPEllok
-TPI radu 86/2
 3Ben185
 Bennhardt BR185
 3Diesellokomotive
 H-Trans BR365
-4Ben204
-Bennhardt BR204
-5Ben220
-Bennhardt BR220
-6Ben228
-Bennhardt BR228
-7BenE11
-Bennhardt E11
 Autotransportanhaenger
 Príves na autotransportér
 Autotransporter
 IVECO Autotransportér
 Autotransportwagen
 ATG Autotransportér
-Beiwagen
-H-Trans/TPI VB95 ?ahký voze? (DMU)
 Bretteranhaenger
 Príves na dosky
 Brettertransporter
@@ -346,34 +280,6 @@ Buchwagen
 VT Wien vagón na knihy
 Bus
 NovoPLAN autobus
-Cementanhaenger
-Príves na cement
-Cementtransporter
-VOLVO na cement
-Cementwagen
-Vagón na cement
-ColinBigFerry
-Colinov velký trajekt
-ColinFastFerry
-Colinov rýchly trajekt
-ColinMotorBus
-Ikarus 415 autobus
-Concretetransporter
-LIAZ na betón
-Concretewagen
-Vagón na betón
-Cooling_Container
-Mraziarenský kontainerový vagón
-Cooling_Truck
-MAN mraziarenský
-Cooling_Waggon
-Mraziarenský vagón
-DM8_CAR
-TPI Dm8 Pasa?iersky voze? (DMU)
-DM8_LOK1
-TPI Dm8 Motorový vlak (DMU)
-DM8_LOK2
-TPI Dm8 ukon?ovací voze? (DMU)
 Erzanhaenger
 Príves na ?eleznú rudu
 Erztransporter
@@ -382,16 +288,12 @@ Erzwagen
 Vagón na ?eleznú rudu
 FastFerry
 Rýchla pasa?ierska kompa
-Fishing_Boat
-Rybárska lo?
 H-Trans-Tiger-Car
 H-Trans-Tigress osobný voze?
 H-Trans-Tiger-Mail-Car
 H-Trans-Tigress po?tový vagón
 Holzanhaenger
 Príves na drevo
-Holzschiff
-Lo? na drevo
 Holztransporter
 Daewoo-Avia na drevo
 Holzwagen
@@ -408,16 +310,8 @@ Horsewoodcariage
 Ko? na drevo
 HVPosttransporter
 Mercedes na po?tu
-Ik26
-Karosa B732 autobus
-IL-209S_Goods_Trailer
-Príves k MAN IL-209S na tovar
-IL-209S_Goods_Truck
-MAN IL-209S na tovar
 Kohleanhaenger
 Príves na uhlie
-Kohleschiff
-Lo? na uhlie
 Kohletransporter
 Mercedes na uhlie
 Kohlewagen
@@ -426,32 +320,18 @@ Kunststofanhaenger
 Príves na plasty
 Kunststofftransporter
 Daewoo-Avia na plasty
-Li6
-LIAZ-Granus autobus
 Lowa
 Elektri?ka T3
 Lowa_Anhaenger
 Vle?ný elektri?kový voze? T3
-Milk_Truck
-IVECO cisterna na mlieko
-Milk_Waggon
-Cisternový vagón na mlieko
-Moebelanhaenger
-Príves na nábytok
 Moebelschiff
 Lo? na nábytok
-Moebeltransporter
-LIAZ na nábytok
 Moebelwagen
 Vagón na nábytok
 Oelanhaenger
 Cisternový príves na ropu
-Oeltankschiff
-Ropný tanker
 Oelwagen
 VT Wien cisternový vagón ropu
-OJetKunstoffschiff
-Lo? na plasty
 Papieranhaenger
 Príves na papier
 Papiertransporter
@@ -466,22 +346,10 @@ Posttransporter
 Daewoo-Avia na po?tu
 Postwagen
 H-Trans Po?tový/bato?inový voze?
-S220_CAR
-TPI S220 Pasa?iersky voze? (EMU)
-S220_LOK1
-TPI S220 Motorový vlak (EMU)
-S220_LOK2
-TPI S220 ukon?ovací voze? (EMU)
 Sandanhaenger
 Príves na piesok
 Sandtransporter
 VOLVO na piesok
-Sandwagen
-Vagón na piesok
-Serj-Mini
-SOR B7.5 autobus
-Serj_Gaz-4_Goods_Truck
-IVECO na tovar
 SlowFerry
 Pasa?ierska kompa
 Stahlanhaenger
@@ -496,20 +364,14 @@ Stoneanhaenger
 Príves na kamenie
 Stonetransporter
 VOLVO na kamenie
-Stonewagen
-Vagón na kamenie
 Tanklastzug
 IVECO cisterna na rop. látky
 Tatra-T4
 Elektri?ka T4
 Tatra-T4_Wagon
 Vle?ný elektri?kový voze? T4
-TENDER
-TPI Tender
 TPBeiwagen
 TPI VB98 lahký voze? (DMU)
-TPDiesel
-TPI radu 26
 TPPassagierwagen
 TPI Lopomo Pasa?iersky voze?
 TPSchienenbus

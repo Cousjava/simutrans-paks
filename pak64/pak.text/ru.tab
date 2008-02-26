@@ -5,10 +5,12 @@
 #                             Language: ru Russian                             #
 #                                Encoding: UTF-8                               #
 #                                Font : cyr.bdf                                #
-#                           Date Created: 16.01 2008                           #
+#                           Date Created: 26.02 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Aleks Revo - AleksRevo                            #
+#                                    note:                                     #
+#                           Boryslav Larin - brabadu                           #
 #                                    note:                                     #
 #                        Alexander Kornienko - KorneySan                       #
 #                                    note:                                     #
@@ -28,8 +30,6 @@ SteelRail
 #___________________________________building____________________________________
 01_CITY
 Мэрия
-10_WOHN
-Церковь\n
 A1_ALTE_KIRCHE
 Известная старая\nцерковь.   Это\nфантастическое  строение\nстоит увидеть каждому.\n
 A2_SCHLOSS1
@@ -42,8 +42,6 @@ A5_STONEHENGE
 Древнее кольцо камней. \nОчень загадочное\nстроение!\n
 A6_DOME
 Прекрасный старый собор \nпривлекательнейшее\nздание.\n
-ANIM_CINEMA
-Большой кинотеатр\n
 DenkFlor
 Этот монумент посвящён\nFlor'у 'WF Ultd.' Wauters'у\nизвестному инжинеру\nсоздавшему столько\nвеликолепных авто- и ж/д\nтранспортных средств. Он\nтакже широко известен\nразработкой множества\nпрекрасно работающих\nпредприятий.\n
 DenkHajo
@@ -62,8 +60,6 @@ DenkVM
 Этот монумент посвящён\nManfred'у 'VT Vienna'\nTomaschitz'у  известному\nинжинеру разработавшему\nпревосходный ж/д\nтранспорт.\n
 DenkVolker
 Эта Ступа была построена\nVolker'ом Meyer'ом,\nулучшившим Simutrans в\nсамых разных областях.\n
-DRIVEINCINEMA
-Автокинотеатр\n
 STADIUM2
 Большой стадион   -\nместо для большого \nколичества волнующих \nспортивных событий!   Он\nвмещает 25 000.\n
 Windmill
@@ -76,36 +72,14 @@ Autohaus
 Автомагазин
 Autohersteller
 Автозавод
-bakery
-Пекарня
-brewery
-Пивоваренный завод
 Buchgrosshandel
 Книжный оптовик
-cannery
-Консервная фабрика
 CHEMIST
 Химик
-cow_farm
-Животноводческая ферма
-dairy
-Маслобойня
 Druckerei
 Типография
 Erzbergwerk
 Железодобывающая шахта
-fish_pond
-Рыбоводческое хозяйство
-fish_swarm
-Fish swarm
-food_processing_plant
-Пищевой комбинат
-grain_farm
-Зерноферма
-grain_mill
-Мельница
-Incinerator
-Мусоросжигатель
 Kohlegrube
 Угольная шахта
 Kohlekraftwerk
@@ -128,12 +102,8 @@ Raffinerie
 Перерабатывающий завод (Пластик)
 Saegewerk
 Лесопилка
-scrap_yard
-Свалка
 Stahlwerk
 Железный карьер
-supermarket
-Супермаркет
 TANKE
 Автозаправочная станция
 Windkraftwerk
@@ -142,14 +112,10 @@ Windkraftwerk
 #_____________________________________good______________________________________
 Autos
 Автомобили
-beer
-Пиво
 Bretter
 Доски
 Buecher
 Книги
-canned_food
-Консервы
 Cement
 Цемент
 Chemicals
@@ -158,26 +124,14 @@ Concrete
 Бетон
 Eisenerz
 Железная руда
-fish
-Рыба
-flour
-Мука
-food
-Пища
 Gasoline
 Бензин
-grain
-Зерно
 Holz
 Древесина
 Kohle
 Уголь
-meat
-Мясо
 Medicine
 Медикаменты
-milk
-Молоко
 Moebel
 Мебель
 Oel
@@ -194,8 +148,6 @@ Stahl
 Сталь
 Stone
 Камень
-waste
-Отходы
 #_____________________________________misc______________________________________
 #_____________________________________misc______________________________________
 Construction
@@ -244,40 +196,24 @@ H-Trans 0-4-0T (пар)
 H-Trans BR212 (дизель)
 1Ellok
 H-Trans BR103 (электр.)
-1Schienenbus
-H-Trans/TPI VT95 (dmu)
 1TPEllok
 TPI F7A (дизель)
 2Ben155
 Bennhardt BR155
-2Dampflokomotive
-H-Trans 4-6-0 (пар)
 2Diesellokomotive
 H-Trans BR218 (дизель)
 2Ellok
 H-Trans Tigress I (электр.)
-2TPEllok
-TPI Class 86/2
 3Ben185
 Bennhardt BR185
 3Diesellokomotive
 H-Trans BR365 (дизель)
-4Ben204
-Bennhardt BR204
-5Ben220
-Bennhardt BR220
-6Ben228
-Bennhardt BR228
-7BenE11
-Bennhardt E11
 Autotransportanhaenger
 Прицеп автотранспортёра H-Trans
 Autotransporter
 Автротранспортёр H-Trans
 Autotransportwagen
 грузовой вагон TPI Lopomo (а/м)
-Beiwagen
-пассажирский вагон H-Trans/TPI VT95
 Bretteranhaenger
 Прицеп WF Ultd. (доски)
 Brettertransporter
@@ -292,30 +228,6 @@ Buchwagen
 Грузовой вагон VT Vienna
 Bus
 Автобус H-Trans
-Cementanhaenger
-Прицеп WF Ultd. (цемент)
-Cementtransporter
-Грузик WF Ultd. (цемент)
-Cementwagen
-Грузовой вагон WF Ultd. (цемент)
-Concretetransporter
-Грузовик WF Ultd. (бетон)
-Concretewagen
-Грузовой вагон WF Ultd. (бетон)
-Cooling_Container
-Холодильник
-Cooling_Truck
-Рефрижератор
-Cooling_Waggon
-Рефрижератор
-Deponielaster
-Мусоровоз
-DM8_CAR
-Пассажирский вагон TPI Dm8
-DM8_LOK1
-Ведущий локомотив TPI Dm8 (дизель)
-DM8_LOK2
-Замыкающий локомотив TPI Dm8 (дизель)
 Erzanhaenger
 Прицеп H-Trans
 Erztransporter
@@ -324,16 +236,12 @@ Erzwagen
 Грузовой вагон H-Trans
 FastFerry
 Пассадирский паром O.Bang (hovercraft)
-Fishing_Boat
-Рыболовная лодка
 H-Trans-Tiger-Car
 Автобус H-Trans Tigress
 H-Trans-Tiger-Mail-Car
 Почтовая машина H-Trans Tigress
 Holzanhaenger
 Прицеп JET (древесина)
-Holzschiff
-Корабль TPI/JET (древесина)
 Holztransporter
 Грузовик H-Trans (древесина)
 Holzwagen
@@ -350,12 +258,8 @@ Horsewoodcariage
 Лошадиная повозка для дерева
 HVPosttransporter
 Почтовый фургон DIBU/H-Trans
-Ik26
-Автобус Serj Ikarus-260
 Kohleanhaenger
 Прицеп H-Trans MK2 (уголь)
-Kohleschiff
-Корабль WF Ultd. (уголь)
 Kohletransporter
 Грузовик H-Trans (уголь)
 Kohlewagen
@@ -364,28 +268,14 @@ Kunststofanhaenger
 Прицеп H-Trans (пластик)
 Kunststofftransporter
 Грузовик H-Trans (пластик)
-Li6
-Автобус Serj LiAZ-677
-Milk_Truck
-Молочная цистерна
-Milk_Waggon
-Молочная цистерна
-Moebelanhaenger
-Прицеп WF Ultd. (мебель)
 Moebelschiff
 Корабль TPI/JET (товары)
-Moebeltransporter
-Грузовой фургон WF Ultd. (товары)
 Moebelwagen
 лёгкий грузовой вагон VT Vienna
 Oelanhaenger
 Прицеп-нефтецистерна H-Trans
-Oeltankschiff
-Танкер TPI Lopomo
 Oelwagen
 Нефтяная цистерна VT Vienna
-OJetKunstoffschiff
-Корабль JET (пластик)
 Papieranhaenger
 Прицеп Trikky (бумага)
 Papiertransporter
@@ -400,22 +290,10 @@ Posttransporter
 Почтовый фургон H-Trans
 Postwagen
 Почтовый/багажный вагон H-Trans
-S220_CAR
-Пассажирский вагон TPI S220 (электр.)
-S220_LOK1
-Ведущий локомотив TPI S220 (электр.)
-S220_LOK2
-Замыкающий локомотив TPI S220 (электр.)
 Sandanhaenger
 Прицеп WF Ultd. (песок)
 Sandtransporter
 Грузовик WF Ultd. (песок)
-Sandwagen
-Грузовой вагон WF Ultd./H-Trans (песок)
-Serj-Mini
-Serj Maxi-Taxi
-Serj_Gaz-4_Goods_Truck
-Грузовик Serj Gaz-4 (товары)
 SlowFerry
 Пассажирский паром H-Trans
 Stahlanhaenger
@@ -430,24 +308,14 @@ Stoneanhaenger
 Прицеп WF Ultd. (камни)
 Stonetransporter
 грузовик WF Ultd. MK2 (камни)
-Stonewagen
-Грузовой вагон WF Ultd./H-Trans (камни)
 Tanklastzug
 Нефтецистерна H-Trans
-TENDER
-TPI Tender
 TPBeiwagen
 Пассажирский вагон TPI VT98
-TPDiesel
-TPI Class 26
-TPI_Std_2-6-4T
-TPI Std 2-6-4T
 TPPassagierwagen
 Пассажирский вагон TPI
 TPSchienenbus
 TPI VT98 (дизель)
-waste wagon
-Открытый вагон для отходов
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road

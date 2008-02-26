@@ -1,0 +1,30 @@
+# categories:
+# 0 = type defined (unique)
+# 1 = piece good (i.e. crates of XY)
+# 2 = mass good (i.e. ore, sand, coal)
+# 3 = oil type fluids
+# 4 = cooled goods
+# 5 = liquid food
+# 6 = long goods
+# 7 = powders (lime, plastics)
+obj=program_text
+name=CATEGORY_01
+--
+obj=program_text
+name=CATEGORY_02
+--
+obj=program_text
+name=CATEGORY_03
+--
+obj=program_text
+name=CATEGORY_04
+--
+obj=program_text
+name=CATEGORY_05
+--
+obj=program_text
+name=CATEGORY_06
+--
+obj=program_text
+name=CATEGORY_07
+--

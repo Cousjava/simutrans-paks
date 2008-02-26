@@ -5,7 +5,7 @@
 #                             Language: cz Cestina                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 16.01 2008                           #
+#                           Date Created: 26.02 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                   - hernajs                                  #
@@ -54,8 +54,14 @@ mlm_concrete_bridge
 Betonový most magnetické dráhy
 ModernRoad
 Moderní silnièní most z pøedpjatého betonu
+MonorailRamp
+Nájezd jednokolejky
+Schiffhebewerk
+Lodní zdvi¾
 SteelRail
 Nosníkový ¾eleznièní most
+tb_classic_road
+Betonový most
 ViaductRail
 ®eleznièní viadukt
 WoodenRoad
@@ -82,8 +88,8 @@ Radnice
 Radnice
 04_CITY_B
 Radnice
-10_WOHN
-Kostel\n
+04_CITY_C
+Radnice
 1930AirDepot
 Hangár (1930)
 1headquarter
@@ -112,20 +118,24 @@ AirTerminal477
 Leti¹tní terminál (1950)
 anfangShipStop
 Pøístavi¹tì
-ANIM_CINEMA
-Kino\n
 Avila_Big_StationBlg
 Velká nádra¾ní budova
 Avila_Small_StationBlg
 Malá nádra¾ní budova
 Avila_Warehouse_StationBlg
 Skladi¹tì
+BigPostOffice
+Velká po¹ta
 BigTerminal477
 Velký moderní terminál
 Bulk_StationBlg
 Sklady sypkého zbo¾í
+BusStop
+Postavit\nautobusovou/tramvajovou\nzastávku\n
 CarDepot
 Depo pro silnièní vozidla
+Car_StationBlg
+Pøekladi¹tì automobilù
 ChannelStop
 Molo na vodním kanále
 COM_00_01
@@ -134,74 +144,42 @@ COM_00_02
 Nezávislá benzínová stanice\n\nJe nezávislá na na\ntransportních korporacích\njako ta tvoje, ale není\npotøeba ji hned bourat.\nNevezme ¾ádné tvé\nzákazníky\n
 COM_00_03
 Opravna aut\n
-COM_00_04
-Trikyho park\n
 COM_00_05
 Banka\n
 COM_00_06
 Kavárna\n
-COM_00_07
-Malá kanceláøská budova s\nparkovi¹tìm\n
 COM_00_08
 Èin¾ovní dùm s obchody v\npøízemí\n
 COM_00_10
 Kanceláøský vìzák\n
 COM_00_12
 Kaceláøská budova\n
-COM_00_13
-Kanceláøe poji¹»ovny\n
 COM_00_14
 Moderní kanceláøská\nbudova s prosklenými\nschodi¹ti\n
-COM_00_16
-Moderní kaceláøská budova\n
 COM_00_18
 Moderní vì¾ák s\nkanceláøemi\n
-COM_00_19
-Vysoký vì¾ák s kanceláøemi\nArchitekt chtìl pùvodnì\nnapodobit Empire state\nbuilding, ale nedostal\npovolení na víc ne¾ deset\npater.\n
-COM_00_20
-Nemocnice s heliportem\nvehicle\n
-COM_00_21
-Grand Hotel 'Barcelona\nOktanon'\n
 COM_00_22
 Budova OSN, pro somálskou\ndelegaci\n
-COM_00_23
-Supermoderní hotelový\nkomplex s velkou bílou koulí\nna vrcholu.\n
 COM_01_01
 Odtud mù¾ete vyrazit na\nnezapomenutelný\nvyhlídkový let\nhorkovzdu¹ným balónem!\n
 COM_01_09
 Kino\n
-COM_01_12
-Obchodní dùm\n
-COM_01_13
-Obchodní støedisko\nzamìøene hlavnì na prodej\nbakelitových modernì\nvypadajících vìcí.\n
-COM_01_16
-Kanceláøe\n
 COM_01_17
 Kanceláøská budova.\n
 COM_01_18
 Vý¹ková kanceláøská\nbudova\n
-COM_01_19
-Moderní kanceláøská\nbudova\n
 COM_01_20
 Kanceláøská budova s\nheliportem pro pana\ngenerálního\n
 COM_01_22
 Kanceláøská budova\n
-COM_01_23
-Kanceláøská budova s\nnadèasovým vhledem\n
 COM_02_02
 parkovi¹tì\n
 COM_02_13
 Kino Mír\n
-COM_02_14
-Parkovací budova\n
-COM_02_15
-Kanceláøská budova, v\npopøedí parèík se\nsekratáøkou a øeditelem.\n
 COM_02_16
 Kanceláøe, s minimálním\nmno¾stvím oken.\n
 COM_02_17
 Kanceláøe s masivní\nventilací. \n
-COM_02_20
-Sídlo nejmenované firmy\n
 COM_03_15
 Dùm kultury\n
 COM_10_01
@@ -226,8 +204,6 @@ DenkVM
 Tento pomník je vìnován\nManfredu 'VT Vienna'\nTomaschitzovi, slavnému\nin¾enýrovi, který navrhl\nspoustu kvalitních\n¾eleznièních vozidel.\n
 DenkVolker
 Postaveno Volkerem\nMeyerem, který zdokonalil\nSimutrans v mnoha, mnoha\noblastech.\n
-DRIVEINCINEMA
-Autokino\n
 Feste
 Pevnost\n\nTato témìø nedobytná pevnost\nbyla zalo¾ena zaèátkem 15.\nstoletí.\n
 FreightTrainStop
@@ -250,24 +226,14 @@ IND_00_05
 Vodojem\n
 IND_00_06
 Továrna\n
-IND_00_07
-Laboratoø.\n\nTajná laboratoø obehnaná\nelektrickým ohradníkem\n
-IND_00_08
-Strojírna\n
 IND_00_09
 Skladi¹tì uhlí\n
 IND_00_10
 Malá továrna\n
-IND_00_11
-Vet¹í továrna\n
 IND_00_12
 Strojírna\n
-IND_00_13
-Hrnèíøská dílna\n
 IND_00_14
 Továrna na optiku\n
-IND_00_15
-Kovodílna\n
 IND_00_16
 Moderní továrna\n
 IND_00_17
@@ -280,8 +246,6 @@ IND_01_03
 Nádr¾ na kapalný dusík\n
 IND_01_04
 Stodola\n
-IND_01_05
-Plynová nádr¾\n
 IND_01_06
 Postar¹í továrna postavená\nz èervených neomítaných\ncihel\n
 IND_01_07
@@ -344,8 +308,6 @@ RES_00_03
 Malý postar¹í domek\n
 RES_00_04
 Pøízemní domek\n
-RES_00_05
-Rodinný dvojdomek. Tenké\nzdi obèas nepøispívají k\ndobrým sousedským\nvztahùm, zejména od doby\nco kluk od vedle dostal\nnovou soupravu bicích. (Na\nkterou samozøejmì neumí hrát.)\n\n
 RES_00_06
 Fontána. I kdy¾ to není\npøímo ¾enevská fontána,\ntak stále potì¹í\nkolemjdoucí, zejména v\nlétì.\n
 RES_00_07
@@ -362,10 +324,6 @@ RES_00_12
 Vila \n
 RES_00_13
 Rodinný dvojdomek\n
-RES_00_14
-Malá budova s apartmány\n
-RES_00_15
-Malá budova s byty\n
 RES_00_16
 Stará vila\n
 RES_00_17
@@ -374,8 +332,6 @@ RES_00_18
 Star¹í bytovka s bilboardem\n
 RES_00_19
 Moderní dùm plný\napartmánù\n
-RES_00_20
-Panelový dùm\n
 RES_00_21
 Panelák\n\nPatøí mezi díla vrcholného\nreálného socialismu.\nNetøeba se bát, tvoje\ndopravní firmièka nebude\nzestátnìna.\n
 RES_00_23
@@ -384,10 +340,6 @@ RES_01_01
 Malý domeèek se zahradou\n
 RES_01_02
 Áèkový dùm\n
-RES_01_03
-Døevìný domek\n
-RES_01_04
-Velký pøízemní dùm\n
 RES_01_05
 Domek\n
 RES_01_07
@@ -398,22 +350,12 @@ RES_01_10
 Moderní vícepatrová vila\n
 RES_01_12
 Cihlová bytovka\n
-RES_01_13
-Moderní rodinný dvojdomek\n
-RES_01_14
-Malé luxusní apartmány\n
 RES_01_15
 Bytovka\n
 RES_01_16
 Øadovky\n
-RES_01_17
-Budova s byty\aa obchody\n
 RES_01_18
 Èin¾ovní dùm\n
-RES_01_19
-Vì¾ák s apartmány\n
-RES_01_20
-Vì¾ák s kanceláøemi\n
 RES_01_21
 Moderní vì¾ák\n
 RES_01_22
@@ -422,14 +364,14 @@ RES_01_23
 Vý¹ková budova s byty.\nZákladní prvek ka¾dého\nsídli¹tì\n
 RES_02_01
 Chý¹e v palmovém háji\n
-RES_02_02
-Domeèek\n
 RUIN_0
 Zøícenina hradu\n\nPro turisty je také velmi\nzajímavá tajemná historie\nhradu.\n
 SandStationMHz
 Stanice bez perónu
 ShipDepot
 Lodìnice
+ShipStop
+Postavit pøístav\n
 STADIUM2
 Velký stadion Tento veliký\nstadion s kapacitou 25 000\nosob èasto hostí rozlièné\nsportovní události.\n
 Tennis_Court
@@ -442,6 +384,8 @@ TowerMoistboy
 Leti¹tní vì¾ (by Moistboy)
 TrainDepot
 ®eleznièní depo
+TrainStop
+Postavit stanici\n
 TramDepot
 Vozovna tramvají
 VictorianStation
@@ -464,12 +408,6 @@ Roadster
 Roadster
 yellow_car
 ®luté auto
-#___________________________________crossing____________________________________
-#___________________________________crossing____________________________________
-Crossing1
-Pøejezd
-Crossing2
-Pøejezd
 #____________________________________cursor_____________________________________
 #____________________________________cursor_____________________________________
 Baum
@@ -496,14 +434,8 @@ Autohaus
 Autosalón
 Autohersteller
 Automobilka
-bakery
-Pekaøství
-brewery
-Pivovar
 Buchgrosshandel
 Kni¾ní velkoobchod
-cannery
-Konzervárna
 Cementmill
 Cementárna
 ChemicalPlant
@@ -512,26 +444,10 @@ CHEMIST
 Lékárna
 Concretefactory
 Betonárka
-cow_farm
-Kravín
-dairy
-Mlékárna
 Druckerei
 Tiskárna
 Erzbergwerk
 ®eleznorudný dùl
-fish_pond
-Chovný rybník
-fish_swarm
-Rybí hejno
-food_processing_plant
-Závod na výrobu potravin
-grain_farm
-Obilná pole
-grain_mill
-Mlýn
-Incinerator
-Spalovna odpadkù
 Kohlegrube
 Uhelný dùl
 Kohlekraftwerk
@@ -562,14 +478,10 @@ Saegewerk
 Pila
 Sandquarry
 Píseèný lom
-scrap_yard
-Recyklaèní dvùr
 Stahlwerk
 Slévárna
 Stonequarry
 Kamenolom
-supermarket
-Supermarket
 TANKE
 Èerpací stanice
 Windkraftwerk
@@ -578,14 +490,10 @@ Vìtrná elektrárna
 #_____________________________________good______________________________________
 Autos
 aut
-beer
-piva
 Bretter
 prken
 Buecher
 knih
-canned_food
-konzerv
 Cement
 cementu
 Chemicals
@@ -594,26 +502,14 @@ Concrete
 betonu
 Eisenerz
 ¾el. rudy
-fish
-ryb
-flour
-mouky
-food
-jídla
 Gasoline
 benzínu
-grain
-obilí
 Holz
 døeva
 Kohle
 uhlí
-meat
-masa
 Medicine
 lékù
-milk
-mléka
 Moebel
 nábytku
 None
@@ -632,8 +528,6 @@ Stahl
 oceli
 Stone
 kamene
-waste
-odpadky
 #____________________________________ground_____________________________________
 #____________________________________ground_____________________________________
 Fence
@@ -708,8 +602,6 @@ Diesel
 Kouø naftového motoru
 #____________________________________symbol_____________________________________
 #____________________________________symbol_____________________________________
-BusStop
-Postavit autobusovou/tramvajovou zastávku
 Electricity
 pod napìtím
 Message
@@ -728,10 +620,6 @@ Post
 Po¹ty
 Seasons
 Roèní období
-ShipStop
-Postavit pøístav
-TrainStop
-Postavit stanici
 Waren
 Zbo¾í
 #_____________________________________tree______________________________________
@@ -742,8 +630,6 @@ Latschenkiefer
 Horská borovice\n
 Palmtree1
 Palma\n
-Palmtrees
-Palmový háj\n
 Tree4
 Borovice\n
 Tree5
@@ -776,38 +662,24 @@ H-Trans BR212
 H-Trans BR103
 1Garrat
 RVg Garratt
-1Schienenbus
-H-Trans/TPI VT95
 1TPEllok
 TPI F7A
 2Ben155
 Bennhardt BR155
-2Dampflokomotive
-H-Trans 4-6-0
 2Diesellokomotive
 H-Trans BR218
 2Ellok
 H-Trans Tigress I
 2Garrat
 RVg Garratt (støed)
-2TPEllok
-TPI Class 86/2
 3Ben185
 Bennhardt BR185
 3Diesellokomotive
 H-Trans BR365
 3Garrat
 RVg Garratt (konec)
-4Ben204
-Bennhardt BR204
-5Ben220
-Bennhardt BR220
-6Ben228
-Bennhardt BR228
 707
 Boeing 707
-7BenE11
-Bennhardt E11
 A3-5
 A 3/5 (©výcarské federální dráhy)
 A380
@@ -820,8 +692,6 @@ Autotransporter
 H-Trans nákladní vùz na auta
 Autotransportwagen
 TPI Lopomo vagón na auta
-Beiwagen
-H-Trans/TPI VT95 osobní vagón
 Boxcar
 Vagón na kusové zbo¾í
 BR38-Tender
@@ -852,48 +722,16 @@ Cargosprinter-Mittel
 CargoSprinter - vagón
 Cargosprinter-Steuer
 CargoSprinter - zadní vùz
-Cementanhaenger
-WF Ultd. pøívìs na cement
 Cementtrailer
 Pøívìs na cement
-Cementtransporter
-WF Ultd. nákl. auto na cement
-Cementwagen
-WF Ultd. nákladní vagón na cement
-ColinBigFerry
-Colin velký trajekt
-ColinFastFerry
-Colin rychlý trajekt
 Comet
 De Havilland 'Kometa'
 Concorde
 Concorde
-Concretetransporter
-WF Ultd. nákl. auto na beton
-Concretewagen
-WF Ultd. nákladní vagón na beton
-Cooling_Container
-Chladící pøívìs
-Cooling_Truck
-Mrazící auto
-Cooling_Waggon
-Nákladní mrazící vagón
 DC-3
 Dacota DC-3
-Deponielaster
-Popeláøské auto
-Deponielaster2
-Popeláøské auto
-DM8_CAR
-TPI Dm8 osobní vagón
-DM8_LOK1
-TPI Dm8 pøední lokomotiva
-DM8_LOK2
-TPI Dm8 zadní lokomotiva
 Doubledeck_city_bus
 Dvoupatrový mìstský autobus
-Doubledeck_intercitybus
-Dvoupatrový mezimìstský autobus
 Eb3-5
 Eb3-5
 ED17
@@ -908,8 +746,6 @@ Erzwagen
 H-Trans nákl. vagón na sypké zbo¾í
 FastFerry
 O.Bang Fast Ferry vzná¹edlo
-Fishing_Boat
-Rybáøská loï
 H-Trans-Tiger-Car
 H-Trans Tigress osobní vagón
 H-Trans-Tiger-Mail-Car
@@ -920,8 +756,6 @@ Heavy_ore_truck
 Tì¾ký sklápìè
 Holzanhaenger
 JET pøívìs na døevo
-Holzschiff
-TPI/JET nákladní loï na døevo
 Holztransporter
 H-Trans nákladní auto na døevo
 Holzwagen
@@ -938,16 +772,10 @@ Horsewoodcariage
 Vozík na døevo
 HVPosttransporter
 DIBU/H-Trans po¹tovní dodávka
-Ik26
-Serj Ikarus 260
-IL-209S_Goods_Truck
-IL 209S dodávka na kusové zbo¾í
 JumboJet
 Boeing 747 'Jumbo Jet'
 Kohleanhaenger
 H-Trans pøívìs na sypké zbo¾í
-Kohleschiff
-WF Ultd. nákl. loï na sypké zbo¾í
 Kohletransporter
 H-T nákladní auto na sypké zbo¾í
 Kohlewagen
@@ -956,50 +784,28 @@ Kunststofanhaenger
 H-Trans pøívìs na plasty
 Kunststofftransporter
 H-Trans nákladní auto na plasty
-Li6
-Serj Karosa 677
 logs
 Vleèené klády
 Lowa
 Tramvaj Lowa
 Lowa_Anhaenger
 Tramvaj Lowa (vleèòák)
-Milk_Truck
-Cisterna na mléko
-Milk_Waggon
-Nákladní vagón na mléko
-MJHN_Avocet
-MJHN Avocet
-MJHN_Deltic
-BR 55 'Deltic'
-Moebelanhaenger
-WF Ultd. pøívìs na kusové zbo¾í
 Moebelschiff
 Loï na kusové zbo¾í
-Moebeltransporter
-WF Ultd. nákl. auto na kusové zbo¾í
 Moebelwagen
 VT-V nákl. vagón na kusové zbo¾í
-Muellschiff
-Nákladní loï na odpadky
 NeuOelwagen
 Cisterna na ropu/benzín (80m2)
 Oelanhaenger
 H-T pøípojná cist. na ropu/benzín
-Oeltankschiff
-TPI ropný tanker
 Oelwagen
 VT Vienna cisterna na ropu/benzín
 Oilbarge
 Nákladní èlun na ropu
 Oiltrailer
 Pøívìsná cisterna na ropu
-OJetKunstoffschiff
-JET nákladní loï na plasty
 OldOil
 Cisterna na ropu/benzín (18m2)
-PaddelSteamer
-Kolesový parník
 Papieranhaenger
 TRK pøívìs na papír
 Papiertransporter
@@ -1018,26 +824,12 @@ Postwagen
 H-Trans Po¹tovní/Zavazadlový vùz
 RenaultTH5
 Renault TH5
-S220_CAR
-TPI S220 osobní vagón
-S220_LOK1
-TPI S220 pøední lokomotiva
-S220_LOK2
-TPI S220 zadní lokomotiva
 Sandanhaenger
 WF Ultd. pøívìs na sypké zbo¾í
 Sandtransporter
 WF Ultd. nákl. auto na sypké zbo¾í
-Sandwagen
-WF/H-T nákl. vagón na sypké zbo¾í
 schooner
 Osobní ¹kuner
-Serj-Mini
-Serj Maxi-Taxi
-Serj_Gaz-4_Goods_Truck
-Serj Gaz 4 dodávka na kusové zbo¾í
-Sloop
-Po¹tovní ¹alupa
 SlowFerry
 H-Trans osobní trajekt
 Stahlanhaenger
@@ -1052,22 +844,14 @@ Stoneanhaenger
 WF Ultd. pøívìs na sypké zbo¾í
 Stonetransporter
 WF Ultd. nákl. auto na sypké zbo¾í
-Stonewagen
-WF/H-T nákl. vagón na sypké zbo¾í
 Tanklastzug
 H-Trans cisterna na ropu/benzín
 Tatra-T4
 Tatra T4
 Tatra-T4_Wagon
 Tatra T4 (vleèòák)
-TENDER
-TPI vagón na uhlí pro lokomotivu
 TPBeiwagen
 TPI VT98 osobní vagón
-TPDiesel
-TPI Class 26
-TPI_Std_2-6-4T
-TPI Std 2-6-4T
 TPPassagierwagen
 TPI osobní vagón
 TPSchienenbus
@@ -1080,8 +864,6 @@ Tugboat
 remorkér
 VolvoFH12
 Volvo FH12
-waste wagon
-Nákladní vagón na odpadky
 XMail
 Vùz jednokolejky pro pøepravu po¹ty
 XTest

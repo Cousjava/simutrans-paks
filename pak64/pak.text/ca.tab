@@ -5,7 +5,7 @@
 #                              Language: ca Catala                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 16.01 2008                           #
+#                           Date Created: 26.02 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                           Marc Brugarolas - lupuzz                           #
@@ -26,8 +26,6 @@ Estructura elevada
 #___________________________________building____________________________________
 01_CITY
 Ajuntament
-10_WOHN
-Església (per Trikky)\n
 A1_ALTE_KIRCHE
 Una famosa catedral  antiga.\nTothom  hauria de veure \naquest fantàstic  edifici.\n
 A2_SCHLOSS1
@@ -40,10 +38,6 @@ A5_STONEHENGE
 Un antic anell  de pedres. \n¡Molt misteriós!\n
 A6_DOME
 Aquesta preciosa  catedral\nantiga  és una gran  atracció.\n
-ANIM_CINEMA
-Cinema (per Trikky)\n
-DRIVEINCINEMA
-Autocinema\n
 #____________________________________cursor_____________________________________
 #____________________________________cursor_____________________________________
 Baum
@@ -144,38 +138,22 @@ H-Trans 0-4-0T (vapor)
 H-Trans BR212 (dièsel)
 1Ellok
 H-Trans BR103 (elèctrica)
-1Schienenbus
-H-Trans/TPI VT95 (dièsel)
 1TPEllok
 TPI F7A (diesel)
 2Ben155
 Bennhardt BR155 (elèctrica)
-2Dampflokomotive
-H-Trans 4-6-0 (vapor)
 2Diesellokomotive
 DB BR 218
 2Ellok
 H-Trans Tigresa I (elèctrica)
-2TPEllok
-TPI Classe 86/2 (elèctrica)
 3Ben185
 Bennhardt BR185 (elèctrica)
 3Diesellokomotive
 H-Trans BR218 (dièsel)
-4Ben204
-Bennhardt BR204 (dièsel)
-5Ben220
-Bennhardt BR220 (dièsel)
-6Ben228
-Bennhardt BR228 (dièsel)
-7BenE11
-DB E11 (elèctrica)
 Autotransporter
 H-Trans transport automòbils
 Autotransportwagen
 TPI Lopomo Vagó per a automòbils
-Beiwagen
-Cotxe addicional per a H-Trans/TPI VT95
 Brettertransporter
 WF Ultd. transport tablas
 Bretterwagen
@@ -186,12 +164,6 @@ Buchwagen
 VT Viena Vagó per a llibres
 Bus
 Autobús H-trans
-DM8_CAR
-TPI DM8 Cotxe de passatgers
-DM8_LOK1
-TPI DM8 Locomotora davantera (dièsel)
-DM8_LOK2
-TPI DM8 Remolc amb cabina
 Erzanhaenger
 Remolc ferro H-trans
 Erztransporter
@@ -202,34 +174,22 @@ FastFerry
 Ferry ràpid
 Holzanhaenger
 JET remolc per a fusta
-Holzschiff
-TPI/JET vaixell per a fusta
 Holztransporter
 Camió per a fusta H-trans
 Holzwagen
 Vagó per a troncs de fusta
 HVPosttransporter
 Camió correu DIBU/H-Trans
-Ik26
-Autobús Serj Ikarus-260
-Kohleschiff
-WF Ultd. vaixell per a carbó
 Kohletransporter
 Camió per a carbó H-trans
 Kohlewagen
 Tolva per a carbó
 Kunststofftransporter
 Camió per a plàstics H-trans
-Li6
-Autobús Serj LiAZ-677
-Moebeltransporter
-WF Ultd. transport mobles
 Moebelwagen
 VT Vienna Vagó per a mobles
 Oelanhaenger
 Remolc petroli H-trans
-Oeltankschiff
-Petroler
 Oelwagen
 Vagó cisterna per a petroli
 Papiertransporter
@@ -244,14 +204,6 @@ Posttransporter
 Camió correu H-trans
 Postwagen
 Furgó correu/equipatges
-S220_CAR
-TPI S220 Cotxe de passatgers
-S220_LOK1
-TPI S220 Locomotora davantera (elèctrica)
-S220_LOK2
-TPI S220 Locomotora posterior (elèctrica)
-Serj-Mini
-Serj Maxi-Taxi
 SlowFerry
 Ferry convencional H-trans
 Stahltransporter
@@ -262,12 +214,8 @@ Staubkesselwagen
 Vagó per a plàstics
 Tanklastzug
 Camió cisterna
-TENDER
-TPI Ténder
 TPBeiwagen
 Cotxe addicional per a TPI VT98
-TPDiesel
-TPI Classe 26 (dièsel)
 TPPassagierwagen
 TPI Vagó passatgers
 TPSchienenbus

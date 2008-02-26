@@ -5,7 +5,7 @@
 #                              Language: hu Magyar                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 16.01 2008                           #
+#                           Date Created: 26.02 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Magyar István - mmalna                            #
@@ -68,8 +68,6 @@ Városháza
 Városháza
 04_CITY_C
 Városháza
-10_WOHN
-Templom\n
 1930AirDepot
 Légi depó (1930)
 1headquarter
@@ -94,12 +92,12 @@ AirDepot
 Hangár
 AirportShed1930
 Reptéri postaépület (1901)
+AirStop
+Repülõ dokkoló\n
 AirTerminal477
 Reptéri fogadócsarnok (1950)
 anfangShipStop
 Rakodó part
-ANIM_CINEMA
-Corvin Filmpalota.\n
 Avila_Big_StationBlg
 Nagy váróterem építése
 Avila_Small_StationBlg
@@ -112,8 +110,12 @@ BigTerminal477
 Nagy fogadócsarnok.
 Bulk_StationBlg
 Nyersanyag tároló
+BusStop
+Buszmegálló\n
 CarDepot
 Kocsi depó
+CarStop
+Kocsi megálló\n
 Car_StationBlg
 Parkoló építése
 ChannelStop
@@ -124,14 +126,10 @@ COM_00_02
 Nincs lefordítva:\nCOM_00_02\n
 COM_00_03
 Kocsma\n
-COM_00_04
-Nincs lefordítva:\nCOM_00_04\n
 COM_00_05
 Nincs lefordítva:\nCOM_00_05\n
 COM_00_06
 Szórakozóhely\n
-COM_00_07
-Nincs lefordítva:\nCOM_00_07\n
 COM_00_08
 Nincs lefordítva:\nCOM_00_08\n
 COM_00_10
@@ -140,74 +138,42 @@ COM_00_11
 Nincs lefordítva: COM_00_11\n
 COM_00_12
 Nincs lefordítva: COM_00_12\n
-COM_00_13
-Ez az újonnal felépített\nhotel a 60-as évek Bauhaus\nstílusában épült.\n
 COM_00_14
 Nincs lefordítva: COM_00_14\n
-COM_00_16
-Nincs lefordítva: COM_00_16\n
 COM_00_18
 Nincs lefordítva: COM_00_18\n
-COM_00_19
-Nincs lefordítva: COM_00_19\n
-COM_00_20
-Nincs lefordítva:\nCOM_00_20\n
-COM_00_21
-Nincs lefordítva: COM_00_21\n
 COM_00_22
 Nincs lefordítva:\nCOM_00_22\n
-COM_00_23
-Nincs lefordítva:\nCOM_00_23\n
 COM_01_01
 Légballon Centrum\n
 COM_01_09
 Mozi\n
 COM_01_10
 Nagy üzletház.\n
-COM_01_12
-Nincs lefordítva: COM_01_12\n
-COM_01_13
-Nincs lefordítva: COM_01_13\n
-COM_01_14
-Nincs lefordítva: COM_01_14\n
-COM_01_16
-Modern Irodaház.\n
 COM_01_17
 Nincs lefordítva: COM_01_17\n
 COM_01_18
 Nincs lefordítva: COM_01_18\n
-COM_01_19
-Nincs lefordítva: COM_01_19\n
 COM_01_20
 Nincs lefordítva: COM_01_20\n
 COM_01_21
 Nincs lefordítva: COM_01_21\n
 COM_01_22
 Luxus Irodaház.\n
-COM_01_23
-Nincs lefordítva: COM_01_23\n
 COM_02_02
 Parkoló\n
 COM_02_13
 Modern irodaház.\n
-COM_02_14
-Modern üzletház\n
-COM_02_15
-Bányamûvelési hivatal \nés oktatóközpont.\n\nBányamérnököket képeznek \nki és át ha a bányák \nkimerülnek akkor hogyan \ntöltsék fel városi \nszeméttel.\n\n
 COM_02_16
 Irodaház.\n\nNem túl modern és az irodák \nis kicsik az épületben.\n\n
 COM_02_17
 Irodaépület.\n
-COM_02_20
-Luxus irodaház.\n\n
 COM_03_15
 Színház.\n\n
 COM_10_01
 Park\n
 COM_10_02
 Parkoló\n
-COM_10_03
-Régi elhagyott szélmalom\n
 COM_10_05
 Tehénfarm.\n
 COM_10_07
@@ -240,8 +206,6 @@ DenkVM
 Ezt Manfred VT Vienna' \nTomaschitznak emeltük.\n
 DenkVolker
 Ez az épület Volker Meyer \nmûve.\n
-DRIVEINCINEMA
-Autósmozi.\n
 Eingang
 Bejárat
 endShipStop
@@ -274,24 +238,14 @@ IND_00_05
 Nincs lefordítva: IND_00_05\n
 IND_00_06
 Nincs lefordítva: IND_00_06\n
-IND_00_07
-Nincs lefordítva: IND_00_07\n
-IND_00_08
-Nincs lefordítva: IND_00_08\n
 IND_00_09
 Nincs lefordítva: IND_00_09\n
 IND_00_10
 Nincs lefordítva: IND_00_10\n
-IND_00_11
-Nincs lefordítva: IND_00_11\n
 IND_00_12
 Nincs lefordítva: IND_00_12\n
-IND_00_13
-Nincs lefordítva: IND_00_13\n
 IND_00_14
 Nincs lefordítva: IND_00_14\n
-IND_00_15
-Nincs lefordítva: IND_00_15\n
 IND_00_16
 Nincs lefordítva: IND_00_16\n
 IND_00_17
@@ -304,8 +258,6 @@ IND_01_03
 Nagy gáztartály\n
 IND_01_04
 Nincs lefordítva: IND_01_04\n
-IND_01_05
-Gáz tartály.\nA tartály falai\nelég erõsek ahhoz,\nhogy a gázt benn tartsák.\n
 IND_01_06
 Nincs lefordítva: IND_01_06\n
 IND_01_07
@@ -384,8 +336,6 @@ RES_00_03
 Lakóház\n
 RES_00_04
 Lakóház\n
-RES_00_05
-Ikerház.\n\nA falak nagyon vékonyak a \nszomszéd gyerek állandóan \na dobszerkóját püföli.\n\n
 RES_00_06
 Szökõkút\n
 RES_00_07
@@ -402,10 +352,6 @@ RES_00_12
 Modern ház sok lakással.\n
 RES_00_13
 Ikerház kerttel.\n
-RES_00_14
-Kis garzonház.\n
-RES_00_15
-Modern tömbház.\n\nNem néz ki jól de központi \nfûtéssel, internettel és \nlégkondival szerelt \nlakások vannak benne.\n\n
 RES_00_16
 Nincs lefordítva: RES_00_16\n
 RES_00_17
@@ -414,8 +360,6 @@ RES_00_18
 Garzon\n
 RES_00_19
 Nincs lefordítva: RES_00_19\n
-RES_00_20
-Nincs lefordítva: RES_00_20\n
 RES_00_21
 Társasház\n
 RES_00_23
@@ -424,10 +368,6 @@ RES_01_01
 Lakóház\n
 RES_01_02
 Nincs lefordítva: RES_01_02\n
-RES_01_03
-Nincs lefordítva: RES_01_03\n
-RES_01_04
-Nincs lefordítva: RES_01_04\n
 RES_01_05
 Lakóház\n
 RES_01_07
@@ -438,22 +378,12 @@ RES_01_10
 Lakóház\n
 RES_01_12
 Nincs lefordítva: RES_01_12\n
-RES_01_13
-Nincs lefordítva: RES_01_13\n
-RES_01_14
-Nincs lefordítva: RES_01_14\n
 RES_01_15
 Nincs lefordítva: RES_01_15\n
 RES_01_16
 Nincs lefordítva: RES_01_16\n
-RES_01_17
-Nincs lefordítva: RES_01_17\n
 RES_01_18
 Nincs lefordítva: RES_01_18\n
-RES_01_19
-Nincs lefordítva: RES_01_19\n
-RES_01_20
-Nincs lefordítva: RES_01_20\n
 RES_01_21
 Modern emeletesház\n
 RES_01_22
@@ -462,8 +392,6 @@ RES_01_23
 Vörös-Fehér emeletes ház\n
 RES_02_01
 Pihenõ oázis\n
-RES_02_02
-Kis mûhely\n
 RES_02_16
 Nincs lefordítva: RES_02_16\n
 RES_02_20
@@ -518,6 +446,10 @@ SandStationMHz
 Homoktározó
 ShipDepot
 Hajó depó
+ShipDepotEW
+Hajó depó (Kelet-Nyugat)\n
+ShipStop
+Kikötõ\n
 STADIUM2
 Rögbipálya\n
 Tennis_Court
@@ -532,6 +464,8 @@ TowerMoistboy
 Irányítótorony
 TrainDepot
 Vasúti depó
+TrainStop
+Vasúti megálló\n
 TrainStopMaglev
 Maglev megálló
 TrainStopMaglevIndicator
@@ -564,10 +498,6 @@ yellow_car
 Trabant 601
 #___________________________________crossing____________________________________
 #___________________________________crossing____________________________________
-Crossing1
-Átjáró
-Crossing2
-Átjáró
 rail-road-crossing
 Vasúti és közúti keresztezõdés
 #____________________________________cursor_____________________________________
@@ -588,8 +518,6 @@ Remove
 Törlés, eltávolítás
 Schedule
 Menetrend
-ShipDepotEW
-Hajó depó (Kelet-Nyugat)
 ShipDepotNS
 Hajó depó (Észak-Dél)
 Signal
@@ -604,8 +532,6 @@ Talaj emelés / felfelényíl
 #__________________________________dummy_info___________________________________
 factory_CHEMIST_details
 <title>Vegyipari üzem magyarázat</title><h1>Vegyipari üzem magyarázat</h1><p>Itt gyártják a mezõgazdaságnak a kemikáliákat és a nyomdafestéket</p>\n
-factory_fish_pond_details
-<title>Halastó, halnevelõ leírása</title><h1>Halastó</h1><p>Természetes és mesterséges tavak ahol halakat tenyésztenek.</p><p>A középkori Európában az erõdöknél, kolostoroknál és a kastélyoknál is elterjedt volt, ahol a többnyire önellátó kolóniák éltek. Mostanában inkább kelet Ázsiában népszerû (fõként Japánban), ahol a koi pontyot lehet tartani.</p><p>Ezekben a tavakban nevelik a halakat, majd lehalásszák, aztán szállítják, végül pedig feldolgozzák élelmiszerré. Az ilyen tavakban tilos úszni.</p><p>Ezek a telepek fejlett agrárkultúrával rendelkeznek fõleg a fotoszintetizáció terén, mivel a halakat nem csak mesterséges táplálékkal etetik.</p><p>\n
 factory_Kohlegrube_details
 <title>Szénbánya magyarázat</title><h1>Szénbányák</h1><p>A szénbányászat nehéz fizikai munkát igényel, de a szén egyes iparágak egyik fõ nyersanyaga.Például ilyen az acélipar.<p>
 factory_Kohlekraftwerk_details
@@ -632,14 +558,8 @@ Autohaus
 Autó szalon
 Autohersteller
 Autógyár
-bakery
-Pékség
-brewery
-Palackozó üzem
 Buchgrosshandel
 Könyvkereskedés
-cannery
-Konzervgyár
 Cementmill
 Cementgyár
 ChemicalPlant
@@ -648,26 +568,10 @@ CHEMIST
 Patika
 Concretefactory
 Betonkeverõ üzem
-cow_farm
-Tehén farm
-dairy
-Tejcsarnok
 Druckerei
 Nyomda
 Erzbergwerk
 Vasércbánya
-fish_pond
-Halastó
-fish_swarm
-Halraj
-food_processing_plant
-Élelmiszer üzem
-grain_farm
-Gabona mezõ
-grain_mill
-Malom
-Incinerator
-Szemétégetõ
 Kohlegrube
 Szénbánya
 Kohlekraftwerk
@@ -698,14 +602,10 @@ Saegewerk
 Fürészmalom
 Sandquarry
 Homokbánya
-scrap_yard
-Szeméttelep
 Stahlwerk
 Acélkohó
 Stonequarry
 Kõbánya
-supermarket
-Szupermarket
 TANKE
 Benzinkút
 Windkraftwerk
@@ -714,14 +614,10 @@ Szélerõmû
 #_____________________________________good______________________________________
 Autos
 autók
-beer
-sõr
 Bretter
 deszka
 Buecher
 könyvek
-canned_food
-fagyaszt. áru
 Cement
 cement
 Chemicals
@@ -730,26 +626,14 @@ Concrete
 beton
 Eisenerz
 vasérc
-fish
-hal
-flour
-liszt
-food
-élelem
 Gasoline
 üzemanyag
-grain
-gabona
 Holz
 rönk
 Kohle
 szén
-meat
-hús
 Medicine
 gyógyszerek
-milk
-tej
 Moebel
 bútor
 None
@@ -768,8 +652,6 @@ Stahl
 acél
 Stone
 kõ
-waste
-szemét
 #____________________________________ground_____________________________________
 #____________________________________ground_____________________________________
 Basement
@@ -898,14 +780,8 @@ Steam
 gõz
 #____________________________________symbol_____________________________________
 #____________________________________symbol_____________________________________
-AirStop
-Repülõ dokkoló
 Builder
 Bulldózer
-BusStop
-Buszmegálló
-CarStop
-Kocsi megálló
 Electricity
 Villamosított
 Flags
@@ -930,10 +806,6 @@ Post
 posta
 Seasons
 évszak
-ShipStop
-Kikötõ
-TrainStop
-Vasúti megálló
 Waren
 Árú
 #_____________________________________tree______________________________________
@@ -964,8 +836,6 @@ Latschenkiefer
 Lucfenyõ\n
 Palmtree1
 Pálma\n
-Palmtrees
-Pálmák\n
 Pappel-1
 nyárfa\n
 Pappel-2
@@ -1016,8 +886,6 @@ Mozdony-B
 Ellok-3 mozdony
 1Garrat
 RVg Garratt (elsõ)
-1Schienenbus
-VT95 személyszállító motorvonat (elsõ)
 1TPEllok
 Ellok-1 mozdony (elsõ)
 221A
@@ -1026,32 +894,20 @@ AC16 221A gõzmozdony
 AC16 221A szerkocsi
 2Ben155
 Ben-155 mozdony
-2Dampflokomotive
-Gõzmozdony-B
 2Diesellokomotive
 Mozdony-C
 2Ellok
 Ellok-4 mozdony
 2Garrat
 RVg Garratt (középsõ)
-2TPEllok
-Ellok-2 mozdony
 3Ben185
 Ben-185 mozdony
 3Diesellokomotive
 Mozdony-A
 3Garrat
 RVg Garratt (hátsó)
-4Ben204
-Ben-204 mozdony
-5Ben220
-Ben-220 mozdony
-6Ben228
-Ben-228 mozdony
 707
 Boeing 707 repülõgép
-7BenE11
-Ben-E11 mozdony
 A3-5
 A3-5 gõzmozdony
 A3-5_tender
@@ -1074,8 +930,6 @@ BB1280
 SNCF BB 1280 elektromos mozdony
 Be5-7
 Be5-7 mozdony
-Beiwagen
-VT95 személyszállító motorvagon (hátsó)
 Blimp
 Léghajó
 Book_Trike
@@ -1126,20 +980,8 @@ Cargosprinter-Mittel
 Baureihe BR-690 (Cargo-Sprinter) könyvszállító (középsõ)
 Cargosprinter-Steuer
 Baureihe BR-690 (Cargo-Sprinter) könyvszállító (hátsó)
-Cementanhaenger
-Cementszállító-A utánfutó
 Cementtrailer
 Cementszállító-B utánfutó
-Cementtransporter
-Cementszállító kocsi
-Cementwagen
-Cementszállító vagon
-ColinBigFerry
-Colin személyszállító óceánjáró
-ColinFastFerry
-Colin személyszállító hajó
-ColinMotorBus
-Colin busz
 CombinoShort(T)
 Siemens Combino villamos (kicsi elsõ)
 CombinoShortA(Mc)
@@ -1168,34 +1010,12 @@ Concept2Rear
 SNCF Concept 2 (hátsó)
 Concorde
 Concorde
-Concretetransporter
-Betonszállító kocsi
-Concretewagen
-Betonszállító vagon
-Cooling_Container
-Hûtöttáruszállító-B vagon
-Cooling_Truck
-Hûtöttáruszállító kocsi
-Cooling_Waggon
-Hûtöttáruszállító-A vagon
 DaimlerStoll
 Daimler-Stoll
 DC-3
 DC-3
-Deponielaster
-Szemétszállító-A kocsi
-Deponielaster2
-Szemétszállító-B kocsi
-DM8_CAR
-Dm8 személyszállító motorvagon (középsõ)
-DM8_LOK1
-Dm8 személyszállító motorvonat (elsõ)
-DM8_LOK2
-Dm8 személyszállító motorvagon (hátsó)
 Doubledeck_city_bus
 Emeletes városi busz
-Doubledeck_intercitybus
-Emeletes távolsági busz
 E44
 General Electric E44 villanymozdony
 Eb3-5
@@ -1220,16 +1040,10 @@ F7back
 Ellok-1 mozdony (hátsó)
 FastFerry
 Légpárnás személyszállító hajó
-Fishing_Boat
-Halászhajó-B
-Fishing_Boat_DanMacK
-Halászhajó-A
 Flachwagen
 Könyvszállítóvagon
 Fokker_F27
 Fokker-F27 repülõgép
-GarbageTruck
-Szemétszállító kamion
 Guppy
 Guppy darabárú-szállító repülõgép
 H-Trans-Pantheress
@@ -1252,8 +1066,6 @@ Hochbordwagen
 Nyersanyagszállító vagon
 Holzanhaenger
 Faáruszállító-A utánfutó
-Holzschiff
-Faáruszállító tankerhajó
 Holztrailer
 Faáruszállító-C utánfutó
 Holztransporter
@@ -1282,12 +1094,6 @@ ICE_TD-car
 DBAG Baureihe 605 (ICE TD) (középsõ)
 ICE_TD-front
 DBAG Baureihe 605 (ICE TD) (elsõ)
-Ik26
-Ikarusz busz
-IL-209S_Goods_Trailer
-IL-209S darabárúszállító utánfutó
-IL-209S_Goods_Truck
-IL-209S darabáruszállító kocsi
 IL-76
 IL-76 postaszállító
 JNR_C11
@@ -1308,8 +1114,6 @@ kkStB_tender
 StB szerkocsi (StB 91, 110-hez)
 Kohleanhaenger
 Nyersanyagszállító-B utánfutó
-Kohleschiff
-Nyersanyagszállító tankerhajó
 Kohletransporter
 Nyersanyagszállító-B kocsi
 Kohlewagen
@@ -1318,8 +1122,6 @@ Kunststofanhaenger
 Mûanyagszállító utánfutó
 Kunststofftransporter
 Mûanyagszállító kocsi
-Li6
-Li6 busz
 Lockhead_Tristar
 Tristar repülõgép
 Lockheed10-Electra
@@ -1332,44 +1134,24 @@ Lowa_Anhaenger
 LOWA ET-54 villamoskocsi
 MailExpress
 Postai repülõgép
-Milk_Truck
-Tejszállító kocsi
-Milk_Waggon
-Tejszállító vagon
-MJHN_Avocet
-Avocet mozdony
-MJHN_Deltic
-Deltic mozdony
-Moebelanhaenger
-Darabárúszállító-A utánfutó
 Moebelschiff
 Darabáruszállító tankerhajó
-Moebeltransporter
-Darabáruszállító-A kocsi
 Moebelwagen
 Darabáruszállító-C vagon
-Muellschiff
-Szemétszállító tankerhajó
 NeuOelwagen
 Olaj vagon (80t)
 Oelanhaenger
 Olajszármazékszállító-A utánfutó
-Oeltankschiff
-Olajszármazékszállító tankerhajó
 Oelwagen
 Olajszármazék-szállító-B vagon
 Oilbarge
 Olajszármazékszállító uszály
 Oiltrailer
 Olajszármazékszállító-B utánfutó
-OJetKunstoffschiff
-Mûanyagszállító tankerhajó
 OldOil
 Olajszármazék-szállító-A vagon
 old_open_car
 Szénszállító vagon (1837/5)
-PaddelSteamer
-Paddel személyszállító gõzhajó
 Papieranhaenger
 Papírszállító utánfutó
 Papiertransporter
@@ -1394,30 +1176,16 @@ PrPostwagen
 Pr postavagon
 RenaultTH5
 Renault kamionfülke
-S220_CAR
-S220 személyszállító motorvagon (középsõ)
-S220_LOK1
-S220 személyszállító motorvonat (elsõ)
-S220_LOK2
-S220 személyszállító motorvagon (hátsó)
 Sandanhaenger
 Nyersanyagszállító-C utánfutó
 Sandtransporter
 Nyersanyagszállító-F kocsi
-Sandwagen
-Nyersanyagszállító-C vagon
 schooner
 Szkúner vitorláshajó
 SD40-2-back
 EMD SD40-2 dízelmozdony (hátsó)
 SD40-2-front
 EMD SD40-2 dízelmozdony (elsõ)
-Serj-Mini
-Mini busz
-Serj_Gaz-4_Goods_Truck
-Gaz-4 darabáruszállító kocsi
-Sloop
-Vitorlás postahajó
 SlowFerry
 Személyszállító komp
 SMPoiltruck
@@ -1436,8 +1204,6 @@ Stoneanhaenger
 Nyersanyagszállító-D utánfutó
 Stonetransporter
 Nyersanyagszállító-G kocsi
-Stonewagen
-Nyersanyagszállító-B vagon
 SuperConstellation
 Super Constellation repülõgép
 T13
@@ -1456,14 +1222,8 @@ TB24
 TB24 villamoskocsi
 teaclipper
 Darabárúszállító klipper
-TENDER
-TPI szerkocsi
 TPBeiwagen
 VT98 személyszállító motorvagon (hátsó)
-TPDiesel
-TP mozdony
-TPI_Std_2-6-4T
-TPI 2-6-4T gõzmozdony
 TPPassagierwagen
 TP személyszállító vagon
 TPSchienenbus
@@ -1478,8 +1238,6 @@ Tugboat
 Vontatóhajó
 VolvoFH12
 Volvo kamionfülke
-waste wagon
-Szemétszállító vagon
 XMail
 X-Test egysínû postavagon
 XTest
