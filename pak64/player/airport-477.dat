@@ -71,7 +71,6 @@ Name=AirDepot
 Dims=1,1,4
 NoInfo=1
 intro_year=1900
-level=1
 BackImage[0][0][0][0][0][0]=ls-depot-rail-ttdx.1.2
 FrontImage[0][0][0][0][0][0]=ls-depot-rail-ttdx.0.0
 BackImage[1][0][0][0][0][0]=ls-depot-rail-ttdx.1.3
