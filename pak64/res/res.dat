@@ -436,7 +436,7 @@ type=res
 chance=100
 Level=11
 intro_year=1921
-climates=tropic,mediterran,temperate,tundra,rocky,arctic
+climates=mediterran,temperate,tundra,rocky,arctic
 BackImage[0][0][0][0][0][0]=res.6.1
 BackImage[0][0][0][0][0][1]=winter-res.6.1
 --------------------
@@ -637,7 +637,7 @@ chance=50
 Level=16
 intro_year=1888
 retire_year=1945
-climates=tropic,mediterran,temperate,tundra,rocky,arctic
+climates=mediterran,temperate,tundra,rocky,arctic
 BackImage[0][0][0][0][0][0]=res.6.6
 BackImage[0][0][0][0][0][1]=winter-res.6.6
 --------------------

@@ -1,5 +1,5 @@
 
-Makeobj version 49 for simutrans 99.17.1 nightly and higher
+Makeobj version 49 for simutrans 99.18 nightly and higher
 (c) 2002-2006 V. Meyer , Hj. Malthaner, M. Pristovsek (markus@pristovsek.de)
 
 writing invidual files to ./
@@ -24,13 +24,6 @@ writing invidual files to ./
       packing ground_obj.Hochsitz1
    writing file ./ground_obj.Hochsitz2.pak
       packing ground_obj.Hochsitz2
-   reading file ./moving_ground.dat
-   writing file ./ground_obj.gooses.pak
-      packing ground_obj.gooses
-   writing file ./ground_obj.gemsen.pak
-      packing ground_obj.gemsen
-   writing file ./ground_obj.sheeps.pak
-      packing ground_obj.sheeps
    reading file ./texturegrounds.dat
    writing file ./ground.LightTexture.pak
       packing ground.LightTexture
@@ -52,7 +45,5 @@ writing invidual files to ./
       packing ground.Marker
    writing file ./ground.Borders.pak
       packing ground.Borders
-   writing file ./ground.Water.pak
-      packing ground.Water
    writing file ./ground.Water.pak
       packing ground.Water

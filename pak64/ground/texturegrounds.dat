@@ -28,10 +28,10 @@ Name=ClimateTexture
 Image[0][0]=texture-climate.0.0
 # beach/desert
 Image[1][0]=texture-climate.0.1
-# tropic (uses standard grass)
-Image[2][0]=texture-climate.0.4
-# mediterran (uses standard grass)
-Image[3][0]=texture-climate.0.4
+# tropic
+Image[2][0]=texture-climate.0.2
+# mediterran
+Image[3][0]=texture-climate.0.3
 # temperate grass
 Image[4][0]=texture-climate.0.4
 # tundra
