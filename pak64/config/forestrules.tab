@@ -31,3 +31,7 @@ forest_boundary_thickness = 2
 
 # Determins how dense are spare trees going to be planted (works inversly)
 forest_inverse_spare_tree_density = 400
+
+# climate with trees entirely (1: water, 2:desert, 4:tropic, 8:mediterran, 16:temperate, 32:tundra, 64:rocky, 128:arctic)
+# zero (default) means no climate with at least one tree per tile
+tree_climates = 4

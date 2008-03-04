@@ -567,7 +567,7 @@ Image[0][0]=TropicalMHz.0.0
 Image[1][0]=TropicalMHz.0.2
 Image[2][0]=TropicalMHz.0.3
 Image[3][0]=TropicalMHz.0.4
-Image[0][0]=TropicalMHz.0.5
+Image[4][0]=TropicalMHz.0.5
 --------------------
 Obj=tree
 Name=tropictree6
@@ -578,7 +578,7 @@ Image[0][0]=TropicalMHz.1.0
 Image[1][0]=TropicalMHz.1.2
 Image[2][0]=TropicalMHz.1.3
 Image[3][0]=TropicalMHz.1.4
-Image[0][0]=TropicalMHz.1.5
+Image[4][0]=TropicalMHz.1.5
 --------------------
 Obj=tree
 Name=tropictree7
@@ -589,7 +589,7 @@ Image[0][0]=TropicalMHz.2.0
 Image[1][0]=TropicalMHz.2.2
 Image[2][0]=TropicalMHz.2.3
 Image[3][0]=TropicalMHz.2.4
-Image[0][0]=TropicalMHz.2.5
+Image[4][0]=TropicalMHz.2.5
 --------------------
 Obj=tree
 Name=tropictree8
@@ -600,7 +600,7 @@ Image[0][0]=TropicalMHz.3.0
 Image[1][0]=TropicalMHz.3.2
 Image[2][0]=TropicalMHz.3.3
 Image[3][0]=TropicalMHz.3.4
-Image[0][0]=TropicalMHz.3.5
+Image[4][0]=TropicalMHz.3.5
 --------------------
 Obj=tree
 Name=tropictree9
@@ -611,7 +611,7 @@ Image[0][0]=TropicalMHz.4.0
 Image[1][0]=TropicalMHz.4.2
 Image[2][0]=TropicalMHz.4.3
 Image[3][0]=TropicalMHz.4.4
-Image[0][0]=TropicalMHz.4.5
+Image[4][0]=TropicalMHz.4.5
 --------------------
 #Obj=tree
 #Name=
