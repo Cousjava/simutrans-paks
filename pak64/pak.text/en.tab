@@ -5,7 +5,7 @@
 #                             Language: en English                             #
 #                                Encoding: ASCII                               #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 26.02 2008                           #
+#                            Date Created: 6.03 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                        Alexandre Frauenknecht - al_cff                       #
@@ -408,6 +408,8 @@ Signal
 Signals
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
+factory_Concretefactory_details
+Autoclaved Aerated concrete (AAC) is produced in this factory. The small pores that reduce weight and increase insulation originate from aluminum powder, which reacts with the water. AAC was invented in the 1920ies.
 factory_Kohlegrube_details
 <title>About Coalmines</title><h1>Coalmines</h1><p>In coal mines the miners dig for coal. This is hard labour, but the coal is needed for such important industreis like iron foundries and power plants.<p>
 factory_Kohlekraftwerk_details
@@ -443,7 +445,7 @@ Chemical plant
 CHEMIST
 Chemist
 Concretefactory
-Concrete factory
+Autoclaved Aerated Concrete Factory
 Druckerei
 Printing works
 Erzbergwerk
@@ -474,6 +476,8 @@ Raffinerie
 Refinery (Plastics)
 Saegewerk
 Sawmill
+scrap_yard
+Scrap Yard
 Stahlwerk
 Iron foundry
 TANKE
@@ -493,7 +497,7 @@ Cement
 Chemicals
 Chemicals
 Concrete
-Cement
+AAC stones
 Eisenerz
 Iron ore
 Gasoline
@@ -730,6 +734,10 @@ Concept2Rear
 Concept 2 Rear Engine
 Concorde
 Concorde
+Deponielaster
+Garbage truck I
+Deponielaster2
+Garbage truck II
 Eb3-5
 Swiss federal Railways Eb 3/5
 EinheitsTender
@@ -810,6 +818,8 @@ Moebelschiff
 TPI/JET Goods ship
 Moebelwagen
 VT Vienna light freight car
+Muellschiff
+Ship for Waste Transportation
 NeuOelwagen
 Oil waggon (80t)
 Oelanhaenger

@@ -5,7 +5,7 @@
 #                            Language: nl Nederlands                           #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 26.02 2008                           #
+#                            Date Created: 6.03 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                             Pavel Cizek - jatypc                             #
@@ -540,8 +540,6 @@ factory_ChemicalPlant_details
 Chemische fabriek details
 factory_CHEMIST_details
 Drogisterij details
-factory_Concretefactory_details
-Betonfabriek details
 factory_Druckerei_details
 Drukkerij details
 factory_Erzbergwerk_details
@@ -600,6 +598,8 @@ Saegewerk
 Houtzagerij
 Sandquarry
 Zandgroeve
+scrap_yard
+Recyclecentrum
 Stahlwerk
 Staalfabriek
 Stonequarry
@@ -650,6 +650,8 @@ Stahl
 Staal
 Stone
 Steen
+waste
+afval
 #____________________________________ground_____________________________________
 #____________________________________ground_____________________________________
 Basement
@@ -1016,6 +1018,8 @@ Tugboat
 Sleepboot
 VolvoFH12
 Volvo FH12 trekker
+waste wagon
+afvalwagon
 XMail
 X prototype mailwagon
 XTest

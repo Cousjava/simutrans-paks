@@ -5,7 +5,7 @@
 #                             Language: es Espanol                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 26.02 2008                           #
+#                            Date Created: 6.03 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Federico Almada - fede                            #
@@ -580,6 +580,8 @@ factory_Buchgrosshandel_details
 Todos los títulos a tu alcance. Las últimas novedades, los grandes exitos y los clásicos de siempre siempre cerca de ti.
 factory_Cementmill_details
 El proceso de fabricación del cemento comprende cuatro etapas principales: Extracción y molienda de la materia prima, homogeneización de la misma, producción del Clinker y molienda de cemento. Todo ello respetando siempre al máximo el medio ambiente.
+factory_Incinerator_details
+La planta incineradora de basura quema a altas temperaturas los desechos sólidos, reduciendo su volumen a cenizas.
 factory_Kohlegrube_details
 <title>Acerca de las Minas de carbón</title><h1>Minas de Carbón</h1><p>En las minas de carbón los mineros extraen carbón. Es un trabajo duro, pero el carbón es necesario para industrias tan importantes como las fundiciones y las centrales eléctricas.<p>
 factory_Kohlekraftwerk_details
@@ -602,6 +604,8 @@ factory_Raffinerie_details
 <title>Refinería</title>\n En esta factoría podremos obtener todo tipo de combustibles, asi como el resto de derivados del petróleo.
 factory_Sandquarry_details
 <title>Cantera de Arena</title>\n Grano a grano, se hace una montaña. Aqui tienes toneladas de arena disponibles para la construcción
+factory_scrap_yard_details
+<title>Deposito de chatarra</title>\n Hierros y mas hierros. Cables, placas y mucha chapa. El reciclaje siempre es la mejor opcion para los metales
 factory_Stahlwerk_details
 <title>Acerca de las Fundiciones</title><h1>Fundiciones de Hierro</h1><p>(Molinos de Acero)<br><br>Estas industrias convierten el mineral del hierro en hierro o acero. Esto se lleva a cabo calentado el mineral(y reciclando chatarra) en altos hornos - enormes estructuras cilíndricas que resisten altas temperaturas de hasta 2000?C. El mineral se derrite rapidamente y se separa en un tanque de hierro líquido, quedandose lo restos en la superficie.</p><p>El hierro es procesadoa en los convertidores a fin de reducir el volumen de carbono, cuanto mas bajo es, mayor es la calidad del acero que se obtiene. Estos procesos necesitan mucha energía, por lo general adquirida por la quema de enormes cantidades de carbón<p>
 factory_Stonequarry_details
@@ -634,6 +638,8 @@ Druckerei
 Imprenta
 Erzbergwerk
 Mina de hierro
+Incinerator
+Incineradora
 Kohlegrube
 Mina de carbón
 Kohlekraftwerk
@@ -664,6 +670,8 @@ Saegewerk
 Aserradero
 Sandquarry
 Cantera de arena
+scrap_yard
+Planta de reciclado
 Stahlwerk
 Altos Hornos
 Stonequarry
@@ -712,6 +720,8 @@ Stahl
 Acero
 Stone
 Piedra
+waste
+Basura
 #____________________________________ground_____________________________________
 #____________________________________ground_____________________________________
 Basement
@@ -1072,6 +1082,10 @@ DaimlerStoll
 Daimler Stoll
 DC-3
 Douglas DC-3
+Deponielaster
+Camión de la basura
+Deponielaster2
+Camión basurero
 Doubledeck_city_bus
 Autobús de dos pisos
 E44
@@ -1102,6 +1116,8 @@ Flachwagen
 Vagón de mercancías simple
 Fokker_F27
 Fokker F27
+GarbageTruck
+Camión de basura
 Guppy
 Guppy avión para libros
 H-Trans-Pantheress
@@ -1196,6 +1212,8 @@ Moebelschiff
 Barco para muebles TPI/JET
 Moebelwagen
 VT Vienna Vagón para muebles
+Muellschiff
+Buque basurero
 NeuOelwagen
 Vagon cisterna de petróleo (80t)
 Oelanhaenger
@@ -1296,6 +1314,8 @@ Tugboat
 Buque Remolcador
 VolvoFH12
 Volvo FH 12 (cabeza tractora)
+waste wagon
+Carro de basura
 XMail
 Monorrail para correo
 XTest

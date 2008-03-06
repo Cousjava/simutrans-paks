@@ -5,7 +5,7 @@
 #                             Language: it Italiano                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 26.02 2008                           #
+#                            Date Created: 6.03 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                           Fabio Gonella - fagonella                          #
@@ -16,12 +16,46 @@
 #                            note: Administrator 64                            #
 #                                Marco - rabanne                               #
 #                                    note:                                     #
+#                                Luca - redeemed                               #
+#                                    note:                                     #
 #                                                                              #
 ################################################################################
+#____________________________________bridge_____________________________________
+#____________________________________bridge_____________________________________
+ClassicRail
+Rotaia su ponte in cemento
+ClassicRoad
+Strada su ponte in cemento
+mlm_concrete_bridge
+Monorotaia su ponte in cemento
+ModernRoad
+Moderna sopraelevata (calcestruzzo precompresso)
+MonorailRamp
+Rampa per monorotaia
+PowerBridge
+Traliccio per la corrente elettrica
+tb_classic_road
+Ponte stradale in cemento
+ViaductRail
+Viadotto in mattoni di pietra
+WoodenRoad
+Ponte stradale di legno
 #___________________________________building____________________________________
 #___________________________________building____________________________________
+00_01_CITY
+Antico municipio
 01_CITY
 Municipio
+02_CITY
+Municipio
+03_CITY
+Municipio
+1headquarter
+La tua sede aziendale!
+2headquarter
+La tua sede aziendale!
+3headquarter
+La tua sede aziendale!
 A1_ALTE_KIRCHE
 Antica chiesa. Tutti\ndovrebbero visitare questa\nfantastica costruzione!\n
 A2_SCHLOSS1
@@ -34,6 +68,10 @@ A5_STONEHENGE
 Antico anello di pietre.\nMolto misterioso!\n
 A6_DOME
 Questa splendida\ncattedrale antica è una\nvera e propria attrazione!\n
+BigPostOffice
+Grande ufficio postale
+COM_00_18
+Palazzo di uffici moderno\n
 DenkFlor
 Monumento\n
 DenkOwen
@@ -46,6 +84,10 @@ DenkVM
 Monumento\n
 DenkVolker
 Monumento a Volker Meyer\n
+Eingang
+Entrata
+Feste
+Roccaforte di Konubert\nEretta nel 1400~.\n
 Windmill
 Mulino a vento\n
 #____________________________________cursor_____________________________________
@@ -298,3 +340,7 @@ TPPassagierwagen
 TPI carrozza passeggeri
 TPSchienenbus
 TPI VT98 (diesel)
+#______________________________________way______________________________________
+#______________________________________way______________________________________
+gavel_road
+Sentiero di ghiaia

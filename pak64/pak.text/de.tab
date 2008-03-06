@@ -5,7 +5,7 @@
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 26.02 2008                           #
+#                            Date Created: 6.03 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                 Benny - Benny                                #
@@ -540,8 +540,12 @@ factory_Autohersteller_details
 <title>Autofabrik Details</title> Autos am laufenden Band werden in den Hallen montiert. Die Auswahl an Modellen und Marken ist überwältigend und verwirrend. Aber warum wollen so viele Leute ein Auto, dass 200 km/h fahren kann, wenn sowieso nicht mehr als 120km/h erlaubt sind?
 factory_ChemicalPlant_details
 <title>Chemiefabrik Details</title><h1>Chemiefabrik Details</h1><p>Schon seit Anfang des Jahrhunderts werden hier Chemikalien und Druckerfarbe produziert.</p>
+factory_Concretefactory_details
+Diese Fabrik stellt aus Kalk, Wasser, Sand und ein ganz bisschen Aluminium Gasbeton (jetzt Porenbeton) her. Die Poren kommen durch die Entstehung von Wasserstoff, wenn das Aluminiumpulver mit dem Wasser reagiert.\nGasbeton ist sehr leicht, isoliert gut und ist eine sehr veilseitig verwendeter Rohstoff. Erfunden wurde er in den 1920ern.
 factory_Erzbergwerk_details
 <title>Erzbergwerk Details</title> Ein Erzbergwerk im Tagebau. Die ergiebigsten Eisenerzlager befinden sich in geologisch alten Gesteinsschichten; sie entstanden, als die ersten Photosynthesealgen die Meere mit Sauerstoff anreicherten und das im Meer gelöste Eisen sich als Rost auf den Stränden und auf dem Meeresgrund absetzte.
+factory_Incinerator_details
+<title>Müllverbrennung</title><h1>Müllverbrennung Details</h1><p>Solche offenen Müllverbrennungsanlagen gehören eigentlich seit langem verboten. Denn bei den niedrigen Temperaturen entsteht Dioxin. In einigen Gegenden (zum Beispiel Japan) ist durch solche Anlagen der Boden stärker versucht als in Seveso.</p>\n
 factory_Kohlegrube_details
 <title>Kohlegrube Details</title><h1>Kohlegrube Details</h1><p>In der Kohlegrube fördern die Bergleute in schwerer Arbeit wertvolle Kohle. Kohle wird von Kraftwerken, Stahlwerken und anderen Industrien benötigt.</p>
 factory_Kohlekraftwerk_details
@@ -568,6 +572,8 @@ factory_Saegewerk_details
 <title>Sägewerk Details</title> Baumstämme werden auf die vom Abnehmer gewünschte Grösse zugeschnitten. Ein ringförmig angelegtes Holzlager kann darüber hinaus die Lärmbelastung für die Nachbarschaft verringern; bis Holz zu Brettern verarbeitet werden kann, muss es nach dem geschlagen werden noch einige Jahre trocknen.
 factory_Sandquarry_details
 <title>Sandgrube Details</title> Hier wird Sand abgebaut. Sand findet im Straßenbau, in der Glasherstellung, in Betonwerken und weiteren Industrien Verwendung.
+factory_scrap_yard_details
+<title>Recyclinghof Details</title>\nBringen Sie ihre Abfälle zu einer Sammelstelle wie dieser. Die Natur und die Altstoffhändler danken Ihnen.\n
 factory_Stahlwerk_details
 <title>Stahlwerk Details</title> Im Hochofen werden Eisenerz und Kohle zu Roheisen und C02. Die Gewinnung von Stahl aus Roheisen erfordert einen weiteren Prozess. Der Kohleanteil und somit der CO2-Ausstoss konnte in der Geschichte der Verhüttung immer weiter gesenkt werden.
 factory_Stonequarry_details
@@ -593,11 +599,13 @@ Chemiewerk
 CHEMIST
 Apotheke
 Concretefactory
-Betonfabrik
+Gasbetonwerk
 Druckerei
 Druckerei
 Erzbergwerk
 Erzbergwerk
+Incinerator
+Müllverbrennung
 Kohlegrube
 Kohlegrube
 Kohlekraftwerk
@@ -628,6 +636,8 @@ Saegewerk
 Sägewerk
 Sandquarry
 Sandgrube
+scrap_yard
+Recyclinghof
 Stahlwerk
 Stahlwerk
 Stonequarry
@@ -649,7 +659,7 @@ Zement
 Chemicals
 Chemikalien
 Concrete
-Zement
+Gasbetonsteine
 Eisenerz
 Eisenerz
 Gasoline
@@ -676,6 +686,8 @@ Stahl
 Stahl
 Stone
 Stein
+waste
+Müll
 #____________________________________ground_____________________________________
 #____________________________________ground_____________________________________
 Basement
@@ -980,6 +992,10 @@ Concept2Rear
 Concept 2 hinterer Triebkopf
 Concorde
 Concorde
+Deponielaster
+Deponielaster I
+Deponielaster2
+Deponielaster II
 Doubledeck_city_bus
 Doppeldeckerbus
 Eb3-5
@@ -1004,6 +1020,8 @@ Flachwagen
 Niederflurwagen
 Fokker_F27
 Fokker F27
+GarbageTruck
+Müllabfuhrwagen
 Guppy
 Super Guppy
 H-Trans-Pantheress
@@ -1090,6 +1108,8 @@ Moebelschiff
 TPI/JET Güterschiff
 Moebelwagen
 VT Wien leichter Güterwagen
+Muellschiff
+Müllschiff
 NeuOelwagen
 Ölwaggon (80t)
 Oelanhaenger
@@ -1190,6 +1210,8 @@ Tugboat
 Schleppkahn
 VolvoFH12
 Volvo FH12 Sattelschlepper
+waste wagon
+offener Müllwaggon
 Zeppelin
 Zeppelin
 #______________________________________way______________________________________

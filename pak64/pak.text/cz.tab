@@ -5,10 +5,12 @@
 #                             Language: cz Cestina                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 26.02 2008                           #
+#                            Date Created: 6.03 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                   - hernajs                                  #
+#                                    note:                                     #
+#                        Martinec Jakub - jakub.martinec                       #
 #                                    note:                                     #
 #                             Jan Lièka - jan.licka                            #
 #                            note: DHL Exel Company                            #
@@ -448,6 +450,8 @@ Druckerei
 Tiskárna
 Erzbergwerk
 ®eleznorudný dùl
+Incinerator
+Spalovna odpadkù
 Kohlegrube
 Uhelný dùl
 Kohlekraftwerk
@@ -478,6 +482,8 @@ Saegewerk
 Pila
 Sandquarry
 Píseèný lom
+scrap_yard
+Recyklaèní dvùr
 Stahlwerk
 Slévárna
 Stonequarry
@@ -528,6 +534,8 @@ Stahl
 oceli
 Stone
 kamene
+waste
+odpadky
 #____________________________________ground_____________________________________
 #____________________________________ground_____________________________________
 Fence
@@ -730,6 +738,10 @@ Concorde
 Concorde
 DC-3
 Dacota DC-3
+Deponielaster
+Popeláøské auto
+Deponielaster2
+Popeláøské auto
 Doubledeck_city_bus
 Dvoupatrový mìstský autobus
 Eb3-5
@@ -794,6 +806,8 @@ Moebelschiff
 Loï na kusové zbo¾í
 Moebelwagen
 VT-V nákl. vagón na kusové zbo¾í
+Muellschiff
+Nákladní loï na odpadky
 NeuOelwagen
 Cisterna na ropu/benzín (80m2)
 Oelanhaenger
@@ -864,6 +878,8 @@ Tugboat
 remorkér
 VolvoFH12
 Volvo FH12
+waste wagon
+Nákladní vagón na odpadky
 XMail
 Vùz jednokolejky pro pøepravu po¹ty
 XTest

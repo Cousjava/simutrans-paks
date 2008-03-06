@@ -5,7 +5,7 @@
 #                             Language: ja Japanese                            #
 #                                Encoding: UTF-8                               #
 #                               Font : m+10r.bdf                               #
-#                           Date Created: 26.02 2008                           #
+#                            Date Created: 6.03 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                           Kiyohide Nakaminami - AMI                          #
@@ -432,6 +432,8 @@ Druckerei
 印刷工場
 Erzbergwerk
 鉄鉱石鉱山
+Incinerator
+焼却炉
 Kohlegrube
 炭鉱
 Kohlekraftwerk
@@ -464,6 +466,8 @@ SaegewerkMHz
 製材所
 Sandquarry
 砂採取場
+scrap_yard
+ゴミ集積場
 Stahlwerk
 製鉄所
 Stonequarry
@@ -485,7 +489,7 @@ Cement
 Chemicals
 化学薬品
 Concrete
-コンクリート
+ALCパネル
 Eisenerz
 鉄鉱石
 Gasoline
@@ -512,6 +516,8 @@ Stahl
 鉄鋼
 Stone
 石
+waste
+ゴミ
 #____________________________________ground_____________________________________
 #____________________________________ground_____________________________________
 ClimateTexture
@@ -526,6 +532,8 @@ Water
 #__________________________________ground_obj___________________________________
 flowers
 花
+rocks
+岩
 #_____________________________________menu______________________________________
 #_____________________________________menu______________________________________
 EditTools
@@ -840,6 +848,10 @@ DaimlerStoll
 ダイムラー・ストール
 DC-3
 ダグラスDC-3
+Deponielaster
+清掃車
+Deponielaster2
+清掃車
 Doubledeck_city_bus
 二階建て市内バス
 E44
@@ -884,6 +896,8 @@ Flachwagen
 高速有蓋車
 Fokker_F27
 フォッカー F27 フレンドシップ
+GarbageTruck
+清掃車
 Gelenkbus_Ende
 連節バス（後）
 Gelenkbus_Front
@@ -982,6 +996,8 @@ Moebelschiff
 TPI/JET 貨物船
 Moebelwagen
 VT Vienna 軽貨物車
+Muellschiff
+廃棄物輸送船
 NeuOelwagen
 新型タンク車
 Oelanhaenger
@@ -996,6 +1012,10 @@ OldOil
 タンク車
 old_open_car
 旧式無蓋貨車
+Ox2
+牛（2頭）
+Ox4
+牛（4頭）
 Papieranhaenger
 紙用トレーラー
 Papiertransporter
@@ -1082,6 +1102,8 @@ Tugboat
 タグボート
 VolvoFH12
 ボルボ FH12
+waste wagon
+廃棄物運搬車
 XMail
 XMail
 XTest

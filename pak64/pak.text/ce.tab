@@ -5,7 +5,7 @@
 #                            Language: ce C-English                            #
 #                                Encoding: ASCII                               #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 26.02 2008                           #
+#                            Date Created: 6.03 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                          Markus Pristovsek - prissi                          #
@@ -462,6 +462,8 @@ Druckerei
 Printing Works
 Erzbergwerk
 Iron Ore Mine
+Incinerator
+Incinerator
 Kohlegrube
 Coal Mine
 Kohlekraftwerk
@@ -490,6 +492,8 @@ Saegewerk
 Sawmill
 Sandquarry
 Sand Quarry
+scrap_yard
+Junk Yard
 Stahlwerk
 Iron Foundry
 Stonequarry
@@ -540,6 +544,8 @@ Stahl
 Steel
 Stone
 Stone
+waste
+Garbage
 #____________________________________ground_____________________________________
 #____________________________________ground_____________________________________
 Basement
@@ -800,6 +806,10 @@ Concorde
 Aerospatiale Concorde
 DC-3
 Douglas DC-3
+Deponielaster
+Colin Truck 155 (Garbage)
+Deponielaster2
+Ikarus Model I (Garbage)
 E44
 Kirayami Electric Locomotive II
 Eb3-5
@@ -826,6 +836,8 @@ Flachwagen
 Rama Box Car 12
 Fokker_F27
 Fokker F-27 Friendship
+GarbageTruck
+Kirayami Garbage Truck
 Guppy
 Aero Spacelines 377SGT Super Guppy
 H-Trans-Pantheress
@@ -918,6 +930,8 @@ Moebelschiff
 Boxes Boat
 Moebelwagen
 Rama Box Car 6
+Muellschiff
+Garbage Boat
 NeuOelwagen
 Rama Oil Car 22
 Oelanhaenger
@@ -1014,6 +1028,8 @@ Tugboat
 Tugboat
 VolvoFH12
 Ikarus Model F
+waste wagon
+Kahan Garbage Car
 XMail
 Kirayami Fuel Cell Prototype (Mail)
 XTest

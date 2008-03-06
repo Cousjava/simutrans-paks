@@ -5,7 +5,7 @@
 #                              Language: pl Polski                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 26.02 2008                           #
+#                            Date Created: 6.03 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                       Aleksander Kwiatkowski - Bobikus                       #
@@ -444,8 +444,8 @@ factory_ChemicalPlant_details
 Fabryka chemii
 factory_CHEMIST_details
 Apteka
-factory_Concretefactory_details
-Fabryka cementu
+factory_Incinerator_details
+<title>Piec cementowy - informacje</title>\n<h1>Piece cementowe</h1>\n<p>Kiedy¶ ¶mieci by³y sk³adowane na ¶mietniskach. Z czasem jednak ilo¶æ produkowanych przez ludzi ¶mieci zaczê³a gwa³townie rosn±æ i brakowa³o terenów do ich sk³adowania. Wymy¶lono wtedy spalarnie odpadów, które by³y po prostu ogromnymi piecami, w których spalano ¶mieci komunalne. Niestety spalarnie takie produkowa³y ogromne ilo¶ci rakotwórczych gazów oraz toksyczny ¿u¿el.</p>\n<p>W piecach cementowych, dedykowanych tak naprawdê do wypalania klinkieru, panuj± znacznie lepsze warunki do spalania odpadów i ilo¶æ szkodliwych substancji produkowanych podczas spalania ¶mieci jest o wiele mniejsza. W Simutrans dodatkowo wykorzystuje siê energiê powsta³± w tym procesie do produkcji pr±du.</p>\n
 factory_Kohlegrube_details
 <title>O kopalniach wêgla</title><h1>Kopalnie wêgla</h1><p>W kopalniach wêgla górnicy wydobywaj± wêgiel kamienny. To ciê¿ka i niewdziêczna praca, lecz wêgiel jest niezbêdny do dzia³ania tak istotnych ga³êzi przemys³u ja huty ¿elaza i elektrownie.</p>
 factory_Kohlekraftwerk_details
@@ -454,6 +454,8 @@ factory_Nutzwald_details
 <title>O uprawach le¶nych</title><h1>Uprawy le¶ne</h1><p>Lasy to najwa¿niejsze odnawialne ¼ród³a materia³ów i surowców energetycznych, które s± przygotowywane przez le¶nictwo i zamienianie na dobra konsumpcyjne przez przemys³ drzewny i papierowy.</p>\n<p>Drewno jest podstawowym surowcem do produkcji papieru. Mo¿na te¿ z niego robiæ ró¿nego rodzaju deski oraz p³yty wiórowe, które z kolei s± wykorzystywane w budownictwie oraz przemy¶le meblowym.</p>
 factory_Saegewerk_details
 <title>Tartaki</title>\n<h1>Tartaki</h1>\n<p>W tartakach tnie siê tarcicê (czyli ¶ciête drzewa) na deski (³aty giêtarskie, czê¶ci meblarskie, stolarkê budowlan±, a tak¿e fryzy posadzkowe). Robi siê to za pomoc± specjalnych pi³ zwanych trakami.</p>
+factory_scrap_yard_details
+<title>Segregacja odpadów</title><h1>¦mietniska</h1><p><br>Na nowoczesnych ¶mietniskach odpady s± segregowane. Osobno sk³adowane jest szk³o, plastik, papier, z³om ¿elazny, z³om metalowy itd. Gdy uzbiera siê ju¿ w³a¶ciwa ilo¶æ danego rodzaju odpadów i nadaj± siê one do recyklingu, to s± wysy³ane do odpowiedniego zak³adu. Pozosta³e odpady, szczególnie te niebezpieczne, wysy³ane s± do pieców cementowych w celu ich utylizacji w procesie spalania.<p>
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -478,6 +480,8 @@ Druckerei
 Drukarnia
 Erzbergwerk
 Kopalnia ¿elaza
+Incinerator
+Piec cementowy
 Kohlegrube
 Kopalnia wêgla
 Kohlekraftwerk
@@ -504,6 +508,8 @@ Saegewerk
 Tartak
 Sandquarry
 Piaskownia
+scrap_yard
+Segregacja odpadów
 Stahlwerk
 Huta ¿elaza
 Stonequarry
@@ -552,6 +558,8 @@ Stahl
 Stal
 Stone
 kamienia
+waste
+¶mieci
 #____________________________________ground_____________________________________
 #____________________________________ground_____________________________________
 Water
@@ -794,6 +802,10 @@ Concorde
 Concorde
 DC-3
 Douglas DC-3
+Deponielaster
+¦mieciarka I
+Deponielaster2
+¦mieciarka II
 Doubledeck_city_bus
 Autobus piêtrowy
 E44
@@ -822,6 +834,8 @@ FastFerry
 Poduszkowiec
 Fokker_F27
 Fokker F27
+GarbageTruck
+¦mieciarka
 Guppy
 Samolot transportowy Super Guppy
 H-Trans-Tiger-Car
@@ -906,6 +920,8 @@ Moebelschiff
 Statek meblowy
 Moebelwagen
 Leki wagon towarowy VT Vienna
+Muellschiff
+Statek ¶mieciarka
 NeuOelwagen
 Cysterna (80t)
 Oelanhaenger
@@ -996,6 +1012,8 @@ Tugboat
 Holownik
 VolvoFH12
 Ci±gnik siod³owy VOLVO FH 12
+waste wagon
+Wagon ¦mieciarka
 XMail
 Wagon pocztowy
 XTest

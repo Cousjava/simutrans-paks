@@ -5,7 +5,7 @@
 #                              Language: fi Suomi                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 26.02 2008                           #
+#                            Date Created: 6.03 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                        Jaakko Mäkinen - jaakko.makinen                       #
@@ -506,6 +506,8 @@ Druckerei
 Kirjapaino
 Erzbergwerk
 Rautakaivos
+Incinerator
+Jätteidenpolttolaitos
 Kohlegrube
 Hiilikaivos
 Kohlekraftwerk
@@ -536,6 +538,8 @@ Saegewerk
 Saha
 Sandquarry
 Hiekkalouhos
+scrap_yard
+Kaatopaikka
 Stahlwerk
 Rautavalimo
 Stonequarry
@@ -586,6 +590,8 @@ Stahl
 terästä
 Stone
 kiveä
+waste
+jätettä
 #____________________________________ground_____________________________________
 #____________________________________ground_____________________________________
 Basement
@@ -900,6 +906,10 @@ Concorde
 concorde
 DC-3
 Douglass DC-3
+Deponielaster
+Jäterekka
+Deponielaster2
+Roska-auto
 Doubledeck_city_bus
 Kaksikerroksinen turistibussi
 E44
@@ -930,6 +940,8 @@ Flachwagen
 H-Trans kirjavaunu
 Fokker_F27
 Fokker F27
+GarbageTruck
+Roska-auto
 Guppy
 Matkustajakone
 H-Trans-Pantheress
@@ -1016,6 +1028,8 @@ Moebelschiff
 Huonekalualus
 Moebelwagen
 VT Vienna huonekaluvaunu
+Muellschiff
+Jätelaiva
 NeuOelwagen
 Öljyvaunu
 Oelanhaenger
@@ -1098,6 +1112,8 @@ Tugboat
 Hinaaja
 VolvoFH12
 Volvo FH12
+waste wagon
+Jätevaunu
 XMail
 Xpostivaunu
 XTest

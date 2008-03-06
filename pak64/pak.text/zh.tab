@@ -5,7 +5,7 @@
 #                            Language: zh T. Chinese                           #
 #                                Encoding: UTF-8                               #
 #                               Font : m+10r.bdf                               #
-#                           Date Created: 26.02 2008                           #
+#                            Date Created: 6.03 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                          Killua - kiruazaoldyeck1986                         #
@@ -160,6 +160,8 @@ Druckerei
 印刷廠
 Erzbergwerk
 鐵礦
+Incinerator
+焚化爐
 Kohlegrube
 煤礦
 Kohlekraftwerk
@@ -188,6 +190,8 @@ Saegewerk
 木廠
 Sandquarry
 沙礦
+scrap_yard
+垃圾回收站
 Stahlwerk
 煉鋼廠
 Stonequarry
@@ -238,6 +242,8 @@ Stahl
 鋼
 Stone
 石
+waste
+垃圾
 #_____________________________________menu______________________________________
 #_____________________________________menu______________________________________
 ListTools

@@ -5,7 +5,7 @@
 #                           Language: cn Sim. Chinese                          #
 #                                Encoding: UTF-8                               #
 #                                    Font :                                    #
-#                           Date Created: 26.02 2008                           #
+#                            Date Created: 6.03 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                           Alan Wei Hong - LondonBVE                          #
@@ -158,6 +158,8 @@ Druckerei
 印刷厂
 Erzbergwerk
 铁矿
+Incinerator
+焚化炉
 Kohlegrube
 煤矿
 Kohlekraftwerk
@@ -186,6 +188,8 @@ Saegewerk
 木厂
 Sandquarry
 沙矿
+scrap_yard
+垃圾回收站
 Stahlwerk
 炼钢厂
 Stonequarry
@@ -236,6 +240,8 @@ Stahl
 钢
 Stone
 石
+waste
+垃圾
 #_____________________________________menu______________________________________
 #_____________________________________menu______________________________________
 ListTools

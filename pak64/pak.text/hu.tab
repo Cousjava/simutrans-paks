@@ -5,7 +5,7 @@
 #                              Language: hu Magyar                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 26.02 2008                           #
+#                            Date Created: 6.03 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Magyar István - mmalna                            #
@@ -572,6 +572,8 @@ Druckerei
 Nyomda
 Erzbergwerk
 Vasércbánya
+Incinerator
+Szemétégetõ
 Kohlegrube
 Szénbánya
 Kohlekraftwerk
@@ -602,6 +604,8 @@ Saegewerk
 Fürészmalom
 Sandquarry
 Homokbánya
+scrap_yard
+Szeméttelep
 Stahlwerk
 Acélkohó
 Stonequarry
@@ -652,6 +656,8 @@ Stahl
 acél
 Stone
 kõ
+waste
+szemét
 #____________________________________ground_____________________________________
 #____________________________________ground_____________________________________
 Basement
@@ -1014,6 +1020,10 @@ DaimlerStoll
 Daimler-Stoll
 DC-3
 DC-3
+Deponielaster
+Szemétszállító-A kocsi
+Deponielaster2
+Szemétszállító-B kocsi
 Doubledeck_city_bus
 Emeletes városi busz
 E44
@@ -1044,6 +1054,8 @@ Flachwagen
 Könyvszállítóvagon
 Fokker_F27
 Fokker-F27 repülõgép
+GarbageTruck
+Szemétszállító kamion
 Guppy
 Guppy darabárú-szállító repülõgép
 H-Trans-Pantheress
@@ -1138,6 +1150,8 @@ Moebelschiff
 Darabáruszállító tankerhajó
 Moebelwagen
 Darabáruszállító-C vagon
+Muellschiff
+Szemétszállító tankerhajó
 NeuOelwagen
 Olaj vagon (80t)
 Oelanhaenger
@@ -1238,6 +1252,8 @@ Tugboat
 Vontatóhajó
 VolvoFH12
 Volvo kamionfülke
+waste wagon
+Szemétszállító vagon
 XMail
 X-Test egysínû postavagon
 XTest

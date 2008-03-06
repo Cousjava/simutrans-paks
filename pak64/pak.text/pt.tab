@@ -5,7 +5,7 @@
 #                            Language: pt Portugues                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 26.02 2008                           #
+#                            Date Created: 6.03 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                             Eric Oliveira - eric                             #
@@ -424,6 +424,8 @@ Druckerei
 Editora
 Erzbergwerk
 Mina de ferro
+Incinerator
+Incinerador
 Kohlegrube
 Mina de carvão
 Kohlekraftwerk
@@ -454,6 +456,8 @@ Saegewerk
 Serraria
 Sandquarry
 Mina de areia
+scrap_yard
+Aterro
 Stahlwerk
 Siderúrgica
 Stonequarry
@@ -502,6 +506,8 @@ Stahl
 Aço
 Stone
 Pedra
+waste
+Lixo
 #____________________________________ground_____________________________________
 #____________________________________ground_____________________________________
 Fence
@@ -792,6 +798,10 @@ Concorde
 Concorde
 DaimlerStoll
 "Daimler Stoll"
+Deponielaster
+Caminhão lixeiro Deponielaster 1
+Deponielaster2
+Caminhão lixeiro Deponielaster 2
 Doubledeck_city_bus
 Ônibus urbano duplex
 Eb3-5
@@ -816,6 +826,8 @@ Flachwagen
 Vagão de caixas moderno
 Fokker_F27
 Fokker F27
+GarbageTruck
+Caminhão de lixo
 Guppy
 Avião cargueiro Guppy
 H-Trans-Pantheress
@@ -900,6 +912,8 @@ Moebelschiff
 TPI/JET Navio para móveis
 Moebelwagen
 Vagão para móveis VT Vienna
+Muellschiff
+Navio para transporte de lixo
 NeuOelwagen
 Vagão petroleiro (80t)
 Oelanhaenger
@@ -992,6 +1006,8 @@ Tugboat
 Rebocador
 VolvoFH12
 Volvo FH12
+waste wagon
+Vagão lixeiro
 Zeppelin
 Zeppelin
 #______________________________________way______________________________________

@@ -5,7 +5,7 @@
 #                            Language: sk Slovenèina                           #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 26.02 2008                           #
+#                            Date Created: 6.03 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                             Jan Poláèek - Jerome                             #
@@ -120,6 +120,8 @@ Druckerei
 Tla?iare?
 Erzbergwerk
 ?eleznorudná ba?a
+Incinerator
+Spa?ov?a
 Kohlegrube
 Uho?ná ba?a
 Kohlekraftwerk
@@ -148,6 +150,8 @@ Saegewerk
 Píla
 Sandquarry
 Ba?a na piesok
+scrap_yard
+Skládka odpadu
 Stahlwerk
 Oceliare?
 Stonequarry
@@ -196,6 +200,8 @@ Stahl
 Oce?
 Stone
 Kamenie
+waste
+smeti
 #_____________________________________menu______________________________________
 #_____________________________________menu______________________________________
 ListTools
