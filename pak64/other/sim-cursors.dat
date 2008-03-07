@@ -48,10 +48,14 @@ Name=Mouse
 Image[0]=> ls-cursors.1.4
 --------------------
 Obj=cursor
-Name=ShipDepotNS
-Image[0]=ls-cursors.1.6
+Name=Linktool
+Image[0]=ls-cursors.1.5
 --------------------
 Obj=cursor
-Name=ShipDepotEW
-Image[0]=ls-cursors.1.7
+Name=Construction
+Image[0]=ls-cursors.1.6
+--------------------
+#Obj=cursor
+#Name=ShipDepotEW
+#Image[0]=ls-cursors.1.7
 --------------------
