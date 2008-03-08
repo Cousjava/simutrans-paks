@@ -43,27 +43,44 @@ Image[5]=> list-tool.0.5
 --------------------
 Obj=menu
 name=SpecialTools
-Image[0]=> special_tool_icons.0.0
-Image[1]=> special_tool_icons.0.1
-Image[2]=> ../way/ls-power-land-trans.0.2
-Image[3]=> special_tool_icons.0.3
-Image[4]=> special_tool_icons.0.4
-Image[5]=> special_tool_icons.1.0
-Image[6]=> special_tool_icons.1.1
+# founding a city
+Image[0]=> map-edit.2.0
+# built a house
+Image[1]=> map-edit.3.1
+# link industry
+Image[2]=> map-edit.2.1
+# growing industry
+Image[3]=> map-edit.0.3
+# built industry
+Image[4]=> map-edit.1.2
+# marker
+Image[5]=> map-edit.3.3
+# built a tree
+Image[6]=> map-edit.2.2
+#built a forest
+Image[7]=> map-edit.3.0
+#built a citycar
+Image[7]=> map-edit.2.3
 --------------------
 Obj=menu
 name=EditTools
-Image[0]=> edit-menu.0.0
-Image[1]=> edit-menu.0.1
-Image[2]=> edit-menu.0.2
-Image[3]=> edit-menu.0.3
-Image[4]=> edit-menu.1.3
-Image[5]=> edit-menu.1.1
-Image[6]=> edit-menu.1.0
+#grow city
+Image[0]=> map-edit.0.0
+#shrink city
+Image[1]=> map-edit.0.1
+#cityroad
+Image[2]=> map-edit.0.2
+#built attraction
+Image[3]=> map-edit.1.3
+#player change
+Image[4]=> map-edit.3.2
+# lock game
+Image[5]=> map-edit.1.1
+# skip year
+Image[6]=> map-edit.1.0
 # the five remover
-Image[7]=> edit-menu.2.0
-Image[8]=> edit-menu.2.1
-Image[9]=> edit-menu.3.0
-Image[10]=> edit-menu.2.2
-Image[11]=> edit-menu.2.3
---------------------
+Image[7]=> wayremover-tool.0.0
+Image[8]=> wayremover-tool.0.1
+Image[9]=> wayremover-tool.1.0
+Image[10]=> wayremover-tool.0.2
+Image[11]=> wayremover-tool.0.3
