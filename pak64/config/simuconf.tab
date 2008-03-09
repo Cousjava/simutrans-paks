@@ -25,6 +25,9 @@ beginner_price_factor = 1500
 # best to leave it in default position. (only on for simuTTD)
 crossconnect_factories = 0
 
+# how much is the total electric power available in rleation to total production) in parts per thousand
+electric_promille = 33
+
 # how big is the chance for crossconnections in percent
 # (100% will give nearly the same results as crossconnect_factories=1)
 crossconnect_factories_percentage = 33

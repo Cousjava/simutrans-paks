@@ -35,3 +35,6 @@ forest_inverse_spare_tree_density = 400
 # climate with trees entirely (1: water, 2:desert, 4:tropic, 8:mediterran, 16:temperate, 32:tundra, 64:rocky, 128:arctic)
 # zero (default) means no climate with at least one tree per tile
 tree_climates = 4
+
+# climates with no trees at all (desert and arctic at the moment)
+no_tree_climates = 132
