@@ -29,17 +29,5 @@ obj=program_text
 name=CATEGORY_07
 --
 obj=program_text
-name=paletten
---
-obj=program_text
-name=m3
---
-obj=program_text
-name=tonnen
---
-obj=program_text
-name=sack
---
-obj=program_text
 name=rolls
 --
