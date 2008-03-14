@@ -37,4 +37,4 @@ forest_inverse_spare_tree_density = 400
 tree_climates = 4
 
 # climates with no trees at all (desert and arctic at the moment)
-no_tree_climates = 132
+no_tree_climates = 130
