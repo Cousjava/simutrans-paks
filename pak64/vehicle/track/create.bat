@@ -1,1 +1,0 @@
-..\..\makeobj PAK >err.txt
