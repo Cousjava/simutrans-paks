@@ -1,5 +1,5 @@
 
-Makeobj version 49 for simutrans 99.17.1 nightly and higher
+Makeobj version 49 for simutrans 99.18 nightly and higher
 (c) 2002-2006 V. Meyer , Hj. Malthaner, M. Pristovsek (markus@pristovsek.de)
 
 writing invidual files to ./
@@ -187,3 +187,13 @@ writing invidual files to ./
    reading file ./wagon-pass.dat
    writing file ./vehicle.Passagierwagen.pak
       packing vehicle.Passagierwagen
+   writing file ./vehicle.TPPassagierwagen.pak
+      packing vehicle.TPPassagierwagen
+   writing file ./vehicle.Postwagen.pak
+      packing vehicle.Postwagen
+   writing file ./vehicle.PrPostwagen.pak
+      packing vehicle.PrPostwagen
+   writing file ./vehicle.PrPersonenwagen.pak
+      packing vehicle.PrPersonenwagen
+   writing file ./vehicle.AdlerPersonenwagen.pak
+      packing vehicle.AdlerPersonenwagen
