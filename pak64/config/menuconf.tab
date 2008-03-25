@@ -1,0 +1,152 @@
+# menuconf.tab
+#
+# Menu configuration for Simutrans
+#
+# author: Markus Pristovsek
+#
+
+# With these file, each menu/tool/toolbar can be assigned a meaning
+# there are four different kind of tools
+# general_tools: like query, remove, alter land, ...
+# click tools: pause, fast forward, ...
+# dialoge tools: open a dialoge like minimap, settings, finances, ...
+# toolbar tools: open toolbars like slope tools, road tools, ...
+
+icon_width = 32
+icon_height = 32
+
+# FIRST SECTION: general tools
+# these tools have an icon, a cursor, and maybe a sound
+# each entry has the form: general_tool[i],a,b,c,k
+# i is the tool number (as seen below)
+# a is the icon as number in menu: menu.GeneralTools.pak
+# b is the cursor as number in cursor: cursor.GeneralTools.pak
+# c is the sound on success
+# k is the key to toggle this
+# ommitting a parameter will set default values (i.e. no image, no sound, no default string)
+# These are the default definition.
+#
+# currently define values for i
+#	WKZ_ABFRAGE=0
+#	WKZ_REMOVER=1
+#	WKZ_RAISE_LAND=2
+#	WKZ_LOWER_LAND=3
+#	WKZ_SETSLOPE=4
+#	WKZ_RESTORESLOPE=5
+#	WKZ_MARKER=6
+#
+general_tool[0],0,0,9,a
+general_tool[1],1,1,14,r
+general_tool[2]=2,2,11,u
+general_tool[3]=3,3,11,d
+# general tool 4 needs a parameter => icon defined in toolbar but no cursor yet
+general_tool[4]=4,,11
+general_tool[5]=5,4,11
+general_tool[6]=6,5,9,M
+
+
+# SECOND SECTION: simple tools
+# since these tools act immeadiately
+# they have only an icon assigned
+# each entry has the form: dialoge_tool[i],a,k
+# i is the tool number (as seen below)
+# a is the icon as number in menu: menu.SimpleTools.pak
+# k is the key to toggle this
+#
+#	WKZ_PAUSE = 0
+#	WKZ_FASTFORWARD = 1
+#	WKZ_SCREENSHOT = 2
+
+#
+simple_tool[0]=0,p
+simple_tool[1]=1,W
+simple_tool[2]=2,c
+
+
+# THIRD SECTION: dialoge tools
+# since these tools immeadiately open only a dialoge,
+# they have only an icon assigned
+# each entry has the form: dialoge_tool[i],a,k
+# i is the tool number (as seen below)
+# a is the icon as number in menu: menu.DialogeTools.pak
+# k is the key to toggle this
+#
+#	WKZ_HELP=0
+#	WKZ_OPTIONEN=1
+#	WKZ_MINIMAP=2
+#	WKZ_LINEOVERVIEW=3
+#	WKZ_MESSAGE=4
+#	WKZ_FINANCES=5
+#	WKZ_PLAYERS=6
+#	WKZ_DISPLAYOPTIONS=7
+#	WKZ_SOUND=8
+#	WKZ_LANGUAGE=9
+#	WKZ_PLAYERCOLOR=10
+#	WKZ_LOAD=11
+#	WKZ_SAVE=12
+#
+dialog_tool[0]=0,?
+dialog_tool[1]=1,Q
+dialog_tool[2]=2,m
+dialog_tool[3]=3,b
+dialog_tool[4]=4,f
+dialog_tool[5]=5,k
+dialog_tool[6]=6
+dialog_tool[7]=7
+dialog_tool[8]=8
+dialog_tool[9]=9
+dialog_tool[10]=10
+dialog_tool[11]=11,L
+dialog_tool[12]=12,S
+
+
+# FINAL SECTION: compose all tool bars
+# now the defintion of all tool bars
+# in general only toolbar[0] is needed, which is the main menu
+# all other toolbars are derived from it
+# Each entry is a[i],b,k,c,d
+# a[i] is either: general_tool[i], simple_tool[i], dialog_tool[i], toolbar[i], -, ways(waytype), signs(waytype), wayobj(waytype), stops(utype), depots(waytype), extension(utype)
+# b could be a different icon from the previous (if any) tool definition taken from menu.ToolbarTools.pak
+# k could be a different key binding
+# c is the default parameter
+# d is the helpfile name (only if a is toolbar[i])
+#
+# IMPORTANT: toolbar[2] must not be mentioned before toolbar[1]!
+# SPACES have a meaning here! Do not use spaces, if you did not intend so!
+#
+
+# toolbar[0] is always main menu
+toolbar[0][0]=dialog_tool[1]
+toolbar[0][1]=dialog_tool[2]
+toolbar[0][2]=general_tool[0]
+toolbar[0][3]=toolbar[1],0,,SLOPETOOLS,slopetools.txt
+toolbar[0][4]=toolbar[2],1,,RAILTOOLS,railtools.txt
+toolbar[0][5]=toolbar[3],2,,MONORAILTOOLS,monorailtools.txt
+toolbar[0][6]=toolbar[4],3,,TRAMTOOLS,tramtools.txt
+toolbar[0][7]=toolbar[5],4,,ROADTOOLS,roadtools.txt
+toolbar[0][8]=toolbar[6],5,,SHIPTOOLS,shipstools.txt
+toolbar[0][9]=toolbar[7],6,,AIRTOOLS,airtools.txt
+toolbar[0][10]=toolbar[8],7,,SPECIALTOOLS,special.txt
+toolbar[0][9]=general_tool[1]
+toolbar[0][10]=-
+toolbar[0][11]=dialog_tool[3]
+toolbar[0][12]=toolbar[9],8,LISTTOOLS,list.txt
+toolbar[0][13]=dialog_tool[4]
+toolbar[0][14]=dialog_tool[5]
+toolbar[0][15]=-
+toolbar[0][16]=simple_tool[2]
+toolbar[0][17]=simple_tool[0]
+toolbar[0][18]=simple_tool[1]
+toolbar[0][19]=dialog_tool[0]
+
+# slope tools
+toolbar[1][0]=general_tool[2]
+toolbar[1][1]=general_tool[3]
+toolbar[1][2]=general_tool[4],11,,12 #southslope
+toolbar[1][3]=general_tool[4],12,,3 #northslope
+toolbar[1][4]=general_tool[4],13,,6 #westslope
+toolbar[1][5]=general_tool[4],14,,9 #eastslope
+toolbar[1][6]=general_tool[4],15,,16 #all up slope
+toolbar[1][7]=general_tool[4],16,,17 #all down slope
+toolbar[1][8]=general_tool[5]
+
