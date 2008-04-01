@@ -27,22 +27,56 @@ icon_height = 32
 # These are the default definition.
 #
 # currently define values for i
-#	WKZ_ABFRAGE=0
-#	WKZ_REMOVER=1
-#	WKZ_RAISE_LAND=2
-#	WKZ_LOWER_LAND=3
-#	WKZ_SETSLOPE=4
-#	WKZ_RESTORESLOPE=5
-#	WKZ_MARKER=6
+# WKZ_ABFRAGE=0
+
+# WKZ_REMOVER=1
+# WKZ_RAISE_LAND=2
+# WKZ_LOWER_LAND=3
+# WKZ_SETSLOPE=4
+# WKZ_RESTORESLOPE=5
+# WKZ_MARKER=6
+# WKZ_CLEAR_RESERVATION=7
+# WKZ_TRANSFORMER=8
+# WKZ_ADD_CITY=9
+# WKZ_CHANGE_CITY_SIZE=10
+# WKZ_PLANT_TREE=11
+# WKZ_FAHRPLAN_ADD=12	// only for internal use
+# WKZ_FAHRPLAN_INS=13	// only for internal use
+# WKZ_WEGEBAU=14 // parameter either string with name of number for default way
+# WKZ_BRUECKENBAU=15
+# WKZ_TUNNELBAU=16
+# WKZ_WAYREMOVER=17
+# WKZ_WAYOBJ=18
+# WKZ_STATION=19
+# WKZ_ROADSIGN=20
+# WKZ_DEPOT=21
+# WKZ_BUILD_HAUS=22
+# WKZ_LAND_CHAIN=23
+# WKZ_CITY_CHAIN=24
+# WKZ_BUILD_FACTORY=25
+# WKZ_LINK_FACTORY=26
+# WKZ_HEADQUARTER=27
+# WKZ_LOCK_GAME=28
+
 #
-general_tool[0],0,0,9,a
-general_tool[1],1,1,14,r
+general_tool[0]=0,0,9,a
+general_tool[1]=1,1,14,r
 general_tool[2]=2,2,11,u
 general_tool[3]=3,3,11,d
 # general tool 4 needs a parameter => icon defined in toolbar but no cursor yet
-general_tool[4]=4,,11
-general_tool[5]=5,4,11
-general_tool[6]=6,5,9,M
+general_tool[4]=,4,11
+general_tool[5]=4,4,11
+general_tool[6]=5,5,9,M
+general_tool[7]=6,6,,b
+general_tool[8]=7,7,11,g
+general_tool[9]=8,8,11,C
+# general tool 10 needs a parameter + icon & cursor depends on it => not defined here
+general_tool[11]=9,9,9,M
+# general tools 12...22 will get their content from other entries
+# we do not use general tool 23...25 directly in pak64 => undefined icons
+general_tool[26]=10,10,,
+general_tool[27]=11,11,,h
+general_tool[28]=12,7,,
 
 
 # SECOND SECTION: simple tools
@@ -53,14 +87,36 @@ general_tool[6]=6,5,9,M
 # a is the icon as number in menu: menu.SimpleTools.pak
 # k is the key to toggle this
 #
-#	WKZ_PAUSE = 0
-#	WKZ_FASTFORWARD = 1
-#	WKZ_SCREENSHOT = 2
-
+# WKZ_PAUSE = 0
+# WKZ_FASTFORWARD = 1
+# WKZ_SCREENSHOT = 2
+# WKZ_INCREASE_INDUSTRY=3
+# WKZ_UNDO=4
+# WKZ_SWITCH_PLAYER=5
+# WKZ_STEP_YEAR=6
+# WKZ_CHANGE_GAME_SPEED=7
+# WKZ_ZOOM_IN=8
+# WKZ_ZOOM_OUT=9
+# WKZ_SHOW_COVERAGE=10
+# WKZ_SHOW_NAMES=11
+# WKZ_SHOW_GRID=12
+# WKZ_SHOW_TREES=13
+# WKZ_SHOW_HOUSES=14
+# WKZ_SHOW_UNDERGROUND=15
+# WKZ_ROTATE90=16
+# WKZ_QUIT=17
 #
 simple_tool[0]=0,p
 simple_tool[1]=1,W
 simple_tool[2]=2,c
+simple_tool[3]=3
+simple_tool[4]=4,Z
+simple_tool[5]=5,P
+simple_tool[6]=6
+# simple tool 7 needs a parameter
+simple_tool[8]=7
+simple_tool[9]=8
+# lots of icons still not drawn ...
 
 
 # THIRD SECTION: dialoge tools
@@ -105,11 +161,55 @@ dialog_tool[12]=12,S
 # in general only toolbar[0] is needed, which is the main menu
 # all other toolbars are derived from it
 # Each entry is a[i],b,k,c,d
-# a[i] is either: general_tool[i], simple_tool[i], dialog_tool[i], toolbar[i], -, ways(waytype), signs(waytype), wayobj(waytype), stops(utype), depots(waytype), extension(utype)
+# a[i] is either: general_tool[i], simple_tool[i], dialog_tool[i], toolbar[i], -, ways(waytype), signs(waytype), wayobj(waytype), stops(utype), depots(waytype)
 # b could be a different icon from the previous (if any) tool definition taken from menu.ToolbarTools.pak
 # k could be a different key binding
 # c is the default parameter
 # d is the helpfile name (only if a is toolbar[i])
+#
+# following waytypes are defined (for nearly everything)
+# road_wt          =   1
+# track_wt         =   2
+# water_wt         =   3
+# monorail_wt      =   5
+# maglev_wt        =   6
+# tram_wt          =   7
+# narrowgauge_wt   =   8
+# air_wt           =  16
+# powerline_wt     = 128
+#
+# subtypes for ways(x,#)
+# flat = 0
+# elevated/runway = 1
+# tram = 7 (only for track)
+# fence = 255
+#
+# following buildingstype are defined (for buildings(#))
+# unbekannt         =  0
+# attraction_city   =  1
+# attraction_land   =  2
+# denkmal           =  3
+# fabrik            =  4
+# rathaus           =  5
+# weitere           =  6
+# firmensitz        =  7
+# bahnhof           =  8
+# bushalt           =  9
+# ladebucht         = 10
+# hafen             = 11
+# binnenhafen       = 12
+# airport           = 13
+# monorailstop      = 14
+# bahnhof_geb       = 16
+# bushalt_geb       = 17
+# ladebucht_geb     = 18
+# hafen_geb         = 19
+# binnenhafen_geb   = 20
+# airport_geb       = 21
+# monorail_geb      = 22
+# wartehalle        = 30
+# post              = 31
+# lagerhalle        = 32
 #
 # IMPORTANT: toolbar[2] must not be mentioned before toolbar[1]!
 # SPACES have a meaning here! Do not use spaces, if you did not intend so!
@@ -127,26 +227,94 @@ toolbar[0][7]=toolbar[5],4,,ROADTOOLS,roadtools.txt
 toolbar[0][8]=toolbar[6],5,,SHIPTOOLS,shipstools.txt
 toolbar[0][9]=toolbar[7],6,,AIRTOOLS,airtools.txt
 toolbar[0][10]=toolbar[8],7,,SPECIALTOOLS,special.txt
-toolbar[0][9]=general_tool[1]
-toolbar[0][10]=-
-toolbar[0][11]=dialog_tool[3]
-toolbar[0][12]=toolbar[9],8,LISTTOOLS,list.txt
-toolbar[0][13]=dialog_tool[4]
-toolbar[0][14]=dialog_tool[5]
-toolbar[0][15]=-
-toolbar[0][16]=simple_tool[2]
-toolbar[0][17]=simple_tool[0]
-toolbar[0][18]=simple_tool[1]
-toolbar[0][19]=dialog_tool[0]
+toolbar[0][11]=general_tool[1]
+toolbar[0][12]=-
+toolbar[0][13]=dialog_tool[3]
+toolbar[0][14]=toolbar[9],8,LISTTOOLS,list.txt
+toolbar[0][15]=dialog_tool[4]
+toolbar[0][16]=dialog_tool[5]
+toolbar[0][17]=-
+toolbar[0][18]=simple_tool[2]
+toolbar[0][19]=simple_tool[0]
+toolbar[0][20]=simple_tool[1]
+toolbar[0][21]=dialog_tool[0]
 
 # slope tools
 toolbar[1][0]=general_tool[2]
 toolbar[1][1]=general_tool[3]
-toolbar[1][2]=general_tool[4],11,,12 #southslope
-toolbar[1][3]=general_tool[4],12,,3 #northslope
-toolbar[1][4]=general_tool[4],13,,6 #westslope
-toolbar[1][5]=general_tool[4],14,,9 #eastslope
-toolbar[1][6]=general_tool[4],15,,16 #all up slope
-toolbar[1][7]=general_tool[4],16,,17 #all down slope
+toolbar[1][2]=general_tool[4],10,,12 #southslope
+toolbar[1][3]=general_tool[4],11,,3 #northslope
+toolbar[1][4]=general_tool[4],12,,6 #westslope
+toolbar[1][5]=general_tool[4],13,,9 #eastslope
+toolbar[1][6]=general_tool[4],14,,16 #all up slope
+toolbar[1][7]=general_tool[4],15,,17 #all down slope
 toolbar[1][8]=general_tool[5]
+
+# railtools
+toolbar[2][0]=ways(2,0)
+toolbar[2][1]=ways(2,1)
+toolbar[2][2]=bridges(2)
+toolbar[2][3]=tunnels(2)
+toolbar[2][4]=wayobjs(2)
+toolbar[2][5]=signs(2)
+toolbar[2][6]=general_tool[21],,,TrainDepot
+toolbar[2][7]=buildings(8)
+toolbar[2][8]=buildings(16)
+
+# monorailtools (waytype 5)
+toolbar[3][0]=ways(5,0)
+toolbar[3][1]=ways(5,1)
+toolbar[3][2]=bridges(5)
+toolbar[3][3]=tunnels(5)
+toolbar[3][4]=wayobjs(5)
+toolbar[3][5]=signs(5)
+toolbar[3][6]=general_tool[21],,,MonorailDepot
+toolbar[3][7]=buildings(14)
+toolbar[3][8]=buildings(22)
+
+# tramtools (waytype 7)
+toolbar[4][0]=ways(7,0)
+toolbar[4][1]=ways(2,7)
+toolbar[4][2]=bridges(2)
+toolbar[4][3]=tunnels(2)
+toolbar[4][4]=wayobjs(2)
+toolbar[4][5]=signs(2)
+toolbar[4][6]=general_tool[21],,,TramDepot
+toolbar[4][7]=buildings(8)
+toolbar[4][8]=buildings(9)
+
+# roadtools (waytype 1)
+toolbar[5][0]=ways(1,0)
+toolbar[5][1]=ways(1,1)
+toolbar[5][2]=bridges(1)
+toolbar[5][3]=tunnels(1)
+toolbar[5][4]=wayobjs(1)
+toolbar[5][5]=signs(1)
+toolbar[5][6]=general_tool[21],,,CarDepot
+toolbar[5][7]=buildings(9)
+toolbar[5][8]=buildings(17)
+
+# shiptools (waytype 3)
+toolbar[6][0]=ways(3,0)
+toolbar[6][1]=ways(3,1)
+toolbar[6][2]=bridges(3)
+toolbar[6][3]=tunnels(3)
+toolbar[6][4]=wayobjs(3)
+toolbar[6][5]=signs(3)
+toolbar[6][6]=buildings(11)
+toolbar[6][7]=buildings(19)
+toolbar[6][8]=general_tool[21],,,ShipDepot
+toolbar[6][9]=buildings(12)
+toolbar[6][10]=buildings(20)
+
+# airtools (waytype 1)
+toolbar[7][0]=ways(16,0)
+toolbar[7][1]=ways(16,1)
+toolbar[7][2]=bridges(16)
+toolbar[7][3]=wayobjs(16)
+toolbar[7][4]=signs(16)
+toolbar[7][5]=general_tool[21],,,AirDepot
+toolbar[7][6]=general_tool[21],,,1930AirDepot
+toolbar[7][7]=buildings(13)
+toolbar[7][8]=buildings(21)
 
