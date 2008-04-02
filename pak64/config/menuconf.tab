@@ -72,10 +72,13 @@ general_tool[8]=7,7,11,g
 general_tool[9]=8,8,11,C
 # general tool 10 needs a parameter + icon & cursor depends on it => not defined here
 general_tool[11]=9,9,9,M
+# define the cursor for schedule tools
+general_tool[12]=,,10,,
+general_tool[13]=,,10,,
 # general tools 12...22 will get their content from other entries
 # we do not use general tool 23...25 directly in pak64 => undefined icons
-general_tool[26]=10,10,,
-general_tool[27]=11,11,,h
+general_tool[26]=10,11,,
+general_tool[27]=11,12,,h
 general_tool[28]=12,7,,
 
 
