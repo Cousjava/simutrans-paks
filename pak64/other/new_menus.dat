@@ -58,8 +58,9 @@ Image[7]=> -
 Image[8]=> -
 Image[9]=> -
 Image[10]=> -
-Image[11]=> wkz_icons.2.11
-Image[12]=> wkz_icons.2.12
+Image[11]=> -
+Image[12]=> wkz_icons.2.11
+Image[13]=> wkz_icons.2.12
 --
 Obj=menu
 name=BarTools

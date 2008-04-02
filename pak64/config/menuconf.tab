@@ -71,7 +71,7 @@ general_tool[7]=6,6,,b
 general_tool[8]=7,7,11,g
 general_tool[9]=8,8,11,C
 # general tool 10 needs a parameter + icon & cursor depends on it => not defined here
-general_tool[11]=9,9,9,M
+general_tool[11]=9,9,9,§
 # define the cursor for schedule tools
 general_tool[12]=,,10,,
 general_tool[13]=,,10,,
@@ -130,19 +130,20 @@ simple_tool[9]=8
 # a is the icon as number in menu: menu.DialogeTools.pak
 # k is the key to toggle this
 #
-#	WKZ_HELP=0
-#	WKZ_OPTIONEN=1
-#	WKZ_MINIMAP=2
-#	WKZ_LINEOVERVIEW=3
-#	WKZ_MESSAGE=4
-#	WKZ_FINANCES=5
-#	WKZ_PLAYERS=6
-#	WKZ_DISPLAYOPTIONS=7
-#	WKZ_SOUND=8
-#	WKZ_LANGUAGE=9
-#	WKZ_PLAYERCOLOR=10
-#	WKZ_LOAD=11
-#	WKZ_SAVE=12
+# WKZ_HELP=0
+# WKZ_OPTIONEN=1
+# WKZ_MINIMAP=2
+# WKZ_LINEOVERVIEW=3
+# WKZ_MESSAGE=4
+# WKZ_FINANCES=5
+# WKZ_PLAYERS=6
+# WKZ_DISPLAYOPTIONS=7
+# WKZ_SOUND=8
+# WKZ_LANGUAGE=9
+# WKZ_PLAYERCOLOR=10
+# WKZ_JUMP=11
+# WKZ_LOAD=12
+# WKZ_SAVE=13
 #
 dialog_tool[0]=0,?
 dialog_tool[1]=1,Q
@@ -155,8 +156,9 @@ dialog_tool[7]=7
 dialog_tool[8]=8
 dialog_tool[9]=9
 dialog_tool[10]=10
-dialog_tool[11]=11,L
-dialog_tool[12]=12,S
+dialog_tool[11]=11,J
+dialog_tool[12]=12,L
+dialog_tool[13]=13,S
 
 
 # FINAL SECTION: compose all tool bars
@@ -196,23 +198,12 @@ dialog_tool[12]=12,S
 # rathaus           =  5
 # weitere           =  6
 # firmensitz        =  7
-# bahnhof           =  8
-# bushalt           =  9
-# ladebucht         = 10
 # hafen             = 11
-# binnenhafen       = 12
-# airport           = 13
-# monorailstop      = 14
-# bahnhof_geb       = 16
-# bushalt_geb       = 17
-# ladebucht_geb     = 18
-# hafen_geb         = 19
-# binnenhafen_geb   = 20
-# airport_geb       = 21
-# monorail_geb      = 22
-# wartehalle        = 30
-# post              = 31
-# lagerhalle        = 32
+# the following are in the form x,y with y= waytype (0 for none)
+# depot = 33
+# generic_stop = 34
+# generic_extension = 35
+#
 #
 # IMPORTANT: toolbar[2] must not be mentioned before toolbar[1]!
 # SPACES have a meaning here! Do not use spaces, if you did not intend so!
@@ -233,7 +224,7 @@ toolbar[0][10]=toolbar[8],7,,SPECIALTOOLS,special.txt
 toolbar[0][11]=general_tool[1]
 toolbar[0][12]=-
 toolbar[0][13]=dialog_tool[3]
-toolbar[0][14]=toolbar[9],8,LISTTOOLS,list.txt
+toolbar[0][14]=toolbar[9],8,,LISTTOOLS,list.txt
 toolbar[0][15]=dialog_tool[4]
 toolbar[0][16]=dialog_tool[5]
 toolbar[0][17]=-
@@ -260,9 +251,9 @@ toolbar[2][2]=bridges(2)
 toolbar[2][3]=tunnels(2)
 toolbar[2][4]=wayobjs(2)
 toolbar[2][5]=signs(2)
-toolbar[2][6]=general_tool[21],,,TrainDepot
-toolbar[2][7]=buildings(8)
-toolbar[2][8]=buildings(16)
+toolbar[2][6]=buildings(33,2)
+toolbar[2][7]=buildings(34,2)
+toolbar[2][8]=buildings(35,2)
 
 # monorailtools (waytype 5)
 toolbar[3][0]=ways(5,0)
@@ -271,9 +262,9 @@ toolbar[3][2]=bridges(5)
 toolbar[3][3]=tunnels(5)
 toolbar[3][4]=wayobjs(5)
 toolbar[3][5]=signs(5)
-toolbar[3][6]=general_tool[21],,,MonorailDepot
-toolbar[3][7]=buildings(14)
-toolbar[3][8]=buildings(22)
+toolbar[3][6]=buildings(33,5)
+toolbar[3][7]=buildings(34,5)
+toolbar[3][8]=buildings(35,5)
 
 # tramtools (waytype 7)
 toolbar[4][0]=ways(7,0)
@@ -282,9 +273,9 @@ toolbar[4][2]=bridges(2)
 toolbar[4][3]=tunnels(2)
 toolbar[4][4]=wayobjs(2)
 toolbar[4][5]=signs(2)
-toolbar[4][6]=general_tool[21],,,TramDepot
-toolbar[4][7]=buildings(8)
-toolbar[4][8]=buildings(9)
+toolbar[4][6]=buildings(33,7)
+toolbar[4][7]=buildings(34,2)
+toolbar[4][8]=buildings(34,1)
 
 # roadtools (waytype 1)
 toolbar[5][0]=ways(1,0)
@@ -293,9 +284,9 @@ toolbar[5][2]=bridges(1)
 toolbar[5][3]=tunnels(1)
 toolbar[5][4]=wayobjs(1)
 toolbar[5][5]=signs(1)
-toolbar[5][6]=general_tool[21],,,CarDepot
-toolbar[5][7]=buildings(9)
-toolbar[5][8]=buildings(17)
+toolbar[5][6]=buildings(33,1)
+toolbar[5][7]=buildings(34,1)
+toolbar[5][8]=buildings(35,1)
 
 # shiptools (waytype 3)
 toolbar[6][0]=ways(3,0)
@@ -304,11 +295,10 @@ toolbar[6][2]=bridges(3)
 toolbar[6][3]=tunnels(3)
 toolbar[6][4]=wayobjs(3)
 toolbar[6][5]=signs(3)
-toolbar[6][6]=buildings(11)
-toolbar[6][7]=buildings(19)
-toolbar[6][8]=general_tool[21],,,ShipDepot
-toolbar[6][9]=buildings(12)
-toolbar[6][10]=buildings(20)
+toolbar[6][6]=buildings(33,3)
+toolbar[6][9]=buildings(34,3)
+toolbar[6][7]=buildings(11)
+toolbar[6][10]=buildings(35,3)
 
 # airtools (waytype 1)
 toolbar[7][0]=ways(16,0)
@@ -316,8 +306,7 @@ toolbar[7][1]=ways(16,1)
 toolbar[7][2]=bridges(16)
 toolbar[7][3]=wayobjs(16)
 toolbar[7][4]=signs(16)
-toolbar[7][5]=general_tool[21],,,AirDepot
-toolbar[7][6]=general_tool[21],,,1930AirDepot
-toolbar[7][7]=buildings(13)
-toolbar[7][8]=buildings(21)
+toolbar[7][5]=buildings(33,16)
+toolbar[7][6]=buildings(34,16)
+toolbar[7][7]=buildings(35,16)
 
