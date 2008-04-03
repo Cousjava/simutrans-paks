@@ -296,9 +296,9 @@ toolbar[6][3]=tunnels(3)
 toolbar[6][4]=wayobjs(3)
 toolbar[6][5]=signs(3)
 toolbar[6][6]=buildings(33,3)
-toolbar[6][9]=buildings(34,3)
-toolbar[6][7]=buildings(11)
-toolbar[6][10]=buildings(35,3)
+toolbar[6][7]=buildings(34,3)
+toolbar[6][8]=buildings(11)
+toolbar[6][9]=buildings(35,3)
 
 # airtools (waytype 1)
 toolbar[7][0]=ways(16,0)
@@ -309,4 +309,14 @@ toolbar[7][4]=signs(16)
 toolbar[7][5]=buildings(33,16)
 toolbar[7][6]=buildings(34,16)
 toolbar[7][7]=buildings(35,16)
+
+# specialtools
+toolbar[8][0]=buildings(35,0)
+toolbar[8][1]=ways(2,255)
+toolbar[8][2]=simple_tool[5]
+toolbar[8][3]=general_tool[9]
+toolbar[8][4]=general_tool[11]
+toolbar[8][5]=ways(128,0)
+toolbar[8][6]=bridges(128)
+toolbar[8][7]=general_tool[8]
 
