@@ -117,8 +117,8 @@ simple_tool[4]=4,z
 simple_tool[5]=5,P
 simple_tool[6]=6
 # simple tool 7 needs a parameter
-simple_tool[8]=7
-simple_tool[9]=8
+simple_tool[8]=7,>
+simple_tool[9]=8,<
 # lots of icons still not drawn ...
 simple_tool[10]=,v
 simple_tool[11]=,!
