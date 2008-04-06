@@ -21,8 +21,8 @@ name=NewYear
 Image[0]=> ls-symbols.0.4
 --------------------
 Obj=symbol
-name=Builder
-Image[0]=ls-symbols.0.5
+name=ColorOptions
+Image[0]=> ls-symbols.0.6
 --------------------
 Obj=symbol
 name=BusStop

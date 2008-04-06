@@ -1,3 +1,4 @@
+# New menu defintions
 # Hajo: Hack: if image name starts with "> " then this
 # image is treated unzoomeable
 
@@ -16,22 +17,6 @@ Image[9]=> wkz_icons.0.9
 Image[10]=> wkz_icons.0.10
 Image[11]=> wkz_icons.0.11
 Image[12]=> wkz_icons.0.12
---
-Obj=cursor
-name=GeneralTools
-Image[0]=wkz_cursors.0.0
-Image[1]=wkz_cursors.0.1
-Image[2]=wkz_cursors.0.2
-Image[3]=wkz_cursors.0.3
-Image[4]=wkz_cursors.0.4
-Image[5]=wkz_cursors.0.5
-Image[6]=wkz_cursors.0.6
-Image[7]=wkz_cursors.0.7
-Image[8]=wkz_cursors.0.8
-Image[9]=wkz_cursors.0.9
-Image[10]=wkz_cursors.1.0
-Image[11]=wkz_cursors.1.1
-Image[12]=wkz_cursors.1.2
 --
 Obj=menu
 name=SimpleTools
@@ -87,5 +72,11 @@ Image[12]=> wkz_icons.4.2
 Image[13]=> wkz_icons.4.3
 Image[14]=> wkz_icons.4.4
 Image[15]=> wkz_icons.4.5
+# wayremover tool icons
 Image[16]=> wkz_icons.4.6
+Image[17]=> wkz_icons.4.7
+Image[18]=> wkz_icons.4.8
+Image[19]=> wkz_icons.4.9
+Image[20]=> wkz_icons.4.10
+
 --

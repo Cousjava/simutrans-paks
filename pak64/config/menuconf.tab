@@ -72,13 +72,26 @@ general_tool[8]=7,7,11,g
 general_tool[9]=8,8,11,C
 # general tool 10 needs a parameter + icon & cursor depends on it => not defined here
 general_tool[11]=9,9,9,§
+# general tools 12...22 will get their content from other entries; but we must define so defaults
 # define the cursor for schedule tools
-general_tool[12]=,,10
-general_tool[13]=,,10
-# general tools 12...22 will get their content from other entries
+general_tool[12]=,10
+general_tool[13]=,10
+# define some cursors and sound only
+general_tool[14]=,,11
+general_tool[15]=,,12
+general_tool[16]=,,9
+general_tool[17]=,1,11
+general_tool[18]=,,11
+general_tool[19]=,,11
+general_tool[20]=,,11
+general_tool[21]=,,11
+general_tool[22]=,11,11
+general_tool[23]=,11,11
+general_tool[24]=,11,11
+general_tool[25]=,11,11
 # we do not use general tool 23...25 directly in pak64 => undefined icons
-general_tool[26]=10,11,,
-general_tool[27]=11,12,,h
+general_tool[26]=10,11,9
+general_tool[27]=11,12,9,h
 general_tool[28]=12,7,,
 
 
@@ -163,7 +176,7 @@ dialog_tool[0]=0,?
 dialog_tool[1]=1,Q
 dialog_tool[2]=2,m
 dialog_tool[3]=3,w
-dialog_tool[4]=4,b
+dialog_tool[4]=4,B
 dialog_tool[5]=5,f
 dialog_tool[6]=6,k
 dialog_tool[7]=7
@@ -276,68 +289,74 @@ toolbar[2][0]=ways(2,0)
 toolbar[2][1]=ways(2,1)
 toolbar[2][2]=bridges(2)
 toolbar[2][3]=tunnels(2)
-toolbar[2][4]=wayobjs(2)
-toolbar[2][5]=signs(2)
-toolbar[2][6]=buildings(33,2)
-toolbar[2][7]=buildings(34,2)
-toolbar[2][8]=buildings(35,2)
-toolbar[2][9]=general_tool[14],,t,2
+toolbar[2][4]=general_tool[17],16,,2
+toolbar[2][5]=wayobjs(2)
+toolbar[2][6]=signs(2)
+toolbar[2][7]=buildings(33,2)
+toolbar[2][8]=buildings(34,2)
+toolbar[2][9]=buildings(35,2)
+toolbar[2][10]=general_tool[14],,t,2
 
 # monorailtools (waytype 5)
 toolbar[3][0]=ways(5,0)
 toolbar[3][1]=ways(5,1)
 toolbar[3][2]=bridges(5)
 toolbar[3][3]=tunnels(5)
-toolbar[3][4]=wayobjs(5)
-toolbar[3][5]=signs(5)
-toolbar[3][6]=buildings(33,5)
-toolbar[3][7]=buildings(34,5)
-toolbar[3][8]=buildings(35,5)
+toolbar[3][4]=general_tool[17],16,,5
+toolbar[3][5]=wayobjs(5)
+toolbar[3][6]=signs(5)
+toolbar[3][7]=buildings(33,5)
+toolbar[3][8]=buildings(34,5)
+toolbar[3][9]=buildings(35,5)
 
 # tramtools (waytype 7)
 toolbar[4][0]=ways(7,0)
 toolbar[4][1]=ways(2,7)
 toolbar[4][2]=bridges(2)
 toolbar[4][3]=tunnels(2)
-toolbar[4][4]=wayobjs(2)
-toolbar[4][5]=signs(2)
-toolbar[4][6]=buildings(33,7)
-toolbar[4][7]=buildings(34,2)
-toolbar[4][8]=buildings(34,1)
+toolbar[4][4]=general_tool[17],16,,2
+toolbar[4][5]=wayobjs(2)
+toolbar[4][6]=signs(2)
+toolbar[4][7]=buildings(33,7)
+toolbar[4][8]=buildings(34,2)
+toolbar[4][9]=buildings(34,1)
 
 # roadtools (waytype 1)
 toolbar[5][0]=ways(1,0)
 toolbar[5][1]=ways(1,1)
 toolbar[5][2]=bridges(1)
 toolbar[5][3]=tunnels(1)
-toolbar[5][4]=wayobjs(1)
-toolbar[5][5]=signs(1)
-toolbar[5][6]=buildings(33,1)
-toolbar[5][7]=buildings(34,1)
-toolbar[5][8]=buildings(35,1)
-toolbar[5][9]=general_tool[14],,s,1
+toolbar[5][4]=general_tool[17],16,,1
+toolbar[5][5]=wayobjs(1)
+toolbar[5][6]=signs(1)
+toolbar[5][7]=buildings(33,1)
+toolbar[5][8]=buildings(34,1)
+toolbar[5][9]=buildings(35,1)
+toolbar[5][10]=general_tool[14],,s,1
 
 # shiptools (waytype 3)
 toolbar[6][0]=ways(3,0)
 toolbar[6][1]=ways(3,1)
 toolbar[6][2]=bridges(3)
 toolbar[6][3]=tunnels(3)
-toolbar[6][4]=wayobjs(3)
-toolbar[6][5]=signs(3)
-toolbar[6][6]=buildings(33,3)
-toolbar[6][7]=buildings(34,3)
-toolbar[6][8]=buildings(11)
-toolbar[6][9]=buildings(35,3)
+toolbar[6][4]=general_tool[17],16,,3
+toolbar[6][5]=wayobjs(3)
+toolbar[6][6]=signs(3)
+toolbar[6][7]=buildings(33,3)
+toolbar[6][8]=buildings(34,3)
+toolbar[6][9]=buildings(11)
+toolbar[6][10]=buildings(35,3)
 
 # airtools (waytype 1)
 toolbar[7][0]=ways(16,0)
 toolbar[7][1]=ways(16,1)
 toolbar[7][2]=bridges(16)
-toolbar[7][3]=wayobjs(16)
-toolbar[7][4]=signs(16)
-toolbar[7][5]=buildings(33,16)
-toolbar[7][6]=buildings(34,16)
-toolbar[7][7]=buildings(35,16)
+toolbar[7][3]=general_tool[17],16,,16
+toolbar[7][4]=wayobjs(16)
+toolbar[7][5]=signs(16)
+toolbar[7][6]=buildings(33,16)
+toolbar[7][7]=buildings(34,16)
+toolbar[7][8]=buildings(35,16)
 
 # specialtools
 toolbar[8][0]=buildings(35,0)
@@ -348,6 +367,7 @@ toolbar[8][4]=general_tool[11]
 toolbar[8][5]=ways(128,0)
 toolbar[8][6]=bridges(128)
 toolbar[8][7]=general_tool[8]
+toolbar[8][8]=general_tool[6]
 
 # list tools
 toolbar[9][0]=dialog_tool[14]
