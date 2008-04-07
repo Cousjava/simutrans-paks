@@ -4,7 +4,8 @@
 --------------------
 Obj=building
 Name=PSHall1TrainStop
-type=station
+type=stop
+waytype=track
 enables_pax=1
 # must be 1*2
 # 1_1 is the land sqare
@@ -20,7 +21,8 @@ Cursor=purno-sigapore.0.4
 --------------------
 Obj=building
 Name=PSHall2TrainStop
-type=station
+type=stop
+waytype=track
 enables_pax=1
 # must be 1*2
 # 1_1 is the land sqare
@@ -36,7 +38,8 @@ Cursor=purno-sigapore.1.4
 --------------------
 Obj=building
 Name=PSFreightTrainStop
-type=station
+type=stop
+waytype=track
 enables_ware=1
 # must be 1*2
 # 1_1 is the land sqare
@@ -54,7 +57,8 @@ Cursor=purno-sigapore.2.4
 --------------------
 Obj=building
 Name=SandStationMHz
-type=station
+type=stop
+waytype=track
 enables_pax=1
 # must be 1*2
 # 1_1 is the land sqare

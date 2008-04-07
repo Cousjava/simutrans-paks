@@ -4,7 +4,8 @@
 --------------------
 Obj=building
 Name=GCG1TrainStop
-type=station
+type=stop
+waytype=track
 enables_pax=1
 # must be 1*2
 # 1_1 is the land sqare
@@ -20,7 +21,8 @@ Cursor=gcg-singapore2.2.1
 --------------------
 Obj=building
 Name=GCG2TrainStop
-type=station
+type=stop
+waytype=track
 enables_pax=1
 # must be 1*2
 # 1_1 is the land sqare

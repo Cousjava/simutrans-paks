@@ -3,7 +3,7 @@
 # image is treated unzoomeable
 
 Obj=cursor
-name=GeneralCursor
+name=GeneralTools
 Image[0]=wkz_cursors.0.0
 Image[1]=wkz_cursors.0.1
 Image[2]=wkz_cursors.0.2

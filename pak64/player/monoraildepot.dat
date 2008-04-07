@@ -4,6 +4,8 @@ Name=MonorailDepot
 # must be 1*1
 Dims=1,1,4
 NoInfo=1
+type=depot
+waytype=monorail_track
 FrontImage[0][0][0][0][0][0]=ls-depot-monorail.0.0
 FrontImage[1][0][0][0][0][0]=ls-depot-monorail.0.1
 FrontImage[2][0][0][0][0][0]=ls-depot-monorail.0.3
@@ -27,8 +29,8 @@ Name=MonorailFoundation
 # must be 1*1
 Dims=1,1
 NoInfo=1
-type=monorailstop
-extension_building=1
+type=extension
+waytype=monorail_track
 BackImage[0][0][0][0][0]=ls-depot-monorail.1.0
 icon=> ls-depot-monorail.1.4
 cursor=ls-depot-monorail.1.5
