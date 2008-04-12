@@ -44,14 +44,21 @@ Image[8]=> -
 Image[9]=> -
 Image[10]=> -
 Image[11]=> -
+# load/save
 Image[12]=> wkz_icons.2.11
 Image[13]=> wkz_icons.2.12
+# lists
 Image[14]=> wkz_icons.2.13
 Image[15]=> wkz_icons.2.14
 Image[16]=> wkz_icons.2.15
 Image[17]=> wkz_icons.2.16
 Image[18]=> wkz_icons.2.17
 Image[19]=> wkz_icons.2.18
+# map editor
+Image[20]=> wkz_icons.2.19
+Image[21]=> wkz_icons.2.20
+Image[22]=> wkz_icons.2.21
+Image[23]=> wkz_icons.2.22
 --
 Obj=menu
 name=BarTools
@@ -78,5 +85,9 @@ Image[17]=> wkz_icons.4.7
 Image[18]=> wkz_icons.4.8
 Image[19]=> wkz_icons.4.9
 Image[20]=> wkz_icons.4.10
-
+# increase decrease population
+Image[21]=> wkz_icons.4.11
+Image[22]=> wkz_icons.4.12
+# builds city road
+Image[23]=> wkz_icons.4.13
 --

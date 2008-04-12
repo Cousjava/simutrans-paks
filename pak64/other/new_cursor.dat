@@ -16,7 +16,7 @@ Image[8]=wkz_cursors.0.8
 Image[9]=wkz_cursors.0.9
 Image[10]=wkz_cursors.1.0
 Image[11]=wkz_cursors.1.1
-Image[12]wkz_cursors.1.2
+Image[12]=wkz_cursors.1.2
 --
 Obj=cursor
 name=Builder

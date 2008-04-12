@@ -85,13 +85,13 @@ general_tool[18]=,,11
 general_tool[19]=,,11
 general_tool[20]=,,11
 general_tool[21]=,,11
-general_tool[22]=,11,11
-general_tool[23]=,11,11
-general_tool[24]=,11,11
-general_tool[25]=,11,11
+general_tool[22]=,12,11
+general_tool[23]=,12,11
+general_tool[24]=,12,11
+general_tool[25]=,12,11
 # we do not use general tool 23...25 directly in pak64 => undefined icons
 general_tool[26]=10,11,9
-general_tool[27]=11,12,9,h
+general_tool[27]=12,12,9,h
 general_tool[28]=12,7,,
 
 
@@ -171,6 +171,10 @@ simple_tool[17]=,X
 # WKZ_LIST_GOODS=17
 # WKZ_LIST_FACTORY=18
 # WKZ_LIST_CURIOSITY=19
+# WKZ_EDIT_FACTORY=20
+# WKZ_EDIT_ATTRACTION=21
+# WKZ_EDIT_HOUSE=22
+# WKZ_EDIT_TREE=23
 #
 dialog_tool[0]=0,?
 dialog_tool[1]=1,Q
@@ -192,6 +196,10 @@ dialog_tool[16]=16,T
 dialog_tool[17]=17,G
 dialog_tool[18]=18,F
 dialog_tool[19]=19,A
+dialog_tool[20]=20
+dialog_tool[21]=21
+dialog_tool[22]=22
+dialog_tool[23]=23
 
 
 # FINAL SECTION: compose all tool bars
@@ -302,7 +310,7 @@ toolbar[3][0]=ways(5,0)
 toolbar[3][1]=ways(5,1)
 toolbar[3][2]=bridges(5)
 toolbar[3][3]=tunnels(5)
-toolbar[3][4]=general_tool[17],16,,5
+toolbar[3][4]=general_tool[17],17,,5
 toolbar[3][5]=wayobjs(5)
 toolbar[3][6]=signs(5)
 toolbar[3][7]=buildings(33,5)
@@ -326,7 +334,7 @@ toolbar[5][0]=ways(1,0)
 toolbar[5][1]=ways(1,1)
 toolbar[5][2]=bridges(1)
 toolbar[5][3]=tunnels(1)
-toolbar[5][4]=general_tool[17],16,,1
+toolbar[5][4]=general_tool[17],20,,1
 toolbar[5][5]=wayobjs(1)
 toolbar[5][6]=signs(1)
 toolbar[5][7]=buildings(33,1)
@@ -339,7 +347,7 @@ toolbar[6][0]=ways(3,0)
 toolbar[6][1]=ways(3,1)
 toolbar[6][2]=bridges(3)
 toolbar[6][3]=tunnels(3)
-toolbar[6][4]=general_tool[17],16,,3
+toolbar[6][4]=general_tool[17],18,,3
 toolbar[6][5]=wayobjs(3)
 toolbar[6][6]=signs(3)
 toolbar[6][7]=buildings(33,3)
@@ -351,7 +359,7 @@ toolbar[6][10]=buildings(35,3)
 toolbar[7][0]=ways(16,0)
 toolbar[7][1]=ways(16,1)
 toolbar[7][2]=bridges(16)
-toolbar[7][3]=general_tool[17],16,,16
+toolbar[7][3]=general_tool[17],19,,16
 toolbar[7][4]=wayobjs(16)
 toolbar[7][5]=signs(16)
 toolbar[7][6]=buildings(33,16)
@@ -368,6 +376,7 @@ toolbar[8][5]=ways(128,0)
 toolbar[8][6]=bridges(128)
 toolbar[8][7]=general_tool[8]
 toolbar[8][8]=general_tool[6]
+toolbar[8][9]=toolbar[10],7,,EDITTOOLS,edittools.txt
 
 # list tools
 toolbar[9][0]=dialog_tool[14]
@@ -376,3 +385,15 @@ toolbar[9][2]=dialog_tool[16]
 toolbar[9][3]=dialog_tool[17]
 toolbar[9][4]=dialog_tool[18]
 toolbar[9][5]=dialog_tool[19]
+
+# editor tools
+toolbar[10][0]=general_tool[10],21,,+100
+toolbar[10][1]=general_tool[10],22,,-100
+toolbar[10][2]=general_tool[9]
+toolbar[10][3]=general_tool[14],23,,city_road
+toolbar[10][4]=simple_tool[3]
+toolbar[10][5]=dialog_tool[20]
+toolbar[10][6]=general_tool[26]
+toolbar[10][7]=dialog_tool[21]
+toolbar[10][8]=dialog_tool[22]
+toolbar[10][9]=dialog_tool[23]

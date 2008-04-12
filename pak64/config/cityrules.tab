@@ -14,6 +14,9 @@ minimum_city_distance = 32
 # chance for renovation versus new building (bigger number => less sprawling)
 renovation_percentage = 12
 
+# citys will not growth further along exiting roads, if the buildings density is lower (in percent)
+minimum_building_desity = 33
+
 # at which number of inhabitants we need a new market?
 industry_increase_every = 2000
 
