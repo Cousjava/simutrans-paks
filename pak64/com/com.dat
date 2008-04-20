@@ -232,7 +232,7 @@ intro_year=1750
 retire_year=1950
 climates=tropic
 BackImage[0][0][0][0][0][0]=com.4.10
-BackImage[0][0][0][0][0][0]=winter-com.4.10
+BackImage[0][0][0][0][0][1]=winter-com.4.10
 --------------------
 Obj=building
 Name=COM_00_11
@@ -267,7 +267,7 @@ intro_year=1750
 retire_year=1950
 climates=tropic
 BackImage[0][0][0][0][0][0]=com.9.1
-BackImage[0][0][0][0][0][0]=winter-com.9.1
+BackImage[0][0][0][0][0][1]=winter-com.9.1
 --------------------
 Obj=building
 Name=COM_00_12
@@ -302,7 +302,7 @@ intro_year=1750
 retire_year=1950
 climates=tropic
 BackImage[0][0][0][0][0][0]=com.9.2
-BackImage[0][0][0][0][0][0]=winter-com.9.2
+BackImage[0][0][0][0][0][1]=winter-com.9.2
 --------------------
 #Name=COM_00_13 skipped
 --------------------
