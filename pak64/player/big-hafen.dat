@@ -85,7 +85,7 @@ BackImage[3][0][2][0][0]=new-alpha4.3.1
 BackImage[3][0][3][0][0]=new-alpha4.3.2
 BackImage[3][0][4][0][0]=new-alpha4.3.3
 
-BackImage[2][0][0][0][0]=new-alpha2.3.4
+BackImage[2][0][0][0][0]=-
 BackImage[2][1][0][0][0]=new-alpha2.3.3
 BackImage[2][2][0][0][0]=new-alpha2.3.2
 BackImage[2][3][0][0][0]=new-alpha2.3.1
