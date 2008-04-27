@@ -117,6 +117,13 @@ house_9.chance = -7
 house_10 = ... snh ...
 house_10.chance = -7
 
+# House in curve hole
+house_11 = hsh Hss HhH
+house_11.chance = -7
+
+# House on other road side
+house_12 = sss nnn ...
+house_12.chance = -7
 
 
 # Strassenende weiterbauen
