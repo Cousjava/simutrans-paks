@@ -1,0 +1,16 @@
+# example scenario (you win, if you fulfill the objectives
+
+# use this savegame (must be in pak/scenario/)
+savegame=book-empire.sve
+
+#
+# The following objectives exist:
+# 3: make this factory producing
+# 4: double your income
+# 5: headquarter and ten (profitable) trains
+# 6: 1000 passengers
+type=3
+
+#
+# this is the factory for the objective
+factorypos=20,50

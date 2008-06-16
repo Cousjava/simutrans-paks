@@ -277,8 +277,8 @@ toolbar[0][20]=simple_tool[1]
 toolbar[0][21]=dialog_tool[0]
 # invisible tools (here because they need a parameter or are added twice)
 toolbar[0][22]=simple_tool[16]
-toolbar[0][23]=simple_tool[7],,;,+1
-toolbar[0][24]=simple_tool[7],,:,-1
+toolbar[0][23]=simple_tool[7],,.,+1
+toolbar[0][24]=simple_tool[7],,COMMA,-1
 
 
 # slope tools

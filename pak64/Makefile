@@ -60,10 +60,11 @@ $(DESTFILE).zip: $(PAKDIR)
 
 copy:
 	@echo "===> COPY"
-	@mkdir -p $(PAKDIR)/sound $(PAKDIR)/text $(PAKDIR)/config
+	@mkdir -p $(PAKDIR)/sound $(PAKDIR)/text $(PAKDIR)/config $(PAKDIR)/scenario
 	@cp -p compat/compat.tab $(PAKDIR)
 	@cp -p sound/* $(PAKDIR)/sound
 	@cp -p config/* $(PAKDIR)/config
+	@cp -p scenario/* $(PAKDIR)/scenario
 	@cp -p pak.text/* $(PAKDIR)/text
 
 $(DIRS64):
