@@ -5,9 +5,11 @@
 #                             Language: es Espanol                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 6.03 2008                           #
+#                           Date Created: 23.06 2008                           #
 #                                                                              #
 #                                   authors:                                   #
+#                          Albert Ruiz - albert.yuste                          #
+#                                    note:                                     #
 #                            Federico Almada - fede                            #
 #                                    note:                                     #
 #                             Jan Li?ka - jan.licka                            #
@@ -36,6 +38,8 @@ ModernRoad
 Puente de carretera moderno (hormigón pretensado)
 MonorailRamp
 Rampa de monorrail
+PowerBridge
+Líneas de Alta Tensión
 Schiffhebewerk
 Puente levadizo
 SteelRail
@@ -574,12 +578,24 @@ Arriba
 #__________________________________dummy_info___________________________________
 factory_2Raffinerie_details
 Prueba los últimos modelos llegados de fabrica y llevatelos a los mejores precios. Tenemos unas ofertas muy económicas.
+factory_3Raffinerie_details
+En esta planta industrial se refina el petróleo y mediante un proceso adecuado, se obtiene gasolina, gasóleo, etc. Ademas también se obtienen diversos tipos de plásticos, aceites industriales y asfaltos
+factory_Autohaus_details
+¡Estamos de rebajas! Consigue los mejores coches al mejor precio. Eficientes, fáciles de conducir, veloces y seguros. Si encuentras un precio mejor, te devolvemos la diferencia.
 factory_Autohersteller_details
 En estas instalaciones se diseñan, desarrollan, fabrican y prueban los automóviles de futuro: limpios, baratos y de gran autonomía.
 factory_Buchgrosshandel_details
 Todos los títulos a tu alcance. Las últimas novedades, los grandes exitos y los clásicos de siempre siempre cerca de ti.
 factory_Cementmill_details
 El proceso de fabricación del cemento comprende cuatro etapas principales: Extracción y molienda de la materia prima, homogeneización de la misma, producción del Clinker y molienda de cemento. Todo ello respetando siempre al máximo el medio ambiente.
+factory_ChemicalPlant_details
+En esta planta se lleva a cabo un complejo proceso industrial a gran escala para crear nuevos materiales. Se usan equipos especiales con la última tecnología para crear polímeros (plásticos), productos farmacéuticos, alimentos, bebidas y material de oficina.
+factory_Concretefactory_details
+Aqui se produce el Hormigón Aireado. Los pequeños poros reducen el peso y aumentan el aislamiento mediante el uso de polvo de aluminio, que reacciona con el agua. Esta clase de hormigón se inventó en  1920.
+factory_Druckerei_details
+En esta planta es donde los textos toman cuerpo para convertirse en libros. Mediante el uso del papel y la aplicación de la tinta oleosa en moldes de metal, denominados tipos, las letras toman cuerpo sobre el papel, gracias a la presión aplicada.
+factory_Erzbergwerk_details
+En la mina a cielo abierto el proceso extractivo del hierro se realiza en la superficie del terreno, y con maquinarias mineras de gran tamaño. El mineral de hierro extraído pasa por una serie de etapas hasta poder obtener el hierro: arranque o tumbe del material mediante maquinaria o explosivos, carga o rezagado del material en bruto y finalmente el transporte hasta las plataformas de carga, para su posterior procesamiento.
 factory_Incinerator_details
 La planta incineradora de basura quema a altas temperaturas los desechos sólidos, reduciendo su volumen a cenizas.
 factory_Kohlegrube_details
@@ -587,31 +603,43 @@ factory_Kohlegrube_details
 factory_Kohlekraftwerk_details
 Esta instalación se emplea para la generación de electricidad a partir de la energía liberada en forma de calor, normalmente mediante la combustión de carbón. Este calor es empleado por un ciclo termodinámico convencional para mover un alternador y producir energía eléctrica.
 factory_Materialswholesale_details
-<title>Mayorista</title>\n Estan especialmente preparados para gestionar una gran cantidad de clientes y cuentan las estructuras adecuadas para venta al por mayor. Tambien proporcionan flexibles lineas de credito a los clientes
+<title>Mayorista</title>\n Su principal cometido es gestionar una gran cantidad de clientes y conseguir las estructuras adecuadas para venta al por mayor. Tambien proporcionan lineas de credito flexibles  a los clientes.
 factory_Moebelfabrik_details
 El proceso de elaboracion de los muebles se compone de varias etapas:  elección del modelo y la madera, ensamblaje y soldadura de las piezas, y finalmente la decoración.\n\nLos muebles resultantes pueden ser de estilo antiguo o contemporáneo. Tenemos desde cómodas y escritorios hasta mesas de despacho o sofás.
 factory_Moebelhaus_details
-Los mejores muebles que puedas desear se encuentran aqui mismo. Todos los estilos, formas y colores que puedas imaginar
+Los mejores muebles que puedas desear se encuentran aqui mismo. Todos los estilos, formas y colores que puedas imaginar. La única pega es que tendrás que montarlos tu mismo, por eso son tan baratos.
+factory_Muellkraftwerk_details
+Central eléctrica de biocombustible
 factory_Nutzwald_details
-<title>Acerca de las explotaciones forestales</title><h1>Explotaciones forestales</h1><p>En los bosques crece el más importante de los materiales renovables y fuentes de energía, que explotado por los leñadores y transformado en materiales de alta calidad por las industrias del papel y la madera.</p>
+<title>Acerca de las explotaciones forestales</title><h1>Explotaciones forestales</h1><p>En los bosques crece el más importante de los materiales renovables y fuente de energía. La madera es explotada por los leñadores y transformada en materiales de alta calidad por las industrias del papel y la madera.</p>
+factory_Oelbohrinsel_details
+<title> Acerca de las plataformas petrolíferas </title> <h1>plataformas petrolíferas </h1><p> La segunda mitad del siglo XX trajo consigo el hambre de petróleo - el consumo se duplicaba cada década. Aparte de los yacimientos terrestres, el mar también alberga algunos depósitos de petróleo, aunque son difíciles de alcanzar. <br><br> Plataformas petrolíferas son estructuras construidas para explotar estos recursos ubicados en zonas de la plataforma continental (una profundidad de 0 a 200 metros). Son enormes, pero nadie se da cuenta de que en realidad, la mayor parte de la estructuraa está oculta bajo el agua. Y también es costoso de mantener. Las columnas que sostienen la plataforma son por lo general huecas y también funcionan como depósitos de petróleo. <br> <br> La mayor plataforma de petróleo en el mundo, Statfjord B, fue construida por Noruega. Su peso es de aproximadamente 800.000 toneladas y su altura es de 192 m. Con torre, la altura se incrementa en otros 80 metros. </p>
+factory_Oelfeld_details
+<title>Acerca de yacimientos petrolíferos </title><h1>campos petrolíferos </h1><p> El petróleo es una materia prima que se utiliza para las pinturas, lubricantes y también se usó como combustible para calefacción antes del cambio de siglo XX. Luego adquirió una gran importancia con el auge de los motores de combustión y de automóviles. <br><br> El petróleo es un líquido compuesto de numerosos hidrocarburos. No está claro exactamente cómo el aceite de los depósitos tomo forma, probablemente se trata de un proceso similar a la creación de depósitos de carbón, pero con algunas condiciones extra - a alta presión y sin oxígeno. Estos están en el interior a profundidades de cientos de metros. Allí, generalmente se encuentra el petróleo junto con el gas a alta presión, lo que facilita el bombeo a la superficie.<p>
+factory_Oelkraftwerk_details
+En esta central eléctrica se queman toneladas de combustibles fósiles, en este caso petróleo, para producir electricidad. Las centrales esta diseñadas para funcionar de forma ininterrumpida. Esta planta tiene una serie de turbinas que convierten la energía térmica en energía mecánica, que a su vez funcionan como generadores eléctricos.
 factory_Oelpumpe_details
-<title>Pozo petrolífero</title>\n Esta maravilla extrae cientos de litros de crudo, que seran procesados por las distintas industrias para obtener cientos de productos. La torres perforan cientos de metros hasta dar con el preciado líquido. Después, los gatos de las bombas de extracción sacan el crudo de las entrañas de la tierra.
+<title>Pozo petrolífero</title>\n Esta maravilla extrae cientos de litros de crudo, que seran procesados por las distintas industrias para obtener gran cantidad de productos. La torres perforan cientos de metros hasta dar con el preciado líquido. Después, los gatos de las bombas de extracción sacan el crudo de las entrañas de la tierra.
 factory_Papierfabrik_details
-<title>Fabrica de Papel</title>\n Son cientos los arboles que cada dia se convierten en papel, gracias a este complejo industrial. Mediante los procesos de refinado, encolado, carga, pigmentacion, coloracion, ABO y ligacion, de la madera obtenemos la pasta de papel.
+<title>Fabrica de Papel</title>\n Son cientos los arboles que cada dia se convierten en papel, gracias a este complejo industrial. Mediante los procesos de refinado, encolado, carga, pigmentacion, coloracion, ABO y ligación, a partir de la madera obtenemos la pasta de papel.
 factory_Pharmaceutics_details
 <title>Industria Farmaceútica</title>\n Destinada a la elaboración de productos quimicos destinados al sector farmaceútico tales como pastillas, capsulas, jarabes, ampollas, etc...Todo tipo de medicinas.
 factory_Raffinerie_details
 <title>Refinería</title>\n En esta factoría podremos obtener todo tipo de combustibles, asi como el resto de derivados del petróleo.
+factory_SaegewerkMHz_details
+Un tronco tras otro llegan aqui para convertirse en tablas.
+factory_Saegewerk_details
+Aserradero industrial
 factory_Sandquarry_details
 <title>Cantera de Arena</title>\n Grano a grano, se hace una montaña. Aqui tienes toneladas de arena disponibles para la construcción
 factory_scrap_yard_details
-<title>Deposito de chatarra</title>\n Hierros y mas hierros. Cables, placas y mucha chapa. El reciclaje siempre es la mejor opcion para los metales
+<title>Deposito de chatarra</title>\n Hierros y mas hierros. Cables, placas y mucha chapa. El reciclaje siempre es la mejor opcion para los metales.
 factory_Stahlwerk_details
-<title>Acerca de las Fundiciones</title><h1>Fundiciones de Hierro</h1><p>(Molinos de Acero)<br><br>Estas industrias convierten el mineral del hierro en hierro o acero. Esto se lleva a cabo calentado el mineral(y reciclando chatarra) en altos hornos - enormes estructuras cilíndricas que resisten altas temperaturas de hasta 2000?C. El mineral se derrite rapidamente y se separa en un tanque de hierro líquido, quedandose lo restos en la superficie.</p><p>El hierro es procesadoa en los convertidores a fin de reducir el volumen de carbono, cuanto mas bajo es, mayor es la calidad del acero que se obtiene. Estos procesos necesitan mucha energía, por lo general adquirida por la quema de enormes cantidades de carbón<p>
+<title>Acerca de las Fundiciones</title><h1>Fundiciones de Hierro</h1><p>Estas industrias convierten el mineral del hierro en hierro o acero. Esto se lleva a cabo calentado el mineral (y reciclando chatarra) en altos hornos - enormes estructuras cilíndricas que resisten altas temperaturas de hasta 2000ºC. El mineral se derrite rapidamente y se separa en un tanque de hierro líquido, quedandose lo restos en la superficie.</p><p>El hierro es procesado en los convertidores a fin de reducir el volumen de carbono, cuanto mas bajo es, mayor es la calidad del acero que se obtiene. Estos procesos necesitan mucha energía, por lo general adquirida por la quema de enormes cantidades de carbón<p>
 factory_Stonequarry_details
 <title>Cantera de Piedra</title>\n A picar se ha dicho. No hay bloque de granito que se resista. Y sino, solo tienes que emplear metodos más explosivos...
 factory_TANKE_details
-<title>Detalles de la Gasolinera</title>\nUna gasolinera abandonada: no se ve a nadie. ¿Dónde llenara la gente sus depósitos ahora?
+<title>Detalles de la Gasolinera</title>\nUna gasolinera abandonada...no se ve a nadie. ¿Dónde llenara la gente sus depósitos ahora?
 factory_Windkraftwerk_details
 Central de energía eólica
 #____________________________________factory____________________________________
@@ -650,6 +678,8 @@ Moebelfabrik
 Fábrica de muebles
 Moebelhaus
 Tienda de muebles
+Muellkraftwerk
+asdada
 Nutzwald
 Explotac. forestal
 Oelbohrinsel
@@ -668,6 +698,8 @@ Raffinerie
 Refinería (plásticos)
 Saegewerk
 Aserradero
+SaegewerkMHz
+Estas instalaciones industriales estan dedicadas al aserrado
 Sandquarry
 Cantera de arena
 scrap_yard
@@ -706,6 +738,8 @@ Medicine
 Medicinas
 Moebel
 Muebles
+None
+Nada
 Oel
 Petróleo
 Papier
@@ -742,12 +776,34 @@ ShoreTrans
 Lineas de costa
 Slopes
 Pendientes
+SlopeTrans
+Transiciones de las pendientes/cuestas
 Water
 Agua
+#__________________________________ground_obj___________________________________
+#__________________________________ground_obj___________________________________
+bushes
+arbustos
+flowers
+flores
+Hochsitz1
+Torre de vigilancia I
+Hochsitz2
+Torre de vigilancia II
+moles
+moles
+rocks
+rocas
+See1
+estanque con cisnes
+See2
+estanque con gansos
+See3
+pequeño estanque 
+See4
+estanque con ocas
 #_____________________________________menu______________________________________
 #_____________________________________menu______________________________________
-ColorMenu
-Menu de colores
 EditTools
 Herramientas de edicion
 ListTools
@@ -806,6 +862,10 @@ CATEGORY_05
 líquidos
 CATEGORY_06
 madera
+CATEGORY_07
+polvo/lignograno
+rolls
+Rollos de papel
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 ChooseSignals
@@ -852,8 +912,6 @@ Builder
 Excavadora
 Electricity
 electricidad
-Flags
-Banderas
 InTown
 En la ciudad
 Logo
@@ -868,12 +926,10 @@ NewWorld
 Nuevo mundo
 NewYear
 Año nuevo
-Passagiere
-pasajeros
-Post
-Correo
 Seasons
 Estaciones del año
+TramStop
+Parada de Tranvía
 Waren
 Mercancías
 #_____________________________________tree______________________________________
@@ -904,6 +960,18 @@ Latschenkiefer
 Pino de montaña\n
 Palmtree1
 Palmera\n
+Palmtree2
+Palmera tropical\n
+Palmtree3
+Palmera baoba\n
+Palmtree4
+Palmera cocotera\n
+Palmtree5
+Palmera parasol\n
+Palmtree6
+Palmera de desierto\n
+Palmtree7
+Palmera ecuatorial\n
 Pappel-1
 Alamo\n
 Pappel-2
@@ -928,6 +996,24 @@ Tree5
 Eucalipto\n
 Tree6
 Abeto picea Picea abies \nConífera estrecha. Alcanza\nuna altura de 35 to 65m y\nun diámetro principal de 2m,\ny vive hasta 1000 años. Su\nhábitat natural es el norte y\nel este de Europa, así como\nlas montañas de Europa\nCentral. Por repoblación\nartificial se encuentra en\nzonas más bajas.  Uso:\nconstrucción interior y\nexterior, estibación,\nconstrucción de casetas,\naglomerado, cajas de\nresonancia para instrumentos\nmusicales, industrias de la\ncelulosa y el papel.\n
+tropictree1
+Arbol tropical I\n
+tropictree2
+Sauce tropical \n
+tropictree3
+Manglar tropical\n
+tropictree4
+Abedul tropical\n
+tropictree5
+Platanero\n
+tropictree6
+Sauce espinoso\n
+tropictree7
+Conífera tropical\n
+tropictree8
+Baoba\n
+tropictree9
+Acacia tropical\n
 Willow
 sauce\n
 #____________________________________tunnel_____________________________________
@@ -1006,6 +1092,8 @@ Boxcar
 Vagon de equipajes
 BR01
 BR 01
+Br234
+BR 234
 BR38
 BR 38
 BR38-Tender
@@ -1016,6 +1104,12 @@ BR45
 BR 45
 BR45-Tender
 BR 45 Tender
+Br614back
+BR 614 (trasero)
+Br614car
+BR 614 (vagon)
+Br614front
+BR 614 (frontal)
 BR85
 BR 85
 Bretteranhaenger
@@ -1038,10 +1132,14 @@ Buchwagen
 VT Viena Vagón para libros
 Buessig
 Minibus
+BuessingLinie
+Autobus de Linea
 Bulkcarriage
 Transporte de productos al por mayor
 Bus
 Autobús H-trans
+CarFlat
+vagon para automoviles
 Cargosprinter-Front
 Cargosprinter (frontal)
 Cargosprinter-Mittel
@@ -1098,8 +1196,22 @@ Ed2x2
 Ed 2x2
 EinheitsTender
 Tender estandar
+EnCo_Bulk_Ship
+Carguero de áridos
+EnCo_Car_Ship
+Carguero de automoviles
+EnCo_Cement_Ship
+Carguero para cemento
+EnCo_Container_Ship
+Carguero para contenedores
+EnCo_Oil_Ship
+Carguero para petroleo
+EnCo_Paper_Ship
+Carguero para papel
 EnCo_Steel_Ship
 EnCo Barco de acero
+EnCo_Wood_Ship
+Carguero para madera
 Erzanhaenger
 Remolque hierro H-trans
 Erztrailer
@@ -1116,8 +1228,16 @@ Flachwagen
 Vagón de mercancías simple
 Fokker_F27
 Fokker F27
+FordZugmaschine
+Ford Zug
 GarbageTruck
 Camión de basura
+Gelenkbus_Ende
+Autobus articulado (trasero)
+Gelenkbus_Front
+Autobus articulado (frontal)
+Godm_Spitz
+Godm Spìtz
 Guppy
 Guppy avión para libros
 H-Trans-Pantheress
@@ -1136,6 +1256,8 @@ Hadley-Page-V1500
 Hadley-Page V1500
 Heavy_ore_truck
 Volquete para minería
+HJMAvia
+HJM Avia
 Hochbordwagen
 Vagon para carbón (18t)
 Holzanhaenger
@@ -1186,6 +1308,8 @@ kkStB91
 kkStB 91
 kkStB_tender
 kkStb Tender
+Klappdeckelwagen
+vagon para carcasas de automoviles
 Kohleanhaenger
 Remolque carbón MK2
 Kohletransporter
@@ -1196,6 +1320,10 @@ Kunststofanhaenger
 Remolque para plásticos H-Trans
 Kunststofftransporter
 Camión para plásticos H-trans
+Laaekks553_a
+Trailer para transporte de automoviles L1
+Laaekks553_b
+Trailer para transporte de automoviles L2
 Lockhead_Tristar
 Lockheed Tristar
 Lockheed10-Electra
@@ -1206,6 +1334,8 @@ Lowa
 Lowa
 Lowa_Anhaenger
 Lowa Pendular
+Mack_Truck_01
+Camion Mack 01
 MailExpress
 Correo Aéreo
 Moebelschiff
@@ -1228,6 +1358,10 @@ OldOil
 Vagoneta petróleo
 old_open_car
 Vagoneta para carbón
+Ox2
+Yunta de dos bueyes
+Ox4
+Yunta de cuatro bueyes
 Papieranhaenger
 Remolque para papel Trikki
 Papiertransporter
@@ -1262,6 +1396,8 @@ SD40-2-back
 SD40-2 (trasero)
 SD40-2-front
 SD40-2 (frontal)
+setra_S10
+Autobus Setra S10
 SlowFerry
 Ferry convencional H-trans
 SMPoiltruck
@@ -1284,6 +1420,8 @@ SuperConstellation
 Super Constellation
 T13
 T 13
+T21_bus
+Autobus T 21
 T24
 T 24
 Tanklastzug
@@ -1312,10 +1450,22 @@ Trike
 Camión Trike
 Tugboat
 Buque Remolcador
+Turgot
+Turgot
+Ucy
+Vagon Ucy
+Viggen
+Crucero Viggen
 VolvoFH12
 Volvo FH 12 (cabeza tractora)
 waste wagon
 Carro de basura
+X2000back
+X2000 (trasero)
+X2000car
+X2000 (vagon)
+X2000front
+X2000 (frontal)
 XMail
 Monorrail para correo
 XTest

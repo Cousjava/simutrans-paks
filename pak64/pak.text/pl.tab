@@ -5,7 +5,7 @@
 #                              Language: pl Polski                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                            Date Created: 6.03 2008                           #
+#                           Date Created: 23.06 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                       Aleksander Kwiatkowski - Bobikus                       #
@@ -632,10 +632,6 @@ Builder
 Buldo¿er
 NewYear
 Nowy Rok
-Passagiere
-Pasa¿erowie
-Post
-Poczta
 Waren
 Towary
 #_____________________________________tree______________________________________
@@ -823,7 +819,7 @@ Statek transportowy
 Erzanhaenger
 Przyczepa H-Trans (towary sypkie)
 Erztrailer
-Naczepa (towary sypkie)
+\n\n\nnaczepa wywrotka jednoosiowa
 Erztransporter
 Transporter H-Trans Mk II
 Erzwagen

@@ -5,9 +5,11 @@
 #                            Language: nl Nederlands                           #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 6.03 2008                           #
+#                           Date Created: 23.06 2008                           #
 #                                                                              #
 #                                   authors:                                   #
+#                             T. Jaegers - borg712                             #
+#                                    note:                                     #
 #                             Pavel Cizek - jatypc                             #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
@@ -732,10 +734,6 @@ Stoom
 #____________________________________symbol_____________________________________
 NewYear
 Nieuwjaar
-Passagiere
-Passagiers
-Post
-post
 Seasons
 Jaargetijden
 Waren

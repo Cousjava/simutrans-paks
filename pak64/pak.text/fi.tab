@@ -5,7 +5,7 @@
 #                              Language: fi Suomi                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 6.03 2008                           #
+#                           Date Created: 23.06 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                        Jaakko Mäkinen - jaakko.makinen                       #
@@ -608,8 +608,6 @@ Water
 vesi
 #_____________________________________menu______________________________________
 #_____________________________________menu______________________________________
-ColorMenu
-Värivalikko
 EditTools
 Erikoistyökalut
 ListTools
@@ -702,8 +700,6 @@ Builder
 Traktori
 Electricity
 Sähkö
-Flags
-liput
 Logo
 Logo
 Message
@@ -714,10 +710,6 @@ NewWorld
 Uusi maailma
 NewYear
 Uusivuosi
-Passagiere
-matkustajaa
-Post
-postia
 Seasons
 Vuodenajat
 Waren

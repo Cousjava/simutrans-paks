@@ -5,7 +5,7 @@
 #                              Language: dk Dansk                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 6.03 2008                           #
+#                           Date Created: 23.06 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                      Michael Bisbjerg - michaelbisbjerg                      #
@@ -180,12 +180,6 @@ CATEGORY_03
 olie/benzin
 CATEGORY_04
 Kølegods
-#____________________________________symbol_____________________________________
-#____________________________________symbol_____________________________________
-Passagiere
-passagerer
-Post
-post
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -210,6 +204,8 @@ H-Trans Tigress I (el)
 Bennhardt BR185 (el)
 3Diesellokomotive
 H-Trans BR365 (diesel)
+707
+Boeing 707
 Autotransportanhaenger
 H-Trans Biltransportanhænger
 Autotransporter

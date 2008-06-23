@@ -5,9 +5,11 @@
 #                            Language: ce C-English                            #
 #                                Encoding: ASCII                               #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 6.03 2008                           #
+#                           Date Created: 23.06 2008                           #
 #                                                                              #
 #                                   authors:                                   #
+#                             Jonas Czimek - joecz                             #
+#                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
 #                            note: Administrator 64                            #
 #                      Christopher R. Antila - topchrisher                     #
@@ -558,8 +560,6 @@ Water
 Sea
 #_____________________________________menu______________________________________
 #_____________________________________menu______________________________________
-ColorMenu
-Colour Selection Menu
 EditTools
 Edit Tools
 ListTools
@@ -604,6 +604,10 @@ pedestrian_dog
 Samantha (with Her Dog, Sparky)
 Woman
 Woman
+#_________________________________program_text__________________________________
+#_________________________________program_text__________________________________
+CATEGORY_02
+bulk goods
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 ChooseSignals
@@ -636,8 +640,6 @@ Builder
 Bulldozer
 Electricity
 Electricity Symbol
-Flags
-German and Japanese Flags
 InTown
 Town Icon
 Logo
@@ -652,10 +654,6 @@ NewWorld
 New Map Creation Icon
 NewYear
 Fireworks for Celebration of the New Year
-Passagiere
-Passengers
-Post
-Mail
 Seasons
 Icon for the Season
 Waren

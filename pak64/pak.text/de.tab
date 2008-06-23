@@ -5,7 +5,7 @@
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 6.03 2008                           #
+#                           Date Created: 23.06 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                 Benny - Benny                                #
@@ -22,6 +22,8 @@
 #                                    note:                                     #
 #                              Frank Penz - FrankP                             #
 #                          note: Administrator German                          #
+#                            Günter Beine - gebeine                            #
+#                                    note:                                     #
 #                         Roman Schwörer - Gotthardlok                         #
 #                                    note:                                     #
 #                          Jack Verheydt - j.verheydt                          #
@@ -33,6 +35,8 @@
 #                               Johannes - jf007                               #
 #                                    note:                                     #
 #                            Werner Czimek - Jimmac                            #
+#                                    note:                                     #
+#                             Jonas Czimek - joecz                             #
 #                                    note:                                     #
 #                            Katrin Homberg - Katrin                           #
 #                                    note:                                     #
@@ -60,6 +64,8 @@
 #                                    note:                                     #
 #                               Torsten - Torsten                              #
 #                                    note:                                     #
+#                       Christian 'Jason' Peper - trublu                       #
+#                                    note:                                     #
 #                                Uranor - Uranor                               #
 #                                    note:                                     #
 #                           Michael Olbricht - whoami                          #
@@ -82,6 +88,8 @@ ModernRoad
 Moderne Spannbetonbrücke
 MonorailRamp
 Einschienenbahn Rampe
+PowerBridge
+Strombrücke
 Schiffhebewerk
 Schiffshebewerk
 SteelRail
@@ -173,7 +181,7 @@ Ein Kiosk, in dem es jede\nMenge billigen Krimskrams,\nohne den niemand leben ka
 COM_00_02
 Alle Mopedfahrer der Stadt\nlieben die Tankstelle von Herrn\nReichmuth, denn hier gibt es\neine vollautomatische\nZweitaktbenzin- Zapfsäule.\n
 COM_00_03
-Diese Hinterhof-Garage\nmöchte schon lange ihr\nSchattendasein beenden und\nendlich einen Schauraum an\nder Hauptstraße eröffnen. Aber\nes fehlt an allem: am Geld, an\nder Baubewilligung, und an der\nHauptstraße.\n
+Diese Hinterhof-Werkstatt\nmöchte schon lange ihr\nSchattendasein beenden und\nendlich einen Schauraum an\nder Hauptstraße eröffnen. Aber\nes fehlt an allem: am Geld, an\nder Baubewilligung, und an der\nHauptstraße.\n
 COM_00_05
 Herr G. Hai, der Besitzer der\nBankengruppe, zu der auch\ndiese Filiale gehört, ist mit\nAbstand der reichste Mann in\ndieser Stadt. Dabei sieht so\neine Bankfiliale eigentlich ganz\nharmlos aus!\n
 COM_00_06
@@ -194,6 +202,8 @@ COM_00_22
 Das Hochhaus mit\ngeschwungener Glasfassade ist\nein Tempel des Wohlfühlens:\nIm Hotel Albuna können Sie\nsich so richtig verwöhnen\nlassen. Schliesslich haben Sie\nfür die Ferien hier auch hart\ngenug gearbeitet.\n
 COM_01_01
 Ein Start- und Landeplatz für\nHeissluftballone. Ein\nBallonrundflug über die Alpen\nkann ein unvergessliches\nErlebnis sein!\n
+COM_01_04
+Ein Park mit Spazierwegen\n
 COM_01_09
 Es ist noch gar nicht so lange\nher, war dies der scheinende\nTempel aller\nLichtspieltheater. Heute ist es\nnur noch ein altes Kino. Aber\ntief in den Mauern steckt\nnoch ein Schein des alten\nGlanzes!\n
 COM_01_10
@@ -218,6 +228,8 @@ COM_02_17
 Die riesigen Wärmetauscher\ndeuten es an: Unter dem Dach\nist die Sauna zur Motivation\nfür die Topangestellten. Doch\nes herrscht strenges\nRegiment: Ein Fehler und sie\nmüssen wieder an die\nÖlförderstation in Sibirien.\n
 COM_02_19
 Sportwissenschaftliche\nFakultät. Der grosse Hörsaal ist\nzuoberst im Gebäude\nuntergebracht. Einen Lift gibt\nes natürlich nicht; und immer\nwieder wundern sich\nGastdozenten, warum junge\nSportstudenten, die gerade vom\nAusdauertraining kommen, sich\nüber den Architekten auslassen.\n
+COM_03_14
+Die neusten Trends der Saison\nbei D&B. Ausgesuchte Farben\npassen sich dan der variablen\nInnenbeleuchtung sofort an\nden letzten Trend in Paris an.\nNur erschrecken sie nicht,\nwenn sie die Kleidung beim\nVerlassen dann zum ersten Mal bei\nTageslicht sehen.\n
 COM_03_15
 Hier saß die erste Nationale\nVermögenstrust. Im Zuge der\nGlobalisierung und des WWWs\nbräuchte der Hauptsitz nicht\nmehr einzuschüchtern; aber\nder alte Stahlbeton war\ntatsächlich für 1000 Jahre\ngegossen.\n
 COM_03_19
@@ -336,6 +348,8 @@ IND_02_06
 Schon damals wollten potente\nIndustrielle ihre Finanzkraft\nunter Beweis stellen und\nliessen ihre Fabriken von den\nbesten Architekten\nentwerfen. Die breiten Gänge\nüber der Maschinenfabrik boten\nden Zeichnern und Ingenieuren\nviel Raum und eine gute Übersicht\nüber die entstehenden\nMaschinen. Dem Chef stand\nnatürlich die Kontrolle der\nArbeitsmoral im Vordergrund.\n
 IND_02_09
 Tanklager\n\nHier war schon immer\nRauchverbot am Arbeitsplatz.\nDennoch, die einzige\nfreundliche Farbe ist ein\nwinterliches Schneeweiß.\n
+IND_02_10
+Die alte Seifenfabrik hat trotz\nihres alters bis heute eine\nbltzsaubere Fassade. Woran das\nwohl liegen mag?\n
 LargeShipStop
 großer Frachtkran
 leftShipStop
@@ -541,7 +555,7 @@ factory_Autohersteller_details
 factory_ChemicalPlant_details
 <title>Chemiefabrik Details</title><h1>Chemiefabrik Details</h1><p>Schon seit Anfang des Jahrhunderts werden hier Chemikalien und Druckerfarbe produziert.</p>
 factory_Concretefactory_details
-Diese Fabrik stellt aus Kalk, Wasser, Sand und ein ganz bisschen Aluminium Gasbeton (jetzt Porenbeton) her. Die Poren kommen durch die Entstehung von Wasserstoff, wenn das Aluminiumpulver mit dem Wasser reagiert.\nGasbeton ist sehr leicht, isoliert gut und ist eine sehr veilseitig verwendeter Rohstoff. Erfunden wurde er in den 1920ern.
+<title>Gasbetonwerk</title>\n\nDiese Fabrik stellt aus Kalk, Wasser, Sand und ein ganz bisschen Aluminium Gasbeton (jetzt Porenbeton) her. Die Poren kommen durch die Entstehung von Wasserstoff, wenn das Aluminiumpulver mit dem Wasser reagiert.\nGasbeton ist sehr leicht, isoliert gut und ist ein sehr veilseitig verwendeter Rohstoff. Erfunden wurde er in den 20er Jahren des 20. Jahrhunderts.
 factory_Erzbergwerk_details
 <title>Erzbergwerk Details</title> Ein Erzbergwerk im Tagebau. Die ergiebigsten Eisenerzlager befinden sich in geologisch alten Gesteinsschichten; sie entstanden, als die ersten Photosynthesealgen die Meere mit Sauerstoff anreicherten und das im Meer gelöste Eisen sich als Rost auf den Stränden und auf dem Meeresgrund absetzte.
 factory_Incinerator_details
@@ -560,12 +574,14 @@ factory_Nutzwald_details
 <title>Nutzwald Details</title><h1>Nutzwald Details</h1><p>In den Wäldern wächst der wichtigste nachwachsende Roh-, Bau- und Werkstoff sowie Energieträger Holz heran, der durch die Forstwirtschaft bereitgestellt und durch die Holz- und Papierwirtschaft in hochwertige Marktprodukte umgewandelt wird.</p>
 factory_Oelbohrinsel_details
 <title>Ölbohrinsel Details</title> Die Ölbohrinseln wurden in der 2. Hälfte des 20. Jahrhunderts entwickelt, als die Landressourcen den Ölbedarf nicht mehr decken konnten. Die Ölbohrinseln bohren riesige Öllagerstätten im Kontinentalschelf (0-200m unter dem Meer) an. Durch den dort vorherrschenden Druck kommt das Öl dann ohne menschliches Zutun in die Lager der Ölbohrinsel, die sich meist direkt über dem Meeresgrund befinden.
+factory_Oelfeld_details
+<title>Ölfeld</title><h1>Ölfeld Details</h1><p>Die größten deutschen Ölfelder befinden sich westlich der Ems. Die dortigen Reserven wurden 1942 entdeckt und seitdem auch abgebaut. Das dort geförderte Öl ist jedoch so zähflüssig, dass es zunächst aus der Tiefe an die Oberfläche gepumpt werden muss. Durch den entfernt an ein Pferd erinnernden Maschinenaufbau und die nickende Bewegung werden die Pumpen im Volksmund als Pferdekopf-Pumpen bezeichnet und sind ein Wahrzeichen der Landschaft geworden.</p>
 factory_Oelkraftwerk_details
 <title>Ölkraftwerk Details</title><h1>Ölkraftwerk Details</h1><p>In den 60er Jahren war beschlossen worden, dass die Kohle für den Stahl benötigt wird und es wurden viele Ölkraftwerke gebaut. Auch lässt sich Öl besser auf kleinem Platz lagern.</p>
 factory_Oelpumpe_details
 <title>Pferdekopf-Ölpumpen</title><h1>Pferdekopf-Ölpumpe Details</h1><p>Die größten deutschen Ölfelder befinden sich westlich der Ems. Die dortigen Reserven wurden 1942 entdeckt und seitdem auch abgebaut. Das dort geförderte Öl ist jedoch so zähflüssig, dass es zunächst aus der Tiefe an die Oberfläche gepumpt werden muss. Durch den entfernt an ein Pferd erinnernden Maschinenaufbau und die nickende Bewegung werden die Pumpen im Volksmund als Pferdekopf-Pumpen bezeichnet und sind ein Wahrzeichen der Landschaft geworden.</p>
 factory_Papierfabrik_details
-<title>Papierfabrik Details</title> Papier besteht aus Zellstoff, der aus Holz gewonnen wird. Damit Papier wirklich weiss wird, muss es zusätzlich gebleicht werden.
+<title>Papierfabrik Details</title> Papier besteht aus Zellstoff, der aus Holz gewonnen wird. Damit Papier wirklich weiss wird, muss es zusätzlich gebleicht werden.<p>\n\nDas Verfahren zur Papierherstellung wurde Anfang des 2. Jh. in China entwickelt. Dieses Verfahren wurde so gut geheimgehalten, das es erst 1000 Jahre später den Weg nach Europa fand. Dieser führte über den Orient, Nordafrika und Spanien. Die ältesten belegten Papiermühlen in Europa sind 1144 Valencia (Spanien), 1276 Fabriano (Italien) und 1338 La Pielle bei Troyes (Frankreich). 1390 wurde in Nürnberg (Deutschland) eine Papiermühle von Ulman Stromer errichtet.
 factory_Raffinerie_details
 <title>Raffinerie Details</title> In einer Raffinerie werden die Rohölbestandteile getrennt. Leichte Bestandteile werden zu Benzin, schwerere zu Heizöl, Dieselkraftstoff, Schmierstoffen und dergleichen. Die Nachfrage nach Benzin ist jedoch relativ grösser, als das Erdöl leichte Bestandteile enthält; durch Cracken (lange Molekülketten werden in kurze aufgebrochen) kann dieses Missverhältnis korrigiert werden.
 factory_Saegewerk_details
@@ -591,7 +607,7 @@ Autohaus
 Autohersteller
 Autohersteller
 Buchgrosshandel
-Buchhändler
+Verlagshaus
 Cementmill
 Zementfabrik
 ChemicalPlant
@@ -616,6 +632,8 @@ Moebelfabrik
 Möbelfabrik
 Moebelhaus
 Möbelhaus
+Muellkraftwerk
+Müllkraftwerk
 Nutzwald
 Nutzwald
 Oelbohrinsel
@@ -634,6 +652,8 @@ Raffinerie
 Raffinerie (Kunstst.)
 Saegewerk
 Sägewerk
+SaegewerkMHz
+altes Sägewerk
 Sandquarry
 Sandgrube
 scrap_yard
@@ -756,6 +776,8 @@ CATEGORY_06
 Langholz
 CATEGORY_07
 Pulver/Granulat
+rolls
+ Rollen
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 ChooseSignals
@@ -764,6 +786,8 @@ ChooseSignalsMonorail
 Auswahlsignale
 choose_point
 Stoppwähler
+Endofchoosetrack
+Gesperrt für Auswahlsuche
 LongBlockSignals
 Signale zur Blockreservierung
 Minimum80
@@ -798,12 +822,6 @@ Dampf
 #____________________________________symbol_____________________________________
 Electricity
 Elektrizität
-Flags
-Flaggen
-Passagiere
-Passagiere
-Post
-Post
 Seasons
 Jahreszeiten
 Waren
@@ -966,14 +984,18 @@ Bulkcarriage
 Schüttgut-Pferdewagen
 Bus
 H-Trans Bus
+CarFlat
+Flachwagen für Autos
 Cargosprinter-Front
 Cargosprinter
 Cargosprinter-Mittel
 Cargosprinter Mittelwagon
 Cargosprinter-Steuer
-Cargosprinter Schubmaschine
+Cargosprinter Steuerwagen
 Cementtrailer
 Sattelanhänger für Zement
+Comet
+de Havilland Comet
 Concept1Front
 Concept 1
 Concept1Mail
@@ -1022,6 +1044,10 @@ Fokker_F27
 Fokker F27
 GarbageTruck
 Müllabfuhrwagen
+Gelenkbus_Ende
+H-Trans Gelenkbus Ende
+Gelenkbus_Front
+H-Trans Gelenkbus
 Guppy
 Super Guppy
 H-Trans-Pantheress
@@ -1040,6 +1066,8 @@ Hadley-Page-V1500
 RVg Hadley-Page V1500
 Heavy_ore_truck
 Muldenkipper
+HJMAvia
+Avia Zugmaschine
 Hochbordwagen
 Kohlewaggon (18t)
 Holzanhaenger
@@ -1082,6 +1110,12 @@ Ju52
 Ju52
 JumboJet
 Boeing 747 "Jumbo Jet"
+kkStB110
+kukStB B110
+kkStB91
+kukStB. B91
+kkStB_tender
+kukStB Tender
 Kohleanhaenger
 H-Trans Anhänger MK2
 Kohletransporter
@@ -1124,6 +1158,10 @@ OldOil
 Tankwagen I
 old_open_car
 Schüttgutwagon von 1837
+Ox2
+Ochsenpaar
+Ox4
+Viererochsengespann
 Papieranhaenger
 Trikky Papieranhänger
 Papiertransporter
@@ -1180,6 +1218,8 @@ SuperConstellation
 Super Constellation
 T13
 T13
+T21_bus
+Ford T21
 T24
 T24
 Tanklastzug
@@ -1208,6 +1248,12 @@ Trike
 Schüttgutdreirad
 Tugboat
 Schleppkahn
+Turgot
+Brigantine Trugot
+Ucy
+Staubkesselwagen UCy
+Viggen
+Schärenfähre
 VolvoFH12
 Volvo FH12 Sattelschlepper
 waste wagon

@@ -5,7 +5,7 @@
 #                             Language: sv Svenska                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 6.03 2008                           #
+#                           Date Created: 23.06 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                Ewa Wiman - ewa                               #
@@ -140,12 +140,6 @@ CATEGORY_01
 Styckegods
 CATEGORY_02
 Bulkgods
-#____________________________________symbol_____________________________________
-#____________________________________symbol_____________________________________
-Passagiere
-Passagerare
-Post
-Post
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103

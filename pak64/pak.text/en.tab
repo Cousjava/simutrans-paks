@@ -5,7 +5,7 @@
 #                             Language: en English                             #
 #                                Encoding: ASCII                               #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 6.03 2008                           #
+#                           Date Created: 23.06 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                        Alexandre Frauenknecht - al_cff                       #
@@ -24,6 +24,8 @@
 #                                    note:                                     #
 #                              Frank Penz - FrankP                             #
 #                          note: Administrator German                          #
+#                            G?nter Beine - gebeine                            #
+#                                    note:                                     #
 #                         Roman Schw?rer - Gotthardlok                         #
 #                                    note:                                     #
 #                        Hans Brickface - hansbrickface                        #
@@ -35,6 +37,8 @@
 #                             Jan Pol??ek - Jerome                             #
 #                           note: AKA Jerome Heretic                           #
 #                          James Barker - jimmyjazz951                         #
+#                                    note:                                     #
+#                             Jonas Czimek - joecz                             #
 #                                    note:                                     #
 #                             Ji?? Vose?ek - kacer                             #
 #                                    note:                                     #
@@ -66,6 +70,8 @@
 #                                    note:                                     #
 #                           Brian D. - scienceman123                           #
 #                                    note:                                     #
+#                       Christian 'Jason' Peper - trublu                       #
+#                                    note:                                     #
 #                         Tom?? Vrbick? - vrbicky_tomas                        #
 #                     note: Don?thurry up! Death is faster.                    #
 #                            Vladim?r Sl?vik - vsys                            #
@@ -88,6 +94,10 @@ mlm_concrete_bridge
 concrete monorail bridge
 ModernRoad
 Modern Road Bridge (prestressed concrete)
+MonorailRamp
+Monorail ramp
+PowerBridge
+Power Bridge
 Schiffhebewerk
 Ship Hoist
 SteelRail
@@ -178,8 +188,12 @@ COM_00_01
 Small shop\n
 COM_00_02
 Independent gas station\n\nIt's independent from the big\ntransportation companies\n(like yours), but there's no\nneed to remove it. It won't\ntake away any of your\nbusiness.\n
+COM_00_03
+This backyard garage\nwants to get out ouf this\nshadowy existence for a\nlong time to open a\nshowroom an mainstreet.\nBut there is still this lack\nof money, permission and\nmainstreet\n
 COM_00_05
 Drive through bank. It's\ncalled a drive through\nbecause you don't stop,\nand when you pass through\nyour wallet magically\nempties.The manager can\nusually be seen wringing his\nhands with glee.\n
+COM_00_06
+Better coffee is nowhere to\nbe found that is better\nthan up on this cafe's\nroof-terrace\n
 COM_00_08
 Apartment block with some\nshops.\n
 COM_00_10
@@ -196,10 +210,16 @@ COM_00_22
 New UN building for Somalia.\n
 COM_01_01
 Hot Air Ballon take off and\nlanding site. This site is\nfrequented by a lot of\npoliticians, that's why you\ncan't see any gas bottles.\n
+COM_01_04
+Promenade with trees\n
 COM_01_09
 Old cinema, Lots of old\nBlack & White movies\nshown here. It's very\npopoular with Charlie\nChaplin fans.\n
+COM_01_10
+The local clinic. The boring\nfront was replaced by a\nnew entrance to cheer\neveryone up, especially\nthose in for the dentists.\nDon't clench your teeth on\nthem!\n
 COM_01_17
 Medium office block\n
+COM_01_18
+Assets Management\nCompany "Global Trust" is\na global fonds trader. Their\nJunk bond fonds and micro\ncredit institues in India and\nPeru make a lot of money.\nBut will this continue in the\nfuture? There is no\nget-your-money-back-guarantee\non the stock-market\n
 COM_02_19
 While the building itself is\nnot very notable its\nexternal elevator was soon\na tourist attraction. Even\nthough the tickets are\nexpensive, the real money\nis made by the kiosk next to\nthe queue for the elevator.\n
 COM_03_15
@@ -272,6 +292,8 @@ IND_01_09
 Fluids depot\n
 IND_01_10
 Tools factory\n
+IND_02_10
+The old soap works still\nlooks as neat as the day it\nwas errected. A true\nmiracle!\n
 LargeShipStop
 Large freight crane
 leftShipStop
@@ -288,6 +310,8 @@ midleShipStop
 quay
 ModernAirTerminal477
 Modern air terminal
+MonorailDepot
+Monorail depot
 OldTownhall
 Old town hall\n
 Patricks_Rock
@@ -328,6 +352,8 @@ RES_00_10
 The impressive Moistboy\nmanson.\n
 RES_00_11
 Big house with garden\n
+RES_00_12
+Live less ordinary! The\ninterior is unique as well:\nPower outlet are for\nthree-phase-power only,\nthe transparent bath-tube\nis iluminated with neon\nlamps, the stove is powered\nby stirling motor und Paintings\nare projected onto the walls,\nbecause the architect forbid\nnails in the walls.\n
 RES_00_13
 Double house with garden\n
 RES_00_16
@@ -476,6 +502,8 @@ Raffinerie
 Refinery (Plastics)
 Saegewerk
 Sawmill
+SaegewerkMHz
+old sawmill
 scrap_yard
 Scrap Yard
 Stahlwerk
@@ -566,6 +594,8 @@ CATEGORY_06
 woods
 CATEGORY_07
 powder/pellets
+rolls
+ rolls
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 ChooseSignals
@@ -574,6 +604,8 @@ ChooseSignalsMonorail
 Choose Signals
 choose_point
 Choose point
+Endofchoosetrack
+Forbidden for plattfrom search
 Minimum80
 minimum speed 80km/h
 NoEntry
@@ -594,10 +626,6 @@ Builder
 Bulldozer
 MessageOptions
 Message Options
-Passagiere
-passengers
-Post
-Mail
 Waren
 Goods
 #_____________________________________tree______________________________________
@@ -713,7 +741,7 @@ Cargosprinter
 Cargosprinter-Mittel
 Cargosprinter freight car
 Cargosprinter-Steuer
-Cargosprinter rear engine
+Cargosprinter (Rear Unit)
 Comet
 De Havilland 'Comet'
 Concept1Front

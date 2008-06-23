@@ -5,7 +5,7 @@
 #                             Language: cz Cestina                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                            Date Created: 6.03 2008                           #
+#                           Date Created: 23.06 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                   - hernajs                                  #
@@ -65,7 +65,7 @@ Nosníkový ¾eleznièní most
 tb_classic_road
 Betonový most
 ViaductRail
-®eleznièní viadukt
+kamenný most
 WoodenRoad
 Døevìný most
 #___________________________________building____________________________________
@@ -116,6 +116,8 @@ AirDepot
 Hangár (1900)
 AirportShed1930
 Leti¹tní po¹tovní sklad (1901)
+AirStop
+výstupní schùdky\n
 AirTerminal477
 Leti¹tní terminál (1950)
 anfangShipStop
@@ -136,6 +138,8 @@ BusStop
 Postavit\nautobusovou/tramvajovou\nzastávku\n
 CarDepot
 Depo pro silnièní vozidla
+CarStop
+Postavit zastávku pro\nnákladní auta\n
 Car_StationBlg
 Pøekladi¹tì automobilù
 ChannelStop
@@ -369,7 +373,7 @@ Chý¹e v palmovém háji\n
 RUIN_0
 Zøícenina hradu\n\nPro turisty je také velmi\nzajímavá tajemná historie\nhradu.\n
 SandStationMHz
-Stanice bez perónu
+Prosté nástupi¹tì
 ShipDepot
 Lodìnice
 ShipStop
@@ -400,6 +404,10 @@ Vìtrný mlýn\n
 #____________________________________citycar____________________________________
 Ambulanz
 Sanitka
+FordT
+Ford model T
+green_car
+Zelený rodinný sedan
 Motorrad
 Motorka
 orange_bus
@@ -602,6 +610,8 @@ preSignalsMonorail
 Pøed-návìstidla
 RailClose
 Tra» uzavøena
+Signals
+Návìstidlo
 traffic_light
 Semafory
 #_____________________________________smoke_____________________________________
@@ -622,10 +632,6 @@ NewWorld
 Nová mapa
 NewYear
 Nový rok
-Passagiere
-Cestující
-Post
-Po¹ty
 Seasons
 Roèní období
 Waren
@@ -906,6 +912,8 @@ Kanal
 Prùplav
 MaglevTrack
 Magnetická tra»
+MaglevTrackElevated
+Vysutá magnetická tra»
 mip_cobblestone_road
 Dlá¾dìná silnice 2
 monorail

@@ -5,10 +5,12 @@
 #                             Language: fr Francais                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 6.03 2008                           #
+#                           Date Created: 23.06 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                        Alexandre Frauenknecht - al_cff                       #
+#                                    note:                                     #
+#                          Jean Beaudet - cagliostro_2                         #
 #                                    note:                                     #
 #                          Ghyselinck Maxime - Gilles                          #
 #                                    note:                                     #
@@ -17,6 +19,8 @@
 #                             Jan Li?ka - jan.licka                            #
 #                            note: DHL Exel Company                            #
 #                           Vincent Sneyers - korozif                          #
+#                                    note:                                     #
+#                            Luc Mallet - luc.mallet                           #
 #                                    note:                                     #
 #                            Matthieu Pupat - mpupat                           #
 #                                    note:                                     #
@@ -34,10 +38,16 @@ koka_Bridge_single
 voie surélevée
 MaglevBridge
 Pont Maglev
+mlm_concrete_bridge
+Pont pour monorail en béton
 ModernRoad
 Pont à piliers
+MonorailRamp
+Rampe pour monorail
 SteelRail
 Pont ferroviaire en acier
+tb_classic_road
+Pont en béton
 ViaductRail
 viaduc ferroviaire
 WoodenRoad
@@ -90,6 +100,10 @@ AirDepot
 Hangar
 AirStop
 Passerelle d'embarquement\n
+AirTerminal477
+Terminal d'aéroport (1950)
+Avila_Warehouse_StationBlg
+Entrepôt
 BigPostOffice
 Grand Bureau De Poste
 BigTerminal477
@@ -110,10 +124,14 @@ COM_00_03
 Maboulle.\n\nUn bar-billard très branché.\n
 COM_00_05
 Petite banque.\n\nCette banque n'est, ma foi,\npas très sure. Les hold-up\ny sont monaie courante.\n
+COM_00_06
+Impossible de trouver un\nmeilleur café que celui servi\nsur la terrasse de ce\nbistrot\n
 COM_00_08
 Appartements avec des\nmagasins.\n
 COM_00_10
 Petit bloc de bureaux avec\nparking\n
+COM_00_11
+Nova Nouveautés. Récent\net coloré magasin de\nnouveautés vendant de\ntout depuis les lampes à\nlave jusqu'aux cuirassés\ngris. (C'est toute une\nnouveauté)\n
 COM_00_12
 Immeuble de bureaux\n
 COM_00_14
@@ -122,8 +140,14 @@ COM_00_18
 Bureaux moderne\n
 COM_00_22
 Bureaux de l'ONU, sorte\nd'embassade pour la région\n
+COM_01_01
+Aire de départ et d'arrivé de\nmontgolfières. Le site est\nfréquenté par de nombreux\npoliticiens, c'est pourquoi il\nn'y a pas de bonbonne \nde gaz.\n
+COM_01_04
+Promenade boisée\n
 COM_01_09
 Vieux cinéma\n
+COM_01_10
+La clinique locale. La\nfaçade a été changé par\nune nouvelle plus joyeuse\npour remonter le moral des\npatients, spécialement\nceux en visite chez le\ndentiste. Ne gardez pas de\ndents contre eux!\n
 COM_01_17
 Immeuble de bureau\n
 DenkFlor
@@ -162,6 +186,8 @@ LargeShipStop
 Port (grands quais)
 leftShipStop
 Grue Hautes-Charges
+Lighthouse
+Phare\n
 midleShipStop
 quai
 ModernAirTerminal477
@@ -174,10 +200,18 @@ PlainAirStop
 Arrêt Pour Avions
 PostOffice
 Bureau De Poste
+PostStop
+Boîte aux lettres
 Raven_Kirche
 Église St-Meinrad\n\nL'eremite St-Meinrad a été\naccompagné par deux\ncorbeaux selon la legnde.\nQuand il fut assassiné, les\ncorbeaux suivaient les\nmeurtriers et les ont\nconvaincus. À l'endroit de son\neremitage se trouve\naujourd'hui le couvent\nEinsiedeln.\n
 RES_00_01
 Maisonette avec jardin\n
+RES_00_02
+Petite maison avec un\njardin\n
+RES_00_03
+Petite maison avec un\njardin\n
+RES_00_04
+Petite maison\n
 RES_00_06
 Un petit jet d'eau. Même s'il\nn'est pas aussi grand que\ncelui à Genève, il fait du\nplaisir aux gens qui se\npromènent autour de lui,\nspécialement en été.\n
 RES_00_07
@@ -188,6 +222,10 @@ RES_00_11
 Grande maison avec jardin\n
 RES_00_13
 Maisons mitoyennes avec\njardins\n
+RES_00_19
+Appartements moderne\n
+RES_01_01
+Maison préfabriquée\nmoderne avec une grande\nchambre pour les enfants\nau grenier\n
 RES_01_07
 Grande maison luxueuse\n
 RES_01_08
@@ -200,6 +238,8 @@ ShipDepot
 chantier naval
 STADIUM2
 Stade\n\nLe stade est lieu de\nnombreux événements\nsportifs très excitants.\n
+TrainStop
+quai couvert\n
 TramDepot
 Dépot de Trams
 Windmill
@@ -208,10 +248,16 @@ Moulin à vent\n
 #____________________________________citycar____________________________________
 Ambulanz
 Ambulance
+green_car
+Voiture verte
 #____________________________________cursor_____________________________________
 #____________________________________cursor_____________________________________
 Baum
 Arbre
+#__________________________________dummy_info___________________________________
+#__________________________________dummy_info___________________________________
+factory_Kohlegrube_details
+<title>Au sujet des mines de charbon</title><h1>Mines de charbon</h1><p>Des mineurs doivent extraire le charbon et c'est un travail très dûr, mais le charbon est nécessaire à des industries comme les fonderies et les centrales électriques.<p>
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -310,6 +356,8 @@ Stahl
 Acier
 Stone
 Pierre
+waste
+déchets
 #_____________________________________misc______________________________________
 #_____________________________________misc______________________________________
 Construction
@@ -336,20 +384,24 @@ Minimum80
 Vitesse minimale 80 km/h
 Signals
 signaux
+traffic_light
+feux tricolores
 #_____________________________________smoke_____________________________________
 #_____________________________________smoke_____________________________________
 Diesel
 diesel
 Steam
 vapeur
-#____________________________________symbol_____________________________________
-#____________________________________symbol_____________________________________
-Passagiere
-Passagers
-Post
-Message
+#_____________________________________tree______________________________________
+#_____________________________________tree______________________________________
+Tree6
+Sapin\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
+FastRailTunnel
+tunnel ferroviaire à grande vitesse
+FastRoadTunnel
+tunnel d'autoroute
 RailTunnel
 Tunnel ferroviaire
 RoadTunnel
@@ -420,10 +472,18 @@ FastFerry
 Ferry rapide O.Bang
 Fokker_F27
 Fokker F27
+H-Trans-Pantheress-Back
+Pantheress (motrice arrière)
 H-Trans-Tiger-Car
-H-Trans Tigress passagers
+H-Trans Tigress wagon passagers
 H-Trans-Tiger-Mail-Car
-H-Trans Tigress courrier
+H-Trans Tigress wagon postal
+H-Trans-Tigress-II-Front
+Tigress II (motrice avant)
+Heavy_ore_truck
+camion à minerai
+Hochbordwagen
+wagon à charbon (18t)
 Holzanhaenger
 Remorque à bois JET
 Holztransporter
@@ -502,6 +562,10 @@ TPPassagierwagen
 Wagon passagers TPI
 TPSchienenbus
 TPI VT98 (diesel)
+waste wagon
+wagon de déchets
+Zeppelin
+Dirigeable
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road
@@ -519,7 +583,9 @@ route en terre battue
 Kanal
 canal
 mip_cobblestone_road
-route empierrée
+Route pavée
+monorail
+monorail
 Powerline
 ligne haute tension
 Rillenschienen
@@ -528,5 +594,7 @@ runway_modern
 piste
 steel_sleeper_track
 voie de chemin de fer, traverses en acier
+taxiway
+taxiway
 wooden_sleeper_track
 voie de chemin de fer à traverses en bois

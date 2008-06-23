@@ -5,7 +5,7 @@
 #                             Language: ja Japanese                            #
 #                                Encoding: UTF-8                               #
 #                               Font : m+10r.bdf                               #
-#                            Date Created: 6.03 2008                           #
+#                           Date Created: 23.06 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                           Kiyohide Nakaminami - AMI                          #
@@ -444,6 +444,8 @@ Moebelfabrik
 家具工場
 Moebelhaus
 家具販売店
+Muellkraftwerk
+ゴミ焼却発電所
 Nutzwald
 植林地
 Oelbohrinsel
@@ -534,6 +536,14 @@ flowers
 花
 rocks
 岩
+See1
+池１
+See2
+池２
+See3
+池３
+See4
+池４
 #_____________________________________menu______________________________________
 #_____________________________________menu______________________________________
 EditTools
@@ -632,8 +642,6 @@ Builder
 建築業者
 Electricity
 電力供給
-Flags
-フラッグ
 Message
 報告
 MessageOptions
@@ -642,10 +650,6 @@ MonorailStop
 モノレール駅
 NewYear
 新年
-Passagiere
-旅客
-Post
-郵便
 Seasons
 季節
 Waren

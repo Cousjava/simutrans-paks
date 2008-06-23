@@ -5,7 +5,7 @@
 #                            Language: pt Portugues                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 6.03 2008                           #
+#                           Date Created: 23.06 2008                           #
 #                                                                              #
 #                                   authors:                                   #
 #                             Eric Oliveira - eric                             #
@@ -40,6 +40,8 @@ ModernRoad
 Ponte de concreto protendido
 MonorailRamp
 Rampa de monotrilho
+PowerBridge
+"Ponte" para linha de transmissão
 Schiffhebewerk
 Canal elevado
 SteelRail
@@ -152,6 +154,8 @@ COM_00_22
 Edifício Century\n
 COM_01_01
 Escola de Balonismo\n
+COM_01_04
+Praça com árvores\n
 COM_01_09
 Velho cinema\n
 COM_01_10
@@ -310,6 +314,8 @@ RES_00_13
 Casas geminadas com\njardim\n
 RES_00_16
 Velha vila\n
+RES_00_17
+Mesmo para casas antigas\ncomo essa, contas de\nconsumo já existiam - cada\num já pagava por sua\nlenha.\n
 RES_00_19
 Apartamentos modernos\n
 RES_01_01
@@ -336,6 +342,8 @@ SandStationMHz
 Estação sem plataforma
 ShipDepot
 Estaleiro\\n
+ShipDepotEW
+Estaleiro (L-O)\n
 ShipStop
 Doca\\n\n
 STADIUM2
@@ -384,20 +392,36 @@ Roadster
 Roadster
 yellow_car
 Carro amarelo
+#___________________________________crossing____________________________________
+#___________________________________crossing____________________________________
+rail-road-crossing
+Cruzamento rodoferroviário
 #____________________________________cursor_____________________________________
 #____________________________________cursor_____________________________________
 Baum
 Árvore
+City
+Cidade
 Down
 Desaterro
 Marked
 Marcador
+Mouse
+Mouse/rato
 Query
 Ferramenta de informação do terreno
 Remove
 Eliminar
+Schedule
+Programação
+ShipDepotNS
+Estaleiro (N-S)
 Signal
 Sinais
+Slope
+Talude
+Undocumented
+Não documentado
 Up
 Aterro
 #____________________________________factory____________________________________
@@ -436,6 +460,8 @@ Moebelfabrik
 Fábrica de móveis
 Moebelhaus
 Loja de móveis
+Muellkraftwerk
+Incinerador
 Nutzwald
 Floresta
 Oelbohrinsel
@@ -454,6 +480,8 @@ Raffinerie
 Refinaria
 Saegewerk
 Serraria
+SaegewerkMHz
+Antiga serraria
 Sandquarry
 Mina de areia
 scrap_yard
@@ -510,16 +538,46 @@ waste
 Lixo
 #____________________________________ground_____________________________________
 #____________________________________ground_____________________________________
+Basement
+Fundação
+Borders
+Bordas
+ClimateTexture
+textura climática
 Fence
 Cerca
+LightTexture
+textura de iluminação
+Marker
+Marcador
 Outside
 Mar aberto
+Slopes
+Contenções
 Water
 Água
+#__________________________________ground_obj___________________________________
+#__________________________________ground_obj___________________________________
+bushes
+Arbustos
+flowers
+Flores
+Hochsitz1
+Vigia
+Hochsitz2
+Vigia
+rocks
+Pedreira
+See1
+Lago
+See2
+Lago
+See3
+Brejo
+See4
+Brejo
 #_____________________________________menu______________________________________
 #_____________________________________menu______________________________________
-ColorMenu
-Cores
 EditTools
 Ferramentas de Edição
 ListTools
@@ -598,14 +656,18 @@ SignalsMonorail
 Semáforo de monotrilho
 traffic_light
 Semáforo
+#_____________________________________smoke_____________________________________
+#_____________________________________smoke_____________________________________
+Diesel
+Díesel
+Industry_Fire
+Fogo Industrial
+Industry_Smoke
+Fumaça Industrial
 #____________________________________symbol_____________________________________
 #____________________________________symbol_____________________________________
 Builder
 Escavadora
-Passagiere
-Passageiros
-Post
-Correio
 Waren
 Bens
 #_____________________________________tree______________________________________

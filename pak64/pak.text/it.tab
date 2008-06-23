@@ -5,9 +5,11 @@
 #                             Language: it Italiano                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 6.03 2008                           #
+#                           Date Created: 23.06 2008                           #
 #                                                                              #
 #                                   authors:                                   #
+#                           David Paleino - d.paleino                          #
+#                                    note:                                     #
 #                           Fabio Gonella - fagonella                          #
 #                                    note:                                     #
 #                          Raffaele Grimaldi - graffa                          #
@@ -34,6 +36,8 @@ MonorailRamp
 Rampa per monorotaia
 PowerBridge
 Traliccio per la corrente elettrica
+SteelRail
+Rotaia su ponte di travi di acciaio
 tb_classic_road
 Ponte stradale in cemento
 ViaductRail
@@ -49,6 +53,8 @@ Municipio
 02_CITY
 Municipio
 03_CITY
+Municipio
+03_CITY_A
 Municipio
 1headquarter
 La tua sede aziendale!
@@ -70,32 +76,158 @@ A6_DOME
 Questa splendida\ncattedrale antica è una\nvera e propria attrazione!\n
 BigPostOffice
 Grande ufficio postale
+BusStop
+Fermata autobus\n
+CarDepot
+Deposito per veicoli stradali
+COM_00_01
+"Il piccolo negozio dei\ngrandi affari" di Luca\nQui il proprietario, insieme\nalla moglie Grazia\ne ai due figli, Luigi e\nFutura, conduce una vita\nserena vendendo le più disparate\ncose, dalle mollette\nal frigorifero. I figli, Luigi di 6\nanni e Futura\ndi 7, scorrazzano per l'ampio\nparcheggio quando\nla domenica non ci sono auto.\n
+COM_00_02
+Stazione gas indipendente\nQuesta piccola stazione di gas\nha rifiutato\ndi unirsi a grosse\ncompagnie di trasporto\n(come la tua, un giorno) per\ncondurre un\ntranquillo e pacifico servizio di fornitura\ncombustibile ai vicini abitanti. Non dà\nalcun fastidio al tuo commercio,\npuò restare.\n
+COM_00_05
+Banca "Drive-out"\nQuesta banca viene chiamata\n"Drive-out" perchè\nnon ti ci fermi, e quando ci\npassi vicino\nil tuo portafoglio\nmagicamente si svuota.\nIl direttore spesso viene\nvisto sfregarsi\nle mani, gongolante.\n
+COM_00_06
+Albergo\nQuesto è il terrificante albergo\ndel film "Shining".\nUno scrittore è stato trovato\ncongelato nel labirinto\ndi foglie che rimane\nnascosto e in una stanza una \nmacchina da scrivere continuava a\nscrivere questa frase:\n"Il mattino ha l'oro in bocca".\n
+COM_00_08
+Blocco di appartamenti con\nqualche negozio al piano\nterra\n
+COM_00_10
+Sede centrale de "Il\ncorriere mercantile"\n
+COM_00_11
+"Novità" da Novello\nUn negozio veramente fuori\ndal comune,\ndove si trovano tutte le ultime novità,\ndalle lampade di cera\nall'acqua calda\n(che adesso è una novità)\n
+COM_00_12
+Casa dei Transformers\nQuesto edificio, all'apparenza\nun blocco di uffici, diventa\nun enorme casa dei robots quando\nessi si trovano nelle\nvicinanze.\n
+COM_00_14
+Sede segreta dei cantanti\ndi Brema\nQuesto edificio, all'apparenza un condominio\ndi modeste dimensioni, in\nrealtà nasconde\nlo studio di registrazione di\nun asino,\nun gallo e una volpe.\n
 COM_00_18
 Palazzo di uffici moderno\n
+COM_00_22
+Il nuovo edificio delle\nNazioni Unite in Somalia\n
+COM_01_01
+Sito di partenza e\natterraggio Palloni areostatici\nQuesto sito è frequentato da\nmolte persone di punta,\nche perciò vengono tenute\nlontane dai palloni \nper evitare che li facciano\nesplodere.\n
+COM_01_04
+Parco per moto da trial\nQuesto circuito costituito da due tracciati,\nuno per moto da corsa e uno\nda trial, è\nimmerso in un favoloso parco,\ndove si può\nfare bird-watching oppure\nsfrecciare tra\ngli alberi, facendo attenzione\nagli scoiattoli.\n
+COM_01_09
+Vecchio cinema\nQuesto cinema vecchio stile, ricavato\nda un fienile, è situato nelle colline\ndel Chianti. Vi vengono riprodotte\npellicole principalmente in bianco e\nnero. Molto popolare tra i fans di\nCharlie Chaplin e di Alfred\nHitchcock\n
+COM_01_10
+La clinica locale.\nIl noioso prospetto è stato\nsostituito da un nuovo\ningresso accogliente,\nspecialmente per coloro\nche vanno dal dentista.\nNon addentarli!\n
+Control_StationBlg
+centro di controllo ferroviario
 DenkFlor
-Monumento\n
+Memorial Flor Wauters\n\nQuesto monumento è dedicato a\nFlor 'WF Ultd.' Wauters, il\nfamoso ingegnere che ha\ncreato tanti veicoli stradali\ne ferroviari. È anche\nconosciuto per aver disegnato\nmolte industrie.\n
+DenkHajo
+Memorial Hajo Malthaner\n\nQuesto monumento è dedicato a\nHansjörg Malthaner, che ha\ncreato questo gioco in\nsette anni. Dei semidei\nsvolgerebbero compiti simili\nin più tempo.\n
+DenkMHz
+Memorial Georg Heiduk\n\nQuesto monumento è dedicato a\nGeorg Heiduk ("MHz"), il\nmaestro degli edifici.\nSimboleggia il suo occhio\nper i dettagli.\n
 DenkOwen
-Monumento a Owen Rudge\n
+Memorial\n\nQuesto monumento è dedicato a\nOwen Rudge, il famoso\nesperto di finanza e\ntecnico del suono.\n
 DenkSeth
-Monumento a Seth C. Triggs\n
+Memorial\n\nQuesto monumento è dedicato a\nSeth C. Triggs, il famoso\narchitetto che ha\ndisegnato tanti edifici della\ncittà. È anche conosciuto\nper i suoi molti studi su come\nmigliorare i sistemi del\ntraffico.\n
+DenkTomas
+Memorial\n\nQuesto monumento è dedicato a\nTomas Kubes che ha\naiutato a migliorare\nSimutrans in molti aspetti\ncon consigli e duro lavoro.\n
 DenkTrikky
-Monumento a Trikky\n
+Memorial\n\nQuesto monumento è dedicato a\n'Trikky' Rick McGreal, il\nfamoso architetto che ha\ndisegnato molti edifici\nstupendi.\n
 DenkVM
-Monumento\n
+Memorial\n\nQuesto monumento è dedicato a\nManfred 'VT Vienna'\nTomaschitz, il famoso\ningegnere che ha disegnato\nmolti veicoli ferroviari.\n
 DenkVolker
-Monumento a Volker Meyer\n
+Memorial\n\nQuesto monumento è stato\ncostruito da Volker Meyer,\nche ha migliorato Simutrans\nin molti campi.\n
 Eingang
 Entrata
 Feste
-Roccaforte di Konubert\nEretta nel 1400~.\n
+Roccaforte di Konubert\nEretta nel 1400 circa.\n
+FreightTrainStop
+Stazione di carico merci
+GCG1TrainStop
+stazione con hall a sinistra
+GCG2TrainStop
+stazione con hall a destra
+Goods_StationBlg
+Deposito merci
+Gymnasium
+Liceo\n
+IND_00_01
+Magazzino cartaceo\nQui vengono conservati gli scontrini\nprovenienti da tutto il mondo!\n
+Lighthouse
+Faro\n
+MonorailFoundation
+Fondamenta della monorotaia
+Residenz
+Residence\nQuesto è il residence-museo del\ncapo dei boy-scouts,\nBaden Powell.\nEgli sosteneva che "Non\nesiste buono o cattivo\ntempo, ma \nbuono o  cattivo equipaggiamento".\n
+RES_00_01
+Casa piccola con giardino\n
+RES_00_02
+Casa piccola con giardino\n
+RES_00_03
+Casa piccola con giardino\n
+RES_00_04
+Casa piccola\n
+RES_00_06
+Una piccola fontana.\nSebbene non sia grandiosa\ncome quella di Ginevra,\ndelizia le persone che le\npasseggiano accanto,\nspecialmente in estate.\n
+RES_00_07
+Casa media\n
+RES_00_08
+Casa media\n
+RES_00_09
+Un piccolo parco con uno\nstagno per le anatre\n
+RES_00_11
+Casa grande con giardino\n
+RES_00_16
+Vecchia villa\n
+RES_00_19
+Appartamenti Moderni\n
+RES_01_08
+Casa media con giardino\n
+RES_01_10
+Casa moderna\n
+RES_02_16
+Appartamenti di lusso con\nattico.\n
+STADIUM2
+Stadio\n
+Theatre
+Antico teatro all'aperto\nIn questo antico teatro di\nstile ellenico furono\ninterpretate varie opere, tra cui\n"Itaca"\n
 Windmill
 Mulino a vento\n
+#____________________________________citycar____________________________________
+#____________________________________citycar____________________________________
+FordT
+Ford Modello T
+green_car
+auto verde
+#___________________________________crossing____________________________________
+#___________________________________crossing____________________________________
+rail-road-crossing
+Passaggio a Livello
 #____________________________________cursor_____________________________________
 #____________________________________cursor_____________________________________
 Baum
 Albero
+Down
+freccia giù
 Remove
 Rimuovi
+#__________________________________dummy_info___________________________________
+#__________________________________dummy_info___________________________________
+factory_2Raffinerie_details
+Raffinerie
+factory_3Raffinerie_details
+Raffinerie
+factory_Autohaus_details
+Concessionario
+factory_Autohersteller_details
+Fabbrica auto
+factory_Cementmill_details
+Cementificio\nLe costruzioni di cemento armato crescono come\nfunghi nelle città, quindi queste fabbriche\nstanno facendo soldi a palate.
+factory_ChemicalPlant_details
+Stabilimento chimico\nQuesto stabilimento trasforma l'oro\nin piombo, utilizzando la mitica "pietra cinica",\nper costruire dei camerini a prova della vista di Superman.
+factory_CHEMIST_details
+Farmacia\nQuesta rinomata farmacia regala lecca lecca\nai bambini che vanno a farci visita e\ncerotti ai genitori o nonni che li accompagnano.
+factory_Concretefactory_details
+Questa industria produce calcestruzzo. I suoi piccoli pori, che riducono il peso e aumentano l'isolamento, derivano dalla polvere d'alluminio che reagisce con l'acqua. Il calcestruzzo fu inventato negli anni 20 (1920).
+factory_Druckerei_details
+Tipografia
+factory_Incinerator_details
+Inceneritore
+factory_Kohlegrube_details
+<title>Informazioni su Miniera di Carbone</title><h1>Miniera di Carbone</h1><p>In queste miniere, gli uomini scavano il carbone. È un duro lavoro, ma il carbone è usato da industrie importanti come le fonderie e le centrali elettriche.</p>
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -107,9 +239,11 @@ Fabbrica auto
 Buchgrosshandel
 Grossista di libri
 Cementmill
-Cementificio
+cementeria\n
+ChemicalPlant
+Impianto chimico
 CHEMIST
-Laboratorio chimico (by Seth)
+Laboratorio chimico
 Concretefactory
 Fabbrica calcestruzzo
 Druckerei
@@ -188,6 +322,10 @@ Stahl
 Acciaio
 Stone
 Pietra
+#__________________________________ground_obj___________________________________
+#__________________________________ground_obj___________________________________
+flowers
+Fiori
 #_____________________________________menu______________________________________
 #_____________________________________menu______________________________________
 ShipTools
@@ -206,12 +344,32 @@ CATEGORY_03
 Petrol./Benz.
 CATEGORY_04
 di merce surgelata
-#____________________________________symbol_____________________________________
-#____________________________________symbol_____________________________________
-Passagiere
-Passeggeri
-Post
-Posta
+CATEGORY_05
+di cibi fluidi
+CATEGORY_06
+di legname
+CATEGORY_07
+di polvere/trucioli
+#___________________________________roadsign____________________________________
+#___________________________________roadsign____________________________________
+ChooseSignals
+Segnali di Scelta
+ChooseSignalsMonorail
+Segnali di Scelta
+choose_point
+Punto di scelta
+Endofchoosetrack
+Fine della ricerca del tracciato
+RailClose
+Chiudi tratto ferroviario
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
+FastRailTunnel
+Tunnel ferroviario ad alta velocità
+FastRoadTunnel
+Tunnel stradale ad alta velocità
+RailTunnel
+Tunnel ferroviario
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -256,22 +414,80 @@ Buchwagen
 VT Vienna vagone per libri
 Bus
 H-Trans autobus
+Concept1Front
+Concept 1
+Concept1Mail
+Concept 1 - Vagone posta
+Concept1Pass
+Concept 1 - Vagone passeggeri
+Concept1Rear
+Concept 1 - Motore posteriore
+Concept2Front
+Concept 2
+Concept2Mail
+Concept 2 - Vagone postale
+Concept2Pass
+Concept 2 - Vagone passeggeri
+Concept2Rear
+Concept 2 - Motore posteriore
+Concorde
+Concorde
+Deponielaster
+Camion per rifiuti I
+Deponielaster2
+Camion per rifiuti II
+Doubledeck_city_bus
+Autobus cittadino a due piani
+Eb3-5
+Ferrovie Federali Svizzere Eb 3/5
+EnCo_Bulk_Ship
+Nave per merce grezza
+EnCo_Car_Ship
+Nave per automobili
+EnCo_Cement_Ship
+Nave per cemento
+EnCo_Container_Ship
+Nave porta-container
+EnCo_Oil_Ship
+Petroliera
+EnCo_Paper_Ship
+Nave per carta
+EnCo_Steel_Ship
+Nave per acciaio
+EnCo_Wood_Ship
+Nave per legname
 Erzanhaenger
 H-Trans rimorchio per ferro
+Erztrailer
+Rimorchio per ferro
 Erztransporter
 H-Trans camion per ferro
 Erzwagen
 H-Trans vagone per ferro
+F7back
+F7 A motore posteriore
 FastFerry
 O.Bang traghetto veloce (hovercraft)
+Fokker_F27
+Fokker F27
+Gelenkbus_Ende
+Autosnodato - Retro
+Gelenkbus_Front
+Autosnodato - Fronte
+Hochbordwagen
+Vagone carbone (18t)
 Holzanhaenger
 JET rimorchio per legname
+Holztrailer
+Rimorchio per legname
 Holztransporter
 H-Trans camion per legname
 Holzwagen
 H-Trans vagone per legname
 Horsebookscariage
 Cavalli - Carro per libri
+Horsemailcariage
+Cavalli - Carro per posta
 Horsepapercariage
 Cavalli - Carro per carta
 Horsepassengerscariage
@@ -314,6 +530,8 @@ Posttransporter
 H-Trans furgone postale
 Postwagen
 H-Trans vagone per posta/bagagli
+RenaultTH5
+Renault TH5
 Sandanhaenger
 WF Ultd. rimorchio per sabbia
 Sandtransporter
@@ -340,7 +558,31 @@ TPPassagierwagen
 TPI carrozza passeggeri
 TPSchienenbus
 TPI VT98 (diesel)
+X2000back
+X2000 - Retro
+X2000car
+X2000 - Carrozza passeggeri
+X2000front
+X2000 - Fronte
+Zeppelin
+Zeppelin
 #______________________________________way______________________________________
 #______________________________________way______________________________________
+city_road
+Strada urbana
+cobblestone_road
+Strada lastricata
+concrete_sleeper_track
+Linea ferroviaria con traversine in cemento
+dirt_road
+Strada sterrata
+elevated_monorail
+monorotaia sopraelevata
 gavel_road
-Sentiero di ghiaia
+Sentiero inghiaiato
+wooden_sleeper_track
+Linea ferroviaria con traversine di legno
+#__________________________________way-object___________________________________
+#__________________________________way-object___________________________________
+HighSpeedOverheadpower
+Linea elettrica alta velocità
