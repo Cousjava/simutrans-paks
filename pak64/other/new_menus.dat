@@ -17,6 +17,8 @@ Image[9]=> wkz_icons.0.9
 Image[10]=> wkz_icons.0.10
 Image[11]=> wkz_icons.0.11
 Image[12]=> wkz_icons.0.12
+Image[13]=> wkz_icons.0.13
+Image[14]=> wkz_icons.0.14
 --
 Obj=menu
 name=SimpleTools

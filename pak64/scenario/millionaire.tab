@@ -9,8 +9,8 @@ savegame=book-empire.sve
 # 4: earn at least factor money
 # 5: headquarter and factor (profitable) trains
 # 6: factor passengers
-type=3
+type=4
 
-#
-# this is the factory for the objective
-factorypos=20,50
+# factor for scenario achievements (i.e. factor = 2000000 => earn 2000000)
+factor = 1000000
+

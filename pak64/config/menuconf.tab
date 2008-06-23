@@ -57,6 +57,9 @@ icon_height = 32
 # WKZ_LINK_FACTORY=26
 # WKZ_HEADQUARTER=27
 # WKZ_LOCK_GAME=28
+# WKZ_ADD_CITYCAR=29
+# WKZ_FOREST=30
+# WKZ_STOP_MOVER=31
 
 #
 general_tool[0]=0,0,9,a
@@ -93,6 +96,9 @@ general_tool[25]=,12,11
 general_tool[26]=10,11,9
 general_tool[27]=12,12,9,h
 general_tool[28]=12,7,,
+# citycars are usually added via a dialoge
+general_tool[30]=13,9,,
+general_tool[31]=14,11,,
 
 
 # SECOND SECTION: simple tools
@@ -376,7 +382,9 @@ toolbar[8][5]=ways(128,0)
 toolbar[8][6]=bridges(128)
 toolbar[8][7]=general_tool[8]
 toolbar[8][8]=general_tool[6]
-toolbar[8][9]=toolbar[10],7,,EDITTOOLS,edittools.txt
+toolbar[8][9]=general_tool[31]
+toolbar[8][10]=general_tool[31]
+toolbar[8][11]=toolbar[10],7,,EDITTOOLS,edittools.txt
 
 # list tools
 toolbar[9][0]=dialog_tool[14]
@@ -397,3 +405,5 @@ toolbar[10][6]=general_tool[26]
 toolbar[10][7]=dialog_tool[21]
 toolbar[10][8]=dialog_tool[22]
 toolbar[10][9]=dialog_tool[23]
+toolbar[10][10]=general_tool[30]
+toolbar[10][11]=general_tool[28]
