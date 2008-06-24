@@ -383,8 +383,7 @@ toolbar[8][6]=bridges(128)
 toolbar[8][7]=general_tool[8]
 toolbar[8][8]=general_tool[6]
 toolbar[8][9]=general_tool[31]
-toolbar[8][10]=general_tool[31]
-toolbar[8][11]=toolbar[10],7,,EDITTOOLS,edittools.txt
+toolbar[8][10]=toolbar[10],7,,EDITTOOLS,edittools.txt
 
 # list tools
 toolbar[9][0]=dialog_tool[14]
