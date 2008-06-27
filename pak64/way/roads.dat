@@ -71,6 +71,7 @@ intro_year = 1935
 intro_month = 7
 waytype=road
 # Hajo: no icon => no menu entry!
+cursor=64-hjm-roads_v2.3.5
 # rbis * animation
 Image[-][0]=64-hjm-cityroads.1.2
 Image[N][0]=64-hjm-cityroads.1.5

@@ -67,3 +67,38 @@ ImageUp[6]=rough-road.2.1
 ImageUp[9]=rough-road.2.3
 ImageUp[12]=rough-road.2.0
 --------------------
+Obj=way
+Name=trail_road
+cost=10000
+maintenance=800
+topspeed=130
+max_weight=100
+intro_year = 1940
+intro_month = 7
+waytype=road
+# skin
+icon=> trail-road.2.6
+cursor=trail-road.2.7
+# rbis * animation
+Image[-]=trail-road.0.2
+Image[N]=trail-road.1.6
+Image[S]=trail-road.1.4
+Image[E]=trail-road.1.7
+Image[W]=trail-road.1.5
+Image[NS]=trail-road.0.1
+Image[EW]=trail-road.0.0
+Image[NSE]=trail-road.1.3
+Image[NSW]=trail-road.1.1
+Image[NEW]=trail-road.1.0
+Image[SEW]=trail-road.1.2
+Image[NSEW]=trail-road.0.2
+Image[NE]=trail-road.0.6
+Image[SE]=trail-road.0.7
+Image[NW]=trail-road.0.5
+Image[SW]=trail-road.0.4
+# hangtyp * animation
+ImageUp[3]=trail-road.2.2
+ImageUp[6]=trail-road.2.1
+ImageUp[9]=trail-road.2.3
+ImageUp[12]=trail-road.2.0
+--------------------
