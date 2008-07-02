@@ -679,7 +679,19 @@ BackImage[0][0][0][0][0][0]=res.7.7
 BackImage[0][0][0][1][0][1]=winter-res.6.7
 BackImage[0][0][0][0][0][1]=winter-res.7.7
 --------------------
-#Name=RES_01_17 skipped
+Obj=building
+Name=RES_01_17
+copyright=Trikky
+type=res
+chance=100
+Level=17
+intro_year=1895
+retire_year=1955
+climates=temperate,tundra,rocky,arctic
+BackImage[0][0][0][1][0][0]=res.8.7
+BackImage[0][0][0][0][0][0]=res.9.7
+BackImage[0][0][0][1][0][1]=winter-res.8.7
+BackImage[0][0][0][0][0][1]=winter-res.9.7
 --------------------
 Obj=building
 Name=RES_00_18

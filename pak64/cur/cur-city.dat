@@ -3,7 +3,19 @@
 #----------------------------------------------------------------------------
 #Name=DRIVEINCINEMA skipped
 --------------------
-#Name=10_WOHN skipped
+# old church
+Obj=building
+Name=10_WOHN
+copyright=Trikky
+Type=cur
+Passengers=20
+Build_Time=150
+intro_year=1410
+retire_year=1960
+needs_ground=1
+climates=tropic,mediterran,temperate,tundra,rocky,arctic
+BackImage[0][0][0][0][0][0]=cur-city.0.0
+BackImage[0][0][0][0][0][1]=cur-city.0.1
 --------------------
 Obj=building
 Name=A1_ALTE_KIRCHE
@@ -22,7 +34,7 @@ Name=Raven_Kirche
 copyright=raven
 Type=cur
 Passengers=75
-Build_Time=150
+Build_Time=750
 intro_year=1750
 retire_year=1940
 climates=tropic,mediterran,temperate,tundra
@@ -59,7 +71,7 @@ Obj=building
 Name=A6_DOME
 Type=cur
 Passengers=50
-Build_Time=200
+Build_Time=1400
 Chance=20
 Dims=2,2
 intro_year=1520

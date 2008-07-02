@@ -321,5 +321,41 @@ Kohlewagen
 Sandwagen
 Erzwagen
 #-------------------------------------
+# pakHAJO to pak64
+STADIUM1
+STADIUM2
+TRIKKYPARK
+COM_00_03
+CarRepair
+COM_00_05
+SMALL_FLATS
+RES_00_13
+SMALL_LUXURY
+RES_00_13
+SmallDoubleHouse
+RES_00_04
+HOCHHAUS2
+RES_01_18
+LARGE_OFFICE
+COM_00_18
+HOCHHAUS3
+COM_01_10
+BARCELONA_GRAND
+COM_00_22
+07_WOHN
+RES_00_09
+08_WOHN
+RES_00_07
+1_DET_HOUSE
+RES_00_03
+2_LARGE_OFFICE
+COM_03_19
+2_MODERN_OFFICES
+COM_02_16
+3HIPER_OFFICE
+COM_01_22
+CompanyHeadquarter
+1headquarter
+#-------------------------------------
 # pak128 to pak64
 
