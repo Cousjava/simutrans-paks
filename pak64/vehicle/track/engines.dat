@@ -536,3 +536,24 @@ EmptyImage[E]=veh-engine3.3.5
 EmptyImage[NW]=veh-engine3.3.6
 EmptyImage[NE]=veh-engine3.3.7
 ----------------
+obj=vehicle
+copyright=Sojo
+name=Br118DR
+waytype=track
+freight=None
+engine_type=diesel
+smoke=Diesel
+EmptyImage[S]=BR118-sojo.0.0
+EmptyImage[W]=BR118-sojo.0.1
+EmptyImage[SE]=BR118-sojo.0.2
+EmptyImage[SW]=BR118-sojo.0.3
+speed=120
+cost=1200000
+weight=90
+power=1766
+RunningCost=2420
+sound=2
+intro_year = 1966
+intro_month = 2
+retire_year=1999
+----------------
