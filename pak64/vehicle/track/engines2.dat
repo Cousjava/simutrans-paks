@@ -5,27 +5,6 @@
 # Update: 29-Aug-04: Hj.Malthaner - added TPI Std 2-6-4T
 #
 -----------------------
-obj=vehicle
-name=ED17
-copyright=sanchimaru/purno/Raven
-waytype=electrified_track
-engine_type=electric
-freight=None
-speed=65
-gear=120
-cost=1200000
-weight=60
-power=910
-RunningCost=2700
-sound=-1
-intro_year = 1923
-retire_year = 1954
-Constraint[Prev][0]=none
-EmptyImage[S]=veh-engine2.5.0
-EmptyImage[W]=veh-engine2.5.1
-EmptyImage[SE]=veh-engine2.5.2
-EmptyImage[SW]=veh-engine2.5.3
-------------------
 # from singaporekid ...
 -----------------------
 obj=vehicle
@@ -443,3 +422,95 @@ EmptyImage[W]=brose_star.1.5
 EmptyImage[SE]=brose_star.1.6
 EmptyImage[SW]=brose_star.1.7
 -----------------------
+obj=vehicle
+name=CC7100
+copyright=HoveringTeacup/prissi
+waytype=electrified_track
+engine_type=electric
+freight=None
+speed=150
+gear=100
+cost=1200000
+weight=107
+power=3490
+RunningCost=1
+sound=-1
+intro_year = 1953
+retire_year = 2001
+#Constraint[Prev][0]=none
+EmptyImage[S]=CC7100.0.0
+EmptyImage[W]=CC7100.0.1
+EmptyImage[SE]=CC7100.0.2
+EmptyImage[SW]=CC7100.0.3
+EmptyImage[N]=CC7100.0.4
+EmptyImage[E]=CC7100.0.5
+EmptyImage[NW]=CC7100.0.6
+EmptyImage[NE]=CC7100.0.7
+--
+obj=vehicle
+name=Class86
+copyright=DanMacK/prissi
+waytype=electrified_track
+engine_type=electric
+freight=None
+speed=180
+gear=100
+cost=1200000
+weight=82
+power=3700
+RunningCost=1
+sound=-1
+intro_year = 1965
+retire_year = 2013
+Constraint[Prev][0]=none
+EmptyImage[S]=class86.0.0
+EmptyImage[W]=class86.0.1
+EmptyImage[SE]=class86.0.2
+EmptyImage[SW]=class86.0.3
+--
+obj=vehicle
+name=BB200
+copyright=prissi
+waytype=electrified_track
+engine_type=electric
+freight=None
+speed=90
+gear=100
+cost=3800000
+weight=60
+power=1076
+RunningCost=750
+sound=-1
+intro_year = 1924
+retire_year = 1967
+Constraint[Prev][0]=none
+EmptyImage[S]=BB200.0
+EmptyImage[W]=BB200.0.1
+EmptyImage[SE]=BB200.0.2
+EmptyImage[SW]=BB200.0.3
+--
+obj=vehicle
+name=NS1600
+copyright=Purno
+waytype=electrified_track
+engine_type=electric
+freight=None
+speed=180
+gear=150
+cost=4200000
+weight=83
+power=4540
+RunningCost=1
+sound=-1
+length=9
+intro_year = 1981
+#Constraint[Prev][0]=none
+EmptyImage[S]=NS1600.0.0
+EmptyImage[W]=NS1600.0.1
+EmptyImage[SE]=NS1600.0.2
+EmptyImage[SW]=NS1600.0.3
+EmptyImage[N]=NS1600.0.4
+EmptyImage[E]=NS1600.0.5
+EmptyImage[NW]=NS1600.0.6
+EmptyImage[NE]=NS1600.0.7
+--
