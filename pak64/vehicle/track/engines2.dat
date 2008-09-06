@@ -4,9 +4,9 @@
 # Update: 15-Oct-03: Hj.Malthaner
 # Update: 29-Aug-04: Hj.Malthaner - added TPI Std 2-6-4T
 #
------------------------
+--
 # from singaporekid ...
------------------------
+--
 obj=vehicle
 name=BR01
 copyright=Singaporekid
@@ -35,7 +35,7 @@ EmptyImage[N]=BR01b-SK.0.4
 EmptyImage[W]=BR01b-SK.0.5
 EmptyImage[NW]=BR01b-SK.0.6
 EmptyImage[NE]=BR01b-SK.0.7
------------------------
+--
 obj=vehicle
 name=BR38
 copyright=Singaporekid
@@ -64,7 +64,7 @@ EmptyImage[N]=BR38-SK.0.4
 EmptyImage[W]=BR38-SK.0.5
 EmptyImage[NW]=BR38-SK.0.6
 EmptyImage[NE]=BR38-SK.0.7
------------------------
+--
 obj=vehicle
 name=BR38-Tender
 copyright=Singaporekid
@@ -88,7 +88,7 @@ EmptyImage[N]=BR38-SK.1.4
 EmptyImage[W]=BR38-SK.1.5
 EmptyImage[NW]=BR38-SK.1.6
 EmptyImage[NE]=BR38-SK.1.7
------------------------
+--
 obj=vehicle
 name=BR39
 copyright=Singaporekid
@@ -117,7 +117,7 @@ EmptyImage[N]=BR39-SK.0.4
 EmptyImage[W]=BR39-SK.0.5
 EmptyImage[NW]=BR39-SK.0.6
 EmptyImage[NE]=BR39-SK.0.7
------------------------
+--
 obj=vehicle
 name=EinheitsTender
 waytype=track
@@ -143,7 +143,7 @@ EmptyImage[N]=BR39-SK.1.4
 EmptyImage[W]=BR39-SK.1.5
 EmptyImage[NW]=BR39-SK.1.6
 EmptyImage[NE]=BR39-SK.1.7
------------------------
+--
 obj=vehicle
 name=BR45
 copyright=Singaporekid
@@ -173,7 +173,7 @@ EmptyImage[N]=BR45-SK.0.4
 EmptyImage[W]=BR45-SK.0.5
 EmptyImage[NW]=BR45-SK.0.6
 EmptyImage[NE]=BR45-SK.0.7
------------------------
+--
 obj=vehicle
 name=BR45-Tender
 copyright=Singaporekid
@@ -197,7 +197,7 @@ EmptyImage[N]=BR45-SK.1.4
 EmptyImage[W]=BR45-SK.1.5
 EmptyImage[NW]=BR45-SK.1.6
 EmptyImage[NE]=BR45-SK.1.7
------------------------
+--
 obj=vehicle
 name=BR85
 copyright=Singaporekid
@@ -223,7 +223,7 @@ EmptyImage[N]=BR85-SK.0.4
 EmptyImage[W]=BR85-SK.0.5
 EmptyImage[NW]=BR85-SK.0.6
 EmptyImage[NE]=BR85-SK.0.7
------------------------
+--
 obj=vehicle
 name=E44
 waytype=electrified_track
@@ -242,7 +242,7 @@ EmptyImage[S]=E44.0.0
 EmptyImage[W]=E44.0.1
 EmptyImage[SE]=E44.0.2
 EmptyImage[SW]=E44.0.3
-------------------------------
+--
 obj=vehicle
 name=JR_9600
 copyright=raven
@@ -268,7 +268,7 @@ EmptyImage[N]=JR9600.0.4
 EmptyImage[W]=JR9600.0.5
 EmptyImage[NW]=JR9600.0.6
 EmptyImage[NE]=JR9600.0.7
-------------------------------
+--
 obj=vehicle
 name=JR_9600_tender
 waytype=track
@@ -290,7 +290,7 @@ EmptyImage[N]=JR9600_tender.0.4
 EmptyImage[W]=JR9600_tender.0.5
 EmptyImage[NW]=JR9600_tender.0.6
 EmptyImage[NE]=JR9600_tender.0.7
-----------------
+--
 obj=vehicle
 copyright=raven
 name=JNR_C11
@@ -316,7 +316,7 @@ EmptyImage[N]=./C11.0.4
 EmptyImage[W]=./C11.0.5
 EmptyImage[NW]=./C11.0.6
 EmptyImage[NE]=./C11.0.7
-----------------
+--
 obj=vehicle
 name=BRV36
 copyright=Saskia
@@ -342,86 +342,7 @@ EmptyImage[N]=short-german-diesel.0.4
 EmptyImage[W]=short-german-diesel.0.5
 EmptyImage[NW]=short-german-diesel.0.6
 EmptyImage[NE]=short-german-diesel.0.7
------------------------
-obj=vehicle
-name=ICE_TD-front
-waytype=track
-engine_type=diesel
-smoke=Diesel
-copyright=Alexander Brose
-freight=Passagiere
-payload=75
-speed=270
-cost=3750000
-weight=46
-power=1120
-gear=255
-RunningCost=2000
-sound=-1
-intro_year = 2007
-Constraint[Prev][0]=ICE_TD-back
-Constraint[Prev][1]=none
-Constraint[Next][0]=ICE_TD-car
-Constraint[Next][1]=ICE_TD-back
-EmptyImage[S]=brose_star.0.0
-EmptyImage[E]=brose_star.0.1
-EmptyImage[SE]=brose_star.0.2
-EmptyImage[SW]=brose_star.0.3
-EmptyImage[N]=brose_star.0.4
-EmptyImage[W]=brose_star.0.5
-EmptyImage[NW]=brose_star.0.6
-EmptyImage[NE]=brose_star.0.7
------------------------
-obj=vehicle
-name=ICE_TD-back
-copyright=Alexander Brose
-waytype=track
-freight=Passagiere
-payload=75
-speed=270
-engine_type=diesel
-smoke=Diesel
-cost=3750000
-weight=46
-power=1120
-gear=255
-RunningCost=2000
-sound=-1
-intro_year = 2007
-Constraint[Prev][0]=ICE_TD-front
-Constraint[Prev][1]=ICE_TD-car
-Constraint[Next][0]=ICE_TD-front
-Constraint[Next][1]=none
-EmptyImage[S]=brose_star.0.4
-EmptyImage[E]=brose_star.0.5
-EmptyImage[SE]=brose_star.0.6
-EmptyImage[SW]=brose_star.0.7
-EmptyImage[N]=brose_star.1.0
-EmptyImage[W]=brose_star.1.1
-EmptyImage[NW]=brose_star.1.2
-EmptyImage[NE]=brose_star.0.3
------------------------
-obj=vehicle
-name=ICE_TD-car
-waytype=track
-freight=Passagiere
-copyright=Alexander Brose
-payload=100
-cost=350000
-weight=32
-speed=270
-RunningCost=600
-sound=-1
-intro_year = 2007
-Constraint[Prev][0]=ICE_TD-front
-Constraint[Prev][1]=ICE_TD-car
-Constraint[Next][0]=ICE_TD-car
-Constraint[Next][1]=ICE_TD-back
-EmptyImage[S]=brose_star.1.4
-EmptyImage[W]=brose_star.1.5
-EmptyImage[SE]=brose_star.1.6
-EmptyImage[SW]=brose_star.1.7
------------------------
+--
 obj=vehicle
 name=CC7100
 copyright=HoveringTeacup/prissi
@@ -437,7 +358,7 @@ RunningCost=1
 sound=-1
 intro_year = 1953
 retire_year = 2001
-#Constraint[Prev][0]=none
+Constraint[Prev][0]=none
 EmptyImage[S]=CC7100.0.0
 EmptyImage[W]=CC7100.0.1
 EmptyImage[SE]=CC7100.0.2

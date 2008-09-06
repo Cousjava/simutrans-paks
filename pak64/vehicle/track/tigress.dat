@@ -4,7 +4,7 @@
 # author: Hj. Malthaner <hansjoerg.malthaner@gmx.de>
 # date:   09-Sep-03
 #
------------------------
+--
 obj=vehicle
 name=2Ellok
 copyright=Hajo
@@ -28,7 +28,7 @@ EmptyImage[N]=hjm-tigress.0.4
 EmptyImage[W]=hjm-tigress.0.5
 EmptyImage[NW]=hjm-tigress.0.6
 EmptyImage[NE]=hjm-tigress.0.7
------------------------
+--
 obj=vehicle
 name=H-Trans-Tigress-II-Front
 copyright=Hajo
@@ -55,7 +55,7 @@ EmptyImage[N]=hjm-tigress.1.4
 EmptyImage[W]=hjm-tigress.1.5
 EmptyImage[NW]=hjm-tigress.1.6
 EmptyImage[NE]=hjm-tigress.1.7
------------------------
+--
 obj=vehicle
 name=H-Trans-Tigress-II-Back
 copyright=Hajo
@@ -82,7 +82,7 @@ EmptyImage[N]=hjm-tigress.1.0
 EmptyImage[W]=hjm-tigress.1.1
 EmptyImage[NW]=hjm-tigress.1.2
 EmptyImage[NE]=hjm-tigress.1.3
------------------------
+--
 obj=vehicle
 name=H-Trans-Pantheress
 copyright=Hajo
@@ -108,7 +108,7 @@ EmptyImage[N]=hjm-tigress.2.4
 EmptyImage[W]=hjm-tigress.2.5
 EmptyImage[NW]=hjm-tigress.2.6
 EmptyImage[NE]=hjm-tigress.2.7
------------------------
+--
 obj=vehicle
 name=H-Trans-Pantheress-Back
 copyright=Hajo
@@ -136,5 +136,5 @@ EmptyImage[N]=hjm-tigress.2.0
 EmptyImage[W]=hjm-tigress.2.1
 EmptyImage[NW]=hjm-tigress.2.2
 EmptyImage[NE]=hjm-tigress.2.3
------------------------
+--
 

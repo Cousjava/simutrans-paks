@@ -614,8 +614,8 @@ climates=temperate,tundra,rocky
 Dims=1,1,2
 BackImage[0][0][0][0][0][0]=res.9.5
 BackImage[0][0][0][0][0][1]=winter-res.9.5
-BackImage[0][0][0][0][0][0]=res.8.5
-BackImage[0][0][0][0][0][1]=winter-res.8.5
+BackImage[1][0][0][0][0][0]=res.8.5
+BackImage[1][0][0][0][0][1]=winter-res.8.5
 -------------------
 Obj=building
 Name=RES_12_15
@@ -627,8 +627,8 @@ intro_year=1871
 Dims=1,1,2
 climates=mediterran,temperate,tundra,rocky,artic
 BackImage[0][0][0][0][0][0]=res.11.5
-BackImage[1][0][0][0][0][0]=res.10.5
 BackImage[0][0][0][0][0][1]=winter-res.11.5
+BackImage[1][0][0][0][0][0]=res.10.5
 BackImage[1][0][0][0][0][1]=winter-res.10.5
 --------------------
 Obj=building

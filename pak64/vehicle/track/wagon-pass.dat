@@ -1,4 +1,4 @@
----
+--
 obj=vehicle
 name=AdlerPersonenwagen
 copyright=FrankP
@@ -30,11 +30,11 @@ copyright=singaporekid
 waytype=track
 freight=Passagiere
 length=7
-payload=44
+payload=48
 cost=20000
 weight=18
 speed=100
-RunningCost=200
+RunningCost=110
 sound=-1
 intro_year = 1855
 intro_month = 5
@@ -47,7 +47,7 @@ EmptyImage[N]=old-passenger.1.4
 EmptyImage[E]=old-passenger.1.5
 EmptyImage[NW]=old-passenger.1.6
 EmptyImage[NE]=old-passenger.1.7
----
+--
 obj=vehicle
 name=Passagierwagen
 waytype=track
@@ -57,9 +57,10 @@ payload=90
 speed=160
 cost=100000
 weight=29
-RunningCost=400
+RunningCost=880
 sound=-1
 intro_year=1924
+retire_year=1998
 EmptyImage[S]=veh-passenger.0.4
 EmptyImage[W]=veh-passenger.0.5
 EmptyImage[SE]=veh-passenger.0.6
@@ -70,12 +71,13 @@ name=TPPassagierwagen
 waytype=track
 copyright=prissi inspired by Osakari
 freight=Passagiere
-payload=152
+payload=162
 speed=120
 cost=135000
 weight=41
-RunningCost=350
+RunningCost=430
 intro_year=1952
+retire_year=2010
 EmptyImage[S]=veh-passenger.5.0
 EmptyImage[W]=veh-passenger.5.1
 EmptyImage[SE]=veh-passenger.5.2
@@ -90,7 +92,7 @@ payload=86
 speed=230
 cost=250000
 weight=34
-RunningCost=500
+RunningCost=970
 sound=-1
 intro_year=1965
 EmptyImage[S]=veh-passenger.8.0
@@ -106,14 +108,14 @@ freight=Passagiere
 payload=148
 speed=160
 cost=135000
-weight=32
+weight=37
 RunningCost=500
 intro_year=1988
 EmptyImage[S]=veh-passenger.0.0
 EmptyImage[W]=veh-passenger.0.1
 EmptyImage[SE]=veh-passenger.0.2
 EmptyImage[SW]=veh-passenger.0.3
----
+--
 obj=vehicle
 name=H-Trans-Tiger-Car
 copyright=Hajo
@@ -122,8 +124,8 @@ freight=Passagiere
 payload=64
 speed=450
 cost=300000
-weight=26
-RunningCost=640
+weight=29
+RunningCost=1300
 sound=-1
 intro_year = 2019
 intro_month = 8
@@ -131,7 +133,7 @@ EmptyImage[S]=hjm-tigress.3.0
 EmptyImage[W]=hjm-tigress.3.1
 EmptyImage[SE]=hjm-tigress.3.2
 EmptyImage[SW]=hjm-tigress.3.3
----
+--
 obj=vehicle
 name=PrPostwagen
 copyright=singaporekid
@@ -155,7 +157,7 @@ EmptyImage[N]=old-passenger.0.4
 EmptyImage[E]=old-passenger.0.5
 EmptyImage[NW]=old-passenger.0.6
 EmptyImage[NE]=old-passenger.0.7
----
+--
 obj=vehicle
 name=Postwagen
 waytype=track
@@ -172,7 +174,7 @@ EmptyImage[S]=../veh-mail.2.0
 EmptyImage[W]=../veh-mail.2.1
 EmptyImage[SE]=../veh-mail.2.2
 EmptyImage[SW]=../veh-mail.2.3
----
+--
 obj=vehicle
 name=H-Trans-Tiger-Mail-Car
 copyright=Hajo
@@ -190,4 +192,4 @@ EmptyImage[S]=hjm-tigress.3.0
 EmptyImage[W]=hjm-tigress.3.1
 EmptyImage[SE]=hjm-tigress.3.2
 EmptyImage[SW]=hjm-tigress.3.3
----
+--
