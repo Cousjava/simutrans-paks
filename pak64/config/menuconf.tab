@@ -310,6 +310,7 @@ toolbar[2][7]=buildings(33,2)
 toolbar[2][8]=buildings(34,2)
 toolbar[2][9]=buildings(35,2)
 toolbar[2][10]=general_tool[14],,t,2
+toolbar[2][11]=general_tool[18],,e,2
 
 # monorailtools (waytype 5)
 toolbar[3][0]=ways(5,0)
@@ -384,6 +385,7 @@ toolbar[8][7]=general_tool[8]
 toolbar[8][8]=general_tool[6]
 toolbar[8][9]=general_tool[31]
 toolbar[8][10]=toolbar[10],7,,EDITTOOLS,edittools.txt
+toolbar[8][11]=general_tool[14],,l,128
 
 # list tools
 toolbar[9][0]=dialog_tool[14]
