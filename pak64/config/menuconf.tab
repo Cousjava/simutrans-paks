@@ -127,6 +127,8 @@ general_tool[31]=14,11,,
 # WKZ_SHOW_UNDERGROUND=15
 # WKZ_ROTATE90=16
 # WKZ_QUIT=17
+# WKZ_FILL_TREES=18
+# WKZ_DAYNIGHT_LEVEL=19
 #
 simple_tool[0]=0,p
 simple_tool[1]=1,W
@@ -285,7 +287,8 @@ toolbar[0][21]=dialog_tool[0]
 toolbar[0][22]=simple_tool[16]
 toolbar[0][23]=simple_tool[7],,.,+1
 toolbar[0][24]=simple_tool[7],,COMMA,-1
-
+toolbar[0][25]=simple_tool[19],,+,+
+toolbar[0][26]=simple_tool[19],,-,-
 
 # slope tools
 toolbar[1][0]=general_tool[2]

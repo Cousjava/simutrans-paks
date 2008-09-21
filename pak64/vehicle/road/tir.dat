@@ -250,6 +250,7 @@ obj=vehicle
 name=Buchtrailer2
 waytype=road
 freight=Buecher
+copyright=blackbox
 payload=55
 speed=130
 cost=320000
