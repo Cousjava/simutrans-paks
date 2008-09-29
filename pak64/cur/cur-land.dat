@@ -103,10 +103,10 @@ chance=20
 climates=water
 animation_time=2000
 BackImage[0][0][0][0][0][0]=cur-land.6.0
-BackImage[0][0][0][0][1][0]=-
+BackImage[0][0][0][0][1][0]=cur-land.6.0
 BackImage[0][0][0][0][2][0]=cur-land.6.1
 BackImage[0][0][0][0][0][1]=cur-land.6.2
-BackImage[0][0][0][0][1][1]=-
+BackImage[0][0][0][0][1][1]=cur-land.6.2
 BackImage[0][0][0][0][2][1]=cur-land.6.3
 --------------------
 Obj=building
