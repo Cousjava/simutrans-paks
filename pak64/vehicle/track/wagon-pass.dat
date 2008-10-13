@@ -129,10 +129,10 @@ RunningCost=1300
 sound=-1
 intro_year = 2019
 intro_month = 8
-EmptyImage[S]=hjm-tigress.3.0
-EmptyImage[W]=hjm-tigress.3.1
-EmptyImage[SE]=hjm-tigress.3.2
-EmptyImage[SW]=hjm-tigress.3.3
+EmptyImage[S]=veh-passenger2.6.0
+EmptyImage[W]=veh-passenger2.6.1
+EmptyImage[SE]=veh-passenger2.6.2
+EmptyImage[SW]=veh-passenger2.6.3
 --
 obj=vehicle
 name=PrPostwagen
