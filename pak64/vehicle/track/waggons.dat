@@ -1,12 +1,91 @@
 #
+# all unpowered cars for good transport
 #
-# Update: 04-Oct-02: Hj.Malthaner
-# Update: 04-Aug-04: Hj.Malthaner - added introduction dates for some waggons
-# Update: 05-Aug-04: Hj.Malthaner - added introduction dates for some waggons
-#
-# Weights of Waggons range from 18 to 34 tons
-#
------------------------
+--
+obj=vehicle
+name=Boxcar
+length=6
+waytype=track
+freight=Buecher
+freight_catg=1
+copyright=Uzurpator
+payload=14
+speed=65
+cost=80000
+weight=12
+RunningCost=250
+intro_year=1837
+intro_month=01
+EmptyImage[S]=veh-piecegood.0.0
+EmptyImage[W]=veh-piecegood.0.1
+EmptyImage[SE]=veh-piecegood.0.2
+EmptyImage[SW]=veh-piecegood.0.3
+EmptyImage[N]=veh-piecegood.0.4
+EmptyImage[E]=veh-piecegood.0.5
+EmptyImage[NW]=veh-piecegood.0.6
+EmptyImage[NE]=veh-piecegood.0.7
+--
+obj=vehicle
+name=Moebelwagen
+waytype=track
+freight=Buecher
+freight_catg=1
+copyright=DanMacK
+payload=24
+cost=84000
+weight=18
+speed=90
+RunningCost=350
+sound=-1
+intro_year = 1911
+intro_month = 6
+EmptyImage[S]=veh-piecegood.1.0
+EmptyImage[W]=veh-piecegood.1.1
+EmptyImage[SE]=veh-piecegood.1.2
+EmptyImage[SW]=veh-piecegood.1.3
+--
+obj=vehicle
+name=Buchwagen
+waytype=track
+freight=Buecher
+copyright=Uzurpator
+freight_catg=1
+payload=33
+cost=100000
+weight=28
+speed=120
+RunningCost=500
+sound=-1
+intro_year = 1935
+intro_month = 7
+EmptyImage[S]=veh-piecegood.2.0
+EmptyImage[W]=veh-piecegood.2.1
+EmptyImage[SE]=veh-piecegood.2.2
+EmptyImage[SW]=veh-piecegood.2.3
+--
+obj=vehicle
+name=Flachwagen
+copyright=Marc Sperfeld
+waytype=track
+freight=Buecher
+freight_catg=1
+payload=50
+cost=210000
+weight=21
+speed=140
+RunningCost=800
+sound=-1
+intro_year = 1958
+intro_month = 4
+EmptyImage[S]=veh-piecegood.3.0
+EmptyImage[W]=veh-piecegood.3.1
+EmptyImage[SE]=veh-piecegood.3.2
+EmptyImage[SW]=veh-piecegood.3.3
+FreightImage[S]=veh-piecegood.3.4
+FreightImage[W]=veh-piecegood.3.5
+FreightImage[SE]=veh-piecegood.3.6
+FreightImage[SW]=veh-piecegood.3.7
+--
 obj=vehicle
 name=Erzwagen
 waytype=track
@@ -43,7 +122,7 @@ FreightImage[0][S]=bulk-cars.13.10
 FreightImage[0][W]=bulk-cars.13.11
 FreightImage[0][SE]=bulk-cars.13.12
 FreightImage[0][SW]=bulk-cars.13.13
------------------------
+--
 obj=vehicle
 name=old_open_car
 copyright=FrankP
@@ -66,7 +145,7 @@ FreightImage[S]=adler-set.1.0
 FreightImage[W]=adler-set.1.1
 FreightImage[SE]=adler-set.1.2
 FreightImage[SW]=adler-set.1.3
------------------------
+--
 obj=vehicle
 name=Hochbordwagen
 waytype=track
@@ -126,7 +205,7 @@ FreightImage[0][N]=bulk-cars.3.5
 FreightImage[0][E]=bulk-cars.3.6
 FreightImage[0][NW]=bulk-cars.3.7
 FreightImage[0][NE]=bulk-cars.3.8
------------------------
+--
 obj=vehicle
 name=Kohlewagen
 waytype=track
@@ -164,7 +243,7 @@ FreightImage[0][S]=bulk-cars.13.1
 FreightImage[0][W]=bulk-cars.13.2
 FreightImage[0][SE]=bulk-cars.13.3
 FreightImage[0][SW]=bulk-cars.13.4
------------------------
+--
 obj=vehicle
 name=Holzwagen
 waytype=track
@@ -194,7 +273,7 @@ FreightImage[N]=old-good-cars.8.4
 FreightImage[E]=old-good-cars.8.5
 FreightImage[NW]=old-good-cars.8.6
 FreightImage[NE]=old-good-cars.8.7
------------------------
+--
 obj=vehicle
 name=NeuOelwagen
 waytype=track
@@ -210,7 +289,7 @@ EmptyImage[S]=WagonNewOil.0.0
 EmptyImage[W]=WagonNewOil.0.1
 EmptyImage[SE]=WagonNewOil.0.2
 EmptyImage[SW]=WagonNewOil.0.3
------------------------
+--
 obj=vehicle
 name=Oelwagen
 waytype=track
@@ -227,7 +306,7 @@ EmptyImage[S]=DMK_oil.0.0
 EmptyImage[W]=DMK_oil.0.1
 EmptyImage[SE]=DMK_oil.0.2
 EmptyImage[SW]=DMK_oil.0.3
------------------------
+--
 obj=vehicle
 name=OldOil
 length=6
@@ -248,7 +327,7 @@ EmptyImage[N]=old-good-cars.2.4
 EmptyImage[E]=old-good-cars.2.5
 EmptyImage[NW]=old-good-cars.2.6
 EmptyImage[NE]=old-good-cars.2.7
------------------------
+--
 obj=vehicle
 name=Klappdeckelwagen
 waytype=track
@@ -272,7 +351,7 @@ EmptyImage[N]=MHz_plastics.0.4
 EmptyImage[E]=MHz_plastics.0.5
 EmptyImage[NW]=MHz_plastics.0.6
 EmptyImage[NE]=MHz_plastics.0.7
------------------------
+--
 obj=vehicle
 name=Staubkesselwagen
 waytype=track
@@ -292,7 +371,7 @@ EmptyImage[S]=MHz_plastics.1.0
 EmptyImage[W]=MHz_plastics.1.1
 EmptyImage[SE]=MHz_plastics.1.2
 EmptyImage[SW]=MHz_plastics.1.3
------------------------
+--
 obj=vehicle
 name=Ucy
 waytype=track
@@ -310,91 +389,7 @@ EmptyImage[S]=MHz_plastics.2.0
 EmptyImage[W]=MHz_plastics.2.1
 EmptyImage[SE]=MHz_plastics.2.2
 EmptyImage[SW]=MHz_plastics.2.3
------------------------
-obj=vehicle
-name=Boxcar
-length=6
-waytype=track
-freight=Buecher
-freight_catg=1
-copyright=Uzurpator
-payload=14
-speed=65
-cost=80000
-weight=12
-RunningCost=250
-intro_year=1837
-intro_month=01
-EmptyImage[S]=veh-piecegood.0.0
-EmptyImage[W]=veh-piecegood.0.1
-EmptyImage[SE]=veh-piecegood.0.2
-EmptyImage[SW]=veh-piecegood.0.3
-EmptyImage[N]=veh-piecegood.0.4
-EmptyImage[E]=veh-piecegood.0.5
-EmptyImage[NW]=veh-piecegood.0.6
-EmptyImage[NE]=veh-piecegood.0.7
------------------------
-obj=vehicle
-name=Moebelwagen
-waytype=track
-freight=Buecher
-freight_catg=1
-copyright=DanMacK
-payload=24
-cost=84000
-weight=18
-speed=90
-RunningCost=350
-sound=-1
-intro_year = 1911
-intro_month = 6
-EmptyImage[S]=veh-piecegood.1.0
-EmptyImage[W]=veh-piecegood.1.1
-EmptyImage[SE]=veh-piecegood.1.2
-EmptyImage[SW]=veh-piecegood.1.3
------------------------
-obj=vehicle
-name=Buchwagen
-waytype=track
-freight=Buecher
-copyright=Uzurpator
-freight_catg=1
-payload=33
-cost=100000
-weight=28
-speed=120
-RunningCost=500
-sound=-1
-intro_year = 1935
-intro_month = 7
-EmptyImage[S]=veh-piecegood.2.0
-EmptyImage[W]=veh-piecegood.2.1
-EmptyImage[SE]=veh-piecegood.2.2
-EmptyImage[SW]=veh-piecegood.2.3
------------------------
-obj=vehicle
-name=Flachwagen
-copyright=Marc Sperfeld
-waytype=track
-freight=Buecher
-freight_catg=1
-payload=50
-cost=210000
-weight=21
-speed=140
-RunningCost=800
-sound=-1
-intro_year = 1958
-intro_month = 4
-EmptyImage[S]=veh-piecegood.3.0
-EmptyImage[W]=veh-piecegood.3.1
-EmptyImage[SE]=veh-piecegood.3.2
-EmptyImage[SW]=veh-piecegood.3.3
-FreightImage[S]=veh-piecegood.3.4
-FreightImage[W]=veh-piecegood.3.5
-FreightImage[SE]=veh-piecegood.3.6
-FreightImage[SW]=veh-piecegood.3.7
------------------------
+--
 obj=vehicle
 name=CarFlat
 waytype=track
@@ -425,7 +420,7 @@ FreightImage[N]=DMK_flat.2.4
 FreightImage[E]=DMK_flat.2.5
 FreightImage[NW]=DMK_flat.2.6
 FreightImage[NE]=DMK_flat.2.7
------------------------
+--
 obj=vehicle
 name=Autotransportwagen
 waytype=track
@@ -455,7 +450,7 @@ FreightImage[N]=MHz_cars.1.4
 FreightImage[E]=MHz_cars.1.5
 FreightImage[NW]=MHz_cars.1.6
 FreightImage[NE]=MHz_cars.1.7
------------------------
+--
 obj=vehicle
 name=Laaekks553_a
 waytype=track
@@ -487,7 +482,7 @@ FreightImage[N]=MHz_cars.5.4
 FreightImage[E]=MHz_cars.5.5
 FreightImage[NW]=MHz_cars.5.6
 FreightImage[NE]=MHz_cars.5.7
------------------------
+--
 obj=vehicle
 name=Laaekks553_b
 waytype=track
@@ -519,7 +514,7 @@ FreightImage[N]=MHz_cars.3.4
 FreightImage[E]=MHz_cars.3.5
 FreightImage[NW]=MHz_cars.3.6
 FreightImage[NE]=MHz_cars.3.7
------------------------
+--
 obj=vehicle
 name=Papierwagen
 waytype=track
@@ -540,7 +535,7 @@ FreightImage[S]=DMK_flat.1.4
 FreightImage[W]=DMK_flat.1.5
 FreightImage[SE]=DMK_flat.1.6
 FreightImage[SW]=DMK_flat.1.7
------------------------
+--
 obj=vehicle
 name=Stahlwagen
 waytype=track
@@ -561,7 +556,7 @@ FreightImage[S]=DMK_flat.0.4
 FreightImage[W]=DMK_flat.0.5
 FreightImage[SE]=DMK_flat.0.6
 FreightImage[SW]=DMK_flat.0.7
------------------------
+--
 obj=vehicle
 name=Bretterwagen
 waytype=track
@@ -583,4 +578,4 @@ FreightImage[S]=DMK_wood.0.4
 FreightImage[W]=DMK_wood.0.5
 FreightImage[SE]=DMK_wood.0.6
 FreightImage[SW]=DMK_wood.0.7
------------------------
+--
