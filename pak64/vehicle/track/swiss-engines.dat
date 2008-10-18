@@ -6,28 +6,6 @@
 #
 ------------------------------
 obj=vehicle
-name=Be5-7
-waytype=electrified_track
-copyright=Hajo/prissi
-freight=None
-smoke=None
-speed=75
-cost=3400000
-weight=110
-power=1840
-RunningCost=1711
-sound=-1
-intro_year = 1913
-intro_month = 4
-retire_year = 1964
-Constraint[Prev][0]=Be5-7
-Constraint[Prev][1]=none
-EmptyImage[S]=Be5-7.0.0
-EmptyImage[W]=Be5-7.0.1
-EmptyImage[SE]=Be5-7.0.2
-EmptyImage[SW]=Be5-7.0.3
------------------------
-obj=vehicle
 name=A3-5
 copyright=Jacopo Coletto
 engine_type=steam

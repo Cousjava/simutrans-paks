@@ -80,30 +80,6 @@ EmptyImage[W]=WEC.2.5
 EmptyImage[NW]=WEC.2.6
 EmptyImage[NE]=WEC.2.7
 ------------------------------
-# real power: 150kw ...
-obj=vehicle
-name=BB1280
-copyright=Jacopo Coletto
-waytype=track
-engine_type=electric
-length=6
-freight=None
-intro_month=11
-intro_year=1900
-retire_year=1952
-power=350
-speed=50
-weight=64
-RunningCost=181
-cost=71000
-sound=-1
-Constraint[Prev][0]=BB1280
-Constraint[Prev][1]=none
-EmptyImage[S]=BB1280.0.0
-EmptyImage[W]=BB1280.0.1
-EmptyImage[SE]=BB1280.0.2
-EmptyImage[SW]=BB1280.0.3
-------------------------------
 obj=vehicle
 name=221A
 copyright=Jacopo Coletto
