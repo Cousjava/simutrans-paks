@@ -19,7 +19,7 @@ icon_height = 32
 # these tools have an icon, a cursor, and maybe a sound
 # each entry has the form: general_tool[i],a,b,c,k
 # i is the tool number (as seen below)
-# a is the icon as number in menu: menu.GeneralTools.pak
+# a is the icon as number in menu: menu.GeneralTools.pak or or the name of a menu pak
 # b is the cursor as number in cursor: cursor.GeneralTools.pak
 # c is the sound on success
 # k is the key to toggle this
@@ -106,7 +106,7 @@ general_tool[31]=14,11,,
 # they have only an icon assigned
 # each entry has the form: dialoge_tool[i],a,k
 # i is the tool number (as seen below)
-# a is the icon as number in menu: menu.SimpleTools.pak
+# a is the icon as number in menu: menu.SimpleTools.pak or the name of a menu pak
 # k is the key to toggle this
 #
 # WKZ_PAUSE = 0
@@ -156,7 +156,7 @@ simple_tool[17]=,X
 # they have only an icon assigned
 # each entry has the form: dialoge_tool[i],a,k
 # i is the tool number (as seen below)
-# a is the icon as number in menu: menu.DialogeTools.pak
+# a is the icon as number in menu: menu.DialogeTools.pak or the name of a menu pak
 # k is the key to toggle this
 #
 # WKZ_HELP=0
@@ -183,6 +183,7 @@ simple_tool[17]=,X
 # WKZ_EDIT_ATTRACTION=21
 # WKZ_EDIT_HOUSE=22
 # WKZ_EDIT_TREE=23
+# WKZ_ENLARGE_MAP=24
 #
 dialog_tool[0]=0,?
 dialog_tool[1]=1,Q
@@ -216,7 +217,7 @@ dialog_tool[23]=23
 # all other toolbars are derived from it
 # Each entry is a[i],b,k,c,d
 # a[i] is either: general_tool[i], simple_tool[i], dialog_tool[i], toolbar[i], -, ways(waytype), signs(waytype), wayobj(waytype), stops(utype), depots(waytype)
-# b could be a different icon from the previous (if any) tool definition taken from menu.ToolbarTools.pak
+# b could be a different icon from the previous (if any) tool definition taken from menu.ToolbarTools.pak or the name of a menu pak
 # k could be a different key binding
 # c is the default parameter
 # d is the helpfile name (only if a is toolbar[i])
