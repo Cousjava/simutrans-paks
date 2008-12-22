@@ -12,12 +12,16 @@ NoInfo=1
 Dims=1,1,4
 intro_year=1440
 level=1
+# South
 BackImage[0][0][0][0][0]=ls-loadbay.0.0
 FrontImage[0][0][0][0][0]=ls-loadbay.0.4
+# East
 BackImage[1][0][0][0][0]=ls-loadbay.0.3
 FrontImage[1][0][0][0][0]=ls-loadbay.0.7
+# North
 BackImage[2][0][0][0][0]=ls-loadbay.0.1
 FrontImage[2][0][0][0][0]=ls-loadbay.0.5
+# West
 BackImage[3][0][0][0][0]=ls-loadbay.0.2
 FrontImage[3][0][0][0][0]=ls-loadbay.0.6
 icon=> ls-loadbay.0.12

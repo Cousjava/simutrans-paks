@@ -65,6 +65,7 @@ waytype=track
 enables_pax=1
 level=2
 Dims=1,1,4
+# S E N W
 BackImage[0][0][0][0][0]=VorplatzMHz.0.1
 BackImage[1][0][0][0][0]=VorplatzMHz.0.0
 BackImage[2][0][0][0][0]=VorplatzMHz.2.4
