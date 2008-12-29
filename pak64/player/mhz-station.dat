@@ -70,10 +70,10 @@ BackImage[0][0][0][0][0][0]=VorplatzMHz.0.1
 BackImage[1][0][0][0][0][0]=VorplatzMHz.0.0
 BackImage[2][0][0][0][0][0]=VorplatzMHz.0.3
 BackImage[3][0][0][0][0][0]=VorplatzMHz.0.2
-BackImage[0][0][0][0][0][1]=VorplatzMHz.0.1
-BackImage[1][0][0][0][0][1]=VorplatzMHz.0.0
-BackImage[2][0][0][0][0][1]=VorplatzMHz.0.3
-BackImage[3][0][0][0][0][1]=VorplatzMHz.0.2
+BackImage[0][0][0][0][0][1]=VorplatzMHz.2.1
+BackImage[1][0][0][0][0][1]=VorplatzMHz.2.0
+BackImage[2][0][0][0][0][1]=VorplatzMHz.2.3
+BackImage[3][0][0][0][0][1]=VorplatzMHz.2.2
 icon=> VorplatzMHz.0.5
 cursor=VorplatzMHz.0.6
 -------------
