@@ -4,16 +4,14 @@
 #                                Scenario: pak64                               #
 #                            Language: zh T. Chinese                           #
 #                                Encoding: UTF-8                               #
-#                               Font : m+10r.bdf                               #
-#                           Date Created: 28.06 2008                           #
+#                           Font : wenquanyi_9pt.bdf                           #
+#                            Date Created: 3.01 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                          Killua - kiruazaoldyeck1986                         #
-#                                    note:                                     #
-#                           Alan Wei Hong - LondonBVE                          #
-#                     note: Translating Simplified Chinese.                    #
-#                          Markus Pristovsek - prissi                          #
-#                            note: Administrator 64                            #
+#                               Alan - LondonBVE                               #
+#           note: Hope to translate at least 50% by end of November.           #
+#                                    - prissi                                  #
+#              note: Administrator Base texts / pak64 / pak.japan              #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -88,10 +86,10 @@ Bulk_StationBlg
 散貨轉運站
 BusStop
 與建巴士站/電車站\n
-CarDepot
-道路車廠
 Car_StationBlg
 車輛裝卸區
+CarDepot
+道路車廠
 ChannelStop
 運河碼頭
 Control_StationBlg
@@ -135,7 +133,7 @@ TramDepot
 VictorianStation
 維多利亞式車站
 Windmill
-風力發電機\n
+風力發電機\n\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -148,20 +146,62 @@ Pickup
 私家車
 yellow_car
 黃色私家車
-#____________________________________cursor_____________________________________
-#____________________________________cursor_____________________________________
-Baum
-樹木
-City
-指標(城市)
-Down
-指標(向下)
-Signal
-信號
-Slope
-地帶
-Up
-提高地形
+#__________________________________dummy_info___________________________________
+#__________________________________dummy_info___________________________________
+factory_2Raffinerie_details
+煉油廠 (汽油)
+factory_Autohaus_details
+車行
+factory_Autohersteller_details
+汽車製造廠
+factory_Buchgrosshandel_details
+書店
+factory_Cementmill_details
+水泥廠
+factory_CHEMIST_details
+藥房
+factory_Concretefactory_details
+混凝土廠
+factory_Druckerei_details
+印刷廠
+factory_Erzbergwerk_details
+鐵礦
+factory_Kohlegrube_details
+煤礦
+factory_Kohlekraftwerk_details
+發電廠 (燃煤)
+factory_Materialswholesale_details
+物料批發店
+factory_Moebelfabrik_details
+家具廠
+factory_Moebelhaus_details
+家品市場
+factory_Nutzwald_details
+森林
+factory_Oelbohrinsel_details
+鑽油台
+factory_Oelfeld_details
+油井
+factory_Oelkraftwerk_details
+發電廠 (燃油)
+factory_Papierfabrik_details
+造紙廠
+factory_Pharmaceutics_details
+藥廠
+factory_Raffinerie_details
+煉油廠
+factory_Saegewerk_details
+木廠
+factory_Sandquarry_details
+沙礦
+factory_Stahlwerk_details
+煉鋼廠
+factory_Stonequarry_details
+石礦
+factory_TANKE_details
+油站
+factory_Windkraftwerk_details
+風力發電站
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -182,8 +222,6 @@ Druckerei
 印刷廠
 Erzbergwerk
 鐵礦
-Incinerator
-焚化爐
 Kohlegrube
 煤礦
 Kohlekraftwerk
@@ -212,8 +250,6 @@ Saegewerk
 木廠
 Sandquarry
 沙礦
-scrap_yard
-垃圾回收站
 Stahlwerk
 煉鋼廠
 Stonequarry
@@ -264,28 +300,6 @@ Stahl
 鋼
 Stone
 石
-waste
-垃圾
-#_____________________________________menu______________________________________
-#_____________________________________menu______________________________________
-ListTools
-清單
-ShipTools
-船隻工具
-SlopeTools
-削岥工具
-SpecialTools
-特別工具
-#_____________________________________misc______________________________________
-#_____________________________________misc______________________________________
-Construction
-建築工地
-PowerDest
-降壓變電站
-PowerSource
-升壓變電站
-Sidewalk
-行人
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Woman
@@ -302,12 +316,12 @@ CATEGORY_04
 冷凍貨物
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
+choose_point
+方向選擇標誌
 ChooseSignals
 月台選擇信號
 ChooseSignalsMonorail
 單軌月台信號
-choose_point
-方向選擇標誌
 Minimum80
 車速限制(>80kph)
 NoAirEntry
@@ -326,28 +340,6 @@ SignalsMonorail
 單軌列車信號
 traffic_light
 交通燈
-#_____________________________________smoke_____________________________________
-#_____________________________________smoke_____________________________________
-Diesel
-柴油
-Steam
-蒸汽
-#____________________________________symbol_____________________________________
-#____________________________________symbol_____________________________________
-Logo
-標誌
-NewWorld
-新地圖
-NewYear
-新年
-#____________________________________tunnel_____________________________________
-#____________________________________tunnel_____________________________________
-FastRoadTunnel
-快速道路隧道
-RailTunnel
-鐵路隧道
-RoadTunnel
-道路隧道
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 Bus

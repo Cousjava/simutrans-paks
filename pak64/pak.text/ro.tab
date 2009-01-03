@@ -4,14 +4,12 @@
 #                                Scenario: pak64                               #
 #                              Language: ro Romana                             #
 #                             Encoding: ISO-8859-2                             #
-#                              Font : ro_font.fnt                              #
-#                           Date Created: 28.06 2008                           #
+#                            Font : prop-latin2.fnt                            #
+#                            Date Created: 3.01 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                             Ferencz Székely - ph                             #
-#                    note: Hungarian translation coordinator                   #
-#                          Markus Pristovsek - prissi                          #
-#                            note: Administrator 64                            #
+#                                    - prissi                                  #
+#              note: Administrator Base texts / pak64 / pak.japan              #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -27,135 +25,175 @@ Pod feroviar din o?el
 01_CITY
 Prim?rie
 A1_ALTE_KIRCHE
-Biserica veche\n
+Biserica veche\n\n
 A2_SCHLOSS1
-Castelul Regelui Nebun\nAtrac?ie turistic?. Merit?\nvizitat.\n
+Castelul Regelui Nebun\nAtrac?ie turistic?. Merit?\nvizitat.\n\n
 A3_BURG1
-Mândria ora?ului :-)\n
+Mândria ora?ului :-)\n\n
 A4_SCHLOSS2
-Izvorul Palatului\n
+Izvorul Palatului\n\n
 A5_STONEHENGE
-Menhir\n
+Menhir\n\n
 A6_DOME
-Cathedral? gothic?\n
+Cathedral? gothic?\n\n
 COM_00_01
-Mic ABC\n
+Mic ABC\n\n
 COM_00_03
-Repara?ii automobile\n
+Repara?ii automobile\n\n
 COM_00_05
-Banc?\n
+Banc?\n\n
 COM_00_06
-Cafenea\n
+Cafenea\n\n
 COM_00_10
-Oficii cu parking\n
+Oficii cu parking\n\n
 COM_00_12
-Oficii\n
+Oficii\n\n
 COM_00_18
-Oficiu modern\n
+Oficiu modern\n\n
 COM_01_01
-Centru Zeppelin\n
+Centru Zeppelin\n\n
 COM_01_09
-Cinema\n
+Cinema\n\n
 DenkFlor
-Dedicat pt. Flor WF Ultd.\nWautersn, inginerul care a\nproiectat multe din\nvechicolele folosite în\nSimutrans.\n
+Dedicat pt. Flor WF Ultd.\nWautersn, inginerul care a\nproiectat multe din\nvechicolele folosite în\nSimutrans.\n\n
 DenkOwen
-Acest monument este\ndedicat lui Owen Rudge,\nspecialis în finan?e.\n
+Acest monument este\ndedicat lui Owen Rudge,\nspecialis în finan?e.\n\n
 DenkSeth
-Memorial ridicat pt. Seth C.\nTriggs.\n
+Memorial ridicat pt. Seth C.\nTriggs.\n\n
 DenkTomas
-Dedicat pt. Tomas Kubes\ngazda distribu?iei pak128.\n
+Dedicat pt. Tomas Kubes\ngazda distribu?iei pak128.\n\n
 DenkTrikky
-Statuie ridicat? pt. Trikky'\nRick McGreal.\n
+Statuie ridicat? pt. Trikky'\nRick McGreal.\n\n
 DenkVM
-Dedicat pt. Manfred VT\nVienna'  Tomaschitz.\n
+Dedicat pt. Manfred VT\nVienna'  Tomaschitz.\n\n
 DenkVolker
-Aceast? cl?dire a fost\nconstruit? de c?tre Volker\nMeyer.\n
+Aceast? cl?dire a fost\nconstruit? de c?tre Volker\nMeyer.\n\n
 FreightTrainStop
 Sta?ie marfar
 IND_00_01
-Magazin depozit\n
+Magazin depozit\n\n
 IND_00_02
-Barac?\n
+Barac?\n\n
 IND_00_03
-Magazin depozit carburan?i\n
+Magazin depozit carburan?i\n\n
 IND_00_04
-O?el?rie\n
+O?el?rie\n\n
 IND_00_05
-Cistren? ap?\n
+Cistren? ap?\n\n
 IND_00_06
-\mFabric?\n
+\mFabric?\n\n
 IND_00_09
-Uzin? ciment\n
+Uzin? ciment\n\n
 IND_00_10
-Hal?\n
+Hal?\n\n
 IND_00_12
-Interpriderea de utilaje\n
+Interpriderea de utilaje\n\n
 IND_00_14
-Optica\n
+Optica\n\n
 IND_00_16
-Fabric? de materiale\nfotosensibile\n
+Fabric? de materiale\nfotosensibile\n\n
 IND_01_01
-Parcare cu tax?\n
+Parcare cu tax?\n\n
 IND_01_03
-Cistern? carburan?i\n
+Cistern? carburan?i\n\n
 IND_01_07
-Transformator\n
+Transformator\n\n
 IND_01_08
-Fabrica de îngr???minte\nchimice\n
+Fabrica de îngr???minte\nchimice\n\n
 IND_01_09
-Rezervor de ap?\n
+Rezervor de ap?\n\n
 IND_01_10
-Fabric? de unelte\n
+Fabric? de unelte\n\n
 RES_00_01
-Cas? cu gr?din?\n
+Cas? cu gr?din?\n\n
 RES_00_02
-Cas? cu gr?din?\n
+Cas? cu gr?din?\n\n
 RES_00_03
-Cas? cu gr?din?\n
+Cas? cu gr?din?\n\n
 RES_00_04
-Case micu?e\n
+Case micu?e\n\n
 RES_00_06
-Mic duplex\n
+Mic duplex\n\n
 RES_00_07
-\Cas? mijlocie\n
+\Cas? mijlocie\n\n
 RES_00_09
-Hele?teu\n
+Hele?teu\n\n
 RES_00_11
-Intravilant cu gr?din?\n
+Intravilant cu gr?din?\n\n
 RES_00_13
-Duplex cu gr?din?\n
+Duplex cu gr?din?\n\n
 RES_00_16
-Vil? interbelic?\n
+Vil? interbelic?\n\n
 RES_01_01
-Cas? cu gr?din?\n
+Cas? cu gr?din?\n\n
 RES_01_02
-Cas? din lemn\n
+Cas? din lemn\n\n
 RES_01_07
-Vile luxoase\n
+Vile luxoase\n\n
 RES_01_10
-Cas? modern?\n
+Cas? modern?\n\n
 RUIN_0
-Ruine din evul mediu\n
+Ruine din evul mediu\n\n
 STADIUM2
-Stadion pt. rugbi\n
+Stadion pt. rugbi\n\n
 Tennis_Court
-Aren? tenis\n
+Aren? tenis\n\n
 Theatre
-Teatru\n
+Teatru\n\n
 Windmill
-Moar? de vânt\n
-#____________________________________cursor_____________________________________
-#____________________________________cursor_____________________________________
-Baum
-Copac
-Signal
-Semafor
+Moar? de vânt\n\n
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
+factory_2Raffinerie_details
+Rafin?rie
+factory_Autohaus_details
+Salon auto
+factory_Autohersteller_details
+Uzin? de automobile
+factory_Buchgrosshandel_details
+Depozit en-gros c?r?i
+factory_Cementmill_details
+Uzin? ciment
+factory_CHEMIST_details
+Fabric? de chimicale
+factory_Concretefactory_details
+Uzin? beton
+factory_Druckerei_details
+Tipografie
+factory_Erzbergwerk_details
+Min? minereu de fier
 factory_Kohlegrube_details
-<title>Descriere min? de c?rbune<\title><h1>Min? de c?rnune<\h1><p>C?rbunele este materialul prim care este folosit în fabricarea o?elului ?i sticlei.<\p>
+Min? c?rbune
+factory_Kohlekraftwerk_details
+Central? termic?
+factory_Materialswholesale_details
+Curte de fier
+factory_Moebelfabrik_details
+Fabric? de mobil?
+factory_Moebelhaus_details
+Centru de magazine
 factory_Nutzwald_details
-<title>Descriere pepinier?<\title><h1>Pepinier?<\h1><p>Se cresc puie?i care la maturitate sunt t?ia?i, dar dup? fiecare copac t?iat se planteaz? altu.<\p>
+Pepinier?
+factory_Oelbohrinsel_details
+Platform? petrol
+factory_Oelfeld_details
+Câmpie petrolifer?
+factory_Papierfabrik_details
+Fabric? de hârtie
+factory_Pharmaceutics_details
+Fabrica de produse farmaceutice
+factory_Raffinerie_details
+Rafin?rie
+factory_Saegewerk_details
+Gater
+factory_Sandquarry_details
+Min? nisip
+factory_Stahlwerk_details
+Uzin? metalurgic?
+factory_Stonequarry_details
+Min? piatr?
+factory_TANKE_details
+Benzin?rie
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -250,32 +288,16 @@ Stahl
 o?el
 Stone
 piatr?
-#_____________________________________menu______________________________________
-#_____________________________________menu______________________________________
-ShipTools
-Scule pt. nave
-SlopeTools
-Formeaz? relief
-#_____________________________________misc______________________________________
-#_____________________________________misc______________________________________
-Construction
-Construc?ii
-#_____________________________________smoke_____________________________________
-#_____________________________________smoke_____________________________________
-Diesel
-dizel
-Steam
-aburi
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Latschenkiefer
-Pin\n
+Pin\n\n
 Tree4
-Ulm\n
+Ulm\n\n
 Tree5
-Pin\n
+Pin\n\n
 Tree6
-Brad\n
+Brad\n\n
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103

@@ -2,18 +2,14 @@
 #                                                                              #
 #                Simutrans Scenario Specific Translation File                  #
 #                                Scenario: pak64                               #
-#                              Language: id Bahasa                             #
+#                            Language: id Indonesia                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 28.06 2008                           #
+#                            Date Created: 3.01 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                           Biccar Hasiholon - biccar                          #
-#                                    note:                                     #
-#                            Catour Chezz - chezz1st                           #
-#                                    note:                                     #
-#                          Markus Pristovsek - prissi                          #
-#                            note: Administrator 64                            #
+#                                    - prissi                                  #
+#              note: Administrator Base texts / pak64 / pak.japan              #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________

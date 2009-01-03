@@ -5,20 +5,14 @@
 #                            Language: nl Nederlands                           #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 28.06 2008                           #
+#                            Date Created: 3.01 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                             T. Jaegers - borg712                             #
-#                                    note:                                     #
-#                             Pavel Cizek - jatypc                             #
-#                                    note:                                     #
-#                          Markus Pristovsek - prissi                          #
-#                            note: Administrator 64                            #
-#                              puntmuts - puntmuts                             #
-#                                    note:                                     #
-#                        Kristian Koerselman - stormoog                        #
-#                            note: www.stormoog.com                            #
+#                                    - prissi                                  #
+#              note: Administrator Base texts / pak64 / pak.japan              #
 #                           Michael Olbricht - whoami                          #
+#                                    note:                                     #
+#                            Wim Vreeswijk - wipi35                            #
 #                                    note:                                     #
 #                                                                              #
 ################################################################################
@@ -81,17 +75,17 @@ Uw hoofdkantoor!
 3headquarter
 Uw hoofdkantoor!
 A1_ALTE_KIRCHE
-Oude kerk\n\nEen beroemde oude kerk.\nIedereen moet het een keer\ngezien hebben. \n\n\n
+Oude kerk\n\nEen beroemde oude kerk.\nIedereen moet het een keer\ngezien hebben. \n\n\n\n
 A2_SCHLOSS1
-Neuschwanstein\n\nHet kasteel van de krankzinnige\nkoning. Dit is echt het\nbekijken waard!\n\n
+Neuschwanstein\n\nHet kasteel van de krankzinnige\nkoning. Dit is echt het\nbekijken waard!\n\n\n
 A3_BURG1
-Oude ruines\n\nDeze ruines vertellen een oud\nverhaal. Leuk om eens langs te\ngaan.\n
+Oude ruines\n\nDeze ruines vertellen een oud\nverhaal. Leuk om eens langs te\ngaan.\n\n
 A4_SCHLOSS2
-Oud kasteel\n\nDit oude kasteel  is altijd een \nbezoekje waard.\n
+Oud kasteel\n\nDit oude kasteel  is altijd een \nbezoekje waard.\n\n
 A5_STONEHENGE
-Stonehenge\n\nEen oude stenenkring. Zeer\nmysterieus!\n
+Stonehenge\n\nEen oude stenenkring. Zeer\nmysterieus!\n\n
 A6_DOME
-St. Willem kathedraal\n\nDeze prachtige oude kathedraal\nis een ware attractie.\n
+St. Willem kathedraal\n\nDeze prachtige oude kathedraal\nis een ware attractie.\n\n
 AirDepot
 Hangar van 1900
 AirportShed1930
@@ -100,8 +94,6 @@ AirStop
 Pier\n
 AirTerminal477
 Luchthaventerminal
-anfangShipStop
-kaai eind (Z of O)
 Avila_Big_StationBlg
 Grote passagiershal
 Avila_Small_StationBlg
@@ -116,106 +108,104 @@ Bulk_StationBlg
 bulkgoederen station
 BusStop
 Bushalte\n
-CarDepot
-Depot voor straatvoertuigen
 Car_StationBlg
 auto opslag
+CarDepot
+Depot voor straatvoertuigen
 ChannelStop
 laad- en losplaats
 COM_00_01
-Kleine winkel\n
+Kleine winkel\n\n
 COM_00_02
-witte benzinepomp\n
+witte benzinepomp\n\n
 COM_00_03
-schaatshal\n
+schaatshal\n\n
 COM_00_05
-Drive-in bank (door Seth)\n
+Drive-in bank (door Seth)\n\n
 COM_00_06
-restaurant met dakterras\n
+restaurant met dakterras\n\n
 COM_00_08
-Winkels en apartementen\n
+Winkels en apartementen\n\n
 COM_00_10
-Kantoorgebouw (door Seth)\n
+Kantoorgebouw (door Seth)\n\n
 COM_00_11
-De winkel van Sinkel\n
+De winkel van Sinkel\n\n
 COM_00_12
-Kantoorpand\n
+Kantoorpand\n\n
 COM_00_14
-Illegale wietplantage in een\noude fabriekshal\n
+Illegale wietplantage in een\noude fabriekshal\n\n
 COM_00_18
-Modern kantoor pand\n
+Modern kantoor pand\n\n
 COM_00_22
-VN kantoor\n
+VN kantoor\n\n
 COM_01_01
-Vertekpunt voor luchtballonnen\n
+Vertekpunt voor luchtballonnen\n\n
 COM_01_09
-Bioscoop (door Seth)\n
+Bioscoop (door Seth)\n\n
 COM_01_10
-Oude bioscoop, vergane glorie.\nTegenwoordig kun je er\nterecht voor cultfilms die je\nin andere bioscopen niet meer\nkunt zien\n
+Oude bioscoop, vergane glorie.\nTegenwoordig kun je er\nterecht voor cultfilms die je\nin andere bioscopen niet meer\nkunt zien\n\n
 COM_01_17
-Kantoorgebouw met\nparkeergarage\n
+Kantoorgebouw met\nparkeergarage\n\n
 COM_01_18
-Hoofdkantoor van\nverzekeringsmaatschappij 'Wij\nkeren nooit uit'\n
+Hoofdkantoor van\nverzekeringsmaatschappij 'Wij\nkeren nooit uit'\n\n
 COM_01_20
-Ziekenhuis met heliplatform\n
+Ziekenhuis met heliplatform\n\n
 COM_01_21
-Groot kantoorgebouw met\nvele ramen. Als je goed kijkt\nzul je zien dat er constant\neen glazenwasser bezig is met\nhet schoonhouden ervan.\n
+Groot kantoorgebouw met\nvele ramen. Als je goed kijkt\nzul je zien dat er constant\neen glazenwasser bezig is met\nhet schoonhouden ervan.\n\n
 COM_01_22
-Hoofdkantoor van een\ninmiddels failliete dotcom\nbedrijf. Gelukkig was het\ngebouw beter bestand tegen\ngebakken lucht dan het\ndotcom bedrijf.\nTegenwoordig zit er een bank\nmet teveel geld.\n
+Hoofdkantoor van een\ninmiddels failliete dotcom\nbedrijf. Gelukkig was het\ngebouw beter bestand tegen\ngebakken lucht dan het\ndotcom bedrijf.\nTegenwoordig zit er een bank\nmet teveel geld.\n\n
 COM_02_02
-Parkeerterrein\n
+Parkeerterrein\n\n
 COM_02_13
-Warenhuis met parkeergarage\n
+Warenhuis met parkeergarage\n\n
 COM_02_16
-Kantoorgebouw uit de jaren\n70\n
+Kantoorgebouw uit de jaren\n70\n\n
 COM_02_17
-Modern kantoorgebouw\n
+Modern kantoorgebouw\n\n
 COM_02_19
-Groot kantoorgebouw met een\nbuitenlift. Vanuit de lift heb je\neen prachtig uitzicht op de\nstad.\n
+Groot kantoorgebouw met een\nbuitenlift. Vanuit de lift heb je\neen prachtig uitzicht op de\nstad.\n\n
 COM_03_15
-Zeven provinciën hotel\n
+Zeven provinciën hotel\n\n
 COM_04_15
-Oud kantoor met\nschotelantenne\n
+Oud kantoor met\nschotelantenne\n\n
 COM_10_01
-Park\n
+Park\n\n
 COM_10_02
-Landschapsarchitect MHz\nheeft dit prachtige park\nspeciaal voor de Simutrans\npopulatie ontworpen\n
+Landschapsarchitect MHz\nheeft dit prachtige park\nspeciaal voor de Simutrans\npopulatie ontworpen\n\n
 COM_10_05
-Historische arbeiderswoning\nmet grote kruidentuin\n
+Historische arbeiderswoning\nmet grote kruidentuin\n\n
 COM_10_07
-Historische boerderij\n
+Historische boerderij\n\n
 COM_10_10
-Oud huis met puntdak\n
+Oud huis met puntdak\n\n
 COM_10_11
-Middeleeuwse vakwerkwoning\n
+Middeleeuwse vakwerkwoning\n\n
 COM_10_12
-Paalwoningen\n
+Paalwoningen\n\n
 Control_StationBlg
 Traffic control
 DenkFlor
-Flor Wauters Monument\n\nDit monument is opgedragen aan\nFlor 'WF Ultd.' Wauters, de\nberoemde ingenieur die veele\n(vracht)auto's ontworpen\nheeft. Hij is ook bekend van\nde vele ontwerpen van fabrieken.\n
+Flor Wauters Monument\n\nDit monument is opgedragen aan\nFlor 'WF Ultd.' Wauters, de\nberoemde ingenieur die veele\n(vracht)auto's ontworpen\nheeft. Hij is ook bekend van\nde vele ontwerpen van fabrieken.\n\n
 DenkHajo
-Hajo Malthaner Monument\n\nStandbeeld voor \nHansjörg Malthaner, \nde schepper van \nSimutrans.\n
+Hajo Malthaner Monument\n\nStandbeeld voor \nHansjörg Malthaner, \nde schepper van \nSimutrans.\n\n
 DenkMHz
-Georg Heiduk Monument\n\nopgedragen aan Georg Heiduk ("MHz"),\nde ontwerper van veel\ngebouwen. De kunstenaar heeft\nzijn scherpe oog voor details\nwillen uitdrukken in dit\nontwerp.\n
+Georg Heiduk Monument\n\nopgedragen aan Georg Heiduk ("MHz"),\nde ontwerper van veel\ngebouwen. De kunstenaar heeft\nzijn scherpe oog voor details\nwillen uitdrukken in dit\nontwerp.\n\n
 DenkOwen
-Deze plek is opgedragen aan\nOwen Rudge de beroemde\ngeld expert en geluids\ntechnicus.\n
+Deze plek is opgedragen aan\nOwen Rudge de beroemde\ngeld expert en geluids\ntechnicus.\n\n
 DenkSeth
-Deze plek is opgedragen aan\nSeth C. Triggs de beroemde\narchitect die veel mooie\ngebouwen ontworpen heeft.\nHij is ook bekendn voor de\nvele studies om het\nverkeerssysteem te verbeteren.\n
+Deze plek is opgedragen aan\nSeth C. Triggs de beroemde\narchitect die veel mooie\ngebouwen ontworpen heeft.\nHij is ook bekendn voor de\nvele studies om het\nverkeerssysteem te verbeteren.\n\n
 DenkTomas
-Dit monument is opgedragen\naan Tomas Kubes de beroemde\narchitect die geweldige\npanden ontworpen heeft.\n
+Dit monument is opgedragen\naan Tomas Kubes de beroemde\narchitect die geweldige\npanden ontworpen heeft.\n\n
 DenkTrikky
-Monument\n\nDit monument is opgedragen aan\n'Trikky' Rick McGreal de\nberoemde architect die\ngeweldige panden ontworpen\nheeft.\n
+Monument\n\nDit monument is opgedragen aan\n'Trikky' Rick McGreal de\nberoemde architect die\ngeweldige panden ontworpen\nheeft.\n\n
 DenkVM
-Monument\n\nDit monument is opgedragen aan\nManfred 'VT Vienna'\nTomaschitz de beroemde\ningineur die veel treinen\nontworpen heeft.\n
+Monument\n\nDit monument is opgedragen aan\nManfred 'VT Vienna'\nTomaschitz de beroemde\ningineur die veel treinen\nontworpen heeft.\n\n
 DenkVolker
-Monument\n\nGebouwd voor Volker Meyer. Een\ninspiratie voor Simutrans, op\nvele gebieden.\n
+Monument\n\nGebouwd voor Volker Meyer. Een\ninspiratie voor Simutrans, op\nvele gebieden.\n\n
 Eingang
 Ingang
-endShipStop
-kaai eind (N of W)
 Feste
-Festivalterrein\n\nHier worden regelmatig grote\npopconcerten georganiseerd\nwaarbij het gras duidelijk te\nlijden heeft onder de grote\naantallen bezoekers.\n
+Festivalterrein\n\nHier worden regelmatig grote\npopconcerten georganiseerd\nwaarbij het gras duidelijk te\nlijden heeft onder de grote\naantallen bezoekers.\n\n
 Fluid_StationBlg
 Opslagtank voor vloeistoffen
 FreightTrainStop
@@ -229,63 +219,63 @@ Rechter helft van perron met overkapping
 Goods_StationBlg
 Pakhuis
 Gymnasium
-\nScholengemeenschap\n\n
+\nScholengemeenschap\n\n\n
 IND_00_01
-Warenhuis\n
+Warenhuis\n\n
 IND_00_02
-Opslag loodsen\n
+Opslag loodsen\n\n
 IND_00_03
-Olie depot\n
+Olie depot\n\n
 IND_00_04
-Plaatstaalfabriek (door Seth)\n
+Plaatstaalfabriek (door Seth)\n\n
 IND_00_05
-Watertoren (door Seth)\n
+Watertoren (door Seth)\n\n
 IND_00_06
-Fabriek\n
+Fabriek\n\n
 IND_00_09
-Cementmalerij (door Seth)\n
+Cementmalerij (door Seth)\n\n
 IND_00_10
-Kleine fabriek (door Seth)\n
+Kleine fabriek (door Seth)\n\n
 IND_00_12
-Machine fabriek (door O.S)\n
+Machine fabriek (door O.S)\n\n
 IND_00_14
-Glasfabriek\n
+Glasfabriek\n\n
 IND_00_16
-Smeerpijp\n
+Smeerpijp\n\n
 IND_00_17
-Industriële slachterij\n
+Industriële slachterij\n\n
 IND_00_18
-Brouwerij van inferieur bier\n
+Brouwerij van inferieur bier\n\n
 IND_01_01
-Parkeerplaats\n
+Parkeerplaats\n\n
 IND_01_03
-Tank voor de opslag van gas.\n
+Tank voor de opslag van gas.\n\n
 IND_01_04
-Werkplaats\n
+Werkplaats\n\n
 IND_01_06
-Leerbewerkingsbedrijf met als\nspecialiteit zadels voor\nhipische doeleinden.\n
+Leerbewerkingsbedrijf met als\nspecialiteit zadels voor\nhipische doeleinden.\n\n
 IND_01_07
-Transformatorhuisje\n
+Transformatorhuisje\n\n
 IND_01_08
-Kunstmestfabriek\n
+Kunstmestfabriek\n\n
 IND_01_09
-Vloeistoffen silo\n
+Vloeistoffen silo\n\n
 IND_01_10
-Gereedschaps fabriek (door\nSeth)\n
+Gereedschaps fabriek (door\nSeth)\n\n
 IND_01_11
-Kledingatelier\n
+Kledingatelier\n\n
 IND_01_12
-In deze fabriek worden\nautobanden gerecycled tot\nontbijtkoek\n
+In deze fabriek worden\nautobanden gerecycled tot\nontbijtkoek\n\n
 IND_01_13
-Zwarte fabriek\n\nDoor een ongeluk met een\nexploderende ketel met een\nzwarte smurrie is deze fabriek\nvoor altijd zwart.\n
+Zwarte fabriek\n\nDoor een ongeluk met een\nexploderende ketel met een\nzwarte smurrie is deze fabriek\nvoor altijd zwart.\n\n
 IND_01_15
-Strokartonfabriek\n
+Strokartonfabriek\n\n
 IND_02_01
-Grindwasserij\n
+Grindwasserij\n\n
 IND_02_02
-Steenfabriek\n
+Steenfabriek\n\n
 IND_02_06
-Machinefabriek\n
+Machinefabriek\n\n
 LargeShipStop
 Grote vrachtpier
 leftShipStop
@@ -293,13 +283,11 @@ Linker haven gedeelte
 LeuchtturmShipStop
 Pier met vuurtoren
 Lighthouse
-Vuurtoren\n
+Vuurtoren\n\n
 MainTerminal1930
 Hoofd terminal gebouw (1930)
 MHzSmallStation
 Klein stationsgebouw (door MHz)
-midleShipStop
-kaai
 ModernAirTerminal477
 Modern terminal gebouw
 MonorailDepot
@@ -309,9 +297,9 @@ Monorail fundament
 MonorailGround
 Monorail bodem
 OldTownhall
-voormalig stadhuis\n
+voormalig stadhuis\n\n
 Patricks_Rock
-Vulkaangebergte\n\n\nNa miljoenen jaren actief te\nzijn geweest is deze vulkaan\nal eeuwen in  rust en is een\ntoeristische attractie van de\neerste orde. Voor geologen\nen dagjesmensen een favoriete\nbestemming vanwege het\ntypische lava-landschap gevormd\ndoor de vele uitbarstingen in het\nverleden.\n
+Vulkaangebergte\n\n\nNa miljoenen jaren actief te\nzijn geweest is deze vulkaan\nal eeuwen in  rust en is een\ntoeristische attractie van de\neerste orde. Voor geologen\nen dagjesmensen een favoriete\nbestemming vanwege het\ntypische lava-landschap gevormd\ndoor de vele uitbarstingen in het\nverleden.\n\n
 PlainAirStop
 Vliegtuighalte
 PostOffice
@@ -327,121 +315,121 @@ Stationshal
 rampShipStop
 Aanlegsteiger met helling
 Raven_Kirche
-St. Meinrad kerk\n
-Residenz
-Residentie\n\nHier kun je door middel van\nmeditatie weer helemaal tot\njezelf komen.\n
+St. Meinrad kerk\n\n
 RES_00_01
-Klein huis met tuin\n
+Klein huis met tuin\n\n
 RES_00_02
-Klein huis met tuin\n
+Klein huis met tuin\n\n
 RES_00_03
-Klein huis met tuin\n
+Klein huis met tuin\n\n
 RES_00_04
-Klein huis (door Seth)\n
+Klein huis (door Seth)\n\n
 RES_00_06
-Een fontein (door Trikky)\n
+Een fontein (door Trikky)\n\n
 RES_00_07
-Huis (door Seth)\n
+Huis (door Seth)\n\n
 RES_00_08
-Huis met garage\n
+Huis met garage\n\n
 RES_00_09
-Parkje met vijver (door Trikky)\n\n\n
+Parkje met vijver (door Trikky)\n\n\n\n
 RES_00_10
-De indrukwekkende villa van\nMoistboy\n
+De indrukwekkende villa van\nMoistboy\n\n
 RES_00_11
-Villa met tuin\n
+Villa met tuin\n\n
 RES_00_12
-Modern huis (door Seth)\n
+Modern huis (door Seth)\n\n
 RES_00_13
-Twee onder een kap met tuin\n
+Twee onder een kap met tuin\n\n
 RES_00_16
-Oude villa\n
+Oude villa\n\n
 RES_00_17
-Oude appartementen\n
+Oude appartementen\n\n
 RES_00_18
-Huis met reclamebord\n
+Huis met reclamebord\n\n
 RES_00_19
-Moderne appartementen\n
+Moderne appartementen\n\n
 RES_00_21
-Appartementencomplex\n
+Appartementencomplex\n\n
 RES_00_23
-Torenflat\n
+Torenflat\n\n
 RES_01_01
-Modern prefab huis met grote\nzolderkamer\n
+Modern prefab huis met grote\nzolderkamer\n\n
 RES_01_02
-A-Frame huis  (door Seth)\n
+A-Frame huis  (door Seth)\n\n
 RES_01_05
-Groot vrijstaand huis\n
+Groot vrijstaand huis\n\n
 RES_01_07
-Ruime luxueuze appartementen\n(door Trikky)\n
+Ruime luxueuze appartementen\n(door Trikky)\n\n
 RES_01_08
-Middenklasse huis met tuin\n
+Middenklasse huis met tuin\n\n
 RES_01_10
-Moderne woning\n
+Moderne woning\n\n
 RES_01_12
-Apartementencomplex van\nbaksteen\n
+Apartementencomplex van\nbaksteen\n\n
 RES_01_15
-Grote gezinswoningen\n
+Grote gezinswoningen\n\n
 RES_01_16
-Vakwerkwoning\n
+Vakwerkwoning\n\n
 RES_01_18
-Appartementencomplex\n
+Appartementencomplex\n\n
 RES_01_21
-Kantoren\n
+Kantoren\n\n
 RES_01_22
-Groot kantorencomplex\n
+Groot kantorencomplex\n\n
 RES_01_23
-Torenflat\n
+Torenflat\n\n
 RES_02_16
-Luxe appartementen met een\npenthouse\n
+Luxe appartementen met een\npenthouse\n\n
 RES_02_20
-Appartementen met zwembad\nop het dak\n
+Appartementen met zwembad\nop het dak\n\n
 RES_10_01
-Vrijstaand huis met garage\n
+Vrijstaand huis met garage\n\n
 RES_10_02
-Huis met tuin\n
+Huis met tuin\n\n
 RES_10_03
-Huis met grote schuur\n
+Huis met grote schuur\n\n
 RES_10_04
-Ouderwets landhuis\n
+Ouderwets landhuis\n\n
 RES_10_05
-Vakwerkhuis\n
+Vakwerkhuis\n\n
 RES_10_08
-Vakwerkhuis\n
+Vakwerkhuis\n\n
 RES_10_10
-Oude huizen\n
+Oude huizen\n\n
 RES_10_11
-Historiche panden\n
+Historiche panden\n\n
 RES_10_12
-Historische panden\n
+Historische panden\n\n
 RES_10_13
-Historisch huis met werkplaats\n
+Historisch huis met werkplaats\n\n
 RES_10_14
-Huis met schuur\n
+Huis met schuur\n\n
 RES_10_15
-Huis met schuur\n
+Huis met schuur\n\n
 RES_11_01
-Vrijstaand huis met tuin\n
+Vrijstaand huis met tuin\n\n
 RES_11_02
-Oud vrijstaand huis\n
+Oud vrijstaand huis\n\n
 RES_11_03
-Historisch huis met tuin\n
+Historisch huis met tuin\n\n
 RES_11_04
-Oud huis\n
+Oud huis\n\n
 RES_11_08
-Vakwerkwoning\n
+Vakwerkwoning\n\n
 RES_11_12
-Pakhuis\n
+Pakhuis\n\n
 RES_11_13
-Huis met werkplaats\n
+Huis met werkplaats\n\n
 RES_11_14
-Appartementencomplex\n
+Appartementencomplex\n\n
 RES_12_15
-Stadswoning\n
+Stadswoning\n\n
+Residenz
+Residentie\n\nHier kun je door middel van\nmeditatie weer helemaal tot\njezelf komen.\n\n
 rightShipStop
 Kaai met pier
 RUIN_0
-Middelseeuwse ruïne\n\n Dit was eens een groot en\nmooi kasteel voordat het in\n1400 geheel afbrandde. Aan\nde fundamenten kun je nog\nongeveer zien hoe groot het\nkasteel geweest moet zijn.\n
+Middelseeuwse ruïne\n\n Dit was eens een groot en\nmooi kasteel voordat het in\n1400 geheel afbrandde. Aan\nde fundamenten kun je nog\nongeveer zien hoe groot het\nkasteel geweest moet zijn.\n\n
 SandStationMHz
 Zandstation
 ShipDepot
@@ -451,13 +439,13 @@ Scheepswerf (OW)\n
 ShipStop
 Haven\n
 STADIUM2
-Groot stadion\n\n Alle grote internationale\nevenementen vinden hier\nplaats.\n
+Groot stadion\n\n Alle grote internationale\nevenementen vinden hier\nplaats.\n\n
 Tennis_Court
-\nTennisbanen\n\n
+\nTennisbanen\n\n\n
 Terminal1930
 Luchthaventerminal
 Theatre
-\nTheater\n\n
+\nTheater\n\n\n
 Tower1930
 Verkeerstoren (1930)
 TowerMoistboy
@@ -477,7 +465,7 @@ Stationsgebouw in Victoriaanse stijl
 Vorplatz
 Stationsplein
 Windmill
-Windmolen\n
+Windmolen\n\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -496,56 +484,68 @@ Roadster
 Roadster
 yellow_car
 gele auto
-#____________________________________cursor_____________________________________
-#____________________________________cursor_____________________________________
-Baum
-boom
-City
-Stadhuis
-Down
-pijl naar beneden
-Marked
-Naambord plaatsen
-Mouse
-muis
-Query
-Vraag tool
-Remove
-Verwijderen
-Schedule
-Halte
-ShipDepotNS
-Scheepswerf (NZ)
-Signal
-Seinen
-Slope
-Helling
-Undocumented
-Plaats willekeurige objecten icoon
-Up
-Terrein verhogen icoon
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
 factory_2Raffinerie_details
-Raffinaderij details
+Raffinaderij (B.zine)
 factory_3Raffinerie_details
-Raffinaderij details
+Raffinaderij (B+KS)
 factory_Autohaus_details
-Autodealer details
+Auto dealer
 factory_Autohersteller_details
-Autofabriek details
+Autofabriek
 factory_Buchgrosshandel_details
-Boekhandel details
+Boekhandel
 factory_Cementmill_details
-Cementmolen details
+Cementfabriek
 factory_ChemicalPlant_details
-Chemische fabriek details
+Chemische fabriek
 factory_CHEMIST_details
-Drogisterij details
+Drogist (door Seth)
+factory_Concretefactory_details
+Betonfabriek
 factory_Druckerei_details
-Drukkerij details
+Drukkerij
 factory_Erzbergwerk_details
-IJzerertsmijn details
+IJzererts mijn
+factory_Kohlegrube_details
+Kolenmijn
+factory_Kohlekraftwerk_details
+Kolencentrale
+factory_Materialswholesale_details
+Doe-Het-Zelf centrum
+factory_Moebelfabrik_details
+Meubelfabriek
+factory_Moebelhaus_details
+Meubelzaak
+factory_Nutzwald_details
+Productiebos
+factory_Oelbohrinsel_details
+Booreiland
+factory_Oelfeld_details
+Olieveld
+factory_Oelkraftwerk_details
+En. centrale/olie
+factory_Oelpumpe_details
+Ja-knikker
+factory_Papierfabrik_details
+Papierfabriek
+factory_Pharmaceutics_details
+Pharmaceutische industrie
+factory_Raffinerie_details
+Raffinaderij
+factory_Saegewerk_details
+Houtzagerij
+factory_Sandquarry_details
+Zandgroeve
+factory_Stahlwerk_details
+Staalfabriek
+factory_Stonequarry_details
+Steengroeve
+factory_TANKE_details
+Benzinestation
+factory_Windkraftwerk_details
+Windturbine
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -600,8 +600,6 @@ Saegewerk
 Houtzagerij
 Sandquarry
 Zandgroeve
-scrap_yard
-Recyclecentrum
 Stahlwerk
 Staalfabriek
 Stonequarry
@@ -652,32 +650,6 @@ Stahl
 Staal
 Stone
 Steen
-waste
-afval
-#____________________________________ground_____________________________________
-#____________________________________ground_____________________________________
-Basement
-Fundament
-Slopes
-Hellingen
-Water
-water
-#_____________________________________menu______________________________________
-#_____________________________________menu______________________________________
-ShipTools
-Scheepvaart tools
-SlopeTools
-Terrein tools
-SpecialTools
-Speciale tools
-#_____________________________________misc______________________________________
-#_____________________________________misc______________________________________
-Construction
-Bouwterrein
-PowerSource
-Transformatiestation
-Sidewalk
-Stoep
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Cyclist
@@ -726,52 +698,34 @@ SignalsMonorail
 Seinen
 traffic_light
 Stoplicht
-#_____________________________________smoke_____________________________________
-#_____________________________________smoke_____________________________________
-Steam
-Stoom
-#____________________________________symbol_____________________________________
-#____________________________________symbol_____________________________________
-NewYear
-Nieuwjaar
-Seasons
-Jaargetijden
-Waren
-Goederen
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Pappel-1
-Populier\n
+Populier\n\n
 Pappel-2
-Populier\n
+Populier\n\n
 Shunter-tree2
-Loofboom (by Shunter)\n
+Loofboom (by Shunter)\n\n
 Tanne_1
-Den\n
+Den\n\n
 Tanne_2
-Den\n
+Den\n\n
 Tanne_3
-Den\n
+Den\n\n
 Tanne_4
-Denneboom\n
+Denneboom\n\n
 Tanne_5
-Denneboom\n
+Denneboom\n\n
 Tanne_6
-Naaldboom\n
+Naaldboom\n\n
 Tree4
-Lariks\n
+Lariks\n\n
 Tree5
-Fake Plastic Tree\n
+Fake Plastic Tree\n\n
 Tree6
-Spar\n
+Spar\n\n
 Willow
-Wilg\n
-#____________________________________tunnel_____________________________________
-#____________________________________tunnel_____________________________________
-RailTunnel
-Spoorwegtunnel
-RoadTunnel
-Autotunnel
+Wilg\n\n
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -865,19 +819,19 @@ oplegger voor ijzererts
 Erztransporter
 H-Trans MK2 IJzererts vrachtwagen
 Erzwagen
-Shorty ertswagen (30t)
+H-Trans ertswagen (30t)
 FastFerry
 O.Bang Passagiers Hovercraft
 Fokker_F27
 Fokker F27
 H-Trans-Pantheress
-Pantheress
+H-Trans Pantheress
 H-Trans-Tiger-Car
 H-Trans Tigress passagier wagon
 H-Trans-Tiger-Mail-Car
 H-Trans Tigress post wagon
 H-Trans-Tigress-II-Front
-Tigress-II
+H-Trans Tigress-II
 Heavy_ore_truck
 Zware vrachtwagen voor erts
 Holzanhaenger
@@ -1016,8 +970,6 @@ Tugboat
 Sleepboot
 VolvoFH12
 Volvo FH12 trekker
-waste wagon
-afvalwagon
 XMail
 X prototype mailwagon
 XTest

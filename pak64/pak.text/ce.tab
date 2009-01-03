@@ -5,15 +5,11 @@
 #                            Language: ce C-English                            #
 #                                Encoding: ASCII                               #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 23.06 2008                           #
+#                            Date Created: 3.01 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                             Jonas Czimek - joecz                             #
-#                                    note:                                     #
-#                          Markus Pristovsek - prissi                          #
-#                            note: Administrator 64                            #
-#                      Christopher R. Antila - topchrisher                     #
-#                            note: C-English Creator                           #
+#                                    - prissi                                  #
+#              note: Administrator Base texts / pak64 / pak.japan              #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -73,17 +69,17 @@ Your corporate Headquaters!
 3headquarter
 Your corporate Headquaters!
 A1_ALTE_KIRCHE
-Famous Church.  A famous\nold church with marvellous\npaintings. Everybody\nshould see this fantastic\nbuilding.\n
+Famous Church.  A famous\nold church with marvellous\npaintings. Everybody\nshould see this fantastic\nbuilding.\n\n
 A2_SCHLOSS1
-Neuschwanstein.  The\ncastle of the crazy king.\nThis is really worth seeing!\n
+Neuschwanstein.  The\ncastle of the crazy king.\nThis is really worth seeing!\n\n
 A3_BURG1
-Some Ruins.  Telling of\nbetter times, they're\nalways worth a journey.\n
+Some Ruins.  Telling of\nbetter times, they're\nalways worth a journey.\n\n
 A4_SCHLOSS2
-Old Castle.  Always worth\nseeing.\n
+Old Castle.  Always worth\nseeing.\n\n
 A5_STONEHENGE
-Stonehenge.  An ancient\nring of stones. Feel the\nmystery walking between\nthe monoliths.\n
+Stonehenge.  An ancient\nring of stones. Feel the\nmystery walking between\nthe monoliths.\n\n
 A6_DOME
-Old Cathedral.  The very\nheart of this city for nearly\none thousand years.\n
+Old Cathedral.  The very\nheart of this city for nearly\none thousand years.\n\n
 AirDepot
 Airplane Hangar
 AirportShed1930
@@ -92,8 +88,6 @@ AirStop
 Jetway\n
 AirTerminal477
 1970s-style Terminal Building
-anfangShipStop
-Middle Dock Section with Boxes
 Avila_Big_StationBlg
 Large Station Building
 Avila_Small_StationBlg
@@ -108,104 +102,102 @@ Bulk_StationBlg
 Coal Station
 BusStop
 Bus Stop\n
+Car_StationBlg
+Car Park
 CarDepot
 Garage for road vehicles.
 CarStop
 Truck Loading Bay\n
-Car_StationBlg
-Car Park
 ChannelStop
 Wharf
 COM_00_01
-Small Shop\n
+Small Shop\n\n
 COM_00_02
-Independent Gas Station\n\nAlthough this small,\nindependently-owned gas\nstation competes with\nyours, you shouldn't fear\nlosing business to it.  Most\ndrivers dislike the dirty\ncashier's desk.\n
+Independent Gas Station\n\nAlthough this small,\nindependently-owned gas\nstation competes with\nyours, you shouldn't fear\nlosing business to it.  Most\ndrivers dislike the dirty\ncashier's desk.\n\n
 COM_00_03
-Skating Arena\n
+Skating Arena\n\n
 COM_00_05
-Drive-through Bank\n
+Drive-through Bank\n\n
 COM_00_06
-Russian Store\n\nOwned by Russian immigrants to\nSimutransland, this store\nsells many comforts from\ntheir fatherland.\n
+Russian Store\n\nOwned by Russian immigrants to\nSimutransland, this store\nsells many comforts from\ntheir fatherland.\n\n
 COM_00_08
-Apartment block with some\nshops.\n
+Apartment block with some\nshops.\n\n
 COM_00_10
-Medium Office Block\n
+Medium Office Block\n\n
 COM_00_11
-Local Market\n\nThis store sells good fruits\nand vegetables, although\nthe bread sometimes gets\nstale.  A better bet is to\nwalk down the street a bit,\nto the Joe's Bakery.\n
+Local Market\n\nThis store sells good fruits\nand vegetables, although\nthe bread sometimes gets\nstale.  A better bet is to\nwalk down the street a bit,\nto the Joe's Bakery.\n\n
 COM_00_12
-Office Block\n
+Office Block\n\n
 COM_00_14
-This building looks quite\nconfusing.  It is in fact\nhome to the largest illegal\nmarijuana growing\noperation in the country. \nOr so I hear.\n
+This building looks quite\nconfusing.  It is in fact\nhome to the largest illegal\nmarijuana growing\noperation in the country. \nOr so I hear.\n\n
 COM_00_18
-Modern Office Block\n
+Modern Office Block\n\n
 COM_00_22
-United Nations\nHeadquarters\n
+United Nations\nHeadquarters\n\n
 COM_01_01
-This landing site for hot air\nballoons is frequented by\npoliticians, which explains\nthe lack of gas bottles.\n
+This landing site for hot air\nballoons is frequented by\npoliticians, which explains\nthe lack of gas bottles.\n\n
 COM_01_09
-Old Cinema\n
+Old Cinema\n\n
 COM_01_10
-This small, square building\nwas built in 1957 when the\ncity was in desparate need\nof office space.  The air\nconditioner was added\nyears later, along with the\ncoffee shop out front.\n
+This small, square building\nwas built in 1957 when the\ncity was in desparate need\nof office space.  The air\nconditioner was added\nyears later, along with the\ncoffee shop out front.\n\n
 COM_01_17
-Medium Office Block\n
+Medium Office Block\n\n
 COM_01_18
-Latova Systems Corporate\nHeadquarters\n
+Latova Systems Corporate\nHeadquarters\n\n
 COM_01_20
-Building with Helipad\n
+Building with Helipad\n\n
 COM_01_21
-Office Building with Lots of\nWindows\n
+Office Building with Lots of\nWindows\n\n
 COM_01_22
-Office Building\n\nThis office building was built\non top of another office\nbuilding.  Due to the\nrigorous schedule, the\nconstruction team didn't\nhave time to remove the old\nbuilding, and so they just\nbuilt this new one on top.\n
+Office Building\n\nThis office building was built\non top of another office\nbuilding.  Due to the\nrigorous schedule, the\nconstruction team didn't\nhave time to remove the old\nbuilding, and so they just\nbuilt this new one on top.\n\n
 COM_02_13
-Seafood Restaurant\n
+Seafood Restaurant\n\n
 COM_02_16
-Airline Headquarters\n
+Airline Headquarters\n\n
 COM_02_19
-Kancel??e\n
+Kancel??e\n\n
 COM_03_15
-"Six Provinces" Hotel\n
+"Six Provinces" Hotel\n\n
 COM_04_15
-This office building has\nbeen retrofitted many\ntimes, as you can see by\nthe sattelite dish on the\ntop.  You will also notice a\nglass portion of the roof,\nwhich covers the swimming\npool three floors beneath. \nThe swimming pool has a\nslide, which is intended to\ninspire the computer\nprogrammers within, but\nunfortunately their mood is\noften wrecked when people\ndecide to take off their pants\nand sit on the glass roof.\n
+This office building has\nbeen retrofitted many\ntimes, as you can see by\nthe sattelite dish on the\ntop.  You will also notice a\nglass portion of the roof,\nwhich covers the swimming\npool three floors beneath. \nThe swimming pool has a\nslide, which is intended to\ninspire the computer\nprogrammers within, but\nunfortunately their mood is\noften wrecked when people\ndecide to take off their pants\nand sit on the glass roof.\n\n
 COM_10_01
-A Beautiful City Park.\n
+A Beautiful City Park.\n\n
 COM_10_02
-Small Field\n
+Small Field\n\n
 COM_10_05
-Barnyard\n
+Barnyard\n\n
 COM_10_07
-Two Houses with a Nice\nPark\n
+Two Houses with a Nice\nPark\n\n
 COM_10_10
-Tall A-Frame House\n
+Tall A-Frame House\n\n
 COM_10_11
-Townhouse Block\n
+Townhouse Block\n\n
 COM_10_12
-Two Tall Houses\n
+Two Tall Houses\n\n
 Control_StationBlg
 Signal Control Tower
 DenkFlor
-Memorial:  This monument is\ndedicated to Flor 'WF Ultd.'\nWauters, the famous\nengineer who created so\nmany great road and rail\nvehicles. He is also\nwell-known for designing\nmany well-working factories.\n
+Memorial:  This monument is\ndedicated to Flor 'WF Ultd.'\nWauters, the famous\nengineer who created so\nmany great road and rail\nvehicles. He is also\nwell-known for designing\nmany well-working factories.\n\n
 DenkHajo
-Memorial:  This monument is\ndedicated to Hansj?rg\nMalthaner who created this\ngame in seven years.\nDemigods take longer for\nsuch tasks.\n
+Memorial:  This monument is\ndedicated to Hansj?rg\nMalthaner who created this\ngame in seven years.\nDemigods take longer for\nsuch tasks.\n\n
 DenkMHz
-Memorial:  This monument is\ndedicated to Georg Heiduk,\nthe master of rendered\nbuildings. It stands for his\nsharp eye for details.\n
+Memorial:  This monument is\ndedicated to Georg Heiduk,\nthe master of rendered\nbuildings. It stands for his\nsharp eye for details.\n\n
 DenkOwen
-Memorial:  This place is\ndedicated to Owen Rudge\nthe famous finance expert\nand sound technician.\n
+Memorial:  This place is\ndedicated to Owen Rudge\nthe famous finance expert\nand sound technician.\n\n
 DenkSeth
-Memorial:  This place is\ndedicated to Seth C. Triggs,\nthe famous architect who\ndesigned so many beautiful\ncity buildings. He is also\nwell-known for doing many\nstudies on how to improve\ntraffic systems.\n
+Memorial:  This place is\ndedicated to Seth C. Triggs,\nthe famous architect who\ndesigned so many beautiful\ncity buildings. He is also\nwell-known for doing many\nstudies on how to improve\ntraffic systems.\n\n
 DenkTomas
-Memorial:  This monument is\ndedicated to Tomas Kubes\nwho helped to improve\nSimutrans in many aspects\nwith advice and hard work.\n
+Memorial:  This monument is\ndedicated to Tomas Kubes\nwho helped to improve\nSimutrans in many aspects\nwith advice and hard work.\n\n
 DenkTrikky
-Memorial:  This monument is\ndedicated to 'Trikky' Rick\nMcGreal, the famous\narchitect who designed\nmany impressive buildings.\n
+Memorial:  This monument is\ndedicated to 'Trikky' Rick\nMcGreal, the famous\narchitect who designed\nmany impressive buildings.\n\n
 DenkVM
-Memorial:  This monument is\ndedicated to Manfred 'VT\nVienna' Tomaschitz, the\nfamous engineer who\ndesigned many superior rail\nvehicles.\n
+Memorial:  This monument is\ndedicated to Manfred 'VT\nVienna' Tomaschitz, the\nfamous engineer who\ndesigned many superior rail\nvehicles.\n\n
 DenkVolker
-Memorial:  This Stupa was\nbuilt by Volker Meyer who\nimproved Simutrans in many\nareas.\n
+Memorial:  This Stupa was\nbuilt by Volker Meyer who\nimproved Simutrans in many\nareas.\n\n
 Eingang
 Promenade Entrance
-endShipStop
-Right Dock Section
 Feste
-Feste Haus\n\nThis building has been the\nplace of many social\ngatherings over the\ncenturies.  The grass is\nbrown because of what the\ndrunk guests do when the\nparty is over.\n
+Feste Haus\n\nThis building has been the\nplace of many social\ngatherings over the\ncenturies.  The grass is\nbrown because of what the\ndrunk guests do when the\nparty is over.\n\n
 Fluid_StationBlg
 Oil Storage Tank
 FreightTrainStop
@@ -219,43 +211,43 @@ Large Station Hall (Right)
 Goods_StationBlg
 Large Warehouse
 Gymnasium
-High School\n
+High School\n\n
 IND_00_01
-Warehouse\n
+Warehouse\n\n
 IND_00_02
-Factory Tower with Clean\nRooms\n
+Factory Tower with Clean\nRooms\n\n
 IND_00_03
-Oil\\Gasoline Depot\n
+Oil\\Gasoline Depot\n\n
 IND_00_04
-Sheet-metal Fabricator\n
+Sheet-metal Fabricator\n\n
 IND_00_05
-Water Cistern\n
+Water Cistern\n\n
 IND_00_06
-Factory Building\n
+Factory Building\n\n
 IND_00_09
-Building That Is Tall and\nLooks like a Cow\n
+Building That Is Tall and\nLooks like a Cow\n\n
 IND_00_10
-Small Factory\n
+Small Factory\n\n
 IND_00_12
-Old Machine Factory\n
+Old Machine Factory\n\n
 IND_00_14
-C-Shaped Factory\n
+C-Shaped Factory\n\n
 IND_00_16
-Processing Plant\n
+Processing Plant\n\n
 IND_00_17
-Slaughterhouse\n
+Slaughterhouse\n\n
 IND_00_18
-Police Officer Factory\n
+Police Officer Factory\n\n
 IND_01_01
-Parking Lot\n
+Parking Lot\n\n
 IND_01_03
-Large Gasoline Storage\nTank\n
+Large Gasoline Storage\nTank\n\n
 IND_01_08
-Fertilizer Factory\n
+Fertilizer Factory\n\n
 IND_01_09
-Fluids Depot\n
+Fluids Depot\n\n
 IND_01_10
-Tools Factory\n
+Tools Factory\n\n
 LargeShipStop
 Large Dock with Crane
 leftShipStop
@@ -266,8 +258,6 @@ MainTerminal1930
 1930s-style Main Terminal Building
 MHzSmallStation
 Small Station Building
-midleShipStop
-Middle Dock Section
 ModernAirTerminal477
 Modern Terminal Building
 MonorailDepot
@@ -277,9 +267,9 @@ Foundation Column for Monorail
 MonorailGround
 Monorail Building Support
 OldTownhall
-Town Meeting Centre\n
+Town Meeting Centre\n\n
 Patricks_Rock
-A geologic formation that\ninspires many artists.\n
+A geologic formation that\ninspires many artists.\n\n
 PlainAirStop
 Apron
 PostOffice
@@ -295,59 +285,59 @@ Small Station Hall
 rampShipStop
 Ramp for Docks
 Raven_Kirche
-Church of St.Meinrad. \nAccording to legend, the\nhermit St. Meinrad was\naccompanied by two\nravens.  When he was\nmurdered, the two ravens\nwere convicted. Today, the\nplace of his hut  is the\nEinsiedeln Monastery.\n
-Residenz
-Large Residence\n\nThis building is used to\nhouse students of the\nuniversity, if they cannot\nafford to live on their own.\n
+Church of St.Meinrad. \nAccording to legend, the\nhermit St. Meinrad was\naccompanied by two\nravens.  When he was\nmurdered, the two ravens\nwere convicted. Today, the\nplace of his hut  is the\nEinsiedeln Monastery.\n\n
 RES_00_01
-Small House with a Garden\n
+Small House with a Garden\n\n
 RES_00_02
-Small House with a Garden\n
+Small House with a Garden\n\n
 RES_00_03
-Small House with a Garden\n
+Small House with a Garden\n\n
 RES_00_04
-Small House\n
+Small House\n\n
 RES_00_06
-A Little Fountain. Even if it\nis not as great as the one\nin Geneva, it delights\npeople walking around,\nespecially in the\nsummertime.\n
+A Little Fountain. Even if it\nis not as great as the one\nin Geneva, it delights\npeople walking around,\nespecially in the\nsummertime.\n\n
 RES_00_07
-Medium House\n
+Medium House\n\n
 RES_00_08
-Medium House\n
+Medium House\n\n
 RES_00_09
-A Small Park with a Duck\nPond\n
+A Small Park with a Duck\nPond\n\n
 RES_00_10
-The Impressive Moistboy\nMansion.\n
+The Impressive Moistboy\nMansion.\n\n
 RES_00_11
-Large House with a Garden\n
+Large House with a Garden\n\n
 RES_00_12
-Factory-style House. \nResembling a factory, this\nhouse is a secret base for\nthe local mob.\n
+Factory-style House. \nResembling a factory, this\nhouse is a secret base for\nthe local mob.\n\n
 RES_00_13
-Double House with a Garden\n
+Double House with a Garden\n\n
 RES_00_16
-Old Villa\n
+Old Villa\n\n
 RES_00_19
-Modern Apartments\n
+Modern Apartments\n\n
 RES_01_01
-Modern Pre-fabricated\nhouse with a large room for\nthe kids in the attic.\n
+Modern Pre-fabricated\nhouse with a large room for\nthe kids in the attic.\n\n
 RES_01_02
-A-Frame House\n
+A-Frame House\n\n
 RES_01_05
-Large Single-family  Home\nwith a Tree.  This is for\nretired musicians.\n
+Large Single-family  Home\nwith a Tree.  This is for\nretired musicians.\n\n
 RES_01_07
-Large Luxury House\n
+Large Luxury House\n\n
 RES_01_08
-Medium House with a\nGarden\n
+Medium House with a\nGarden\n\n
 RES_01_10
-Modern Gouse\n
+Modern Gouse\n\n
 RES_01_12
-Brick Apartment Building\n
+Brick Apartment Building\n\n
 RES_02_16
-Luxury Apartments with a\nPenthouse.\n
+Luxury Apartments with a\nPenthouse.\n\n
 RES_10_04
-Old-style Country Home.\n
+Old-style Country Home.\n\n
+Residenz
+Large Residence\n\nThis building is used to\nhouse students of the\nuniversity, if they cannot\nafford to live on their own.\n\n
 rightShipStop
 Left Dock Section (Jetty)
 RUIN_0
-Some very old ruins from\nthe age before now.\n
+Some very old ruins from\nthe age before now.\n\n
 SandStationMHz
 Station without Platform
 ShipDepot
@@ -357,13 +347,13 @@ Shipyard\n
 ShipStop
 Small Dock\n
 STADIUM2
-Big Stadium.  All of the\ninternational events are\nhosted here.\n
+Big Stadium.  All of the\ninternational events are\nhosted here.\n\n
 Tennis_Court
-Tennis Court\n
+Tennis Court\n\n
 Terminal1930
 1930s-style Terminal Building
 Theatre
-Theatre\n
+Theatre\n\n
 Tower1930
 1930s-style Control Tower
 TowerMoistboy
@@ -383,7 +373,7 @@ Victorian-style Station Building
 Vorplatz
 Station Promenade
 Windmill
-Historic Windmill\n
+Historic Windmill\n\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -402,44 +392,66 @@ Roadster
 Convertible
 yellow_car
 Yellow Family Sedan
-#____________________________________cursor_____________________________________
-#____________________________________cursor_____________________________________
-Baum
-Plant a Tree
-City
-City
-Down
-Move Land Down
-Marked
-Place Sign
-Mouse
-Arrow
-Query
-Query Tool Icon
-Remove
-Deletion Tool Icon
-Schedule
-Stop Placement Icon
-ShipDepotNS
-Shipyard
-Signal
-Signals Cursor
-Slope
-Wire Frame Box
-Undocumented
-Place Random Things Icon
-Up
-Raise Land Icon
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
+factory_2Raffinerie_details
+Gasoline Refinery
+factory_3Raffinerie_details
+Refinery
+factory_Autohaus_details
+Car Dealer
+factory_Autohersteller_details
+Car Factory
+factory_Buchgrosshandel_details
+Book Wholesaler
+factory_Cementmill_details
+Cement Mill
+factory_ChemicalPlant_details
+Chemical Plant
+factory_CHEMIST_details
+Chemist
+factory_Concretefactory_details
+Concrete Factory
+factory_Druckerei_details
+Printing Works
+factory_Erzbergwerk_details
+Iron Ore Mine
 factory_Kohlegrube_details
-<title>About Coalmines</title><h1>Coalmines</h1><p>In coal mines the miners dig for coal. This is hard labour, but the coal is needed for such important industreis like iron foundries and power plants.<p>
+Coal Mine
 factory_Kohlekraftwerk_details
-factory_Kohlegrube_details <title>About Coalmines</title><h1>Coalmines</h1><p>In coal mines the miners dig for coal. This is hard labour, but the coal is needed for such important industreis like iron foundries and power plants.<p>
+Coal Power Station
+factory_Materialswholesale_details
+Construction Goods Store
+factory_Moebelfabrik_details
+Furniture Factory
+factory_Moebelhaus_details
+Home Market
 factory_Nutzwald_details
-<title>About timber plantations</title><h1>Timber plantations</h1><p>In the woods grows the most important renewable material and energy source, which is appropriated by forestry and transformed to high-quality brands by wood and paper industry.</p>
+Timber Plantation
+factory_Oelbohrinsel_details
+Oil Rig
 factory_Oelfeld_details
-The oil business has some of the better financial rewards in Simutrans, as in real life.  Everything has to start from somewhere, and in Simutrans it starts from these oil fields, as well as from oil rigs that may be in your lakes and oceans.\n\nFull bananas ahead!
+Oil Field
+factory_Oelkraftwerk_details
+Oil Power Station
+factory_Papierfabrik_details
+Paper Mill
+factory_Pharmaceutics_details
+Drug Store
+factory_Raffinerie_details
+Plastic Refinery
+factory_Saegewerk_details
+Sawmill
+factory_Sandquarry_details
+Sand Quarry
+factory_Stahlwerk_details
+Iron Foundry
+factory_Stonequarry_details
+Stone Quarry
+factory_TANKE_details
+Gas Station
+factory_Windkraftwerk_details
+Windmill Power Station
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -464,8 +476,6 @@ Druckerei
 Printing Works
 Erzbergwerk
 Iron Ore Mine
-Incinerator
-Incinerator
 Kohlegrube
 Coal Mine
 Kohlekraftwerk
@@ -494,8 +504,6 @@ Saegewerk
 Sawmill
 Sandquarry
 Sand Quarry
-scrap_yard
-Junk Yard
 Stahlwerk
 Iron Foundry
 Stonequarry
@@ -546,44 +554,6 @@ Stahl
 Steel
 Stone
 Stone
-waste
-Garbage
-#____________________________________ground_____________________________________
-#____________________________________ground_____________________________________
-Basement
-Brick Retaining Wall
-Outside
-Out-of-Bounds
-Slopes
-Bedrock
-Water
-Sea
-#_____________________________________menu______________________________________
-#_____________________________________menu______________________________________
-EditTools
-Edit Tools
-ListTools
-List Tools
-MainMenu
-Main Menu
-ShipTools
-Ship Tools
-SlopeTools
-Slope Tools
-SpecialTools
-Special Tools
-WindowSkin
-Buttons
-#_____________________________________misc______________________________________
-#_____________________________________misc______________________________________
-Construction
-Construction Site
-PowerDest
-Transformer Station
-PowerSource
-Transformer Station
-Sidewalk
-Sidewalk
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Couple
@@ -610,10 +580,10 @@ CATEGORY_02
 bulk goods
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
-ChooseSignals
-Track Reservation Signals
 choose_point
 Automated Loading Bay Selection Sign
+ChooseSignals
+Track Reservation Signals
 Minimum80
 "Minimum Speed 80 km/h" Sign.
 NoEntry
@@ -624,56 +594,16 @@ Signals
 Rail Signal
 traffic_light
 Traffic Light
-#_____________________________________smoke_____________________________________
-#_____________________________________smoke_____________________________________
-Diesel
-Diesel Smoke
-Industry_Fire
-Industry Fire
-Industry_Smoke
-Industry Smoke
-Steam
-Steam
-#____________________________________symbol_____________________________________
-#____________________________________symbol_____________________________________
-Builder
-Bulldozer
-Electricity
-Electricity Symbol
-InTown
-Town Icon
-Logo
-"Simutrans" Logo Train
-Message
-Error Message Icon
-MessageOptions
-Message Centre Icons
-MonorailStop
-Monorail Station Icon
-NewWorld
-New Map Creation Icon
-NewYear
-Fireworks for Celebration of the New Year
-Seasons
-Icon for the Season
-Waren
-Goods Station Icon
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Latschenkiefer
-Mountain Pine\n
+Mountain Pine\n\n
 Tree4
-Bark Tree\n
+Bark Tree\n\n
 Tree5
-Fake Plastic Tree\n
+Fake Plastic Tree\n\n
 Tree6
-Fir\n
-#____________________________________tunnel_____________________________________
-#____________________________________tunnel_____________________________________
-RailTunnel
-Railroad Tunnel
-RoadTunnel
-Road Tunnel
+Fir\n\n
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -804,16 +734,10 @@ Concorde
 Aerospatiale Concorde
 DC-3
 Douglas DC-3
-Deponielaster
-Colin Truck 155 (Garbage)
-Deponielaster2
-Ikarus Model I (Garbage)
 E44
 Kirayami Electric Locomotive II
 Eb3-5
 Autocar Kestrel
-ED17
-Kirayami Electric Locomotive
 Ed2x2
 Autocar Saker
 EinheitsTender
@@ -834,8 +758,6 @@ Flachwagen
 Rama Box Car 12
 Fokker_F27
 Fokker F-27 Friendship
-GarbageTruck
-Kirayami Garbage Truck
 Guppy
 Aero Spacelines 377SGT Super Guppy
 H-Trans-Pantheress
@@ -896,12 +818,12 @@ Ju52
 Junkers Ju-52/3m
 JumboJet
 Boeing 747-400
+kkStB_tender
+MJHN "Dampf" Tender
 kkStB110
 MJHN "Chyuki"
 kkStB91
 MJHN "Dampf"
-kkStB_tender
-MJHN "Dampf" Tender
 Kohleanhaenger
 Kirayami Coal Trailer
 Kohletransporter
@@ -928,8 +850,6 @@ Moebelschiff
 Boxes Boat
 Moebelwagen
 Rama Box Car 6
-Muellschiff
-Garbage Boat
 NeuOelwagen
 Rama Oil Car 22
 Oelanhaenger
@@ -940,10 +860,10 @@ Oilbarge
 Oil Barge
 Oiltrailer
 Rama 21 (Oil)
-OldOil
-Kahan Oil Car
 old_open_car
 Autocar Open Car
+OldOil
+Kahan Oil Car
 Papieranhaenger
 Kirayami Paper Trailer
 Papiertransporter
@@ -1026,8 +946,6 @@ Tugboat
 Tugboat
 VolvoFH12
 Ikarus Model F
-waste wagon
-Kahan Garbage Car
 XMail
 Kirayami Fuel Cell Prototype (Mail)
 XTest

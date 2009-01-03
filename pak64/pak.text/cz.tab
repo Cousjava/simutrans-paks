@@ -5,37 +5,15 @@
 #                             Language: cz Cestina                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 28.06 2008                           #
+#                            Date Created: 3.01 2009                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                   - hernajs                                  #
 #                                    note:                                     #
-#                        Martinec Jakub - jakub.martinec                       #
+#                              Tomá¹ Kube¹ - napik                             #
 #                                    note:                                     #
-#                             Jan Lièka - jan.licka                            #
-#                            note: DHL Exel Company                            #
-#                             Jan Mynar - JanMynar                             #
-#                                    note:                                     #
-#                             Pavel Cizek - jatypc                             #
-#                                    note:                                     #
-#                             Jan Poláèek - Jerome                             #
-#                           note: AKA Jerome Heretic                           #
-#                             Jiøí Voseèek - kacer                             #
-#                                    note:                                     #
-#                            Petr Krejci - krejci.p                            #
-#                                    note:                                     #
-#                            Ondrej Machulda - Kronn                           #
-#                 note: Ondra's alter-ego for testing purposes                 #
-#                            Milan Gvo¾dík - nalim27                           #
-#                                    note:                                     #
-#                              Tomá¹ Kube¹ - Napik                             #
-#           note: 128x128 dev. coordinator, SimuTranslator developer           #
-#                            Ondøej Machulda - Ondra                           #
-#                                    note:                                     #
-#                          Markus Pristovsek - prissi                          #
-#                            note: Administrator 64                            #
-#                                   - pspilka                                  #
-#                                    note:                                     #
+#                                    - prissi                                  #
+#              note: Administrator Base texts / pak64 / pak.japan              #
 #                         Tomá¹ Vrbický - vrbicky_tomas                        #
 #                     note: Don´thurry up! Death is faster.                    #
 #                            Vladimír Slávik - vsys                            #
@@ -101,17 +79,17 @@ Sídlo va¹í spoleènosti (2. úroveò)
 3headquarter
 Sídlo va¹í spoleènosti (3. úroveò)
 A1_ALTE_KIRCHE
-Slavný kostel\n\nSlavný starý kostel. Tato\nfantastická budova láká\nspoustu turistù.\n
+Slavný kostel\n\nSlavný starý kostel. Tato\nfantastická budova láká\nspoustu turistù.\n\n
 A2_SCHLOSS1
-Neuschwanstein\n\nKostel 'Bláznivého krále'.\nOpravdu velmi cenìná\npodívaná!\n
+Neuschwanstein\n\nKostel 'Bláznivého krále'.\nOpravdu velmi cenìná\npodívaná!\n\n
 A3_BURG1
-Zøícenina hradu\n\nPro turisty je také velmi\nzajímavá tajemná historie\nhradu.\n
+Zøícenina hradu\n\nPro turisty je také velmi\nzajímavá tajemná historie\nhradu.\n\n
 A4_SCHLOSS2
-Starý zámek\n\nTento starý zámek je hojnì\nnav¹tìvován turisty.\n
+Starý zámek\n\nTento starý zámek je hojnì\nnav¹tìvován turisty.\n\n
 A5_STONEHENGE
-Stonehenge\n\nTato megalitická stavba\nvzniklá v pozdní dobì\nkamenné je dodnes velkou\nzáhadou.\n
+Stonehenge\n\nTato megalitická stavba\nvzniklá v pozdní dobì\nkamenné je dodnes velkou\nzáhadou.\n\n
 A6_DOME
-Katedrála\n\nTato obrovská impozantní\nkatedrála patøí ke svìtovým\nunikátùm. Zajisté nejvìt¹í\nturistická atrakce v ¹irém\nokolí.\n
+Katedrála\n\nTato obrovská impozantní\nkatedrála patøí ke svìtovým\nunikátùm. Zajisté nejvìt¹í\nturistická atrakce v ¹irém\nokolí.\n\n
 AirDepot
 Hangár (1900)
 AirportShed1930
@@ -120,8 +98,6 @@ AirStop
 výstupní schùdky\n
 AirTerminal477
 Leti¹tní terminál (1950)
-anfangShipStop
-Pøístavi¹tì
 Avila_Big_StationBlg
 Velká nádra¾ní budova
 Avila_Small_StationBlg
@@ -136,82 +112,82 @@ Bulk_StationBlg
 Sklady sypkého zbo¾í
 BusStop
 Postavit\nautobusovou/tramvajovou\nzastávku\n
+Car_StationBlg
+Pøekladi¹tì automobilù
 CarDepot
 Depo pro silnièní vozidla
 CarStop
 Postavit zastávku pro\nnákladní auta\n
-Car_StationBlg
-Pøekladi¹tì automobilù
 ChannelStop
 Molo na vodním kanále
 COM_00_01
-Samoobsluha\n
+Samoobsluha\n\n
 COM_00_02
-Nezávislá benzínová stanice\n\nJe nezávislá na na\ntransportních korporacích\njako ta tvoje, ale není\npotøeba ji hned bourat.\nNevezme ¾ádné tvé\nzákazníky\n
+Nezávislá benzínová stanice\n\nJe nezávislá na na\ntransportních korporacích\njako ta tvoje, ale není\npotøeba ji hned bourat.\nNevezme ¾ádné tvé\nzákazníky\n\n
 COM_00_03
-Opravna aut\n
+Opravna aut\n\n
 COM_00_05
-Banka\n
+Banka\n\n
 COM_00_06
-Kavárna\n
+Kavárna\n\n
 COM_00_08
-Èin¾ovní dùm s obchody v\npøízemí\n
+Èin¾ovní dùm s obchody v\npøízemí\n\n
 COM_00_10
-Kanceláøský vìzák\n
+Kanceláøský vìzák\n\n
 COM_00_12
-Kaceláøská budova\n
+Kaceláøská budova\n\n
 COM_00_14
-Moderní kanceláøská\nbudova s prosklenými\nschodi¹ti\n
+Moderní kanceláøská\nbudova s prosklenými\nschodi¹ti\n\n
 COM_00_18
-Moderní vì¾ák s\nkanceláøemi\n
+Moderní vì¾ák s\nkanceláøemi\n\n
 COM_00_22
-Budova OSN, pro somálskou\ndelegaci\n
+Budova OSN, pro somálskou\ndelegaci\n\n
 COM_01_01
-Odtud mù¾ete vyrazit na\nnezapomenutelný\nvyhlídkový let\nhorkovzdu¹ným balónem!\n
+Odtud mù¾ete vyrazit na\nnezapomenutelný\nvyhlídkový let\nhorkovzdu¹ným balónem!\n\n
 COM_01_09
-Kino\n
+Kino\n\n
 COM_01_17
-Kanceláøská budova.\n
+Kanceláøská budova.\n\n
 COM_01_18
-Vý¹ková kanceláøská\nbudova\n
+Vý¹ková kanceláøská\nbudova\n\n
 COM_01_20
-Kanceláøská budova s\nheliportem pro pana\ngenerálního\n
+Kanceláøská budova s\nheliportem pro pana\ngenerálního\n\n
 COM_01_22
-Kanceláøská budova\n
+Kanceláøská budova\n\n
 COM_02_02
-parkovi¹tì\n
+parkovi¹tì\n\n
 COM_02_13
-Kino Mír\n
+Kino Mír\n\n
 COM_02_16
-Kanceláøe, s minimálním\nmno¾stvím oken.\n
+Kanceláøe, s minimálním\nmno¾stvím oken.\n\n
 COM_02_17
-Kanceláøe s masivní\nventilací. \n
+Kanceláøe s masivní\nventilací. \n\n
 COM_03_15
-Dùm kultury\n
+Dùm kultury\n\n
 COM_10_01
-nádhera, ¾e?\n
+nádhera, ¾e?\n\n
 Control_StationBlg
 ®eleznièní hradlo
 DenkFlor
-Tento pomník je vìnován\nFlorovi 'WF Ultd.'\nWautersovi, slavnému\nin¾enýrovi, který vytvoøil\nmno¾ství skvìlých\nsilnièních a ¾eleznièních\nvozidel. Je také dobøe známý\nza návrhy mnoha skvìle\nfungujících továren.\n
+Tento pomník je vìnován\nFlorovi 'WF Ultd.'\nWautersovi, slavnému\nin¾enýrovi, který vytvoøil\nmno¾ství skvìlých\nsilnièních a ¾eleznièních\nvozidel. Je také dobøe známý\nza návrhy mnoha skvìle\nfungujících továren.\n\n
 DenkHajo
-Tento pomník je vìnován\nHansjörgu Mathanerovi,\nkterý za 7 let vytvoøil tuto\nhru. Opravdový polobùh.\n
+Tento pomník je vìnován\nHansjörgu Mathanerovi,\nkterý za 7 let vytvoøil tuto\nhru. Opravdový polobùh.\n\n
 DenkMHz
-Tento pomník je vìnován\nGeorgu Heidukovi, mistrovi\narchitektury.\n
+Tento pomník je vìnován\nGeorgu Heidukovi, mistrovi\narchitektury.\n\n
 DenkOwen
-Toto místo je vìnováno\nOwenovi Rudgeovi,\nslavnému finanènímu\nexpertovi a zvukovému\ntechnikovi.\n
+Toto místo je vìnováno\nOwenovi Rudgeovi,\nslavnému finanènímu\nexpertovi a zvukovému\ntechnikovi.\n\n
 DenkSeth
-Tento pomník je vìnován\nSethovi C. Triggsovi,\nslavnému architektovi,\nkterý navrhl mnoho\npøekrásných domu. Je také\ndobøe známý za vytvoøení\nmnoha studií, jak zlep¹it\ndopravní systémy.\n
+Tento pomník je vìnován\nSethovi C. Triggsovi,\nslavnému architektovi,\nkterý navrhl mnoho\npøekrásných domu. Je také\ndobøe známý za vytvoøení\nmnoha studií, jak zlep¹it\ndopravní systémy.\n\n
 DenkTomas
-Tento pomník je vìnován\nTomá¹i Kube¹ovi, který\npomohl zdokonalit\nSimutrans v mnoha, mnoha\nsmìrech, a to radami a\ntvrdou prací.\n
+Tento pomník je vìnován\nTomá¹i Kube¹ovi, který\npomohl zdokonalit\nSimutrans v mnoha, mnoha\nsmìrech, a to radami a\ntvrdou prací.\n\n
 DenkTrikky
-Tento pomník je vìnován\n'Trikkymu' Rick McGrealovi,\nslavnému architektovi který\nnavrhl spoustu pùsobivých\nbudov.\n
+Tento pomník je vìnován\n'Trikkymu' Rick McGrealovi,\nslavnému architektovi který\nnavrhl spoustu pùsobivých\nbudov.\n\n
 DenkVM
-Tento pomník je vìnován\nManfredu 'VT Vienna'\nTomaschitzovi, slavnému\nin¾enýrovi, který navrhl\nspoustu kvalitních\n¾eleznièních vozidel.\n
+Tento pomník je vìnován\nManfredu 'VT Vienna'\nTomaschitzovi, slavnému\nin¾enýrovi, který navrhl\nspoustu kvalitních\n¾eleznièních vozidel.\n\n
 DenkVolker
-Postaveno Volkerem\nMeyerem, který zdokonalil\nSimutrans v mnoha, mnoha\noblastech.\n
+Postaveno Volkerem\nMeyerem, který zdokonalil\nSimutrans v mnoha, mnoha\noblastech.\n\n
 Feste
-Pevnost\n\nTato témìø nedobytná pevnost\nbyla zalo¾ena zaèátkem 15.\nstoletí.\n
+Pevnost\n\nTato témìø nedobytná pevnost\nbyla zalo¾ena zaèátkem 15.\nstoletí.\n\n
 FreightTrainStop
 Postavit nakládací stanici s betonovou podlahou
 GCG1TrainStop
@@ -219,67 +195,67 @@ Postavit stanici s pùloblukovou halou 1
 GCG2TrainStop
 Postavit stanici s pùloblukovou halou 2
 Gymnasium
-Gymnázium\n
+Gymnázium\n\n
 IND_00_01
-Skladi¹e\n
+Skladi¹e\n\n
 IND_00_02
-Malé skladi¹te\n
+Malé skladi¹te\n\n
 IND_00_03
-Silo na benzín/ropu\n
+Silo na benzín/ropu\n\n
 IND_00_04
-Válcovna plechù\n
+Válcovna plechù\n\n
 IND_00_05
-Vodojem\n
+Vodojem\n\n
 IND_00_06
-Továrna\n
+Továrna\n\n
 IND_00_09
-Skladi¹tì uhlí\n
+Skladi¹tì uhlí\n\n
 IND_00_10
-Malá továrna\n
+Malá továrna\n\n
 IND_00_12
-Strojírna\n
+Strojírna\n\n
 IND_00_14
-Továrna na optiku\n
+Továrna na optiku\n\n
 IND_00_16
-Moderní továrna\n
+Moderní továrna\n\n
 IND_00_17
-Továrna\n
+Továrna\n\n
 IND_00_18
-Teplárna\n
+Teplárna\n\n
 IND_01_01
-Parkovi¹tì\n
+Parkovi¹tì\n\n
 IND_01_03
-Nádr¾ na kapalný dusík\n
+Nádr¾ na kapalný dusík\n\n
 IND_01_04
-Stodola\n
+Stodola\n\n
 IND_01_06
-Postar¹í továrna postavená\nz èervených neomítaných\ncihel\n
+Postar¹í továrna postavená\nz èervených neomítaných\ncihel\n\n
 IND_01_07
-Transformátorová stanice\n
+Transformátorová stanice\n\n
 IND_01_08
-Továrna na umìlá hnojiva\n
+Továrna na umìlá hnojiva\n\n
 IND_01_09
-Pøeèerpávací stanice\n
+Pøeèerpávací stanice\n\n
 IND_01_10
-Továrna na náøadí\n
+Továrna na náøadí\n\n
 IND_01_11
-Továrna na tyèinky\n"Venus"\n
+Továrna na tyèinky\n"Venus"\n\n
 IND_01_12
-Továrna.\n\nHlavnì na ply¹ové medvídky\n
+Továrna.\n\nHlavnì na ply¹ové medvídky\n\n
 IND_01_15
-Továrna na absolutno\n
+Továrna na absolutno\n\n
 IND_02_01
-Tøídírna odpadu\n
+Tøídírna odpadu\n\n
 IND_02_02
-Spalovna pneumatik\n
+Spalovna pneumatik\n\n
 IND_02_06
-Továrna na supermoderní\nprocesor "Pentilium"\n
+Továrna na supermoderní\nprocesor "Pentilium"\n\n
 LargeShipStop
 Postavit nákladní pøístav
 LeuchtturmShipStop
 Pøístavní molo s majákem
 Lighthouse
-Maják\n
+Maják\n\n
 MainTerminal1930
 Hlavní terminál (1930)
 MHzSmallStation
@@ -289,9 +265,9 @@ Morerní leti¹tní hala
 MonorailDepot
 Depo magnetické dráhy
 OldTownhall
-Stará radnice\n
+Stará radnice\n\n
 Patricks_Rock
-Èedièová hora\n\nPo miliony let z vulkánu\nvytékala láva a vytvoøila\ntento pozoruhodný pøírodní\núkaz, na který se dnes\njezdí dívat turisté z ¹irého\nokolí.\n
+Èedièová hora\n\nPo miliony let z vulkánu\nvytékala láva a vytvoøila\ntento pozoruhodný pøírodní\núkaz, na který se dnes\njezdí dívat turisté z ¹irého\nokolí.\n\n
 PlainAirStop
 Stání pro letadlo
 PostOffice
@@ -304,74 +280,74 @@ PSHall1TrainStop
 Postavit stanici s oblukovou halou
 PSHall2TrainStop
 Postavit stanici s obchùdky a obloukovou halou
-Residenz
-Rezidence\n\nToto místo u¾ívá místní uèitel\nJógy k výuce meditace a\nvnitøního klidu a míru.\n
 RES_00_01
-Malý domeèek se zahradou\n
+Malý domeèek se zahradou\n\n
 RES_00_02
-Malý domeèek se zahrádkou\n
+Malý domeèek se zahrádkou\n\n
 RES_00_03
-Malý postar¹í domek\n
+Malý postar¹í domek\n\n
 RES_00_04
-Pøízemní domek\n
+Pøízemní domek\n\n
 RES_00_06
-Fontána. I kdy¾ to není\npøímo ¾enevská fontána,\ntak stále potì¹í\nkolemjdoucí, zejména v\nlétì.\n
+Fontána. I kdy¾ to není\npøímo ¾enevská fontána,\ntak stále potì¹í\nkolemjdoucí, zejména v\nlétì.\n\n
 RES_00_07
-Rodinný domek s gará¾í\n
+Rodinný domek s gará¾í\n\n
 RES_00_08
-Rodinný domek\n
+Rodinný domek\n\n
 RES_00_09
-Men¹í park s jezírkem\n
+Men¹í park s jezírkem\n\n
 RES_00_10
-Moistboyovo sídlo\n
+Moistboyovo sídlo\n\n
 RES_00_11
-Postar¹í èin¾ovní dùm\n
+Postar¹í èin¾ovní dùm\n\n
 RES_00_12
-Vila \n
+Vila \n\n
 RES_00_13
-Rodinný dvojdomek\n
+Rodinný dvojdomek\n\n
 RES_00_16
-Stará vila\n
+Stará vila\n\n
 RES_00_17
-I pro takové barabizny jako\ntato existovalo vyuètování\nza vytápìní pro ka¾dý byt\nzvlá¹» - ka¾dý si platil za\nsvoje døevo\n
+I pro takové barabizny jako\ntato existovalo vyuètování\nza vytápìní pro ka¾dý byt\nzvlá¹» - ka¾dý si platil za\nsvoje døevo\n\n
 RES_00_18
-Star¹í bytovka s bilboardem\n
+Star¹í bytovka s bilboardem\n\n
 RES_00_19
-Moderní dùm plný\napartmánù\n
+Moderní dùm plný\napartmánù\n\n
 RES_00_21
-Panelák\n\nPatøí mezi díla vrcholného\nreálného socialismu.\nNetøeba se bát, tvoje\ndopravní firmièka nebude\nzestátnìna.\n
+Panelák\n\nPatøí mezi díla vrcholného\nreálného socialismu.\nNetøeba se bát, tvoje\ndopravní firmièka nebude\nzestátnìna.\n\n
 RES_00_23
-Apartmány\n
+Apartmány\n\n
 RES_01_01
-Malý domeèek se zahradou\n
+Malý domeèek se zahradou\n\n
 RES_01_02
-Áèkový dùm\n
+Áèkový dùm\n\n
 RES_01_05
-Domek\n
+Domek\n\n
 RES_01_07
-Luxusní domek\n
+Luxusní domek\n\n
 RES_01_08
-Rodinný dùm se zahradou\n
+Rodinný dùm se zahradou\n\n
 RES_01_10
-Moderní vícepatrová vila\n
+Moderní vícepatrová vila\n\n
 RES_01_12
-Cihlová bytovka\n
+Cihlová bytovka\n\n
 RES_01_15
-Bytovka\n
+Bytovka\n\n
 RES_01_16
-Øadovky\n
+Øadovky\n\n
 RES_01_18
-Èin¾ovní dùm\n
+Èin¾ovní dùm\n\n
 RES_01_21
-Moderní vì¾ák\n
+Moderní vì¾ák\n\n
 RES_01_22
-Budova s byty\nvýtah vìt¹inou nefunguje,\nproto èím vý¹ je byt, tím je\nlevnìj¹í. \n
+Budova s byty\nvýtah vìt¹inou nefunguje,\nproto èím vý¹ je byt, tím je\nlevnìj¹í. \n\n
 RES_01_23
-Vý¹ková budova s byty.\nZákladní prvek ka¾dého\nsídli¹tì\n
+Vý¹ková budova s byty.\nZákladní prvek ka¾dého\nsídli¹tì\n\n
 RES_02_01
-Chý¹e v palmovém háji\n
+Chý¹e v palmovém háji\n\n
+Residenz
+Rezidence\n\nToto místo u¾ívá místní uèitel\nJógy k výuce meditace a\nvnitøního klidu a míru.\n\n
 RUIN_0
-Zøícenina hradu\n\nPro turisty je také velmi\nzajímavá tajemná historie\nhradu.\n
+Zøícenina hradu\n\nPro turisty je také velmi\nzajímavá tajemná historie\nhradu.\n\n
 SandStationMHz
 Prosté nástupi¹tì
 ShipDepot
@@ -379,11 +355,11 @@ Lodìnice
 ShipStop
 Postavit pøístav\n
 STADIUM2
-Velký stadion Tento veliký\nstadion s kapacitou 25 000\nosob èasto hostí rozlièné\nsportovní události.\n
+Velký stadion Tento veliký\nstadion s kapacitou 25 000\nosob èasto hostí rozlièné\nsportovní události.\n\n
 Tennis_Court
-Tenisový kurt\n
+Tenisový kurt\n\n
 Theatre
-Divadlo\n
+Divadlo\n\n
 Tower1930
 Leti¹tní vì¾ (1930)
 TowerMoistboy
@@ -399,7 +375,7 @@ Zastávka ve viktoriánském stylu
 Vorplatz
 Místo pøed zastávkou
 Windmill
-Vìtrný mlýn\n
+Vìtrný mlýn\n\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -418,22 +394,68 @@ Roadster
 Roadster
 yellow_car
 ®luté auto
-#____________________________________cursor_____________________________________
-#____________________________________cursor_____________________________________
-Baum
-Strom
-Down
-©ipka dolù
-Marked
-Znaèka
-Mouse
-Kurzor my¹i
-Query
-Lupa
-Remove
-Odstranit
-Schedule
-Zastávka
+#__________________________________dummy_info___________________________________
+#__________________________________dummy_info___________________________________
+factory_2Raffinerie_details
+Benzínová rafinerie
+factory_3Raffinerie_details
+Rafinerie
+factory_Autohaus_details
+Autosalón
+factory_Autohersteller_details
+Automobilka
+factory_Buchgrosshandel_details
+Kni¾ní velkoobchod
+factory_Cementmill_details
+Cementárna
+factory_ChemicalPlant_details
+Chemièka
+factory_CHEMIST_details
+Lékárna
+factory_Concretefactory_details
+Betonárka
+factory_Druckerei_details
+Tiskárna
+factory_Erzbergwerk_details
+®eleznorudný dùl
+factory_Kohlegrube_details
+Uhelný dùl
+factory_Kohlekraftwerk_details
+Elektrárna
+factory_Materialswholesale_details
+Velkoob. s materiálem
+factory_Moebelfabrik_details
+Truhlárna
+factory_Moebelhaus_details
+Obchod s nábytkem
+factory_Nutzwald_details
+Les
+factory_Oelbohrinsel_details
+Ropná plo¹ina
+factory_Oelfeld_details
+Ropné pole
+factory_Oelkraftwerk_details
+Olejová elektrárna
+factory_Oelpumpe_details
+Ropná pumpa
+factory_Papierfabrik_details
+Papírna
+factory_Pharmaceutics_details
+Továrna na léky
+factory_Raffinerie_details
+Rafinerie
+factory_Saegewerk_details
+Pila
+factory_Sandquarry_details
+Píseèný lom
+factory_Stahlwerk_details
+Slévárna
+factory_Stonequarry_details
+Kamenolom
+factory_TANKE_details
+Èerpací stanice
+factory_Windkraftwerk_details
+Vìtrná elektrárna
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -458,8 +480,6 @@ Druckerei
 Tiskárna
 Erzbergwerk
 ®eleznorudný dùl
-Incinerator
-Spalovna odpadkù
 Kohlegrube
 Uhelný dùl
 Kohlekraftwerk
@@ -490,8 +510,6 @@ Saegewerk
 Pila
 Sandquarry
 Píseèný lom
-scrap_yard
-Recyklaèní dvùr
 Stahlwerk
 Slévárna
 Stonequarry
@@ -542,26 +560,6 @@ Stahl
 oceli
 Stone
 kamene
-waste
-odpadky
-#____________________________________ground_____________________________________
-#____________________________________ground_____________________________________
-Fence
-Zábradlí
-Water
-Voda
-#_____________________________________menu______________________________________
-#_____________________________________menu______________________________________
-WindowSkin
-Skin Windows
-#_____________________________________misc______________________________________
-#_____________________________________misc______________________________________
-Construction
-Staveni¹tì
-PowerDest
-Trafostanice
-PowerSource
-Rozvodna
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Couple
@@ -614,54 +612,22 @@ Signals
 Návìstidlo
 traffic_light
 Semafory
-#_____________________________________smoke_____________________________________
-#_____________________________________smoke_____________________________________
-Diesel
-Kouø naftového motoru
-#____________________________________symbol_____________________________________
-#____________________________________symbol_____________________________________
-Electricity
-pod napìtím
-Message
-Zpráva
-MessageOptions
-Nastavení zpráv
-MonorailStop
-Zastávka magnetické dráhy
-NewWorld
-Nová mapa
-NewYear
-Nový rok
-Seasons
-Roèní období
-Waren
-Zbo¾í
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Birke-1
-bøíza\n
+bøíza\n\n
 Latschenkiefer
-Horská borovice\n
+Horská borovice\n\n
 Palmtree1
-Palma\n
+Palma\n\n
 Tree4
-Borovice\n
+Borovice\n\n
 Tree5
-Tree5\n
+Tree5\n\n
 Tree6
-Jedle\n
+Jedle\n\n
 Willow
-vrba\n
-#____________________________________tunnel_____________________________________
-#____________________________________tunnel_____________________________________
-FastRailTunnel
-Vysokorychlostní ¾eleznièní tunel
-FastRoadTunnel
-Vysokorychlostní silnièní tunel
-RailTunnel
-®eleznièní Tunel
-RoadTunnel
-Silnièní tunel
+vrba\n\n
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -744,16 +710,10 @@ Concorde
 Concorde
 DC-3
 Dacota DC-3
-Deponielaster
-Popeláøské auto
-Deponielaster2
-Popeláøské auto
 Doubledeck_city_bus
 Dvoupatrový mìstský autobus
 Eb3-5
 Eb3-5
-ED17
-ED17
 EinheitsTender
 tendr
 Erzanhaenger
@@ -812,8 +772,6 @@ Moebelschiff
 Loï na kusové zbo¾í
 Moebelwagen
 VT-V nákl. vagón na kusové zbo¾í
-Muellschiff
-Nákladní loï na odpadky
 NeuOelwagen
 Cisterna na ropu/benzín (80m2)
 Oelanhaenger
@@ -884,8 +842,6 @@ Tugboat
 remorkér
 VolvoFH12
 Volvo FH12
-waste wagon
-Nákladní vagón na odpadky
 XMail
 Vùz jednokolejky pro pøepravu po¹ty
 XTest

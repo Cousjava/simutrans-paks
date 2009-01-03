@@ -1,28 +1,14 @@
-################################################################################
+§################################################################################
 #                                                                              #
 #                Simutrans Scenario Specific Translation File                  #
 #                                Scenario: pak64                               #
 #                           Language: be Belaruskaja                           #
-#                            Encoding: Windows-1251                            #
-#                          Font : prop_cyrillic-be.fnt                         #
-#                           Date Created: 28.06 2008                           #
+#                                Encoding: UTF-8                               #
+#                                Font : cyr.bdf                                #
+#                            Date Created: 3.01 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                          Markus Pristovsek - prissi                          #
-#                            note: Administrator 64                            #
-#                               Yury B. - ybxsoft                              #
-#                                    note:                                     #
+#                                    - prissi                                  #
+#              note: Administrator Base texts / pak64 / pak.japan              #
 #                                                                              #
 ################################################################################
-#_________________________________program_text__________________________________
-#_________________________________program_text__________________________________
-CATEGORY_01
-?????? ?????
-CATEGORY_02
-????? ????
-CATEGORY_03
-?????/??????
-CATEGORY_04
-???????. ????.
-CATEGORY_06
-?????????? ?.

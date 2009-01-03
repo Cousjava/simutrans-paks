@@ -5,73 +5,35 @@
 #                             Language: en English                             #
 #                                Encoding: ASCII                               #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 28.06 2008                           #
+#                            Date Created: 3.01 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                        Alexandre Frauenknecht - al_cff                       #
-#                                    note:                                     #
-#                         BeatBoxRocker - beatboxrocker                        #
-#                                    note:                                     #
 #                            Colin W Anetts - Colin                            #
 #                                    note:                                     #
-#                             Dirk Burkholz - Dirk                             #
-#                     note: German translation coordinator                     #
 #                             Dirk W. - DirrrtyDirk                            #
 #                                    note:                                     #
-#                    dogbreathiv@hotmail.co.uk - dogbreathiv                   #
-#                                    note:                                     #
-#                           Fabio Gonella - fagonella                          #
-#                                    note:                                     #
 #                              Frank Penz - FrankP                             #
-#                          note: Administrator German                          #
-#                            G?nter Beine - gebeine                            #
 #                                    note:                                     #
 #                         Roman Schw?rer - Gotthardlok                         #
 #                                    note:                                     #
-#                        Hans Brickface - hansbrickface                        #
-#                                    note:                                     #
-#                          Jack Verheydt - j.verheydt                          #
-#                                    note:                                     #
-#                             Pavel Cizek - jatypc                             #
-#                                    note:                                     #
-#                             Jan Pol??ek - Jerome                             #
-#                           note: AKA Jerome Heretic                           #
-#                          James Barker - jimmyjazz951                         #
-#                                    note:                                     #
-#                             Jonas Czimek - joecz                             #
-#                                    note:                                     #
-#                             Ji?? Vose?ek - kacer                             #
-#                                    note:                                     #
-#                             Karl Katzke - katzke                             #
+#                                     - Hajo                                   #
 #                                    note:                                     #
 #                             Marcus Haupt - Marcus                            #
 #note: if I?m not available by email to proximity.de try mail@marcus-haupt.de (#
-#                      Michael Bisbjerg - michaelbisbjerg                      #
+#                                     - Noel                                   #
 #                                    note:                                     #
-#                             Mike Ryan - mikeryan                             #
-#                                    note:                                     #
-#                             Stefan Wuttich - mip                             #
-#                                    note:                                     #
-#                            Matthieu Pupat - mpupat                           #
-#                                    note:                                     #
+#                          Ignas Brasiskis - enternald                         #
+#note: I love simutrans. Reikalui esant teikite si?lymus Lietuvi? kalbai Simutr#
+#                            G?nter Beine - gebeine                            #
+#                        note: maintainer pak128.german                        #
 #                              Markus Rex - msrex                              #
 #                                    note:                                     #
-#                            Milan Gvo?d?k - nalim27                           #
+#                              Tom?? Kube? - napik                             #
 #                                    note:                                     #
-#                              Tom?? Kube? - Napik                             #
-#           note: 128x128 dev. coordinator, SimuTranslator developer           #
-#                            Ond?ej Machulda - Ondra                           #
-#                                    note:                                     #
-#                    Patrick, American Fish Guy - patrickmn1                   #
-#                                    note:                                     #
-#                          Markus Pristovsek - prissi                          #
-#                            note: Administrator 64                            #
-#                            Guillermo Mateo - Raven                           #
-#                                    note:                                     #
-#                           Brian D. - scienceman123                           #
-#                                    note:                                     #
-#                       Christian 'Jason' Peper - trublu                       #
-#                                    note:                                     #
+#                                    - prissi                                  #
+#              note: Administrator Base texts / pak64 / pak.japan              #
+#                                     - sojo                                   #
+#                         note: maintainer pak96.comic                         #
 #                         Tom?? Vrbick? - vrbicky_tomas                        #
 #                     note: Don?thurry up! Death is faster.                    #
 #                            Vladim?r Sl?vik - vsys                            #
@@ -135,23 +97,23 @@ Town hall
 1930AirDepot
 Air depot of 1930
 1headquarter
-Your corporate headquarters!
+headquarter
 2headquarter
-Your corporate headquarters!
+bigger headquarters
 3headquarter
-Your corporate headquarters!
+international company headquarter
 A1_ALTE_KIRCHE
-famous church\n\nA famous old church with\nmarvellous paintings.\nEverybody should see this\nfantastic building.\n
+famous church\n\nA famous old church with\nmarvellous paintings.\nEverybody should see this\nfantastic building.\n\n
 A2_SCHLOSS1
-Neuschwanstein\n\nthe castle of the crazy king.\nThis is really worth seeing!\n
+Neuschwanstein\n\nthe castle of the crazy king.\nThis is really worth seeing!\n\n
 A3_BURG1
-Some ruins\n\ntelling of better times. They're\nalways worth a journey.\n
+Some ruins\n\ntelling of better times. They're\nalways worth a journey.\n\n
 A4_SCHLOSS2
-Old castle\n\nwith a marvellous collection\nof paintings. Perfect for a\nsightseeing tour, even\nwhen it rains.\n
+Old castle\n\nwith a marvellous collection\nof paintings. Perfect for a\nsightseeing tour, even\nwhen it rains.\n\n
 A5_STONEHENGE
-Stonehenge\n\nan ancient ring of stones.\nFeel the mystery walking\nbetween the monoliths.\n
+Stonehenge\n\nan ancient ring of stones.\nFeel the mystery walking\nbetween the monoliths.\n\n
 A6_DOME
-Old cathedral\n\nthe very heart of this city\nfor nearly thousand years.\n
+Old cathedral\n\nthe very heart of this city\nfor nearly thousand years.\n\n
 AirDepot
 Air depot of 1900
 AirportShed1930
@@ -160,8 +122,6 @@ AirStop
 boarding bridge\n
 AirTerminal477
 Airport Terminal (1950)
-anfangShipStop
-quay end (S or E)
 Avila_Big_StationBlg
 big station building
 Avila_Small_StationBlg
@@ -176,82 +136,90 @@ Bulk_StationBlg
 coal station
 BusStop
 Bus stop\n
+Car_StationBlg
+car shipment
 CarDepot
 Depot for road vehicles
 CarStop
 Freight yard\n
-Car_StationBlg
-car shipment
 ChannelStop
 wharf
 COM_00_01
-Small shop\n
+Small shop\n\n
 COM_00_02
-Independent gas station\n\nIt's independent from the big\ntransportation companies\n(like yours), but there's no\nneed to remove it. It won't\ntake away any of your\nbusiness.\n
+Independent gas station\n\nIt's independent from the big\ntransportation companies\n(like yours), but there's no\nneed to remove it. It won't\ntake away any of your\nbusiness.\n\n
 COM_00_03
-This backyard garage\nwants to get out ouf this\nshadowy existence for a\nlong time to open a\nshowroom an mainstreet.\nBut there is still this lack\nof money, permission and\nmainstreet\n
+This backyard garage\nwants to get out ouf this\nshadowy existence for a\nlong time to open a\nshowroom an mainstreet.\nBut there is still this lack\nof money, permission and\nmainstreet\n\n
 COM_00_05
-Drive through bank. It's\ncalled a drive through\nbecause you don't stop,\nand when you pass through\nyour wallet magically\nempties.The manager can\nusually be seen wringing his\nhands with glee.\n
+Drive through bank. It's\ncalled a drive through\nbecause you don't stop,\nand when you pass through\nyour wallet magically\nempties.The manager can\nusually be seen wringing his\nhands with glee.\n\n
 COM_00_06
-Better coffee is nowhere to\nbe found that is better\nthan up on this cafe's\nroof-terrace\n
+Better coffee is nowhere to\nbe found that is better\nthan up on this cafe's\nroof-terrace\n\n
 COM_00_08
-Apartment block with some\nshops.\n
+Apartment block with some\nshops.\n\n
 COM_00_10
-Medium office block\n
+Medium office block\n\n
 COM_00_11
-Nova's Novelties. A very\nbright and colourful Novelty\nShop which sells\neverything from Wax Lamps\nto Grey Battleships. (Now\nthat's a novelty)\n
+Nova's Novelties. A very\nbright and colourful Novelty\nShop which sells\neverything from Wax Lamps\nto Grey Battleships. (Now\nthat's a novelty)\n\n
 COM_00_12
-Office Block\n
+Office Block\n\n
 COM_00_14
-This building looks like an\nold style factory, but is in\nfact a highly organised\nillegal betting shop.\n
+This building looks like an\nold style factory, but is in\nfact a highly organised\nillegal betting shop.\n\n
 COM_00_18
-Modern office block\n
+Modern office block\n\n
 COM_00_22
-New UN building for Somalia.\n
+New UN building for Somalia.\n\n
 COM_01_01
-Hot Air Ballon take off and\nlanding site. This site is\nfrequented by a lot of\npoliticians, that's why you\ncan't see any gas bottles.\n
+Hot Air Ballon take off and\nlanding site. This site is\nfrequented by a lot of\npoliticians, that's why you\ncan't see any gas bottles.\n\n
 COM_01_04
-Promenade with trees\n
+Promenade with trees\n\n
 COM_01_09
-Old cinema, Lots of old\nBlack & White movies\nshown here. It's very\npopoular with Charlie\nChaplin fans.\n
+Old cinema, Lots of old\nBlack & White movies\nshown here. It's very\npopoular with Charlie\nChaplin fans.\n\n
 COM_01_10
-The local clinic. The boring\nfront was replaced by a\nnew entrance to cheer\neveryone up, especially\nthose in for the dentists.\nDon't clench your teeth on\nthem!\n
+The local clinic. The boring\nfront was replaced by a\nnew entrance to cheer\neveryone up, especially\nthose in for the dentists.\nDon't clench your teeth on\nthem!\n\n
 COM_01_17
-Medium office block\n
+Medium office block\n\n
 COM_01_18
-Assets Management\nCompany "Global Trust" is\na global fonds trader. Their\nJunk bond fonds and micro\ncredit institues in India and\nPeru make a lot of money.\nBut will this continue in the\nfuture? There is no\nget-your-money-back-guarantee\non the stock-market\n
+Assets Management\nCompany "Global Trust" is\na global funds trader. Their\nJunk bond funds and micro\ncredit institutes in India\nand Peru make a lot of\nmoney. But will this continue\nin the future? There is no\nget-your-money-back-guarantee\non the stock-market\n\n
+COM_01_20
+Skyscraper\n\n
+COM_02_02
+Parking place\n\n
 COM_02_19
-While the building itself is\nnot very notable its\nexternal elevator was soon\na tourist attraction. Even\nthough the tickets are\nexpensive, the real money\nis made by the kiosk next to\nthe queue for the elevator.\n
+While the building itself is\nnot very notable its\nexternal elevator was soon\na tourist attraction. Even\nthough the tickets are\nexpensive, the real money\nis made by the kiosk next to\nthe queue for the elevator.\n\n
 COM_03_15
-Shortly before WWII this\ndepartment of the ministry\nof defense was errected,\ninfluenced be the futurists.\nUnfourtunately it was soon\nfound out that the\nferroconcrete was indeed\nmade to last a thousand\nyears. No way to beautify\nthis, even though today it is\nthe headquarter of a charity\norganisation.\n
+Shortly before WWII this\ndepartment of the ministry\nof defense was erected,\ninfluenced by the futurists.\nUnfourtunenately it was\nsoon found out that the\nferro-concrete was indeed\nmade to last a thousand\nyears. No way to beautify\nthis, even though today it is\nthe headquarter of a charity\norganisation.\n\n
 COM_04_15
-This office building has\nbeen retrofitted many\ntimes, as you can see by\nthe sattelite dish on the\ntop.  You will also notice a\nglass portion of the roof,\nwhich covers the swimming\npool three floors beneath. \nThe swimming pool has a\nslide, which is intended to\ninspire the computer\nprogrammers within, but\nunfortunately their mood is\noften wrecked when people\ndecide to take off their pants\nand sit on the glass roof.\n
+This office building has\nbeen retrofitted many\ntimes, as you can see by\nthe satellite dish on the\ntop.  You will also notice a\nglass portion of the roof,\nwhich covers the swimming\npool three floors beneath. \nThe swimming pool has a\nslide, which is intended to\ninspire the computer\nprogrammers within, but\nunfortunately their mood is\noften wrecked when people\ndecide to take off their pants\nand sit on the glass roof.\n\n
+COM_10_01
+Beautiful lake with trees\nnearby. What kid wouldn't\nwant to swim here at\nsummer and skate in winter\n\n
+COM_10_05
+This barn have been in use\nin a lot of year by a farmer\nJenkins. You could taste\nfresh milk if you want. Just\ncome here.\n\n
+COM_10_12
+This old creepy house\nresemble times when\nsimupeople haven't known\nwhat is holy power of\nelectrification or rail.\n\n
 Control_StationBlg
 railway control centre
 DenkFlor
-Flor Wauters Memorial\n\nThis monument is dedicated\nto Flor 'WF Ultd.' Wauters,\nthe famous engineer who\ncreated so many great road\nand rail vehicles. He is also\nwell known for designing many\nwell working factories.\n
+Flor Wauters Memorial\n\nThis monument is dedicated\nto Flor 'WF Ultd.' Wauters,\nthe famous engineer who\ncreated so many great road\nand rail vehicles. He is also\nwell known for designing many\nwell working factories.\n\n
 DenkHajo
-Hajo Malthaner Memorial\n\nThis monument is dedicated\nto Hansj?rg Malthaner, who\ncreated this game in seven\nyears. Demigods take\nlonger for such tasks.\n
+Hajo Malthaner Memorial\n\nThis monument is dedicated\nto Hansj?rg Malthaner, who\ncreated this game in seven\nyears. Demigods take\nlonger for such tasks.\n\n
 DenkMHz
-Georg Heiduk Memorial\n\nThis monument is dedicated\nto Georg Heiduk ("MHz")\nthe master of rendered\nbuildings. It stands for his\nsharp eye for details.\n
+Georg Heiduk Memorial\n\nThis monument is dedicated\nto Georg Heiduk ("MHz")\nthe master of rendered\nbuildings. It stands for his\nsharp eye for details.\n\n
 DenkOwen
-Memorial\n\nThis place is dedicated to\nOwen Rudge the famous\nfinance expert and sound\ntechnician.\n
+Memorial\n\nThis place is dedicated to\nOwen Rudge the famous\nfinance expert and sound\ntechnician.\n\n
 DenkSeth
-Memorial\n\nThis place is dedicated to\nSeth C. Triggs the famous\narchitect who designed so\nmany beautiful city\nbuildings. He is also well\nknown for doing many studies\nhow to improve traffic\nsystems.\n
+Memorial\n\nThis place is dedicated to\nSeth C. Triggs the famous\narchitect who designed so\nmany beautiful city\nbuildings. He is also well\nknown for doing many studies\nhow to improve traffic\nsystems.\n\n
 DenkTomas
-Memorial\n\nThis monument is dedicated\nto Tomas Kubes who\nhelped to improve\nSimutrans in many, many\naspects with advice and\nhard work.\n
+Memorial\n\nThis monument is dedicated\nto Tomas Kubes who\nhelped to improve\nSimutrans in many, many\naspects with advice and\nhard work.\n\n
 DenkTrikky
-Memorial\n\nThis monument is dedicated\nto 'Trikky' Rick McGreal the\nfamous architect who\ndesigned so many\nimpressive buildings.\n
+Memorial\n\nThis monument is dedicated\nto 'Trikky' Rick McGreal the\nfamous architect who\ndesigned so many\nimpressive buildings.\n\n
 DenkVM
-Memorial\n\nThis monument is dedicated\nto Manfred 'VT Vienna'\nTomaschitz the famous\nengineer who designed\nmany superior rail vehicles.\n
+Memorial\n\nThis monument is dedicated\nto Manfred 'VT Vienna'\nTomaschitz the famous\nengineer who designed\nmany superior rail vehicles.\n\n
 DenkVolker
-Memorial\n\nThis Stupa was built by Volker\nMeyer who improved\nSimutrans in many, many\nareas.\n
+Memorial\n\nThis Stupa was built by Volker\nMeyer who improved\nSimutrans in many, many\nareas.\n\n
 Eingang
 Entrance
-endShipStop
-quay end (N or W)
 Feste
-Konuberts' Stronghold\n\nThis massive castle was\nerected around the year\n1400.\n
+Konuberts' Stronghold\n\nThis massive castle was\nerected around the year\n1400.\n\n
 Fluid_StationBlg
 oil tank
 FreightTrainStop
@@ -265,35 +233,35 @@ big station hall right
 Goods_StationBlg
 Warehouse
 Gymnasium
-High school/grammar school\n
+High school/grammar school\n\n
 IND_00_01
-Warehouse\n
+Warehouse\n\n
 IND_00_02
-Factory Tower with clean\nrooms\n
+Factory Tower with clean\nrooms\n\n
 IND_00_03
-Oil/petrol depot\n
+Oil/petrol depot\n\n
 IND_00_04
-Sheet metal fabricator\n
+Sheet metal fabricator\n\n
 IND_00_05
-Water cistern\n
+Water cistern\n\n
 IND_00_06
-Factory building\n
+Factory building\n\n
 IND_00_10
-Small factory\n
+Small factory\n\n
 IND_00_12
-Old machine factory\n
+Old machine factory\n\n
 IND_01_01
-Free parking. Some people\neven abandon their old\ncars here.\n
+Free parking. Some people\neven abandon their old\ncars here.\n\n
 IND_01_03
-Big gas tank\n
+Big gas tank\n\n
+IND_01_07
+Transformer station\n\n
 IND_01_08
-Fertilizer factory\n
-IND_01_09
-Fluids depot\n
+Fertilizer factory\n\n
 IND_01_10
-Tools factory\n
+Tools factory\n\n
 IND_02_10
-The old soap works still\nlooks as neat as the day it\nwas errected. A true\nmiracle!\n
+The old soap works still\nlooks as neat as the day it\nwas erected. A true miracle!\n\n
 LargeShipStop
 Large freight crane
 leftShipStop
@@ -301,21 +269,19 @@ Heavy duty crane
 LeuchtturmShipStop
 Lighthouse Ship Stop
 Lighthouse
-Lighthouse\n
+Lighthouse\n\n
 MainTerminal1930
 Main terminal building (1930)
 MHzSmallStation
 Station building (by MHz)
-midleShipStop
-quay
 ModernAirTerminal477
 Modern air terminal
 MonorailDepot
 Monorail depot
 OldTownhall
-Old town hall\n
+Old town hall\n\n
 Patricks_Rock
-Patrick's Rock\n
+Patrick's Rock\n\n
 PlainAirStop
 Aircraft Stop
 PostOffice
@@ -329,65 +295,65 @@ station hall with news stand
 PSHall2TrainStop
 station hall
 Raven_Kirche
-Church St. Meinrad\n\nThe hermit St. Meinrad has\nbeen accompagned by two\nravens according to the\nlegend. When he has been\nmurdered, the two ravens\nfollowed the murderers and\nhave convicted them. Today,\nat the place of his hut is the \nmonastery Einsiedeln.\n
-Residenz
-Residence\n\nThis place is used by the\nlocal Yoga Guru to teach\nmeditation and inner peace.\nThere are lots of things\ncalled Bongs here.\n
+Church St. Meinrad\n\nThe hermit St. Meinrad has\nbeen accompagned by two\nravens according to the\nlegend. When he has been\nmurdered, the two ravens\nfollowed the murderers and\nhave convicted them. Today,\nat the place of his hut is\nthe \nmonastery Einsiedeln.\n\n
 RES_00_01
-Small house with garden\n
+Small house with garden\n\n
 RES_00_02
-Small house with garden\n
+Small house with garden\n\n
 RES_00_03
-Small house with garden\n
+Small house with garden\n\n
 RES_00_04
-Small house\n
+Small house\n\n
 RES_00_06
-A little fountain. Even if it\nis not so great as the one\nin Geneva, it is delighting\npeople walking around it,\nespecially in the\nsummertime.\n
+A little fountain. Even if it\nis not so great as the one\nin Geneva, it is delighting\npeople walking around it,\nespecially in the\nsummertime.\n\n
 RES_00_07
-Medium house\n
+Medium house\n\n
 RES_00_08
-Medium house\n
+Medium house\n\n
 RES_00_09
-A small park with a duck\npond\n
+A small park with a duck\npond\n\n
 RES_00_10
-The impressive Moistboy\nmanson.\n
+The impressive Moistboy\nmanson.\n\n
 RES_00_11
-Big house with garden\n
+Big house with garden\n\n
 RES_00_12
-Live less ordinary! The\ninterior is unique as well:\nPower outlet are for\nthree-phase-power only,\nthe transparent bath-tube\nis iluminated with neon\nlamps, the stove is powered\nby stirling motor und Paintings\nare projected onto the walls,\nbecause the architect forbid\nnails in the walls.\n
+Live less ordinary! The\ninterior is unique as well:\nPower outlet are for\nthree-phase-power only,\nthe transparent bath-tube\nis iluminated with neon\nlamps, the stove is powered\nby stirling motor und Paintings\nare projected onto the walls,\nbecause the architect forbid\nnails in the walls.\n\n
 RES_00_13
-Double house with garden\n
+Double house with garden\n\n
 RES_00_16
-Old villa\n
+Old villa\n\n
 RES_00_17
-Even for old houses like\nthis, consumption-based\nheating cost billing existed\n- everyone had to pay for\nhis own firewood.\n
+Even for old houses like\nthis, consumption-based\nheating cost billing existed\n- everyone had to pay for\nhis own firewood.\n\n
 RES_00_19
-Modern Appartments\n
+Modern Appartments\n\n
 RES_01_01
-Modern prefab house with a\nlarge room for the kid in the\nattic.\n
+Modern prefab house with a\nlarge room for the kid in the\nattic.\n\n
 RES_01_02
-A-Frame type house. Very\nstable, but with only a few\nwindows and walls, so it's\nnot really suitable for\npeople who like framed\npictures.\n
+A-Frame type house. Very\nstable, but with only a few\nwindows and walls, so it's\nnot really suitable for\npeople who like framed\npictures.\n\n
 RES_01_07
-Large luxury house\n
+Large luxury house\n\n
 RES_01_08
-Medium house with garden\n
+Medium house with garden\n\n
 RES_01_10
-Modern house\n
+Modern house\n\n
 RES_01_12
-Brick apartment building\n
+Brick apartment building\n\n
 RES_02_16
-Luxury appartments with\npenthouse.\n
+Luxury appartments with\npenthouse.\n\n
+Residenz
+Residence\n\nThis place is used by the\nlocal Yoga Guru to teach\nmeditation and inner peace.\nThere are lots of things\ncalled Bongs here.\n\n
 rightShipStop
 Quay with pier
 RUIN_0
-Medieval castle\n\nThis castle was becoming a\nruin, but parts of it have\nbeen reconstructed, and\nthe whole complex is a\nmuseum now.\nThe view over the landscape\nis fantastic, you just have to\nclimb lots of stairs to see it.\n
+Medieval castle\n\nThis castle was becoming a\nruin, but parts of it have\nbeen reconstructed, and\nthe whole complex is a\nmuseum now.\nThe view over the landscape\nis fantastic, you just have to\nclimb lots of stairs to see it.\n\n
 SandStationMHz
 Stop without platform
 ShipStop
 Seaport\n
 STADIUM2
-Big stadium\n\nhosting all the international\nevents here.\n
+Big stadium\n\nhosting all the international\nevents here.\n\n
 Tennis_Court
-Tennis courts\n
+Tennis courts\n\n
 Terminal1930
 Airport Terminal (1930)
 Tower1930
@@ -420,40 +386,62 @@ Motorrad
 Motor bike
 yellow_car
 Yellow car
-#____________________________________cursor_____________________________________
-#____________________________________cursor_____________________________________
-Baum
-Tree
-Down
-arrow down
-Query
-Tile information tool
-Remove
-Remove
-Signal
-Signals
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
+factory_2Raffinerie_details
+Refinery (Gasoline)
+factory_3Raffinerie_details
+Refinery (Gas+Pl.)
+factory_Autohaus_details
+Car shop
+factory_Autohersteller_details
+Car factory
+factory_Buchgrosshandel_details
+Book shop
+factory_ChemicalPlant_details
+Chemical plant
+factory_CHEMIST_details
+Chemist
 factory_Concretefactory_details
-Autoclaved Aerated concrete (AAC) is produced in this factory. The small pores that reduce weight and increase insulation originate from aluminum powder, which reacts with the water. AAC was invented in the 1920ies.
+Autoclaved Aerated Concrete Factory
+factory_Druckerei_details
+Printing works
+factory_Erzbergwerk_details
+Iron ore mine
 factory_Kohlegrube_details
-<title>About Coalmines</title><h1>Coalmines</h1><p>In coal mines the miners dig for coal. This is hard labour, but the coal is needed for such important industreis like iron foundries and power plants.<p>
+Coal mine
 factory_Kohlekraftwerk_details
-\n
+Coal power station
 factory_Moebelfabrik_details
-factory_FurnitureFactory_details
+Furniture Factory
 factory_Moebelhaus_details
-factory_FurnitureShop_details
+Home Market
 factory_Nutzwald_details
-<title>About timber plantations</title><h1>Timber plantations</h1><p>In the woods grows the most important renewable material and energy source, which is appropriated by forestry and transformed to high-quality brands by wood and paper industry.</p>
+Timber plantation
 factory_Oelbohrinsel_details
-<title>About oil rigs</title><h1>Oil rigs</h1><p>Second half of 20th century brought hunger for oil - consumption doubled every decade. Apart from land resources, sea offered also some oil deposits, although hard to reach.<br><br>Oil rigs are strucures built to exploit these resources located in shelf areas (depth 0 to 200 meters). They are HUGE, but no one actually realizes it - most of the building is hidden under water surface. And also expensive to maintain. Columns that hold the platform are usually hollow and they also function as reservoir for oil.<br><br>The biggest oil rig in the world, Statfjord B, was built by Norway. Its weight is roughly 800,000 tonnes and height about 192 m. With tower the height increases by another 80 meters.<p>
+Oil rig
 factory_Oelfeld_details
-<title>About Oilfields</title><h1>Oilfields</h1><p>Oil is a raw material which was used for paints, lubricants and also as a fuel for heating before the turn of 19th/20th century. Then it gained great importance with boom of combustion engine and automobiles.<br><br>Oil is a liquid consisting of numerous hydrocarbons. It is unclear how exactly the oil deposits came into being, probably it was a process similar to creating coal deposits but with some extra conditions - under high pressure & without oxygen. They are within depth of up to hundreds of meters. Oil is there usually found together with gas under high pressure, what eases pumping it to the surface.<p>
+Oilfield
+factory_Oelkraftwerk_details
+Oil power plant
+factory_Oelpumpe_details
+Oil Pump
+factory_Papierfabrik_details
+Paper mill
+factory_Pharmaceutics_details
+Pharmaceutics
+factory_Raffinerie_details
+Refinery (Plastics)
+factory_Saegewerk_details
+Sawmill
+factory_SaegewerkMHz_details
+old sawmill
 factory_Stahlwerk_details
-<title>About Iron foundries</title><h1>Iron foundries</h1><p>(Steel mills)<br><br>These industries convert iron ore into iron or steel. This is done by heating ore (and recycled iron scrap) up in blast furnaces - huge cylindric structures that can withstand the immense heat of about 2000?C. The ore inside melts quickly and separates into a pool of liquid iron and slag floating on top of it.</p><p>The iron is further processed in convertors so as to reduce the carbon volume; the lower it is, the higher quality steel you get. Such processes need lots of energy, usually gained by burning mountains of coal.<p>
+Iron foundry
 factory_TANKE_details
-<title>Gas station details</title>\nA dying gas station: no visible business. Where are all the cars getting their fuel from then...?
+Gas station
+factory_Windkraftwerk_details
+Wind power plant
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -465,7 +453,7 @@ Car shop
 Autohersteller
 Car factory
 Buchgrosshandel
-Book wholesaler
+Book shop
 ChemicalPlant
 Chemical plant
 CHEMIST
@@ -504,8 +492,6 @@ Saegewerk
 Sawmill
 SaegewerkMHz
 old sawmill
-scrap_yard
-Scrap Yard
 Stahlwerk
 Iron foundry
 TANKE
@@ -552,16 +538,6 @@ Stahl
 Steel
 Stone
 Stone
-#_____________________________________menu______________________________________
-#_____________________________________menu______________________________________
-SlopeTools
-Landscape Tools
-#_____________________________________misc______________________________________
-#_____________________________________misc______________________________________
-Construction
-Construction site
-PowerSource
-Power Source
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 pedestrian_1
@@ -598,14 +574,14 @@ rolls
  rolls
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
+choose_point
+Choose point
 ChooseSignals
 Choose Signals
 ChooseSignalsMonorail
 Choose Signals
-choose_point
-Choose point
 Endofchoosetrack
-Forbidden for plattfrom search
+Exclude from plattfrom search
 Minimum80
 minimum speed 80km/h
 NoEntry
@@ -620,54 +596,36 @@ SignalsMonorail
 Signals
 traffic_light
 Traffic lights
-#____________________________________symbol_____________________________________
-#____________________________________symbol_____________________________________
-Builder
-Bulldozer
-MessageOptions
-Message Options
-Waren
-Goods
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Birke-1
-birch\n
+birch\n\n
 Buche-1
-bush\n
+bush\n\n
 Busch_2
-bush\n
+bush\n\n
 Latschenkiefer
-Mountain pine\n
+Mountain pine\n\n
 Pappel-1
-Poplar\n
+Poplar\n\n
 Pappel-2
-Poplar\n
+Poplar\n\n
 Tanne_1
-Fir\n
+Fir\n\n
 Tanne_2
-Fir\n
+Fir\n\n
 Tanne_3
-Fir\n
+Fir\n\n
 Tanne_4
-Fir\n
+Fir\n\n
 Tanne_5
-Fir\n
+Fir\n\n
 Tanne_6
-Fir\n
+Fir\n\n
 Tree6
-Fir\n
+Fir\n\n
 Willow
-willow\n
-#____________________________________tunnel_____________________________________
-#____________________________________tunnel_____________________________________
-FastRailTunnel
-High speed rail tunnel
-FastRoadTunnel
-High-speed road tunnel
-RailTunnel
-Rail Tunnel
-RoadTunnel
-Road tunnel
+willow\n\n
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -762,215 +720,9 @@ Concept2Rear
 Concept 2 Rear Engine
 Concorde
 Concorde
-Deponielaster
-Garbage truck I
-Deponielaster2
-Garbage truck II
 Eb3-5
 Swiss federal Railways Eb 3/5
 EinheitsTender
 Standard tender
 Erzanhaenger
 H-Trans Ore Trailer
-Erztrailer
-iron ore semitrailer
-Erztransporter
-H-Trans Truck MK2
-Erzwagen
-H-Trans bulk freight waggon (for 30t)
-F7back
-F7 A rear engine
-FastFerry
-O.Bang Fast Ferry (hovercraft)
-Fokker_F27
-Fokker F27
-H-Trans-Pantheress
-Pantheress
-H-Trans-Pantheress-Back
-Pantheress (rear engine)
-H-Trans-Tiger-Car
-H-Trans Tigress passenger car
-H-Trans-Tiger-Mail-Car
-H-Trans Tigress mail car
-H-Trans-Tigress-II-Back
-Tigress-II Rear Engine
-H-Trans-Tigress-II-Front
-Tigress-II
-Hadley-Page-V1500
-RVg Hadley-Page V1500
-Heavy_ore_truck
-Heavy ore truck
-Hochbordwagen
-Coal waggon (18t)
-Holzanhaenger
-JET Wood trailer
-Holztrailer
-Wood semitrailer
-Holztransporter
-H-Trans Wood truck
-Holzwagen
-H-Trans Wood stake car
-Horsebookscariage
-Horse piece goods Carriage
-Horsemailcariage
-Horse mail Carriage
-Horsepapercariage
-Horse Paper Carriage
-Horsepassengerscariage
-Horse Passengers Carriage
-Horses
-Horses
-Horsewoodcariage
-Horse Wood Carriage
-HVPosttransporter
-DIBU/H-Trans Mail van
-ICE_TD-front
-ICE-TD
-JNR_C11
-JNR C11 (2-6-4T)
-JumboJet
-Boeing 747 "Jumbo Jet"
-Kohleanhaenger
-H-Trans Trailer MK2
-Kohletransporter
-H-Trans Truck
-Kohlewagen
-H-Trans Freight car MK2
-Kunststofanhaenger
-H-Trans Plastics trailer
-Kunststofftransporter
-H-Trans Plastics truck
-Lockhead_Tristar
-Lockheed Tristar
-Moebelschiff
-TPI/JET Goods ship
-Moebelwagen
-VT Vienna light freight car
-Muellschiff
-Ship for Waste Transportation
-NeuOelwagen
-Oil waggon (80t)
-Oelanhaenger
-H-Trans Oil tanker trailer
-Oelwagen
-VT Vienna Oil tanker
-Oiltrailer
-Oil semitrailer
-OldOil
-Oil waggon (18t)
-Papieranhaenger
-Trikky Paper trailer
-Papiertransporter
-Trikky Paper truck
-Papierwagen
-VT Vienna Paper car
-Passagierwagen
-H-Trans Passenger coach
-Pferdebahn
-Horse-drawn tram
-Pferdebahnwagen
-Passenger car (horse-drawn)
-Postschiff
-Postship
-Posttransporter
-H-Trans Mail van
-Postwagen
-H-Trans Mail/Baggage car
-PrPersonenwagen
-Passenger Wagon I
-PrPostwagen
-Post/Luggage Waggon I
-RenaultTH5
-Renault TH5
-Sandanhaenger
-WF Ultd. Sand trailer
-Sandtransporter
-WF Ultd. truck
-schooner
-Nova Scotia Schooner
-SD40-2-front
-SD40-2
-SlowFerry
-H-Trans Passenger Ferry
-SMPoiltruck
-SMP oil truck
-Stahlanhaenger
-H-Trans Steel trailer
-Stahltransporter
-H-Trans Steel truck
-Stahlwagen
-VT Vienna Steel car
-Staubkesselwagen
-VT Vienna Plastics car
-Stoneanhaenger
-WF Ultd. Stone trailer
-Stonetransporter
-WF Ultd. truck MK2
-SuperConstellation
-Super Constellation
-Tanklastzug
-H-Trans Oil tanker
-Tatra-T4
-Tatra T4
-TPBeiwagen
-TPI VT98 Passenger coach
-TPPassagierwagen
-TPI Lopomo Passenger coach
-TPSchienenbus
-TPI VT98
-Tram_GT6_Ende
-Tram GT6 (rear)
-Tram_GT6_Kopf
-Tram GT6
-Tugboat
-Tugboat
-VolvoFH12
-Volvo FH12 truck tractor
-Zeppelin
-Zeppelin
-#______________________________________way______________________________________
-#______________________________________way______________________________________
-asphalt_road
-Asphalt road
-city_road
-City road
-cobblestone_road
-Cobblestone road
-concrete_sleeper_track
-Concrete sleepers railroad track
-dirt_road
-Dirt road
-elevated_monorail
-elevated monorail
-gavel_road
-Gravel road
-Kanal
-Canal
-MaglevTrack
-Maglev Tracks
-MaglevTrackElevated
-Elevated Maglev Tracks
-mip_cobblestone_road
-MIP Cobblestone road
-Powerline
-Powerline
-Rillenschienen
-tramway track
-runway_grass
-Grass runway
-runway_modern
-Modern runway
-sand_track
-Low-cost tracks
-steel_sleeper_track
-Steel sleepers railroad track
-taxiway
-Taxiway
-wooden_sleeper_track
-Wooden sleepers railroad track
-#__________________________________way-object___________________________________
-#__________________________________way-object___________________________________
-HighSpeedOverheadpower
-High speed overhead power
-SlowOverheadpower
-Low-speed overhead power

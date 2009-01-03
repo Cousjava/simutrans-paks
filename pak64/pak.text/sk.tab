@@ -5,19 +5,11 @@
 #                            Language: sk Slovenèina                           #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 28.06 2008                           #
+#                            Date Created: 3.01 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                             Jan Poláèek - Jerome                             #
-#                           note: AKA Jerome Heretic                           #
-#                    Ladislav Michnoviè - ladislav.michnovic                   #
-#                                    note:                                     #
-#                            Ondøej Machulda - Ondra                           #
-#                                    note:                                     #
-#                           Peter Karak - peter.karak                          #
-#                                    note:                                     #
-#                          Markus Pristovsek - prissi                          #
-#                            note: Administrator 64                            #
+#                                    - prissi                                  #
+#              note: Administrator Base texts / pak64 / pak.japan              #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -33,37 +25,37 @@ Oce?ový ?elezni?ný
 01_CITY
 Radnica
 A1_ALTE_KIRCHE
-Slávny starý kostol, ktorý\nmusí ka?dý aspo? raz\nvidiet'.\n
+Slávny starý kostol, ktorý\nmusí ka?dý aspo? raz\nvidiet'.\n\n
 A2_SCHLOSS1
-Zámok bláznivého krá?a.\nObrovská obdivuhodnost' !\n
+Zámok bláznivého krá?a.\nObrovská obdivuhodnost' !\n\n
 A3_BURG1
-Ruina, ktorá u? aj lep?ie\n?asy videla. Oplatí sa ju\nv?dy nav?tívit'.\n
+Ruina, ktorá u? aj lep?ie\n?asy videla. Oplatí sa ju\nv?dy nav?tívit'.\n\n
 A4_SCHLOSS2
-Toto staré panské sídlo je\nve?kým cie?om turistov.\n
+Toto staré panské sídlo je\nve?kým cie?om turistov.\n\n
 A5_STONEHENGE
-Tajuplný kruh zo skál,\nstarodávny a plný mýtov.\n
+Tajuplný kruh zo skál,\nstarodávny a plný mýtov.\n\n
 A6_DOME
-Táto o?arujúca stará\ngotická katedrála je ve?kou\nturistickou atrakciou.\n
+Táto o?arujúca stará\ngotická katedrála je ve?kou\nturistickou atrakciou.\n\n
 BusStop
 Autobusová/elektri?ková\nzastávka\n
 DenkFlor
-Pamätník Flora ,,WF Ultd.''\nWautersa, stavite?a\ntovární.\n
+Pamätník Flora ,,WF Ultd.''\nWautersa, stavite?a\ntovární.\n\n
 DenkHajo
-Pamätník venovaný\nHansjörgovi Malthanerovi,\nktorý sám 7 rokov vytváral\ntúto hru.\n
+Pamätník venovaný\nHansjörgovi Malthanerovi,\nktorý sám 7 rokov vytváral\ntúto hru.\n\n
 DenkMHz
-Pamätník venovaný\nGeorgovi Heidukovi\nmajstrovi v budovaní s\nprenikavým zmyslom pre\ndetaily.\n
+Pamätník venovaný\nGeorgovi Heidukovi\nmajstrovi v budovaní s\nprenikavým zmyslom pre\ndetaily.\n\n
 DenkOwen
-Pamätník Owena Rudgea,\nznámeho finan?ného\nexperta.\n
+Pamätník Owena Rudgea,\nznámeho finan?ného\nexperta.\n\n
 DenkSeth
-Pamätník Setha C. Triggsa,\nslávneho architekta, ktorý\nnavrhol mnoho krásnych\nmestských budov. Je tiez\nznámy mnohými ?túdiami,\nako zdokonalit systémy\ndopravy.\n
+Pamätník Setha C. Triggsa,\nslávneho architekta, ktorý\nnavrhol mnoho krásnych\nmestských budov. Je tiez\nznámy mnohými ?túdiami,\nako zdokonalit systémy\ndopravy.\n\n
 DenkTomas
-Tento pamätník je\nvenovaný Tomá?ovi\nKube?ovi, ktorý pomáhal\nvylep?ovat' Simutrans vo\nve?a, ve?a oh?adoch\nsvojimi radami a tvrdou\nprácou.\n
+Tento pamätník je\nvenovaný Tomá?ovi\nKube?ovi, ktorý pomáhal\nvylep?ovat' Simutrans vo\nve?a, ve?a oh?adoch\nsvojimi radami a tvrdou\nprácou.\n\n
 DenkTrikky
-Pamätník ,,Trikkyho'' Ricka\nMcGreala, slávneho\narchitekta, ktorý navrhol\nmnoho prekrásnych budov.\n
+Pamätník ,,Trikkyho'' Ricka\nMcGreala, slávneho\narchitekta, ktorý navrhol\nmnoho prekrásnych budov.\n\n
 DenkVM
-Pamätník Manfreda ,,VT\nVienna''  Tomaschitza,\n?elezni?ného stavite?a.\n
+Pamätník Manfreda ,,VT\nVienna''  Tomaschitza,\n?elezni?ného stavite?a.\n\n
 DenkVolker
-Pamätník Volkera Meyera,\nktorý zdokonalil Simutrans v\nmnohých oblastiach.\n
+Pamätník Volkera Meyera,\nktorý zdokonalil Simutrans v\nmnohých oblastiach.\n\n
 FreightTrainStop
 ?elezni?ná nákladná stanica
 GCG1TrainStop
@@ -81,25 +73,75 @@ Jednoduchá halová ?el. stanica
 PSHall2TrainStop
 Jednoduchá halová ?el. stanica
 RUIN_0
-Stará ruina, ktorá stále\ndoká?e pritiahnut' mnoho\nnáv?tevníkov.\n
+Stará ruina, ktorá stále\ndoká?e pritiahnut' mnoho\nnáv?tevníkov.\n\n
 ShipStop
 Jednoduchý lodný prístav\n
 STADIUM2
-Tento ?tadión je domovom\nmnohých zábavných\n?portových udalostí ! Mô?e\npojat' a? 25.000 divákov.\n
+Tento ?tadión je domovom\nmnohých zábavných\n?portových udalostí ! Mô?e\npojat' a? 25.000 divákov.\n\n
 Tennis_Court
-Tenisové kurty\n
+Tenisové kurty\n\n
 Theatre
-Divadlo\n
+Divadlo\n\n
 TrainStop
 ?elezni?ná osobná stanica\n
 Windmill
-Veterný mlyn\n
-#____________________________________cursor_____________________________________
-#____________________________________cursor_____________________________________
-Baum
-Strom
-Remove
-Odstránit'
+Veterný mlyn\n\n
+#__________________________________dummy_info___________________________________
+#__________________________________dummy_info___________________________________
+factory_2Raffinerie_details
+Rafinéria (pre benzín)
+factory_Autohaus_details
+Autopredaj?a
+factory_Autohersteller_details
+Automobilka
+factory_Buchgrosshandel_details
+Kníhkupectvo
+factory_Cementmill_details
+Cementáre?
+factory_CHEMIST_details
+Lekáre? (od Setha)
+factory_Concretefactory_details
+Betonáre?
+factory_Druckerei_details
+Tla?iare?
+factory_Erzbergwerk_details
+?eleznorudná ba?a
+factory_Kohlegrube_details
+Uho?ná ba?a
+factory_Kohlekraftwerk_details
+Uho?ná elektráre?
+factory_Materialswholesale_details
+Staveb. ve?koobchod
+factory_Moebelfabrik_details
+Nábytkáre?
+factory_Moebelhaus_details
+Dom nábytku
+factory_Nutzwald_details
+Les
+factory_Oelbohrinsel_details
+Ropná plo?ina
+factory_Oelfeld_details
+Ropné pole
+factory_Oelkraftwerk_details
+Tepelná elektráre?
+factory_Papierfabrik_details
+Papiere?
+factory_Pharmaceutics_details
+Farmaceutická továre?
+factory_Raffinerie_details
+Rafinéria (pre plasty)
+factory_Saegewerk_details
+Píla
+factory_Sandquarry_details
+Ba?a na piesok
+factory_Stahlwerk_details
+Oceliare?
+factory_Stonequarry_details
+Kame?olom
+factory_TANKE_details
+?erpacia stanica
+factory_Windkraftwerk_details
+Veterná elektráre?
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -120,8 +162,6 @@ Druckerei
 Tla?iare?
 Erzbergwerk
 ?eleznorudná ba?a
-Incinerator
-Spa?ov?a
 Kohlegrube
 Uho?ná ba?a
 Kohlekraftwerk
@@ -150,8 +190,6 @@ Saegewerk
 Píla
 Sandquarry
 Ba?a na piesok
-scrap_yard
-Skládka odpadu
 Stahlwerk
 Oceliare?
 Stonequarry
@@ -200,22 +238,6 @@ Stahl
 Oce?
 Stone
 Kamenie
-waste
-smeti
-#_____________________________________menu______________________________________
-#_____________________________________menu______________________________________
-ListTools
-Preh?ady
-ShipTools
-Lodná doprava
-SlopeTools
-Zo?ikmenie terénu
-SpecialTools
-?peciálne nástroje
-#_____________________________________misc______________________________________
-#_____________________________________misc______________________________________
-Construction
-Stavby
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -230,12 +252,6 @@ CATEGORY_05
 nápoje
 CATEGORY_06
 drevo
-#_____________________________________smoke_____________________________________
-#_____________________________________smoke_____________________________________
-Diesel
-diesel
-Steam
-para
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103

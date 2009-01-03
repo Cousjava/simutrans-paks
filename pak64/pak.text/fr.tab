@@ -5,27 +5,17 @@
 #                             Language: fr Francais                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 28.06 2008                           #
+#                            Date Created: 3.01 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                        Alexandre Frauenknecht - al_cff                       #
+#                         Roman Schwörer - Gotthardlok                         #
 #                                    note:                                     #
 #                          Jean Beaudet - cagliostro_2                         #
 #                                    note:                                     #
-#                          Ghyselinck Maxime - Gilles                          #
-#                                    note:                                     #
-#                         Roman Schwörer - Gotthardlok                         #
-#                                    note:                                     #
-#                             Jan Li?ka - jan.licka                            #
-#                            note: DHL Exel Company                            #
-#                           Vincent Sneyers - korozif                          #
-#                                    note:                                     #
 #                            Luc Mallet - luc.mallet                           #
 #                                    note:                                     #
-#                            Matthieu Pupat - mpupat                           #
-#                                    note:                                     #
-#                          Markus Pristovsek - prissi                          #
-#                            note: Administrator 64                            #
+#                                    - prissi                                  #
+#              note: Administrator Base texts / pak64 / pak.japan              #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -44,6 +34,8 @@ ModernRoad
 Pont à piliers
 MonorailRamp
 Rampe pour monorail
+PowerBridge
+Pont à haute tension
 SteelRail
 Pont ferroviaire en acier
 tb_classic_road
@@ -85,17 +77,17 @@ Siège de votre entreprise!
 3headquarter
 Siège de votre entreprise!
 A1_ALTE_KIRCHE
-Une vieille église célèbre.\n\nTout le monde devrait avoir\nvu ce fantastique bâtiment.\n
+Une vieille église célèbre.\n\nTout le monde devrait avoir\nvu ce fantastique bâtiment.\n\n
 A2_SCHLOSS1
-Le château du roi fou.\n\nCela vaut la peine d'être vu!\n
+Le château du roi fou.\n\nCela vaut la peine d'être vu!\n\n
 A3_BURG1
-Des ruines\n\nqui en disent sur des temps\nmeilleurs. Elles valent\ntoujours le détour.\n
+Des ruines\n\nqui en disent sur des temps\nmeilleurs. Elles valent\ntoujours le détour.\n\n
 A4_SCHLOSS2
-Vieux château\n\nqui vaut toujours le coup\nd'oeuil.\n
+Vieux château\n\nqui vaut toujours le coup\nd'oeuil.\n\n
 A5_STONEHENGE
-Stonehenge\n\nUn ancien cercle de pierres.\nTrès mysterieux!\n
+Stonehenge\n\nUn ancien cercle de pierres.\nTrès mysterieux!\n\n
 A6_DOME
-Cathédrale\n\nCette magnifique vieille\ncathédrale est une\nvéritable attraction.\n
+Cathédrale\n\nCette magnifique vieille\ncathédrale est une\nvéritable attraction.\n\n
 AirDepot
 Hangar
 AirStop
@@ -110,154 +102,236 @@ BigTerminal477
 Grand Terminal
 BusStop
 Arrêt de bus\n
-CarDepot
-Depôt pour des véhicules routiers
 Car_StationBlg
 parc de stationnement
+CarDepot
+Depôt pour des véhicules routiers
 ChannelStop
 Port fluvial
 COM_00_01
-Petite boutique\n
+Petite boutique\n\n
 COM_00_02
-Station service.\n\nAttention, les prix y sont\nexorbitants!\n
+Station service.\n\nAttention, les prix y sont\nexorbitants!\n\n
 COM_00_03
-Maboulle.\n\nUn bar-billard très branché.\n
+Maboulle.\n\nUn bar-billard très branché.\n\n
 COM_00_05
-Petite banque.\n\nCette banque n'est, ma foi,\npas très sure. Les hold-up\ny sont monaie courante.\n
+Petite banque.\n\nCette banque n'est, ma foi,\npas très sure. Les hold-up\ny sont monaie courante.\n\n
 COM_00_06
-Impossible de trouver un\nmeilleur café que celui servi\nsur la terrasse de ce\nbistrot\n
+Impossible de trouver un\nmeilleur café que celui servi\nsur la terrasse de ce\nbistrot\n\n
 COM_00_08
-Appartements avec des\nmagasins.\n
+Appartements avec des\nmagasins.\n\n
 COM_00_10
-Petit bloc de bureaux avec\nparking\n
+Petit bloc de bureaux avec\nparking\n\n
 COM_00_11
-Nova Nouveautés. Récent\net coloré magasin de\nnouveautés vendant de\ntout depuis les lampes à\nlave jusqu'aux cuirassés\ngris. (C'est toute une\nnouveauté)\n
+Nova Nouveautés. Récent\net coloré magasin de\nnouveautés vendant de\ntout depuis les lampes à\nlave jusqu'aux cuirassés\ngris. (C'est toute une\nnouveauté)\n\n
 COM_00_12
-Immeuble de bureaux\n
+Immeuble de bureaux\n\n
 COM_00_14
-Ce bâtiement ressemble à\nune usine, mais il s'agit en\nfait d'un entrepôt pour le\ntraffic illégale de livres de\nprières.\n
+Ce bâtiement ressemble à\nune usine, mais il s'agit en\nfait d'un entrepôt pour le\ntraffic illégale de livres de\nprières.\n\n
 COM_00_18
-Bureaux moderne\n
+Bureaux moderne\n\n
 COM_00_22
-Bureaux de l'ONU, sorte\nd'embassade pour la région\n
+Bureaux de l'ONU, sorte\nd'embassade pour la région\n\n
 COM_01_01
-Aire de départ et d'arrivé de\nmontgolfières. Le site est\nfréquenté par de nombreux\npoliticiens, c'est pourquoi il\nn'y a pas de bonbonne \nde gaz.\n
+Aire de départ et d'arrivé de\nmontgolfières. Le site est\nfréquenté par de nombreux\npoliticiens, c'est pourquoi il\nn'y a pas de bonbonne \nde gaz.\n\n
 COM_01_04
-Promenade boisée\n
+Promenade boisée\n\n
 COM_01_09
-Vieux cinéma\n
+Vieux cinéma\n\n
 COM_01_10
-La clinique locale. La\nfaçade a été changé par\nune nouvelle plus joyeuse\npour remonter le moral des\npatients, spécialement\nceux en visite chez le\ndentiste. Ne gardez pas de\ndents contre eux!\n
+La clinique locale. La\nfaçade a été changé par\nune nouvelle plus joyeuse\npour remonter le moral des\npatients, spécialement\nceux en visite chez le\ndentiste. Ne gardez pas de\ndents contre eux!\n\n
 COM_01_17
-Immeuble de bureau\n
+Immeuble de bureau\n\n
 DenkFlor
-Monument\n\nCe monument est dédié à\nFlor 'WF Ultd.' Wauters, le\ncélèbre ingénieur qui créa\ntant de véhicules\nferroviaires et routiers. Il\nest aussi connu pour avoir\nréalisé de belles usines.\n
+Monument\n\nCe monument est dédié à\nFlor 'WF Ultd.' Wauters, le\ncélèbre ingénieur qui créa\ntant de véhicules\nferroviaires et routiers. Il\nest aussi connu pour avoir\nréalisé de belles usines.\n\n
 DenkHajo
-Monument\n\nMonument pour Hajo, le créateur de\nSimutrans.\n
+Monument\n\nMonument pour Hajo, le créateur de\nSimutrans.\n\n
 DenkMHz
-Monument\n\nCet obsérvatoire est pour MHz\net son pénétration pour des\ndétails.\n
+Monument\n\nCet obsérvatoire est pour MHz\net son pénétration pour des\ndétails.\n\n
 DenkOwen
-Monument\n\nCe lieu est dédié à Owen\nRudge le célèbre expert des\nfinances et technicien du\nson.\n
+Monument\n\nCe lieu est dédié à Owen\nRudge le célèbre expert des\nfinances et technicien du\nson.\n\n
 DenkSeth
-Monument\n\nCe lieu est dédié à Seth C.\nTriggs le célèbre architecte\nqui dessina tant de\nmagnifiques bâtiments\nurbains.\n
+Monument\n\nCe lieu est dédié à Seth C.\nTriggs le célèbre architecte\nqui dessina tant de\nmagnifiques bâtiments\nurbains.\n\n
 DenkTomas
-Monument\n\nCe monument est dédié à\nTomas Kubes qui aida à\nperfectionner Simutrans\ndans tant et tant de\ndomaines grâce à son\ntravail acharné.\n
+Monument\n\nCe monument est dédié à\nTomas Kubes qui aida à\nperfectionner Simutrans\ndans tant et tant de\ndomaines grâce à son\ntravail acharné.\n\n
 DenkTrikky
-Monument\n\nCe monument est dédié à\n'Trikky' Rick McGreal le\ncélèbre architecte qui\ndessina tant de bâtiments\nimposants.\n
+Monument\n\nCe monument est dédié à\n'Trikky' Rick McGreal le\ncélèbre architecte qui\ndessina tant de bâtiments\nimposants.\n\n
 DenkVM
-Monument\n\nCe monument est dédié à\nManfred 'VT Vienna'\nTomaschitz le célèbre\ningénieur qui réalisa le\ndesign de nombreux\nvéhicules ferroviaires.\n
+Monument\n\nCe monument est dédié à\nManfred 'VT Vienna'\nTomaschitz le célèbre\ningénieur qui réalisa le\ndesign de nombreux\nvéhicules ferroviaires.\n\n
 DenkVolker
-Monument\n\ncette sculpture fut contruite\npar Volker Meyer qui a\nperfectionné Simutrans\ndans tant et tant de\ndomaines.\n
+Monument\n\ncette sculpture fut contruite\npar Volker Meyer qui a\nperfectionné Simutrans\ndans tant et tant de\ndomaines.\n\n
 Eingang
 Entrée
+Fluid_StationBlg
+Réservoir de pétrole
 FreightTrainStop
 Quai à marchandise
+Gas_StationBlg
+Réservoir de gaz
 Goods_StationBlg
 Entrepôt
+Gymnasium
+Lycée/École secondaire\n\n
+IND_00_01
+Entrepôt\n\n
 IND_01_01
-Parking Gratuit\n\nIl y a même quelques\npersonnes qui abandonnent\nleur voiture ici.\n
+Parking Gratuit\n\nIl y a même quelques\npersonnes qui abandonnent\nleur voiture ici.\n\n
 IND_01_03
-Grand Réservoir De Gaz\n
+Grand Réservoir De Gaz\n\n
 IND_01_08
-Fabrique D'Engrais\n
+Fabrique D'Engrais\n\n
 IND_01_10
-Fabrique D'Outils\n
+Fabrique D'Outils\n\n
 LargeShipStop
 Port (grands quais)
 leftShipStop
 Grue Hautes-Charges
 Lighthouse
-Phare\n
-midleShipStop
-quai
+Phare\n\n
 ModernAirTerminal477
 Terminal Aérien Moderne
 MonorailDepot
 Dépôt De Monorail
 OldTownhall
-Vieil Hôtel De Ville\n
+Vieil Hôtel De Ville\n\n
 PlainAirStop
 Arrêt Pour Avions
 PostOffice
-Bureau De Poste
+Bureau de poste
 PostStop
 Boîte aux lettres
+PSFreightTrainStop
+Quai de marchandise
+PSHall1TrainStop
+Quai avec comptoir à journaux
+PSHall2TrainStop
+Quai
 Raven_Kirche
-Église St-Meinrad\n\nL'eremite St-Meinrad a été\naccompagné par deux\ncorbeaux selon la legnde.\nQuand il fut assassiné, les\ncorbeaux suivaient les\nmeurtriers et les ont\nconvaincus. À l'endroit de son\neremitage se trouve\naujourd'hui le couvent\nEinsiedeln.\n
+Église St-Meinrad\n\nL'eremite St-Meinrad a été\naccompagné par deux\ncorbeaux selon la legnde.\nQuand il fut assassiné, les\ncorbeaux suivaient les\nmeurtriers et les ont\nconvaincus. À l'endroit de son\neremitage se trouve\naujourd'hui le couvent\nEinsiedeln.\n\n
 RES_00_01
-Maisonette avec jardin\n
+Maisonette avec jardin\n\n
 RES_00_02
-Petite maison avec un\njardin\n
+Petite maison avec jardin\n\n
 RES_00_03
-Petite maison avec un\njardin\n
+Petite maison avec jardin\n\n
 RES_00_04
-Petite maison\n
+Petite maison\n\n
 RES_00_06
-Un petit jet d'eau. Même s'il\nn'est pas aussi grand que\ncelui à Genève, il fait du\nplaisir aux gens qui se\npromènent autour de lui,\nspécialement en été.\n
+Un petit jet d'eau. Même s'il\nn'est pas aussi grand que\ncelui à Genève, il fait du\nplaisir aux gens qui se\npromènent autour de lui,\nspécialement en été.\n\n
 RES_00_07
-Maison avec jardin\n
+Maison avec jardin\n\n
 RES_00_08
-Maison moyenne\n
+Maison moyenne\n\n
+RES_00_09
+Petit parc avec un étang à\ncanard\n\n
 RES_00_11
-Grande maison avec jardin\n
+Grande maison avec jardin\n\n
 RES_00_13
-Maisons mitoyennes avec\njardins\n
+Maisons mitoyennes avec\njardins\n\n
 RES_00_19
-Appartements moderne\n
+Appartements moderne\n\n
 RES_01_01
-Maison préfabriquée\nmoderne avec une grande\nchambre pour les enfants\nau grenier\n
+Maison préfabriquée\nmoderne avec une grande\nchambre pour les enfants\nau grenier\n\n
 RES_01_07
-Grande maison luxueuse\n
+Grande maison luxueuse\n\n
 RES_01_08
-Maison avec jardin\n
+Maison avec jardin\n\n
 RES_01_10
-Maison moderne\n
+Maison moderne\n\n
 RES_01_12
-Immeuble en briques\n
+Immeuble en briques\n\n
+Residenz
+Résidence\n\nCet endroit est utilisé par le\nGourou de la place pour\nenseigner la méditation et\nla paix intérieur. Certaines\nde ses techniques sont\ntrès dicutables et font l'objet\nd'enquête des autorités de la\nplace.\n\n
+RUIN_0
+Château médieval\n\nCe château tombait en\nruine mais une partie a été\nreconstruite. C'est devenu\nun musée aujourd'hui. La\nvue du haut de la tour est\nmagnifique, mais il y a\nbeaucoup d'escalier et la\nsolidité laisse à désirer.  \n\n
+SandStationMHz
+Arrêt sans quai
 ShipDepot
 chantier naval
 STADIUM2
-Stade\n\nLe stade est lieu de\nnombreux événements\nsportifs très excitants.\n
+Stade\n\nLe stade est lieu de\nnombreux événements\nsportifs très excitants.\n\n
+Tennis_Court
+Terrain de tennis\n\n
+TrainDepot
+Dépôt de train
 TrainStop
 quai couvert\n
+TrainStopMaglev
+Quai Maglev
+TrainStopMaglevIndicator
+Quai Maglev avec tableau d'affichage
 TramDepot
 Dépot de Trams
 Windmill
-Moulin à vent\n
+Moulin à vent\n\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
 Ambulance
+FordT
+Ford Modèle T
 green_car
 Voiture verte
-#____________________________________cursor_____________________________________
-#____________________________________cursor_____________________________________
-Baum
-Arbre
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
+factory_2Raffinerie_details
+Raffinerie (Carburant)
+factory_3Raffinerie_details
+Raffinerie
+factory_Autohaus_details
+Concessionnaire auto
+factory_Autohersteller_details
+Usine de voitures
+factory_Buchgrosshandel_details
+Grossiste en livres
+factory_Cementmill_details
+Cimenterie
+factory_ChemicalPlant_details
+Usine chimique
+factory_CHEMIST_details
+Pharmacie
+factory_Concretefactory_details
+Fabrique de béton
+factory_Druckerei_details
+Imprimerie
+factory_Erzbergwerk_details
+Mine de fer
 factory_Kohlegrube_details
-<title>Au sujet des mines de charbon</title><h1>Mines de charbon</h1><p>Des mineurs doivent extraire le charbon et c'est un travail très dûr, mais le charbon est nécessaire à des industries comme les fonderies et les centrales électriques.<p>
+Mine de charbon
+factory_Kohlekraftwerk_details
+Centrale électrique
+factory_Materialswholesale_details
+Grossiste de matériaux
+factory_Moebelfabrik_details
+Fabrique de meubles
+factory_Moebelhaus_details
+Grossiste de meubles
+factory_Nutzwald_details
+Exploitation forestière
+factory_Oelbohrinsel_details
+Plate-forme pétrolière
+factory_Oelfeld_details
+Puits de pétrole
+factory_Papierfabrik_details
+Papeterie
+factory_Pharmaceutics_details
+Pharmaceutique
+factory_Raffinerie_details
+Raffinerie (Plastique)
+factory_Saegewerk_details
+Scierie
+factory_SaegewerkMHz_details
+Vieille scierie
+factory_Sandquarry_details
+Carrière de sable
+factory_Stahlwerk_details
+Aciérie
+factory_Stonequarry_details
+Carrière de pierre
+factory_TANKE_details
+Station-service
+factory_Windkraftwerk_details
+Eolienne
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -306,6 +380,8 @@ Raffinerie
 Raffinerie (Plastique)
 Saegewerk
 Scierie
+SaegewerkMHz
+Vieille scierie
 Sandquarry
 Carrière de sable
 Stahlwerk
@@ -356,12 +432,6 @@ Stahl
 Acier
 Stone
 Pierre
-waste
-déchets
-#_____________________________________misc______________________________________
-#_____________________________________misc______________________________________
-Construction
-Construction
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -386,26 +456,10 @@ Signals
 signaux
 traffic_light
 feux tricolores
-#_____________________________________smoke_____________________________________
-#_____________________________________smoke_____________________________________
-Diesel
-diesel
-Steam
-vapeur
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Tree6
-Sapin\n
-#____________________________________tunnel_____________________________________
-#____________________________________tunnel_____________________________________
-FastRailTunnel
-tunnel ferroviaire à grande vitesse
-FastRoadTunnel
-tunnel d'autoroute
-RailTunnel
-Tunnel ferroviaire
-RoadTunnel
-Tunnel routière
+Sapin\n\n
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -472,6 +526,8 @@ FastFerry
 Ferry rapide O.Bang
 Fokker_F27
 Fokker F27
+H-Trans-Pantheress
+Pantheress
 H-Trans-Pantheress-Back
 Pantheress (motrice arrière)
 H-Trans-Tiger-Car
@@ -486,6 +542,8 @@ Hochbordwagen
 wagon à charbon (18t)
 Holzanhaenger
 Remorque à bois JET
+Holztrailer
+Remorque à bois
 Holztransporter
 Camion à bois H-Trans
 Holzwagen
@@ -504,6 +562,8 @@ Horsewoodcariage
 Charrette à bois
 HVPosttransporter
 Fourgon postal VELO/H-Trans
+ICE_TD-front
+ICE-TD
 Kohleanhaenger
 Remorque à charbon
 Kohletransporter
@@ -562,8 +622,6 @@ TPPassagierwagen
 Wagon passagers TPI
 TPSchienenbus
 TPI VT98 (diesel)
-waste wagon
-wagon de déchets
 Zeppelin
 Dirigeable
 #______________________________________way______________________________________

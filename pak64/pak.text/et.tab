@@ -5,13 +5,11 @@
 #                              Language: et Eesti                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 28.06 2008                           #
+#                            Date Created: 3.01 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                            Kaspar Kask - kasskaspu                           #
-#                                    note:                                     #
-#                          Markus Pristovsek - prissi                          #
-#                            note: Administrator 64                            #
+#                                    - prissi                                  #
+#              note: Administrator Base texts / pak64 / pak.japan              #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -65,17 +63,17 @@ Su firma peakorter!
 3headquarter
 Su firma peakorter!
 A1_ALTE_KIRCHE
-kuulus kirik\n
+kuulus kirik\n\n
 A2_SCHLOSS1
-Neuschwansteini loss\n\nTõsiselt hullu kuninga loss. See\non väärt nägemist!\n
+Neuschwansteini loss\n\nTõsiselt hullu kuninga loss. See\non väärt nägemist!\n\n
 A3_BURG1
-Varemed\n\njutustavad parematest aegadest.\nNad on alati väärt retke.\n
+Varemed\n\njutustavad parematest aegadest.\nNad on alati väärt retke.\n\n
 A4_SCHLOSS2
-Vana loss\n\nsuurepärase maalide kollektsiooniga.\nTäiuslik vaatamisväärsus\nisegi vihmasel päeval.\n
+Vana loss\n\nsuurepärase maalide kollektsiooniga.\nTäiuslik vaatamisväärsus\nisegi vihmasel päeval.\n\n
 A5_STONEHENGE
-Stonehenge\n\niidne kivide ring. Tunne\nmüstikat monoliitide vahel\nkõndides.\n
+Stonehenge\n\niidne kivide ring. Tunne\nmüstikat monoliitide vahel\nkõndides.\n\n
 A6_DOME
-Vana katedraal\n\nselle linna keskus juba umbes\ntuhat aastat.\n
+Vana katedraal\n\nselle linna keskus juba umbes\ntuhat aastat.\n\n
 AirDepot
 Angaar aastast 1900
 AirportShed1930
@@ -84,8 +82,6 @@ AirStop
 lennukisild\n
 AirTerminal477
 Lennujaama terminal (1950)
-anfangShipStop
-Sadam
 Avila_Big_StationBlg
 Suur jaamahoone
 Avila_Small_StationBlg
@@ -96,38 +92,36 @@ Bulk_StationBlg
 söejaam
 BusStop
 bussipeatus\n
+Car_StationBlg
+autoparkla
 CarDepot
 garaa?
 CarStop
 parkla\n
-Car_StationBlg
-autoparkla
 ChannelStop
 kai
 COM_00_01
-Väike pood\n
+Väike pood\n\n
 COM_00_05
-läbisõidupank\n
+läbisõidupank\n\n
 COM_00_08
-Kortermaja poodidega\n
+Kortermaja poodidega\n\n
 COM_00_10
-Keskmine büroohoone\n
+Keskmine büroohoone\n\n
 COM_00_12
-Büroohoone\n
+Büroohoone\n\n
 COM_00_18
-Moodne büroohoone\n
+Moodne büroohoone\n\n
 COM_01_09
-Vana kino\n
+Vana kino\n\n
 COM_01_17
-Keskmine büroohoone\n
+Keskmine büroohoone\n\n
 MHzSmallStation
 Jaamaehitis (MHz-ilt)
-midleShipStop
-kai
 ModernAirTerminal477
 Moodne lennujaamaterminal
 OldTownhall
-Vana linnahall\n
+Vana linnahall\n\n
 PostOffice
 Postkontor
 PSFreightTrainStop
@@ -137,51 +131,51 @@ Jaamahall putkaga
 PSHall2TrainStop
 Jaama hall
 Raven_Kirche
-St. Meinradi kirik\n\nEremiit püha Meinrad oli\nsaadetud kahe kaarna\npoolt. Kui ta mõrvati, kaks\nkaarnat jälitasid mõrvareid\nja mõistsid nad süüdi. Täna\non tema onni kohal Einsiedelni\nklooster.\n
-Residenz
-Residents. Seda kohta\nkasutab kohalik joogaguru,\nkes õpetab mediteerimist ja\nsisemist rahu. Seal on palju\nBonge, mis iganes need ka\nei ole.\n
+St. Meinradi kirik\n\nEremiit püha Meinrad oli\nsaadetud kahe kaarna\npoolt. Kui ta mõrvati, kaks\nkaarnat jälitasid mõrvareid\nja mõistsid nad süüdi. Täna\non tema onni kohal Einsiedelni\nklooster.\n\n
 RES_00_01
-Väike aiaga maja\n
+Väike aiaga maja\n\n
 RES_00_02
-Väike aiaga maja\n
+Väike aiaga maja\n\n
 RES_00_03
-Väike aiaga maja\n
+Väike aiaga maja\n\n
 RES_00_04
-Väike maja\n
+Väike maja\n\n
 RES_00_06
-Väike purskkaev. Kuigi see\nei ole nii suur kui Genevas,\nsee rõõmustab inimesi kes\nselle ümber käivad, eriti\nsuvel.\n
+Väike purskkaev. Kuigi see\nei ole nii suur kui Genevas,\nsee rõõmustab inimesi kes\nselle ümber käivad, eriti\nsuvel.\n\n
 RES_00_07
-Keskmine maja\n
+Keskmine maja\n\n
 RES_00_08
-Keskmine maja\n
+Keskmine maja\n\n
 RES_00_09
-Väike park parditiigiga\n
+Väike park parditiigiga\n\n
 RES_00_10
-Muljetavaldav Moistboy\nmõis\n
+Muljetavaldav Moistboy\nmõis\n\n
 RES_00_11
-Suur maja aiaga\n
+Suur maja aiaga\n\n
 RES_00_13
-Topeltmaja aiaga\n
+Topeltmaja aiaga\n\n
 RES_00_16
-Vana villa\n
+Vana villa\n\n
 RES_00_19
-Moodsad korterid\n
+Moodsad korterid\n\n
 RES_01_01
-Moodne paneelmaja suure\ntoaga pööningul lapse\njaoks.\n
+Moodne paneelmaja suure\ntoaga pööningul lapse\njaoks.\n\n
 RES_01_02
-A-Frame tüüpi maja\n
+A-Frame tüüpi maja\n\n
 RES_01_07
-Suur luksmaja\n
+Suur luksmaja\n\n
 RES_01_08
-Keskmine maja aiaga\n
+Keskmine maja aiaga\n\n
 RES_01_10
-Moodne maja\n
+Moodne maja\n\n
 RES_01_12
-Kortermaja\n
+Kortermaja\n\n
 RES_02_16
-Lukskorterid varikatusega\n
+Lukskorterid varikatusega\n\n
+Residenz
+Residents. Seda kohta\nkasutab kohalik joogaguru,\nkes õpetab mediteerimist ja\nsisemist rahu. Seal on palju\nBonge, mis iganes need ka\nei ole.\n\n
 Tennis_Court
-Tenniseväljakud\n
+Tenniseväljakud\n\n
 Tower1930
 Lennujaamatorn (1930)
 TowerMoistboy
@@ -191,7 +185,7 @@ Rongidepoo
 VictorianStation
 Viktooria-stiilis rongijaam
 Windmill
-Tuuleveski\n
+Tuuleveski\n\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -200,16 +194,42 @@ Motorrad
 Mootorratas
 yellow_car
 Kollane auto
-#____________________________________cursor_____________________________________
-#____________________________________cursor_____________________________________
-Baum
-Puu
-City
-linn
-Query
-Luup
-Remove
-Eemalda
+#__________________________________dummy_info___________________________________
+#__________________________________dummy_info___________________________________
+factory_2Raffinerie_details
+Bensiinirafineerimisvabrik
+factory_3Raffinerie_details
+Gaasirafineerimisvabrik
+factory_Autohaus_details
+Autopood
+factory_Autohersteller_details
+Autotehas
+factory_Buchgrosshandel_details
+Raamatupood
+factory_Cementmill_details
+tsemenditehas
+factory_ChemicalPlant_details
+kemikaalitehas
+factory_CHEMIST_details
+apteek
+factory_Moebelfabrik_details
+Mööblitehas
+factory_Moebelhaus_details
+Kaubamaja
+factory_Nutzwald_details
+Puiduistandus
+factory_Oelbohrinsel_details
+Naftapuurtorn
+factory_Oelfeld_details
+Naftaväli
+factory_Oelkraftwerk_details
+elektrijaam
+factory_Papierfabrik_details
+Paberivabrik
+factory_Raffinerie_details
+Plastmassirafineermiskoda
+factory_Windkraftwerk_details
+Tuuleelektrijaam
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -268,14 +288,6 @@ Papier
 Paber
 PrintersInk
 Printeri tint
-#____________________________________ground_____________________________________
-#____________________________________ground_____________________________________
-Basement
-Kelder
-#_____________________________________misc______________________________________
-#_____________________________________misc______________________________________
-PowerSource
-Energiaallikas
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Woman
@@ -292,18 +304,10 @@ RailClose
 Raudteesulg
 traffic_light
 Valgusfoor
-#____________________________________symbol_____________________________________
-#____________________________________symbol_____________________________________
-Builder
-buldooser
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Latschenkiefer
-Mäe mänd\n
-#____________________________________tunnel_____________________________________
-#____________________________________tunnel_____________________________________
-RailTunnel
-Raudteetunnel
+Mäe mänd\n\n
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -374,8 +378,6 @@ Moebelschiff
 TPI/JET kaubalaev
 Moebelwagen
 VT Vienna kerge kauba auto
-Muellschiff
-Jäätmeveoks kasutatav laev
 Oelanhaenger
 H-Trans õlitankeri treiler
 Oelwagen

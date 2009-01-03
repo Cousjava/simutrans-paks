@@ -5,13 +5,11 @@
 #                              Language: ca Catala                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 28.06 2008                           #
+#                            Date Created: 3.01 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                           Marc Brugarolas - lupuzz                           #
-#                                    note:                                     #
-#                          Markus Pristovsek - prissi                          #
-#                            note: Administrator 64                            #
+#                                    - prissi                                  #
+#              note: Administrator Base texts / pak64 / pak.japan              #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -27,23 +25,59 @@ Estructura elevada
 01_CITY
 Ajuntament
 A1_ALTE_KIRCHE
-Una famosa catedral  antiga.\nTothom  hauria de veure \naquest fantàstic  edifici.\n
+Una famosa catedral  antiga.\nTothom  hauria de veure \naquest fantàstic  edifici.\n\n
 A2_SCHLOSS1
-El castell  del rei boig. \n¡Visitar-lo val  la pena!\n
+El castell  del rei boig. \n¡Visitar-lo val  la pena!\n\n
 A3_BURG1
-Algunes runes  que parlen de \ntemps millors.  Sempre són una\n visita interessant.\n
+Algunes runes  que parlen de \ntemps millors.  Sempre són una\n visita interessant.\n\n
 A4_SCHLOSS2
-Aquest vell  castell se  mereix\nuna  visita.\n
+Aquest vell  castell se  mereix\nuna  visita.\n\n
 A5_STONEHENGE
-Un antic anell  de pedres. \n¡Molt misteriós!\n
+Un antic anell  de pedres. \n¡Molt misteriós!\n\n
 A6_DOME
-Aquesta preciosa  catedral\nantiga  és una gran  atracció.\n
-#____________________________________cursor_____________________________________
-#____________________________________cursor_____________________________________
-Baum
-Arbre
-Remove
-Lleva
+Aquesta preciosa  catedral\nantiga  és una gran  atracció.\n\n
+#__________________________________dummy_info___________________________________
+#__________________________________dummy_info___________________________________
+factory_Autohaus_details
+Concessionari cotxes
+factory_Autohersteller_details
+Fàbrica cotxes
+factory_Buchgrosshandel_details
+Majorista de llibres
+factory_Cementmill_details
+Fàbrica de ciment
+factory_CHEMIST_details
+Farmàcia (per Seth)
+factory_Concretefactory_details
+Fábrica de formigó
+factory_Druckerei_details
+Impremta
+factory_Erzbergwerk_details
+Mina de ferro
+factory_Kohlegrube_details
+Mina de carbó
+factory_Kohlekraftwerk_details
+Central tèrmica
+factory_Moebelhaus_details
+Botiga de mobles
+factory_Nutzwald_details
+Explotac. forestal
+factory_Oelbohrinsel_details
+Plataforma petrolífera
+factory_Oelfeld_details
+Pou de petroli
+factory_Papierfabrik_details
+Fàbrica de paper
+factory_Raffinerie_details
+Refineria
+factory_Sandquarry_details
+Cantera d'arena
+factory_Stahlwerk_details
+Fundició ferro
+factory_Stonequarry_details
+Cantera de pedra
+factory_TANKE_details
+Benzinera
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 Autohaus
@@ -116,10 +150,6 @@ Stahl
 Acer
 Stone
 Pedra
-#_____________________________________menu______________________________________
-#_____________________________________menu______________________________________
-ShipTools
-Vaixells
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103

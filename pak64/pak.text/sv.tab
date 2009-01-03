@@ -5,51 +5,221 @@
 #                             Language: sv Svenska                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 28.06 2008                           #
+#                            Date Created: 3.01 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                                Ewa Wiman - ewa                               #
-#note: I am a student from Linköping, Sweden. I like Simutrans so much that wan#
-#                          Markus Pristovsek - prissi                          #
-#                            note: Administrator 64                            #
+#                             Paul Color - color42                             #
+#                                    note:                                     #
+#                                    - prissi                                  #
+#              note: Administrator Base texts / pak64 / pak.japan              #
 #                                                                              #
 ################################################################################
+#____________________________________bridge_____________________________________
+#____________________________________bridge_____________________________________
+ClassicRail
+Betong järnvägsbro
+ClassicRoad
+Betong vägsbro
 #___________________________________building____________________________________
 #___________________________________building____________________________________
+00_01_CITY
+Gammalt stads hus
 01_CITY
 Stadshus
+02_CITY
+Stadshus
+03_CITY
+Stadshus
+03_CITY_A
+Stadshus
+03_CITY_B
+Stadshus
+03_CITY_C
+Stadshus
+04_CITY
+Stadshus
+04_CITY_A
+Stadshus
+04_CITY_B
+Stadshus
+04_CITY_C
+Stadshus
+10_WOHN
+Kyrka\n
+1930AirDepot
+Flygplans hangar 1930 tal's
+1headquarter
+högkvarter
+2headquarter
+stort högkvarter
+3headquarter
+internationellt förtags högkvarter
 A1_ALTE_KIRCHE
-En berömd gammal  kyrka. Alla \nborde få se  den här\nfantastiska  byggnaden.\n
+En berömd gammal  kyrka. Alla \nborde få se  den här\nfantastiska  byggnaden.\n\n
 A2_SCHLOSS1
-Den galne kungens slott.  Det är\nverkligen  värt att få se!\n
+Den galne kungens slott.  Det är\nverkligen  värt att få se!\n\n
 A3_BURG1
-Några ruiner  som vittnar om \nbättre tider.  Dom är alltid \nväl värda en resa.\n
+Några ruiner  som vittnar om \nbättre tider.  Dom är alltid \nväl värda en resa.\n\n
 A4_SCHLOSS2
-Det här  slottet är  alltid värt\n att få se.\n
+Det här  slottet är  alltid värt\n att få se.\n\n
 A5_STONEHENGE
-En urgammal ring  av stenar. \nVäldigt mystiskt!\n
+En urgammal ring  av stenar. \nVäldigt mystiskt!\n\n
 A6_DOME
-Den här vackra  gamla\nkatedralen  är en riktig \nattraktion.\n
+Den här vackra  gamla\nkatedralen  är en riktig \nattraktion.\n\n
+AirDepot
+Flygplans hangar 1900 tal's
+AirportShed1930
+Flygplats skjul för post (1901)
+AirStop
+boarding bro\n
+AirTerminal477
+Flygplats terminal (1950)
+Avila_Big_StationBlg
+stor stations byggnad
+Avila_Small_StationBlg
+liten stations byggnad
+Avila_Warehouse_StationBlg
+lagerlokal
+BigPostOffice
+Stort post kontor
+BigTerminal477
+Stort modern terminal
+Bulk_StationBlg
+kollager station
+BusStop
+buss hållplats\n
+Car_StationBlg
+billager stations byggnad
+CarDepot
+Garage depå
+CarStop
+Lastkaj\n
+ChannelStop
+Kanal gods brygga
+COM_00_01
+Liten affär\n\n
+COM_00_02
+Oberoende bensinstation\n\Den är oberoende från dom\nstora transport bolagen\n(som ditt),men det finns\ningen anledning att ta bort den.\nDen hotar inte din verksamhet ändå.\n\n
+COM_00_03
+Detta backgårds garage\nvill komma undan från\nsin dolda existens\nför att istället stå längs med\nen huvudgata.\nMen det saknas\nforfarande pengar,tillstånd\noch en huvudgata\n\n
+Control_StationBlg
+Järnvägs kontrol centrum
 DenkFlor
-Det här monumentet tillägnas\nFlor 'WF Ultd.' Wauters, den\nberömde ingenjören som\nskapade så många bra väg- och\ntågfordon. Han är också\nvälkänd för att ha designat\nmånga väl fungerande fabriker.\n
+Det här monumentet tillägnas\nFlor 'WF Ultd.' Wauters, den\nberömde ingenjören som\nskapade så många bra väg- och\ntågfordon. Han är också\nvälkänd för att ha designat\nmånga väl fungerande fabriker.\n\n
 DenkOwen
-Denna plats tillägnas Owen\nRudge, den berömde\nfinansexperten och\nljudteknikern.\n
+Denna plats tillägnas Owen\nRudge, den berömde\nfinansexperten och\nljudteknikern.\n\n
 DenkSeth
-Denna plats tillägnas Seth C.\nTriggs, den berömde\narkitekten som designade så\nmånga vackra stadsbyggnader.\nHan är också välkänd för att\nha gjort många studier på hur\nman kan förbättra trafiksystem.\n
+Denna plats tillägnas Seth C.\nTriggs, den berömde\narkitekten som designade så\nmånga vackra stadsbyggnader.\nHan är också välkänd för att\nha gjort många studier på hur\nman kan förbättra trafiksystem.\n\n
 DenkTrikky
-Det här monumentet tillägnas\n'Trikky' Rick McGreal, den\nberömde arkitekten som\ndesignade så många\nimponerande byggnader.\n
+Det här monumentet tillägnas\n'Trikky' Rick McGreal, den\nberömde arkitekten som\ndesignade så många\nimponerande byggnader.\n\n
 DenkVM
-Det här monumentet tillägnas\nManfred 'VT Wien' Tomaschitz,\nden berömde ingenjören som\ndesignade många otroligt bra\ntågfordon.\n
+Det här monumentet tillägnas\nManfred 'VT Wien' Tomaschitz,\nden berömde ingenjören som\ndesignade många otroligt bra\ntågfordon.\n\n
 DenkVolker
-Det här monumentet tillägnas\nVolker Meyer, som\nförbättrade Simutrans på\nmånga, många sätt.\n
+Det här monumentet tillägnas\nVolker Meyer, som\nförbättrade Simutrans på\nmånga, många sätt.\n\n
+Eingang
+Ingångs byggnad
+Feste
+Konuberts' Festning\n\nDetta stora slott byggdes\nrunt året\n1400.\n\n\n\n
+Fluid_StationBlg
+oljetank
+FreightShipStop
+Gods brygga
+FreightTrainStop
+Godstågs perrong
+Gas_StationBlg
+Bensintank
+GCG1TrainStop
+Stor stationshall vänster
+GCG2TrainStop
+Stor stationshall höger
+Goods_StationBlg
+Gods lagerlokal
+Gymnasium
+Gymnasie skola\n\n
 Windmill
-Väderkvarn\n
-#____________________________________cursor_____________________________________
-#____________________________________cursor_____________________________________
-Baum
-Träd
+Väderkvarn\n\n
+#____________________________________citycar____________________________________
+#____________________________________citycar____________________________________
+Ambulanz
+Ambulans 
+FordT
+Ford Model T
+green_car
+grön bil
+#__________________________________dummy_info___________________________________
+#__________________________________dummy_info___________________________________
+factory_2Raffinerie_details
+Raffinaderi (Bensin)
+factory_3Raffinerie_details
+Raffinaderi (Ben+Pl.)
+factory_Aufwindkraftwerk_details
+Vindkraftverk
+factory_Autohaus_details
+Bilförsäljare
+factory_Autohersteller_details
+Bilfabrik
+factory_Buchgrosshandel_details
+Bokhandel
+factory_Cementmill_details
+Cementfabrik
+factory_ChemicalPlant_details
+Kemisk fabrik
+factory_CHEMIST_details
+Apotek (av Seth)
+factory_Concretefactory_details
+Betongfabrik
+factory_Druckerei_details
+Tryckeri
+factory_Erzbergwerk_details
+Järngruva
+factory_Kohlegrube_details
+Kolgruva
+factory_Kohlekraftwerk_details
+Kolkraftverk
+factory_Materialswholesale_details
+Bygghandel
+factory_Moebelfabrik_details
+Möbelfabrik
+factory_Moebelhaus_details
+Möbelaffär
+factory_Nutzwald_details
+Industriskog
+factory_Oelbohrinsel_details
+Oljeplattform
+factory_Oelfeld_details
+Oljefält
+factory_Oelkraftwerk_details
+Oljekraftverk
+factory_Oelpumpe_details
+Olje pump
+factory_Papierfabrik_details
+Pappersbruk
+factory_Pharmaceutics_details
+Medicin tillverkare
+factory_Raffinerie_details
+Raffinaderi (Plast)
+factory_Saegewerk_details
+Sågverk
+factory_SaegewerkMHz_details
+Gammalt sågverk
+factory_Sandquarry_details
+Grustag
+factory_Stahlwerk_details
+Stålverk
+factory_Stonequarry_details
+Stenbrott
+factory_TANKE_details
+Bensinstation
+factory_thermisches_Solarkraftwerk_details
+Solkraftverk
+factory_Windkraftwerk_details
+Vindkraftverk
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
+2Raffinerie
+Raffinaderi (Bensin)
+3Raffinerie
+Raffinaderi (Ben+Pl.)
 Autohaus
 Bilförsäljare
 Autohersteller
@@ -58,6 +228,8 @@ Buchgrosshandel
 Bokhandel
 Cementmill
 Cementfabrik
+ChemicalPlant
+Kemisk fabrik
 CHEMIST
 Apotek (av Seth)
 Concretefactory
@@ -98,12 +270,18 @@ Autos
 Bilar
 Bretter
 Brädor
+Buecher
+Böcker
 Cement
 Cement
+Chemicals
+Kemikalier
 Concrete
 Betong
 Eisenerz
 Järnmalm
+Gasoline
+Bensin
 Holz
 Timmer
 Kohle
@@ -122,12 +300,10 @@ Stahl
 Stål
 Stone
 Sten
-#_____________________________________menu______________________________________
-#_____________________________________menu______________________________________
-ShipTools
-Båtbyggen
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
+Couple
+Par
 Cyclist
 Cyklist
 pedestrian_child
@@ -140,6 +316,40 @@ CATEGORY_01
 Styckegods
 CATEGORY_02
 Bulkgods
+CATEGORY_03
+olja/bensin
+CATEGORY_04
+kylda gods
+CATEGORY_05
+flytande matvaror
+CATEGORY_06
+skogar
+CATEGORY_07
+pulver/pellets
+#___________________________________roadsign____________________________________
+#___________________________________roadsign____________________________________
+choose_point
+Välj vägskylt
+ChooseSignals
+Välj väg signalljus
+ChooseSignalsMonorail
+Välj väg signalljus
+Endofchoosetrack
+Utesluta från val av plattforms sökning
+#_____________________________________tree______________________________________
+#_____________________________________tree______________________________________
+Ahorn-1
+Lönnträd1\n
+Ahorn-2
+Lönnträd2\n
+Ahorn-Gruppe
+Lönnträd i grupp\n
+Birke-1
+björk\n\n
+Buche-1
+bokträd1\n
+Busch_2
+buske\n\n
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -152,46 +362,208 @@ H-Trans 0-4-0T (ånga)
 H-Trans BR212 (diesel)
 1Ellok
 H-Trans BR103 (el)
+1Garrat
+Garratt (ånga)
 1TPEllok
 TPI F7A (diesel)
+221A
+221A (ånga)
+221A_tender
+221A tender
 2Ben155
 Bennhardt BR155 (el)
 2Diesellokomotive
 H-Trans BR218 (diesel)
 2Ellok
 H-Trans Tigress I (el)
+2Garrat
+Garratt (mittdel)
 3Ben185
 Bennhardt BR185 (el)
 3Diesellokomotive
 H-Trans BR365 (diesel)
+3Garrat
+Garratt (backdel)
+707
+Boeing 707
+A3-5
+Swiss federala järnvägars A 3/5
+A3-5_tender
+Tender till SBB A 3/5
+A380
+Airbus A380
+Adler
+Adlerlok (ånga)
+AdlerPersonenwagen
+Adler passagerar vagn
+Autotrailer
+biltrailer
 Autotransportanhaenger
 H-Trans Biltransporttrailer
 Autotransporter
 H-Trans Biltransport
 Autotransportwagen
 TPI Lopomo Biltransportvagn
+BB1280
+BB1280 (el)
+BB200
+BB200 (el)
+Be5-7
+BLS Be5-7 (el)
+Blimp
+Luftskepp
+Book_Trike
+Gods leverans trike
+Boxcar
+Godsvagn
+BR01
+BR01 (ånga)
+Br118DR
+Br118DR (diesel)
+Br234
+Br234 (diesel)
+BR38
+BR38 (ånga)
+BR38-Tender
+BR38 Tender
+BR39
+BR39 (ånga)
+BR45
+BR45 (ånga)
+BR45-Tender
+BR45 Tender
+Br614back
+Br614 bakdel
+Br614car
+Br614 vagn
+Br614front
+Br614 Lok
+BR85
+BR85 (ånga)
 Bretteranhaenger
 WF Ultd. Brädtrailer
 Brettertransporter
 WF Ultd. Brädbil
 Bretterwagen
 VT Wien Brädvagn
+BRV36
+BRV36 (diesel)
 Buchanhaenger
 Serj/H-Trans Boktrailer
+Buchtrailer
+Boktrailer I
+Buchtrailer2
+Boktrailer II
 Buchtransporter
 Serj/H-Trans Bokbil
 Buchwagen
 VT Wien Bokvagn
+Buessig
+Ikarus Model B
+BuessingLinie
+Linje buss
+Bulkcarriage
+Lastbil
 Bus
 H-Trans Buss
+CarFlat
+Godsvagn bilar
+Cargosprinter-Front
+Godståg front
+Cargosprinter-Mittel
+Godståg mitten
+Cargosprinter-Steuer
+Godståg bakdel
+CC7100
+CC7100 (el)
+Cementtrailer
+Cement trailer
+Class86
+Class86 (el)
+CombinoShort(T)
+Combino spårvagn
+CombinoShortA(Mc)
+Combino spårvagn kortA
+CombinoShortB(Mc)
+Combino spårvagn kortB
+CombinoShortE(T)
+Combino spårvagn kortE
+Comet
+De Havilland 'Comet'
+Concept1Front
+Concept 1
+Concept1Mail
+Concept 1 Postvagn
+Concept1Pass
+Concept 1 Passagerarvagn
+Concept1Rear
+Concept 1 Bakre Lok
+Concept2Front
+Concept 2
+Concept2Mail
+Concept 2 Postvagn
+Concept2Pass
+Concept 2 Passagerarvagn
+Concept2Rear
+Concept 2 Bakre Lok
+Concorde
+Concorde
+DC-3
+DC-3
+Doubledeck_city_bus
+Dubbeldäckarbuss  
+DoubleDecker
+Dubbeldäckarbuss
+E44
+E44 (el)
+Eb3-5
+Swiss federala järnvägar Eb 3/5 (ånga)
+Ed2x2
+Ed2x2 (ånga)
+EinheitsTender
+Standard tender
+EnCo_Bulk_Ship
+EnCo Bulkgods fartyg
+EnCo_Car_Ship
+EnCo Biltransport fartyg
+EnCo_Cement_Ship
+EnCo Cement fartyg
+EnCo_Container_Ship
+EnCo Container fartyg
+EnCo_Oil_Ship
+EnCo Oljetanker
+EnCo_Paper_Ship
+EnCo Papperstransports fartyg
+EnCo_Steel_Ship
+EnCo Ståltransports fartyg
+EnCo_Wood_Ship
+EnCo Planktransports fartyg
 Erzanhaenger
 H-Trans Järnmalmstrailer
+Erztrailer
+Järnmalms trailer
 Erztransporter
 H-Trans Järnmalmsbil
 Erzwagen
 H-Trans Järnmalmsvagn
+F7back
+F7 Bakre Lok
 FastFerry
 O.Bang Snabbfärja (svävare)
+Flachwagen
+Godsvagn Böcker
+Fokker_F27
+Fokker F27
+FordZugmaschine
+Ford Lastbil
+Gelenkbus_Ende
+Gelenkbuss bakdel
+Gelenkbus_Front
+Gelenkbuss framdel
+Godm_Spitz
+Segelskepp
+Guppy
+Aero Spacelines 377SGT Super Guppy
 Holzanhaenger
 JET Timmertrailer
 Holztransporter
@@ -268,3 +640,19 @@ TPPassagierwagen
 TPI Passagerarvagn
 TPSchienenbus
 TPI VT98 (dmu)
+#______________________________________way______________________________________
+#______________________________________way______________________________________
+asphalt_road
+asfaltsväg
+city_road
+Stadsväg
+cobblestone_road
+Kullerstensväg
+concrete_sleeper_track
+Betong slipers järnväg
+dirt_road
+Grusväg
+elevated_monorail
+Upphöjd monorail
+gavel_road
+Landsväg

@@ -5,17 +5,11 @@
 #                              Language: fi Suomi                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 28.06 2008                           #
+#                            Date Created: 3.01 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                        Jaakko Mäkinen - jaakko.makinen                       #
-#                                    note:                                     #
-#                            Mika Katajamäki - lahha                           #
-#                                    note:                                     #
-#                          Markus Pristovsek - prissi                          #
-#                            note: Administrator 64                            #
-#                          Suuriniemi Saku - suurinie                          #
-#                                    note:                                     #
+#                                    - prissi                                  #
+#              note: Administrator Base texts / pak64 / pak.japan              #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -77,17 +71,17 @@ Yhtiösi pääkonttori
 3headquarter
 Yhtiösi pääkonttori
 A1_ALTE_KIRCHE
-Kuuluisa vanha  kirkko. Jokaisen\n pitäisi nähdä  tämä hieno \nrakennus.\n
+Kuuluisa vanha  kirkko. Jokaisen\n pitäisi nähdä  tämä hieno \nrakennus.\n\n
 A2_SCHLOSS1
-Hassun kuninkaan  linna.  Tämä\non todella  näkemisen\narvoinen!\n
+Hassun kuninkaan  linna.  Tämä\non todella  näkemisen\narvoinen!\n\n
 A3_BURG1
-Vanhoja raunioita  jotka\nkertovat  paremmista ajoista. \nNe ovat aina  katsomisen\narvoisia.\n
+Vanhoja raunioita  jotka\nkertovat  paremmista ajoista. \nNe ovat aina  katsomisen\narvoisia.\n\n
 A4_SCHLOSS2
-Tämä vanha  linna on aina \nnäkemisen arvoinen.\n
+Tämä vanha  linna on aina \nnäkemisen arvoinen.\n\n
 A5_STONEHENGE
-Muinainen kivimuodostelma.\nHyvin  salaperäistä!\n
+Muinainen kivimuodostelma.\nHyvin  salaperäistä!\n\n
 A6_DOME
-Tämä kaunis vanha  kirkko on\ntodellinen nähtävyys.\n
+Tämä kaunis vanha  kirkko on\ntodellinen nähtävyys.\n\n
 AirDepot
 1900-luvun lentokone halli
 AirportShed1930
@@ -96,8 +90,6 @@ AirStop
 Lastaus silta\n
 AirTerminal477
 Terminaali
-anfangShipStop
-Laiturin loppu (Etel. tai Itä)
 Avila_Big_StationBlg
 Suuri asema rakennus
 Avila_Small_StationBlg
@@ -112,106 +104,104 @@ Bulk_StationBlg
 Hiilivarasto
 BusStop
 Bussi pysäkki\n
+Car_StationBlg
+Autoparkki
 CarDepot
 Autotalli
 CarStop
 Lastaus asema\n
-Car_StationBlg
-Autoparkki
 ChannelStop
 Kanavalaituri
 COM_00_01
-Pienikauppa\n
+Pienikauppa\n\n
 COM_00_02
-Yksityinen huolto-asema\n
+Yksityinen huolto-asema\n\n
 COM_00_03
-Autopesula\n
+Autopesula\n\n
 COM_00_05
-Läpi ajo -pankki. Kun ajat läpi\nlompakkosi taianomaisesti\ntyhjenee.\n
+Läpi ajo -pankki. Kun ajat läpi\nlompakkosi taianomaisesti\ntyhjenee.\n\n
 COM_00_06
-Kylpylä OnniManni\n
+Kylpylä OnniManni\n\n
 COM_00_08
-Asuinrakennus\n
+Asuinrakennus\n\n
 COM_00_10
-Keskikokoinen toimisto\nraknennus\n
+Keskikokoinen toimisto\nraknennus\n\n
 COM_00_11
-Novan maalitukku\n
+Novan maalitukku\n\n
 COM_00_12
-Toimisto rakennus\n
+Toimisto rakennus\n\n
 COM_00_14
-Tämä rakennus näyttää\nvanhalta tehtaalta, mutta se on\noikeasti erittäin organisoitunut\nlaiton vedonlyöntikeskus.\n
+Tämä rakennus näyttää\nvanhalta tehtaalta, mutta se on\noikeasti erittäin organisoitunut\nlaiton vedonlyöntikeskus.\n\n
 COM_00_18
-Modermi toimisto rakennus\n
+Modermi toimisto rakennus\n\n
 COM_00_22
-YK:n rakennus somaliassa\n
+YK:n rakennus somaliassa\n\n
 COM_01_01
-Kuumailmapallojen laskeutumis\nalue.\n
+Kuumailmapallojen laskeutumis\nalue.\n\n
 COM_01_09
-Vanha elokuva teatteri. Täällä\nesitetään paljon musta-valko\nelokuvia, siksi se onkin Charlie\nChaplin -fanien suosima.\n
+Vanha elokuva teatteri. Täällä\nesitetään paljon musta-valko\nelokuvia, siksi se onkin Charlie\nChaplin -fanien suosima.\n\n
 COM_01_10
-Toimisto rakennus\n
+Toimisto rakennus\n\n
 COM_01_17
-Salainen FBI:n toimisto\n
+Salainen FBI:n toimisto\n\n
 COM_01_18
-CIA:n sivu konttori\n
+CIA:n sivu konttori\n\n
 COM_01_20
-World trade center. Matalempi\nversio\n
+World trade center. Matalempi\nversio\n\n
 COM_01_21
-Yö työ talo.\n
+Yö työ talo.\n\n
 COM_01_22
-ETA:n tekninen laboratorio\n
+ETA:n tekninen laboratorio\n\n
 COM_02_02
-Parkkipaikka\n
+Parkkipaikka\n\n
 COM_02_13
-Kansanhistoriallainen museo\n
+Kansanhistoriallainen museo\n\n
 COM_02_16
-Toimisto talo\n
+Toimisto talo\n\n
 COM_02_17
-Keskikokoinen toimistotalo\n
+Keskikokoinen toimistotalo\n\n
 COM_03_15
-Toimisto talo\n
+Toimisto talo\n\n
 COM_04_15
-Hotelli. satelliitti lautanen\nkatolla.\n
+Hotelli. satelliitti lautanen\nkatolla.\n\n
 COM_10_01
-Puisto\n
+Puisto\n\n
 COM_10_02
-puisto\n
+puisto\n\n
 COM_10_05
-Navetta\n
+Navetta\n\n
 COM_10_07
-Maalaistalo\n
+Maalaistalo\n\n
 COM_10_10
-Alppitalo\n
+Alppitalo\n\n
 COM_10_11
-Paritalo\n
+Paritalo\n\n
 COM_10_12
-Paritalo\n
+Paritalo\n\n
 Control_StationBlg
 Valvontatorni
 DenkFlor
-Muistomerkki \n\nTämä monumentti on omistettu\nFlor 'WF Ultd.' Wautersille,\nkuuluisalle insinöörille, joka loi\nmonia erinomaisia tie ja\nrautatie kulkuneuvoja. Hän on\nmyös tunnettu monien\nhyvintoimivien tehtaiden\nsuunnittelusta.\n
+Muistomerkki \n\nTämä monumentti on omistettu\nFlor 'WF Ultd.' Wautersille,\nkuuluisalle insinöörille, joka loi\nmonia erinomaisia tie ja\nrautatie kulkuneuvoja. Hän on\nmyös tunnettu monien\nhyvintoimivien tehtaiden\nsuunnittelusta.\n\n
 DenkHajo
-Muisto merkki\n\nTämä muistomerkki on omistettu\nhansjörg Malthanerille, joka loi\nsimutranssin seisemässä\nvuodessa.\n
+Muisto merkki\n\nTämä muistomerkki on omistettu\nhansjörg Malthanerille, joka loi\nsimutranssin seisemässä\nvuodessa.\n\n
 DenkMHz
-Muistomerkki\n\nTämä muistomerkki on omistettu\nGeorg Heidukille renderöityjen\nrakennusten mestarille. Se\nedustaa hänen tarkkaa silmää\nyksityiskohdille.\n
+Muistomerkki\n\nTämä muistomerkki on omistettu\nGeorg Heidukille renderöityjen\nrakennusten mestarille. Se\nedustaa hänen tarkkaa silmää\nyksityiskohdille.\n\n
 DenkOwen
-Muistomerkki\n\nTämä paikka on omistettu Owen\nRudgelle, kuuluisalle\nfinannsiexpertille, ja\nääniteknikolle.\n
+Muistomerkki\n\nTämä paikka on omistettu Owen\nRudgelle, kuuluisalle\nfinannsiexpertille, ja\nääniteknikolle.\n\n
 DenkSeth
-Muistomerkki \n\nTämä paikka on omistettu Seth C.\nTriggsille, kuuluisalle\narkkitehdille, joka suunnitteli\nmonia kauniita kaupunki-\nrakennuksia. Hän on myös\ntunnettu monista tutkimuksista,\nkuinka parantaa\nliikennejärjestelmiä.\n
+Muistomerkki \n\nTämä paikka on omistettu Seth C.\nTriggsille, kuuluisalle\narkkitehdille, joka suunnitteli\nmonia kauniita kaupunki-\nrakennuksia. Hän on myös\ntunnettu monista tutkimuksista,\nkuinka parantaa\nliikennejärjestelmiä.\n\n
 DenkTomas
-Muistomerkki\n\nTämä monumentti on omistettu\nTomas Kubesille, joka auttoi\nparantamaan Simutransia monin,\nmonin puolin neuvoilla ja kovalla\ntyöllä.\n
+Muistomerkki\n\nTämä monumentti on omistettu\nTomas Kubesille, joka auttoi\nparantamaan Simutransia monin,\nmonin puolin neuvoilla ja kovalla\ntyöllä.\n\n
 DenkTrikky
-Muistomerkki\n\nTämä monumentti on omistettu\n'Trikky' Rick McGrealille,\nkuuluisalle arkkitehdille, joka\nsuunnitteli monia vaikuttavia\nrakennuksia.\n
+Muistomerkki\n\nTämä monumentti on omistettu\n'Trikky' Rick McGrealille,\nkuuluisalle arkkitehdille, joka\nsuunnitteli monia vaikuttavia\nrakennuksia.\n\n
 DenkVM
-Muistomerkki\n\nTämä monumentti on omistettu\nManfred 'VT Vienna'\nTomaschitzille, kuuluisallee\ninsinöörille, joka suunnitteli\nerittäin hyviä\nrautatiekulkuneuvoja.\n
+Muistomerkki\n\nTämä monumentti on omistettu\nManfred 'VT Vienna'\nTomaschitzille, kuuluisallee\ninsinöörille, joka suunnitteli\nerittäin hyviä\nrautatiekulkuneuvoja.\n\n
 DenkVolker
-Muistomerkki \n\nTämän Stupan  rakensi Volker\nMeyer, joka paransi Simutransia\nmonilta, monilta alueilta.\n
+Muistomerkki \n\nTämän Stupan  rakensi Volker\nMeyer, joka paransi Simutransia\nmonilta, monilta alueilta.\n\n
 Eingang
 Aseman sisäänkäynti
-endShipStop
-laiturin loppu (Pohj. tai Läns.)
 Feste
-The Konubertsin linnake\n\nTämä massiivinen linna rakennettiin\n1400-luvun alussa.\n
+The Konubertsin linnake\n\nTämä massiivinen linna rakennettiin\n1400-luvun alussa.\n\n
 Fluid_StationBlg
 Öljysäiliö
 FreightTrainStop
@@ -225,59 +215,59 @@ suuri asemahalli (oikea)
 Goods_StationBlg
 Varasto
 Gymnasium
-Yksityislukio\n\nTäällä opiskelee rikkaita ihmisiä.\n
+Yksityislukio\n\nTäällä opiskelee rikkaita ihmisiä.\n\n
 IND_00_01
-Varasto\n
+Varasto\n\n
 IND_00_02
-Tehdashalli\n
+Tehdashalli\n\n
 IND_00_03
-Polttoainesäiliö\n
+Polttoainesäiliö\n\n
 IND_00_04
-Peltipaja\n
+Peltipaja\n\n
 IND_00_05
-Vesivarasto\n
+Vesivarasto\n\n
 IND_00_06
-Tehdasrakennus\n
+Tehdasrakennus\n\n
 IND_00_09
-Vanha paloasema\n
+Vanha paloasema\n\n
 IND_00_10
-Pieni tehdas\n
+Pieni tehdas\n\n
 IND_00_12
-Vanha konepaja\n
+Vanha konepaja\n\n
 IND_00_14
-Keramiikkatehdas\n
+Keramiikkatehdas\n\n
 IND_00_17
-Pieni lämpövoimala\n
+Pieni lämpövoimala\n\n
 IND_00_18
-Pieni tehdas\n
+Pieni tehdas\n\n
 IND_01_01
-Parkkipaikka\n
+Parkkipaikka\n\n
 IND_01_03
-Suuri kaasusäiliö\n
+Suuri kaasusäiliö\n\n
 IND_01_04
-Metallipaja\n
+Metallipaja\n\n
 IND_01_06
-Vanha konepaja\n
+Vanha konepaja\n\n
 IND_01_07
-Armeijan ylijäämävarasto\n
+Armeijan ylijäämävarasto\n\n
 IND_01_08
-Lannoitetehdas\n
+Lannoitetehdas\n\n
 IND_01_09
-Nestesäiliö\n
+Nestesäiliö\n\n
 IND_01_10
-Työkalutehdas\n
+Työkalutehdas\n\n
 IND_01_11
-Pieni kangastehdas\n
+Pieni kangastehdas\n\n
 IND_01_12
-Lasinpuhaltamo\n
+Lasinpuhaltamo\n\n
 IND_01_13
-Turpeenpolttolaitos\n
+Turpeenpolttolaitos\n\n
 IND_01_15
-Pieni hiilivoimala\n
+Pieni hiilivoimala\n\n
 IND_02_02
-Metallipaja\n
+Metallipaja\n\n
 IND_02_09
-Kaasusäiliö\n
+Kaasusäiliö\n\n
 LargeShipStop
 Suuri rahtinosturi
 leftShipStop
@@ -285,13 +275,11 @@ Raskas nosturi
 LeuchtturmShipStop
 Majakka
 Lighthouse
-Majakka\n
+Majakka\n\n
 MainTerminal1930
 Aseman sisäänkäynti
 MHzSmallStation
 Asemarakennus (tehnyt MHz)
-midleShipStop
-Laituri
 ModernAirTerminal477
 Modermi lentoterminaali
 MonorailDepot
@@ -301,9 +289,9 @@ Monorail-aseman perusta
 MonorailGround
 Monorail-perustus
 OldTownhall
-Vanha kaupungintalo\n
+Vanha kaupungintalo\n\n
 Patricks_Rock
-Patrickin kallio\n
+Patrickin kallio\n\n
 PlainAirStop
 Lentokonepysäkki
 PostOffice
@@ -319,79 +307,79 @@ Asemahalli
 rampShipStop
 Ramppi
 Raven_Kirche
-Pyhän Meinradin kirkko\n\nErakko Meinrad eli kahden variksen\nkanssa. Hänet murhattiin, ja\nlegendan mukaan varikset\nseurasivat murhaajia ja toivat\nnämä oikeuden eteen.\nNykyään kyseisellä paikalla\nsijaitsee Einsiedelnin luostari.\n
-Residenz
-Residenssi\n\nPaikallinen joogaguru tapasi opettaa\nmeditointia ja sisäistä rauhaa\ntäällä. \n
+Pyhän Meinradin kirkko\n\nErakko Meinrad eli kahden variksen\nkanssa. Hänet murhattiin, ja\nlegendan mukaan varikset\nseurasivat murhaajia ja toivat\nnämä oikeuden eteen.\nNykyään kyseisellä paikalla\nsijaitsee Einsiedelnin luostari.\n\n
 RES_00_01
-Pieni punainen tupa ja\nperunamaa\n
+Pieni punainen tupa ja\nperunamaa\n\n
 RES_00_02
-Pieni talo ja kaalimaa\n
+Pieni talo ja kaalimaa\n\n
 RES_00_03
-Omakotitalo\n
+Omakotitalo\n\n
 RES_00_04
-Asuinrakennus\n
+Asuinrakennus\n\n
 RES_00_06
-Pieni suihkulähde\n
+Pieni suihkulähde\n\n
 RES_00_07
-Omakotitalo\n
+Omakotitalo\n\n
 RES_00_08
-Omakotitalo\n
+Omakotitalo\n\n
 RES_00_09
-Puisto\n
+Puisto\n\n
 RES_00_10
-Moistboyn kartano\n
+Moistboyn kartano\n\n
 RES_00_11
-Suuri talo puutarhalla\n
+Suuri talo puutarhalla\n\n
 RES_00_12
-Asuinrakennus\n
+Asuinrakennus\n\n
 RES_00_13
-Rivitalo\n
+Rivitalo\n\n
 RES_00_16
-Vanha huvila\n
+Vanha huvila\n\n
 RES_00_17
-Vanha asuinrakennus\n
+Vanha asuinrakennus\n\n
 RES_00_19
-Modermi kerrostalo\n
+Modermi kerrostalo\n\n
 RES_00_21
-Korkea kerrostalo\n
+Korkea kerrostalo\n\n
 RES_00_23
-Pyöreä kerrostalo\n
+Pyöreä kerrostalo\n\n
 RES_01_01
-Uudehko valmistalo suurella\nullakkohuoneella, jossa lapsilla\non tilaa peuhata.\n
+Uudehko valmistalo suurella\nullakkohuoneella, jossa lapsilla\non tilaa peuhata.\n\n
 RES_01_02
-Alppitalo\n
+Alppitalo\n\n
 RES_01_05
-Kaksikerroksinen paritalo\n
+Kaksikerroksinen paritalo\n\n
 RES_01_07
-Suuri luksusasunto\n
+Suuri luksusasunto\n\n
 RES_01_08
-Omakotitalo pienellä puutarhalla\n
+Omakotitalo pienellä puutarhalla\n\n
 RES_01_10
-Moderni talo\n
+Moderni talo\n\n
 RES_01_12
-Tiilikerrostalo\n
+Tiilikerrostalo\n\n
 RES_01_15
-Kaupungin ala-aste\n
+Kaupungin ala-aste\n\n
 RES_01_16
-Maahanmuuttokeskus\n
+Maahanmuuttokeskus\n\n
 RES_01_18
-Kerrostalo\n
+Kerrostalo\n\n
 RES_01_21
-Pilvenpiirtäjä\n
+Pilvenpiirtäjä\n\n
 RES_01_22
-Pilvenpiirtäjä\n
+Pilvenpiirtäjä\n\n
 RES_01_23
-Tämän talon on omistanut\nitselleen Mika "Lahha"\nKatajamäki, joka auttoi\nsuomenkielisten käännöksien\nkanssa.\n
+Tämän talon on omistanut\nitselleen Mika "Lahha"\nKatajamäki, joka auttoi\nsuomenkielisten käännöksien\nkanssa.\n\n
 RES_02_01
-Alkukantainen maja\n
+Alkukantainen maja\n\n
 RES_02_20
-Viiden tähden hotelli\n
+Viiden tähden hotelli\n\n
 RES_11_01
-Pieni talo\n
+Pieni talo\n\n
+Residenz
+Residenssi\n\nPaikallinen joogaguru tapasi opettaa\nmeditointia ja sisäistä rauhaa\ntäällä. \n\n
 rightShipStop
 Laituri
 RUIN_0
-Keskiaikainen linna\n\nTämä linna raunioitui 400 vuotta\nsitten, mutta osa siitä on\nuudelleen rakennettu, ja se\ntoimii nykyään museona.\nNäkymät ovat fantastisia,\nmutta ne nähdäkseen täytyy\nkiivetä aivan liian monta porrasta.\n
+Keskiaikainen linna\n\nTämä linna raunioitui 400 vuotta\nsitten, mutta osa siitä on\nuudelleen rakennettu, ja se\ntoimii nykyään museona.\nNäkymät ovat fantastisia,\nmutta ne nähdäkseen täytyy\nkiivetä aivan liian monta porrasta.\n\n
 SandStationMHz
 Hiekkapohjainen asema
 ShipDepot
@@ -401,13 +389,13 @@ Telakka\n
 ShipStop
 Satama\n
 STADIUM2
-Iso stadion\n
+Iso stadion\n\n
 Tennis_Court
-Tenniskenttä\n
+Tenniskenttä\n\n
 Terminal1930
 Lentoterminaali
 Theatre
-Teatteri\n
+Teatteri\n\n
 Tower1930
 Lennonjohtotorni (1930)
 TowerMoistboy
@@ -427,7 +415,7 @@ Viktoriaaninen asema
 Vorplatz
 Asemapiha
 Windmill
-Tuulimylly\n
+Tuulimylly\n\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -446,42 +434,68 @@ Roadster
 Vanha auto
 yellow_car
 Keltainen auto
-#____________________________________cursor_____________________________________
-#____________________________________cursor_____________________________________
-Baum
-Puu
-City
-Kaupunki
-Down
-Nuoli alas
-Marked
-Merkki
-Mouse
-Hiiri
-Query
-Tutkimistyökalu
-Remove
-Poista
-Schedule
-Pysäkki
-ShipDepotNS
-Telakka
-Signal
-Ratavalot
-Slope
-Rinnetyökalu
-Undocumented
-Dokumentoimaton
-Up
-Ylös-nuoli
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
+factory_2Raffinerie_details
+Bensiinijalostamo
+factory_3Raffinerie_details
+Jalostamo
+factory_Autohaus_details
+Autokauppa
+factory_Autohersteller_details
+Autotehdas
+factory_Buchgrosshandel_details
+Kirjatukku
+factory_Cementmill_details
+Sementtimylly
+factory_ChemicalPlant_details
+Kemikaali tehdas
+factory_CHEMIST_details
+Apteekki
+factory_Concretefactory_details
+Betonitehdas
+factory_Druckerei_details
+Kirjapaino
+factory_Erzbergwerk_details
+Rautakaivos
+factory_Kohlegrube_details
+Hiilikaivos
+factory_Kohlekraftwerk_details
+Hiilivoimala
+factory_Materialswholesale_details
+Tarviketukku
+factory_Moebelfabrik_details
+Huonekalutehdas
+factory_Moebelhaus_details
+Huonekalukauppa
 factory_Nutzwald_details
-<title>Viljelymetsistä</title><h1>Viljelymetsät</h1><p>Metsissä kasvaa tärkein uusiutuva materiaali ja energian lähde, Siitä valmistetaan korkea luokkaisia tuotteita ja paperia.</p>\n
+Viljelysmetsä
+factory_Oelbohrinsel_details
+Öljynporauslautta
+factory_Oelfeld_details
+Öljykenttä
+factory_Oelkraftwerk_details
+Öljyvoimala
 factory_Oelpumpe_details
-öljypumppu
+Öljypumppu
 factory_Papierfabrik_details
-<title>Paperitehdas</title>\n<h1>Paperin valmistus</h1>\n<p>Nykyään valtaosa paperista valmistetaan teollisesti puukuiduista pitkälle automatisoidulla prosessilla. Eräät muutkin kuidut sopivat, mutta metsäteollisuus ei ole panostanut niiden tutkimukseen, koska puun riittävyys on vaikuttanut turvatulta. Taloudellinen ja ympäristöystävällinen tulevaisuuden vaihtoehto puulle on olkisellu.</p>\n<p>Kuitupuu tuotiin ennen tavallisemmin uittamalla proomujen avulla, nykyisin maateitse rekoilla, laivoilla tai rautateitse. Kuorimarummuissa puista poistetaan kuori. Rungot jatkavat matkaansa; kuoret poltetaan energiaksi tai käytetään maanparannusaineena. Osa puunrungoista haketetaan lastuiksi (puuhakkeeksi), jotka varastoidaan, osa hiotaan hiokemassaksi. Lastuista voidaan valmistaa puumassaa lähinnä kahdella eri tavalla: hake keitetään lipeässä, jolloin puusta liukenee ligniini, mutta runsaasti muutakin. Näin saadaan sellumassaa. Vaihtoehtoisesti hake hierretään mekaanisesti. Käsittelyjen tuloksena puusta muodostuu massaa (hioke, hierre tai sellu), joka pestään ja useimmiten valkaistaan (valkaisematonta massaa josta syntyy ruskeaa paperimateriaalia, käytetään lähinnä pakkauspaperien ja -kartonkien valmistukseen).</p>\n<p>Syntynyt kostea paperimassa laimennetaan perälaatikossa lisäämällä vettä, jolloin tuloksena on massaliuos, josta noin 99 prosenttia on vettä. Tässä vaiheessa voidaan massaan myös lisätä erinäisiä täyteaineita esimerkiksi kaoliinia, talkkia tai kalsiumkarbonaattia. Täyteainelisäyksen pääasialliset edut ovat opasiteetin (läpinäkymättömyyden) kasvaminen, matta- tai kiiltopintaisuuden säätely ja raaka-ainekustannuksien halventuminen. Tämä massa suihkutetaan viiraosalle muodostumaan ohueksi tasaiseksi rainaksi, ja sen jälkeen prosessin suurin tehtävä on poistaa vesi eri keinoilla. Ensin viiralla vettä valuu pois (suotautuminen), sitten raina puristetaan suurien telojen läpi (märkäpuristus), ja viimeksi paperiraina kulkee kuivatusosalle jossa se menee kuumien telojen pintaa pitkin huomattavan matkan, jolloin loput tasapainokosteuden ylittävästä vedestä poistuu haihtumalla (kuivatus).</p>\n<p>Näiden jälkeen paperi rullataan isolle konerullalle "tampuurille". Suihkutuksella, viiralla ja puristinteloilla paperi saa muotonsa. Kuivaan paperiin voidaan lisätä erilaisia päällysteitä ja pintakäsittelyaineita, jotka parantavat paperin ominaisuuksia paremmin sen käyttötarkoitukseen soveltuvaksi.</p>
+Paperitehdas
+factory_Pharmaceutics_details
+Farmasia
+factory_Raffinerie_details
+Muovijalostamo
+factory_Saegewerk_details
+Saha
+factory_Sandquarry_details
+Hiekkalouhos
+factory_Stahlwerk_details
+Rautavalimo
+factory_Stonequarry_details
+Kivilouhos
+factory_TANKE_details
+Huoltoasema
+factory_Windkraftwerk_details
+Tuulivoimala
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -506,8 +520,6 @@ Druckerei
 Kirjapaino
 Erzbergwerk
 Rautakaivos
-Incinerator
-Jätteidenpolttolaitos
 Kohlegrube
 Hiilikaivos
 Kohlekraftwerk
@@ -538,8 +550,6 @@ Saegewerk
 Saha
 Sandquarry
 Hiekkalouhos
-scrap_yard
-Kaatopaikka
 Stahlwerk
 Rautavalimo
 Stonequarry
@@ -590,44 +600,6 @@ Stahl
 terästä
 Stone
 kiveä
-waste
-jätettä
-#____________________________________ground_____________________________________
-#____________________________________ground_____________________________________
-Basement
-Pohjakerros
-Borders
-Reuna
-Fence
-Aita
-Outside
-Kentän ulkopuolella
-Slopes
-Rinteet
-Water
-vesi
-#_____________________________________menu______________________________________
-#_____________________________________menu______________________________________
-EditTools
-Erikoistyökalut
-ListTools
-Listat
-MainMenu
-Päävalikko
-ShipTools
-Laiva
-SlopeTools
-Rinnetyökalut
-SpecialTools
-Erikoistyökalut
-#_____________________________________misc______________________________________
-#_____________________________________misc______________________________________
-Construction
-Rakentaminen
-PowerDest
-Muuntaja
-PowerSource
-Muuntaja
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Couple
@@ -664,10 +636,10 @@ CATEGORY_06
 lankkuja
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
-ChooseSignals
-Valinta osoittimet
 choose_point
 Asemanvalintapiste
+ChooseSignals
+Valinta osoittimet
 Minimum80
 Vähimmäisnopeus 80 km/h
 NoEntry
@@ -684,98 +656,60 @@ SignalsMonorail
 Monorail-osoittimet
 traffic_light
 Liikennevalot
-#_____________________________________smoke_____________________________________
-#_____________________________________smoke_____________________________________
-Diesel
-Diesel savu
-Industry_Fire
-tuli
-Industry_Smoke
-tehdassavu
-Steam
-höyryä
-#____________________________________symbol_____________________________________
-#____________________________________symbol_____________________________________
-Builder
-Traktori
-Electricity
-Sähkö
-Logo
-Logo
-Message
-Viesti
-MessageOptions
-Viestiasetukset
-NewWorld
-Uusi maailma
-NewYear
-Uusivuosi
-Seasons
-Vuodenajat
-Waren
-tavaroita
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Ahorn-1
-Tammi\n
+Tammi\n\n
 Ahorn-2
-Tammi\n
+Tammi\n\n
 Ahorn-Gruppe
-Tammi\n
+Tammi\n\n
 Birke-1
-Koivu\n
+Koivu\n\n
 Buche-1
-Vaahtera\n
+Vaahtera\n\n
 Busch_2
-Pensas\n
+Pensas\n\n
 Kiefer_1
-Mänty\n
+Mänty\n\n
 Kiefer_2
-Mänty\n
+Mänty\n\n
 Kiefer_3
-Mänty\n
+Mänty\n\n
 Kiefer_4
-Mänty\n
+Mänty\n\n
 Kiefer_5
-Mänty\n
+Mänty\n\n
 Latschenkiefer
-Vuorimänty\n
+Vuorimänty\n\n
 Palmtree1
-Palmu\n
+Palmu\n\n
 Pappel-1
-Sypressi\n
+Sypressi\n\n
 Pappel-2
-Sypressi\n
+Sypressi\n\n
 Shunter-tree2
-Kuollut puu\n
+Kuollut puu\n\n
 Tanne_1
-Kuusi\n
+Kuusi\n\n
 Tanne_2
-Kuusi\n
+Kuusi\n\n
 Tanne_3
-Kuusi\n
+Kuusi\n\n
 Tanne_4
-Tammi\n
+Tammi\n\n
 Tanne_5
-Mänty\n
+Mänty\n\n
 Tanne_6
-Kuusia\n
+Kuusia\n\n
 Tree4
-Mänty\n
+Mänty\n\n
 Tree5
-Puu\n
+Puu\n\n
 Tree6
-Kuusi\n
+Kuusi\n\n
 Willow
-Paju\n
-#____________________________________tunnel_____________________________________
-#____________________________________tunnel_____________________________________
-FastRoadTunnel
-Moottoritien tunneli
-RailTunnel
-Rautatietunneli
-RoadTunnel
-Tunneli
+Paju\n\n
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -898,18 +832,12 @@ Concorde
 concorde
 DC-3
 Douglass DC-3
-Deponielaster
-Jäterekka
-Deponielaster2
-Roska-auto
 Doubledeck_city_bus
 Kaksikerroksinen turistibussi
 E44
 E44 -veturi
 Eb3-5
 Sveitsin valtionrautatiet Eb 3/5
-ED17
-VR Ed17
 Ed2x2
 Eddings 2x2 Höyryveturi
 EinheitsTender
@@ -932,8 +860,6 @@ Flachwagen
 H-Trans kirjavaunu
 Fokker_F27
 Fokker F27
-GarbageTruck
-Roska-auto
 Guppy
 Matkustajakone
 H-Trans-Pantheress
@@ -988,12 +914,12 @@ JNR_C11
 JNR C11 (2-6-4T)
 JumboJet
 Boeing 747 "Jumbo Jet"
+kkStB_tender
+St-B hiilivaunu
 kkStB110
 St-B höyryveturi
 kkStB91
 St-B höyryveturi
-kkStB_tender
-St-B hiilivaunu
 Kohleanhaenger
 Hiiliperävaunu
 Kohletransporter
@@ -1020,8 +946,6 @@ Moebelschiff
 Huonekalualus
 Moebelwagen
 VT Vienna huonekaluvaunu
-Muellschiff
-Jätelaiva
 NeuOelwagen
 Öljyvaunu
 Oelanhaenger
@@ -1032,10 +956,10 @@ Oilbarge
 Öljyproomu
 Oiltrailer
 Öljysäiliövaunu
-OldOil
-Vanha öljyvaunu
 old_open_car
 Vanha hiilivaunu
+OldOil
+Vanha öljyvaunu
 Papieranhaenger
 Trikkyn Paperiperävaunu
 Papiertransporter
@@ -1104,8 +1028,6 @@ Tugboat
 Hinaaja
 VolvoFH12
 Volvo FH12
-waste wagon
-Jätevaunu
 XMail
 Xpostivaunu
 XTest
