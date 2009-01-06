@@ -19,6 +19,7 @@ Image[11]=> wkz_icons.0.11
 Image[12]=> wkz_icons.0.12
 Image[13]=> wkz_icons.0.13
 Image[14]=> wkz_icons.0.14
+Image[15]=> wkz_icons.0.15
 --
 Obj=menu
 name=SimpleTools
@@ -61,6 +62,7 @@ Image[20]=> wkz_icons.2.19
 Image[21]=> wkz_icons.2.20
 Image[22]=> wkz_icons.2.21
 Image[23]=> wkz_icons.2.22
+Image[24]=> wkz_icons.2.23
 --
 Obj=menu
 name=BarTools
