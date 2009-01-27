@@ -7,8 +7,8 @@ Simutrans source code is provided by the current simutrans team
 This includes the translations from:
 http://simutranslator.simutrans-germany.com/
 
-The file vehicles/water/abo-ships.png is especially under GNU 3.
-
+The file vehicles/water/abo-ships.png is released under GNU General Public
+License (version 3). Copyright by stormoog.
 -----------------------------------------------------------------------------
 
 The Artistic License
