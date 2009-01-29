@@ -121,8 +121,10 @@ intercity_road_type = cobblestone_road
 # Fallback (and default) is "city_road"
 city_road_type = city_road
 
-# rivers: name is river
-river_type = river
+# rivers:
+# The highest number is the smallest. A river with max_speed==0 is not navigavable by ships.
+river_type[0] = river
+river_type[1] = river2
 
 # start with 16 (looks nice on not too large maps)
 river_number = 16
