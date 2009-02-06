@@ -12,7 +12,7 @@
 #  those values have impact on no. of spwaned trees -> memory consumption
 #
 # Number of trees on square 2 - minimal usable, 3 good, 4 very nice looking
-forest_no_of_trees_per_square = 3
+max_no_of_trees_on_square = 3
 
 # Base forest size - minimal size of forest - map independent
 forest_base_size = 36
