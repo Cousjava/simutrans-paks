@@ -11,7 +11,7 @@ climates=tropic,mediterran,temperate,tundra,rocky
 copyright=MHz
 Image[0][0]=seen.0.0
 Image[0][1]=seen.1.0
---------------------
+--
 obj=ground_obj
 name=See2
 seasons=2
@@ -22,7 +22,7 @@ climates=tropic,mediterran,temperate,tundra,rocky
 copyright=MHz
 Image[0][0]=seen.0.1
 Image[0][1]=seen.1.1
---------------------
+--
 obj=ground_obj
 name=See3
 seasons=2
@@ -33,7 +33,7 @@ climates=tropic,mediterran,temperate,tundra,rocky
 copyright=MHz
 Image[0][0]=seen.0.2
 Image[0][1]=seen.1.2
---------------------
+--
 obj=ground_obj
 name=See4
 seasons=2
@@ -44,7 +44,7 @@ climates=tropic,mediterran,temperate,tundra,rocky
 copyright=MHz
 Image[0][0]=seen.0.3
 Image[0][1]=seen.1.3
---------------------
+--
 obj=ground_obj
 name=rocks
 seasons=2
@@ -54,7 +54,7 @@ climates=desert,tropic,mediterran,temperate,tundra,rocky,arctic
 copyright=Hajo
 Image[0][0]=groundobj-fixed.0.0
 Image[0][1]=groundobj-fixed.1.0
---------------------
+--
 obj=ground_obj
 name=bushes
 seasons=2
@@ -64,7 +64,7 @@ climates=tropic,mediterran,temperate,tundra
 copyright=Hajo
 Image[0][0]=groundobj-fixed.0.1
 Image[0][1]=groundobj-fixed.1.1
---------------------
+--
 obj=ground_obj
 name=flowers
 seasons=2
@@ -74,7 +74,7 @@ climates=tropic,mediterran,temperate
 copyright=Hajo
 Image[0][0]=groundobj-fixed.0.2
 Image[0][1]=groundobj-fixed.1.2
---------------------
+--
 obj=ground_obj
 name=moles
 seasons=2
@@ -84,7 +84,7 @@ climates=tropic,mediterran,temperate
 copyright=Hajo
 Image[0][0]=groundobj-fixed.0.3
 Image[0][1]=groundobj-fixed.1.3
---------------------
+--
 obj=ground_obj
 name=Hochsitz1
 seasons=2
@@ -94,7 +94,7 @@ climates=temperate,tundra
 copyright=MHz
 Image[0][0]=hochsitz.0.0
 Image[0][1]=hochsitz.1.0
---------------------
+--
 obj=ground_obj
 name=Hochsitz2
 seasons=2
@@ -104,4 +104,15 @@ climates=mediterran,temperate,tundra
 copyright=MHz
 Image[0][0]=hochsitz.0.1
 Image[0][1]=hochsitz.1.1
---------------------
+--
+Obj=ground_obj
+Name=deco_rock
+copyright=Hajo
+cost=1000
+noinfo=1
+trees_on_top=0
+DistributionWeight=3
+climates=desert, tropic, mediterran, temperate, tundra, rocky, arctic
+seasons=1
+Image[0][0]=hajorock.0.0
+--
