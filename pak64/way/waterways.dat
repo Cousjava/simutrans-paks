@@ -50,7 +50,6 @@ topspeed=0
 max_weight=1000
 intro_year = 1
 waytype=water
-draw_as_ding=1
 system_type=255
 # skin
 icon=> way-river2.3.4
