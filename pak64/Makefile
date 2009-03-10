@@ -32,7 +32,6 @@ DIRS64 += vehicle/air
 DIRS64 += vehicle/monorail
 DIRS64 += vehicle/trams
 DIRS64 += way
-#DIRS64 += way/Hebewerk
 
 DIRS128 :=
 DIRS128 += big-logo

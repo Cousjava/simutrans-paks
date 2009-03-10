@@ -7,6 +7,7 @@
 # 5 = liquid food
 # 6 = long goods
 # 7 = powders (lime, plastics)
+--
 obj=program_text
 name=CATEGORY_01
 --
