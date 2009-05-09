@@ -1,0 +1,78 @@
+#
+# Food chain goods descriptions
+#
+# Author: Hj. Malthaner
+# Create: 06-Jan-04
+# Update: 06-Jan-04
+#
+# categories:
+# 0 = type defined (unique)
+# 1 = piece good (i.e. crates of XY)
+# 2 = mass good (i.e. ore, sand, coal)
+# 3 = oil type fluids
+# 4 = cooled freight
+#
+obj=good
+name=canned_food
+metric=paletten
+catg=1
+value=270
+speed_bonus=2
+mapcolor=10
+-----------------------
+obj=good
+name=flour
+metric=sack
+catg=1
+value=255
+speed_bonus=7
+mapcolor=175
+-----------------------
+obj=good
+name=beer
+metric=paletten
+catg=1
+value=285
+speed_bonus=9
+mapcolor=198
+-----------------------
+obj=good
+name=grain
+metric=tonnen
+catg=2
+value=140
+speed_bonus=5
+mapcolor=31
+-----------------------
+obj=good
+name=meat
+metric=tonnen
+catg=4
+value=870
+speed_bonus=8
+mapcolor=95
+-----------------------
+obj=good
+name=fish
+metric=paletten
+catg=4
+value=930
+speed_bonus=7
+mapcolor=103
+-----------------------
+obj=good
+name=food
+metric=paletten
+catg=4
+value=660
+speed_bonus=14
+mapcolor=119
+-----------------------
+obj=good
+name=milk
+metric=m3
+catg=0
+value=90
+speed_bonus=9
+mapcolor=215
+-----------------------

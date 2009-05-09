@@ -188,6 +188,8 @@ simple_tool[20]=,/
 # WKZ_EDIT_HOUSE=22
 # WKZ_EDIT_TREE=23
 # WKZ_ENLARGE_MAP=24
+# WKZ_LIST_LABELS=25
+# WKZ_CLIMATES=26
 #
 dialog_tool[0]=0,?
 dialog_tool[1]=1,Q
