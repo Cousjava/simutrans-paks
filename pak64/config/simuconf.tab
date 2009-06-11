@@ -92,6 +92,10 @@ cost_remove_tree=100
 cost_multiply_remove_haus=1000
 cost_multiply_remove_field=5000
 
+# unlimited bridges and tunnels
+way_max_bridge_len = 4095
+
+
 ###################################time stuff###################################
 
 # Starting year of the game:
@@ -108,10 +112,10 @@ starting_year = 1930
 # Max. length of intitial intercity road connections
 # If you want to speed up map creation, lower this value
 # If you want more initial intercity roads, raise this value
-# 8000 seems to be a good compromise between speed and road number
+# 4000 will connect almost every city if possible
 # note: this will slow down map creation dramatically!
 #
-intercity_road_length = 800
+intercity_road_length = 70
 
 # Type of initial intercity roads - must be available
 # as PAK file. Fallback (if PAK is not found) is "asphalt_road"

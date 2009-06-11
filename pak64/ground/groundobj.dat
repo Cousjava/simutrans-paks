@@ -116,3 +116,14 @@ climates=desert, tropic, mediterran, temperate, tundra, rocky, arctic
 seasons=1
 Image[0][0]=hajorock.0.0
 --
+Obj=ground_obj
+Name=deco_rock_2
+copyright=Hajo
+cost=2143
+noinfo=1
+trees_on_top=0
+DistributionWeight=3
+climates=tropic, mediterran, temperate, tundra, rocky, polar
+seasons=1
+Image[0][0]=hjm_rock_2.0.0
+--

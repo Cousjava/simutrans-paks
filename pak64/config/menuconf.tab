@@ -61,7 +61,7 @@ icon_height = 32
 # WKZ_FOREST=30
 # WKZ_STOP_MOVER=31
 # WKZ_MAKE_STOP_PUBLIC=32
-
+# WKZ_REMOVE_WAYOBJ=33
 #
 general_tool[0]=0,0,9,a
 general_tool[1]=1,1,14,r
