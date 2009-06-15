@@ -32,6 +32,7 @@ Image[5]=> wkz_icons.1.5
 Image[6]=> wkz_icons.1.6
 Image[7]=> wkz_icons.1.7
 Image[8]=> wkz_icons.1.8
+Image[9]=> wkz_icons.1.9
 --
 Obj=menu
 name=DialogeTools
@@ -75,7 +76,7 @@ Image[5]=> wkz_icons.3.5
 Image[6]=> wkz_icons.3.6
 Image[7]=> wkz_icons.3.7
 Image[8]=> wkz_icons.3.8
-Image[9]=-
+Image[9]=> wkz_icons.3.9
 # slope tool icon
 Image[10]=> wkz_icons.4.0
 Image[11]=> wkz_icons.4.1

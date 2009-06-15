@@ -62,6 +62,7 @@ icon_height = 32
 # WKZ_STOP_MOVER=31
 # WKZ_MAKE_STOP_PUBLIC=32
 # WKZ_REMOVE_WAYOBJ=33
+# WKZ_UNDERGROUND_PICK=34
 #
 general_tool[0]=0,0,9,a
 general_tool[1]=1,1,14,r
@@ -149,7 +150,7 @@ simple_tool[11]=,!
 simple_tool[12]=,#
 simple_tool[13]=,%
 simple_tool[14]=,"
-simple_tool[15]=,U
+simple_tool[15]=,U,U
 simple_tool[16]=,R
 simple_tool[17]=,X
 simple_tool[20]=,/
@@ -287,16 +288,21 @@ toolbar[0][14]=toolbar[9],8,,LISTTOOLS,list.txt
 toolbar[0][15]=dialog_tool[4]
 toolbar[0][16]=dialog_tool[5]
 toolbar[0][17]=-
-toolbar[0][18]=simple_tool[2]
-toolbar[0][19]=simple_tool[0]
-toolbar[0][20]=simple_tool[1]
-toolbar[0][21]=dialog_tool[0]
+# sliced underground
+toolbar[0][18]=simple_tool[15],9,^U,K
+toolbar[0][19]=simple_tool[15],,(,I
+toolbar[0][20]=simple_tool[15],,),D
+#
+toolbar[0][21]=simple_tool[2]
+toolbar[0][22]=simple_tool[0]
+toolbar[0][23]=simple_tool[1]
+toolbar[0][24]=dialog_tool[0]
 # invisible tools (here because they need a parameter or are added twice)
-toolbar[0][22]=simple_tool[16]
-toolbar[0][23]=simple_tool[7],,.,+1
-toolbar[0][24]=simple_tool[7],,COMMA,-1
-toolbar[0][25]=simple_tool[19],,+,+
-toolbar[0][26]=simple_tool[19],,-,-
+toolbar[0][25]=simple_tool[16]
+toolbar[0][26]=simple_tool[7],,.,+1
+toolbar[0][27]=simple_tool[7],,COMMA,-1
+toolbar[0][28]=simple_tool[19],,+,+
+toolbar[0][29]=simple_tool[15],,
 
 # slope tools
 toolbar[1][0]=general_tool[2]
