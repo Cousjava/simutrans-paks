@@ -1,0 +1,17 @@
+------------
+obj=vehicle
+name=SH30
+waytype=track
+engine_type=electric
+speed=160
+cost=8100000
+weight=84
+power=3600
+RunningCost=270
+intro_year=1966
+Constraint[Prev][0]=none
+EmptyImage[SE]=SH30.0.0
+EmptyImage[S]=SH30.0.1
+EmptyImage[SW]=SH30.0.2
+EmptyImage[W]=SH30.0.3
+----------------

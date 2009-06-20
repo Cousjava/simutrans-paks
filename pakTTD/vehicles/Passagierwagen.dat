@@ -1,0 +1,17 @@
+------------
+obj=vehicle
+name=Passagierwagen
+waytype=track
+freight=Passagiere
+payload=40
+speed=120
+cost=385800
+weight=25
+RunningCost = 30
+intro_year= 1920
+Sound=-1
+EmptyImage[SE]=Passagierwagen.0.0
+EmptyImage[S]=Passagierwagen.0.1
+EmptyImage[SW]=Passagierwagen.0.2
+EmptyImage[W]=Passagierwagen.0.3
+----------------

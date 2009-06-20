@@ -1,0 +1,17 @@
+------------
+obj=vehicle
+name=Postwagen
+waytype=track
+freight=Post
+payload=30
+speed=160
+cost=355800
+weight=31
+RunningCost = 45
+intro_year=1920
+Sound=-1
+EmptyImage[SE]=Postwagen.0.0
+EmptyImage[S]=Postwagen.0.1
+EmptyImage[SW]=Postwagen.0.2
+EmptyImage[W]=Postwagen.0.3
+----------------

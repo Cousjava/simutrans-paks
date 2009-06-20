@@ -1,0 +1,17 @@
+------------
+obj=vehicle
+name=VV37
+waytype=track
+engine_type=diesel
+speed=144
+cost=5600000
+weight=101
+power=1750
+RunningCost=270
+Sound=2
+intro_year=1959
+EmptyImage[SE]=VV37.0.0
+EmptyImage[S]=VV37.0.1
+EmptyImage[SW]=VV37.0.2
+EmptyImage[W]=VV37.0.3
+----------------
