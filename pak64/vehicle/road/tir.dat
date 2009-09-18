@@ -20,8 +20,8 @@ EmptyImage[E]=TIR.0.2
 EmptyImage[W]=TIR.0.3
 EmptyImage[SE]=TIR.0.4
 EmptyImage[NW]=TIR.0.5
-EmptyImage[NE]=TIR.0.6
-EmptyImage[SW]=TIR.0.7
+EmptyImage[NE]=TIR.0.6,10,0
+EmptyImage[SW]=TIR.0.7,-10,0
 --
 obj=vehicle
 name=FordZugmaschine
@@ -44,8 +44,8 @@ EmptyImage[E]=TIR.1.2
 EmptyImage[W]=TIR.1.3
 EmptyImage[SE]=TIR.1.4
 EmptyImage[NW]=TIR.1.5
-EmptyImage[NE]=TIR.1.6
-EmptyImage[SW]=TIR.1.7
+EmptyImage[NE]=TIR.1.6,10,0
+EmptyImage[SW]=TIR.1.7,-10,0
 --
 obj=vehicle
 name=Mack_Truck_01
@@ -69,8 +69,8 @@ EmptyImage[E]=TIR.2.2
 EmptyImage[W]=TIR.2.3
 EmptyImage[SE]=TIR.2.4
 EmptyImage[NW]=TIR.2.5
-EmptyImage[NE]=TIR.2.6
-EmptyImage[SW]=TIR.2.7
+EmptyImage[NE]=TIR.2.6,10,0
+EmptyImage[SW]=TIR.2.7,-10,0
 --
 obj=vehicle
 name=RenaultTH5
@@ -94,8 +94,8 @@ EmptyImage[E]=TIR.3.2
 EmptyImage[W]=TIR.3.3
 EmptyImage[SE]=TIR.3.4
 EmptyImage[NW]=TIR.3.5
-EmptyImage[NE]=TIR.3.6
-EmptyImage[SW]=TIR.3.7
+EmptyImage[NE]=TIR.3.6,10,0
+EmptyImage[SW]=TIR.3.7,-10,0
 --
 obj=vehicle
 name=VolvoFH12
@@ -120,8 +120,8 @@ EmptyImage[E]=TIR.4.2
 EmptyImage[W]=TIR.4.3
 EmptyImage[SE]=TIR.4.4
 EmptyImage[NW]=TIR.4.5
-EmptyImage[NE]=TIR.4.6
-EmptyImage[SW]=TIR.4.7
+EmptyImage[NE]=TIR.4.6,10,0
+EmptyImage[SW]=TIR.4.7,-10,0
 ---
 obj=vehicle
 name=Holztrailer
