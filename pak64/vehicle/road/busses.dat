@@ -22,12 +22,12 @@ retire_year = 1932
 Constraint[Prev][0]=none
 Constraint[Next][0]=none
 EmptyImage[S]=DaimlerStoll.0.0
-EmptyImage[SE]=DaimlerStoll.0.1
+EmptyImage[N]=DaimlerStoll.0.1
 EmptyImage[E]=DaimlerStoll.0.2
-EmptyImage[NE]=DaimlerStoll.0.3
-EmptyImage[N]=DaimlerStoll.0.4
+EmptyImage[W]=DaimlerStoll.0.3
+EmptyImage[SE]=DaimlerStoll.0.4
 EmptyImage[NW]=DaimlerStoll.0.5
-EmptyImage[W]=DaimlerStoll.0.6
+EmptyImage[NE]=DaimlerStoll.0.6
 EmptyImage[SW]=DaimlerStoll.0.7
 --
 obj=vehicle
