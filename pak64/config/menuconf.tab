@@ -319,89 +319,91 @@ toolbar[1][6]=general_tool[4],14,,16 #all up slope
 toolbar[1][7]=general_tool[4],15,,17 #all down slope
 toolbar[1][8]=general_tool[5]
 
+# tools of the form bal(xyz) can take a single parameter afterwards, which is the construction sound
+
 # railtools
-toolbar[2][0]=ways(2,0)
-toolbar[2][1]=ways(2,1)
-toolbar[2][2]=bridges(2)
-toolbar[2][3]=tunnels(2)
+toolbar[2][0]=ways(2,0),11
+toolbar[2][1]=ways(2,1),11
+toolbar[2][2]=bridges(2),12
+toolbar[2][3]=tunnels(2),14
 toolbar[2][4]=general_tool[17],16,,2
-toolbar[2][5]=wayobjs(2)
-toolbar[2][6]=signs(2)
-toolbar[2][7]=buildings(33,2)
-toolbar[2][8]=buildings(34,2)
-toolbar[2][9]=buildings(35,2)
+toolbar[2][5]=wayobjs(2),12
+toolbar[2][6]=signs(2),11
+toolbar[2][7]=buildings(33,2),12
+toolbar[2][8]=buildings(34,2),12
+toolbar[2][9]=buildings(35,2),12
 toolbar[2][10]=general_tool[14],,t,2
 toolbar[2][11]=general_tool[18],,e,2
 
 # monorailtools (waytype 5)
-toolbar[3][0]=ways(5,0)
-toolbar[3][1]=ways(5,1)
-toolbar[3][2]=bridges(5)
-toolbar[3][3]=tunnels(5)
+toolbar[3][0]=ways(5,0),12
+toolbar[3][1]=ways(5,1),12
+toolbar[3][2]=bridges(5),12
+toolbar[3][3]=tunnels(5),14
 toolbar[3][4]=general_tool[17],17,,5
-toolbar[3][5]=wayobjs(5)
-toolbar[3][6]=signs(5)
-toolbar[3][7]=buildings(33,5)
-toolbar[3][8]=buildings(34,5)
-toolbar[3][9]=buildings(35,5)
+toolbar[3][5]=wayobjs(5),12
+toolbar[3][6]=signs(5),11
+toolbar[3][7]=buildings(33,5),12
+toolbar[3][8]=buildings(34,5),12
+toolbar[3][9]=buildings(35,5),12
 
 # tramtools (waytype 7)
-toolbar[4][0]=ways(7,0)
-toolbar[4][1]=ways(2,7)
-toolbar[4][2]=bridges(2)
-toolbar[4][3]=tunnels(2)
+toolbar[4][0]=ways(7,0),11
+toolbar[4][1]=ways(2,7),11
+toolbar[4][2]=bridges(2),12
+toolbar[4][3]=tunnels(2),14
 toolbar[4][4]=general_tool[17],16,,2
-toolbar[4][5]=wayobjs(2)
-toolbar[4][6]=signs(2)
-toolbar[4][7]=buildings(33,7)
-toolbar[4][8]=buildings(34,2)
-toolbar[4][9]=buildings(34,1)
+toolbar[4][5]=wayobjs(2),12
+toolbar[4][6]=signs(2),11
+toolbar[4][7]=buildings(33,7),12
+toolbar[4][8]=buildings(34,2),12
+toolbar[4][9]=buildings(34,1),12
 
 # roadtools (waytype 1)
-toolbar[5][0]=ways(1,0)
-toolbar[5][1]=ways(1,1)
-toolbar[5][2]=bridges(1)
-toolbar[5][3]=tunnels(1)
+toolbar[5][0]=ways(1,0),11
+toolbar[5][1]=ways(1,1),11
+toolbar[5][2]=bridges(1),12
+toolbar[5][3]=tunnels(1),14
 toolbar[5][4]=general_tool[17],20,,1
-toolbar[5][5]=wayobjs(1)
-toolbar[5][6]=signs(1)
-toolbar[5][7]=buildings(33,1)
-toolbar[5][8]=buildings(34,1)
-toolbar[5][9]=buildings(35,1)
+toolbar[5][5]=wayobjs(1),12
+toolbar[5][6]=signs(1),11
+toolbar[5][7]=buildings(33,1),12
+toolbar[5][8]=buildings(34,1),12
+toolbar[5][9]=buildings(35,1),12
 toolbar[5][10]=general_tool[14],,s,1
 
 # shiptools (waytype 3)
-toolbar[6][0]=ways(3,0)
-toolbar[6][1]=ways(3,1)
-toolbar[6][2]=bridges(3)
-toolbar[6][3]=tunnels(3)
+toolbar[6][0]=ways(3,0),13
+toolbar[6][1]=ways(3,1),13
+toolbar[6][2]=bridges(3),13
+toolbar[6][3]=tunnels(3),13
 toolbar[6][4]=general_tool[17],18,,3
-toolbar[6][5]=wayobjs(3)
-toolbar[6][6]=signs(3)
-toolbar[6][7]=buildings(33,3)
-toolbar[6][8]=buildings(34,3)
-toolbar[6][9]=buildings(11,3)
-toolbar[6][10]=buildings(35,3)
+toolbar[6][5]=wayobjs(3),12
+toolbar[6][6]=signs(3),11
+toolbar[6][7]=buildings(33,3),13
+toolbar[6][8]=buildings(34,3),12
+toolbar[6][9]=buildings(11,3),12
+toolbar[6][10]=buildings(35,3),13
 
 # airtools (waytype 1)
-toolbar[7][0]=ways(16,0)
-toolbar[7][1]=ways(16,1)
-toolbar[7][2]=bridges(16)
+toolbar[7][0]=ways(16,0),11
+toolbar[7][1]=ways(16,1),11
+toolbar[7][2]=bridges(16),12
 toolbar[7][3]=general_tool[17],19,,16
-toolbar[7][4]=wayobjs(16)
-toolbar[7][5]=signs(16)
-toolbar[7][6]=buildings(33,16)
-toolbar[7][7]=buildings(34,16)
-toolbar[7][8]=buildings(35,16)
+toolbar[7][4]=wayobjs(16),12
+toolbar[7][5]=signs(16),11
+toolbar[7][6]=buildings(33,16),12
+toolbar[7][7]=buildings(34,16),12
+toolbar[7][8]=buildings(35,16),12
 
 # specialtools
-toolbar[8][0]=buildings(35,0)
-toolbar[8][1]=ways(2,255)
+toolbar[8][0]=buildings(35,0),12
+toolbar[8][1]=ways(2,255),11
 toolbar[8][2]=simple_tool[5]
 toolbar[8][3]=general_tool[9]
 toolbar[8][4]=general_tool[11]
-toolbar[8][5]=ways(128,0)
-toolbar[8][6]=bridges(128)
+toolbar[8][5]=ways(128,0),11
+toolbar[8][6]=bridges(128),12
 toolbar[8][7]=general_tool[17],24,,128
 toolbar[8][8]=general_tool[8]
 toolbar[8][9]=general_tool[6]
