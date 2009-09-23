@@ -3,6 +3,7 @@
 obj=crossing
 name=rail-road-crossing
 copyright=Raven/Hajo/prissi
+sound=crossing.wav
 waytype[0]=road
 waytype[1]=track
 speed[0]=40
