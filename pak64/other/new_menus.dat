@@ -58,12 +58,13 @@ Image[16]=> wkz_icons.2.15
 Image[17]=> wkz_icons.2.16
 Image[18]=> wkz_icons.2.17
 Image[19]=> wkz_icons.2.18
+Image[20]=> wkz_icons.2.10
 # map editor
-Image[20]=> wkz_icons.2.19
-Image[21]=> wkz_icons.2.20
-Image[22]=> wkz_icons.2.21
-Image[23]=> wkz_icons.2.22
-Image[24]=> wkz_icons.2.23
+Image[21]=> wkz_icons.2.19
+Image[22]=> wkz_icons.2.20
+Image[23]=> wkz_icons.2.21
+Image[24]=> wkz_icons.2.22
+Image[25]=> wkz_icons.2.23
 --
 Obj=menu
 name=BarTools
