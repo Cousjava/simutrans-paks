@@ -91,7 +91,7 @@ Image[17]=> wkz_icons.4.7
 Image[18]=> wkz_icons.4.8
 Image[19]=> wkz_icons.4.9
 Image[20]=> wkz_icons.4.10
-Image[21]=-
+Image[21]=> wkz_icons.4.11
 Image[22]=-
 Image[23]=-
 Image[24]=> wkz_icons.4.14
@@ -100,4 +100,14 @@ Image[25]=> wkz_icons.4.15
 Image[26]=> wkz_icons.4.16
 # builds city road
 Image[27]=> wkz_icons.4.17
+# wayobjectremover tool icons
+Image[28]=> wkz_icons.5.6
+Image[29]=-
+Image[30]=-
+Image[31]=-
+Image[32]=-
+Image[33]=-
+Image[34]=-
+Image[35]=-
+Image[36]=-
 --
