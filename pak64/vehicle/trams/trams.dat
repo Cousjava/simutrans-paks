@@ -1,6 +1,6 @@
-#-----------------------
+#-
 #Definitions of trams
-#-----------------------
+#-
 obj=vehicle
 name=Tram_GT6_Kopf
 copyright=sique
@@ -24,7 +24,7 @@ EmptyImage[N]=duewag-gt6.0.4
 EmptyImage[W]=duewag-gt6.0.5
 EmptyImage[NW]=duewag-gt6.0.6
 EmptyImage[NE]=duewag-gt6.0.3
------------------------
+-
 obj=vehicle
 name=Tram_GT6_Ende
 copyright=sique
@@ -48,7 +48,7 @@ EmptyImage[N]=duewag-gt6.1.4
 EmptyImage[W]=duewag-gt6.1.5
 EmptyImage[NW]=duewag-gt6.1.6
 EmptyImage[NE]=duewag-gt6.1.3
------------------------
+-
 obj=vehicle
 name=Lowa
 copyright=sique
@@ -72,11 +72,12 @@ EmptyImage[N]=Lowa.0.4
 EmptyImage[W]=Lowa.0.5
 EmptyImage[NW]=Lowa.0.6
 EmptyImage[NE]=Lowa.0.3
------------------------
+-
 obj=vehicle
 name=Lowa_Anhaenger
 copyright=sique
 waytype=schiene_tram
+engine_type=electric
 freight=Passagiere
 speed=50
 payload=75
@@ -96,7 +97,7 @@ EmptyImage[N]=Lowa.1.4
 EmptyImage[W]=Lowa.1.5
 EmptyImage[NW]=Lowa.1.6
 EmptyImage[NE]=Lowa.1.3
------------------------
+-
 obj=vehicle
 name=Tatra-T4
 copyright=sique
@@ -120,11 +121,12 @@ EmptyImage[N]=Tatra-T4.0.4
 EmptyImage[W]=Tatra-T4.0.5
 EmptyImage[NW]=Tatra-T4.0.6
 EmptyImage[NE]=Tatra-T4.0.3
------------------------
+-
 obj=vehicle
 name=Tatra-T4_Wagon
 copyright=sique
 waytype=schiene_tram
+engine_type=electric
 freight=Passagiere
 speed=70
 payload=75
@@ -144,7 +146,7 @@ EmptyImage[N]=Tatra-T4.1.4
 EmptyImage[W]=Tatra-T4.1.5
 EmptyImage[NW]=Tatra-T4.1.6
 EmptyImage[NE]=Tatra-T4.1.3
------------------------
+-
 obj=vehicle
 name=Pferdebahn
 waytype=schiene_tram
@@ -168,7 +170,7 @@ EmptyImage[N]=Pferdebahn.0.4
 EmptyImage[W]=Pferdebahn.0.5
 EmptyImage[NW]=Pferdebahn.0.6
 EmptyImage[NE]=Pferdebahn.0.7
------------------------
+-
 obj=vehicle
 name=Pferdebahnwagen
 copyright=singaporekid
@@ -187,7 +189,7 @@ EmptyImage[S]=Pferdebahn.1.0
 EmptyImage[W]=Pferdebahn.1.1
 EmptyImage[SE]=Pferdebahn.1.2
 EmptyImage[SW]=Pferdebahn.1.3
------------------------
+-
 obj=vehicle
 name=T24
 copyright=RK
@@ -208,11 +210,12 @@ EmptyImage[S]=T24.0.0
 EmptyImage[W]=T24.0.1
 EmptyImage[SE]=T24.0.2
 EmptyImage[SW]=T24.0.3
------------------------
+-
 obj=vehicle
 name=TB24
 copyright=RK
 waytype=schiene_tram
+engine_type=electric
 freight=Passagiere
 speed=54
 payload=59
@@ -230,7 +233,7 @@ EmptyImage[S]=T24.1.0
 EmptyImage[W]=T24.1.1
 EmptyImage[SE]=T24.1.2
 EmptyImage[SW]=T24.1.3
------------------------
+-
 obj=vehicle
 name=T13
 copyright=Bernhard-prissi
@@ -255,11 +258,12 @@ EmptyImage[N]=T13.0.4
 EmptyImage[W]=T13.0.5
 EmptyImage[NW]=T13.0.6
 EmptyImage[NE]=T13.0.3
------------------------
+-
 obj=vehicle
 name=TB13
 copyright=Bernhard
 waytype=schiene_tram
+engine_type=electric
 freight=Passagiere
 speed=54
 payload=35
@@ -276,4 +280,4 @@ EmptyImage[S]=T13.1.0
 EmptyImage[W]=T13.1.1
 EmptyImage[SE]=T13.1.2
 EmptyImage[SW]=T13.1.3
------------------------
+-
