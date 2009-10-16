@@ -1,4 +1,51 @@
 obj=vehicle
+name=XTest
+waytype=monorail_track
+freight=Passagiere
+payload=76
+engine_type=fuel_cell
+speed=160
+cost=2400000
+weight=40
+power=800
+RunningCost=880
+sound=-1
+copyright=Timothy Baldock/Frank Penz
+intro_year = 1964
+intro_month = 11
+Constraint[Prev][0]=XTest
+Constraint[Prev][1]=XMail
+Constraint[Prev][2]=none
+EmptyImage[S]=concept.9.0
+EmptyImage[E]=concept.9.1
+EmptyImage[SE]=concept.9.2
+EmptyImage[SW]=concept.9.3
+EmptyImage[N]=concept.9.4
+EmptyImage[W]=concept.9.5
+EmptyImage[NW]=concept.9.6
+EmptyImage[NE]=concept.9.7
+--
+obj=vehicle
+name=XMail
+waytype=monorail_track
+freight=Post
+payload=60
+speed=160
+cost=800000
+weight=10
+RunningCost=770
+sound=-1
+copyright=Timothy Baldock/prissi
+intro_year = 1964
+intro_month = 11
+Constraint[Prev][0]=XTest
+Constraint[Prev][1]=XMail
+EmptyImage[S]=concept.10.0
+EmptyImage[W]=concept.10.1
+EmptyImage[SE]=concept.10.2
+EmptyImage[SW]=concept.10.3
+--
+obj=vehicle
 name=Concept1Front
 copyright=Timothy Baldock
 waytype=monorail_track
@@ -27,7 +74,7 @@ EmptyImage[N]=concept.0.4
 EmptyImage[W]=concept.0.5
 EmptyImage[NW]=concept.0.6
 EmptyImage[NE]=concept.0.7
------------------------
+--
 obj=vehicle
 name=Concept1Pass
 copyright=Timothy Baldock
@@ -54,7 +101,7 @@ EmptyImage[S]=concept.1.0
 EmptyImage[W]=concept.1.1
 EmptyImage[SE]=concept.1.2
 EmptyImage[SW]=concept.1.3
------------------------
+--
 obj=vehicle
 name=Concept1Mail
 copyright=Timothy Baldock
@@ -81,7 +128,7 @@ EmptyImage[S]=concept.1.4
 EmptyImage[W]=concept.1.5
 EmptyImage[SE]=concept.1.6
 EmptyImage[SW]=concept.1.7
------------------------
+--
 obj=vehicle
 name=Concept1Rear
 copyright=Timothy Baldock
@@ -111,7 +158,7 @@ EmptyImage[N]=concept.2.0
 EmptyImage[W]=concept.2.1
 EmptyImage[NW]=concept.2.2
 EmptyImage[NE]=concept.2.3
------------------------
+--
 #
 # Concept2 - High speed MLM train
 #
@@ -142,7 +189,7 @@ EmptyImage[N]=concept.4.4
 EmptyImage[W]=concept.4.5
 EmptyImage[NW]=concept.4.6
 EmptyImage[NE]=concept.4.7
------------------------
+--
 obj=vehicle
 name=Concept2Pass
 copyright=Timothy Baldock
@@ -169,7 +216,7 @@ EmptyImage[S]=concept.5.0
 EmptyImage[W]=concept.5.1
 EmptyImage[SE]=concept.5.2
 EmptyImage[SW]=concept.5.3
------------------------
+--
 obj=vehicle
 name=Concept2Mail
 copyright=Timothy Baldock
@@ -196,7 +243,7 @@ EmptyImage[S]=concept.5.4
 EmptyImage[W]=concept.5.5
 EmptyImage[SE]=concept.5.6
 EmptyImage[SW]=concept.5.7
------------------------
+--
 obj=vehicle
 name=Concept2Rear
 copyright=Timothy Baldock
@@ -224,4 +271,4 @@ EmptyImage[N]=concept.6.0
 EmptyImage[W]=concept.6.1
 EmptyImage[NW]=concept.6.2
 EmptyImage[NE]=concept.6.3
------------------------
+--
