@@ -5,12 +5,16 @@
 #                             Language: ja Japanese                            #
 #                                Encoding: UTF-8                               #
 #                               Font : m+10r.bdf                               #
-#                            Date Created: 3.01 2009                           #
+#                           Date Created: 17.10 2009                           #
 #                                                                              #
 #                                   authors:                                   #
+#                              Frank Penz - FrankP                             #
+#                      note: Administrator SimuTranslator                      #
+#                                    - Hamo73                                  #
+#                                    note:                                     #
 #                           Tomohiro MATSUMURA - hiro                          #
 #                                    note:                                     #
-#                                    - prissi                                  #
+#                          Markus Pristovsek - prissi                          #
 #              note: Administrator Base texts / pak64 / pak.japan              #
 #                          SHISHIDO Yoshihiro - yoshi                          #
 #                                    note:                                     #
@@ -284,8 +288,6 @@ rampShipStop
 港セット(斜面)
 Raven_Kirche
 聖マインラート教会\n\n隠者聖マインラートは二羽\nのワタリガラスに伴われて\n伝説となりました。彼が殺\n害されたとき、二羽のワタ\nリガラスは殺人者たちの付\nいて回り、彼らに有罪を宣\n告しました。今日、彼の小\n屋があった場所はアインジ\nーデルン修道院となってい\nます。\n\n\n
-RES_00_01
-庭のある小さな家\n\n\n
 RES_00_02
 庭のある小さな家\n\n\n
 RES_00_03
@@ -382,76 +384,14 @@ yellow_car
 黄色い車
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_2Raffinerie_details
-精油所
-factory_3Raffinerie_details
-精油所(プラスチック/ガソリン)
 factory_Aufwindkraftwerk_details
 ソーラーチムニー
-factory_Autohaus_details
-カーショップ
-factory_Autohersteller_details
-自動車工場
-factory_Buchgrosshandel_details
-書店
 factory_Cementmill_details
 セメント工場
-factory_ChemicalPlant_details
-化学工場
-factory_CHEMIST_details
-薬局
-factory_Concretefactory_details
-コンクリート工場
-factory_Druckerei_details
-印刷工場
-factory_Erzbergwerk_details
-鉄鉱石鉱山
-factory_Kohlegrube_details
-炭鉱
-factory_Kohlekraftwerk_details
-石炭発電所
-factory_Materialswholesale_details
-資材販売店
-factory_Moebelfabrik_details
-家具工場
-factory_Moebelhaus_details
-家具販売店
-factory_Nutzwald_details
-植林地
-factory_Oelbohrinsel_details
-海上油田
-factory_Oelfeld_details
-油田
-factory_Oelkraftwerk_details
-火力発電所
-factory_Oelpumpe_details
-採油ポンプ
-factory_Papierfabrik_details
-製紙工場
-factory_Pharmaceutics_details
-製薬会社
-factory_Raffinerie_details
-プラスチック精製所
-factory_Rinnenkraftwerk_details
-太陽熱発電所(トラフ式)
-factory_Saegewerk_details
-製材場
-factory_SaegewerkMHz_details
-製材所
-factory_Sandquarry_details
-砂採取場
-factory_Stahlwerk_details
-製鉄所
-factory_Stonequarry_details
-採石場
-factory_TANKE_details
-ガソリンスタンド
 factory_thermisches_Solarkraftwerk_details
 太陽熱発電所
 factory_Turmkraftwerk_details
 太陽熱発電所(タワー式)
-factory_Windkraftwerk_details
-風力発電所
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -478,6 +418,8 @@ Druckerei
 印刷工場
 Erzbergwerk
 鉄鉱石鉱山
+Incinerator
+焼却炉
 Kohlegrube
 炭鉱
 Kohlekraftwerk
@@ -512,6 +454,8 @@ SaegewerkMHz
 製材所
 Sandquarry
 砂採取場
+scrap_yard
+ゴミ集積場
 Stahlwerk
 製鉄所
 Stonequarry
@@ -550,6 +494,8 @@ Medicine
 薬
 Moebel
 家具
+None
+なし
 Oel
 石油
 Papier
@@ -564,6 +510,8 @@ Stahl
 鉄鋼
 Stone
 石
+waste
+ゴミ
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
 gemsen
@@ -684,6 +632,16 @@ Tree6
 モミの木\n\n
 Willow
 柳\n\n
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
+FastRailTunnel
+高速鉄道トンネル
+FastRoadTunnel
+高速トンネル(道路)
+RailTunnel
+トンネル(鉄道)
+RoadTunnel
+トンネル(道路)
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -826,6 +784,10 @@ DaimlerStoll
 ダイムラー・ストール
 DC-3
 ダグラスDC-3
+Deponielaster
+清掃車
+Deponielaster2
+清掃車
 Doubledeck_city_bus
 二階建て市内バス
 E44
@@ -868,6 +830,8 @@ Flachwagen
 高速有蓋車
 Fokker_F27
 フォッカー F27 フレンドシップ
+GarbageTruck
+清掃車
 Gelenkbus_Ende
 連節バス（後）
 Gelenkbus_Front
@@ -956,8 +920,6 @@ Lockheed10-Electra
 ロッキード・モデル10・エレクトラ
 logs
 木材筏
-Lowa
-Lowa
 Lowa_Anhaenger
 Lowa (付随車)
 MailExpress
@@ -1048,10 +1010,6 @@ Tatra-T4
 タトラ T4型路面電車
 Tatra-T4_Wagon
 タトラ T4型路面電車（付随車）
-TB13
-TB13
-TB24
-TB24
 teaclipper
 快速帆船 ティークリッパー
 TPBeiwagen
@@ -1070,10 +1028,8 @@ Tugboat
 タグボート
 VolvoFH12
 ボルボ FH12
-XMail
-XMail
-XTest
-XTest
+waste wagon
+廃棄物運搬車
 Zeppelin
 ツェッペリン飛行船
 #______________________________________way______________________________________

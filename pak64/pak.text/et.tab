@@ -5,10 +5,12 @@
 #                              Language: et Eesti                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 3.01 2009                           #
+#                           Date Created: 17.10 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                                    - prissi                                  #
+#                              Frank Penz - FrankP                             #
+#                      note: Administrator SimuTranslator                      #
+#                          Markus Pristovsek - prissi                          #
 #              note: Administrator Base texts / pak64 / pak.japan              #
 #                                                                              #
 ################################################################################
@@ -132,8 +134,6 @@ PSHall2TrainStop
 Jaama hall
 Raven_Kirche
 St. Meinradi kirik\n\nEremiit püha Meinrad oli\nsaadetud kahe kaarna\npoolt. Kui ta mõrvati, kaks\nkaarnat jälitasid mõrvareid\nja mõistsid nad süüdi. Täna\non tema onni kohal Einsiedelni\nklooster.\n\n
-RES_00_01
-Väike aiaga maja\n\n
 RES_00_02
 Väike aiaga maja\n\n
 RES_00_03
@@ -196,40 +196,8 @@ yellow_car
 Kollane auto
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_2Raffinerie_details
-Bensiinirafineerimisvabrik
-factory_3Raffinerie_details
-Gaasirafineerimisvabrik
-factory_Autohaus_details
-Autopood
-factory_Autohersteller_details
-Autotehas
-factory_Buchgrosshandel_details
-Raamatupood
 factory_Cementmill_details
 tsemenditehas
-factory_ChemicalPlant_details
-kemikaalitehas
-factory_CHEMIST_details
-apteek
-factory_Moebelfabrik_details
-Mööblitehas
-factory_Moebelhaus_details
-Kaubamaja
-factory_Nutzwald_details
-Puiduistandus
-factory_Oelbohrinsel_details
-Naftapuurtorn
-factory_Oelfeld_details
-Naftaväli
-factory_Oelkraftwerk_details
-elektrijaam
-factory_Papierfabrik_details
-Paberivabrik
-factory_Raffinerie_details
-Plastmassirafineermiskoda
-factory_Windkraftwerk_details
-Tuuleelektrijaam
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -288,10 +256,14 @@ Papier
 Paber
 PrintersInk
 Printeri tint
+#__________________________________ground_obj___________________________________
+#__________________________________ground_obj___________________________________
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Woman
 naine
+#_________________________________program_text__________________________________
+#_________________________________program_text__________________________________
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 Minimum80
@@ -308,6 +280,10 @@ Valgusfoor
 #_____________________________________tree______________________________________
 Latschenkiefer
 Mäe mänd\n\n
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
+RailTunnel
+Raudteetunnel
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -430,3 +406,5 @@ Powerline
 Elektriliin
 wooden_sleeper_track
 Puuliipritega raudtee
+#__________________________________way-object___________________________________
+#__________________________________way-object___________________________________

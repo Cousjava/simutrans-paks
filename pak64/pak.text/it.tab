@@ -5,10 +5,14 @@
 #                             Language: it Italiano                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 3.01 2009                           #
+#                           Date Created: 17.10 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                                    - prissi                                  #
+#                              Frank Penz - FrankP                             #
+#                      note: Administrator SimuTranslator                      #
+#                                   - davemds                                  #
+#                                    note:                                     #
+#                          Markus Pristovsek - prissi                          #
 #              note: Administrator Base texts / pak64 / pak.japan              #
 #                                Marco - rabanne                               #
 #                                    note:                                     #
@@ -142,8 +146,6 @@ Lighthouse
 Faro\n\n
 MonorailFoundation
 Fondamenta della monorotaia
-RES_00_01
-Casa piccola con giardino\n\n
 RES_00_02
 Casa piccola con giardino\n\n
 RES_00_03
@@ -186,58 +188,8 @@ green_car
 auto verde
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_2Raffinerie_details
-Raffineria (Benzina)
-factory_Autohaus_details
-Concess. auto
-factory_Autohersteller_details
-Fabbrica auto
-factory_Buchgrosshandel_details
-Grossista di libri
 factory_Cementmill_details
 cementeria\n
-factory_ChemicalPlant_details
-Impianto chimico
-factory_CHEMIST_details
-Laboratorio chimico
-factory_Concretefactory_details
-Fabbrica calcestruzzo
-factory_Druckerei_details
-Tipografia
-factory_Erzbergwerk_details
-Miniera di ferro
-factory_Kohlegrube_details
-Miniera di carbone
-factory_Kohlekraftwerk_details
-Centrale elettr.
-factory_Materialswholesale_details
-Grossista materiali
-factory_Moebelfabrik_details
-Mobilificio
-factory_Moebelhaus_details
-Home Market
-factory_Nutzwald_details
-Bosco
-factory_Oelbohrinsel_details
-Piattaforma petrolifera
-factory_Oelfeld_details
-Pozzo di petrolio
-factory_Papierfabrik_details
-Cartiera
-factory_Pharmaceutics_details
-Industria farmaceutica
-factory_Raffinerie_details
-Raffineria (Plastica)
-factory_Saegewerk_details
-Segheria
-factory_Sandquarry_details
-Cava di sabbia
-factory_Stahlwerk_details
-Acciaieria
-factory_Stonequarry_details
-Cava di pietra
-factory_TANKE_details
-Distrib. benzina
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -332,6 +284,10 @@ Stahl
 Acciaio
 Stone
 Pietra
+#__________________________________ground_obj___________________________________
+#__________________________________ground_obj___________________________________
+#__________________________________pedestrian___________________________________
+#__________________________________pedestrian___________________________________
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -360,6 +316,16 @@ Endofchoosetrack
 Fine della ricerca del tracciato
 RailClose
 Chiudi tratto ferroviario
+#_____________________________________tree______________________________________
+#_____________________________________tree______________________________________
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
+FastRailTunnel
+Tunnel ferroviario ad alta velocità
+FastRoadTunnel
+Tunnel stradale ad alta velocità
+RailTunnel
+Tunnel ferroviario
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -420,8 +386,6 @@ Concept2Pass
 Concept 2 - Vagone passeggeri
 Concept2Rear
 Concept 2 - Motore posteriore
-Concorde
-Concorde
 Doubledeck_city_bus
 Autobus cittadino a due piani
 Eb3-5
@@ -550,8 +514,6 @@ X2000car
 X2000 - Carrozza passeggeri
 X2000front
 X2000 - Fronte
-Zeppelin
-Zeppelin
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 city_road

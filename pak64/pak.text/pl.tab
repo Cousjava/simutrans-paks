@@ -5,10 +5,16 @@
 #                              Language: pl Polski                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                            Date Created: 3.01 2009                           #
+#                           Date Created: 17.10 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                                    - prissi                                  #
+#                              Frank Penz - FrankP                             #
+#                      note: Administrator SimuTranslator                      #
+#                              Jaroslaw - Jaroslaw                             #
+#                                    note:                                     #
+#                                     - Rivo                                   #
+#                                    note:                                     #
+#                          Markus Pristovsek - prissi                          #
 #              note: Administrator Base texts / pak64 / pak.japan              #
 #                                                                              #
 ################################################################################
@@ -305,7 +311,19 @@ Dworzec kolejowy I
 Raven_Kirche
 Ko¶ció³ ¶w. Krzysztofa\n\n¦wiêty Krzysztof jest uwa¿any\nza opiekuna podró¿nych,\npielgrzymów, kierowców\nprzewodników, flisaków,\nmarynarzy, wo¼niców,\n¿eglarzy, biegaczy i tragarzy.\nNic dziwnego, ¿e w tym\nko¶ciele zawsze jest mnóstwo\nludzi. Na pewno spotkasz tu\nrównie¿ pracowników Twoich\nlinii.\n\n
 RES_00_01
-Domek ogrodnika\n\nJu¿ na pierwszy rzut oka\nwidaæ, ¿e w tym ma³ym\ndomku musi mieszkaæ\nmi³o¶nik ogrodnictwa. Przed\ndomkiem kwitn± maki, a na\nrabatce obok wybuja³y\nkonopie. Noc± mo¿na dostrzec\n¶wiat³o, które pali siê ci±gle w\npiwnicy - zapewne jakie¶\nbardzo egzotyczne ro¶liny\nwymagaj± do¶wietlania ca³±\ndobê.\n\n
+Domek ogrodnik\n
+Ju¿ na pierwszy rzut oka
+widaæ, ¿e w tym\nma³ym
+domku musi mieszkaæ
+mi³o¶nik\nogrodnictwa. Przed
+domkiem kwitn±\nmaki, a na
+rabatce obok\nwybuja³y
+konopie. Noc± mo¿na\ndostrzec
+¶wiat³o, które pali siê ci±gle\nw
+piwnicy - zapewne jakie¶
+bardzo\negzotyczne ro¶liny
+wymagaj±\ndo¶wietlania ca³±
+dobê.\nJu¿ na pierwszy rzut ok\nwidaæ, ¿e w tym ma³y\ndomku musi mieszka\nmi³o¶nik ogrodnictwa. Prze\ndomkiem kwitn± maki, a n\nrabatce obok wybuja³\nkonopie. Noc± mo¿na dostrze\n¶wiat³o, które pali siê ci±gle \npiwnicy - zapewne jakie\nbardzo egzotyczne ro¶lin\nwymagaj± do¶wietlania ca³\ndobê\n\n
 RES_00_02
 Ma³y dom z ogrodem\n\n
 RES_00_03
@@ -378,68 +396,14 @@ Motorrad
 Motocykl
 orange_bus
 Gimbus
-Pickup
-Pickup
 Roadster
 Automobil
 yellow_car
 ¯ó³ty samochód
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_2Raffinerie_details
-Refineria ropy
-factory_3Raffinerie_details
-Rafineria
-factory_Autohaus_details
-Salon samochodowy
-factory_Autohersteller_details
-Fabryka samochodów
-factory_Buchgrosshandel_details
-Ksiêgarnia
 factory_Cementmill_details
 Cementownia
-factory_ChemicalPlant_details
-Zak³ady przemys³u chemicznego
-factory_CHEMIST_details
-Apteka
-factory_Concretefactory_details
-Betoniarnia
-factory_Druckerei_details
-Drukarnia
-factory_Erzbergwerk_details
-Kopalnia ¿elaza
-factory_Kohlegrube_details
-Kopalnia wêgla
-factory_Kohlekraftwerk_details
-Elektrownia
-factory_Materialswholesale_details
-Sk³ad materia³ów budowlanych
-factory_Moebelfabrik_details
-Fabryka mebli
-factory_Moebelhaus_details
-Sklep meblowy
-factory_Nutzwald_details
-Wycinka drzewa
-factory_Oelbohrinsel_details
-Platforma wiertnicza
-factory_Oelfeld_details
-Szyb naftowy
-factory_Papierfabrik_details
-Zak³ady papiernicze
-factory_Pharmaceutics_details
-Farmaceutyka
-factory_Raffinerie_details
-Wytwórnia plastiku
-factory_Saegewerk_details
-Tartak
-factory_Sandquarry_details
-Piaskownia
-factory_Stahlwerk_details
-Huta ¿elaza
-factory_Stonequarry_details
-Kamienio³om
-factory_TANKE_details
-Stacja paliw
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -480,6 +444,10 @@ Oelbohrinsel
 Platforma wiertnicza
 Oelfeld
 Szyb naftowy
+Oelkraftwerk
+Elektrownia naftowa
+Oelpumpe
+Kiwon
 Papierfabrik
 Zak³ady papiernicze
 Pharmaceutics
@@ -504,8 +472,6 @@ Bretter
 Deski
 Buecher
 Ksi±¿ki
-Cement
-Cement
 Chemicals
 Chemikalia
 Concrete
@@ -526,10 +492,6 @@ None
 brak
 Oel
 Ropa
-Papier
-Papier
-Plastik
-Plastik
 PrintersInk
 Tusz drukarski
 Sand
@@ -538,6 +500,10 @@ Stahl
 Stal
 Stone
 kamienia
+#__________________________________ground_obj___________________________________
+#__________________________________ground_obj___________________________________
+flowers
+Kwiaty
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Cyclist
@@ -578,6 +544,8 @@ ChooseSignals
 Semafory
 ChooseSignalsMonorail
 Semafory
+Minimum80
+Prêdko¶æ minimalna 80km/h
 NoEntry
 Zakaz wjazdu
 Signals
@@ -640,6 +608,16 @@ Tree6
 ¦wierk pospolity\n(Picea abies)\n\nOsi±ga wysoko¶æ 40-50m,\n¶rednica pnia do 1,5m.\nUwa¿a siê, ¿e legendarne\nskrzypce Stradivariusa\nzawdziêczaj± swój\nniespotykany d¼wiêk miêdzy\ninnymi szczególnym\nw³asno¶ciom drewna\n¶wierkowego z Czech, z\nktórego zosta³y wykonane.\n\n
 Willow
 Wierzba p³acz±ca \n(Salix x chrysocoma)\n\nWierzba p³acz±ca to\nnajpospolitsza z polskich\nwierzb. Uwa¿ana jest za\nodmianê wierzby bia³ej, ale\nw rzeczywisto¶ci powsta³a ze\nskrzy¿owania S. alba 'Vitellina'\nz S. babylonica 'Babylon'. Pod\njej charakterystycznymi,\nzwisaj±cymi pêdami zawsze w\nlecie mo¿na znale¼æ trochê\ncienia.\n\n
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
+FastRailTunnel
+Nowoczesny tunel kolejowy
+FastRoadTunnel
+Nowoczesny tunel drogowy
+RailTunnel
+Tunel kolejowy
+RoadTunnel
+Tunel drogowy
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -736,8 +714,6 @@ Bus
 Autobus H-Trans
 Cementtrailer
 Naczepa (cement)
-Concorde
-Concorde
 DC-3
 Douglas DC-3
 Doubledeck_city_bus

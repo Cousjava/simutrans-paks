@@ -5,10 +5,14 @@
 #                              Language: ca Catala                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 3.01 2009                           #
+#                           Date Created: 17.10 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                                    - prissi                                  #
+#                              Frank Penz - FrankP                             #
+#                      note: Administrator SimuTranslator                      #
+#                           Joan-Josep Bargues - Joan                          #
+#                                    note:                                     #
+#                          Markus Pristovsek - prissi                          #
 #              note: Administrator Base texts / pak64 / pak.japan              #
 #                                                                              #
 ################################################################################
@@ -36,48 +40,12 @@ A5_STONEHENGE
 Un antic anell  de pedres. \n¡Molt misteriós!\n\n
 A6_DOME
 Aquesta preciosa  catedral\nantiga  és una gran  atracció.\n\n
+#____________________________________citycar____________________________________
+#____________________________________citycar____________________________________
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_Autohaus_details
-Concessionari cotxes
-factory_Autohersteller_details
-Fàbrica cotxes
-factory_Buchgrosshandel_details
-Majorista de llibres
 factory_Cementmill_details
 Fàbrica de ciment
-factory_CHEMIST_details
-Farmàcia (per Seth)
-factory_Concretefactory_details
-Fábrica de formigó
-factory_Druckerei_details
-Impremta
-factory_Erzbergwerk_details
-Mina de ferro
-factory_Kohlegrube_details
-Mina de carbó
-factory_Kohlekraftwerk_details
-Central tèrmica
-factory_Moebelhaus_details
-Botiga de mobles
-factory_Nutzwald_details
-Explotac. forestal
-factory_Oelbohrinsel_details
-Plataforma petrolífera
-factory_Oelfeld_details
-Pou de petroli
-factory_Papierfabrik_details
-Fàbrica de paper
-factory_Raffinerie_details
-Refineria
-factory_Sandquarry_details
-Cantera d'arena
-factory_Stahlwerk_details
-Fundició ferro
-factory_Stonequarry_details
-Cantera de pedra
-factory_TANKE_details
-Benzinera
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 Autohaus
@@ -150,6 +118,18 @@ Stahl
 Acer
 Stone
 Pedra
+#__________________________________ground_obj___________________________________
+#__________________________________ground_obj___________________________________
+#__________________________________pedestrian___________________________________
+#__________________________________pedestrian___________________________________
+#_________________________________program_text__________________________________
+#_________________________________program_text__________________________________
+#___________________________________roadsign____________________________________
+#___________________________________roadsign____________________________________
+#_____________________________________tree______________________________________
+#_____________________________________tree______________________________________
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -244,3 +224,7 @@ TPPassagierwagen
 TPI Vagó passatgers
 TPSchienenbus
 TPI VT98 (dièsel)
+#______________________________________way______________________________________
+#______________________________________way______________________________________
+#__________________________________way-object___________________________________
+#__________________________________way-object___________________________________

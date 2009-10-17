@@ -5,15 +5,21 @@
 #                             Language: cz Cestina                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                            Date Created: 3.01 2009                           #
+#                           Date Created: 17.10 2009                           #
 #                                                                              #
 #                                   authors:                                   #
+#                              Frank Penz - FrankP                             #
+#                      note: Administrator SimuTranslator                      #
+#                                    - JOHNY                                   #
+#                                    note:                                     #
 #                                   - hernajs                                  #
 #                                    note:                                     #
 #                              Tomá¹ Kube¹ - napik                             #
 #                                    note:                                     #
-#                                    - prissi                                  #
+#                          Markus Pristovsek - prissi                          #
 #              note: Administrator Base texts / pak64 / pak.japan              #
+#                            Oliver Mayer - rakishly                           #
+#                                    note:                                     #
 #                         Tomá¹ Vrbický - vrbicky_tomas                        #
 #                     note: Don´thurry up! Death is faster.                    #
 #                            Vladimír Slávik - vsys                            #
@@ -111,13 +117,13 @@ Velký moderní terminál
 Bulk_StationBlg
 Sklady sypkého zbo¾í
 BusStop
-Postavit\nautobusovou/tramvajovou\nzastávku\n
+Autobusová zastávka\n
 Car_StationBlg
 Pøekladi¹tì automobilù
 CarDepot
 Depo pro silnièní vozidla
 CarStop
-Postavit zastávku pro\nnákladní auta\n
+Nákladová rampa\n
 ChannelStop
 Molo na vodním kanále
 COM_00_01
@@ -189,11 +195,11 @@ Postaveno Volkerem\nMeyerem, který zdokonalil\nSimutrans v mnoha, mnoha\noblaste
 Feste
 Pevnost\n\nTato témìø nedobytná pevnost\nbyla zalo¾ena zaèátkem 15.\nstoletí.\n\n
 FreightTrainStop
-Postavit nakládací stanici s betonovou podlahou
+Nakládací stanice
 GCG1TrainStop
-Postavit stanici s pùloblukovou halou 1
+Levá strana velké nádra¾ní haly
 GCG2TrainStop
-Postavit stanici s pùloblukovou halou 2
+Pravá strana velké nádra¾ní rampy
 Gymnasium
 Gymnázium\n\n
 IND_00_01
@@ -251,7 +257,7 @@ Spalovna pneumatik\n\n
 IND_02_06
 Továrna na supermoderní\nprocesor "Pentilium"\n\n
 LargeShipStop
-Postavit nákladní pøístav
+Velký nakládací jeøáb
 LeuchtturmShipStop
 Pøístavní molo s majákem
 Lighthouse
@@ -271,17 +277,15 @@ Patricks_Rock
 PlainAirStop
 Stání pro letadlo
 PostOffice
-Postavit po¹tu
+Po¹ta
 PostStop
 Schránka na po¹tu
 PSFreightTrainStop
-Postavit nakládací stanici s dlá¾ïìnou podlahou
+Nakládací stanice
 PSHall1TrainStop
-Postavit stanici s oblukovou halou
+Nádra¾ní hala s trafikou
 PSHall2TrainStop
-Postavit stanici s obchùdky a obloukovou halou
-RES_00_01
-Malý domeèek se zahradou\n\n
+Nádra¾ní hala
 RES_00_02
 Malý domeèek se zahrádkou\n\n
 RES_00_03
@@ -332,10 +336,6 @@ RES_01_12
 Cihlová bytovka\n\n
 RES_01_15
 Bytovka\n\n
-RES_01_16
-Øadovky\n\n
-RES_01_18
-Èin¾ovní dùm\n\n
 RES_01_21
 Moderní vì¾ák\n\n
 RES_01_22
@@ -353,7 +353,7 @@ Prosté nástupi¹tì
 ShipDepot
 Lodìnice
 ShipStop
-Postavit pøístav\n
+Pøístav\n
 STADIUM2
 Velký stadion Tento veliký\nstadion s kapacitou 25 000\nosob èasto hostí rozlièné\nsportovní události.\n\n
 Tennis_Court
@@ -367,7 +367,7 @@ Leti¹tní vì¾ (by Moistboy)
 TrainDepot
 ®eleznièní depo
 TrainStop
-Postavit stanici\n
+Zastøe¹ené nástupi¹tì\n
 TramDepot
 Vozovna tramvají
 VictorianStation
@@ -390,78 +390,20 @@ orange_bus
 Oran¾ový autobus
 Pickup
 Pick-up
-Roadster
-Roadster
 yellow_car
 ®luté auto
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_2Raffinerie_details
-Benzínová rafinerie
-factory_3Raffinerie_details
-Rafinerie
-factory_Autohaus_details
-Autosalón
-factory_Autohersteller_details
-Automobilka
-factory_Buchgrosshandel_details
-Kni¾ní velkoobchod
 factory_Cementmill_details
 Cementárna
-factory_ChemicalPlant_details
-Chemièka
-factory_CHEMIST_details
-Lékárna
-factory_Concretefactory_details
-Betonárka
-factory_Druckerei_details
-Tiskárna
-factory_Erzbergwerk_details
-®eleznorudný dùl
-factory_Kohlegrube_details
-Uhelný dùl
-factory_Kohlekraftwerk_details
-Elektrárna
-factory_Materialswholesale_details
-Velkoob. s materiálem
-factory_Moebelfabrik_details
-Truhlárna
-factory_Moebelhaus_details
-Obchod s nábytkem
-factory_Nutzwald_details
-Les
-factory_Oelbohrinsel_details
-Ropná plo¹ina
-factory_Oelfeld_details
-Ropné pole
-factory_Oelkraftwerk_details
-Olejová elektrárna
-factory_Oelpumpe_details
-Ropná pumpa
-factory_Papierfabrik_details
-Papírna
-factory_Pharmaceutics_details
-Továrna na léky
-factory_Raffinerie_details
-Rafinerie
-factory_Saegewerk_details
-Pila
-factory_Sandquarry_details
-Píseèný lom
-factory_Stahlwerk_details
-Slévárna
-factory_Stonequarry_details
-Kamenolom
-factory_TANKE_details
-Èerpací stanice
-factory_Windkraftwerk_details
-Vìtrná elektrárna
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
 Benzínová rafinerie
 3Raffinerie
 Rafinerie
+Aufwindkraftwerk
+Vìtrná elektrárna
 Autohaus
 Autosalón
 Autohersteller
@@ -508,6 +450,8 @@ Raffinerie
 Rafinerie
 Saegewerk
 Pila
+SaegewerkMHz
+Stará pila
 Sandquarry
 Píseèný lom
 Stahlwerk
@@ -521,45 +465,53 @@ Vìtrná elektrárna
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
-aut
+Automobily
 Bretter
-prken
+Prkna
 Buecher
-knih
-Cement
-cementu
+Knihy
 Chemicals
-chemikalií
+Chemikálie
 Concrete
-betonu
+Beton
 Eisenerz
-¾el. rudy
+®elezná ruda
 Gasoline
-benzínu
+Benzín
 Holz
-døeva
+Døevo
 Kohle
-uhlí
+Uhlí
 Medicine
-lékù
+Léky
 Moebel
-nábytku
+Nábytek
 None
-nic
+Nic
 Oel
-ropy
+Ropa
 Papier
-papíru
+Papír
+Passagiere
+Cestující
 Plastik
-plastu
+Plast
+Post
+Po¹ta
 PrintersInk
-tisk. inkoustu
+Tiskárnový inkoust
 Sand
-písku
+Písek
 Stahl
-oceli
+Ocel
 Stone
-kamene
+Kámen
+waste
+Odpad
+#__________________________________ground_obj___________________________________
+#__________________________________ground_obj___________________________________
+rocks
+kamení
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Couple
@@ -583,19 +535,29 @@ Woman
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
-kus. zbo?í
+kusù zbo¾í
 CATEGORY_02
-sypké zbo?í
+sypké zbo¾í
 CATEGORY_03
 ropa/benzín
 CATEGORY_04
-mra?. zbo?í
+mra¾eného zbo¾í
 CATEGORY_05
-tkaniny
+tekuté potraviny
 CATEGORY_06
-D?evo
+Døevo
+rolls
+ rolí
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
+ChooseSignals
+Návìstidlo volby stanièní koleje
+ChooseSignalsMonorail
+Návìstidlo volby stanièní koleje
+Endofchoosetrack
+Návìstidlo zákazu volby stanièní koleje
+LongBlockSignals
+Návìstidlo úseku s více zastávkami
 Minimum80
 Minimální rychlost 80 km/h
 NoAirEntry
@@ -603,13 +565,15 @@ Zákaz vjezdu
 NoEntry
 Zákaz vjezdu
 preSignals
-Pøed-návìstidla
+Návìstidlo vlakové cesty
 preSignalsMonorail
-Pøed-návìstidla
+Návìstidlo vlakové cesty
 RailClose
 Tra» uzavøena
 Signals
-Návìstidlo
+Návìstidlo tra»ového bloku
+SignalsMonorail
+Návìstidlo tra»ového bloku
 traffic_light
 Semafory
 #_____________________________________tree______________________________________
@@ -628,6 +592,16 @@ Tree6
 Jedle\n\n
 Willow
 vrba\n\n
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
+FastRailTunnel
+Vysokorychlostní ¾eleznièní tunel
+FastRoadTunnel
+Vysokorychlostní silnièní tunel
+RailTunnel
+®eleznièní Tunel
+RoadTunnel
+Silnièní tunel
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -706,14 +680,10 @@ Cementtrailer
 Pøívìs na cement
 Comet
 De Havilland 'Kometa'
-Concorde
-Concorde
 DC-3
 Dacota DC-3
 Doubledeck_city_bus
 Dvoupatrový mìstský autobus
-Eb3-5
-Eb3-5
 EinheitsTender
 tendr
 Erzanhaenger
@@ -877,7 +847,7 @@ Jednokolejka
 Powerline
 Elektrické vedení
 Rillenschienen
-Postavit tramvajovou tra»
+Tramvajová tra»
 runway_grass
 Travnatá ranvej
 runway_modern

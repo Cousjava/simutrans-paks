@@ -5,10 +5,12 @@
 #                              Language: dk Dansk                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 3.01 2009                           #
+#                           Date Created: 17.10 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                                    - prissi                                  #
+#                              Frank Penz - FrankP                             #
+#                      note: Administrator SimuTranslator                      #
+#                          Markus Pristovsek - prissi                          #
 #              note: Administrator Base texts / pak64 / pak.japan              #
 #                                                                              #
 ################################################################################
@@ -62,58 +64,12 @@ Theatre
 Teater. Ethvert besøg er en\nkulturel berigelse.\n\n
 Windmill
 Mølle\n\n
+#____________________________________citycar____________________________________
+#____________________________________citycar____________________________________
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_2Raffinerie_details
-Raffinaderi (benzin)
-factory_Autohaus_details
-Bilforhandler
-factory_Autohersteller_details
-Bilfabrik
-factory_Buchgrosshandel_details
-Boghandel
 factory_Cementmill_details
 Cementfabrik
-factory_CHEMIST_details
-Apotek (af Seth)
-factory_Concretefactory_details
-Betonfabrik
-factory_Druckerei_details
-Trykkeri
-factory_Erzbergwerk_details
-Jernmine
-factory_Kohlegrube_details
-Kulmine
-factory_Kohlekraftwerk_details
-Kulkraftværk
-factory_Materialswholesale_details
-Byggemarked
-factory_Moebelfabrik_details
-Møbelfabrik
-factory_Moebelhaus_details
-Møbelforretning
-factory_Nutzwald_details
-Skovbrug
-factory_Oelbohrinsel_details
-Olieplatform
-factory_Oelfeld_details
-Oliekilde
-factory_Papierfabrik_details
-Papirfabrik
-factory_Pharmaceutics_details
-Medicinalfabrik
-factory_Raffinerie_details
-Raffinaderi (plast)
-factory_Saegewerk_details
-Savværk
-factory_Sandquarry_details
-Grusgrav
-factory_Stahlwerk_details
-Stålværk
-factory_Stonequarry_details
-Stenbrud
-factory_TANKE_details
-Benzinstation
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -206,6 +162,10 @@ Stahl
 stål
 Stone
 sten
+#__________________________________ground_obj___________________________________
+#__________________________________ground_obj___________________________________
+#__________________________________pedestrian___________________________________
+#__________________________________pedestrian___________________________________
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -216,6 +176,12 @@ CATEGORY_03
 olie/benzin
 CATEGORY_04
 Kølegods
+#___________________________________roadsign____________________________________
+#___________________________________roadsign____________________________________
+#_____________________________________tree______________________________________
+#_____________________________________tree______________________________________
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -358,3 +324,7 @@ TPPassagierwagen
 TPI Passagervogn
 TPSchienenbus
 TPI VT98 (dmu)
+#______________________________________way______________________________________
+#______________________________________way______________________________________
+#__________________________________way-object___________________________________
+#__________________________________way-object___________________________________

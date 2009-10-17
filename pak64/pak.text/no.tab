@@ -5,12 +5,14 @@
 #                              Language: no Norsk                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 3.01 2009                           #
+#                           Date Created: 17.10 2009                           #
 #                                                                              #
 #                                   authors:                                   #
 #                         Christian Berntsen - DonChris                        #
 #                                    note:                                     #
-#                                    - prissi                                  #
+#                              Frank Penz - FrankP                             #
+#                      note: Administrator SimuTranslator                      #
+#                          Markus Pristovsek - prissi                          #
 #              note: Administrator Base texts / pak64 / pak.japan              #
 #                                                                              #
 ################################################################################
@@ -52,16 +54,12 @@ Control_StationBlg
 Stasjon Kontroll Bygning
 Fluid_StationBlg
 Væske Stasjon Byggning
+#____________________________________citycar____________________________________
+#____________________________________citycar____________________________________
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_Autohaus_details
-Bil selger
-factory_Autohersteller_details
-Assmebly anlegg
 factory_Cementmill_details
 Sement mølle
-factory_Concretefactory_details
-Sement mixer
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 Autohaus
@@ -75,19 +73,61 @@ Sement mixer
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
-automobiler
+biler
 Bretter
 planker
+Buecher
+bøker
 Cement
 Sement
 Chemicals
 kjemikalier
 Concrete
-Sement
+betong
+Eisenerz
+jernmalm
+Gasoline
+bensin
+Holz
+tømmer
+Kohle
+kull
+Medicine
+medisin
+Moebel
+møbler
+Oel
+olje
+Papier
+papir
+Passagiere
+passasjerer
+Plastik
+plastikk
+Post
+post
+PrintersInk
+blekk
+Sand
+sand
+Stahl
+stål
+Stone
+stein
+#__________________________________ground_obj___________________________________
+#__________________________________ground_obj___________________________________
+#__________________________________pedestrian___________________________________
+#__________________________________pedestrian___________________________________
+#_________________________________program_text__________________________________
+#_________________________________program_text__________________________________
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 choose_point
 Velg destinasjons skilt
+#_____________________________________tree______________________________________
+#_____________________________________tree______________________________________
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 1Ben140
@@ -110,3 +150,5 @@ cobblestone_road
 Cobblestein vei
 concrete_sleeper_track
 Sement Sleeper Spor
+#__________________________________way-object___________________________________
+#__________________________________way-object___________________________________

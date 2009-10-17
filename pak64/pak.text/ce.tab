@@ -5,11 +5,15 @@
 #                            Language: ce C-English                            #
 #                                Encoding: ASCII                               #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 3.01 2009                           #
+#                           Date Created: 17.10 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                                    - prissi                                  #
+#                              Frank Penz - FrankP                             #
+#                      note: Administrator SimuTranslator                      #
+#                          Markus Pristovsek - prissi                          #
 #              note: Administrator Base texts / pak64 / pak.japan              #
+#                           Lincoln Sayger - skreyola                          #
+#                                    note:                                     #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -286,8 +290,6 @@ rampShipStop
 Ramp for Docks
 Raven_Kirche
 Church of St.Meinrad. \nAccording to legend, the\nhermit St. Meinrad was\naccompanied by two\nravens.  When he was\nmurdered, the two ravens\nwere convicted. Today, the\nplace of his hut  is the\nEinsiedeln Monastery.\n\n
-RES_00_01
-Small House with a Garden\n\n
 RES_00_02
 Small House with a Garden\n\n
 RES_00_03
@@ -325,7 +327,7 @@ Large Luxury House\n\n
 RES_01_08
 Medium House with a\nGarden\n\n
 RES_01_10
-Modern Gouse\n\n
+Modern House\n\nThe rooftop patio offers a\ngreat place to enjoy the\noutdoors without leaving\nthe house.\n
 RES_01_12
 Brick Apartment Building\n\n
 RES_02_16
@@ -394,64 +396,8 @@ yellow_car
 Yellow Family Sedan
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_2Raffinerie_details
-Gasoline Refinery
-factory_3Raffinerie_details
-Refinery
-factory_Autohaus_details
-Car Dealer
-factory_Autohersteller_details
-Car Factory
-factory_Buchgrosshandel_details
-Book Wholesaler
 factory_Cementmill_details
 Cement Mill
-factory_ChemicalPlant_details
-Chemical Plant
-factory_CHEMIST_details
-Chemist
-factory_Concretefactory_details
-Concrete Factory
-factory_Druckerei_details
-Printing Works
-factory_Erzbergwerk_details
-Iron Ore Mine
-factory_Kohlegrube_details
-Coal Mine
-factory_Kohlekraftwerk_details
-Coal Power Station
-factory_Materialswholesale_details
-Construction Goods Store
-factory_Moebelfabrik_details
-Furniture Factory
-factory_Moebelhaus_details
-Home Market
-factory_Nutzwald_details
-Timber Plantation
-factory_Oelbohrinsel_details
-Oil Rig
-factory_Oelfeld_details
-Oil Field
-factory_Oelkraftwerk_details
-Oil Power Station
-factory_Papierfabrik_details
-Paper Mill
-factory_Pharmaceutics_details
-Drug Store
-factory_Raffinerie_details
-Plastic Refinery
-factory_Saegewerk_details
-Sawmill
-factory_Sandquarry_details
-Sand Quarry
-factory_Stahlwerk_details
-Iron Foundry
-factory_Stonequarry_details
-Stone Quarry
-factory_TANKE_details
-Gas Station
-factory_Windkraftwerk_details
-Windmill Power Station
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -493,7 +439,7 @@ Oil Rig
 Oelfeld
 Oil Field
 Oelkraftwerk
-Oil Power Station
+Oil Power Plant
 Papierfabrik
 Paper Mill
 Pharmaceutics
@@ -504,6 +450,8 @@ Saegewerk
 Sawmill
 Sandquarry
 Sand Quarry
+scrap_yard
+Scrapyard
 Stahlwerk
 Iron Foundry
 Stonequarry
@@ -520,26 +468,16 @@ Bretter
 Planks
 Buecher
 Books
-Cement
-Cement
-Chemicals
-Chemicals
 Concrete
 Cement
 Eisenerz
 Iron Ore
-Gasoline
-Gasoline
 Holz
 Wood
 Kohle
 Coal
-Medicine
-Medicine
 Moebel
 Furniture
-None
-None
 Oel
 Oil
 Papier
@@ -548,18 +486,18 @@ Plastik
 Plastic
 PrintersInk
 Printer ink
-Sand
-Sand
 Stahl
 Steel
-Stone
-Stone
+#__________________________________ground_obj___________________________________
+#__________________________________ground_obj___________________________________
+bushes
+Bushes
+gooses
+Geese
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Couple
 Two People Walking Together
-Cyclist
-Cyclist
 pedestrian_1
 Jason
 pedestrian_2
@@ -572,8 +510,6 @@ pedestrian_child
 Geoffrey
 pedestrian_dog
 Samantha (with Her Dog, Sparky)
-Woman
-Woman
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_02
@@ -596,6 +532,22 @@ traffic_light
 Traffic Light
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
+Ahorn-1
+Maple Tree\n
+Ahorn-2
+Maple Tree\n
+Ahorn-Gruppe
+Maple Trees\n
+Kiefer_1
+Red Pine\n
+Kiefer_2
+Red Pine\n
+Kiefer_3
+Red Pine\n
+Kiefer_4
+Red Pine\n
+Kiefer_5
+Red Pine\n
 Latschenkiefer
 Mountain Pine\n\n
 Tree4
@@ -604,6 +556,12 @@ Tree5
 Fake Plastic Tree\n\n
 Tree6
 Fir\n\n
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
+RailTunnel
+Railroad Tunnel
+RoadTunnel
+Road Tunnel
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -654,8 +612,6 @@ BB1280
 Kahan 1280
 Be5-7
 Autocar Falcon
-Blimp
-Blimp
 Book_Trike
 Kirayami Small Box Truck
 Boxcar
@@ -758,6 +714,14 @@ Flachwagen
 Rama Box Car 12
 Fokker_F27
 Fokker F-27 Friendship
+GarbageTruck
+Garbage Truck
+Gelenkbus_Ende
+Jointed Bus (rear)
+Gelenkbus_Front
+Jointed Bus
+Godm_Spitz
+Passenger Clipper
 Guppy
 Aero Spacelines 377SGT Super Guppy
 H-Trans-Pantheress
@@ -942,16 +906,12 @@ Tram_GT6_Ende
 Autocar GT-6 (Rear)
 Tram_GT6_Kopf
 Autocar GT-6 (Front)
-Tugboat
-Tugboat
 VolvoFH12
 Ikarus Model F
 XMail
 Kirayami Fuel Cell Prototype (Mail)
 XTest
 Kirayami Fuel Cell Prototype (Passengers)
-Zeppelin
-Zeppelin
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road
@@ -978,8 +938,6 @@ mip_cobblestone_road
 MIP Cobblestone Road
 monorail
 Monorail Track
-Powerline
-Powerline
 Rillenschienen
 Tram Track
 runway_grass
@@ -994,3 +952,7 @@ taxiway
 Asphalt Taxiway
 wooden_sleeper_track
 Railroad Track (Wood Sleepers)
+#__________________________________way-object___________________________________
+#__________________________________way-object___________________________________
+HighSpeedOverheadpower
+High-speed Overhead Lines

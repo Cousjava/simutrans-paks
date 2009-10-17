@@ -5,10 +5,14 @@
 #                              Language: ro Romana                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                            Date Created: 3.01 2009                           #
+#                           Date Created: 17.10 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                                    - prissi                                  #
+#                              Frank Penz - FrankP                             #
+#                      note: Administrator SimuTranslator                      #
+#                         N. Ifteni - emaxectranspoorte                        #
+#                                    note:                                     #
+#                          Markus Pristovsek - prissi                          #
 #              note: Administrator Base texts / pak64 / pak.japan              #
 #                                                                              #
 ################################################################################
@@ -104,8 +108,6 @@ IND_01_09
 Rezervor de ap?\n\n
 IND_01_10
 Fabric? de unelte\n\n
-RES_00_01
-Cas? cu gr?din?\n\n
 RES_00_02
 Cas? cu gr?din?\n\n
 RES_00_03
@@ -142,58 +144,12 @@ Theatre
 Teatru\n\n
 Windmill
 Moar? de vânt\n\n
+#____________________________________citycar____________________________________
+#____________________________________citycar____________________________________
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_2Raffinerie_details
-Rafin?rie
-factory_Autohaus_details
-Salon auto
-factory_Autohersteller_details
-Uzin? de automobile
-factory_Buchgrosshandel_details
-Depozit en-gros c?r?i
 factory_Cementmill_details
 Uzin? ciment
-factory_CHEMIST_details
-Fabric? de chimicale
-factory_Concretefactory_details
-Uzin? beton
-factory_Druckerei_details
-Tipografie
-factory_Erzbergwerk_details
-Min? minereu de fier
-factory_Kohlegrube_details
-Min? c?rbune
-factory_Kohlekraftwerk_details
-Central? termic?
-factory_Materialswholesale_details
-Curte de fier
-factory_Moebelfabrik_details
-Fabric? de mobil?
-factory_Moebelhaus_details
-Centru de magazine
-factory_Nutzwald_details
-Pepinier?
-factory_Oelbohrinsel_details
-Platform? petrol
-factory_Oelfeld_details
-Câmpie petrolifer?
-factory_Papierfabrik_details
-Fabric? de hârtie
-factory_Pharmaceutics_details
-Fabrica de produse farmaceutice
-factory_Raffinerie_details
-Rafin?rie
-factory_Saegewerk_details
-Gater
-factory_Sandquarry_details
-Min? nisip
-factory_Stahlwerk_details
-Uzin? metalurgic?
-factory_Stonequarry_details
-Min? piatr?
-factory_TANKE_details
-Benzin?rie
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -288,6 +244,14 @@ Stahl
 o?el
 Stone
 piatr?
+#__________________________________ground_obj___________________________________
+#__________________________________ground_obj___________________________________
+#__________________________________pedestrian___________________________________
+#__________________________________pedestrian___________________________________
+#_________________________________program_text__________________________________
+#_________________________________program_text__________________________________
+#___________________________________roadsign____________________________________
+#___________________________________roadsign____________________________________
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Latschenkiefer
@@ -298,6 +262,8 @@ Tree5
 Pin\n\n
 Tree6
 Brad\n\n
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -454,3 +420,5 @@ steel_sleeper_track
 Linie ferat? cu travers? din o?el
 wooden_sleeper_track
 Linie ferat? cu travers? din lemn
+#__________________________________way-object___________________________________
+#__________________________________way-object___________________________________

@@ -5,10 +5,12 @@
 #                              Language: hu Magyar                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                            Date Created: 3.01 2009                           #
+#                           Date Created: 17.10 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                                    - prissi                                  #
+#                              Frank Penz - FrankP                             #
+#                      note: Administrator SimuTranslator                      #
+#                          Markus Pristovsek - prissi                          #
 #              note: Administrator Base texts / pak64 / pak.japan              #
 #                                                                              #
 ################################################################################
@@ -37,7 +39,7 @@ Acél vasúti híd
 tb_classic_road
 Beton közúti híd
 ViaductRail
-Kõ viadukt
+K? viadukt
 WoodenRoad
 Gerenda viadukt
 #___________________________________building____________________________________
@@ -73,23 +75,23 @@ Cégközpont
 3headquarter
 Cégközpont
 A1_ALTE_KIRCHE
-Régi templom.\n\n\n
+Régi templom.\n\n\n\n
 A2_SCHLOSS1
-Bolond király kastélya.\n\n\n
+Bolond király kastélya.\n\n\n\n
 A3_BURG1
-Templom rom\n\n\n
+Templom rom\n\n\n\n
 A4_SCHLOSS2
-Palotakút\n\n\n
+Palotakút\n\n\n\n
 A5_STONEHENGE
-Õsi menhir.\n\n\n
+?si menhir.\n\n\n\n
 A6_DOME
-Régi katedrális.\n\n\n
+Régi katedrális.\n\n\n\n
 AirDepot
 Hangár
 AirportShed1930
 Reptéri postaépület (1901)
 AirStop
-Repülõ dokkoló\n\n
+Repül? dokkoló\n\n
 AirTerminal477
 Reptéri fogadócsarnok (1950)
 Avila_Big_StationBlg
@@ -114,118 +116,32 @@ CarStop
 Kocsi megálló\n\n
 ChannelStop
 Csatorna megálló
-COM_00_01
-Kis bevásárlóközpont\n\n\n
-COM_00_02
-Nincs lefordítva:\nCOM_00_02\n\n\n
-COM_00_03
-Kocsma\n\n\n
-COM_00_05
-Nincs lefordítva:\nCOM_00_05\n\n\n
-COM_00_06
-Szórakozóhely\n\n\n
-COM_00_08
-Nincs lefordítva:\nCOM_00_08\n\n\n
-COM_00_10
-Irodaépület\n\n\n
-COM_00_11
-Nincs lefordítva: COM_00_11\n\n\n
-COM_00_12
-Nincs lefordítva: COM_00_12\n\n\n
-COM_00_14
-Nincs lefordítva: COM_00_14\n\n\n
-COM_00_18
-Nincs lefordítva: COM_00_18\n\n\n
-COM_00_22
-Nincs lefordítva:\nCOM_00_22\n\n\n
-COM_01_01
-Légballon Centrum\n\n\n
-COM_01_04
-Sétáló fasor\n\n
-COM_01_09
-Mozi\n\n\n
-COM_01_10
-Nagy üzletház.\n\n\n
-COM_01_17
-Nincs lefordítva: COM_01_17\n\n\n
-COM_01_18
-Nincs lefordítva: COM_01_18\n\n\n
-COM_01_20
-Nincs lefordítva: COM_01_20\n\n\n
-COM_01_21
-Nincs lefordítva: COM_01_21\n\n\n
-COM_01_22
-Luxus Irodaház.\n\n\n
-COM_02_02
-Parkoló\n\n\n
-COM_02_04
-Facsoport\n\n
-COM_02_13
-Modern irodaház.\n\n\n
 COM_02_16
-Irodaház.\n\nNem túl modern és az irodák \nis kicsik az épületben.\n\n\n\n
-COM_02_17
-Irodaépület.\n\n\n
-COM_02_19
-Toronyépület\n\n
-COM_03_14
-Ipari épület\n\n\n
-COM_03_15
-Színház.\n\n\n\n
-COM_03_17
-Toronyház\n\n\n
-COM_03_19
-Cégközpont\n\n\n
-COM_03_20
-Toronyház\n\n\n
-COM_04_15
-Kommunikációs központ\n\n\n
-COM_10_01
-Park\n\n\n
-COM_10_02
-Parkoló\n\n\n
-COM_10_05
-Tehénfarm.\n\n\n
-COM_10_07
-Németalfölsi Iskola.\n\n\n
-COM_10_08
-Németalföldi iskola\n\n\n
-COM_10_10
-Németalföldi fogadó.\n\n\n
-COM_10_11
-Németalföldi könyvtár\n\n\n
-COM_10_12
-Németalföldi közösségi ház.\n\n\n
-COM_11_10
-Villaház\n\n\n
-COM_11_11
-Angol lakópark\n\n\n
-COM_11_12
-Cigánypalota\n\n\n
+Irodaház.\n\nNem túl modern és az irodák \nis kicsik az épületben.\n\n
 Control_StationBlg
-Vezérlõtorony építése
+Vezérl?torony építése
 DenkFlor
-Flor WF Ultd.' Wautersnek  a\nkedves mérnöknek  ki oly\nsok jármûvet  tervezett.\n\n\n
+Flor WF Ultd.' Wautersnek  a\nkedves mérnöknek  ki oly\nsok járm?vet  tervezett.\n\n\n\n
 DenkHajo
-Emlékmû a zseniális Hajonak,\nkinek köszönhetõen ez a\njáték megszületett.\n\n\n
+Emlékm? a zseniális Hajonak,\nkinek köszönhet?en ez a\njáték megszületett.\n\n\n\n
 DenkMHz
-Emlékmû a Simutrans egyik\nfõ tervezõmérnõkének :)\n\n\n
+Emlékm? a Simutrans egyik\nf? tervez?mérn?kének :)\n\n\n\n
 DenkOwen
-Ezt Owen Rudge-nak\ndedikáljuk a híres pénzügyi \nszakembernek.\n\n\n
+Ezt Owen Rudge-nak\ndedikáljuk a híres pénzügyi \nszakembernek.\n\n\n\n
 DenkSeth
-Ez itt Seth C. Triggs\nremekmûve.\n\n\n
+Ez itt Seth C. Triggs\nremekm?ve.\n\n\n\n
 DenkTomas
-Tomas Kubesnak  a kedves\nsegítségért.\n\n\n
+Tomas Kubesnak  a kedves\nsegítségért.\n\n\n\n
 DenkTrikky
-Ez Trikky' Rick McGreal \nemlékmûve.\n\n\n
+Ez Trikky' Rick McGreal \nemlékm?ve.\n\n\n\n
 DenkVM
-Ezt Manfred VT Vienna' \nTomaschitznak emeltük.\n\n\n
+Ezt Manfred VT Vienna' \nTomaschitznak emeltük.\n\n\n\n
 DenkVolker
-Ez az épület Volker Meyer \nmûve.\n\n\n
+Ez az épület Volker Meyer \nm?ve.\n\n\n\n
 Eingang
 Bejárat
 Feste
-Konuberts erõd.\n\nEzt az erõdöt az 1400-as \névek körül építették.\n\n\n\n
+Konuberts er?d.\n\nEzt az er?döt az 1400-as \névek körül építették.\n\n\n\n\n
 Fluid_StationBlg
 Víztároló
 FreightTrainStop
@@ -239,77 +155,19 @@ Vasúti félfedett megálló (jobb)
 Goods_StationBlg
 Általános tároló
 Gymnasium
-Középiskola.\n\n\n
-IND_00_01
-Nincs lefordítva: IND_00_01\n\n\n
-IND_00_02
-Gyár torony\n\n\n
-IND_00_03
-Tárolótartály\n\n\n
-IND_00_04
-Nincs lefordítva: IND_00_04\n\n\n
-IND_00_05
-Nincs lefordítva: IND_00_05\n\n\n
-IND_00_06
-Nincs lefordítva: IND_00_06\n\n\n
-IND_00_09
-Nincs lefordítva: IND_00_09\n\n\n
-IND_00_10
-Nincs lefordítva: IND_00_10\n\n\n
-IND_00_12
-Nincs lefordítva: IND_00_12\n\n\n
-IND_00_14
-Nincs lefordítva: IND_00_14\n\n\n
-IND_00_16
-Nincs lefordítva: IND_00_16\n\n\n
-IND_00_17
-Nincs lefordítva: IND_00_17\n\n\n
-IND_00_18
-Távfûtõmûvek.\n\n\n
+Középiskola.\n\n\n\n
 IND_01_01
-Ingyenes parkoló. \nSok ember itt \nhagyja a régi \nautóját.\n\n\n
-IND_01_03
-Nagy gáztartály\n\n\n
-IND_01_04
-Nincs lefordítva: IND_01_04\n\n\n
-IND_01_06
-Nincs lefordítva: IND_01_06\n\n\n
-IND_01_07
-Nincs lefordítva: IND_01_07\n\n\n
-IND_01_08
-Nincs lefordítva: IND_01_08\n\n\n
-IND_01_09
-Nincs lefordítva: IND_01_09\n\n\n
-IND_01_10
-Nincs lefordítva: IND_01_10\n\n\n
-IND_01_11
-Nincs lefordítva: IND_01_11\n\n\n
-IND_01_12
-Nincs lefordítva: IND_01_12\n\n\n
-IND_01_13
-Nincs lefordítva: IND_01_13\n\n\n
-IND_01_15
-Gyárkémény\n\n\n
-IND_02_01
-Hulladéklerakat\n\n\n
-IND_02_02
-Mûanyagfröccsentõ\n\n\n
-IND_02_06
-Nincs lefordítva: IND_02_06\n\n\n
-IND_02_09
-Gáztelep.\n\n\n
-IND_02_10
-Ipari egység.\n\n\n
+Ingyenes parkoló. \nSok ember itt \nhagyja a régi \nautóját.\n\n\n\n
 LargeShipStop
-Óriáskikötõ
+Óriáskiköt?
 leftShipStop
 Rakodó daru
 LeuchtturmShipStop
-Világítótornyos kikötõ
+Világítótornyos kiköt?
 Lighthouse
-Világítótorony.\n\n\n
+Világítótorony.\n\n\n\n
 MainTerminal1930
-Fõ várócsarnok (1930)
+F? várócsarnok (1930)
 MHzSmallStation
 Kis megálló
 ModernAirTerminal477
@@ -321,11 +179,11 @@ Nyeregvasút alap
 MonorailGround
 Nyeregvasút talaj
 OldTownhall
-Régi városháza.\n\n\n
+Régi városháza.\n\n\n\n
 Patricks_Rock
-Patrick Sziklája.\n\n\n
+Patrick Sziklája.\n\n\n\n
 PlainAirStop
-Repülõ megálló
+Repül? megálló
 PostOffice
 Posta
 PostStop
@@ -337,141 +195,15 @@ Pályaudvar kis bodéval
 PSHall2TrainStop
 Nagy pályaudvar
 rampShipStop
-lejtõs rakpart
+lejt?s rakpart
 Raven_Kirche
-Raven temploma.\n\n\n
-RES_00_01
-kis ház kerttel.\n\n\n
-RES_00_02
-Kertesház\n\n\n
-RES_00_03
-Lakóház\n\n\n
-RES_00_04
-Lakóház\n\n\n
-RES_00_06
-Szökõkút\n\n\n
-RES_00_07
-Lakóház\n\n\n
-RES_00_08
-Kis ház garázssal.\n\n\n
-RES_00_09
-Kis park kacsausztatóval.\n\n\n
-RES_00_10
-Feltûnõ legénylakás.\n\n\n
-RES_00_11
-Társasház.\n\n\n
-RES_00_12
-Modern ház sok lakással.\n\n\n
-RES_00_13
-Ikerház kerttel.\n\n\n
-RES_00_16
-Nincs lefordítva: RES_00_16\n\n\n
-RES_00_17
-Nincs lefordítva: RES_00_17\n\n\n
-RES_00_18
-Garzon\n\n\n
-RES_00_19
-Nincs lefordítva: RES_00_19\n\n\n
-RES_00_21
-Társasház\n\n\n
-RES_00_23
-Felhõkarcoló\n\n\n
-RES_01_01
-Lakóház\n\n\n
-RES_01_02
-Nincs lefordítva: RES_01_02\n\n\n
-RES_01_05
-Lakóház\n\n\n
-RES_01_07
-Nincs lefordítva: RES_01_07\n\n\n
-RES_01_08
-Lakóház\n\n\n
-RES_01_10
-Lakóház\n\n\n
-RES_01_12
-Nincs lefordítva: RES_01_12\n\n\n
-RES_01_15
-Nincs lefordítva: RES_01_15\n\n\n
-RES_01_16
-Nincs lefordítva: RES_01_16\n\n\n
-RES_01_18
-Nincs lefordítva: RES_01_18\n\n\n
-RES_01_21
-Modern emeletesház\n\n\n
-RES_01_22
-Házgyári emeletesház\n\n\n
-RES_01_23
-Vörös-Fehér emeletes ház\n\n\n
-RES_02_01
-Pihenõ oázis\n\n\n
-RES_02_07
-Lakóház.\n\n\n
-RES_02_16
-Nincs lefordítva: RES_02_16\n\n\n
-RES_02_20
-Luxus ház uszodával\n\n\n
-RES_10_01
-Kis családi ház\n\n\n
-RES_10_02
-Németalföldi ház\n\n\n
-RES_10_03
-Németalföldi fafaragó háza\n\n\n
-RES_10_04
-Stájer polgári ház\n\n\n
-RES_10_05
-Németalföldi emeletes ház\n\n\n
-RES_10_08
-Gyorsház\n\n\n
-RES_10_10
-Németalföldi lábasház\n\n\n
-RES_10_11
-Németalföldi posta\n\n\n
-RES_10_12
-Németalföldi iskola\n\n\n
-RES_10_13
-Németalföldi fogadó\n\n\n
-RES_10_14
-Németalföldi faluház\n\n\n
-RES_10_15
-Németalföldi sorház\n\n\n
-RES_11_01
-Parasztház kerttel\n\n\n
-RES_11_02
-Falusi Iskola\n\n\n
-RES_11_03
-Gazdasági épület\n\n\n
-RES_11_04
-Falusi ház gazdasági résszel\n\n\n
-RES_11_08
-Németalföldi emeletes ház\n\n\n
-RES_11_12
-Városi iskola\n\n\n
-RES_11_13
-Stájer Múzeum\n\n\n
-RES_11_14
-Modern bérház\n\n\n
-RES_12_03
-Villa.\n\n\n
-RES_12_05
-Viktoriánus villa.\n\n\n
-RES_12_07
-Ház.\n\n\n
-RES_12_08
-Ház.\n\n\n
-RES_12_10
-Ranch.\n\n\n
-RES_12_11
-Palota.\n\n\n
-RES_12_12
-Villa.\n\n\n
-RES_12_15
-Polgári ház.\n\n\n
+Raven temploma.\n\n\n\n
 Residenz
-Rezidencia.\n\nYoga Guru ezen a helyen\ntanítja \na meditációt és a belsõ \nbékéhez vezetõ utat.\n\n\n\n
+Rezidencia.\n\nYoga Guru ezen a helyen\ntanítja \na meditációt és a bels? \nbékéhez vezet? utat.\n\n\n\n\n
 rightShipStop
-Rakpart hullámtörõvel
+Rakpart hullámtör?vel
 RUIN_0
-Középkori rom\n\n\n
+Középkori rom\n\n\n\n
 SandStationMHz
 Homoktározó
 ShipDepot
@@ -479,15 +211,15 @@ Hajó depó
 ShipDepotEW
 Hajó depó (Kelet-Nyugat)\n\n
 ShipStop
-Kikötõ\n\n
+Kiköt?\n\n
 STADIUM2
-Rögbipálya\n\n\n
+Rögbipálya\n\n\n\n
 Tennis_Court
-Tennis aréna.\n\n\n
+Tennis aréna.\n\n\n\n
 Terminal1930
 Terminál (1930)
 Theatre
-Színház\n\n\n
+Színház\n\n\n\n
 Tower1930
 Irányítótorony (1930)
 TowerMoistboy
@@ -505,13 +237,13 @@ Villamos depó
 VictorianStation
 Viktoriánus megálló
 Vorplatz
-Elõtér
+El?tér
 Windmill
-Szélmalom\n\n\n
+Szélmalom\n\n\n\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
-Mentõautó
+Ment?autó
 FordT
 Ford T-modell
 green_car
@@ -528,68 +260,8 @@ yellow_car
 Trabant 601
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_2Raffinerie_details
-Finomító
-factory_3Raffinerie_details
-Olajfeldolgozó
-factory_Autohaus_details
-Autó szalon
-factory_Autohersteller_details
-Autógyár
-factory_Buchgrosshandel_details
-Könyvkereskedés
 factory_Cementmill_details
 Cementgyár
-factory_ChemicalPlant_details
-Vegyiüzem
-factory_CHEMIST_details
-Patika
-factory_Concretefactory_details
-Betonkeverõ üzem
-factory_Druckerei_details
-Nyomda
-factory_Erzbergwerk_details
-Vasércbánya
-factory_Kohlegrube_details
-Szénbánya
-factory_Kohlekraftwerk_details
-Szénfûtésû hõerõmû
-factory_Materialswholesale_details
-Tüzéptelep
-factory_Moebelfabrik_details
-Bútor üzem
-factory_Moebelhaus_details
-Lakberendezési Központ
-factory_Nutzwald_details
-Faültetvény
-factory_Oelbohrinsel_details
-Olajfúró torony
-factory_Oelfeld_details
-Olajmezõ
-factory_Oelkraftwerk_details
-Olajfûtésû hõerõmû
-factory_Oelpumpe_details
-Olajkút
-factory_Papierfabrik_details
-Papírgyár
-factory_Pharmaceutics_details
-Gyógyszergyár
-factory_Raffinerie_details
-Olajfeldolgozó
-factory_Saegewerk_details
-Fûrészmalom
-factory_SaegewerkMHz_details
-Fûrésztelep
-factory_Sandquarry_details
-Homokbánya
-factory_Stahlwerk_details
-Acélkohó
-factory_Stonequarry_details
-Kõbánya
-factory_TANKE_details
-Benzinkút
-factory_Windkraftwerk_details
-Szélerõmû
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -609,7 +281,7 @@ Vegyiüzem
 CHEMIST
 Patika
 Concretefactory
-Betonkeverõ üzem
+Betonkever? üzem
 Druckerei
 Nyomda
 Erzbergwerk
@@ -617,7 +289,7 @@ Vasércbánya
 Kohlegrube
 Szénbánya
 Kohlekraftwerk
-Szénfûtésû hõerõmû
+Szénf?tés? h?er?m?
 Materialswholesale
 Tüzéptelep
 Moebelfabrik
@@ -629,9 +301,9 @@ Faültetvény
 Oelbohrinsel
 Olajfúró torony
 Oelfeld
-Olajmezõ
+Olajmez?
 Oelkraftwerk
-Olajfûtésû hõerõmû
+Olajf?tés? h?er?m?
 Oelpumpe
 Olajkút
 Papierfabrik
@@ -641,19 +313,19 @@ Gyógyszergyár
 Raffinerie
 Olajfeldolgozó
 Saegewerk
-Fûrészmalom
+F?részmalom
 SaegewerkMHz
-Fûrésztelep
+F?résztelep
 Sandquarry
 Homokbánya
 Stahlwerk
 Acélkohó
 Stonequarry
-Kõbánya
+K?bánya
 TANKE
 Benzinkút
 Windkraftwerk
-Szélerõmû
+Széler?m?
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
@@ -687,7 +359,7 @@ olaj
 Papier
 papír
 Plastik
-mûanyag
+m?anyag
 PrintersInk
 nyomdafesték
 Sand
@@ -695,7 +367,9 @@ homok
 Stahl
 acél
 Stone
-kõ
+k?
+#__________________________________ground_obj___________________________________
+#__________________________________ground_obj___________________________________
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Couple
@@ -715,7 +389,7 @@ Gyerek
 pedestrian_dog
 Kutya
 Woman
-Nõ
+N?
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -725,7 +399,7 @@ nyersanyag
 CATEGORY_03
 olajszármazék
 CATEGORY_04
-hûtött áru
+h?tött áru
 CATEGORY_05
 folyékony élelmiszer
 CATEGORY_06
@@ -743,7 +417,7 @@ Szemafor
 ChooseSignalsMonorail
 Nyeregvasút szemafor
 Endofchoosetrack
-Útvonaljelzõ tábla
+Útvonaljelz? tábla
 LongBlockSignals
 Szemafor bakterházzal
 Minimum80
@@ -753,101 +427,111 @@ Behajtani tilos!
 NoEntry
 Nem bejárat
 preSignals
-Elõ forgalmi jelzõ
+El? forgalmi jelz?
 preSignalsMonorail
-Nyeregvasút elõjelzõ szemafor
+Nyeregvasút el?jelz? szemafor
 RailClose
 Vágányzár
 Signals
-Forgalmi jelzõk
+Forgalmi jelz?k
 SignalsMonorail
 Nyeregvasút szemafor
 traffic_light
-Forgalmi fényjelzõ
+Forgalmi fényjelz?
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Ahorn-1
-Juhar\n\n\n
+Juhar\n\n\n\n
 Ahorn-2
-Juhar\n\n\n
+Juhar\n\n\n\n
 Ahorn-Gruppe
-Juhar\n\n\n
+Juhar\n\n\n\n
 Birke-1
-nyírfa\n\n\n
+nyírfa\n\n\n\n
 Buche-1
-Bükk\n\n\n
+Bükk\n\n\n\n
 Busch_2
-bokor\n\n\n
+bokor\n\n\n\n
 Kiefer_1
-erdeifenyõ\n\n\n
+erdeifeny?\n\n\n\n
 Kiefer_2
-erdeifenyõ\n\n\n
+erdeifeny?\n\n\n\n
 Kiefer_3
-erdeifenyõ\n\n\n
+erdeifeny?\n\n\n\n
 Kiefer_4
-erdeifenyõ\n\n\n
+erdeifeny?\n\n\n\n
 Kiefer_5
-erdeifenyõ\n\n\n
+erdeifeny?\n\n\n\n
 Latschenkiefer
-Lucfenyõ\n\n\n
+Lucfeny?\n\n\n\n
 Palmtree1
-Pálma\n\n\n
+Pálma\n\n\n\n
 Palmtree2
-Pálmafa.\n\n\n
+Pálmafa.\n\n\n\n
 Palmtree3
-Pálmafa.\n\n\n
+Pálmafa.\n\n\n\n
 Palmtree4
-Pálmafa.\n\n\n
+Pálmafa.\n\n\n\n
 Palmtree5
-Pálmafa.\n\n\n
+Pálmafa.\n\n\n\n
 Palmtree6
-Pálmafa.\n\n\n
+Pálmafa.\n\n\n\n
 Palmtree7
-Pálmafa.\n\n\n
+Pálmafa.\n\n\n\n
 Pappel-1
-nyárfa\n\n\n
+nyárfa\n\n\n\n
 Pappel-2
-nyárfa\n\n\n
+nyárfa\n\n\n\n
 Shunter-tree2
-villámcsapott fa\n\n\n
+villámcsapott fa\n\n\n\n
 Tanne_1
-Fenyõ\n\n\n
+Feny?\n\n\n\n
 Tanne_2
-Erdeifenyõ\n\n\n
+Erdeifeny?\n\n\n\n
 Tanne_3
-Havasifenyõ\n\n\n
+Havasifeny?\n\n\n\n
 Tanne_4
-Lucfenyõ\n\n\n
+Lucfeny?\n\n\n\n
 Tanne_5
-Hegyifenyõ\n\n\n
+Hegyifeny?\n\n\n\n
 Tanne_6
-Ezüstfenyõ\n\n\n
+Ezüstfeny?\n\n\n\n
 Tree4
-Juharfa\n\n\n
+Juharfa\n\n\n\n
 Tree5
-Somfa\n\n\n
+Somfa\n\n\n\n
 Tree6
-Vörös fenyõ\n\n\n
+Vörös feny?\n\n\n\n
 tropictree1
-Trópusi fa.\n\n\n
+Trópusi fa.\n\n\n\n
 tropictree2
-Trópusi fa.\n\n\n
+Trópusi fa.\n\n\n\n
 tropictree3
-Trópusi fa.\n\n\n
+Trópusi fa.\n\n\n\n
 tropictree4
-Trópusi fa.\n\n\n
+Trópusi fa.\n\n\n\n
 tropictree5
-Trópusi fa.\n\n\n
+Trópusi fa.\n\n\n\n
 tropictree6
-Trópusi fa.\n\n\n
+Trópusi fa.\n\n\n\n
 tropictree7
-Trópusi fa.\n\n\n
+Trópusi fa.\n\n\n\n
 tropictree8
-Trópusi fa.\n\n\n
+Trópusi fa.\n\n\n\n
 tropictree9
-Trópusi fa.\n\n\n
+Trópusi fa.\n\n\n\n
 Willow
-fûzfa\n\n\n
+f?zfa\n\n\n\n
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
+FastRailTunnel
+Gyorsvasúti alagút
+FastRoadTunnel
+Autópálya alagút
+RailTunnel
+Vasúti alagút
+RoadTunnel
+Közúti alagút
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -855,17 +539,17 @@ Ben-103 mozdony
 1Ben140
 Ben-140 mozdony
 1Dampflokomotive
-Gõzmozdony-A
+G?zmozdony-A
 1Diesellokomotive
 Mozdony-B
 1Ellok
 Ellok-3 mozdony
 1Garrat
-RVg Garratt (elsõ)
+RVg Garratt (els?)
 1TPEllok
-Ellok-1 mozdony (elsõ)
+Ellok-1 mozdony (els?)
 221A
-AC16 221A gõzmozdony
+AC16 221A g?zmozdony
 221A_tender
 AC16 221A szerkocsi
 2Ben155
@@ -875,7 +559,7 @@ Mozdony-C
 2Ellok
 Ellok-4 mozdony
 2Garrat
-RVg Garratt (középsõ)
+RVg Garratt (középs?)
 3Ben185
 Ben-185 mozdony
 3Diesellokomotive
@@ -883,15 +567,15 @@ Mozdony-A
 3Garrat
 RVg Garratt (hátsó)
 707
-Boeing 707 repülõgép
+Boeing 707 repül?gép
 A3-5
-A3-5 gõzmozdony
+A3-5 g?zmozdony
 A3-5_tender
 A3-5 szerkocsi
 A380
-Airbus A-380 repülõgép
+Airbus A-380 repül?gép
 Adler
-Adler gõzmozdony
+Adler g?zmozdony
 AdlerPersonenwagen
 Adler személykocsi
 Autotrailer
@@ -913,17 +597,17 @@ Könyvszállító teherautó
 Boxcar
 Könyvszállító vagon
 BR01
-Baureihe BR-01 gõzmozdony
+Baureihe BR-01 g?zmozdony
 Br234
 BR-234 mozdony
 BR38
-Baureihe BR-38 gõzmozdony
+Baureihe BR-38 g?zmozdony
 BR38-Tender
 Baureihe BR-38 szerkocsi
 BR39
-Baureihe BR-39 gõzmozdony
+Baureihe BR-39 g?zmozdony
 BR45
-Baureihe BR-45 gõzmozdony
+Baureihe BR-45 g?zmozdony
 BR45-Tender
 Baureihe BR-45 szerkocsi
 Br614back
@@ -931,9 +615,9 @@ BR-614 motorvonat (hátsó)
 Br614car
 BR-614 motorvonat (közép)
 Br614front
-BR-614 motorvonat (elsõ)
+BR-614 motorvonat (els?)
 BR85
-Baureihe BR-85 gõzmozdony
+Baureihe BR-85 g?zmozdony
 Bretteranhaenger
 Faáruszállító-B utánfutó
 Brettertransporter
@@ -963,53 +647,49 @@ Busz-B
 CarFlat
 Autószállító vagon
 Cargosprinter-Front
-Baureihe BR-690 (Cargo-Sprinter) könyvszállító (elsõ)
+Baureihe BR-690 (Cargo-Sprinter) könyvszállító (els?)
 Cargosprinter-Mittel
-Baureihe BR-690 (Cargo-Sprinter) könyvszállító (középsõ)
+Baureihe BR-690 (Cargo-Sprinter) könyvszállító (középs?)
 Cargosprinter-Steuer
 Baureihe BR-690 (Cargo-Sprinter) könyvszállító (hátsó)
 Cementtrailer
 Cementszállító-B utánfutó
 CombinoShort(T)
-Siemens Combino villamos (kicsi elsõ)
+Siemens Combino villamos (kicsi els?)
 CombinoShortA(Mc)
-Siemens Combino villamos (kicsi középsõ 1)
+Siemens Combino villamos (kicsi középs? 1)
 CombinoShortB(Mc)
-Siemens Combino villamos (kicsi középsõ 2)
+Siemens Combino villamos (kicsi középs? 2)
 CombinoShortE(T)
-Siemens Combino villamos (kicsi középsõ 3)
+Siemens Combino villamos (kicsi középs? 3)
 Comet
 De Havilland 'Comet'
 Concept1Front
-Concept 1 (elsõ)
+Concept 1 (els?)
 Concept1Mail
-Concept 1 - postakocsi (középsõ)
+Concept 1 - postakocsi (középs?)
 Concept1Pass
-Concept 1 - személykocsi (középsõ)
+Concept 1 - személykocsi (középs?)
 Concept1Rear
 Concept 1 (hátsó)
 Concept2Front
-SNCF Concept 2 (elsõ)
+SNCF Concept 2 (els?)
 Concept2Mail
-SNCF Concept 2 - postavagon (középsõ)
+SNCF Concept 2 - postavagon (középs?)
 Concept2Pass
-SNCF Concept 2 - személykocsi (közésõ)
+SNCF Concept 2 - személykocsi (közés?)
 Concept2Rear
 SNCF Concept 2 (hátsó)
-Concorde
-Concorde
 DaimlerStoll
 Daimler-Stoll
-DC-3
-DC-3
 Doubledeck_city_bus
 Emeletes városi busz
 E44
 General Electric E44 villanymozdony
 Eb3-5
-Eb3-5 gõzmozdony
+Eb3-5 g?zmozdony
 Ed2x2
-Maffei "Malletlok" Ed2x2/2 gõzmozdony
+Maffei "Malletlok" Ed2x2/2 g?zmozdony
 EinheitsTender
 Szerkocsi (BR-01,38,39,45-hez)
 EnCo_Bulk_Ship
@@ -1043,29 +723,29 @@ Légpárnás személyszállító hajó
 Flachwagen
 Könyvszállítóvagon
 Fokker_F27
-Fokker-F27 repülõgép
+Fokker-F27 repül?gép
 FordZugmaschine
 Ford kamion
 Gelenkbus_Ende
 Csuklósbusz (hátsó)
 Gelenkbus_Front
-Csuklósbusz (elsõ)
+Csuklósbusz (els?)
 Godm_Spitz
 Spitz vitorláshajó
 Guppy
-Guppy darabárú-szállító repülõgép
+Guppy darabárú-szállító repül?gép
 H-Trans-Pantheress
-Pantheress (elsõ)
+Pantheress (els?)
 H-Trans-Pantheress-Back
 Pantheress (hátsó)
 H-Trans-Tiger-Car
-Tigress személyszállító motorvagon (középsõ)
+Tigress személyszállító motorvagon (középs?)
 H-Trans-Tiger-Mail-Car
-Tigress posta motorvonat (középsõ)
+Tigress posta motorvonat (középs?)
 H-Trans-Tigress-II-Back
 H-Trans-Tigress II motorvonat (hátsó)
 H-Trans-Tigress-II-Front
-H-Trans-Tigress II motorvonat (elsõ)
+H-Trans-Tigress II motorvonat (els?)
 Hadley-Page-V1500
 RVg Hadley-Page V1500
 Heavy_ore_truck
@@ -1101,29 +781,29 @@ Postakocsi-B
 ICE_TD-back
 DBAG Baureihe 605 (ICE TD) (hátsó)
 ICE_TD-car
-DBAG Baureihe 605 (ICE TD) (középsõ)
+DBAG Baureihe 605 (ICE TD) (középs?)
 ICE_TD-front
-DBAG Baureihe 605 (ICE TD) (elsõ)
+DBAG Baureihe 605 (ICE TD) (els?)
 IL-76
 IL-76 postaszállító
 JNR_C11
-JNR-C11 gõzmozdony
+JNR-C11 g?zmozdony
 JR_9600
-JR-9600 gõzmozdony
+JR-9600 g?zmozdony
 JR_9600_tender
 JR-9600 szerkocsi
 Ju52
 RVg Ju-52 utasszállító
 JumboJet
-Boeing JumboJet repülõgép
+Boeing JumboJet repül?gép
 kkStB_tender
 StB szerkocsi (StB 91, 110-hez)
 kkStB110
-StB 110 gõzmozdony
+StB 110 g?zmozdony
 kkStB91
-StB 91 gõzmozdony
+StB 91 g?zmozdony
 Klappdeckelwagen
-Mûanyagszállító kocsi
+M?anyagszállító kocsi
 Kohleanhaenger
 Nyersanyagszállító-B utánfutó
 Kohletransporter
@@ -1131,15 +811,15 @@ Nyersanyagszállító-B kocsi
 Kohlewagen
 Nyersanyagszállító-E vagon
 Kunststofanhaenger
-Mûanyagszállító utánfutó
+M?anyagszállító utánfutó
 Kunststofftransporter
-Mûanyagszállító kocsi
+M?anyagszállító kocsi
 Laaekks553_a
 553a autószállító kocsi
 Laaekks553_b
 553b autószállító kocsi
 Lockhead_Tristar
-Tristar repülõgép
+Tristar repül?gép
 Lockheed10-Electra
 Lockhead-Martin L-10 "Elektra" postaszállító
 logs
@@ -1151,7 +831,7 @@ LOWA ET-54 villamoskocsi
 Mack_Truck_01
 Mack kamion
 MailExpress
-Postai repülõgép
+Postai repül?gép
 Moebelschiff
 Darabáruszállító tankerhajó
 Moebelwagen
@@ -1207,7 +887,7 @@ Szkúner vitorláshajó
 SD40-2-back
 EMD SD40-2 dízelmozdony (hátsó)
 SD40-2-front
-EMD SD40-2 dízelmozdony (elsõ)
+EMD SD40-2 dízelmozdony (els?)
 setra_S10
 S-10 busz
 SlowFerry
@@ -1221,15 +901,15 @@ Acélszállító kocsi
 Stahlwagen
 Acélszállító vagon
 Staubkesselwagen
-Mûanyagszállító vagon
+M?anyagszállító vagon
 Steamer
-Személyszállító gõzhajó
+Személyszállító g?zhajó
 Stoneanhaenger
 Nyersanyagszállító-D utánfutó
 Stonetransporter
 Nyersanyagszállító-G kocsi
 SuperConstellation
-Super Constellation repülõgép
+Super Constellation repül?gép
 T13
 TB13 villamos
 T21_bus
@@ -1253,7 +933,7 @@ VT98 személyszállító motorvagon (hátsó)
 TPPassagierwagen
 TP személyszállító vagon
 TPSchienenbus
-VT98 személyszállító motorvonat (elsõ)
+VT98 személyszállító motorvonat (els?)
 Tram_GT6_Ende
 Düwag GT6 villamos (hátsó)
 Tram_GT6_Kopf
@@ -1265,7 +945,7 @@ Vontatóhajó
 Turgot
 Turgot vitorláshajó
 Ucy
-Ucy mûanyagszállító
+Ucy m?anyagszállító
 Viggen
 Viggen komp
 VolvoFH12
@@ -1275,13 +955,11 @@ X2000 motorvonat (hátsó)
 X2000car
 X2000 motorvonat (közép)
 X2000front
-X2000 motorvonat(elsõ)
+X2000 motorvonat(els?)
 XMail
-X-Test egysínû postavagon
+X-Test egysín? postavagon
 XTest
-X-Test egysínû személyszállító
-Zeppelin
-Zeppelin
+X-Test egysín? személyszállító
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road
@@ -1317,7 +995,7 @@ füves kifutópálya
 runway_modern
 Modern kifutópálya
 sand_track
-Homokos töltésû vasúti sín
+Homokos töltés? vasúti sín
 steel_sleeper_track
 Acéltalpas sín
 taxiway
@@ -1327,6 +1005,6 @@ Fatalpas sín
 #__________________________________way-object___________________________________
 #__________________________________way-object___________________________________
 HighSpeedOverheadpower
-Nagysebességû felsõvezeték
+Nagysebesség? fels?vezeték
 SlowOverheadpower
-Alacsonysebességû felsõvezeték
+Alacsonysebesség? fels?vezeték

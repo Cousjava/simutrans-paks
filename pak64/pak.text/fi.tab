@@ -5,23 +5,27 @@
 #                              Language: fi Suomi                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 3.01 2009                           #
+#                           Date Created: 17.10 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                                    - prissi                                  #
+#                              Esa Lindroos - Esa                              #
+#                                    note:                                     #
+#                              Frank Penz - FrankP                             #
+#                      note: Administrator SimuTranslator                      #
+#                          Markus Pristovsek - prissi                          #
 #              note: Administrator Base texts / pak64 / pak.japan              #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
 #____________________________________bridge_____________________________________
 ClassicRail
-Rautatiesilta
+Betoninen rautatiesilta
 ClassicRoad
-Maantiesilta
+Betoninen maantiesilta
 koka_Bridge_single
 Korotettu rata
 MaglevBridge
-Monorail-silta
+Maglev-silta
 mlm_concrete_bridge
 Betoninen Monorail-silta
 ModernRoad
@@ -33,11 +37,11 @@ Laivanosturi
 SteelRail
 Teräksinen rautatiesilta
 tb_classic_road
-Maantiesilta
+Betoninen maantiesilta
 ViaductRail
-Kivisilta
+Kivinen rautatiesilta
 WoodenRoad
-Puinen tiesilta
+Puinen maantiesilta
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 00_01_CITY
@@ -62,6 +66,8 @@ Kaupungintalo
 Kaupungintalo
 04_CITY_C
 Kaupungintalo
+10_WOHN
+Kappeli\n
 1930AirDepot
 1930-luvun lentokonehalli
 1headquarter
@@ -71,7 +77,7 @@ Yhtiösi pääkonttori
 3headquarter
 Yhtiösi pääkonttori
 A1_ALTE_KIRCHE
-Kuuluisa vanha  kirkko. Jokaisen\n pitäisi nähdä  tämä hieno \nrakennus.\n\n
+Kuuluisa vanha  kirkko\nA. Jokaisen pitäisi nähdä \ntämä hieno \nrakennus.\n\n
 A2_SCHLOSS1
 Hassun kuninkaan  linna.  Tämä\non todella  näkemisen\narvoinen!\n\n
 A3_BURG1
@@ -83,13 +89,13 @@ Muinainen kivimuodostelma.\nHyvin  salaperäistä!\n\n
 A6_DOME
 Tämä kaunis vanha  kirkko on\ntodellinen nähtävyys.\n\n
 AirDepot
-1900-luvun lentokone halli
+Hangaari
 AirportShed1930
-Asema rakennus
+Postiterminaali
 AirStop
-Lastaus silta\n
+Lastaussilta\n
 AirTerminal477
-Terminaali
+Lentoterminaali
 Avila_Big_StationBlg
 Suuri asema rakennus
 Avila_Small_StationBlg
@@ -113,9 +119,9 @@ Lastaus asema\n
 ChannelStop
 Kanavalaituri
 COM_00_01
-Pienikauppa\n\n
+Pieni kauppa\n\n
 COM_00_02
-Yksityinen huolto-asema\n\n
+Yksityinen huolto-asema\nTämä itsenäinen huolto-asema\nei ole riippuvainen kuljetusyhtiöistä,\nmutta sen purkaminen ei ole tarpeellista.\nSe ei ole poissa tuloistasi.\n
 COM_00_03
 Autopesula\n\n
 COM_00_05
@@ -204,6 +210,8 @@ Feste
 The Konubertsin linnake\n\nTämä massiivinen linna rakennettiin\n1400-luvun alussa.\n\n
 Fluid_StationBlg
 Öljysäiliö
+FreightShipStop
+Rahtilaituri
 FreightTrainStop
 Tavara-asema
 Gas_StationBlg
@@ -308,8 +316,6 @@ rampShipStop
 Ramppi
 Raven_Kirche
 Pyhän Meinradin kirkko\n\nErakko Meinrad eli kahden variksen\nkanssa. Hänet murhattiin, ja\nlegendan mukaan varikset\nseurasivat murhaajia ja toivat\nnämä oikeuden eteen.\nNykyään kyseisellä paikalla\nsijaitsee Einsiedelnin luostari.\n\n
-RES_00_01
-Pieni punainen tupa ja\nperunamaa\n\n
 RES_00_02
 Pieni talo ja kaalimaa\n\n
 RES_00_03
@@ -358,10 +364,6 @@ RES_01_12
 Tiilikerrostalo\n\n
 RES_01_15
 Kaupungin ala-aste\n\n
-RES_01_16
-Maahanmuuttokeskus\n\n
-RES_01_18
-Kerrostalo\n\n
 RES_01_21
 Pilvenpiirtäjä\n\n
 RES_01_22
@@ -436,72 +438,16 @@ yellow_car
 Keltainen auto
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_2Raffinerie_details
-Bensiinijalostamo
-factory_3Raffinerie_details
-Jalostamo
-factory_Autohaus_details
-Autokauppa
-factory_Autohersteller_details
-Autotehdas
-factory_Buchgrosshandel_details
-Kirjatukku
 factory_Cementmill_details
 Sementtimylly
-factory_ChemicalPlant_details
-Kemikaali tehdas
-factory_CHEMIST_details
-Apteekki
-factory_Concretefactory_details
-Betonitehdas
-factory_Druckerei_details
-Kirjapaino
-factory_Erzbergwerk_details
-Rautakaivos
-factory_Kohlegrube_details
-Hiilikaivos
-factory_Kohlekraftwerk_details
-Hiilivoimala
-factory_Materialswholesale_details
-Tarviketukku
-factory_Moebelfabrik_details
-Huonekalutehdas
-factory_Moebelhaus_details
-Huonekalukauppa
-factory_Nutzwald_details
-Viljelysmetsä
-factory_Oelbohrinsel_details
-Öljynporauslautta
-factory_Oelfeld_details
-Öljykenttä
-factory_Oelkraftwerk_details
-Öljyvoimala
-factory_Oelpumpe_details
-Öljypumppu
-factory_Papierfabrik_details
-Paperitehdas
-factory_Pharmaceutics_details
-Farmasia
-factory_Raffinerie_details
-Muovijalostamo
-factory_Saegewerk_details
-Saha
-factory_Sandquarry_details
-Hiekkalouhos
-factory_Stahlwerk_details
-Rautavalimo
-factory_Stonequarry_details
-Kivilouhos
-factory_TANKE_details
-Huoltoasema
-factory_Windkraftwerk_details
-Tuulivoimala
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
 Bensiinijalostamo
 3Raffinerie
 Jalostamo
+Aufwindkraftwerk
+Tuuliputkivoimalaitos
 Autohaus
 Autokauppa
 Autohersteller
@@ -511,7 +457,7 @@ Kirjatukku
 Cementmill
 Sementtimylly
 ChemicalPlant
-Kemikaali tehdas
+Kemikaalitehdas
 CHEMIST
 Apteekki
 Concretefactory
@@ -550,6 +496,8 @@ Saegewerk
 Saha
 Sandquarry
 Hiekkalouhos
+scrap_yard
+Romuttamo
 Stahlwerk
 Rautavalimo
 Stonequarry
@@ -600,6 +548,12 @@ Stahl
 terästä
 Stone
 kiveä
+waste
+jätettä
+#__________________________________ground_obj___________________________________
+#__________________________________ground_obj___________________________________
+flowers
+kukkia
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Couple
@@ -634,12 +588,18 @@ CATEGORY_05
 nestemäistä ruokaa
 CATEGORY_06
 lankkuja
+CATEGORY_07
+Pulveria
+rolls
+rullaa
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 choose_point
 Asemanvalintapiste
 ChooseSignals
-Valinta osoittimet
+Valintaosoittimet
+ChooseSignalsMonorail
+Valintaosoittimet
 Minimum80
 Vähimmäisnopeus 80 km/h
 NoEntry
@@ -710,10 +670,20 @@ Tree6
 Kuusi\n\n
 Willow
 Paju\n\n
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
+FastRailTunnel
+Nopean liikenteen rautatietunneli
+FastRoadTunnel
+Moottoritien tunneli
+RailTunnel
+Rautatietunneli
+RoadTunnel
+Tunneli
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
-Bennhardt BR103 (sähkö)
+DB BR103
 1Ben140
 Bennhardt BR140 (sähkö)
 1Dampflokomotive
@@ -756,6 +726,8 @@ Adler
 Adler höyryveturi
 AdlerPersonenwagen
 Adler matkustajavaunu
+Autotrailer
+Autotraileri
 Autotransportanhaenger
 Autoperävaunu
 Autotransporter
@@ -770,8 +742,14 @@ Book_Trike
 Kirjarekka
 Boxcar
 Tavaravaunu
-BR01
-Höyryveturi
+BR45-Tender
+BR45-tenderi
+Br614back
+Br614 takayksikkö
+Br614car
+Br614 vaunu
+Br614front
+Br614 etuyksikkö
 Bretteranhaenger
 WF Ultd. Lankkuperävaunu
 Brettertransporter
@@ -790,10 +768,14 @@ Buchwagen
 VT Vienna kirjavaunu
 Buessig
 Pikku bussi
+BuessingLinie
+Linja-auto
 Bulkcarriage
 Hiilikärryt
 Bus
 H-Trans linja-auto
+CarFlat
+Autolavetti
 Cargosprinter-Front
 Konttiveturi
 Cargosprinter-Mittel
@@ -801,7 +783,7 @@ Konttivaunu
 Cargosprinter-Steuer
 Kontti-taka-veturi
 Cementtrailer
-Sementti perävaunu
+Sementtiperävaunu
 CombinoShort(T)
 Combino matkustajavaunu
 CombinoShortA(Mc)
@@ -834,6 +816,8 @@ DC-3
 Douglass DC-3
 Doubledeck_city_bus
 Kaksikerroksinen turistibussi
+DoubleDecker
+Kaksikerroksinen bussi
 E44
 E44 -veturi
 Eb3-5
@@ -842,8 +826,20 @@ Ed2x2
 Eddings 2x2 Höyryveturi
 EinheitsTender
 Hiilivaunu
+EnCo_Bulk_Ship
+EnCo-bulkkialus
+EnCo_Car_Ship
+EnCo-autolautta
+EnCo_Cement_Ship
+EnCo-sementtialus
+EnCo_Container_Ship
+EnCo-kappalerahtialus
+EnCo_Oil_Ship
+EnCo-öljytankkeri
 EnCo_Steel_Ship
-EnCO teräsalus
+EnCo teräsrahtialus
+EnCo_Wood_Ship
+EnCo-puurahtialus
 Erzanhaenger
 H-Trans rautamalmiperävaunu
 Erztrailer
@@ -860,6 +856,8 @@ Flachwagen
 H-Trans kirjavaunu
 Fokker_F27
 Fokker F27
+GarbageTruck
+Jäteauto
 Guppy
 Matkustajakone
 H-Trans-Pantheress
@@ -1028,6 +1026,8 @@ Tugboat
 Hinaaja
 VolvoFH12
 Volvo FH12
+waste wagon
+Jätevaunu
 XMail
 Xpostivaunu
 XTest
@@ -1037,7 +1037,7 @@ Zeppelin-ilmalaiva
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road
-Asfaltti tie
+Asfalttitie
 city_road
 Tie
 cobblestone_road

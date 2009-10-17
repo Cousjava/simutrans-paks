@@ -1,0 +1,66 @@
+§################################################################################
+#                                                                              #
+#                Simutrans Scenario Specific Translation File                  #
+#                                Scenario: pak64                               #
+#                             Language: gr Ellinika                            #
+#                                Encoding: UTF-8                               #
+#                                Font : cyr.bdf                                #
+#                           Date Created: 17.10 2009                           #
+#                                                                              #
+#                                   authors:                                   #
+#                              Frank Penz - FrankP                             #
+#                      note: Administrator SimuTranslator                      #
+#                          Markus Pristovsek - prissi                          #
+#              note: Administrator Base texts / pak64 / pak.japan              #
+#                         Yannis Kaskamanidis - yannis                         #
+#                                    note:                                     #
+#                                                                              #
+################################################################################
+#___________________________________building____________________________________
+#___________________________________building____________________________________
+00_01_CITY
+Παλιό δημαρχείο
+01_CITY
+Δημαρχείο
+02_CITY
+Δημαρχείο
+03_CITY
+Δημαρχείο
+03_CITY_A
+Δημαρχείο
+03_CITY_B
+Δημαρχείο
+03_CITY_C
+Δημαρχείο
+04_CITY
+Δημαρχείο
+04_CITY_A
+Δημαρχείο
+04_CITY_B
+Δημαρχείο
+04_CITY_C
+Δημαρχείο
+10_WOHN
+Δεν υπάρχει!\n
+1930AirDepot
+Χώρος στάθμευσης αεροσκαφών του 1930
+1headquarter
+Διοικητήριο
+#____________________________________vehicle____________________________________
+#____________________________________vehicle____________________________________
+0Ben103
+Γερμανικός σιδηρόδρομος BR 103
+1Ben140
+Ηλεκτροκίνητη γερμανική μηχανή BR 140
+1Dampflokomotive
+H-Trans 0-4-0T
+1Diesellokomotive
+H-Trans BR212
+1Ellok
+H-Trans BR103
+1Garrat
+Ατμομηχανή Garratt
+1TPEllok
+F7 A
+2Ben155
+Ηλεκτροκίνητη γερμανική μηχανή BR 155

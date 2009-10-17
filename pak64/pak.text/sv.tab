@@ -5,137 +5,307 @@
 #                             Language: sv Svenska                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 3.01 2009                           #
+#                           Date Created: 17.10 2009                           #
 #                                                                              #
 #                                   authors:                                   #
+#                              Frank Penz - FrankP                             #
+#                      note: Administrator SimuTranslator                      #
+#                           Michael Persson - Mippzon                          #
+#                                    note:                                     #
+#                          Susanna Björverud - Susanna                         #
+#                                    note:                                     #
 #                             Paul Color - color42                             #
 #                                    note:                                     #
-#                                    - prissi                                  #
+#                          Markus Pristovsek - prissi                          #
 #              note: Administrator Base texts / pak64 / pak.japan              #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
 #____________________________________bridge_____________________________________
 ClassicRail
-Betong järnvägsbro
+Järnvägsbro (betong)
 ClassicRoad
-Betong vägsbro
+Vägbro (betong)
+koka_Bridge_single
+Högbana
+MaglevBridge
+Maglevbro
+mlm_concrete_bridge
+Monorailbro (betong)
+ModernRoad
+Modern vägbro (spännarmerad betong)
+MonorailRamp
+Monorailramp
+PowerBridge
+Kraftledningsbrygga
+Schiffhebewerk
+Fartygshiss
+SteelRail
+Järnvägsbro (stål)
+tb_classic_road
+Betongvägbro
+ViaductRail
+Järnvägsbro (sten)
+WoodenRoad
+Vägbro (trä)
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 00_01_CITY
-Gammalt stads hus
+Gammalt rådhus
 01_CITY
-Stadshus
+Rådhus
 02_CITY
-Stadshus
+Rådhus
 03_CITY
-Stadshus
+Nytt rådhus
 03_CITY_A
-Stadshus
+Rådhus
 03_CITY_B
-Stadshus
+Rådhus
 03_CITY_C
-Stadshus
+Rådhus
 04_CITY
-Stadshus
+Nytt rådhus
 04_CITY_A
-Stadshus
+Rådhus
 04_CITY_B
-Stadshus
+Rådhus
 04_CITY_C
-Stadshus
+Rådhus
 10_WOHN
 Kyrka\n
 1930AirDepot
-Flygplans hangar 1930 tal's
+Hangar 1930t
 1headquarter
-högkvarter
+huvudkontor
 2headquarter
-stort högkvarter
+stort huvudkontor
 3headquarter
-internationellt förtags högkvarter
+Globalt huvudkontor
 A1_ALTE_KIRCHE
-En berömd gammal  kyrka. Alla \nborde få se  den här\nfantastiska  byggnaden.\n\n
+Gotiskt kapell\n\nKapellet är berömt för sina\nfresker,vilka alla borde se\nåtminstone en gång.\n\n
 A2_SCHLOSS1
-Den galne kungens slott.  Det är\nverkligen  värt att få se!\n\n
+Neuschwanstein\n\nDen galne kungens slott. En\nstorartad sevärdhet!\n\n
 A3_BURG1
-Några ruiner  som vittnar om \nbättre tider.  Dom är alltid \nväl värda en resa.\n\n
+Borgruiner\n\nHärifrån red rövare ut och gjorde\ntrakten osäker tills\nbefolkningen brände ner borgen.\nDen är alltid värd ett besök.\n\n
 A4_SCHLOSS2
-Det här  slottet är  alltid värt\n att få se.\n\n
+Herrgård\n\nEn gammal herrgård med en\nfantastisk samling målningar: Ett\nbra utflyktsmål även när det regnar.\n\n\n
 A5_STONEHENGE
-En urgammal ring  av stenar. \nVäldigt mystiskt!\n\n
+Stonehenge\n\nKänn viskningarna från megaliterna\nnär du träder in i ringen.\nMånga kommer aldrig\nmer ut därifrån.\n\n
 A6_DOME
-Den här vackra  gamla\nkatedralen  är en riktig \nattraktion.\n\n
+Katedral\n\nDen här gotiska\nkatedralen har dominerat stadsbilden\ni nästan ett årtusende.\n\n
 AirDepot
-Flygplans hangar 1900 tal's
+Hangar från 1900
 AirportShed1930
-Flygplats skjul för post (1901)
+Flygpostmagasin (1901)
 AirStop
-boarding bro\n
+Embarkeringsbrygga\n
 AirTerminal477
-Flygplats terminal (1950)
+Flygplatsterminal (1950)
 Avila_Big_StationBlg
-stor stations byggnad
+Stor stationsbyggnad
 Avila_Small_StationBlg
-liten stations byggnad
+Liten stationsbyggnad
 Avila_Warehouse_StationBlg
-lagerlokal
+Godsmagasin
 BigPostOffice
-Stort post kontor
+Stort postkontor
 BigTerminal477
-Stort modern terminal
+Stor terminalbyggnad
 Bulk_StationBlg
-kollager station
+Kolningsanläggning
 BusStop
-buss hållplats\n
+busshållplats\n
 Car_StationBlg
-billager stations byggnad
+Lastplats för bilar
 CarDepot
-Garage depå
+Garage
 CarStop
 Lastkaj\n
 ChannelStop
-Kanal gods brygga
+Inlandshamn
 COM_00_01
-Liten affär\n\n
+En kiosk i vilken säljs en mängd\nbilligt krimskrams som ingen\nklarar sig utan. Verkligen!\n\n
 COM_00_02
-Oberoende bensinstation\n\Den är oberoende från dom\nstora transport bolagen\n(som ditt),men det finns\ningen anledning att ta bort den.\nDen hotar inte din verksamhet ändå.\n\n
+Oberoende bensinstation\n\nDen är oberoende från de\nstora transportbolagen\n(som ditt),men det finns\ningen anledning att ta bort den.\nDen hotar inte din verksamhet ändå.\n\n
 COM_00_03
-Detta backgårds garage\nvill komma undan från\nsin dolda existens\nför att istället stå längs med\nen huvudgata.\nMen det saknas\nforfarande pengar,tillstånd\noch en huvudgata\n\n
+Denna bakgårdsverkstad vill\nundkomma sin undangömda\nexistens för att istället öppna\nvid en huvudgata.\n Men det saknas fortfarande\npengar, tillstånd och en\nhuvudgata.\n
+COM_00_05
+Herr G. Hai, ägaren av den\nbankkedja som denna filial\ntillhör är tveklöst stadens\nrikaste man!\n Trots detta ser bankfilialen\ntämligen harmlös ut.\n\n
+COM_00_06
+Ingenstans serveras det bättre\nkaffe än på den härliga\nterassen på detta\nkafé!\n
+COM_00_08
+Ett bostads- och affärshus kan\ntrots allt vara en bra plats för\nbarn.\n
+COM_00_10
+Infarten till det underjordiska\ngaraget på denna\nkontorsbyggnad är både brant\noch krökt. Det går ett rykte\natt verkstadsägaren i huset\nbredvid gjorde en mindre\nändring av ritningen en gång när\nbyggledaren glömde att låsa\ndörrarna till byggarbetsvagnarna.\n
+COM_00_11
+Precis bredvid slakteriet Vild\n& son ligger steakhouset\nLejonen som också ägs av\nslaktaren. Vegetarianer syns\ninte gärna till här då slaktare\nVild sagt:"Gäster som inte\näter med god aptit får inte\nkomma in på min restaurang. Jag är\nalltid orolig att jag i så fall skulle\ngöra något jag ångrar mot dem."\nSitt bukomfång känner inte slaktare\nVild till - måttbandet är alltför kort.\n\n
+COM_00_12
+En kontorsbyggnad av typen\ntrist och tråkig. Om man\narbetar här längre än två år så\nblir man själv grå.\n\n
+COM_00_14
+Kontorsbyggnad för en\nhandelsfirma. Till vänster finns\ninköparna och till höger\nsäljarna. Varför kallas det\nglastäckta mittskeppet för\n"Prishallen"?\n
+COM_00_18
+Kontorsfördelningen hos firma\nLNX Mjukvaru-AB avspeglar\nkarriärstegen hos de anställda.\nDet tråkiga arbetet utförs på\nde nedersta våningarna. På de\növersta våningarna är arbetet\nlika spännande som utsikten är skön.\n\n
+COM_00_22
+Detta höghus med sin svängda\nglasfasad är ett\nbekvämlighetens tempel: på\nhotell Albuna kan du låta dig\nskämmas bort ordentligt.\n\n
+COM_01_01
+Start- och landningsplats för\nvarmluftsballonger. En\nballongrundtur över staden kan\nvara en oförglömlig upplevelse.\n\n
+COM_01_09
+För inte så länge sedan var\ndetta ett lysande tempel för\nljusens och skuggornas dans på\nvita duken. Nu är det bara en\ngammal biograf. Men djupt inne\ni murarna vilar ännu ett vagt\nskimmer av forna dagars glans!\n\n
+COM_01_10
+Folktandvården har fått sin\ntråkiga fasad uppiffad med en\nny entré. Nu behöver verkligen\ninte patienterna bita ihop och\ngå vidare.\n\n
 Control_StationBlg
-Järnvägs kontrol centrum
+Ställverk
 DenkFlor
-Det här monumentet tillägnas\nFlor 'WF Ultd.' Wauters, den\nberömde ingenjören som\nskapade så många bra väg- och\ntågfordon. Han är också\nvälkänd för att ha designat\nmånga väl fungerande fabriker.\n\n
+Minnesmärke Flor Wauters\n\nDet här monumentet tillägnas\nFlor 'WF Ultd.' Wauters, den\nberömde ingenjören som\nskapade så många bra väg- och\nspårfordon. Han är också\nvälkänd för att ha designat\nmånga väl fungerande fabriker.\n\n
+DenkHajo
+Minnesmärke över Hajo Malthaner\n\nDetta minnesmärke är rest över\nHansjörg Malthaner som\nskapade detta spel på sju år.\nDet skulle tagit en halvgud\nlängre tid än så.\n
+DenkMHz
+Geog Heiduks minnesmärke\n\nDetta monument tillägnas Georg\nHeiduk ("MHz") de renderade\nbyggnadernas mästare. Det\nrepresenterar hans skarpa blick\nför detaljer.\n\n\n
 DenkOwen
 Denna plats tillägnas Owen\nRudge, den berömde\nfinansexperten och\nljudteknikern.\n\n
 DenkSeth
-Denna plats tillägnas Seth C.\nTriggs, den berömde\narkitekten som designade så\nmånga vackra stadsbyggnader.\nHan är också välkänd för att\nha gjort många studier på hur\nman kan förbättra trafiksystem.\n\n
+Minnesmärke\n\nDenna plats tillägnas Seth C.\nTriggs, den berömde\narkitekten som designade så\nmånga vackra stadsbyggnader.\nHan är också välkänd för att ha\ngjort många studier på hur man kan\nförbättra trafiksystem.\n\n
+DenkTomas
+Minnesmärke\n\nDetta monument är tillägnat\nTomas Kubes som har\nförbättrat Simutrans på så\nmånga olika sätt med råd och dåd.\n\n
 DenkTrikky
-Det här monumentet tillägnas\n'Trikky' Rick McGreal, den\nberömde arkitekten som\ndesignade så många\nimponerande byggnader.\n\n
+Minnesmärke\n\nDet här monumentet tillägnas\n'Trikky' Rick McGreal, den\nberömde arkitekten som\ndesignat så många imponerande byggnader.\n\n
 DenkVM
-Det här monumentet tillägnas\nManfred 'VT Wien' Tomaschitz,\nden berömde ingenjören som\ndesignade många otroligt bra\ntågfordon.\n\n
+Minnesmärke\n\nDet här monumentet tillägnas\nManfred 'VT Wien' Tomaschitz,\nden berömde ingenjören som\ndesignat så många otroligt bra tågfordon.\n\n
 DenkVolker
-Det här monumentet tillägnas\nVolker Meyer, som\nförbättrade Simutrans på\nmånga, många sätt.\n\n
+Minnesmärke\n\nEn skulptur i Volker Meyers\nära, som tack för att han har\nförbättrat Simutrans på många,\nmånga sätt.\n
 Eingang
-Ingångs byggnad
+Ingångsbyggnad
 Feste
-Konuberts' Festning\n\nDetta stora slott byggdes\nrunt året\n1400.\n\n\n\n
+Konuberts fästning\n\nByggd runt 1400 med väggar så\ntjocka att de motstått alla\nvapen och århundraden.\nMarknadsgummorna fröjdar sig: Så kan man t o\nm under högsommaren sälja\nstickningar på innergården.\n\n
 Fluid_StationBlg
-oljetank
+Oljetank
 FreightShipStop
-Gods brygga
+Godshamn
 FreightTrainStop
-Godstågs perrong
+Godsbangård
 Gas_StationBlg
-Bensintank
+Gasbehållare
 GCG1TrainStop
-Stor stationshall vänster
+Stor banhall (vänster halva)
 GCG2TrainStop
-Stor stationshall höger
+Stor banhall (höger halva)
 Goods_StationBlg
-Gods lagerlokal
+Godsmagasin
 Gymnasium
-Gymnasie skola\n\n
+Gymnasieskola\n\n\n(Tidigare realskola, numera\ngymnasieskola)\nDenna bildningsanstalt\nhar under tidens lopp tydligt endast\nmed stor ansträngning hängt med\ni skolreformerna. Nuförtiden\nstår det\nåtminstone ett par datorer i källaren där\nförr de gamla kolugnarna stod.\n\n
+IND_00_01
+En lagerlokal. Lådor, säckar\noch fat från golv till tak. Ingen\nmer än ägaren vet var allting finns.\n\n
+IND_00_02
+Ett magasin för att lagra\nmaskiner och reservdelar\nför partihandel!\n\n
+IND_00_03
+Lagringstank för firman Lützberg.\nFör det mesta är tanken tom,\nmen den fylls exakt enligt tidtabellen\nav nästa järnvägsvagn.\n\n
+IND_00_05
+Stadens vattenreservoar.\n\nDet är bara den allra äldsta\ndelen som ligger ovan jord\nsom man kan se, men efter att\ndenna byggdes har anläggningen\nfaktiskt omvandlats till en\nunderjordisk reservoar.\n\n
+IND_00_06
+Hattfabriken har ett typiskt\nsågtandstak som låter största\nmöjliga mängd dagsljus nå ner\ntill de flitiga sömmerskornas arbetsplatser.\n\n
+IND_00_09
+Kolsilos var runt 1900\nen mycket vanlig syn och\nindustrin på den\ntiden var lika beroende\nav kol som dagens är av olja.\n\n
+IND_00_10
+Madrassfabrik från den tid då\nmadrasser med fjäderstoppning\nvar en lyxartikel för fåtalet\noch en stor exportprodukt.\n\n
+IND_00_12
+Ånglokomotiv behöver bra nitar\nför att fyrboxen skall vara tät.\nI denna fabrik gjöts och\nsmiddes nitar av bästa kvalitet.\nI dag får nog verksamheten\nnärmast betraktas som fastrostad.\n\n
+IND_00_14
+Här står inte krossat glas för\nolycka! Firma Ujetsch AB\ntillverkar färgade glasfönster\noch då nyinstallation av sådana\nidag är ovanliga lever man mest\npå att sälja fönsterglas för att\nersätta något som gått sönder.\n\n
+IND_01_01
+Hittar du inte någon parkeringsplats?\nVarför tar du inte bussen in\ntill stan?\n\n
+IND_01_03
+Gasklocka för lagring\nav naturgas.\n\n
+LargeShipStop
+Stor godskran
+leftShipStop
+Större lastkran
+LeuchtturmShipStop
+Oceankaj med fyr
+Lighthouse
+Fyr\n\nEn av de ljusstarkaste fyrarna\nlängs denna kust.\nNumera navigerar dock fartygen\nvärldshaven med hjälp av radar\noch fyren är idag enbart en turistattraktion.\n\n
+MainTerminal1930
+Terminalbyggnad (1930)
+MHzSmallStation
+Stationsbyggnad
+ModernAirTerminal477
+Modern gate
+MonorailDepot
+Monorailvagnhall
+MonorailFoundation
+Fundament för monorail
+OldTownhall
+Gammalt rådhus\n\n\n
+Patricks_Rock
+Patricks Rock\n\n\n
+PlainAirStop
+Flygplansplatta
+PostOffice
+Postkontor
+PostStop
+Brevlåda
+PSFreightTrainStop
+Godsbangård
+PSHall1TrainStop
+Banhall med kiosk
+PSHall2TrainStop
+Banhall
+rampShipStop
+Vattenramp
+Raven_Kirche
+St Meinrads kyrka\n\nEremiten St Meinrad åtföljdes enligt\nlegenden av två korpar. När han\nblev mördad förföljde korparna\nmördarna tills dessa blev fällda\nför mordet. Idag står klostret\nEinsiedeln där hans hydda en gång stod.\n\n
+RES_00_01
+Ett litet hus med trädgård\noch rabatter. Ser inte mycket\nut för världen, men är ändå\nhelt centralt i\nSimutrans-universumet. Var t o\nm det första hus som någonsin\nbyggdes där.\n
+RES_00_02
+Litet hus med trädgård. Den av\nnatursten byggda stenmuren\nvisar att den som bor i huset\när förbunden med naturen.\nOm man promenerar längs muren\npå våren kan man se ödlor som\nligger och solar sig på den.\n\n
+RES_00_03
+Den som bor i ett så stort\nenfamiljshus med trädgård är\nsäkerligen inte fattig och vill\nframförallt undkomma trängseln\ni stadskärnan.\n\n
+RES_00_04
+En berömd vetenskapsman bor\nett uttalat modernt hus. I\nkällaren finns plats för forskning\noch grannarna viskar om att\ndet ibland kommer konstiga\nljud från densamma mitt i natten.\n\n
+RES_00_06
+En liten fontän som även om\ninte så stor och imponerande\nsom många andra likväl bringar\nglädje till de som promenerar\ni dess närhet, i synnerhet sommartid.\n\n
+RES_11_02
+Bungalow\n
+Residenz
+Herrgård\n\när mestadels renoverad. Det\nnuvarande utseendet härstammar\nfrån en restaurering under\nromantiken som har gjort\nherrgården till favoritkuliss\nför ett otal sockersöta filmer.\n
+rightShipStop
+Lastkaj på pir
+RUIN_0
+Ruiner\n\nHerrarna över denna storartade borg\nvar under 30-åriga kriget\nallierade med fel sida.\nDärefter återfick de aldrig sin\ntidigare makt.\n\n
+SandStationMHz
+Hållplats utan plattform
+ShipDepot
+Varv
+ShipDepotEW
+Skeppsvarv\n\n
+ShipStop
+Hamn\n
+STADIUM2
+Stort stadion\n\nHär äger alla de stora\ninternationella tävlingarna\nrum.\n
+Tennis_Court
+Tennisbanor\n\n
+Terminal1930
+Terminalbyggnad (1930t)
+Theatre
+Teater\n\n
+Tower1930
+Flygledartorn (1930)
+TowerMoistboy
+Flygledartorn
+TrainDepot
+Lokstall/Vagnhall
+TrainStop
+Täckt plattform
+TrainStopMaglev
+Maglevplattform
+TrainStopMaglevIndicator
+Maglevplattform med tåginformationsskärm
+TramDepot
+Spårvagnshall
+VictorianStation
+Stationsbyggnad i viktoriansk stil
+Vorplatz
+Stationsentré
 Windmill
 Väderkvarn\n\n
 #____________________________________citycar____________________________________
@@ -143,83 +313,31 @@ Väderkvarn\n\n
 Ambulanz
 Ambulans 
 FordT
-Ford Model T
+T-Ford
 green_car
-grön bil
+Grön bil
+Motorrad
+Lätt motorcykel
+orange_bus
+Folkvagnsbuss
+yellow_car
+Gul bil
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_2Raffinerie_details
-Raffinaderi (Bensin)
-factory_3Raffinerie_details
-Raffinaderi (Ben+Pl.)
 factory_Aufwindkraftwerk_details
 Vindkraftverk
-factory_Autohaus_details
-Bilförsäljare
-factory_Autohersteller_details
-Bilfabrik
-factory_Buchgrosshandel_details
-Bokhandel
 factory_Cementmill_details
 Cementfabrik
-factory_ChemicalPlant_details
-Kemisk fabrik
-factory_CHEMIST_details
-Apotek (av Seth)
-factory_Concretefactory_details
-Betongfabrik
-factory_Druckerei_details
-Tryckeri
-factory_Erzbergwerk_details
-Järngruva
-factory_Kohlegrube_details
-Kolgruva
-factory_Kohlekraftwerk_details
-Kolkraftverk
-factory_Materialswholesale_details
-Bygghandel
-factory_Moebelfabrik_details
-Möbelfabrik
-factory_Moebelhaus_details
-Möbelaffär
-factory_Nutzwald_details
-Industriskog
-factory_Oelbohrinsel_details
-Oljeplattform
-factory_Oelfeld_details
-Oljefält
-factory_Oelkraftwerk_details
-Oljekraftverk
-factory_Oelpumpe_details
-Olje pump
-factory_Papierfabrik_details
-Pappersbruk
-factory_Pharmaceutics_details
-Medicin tillverkare
-factory_Raffinerie_details
-Raffinaderi (Plast)
-factory_Saegewerk_details
-Sågverk
-factory_SaegewerkMHz_details
-Gammalt sågverk
-factory_Sandquarry_details
-Grustag
-factory_Stahlwerk_details
-Stålverk
-factory_Stonequarry_details
-Stenbrott
-factory_TANKE_details
-Bensinstation
 factory_thermisches_Solarkraftwerk_details
 Solkraftverk
-factory_Windkraftwerk_details
-Vindkraftverk
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
-Raffinaderi (Bensin)
+Bensinraffinaderi
 3Raffinerie
-Raffinaderi (Ben+Pl.)
+Oljeraffinaderi
+Aufwindkraftwerk
+Uppvindskraftverk
 Autohaus
 Bilförsäljare
 Autohersteller
@@ -231,237 +349,401 @@ Cementfabrik
 ChemicalPlant
 Kemisk fabrik
 CHEMIST
-Apotek (av Seth)
+Apotek
 Concretefactory
 Betongfabrik
 Druckerei
 Tryckeri
 Erzbergwerk
 Järngruva
+Incinerator
+Sopförbränningsanläggning
 Kohlegrube
 Kolgruva
 Kohlekraftwerk
 Kolkraftverk
 Materialswholesale
 Bygghandel
+Moebelfabrik
+Möbelfabrik
 Moebelhaus
 Möbelaffär
+Muellkraftwerk
+Sopkraftverk
 Nutzwald
 Industriskog
 Oelbohrinsel
 Oljeplattform
 Oelfeld
 Oljefält
+Oelkraftwerk
+Oljekraftverk
+Oelpumpe
+Oljepump
 Papierfabrik
 Pappersbruk
+Pharmaceutics
+Läkemedelsfabrik
 Raffinerie
-Raffinaderi
+Raffinaderi (plast)
+Rinnenkraftwerk
+Termiskt solkraftverk (trågkoncentratorer)
+Saegewerk
+Sågverk
+SaegewerkMHz
+Äldre sågverk
 Sandquarry
 Grustag
+scrap_yard
+Skrotupplag
 Stahlwerk
 Stålverk
 Stonequarry
 Stenbrott
 TANKE
 Bensinstation
+thermisches_Solarkraftwerk
+Termiskt solkraftverk (parabolkoncentratorer)
+Turmkraftwerk
+Termiskt solkraftverk (torn)
+Windkraftwerk
+Vindkraftverk
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
-Bilar
+bilar
 Bretter
-Brädor
+brädor
 Buecher
-Böcker
+böcker
 Cement
-Cement
+cement
 Chemicals
-Kemikalier
+kemikalier
 Concrete
-Betong
+lättbetong
 Eisenerz
-Järnmalm
+järnmalm
 Gasoline
-Bensin
+bensin
 Holz
-Timmer
+trävaror
 Kohle
-Kol
+kol
+Medicine
+läkemedel
 Moebel
-Möbler
+möbler
+None
+inget
 Oel
-Olja
+olja
 Papier
-Papper
+papper
+Passagiere
+passagerare
 Plastik
-Plast
+plast
+Post
+post
+PrintersInk
+tryckfärg
 Sand
-Grus
+sand
 Stahl
-Stål
+stål
 Stone
-Sten
+sten
+waste
+avfall
+#__________________________________ground_obj___________________________________
+#__________________________________ground_obj___________________________________
+bushes
+Buskar\n\n
+deco_rock
+Klippa
+flowers
+Blommor
+gemsen
+Stenbockar
+gooses
+Gäss
+Hochsitz1
+Jakttorn
+Hochsitz2
+Jakttorn
+moles
+Mullvadar
+rocks
+Stenar
+See1
+Insjö
+See2
+Insjö
+See3
+Damm
+See4
+Damm
+sheeps
+Fårflock
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Couple
 Par
 Cyclist
 Cyklist
+pedestrian_1
+Fotgängare
+pedestrian_2
+Fotgängare
+pedestrian_3
+Fotgängare
+pedestrian_4
+Fotgängare
 pedestrian_child
-Gående barn
+Barn
+pedestrian_dog
+Hund
 Woman
 Gående kvinna
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
-Styckegods
+styckegods
 CATEGORY_02
-Bulkgods
+bulkgods
 CATEGORY_03
 olja/bensin
 CATEGORY_04
-kylda gods
+kylvaror
 CATEGORY_05
-flytande matvaror
+flyt. livsmedel
 CATEGORY_06
-skogar
+timmer
 CATEGORY_07
-pulver/pellets
+pulverformigt gods
+rolls
+rullar
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 choose_point
-Välj vägskylt
+Vägvalspunkt
 ChooseSignals
-Välj väg signalljus
+Vägvalssignal
 ChooseSignalsMonorail
-Välj väg signalljus
+Vägvalssignal
 Endofchoosetrack
-Utesluta från val av plattforms sökning
+Uteslut från vägval
+LongBlockSignals
+Långblockssignal
+Minimum80
+Minimihastighet 80 km/t
+NoAirEntry
+Förbjuden infart
+NoEntry
+Förbjuden infart
+preSignals
+Tvåblockssignal
+preSignalsMonorail
+Tvåblockssignal
+RailClose
+Spårspärr
+Signals
+Signaler
+SignalsMonorail
+Signaler
+traffic_light
+Trafikljus
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Ahorn-1
-Lönnträd1\n
+Lönn\n\n\n
 Ahorn-2
-Lönnträd2\n
+Lönn\n\n\n
 Ahorn-Gruppe
-Lönnträd i grupp\n
+Lönndunge\n\n\n
 Birke-1
-björk\n\n
+Björk\n\n\n
 Buche-1
-bokträd1\n
+Bok\n\n\n\n
 Busch_2
-buske\n\n
+Buske\n\n\n
+Kiefer_1
+Tall\n
+Kiefer_2
+Tall\n
+Kiefer_3
+Tall\n
+Kiefer_4
+Tall\n
+Kiefer_5
+Tall\n
+Latschenkiefer
+Bergtall\nPinus montana\n\nStädsegrönt barrträd som kan bli upp\ntill 6 m högt. Förekommer i bergen\ni Mellan- och Sydeuropa upp till\n2400 m höjd. Större bestånd finns\nhuvudsakligen på stenig mark vid\nden övre trädgränsen. Det hårda,\nkådrika träet används till mest\ntill ved. Från de unga skotten\nutvinns olja som används som\nluktolja och inhalationsmedel.\n\n
+Palmtree1
+Palm\n\n
+Palmtree2
+Palm\n\n
+Palmtree3
+Palm\n\n
+Palmtree4
+Palm\n\n
+Palmtree5
+Palm\n\n
+Palmtree6
+Palm\n\n
+Palmtree7
+Palm\n\n
+Pappel-1
+Poppel\n\n
+Pappel-2
+Poppel\n\n
+Shunter-tree2
+Lövträd\n
+Tanne_1
+Gran\n\n
+Tanne_2
+Gran\n\n
+Tanne_3
+Gran\n\n
+Tanne_4
+Gran\n\n
+Tanne_5
+Gran\n\n
+Tanne_6
+Gran\n\n
+Tree1
+Ek\n\n
+Tree3
+Björk\n\n
+Tree4
+Tall är det viktigaste\nträdslaget världen över för skogsbruk.\nMestadels anspråkslös och\nsnabbväxande ersätter den ofta\ninhemska trädslag som\nåterplanteringsväxt efter\nskogsförstörelse eller avverkning.\nDen kommer från början från\nfuktiga och kyliga klimatområden.\nGenom inplantering återfinns tall nu\növer hela världen, - t o m i Antarktis.\n\n
+Tree5
+Eukalyptus\n
+Tree6
+Gran (rödgran) Picea abies\n\n\n\nEtt högt och smalt barrträd som\nförekommer över hela världen.\nDen kan bli 35-65 m hög med\nen stamgrovlek på 2 meter\noch upp till 1000 år gammal.\nDess naturliga hemvist är Nord-\noch Östeuropa samt Mellaneuropas\nbergsområden. Genom plantering\näven spridd till andra områden.\nAnvändning: utomhus- och\ninomhussnickerier,\nundertaksbygge,\nbyggnadsställningar, spånplattor,\nresonansträ i musikinstrument,\ncellulosa- och pappersindustri.\n
+tropictree1
+Tropiskt träd\n
+tropictree2
+Tropiskt träd\n
+tropictree3
+Tropiskt träd\n
+tropictree4
+Tropiskt träd\n\n
+tropictree5
+Tropiskt träd\n\n
+tropictree6
+Tropiskt träd\n\n
+tropictree7
+Tropiskt träd\n\n
+tropictree8
+Tropiskt träd\n\n
+tropictree9
+Tropiskt träd\n\n
+Willow
+Tårpil\n\n\n
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
+FastRailTunnel
+Järnvägstunnel för höghastighetsspår
+FastRoadTunnel
+Motorvägstunnel
+RailTunnel
+Järnvägstunnel
+RoadTunnel
+Vägtunnel
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
-Bennhardt BR103 (el)
+DB BR 103
 1Ben140
-Bennhardt BR140 (el)
+DB BR 140
 1Dampflokomotive
-H-Trans 0-4-0T (ånga)
+H-Trans 0-4-0T
 1Diesellokomotive
-H-Trans BR212 (diesel)
+H-Trans BR212
 1Ellok
-H-Trans BR103 (el)
+H-Trans BR103
 1Garrat
-Garratt (ånga)
+Garratt
 1TPEllok
-TPI F7A (diesel)
-221A
-221A (ånga)
+F7A
 221A_tender
-221A tender
+Tender till 221A
 2Ben155
-Bennhardt BR155 (el)
+DR BR250/DB BR155
 2Diesellokomotive
-H-Trans BR218 (diesel)
+DB BR 218
 2Ellok
-H-Trans Tigress I (el)
+H-Trans Tigress I
 2Garrat
 Garratt (mittdel)
 3Ben185
-Bennhardt BR185 (el)
+DB BR185
 3Diesellokomotive
-H-Trans BR365 (diesel)
+H-Trans BR365
 3Garrat
-Garratt (backdel)
+Garratt (bakre del)
 707
 Boeing 707
 A3-5
-Swiss federala järnvägars A 3/5
+SBB A 3/5
 A3-5_tender
 Tender till SBB A 3/5
 A380
 Airbus A380
-Adler
-Adlerlok (ånga)
 AdlerPersonenwagen
-Adler passagerar vagn
+Adlerpersonvagn
 Autotrailer
-biltrailer
+Biltrailer
 Autotransportanhaenger
-H-Trans Biltransporttrailer
+Biltransportsläp
 Autotransporter
-H-Trans Biltransport
+Biltransport
 Autotransportwagen
-TPI Lopomo Biltransportvagn
-BB1280
-BB1280 (el)
-BB200
-BB200 (el)
+TPI Lopomo biltransportvagn
 Be5-7
-BLS Be5-7 (el)
+BLS Be5/7
 Blimp
 Luftskepp
 Book_Trike
-Gods leverans trike
+Trehjulig varubil
 Boxcar
 Godsvagn
-BR01
-BR01 (ånga)
 Br118DR
-Br118DR (diesel)
-Br234
-Br234 (diesel)
+DR BR118
 BR38
-BR38 (ånga)
+BR38 (Pr. P8)
 BR38-Tender
-BR38 Tender
-BR39
-BR39 (ånga)
-BR45
-BR45 (ånga)
+Tender till BR38
 BR45-Tender
-BR45 Tender
+Tender till BR45
 Br614back
-Br614 bakdel
+Br614 (B-ände)
 Br614car
-Br614 vagn
+Br614 (mellanvagn)
 Br614front
-Br614 Lok
-BR85
-BR85 (ånga)
+Br614 (A-ände)
 Bretteranhaenger
-WF Ultd. Brädtrailer
+WF Ultd. timmersläp (brädor)
 Brettertransporter
-WF Ultd. Brädbil
+WF Ultd. brädbil
 Bretterwagen
-VT Wien Brädvagn
-BRV36
-BRV36 (diesel)
+VT Wien timmervagn (brädor)
 Buchanhaenger
-Serj/H-Trans Boktrailer
+Lastbilssläp (böcker)
 Buchtrailer
-Boktrailer I
+Lastbilssläp (styckegods)
 Buchtrailer2
-Boktrailer II
+Lastbilssläp (styckegods)
 Buchtransporter
-Serj/H-Trans Bokbil
+Styckegodslastbil från Serj/H-Trans
 Buchwagen
-VT Wien Bokvagn
+VT Wien godsvagn
 Buessig
-Ikarus Model B
+Büssing-buss
 BuessingLinie
-Linje buss
+Büssing-linjebuss
 Bulkcarriage
 Lastbil
 Bus
@@ -474,12 +756,10 @@ Cargosprinter-Mittel
 Godståg mitten
 Cargosprinter-Steuer
 Godståg bakdel
-CC7100
-CC7100 (el)
 Cementtrailer
 Cement trailer
 Class86
-Class86 (el)
+Class 86
 CombinoShort(T)
 Combino spårvagn
 CombinoShortA(Mc)
@@ -506,16 +786,16 @@ Concept2Pass
 Concept 2 Passagerarvagn
 Concept2Rear
 Concept 2 Bakre Lok
-Concorde
-Concorde
-DC-3
-DC-3
+DaimlerStoll
+Daimler Stoll
+Deponielaster
+Sopbil
+Deponielaster2
+Sopbil
 Doubledeck_city_bus
 Dubbeldäckarbuss  
 DoubleDecker
 Dubbeldäckarbuss
-E44
-E44 (el)
 Eb3-5
 Swiss federala järnvägar Eb 3/5 (ånga)
 Ed2x2
@@ -523,57 +803,85 @@ Ed2x2 (ånga)
 EinheitsTender
 Standard tender
 EnCo_Bulk_Ship
-EnCo Bulkgods fartyg
+EnCo Bulkgodsfartyg
 EnCo_Car_Ship
-EnCo Biltransport fartyg
+EnCo Biltransportfartyg
 EnCo_Cement_Ship
-EnCo Cement fartyg
+EnCo Cementfartyg
 EnCo_Container_Ship
-EnCo Container fartyg
+EnCo Containerfartyg
 EnCo_Oil_Ship
 EnCo Oljetanker
 EnCo_Paper_Ship
-EnCo Papperstransports fartyg
+EnCo Papperstransportsfartyg
 EnCo_Steel_Ship
-EnCo Ståltransports fartyg
+EnCo Ståltransportsfartyg
 EnCo_Wood_Ship
-EnCo Planktransports fartyg
+EnCo Planktransportsfartyg
 Erzanhaenger
 H-Trans Järnmalmstrailer
 Erztrailer
-Järnmalms trailer
+Bulkgodsstrailer
 Erztransporter
 H-Trans Järnmalmsbil
 Erzwagen
-H-Trans Järnmalmsvagn
+H-Trans Malmvagn
 F7back
 F7 Bakre Lok
 FastFerry
-O.Bang Snabbfärja (svävare)
+Svävare
 Flachwagen
-Godsvagn Böcker
+Låggolvsvagn
 Fokker_F27
 Fokker F27
 FordZugmaschine
-Ford Lastbil
+Ford-dragbil
+GarbageTruck
+Sopbil
 Gelenkbus_Ende
-Gelenkbuss bakdel
+Ledbuss (bakre del)
 Gelenkbus_Front
-Gelenkbuss framdel
+Ledbuss (främre del)
 Godm_Spitz
 Segelskepp
+Grossraumwagen
+Personvagn
 Guppy
 Aero Spacelines 377SGT Super Guppy
+H-Trans-Pantheress
+H-Trans Pantheress
+H-Trans-Pantheress-Back
+H-Trans Pantheress (B-ände)
+H-Trans-Tiger-Car
+H-Trans Tigress Personvagn
+H-Trans-Tiger-Mail-Car
+H-Trans Tigress Postvagn
+H-Trans-Tigress-II-Back
+H-Trans Tigress-II (B-ände)
+H-Trans-Tigress-II-Front
+H-Trans Tigress-II (A-ände)
+Hadley-Page-V1500
+RVg Hadley-Page V1500
+Heavy_ore_truck
+Dumper
+HJMAvia
+Avia Dragbil
+Hochbordwagen
+Kolvagn (18t)
 Holzanhaenger
-JET Timmertrailer
+JET Timmersläp
+Holztrailer
+Timmertrailer
 Holztransporter
 H-Trans Timmerbil
 Holzwagen
 H-Trans Timmervagn
 Horsebookscariage
 Häst - Bokvagn
+Horsemailcariage
+Postskjuts
 Horsepapercariage
-Häst - Pappersvagn
+Hästdragen lastvagn för papper
 Horsepassengerscariage
 Häst - Passagerarvagn
 Horses
@@ -582,8 +890,30 @@ Horsewoodcariage
 Häst - Timmervagn
 HVPosttransporter
 DIBU/H-Trans Postbil
+ICE_TD-back
+ICE-TD B-ände
+ICE_TD-car
+ICE-TD Mittparti
+ICE_TD-front
+ICE-TD A-ände
+JNR_C11
+JNR C11 (2-6-4T)
+JR_9600
+JR 9600
+JR_9600_tender
+Tender till JR9600
+JumboJet
+Boeing 747 Jumbojet
+kkStB_tender
+Tender för kukStB
+kkStB110
+kukStB B110
+kkStB91
+kukStB. B91
+Klappdeckelwagen
+Övertäckbar öppen godsvagn
 Kohleanhaenger
-H-Trans Koltrailer
+Kolsläp
 Kohletransporter
 H-Trans Kolbil
 Kohlewagen
@@ -592,14 +922,50 @@ Kunststofanhaenger
 H-Trans Plasttrailer
 Kunststofftransporter
 H-Trans Plastbil
+Laaekks553_a
+Laaekks 553 (a)
+Laaekks553_b
+Laaekks 553 (a)
+Lockhead_Tristar
+Lockheed Tristar
+Lockheed10-Electra
+Lockheed 10 Electra
+logs
+Timmerflotte
+Lowa_Anhaenger
+Lowa-vagn
+Mack_Truck_01
+Mack-dragbil
+Mailcontainerwagon
+Postcontainervagn
+MailExpress
+Postflyg
+Mailwagon
+Postvagn
 Moebelschiff
-WF Ultd. Möbelskepp
+TPI/JET Fraktskepp
 Moebelwagen
 VT Wien Möbelvagn
+Muellschiff
+Soppråm
+NeuOelwagen
+Oljetankvagn (80t)
 Oelanhaenger
 H-Trans Oljetanktrailer
 Oelwagen
 VT Wien Oljetankvagn
+Oilbarge
+Oljepråm
+Oiltrailer
+Oljetrailer
+old_open_car
+Öppen godsvagn från 1837
+OldOil
+Tankvagn
+Ox2
+Oxspann
+Ox4
+Oxfyrspann
 Papieranhaenger
 Trikky Papperstrailer
 Papiertransporter
@@ -608,18 +974,40 @@ Papierwagen
 VT Wien Pappersvagn
 Passagierwagen
 H-Trans Passagerarvagn
+Pferdebahn
+Hästspann (spårvagn)
+Pferdebahnwagen
+Personvagn (hästspårvagn)
 Postschiff
 Postskepp
 Posttransporter
 H-Trans Postbil
 Postwagen
 H-Trans Post/Baggagevagn
+PrPersonenwagen
+Personvagn I
+PrPostwagen
+Kombinerad post- och bagagevagn
+RenaultTH5
+Renault TH5 Dragbil
 Sandanhaenger
 WF Ultd. Grustrailer
 Sandtransporter
 WF Ultd. Grusbil
+schooner
+Skonare
+Schooner_Bark
+Barkentin
+SD40-2-back
+SD40-2 (andralok)
+SD40-2-front
+SD40-2 (förstalok)
+setra_S10
+Setra S10
 SlowFerry
 H-Trans Passagerarfärja
+SMPoiltruck
+SMP-tankvagn
 Stahlanhaenger
 H-Trans Ståltrailer
 Stahltransporter
@@ -628,31 +1016,103 @@ Stahlwagen
 VT Wien Stålvagn
 Staubkesselwagen
 VT Wien Plastvagn
+Steamer
+Ångbåt
 Stoneanhaenger
 WF Ultd. Stentrailer
 Stonetransporter
 WF Ultd. Stenbil
+SuperConstellation
+Super Constellation
+T21_bus
+Ford T21
 Tanklastzug
 H-Trans Oljetankbil
+Tatra-T4
+Tatra T4
+Tatra-T4_Wagon
+Tatra-T4 personvagn
+teaclipper
+Klipperskepp (styckegods)
 TPBeiwagen
 TPI VT98 Passagerarvagn
 TPPassagierwagen
 TPI Passagerarvagn
 TPSchienenbus
 TPI VT98 (dmu)
+Tram_GT6_Ende
+Spårvagn GT6 (slutvagn)
+Tram_GT6_Kopf
+Spårvagn GT6
+Trike
+Trehjulig varubil
+Tugboat
+Bogserbåt
+Turgot
+Brigantin
+Ucy
+Tankvagn för pulverformigt gods Ucy
+Viggen
+Skärgårdsfärja
+VolvoFH12
+VolvoFH12 Dragbil
+waste wagon
+Sopvagn
+X2000back
+X2000 (B-ände)
+X2000car
+X2000 (mellanvagn)
+X2000front
+X2000 (A-ände)
+Zeppelin
+zeppelinare
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road
-asfaltsväg
+Asfaltsväg
 city_road
-Stadsväg
+Gata
 cobblestone_road
-Kullerstensväg
+Stenlagd gata
 concrete_sleeper_track
-Betong slipers järnväg
+Järnvägsräls med betongslipers
 dirt_road
 Grusväg
 elevated_monorail
 Upphöjd monorail
 gavel_road
-Landsväg
+Grusväg
+MaglevTrack
+Magnetspår
+MaglevTrackElevated
+Upphöjt magnetspår
+mip_cobblestone_road
+Kullerstensgata
+monorail
+Monorail
+Powerline
+Kraftledning
+Rillenschienen
+Gaturäls
+river
+Flod
+river2
+Flod (ej segelbar)
+runway_grass
+Oasfalterad rullbana
+runway_modern
+Modern rullbana
+sand_track
+Spår utan underbyggnad
+steel_sleeper_track
+Järnvägsräls med stålslipers
+taxiway
+Taxibana
+wooden_sleeper_track
+Järnvägsräls med träslipers
+#__________________________________way-object___________________________________
+#__________________________________way-object___________________________________
+HighSpeedOverheadpower
+Kontaktledning (höghastighetssträcka)
+SlowOverheadpower
+Kontaktledning

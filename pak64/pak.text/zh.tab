@@ -4,14 +4,18 @@
 #                                Scenario: pak64                               #
 #                            Language: zh T. Chinese                           #
 #                                Encoding: UTF-8                               #
-#                           Font : wenquanyi_9pt.bdf                           #
-#                            Date Created: 3.01 2009                           #
+#                               Font : m+10r.bdf                               #
+#                           Date Created: 17.10 2009                           #
 #                                                                              #
 #                                   authors:                                   #
+#                              Frank Penz - FrankP                             #
+#                      note: Administrator SimuTranslator                      #
 #                               Alan - LondonBVE                               #
 #           note: Hope to translate at least 50% by end of November.           #
-#                                    - prissi                                  #
+#                          Markus Pristovsek - prissi                          #
 #              note: Administrator Base texts / pak64 / pak.japan              #
+#                                   - shinexus                                 #
+#                                    note:                                     #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -148,60 +152,6 @@ yellow_car
 黃色私家車
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_2Raffinerie_details
-煉油廠 (汽油)
-factory_Autohaus_details
-車行
-factory_Autohersteller_details
-汽車製造廠
-factory_Buchgrosshandel_details
-書店
-factory_Cementmill_details
-水泥廠
-factory_CHEMIST_details
-藥房
-factory_Concretefactory_details
-混凝土廠
-factory_Druckerei_details
-印刷廠
-factory_Erzbergwerk_details
-鐵礦
-factory_Kohlegrube_details
-煤礦
-factory_Kohlekraftwerk_details
-發電廠 (燃煤)
-factory_Materialswholesale_details
-物料批發店
-factory_Moebelfabrik_details
-家具廠
-factory_Moebelhaus_details
-家品市場
-factory_Nutzwald_details
-森林
-factory_Oelbohrinsel_details
-鑽油台
-factory_Oelfeld_details
-油井
-factory_Oelkraftwerk_details
-發電廠 (燃油)
-factory_Papierfabrik_details
-造紙廠
-factory_Pharmaceutics_details
-藥廠
-factory_Raffinerie_details
-煉油廠
-factory_Saegewerk_details
-木廠
-factory_Sandquarry_details
-沙礦
-factory_Stahlwerk_details
-煉鋼廠
-factory_Stonequarry_details
-石礦
-factory_TANKE_details
-油站
-factory_Windkraftwerk_details
-風力發電站
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -300,6 +250,8 @@ Stahl
 鋼
 Stone
 石
+#__________________________________ground_obj___________________________________
+#__________________________________ground_obj___________________________________
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Woman
@@ -340,6 +292,16 @@ SignalsMonorail
 單軌列車信號
 traffic_light
 交通燈
+#_____________________________________tree______________________________________
+#_____________________________________tree______________________________________
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
+FastRoadTunnel
+快速道路隧道
+RailTunnel
+鐵路隧道
+RoadTunnel
+道路隧道
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 Bus
@@ -352,10 +314,6 @@ SD40-2-back
 SD40-2 後部
 SD40-2-front
 SD40-2
-T13
-T13
-T24
-T24
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road

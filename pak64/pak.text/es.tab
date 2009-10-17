@@ -5,10 +5,14 @@
 #                             Language: es Espanol                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 3.01 2009                           #
+#                           Date Created: 17.10 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                                    - prissi                                  #
+#                              Frank Penz - FrankP                             #
+#                      note: Administrator SimuTranslator                      #
+#                       Zeno (Albert Ruiz) - albert.yuste                      #
+#                                    note:                                     #
+#                          Markus Pristovsek - prissi                          #
 #              note: Administrator Base texts / pak64 / pak.japan              #
 #                              Xavier Paz - vilvoh                             #
 #                            note: Spanish board mod                           #
@@ -67,7 +71,7 @@ Ayuntamiento
 04_CITY_C
 Ayuntamiento
 10_WOHN
-Pequeña iglesia\n
+Pequeña iglesia\n\n
 1930AirDepot
 Hangar de 1930
 1headquarter
@@ -77,17 +81,17 @@ Hangar de 1930
 3headquarter
 ¡El cuartel general de tu compañía!
 A1_ALTE_KIRCHE
-Iglesia Famosa  Una\nfamosa catedral antigua.\ncon magníficas pinturas.\nTodo el mundo  debería ver\neste fantástico  edificio.\n\n
+Iglesia Famosa  Una\nfamosa catedral antigua.\ncon magníficas pinturas.\nTodo el mundo  debería ver\neste fantástico  edificio.\n\n\n
 A2_SCHLOSS1
-Neuschwanstein El castillo\ndel rey loco. ¡Merece una\nvisita!\n\n
+Neuschwanstein El castillo\ndel rey loco. ¡Merece una\nvisita!\n\n\n
 A3_BURG1
-Algunas ruinas que hablan\nde tiempos mejores.\nSiempre son una  visita\ninteresante.\n\n
+Algunas ruinas que hablan\nde tiempos mejores.\nSiempre son una  visita\ninteresante.\n\n\n
 A4_SCHLOSS2
-Viejo castillo  con una\nmaravillosa coleccion de\ncuadros. Perfecto para una\nvisita rápida, incluso si\nhace un mal día.\n\n
+Viejo castillo  con una\nmaravillosa coleccion de\ncuadros. Perfecto para una\nvisita rápida, incluso si\nhace un mal día.\n\n\n
 A5_STONEHENGE
-Stonehedge Un antiguo\nanillo de piedras. ¡Sienta el\nmisterio deslizandose entre\nsus monolitos!\n\n
+Stonehedge Un antiguo\nanillo de piedras. ¡Sienta el\nmisterio deslizandose entre\nsus monolitos!\n\n\n
 A6_DOME
-Catedral Antigua Ha sido el\ncorazón de esta ciudad\ndurante siglos.\n\n
+Catedral Antigua Ha sido el\ncorazón de esta ciudad\ndurante siglos.\n\n\n
 AirDepot
 Hangar de 1900
 AirportShed1930
@@ -119,117 +123,117 @@ Parada de mercancías\n
 ChannelStop
 Puerto fluvial
 COM_00_01
-Pequeño comercio con\naparcamiento\n\n
+Pequeña tienda de\nantigüedades de la época\ncolonial prusiana\n
 COM_00_02
-A todos los conductores de\nla ciudad les encanta la\ngasolinera de Mr.\nReichmuth, porque aquí\nhay un surtidor automático\nde mezcla. No depende de\nlas grandes compañias de\ntransporte, por eso no es\nnecesario eliminarla. No te\nquitara parte del negocio\n\n\n\n
+A todos los conductores de\nla ciudad les encanta la\ngasolinera de Mr.\nReichmuth, porque aquí\nhay un surtidor automático\nde mezcla. No depende de\nlas grandes compañias de\ntransporte, por eso no es\nnecesario eliminarla. No te\nquitara parte del negocio\n\n\n\n\n
 COM_00_03
-Quisiera terminar de una\nvez por todas la triste\nexistencia de este garaje y\nabrir un área de servicio en\nla calle principal. Pero\ncarece de todo: el dinero,\nel permiso de obras y la calle\nprincipal.\n\n
+Quisiera terminar de una\nvez por todas la triste\nexistencia de este garaje y\nabrir un área de servicio en\nla calle principal. Pero\ncarece de todo: el dinero,\nel permiso de obras y la calle\nprincipal.\n\n\n
 COM_00_05
-Banco "exprimidor". Lo\nllaman "exprimidor" (en\nlugar de "derrochador")\nporque cuando entras en él,\ntu cartera se vacía\nmágicamente. Normalmente\npuede verse al encargado\nfrotándose las manos con\nregocijo.\n\n
+Banco "exprimidor". Lo\nllaman "exprimidor" (en\nlugar de "derrochador")\nporque cuando entras en él,\ntu cartera se vacía\nmágicamente. Normalmente\npuede verse al encargado\nfrotándose las manos con\nregocijo.\n\n\n
 COM_00_06
-En ninguna parte\nencontraras un café mejor\nque el de TejaCafé.\n\n
+En ninguna parte\nencontraras un café mejor\nque el de TejaCafé.\n\n\n
 COM_00_08
-Bloque de apartamentos\ncon algunas tiendas.\n\n
+Bloque de apartamentos\ncon algunas tiendas.\n\n\n
 COM_00_10
-Bloque de oficinas mediano\ncon rampa de acceso.\n\n
+Bloque de oficinas mediano\ncon rampa de acceso.\n\n\n
 COM_00_11
-Bazar NOVA. Un bazar\nbrillante y colorista donde\nse venden desde velas de\ncera hasta maquetas de\nbarcos.\n\n
+Bazar NOVA. Un bazar\nbrillante y colorista donde\nse venden desde velas de\ncera hasta maquetas de\nbarcos.\n\n\n
 COM_00_12
-Bloque de oficinas\n\n
+Bloque de oficinas en\nconstrucción\n
 COM_00_14
-Este edificio parece una\nantigua fábrica, pero en\nrealidad es un chiringuito\nde apuestas ilegales muy\norganizado.\n\n
+Este edificio parece una\nantigua fábrica, pero en\nrealidad es un chiringuito\nde apuestas ilegales muy\norganizado.\n\n\n
 COM_00_18
-Bloque de oficinas moderno\n\n
+Bloque de oficinas moderno\nque alberga a la nueva\ncompañía de software\nSimuSoft, un gigante de las\nTI.\n
 COM_00_22
-Nuevo edificio de la ONU\npara Somalia.\n\n
+Nuevo edificio de la ONU\npara Somalia.\n\n\n
 COM_01_01
-Campo de despegue y\naterrizaje de globos de aire\ncaliente. Este lugar está\nfrecuentado por muchos\npolíticos, por eso no\npuedes ver botellas de gas.\n\n
+Campo de despegue y\naterrizaje de globos de aire\ncaliente. Este lugar está\nfrecuentado por muchos\npolíticos, por eso no\npuedes ver botellas de gas.\n\n\n
 COM_01_04
-Parque del Retiro\n\n
+Parque del Retiro\n\n\n
 COM_01_09
-Antiguo cine. Aquí se\nproyectan muchísimas\npelículas en blanco y\nnegro. Es muy popular entre\nlos fans de Charlie Chaplin\ny Buster Keaton.\n\n
+Antiguo cine. Aquí se\nproyectan muchísimas\npelículas en blanco y\nnegro. Es muy popular entre\nlos fans de Charlie Chaplin\ny Buster Keaton.\n\n\n
 COM_01_10
-El ambulatorio de la ciudad. \n\n
+El ambulatorio de la ciudad. \n\n\n
 COM_01_17
-Bloque de oficinas mediano\n\n
+Bloque de oficinas mediano,\nsede del departamento de\nayuda y preguntas frequentes\nde Simutrans.\n
 COM_01_18
-Torre de oficinas con\nfachada de cristal\n\n
+Torre de oficinas con\nfachada de cristal\n\n\n
 COM_01_20
-Torre Picasso\n\n
+Torre Picasso\n\n\n
 COM_01_21
-Bloque de oficinas MHz\n\n
+Bloque de oficinas con una\ndeslumbrante fachada\nacristalada. Suele tener\nmuchas quejas, porque al\namanecer los reflejos\nprovocan muchos accidentes\nde tráfico en las cercanías.\n
 COM_01_22
-Oficinas ABS\n\n
+Bloque de Oficinas\n\nEste edificio de oficinas fue\nconstruido \nen lo alto de otro edificio.\n Debido a riguroso\ncalendario, el\nequipo de construcción no\ntuvo tiempo de eliminar el\nantiguo edificio, así que simplemente\nconstruyeron encima.\n\n
 COM_02_02
-aparcamiento\n\n
+Aparcamiento por horas\n Controla el tiempo que\ndejas tu coche aquí, o\npuede que no tengas dinero\nsuficiente para la gasolina.\n
 COM_02_04
-Pequeño parque\n\n
+Pequeña plazoleta\n\nuna plazoleta con una bella\narboleda en el centro. Los padres\nllevan a sus hijos aquí para pasar\n la tarde.\n\n
 COM_02_13
-Tiendas con soportales\n\n
+Tiendas con soportales\n\n\n
 COM_02_16
-Oficinas de Simutrans TV\n\n
+Oficinas de Simutrans TV\n\n\n
 COM_02_17
-Antigua torre de oficinas\n\n
+Antigua torre de oficinas\n\n\n
 COM_02_19
-Torre banco Simutrans\n\n
+Torre banco Simutrans\n\n\n
 COM_03_14
-Estudio de arquitectura\n\n
+Estúdio de arquitectura\n\nUn arquitecto compró esta\nantigua oficina y la reformó\npara convertirla en un estúdio.\n\n
 COM_03_15
-Oficinas de un gran banco\n\n
+Poco antes de la segunda\nGuerra Mundial\nfueron construidas estas\ndependencias del ministerio\nde defensa, influenciadas\npor el futurismo.\nDesafortunadamente, pronto se dieron cuentas\nde que el \nferro-hormigón ya estaba inventado hace\nal menos un \nmillón de años.\n No hay forma de embellecer\nesto, includo aunque hoy en día sea\nt la sede de una organización\ncaritativa.\n\n\n
 COM_03_17
-Estudio de diseño\n\n
+Torre de oficinas de\nempresas automovilísticas\n como SimuMotors,\nH-Trans, MHz&Wheelz y VV\nCamiones Industriales.\n
 COM_03_19
-Oficinas centrales de una\ngran aseguradora\n\n
+Oficinas centrales de una\ngran aseguradora\n\n\n
 COM_03_20
-Oficinas comerciales\n\n
+Sede de SimuTV\nLa cadena de televisión más\nvista en internet.\nNo te pierdas el especial\n Grandes Leyendas de\nSimutrans de los jueves,\n donde repasan la historia\ndel juego a \ntravés de las personas que lo\nhicieron grande.\nEsta semana, Raven "el\nmagnífico".\n
 COM_04_15
-Este bloque de oficianas ha\nsido reformado muchas\nveces, como demuestra la\nparabólica del tejado.\nTambién se puede apreciar\nel techo acristalado que\ncubre la piscina interior,\nsituada tres pisos mas abajo. \n\n
+Este bloque de oficianas ha\nsido reformado muchas\nveces, como demuestra la\nparabólica del tejado.\nTambién se puede apreciar\nel techo acristalado que\ncubre la piscina interior,\nsituada tres pisos mas abajo. \n\n\n
 COM_10_01
-Estanque con peces\n\n
+Precioso lago con árboles\ncerca. ¿qué niño no\n querría nadar\n aquí en verano o patinar\nen invierno?\n\n\n
 COM_10_02
-Aparcamiento\n\n
+Desde que se instauró la\nzona azul de\nestacionamiento regulado,\nlos tickets de aparcamiento\ngratuito en las afueras de la\nciudad están muy\ndemandados.\n
 COM_10_05
-Casa con granja\n\n
+Este granero ha estado usándose\nun montón de años por el granjero\nIsidro. Si quieres, aún\n puedes notar el olor a\nleche fresca.\n Solo tienes que\nacercarte aquí.\n\n\n
 COM_10_07
-Restaurante rural\n\n
+Hotel\n\nEste es un hotel es un\npunto de encuentro para los viajeros\nque podrán descansar y\ndejar reposar\na sus caballos.\n\n
 COM_10_08
-Tiendas de disfraces\nantiguos\n\n
+Tienda de trajes mediavales.\nLos mejores trajes de la\népoca mediaval están\ndisponibles en esta\nmaravillosa tienda. Doncella,\nbardo, juglar, caballero,\nbuhonero, monje, castellano,\nprior y duque son los más demandados.\n\n\n
 COM_10_10
-Tienda de repuestos para\nescaladores\n\n
+Tienda de repuestos para\nescaladores\n\n\n
 COM_10_11
-Taller de sastrería\n\n
+Comercio y Casa.\n\nLos comerciantes tienen sus\nviviendas en el \nmismo sitio que sus tiendas. En\nla planta\n baja están los\ncomercios, en el primer piso\n están las viviendas y el\nático se usa como almacén.\n\n\n\nCasas de los comerciantes las\npersonas que viven en casas\nTyC, los comerciantes de\nPrad?d patán. Ocupan la planta\nbaja tiendas, ubicada en el\nprimer piso las habitaciones\nresidenciales, y actuar como\nun ático de almacenamiento.\n
 COM_10_12
-Vieja posada\n\n
+Esta vieja casa decrépita\nrememora los tiempos cuando los\nhabitantes de simutrans no\nconocían el divino poder de\nla electricidad o los raíles.\n
 COM_11_10
-Tienda de música Raven &\nthe Crows\n\n
+Tienda de música Raven &\nthe Crows\n\n\n
 COM_11_11
-Bulevard de tiendas\n\n
+Bulevar de tiendas.\n\n\n
 COM_11_12
-Plaza de la Herrería\n\n
+Tienda de venta de objetos\nde plata precolombinos.\n\n Se pueden encontrar\ndesde jarrones, cubertería\ny joyas hasta armas.\n
 Control_StationBlg
 Control de tráfico ferroviario
 DenkFlor
-Dedicado a Flor 'WF Ultd.'\nWauters, el famoso\ningeniero que creó tantos\nvehículos de carretera y\nferroviarios. También\nfamoso por diseñar otras\ntantas productivas factorías.\n\n
+Dedicado a Flor 'WF Ultd.'\nWauters, el famoso\ningeniero que creó tantos\nvehículos de carretera y\nferroviarios. También\nfamoso por diseñar otras\ntantas productivas factorías.\n\n\n
 DenkHajo
-Este monumento está\ndedicado a Hansjörg\nMathaner quien creó este\njuego en siete años. Los\nsemidioses tardan más en\ntales trabajos.\n\n
+Este monumento está\ndedicado a Hansjörg\nMathaner quien creó este\njuego en siete años. Los\nsemidioses tardan más en\ntales trabajos.\n\n\n
 DenkMHz
-Este monumento está\ndedicado a Georg Heiduk\n(MHz), el maestro en\nedificios renderizados.\nRepresenta su aguda visión\nde los detalles.\n\n
+Este monumento está\ndedicado a Georg Heiduk\n(MHz), el maestro en\nedificios renderizados.\nRepresenta su aguda visión\nde los detalles.\n\n\n
 DenkOwen
-Lugar dedicado a Owen\nRudge, el famoso técnico\nde sonido y experto\nfinanciero.\n\n
+Lugar dedicado a Owen\nRudge, el famoso técnico\nde sonido y experto\nfinanciero.\n\n\n
 DenkSeth
-Este lugar está dedicado a\nSeth C. Triggs, el famoso\narquitecto que diseñó\ntantos edificios bellos.\nTambién fue famoso por\nsus estudios para mejorar\nel tráfico\n\n
+Este lugar está dedicado a\nSeth C. Triggs, el famoso\narquitecto que diseñó\ntantos edificios bellos.\nTambién fue famoso por\nsus estudios para mejorar\nel tráfico\n\n\n
 DenkTomas
-Este monumento se dedica\nTomas Kubes quien ayudó a\nmejorar Simutrans en\nmuchos, muchos aspectos\ncon sus consejos y  su\nesfuerzo.\n\n
+Este monumento se dedica\nTomas Kubes quien ayudó a\nmejorar Simutrans en\nmuchos, muchos aspectos\ncon sus consejos y  su\nesfuerzo.\n\n\n
 DenkTrikky
-Dedicado a 'Trikky' Rick\nMcGreal, el famoso\narquitecto que diseñó\ntantos edificios\nimpresionantes.\n\n
+Dedicado a 'Trikky' Rick\nMcGreal, el famoso\narquitecto que diseñó\ntantos edificios\nimpresionantes.\n\n\n
 DenkVM
-Dedicado a Manfred 'VT\nVienna' Tomaschitz, el\nfamoso ingeniero que\ndiseñó mucho material\nferroviario.\n\n
+Dedicado a Manfred 'VT\nVienna' Tomaschitz, el\nfamoso ingeniero que\ndiseñó mucho material\nferroviario.\n\n\n
 DenkVolker
-Lugar construido  por Volker\nMeyer quien mejoró\nSimutrans en muchos,\nmuchos aspectos.\n\n
+Lugar construido  por Volker\nMeyer quien mejoró\nSimutrans en muchos,\nmuchos aspectos.\n\n\n
 Eingang
 Entrada a la estacion
 Feste
-Fortaleza de Konubert\n\nEste enorme castillo fue\nlevantado hacia el año\n1400, en el periodo\ncorrespondiente a la Baja\nEdad Media.\n\n
+Fortaleza de Konubert\n\nEste enorme castillo fue\nlevantado hacia el año\n1400, en el periodo\ncorrespondiente a la Baja\nEdad Media.\n\n\n
 Fluid_StationBlg
 Tanque de combustible
 FreightShipStop
@@ -245,67 +249,67 @@ Hall de estacion (derecha)
 Goods_StationBlg
 Almacén
 Gymnasium
-Instituto Liceo\n\n
+Instituto Liceo\n\n\n
 IND_00_01
-Pequeño almacén\n\n
+Almacén de prensa\n aquí yacen encerradas\nbajo llave\nalgunas de las páginas escritas\n más vergonzantes de la\nhistoria periodística.\n\n
 IND_00_02
-Conjunto de naves\nindustriales con mucho\nespacio libre\n\n
+Conjunto de naves\nindustriales con mucho\nespacio libre\n\n\n
 IND_00_03
-Deposito de\ncombustible/petróleo\n\n
+Depósito de combustible.\n\n
 IND_00_04
-Fabrica de planchas de\nmetal\n\n
+Fábrica de planchas de metal\ntechos, puertas, planchas,\nmoldes, recipientes,\nestructuras son algunos de\nlos elementos más\ndemandados hoy en día.\nPor eso, siempre es necesario\ntener un instalación como esta\na mano.\n
 IND_00_05
-Gran cisterna de agua\n\n
+Depósito de agua\nHasta la última gota del\nexcente de la ciudad está\nguardado aquí,\npor eso no dejan subir a nadie.\nSeguro que más de uno metería\nlos pies..\n\n
 IND_00_06
-Una humilde fábrica\n\n
+Una fábrica con los típicos\ntejados de sierra. Eso que\nasoma en las paredes son\nlas ventanas,\n que al menos arrojan algo\n de luz sobre los puestos\nde trabajo.\n
 IND_00_09
-Centro de distribución\n\n
+Silos\nEl ganado debe comer, cada\nhora de cada mes\n de cada día de cada año\n para engordar rápidamente.\nNo sé si los silos serán\n lo suficientemente altos\ncomo para albergar tanta comida.\n\n
 IND_00_10
-Pequeña fabrica\n\n
+Esta es un fábrica que es encarga\n de importar piezas de\ncarro y \nlas ensambla en una moderna\ncadena de montaje, modelo\nFiord-T\n
 IND_00_12
-Fábrica de maquinaria\nantigua\n\n
+Fábrica de maquinaria antigua\n De aquí salió el primer tren\n propulsado mediante zumo\nde remolacha del mundo.\n Fue el precursor de los\nbiocombustibles pero\nno tuvo mucho éxito porque\nla gente\n odiaba el zumo de remolacha.\n\n\n
 IND_00_14
-Fábrica de baldosas\n\n
+Óptica\nEste taller fue la cuna del\nLaser, Maser, Taser y cualquier\n artiloguio terminado en ser.\nEstán desarrollando la última\ntecnología en óptica\ncuantica, que\npermitira saber finalmente si un tren\nestá encendido o\n apagado, sin abrir la puerta\nde la cochera.\nCrucemos los dedos y cerremos los ojos.\n \n
 IND_00_16
-Fábrica V\n\n
+Planta de procesado\nNo se sabe exactamente\nqué procesa\n pero el dueño asegura que\n la producción no para\nnunca, 24 horas, los 7 de\nla semana.\n Muchos sospechan que es\nuna tapadera\ndel lobby de la "vía doble"\npara blanquear créditos.\n\n
 IND_00_17
-Fábrica IV\n\n
+Matadero\nUn lugar donde siempre hay trabajo\npara cualquiera. Puede que te\nencuentres con\n algún viejo campeón de\nboxeo practicando con el\ntorso de alguna vaca muerta.\n Pero los torsos no\ndevuelven el golpe.\n
 IND_00_18
-Fábrica III\n\n
+Almacén de la policía\nUno de los lugares más\nvigilados de la ciudad.\nMuchos delincuentes quieren\ndestruir las pruebas en su\n contra que están\nalmacenadas aquí y de paso\nrecuperar su pistola.\n\n
 IND_01_01
-Aparcamiento\n\n¿No encuentra un\naparcamiento libre para su\ncoche? Entonces, ¿por qué\nno viene a la ciudad en\nautobús?\n\n
+Aparcamiento\n\n¿No encuentra un\naparcamiento libre para su\ncoche? Entonces, ¿por qué\nno viene a la ciudad en\nautobús?\n\n\n
 IND_01_03
-Depósito de gas grande\n\nDepósito esférico para el\nalmacenamiento de gas\nnatural.\n\n
+Depósito de gas grande\n\nDepósito esférico para el\nalmacenamiento de gas\nnatural.\n\n\n
 IND_01_04
-Cobertizo de chapa\n\nEn un cobertizo de chapa\npuede hacer mucho frío en\ninvierno. Por tanto, hay que\nafanarse con el soplete\ndurante la primera hora de\ntrabajo. Durante el invierno,\nuno agradece no tener que\ncogerlo hasta el mediodía, a\nser es posible.\n\n
+Cobertizo de chapa\n\nEn un cobertizo de chapa\npuede hacer mucho frío en\ninvierno. Por tanto, hay que\nafanarse con el soplete\ndurante la primera hora de\ntrabajo. Durante el invierno,\nuno agradece no tener que\ncogerlo hasta el mediodía, a\nser es posible.\n\n\n
 IND_01_06
-La tapicería Nalbrugger\ntapiza sillas y sillones de\ntodo tipo con cuero.\n\n
+La tapicería Nalbrugger\ntapiza sillas y sillones de\ntodo tipo con cuero.\n\n\n
 IND_01_07
-Caseta de transformador\neléctrico.\n\n
+Subestación transformadora\n\n
 IND_01_08
-Fábrica de fertilizantes\n\n
+Fábrica de fertilizantes\nAntiguamente era criadero de\nlombrices, pero\n cuando murió el dueño,\nla hija heredó el imperio industrial\n y decidió orientarlo a\nlos fertilizantes, porque\n odiaba a esos malditos\nbichos marrones y blanditos.\n\n
 IND_01_09
-Depósito de combustible\n\n
+Depósito de aguas residuales\n\n
 IND_01_10
-Fábrica de herramientas.\n\nDesde hace un siglo, forma\nparte del paisaje de la\nciudad, al igual que las\niglesias. Los martillos y\nalicates que fabrica hoy en\ndía no son útiles para el uso\ndoméstico, ya que la cabeza\ndel martillo es como una\ncabeza de clavo y los alicates\nson tan pequeños que uno\ndebería cogerlos con pinzas\nsin apretar demasiado, no se\nvaya a destruir una de estas\nmaravillas de la mecánica de\nprecisión.\n\n
+Fábrica de herramientas.\n\nDesde hace un siglo, forma\nparte del paisaje de la\nciudad, al igual que las\niglesias. Los martillos y\nalicates que fabrica hoy en\ndía no son útiles para el uso\ndoméstico, ya que la cabeza\ndel martillo es como una\ncabeza de clavo y los alicates\nson tan pequeños que uno\ndebería cogerlos con pinzas\nsin apretar demasiado, no se\nvaya a destruir una de estas\nmaravillas de la mecánica de\nprecisión.\n\n\n
 IND_01_11
-Esta fábrica se dedicaba\ninicialmente a coser blusas.\nLas mujeres podían ser\ncontratadas con salarios\nbajos, y la semana de 48\nhoras fue otro progreso\nnotable. Hoy día, las mujeres\ntras las computadoras se\nsientan en sus cubículos y\nvisten blusas, cosidas por\notras mujeres por bajos\nsalarios durante más de 48\nhoras a la semana en algun\nlugar de Asia.\n\n
+Esta fábrica se dedicaba\ninicialmente a coser blusas.\nLas mujeres podían ser\ncontratadas con salarios\nbajos, y la semana de 48\nhoras fue otro progreso\nnotable. Hoy día, las mujeres\ntras las computadoras se\nsientan en sus cubículos y\nvisten blusas, cosidas por\notras mujeres por bajos\nsalarios durante más de 48\nhoras a la semana en algun\nlugar de Asia.\n\n\n
 IND_01_12
-Esta fábrica de estilo\nbauhaus se ha dedicado\nsiempre a la producción de\ntubos. Desde el hierro\nfundido al plástico ha\nhabido un largo trecho.\n\n
+Esta fábrica de estilo\nbauhaus se ha dedicado\nsiempre a la producción de\ntubos. Desde el hierro\nfundido al plástico ha\nhabido un largo trecho.\n\n\n
 IND_01_13
-Fábrica II\n\n
+El enorme crater negro es\ndebido a\nun pequeño accidente con la\ncaldera. Bueno, de \necho fue la explosión más\ngrande que se recuerda.\nCubró \nmedia ciudad con lodo negro. Ese incidente\n se conoce como "El lado\noscuro".\n
 IND_01_15
-Fábrica I \n\n
+Fábrica\n\nInicialmente se iba a denominar fábrica\nde las\n tres chimeneas, en honor a\n los tres profetas de\nSimutrans (Hajo, Prissi y\nIsaac) pero el\n arquitecto no profesaba la\nmisma fe, era un converso\nOTTD, y \nnunca terminó de reconocer a\nIsaac como profeta.\n Es más, declaró que nunca\naceptaría a un\n dictador por muy\nbenevolente que hubiera sido.\n\n
 IND_02_01
-Vieja fabrica en ruinas\n\n
+Esta fábrica empezó siendo\nun depísoto de chatarra\ncon una sola pared. El\nfundador de la fábrico\nfalleció sepultado por un\namasijo de hierros mientras\nintentaba sacar una varilla de\ncobre de una montaña de\nchatarra. Fue el precursor del\nfamoso juego de la jenga.\n
 IND_02_02
-Taller de chatarra.\n\nDesde tiempos inmemoriales, la\nchatarra ha servido para\nlevantar el tejido industrial\nen tiempos de escasez. El\nreciclaje es hoy una\nprioridad\n\n
+Taller de chatarra.\n\nDesde tiempos inmemoriales, la\nchatarra ha servido para\nlevantar el tejido industrial\nen tiempos de escasez. El\nreciclaje es hoy una\nprioridad\n\n\n
 IND_02_06
-Nave Industrial y almacén\n\n
+Fábrica de procesadores de\núltima generación\n"Dual Core Octarino" propiedad\nde la empresa\nSimtel\n
 IND_02_09
-Depositos para la\ndepuracion de aguas\n\n
+Estación de tratamiento\n de aguas residuales\n\n
 IND_02_10
-Antigua fábrica de zapatos\n\n
+Esta vieja fábrica de jabón\nse ve igual que cuando fue\nconstruida.¡Es un verdadero milagro!\n\n\n
 LargeShipStop
 Grua pesada de carga
 leftShipStop
@@ -313,7 +317,7 @@ Grúa de gran tonelaje
 LeuchtturmShipStop
 Puerto con faro
 Lighthouse
-Faro\n\n
+Faro\n\n\n
 MainTerminal1930
 Terminal aeropuerto
 MHzSmallStation
@@ -327,9 +331,9 @@ Plataforma de monorraíl
 MonorailGround
 Plataforma de monorraíl
 OldTownhall
-Antiguo ayuntamiento\n\n
+Antiguo ayuntamiento\n\n\n
 Patricks_Rock
-Roca sagrada de Patrick\n\n
+Roca sagrada de Patrick\n\n\n
 PlainAirStop
 Terminal de carga de aviones
 PostOffice
@@ -345,141 +349,142 @@ Hall de estación
 rampShipStop
 Rampa de carga para barcos
 Raven_Kirche
-Iglesia de St. Meinrad\n\nLa hermita de St. Meinrad\nesta custodiada por dos\nenormes cuervos, segun\ncuenta la leyenda. Cuando\nMeinrand fue asesinado,\nlos dos cuervos persiguieron\na los asesinos y les\ncondenaron por toda la\neternidad. En la actualidad, el\nlugar esta ocupado por el\nmonasterio de Einsiedeln.\n\n
+Iglesia de St. Meinrad\n\nLa hermita de St. Meinrad\nesta custodiada por dos\nenormes cuervos, segun\ncuenta la leyenda. Cuando\nMeinrand fue asesinado,\nlos dos cuervos persiguieron\na los asesinos y les\ncondenaron por toda la\neternidad. En la actualidad, el\nlugar esta ocupado por el\nmonasterio de Einsiedeln.\n\n\n
 RES_00_01
-Casa pequeña con jardín\n\n
+Pequeña casa con un jardí\n
+El lugar de tus sueños.\nEl lugar de tus sueños\n\n
 RES_00_02
-Casa pequeña con jardín\n\n
+Otra pequeña casa, con otro\npequeño jardín\n donde una ama de casa\n se fuma otro cajetín\n.\n
 RES_00_03
-Casa pequeña con jardín\n\n
+Casa con jardín\n\nEs la típica casa tranquila\ncon ambiente agradable.\n El tipo de casa al que\nte gusta regresar\n tras una agotadora\njornada de trabajo.\n\n
 RES_00_04
-Casa pequeña\n\n
+En esta casa moderna vive\nun famoso científico.\nEn el sótano están los\nlaboratorios y\n los especímenes\nvegetales. Dicen los vecinos\nque por la noche,\n puedes escuchar el extraño\nruido proveniente de la bodega\n\n\n
 RES_00_06
-Pequeña fuente. Aunque no\nsea tan magnífica como la\nde Génova, es hermoso\ncaminar alrededor de ella,\nespecialmente en verano.\n\n
+Pequeña fuente. Aunque no\nsea tan magnífica como la\nde Génova, es hermoso\ncaminar alrededor de ella,\nespecialmente en verano.\n\n\n
 RES_00_07
-Casa mediana\n\n
+El escudo de este caseríos\nson dos serpientes enfrentadas.\n Hace años que en esta\ncasa se realizan ritos secretos\n de la secta de\nThulsa-Dum. Acude mucha\ngente, por eso\n se acumula mucha basura en\nlos alrededores. Por eso están pensando\nen quitar las casas de la parte\nsuperior para tener más espacio.\n\n
 RES_00_08
-Casa mediana\n\n
+Casa con garaje doble\n\nEn vez de uno al lado de\notro, los coches están uno detrás\n de otro. Un invento\ngenial para el primero que aparca.\n De hecho, el coche\ndel fondo lleva veinte años sin moverse\ny ahora se considera un clásico\n¡si hasta participa en desfiles\ny concentraciones¡\n\n
 RES_00_09
-Pequeño parque con\nestanque para patos.\n\n
+Pequeño parque con estanque\nde patos.\n\n
 RES_00_10
-La impresionante mansión\nde Moistboy\n\n
+La mansión Moistboy\n\nPropiedad de un afamado anciano\nmillonario algo picarón, está llena\n de preciosas octogenarias\nen biquini, que harán vomitar\na \nmás de uno. Las viejas glorias\nnunca pasan de moda\n\n
 RES_00_11
-Casa grande con jardín\n\n
+Un gran edificio de\napartamentos con un jardín.\n\n El barrio ha visto épocas mejores,\npero los alquileres son asequibles,\ny el lugar es muy bonito.\n\n
 RES_00_12
-Bloque de casas con\ngaraje común\n\n
+¡Se menos ordinario! El\n interior es único y\nademás: los enchufes son\n trifásicos, la ducha\ntransparente se ilumina\n con lámparas de neón,la\nestufa funciona con\n un motor stirling y se\nproyectan famosos\n cuadros en las paredes,\n porque el arquitecto ha\nprohibido poner las manos en\nlas paredes.\n\n
 RES_00_13
-Casas pareadas con jardín.\n\n
+Duplex con jardín\n\nUn lujo al alcance de muy pocos\ny el sueño de muchos.\n\n
 RES_00_16
-Villa antigua\n\n
+Antigua Villa s. XVII\n\n Residencia de un famoso\nconde, que\n murió decapitado por sus\nhambrientos sirvientes,\n los cuales escondieron\nsu cabeza en algún \nlugar en las paredes de la casa.\n Se rumorea que por las\nnoches se le puede ver, vagando\n en busca de su cabeza y\nmaldiciendo a los albañiles por\nconstruir tantos tabiques.\n\n
 RES_00_17
-Incluso en edificios\nantiguos como este, existe\nun coste asociado al\nsistema de calefacción -\ntodos deben pagar su\npropia leña\n\n
+Incluso en edificios\nantiguos como este, existe\nun coste asociado al\nsistema de calefacción -\ntodos deben pagar su\npropia leña\n\n\n
 RES_00_18
-Comunidad de vecinos\n\n
+Edificio con valla\n\nHubo muchas discusiones en\nentre los vecinos acerca de la\n valla. Unos se negaban\nporque no se puede poner vallas\n al campo, y otros\nquerían protegerse de los\npeligros del exterior.\nFinalmente ganaron los partidarios de\nla valla,\n porque un de los\ndetractores fue\ndevorado por un T-rex mecánico\ndurante las fiestas del barrio,\n en la votación por un solo\nvoto de diferencia.\n\n
 RES_00_19
-Apartamentos modernos\n\n
+Apartamentos modernistas\n\nUn intento de los 60 de\nhacer una vivienda\n bonita y barata para\ntodos.\n
 RES_00_21
-Apartamentos ABR\n\n
+Edificio ecológico\n\n Una vez fue premio de\narquitectura en los años\nsesenta\,n pero ha tenido\nproblemas de abastecimiento, ya\n que usa energía eólica,\npero el constructor\n se empeña en ahorrar\ncostes e insiste en usar\nmolinillos de papel en vez de turbinas.\nRecientemente ha sido renovado.\n\n
 RES_00_23
-Torre ABR\n\n
+Apartamentos\n\npara dos o tres personas, no \n se permiten perros\n ni familiares cercanos\n. A las doce se cierra el\nacceso de la entrada\n\n
 RES_01_01
-Casa prefabricada pequeña\ncon una gran habitación\npara el niño en la buhardilla.\n\n
+Casa prefabricada pequeña\ncon una gran habitación\npara el niño en la buhardilla.\n\n\n
 RES_01_02
-Casa con tejado de estilo\nalpino.\n\n
+Casa canadiense. Muy\n estable, pero tiene pocas ventanas\n y paredes, así que no\n es muy adecuada\n para gente con\nclaustrofóbia o amantes de\nlos cuadros.\n\n
 RES_01_05
-Chalet de dos pisos con\npatio\n\n
+Chalet de dos pisos con\npatio\n\n\n
 RES_01_07
-Casa de lujo grande\n\n
+Casa lujosa de madera\n Auténtica Caoba es lo\nque se usó para construir esta\n lujosa casa de campo.\nLo malo es que tiene termitas,\n asi que ahora son ellas\nlas que se están dando\n un festín de primera, con\nel caviar de las maderas.\n\n
 RES_01_08
-Casa mediana con jardín\n\n
+Una casa luminosa y\nespaciosa de dos plantas\n con trastero y un jardín\n es todo lo que\nnecesitas para conseguir la felicidad\n\n
 RES_01_10
-Casa moderna\n\n
+Apartamento modelo "Bunker"\nEl autor de esta rareza fue\nun ingeniero militar retirado\n tras la guerra fría, que\naún temía una guerra nuclear.\n Por eso hizo construir\nla casa más segura posible,\n tan segura que tiene\nparedes \nde hormigon con acero\nreforzado de 1 metro de grosor.\n\n
 RES_01_12
-Edificio de apartamentos de\nladrillo visto\n\n
+Edificio de apartamentos de\nladrillo visto\n\n\n
 RES_01_15
-Bloque de pisos\n\n
+Grandes apartamentos para\nfamilias \nnumerosas, de fachada lisa. Justo lo\nque necesita\n una gran familia:\ntranquilidad, grandes\nestancias, y paredes\n donde los niños no puedan pintar.\n\n
 RES_01_16
-Bloque de casas antiguas\n\n
+La ocasión, una nueva etapa\n para renovar, es un\n tractor, cuyo conductor,\n se metió en lios por no mirar\n Debe pagar al municipio, \nla voluntad y a los\npropietarios de tierras\n, para compensar la cosecha\nque acaba de machacar.\n\n
 RES_01_17
-Casa Victoriana\n
+Casona inglesa s. XVIII\nEste edificio aloja a una\nsingular comunidad\n de vecinos. La viuda un\nantiguo magnate del acero\nalgo corta de vista\n, un deshollinador retirado\nque tose más que habla, un capitan\n de la marina en la reserva\ny medio loco\n y un banquero con 7 hijos\na cual\n más peligroso.\n\n
 RES_01_18
-Bloque de casas bajas\n\n
+El viejo Sr. Fansworth, que\ntodavía vive\n pero es un poco duro\nde oido, se\n pelea a menudo con el\nportero, que es\n automático, por sus\nopiniones políticas.\n En el piso superior vive una\njoven y fogosa \npareja, que aprovecha cualquier\nocasión para pregonar\n su amor a los cuatro vientos.\n\n
 RES_01_21
-Complejo residencial ABR\n\n
+En la parte baja, todavía\nhay un comercio a pesar\n de que no vende casi\nnada. Cinco pisos más \narriba las palomas han\nconquistado la azotea y campan\na sus anchas. Y nadie\npuede arrebatársela porque el ascensor\n solo tiene 3 botones, y\nno hay escaleras la tejado.\n ¡Malditas ratas del aire!\n
 RES_01_22
-Torre de lofts\n\n
+Al principio todo el mundo\nquería vivir aquí\n,pero por desgracia, casi todos\ntenía a\nsus abuelos viviendo en las\nafueras, y \nno podían dejar a los niños\ncon ellos\n para que se los cuidaran.\nPor eso \naquí solo viven solteros y parejas\nsi hijos.\n\n\n
 RES_01_23
-Bloque de pisos rojo\n\n
+Este edificio surgió de una apuesta:\n Los directivos de la\nfactoría A.Brose apostaron\n un millón a ver quién era\ncapaz de aguantar más tiempo\n la respiración sin ponerse\nrojo. No ganó\n nadie porque todos eran\nmuy viejos y apenas\n podían respirar sin\nmascarilla. De ahí\n viene el color rojo del edificio\n\n
 RES_02_01
-Casa tropical\n\n
+Apartamento veraniego\n con unas bonitas\npalmeras que dan\nsombra suficiente para descansar\nen la\ntumbona del jardín.\n\n
 RES_02_07
-Casona\n\n
+Casona de piedra\n con varias dependencias, incluidas\n unas cuadras y un\nalmacén de material.\n La finca no es muy\ngrande, así que como\nmucho puedes tener ponys.\n\n
 RES_02_16
-Apartamentos de lujo con\nático\n\n
+Apartamentos de lujo\n con ático.\n\n
 RES_02_20
-Bloque de apartamentos\ncon aparcamiento\n\n
+Hotel Gran Leblanc\nUno de los más famosos\nedificios más famosos\n de la zona, por sus\nimpresionantes fiestas\nplayeras en la piscina de la azotea.\n No olvides el bañador o\nvolverás a casa con el smokin empapado.\n\n
 RES_10_01
-chalet con jardín\n\n
+Chalet de dos plantas\n con caseta de jardinero.\nEsta última sirve de trastero\ny como lugar de\nencuentro para parejas de amantes.\n\n
 RES_10_02
-Casa rural\n\n
+Casa mediaval\n del siglo XVII. Ha\npertenecido a la familia\ndesde hace\n12 generaciones y aún\nconserva su aspecto original,\nal menos\n la fachada.\n\n
 RES_10_03
-Casa con jardín y cobertizo\n\n
+Caserío estilo alemán\n. Esta casa conserva el\nestilo arquitectónico teutón\nde la\n época, pero se ha\nclausurado el pozo que ahora\n se usa como fosa séptica.\nLa caseta de madera se\nusa como garaje.\n\n
 RES_10_04
-Casa de dos pisos con\njardín\n\n
+Casita con techo de madera.\n Los inquilinos están\nsufriendo de lo lindo\ndebido a una plaga de termitas\nque se está comiendo el\ntecho a marchas forzadas.\n Además cuando llueve,\naparecen cientos de goteras\npor toda la casa.\nHay que llamar a control de plagas.\n\n
 RES_10_05
-Chalet de dos plantas con\nbuhardilla\n\n
+Una original casa de madera\nrenovada y modernizada con un\nbonito jardín.\nEn cualquier caso, el\npropietario rentabilizará la inversión.\n\n
 RES_10_08
-Casa baja con valla\n\n
+Casona de madera con valla.\nUna casa amplia y\nconfortable, ideal para\nfamilias numerosas\ncon mascota, perro o gato.\nHay espacio para todos.\n\n
 RES_10_10
-Librería\n\n
+Chalets adosados.\n La ventaja es que no\ntienes que compartir pared\ncon pared,\n pero no te puedes\ndespistar o acabarás\nhaciendo el ridículo\n con tu vecino mirando\ndesde el otro lado.\n\n
 RES_10_11
-Plaza de la fruta\n\n
+Casas con placeta.\nEn verano la gente baja a la\nplaceta, para encontrarse\ncon los\namigos y divertirse. Risas,\njuegos, charlas y buen rollo\nes lo que reina en\n este lugar. En invierno hay\nnadie porque hace mucho frio\ny la nieve te llega hasta la cintura.\n\n
 RES_10_12
-Casas de la época mediaval\n\n
+Antiguamente, el techo de\nesta casa\n era de paja pero tras el\ngran incendio a\n mediados del siglo\npasado, sus dueños\n decidieron usar tejas de pizarra.\n Hacen juego con el\ntono lúgubre y apagado del edificio.\n\n
 RES_10_13
-Hotel con encanto\n\n
+La mayor parte de las casas\nson todo tejado\ny buhardilla. ¡Como sino se\niban a protejer de las\n copiosas nevadas a lo\nlargo del año! No hay \n nada mejor que pasar la\ntarde en la buhardilla, calentito\n y con una buena taza de\nchocolate con virutas.\n\n
 RES_10_14
-Complejo de casas rurales\n\n
+Los hijos de la propietaria\nse casaron al mismo tiempo\ny como la casa es enorme\ny quedaría vacía\n decidieron aceptar la\nproposición de su madre y\ntodos se trajeron\n a sus parejas a vivir a casa.\nSe dice que por las noches\n se puede oir a la madre\nhacer la ronda para comprobar\nque todo\n está en orden. ¡Ojo con lo\nque haceís!\n
 RES_10_15
-Mancomunidad de vecions\n\n
+A primera vista puede\nparecer una bonita y tranquila comunidad\n de vecinos, pero la\nverdad es que todos están muy\n disgustados. Les\nprometieron piscina, pista de\ntenis y garage.\n\n
 RES_11_01
-casita baja con jardín\n\n
+Chalet de planta baja con\nenorme jardín.\nEs tan grande que incluso\nincluye un pozo de agua, pero\n el dueño lo usó como\nmanatial para crear su propia marca\nde cerveza, ColsBurg, y lo\nsecó por completo.\n\n
 RES_11_02
-Casa con trastero\n\n
+Casa baja con buhardilla.\nIdeal para gente que nunca\ntira nada de nada.\nEn el desván puedes\nalmacenar tus notas del\ncole, tus antiguos\njuguetes y todas aquellas cosas\nimportantes de tu vida\n que te traen buenos recuerdos.\n\n
 RES_11_03
-Hotel rústico \n\n
+Casa rústica con una bonita\nfachada hecha de piedra, y\ntejado de pizarra. Arquitectura\nde campo en la ciudad.\n Pertenece a un antiguo\ngranjero que vendió sus\ntierras por una\n fortuna a unos constructores\nque acabaron levantando\n un casino en medio del\npáramo, para jugar al Solitario.\n\n
 RES_11_04
-Casa de dos pisos\n\n
+Chalet con jardín para\ndisfrutar en verano y hacer\nmuñecos de nieve en invierno. Fue\nnominada dos veces \ncomo mejor casa para pasar el\ninvierno por la revista Avalancha.\n\n
 RES_11_08
-Casa de la época mediaval\n\n
+Residencia estilo mediaval,\nque antiguamente fue una posada\n llamada "El Pony Pisador"\n donde se reunían\n gente de todo tipo y\ncalaña. Se conserva la facha\noriginal y \nahora es una casa con encanto.\n\n
 RES_11_12
-Bloque de casas de barrio\n\n
+Una sencilla casa de dos\npisos o tres\npisos. Es un lugar agradable e\nideal para parejas\n sin ganas de compromiso.\nTú en un piso, y yo en el otro.\n\n
 RES_11_13
-Colegio interno\n\n
+Casa baja que antiguamente\nfue un matadero.\nLos vecinos dicen que aún\nhoy se puede\nescuchar el terrorífico mugido de\nlas vacas\n que fueron sacrificadas\naquí para\n convertirse en famosas hamburguesas.\n\n
 RES_11_14
-Bloques de casas antiguas\n\n
+Antiguos grandes almacenes\nreconvertidos en\n bloques de lofts o\napartamentos diáfanos.\nNadie sabe exactamente qué\nson pero al dueño se los\nquitan de las manos.\nDate prisa o te quedarás sin tu loft.\n\n
 RES_12_03
-Casona de la época colonial\n\n
+Casona estilo colonial\n\n
 RES_12_05
-Casas con balconada\n\n
+Casas s. XVII\n
 RES_12_07
-Casas con balcón\n\n
+Bulevar s. XVIII\n
 RES_12_08
-Casas con soportales\n\n
+Casco antíguo\n\n
 RES_12_10
-Casa de la época colonial\n\n
+Museo de Historia la Ciudad\n\n
 RES_12_11
-Casas antiguas de madera\n\n
+Casas coloniales con balconada\n\n
 RES_12_12
-Casas con bulevar\n\n
+Casas estilo Nueva Orleans\n
 RES_12_15
-Bloque de casas con\nfachada de cristal\n\n
+La típica casa con vecinos\n que montan fiestas y ponen\n la música a tope a las\n tantas de la madrugada\n¡iros a dormir de una vez!\n
 Residenz
-Residencia\n\nEste lugar lo usa un guru local\nde Yoga para enseñar\nmeditanción y como lugar\nde retiro.\n\n
+Residencia\n\nEste lugar lo usa un guru local\nde Yoga para enseñar\nmeditanción y como lugar\nde retiro.\n\n\n
 rightShipStop
 Muelle con faro
 RUIN_0
-Castillo Medieval\n\nLos señores de este castillo\nse aliaron con el bando\nequivocado durante la\nguerra de los 30 años. Sin\nembargo, todavía se puede\napreciar su poderío.\n\n
+Castillo Medieval\n\nLos señores de este castillo\nse aliaron con el bando\nequivocado durante la\nguerra de los 30 años. Sin\nembargo, todavía se puede\napreciar su poderío.\n\n\n
 SandStationMHz
 Estacion de cercanías
 ShipDepot
@@ -489,13 +494,13 @@ Astillero\n
 ShipStop
 Puerto\n
 STADIUM2
-Gran estadio\n
+Gran estadio\n\n
 Tennis_Court
-Pistas de tenis\n
+Pistas de tenis\n\n
 Terminal1930
 Terminal de Aeropuerto (1930)
 Theatre
-Teatro Real\n
+Teatro Real\n\n
 Tower1930
 Torre de Control (1930)
 TowerMoistboy
@@ -515,7 +520,7 @@ Estación de estilo Victoriano
 Vorplatz
 Esplanada
 Windmill
-Antiguo molino de viento\n
+Antiguo molino de viento\n\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -537,67 +542,65 @@ coche amarillo
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
 factory_2Raffinerie_details
-Refinería (gasolina)
+<title>Refinado del petróleo</title>\nEn esta planta de procesado industrial es donde el crudo es tratado y refinado para obtener productos derivados como el diesel, la gasolina entre otros. Las instalaciones constan de una intrincada y compleja red de tuberías y conductos que transportan los fluidos de una unidad de procesamiento a otra.<br><br>\n\nEl proceso de refinado del crudo para obtener combustibles consta de varias fases: calentamiento, decantación por punto de ebullición, y destilación para obtener cada uno de los distintos componentes del petróleo.
 factory_3Raffinerie_details
-Refinería Industrial
+<title>Obtención del Plástico</title>\nExisten muchos tipos de plásticos, pero en esta planta concretamente se fabrican los de tipo sintético derivados del petróleo como el polietileno, PVC y el metacrilato.<br><br>\nHoy en día, el plastico se usa en todo los ámbitos de la vida moderna tales como aislantes eléctricos, envoltorios, bolsas de basura, cañerías, piezas de motores, carrocerías, juguetes, equipajes, artículos deportivos, fibras textiles, eléctrodomésticos, artículos electrónicos y muebles... está por todas partes
+factory_Aufwindkraftwerk_details
+<title>Energía eólica</title>\nSe puede obtener energía del viento, más concretamente del movimiento generado por las corrientes de aire mediante los aerogeneradores. La energía eólica es un recurso abundante, renovable, no contaminante y que ayuda a disminuir las emisiones de gases de efecto invernadero lo que la convierte en un tipo de energía muy beneficiosa. Por otro lado, el principal inconveniente es su intermitencia.\n\n
 factory_Autohaus_details
-Concesionario coches
+<title>Concesionario de Coches</title>\nTras su fabricación, y a veces previa reserva, aquí se ponen en venta los últimos modelos.La gente siempre necesita coches, porque te dan libertad e independencia pero son caros en precio y mantenimiento. No importa, el gobierno ha reactivado las ayudas a la compra de automóviles. Si traes tu viejo coche con más de 10 años, te hacen una rebaja del 15%.
 factory_Autohersteller_details
-Fábrica coches
+<title>Fabricación de un automóvil</title>\nEl proceso de fabricación de un coche es largo y costoso. Todo comienza con una serie de bocetos e intercambios de ideas entre los diseñadores e ingenieros industriales. Para ello se ayudan de ordenadores que hacen complejos cálculos de estructuras, formas, materiales y aerodinámica. En la última etapa de diseño se crea prototipo del modelo mediante ordenador, para llevar a cabo las pruebas previas antes de fabricar el modelo a escala. <br><br>\nUna vez se tiene el coche <i>concepto</i>, se procede a introducir los cambios necesarios en la cadena de producción para adaptarla a los requerimientos del nuevo modelo. Cuando todo está listo, comienza la producción del automóvil, donde cada unidad recorre la cadena de ensamblaje hasta llegar al la última etapa, donde se perfuma con la famosa fragancia <i>olor a coche nuevo nº 5</i>, que tanto gusta a los consumidores.\n
 factory_Buchgrosshandel_details
-Mayorista de libros
+<title>Casa del Libro</title>\nEsta tienda tiene todo lo que ha sido editado, desde la enciclopedia de 271 vólumenes sobre el diseño de redes de transporte, pasando por la guía de teléfonos de Internet e incluso hasta un rincón del manga; aquí hay hasta un manual de instalación de Simutrans para patosos...
 factory_Cementmill_details
 Fábrica de cemento
 factory_ChemicalPlant_details
-Planta química
-factory_CHEMIST_details
-Farmacia
+<title>Planta Química</title>\nEsta planta de procesado industrial manufactura productos químicos, a gran escala. El objetivo es crear nuevas materias mediante procesos químicos o biológicos. La instalaciones se dividen en unidades, las cuales tienen distintas funciones y aplican diferentes procesos, y se comunican mediante complejos sistemas de transporte de fluidos como cañerías o conductos.
 factory_Concretefactory_details
-Fábrica de hormigón
-factory_Druckerei_details
-Imprenta
+<title>Fábrica de hormigón</title>\nEn estas instalaciones se fabrica el hormigón celular autoclave (AAC). Los poros del material reducen el peso e incrementan el aislamiento originada por el polvo de aluminio, que reacciona con el agua. El AAC se inventó en los años 20 del siglo XX.
 factory_Erzbergwerk_details
-Mina de hierro
+<title>Extracción del carbón</title>\n Los métodos de extración del carbón dependen de la calidad y profundidad a la que se encuentre la veta, así como de los factores geológicos de la zona. Los métodos extractivos se dividen dos categorías: superficie o bajo tierra.<br><br>\n\nLa elección de uno u otro método además de la viabilidad económica, depende de la profundidad a la que haya que excavar. Si la veta se encuentra a menos de 55 m. generalmente se opta por operar a cielo abierto. Entre 55 y 91 m. se aplica la minería subterránea pero se mantiene la opción de superficie. A profundidades mayores, se aplica la únicamente la minería subterránea.
+factory_Incinerator_details
+<title>Incineradora</title>\nLa basura entrante se somete un proceso de tratamiento de residuos, que implica la combustión de los residuos orgánicos, denominado tratamiento termal.\n\nDicho proceso convierte los residuos en cenizas, gases, partículas y calor, y tiene enormes beneficios en el tratamiento de ciertos tipos de residuos peligrosos como residuos clínicos o sustancias peligrosas. Mediante la incineración se eliminan las posibles toxinas y patógenos.
 factory_Kohlegrube_details
-Mina de carbón
+<title>Minas de Carbón</title>\nEn las minas de carbón, se extrae el mineral de carbón. Es un ardua tarea, pero el carbón es necesario para la industria pesada como altos hornos, fundiciones y para las generación de electricidad.
 factory_Kohlekraftwerk_details
-Central térmica de carbón
+<title>Carbón como fuente de energía</title>\nEsta instalación se emplea para la generación de energía eléctrica a partir de la energía liberada en forma de calor, mediante la combustión de carbón. El calor generado se emplea dentro de un ciclo termodinámico convencional para mover un alternador y producir energía eléctrica.<br><br>\n\nEstas centrales son consideradas las más económicas y rentables, por lo que su utilización está muy extendida en todo el mundo, a pesar de las críticas vertidas debido a su elevado impacto medioambiental.
 factory_Materialswholesale_details
-Almacén de construcción
+<title>MegaTienda HTM</title>\nLa famosa megatienda <i>Hazlo-Tu-Mismo</i> ofrece todo tipo de materiales de construcción. Con todo lo que hay disponible, te bastará para terminar al menos la estructura interna de la casa.
 factory_Moebelfabrik_details
-Fábrica de muebles
+<title>Fábrica de Muebles<title>\nFinalmente incluso los muebles se han convertido en productos de consumo masivo seguidos de modas de corta duración. Apenas unas pocas de las piezas fabricadas aquí son realizadas por un restaurador. Y si lo hacen, normalmente es por la máquina ha fallado.
 factory_Moebelhaus_details
-Tienda de muebles
-factory_Nutzwald_details
-Explotac. forestal
+<title>Tienda de Muebles</title>\nUn sueco tuvo una brillante idea ¿por qué no vendemos los muebles sin montar y convencemos a la gente de que es guay ser un manitas? Desde ese momento, ese señor y la industria de las herramientas dieron un gran salto, mientras que la frustación de los intentos de montaje inundaba miles de hogares. La tienda tuvo que organizar un concurso de montaje de muebles con premios millonarios para <i>educar</i> a los usuarios en la nueva forma de consumo.
 factory_Oelbohrinsel_details
-Plataforma petrolífera
+<title>Extracción del crudo</title>\nLa segunda mitad del siglo XX trajo consigo un hambre de petróleo - el consumo se doblaba cada década. Además de los recursos terrestres, el mar ofrecía también algunos depósitos de crudo, aunque no de fácil acceso.<br><br>\n\nLos pozos petrolíferos son estructuras construidas para explotar los recursos localizados en las plataformas continentales (profundidad entre 0 a 200 m.) Son ENORMES pero realmente nadie se da cuenta de ello. La mayor parte del la estructura está sumergida. También son enormemente costosas de mantener. Los pilares que sustentan la plataforma a menudo estan huecos, actuando así como depósitos extra para el almacenamientos del crudo extraído.<br><br>\n\nLa plataforma petrolífera más grande del mundo, Statfjord B, fue construida en Noruega. Su peso ronda las 800.000 toneladas y mide 192 m., pero si contamos la torre de extracción sumaría 80 metros más.
 factory_Oelfeld_details
-Pozo de petróleo
+<title>Campos petrolíferos</title>\nEl petróleo es una materia cruda usada para pinturas, lubricantes y también como combustible antes del cambio del siglo XIX al XX. En ese momento, comenzó a ganar importancia con la aparición de los motores de combustión y los automóviles.<br><br> El petróleo es un líquido viscoso consistente en numerosos hidrocarburos. No está claro como surgieron los depósitos de petróleo, pero probablemente fue un proceso similar al de la creación de los depósitos de carbón con algunas condiciones extra - bajo gran presión y sin oxígeno. Están bajo tierra, a gran profundidad. El petróleo situado allá se encuentra mezclado con gas a gran presión, lo que facilita el bombeo a la superficie.
 factory_Oelkraftwerk_details
-Central térmica de fueloil
+<title>Generación de Energía por Termodinámica</title>\n\nEsta planta es empleada para la generación de energía eléctrica a partir de la energía liberada en forma de calor, por la combustión de un combustible fósil como el petróleo. Este calor es empleado por un ciclo termodinámico convencional para mover un alternador y producir energía eléctrica. Este tipo de generación eléctrica contamina mucho, ya que libera dióxido de carbono durante el proceso de combustión.
 factory_Oelpumpe_details
-Pozo petrolífero
+<title>Explotación del Yacimiento</title>\n\nUn yacimiento o campo petrolífero es una zona con abundancia de pozos de los que se extrae petróleo del subsuelo. Debido a que las formaciones subterráneas que contienen petróleo se extienden sobre grandes zonas, una explotación completa implica la perforación y explotaciónde  varios pozos desparramados a lo largo de una amplia área.<br><br>\nHabitualmente, el típico campo petrolífero se asemeja a una pequeña ciudad en medio de un paisaje salpicado con torres de perforación o los gatos de las bombas, conocidos como "<i>burros cabeceadores</i>" debido a su brazo en movimiento que bombea el petróleo a la superficie.
 factory_Papierfabrik_details
-Fábrica de papel
+<title>Fábrica de Papel</title>\nHasta aquí llegan diariamente toneladas de madera y astillas, que tras un proceso mecánico de triturado, se convierte en pulpa de celulosa, la base para producir las bobinas de papel. Durante este proceso es cuando se genera ese mal olor tan característico de este tipo de industrias. 
 factory_Pharmaceutics_details
-Ind. Farmacéutica
+<title>Farmacéutica</title>\nEl complejo consta de varios edificios y laboratorios donde se desarrollan las vacunas y curas para su uso en humanos y animales. La fábrica produce fundamentalmente vacunas contra la malaria y productos de veterinaria.
 factory_Raffinerie_details
-Refinería (plásticos)
-factory_Saegewerk_details
-Aserradero
-factory_SaegewerkMHz_details
-Aserradero industrial
+<title>Refinería</title>\nEn esta planta de procesado industrial, el crudo es refinado y procesado dando lugar a los varios productos derivados como gasolina, combustible diesel, base para asfalto, queroseno, fuel y gas licuado. Es normal que este tipo de instalaciones tengan un complejo entramado de tuberías, conductos y cañerías, para transportar los fluidos y gases de una unidad de procesamiento a otra.
 factory_Sandquarry_details
-Cantera de arena
+<title>Cantera de Arena</title>A cielo abierto se extraen de aquí toneladas de arena y grava, cavando nuevos niveles a medida que se despejan los antiguos. Si se supera el nivel freático, el agua aflora a la superficie e inunda la cantera, lo cual implica que hay que extraerla y bombearla a depósitos cercanos.
+factory_scrap_yard_details
+<title>Depósito de Chatarra</title>\nEs poco conocido, pero la chatarra reutiliza para la producción de acero, cubriendo más del 40% de la demanda. Según el producto y el proceso de fabricación, es posible reutilizar desde 20% (acero por convertidor LD) o hasta el 100% (horno eléctrico).
 factory_Stahlwerk_details
-Altos Hornos
+<title>Altos Hornos (Acerías)</title>\nEstas industrias convierten el mineral de hierro en hierro o acero. Esto se lleva a cabo calentado el mineral (y reciclando chatarra) en grandes calderos - grandes estructuras cilíndricas que pueden aguantar temperaturas de hasta 2.000º C. En el interior, el mineral se derrite rápidamente y se separa el metal líquido de las impurezas.<br><br>\nEl hierro se procesa nuevamente para reducir el volumen de carbono; cuanto más bajo sea, mayor será la calidad del acero obtenido. Este tipo de procesos necesita de una gran cantidad de energía, que normalmente se obtienen de la combustión de enormes cantidades de carbón.
 factory_Stonequarry_details
-Cantera de piedra
-factory_TANKE_details
-Gasolinera
+<title>Cantera</title>\nA cielo abierto, se extraen grandes cantidades de rocas para uso industrial o decoración como mármoles, granitos, calizas y pizarras. El problema viene cuando la vida útil de la cantera termina, y aparece el gran problema ecológico y ambiental.
+factory_thermisches_Solarkraftwerk_details
+<title>Torre Solar Termal</title>\nLa energía solar se puede aprovechar de muchas formas. En esta planta se se produce energía mediante el método reflexión de la luz solar contra una torre, la cual contiene un circuito de agua que al calentarse, hace que una turbina se mueva y genere energía eléctrica. Se necesitan una gran cantidad de espejos para alcanzar la temperatura necesaria.
+factory_Turmkraftwerk_details
+<title>Torre Solar</title>\nEn estas instalaciones, la energía solar se extrae de una forma muy ingeniosa. Se crea un invernadero en la base de la torre, con un montón de plantas produciendo dioxido de carbono lo cual aumenta la temperatura de la base. Como el aire caliente tiende a ascender, este se desplaza por la torre hasta la parte superior donde mueve una enorme turbina, la cual genera energía eléctrica.
 factory_Windkraftwerk_details
-Central eólica
+<title>Molinos de Viento</title>\n El primer parque eólico fue construido en Escocia en 1885 por el prof. James Blyth de Strathclyde. Aparentemente no tuvo mucho éxito, comparado con la energía hidroeléctrica y la idea quedó en el olvido durante 60 años, excepto en Dinamarca. El primero modelo moderno fue construido en el año 1957 en Alemania (modelo 2 palas) y Dinamarca (3 palas). Sin embargo, el espaldarazo definitivo llegó a raíz de la crisis del petróleo, y tras ello los distintos gobiernos empezaron a subvencionar este tipo de energías renovables.
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -624,6 +627,8 @@ Druckerei
 Imprenta
 Erzbergwerk
 Mina de hierro
+Incinerator
+Planta incineradora
 Kohlegrube
 Mina de carbón
 Kohlekraftwerk
@@ -634,6 +639,8 @@ Moebelfabrik
 Fábrica de muebles
 Moebelhaus
 Tienda de muebles
+Muellkraftwerk
+Central eléctrica de biomasa
 Nutzwald
 Explotac. forestal
 Oelbohrinsel
@@ -641,7 +648,7 @@ Plataforma petrolífera
 Oelfeld
 Pozo de petróleo
 Oelkraftwerk
-Central térmica de fueloil
+Central termoeléctrica de fueloil
 Oelpumpe
 Pozo petrolífero
 Papierfabrik
@@ -658,6 +665,8 @@ SaegewerkMHz
 Aserradero industrial
 Sandquarry
 Cantera de arena
+scrap_yard
+Vertedero Municipal
 Stahlwerk
 Altos Hornos
 Stonequarry
@@ -716,10 +725,14 @@ Stahl
 Acero
 Stone
 Piedra
+waste
+basura
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
 bushes
 arbustos
+deco_rock
+roca
 flowers
 flores
 gemsen
@@ -781,7 +794,7 @@ madera
 CATEGORY_07
 aglomerados
 rolls
-Rollos de papel
+Rollos
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 choose_point
@@ -815,91 +828,101 @@ Semáforos
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Ahorn-1
-Gran encina\n\n
+Gran encina\n\n\n
 Ahorn-2
-Encina\n\n
+Encina\n\n\n
 Ahorn-Gruppe
-Arboleda\n\n
+Arboleda\n\n\n
 Birke-1
-Abedul\n\n
+Abedul\n\n\n
 Buche-1
-Platanero\n\n
+Platanero\n\n\n
 Busch_2
-arbusto\n\n
+arbusto\n\n\n
 Kiefer_1
-Sequoya roja\n\n
+Sequoya roja\n\n\n
 Kiefer_2
-Acacia común\n\n
+Acacia común\n\n\n
 Kiefer_3
-Acacia\n\n
+Acacia\n\n\n
 Kiefer_4
-Pino piñonero\n\n
+Pino piñonero\n\n\n
 Kiefer_5
-Sequoya\n\n
+Sequoya\n\n\n
 Latschenkiefer
-Pino de montaña\n\n
+Pino de montaña\n\n\n
 Palmtree1
-Palmera\n\n
+Palmera\n\n\n
 Palmtree2
-Palmera tropical\n\n
+Palmera tropical\n\n\n
 Palmtree3
-Palmera baoba\n\n
+Palmera baoba\n\n\n
 Palmtree4
-Palmera cocotera\n\n
+Palmera cocotera\n\n\n
 Palmtree5
-Palmera parasol\n\n
+Palmera parasol\n\n\n
 Palmtree6
-Palmera de desierto\n\n
+Palmera de desierto\n\n\n
 Palmtree7
-Palmera ecuatorial\n\n
+Palmera ecuatorial\n\n\n
 Pappel-1
-Alamo\n\n
+Alamo\n\n\n
 Pappel-2
-Alamo joven\n\n
+Alamo joven\n\n\n
 Shunter-tree2
-Retama\n\n
+Retama\n\n\n
 Tanne_1
-Frondoso Fir\n\n
+Frondoso Fir\n\n\n
 Tanne_2
-Pequeño Fir\n\n
+Pequeño Fir\n\n\n
 Tanne_3
-Viejo Fir\n\n
+Viejo Fir\n\n\n
 Tanne_4
-Gran Fir\n\n
+Gran Fir\n\n\n
 Tanne_5
-Abeto Fir\n\n
+Abeto Fir\n\n\n
 Tanne_6
-Fir\n\n
+Fir\n\n\n
 Tree1
-Roble\n
+Roble\n\n
 Tree3
-Abedul\n
+Abedul\n\n
 Tree4
-Pino negro\n\n
+Pino negro\n\n\n
 Tree5
-Eucalipto\n\n
+Eucalipto\n\n\n
 Tree6
-Abeto picea Picea abies \nConífera estrecha. Alcanza\nuna altura de 35 to 65m y\nun diámetro principal de 2m,\ny vive hasta 1000 años. Su\nhábitat natural es el norte y\nel este de Europa, así como\nlas montañas de Europa\nCentral. Por repoblación\nartificial se encuentra en\nzonas más bajas.  Uso:\nconstrucción interior y\nexterior, estibación,\nconstrucción de casetas,\naglomerado, cajas de\nresonancia para instrumentos\nmusicales, industrias de la\ncelulosa y el papel.\n\n
+Abeto picea Picea abies \nConífera estrecha. Alcanza\nuna altura de 35 to 65m y\nun diámetro principal de 2m,\ny vive hasta 1000 años. Su\nhábitat natural es el norte y\nel este de Europa, así como\nlas montañas de Europa\nCentral. Por repoblación\nartificial se encuentra en\nzonas más bajas.  Uso:\nconstrucción interior y\nexterior, estibación,\nconstrucción de casetas,\naglomerado, cajas de\nresonancia para instrumentos\nmusicales, industrias de la\ncelulosa y el papel.\n\n\n
 tropictree1
-Arbol tropical I\n\n
+Arbol tropical I\n\n\n
 tropictree2
-Sauce tropical \n\n
+Sauce tropical \n\n\n
 tropictree3
-Manglar tropical\n\n
+Manglar tropical\n\n\n
 tropictree4
-Abedul tropical\n\n
+Abedul tropical\n\n\n
 tropictree5
-Platanero\n\n
+Platanero\n\n\n
 tropictree6
-Sauce espinoso\n\n
+Sauce espinoso\n\n\n
 tropictree7
-Conífera tropical\n\n
+Conífera tropical\n\n\n
 tropictree8
-Baoba\n\n
+Baoba\n\n\n
 tropictree9
-Acacia tropical\n\n
+Acacia tropical\n\n\n
 Willow
-sauce\n\n
+sauce\n\n\n
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
+FastRailTunnel
+Tunel para ferrocarril de alta velocidad
+FastRoadTunnel
+Tunel para carretera de alta velocidad
+RailTunnel
+Tunel ferroviario clásico
+RoadTunnel
+Túnel (carretera)
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -1056,12 +1079,14 @@ Concept2Pass
 Concept 2 Vagón de pasajeros
 Concept2Rear
 Concept 2 (trasero)
-Concorde
-Concorde
 DaimlerStoll
 Daimler Stoll
 DC-3
 Douglas DC-3
+Deponielaster
+Camión con contenedor
+Deponielaster2
+Camión con contenedor dual
 Doubledeck_city_bus
 Autobús de dos pisos
 DoubleDecker
@@ -1108,6 +1133,8 @@ Fokker_F27
 Fokker F27
 FordZugmaschine
 Ford Zug
+GarbageTruck
+Camión de la basura
 Gelenkbus_Ende
 Autobus articulado (trasero)
 Gelenkbus_Front
@@ -1158,8 +1185,6 @@ Horses
 Caballos
 Horsewoodcariage
 Carreta de caballos para madera
-Hunslet
-Hunslet
 HVPosttransporter
 Camión correo DIBU/H-Trans
 ICE_TD-back
@@ -1168,8 +1193,6 @@ ICE_TD-car
 ICE-TD Vagón de pasajeros
 ICE_TD-front
 ICE-TD (frontal)
-IL-76
-IL-76
 JNR_C11
 JNR C11 (2-6-4T)
 JR_9600
@@ -1208,18 +1231,22 @@ Lockheed10-Electra
 Lockheed 10 Electra
 logs
 Balizas
-Lowa
-Lowa
 Lowa_Anhaenger
 Lowa Pendular
 Mack_Truck_01
 Camion Mack 01
+Mailcontainerwagon
+Vagón de contenedores de correo.
 MailExpress
 Correo Aéreo
+Mailwagon
+Vagón de correo
 Moebelschiff
 Barco para muebles TPI/JET
 Moebelwagen
 VT Vienna Vagón para muebles
+Muellschiff
+Barco contenedor basurero
 NeuOelwagen
 Vagon cisterna de petróleo (80t)
 NS1000
@@ -1272,6 +1299,8 @@ Sandtransporter
 Camión para arena
 schooner
 Velero Nueva Escocia
+Schooner_Bark
+Goleta Bark
 SD40-2-back
 SD40-2 (trasero)
 SD40-2-front
@@ -1330,14 +1359,14 @@ Trike
 Camión Trike
 Tugboat
 Buque Remolcador
-Turgot
-Turgot
 Ucy
 Vagon Ucy
 Viggen
 Crucero Viggen
 VolvoFH12
 Volvo FH 12 (cabeza tractora)
+waste wagon
+Vagón contenedor de basura
 X2000back
 X2000 (trasero)
 X2000car
@@ -1380,6 +1409,10 @@ Powerline
 Tendido eléctrico
 Rillenschienen
 Vías de tranvía
+river
+Cascada
+river2
+Chorrera
 runway_grass
 Pista de hierba
 runway_modern

@@ -2,13 +2,17 @@
 #                                                                              #
 #                Simutrans Scenario Specific Translation File                  #
 #                                Scenario: pak64                               #
-#                            Language: sk Slovenèina                           #
+#                            Language: sk Slovencina                           #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                            Date Created: 3.01 2009                           #
+#                           Date Created: 17.10 2009                           #
 #                                                                              #
 #                                   authors:                                   #
-#                                    - prissi                                  #
+#                              Frank Penz - FrankP                             #
+#                      note: Administrator SimuTranslator                      #
+#                           Peter Karak - peter.karak                          #
+#                                    note:                                     #
+#                          Markus Pristovsek - prissi                          #
 #              note: Administrator Base texts / pak64 / pak.japan              #
 #                                                                              #
 ################################################################################
@@ -86,62 +90,12 @@ TrainStop
 ?elezni?ná osobná stanica\n
 Windmill
 Veterný mlyn\n\n
+#____________________________________citycar____________________________________
+#____________________________________citycar____________________________________
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_2Raffinerie_details
-Rafinéria (pre benzín)
-factory_Autohaus_details
-Autopredaj?a
-factory_Autohersteller_details
-Automobilka
-factory_Buchgrosshandel_details
-Kníhkupectvo
 factory_Cementmill_details
 Cementáre?
-factory_CHEMIST_details
-Lekáre? (od Setha)
-factory_Concretefactory_details
-Betonáre?
-factory_Druckerei_details
-Tla?iare?
-factory_Erzbergwerk_details
-?eleznorudná ba?a
-factory_Kohlegrube_details
-Uho?ná ba?a
-factory_Kohlekraftwerk_details
-Uho?ná elektráre?
-factory_Materialswholesale_details
-Staveb. ve?koobchod
-factory_Moebelfabrik_details
-Nábytkáre?
-factory_Moebelhaus_details
-Dom nábytku
-factory_Nutzwald_details
-Les
-factory_Oelbohrinsel_details
-Ropná plo?ina
-factory_Oelfeld_details
-Ropné pole
-factory_Oelkraftwerk_details
-Tepelná elektráre?
-factory_Papierfabrik_details
-Papiere?
-factory_Pharmaceutics_details
-Farmaceutická továre?
-factory_Raffinerie_details
-Rafinéria (pre plasty)
-factory_Saegewerk_details
-Píla
-factory_Sandquarry_details
-Ba?a na piesok
-factory_Stahlwerk_details
-Oceliare?
-factory_Stonequarry_details
-Kame?olom
-factory_TANKE_details
-?erpacia stanica
-factory_Windkraftwerk_details
-Veterná elektráre?
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -226,8 +180,6 @@ None
 ni?
 Oel
 Ropa
-Papier
-Papier
 Plastik
 Plasty
 PrintersInk
@@ -238,6 +190,10 @@ Stahl
 Oce?
 Stone
 Kamenie
+#__________________________________ground_obj___________________________________
+#__________________________________ground_obj___________________________________
+#__________________________________pedestrian___________________________________
+#__________________________________pedestrian___________________________________
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -252,6 +208,12 @@ CATEGORY_05
 nápoje
 CATEGORY_06
 drevo
+#___________________________________roadsign____________________________________
+#___________________________________roadsign____________________________________
+#_____________________________________tree______________________________________
+#_____________________________________tree______________________________________
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -422,3 +384,5 @@ steel_sleeper_track
 Celooce?ová trat'
 wooden_sleeper_track
 Trat' s drevenými pra?cami
+#__________________________________way-object___________________________________
+#__________________________________way-object___________________________________

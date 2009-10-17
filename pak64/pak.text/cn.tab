@@ -5,13 +5,17 @@
 #                           Language: cn Sim. Chinese                          #
 #                                Encoding: UTF-8                               #
 #                           Font : wenquanyi_9pt.bdf                           #
-#                            Date Created: 3.01 2009                           #
+#                           Date Created: 17.10 2009                           #
 #                                                                              #
 #                                   authors:                                   #
+#                              Frank Penz - FrankP                             #
+#                      note: Administrator SimuTranslator                      #
 #                               Alan - LondonBVE                               #
 #           note: Hope to translate at least 50% by end of November.           #
-#                                    - prissi                                  #
+#                          Markus Pristovsek - prissi                          #
 #              note: Administrator Base texts / pak64 / pak.japan              #
+#                                   - shinexus                                 #
+#                                    note:                                     #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -126,60 +130,8 @@ yellow_car
 黄色私家车
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_2Raffinerie_details
-炼油厂 (汽油)
-factory_Autohaus_details
-车行
-factory_Autohersteller_details
-汽车制造厂
-factory_Buchgrosshandel_details
-书店
 factory_Cementmill_details
 水泥厂
-factory_CHEMIST_details
-药房
-factory_Concretefactory_details
-混凝土厂
-factory_Druckerei_details
-印刷厂
-factory_Erzbergwerk_details
-铁矿
-factory_Kohlegrube_details
-煤矿
-factory_Kohlekraftwerk_details
-发电厂 (燃煤)
-factory_Materialswholesale_details
-物料批发店
-factory_Moebelfabrik_details
-家具厂
-factory_Moebelhaus_details
-家品市场
-factory_Nutzwald_details
-森林
-factory_Oelbohrinsel_details
-钻油台
-factory_Oelfeld_details
-油井
-factory_Oelkraftwerk_details
-发电厂 (燃油)
-factory_Papierfabrik_details
-造纸厂
-factory_Pharmaceutics_details
-药厂
-factory_Raffinerie_details
-炼油厂
-factory_Saegewerk_details
-木厂
-factory_Sandquarry_details
-沙矿
-factory_Stahlwerk_details
-炼钢厂
-factory_Stonequarry_details
-石矿
-factory_TANKE_details
-油站
-factory_Windkraftwerk_details
-风力发电站
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -278,6 +230,8 @@ Stahl
 钢
 Stone
 石
+#__________________________________ground_obj___________________________________
+#__________________________________ground_obj___________________________________
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Woman
@@ -318,6 +272,16 @@ SignalsMonorail
 单轨列车信号
 traffic_light
 交通灯
+#_____________________________________tree______________________________________
+#_____________________________________tree______________________________________
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
+FastRoadTunnel
+快速道路隧道
+RailTunnel
+铁路隧道
+RoadTunnel
+道路隧道
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 Bus
@@ -330,10 +294,6 @@ SD40-2-back
 SD40-2 后部
 SD40-2-front
 SD40-2
-T13
-T13
-T24
-T24
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road

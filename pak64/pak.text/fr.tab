@@ -5,16 +5,22 @@
 #                             Language: fr Francais                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 3.01 2009                           #
+#                           Date Created: 17.10 2009                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                  - Christophe                                #
+#                                    note:                                     #
+#                              Frank Penz - FrankP                             #
+#                      note: Administrator SimuTranslator                      #
 #                         Roman Schwörer - Gotthardlok                         #
+#                                    note:                                     #
+#                           Sava Bogdanets - Sava2004                          #
 #                                    note:                                     #
 #                          Jean Beaudet - cagliostro_2                         #
 #                                    note:                                     #
 #                            Luc Mallet - luc.mallet                           #
 #                                    note:                                     #
-#                                    - prissi                                  #
+#                          Markus Pristovsek - prissi                          #
 #              note: Administrator Base texts / pak64 / pak.japan              #
 #                                                                              #
 ################################################################################
@@ -208,8 +214,6 @@ PSHall2TrainStop
 Quai
 Raven_Kirche
 Église St-Meinrad\n\nL'eremite St-Meinrad a été\naccompagné par deux\ncorbeaux selon la legnde.\nQuand il fut assassiné, les\ncorbeaux suivaient les\nmeurtriers et les ont\nconvaincus. À l'endroit de son\neremitage se trouve\naujourd'hui le couvent\nEinsiedeln.\n\n
-RES_00_01
-Maisonette avec jardin\n\n
 RES_00_02
 Petite maison avec jardin\n\n
 RES_00_03
@@ -274,64 +278,8 @@ green_car
 Voiture verte
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_2Raffinerie_details
-Raffinerie (Carburant)
-factory_3Raffinerie_details
-Raffinerie
-factory_Autohaus_details
-Concessionnaire auto
-factory_Autohersteller_details
-Usine de voitures
-factory_Buchgrosshandel_details
-Grossiste en livres
 factory_Cementmill_details
 Cimenterie
-factory_ChemicalPlant_details
-Usine chimique
-factory_CHEMIST_details
-Pharmacie
-factory_Concretefactory_details
-Fabrique de béton
-factory_Druckerei_details
-Imprimerie
-factory_Erzbergwerk_details
-Mine de fer
-factory_Kohlegrube_details
-Mine de charbon
-factory_Kohlekraftwerk_details
-Centrale électrique
-factory_Materialswholesale_details
-Grossiste de matériaux
-factory_Moebelfabrik_details
-Fabrique de meubles
-factory_Moebelhaus_details
-Grossiste de meubles
-factory_Nutzwald_details
-Exploitation forestière
-factory_Oelbohrinsel_details
-Plate-forme pétrolière
-factory_Oelfeld_details
-Puits de pétrole
-factory_Papierfabrik_details
-Papeterie
-factory_Pharmaceutics_details
-Pharmaceutique
-factory_Raffinerie_details
-Raffinerie (Plastique)
-factory_Saegewerk_details
-Scierie
-factory_SaegewerkMHz_details
-Vieille scierie
-factory_Sandquarry_details
-Carrière de sable
-factory_Stahlwerk_details
-Aciérie
-factory_Stonequarry_details
-Carrière de pierre
-factory_TANKE_details
-Station-service
-factory_Windkraftwerk_details
-Eolienne
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -420,8 +368,6 @@ Moebel
 Meuble
 Oel
 Pétrole
-Papier
-Papier
 Plastik
 Plastique
 PrintersInk
@@ -432,6 +378,10 @@ Stahl
 Acier
 Stone
 Pierre
+#__________________________________ground_obj___________________________________
+#__________________________________ground_obj___________________________________
+#__________________________________pedestrian___________________________________
+#__________________________________pedestrian___________________________________
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -460,6 +410,16 @@ feux tricolores
 #_____________________________________tree______________________________________
 Tree6
 Sapin\n\n
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
+FastRailTunnel
+tunnel ferroviaire à grande vitesse
+FastRoadTunnel
+tunnel d'autoroute
+RailTunnel
+Tunnel ferroviaire
+RoadTunnel
+Tunnel routière
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -642,8 +602,6 @@ Kanal
 canal
 mip_cobblestone_road
 Route pavée
-monorail
-monorail
 Powerline
 ligne haute tension
 Rillenschienen
@@ -652,7 +610,7 @@ runway_modern
 piste
 steel_sleeper_track
 voie de chemin de fer, traverses en acier
-taxiway
-taxiway
 wooden_sleeper_track
 voie de chemin de fer à traverses en bois
+#__________________________________way-object___________________________________
+#__________________________________way-object___________________________________
