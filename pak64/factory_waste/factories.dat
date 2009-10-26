@@ -23,10 +23,10 @@ MapColor=103
 pax_level=25
 Dims=2,1
 climates=desert,tropic,mediterran,temperate,tundra,rocky
-BackImage[0][0][0][0][0]=Muellsammelstelle2.0.0
-BackImage[0][0][1][0][0]=Muellsammelstelle2.0.1
-BackImage[1][0][0][0][0]=Muellsammelstelle2.1.1
-BackImage[1][1][0][0][0]=Muellsammelstelle2.1.0
+BackImage[0][0][0][0][0]=muellsammelstelle2.0.0
+BackImage[0][0][1][0][0]=muellsammelstelle2.0.1
+BackImage[1][0][0][0][0]=muellsammelstelle2.1.1
+BackImage[1][1][0][0][0]=muellsammelstelle2.1.0
 --------------------
 Obj=factory
 name=Incinerator
