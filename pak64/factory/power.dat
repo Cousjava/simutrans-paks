@@ -29,7 +29,7 @@ BackImage[0][1][0][1][0][0]=solarpwt.4.0
 BackImage[0][2][0][1][0][0]=solarpwt.5.0
 --
 Obj=factory
-name=Geothermal powerplant
+name=Geokraftwerk
 Location=Land
 Copyright=vilvoh
 DistributionWeight=105
