@@ -7,7 +7,7 @@
 #
 Obj=factory
 name=grain_farm
-copyright=PatrickN
+copyright=PatrickN/Frank Penz
 Location=Land
 DistributionWeight=2
 Productivity=100
@@ -16,13 +16,15 @@ OutputGood[0]=grain
 OutputCapacity[0]=200
 MapColor=31
 pax_level=2
-Dims=2,1,1
+Dims=2,1,2
 fields=wheat_fields
 needs_ground=1
 intro_year=1910
 climates=mediterran,temperate,tundra
 BackImage[0][0][0][0][0]=grain-farm.0.4
 BackImage[0][0][1][0][0]=grain-farm.0.5
+BackImage[0][0][0][0][1]=grain-farm.1.4
+BackImage[0][1][0][0][1]=grain-farm.1.5
 ---------------------------------------
 Obj=factory
 name=old_farm
