@@ -23,8 +23,8 @@ intro_year=1910
 climates=mediterran,temperate,tundra
 BackImage[0][0][0][0][0]=grain-farm.0.4
 BackImage[0][0][1][0][0]=grain-farm.0.5
-BackImage[0][0][0][0][1]=grain-farm.1.4
-BackImage[0][1][0][0][1]=grain-farm.1.5
+BackImage[1][0][0][0][0]=grain-farm.1.5
+BackImage[1][1][0][0][0]=grain-farm.1.4
 ---------------------------------------
 Obj=factory
 name=old_farm
