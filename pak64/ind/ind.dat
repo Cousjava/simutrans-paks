@@ -326,7 +326,7 @@ BackImage[0][0][0][0][0][1]=winter-ind.9.5
 Obj=building
 Name=IND_00_16
 copyright=blackbox
-chance=100
+chance=20
 Type=ind
 Level=16
 intro_year=1960
@@ -335,6 +335,17 @@ BackImage[0][0][0][1][0][0]=ind.6.6
 BackImage[0][0][0][0][0][0]=ind.7.6
 BackImage[0][0][0][1][0][1]=winter-ind.6.6
 BackImage[0][0][0][0][0][1]=winter-ind.7.6
+--------------------
+Obj=building
+Name=IND_01_16
+copyright=colonyan
+chance=100
+Type=ind
+Level=16
+intro_year=1980
+climates=tropic,mediterran,temperate,tundra,rocky,arctic
+BackImage[0][0][0][1][0][0]=ind.8.6
+BackImage[0][0][0][0][0][0]=ind.9.6
 --------------------
 Obj=building
 Name=IND_00_17

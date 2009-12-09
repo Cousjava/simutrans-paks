@@ -383,6 +383,17 @@ climates=tropic,mediterran,temperate,tundra,rocky
 BackImage[0][0][0][0][0]=res.1.9
 --------------------
 Obj=building
+Name=RES_01_09
+copyright=colonyan
+type=res
+chance=100
+Level=9
+intro_year=1950
+climates=desert,tropic,mediterran,temperate
+BackImage[0][0][0][0][0][0]=res.0.9
+BackImage[0][0][0][0][0][1]=winter-res.0.9
+--------------------
+Obj=building
 Name=RES_12_10
 copyright=Raven
 type=res
@@ -414,7 +425,7 @@ type=res
 chance=100
 Level=10
 intro_year=1950
-climates=tropic,mediterran,temperate,tundra
+climates=desert,tropic,mediterran,temperate,tundra
 BackImage[0][0][0][0][0][0]=res.2.10
 BackImage[0][0][0][0][0][1]=winter-res.2.10
 --------------------
