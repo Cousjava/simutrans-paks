@@ -5,7 +5,7 @@
 #                            Language: zh T. Chinese                           #
 #                                Encoding: UTF-8                               #
 #                               Font : m+10r.bdf                               #
-#                           Date Created: 17.10 2009                           #
+#                            Date Created: 9.12 2009                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Frank Penz - FrankP                             #
@@ -82,6 +82,12 @@ AirportShed1930
 早期機場郵局
 AirTerminal477
 大型客運樓
+Avila_Big_StationBlg
+大型客運樓
+Avila_Small_StationBlg
+小型客運樓
+Avila_Warehouse_StationBlg
+車站倉庫
 BigPostOffice
 大型郵局
 BigTerminal477
@@ -94,12 +100,18 @@ Car_StationBlg
 車輛裝卸區
 CarDepot
 道路車廠
+CarStop
+裝卸區
 ChannelStop
 運河碼頭
 Control_StationBlg
 車站控制中心
+DenkVolker
+這紀念碑是紀念被稱為\narch-mage的Volker Meyer，\n他為Simutrans改進了不少\n地方。\n\n\n\n\n
 Fluid_StationBlg
 液體儲存缸
+FreightTrainStop
+貨運車站
 Gas_StationBlg
 氣體儲存缸
 Goods_StationBlg
@@ -119,7 +131,7 @@ PostOffice
 ShipDepot
 造船廠
 ShipStop
-與建碼頭\n
+與建碼頭
 Terminal1930
 早期候機樓
 Tower1930
@@ -137,7 +149,7 @@ TramDepot
 VictorianStation
 維多利亞式車站
 Windmill
-風力發電機\n\n
+風力發電機\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -160,18 +172,38 @@ Autohaus
 車行
 Autohersteller
 汽車製造廠
+bakery
+麵包店
+brewery
+釀酒廠
 Buchgrosshandel
 書店
+cannery
+罐頭廠
 Cementmill
 水泥廠
 CHEMIST
 藥房
 Concretefactory
 混凝土廠
+cow_farm
+牧牛場
+dairy
+奶品場
 Druckerei
 印刷廠
 Erzbergwerk
 鐵礦
+fish_pond
+魚塘
+fish_swarm
+漁排
+food_processing_plant
+食物加工廠
+grain_farm
+穀田
+grain_mill
+麵粉廠
 Kohlegrube
 煤礦
 Kohlekraftwerk
@@ -204,6 +236,8 @@ Stahlwerk
 煉鋼廠
 Stonequarry
 石礦
+supermarket
+超級市場
 TANKE
 油站
 Windkraftwerk
@@ -212,10 +246,14 @@ Windkraftwerk
 #_____________________________________good______________________________________
 Autos
 汽車
+beer
+啤酒
 Bretter
 木板
 Buecher
 書本
+canned_food
+罐頭食物
 Cement
 水泥
 Chemicals
@@ -224,14 +262,26 @@ Concrete
 混凝土
 Eisenerz
 鐵
+fish
+魚
+flour
+麵粉
+food
+食物
 Gasoline
 汽油
+grain
+穀物
 Holz
 木
 Kohle
 煤
+meat
+肉類
 Medicine
 藥物
+milk
+牛奶
 Moebel
 家具
 None
@@ -240,8 +290,12 @@ Oel
 石油
 Papier
 紙張
+Passagiere
+乘客
 Plastik
 塑膠
+Post
+郵件
 PrintersInk
 印表機油墨
 Sand

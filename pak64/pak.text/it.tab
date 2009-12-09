@@ -5,9 +5,11 @@
 #                             Language: it Italiano                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 17.10 2009                           #
+#                            Date Created: 9.12 2009                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                   - Fabio85                                  #
+#                                    note:                                     #
 #                              Frank Penz - FrankP                             #
 #                      note: Administrator SimuTranslator                      #
 #                                   - davemds                                  #
@@ -52,6 +54,10 @@ Municipio
 Municipio
 03_CITY_A
 Municipio
+04_CITY
+Municipio
+1930AirDepot
+Hangar
 1headquarter
 La tua sede aziendale!
 2headquarter
@@ -59,17 +65,21 @@ La tua sede aziendale!
 3headquarter
 La tua sede aziendale!
 A1_ALTE_KIRCHE
-Antica chiesa. Tutti\ndovrebbero visitare questa\nfantastica costruzione!\n\n
+Antica chiesa. Tutti\ndovrebbero visitare questa\nfantastica costruzione!\n
 A2_SCHLOSS1
-Castello del Re Pazzo. \nMerita di essere visto!\n\n
+Castello del Re Pazzo. \nMerita di essere visto!\n
 A3_BURG1
-Alcune rovine che\nraccontano di tempi migliori.\nVale la pena visitarle!\n\n
+Alcune rovine che\nraccontano di tempi migliori.\nVale la pena visitarle!\n
 A4_SCHLOSS2
-Questo vecchio maniero\nmerita di essere visitato!\n\n
+Questo vecchio maniero\nmerita di essere visitato!\n
 A5_STONEHENGE
-Antico anello di pietre.\nMolto misterioso!\n\n
+Antico anello di pietre.\nMolto misterioso!\n
 A6_DOME
-Questa splendida\ncattedrale antica è una\nvera e propria attrazione!\n\n
+Questa splendida\ncattedrale antica è una\nvera e propria attrazione!\n
+Avila_Big_StationBlg
+Capiente edificio passeggeri
+Avila_Small_StationBlg
+Piccolo edificio passeggeri
 BigPostOffice
 Grande ufficio postale
 BusStop
@@ -77,59 +87,59 @@ Fermata autobus\n
 CarDepot
 Deposito per veicoli stradali
 COM_00_01
-"Il piccolo negozio dei\ngrandi affari" di Luca\nQui il proprietario, insieme\nalla moglie Grazia\ne ai due figli, Luigi e\nFutura, conduce una vita\nserena vendendo le più disparate\ncose, dalle mollette\nal frigorifero. I figli, Luigi di 6\nanni e Futura\ndi 7, scorrazzano per l'ampio\nparcheggio quando\nla domenica non ci sono auto.\n\n
+"Il piccolo negozio dei\ngrandi affari" di Luca\nQui il proprietario, insieme\nalla moglie Grazia\ne ai due figli, Luigi e\nFutura, conduce una vita\nserena vendendo le più disparate\ncose, dalle mollette\nal frigorifero. I figli, Luigi di 6\nanni e Futura\ndi 7, scorrazzano per l'ampio\nparcheggio quando\nla domenica non ci sono auto.\n
 COM_00_02
-Stazione gas indipendente\nQuesta piccola stazione di gas\nha rifiutato\ndi unirsi a grosse\ncompagnie di trasporto\n(come la tua, un giorno) per\ncondurre un\ntranquillo e pacifico servizio di fornitura\ncombustibile ai vicini abitanti. Non dà\nalcun fastidio al tuo commercio,\npuò restare.\n\n
+Stazione gas indipendente\nQuesta piccola stazione di gas\nha rifiutato\ndi unirsi a grosse\ncompagnie di trasporto\n(come la tua, un giorno) per\ncondurre un\ntranquillo e pacifico servizio di fornitura\ncombustibile ai vicini abitanti. Non dà\nalcun fastidio al tuo commercio,\npuò restare.\n
 COM_00_05
-Banca "Drive-out"\nQuesta banca viene chiamata\n"Drive-out" perchè\nnon ti ci fermi, e quando ci\npassi vicino\nil tuo portafoglio\nmagicamente si svuota.\nIl direttore spesso viene\nvisto sfregarsi\nle mani, gongolante.\n\n
+Banca "Drive-out"\nQuesta banca viene chiamata\n"Drive-out" perchè\nnon ti ci fermi, e quando ci\npassi vicino\nil tuo portafoglio\nmagicamente si svuota.\nIl direttore spesso viene\nvisto sfregarsi\nle mani, gongolante.\n
 COM_00_06
-Albergo\nQuesto è il terrificante albergo\ndel film "Shining".\nUno scrittore è stato trovato\ncongelato nel labirinto\ndi foglie che rimane\nnascosto e in una stanza una \nmacchina da scrivere continuava a\nscrivere questa frase:\n"Il mattino ha l'oro in bocca".\n\n
+Albergo\nQuesto è il terrificante albergo\ndel film "Shining".\nUno scrittore è stato trovato\ncongelato nel labirinto\ndi foglie che rimane\nnascosto e in una stanza una \nmacchina da scrivere continuava a\nscrivere questa frase:\n"Il mattino ha l'oro in bocca".\n
 COM_00_08
-Blocco di appartamenti con\nqualche negozio al piano\nterra\n\n
+Blocco di appartamenti con\nqualche negozio al piano\nterra\n
 COM_00_10
-Sede centrale de "Il\ncorriere mercantile"\n\n
+Sede centrale de "Il\ncorriere mercantile"\n
 COM_00_11
-"Novità" da Novello\nUn negozio veramente fuori\ndal comune,\ndove si trovano tutte le ultime novità,\ndalle lampade di cera\nall'acqua calda\n(che adesso è una novità)\n\n
+"Novità" da Novello\nUn negozio veramente fuori\ndal comune,\ndove si trovano tutte le ultime novità,\ndalle lampade di cera\nall'acqua calda\n(che adesso è una novità)\n
 COM_00_12
-Casa dei Transformers\nQuesto edificio, all'apparenza\nun blocco di uffici, diventa\nun enorme casa dei robots quando\nessi si trovano nelle\nvicinanze.\n\n
+Casa dei Transformers\nQuesto edificio, all'apparenza\nun blocco di uffici, diventa\nun enorme casa dei robots quando\nessi si trovano nelle\nvicinanze.\n
 COM_00_14
-Sede segreta dei cantanti\ndi Brema\nQuesto edificio, all'apparenza un condominio\ndi modeste dimensioni, in\nrealtà nasconde\nlo studio di registrazione di\nun asino,\nun gallo e una volpe.\n\n
+Sede segreta dei cantanti\ndi Brema\nQuesto edificio, all'apparenza un condominio\ndi modeste dimensioni, in\nrealtà nasconde\nlo studio di registrazione di\nun asino,\nun gallo e una volpe.\n
 COM_00_18
-Palazzo di uffici moderno\n\n
+Palazzo di uffici moderno\n
 COM_00_22
-Il nuovo edificio delle\nNazioni Unite in Somalia\n\n
+Il nuovo edificio delle\nNazioni Unite in Somalia\n
 COM_01_01
-Sito di partenza e\natterraggio Palloni areostatici\nQuesto sito è frequentato da\nmolte persone di punta,\nche perciò vengono tenute\nlontane dai palloni \nper evitare che li facciano\nesplodere.\n\n
+Sito di partenza e\natterraggio Palloni areostatici\nQuesto sito è frequentato da\nmolte persone di punta,\nche perciò vengono tenute\nlontane dai palloni \nper evitare che li facciano\nesplodere.\n
 COM_01_04
-Parco per moto da trial\nQuesto circuito costituito da due tracciati,\nuno per moto da corsa e uno\nda trial, è\nimmerso in un favoloso parco,\ndove si può\nfare bird-watching oppure\nsfrecciare tra\ngli alberi, facendo attenzione\nagli scoiattoli.\n\n
+Parco per moto da trial\nQuesto circuito costituito da due tracciati,\nuno per moto da corsa e uno\nda trial, è\nimmerso in un favoloso parco,\ndove si può\nfare bird-watching oppure\nsfrecciare tra\ngli alberi, facendo attenzione\nagli scoiattoli.\n
 COM_01_09
-Vecchio cinema\nQuesto cinema vecchio stile, ricavato\nda un fienile, è situato nelle colline\ndel Chianti. Vi vengono riprodotte\npellicole principalmente in bianco e\nnero. Molto popolare tra i fans di\nCharlie Chaplin e di Alfred\nHitchcock\n\n
+Vecchio cinema\nQuesto cinema vecchio stile, ricavato\nda un fienile, è situato nelle colline\ndel Chianti. Vi vengono riprodotte\npellicole principalmente in bianco e\nnero. Molto popolare tra i fans di\nCharlie Chaplin e di Alfred\nHitchcock\n
 COM_01_10
-La clinica locale.\nIl noioso prospetto è stato\nsostituito da un nuovo\ningresso accogliente,\nspecialmente per coloro\nche vanno dal dentista.\nNon addentarli!\n\n
+La clinica locale.\nIl noioso prospetto è stato\nsostituito da un nuovo\ningresso accogliente,\nspecialmente per coloro\nche vanno dal dentista.\nNon addentarli!\n
 Control_StationBlg
 centro di controllo ferroviario
 DenkFlor
-Memorial Flor Wauters\n\nQuesto monumento è dedicato a\nFlor 'WF Ultd.' Wauters, il\nfamoso ingegnere che ha\ncreato tanti veicoli stradali\ne ferroviari. È anche\nconosciuto per aver disegnato\nmolte industrie.\n\n
+Memorial Flor Wauters\n\nQuesto monumento è dedicato a\nFlor 'WF Ultd.' Wauters, il\nfamoso ingegnere che ha\ncreato tanti veicoli stradali\ne ferroviari. È anche\nconosciuto per aver disegnato\nmolte industrie.\n
 DenkHajo
-Memorial Hajo Malthaner\n\nQuesto monumento è dedicato a\nHansjörg Malthaner, che ha\ncreato questo gioco in\nsette anni. Dei semidei\nsvolgerebbero compiti simili\nin più tempo.\n\n
+Memorial Hajo Malthaner\n\nQuesto monumento è dedicato a\nHansjörg Malthaner, che ha\ncreato questo gioco in\nsette anni. Dei semidei\nsvolgerebbero compiti simili\nin più tempo.\n
 DenkMHz
-Memorial Georg Heiduk\n\nQuesto monumento è dedicato a\nGeorg Heiduk ("MHz"), il\nmaestro degli edifici.\nSimboleggia il suo occhio\nper i dettagli.\n\n
+Memorial Georg Heiduk\n\nQuesto monumento è dedicato a\nGeorg Heiduk ("MHz"), il\nmaestro degli edifici.\nSimboleggia il suo occhio\nper i dettagli.\n
 DenkOwen
-Memorial\n\nQuesto monumento è dedicato a\nOwen Rudge, il famoso\nesperto di finanza e\ntecnico del suono.\n\n
+Memorial\n\nQuesto monumento è dedicato a\nOwen Rudge, il famoso\nesperto di finanza e\ntecnico del suono.\n
 DenkSeth
-Memorial\n\nQuesto monumento è dedicato a\nSeth C. Triggs, il famoso\narchitetto che ha\ndisegnato tanti edifici della\ncittà. È anche conosciuto\nper i suoi molti studi su come\nmigliorare i sistemi del\ntraffico.\n\n
+Memorial\n\nQuesto monumento è dedicato a\nSeth C. Triggs, il famoso\narchitetto che ha\ndisegnato tanti edifici della\ncittà. È anche conosciuto\nper i suoi molti studi su come\nmigliorare i sistemi del\ntraffico.\n
 DenkTomas
-Memorial\n\nQuesto monumento è dedicato a\nTomas Kubes che ha\naiutato a migliorare\nSimutrans in molti aspetti\ncon consigli e duro lavoro.\n\n
+Memorial\n\nQuesto monumento è dedicato a\nTomas Kubes che ha\naiutato a migliorare\nSimutrans in molti aspetti\ncon consigli e duro lavoro.\n
 DenkTrikky
-Memorial\n\nQuesto monumento è dedicato a\n'Trikky' Rick McGreal, il\nfamoso architetto che ha\ndisegnato molti edifici\nstupendi.\n\n
+Memorial\n\nQuesto monumento è dedicato a\n'Trikky' Rick McGreal, il\nfamoso architetto che ha\ndisegnato molti edifici\nstupendi.\n
 DenkVM
-Memorial\n\nQuesto monumento è dedicato a\nManfred 'VT Vienna'\nTomaschitz, il famoso\ningegnere che ha disegnato\nmolti veicoli ferroviari.\n\n
+Memorial\n\nQuesto monumento è dedicato a\nManfred 'VT Vienna'\nTomaschitz, il famoso\ningegnere che ha disegnato\nmolti veicoli ferroviari.\n
 DenkVolker
-Memorial\n\nQuesto monumento è stato\ncostruito da Volker Meyer,\nche ha migliorato Simutrans\nin molti campi.\n\n
+Memorial\n\nQuesto monumento è stato\ncostruito da Volker Meyer,\nche ha migliorato Simutrans\nin molti campi.\n
 Eingang
 Entrata
 Feste
-Roccaforte di Konubert\nEretta nel 1400 circa.\n\n
+Roccaforte di Konubert\nEretta nel 1400 circa.\n
 FreightTrainStop
 Stazione di carico merci
 GCG1TrainStop
@@ -139,47 +149,47 @@ stazione con hall a destra
 Goods_StationBlg
 Deposito merci
 Gymnasium
-Liceo\n\n
+Liceo\n
 IND_00_01
-Magazzino cartaceo\nQui vengono conservati gli scontrini\nprovenienti da tutto il mondo!\n\n
+Magazzino cartaceo\nQui vengono conservati gli scontrini\nprovenienti da tutto il mondo!\n
 Lighthouse
-Faro\n\n
+Faro\n
 MonorailFoundation
 Fondamenta della monorotaia
 RES_00_02
-Casa piccola con giardino\n\n
+Casa piccola con giardino\n
 RES_00_03
-Casa piccola con giardino\n\n
+Casa piccola con giardino\n
 RES_00_04
-Casa piccola\n\n
+Casa piccola\n
 RES_00_06
-Una piccola fontana.\nSebbene non sia grandiosa\ncome quella di Ginevra,\ndelizia le persone che le\npasseggiano accanto,\nspecialmente in estate.\n\n
+Una piccola fontana.\nSebbene non sia grandiosa\ncome quella di Ginevra,\ndelizia le persone che le\npasseggiano accanto,\nspecialmente in estate.\n
 RES_00_07
-Casa media\n\n
+Casa media\n
 RES_00_08
-Casa media\n\n
+Casa media\n
 RES_00_09
-Un piccolo parco con uno\nstagno per le anatre\n\n
+Un piccolo parco con uno\nstagno per le anatre\n
 RES_00_11
-Casa grande con giardino\n\n
+Casa grande con giardino\n
 RES_00_16
-Vecchia villa\n\n
+Vecchia villa\n
 RES_00_19
-Appartamenti Moderni\n\n
+Appartamenti Moderni\n
 RES_01_08
-Casa media con giardino\n\n
+Casa media con giardino\n
 RES_01_10
-Casa moderna\n\n
+Casa moderna\n
 RES_02_16
-Appartamenti di lusso con\nattico.\n\n
+Appartamenti di lusso con\nattico.\n
 Residenz
-Residence\nQuesto è il residence-museo del\ncapo dei boy-scouts,\nBaden Powell.\nEgli sosteneva che "Non\nesiste buono o cattivo\ntempo, ma \nbuono o  cattivo equipaggiamento".\n\n
+Residence\nQuesto è il residence-museo del\ncapo dei boy-scouts,\nBaden Powell.\nEgli sosteneva che "Non\nesiste buono o cattivo\ntempo, ma \nbuono o  cattivo equipaggiamento".\n
 STADIUM2
-Stadio\n\n
+Stadio\n
 Theatre
-Antico teatro all'aperto\nIn questo antico teatro di\nstile ellenico furono\ninterpretate varie opere, tra cui\n"Itaca"\n\n
+Antico teatro all'aperto\nIn questo antico teatro di\nstile ellenico furono\ninterpretate varie opere, tra cui\n"Itaca"\n
 Windmill
-Mulino a vento\n\n
+Mulino a vento\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 FordT
@@ -198,8 +208,12 @@ Autohaus
 Concess. auto
 Autohersteller
 Fabbrica auto
+brewery
+Fabbrica di birra
 Buchgrosshandel
 Grossista di libri
+cannery
+Fabbrica di cibi in scatola
 Cementmill
 cementeria\n
 ChemicalPlant
@@ -208,10 +222,22 @@ CHEMIST
 Laboratorio chimico
 Concretefactory
 Fabbrica calcestruzzo
+cow_farm
+Allevamento bovino
+dairy
+Caseificio
 Druckerei
 Tipografia
 Erzbergwerk
 Miniera di ferro
+fish_pond
+Laghetto con pesci
+fish_swarm
+Branco di pesci
+food_processing_plant
+Industria alimentare
+grain_mill
+Macina per grano
 Kohlegrube
 Miniera di carbone
 Kohlekraftwerk
@@ -270,12 +296,18 @@ Medicine
 Medicinali
 Moebel
 Mobili
+None
+nessuno
 Oel
 Petrolio
 Papier
 Carta
+Passagiere
+Passeggeri
 Plastik
 Plastica
+Post
+Posta
 PrintersInk
 Inchiostro
 Sand
@@ -386,6 +418,8 @@ Concept2Pass
 Concept 2 - Vagone passeggeri
 Concept2Rear
 Concept 2 - Motore posteriore
+Cooling_Waggon
+Vagone per merce surgelata
 Doubledeck_city_bus
 Autobus cittadino a due piani
 Eb3-5
@@ -418,6 +452,8 @@ F7back
 F7 A motore posteriore
 FastFerry
 O.Bang traghetto veloce (hovercraft)
+Fishing_Boat
+Peschereccio
 Fokker_F27
 Fokker F27
 Gelenkbus_Ende
@@ -458,6 +494,10 @@ Kunststofanhaenger
 H-Trans rimorchio per plastica
 Kunststofftransporter
 H-Trans camion per materie plastiche
+Milk_Truck
+Camion per trasporto latte
+Milk_Waggon
+Vagone per trasporto latte
 Moebelschiff
 Nave per mobili
 Moebelwagen

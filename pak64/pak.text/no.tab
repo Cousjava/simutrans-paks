@@ -5,7 +5,7 @@
 #                              Language: no Norsk                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 17.10 2009                           #
+#                            Date Created: 9.12 2009                           #
 #                                                                              #
 #                                   authors:                                   #
 #                         Christian Berntsen - DonChris                        #
@@ -66,18 +66,36 @@ Autohaus
 Bil selger
 Autohersteller
 Assmebly anlegg
+bakery
+Bakeri
+brewery
+Bryggeri
+cannery
+Hermatikkfabrikk
 Cementmill
 Sement mølle
 Concretefactory
 Sement mixer
+cow_farm
+Kyr gårdsplass
+fish_pond
+Fiske dam
+fish_swarm
+Fiske sverm
+food_processing_plant
+Matfabrikk
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
 biler
+beer
+øl
 Bretter
 planker
 Buecher
 bøker
+canned_food
+Kunnet Mat
 Cement
 Sement
 Chemicals
@@ -86,6 +104,12 @@ Concrete
 betong
 Eisenerz
 jernmalm
+fish
+fisk
+flour
+mel
+food
+mat
 Gasoline
 bensin
 Holz

@@ -5,7 +5,7 @@
 #                            Language: sk Slovencina                           #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 17.10 2009                           #
+#                            Date Created: 9.12 2009                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Frank Penz - FrankP                             #
@@ -28,44 +28,72 @@ Oce?ový ?elezni?ný
 #___________________________________building____________________________________
 01_CITY
 Radnica
+02_CITY
+Radnica
+03_CITY
+Radnica
+04_CITY
+Radnica
+1930AirDepot
+Drevený hangár
 A1_ALTE_KIRCHE
-Slávny starý kostol, ktorý\nmusí ka?dý aspo? raz\nvidiet'.\n\n
+Slávny starý kostol, ktorý\nmusí ka?dý aspo? raz\nvidiet'.\n
 A2_SCHLOSS1
-Zámok bláznivého krá?a.\nObrovská obdivuhodnost' !\n\n
+Zámok bláznivého krá?a.\nObrovská obdivuhodnost' !\n
 A3_BURG1
-Ruina, ktorá u? aj lep?ie\n?asy videla. Oplatí sa ju\nv?dy nav?tívit'.\n\n
+Ruina, ktorá u? aj lep?ie\n?asy videla. Oplatí sa ju\nv?dy nav?tívit'.\n
 A4_SCHLOSS2
-Toto staré panské sídlo je\nve?kým cie?om turistov.\n\n
+Toto staré panské sídlo je\nve?kým cie?om turistov.\n
 A5_STONEHENGE
-Tajuplný kruh zo skál,\nstarodávny a plný mýtov.\n\n
+Tajuplný kruh zo skál,\nstarodávny a plný mýtov.\n
 A6_DOME
-Táto o?arujúca stará\ngotická katedrála je ve?kou\nturistickou atrakciou.\n\n
+Táto o?arujúca stará\ngotická katedrála je ve?kou\nturistickou atrakciou.\n
+Avila_Big_StationBlg
+Veµká stanièná budova
+Avila_Small_StationBlg
+Malá stanièná budova
+Avila_Warehouse_StationBlg
+Stanièný sklad
 BusStop
 Autobusová/elektri?ková\nzastávka\n
+Car_StationBlg
+parkovisko
+CarDepot
+vozovòa
+CarStop
+nákladná rampa
+Control_StationBlg
+stavadlo
 DenkFlor
-Pamätník Flora ,,WF Ultd.''\nWautersa, stavite?a\ntovární.\n\n
+Pamätník Flora ,,WF Ultd.''\nWautersa, stavite?a\ntovární.\n
 DenkHajo
-Pamätník venovaný\nHansjörgovi Malthanerovi,\nktorý sám 7 rokov vytváral\ntúto hru.\n\n
+Pamätník venovaný\nHansjörgovi Malthanerovi,\nktorý sám 7 rokov vytváral\ntúto hru.\n
 DenkMHz
-Pamätník venovaný\nGeorgovi Heidukovi\nmajstrovi v budovaní s\nprenikavým zmyslom pre\ndetaily.\n\n
+Pamätník venovaný\nGeorgovi Heidukovi\nmajstrovi v budovaní s\nprenikavým zmyslom pre\ndetaily.\n
 DenkOwen
-Pamätník Owena Rudgea,\nznámeho finan?ného\nexperta.\n\n
+Pamätník Owena Rudgea,\nznámeho finan?ného\nexperta.\n
 DenkSeth
-Pamätník Setha C. Triggsa,\nslávneho architekta, ktorý\nnavrhol mnoho krásnych\nmestských budov. Je tiez\nznámy mnohými ?túdiami,\nako zdokonalit systémy\ndopravy.\n\n
+Pamätník Setha C. Triggsa,\nslávneho architekta, ktorý\nnavrhol mnoho krásnych\nmestských budov. Je tiez\nznámy mnohými ?túdiami,\nako zdokonalit systémy\ndopravy.\n
 DenkTomas
-Tento pamätník je\nvenovaný Tomá?ovi\nKube?ovi, ktorý pomáhal\nvylep?ovat' Simutrans vo\nve?a, ve?a oh?adoch\nsvojimi radami a tvrdou\nprácou.\n\n
+Tento pamätník je\nvenovaný Tomá?ovi\nKube?ovi, ktorý pomáhal\nvylep?ovat' Simutrans vo\nve?a, ve?a oh?adoch\nsvojimi radami a tvrdou\nprácou.\n
 DenkTrikky
-Pamätník ,,Trikkyho'' Ricka\nMcGreala, slávneho\narchitekta, ktorý navrhol\nmnoho prekrásnych budov.\n\n
+Pamätník ,,Trikkyho'' Ricka\nMcGreala, slávneho\narchitekta, ktorý navrhol\nmnoho prekrásnych budov.\n
 DenkVM
-Pamätník Manfreda ,,VT\nVienna''  Tomaschitza,\n?elezni?ného stavite?a.\n\n
+Pamätník Manfreda ,,VT\nVienna''  Tomaschitza,\n?elezni?ného stavite?a.\n
 DenkVolker
-Pamätník Volkera Meyera,\nktorý zdokonalil Simutrans v\nmnohých oblastiach.\n\n
+Pamätník Volkera Meyera,\nktorý zdokonalil Simutrans v\nmnohých oblastiach.\n
+Fluid_StationBlg
+Nádr¾ na kvapaliny
 FreightTrainStop
 ?elezni?ná nákladná stanica
+Gas_StationBlg
+Èerpacia stanica
 GCG1TrainStop
 ?avá ?ast' dvojitej ?el. stanice
 GCG2TrainStop
 Pravá ?ast' dvojitej ?el. stanice
+Goods_StationBlg
+Sklad tovarov
 LargeShipStop
 Ve?ký lodný prístav
 PostOffice
@@ -77,21 +105,25 @@ Jednoduchá halová ?el. stanica
 PSHall2TrainStop
 Jednoduchá halová ?el. stanica
 RUIN_0
-Stará ruina, ktorá stále\ndoká?e pritiahnut' mnoho\nnáv?tevníkov.\n\n
+Stará ruina, ktorá stále\ndoká?e pritiahnut' mnoho\nnáv?tevníkov.\n
 ShipStop
-Jednoduchý lodný prístav\n
+Jednoduchý lodný prístav
 STADIUM2
-Tento ?tadión je domovom\nmnohých zábavných\n?portových udalostí ! Mô?e\npojat' a? 25.000 divákov.\n\n
+Tento ?tadión je domovom\nmnohých zábavných\n?portových udalostí ! Mô?e\npojat' a? 25.000 divákov.\n
 Tennis_Court
-Tenisové kurty\n\n
+Tenisové kurty\n
 Theatre
-Divadlo\n\n
+Divadlo\n
 TrainStop
 ?elezni?ná osobná stanica\n
+VictorianStation
+Viktoriánska stanica
 Windmill
-Veterný mlyn\n\n
+Veterný mlyn\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
+Ambulanz
+Sanitka
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
 factory_Cementmill_details
@@ -104,18 +136,38 @@ Autohaus
 Autopredaj?a
 Autohersteller
 Automobilka
+bakery
+Pekáreò
+brewery
+Pivovar
 Buchgrosshandel
 Kníhkupectvo
+cannery
+Konzerváreò
 Cementmill
 Cementáre?
 CHEMIST
 Lekáre? (od Setha)
 Concretefactory
 Betonáre?
+cow_farm
+Farma na dobytok
+dairy
+Mliekáreò
 Druckerei
 Tla?iare?
 Erzbergwerk
 ?eleznorudná ba?a
+fish_pond
+Chovný rybník
+fish_swarm
+Lovisko rýb
+food_processing_plant
+Potravinárska fabrika
+grain_farm
+Farma na obilie
+grain_mill
+Mlyn na obilie
 Kohlegrube
 Uho?ná ba?a
 Kohlekraftwerk
@@ -148,6 +200,8 @@ Stahlwerk
 Oceliare?
 Stonequarry
 Kame?olom
+supermarket
+Supermarket
 TANKE
 ?erpacia stanica
 Windkraftwerk
@@ -156,32 +210,54 @@ Veterná elektráre?
 #_____________________________________good______________________________________
 Autos
 Autá
+beer
+Pivo
 Bretter
 Dosky
 Buecher
 Knihy
+canned_food
+Potr. konzervy
+Cement
+cementu
 Chemicals
 Chemikálie
 Concrete
 Betón
 Eisenerz
 ?elezná ruda
+fish
+Ryby
+flour
+Múka
+food
+Potraviny
 Gasoline
 Benzín
+grain
+Obilie
 Holz
 Drevo
 Kohle
 Uhlie
+meat
+Mäso
 Medicine
 Lie?ivá
+milk
+Mlieko
 Moebel
 Nábytok
 None
 ni?
 Oel
 Ropa
+Passagiere
+pasa¾ierov
 Plastik
 Plasty
+Post
+Po¹ta
 PrintersInk
 Tla?iar. farba
 Sand
@@ -210,10 +286,24 @@ CATEGORY_06
 drevo
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
+choose_point
+Smerovník
+ChooseSignals
+Hradlo
+Minimum80
+Minimálna rýchlos»: 80 km/h
+NoEntry
+Zákaz vjazdu (jednosmerka)
+traffic_light
+semafóry
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
+RailTunnel
+®eleznièný tunel
+RoadTunnel
+Tunel
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -258,6 +348,12 @@ Buchwagen
 VT Wien vagón na knihy
 Bus
 NovoPLAN autobus
+Cooling_Container
+Mraziarenský kontainerový vagón
+Cooling_Truck
+MAN mraziarenský
+Cooling_Waggon
+Mraziarenský vagón
 Erzanhaenger
 Príves na ?eleznú rudu
 Erztransporter
@@ -302,6 +398,10 @@ Lowa
 Elektri?ka T3
 Lowa_Anhaenger
 Vle?ný elektri?kový voze? T3
+Milk_Truck
+IVECO cisterna na mlieko
+Milk_Waggon
+Cisternový vagón na mlieko
 Moebelschiff
 Lo? na nábytok
 Moebelwagen
@@ -380,6 +480,8 @@ Powerline
 Elektrické vedenie
 Rillenschienen
 Elektri?ková trat'
+runway_modern
+Moderná runway
 steel_sleeper_track
 Celooce?ová trat'
 wooden_sleeper_track

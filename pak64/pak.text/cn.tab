@@ -5,7 +5,7 @@
 #                           Language: cn Sim. Chinese                          #
 #                                Encoding: UTF-8                               #
 #                           Font : wenquanyi_9pt.bdf                           #
-#                           Date Created: 17.10 2009                           #
+#                            Date Created: 9.12 2009                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Frank Penz - FrankP                             #
@@ -46,6 +46,14 @@ WoodenRoad
 道路木桥
 #___________________________________building____________________________________
 #___________________________________building____________________________________
+01_CITY
+市政府
+02_CITY
+政府大厦 2
+03_CITY
+政府大厦 3
+04_CITY
+政府大厦 4
 1930AirDepot
 简易机库
 1headquarter
@@ -60,6 +68,12 @@ AirportShed1930
 早期机场邮局
 AirTerminal477
 大型客运楼
+Avila_Big_StationBlg
+巨型搭客楼
+Avila_Small_StationBlg
+小型搭客楼
+Avila_Warehouse_StationBlg
+车站货物仓库
 BigPostOffice
 大型邮局
 BigTerminal477
@@ -72,6 +86,8 @@ Car_StationBlg
 车辆装卸区
 CarDepot
 道路车厂
+CarStop
+运送区
 ChannelStop
 运河码头
 Control_StationBlg
@@ -97,7 +113,7 @@ PostOffice
 ShipDepot
 造船厂
 ShipStop
-与建码头\n
+与建码头
 Terminal1930
 早期候机楼
 Tower1930
@@ -115,7 +131,7 @@ TramDepot
 VictorianStation
 维多利亚式车站
 Windmill
-风力发电机\n\n\n
+风力发电机\n\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -140,18 +156,38 @@ Autohaus
 车行
 Autohersteller
 汽车制造厂
+bakery
+面包店
+brewery
+酿造厂
 Buchgrosshandel
 书店
+cannery
+罐头厂
 Cementmill
 水泥厂
 CHEMIST
 药房
 Concretefactory
 混凝土厂
+cow_farm
+养牛场
+dairy
+牛奶场
 Druckerei
 印刷厂
 Erzbergwerk
 铁矿
+fish_pond
+鱼池
+fish_swarm
+鱼群
+food_processing_plant
+食物工厂
+grain_farm
+米田
+grain_mill
+麦加工场
 Kohlegrube
 煤矿
 Kohlekraftwerk
@@ -192,10 +228,14 @@ Windkraftwerk
 #_____________________________________good______________________________________
 Autos
 汽车
+beer
+啤酒
 Bretter
 木板
 Buecher
 书本
+canned_food
+罐装食品
 Cement
 水泥
 Chemicals
@@ -204,14 +244,26 @@ Concrete
 混凝土
 Eisenerz
 铁
+fish
+鱼肉
+flour
+面粉
+food
+食物
 Gasoline
 汽油
+grain
+谷物
 Holz
 木
 Kohle
 煤
+meat
+肉类
 Medicine
 药物
+milk
+牛奶
 Moebel
 家具
 None
@@ -230,6 +282,8 @@ Stahl
 钢
 Stone
 石
+waste
+废物
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
 #__________________________________pedestrian___________________________________

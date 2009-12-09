@@ -5,7 +5,7 @@
 #                              Language: dk Dansk                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 17.10 2009                           #
+#                            Date Created: 9.12 2009                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Frank Penz - FrankP                             #
@@ -28,42 +28,56 @@ Byg jernbanebro (stål)
 Rådhus
 04_CITY
 Rådhus
+10_WOHN
+Kirke (af Trikky\n\n
 A1_ALTE_KIRCHE
-En berømt gammel  kirke.\nAlle \nbør besøge denne fantastiske \nbygning.\n\n
+En berømt gammel  kirke. Alle \nbør besøge denne fantastiske \nbygning.\n
 A2_SCHLOSS1
-Den gale konges slot. Det er\nvirkelig  værd at besøge!\n\n
+Den gale konges slot. Det er\nvirkelig  værd at besøge!\n
 A3_BURG1
-Nogle ruiner, som har set\nbedre tider. De er dog altid en\nrejse værd.\n\n
+Nogle ruiner, som har set\nbedre tider. De er dog altid en\nrejse værd.\n
 A4_SCHLOSS2
-Dette slot er altid et besøg\nværd.\n\n
+Dette slot er altid et besøg\nværd.\n
 A5_STONEHENGE
-En hemmelighedsfuld stenring.\nUrgammel og fuld af mystik!\n\n
+En hemmelighedsfuld stenring.\nUrgammel og fuld af mystik!\n
 A6_DOME
-Denne vidunderlige gamle\nkatedral er en rigtig attraktion.\n\n
+Denne vidunderlige gamle\nkatedral er en rigtig attraktion.\n
+Avila_Big_StationBlg
+Stor passager stations bygning
+Avila_Small_StationBlg
+Lille passager stations bygning
+Avila_Warehouse_StationBlg
+Lagerhals Stations Bygning
+Bulk_StationBlg
+Massegods Stations Bygning
+Car_StationBlg
+Bil Stations Bygning
+CarDepot
+Bil Garage
 DenkFlor
-Dette monument tilegnes Flor\n'WF Ultd.' Wauters, den\nberømte ingeniør som skabte så\nmange glimrende køretøjer. Han\ner ligeledes kendt for at have\ndesignet mange velfungerende\nfabrikker.\n\n
+Dette monument tilegnes Flor\n'WF Ultd.' Wauters, den\nberømte ingeniør som skabte så\nmange glimrende køretøjer. Han\ner ligeledes kendt for at have\ndesignet mange velfungerende\nfabrikker.\n
 DenkOwen
-Denne plads tilegnes Owen\nRudge, den berømte\nfinansexpert og lydtekniker.\n\n
+Denne plads tilegnes Owen\nRudge, den berømte\nfinansexpert og lydtekniker.\n
 DenkSeth
-Denne plads tilegnes Seth C.\nTriggs, den berømte arkitekt\nsom designede så mange\nsmukke bygninger. Han er\nligeledes kendt for at have\ngjort mange studier over\nhvorledes man kan forbedre\ntrafiksystemet.\n\n
+Denne plads tilegnes Seth C.\nTriggs, den berømte arkitekt\nsom designede så mange\nsmukke bygninger. Han er\nligeledes kendt for at have\ngjort mange studier over\nhvorledes man kan forbedre\ntrafiksystemet.\n
 DenkTomas
-Dette monument tilegnes\nTomas Kubes, der forbedrede\nSimutrans på mange, mange\nområder med gode råd og\nhårdt arbejde.\n\n
+Dette monument tilegnes\nTomas Kubes, der forbedrede\nSimutrans på mange, mange\nområder med gode råd og\nhårdt arbejde.\n
 DenkTrikky
-Dette monument tilegnes\n'Trikky' Rick McGreal, den\nberømte arkitekt som\ndesignede så mange\nimponerende bygninger.\n\n
+Dette monument tilegnes\n'Trikky' Rick McGreal, den\nberømte arkitekt som\ndesignede så mange\nimponerende bygninger.\n
 DenkVM
-Dette monument tilegnes\nManfred 'VT Wien' Tomaschitz,\nden berømte ingeniør som\ndesignede mange utrolig gode\ntoge.\n\n
+Dette monument tilegnes\nManfred 'VT Wien' Tomaschitz,\nden berømte ingeniør som\ndesignede mange utrolig gode\ntoge.\n
 DenkVolker
-Dette monument tilegnes\nVolker Meyer, som\nforbedrede Simutrans på\nmange, mange måder.\n\n
+Dette monument tilegnes\nVolker Meyer, som\nforbedrede Simutrans på\nmange, mange måder.\n
 RUIN_0
-En prægtig, gammel borgruin.\nKom forbi og mærk historiens\nvingesus!\n\n
+En prægtig, gammel borgruin.\nKom forbi og mærk historiens\nvingesus!\n
 STADIUM2
-Dette olympiske- stadion kan\nrumme 100000 tilskuere.\n\n
+Dette olympiske- stadion kan\nrumme 100000 tilskuere.\n
 Tennis_Court
-Tennis anlæg.\n\n
+Tennis anlæg.\n
 Theatre
-Teater. Ethvert besøg er en\nkulturel berigelse.\n\n
+Teater. Ethvert besøg er en\nkulturel berigelse.\n
 Windmill
-Mølle\n\n
+Mølle\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 #__________________________________dummy_info___________________________________
@@ -78,8 +92,14 @@ Autohaus
 Bilforhandler
 Autohersteller
 Bilfabrik
+bakery
+Bageri
+brewery
+Bryggeri
 Buchgrosshandel
 Boghandel
+cannery
+Konservesfabrik
 Cementmill
 Cementfabrik
 CHEMIST
@@ -126,10 +146,14 @@ Benzinstation
 #_____________________________________good______________________________________
 Autos
 biler
+beer
+øl
 Bretter
 brædder
 Buecher
 bøger
+canned_food
+Dåsemad
 Cement
 cement
 Chemicals
@@ -152,8 +176,12 @@ Oel
 olie
 Papier
 papir
+Passagiere
+passagerer
 Plastik
 plast
+Post
+post
 PrintersInk
 trykkerifarve
 Sand
@@ -326,5 +354,7 @@ TPSchienenbus
 TPI VT98 (dmu)
 #______________________________________way______________________________________
 #______________________________________way______________________________________
+cobblestone_road
+Brostensvej
 #__________________________________way-object___________________________________
 #__________________________________way-object___________________________________

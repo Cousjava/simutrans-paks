@@ -5,7 +5,7 @@
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 17.10 2009                           #
+#                            Date Created: 9.12 2009                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Alexander Brose - AlexB                           #
@@ -20,10 +20,14 @@
 #                       note: Administrator pak192.comic                       #
 #                             Dirk W. - DirrrtyDirk                            #
 #                                    note:                                     #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
 #                            Christian W. - Eps-Omo                            #
 #                                    note:                                     #
 #                              Frank Penz - FrankP                             #
 #                      note: Administrator SimuTranslator                      #
+#                                    - GerdW                                   #
+#                                    note:                                     #
 #                         Roman Schwörer - Gotthardlok                         #
 #                                    note:                                     #
 #                           Hansjörg Malthaner - Hajo                          #
@@ -107,7 +111,7 @@ Rathaus
 04_CITY_C
 Rathaus
 10_WOHN
-Alte Dorfkirche\n\nBesuchern fällt sofort die\nungewöhnliche Raumaufteilung\nmit zwei Mittelgängen auf. Nur\nOrtsansässige wissen, dass nur\nso alle drei verfeindeten\nFamilienzweige ohne\nBlutvergießen  gemeinsam\nSonntags zusammenkommen\nkonnten.\n
+Alte Dorfkirche\n\nBesuchern fällt sofort die ungewöhnliche Raumaufteilung mit zwei Mittelgängen auf. Nur Ortsansässige wissen, dass nur so alle drei verfeindeten Familienzweige ohne Blutvergießen  gemeinsam Sonntags zusammenkommen konnten.
 1930AirDepot
 Hangar von 1930
 1headquarter
@@ -117,17 +121,17 @@ Großer Firmensitz
 3headquarter
 Firmenhauptquartier
 A1_ALTE_KIRCHE
-Gotische Kapelle\n\nberühmt für ihre Fresken,\ndie jeder einmal gesehen\nhaben sollte.\n\n
+Gotische Kapelle\n\nberühmt für ihre Fresken,\ndie jeder einmal gesehen\nhaben sollte.\n
 A2_SCHLOSS1
-Neuschwanstein\n\nDas Schloss des verrückten\nKönigs. Eine großartige\nSehenswürdigkeit!\n\n
+Neuschwanstein\n\nDas Schloss des verrückten\nKönigs. Eine großartige\nSehenswürdigkeit!\n
 A3_BURG1
-Burgruine\n\nEinst machten hier erfolgreich\nRaubritter die Gegend\nunsicher, bis die Bevölkerung\ndie Burg schleifte. Sie ist\nimmer einen Ausflug wert.\n\n
+Burgruine\n\nEinst machten hier erfolgreich\nRaubritter die Gegend\nunsicher, bis die Bevölkerung\ndie Burg schleifte. Sie ist\nimmer einen Ausflug wert.\n
 A4_SCHLOSS2
-Herrensitz\n\nmit einer großartigen\nGemäldesammlung: Ein tolles\nAusflugsziel, auch bei Regen.\n\n
+Herrensitz\n\nmit einer großartigen\nGemäldesammlung: Ein tolles\nAusflugsziel, auch bei Regen.\n
 A5_STONEHENGE
-Stonehenge\n\nFühle das Raunen der Megalithe,\nwenn du den Ring betrittst.\nManche sollen nie mehr\nzurückgekommen sein.\n\n
+Stonehenge\n\nFühle das Raunen der Megalithe,\nwenn du den Ring betrittst.\nManche sollen nie mehr\nzurückgekommen sein.\n
 A6_DOME
-Kathedrale\n\nDiese gotische Kathedrale\nbeherrscht seit fast einem\nJahrtausend das Stadtbild.\n\n
+Kathedrale\n\nDiese gotische Kathedrale\nbeherrscht seit fast einem\nJahrtausend das Stadtbild.\n
 AirDepot
 Hangar von 1900
 AirportShed1930
@@ -159,105 +163,105 @@ Frachthof\n
 ChannelStop
 Binnenhafen
 COM_00_01
-Ein Kiosk, in dem es jede\nMenge billigen Krimskrams,\nohne den niemand leben kann,\ngibt. Ehrlich!\n\n
+Ein Kiosk, in dem es jede\nMenge billigen Krimskrams,\nohne den niemand leben kann,\ngibt. Ehrlich!\n
 COM_00_02
-Alle Mopedfahrer der Stadt\nlieben die Tankstelle von Herrn\nReichmuth, denn hier gibt es\neine vollautomatische\nZweitaktbenzin- Zapfsäule.\n\n
+Alle Mopedfahrer der Stadt\nlieben die Tankstelle von Herrn\nReichmuth, denn hier gibt es\neine vollautomatische\nZweitaktbenzin- Zapfsäule.\n
 COM_00_03
-Diese Hinterhof-Werkstatt\nmöchte schon lange ihr\nSchattendasein beenden und\nendlich einen Schauraum an\nder Hauptstraße eröffnen. Aber\nes fehlt an allem: am Geld, an\nder Baubewilligung, und an der\nHauptstraße.\n\n
+Diese Hinterhof-Werkstatt\nmöchte schon lange ihr\nSchattendasein beenden und\nendlich einen Schauraum an\nder Hauptstraße eröffnen. Aber\nes fehlt an allem: am Geld, an\nder Baubewilligung, und an der\nHauptstraße.\n
 COM_00_05
-Herr G. Hai, der Besitzer der\nBankengruppe, zu der auch\ndiese Filiale gehört, ist mit\nAbstand der reichste Mann in\ndieser Stadt. Dabei sieht so\neine Bankfiliale eigentlich ganz\nharmlos aus!\n\n
+Herr G. Hai, der Besitzer der\nBankengruppe, zu der auch\ndiese Filiale gehört, ist mit\nAbstand der reichste Mann in\ndieser Stadt. Dabei sieht so\neine Bankfiliale eigentlich ganz\nharmlos aus!\n
 COM_00_06
-Nirgendwo gibt es besseren\nKaffee als in diesem schönen\nDachcafé.\n\n
+Nirgendwo gibt es besseren\nKaffee als in diesem schönen\nDachcafé.\n
 COM_00_08
-Ein Wohn- und Geschäftshaus\nkann trotz allem ein guter Ort\nfür Kinder sein, wenn ihnen\ndie Geschäftsleute nur soviel\nInteresse entgegenbringen,\nwie die Kinder an den\nVorgängen hinter den Kulissen\nhaben.\n\n
+Ein Wohn- und Geschäftshaus\nkann trotz allem ein guter Ort\nfür Kinder sein, wenn ihnen\ndie Geschäftsleute nur soviel\nInteresse entgegenbringen,\nwie die Kinder an den\nVorgängen hinter den Kulissen\nhaben.\n
 COM_00_10
-Die Einfahrt zur Tiefgarage des\nBüroblocks ist zwar sehr\nsteil, aber dafür geht es unten\ngleich eng um die Kurve. Es\ngeht das Gerücht, dass der\nWerkstattbesitzer von nebenan\ndie Pläne leicht überarbeitet\nhat, als der Bauleiter einmal\nvergaß, die Tür des Bauwagens\nabzuschließen.\n\n
+Die Einfahrt zur Tiefgarage des\nBüroblocks ist zwar sehr\nsteil, aber dafür geht es unten\ngleich eng um die Kurve. Es\ngeht das Gerücht, dass der\nWerkstattbesitzer von nebenan\ndie Pläne leicht überarbeitet\nhat, als der Bauleiter einmal\nvergaß, die Tür des Bauwagens\nabzuschließen.\n
 COM_00_11
-Neben der Metzgerei Wild ist\ngleich die Gaststube zum\nLöwen, die ebenfalls dem\nMetzger gehört. Vegetarier\nsind hier nicht gern gesehen,\ndazu Metzger Wild:\n"Erbsenzähler, die nicht mit\nvollem Appetit essen können, kann\nich nicht in meiner Gaststube\nsitzen sehen. Ich habe dann\nimmer Angst, ich hätte ihnen\netwas verdorbenes vorgesetzt."\nSeinen Bauchumfang kennt\nMetzger Wild nicht - das\nMessband ist immer zu kurz.\n\n
+Neben der Metzgerei Wild ist\ngleich die Gaststube zum\nLöwen, die ebenfalls dem\nMetzger gehört. Vegetarier\nsind hier nicht gern gesehen,\ndazu Metzger Wild:\n"Erbsenzähler, die nicht mit\nvollem Appetit essen können, kann\nich nicht in meiner Gaststube\nsitzen sehen. Ich habe dann\nimmer Angst, ich hätte ihnen\netwas verdorbenes vorgesetzt."\nSeinen Bauchumfang kennt\nMetzger Wild nicht - das\nMessband ist immer zu kurz.\n
 COM_00_12
-Büroblock vom Typ Trist &\nTrübe. Wenn man länger als\nzwei Jahre hier arbeitet, dann\nwird man selber trübsinnig.\n\n
+Büroblock vom Typ Trist &\nTrübe. Wenn man länger als\nzwei Jahre hier arbeitet, dann\nwird man selber trübsinnig.\n
 COM_00_14
-Der Bürokomplex eines\nHandelshauses. Links sitzt der\nEinkauf, rechts der Verkauf.\nWarum heisst der Mittelhof\nmit Glasdach wohl\n"Preishalle"?\n\n
+Der Bürokomplex eines\nHandelshauses. Links sitzt der\nEinkauf, rechts der Verkauf.\nWarum heisst der Mittelhof\nmit Glasdach wohl\n"Preishalle"?\n
 COM_00_18
-Eine eigenwillige\nBüroeinteilung zur\nLeistungssteigerung hat die\nLNX Softwähr GmbH. Die\nlangweiligen Arbeiten werden\nin den unteren Stockwerken\nerledigt. In den oberen Etagen ist\ndie Arbeit dann spannender als die\nschöne Aussicht.\n\n
+Eine eigenwillige\nBüroeinteilung zur\nLeistungssteigerung hat die\nLNX Softwähr GmbH. Die\nlangweiligen Arbeiten werden\nin den unteren Stockwerken\nerledigt. In den oberen Etagen ist\ndie Arbeit dann spannender als die\nschöne Aussicht.\n
 COM_00_22
-Das Hochhaus mit\ngeschwungener Glasfassade ist\nein Tempel des Wohlfühlens:\nIm Hotel Albuna können Sie\nsich so richtig verwöhnen\nlassen. Schliesslich haben Sie\nfür die Ferien hier auch hart\ngenug gearbeitet.\n\n
+Das Hochhaus mit\ngeschwungener Glasfassade ist\nein Tempel des Wohlfühlens:\nIm Hotel Albuna können Sie\nsich so richtig verwöhnen\nlassen. Schliesslich haben Sie\nfür die Ferien hier auch hart\ngenug gearbeitet.\n
 COM_01_01
-Ein Start- und Landeplatz für\nHeissluftballone. Ein\nBallonrundflug über die Alpen\nkann ein unvergessliches\nErlebnis sein!\n\n
+Ein Start- und Landeplatz für\nHeissluftballone. Ein\nBallonrundflug über die Alpen\nkann ein unvergessliches\nErlebnis sein!\n
 COM_01_04
-Der Kreuzpark verdankt seinen\nNamen nicht der Wegkreuzung.\nNein, ihr wurden im Mittelalter\ndie Heiden angeschlagen. Viel\nGras ist seitdem\ndarübergewachsen (und auch\nein paar Bäume).\n
+Der Kreuzpark verdankt seinen Namen nicht der Wegkreuzung. Nein, ihr wurden im Mittelalter die Heiden angeschlagen. Viel Gras ist seitdem darübergewachsen (und auch ein paar Bäume).
 COM_01_09
-Es ist noch gar nicht so lange\nher, war dies der scheinende\nTempel aller\nLichtspieltheater. Heute ist es\nnur noch ein altes Kino. Aber\ntief in den Mauern steckt\nnoch ein Schein des alten\nGlanzes!\n\n
+Es ist noch gar nicht so lange\nher, war dies der scheinende\nTempel aller\nLichtspieltheater. Heute ist es\nnur noch ein altes Kino. Aber\ntief in den Mauern steckt\nnoch ein Schein des alten\nGlanzes!\n
 COM_01_10
-Das Arzthaus der Stadt. Die\nlangweilige Fassade hat man\nnachträglich mit dem\nvorgesetzten Eingang etwas\nauflockern wollen. Locker\nsollten auch die Patienten in\nden Zahnarztpraxen bleiben; es ist\nin dem Fall wirklich nicht\nbesonders empfehlenswert, sich\nbei Schmerz auf die Zähne\nbeissen zu wollen.\n\n\n
+Das Arzthaus der Stadt. Die\nlangweilige Fassade hat man\nnachträglich mit dem\nvorgesetzten Eingang etwas\nauflockern wollen. Locker\nsollten auch die Patienten in\nden Zahnarztpraxen bleiben; es ist\nin dem Fall wirklich nicht\nbesonders empfehlenswert, sich\nbei Schmerz auf die Zähne\nbeissen zu wollen.\n\n
 COM_01_17
-Weltkonzerne wie die Hubega\nBau AG hassen zwar die\nBürokratie, aber wenn es\ndarum geht, selber mit grossen\nBürokomplexen aufzutrumpfen,\nsind sie immer vorne mit\ndabei. Immerhin, hier hat man\nAnleihen bei Mies van der Rohe\ngemacht.\n\n
+Weltkonzerne wie die Hubega\nBau AG hassen zwar die\nBürokratie, aber wenn es\ndarum geht, selber mit grossen\nBürokomplexen aufzutrumpfen,\nsind sie immer vorne mit\ndabei. Immerhin, hier hat man\nAnleihen bei Mies van der Rohe\ngemacht.\n
 COM_01_18
-Vermögensverwalter "Global\nTrust" ist im globalen\nFondsgeschäft tätig. Ihre\nJunk-Bond-Fonds und ihre\nMikrokreditbanken in Indien\nund Peru haben in den letzten\nJahren überdurchschnittliche\nRenditen erzielt. Ob das auch in\nZukunft so sein wird?\nGeld-Zurück-Garantie gibt es an\nder Börse nicht!\n\n
+Vermögensverwalter "Global\nTrust" ist im globalen\nFondsgeschäft tätig. Ihre\nJunk-Bond-Fonds und ihre\nMikrokreditbanken in Indien\nund Peru haben in den letzten\nJahren überdurchschnittliche\nRenditen erzielt. Ob das auch in\nZukunft so sein wird?\nGeld-Zurück-Garantie gibt es an\nder Börse nicht!\n
 COM_01_20
-Wenn die Gebäudehülle des\nUniversitätsspitals in ihren\nAugen flimmert, gehen sie zum\nAugenspezialisten Dr. Koller.\nDoch seit der\nComputerhändler von nebenan\nweiss, wie Dr. Koller die Augen\nseiner Patienten testet, zieht er\ndiesem mit seinen\nFlachbildschirmen immer mehr\nPatienten ab.\n\n
+Wenn die Gebäudehülle des\nUniversitätsspitals in ihren\nAugen flimmert, gehen sie zum\nAugenspezialisten Dr. Koller.\nDoch seit der\nComputerhändler von nebenan\nweiss, wie Dr. Koller die Augen\nseiner Patienten testet, zieht er\ndiesem mit seinen\nFlachbildschirmen immer mehr\nPatienten ab.\n
 COM_01_21
-Außenlifte verleihen einem\nGebäude ein gewisses\nPrestige, doch wenn es\nhagelt, ziehen viele gerne die\nInnentreppe vor.\n\n
+Außenlifte verleihen einem\nGebäude ein gewisses\nPrestige, doch wenn es\nhagelt, ziehen viele gerne die\nInnentreppe vor.\n
 COM_01_22
-Eine Internetfirma, die in dem\nBoomjahren nicht mehr\nwusste, wohin mit dem Geld,\nhat einen Dali-Sohn engagiert.\nDer war jedoch mit einer\nPicasso-Urenkelin verwandt,\nweswegen auch der Kubismus in\nden Plänen seine Spuren\nhinterließ.\n\n
+Eine Internetfirma, die in dem\nBoomjahren nicht mehr\nwusste, wohin mit dem Geld,\nhat einen Dali-Sohn engagiert.\nDer war jedoch mit einer\nPicasso-Urenkelin verwandt,\nweswegen auch der Kubismus in\nden Plänen seine Spuren\nhinterließ.\n
 COM_02_02
-Miet-mich-doch hat hier ihre\nAutos abgestellt. Die Preise\nsind unschlagbar günstig. Nur\ngibt es keine Bushaltestelle\nweit und breit, man muss mit\ndem Taxi kommen.\n\n
+Miet-mich-doch hat hier ihre\nAutos abgestellt. Die Preise\nsind unschlagbar günstig. Nur\ngibt es keine Bushaltestelle\nweit und breit, man muss mit\ndem Taxi kommen.\n
 COM_02_04
-Viele Jahrhunderte hat die\nalte Eiche schon erlebt.\nSelbst Goethe soll unter ihr\nSchatten gefunden haben. Da\nman der Bank um den Baum\ndies auch ansah, hatte man sie\nletztes Jahr komplett entfernt.\n
+Viele Jahrhunderte hat die alte Eiche schon erlebt. Selbst Goethe soll unter ihr Schatten gefunden haben. Da man der Bank um den Baum dies auch ansah, hatte man sie letztes Jahr komplett entfernt.
 COM_02_13
-Die Stadtsparkasse sieht wie\nein Bunker aus und ähnlich\ndick sind auch die Wändes des\nTresorraumes. Trotzdem\nhaben die Kunden immer noch\ndas Gefühl, dass ihr Geld\nleichter in die Bank kommt als\nwieder heraus.\n\n
+Die Stadtsparkasse sieht wie\nein Bunker aus und ähnlich\ndick sind auch die Wändes des\nTresorraumes. Trotzdem\nhaben die Kunden immer noch\ndas Gefühl, dass ihr Geld\nleichter in die Bank kommt als\nwieder heraus.\n
 COM_02_16
-Die Firmen hier waren immer\nganz knapp dem Trend\nhinterher. Erst war es eine\nReederei in den 60er, ein\nAutobauer in den 70er, eine\nStahlfirma in den 80er. In den\n90er ist kurz mal ein Privatsender\neingezogen. Doch dann wurde\nAsbest an allen Ecken entdeckt\nund jetzt streiten sich\nDenkmalschützer und\nAbbruchfirma.\n\n
+Die Firmen hier waren immer\nganz knapp dem Trend\nhinterher. Erst war es eine\nReederei in den 60er, ein\nAutobauer in den 70er, eine\nStahlfirma in den 80er. In den\n90er ist kurz mal ein Privatsender\neingezogen. Doch dann wurde\nAsbest an allen Ecken entdeckt\nund jetzt streiten sich\nDenkmalschützer und\nAbbruchfirma.\n
 COM_02_17
-Die riesigen Wärmetauscher\ndeuten es an: Unter dem Dach\nist die Sauna zur Motivation\nfür die Topangestellten. Doch\nes herrscht strenges\nRegiment: Ein Fehler und sie\nmüssen wieder an die\nÖlförderstation in Sibirien.\n\n
+Die riesigen Wärmetauscher\ndeuten es an: Unter dem Dach\nist die Sauna zur Motivation\nfür die Topangestellten. Doch\nes herrscht strenges\nRegiment: Ein Fehler und sie\nmüssen wieder an die\nÖlförderstation in Sibirien.\n
 COM_02_19
-Sportwissenschaftliche\nFakultät. Der grosse Hörsaal ist\nzuoberst im Gebäude\nuntergebracht. Einen Lift gibt\nes natürlich nicht; und immer\nwieder wundern sich\nGastdozenten, warum junge\nSportstudenten, die gerade vom\nAusdauertraining kommen, sich\nüber den Architekten auslassen.\n\n
+Sportwissenschaftliche\nFakultät. Der grosse Hörsaal ist\nzuoberst im Gebäude\nuntergebracht. Einen Lift gibt\nes natürlich nicht; und immer\nwieder wundern sich\nGastdozenten, warum junge\nSportstudenten, die gerade vom\nAusdauertraining kommen, sich\nüber den Architekten auslassen.\n
 COM_03_14
-Die neusten Trends der Saison\nbei D&B. Ausgesuchte Farben\npassen sich dan der variablen\nInnenbeleuchtung sofort an\nden letzten Trend in Paris an.\nNur erschrecken sie nicht,\nwenn sie die Kleidung beim\nVerlassen dann zum ersten Mal bei\nTageslicht sehen.\n\n
+Die neusten Trends der Saison\nbei D&B. Ausgesuchte Farben\npassen sich dan der variablen\nInnenbeleuchtung sofort an\nden letzten Trend in Paris an.\nNur erschrecken sie nicht,\nwenn sie die Kleidung beim\nVerlassen dann zum ersten Mal bei\nTageslicht sehen.\n
 COM_03_15
-Hier saß die erste Nationale\nVermögenstrust. Im Zuge der\nGlobalisierung und des WWWs\nbräuchte der Hauptsitz nicht\nmehr einzuschüchtern; aber\nder alte Stahlbeton war\ntatsächlich für 1000 Jahre\ngegossen.\n\n
+Hier saß die erste Nationale\nVermögenstrust. Im Zuge der\nGlobalisierung und des WWWs\nbräuchte der Hauptsitz nicht\nmehr einzuschüchtern; aber\nder alte Stahlbeton war\ntatsächlich für 1000 Jahre\ngegossen.\n
 COM_03_19
-Die Büros der "Letzten\nSpeziellen Versicherung"\nstehen schon geraume Zeit\nleer. Bei ihr konnten sich nur\nschöne Frauen und auch nur\ngegen ungewollte Handküsse\nversichern lassen. Die\nFirmengründer waren mit dieser\nGeschäftsidee wohl doch etwas\nblauäugig.\n\n
+Die Büros der "Letzten\nSpeziellen Versicherung"\nstehen schon geraume Zeit\nleer. Bei ihr konnten sich nur\nschöne Frauen und auch nur\ngegen ungewollte Handküsse\nversichern lassen. Die\nFirmengründer waren mit dieser\nGeschäftsidee wohl doch etwas\nblauäugig.\n
 COM_04_15
-Früher stand hier mal der\nerste Rundfunksender der\nStadt. Heute residiert hier\nder Kabelbetreiber Glotz-Line.\nMit der Satellitenantenne auf\ndem Dach ist man mit der\ngroßen weiten Welt verbunden.\n\n
+Früher stand hier mal der\nerste Rundfunksender der\nStadt. Heute residiert hier\nder Kabelbetreiber Glotz-Line.\nMit der Satellitenantenne auf\ndem Dach ist man mit der\ngroßen weiten Welt verbunden.\n
 COM_10_01
-Heinzen aufgeschichtetes Heu\nbleibt bei unerwartetem Regen\nwenigstens teilweise trocken.\n\n
+Heinzen aufgeschichtetes Heu\nbleibt bei unerwartetem Regen\nwenigstens teilweise trocken.\n
 COM_10_02
-Seit das Ordnungsamt die\nKnöllchen durch die\nPrivatwirtschaft vergeben\nlässt, sind die letzten\nParkscheinautomatfreien\nParkplätze selbst am Rand der\nStadt heiß begehrt.\n\n
+Seit das Ordnungsamt die\nKnöllchen durch die\nPrivatwirtschaft vergeben\nlässt, sind die letzten\nParkscheinautomatfreien\nParkplätze selbst am Rand der\nStadt heiß begehrt.\n
 COM_10_05
-Ein gepflegter Kräutergarten\nist der Stolz jeder Bäuerin.\n\n
+Ein gepflegter Kräutergarten\nist der Stolz jeder Bäuerin.\n
 COM_10_07
-Gasthäuser sind der\nTreffpunkt nicht nur für die\ndurstige Bevölkerung. Für\nTiere gibts Selbstbedienung\ndraussen am Brunnen.\n\n
+Gasthäuser sind der\nTreffpunkt nicht nur für die\ndurstige Bevölkerung. Für\nTiere gibts Selbstbedienung\ndraussen am Brunnen.\n
 COM_10_10
-An der Pferdestation der Post\nkönnen die Zugtiere wieder\nauftanken. Der "Boxenstopp"\nwurde damals allerdings erst in\nMinuten gemessen.\n\n
+An der Pferdestation der Post\nkönnen die Zugtiere wieder\nauftanken. Der "Boxenstopp"\nwurde damals allerdings erst in\nMinuten gemessen.\n
 COM_10_11
-Süddeutsches Fachwerk:\nSchön anzusehen, aber die\nBesitzer sind nicht so\nglücklich: Weder mit dem\ntickenden Holzwurm hinter\nden Schindeln, noch mit der\nTatsache, dass alle Bilder ober\nund unten Nägel brauchen, um\nplatt an der Wand zu hängen.\n\n
+Süddeutsches Fachwerk:\nSchön anzusehen, aber die\nBesitzer sind nicht so\nglücklich: Weder mit dem\ntickenden Holzwurm hinter\nden Schindeln, noch mit der\nTatsache, dass alle Bilder ober\nund unten Nägel brauchen, um\nplatt an der Wand zu hängen.\n
 COM_10_12
-Zwei Pferde stehen vor der\nSchmiede. Auch sie wollen\nbeschlagen werden, aber\nbekannt ist Schmied Ambros\nvor allem für seine kunstvollen\nGeländer.\n\n
+Zwei Pferde stehen vor der\nSchmiede. Auch sie wollen\nbeschlagen werden, aber\nbekannt ist Schmied Ambros\nvor allem für seine kunstvollen\nGeländer.\n
 Control_StationBlg
 Stellwerk
 DenkFlor
-Flor-Wauters-Denkmal\n\nDieses Denkmal ist Flor 'WF Ultd.'\nWauters, dem berühmten\nIngenieur,  der so viele\ngrossartige Straßen- und\nSchienenfahrzeuge\ngeschaffen hat, gewidmet. Er ist\nebenfalls bekannt, viele tadellos\nlaufende Fabriken entworfen zu\nhaben.\n\n
+Flor-Wauters-Denkmal\n\nDieses Denkmal ist Flor 'WF Ultd.'\nWauters, dem berühmten\nIngenieur,  der so viele\ngrossartige Straßen- und\nSchienenfahrzeuge\ngeschaffen hat, gewidmet. Er ist\nebenfalls bekannt, viele tadellos\nlaufende Fabriken entworfen zu\nhaben.\n
 DenkHajo
-Hajo-Malthaner-Denkmal\n\nDenkmal für Hajo, den Schöpfer\nvon Simutrans.\n\n
+Hajo-Malthaner-Denkmal\n\nDenkmal für Hajo, den Schöpfer\nvon Simutrans.\n
 DenkMHz
-Georg-Heiduk-Denkmal\n\nDiese Sternwarte steht für MHz\nund dessen scharfes Auge für\nDetails.\n\n
+Georg-Heiduk-Denkmal\n\nDiese Sternwarte steht für MHz\nund dessen scharfes Auge für\nDetails.\n
 DenkOwen
-Denkmal\n\nOwen Rudge-Platz. Er führte\nFinanzen und Soundtechnik in\nSimutrans ein.\n\n
+Denkmal\n\nOwen Rudge-Platz. Er führte\nFinanzen und Soundtechnik in\nSimutrans ein.\n
 DenkSeth
-Denkmal\n\nDer Platz ist nach Seth C.\nTriggs, dem berühmten\nArchitekt so vieler hübscher\nStadtgebäude, benannt. Er ist\nauch für seine Studien über\ndie Verbesserung von\nVerkehrssystemen berühmt\ngeworden.\n\n
+Denkmal\n\nDer Platz ist nach Seth C.\nTriggs, dem berühmten\nArchitekt so vieler hübscher\nStadtgebäude, benannt. Er ist\nauch für seine Studien über\ndie Verbesserung von\nVerkehrssystemen berühmt\ngeworden.\n
 DenkTomas
-Denkmal\n\nDie Statue im Park ist Tomas\nKubes gewidmet. Er hilft mit,\nSimutrans in vielen, vielen\nBereichen mit Rat und Tat zu\nverbessern.\n\n
+Denkmal\n\nDie Statue im Park ist Tomas\nKubes gewidmet. Er hilft mit,\nSimutrans in vielen, vielen\nBereichen mit Rat und Tat zu\nverbessern.\n
 DenkTrikky
-Denkmal\n\nEin Denkmal zu Ehren von\n'Trikky' Rick McGreal, dem\nberühmten Architekten so\nvieler beeindruckender\nGebäude.\n\n
+Denkmal\n\nEin Denkmal zu Ehren von\n'Trikky' Rick McGreal, dem\nberühmten Architekten so\nvieler beeindruckender\nGebäude.\n
 DenkVM
-Denkmal\n\nDas Lokomotivdenkmal ist\nManfred 'VT Vienna'\nTomaschitz gewidmet. Er ist\nder berühmte Ingenieur vieler\nüberlegener\nSchienenfahrzeuge.\n\n
+Denkmal\n\nDas Lokomotivdenkmal ist\nManfred 'VT Vienna'\nTomaschitz gewidmet. Er ist\nder berühmte Ingenieur vieler\nüberlegener\nSchienenfahrzeuge.\n
 DenkVolker
-Denkmal\n\nEine Skulptur für Volker Meyer,\nder Simutrans in vielen, vielen\nBereichen weitergebracht\nhat.\n\n
+Denkmal\n\nEine Skulptur für Volker Meyer,\nder Simutrans in vielen, vielen\nBereichen weitergebracht\nhat.\n
 Eingang
 Eingang zur Hochbahn
 Feste
-Feste der Konuberts\n\nErbaut um 1400 sind die Wände so\ndick, dass sie allen Waffen und\nJahrhunderten trotzten. Die\nMarktfrauen freuts: So können\nsie selbst im Hochsommer auf\ndem Innenhof immer noch\nStricksachen verkaufen.\n\n
+Feste der Konuberts\n\nErbaut um 1400 sind die Wände so\ndick, dass sie allen Waffen und\nJahrhunderten trotzten. Die\nMarktfrauen freuts: So können\nsie selbst im Hochsommer auf\ndem Innenhof immer noch\nStricksachen verkaufen.\n
 Fluid_StationBlg
 Öltank
 FreightShipStop
@@ -273,67 +277,67 @@ große Halle (rechte Hälfte)
 Goods_StationBlg
 Lagerhalle
 Gymnasium
-Oberstufenzentrum\n\n\n(Ehemals Oberrealschule, jetzt\nOberstufenzentrum mit\ngymnasialer Oberstufe)\nDiese Bildungsanstalt mittlerweile\ndeutlich mehr Schulreformen\nals Anstriche miterlebt. Immerhin\nheizen jetzt im Keller ein paar\nPCs statt des alten Kohleofens.\n\n
+Oberstufenzentrum\n\n\n(Ehemals Oberrealschule, jetzt\nOberstufenzentrum mit\ngymnasialer Oberstufe)\nDiese Bildungsanstalt mittlerweile\ndeutlich mehr Schulreformen\nals Anstriche miterlebt. Immerhin\nheizen jetzt im Keller ein paar\nPCs statt des alten Kohleofens.\n
 IND_00_01
-Eine Lagerhalle. Kisten, Säcke\nund Fässer türmen sich bis zur\nDecke. Ob der Besitzer noch\nweiss, was hier alles\neingelagert ist?\n\n
+Eine Lagerhalle. Kisten, Säcke\nund Fässer türmen sich bis zur\nDecke. Ob der Besitzer noch\nweiss, was hier alles\neingelagert ist?\n
 IND_00_02
-Ein Schuppen zur Lagerung von\nMaschinen und Ersatzteilen für\nden Großhandel.\n\n
+Ein Schuppen zur Lagerung von\nMaschinen und Ersatzteilen für\nden Großhandel.\n
 IND_00_03
-Tanklager der Firma Lützberg.\nMeist ist der Tank leer, denn\nseit Lieferungen per Bahn\nexakt auf den Termin\nerfolgen, werden auf der\nanderen Seite schon die\nnächsten Lastwagen vollgepumpt.\n\n
+Tanklager der Firma Lützberg.\nMeist ist der Tank leer, denn\nseit Lieferungen per Bahn\nexakt auf den Termin\nerfolgen, werden auf der\nanderen Seite schon die\nnächsten Lastwagen vollgepumpt.\n
 IND_00_04
-Heizkessel und Rohre für\nKraftwerke produziert und\nmontiert die Warrima AG in der\nhalbröhrenförmigen Halle. Doch\nes ist ein sehr unstetes\nGeschäft; so wurden in der\nHalle auch schon Tunnelelemente\nvorgefertigt und Trams und Busse\nrevidiert. Aussergewöhnlich ist\ndie Bodenbeleuchtung, denn auch\nbei der Arbeit unter dem\nWerkstück möchte man noch\netwas sehen.\n\n
+Heizkessel und Rohre für\nKraftwerke produziert und\nmontiert die Warrima AG in der\nhalbröhrenförmigen Halle. Doch\nes ist ein sehr unstetes\nGeschäft; so wurden in der\nHalle auch schon Tunnelelemente\nvorgefertigt und Trams und Busse\nrevidiert. Aussergewöhnlich ist\ndie Bodenbeleuchtung, denn auch\nbei der Arbeit unter dem\nWerkstück möchte man noch\netwas sehen.\n
 IND_00_05
-Der Wasserspeicher der Stadt.\nEs ist nur das älteste\noberirdische Gebäude zu\nsehen, mittlerweile ist die\nAnlage um etliche\nunterirdische Reservoirs\nerweitert worden.\n\n
+Der Wasserspeicher der Stadt.\nEs ist nur das älteste\noberirdische Gebäude zu\nsehen, mittlerweile ist die\nAnlage um etliche\nunterirdische Reservoirs\nerweitert worden.\n
 IND_00_06
-Eine Fabrik mit den typischen\nZackendächern. Auf den\nSteilseiten befinden sich\nFenster, um wenigstens etwas\nLicht an die Arbeitsplätze der\nSchneider zu lassen. \n\n
+Eine Fabrik mit den typischen\nZackendächern. Auf den\nSteilseiten befinden sich\nFenster, um wenigstens etwas\nLicht an die Arbeitsplätze der\nSchneider zu lassen. \n
 IND_00_09
-Kohlesilos waren um 1900\nweit verbreitet und die\nWirtschaft damals von Kohle\nfast so abhängig wie heute\nvom Erdöl.\n\n
+Kohlesilos waren um 1900\nweit verbreitet und die\nWirtschaft damals von Kohle\nfast so abhängig wie heute\nvom Erdöl.\n
 IND_00_10
-Eine erste industrielle\nPolsterei. Matrazen mit\nFederkern waren damals der\nLuxusartikel fürs\nSchlafzimmer und ein\ninternationaler Exportschlager\nder Dormaban KG.\n\n
+Eine erste industrielle\nPolsterei. Matrazen mit\nFederkern waren damals der\nLuxusartikel fürs\nSchlafzimmer und ein\ninternationaler Exportschlager\nder Dormaban KG.\n
 IND_00_12
-Dampflokomotiven brauchen\ngute Nieten zur Verschliessung\nder Feuerbüchse. Gegossen\nund geschmiedet wurden die\nNieten unter anderem in\ndieser Fabrik. Überall hat sich\nim Laufe der Zeit der Roststaub\nfestgesetzt.\n\n
+Dampflokomotiven brauchen\ngute Nieten zur Verschliessung\nder Feuerbüchse. Gegossen\nund geschmiedet wurden die\nNieten unter anderem in\ndieser Fabrik. Überall hat sich\nim Laufe der Zeit der Roststaub\nfestgesetzt.\n
 IND_00_14
-Farbige Glasfenster sind das\nProdukt der Ujetsch GmbH.\nDieser Firma bringen Scherben\ntatsächlich Glück,\nNeuaufträge sind selten, und\nso muss man hoffen, dass\nirgendwo etwas ersetzt werden\nmuss.\n\n
+Farbige Glasfenster sind das\nProdukt der Ujetsch GmbH.\nDieser Firma bringen Scherben\ntatsächlich Glück,\nNeuaufträge sind selten, und\nso muss man hoffen, dass\nirgendwo etwas ersetzt werden\nmuss.\n
 IND_00_16
-Rauchgasfilter und ähnliche\nUmweltschutzmassnahmen\nwaren beim Bau früher\nVerbrennungsanlagen noch\nunbekannt. Sie damit\nnachzurüsten, war ein\nkompliziertes und zudem teures\nUnterfangen, doch dank einer\nstarken Lobby im Parlament\nkonnten die Nachrüstfristen\nimmer weiter hinausgezögert\nwerden, bis die Anlage sowieso\nersetzt werden sollte.\n\n
+Rauchgasfilter und ähnliche\nUmweltschutzmassnahmen\nwaren beim Bau früher\nVerbrennungsanlagen noch\nunbekannt. Sie damit\nnachzurüsten, war ein\nkompliziertes und zudem teures\nUnterfangen, doch dank einer\nstarken Lobby im Parlament\nkonnten die Nachrüstfristen\nimmer weiter hinausgezögert\nwerden, bis die Anlage sowieso\nersetzt werden sollte.\n
 IND_00_17
-Schinken und andere\ngeräucherte Fleischprodukte\nkommen aus den Hallen der\nVincarna GmbH. Der Betrieb\nachtet sorgsam auf Hygiene,\ndoch bei der dunklen\nGebäudehülle und dem Duft von\nverbranntem Sägemehl die\nBetrachter nicht an Russ denken\nzu lassen, dazu bedarf es schon\nfast eines Hypnotiseurs.\n\n
+Schinken und andere\ngeräucherte Fleischprodukte\nkommen aus den Hallen der\nVincarna GmbH. Der Betrieb\nachtet sorgsam auf Hygiene,\ndoch bei der dunklen\nGebäudehülle und dem Duft von\nverbranntem Sägemehl die\nBetrachter nicht an Russ denken\nzu lassen, dazu bedarf es schon\nfast eines Hypnotiseurs.\n
 IND_00_18
-Das modernste\nBlockheizkraftwerk weit und\nbreit. Läuft mit Ergas, ohne\nRuß und und Kohlehalden.\n\n
+Das modernste\nBlockheizkraftwerk weit und\nbreit. Läuft mit Ergas, ohne\nRuß und und Kohlehalden.\n
 IND_01_01
-Sie finden keinen Parkplatz für\nihr Auto? Warum kommen Sie\ndann nicht mit dem Bus in die\nStadt?\n\n
+Sie finden keinen Parkplatz für\nihr Auto? Warum kommen Sie\ndann nicht mit dem Bus in die\nStadt?\n
 IND_01_03
-Gaskugel zur Speicherung von\nErdgas.\n\n
+Gaskugel zur Speicherung von\nErdgas.\n
 IND_01_04
-In einer Blechhütte kann es\nim Winter ziemlich kalt\nwerden. Deshalb werden soviel\nSchweissarbeiten wie möglich\nin die erste Arbeitsstunde\nverlegt. Im Sommer dagegen\nist man froh, den Schneidbrenner\nmöglichst nicht vor Mittag\nanfassen zu müssen.\n\n
+In einer Blechhütte kann es\nim Winter ziemlich kalt\nwerden. Deshalb werden soviel\nSchweissarbeiten wie möglich\nin die erste Arbeitsstunde\nverlegt. Im Sommer dagegen\nist man froh, den Schneidbrenner\nmöglichst nicht vor Mittag\nanfassen zu müssen.\n
 IND_01_06
-Die Sattlerei Nalbrugger\nbezieht Stühle und Sessel\naller Art mit Leder.\n\n
+Die Sattlerei Nalbrugger\nbezieht Stühle und Sessel\naller Art mit Leder.\n
 IND_01_07
-Transformatorhäuschen, aus\nden Zeiten als die Kabel noch\nin den Städten hingen und man\nbei jedem Gewitter um seine\nElektrik fürchten musste.\n\n
+Transformatorhäuschen, aus\nden Zeiten als die Kabel noch\nin den Städten hingen und man\nbei jedem Gewitter um seine\nElektrik fürchten musste.\n
 IND_01_08
-Die Niederdruck- Dampfturbine\naus der Frühzeit der\nElektrizität versorgte die\nallererste elektrische\nTrambahn der Stadt. Sie wird\nals Industriedenkmal im\nOriginalzustand erhalten und ist\ntrotz ihres Alters immer noch\nlauftüchtig, doch der\n800V-Gleichstrom findet keine\nAbnehmer mehr.\n\n
+Die Niederdruck- Dampfturbine\naus der Frühzeit der\nElektrizität versorgte die\nallererste elektrische\nTrambahn der Stadt. Sie wird\nals Industriedenkmal im\nOriginalzustand erhalten und ist\ntrotz ihres Alters immer noch\nlauftüchtig, doch der\n800V-Gleichstrom findet keine\nAbnehmer mehr.\n
 IND_01_09
-Das Tanklager hat eine lange\nGeschichte: Schon Carl Benz\nhat hier immer sein Benzol\nbezogen. Aber nur weil sich\nUmweltamt und Denkmalschutz\nnicht einigen können, hat es\nbis heute überlebt.\n
+Das Tanklager hat eine lange Geschichte: Schon Carl Benz hat hier immer sein Benzol bezogen. Aber nur weil sich Umweltamt und Denkmalschutz nicht einigen können, hat es bis heute überlebt.
 IND_01_10
-Die Werkzeugfabrik Hamzangl\ngehört seit einem Jahrhundert\nzum Dorfbild wie die Kirche.\nDie Hämmer und Zangen, die\nheute hergestellt werden,\nsind im Haushalt nicht\neinsetzbar, denn die\nHammerfläche ist weit kleiner als\nein Nagelkopf und die Zangen hält\nman besser nicht mit einer\nPinzette - drückt man zu stark,\nkönnten diese Wunderwerke der\nFeinmechanik zerstört werden.\n\n
+Die Werkzeugfabrik Hamzangl\ngehört seit einem Jahrhundert\nzum Dorfbild wie die Kirche.\nDie Hämmer und Zangen, die\nheute hergestellt werden,\nsind im Haushalt nicht\neinsetzbar, denn die\nHammerfläche ist weit kleiner als\nein Nagelkopf und die Zangen hält\nman besser nicht mit einer\nPinzette - drückt man zu stark,\nkönnten diese Wunderwerke der\nFeinmechanik zerstört werden.\n
 IND_01_11
-Blusen zusammennähen war in\nden ersten Tagen der Fabrik\nangesagt. Frauen konnten zu\nniedrigen Löhnen beschäftigt\nwerden, und die\n48-Stunden-Woche war ein\nFortschritt sondergleichen.\nHeute sitzen Frauen hinter\nComputern an ihren Calldesks und\ntragen Blusen, die andere Frauen\nzu niedrigen Löhnen wärend über\n48 Stunden in der Woche auf den\nPhilippinen zusammennähen.\n\n
+Blusen zusammennähen war in\nden ersten Tagen der Fabrik\nangesagt. Frauen konnten zu\nniedrigen Löhnen beschäftigt\nwerden, und die\n48-Stunden-Woche war ein\nFortschritt sondergleichen.\nHeute sitzen Frauen hinter\nComputern an ihren Calldesks und\ntragen Blusen, die andere Frauen\nzu niedrigen Löhnen wärend über\n48 Stunden in der Woche auf den\nPhilippinen zusammennähen.\n
 IND_01_12
-Die Hochfabrik im Bauhausstil\nist seit jeher ein Ort der\nRöhrenproduktion. Vom\nGusseisen zum\nMembrankunststoff war es\nfreilich ein weiter Weg.\n\n
+Die Hochfabrik im Bauhausstil\nist seit jeher ein Ort der\nRöhrenproduktion. Vom\nGusseisen zum\nMembrankunststoff war es\nfreilich ein weiter Weg.\n
 IND_01_13
-Schmutz prägt dieses\nFabrikgebäude. Schon kurz\nnach dem Bau hat die\nWirtschaftskrise die darin\nuntergebrachte Spinnerei in\ndie Knie gezwungen, und\nseither wechseln Mieter und\nBesitzer in atemberaubendem\nTempo. Glück hat dieses\nGebäude noch niemandem\ngebracht, entsprechend\nstiefmütterlich wird es gepflegt.\n\n
+Schmutz prägt dieses\nFabrikgebäude. Schon kurz\nnach dem Bau hat die\nWirtschaftskrise die darin\nuntergebrachte Spinnerei in\ndie Knie gezwungen, und\nseither wechseln Mieter und\nBesitzer in atemberaubendem\nTempo. Glück hat dieses\nGebäude noch niemandem\ngebracht, entsprechend\nstiefmütterlich wird es gepflegt.\n
 IND_01_15
-In den 30er fing man an, in die\nHöhe zu bauen, und nach dem\nKrieg hat man noch schnell ein\nStockwerk draufgesetzt,\nwenn es auch nur die\nFilteranlagen unter dem Dach\nwaren.\n\n
+In den 30er fing man an, in die\nHöhe zu bauen, und nach dem\nKrieg hat man noch schnell ein\nStockwerk draufgesetzt,\nwenn es auch nur die\nFilteranlagen unter dem Dach\nwaren.\n
 IND_02_01
-Jetzt ist von der\nGründerzeitfabrik nur noch ein\nbackstein- ummauerter\nSchrottplatz übrig geblieben.\n\n
+Jetzt ist von der\nGründerzeitfabrik nur noch ein\nbackstein- ummauerter\nSchrottplatz übrig geblieben.\n
 IND_02_02
-Das Gebäude war beim Bau\neine der ersten\nZementfabriken überhaupt. Der\nkleine Zementofen war ein\nKohlefresser sondergleichen,\nder Schütthaufen im\nHinterhof fast so hoch wie die\nFabrik selber. Heutige\nZementwerke sind um ein\nvielfaches grösser, Zement kann\nhier nicht mehr gewinnbringend\nhergestellt werden. Als\nSammelstelle für Altpneus ist das\nGelände aber hervorragend\nnutzbar.\n\n
+Das Gebäude war beim Bau\neine der ersten\nZementfabriken überhaupt. Der\nkleine Zementofen war ein\nKohlefresser sondergleichen,\nder Schütthaufen im\nHinterhof fast so hoch wie die\nFabrik selber. Heutige\nZementwerke sind um ein\nvielfaches grösser, Zement kann\nhier nicht mehr gewinnbringend\nhergestellt werden. Als\nSammelstelle für Altpneus ist das\nGelände aber hervorragend\nnutzbar.\n
 IND_02_06
-Schon damals wollten potente\nIndustrielle ihre Finanzkraft\nunter Beweis stellen und\nliessen ihre Fabriken von den\nbesten Architekten\nentwerfen. Die breiten Gänge\nüber der Maschinenfabrik boten\nden Zeichnern und Ingenieuren\nviel Raum und eine gute Übersicht\nüber die entstehenden\nMaschinen. Dem Chef stand\nnatürlich die Kontrolle der\nArbeitsmoral im Vordergrund.\n\n
+Schon damals wollten potente\nIndustrielle ihre Finanzkraft\nunter Beweis stellen und\nliessen ihre Fabriken von den\nbesten Architekten\nentwerfen. Die breiten Gänge\nüber der Maschinenfabrik boten\nden Zeichnern und Ingenieuren\nviel Raum und eine gute Übersicht\nüber die entstehenden\nMaschinen. Dem Chef stand\nnatürlich die Kontrolle der\nArbeitsmoral im Vordergrund.\n
 IND_02_09
-Tanklager\n\nHier war schon immer\nRauchverbot am Arbeitsplatz.\nDennoch, die einzige\nfreundliche Farbe ist ein\nwinterliches Schneeweiß.\n\n
+Tanklager\n\nHier war schon immer\nRauchverbot am Arbeitsplatz.\nDennoch, die einzige\nfreundliche Farbe ist ein\nwinterliches Schneeweiß.\n
 IND_02_10
-Die alte Seifenfabrik hat trotz\nihres Alters bis heute eine\nblitzsaubere Fassade. Woran das\nwohl liegen mag?\n\n
+Die alte Seifenfabrik hat trotz\nihres Alters bis heute eine\nblitzsaubere Fassade. Woran das\nwohl liegen mag?\n
 LargeShipStop
 großer Frachtkran
 leftShipStop
@@ -341,7 +345,7 @@ Schwerlastkran
 LeuchtturmShipStop
 Überseekai mit Leuchtturm
 Lighthouse
-Leuchtturm\n\neinst der hellste Leuchtturm an\ndieser Küste. Doch seit die\nSchiffe per Radar-Autopilot\ndurch die Weltmeere\nrauschen, ist er heute nur\nnoch eine Touristenattraktion.\n\n
+Leuchtturm\n\neinst der hellste Leuchtturm an\ndieser Küste. Doch seit die\nSchiffe per Radar-Autopilot\ndurch die Weltmeere\nrauschen, ist er heute nur\nnoch eine Touristenattraktion.\n
 MainTerminal1930
 Terminal-Haupthalle (1930)
 MHzSmallStation
@@ -353,9 +357,9 @@ Depot für Magnetschienenfahrzeuge
 MonorailFoundation
 Einschienenbahn Fundament
 OldTownhall
-Altes Rathaus\n\nals noch jeder Bürger in der\nStadt eine Stimme hatte. (Der\nschlecht beleuchtete\nDachraum soll der Anlass für\ndie Schildbürger gewesen\nhaben, die Licht in Säcken\nhineinbringen wollten.)\n\n
+Altes Rathaus\n\nals noch jeder Bürger in der\nStadt eine Stimme hatte. (Der\nschlecht beleuchtete\nDachraum soll der Anlass für\ndie Schildbürger gewesen\nhaben, die Licht in Säcken\nhineinbringen wollten.)\n
 Patricks_Rock
-Basaltschlot\n\nVor vielen Millionen Jahren ist\nder Vulkan erloschen, seine\nLava im Berg erstarrt. Nebst\ngeologisch interessierten\nLeuten kommen viele\nAusflügler und Wanderer zum\nFelsen, denn die Quellen an\nseinem Fuss sind glasklar und das\nWasser erfrischend kühl. Auf den\nFelsen selbst darf man allerdings\nnur noch mit einer\nSonderbewilligung klettern.\n\n
+Basaltschlot\n\nVor vielen Millionen Jahren ist\nder Vulkan erloschen, seine\nLava im Berg erstarrt. Nebst\ngeologisch interessierten\nLeuten kommen viele\nAusflügler und Wanderer zum\nFelsen, denn die Quellen an\nseinem Fuss sind glasklar und das\nWasser erfrischend kühl. Auf den\nFelsen selbst darf man allerdings\nnur noch mit einer\nSonderbewilligung klettern.\n
 PlainAirStop
 Flugzeughalt
 PostOffice
@@ -371,87 +375,87 @@ Bahnhofshalle
 rampShipStop
 Wasserrampe
 Raven_Kirche
-Kirche St. Meinrad\n\nDer Hl. Meinrad, ein Einsiedler,\nwurde der Legende nach von\nzwei Raben begleitet; als er\nden Märtyrertod starb,\nfolgten die Raben den\nMördern, was zu deren\nÜberführung führte. Am Ort seiner\nWaldhütte steht heute das\nKloster Einsiedeln.\n\n
+Kirche St. Meinrad\n\nDer Hl. Meinrad, ein Einsiedler,\nwurde der Legende nach von\nzwei Raben begleitet; als er\nden Märtyrertod starb,\nfolgten die Raben den\nMördern, was zu deren\nÜberführung führte. Am Ort seiner\nWaldhütte steht heute das\nKloster Einsiedeln.\n
 RES_00_01
-Ein kleines Haus mit Garten und Blumenbeeten.\nEs mag nicht\naußergewöhnlich aussehen,\naber es ist doch das Zentrum\ndes Simutrans-Universums: War\nes doch das erste Haus in\ndieser Welt überhaupt.\n
+Ein kleines Haus mit Garten und Blumenbeeten.\nEs mag nicht außergewöhnlich aussehen, aber es ist doch das Zentrum des Simutrans-Universums: War es doch das erste Haus in dieser Welt überhaupt.
 RES_00_02
-Ein kleines Haus mit Garten. Das\nNatursteinmauerwerk läßt\nerahnen, dass hier ein\nnaturverbundener Mensch lebt.\nWenn Sie im Frühling am Haus\nentlangspazieren, können Sie\nbei genügend Geduld Eidechsen\nbeim Sonnenbad sehen.\n\n
+Ein kleines Haus mit Garten. Das\nNatursteinmauerwerk läßt\nerahnen, dass hier ein\nnaturverbundener Mensch lebt.\nWenn Sie im Frühling am Haus\nentlangspazieren, können Sie\nbei genügend Geduld Eidechsen\nbeim Sonnenbad sehen.\n
 RES_00_03
-Wer in einem so grossen\nEinfamilienhaus mit Garten\nwohnt, ist sicher nicht arm,\nund wollte wohl vor allem\ndem Gedränge des Stadtkerns\nentfliehen.\n\n
+Wer in einem so grossen\nEinfamilienhaus mit Garten\nwohnt, ist sicher nicht arm,\nund wollte wohl vor allem\ndem Gedränge des Stadtkerns\nentfliehen.\n
 RES_00_04
-Ein berühmter Wissenschaftler\nwohnt in dem ausgesprochen\nmodernen Haus. Im\nUntergeschoss sind Labors und\nForschungseinrichtungen.\nNachts, sagen die Nachbarn,\nnachts hört man die seltsamsten\nGeräusche aus dem Keller!\n\n
+Ein berühmter Wissenschaftler\nwohnt in dem ausgesprochen\nmodernen Haus. Im\nUntergeschoss sind Labors und\nForschungseinrichtungen.\nNachts, sagen die Nachbarn,\nnachts hört man die seltsamsten\nGeräusche aus dem Keller!\n
 RES_00_06
-Ein kleiner Springbrunnen. Auch\nwenn er nicht so groß ist wie\njener in Genf, macht er den\nSpaziergängern Freude,\nbesonders im Sommer.\n\n
+Ein kleiner Springbrunnen. Auch\nwenn er nicht so groß ist wie\njener in Genf, macht er den\nSpaziergängern Freude,\nbesonders im Sommer.\n
 RES_00_07
-Ein grosser Estrich ist das\nMarkenzeichen solcher\nBauernhäuser. Auch in diesem\nHaus wartet der über Jahre\nangesammelte Gerümpel\ndarauf, entsorgt zu werden\nund schönen, neuen\nDachwohnungen Platz zu machen.\n\n
+Ein grosser Estrich ist das\nMarkenzeichen solcher\nBauernhäuser. Auch in diesem\nHaus wartet der über Jahre\nangesammelte Gerümpel\ndarauf, entsorgt zu werden\nund schönen, neuen\nDachwohnungen Platz zu machen.\n
 RES_00_08
-Doppelgarage einmal anders:\nnicht neben-, sondern\nhintereinander müssen die\nAutos hineingestellt werden!\nDas "Auto", das vorne in der\nGarage steht, wird\ndementsprechend wenig\ngebraucht. Zu mehr als zum\nZiehen von Motivwagen an\nUmzügen tuts der alte Traktor\nauch nicht mehr.\n\n
+Doppelgarage einmal anders:\nnicht neben-, sondern\nhintereinander müssen die\nAutos hineingestellt werden!\nDas "Auto", das vorne in der\nGarage steht, wird\ndementsprechend wenig\ngebraucht. Zu mehr als zum\nZiehen von Motivwagen an\nUmzügen tuts der alte Traktor\nauch nicht mehr.\n
 RES_00_09
-Ein hübscher kleiner Park mit\nEntenteich ist immer ein\nTreffpunkt.\n\n
+Ein hübscher kleiner Park mit\nEntenteich ist immer ein\nTreffpunkt.\n
 RES_00_10
-Der erste Schritt zum\nFlachdach waren Formen, wie\nsie an diesem Haus zu\nbegutachten sind: zwar immer\nnoch aus Ziegeln, aber die\nDachschrägen sind soweit\naufgewölbt, dass sie in der Mitte\nfast waagrecht und aussen fast\nsenkrecht sind. So konnte noch\nein Stockwerk mehr als Wohnraum\ngenutzt werden.\n\n
+Der erste Schritt zum\nFlachdach waren Formen, wie\nsie an diesem Haus zu\nbegutachten sind: zwar immer\nnoch aus Ziegeln, aber die\nDachschrägen sind soweit\naufgewölbt, dass sie in der Mitte\nfast waagrecht und aussen fast\nsenkrecht sind. So konnte noch\nein Stockwerk mehr als Wohnraum\ngenutzt werden.\n
 RES_00_11
-Ein großes Mehrfamilienhaus\nmit Garten. Das Haus hat schon\nmal bessere Tage gesehen,\naber dafür sind die Mieten\nerschwinglich, und die Lage\nist schön zentral.\n\n
+Ein großes Mehrfamilienhaus\nmit Garten. Das Haus hat schon\nmal bessere Tage gesehen,\naber dafür sind die Mieten\nerschwinglich, und die Lage\nist schön zentral.\n
 RES_00_12
-Nur nichts konventionelles!\nAuch die Inneneinrichtungen\nsind einzigartig: Es gibt\nausschliesslich Steckdosen\nfür Drehstrom, die\ndurchsichtige Badewanne wird\nvon innen mit zwei Neonröhren\nerleuchtet, der Backofen heizt\nmit einem Stirling-Motor, und\nBilder werden mittels Projektor\nan die Wand gemalt, denn der\nArchitekt hat Nägel in diesem\nHaus strikt verboten!\n\n
+Nur nichts konventionelles!\nAuch die Inneneinrichtungen\nsind einzigartig: Es gibt\nausschliesslich Steckdosen\nfür Drehstrom, die\ndurchsichtige Badewanne wird\nvon innen mit zwei Neonröhren\nerleuchtet, der Backofen heizt\nmit einem Stirling-Motor, und\nBilder werden mittels Projektor\nan die Wand gemalt, denn der\nArchitekt hat Nägel in diesem\nHaus strikt verboten!\n
 RES_00_13
-Ein Doppelhaus mit 4\nWohnungen. Die Häuser sind\nspiegelbildlich gebaut; wenn\ndie Bewohner des einen\nHauses bei den Nachbarn\neingeladen sind, haben sich\ndie Gäste schon oft in der Tür\ngeirrt.\n\n
+Ein Doppelhaus mit 4\nWohnungen. Die Häuser sind\nspiegelbildlich gebaut; wenn\ndie Bewohner des einen\nHauses bei den Nachbarn\neingeladen sind, haben sich\ndie Gäste schon oft in der Tür\ngeirrt.\n
 RES_00_16
-Fast wie ein Museum ist die\nVilla Abendrot eingerichtet.\nVor lauter knalligen, abstrakten\nBildern ist kaum mehr ein\nStück der alten Tapete zu\nerkennen, aber gelbe Tapeten\nmit weißem Blumenmuster, vom\nZigarettenrauch ebenfalls vergilbt,\nsind auch nicht gerade eine\nZierde. Lassen wir die Bilder also\nhängen und freuen uns an ihnen.\n\n
+Fast wie ein Museum ist die\nVilla Abendrot eingerichtet.\nVor lauter knalligen, abstrakten\nBildern ist kaum mehr ein\nStück der alten Tapete zu\nerkennen, aber gelbe Tapeten\nmit weißem Blumenmuster, vom\nZigarettenrauch ebenfalls vergilbt,\nsind auch nicht gerade eine\nZierde. Lassen wir die Bilder also\nhängen und freuen uns an ihnen.\n
 RES_00_17
-Schon in alten Häusern hat es\nverbrauchsabhängige\nHeizkostenabrechnungen\ngegeben - jeder musste das\nBrennholz für seinen Ofen\nselber bezahlen.\n\n
+Schon in alten Häusern hat es\nverbrauchsabhängige\nHeizkostenabrechnungen\ngegeben - jeder musste das\nBrennholz für seinen Ofen\nselber bezahlen.\n
 RES_00_18
-Nach dem Abriss des\nNebengebäudes kam eine\nkahle Brandschutzmauer zum\nVorschein, die der\nVerschönerung bedurfte. Die\nörtliche Brauerei\nKlosterbrunnen hatte zwar nicht\ndie originellste, aber dafür die\nfür den Hausbesitzer\neinträglichste Idee: ein riesiges\nWerbefresko prangt an der Wand.\n\n
+Nach dem Abriss des\nNebengebäudes kam eine\nkahle Brandschutzmauer zum\nVorschein, die der\nVerschönerung bedurfte. Die\nörtliche Brauerei\nKlosterbrunnen hatte zwar nicht\ndie originellste, aber dafür die\nfür den Hausbesitzer\neinträglichste Idee: ein riesiges\nWerbefresko prangt an der Wand.\n
 RES_00_19
-Ein Versuch aus den 1960er\nJahren, billigen Wohnraum für\nalle zu schaffen.\n\n
+Ein Versuch aus den 1960er\nJahren, billigen Wohnraum für\nalle zu schaffen.\n
 RES_00_21
-Einst Architekturpreis der\nspäten Sechziger, hat man\nheute bei mehr als einer\nWindstärke Probleme im\nDurchgang nicht umgeblasen zu\nwerden. Immerhin hat das das\nProblem des\nKnallkörperzielwerfens\nentschärft, dass die anderen\nHäuser dieser Siedlung heute\naufweisen (von den anderen\nsozialen Verwerfungen ganz zu\nschweigen.) Und erst kürzlich\nschön renoviert.\n\n
+Einst Architekturpreis der\nspäten Sechziger, hat man\nheute bei mehr als einer\nWindstärke Probleme im\nDurchgang nicht umgeblasen zu\nwerden. Immerhin hat das das\nProblem des\nKnallkörperzielwerfens\nentschärft, dass die anderen\nHäuser dieser Siedlung heute\naufweisen (von den anderen\nsozialen Verwerfungen ganz zu\nschweigen.) Und erst kürzlich\nschön renoviert.\n
 RES_00_23
-Jede Wohnung mit Fenster: Die\nIdee war gut, in selbst an die\nAusrichtung mit Fahrstuhl nach\nNorden war gedacht. Nur sind\ndie Räume nicht quadratisch\nund überall klaffen Lücken,\nweil man Möbel nur senkrecht\nzum Fenster aufstellen kann.\n\n
+Jede Wohnung mit Fenster: Die\nIdee war gut, in selbst an die\nAusrichtung mit Fahrstuhl nach\nNorden war gedacht. Nur sind\ndie Räume nicht quadratisch\nund überall klaffen Lücken,\nweil man Möbel nur senkrecht\nzum Fenster aufstellen kann.\n
 RES_01_01
-Ein modernes Fertighaus mit\nausgebautem Dachboden ist\nideal für Familien mit Kindern\nund begrenzten finanziellen\nMöglichkeiten.\n\n
+Ein modernes Fertighaus mit\nausgebautem Dachboden ist\nideal für Familien mit Kindern\nund begrenzten finanziellen\nMöglichkeiten.\n
 RES_01_02
-Ein Nurdachhaus, eine\nKonstruktion, die im Winter\nauch höchsten Schneelasten\nstandhält. Auf gute Aussicht\nmuss man jedoch verzichten.\n\n
+Ein Nurdachhaus, eine\nKonstruktion, die im Winter\nauch höchsten Schneelasten\nstandhält. Auf gute Aussicht\nmuss man jedoch verzichten.\n
 RES_01_05
-Nicht ein offener Balkon.\nsondern eine überdachte\nVeranda muss es sein: Auch\nbei Regen sollen sich Kinder\ndraussen vergnügen können.\nDoch wenn Kinder sich einmal\nin etwas vertieft haben, merken\nsie sowieso nicht mehr, wie nass\nsie schon sind.\n\n
+Nicht ein offener Balkon.\nsondern eine überdachte\nVeranda muss es sein: Auch\nbei Regen sollen sich Kinder\ndraussen vergnügen können.\nDoch wenn Kinder sich einmal\nin etwas vertieft haben, merken\nsie sowieso nicht mehr, wie nass\nsie schon sind.\n
 RES_01_07
-Freunde der Mobilität gab es\nschon immer: Im Erdgeschoss\ngibt es tatsächlich einen\nkleinen Pferdestall und einen\nKutschenraum! Und wenn\nschon Pferde vorhanden sind,\ndarf der Hundezwinger natürlich\nauch nicht fehlen. Der Hauseingang\nliegt im 1. Stock, einen direkten\nZugang zum Pferdestall hat es aus\nverständlichen Gründen nicht.\n\n
+Freunde der Mobilität gab es\nschon immer: Im Erdgeschoss\ngibt es tatsächlich einen\nkleinen Pferdestall und einen\nKutschenraum! Und wenn\nschon Pferde vorhanden sind,\ndarf der Hundezwinger natürlich\nauch nicht fehlen. Der Hauseingang\nliegt im 1. Stock, einen direkten\nZugang zum Pferdestall hat es aus\nverständlichen Gründen nicht.\n
 RES_01_08
-Ein Mehrfamilienhaus mit\nGarten. Ja, das sind sie, die\nneuen Eigentumswohnungen der\ngehobenen Klasse!\n\n
+Ein Mehrfamilienhaus mit\nGarten. Ja, das sind sie, die\nneuen Eigentumswohnungen der\ngehobenen Klasse!\n
 RES_01_10
-Das Haus ist das Ergebnis eines\nexperimentierfreudigen\nArchitekts. Jedesmal, wenn\nNachwuchs angesagt war, hat\ner sein Haus vergrössert und\ndabei immer nach den\nneuesten Trends anbauen lassen.\nEin Lehrstück vor allem für den\nUnternehmer, der die erste\nGeneralrenovation in Angriff\ngenommen hat.\n\n
+Das Haus ist das Ergebnis eines\nexperimentierfreudigen\nArchitekts. Jedesmal, wenn\nNachwuchs angesagt war, hat\ner sein Haus vergrössert und\ndabei immer nach den\nneuesten Trends anbauen lassen.\nEin Lehrstück vor allem für den\nUnternehmer, der die erste\nGeneralrenovation in Angriff\ngenommen hat.\n
 RES_01_12
-Eine private Sportschule.\nTurnhalle und Hallenbad sind\nselbstverständlich integriert.\n\n
+Eine private Sportschule.\nTurnhalle und Hallenbad sind\nselbstverständlich integriert.\n
 RES_01_15
-Große Wohnungen für große\nFamilien soll der Block\nbereithalten. Nur, was als\ngroße Familie gilt, ist im Lauf\nder Zeit immer kleiner\ngeworden.\n\n
+Große Wohnungen für große\nFamilien soll der Block\nbereithalten. Nur, was als\ngroße Familie gilt, ist im Lauf\nder Zeit immer kleiner\ngeworden.\n
 RES_01_16
-Den Anlass, die eine Hausseite\nrenovieren zu lassen, gab ein\nLastwagen, dessen Fahrer sich\nin der Distanz verschätzt hat.\nBezahlen muss die Gemeinde,\ndie gegen den Willen der\nGrundeigentümer die Bordsteine\nflach überteert hat.\n\n
+Den Anlass, die eine Hausseite\nrenovieren zu lassen, gab ein\nLastwagen, dessen Fahrer sich\nin der Distanz verschätzt hat.\nBezahlen muss die Gemeinde,\ndie gegen den Willen der\nGrundeigentümer die Bordsteine\nflach überteert hat.\n
 RES_01_18
-Der alte Herr Huber, den e\nnoch gibt, hört nicht mehr s\ngut; der Hausmeister, der ih\nimmer und immer wiede\nversucht klarzumachen, das\nman den vollautomatische\nLift nicht mit der kleinen Kurbe\nganz nach oben drehen muss\nstöhnt regelmässig "Mein Gott\nWalter"\n\n
+Der alte Herr Huber, den e\nnoch gibt, hört nicht mehr s\ngut; der Hausmeister, der ih\nimmer und immer wiede\nversucht klarzumachen, das\nman den vollautomatische\nLift nicht mit der kleinen Kurbe\nganz nach oben drehen muss\nstöhnt regelmässig "Mein Gott\nWalter"\n
 RES_01_21
-In die unteren fünf\nStockwerke sollten noch\nnach und nach Gewerbe\neinziehen. Das hatte sich als\nschlechte Idee\nherausgestellt und so hat man\naus dem Fahrstuhl die Knöpfe für\n3. und 4. Stock sang- und klanglos\nausgebaut. Die Tauben freut es\nallerdings.\n\n
+In die unteren fünf\nStockwerke sollten noch\nnach und nach Gewerbe\neinziehen. Das hatte sich als\nschlechte Idee\nherausgestellt und so hat man\naus dem Fahrstuhl die Knöpfe für\n3. und 4. Stock sang- und klanglos\nausgebaut. Die Tauben freut es\nallerdings.\n
 RES_01_22
-Am Anfang wollte jeder hin,\nheute leider fast jeder weg\nin die Vorstadt, die sich\ndurch die Zersiedelung längst\nin weiter Ferne befindet.\n\n
+Am Anfang wollte jeder hin,\nheute leider fast jeder weg\nin die Vorstadt, die sich\ndurch die Zersiedelung längst\nin weiter Ferne befindet.\n
 RES_01_23
-Die Form soll von einer Wette\nstammen: Der Geschäftsleiter\nder Firma Volkeroth Hochbau\nverlor hier eine Million, weil\nder Bauplan mit seiner Initiale\ndurchging. Da aber bis zur\nFertigstellung eh der Etat\ndreifach überzogen wurde, war\ner danach deutlich reicher als\nvorher.\n\n
+Die Form soll von einer Wette\nstammen: Der Geschäftsleiter\nder Firma Volkeroth Hochbau\nverlor hier eine Million, weil\nder Bauplan mit seiner Initiale\ndurchging. Da aber bis zur\nFertigstellung eh der Etat\ndreifach überzogen wurde, war\ner danach deutlich reicher als\nvorher.\n
 RES_02_01
-Zu zugig kann es in solche\nHütten kaum sein: Wichtig ist\nder Schatten und der fest\nleicht erhobene Fussboden\ngegen allerhand Getier.\n\n
+Zu zugig kann es in solche\nHütten kaum sein: Wichtig ist\nder Schatten und der fest\nleicht erhobene Fussboden\ngegen allerhand Getier.\n
 RES_02_16
-Großzügig bemessene\nWohnungen befinden sich im\nBlock. Weniger großzügig sind\ndie Bewohner: Nachdem die\nHypothekarzinsen 2%\ngestiegen sind, ist das Wohnen\nhier trotz schöner Einrichtung\neher zur Belastung geworden.\n\n
+Großzügig bemessene\nWohnungen befinden sich im\nBlock. Weniger großzügig sind\ndie Bewohner: Nachdem die\nHypothekarzinsen 2%\ngestiegen sind, ist das Wohnen\nhier trotz schöner Einrichtung\neher zur Belastung geworden.\n
 RES_02_20
-In dem Versuch, die\nBausünden der 60er\nattraktiver zu gestalten, hat\ndie Genossenschaft erst\nkürzlich mit dem Dachpool\ndie Lösung gefunden. Da\nkommt die globale Erwärmung\nauch gerade recht.\n\n
+In dem Versuch, die\nBausünden der 60er\nattraktiver zu gestalten, hat\ndie Genossenschaft erst\nkürzlich mit dem Dachpool\ndie Lösung gefunden. Da\nkommt die globale Erwärmung\nauch gerade recht.\n
 RES_10_01
-Auch wenn es zweistöckig\naussieht: Oben ist nur ein\nSchlafraum, denn der Ofen in\nder Küche muss für das ganze\nHaus reichen.\n\n
+Auch wenn es zweistöckig\naussieht: Oben ist nur ein\nSchlafraum, denn der Ofen in\nder Küche muss für das ganze\nHaus reichen.\n
 RES_10_05
-Ein eigenhändig renoviertes\nund modernisiertes\nFachwerkhaus mit\nwunderschönem Garten. Der\nEigentümer wird es sicher um\nkeinen Preis verkaufen wollen.\n\n
+Ein eigenhändig renoviertes\nund modernisiertes\nFachwerkhaus mit\nwunderschönem Garten. Der\nEigentümer wird es sicher um\nkeinen Preis verkaufen wollen.\n
 RES_11_01
-Die reedgedeckte\nFischerhütte wurde,\nnachdem der letzte Fischer\nstarb, an den Rand der Stadt\nversetzt und als\nFreilichtmuseum ausgebaut.\n\n
+Die reedgedeckte\nFischerhütte wurde,\nnachdem der letzte Fischer\nstarb, an den Rand der Stadt\nversetzt und als\nFreilichtmuseum ausgebaut.\n
 Residenz
-Schloss der zu Schnatterichs\n\nwurde mehrfach renoviert. Das\njetzige Aussehen stammt von\neinem Restaurierungsversuch\naus der Romantik, weshalb es\nimmer noch eine gefragte\nFilmkulisse ist.\n\n
+Schloss der zu Schnatterichs\n\nwurde mehrfach renoviert. Das\njetzige Aussehen stammt von\neinem Restaurierungsversuch\naus der Romantik, weshalb es\nimmer noch eine gefragte\nFilmkulisse ist.\n
 rightShipStop
 Frachtkai mit Landebrücke
 RUIN_0
-Ruinen\n\nDie Herren dieser großartigen\nBurg waren im 30jährigen\nKrieg mit den Falschen\nverbündet. Dennoch lässt sich\nimmer noch ihre einstige\nMacht erahnen.\n\n
+Ruinen\n\nDie Herren dieser großartigen\nBurg waren im 30jährigen\nKrieg mit den Falschen\nverbündet. Dennoch lässt sich\nimmer noch ihre einstige\nMacht erahnen.\n
 SandStationMHz
 Halt ohne Bahnsteig
 ShipDepot
@@ -459,15 +463,15 @@ Werft
 ShipDepotEW
 Schiffsdepot\n
 ShipStop
-Hafen\n
+Hafen
 STADIUM2
-Großes Stadion\n\nHier finden all die großen\ninternationalen Ereignisse statt.\n\n
+Großes Stadion\n\nHier finden all die großen\ninternationalen Ereignisse statt.\n
 Tennis_Court
-Tennisplätze\n\n
+Tennisplätze\n
 Terminal1930
 Flughafenabfertigungshalle v.1930
 Theatre
-Musicaltheater\n\n
+Musicaltheater\n
 Tower1930
 Flughafenkontrollturm v.1930
 TowerMoistboy
@@ -487,7 +491,7 @@ Stationsgebäude in viktorianischem Stil
 Vorplatz
 Bahnhofsvorplatz
 Windmill
-Windmühle\n\n
+Windmühle\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -520,6 +524,10 @@ factory_Concretefactory_details
 <title>Gasbetonwerk Details</title><h1>Gasbetonwerk</h1><p>Diese Fabrik stellt aus Kalk, Wasser, Sand und ein ganz bisschen Aluminium Gasbeton (jetzt Porenbeton) her. Die Poren kommen durch die Entstehung von Wasserstoff, wenn das Aluminiumpulver mit dem Wasser reagiert.</p><p>Gasbeton ist sehr leicht, isoliert gut und ist ein sehr veilseitig verwendeter Rohstoff. Erfunden wurde er in den 20er Jahren des 20. Jahrhunderts.</p>\n
 factory_Erzbergwerk_details
 <title>Erzbergwerk Details</title><h1>Erzbergwerk</h1>\n<p>Neben Salz zählt Eisen zu den ältesten bergbaulich gewonnenen \nProdukten. 8. - 15. Jh v.Chr. Eisenzeit (Kelten).\nVortrieb und Erzabbau waren bis ins 17. Jh reine Handarbeit. Um \ndas Gestein mürbe zu machen, brannte man große Holzstöße ab \n(Feuersetzarbeit). Heutzutage wird aber wegen dem einfacheren Zugang einfach der Berg darüber abgetragen, so auch in diesem Erzbergwerk im Tagebau.</p><p>Die ergiebigsten Eisenerzlager befinden sich in geologisch alten Gesteinsschichten; sie entstanden, als die ersten Photosynthesealgen die Meere mit Sauerstoff anreicherten und das im Meer gelöste Eisen sich als Rost auf den Stränden und auf dem Meeresgrund absetzte.</p>
+factory_fish_pond_details
+<title>Fischzucht Details</title> Bei einigen Fischarten, vor allem Lachsen, lohnt sich ein Zuchtbetrieb.
+factory_fish_swarm_details
+<title>Fischgrund Details</title> Reiche Fischgründe galten lange Zeit als unerschöpfliche Nahrungsquelle, doch manche gelten heute als überfischt. In den grossen Schleppnetzen der industriellen Fischerei verfangen sich auch immer wieder geschützte Tiere.
 factory_Kohlegrube_details
 <title>Kohlegrube Details</title><h1>Kohlegrube</h1><p>In der Kohlegrube fördern die Bergleute in schwerer Arbeit wertvolle Kohle. Kohle wird von Kraftwerken, Stahlwerken und anderen Industrien benötigt.</p>
 factory_Kohlekraftwerk_details
@@ -570,8 +578,14 @@ factory_Windkraftwerk_details
 Raffinerie (Benzin)
 3Raffinerie
 Raffinerie (B+KSt)
+bakery
+Großbäckerei
+brewery
+Brauerei
 Buchgrosshandel
 Buchhändler
+cannery
+Dosenabfüller
 Cementmill
 Zementfabrik
 ChemicalPlant
@@ -580,6 +594,20 @@ CHEMIST
 Apotheke
 Concretefactory
 Gasbetonwerk
+cow_farm
+Kuhställe
+dairy
+Milchverarbeiter
+fish_pond
+Fischteich
+fish_swarm
+Fischschwarm
+food_processing_plant
+Fertiggerichtehersteller
+grain_farm
+Getreidehof
+grain_mill
+Getreidemühle
 Incinerator
 Müllverbrennungsanlage
 Materialswholesale
@@ -612,6 +640,8 @@ scrap_yard
 Müllhof
 Stonequarry
 Steinbruch
+supermarket
+Supermarkt
 TANKE
 Tankstelle
 thermisches_Solarkraftwerk
@@ -620,18 +650,34 @@ Windkraftwerk
 Windkraftwerk\n
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
+beer
+Bier
 Buecher
 Bücher
+canned_food
+Dosen
 Cement
 Zement
 Chemicals
 Chemikalien
 Concrete
 Gasbetonsteine
+fish
+Fische
+flour
+Mehl
+food
+Fertiggerichte
 Gasoline
 Benzin
+grain
+Getreide
+meat
+Fleisch
 Medicine
 Medikamente
+milk
+Milch
 Moebel
 Möbel
 None
@@ -747,63 +793,63 @@ Ampeln
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Ahorn-1
-Ahorn\n\n
+Ahorn\n
 Ahorn-2
-Ahorn\n\n
+Ahorn\n
 Birke-1
-Birke\n\n
+Birke\n
 Buche-1
-Buche\n\n
+Buche\n
 Busch_2
-Busch\n\n
+Busch\n
 Kiefer_1
-Kiefer\n\n
+Kiefer\n
 Kiefer_2
-Kiefer\n\n
+Kiefer\n
 Kiefer_3
-Kiefer\n\n
+Kiefer\n
 Kiefer_4
-Kiefer\n\n
+Kiefer\n
 Kiefer_5
-Kiefer\n\n
+Kiefer\n
 Latschenkiefer
-Latsche (Bergkiefer, Legföhre)\nPinus montana\n\nImmergrüner nadeltragender Strauch bis\n6 m Höhe. Verbreitet in den\nGebirgen Mittel- und\nSüdeuropas bis in Höhen von\n2400m. Großflächige Bestände\nvor allem an der oberen\nWaldgrenze auf steinigen Böden\nund in Hochmooren. Das harte,\nharzreiche Holz wird auf den\nHochalmen als Brennholz\nverwendet. Aus den jungen\nSprossen gewinnt man Öl, das als\nDuftöl (Latschenkiefernöl) und\nInhalationsmittel verwendet\nwird.\n\n
+Latsche (Bergkiefer, Legföhre)\nPinus montana\n\nImmergrüner nadeltragender Strauch bis\n6 m Höhe. Verbreitet in den\nGebirgen Mittel- und\nSüdeuropas bis in Höhen von\n2400m. Großflächige Bestände\nvor allem an der oberen\nWaldgrenze auf steinigen Böden\nund in Hochmooren. Das harte,\nharzreiche Holz wird auf den\nHochalmen als Brennholz\nverwendet. Aus den jungen\nSprossen gewinnt man Öl, das als\nDuftöl (Latschenkiefernöl) und\nInhalationsmittel verwendet\nwird.\n
 Palmtree1
-Palme\n\n
+Palme\n
 Palmtree2
-Palme\n
+Palme
 Palmtree3
-Palme\n
+Palme
 Palmtree4
-Palme\n
+Palme
 Palmtree5
-Palme\n
+Palme
 Palmtree6
-Palme\n
+Palme
 Palmtree7
-Palme\n
+Palme
 Pappel-1
-Pappel\n\n
+Pappel\n
 Pappel-2
-Pappel\n\n
+Pappel\n
 Tanne_1
-Tanne\n\n
+Tanne\n
 Tanne_2
-Tanne\n\n
+Tanne\n
 Tanne_3
-Tanne\n\n
+Tanne\n
 Tanne_4
-Tanne\n\n
+Tanne\n
 Tanne_5
-Tanne\n\n
+Tanne\n
 Tanne_6
-Tanne\n\n
+Tanne\n
 Tree4
-Kiefern sind weltweit\ngesehen die wichtigsten\nBaumarten der\nForstwirtschaft. Meist\nanspruchslos und gutwüchsig,\nwerden sie oft an Stelle der\neinheimischen Baumarten für die\neffektive Wiederaufforstungen\nnach Waldzerstörungen und\nRodungen verwendet. Ursprung\nsind eigentlich aus kühl-feuchten\nKlimabereichen. Angebaut werden\nKiefern aber inzwischen weltweit\n- außer in der Antarktis.\n\n
+Kiefern sind weltweit\ngesehen die wichtigsten\nBaumarten der\nForstwirtschaft. Meist\nanspruchslos und gutwüchsig,\nwerden sie oft an Stelle der\neinheimischen Baumarten für die\neffektive Wiederaufforstungen\nnach Waldzerstörungen und\nRodungen verwendet. Ursprung\nsind eigentlich aus kühl-feuchten\nKlimabereichen. Angebaut werden\nKiefern aber inzwischen weltweit\n- außer in der Antarktis.\n
 Tree6
-Fichte (Rotfichte, Rottanne)\nPicea abies\n\nWeitverbreiteter, schlanker, immergrüner\nNadelbaum. Er erreicht eine\nHöhe von 35 bis 65m, einen\nStammdurchmesser bis 2m und\nein Alter bis zu 1000 Jahren.\nNatürliche Standorte sind Nord-\nund Osteuropa sowie die Gebirge\nMitteleuropas. Durch künstliche\nVerbreitung auch in tieferen\nRegionen angesiedelt. Daher der\nName "Brotbaum der heimischen\nForstwirtschaft". Verwendung:\nAussen- und Innenbau,\nUntertagebau, Gerüstebau,\nSpanplatten, Resonanzholz für\nMusikinstrumente, Zellulose- und\nPapierindustrie.\n\n
+Fichte (Rotfichte, Rottanne)\nPicea abies\n\nWeitverbreiteter, schlanker, immergrüner\nNadelbaum. Er erreicht eine\nHöhe von 35 bis 65m, einen\nStammdurchmesser bis 2m und\nein Alter bis zu 1000 Jahren.\nNatürliche Standorte sind Nord-\nund Osteuropa sowie die Gebirge\nMitteleuropas. Durch künstliche\nVerbreitung auch in tieferen\nRegionen angesiedelt. Daher der\nName "Brotbaum der heimischen\nForstwirtschaft". Verwendung:\nAussen- und Innenbau,\nUntertagebau, Gerüstebau,\nSpanplatten, Resonanzholz für\nMusikinstrumente, Zellulose- und\nPapierindustrie.\n
 Willow
-Trauerweide\n\n
+Trauerweide\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel
@@ -956,6 +1002,12 @@ Concept2Pass
 Concept 2 Personenwagen
 Concept2Rear
 Concept 2 hinterer Triebkopf
+Cooling_Container
+Kühlcontainerwagen
+Cooling_Truck
+Kühl-LKW
+Cooling_Waggon
+Kühlwagen
 DaimlerStoll
 Daimler Stoll
 Deponielaster
@@ -1002,6 +1054,10 @@ F7back
 F7 A Schiebelok
 FastFerry
 Luftkissenfahrzeug
+Fishing_Boat
+Fischfabrikschiff
+Fishing_Boat_DanMacK
+Fischereiboot
 Flachwagen
 Niederflurwagen
 Fokker_F27
@@ -1110,6 +1166,10 @@ MailExpress
 Postflugzeug
 Mailwagon
 Postwaggon
+Milk_Truck
+Milchlaster
+Milk_Waggon
+Milchwaggon
 Moebelschiff
 TPI/JET Güterschiff
 Moebelwagen

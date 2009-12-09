@@ -5,7 +5,7 @@
 #                              Language: ca Catala                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 17.10 2009                           #
+#                            Date Created: 9.12 2009                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Frank Penz - FrankP                             #
@@ -29,17 +29,17 @@ Estructura elevada
 01_CITY
 Ajuntament
 A1_ALTE_KIRCHE
-Una famosa catedral  antiga.\nTothom  hauria de veure \naquest fantàstic  edifici.\n\n
+Una famosa catedral  antiga.\nTothom  hauria de veure \naquest fantàstic  edifici.\n
 A2_SCHLOSS1
-El castell  del rei boig. \n¡Visitar-lo val  la pena!\n\n
+El castell  del rei boig. \n¡Visitar-lo val  la pena!\n
 A3_BURG1
-Algunes runes  que parlen de \ntemps millors.  Sempre són una\n visita interessant.\n\n
+Algunes runes  que parlen de \ntemps millors.  Sempre són una\n visita interessant.\n
 A4_SCHLOSS2
-Aquest vell  castell se  mereix\nuna  visita.\n\n
+Aquest vell  castell se  mereix\nuna  visita.\n
 A5_STONEHENGE
-Un antic anell  de pedres. \n¡Molt misteriós!\n\n
+Un antic anell  de pedres. \n¡Molt misteriós!\n
 A6_DOME
-Aquesta preciosa  catedral\nantiga  és una gran  atracció.\n\n
+Aquesta preciosa  catedral\nantiga  és una gran  atracció.\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 #__________________________________dummy_info___________________________________
@@ -110,8 +110,12 @@ Oel
 Petroli
 Papier
 Paper
+Passagiere
+Passatgers
 Plastik
 Plàstics
+Post
+Correu
 Sand
 Arena
 Stahl
@@ -226,5 +230,7 @@ TPSchienenbus
 TPI VT98 (dièsel)
 #______________________________________way______________________________________
 #______________________________________way______________________________________
+city_road
+Carrer
 #__________________________________way-object___________________________________
 #__________________________________way-object___________________________________

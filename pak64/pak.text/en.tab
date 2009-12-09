@@ -5,7 +5,7 @@
 #                             Language: en English                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 17.10 2009                           #
+#                            Date Created: 9.12 2009                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Alexander Brose - AlexB                           #
@@ -22,8 +22,12 @@
 #                       note: Administrator pak192.comic                       #
 #                             Dirk W. - DirrrtyDirk                            #
 #                                    note:                                     #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
 #                              Frank Penz - FrankP                             #
 #                      note: Administrator SimuTranslator                      #
+#                                    - GerdW                                   #
+#                                    note:                                     #
 #                         Roman Schwörer - Gotthardlok                         #
 #                                    note:                                     #
 #                           Hansjörg Malthaner - Hajo                          #
@@ -99,7 +103,7 @@ wooden road bridge\n
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 00_01_CITY
-old town hall
+Town Hall
 01_CITY
 Town hall
 02_CITY
@@ -121,7 +125,7 @@ Town hall
 04_CITY_C
 Town hall
 10_WOHN
-St. Luke's Church\n\nThis church is small but\ngrowing. Its mission work in\nthe city is attracting many\nnew members and visitors.\n
+St. Luke's Church\n\nThis church is small but growing. Its mission work in the city is attracting many new members and visitors.
 1930AirDepot
 Air depot of 1930
 1headquarter
@@ -131,17 +135,17 @@ bigger headquarters
 3headquarter
 international company headquarter
 A1_ALTE_KIRCHE
-famous church\n\nA famous old church with\nmarvellous paintings.\nEverybody should see this\nfantastic building.\n\n\n
+famous church\n\nA famous old church with\nmarvellous paintings.\nEverybody should see this\nfantastic building.\n\n
 A2_SCHLOSS1
-Neuschwanstein\n\nthe castle of the crazy king.\nThis is really worth seeing!\n\n\n
+Neuschwanstein\n\nthe castle of the crazy king.\nThis is really worth seeing!\n\n
 A3_BURG1
-Some ruins\n\ntelling of better times. They're\nalways worth a journey.\n\n\n
+Some ruins\n\ntelling of better times. They're\nalways worth a journey.\n\n
 A4_SCHLOSS2
-Old castle\n\nwith a marvellous collection\nof paintings. Perfect for a\nsightseeing tour, even\nwhen it rains.\n\n\n
+Old castle\n\nwith a marvellous collection\nof paintings. Perfect for a\nsightseeing tour, even\nwhen it rains.\n\n
 A5_STONEHENGE
-Stonehenge\n\nan ancient ring of stones.\nFeel the mystery walking\nbetween the monoliths.\n\n\n
+Stonehenge\n\nan ancient ring of stones.\nFeel the mystery walking\nbetween the monoliths.\n\n
 A6_DOME
-Old cathedral\n\nthe very heart of this city\nfor nearly thousand years.\n\n\n
+Old cathedral\n\nthe very heart of this city\nfor nearly thousand years.\n\n
 AirDepot
 Air depot of 1900
 AirportShed1930
@@ -173,103 +177,103 @@ Freight yard\n
 ChannelStop
 Wharf
 COM_00_01
-Small Shop\n\nThe low prices and friendly\nservice at this small shop\nkeep the parking lot full\nmost of the time.\n
+Small Shop\n\nThe low prices and friendly service at this small shop keep the parking lot full most of the time.
 COM_00_02
-Independent gas station\n\nIt's independent from the big\ntransportation companies\n(like yours), but there's no\nneed to remove it. It won't\ntake away any of your\nbusiness.\n\n\n
+Independent gas station\n\nIt's independent from the big\ntransportation companies\n(like yours), but there's no\nneed to remove it. It won't\ntake away any of your\nbusiness.\n\n
 COM_00_03
-This backyard garage\nwants to get out of this\nshadowy existence for a\nlong time and to open a\nshowroom on the Mainstreet.\nBut there is still this lack\nof money, permission and\nMainstreet.\n\n\n
+This backyard garage\nwants to get out of this\nshadowy existence for a\nlong time and to open a\nshowroom on the Mainstreet.\nBut there is still this lack\nof money, permission and\nMainstreet.\n\n
 COM_00_05
-Drive through bank. It's\ncalled a drive through\nbecause you don't stop,\nand when you pass through\nyour wallet magically\nempties.The manager can\nusually be seen wringing his\nhands with glee.\n\n\n
+Drive through bank. It's\ncalled a drive through\nbecause you don't stop,\nand when you pass through\nyour wallet magically\nempties.The manager can\nusually be seen wringing his\nhands with glee.\n\n
 COM_00_06
-Better coffee is nowhere to\nbe found that is better\nthan up on this cafe's\nroof-terrace\n\n\n
+Better coffee is nowhere to\nbe found that is better\nthan up on this cafe's\nroof-terrace\n\n
 COM_00_08
-Apartment Block\n\nThese apartments appeal to the\nupper middle class. There\nare some boutique shops on\nthe lobby floor.\n
+Apartment Block\n\nThese apartments appeal to the upper middle class. There are some boutique shops on the lobby floor.
 COM_00_10
-Medium Office Block\n\nThis building is home to many\nsmall firms. The underground\nparking garage and the juice\nbar on the first floor make\nit a great place to work.\n
+Medium Office Block\n\nThis building is home to many small firms. The underground parking garage and the juice bar on the first floor make it a great place to work.
 COM_00_11
-Nova's Novelties. A very\nbright and colourful Novelty\nShop which sells\neverything from Wax Lamps\nto Grey Battleships. (Now\nthat's a novelty)\n\n\n
+Nova's Novelties. A very\nbright and colourful Novelty\nShop which sells\neverything from Wax Lamps\nto Grey Battleships. (Now\nthat's a novelty)\n\n
 COM_00_12
-Office Block\n\nThis office building houses\nmany small, faceless\ncorporations. One day, they\neach hope to be large,\nfaceless corporations.\n
+Office Block\n\nThis office building houses many small, faceless corporations. One day, they each hope to be large, faceless corporations.
 COM_00_14
-This building may look like an\nold factory, but is in\nfact a highly organized\nillegal betting shop.\n\n\n
+This building may look like an\nold factory, but is in\nfact a highly organized\nillegal betting shop.\n\n
 COM_00_18
-Blade Tower\nThis office building maintains\nits position on the cutting\nedge of technology through\nconstant upgrades. Of course,\nall this attention to\nfeatures comes at a hefty\nprice. Rents here are 30%\nhigher than in nearby office\nspaces of similar size, but\nsome businesses still pay it.\n
+Blade Tower\nThis office building maintains its position on the cutting edge of technology through constant upgrades. Of course, all this attention to features comes at a hefty price. Rents here are 30% higher than in nearby office spaces of similar size, but some businesses still pay it.
 COM_00_22
-New UN building for Somalia.\n\n\n
+New UN building for Somalia.\n\n
 COM_01_01
-Balloon Launch\n\nThis is a hot-air balloon take\noff and landing site. This\nsite is frequented by a lot\nof politicians; that's why\nyou can't see any gas\nbottles.\n
+Balloon Launch\n\nThis is a hot-air balloon take off and landing site. This site is frequented by a lot of politicians; that's why you can't see any gas bottles.
 COM_01_04
-Bird Watcher Park\n\nThe city bird-watching\nassociation put up the\nmoney for this park to be\nbuilt. It has many trees and\nbird houses where bird can\nnest, as well as benches\nwhere bird watchers can sit\nto enjoy the sights and\nsounds.\n
+Bird Watcher Park\n\nThe city bird-watching association put up the money for this park to be built. It has many trees and bird houses where bird can nest, as well as benches where bird watchers can sit to enjoy the sights and sounds.
 COM_01_09
-Old cinema. Lots of old\nBlack & White movies\nare shown here. It is very\npopular with Charlie\nChaplin fans.\n\n\n
+Old cinema. Lots of old\nBlack & White movies\nare shown here. It is very\npopular with Charlie\nChaplin fans.\n\n
 COM_01_10
-The local clinic. The boring\nfront was replaced by a\nnew entrance to cheer\neveryone up, especially\nthose in for the dentists.\nDon't clench your teeth on\nthem!\n\n\n
+The local clinic. The boring\nfront was replaced by a\nnew entrance to cheer\neveryone up, especially\nthose in for the dentists.\nDon't clench your teeth on\nthem!\n\n
 COM_01_17
-Medical Center\n\nThis building houses the\noffices of many doctors.\nYou can get nearly any\nprocedure done here,\nincluding the famous\nwalletectomy.\n
+Medical Center\n\nThis building houses the offices of many doctors. You can get nearly any procedure done here, including the famous walletectomy.
 COM_01_18
-Assets Management\nCompany "Global Trust" is\na global funds trader. Their\nJunk Bond funds and micro\ncredit institutes in India\nand Peru make a lot of\nmoney. But will this continue\nin the future? There is no\nget-your-money-back-guarantee\non the stock-market.\n\n\n
+Assets Management\nCompany "Global Trust" is\na global funds trader. Their\nJunk Bond funds and micro\ncredit institutes in India\nand Peru make a lot of\nmoney. But will this continue\nin the future? There is no\nget-your-money-back-guarantee\non the stock-market.\n\n
 COM_01_20
-Holiday Tower\n\nThis office building has\nspecial events throughout\nthe year. On holidays, or\nfor a large fee, the\nmaintenance staff will make\nsure the offices are lighted\nor darkened to form pictures\non the sides.\n
+Holiday Tower\n\nThis office building has special events throughout the year. On holidays, or for a large fee, the maintenance staff will make sure the offices are lighted or darkened to form pictures on the sides.
 COM_02_02
-Ride Share\n\nThis parking lot is used by\ncarpooling businesspeople as\na meeting point for sharing\nrides. The city has\nencouraged this practice by\nposting signs reserving it for\nthis use. Some people sleep in\ntheir cars here, but the city\ndoes not encourage that.\n
+Ride Share\n\nThis parking lot is used by carpooling businesspeople as a meeting point for sharing rides. The city has encouraged this practice by posting signs reserving it for this use. Some people sleep in their cars here, but the city does not encourage that.
 COM_02_04
-Heritage Park\n\nThis park is set aside to\nprotect some of the city's\nheritage trees. Some of\nthese trees are over 200\nyears old.\n
+Heritage Park\n\nThis park is set aside to protect some of the city's heritage trees. Some of these trees are over 200 years old.
 COM_02_13
-Seafood Restaurant\n\nThis eatery is so popular,\nthe owner has had to\nexpand it three times. He\nfinds himself with less and\nless office space as he\nputs in more tables and chairs.\nTo eat supper here, you have\nto show up at noon, or you\nmight not get a table.\n
+Seafood Restaurant\n\nThis eatery is so popular, the owner has had to expand it three times. He finds himself with less and less office space as he puts in more tables and chairs. To eat supper here, you have to show up at noon, or you might not get a table.
 COM_02_19
-While the building itself is\nnot very notable its\nexternal elevator was soon\na tourist attraction. Even\nthough the tickets are\nexpensive, the real money\nis made by the kiosk next to\nthe queue for the elevator.\n\n\n
+While the building itself is\nnot very notable its\nexternal elevator was soon\na tourist attraction. Even\nthough the tickets are\nexpensive, the real money\nis made by the kiosk next to\nthe queue for the elevator.\n\n
 COM_03_14
-Pharmacy\n\nThis pharmacy has an\nextensive storage area to\nensure that it has whatever\nmedicines its customers\nneed. It is open 24/7 and\nhas a price-matching guarantee\nfor all generic medicines.\n
+Pharmacy\n\nThis pharmacy has an extensive storage area to ensure that it has whatever medicines its customers need. It is open 24/7 and has a price-matching guarantee for all generic medicines.
 COM_03_15
-Shortly before WWII this\nDepartment of the Ministry\nof Defense was erected,\ninfluenced by the futurists.\nUnfourtunately, it was\nsoon found out that the\nferro-concrete used was indeed\nmade to last a thousand\nyears. No way to beautify\nthis, even though today it is\nthe headquarter of a charity\norganisation.\n\n\n
+Shortly before WWII this\nDepartment of the Ministry\nof Defense was erected,\ninfluenced by the futurists.\nUnfourtunately, it was\nsoon found out that the\nferro-concrete used was indeed\nmade to last a thousand\nyears. No way to beautify\nthis, even though today it is\nthe headquarter of a charity\norganisation.\n\n
 COM_03_17
-Publisher's Headquarters\n\nThis building houses the\ncorporate headquarters of a\nlarge magazine publisher.\nThey publish a variety of\nperiodicals, including a\nmini-zine that lists mass-transit\ntimetables.\n
+Publisher's Headquarters\n\nThis building houses the corporate headquarters of a large magazine publisher. They publish a variety of periodicals, including a mini-zine that lists mass-transit timetables.
 COM_03_19
-Television Studios\n\nThis building houses several\ntelevision studios. One\nwhole floor is available for\ninfomercials and public\naccess programming. The\ncamera operators here are\nsome of the best in town.\n
+Television Studios\n\nThis building houses several television studios. One whole floor is available for infomercials and public access programming. The camera operators here are some of the best in town.
 COM_03_20
-12-story Office Building\nThis building houses many\noffices. The building\nsuperintendent keeps\neverything running smoothly,\nmost of the time, even\nthough he's hardly ever there.\n
+12-story Office Building\nThis building houses many offices. The building superintendent keeps everything running smoothly, most of the time, even though he's hardly ever there.
 COM_04_15
-This office building has\nbeen retrofitted many\ntimes, as you can see by\nthe satellite dish on the\ntop.  You will also notice a\nglass portion of the roof,\nwhich covers the swimming\npool three floors beneath. \nThe swimming pool has a\nslide, which is intended to\ninspire the computer\nprogrammers within, but\nunfortunately their mood is\noften wrecked when people\ndecide to take off their pants\nand sit on the glass roof.\n\n\n
+This office building has\nbeen retrofitted many\ntimes, as you can see by\nthe satellite dish on the\ntop.  You will also notice a\nglass portion of the roof,\nwhich covers the swimming\npool three floors beneath. \nThe swimming pool has a\nslide, which is intended to\ninspire the computer\nprogrammers within, but\nunfortunately their mood is\noften wrecked when people\ndecide to take off their pants\nand sit on the glass roof.\n\n
 COM_10_01
-Beautiful lake with trees\nnearby. What kid wouldn't\nwant to swim here at\nsummer and skate in winter\n\n\n
+Beautiful lake with trees\nnearby. What kid wouldn't\nwant to swim here at\nsummer and skate in winter\n\n
 COM_10_05
-This barn have been in use\nin a lot of year by a farmer\nJenkins. You could taste\nfresh milk if you want. Just\ncome here.\n\n\n
+This barn have been in use\nin a lot of year by a farmer\nJenkins. You could taste\nfresh milk if you want. Just\ncome here.\n\n
 COM_10_07
-Meditation Resort\n\nThis converted mansion\nfeatures a large butterfly\ngarden and live-in meditation\nconsultants to help visitors\nachieve inner peace. The\nprice to stay the weekend is\nhigh, but people still pay it.\n
+Meditation Resort\n\nThis converted mansion features a large butterfly garden and live-in meditation consultants to help visitors achieve inner peace. The price to stay the weekend is high, but people still pay it.
 COM_10_08
-Inventor's Studio\nThis building is owned by one\nof the bright fellows in\ntown who thinks up new\nideas. Local opinion varies\non whether the guy who\nlives here is an inventor or\njust a crackpot dreamer.\n
+Inventor's Studio\nThis building is owned by one of the bright fellows in town who thinks up new ideas. Local opinion varies on whether the guy who lives here is an inventor or just a crackpot dreamer.
 COM_10_10
-Gabled Pottery Store\n\nThis store has pottery of all\ndifferent types. There's\neven a section where you\ncan throw, glaze, and fire\nyour own pieces, for a\nsmall charge.\n
+Gabled Pottery Store\n\nThis store has pottery of all different types. There's even a section where you can throw, glaze, and fire your own pieces, for a small charge.
 COM_10_12
-This old creepy house\nresemble times when\nsimupeople haven't known\nwhat is holy power of\nelectrification or rail.\n\n\n
+This old creepy house\nresemble times when\nsimupeople haven't known\nwhat is holy power of\nelectrification or rail.\n\n
 COM_11_11
-Boarding House\nThis is a cozy place where\ntravelers can rest when\nthey come to this town.\nLive entertainment is\nprovided one night a week\n(and when a local performer\nwants to come in and earn\ntips on other nights).\n
+Boarding House\nThis is a cozy place where travelers can rest when they come to this town. Live entertainment is provided one night a week (and when a local performer wants to come in and earn tips on other nights).
 COM_11_12
-Spice Shop\nThis is a shop that carries\nspices from faraway places.\nThe atmosphere in the\nshop is worth the visit,\neven if you don't find a\nspice you like.\n
+Spice Shop\nThis is a shop that carries spices from faraway places. The atmosphere in the shop is worth the visit, even if you don't find a spice you like.
 Control_StationBlg
 railway control centre
 DenkFlor
-Flor Wauters Memorial\n\nThis monument is dedicated\nto Flor 'WF Ultd.' Wauters,\nthe famous engineer who\ncreated so many great road\nand rail vehicles. He is also\nwell known for designing many\nwell working factories.\n\n\n
+Flor Wauters Memorial\n\nThis monument is dedicated\nto Flor 'WF Ultd.' Wauters,\nthe famous engineer who\ncreated so many great road\nand rail vehicles. He is also\nwell known for designing many\nwell working factories.\n\n
 DenkHajo
-Hajo Malthaner Memorial\n\nThis monument is dedicated\nto Hansj?rg Malthaner, who\ncreated this game in seven\nyears. Demigods take\nlonger for such tasks.\n\n\n
+Hajo Malthaner Memorial\n\nThis monument is dedicated\nto Hansj?rg Malthaner, who\ncreated this game in seven\nyears. Demigods take\nlonger for such tasks.\n\n
 DenkMHz
-Georg Heiduk Memorial\n\nThis monument is dedicated\nto Georg Heiduk ("MHz")\nthe master of rendered\nbuildings. It stands for his\nsharp eye for details.\n\n\n
+Georg Heiduk Memorial\n\nThis monument is dedicated\nto Georg Heiduk ("MHz")\nthe master of rendered\nbuildings. It stands for his\nsharp eye for details.\n\n
 DenkOwen
-Memorial\n\nThis place is dedicated to\nOwen Rudge the famous\nfinance expert and sound\ntechnician.\n\n\n
+Memorial\n\nThis place is dedicated to\nOwen Rudge the famous\nfinance expert and sound\ntechnician.\n\n
 DenkSeth
-Memorial\n\nThis place is dedicated to\nSeth C. Triggs the famous\narchitect who designed so\nmany beautiful city\nbuildings. He is also well\nknown for doing many studies\nhow to improve traffic\nsystems.\n\n\n
+Memorial\n\nThis place is dedicated to\nSeth C. Triggs the famous\narchitect who designed so\nmany beautiful city\nbuildings. He is also well\nknown for doing many studies\nhow to improve traffic\nsystems.\n\n
 DenkTomas
-Memorial\n\nThis monument is dedicated\nto Tomas Kubes who\nhelped to improve\nSimutrans in many, many\naspects with advice and\nhard work.\n\n\n
+Memorial\n\nThis monument is dedicated\nto Tomas Kubes who\nhelped to improve\nSimutrans in many, many\naspects with advice and\nhard work.\n\n
 DenkTrikky
-Memorial\n\nThis monument is dedicated\nto 'Trikky' Rick McGreal the\nfamous architect who\ndesigned so many\nimpressive buildings.\n\n\n
+Memorial\n\nThis monument is dedicated\nto 'Trikky' Rick McGreal the\nfamous architect who\ndesigned so many\nimpressive buildings.\n\n
 DenkVM
-Memorial\n\nThis monument is dedicated\nto Manfred 'VT Vienna'\nTomaschitz the famous\nengineer who designed\nmany superior rail vehicles.\n\n\n
+Memorial\n\nThis monument is dedicated\nto Manfred 'VT Vienna'\nTomaschitz the famous\nengineer who designed\nmany superior rail vehicles.\n\n
 DenkVolker
-Memorial\n\nThis Stupa was built by Volker\nMeyer who improved\nSimutrans in many, many\nareas.\n\n\n
+Memorial\n\nThis Stupa was built by Volker\nMeyer who improved\nSimutrans in many, many\nareas.\n\n
 Eingang
 Entrance
 Feste
-Konuberts' Stronghold\n\nThis massive castle was\nerected around the year\n1400.\n\n\n
+Konuberts' Stronghold\n\nThis massive castle was\nerected around the year\n1400.\n\n
 Fluid_StationBlg
 oil tank
 FreightShipStop
@@ -285,35 +289,35 @@ big station hall right
 Goods_StationBlg
 Warehouse
 Gymnasium
-High school/grammar school\n\n\n
+High school/grammar school\n\n
 IND_00_01
-Warehouse\n\nThis warehouse is used for\nstoring wares... or shooting\nspy thriller movies.\n
+Warehouse\n\nThis warehouse is used for storing wares... or shooting spy thriller movies.
 IND_00_03
-Fuel/Oil Storage Tank\n\nNo smoking is allowed within\n25 ft. (8m)\n
+Fuel/Oil Storage Tank\n\nNo smoking is allowed within 25 ft. (8m)
 IND_00_05
-Water Tank\n\nThis tank holds drinking water\nfor this area of the city.\n
+Water Tank\n\nThis tank holds drinking water for this area of the city.
 IND_00_06
-Factory\n\nThis factory makes many\nuseful items, such as joy\nbuzzers and whoopee\ncushions.\n
+Factory\n\nThis factory makes many useful items, such as joy buzzers and whoopee cushions.
 IND_01_01
-Free parking. Some people\neven abandon their old\ncars here.\n\n\n
+Free parking. Some people\neven abandon their old\ncars here.\n\n
 IND_01_04
-Toy Factory\n\nThis factory produces\nold-fashioned wooden toys.\n
+Toy Factory\n\nThis factory produces old-fashioned wooden toys.
 IND_01_06
-Cog Factory\n\nIt makes either gears or\ncorporate employees.\n
+Cog Factory\n\nIt makes either gears or corporate employees.
 IND_01_10
-Tool Factory\n\nThis firm makes drop-forged\ntools. They will provide a\nfree replacement for any\ntool they made that\nbreaks.\n
+Tool Factory\n\nThis firm makes drop-forged tools. They will provide a free replacement for any tool they made that breaks.
 IND_02_01
-Brickyard\n\nThis firm makes bricks and\ncinder blocks of various\ntypes and colors.\n
+Brickyard\n\nThis firm makes bricks and cinder blocks of various types and colors.
 IND_02_10
-The old soap works still\nlooks as neat as the day it\nwas erected. A true miracle!\n\n\n
+The old soap works still\nlooks as neat as the day it\nwas erected. A true miracle!\n\n
 LargeShipStop
-Large freight crane
+Dock with Large Crane
 leftShipStop
 Heavy duty crane
 LeuchtturmShipStop
 Lighthouse Ship Stop
 Lighthouse
-Lighthouse\n\n\n
+Lighthouse\n\n
 MainTerminal1930
 Main terminal building (1930)
 MHzSmallStation
@@ -322,10 +326,14 @@ ModernAirTerminal477
 Modern air terminal
 MonorailDepot
 Monorail depot
+MonorailFoundation
+Monorail Storage Column
+MonorailGround
+Monorail Depot Foundation
 OldTownhall
-Old town hall\n\n\n
+Historic Hall\n\nThis building used to house the city officials' offices. Now, it houses a museum and coffee shop.
 Patricks_Rock
-Patrick's Rock\n\n\n
+Patrick's Rock\n\n
 PlainAirStop
 Aircraft Stop
 PostOffice
@@ -341,47 +349,49 @@ station hall
 rampShipStop
 Boat Ramp
 Raven_Kirche
-Church St. Meinrad\n\nThe hermit St. Meinrad has\nbeen accompagned by two\nravens according to the\nlegend. When he has been\nmurdered, the two ravens\nfollowed the murderers and\nhave convicted them. Today,\nat the place of his hut is\nthe \nmonastery Einsiedeln.\n\n\n
+Church St. Meinrad\n\nThe hermit St. Meinrad has\nbeen accompagned by two\nravens according to the\nlegend. When he has been\nmurdered, the two ravens\nfollowed the murderers and\nhave convicted them. Today,\nat the place of his hut is\nthe \nmonastery Einsiedeln.\n\n
 RES_00_01
-This small house may not\nlook out of the ordinary:\nBut it is right at the\ncenter of the Simutrans\nuniverse. It was the first\nbuildings errected in\nSimutrans.\n
+This small house may not look out of the ordinary: But it is right at the center of the Simutrans universe. It was the first buildings errected in Simutrans.
 RES_00_04
-House with Bay Windows\n
+House with Bay Windows
 RES_00_06
-A little fountain. Even if it\nis not so great as the one\nin Geneva, it is delighting\npeople walking around it,\nespecially in the\nsummertime.\n\n\n
+A little fountain. Even if it\nis not so great as the one\nin Geneva, it is delighting\npeople walking around it,\nespecially in the\nsummertime.\n\n
 RES_00_08
-Medium House with\nAttached Garage\n\nDon't worry. They use the\ncar to get to one of your\nmass-transit stations.\n
+Medium House with Attached Garage\n\nDon't worry. They use the car to get to one of your mass-transit stations.
 RES_00_09
-Park\n\nNearby residents like to come\nhere to feed the ducks\nand pigeons.\n
+Park\n\nNearby residents like to come here to feed the ducks and pigeons.
 RES_00_12
-Live less ordinary! The\ninterior is unique as well:\nPower outlet are for\nthree-phase-power only,\nthe transparent bath-tube\nis iluminated with neon\nlamps, the stove is powered\nby stirling motor und Paintings\nare projected onto the walls,\nbecause the architect forbid\nnails in the walls.\n\n\n
+Live less ordinary! The\ninterior is unique as well:\nPower outlet are for\nthree-phase-power only,\nthe transparent bath-tube\nis iluminated with neon\nlamps, the stove is powered\nby stirling motor und Paintings\nare projected onto the walls,\nbecause the architect forbid\nnails in the walls.\n\n
 RES_00_13
-Duplex\n\nGood hedges make good\nneighbors?\n
+Duplex\n\nGood hedges make good neighbors?
+RES_00_16
+Old Villa\n\nThis villa is something of a fixer-upper, but it has charm.
 RES_00_17
-Even for old houses like\nthis, consumption-based\nheating cost billing existed\n- everyone had to pay for\nhis own firewood.\n\n\n
+Even for old houses like\nthis, consumption-based\nheating cost billing existed\n- everyone had to pay for\nhis own firewood.\n\n
 RES_00_19
-Modern Apartments\n\nEach apartment has a balcony\nfor enjoying the view.\n
+Modern Apartments\n\nEach apartment has a balcony for enjoying the view.
 RES_00_23
-Residential Tower\n\nA round building for\nwell-rounded people.\n
+Residential Tower\n\nA round building for well-rounded people.
 RES_01_01
-Modern prefab house with a\nlarge room for the kid in the\nattic.\n\n\n
+Modern prefab house with a\nlarge room for the kid in the\nattic.\n\n
 RES_01_02
-A-Frame type house. Very\nstable, but with only a few\nwindows and walls, so it's\nnot really suitable for\npeople who like framed\npictures.\n\n\n
+A-Frame type house. Very\nstable, but with only a few\nwindows and walls, so it's\nnot really suitable for\npeople who like framed\npictures.\n\n
 RES_01_05
-Large Home\n\nWith its large den and shady\nback yard, this is the\nhome of a retired musician.\n
+Large Home\n\nWith its large den and shady back yard, this is the home of a retired musician.
 RES_01_10
-Modern House\n\nThe rooftop patio offers a\ngreat place to enjoy the\noutdoors without leaving\nthe house.\n
+Modern House\n\nThe rooftop patio offers a great place to enjoy the outdoors without leaving the house.
 RES_02_16
-Luxury Apartments\n\nThese apartments give their\nresidents room to breathe.\nThe penthouse is for people\nwho need to breathe more.\n
+Luxury Apartments\n\nThese apartments give their residents room to breathe. The penthouse is for people who need to breathe more.
 RES_11_02
-Bungalow\n
+Bungalow
 RES_11_03
-Rustic House\n
+Rustic House
 Residenz
-Residence\n\nThis place is used by the\nlocal Yoga Guru to teach\nmeditation and inner peace.\nThere are lots of things\ncalled Bongs here.\n\n\n
+Residence\n\nThis place is used by the\nlocal Yoga Guru to teach\nmeditation and inner peace.\nThere are lots of things\ncalled Bongs here.\n\n
 rightShipStop
 Quay with pier
 RUIN_0
-Medieval castle\n\nThis castle was becoming a\nruin, but parts of it have\nbeen reconstructed, and\nthe whole complex is a\nmuseum now.\nThe view over the landscape\nis fantastic, you just have to\nclimb lots of stairs to see it.\n\n\n
+Medieval castle\n\nThis castle was becoming a\nruin, but parts of it have\nbeen reconstructed, and\nthe whole complex is a\nmuseum now.\nThe view over the landscape\nis fantastic, you just have to\nclimb lots of stairs to see it.\n\n
 SandStationMHz
 Stop without platform
 ShipDepot
@@ -389,13 +399,15 @@ Shipyard
 ShipDepotEW
 Shipyard
 ShipStop
-Seaport\n
+Seaport
 STADIUM2
-Big stadium\n\nhosting all the international\nevents here.\n\n\n
+Big stadium\n\nhosting all the international\nevents here.\n\n
 Tennis_Court
-Tennis courts\n\n\n
+Tennis courts\n\n
 Terminal1930
 Airport Terminal (1930)
+Theatre
+Theatre\n\nMany people come here to see plays, concerts, and improvisational acts.
 Tower1930
 Airport tower (1930)
 TowerMoistboy
@@ -415,7 +427,7 @@ Station in Victorian style
 Vorplatz
 Forecourt
 Windmill
-Historic Windmill\n\nAttracts tilting knights errant.\n
+Historic Windmill\n\nAttracts tilting knights errant.
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -426,6 +438,8 @@ green_car
 green car
 Motorrad
 Motor bike
+orange_bus
+SimCo Bus
 Roadster
 Rag-top Roadster
 yellow_car
@@ -457,17 +471,23 @@ factory_Windkraftwerk_details
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
-Gasoline Refinery
+Oil Refinery
 3Raffinerie
-Refinery (Gas+Pl.)
+Oil Refinery
 Aufwindkraftwerk
 Upwind Power Station
 Autohaus
 Car shop
 Autohersteller
 Car factory
+bakery
+Bakery
+brewery
+Brewery
 Buchgrosshandel
 Book shop
+cannery
+Cannery
 Cementmill
 Cement Mill
 ChemicalPlant
@@ -476,10 +496,26 @@ CHEMIST
 Pharmacy
 Concretefactory
 Autoclaved Aerated Concrete Factory
+cow_farm
+Cattle Farm
+dairy
+Dairy
 Druckerei
 Printing works
 Erzbergwerk
 Iron Ore Mine
+fish_pond
+Fish Pond
+fish_swarm
+Fish Swarm
+food_processing_plant
+Food Processing Plant
+grain_farm
+Grain farm
+grain_mill
+Grain mill
+grain_windmill
+Wind mill
 Kohlegrube
 Coal mine
 Kohlekraftwerk
@@ -493,21 +529,27 @@ Home Market
 Nutzwald
 Timber Plantation
 Oelbohrinsel
-Oil rig
+Oil Rig
 Oelfeld
 Oilfield
 Oelkraftwerk
 Oil Power Plant
 Oelpumpe
 Oil Pump
+old_farm
+Farm
 Papierfabrik
 Paper mill
+Pharmaceutics
+Medicine Packaging Plant
 Raffinerie
 Refinery (Plastics)
+Rinnenkraftwerk
+Parabolic Solar Power Plant
 Saegewerk
 Sawmill
 SaegewerkMHz
-old sawmill
+Sawyer's Workshop
 Sandquarry
 Sand Quarry
 scrap_yard
@@ -516,6 +558,8 @@ Stahlwerk
 Steel mill
 Stonequarry
 Quarry
+supermarket
+Supermarket
 TANKE
 Gas station
 thermisches_Solarkraftwerk
@@ -528,18 +572,34 @@ Wind power plant
 #_____________________________________good______________________________________
 Autos
 Cars
+beer
+Beer
 Bretter
 Planks
 Buecher
 Books
+canned_food
+Canned Food
 Concrete
 AAC stones
 Eisenerz
 Iron ore
+fish
+Fish
+flour
+Flour
+food
+convenience food
+grain
+Grain
 Holz
 Wood
 Kohle
 Coal
+meat
+Meat
+milk
+Milk
 Moebel
 Furniture
 None
@@ -572,6 +632,14 @@ gemsen
 Chamois
 gooses
 Geese
+Hochsitz1
+Deer Stand
+Hochsitz2
+Deer Stand
+moles
+Moles
+rocks
+Rocks
 See1
 Lake with Waterfowl
 See2
@@ -634,6 +702,8 @@ LongBlockSignals
 Long Block Signal
 Minimum80
 minimum speed 80km/h
+NoAirEntry
+"No Entry" Taxiway Sign
 NoEntry
 no entry
 preSignals
@@ -651,49 +721,63 @@ Traffic lights
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Ahorn-1
-Maple Tree\n
+Maple Tree
 Ahorn-2
-Maple Tree\n
+Maple Tree
 Ahorn-Gruppe
-Stand of Maples\n
+Stand of Maples
 Birke-1
-birch\n\n\n
+birch\n\n
 Buche-1
-bush\n\n\n
+bush\n\n
 Busch_2
-bush\n\n\n
+bush\n\n
 Kiefer_1
-Red Pine\n
+Red Pine
 Kiefer_2
-Red Pine\n
+Red Pine
 Kiefer_3
-Red Pine\n
+Red Pine
 Kiefer_4
-Red Pine\n
+Red Pine
 Kiefer_5
-Red Pine\n
+Red Pine
 Latschenkiefer
-Mountain pine\n\n\n
+Mountain pine\n\n
+Palmtree1
+Palm Tree
+Palmtree2
+Palm Tree
+Palmtree3
+Palm Tree
+Palmtree4
+Palm Tree
+Palmtree5
+Palm Tree
+Palmtree6
+Palm Tree
+Palmtree7
+Palm Tree
 Pappel-1
-Poplar\n\n\n
+Poplar\n\n
 Pappel-2
-Poplar\n\n\n
+Poplar\n\n
 Tanne_1
-Fir\n\n\n
+Fir\n\n
 Tanne_2
-Fir\n\n\n
+Fir\n\n
 Tanne_3
-Fir\n\n\n
+Fir\n\n
 Tanne_4
-Fir\n\n\n
+Fir\n\n
 Tanne_5
-Fir\n\n\n
+Fir\n\n
 Tanne_6
-Fir\n\n\n
+Fir\n\n
 Tree6
-Fir\n\n\n
+Fir\n\n
 Willow
-willow\n\n\n
+willow\n\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel
@@ -720,6 +804,10 @@ H-Trans BR103
 Garratt
 1TPEllok
 F7 A
+221A
+JaCo 221A 4-6-0
+221A_tender
+JaCo 221A Tender
 2Ben155
 Deutsche Bahn BR 155
 2Diesellokomotive
@@ -742,6 +830,8 @@ A3-5_tender
 Tender for SBB A 3/5
 A380
 Airbus A380
+Adler
+Locmoto Eagle
 AdlerPersonenwagen
 Adler passenger car
 Autotrailer
@@ -752,28 +842,48 @@ Autotransporter
 H-Trans Car transporter
 Autotransportwagen
 TPI Lopomo Car transport waggon
+BB1280
+JaCo BB1280 
+BB200
+Empire BB200
 Be5-7
 BLS Be 5/7
 Book_Trike
 Parcel delivery trike
 Boxcar
 MJHN Box Car
+BR01
+SingCo BR01 4-6-2
+Br118DR
+Sojo Group BR118DR
+Br234
+Brose BR234
 BR38
 BR 38
 BR38-Tender
 Tender for BR38
+BR39
+SingCo BR289 2-8-2
+BR45
+SingCo BR45 2-10-2
+BR45-Tender
+SingCo BR45 Tender
 Br614back
 BR614 Passenger Train (rear)
 Br614car
 BR614 Passenger Car
 Br614front
 BR614 Passenger Train
+BR85
+SingCo BR85 2-6-4
 Bretteranhaenger
 WF Ultd. Planks trailer
 Brettertransporter
 WF Ultd. Planks truck
 Bretterwagen
 VT Vienna Planks car
+BRV36
+Colin BRV36
 Buchanhaenger
 Serj/H-Trans Book trailer
 Buchtrailer
@@ -800,8 +910,20 @@ Cargosprinter-Mittel
 Cargosprinter freight car
 Cargosprinter-Steuer
 Cargosprinter (Rear Unit)
+CC7100
+ACTrain CC7100
 Cementtrailer
 Cement Trailer
+Class86
+DanMoto Class 86
+CombinoShort(T)
+Combino GT-4S Passenger Car
+CombinoShortA(Mc)
+Combino GT-4S
+CombinoShortB(Mc)
+Combino GT-4S (rear)
+CombinoShortE(T)
+Combino GT-4S Passenger Car Companion
 Comet
 De Havilland 'Comet'
 Concept1Front
@@ -820,8 +942,12 @@ Concept2Pass
 Concept 2 Passenger Waggon
 Concept2Rear
 Concept 2 Rear Engine
+Cooling_Waggon
+Food cooling waggon
 DaimlerStoll
 DaimlerCo Bus
+DC-3
+MHz Airframes MC-3
 Deponielaster
 Waste Truck
 Deponielaster2
@@ -830,8 +956,12 @@ Doubledeck_city_bus
 Double-decker Bus
 DoubleDecker
 Double-decker Passenger Car
+E44
+Empire E44
 Eb3-5
 Swiss federal Railways Eb 3/5
+Ed2x2
+JaCo Saker 0-4-4-0
 EinheitsTender
 Standard tender
 EnCo_Bulk_Ship
@@ -858,10 +988,20 @@ Erztransporter
 Kirayami Bulk Goods Truck
 Erzwagen
 Bennhardt Hopper Car
+F7back
+Empire F7 A (rear)
 FastFerry
 Hermes Ferry
+Fishing_Boat
+Fishing Trawler
+Fishing_Boat_DanMacK
+Fishing boat
 Flachwagen
 Rama Covered Crate Car
+Fokker_F27
+MHz Airframes M-27
+FordZugmaschine
+MHz Long-nose Semi
 GarbageTruck
 Garbage Truck
 Gelenkbus_Ende
@@ -870,6 +1010,8 @@ Gelenkbus_Front
 Jointed Bus
 Godm_Spitz
 Passenger Clipper
+Grossraumwagen
+Empire "Alto" Passenger Car
 Guppy
 Aero Spacelines 377SGT Super Guppy
 H-Trans-Pantheress
@@ -884,16 +1026,152 @@ H-Trans-Tigress-II-Back
 H-Trans Tigress II (rear)
 H-Trans-Tigress-II-Front
 H-Trans Tigress II
+Hadley-Page-V1500
+RavenCo V1500 Goose
 Heavy_ore_truck
 H1750 Heavy Dump Truck
+HJMAvia
+HJM Avia Flat-nose Semi
+Hochbordwagen
+Ravenco Hopper Car
+Holzanhaenger
+H-Trans Log Trailer
+Holztrailer
+Wood Trailer
+Holztransporter
+H-Trans Log Truck
+Holzwagen
+H-Trans/Empire Logging Stake Car
+Horsebookscariage
+Crate Wagon
+Horsemailcariage
+Postal Wagon
+Horsepapercariage
+Paper Wagon
+Horsepassengerscariage
+Stagecoach
+Horses
+Carriage Team
+Horsewoodcariage
+Stake Wagon
+HVPosttransporter
+Eagle HVP Mail Truck
 ICE_TD-back
 Bennhardt TD (back)
 ICE_TD-car
 Bennhardt TD (passenger car)
 ICE_TD-front
 Bennhardt TD ICE
+IL-76
+Ilyushin IL-76 Mail Plane
+JNR_C11
+RavenCo JNR-C11 2-8-4
+JR_9600
+RavenCo JR9600 2-8-0
+JR_9600_tender
+RavenCo JR-9600 Tender
+Ju52
+RavAir Ju-52 Juliet
+JumboJet
+RavAir BN-747D
+kkStB_tender
+WEC kkStB Tender
+kkStB110
+WEC kkStB110 2-4-0
+kkStB91
+WEC kkStB91 0-6-0
+Klappdeckelwagen
+MHz Pellet Car Mk. I
+Kohleanhaenger
+H-Trans Bulk Trailer
+Kohletransporter
+H-Trans Bulk Truck
+Kohlewagen
+H-Trans Bulk Gondola
+Kunststofanhaenger
+H-Trans Pellet Trailer
+Kunststofftransporter
+H-Trans Pellet Truck
+Laaekks553_a
+MHz Car Carrier
+Laaekks553_b
+MHz Car Carrier Companion
+Lockhead_Tristar
+MHz M-1011 TriStar
+Lockheed10-Electra
+Simlock S-188 Electra
+logs
+Logs
+Lowa
+BennHardt T-26
+Lowa_Anhaenger
+BennHardt T-26 (car)
+Mack_Truck_01
+TMC Long-nose Semi
+Mailcontainerwagon
+MSP Mail Car
+MailExpress
+Empire Mail-Prop
+Mailwagon
+Empire "Alto" Mail Car
+Milk_Truck
+Milk truck
+Moebelschiff
+RavenCo Crate Freighter
+Moebelwagen
+DMC Boxcar
+Muellschiff
+MHz Waste Scow
+NeuOelwagen
+Empire Tanker
+NS1000
+P-Rail NS-1000
+NS1600
+P-Rail NS-1600
+Oelanhaenger
+H-Trans Tanker Trailer
+Oelwagen
+DMC Tanker
+Oilbarge
+Empire Tanker Barge
+Oiltrailer
+SimCo Tanker Trailer
+old_open_car
+SimCo Bulk Gondola
+OldOil
+Kahan Tanker Car
+Ox2
+Horses (2)
+Ox4
+Horses (4)
+Papieranhaenger
+H-Trans Paper Trailer
+Papiertransporter
+H-Trans Paper Truck
+Papierwagen
+DMC Paper Car
+Passagierwagen
+H-Trans Passenger Car
+Pferdebahn
+Tram Team
+Pferdebahnwagen
+SingCo Passenger Tram
 Postschiff
 Post Ship
+Posttransporter
+SimCo Postal Truck
+Postwagen
+H-Trans Mail Car
+PrPersonenwagen
+SingCo Passenger Car
+PrPostwagen
+SingCo Mail Car
+RenaultTH5
+Colin TH5 Flat-nose Semi
+Sandanhaenger
+SMP Bulk Trailer
+Sandtransporter
+SMP Bulk Truck
 schooner
 Novia Scotia Schooner
 Schooner_Bark
@@ -904,24 +1182,72 @@ SD40-2-front
 SD40
 setra_S10
 Setra S10 bus
+SlowFerry
+H-Trans Ferry Boat
+SMPoiltruck
+SMP Tanker Truck
+Stahlanhaenger
+H-Trans Steel Trailer
 Stahltransporter
 Steel Truck
+Stahlwagen
+DMC Steel Car
+Staubkesselwagen
+MHz Pellet Car Mk. II
 Steamer
 Steamboat
+Stoneanhaenger
+Empire Bulk-Tip Trailer
+Stonetransporter
+Empire Dump Truck
+SuperConstellation
+RavenCo R-1049 Super Constellation
+T13
+Bernhardt-Empire T-13
+T21_bus
+Empire T-21 Bus
+T24
+RK Ltd. T-24
+Tanklastzug
+H-trans Tanker Truck
+Tatra-T4
+Tatra T-4
+Tatra-T4_Wagon
+Tatra T-4 (car)
+TB13
+Bernhardt T-13 (car)
+TB24
+RK Ltd. T-24 (car)
 teaclipper
 Freight Clipper
+TPBeiwagen
+Brose TP-5200 (rear)
+TPPassagierwagen
+Empire-Osaka Passenger Car
+TPSchienenbus
+Brose TP-5200
 Tram_GT6_Ende
 Autocar GT-6 (rear)
 Tram_GT6_Kopf
 Autocar GT-6
+Tugboat
+SimCo Tugboat
 Ucy
-Powder/Pellet Car
+MHz Pellet Car Mk. III
+VolvoFH12
+Ikarus FH12 Flat-nose Semi
+waste wagon
+SimCo Waste Hopper
 X2000back
 X-ray 2000 Passenger Train (rear)
 X2000car
 X-ray 2000 Passenger Car
 X2000front
 X-ray 2000 Passenger Train
+XMail
+Kirayami X-1 Mail Car
+XTest
+Kirayami X-1
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road
@@ -944,6 +1270,8 @@ MaglevTrack
 Maglev Track
 MaglevTrackElevated
 Elevated Maglev Track
+mip_cobblestone_road
+MIP Cobblestone Road
 monorail
 Monorail Track
 Rillenschienen
@@ -968,3 +1296,5 @@ Wooden Sleeper Rails (Laid on Rocks)
 #__________________________________way-object___________________________________
 HighSpeedOverheadpower
 High-speed Overhead Lines
+SlowOverheadpower
+Overhead Lines

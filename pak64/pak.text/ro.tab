@@ -5,7 +5,7 @@
 #                              Language: ro Romana                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 17.10 2009                           #
+#                            Date Created: 9.12 2009                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Frank Penz - FrankP                             #
@@ -29,121 +29,121 @@ Pod feroviar din o?el
 01_CITY
 Prim?rie
 A1_ALTE_KIRCHE
-Biserica veche\n\n
+Biserica veche\n
 A2_SCHLOSS1
-Castelul Regelui Nebun\nAtrac?ie turistic?. Merit?\nvizitat.\n\n
+Castelul Regelui Nebun\nAtrac?ie turistic?. Merit?\nvizitat.\n
 A3_BURG1
-Mândria ora?ului :-)\n\n
+Mândria ora?ului :-)\n
 A4_SCHLOSS2
-Izvorul Palatului\n\n
+Izvorul Palatului\n
 A5_STONEHENGE
-Menhir\n\n
+Menhir\n
 A6_DOME
-Cathedral? gothic?\n\n
+Cathedral? gothic?\n
 COM_00_01
-Mic ABC\n\n
+Mic ABC\n
 COM_00_03
-Repara?ii automobile\n\n
+Repara?ii automobile\n
 COM_00_05
-Banc?\n\n
+Banc?\n
 COM_00_06
-Cafenea\n\n
+Cafenea\n
 COM_00_10
-Oficii cu parking\n\n
+Oficii cu parking\n
 COM_00_12
-Oficii\n\n
+Oficii\n
 COM_00_18
-Oficiu modern\n\n
+Oficiu modern\n
 COM_01_01
-Centru Zeppelin\n\n
+Centru Zeppelin\n
 COM_01_09
-Cinema\n\n
+Cinema\n
 DenkFlor
-Dedicat pt. Flor WF Ultd.\nWautersn, inginerul care a\nproiectat multe din\nvechicolele folosite în\nSimutrans.\n\n
+Dedicat pt. Flor WF Ultd.\nWautersn, inginerul care a\nproiectat multe din\nvechicolele folosite în\nSimutrans.\n
 DenkOwen
-Acest monument este\ndedicat lui Owen Rudge,\nspecialis în finan?e.\n\n
+Acest monument este\ndedicat lui Owen Rudge,\nspecialis în finan?e.\n
 DenkSeth
-Memorial ridicat pt. Seth C.\nTriggs.\n\n
+Memorial ridicat pt. Seth C.\nTriggs.\n
 DenkTomas
-Dedicat pt. Tomas Kubes\ngazda distribu?iei pak128.\n\n
+Dedicat pt. Tomas Kubes\ngazda distribu?iei pak128.\n
 DenkTrikky
-Statuie ridicat? pt. Trikky'\nRick McGreal.\n\n
+Statuie ridicat? pt. Trikky'\nRick McGreal.\n
 DenkVM
-Dedicat pt. Manfred VT\nVienna'  Tomaschitz.\n\n
+Dedicat pt. Manfred VT\nVienna'  Tomaschitz.\n
 DenkVolker
-Aceast? cl?dire a fost\nconstruit? de c?tre Volker\nMeyer.\n\n
+Aceast? cl?dire a fost\nconstruit? de c?tre Volker\nMeyer.\n
 FreightTrainStop
 Sta?ie marfar
 IND_00_01
-Magazin depozit\n\n
+Magazin depozit\n
 IND_00_02
-Barac?\n\n
+Barac?\n
 IND_00_03
-Magazin depozit carburan?i\n\n
+Magazin depozit carburan?i\n
 IND_00_04
-O?el?rie\n\n
+O?el?rie\n
 IND_00_05
-Cistren? ap?\n\n
+Cistren? ap?\n
 IND_00_06
-\mFabric?\n\n
+\mFabric?\n
 IND_00_09
-Uzin? ciment\n\n
+Uzin? ciment\n
 IND_00_10
-Hal?\n\n
+Hal?\n
 IND_00_12
-Interpriderea de utilaje\n\n
+Interpriderea de utilaje\n
 IND_00_14
-Optica\n\n
+Optica\n
 IND_00_16
-Fabric? de materiale\nfotosensibile\n\n
+Fabric? de materiale\nfotosensibile\n
 IND_01_01
-Parcare cu tax?\n\n
+Parcare cu tax?\n
 IND_01_03
-Cistern? carburan?i\n\n
+Cistern? carburan?i\n
 IND_01_07
-Transformator\n\n
+Transformator\n
 IND_01_08
-Fabrica de îngr???minte\nchimice\n\n
+Fabrica de îngr???minte\nchimice\n
 IND_01_09
-Rezervor de ap?\n\n
+Rezervor de ap?\n
 IND_01_10
-Fabric? de unelte\n\n
+Fabric? de unelte\n
 RES_00_02
-Cas? cu gr?din?\n\n
+Cas? cu gr?din?\n
 RES_00_03
-Cas? cu gr?din?\n\n
+Cas? cu gr?din?\n
 RES_00_04
-Case micu?e\n\n
+Case micu?e\n
 RES_00_06
-Mic duplex\n\n
+Mic duplex\n
 RES_00_07
-\Cas? mijlocie\n\n
+\Cas? mijlocie\n
 RES_00_09
-Hele?teu\n\n
+Hele?teu\n
 RES_00_11
-Intravilant cu gr?din?\n\n
+Intravilant cu gr?din?\n
 RES_00_13
-Duplex cu gr?din?\n\n
+Duplex cu gr?din?\n
 RES_00_16
-Vil? interbelic?\n\n
+Vil? interbelic?\n
 RES_01_01
-Cas? cu gr?din?\n\n
+Cas? cu gr?din?\n
 RES_01_02
-Cas? din lemn\n\n
+Cas? din lemn\n
 RES_01_07
-Vile luxoase\n\n
+Vile luxoase\n
 RES_01_10
-Cas? modern?\n\n
+Cas? modern?\n
 RUIN_0
-Ruine din evul mediu\n\n
+Ruine din evul mediu\n
 STADIUM2
-Stadion pt. rugbi\n\n
+Stadion pt. rugbi\n
 Tennis_Court
-Aren? tenis\n\n
+Aren? tenis\n
 Theatre
-Teatru\n\n
+Teatru\n
 Windmill
-Moar? de vânt\n\n
+Moar? de vânt\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 #__________________________________dummy_info___________________________________
@@ -206,10 +206,14 @@ Benzin?rie
 #_____________________________________good______________________________________
 Autos
 automobile
+beer
+bere
 Bretter
 scândur?
 Buecher
 c?r?i
+canned_food
+conserve
 Cement
 ciment
 Chemicals
@@ -218,14 +222,22 @@ Concrete
 beton
 Eisenerz
 fier
+food
+alimente
 Gasoline
 carburant
+grain
+grâne
 Holz
 bustean
 Kohle
 c?rbune
+meat
+carne
 Medicine
 Medicamente
+milk
+lapte
 Moebel
 mobil?
 None
@@ -255,13 +267,13 @@ piatr?
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Latschenkiefer
-Pin\n\n
+Pin\n
 Tree4
-Ulm\n\n
+Ulm\n
 Tree5
-Pin\n\n
+Pin\n
 Tree6
-Brad\n\n
+Brad\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 #____________________________________vehicle____________________________________
@@ -308,6 +320,8 @@ Buchwagen
 Vagon pt. transport c?r?i
 Bus
 Autobus
+Cooling_Waggon
+Vagon frigorific
 Erzanhaenger
 Remorc? pt. transport minereu de fier
 Erztransporter

@@ -5,7 +5,7 @@
 #                             Language: fr Francais                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 17.10 2009                           #
+#                            Date Created: 9.12 2009                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                  - Christophe                                #
@@ -17,6 +17,8 @@
 #                           Sava Bogdanets - Sava2004                          #
 #                                    note:                                     #
 #                          Jean Beaudet - cagliostro_2                         #
+#                                    note:                                     #
+#                                  - coincoin42                                #
 #                                    note:                                     #
 #                            Luc Mallet - luc.mallet                           #
 #                                    note:                                     #
@@ -83,89 +85,99 @@ Siège de votre entreprise!
 3headquarter
 Siège de votre entreprise!
 A1_ALTE_KIRCHE
-Une vieille église célèbre.\n\nTout le monde devrait avoir\nvu ce fantastique bâtiment.\n\n
+Une vieille église célèbre.\n\nTout le monde devrait avoir\nvu ce fantastique bâtiment.\n
 A2_SCHLOSS1
-Le château du roi fou.\n\nCela vaut la peine d'être vu!\n\n
+Le château du roi fou.\n\nCela vaut la peine d'être vu!\n
 A3_BURG1
-Des ruines\n\nqui en disent sur des temps\nmeilleurs. Elles valent\ntoujours le détour.\n\n
+Des ruines\n\nqui en disent sur des temps\nmeilleurs. Elles valent\ntoujours le détour.\n
 A4_SCHLOSS2
-Vieux château\n\nqui vaut toujours le coup\nd'oeuil.\n\n
+Vieux château\n\nqui vaut toujours le coup\nd'oeuil.\n
 A5_STONEHENGE
-Stonehenge\n\nUn ancien cercle de pierres.\nTrès mysterieux!\n\n
+Stonehenge\n\nUn ancien cercle de pierres.\nTrès mysterieux!\n
 A6_DOME
-Cathédrale\n\nCette magnifique vieille\ncathédrale est une\nvéritable attraction.\n\n
+Cathédrale\n\nCette magnifique vieille\ncathédrale est une\nvéritable attraction.\n
 AirDepot
 Hangar
 AirStop
 Passerelle d'embarquement\n
 AirTerminal477
 Terminal d'aéroport (1950)
+Avila_Big_StationBlg
+Grand bâtiment voyageur
+Avila_Small_StationBlg
+Petit bâtiment voyageur
 Avila_Warehouse_StationBlg
 Entrepôt
 BigPostOffice
 Grand Bureau De Poste
 BigTerminal477
 Grand Terminal
+Bulk_StationBlg
+Aire de stockage (en vrac)
 BusStop
 Arrêt de bus\n
 Car_StationBlg
 parc de stationnement
 CarDepot
 Depôt pour des véhicules routiers
+CarStop
+Zone de chargement
 ChannelStop
 Port fluvial
 COM_00_01
-Petite boutique\n\n
+Petite boutique\n
 COM_00_02
-Station service.\n\nAttention, les prix y sont\nexorbitants!\n\n
+Station service.\n\nAttention, les prix y sont\nexorbitants!\n
 COM_00_03
-Maboulle.\n\nUn bar-billard très branché.\n\n
+Maboulle.\n\nUn bar-billard très branché.\n
 COM_00_05
-Petite banque.\n\nCette banque n'est, ma foi,\npas très sure. Les hold-up\ny sont monaie courante.\n\n
+Petite banque.\n\nCette banque n'est, ma foi,\npas très sure. Les hold-up\ny sont monaie courante.\n
 COM_00_06
-Impossible de trouver un\nmeilleur café que celui servi\nsur la terrasse de ce\nbistrot\n\n
+Impossible de trouver un\nmeilleur café que celui servi\nsur la terrasse de ce\nbistrot\n
 COM_00_08
-Appartements avec des\nmagasins.\n\n
+Appartements avec des\nmagasins.\n
 COM_00_10
-Petit bloc de bureaux avec\nparking\n\n
+Petit bloc de bureaux avec\nparking\n
 COM_00_11
-Nova Nouveautés. Récent\net coloré magasin de\nnouveautés vendant de\ntout depuis les lampes à\nlave jusqu'aux cuirassés\ngris. (C'est toute une\nnouveauté)\n\n
+Nova Nouveautés. Récent\net coloré magasin de\nnouveautés vendant de\ntout depuis les lampes à\nlave jusqu'aux cuirassés\ngris. (C'est toute une\nnouveauté)\n
 COM_00_12
-Immeuble de bureaux\n\n
+Immeuble de bureaux\n
 COM_00_14
-Ce bâtiement ressemble à\nune usine, mais il s'agit en\nfait d'un entrepôt pour le\ntraffic illégale de livres de\nprières.\n\n
+Ce bâtiement ressemble à\nune usine, mais il s'agit en\nfait d'un entrepôt pour le\ntraffic illégale de livres de\nprières.\n
 COM_00_18
-Bureaux moderne\n\n
+Bureaux moderne\n
 COM_00_22
-Bureaux de l'ONU, sorte\nd'embassade pour la région\n\n
+Bureaux de l'ONU, sorte\nd'embassade pour la région\n
 COM_01_01
-Aire de départ et d'arrivé de\nmontgolfières. Le site est\nfréquenté par de nombreux\npoliticiens, c'est pourquoi il\nn'y a pas de bonbonne \nde gaz.\n\n
+Aire de départ et d'arrivé de\nmontgolfières. Le site est\nfréquenté par de nombreux\npoliticiens, c'est pourquoi il\nn'y a pas de bonbonne \nde gaz.\n
 COM_01_04
-Promenade boisée\n\n
+Promenade boisée\n
 COM_01_09
-Vieux cinéma\n\n
+Vieux cinéma\n
 COM_01_10
-La clinique locale. La\nfaçade a été changé par\nune nouvelle plus joyeuse\npour remonter le moral des\npatients, spécialement\nceux en visite chez le\ndentiste. Ne gardez pas de\ndents contre eux!\n\n
+La clinique locale. La\nfaçade a été changé par\nune nouvelle plus joyeuse\npour remonter le moral des\npatients, spécialement\nceux en visite chez le\ndentiste. Ne gardez pas de\ndents contre eux!\n
 COM_01_17
-Immeuble de bureau\n\n
+Immeuble de bureau\n
+Control_StationBlg
+Service du contrôle
 DenkFlor
-Monument\n\nCe monument est dédié à\nFlor 'WF Ultd.' Wauters, le\ncélèbre ingénieur qui créa\ntant de véhicules\nferroviaires et routiers. Il\nest aussi connu pour avoir\nréalisé de belles usines.\n\n
+Monument\n\nCe monument est dédié à\nFlor 'WF Ultd.' Wauters, le\ncélèbre ingénieur qui créa\ntant de véhicules\nferroviaires et routiers. Il\nest aussi connu pour avoir\nréalisé de belles usines.\n
 DenkHajo
-Monument\n\nMonument pour Hajo, le créateur de\nSimutrans.\n\n
+Monument\n\nMonument pour Hajo, le créateur de\nSimutrans.\n
 DenkMHz
-Monument\n\nCet obsérvatoire est pour MHz\net son pénétration pour des\ndétails.\n\n
+Monument\n\nCet obsérvatoire est pour MHz\net son pénétration pour des\ndétails.\n
 DenkOwen
-Monument\n\nCe lieu est dédié à Owen\nRudge le célèbre expert des\nfinances et technicien du\nson.\n\n
+Monument\n\nCe lieu est dédié à Owen\nRudge le célèbre expert des\nfinances et technicien du\nson.\n
 DenkSeth
-Monument\n\nCe lieu est dédié à Seth C.\nTriggs le célèbre architecte\nqui dessina tant de\nmagnifiques bâtiments\nurbains.\n\n
+Monument\n\nCe lieu est dédié à Seth C.\nTriggs le célèbre architecte\nqui dessina tant de\nmagnifiques bâtiments\nurbains.\n
 DenkTomas
-Monument\n\nCe monument est dédié à\nTomas Kubes qui aida à\nperfectionner Simutrans\ndans tant et tant de\ndomaines grâce à son\ntravail acharné.\n\n
+Monument\n\nCe monument est dédié à\nTomas Kubes qui aida à\nperfectionner Simutrans\ndans tant et tant de\ndomaines grâce à son\ntravail acharné.\n
 DenkTrikky
-Monument\n\nCe monument est dédié à\n'Trikky' Rick McGreal le\ncélèbre architecte qui\ndessina tant de bâtiments\nimposants.\n\n
+Monument\n\nCe monument est dédié à\n'Trikky' Rick McGreal le\ncélèbre architecte qui\ndessina tant de bâtiments\nimposants.\n
 DenkVM
-Monument\n\nCe monument est dédié à\nManfred 'VT Vienna'\nTomaschitz le célèbre\ningénieur qui réalisa le\ndesign de nombreux\nvéhicules ferroviaires.\n\n
+Monument\n\nCe monument est dédié à\nManfred 'VT Vienna'\nTomaschitz le célèbre\ningénieur qui réalisa le\ndesign de nombreux\nvéhicules ferroviaires.\n
 DenkVolker
-Monument\n\ncette sculpture fut contruite\npar Volker Meyer qui a\nperfectionné Simutrans\ndans tant et tant de\ndomaines.\n\n
+Monument\n\ncette sculpture fut contruite\npar Volker Meyer qui a\nperfectionné Simutrans\ndans tant et tant de\ndomaines.\n
 Eingang
 Entrée
 Fluid_StationBlg
@@ -177,29 +189,29 @@ Réservoir de gaz
 Goods_StationBlg
 Entrepôt
 Gymnasium
-Lycée/École secondaire\n\n
+Lycée/École secondaire\n
 IND_00_01
-Entrepôt\n\n
+Entrepôt\n
 IND_01_01
-Parking Gratuit\n\nIl y a même quelques\npersonnes qui abandonnent\nleur voiture ici.\n\n
+Parking Gratuit\n\nIl y a même quelques\npersonnes qui abandonnent\nleur voiture ici.\n
 IND_01_03
-Grand Réservoir De Gaz\n\n
+Grand Réservoir De Gaz\n
 IND_01_08
-Fabrique D'Engrais\n\n
+Fabrique D'Engrais\n
 IND_01_10
-Fabrique D'Outils\n\n
+Fabrique D'Outils\n
 LargeShipStop
 Port (grands quais)
 leftShipStop
 Grue Hautes-Charges
 Lighthouse
-Phare\n\n
+Phare\n
 ModernAirTerminal477
 Terminal Aérien Moderne
 MonorailDepot
 Dépôt De Monorail
 OldTownhall
-Vieil Hôtel De Ville\n\n
+Vieil Hôtel De Ville\n
 PlainAirStop
 Arrêt Pour Avions
 PostOffice
@@ -213,49 +225,51 @@ Quai avec comptoir à journaux
 PSHall2TrainStop
 Quai
 Raven_Kirche
-Église St-Meinrad\n\nL'eremite St-Meinrad a été\naccompagné par deux\ncorbeaux selon la legnde.\nQuand il fut assassiné, les\ncorbeaux suivaient les\nmeurtriers et les ont\nconvaincus. À l'endroit de son\neremitage se trouve\naujourd'hui le couvent\nEinsiedeln.\n\n
+Église St-Meinrad\n\nL'eremite St-Meinrad a été\naccompagné par deux\ncorbeaux selon la legnde.\nQuand il fut assassiné, les\ncorbeaux suivaient les\nmeurtriers et les ont\nconvaincus. À l'endroit de son\neremitage se trouve\naujourd'hui le couvent\nEinsiedeln.\n
 RES_00_02
-Petite maison avec jardin\n\n
+Petite maison avec jardin\n
 RES_00_03
-Petite maison avec jardin\n\n
+Petite maison avec jardin\n
 RES_00_04
-Petite maison\n\n
+Petite maison\n
 RES_00_06
-Un petit jet d'eau. Même s'il\nn'est pas aussi grand que\ncelui à Genève, il fait du\nplaisir aux gens qui se\npromènent autour de lui,\nspécialement en été.\n\n
+Un petit jet d'eau. Même s'il\nn'est pas aussi grand que\ncelui à Genève, il fait du\nplaisir aux gens qui se\npromènent autour de lui,\nspécialement en été.\n
 RES_00_07
-Maison avec jardin\n\n
+Maison avec jardin\n
 RES_00_08
-Maison moyenne\n\n
+Maison moyenne\n
 RES_00_09
-Petit parc avec un étang à\ncanard\n\n
+Petit parc avec un étang à\ncanard\n
 RES_00_11
-Grande maison avec jardin\n\n
+Grande maison avec jardin\n
 RES_00_13
-Maisons mitoyennes avec\njardins\n\n
+Maisons mitoyennes avec\njardins\n
 RES_00_19
-Appartements moderne\n\n
+Appartements moderne\n
 RES_01_01
-Maison préfabriquée\nmoderne avec une grande\nchambre pour les enfants\nau grenier\n\n
+Maison préfabriquée\nmoderne avec une grande\nchambre pour les enfants\nau grenier\n
 RES_01_07
-Grande maison luxueuse\n\n
+Grande maison luxueuse\n
 RES_01_08
-Maison avec jardin\n\n
+Maison avec jardin\n
 RES_01_10
-Maison moderne\n\n
+Maison moderne\n
 RES_01_12
-Immeuble en briques\n\n
+Immeuble en briques\n
 Residenz
-Résidence\n\nCet endroit est utilisé par le\nGourou de la place pour\nenseigner la méditation et\nla paix intérieur. Certaines\nde ses techniques sont\ntrès dicutables et font l'objet\nd'enquête des autorités de la\nplace.\n\n
+Résidence\n\nCet endroit est utilisé par le\nGourou de la place pour\nenseigner la méditation et\nla paix intérieur. Certaines\nde ses techniques sont\ntrès dicutables et font l'objet\nd'enquête des autorités de la\nplace.\n
 RUIN_0
-Château médieval\n\nCe château tombait en\nruine mais une partie a été\nreconstruite. C'est devenu\nun musée aujourd'hui. La\nvue du haut de la tour est\nmagnifique, mais il y a\nbeaucoup d'escalier et la\nsolidité laisse à désirer.  \n\n
+Château médieval\n\nCe château tombait en\nruine mais une partie a été\nreconstruite. C'est devenu\nun musée aujourd'hui. La\nvue du haut de la tour est\nmagnifique, mais il y a\nbeaucoup d'escalier et la\nsolidité laisse à désirer.  \n
 SandStationMHz
 Arrêt sans quai
 ShipDepot
 chantier naval
+ShipStop
+Port de voyageurs 
 STADIUM2
-Stade\n\nLe stade est lieu de\nnombreux événements\nsportifs très excitants.\n\n
+Stade\n\nLe stade est lieu de\nnombreux événements\nsportifs très excitants.\n
 Tennis_Court
-Terrain de tennis\n\n
+Terrain de tennis\n
 TrainDepot
 Dépôt de train
 TrainStop
@@ -267,7 +281,7 @@ Quai Maglev avec tableau d'affichage
 TramDepot
 Dépot de Trams
 Windmill
-Moulin à vent\n\n
+Moulin à vent\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -290,8 +304,14 @@ Autohaus
 Concessionnaire auto
 Autohersteller
 Usine de voitures
+bakery
+Boulangerie
+brewery
+Brasserie
 Buchgrosshandel
 Grossiste en livres
+cannery
+Conserverie
 Cementmill
 Cimenterie
 ChemicalPlant
@@ -300,10 +320,24 @@ CHEMIST
 Pharmacie
 Concretefactory
 Fabrique de béton
+cow_farm
+Ferme d'élevage
+dairy
+Laiterie
 Druckerei
 Imprimerie
 Erzbergwerk
 Mine de fer
+fish_pond
+Pisciculture
+fish_swarm
+Banc de poisson
+food_processing_plant
+Usine agroalimentaire
+grain_farm
+Ferme de culture
+grain_mill
+Meunerie
 Kohlegrube
 Mine de charbon
 Kohlekraftwerk
@@ -336,6 +370,8 @@ Stahlwerk
 Aciérie
 Stonequarry
 Carrière de pierre
+supermarket
+Supermarché
 TANKE
 Station-service
 Windkraftwerk
@@ -344,10 +380,14 @@ Eolienne
 #_____________________________________good______________________________________
 Autos
 Voitures
+beer
+Bière
 Bretter
 Planches
 Buecher
 Livres
+canned_food
+Conserves
 Cement
 Ciment
 Chemicals
@@ -356,20 +396,38 @@ Concrete
 Béton
 Eisenerz
 Minerai
+fish
+Poisson
+flour
+Farine
+food
+Plats cuisinés
 Gasoline
 Carburant
+grain
+Céréales
 Holz
 Bois
 Kohle
 Charbon
+meat
+Viande
 Medicine
 Medecine
+milk
+Lait
 Moebel
 Meuble
+None
+aucun
 Oel
 Pétrole
+Passagiere
+Passagers
 Plastik
 Plastique
+Post
+Message
 PrintersInk
 Imprimerie
 Sand
@@ -378,6 +436,8 @@ Stahl
 Acier
 Stone
 Pierre
+waste
+Déchet
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
 #__________________________________pedestrian___________________________________
@@ -400,8 +460,12 @@ Longs chargements
 #___________________________________roadsign____________________________________
 choose_point
 balise de choix
+ChooseSignals
+Signal de choix de quai
 Minimum80
 Vitesse minimale 80 km/h
+NoEntry
+Rue unisens
 Signals
 signaux
 traffic_light
@@ -409,7 +473,7 @@ feux tricolores
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Tree6
-Sapin\n\n
+Sapin\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel

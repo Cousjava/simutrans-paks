@@ -5,7 +5,7 @@
 #                              Language: et Eesti                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 17.10 2009                           #
+#                            Date Created: 9.12 2009                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Frank Penz - FrankP                             #
@@ -65,17 +65,17 @@ Su firma peakorter!
 3headquarter
 Su firma peakorter!
 A1_ALTE_KIRCHE
-kuulus kirik\n\n
+kuulus kirik\n
 A2_SCHLOSS1
-Neuschwansteini loss\n\nTõsiselt hullu kuninga loss. See\non väärt nägemist!\n\n
+Neuschwansteini loss\n\nTõsiselt hullu kuninga loss. See\non väärt nägemist!\n
 A3_BURG1
-Varemed\n\njutustavad parematest aegadest.\nNad on alati väärt retke.\n\n
+Varemed\n\njutustavad parematest aegadest.\nNad on alati väärt retke.\n
 A4_SCHLOSS2
-Vana loss\n\nsuurepärase maalide kollektsiooniga.\nTäiuslik vaatamisväärsus\nisegi vihmasel päeval.\n\n
+Vana loss\n\nsuurepärase maalide kollektsiooniga.\nTäiuslik vaatamisväärsus\nisegi vihmasel päeval.\n
 A5_STONEHENGE
-Stonehenge\n\niidne kivide ring. Tunne\nmüstikat monoliitide vahel\nkõndides.\n\n
+Stonehenge\n\niidne kivide ring. Tunne\nmüstikat monoliitide vahel\nkõndides.\n
 A6_DOME
-Vana katedraal\n\nselle linna keskus juba umbes\ntuhat aastat.\n\n
+Vana katedraal\n\nselle linna keskus juba umbes\ntuhat aastat.\n
 AirDepot
 Angaar aastast 1900
 AirportShed1930
@@ -103,27 +103,27 @@ parkla\n
 ChannelStop
 kai
 COM_00_01
-Väike pood\n\n
+Väike pood\n
 COM_00_05
-läbisõidupank\n\n
+läbisõidupank\n
 COM_00_08
-Kortermaja poodidega\n\n
+Kortermaja poodidega\n
 COM_00_10
-Keskmine büroohoone\n\n
+Keskmine büroohoone\n
 COM_00_12
-Büroohoone\n\n
+Büroohoone\n
 COM_00_18
-Moodne büroohoone\n\n
+Moodne büroohoone\n
 COM_01_09
-Vana kino\n\n
+Vana kino\n
 COM_01_17
-Keskmine büroohoone\n\n
+Keskmine büroohoone\n
 MHzSmallStation
 Jaamaehitis (MHz-ilt)
 ModernAirTerminal477
 Moodne lennujaamaterminal
 OldTownhall
-Vana linnahall\n\n
+Vana linnahall\n
 PostOffice
 Postkontor
 PSFreightTrainStop
@@ -133,49 +133,49 @@ Jaamahall putkaga
 PSHall2TrainStop
 Jaama hall
 Raven_Kirche
-St. Meinradi kirik\n\nEremiit püha Meinrad oli\nsaadetud kahe kaarna\npoolt. Kui ta mõrvati, kaks\nkaarnat jälitasid mõrvareid\nja mõistsid nad süüdi. Täna\non tema onni kohal Einsiedelni\nklooster.\n\n
+St. Meinradi kirik\n\nEremiit püha Meinrad oli\nsaadetud kahe kaarna\npoolt. Kui ta mõrvati, kaks\nkaarnat jälitasid mõrvareid\nja mõistsid nad süüdi. Täna\non tema onni kohal Einsiedelni\nklooster.\n
 RES_00_02
-Väike aiaga maja\n\n
+Väike aiaga maja\n
 RES_00_03
-Väike aiaga maja\n\n
+Väike aiaga maja\n
 RES_00_04
-Väike maja\n\n
+Väike maja\n
 RES_00_06
-Väike purskkaev. Kuigi see\nei ole nii suur kui Genevas,\nsee rõõmustab inimesi kes\nselle ümber käivad, eriti\nsuvel.\n\n
+Väike purskkaev. Kuigi see\nei ole nii suur kui Genevas,\nsee rõõmustab inimesi kes\nselle ümber käivad, eriti\nsuvel.\n
 RES_00_07
-Keskmine maja\n\n
+Keskmine maja\n
 RES_00_08
-Keskmine maja\n\n
+Keskmine maja\n
 RES_00_09
-Väike park parditiigiga\n\n
+Väike park parditiigiga\n
 RES_00_10
-Muljetavaldav Moistboy\nmõis\n\n
+Muljetavaldav Moistboy\nmõis\n
 RES_00_11
-Suur maja aiaga\n\n
+Suur maja aiaga\n
 RES_00_13
-Topeltmaja aiaga\n\n
+Topeltmaja aiaga\n
 RES_00_16
-Vana villa\n\n
+Vana villa\n
 RES_00_19
-Moodsad korterid\n\n
+Moodsad korterid\n
 RES_01_01
-Moodne paneelmaja suure\ntoaga pööningul lapse\njaoks.\n\n
+Moodne paneelmaja suure\ntoaga pööningul lapse\njaoks.\n
 RES_01_02
-A-Frame tüüpi maja\n\n
+A-Frame tüüpi maja\n
 RES_01_07
-Suur luksmaja\n\n
+Suur luksmaja\n
 RES_01_08
-Keskmine maja aiaga\n\n
+Keskmine maja aiaga\n
 RES_01_10
-Moodne maja\n\n
+Moodne maja\n
 RES_01_12
-Kortermaja\n\n
+Kortermaja\n
 RES_02_16
-Lukskorterid varikatusega\n\n
+Lukskorterid varikatusega\n
 Residenz
-Residents. Seda kohta\nkasutab kohalik joogaguru,\nkes õpetab mediteerimist ja\nsisemist rahu. Seal on palju\nBonge, mis iganes need ka\nei ole.\n\n
+Residents. Seda kohta\nkasutab kohalik joogaguru,\nkes õpetab mediteerimist ja\nsisemist rahu. Seal on palju\nBonge, mis iganes need ka\nei ole.\n
 Tennis_Court
-Tenniseväljakud\n\n
+Tenniseväljakud\n
 Tower1930
 Lennujaamatorn (1930)
 TowerMoistboy
@@ -185,7 +185,7 @@ Rongidepoo
 VictorianStation
 Viktooria-stiilis rongijaam
 Windmill
-Tuuleveski\n\n
+Tuuleveski\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -208,8 +208,14 @@ Autohaus
 Autopood
 Autohersteller
 Autotehas
+bakery
+Pagar
+brewery
+Õlletehas
 Buchgrosshandel
 Raamatupood
+cannery
+konservitsehh
 Cementmill
 tsemenditehas
 ChemicalPlant
@@ -279,7 +285,7 @@ Valgusfoor
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Latschenkiefer
-Mäe mänd\n\n
+Mäe mänd\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 RailTunnel

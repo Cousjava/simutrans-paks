@@ -5,7 +5,7 @@
 #                            Language: pt Portugues                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 17.10 2009                           #
+#                            Date Created: 9.12 2009                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Frank Penz - FrankP                             #
@@ -73,7 +73,7 @@ Prefeitura
 04_CITY_C
 Prefeitura
 10_WOHN
-Capela\n\nEsta pequena igreja foi construída\npelas mãos dos próprios\nmoradores da vizinhança.\n\n
+Capela\n\nEsta pequena igreja foi construída\npelas mãos dos próprios\nmoradores da vizinhança.\n
 1930AirDepot
 Hangar de 1930
 1headquarter
@@ -83,17 +83,17 @@ Esta é a sede da sua empresa!
 3headquarter
 Esta é a sede da sua empresa!
 A1_ALTE_KIRCHE
-Velha igreja\n\nUma famosa antiga igreja com\nmaravilhosas pinturas.\nTodo o mundo deveria ver\neste fantástico edifício.\n\n\n
+Velha igreja\n\nUma famosa antiga igreja com\nmaravilhosas pinturas.\nTodo o mundo deveria ver\neste fantástico edifício.\n\n
 A2_SCHLOSS1
-Castelo do Rei Louco\n\nVisitá-lo vale a pena!\n\n\n
+Castelo do Rei Louco\n\nVisitá-lo vale a pena!\n\n
 A3_BURG1
-Ruínas\n\nAlgumas ruínas que falam de\ntempos melhores. Sempre\nsão uma visita\ninteressante.\n\n\n
+Ruínas\n\nAlgumas ruínas que falam de\ntempos melhores. Sempre\nsão uma visita\ninteressante.\n\n
 A4_SCHLOSS2
-Velho Castelo\n\nTem uma maravilhosa coleção\nde pinturas. Perfeito para\numa excursão de turismo,\naté mesmo quando chove.\n\n\n
+Velho Castelo\n\nTem uma maravilhosa coleção\nde pinturas. Perfeito para\numa excursão de turismo,\naté mesmo quando chove.\n\n
 A5_STONEHENGE
-Stonehenge\n\nUm antigo círculo de pedras.\nSinta o mistério caminhando\nentre os monolitos...\n\n\n
+Stonehenge\n\nUm antigo círculo de pedras.\nSinta o mistério caminhando\nentre os monolitos...\n\n
 A6_DOME
-Velha Catedral\n\nÉ o mesmo coração desta\ncidade durante quase mil\nanos.\n\n\n
+Velha Catedral\n\nÉ o mesmo coração desta\ncidade durante quase mil\nanos.\n\n
 AirDepot
 Hangar de 1900
 AirportShed1930
@@ -125,95 +125,117 @@ Baia de carga\n
 ChannelStop
 Cais de canal
 COM_00_01
-Loja pequena\n\nOs baixos preços e o\natendimento amigável nesta\npequena loja mantém o\nestacianamento lotado na\nmaior parte do tempo.\n
+Loja pequena\n\nOs baixos preços e o atendimento amigável nesta pequena loja mantém o estacianamento lotado na maior parte do tempo.
 COM_00_02
-Posto de gasolina independente\n\nÉ independente das\ngrandes companhias de\ntransporte (como a sua),\nmas não há necessidade em\nremovê-lo. Não levará\nembora nada de seu negócio.\n\n\n
+Posto de gasolina independente\n\nÉ independente das\ngrandes companhias de\ntransporte (como a sua),\nmas não há necessidade em\nremovê-lo. Não levará\nembora nada de seu negócio.\n\n
 COM_00_03
-Garagem de fundo de quintal\n\nEsta garagem quer sair de sua\nexistência obscura há muito\ntempo e se tornar em uma sala\nde exibições na Avenida\nPrincipal. Mas ainda falta\ndinheiro, alvará e a Avenida Principal.\n\n\n
+Garagem de fundo de quintal\n\nEsta garagem quer sair de sua existência obscura há muito tempo e se tornar em uma sala de exibições na Avenida Principal. Mas ainda falta dinheiro, alvará e a Avenida Principal.\n\n
 COM_00_05
-Drive-through de banco\n\nÉ chamado de drive-through\nporque você não para, e quando\nvocê passa através dele sua\ncarteira se esvazia\nmagicamente. O gerente pode\nser visto esfregando as mãos\ncom um sorriso maroto.\n\n\n
+Drive-through de banco\n\nÉ chamado de drive-through porque você não para, e quando você passa através dele sua carteira se esvazia magicamente. O gerente pode ser visto esfregando as mãos com um sorriso maroto.\n\n
 COM_00_06
-Café Terraço\n\nNão há outra cafeteria na\ncidade melhor que essa que\nfica no terraço com vista para\no bairro.\n
+Café Terraço\n\nNão há outra cafeteria na cidade melhor que essa que fica no terraço com vista para o bairro.
 COM_00_08
-Bloco de apartamentos\n\nEstes apartamentos atraem a\nclasse média alta. Há algumas\nlojas de boutique no saguão de\nentrada.\n
+Bloco de apartamentos\n\nEstes apartamentos atraem a classe média alta. Há algumas lojas de boutique no saguão de entrada.
 COM_00_10
-Bloco de Escritórios\n\nEste edifício é lugar de muitas\nempresas pequenas. A garagem\nsubterrânea e o bar de sucos\nno térreo fazem-no um grande\nlugar para trabalhar.\n
+Bloco de Escritórios\n\nEste edifício é lugar de muitas empresas pequenas. A garagem subterrânea e o bar de sucos no térreo fazem-no um grande lugar para trabalhar.
 COM_00_11
-Novidades de Nova\n\nUma bem iluminada e colorida\nLoja de Novidades que vende\nde tudo, deste lâmpadas de\ncera a modelos de navios de\nbatalha. (Agora isso é uma\nnovidade)\n
+Novidades de Nova\n\nUma bem iluminada e colorida Loja de Novidades que vende de tudo, deste lâmpadas de cera a modelos de navios de batalha. (Agora isso é uma novidade)
 COM_00_12
-Bloco de escritório\n\nEste edifício comercial é lugar\nde muitas pequenas ânonimas\ncorporações. Todas elas, um\ndia, almejam ser grandes\ncorporações, ânonimas.\n
+Bloco de escritório\n\nEste edifício comercial é lugar de muitas pequenas ânonimas corporações. Todas elas, um dia, almejam ser grandes corporações, ânonimas.
+COM_00_14
+Laboratórios ACMI\n\nEsse edifício pode parecer uma fábrica normal, mas na realidade é um centro de experiências biológicas. 
+COM_00_18
+Conjunto de escritórios moderno\n\nUm moderno conjunto de escritórios. O elevador possui ar-condicionado, por isso sinta-se livre para aliviar-se do calor nele. 
+COM_00_22
+Sub-sede das Nações Unidas\n\nEste edifício foi projetado por um arquiteto e um engenheiro civil logo após que ambos fizeram as pazes entre si depois de longas décadas de concorrência e disputa. O edifício combina a criatividade do arquiteto, na criação de espaços funcionais e formas interessantes, com a racionalidade do engenheiro civil, na concepção de uma estrutura robusta e sofisticada.
 COM_01_01
-Base de lançamentos de balões\n\nEste é um lugar de decolagem e\naterissagem de balões de ar\nquente. O local é frequentado\npor uma grande quantidade de\npolíticos; isso explica o\nsumiço das garrafas de gás. Um\npadre conseguiu decolar por\nconta própria, mas com balões\npequenos de ar; seu paradeiro é\ndesconhecido.\n
+Base de lançamentos de balões\n\nEste é um lugar de decolagem e aterissagem de balões de ar quente. O local é frequentado por uma grande quantidade de políticos; isso explica o sumiço das garrafas de gás. Um padre conseguiu decolar por conta própria, mas com balões pequenos de ar; seu paradeiro é desconhecido.
+COM_01_04
+Parque dos observadores de pássaros\n\nGraças à associação dos ambientalistas, o prefeito construiu este parque onde podem ser observados pássaros. Nas árvores, há casinhas para pequenos pássaros, e há bancos para os apreciadores da natureza observarem os animais voadores. 
 COM_01_09
-Um velho cinema\n\nMuitos filmes em preto e branco\nsão exibidos aqui. É muito\npopular com os fãs de Charles Chaplin.\n\n\n
+Um velho cinema\n\nMuitos filmes em preto e branco são exibidos aqui. É muito popular com os fãs de Charles Chaplin.\n\n
+COM_01_10
+Clínica local\n\nO portão frontal sem graça foi trocado por um novo para alegrar a todos, especialmente àqueles que vão ao dentista que trabalha neste prédio. Sorria!
+COM_01_17
+Bloco de escritórios Médio\n\n A sede do Departamento de Ajuda e Tutoriais do Simutrans funciona aqui. 
 COM_01_18
-Companhia de Administração\nde ativos "Confiança\nGlobal" é uma comerciante\nde fundos globais. Os seus\ninstitutos de fundos e\nmicrocrédito na Índia e Peru\nfazem muito dinheiro. Mas isto\ncontinuará no futuro? Não há\nnenhuma garantia de retorno\nfinanceiro no mercado de\nações\n\n\n
+Companhia de Administração\nde ativos "Confiança\nGlobal" é uma comerciante\nde fundos globais. Os seus\ninstitutos de fundos e\nmicrocrédito na Índia e Peru\nfazem muito dinheiro. Mas isto\ncontinuará no futuro? Não há\nnenhuma garantia de retorno\nfinanceiro no mercado de\nações\n\n
 COM_01_20
-Arranha-céu\n\nUma torre de escritórios.\n\n
+Arranha-céu\n\nUma torre de escritórios.\n
 COM_01_21
-Edifício de escritórios\n\nHá janelas para todas as vistas\nmais belas da cidade. Assim\nnenhum funcionário fica\nesgotado.\n\n
+Edifício de escritórios\n\nHá janelas para todas as vistas\nmais belas da cidade. Assim\nnenhum funcionário fica\nesgotado.\n
 COM_01_22
-Edifício de escritórios\n\nEste edifício de escritórios\nfora construído em cima de\noutro edifício de escritórios.\nDevido ao cronograma\nrigoroso, a equipe de obra não\nteve tempo para remover o\nedifício velho, e assim eles\ntão-somente construíram um\nnovo em cima do velho.\n\n
+Edifício de escritórios\n\nEste edifício de escritórios\nfora construído em cima de\noutro edifício de escritórios.\nDevido ao cronograma\nrigoroso, a equipe de obra não\nteve tempo para remover o\nedifício velho, e assim eles\ntão-somente construíram um\nnovo em cima do velho.\n
+COM_02_02
+Estacionamento local\n\nÉ mais caro que estacionar na rua, mas pelo menos aqui você evita os "flanelinhas" e ladrões de carros.
 COM_02_04
-Pequena praça\n\nUma pracinha com uma bela\nárvore no centro. Os avós\nlevam os seus netinhos para lá\nàs tardes.\n\n
+Pequena praça\n\nUma pracinha com uma bela\nárvore no centro. Os avós\nlevam os seus netinhos para lá\nàs tardes.\n
 COM_02_13
-Restaurante de frutos do mar\n\n\n
+Restaurante de frutos do mar\n\n
 COM_02_16
-Edifício Santos Dumont\n\nAqui ficam escritórios das\nempresas de linhas aéreas da\nregião.\n\n
+Edifício Santos Dumont\n\nAqui ficam escritórios das\nempresas de linhas aéreas da\nregião.\n
 COM_02_17
-Antiga torre de escritórios\n\n\n
+Antiga torre de escritórios\n\n
 COM_02_19
-Enquanto o edifício em si\nnão é muito notável, seu\nelevador externo foi desde\nlogo uma atração turística.\nMesmo que os ingressos\nsejam caros, o dinheiro\ngrosso é ganho pelo quiosque\npróximo à fila para o elevador.\n\n\n
+Enquanto o edifício em si\nnão é muito notável, seu\nelevador externo foi desde\nlogo uma atração turística.\nMesmo que os ingressos\nsejam caros, o dinheiro\ngrosso é ganho pelo quiosque\npróximo à fila para o elevador.\n\n
 COM_03_14
-Escritório de arquitetura\n\nUm arquiteto comprou esta\nantiga oficina e a reformou\npara ser o seu escritório.\n\n
+Escritório de arquitetura\n\nUm arquiteto comprou esta\nantiga oficina e a reformou\npara ser o seu escritório.\n
 COM_03_15
-Logo antes da 2ª Guerra\nMundial, foi erguido este\ndepartamento do ministério\nda defesa, influenciado\npelos futuristas.\nInfelizmente logo foi\ndescoberto que o concreto\narmado realmente foi feito a\nmil anos. Nenhum modo para\nembelezar isto, mesmo que\nhoje seja a sede de uma\norganização de caridade.\n\n\n
+Logo antes da 2ª Guerra\nMundial, foi erguido este\ndepartamento do ministério\nda defesa, influenciado\npelos futuristas.\nInfelizmente logo foi\ndescoberto que o concreto\narmado realmente foi feito a\nmil anos. Nenhum modo para\nembelezar isto, mesmo que\nhoje seja a sede de uma\norganização de caridade.\n\n
 COM_03_17
-Torre de escritório de\nprojetos automobilísticos\n\n\n
+Torre de escritório de\nprojetos automobilísticos\n\n
 COM_03_19
-Escritório central de uma\ngrande seguradora\n\n\n
+Escritório central de uma\ngrande seguradora\n\n
+COM_03_20
+Escritórios Comerciais\n\nO aluguel de um escritório nesse prédio é caro, por isso só há escritórios de burocratas e políticos aqui. Ironicamente, os escritórios de políticos sempre estão sempre vazios, de segunda à segunda.
 COM_04_15
-Edifício de escritórios\n\nEste edifício foi\nreformado muitas vezes,\ncomo você pode ver pela\nantena parabólica no topo.\nVocê também notará uma\nporção de telhado de vidro\nque cobre a piscina três\npavimentos abaixo. A piscina\ntem um escorregador\nintencionado a inspirar os\nprogramadores de\ncomputadores, mas\ninfelizmente o humor deles é\ndestruído freqüentemente\nquando outras pessoas\ndecidem tirar suas calças e\nsentar no telhado de vidro.\n\n\n
+Edifício de escritórios\n\nEste edifício foi\nreformado muitas vezes,\ncomo você pode ver pela\nantena parabólica no topo.\nVocê também notará uma\nporção de telhado de vidro\nque cobre a piscina três\npavimentos abaixo. A piscina\ntem um escorregador\nintencionado a inspirar os\nprogramadores de\ncomputadores, mas\ninfelizmente o humor deles é\ndestruído freqüentemente\nquando outras pessoas\ndecidem tirar suas calças e\nsentar no telhado de vidro.\n\n
 COM_10_01
-Terreno com uma pequena lagoa\n\nQual é o garoto que não gostaria\nde nadar aqui no verão e\npatinar no gelo no inverno?\n
+Terreno com uma pequena lagoa\n\nQual é o garoto que não gostaria de nadar aqui no verão e patinar no gelo no inverno?
+COM_10_02
+Estacionamento em terreno baldio\n\nDesde a instalação dos parquímetros no centro da cidade, os estacionamentos em terrenos baldios estão sempre lotados.
 COM_10_05
-Uma antiga casa de\nmadeira\n\n\n
+Uma antiga casa de\nmadeira\n\n
 COM_10_07
-Hospedaria\n\nEstá é uma hospedaria onde os\nviajantes se encontram e\npodem deixar os cavalos para\nbeber água.\n\n
+Hospedaria\n\nEstá é uma hospedaria onde os\nviajantes se encontram e\npodem deixar os cavalos para\nbeber água.\n
 COM_10_08
-Loja de fantasias antigas\n\n\n\n
+Loja de fantasias antigas\n\n\n
+COM_10_10
+Loja de móveis coloniais\n\nUma grande loja de móveis coloniais. A decoração da loja tenta imitar uma casa de países frios, com móveis de madeira nobre. Pesadas cadeiras de mogno podem ser encontradas aqui, por um preço igualmente pesado.
+COM_10_11
+Casa & Comércio\n\nUma pequena loja embaixo, e a casa do dono do comércio em cima. Prático para o comerciante, e ainda ajuda a diminuir o tráfego de carros na cidade.
 COM_10_12
-Antiga casa assustadora\n\nEsta casa velha se assemelha a\ntempos de quando os\nsimutranianos ainda não\nconheciam a eletricidade nem\no aço.\n\n\n
+Antiga casa assustadora\n\nEsta casa velha se assemelha a\ntempos de quando os\nsimutranianos ainda não\nconheciam a eletricidade nem\no aço.\n\n
 COM_11_10
-Loja de música Raven &\nCompania.\n\n\n
+Loja de música Raven &\nCompania.\n\n
 COM_11_11
-Bulevard de lojas.\n\n\n
+Bulevard de lojas.\n\n
 COM_11_12
-Loja de pratarias antigas.\n\n\n
+Loja de pratarias antigas.\n\n
 Control_StationBlg
 Cabina de controle ferroviário
 DenkFlor
-Memorial Flor Wauters\n\nEste monumento é dedicado a\nFlor 'WF Ultd.' Wauters,\nfamoso engenheiro que\ncriou tantos veículos\nferroviários e rodoviários.\nTambém é bem reputado por\nprojetar fábricas de alto\ndesempenho.\n\n\n
+Memorial Flor Wauters\n\nEste monumento é dedicado a\nFlor 'WF Ultd.' Wauters,\nfamoso engenheiro que\ncriou tantos veículos\nferroviários e rodoviários.\nTambém é bem reputado por\nprojetar fábricas de alto\ndesempenho.\n\n
 DenkHajo
-Memorial Hansjörg Malthaner\n\nEste monumento é dedicado a\nHansjörg Malthaner, "Hajo",\nquem criou o Simutrans em\nsete anos.\n\n\n
+Memorial Hansjörg Malthaner\n\nEste monumento é dedicado a\nHansjörg Malthaner, "Hajo",\nquem criou o Simutrans em\nsete anos.\n\n
 DenkMHz
-Memorial Georg Heiduk\n\nEste monumento é dedicado a\nGeorg Heiduk ("MHz"), o\nmestre de edifícios.\nRepresenta o seu olho\naguçado para detalhes.\n\n\n
+Memorial Georg Heiduk\n\nEste monumento é dedicado a\nGeorg Heiduk ("MHz"), o\nmestre de edifícios.\nRepresenta o seu olho\naguçado para detalhes.\n\n
 DenkOwen
-Memorial Owen Rudge\n\nEste lugar é dedicado a Owen\nRudge, famoso financista e\ntécnico de som.\n\n\n
+Memorial Owen Rudge\n\nEste lugar é dedicado a Owen\nRudge, famoso financista e\ntécnico de som.\n\n
 DenkSeth
-Memorial Seth C. Triggs\n\nEste lugar é dedicado a Seth\nC. Triggs, o famoso\narquiteto que projetou\ntantos belos edifícios.\nTambém é bem reputado\npela realização de vários\nestudos para a melhoria dos\nsistemas de tráfego.\n\n\n
+Memorial Seth C. Triggs\n\nEste lugar é dedicado a Seth\nC. Triggs, o famoso\narquiteto que projetou\ntantos belos edifícios.\nTambém é bem reputado\npela realização de vários\nestudos para a melhoria dos\nsistemas de tráfego.\n\n
 DenkTomas
-Memorial Tomas Kubes\n\nEste monumento é dedicado a\nTomas Kubes, que tem\najudado a incrementar o\nSimutrans em muitíssimos\naspectos, com sugestões e\nmuito trabalho.\n\n\n
+Memorial Tomas Kubes\n\nEste monumento é dedicado a\nTomas Kubes, que tem\najudado a incrementar o\nSimutrans em muitíssimos\naspectos, com sugestões e\nmuito trabalho.\n\n
 DenkTrikky
-Memorial Trikky\n\nEste monumento é dedicado a\n'Trikky' Rick McGreal o\nfamoso arquiteto que\nprojetou tantos edifícios\nimpressionantes.\n\n\n
+Memorial Trikky\n\nEste monumento é dedicado a\n'Trikky' Rick McGreal o\nfamoso arquiteto que\nprojetou tantos edifícios\nimpressionantes.\n\n
 DenkVM
-Memorial Manfred 'VT\nVienna' Tomaschitz\n\nFamoso engenheiro que projetou\ntantos veículos ferroviários\nde alto nível.\n\n\n
+Memorial Manfred 'VT\nVienna' Tomaschitz\n\nFamoso engenheiro que projetou\ntantos veículos ferroviários\nde alto nível.\n\n
 DenkVolker
-Stupa Volker Meyer\n\nEste "Stupa" foi construído\npor Volker Meyer que\ndesenvolveu o Simutrans\nem diversas áreas.\n\n\n
+Stupa Volker Meyer\n\nEste "Stupa" foi construído\npor Volker Meyer que\ndesenvolveu o Simutrans\nem diversas áreas.\n\n
 Eingang
 Entrada de estação
 Feste
-Fortaleza de Konuberts\n\nEste castelo volumoso foi\nerigido ao redor do ano\n1400.\n\n\n
+Fortaleza de Konuberts\n\nEste castelo volumoso foi\nerigido ao redor do ano\n1400.\n\n
 Fluid_StationBlg
 Tanque de petróleo
 FreightShipStop
@@ -229,17 +251,25 @@ Grande saguão de estação, lado direito
 Goods_StationBlg
 Armazém
 Gymnasium
-Escola de ensino médio\n\n\n
+Escola de ensino médio\n\n
 IND_00_01
-Galpão\n\nEsse galpão é usado para armazenar\nmercadorias... ou gravar filmes\nde terror sobre espiões.\n
+Galpão\n\nEsse galpão é usado para armazenar mercadorias... ou gravar filmes de terror sobre espiões.
 IND_00_03
-Tanque para armazenametno de combustível\n\nProibido fumar a menos de 8m de\ndistância.\n
+Tanque para armazenametno de combustível\n\nProibido fumar a menos de 8m de distância.
+IND_00_05
+Tanque de água\n\nEste tanque estoca água potável para esta área da cidade.
+IND_00_06
+Fábrica\n\nEsta fábrica faz artigos muito úteis, como línguas-de-sogra e almofadas de barulho.
 IND_01_01
-Estacionamento grátis.\n\nAlgumas pessoas mesmo\nabandonam os seus carros\nvelhos aqui.\n\n\n
+Estacionamento grátis.\n\nAlgumas pessoas mesmo\nabandonam os seus carros\nvelhos aqui.\n\n
+IND_01_04
+Fábrica de brinquedo\n\nEsta fábrica produz antigos brinquedos de madeira.
+IND_01_10
+Fábrica de ferramentas\n\n. Esta empresa faz ferramentas forjadas. Eles proverão uma substituição grátis para qualquer ferramenta que eles fizeram que pode quebrar.
 IND_02_09
-Estação de tratamento de\nefluentes industriais \n\n
+Estação de tratamento de\nefluentes industriais \n
 IND_02_10
-Esta velha fábrica de sabão\nainda se parece tão limpo\nquanto no dia que foi\nerguido. Um verdadeiro\nmilagre!\n\n\n
+Esta velha fábrica de sabão\nainda se parece tão limpo\nquanto no dia que foi\nerguido. Um verdadeiro\nmilagre!\n\n
 LargeShipStop
 Molhe com guindaste
 leftShipStop
@@ -247,7 +277,7 @@ Cais com molhe e guindaste
 LeuchtturmShipStop
 Cais com molhe e farol
 Lighthouse
-Faról de navegação\n\n\n
+Faról de navegação\n\n
 MainTerminal1930
 Terminal aéreo 1930, prédio principal
 MHzSmallStation
@@ -261,9 +291,9 @@ Suporte para monotrilho
 MonorailGround
 Suporte para monotrilho
 OldTownhall
-Antiga prefeitura\n\n\n
+Antiga prefeitura\n\n
 Patricks_Rock
-Monte Patrick\n\n\n
+Monte Patrick\n\n
 PlainAirStop
 Parada de aeronaves
 PostOffice
@@ -279,43 +309,53 @@ Estação envidraçada
 rampShipStop
 Rampa de acesso à doca
 Raven_Kirche
-Igreja de St. Meinrad\n\nDe acordo com a lenda, o\nermitão St. Meinrad era\nacompanhado por dois\ncorvos. Quando ele foi\nassassinado, os dois\ncorvos seguiram os\nassassinos e assim serviram\ncomo prova da culpa deles.\nHoje, no lugar da cabana dele\nestá o monastério Einsiedeln.\n\n\n
+Igreja de St. Meinrad\n\nDe acordo com a lenda, o\nermitão St. Meinrad era\nacompanhado por dois\ncorvos. Quando ele foi\nassassinado, os dois\ncorvos seguiram os\nassassinos e assim serviram\ncomo prova da culpa deles.\nHoje, no lugar da cabana dele\nestá o monastério Einsiedeln.\n\n
 RES_00_01
-Esta casa pequena pode\nparecer nada fora do normal:\nmas ela está bem no certo do\nuniverso do Simutrans. Foi o\nprimeiro edifício erigido no\nSimutrans.\n
+Esta casa pequena pode parecer nada fora do normal: mas ela está bem no certo do universo do Simutrans. Foi o primeiro edifício erigido no Simutrans.
+RES_00_04
+Casa com janelas em baias
 RES_00_06
-Uma pequena fonte\n\nMesmo se ela não for tão grande\ncomo uma em Genebra, é\napreciada por pessoas que\ncaminham ao redor dela,\nespecialmente no verão.\n\n\n
+Uma pequena fonte\n\nMesmo se ela não for tão grande\ncomo uma em Genebra, é\napreciada por pessoas que\ncaminham ao redor dela,\nespecialmente no verão.\n\n
+RES_00_08
+Casa média com garagem anexa\n\nNão se preocupe. Eles usam o carro para chegar a uma de seus terminais de transporte.
+RES_00_09
+Parque do bairro\n\nMoradores vizinhos gostam de vir aqui para alimentar os patos e pombos.
 RES_00_12
-Mansão moderna\n\nViva menos simples! O interior é\núnico também: a instalação\nelétrica é só trifásica, a\nbanheira transparente é\niluminada com abajures de\nnéon, o fogão é alimentado por\nmotor stirling e as pinturas são\nprojetadas sobre as paredes,\nporque o arquiteto proibe pregos\nnas paredes.\n\n
+Mansão moderna\n\nViva menos simples! O interior é\núnico também: a instalação\nelétrica é só trifásica, a\nbanheira transparente é\niluminada com abajures de\nnéon, o fogão é alimentado por\nmotor stirling e as pinturas são\nprojetadas sobre as paredes,\nporque o arquiteto proibe pregos\nnas paredes.\n
+RES_00_13
+Sobrados geminados\n\nBoas cercas vivas fazem bons vizinhos?
 RES_00_17
-Mesmo para casas antigas\ncomo essa, contas de\nconsumo já existiam - cada\num já pagava por sua\nlenha.\n\n\n
+Mesmo para casas antigas\ncomo essa, contas de\nconsumo já existiam - cada\num já pagava por sua\nlenha.\n\n
+RES_00_19
+Apartamentos modernos\n\nCada apartamento tem uma sacada para desfrutar a vista.
 RES_01_01
-Casa moderna pré-fabricada\ncom um quarto grande para\na criança no sótão.\n\n\n
+Casa moderna pré-fabricada\ncom um quarto grande para\na criança no sótão.\n\n
 RES_01_02
-Chalezinho.\n\nMuito estável, mas com só\nalgumas janelas e paredes,\nassim não é realmente\nsatisfatório para pessoas\nque gostam de pôr quadros.\n\n\n
+Chalezinho.\n\nMuito estável, mas com só\nalgumas janelas e paredes,\nassim não é realmente\nsatisfatório para pessoas\nque gostam de pôr quadros.\n\n
 RES_01_05
-Grande casa unifamiliar com\numa árvore. É para músicos\naposentados.\n\n
+Grande casa unifamiliar com\numa árvore. É para músicos\naposentados.\n
 Residenz
-Residência universitária\n\nEste edifício está sendo\nusado para abrigar\nestudantes da\nuniversidade, se não\npuderem ter recursos para\nviver nos seus próprios.\n\n\n
+Residência universitária\n\nEste edifício está sendo\nusado para abrigar\nestudantes da\nuniversidade, se não\npuderem ter recursos para\nviver nos seus próprios.\n\n
 rightShipStop
 Cais com molhe
 RUIN_0
-Castelo Medieval\n\nEste castelo estava se\ntornando uma ruína, mas\npartes de dele foram\nreconstruídas, e o\ncomplexo inteiro é agora um\nmuseu. A visão em cima da\npaisagem é fantástica, você só\ntem que escalar muitas\nescadarias para ver isto.\n\n\n
+Castelo Medieval\n\nEste castelo estava se\ntornando uma ruína, mas\npartes de dele foram\nreconstruídas, e o\ncomplexo inteiro é agora um\nmuseu. A visão em cima da\npaisagem é fantástica, você só\ntem que escalar muitas\nescadarias para ver isto.\n\n
 SandStationMHz
 Estação sem plataforma
 ShipDepot
-Estaleiro\\n
+Estaleiro
 ShipDepotEW
 Estaleiro (L-O)\n
 ShipStop
 Pier
 STADIUM2
-Estádio de Futebol\n\n\n
+Estádio de Futebol\n\n
 Tennis_Court
-Quadra de tênis\n\n\n
+Quadra de tênis\n\n
 Terminal1930
 Terminal aeroportuário 1930, prédio secundário
 Theatre
-Teatro\n\n\n
+Teatro\n\n
 Tower1930
 Torre de controle aéreo (1930)
 TowerMoistboy
@@ -335,7 +375,7 @@ Estação em estilo victoriano
 Vorplatz
 Esplanada
 Windmill
-Moinho de vento\n\n\n
+Moinho de vento\n\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -352,6 +392,10 @@ yellow_car
 Carro amarelo
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
+factory_2Raffinerie_details
+<title>Detalhes da Refinaria (gasolina)</title><h1>Refinamento do petróleo</h1><p>Nesta unidade de processamento industrial é onde o óleo cru é tratado e refinado para obter produtos derivados como o diesel, a gasolina, entre outros. As instalações têm uma intrincada e complexa rede de tubos e dutos que transportam os fluidos de uma unidade de processamento à outra.<br><br>\nO processo de refinamento do óleo cru para obter combustíveis inclui várias fases: aquecimento, decantação por fervura, e destilacção para obter cada um dos vários componentes distintos do petróleo.</p>
+factory_3Raffinerie_details
+<title>Detalhes da Refinaria (Gás+Plást.)</title><h1>Obtenção do plástico</h1><p>Existem muitos tipos de plásticos, mas nesta unidade fabrica-se especificamente os de tipo sintético derivados do petróleo como o polietileno, PVC e o acrílico.<br><br>\nHoje em dia, o plástico é usado em todos os âmbitos da vida moderna tais como isolamento elétrico, embalagens, sacos de lixo, tubos, peças de motores, carrocerias, brinquedos, malas, artigos esportivos, fibras têxteis, eletrodomésticos, aparelhos eletrônicos e móveis... está em toda parte.</p>
 factory_Buchgrosshandel_details
 <title>Detalhes da Livraria</title><h1>Livraria</h1><p>Esta livraria tem tudo o que pode ser impresso. Desde uma enciclopédia de 271 volumes sobre páginas amarelas para a Internet até revistas de mangá; até mesmo as etiquetas de preços são escritas de trás para frente...</p>
 factory_Cementmill_details
@@ -370,8 +414,12 @@ factory_Oelbohrinsel_details
 <title>Sobre as Plataformas de petróleo</title><h1>Plataformas de petróleo</h1><p>A segunda metade do século XX trouxe necessidade pelo petróleo - o consumo dobrou a cada década. Além dos recursos minerais, o mar também ofereceu alguns depósitos de petróleo, embora difíceis de se alcançar.<br><br>As plataformas de petróleo são estruturas construídas para explorar estes recursos localizados nas plataformas continentais (profundidade 0 a 200 metros). Elas são ENORMES, mas ninguém na verdade percebe isto - a maior parte da estrutura está escondida debaixo da superfície da água. E também caro de se manter. As colunas que sustém a plataforma são normalmente ocas e também funcionam como reservatório para petróleo.<br><br>A plataforma de petróleo maior no mundo, Statfjord B, foi construída pela Noruega. Seu peso é aproximadamente de 800,000 toneladas e uma altura aproximadamente de 192 m. Com a torre, sua altura aumenta mais outros 80 metros.</p>
 factory_Oelfeld_details
 <title>Sobre Campos de petróleo</title><h1>Campos de petróleo </h1><p>O petróleo  é uma matéria-prima que já foi usada para pinturas, lubrificantes e também como um combustível para aquecimdo antes da mudança do século XIX para o XX. Então ganhou grande importância com a máquina de combustão a explosão e os automóveis.</p><p>O petróleo é um  líquido consistindo de numerosos hidrocarbonetos. É incerto de como exatamente os depósitos de petróleo vieram a existir, provavelmente foi um processo similar à formação depósitos de carvão, mas com algumas condições extras: sob alta-pressão e sem oxigênio. Eles estão numa profundidade de até centenas de metros. O petróleo é encontrado normalmente junto com gás sob alta-pressão, o que facilita o seu bombeamento à superfície.</p>
+factory_Rinnenkraftwerk_details
+<title>Detalhes da Usina solar cilindro-parabólica</title><h1>Usina solar cilindro-parabólica</h1><p>A luz solar é focalizada em um tubo de óleo que usa espelhos parabólicos que seguem o sol. O óleo é aquecido até pelo menos 300°C e passa por um trocador de calor para produzir vapor que move uma turbina. Foram construídas nove destas centrais elétricas na Califórnia, entretanto um imposto especial foi estabelecido sobre a eletricidade solar. A 384MW, eles são sem dúvida as centrais elétricas solares mais potentes.</p>
 factory_Stahlwerk_details
 <title>Sobre as siderúrgicas</title><h1>Siderúrgicas</h1><p>(Fundições)<br><br>Estas indústrias convertem minério férreo em ferro ou aço. Isto é feito aquecendo-se minério (ou sucata de ferro) em alto-fornos - estruturas cilíndricas enormes que podem resistir ao imenso calor de cerca de 2000°C. O minério lá dentro se funde rapidamente e se separa numa porção de ferro líquido e escória que flutua em cima.</p><p>O ferro é em seguida processado em conversores para reduzir o volume de carbono; quanto menos carbono tiver, melhor qualidade de aço você adquire. Tal processo precisa de muita energia, normalmente obtida queimando-se montanhas de carvão.<p>
+factory_Stonequarry_details
+<title>Detalhes da Pedreira</title><h1>Pedreira</h1><p>A céu aberto, se extraem grandes quantidades de pedras para uso industrial ou decoração como mármore, granito, calcário e ardósia. O problema vem quando a vida útil da pedreira termina, e aparece o grande problema ecológico e ambiental.</p>
 factory_TANKE_details
 <title>Detalhes de posto de gasolina</title><p>Um posto de gasolina agonizante: nenhum negócio visível. Então de onde todos os carros estão adquirindo o seu combustível...?</p>
 factory_Windkraftwerk_details
@@ -388,8 +436,14 @@ Autohaus
 Loja de automóveis
 Autohersteller
 Fábrica de automóveis
+bakery
+Padaria
+brewery
+Cervejaria
 Buchgrosshandel
 Livraria
+cannery
+Enlatadora
 Cementmill
 Cimenteira
 ChemicalPlant
@@ -398,16 +452,34 @@ CHEMIST
 Farmácia
 Concretefactory
 Concreteira
+cow_farm
+Fazenda de gado bovino
+dairy
+Laticínio
 Druckerei
 Editora
 Erzbergwerk
 Mina de ferro
+fish_pond
+Pesqueiro
+fish_swarm
+Fazenda marinha
+food_processing_plant
+Fábrica de alimentos
+grain_farm
+Fazenda de grãos
+grain_mill
+Moinho
+grain_windmill
+Moinho de Vento
 Incinerator
 Incinerador
 Kohlegrube
 Mina de carvão
 Kohlekraftwerk
 Usina termoelétrica
+Marketplace
+Mercado
 Materialswholesale
 Depósito de materiais
 Moebelfabrik
@@ -426,6 +498,8 @@ Oelkraftwerk
 Usina diesel-elétrica
 Oelpumpe
 Poço de petróleo
+old_farm
+Fazenda
 Papierfabrik
 Fábrica de Papel
 Pharmaceutics
@@ -446,6 +520,8 @@ Stahlwerk
 Siderúrgica
 Stonequarry
 Pedreira
+supermarket
+Supermercado
 TANKE
 Posto de Gasolina
 thermisches_Solarkraftwerk
@@ -458,10 +534,14 @@ Usina eólio-elétrica
 #_____________________________________good______________________________________
 Autos
 Automóveis
+beer
+Cerveja
 Bretter
 Tábuas
 Buecher
 Livros
+canned_food
+Enlatados
 Cement
 Cimento
 Chemicals
@@ -470,14 +550,26 @@ Concrete
 Concreto
 Eisenerz
 Ferro
+fish
+Peixe
+flour
+Farinha
+food
+Comida
 Gasoline
 Gasolina
+grain
+Grãos
 Holz
 Madeira
 Kohle
 Carvão
+meat
+Carne
 Medicine
 Medicamentos
+milk
+Leite
 Moebel
 Móveis
 None
@@ -603,73 +695,81 @@ Semáforo
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Ahorn-1
-Bordo\n\n\n
+Bordo\n\n
 Ahorn-2
-Bordo\n\n\n
+Bordo\n\n
 Ahorn-Gruppe
-Bordos\n\n\n
+Bordos\n\n
 Birke-1
-Vidoeiro\n\n\n
+Vidoeiro\n\n
 Buche-1
-Faia\n\n\n
+Faia\n\n
 Busch_2
-Arbusto\n\n\n
+Arbusto\n\n
 Kiefer_1
-Pinus\n\n\n
+Pinus\n\n
 Kiefer_2
-Pinus\n\n\n
+Pinus\n\n
 Kiefer_3
-Pinus\n\n\n
+Pinus\n\n
 Kiefer_4
-Pinus\n\n\n
+Pinus\n\n
 Kiefer_5
-Pinus\n\n\n
+Pinus\n\n
 Latschenkiefer
-Pinheiro da montanha\n\n\n
+Pinheiro da montanha\n\n
 Palmtree1
-Palmeira\n\n\n
+Palmeira\n\n
 Palmtree2
-Palmeira\n\n\n
+Palmeira\n\n
 Palmtree3
-Palmeira\n\n\n
+Palmeira\n\n
 Palmtree4
-Palmeira\n\n\n
+Palmeira\n\n
 Palmtree5
-Palmeira\n\n\n
+Palmeira\n\n
 Palmtree6
-Palmeira\n\n\n
+Palmeira\n\n
 Palmtree7
-Palmeira\n\n\n
+Palmeira\n\n
 Pappel-1
-Álamo\n\n\n
+Álamo\n\n
 Pappel-2
-Álamo\n\n\n
+Álamo\n\n
 Shunter-tree2
-Salgueiro\n\n\n
-Tanne_1
-Abeto\n\n\n
-Tanne_2
-Abeto\n\n\n
-Tanne_3
-Abeto\n\n\n
-Tanne_4
-Abeto\n\n\n
-Tanne_5
-Abeto\n\n\n
-Tanne_6
-Abeto\n\n\n
-Tree6
-Abeto\n\n\n
-tropictree1
-Eucalipto\n\n
-tropictree3
-Seringueira\n\n
-tropictree5
-Castanheira do pará\n\n
-tropictree6
 Salgueiro\n\n
+Tanne_1
+Abeto\n\n
+Tanne_2
+Abeto\n\n
+Tanne_3
+Abeto\n\n
+Tanne_4
+Abeto\n\n
+Tanne_5
+Abeto\n\n
+Tanne_6
+Abeto\n\n
+Tree1
+Carvalho
+Tree3
+Bétula
+Tree4
+Pinheiro
+Tree5
+Eucalipto
+Tree6
+Abeto\n\n
+tropictree1
+Eucalipto\n
+tropictree3
+Seringueira\n
+tropictree5
+Castanheira do pará\n
+tropictree6
+Salgueiro\n
 Willow
-Chorão\n\n\n
+Chorão\n\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel
@@ -808,6 +908,14 @@ Cementtrailer
 Reboque para cimento
 Class86
 Locomotiva Class 86
+CombinoShort(T)
+Combino GT-4S (primeiro do meio)
+CombinoShortA(Mc)
+Combino GT-4S (frontal)
+CombinoShortB(Mc)
+Combino GT-4S (traseiro)
+CombinoShortE(T)
+Combino GT-4S (último do meio)
 Concept1Front
 Concept 1, frente
 Concept1Mail
@@ -824,10 +932,22 @@ Concept2Pass
 Concept 2, vagão de passageiros
 Concept2Rear
 Concept 2, traseira
+Cooling_Container
+Vagão de congelados
+Cooling_Truck
+Caminhão de congelados
+Cooling_Waggon
+Vagão de congelados pequeno
 DaimlerStoll
 "Daimler Stoll"
+Deponielaster
+Caminhão de lixo
+Deponielaster2
+Caminhão de lixo duplo
 Doubledeck_city_bus
 Ônibus urbano duplex
+DoubleDecker
+Transporte com dois andares
 E44
 Locomotiva E44
 Eb3-5
@@ -864,6 +984,10 @@ F7back
 Locomotiva F7 A, traseira 
 FastFerry
 Barca rápida O.Bang ("hovercraft")
+Fishing_Boat
+Barco pesqueiro
+Fishing_Boat_DanMacK
+Barco pesqueiro DanMacK
 Flachwagen
 Vagão de caixas moderno
 Fokker_F27
@@ -878,6 +1002,8 @@ Gelenkbus_Front
 Ônibus articulado Gelenk, dianteira
 Godm_Spitz
 Nau Godm Spitz
+Grossraumwagen
+Vagão de passageiros "Alto Império"
 Guppy
 Avião cargueiro Guppy
 H-Trans-Pantheress
@@ -982,6 +1108,10 @@ MailExpress
 Avião postal "Express"
 Mailwagon
 Vagão de correio
+Milk_Truck
+Caminhão tanque para leite
+Milk_Waggon
+Vagão leiteiro
 Moebelschiff
 TPI/JET Navio para móveis
 Moebelwagen
@@ -990,6 +1120,10 @@ Muellschiff
 Navio para lixo
 NeuOelwagen
 Vagão petroleiro (80t)
+NS1000
+NS-1000
+NS1600
+NS-1600
 Oelanhaenger
 Reboque petroleiro H-trans
 Oelwagen

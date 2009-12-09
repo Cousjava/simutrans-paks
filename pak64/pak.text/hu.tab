@@ -5,7 +5,7 @@
 #                              Language: hu Magyar                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 17.10 2009                           #
+#                            Date Created: 9.12 2009                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Frank Penz - FrankP                             #
@@ -75,17 +75,17 @@ Cégközpont
 3headquarter
 Cégközpont
 A1_ALTE_KIRCHE
-Régi templom.\n\n\n\n
+Régi templom.\n\n\n
 A2_SCHLOSS1
-Bolond király kastélya.\n\n\n\n
+Bolond király kastélya.\n\n\n
 A3_BURG1
-Templom rom\n\n\n\n
+Templom rom\n\n\n
 A4_SCHLOSS2
-Palotakút\n\n\n\n
+Palotakút\n\n\n
 A5_STONEHENGE
-?si menhir.\n\n\n\n
+?si menhir.\n\n\n
 A6_DOME
-Régi katedrális.\n\n\n\n
+Régi katedrális.\n\n\n
 AirDepot
 Hangár
 AirportShed1930
@@ -117,31 +117,31 @@ Kocsi megálló\n\n
 ChannelStop
 Csatorna megálló
 COM_02_16
-Irodaház.\n\nNem túl modern és az irodák \nis kicsik az épületben.\n\n
+Irodaház.\n\nNem túl modern és az irodák \nis kicsik az épületben.\n
 Control_StationBlg
 Vezérl?torony építése
 DenkFlor
-Flor WF Ultd.' Wautersnek  a\nkedves mérnöknek  ki oly\nsok járm?vet  tervezett.\n\n\n\n
+Flor WF Ultd.' Wautersnek  a\nkedves mérnöknek  ki oly\nsok járm?vet  tervezett.\n\n\n
 DenkHajo
-Emlékm? a zseniális Hajonak,\nkinek köszönhet?en ez a\njáték megszületett.\n\n\n\n
+Emlékm? a zseniális Hajonak,\nkinek köszönhet?en ez a\njáték megszületett.\n\n\n
 DenkMHz
-Emlékm? a Simutrans egyik\nf? tervez?mérn?kének :)\n\n\n\n
+Emlékm? a Simutrans egyik\nf? tervez?mérn?kének :)\n\n\n
 DenkOwen
-Ezt Owen Rudge-nak\ndedikáljuk a híres pénzügyi \nszakembernek.\n\n\n\n
+Ezt Owen Rudge-nak\ndedikáljuk a híres pénzügyi \nszakembernek.\n\n\n
 DenkSeth
-Ez itt Seth C. Triggs\nremekm?ve.\n\n\n\n
+Ez itt Seth C. Triggs\nremekm?ve.\n\n\n
 DenkTomas
-Tomas Kubesnak  a kedves\nsegítségért.\n\n\n\n
+Tomas Kubesnak  a kedves\nsegítségért.\n\n\n
 DenkTrikky
-Ez Trikky' Rick McGreal \nemlékm?ve.\n\n\n\n
+Ez Trikky' Rick McGreal \nemlékm?ve.\n\n\n
 DenkVM
-Ezt Manfred VT Vienna' \nTomaschitznak emeltük.\n\n\n\n
+Ezt Manfred VT Vienna' \nTomaschitznak emeltük.\n\n\n
 DenkVolker
-Ez az épület Volker Meyer \nm?ve.\n\n\n\n
+Ez az épület Volker Meyer \nm?ve.\n\n\n
 Eingang
 Bejárat
 Feste
-Konuberts er?d.\n\nEzt az er?döt az 1400-as \névek körül építették.\n\n\n\n\n
+Konuberts er?d.\n\nEzt az er?döt az 1400-as \névek körül építették.\n\n\n\n
 Fluid_StationBlg
 Víztároló
 FreightTrainStop
@@ -155,9 +155,9 @@ Vasúti félfedett megálló (jobb)
 Goods_StationBlg
 Általános tároló
 Gymnasium
-Középiskola.\n\n\n\n
+Középiskola.\n\n\n
 IND_01_01
-Ingyenes parkoló. \nSok ember itt \nhagyja a régi \nautóját.\n\n\n\n
+Ingyenes parkoló. \nSok ember itt \nhagyja a régi \nautóját.\n\n\n
 LargeShipStop
 Óriáskiköt?
 leftShipStop
@@ -165,7 +165,7 @@ Rakodó daru
 LeuchtturmShipStop
 Világítótornyos kiköt?
 Lighthouse
-Világítótorony.\n\n\n\n
+Világítótorony.\n\n\n
 MainTerminal1930
 F? várócsarnok (1930)
 MHzSmallStation
@@ -179,9 +179,9 @@ Nyeregvasút alap
 MonorailGround
 Nyeregvasút talaj
 OldTownhall
-Régi városháza.\n\n\n\n
+Régi városháza.\n\n\n
 Patricks_Rock
-Patrick Sziklája.\n\n\n\n
+Patrick Sziklája.\n\n\n
 PlainAirStop
 Repül? megálló
 PostOffice
@@ -197,13 +197,13 @@ Nagy pályaudvar
 rampShipStop
 lejt?s rakpart
 Raven_Kirche
-Raven temploma.\n\n\n\n
+Raven temploma.\n\n\n
 Residenz
-Rezidencia.\n\nYoga Guru ezen a helyen\ntanítja \na meditációt és a bels? \nbékéhez vezet? utat.\n\n\n\n\n
+Rezidencia.\n\nYoga Guru ezen a helyen\ntanítja \na meditációt és a bels? \nbékéhez vezet? utat.\n\n\n\n
 rightShipStop
 Rakpart hullámtör?vel
 RUIN_0
-Középkori rom\n\n\n\n
+Középkori rom\n\n\n
 SandStationMHz
 Homoktározó
 ShipDepot
@@ -211,15 +211,15 @@ Hajó depó
 ShipDepotEW
 Hajó depó (Kelet-Nyugat)\n\n
 ShipStop
-Kiköt?\n\n
+Kiköt?
 STADIUM2
-Rögbipálya\n\n\n\n
+Rögbipálya\n\n\n
 Tennis_Court
-Tennis aréna.\n\n\n\n
+Tennis aréna.\n\n\n
 Terminal1930
 Terminál (1930)
 Theatre
-Színház\n\n\n\n
+Színház\n\n\n
 Tower1930
 Irányítótorony (1930)
 TowerMoistboy
@@ -239,7 +239,7 @@ Viktoriánus megálló
 Vorplatz
 El?tér
 Windmill
-Szélmalom\n\n\n\n
+Szélmalom\n\n\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -262,6 +262,8 @@ Trabant 601
 #__________________________________dummy_info___________________________________
 factory_Cementmill_details
 Cementgyár
+factory_fish_pond_details
+<title>Halastó, halnevelõ leírása</title><h1>Halastó</h1><p>Természetes és mesterséges tavak ahol halakat tenyésztenek.</p><p>A középkori Európában az erõdöknél, kolostoroknál és a kastélyoknál is elterjedt volt, ahol a többnyire önellátó kolóniák éltek. Mostanában inkább kelet Ázsiában népszerû (fõként Japánban), ahol a koi pontyot lehet tartani.</p><p>Ezekben a tavakban nevelik a halakat, majd lehalásszák, aztán szállítják, végül pedig feldolgozzák élelmiszerré. Az ilyen tavakban tilos úszni.</p><p>Ezek a telepek fejlett agrárkultúrával rendelkeznek fõleg a fotoszintetizáció terén, mivel a halakat nem csak mesterséges táplálékkal etetik.</p><p>\n
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -272,8 +274,14 @@ Autohaus
 Autó szalon
 Autohersteller
 Autógyár
+bakery
+Pékség
+brewery
+Palackozó üzem
 Buchgrosshandel
 Könyvkereskedés
+cannery
+Konzervgyár
 Cementmill
 Cementgyár
 ChemicalPlant
@@ -282,10 +290,24 @@ CHEMIST
 Patika
 Concretefactory
 Betonkever? üzem
+cow_farm
+Tehén farm
+dairy
+Tejcsarnok
 Druckerei
 Nyomda
 Erzbergwerk
 Vasércbánya
+fish_pond
+Halastó
+fish_swarm
+Halraj
+food_processing_plant
+Élelmiszer üzem
+grain_farm
+Gabona mezõ
+grain_mill
+Malom
 Kohlegrube
 Szénbánya
 Kohlekraftwerk
@@ -322,6 +344,8 @@ Stahlwerk
 Acélkohó
 Stonequarry
 K?bánya
+supermarket
+Szupermarket
 TANKE
 Benzinkút
 Windkraftwerk
@@ -330,10 +354,14 @@ Széler?m?
 #_____________________________________good______________________________________
 Autos
 autók
+beer
+sör
 Bretter
 deszka
 Buecher
 könyvek
+canned_food
+konzerv
 Cement
 cement
 Chemicals
@@ -342,14 +370,26 @@ Concrete
 beton
 Eisenerz
 vasérc
+fish
+hal
+flour
+liszt
+food
+élelem
 Gasoline
 üzemanyag
+grain
+gabona
 Holz
 rönk
 Kohle
 szén
+meat
+hús
 Medicine
 gyógyszerek
+milk
+tej
 Moebel
 bútor
 None
@@ -358,8 +398,12 @@ Oel
 olaj
 Papier
 papír
+Passagiere
+Utas
 Plastik
 m?anyag
+Post
+Posta
 PrintersInk
 nyomdafesték
 Sand
@@ -368,6 +412,8 @@ Stahl
 acél
 Stone
 k?
+waste
+szemét
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
 #__________________________________pedestrian___________________________________
@@ -441,87 +487,87 @@ Forgalmi fényjelz?
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Ahorn-1
-Juhar\n\n\n\n
+Juhar\n\n\n
 Ahorn-2
-Juhar\n\n\n\n
+Juhar\n\n\n
 Ahorn-Gruppe
-Juhar\n\n\n\n
+Juhar\n\n\n
 Birke-1
-nyírfa\n\n\n\n
+nyírfa\n\n\n
 Buche-1
-Bükk\n\n\n\n
+Bükk\n\n\n
 Busch_2
-bokor\n\n\n\n
+bokor\n\n\n
 Kiefer_1
-erdeifeny?\n\n\n\n
+erdeifeny?\n\n\n
 Kiefer_2
-erdeifeny?\n\n\n\n
+erdeifeny?\n\n\n
 Kiefer_3
-erdeifeny?\n\n\n\n
+erdeifeny?\n\n\n
 Kiefer_4
-erdeifeny?\n\n\n\n
+erdeifeny?\n\n\n
 Kiefer_5
-erdeifeny?\n\n\n\n
+erdeifeny?\n\n\n
 Latschenkiefer
-Lucfeny?\n\n\n\n
+Lucfeny?\n\n\n
 Palmtree1
-Pálma\n\n\n\n
+Pálma\n\n\n
 Palmtree2
-Pálmafa.\n\n\n\n
+Pálmafa.\n\n\n
 Palmtree3
-Pálmafa.\n\n\n\n
+Pálmafa.\n\n\n
 Palmtree4
-Pálmafa.\n\n\n\n
+Pálmafa.\n\n\n
 Palmtree5
-Pálmafa.\n\n\n\n
+Pálmafa.\n\n\n
 Palmtree6
-Pálmafa.\n\n\n\n
+Pálmafa.\n\n\n
 Palmtree7
-Pálmafa.\n\n\n\n
+Pálmafa.\n\n\n
 Pappel-1
-nyárfa\n\n\n\n
+nyárfa\n\n\n
 Pappel-2
-nyárfa\n\n\n\n
+nyárfa\n\n\n
 Shunter-tree2
-villámcsapott fa\n\n\n\n
+villámcsapott fa\n\n\n
 Tanne_1
-Feny?\n\n\n\n
+Feny?\n\n\n
 Tanne_2
-Erdeifeny?\n\n\n\n
+Erdeifeny?\n\n\n
 Tanne_3
-Havasifeny?\n\n\n\n
+Havasifeny?\n\n\n
 Tanne_4
-Lucfeny?\n\n\n\n
+Lucfeny?\n\n\n
 Tanne_5
-Hegyifeny?\n\n\n\n
+Hegyifeny?\n\n\n
 Tanne_6
-Ezüstfeny?\n\n\n\n
+Ezüstfeny?\n\n\n
 Tree4
-Juharfa\n\n\n\n
+Juharfa\n\n\n
 Tree5
-Somfa\n\n\n\n
+Somfa\n\n\n
 Tree6
-Vörös feny?\n\n\n\n
+Vörös feny?\n\n\n
 tropictree1
-Trópusi fa.\n\n\n\n
+Trópusi fa.\n\n\n
 tropictree2
-Trópusi fa.\n\n\n\n
+Trópusi fa.\n\n\n
 tropictree3
-Trópusi fa.\n\n\n\n
+Trópusi fa.\n\n\n
 tropictree4
-Trópusi fa.\n\n\n\n
+Trópusi fa.\n\n\n
 tropictree5
-Trópusi fa.\n\n\n\n
+Trópusi fa.\n\n\n
 tropictree6
-Trópusi fa.\n\n\n\n
+Trópusi fa.\n\n\n
 tropictree7
-Trópusi fa.\n\n\n\n
+Trópusi fa.\n\n\n
 tropictree8
-Trópusi fa.\n\n\n\n
+Trópusi fa.\n\n\n
 tropictree9
-Trópusi fa.\n\n\n\n
+Trópusi fa.\n\n\n
 Willow
-f?zfa\n\n\n\n
+f?zfa\n\n\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel

@@ -5,7 +5,7 @@
 #                              Language: fi Suomi                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 17.10 2009                           #
+#                            Date Created: 9.12 2009                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Esa Lindroos - Esa                              #
@@ -67,7 +67,7 @@ Kaupungintalo
 04_CITY_C
 Kaupungintalo
 10_WOHN
-Kappeli\n
+Kappeli
 1930AirDepot
 1930-luvun lentokonehalli
 1headquarter
@@ -77,17 +77,17 @@ Yhtiösi pääkonttori
 3headquarter
 Yhtiösi pääkonttori
 A1_ALTE_KIRCHE
-Kuuluisa vanha  kirkko\nA. Jokaisen pitäisi nähdä \ntämä hieno \nrakennus.\n\n
+Kuuluisa vanha  kirkko\nA. Jokaisen pitäisi nähdä \ntämä hieno \nrakennus.\n
 A2_SCHLOSS1
-Hassun kuninkaan  linna.  Tämä\non todella  näkemisen\narvoinen!\n\n
+Hassun kuninkaan  linna.  Tämä\non todella  näkemisen\narvoinen!\n
 A3_BURG1
-Vanhoja raunioita  jotka\nkertovat  paremmista ajoista. \nNe ovat aina  katsomisen\narvoisia.\n\n
+Vanhoja raunioita  jotka\nkertovat  paremmista ajoista. \nNe ovat aina  katsomisen\narvoisia.\n
 A4_SCHLOSS2
-Tämä vanha  linna on aina \nnäkemisen arvoinen.\n\n
+Tämä vanha  linna on aina \nnäkemisen arvoinen.\n
 A5_STONEHENGE
-Muinainen kivimuodostelma.\nHyvin  salaperäistä!\n\n
+Muinainen kivimuodostelma.\nHyvin  salaperäistä!\n
 A6_DOME
-Tämä kaunis vanha  kirkko on\ntodellinen nähtävyys.\n\n
+Tämä kaunis vanha  kirkko on\ntodellinen nähtävyys.\n
 AirDepot
 Hangaari
 AirportShed1930
@@ -119,95 +119,95 @@ Lastaus asema\n
 ChannelStop
 Kanavalaituri
 COM_00_01
-Pieni kauppa\n\n
+Pieni kauppa\n
 COM_00_02
-Yksityinen huolto-asema\nTämä itsenäinen huolto-asema\nei ole riippuvainen kuljetusyhtiöistä,\nmutta sen purkaminen ei ole tarpeellista.\nSe ei ole poissa tuloistasi.\n
+Yksityinen huolto-asema\nTämä itsenäinen huolto-asema\nei ole riippuvainen kuljetusyhtiöistä,\nmutta sen purkaminen ei ole tarpeellista.\nSe ei ole poissa tuloistasi.
 COM_00_03
-Autopesula\n\n
+Autopesula\n
 COM_00_05
-Läpi ajo -pankki. Kun ajat läpi\nlompakkosi taianomaisesti\ntyhjenee.\n\n
+Läpi ajo -pankki. Kun ajat läpi\nlompakkosi taianomaisesti\ntyhjenee.\n
 COM_00_06
-Kylpylä OnniManni\n\n
+Kylpylä OnniManni\n
 COM_00_08
-Asuinrakennus\n\n
+Asuinrakennus\n
 COM_00_10
-Keskikokoinen toimisto\nraknennus\n\n
+Keskikokoinen toimisto\nraknennus\n
 COM_00_11
-Novan maalitukku\n\n
+Novan maalitukku\n
 COM_00_12
-Toimisto rakennus\n\n
+Toimisto rakennus\n
 COM_00_14
-Tämä rakennus näyttää\nvanhalta tehtaalta, mutta se on\noikeasti erittäin organisoitunut\nlaiton vedonlyöntikeskus.\n\n
+Tämä rakennus näyttää\nvanhalta tehtaalta, mutta se on\noikeasti erittäin organisoitunut\nlaiton vedonlyöntikeskus.\n
 COM_00_18
-Modermi toimisto rakennus\n\n
+Modermi toimisto rakennus\n
 COM_00_22
-YK:n rakennus somaliassa\n\n
+YK:n rakennus somaliassa\n
 COM_01_01
-Kuumailmapallojen laskeutumis\nalue.\n\n
+Kuumailmapallojen laskeutumis\nalue.\n
 COM_01_09
-Vanha elokuva teatteri. Täällä\nesitetään paljon musta-valko\nelokuvia, siksi se onkin Charlie\nChaplin -fanien suosima.\n\n
+Vanha elokuva teatteri. Täällä\nesitetään paljon musta-valko\nelokuvia, siksi se onkin Charlie\nChaplin -fanien suosima.\n
 COM_01_10
-Toimisto rakennus\n\n
+Toimisto rakennus\n
 COM_01_17
-Salainen FBI:n toimisto\n\n
+Salainen FBI:n toimisto\n
 COM_01_18
-CIA:n sivu konttori\n\n
+CIA:n sivu konttori\n
 COM_01_20
-World trade center. Matalempi\nversio\n\n
+World trade center. Matalempi\nversio\n
 COM_01_21
-Yö työ talo.\n\n
+Yö työ talo.\n
 COM_01_22
-ETA:n tekninen laboratorio\n\n
+ETA:n tekninen laboratorio\n
 COM_02_02
-Parkkipaikka\n\n
+Parkkipaikka\n
 COM_02_13
-Kansanhistoriallainen museo\n\n
+Kansanhistoriallainen museo\n
 COM_02_16
-Toimisto talo\n\n
+Toimisto talo\n
 COM_02_17
-Keskikokoinen toimistotalo\n\n
+Keskikokoinen toimistotalo\n
 COM_03_15
-Toimisto talo\n\n
+Toimisto talo\n
 COM_04_15
-Hotelli. satelliitti lautanen\nkatolla.\n\n
+Hotelli. satelliitti lautanen\nkatolla.\n
 COM_10_01
-Puisto\n\n
+Puisto\n
 COM_10_02
-puisto\n\n
+puisto\n
 COM_10_05
-Navetta\n\n
+Navetta\n
 COM_10_07
-Maalaistalo\n\n
+Maalaistalo\n
 COM_10_10
-Alppitalo\n\n
+Alppitalo\n
 COM_10_11
-Paritalo\n\n
+Paritalo\n
 COM_10_12
-Paritalo\n\n
+Paritalo\n
 Control_StationBlg
 Valvontatorni
 DenkFlor
-Muistomerkki \n\nTämä monumentti on omistettu\nFlor 'WF Ultd.' Wautersille,\nkuuluisalle insinöörille, joka loi\nmonia erinomaisia tie ja\nrautatie kulkuneuvoja. Hän on\nmyös tunnettu monien\nhyvintoimivien tehtaiden\nsuunnittelusta.\n\n
+Muistomerkki \n\nTämä monumentti on omistettu\nFlor 'WF Ultd.' Wautersille,\nkuuluisalle insinöörille, joka loi\nmonia erinomaisia tie ja\nrautatie kulkuneuvoja. Hän on\nmyös tunnettu monien\nhyvintoimivien tehtaiden\nsuunnittelusta.\n
 DenkHajo
-Muisto merkki\n\nTämä muistomerkki on omistettu\nhansjörg Malthanerille, joka loi\nsimutranssin seisemässä\nvuodessa.\n\n
+Muisto merkki\n\nTämä muistomerkki on omistettu\nhansjörg Malthanerille, joka loi\nsimutranssin seisemässä\nvuodessa.\n
 DenkMHz
-Muistomerkki\n\nTämä muistomerkki on omistettu\nGeorg Heidukille renderöityjen\nrakennusten mestarille. Se\nedustaa hänen tarkkaa silmää\nyksityiskohdille.\n\n
+Muistomerkki\n\nTämä muistomerkki on omistettu\nGeorg Heidukille renderöityjen\nrakennusten mestarille. Se\nedustaa hänen tarkkaa silmää\nyksityiskohdille.\n
 DenkOwen
-Muistomerkki\n\nTämä paikka on omistettu Owen\nRudgelle, kuuluisalle\nfinannsiexpertille, ja\nääniteknikolle.\n\n
+Muistomerkki\n\nTämä paikka on omistettu Owen\nRudgelle, kuuluisalle\nfinannsiexpertille, ja\nääniteknikolle.\n
 DenkSeth
-Muistomerkki \n\nTämä paikka on omistettu Seth C.\nTriggsille, kuuluisalle\narkkitehdille, joka suunnitteli\nmonia kauniita kaupunki-\nrakennuksia. Hän on myös\ntunnettu monista tutkimuksista,\nkuinka parantaa\nliikennejärjestelmiä.\n\n
+Muistomerkki \n\nTämä paikka on omistettu Seth C.\nTriggsille, kuuluisalle\narkkitehdille, joka suunnitteli\nmonia kauniita kaupunki-\nrakennuksia. Hän on myös\ntunnettu monista tutkimuksista,\nkuinka parantaa\nliikennejärjestelmiä.\n
 DenkTomas
-Muistomerkki\n\nTämä monumentti on omistettu\nTomas Kubesille, joka auttoi\nparantamaan Simutransia monin,\nmonin puolin neuvoilla ja kovalla\ntyöllä.\n\n
+Muistomerkki\n\nTämä monumentti on omistettu\nTomas Kubesille, joka auttoi\nparantamaan Simutransia monin,\nmonin puolin neuvoilla ja kovalla\ntyöllä.\n
 DenkTrikky
-Muistomerkki\n\nTämä monumentti on omistettu\n'Trikky' Rick McGrealille,\nkuuluisalle arkkitehdille, joka\nsuunnitteli monia vaikuttavia\nrakennuksia.\n\n
+Muistomerkki\n\nTämä monumentti on omistettu\n'Trikky' Rick McGrealille,\nkuuluisalle arkkitehdille, joka\nsuunnitteli monia vaikuttavia\nrakennuksia.\n
 DenkVM
-Muistomerkki\n\nTämä monumentti on omistettu\nManfred 'VT Vienna'\nTomaschitzille, kuuluisallee\ninsinöörille, joka suunnitteli\nerittäin hyviä\nrautatiekulkuneuvoja.\n\n
+Muistomerkki\n\nTämä monumentti on omistettu\nManfred 'VT Vienna'\nTomaschitzille, kuuluisallee\ninsinöörille, joka suunnitteli\nerittäin hyviä\nrautatiekulkuneuvoja.\n
 DenkVolker
-Muistomerkki \n\nTämän Stupan  rakensi Volker\nMeyer, joka paransi Simutransia\nmonilta, monilta alueilta.\n\n
+Muistomerkki \n\nTämän Stupan  rakensi Volker\nMeyer, joka paransi Simutransia\nmonilta, monilta alueilta.\n
 Eingang
 Aseman sisäänkäynti
 Feste
-The Konubertsin linnake\n\nTämä massiivinen linna rakennettiin\n1400-luvun alussa.\n\n
+The Konubertsin linnake\n\nTämä massiivinen linna rakennettiin\n1400-luvun alussa.\n
 Fluid_StationBlg
 Öljysäiliö
 FreightShipStop
@@ -223,59 +223,59 @@ suuri asemahalli (oikea)
 Goods_StationBlg
 Varasto
 Gymnasium
-Yksityislukio\n\nTäällä opiskelee rikkaita ihmisiä.\n\n
+Yksityislukio\n\nTäällä opiskelee rikkaita ihmisiä.\n
 IND_00_01
-Varasto\n\n
+Varasto\n
 IND_00_02
-Tehdashalli\n\n
+Tehdashalli\n
 IND_00_03
-Polttoainesäiliö\n\n
+Polttoainesäiliö\n
 IND_00_04
-Peltipaja\n\n
+Peltipaja\n
 IND_00_05
-Vesivarasto\n\n
+Vesivarasto\n
 IND_00_06
-Tehdasrakennus\n\n
+Tehdasrakennus\n
 IND_00_09
-Vanha paloasema\n\n
+Vanha paloasema\n
 IND_00_10
-Pieni tehdas\n\n
+Pieni tehdas\n
 IND_00_12
-Vanha konepaja\n\n
+Vanha konepaja\n
 IND_00_14
-Keramiikkatehdas\n\n
+Keramiikkatehdas\n
 IND_00_17
-Pieni lämpövoimala\n\n
+Pieni lämpövoimala\n
 IND_00_18
-Pieni tehdas\n\n
+Pieni tehdas\n
 IND_01_01
-Parkkipaikka\n\n
+Parkkipaikka\n
 IND_01_03
-Suuri kaasusäiliö\n\n
+Suuri kaasusäiliö\n
 IND_01_04
-Metallipaja\n\n
+Metallipaja\n
 IND_01_06
-Vanha konepaja\n\n
+Vanha konepaja\n
 IND_01_07
-Armeijan ylijäämävarasto\n\n
+Armeijan ylijäämävarasto\n
 IND_01_08
-Lannoitetehdas\n\n
+Lannoitetehdas\n
 IND_01_09
-Nestesäiliö\n\n
+Nestesäiliö\n
 IND_01_10
-Työkalutehdas\n\n
+Työkalutehdas\n
 IND_01_11
-Pieni kangastehdas\n\n
+Pieni kangastehdas\n
 IND_01_12
-Lasinpuhaltamo\n\n
+Lasinpuhaltamo\n
 IND_01_13
-Turpeenpolttolaitos\n\n
+Turpeenpolttolaitos\n
 IND_01_15
-Pieni hiilivoimala\n\n
+Pieni hiilivoimala\n
 IND_02_02
-Metallipaja\n\n
+Metallipaja\n
 IND_02_09
-Kaasusäiliö\n\n
+Kaasusäiliö\n
 LargeShipStop
 Suuri rahtinosturi
 leftShipStop
@@ -283,7 +283,7 @@ Raskas nosturi
 LeuchtturmShipStop
 Majakka
 Lighthouse
-Majakka\n\n
+Majakka\n
 MainTerminal1930
 Aseman sisäänkäynti
 MHzSmallStation
@@ -297,9 +297,9 @@ Monorail-aseman perusta
 MonorailGround
 Monorail-perustus
 OldTownhall
-Vanha kaupungintalo\n\n
+Vanha kaupungintalo\n
 Patricks_Rock
-Patrickin kallio\n\n
+Patrickin kallio\n
 PlainAirStop
 Lentokonepysäkki
 PostOffice
@@ -315,73 +315,73 @@ Asemahalli
 rampShipStop
 Ramppi
 Raven_Kirche
-Pyhän Meinradin kirkko\n\nErakko Meinrad eli kahden variksen\nkanssa. Hänet murhattiin, ja\nlegendan mukaan varikset\nseurasivat murhaajia ja toivat\nnämä oikeuden eteen.\nNykyään kyseisellä paikalla\nsijaitsee Einsiedelnin luostari.\n\n
+Pyhän Meinradin kirkko\n\nErakko Meinrad eli kahden variksen\nkanssa. Hänet murhattiin, ja\nlegendan mukaan varikset\nseurasivat murhaajia ja toivat\nnämä oikeuden eteen.\nNykyään kyseisellä paikalla\nsijaitsee Einsiedelnin luostari.\n
 RES_00_02
-Pieni talo ja kaalimaa\n\n
+Pieni talo ja kaalimaa\n
 RES_00_03
-Omakotitalo\n\n
+Omakotitalo\n
 RES_00_04
-Asuinrakennus\n\n
+Asuinrakennus\n
 RES_00_06
-Pieni suihkulähde\n\n
+Pieni suihkulähde\n
 RES_00_07
-Omakotitalo\n\n
+Omakotitalo\n
 RES_00_08
-Omakotitalo\n\n
+Omakotitalo\n
 RES_00_09
-Puisto\n\n
+Puisto\n
 RES_00_10
-Moistboyn kartano\n\n
+Moistboyn kartano\n
 RES_00_11
-Suuri talo puutarhalla\n\n
+Suuri talo puutarhalla\n
 RES_00_12
-Asuinrakennus\n\n
+Asuinrakennus\n
 RES_00_13
-Rivitalo\n\n
+Rivitalo\n
 RES_00_16
-Vanha huvila\n\n
+Vanha huvila\n
 RES_00_17
-Vanha asuinrakennus\n\n
+Vanha asuinrakennus\n
 RES_00_19
-Modermi kerrostalo\n\n
+Modermi kerrostalo\n
 RES_00_21
-Korkea kerrostalo\n\n
+Korkea kerrostalo\n
 RES_00_23
-Pyöreä kerrostalo\n\n
+Pyöreä kerrostalo\n
 RES_01_01
-Uudehko valmistalo suurella\nullakkohuoneella, jossa lapsilla\non tilaa peuhata.\n\n
+Uudehko valmistalo suurella\nullakkohuoneella, jossa lapsilla\non tilaa peuhata.\n
 RES_01_02
-Alppitalo\n\n
+Alppitalo\n
 RES_01_05
-Kaksikerroksinen paritalo\n\n
+Kaksikerroksinen paritalo\n
 RES_01_07
-Suuri luksusasunto\n\n
+Suuri luksusasunto\n
 RES_01_08
-Omakotitalo pienellä puutarhalla\n\n
+Omakotitalo pienellä puutarhalla\n
 RES_01_10
-Moderni talo\n\n
+Moderni talo\n
 RES_01_12
-Tiilikerrostalo\n\n
+Tiilikerrostalo\n
 RES_01_15
-Kaupungin ala-aste\n\n
+Kaupungin ala-aste\n
 RES_01_21
-Pilvenpiirtäjä\n\n
+Pilvenpiirtäjä\n
 RES_01_22
-Pilvenpiirtäjä\n\n
+Pilvenpiirtäjä\n
 RES_01_23
-Tämän talon on omistanut\nitselleen Mika "Lahha"\nKatajamäki, joka auttoi\nsuomenkielisten käännöksien\nkanssa.\n\n
+Tämän talon on omistanut\nitselleen Mika "Lahha"\nKatajamäki, joka auttoi\nsuomenkielisten käännöksien\nkanssa.\n
 RES_02_01
-Alkukantainen maja\n\n
+Alkukantainen maja\n
 RES_02_20
-Viiden tähden hotelli\n\n
+Viiden tähden hotelli\n
 RES_11_01
-Pieni talo\n\n
+Pieni talo\n
 Residenz
-Residenssi\n\nPaikallinen joogaguru tapasi opettaa\nmeditointia ja sisäistä rauhaa\ntäällä. \n\n
+Residenssi\n\nPaikallinen joogaguru tapasi opettaa\nmeditointia ja sisäistä rauhaa\ntäällä. \n
 rightShipStop
 Laituri
 RUIN_0
-Keskiaikainen linna\n\nTämä linna raunioitui 400 vuotta\nsitten, mutta osa siitä on\nuudelleen rakennettu, ja se\ntoimii nykyään museona.\nNäkymät ovat fantastisia,\nmutta ne nähdäkseen täytyy\nkiivetä aivan liian monta porrasta.\n\n
+Keskiaikainen linna\n\nTämä linna raunioitui 400 vuotta\nsitten, mutta osa siitä on\nuudelleen rakennettu, ja se\ntoimii nykyään museona.\nNäkymät ovat fantastisia,\nmutta ne nähdäkseen täytyy\nkiivetä aivan liian monta porrasta.\n
 SandStationMHz
 Hiekkapohjainen asema
 ShipDepot
@@ -389,15 +389,15 @@ Telakka
 ShipDepotEW
 Telakka\n
 ShipStop
-Satama\n
+Satama
 STADIUM2
-Iso stadion\n\n
+Iso stadion\n
 Tennis_Court
-Tenniskenttä\n\n
+Tenniskenttä\n
 Terminal1930
 Lentoterminaali
 Theatre
-Teatteri\n\n
+Teatteri\n
 Tower1930
 Lennonjohtotorni (1930)
 TowerMoistboy
@@ -417,7 +417,7 @@ Viktoriaaninen asema
 Vorplatz
 Asemapiha
 Windmill
-Tuulimylly\n\n
+Tuulimylly\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -452,8 +452,14 @@ Autohaus
 Autokauppa
 Autohersteller
 Autotehdas
+bakery
+Leipomo
+brewery
+Panimo
 Buchgrosshandel
 Kirjatukku
+cannery
+Ruokapakkaamo
 Cementmill
 Sementtimylly
 ChemicalPlant
@@ -462,10 +468,24 @@ CHEMIST
 Apteekki
 Concretefactory
 Betonitehdas
+cow_farm
+Karjatila
+dairy
+Meijeri
 Druckerei
 Kirjapaino
 Erzbergwerk
 Rautakaivos
+fish_pond
+Kalalampi
+fish_swarm
+Kalaparvi
+food_processing_plant
+Ruuanjalostuslaitos
+grain_farm
+Viljapelto
+grain_mill
+Mylly
 Kohlegrube
 Hiilikaivos
 Kohlekraftwerk
@@ -502,6 +522,8 @@ Stahlwerk
 Rautavalimo
 Stonequarry
 Kivilouhos
+supermarket
+Supermarketti
 TANKE
 Huoltoasema
 Windkraftwerk
@@ -510,10 +532,14 @@ Tuulivoimala
 #_____________________________________good______________________________________
 Autos
 autoa
+beer
+olutta
 Bretter
 lautoja
 Buecher
 kirjoja
+canned_food
+säilykkeitä
 Cement
 sementtiä
 Chemicals
@@ -522,14 +548,24 @@ Concrete
 betonia
 Eisenerz
 rautamalmia
+fish
+kalaa
+flour
+jauhoja
+food
+ruokaa
 Gasoline
 Bensiiniä
 Holz
 tukkeja
 Kohle
 hiiltä
+meat
+lihaa
 Medicine
 lääkkeitä
+milk
+maitoa
 Moebel
 huonekaluja
 None
@@ -538,8 +574,12 @@ Oel
 öljyä
 Papier
 paperia
+Passagiere
+matkustajaa
 Plastik
 muovia
+Post
+postia
 PrintersInk
 tulostusmustetta
 Sand
@@ -619,57 +659,57 @@ Liikennevalot
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Ahorn-1
-Tammi\n\n
+Tammi\n
 Ahorn-2
-Tammi\n\n
+Tammi\n
 Ahorn-Gruppe
-Tammi\n\n
+Tammi\n
 Birke-1
-Koivu\n\n
+Koivu\n
 Buche-1
-Vaahtera\n\n
+Vaahtera\n
 Busch_2
-Pensas\n\n
+Pensas\n
 Kiefer_1
-Mänty\n\n
+Mänty\n
 Kiefer_2
-Mänty\n\n
+Mänty\n
 Kiefer_3
-Mänty\n\n
+Mänty\n
 Kiefer_4
-Mänty\n\n
+Mänty\n
 Kiefer_5
-Mänty\n\n
+Mänty\n
 Latschenkiefer
-Vuorimänty\n\n
+Vuorimänty\n
 Palmtree1
-Palmu\n\n
+Palmu\n
 Pappel-1
-Sypressi\n\n
+Sypressi\n
 Pappel-2
-Sypressi\n\n
+Sypressi\n
 Shunter-tree2
-Kuollut puu\n\n
+Kuollut puu\n
 Tanne_1
-Kuusi\n\n
+Kuusi\n
 Tanne_2
-Kuusi\n\n
+Kuusi\n
 Tanne_3
-Kuusi\n\n
+Kuusi\n
 Tanne_4
-Tammi\n\n
+Tammi\n
 Tanne_5
-Mänty\n\n
+Mänty\n
 Tanne_6
-Kuusia\n\n
+Kuusia\n
 Tree4
-Mänty\n\n
+Mänty\n
 Tree5
-Puu\n\n
+Puu\n
 Tree6
-Kuusi\n\n
+Kuusi\n
 Willow
-Paju\n\n
+Paju\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel
@@ -812,6 +852,12 @@ Concept2Rear
 Concept2 takaveturi
 Concorde
 concorde
+Cooling_Container
+Jäähdytetty vaunu
+Cooling_Truck
+Kylmä tavara-auto
+Cooling_Waggon
+Kylmävaunu
 DC-3
 Douglass DC-3
 Doubledeck_city_bus
@@ -852,6 +898,10 @@ F7back
 F7 A työntöyksikkö
 FastFerry
 O.Bang ilmatyynyalus
+Fishing_Boat
+kalastusalus
+Fishing_Boat_DanMacK
+Kalastusalus DanMack
 Flachwagen
 H-Trans kirjavaunu
 Fokker_F27
@@ -940,6 +990,10 @@ Lowa_Anhaenger
 Lowa Anhanger -raitiovaunu
 MailExpress
 Postikone
+Milk_Truck
+H-trans Maitorekka
+Milk_Waggon
+Maitovaunu
 Moebelschiff
 Huonekalualus
 Moebelwagen

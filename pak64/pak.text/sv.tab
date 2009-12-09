@@ -5,7 +5,7 @@
 #                             Language: sv Svenska                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 17.10 2009                           #
+#                            Date Created: 9.12 2009                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Frank Penz - FrankP                             #
@@ -73,7 +73,7 @@ Rådhus
 04_CITY_C
 Rådhus
 10_WOHN
-Kyrka\n
+Kyrka
 1930AirDepot
 Hangar 1930t
 1headquarter
@@ -83,17 +83,17 @@ stort huvudkontor
 3headquarter
 Globalt huvudkontor
 A1_ALTE_KIRCHE
-Gotiskt kapell\n\nKapellet är berömt för sina\nfresker,vilka alla borde se\nåtminstone en gång.\n\n
+Gotiskt kapell\n\nKapellet är berömt för sina fresker,vilka alla borde se åtminstone en gång.\n
 A2_SCHLOSS1
-Neuschwanstein\n\nDen galne kungens slott. En\nstorartad sevärdhet!\n\n
+Neuschwanstein\n\nDen galne kungens slott. En storartad sevärdhet!\n
 A3_BURG1
-Borgruiner\n\nHärifrån red rövare ut och gjorde\ntrakten osäker tills\nbefolkningen brände ner borgen.\nDen är alltid värd ett besök.\n\n
+Borgruiner\n\nHärifrån red rövare ut och gjorde trakten osäker tills befolkningen brände ner borgen. Den är alltid värd ett besök.\n
 A4_SCHLOSS2
-Herrgård\n\nEn gammal herrgård med en\nfantastisk samling målningar: Ett\nbra utflyktsmål även när det regnar.\n\n\n
+Herrgård\n\nEn gammal herrgård med en fantastisk samling målningar: Ett bra utflyktsmål även när det regnar.\n\n
 A5_STONEHENGE
-Stonehenge\n\nKänn viskningarna från megaliterna\nnär du träder in i ringen.\nMånga kommer aldrig\nmer ut därifrån.\n\n
+Stonehenge\n\nKänn viskningarna från megaliterna\nnär du träder in i ringen.\nMånga kommer aldrig\nmer ut därifrån.\n
 A6_DOME
-Katedral\n\nDen här gotiska\nkatedralen har dominerat stadsbilden\ni nästan ett årtusende.\n\n
+Katedral\n\nDen här gotiska\nkatedralen har dominerat stadsbilden\ni nästan ett årtusende.\n
 AirDepot
 Hangar från 1900
 AirportShed1930
@@ -125,59 +125,59 @@ Lastkaj\n
 ChannelStop
 Inlandshamn
 COM_00_01
-En kiosk i vilken säljs en mängd\nbilligt krimskrams som ingen\nklarar sig utan. Verkligen!\n\n
+En kiosk i vilken säljs en mängd billigt krimskrams som ingen klarar sig utan. Verkligen!\n
 COM_00_02
-Oberoende bensinstation\n\nDen är oberoende från de\nstora transportbolagen\n(som ditt),men det finns\ningen anledning att ta bort den.\nDen hotar inte din verksamhet ändå.\n\n
+Oberoende bensinstation\n\nDen är oberoende från de\nstora transportbolagen\n(som ditt),men det finns\ningen anledning att ta bort den.\nDen hotar inte din verksamhet ändå.\n
 COM_00_03
-Denna bakgårdsverkstad vill\nundkomma sin undangömda\nexistens för att istället öppna\nvid en huvudgata.\n Men det saknas fortfarande\npengar, tillstånd och en\nhuvudgata.\n
+Denna bakgårdsverkstad vill undkomma sin undangömda existens för att istället öppna vid en huvudgata.\n Men det saknas fortfarande pengar, tillstånd och en huvudgata.
 COM_00_05
-Herr G. Hai, ägaren av den\nbankkedja som denna filial\ntillhör är tveklöst stadens\nrikaste man!\n Trots detta ser bankfilialen\ntämligen harmlös ut.\n\n
+Herr G. Hai, ägaren av den bankkedja som denna filial tillhör är tveklöst stadens rikaste man!\n Trots detta ser bankfilialen tämligen harmlös ut.\n
 COM_00_06
-Ingenstans serveras det bättre\nkaffe än på den härliga\nterassen på detta\nkafé!\n
+Ingenstans serveras det bättre kaffe än på den härliga terassen på detta\nkafé!
 COM_00_08
-Ett bostads- och affärshus kan\ntrots allt vara en bra plats för\nbarn.\n
+Ett bostads- och affärshus kan trots allt vara en bra plats för barn.
 COM_00_10
-Infarten till det underjordiska\ngaraget på denna\nkontorsbyggnad är både brant\noch krökt. Det går ett rykte\natt verkstadsägaren i huset\nbredvid gjorde en mindre\nändring av ritningen en gång när\nbyggledaren glömde att låsa\ndörrarna till byggarbetsvagnarna.\n
+Infarten till det underjordiska garaget på denna kontorsbyggnad är både brant och krökt. Det går ett rykte att verkstadsägaren i huset bredvid gjorde en mindre ändring av ritningen en gång när byggledaren glömde att låsa dörrarna till byggarbetsvagnarna.
 COM_00_11
-Precis bredvid slakteriet Vild\n& son ligger steakhouset\nLejonen som också ägs av\nslaktaren. Vegetarianer syns\ninte gärna till här då slaktare\nVild sagt:"Gäster som inte\näter med god aptit får inte\nkomma in på min restaurang. Jag är\nalltid orolig att jag i så fall skulle\ngöra något jag ångrar mot dem."\nSitt bukomfång känner inte slaktare\nVild till - måttbandet är alltför kort.\n\n
+Precis bredvid slakteriet Vild & son ligger steakhouset Lejonen som också ägs av slaktaren. Vegetarianer syns inte gärna till här då slaktare Vild sagt:"Gäster som inte äter med god aptit får inte komma in på min restaurang. Jag är alltid orolig att jag i så fall skulle göra något jag ångrar mot dem."\nSitt bukomfång känner inte slaktare Vild till - måttbandet är alltför kort.\n
 COM_00_12
-En kontorsbyggnad av typen\ntrist och tråkig. Om man\narbetar här längre än två år så\nblir man själv grå.\n\n
+En kontorsbyggnad av typen trist och tråkig. Om man arbetar här längre än två år så blir man själv grå.\n
 COM_00_14
-Kontorsbyggnad för en\nhandelsfirma. Till vänster finns\ninköparna och till höger\nsäljarna. Varför kallas det\nglastäckta mittskeppet för\n"Prishallen"?\n
+Kontorsbyggnad för en handelsfirma. Till vänster finns inköparna och till höger säljarna. Varför kallas det glastäckta mittskeppet för "Prishallen"?
 COM_00_18
-Kontorsfördelningen hos firma\nLNX Mjukvaru-AB avspeglar\nkarriärstegen hos de anställda.\nDet tråkiga arbetet utförs på\nde nedersta våningarna. På de\növersta våningarna är arbetet\nlika spännande som utsikten är skön.\n\n
+Kontorsfördelningen hos firma LNX Mjukvaru-AB avspeglar karriärstegen hos de anställda. Det tråkiga arbetet utförs på de nedersta våningarna. På de översta våningarna är arbetet lika spännande som utsikten är skön.\n
 COM_00_22
-Detta höghus med sin svängda\nglasfasad är ett\nbekvämlighetens tempel: på\nhotell Albuna kan du låta dig\nskämmas bort ordentligt.\n\n
+Detta höghus med sin svängda glasfasad är ett bekvämlighetens tempel: på hotell Albuna kan du låta dig skämmas bort ordentligt.\n
 COM_01_01
-Start- och landningsplats för\nvarmluftsballonger. En\nballongrundtur över staden kan\nvara en oförglömlig upplevelse.\n\n
+Start- och landningsplats för varmluftsballonger. En ballongrundtur över staden kan vara en oförglömlig upplevelse.\n
 COM_01_09
-För inte så länge sedan var\ndetta ett lysande tempel för\nljusens och skuggornas dans på\nvita duken. Nu är det bara en\ngammal biograf. Men djupt inne\ni murarna vilar ännu ett vagt\nskimmer av forna dagars glans!\n\n
+För inte så länge sedan var detta ett lysande tempel för ljusens och skuggornas dans på vita duken. Nu är det bara en gammal biograf. Men djupt inne i murarna vilar ännu ett vagt skimmer av forna dagars glans!\n
 COM_01_10
-Folktandvården har fått sin\ntråkiga fasad uppiffad med en\nny entré. Nu behöver verkligen\ninte patienterna bita ihop och\ngå vidare.\n\n
+Folktandvården har fått sin tråkiga fasad uppiffad med en ny entré. Nu behöver verkligen inte patienterna bita ihop och gå vidare.\n
 Control_StationBlg
 Ställverk
 DenkFlor
-Minnesmärke Flor Wauters\n\nDet här monumentet tillägnas\nFlor 'WF Ultd.' Wauters, den\nberömde ingenjören som\nskapade så många bra väg- och\nspårfordon. Han är också\nvälkänd för att ha designat\nmånga väl fungerande fabriker.\n\n
+Minnesmärke Flor Wauters\n\nDet här monumentet tillägnas\nFlor 'WF Ultd.' Wauters, den\nberömde ingenjören som\nskapade så många bra väg- och\nspårfordon. Han är också\nvälkänd för att ha designat\nmånga väl fungerande fabriker.\n
 DenkHajo
-Minnesmärke över Hajo Malthaner\n\nDetta minnesmärke är rest över\nHansjörg Malthaner som\nskapade detta spel på sju år.\nDet skulle tagit en halvgud\nlängre tid än så.\n
+Minnesmärke över Hajo Malthaner\n\nDetta minnesmärke är rest över Hansjörg Malthaner som skapade detta spel på sju år. Det skulle tagit en halvgud längre tid än så.
 DenkMHz
-Geog Heiduks minnesmärke\n\nDetta monument tillägnas Georg\nHeiduk ("MHz") de renderade\nbyggnadernas mästare. Det\nrepresenterar hans skarpa blick\nför detaljer.\n\n\n
+Geog Heiduks minnesmärke\n\nDetta monument tillägnas Georg Heiduk ("MHz") de renderade byggnadernas mästare. Det representerar hans skarpa blick för detaljer.\n\n
 DenkOwen
-Denna plats tillägnas Owen\nRudge, den berömde\nfinansexperten och\nljudteknikern.\n\n
+Denna plats tillägnas Owen\nRudge, den berömde\nfinansexperten och\nljudteknikern.\n
 DenkSeth
-Minnesmärke\n\nDenna plats tillägnas Seth C.\nTriggs, den berömde\narkitekten som designade så\nmånga vackra stadsbyggnader.\nHan är också välkänd för att ha\ngjort många studier på hur man kan\nförbättra trafiksystem.\n\n
+Minnesmärke\n\nDenna plats tillägnas Seth C. Triggs, den berömde arkitekten som designade så många vackra stadsbyggnader. Han är också välkänd för att ha gjort många studier på hur man kan förbättra trafiksystem.\n
 DenkTomas
-Minnesmärke\n\nDetta monument är tillägnat\nTomas Kubes som har\nförbättrat Simutrans på så\nmånga olika sätt med råd och dåd.\n\n
+Minnesmärke\n\nDetta monument är tillägnat Tomas Kubes som har förbättrat Simutrans på så många olika sätt med råd och dåd.\n
 DenkTrikky
-Minnesmärke\n\nDet här monumentet tillägnas\n'Trikky' Rick McGreal, den\nberömde arkitekten som\ndesignat så många imponerande byggnader.\n\n
+Minnesmärke\n\nDet här monumentet tillägnas\n'Trikky' Rick McGreal, den\nberömde arkitekten som\ndesignat så många imponerande byggnader.\n
 DenkVM
-Minnesmärke\n\nDet här monumentet tillägnas\nManfred 'VT Wien' Tomaschitz,\nden berömde ingenjören som\ndesignat så många otroligt bra tågfordon.\n\n
+Minnesmärke\n\nDet här monumentet tillägnas\nManfred 'VT Wien' Tomaschitz,\nden berömde ingenjören som\ndesignat så många otroligt bra tågfordon.\n
 DenkVolker
-Minnesmärke\n\nEn skulptur i Volker Meyers\nära, som tack för att han har\nförbättrat Simutrans på många,\nmånga sätt.\n
+Minnesmärke\n\nEn skulptur i Volker Meyers\nära, som tack för att han har\nförbättrat Simutrans på många,\nmånga sätt.
 Eingang
 Ingångsbyggnad
 Feste
-Konuberts fästning\n\nByggd runt 1400 med väggar så\ntjocka att de motstått alla\nvapen och århundraden.\nMarknadsgummorna fröjdar sig: Så kan man t o\nm under högsommaren sälja\nstickningar på innergården.\n\n
+Konuberts fästning\n\nByggd runt 1400 med väggar så tjocka att de motstått alla vapen och århundraden.\nMarknadsgummorna fröjdar sig: Så kan man t o m under högsommaren sälja stickningar på innergården.\n
 Fluid_StationBlg
 Oljetank
 FreightShipStop
@@ -193,29 +193,29 @@ Stor banhall (höger halva)
 Goods_StationBlg
 Godsmagasin
 Gymnasium
-Gymnasieskola\n\n\n(Tidigare realskola, numera\ngymnasieskola)\nDenna bildningsanstalt\nhar under tidens lopp tydligt endast\nmed stor ansträngning hängt med\ni skolreformerna. Nuförtiden\nstår det\nåtminstone ett par datorer i källaren där\nförr de gamla kolugnarna stod.\n\n
+Gymnasieskola\n\n\n(Tidigare realskola, numera\ngymnasieskola)\nDenna bildningsanstalt\nhar under tidens lopp tydligt endast\nmed stor ansträngning hängt med\ni skolreformerna. Nuförtiden står det\nåtminstone ett par datorer i källaren där\nförr de gamla kolugnarna stod.\n
 IND_00_01
-En lagerlokal. Lådor, säckar\noch fat från golv till tak. Ingen\nmer än ägaren vet var allting finns.\n\n
+En lagerlokal. Lådor, säckar och fat från golv till tak. Ingen mer än ägaren vet var allting finns.\n
 IND_00_02
-Ett magasin för att lagra\nmaskiner och reservdelar\nför partihandel!\n\n
+Ett magasin för att lagra\nmaskiner och reservdelar\nför partihandel!\n
 IND_00_03
-Lagringstank för firman Lützberg.\nFör det mesta är tanken tom,\nmen den fylls exakt enligt tidtabellen\nav nästa järnvägsvagn.\n\n
+Lagringstank för firman Lützberg.\nFör det mesta är tanken tom,\nmen den fylls exakt enligt tidtabellen\nav nästa järnvägsvagn.\n
 IND_00_05
-Stadens vattenreservoar.\n\nDet är bara den allra äldsta\ndelen som ligger ovan jord\nsom man kan se, men efter att\ndenna byggdes har anläggningen\nfaktiskt omvandlats till en\nunderjordisk reservoar.\n\n
+Stadens vattenreservoar.\n\nDet är bara den allra äldsta delen som ligger ovan jord som man kan se, men efter att denna byggdes har anläggningen faktiskt omvandlats till en underjordisk reservoar.\n
 IND_00_06
-Hattfabriken har ett typiskt\nsågtandstak som låter största\nmöjliga mängd dagsljus nå ner\ntill de flitiga sömmerskornas arbetsplatser.\n\n
+Hattfabriken har ett typiskt sågtandstak som låter största möjliga mängd dagsljus nå ner till de flitiga sömmerskornas arbetsplatser.\n
 IND_00_09
-Kolsilos var runt 1900\nen mycket vanlig syn och\nindustrin på den\ntiden var lika beroende\nav kol som dagens är av olja.\n\n
+Kolsilos var runt 1900\nen mycket vanlig syn och\nindustrin på den\ntiden var lika beroende\nav kol som dagens är av olja.\n
 IND_00_10
-Madrassfabrik från den tid då\nmadrasser med fjäderstoppning\nvar en lyxartikel för fåtalet\noch en stor exportprodukt.\n\n
+Madrassfabrik från den tid då madrasser med fjäderstoppning var en lyxartikel för fåtalet och en stor exportprodukt.\n
 IND_00_12
-Ånglokomotiv behöver bra nitar\nför att fyrboxen skall vara tät.\nI denna fabrik gjöts och\nsmiddes nitar av bästa kvalitet.\nI dag får nog verksamheten\nnärmast betraktas som fastrostad.\n\n
+Ånglokomotiv behöver bra nitar för att fyrboxen skall vara tät. I denna fabrik gjöts och smiddes nitar av bästa kvalitet. I dag får nog verksamheten närmast betraktas som fastrostad.\n
 IND_00_14
-Här står inte krossat glas för\nolycka! Firma Ujetsch AB\ntillverkar färgade glasfönster\noch då nyinstallation av sådana\nidag är ovanliga lever man mest\npå att sälja fönsterglas för att\nersätta något som gått sönder.\n\n
+Här står inte krossat glas för olycka! Firma Ujetsch AB tillverkar färgade glasfönster och då nyinstallation av sådana idag är ovanliga lever man mest på att sälja fönsterglas för att ersätta något som gått sönder.\n
 IND_01_01
-Hittar du inte någon parkeringsplats?\nVarför tar du inte bussen in\ntill stan?\n\n
+Hittar du inte någon parkeringsplats?\nVarför tar du inte bussen in\ntill stan?\n
 IND_01_03
-Gasklocka för lagring\nav naturgas.\n\n
+Gasklocka för lagring\nav naturgas.\n
 LargeShipStop
 Stor godskran
 leftShipStop
@@ -223,7 +223,7 @@ Större lastkran
 LeuchtturmShipStop
 Oceankaj med fyr
 Lighthouse
-Fyr\n\nEn av de ljusstarkaste fyrarna\nlängs denna kust.\nNumera navigerar dock fartygen\nvärldshaven med hjälp av radar\noch fyren är idag enbart en turistattraktion.\n\n
+Fyr\n\nEn av de ljusstarkaste fyrarna längs denna kust.\nNumera navigerar dock fartygen världshaven med hjälp av radar och fyren är idag enbart en turistattraktion.\n
 MainTerminal1930
 Terminalbyggnad (1930)
 MHzSmallStation
@@ -235,9 +235,9 @@ Monorailvagnhall
 MonorailFoundation
 Fundament för monorail
 OldTownhall
-Gammalt rådhus\n\n\n
+Gammalt rådhus\n\n
 Patricks_Rock
-Patricks Rock\n\n\n
+Patricks Rock\n\n
 PlainAirStop
 Flygplansplatta
 PostOffice
@@ -253,25 +253,25 @@ Banhall
 rampShipStop
 Vattenramp
 Raven_Kirche
-St Meinrads kyrka\n\nEremiten St Meinrad åtföljdes enligt\nlegenden av två korpar. När han\nblev mördad förföljde korparna\nmördarna tills dessa blev fällda\nför mordet. Idag står klostret\nEinsiedeln där hans hydda en gång stod.\n\n
+St Meinrads kyrka\n\nEremiten St Meinrad åtföljdes enligt legenden av två korpar. När han blev mördad förföljde korparna mördarna tills dessa blev fällda för mordet. Idag står klostret Einsiedeln där hans hydda en gång stod.\n
 RES_00_01
-Ett litet hus med trädgård\noch rabatter. Ser inte mycket\nut för världen, men är ändå\nhelt centralt i\nSimutrans-universumet. Var t o\nm det första hus som någonsin\nbyggdes där.\n
+Ett litet hus med trädgård och rabatter. Ser inte mycket ut för världen, men är ändå helt centralt i Simutrans-universumet. Var t o m det första hus som någonsin byggdes där.
 RES_00_02
-Litet hus med trädgård. Den av\nnatursten byggda stenmuren\nvisar att den som bor i huset\när förbunden med naturen.\nOm man promenerar längs muren\npå våren kan man se ödlor som\nligger och solar sig på den.\n\n
+Litet hus med trädgård. Den av natursten byggda stenmuren visar att den som bor i huset är förbunden med naturen.\nOm man promenerar längs muren på våren kan man se ödlor som ligger och solar sig på den.\n
 RES_00_03
-Den som bor i ett så stort\nenfamiljshus med trädgård är\nsäkerligen inte fattig och vill\nframförallt undkomma trängseln\ni stadskärnan.\n\n
+Den som bor i ett så stort enfamiljshus med trädgård är säkerligen inte fattig och vill framförallt undkomma trängseln i stadskärnan.\n
 RES_00_04
-En berömd vetenskapsman bor\nett uttalat modernt hus. I\nkällaren finns plats för forskning\noch grannarna viskar om att\ndet ibland kommer konstiga\nljud från densamma mitt i natten.\n\n
+En berömd vetenskapsman bor ett uttalat modernt hus. I källaren finns plats för forskning och grannarna viskar om att det ibland kommer konstiga ljud från densamma mitt i natten.\n
 RES_00_06
-En liten fontän som även om\ninte så stor och imponerande\nsom många andra likväl bringar\nglädje till de som promenerar\ni dess närhet, i synnerhet sommartid.\n\n
+En liten fontän som även om inte så stor och imponerande som många andra likväl bringar glädje till de som promenerar i dess närhet, i synnerhet sommartid.\n
 RES_11_02
-Bungalow\n
+Bungalow
 Residenz
-Herrgård\n\när mestadels renoverad. Det\nnuvarande utseendet härstammar\nfrån en restaurering under\nromantiken som har gjort\nherrgården till favoritkuliss\nför ett otal sockersöta filmer.\n
+Herrgård\n\när mestadels renoverad. Det\nnuvarande utseendet härstammar\nfrån en restaurering under\nromantiken som har gjort\nherrgården till favoritkuliss\nför ett otal sockersöta filmer.
 rightShipStop
 Lastkaj på pir
 RUIN_0
-Ruiner\n\nHerrarna över denna storartade borg\nvar under 30-åriga kriget\nallierade med fel sida.\nDärefter återfick de aldrig sin\ntidigare makt.\n\n
+Ruiner\n\nHerrarna över denna storartade borg var under 30-åriga kriget allierade med fel sida. Därefter återfick de aldrig sin tidigare makt.\n
 SandStationMHz
 Hållplats utan plattform
 ShipDepot
@@ -279,15 +279,15 @@ Varv
 ShipDepotEW
 Skeppsvarv\n\n
 ShipStop
-Hamn\n
+Hamn
 STADIUM2
-Stort stadion\n\nHär äger alla de stora\ninternationella tävlingarna\nrum.\n
+Stort stadion\n\nHär äger alla de stora internationella tävlingarna\nrum.
 Tennis_Court
-Tennisbanor\n\n
+Tennisbanor\n
 Terminal1930
 Terminalbyggnad (1930t)
 Theatre
-Teater\n\n
+Teater\n
 Tower1930
 Flygledartorn (1930)
 TowerMoistboy
@@ -307,7 +307,7 @@ Stationsbyggnad i viktoriansk stil
 Vorplatz
 Stationsentré
 Windmill
-Väderkvarn\n\n
+Väderkvarn\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -342,8 +342,14 @@ Autohaus
 Bilförsäljare
 Autohersteller
 Bilfabrik
+bakery
+Bageri
+brewery
+Bryggeri
 Buchgrosshandel
 Bokhandel
+cannery
+Konservfabrik
 Cementmill
 Cementfabrik
 ChemicalPlant
@@ -352,16 +358,34 @@ CHEMIST
 Apotek
 Concretefactory
 Betongfabrik
+cow_farm
+Boskapsgård
+dairy
+Mejeri
 Druckerei
 Tryckeri
 Erzbergwerk
 Järngruva
+fish_pond
+Fiskodling
+fish_swarm
+Fiskevatten
+food_processing_plant
+Matvarufabrik
+grain_farm
+Spannmålsodling
+grain_mill
+Spannmålskvarn
+grain_windmill
+Väderkvarn
 Incinerator
 Sopförbränningsanläggning
 Kohlegrube
 Kolgruva
 Kohlekraftwerk
 Kolkraftverk
+Marketplace
+Marknad
 Materialswholesale
 Bygghandel
 Moebelfabrik
@@ -380,6 +404,8 @@ Oelkraftwerk
 Oljekraftverk
 Oelpumpe
 Oljepump
+old_farm
+Lantbruk
 Papierfabrik
 Pappersbruk
 Pharmaceutics
@@ -400,6 +426,8 @@ Stahlwerk
 Stålverk
 Stonequarry
 Stenbrott
+supermarket
+Snabbköp
 TANKE
 Bensinstation
 thermisches_Solarkraftwerk
@@ -412,10 +440,14 @@ Vindkraftverk
 #_____________________________________good______________________________________
 Autos
 bilar
+beer
+öl
 Bretter
 brädor
 Buecher
 böcker
+canned_food
+konserver
 Cement
 cement
 Chemicals
@@ -424,14 +456,26 @@ Concrete
 lättbetong
 Eisenerz
 järnmalm
+fish
+fisk
+flour
+mjöl
+food
+färdigrätter
 Gasoline
 bensin
+grain
+spannmål
 Holz
 trävaror
 Kohle
 kol
+meat
+kött
 Medicine
 läkemedel
+milk
+mjölk
 Moebel
 möbler
 None
@@ -557,91 +601,91 @@ Trafikljus
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Ahorn-1
-Lönn\n\n\n
+Lönn\n\n
 Ahorn-2
-Lönn\n\n\n
+Lönn\n\n
 Ahorn-Gruppe
-Lönndunge\n\n\n
+Lönndunge\n\n
 Birke-1
-Björk\n\n\n
-Buche-1
-Bok\n\n\n\n
-Busch_2
-Buske\n\n\n
-Kiefer_1
-Tall\n
-Kiefer_2
-Tall\n
-Kiefer_3
-Tall\n
-Kiefer_4
-Tall\n
-Kiefer_5
-Tall\n
-Latschenkiefer
-Bergtall\nPinus montana\n\nStädsegrönt barrträd som kan bli upp\ntill 6 m högt. Förekommer i bergen\ni Mellan- och Sydeuropa upp till\n2400 m höjd. Större bestånd finns\nhuvudsakligen på stenig mark vid\nden övre trädgränsen. Det hårda,\nkådrika träet används till mest\ntill ved. Från de unga skotten\nutvinns olja som används som\nluktolja och inhalationsmedel.\n\n
-Palmtree1
-Palm\n\n
-Palmtree2
-Palm\n\n
-Palmtree3
-Palm\n\n
-Palmtree4
-Palm\n\n
-Palmtree5
-Palm\n\n
-Palmtree6
-Palm\n\n
-Palmtree7
-Palm\n\n
-Pappel-1
-Poppel\n\n
-Pappel-2
-Poppel\n\n
-Shunter-tree2
-Lövträd\n
-Tanne_1
-Gran\n\n
-Tanne_2
-Gran\n\n
-Tanne_3
-Gran\n\n
-Tanne_4
-Gran\n\n
-Tanne_5
-Gran\n\n
-Tanne_6
-Gran\n\n
-Tree1
-Ek\n\n
-Tree3
 Björk\n\n
+Buche-1
+Bok\n\n\n
+Busch_2
+Buske\n\n
+Kiefer_1
+Tall
+Kiefer_2
+Tall
+Kiefer_3
+Tall
+Kiefer_4
+Tall
+Kiefer_5
+Tall
+Latschenkiefer
+Bergtall\nPinus montana\n\nStädsegrönt barrträd som kan bli upp\ntill 6 m högt. Förekommer i bergen\ni Mellan- och Sydeuropa upp till\n2400 m höjd. Större bestånd finns\nhuvudsakligen på stenig mark vid\nden övre trädgränsen. Det hårda,\nkådrika träet används till mest\ntill ved. Från de unga skotten\nutvinns olja som används som\nluktolja och inhalationsmedel.\n
+Palmtree1
+Palm\n
+Palmtree2
+Palm\n
+Palmtree3
+Palm\n
+Palmtree4
+Palm\n
+Palmtree5
+Palm\n
+Palmtree6
+Palm\n
+Palmtree7
+Palm\n
+Pappel-1
+Poppel\n
+Pappel-2
+Poppel\n
+Shunter-tree2
+Lövträd
+Tanne_1
+Gran\n
+Tanne_2
+Gran\n
+Tanne_3
+Gran\n
+Tanne_4
+Gran\n
+Tanne_5
+Gran\n
+Tanne_6
+Gran\n
+Tree1
+Ek\n
+Tree3
+Björk\n
 Tree4
-Tall är det viktigaste\nträdslaget världen över för skogsbruk.\nMestadels anspråkslös och\nsnabbväxande ersätter den ofta\ninhemska trädslag som\nåterplanteringsväxt efter\nskogsförstörelse eller avverkning.\nDen kommer från början från\nfuktiga och kyliga klimatområden.\nGenom inplantering återfinns tall nu\növer hela världen, - t o m i Antarktis.\n\n
+Tall är det viktigaste trädslaget världen över för skogsbruk.\nMestadels anspråkslös och snabbväxande ersätter den ofta inhemska trädslag som återplanteringsväxt efter skogsförstörelse eller avverkning. Den kommer från början från fuktiga och kyliga klimatområden.\nGenom inplantering återfinns tall nu över hela världen, - t o m i Antarktis.\n
 Tree5
-Eukalyptus\n
+Eukalyptus
 Tree6
-Gran (rödgran) Picea abies\n\n\n\nEtt högt och smalt barrträd som\nförekommer över hela världen.\nDen kan bli 35-65 m hög med\nen stamgrovlek på 2 meter\noch upp till 1000 år gammal.\nDess naturliga hemvist är Nord-\noch Östeuropa samt Mellaneuropas\nbergsområden. Genom plantering\näven spridd till andra områden.\nAnvändning: utomhus- och\ninomhussnickerier,\nundertaksbygge,\nbyggnadsställningar, spånplattor,\nresonansträ i musikinstrument,\ncellulosa- och pappersindustri.\n
+Gran (rödgran) Picea abies\n\n\n\nEtt högt och smalt barrträd som förekommer över hela världen. Den kan bli 35-65 m hög med en stamgrovlek på 2 meter och upp till 1000 år gammal.\nDess naturliga hemvist är Nord- och Östeuropa samt Mellaneuropas bergsområden. Genom plantering även spridd till andra områden.\nAnvändning: utomhus- och inomhussnickerier, undertaksbygge, byggnadsställningar, spånplattor, resonansträ i musikinstrument, cellulosa- och pappersindustri.
 tropictree1
-Tropiskt träd\n
+Tropiskt träd
 tropictree2
-Tropiskt träd\n
+Tropiskt träd
 tropictree3
-Tropiskt träd\n
+Tropiskt träd
 tropictree4
-Tropiskt träd\n\n
+Tropiskt träd\n
 tropictree5
-Tropiskt träd\n\n
+Tropiskt träd\n
 tropictree6
-Tropiskt träd\n\n
+Tropiskt träd\n
 tropictree7
-Tropiskt träd\n\n
+Tropiskt träd\n
 tropictree8
-Tropiskt träd\n\n
+Tropiskt träd\n
 tropictree9
-Tropiskt träd\n\n
+Tropiskt träd\n
 Willow
-Tårpil\n\n\n
+Tårpil\n\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel
@@ -786,6 +830,12 @@ Concept2Pass
 Concept 2 Passagerarvagn
 Concept2Rear
 Concept 2 Bakre Lok
+Cooling_Container
+Kylkontainervagn
+Cooling_Truck
+Kylbil
+Cooling_Waggon
+Kylvagn
 DaimlerStoll
 Daimler Stoll
 Deponielaster
@@ -830,6 +880,10 @@ F7back
 F7 Bakre Lok
 FastFerry
 Svävare
+Fishing_Boat
+Flytande fiskfabrik
+Fishing_Boat_DanMacK
+Fiskebåt
 Flachwagen
 Låggolvsvagn
 Fokker_F27
@@ -942,6 +996,10 @@ MailExpress
 Postflyg
 Mailwagon
 Postvagn
+Milk_Truck
+Mjölkbil
+Milk_Waggon
+Mjölkvagn
 Moebelschiff
 TPI/JET Fraktskepp
 Moebelwagen

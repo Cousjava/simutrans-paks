@@ -5,9 +5,11 @@
 #                             Language: es Espanol                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 17.10 2009                           #
+#                            Date Created: 9.12 2009                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                   - Diegote                                  #
+#                                    note:                                     #
 #                              Frank Penz - FrankP                             #
 #                      note: Administrator SimuTranslator                      #
 #                       Zeno (Albert Ruiz) - albert.yuste                      #
@@ -71,7 +73,7 @@ Ayuntamiento
 04_CITY_C
 Ayuntamiento
 10_WOHN
-Pequeña iglesia\n\n
+Pequeña iglesia\n
 1930AirDepot
 Hangar de 1930
 1headquarter
@@ -81,17 +83,17 @@ Hangar de 1930
 3headquarter
 ¡El cuartel general de tu compañía!
 A1_ALTE_KIRCHE
-Iglesia Famosa  Una\nfamosa catedral antigua.\ncon magníficas pinturas.\nTodo el mundo  debería ver\neste fantástico  edificio.\n\n\n
+Iglesia Famosa  Una\nfamosa catedral antigua.\ncon magníficas pinturas.\nTodo el mundo  debería ver\neste fantástico  edificio.\n\n
 A2_SCHLOSS1
-Neuschwanstein El castillo\ndel rey loco. ¡Merece una\nvisita!\n\n\n
+Neuschwanstein El castillo\ndel rey loco. ¡Merece una\nvisita!\n\n
 A3_BURG1
-Algunas ruinas que hablan\nde tiempos mejores.\nSiempre son una  visita\ninteresante.\n\n\n
+Algunas ruinas que hablan\nde tiempos mejores.\nSiempre son una  visita\ninteresante.\n\n
 A4_SCHLOSS2
-Viejo castillo  con una\nmaravillosa coleccion de\ncuadros. Perfecto para una\nvisita rápida, incluso si\nhace un mal día.\n\n\n
+Viejo castillo  con una\nmaravillosa coleccion de\ncuadros. Perfecto para una\nvisita rápida, incluso si\nhace un mal día.\n\n
 A5_STONEHENGE
-Stonehedge Un antiguo\nanillo de piedras. ¡Sienta el\nmisterio deslizandose entre\nsus monolitos!\n\n\n
+Stonehedge Un antiguo\nanillo de piedras. ¡Sienta el\nmisterio deslizandose entre\nsus monolitos!\n\n
 A6_DOME
-Catedral Antigua Ha sido el\ncorazón de esta ciudad\ndurante siglos.\n\n\n
+Catedral Antigua Ha sido el\ncorazón de esta ciudad\ndurante siglos.\n\n
 AirDepot
 Hangar de 1900
 AirportShed1930
@@ -123,117 +125,117 @@ Parada de mercancías\n
 ChannelStop
 Puerto fluvial
 COM_00_01
-Pequeña tienda de\nantigüedades de la época\ncolonial prusiana\n
+Pequeña tienda de antigüedades de la época colonial prusiana
 COM_00_02
-A todos los conductores de\nla ciudad les encanta la\ngasolinera de Mr.\nReichmuth, porque aquí\nhay un surtidor automático\nde mezcla. No depende de\nlas grandes compañias de\ntransporte, por eso no es\nnecesario eliminarla. No te\nquitara parte del negocio\n\n\n\n\n
+A todos los conductores de\nla ciudad les encanta la\ngasolinera de Mr.\nReichmuth, porque aquí\nhay un surtidor automático\nde mezcla. No depende de\nlas grandes compañias de\ntransporte, por eso no es\nnecesario eliminarla. No te\nquitara parte del negocio\n\n\n\n
 COM_00_03
-Quisiera terminar de una\nvez por todas la triste\nexistencia de este garaje y\nabrir un área de servicio en\nla calle principal. Pero\ncarece de todo: el dinero,\nel permiso de obras y la calle\nprincipal.\n\n\n
+Quisiera terminar de una\nvez por todas la triste\nexistencia de este garaje y\nabrir un área de servicio en\nla calle principal. Pero\ncarece de todo: el dinero,\nel permiso de obras y la calle\nprincipal.\n\n
 COM_00_05
-Banco "exprimidor". Lo\nllaman "exprimidor" (en\nlugar de "derrochador")\nporque cuando entras en él,\ntu cartera se vacía\nmágicamente. Normalmente\npuede verse al encargado\nfrotándose las manos con\nregocijo.\n\n\n
+Banco "exprimidor". Lo\nllaman "exprimidor" (en\nlugar de "derrochador")\nporque cuando entras en él,\ntu cartera se vacía\nmágicamente. Normalmente\npuede verse al encargado\nfrotándose las manos con\nregocijo.\n\n
 COM_00_06
-En ninguna parte\nencontraras un café mejor\nque el de TejaCafé.\n\n\n
+En ninguna parte\nencontraras un café mejor\nque el de TejaCafé.\n\n
 COM_00_08
-Bloque de apartamentos\ncon algunas tiendas.\n\n\n
+Bloque de apartamentos\ncon algunas tiendas.\n\n
 COM_00_10
-Bloque de oficinas mediano\ncon rampa de acceso.\n\n\n
+Bloque de oficinas mediano\ncon rampa de acceso.\n\n
 COM_00_11
-Bazar NOVA. Un bazar\nbrillante y colorista donde\nse venden desde velas de\ncera hasta maquetas de\nbarcos.\n\n\n
+Bazar NOVA. Un bazar\nbrillante y colorista donde\nse venden desde velas de\ncera hasta maquetas de\nbarcos.\n\n
 COM_00_12
-Bloque de oficinas en\nconstrucción\n
+Bloque de oficinas en construcción
 COM_00_14
-Este edificio parece una\nantigua fábrica, pero en\nrealidad es un chiringuito\nde apuestas ilegales muy\norganizado.\n\n\n
+Este edificio parece una\nantigua fábrica, pero en\nrealidad es un chiringuito\nde apuestas ilegales muy\norganizado.\n\n
 COM_00_18
-Bloque de oficinas moderno\nque alberga a la nueva\ncompañía de software\nSimuSoft, un gigante de las\nTI.\n
+Bloque de oficinas moderno que alberga a la nueva compañía de software SimuSoft, un gigante de las TI.
 COM_00_22
-Nuevo edificio de la ONU\npara Somalia.\n\n\n
+Nuevo edificio de la ONU\npara Somalia.\n\n
 COM_01_01
-Campo de despegue y\naterrizaje de globos de aire\ncaliente. Este lugar está\nfrecuentado por muchos\npolíticos, por eso no\npuedes ver botellas de gas.\n\n\n
+Campo de despegue y\naterrizaje de globos de aire\ncaliente. Este lugar está\nfrecuentado por muchos\npolíticos, por eso no\npuedes ver botellas de gas.\n\n
 COM_01_04
-Parque del Retiro\n\n\n
+Parque del Retiro\n\n
 COM_01_09
-Antiguo cine. Aquí se\nproyectan muchísimas\npelículas en blanco y\nnegro. Es muy popular entre\nlos fans de Charlie Chaplin\ny Buster Keaton.\n\n\n
+Antiguo cine. Aquí se\nproyectan muchísimas\npelículas en blanco y\nnegro. Es muy popular entre\nlos fans de Charlie Chaplin\ny Buster Keaton.\n\n
 COM_01_10
-El ambulatorio de la ciudad. \n\n\n
+El ambulatorio de la ciudad. \n\n
 COM_01_17
-Bloque de oficinas mediano,\nsede del departamento de\nayuda y preguntas frequentes\nde Simutrans.\n
+Bloque de oficinas mediano, sede del departamento de ayuda y preguntas frequentes de Simutrans.
 COM_01_18
-Torre de oficinas con\nfachada de cristal\n\n\n
+Torre de oficinas con\nfachada de cristal\n\n
 COM_01_20
-Torre Picasso\n\n\n
+Torre Picasso\n\n
 COM_01_21
-Bloque de oficinas con una\ndeslumbrante fachada\nacristalada. Suele tener\nmuchas quejas, porque al\namanecer los reflejos\nprovocan muchos accidentes\nde tráfico en las cercanías.\n
+Bloque de oficinas con una deslumbrante fachada acristalada. Suele tener muchas quejas, porque al amanecer los reflejos provocan muchos accidentes de tráfico en las cercanías.
 COM_01_22
-Bloque de Oficinas\n\nEste edificio de oficinas fue\nconstruido \nen lo alto de otro edificio.\n Debido a riguroso\ncalendario, el\nequipo de construcción no\ntuvo tiempo de eliminar el\nantiguo edificio, así que simplemente\nconstruyeron encima.\n\n
+Bloque de Oficinas\n\nEste edificio de oficinas fue construido \nen lo alto de otro edificio.\n Debido a riguroso calendario, el\nequipo de construcción no\ntuvo tiempo de eliminar el antiguo edificio, así que simplemente\nconstruyeron encima.\n
 COM_02_02
-Aparcamiento por horas\n Controla el tiempo que\ndejas tu coche aquí, o\npuede que no tengas dinero\nsuficiente para la gasolina.\n
+Aparcamiento por horas\n Controla el tiempo que dejas tu coche aquí, o puede que no tengas dinero suficiente para la gasolina.
 COM_02_04
-Pequeña plazoleta\n\nuna plazoleta con una bella\narboleda en el centro. Los padres\nllevan a sus hijos aquí para pasar\n la tarde.\n\n
+Pequeña plazoleta\n\nuna plazoleta con una bella\narboleda en el centro. Los padres\nllevan a sus hijos aquí para pasar\n la tarde.\n
 COM_02_13
-Tiendas con soportales\n\n\n
+Tiendas con soportales\n\n
 COM_02_16
-Oficinas de Simutrans TV\n\n\n
+Oficinas de Simutrans TV\n\n
 COM_02_17
-Antigua torre de oficinas\n\n\n
+Antigua torre de oficinas\n\n
 COM_02_19
-Torre banco Simutrans\n\n\n
+Torre banco Simutrans\n\n
 COM_03_14
-Estúdio de arquitectura\n\nUn arquitecto compró esta\nantigua oficina y la reformó\npara convertirla en un estúdio.\n\n
+Estúdio de arquitectura\n\nUn arquitecto compró esta\nantigua oficina y la reformó\npara convertirla en un estúdio.\n
 COM_03_15
-Poco antes de la segunda\nGuerra Mundial\nfueron construidas estas\ndependencias del ministerio\nde defensa, influenciadas\npor el futurismo.\nDesafortunadamente, pronto se dieron cuentas\nde que el \nferro-hormigón ya estaba inventado hace\nal menos un \nmillón de años.\n No hay forma de embellecer\nesto, includo aunque hoy en día sea\nt la sede de una organización\ncaritativa.\n\n\n
+Poco antes de la segunda Guerra Mundial\nfueron construidas estas\ndependencias del ministerio\nde defensa, influenciadas por el futurismo.\nDesafortunadamente, pronto se dieron cuentas\nde que el \nferro-hormigón ya estaba inventado hace al menos un \nmillón de años.\n No hay forma de embellecer\nesto, includo aunque hoy en día sea\nt la sede de una organización\ncaritativa.\n\n
 COM_03_17
-Torre de oficinas de\nempresas automovilísticas\n como SimuMotors,\nH-Trans, MHz&Wheelz y VV\nCamiones Industriales.\n
+Torre de oficinas de\nempresas automovilísticas\n como SimuMotors, H-Trans, MHz&Wheelz y VV Camiones Industriales.
 COM_03_19
-Oficinas centrales de una\ngran aseguradora\n\n\n
+Oficinas centrales de una\ngran aseguradora\n\n
 COM_03_20
-Sede de SimuTV\nLa cadena de televisión más\nvista en internet.\nNo te pierdas el especial\n Grandes Leyendas de\nSimutrans de los jueves,\n donde repasan la historia\ndel juego a \ntravés de las personas que lo\nhicieron grande.\nEsta semana, Raven "el\nmagnífico".\n
+Sede de SimuTV\nLa cadena de televisión más vista en internet.\nNo te pierdas el especial\n Grandes Leyendas de Simutrans de los jueves,\n donde repasan la historia del juego a \ntravés de las personas que lo hicieron grande.\nEsta semana, Raven "el magnífico".
 COM_04_15
-Este bloque de oficianas ha\nsido reformado muchas\nveces, como demuestra la\nparabólica del tejado.\nTambién se puede apreciar\nel techo acristalado que\ncubre la piscina interior,\nsituada tres pisos mas abajo. \n\n\n
+Este bloque de oficianas ha\nsido reformado muchas\nveces, como demuestra la\nparabólica del tejado.\nTambién se puede apreciar\nel techo acristalado que\ncubre la piscina interior,\nsituada tres pisos mas abajo. \n\n
 COM_10_01
-Precioso lago con árboles\ncerca. ¿qué niño no\n querría nadar\n aquí en verano o patinar\nen invierno?\n\n\n
+Precioso lago con árboles\ncerca. ¿qué niño no\n querría nadar\n aquí en verano o patinar en invierno?\n\n
 COM_10_02
-Desde que se instauró la\nzona azul de\nestacionamiento regulado,\nlos tickets de aparcamiento\ngratuito en las afueras de la\nciudad están muy\ndemandados.\n
+Desde que se instauró la zona azul de estacionamiento regulado, los tickets de aparcamiento gratuito en las afueras de la ciudad están muy demandados.
 COM_10_05
-Este granero ha estado usándose\nun montón de años por el granjero\nIsidro. Si quieres, aún\n puedes notar el olor a\nleche fresca.\n Solo tienes que\nacercarte aquí.\n\n\n
+Este granero ha estado usándose\nun montón de años por el granjero\nIsidro. Si quieres, aún\n puedes notar el olor a leche fresca.\n Solo tienes que acercarte aquí.\n\n
 COM_10_07
-Hotel\n\nEste es un hotel es un\npunto de encuentro para los viajeros\nque podrán descansar y\ndejar reposar\na sus caballos.\n\n
+Hotel\n\nEste es un hotel es un\npunto de encuentro para los viajeros\nque podrán descansar y dejar reposar\na sus caballos.\n
 COM_10_08
-Tienda de trajes mediavales.\nLos mejores trajes de la\népoca mediaval están\ndisponibles en esta\nmaravillosa tienda. Doncella,\nbardo, juglar, caballero,\nbuhonero, monje, castellano,\nprior y duque son los más demandados.\n\n\n
+Tienda de trajes mediavales.\nLos mejores trajes de la época mediaval están disponibles en esta maravillosa tienda. Doncella, bardo, juglar, caballero, buhonero, monje, castellano, prior y duque son los más demandados.\n\n
 COM_10_10
-Tienda de repuestos para\nescaladores\n\n\n
+Tienda de repuestos para\nescaladores\n\n
 COM_10_11
-Comercio y Casa.\n\nLos comerciantes tienen sus\nviviendas en el \nmismo sitio que sus tiendas. En\nla planta\n baja están los\ncomercios, en el primer piso\n están las viviendas y el\nático se usa como almacén.\n\n\n\nCasas de los comerciantes las\npersonas que viven en casas\nTyC, los comerciantes de\nPrad?d patán. Ocupan la planta\nbaja tiendas, ubicada en el\nprimer piso las habitaciones\nresidenciales, y actuar como\nun ático de almacenamiento.\n
+Comercio y Casa.\n\nLos comerciantes tienen sus viviendas en el \nmismo sitio que sus tiendas. En la planta\n baja están los comercios, en el primer piso\n están las viviendas y el ático se usa como almacén.\n\n\n\nCasas de los comerciantes las personas que viven en casas TyC, los comerciantes de Prad?d patán. Ocupan la planta baja tiendas, ubicada en el primer piso las habitaciones residenciales, y actuar como un ático de almacenamiento.
 COM_10_12
-Esta vieja casa decrépita\nrememora los tiempos cuando los\nhabitantes de simutrans no\nconocían el divino poder de\nla electricidad o los raíles.\n
+Esta vieja casa decrépita\nrememora los tiempos cuando los habitantes de simutrans no conocían el divino poder de la electricidad o los raíles.
 COM_11_10
-Tienda de música Raven &\nthe Crows\n\n\n
+Tienda de música Raven &\nthe Crows\n\n
 COM_11_11
-Bulevar de tiendas.\n\n\n
+Bulevar de tiendas.\n\n
 COM_11_12
-Tienda de venta de objetos\nde plata precolombinos.\n\n Se pueden encontrar\ndesde jarrones, cubertería\ny joyas hasta armas.\n
+Tienda de venta de objetos de plata precolombinos.\n\n Se pueden encontrar desde jarrones, cubertería y joyas hasta armas.
 Control_StationBlg
 Control de tráfico ferroviario
 DenkFlor
-Dedicado a Flor 'WF Ultd.'\nWauters, el famoso\ningeniero que creó tantos\nvehículos de carretera y\nferroviarios. También\nfamoso por diseñar otras\ntantas productivas factorías.\n\n\n
+Dedicado a Flor 'WF Ultd.'\nWauters, el famoso\ningeniero que creó tantos\nvehículos de carretera y\nferroviarios. También\nfamoso por diseñar otras\ntantas productivas factorías.\n\n
 DenkHajo
-Este monumento está\ndedicado a Hansjörg\nMathaner quien creó este\njuego en siete años. Los\nsemidioses tardan más en\ntales trabajos.\n\n\n
+Este monumento está\ndedicado a Hansjörg\nMathaner quien creó este\njuego en siete años. Los\nsemidioses tardan más en\ntales trabajos.\n\n
 DenkMHz
-Este monumento está\ndedicado a Georg Heiduk\n(MHz), el maestro en\nedificios renderizados.\nRepresenta su aguda visión\nde los detalles.\n\n\n
+Este monumento está\ndedicado a Georg Heiduk\n(MHz), el maestro en\nedificios renderizados.\nRepresenta su aguda visión\nde los detalles.\n\n
 DenkOwen
-Lugar dedicado a Owen\nRudge, el famoso técnico\nde sonido y experto\nfinanciero.\n\n\n
+Lugar dedicado a Owen\nRudge, el famoso técnico\nde sonido y experto\nfinanciero.\n\n
 DenkSeth
-Este lugar está dedicado a\nSeth C. Triggs, el famoso\narquitecto que diseñó\ntantos edificios bellos.\nTambién fue famoso por\nsus estudios para mejorar\nel tráfico\n\n\n
+Este lugar está dedicado a\nSeth C. Triggs, el famoso\narquitecto que diseñó\ntantos edificios bellos.\nTambién fue famoso por\nsus estudios para mejorar\nel tráfico\n\n
 DenkTomas
-Este monumento se dedica\nTomas Kubes quien ayudó a\nmejorar Simutrans en\nmuchos, muchos aspectos\ncon sus consejos y  su\nesfuerzo.\n\n\n
+Este monumento se dedica\nTomas Kubes quien ayudó a\nmejorar Simutrans en\nmuchos, muchos aspectos\ncon sus consejos y  su\nesfuerzo.\n\n
 DenkTrikky
-Dedicado a 'Trikky' Rick\nMcGreal, el famoso\narquitecto que diseñó\ntantos edificios\nimpresionantes.\n\n\n
+Dedicado a 'Trikky' Rick\nMcGreal, el famoso\narquitecto que diseñó\ntantos edificios\nimpresionantes.\n\n
 DenkVM
-Dedicado a Manfred 'VT\nVienna' Tomaschitz, el\nfamoso ingeniero que\ndiseñó mucho material\nferroviario.\n\n\n
+Dedicado a Manfred 'VT\nVienna' Tomaschitz, el\nfamoso ingeniero que\ndiseñó mucho material\nferroviario.\n\n
 DenkVolker
-Lugar construido  por Volker\nMeyer quien mejoró\nSimutrans en muchos,\nmuchos aspectos.\n\n\n
+Lugar construido  por Volker\nMeyer quien mejoró\nSimutrans en muchos,\nmuchos aspectos.\n\n
 Eingang
 Entrada a la estacion
 Feste
-Fortaleza de Konubert\n\nEste enorme castillo fue\nlevantado hacia el año\n1400, en el periodo\ncorrespondiente a la Baja\nEdad Media.\n\n\n
+Fortaleza de Konubert\n\nEste enorme castillo fue\nlevantado hacia el año\n1400, en el periodo\ncorrespondiente a la Baja\nEdad Media.\n\n
 Fluid_StationBlg
 Tanque de combustible
 FreightShipStop
@@ -249,67 +251,67 @@ Hall de estacion (derecha)
 Goods_StationBlg
 Almacén
 Gymnasium
-Instituto Liceo\n\n\n
+Instituto Liceo\n\n
 IND_00_01
-Almacén de prensa\n aquí yacen encerradas\nbajo llave\nalgunas de las páginas escritas\n más vergonzantes de la\nhistoria periodística.\n\n
+Almacén de prensa\n aquí yacen encerradas bajo llave\nalgunas de las páginas escritas\n más vergonzantes de la historia periodística.\n
 IND_00_02
-Conjunto de naves\nindustriales con mucho\nespacio libre\n\n\n
+Conjunto de naves\nindustriales con mucho\nespacio libre\n\n
 IND_00_03
-Depósito de combustible.\n\n
+Depósito de combustible.\n
 IND_00_04
-Fábrica de planchas de metal\ntechos, puertas, planchas,\nmoldes, recipientes,\nestructuras son algunos de\nlos elementos más\ndemandados hoy en día.\nPor eso, siempre es necesario\ntener un instalación como esta\na mano.\n
+Fábrica de planchas de metal\ntechos, puertas, planchas, moldes, recipientes, estructuras son algunos de los elementos más demandados hoy en día. Por eso, siempre es necesario tener un instalación como esta a mano.
 IND_00_05
-Depósito de agua\nHasta la última gota del\nexcente de la ciudad está\nguardado aquí,\npor eso no dejan subir a nadie.\nSeguro que más de uno metería\nlos pies..\n\n
+Depósito de agua\nHasta la última gota del excente de la ciudad está guardado aquí,\npor eso no dejan subir a nadie.\nSeguro que más de uno metería los pies..\n
 IND_00_06
-Una fábrica con los típicos\ntejados de sierra. Eso que\nasoma en las paredes son\nlas ventanas,\n que al menos arrojan algo\n de luz sobre los puestos\nde trabajo.\n
+Una fábrica con los típicos tejados de sierra. Eso que asoma en las paredes son las ventanas,\n que al menos arrojan algo\n de luz sobre los puestos de trabajo.
 IND_00_09
-Silos\nEl ganado debe comer, cada\nhora de cada mes\n de cada día de cada año\n para engordar rápidamente.\nNo sé si los silos serán\n lo suficientemente altos\ncomo para albergar tanta comida.\n\n
+Silos\nEl ganado debe comer, cada hora de cada mes\n de cada día de cada año\n para engordar rápidamente. No sé si los silos serán\n lo suficientemente altos como para albergar tanta comida.\n
 IND_00_10
-Esta es un fábrica que es encarga\n de importar piezas de\ncarro y \nlas ensambla en una moderna\ncadena de montaje, modelo\nFiord-T\n
+Esta es un fábrica que es encarga\n de importar piezas de carro y \nlas ensambla en una moderna cadena de montaje, modelo Fiord-T
 IND_00_12
-Fábrica de maquinaria antigua\n De aquí salió el primer tren\n propulsado mediante zumo\nde remolacha del mundo.\n Fue el precursor de los\nbiocombustibles pero\nno tuvo mucho éxito porque\nla gente\n odiaba el zumo de remolacha.\n\n\n
+Fábrica de maquinaria antigua\n De aquí salió el primer tren\n propulsado mediante zumo de remolacha del mundo.\n Fue el precursor de los biocombustibles pero\nno tuvo mucho éxito porque la gente\n odiaba el zumo de remolacha.\n\n
 IND_00_14
-Óptica\nEste taller fue la cuna del\nLaser, Maser, Taser y cualquier\n artiloguio terminado en ser.\nEstán desarrollando la última\ntecnología en óptica\ncuantica, que\npermitira saber finalmente si un tren\nestá encendido o\n apagado, sin abrir la puerta\nde la cochera.\nCrucemos los dedos y cerremos los ojos.\n \n
+Óptica\nEste taller fue la cuna del Laser, Maser, Taser y cualquier\n artiloguio terminado en ser.\nEstán desarrollando la última tecnología en óptica cuantica, que\npermitira saber finalmente si un tren está encendido o\n apagado, sin abrir la puerta de la cochera.\nCrucemos los dedos y cerremos los ojos.\n 
 IND_00_16
-Planta de procesado\nNo se sabe exactamente\nqué procesa\n pero el dueño asegura que\n la producción no para\nnunca, 24 horas, los 7 de\nla semana.\n Muchos sospechan que es\nuna tapadera\ndel lobby de la "vía doble"\npara blanquear créditos.\n\n
+Planta de procesado\nNo se sabe exactamente qué procesa\n pero el dueño asegura que\n la producción no para nunca, 24 horas, los 7 de la semana.\n Muchos sospechan que es una tapadera\ndel lobby de la "vía doble"\npara blanquear créditos.\n
 IND_00_17
-Matadero\nUn lugar donde siempre hay trabajo\npara cualquiera. Puede que te\nencuentres con\n algún viejo campeón de\nboxeo practicando con el\ntorso de alguna vaca muerta.\n Pero los torsos no\ndevuelven el golpe.\n
+Matadero\nUn lugar donde siempre hay trabajo\npara cualquiera. Puede que te encuentres con\n algún viejo campeón de boxeo practicando con el torso de alguna vaca muerta.\n Pero los torsos no devuelven el golpe.
 IND_00_18
-Almacén de la policía\nUno de los lugares más\nvigilados de la ciudad.\nMuchos delincuentes quieren\ndestruir las pruebas en su\n contra que están\nalmacenadas aquí y de paso\nrecuperar su pistola.\n\n
+Almacén de la policía\nUno de los lugares más vigilados de la ciudad.\nMuchos delincuentes quieren destruir las pruebas en su\n contra que están almacenadas aquí y de paso recuperar su pistola.\n
 IND_01_01
-Aparcamiento\n\n¿No encuentra un\naparcamiento libre para su\ncoche? Entonces, ¿por qué\nno viene a la ciudad en\nautobús?\n\n\n
+Aparcamiento\n\n¿No encuentra un\naparcamiento libre para su\ncoche? Entonces, ¿por qué\nno viene a la ciudad en\nautobús?\n\n
 IND_01_03
-Depósito de gas grande\n\nDepósito esférico para el\nalmacenamiento de gas\nnatural.\n\n\n
+Depósito de gas grande\n\nDepósito esférico para el\nalmacenamiento de gas\nnatural.\n\n
 IND_01_04
-Cobertizo de chapa\n\nEn un cobertizo de chapa\npuede hacer mucho frío en\ninvierno. Por tanto, hay que\nafanarse con el soplete\ndurante la primera hora de\ntrabajo. Durante el invierno,\nuno agradece no tener que\ncogerlo hasta el mediodía, a\nser es posible.\n\n\n
+Cobertizo de chapa\n\nEn un cobertizo de chapa\npuede hacer mucho frío en\ninvierno. Por tanto, hay que\nafanarse con el soplete\ndurante la primera hora de\ntrabajo. Durante el invierno,\nuno agradece no tener que\ncogerlo hasta el mediodía, a\nser es posible.\n\n
 IND_01_06
-La tapicería Nalbrugger\ntapiza sillas y sillones de\ntodo tipo con cuero.\n\n\n
+La tapicería Nalbrugger\ntapiza sillas y sillones de\ntodo tipo con cuero.\n\n
 IND_01_07
-Subestación transformadora\n\n
+Subestación transformadora\n
 IND_01_08
-Fábrica de fertilizantes\nAntiguamente era criadero de\nlombrices, pero\n cuando murió el dueño,\nla hija heredó el imperio industrial\n y decidió orientarlo a\nlos fertilizantes, porque\n odiaba a esos malditos\nbichos marrones y blanditos.\n\n
+Fábrica de fertilizantes\nAntiguamente era criadero de lombrices, pero\n cuando murió el dueño, la hija heredó el imperio industrial\n y decidió orientarlo a los fertilizantes, porque\n odiaba a esos malditos bichos marrones y blanditos.\n
 IND_01_09
-Depósito de aguas residuales\n\n
+Depósito de aguas residuales\n
 IND_01_10
-Fábrica de herramientas.\n\nDesde hace un siglo, forma\nparte del paisaje de la\nciudad, al igual que las\niglesias. Los martillos y\nalicates que fabrica hoy en\ndía no son útiles para el uso\ndoméstico, ya que la cabeza\ndel martillo es como una\ncabeza de clavo y los alicates\nson tan pequeños que uno\ndebería cogerlos con pinzas\nsin apretar demasiado, no se\nvaya a destruir una de estas\nmaravillas de la mecánica de\nprecisión.\n\n\n
+Fábrica de herramientas.\n\nDesde hace un siglo, forma\nparte del paisaje de la\nciudad, al igual que las\niglesias. Los martillos y\nalicates que fabrica hoy en\ndía no son útiles para el uso\ndoméstico, ya que la cabeza\ndel martillo es como una\ncabeza de clavo y los alicates\nson tan pequeños que uno\ndebería cogerlos con pinzas\nsin apretar demasiado, no se\nvaya a destruir una de estas\nmaravillas de la mecánica de\nprecisión.\n\n
 IND_01_11
-Esta fábrica se dedicaba\ninicialmente a coser blusas.\nLas mujeres podían ser\ncontratadas con salarios\nbajos, y la semana de 48\nhoras fue otro progreso\nnotable. Hoy día, las mujeres\ntras las computadoras se\nsientan en sus cubículos y\nvisten blusas, cosidas por\notras mujeres por bajos\nsalarios durante más de 48\nhoras a la semana en algun\nlugar de Asia.\n\n\n
+Esta fábrica se dedicaba\ninicialmente a coser blusas.\nLas mujeres podían ser\ncontratadas con salarios\nbajos, y la semana de 48\nhoras fue otro progreso\nnotable. Hoy día, las mujeres\ntras las computadoras se\nsientan en sus cubículos y\nvisten blusas, cosidas por\notras mujeres por bajos\nsalarios durante más de 48\nhoras a la semana en algun\nlugar de Asia.\n\n
 IND_01_12
-Esta fábrica de estilo\nbauhaus se ha dedicado\nsiempre a la producción de\ntubos. Desde el hierro\nfundido al plástico ha\nhabido un largo trecho.\n\n\n
+Esta fábrica de estilo\nbauhaus se ha dedicado\nsiempre a la producción de\ntubos. Desde el hierro\nfundido al plástico ha\nhabido un largo trecho.\n\n
 IND_01_13
-El enorme crater negro es\ndebido a\nun pequeño accidente con la\ncaldera. Bueno, de \necho fue la explosión más\ngrande que se recuerda.\nCubró \nmedia ciudad con lodo negro. Ese incidente\n se conoce como "El lado\noscuro".\n
+El enorme crater negro es debido a\nun pequeño accidente con la caldera. Bueno, de \necho fue la explosión más grande que se recuerda. Cubró \nmedia ciudad con lodo negro. Ese incidente\n se conoce como "El lado oscuro".
 IND_01_15
-Fábrica\n\nInicialmente se iba a denominar fábrica\nde las\n tres chimeneas, en honor a\n los tres profetas de\nSimutrans (Hajo, Prissi y\nIsaac) pero el\n arquitecto no profesaba la\nmisma fe, era un converso\nOTTD, y \nnunca terminó de reconocer a\nIsaac como profeta.\n Es más, declaró que nunca\naceptaría a un\n dictador por muy\nbenevolente que hubiera sido.\n\n
+Fábrica\n\nInicialmente se iba a denominar fábrica de las\n tres chimeneas, en honor a\n los tres profetas de Simutrans (Hajo, Prissi y Isaac) pero el\n arquitecto no profesaba la misma fe, era un converso OTTD, y \nnunca terminó de reconocer a Isaac como profeta.\n Es más, declaró que nunca aceptaría a un\n dictador por muy benevolente que hubiera sido.\n
 IND_02_01
-Esta fábrica empezó siendo\nun depísoto de chatarra\ncon una sola pared. El\nfundador de la fábrico\nfalleció sepultado por un\namasijo de hierros mientras\nintentaba sacar una varilla de\ncobre de una montaña de\nchatarra. Fue el precursor del\nfamoso juego de la jenga.\n
+Esta fábrica empezó siendo un depísoto de chatarra con una sola pared. El fundador de la fábrico falleció sepultado por un amasijo de hierros mientras intentaba sacar una varilla de cobre de una montaña de chatarra. Fue el precursor del famoso juego de la jenga.
 IND_02_02
-Taller de chatarra.\n\nDesde tiempos inmemoriales, la\nchatarra ha servido para\nlevantar el tejido industrial\nen tiempos de escasez. El\nreciclaje es hoy una\nprioridad\n\n\n
+Taller de chatarra.\n\nDesde tiempos inmemoriales, la\nchatarra ha servido para\nlevantar el tejido industrial\nen tiempos de escasez. El\nreciclaje es hoy una\nprioridad\n\n
 IND_02_06
-Fábrica de procesadores de\núltima generación\n"Dual Core Octarino" propiedad\nde la empresa\nSimtel\n
+Fábrica de procesadores de última generación\n"Dual Core Octarino" propiedad de la empresa\nSimtel
 IND_02_09
-Estación de tratamiento\n de aguas residuales\n\n
+Estación de tratamiento\n de aguas residuales\n
 IND_02_10
-Esta vieja fábrica de jabón\nse ve igual que cuando fue\nconstruida.¡Es un verdadero milagro!\n\n\n
+Esta vieja fábrica de jabón\nse ve igual que cuando fue\nconstruida.¡Es un verdadero milagro!\n\n
 LargeShipStop
 Grua pesada de carga
 leftShipStop
@@ -317,7 +319,7 @@ Grúa de gran tonelaje
 LeuchtturmShipStop
 Puerto con faro
 Lighthouse
-Faro\n\n\n
+Faro\n\n
 MainTerminal1930
 Terminal aeropuerto
 MHzSmallStation
@@ -331,9 +333,9 @@ Plataforma de monorraíl
 MonorailGround
 Plataforma de monorraíl
 OldTownhall
-Antiguo ayuntamiento\n\n\n
+Antiguo ayuntamiento\n\n
 Patricks_Rock
-Roca sagrada de Patrick\n\n\n
+Roca sagrada de Patrick\n\n
 PlainAirStop
 Terminal de carga de aviones
 PostOffice
@@ -349,142 +351,141 @@ Hall de estación
 rampShipStop
 Rampa de carga para barcos
 Raven_Kirche
-Iglesia de St. Meinrad\n\nLa hermita de St. Meinrad\nesta custodiada por dos\nenormes cuervos, segun\ncuenta la leyenda. Cuando\nMeinrand fue asesinado,\nlos dos cuervos persiguieron\na los asesinos y les\ncondenaron por toda la\neternidad. En la actualidad, el\nlugar esta ocupado por el\nmonasterio de Einsiedeln.\n\n\n
+Iglesia de St. Meinrad\n\nLa hermita de St. Meinrad\nesta custodiada por dos\nenormes cuervos, segun\ncuenta la leyenda. Cuando\nMeinrand fue asesinado,\nlos dos cuervos persiguieron\na los asesinos y les\ncondenaron por toda la\neternidad. En la actualidad, el\nlugar esta ocupado por el\nmonasterio de Einsiedeln.\n\n
 RES_00_01
-Pequeña casa con un jardí\n
-El lugar de tus sueños.\nEl lugar de tus sueños\n\n
+Pequeña casa con un jardín\n\nEl lugar de tus sueños.\n
 RES_00_02
-Otra pequeña casa, con otro\npequeño jardín\n donde una ama de casa\n se fuma otro cajetín\n.\n
+Otra pequeña casa, con otro pequeño jardín\n donde una ama de casa\n se fuma otro cajetín\n.
 RES_00_03
-Casa con jardín\n\nEs la típica casa tranquila\ncon ambiente agradable.\n El tipo de casa al que\nte gusta regresar\n tras una agotadora\njornada de trabajo.\n\n
+Casa con jardín\n\nEs la típica casa tranquila con ambiente agradable.\n El tipo de casa al que te gusta regresar\n tras una agotadora jornada de trabajo.\n
 RES_00_04
-En esta casa moderna vive\nun famoso científico.\nEn el sótano están los\nlaboratorios y\n los especímenes\nvegetales. Dicen los vecinos\nque por la noche,\n puedes escuchar el extraño\nruido proveniente de la bodega\n\n\n
+En esta casa moderna vive un famoso científico.\nEn el sótano están los laboratorios y\n los especímenes vegetales. Dicen los vecinos que por la noche,\n puedes escuchar el extraño ruido proveniente de la bodega\n\n
 RES_00_06
-Pequeña fuente. Aunque no\nsea tan magnífica como la\nde Génova, es hermoso\ncaminar alrededor de ella,\nespecialmente en verano.\n\n\n
+Pequeña fuente. Aunque no\nsea tan magnífica como la\nde Génova, es hermoso\ncaminar alrededor de ella,\nespecialmente en verano.\n\n
 RES_00_07
-El escudo de este caseríos\nson dos serpientes enfrentadas.\n Hace años que en esta\ncasa se realizan ritos secretos\n de la secta de\nThulsa-Dum. Acude mucha\ngente, por eso\n se acumula mucha basura en\nlos alrededores. Por eso están pensando\nen quitar las casas de la parte\nsuperior para tener más espacio.\n\n
+El escudo de este caseríos son dos serpientes enfrentadas.\n Hace años que en esta casa se realizan ritos secretos\n de la secta de Thulsa-Dum. Acude mucha gente, por eso\n se acumula mucha basura en los alrededores. Por eso están pensando\nen quitar las casas de la parte superior para tener más espacio.\n
 RES_00_08
-Casa con garaje doble\n\nEn vez de uno al lado de\notro, los coches están uno detrás\n de otro. Un invento\ngenial para el primero que aparca.\n De hecho, el coche\ndel fondo lleva veinte años sin moverse\ny ahora se considera un clásico\n¡si hasta participa en desfiles\ny concentraciones¡\n\n
+Casa con garaje doble\n\nEn vez de uno al lado de otro, los coches están uno detrás\n de otro. Un invento genial para el primero que aparca.\n De hecho, el coche del fondo lleva veinte años sin moverse\ny ahora se considera un clásico\n¡si hasta participa en desfiles y concentraciones¡\n
 RES_00_09
-Pequeño parque con estanque\nde patos.\n\n
+Pequeño parque con estanque de patos.\n
 RES_00_10
-La mansión Moistboy\n\nPropiedad de un afamado anciano\nmillonario algo picarón, está llena\n de preciosas octogenarias\nen biquini, que harán vomitar\na \nmás de uno. Las viejas glorias\nnunca pasan de moda\n\n
+La mansión Moistboy\n\nPropiedad de un afamado anciano millonario algo picarón, está llena\n de preciosas octogenarias en biquini, que harán vomitar a \nmás de uno. Las viejas glorias nunca pasan de moda\n
 RES_00_11
-Un gran edificio de\napartamentos con un jardín.\n\n El barrio ha visto épocas mejores,\npero los alquileres son asequibles,\ny el lugar es muy bonito.\n\n
+Un gran edificio de apartamentos con un jardín.\n\n El barrio ha visto épocas mejores,\npero los alquileres son asequibles,\ny el lugar es muy bonito.\n
 RES_00_12
-¡Se menos ordinario! El\n interior es único y\nademás: los enchufes son\n trifásicos, la ducha\ntransparente se ilumina\n con lámparas de neón,la\nestufa funciona con\n un motor stirling y se\nproyectan famosos\n cuadros en las paredes,\n porque el arquitecto ha\nprohibido poner las manos en\nlas paredes.\n\n
+¡Se menos ordinario! El\n interior es único y además: los enchufes son\n trifásicos, la ducha transparente se ilumina\n con lámparas de neón,la estufa funciona con\n un motor stirling y se proyectan famosos\n cuadros en las paredes,\n porque el arquitecto ha prohibido poner las manos en las paredes.\n
 RES_00_13
-Duplex con jardín\n\nUn lujo al alcance de muy pocos\ny el sueño de muchos.\n\n
+Duplex con jardín\n\nUn lujo al alcance de muy pocos\ny el sueño de muchos.\n
 RES_00_16
-Antigua Villa s. XVII\n\n Residencia de un famoso\nconde, que\n murió decapitado por sus\nhambrientos sirvientes,\n los cuales escondieron\nsu cabeza en algún \nlugar en las paredes de la casa.\n Se rumorea que por las\nnoches se le puede ver, vagando\n en busca de su cabeza y\nmaldiciendo a los albañiles por\nconstruir tantos tabiques.\n\n
+Antigua Villa s. XVII\n\n Residencia de un famoso conde, que\n murió decapitado por sus hambrientos sirvientes,\n los cuales escondieron su cabeza en algún \nlugar en las paredes de la casa.\n Se rumorea que por las noches se le puede ver, vagando\n en busca de su cabeza y maldiciendo a los albañiles por\nconstruir tantos tabiques.\n
 RES_00_17
-Incluso en edificios\nantiguos como este, existe\nun coste asociado al\nsistema de calefacción -\ntodos deben pagar su\npropia leña\n\n\n
+Incluso en edificios\nantiguos como este, existe\nun coste asociado al\nsistema de calefacción -\ntodos deben pagar su\npropia leña\n\n
 RES_00_18
-Edificio con valla\n\nHubo muchas discusiones en\nentre los vecinos acerca de la\n valla. Unos se negaban\nporque no se puede poner vallas\n al campo, y otros\nquerían protegerse de los\npeligros del exterior.\nFinalmente ganaron los partidarios de\nla valla,\n porque un de los\ndetractores fue\ndevorado por un T-rex mecánico\ndurante las fiestas del barrio,\n en la votación por un solo\nvoto de diferencia.\n\n
+Edificio con valla\n\nHubo muchas discusiones en entre los vecinos acerca de la\n valla. Unos se negaban porque no se puede poner vallas\n al campo, y otros querían protegerse de los peligros del exterior.\nFinalmente ganaron los partidarios de la valla,\n porque un de los detractores fue\ndevorado por un T-rex mecánico durante las fiestas del barrio,\n en la votación por un solo voto de diferencia.\n
 RES_00_19
-Apartamentos modernistas\n\nUn intento de los 60 de\nhacer una vivienda\n bonita y barata para\ntodos.\n
+Apartamentos modernistas\n\nUn intento de los 60 de hacer una vivienda\n bonita y barata para todos.
 RES_00_21
-Edificio ecológico\n\n Una vez fue premio de\narquitectura en los años\nsesenta\,n pero ha tenido\nproblemas de abastecimiento, ya\n que usa energía eólica,\npero el constructor\n se empeña en ahorrar\ncostes e insiste en usar\nmolinillos de papel en vez de turbinas.\nRecientemente ha sido renovado.\n\n
+Edificio ecológico\n\n Una vez fue premio de arquitectura en los años sesenta\,n pero ha tenido problemas de abastecimiento, ya\n que usa energía eólica, pero el constructor\n se empeña en ahorrar costes e insiste en usar\nmolinillos de papel en vez de turbinas. Recientemente ha sido renovado.\n
 RES_00_23
-Apartamentos\n\npara dos o tres personas, no \n se permiten perros\n ni familiares cercanos\n. A las doce se cierra el\nacceso de la entrada\n\n
+Apartamentos\n\npara dos o tres personas, no \n se permiten perros\n ni familiares cercanos\n. A las doce se cierra el acceso de la entrada\n
 RES_01_01
-Casa prefabricada pequeña\ncon una gran habitación\npara el niño en la buhardilla.\n\n\n
+Casa prefabricada pequeña\ncon una gran habitación\npara el niño en la buhardilla.\n\n
 RES_01_02
-Casa canadiense. Muy\n estable, pero tiene pocas ventanas\n y paredes, así que no\n es muy adecuada\n para gente con\nclaustrofóbia o amantes de\nlos cuadros.\n\n
+Casa canadiense. Muy\n estable, pero tiene pocas ventanas\n y paredes, así que no\n es muy adecuada\n para gente con claustrofóbia o amantes de los cuadros.\n
 RES_01_05
-Chalet de dos pisos con\npatio\n\n\n
+Chalet de dos pisos con\npatio\n\n
 RES_01_07
-Casa lujosa de madera\n Auténtica Caoba es lo\nque se usó para construir esta\n lujosa casa de campo.\nLo malo es que tiene termitas,\n asi que ahora son ellas\nlas que se están dando\n un festín de primera, con\nel caviar de las maderas.\n\n
+Casa lujosa de madera\n Auténtica Caoba es lo que se usó para construir esta\n lujosa casa de campo. Lo malo es que tiene termitas,\n asi que ahora son ellas las que se están dando\n un festín de primera, con el caviar de las maderas.\n
 RES_01_08
-Una casa luminosa y\nespaciosa de dos plantas\n con trastero y un jardín\n es todo lo que\nnecesitas para conseguir la felicidad\n\n
+Una casa luminosa y espaciosa de dos plantas\n con trastero y un jardín\n es todo lo que necesitas para conseguir la felicidad\n
 RES_01_10
-Apartamento modelo "Bunker"\nEl autor de esta rareza fue\nun ingeniero militar retirado\n tras la guerra fría, que\naún temía una guerra nuclear.\n Por eso hizo construir\nla casa más segura posible,\n tan segura que tiene\nparedes \nde hormigon con acero\nreforzado de 1 metro de grosor.\n\n
+Apartamento modelo "Bunker"\nEl autor de esta rareza fue un ingeniero militar retirado\n tras la guerra fría, que aún temía una guerra nuclear.\n Por eso hizo construir la casa más segura posible,\n tan segura que tiene paredes \nde hormigon con acero reforzado de 1 metro de grosor.\n
 RES_01_12
-Edificio de apartamentos de\nladrillo visto\n\n\n
+Edificio de apartamentos de\nladrillo visto\n\n
 RES_01_15
-Grandes apartamentos para\nfamilias \nnumerosas, de fachada lisa. Justo lo\nque necesita\n una gran familia:\ntranquilidad, grandes\nestancias, y paredes\n donde los niños no puedan pintar.\n\n
+Grandes apartamentos para familias \nnumerosas, de fachada lisa. Justo lo que necesita\n una gran familia: tranquilidad, grandes estancias, y paredes\n donde los niños no puedan pintar.\n
 RES_01_16
-La ocasión, una nueva etapa\n para renovar, es un\n tractor, cuyo conductor,\n se metió en lios por no mirar\n Debe pagar al municipio, \nla voluntad y a los\npropietarios de tierras\n, para compensar la cosecha\nque acaba de machacar.\n\n
+La ocasión, una nueva etapa\n para renovar, es un\n tractor, cuyo conductor,\n se metió en lios por no mirar\n Debe pagar al municipio, \nla voluntad y a los propietarios de tierras\n, para compensar la cosecha que acaba de machacar.\n
 RES_01_17
-Casona inglesa s. XVIII\nEste edificio aloja a una\nsingular comunidad\n de vecinos. La viuda un\nantiguo magnate del acero\nalgo corta de vista\n, un deshollinador retirado\nque tose más que habla, un capitan\n de la marina en la reserva\ny medio loco\n y un banquero con 7 hijos\na cual\n más peligroso.\n\n
+Casona inglesa s. XVIII\nEste edificio aloja a una singular comunidad\n de vecinos. La viuda un antiguo magnate del acero algo corta de vista\n, un deshollinador retirado que tose más que habla, un capitan\n de la marina en la reserva y medio loco\n y un banquero con 7 hijos a cual\n más peligroso.\n
 RES_01_18
-El viejo Sr. Fansworth, que\ntodavía vive\n pero es un poco duro\nde oido, se\n pelea a menudo con el\nportero, que es\n automático, por sus\nopiniones políticas.\n En el piso superior vive una\njoven y fogosa \npareja, que aprovecha cualquier\nocasión para pregonar\n su amor a los cuatro vientos.\n\n
+El viejo Sr. Fansworth, que todavía vive\n pero es un poco duro de oido, se\n pelea a menudo con el portero, que es\n automático, por sus opiniones políticas.\n En el piso superior vive una joven y fogosa \npareja, que aprovecha cualquier ocasión para pregonar\n su amor a los cuatro vientos.\n
 RES_01_21
-En la parte baja, todavía\nhay un comercio a pesar\n de que no vende casi\nnada. Cinco pisos más \narriba las palomas han\nconquistado la azotea y campan\na sus anchas. Y nadie\npuede arrebatársela porque el ascensor\n solo tiene 3 botones, y\nno hay escaleras la tejado.\n ¡Malditas ratas del aire!\n
+En la parte baja, todavía hay un comercio a pesar\n de que no vende casi nada. Cinco pisos más \narriba las palomas han conquistado la azotea y campan\na sus anchas. Y nadie puede arrebatársela porque el ascensor\n solo tiene 3 botones, y no hay escaleras la tejado.\n ¡Malditas ratas del aire!
 RES_01_22
-Al principio todo el mundo\nquería vivir aquí\n,pero por desgracia, casi todos\ntenía a\nsus abuelos viviendo en las\nafueras, y \nno podían dejar a los niños\ncon ellos\n para que se los cuidaran.\nPor eso \naquí solo viven solteros y parejas\nsi hijos.\n\n\n
+Al principio todo el mundo quería vivir aquí\n,pero por desgracia, casi todos tenía a\nsus abuelos viviendo en las afueras, y \nno podían dejar a los niños con ellos\n para que se los cuidaran. Por eso \naquí solo viven solteros y parejas si hijos.\n\n
 RES_01_23
-Este edificio surgió de una apuesta:\n Los directivos de la\nfactoría A.Brose apostaron\n un millón a ver quién era\ncapaz de aguantar más tiempo\n la respiración sin ponerse\nrojo. No ganó\n nadie porque todos eran\nmuy viejos y apenas\n podían respirar sin\nmascarilla. De ahí\n viene el color rojo del edificio\n\n
+Este edificio surgió de una apuesta:\n Los directivos de la factoría A.Brose apostaron\n un millón a ver quién era capaz de aguantar más tiempo\n la respiración sin ponerse rojo. No ganó\n nadie porque todos eran muy viejos y apenas\n podían respirar sin mascarilla. De ahí\n viene el color rojo del edificio\n
 RES_02_01
-Apartamento veraniego\n con unas bonitas\npalmeras que dan\nsombra suficiente para descansar\nen la\ntumbona del jardín.\n\n
+Apartamento veraniego\n con unas bonitas palmeras que dan\nsombra suficiente para descansar en la\ntumbona del jardín.\n
 RES_02_07
-Casona de piedra\n con varias dependencias, incluidas\n unas cuadras y un\nalmacén de material.\n La finca no es muy\ngrande, así que como\nmucho puedes tener ponys.\n\n
+Casona de piedra\n con varias dependencias, incluidas\n unas cuadras y un almacén de material.\n La finca no es muy grande, así que como\nmucho puedes tener ponys.\n
 RES_02_16
-Apartamentos de lujo\n con ático.\n\n
+Apartamentos de lujo\n con ático.\n
 RES_02_20
-Hotel Gran Leblanc\nUno de los más famosos\nedificios más famosos\n de la zona, por sus\nimpresionantes fiestas\nplayeras en la piscina de la azotea.\n No olvides el bañador o\nvolverás a casa con el smokin empapado.\n\n
+Hotel Gran Leblanc\nUno de los más famosos edificios más famosos\n de la zona, por sus impresionantes fiestas\nplayeras en la piscina de la azotea.\n No olvides el bañador o volverás a casa con el smokin empapado.\n
 RES_10_01
-Chalet de dos plantas\n con caseta de jardinero.\nEsta última sirve de trastero\ny como lugar de\nencuentro para parejas de amantes.\n\n
+Chalet de dos plantas\n con caseta de jardinero. Esta última sirve de trastero\ny como lugar de encuentro para parejas de amantes.\n
 RES_10_02
-Casa mediaval\n del siglo XVII. Ha\npertenecido a la familia\ndesde hace\n12 generaciones y aún\nconserva su aspecto original,\nal menos\n la fachada.\n\n
+Casa mediaval\n del siglo XVII. Ha pertenecido a la familia desde hace\n12 generaciones y aún conserva su aspecto original, al menos\n la fachada.\n
 RES_10_03
-Caserío estilo alemán\n. Esta casa conserva el\nestilo arquitectónico teutón\nde la\n época, pero se ha\nclausurado el pozo que ahora\n se usa como fosa séptica.\nLa caseta de madera se\nusa como garaje.\n\n
+Caserío estilo alemán\n. Esta casa conserva el estilo arquitectónico teutón de la\n época, pero se ha clausurado el pozo que ahora\n se usa como fosa séptica.\nLa caseta de madera se usa como garaje.\n
 RES_10_04
-Casita con techo de madera.\n Los inquilinos están\nsufriendo de lo lindo\ndebido a una plaga de termitas\nque se está comiendo el\ntecho a marchas forzadas.\n Además cuando llueve,\naparecen cientos de goteras\npor toda la casa.\nHay que llamar a control de plagas.\n\n
+Casita con techo de madera.\n Los inquilinos están sufriendo de lo lindo\ndebido a una plaga de termitas que se está comiendo el techo a marchas forzadas.\n Además cuando llueve, aparecen cientos de goteras por toda la casa.\nHay que llamar a control de plagas.\n
 RES_10_05
-Una original casa de madera\nrenovada y modernizada con un\nbonito jardín.\nEn cualquier caso, el\npropietario rentabilizará la inversión.\n\n
+Una original casa de madera\nrenovada y modernizada con un bonito jardín.\nEn cualquier caso, el propietario rentabilizará la inversión.\n
 RES_10_08
-Casona de madera con valla.\nUna casa amplia y\nconfortable, ideal para\nfamilias numerosas\ncon mascota, perro o gato.\nHay espacio para todos.\n\n
+Casona de madera con valla.\nUna casa amplia y confortable, ideal para familias numerosas\ncon mascota, perro o gato. Hay espacio para todos.\n
 RES_10_10
-Chalets adosados.\n La ventaja es que no\ntienes que compartir pared\ncon pared,\n pero no te puedes\ndespistar o acabarás\nhaciendo el ridículo\n con tu vecino mirando\ndesde el otro lado.\n\n
+Chalets adosados.\n La ventaja es que no tienes que compartir pared con pared,\n pero no te puedes despistar o acabarás haciendo el ridículo\n con tu vecino mirando desde el otro lado.\n
 RES_10_11
-Casas con placeta.\nEn verano la gente baja a la\nplaceta, para encontrarse\ncon los\namigos y divertirse. Risas,\njuegos, charlas y buen rollo\nes lo que reina en\n este lugar. En invierno hay\nnadie porque hace mucho frio\ny la nieve te llega hasta la cintura.\n\n
+Casas con placeta.\nEn verano la gente baja a la placeta, para encontrarse con los\namigos y divertirse. Risas, juegos, charlas y buen rollo es lo que reina en\n este lugar. En invierno hay nadie porque hace mucho frio y la nieve te llega hasta la cintura.\n
 RES_10_12
-Antiguamente, el techo de\nesta casa\n era de paja pero tras el\ngran incendio a\n mediados del siglo\npasado, sus dueños\n decidieron usar tejas de pizarra.\n Hacen juego con el\ntono lúgubre y apagado del edificio.\n\n
+Antiguamente, el techo de esta casa\n era de paja pero tras el gran incendio a\n mediados del siglo pasado, sus dueños\n decidieron usar tejas de pizarra.\n Hacen juego con el tono lúgubre y apagado del edificio.\n
 RES_10_13
-La mayor parte de las casas\nson todo tejado\ny buhardilla. ¡Como sino se\niban a protejer de las\n copiosas nevadas a lo\nlargo del año! No hay \n nada mejor que pasar la\ntarde en la buhardilla, calentito\n y con una buena taza de\nchocolate con virutas.\n\n
+La mayor parte de las casas son todo tejado\ny buhardilla. ¡Como sino se iban a protejer de las\n copiosas nevadas a lo largo del año! No hay \n nada mejor que pasar la tarde en la buhardilla, calentito\n y con una buena taza de chocolate con virutas.\n
 RES_10_14
-Los hijos de la propietaria\nse casaron al mismo tiempo\ny como la casa es enorme\ny quedaría vacía\n decidieron aceptar la\nproposición de su madre y\ntodos se trajeron\n a sus parejas a vivir a casa.\nSe dice que por las noches\n se puede oir a la madre\nhacer la ronda para comprobar\nque todo\n está en orden. ¡Ojo con lo\nque haceís!\n
+Los hijos de la propietaria se casaron al mismo tiempo\ny como la casa es enorme y quedaría vacía\n decidieron aceptar la proposición de su madre y todos se trajeron\n a sus parejas a vivir a casa. Se dice que por las noches\n se puede oir a la madre hacer la ronda para comprobar que todo\n está en orden. ¡Ojo con lo que haceís!
 RES_10_15
-A primera vista puede\nparecer una bonita y tranquila comunidad\n de vecinos, pero la\nverdad es que todos están muy\n disgustados. Les\nprometieron piscina, pista de\ntenis y garage.\n\n
+A primera vista puede parecer una bonita y tranquila comunidad\n de vecinos, pero la verdad es que todos están muy\n disgustados. Les prometieron piscina, pista de tenis y garage.\n
 RES_11_01
-Chalet de planta baja con\nenorme jardín.\nEs tan grande que incluso\nincluye un pozo de agua, pero\n el dueño lo usó como\nmanatial para crear su propia marca\nde cerveza, ColsBurg, y lo\nsecó por completo.\n\n
+Chalet de planta baja con enorme jardín.\nEs tan grande que incluso incluye un pozo de agua, pero\n el dueño lo usó como manatial para crear su propia marca\nde cerveza, ColsBurg, y lo secó por completo.\n
 RES_11_02
-Casa baja con buhardilla.\nIdeal para gente que nunca\ntira nada de nada.\nEn el desván puedes\nalmacenar tus notas del\ncole, tus antiguos\njuguetes y todas aquellas cosas\nimportantes de tu vida\n que te traen buenos recuerdos.\n\n
+Casa baja con buhardilla.\nIdeal para gente que nunca tira nada de nada.\nEn el desván puedes almacenar tus notas del cole, tus antiguos\njuguetes y todas aquellas cosas importantes de tu vida\n que te traen buenos recuerdos.\n
 RES_11_03
-Casa rústica con una bonita\nfachada hecha de piedra, y\ntejado de pizarra. Arquitectura\nde campo en la ciudad.\n Pertenece a un antiguo\ngranjero que vendió sus\ntierras por una\n fortuna a unos constructores\nque acabaron levantando\n un casino en medio del\npáramo, para jugar al Solitario.\n\n
+Casa rústica con una bonita fachada hecha de piedra, y\ntejado de pizarra. Arquitectura de campo en la ciudad.\n Pertenece a un antiguo granjero que vendió sus tierras por una\n fortuna a unos constructores que acabaron levantando\n un casino en medio del páramo, para jugar al Solitario.\n
 RES_11_04
-Chalet con jardín para\ndisfrutar en verano y hacer\nmuñecos de nieve en invierno. Fue\nnominada dos veces \ncomo mejor casa para pasar el\ninvierno por la revista Avalancha.\n\n
+Chalet con jardín para disfrutar en verano y hacer\nmuñecos de nieve en invierno. Fue nominada dos veces \ncomo mejor casa para pasar el invierno por la revista Avalancha.\n
 RES_11_08
-Residencia estilo mediaval,\nque antiguamente fue una posada\n llamada "El Pony Pisador"\n donde se reunían\n gente de todo tipo y\ncalaña. Se conserva la facha\noriginal y \nahora es una casa con encanto.\n\n
+Residencia estilo mediaval, que antiguamente fue una posada\n llamada "El Pony Pisador"\n donde se reunían\n gente de todo tipo y calaña. Se conserva la facha original y \nahora es una casa con encanto.\n
 RES_11_12
-Una sencilla casa de dos\npisos o tres\npisos. Es un lugar agradable e\nideal para parejas\n sin ganas de compromiso.\nTú en un piso, y yo en el otro.\n\n
+Una sencilla casa de dos pisos o tres\npisos. Es un lugar agradable e ideal para parejas\n sin ganas de compromiso. Tú en un piso, y yo en el otro.\n
 RES_11_13
-Casa baja que antiguamente\nfue un matadero.\nLos vecinos dicen que aún\nhoy se puede\nescuchar el terrorífico mugido de\nlas vacas\n que fueron sacrificadas\naquí para\n convertirse en famosas hamburguesas.\n\n
+Casa baja que antiguamente fue un matadero.\nLos vecinos dicen que aún hoy se puede\nescuchar el terrorífico mugido de las vacas\n que fueron sacrificadas aquí para\n convertirse en famosas hamburguesas.\n
 RES_11_14
-Antiguos grandes almacenes\nreconvertidos en\n bloques de lofts o\napartamentos diáfanos.\nNadie sabe exactamente qué\nson pero al dueño se los\nquitan de las manos.\nDate prisa o te quedarás sin tu loft.\n\n
+Antiguos grandes almacenes reconvertidos en\n bloques de lofts o apartamentos diáfanos.\nNadie sabe exactamente qué son pero al dueño se los quitan de las manos.\nDate prisa o te quedarás sin tu loft.\n
 RES_12_03
-Casona estilo colonial\n\n
+Casona estilo colonial\n
 RES_12_05
-Casas s. XVII\n
+Casas s. XVII
 RES_12_07
-Bulevar s. XVIII\n
+Bulevar s. XVIII
 RES_12_08
-Casco antíguo\n\n
+Casco antíguo\n
 RES_12_10
-Museo de Historia la Ciudad\n\n
+Museo de Historia la Ciudad\n
 RES_12_11
-Casas coloniales con balconada\n\n
+Casas coloniales con balconada\n
 RES_12_12
-Casas estilo Nueva Orleans\n
+Casas estilo Nueva Orleans
 RES_12_15
-La típica casa con vecinos\n que montan fiestas y ponen\n la música a tope a las\n tantas de la madrugada\n¡iros a dormir de una vez!\n
+La típica casa con vecinos\n que montan fiestas y ponen\n la música a tope a las\n tantas de la madrugada\n¡iros a dormir de una vez!
 Residenz
-Residencia\n\nEste lugar lo usa un guru local\nde Yoga para enseñar\nmeditanción y como lugar\nde retiro.\n\n\n
+Residencia\n\nEste lugar lo usa un guru local\nde Yoga para enseñar\nmeditanción y como lugar\nde retiro.\n\n
 rightShipStop
 Muelle con faro
 RUIN_0
-Castillo Medieval\n\nLos señores de este castillo\nse aliaron con el bando\nequivocado durante la\nguerra de los 30 años. Sin\nembargo, todavía se puede\napreciar su poderío.\n\n\n
+Castillo Medieval\n\nLos señores de este castillo\nse aliaron con el bando\nequivocado durante la\nguerra de los 30 años. Sin\nembargo, todavía se puede\napreciar su poderío.\n\n
 SandStationMHz
 Estacion de cercanías
 ShipDepot
@@ -492,15 +493,15 @@ Astillero
 ShipDepotEW
 Astillero\n
 ShipStop
-Puerto\n
+Puerto
 STADIUM2
-Gran estadio\n\n
+Gran estadio\n
 Tennis_Court
-Pistas de tenis\n\n
+Pistas de tenis\n
 Terminal1930
 Terminal de Aeropuerto (1930)
 Theatre
-Teatro Real\n\n
+Teatro Real\n
 Tower1930
 Torre de Control (1930)
 TowerMoistboy
@@ -520,7 +521,7 @@ Estación de estilo Victoriano
 Vorplatz
 Esplanada
 Windmill
-Antiguo molino de viento\n\n
+Antiguo molino de viento\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -613,8 +614,14 @@ Autohaus
 Concesionario coches
 Autohersteller
 Fábrica coches
+bakery
+Fábrica de pan
+brewery
+Fábrica de cervezas
 Buchgrosshandel
 Mayorista de libros
+cannery
+Fábrica de conservas
 Cementmill
 Fábrica de cemento
 ChemicalPlant
@@ -623,16 +630,34 @@ CHEMIST
 Farmacia
 Concretefactory
 Fábrica de hormigón
+cow_farm
+Granja de vacuno
+dairy
+Central lechera
 Druckerei
 Imprenta
 Erzbergwerk
 Mina de hierro
+fish_pond
+Estanque de pesca
+fish_swarm
+Banco de peces
+food_processing_plant
+Industria alimentaria
+grain_farm
+Trigal
+grain_mill
+Molino de trigo
+grain_windmill
+Molino
 Incinerator
 Planta incineradora
 Kohlegrube
 Mina de carbón
 Kohlekraftwerk
 Central térmica de carbón
+Marketplace
+Supermercado
 Materialswholesale
 Almacén de construcción
 Moebelfabrik
@@ -651,6 +676,8 @@ Oelkraftwerk
 Central termoeléctrica de fueloil
 Oelpumpe
 Pozo petrolífero
+old_farm
+Granja
 Papierfabrik
 Fábrica de papel
 Pharmaceutics
@@ -671,6 +698,8 @@ Stahlwerk
 Altos Hornos
 Stonequarry
 Cantera de piedra
+supermarket
+Supermercado
 TANKE
 Gasolinera
 thermisches_Solarkraftwerk
@@ -683,10 +712,14 @@ Central eólica
 #_____________________________________good______________________________________
 Autos
 Automóviles
+beer
+Cerveza
 Bretter
 Tablones
 Buecher
 Libros
+canned_food
+Conservas
 Cement
 Cemento
 Chemicals
@@ -695,14 +728,26 @@ Concrete
 Hormigón
 Eisenerz
 Mineral de hierro
+fish
+Pescado
+flour
+Harina
+food
+Alimentos
 Gasoline
 Gasolina
+grain
+Grano
 Holz
 Madera
 Kohle
 Carbón
+meat
+Carne
 Medicine
 Medicinas
+milk
+Leche
 Moebel
 Muebles
 None
@@ -798,15 +843,15 @@ Rollos
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 choose_point
-Señal de via libre
+Señal de selección de parada
 ChooseSignals
-Señales de via libre
+Señales de selección de anden
 ChooseSignalsMonorail
-Señales de via libre
+Señales de selección de anden
 Endofchoosetrack
-Fin de carretera
+Excluir anden
 LongBlockSignals
-Señales de paso
+Señales de bloqueo de tramo largo
 Minimum80
 Velocidad mínima 80 km/h
 NoAirEntry
@@ -828,91 +873,91 @@ Semáforos
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Ahorn-1
-Gran encina\n\n\n
+Gran encina\n\n
 Ahorn-2
-Encina\n\n\n
+Encina\n\n
 Ahorn-Gruppe
-Arboleda\n\n\n
+Arboleda\n\n
 Birke-1
-Abedul\n\n\n
-Buche-1
-Platanero\n\n\n
-Busch_2
-arbusto\n\n\n
-Kiefer_1
-Sequoya roja\n\n\n
-Kiefer_2
-Acacia común\n\n\n
-Kiefer_3
-Acacia\n\n\n
-Kiefer_4
-Pino piñonero\n\n\n
-Kiefer_5
-Sequoya\n\n\n
-Latschenkiefer
-Pino de montaña\n\n\n
-Palmtree1
-Palmera\n\n\n
-Palmtree2
-Palmera tropical\n\n\n
-Palmtree3
-Palmera baoba\n\n\n
-Palmtree4
-Palmera cocotera\n\n\n
-Palmtree5
-Palmera parasol\n\n\n
-Palmtree6
-Palmera de desierto\n\n\n
-Palmtree7
-Palmera ecuatorial\n\n\n
-Pappel-1
-Alamo\n\n\n
-Pappel-2
-Alamo joven\n\n\n
-Shunter-tree2
-Retama\n\n\n
-Tanne_1
-Frondoso Fir\n\n\n
-Tanne_2
-Pequeño Fir\n\n\n
-Tanne_3
-Viejo Fir\n\n\n
-Tanne_4
-Gran Fir\n\n\n
-Tanne_5
-Abeto Fir\n\n\n
-Tanne_6
-Fir\n\n\n
-Tree1
-Roble\n\n
-Tree3
 Abedul\n\n
+Buche-1
+Platanero\n\n
+Busch_2
+arbusto\n\n
+Kiefer_1
+Sequoya roja\n\n
+Kiefer_2
+Acacia común\n\n
+Kiefer_3
+Acacia\n\n
+Kiefer_4
+Pino piñonero\n\n
+Kiefer_5
+Sequoya\n\n
+Latschenkiefer
+Pino de montaña\n\n
+Palmtree1
+Palmera\n\n
+Palmtree2
+Palmera tropical\n\n
+Palmtree3
+Palmera baoba\n\n
+Palmtree4
+Palmera cocotera\n\n
+Palmtree5
+Palmera parasol\n\n
+Palmtree6
+Palmera de desierto\n\n
+Palmtree7
+Palmera ecuatorial\n\n
+Pappel-1
+Alamo\n\n
+Pappel-2
+Alamo joven\n\n
+Shunter-tree2
+Retama\n\n
+Tanne_1
+Frondoso Fir\n\n
+Tanne_2
+Pequeño Fir\n\n
+Tanne_3
+Viejo Fir\n\n
+Tanne_4
+Gran Fir\n\n
+Tanne_5
+Abeto Fir\n\n
+Tanne_6
+Fir\n\n
+Tree1
+Roble\n
+Tree3
+Abedul\n
 Tree4
-Pino negro\n\n\n
+Pino negro\n\n
 Tree5
-Eucalipto\n\n\n
+Eucalipto\n\n
 Tree6
-Abeto picea Picea abies \nConífera estrecha. Alcanza\nuna altura de 35 to 65m y\nun diámetro principal de 2m,\ny vive hasta 1000 años. Su\nhábitat natural es el norte y\nel este de Europa, así como\nlas montañas de Europa\nCentral. Por repoblación\nartificial se encuentra en\nzonas más bajas.  Uso:\nconstrucción interior y\nexterior, estibación,\nconstrucción de casetas,\naglomerado, cajas de\nresonancia para instrumentos\nmusicales, industrias de la\ncelulosa y el papel.\n\n\n
+Abeto picea Picea abies \nConífera estrecha. Alcanza\nuna altura de 35 to 65m y\nun diámetro principal de 2m,\ny vive hasta 1000 años. Su\nhábitat natural es el norte y\nel este de Europa, así como\nlas montañas de Europa\nCentral. Por repoblación\nartificial se encuentra en\nzonas más bajas.  Uso:\nconstrucción interior y\nexterior, estibación,\nconstrucción de casetas,\naglomerado, cajas de\nresonancia para instrumentos\nmusicales, industrias de la\ncelulosa y el papel.\n\n
 tropictree1
-Arbol tropical I\n\n\n
+Arbol tropical I\n\n
 tropictree2
-Sauce tropical \n\n\n
+Sauce tropical \n\n
 tropictree3
-Manglar tropical\n\n\n
+Manglar tropical\n\n
 tropictree4
-Abedul tropical\n\n\n
+Abedul tropical\n\n
 tropictree5
-Platanero\n\n\n
+Platanero\n\n
 tropictree6
-Sauce espinoso\n\n\n
+Sauce espinoso\n\n
 tropictree7
-Conífera tropical\n\n\n
+Conífera tropical\n\n
 tropictree8
-Baoba\n\n\n
+Baoba\n\n
 tropictree9
-Acacia tropical\n\n\n
+Acacia tropical\n\n
 Willow
-sauce\n\n\n
+sauce\n\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel
@@ -1079,6 +1124,12 @@ Concept2Pass
 Concept 2 Vagón de pasajeros
 Concept2Rear
 Concept 2 (trasero)
+Cooling_Container
+Container frigorífico
+Cooling_Truck
+Camión frigorífico
+Cooling_Waggon
+Vagón frigorífico
 DaimlerStoll
 Daimler Stoll
 DC-3
@@ -1127,6 +1178,10 @@ F7back
 F7 (trasero)
 FastFerry
 Ferry rápido (hovercraft)
+Fishing_Boat
+Barco de pesca
+Fishing_Boat_DanMacK
+Barco pesquero
 Flachwagen
 Vagón de mercancías simple
 Fokker_F27
@@ -1241,6 +1296,10 @@ MailExpress
 Correo Aéreo
 Mailwagon
 Vagón de correo
+Milk_Truck
+Camión para leche
+Milk_Waggon
+Vagón para leche
 Moebelschiff
 Barco para muebles TPI/JET
 Moebelwagen

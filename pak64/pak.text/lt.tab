@@ -2,44 +2,36 @@
 #                                                                              #
 #                Simutrans Scenario Specific Translation File                  #
 #                                Scenario: pak64                               #
-#                            Language: id Indonesia                            #
-#                             Encoding: ISO-8859-1                             #
-#                            Font : Prop-Latin1.bdf                            #
+#                            Language: lt Lithuanian                           #
+#                             Encoding: ISO-8859-2                             #
+#                            Font : prop-latin2.fnt                            #
 #                            Date Created: 9.12 2009                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Frank Penz - FrankP                             #
 #                      note: Administrator SimuTranslator                      #
+#                          Ignas Brasiskis - enternald                         #
+#note: I love simutrans. Reikalui esant teikite si?lymus Lietuvi? kalbai Simutr#
 #                          Markus Pristovsek - prissi                          #
 #              note: Administrator Base texts / pak64 / pak.japan              #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
 #____________________________________bridge_____________________________________
-MaglevBridge
-Jembatan Maglev
 #___________________________________building____________________________________
 #___________________________________building____________________________________
-01_CITY
-Balai Kota
-02_CITY
-Balai Kota
-03_CITY
-Balai Kota
-04_CITY
-Balai Kota
+10_WOHN
+Ba¾nyèia. Èia neseniai buvo pasteb?ta mergel? Marija. Dabar tikintieji pl?sta i¹ viso pasaulio nor?dami j± pamatyti.
 1930AirDepot
-Hanggar (1930)
+Senovinis angaras
+1headquarter
+B?stin?
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
-bakery
-Pabrik Roti
-Sandquarry
-Tambang Pasir
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 #__________________________________ground_obj___________________________________
@@ -50,21 +42,27 @@ Tambang Pasir
 #_________________________________program_text__________________________________
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
-Minimum80
-batas kecepatan minimum 80
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
-Horsemailcariage
-Delman Pengirim Pos
-Horsepapercariage
-Kereta Angkut Kertas
+1Ben140
+Deutsche Bahn BR 140
+1Dampflokomotive
+H-Trans 0-4-0T
+1Diesellokomotive
+H-Trans BR212
+1Garrat
+Garrat'o lokomotyvas
+1TPEllok
+F7 A
+2Ben155
+Deutsche Bahn BR 155
+2Diesellokomotive
+German Railways class 218
 #______________________________________way______________________________________
 #______________________________________way______________________________________
-MaglevTrack
-Jalur Maglev
 #__________________________________way-object___________________________________
 #__________________________________way-object___________________________________
