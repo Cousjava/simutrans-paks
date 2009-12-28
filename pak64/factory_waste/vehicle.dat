@@ -32,7 +32,7 @@ FreightImage[NW]=deponielkw.1.4
 FreightImage[SE]=deponielkw.1.5
 FreightImage[NE]=deponielkw.1.6
 FreightImage[SW]=deponielkw.1.7
---------------------------------------------------------------------------------
+--
 obj=vehicle
 name=Deponielaster2
 copyright=timeshock
@@ -67,7 +67,7 @@ FreightImage[NW]=waste_truck2.1.4
 FreightImage[SE]=waste_truck2.1.5
 FreightImage[NE]=waste_truck2.1.6
 FreightImage[SW]=waste_truck2.1.7
---------------------------------------------------------------------------------
+--
 #by ??
 obj=vehicle
 name=GarbageTruck
@@ -94,10 +94,10 @@ EmptyImage[NW]=garbagelkw.0.5
 EmptyImage[SE]=garbagelkw.0.4
 EmptyImage[NE]=garbagelkw.0.6
 EmptyImage[SW]=garbagelkw.0.7
---------------------------------------------------------------------------------
+--
 # by Markus Pristovsek
 obj=vehicle
-name=waste wagon
+name=wastewagon
 waytype=track
 freight=waste
 payload=16
@@ -105,7 +105,7 @@ speed=75
 cost=35000
 weight=15
 RunningCost=8
-intro_year = 1891
+intro_year = 1890
 intro_month = 9
 EmptyImage[S]=waste-wagon.0.0
 EmptyImage[W]=waste-wagon.0.1
@@ -115,7 +115,7 @@ FreightImage[S]=waste-wagon.0.4
 FreightImage[W]=waste-wagon.0.5
 FreightImage[SE]=waste-wagon.0.6
 FreightImage[SW]=waste-wagon.0.7
------------
+--
 obj=vehicle
 name=Muellschiff
 waytype=water
@@ -142,4 +142,37 @@ EmptyImage[N]=ms-muell.0.4
 EmptyImage[W]=ms-muell.0.5
 EmptyImage[NW]=ms-muell.0.6
 EmptyImage[NE]=ms-muell.0.7
----------------------
+--
+obj=vehicle
+name=Wastecarriage
+copyright=Hajo/Paretje
+waytype=road
+freight=waste
+payload=15
+cost=15000
+weight=2
+speed=20
+RunningCost=15
+intro_year = 1890
+intro_month = 1
+retire_year = 1950
+Constraint[Prev][0]=Horses
+Constraint[Prev][1]=Ox2
+Constraint[Prev][2]=Ox4
+EmptyImage[S]=waste-carriage.0.0
+EmptyImage[N]=waste-carriage.0.1
+EmptyImage[E]=waste-carriage.0.2
+EmptyImage[W]=waste-carriage.0.3
+EmptyImage[SE]=waste-carriage.0.4
+EmptyImage[NW]=waste-carriage.0.5
+EmptyImage[NE]=waste-carriage.0.6
+EmptyImage[SW]=waste-carriage.0.7
+FreightImage[S]=waste-carriage.1.0
+FreightImage[N]=waste-carriage.1.1
+FreightImage[E]=waste-carriage.1.2
+FreightImage[W]=waste-carriage.1.3
+FreightImage[SE]=waste-carriage.1.4
+FreightImage[NW]=waste-carriage.1.5
+FreightImage[NE]=waste-carriage.1.6
+FreightImage[SW]=waste-carriage.1.7
+--
