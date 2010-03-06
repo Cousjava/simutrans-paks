@@ -5,17 +5,17 @@
 #                             Language: it Italiano                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 9.12 2009                           #
+#                            Date Created: 1.02 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                   - Fabio85                                  #
 #                                    note:                                     #
 #                              Frank Penz - FrankP                             #
-#                      note: Administrator SimuTranslator                      #
+#                                    note:                                     #
 #                                   - davemds                                  #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
-#              note: Administrator Base texts / pak64 / pak.japan              #
+#                                    note:                                     #
 #                                Marco - rabanne                               #
 #                                    note:                                     #
 #                                                                              #
@@ -26,6 +26,10 @@ ClassicRail
 Rotaia su ponte in cemento
 ClassicRoad
 Strada su ponte in cemento
+koka_Bridge_single
+Ferrovia sopraelevata
+MaglevBridge
+Ponte Maglev
 mlm_concrete_bridge
 Monorotaia su ponte in cemento
 ModernRoad
@@ -34,6 +38,8 @@ MonorailRamp
 Rampa per monorotaia
 PowerBridge
 Traliccio per la corrente elettrica
+Schiffhebewerk
+Montacarichi per navi
 SteelRail
 Rotaia su ponte di travi di acciaio
 tb_classic_road
@@ -54,8 +60,20 @@ Municipio
 Municipio
 03_CITY_A
 Municipio
+03_CITY_B
+Municipio
+03_CITY_C
+Municipio
 04_CITY
 Municipio
+04_CITY_A
+Municipio
+04_CITY_B
+Municipio
+04_CITY_C
+Municipio
+10_WOHN
+Chiesa di San Luca\n\nQuesta chiesa è piccola ma si sta ingrandendo. La sua missione nella città è attrarre più membri e visitatori possibile.
 1930AirDepot
 Hangar
 1headquarter
@@ -76,16 +94,36 @@ A5_STONEHENGE
 Antico anello di pietre.\nMolto misterioso!\n
 A6_DOME
 Questa splendida\ncattedrale antica è una\nvera e propria attrazione!\n
+AirDepot
+Deposito aerei del 1900
+AirportShed1930
+Ufficio posta aerea (1901)
+AirStop
+Ponte d'imbarco\n
+AirTerminal477
+Terminal (1950)
 Avila_Big_StationBlg
 Capiente edificio passeggeri
 Avila_Small_StationBlg
 Piccolo edificio passeggeri
+Avila_Warehouse_StationBlg
+Magazzino
 BigPostOffice
 Grande ufficio postale
+BigTerminal477
+Moderno terminal grande
+Bulk_StationBlg
+Magazzino sfusi
 BusStop
 Fermata autobus\n
+Car_StationBlg
+Magazzino auto
 CarDepot
 Deposito per veicoli stradali
+CarStop
+Area carico merci\n
+ChannelStop
+Banchina
 COM_00_01
 "Il piccolo negozio dei\ngrandi affari" di Luca\nQui il proprietario, insieme\nalla moglie Grazia\ne ai due figli, Luigi e\nFutura, conduce una vita\nserena vendendo le più disparate\ncose, dalle mollette\nal frigorifero. I figli, Luigi di 6\nanni e Futura\ndi 7, scorrazzano per l'ampio\nparcheggio quando\nla domenica non ci sono auto.\n
 COM_00_02
@@ -140,8 +178,14 @@ Eingang
 Entrata
 Feste
 Roccaforte di Konubert\nEretta nel 1400 circa.\n
+Fluid_StationBlg
+Deposito petrolio
+FreightShipStop
+Scalo merci
 FreightTrainStop
 Stazione di carico merci
+Gas_StationBlg
+Deposito gas
 GCG1TrainStop
 stazione con hall a sinistra
 GCG2TrainStop
@@ -152,10 +196,46 @@ Gymnasium
 Liceo\n
 IND_00_01
 Magazzino cartaceo\nQui vengono conservati gli scontrini\nprovenienti da tutto il mondo!\n
+LargeShipStop
+Porto con gru
+leftShipStop
+Gru grande carico
+LeuchtturmShipStop
+Porto con faro
 Lighthouse
 Faro\n
+MainTerminal1930
+Terminal (1930)
+MHzSmallStation
+Stazione
+ModernAirTerminal477
+Terminal moderno
+MonorailDepot
+Deposito monorotaia
 MonorailFoundation
 Fondamenta della monorotaia
+MonorailGround
+Fondazione monorotaia
+OldTownhall
+Municipio storico\n\nQuesto edificio fu usato come sede degli uffici pubblici.\nAdesso ospita un museo e un coffee shop.
+Patricks_Rock
+Roccia di Patrizio\n\n
+PlainAirStop
+Piazzola aerei
+PostOffice
+Ufficio postale
+PostStop
+Cassetta delle lettere
+PSFreightTrainStop
+Stazione merci
+PSHall1TrainStop
+Stazione con tetto trasparente
+PSHall2TrainStop
+Hall stazione
+rampShipStop
+Scalo navale
+Raven_Kirche
+Chiesa di San Meinard\n\nL'eremita San Meinrad è\nstato accompagnato da due\ncorvi secondo la leggenda.\nQuando è stato ucciso,\ni due corvi hanno\nseguito gli uccisori e\nli hanno convinti. Oggi,\nal posto della sua capanna\nc'è il\nmonastero Einsiedeln.\n\n
 RES_00_02
 Casa piccola con giardino\n
 RES_00_03
@@ -184,18 +264,44 @@ RES_02_16
 Appartamenti di lusso con\nattico.\n
 Residenz
 Residence\nQuesto è il residence-museo del\ncapo dei boy-scouts,\nBaden Powell.\nEgli sosteneva che "Non\nesiste buono o cattivo\ntempo, ma \nbuono o  cattivo equipaggiamento".\n
+rightShipStop
+Banchina con molo
+RUIN_0
+Castello medievale\n\nQuesto castello è diventato una\nrovina, ma alcune parti sono state\nricostruite, e\ntutto il complesso è un\nmuseo adesso.\nIl paesaggio è fantastico,\nma è necessario salire molte\nscale per vederlo.\n\n
+SandStationMHz
+Fermata senza piattaforma
+ShipDepot
+Deposito navi
+ShipDepotEW
+Deposito navi
+ShipStop
+Porto passeggeri
 STADIUM2
 Stadio\n
 Theatre
 Antico teatro all'aperto\nIn questo antico teatro di\nstile ellenico furono\ninterpretate varie opere, tra cui\n"Itaca"\n
+VictorianStation
+Stazione in stile vittoriano
+Vorplatz
+Spiazzo
 Windmill
 Mulino a vento\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
+Ambulanz
+Ambulanza
 FordT
 Ford Modello T
 green_car
 auto verde
+Motorrad
+Moto
+orange_bus
+SimCo Bus
+Roadster
+Rag-top Roadster
+yellow_car
+Macchina gialla
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
 factory_Cementmill_details
@@ -204,10 +310,16 @@ cementeria\n
 #____________________________________factory____________________________________
 2Raffinerie
 Raffineria (Benzina)
+3Raffinerie
+Raffineria
+Aufwindkraftwerk
+Centrale eolica
 Autohaus
 Concess. auto
 Autohersteller
 Fabbrica auto
+bakery
+Panificio
 brewery
 Fabbrica di birra
 Buchgrosshandel
@@ -236,48 +348,82 @@ fish_swarm
 Branco di pesci
 food_processing_plant
 Industria alimentare
+Geokraftwerk
+Centrale geotermica
+grain_farm
+Fattoria di grano
 grain_mill
 Macina per grano
+grain_windmill
+Mulino a vento
+Incinerator
+Inceneritore
 Kohlegrube
 Miniera di carbone
 Kohlekraftwerk
 Centrale elettr.
+Marketplace
+Mercato
 Materialswholesale
 Grossista materiali
 Moebelfabrik
 Mobilificio
 Moebelhaus
 Home Market
+Muellkraftwerk
+Inceneritore
 Nutzwald
 Bosco
 Oelbohrinsel
 Piattaforma petrolifera
 Oelfeld
 Pozzo di petrolio
+Oelkraftwerk
+Centrale elettrica a petrolio
+Oelpumpe
+Pompa petrolio
+old_farm
+Fattoria
 Papierfabrik
 Cartiera
 Pharmaceutics
 Industria farmaceutica
 Raffinerie
 Raffineria (Plastica)
+Rinnenkraftwerk
+Centrale solare a specchi parabolici
 Saegewerk
+Segheria
+SaegewerkMHz
 Segheria
 Sandquarry
 Cava di sabbia
+scrap_yard
+Deposito rifiuti
 Stahlwerk
 Acciaieria
 Stonequarry
 Cava di pietra
+supermarket
+Supermercato
 TANKE
 Distrib. benzina
+Turmkraftwerk
+Centrale elettrica solare termica
+Windkraftwerk
+Centrale elettrica eolica
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
 Automobili
+beer
+Birra
 Bretter
 Tavole
 Buecher
 Libri
+canned_food
+Cibo in scatola
 Cement
 Cemento
 Chemicals
@@ -286,14 +432,26 @@ Concrete
 Calcestruzzo
 Eisenerz
 Ferro
+fish
+Pesce
+flour
+Farina
+food
+Cibo pronto
 Gasoline
 Benzina
+grain
+Grano
 Holz
 Legname
 Kohle
 Carbone
+meat
+Carne
 Medicine
 Medicinali
+milk
+Latte
 Moebel
 Mobili
 None
@@ -316,10 +474,58 @@ Stahl
 Acciaio
 Stone
 Pietra
+waste
+Rifiuti
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
+bushes
+Cespugli
+deco_rock
+Piccolo masso
+flowers
+Fiori spontanei
+gemsen
+Camosci
+gooses
+Oche
+Hochsitz1
+Cervo
+Hochsitz2
+Cervo
+moles
+Talpe
+rocks
+Rocce
+See1
+Lago senza uccelli acquatici
+See2
+Lago
+See3
+Lago
+See4
+Lago
+sheeps
+Pecore
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
+Couple
+Una coppia
+Cyclist
+Motociclista
+pedestrian_1
+Pedoni
+pedestrian_2
+Pedoni
+pedestrian_3
+Pedoni
+pedestrian_4
+Pedoni
+pedestrian_child
+Ragazzi
+pedestrian_dog
+Cane
+Woman
+Donna
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -346,10 +552,82 @@ ChooseSignalsMonorail
 Segnali di Scelta
 Endofchoosetrack
 Fine della ricerca del tracciato
+LongBlockSignals
+Segnale long block
+Minimum80
+Velocità minima 80km/h
+NoAirEntry
+Segnale divieto d'accesso
+NoEntry
+Segnale divieto d'accesso
+preSignals
+Presegnali (per 2 blocchi)
+preSignalsMonorail
+Presegnali (per 2 blocchi)
 RailClose
 Chiudi tratto ferroviario
+Signals
+Segnale ferroviario
+SignalsMonorail
+Segnali
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
+Ahorn-1
+Acero
+Ahorn-2
+Acero
+Ahorn-Gruppe
+Aceri
+Birke-1
+Betulla\n\n
+Buche-1
+Arbusto\n\n
+Busch_2
+Cespuglio\n\n
+Kiefer_1
+Pino rosso
+Kiefer_2
+Pino rosso
+Kiefer_3
+Pino rosso
+Kiefer_4
+Pino rosso
+Kiefer_5
+Pino rosso
+Latschenkiefer
+Pino di montagna\n\n
+Palmtree1
+Palma
+Palmtree2
+Palma
+Palmtree3
+Palma
+Palmtree4
+Palma
+Palmtree5
+Palma
+Palmtree6
+Palma
+Palmtree7
+Palma
+Pappel-1
+Pioppo\n\n
+Pappel-2
+Pioppo\n\n
+Shunter-tree2
+Albero
+tropictree5
+Albero tropicale
+tropictree6
+Albero tropicale
+tropictree7
+Albero tropicale
+tropictree8
+Albero tropicale
+tropictree9
+Albero tropicale
+Willow
+Salice\n\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel
@@ -358,6 +636,8 @@ FastRoadTunnel
 Tunnel stradale ad alta velocità
 RailTunnel
 Tunnel ferroviario
+RoadTunnel
+Tunnel stradale
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -370,38 +650,134 @@ H-Trans 0-4-0T (vapore)
 H-Trans BR212 (diesel)
 1Ellok
 H-Trans BR103 (elettrica)
+1Garrat
+Garratt
 1TPEllok
 TPI F7A (diesel)
+221A
+JaCo 221A 4-6-0
+221A_tender
+JaCo 221A Tender
 2Ben155
 Bennhardt BR155 (elettrica)
 2Diesellokomotive
 H-Trans BR218 (diesel)
 2Ellok
 H-Trans Tigress I (elettrica)
+2Garrat
+Garratt (centrale)
 3Ben185
 Bennhardt BR185 (elettrica)
 3Diesellokomotive
 H-Trans BR218 (diesel)
+3Garrat
+Garratt (coda)
+707
+Boeing 707
+A3-5
+Swiss federal Railways A 3/5
+A3-5_tender
+Tender for SBB A 3/5
+A380
+Airbus A380
+Adler
+Locomotiva Eagle
+AdlerPersonenwagen
+Adler carrozza passeggeri
+Autotrailer
+Rimorchio auto
 Autotransportanhaenger
 H-Trans rimorchio per auto
 Autotransporter
 H-Trans trasporto auto
 Autotransportwagen
 TPI Lopomo vagone trasporto auto
+BB1280
+JaCo BB1280 
+BB200
+Empire BB200
+Be5-7
+BLS Be 5/7
+Blimp
+Dirigibile
+Book_Trike
+Triciclo consegna pacchi
+Boxcar
+MJHN vagone coperto
+BR01
+SingCo BR01 4-6-2
+Br118DR
+Sojo Group BR118DR
+Br234
+Brose BR234
+BR38
+BR 38
+BR38-Tender
+Tender BR38
+BR39
+SingCo BR289 2-8-2
+BR45
+SingCo BR45 2-10-2
+BR45-Tender
+SingCo BR45 Tender
+Br614back
+BR614 Passenger Train (coda)
+Br614car
+BR614 carrozza passeggeri
+Br614front
+BR614 treno passeggeri
+BR85
+SingCo BR85 2-6-4
 Bretteranhaenger
 WF Ultd. rimorchio per tavole di legno
 Brettertransporter
 WF Ultd. camion per tavole di legno
 Bretterwagen
 VT Vienna vagone per tavole di legno
+BRV36
+Colin BRV36
 Buchanhaenger
 Serj/H-Trans rimorchio per libri
+Buchtrailer
+Semirimorchio libri I
+Buchtrailer2
+Semirimorchio libri II
 Buchtransporter
 Serj/H-Trans camion per libri
 Buchwagen
 VT Vienna vagone per libri
+Buessig
+Ikarus Modello B
+BuessingLinie
+MHz bus lungo
+Bulkcarriage
+Rimorchio sfusi
 Bus
 H-Trans autobus
+CarFlat
+Vagone auto
+Cargosprinter-Front
+Cargosprinter
+Cargosprinter-Mittel
+Cargosprinter vagone merci
+Cargosprinter-Steuer
+Cargosprinter (coda)
+CC7100
+ACTrain CC7100
+Cementtrailer
+Rimorchio cemento
+Class86
+DanMoto Class 86
+CombinoShort(T)
+Combino GT-4S carrozza passeggeri
+CombinoShortA(Mc)
+Combino GT-4S
+CombinoShortB(Mc)
+Combino GT-4S (coda)
+CombinoShortE(T)
+Combino GT-4S carrozza passeggeri
+Comet
+De Havilland 'Comet'
 Concept1Front
 Concept 1
 Concept1Mail
@@ -418,12 +794,32 @@ Concept2Pass
 Concept 2 - Vagone passeggeri
 Concept2Rear
 Concept 2 - Motore posteriore
+Cooling_Container
+Vagone refrigerato
+Cooling_Truck
+Camion refrigerato
 Cooling_Waggon
 Vagone per merce surgelata
+DaimlerStoll
+DaimlerCo Bus
+DC-3
+MHz Airframes MC-3
+Deponielaster
+Camion rifiuti
+Deponielaster2
+Camion rifiuti doppio
 Doubledeck_city_bus
 Autobus cittadino a due piani
+DoubleDecker
+Carrozza passeggeri a 2 piani
+E44
+Empire E44
 Eb3-5
 Ferrovie Federali Svizzere Eb 3/5
+Ed2x2
+JaCo Saker 0-4-4-0
+EinheitsTender
+Tender standard
 EnCo_Bulk_Ship
 Nave per merce grezza
 EnCo_Car_Ship
@@ -454,12 +850,44 @@ FastFerry
 O.Bang traghetto veloce (hovercraft)
 Fishing_Boat
 Peschereccio
+Fishing_Boat_DanMacK
+Peschereccio
+Flachwagen
+Rama vagone merci coperto
 Fokker_F27
 Fokker F27
+FordZugmaschine
+MHz Trattrice "naso lungo"
+GarbageTruck
+Camion rifiuti
 Gelenkbus_Ende
 Autosnodato - Retro
 Gelenkbus_Front
 Autosnodato - Fronte
+Godm_Spitz
+Clipper passeggeri
+Grossraumwagen
+Empire "Alto" carrozza passeggeri
+Guppy
+Aero Spacelines 377SGT Super Guppy
+H-Trans-Pantheress
+H-Trans Pantera
+H-Trans-Pantheress-Back
+H-Trans Pantera (coda)
+H-Trans-Tiger-Car
+H-Trans Tigre carrozza passeggeri
+H-Trans-Tiger-Mail-Car
+H-Trans Tigre vagone posta
+H-Trans-Tigress-II-Back
+H-Trans Tigre II (coda)
+H-Trans-Tigress-II-Front
+H-Trans Tigre II
+Hadley-Page-V1500
+RavenCo V1500 Oca
+Heavy_ore_truck
+H1750 trasporto rifiuti pesante
+HJMAvia
+HJM Avia Flat-nose Semi
 Hochbordwagen
 Vagone carbone (18t)
 Holzanhaenger
@@ -484,6 +912,32 @@ Horsewoodcariage
 Cavalli - Carro per legno
 HVPosttransporter
 DIBU/H-Trans furgone postale
+ICE_TD-back
+Bennhardt TD (coda)
+ICE_TD-car
+Bennhardt TD (carrozza)
+ICE_TD-front
+Bennhardt TD ICE
+IL-76
+Ilyushin IL-76 aereo postale
+JNR_C11
+RavenCo JNR-C11 2-8-4
+JR_9600
+RavenCo JR9600 2-8-0
+JR_9600_tender
+RavenCo JR-9600 Tender
+Ju52
+RavAir Ju-52 Juliet
+JumboJet
+RavAir BN-747D
+kkStB_tender
+WEC kkStB Tender
+kkStB110
+WEC kkStB110 2-4-0
+kkStB91
+WEC kkStB91 0-6-0
+Klappdeckelwagen
+MHz rimorchio merce Mk. I
 Kohleanhaenger
 H-Trans rimorchio per carbone
 Kohletransporter
@@ -494,6 +948,28 @@ Kunststofanhaenger
 H-Trans rimorchio per plastica
 Kunststofftransporter
 H-Trans camion per materie plastiche
+Laaekks553_a
+MHz rimorchio auto
+Laaekks553_b
+MHz rimorchio auto
+Lockhead_Tristar
+MHz M-1011 TriStar
+Lockheed10-Electra
+Simlock S-188 Electra
+logs
+Ceppi
+Lowa
+BennHardt T-26
+Lowa_Anhaenger
+Bennhardt T-26 (carrozza)
+Mack_Truck_01
+TMC Naso lungo Semi
+Mailcontainerwagon
+MSP vagone postale
+MailExpress
+Empire aereo postale eliche
+Mailwagon
+Empire "Alto" vagone postale
 Milk_Truck
 Camion per trasporto latte
 Milk_Waggon
@@ -502,10 +978,30 @@ Moebelschiff
 Nave per mobili
 Moebelwagen
 VT Vienna vagone per mobili
+Muellschiff
+MHz nave trasporto rifiuti
+NeuOelwagen
+Empire cisterna
+NS1000
+P-Rail NS-1000
+NS1600
+P-Rail NS-1600
 Oelanhaenger
 H-Trans rimorchio cisterna per petrolio
 Oelwagen
 VT Vienna cisterna per petrolio
+Oilbarge
+Empire nave cisterna
+Oiltrailer
+SimCo rimorchio cisterna
+old_open_car
+SimCo Gondola sfuso
+OldOil
+Kahan vagone cisterna
+Ox2
+Cavalli
+Ox4
+Cavalli
 Papieranhaenger
 Trikky rimorchio per carta
 Papiertransporter
@@ -514,20 +1010,40 @@ Papierwagen
 VT Vienna vagone per carta
 Passagierwagen
 H-trans carrozza passeggeri
+Pferdebahn
+Trazione tram
+Pferdebahnwagen
+SingCo tram passeggeri
 Postschiff
 Nave postale
 Posttransporter
 H-Trans furgone postale
 Postwagen
 H-Trans vagone per posta/bagagli
+PrPersonenwagen
+SingCo carrozza passeggeri
+PrPostwagen
+SingCo carrozza postale
 RenaultTH5
 Renault TH5
 Sandanhaenger
 WF Ultd. rimorchio per sabbia
 Sandtransporter
 WF Ultd. camion per sabbia
+schooner
+Goletta Novia Scotia
+Schooner_Bark
+Goletta Barque
+SD40-2-back
+SD40 Double (coda)
+SD40-2-front
+SD40
+setra_S10
+Setra S10 bus
 SlowFerry
 H-Trans traghetto passeggeri
+SMPoiltruck
+SMP camion cisterna
 Stahlanhaenger
 H-Trans rimorchio per acciaio
 Stahltransporter
@@ -536,10 +1052,14 @@ Stahlwagen
 VT Vienna vagone per acciaio
 Staubkesselwagen
 VT Vienna vagone per materie plastiche
+Steamer
+Nave a vapore
 Stoneanhaenger
 WF Ultd. rimorchio per pietra
 Stonetransporter
 WF Ultd. camion per pietra
+SuperConstellation
+RavenCo R-1049 Super Constellation
 Tanklastzug
 H-Trans camion cisterna per petrolio
 TPBeiwagen
@@ -548,14 +1068,28 @@ TPPassagierwagen
 TPI carrozza passeggeri
 TPSchienenbus
 TPI VT98 (diesel)
+Tugboat
+SimCo Rimorchiatore
+Ucy
+MHz vagone merci Mk. III
+VolvoFH12
+Ikarus FH12 Naso piatto Semi
+waste wagon
+SimCo vagone rifiuti
 X2000back
 X2000 - Retro
 X2000car
 X2000 - Carrozza passeggeri
 X2000front
 X2000 - Fronte
+XMail
+Kirayami X-1 carrozza postale
+XTest
+Kirayami X-1
 #______________________________________way______________________________________
 #______________________________________way______________________________________
+asphalt_road
+Strada asfaltata
 city_road
 Strada urbana
 cobblestone_road
@@ -568,9 +1102,37 @@ elevated_monorail
 monorotaia sopraelevata
 gavel_road
 Sentiero inghiaiato
+Kanal
+Canale
+MaglevTrack
+Linea maglev
+MaglevTrackElevated
+Linea sopraelevata maglev
+mip_cobblestone_road
+MIP strada ciottolata
+monorail
+Linea monorotaia
+Powerline
+Linea alta tensione
+Rillenschienen
+Rotaie leggere
+river
+Fiume navigabile
+river2
+Ruscello
+runway_grass
+Pista d'atterraggio d'erba
+runway_modern
+Pista d'atterraggio
+sand_track
+Ferrovia con traversine in legno (su sabbia)
+steel_sleeper_track
+Ferrovia con traversine in acciaio
 wooden_sleeper_track
 Linea ferroviaria con traversine di legno
 #__________________________________way-object___________________________________
 #__________________________________way-object___________________________________
 HighSpeedOverheadpower
 Linea elettrica alta velocità
+SlowOverheadpower
+Linee aeree

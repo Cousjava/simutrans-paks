@@ -5,17 +5,17 @@
 #                             Language: ja Japanese                            #
 #                                Encoding: UTF-8                               #
 #                               Font : m+10r.bdf                               #
-#                            Date Created: 9.12 2009                           #
+#                            Date Created: 1.02 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Frank Penz - FrankP                             #
-#                      note: Administrator SimuTranslator                      #
+#                                    note:                                     #
 #                                    - Hamo73                                  #
 #                                    note:                                     #
 #                           Tomohiro MATSUMURA - hiro                          #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
-#              note: Administrator Base texts / pak64 / pak.japan              #
+#                                    note:                                     #
 #                          SHISHIDO Yoshihiro - yoshi                          #
 #                                    note:                                     #
 #                                 z9999 - z9999                                #
@@ -424,6 +424,8 @@ fish_swarm
 漁場
 food_processing_plant
 食品工場
+Geokraftwerk
+地熱発電所
 grain_farm
 穀物畑
 grain_mill

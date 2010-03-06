@@ -5,13 +5,13 @@
 #                             Language: fr Francais                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 9.12 2009                           #
+#                            Date Created: 1.02 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                  - Christophe                                #
 #                                    note:                                     #
 #                              Frank Penz - FrankP                             #
-#                      note: Administrator SimuTranslator                      #
+#                                    note:                                     #
 #                         Roman Schwörer - Gotthardlok                         #
 #                                    note:                                     #
 #                           Sava Bogdanets - Sava2004                          #
@@ -23,7 +23,7 @@
 #                            Luc Mallet - luc.mallet                           #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
-#              note: Administrator Base texts / pak64 / pak.japan              #
+#                                    note:                                     #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -93,7 +93,7 @@ Des ruines\n\nqui en disent sur des temps\nmeilleurs. Elles valent\ntoujours le 
 A4_SCHLOSS2
 Vieux château\n\nqui vaut toujours le coup\nd'oeuil.\n
 A5_STONEHENGE
-Stonehenge\n\nUn ancien cercle de pierres.\nTrès mysterieux!\n
+Stonehenge\n\nUn ancien cercle de pierres.\nTrès mystérieux !\n
 A6_DOME
 Cathédrale\n\nCette magnifique vieille\ncathédrale est une\nvéritable attraction.\n
 AirDepot
@@ -119,7 +119,7 @@ Arrêt de bus\n
 Car_StationBlg
 parc de stationnement
 CarDepot
-Depôt pour des véhicules routiers
+Dépôt pour véhicules routiers
 CarStop
 Zone de chargement
 ChannelStop
@@ -131,7 +131,7 @@ Station service.\n\nAttention, les prix y sont\nexorbitants!\n
 COM_00_03
 Maboulle.\n\nUn bar-billard très branché.\n
 COM_00_05
-Petite banque.\n\nCette banque n'est, ma foi,\npas très sure. Les hold-up\ny sont monaie courante.\n
+Petite banque.\n\nCette banque n'est, ma foi,\npas très sûre. Les hold-ups\ny sont monnaie courante.\n
 COM_00_06
 Impossible de trouver un\nmeilleur café que celui servi\nsur la terrasse de ce\nbistrot\n
 COM_00_08
@@ -143,19 +143,19 @@ Nova Nouveautés. Récent\net coloré magasin de\nnouveautés vendant de\ntout depui
 COM_00_12
 Immeuble de bureaux\n
 COM_00_14
-Ce bâtiement ressemble à\nune usine, mais il s'agit en\nfait d'un entrepôt pour le\ntraffic illégale de livres de\nprières.\n
+Ce bâtiment ressemble à\nune usine, mais il s'agit en\nfait d'un entrepôt pour le\ntrafic illégal de livres de\nprières.\n
 COM_00_18
-Bureaux moderne\n
+Bureaux modernes\n
 COM_00_22
 Bureaux de l'ONU, sorte\nd'embassade pour la région\n
 COM_01_01
-Aire de départ et d'arrivé de\nmontgolfières. Le site est\nfréquenté par de nombreux\npoliticiens, c'est pourquoi il\nn'y a pas de bonbonne \nde gaz.\n
+Aire de départ et d'arrivée de\nmontgolfières. Le site est\nfréquenté par de nombreux\npoliticiens, c'est pourquoi il\nn'y a pas de bonbonne \nde gaz.\n
 COM_01_04
 Promenade boisée\n
 COM_01_09
 Vieux cinéma\n
 COM_01_10
-La clinique locale. La\nfaçade a été changé par\nune nouvelle plus joyeuse\npour remonter le moral des\npatients, spécialement\nceux en visite chez le\ndentiste. Ne gardez pas de\ndents contre eux!\n
+La clinique locale. La\nfaçade a été changée par\nune nouvelle plus joyeuse\npour remonter le moral des\npatients, spécialement\nceux en visite chez le\ndentiste. Ne gardez pas de\ndent contre eux!\n
 COM_01_17
 Immeuble de bureau\n
 Control_StationBlg
@@ -483,7 +483,7 @@ tunnel d'autoroute
 RailTunnel
 Tunnel ferroviaire
 RoadTunnel
-Tunnel routière
+Tunnel routier
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103

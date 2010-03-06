@@ -5,19 +5,21 @@
 #                             Language: es Espanol                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 9.12 2009                           #
+#                            Date Created: 1.02 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                   - Diegote                                  #
 #                                    note:                                     #
 #                              Frank Penz - FrankP                             #
-#                      note: Administrator SimuTranslator                      #
+#                                    note:                                     #
 #                       Zeno (Albert Ruiz) - albert.yuste                      #
 #                                    note:                                     #
+#                                    - ispero                                  #
+#                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
-#              note: Administrator Base texts / pak64 / pak.japan              #
+#                                    note:                                     #
 #                              Xavier Paz - vilvoh                             #
-#                            note: Spanish board mod                           #
+#                                    note:                                     #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -562,6 +564,8 @@ factory_Concretefactory_details
 <title>Fábrica de hormigón</title>\nEn estas instalaciones se fabrica el hormigón celular autoclave (AAC). Los poros del material reducen el peso e incrementan el aislamiento originada por el polvo de aluminio, que reacciona con el agua. El AAC se inventó en los años 20 del siglo XX.
 factory_Erzbergwerk_details
 <title>Extracción del carbón</title>\n Los métodos de extración del carbón dependen de la calidad y profundidad a la que se encuentre la veta, así como de los factores geológicos de la zona. Los métodos extractivos se dividen dos categorías: superficie o bajo tierra.<br><br>\n\nLa elección de uno u otro método además de la viabilidad económica, depende de la profundidad a la que haya que excavar. Si la veta se encuentra a menos de 55 m. generalmente se opta por operar a cielo abierto. Entre 55 y 91 m. se aplica la minería subterránea pero se mantiene la opción de superficie. A profundidades mayores, se aplica la únicamente la minería subterránea.
+factory_Geokraftwerk_details
+<title>Central geotérmica</title>\n\nLa energía geotérmica es aquella que se obtiene mediante el aprovechamiento del calor del interior de la Tierra.\n\n\nEn áreas de aguas termales muy calientes a poca profundidad, se perfora a través fracturas naturales en las rocas. El agua caliente o el vapor pueden fluir de forma natural, o ser extraidos por bombeo. A continuación se incorpora el agua caliente al circuito, donde termina moviendo las turbinas que finalmente generan electricidad.\n\n\nCuando el agua ha perdido su calor, se vuelve a inyectar nuevamente por tanto el sistema no pierde su fuente de energía primaria, y siempre se mantiene en equilibrio.
 factory_Incinerator_details
 <title>Incineradora</title>\nLa basura entrante se somete un proceso de tratamiento de residuos, que implica la combustión de los residuos orgánicos, denominado tratamiento termal.\n\nDicho proceso convierte los residuos en cenizas, gases, partículas y calor, y tiene enormes beneficios en el tratamiento de ciertos tipos de residuos peligrosos como residuos clínicos o sustancias peligrosas. Mediante la incineración se eliminan las posibles toxinas y patógenos.
 factory_Kohlegrube_details
@@ -588,6 +592,8 @@ factory_Pharmaceutics_details
 <title>Farmacéutica</title>\nEl complejo consta de varios edificios y laboratorios donde se desarrollan las vacunas y curas para su uso en humanos y animales. La fábrica produce fundamentalmente vacunas contra la malaria y productos de veterinaria.
 factory_Raffinerie_details
 <title>Refinería</title>\nEn esta planta de procesado industrial, el crudo es refinado y procesado dando lugar a los varios productos derivados como gasolina, combustible diesel, base para asfalto, queroseno, fuel y gas licuado. Es normal que este tipo de instalaciones tengan un complejo entramado de tuberías, conductos y cañerías, para transportar los fluidos y gases de una unidad de procesamiento a otra.
+factory_Rinnenkraftwerk_details
+<title>Central solar de espejos parabólicos</title>\nLa luz del Sol se concentra en un punto usando espejos parabólicos móviles. Por dicho punto pasa un circuito cerrado de líquido que alcanza una temperatura de 300º y pasa a través de la caldera produciendo vapor, lo que hace que se mueva una turbina. Con 384 MW, son de largo las centrales solares más potentes.
 factory_Sandquarry_details
 <title>Cantera de Arena</title>A cielo abierto se extraen de aquí toneladas de arena y grava, cavando nuevos niveles a medida que se despejan los antiguos. Si se supera el nivel freático, el agua aflora a la superficie e inunda la cantera, lo cual implica que hay que extraerla y bombearla a depósitos cercanos.
 factory_scrap_yard_details
@@ -644,6 +650,8 @@ fish_swarm
 Banco de peces
 food_processing_plant
 Industria alimentaria
+Geokraftwerk
+Planta geotérmica
 grain_farm
 Trigal
 grain_mill
@@ -685,7 +693,7 @@ Ind. Farmacéutica
 Raffinerie
 Refinería (plásticos)
 Rinnenkraftwerk
-Huerto solar
+Central solar de espejos parabólicos
 Saegewerk
 Aserradero
 SaegewerkMHz
@@ -723,11 +731,11 @@ Conservas
 Cement
 Cemento
 Chemicals
-Productos químicos
+Prod. químicos
 Concrete
 Hormigón
 Eisenerz
-Mineral de hierro
+Hierro
 fish
 Pescado
 flour
@@ -763,7 +771,7 @@ Plásticos
 Post
 Correo
 PrintersInk
-Tinta industrial
+Tinta ind.
 Sand
 Arena
 Stahl

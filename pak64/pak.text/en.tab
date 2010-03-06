@@ -5,7 +5,7 @@
 #                             Language: en English                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 9.12 2009                           #
+#                            Date Created: 1.02 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Alexander Brose - AlexB                           #
@@ -16,6 +16,8 @@
 #                                    note:                                     #
 #                            Colin W Anetts - Colin                            #
 #                                    note:                                     #
+#                            Colin Teubner - ColinT                            #
+#                                    note:                                     #
 #                                   - Combuijs                                 #
 #                                    note:                                     #
 #                             Michael Hohl - Cruzer                            #
@@ -25,7 +27,7 @@
 #                                    - Dwachs                                  #
 #                                    note:                                     #
 #                              Frank Penz - FrankP                             #
-#                      note: Administrator SimuTranslator                      #
+#                                    note:                                     #
 #                                    - GerdW                                   #
 #                                    note:                                     #
 #                         Roman Schwörer - Gotthardlok                         #
@@ -57,7 +59,7 @@
 #                              Tomá? Kube? - napik                             #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
-#              note: Administrator Base texts / pak64 / pak.japan              #
+#                                    note:                                     #
 #                                   - shinexus                                 #
 #                                    note:                                     #
 #                           Lincoln Sayger - skreyola                          #
@@ -697,7 +699,7 @@ Choose Signals
 ChooseSignalsMonorail
 Choose Signals
 Endofchoosetrack
-Exclude from plattfrom search
+Exclude from platform choice
 LongBlockSignals
 Long Block Signal
 Minimum80

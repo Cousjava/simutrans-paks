@@ -5,19 +5,21 @@
 #                             Language: cz Cestina                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                            Date Created: 9.12 2009                           #
+#                            Date Created: 1.02 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Frank Penz - FrankP                             #
-#                      note: Administrator SimuTranslator                      #
+#                                    note:                                     #
 #                                    - JOHNY                                   #
+#                                    note:                                     #
+#                        Václav Macùrek - VaclavMacurek                        #
 #                                    note:                                     #
 #                                   - hernajs                                  #
 #                                    note:                                     #
 #                              Tomá¹ Kube¹ - napik                             #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
-#              note: Administrator Base texts / pak64 / pak.japan              #
+#                                    note:                                     #
 #                            Oliver Mayer - rakishly                           #
 #                                    note:                                     #
 #                         Tomá¹ Vrbický - vrbicky_tomas                        #
@@ -78,6 +80,8 @@ Radnice
 Radnice
 04_CITY_C
 Radnice
+10_WOHN
+Kostel sv. Luká¹e\n\nMalá, ale rostoucí farnost. Jejich misie ve mìstì pøitahuje mnoho nových èlenù a náv¹tìvníkù.\n
 1930AirDepot
 Hangár (1930)
 1headquarter
@@ -406,8 +410,26 @@ yellow_car
 ®luté auto
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
+factory_bakery_details
+<title>Pekárna - detaily</title>\n<h1>Pekárna</h1>\n<p>První doklady o obilí pro úèely stravování jsou dolo¾eny od samého poèátku zemìdìlství, ba je¹tì do dob sbìraèù. Ov¹em co bylo nalezeno jako obilí, by nám dnes pøipadalo jen jako tráva: a) ¹lo o ¹irou smìs zrn, b) obilí, jak je známe dnes, pro¹lo znaènou ¹lechtitelskou promìnou.</p><p>Podstatným milníkem v historii peèiva byl pøechod od peèení na kameni k vynálezu pece: Ta se svou tepelnì akumulaèní schopností pøinasla vy¹¹í teploty, rovnomìrnìj¹í peèení ze v¹ech stran, trvalej¹í teplo s mo¾ností peèení rùzných peèiv jak teplota po vyhøátí a ometení uhlíkù zvolna klesá, ménì promìnlivé prostøedí a vneposlední øadì také vy¹¹í úèinnost a úspory energie, paliva.</p><p>Za hlavní evropské obiloviny pro potraviny lze oznaèit ¾ito a p¹enici. S postupem doby je vidìt nárùst podílu vyu¾ívání p¹enice na úkor ¾ita: Podíl svìtlého p¹enièného peèiva se dlouhodobì zvy¹uje. S módou racionální vý¾ivy v západním svìtì lze pozorovat znovuobjevování tmavého peèiva, tedy ¾itné mouky a dal¹ích alternativ.</p>\n
+factory_brewery_details
+<title>Pivovar - detaily</title>\n<h1>Pivovar</h1>\n<p>Pivovar je technologický celek vyrábìjící pivo. Pivovar je obvykle rozdìlen do nìkolika samostatných provozù, které odpovídají jednotlivým fázím výroby. Velikost pivovaru se mù¾e pohybovat od malého domácího témìø kuchyòského provozu a¾ po velký prùmyslový podnik. Variabilita existuje i v konkrétní technologii vaøení piva. V Èesku ale prakticky v¹echny pivovary u¾ívají metodu spodního kva¹ení a vyrábìjí piva plzeòského typu.</p>
+factory_cannery_details
+<title>Konzervárna - detaily</title>\n<h1>Konzervárna</h1>\n<p>Konzerva pochází od slova konzervovat, jedná se o ka¾dý zásobník urèený pro dlouhodobé skladování a konzervaci netrvanlivých komodit, zejména potravin, a to v bì¾ných teplotních a vlhkostních podmínkách.</p><p>Èasto se jedná o plechovou pikslu nebo obyèejnou èirou sklenìnou nádobu opatøenou plechovým víèkem. Kromì vlastní konzervace potravin konzerva také slou¾í k bezpeènému transportu, k lep¹ímu uskladnìní pøíslu¹né komodity, nejèastìji se jedná o potraviny.</p><p>V pøevá¾né míøe se jedná o válcové tvary (nejèastìji pro ovoce, barvy, oleje atd.), ve tvaru kvádru (pro maso, paliva v kanystrech atd.), malé podlouhlé nádobky pro moøské rybièky (tzv. olejovky) atd. Kovové konzervy se vyrábìjí nejèastìji z ocelového plechu pota¾eného cínem, nebo novìji z hliníkových slitin.</p>\n
 factory_Cementmill_details
 Cementárna
+factory_Concretefactory_details
+<title>Betonárka - detaily</title>\n<h1>Betonárka</h1><p>Beton je umìlý slepenec a patøí mezi nejpou¾ívanìj¹í kompozitní materiály. Nejèastìj¹í forma je tzv. cementový beton, kde je pojivem cement a plnivem kamenivo; dal¹ím materiálem pro výrobu je voda. Kromì cementovýho betonu existuje je¹tì asfaltový beton, co¾ je materiál, ze kterého jsou vyrábìny asfaltové vozovky.</p>
+factory_cow_farm_details
+<title>Kravín - detaily</title>\n<h1>Kravín</h1><p>Zde se chovají krávy pro maso a nebo pro mléko. Vedle prasete je tur domácí jedním z neju¾iteènìj¹ích chovných zvíøat.</p>
+factory_dairy_details
+<title>Mlékárna - detaily</title>\n<h1>Mlékárna</h1><p>Mlékárna je továrna, ve které se zpracovává mléko na velké mno¾ství produktù. Napø. jogurt byl vymy¹len v Radlické mlékárnì na Smíchovì. Nìkolik l¾ièek jahodové marmelády na povrchu jogurtu mìlo zabránit vytváøení plísní na jogurtu.</p>
+factory_Druckerei_details
+<title>Tiskárna - detaily</title>\n<h1>Tiskárna</h1><p>Polygrafie je výrobní obor, který zpracovává a tiskem rozmno¾uje textové a obrazové pøedlohy. Zahrnuje tyto základní výrobní fáze: zhotovování tiskových forem, tisk, dokonèovací výroba a pøidru¾ené odborné èinnosti.</p>
+factory_Erzbergwerk_details
+<title>Dùl na ¾eleznou rudu - detaily</title>\n<h1>Dùl na ¾eleznou rudu</h1><p>®elezná ruda je hornina, minerál, který obsahuje ¾elezo v takové chemické formì, která umo¾òuje jeho hospodárné získání hutnickými metodami. ®elezné rudy se zpravidla tì¾í hornickým zpùsobem. Jsou to jednak hlubinné doly nebo mnohem èastìji povrchová tì¾ba.</p><p>Úpravárenskými pochody jako drcením v èelis»ových a válcových drtièích, praním a flotací se takto vytì¾ená surová ruda zbavuje hlu¹iny a dosáhne se vy¹¹ího obsahu ¾eleza. Takto upravená a obohacená ruda se dopravuje do hutních podnikù.</p>
+factory_fish_pond_details
+<title>Chovný rybník - detaily</title>\n<h1>Chovný rybník</h1><p>Metody chovu Tøeboòského kapra vycházejí z bohaté historie tøeboòského rybníkáøství. Vlastní výrobní cyklus Tøeboòského kapra pøedstavuje dobu, která uplyne od výtìru a¾ do prodeje tr¾ních ryby. Základním principem je metoda oddìleného chovu ryb podle stáøí.</p><p>Celý proces zaèíná v øízeném prostøedí na rybí líhni, kde probíhá umìlý výtìr, váèkový plùdek je pak vysazován do speciálních plùdkových rybníkù a dále je pøelovován do násadových a hlavních rybníkù. Doba rùstu tr¾ní ryby Tøeboòského kapra trvá 3 anebo 4 roky.</p><p>Zcela zvlá¹tní pozornost je vìnována chovu generaèních ryb Tøeboòského kapra, který probíhá oddìlenì od chovu kaprù urèených ke konzumaci.</p>
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -630,6 +652,8 @@ traffic_light
 Semafory
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
+Ahorn-2
+Javor
 Birke-1
 bøíza\n
 Latschenkiefer
@@ -912,6 +936,10 @@ Powerline
 Elektrické vedení
 Rillenschienen
 Tramvajová tra»
+river
+Splavná øeka
+river2
+Potok
 runway_grass
 Travnatá ranvej
 runway_modern

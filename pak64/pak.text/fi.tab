@@ -5,15 +5,17 @@
 #                              Language: fi Suomi                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 9.12 2009                           #
+#                            Date Created: 1.02 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Esa Lindroos - Esa                              #
 #                                    note:                                     #
 #                              Frank Penz - FrankP                             #
-#                      note: Administrator SimuTranslator                      #
+#                                    note:                                     #
+#                        Jaakko Mäkinen - jaakko.makinen                       #
+#                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
-#              note: Administrator Base texts / pak64 / pak.japan              #
+#                                    note:                                     #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -29,9 +31,11 @@ Maglev-silta
 mlm_concrete_bridge
 Betoninen Monorail-silta
 ModernRoad
-Modermi betonisilta
+Moderni betonisilta
 MonorailRamp
-Monorail-rata
+Monorail-ramppi
+PowerBridge
+Voimalinjasilta
 Schiffhebewerk
 Laivanosturi
 SteelRail
@@ -445,7 +449,7 @@ Sementtimylly
 2Raffinerie
 Bensiinijalostamo
 3Raffinerie
-Jalostamo
+Öljyjalostamo
 Aufwindkraftwerk
 Tuuliputkivoimalaitos
 Autohaus
@@ -467,7 +471,7 @@ Kemikaalitehdas
 CHEMIST
 Apteekki
 Concretefactory
-Betonitehdas
+Kevytbetonitehdas
 cow_farm
 Karjatila
 dairy
@@ -482,20 +486,30 @@ fish_swarm
 Kalaparvi
 food_processing_plant
 Ruuanjalostuslaitos
+Geokraftwerk
+Maalämpövoimala
 grain_farm
-Viljapelto
+Maatila
 grain_mill
 Mylly
+grain_windmill
+Tuulimylly
+Incinerator
+Jätteenpolttolaitos
 Kohlegrube
 Hiilikaivos
 Kohlekraftwerk
 Hiilivoimala
+Marketplace
+Kauppatori
 Materialswholesale
 Tarviketukku
 Moebelfabrik
 Huonekalutehdas
 Moebelhaus
 Huonekalukauppa
+Muellkraftwerk
+Jätevoimala
 Nutzwald
 Viljelysmetsä
 Oelbohrinsel
@@ -506,13 +520,19 @@ Oelkraftwerk
 Öljyvoimala
 Oelpumpe
 Öljypumppu
+old_farm
+Maatila
 Papierfabrik
 Paperitehdas
 Pharmaceutics
-Farmasia
+Lääketehdas
 Raffinerie
 Muovijalostamo
+Rinnenkraftwerk
+Parabolinen aurinkovoimala
 Saegewerk
+Sahalaitos
+SaegewerkMHz
 Saha
 Sandquarry
 Hiekkalouhos
@@ -526,6 +546,10 @@ supermarket
 Supermarketti
 TANKE
 Huoltoasema
+thermisches_Solarkraftwerk
+Aurinkovoimala
+Turmkraftwerk
+Aurinkolämpövoimala
 Windkraftwerk
 Tuulivoimala
 #_____________________________________good______________________________________
@@ -543,9 +567,9 @@ säilykkeitä
 Cement
 sementtiä
 Chemicals
-Kemikaaleja
+kemikaaleja
 Concrete
-betonia
+kevytbetonia
 Eisenerz
 rautamalmia
 fish
@@ -555,7 +579,9 @@ jauhoja
 food
 ruokaa
 Gasoline
-Bensiiniä
+bensiiniä
+grain
+viljaa
 Holz
 tukkeja
 Kohle
@@ -581,7 +607,7 @@ muovia
 Post
 postia
 PrintersInk
-tulostusmustetta
+mustetta
 Sand
 hiekkaa
 Stahl
@@ -1095,35 +1121,39 @@ Asfalttitie
 city_road
 Tie
 cobblestone_road
-Kivitie
+Mukulakivitie
 concrete_sleeper_track
-Betoni palkki rata
+Rautatie betonipalkeilla
 dirt_road
-hiekkatie
-elevated_monorail
-Korotettu monorailrata
-gavel_road
 Soratie
+elevated_monorail
+Korotettu Monorail-rata
+gavel_road
+Öljysoratie
 Kanal
 Kanava
 MaglevTrack
-Monorail-rata
+Maglev-rata
 MaglevTrackElevated
-Korotettu Monorail-rata
+Korotettu Maglev-rata
 mip_cobblestone_road
-MIP Kivitie
+Kivitie
 monorail
-Monorail
+Monorail-rata
 Powerline
 Voimalinja
 Rillenschienen
 Raitiovaunurata
+river
+Kulkukelpoinen joki
+river2
+Puro
 runway_grass
 Nurmikiitorata
 runway_modern
 Kiitorata
 sand_track
-Hiekkapohjainen rata
+Rautatie puupalkeilla (hiekkapohjainen)
 steel_sleeper_track
 Rautatie teräspalkeilla
 taxiway

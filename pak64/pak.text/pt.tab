@@ -5,11 +5,11 @@
 #                            Language: pt Portugues                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 9.12 2009                           #
+#                            Date Created: 1.02 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Frank Penz - FrankP                             #
-#                      note: Administrator SimuTranslator                      #
+#                                    note:                                     #
 #                          Igor Eliezer - IgorEliezer                          #
 #                                    note:                                     #
 #                  Richard Gatinho Ruas Ramos - RichardGatinho                 #
@@ -17,7 +17,7 @@
 #                             Eric Oliveira - eric                             #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
-#              note: Administrator Base texts / pak64 / pak.japan              #
+#                                    note:                                     #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -254,18 +254,38 @@ Gymnasium
 Escola de ensino médio\n\n
 IND_00_01
 Galpão\n\nEsse galpão é usado para armazenar mercadorias... ou gravar filmes de terror sobre espiões.
+IND_00_02
+Depósitos de cobertura cerâmica
 IND_00_03
 Tanque para armazenametno de combustível\n\nProibido fumar a menos de 8m de distância.
+IND_00_04
+Depósito de cobertura de telhas de zinco
 IND_00_05
 Tanque de água\n\nEste tanque estoca água potável para esta área da cidade.
 IND_00_06
 Fábrica\n\nEsta fábrica faz artigos muito úteis, como línguas-de-sogra e almofadas de barulho.
+IND_00_09
+Silos de armazenamento e carregamento de granulares
+IND_00_10
+Prédio administrativo industrial
+IND_00_14
+Fábrica de eletrônicos em estilo modernista
 IND_01_01
 Estacionamento grátis.\n\nAlgumas pessoas mesmo\nabandonam os seus carros\nvelhos aqui.\n\n
+IND_01_03
+Reservatório de fluídos químicos
 IND_01_04
 Fábrica de brinquedo\n\nEsta fábrica produz antigos brinquedos de madeira.
+IND_01_06
+Fábrica de engrenagens\n\nFabrica ou engrenagens ou empregados preguiçosos.
+IND_01_07
+Transformador fabril
 IND_01_10
 Fábrica de ferramentas\n\n. Esta empresa faz ferramentas forjadas. Eles proverão uma substituição grátis para qualquer ferramenta que eles fizeram que pode quebrar.
+IND_01_11
+Fiação e Tecelagem\n\nAlém de fabricar fios e tecidos, produz empregados enrolados.
+IND_02_06
+Fábrica de peças para locomotivas
 IND_02_09
 Estação de tratamento de\nefluentes industriais \n
 IND_02_10
@@ -312,6 +332,10 @@ Raven_Kirche
 Igreja de St. Meinrad\n\nDe acordo com a lenda, o\nermitão St. Meinrad era\nacompanhado por dois\ncorvos. Quando ele foi\nassassinado, os dois\ncorvos seguiram os\nassassinos e assim serviram\ncomo prova da culpa deles.\nHoje, no lugar da cabana dele\nestá o monastério Einsiedeln.\n\n
 RES_00_01
 Esta casa pequena pode parecer nada fora do normal: mas ela está bem no certo do universo do Simutrans. Foi o primeiro edifício erigido no Simutrans.
+RES_00_02
+Casa de uma família modesta\n\nCasas simples como esta são bastante comuns entre famílias de poucos recursos, mesmo assim elas são bem arejadas e captam água da chuva. Normalmente são projetadas por arquitetos da prefeitura preocupados com famílias que desejam economizar água e energia.
+RES_00_03
+Casa simples de telhas de ardósia\n\nAs telhas são finas placas da pedra ardósia que são presas na estrutura de madeira. Tais casas são comuns em países frios, e na simplicidade do material, elas são bem bonitas.
 RES_00_04
 Casa com janelas em baias
 RES_00_06
@@ -320,10 +344,14 @@ RES_00_08
 Casa média com garagem anexa\n\nNão se preocupe. Eles usam o carro para chegar a uma de seus terminais de transporte.
 RES_00_09
 Parque do bairro\n\nMoradores vizinhos gostam de vir aqui para alimentar os patos e pombos.
+RES_00_10
+Pequeno bloco de apartamentos\n\nPossui só três andares, o terceiro fora construído como se fosse no sótão, alguns dos seus cômodos tem mesmo um teto inclinado. E ainda há uma garagem comum anexa ao edifício.
 RES_00_12
 Mansão moderna\n\nViva menos simples! O interior é\núnico também: a instalação\nelétrica é só trifásica, a\nbanheira transparente é\niluminada com abajures de\nnéon, o fogão é alimentado por\nmotor stirling e as pinturas são\nprojetadas sobre as paredes,\nporque o arquiteto proibe pregos\nnas paredes.\n
 RES_00_13
 Sobrados geminados\n\nBoas cercas vivas fazem bons vizinhos?
+RES_00_16
+Antiga vila\n\nEsta vila ainda precisa ser restaurada, mas tem seu charme.
 RES_00_17
 Mesmo para casas antigas\ncomo essa, contas de\nconsumo já existiam - cada\num já pagava por sua\nlenha.\n\n
 RES_00_19
@@ -334,6 +362,8 @@ RES_01_02
 Chalezinho.\n\nMuito estável, mas com só\nalgumas janelas e paredes,\nassim não é realmente\nsatisfatório para pessoas\nque gostam de pôr quadros.\n\n
 RES_01_05
 Grande casa unifamiliar com\numa árvore. É para músicos\naposentados.\n
+RES_01_10
+Casa moderna\n\nO pátio da cobertura oferece um grande lugar para desfrutar o ar-livre sem sair de casa.
 Residenz
 Residência universitária\n\nEste edifício está sendo\nusado para abrigar\nestudantes da\nuniversidade, se não\npuderem ter recursos para\nviver nos seus próprios.\n\n
 rightShipStop
@@ -466,6 +496,8 @@ fish_swarm
 Fazenda marinha
 food_processing_plant
 Fábrica de alimentos
+Geokraftwerk
+Usina de geoenergia
 grain_farm
 Fazenda de grãos
 grain_mill
