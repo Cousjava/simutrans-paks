@@ -62,6 +62,9 @@ starting_money = 20000000
 # Maintenance costs of buildings
 maintenance_building = 2000
 
+# buying obsolete vehicles is disallowed by default
+allow_buying_obsolete_vehicles = 0
+
 # you can adjust all the cost in the game, that are not inside some pak file
 
 # first stops: the actual cost is (cost*level*width*height)

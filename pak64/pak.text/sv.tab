@@ -5,7 +5,7 @@
 #                             Language: sv Svenska                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 1.02 2010                           #
+#                           Date Created: 21.02 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Frank Penz - FrankP                             #
@@ -234,6 +234,8 @@ MonorailDepot
 Monorailvagnhall
 MonorailFoundation
 Fundament för monorail
+MonorailGround
+Grund till monorailhall
 OldTownhall
 Gammalt rådhus\n\n
 Patricks_Rock
@@ -897,7 +899,7 @@ Ledbuss (bakre del)
 Gelenkbus_Front
 Ledbuss (främre del)
 Godm_Spitz
-Segelskepp
+Passagerarklipper
 Grossraumwagen
 Personvagn
 Guppy
