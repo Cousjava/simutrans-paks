@@ -144,6 +144,12 @@ no_tree_climates = 130
 
 ###################################other stuff##################################
 
+# how far cities should be minimum apart (default 16)
+minimum_city_distance = 32
+
+# at which number of inhabitants we need a new market?
+industry_increase_every = 2000
+
 # Max. length of intitial intercity road connections
 # If you want to speed up map creation, lower this value
 # If you want more initial intercity roads, raise this value
