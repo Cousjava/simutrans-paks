@@ -283,6 +283,7 @@ Name=1headquarter
 NoInfo=1
 hq_level=0
 passengers=20
+intro_year=1890
 BackImage[0][0][0][0][0][0]=HQ.0.0
 BackImage[0][0][0][0][0][1]=HQ.0.1
 --------------------
@@ -292,6 +293,7 @@ Name=2headquarter
 NoInfo=1
 hq_level=1
 passengers=100
+intro_year=1930
 BackImage[0][0][0][0][0][0]=HQ.0.2
 BackImage[0][0][0][0][0][1]=HQ.0.3
 --------------------
@@ -301,6 +303,7 @@ Name=3headquarter
 NoInfo=1
 hq_level=2
 passengers=300
+intro_year=1970
 BackImage[0][0][0][1][0][0]=HQ.0.4
 BackImage[0][0][0][0][0][0]=HQ.1.4
 BackImage[0][0][0][1][0][1]=HQ.0.5
