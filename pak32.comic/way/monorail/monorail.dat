@@ -1,0 +1,153 @@
+--------------------
+Obj=way
+Name=Monorail_track
+cost=7000
+maintenance=680
+topspeed=350
+max_weight=40
+intro_year = 1920
+intro_month = 4
+waytype=monorail_track
+icon=> ../../buttons/monorailbuttons.0.0
+cursor=monorailtrack.0.8
+# rbis * animation
+Image[-][0]=monorailtrack.0.2
+Image[N][0]=monorailtrack.5.2
+Image[S][0]=monorailtrack.5.0
+Image[E][0]=monorailtrack.5.1
+Image[W][0]=monorailtrack.5.3
+Image[NS][0]=monorailtrack.0.0
+Image[EW][0]=monorailtrack.0.1
+Image[NSE][0]=monorailtrack.3.2
+Image[NSW][0]=monorailtrack.3.0
+Image[NEW][0]=monorailtrack.3.1
+Image[SEW][0]=monorailtrack.3.3
+Image[NSEW][0]=monorailtrack.0.2
+Image[NE][0]=monorailtrack.1.3
+Image[SE][0]=monorailtrack.1.1
+Image[NW][0]=monorailtrack.1.0
+Image[SW][0]=monorailtrack.1.2
+#Diagonals
+Diagonal[NE][0]=monorailtrack.2.3
+Diagonal[SE][0]=monorailtrack.2.1
+Diagonal[NW][0]=monorailtrack.2.0
+Diagonal[SW][0]=monorailtrack.2.2
+# hangtyp * animation
+ImageUp[3][0]=monorailtrack.4.2
+ImageUp[6][0]=monorailtrack.4.3
+ImageUp[9][0]=monorailtrack.4.1
+ImageUp[12][0]=monorailtrack.4.0
+--------------------
+Obj=way
+Name=Monorail_track_elevated
+cost=7000
+maintenance=680
+topspeed=350
+max_weight=40
+intro_year = 1920
+intro_month = 4
+waytype=monorail_track
+system_type=1
+icon=> ../../buttons/monorailbuttons.0.0
+cursor=monorailtrack.0.8
+# rbis * animation
+Image[-][0]=monorailtrack.0.6
+Image[N][0]=monorailtrack.5.6
+Image[S][0]=monorailtrack.5.4
+Image[E][0]=monorailtrack.5.5
+Image[W][0]=monorailtrack.5.7
+Image[NS][0]=monorailtrack.0.4
+Image[EW][0]=monorailtrack.0.5
+Image[NSE][0]=monorailtrack.3.6
+Image[NSW][0]=monorailtrack.3.4
+Image[NEW][0]=monorailtrack.3.5
+Image[SEW][0]=monorailtrack.3.7
+Image[NSEW][0]=monorailtrack.0.6
+Image[NE][0]=monorailtrack.1.7
+Image[SE][0]=monorailtrack.1.5
+Image[NW][0]=monorailtrack.1.4
+Image[SW][0]=monorailtrack.1.6
+#Diagonals
+Diagonal[NE][0]=monorailtrack.2.7
+Diagonal[SE][0]=monorailtrack.2.5
+Diagonal[NW][0]=monorailtrack.2.4
+Diagonal[SW][0]=monorailtrack.2.6
+# hangtyp * animation
+ImageUp[3][0]=monorailtrack.4.6
+ImageUp[6][0]=monorailtrack.4.7
+ImageUp[9][0]=monorailtrack.4.5
+ImageUp[12][0]=monorailtrack.4.4
+--------------------
+#ramp
+---------
+Obj=bridge
+name=Monorail_Ramp
+waytype=monorail_track
+cost=150000
+maintenance=10000
+topspeed=350
+max_weight=110
+max_lenght=1
+intro_year=1964
+intro_month = 9
+cursor=monorailtrack.0.8
+icon=> ../../buttons/monorailbuttons.0.0
+pillar_distance=2
+BackImage[NS]=monorailtrack.8.0
+BackImage[EW]=monorailtrack.8.1
+BackRamp[N]=monorailtrack.7.0
+BackRamp[W]=monorailtrack.7.1
+BackRamp[S]=monorailtrack.7.2
+BackRamp[E]=monorailtrack.7.3
+BackStart[N]=monorailtrack.6.2
+BackStart[S]=monorailtrack.6.0
+BackStart[E]=monorailtrack.6.1
+BackStart[W]=monorailtrack.6.3
+backPillar[S]=monorailtrack.9.2
+backPillar[W]=monorailtrack.9.3
+---------------
+Obj=bridge
+name=Monorail_Bridge
+copyright=mobo
+waytype=monorail_track
+cost=340000
+maintenance=5000
+topspeed=350
+max_weight=200
+max_lenght=5
+intro_year=2020
+cursor=monorailtrack.0.8
+icon=> ../../buttons/monorailbuttons.0.0
+pillar_distance=2
+BackImage[NS]=monorailtrack.8.0
+BackImage[EW]=monorailtrack.8.1
+BackRamp[N]=monorailtrack.7.0
+BackRamp[W]=monorailtrack.7.1
+BackRamp[S]=monorailtrack.7.2
+BackRamp[E]=monorailtrack.7.3
+BackStart[N]=monorailtrack.6.2
+BackStart[S]=monorailtrack.6.0
+BackStart[E]=monorailtrack.6.1
+BackStart[W]=monorailtrack.6.3
+backPillar[S]=monorailtrack.9.2
+backPillar[W]=monorailtrack.9.3
+---------------
+--------------------
+Obj=building
+Name=MonorailGround
+# must be 1*1
+Dims=1,1
+NoInfo=1
+BackImage[0][0][0][0][0]=monorailtrack.9.0
+--------------------
+Obj=building
+Name=MonorailFoundation
+# must be 1*1
+Dims=1,1
+NoInfo=1
+type=extension
+waytype=monorail_track
+BackImage[0][0][0][0][0]=monorailtrack.9.0
+icon=> ../../buttons/monorailbuttons.3.5
+cursor=monorailtrack.0.8
+--------------------

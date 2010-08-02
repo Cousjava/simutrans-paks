@@ -1,0 +1,36 @@
+Obj=building
+Name=monorailDepot
+type=depot
+waytype=monorail_track
+# must be 1*1
+Dims=1,1,4
+NoInfo=1
+needs_ground=1
+intro_year=1
+BackImage[0][0][0][0][0]=tramdepot.0.0
+FrontImage[0][0][0][0][0]=tramdepot.0.1
+BackImage[1][0][0][0][0]=tramdepot.0.2
+FrontImage[1][0][0][0][0]=tramdepot.0.3
+BackImage[2][0][0][0][0]=tramdepot.0.4
+BackImage[3][0][0][0][0]=tramdepot.0.5
+icon=> ../../buttons/monorailbuttons.0.3
+cursor=tramdepot.0.6
+------------------------
+Obj=building
+Name=monorailStop
+# must be 1*1
+type=stop
+waytype=monorail_track
+enables_pax=1
+NoInfo=1
+Dims=1,1,2
+intro_year=1400
+level=1
+BackImage[1][0][0][0][0]=stop.0.0
+FrontImage[1][0][0][0][0]=stop.0.1
+BackImage[0][0][0][0][0]=stop.0.2
+FrontImage[0][0][0][0][0]=stop.0.3
+icon=> ../../buttons/monorailbuttons.2.1
+cursor=stop.0.4
+-----------------------
+

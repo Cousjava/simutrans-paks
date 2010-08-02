@@ -1,0 +1,90 @@
+
+
+-------------
+obj=vehicle
+name=MR_DTZ_Triebwagen
+copyright=mobo
+waytype=track
+engine_type=diesel
+Smoke=Diesel
+power=100
+freight=Passagiere
+speed=65
+cost=800000
+weight=14
+RunningCost=2000
+intro_year = 1913
+intro_month = 1
+retire_year = 2200
+payload=26
+length=8
+
+EmptyImage[S]=dieseltriebw.0.0
+EmptyImage[E]=dieseltriebw.0.1
+EmptyImage[N]=dieseltriebw.0.2
+EmptyImage[W]=dieseltriebw.0.3
+
+EmptyImage[NE]=dieseltriebw.0.4
+EmptyImage[SW]=dieseltriebw.0.5
+EmptyImage[SE]=dieseltriebw.0.6
+EmptyImage[NW]=dieseltriebw.0.7
+---------
+obj=vehicle
+name=MR_DTZ_Passagierwagen
+copyright=mobo
+waytype=track
+engine_type=diesel
+Smoke=Diesel
+power=100
+freight=Passagiere
+speed=65
+cost=800000
+weight=12
+RunningCost=2000
+intro_year = 1913
+intro_month = 1
+retire_year = 2200
+payload=26
+length=8
+EmptyImage[S]=dieseltriebw.1.0
+EmptyImage[E]=dieseltriebw.1.1
+EmptyImage[N]=dieseltriebw.1.2
+EmptyImage[W]=dieseltriebw.1.3
+
+EmptyImage[NE]=dieseltriebw.1.4
+EmptyImage[SW]=dieseltriebw.1.5
+EmptyImage[SE]=dieseltriebw.1.6
+EmptyImage[NW]=dieseltriebw.1.7
+--------------
+obj=vehicle
+name=MR_DTZ_Postwagen
+copyright=mobo
+waytype=track
+engine_type=diesel
+Smoke=Diesel
+freight=Post
+power=100
+speed=65
+cost=800000
+weight=12
+RunningCost=70
+intro_year = 1913
+intro_month = 1
+retire_year = 1980
+payload=94
+length=8
+EmptyImage[S]=dieseltriebw.2.0
+EmptyImage[E]=dieseltriebw.2.1
+EmptyImage[N]=dieseltriebw.2.2
+EmptyImage[W]=dieseltriebw.2.3
+
+EmptyImage[NE]=dieseltriebw.2.4
+EmptyImage[SW]=dieseltriebw.2.5
+EmptyImage[SE]=dieseltriebw.2.6
+EmptyImage[NW]=dieseltriebw.2.7
+
+
+
+
+
+

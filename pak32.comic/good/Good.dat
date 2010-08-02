@@ -1,0 +1,113 @@
+# Goods.dat
+#
+# Author: Hj. Malthaner
+# Date: ???
+# Update: 16-Nov-02
+# Update: 16-Mär-06 Frank Penz
+#
+# categories:
+# 0 = Sonderfracht
+# 1 = Stückgut
+# 2 = Schüttgut
+# 3 = Mineralöle
+# 4 = Gefriergut
+# 5 = Getränke
+# 6 = Langholz
+#
+
+#**************************
+# catg 0 Standard
+#**************************
+#
+# Personen
+#
+obj=good
+name=Passagiere
+metric=
+catg=0
+value=46
+speed_bonus=15
+weight_per_unit=75
+-----------------------
+#
+# Post
+#
+obj=good
+name=Post
+metric=sack
+catg=0
+value=30
+speed_bonus=10
+weight_per_unit=50
+--------------------
+#
+# ohne Gut
+#
+obj=good
+name=None
+metric=
+catg=0
+value=0
+speed_bonus=0
+weight_per_unit=0
+-----------------------
+#**************************
+# catg 0 Güter
+#**************************
+#
+#**************************
+# catg 1
+#**************************
+------------
+obj=good
+name=Mehl
+metric=Paletten
+catg=1
+value=58
+speed_bonus=4
+weight_per_unit=500
+-------------------
+obj=good
+name=Lebensmittel
+metric=Paletten
+catg=1
+value=70
+speed_bonus=6
+weight_per_unit=500
+------------
+#**************************
+# catg 2
+#**************************
+---------------
+obj=good
+name=Kohle
+metric=tonnen
+catg=2
+value=48
+speed_bonus=1
+weight_per_unit=1000
+---------------
+obj=good
+name=Korn
+metric=tonnen
+catg=2
+value=50
+speed_bonus=2
+weight_per_unit=1000
+----------------
+#**************************
+# catg 3
+#**************************
+#
+#**************************
+# catg 4
+#**************************
+#
+#**************************
+# catg 5
+#**************************
+#
+#**************************
+# catg 6
+#**************************
+#

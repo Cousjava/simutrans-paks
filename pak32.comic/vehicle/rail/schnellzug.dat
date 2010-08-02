@@ -1,0 +1,65 @@
+
+
+-------------
+obj=vehicle
+name=MR_e20_front
+copyright=mobo
+waytype=track
+engine_type=electric
+power=1000
+freight=Passagiere
+speed=120
+cost=800000
+weight=65
+RunningCost=2000
+intro_year = 1929
+intro_month = 1
+retire_year = 2200
+payload=26
+length=12
+#Constraint[Prev][0]=none
+#Constraint[Next][0]=MRpasscar2_long
+#Constraint[Next][1]=MRpasscar2_double
+EmptyImage[S]=passcar5.0.0
+EmptyImage[E]=passcar5.0.1
+EmptyImage[N]=passcar5.0.2
+EmptyImage[W]=passcar5.0.3
+
+EmptyImage[NE]=passcar5.0.4
+EmptyImage[SW]=passcar5.0.5
+EmptyImage[SE]=passcar5.0.6
+EmptyImage[NW]=passcar5.0.7
+---------
+obj=vehicle
+name=MR_e20_end
+copyright=mobo
+waytype=track
+engine_type=electric
+power=900
+freight=Passagiere
+speed=120
+cost=800000
+weight=65
+RunningCost=2000
+intro_year = 1929
+intro_month = 1
+retire_year = 2200
+payload=26
+length=12
+#Constraint[Prev][0]=MRpasscar2_long
+#Constraint[Prev][1]=MRpasscar2_double
+#Constraint[Next][0]=none
+EmptyImage[S]=passcar5.1.0
+EmptyImage[E]=passcar5.1.1
+EmptyImage[N]=passcar5.1.2
+EmptyImage[W]=passcar5.1.3
+
+EmptyImage[NE]=passcar5.1.4
+EmptyImage[SW]=passcar5.1.5
+EmptyImage[SE]=passcar5.1.6
+EmptyImage[NW]=passcar5.1.7
+----------------------
+
+
+
+

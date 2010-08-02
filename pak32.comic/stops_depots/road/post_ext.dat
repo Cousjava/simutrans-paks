@@ -1,0 +1,15 @@
+----------------
+Obj=building
+Name=Briefkasten
+NoInfo=1
+copyright=mobo
+intro_year = 1810
+intro_month = 1
+type=extension
+waytype=road
+enables_post=1
+cursor=post.1.0
+icon=> ../../buttons/roadbuttons.2.3
+BackImage[0][0][0][0][0][0]=post.1.0
+BackImage[0][0][0][0][0][1]=post.3.0
+----------------

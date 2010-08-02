@@ -1,0 +1,75 @@
+# Hajo: Hack: if image name starts with "> " then this
+# image is treated unzoomeable
+
+Obj=menu
+name=MainMenu
+Image[0]=> main-menu.0.0
+Image[1]=> main-menu.0.1
+Image[2]=> main-menu.0.2
+Image[3]=> main-menu.0.3
+Image[4]=> main-menu.0.4
+Image[5]=> main-menu.0.5
+Image[6]=> main-menu.0.6
+Image[7]=> main-menu.0.7
+Image[8]=> main-menu.0.8
+Image[9]=> main-menu.0.9
+Image[10]=> main-menu.0.10
+#Image[11]=> main-menu.0.11
+--------------------
+Obj=menu
+name=SlopeTools
+Image[0]=> slope-tool.0.0
+Image[1]=> slope-tool.0.1
+Image[2]=> slope-tool.0.2
+Image[3]=> slope-tool.0.3
+Image[4]=> slope-tool.1.0
+Image[5]=> slope-tool.1.1
+Image[6]=> slope-tool.1.2
+Image[7]=> slope-tool.1.3
+Image[8]=> slope-tool.0.4
+Image[9]=> slope-tool.1.4
+--------------------
+Obj=menu
+name=ColorMenu
+Image[0]=> ls-symbols.0.6
+--------------------
+Obj=menu
+name=ListTools
+Image[0]=> list-tool.0.0
+Image[1]=> list-tool.0.1
+Image[2]=> list-tool.0.2
+Image[3]=> list-tool.0.3
+Image[4]=> list-tool.0.4
+Image[5]=> list-tool.0.5
+--------------------
+Obj=menu
+name=SpecialTools
+Image[0]=> special_tool_icons.0.0
+Image[1]=> -
+Image[2]=> special_tool_icons.0.2
+Image[3]=> special_tool_icons.0.3
+Image[4]=> special_tool_icons.0.4
+Image[5]=> special_tool_icons.1.0
+Image[6]=> special_tool_icons.1.1
+--------------------
+Obj=menu
+name=EditTools
+Image[0]=> edit-menu.0.0
+Image[1]=> edit-menu.0.1
+Image[2]=> edit-menu.0.2
+Image[3]=> edit-menu.0.3
+Image[4]=> edit-menu.1.3
+Image[5]=> edit-menu.1.1
+Image[6]=> edit-menu.1.0
+# the five remover - Streckenabriß
+Image[7]=> StrAbriss_Buttons.0.0
+Image[8]=> StrAbriss_Buttons.0.1
+Image[9]=> StrAbriss_Buttons.0.3
+Image[10]=> StrAbriss_Buttons.0.4
+Image[11]=> StrAbriss_Buttons.0.5
+--------------------
+Obj=menu
+name=ShipTools
+Image[0]=> shiptools.0.0
+Image[1]=> shiptools.0.0
+--------------------

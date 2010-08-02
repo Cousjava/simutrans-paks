@@ -1,0 +1,644 @@
+#locos
+#steamer 9 steamers by raven
+--------------------------
+obj=vehicle
+name=steamer1
+copyright=raven
+waytype=track
+engine_type=steam
+freight=None
+smoke=Steam
+speed=45
+cost=1800000
+weight=14
+power=300
+RunningCost=150
+sound=3
+intro_year = 1850
+intro_month = 1
+retire_year = 1930
+#Constraint[Prev][0]=none
+#Constraint[Next][0]=EinheitsTender
+EmptyImage[S]=steamers.0.0
+EmptyImage[E]=steamers.0.1
+EmptyImage[N]=steamers.0.2
+EmptyImage[W]=steamers.0.3
+
+EmptyImage[NE]=steamers.0.4
+EmptyImage[SW]=steamers.0.5
+EmptyImage[SE]=steamers.0.6
+EmptyImage[NW]=steamers.0.7
+----------------------------
+obj=vehicle
+name=steamer2
+copyright=raven
+waytype=track
+engine_type=steam
+freight=None
+smoke=Steam
+speed=60
+cost=2200000
+weight=18
+power=410
+RunningCost=200
+#sound=3
+intro_year = 1890
+intro_month = 1
+retire_year = 1936
+#Constraint[Prev][0]=none
+#Constraint[Next][0]=EinheitsTender
+EmptyImage[S]=steamers.1.0
+EmptyImage[E]=steamers.1.1
+EmptyImage[N]=steamers.1.2
+EmptyImage[W]=steamers.1.3
+
+EmptyImage[NE]=steamers.1.4
+EmptyImage[SW]=steamers.1.5
+EmptyImage[SE]=steamers.1.6
+EmptyImage[NW]=steamers.1.7
+--------------
+obj=vehicle
+name=steamer3
+copyright=raven
+waytype=track
+engine_type=steam
+freight=None
+smoke=Steam
+speed=75
+cost=3000000
+weight=22
+power=550
+RunningCost=280
+#sound=3
+intro_year = 1900
+intro_month = 1
+retire_year = 1940
+#Constraint[Prev][0]=none
+#Constraint[Next][0]=EinheitsTender
+EmptyImage[S]=steamers.2.0
+EmptyImage[E]=steamers.2.1
+EmptyImage[N]=steamers.2.2
+EmptyImage[W]=steamers.2.3
+
+EmptyImage[NE]=steamers.2.4
+EmptyImage[SW]=steamers.2.5
+EmptyImage[SE]=steamers.2.6
+EmptyImage[NW]=steamers.2.7
+-------------------
+obj=vehicle
+name=steamer4
+copyright=raven
+waytype=track
+engine_type=steam
+freight=None
+smoke=Steam
+speed=80
+cost=3600000
+weight=22
+power=580
+RunningCost=280
+sound=3
+intro_year = 1904
+intro_month = 1
+retire_year = 1942
+#Constraint[Prev][0]=none
+#Constraint[Next][0]=EinheitsTender
+EmptyImage[S]=steamers.3.0
+EmptyImage[E]=steamers.3.1
+EmptyImage[N]=steamers.3.2
+EmptyImage[W]=steamers.3.3
+
+EmptyImage[NE]=steamers.3.4
+EmptyImage[SW]=steamers.3.5
+EmptyImage[SE]=steamers.3.6
+EmptyImage[NW]=steamers.3.7
+----------------------
+obj=vehicle
+name=steamer5
+copyright=raven
+waytype=track
+engine_type=steam
+freight=None
+smoke=Steam
+speed=90
+cost=4100000
+weight=25
+power=600
+RunningCost=310
+#sound=3
+intro_year = 1912
+intro_month = 1
+retire_year = 1950
+#Constraint[Prev][0]=none
+#Constraint[Next][0]=EinheitsTender
+EmptyImage[S]=steamers.4.0
+EmptyImage[E]=steamers.4.1
+EmptyImage[N]=steamers.4.2
+EmptyImage[W]=steamers.4.3
+
+EmptyImage[NE]=steamers.4.4
+EmptyImage[SW]=steamers.4.5
+EmptyImage[SE]=steamers.4.6
+EmptyImage[NW]=steamers.4.7
+------
+
+-----------------
+obj=vehicle
+name=steamer8
+copyright=raven
+waytype=track
+engine_type=steam
+freight=None
+smoke=Steam
+speed=100
+cost=4500000
+weight=25
+power=640
+RunningCost=350
+#sound=3
+intro_year = 1919
+intro_month = 1
+retire_year = 1956
+#Constraint[Prev][0]=none
+#Constraint[Next][0]=EinheitsTender
+EmptyImage[S]=steamers.7.0
+EmptyImage[E]=steamers.7.1
+EmptyImage[N]=steamers.7.2
+EmptyImage[W]=steamers.7.3
+
+EmptyImage[NE]=steamers.7.4
+EmptyImage[SW]=steamers.7.5
+EmptyImage[SE]=steamers.7.6
+EmptyImage[NW]=steamers.7.7
+-----------------
+-------------
+
+----------------
+
+
+
+
+
+#locos
+#diesel
+------------------------
+obj=vehicle
+name=Freight_Diesel_01
+copyright=mobo
+waytype=track
+engine_type=diesel
+freight=None
+smoke=Diesel
+speed=80
+cost=3600000
+weight=100
+power=10000
+RunningCost=750
+#sound=3
+length=8
+intro_year = 1990
+intro_month = 1
+#retire_year = 1975
+#Constraint[Prev][0]=none
+#Constraint[Next][0]=EinheitsTender
+EmptyImage[S]=loco_diesel_freight.1.0
+EmptyImage[E]=loco_diesel_freight.1.1
+EmptyImage[N]=loco_diesel_freight.1.2
+EmptyImage[W]=loco_diesel_freight.1.3
+
+EmptyImage[NE]=loco_diesel_freight.1.4
+EmptyImage[SW]=loco_diesel_freight.1.5
+EmptyImage[SE]=loco_diesel_freight.1.6
+EmptyImage[NW]=loco_diesel_freight.1.7
+--------------------
+obj=vehicle
+name=Freight_Diesel_02
+copyright=mobo
+waytype=track
+engine_type=diesel
+freight=None
+smoke=Diesel
+speed=70
+cost=3600000
+weight=100
+power=9000
+RunningCost=750
+#sound=3
+length=12
+intro_year = 1990
+intro_month = 1
+#retire_year = 1975
+#Constraint[Prev][0]=none
+#Constraint[Next][0]=EinheitsTender
+EmptyImage[S]=loco_diesel_freight.2.0
+EmptyImage[E]=loco_diesel_freight.2.1
+EmptyImage[N]=loco_diesel_freight.2.2
+EmptyImage[W]=loco_diesel_freight.2.3
+
+EmptyImage[NE]=loco_diesel_freight.2.4
+EmptyImage[SW]=loco_diesel_freight.2.5
+EmptyImage[SE]=loco_diesel_freight.2.6
+EmptyImage[NW]=loco_diesel_freight.2.7
+--------------------
+obj=vehicle
+name=Freight_Diesel_03
+copyright=mobo
+waytype=track
+engine_type=diesel
+freight=None
+smoke=Diesel
+speed=50
+cost=3600000
+weight=100
+power=1200
+RunningCost=750
+#sound=3
+length=8
+intro_year = 1990
+intro_month = 1
+#retire_year = 1975
+#Constraint[Prev][0]=none
+#Constraint[Next][0]=EinheitsTender
+EmptyImage[S]=loco_diesel_freight.3.0
+EmptyImage[E]=loco_diesel_freight.3.1
+EmptyImage[N]=loco_diesel_freight.3.2
+EmptyImage[W]=loco_diesel_freight.3.3
+
+EmptyImage[NE]=loco_diesel_freight.3.4
+EmptyImage[SW]=loco_diesel_freight.3.5
+EmptyImage[SE]=loco_diesel_freight.3.6
+EmptyImage[NW]=loco_diesel_freight.3.7
+--------------------
+obj=vehicle
+name=Freight_Diesel_04
+copyright=mobo
+waytype=track
+engine_type=diesel
+freight=None
+smoke=Diesel
+speed=70
+cost=3600000
+weight=100
+power=9000
+RunningCost=750
+#sound=3
+length=12
+intro_year = 1990
+intro_month = 1
+#retire_year = 1975
+#Constraint[Prev][0]=none
+#Constraint[Next][0]=EinheitsTender
+EmptyImage[S]=loco_diesel_freight.4.0
+EmptyImage[E]=loco_diesel_freight.4.1
+EmptyImage[N]=loco_diesel_freight.4.2
+EmptyImage[W]=loco_diesel_freight.4.3
+
+EmptyImage[NE]=loco_diesel_freight.4.4
+EmptyImage[SW]=loco_diesel_freight.4.5
+EmptyImage[SE]=loco_diesel_freight.4.6
+EmptyImage[NW]=loco_diesel_freight.4.7
+--------------------------
+#like gp 40/40-2
+--------------------
+obj=vehicle
+name=Freight_Diesel_05
+copyright=mobo
+waytype=track
+engine_type=diesel
+freight=None
+smoke=Diesel
+speed=70
+cost=3600000
+weight=100
+power=3000
+RunningCost=750
+#sound=3
+length=12
+intro_year = 1965
+intro_month = 1
+retire_year = 1986
+#Constraint[Prev][0]=none
+#Constraint[Next][0]=EinheitsTender
+EmptyImage[S]=loco_diesel_freight.5.0
+EmptyImage[E]=loco_diesel_freight.5.1
+EmptyImage[N]=loco_diesel_freight.5.2
+EmptyImage[W]=loco_diesel_freight.5.3
+
+EmptyImage[NE]=loco_diesel_freight.5.4
+EmptyImage[SW]=loco_diesel_freight.5.5
+EmptyImage[SE]=loco_diesel_freight.5.6
+EmptyImage[NW]=loco_diesel_freight.5.7
+--------------------
+obj=vehicle
+name=Freight_Diesel_06
+copyright=mobo
+waytype=track
+engine_type=diesel
+freight=None
+smoke=Diesel
+speed=70
+cost=3600000
+weight=100
+power=9000
+RunningCost=750
+#sound=3
+length=12
+intro_year = 1990
+intro_month = 1
+#retire_year = 1975
+#Constraint[Prev][0]=none
+#Constraint[Next][0]=EinheitsTender
+EmptyImage[S]=loco_diesel_freight.6.0
+EmptyImage[E]=loco_diesel_freight.6.1
+EmptyImage[N]=loco_diesel_freight.6.2
+EmptyImage[W]=loco_diesel_freight.6.3
+
+EmptyImage[NE]=loco_diesel_freight.6.4
+EmptyImage[SW]=loco_diesel_freight.6.5
+EmptyImage[SE]=loco_diesel_freight.6.6
+EmptyImage[NW]=loco_diesel_freight.6.7
+--------------------------
+--------------------------
+obj=vehicle
+name=Galant D 120
+copyright=Alexander Brose
+waytype=track
+engine_type=diesel
+freight=None
+smoke=Diesel
+speed=120
+cost=3600000
+weight=100
+power=3800
+RunningCost=750
+#sound=3
+length=12
+intro_year = 1950
+intro_month = 1
+retire_year = 1975
+#Constraint[Prev][0]=none
+#Constraint[Next][0]=EinheitsTender
+EmptyImage[S]=loco_diesel.2.0
+EmptyImage[E]=loco_diesel.2.1
+EmptyImage[N]=loco_diesel.2.2
+EmptyImage[W]=loco_diesel.2.3
+
+EmptyImage[NE]=loco_diesel.2.4
+EmptyImage[SW]=loco_diesel.2.5
+EmptyImage[SE]=loco_diesel.2.6
+EmptyImage[NW]=loco_diesel.2.7
+--------------------------
+obj=vehicle
+name=Galant D 150
+copyright=Alexander Brose
+waytype=track
+engine_type=diesel
+freight=None
+smoke=Diesel
+speed=150
+cost=3600000
+weight=100
+power=3100
+RunningCost=750
+#sound=3
+length=12
+intro_year = 1950
+intro_month = 1
+retire_year = 1975
+#Constraint[Prev][0]=none
+#Constraint[Next][0]=EinheitsTender
+EmptyImage[S]=loco_diesel.3.0
+EmptyImage[E]=loco_diesel.3.1
+EmptyImage[N]=loco_diesel.3.2
+EmptyImage[W]=loco_diesel.3.3
+
+EmptyImage[NE]=loco_diesel.3.4
+EmptyImage[SW]=loco_diesel.3.5
+EmptyImage[SE]=loco_diesel.3.6
+EmptyImage[NW]=loco_diesel.3.7
+
+--------------------------------
+#electric locos
+-----------------------------
+obj=vehicle
+name=electric_engine
+copyright=mobo
+waytype=track
+engine_type=electric
+freight=None
+speed=60
+cost=3600000
+weight=37
+power=400
+RunningCost=450
+sound=3
+intro_year = 1905
+intro_month = 1
+retire_year = 1938
+#Constraint[Prev][0]=none
+#Constraint[Next][0]=EinheitsTender
+length=8
+EmptyImage[S]=loco_electric.1.0
+EmptyImage[E]=loco_electric.1.1
+EmptyImage[N]=loco_electric.1.2
+EmptyImage[W]=loco_electric.1.3
+
+EmptyImage[NE]=loco_electric.1.4
+EmptyImage[SW]=loco_electric.1.5
+EmptyImage[SE]=loco_electric.1.6
+EmptyImage[NW]=loco_electric.1.7
+-------------------------------
+obj=vehicle
+name=electric_engine2
+copyright=mobo
+waytype=track
+engine_type=electric
+freight=None
+speed=80
+cost=3600000
+weight=59
+power=750
+RunningCost=450
+#sound=3
+intro_year = 1914
+intro_month = 1
+retire_year = 1942
+#Constraint[Prev][0]=none
+#Constraint[Next][0]=EinheitsTender
+length=12
+EmptyImage[S]=loco_electric.2.0
+EmptyImage[E]=loco_electric.2.1
+EmptyImage[N]=loco_electric.2.2
+EmptyImage[W]=loco_electric.2.3
+
+EmptyImage[NE]=loco_electric.2.4
+EmptyImage[SW]=loco_electric.2.5
+EmptyImage[SE]=loco_electric.2.6
+EmptyImage[NW]=loco_electric.2.7
+----------------------------
+obj=vehicle
+name=electric_engine3
+copyright=mobo
+waytype=track
+engine_type=electric
+freight=None
+speed=95
+cost=5000000
+weight=80
+power=1100
+RunningCost=1200
+#sound=3
+intro_year = 1922
+intro_month = 1
+retire_year = 1942
+#Constraint[Prev][0]=none
+#Constraint[Next][0]=EinheitsTender
+length=12
+EmptyImage[S]=loco_electric.3.0
+EmptyImage[E]=loco_electric.3.1
+EmptyImage[N]=loco_electric.3.2
+EmptyImage[W]=loco_electric.3.3
+
+EmptyImage[NE]=loco_electric.3.4
+EmptyImage[SW]=loco_electric.3.5
+EmptyImage[SE]=loco_electric.3.6
+EmptyImage[NW]=loco_electric.3.7
+-----------------
+obj=vehicle
+name=electric_engine4
+copyright=mobo
+waytype=track
+engine_type=electric
+freight=None
+speed=120
+cost=6000000
+weight=80
+power=1400
+RunningCost=1200
+#sound=3
+intro_year = 1929
+intro_month = 1
+retire_year = 1942
+#Constraint[Prev][0]=none
+#Constraint[Next][0]=EinheitsTender
+length=12
+EmptyImage[S]=loco_electric.4.0
+EmptyImage[E]=loco_electric.4.1
+EmptyImage[N]=loco_electric.4.2
+EmptyImage[W]=loco_electric.4.3
+
+EmptyImage[NE]=loco_electric.4.4
+EmptyImage[SW]=loco_electric.4.5
+EmptyImage[SE]=loco_electric.4.6
+EmptyImage[NW]=loco_electric.4.7
+-------------------
+obj=vehicle
+name=electric_engine5
+copyright=mobo
+waytype=track
+engine_type=electric
+freight=None
+speed=140
+cost=5000000
+weight=80
+power=1850
+RunningCost=1200
+#sound=3
+intro_year = 1938
+intro_month = 1
+retire_year = 1942
+#Constraint[Prev][0]=none
+#Constraint[Next][0]=EinheitsTender
+length=12
+EmptyImage[S]=loco_electric.5.0
+EmptyImage[E]=loco_electric.5.1
+EmptyImage[N]=loco_electric.5.2
+EmptyImage[W]=loco_electric.5.3
+
+EmptyImage[NE]=loco_electric.5.4
+EmptyImage[SW]=loco_electric.5.5
+EmptyImage[SE]=loco_electric.5.6
+EmptyImage[NW]=loco_electric.5.7
+-------------------------
+obj=vehicle
+name=electric_test
+copyright=mobo
+waytype=track
+engine_type=electric
+freight=None
+speed=140
+cost=5000000
+weight=80
+power=1850
+RunningCost=1200
+#sound=3
+intro_year = 1938
+intro_month = 1
+retire_year = 1942
+#Constraint[Prev][0]=none
+#Constraint[Next][0]=EinheitsTender
+length=11
+EmptyImage[S]=loco_electric.12.0
+EmptyImage[E]=loco_electric.12.1
+EmptyImage[N]=loco_electric.12.2
+EmptyImage[W]=loco_electric.12.3
+
+EmptyImage[NE]=loco_electric.12.4
+EmptyImage[SW]=loco_electric.12.5
+EmptyImage[SE]=loco_electric.12.6
+EmptyImage[NW]=loco_electric.12.7
+--------------------
+#mailcar
+--------------------------
+obj=vehicle
+name=Mail_Car
+copyright=mobo
+waytype=track
+freight=Post
+speed=100
+cost=800000
+weight=8
+RunningCost=10
+intro_year = 1900
+intro_month = 1
+retire_year = 1930
+payload=30
+length=8
+EmptyImage[S]=train.2.0
+EmptyImage[E]=train.2.1
+EmptyImage[N]=train.2.2
+EmptyImage[W]=train.2.3
+
+EmptyImage[NE]=train.2.4
+EmptyImage[SW]=train.2.5
+EmptyImage[SE]=train.2.6
+EmptyImage[NW]=train.2.7
+---------------------------
+# coal car
+------------------------
+obj=vehicle
+name=coalcar
+copyright=mobo
+waytype=track
+freight=Kohle
+payload=15
+speed=60
+cost=260000
+weight=7
+RunningCost=8
+intro_year = 1900
+intro_month = 1
+retire_year = 1930
+#Constraint[Prev][0]=none
+#Constraint[Next][0]=EinheitsTender
+EmptyImage[S]=bulk_car.1.0
+EmptyImage[E]=bulk_car.1.1
+EmptyImage[N]=bulk_car.1.2
+EmptyImage[W]=bulk_car.1.3
+EmptyImage[NE]=bulk_car.1.4
+EmptyImage[SW]=bulk_car.1.5
+EmptyImage[SE]=bulk_car.1.6
+EmptyImage[NW]=bulk_car.1.7
+-------------------------------
+
+

@@ -1,0 +1,11 @@
+--------------------
+Obj=misc
+Name=PowerSource
+Image[0]=PowerSource.0.0
+Image[1]=PowerSource.0.1
+--------------------
+Obj=misc
+Name=PowerDest
+Image[0]=PowerSource.0.0
+Image[1]=PowerSource.0.1
+--------------------

@@ -1,0 +1,28 @@
+#Mailcar
+------------------------
+obj=vehicle
+name=Mailcar1
+engine_type=diesel 
+smoke=Diesel3
+copyright=Mobo
+waytype=road
+freight=Post
+payload=10
+speed=40
+cost=300000
+weight=2
+power=12
+RunningCost=26
+intro_year = 1900
+intro_month = 1
+retire_year = 1922
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=mail.0.0
+EmptyImage[N]=mail.0.2
+EmptyImage[E]=mail.0.1
+EmptyImage[W]=mail.0.3
+EmptyImage[SE]=mail.0.6
+EmptyImage[NW]=mail.0.7
+EmptyImage[NE]=mail.0.4
+EmptyImage[SW]=mail.0.5

@@ -1,0 +1,149 @@
+----------------
+obj=vehicle
+name=postsail
+waytype=water
+engine_type=sail
+#smoke=Diesel
+freight=Post
+payload=30
+speed=22
+cost=800000
+weight=6
+power=50
+RunningCost=10
+#sound=4
+intro_year = 1800
+intro_month = 1
+retire_year = 1990
+#gear=200
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=ship.0.0
+EmptyImage[E]=ship.0.1
+EmptyImage[N]=ship.0.2
+EmptyImage[W]=ship.0.3
+EmptyImage[NE]=ship.0.4
+EmptyImage[SW]=ship.0.5
+EmptyImage[SE]=ship.0.6
+EmptyImage[NW]=ship.0.7
+--------------------------
+obj=vehicle
+name=passengersail
+waytype=water
+engine_type=sail
+#smoke=Diesel
+freight=Passagiere
+payload=25
+speed=22
+cost=1000000
+weight=6
+power=50
+RunningCost=12
+#sound=4
+intro_year = 1800
+intro_month = 1
+retire_year = 1990
+#gear=200
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=ship.1.0
+EmptyImage[E]=ship.1.1
+EmptyImage[N]=ship.1.2
+EmptyImage[W]=ship.1.3
+EmptyImage[NE]=ship.1.4
+EmptyImage[SW]=ship.1.5
+EmptyImage[SE]=ship.1.6
+EmptyImage[NW]=ship.1.7
+
+
+
+
+----------------
+obj=vehicle
+name=SlowFerry
+waytype=water
+engine_type=diesel
+#smoke=Diesel
+freight=Passagiere
+payload=40
+speed=28
+cost=1800000
+weight=18
+power=150
+RunningCost=44
+#sound=4
+intro_year = 1890
+intro_month = 1
+retire_year = 1990
+#gear=200
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=ship.2.0
+EmptyImage[E]=ship.2.1
+EmptyImage[N]=ship.2.2
+EmptyImage[W]=ship.2.3
+EmptyImage[NE]=ship.2.4
+EmptyImage[SW]=ship.2.5
+EmptyImage[SE]=ship.2.6
+EmptyImage[NW]=ship.2.7
+-----------------------
+obj=vehicle
+name=SlowFerry2
+waytype=water
+engine_type=diesel
+#smoke=Diesel
+freight=Passagiere
+payload=55
+speed=30
+cost=2200000
+weight=20
+power=180
+RunningCost=65
+#sound=4
+intro_year = 1910
+intro_month = 1
+retire_year = 1990
+#gear=200
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=ship.3.0
+EmptyImage[E]=ship.3.1
+EmptyImage[N]=ship.3.2
+EmptyImage[W]=ship.3.3
+EmptyImage[NE]=ship.3.4
+EmptyImage[SW]=ship.3.5
+EmptyImage[SE]=ship.3.6
+EmptyImage[NW]=ship.3.7
+-------------------------
+
+
+#class b
+---------------------
+obj=vehicle
+name=ClassB_Ferry
+waytype=water
+engine_type=diesel
+#smoke=Diesel
+freight=Passagiere
+payload=112
+speed=34
+cost=4600000
+weight=40
+power=300
+RunningCost=150
+#sound=4
+intro_year = 1904
+intro_month = 3
+retire_year = 1990
+#gear=200
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=ship2.0.0
+EmptyImage[E]=ship2.0.1
+EmptyImage[N]=ship2.0.2
+EmptyImage[W]=ship2.0.3
+EmptyImage[NE]=ship2.0.4
+EmptyImage[SW]=ship2.0.5
+EmptyImage[SE]=ship2.0.6
+EmptyImage[NW]=ship2.0.7
+

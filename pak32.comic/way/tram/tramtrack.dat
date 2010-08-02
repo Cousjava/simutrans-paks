@@ -1,0 +1,36 @@
+--------------------
+Obj=way
+Name=tramtrack
+cost=8000
+maintenance=500
+topspeed=120
+max_weight=110
+intro_year = 1810
+intro_month = 9
+waytype=track
+system_type=7
+icon=> ../../buttons/trambuttons.0.0
+cursor=tramtrack1.1.4
+# rbis * animation
+Image[-]=tramtrack1.0.2
+Image[N]=tramtrack1.4.2
+Image[S]=tramtrack1.4.0
+Image[E]=tramtrack1.4.1
+Image[W]=tramtrack1.4.3
+Image[NS]=tramtrack1.0.0
+Image[EW]=tramtrack1.0.1
+Image[NSE]=tramtrack1.2.2
+Image[NSW]=tramtrack1.2.0
+Image[NEW]=tramtrack1.2.1
+Image[SEW]=tramtrack1.2.3
+Image[NSEW]=tramtrack1.0.2
+Image[NE]=tramtrack1.1.3
+Image[SE]=tramtrack1.1.1
+Image[NW]=tramtrack1.1.0
+Image[SW]=tramtrack1.1.2
+# hangtyp * animation
+ImageUp[3]=tramtrack1.3.2
+ImageUp[6]=tramtrack1.3.3
+ImageUp[9]=tramtrack1.3.1
+ImageUp[12]=tramtrack1.3.0
+--------------------

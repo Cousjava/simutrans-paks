@@ -1,0 +1,617 @@
+--------------------
+Obj=way
+Name=cobblestone_road
+cost=7000
+maintenance=680
+topspeed=70
+max_weight=40
+intro_year = 1200
+intro_month = 4
+waytype=road
+icon=> ../../buttons/roadbuttons.0.2
+cursor=csroad.1.4
+# rbis * animation
+Image[-][0]=csroad.0.2
+Image[N][0]=csroad.5.2
+Image[S][0]=csroad.5.0
+Image[E][0]=csroad.5.1
+Image[W][0]=csroad.5.3
+Image[NS][0]=csroad.0.0
+Image[EW][0]=csroad.0.1
+Image[NSE][0]=csroad.3.2
+Image[NSW][0]=csroad.3.0
+Image[NEW][0]=csroad.3.1
+Image[SEW][0]=csroad.3.3
+Image[NSEW][0]=csroad.0.2
+Image[NE][0]=csroad.1.3
+Image[SE][0]=csroad.1.1
+Image[NW][0]=csroad.1.0
+Image[SW][0]=csroad.1.2
+#Diagonals
+Diagonal[NE][0]=csroad.2.3
+Diagonal[SE][0]=csroad.2.1
+Diagonal[NW][0]=csroad.2.0
+Diagonal[SW][0]=csroad.2.2
+# hangtyp * animation
+ImageUp[3][0]=csroad.4.2
+ImageUp[6][0]=csroad.4.3
+ImageUp[9][0]=csroad.4.1
+ImageUp[12][0]=csroad.4.0
+
+# rbis * animation
+Image[-][1]=csroad.6.2
+Image[N][1]=csroad.11.2
+Image[S][1]=csroad.11.0
+Image[E][1]=csroad.11.1
+Image[W][1]=csroad.11.3
+Image[NS][1]=csroad.6.0
+Image[EW][1]=csroad.6.1
+Image[NSE][1]=csroad.9.2
+Image[NSW][1]=csroad.9.0
+Image[NEW][1]=csroad.9.1
+Image[SEW][1]=csroad.9.3
+Image[NSEW][1]=csroad.6.2
+Image[NE][1]=csroad.7.3
+Image[SE][1]=csroad.7.1
+Image[NW][1]=csroad.7.0
+Image[SW][1]=csroad.7.2
+#Diagonals
+Diagonal[NE][1]=csroad.8.3
+Diagonal[SE][1]=csroad.8.1
+Diagonal[NW][1]=csroad.8.0
+Diagonal[SW][1]=csroad.8.2
+# hangtyp * animation
+ImageUp[3][1]=csroad.10.2
+ImageUp[6][1]=csroad.10.3
+ImageUp[9][1]=csroad.10.1
+ImageUp[12][1]=csroad.10.0
+--------------------
+Obj=way
+Name=asphalt_road
+cost=10000
+maintenance=800
+topspeed=130
+max_weight=100
+intro_year = 1950
+intro_month = 7
+waytype=road
+icon=> ../../buttons/roadbuttons.0.4
+cursor=asroad.1.4
+# rbis * animation
+Image[-][0]=asroad.0.2
+Image[N][0]=asroad.5.2
+Image[S][0]=asroad.5.0
+Image[E][0]=asroad.5.1
+Image[W][0]=asroad.5.3
+Image[NS][0]=asroad.0.0
+Image[EW][0]=asroad.0.1
+Image[NSE][0]=asroad.3.2
+Image[NSW][0]=asroad.3.0
+Image[NEW][0]=asroad.3.1
+Image[SEW][0]=asroad.3.3
+Image[NSEW][0]=asroad.0.2
+Image[NE][0]=asroad.1.3
+Image[SE][0]=asroad.1.1
+Image[NW][0]=asroad.1.0
+Image[SW][0]=asroad.1.2
+#Diagonals
+Diagonal[NE][0]=asroad.2.3
+Diagonal[SE][0]=asroad.2.1
+Diagonal[NW][0]=asroad.2.0
+Diagonal[SW][0]=asroad.2.2
+# hangtyp * animation
+ImageUp[3][0]=asroad.4.2
+ImageUp[6][0]=asroad.4.3
+ImageUp[9][0]=asroad.4.1
+ImageUp[12][0]=asroad.4.0
+
+# rbis * animation
+Image[-][1]=asroad.6.2
+Image[N][1]=asroad.11.2
+Image[S][1]=asroad.11.0
+Image[E][1]=asroad.11.1
+Image[W][1]=asroad.11.3
+Image[NS][1]=asroad.6.0
+Image[EW][1]=asroad.6.1
+Image[NSE][1]=asroad.9.2
+Image[NSW][1]=asroad.9.0
+Image[NEW][1]=asroad.9.1
+Image[SEW][1]=asroad.9.3
+Image[NSEW][1]=asroad.6.2
+Image[NE][1]=asroad.7.3
+Image[SE][1]=asroad.7.1
+Image[NW][1]=asroad.7.0
+Image[SW][1]=asroad.7.2
+#Diagonals
+Diagonal[NE][1]=asroad.8.3
+Diagonal[SE][1]=asroad.8.1
+Diagonal[NW][1]=asroad.8.0
+Diagonal[SW][1]=asroad.8.2
+# hangtyp * animation
+ImageUp[3][1]=asroad.10.2
+ImageUp[6][1]=asroad.10.3
+ImageUp[9][1]=asroad.10.1
+ImageUp[12][1]=asroad.10.0
+-------------
+Obj=way
+Name=city_road
+cost=0
+# faster roads should be more expensive
+maintenance=300
+topspeed=50
+max_weight=100
+intro_year = 1935
+intro_month = 7
+waytype=road
+cursor=cityroad.1.4
+# rbis * animation
+Image[-][0]=cityroad.0.2
+Image[N][0]=cityroad.5.2
+Image[S][0]=cityroad.5.0
+Image[E][0]=cityroad.5.1
+Image[W][0]=cityroad.5.3
+Image[NS][0]=cityroad.0.0
+Image[EW][0]=cityroad.0.1
+Image[NSE][0]=cityroad.3.2
+Image[NSW][0]=cityroad.3.0
+Image[NEW][0]=cityroad.3.1
+Image[SEW][0]=cityroad.3.3
+Image[NSEW][0]=cityroad.0.2
+Image[NE][0]=cityroad.1.3
+Image[SE][0]=cityroad.1.1
+Image[NW][0]=cityroad.1.0
+Image[SW][0]=cityroad.1.2
+#Diagonals
+Diagonal[NE][0]=cityroad.2.3
+Diagonal[SE][0]=cityroad.2.1
+Diagonal[NW][0]=cityroad.2.0
+Diagonal[SW][0]=cityroad.2.2
+# hangtyp * animation
+ImageUp[3][0]=cityroad.4.2
+ImageUp[6][0]=cityroad.4.3
+ImageUp[9][0]=cityroad.4.1
+ImageUp[12][0]=cityroad.4.0
+
+# rbis * animation
+Image[-][1]=cityroad.6.2
+Image[N][1]=cityroad.11.2
+Image[S][1]=cityroad.11.0
+Image[E][1]=cityroad.11.1
+Image[W][1]=cityroad.11.3
+Image[NS][1]=cityroad.6.0
+Image[EW][1]=cityroad.6.1
+Image[NSE][1]=cityroad.9.2
+Image[NSW][1]=cityroad.9.0
+Image[NEW][1]=cityroad.9.1
+Image[SEW][1]=cityroad.9.3
+Image[NSEW][1]=cityroad.6.2
+Image[NE][1]=cityroad.7.3
+Image[SE][1]=cityroad.7.1
+Image[NW][1]=cityroad.7.0
+Image[SW][1]=cityroad.7.2
+#Diagonals
+Diagonal[NE][1]=cityroad.8.3
+Diagonal[SE][1]=cityroad.8.1
+Diagonal[NW][1]=cityroad.8.0
+Diagonal[SW][1]=cityroad.8.2
+# hangtyp * animation
+ImageUp[3][1]=cityroad.10.2
+ImageUp[6][1]=cityroad.10.3
+ImageUp[9][1]=cityroad.10.1
+ImageUp[12][1]=cityroad.10.0
+-------------------
+Obj=way
+Name=gavel_road
+cost=4000
+maintenance=200
+topspeed=40
+max_weight=30
+intro_year = 1650
+intro_month = 3
+waytype=road
+icon=> ../../buttons/roadbuttons.0.1
+cursor=gavelroad.1.4
+# rbis * animation
+Image[-][0]=gavelroad.0.2
+Image[N][0]=gavelroad.5.2
+Image[S][0]=gavelroad.5.0
+Image[E][0]=gavelroad.5.1
+Image[W][0]=gavelroad.5.3
+Image[NS][0]=gavelroad.0.0
+Image[EW][0]=gavelroad.0.1
+Image[NSE][0]=gavelroad.3.2
+Image[NSW][0]=gavelroad.3.0
+Image[NEW][0]=gavelroad.3.1
+Image[SEW][0]=gavelroad.3.3
+Image[NSEW][0]=gavelroad.0.2
+Image[NE][0]=gavelroad.1.3
+Image[SE][0]=gavelroad.1.1
+Image[NW][0]=gavelroad.1.0
+Image[SW][0]=gavelroad.1.2
+#Diagonals
+Diagonal[NE][0]=gavelroad.2.3
+Diagonal[SE][0]=gavelroad.2.1
+Diagonal[NW][0]=gavelroad.2.0
+Diagonal[SW][0]=gavelroad.2.2
+# hangtyp * animation
+ImageUp[3][0]=gavelroad.4.2
+ImageUp[6][0]=gavelroad.4.3
+ImageUp[9][0]=gavelroad.4.1
+ImageUp[12][0]=gavelroad.4.0
+
+# rbis * animation
+Image[-][1]=gavelroad.6.2
+Image[N][1]=gavelroad.11.2
+Image[S][1]=gavelroad.11.0
+Image[E][1]=gavelroad.11.1
+Image[W][1]=gavelroad.11.3
+Image[NS][1]=gavelroad.6.0
+Image[EW][1]=gavelroad.6.1
+Image[NSE][1]=gavelroad.9.2
+Image[NSW][1]=gavelroad.9.0
+Image[NEW][1]=gavelroad.9.1
+Image[SEW][1]=gavelroad.9.3
+Image[NSEW][1]=gavelroad.6.2
+Image[NE][1]=gavelroad.7.3
+Image[SE][1]=gavelroad.7.1
+Image[NW][1]=gavelroad.7.0
+Image[SW][1]=gavelroad.7.2
+#Diagonals
+Diagonal[NE][1]=gavelroad.8.3
+Diagonal[SE][1]=gavelroad.8.1
+Diagonal[NW][1]=gavelroad.8.0
+Diagonal[SW][1]=gavelroad.8.2
+# hangtyp * animation
+ImageUp[3][1]=gavelroad.10.2
+ImageUp[6][1]=gavelroad.10.3
+ImageUp[9][1]=gavelroad.10.1
+ImageUp[12][1]=gavelroad.10.0
+-------------------
+Obj=way
+Name=concrete_road
+cost=8000
+maintenance=500
+topspeed=100
+max_weight=30
+intro_year = 1925
+waytype=road
+icon=> ../../buttons/roadbuttons.0.3
+cursor=concreteroad.1.4
+# rbis * animation
+Image[-][0]=concreteroad.0.2
+Image[N][0]=concreteroad.5.2
+Image[S][0]=concreteroad.5.0
+Image[E][0]=concreteroad.5.1
+Image[W][0]=concreteroad.5.3
+Image[NS][0]=concreteroad.0.0
+Image[EW][0]=concreteroad.0.1
+Image[NSE][0]=concreteroad.3.2
+Image[NSW][0]=concreteroad.3.0
+Image[NEW][0]=concreteroad.3.1
+Image[SEW][0]=concreteroad.3.3
+Image[NSEW][0]=concreteroad.0.2
+Image[NE][0]=concreteroad.1.3
+Image[SE][0]=concreteroad.1.1
+Image[NW][0]=concreteroad.1.0
+Image[SW][0]=concreteroad.1.2
+#Diagonals
+Diagonal[NE][0]=concreteroad.2.3
+Diagonal[SE][0]=concreteroad.2.1
+Diagonal[NW][0]=concreteroad.2.0
+Diagonal[SW][0]=concreteroad.2.2
+# hangtyp * animation
+ImageUp[3][0]=concreteroad.4.2
+ImageUp[6][0]=concreteroad.4.3
+ImageUp[9][0]=concreteroad.4.1
+ImageUp[12][0]=concreteroad.4.0
+
+# rbis * animation
+Image[-][1]=concreteroad.6.2
+Image[N][1]=concreteroad.11.2
+Image[S][1]=concreteroad.11.0
+Image[E][1]=concreteroad.11.1
+Image[W][1]=concreteroad.11.3
+Image[NS][1]=concreteroad.6.0
+Image[EW][1]=concreteroad.6.1
+Image[NSE][1]=concreteroad.9.2
+Image[NSW][1]=concreteroad.9.0
+Image[NEW][1]=concreteroad.9.1
+Image[SEW][1]=concreteroad.9.3
+Image[NSEW][1]=concreteroad.6.2
+Image[NE][1]=concreteroad.7.3
+Image[SE][1]=concreteroad.7.1
+Image[NW][1]=concreteroad.7.0
+Image[SW][1]=concreteroad.7.2
+#Diagonals
+Diagonal[NE][1]=concreteroad.8.3
+Diagonal[SE][1]=concreteroad.8.1
+Diagonal[NW][1]=concreteroad.8.0
+Diagonal[SW][1]=concreteroad.8.2
+# hangtyp * animation
+ImageUp[3][1]=concreteroad.10.2
+ImageUp[6][1]=concreteroad.10.3
+ImageUp[9][1]=concreteroad.10.1
+ImageUp[12][1]=concreteroad.10.0
+--------------------
+Obj=way
+Name=dirt_road
+cost=2000
+maintenance=100
+topspeed=25
+max_weight=15
+intro_year = 1
+intro_month = 1
+waytype=road
+icon=> ../../buttons/roadbuttons.0.0
+cursor=dirtroad.1.4
+# rbis * animation
+Image[-][0]=dirtroad.0.2
+Image[N][0]=dirtroad.5.2
+Image[S][0]=dirtroad.5.0
+Image[E][0]=dirtroad.5.1
+Image[W][0]=dirtroad.5.3
+Image[NS][0]=dirtroad.0.0
+Image[EW][0]=dirtroad.0.1
+Image[NSE][0]=dirtroad.3.2
+Image[NSW][0]=dirtroad.3.0
+Image[NEW][0]=dirtroad.3.1
+Image[SEW][0]=dirtroad.3.3
+Image[NSEW][0]=dirtroad.0.2
+Image[NE][0]=dirtroad.1.3
+Image[SE][0]=dirtroad.1.1
+Image[NW][0]=dirtroad.1.0
+Image[SW][0]=dirtroad.1.2
+#Diagonals
+Diagonal[NE][0]=dirtroad.2.3
+Diagonal[SE][0]=dirtroad.2.1
+Diagonal[NW][0]=dirtroad.2.0
+Diagonal[SW][0]=dirtroad.2.2
+# hangtyp * animation
+ImageUp[3][0]=dirtroad.4.2
+ImageUp[6][0]=dirtroad.4.3
+ImageUp[9][0]=dirtroad.4.1
+ImageUp[12][0]=dirtroad.4.0
+
+# rbis * animation
+Image[-][1]=dirtroad.6.2
+Image[N][1]=dirtroad.11.2
+Image[S][1]=dirtroad.11.0
+Image[E][1]=dirtroad.11.1
+Image[W][1]=dirtroad.11.3
+Image[NS][1]=dirtroad.6.0
+Image[EW][1]=dirtroad.6.1
+Image[NSE][1]=dirtroad.9.2
+Image[NSW][1]=dirtroad.9.0
+Image[NEW][1]=dirtroad.9.1
+Image[SEW][1]=dirtroad.9.3
+Image[NSEW][1]=dirtroad.6.2
+Image[NE][1]=dirtroad.7.3
+Image[SE][1]=dirtroad.7.1
+Image[NW][1]=dirtroad.7.0
+Image[SW][1]=dirtroad.7.2
+#Diagonals
+Diagonal[NE][1]=dirtroad.8.3
+Diagonal[SE][1]=dirtroad.8.1
+Diagonal[NW][1]=dirtroad.8.0
+Diagonal[SW][1]=dirtroad.8.2
+# hangtyp * animation
+ImageUp[3][1]=dirtroad.10.2
+ImageUp[6][1]=dirtroad.10.3
+ImageUp[9][1]=dirtroad.10.1
+ImageUp[12][1]=dirtroad.10.0
+-------------------------
+#Tunnel
+------------------------
+obj=tunnel
+name=p32c_RoadTunnel_1
+waytype=road
+topspeed=60
+cost=87000
+maintenance=5000
+intro_year=1870
+#retire_year=1960
+icon=> ../../buttons/roadbuttons.3.1
+cursor=roadtunnel.1.2
+BackImage[N][0]=roadtunnel.1.0
+FrontImage[N][0]=roadtunnel.0.0
+BackImage[W][0]=roadtunnel.1.1
+FrontImage[W][0]=roadtunnel.0.1
+BackImage[S][0]=roadtunnel.0.2
+FrontImage[S][0]=roadtunnel.0.2
+BackImage[E][0]=roadtunnel.0.3
+FrontImage[E][0]=roadtunnel.0.3
+-----------------
+#pedestrian
+--------------
+Obj=pedestrian
+Name=fussg01
+DistributionWeight=3
+Image[S]=pedestrian_32.0.0
+Image[E]=pedestrian_32.0.2
+Image[SE]=pedestrian_32.0.4
+Image[SW]=pedestrian_32.0.7
+Image[N]=pedestrian_32.0.1
+Image[W]=pedestrian_32.0.3
+Image[NW]=pedestrian_32.0.5
+Image[NE]=pedestrian_32.0.6
+---
+Obj=pedestrian
+Name=fussg02
+DistributionWeight=3
+Image[S]=pedestrian_32.1.0
+Image[E]=pedestrian_32.1.2
+Image[SE]=pedestrian_32.1.4
+Image[SW]=pedestrian_32.1.7
+Image[N]=pedestrian_32.1.1
+Image[W]=pedestrian_32.1.3
+Image[NW]=pedestrian_32.1.5
+Image[NE]=pedestrian_32.1.6
+---
+Obj=pedestrian
+Name=fussg03
+DistributionWeight=3
+Image[S]=pedestrian_32.2.0
+Image[E]=pedestrian_32.2.2
+Image[SE]=pedestrian_32.2.4
+Image[SW]=pedestrian_32.2.7
+Image[N]=pedestrian_32.2.1
+Image[W]=pedestrian_32.2.3
+Image[NW]=pedestrian_32.2.5
+Image[NE]=pedestrian_32.2.6
+---
+Obj=pedestrian
+Name=fussg04
+DistributionWeight=3
+Image[S]=pedestrian_32.3.0
+Image[E]=pedestrian_32.3.2
+Image[SE]=pedestrian_32.3.4
+Image[SW]=pedestrian_32.3.7
+Image[N]=pedestrian_32.3.1
+Image[W]=pedestrian_32.3.3
+Image[NW]=pedestrian_32.3.5
+Image[NE]=pedestrian_32.3.6
+---
+Obj=pedestrian
+Name=fussg05
+DistributionWeight=3
+Image[S]=pedestrian_32.4.0
+Image[E]=pedestrian_32.4.2
+Image[SE]=pedestrian_32.4.4
+Image[SW]=pedestrian_32.4.7
+Image[N]=pedestrian_32.4.1
+Image[W]=pedestrian_32.4.3
+Image[NW]=pedestrian_32.4.5
+Image[NE]=pedestrian_32.4.6
+---
+Obj=pedestrian
+Name=fussg06
+DistributionWeight=3
+Image[S]=pedestrian_32.5.0
+Image[E]=pedestrian_32.5.2
+Image[SE]=pedestrian_32.5.4
+Image[SW]=pedestrian_32.5.7
+Image[N]=pedestrian_32.5.1
+Image[W]=pedestrian_32.5.3
+Image[NW]=pedestrian_32.5.5
+Image[NE]=pedestrian_32.5.6
+---
+Obj=pedestrian
+Name=fussg07
+DistributionWeight=3
+Image[S]=pedestrian_32.6.0
+Image[E]=pedestrian_32.6.2
+Image[SE]=pedestrian_32.6.4
+Image[SW]=pedestrian_32.6.7
+Image[N]=pedestrian_32.6.1
+Image[W]=pedestrian_32.6.3
+Image[NW]=pedestrian_32.6.5
+Image[NE]=pedestrian_32.6.6
+---
+Obj=pedestrian
+Name=fussg08
+DistributionWeight=3
+Image[S]=pedestrian_32.7.0
+Image[E]=pedestrian_32.7.2
+Image[SE]=pedestrian_32.7.4
+Image[SW]=pedestrian_32.7.7
+Image[N]=pedestrian_32.7.1
+Image[W]=pedestrian_32.7.3
+Image[NW]=pedestrian_32.7.5
+Image[NE]=pedestrian_32.7.6
+------------------------
+#citicar
+----------------------
+Obj=citycar
+Name=red_car
+copyright=mobo
+intro_year = 1900
+intro_month = 2
+retire_year = 1982
+retire_month = 8
+speed = 60
+DistributionWeight=8
+Image[S]=citicar.0.0
+Image[N]=citicar.0.2
+Image[E]=citicar.0.1
+Image[W]=citicar.0.3
+Image[SE]=citicar.0.6
+Image[NW]=citicar.0.7
+Image[NE]=citicar.0.4
+Image[SW]=citicar.0.5
+----------------------
+Obj=citycar
+Name=purple_car
+copyright=mobo
+intro_year = 1900
+intro_month = 2
+retire_year = 1982
+retire_month = 8
+speed = 60
+DistributionWeight=4
+Image[S]=citicar.1.0
+Image[N]=citicar.1.2
+Image[E]=citicar.1.1
+Image[W]=citicar.1.3
+Image[SE]=citicar.1.6
+Image[NW]=citicar.1.7
+Image[NE]=citicar.1.4
+Image[SW]=citicar.1.5
+----------------------
+Obj=citycar
+Name=green_car
+copyright=mobo
+intro_year = 1900
+intro_month = 2
+retire_year = 1982
+retire_month = 8
+speed = 60
+DistributionWeight=8
+Image[S]=citicar.2.0
+Image[N]=citicar.2.2
+Image[E]=citicar.2.1
+Image[W]=citicar.2.3
+Image[SE]=citicar.2.6
+Image[NW]=citicar.2.7
+Image[NE]=citicar.2.4
+Image[SW]=citicar.2.5
+----------------------
+Obj=citycar
+Name=blue_car
+copyright=mobo
+intro_year = 1900
+intro_month = 2
+retire_year = 1982
+retire_month = 8
+speed = 60
+DistributionWeight=6
+Image[S]=citicar.3.0
+Image[N]=citicar.3.2
+Image[E]=citicar.3.1
+Image[W]=citicar.3.3
+Image[SE]=citicar.3.6
+Image[NW]=citicar.3.7
+Image[NE]=citicar.3.4
+Image[SW]=citicar.3.5
+----------------------
+Obj=citycar
+Name=white_car
+copyright=mobo
+intro_year = 1900
+intro_month = 2
+retire_year = 1982
+retire_month = 8
+speed = 60
+DistributionWeight=8
+Image[S]=citicar.4.0
+Image[N]=citicar.4.2
+Image[E]=citicar.4.1
+Image[W]=citicar.4.3
+Image[SE]=citicar.4.6
+Image[NW]=citicar.4.7
+Image[NE]=citicar.4.4
+Image[SW]=citicar.4.5
+
+
+
+
+
