@@ -8,6 +8,9 @@ DESTDIR  ?= simutrans
 PAKDIR   ?= $(DESTDIR)/pak
 DESTFILE ?= simupak64
 
+OUTSIDE :=
+OUTSIDE += ground
+
 DIRS64 :=
 DIRS64 += city_extra
 DIRS64 += com
@@ -37,7 +40,7 @@ DIRS128 :=
 DIRS128 += big-logo
 
 
-DIRS := $(DIRS64) $(DIRS128)
+DIRS := $(OUTSIDE) $(DIRS64) $(DIRS128)
 
 
 .PHONY: $(DIRS) copy tar zip
@@ -75,6 +78,15 @@ $(DIRS128):
 	@echo "===> PAK128 $@"
 	@mkdir -p $(PAKDIR)
 	@$(MAKEOBJ) quiet PAK128 $(PAKDIR)/ $@/ > /dev/null
+
+$(OUTSIDE):
+	@echo "===> OUTSIDE with REVISION and grounds"
+	@mkdir -p $(PAKDIR)
+	@echo -e -n "Obj=ground\nName=Outside\ncopyright=pak64 " >$@/outside.dat
+	@svn info | grep "Revision: " >>$@/outside.dat
+	@echo -e "Image[0][0]=outside.0.0\n-" >>$@/outside.dat
+	@$(MAKEOBJ) PAK64 $(PAKDIR)/ $@/ > /dev/null
+	@rm $@/outside.dat
 
 clean:
 	@echo "===> CLEAN"
