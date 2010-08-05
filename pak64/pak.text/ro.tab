@@ -5,7 +5,7 @@
 #                              Language: ro Romana                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 21.02 2010                           #
+#                           Date Created: 27.05 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                   - CDAndrei                                 #
@@ -44,10 +44,12 @@ A6_DOME
 Cathedral? gothic?\n
 COM_00_01
 Mic ABC\n
+COM_00_02
+Benzinãrie independentã\nEste independentã de marile\ncompanii de transport\n(cum ar fi a ta), dar nu e nevoie\nsã o distrugi. Nu î?i va fura\nafacerea.\n\n
 COM_00_03
-Repara?ii automobile\n
+Micul atelier de repara?ii auto\nvrea sa iasã din aceastã afacere\ndubioasã si sã deschidã un showroom.\nDar lipsa banilor\n, avizelor ?i \na unui loc mai bun îl impiedica.\n\n
 COM_00_05
-Banc?\n
+Bancã din viitor.\nE numitã a?a pentru ca\nnu trebuie sa intri în ea,\ndoar î?i sco?i portofelul\n?i îl arã?i automatului\ncare se ocupã de tranzac?ie.
 COM_00_06
 Cafenea\n
 COM_00_10

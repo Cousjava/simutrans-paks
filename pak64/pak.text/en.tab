@@ -5,7 +5,7 @@
 #                             Language: en English                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 21.02 2010                           #
+#                           Date Created: 30.05 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Alexander Brose - AlexB                           #
@@ -42,21 +42,27 @@
 #                                    note:                                     #
 #                          Susanna Björverud - Susanna                         #
 #                                    note:                                     #
+#                                   - TheHood                                  #
+#                                    note:                                     #
 #                           Timothy Baldock - Timothy                          #
 #                                    note:                                     #
 #                       Venkatesh Parthasarathy - Venkat                       #
 #                                    note:                                     #
 #                          Ignas Brasiskis - enternald                         #
 #note: I love simutrans. Reikalui esant teikite si?lymus Lietuvi? kalbai Simutr#
+#                               Florian - floppy                               #
+#                                    note:                                     #
 #                            Günter Beine - gebeine                            #
 #                        note: maintainer pak128.german                        #
 #                          James E. Petts - jamespetts                         #
 #  note: Maintainer for Simutrans-Experimental. Also works on Pak128.Britain.  #
 #                            Jonas Bushart - jonasbb                           #
-#                        note: developer SimuTranslator                        #
+#                                    note:                                     #
 #                              Markus Rex - msrex                              #
 #                                    note:                                     #
 #                              Tomá? Kube? - napik                             #
+#                                    note:                                     #
+#                                    - petter                                  #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
 #                                    note:                                     #
@@ -66,6 +72,8 @@
 #                                    note:                                     #
 #                               Sven Osada - sojo                              #
 #                         note: maintainer pak96.comic                         #
+#                              Xavier Paz - vilvoh                             #
+#                                    note:                                     #
 #                         Tomá? Vrbický - vrbicky_tomas                        #
 #                     note: Don´thurry up! Death is faster.                    #
 #                            Vladimír Slávik - vsys                            #
@@ -463,7 +471,7 @@ factory_Nutzwald_details
 factory_Oelbohrinsel_details
 <title>About oil rigs</title><h1>Oil rigs</h1><p>Second half of 20th century brought hunger for oil - consumption doubled every decade. Apart from land resources, sea offered also some oil deposits, although hard to reach.<br><br>Oil rigs are structures built to exploit these resources located in shelf areas (depth 0 to 200 meters). They are HUGE, but no one actually realizes it - most of the building is hidden under water surface. And also expensive to maintain. Columns that hold the platform are usually hollow and they also function as reservoir for oil.</p><p>The biggest oil rig in the world, Statfjord B, was built by Norway. Its weight is roughly 800,000 tonnes and height about 192 m. With tower the height increases by another 80 meters.</p>
 factory_Oelfeld_details
-<title>About Oilfields</title><h1>Oilfields</h1><p>Oil is a raw material which was used for paints, lubricants and also as a fuel for heating before the turn of 19th/20th century. Then it gained great importance with boom of combustion engine and automobiles.</p><p>Oil is a liquid consisting of numerous hydrocarbons. It is unclear how exactly the oil deposits came into being, probably it was a process similar to creating coal deposits but with some extra conditions - under high pressure & without oxygen. They are within depth of up to hundreds of meters. Oil is there usually found together with gas under high pressure, what eases pumping it to the surface.<p>
+<title>About Oilfields</title><h1>Oilfields</h1><p>Oil is a raw material which was used for paints, lubricants and also as a fuel for heating before the turn of 19th/20th century. Then it gained great importance with boom of combustion engine and automobiles.</p><p>Oil is a liquid consisting of numerous hydrocarbons. It is unclear how exactly the oil deposits came into being, probably it was a process similar to creating coal deposits but with some extra conditions - under high pressure & without oxygen. They are within depth of up to hundreds of meters. Oil is there usually found together with gas under high pressure, what eases pumping it to the surface.</p>
 factory_Rinnenkraftwerk_details
 <title>Parabolic Solar Power Plant Details</title><h1>Parabolic Solar Power Plant</h1><p>Sunlight is focused on a tube of oil using parabolic mirrors that follow the sun. The oil heats up to at least 300°C and goes through a heat exchanger to produce steam, which moves a turbine. Nine such power stations were built in California, but then a special tax was levied on solar electricity. At 384MW, they are by far the most powerful solar power stations.</p>
 factory_Stahlwerk_details
@@ -497,7 +505,7 @@ Chemical Plant
 CHEMIST
 Pharmacy
 Concretefactory
-Autoclaved Aerated Concrete Factory
+Concrete Mix Factory
 cow_farm
 Cattle Farm
 dairy

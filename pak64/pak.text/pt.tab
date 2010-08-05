@@ -5,7 +5,7 @@
 #                            Language: pt Portugues                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 21.02 2010                           #
+#                            Date Created: 5.08 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Frank Penz - FrankP                             #
@@ -17,6 +17,8 @@
 #                             Eric Oliveira - eric                             #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
+#                                    note:                                     #
+#                              Xavier Paz - vilvoh                             #
 #                                    note:                                     #
 #                                                                              #
 ################################################################################
@@ -37,7 +39,7 @@ Ponte de concreto protendido
 MonorailRamp
 Rampa de monotrilho
 PowerBridge
-"Ponte" para linha de transmissão
+Travessia para linha de transmissão
 Schiffhebewerk
 Canal elevado
 SteelRail

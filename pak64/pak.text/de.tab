@@ -5,7 +5,7 @@
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 21.02 2010                           #
+#                            Date Created: 5.08 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Alexander Brose - AlexB                           #
@@ -36,24 +36,40 @@
 #                                    note:                                     #
 #                              Jaroslaw - Jaroslaw                             #
 #                                    note:                                     #
+#                                   - Lemuria                                  #
+#                                    note:                                     #
 #                             Marcus Haupt - Marcus                            #
 #note: if I´m not available by email to proximity.de try mail@marcus-haupt.de (#
 #                        Constantin Grabowski - Moistboy                       #
 #                                    note:                                     #
+#                                   - Nico192                                  #
+#                                    note:                                     #
 #                                 compo - compo                                #
+#                                    note:                                     #
+#                               Florian - floppy                               #
 #                                    note:                                     #
 #                            Günter Beine - gebeine                            #
 #                        note: maintainer pak128.german                        #
 #                            Jonas Bushart - jonasbb                           #
-#                        note: developer SimuTranslator                        #
+#                                    note:                                     #
+#                                - jounior-fuchs                               #
+#                                    note:                                     #
 #                              Markus Rex - msrex                              #
+#                                    note:                                     #
+#                                    - petter                                  #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
 #                                    note:                                     #
 #                            Oliver Mayer - rakishly                           #
 #                                    note:                                     #
+#                                     - sdog                                   #
+#                                    note:                                     #
+#                                    - smu42                                   #
+#                                    note:                                     #
 #                               Sven Osada - sojo                              #
 #                         note: maintainer pak96.comic                         #
+#                                 - transporter                                #
+#                                    note:                                     #
 #                           Werner Brandt - wernieman                          #
 #                             note: Nightly creator                            #
 #                           Michael Olbricht - whoami                          #
@@ -545,7 +561,7 @@ factory_Nutzwald_details
 factory_Oelbohrinsel_details
 <title>Ölbohrinsel Details</title><h1>Ölbohrinsel</h1><p>Die Ölbohrinseln wurden in der 2. Hälfte des 20. Jahrhunderts entwickelt, als die Landressourcen den Ölbedarf nicht mehr decken konnten. Die Ölbohrinseln bohren riesige Öllagerstätten im Kontinentalschelf (0-200m unter dem Meer) an. Durch den dort vorherrschenden Druck kommt das Öl dann ohne menschliches Zutun in die Lager der Ölbohrinsel, die sich meist direkt über dem Meeresgrund befinden.</p>
 factory_Oelfeld_details
-<title>Über Ölfelder</title><h1>Ölfelder</h1><p>Öl ist ein Rohstoff, der für Lacke, Schmierstoffe und auch als Brennstoff für die Heizung bis zum Ende des 19. Jahrhunderts benutzt wurde. Danach wurde es sehr wichtig durch den Boom von Verbennungsmotoren und Autos.</p><p>Öl ist eine Flüssigkeit, bestehend aus mehreren Kolenwasserstoffen. Es ist unklar, wie genau die Ölvorkommen entstanden, wahrscheinlich war es ein ähnlicher Prozess wie bei Kohlevorkommen, aber mit einigen zusätzlichen Bedingungen - unter hohem Druck und ohne Sauerstoff. Sie liegen mehrere hundert Meter tief. Öl ist normalerweise zusammen mit Gas unter hohem Druck, was es erleichtert es mit Pumpen an die Oberfläche zu fördern.<p>
+<title>Über Ölfelder</title><h1>Ölfelder</h1><p>Öl ist ein Rohstoff, der für Lacke, Schmierstoffe und auch als Brennstoff für die Heizung bis zum Ende des 19. Jahrhunderts benutzt wurde. Danach wurde es sehr wichtig durch den Boom von Verbrennungsmotoren und Autos.</p><p>Öl ist eine Flüssigkeit, bestehend aus mehreren Kohlenwasserstoffen. Es ist unklar, wie genau die Ölvorkommen entstanden, wahrscheinlich war es ein ähnlicher Prozess wie bei Kohlevorkommen, aber mit einigen zusätzlichen Bedingungen - unter hohem Druck und ohne Sauerstoff. Sie liegen mehrere hundert Meter tief. Öl ist normalerweise zusammen mit Gas unter hohem Druck, was es erleichtert es mit Pumpen an die Oberfläche zu fördern.</p>
 factory_Oelkraftwerk_details
 <title>Ölkraftwerk Details</title><h1>Ölkraftwerk</h1><p>In den 50-60er Jahren war beschlossen worden, dass die Kohle für den Stahl benötigt wird und es wurden viele Ölkraftwerke gebaut. Auch lässt sich Öl besser auf kleinem Platz lagern.</p><p>Potenziell ist das Öl aber zu schade um es einfach so zu verbrennen: In Kombikraftwerken kann man erst eine Turbine antreiben und die Abwärme dann zu befeuern eines Ölkessels verwenden. So kommt man auf über 60% Wirkunggrad.</p>
 factory_Oelpumpe_details
@@ -610,8 +626,12 @@ grain_farm
 Getreidehof
 grain_mill
 Getreidemühle
+grain_windmill
+Windmühle
 Incinerator
 Müllverbrennungsanlage
+Marketplace
+Marktplatz
 Materialswholesale
 Baumarkt
 Moebelfabrik

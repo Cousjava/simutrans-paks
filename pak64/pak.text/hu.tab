@@ -5,12 +5,14 @@
 #                              Language: hu Magyar                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 21.02 2010                           #
+#                            Date Created: 5.08 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Frank Penz - FrankP                             #
 #                                    note:                                     #
 #                                   - LeitnerI                                 #
+#                                    note:                                     #
+#                                    - petter                                  #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
 #                                    note:                                     #
@@ -146,6 +148,8 @@ Feste
 Konuberts er?d.\n\nEzt az er?döt az 1400-as \névek körül építették.\n\n\n\n
 Fluid_StationBlg
 Víztároló
+FreightShipStop
+Teherhajó megálló
 FreightTrainStop
 Tehervonat megálló
 Gas_StationBlg
@@ -310,6 +314,8 @@ grain_farm
 Gabona mezõ
 grain_mill
 Malom
+grain_windmill
+Szélmalom
 Kohlegrube
 Szénbánya
 Kohlekraftwerk
@@ -418,6 +424,8 @@ waste
 szemét
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
+rocks
+Kövek
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Couple

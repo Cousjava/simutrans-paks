@@ -5,7 +5,7 @@
 #                              Language: pl Polski                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 21.02 2010                           #
+#                            Date Created: 3.05 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Frank Penz - FrankP                             #
@@ -15,6 +15,8 @@
 #                                     - Rivo                                   #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
+#                                    note:                                     #
+#                                 Kamil - qamil                                #
 #                                    note:                                     #
 #                                                                              #
 ################################################################################
@@ -414,6 +416,8 @@ Cementownia
 Refineria ropy
 3Raffinerie
 Rafineria
+Aufwindkraftwerk
+Wie¿a s³oneczna (elektrownia)
 Autohaus
 Salon samochodowy
 Autohersteller
@@ -480,6 +484,8 @@ Raffinerie
 Wytwórnia plastiku
 Saegewerk
 Tartak
+SaegewerkMHz
+Tartak
 Sandquarry
 Piaskownia
 Stahlwerk
@@ -489,7 +495,7 @@ Kamienio³om
 supermarket
 Supermarket
 TANKE
-Stacja paliw
+Stacja benzynowa
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
@@ -589,12 +595,16 @@ drewna
 choose_point
 Drogowskaz
 ChooseSignals
-Semafory
+Semafor wyboru peronu
 ChooseSignalsMonorail
-Semafory
+Semafor wyboru peronu
 Minimum80
 Prêdko¶æ minimalna 80km/h
+NoAirEntry
+Zakaz wjazdu (pas startowy)
 NoEntry
+Zakaz wjazdu
+RailClose
 Zakaz wjazdu
 Signals
 Semafory
