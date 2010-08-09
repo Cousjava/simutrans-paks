@@ -64,6 +64,7 @@ icon_height = 32
 # WKZ_REMOVE_WAYOBJ=33
 # WKZ_UNDERGROUND_PICK=34
 # WKZ_BUY_HOUSE=35
+# WKZ_CITYROAD=36
 #
 general_tool[0]=0,0,9,a
 general_tool[1]=1,1,14,r
@@ -437,7 +438,7 @@ toolbar[9][6]=dialog_tool[25],,^M
 toolbar[10][0]=general_tool[10],25,,+100
 toolbar[10][1]=general_tool[10],26,,-100
 toolbar[10][2]=general_tool[9]
-toolbar[10][3]=general_tool[14],27,,city_road
+toolbar[10][3]=general_tool[36],27,,
 toolbar[10][4]=simple_tool[3]
 toolbar[10][5]=dialog_tool[20]
 toolbar[10][6]=general_tool[26]
