@@ -1,0 +1,45 @@
+Obj=way-object
+Name=TramOverheadpower
+cost=1500
+maintenance=60
+topspeed=90
+intro_year = 1895
+waytype=tram_track
+own_waytype=electrified_track
+cursor=oberleitung_tram.2.1
+icon=> oberleitung_tram.2.0
+FrontImage[-]=oberleitung_tram.1.5
+FrontImage[N]=oberleitung_tram.1.8
+FrontImage[S]=oberleitung_tram.1.6
+FrontImage[E]=oberleitung_tram.1.7
+FrontImage[W]=oberleitung_tram.1.9
+FrontImage[NS]=oberleitung_tram.0.0
+FrontImage[EW]=oberleitung_tram.0.1
+FrontImage[NSE]=oberleitung_tram.1.3
+FrontImage[NSW]=oberleitung_tram.1.1
+FrontImage[NEW]=oberleitung_tram.1.2
+FrontImage[SEW]=oberleitung_tram.1.4
+FrontImage[NSEW]=oberleitung_tram.1.0
+FrontImage[NE]=oberleitung_tram.0.4
+FrontImage[SW]=oberleitung_tram.0.3
+FrontImage[NW]=oberleitung_tram.0.5
+FrontImage[SE]=oberleitung_tram.0.6
+FrontDiagonal[NE]=oberleitung_tram.2.7
+FrontDiagonal[SW]=oberleitung_tram.2.6
+FrontDiagonal[NW]=oberleitung_tram.2.8
+FrontDiagonal[SE]=oberleitung_tram.2.9
+FrontImageUp[3]=oberleitung_tram.2.4
+FrontImageUp[6]=oberleitung_tram.2.5
+FrontImageUp[9]=oberleitung_tram.2.3
+FrontImageUp[12]=oberleitung_tram.2.2
+# back images
+BackImage[-]=-
+BackDiagonal[NE]=-
+BackImageUp[3]=-
+-------------------------
+# back images
+# no back images ...
+#BackImage[-]=
+#BackDiagonal[NE]=-
+#BackImageUp[3]=-
+--------------------

@@ -1,0 +1,20 @@
+DEVELOPER
+
+this set require makeobj 50 
+
+*.bat -> Windows
+*.sh -> Linux
+
+copy makeobj 50 in this folder for run pak96.hh.bat/pak96.hh.sh
+
+for run pak96.hh-zip.bat copy the files from 7-Zip in folder _zip-prog
+
+***************************************
+PLAY
+
+This set use half hight map. 
+This require Simutrans 0.102.2.2 + simuttd_patch_v102-2-2.patch. 
+You must compile this program file.
+
+The patch set option half hight and change the 
+ground.Outside.pak to ground.Outside_.pak for pakselector.

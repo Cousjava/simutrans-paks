@@ -1,0 +1,35 @@
+# bay. D VI - DRG BR 98.75
+# Personenzuglokomotive
+#
+obj=vehicle
+name=bay_D_VI
+copyright=blackbox
+waytype=track
+engine_type=steam
+freight=None
+smoke=Steam
+#payload=
+power=293
+speed=45
+#gear=100
+weight=19
+length=4
+cost=1000000
+RunningCost=2081
+Sound=3
+#intro_year=1880
+intro_year=1866
+#intro_month=11
+intro_month=6
+retire_year=1938
+retire_month=6
+Constraint[Prev][0]=none
+EmptyImage[S]=loks_neu.3.1
+EmptyImage[E]=loks_neu.3.2
+EmptyImage[SE]=loks_neu.3.3
+EmptyImage[SW]=loks_neu.3.4
+EmptyImage[N]=loks_neu.3.5
+EmptyImage[W]=loks_neu.3.6
+EmptyImage[NW]=loks_neu.3.7
+EmptyImage[NE]=loks_neu.3.8
+----------------------------------------------------------------- 

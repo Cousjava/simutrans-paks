@@ -1,0 +1,17 @@
+--------------------
+Obj=building
+Name=TramDepot
+# must be 1*1
+type=depot
+waytype=tram_track
+level=1
+Dims=1,1,4
+NoInfo=1
+needs_ground=1
+FrontImage[0][0][0][0][0]=TramDepot.0.0
+FrontImage[1][0][0][0][0]=TramDepot.0.3
+FrontImage[2][0][0][0][0]=TramDepot.0.2
+FrontImage[3][0][0][0][0]=TramDepot.0.1
+icon=> TramDepot.0.4
+cursor=TramDepot.0.5
+--------------------

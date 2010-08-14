@@ -1,0 +1,17 @@
+Obj=building
+Name=BusStop
+# must be 1*1
+type=stop
+waytype=road
+enables_pax=1
+NoInfo=1
+Dims=1,1,2
+intro_year=1400
+level=1
+BackImage[0][0][0][0][0]=stationen.0.2
+FrontImage[0][0][0][0][0]=stationen.0.1
+BackImage[1][0][0][0][0]=stationen.0.3
+FrontImage[1][0][0][0][0]=stationen.0.4
+icon=> stationen.0.5
+cursor=stationen.0.6
+--------------------

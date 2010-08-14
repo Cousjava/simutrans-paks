@@ -1,0 +1,22 @@
+#----------------------------------------------------
+# List of townhalls
+#----------------------------------------------------
+Obj=building
+Name=10_01_CITY
+copyright=MHz
+Type=tow
+Build_Time=0
+Passengers=20
+Dims=1,1,2
+intro_year=1400
+#retire_year=1940
+needs_ground=1
+BackImage[0][0][0][0][0][0]=a0-townh-medivial.0.0
+BackImage[0][0][0][0][0][1]=a0-townh-medivial.1.0
+BackImage[1][0][0][0][0][0]=a0-townh-medivial.0.1
+BackImage[1][0][0][0][0][1]=a0-townh-medivial.1.1
+--------------------
+
+#===================================================
+# EOF
+#===================================================

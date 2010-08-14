@@ -1,0 +1,39 @@
+Obj=building
+Name=PlainAirStop
+copyright=MHz
+# must be 1*1
+type=stop
+waytype=air
+NoInfo=1
+level=1
+enables_pax=1
+intro_year = 1901
+intro_month = 7
+Dims=1,1,4
+BackImage[0][0][0][0][0]=stationen.0.1
+BackImage[1][0][0][0][0]=stationen.0.4
+BackImage[2][0][0][0][0]=stationen.0.3
+BackImage[3][0][0][0][0]=stationen.0.2
+icon=> stationen.0.6
+cursor=stationen.0.7
+--------------------
+#Obj=building
+#Name=AirStop
+#copyright=477
+# must be 1*1
+#type=airport
+#level=1
+#NoInfo=1
+#intro_year = 1950
+#Dims=1,1,4
+#BackImage[0][0][0][0][0]=stationen.1.1
+#FrontImage[0][0][0][0][0]=stationen.1.5
+#BackImage[1][0][0][0][0]=stationen.1.4
+#FrontImage[1][0][0][0][0]=stationen.2.4
+#BackImage[2][0][0][0][0]=stationen.1.3
+#FrontImage[2][0][0][0][0]=stationen.2.3
+#BackImage[3][0][0][0][0]=stationen.1.2
+#FrontImage[3][0][0][0][0]=stationen.1.5
+#icon=> stationen.1.6
+#cursor=stationen.1.7
+--------------------

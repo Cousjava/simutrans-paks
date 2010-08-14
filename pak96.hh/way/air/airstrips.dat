@@ -1,0 +1,138 @@
+#
+# Roads for Simutrans
+#
+# author: Hj. Malthaner
+# date:   23-Mar-04
+# update: 23-Mar-04
+#
+Obj=way
+Name=taxiway
+copyright=MHz
+waytype=air
+#system_type=1
+cost=10000
+maintenance=800
+topspeed=50
+max_weight=100
+intro_year = 1935
+intro_month = 7
+# skin
+icon=> Flugfeld.2.7
+cursor=Flugfeld.3.7
+# rbis * animation
+Image[-]=Flugfeld.3.5
+Image[N]=Flugfeld.2.0
+Image[S]=Flugfeld.2.6
+Image[E]=Flugfeld.3.6
+Image[W]=Flugfeld.2.1
+Image[NS]=Flugfeld.2.8
+Image[EW]=Flugfeld.3.8
+Image[NSE]=Flugfeld.3.2
+Image[NSW]=Flugfeld.3.0
+Image[NEW]=Flugfeld.3.1
+Image[SEW]=Flugfeld.3.3
+Image[NSEW]=Flugfeld.3.5
+# here curves are allowed
+Image[NE]=Flugfeld.2.4
+Image[SE]=Flugfeld.2.2
+Image[NW]=Flugfeld.2.3
+Image[SW]=Flugfeld.2.5
+--------------------
+Obj=way
+waytype=air
+system_type=1
+Name=runway_modern
+copyright=MHz
+cost=27500
+maintenance=6500
+topspeed=333
+max_weight=950
+intro_year = 1935
+icon=> Flugfeld.0.7
+cursor=Flugfeld.1.7
+# rbis * animation
+Image[-]=Flugfeld.1.4
+Image[N]=Flugfeld.0.5
+Image[S]=Flugfeld.1.6
+Image[E]=Flugfeld.0.0
+Image[W]=Flugfeld.0.6
+Image[NS]=Flugfeld.1.0
+Image[EW]=Flugfeld.1.1
+Image[NSE]=Flugfeld.0.2
+Image[NSW]=Flugfeld.0.4
+Image[NEW]=Flugfeld.0.1
+Image[SEW]=Flugfeld.0.3
+Image[NSEW]=Flugfeld.1.5
+# illegal (but needed)
+Image[NE]=Flugfeld.1.4
+Image[SW]=Flugfeld.1.4
+Image[SE]=Flugfeld.1.4
+Image[NW]=Flugfeld.1.4
+--------------------
+Obj=way
+Name=taxiway_gras
+copyright=RoX-01
+waytype=air
+#system_type=1
+cost=10000
+maintenance=800
+topspeed=50
+max_weight=100
+intro_year = 1901
+intro_month = 7
+retire_year = 1947
+#retire_month = 7
+# skin
+icon=> Flugfeld.6.7
+cursor=Flugfeld.7.7
+# rbis * animation
+Image[-]=Flugfeld.7.5
+Image[N]=Flugfeld.6.0
+Image[S]=Flugfeld.6.6
+Image[E]=Flugfeld.7.6
+Image[W]=Flugfeld.6.1
+Image[NS]=Flugfeld.6.8
+Image[EW]=Flugfeld.7.8
+Image[NSE]=Flugfeld.7.2
+Image[NSW]=Flugfeld.7.0
+Image[NEW]=Flugfeld.7.1
+Image[SEW]=Flugfeld.7.3
+Image[NSEW]=Flugfeld.7.5
+# here curves are allowed
+Image[NE]=Flugfeld.6.4
+Image[SE]=Flugfeld.6.2
+Image[NW]=Flugfeld.6.3
+Image[SW]=Flugfeld.6.5
+--------------------
+Obj=way
+waytype=air
+Name=runway_gras
+copyright=RoX-01
+system_type=1
+cost=5000
+maintenance=500
+topspeed=260
+max_weight=40
+intro_year = 1901
+retire_year = 1947
+icon=> Flugfeld.4.7
+cursor=Flugfeld.5.7
+# rbis * animation
+Image[-]=Flugfeld.5.4
+Image[N]=Flugfeld.4.5
+Image[S]=Flugfeld.5.6
+Image[E]=Flugfeld.4.0
+Image[W]=Flugfeld.4.6
+Image[NS]=Flugfeld.5.0
+Image[EW]=Flugfeld.5.1
+Image[NSE]=Flugfeld.4.2
+Image[NSW]=Flugfeld.4.4
+Image[NEW]=Flugfeld.4.1
+Image[SEW]=Flugfeld.4.3
+Image[NSEW]=Flugfeld.5.5
+# illegal (but needed)
+Image[NE]=Flugfeld.5.4
+Image[SW]=Flugfeld.5.4
+Image[SE]=Flugfeld.5.4
+Image[NW]=Flugfeld.5.4
+--------------------

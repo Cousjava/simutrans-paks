@@ -1,0 +1,450 @@
+# Goods.dat
+#
+# Author: Hj. Malthaner
+# Date: ???
+# Update: 16-Nov-02
+# Update: 16-Mär-06 Frank Penz
+#
+# categories:
+# 0 = Sonderfracht
+# 1 = Stückgut
+# 2 = Schüttgut
+# 3 = Mineralöle
+# 4 = Gefriergut
+# 5 = Getränke
+# 6 = Langholz
+#
+
+#**************************
+# catg 0 Standard
+#**************************
+#
+# Personen
+#
+obj=good
+name=Passagiere
+metric=
+catg=0
+value=30
+speed_bonus=5
+weight_per_unit=75
+-----------------------
+#
+# Post
+#
+obj=good
+name=Post
+metric=sack
+catg=0
+value=38
+speed_bonus=8
+weight_per_unit=50
+--------------------
+#
+# ohne Gut
+#
+obj=good
+name=None
+metric=
+catg=0
+value=0
+speed_bonus=0
+weight_per_unit=0
+-----------------------
+#**************************
+# catg 0 Güter
+#**************************
+#
+# Autos
+#
+obj=good
+name=Autos
+metric=
+catg=0
+value=380
+speed_bonus=5
+weight_per_unit=1800
+-----------------------
+#
+# Hopfen
+#
+obj=good
+name=Hopfen
+metric=m3
+catg=0
+value=72
+speed_bonus=8
+----------------------- 
+#
+# Milch
+#
+obj=good
+name=milk
+metric=m3
+catg=0
+value=90
+speed_bonus=9
+----------------------- 
+#
+# Papier
+#
+obj=good
+name=Papier
+metric=tonnen
+catg=0
+value=80
+speed_bonus=5
+weight_per_unit=1000
+-----------------------
+#
+# Trauben
+#
+obj=good
+name=Trauben
+metric=t
+catg=0
+value=45
+speed_bonus=8
+----------------------- 
+#
+# Stahl
+#
+obj=good
+name=Stahl
+metric=tonnen
+catg=0
+value=70
+speed_bonus=2
+weight_per_unit=1000
+-----------------------
+#
+# Kunststoffe
+#
+obj=good
+name=Plastik
+metric=tonnen
+catg=0
+value=70
+speed_bonus=4
+weight_per_unit=1000
+-----------------------
+#
+# Müll
+#
+Obj=good
+name=waste
+metric=m3
+catg=0
+value=24
+speed_bonus=0
+weight_per_unit=500
+--------------------
+#
+# Zement
+#
+obj=good
+name=Cement
+metric=tonnen
+catg=0
+value=95
+speed_bonus=3
+weight_per_unit=1000
+-----------------------
+#
+# Beton
+#
+obj=good
+name=Concrete
+metric=tonnen
+catg=0
+value=130
+speed_bonus=3
+weight_per_unit=1000
+-----------------------
+#**************************
+# catg 1
+#**************************
+#
+# Bücher
+#
+obj=good
+name=Buecher
+metric=paletten
+catg=1
+value=66
+speed_bonus=10
+weight_per_unit=250
+-----------------------
+#
+# Medikamente
+#
+obj=good
+name=Medicine
+metric=paletten
+catg=1
+value=160
+speed_bonus=8
+weight_per_unit=1000
+-----------------------
+#
+# Mehl
+#
+obj=good
+name=flour
+metric=sack
+catg=1
+value=68
+speed_bonus=7
+----------------------- 
+#
+# Möbel
+#
+obj=good
+name=Moebel
+metric=paletten
+catg=1
+value=190
+speed_bonus=3
+weight_per_unit=200
+-----------------------
+#
+# Druckfarben
+#
+obj=good
+name=PrintersInk
+metric=paletten
+catg=1
+value=60
+speed_bonus=5
+weight_per_unit=1000
+-----------------------
+#
+# Chemikalien
+#
+obj=good
+name=Chemicals
+metric=paletten
+catg=1
+value=115
+speed_bonus=5
+weight_per_unit=1000
+-----------------------
+#
+# Dosen-Essen
+#
+obj=good
+name=canned_food
+metric=paletten
+catg=1
+value=68
+speed_bonus=4
+----------------------- 
+#
+# Bier
+#
+obj=good
+name=beer
+metric=paletten
+catg=1
+value=82
+speed_bonus=9
+----------------------- 
+#
+# Computer
+#
+obj=good
+name=Computer
+metric=paletten
+catg=1
+value=188
+speed_bonus=15
+weight_per_unit=200
+--------------------
+#
+# SiliziumChips
+#
+obj=good
+name=SiliconChips
+metric=paletten
+catg=1
+value=310
+speed_bonus=7
+weight_per_unit=500
+--------------------
+#**************************
+# catg 2
+#**************************
+#
+# Gerste
+#
+obj=good
+name=Gerste
+metric=tonnen
+catg=2
+value=45
+speed_bonus=3
+weight_per_unit=1000
+----------------------- 
+#
+# Getreide
+#
+obj=good
+name=grain
+metric=tonnen
+catg=2
+value=30
+speed_bonus=3
+weight_per_unit=1000
+----------------------- 
+#
+# Eisenerz
+#
+obj=good
+name=Eisenerz
+metric=tonnen
+catg=2
+value=24
+speed_bonus=2
+weight_per_unit=1000
+-----------------------
+#
+# Kohle
+#
+obj=good
+name=Kohle
+metric=tonnen
+catg=2
+value=24
+speed_bonus=2
+weight_per_unit=1000
+-----------------------
+#
+# Steine
+#
+obj=good
+name=Stone
+metric=tonnen
+catg=2
+value=24
+speed_bonus=2
+weight_per_unit=1000
+-----------------------
+#
+# Sand
+#
+obj=good
+name=Sand
+metric=tonnen
+catg=2
+value=24
+speed_bonus=2
+weight_per_unit=1000
+-----------------------
+#**************************
+# catg 3
+#**************************
+#
+# Öl
+#
+obj=good
+name=Oel
+metric=m3
+catg=3
+value=30
+speed_bonus=2
+weight_per_unit=900
+-----------------------
+#
+# Diesel/Benzin
+#
+obj=good
+name=Gasoline
+metric=m3
+catg=3
+value=120
+speed_bonus=4
+weight_per_unit=860
+-----------------------
+#**************************
+# catg 4
+#**************************
+#
+# Fleisch
+#
+obj=good
+name=meat
+metric=tonnen
+catg=4
+value=72
+speed_bonus=8
+-----------------------
+#
+# Fische
+#
+obj=good
+name=fish
+metric=paletten
+catg=4
+value=60
+speed_bonus=7
+-----------------------
+#
+# Fertiggerichte
+#
+obj=good
+name=food
+metric=paletten
+catg=4
+value=100
+speed_bonus=14
+----------------------- 
+
+#**************************
+# catg 5
+#**************************
+#
+# Wein
+#
+obj=good
+name=Wein
+metric=m3
+catg=5
+value=80
+speed_bonus=0
+-----------------------
+#
+# Bier
+#
+obj=good
+name=Bier
+metric=m3
+catg=5
+value=50
+speed_bonus=0
+----------------------- 
+
+#**************************
+# catg 6
+#**************************
+#
+# Langholz
+#
+obj=good
+name=Holz
+metric=tonnen
+catg=6
+value=40
+speed_bonus=2
+weight_per_unit=1000
+-----------------------
+#
+# Bretter
+#
+obj=good
+name=Bretter
+metric=tonnen
+catg=6
+value=90
+speed_bonus=4
+weight_per_unit=1000
+-----------------------

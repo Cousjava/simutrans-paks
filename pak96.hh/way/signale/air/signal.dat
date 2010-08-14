@@ -1,0 +1,14 @@
+obj=roadsign
+name=airLeitsignal
+#copyright=
+waytype=air
+cost=800
+min_speed=0
+single_way=1
+image[0]=signale.0.0
+Image[1]=signale.0.1
+Image[2]=signale.0.2
+Image[3]=signale.0.3
+Icon=> signale.0.4
+Cursor=signale.0.5
+--------------------

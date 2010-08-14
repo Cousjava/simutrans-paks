@@ -1,0 +1,34 @@
+##**********************************************************
+# Passagierfahrzeuge
+#**********************************************************
+-----------------------
+obj=vehicle
+name=BuessingReise
+waytype=road
+freight=Passagiere
+copyright=Hajo
+payload=39
+speed=75
+cost=500000
+weight=12
+power=75
+RunningCost=25
+Sound=0
+intro_year = 1954
+intro_month = 3
+retire_year = 1970
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=road.8.1
+EmptyImage[N]=road.8.2
+EmptyImage[E]=road.8.3
+EmptyImage[W]=road.8.4
+EmptyImage[SE]=road.8.5
+EmptyImage[NW]=road.8.6
+EmptyImage[NE]=road.8.7
+EmptyImage[SW]=road.8.8
+-----------------------
+#**********************************************************
+# Postfahrzeuge
+#**********************************************************
+-----------------------

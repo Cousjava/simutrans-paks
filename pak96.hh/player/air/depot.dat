@@ -1,0 +1,18 @@
+Obj=building
+Name=AirDepot
+# must be 1*1
+type=depot
+waytype=air
+Dims=1,1,4
+NoInfo=1
+needs_ground=1
+intro_year=1900
+#retire_year=1940
+level=1
+icon=> ls-depot-rail-ttdx.0.4
+cursor=ls-depot-rail-ttdx.0.5
+BackImage[0][0][0][0][0]=ls-depot-rail-ttdx.0.0
+BackImage[1][0][0][0][0]=ls-depot-rail-ttdx.0.1
+BackImage[2][0][0][0][0]=ls-depot-rail-ttdx.0.3
+BackImage[3][0][0][0][0]=ls-depot-rail-ttdx.0.2
+--------------------

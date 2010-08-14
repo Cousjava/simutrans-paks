@@ -1,0 +1,17 @@
+Obj=building
+Name=CarDepot
+# must be 1*1
+type=depot
+waytype=road
+Dims=1,1,4
+level=1
+NoInfo=1
+needs_ground=1
+intro_year=1
+BackImage[0][0][0][0][0]=depot.0.0
+BackImage[1][0][0][0][0]=depot.0.1
+BackImage[2][0][0][0][0]=depot.0.2
+BackImage[3][0][0][0][0]=depot.0.3
+icon=> depot.0.4
+cursor=depot.0.5
+--------------------

@@ -1,0 +1,82 @@
+
+Makeobj version 50 for simutrans 102.1 Nightly and higher
+(c) 2002-2006 V. Meyer , Hj. Malthaner, M. Pristovsek (markus@pristovsek.de)
+
+writing invidual files to ./
+   reading file ./Goods.dat
+   writing file ./good.Passagiere.pak
+      packing good.Passagiere
+   writing file ./good.Post.pak
+      packing good.Post
+   writing file ./good.None.pak
+      packing good.None
+   writing file ./good.Autos.pak
+      packing good.Autos
+   writing file ./good.Hopfen.pak
+      packing good.Hopfen
+   writing file ./good.milk.pak
+      packing good.milk
+   writing file ./good.Papier.pak
+      packing good.Papier
+   writing file ./good.Trauben.pak
+      packing good.Trauben
+   writing file ./good.Stahl.pak
+      packing good.Stahl
+   writing file ./good.Plastik.pak
+      packing good.Plastik
+   writing file ./good.waste.pak
+      packing good.waste
+   writing file ./good.Cement.pak
+      packing good.Cement
+   writing file ./good.Concrete.pak
+      packing good.Concrete
+   writing file ./good.Buecher.pak
+      packing good.Buecher
+   writing file ./good.Medicine.pak
+      packing good.Medicine
+   writing file ./good.flour.pak
+      packing good.flour
+   writing file ./good.Moebel.pak
+      packing good.Moebel
+   writing file ./good.PrintersInk.pak
+      packing good.PrintersInk
+   writing file ./good.Chemicals.pak
+      packing good.Chemicals
+   writing file ./good.canned_food.pak
+      packing good.canned_food
+   writing file ./good.beer.pak
+      packing good.beer
+   writing file ./good.Computer.pak
+      packing good.Computer
+   writing file ./good.SiliconChips.pak
+      packing good.SiliconChips
+   writing file ./good.Gerste.pak
+      packing good.Gerste
+   writing file ./good.grain.pak
+      packing good.grain
+   writing file ./good.Eisenerz.pak
+      packing good.Eisenerz
+   writing file ./good.Kohle.pak
+      packing good.Kohle
+   writing file ./good.Stone.pak
+      packing good.Stone
+   writing file ./good.Sand.pak
+      packing good.Sand
+   writing file ./good.Oel.pak
+      packing good.Oel
+   writing file ./good.Gasoline.pak
+      packing good.Gasoline
+   writing file ./good.meat.pak
+      packing good.meat
+   writing file ./good.fish.pak
+      packing good.fish
+   writing file ./good.food.pak
+      packing good.food
+   writing file ./good.Wein.pak
+      packing good.Wein
+   writing file ./good.Bier.pak
+      packing good.Bier
+   writing file ./good.Holz.pak
+      packing good.Holz
+   writing file ./good.Bretter.pak
+      packing good.Bretter

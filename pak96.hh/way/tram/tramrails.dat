@@ -1,0 +1,94 @@
+Obj=way
+Name=Rillenschienen
+copyright=FrankP
+waytype=tram_track
+#system_type=7
+cost=10000
+intro_year=1865
+maintenance=500
+topspeed=90
+max_weight=80
+# skin
+cursor=rillenschienen.2.1
+icon=> rillenschienen.2.0
+# rbis * animation
+Image[-]=rillenschienen.1.5
+Image[N]=rillenschienen.1.8
+Image[S]=rillenschienen.1.6
+Image[E]=rillenschienen.1.7
+Image[W]=rillenschienen.1.9
+Image[NS]=rillenschienen.0.0
+Image[EW]=rillenschienen.0.1
+Image[NSE]=rillenschienen.1.3
+Image[NSW]=rillenschienen.1.1
+Image[NEW]=rillenschienen.1.2
+Image[SEW]=rillenschienen.1.4
+Image[NSEW]=rillenschienen.1.0
+# Kurven rund
+Image[NE]=rillenschienen.0.4
+Image[SE]=rillenschienen.0.6
+Image[NW]=rillenschienen.0.5
+Image[SW]=rillenschienen.0.3
+# Kurven gerade
+#Image[NE]=rillenschienen.2.7
+#Image[SE]=rillenschienen.2.9
+#Image[NW]=rillenschienen.2.8
+#Image[SW]=rillenschienen.2.6
+#
+Diagonal[NE]=rillenschienen.2.7
+Diagonal[SE]=rillenschienen.2.9
+Diagonal[NW]=rillenschienen.2.8
+Diagonal[SW]=rillenschienen.2.6 
+# hangtyp * animation
+ImageUp[3]=rillenschienen.2.4
+ImageUp[6]=rillenschienen.2.5
+ImageUp[9]=rillenschienen.2.3
+ImageUp[12]=rillenschienen.2.2
+------------------------------------
+#Obj=way
+#Name=Tram_Schotter
+#copyright=FrankP
+#waytype=track
+#system_type=7
+#cost=25000
+#intro_year=1925
+#maintenance=800
+#topspeed=120
+#max_weight=80
+## skin
+#cursor=tram_schotter.2.1
+#icon=> tram_schotter.2.0
+## rbis * animation
+#Image[-]=tram_schotter.0.2
+#Image[N]=tram_schotter.1.8
+#Image[S]=tram_schotter.1.6
+#Image[E]=tram_schotter.1.7
+#Image[W]=tram_schotter.1.9
+#Image[NS]=tram_schotter.0.0
+#Image[EW]=tram_schotter.0.1
+#Image[NSE]=tram_schotter.1.3
+#Image[NSW]=tram_schotter.1.1
+#Image[NEW]=tram_schotter.1.2
+#Image[SEW]=tram_schotter.1.4
+#Image[NSEW]=tram_schotter.1.0
+## Kurven rund
+#Image[NE]=tram_schotter.0.4
+#Image[SE]=tram_schotter.0.6
+#Image[NW]=tram_schotter.0.5
+#Image[SW]=tram_schotter.0.3
+## Kurven gerade
+##Image[NE]=tram_schotter.2.7
+##Image[SE]=tram_schotter.2.9
+##Image[NW]=tram_schotter.2.8
+##Image[SW]=tram_schotter.2.6
+#
+#Diagonal[NE]=tram_schotter.2.7
+#Diagonal[SE]=tram_schotter.2.9
+#Diagonal[NW]=tram_schotter.2.8
+#Diagonal[SW]=tram_schotter.2.6 
+## hangtyp * animation
+#ImageUp[3]=tram_schotter.2.4
+#ImageUp[6]=tram_schotter.2.5
+#ImageUp[9]=tram_schotter.2.3
+#ImageUp[12]=tram_schotter.2.2
+------------------------------------

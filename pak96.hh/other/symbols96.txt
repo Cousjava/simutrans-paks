@@ -1,0 +1,4 @@
+Obj=symbol
+name=Message
+Image[0]=> ls-symbols_96.0.0
+--------------------

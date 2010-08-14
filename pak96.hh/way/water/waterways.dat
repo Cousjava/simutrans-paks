@@ -1,0 +1,86 @@
+#
+# Roads for Simutrans
+#
+# author: Hj. Malthaner
+# date:   23-Mar-04
+# update: 23-Mar-04
+#
+Obj=way
+Name=Kanal
+copyright=MHz
+cost=1000000
+maintenance=100
+topspeed=30
+max_weight=1000
+intro_year = 1440
+intro_month = 7
+waytype=water
+# skin
+icon=> way-channel.3.5
+cursor=way-channel.3.6
+# rbis * animation
+Image[-]=way-channel.1.3
+Image[N]=way-channel.1.6
+Image[S]=way-channel.2.2
+Image[E]=way-channel.2.3
+Image[W]=way-channel.2.1
+Image[NS]=way-channel.1.1
+Image[EW]=way-channel.1.2
+Image[NSE]=way-channel.0.3
+Image[NSW]=way-channel.0.5
+Image[NEW]=way-channel.0.2
+Image[SEW]=way-channel.0.4
+Image[NSEW]=way-channel.1.3
+Image[NE]=way-channel.3.1
+Image[SE]=way-channel.2.4
+Image[NW]=way-channel.2.5
+Image[SW]=way-channel.2.6
+# hangtyp * animation
+ImageUp[3]=way-channel.1.4
+ImageUp[6]=way-channel.1.5
+ImageUp[9]=way-channel.0.1
+ImageUp[12]=way-channel.0.6
+#ImageUp[3]=way-schleuse.0.3
+#ImageUp[6]=way-schleuse.0.2
+#ImageUp[9]=way-schleuse.0.0
+#ImageUp[12]=way-schleuse.0.1
+--------------------
+#Obj=bridge
+#name=Schiffhebewerk
+#copyright=MHz
+#waytype=water
+#cost=115000
+#maintenance=1000
+#topspeed=20
+#max_weight=1
+#max_lenght=4
+#intro_year=1910
+#cursor=bridges-schiffshebewerk.2.4
+#icon=> bridges-schiffshebewerk.2.5
+#BackImage[NS]=bridges-schiffshebewerk.0.0
+#FrontImage[NS]=kanal-bruecke.1.0
+#FrontImage[NS]=bridges-schiffshebewerk.1.0
+#BackImage[EW]=bridges-schiffshebewerk.0.1
+#FrontImage[EW]=bridges-schiffshebewerk.1.1
+#FrontImage[EW]=kanal-bruecke.1.1
+#BackRamp[N]=bridges-schiffshebewerk.0.2
+#FrontRamp[N]=bridges-schiffshebewerk.1.2
+#BackRamp[W]=bridges-schiffshebewerk.0.3
+#FrontRamp[W]=bridges-schiffshebewerk.1.3
+#BackRamp[S]=bridges-schiffshebewerk.0.4
+#FrontRamp[S]=bridges-schiffshebewerk.1.4
+#BackRamp[E]=bridges-schiffshebewerk.0.5
+#FrontRamp[E]=bridges-schiffshebewerk.1.5
+#BackStart[N]=bridges-schiffshebewerk.2.0
+#FrontStart[N]=bridges-schiffshebewerk.3.0
+#FrontStart[N]=kanal-bruecke.3.0
+#BackStart[S]=bridges-schiffshebewerk.2.1
+#FrontStart[S]=bridges-schiffshebewerk.3.1
+#FrontStart[S]=kanal-bruecke.3.1
+#BackStart[E]=bridges-schiffshebewerk.2.2
+#FrontStart[E]=bridges-schiffshebewerk.3.2
+#FrontStart[E]=kanal-bruecke.3.2
+#BackStart[W]=bridges-schiffshebewerk.2.3
+#FrontStart[W]=bridges-schiffshebewerk.3.3
+#FrontStart[W]=kanal-bruecke.3.3
+--------------------

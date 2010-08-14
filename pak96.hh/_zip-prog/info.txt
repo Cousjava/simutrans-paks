@@ -1,0 +1,1 @@
+please copy 7z.exe and 7-zip.dll for windows in this directory

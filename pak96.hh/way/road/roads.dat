@@ -1,0 +1,83 @@
+Obj=way
+Name=asphalt_road
+cost=10000
+maintenance=800
+topspeed=100
+max_weight=100
+intro_year = 1940
+intro_month = 7
+waytype=road
+# Hajo: no icon => no menu entry!
+icon=> cityroad.3.5
+cursor=cityroad.3.6
+# rbis * animation
+Image[-]=cityroad.1.3
+Image[N]=cityroad.1.6
+Image[S]=cityroad.2.2
+Image[E]=cityroad.2.3
+Image[W]=cityroad.2.1
+Image[NS]=cityroad.1.1
+Image[EW]=cityroad.1.2
+Image[NSE]=cityroad.0.3
+Image[NSW]=cityroad.0.5
+Image[NEW]=cityroad.0.2
+Image[SEW]=cityroad.0.4
+Image[NSEW]=cityroad.1.3
+Image[NE]=cityroad.3.1
+Image[SE]=cityroad.2.4
+Image[NW]=cityroad.2.5
+Image[SW]=cityroad.2.6
+
+Diagonal[NE]=cityroad.3.2
+Diagonal[SE]=cityroad.3.3
+Diagonal[NW]=cityroad.3.4
+Diagonal[SW]=cityroad.3.0
+
+# hangtyp * animation
+ImageUp[3]=cityroad.1.4
+ImageUp[6]=cityroad.1.5
+ImageUp[9]=cityroad.0.1
+ImageUp[12]=cityroad.0.6
+-----------------------------------
+Obj=way
+Name=city_road
+cost=230
+# faster roads should be more expensive
+maintenance=300
+topspeed=50
+max_weight=100
+intro_year = 1735
+intro_month = 7
+waytype=road
+# Hajo: no icon => no menu entry!
+#icon=> cityroad.3.5
+#cursor=cityroad.3.6
+# rbis * animation
+Image[-]=cityroad.1.3
+Image[N]=cityroad.1.6
+Image[S]=cityroad.2.2
+Image[E]=cityroad.2.3
+Image[W]=cityroad.2.1
+Image[NS]=cityroad.1.1
+Image[EW]=cityroad.1.2
+Image[NSE]=cityroad.0.3
+Image[NSW]=cityroad.0.5
+Image[NEW]=cityroad.0.2
+Image[SEW]=cityroad.0.4
+Image[NSEW]=cityroad.1.3
+Image[NE]=cityroad.3.1
+Image[SE]=cityroad.2.4
+Image[NW]=cityroad.2.5
+Image[SW]=cityroad.2.6
+
+Diagonal[NE]=cityroad.3.2
+Diagonal[SE]=cityroad.3.3
+Diagonal[NW]=cityroad.3.4
+Diagonal[SW]=cityroad.3.0
+
+# hangtyp * animation
+ImageUp[3]=cityroad.1.4
+ImageUp[6]=cityroad.1.5
+ImageUp[9]=cityroad.0.1
+ImageUp[12]=cityroad.0.6
+-----------------------------------
