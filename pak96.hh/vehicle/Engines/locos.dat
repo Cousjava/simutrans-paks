@@ -1,0 +1,31 @@
+# bay. D VI - DRG BR 98.75
+# Personenzuglokomotive
+#
+obj=vehicle
+name=Eb3-5
+copyright=Jacopo Coletto
+waytype=track
+engine_type=steam
+freight=None
+smoke=Steam
+#payload=
+power=730
+speed=75
+#gear=100
+weight=74
+length=4
+cost=1000000
+RunningCost=2081
+Sound=3
+intro_year = 1911
+retire_year=1950
+Constraint[Prev][0]=none
+EmptyImage[S]=locos.3.1
+EmptyImage[E]=locos.3.2
+EmptyImage[SE]=locos.3.3
+EmptyImage[SW]=locos.3.4
+EmptyImage[N]=locos.3.5
+EmptyImage[W]=locos.3.6
+EmptyImage[NW]=locos.3.7
+EmptyImage[NE]=locos.3.8
+----------------------------------------------------------------- 
