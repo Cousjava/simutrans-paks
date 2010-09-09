@@ -5,7 +5,7 @@
 #                             Language: cz Cestina                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 21.02 2010                           #
+#                            Date Created: 9.09 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Frank Penz - FrankP                             #
@@ -302,12 +302,6 @@ PSHall1TrainStop
 Nádra¾ní hala s trafikou
 PSHall2TrainStop
 Nádra¾ní hala
-RES_00_02
-Malý domeèek se zahrádkou\n
-RES_00_03
-Malý postar¹í domek\n
-RES_00_04
-Pøízemní domek\n
 RES_00_06
 Fontána. I kdy¾ to není\npøímo ¾enevská fontána,\ntak stále potì¹í\nkolemjdoucí, zejména v\nlétì.\n
 RES_00_07

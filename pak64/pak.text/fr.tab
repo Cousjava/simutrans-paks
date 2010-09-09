@@ -5,7 +5,7 @@
 #                             Language: fr Francais                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 21.02 2010                           #
+#                            Date Created: 9.09 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                  - Christophe                                #
@@ -19,6 +19,8 @@
 #                          Jean Beaudet - cagliostro_2                         #
 #                                    note:                                     #
 #                                  - coincoin42                                #
+#                                    note:                                     #
+#                                - jounior-fuchs                               #
 #                                    note:                                     #
 #                            Luc Mallet - luc.mallet                           #
 #                                    note:                                     #
@@ -226,12 +228,6 @@ PSHall2TrainStop
 Quai
 Raven_Kirche
 Église St-Meinrad\n\nL'eremite St-Meinrad a été\naccompagné par deux\ncorbeaux selon la legnde.\nQuand il fut assassiné, les\ncorbeaux suivaient les\nmeurtriers et les ont\nconvaincus. À l'endroit de son\neremitage se trouve\naujourd'hui le couvent\nEinsiedeln.\n
-RES_00_02
-Petite maison avec jardin\n
-RES_00_03
-Petite maison avec jardin\n
-RES_00_04
-Petite maison\n
 RES_00_06
 Un petit jet d'eau. Même s'il\nn'est pas aussi grand que\ncelui à Genève, il fait du\nplaisir aux gens qui se\npromènent autour de lui,\nspécialement en été.\n
 RES_00_07

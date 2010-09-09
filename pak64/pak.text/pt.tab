@@ -5,7 +5,7 @@
 #                            Language: pt Portugues                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 5.08 2010                           #
+#                            Date Created: 9.09 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Frank Penz - FrankP                             #
@@ -272,6 +272,12 @@ IND_00_10
 Prédio administrativo industrial
 IND_00_14
 Fábrica de eletrônicos em estilo modernista
+IND_00_16
+Fábrica de um dono nada social\n\nO dono deste estabelecimento se recusou a falar com nossos pesquisadores. Assim sendo, a equipe do Simutrans não pode fornecer informações sobre o que é feito aqui. Desculpe-nos.\n\n(Na verdade - essa é a fábrica de autopeças da Mecânica do João - mas eles não querem que ninguém saiba)
+IND_00_17
+Uma empresa\n\nEmbora o prédio pareça abandonado, aqui na verdade funciona uma empresa lucrativa. Mas ninguém sabe o que é armazenado no tanque lá no alto.
+IND_00_18
+Uma outra empresa\n\nEmbora o prédio pareça abandonado, aqui na verdade funciona uma\noutra empresa lucrativa. Mas ninguém sabe o que é armazenado no tanque lá no alto, além do dono da outra empresa instalada num edifício como nesse.
 IND_01_01
 Estacionamento grátis.\n\nAlgumas pessoas mesmo\nabandonam os seus carros\nvelhos aqui.\n\n
 IND_01_03
@@ -286,6 +292,8 @@ IND_01_10
 Fábrica de ferramentas\n\n. Esta empresa faz ferramentas forjadas. Eles proverão uma substituição grátis para qualquer ferramenta que eles fizeram que pode quebrar.
 IND_01_11
 Fiação e Tecelagem\n\nAlém de fabricar fios e tecidos, produz empregados enrolados.
+IND_02_01
+Velha fábrica de tijolos\n\nEsta velha firma faz tijolos e talha blocos de pedras de vários tipos e cores.
 IND_02_06
 Fábrica de peças para locomotivas
 IND_02_09
@@ -338,10 +346,10 @@ RES_00_02
 Casa de uma família modesta\n\nCasas simples como esta são bastante comuns entre famílias de poucos recursos, mesmo assim elas são bem arejadas e captam água da chuva. Normalmente são projetadas por arquitetos da prefeitura preocupados com famílias que desejam economizar água e energia.
 RES_00_03
 Casa simples de telhas de ardósia\n\nAs telhas são finas placas da pedra ardósia que são presas na estrutura de madeira. Tais casas são comuns em países frios, e na simplicidade do material, elas são bem bonitas.
-RES_00_04
-Casa com janelas em baias
 RES_00_06
 Uma pequena fonte\n\nMesmo se ela não for tão grande\ncomo uma em Genebra, é\napreciada por pessoas que\ncaminham ao redor dela,\nespecialmente no verão.\n\n
+RES_00_07
+Antigo bar com moradia\n\nEste antigo bar foi reconstruído como casa do antigo dono. O bar mudou-se para o porão, e continua sendo um ponto de encontro para os antigos amigos dele. Infelizmente, o pebolim qubrou e nunca foi consertado.
 RES_00_08
 Casa média com garagem anexa\n\nNão se preocupe. Eles usam o carro para chegar a uma de seus terminais de transporte.
 RES_00_09
@@ -358,6 +366,8 @@ RES_00_17
 Mesmo para casas antigas\ncomo essa, contas de\nconsumo já existiam - cada\num já pagava por sua\nlenha.\n\n
 RES_00_19
 Apartamentos modernos\n\nCada apartamento tem uma sacada para desfrutar a vista.
+RES_00_23
+Torre residencial\n\nUm edifício redondo para pessoas bem redondas.
 RES_01_01
 Casa moderna pré-fabricada\ncom um quarto grande para\na criança no sótão.\n\n
 RES_01_02
@@ -366,6 +376,14 @@ RES_01_05
 Grande casa unifamiliar com\numa árvore. É para músicos\naposentados.\n
 RES_01_10
 Casa moderna\n\nO pátio da cobertura oferece um grande lugar para desfrutar o ar-livre sem sair de casa.
+RES_02_16
+Apartamentos de luxo\n\nEstes apartamentos dão aos seus residentes uma sala só para respirar. A cobertura é para pessoas que precisam respirar mais ainda.
+RES_11_02
+Casa bangalô\n\nEssa casa lembra a arquitetura do bangalô indiano. Elas são baixas, de um andar só, geralmente com grande varanda coberta.
+RES_11_03
+Uma casa rústica\n\nO senhor que mora nesta casa é dono de uma velha olaria no campo. Quando ele quis construí-la, ele pediu ao arquiteto que a projetasse utilizando-se dos materiais de sua olaria; o arquiteto concordou. E não é por menos, os tijolos conservam a casa quente no inverno e a isola dos barulhos da rua.
+RES_11_08
+Casa em estilo holandês de uma holandesa\n\nA senhora que mora aqui veio da Holanda para esta cidade ainda criança. Com saudades de sua terra, ela comprou este terreno e construiu sua casa lembrando as casas de sua terra natal.
 Residenz
 Residência universitária\n\nEste edifício está sendo\nusado para abrigar\nestudantes da\nuniversidade, se não\npuderem ter recursos para\nviver nos seus próprios.\n\n
 rightShipStop
@@ -695,7 +713,7 @@ merc. longas
 CATEGORY_07
 granulares
 rolls
-rolos
+ rolos
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 choose_point
@@ -1287,7 +1305,7 @@ Asfalto
 city_road
 Via Urbana
 cobblestone_road
-Paralelepípedo de pedras irregulares
+Seixo rolado
 concrete_sleeper_track
 Dormentes de concreto
 dirt_road

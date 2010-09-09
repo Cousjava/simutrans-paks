@@ -5,19 +5,45 @@
 #                            Language: lt Lithuanian                           #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 21.02 2010                           #
+#                            Date Created: 9.09 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Frank Penz - FrankP                             #
 #                                    note:                                     #
 #                          Ignas Brasiskis - enternald                         #
-#note: I love simutrans. Reikalui esant teikite si?lymus Lietuvi? kalbai Simutr#
+#note: Need more lt translators.\nReikalui esant teikite si?lymus Lietuvi? kalb#
 #                          Markus Pristovsek - prissi                          #
 #                                    note:                                     #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
 #____________________________________bridge_____________________________________
+ClassicRail
+Betoninis tiltas
+ClassicRoad
+Betoninis tiltas
+koka_Bridge_single
+pakelti b?giai
+MaglevBridge
+Magnetinis tiltas
+mlm_concrete_bridge
+Vienb?gio traukinio tiltas
+ModernRoad
+©iuolaikinis kelias
+MonorailRamp
+Vienb?gio juosta
+PowerBridge
+Elektros tiltas
+Schiffhebewerk
+©liuzas
+SteelRail
+Plieno sij? tiltas
+tb_classic_road
+Betoninis viadukas
+ViaductRail
+Akmeninis gele¾iankelio viadukas
+WoodenRoad
+Medinis tiltas
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 10_WOHN
@@ -26,43 +52,883 @@ Ba¾nyèia. Èia neseniai buvo pasteb?ta mergel? Marija. Dabar tikintieji pl?sta i¹
 Senovinis angaras
 1headquarter
 B?stin?
+COM_00_01
+Ma¾a parduotuv? \n\ Pigios ir ekologi¹kos prek?s verèia lankytojus niekados nepalikti ¹ios parduotuv?s tu¹èios
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
+Ambulanz
+Greitoji
+FordT
+Ford T(GAZ T)
+green_car
+®alia Siera
+Motorrad
+Mopedas
+orange_bus
+Mikriukas
+Pickup
+Pikapas
+Roadster
+Senas kabrioletas
+yellow_car
+Geltonoji ma¹ina
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
+2Raffinerie
+Naftos perdirbimo ?mon?
+3Raffinerie
+Naftos perdirbimo ?mon?
+Aufwindkraftwerk
+Saul?s jegain?
+Autohaus
+Auto parduotuv?
+Autohersteller
+Auto gamykla
+bakery
+Kepykla
+brewery
+Alaus darykla
+Buchgrosshandel
+Knygynas
+cannery
+Konserv? fabrikas
+Cementmill
+Cemento gamykla
+ChemicalPlant
+Chemijos gamykla
+CHEMIST
+Farmacijos ?mon?
+Concretefactory
+Betono mai¹ytuvas
+cow_farm
+Galvij? ?kis
+dairy
+Pienin?
+Druckerei
+Spaustuv?
+Erzbergwerk
+Gele¾ies kasykla
+fish_pond
+Tvenkinys
+fish_swarm
+®uv? tuntas
+food_processing_plant
+Maisto gamykla
+grain_farm
+Grud? ?kis
+grain_mill
+Mal?nas
+grain_windmill
+Vejo mal?nas
+Incinerator
+©iuk¹lynas
+Kohlegrube
+Anglies kasykla
+Kohlekraftwerk
+Anglimi kurenama jegain?
+Marketplace
+Turgus
+Materialswholesale
+Statybini? med¾iag? parduotuv?
+Moebelfabrik
+Bald? gamykla
+Moebelhaus
+Prekyviet?
+Muellkraftwerk
+©iuk¹li? deginimo ?mon?
+Nutzwald
+Mi¹kas
+Oelbohrinsel
+Naftos platforma
+Oelfeld
+Naftos grê¾inys
+Oelkraftwerk
+Mazutu kurenama jegain?
+Oelpumpe
+Naftos siurblys
+old_farm
+?kis
+Papierfabrik
+Popieriaus gamykla
+Pharmaceutics
+Vaist? pakavimo ?mon?
+Raffinerie
+Plastik? ir chemikal? gamykla
+Rinnenkraftwerk
+Panelin? saul?s jegain?
+Saegewerk
+Lentpj?v?
+SaegewerkMHz
+Staliaus dirbtuv?s
+Sandquarry
+Sm?lio karjeras
+scrap_yard
+Metalo lau¾as
+Stahlwerk
+Plieno liejykla
+Stonequarry
+Akmen? skaldykla
+supermarket
+Prekybos centras
+TANKE
+Degalin?
+thermisches_Solarkraftwerk
+Saul?s jegain?
+Turmkraftwerk
+Saul?s termin? jegain?
+Windkraftwerk
+V?jo jegain?
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
+Autos
+Ma¹inos
+beer
+Alus
+Bretter
+Lentos
+Buecher
+Knygos
+canned_food
+Konservai
+Cement
+Cementas
+Chemicals
+Chemikalai
+Concrete
+Betonas
+Eisenerz
+Gele¾ies r?da
+fish
+®uvis
+flour
+Miltai
+food
+Maistas
+Gasoline
+Kuras
+grain
+Gr?dai
+Holz
+Mediena
+Kohle
+Anglis
+meat
+M?sa
+Medicine
+Vaistai
+milk
+Pienas
+Moebel
+Baldai
+None
+niekas
+Oel
+Nafta
+Papier
+Popierius
+Passagiere
+Keleiviai
+Plastik
+Plastikas
+Post
+Pa¹tas
+PrintersInk
+Spausdintuvo da¾ai
+Sand
+Sm?lis
+Stahl
+Plienas
+Stone
+Akmuo
+waste
+©iuk¹l?s
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
+bushes
+Kr?mai
+deco_rock
+Akmuo
+flowers
+G?l?s
+gemsen
+O¾iai
+gooses
+®±sis
+Hochsitz1
+Med¾iotoj? bok¹telis
+Hochsitz2
+Girinink? bok¹telis
+rocks
+Akmenys
+See1
+Gulbi? e¾eras
+See2
+E¾eras
+See3
+E¾eras
+See4
+E¾eras
+sheeps
+Avys
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
+Couple
+Porel?
+Cyclist
+Dviratininkas
+pedestrian_1
+P?stysis
+pedestrian_2
+P?stysis
+pedestrian_3
+P?stysis
+pedestrian_4
+P?stysis
+pedestrian_child
+Vaikas
+pedestrian_dog
+¹uo
+Woman
+moteris
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
+CATEGORY_01
+Supakuotos prek?s
+CATEGORY_02
+Bir?s kroviniai
+CATEGORY_03
+Nafta/kuras
+CATEGORY_04
+©aldomi produktai
+CATEGORY_05
+Skystas maistas
+CATEGORY_06
+Mediena
+CATEGORY_07
+Milteliai/granul?s
+rolls
+ ritiniai
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
+choose_point
+Rinkis keli±
+ChooseSignals
+Pasirinkimo signalai
+ChooseSignalsMonorail
+Pasirinkimo signalai
+Endofchoosetrack
+Neleisti kaip platformos pasirinkimo
+LongBlockSignals
+Ilgo bloko signalai
+Minimum80
+minimalus greitis 80 km/h
+NoAirEntry
+"N?ra kelio" ¾enklas
+NoEntry
+n?ra kelio
+preSignals
+Pre-signalai (dviems blokams)
+preSignalsMonorail
+Pre-signalai (dviems blokams)
+RailClose
+B?gis u¾darytas
+Signals
+Gele¾inkelio signalas
+SignalsMonorail
+Signalai
+traffic_light
+©viesoforai
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
+Ahorn-1
+Klevas
+Ahorn-2
+Klevas
+Ahorn-Gruppe
+Klevynas
+Birke-1
+Ber¾as \n\n
+Buche-1
+kr?mas \n\n
+Busch_2
+kr?mas \n\n
+Kiefer_1
+Sakingoji pu¹is
+Kiefer_2
+Sakingoji pu¹is
+Kiefer_3
+Sakingoji pu¹is
+Kiefer_4
+Sakingoji pu¹is
+Kiefer_5
+Sakingoji pu¹is
+Latschenkiefer
+Kaln? pu¹is \n\n
+Palmtree1
+Palm?
+Palmtree2
+Palm?
+Palmtree3
+Palm?
+Palmtree4
+Palm?
+Palmtree5
+Palm?
+Palmtree6
+Palm?
+Palmtree7
+Palm?
+Pappel-1
+Tuopa \n\n
+Pappel-2
+Tuopa \n\n
+Tanne_1
+K?nis \n\n
+Tanne_2
+K?nis \n\n
+Tanne_3
+K?nis \n\n
+Tanne_4
+K?nis \n\n
+Tanne_5
+K?nis \n\n
+Tanne_6
+K?nis \n\n
+Tree6
+K?nis \n\n
+Willow
+Gluosnis \n\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
+FastRoadTunnel
+©iuolaikinis tunelis
+RailTunnel
+Gele¾inkelio tunelis
+RoadTunnel
+Auto-tunelis
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
+0Ben103
+Deutsche Bahn BR 103
 1Ben140
 Deutsche Bahn BR 140
 1Dampflokomotive
 H-Trans 0-4-0T
 1Diesellokomotive
 H-Trans BR212
+1Ellok
+H-Trans BR103
 1Garrat
 Garrat'o lokomotyvas
 1TPEllok
 F7 A
+221A
+JaCo 221A 4-6-0
+221A_tender
+JaCo 221A tenderis
 2Ben155
 Deutsche Bahn BR 155
 2Diesellokomotive
-German Railways class 218
+Vokietijos gel. class 218
+2Ellok
+H-Trans Tigress I
+2Garrat
+Garratt'as (vidurys)
+3Ben185
+Bennhardt BR185
+3Diesellokomotive
+H-Trans BR365
+3Garrat
+Garratt'as (galas)
+707
+Boeing 707
+A3-5
+Sveicarijos fed. gel. A 3/5
+A3-5_tender
+Tenderis skirtas ©FG A 3/5
+A380
+Airbus A380
+Adler
+Adler'io lokomotyvas
+AdlerPersonenwagen
+Adler'io keleivi? vagonas
+Autotrailer
+Auto tralas
+Autotransportanhaenger
+H-trans Auto treileris
+Autotransporter
+H-trans Auto transporteris
+Autotransportwagen
+TPI Lopomo Auto vagonas
+BB1280
+JaCo BB1280 
+BB200
+Empire BB200
+Be5-7
+BLS Be 5/7
+Blimp
+Dir¾ablis
+Book_Trike
+Parcel'io siuntini? triratis
+Boxcar
+MJHN Preki? vagonas
+BR01
+SingCo BR01 4-6-2
+Br118DR
+Sojo Group BR118DR
+Br234
+Brose BR234
+BR38
+BR 38
+BR38-Tender
+Tenderis skirtas BR38
+BR39
+SingCo BR289 2-8-2
+BR45
+SingCo BR45 2-10-2
+BR45-Tender
+SingCo BR45 tenderis
+Br614back
+BR614 Keleivinis tr. (galas)
+Br614car
+BR614 keleivinis vagonas
+Br614front
+BR614 Keleivinis traukinys
+BR85
+SingCo BR85 2-6-4
+Bretteranhaenger
+WF Ultd. lent? priekaba
+Brettertransporter
+WF Ultd. Lent? sunkve¾imas
+Bretterwagen
+VT Vienna lent? vagonas
+BRV36
+Colin BRV36
+Buchanhaenger
+Serj/H-Trans knyg? priekaba
+Buchtrailer
+Knyg? puspriekab? I
+Buchtrailer2
+Knyg? puspriekab? II
+Buchtransporter
+Serj/H-Trans preki? sunkve¾imas
+Buchwagen
+VT Vienna krovininis automobilis
+Buessig
+Ikarus modelis B
+BuessingLinie
+MHz ilgas autobusas
+Bulkcarriage
+Ve¾imas
+Bus
+H-Trans autobusas
+CarFlat
+Automobili? vagonas
+Cargosprinter-Front
+Cargosprinter
+Cargosprinter-Mittel
+Cargosprinter vagonas
+Cargosprinter-Steuer
+Cargosprinter (galas)
+CC7100
+ACTrain CC7100
+Cementtrailer
+Cemento puspriekab?
+Class86
+DanMoto Class 86
+CombinoShort(T)
+Combino GT-4S keleivinis vagonas
+CombinoShortA(Mc)
+Combino GT-4S
+CombinoShortB(Mc)
+Combino GT-4S (galas)
+CombinoShortE(T)
+Combino GT-4S Keleivinis vagonas B
+Comet
+De Havilland 'Comet'
+Concept1Front
+Concept 1
+Concept1Mail
+Concept 1 pa¹to vagonas
+Concept1Pass
+Concept 1 keleivinis vagonas
+Concept1Rear
+Concept 1 (Galas)
+Concept2Front
+Concept 2
+Concept2Mail
+Concept 2 pa¹to vagonas
+Concept2Pass
+Concept 2 keleivinis vagonas
+Concept2Rear
+Concept 2 galin? dalis
+Concorde
+BAC "Konkordas"
+Cooling_Container
+©aldytuvas-konteineris
+Cooling_Truck
+Sunkve¾imis ¹aldytuvas
+Cooling_Waggon
+©aldymo vagonas
+DaimlerStoll
+Daimler & Co Autobusas
+DC-3
+MHz Douglas DC-3
+Deponielaster
+©iuk¹liave¾is
+Deponielaster2
+Dvikau¹is ¹iuk¹li? savivartis
+Doubledeck_city_bus
+Dviauk¹tis autobusas
+DoubleDecker
+Dviauk¹tis keleivinis vagonas
+E44
+Empire E44
+Eb3-5
+©veicarijos fed. gel. Eb 3/5
+Ed2x2
+JaCo Saker 0-4-4-0
+EinheitsTender
+Standartinis tenderis
+EnCo_Bulk_Ship
+EnCo Sunki?j? krovini? laivas
+EnCo_Car_Ship
+EnCo Auto laivas
+EnCo_Cement_Ship
+EnCo biral?- granuli? laivas
+EnCo_Container_Ship
+Enco konteineri? laivas
+EnCo_Oil_Ship
+EnCo tanklaivis
+EnCo_Paper_Ship
+EnCo Popieriaus transporteris
+EnCo_Steel_Ship
+Enco plieno transporteris
+EnCo_Wood_Ship
+EnCo medienos transporteris
+Erzanhaenger
+H-Trans rudos puspriekab?
+Erztrailer
+Rama sunki? krovini? puspriekab?
+Erztransporter
+Kirayami savivartis
+Erzwagen
+Bennhardt atviras vagonas
+F7back
+Empire F7 A (galas)
+FastFerry
+Hermes greitasis keltas
+Fishing_Boat
+®vejybinis traleris
+Fishing_Boat_DanMacK
+®vejybinis kateris
+Flachwagen
+Rama u¾dengtas d?¾i? vagonas
+Fokker_F27
+MHz M-27
+FordZugmaschine
+MHz Ford "ilganosis"
+GarbageTruck
+©iuk¹liave¾is
+Gelenkbus_Ende
+Lankstus autobusas (galas)
+Gelenkbus_Front
+Lankstus autobusas
+Godm_Spitz
+Keleivi? kliperis
+Grossraumwagen
+Empire "Alto" keleivi? vagonas
+Guppy
+Aero Spacelines 377SGT Super Guppy
+H-Trans-Pantheress
+H-Trans Pantheress
+H-Trans-Pantheress-Back
+H-Trans Pantheress (galas)
+H-Trans-Tiger-Car
+H-Trans Tigress keleiviu vagonas
+H-Trans-Tiger-Mail-Car
+H-Trans Tigress pa¹to vagonas
+H-Trans-Tigress-II-Back
+H-Trans Tigress II (galas)
+H-Trans-Tigress-II-Front
+H-Trans Tigress II
+Hadley-Page-V1500
+RavenCo Hadley-Page V1500 Goose
+Heavy_ore_truck
+H1750 Sunkusis savivartis
+HJMAvia
+HJM Avia
+Hochbordwagen
+Ravenco atviras vagonas
+Holzanhaenger
+H-Trans rast? priekaba
+Holztrailer
+Mi¹kove¾io priekaba
+Holztransporter
+H-Trans mi¹kove¾is
+Holzwagen
+H-Trans/Empire vagonas - mi¹kove¾is
+Horsebookscariage
+De¾i? ve¾imas
+Horsemailcariage
+Pa¹to ve¾imas
+Horsepapercariage
+Popieriaus ve¾imas
+Horsepassengerscariage
+Karieta
+Horses
+Arkli? ketvertas
+Horsewoodcariage
+Rast? ve¾imas
+HVPosttransporter
+HVP pa¹to sunkve¾imis
+ICE_TD-back
+Bennhardt ICE-TD (galas)
+ICE_TD-car
+Bennhardt ICE-TD (keleivi? vagonas)
+ICE_TD-front
+Bennhardt ICE-TD
+IL-76
+Ilyushin IL-76 pa¹to l?ktuvas
+JNR_C11
+RavenCo JNR-C11 2-8-4
+JR_9600
+RavenCo JR9600 2-8-0
+JR_9600_tender
+RavenCo JR-9600 tenderis
+Ju52
+RavAir Ju-52 Juliet
+JumboJet
+RavAir BN-747D "Jumbo"
+kkStB_tender
+WEC kkStB tenderis
+kkStB110
+WEC kkStB110 2-4-0
+kkStB91
+WEC kkStB91 0-6-0
+Klappdeckelwagen
+MHz Granuli? vagonas Mk. I
+Kohleanhaenger
+H-Trans atviras vagonas
+Kohletransporter
+H-Trans savivartis
+Kohlewagen
+H-Trans angli? vagonas
+Kunststofanhaenger
+H-Trans biral? priekaba
+Kunststofftransporter
+H-Trans plastiko sunkve¾imis
+Laaekks553_a
+MHz auto vagonas
+Laaekks553_b
+MHz auto transporteris
+Lockhead_Tristar
+MHz Lockhead M-1011 TriStar
+Lockheed10-Electra
+Simlock Lockheed S-188 Electra
+logs
+R±stai
+Lowa
+BennHardt T-26
+Lowa_Anhaenger
+BennHardt T-26 (vagonas)
+Mack_Truck_01
+TMC Mack sunkve¾imis
+Mailcontainerwagon
+MSP pa¹to vagonas
+MailExpress
+Empire Pa¹to kurjeris
+Mailwagon
+Empire "Alto" pa¹to vagonas
+Milk_Truck
+Pienov?¾is
+Milk_Waggon
+Pieno vagonas
+Moebelschiff
+RavenCo d?¾i? bar¾a
+Moebelwagen
+DMC prekinis vagonas
+Muellschiff
+MHz ¹iuk¹li? bar¾a
+NeuOelwagen
+Empire tankeris
+NS1000
+P-Rail NS-1000
+NS1600
+P-Rail NS-1600
+Oelanhaenger
+H-Trans naftove¾is
+Oelwagen
+DMC tankeris
+Oilbarge
+Empire naftos bar¾a
+Oiltrailer
+SimCo naftos puspriekab?
+old_open_car
+SimCo senas atviras vagonas
+OldOil
+Kahan tankeris vagonas
+Ox2
+Arkli? kinkinys
+Ox4
+Dviej? eili? kinkinys
+Papieranhaenger
+H-Trans popieriaus ve¾imo priekaba
+Papiertransporter
+H-Trans popieriaus vagonas
+Papierwagen
+DMC popieriaus vagonas
+Passagierwagen
+H-Trans keleivinis vagonas
+Pferdebahn
+"Konk?s" arkliai
+Pferdebahnwagen
+SingCo tramvajus
+Postschiff
+Pa¹to laivas
+Posttransporter
+SimCo pa¹to sunkve¾imis
+Postwagen
+H-Trans pa¹to vagonas
+PrPersonenwagen
+SingCo keleivinis vagonas
+PrPostwagen
+SingCo pa¹to vagonas
+RenaultTH5
+Colin Renault TH5
+Sandanhaenger
+SMP savivart? priekaba
+Sandtransporter
+SMP s±vivartis
+schooner
+Novia Scotia ¹kuna
+Schooner_Bark
+Barkas
+SD40-2-back
+SD40 Double (galas)
+SD40-2-front
+SD40
+setra_S10
+Setra S10 autobusas
+SlowFerry
+H-Trans keltas
+SMPoiltruck
+SMP benzove¾is
+Stahlanhaenger
+H-Trans plieno perve¾imo priekaba
+Stahltransporter
+Plieno sunkve¾imis
+Stahlwagen
+DMC plieno vagonas
+Staubkesselwagen
+MHz granuli? vagonas Mk. II
+Steamer
+Garlaivis
+Stoneanhaenger
+Empire nuolidi priekaba
+Stonetransporter
+Empire s±vivartis
+SuperConstellation
+RavenCo R-1049 Super Constellation
+T13
+Bernhardt-Empire T-13
+T21_bus
+Empire T-21 autobusas
+T24
+RK Ltd. T-24
+Tanklastzug
+H-trans Benzove¾is
+Tatra-T4
+Tatra T-4
+Tatra-T4_Wagon
+Tatra T-4 (vagonas)
+TB13
+Bernhardt T-13 (vagonas)
+TB24
+RK Ltd. T-24 (vagonas)
+teaclipper
+Kliperis
+TPBeiwagen
+Brose TP-5200 (galas)
+TPPassagierwagen
+Empire-Osaka keleivinis vagonas
+TPSchienenbus
+Brose TP-5200
+Tram_GT6_Ende
+Autocar GT-6 (galas)
+Tram_GT6_Kopf
+Autocar GT-6
+Trike
+Triratis sunkve¾imis
+Tugboat
+SimCo vilkikas
+Turgot
+Burins keltas
+Ucy
+MHz granuli? vagonas Mk. III
+Viggen
+Viggen keltas
+VolvoFH12
+Volvo FH12 
+waste wagon
+SimCo ¹iuk¹li? vagonas
+X2000back
+X-ray 2000 keleivinis traukinys (galas)
+X2000car
+X-ray 2000 keleivinis vagonas
+X2000front
+X-ray 2000 keleivinis traukinys
+XMail
+Kirayami X-1 pa¹to vagonas
+XTest
+Kirayami X-1
+Zeppelin
+Dir¾ablis
 #______________________________________way______________________________________
 #______________________________________way______________________________________
+asphalt_road
+Asfalto kelias
+city_road
+Gatv?s kelias
+cobblestone_road
+Ta¹yt? akmen? kelias
+concrete_sleeper_track
+Betoninio pagrindo kelias
+dirt_road
+Grunto dangos kelias
+elevated_monorail
+Pakeltas vienb?gis gele¾inkelis
+gavel_road
+®vyrkelis
+Kanal
+Kanalas
+MaglevTrack
+Magnetin?s levitacijos b?giai
+MaglevTrackElevated
+Pakelti magnetiniai b?giai
+mip_cobblestone_road
+Ta¹yt? akmen? dangos kelias
+Powerline
+Elektros linija
+Rillenschienen
+Lengvieji b?giai
+river
+Perplaukiama up?
+river2
+©altinis
+runway_grass
+Senas pakilimo takas
+runway_modern
+Pakilimo takas
+sand_track
+Medinio pagrindo b?giai (sm?lio pylimas)
+steel_sleeper_track
+Plieninio pagrindo b?giai
+taxiway
+Periferinis takas
+wooden_sleeper_track
+Medinio pagrindo b?giai (supilt? akmen? pylimas)
 #__________________________________way-object___________________________________
 #__________________________________way-object___________________________________

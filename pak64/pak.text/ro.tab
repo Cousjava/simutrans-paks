@@ -5,7 +5,7 @@
 #                              Language: ro Romana                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 27.05 2010                           #
+#                            Date Created: 9.09 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                   - CDAndrei                                 #
@@ -112,12 +112,6 @@ IND_01_09
 Rezervor de ap?\n
 IND_01_10
 Fabric? de unelte\n
-RES_00_02
-Cas? cu gr?din?\n
-RES_00_03
-Cas? cu gr?din?\n
-RES_00_04
-Case micu?e\n
 RES_00_06
 Mic duplex\n
 RES_00_07

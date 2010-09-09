@@ -5,7 +5,7 @@
 #                             Language: en English                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 30.05 2010                           #
+#                            Date Created: 9.09 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Alexander Brose - AlexB                           #
@@ -38,6 +38,8 @@
 #                                    note:                                     #
 #                             Marcus Haupt - Marcus                            #
 #note: if I´m not available by email to proximity.de try mail@marcus-haupt.de (#
+#                                   - Nico192                                  #
+#                                    note:                                     #
 #                           Sava Bogdanets - Sava2004                          #
 #                                    note:                                     #
 #                          Susanna Björverud - Susanna                         #
@@ -49,7 +51,7 @@
 #                       Venkatesh Parthasarathy - Venkat                       #
 #                                    note:                                     #
 #                          Ignas Brasiskis - enternald                         #
-#note: I love simutrans. Reikalui esant teikite si?lymus Lietuvi? kalbai Simutr#
+#note: Need more lt translators.\nReikalui esant teikite si?lymus Lietuvi? kalb#
 #                               Florian - floppy                               #
 #                                    note:                                     #
 #                            Günter Beine - gebeine                            #
@@ -57,6 +59,10 @@
 #                          James E. Petts - jamespetts                         #
 #  note: Maintainer for Simutrans-Experimental. Also works on Pak128.Britain.  #
 #                            Jonas Bushart - jonasbb                           #
+#                                    note:                                     #
+#                                - jounior-fuchs                               #
+#                                    note:                                     #
+#                             Mark Knoester - mark                             #
 #                                    note:                                     #
 #                              Markus Rex - msrex                              #
 #                                    note:                                     #
@@ -66,12 +72,18 @@
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
 #                                    note:                                     #
+#                                     - sdog                                   #
+#                                    note:                                     #
 #                                   - shinexus                                 #
 #                                    note:                                     #
 #                           Lincoln Sayger - skreyola                          #
 #                                    note:                                     #
+#                                    - smu42                                   #
+#                                    note:                                     #
 #                               Sven Osada - sojo                              #
 #                         note: maintainer pak96.comic                         #
+#                                 - transporter                                #
+#                                    note:                                     #
 #                              Xavier Paz - vilvoh                             #
 #                                    note:                                     #
 #                         Tomá? Vrbický - vrbicky_tomas                        #
@@ -362,8 +374,12 @@ Raven_Kirche
 Church St. Meinrad\n\nThe hermit St. Meinrad has\nbeen accompagned by two\nravens according to the\nlegend. When he has been\nmurdered, the two ravens\nfollowed the murderers and\nhave convicted them. Today,\nat the place of his hut is\nthe \nmonastery Einsiedeln.\n\n
 RES_00_01
 This small house may not look out of the ordinary: But it is right at the center of the Simutrans universe. It was the first buildings errected in Simutrans.
+RES_00_02
+Since he lost everything when the fish bubble economy burst, this CEO now lives in the summer house. Luckily he bough it originally in the name of his dog.\n
+RES_00_03
+The famous pirate Blackbird was once once the owner of this building. However, he did when his heir was young, and left nothing. Generations (and movies) later the owner now has money to extend; but now this is a protected listed building ...\n
 RES_00_04
-House with Bay Windows
+This modern house looks nothing out of the ordinary. But the whole structure has an extended tunnel network below, where a scientist works on beaming. However, he is most famed and feared for the frequent power outages in this neighbourhood.\n
 RES_00_06
 A little fountain. Even if it\nis not so great as the one\nin Geneva, it is delighting\npeople walking around it,\nespecially in the\nsummertime.\n\n
 RES_00_08
@@ -375,27 +391,31 @@ Live less ordinary! The\ninterior is unique as well:\nPower outlet are for\nthre
 RES_00_13
 Duplex\n\nGood hedges make good neighbors?
 RES_00_16
-Old Villa\n\nThis villa is something of a fixer-upper, but it has charm.
+This old villa is something of a fixer-upper. On the other hand you will be the only one in town who can operates switches from Alva Edison to light the stairs.\n
 RES_00_17
 Even for old houses like\nthis, consumption-based\nheating cost billing existed\n- everyone had to pay for\nhis own firewood.\n\n
+RES_00_18
+Even before the war, building companies went bankrupt. The owner of this building used his chance and improved the look and his wallets with a big beer ad.\n
 RES_00_19
 Modern Apartments\n\nEach apartment has a balcony for enjoying the view.
+RES_00_21
+In the 60ies this was an award-winning house. Today people are only in awe by the wind it generates in the passage below. At least this took care of the litering in this area.\n
 RES_00_23
-Residential Tower\n\nA round building for well-rounded people.
+Any room with a window: It sounds well until you try to put you cupboard to a wall - no square corners, not flat walls. Dust bunnies will soon take over this place.\n
 RES_01_01
 Modern prefab house with a\nlarge room for the kid in the\nattic.\n\n
 RES_01_02
 A-Frame type house. Very\nstable, but with only a few\nwindows and walls, so it's\nnot really suitable for\npeople who like framed\npictures.\n\n
 RES_01_05
-Large Home\n\nWith its large den and shady back yard, this is the home of a retired musician.
+With its large den and shady back yard, this is the home of a retired musician.
+RES_01_07
+Build by a lover of the black forest; even planted two firs. Too bad, this are the only firs for miles.
 RES_01_10
 Modern House\n\nThe rooftop patio offers a great place to enjoy the outdoors without leaving the house.
+RES_01_23
+The shape stems form a bet. Villain Construction lost a million, because its trademarked V-shaped design actually passed revision.
 RES_02_16
 Luxury Apartments\n\nThese apartments give their residents room to breathe. The penthouse is for people who need to breathe more.
-RES_11_02
-Bungalow
-RES_11_03
-Rustic House
 Residenz
 Residence\n\nThis place is used by the\nlocal Yoga Guru to teach\nmeditation and inner peace.\nThere are lots of things\ncalled Bongs here.\n\n
 rightShipStop
@@ -599,7 +619,7 @@ Fish
 flour
 Flour
 food
-convenience food
+Convenience food
 grain
 Grain
 Holz

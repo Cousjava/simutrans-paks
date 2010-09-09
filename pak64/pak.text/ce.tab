@@ -5,7 +5,7 @@
 #                            Language: ce C-English                            #
 #                                Encoding: ASCII                               #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 21.02 2010                           #
+#                            Date Created: 9.09 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Frank Penz - FrankP                             #
@@ -290,12 +290,6 @@ rampShipStop
 Ramp for Docks
 Raven_Kirche
 Church of St.Meinrad. \nAccording to legend, the\nhermit St. Meinrad was\naccompanied by two\nravens.  When he was\nmurdered, the two ravens\nwere convicted. Today, the\nplace of his hut  is the\nEinsiedeln Monastery.\n
-RES_00_02
-Small House with a Garden\n
-RES_00_03
-Small House with a Garden\n
-RES_00_04
-Small House\n
 RES_00_06
 A Little Fountain. Even if it\nis not as great as the one\nin Geneva, it delights\npeople walking around,\nespecially in the\nsummertime.\n
 RES_00_07

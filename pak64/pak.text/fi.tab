@@ -5,7 +5,7 @@
 #                              Language: fi Suomi                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 21.02 2010                           #
+#                            Date Created: 9.09 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                              Esa Lindroos - Esa                              #
@@ -320,12 +320,6 @@ rampShipStop
 Ramppi
 Raven_Kirche
 Pyh‰n Meinradin kirkko\n\nErakko Meinrad eli kahden variksen\nkanssa. H‰net murhattiin, ja\nlegendan mukaan varikset\nseurasivat murhaajia ja toivat\nn‰m‰ oikeuden eteen.\nNyky‰‰n kyseisell‰ paikalla\nsijaitsee Einsiedelnin luostari.\n
-RES_00_02
-Pieni talo ja kaalimaa\n
-RES_00_03
-Omakotitalo\n
-RES_00_04
-Asuinrakennus\n
 RES_00_06
 Pieni suihkul‰hde\n
 RES_00_07
