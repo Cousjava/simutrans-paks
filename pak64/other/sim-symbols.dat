@@ -50,7 +50,7 @@ Image[0]=> ls-symbols.1.5
 --------------------
 Obj=symbol
 name=TramStop
-Image[0]=> ls-symbols.2.4
+Image[0]=> ls-symbols.2.5
 --------------------
 Obj=symbol
 name=Passagiere
@@ -82,4 +82,20 @@ Image[3]=> ls-symbols.3.0
 Image[0]=> ls-symbols.3.1
 Image[1]=> ls-symbols.3.2
 Image[2]=> ls-symbols.3.3
+--------------------
+Obj=symbol
+name=networksym
+Image[0]=> ls-symbols.3.4
+--------------------
+Obj=symbol
+name=timelinesym
+Image[0]=> ls-symbols.3.5
+--------------------
+Obj=symbol
+name=fastforwardsym
+Image[0]=> ls-symbols.3.6
+--------------------
+Obj=symbol
+name=pausesym
+Image[0]=> ls-symbols.3.7
 --------------------
