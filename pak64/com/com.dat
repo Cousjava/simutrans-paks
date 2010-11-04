@@ -327,8 +327,8 @@ Level=13
 chance=100
 intro_year=1931
 climates=tropic,desert,mediterran,temperate,tundra,rocky,arctic
-BackImage[0][0][0][1][0]=com.6.5
-BackImage[0][0][0][0][0]=com.7.5
+BackImage[0][0][0][1][0]=com.6.3
+BackImage[0][0][0][0][0]=com.7.3
 --------------------
 Obj=building
 Name=COM_00_14
