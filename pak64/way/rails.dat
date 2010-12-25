@@ -96,7 +96,7 @@ cost=8000
 maintenance=500
 topspeed=120
 max_weight=110
-intro_year = 1810
+intro_year = 1850
 intro_month = 9
 waytype=track
 # skin
