@@ -3,72 +3,70 @@ Name=DenkTrikky
 Type=mon
 Passengers=60
 intro_year=1400
-#BackImage[Layout][x Position][y Position][Height][Phase]
 BackImage[0][0][0][0][0]=g0-monuments.0.2
---------------------
+--
 Obj=building
 Name=DenkOwen
 Type=mon
 Passengers=60
 intro_year=1960
-#BackImage[Layout][x Position][y Position][Height][Phase]
 BackImage[0][0][0][0][0]=g0-monuments.0.3
---------------------
+--
 Obj=building
 Name=DenkSeth
 Type=mon
 Passengers=60
-#BackImage[Layout][x Position][y Position][Height][Phase]
-intro_year=1880
+intro_year=1929
 BackImage[0][0][0][0][0]=g0-monuments.0.0
---------------------
+--
 Obj=building
 Name=DenkVM
 Type=mon
 Passengers=60
-intro_year=1970
-#BackImage[Layout][x Position][y Position][Height][Phase]
+intro_year=1935
 BackImage[0][0][0][0][0]=g0-monuments.0.5
---------------------
+--
 Obj=building
 Name=DenkFlor
 Type=mon
 Passengers=60
 intro_year=1400
-#BackImage[Layout][x Position][y Position][Height][Phase]
 BackImage[0][0][0][0][0]=a0-monument01.0.0
 BackImage[0][0][0][0][1]=a0-monument01.0.1
 BackImage[0][0][0][0][2]=a0-monument01.0.2
---------------------
+--
 Obj=building
 Name=DenkVolker
 Type=mon
 Passengers=60
 intro_year=1400
-#BackImage[Layout][x Position][y Position][Height][Phase]
 BackImage[0][0][0][0][0]=g0-monuments.0.1
---------------------
+--
 Obj=building
 Name=DenkTomas
 Type=mon
 Passengers=60
 intro_year=1400
-#BackImage[Layout][x Position][y Position][Height][Phase]
 BackImage[0][0][0][0][0]=tomass_monument.0.0
---------------------
+--
 Obj=building
 Name=DenkHajo
 Type=mon
 Passengers=60
-intro_year=1400
-#BackImage[Layout][x Position][y Position][Height][Phase]
+intro_year=1900
 BackImage[0][0][0][0][0]=Hajo-Monument.0.0
---------------------
+--
 Obj=building
 Name=DenkMHz
 Type=mon
 Passengers=60
 intro_year=1850
-#BackImage[Layout][x Position][y Position][Height][Phase]
 BackImage[0][0][0][0][0]=MHz-Monument.0.0
---------------------
+--
+Obj=building
+Name=DenkDirk
+Type=mon
+Passengers=60
+intro_year=1920
+BackImage[0][0][0][0][0]=dirk_monument.0.0
+--
