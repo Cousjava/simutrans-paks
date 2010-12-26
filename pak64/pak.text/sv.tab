@@ -5,9 +5,11 @@
 #                             Language: sv Svenska                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 21.02 2010                           #
+#                           Date Created: 27.12 2010                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
 #                              Frank Penz - FrankP                             #
 #                                    note:                                     #
 #                           Michael Persson - Mippzon                          #
@@ -713,11 +715,11 @@ H-Trans BR103
 1Garrat
 Garratt
 1TPEllok
-F7A
+F7 A
 221A_tender
 Tender till 221A
 2Ben155
-DR BR250/DB BR155
+DR BR250
 2Diesellokomotive
 DB BR 218
 2Ellok
@@ -770,6 +772,8 @@ Br614car
 Br614 (mellanvagn)
 Br614front
 Br614 (A-ände)
+BR85
+BR86
 Bretteranhaenger
 WF Ultd. timmersläp (brädor)
 Brettertransporter
@@ -813,7 +817,7 @@ Combino spårvagn kortA
 CombinoShortB(Mc)
 Combino spårvagn kortB
 CombinoShortE(T)
-Combino spårvagn kortE
+Combino Short E dieselspårvagn
 Comet
 De Havilland 'Comet'
 Concept1Front
@@ -879,7 +883,7 @@ H-Trans Järnmalmsbil
 Erzwagen
 H-Trans Malmvagn
 F7back
-F7 Bakre Lok
+F7 A (bakre)
 FastFerry
 Svävare
 Fishing_Boat
@@ -965,7 +969,7 @@ Tender för kukStB
 kkStB110
 kukStB B110
 kkStB91
-kukStB. B91
+kukStB B91
 Klappdeckelwagen
 Övertäckbar öppen godsvagn
 Kohleanhaenger
@@ -1124,6 +1128,10 @@ X2000car
 X2000 (mellanvagn)
 X2000front
 X2000 (A-ände)
+XMail
+Kirayami X-1 Postvagn
+XTest
+Kirayami X-1
 Zeppelin
 zeppelinare
 #______________________________________way______________________________________

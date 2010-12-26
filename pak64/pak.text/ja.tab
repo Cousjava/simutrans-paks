@@ -5,9 +5,11 @@
 #                             Language: ja Japanese                            #
 #                                Encoding: UTF-8                               #
 #                               Font : m+10r.bdf                               #
-#                            Date Created: 9.09 2010                           #
+#                           Date Created: 27.12 2010                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
 #                              Frank Penz - FrankP                             #
 #                                    note:                                     #
 #                                    - Hamo73                                  #
@@ -755,7 +757,7 @@ DRG BR45 テンダ式機関車
 BR45-Tender
 DRG BR39 テンダ式機関車（テンダ）
 BR85
-DRG BR85 タンク式機関車
+DRG BR86 タンク式機関車
 Bretteranhaenger
 WF Ultd. 板材トレーラー
 Brettertransporter

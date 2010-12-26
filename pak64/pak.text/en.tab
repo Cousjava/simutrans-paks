@@ -5,11 +5,13 @@
 #                             Language: en English                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 9.09 2010                           #
+#                           Date Created: 27.12 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Alexander Brose - AlexB                           #
 #                                    note:                                     #
+#                                 André - An_dz                                #
+#                 note: Sempre verifica aonde os textos estão!                 #
 #                         Klaus Thenmayer - Bitfreezer                         #
 #                                    note:                                     #
 #                                  - Christian                                 #
@@ -40,6 +42,8 @@
 #note: if I´m not available by email to proximity.de try mail@marcus-haupt.de (#
 #                                   - Nico192                                  #
 #                                    note:                                     #
+#                                    - Paco_m                                  #
+#                                    note:                                     #
 #                           Sava Bogdanets - Sava2004                          #
 #                                    note:                                     #
 #                          Susanna Björverud - Susanna                         #
@@ -50,17 +54,21 @@
 #                                    note:                                     #
 #                       Venkatesh Parthasarathy - Venkat                       #
 #                                    note:                                     #
-#                          Ignas Brasiskis - enternald                         #
-#note: Need more lt translators.\nReikalui esant teikite si?lymus Lietuvi? kalb#
+#                                  - enternald                                 #
+#     note: Need more lt translators. Eiti ? http://simutrans-germany.com/     #
 #                               Florian - floppy                               #
 #                                    note:                                     #
 #                            Günter Beine - gebeine                            #
 #                        note: maintainer pak128.german                        #
+#                        Lorenz Van Damme - gforcetheone                       #
+#                                    note:                                     #
 #                          James E. Petts - jamespetts                         #
 #  note: Maintainer for Simutrans-Experimental. Also works on Pak128.Britain.  #
 #                            Jonas Bushart - jonasbb                           #
 #                                    note:                                     #
 #                                - jounior-fuchs                               #
+#                                    note:                                     #
+#                                   - knightly                                 #
 #                                    note:                                     #
 #                             Mark Knoester - mark                             #
 #                                    note:                                     #
@@ -69,6 +77,8 @@
 #                              Tomá? Kube? - napik                             #
 #                                    note:                                     #
 #                                    - petter                                  #
+#                                    note:                                     #
+#                             P. Hamming - phamming                            #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
 #                                    note:                                     #
@@ -274,6 +284,8 @@ COM_11_12
 Spice Shop\nThis is a shop that carries spices from faraway places. The atmosphere in the shop is worth the visit, even if you don't find a spice you like.
 Control_StationBlg
 railway control centre
+DenkDirk
+Dirk Burkholz Memorial\n\nThis monument is dedicated to Dirk Burkholz who founded the german forum in 2004 and suddenly died at 26 in 2010. He spread the word widely.
 DenkFlor
 Flor Wauters Memorial\n\nThis monument is dedicated\nto Flor 'WF Ultd.' Wauters,\nthe famous engineer who\ncreated so many great road\nand rail vehicles. He is also\nwell known for designing many\nwell working factories.\n\n
 DenkHajo
@@ -477,7 +489,7 @@ Yellow car
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
 factory_Buchgrosshandel_details
-<title>Bookshop Details</title><h1>Bookshop</h1><p>This bookshop has everything that can be printed. From a 271 volume encyclopedia over the yellow pages for the internet to the manga corner; there even the labels are written backwards ... </p>
+<title>Bookshop Details</title><h1>Bookshop</h1><p>This bookshop has everything that can be printed. From a 271 volume encyclopedia over the yellow pages for the internet to the manga corner (there, even the labels are written backwards...) </p>
 factory_Concretefactory_details
 <title>Concrete factory details</title><h1>Concrete factory</h1><p>Autoclaved Aerated concrete (AAC) is produced in this factory. The small pores that reduce weight and increase insulation originate from aluminum powder, which reacts with the water. AAC was invented in the 1920ies.</p>
 factory_Kohlegrube_details
@@ -505,7 +517,7 @@ Oil Refinery
 3Raffinerie
 Oil Refinery
 Aufwindkraftwerk
-Upwind Power Station
+Updraft Power Station
 Autohaus
 Car shop
 Autohersteller
@@ -593,9 +605,9 @@ Supermarket
 TANKE
 Gas station
 thermisches_Solarkraftwerk
-Solar Power Plant
+Concentrated Thermal Solar Power Plant
 Turmkraftwerk
-Solar Thermal Power Plant
+Tower Solar Power Plant
 Windkraftwerk
 Wind power plant
 #_____________________________________good______________________________________
@@ -821,9 +833,9 @@ Road tunnel
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
-Deutsche Bahn BR 103
+DB BR 103
 1Ben140
-Deutsche Bahn BR 140
+DB BR 140
 1Dampflokomotive
 H-Trans 0-4-0T
 1Diesellokomotive
@@ -833,13 +845,13 @@ H-Trans BR103
 1Garrat
 Garratt
 1TPEllok
-F7 A
+Empire F7 A
 221A
 JaCo 221A 4-6-0
 221A_tender
 JaCo 221A Tender
 2Ben155
-Deutsche Bahn BR 155
+DB BR250
 2Diesellokomotive
 German Railways class 218
 2Ellok
@@ -889,11 +901,11 @@ Sojo Group BR118DR
 Br234
 Brose BR234
 BR38
-BR 38
+SingCo BR 38 2-6-0
 BR38-Tender
 Tender for BR38
 BR39
-SingCo BR289 2-8-2
+SingCo BR39 2-8-2
 BR45
 SingCo BR45 2-10-2
 BR45-Tender
@@ -905,7 +917,7 @@ BR614 Passenger Car
 Br614front
 BR614 Passenger Train
 BR85
-SingCo BR85 2-6-4
+SingCo BR86 2-8-2
 Bretteranhaenger
 WF Ultd. Planks trailer
 Brettertransporter
@@ -953,7 +965,7 @@ Combino GT-4S
 CombinoShortB(Mc)
 Combino GT-4S (rear)
 CombinoShortE(T)
-Combino GT-4S Passenger Car Companion
+Combino GT-4S Diesel
 Comet
 De Havilland 'Comet'
 Concept1Front
@@ -972,6 +984,8 @@ Concept2Pass
 Concept 2 Passenger Waggon
 Concept2Rear
 Concept 2 Rear Engine
+Cooling_Container
+Refrigerated car
 Cooling_Waggon
 Food cooling waggon
 DaimlerStoll
@@ -1019,11 +1033,11 @@ Kirayami Bulk Goods Truck
 Erzwagen
 Bennhardt Hopper Car
 F7back
-Empire F7 A (rear)
+Empire F7 B-unit
 FastFerry
 Hermes Ferry
 Fishing_Boat
-Fishing Trawler
+Fishing ship
 Fishing_Boat_DanMacK
 Fishing boat
 Flachwagen
@@ -1146,6 +1160,8 @@ Mailwagon
 Empire "Alto" Mail Car
 Milk_Truck
 Milk truck
+Milk_Waggon
+Milk car
 Moebelschiff
 RavenCo Crate Freighter
 Moebelwagen
@@ -1171,9 +1187,9 @@ SimCo Bulk Gondola
 OldOil
 Kahan Tanker Car
 Ox2
-Horses (2)
+Oxen (2)
 Ox4
-Horses (4)
+Oxen (4)
 Papieranhaenger
 H-Trans Paper Trailer
 Papiertransporter
@@ -1237,7 +1253,7 @@ Bernhardt-Empire T-13
 T21_bus
 Empire T-21 Bus
 T24
-RK Ltd. T-24
+T-24
 Tanklastzug
 H-trans Tanker Truck
 Tatra-T4
@@ -1245,9 +1261,9 @@ Tatra T-4
 Tatra-T4_Wagon
 Tatra T-4 (car)
 TB13
-Bernhardt T-13 (car)
+T-13 (car)
 TB24
-RK Ltd. T-24 (car)
+T-24 (car)
 teaclipper
 Freight Clipper
 TPBeiwagen
@@ -1260,6 +1276,8 @@ Tram_GT6_Ende
 Autocar GT-6 (rear)
 Tram_GT6_Kopf
 Autocar GT-6
+Trike
+Motorized delivery tricycle
 Tugboat
 SimCo Tugboat
 Ucy
@@ -1269,11 +1287,11 @@ Ikarus FH12 Flat-nose Semi
 waste wagon
 SimCo Waste Hopper
 X2000back
-X-ray 2000 Passenger Train (rear)
+X2000 Rear
 X2000car
-X-ray 2000 Passenger Car
+X2000 Passenger Car
 X2000front
-X-ray 2000 Passenger Train
+X2000 Front
 XMail
 Kirayami X-1 Mail Car
 XTest

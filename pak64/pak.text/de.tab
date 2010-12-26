@@ -5,7 +5,7 @@
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 5.08 2010                           #
+#                           Date Created: 27.12 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Alexander Brose - AlexB                           #
@@ -44,6 +44,8 @@
 #                                    note:                                     #
 #                                   - Nico192                                  #
 #                                    note:                                     #
+#                                    - Paco_m                                  #
+#                                    note:                                     #
 #                                 compo - compo                                #
 #                                    note:                                     #
 #                               Florian - floppy                               #
@@ -68,6 +70,8 @@
 #                                    note:                                     #
 #                               Sven Osada - sojo                              #
 #                         note: maintainer pak96.comic                         #
+#                                     - test                                   #
+#                                    note:                                     #
 #                                 - transporter                                #
 #                                    note:                                     #
 #                           Werner Brandt - wernieman                          #
@@ -258,6 +262,8 @@ COM_10_12
 Zwei Pferde stehen vor der\nSchmiede. Auch sie wollen\nbeschlagen werden, aber\nbekannt ist Schmied Ambros\nvor allem für seine kunstvollen\nGeländer.\n
 Control_StationBlg
 Stellwerk
+DenkDirk
+Dirk Burkholz Denkmal\n\nDirk Burgholz gründete das Deutsche Forum 2004 und administrierte es bis zu seinem plötzlichen Tod 2010.
 DenkFlor
 Flor-Wauters-Denkmal\n\nDieses Denkmal ist Flor 'WF Ultd.'\nWauters, dem berühmten\nIngenieur,  der so viele\ngrossartige Straßen- und\nSchienenfahrzeuge\ngeschaffen hat, gewidmet. Er ist\nebenfalls bekannt, viele tadellos\nlaufende Fabriken entworfen zu\nhaben.\n
 DenkHajo
@@ -944,22 +950,30 @@ Book_Trike
 Dreirädriger Lieferwagen
 Boxcar
 Stückgutwagen
+BR01
+Br01
 Br118DR
-BR 118 DR
+Br118 DR
 Br234
-BR 234
+Br234 DR
 BR38
-BR 38 (Pr. P8)
+Br38 (Pr. P8)
 BR38-Tender
-BR38 Tender
+Br38 Tender
+BR39
+Br39
+BR45
+Br45
 BR45-Tender
 BR45 Tender
 Br614back
-BR 614 ( hinten )
+Br614
 Br614car
-BR 614 ( mitte )
+Br614
 Br614front
-BR 614 ( vorn )
+Br614
+BR85
+Br86
 Bretteranhaenger
 WF Ultd. Bretteranhänger
 Brettertransporter

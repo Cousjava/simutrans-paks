@@ -1,13 +1,15 @@
-################################################################################
+Â§################################################################################
 #                                                                              #
 #                Simutrans Scenario Specific Translation File                  #
 #                                Scenario: pak64                               #
 #                              Language: hu Magyar                             #
-#                             Encoding: ISO-8859-2                             #
-#                            Font : prop-latin2.fnt                            #
-#                            Date Created: 5.08 2010                           #
+#                                Encoding: UTF-8                               #
+#                                Font : cyr.bdf                                #
+#                           Date Created: 27.12 2010                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
 #                              Frank Penz - FrankP                             #
 #                                    note:                                     #
 #                                   - LeitnerI                                 #
@@ -21,243 +23,243 @@
 #____________________________________bridge_____________________________________
 #____________________________________bridge_____________________________________
 ClassicRail
-Beton vasúti híd
+Beton vasÃºti hÃ­d
 ClassicRoad
-Beton közúti híd
+Beton kÃ¶zÃºti hÃ­d
 koka_Bridge_single
 Viadukt
 MaglevBridge
-Mágnesvasúti híd
+MÃ¡gnesvasÃºti hÃ­d
 mlm_concrete_bridge
-Beton nyeregvasút híd
+Beton nyeregvasÃºt hÃ­d
 ModernRoad
-Modern közúti híd
+Modern kÃ¶zÃºti hÃ­d
 MonorailRamp
-Nyeregvasút felhajtó sín
+NyeregvasÃºt felhajtÃ³ sÃ­n
 PowerBridge
-Áthidaló villanyvezeték
+ÃthidalÃ³ villanyvezetÃ©k
 Schiffhebewerk
-Hajó darú
+HajÃ³ darÃº
 SteelRail
-Acél vasúti híd
+AcÃ©l vasÃºti hÃ­d
 tb_classic_road
-Beton közúti híd
+Beton kÃ¶zÃºti hÃ­d
 ViaductRail
-K? viadukt
+KÃµ viadukt
 WoodenRoad
 Gerenda viadukt
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 00_01_CITY
-Városháza
+VÃ¡roshÃ¡za
 01_CITY
-Városháza
+VÃ¡roshÃ¡za
 02_CITY
-Városháza
+VÃ¡roshÃ¡za
 03_CITY
-Városháza
+VÃ¡roshÃ¡za
 03_CITY_A
-Városháza
+VÃ¡roshÃ¡za
 03_CITY_B
-Városháza
+VÃ¡roshÃ¡za
 03_CITY_C
-Városháza
+VÃ¡roshÃ¡za
 04_CITY
-Városháza
+VÃ¡roshÃ¡za
 04_CITY_A
-Városháza
+VÃ¡roshÃ¡za
 04_CITY_B
-Városháza
+VÃ¡roshÃ¡za
 04_CITY_C
-Városháza
+VÃ¡roshÃ¡za
 1930AirDepot
-Légi depó (1930)
+LÃ©gi depÃ³ (1930)
 1headquarter
-Cégközpont
+CÃ©gkÃ¶zpont
 2headquarter
-Cégközpont
+CÃ©gkÃ¶zpont
 3headquarter
-Cégközpont
+CÃ©gkÃ¶zpont
 A1_ALTE_KIRCHE
-Régi templom.\n\n\n
+RÃ©gi templom.\n\n\n
 A2_SCHLOSS1
-Bolond király kastélya.\n\n\n
+Bolond kirÃ¡ly kastÃ©lya.\n\n\n
 A3_BURG1
 Templom rom\n\n\n
 A4_SCHLOSS2
-Palotakút\n\n\n
+PalotakÃºt\n\n\n
 A5_STONEHENGE
-?si menhir.\n\n\n
+Ã•si menhir.\n\n\n
 A6_DOME
-Régi katedrális.\n\n\n
+RÃ©gi katedrÃ¡lis.\n\n\n
 AirDepot
-Hangár
+HangÃ¡r
 AirportShed1930
-Reptéri postaépület (1901)
+ReptÃ©ri postaÃ©pÃ¼let (1901)
 AirStop
-Repül? dokkoló\n\n
+RepÃ¼lÃµ dokkolÃ³\n\n
 AirTerminal477
-Reptéri fogadócsarnok (1950)
+ReptÃ©ri fogadÃ³csarnok (1950)
 Avila_Big_StationBlg
-Nagy váróterem építése
+Nagy vÃ¡rÃ³terem Ã©pÃ­tÃ©se
 Avila_Small_StationBlg
-Kis váróterem építése
+Kis vÃ¡rÃ³terem Ã©pÃ­tÃ©se
 Avila_Warehouse_StationBlg
-Raktár építése
+RaktÃ¡r Ã©pÃ­tÃ©se
 BigPostOffice
 Nagy Postahivatal.
 BigTerminal477
-Nagy fogadócsarnok.
+Nagy fogadÃ³csarnok.
 Bulk_StationBlg
-Nyersanyag tároló
+Nyersanyag tÃ¡rolÃ³
 BusStop
-Buszmegálló\n\n
+BuszmegÃ¡llÃ³\n\n
 Car_StationBlg
-Parkoló építése
+ParkolÃ³ Ã©pÃ­tÃ©se
 CarDepot
-Kocsi depó
+Kocsi depÃ³
 CarStop
-Kocsi megálló\n\n
+Kocsi megÃ¡llÃ³\n\n
 ChannelStop
-Csatorna megálló
+Csatorna megÃ¡llÃ³
 COM_02_16
-Irodaház.\n\nNem túl modern és az irodák \nis kicsik az épületben.\n
+IrodahÃ¡z.\n\nNem tÃºl modern Ã©s az irodÃ¡k \nis kicsik az Ã©pÃ¼letben.\n
 Control_StationBlg
-Vezérl?torony építése
+VezÃ©rlÃµtorony Ã©pÃ­tÃ©se
 DenkFlor
-Flor WF Ultd.' Wautersnek  a\nkedves mérnöknek  ki oly\nsok járm?vet  tervezett.\n\n\n
+Flor WF Ultd.' Wautersnek  a\nkedves mÃ©rnÃ¶knek  ki oly\nsok jÃ¡rmÃ»vet  tervezett.\n\n\n
 DenkHajo
-Emlékm? a zseniális Hajonak,\nkinek köszönhet?en ez a\njáték megszületett.\n\n\n
+EmlÃ©kmÃ» a zseniÃ¡lis Hajonak,\nkinek kÃ¶szÃ¶nhetÃµen ez a\njÃ¡tÃ©k megszÃ¼letett.\n\n\n
 DenkMHz
-Emlékm? a Simutrans egyik\nf? tervez?mérn?kének :)\n\n\n
+EmlÃ©kmÃ» a Simutrans egyik\nfÃµ tervezÃµmÃ©rnÃµkÃ©nek :)\n\n\n
 DenkOwen
-Ezt Owen Rudge-nak\ndedikáljuk a híres pénzügyi \nszakembernek.\n\n\n
+Ezt Owen Rudge-nak\ndedikÃ¡ljuk a hÃ­res pÃ©nzÃ¼gyi \nszakembernek.\n\n\n
 DenkSeth
-Ez itt Seth C. Triggs\nremekm?ve.\n\n\n
+Ez itt Seth C. Triggs\nremekmÃ»ve.\n\n\n
 DenkTomas
-Tomas Kubesnak  a kedves\nsegítségért.\n\n\n
+Tomas Kubesnak  a kedves\nsegÃ­tsÃ©gÃ©rt.\n\n\n
 DenkTrikky
-Ez Trikky' Rick McGreal \nemlékm?ve.\n\n\n
+Ez Trikky' Rick McGreal \nemlÃ©kmÃ»ve.\n\n\n
 DenkVM
-Ezt Manfred VT Vienna' \nTomaschitznak emeltük.\n\n\n
+Ezt Manfred VT Vienna' \nTomaschitznak emeltÃ¼k.\n\n\n
 DenkVolker
-Ez az épület Volker Meyer \nm?ve.\n\n\n
+Ez az Ã©pÃ¼let Volker Meyer \nmÃ»ve.\n\n\n
 Eingang
-Bejárat
+BejÃ¡rat
 Feste
-Konuberts er?d.\n\nEzt az er?döt az 1400-as \névek körül építették.\n\n\n\n
+Konuberts erÃµd.\n\nEzt az erÃµdÃ¶t az 1400-as \nÃ©vek kÃ¶rÃ¼l Ã©pÃ­tettÃ©k.\n\n\n\n
 Fluid_StationBlg
-Víztároló
+VÃ­ztÃ¡rolÃ³
 FreightShipStop
-Teherhajó megálló
+TeherhajÃ³ megÃ¡llÃ³
 FreightTrainStop
-Tehervonat megálló
+Tehervonat megÃ¡llÃ³
 Gas_StationBlg
-Üzemanyag tároló
+Ãœzemanyag tÃ¡rolÃ³
 GCG1TrainStop
-Vasúti félfedett megálló (bal)
+VasÃºti fÃ©lfedett megÃ¡llÃ³ (bal)
 GCG2TrainStop
-Vasúti félfedett megálló (jobb)
+VasÃºti fÃ©lfedett megÃ¡llÃ³ (jobb)
 Goods_StationBlg
-Általános tároló
+ÃltalÃ¡nos tÃ¡rolÃ³
 Gymnasium
-Középiskola.\n\n\n
+KÃ¶zÃ©piskola.\n\n\n
 IND_01_01
-Ingyenes parkoló. \nSok ember itt \nhagyja a régi \nautóját.\n\n\n
+Ingyenes parkolÃ³. \nSok ember itt \nhagyja a rÃ©gi \nautÃ³jÃ¡t.\n\n\n
 LargeShipStop
-Óriáskiköt?
+Ã“riÃ¡skikÃ¶tÃµ
 leftShipStop
-Rakodó daru
+RakodÃ³ daru
 LeuchtturmShipStop
-Világítótornyos kiköt?
+VilÃ¡gÃ­tÃ³tornyos kikÃ¶tÃµ
 Lighthouse
-Világítótorony.\n\n\n
+VilÃ¡gÃ­tÃ³torony.\n\n\n
 MainTerminal1930
-F? várócsarnok (1930)
+FÃµ vÃ¡rÃ³csarnok (1930)
 MHzSmallStation
-Kis megálló
+Kis megÃ¡llÃ³
 ModernAirTerminal477
-Modern légi terminál
+Modern lÃ©gi terminÃ¡l
 MonorailDepot
-Nyeregvasút depó
+NyeregvasÃºt depÃ³
 MonorailFoundation
-Nyeregvasút alap
+NyeregvasÃºt alap
 MonorailGround
-Nyeregvasút talaj
+NyeregvasÃºt talaj
 OldTownhall
-Régi városháza.\n\n\n
+RÃ©gi vÃ¡roshÃ¡za.\n\n\n
 Patricks_Rock
-Patrick Sziklája.\n\n\n
+Patrick SziklÃ¡ja.\n\n\n
 PlainAirStop
-Repül? megálló
+RepÃ¼lÃµ megÃ¡llÃ³
 PostOffice
 Posta
 PostStop
-Posta megálló
+Posta megÃ¡llÃ³
 PSFreightTrainStop
-Teher pályaudvar
+Teher pÃ¡lyaudvar
 PSHall1TrainStop
-Pályaudvar kis bodéval
+PÃ¡lyaudvar kis bodÃ©val
 PSHall2TrainStop
-Nagy pályaudvar
+Nagy pÃ¡lyaudvar
 rampShipStop
-lejt?s rakpart
+lejtÃµs rakpart
 Raven_Kirche
 Raven temploma.\n\n\n
 Residenz
-Rezidencia.\n\nYoga Guru ezen a helyen\ntanítja \na meditációt és a bels? \nbékéhez vezet? utat.\n\n\n\n
+Rezidencia.\n\nYoga Guru ezen a helyen\ntanÃ­tja \na meditÃ¡ciÃ³t Ã©s a belsÃµ \nbÃ©kÃ©hez vezetÃµ utat.\n\n\n\n
 rightShipStop
-Rakpart hullámtör?vel
+Rakpart hullÃ¡mtÃ¶rÃµvel
 RUIN_0
-Középkori rom\n\n\n
+KÃ¶zÃ©pkori rom\n\n\n
 SandStationMHz
-Homoktározó
+HomoktÃ¡rozÃ³
 ShipDepot
-Hajó depó
+HajÃ³ depÃ³
 ShipDepotEW
-Hajó depó (Kelet-Nyugat)\n\n
+HajÃ³ depÃ³ (Kelet-Nyugat)\n\n
 ShipStop
-Kiköt?
+KikÃ¶tÃµ
 STADIUM2
-Rögbipálya\n\n\n
+RÃ¶gbipÃ¡lya\n\n\n
 Tennis_Court
-Tennis aréna.\n\n\n
+Tennis arÃ©na.\n\n\n
 Terminal1930
-Terminál (1930)
+TerminÃ¡l (1930)
 Theatre
-Színház\n\n\n
+SzÃ­nhÃ¡z\n\n\n
 Tower1930
-Irányítótorony (1930)
+IrÃ¡nyÃ­tÃ³torony (1930)
 TowerMoistboy
-Irányítótorony
+IrÃ¡nyÃ­tÃ³torony
 TrainDepot
-Vasúti depó
+VasÃºti depÃ³
 TrainStop
-Vasúti megálló\n\n
+VasÃºti megÃ¡llÃ³\n\n
 TrainStopMaglev
-Maglev megálló
+Maglev megÃ¡llÃ³
 TrainStopMaglevIndicator
-Maglev megálló információs táblával
+Maglev megÃ¡llÃ³ informÃ¡ciÃ³s tÃ¡blÃ¡val
 TramDepot
-Villamos depó
+Villamos depÃ³
 VictorianStation
-Viktoriánus megálló
+ViktoriÃ¡nus megÃ¡llÃ³
 Vorplatz
-El?tér
+ElÃµtÃ©r
 Windmill
-Szélmalom\n\n\n
+SzÃ©lmalom\n\n\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
-Ment?autó
+MentÃµautÃ³
 FordT
 Ford T-modell
 green_car
-Zöld autó
+ZÃ¶ld autÃ³
 Motorrad
 Motor
 orange_bus
-VW Caraván
+VW CaravÃ¡n
 Pickup
 Nissan B2500 Pickup
 Roadster
@@ -267,107 +269,107 @@ Trabant 601
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
 factory_Cementmill_details
-Cementgyár
+CementgyÃ¡r
 factory_fish_pond_details
-<title>Halastó, halnevelõ leírása</title><h1>Halastó</h1><p>Természetes és mesterséges tavak ahol halakat tenyésztenek.</p><p>A középkori Európában az erõdöknél, kolostoroknál és a kastélyoknál is elterjedt volt, ahol a többnyire önellátó kolóniák éltek. Mostanában inkább kelet Ázsiában népszerû (fõként Japánban), ahol a koi pontyot lehet tartani.</p><p>Ezekben a tavakban nevelik a halakat, majd lehalásszák, aztán szállítják, végül pedig feldolgozzák élelmiszerré. Az ilyen tavakban tilos úszni.</p><p>Ezek a telepek fejlett agrárkultúrával rendelkeznek fõleg a fotoszintetizáció terén, mivel a halakat nem csak mesterséges táplálékkal etetik.</p><p>\n
+<title>HalastÃ³, halnevelÅ‘ leÃ­rÃ¡sa</title><h1>HalastÃ³</h1><p>TermÃ©szetes Ã©s mestersÃ©ges tavak ahol halakat tenyÃ©sztenek.</p><p>A kÃ¶zÃ©pkori EurÃ³pÃ¡ban az erÅ‘dÃ¶knÃ©l, kolostoroknÃ¡l Ã©s a kastÃ©lyoknÃ¡l is elterjedt volt, ahol a tÃ¶bbnyire Ã¶nellÃ¡tÃ³ kolÃ³niÃ¡k Ã©ltek. MostanÃ¡ban inkÃ¡bb kelet ÃzsiÃ¡ban nÃ©pszerÅ± (fÅ‘kÃ©nt JapÃ¡nban), ahol a koi pontyot lehet tartani.</p><p>Ezekben a tavakban nevelik a halakat, majd lehalÃ¡sszÃ¡k, aztÃ¡n szÃ¡llÃ­tjÃ¡k, vÃ©gÃ¼l pedig feldolgozzÃ¡k Ã©lelmiszerrÃ©. Az ilyen tavakban tilos Ãºszni.</p><p>Ezek a telepek fejlett agrÃ¡rkultÃºrÃ¡val rendelkeznek fÅ‘leg a fotoszintetizÃ¡ciÃ³ terÃ©n, mivel a halakat nem csak mestersÃ©ges tÃ¡plÃ¡lÃ©kkal etetik.</p><p>\n
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
-Finomító
+FinomÃ­tÃ³
 3Raffinerie
-Olajfeldolgozó
+OlajfeldolgozÃ³
 Autohaus
-Autó szalon
+AutÃ³ szalon
 Autohersteller
-Autógyár
+AutÃ³gyÃ¡r
 bakery
-Pékség
+PÃ©ksÃ©g
 brewery
-Palackozó üzem
+PalackozÃ³ Ã¼zem
 Buchgrosshandel
-Könyvkereskedés
+KÃ¶nyvkereskedÃ©s
 cannery
-Konzervgyár
+KonzervgyÃ¡r
 Cementmill
-Cementgyár
+CementgyÃ¡r
 ChemicalPlant
-Vegyiüzem
+VegyiÃ¼zem
 CHEMIST
 Patika
 Concretefactory
-Betonkever? üzem
+BetonkeverÃµ Ã¼zem
 cow_farm
-Tehén farm
+TehÃ©n farm
 dairy
 Tejcsarnok
 Druckerei
 Nyomda
 Erzbergwerk
-Vasércbánya
+VasÃ©rcbÃ¡nya
 fish_pond
-Halastó
+HalastÃ³
 fish_swarm
 Halraj
 food_processing_plant
-Élelmiszer üzem
+Ã‰lelmiszer Ã¼zem
 grain_farm
-Gabona mezõ
+Gabona mezÅ‘
 grain_mill
 Malom
 grain_windmill
-Szélmalom
+SzÃ©lmalom
 Kohlegrube
-Szénbánya
+SzÃ©nbÃ¡nya
 Kohlekraftwerk
-Szénf?tés? h?er?m?
+SzÃ©nfÃ»tÃ©sÃ» hÃµerÃµmÃ»
 Materialswholesale
-Tüzéptelep
+TÃ¼zÃ©ptelep
 Moebelfabrik
-Bútor üzem
+BÃºtor Ã¼zem
 Moebelhaus
-Lakberendezési Központ
+LakberendezÃ©si KÃ¶zpont
 Nutzwald
-Faültetvény
+FaÃ¼ltetvÃ©ny
 Oelbohrinsel
-Olajfúró torony
+OlajfÃºrÃ³ torony
 Oelfeld
-Olajmez?
+OlajmezÃµ
 Oelkraftwerk
-Olajf?tés? h?er?m?
+OlajfÃ»tÃ©sÃ» hÃµerÃµmÃ»
 Oelpumpe
-Olajkút
+OlajkÃºt
 Papierfabrik
-Papírgyár
+PapÃ­rgyÃ¡r
 Pharmaceutics
-Gyógyszergyár
+GyÃ³gyszergyÃ¡r
 Raffinerie
-Olajfeldolgozó
+OlajfeldolgozÃ³
 Saegewerk
-F?részmalom
+FÃ»rÃ©szmalom
 SaegewerkMHz
-F?résztelep
+FÃ»rÃ©sztelep
 Sandquarry
-Homokbánya
+HomokbÃ¡nya
 Stahlwerk
-Acélkohó
+AcÃ©lkohÃ³
 Stonequarry
-K?bánya
+KÃµbÃ¡nya
 supermarket
 Szupermarket
 TANKE
-Benzinkút
+BenzinkÃºt
 Windkraftwerk
-Széler?m?
+SzÃ©lerÃµmÃ»
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
-autók
+autÃ³k
 beer
-sör
+sÃ¶r
 Bretter
 deszka
 Buecher
-könyvek
+kÃ¶nyvek
 canned_food
 konzerv
 Cement
@@ -377,61 +379,61 @@ vegyszerek
 Concrete
 beton
 Eisenerz
-vasérc
+vasÃ©rc
 fish
 hal
 flour
 liszt
 food
-élelem
+Ã©lelem
 Gasoline
-üzemanyag
+Ã¼zemanyag
 grain
 gabona
 Holz
-rönk
+rÃ¶nk
 Kohle
-szén
+szÃ©n
 meat
-hús
+hÃºs
 Medicine
-gyógyszerek
+gyÃ³gyszerek
 milk
 tej
 Moebel
-bútor
+bÃºtor
 None
 semmi
 Oel
 olaj
 Papier
-papír
+papÃ­r
 Passagiere
 Utas
 Plastik
-m?anyag
+mÃ»anyag
 Post
 Posta
 PrintersInk
-nyomdafesték
+nyomdafestÃ©k
 Sand
 homok
 Stahl
-acél
+acÃ©l
 Stone
-k?
+kÃµ
 waste
-szemét
+szemÃ©t
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
 rocks
-Kövek
+KÃ¶vek
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Couple
-Pár
+PÃ¡r
 Cyclist
-Kerékpáros
+KerÃ©kpÃ¡ros
 pedestrian_1
 Gyalogos
 pedestrian_2
@@ -445,55 +447,55 @@ Gyerek
 pedestrian_dog
 Kutya
 Woman
-N?
+NÃµ
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
-darabáru
+darabÃ¡ru
 CATEGORY_02
 nyersanyag
 CATEGORY_03
-olajszármazék
+olajszÃ¡rmazÃ©k
 CATEGORY_04
-h?tött áru
+hÃ»tÃ¶tt Ã¡ru
 CATEGORY_05
-folyékony élelmiszer
+folyÃ©kony Ã©lelmiszer
 CATEGORY_06
-faárú
+faÃ¡rÃº
 CATEGORY_07
-por/granulátum
+por/granulÃ¡tum
 rolls
 tekercs
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 choose_point
-Útválsztó tábla
+ÃštvÃ¡lsztÃ³ tÃ¡bla
 ChooseSignals
 Szemafor
 ChooseSignalsMonorail
-Nyeregvasút szemafor
+NyeregvasÃºt szemafor
 Endofchoosetrack
-Útvonaljelz? tábla
+ÃštvonaljelzÃµ tÃ¡bla
 LongBlockSignals
-Szemafor bakterházzal
+Szemafor bakterhÃ¡zzal
 Minimum80
-Minimum 80 km/ó forgalmi tábla
+Minimum 80 km/Ã³ forgalmi tÃ¡bla
 NoAirEntry
 Behajtani tilos!
 NoEntry
-Nem bejárat
+Nem bejÃ¡rat
 preSignals
-El? forgalmi jelz?
+ElÃµ forgalmi jelzÃµ
 preSignalsMonorail
-Nyeregvasút el?jelz? szemafor
+NyeregvasÃºt elÃµjelzÃµ szemafor
 RailClose
-Vágányzár
+VÃ¡gÃ¡nyzÃ¡r
 Signals
-Forgalmi jelz?k
+Forgalmi jelzÃµk
 SignalsMonorail
-Nyeregvasút szemafor
+NyeregvasÃºt szemafor
 traffic_light
-Forgalmi fényjelz?
+Forgalmi fÃ©nyjelzÃµ
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Ahorn-1
@@ -503,91 +505,91 @@ Juhar\n\n\n
 Ahorn-Gruppe
 Juhar\n\n\n
 Birke-1
-nyírfa\n\n\n
+nyÃ­rfa\n\n\n
 Buche-1
-Bükk\n\n\n
+BÃ¼kk\n\n\n
 Busch_2
 bokor\n\n\n
 Kiefer_1
-erdeifeny?\n\n\n
+erdeifenyÃµ\n\n\n
 Kiefer_2
-erdeifeny?\n\n\n
+erdeifenyÃµ\n\n\n
 Kiefer_3
-erdeifeny?\n\n\n
+erdeifenyÃµ\n\n\n
 Kiefer_4
-erdeifeny?\n\n\n
+erdeifenyÃµ\n\n\n
 Kiefer_5
-erdeifeny?\n\n\n
+erdeifenyÃµ\n\n\n
 Latschenkiefer
-Lucfeny?\n\n\n
+LucfenyÃµ\n\n\n
 Palmtree1
-Pálma\n\n\n
+PÃ¡lma\n\n\n
 Palmtree2
-Pálmafa.\n\n\n
+PÃ¡lmafa.\n\n\n
 Palmtree3
-Pálmafa.\n\n\n
+PÃ¡lmafa.\n\n\n
 Palmtree4
-Pálmafa.\n\n\n
+PÃ¡lmafa.\n\n\n
 Palmtree5
-Pálmafa.\n\n\n
+PÃ¡lmafa.\n\n\n
 Palmtree6
-Pálmafa.\n\n\n
+PÃ¡lmafa.\n\n\n
 Palmtree7
-Pálmafa.\n\n\n
+PÃ¡lmafa.\n\n\n
 Pappel-1
-nyárfa\n\n\n
+nyÃ¡rfa\n\n\n
 Pappel-2
-nyárfa\n\n\n
+nyÃ¡rfa\n\n\n
 Shunter-tree2
-villámcsapott fa\n\n\n
+villÃ¡mcsapott fa\n\n\n
 Tanne_1
-Feny?\n\n\n
+FenyÃµ\n\n\n
 Tanne_2
-Erdeifeny?\n\n\n
+ErdeifenyÃµ\n\n\n
 Tanne_3
-Havasifeny?\n\n\n
+HavasifenyÃµ\n\n\n
 Tanne_4
-Lucfeny?\n\n\n
+LucfenyÃµ\n\n\n
 Tanne_5
-Hegyifeny?\n\n\n
+HegyifenyÃµ\n\n\n
 Tanne_6
-Ezüstfeny?\n\n\n
+EzÃ¼stfenyÃµ\n\n\n
 Tree4
 Juharfa\n\n\n
 Tree5
 Somfa\n\n\n
 Tree6
-Vörös feny?\n\n\n
+VÃ¶rÃ¶s fenyÃµ\n\n\n
 tropictree1
-Trópusi fa.\n\n\n
+TrÃ³pusi fa.\n\n\n
 tropictree2
-Trópusi fa.\n\n\n
+TrÃ³pusi fa.\n\n\n
 tropictree3
-Trópusi fa.\n\n\n
+TrÃ³pusi fa.\n\n\n
 tropictree4
-Trópusi fa.\n\n\n
+TrÃ³pusi fa.\n\n\n
 tropictree5
-Trópusi fa.\n\n\n
+TrÃ³pusi fa.\n\n\n
 tropictree6
-Trópusi fa.\n\n\n
+TrÃ³pusi fa.\n\n\n
 tropictree7
-Trópusi fa.\n\n\n
+TrÃ³pusi fa.\n\n\n
 tropictree8
-Trópusi fa.\n\n\n
+TrÃ³pusi fa.\n\n\n
 tropictree9
-Trópusi fa.\n\n\n
+TrÃ³pusi fa.\n\n\n
 Willow
-f?zfa\n\n\n
+fÃ»zfa\n\n\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel
-Gyorsvasúti alagút
+GyorsvasÃºti alagÃºt
 FastRoadTunnel
-Autópálya alagút
+AutÃ³pÃ¡lya alagÃºt
 RailTunnel
-Vasúti alagút
+VasÃºti alagÃºt
 RoadTunnel
-Közúti alagút
+KÃ¶zÃºti alagÃºt
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -595,17 +597,17 @@ Ben-103 mozdony
 1Ben140
 Ben-140 mozdony
 1Dampflokomotive
-G?zmozdony-A
+GÃµzmozdony-A
 1Diesellokomotive
 Mozdony-B
 1Ellok
 Ellok-3 mozdony
 1Garrat
-RVg Garratt (els?)
+RVg Garratt (elsÃµ)
 1TPEllok
-Ellok-1 mozdony (els?)
+Ellok-1 mozdony (elsÃµ)
 221A
-AC16 221A g?zmozdony
+AC16 221A gÃµzmozdony
 221A_tender
 AC16 221A szerkocsi
 2Ben155
@@ -615,271 +617,271 @@ Mozdony-C
 2Ellok
 Ellok-4 mozdony
 2Garrat
-RVg Garratt (középs?)
+RVg Garratt (kÃ¶zÃ©psÃµ)
 3Ben185
 Ben-185 mozdony
 3Diesellokomotive
 Mozdony-A
 3Garrat
-RVg Garratt (hátsó)
+RVg Garratt (hÃ¡tsÃ³)
 707
-Boeing 707 repül?gép
+Boeing 707 repÃ¼lÃµgÃ©p
 A3-5
-A3-5 g?zmozdony
+A3-5 gÃµzmozdony
 A3-5_tender
 A3-5 szerkocsi
 A380
-Airbus A-380 repül?gép
+Airbus A-380 repÃ¼lÃµgÃ©p
 Adler
-Adler g?zmozdony
+Adler gÃµzmozdony
 AdlerPersonenwagen
-Adler személykocsi
+Adler szemÃ©lykocsi
 Autotrailer
-autószállító trailer
+autÃ³szÃ¡llÃ­tÃ³ trailer
 Autotransportanhaenger
-Autószállító utánfutó
+AutÃ³szÃ¡llÃ­tÃ³ utÃ¡nfutÃ³
 Autotransporter
-Autószállító kocsi
+AutÃ³szÃ¡llÃ­tÃ³ kocsi
 Autotransportwagen
-Autószállító vagon
+AutÃ³szÃ¡llÃ­tÃ³ vagon
 BB1280
 SNCF BB 1280 elektromos mozdony
 Be5-7
 Be5-7 mozdony
 Blimp
-Léghajó
+LÃ©ghajÃ³
 Book_Trike
-Könyvszállító teherautó
+KÃ¶nyvszÃ¡llÃ­tÃ³ teherautÃ³
 Boxcar
-Könyvszállító vagon
+KÃ¶nyvszÃ¡llÃ­tÃ³ vagon
 BR01
-Baureihe BR-01 g?zmozdony
+Baureihe BR-01 gÃµzmozdony
 Br234
 BR-234 mozdony
 BR38
-Baureihe BR-38 g?zmozdony
+Baureihe BR-38 gÃµzmozdony
 BR38-Tender
 Baureihe BR-38 szerkocsi
 BR39
-Baureihe BR-39 g?zmozdony
+Baureihe BR-39 gÃµzmozdony
 BR45
-Baureihe BR-45 g?zmozdony
+Baureihe BR-45 gÃµzmozdony
 BR45-Tender
 Baureihe BR-45 szerkocsi
 Br614back
-BR-614 motorvonat (hátsó)
+BR-614 motorvonat (hÃ¡tsÃ³)
 Br614car
-BR-614 motorvonat (közép)
+BR-614 motorvonat (kÃ¶zÃ©p)
 Br614front
-BR-614 motorvonat (els?)
+BR-614 motorvonat (elsÃµ)
 BR85
-Baureihe BR-85 g?zmozdony
+Baureihe BR-86 gÃµzmozdony
 Bretteranhaenger
-Faáruszállító-B utánfutó
+FaÃ¡ruszÃ¡llÃ­tÃ³-B utÃ¡nfutÃ³
 Brettertransporter
-Faáruszállító-B kocsi
+FaÃ¡ruszÃ¡llÃ­tÃ³-B kocsi
 Bretterwagen
-Faáruszállító-B vagon
+FaÃ¡ruszÃ¡llÃ­tÃ³-B vagon
 BRV36
-Baureihe V36/236 dízelmozdony
+Baureihe V36/236 dÃ­zelmozdony
 Buchanhaenger
-Serj/H-Trans könyvszállító utánfutó
+Serj/H-Trans kÃ¶nyvszÃ¡llÃ­tÃ³ utÃ¡nfutÃ³
 Buchtrailer
-Darabárúszállító-B utánfutó
+DarabÃ¡rÃºszÃ¡llÃ­tÃ³-B utÃ¡nfutÃ³
 Buchtrailer2
-Darabárúszállító-D utánfutó
+DarabÃ¡rÃºszÃ¡llÃ­tÃ³-D utÃ¡nfutÃ³
 Buchtransporter
-Darabáruszállító-B kocsi
+DarabÃ¡ruszÃ¡llÃ­tÃ³-B kocsi
 Buchwagen
-Darabáruszállító-B vagon
+DarabÃ¡ruszÃ¡llÃ­tÃ³-B vagon
 Buessig
 HAJO Buessig busz
 BuessingLinie
 L busz
 Bulkcarriage
-Nyersanyagszállitó
+NyersanyagszÃ¡llitÃ³
 Bus
 Busz-B
 CarFlat
-Autószállító vagon
+AutÃ³szÃ¡llÃ­tÃ³ vagon
 Cargosprinter-Front
-Baureihe BR-690 (Cargo-Sprinter) könyvszállító (els?)
+Baureihe BR-690 (Cargo-Sprinter) kÃ¶nyvszÃ¡llÃ­tÃ³ (elsÃµ)
 Cargosprinter-Mittel
-Baureihe BR-690 (Cargo-Sprinter) könyvszállító (középs?)
+Baureihe BR-690 (Cargo-Sprinter) kÃ¶nyvszÃ¡llÃ­tÃ³ (kÃ¶zÃ©psÃµ)
 Cargosprinter-Steuer
-Baureihe BR-690 (Cargo-Sprinter) könyvszállító (hátsó)
+Baureihe BR-690 (Cargo-Sprinter) kÃ¶nyvszÃ¡llÃ­tÃ³ (hÃ¡tsÃ³)
 Cementtrailer
-Cementszállító-B utánfutó
+CementszÃ¡llÃ­tÃ³-B utÃ¡nfutÃ³
 CombinoShort(T)
-Siemens Combino villamos (kicsi els?)
+Siemens Combino villamos (kicsi elsÃµ)
 CombinoShortA(Mc)
-Siemens Combino villamos (kicsi középs? 1)
+Siemens Combino villamos (kicsi kÃ¶zÃ©psÃµ 1)
 CombinoShortB(Mc)
-Siemens Combino villamos (kicsi középs? 2)
+Siemens Combino villamos (kicsi kÃ¶zÃ©psÃµ 2)
 CombinoShortE(T)
-Siemens Combino villamos (kicsi középs? 3)
+Siemens Combino villamos (kicsi kÃ¶zÃ©psÃµ 3)
 Comet
 De Havilland 'Comet'
 Concept1Front
-Concept 1 (els?)
+Concept 1 (elsÃµ)
 Concept1Mail
-Concept 1 - postakocsi (középs?)
+Concept 1 - postakocsi (kÃ¶zÃ©psÃµ)
 Concept1Pass
-Concept 1 - személykocsi (középs?)
+Concept 1 - szemÃ©lykocsi (kÃ¶zÃ©psÃµ)
 Concept1Rear
-Concept 1 (hátsó)
+Concept 1 (hÃ¡tsÃ³)
 Concept2Front
-SNCF Concept 2 (els?)
+SNCF Concept 2 (elsÃµ)
 Concept2Mail
-SNCF Concept 2 - postavagon (középs?)
+SNCF Concept 2 - postavagon (kÃ¶zÃ©psÃµ)
 Concept2Pass
-SNCF Concept 2 - személykocsi (közés?)
+SNCF Concept 2 - szemÃ©lykocsi (kÃ¶zÃ©sÃµ)
 Concept2Rear
-SNCF Concept 2 (hátsó)
+SNCF Concept 2 (hÃ¡tsÃ³)
 DaimlerStoll
 Daimler-Stoll
 Doubledeck_city_bus
-Emeletes városi busz
+Emeletes vÃ¡rosi busz
 E44
 General Electric E44 villanymozdony
 Eb3-5
-Eb3-5 g?zmozdony
+Eb3-5 gÃµzmozdony
 Ed2x2
-Maffei "Malletlok" Ed2x2/2 g?zmozdony
+Maffei "Malletlok" Ed2x2/2 gÃµzmozdony
 EinheitsTender
 Szerkocsi (BR-01,38,39,45-hez)
 EnCo_Bulk_Ship
-EnCo nyersanyagszállító tanker
+EnCo nyersanyagszÃ¡llÃ­tÃ³ tanker
 EnCo_Car_Ship
-EnCo kocsiszállító tanker
+EnCo kocsiszÃ¡llÃ­tÃ³ tanker
 EnCo_Cement_Ship
-EnCo cementszállító tanker
+EnCo cementszÃ¡llÃ­tÃ³ tanker
 EnCo_Container_Ship
-EnCo konténerszállító tanker
+EnCo kontÃ©nerszÃ¡llÃ­tÃ³ tanker
 EnCo_Oil_Ship
-EnCo olajszállító tanker
+EnCo olajszÃ¡llÃ­tÃ³ tanker
 EnCo_Paper_Ship
-EnCo papírszállító tanker
+EnCo papÃ­rszÃ¡llÃ­tÃ³ tanker
 EnCo_Steel_Ship
-EnCo acélszállító hajó
+EnCo acÃ©lszÃ¡llÃ­tÃ³ hajÃ³
 EnCo_Wood_Ship
-EnCo faárúszállító tanker
+EnCo faÃ¡rÃºszÃ¡llÃ­tÃ³ tanker
 Erzanhaenger
-Nyersanyagszállító-A utánfutó
+NyersanyagszÃ¡llÃ­tÃ³-A utÃ¡nfutÃ³
 Erztrailer
-Nyersanyagszállító-E utánfutó
+NyersanyagszÃ¡llÃ­tÃ³-E utÃ¡nfutÃ³
 Erztransporter
-Nyersanyagszállító-E kocsi
+NyersanyagszÃ¡llÃ­tÃ³-E kocsi
 Erzwagen
-Nyersanyagszállító-D vagon
+NyersanyagszÃ¡llÃ­tÃ³-D vagon
 F7back
-Ellok-1 mozdony (hátsó)
+Ellok-1 mozdony (hÃ¡tsÃ³)
 FastFerry
-Légpárnás személyszállító hajó
+LÃ©gpÃ¡rnÃ¡s szemÃ©lyszÃ¡llÃ­tÃ³ hajÃ³
 Flachwagen
-Könyvszállítóvagon
+KÃ¶nyvszÃ¡llÃ­tÃ³vagon
 Fokker_F27
-Fokker-F27 repül?gép
+Fokker-F27 repÃ¼lÃµgÃ©p
 FordZugmaschine
 Ford kamion
 Gelenkbus_Ende
-Csuklósbusz (hátsó)
+CsuklÃ³sbusz (hÃ¡tsÃ³)
 Gelenkbus_Front
-Csuklósbusz (els?)
+CsuklÃ³sbusz (elsÃµ)
 Godm_Spitz
-Spitz vitorláshajó
+Spitz vitorlÃ¡shajÃ³
 Guppy
-Guppy darabárú-szállító repül?gép
+Guppy darabÃ¡rÃº-szÃ¡llÃ­tÃ³ repÃ¼lÃµgÃ©p
 H-Trans-Pantheress
-Pantheress (els?)
+Pantheress (elsÃµ)
 H-Trans-Pantheress-Back
-Pantheress (hátsó)
+Pantheress (hÃ¡tsÃ³)
 H-Trans-Tiger-Car
-Tigress személyszállító motorvagon (középs?)
+Tigress szemÃ©lyszÃ¡llÃ­tÃ³ motorvagon (kÃ¶zÃ©psÃµ)
 H-Trans-Tiger-Mail-Car
-Tigress posta motorvonat (középs?)
+Tigress posta motorvonat (kÃ¶zÃ©psÃµ)
 H-Trans-Tigress-II-Back
-H-Trans-Tigress II motorvonat (hátsó)
+H-Trans-Tigress II motorvonat (hÃ¡tsÃ³)
 H-Trans-Tigress-II-Front
-H-Trans-Tigress II motorvonat (els?)
+H-Trans-Tigress II motorvonat (elsÃµ)
 Hadley-Page-V1500
 RVg Hadley-Page V1500
 Heavy_ore_truck
-Nyersanyagszállító-A kocsi
+NyersanyagszÃ¡llÃ­tÃ³-A kocsi
 HJMAvia
 Avia kamion
 Hochbordwagen
-Nyersanyagszállító vagon
+NyersanyagszÃ¡llÃ­tÃ³ vagon
 Holzanhaenger
-Faáruszállító-A utánfutó
+FaÃ¡ruszÃ¡llÃ­tÃ³-A utÃ¡nfutÃ³
 Holztrailer
-Faáruszállító-C utánfutó
+FaÃ¡ruszÃ¡llÃ­tÃ³-C utÃ¡nfutÃ³
 Holztransporter
-Faáruszállító-A kocsi
+FaÃ¡ruszÃ¡llÃ­tÃ³-A kocsi
 Holzwagen
-Faáruszállító-A vagon
+FaÃ¡ruszÃ¡llÃ­tÃ³-A vagon
 Horsebookscariage
-Darabárúszállító-B omnibusz
+DarabÃ¡rÃºszÃ¡llÃ­tÃ³-B omnibusz
 Horsemailcariage
-Nyersanyagszállító-B omnibusz
+NyersanyagszÃ¡llÃ­tÃ³-B omnibusz
 Horsepapercariage
-Postaszállító omnibusz
+PostaszÃ¡llÃ­tÃ³ omnibusz
 Horsepassengerscariage
-Papírszállító omnibusz
+PapÃ­rszÃ¡llÃ­tÃ³ omnibusz
 Horses
 Lovasfogat
 Horsewoodcariage
-Faáruszállító-A omnibusz
+FaÃ¡ruszÃ¡llÃ­tÃ³-A omnibusz
 Hunslet
 Hunslet Beddgelert 0-6-4T
 HVPosttransporter
 Postakocsi-B
 ICE_TD-back
-DBAG Baureihe 605 (ICE TD) (hátsó)
+DBAG Baureihe 605 (ICE TD) (hÃ¡tsÃ³)
 ICE_TD-car
-DBAG Baureihe 605 (ICE TD) (középs?)
+DBAG Baureihe 605 (ICE TD) (kÃ¶zÃ©psÃµ)
 ICE_TD-front
-DBAG Baureihe 605 (ICE TD) (els?)
+DBAG Baureihe 605 (ICE TD) (elsÃµ)
 IL-76
-IL-76 postaszállító
+IL-76 postaszÃ¡llÃ­tÃ³
 JNR_C11
-JNR-C11 g?zmozdony
+JNR-C11 gÃµzmozdony
 JR_9600
-JR-9600 g?zmozdony
+JR-9600 gÃµzmozdony
 JR_9600_tender
 JR-9600 szerkocsi
 Ju52
-RVg Ju-52 utasszállító
+RVg Ju-52 utasszÃ¡llÃ­tÃ³
 JumboJet
-Boeing JumboJet repül?gép
+Boeing JumboJet repÃ¼lÃµgÃ©p
 kkStB_tender
 StB szerkocsi (StB 91, 110-hez)
 kkStB110
-StB 110 g?zmozdony
+StB 110 gÃµzmozdony
 kkStB91
-StB 91 g?zmozdony
+StB 91 gÃµzmozdony
 Klappdeckelwagen
-M?anyagszállító kocsi
+MÃ»anyagszÃ¡llÃ­tÃ³ kocsi
 Kohleanhaenger
-Nyersanyagszállító-B utánfutó
+NyersanyagszÃ¡llÃ­tÃ³-B utÃ¡nfutÃ³
 Kohletransporter
-Nyersanyagszállító-B kocsi
+NyersanyagszÃ¡llÃ­tÃ³-B kocsi
 Kohlewagen
-Nyersanyagszállító-E vagon
+NyersanyagszÃ¡llÃ­tÃ³-E vagon
 Kunststofanhaenger
-M?anyagszállító utánfutó
+MÃ»anyagszÃ¡llÃ­tÃ³ utÃ¡nfutÃ³
 Kunststofftransporter
-M?anyagszállító kocsi
+MÃ»anyagszÃ¡llÃ­tÃ³ kocsi
 Laaekks553_a
-553a autószállító kocsi
+553a autÃ³szÃ¡llÃ­tÃ³ kocsi
 Laaekks553_b
-553b autószállító kocsi
+553b autÃ³szÃ¡llÃ­tÃ³ kocsi
 Lockhead_Tristar
-Tristar repül?gép
+Tristar repÃ¼lÃµgÃ©p
 Lockheed10-Electra
-Lockhead-Martin L-10 "Elektra" postaszállító
+Lockhead-Martin L-10 "Elektra" postaszÃ¡llÃ­tÃ³
 logs
-Faárúszállító uszály
+FaÃ¡rÃºszÃ¡llÃ­tÃ³ uszÃ¡ly
 Lowa
 LOWA ET-54 villamos
 Lowa_Anhaenger
@@ -887,85 +889,85 @@ LOWA ET-54 villamoskocsi
 Mack_Truck_01
 Mack kamion
 MailExpress
-Postai repül?gép
+Postai repÃ¼lÃµgÃ©p
 Moebelschiff
-Darabáruszállító tankerhajó
+DarabÃ¡ruszÃ¡llÃ­tÃ³ tankerhajÃ³
 Moebelwagen
-Darabáruszállító-C vagon
+DarabÃ¡ruszÃ¡llÃ­tÃ³-C vagon
 NeuOelwagen
 Olaj vagon (80t)
 Oelanhaenger
-Olajszármazékszállító-A utánfutó
+OlajszÃ¡rmazÃ©kszÃ¡llÃ­tÃ³-A utÃ¡nfutÃ³
 Oelwagen
-Olajszármazék-szállító-B vagon
+OlajszÃ¡rmazÃ©k-szÃ¡llÃ­tÃ³-B vagon
 Oilbarge
-Olajszármazékszállító uszály
+OlajszÃ¡rmazÃ©kszÃ¡llÃ­tÃ³ uszÃ¡ly
 Oiltrailer
-Olajszármazékszállító-B utánfutó
+OlajszÃ¡rmazÃ©kszÃ¡llÃ­tÃ³-B utÃ¡nfutÃ³
 old_open_car
-Szénszállító vagon (1837/5)
+SzÃ©nszÃ¡llÃ­tÃ³ vagon (1837/5)
 OldOil
-Olajszármazék-szállító-A vagon
+OlajszÃ¡rmazÃ©k-szÃ¡llÃ­tÃ³-A vagon
 Ox2
-2-es ökörfogat
+2-es Ã¶kÃ¶rfogat
 Ox4
-4-es ökörfogat
+4-es Ã¶kÃ¶rfogat
 Papieranhaenger
-Papírszállító utánfutó
+PapÃ­rszÃ¡llÃ­tÃ³ utÃ¡nfutÃ³
 Papiertransporter
-Papírszállító kocsi
+PapÃ­rszÃ¡llÃ­tÃ³ kocsi
 Papierwagen
-Papírszállító vagon
+PapÃ­rszÃ¡llÃ­tÃ³ vagon
 Passagierwagen
-BTx-60 személyszállító vagon
+BTx-60 szemÃ©lyszÃ¡llÃ­tÃ³ vagon
 Pferdebahn
-Lóvontatású villamos
+LÃ³vontatÃ¡sÃº villamos
 Pferdebahnwagen
-Lóvontatású villamoskocsi
+LÃ³vontatÃ¡sÃº villamoskocsi
 Postschiff
-Postahajó
+PostahajÃ³
 Posttransporter
 Postakocsi-A
 Postwagen
 Postavagon
 PrPersonenwagen
-Pr személyszállító vagon
+Pr szemÃ©lyszÃ¡llÃ­tÃ³ vagon
 PrPostwagen
 Pr postavagon
 RenaultTH5
-Renault kamionfülke
+Renault kamionfÃ¼lke
 Sandanhaenger
-Nyersanyagszállító-C utánfutó
+NyersanyagszÃ¡llÃ­tÃ³-C utÃ¡nfutÃ³
 Sandtransporter
-Nyersanyagszállító-F kocsi
+NyersanyagszÃ¡llÃ­tÃ³-F kocsi
 schooner
-Szkúner vitorláshajó
+SzkÃºner vitorlÃ¡shajÃ³
 SD40-2-back
-EMD SD40-2 dízelmozdony (hátsó)
+EMD SD40-2 dÃ­zelmozdony (hÃ¡tsÃ³)
 SD40-2-front
-EMD SD40-2 dízelmozdony (els?)
+EMD SD40-2 dÃ­zelmozdony (elsÃµ)
 setra_S10
 S-10 busz
 SlowFerry
-Személyszállító komp
+SzemÃ©lyszÃ¡llÃ­tÃ³ komp
 SMPoiltruck
-Scania MP tartálykocsi
+Scania MP tartÃ¡lykocsi
 Stahlanhaenger
-Acélszállító utánfutó
+AcÃ©lszÃ¡llÃ­tÃ³ utÃ¡nfutÃ³
 Stahltransporter
-Acélszállító kocsi
+AcÃ©lszÃ¡llÃ­tÃ³ kocsi
 Stahlwagen
-Acélszállító vagon
+AcÃ©lszÃ¡llÃ­tÃ³ vagon
 Staubkesselwagen
-M?anyagszállító vagon
+MÃ»anyagszÃ¡llÃ­tÃ³ vagon
 Steamer
-Személyszállító g?zhajó
+SzemÃ©lyszÃ¡llÃ­tÃ³ gÃµzhajÃ³
 Stoneanhaenger
-Nyersanyagszállító-D utánfutó
+NyersanyagszÃ¡llÃ­tÃ³-D utÃ¡nfutÃ³
 Stonetransporter
-Nyersanyagszállító-G kocsi
+NyersanyagszÃ¡llÃ­tÃ³-G kocsi
 SuperConstellation
-Super Constellation repül?gép
+Super Constellation repÃ¼lÃµgÃ©p
 T13
 TB13 villamos
 T21_bus
@@ -973,7 +975,7 @@ T-21 busz
 T24
 TB24 villamos
 Tanklastzug
-Olajszármazékszállító kocsi
+OlajszÃ¡rmazÃ©kszÃ¡llÃ­tÃ³ kocsi
 Tatra-T4
 Tatra T4 villamos
 Tatra-T4_Wagon
@@ -983,84 +985,84 @@ TB13 villamoskocsi
 TB24
 TB24 villamoskocsi
 teaclipper
-Darabárúszállító klipper
+DarabÃ¡rÃºszÃ¡llÃ­tÃ³ klipper
 TPBeiwagen
-VT98 személyszállító motorvagon (hátsó)
+VT98 szemÃ©lyszÃ¡llÃ­tÃ³ motorvagon (hÃ¡tsÃ³)
 TPPassagierwagen
-TP személyszállító vagon
+TP szemÃ©lyszÃ¡llÃ­tÃ³ vagon
 TPSchienenbus
-VT98 személyszállító motorvonat (els?)
+VT98 szemÃ©lyszÃ¡llÃ­tÃ³ motorvonat (elsÃµ)
 Tram_GT6_Ende
-Düwag GT6 villamos (hátsó)
+DÃ¼wag GT6 villamos (hÃ¡tsÃ³)
 Tram_GT6_Kopf
-Düwag GT6 villamos
+DÃ¼wag GT6 villamos
 Trike
-Trike nyersanyagszállító
+Trike nyersanyagszÃ¡llÃ­tÃ³
 Tugboat
-Vontatóhajó
+VontatÃ³hajÃ³
 Turgot
-Turgot vitorláshajó
+Turgot vitorlÃ¡shajÃ³
 Ucy
-Ucy m?anyagszállító
+Ucy mÃ»anyagszÃ¡llÃ­tÃ³
 Viggen
 Viggen komp
 VolvoFH12
-Volvo kamionfülke
+Volvo kamionfÃ¼lke
 X2000back
-X2000 motorvonat (hátsó)
+X2000 motorvonat (hÃ¡tsÃ³)
 X2000car
-X2000 motorvonat (közép)
+X2000 motorvonat (kÃ¶zÃ©p)
 X2000front
-X2000 motorvonat(els?)
+X2000 motorvonat(elsÃµ)
 XMail
-X-Test egysín? postavagon
+X-Test egysÃ­nÃ» postavagon
 XTest
-X-Test egysín? személyszállító
+X-Test egysÃ­nÃ» szemÃ©lyszÃ¡llÃ­tÃ³
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road
-Aszfaltos út
+Aszfaltos Ãºt
 city_road
-Városi út
+VÃ¡rosi Ãºt
 cobblestone_road
-Kockaköves út
+KockakÃ¶ves Ãºt
 concrete_sleeper_track
-Betontalpas sín
+Betontalpas sÃ­n
 dirt_road
-Föld út
+FÃ¶ld Ãºt
 elevated_monorail
-Emelt nyeregvasút sín
+Emelt nyeregvasÃºt sÃ­n
 gavel_road
-Kavicsos út
+Kavicsos Ãºt
 Kanal
 Csatorna
 MaglevTrack
-Maglev sín
+Maglev sÃ­n
 MaglevTrackElevated
-Megemelt Maglev sín
+Megemelt Maglev sÃ­n
 mip_cobblestone_road
-MIP kockaköves út
+MIP kockakÃ¶ves Ãºt
 monorail
-Nyeregvasút sín
+NyeregvasÃºt sÃ­n
 Powerline
-Villamos vezeték
+Villamos vezetÃ©k
 Rillenschienen
-Villamos vágány
+Villamos vÃ¡gÃ¡ny
 runway_grass
-füves kifutópálya
+fÃ¼ves kifutÃ³pÃ¡lya
 runway_modern
-Modern kifutópálya
+Modern kifutÃ³pÃ¡lya
 sand_track
-Homokos töltés? vasúti sín
+Homokos tÃ¶ltÃ©sÃ» vasÃºti sÃ­n
 steel_sleeper_track
-Acéltalpas sín
+AcÃ©ltalpas sÃ­n
 taxiway
-Kifutópálya
+KifutÃ³pÃ¡lya
 wooden_sleeper_track
-Fatalpas sín
+Fatalpas sÃ­n
 #__________________________________way-object___________________________________
 #__________________________________way-object___________________________________
 HighSpeedOverheadpower
-Nagysebesség? fels?vezeték
+NagysebessÃ©gÃ» felsÃµvezetÃ©k
 SlowOverheadpower
-Alacsonysebesség? fels?vezeték
+AlacsonysebessÃ©gÃ» felsÃµvezetÃ©k

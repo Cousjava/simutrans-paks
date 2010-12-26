@@ -5,14 +5,18 @@
 #                            Language: ce C-English                            #
 #                                Encoding: ASCII                               #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 9.09 2010                           #
+#                           Date Created: 27.12 2010                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
 #                              Frank Penz - FrankP                             #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
 #                                    note:                                     #
 #                           Lincoln Sayger - skreyola                          #
+#                                    note:                                     #
+#                                     - test                                   #
 #                                    note:                                     #
 #                                                                              #
 ################################################################################
@@ -409,9 +413,9 @@ Cement Mill
 ChemicalPlant
 Chemical Plant
 CHEMIST
-Chemist
+Apothecary
 Concretefactory
-Concrete Factory
+Concrete Mix Factory
 Druckerei
 Printing Works
 Erzbergwerk
@@ -625,7 +629,7 @@ Kahan 45
 BR45-Tender
 Kahan 45 Tender
 BR85
-Kahan 85
+Kahan 86
 Bretteranhaenger
 Ikarus Model K Trailer
 Brettertransporter
@@ -684,6 +688,8 @@ Concept2Rear
 Kirayami MonoTest II (Rear)
 Concorde
 Aerospatiale Concorde
+Cooling_Truck
+Refrigerated lorry
 DC-3
 Douglas DC-3
 E44

@@ -5,12 +5,16 @@
 #                             Language: es Espanol                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 21.02 2010                           #
+#                           Date Created: 27.12 2010                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                   - Diegote                                  #
 #                                    note:                                     #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
 #                              Frank Penz - FrankP                             #
+#                                    note:                                     #
+#                                    - Paco_m                                  #
 #                                    note:                                     #
 #                       Zeno (Albert Ruiz) - albert.yuste                      #
 #                                    note:                                     #
@@ -190,6 +194,10 @@ COM_03_19
 Oficinas centrales de una\ngran aseguradora\n\n
 COM_03_20
 Sede de SimuTV\nLa cadena de televisión más vista en internet.\nNo te pierdas el especial\n Grandes Leyendas de Simutrans de los jueves,\n donde repasan la historia del juego a \ntravés de las personas que lo hicieron grande.\nEsta semana, Raven "el magnífico".
+COM_04_13
+Oficinas comerciales
+COM_04_14
+Oficinas de la Seguridad Social
 COM_04_15
 Este bloque de oficianas ha\nsido reformado muchas\nveces, como demuestra la\nparabólica del tejado.\nTambién se puede apreciar\nel techo acristalado que\ncubre la piscina interior,\nsituada tres pisos mas abajo. \n\n
 COM_10_01
@@ -304,6 +312,8 @@ IND_01_13
 El enorme crater negro es debido a\nun pequeño accidente con la caldera. Bueno, de \necho fue la explosión más grande que se recuerda. Cubró \nmedia ciudad con lodo negro. Ese incidente\n se conoce como "El lado oscuro".
 IND_01_15
 Fábrica\n\nInicialmente se iba a denominar fábrica de las\n tres chimeneas, en honor a\n los tres profetas de Simutrans (Hajo, Prissi y Isaac) pero el\n arquitecto no profesaba la misma fe, era un converso OTTD, y \nnunca terminó de reconocer a Isaac como profeta.\n Es más, declaró que nunca aceptaría a un\n dictador por muy benevolente que hubiera sido.\n
+IND_01_16
+Central de transformadores
 IND_02_01
 Esta fábrica empezó siendo un depísoto de chatarra con una sola pared. El fundador de la fábrico falleció sepultado por un amasijo de hierros mientras intentaba sacar una varilla de cobre de una montaña de chatarra. Fue el precursor del famoso juego de la jenga.
 IND_02_02
@@ -400,6 +410,8 @@ RES_01_07
 Casa lujosa de madera\n Auténtica Caoba es lo que se usó para construir esta\n lujosa casa de campo. Lo malo es que tiene termitas,\n asi que ahora son ellas las que se están dando\n un festín de primera, con el caviar de las maderas.\n
 RES_01_08
 Una casa luminosa y espaciosa de dos plantas\n con trastero y un jardín\n es todo lo que necesitas para conseguir la felicidad\n
+RES_01_09
+Estanque con barcas
 RES_01_10
 Apartamento modelo "Bunker"\nEl autor de esta rareza fue un ingeniero militar retirado\n tras la guerra fría, que aún temía una guerra nuclear.\n Por eso hizo construir la casa más segura posible,\n tan segura que tiene paredes \nde hormigon con acero reforzado de 1 metro de grosor.\n
 RES_01_12
@@ -1065,7 +1077,7 @@ BR 614 (vagon)
 Br614front
 BR 614 (frontal)
 BR85
-BR 85
+BR 86
 Bretteranhaenger
 Remolque para tablas WF Ultd.
 Brettertransporter
