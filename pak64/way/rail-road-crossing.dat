@@ -30,4 +30,8 @@ openimage[ns][0]=rail-road-crossing-old.0.1
 openimage[ew][0]=rail-road-crossing-old.0.0
 openimage[ns][1]=rail-road-crossing-old.1.1
 openimage[ew][1]=rail-road-crossing-old.1.0
+closedimage[ns][0]=rail-road-crossing-old.0.1
+closedimage[ew][0]=rail-road-crossing-old.0.0
+closedimage[ns][1]=rail-road-crossing-old.1.1
+closedimage[ew][1]=rail-road-crossing-old.1.0
 ---
