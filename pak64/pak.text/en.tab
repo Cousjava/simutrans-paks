@@ -5,7 +5,7 @@
 #                             Language: en English                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 27.12 2010                           #
+#                           Date Created: 16.01 2011                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Alexander Brose - AlexB                           #
@@ -268,6 +268,8 @@ COM_04_15
 This office building has\nbeen retrofitted many\ntimes, as you can see by\nthe satellite dish on the\ntop.  You will also notice a\nglass portion of the roof,\nwhich covers the swimming\npool three floors beneath. \nThe swimming pool has a\nslide, which is intended to\ninspire the computer\nprogrammers within, but\nunfortunately their mood is\noften wrecked when people\ndecide to take off their pants\nand sit on the glass roof.\n\n
 COM_10_01
 Beautiful lake with trees\nnearby. What kid wouldn't\nwant to swim here at\nsummer and skate in winter\n\n
+COM_10_02
+Carging for orignal alpine experience by hour was the best idea farmer Fred ever had in his life; because the small field near town was way to small any other big revenue.
 COM_10_05
 This barn have been in use\nin a lot of year by a farmer\nJenkins. You could taste\nfresh milk if you want. Just\ncome here.\n\n
 COM_10_07
@@ -340,6 +342,8 @@ IND_01_06
 Cog Factory\n\nIt makes either gears or corporate employees.
 IND_01_10
 Tool Factory\n\nThis firm makes drop-forged tools. They will provide a free replacement for any tool they made that breaks.
+IND_01_16
+Guess what is produced here: Neither cough medicine nor plastic molds but Grandma's secret spider recipe - at least this is claimed by the owners.
 IND_02_01
 Brickyard\n\nThis firm makes bricks and cinder blocks of various types and colors.
 IND_02_10
@@ -422,12 +426,18 @@ RES_01_05
 With its large den and shady back yard, this is the home of a retired musician.
 RES_01_07
 Build by a lover of the black forest; even planted two firs. Too bad, this are the only firs for miles.
+RES_01_09
+The public pool company is afraid it will loose its winter income from ice skating due to global warming.
 RES_01_10
 Modern House\n\nThe rooftop patio offers a great place to enjoy the outdoors without leaving the house.
 RES_01_23
 The shape stems form a bet. Villain Construction lost a million, because its trademarked V-shaped design actually passed revision.
+RES_02_07
+The residence rather looks like a shack; even the two trees were a futile attempt and just made the stories of a haunted house even more likely.
 RES_02_16
 Luxury Apartments\n\nThese apartments give their residents room to breathe. The penthouse is for people who need to breathe more.
+RES_10_11
+The apple tree in the small garden is well fertilized - since we still wait for the reinventing of plumbing. However, it is lacking light for a rich harvest.
 Residenz
 Residence\n\nThis place is used by the\nlocal Yoga Guru to teach\nmeditation and inner peace.\nThere are lots of things\ncalled Bongs here.\n\n
 rightShipStop

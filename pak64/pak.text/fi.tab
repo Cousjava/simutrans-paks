@@ -5,9 +5,11 @@
 #                              Language: fi Suomi                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 9.09 2010                           #
+#                           Date Created: 16.01 2011                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
 #                              Esa Lindroos - Esa                              #
 #                                    note:                                     #
 #                              Frank Penz - FrankP                             #
@@ -176,8 +178,6 @@ COM_04_15
 Hotelli. satelliitti lautanen\nkatolla.\n
 COM_10_01
 Puisto\n
-COM_10_02
-puisto\n
 COM_10_05
 Navetta\n
 COM_10_07

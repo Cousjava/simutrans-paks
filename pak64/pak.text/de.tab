@@ -5,7 +5,7 @@
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 27.12 2010                           #
+#                           Date Created: 16.01 2011                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Alexander Brose - AlexB                           #
@@ -242,18 +242,28 @@ COM_03_14
 Die neusten Trends der Saison\nbei D&B. Ausgesuchte Farben\npassen sich dan der variablen\nInnenbeleuchtung sofort an\nden letzten Trend in Paris an.\nNur erschrecken sie nicht,\nwenn sie die Kleidung beim\nVerlassen dann zum ersten Mal bei\nTageslicht sehen.\n
 COM_03_15
 Hier saß die erste Nationale\nVermögenstrust. Im Zuge der\nGlobalisierung und des WWWs\nbräuchte der Hauptsitz nicht\nmehr einzuschüchtern; aber\nder alte Stahlbeton war\ntatsächlich für 1000 Jahre\ngegossen.\n
+COM_03_17
+Freundliche Brauntone außen und innen, die für die 60er so charakteristische Halbkreistapete. Immerhin musste man so erst nach 30 Jahren renovieren.
 COM_03_19
 Die Büros der "Letzten\nSpeziellen Versicherung"\nstehen schon geraume Zeit\nleer. Bei ihr konnten sich nur\nschöne Frauen und auch nur\ngegen ungewollte Handküsse\nversichern lassen. Die\nFirmengründer waren mit dieser\nGeschäftsidee wohl doch etwas\nblauäugig.\n
+COM_03_20
+Die angeknabberte Ecke am Eingang hat die Erdbebensicherheit stark beeinträchtigt, weshalb das Gebäude nun 400 km weiter westlich gebaut wurde. Da dort auch die Steuersätze niedriger waren, ist die Firma kurzerhand mit Mann und Maus umgezogen, denn der Architekt war das teuerste am Bau.
+COM_04_13
+Der Einkaufbunker aus den 30er ist in neuerer Zeit der angesagte Musikclub. Dank solider Ziegelwände und Marmorfassade gibt es auch keine Probleme mit der Nachbarschaft.
+COM_04_14
+Alle Zimmer mit Fenster: Eine gute Idee - bis die Computer aufkamen und reihenweise Mitarbeiter mit tränenden Augen auf ihren Monitoren nur ein Spiegelbild des Parks vor dem Fenster sahen.
 COM_04_15
 Früher stand hier mal der\nerste Rundfunksender der\nStadt. Heute residiert hier\nder Kabelbetreiber Glotz-Line.\nMit der Satellitenantenne auf\ndem Dach ist man mit der\ngroßen weiten Welt verbunden.\n
 COM_10_01
 Heinzen aufgeschichtetes Heu\nbleibt bei unerwartetem Regen\nwenigstens teilweise trocken.\n
 COM_10_02
-Seit das Ordnungsamt die\nKnöllchen durch die\nPrivatwirtschaft vergeben\nlässt, sind die letzten\nParkscheinautomatfreien\nParkplätze selbst am Rand der\nStadt heiß begehrt.\n
+Die Weide ist zwar klein aber stadtnah. So kommt das Einkommen eben vom Hofverkauf auch wenn die Waren eigentlich viel weiter gefahren ist als die Kunden.
 COM_10_05
 Ein gepflegter Kräutergarten\nist der Stolz jeder Bäuerin.\n
 COM_10_07
 Gasthäuser sind der\nTreffpunkt nicht nur für die\ndurstige Bevölkerung. Für\nTiere gibts Selbstbedienung\ndraussen am Brunnen.\n
+COM_10_08
+Enge Fachwerkhäuser um den Brunnen "zum verlorenen Groschen". Wer hier einen Groschen versenkt, soll bald einen Taler finden (erzählt zumindest der Wirt gegenüber.
 COM_10_10
 An der Pferdestation der Post\nkönnen die Zugtiere wieder\nauftanken. Der "Boxenstopp"\nwurde damals allerdings erst in\nMinuten gemessen.\n
 COM_10_11
@@ -329,7 +339,7 @@ Schinken und andere\ngeräucherte Fleischprodukte\nkommen aus den Hallen der\nVin
 IND_00_18
 Das modernste\nBlockheizkraftwerk weit und\nbreit. Läuft mit Ergas, ohne\nRuß und und Kohlehalden.\n
 IND_01_01
-Sie finden keinen Parkplatz für\nihr Auto? Warum kommen Sie\ndann nicht mit dem Bus in die\nStadt?\n
+Seit das Ordnungsamt die\nKnöllchen durch die\nPrivatwirtschaft vergeben\nlässt, sind die letzten\nParkscheinautomatfreien\nParkplätze selbst am Rand der\nStadt heiß begehrt.\n
 IND_01_03
 Gaskugel zur Speicherung von\nErdgas.\n
 IND_01_04
@@ -352,6 +362,8 @@ IND_01_13
 Schmutz prägt dieses\nFabrikgebäude. Schon kurz\nnach dem Bau hat die\nWirtschaftskrise die darin\nuntergebrachte Spinnerei in\ndie Knie gezwungen, und\nseither wechseln Mieter und\nBesitzer in atemberaubendem\nTempo. Glück hat dieses\nGebäude noch niemandem\ngebracht, entsprechend\nstiefmütterlich wird es gepflegt.\n
 IND_01_15
 In den 30er fing man an, in die\nHöhe zu bauen, und nach dem\nKrieg hat man noch schnell ein\nStockwerk draufgesetzt,\nwenn es auch nur die\nFilteranlagen unter dem Dach\nwaren.\n
+IND_01_16
+Blitzblank und steril: Kaum zu glauben das hier Fertigpizzas nach Omas Geheimrezept gebacken werden.
 IND_02_01
 Jetzt ist von der\nGründerzeitfabrik nur noch ein\nbackstein- ummauerter\nSchrottplatz übrig geblieben.\n
 IND_02_02
@@ -446,6 +458,8 @@ RES_01_07
 Freunde der Mobilität gab es\nschon immer: Im Erdgeschoss\ngibt es tatsächlich einen\nkleinen Pferdestall und einen\nKutschenraum! Und wenn\nschon Pferde vorhanden sind,\ndarf der Hundezwinger natürlich\nauch nicht fehlen. Der Hauseingang\nliegt im 1. Stock, einen direkten\nZugang zum Pferdestall hat es aus\nverständlichen Gründen nicht.\n
 RES_01_08
 Ein Mehrfamilienhaus mit\nGarten. Ja, das sind sie, die\nneuen Eigentumswohnungen der\ngehobenen Klasse!\n
+RES_01_09
+Seit es im Winter Romantik-Iceskating-Wochen gibt ist das örtliche Freibad wieder im Plus.
 RES_01_10
 Das Haus ist das Ergebnis eines\nexperimentierfreudigen\nArchitekts. Jedesmal, wenn\nNachwuchs angesagt war, hat\ner sein Haus vergrössert und\ndabei immer nach den\nneuesten Trends anbauen lassen.\nEin Lehrstück vor allem für den\nUnternehmer, der die erste\nGeneralrenovation in Angriff\ngenommen hat.\n
 RES_01_12
@@ -464,6 +478,8 @@ RES_01_23
 Die Form soll von einer Wette\nstammen: Der Geschäftsleiter\nder Firma Volkeroth Hochbau\nverlor hier eine Million, weil\nder Bauplan mit seiner Initiale\ndurchging. Da aber bis zur\nFertigstellung eh der Etat\ndreifach überzogen wurde, war\ner danach deutlich reicher als\nvorher.\n
 RES_02_01
 Zu zugig kann es in solche\nHütten kaum sein: Wichtig ist\nder Schatten und der fest\nleicht erhobene Fussboden\ngegen allerhand Getier.\n
+RES_02_07
+Das keline Häuschen sieht aus, als hätte es schon bessere Tage gesehen - leider ist das praktisch seit Richtfest der Fall, weil dem ersten Besitzer schon das Gelb für Wandfarbe fehlte.
 RES_02_16
 Großzügig bemessene\nWohnungen befinden sich im\nBlock. Weniger großzügig sind\ndie Bewohner: Nachdem die\nHypothekarzinsen 2%\ngestiegen sind, ist das Wohnen\nhier trotz schöner Einrichtung\neher zur Belastung geworden.\n
 RES_02_20
@@ -472,8 +488,14 @@ RES_10_01
 Auch wenn es zweistöckig\naussieht: Oben ist nur ein\nSchlafraum, denn der Ofen in\nder Küche muss für das ganze\nHaus reichen.\n
 RES_10_05
 Ein eigenhändig renoviertes\nund modernisiertes\nFachwerkhaus mit\nwunderschönem Garten. Der\nEigentümer wird es sicher um\nkeinen Preis verkaufen wollen.\n
+RES_10_11
+Der Apfelbaum auf dem kleinen Platz ist mangels Kanalisation zwar gut gedüngt; für eine reiche Apfelernte bräuchte er jetzt nur noch Licht.
 RES_11_01
 Die reedgedeckte\nFischerhütte wurde,\nnachdem der letzte Fischer\nstarb, an den Rand der Stadt\nversetzt und als\nFreilichtmuseum ausgebaut.\n
+RES_11_13
+Hilfe die Ausländer kommen: Wo heute das Holländische Viertel die Touristen anlockt (auch wenn nicht mehr viel steht) war vor zwei Jahrunderten das Armenghetto der Stadt. Allerdings besteht wenig Hoffnung, das die Banlieue einst ähnlich geadelt wird.
+RES_11_14
+Der berühmte Kurfürst zur Zuckerschnecke ließ anno 1695 sein Geburthaus auf den letzte Stand bringen. Heute noch kann man das berühmte Backwerk völlig überteuert im Museumsladen erwerben.
 Residenz
 Schloss der zu Schnatterichs\n\nwurde mehrfach renoviert. Das\njetzige Aussehen stammt von\neinem Restaurierungsversuch\naus der Romantik, weshalb es\nimmer noch eine gefragte\nFilmkulisse ist.\n
 rightShipStop
@@ -654,6 +676,8 @@ Oelkraftwerk
 Ölkraftwerk
 Oelpumpe
 Pferdekopf-Ölpumpe
+old_farm
+Alter Bauernhof
 Pharmaceutics
 Pharmahersteller
 Raffinerie
