@@ -10,6 +10,7 @@ http://simutranslator.simutrans-germany.com/
 The following files are released under GNU General Public License V3:
   vehicles/water/abo-ships.png (by stormoog)
   player/road-depot-crystal.png (by vilvoh)
+  and the tropical park COM_12_04 (by vilvoh)
 
 -----------------------------------------------------------------------------
 
