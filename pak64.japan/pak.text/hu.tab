@@ -1,0 +1,44 @@
+§################################################################################
+#                                                                              #
+#                Simutrans Scenario Specific Translation File                  #
+#                              Scenario: pak.japan                             #
+#                              Language: hu Magyar                             #
+#                                Encoding: UTF-8                               #
+#                                Font : cyr.bdf                                #
+#                           Date Created: 25.01 2011                           #
+#                                                                              #
+#                                   authors:                                   #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
+#                              Frank Penz - FrankP                             #
+#                                    note:                                     #
+#                                   - LeitnerI                                 #
+#                                    note:                                     #
+#                                    - petter                                  #
+#                                    note:                                     #
+#                          Markus Pristovsek - prissi                          #
+#                                    note:                                     #
+#                                                                              #
+################################################################################
+#____________________________________bridge_____________________________________
+#____________________________________bridge_____________________________________
+ClassicRail
+Beton vasúti híd
+ClassicRoad
+Beton közúti híd
+ModernRoad
+Modern közúti híd
+Schiffhebewerk
+Hajózsilip (átemelõ)
+SteelRail
+Acélszerkezetes vasúti híd
+ViaductRail
+Viadukt (völgy) híd
+#___________________________________building____________________________________
+#___________________________________building____________________________________
+01_CITY
+Városháza
+02_CITY
+Városháza
+03_CITY
+Városháza

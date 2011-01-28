@@ -1,0 +1,52 @@
+################################################################################
+#                                                                              #
+#                Simutrans Scenario Specific Translation File                  #
+#                              Scenario: pak.japan                             #
+#                             Language: fr Francais                            #
+#                             Encoding: ISO-8859-1                             #
+#                            Font : Prop-Latin1.bdf                            #
+#                           Date Created: 25.01 2011                           #
+#                                                                              #
+#                                   authors:                                   #
+#                                  - Christophe                                #
+#                                    note:                                     #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
+#                              Frank Penz - FrankP                             #
+#                                    note:                                     #
+#                         Roman Schwörer - Gotthardlok                         #
+#                                    note:                                     #
+#                           Sava Bogdanets - Sava2004                          #
+#                                    note:                                     #
+#                          Jean Beaudet - cagliostro_2                         #
+#                                    note:                                     #
+#                                   - cantien                                  #
+#                                    note:                                     #
+#                                  - coincoin42                                #
+#                                    note:                                     #
+#                        Lorenz Van Damme - gforcetheone                       #
+#                                    note:                                     #
+#                                - jounior-fuchs                               #
+#                                    note:                                     #
+#                            Luc Mallet - luc.mallet                           #
+#                                    note:                                     #
+#                          Markus Pristovsek - prissi                          #
+#                                    note:                                     #
+#                                                                              #
+################################################################################
+#____________________________________bridge_____________________________________
+#____________________________________bridge_____________________________________
+SteelRail
+Pont de chemin de fer en acier
+#___________________________________building____________________________________
+#___________________________________building____________________________________
+Viewtower
+Les japonnais aiment ce\ngenre de tour; elles sont de\nvéritable atraction\ntouristique. Vous pouvez en\nvoir plus de 150 au Japon.\n
+#____________________________________factory____________________________________
+#____________________________________factory____________________________________
+Sushiya
+Restaurant à Sushi
+#______________________________________way______________________________________
+#______________________________________way______________________________________
+wooden_sleeper_track
+Voie à traverses en bois

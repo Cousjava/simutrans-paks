@@ -1,0 +1,42 @@
+################################################################################
+#                                                                              #
+#                Simutrans Scenario Specific Translation File                  #
+#                              Scenario: pak.japan                             #
+#                              Language: fi Suomi                              #
+#                             Encoding: ISO-8859-1                             #
+#                            Font : Prop-Latin1.bdf                            #
+#                           Date Created: 25.01 2011                           #
+#                                                                              #
+#                                   authors:                                   #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
+#                              Esa Lindroos - Esa                              #
+#                                    note:                                     #
+#                              Frank Penz - FrankP                             #
+#                                    note:                                     #
+#                        Jaakko Mäkinen - jaakko.makinen                       #
+#                                    note:                                     #
+#                          Markus Pristovsek - prissi                          #
+#                                    note:                                     #
+#                                                                              #
+################################################################################
+#____________________________________factory____________________________________
+#____________________________________factory____________________________________
+fish_pond
+Kala-allas
+fish_swarm
+Kalaparvi
+Rice_Mill
+Riisimylly
+#_____________________________________good______________________________________
+#_____________________________________good______________________________________
+Post
+Postia
+raw-rice
+raakariisiä
+rice
+riisiä
+#_____________________________________tree______________________________________
+#_____________________________________tree______________________________________
+Sakura
+Kirsikkapuu\n

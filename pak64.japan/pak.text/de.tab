@@ -1,0 +1,432 @@
+################################################################################
+#                                                                              #
+#                Simutrans Scenario Specific Translation File                  #
+#                              Scenario: pak.japan                             #
+#                             Language: de Deutsch                             #
+#                             Encoding: ISO-8859-1                             #
+#                            Font : Prop-Latin1.bdf                            #
+#                           Date Created: 28.01 2011                           #
+#                                                                              #
+#                                   authors:                                   #
+#                            Alexander Brose - AlexB                           #
+#                                    note:                                     #
+#                         Klaus Thenmayer - Bitfreezer                         #
+#                                    note:                                     #
+#                                  - Christian                                 #
+#                                    note:                                     #
+#                                   - Combuijs                                 #
+#                                    note:                                     #
+#                             Michael Hohl - Cruzer                            #
+#                       note: Administrator pak192.comic                       #
+#                             Dirk W. - DirrrtyDirk                            #
+#                                    note:                                     #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
+#                            Christian W. - Eps-Omo                            #
+#                                    note:                                     #
+#                                   - Florian                                  #
+#                                    note:                                     #
+#                              Frank Penz - FrankP                             #
+#                                    note:                                     #
+#                                    - GerdW                                   #
+#                                    note:                                     #
+#                         Roman Schwörer - Gotthardlok                         #
+#                                    note:                                     #
+#                           Hansjörg Malthaner - Hajo                          #
+#                                    note:                                     #
+#                              Jaroslaw - Jaroslaw                             #
+#                                    note:                                     #
+#                                   - Lemuria                                  #
+#                                    note:                                     #
+#                             Marcus Haupt - Marcus                            #
+#note: if I´m not available by email to proximity.de try mail@marcus-haupt.de (#
+#                        Constantin Grabowski - Moistboy                       #
+#                                    note:                                     #
+#                                   - Nico192                                  #
+#                                    note:                                     #
+#                                    - Paco_m                                  #
+#                                    note:                                     #
+#                                 compo - compo                                #
+#                                    note:                                     #
+#                               Florian - floppy                               #
+#                                    note:                                     #
+#                            Günter Beine - gebeine                            #
+#                        note: maintainer pak128.german                        #
+#                            Jonas Bushart - jonasbb                           #
+#                                    note:                                     #
+#                                - jounior-fuchs                               #
+#                                    note:                                     #
+#                              Markus Rex - msrex                              #
+#                                    note:                                     #
+#                                    - petter                                  #
+#                                    note:                                     #
+#                          Markus Pristovsek - prissi                          #
+#                                    note:                                     #
+#                            Oliver Mayer - rakishly                           #
+#                                    note:                                     #
+#                                     - sdog                                   #
+#                                    note:                                     #
+#                                    - smu42                                   #
+#                                    note:                                     #
+#                               Sven Osada - sojo                              #
+#                         note: maintainer pak96.comic                         #
+#                                     - test                                   #
+#                                    note:                                     #
+#                                 - transporter                                #
+#                                    note:                                     #
+#                           Werner Brandt - wernieman                          #
+#                             note: Nightly creator                            #
+#                           Michael Olbricht - whoami                          #
+#                                    note:                                     #
+#                                                                              #
+################################################################################
+#____________________________________bridge_____________________________________
+#____________________________________bridge_____________________________________
+ClassicRoad
+Spannbetonbrücke
+SteelRail
+Stahlfachwerkbrücke
+#___________________________________building____________________________________
+#___________________________________building____________________________________
+01_CITY
+Rathaus
+02_CITY
+Rathaus
+03_CITY
+Rathaus
+03_CITY_C
+Rathaus
+04_CITY
+Rathaus
+Baseball_Arena
+Baseballstadion\n\nfür den populärsten Sport in Japan. Der Klub hier kann aber nicht ganz so berühmt sein, denn für ein Dach hat es nicht mehr gereicht.
+Big_Temple
+Großer Shintoschrein\n\nOrt von Hochzeiten und Neujahrzeresmonie.
+CarDepot
+Fahrzeugdepot
+City_Castle
+Stadtschloss\n\nFrüher Wohnsitz des Fürsten, jetzt Sehenwürdigkeit. Zurest der Abriss um 1900, nach dem 2. Weltkrieg wieder in Beton "nachgebaut".
+COM_30_01
+Ein Reisfeld am Stadtrand. Doch seine Tage sind gezählt, man feilscht nur noch über den Kaufpreis.
+COM_30_03
+Ein Parkplatz am Stadtrand. Nur 100 Yen pro Tag, selbst das Ticket mit dem Bus zur Stadtmitte kostet mindestens das Doppelte.\n\n
+COM_30_04
+EIn Combini, neben Abgepacktem gibt es hier auch Bento als Restaurantersatz und im Winter brodelt "Oden" neben der Kasse. Die ist meist in Händen eines jobbenden Studenten. \n
+COM_30_05
+Ein Familienrestaurant. Im Gegensatz zu dem Namen sind es Teile einer Restaurantkette, die 24h westliches (wie Buletten) und japanisches Essen servieren. Trotzdem, preiswert und lecker.
+COM_30_09
+Patchiko, die japanische Spielothek und der Ort, wo man sich einen Gehörsturz beim Betreten holt. Da Glücksspiel offiziell verboten ist, unterhält die Mafia hinter dem Haus eine kleine Bude, wo die Gewinne umgetauscht werden, die es offiziell gar nicht gibt. Kinder sind schon in Autos an Hitzschlag gestorben, weil die Mutter drinnen nicht loskam.
+COM_30_11
+Yamada Denki, das japanische Gegenstück zum Mediomarkt und Jupiter.
+COM_30_12
+Das beste Kaufhaus der Stadt. Gucci, Versace oder was sonst noch einen Namen hat: Hier findet es reißenden Absatz zum doppelten Preis und hilft mit, den italienischen Haushalt zu sanieren.
+COM_30_14
+H-Trans Hauptquartier. Natürlich in bester Citylage. Die Angestellten in den 16 Mann Büros haben jeder einen Quadratmeterschreibtischfläche, der ihre Heimat während der 14 Stundentage ist.
+COM_30_16
+Buissnesshotel, wo man ganz eng nächtigen kann. Aber für 4000 Yen ist sogar das Frühstück (Toast, Yogurt und Suppe) dabei.
+COM_30_17
+Viele Gebäude in Japan heißen einfach xyz-bil, nach dem Erbauer, wenn sie wie dies Alex-Biru viele unterschiedliche Firmenbüros beherbergen.
+COM_30_19
+Alles für den Arbeitskomfort im intelligenten Bürogebäude.
+COM_31_03
+Noch ein Parkplatz: Aber nicht mehr lange und hier wird gebaut.
+COM_31_04
+Ein kleiner Combini, ein Laden der fast alles für das tägliche Überleben verkauft und zu einer der sieben großen Ketten gehört. Der hier ist aber so klein, dass er nicht mal 24h auf hat.
+COM_31_05
+Ein Familienrestaurant, also eines der Kettenrestaurants, die billig und meist japanisch-westlich gemischt 24h Stunden essen servieren. Bloß keine Extrawünsche!
+COM_31_06
+Gebrauchtwagenhändler, steht an jeder Ecke und ab 30000 Yen (soviel wie ein brauchbares Fahrrad) ist man dabei.
+COM_31_12
+Nicht umsonst sind die größten Kaufhäuser der Welt in Japan, 7 Tage lang geöffnet. Falls ein Feiertag auf einen Sonntag fällt, dann wird der am Montag nachgeholt, damit mehr geshoppt wird.
+COM_31_13
+Ein Kaufhaus, hier entspannen sich die Japaner am Wochenende. Dieses hat sogar ein integriertes Parkhaus.
+COM_31_14
+Dicht gedrängt, im Untergeschoss Restaurant, Ergeschoss Läden mit Schaufenstern, oben eine Musikschule, zwei Restaurant, eine Drogerie und zwischen dem Lärm noch ein Appartment.
+COM_31_15
+Viele Büros, aber natürlich auch Läden. Der Geheimtipp im dritten Stock: Die Ramenküche.
+COM_31_16
+Ein großes Kaufhaus, und ganz oben ist immer die Restaurantetage mit oft leckerem Essen.
+COM_31_17
+Blickfang ist der Bildschirm. Dabei ist es noch ein kleiner. Wer will, kann sein Gesicht mit der Handykamera hier erscheinen lassen.
+COM_31_19
+Selbst für große Kaufhäuser reicht der Platz nicht mehr. Und dunkel wird es hier nur wenn der Strom ausfällt.
+COM_32_01
+Werbeplakat um auch den letzten Yen gleich wieder umzusetzten.
+COM_32_02
+Überall in Japan gibt es diese Verkaufautomaten. Ob Suppe, Kameras, Hähnchensandwiches, Eis, Getränke oder Unausprechliches - nichts was sie nicht verkaufen.
+COM_32_04
+Die Bilder der Überwachungskameras in diese kleinen Läden sind begehrt: Nicht wegen der seltenen Überfälle, sondern weil bei der Ladendichte fast immer einer auf dem Epizentrum des letzten Erdbeben steht und man so im Fernsehen unscharfe Gegenstände aus den Regalen fallen sieht.
+COM_32_05
+Ein traditionelles japanisches Restaurant. Wenn es keine Kette ist, dann ist ein solches Haus sicher teuer - aber noch leckerer.
+COM_32_07
+Eine Hochzeit ist in Japan großes Geschäft. Deswegen sind diese Hochzeitszentren aufwendig wie von Walt Disney gestaltet. Drinnen geht es nach strengem Zeitplan durch eine kirchliche Imitatszeremonie. Blonde Ausländer als Pfarrerersatz können sich hier ein gutes Zubrot verdienen.
+COM_32_12
+In den 30er waren solche Steinbauten der letzte Scxhrei. Weil der Abriss viel zu teuer wäre, steht es immer noch, obwohl es für ein richtiges Kaufhaus eigentlich schon zu klein ist.
+COM_33_08
+Pro Quadratmeter tausend kleine Dinge. Vom Fisch, der an der Häuserecke trocknet, bis zum Shinseido Kosmetikgeschäft: Nichts, was hier nicht feilgeboten würde. \n
+Disneyland
+Disneyland\n\nWichtigste Freizeitattraktion im Großraum Tokio und auch darüber hinaus ... 
+Driving_School
+Fahrschule und Führerscheinprüfstelle\n\nDiese Schulen haben wirklich einen eigenen Parcour für Anfänger und zum Prüfen. 
+FastTrainStop
+Schnellzugbahnhof
+FreightTrainStop
+Frachtbahnhof
+Hospital
+Krankenhaus\n\n
+IND_00_05
+Wassertank: Gut gechlort und voller Pestizide. Wasser trink man in Japan nicht aus dem Hahn.
+IND_01_03
+Einen Gastank sieht man selten. Meist wird das Gas per Laster in 50l Flasche direkt zum Haus transportiert.
+IND_30_01
+Aufgegebenes Reisfeld, sucht einen Käufer.
+IND_30_02
+Recyclinghof, oder lokale Müllverbrennung. Ist zwar verboten, aber am Wochenende verdunkelt sich immer noch der Himmel im ländlichen Japan und es riecht nach verbranntem Plastik. 
+IND_30_03
+Ein kleiner Bauernmarkt ist in diesen baufälligen Hallen. Das Gemüse dprt ist frisch und lecker und billiger als im Supermarkt. Jetzt muss man sich nur noch verständigen können.
+IND_30_06
+Umspannwerk, versorgt die Spinnenetze japanischer Städte.
+IND_30_07
+Weil der Wasserdruck schwank und schwach ist, hat fast jede größere Siedlung ihren eigenen Wasserturm. So ist auch noch morgens, wenn aller nochmal kurz aufs Klo gehen, genug Wasser da. Als Deutscher vermisst man so allerdings frisches kaltes Wasser ...
+IND_30_08
+Das Depot der kommunalen Behindertenbusse. Sie sind umsonst, aber fahren nur dreimal täglich auf wöchentlich ändernden Routen (Handgeschriebener Aushang im Rathaus), um die richtigen Busunternehmen nicht zu verärgern.
+IND_30_11
+Düngemittellabor, was bei den Mengen, die auf die kleinen Reisfelder gekippt werden, auch dringend nötig ist.
+IND_30_16
+Neue Filter für die alte Fabrik, damit kann man auch noch im Stadtzentrum produzieren.
+IND_30_18
+Das neue Nanotechnikinstitut ist der Schmuck der Stadt.
+IND_31_01
+Nur in ländlichen Gebieten findet man solche Mobilfunkmasten. In der Stadt sitzen sie direkt auf den Freileitungsmasten vor dem Fenster.
+IND_31_03
+Diese Wellblechgarage überstand schon hunderte Taifune. Das kann nur an der Aerodynamik liegen, denn die Streben frisst der Rost.
+IND_31_07
+Ein betonverkleiderter Wasserturm, damit auch in den oberen Stockwerken der nahen Apartmentsiedlung das Wasser sprudelt.
+IND_31_08
+Hier wird Flüssiggas in Flaschen abgefüllt. Diese werden an die Häuser geliefert, da man mit 100V und 20A Wechselspannung (Hausanschluss) keine Durchlauferhitzer und Elektroherde betreiben kann.
+IND_31_09
+Hier wird Sojasoße gebraut. Nicht die beste Nachbarschaft bei Windstille.
+IND_31_10
+Bodenstation für die Einspeisung ins lokale Kabelfernsehen.
+IND_31_11
+Optikfabrik. Immer noch gilt Made in Germany. In wenn im kleingedruckten steht: Linsen berechnet in Deutschland. Produziert wurde hier und seit drei Jahren in China.
+IND_32_03
+Schnell errichtet, siecht hier ein einst hoffnunfsvolles Unternehmen dahin.
+IND_32_11
+In diesen alten Mauern hat die Universität den neuen Reinraum gebaut.
+Kasan
+aktiver Vulkan\n\nDer rauchende Schlot verrät ihn von weitem. Jährlich kommen Tausende um ihn zu sehen und dann an seinem Fuße in den heißen Quellen zu baden. 
+ModernAirTerminal477
+Modernes Terminal
+Monolith_(by_ono)
+\n\nDieser Monolith von ono steht stellvertretend für alle japanischen Zeichner.
+Monument_for_477
+\n\nViele Grafiken wurden ursprünglich von 477 für das Programm FreeTrain gezeichnet.  
+Monument_for_Hajo
+\n\nDenkmal für Hajo, dem Schöpfer von Simurans.  
+Observatory_(by_MHz)
+\n\nDiese Sternwarte steht für MHz und dessen scharfes Auge für Details.  
+PlainAirStop
+Parkposition
+PostOffice
+Altes Postamt
+RES_30_01
+kleines Reisfeld am Stadtrand
+RES_30_02
+Eine Bauernhof am Stadtrand; die Bäume dienen als Klimaanlage und das Plumpsklo als Düngung.
+RES_30_03
+Altes Farmhaus im Schatten zwischen den Bäumen
+RES_30_04
+Auch hier deutliche Anleihen bei Amerika (außer bei der Quadratmeterzahl).
+RES_30_10
+Appartments wie diese mit Platz und Parkplatz sind schon fast Luxus.
+RES_30_11
+Auch wenn der Beton schon bröckelt: Hier will man wohnen!
+RES_30_12
+Ein kleiner Laden drängt sich zwischen die Häuser.
+RES_30_13
+In den 60er Jahren fing es mit staatlichen Appartments wie diesen an. Und noch heute möchte jeder Japaner den lauten engen Häuser entfliehen und hier wohnen.
+RES_30_14
+Diese Appartments aus Beton gelten als erdbebensicher. Dazu der nahe Laden, hier will man wohnen.
+RES_30_15
+Sonnenstrahlen erreichen hier nur um 12h Mittags den Boden. Aber so wohnt ein Großteil der japanischen Stadtbewohner in den Vororten.
+RES_30_16
+Ein großer Apartmentblock ragt unvermittelt aus den Häuschen emport: Unverbauter Blick auf die Hochspannungsleitung vor dem Balkon.
+RES_30_17
+Teuer, laut aber keine Stunde Fahrt vom Büro entfernt im Stadtzentrum.
+RES_31_02
+Mehr Gebüsch, wenig Feld: Hier wohnt eine alte Frau, die mehr zum Trotz noch Landwirtschaft betreibt.
+RES_31_03
+Altes Farmhaus im Schatten zwischen den Bäumen
+RES_31_12
+Der lokale Schrein, wo sich der durchschnittliche Japaner nur einfindet, wenn es/sie etwas von den Göttern will: Eine gute Note oder eine anschmiegsame Frau zum Beispiel.
+RES_31_13
+Viele Singles und Ehepaare leben in diesen Motel-artigen Appartments aus Holz. Bei Erdbeben sind das die ersten Häuser, die zusammenfallen.
+RES_31_14
+Die Statistik sagt, dass diese Holzfertighäuser mit Betonimitatwänden nach 29 Jahren wieder abgerissen werden. Tendenz fallend.
+RES_31_15
+So wohnt ein Großteil der japanischen Stadtbewohner in den Vororten, nur 90 min bis zur Arbeit und 30 cm bis zum Fenster des Nachbarn.
+RES_31_17
+Diese Apartments haben ein schräges Dach, weil es hier ein Gesetz gibt, dass um 12h Mittag die Sonne die Straße erreichen muss.
+RES_32_02
+Ein altes Haus mit schindelgedecktem Dach und traditionellem Garten. Früher wohnte hier ein Samurai.
+RES_32_03
+Hier haben sie noch genug Platz für einen Gemüsegarten.
+RES_32_12
+NOch ein kleiner unschuldiger Apartmentturm
+RES_32_17
+Nebenan sind sechs Restaurants, unten Läden und die Straße lärmt vor dem Haus. Aber zum Glück ist gegen 22h Schluss mit dem Nachtleben und alle gehen nach Hause schlafen.
+ShipDepot
+Werft
+Small_Shrine
+Kleiner Tempel\n\nSo wie die Kirche an jeder Ecke hat in Japan jeder Bezirk einen kleinen Tempel oder Schrein. Dort kommt man in der Nachbarschaft zum Beispiel am Neujahrsmorgen zusammen.
+SmallTemple
+Temple\n\Einem reichen Erben hat diesem Tempel nicht nur sein imposantes Haupthaus zu verdanken, sondern auch die vielen Sakefässer für das Neujahrsfest.
+TrainDepot
+Zugdepot
+TrainStop
+Zugstop 
+TramDepot
+Straßenbahndepot
+Viewtower
+Aussichtsturm\n\nEs gibt über 150 von diesen in Japan. Sie sind eine Sehenswürdigkeit in sich und machen aus einem öden Hafen eine Touristenattraktion.
+#____________________________________citycar____________________________________
+#____________________________________citycar____________________________________
+Ambulanz
+Krankenwagen
+FordT
+Ford T-Modell
+green_car
+grünes Auto
+orange_bus
+orangener Bus
+taxi
+Taxi
+yellow_car
+gelbes Auto
+#__________________________________dummy_info___________________________________
+#__________________________________dummy_info___________________________________
+factory_BOOK-OFF_details
+<title>Buchhändler Details</title><h1>Buchhändler Details</h1><p>Man findet sie überall. In Wellblechgebäuden schnell errichtet bieten sie viele Bücher und Manga an. Studenlang darf man dort ganze Hefte durchlesen.</p>
+factory_Druckerei_details
+Druckerei
+factory_fish_pond_details
+<title>Fischteich Details</title><h1>Fischteich Details</h1><p>Eines der wichtigsten Grundnahrungsmittel in Japan, früher wegen des Preises. Allerdings gibt es wegen der Überdüngung kaum Fischteiche, statt dessen wird in Fließgewässern Aal (Unagi) gezüchtet.</p>
+factory_fish_swarm_details
+<title>Fischschwarm Details</title><h1>Fischschwarm Details</h1><p>Eines der wichtigsten Grundnahrungsmittel in Japan, früher wegen des Preises. Seit auch in Japan der Lebensstandard deutlich gestiegen ist steht Fleisch immer höher im Kurs. Die leckeren Fische werden dabei von kleinen Schiffen gefangen, während die berüchtigten Großschiffe für die Massenversorgung auf den sieben Weltmeeren zu finden sind.</p>
+factory_Nutzwald_details
+<title>Über Nutzwald</title><h1>Nutzwald</h1><p>In den Wäldern wächst das wichtigste, nachwachsende Material und die wichtigste, nachwachsende Energieressource, welche sich von der Forstwirtschaft zu eigen gemacht wird um von der Holz- und Papierindustrie in hochwertige Marken umgewandelt zu werden.</p>
+factory_Oelbohrinsel_details
+Ölbohrinsel
+factory_Oelfeld_details
+<title>Ölfeld Details</title><h1>Ölfeld Details</h1><p>Die japanischen Ölfelder sind sehr klein. Daher ist die Förderung kaum rentabel und auch der Transport lohnt sich nur bei mehreren zusammen.</p>
+factory_Oelkraftwerk_details
+<title>Ölkraftwerk Details</title><h1>Ölkraftwerk Details</h1><p>In den 60er Jahren war beschlossen worden, dass die Kohle für den Stahl benötigt wird und es wurden viele Ölkraftwerke gebaut. Auch lässt sich Öl besser auf kleinem Platz lagern.</p>
+factory_osushiya_details
+<title>Sushi-Restaurant Details</title><h1>Sushi-Restaurant Details</h1><p>Sushi ist roher Fisch auf Reis, aber eigentlich eher mehr Fastfood. Deutlich teurer sind meist die Sashimi-Restaurant, wo man den Reis einfach weglässt.</p>
+factory_Papierfabrik_details
+Papierfabrik
+factory_Rice_Mill_details
+<title>Reismühle Details</title><h1>Reismühle Details</h1><p>In der Reismühle wird der Reis geschält und gebeizt. Der resultierende Reis erinnert ein wenig an Milchreis.</p>
+factory_Small_Rice_Field_details
+<title>Reisfelder Details</title><h1>Reisfelder Details</h1><p>Reisfelder, das was in Deutschland Weizenfelder sind. Im Winter kahl, im Frühling hellgrün und teilweise unter Wasser gesetzt im Sommer leicht bläulich. In Japan werden in der Reiswirtschaft unmengen Dünger und Pestizide eingesetzt.</p>
+factory_Sushiya_details
+<title>Sushi-Restaurant Details</title><h1>Sushi-Restaurant Details</h1><p>Sushi ist roher Fisch auf Reis, aber eigentlich eher mehr Fastfood. Deutlich teurer sind meist die Sashimi-Restaurant, wo man den Reis einfach weglässt.</p>
+#____________________________________factory____________________________________
+#____________________________________factory____________________________________
+BOOK-OFF
+Buchhändler Book-Off
+ChemicalPlant
+Chemiefabrik
+CHEMIST
+Apotheke
+fish_pond
+Fischteich
+fish_swarm
+Fischschwarm
+Oelbohrinsel
+Ölbohrinsel
+Oelfeld
+Ölfeld
+Oelkraftwerk
+Ölkraftwerk
+osushiya
+Sushi-Restaurant
+Rice_Mill
+Reismühle
+Small_Rice_Field
+Reisfelder
+Sushiya
+Sushi-Restaurant
+#_____________________________________good______________________________________
+#_____________________________________good______________________________________
+Buecher
+Bücher
+Chemicals
+Chemikalien
+fish
+Frischfisch
+Medicine
+Medizin
+Oel
+Öl
+PrintersInk
+Druckfarben
+raw-rice
+Reisgarben
+rice
+Reis
+#____________________________________vehicle____________________________________
+#____________________________________vehicle____________________________________
+Buchtransporter
+Serj/H-Trans Stückguttransporter
+CoolerTruck
+Kühllaster
+DAIHATSU POST VAN
+Daihatsu Post Van
+Holzwagen
+H-Trans Rungenwagen Holz
+Holzwagen2
+Holzwagen
+Horsebookscariage
+Bücherkutsche
+Horsepassengerscariage
+Kutsche
+Horses
+Pferdegespann
+Horsewoodcariage
+Pferdekarren für Holz
+Oilbarge
+Ölbarke
+Solar Car DANKICHI
+Solarauto Dankichi
+Steamer
+Dampfschiff
+TankerTruck
+Tanklastwagen
+Tugboat
+Schleppkahn
+#______________________________________way______________________________________
+#______________________________________way______________________________________
+asphalt_road
+Asphalierte Straße
+city_road
+Stadtstraße
+cobblestone_road
+Kopfsteinpflaster
+concrete_sleeper_track
+Betonschwellen
+dirt_road
+Feldweg
+gavel_road
+Schotterpiste
+Powerline
+Stromleitung
+runway_modern
+Moderne Start- und Landebahn
+taxiway
+Taxiway
+tramrailway
+Straßenbahnschienen
+wooden_sleeper_track
+Holzoberbau

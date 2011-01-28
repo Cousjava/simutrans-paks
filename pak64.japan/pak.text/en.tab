@@ -1,0 +1,246 @@
+################################################################################
+#                                                                              #
+#                Simutrans Scenario Specific Translation File                  #
+#                              Scenario: pak.japan                             #
+#                             Language: en English                             #
+#                             Encoding: ISO-8859-1                             #
+#                            Font : Prop-Latin1.bdf                            #
+#                           Date Created: 28.01 2011                           #
+#                                                                              #
+#                                   authors:                                   #
+#                            Alexander Brose - AlexB                           #
+#                                    note:                                     #
+#                                 André - An_dz                                #
+#                 note: Sempre verifica aonde os textos estão!                 #
+#                         Klaus Thenmayer - Bitfreezer                         #
+#                                    note:                                     #
+#                                  - Christian                                 #
+#                                    note:                                     #
+#                            Colin W Anetts - Colin                            #
+#                                    note:                                     #
+#                            Colin Teubner - ColinT                            #
+#                                    note:                                     #
+#                                   - Combuijs                                 #
+#                                    note:                                     #
+#                             Michael Hohl - Cruzer                            #
+#                       note: Administrator pak192.comic                       #
+#                             Dirk W. - DirrrtyDirk                            #
+#                                    note:                                     #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
+#                              Frank Penz - FrankP                             #
+#                                    note:                                     #
+#                                    - GerdW                                   #
+#                                    note:                                     #
+#                         Roman Schwörer - Gotthardlok                         #
+#                                    note:                                     #
+#                           Hansjörg Malthaner - Hajo                          #
+#                                    note:                                     #
+#                              Jaroslaw - Jaroslaw                             #
+#                                    note:                                     #
+#                             Marcus Haupt - Marcus                            #
+#note: if I´m not available by email to proximity.de try mail@marcus-haupt.de (#
+#                                   - Nico192                                  #
+#                                    note:                                     #
+#                                    - Paco_m                                  #
+#                                    note:                                     #
+#                           Sava Bogdanets - Sava2004                          #
+#                                    note:                                     #
+#                          Susanna Björverud - Susanna                         #
+#                                    note:                                     #
+#                                   - TheHood                                  #
+#                                    note:                                     #
+#                           Timothy Baldock - Timothy                          #
+#                                    note:                                     #
+#                       Venkatesh Parthasarathy - Venkat                       #
+#                                    note:                                     #
+#                                  - enternald                                 #
+#     note: Need more lt translators. Eiti ? http://simutrans-germany.com/     #
+#                               Florian - floppy                               #
+#                                    note:                                     #
+#                            Günter Beine - gebeine                            #
+#                        note: maintainer pak128.german                        #
+#                        Lorenz Van Damme - gforcetheone                       #
+#                                    note:                                     #
+#                          James E. Petts - jamespetts                         #
+#  note: Maintainer for Simutrans-Experimental. Also works on Pak128.Britain.  #
+#                            Jonas Bushart - jonasbb                           #
+#                                    note:                                     #
+#                                - jounior-fuchs                               #
+#                                    note:                                     #
+#                                   - knightly                                 #
+#                                    note:                                     #
+#                             Mark Knoester - mark                             #
+#                                    note:                                     #
+#                              Markus Rex - msrex                              #
+#                                    note:                                     #
+#                              Tomá? Kube? - napik                             #
+#                                    note:                                     #
+#                                    - petter                                  #
+#                                    note:                                     #
+#                             P. Hamming - phamming                            #
+#                                    note:                                     #
+#                          Markus Pristovsek - prissi                          #
+#                                    note:                                     #
+#                                     - sdog                                   #
+#                                    note:                                     #
+#                                   - shinexus                                 #
+#                                    note:                                     #
+#                           Lincoln Sayger - skreyola                          #
+#                                    note:                                     #
+#                                    - smu42                                   #
+#                                    note:                                     #
+#                               Sven Osada - sojo                              #
+#                         note: maintainer pak96.comic                         #
+#                                 - transporter                                #
+#                                    note:                                     #
+#                              Xavier Paz - vilvoh                             #
+#                                    note:                                     #
+#                         Tomá? Vrbický - vrbicky_tomas                        #
+#                     note: Don´thurry up! Death is faster.                    #
+#                            Vladimír Slávik - vsys                            #
+#                             note: Vladimír Slávik                            #
+#                           Michael Olbricht - whoami                          #
+#                                    note:                                     #
+#                                                                              #
+################################################################################
+#____________________________________bridge_____________________________________
+#____________________________________bridge_____________________________________
+ClassicRail
+Concrete rail bridge
+ClassicRoad
+Concrete road bridge
+SteelRail
+Steel girder rail bridge
+#___________________________________building____________________________________
+#___________________________________building____________________________________
+01_CITY
+Town hall
+Baseball_Arena
+Baseball Stadium\n
+Big_Temple
+Large Shinto Shrine\n
+City_Castle
+City Castle\n
+COM_30_03
+Students work in these\nsmall 24h convenience\nstores.\n
+COM_31_03
+This big 24h convenience\nstore replace the\nsupermarket in many small\nvillages.\n
+COM_32_02
+You will find these vending\nmachines everywhere in\nJapan.\n
+COM_33_08
+Here was the commercial\nheart of the old city. These\nwooden shops had\neverything you would need.\n
+Driving_School
+Driving School\n
+Hospital
+General Hospital\n
+IND_30_01
+Derelic rice field, searching\nfor a real estate buyer.\n
+IND_31_01
+Only in rural japan you will\nsee such mobile base\nstations. Inside towns\nthere are microcells,\nfeeded from the electical\npylons.\n
+Kasan
+Volcano\n\nThis grandiose spectacle\nattracts thousands of\nvisitors each year.\nDo not miss the hotsprings at the bottom!
+PostOffice
+A traditional japanese post office
+RES_30_01
+small rice field in between\nhouses\n
+RES_30_02
+small house with a rice\nfield\n
+RES_30_03
+a proud old farmhouse\n
+RES_30_04
+generous house with a\ngarden\n
+RES_30_10
+two story concrete\napartments with a parking\nlot\n
+RES_30_12
+some bungalows and a\nsmall shop\n
+RES_30_13
+First motel-like two story\napartments sneek in\nbetween the single houses.\n
+RES_30_14
+first multi-story apartment\nblock\n
+RES_30_15
+Nearly no space is left\nbetween the buildings.\n
+RES_31_02
+small house with a rice\nfield\n
+RES_31_03
+a proud old farmhouse\n
+RES_31_13
+First motel-like two story\napartments sneek in\n
+RES_32_02
+traditional wooden slate\ncovered house\n
+RES_32_03
+They still grow their own\nvegetables\n
+Viewtower
+Viewtower\n\nJapanese like these small towers. \nThey are tourist attractions\nin their own right - in fact\nyou can find at least 150\nscattered across Japan.\n\nThis one was built by Patrick,\nwith no help from anybody\nelse.  It took him months to\ninstall the windows by\nhimself!\n
+#__________________________________dummy_info___________________________________
+#__________________________________dummy_info___________________________________
+factory_Nutzwald_details
+<title>About timber plantations</title><h1>Timber plantations</h1><p>In the woods grows the most important renewable material and energy source, which is appropriated by forestry and transformed to high-quality brands by wood and paper industry.</p>
+#____________________________________factory____________________________________
+#____________________________________factory____________________________________
+BOOK-OFF
+Book-Off by yuugen Co.
+CHEMIST
+Chemist
+Druckerei
+Printing works
+Nutzwald
+Timber plantation
+Oelbohrinsel
+Oil rig
+Oelfeld
+Small_Oil_Field
+Oelkraftwerk
+Oil Power Plant by haru.
+osushiya
+Sushi restaurant
+Papierfabrik
+Paper mill
+Sushiya
+Sushi restaurant
+#_____________________________________good______________________________________
+#_____________________________________good______________________________________
+Buecher
+Books
+Holz
+Wood
+Oel
+Oil
+Papier
+Paper
+Post
+Mail
+PrintersInk
+Printers ink
+#____________________________________vehicle____________________________________
+#____________________________________vehicle____________________________________
+Buchtransporter
+Serj/H-Trans goods van
+Holztransporter
+H-Trans Wood truck
+Holzwagen
+H-Trans Wood stake car
+Horsebookscariage
+Horse Books Carriage
+Horsepassengerscariage
+Horse Passengers Carriage
+Horsewoodcariage
+Horse Wood Carriage
+jinriki
+Riksha
+#______________________________________way______________________________________
+#______________________________________way______________________________________
+asphalt_road
+Asphalt road
+city_road
+City road
+cobblestone_road
+Cobblestone road
+concrete_sleeper_track
+Concrete sleepers railroad track
+dirt_road
+Dirt road
+gavel_road
+Gavel road
+wooden_sleeper_track
+Wooden sleepers railroad track
