@@ -1,0 +1,45 @@
+# Tram rails
+
+Obj=way
+Name=tramrailway
+waytype=tram_track
+cost=4000
+maintenance=150
+topspeed=50
+max_weight=180
+intro_year=1910
+
+icon=> ./tramrailway.6.0
+cursor=./tramrailway.6.2
+# rbis * animation
+Image[-]=./tramrailway.6.3
+
+Image[S]=./tramrailway.0.0
+Image[E]=./tramrailway.0.1
+Image[N]=./tramrailway.0.2
+Image[W]=./tramrailway.0.3
+
+Image[NSW]=./tramrailway.1.0
+Image[NEW]=./tramrailway.1.1
+Image[NSE]=./tramrailway.1.2
+Image[SEW]=./tramrailway.1.3
+
+Image[SW]=./tramrailway.2.0
+Image[NE]=./tramrailway.2.1
+Image[NW]=./tramrailway.2.2
+Image[SE]=./tramrailway.2.3
+
+Image[NS]=./tramrailway.3.0
+Image[EW]=./tramrailway.3.1
+Image[NSEW]=./tramrailway.3.2
+
+ImageUp[3]=./tramrailway.4.2
+ImageUp[6]=./tramrailway.4.3
+ImageUp[9]=./tramrailway.4.1
+ImageUp[12]=./tramrailway.4.0
+
+Diagonal[NE]=./tramrailway.5.1
+Diagonal[SW]=./tramrailway.5.0
+Diagonal[SE]=./tramrailway.5.3
+Diagonal[NW]=./tramrailway.5.2
+--------------------

@@ -1,10 +1,4 @@
-#
-# Roads for Simutrans
-#
-# author: Hj. Malthaner
-# date:   23-Mar-04
-# update: 23-Mar-04
-#
+--
 Obj=way
 Name=river
 copyright=MHz
