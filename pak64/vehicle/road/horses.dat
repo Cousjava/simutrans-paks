@@ -1,6 +1,4 @@
-#
-# Update: 09-Jan-04: Hj.Malthaner: added introduction dates
-#
+--
 obj=vehicle
 name=Horses
 waytype=road
@@ -26,7 +24,7 @@ EmptyImage[SE]=horses.0.4
 EmptyImage[NW]=horses.0.5
 EmptyImage[NE]=horses.0.6
 EmptyImage[SW]=horses.0.7
------------------------
+--
 obj=vehicle
 name=Ox2
 waytype=road
@@ -51,7 +49,7 @@ EmptyImage[SE]=horses.1.4
 EmptyImage[NW]=horses.1.5
 EmptyImage[NE]=horses.1.6
 EmptyImage[SW]=horses.1.7
------------------------
+--
 obj=vehicle
 name=Ox4
 waytype=road
@@ -76,7 +74,7 @@ EmptyImage[SE]=horses.2.4
 EmptyImage[NW]=horses.2.5
 EmptyImage[NE]=horses.2.6
 EmptyImage[SW]=horses.2.7
------------------------
+--
 obj=vehicle
 name=Bulkcarriage
 copyright=Hajo
@@ -137,7 +135,7 @@ FreightImage[3][SE]=bulk-carriage.4.4
 FreightImage[3][NW]=bulk-carriage.4.5
 FreightImage[3][NE]=bulk-carriage.4.6
 FreightImage[3][SW]=bulk-carriage.4.7
------------------------
+--
 obj=vehicle
 name=Horsewoodcariage
 copyright=Hajo
@@ -181,7 +179,7 @@ FreightImage[SE]=veh-planks.0.4
 FreightImage[NW]=veh-planks.0.5
 FreightImage[NE]=veh-planks.0.6
 FreightImage[SW]=veh-planks.0.7
------------------------
+--
 obj=vehicle
 name=Horsepapercariage
 copyright=Hajo
@@ -215,7 +213,7 @@ FreightImage[SE]=veh-paper.1.4
 FreightImage[NW]=veh-paper.1.5
 FreightImage[NE]=veh-paper.1.6
 FreightImage[SW]=veh-paper.1.7
------------------------
+--
 obj=vehicle
 name=Horsebookscariage
 copyright=Hajo
@@ -241,7 +239,7 @@ EmptyImage[SE]=veh-books.0.4
 EmptyImage[NW]=veh-books.0.5
 EmptyImage[NE]=veh-books.0.6
 EmptyImage[SW]=veh-books.0.7
------------------------
+--
 obj=vehicle
 name=Horsepassengerscariage
 copyright=Hajo
@@ -265,7 +263,7 @@ EmptyImage[SE]=veh-bus.0.4
 EmptyImage[NW]=veh-bus.0.5
 EmptyImage[NE]=veh-bus.0.6
 EmptyImage[SW]=veh-bus.0.7
------------------------
+--
 obj=vehicle
 name=Horsemailcariage
 copyright=Hajo
@@ -278,7 +276,7 @@ speed=30
 RunningCost=3
 intro_year = 1400
 intro_month = 1
-retire_year = 1960
+retire_year = 1950
 Constraint[Prev][0]=Horses
 Constraint[Next][0]=none
 EmptyImage[S]=mail-coach.0.0
@@ -289,4 +287,32 @@ EmptyImage[SE]=mail-coach.0.4
 EmptyImage[NW]=mail-coach.0.5
 EmptyImage[NE]=mail-coach.0.6
 EmptyImage[SW]=mail-coach.0.7
------------------------
+--
+obj=vehicle
+name=PonyExpress
+waytype=road
+engine_type=bio
+copyright=JT
+freight=Post
+payload=2
+speed=37
+cost=22500
+weight=1
+power=2
+gear=225
+sound=horse.wav
+RunningCost=15
+intro_year = 650
+intro_month = 1
+retire_year = 1960
+retire_month = 9
+Constraint[Prev][0]=none
+EmptyImage[SW]=ponyexpress-64.0.0
+EmptyImage[NE]=ponyexpress-64.0.1
+EmptyImage[SE]=ponyexpress-64.0.2
+EmptyImage[NW]=ponyexpress-64.0.3
+EmptyImage[S]=ponyexpress-64.0.4
+EmptyImage[N]=ponyexpress-64.0.5
+EmptyImage[E]=ponyexpress-64.0.6
+EmptyImage[W]=ponyexpress-64.0.7
+--
