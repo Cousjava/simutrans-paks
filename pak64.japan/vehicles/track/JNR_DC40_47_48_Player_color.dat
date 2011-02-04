@@ -16,6 +16,7 @@ RunningCost=65
 sound=2
 intro_year=1977
 intro_month=2
+Constraint[Prev][0]=none
 EmptyImage[S]=JNR_DC40_47_48_Player_color.0.0
 EmptyImage[E]=JNR_DC40_47_48_Player_color.0.1
 EmptyImage[SE]=JNR_DC40_47_48_Player_color.0.2
