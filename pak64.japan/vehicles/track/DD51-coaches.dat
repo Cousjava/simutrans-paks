@@ -23,6 +23,27 @@ EmptyImage[W]=DD51.0.5
 EmptyImage[NW]=DD51.0.6
 EmptyImage[NE]=DD51.0.7
 --
+# JNR 3rd Grade Coach OHA31
+# This coach is a steel coach which is the beginning in Japan. Full length is as short as 17m. 
+# 500 or more cars were manufactured from 1927 to 1929, and it is the Japan whole country and translated.
+obj=vehicle
+name=JR_OHA31
+waytype=track
+copyright=Nabe
+freight=Passagiere
+payload=76
+speed=95
+cost=80000
+weight=30
+RunningCost=18
+intro_year=1927
+intro_month=01
+retire_year=1955
+EmptyImage[S]=DD51.1.4
+EmptyImage[W]=DD51.1.5
+EmptyImage[SE]=DD51.1.6
+EmptyImage[SW]=DD51.1.7
+--
 obj=vehicle
 name=JR-OYUFU10
 copyright=Nabe
