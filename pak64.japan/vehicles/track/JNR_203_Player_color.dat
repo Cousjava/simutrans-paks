@@ -71,7 +71,7 @@ Constraint[Next][0]=JNR-M203
 Constraint[Next][1]=JNR-T203
 Constraint[Next][2]=JNR-Tc202
 EmptyImage[S]=JNR_203_Player_color.2.0
-EmptyImage[E]=JNR_203_Player_color.2.1
+EmptyImage[W]=JNR_203_Player_color.2.1
 EmptyImage[SE]=JNR_203_Player_color.2.2
 EmptyImage[SW]=JNR_203_Player_color.2.3
 --
@@ -94,7 +94,7 @@ Constraint[Next][0]=JNR-M203
 Constraint[Next][1]=JNR-T203
 Constraint[Next][2]=JNR-Tc202
 EmptyImage[S]=JNR_203_Player_color.2.0
-EmptyImage[E]=JNR_203_Player_color.2.1
+EmptyImage[W]=JNR_203_Player_color.2.1
 EmptyImage[SE]=JNR_203_Player_color.2.2
 EmptyImage[SW]=JNR_203_Player_color.2.3
 --
