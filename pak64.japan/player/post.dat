@@ -1,0 +1,24 @@
+--
+Obj=building
+Name=PostOffice
+NoInfo=1
+level=1
+type=extension
+enables_post=1
+intro_year = 1400
+BackImage[0][0][0][0][0]=PostOffice.0.0
+icon=> PostOffice.1.0
+cursor=PostOffice.2.0
+--
+Obj=building
+Name=BigPostOffice
+NoInfo=1
+type=extension
+enables_post=1
+level=4
+intro_year = 1955
+BackImage[0][0][0][0][0][0]=post_modern.0.0
+BackImage[0][0][0][0][0][1]=post_modern.1.0
+icon=> post_modern.0.2
+cursor=post_modern.0.1
+--

@@ -5,7 +5,7 @@
 MAKEOBJ ?= ./makeobj
 
 DESTDIR  ?= simutrans
-PAKDIR   ?= $(DESTDIR)/pak
+PAKDIR   ?= $(DESTDIR)/pak.japan
 DESTFILE ?= simupak64-japan
 
 OUTSIDE :=
@@ -20,13 +20,13 @@ DIRS64 += factory
 DIRS64 += other
 DIRS64 += player
 DIRS64 += trees
-DIRS64 += vehicle/road
-DIRS64 += vehicle/track
-DIRS64 += vehicle/water
-DIRS64 += vehicle/air
-DIRS64 += vehicle/shinkansen
-DIRS64 += vehicle/trams
-DIRS64 += way
+DIRS64 += vehicles/road
+DIRS64 += vehicles/track
+DIRS64 += vehicles/water
+DIRS64 += vehicles/air
+DIRS64 += vehicles/shinkansen
+DIRS64 += vehicles/trams
+DIRS64 += ways
 
 DIRS128 :=
 DIRS128 += big-logo
