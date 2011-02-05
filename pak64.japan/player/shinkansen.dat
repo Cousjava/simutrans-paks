@@ -1,0 +1,55 @@
+--
+Obj=building
+Name=ShinkansenDepot
+# must be 1*1
+Dims=1,1,4
+NoInfo=1
+type=depot
+noconstruction=1
+waytype=monorail_track
+intro_year=1964
+intro_month=6
+FrontImage[0][0][0][0][0][0]=ls-depot-monorail.0.0
+FrontImage[1][0][0][0][0][0]=ls-depot-monorail.0.1
+FrontImage[2][0][0][0][0][0]=ls-depot-monorail.0.3
+FrontImage[3][0][0][0][0][0]=ls-depot-monorail.0.2
+FrontImage[0][0][0][0][0][1]=ls-depot-monorail.2.0
+FrontImage[1][0][0][0][0][1]=ls-depot-monorail.2.1
+FrontImage[2][0][0][0][0][1]=ls-depot-monorail.2.3
+FrontImage[3][0][0][0][0][1]=ls-depot-monorail.2.2
+icon=> ls-depot-monorail.0.4
+cursor=ls-depot-monorail.0.5
+--
+Obj=building
+Name=MonorailGround
+# must be this name; universal for all, always 1*1
+Dims=1,1
+NoInfo=1
+BackImage[0][0][0][0][0]=ls-depot-monorail.1.0
+--
+Obj=building
+Name=shinkansen_foundation
+# must be 1*1
+Dims=1,1
+NoInfo=1
+type=extension
+waytype=monorail_track
+BackImage[0][0][0][0][0]=ls-depot-monorail.1.0
+icon=> ls-depot-monorail.1.4
+cursor=ls-depot-monorail.1.5
+--
+Obj=building
+Name=ShinkansenStop
+Dims=1,1,2
+NoInfo=1
+enables_pax=1
+Level=4
+waytype=monorail_track
+type=stop
+BackImage[0][0][0][0][0]=ls-new-stations.0.0
+FrontImage[0][0][0][0][0]=ls-new-stations.0.1
+BackImage[1][0][0][0][0]=ls-new-stations.0.2
+FrontImage[1][0][0][0][0]=ls-new-stations.0.3
+icon=> ls-new-stations.0.4
+cursor=ls-new-stations.0.5
+--
