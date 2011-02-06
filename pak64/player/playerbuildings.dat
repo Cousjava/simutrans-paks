@@ -81,6 +81,42 @@ icon=> ls-busstop.0.4
 cursor=ls-busstop.1.4
 --------------------
 Obj=building
+Name=LongBusStop
+# must be 1*1
+type=stop
+copyright=Timothy
+waytype=road
+enables_pax=1
+NoInfo=1
+Dims=1,1,2
+intro_year=1920
+level=2
+BackImage[0][0][0][0][0][0]=new-busstop2.1.2
+FrontImage[0][0][0][0][0][0]=new-busstop2.1.3
+BackImage[1][0][0][0][0][0]=new-busstop2.1.1
+FrontImage[1][0][0][0][0][0]=new-busstop2.1.0
+icon=> new-busstop2.1.4
+cursor=new-busstop2.1.5
+--------------------
+Obj=building
+Name=HallBusStop
+# must be 1*1
+type=stop
+copyright=Timothy
+waytype=road
+enables_pax=1
+NoInfo=1
+Dims=1,1,2
+intro_year=1964
+level=4
+BackImage[0][0][0][0][0][0]=new-busstop2.0.2
+FrontImage[0][0][0][0][0][0]=new-busstop2.0.3
+BackImage[1][0][0][0][0][0]=new-busstop2.0.1
+FrontImage[1][0][0][0][0][0]=new-busstop2.0.0
+icon=> new-busstop2.0.4
+cursor=new-busstop2.0.5
+--------------------
+Obj=building
 Name=PostStop
 # must be 1*1
 type=stop
