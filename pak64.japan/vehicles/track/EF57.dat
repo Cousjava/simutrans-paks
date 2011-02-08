@@ -1,6 +1,6 @@
 ---
 obj=vehicle
-name=JNR_EF57_ElectricLocomotive
+name=JNR-EF57
 waytype=track
 engine_type=electric
 freight=None

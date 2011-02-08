@@ -1,14 +1,14 @@
 ---
 obj=vehicle
-name=JR_EF58
+name=JR-EF58
 waytype=track
 engine_type=electric
 freight=None
 speed=100
-cost=1000000
+cost=1800000
 weight=115
 power=1900
-RunningCost=200
+RunningCost=480
 Sound=7
 copyright=E.T.
 intro_year=1952

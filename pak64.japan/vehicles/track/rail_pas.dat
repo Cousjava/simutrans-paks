@@ -1,0 +1,70 @@
+--
+# JNR 3rd Grade Coach OHA31
+# This coach is a steel coach which is the beginning in Japan. Full length is as short as 17m. 
+# 500 or more cars were manufactured from 1927 to 1929, and it is the Japan whole country and translated.
+obj=vehicle
+name=JR-OHA31
+waytype=track
+copyright=Nabe
+freight=Passagiere
+payload=76
+speed=95
+cost=180000
+weight=30
+RunningCost=360
+intro_year=1927
+intro_month=01
+retire_year=1955
+EmptyImage[S]=DD51.0.0
+EmptyImage[W]=DD51.0.1
+EmptyImage[SE]=DD51.0.2
+EmptyImage[SW]=DD51.0.3
+--
+# JNR 3rd Grade Coach OHA35
+# 1301 cars are manufactured from 1939 to 1949, and this coach is the typical Japanese old model coach.
+obj=vehicle
+name=JR-OHA35
+copyright=Nabe
+waytype=track
+freight=Passagiere
+payload=84
+speed=110
+cost=200000
+weight=35
+RunningCost=410
+intro_year=1939
+intro_month=01
+retire_year=1986
+Constraint[Next][0]=JR-OHA35
+Constraint[Next][1]=JR-OHAFU33
+Constraint[Next][2]=JR-OYUFU10
+EmptyImage[S]=DD51.1.0
+EmptyImage[W]=DD51.1.1
+EmptyImage[SE]=DD51.1.2
+EmptyImage[SW]=DD51.1.3
+--
+# JNR 3rd Coach With a Conductor Room OHAFU33
+# This coach is the typical Japanese old model coach with a conductor room manufactured 606 cars from 1939 to 1948.
+obj=vehicle
+name=JR-OHAFU33
+waytype=track
+copyright=Nabe
+freight=Passagiere
+payload=76
+speed=110
+cost=190000
+weight=35
+RunningCost=360
+intro_year=1939
+intro_month=01
+retire_year=1986
+Constraint[Next][0]=none
+EmptyImage[S]=DD51.2.0
+EmptyImage[E]=DD51.2.1
+EmptyImage[SE]=DD51.2.2
+EmptyImage[SW]=DD51.2.3
+EmptyImage[N]=DD51.2.4
+EmptyImage[W]=DD51.2.5
+EmptyImage[NW]=DD51.2.6
+EmptyImage[NE]=DD51.2.7
+--

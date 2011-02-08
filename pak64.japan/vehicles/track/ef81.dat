@@ -1,6 +1,6 @@
 --
 obj=vehicle
-name=JRF_EF81
+name=JRF-EF81
 waytype=track
 engine_type=electric
 freight=None
@@ -10,7 +10,7 @@ Power=2550
 Gear=225
 cost=2400000
 weight=101
-RunningCost=590
+RunningCost=890
 intro_year=1968
 retire_year=2009
 length=8
@@ -25,7 +25,7 @@ EmptyImage[NE]=ef81.0.7
 copyright=E.T.
 --
 obj=vehicle
-name=JRF_EF81-450
+name=JRF-EF81-450
 waytype=track
 engine_type=electric
 freight=None
@@ -35,7 +35,7 @@ Power=2550
 Gear=225
 cost=2400000
 weight=101
-RunningCost=590
+RunningCost=890
 intro_year=1968
 retire_year=2009
 length=8
