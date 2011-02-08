@@ -2,7 +2,7 @@
 # Raven from TTD
 obj=vehicle
 copyright=Raven
-name=JR_C11
+name=JR-C11
 waytype=track
 engine_type=steam
 freight=None
@@ -27,7 +27,7 @@ EmptyImage[NE]=C11.0.7
 --
 # Raven from TTD
 obj=vehicle
-name=JR_C12
+name=JR-C12
 copyright=Raven
 waytype=track
 engine_type=steam
@@ -53,7 +53,7 @@ EmptyImage[NE]=C12.0.7
 --
 # Raven from TTD
 obj=vehicle
-name=JR_C53
+name=JR-C53
 engine_type=steam
 freight=None
 smoke=Steam
@@ -66,7 +66,7 @@ RunningCost=410
 intro_year=1928
 retire_year=1949
 Constraint[Prev][0]=none
-Constraint[Next][0]=JR_tender
+Constraint[Next][0]=JR-tender
 EmptyImage[S]=C53.0.0
 EmptyImage[E]=C53.0.1
 EmptyImage[SE]=C53.0.2
@@ -78,7 +78,7 @@ EmptyImage[NE]=C53.0.7
 --
 # Raven from TTD
 obj=vehicle
-name=JR_D52
+name=JR-D52
 engine_type=steam
 freight=None
 smoke=Steam
@@ -92,7 +92,7 @@ RunningCost=330
 intro_year=1943
 retire_year=1958
 Constraint[Prev][0]=none
-Constraint[Next][0]=JR_tender
+Constraint[Next][0]=JR-tender
 EmptyImage[S]=D52.0.0
 EmptyImage[E]=D52.0.1
 EmptyImage[SE]=D52.0.2
@@ -104,7 +104,7 @@ EmptyImage[NE]=D52.0.7
 --
 # Raven from TTD
 obj=vehicle
-name=JR_C57
+name=JR-C57
 engine_type=steam
 freight=None
 smoke=Steam
@@ -117,7 +117,7 @@ RunningCost=310
 intro_year=1937
 retire_year=1972
 Constraint[Prev][0]=none
-Constraint[Next][0]=JR_tender
+Constraint[Next][0]=JR-tender
 EmptyImage[S]=C57.0.0
 EmptyImage[E]=C57.0.1
 EmptyImage[SE]=C57.0.2
@@ -128,7 +128,7 @@ EmptyImage[NW]=C57.0.6
 EmptyImage[NE]=C57.0.7
 --
 obj=vehicle
-name=JR_tender
+name=JR-tender
 waytype=track
 freight=None
 cost=100000
@@ -138,9 +138,9 @@ RunningCost=8
 Sound=-1
 intro_year=1928
 retire_year=1972
-Constraint[Prev][0]=JR_C57
-Constraint[Prev][1]=JR_C53
-Constraint[Prev][2]=JR_D52
+Constraint[Prev][0]=JR-C57
+Constraint[Prev][1]=JR-C53
+Constraint[Prev][2]=JR-D52
 EmptyImage[S]=C53_tender.0.0
 EmptyImage[E]=C53_tender.0.1
 EmptyImage[SE]=C53_tender.0.2
@@ -152,7 +152,7 @@ EmptyImage[NE]=C53_tender.0.7
 --
 # Raven from TTD
 obj=vehicle
-name=JR_9600
+name=JR-9600
 engine_type=steam
 freight=None
 smoke=Steam
@@ -164,7 +164,7 @@ power=720
 RunningCost=320
 intro_year=1913
 Constraint[Prev][0]=none
-Constraint[Next][0]=JR_9600_tender
+Constraint[Next][0]=JR-9600_tender
 retire_year=1971
 EmptyImage[S]=JR9600.0.0
 EmptyImage[E]=JR9600.0.1
@@ -176,7 +176,7 @@ EmptyImage[NW]=JR9600.0.6
 EmptyImage[NE]=JR9600.0.7
 --
 obj=vehicle
-name=JR_9600_tender
+name=JR-9600-tender
 waytype=track
 freight=None
 cost=100000
@@ -186,7 +186,7 @@ RunningCost=10
 Sound=-1
 intro_year=1913
 retire_year=1971
-Constraint[Prev][0]=JR_9600
+Constraint[Prev][0]=JR-9600
 EmptyImage[S]=JR9600_tender.0.0
 EmptyImage[E]=JR9600_tender.0.1
 EmptyImage[SE]=JR9600_tender.0.2
