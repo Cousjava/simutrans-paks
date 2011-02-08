@@ -49,20 +49,4 @@ Image[NW]=ttd-citycars.2.5
 Image[NE]=ttd-citycars.2.6
 Image[SW]=ttd-citycars.2.7
 --
-obj=citycar
-name=Pizzabote
-copyright=AnD
-waytype=road
-speed=45
-intro_year=1980
-distribution_weight=1
-intro_month=7
-Image[S]=ttd-citycars.3.0
-Image[N]=ttd-citycars.3.1
-Image[E]=ttd-citycars.3.2
-Image[W]=ttd-citycars.3.3
-Image[SE]=ttd-citycars.3.4
-Image[NW]=ttd-citycars.3.5
-Image[NE]=ttd-citycars.3.6
-Image[SW]=ttd-citycars.3.7
---
+# Pizzabote now postbike ...
