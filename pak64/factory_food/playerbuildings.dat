@@ -1,0 +1,15 @@
+--------------------
+Obj=building
+Name=CattlePorch
+NoInfo=1
+level=1
+type=extension
+enables_ware=1
+intro_year = 1400
+needs_ground=1
+dims=1,1,2
+BackImage[0][0][0][0][0][0]=cattle_station.0.0
+BackImage[1][0][0][0][0][0]=cattle_station.0.1
+icon=> cattle_station.0.2
+cursor=cattle_station.0.3
+--------------------
