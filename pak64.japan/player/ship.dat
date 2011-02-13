@@ -1,0 +1,218 @@
+--
+Obj=building
+Name=ShipDepot
+# must be 1*1
+type=depot
+waytype=water
+NoInfo=1
+Dims=1,1,1
+noconstruction=1
+intro_year=1579
+BackImage[0][0][0][0][0][0]=werft_mhz.0.0
+BackImage[0][0][0][0][0][1]=werft_mhz.0.0
+icon=> werft_mhz.0.2
+cursor=werft_mhz.0.3
+--
+Obj=building
+Name=ChannelStop
+# must be 1*1
+NoInfo=1
+type=stop
+waytype=water
+Dims=1,1,2
+intro_year=1579
+noconstruction=1
+enables_ware=1
+BackImage[0][0][0][0][0]=river-kai.0.1
+FrontImage[0][0][0][0][0]=river-kai.0.0
+BackImage[1][0][0][0][0]=river-kai.0.2
+FrontImage[1][0][0][0][0]=river-kai.0.3
+icon=> river-kai.0.4
+cursor=river-kai.0.5
+--
+Obj=building
+Name=leftShipStop
+# must be 1*2
+# 1_1 is the land sqare
+Dims=1,5,4
+NoInfo=1
+intro_year = 1928
+type=habour
+enables_ware=1
+level=4
+icon=> hafen ico.0.1
+cursor=hafen ico.1.1
+BackImage[0][0][0][0][0]=new-alpha3.4.2
+BackImage[0][0][0][1][0]=new-alpha3.0.4
+BackImage[0][1][0][0][0]=new-alpha3.1.3
+BackImage[0][1][0][1][0]=new-alpha3.0.3
+BackImage[0][2][0][0][0]=new-alpha3.1.2
+BackImage[0][2][0][1][0]=new-alpha3.0.2
+BackImage[0][3][0][0][0]=new-alpha3.1.1
+BackImage[0][3][0][1][0]=new-alpha3.0.1
+BackImage[0][4][0][0][0]=new-alpha3.1.0
+BackImage[0][4][0][1][0]=new-alpha3.0.0
+BackImage[1][0][0][0][0]=new-alpha1.4.1
+BackImage[1][0][0][1][0]=new-alpha1.0.1
+BackImage[1][0][1][0][0]=new-alpha1.1.2
+BackImage[1][0][1][1][0]=new-alpha1.0.2
+BackImage[1][0][2][0][0]=new-alpha1.1.3
+BackImage[1][0][2][1][0]=new-alpha1.0.3
+BackImage[1][0][3][0][0]=new-alpha1.1.4
+BackImage[1][0][3][1][0]=new-alpha1.0.4
+BackImage[1][0][4][0][0]=new-alpha1.1.5
+BackImage[1][0][4][1][0]=new-alpha1.0.5
+BackImage[2][0][0][1][0]=-
+BackImage[2][0][0][0][0]=-
+BackImage[2][1][0][1][0]=new-alpha2.0.3
+BackImage[2][1][0][0][0]=new-alpha2.1.3
+BackImage[2][2][0][1][0]=new-alpha2.0.2
+BackImage[2][2][0][0][0]=new-alpha2.1.2
+BackImage[2][3][0][1][0]=new-alpha2.0.1
+BackImage[2][3][0][0][0]=new-alpha2.1.1
+BackImage[2][4][0][1][0]=new-alpha2.0.0
+BackImage[2][4][0][0][0]=new-alpha2.3.0
+BackImage[3][0][0][1][0]=-
+BackImage[3][0][0][0][0]=-
+BackImage[3][0][1][1][0]=new-alpha4.0.0
+BackImage[3][0][1][0][0]=new-alpha4.1.0
+BackImage[3][0][2][1][0]=new-alpha4.0.1
+BackImage[3][0][2][0][0]=new-alpha4.1.1
+BackImage[3][0][3][1][0]=new-alpha4.0.2
+BackImage[3][0][3][0][0]=new-alpha4.1.2
+BackImage[3][0][4][1][0]=new-alpha4.0.3
+BackImage[3][0][4][0][0]=new-alpha4.3.3
+--
+Obj=building
+Name=rightShipStop
+# must be 1*2
+# 1_1 is the land sqare
+Dims=1,5,4
+NoInfo=1
+type=habour
+enables_ware=1
+level=1
+intro_year = 1810
+icon=> hafen ico.0.3
+cursor=hafen ico.1.3
+BackImage[0][0][0][0][0]=new-alpha3.3.4
+BackImage[0][1][0][0][0]=new-alpha3.3.3
+BackImage[0][2][0][0][0]=new-alpha3.3.2
+BackImage[0][3][0][0][0]=new-alpha3.3.1
+BackImage[0][4][0][0][0]=new-alpha3.3.0
+BackImage[1][0][0][0][0]=new-alpha1.3.1
+BackImage[1][0][1][0][0]=new-alpha1.3.2
+BackImage[1][0][2][0][0]=new-alpha1.3.3
+BackImage[1][0][3][0][0]=new-alpha1.3.4
+BackImage[1][0][4][0][0]=new-alpha1.3.5
+BackImage[2][0][0][0][0]=-
+BackImage[2][1][0][0][0]=new-alpha2.3.3
+BackImage[2][2][0][0][0]=new-alpha2.3.2
+BackImage[2][3][0][0][0]=new-alpha2.3.1
+BackImage[2][4][0][0][0]=new-alpha2.3.0
+BackImage[3][0][0][0][0]=-
+BackImage[3][0][1][0][0]=new-alpha4.3.0
+BackImage[3][0][2][0][0]=new-alpha4.3.1
+BackImage[3][0][3][0][0]=new-alpha4.3.2
+BackImage[3][0][4][0][0]=new-alpha4.3.3
+--
+Obj=building
+Name=FreightShipStop
+Dims=1,1,16
+NoInfo=1
+type=habour
+enables_ware=1
+level=1
+intro_year = 1810
+icon=> hafen ico.0.5
+cursor=hafen ico.1.5
+# north end
+BackImage[10][0][0][0][0]=new-alpha1.5.1
+BackImage[11][0][0][0][0]=new-alpha3.5.1
+BackImage[3][0][0][0][0]=new-alpha2.5.1
+BackImage[2][0][0][0][0]=new-alpha4.5.1
+# middle pieces
+BackImage[8][0][0][0][0]=new-alpha1.5.0
+BackImage[9][0][0][0][0]=new-alpha3.5.0
+BackImage[1][0][0][0][0]=new-alpha2.5.0
+BackImage[0][0][0][0][0]=new-alpha4.5.0
+# south end
+BackImage[12][0][0][0][0]=new-alpha1.5.2
+BackImage[13][0][0][0][0]=new-alpha3.5.2
+BackImage[5][0][0][0][0]=new-alpha2.5.2
+BackImage[4][0][0][0][0]=new-alpha4.5.2
+# both ends
+BackImage[14][0][0][0][0]=new-alpha1.5.3
+BackImage[15][0][0][0][0]=new-alpha3.5.3
+BackImage[7][0][0][0][0]=new-alpha2.5.3
+BackImage[6][0][0][0][0]=new-alpha4.5.3
+--
+Obj=building
+Name=LeuchtturmShipStop
+# must be 1*2
+# 1_1 is the land sqare
+Dims=1,5,4
+NoInfo=1
+enables_ware=1
+enables_pax=1
+type=habour
+intro_year = 1810
+animation_time=2500
+level=3
+icon=> hafen ico.0.2
+cursor=hafen ico.1.2
+BackImage[1][0][0][0][0]=new-alpha1.1.1
+BackImage[1][0][1][0][0]=new-alpha1.3.2
+BackImage[1][0][2][0][0]=new-alpha1.3.3
+BackImage[1][0][3][0][0]=new-alpha1.3.2
+BackImage[1][0][4][0][0]=new-alpha1.5.4
+BackImage[1][0][4][1][0]=new-alpha1.4.4
+BackImage[1][0][4][1][1]=new-alpha1.4.5
+BackImage[1][0][4][1][2]=new-alpha1.4.6
+BackImage[1][0][4][1][3]=new-alpha1.4.4
+
+BackImage[0][0][0][0][0]=new-alpha3.1.4
+BackImage[0][1][0][0][0]=new-alpha3.3.2
+BackImage[0][2][0][0][0]=new-alpha3.3.2
+BackImage[0][3][0][0][0]=new-alpha3.4.0
+BackImage[0][4][0][0][0]=new-alpha3.5.4
+BackImage[0][4][0][1][0]=new-alpha3.4.4
+BackImage[0][4][0][1][1]=new-alpha3.4.5
+BackImage[0][4][0][1][2]=new-alpha3.4.6
+BackImage[0][4][0][1][3]=new-alpha3.4.4
+
+BackImage[3][0][0][0][0]=new-alpha4.5.4
+BackImage[3][0][0][1][0]=new-alpha4.4.4
+BackImage[3][0][0][1][1]=new-alpha4.4.5
+BackImage[3][0][0][1][2]=new-alpha4.4.6
+BackImage[3][0][0][1][3]=new-alpha4.4.4
+BackImage[3][0][1][0][0]=new-alpha4.4.0
+BackImage[3][0][2][0][0]=new-alpha4.3.1
+BackImage[3][0][3][0][0]=new-alpha4.4.1
+BackImage[3][0][4][0][0]=new-alpha4.1.3
+BackImage[3][0][5][0][0]=new-alpha4.3.4
+
+BackImage[2][0][0][0][0]=new-alpha2.5.4
+BackImage[2][0][0][1][0]=new-alpha2.4.4
+BackImage[2][0][0][1][1]=new-alpha2.4.5
+BackImage[2][0][0][1][2]=new-alpha2.4.6
+BackImage[2][0][0][1][3]=new-alpha2.4.4
+BackImage[2][1][0][0][0]=new-alpha2.4.2
+BackImage[2][2][0][0][0]=new-alpha2.3.2
+BackImage[2][3][0][0][0]=new-alpha2.4.1
+BackImage[2][4][0][0][0]=new-alpha2.1.0
+--
+Obj=building
+Name=rampShipStop
+Dims=1,1,4
+NoInfo=1
+type=habour
+icon=> hafen ico.0.4
+cursor=hafen ico.1.4
+level=1
+intro_year = 1810
+BackImage[1][0][0][0][0]=new-alpha1.2.1
+BackImage[0][0][0][0][0]=new-alpha3.2.4
+BackImage[3][0][0][0][0]=new-alpha4.2.3
+BackImage[2][0][0][0][0]=new-alpha2.2.0
+--
