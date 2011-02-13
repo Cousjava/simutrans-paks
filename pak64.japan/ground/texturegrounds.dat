@@ -58,11 +58,6 @@ Image[2][0]=texture-slope.0.2
 Image[3][0]=texture-slope.0.3
 --
 Obj=ground
-Name=Outside
-# hangtyp * animation
-Image[0][0]=outside.0.0
---
-Obj=ground
 Name=Fence
 copyright=Stormoog
 # Natural fence
