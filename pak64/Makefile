@@ -82,7 +82,7 @@ $(DIRS128):
 $(OUTSIDE):
 	@echo "===> OUTSIDE with REVISION and grounds"
 	@mkdir -p $(PAKDIR)
-	@echo -e -n "Obj=ground\nName=Outside\ncopyright=pak64 r" >$@/outside.dat
+	@echo -e -n "Obj=ground\nName=Outside\ncopyright=pak64 110.0 r" >$@/outside.dat
 	@svnversion >>$@/outside.dat
 	@echo -e "Image[0][0]=outside.0.0\n-" >>$@/outside.dat
 	@$(MAKEOBJ) PAK64 $(PAKDIR)/ $@/ > /dev/null

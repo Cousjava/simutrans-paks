@@ -5,7 +5,7 @@
 #                            Language: pt Portugues                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 27.12 2010                           #
+#                           Date Created: 13.02 2011                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                 André - An_dz                                #
@@ -226,6 +226,8 @@ COM_11_12
 Loja de pratarias antigas.\n\n
 Control_StationBlg
 Cabina de controle ferroviário
+DenkDirk
+Memorial Dirk Burkholz\n\nEste monumento é dedicado a Dirk Burkholz que fundou o fórum alemão do Simutrans em 2004 e faleceu aos 26 anos em 2010. Mesmo tendo mobilidade reduzida, ele trabalhou ativamente em várias organizações de voluntários.
 DenkFlor
 Memorial Flor Wauters\n\nEste monumento é dedicado a\nFlor 'WF Ultd.' Wauters,\nfamoso engenheiro que\ncriou tantos veículos\nferroviários e rodoviários.\nTambém é bem reputado por\nprojetar fábricas de alto\ndesempenho.\n\n
 DenkHajo
@@ -264,6 +266,8 @@ Goods_StationBlg
 Armazém
 Gymnasium
 Escola de ensino médio\n\n
+HallBusStop
+Parada de ônibus coberta
 IND_00_01
 Galpão\n\nEsse galpão é usado para armazenar mercadorias... ou gravar filmes de terror sobre espiões.
 IND_00_02
@@ -334,6 +338,8 @@ LeuchtturmShipStop
 Cais com molhe e farol
 Lighthouse
 Farol de navegação\n\n
+LongBusStop
+Parada de ônibus descoberta
 MainTerminal1930
 Terminal aéreo de 1930, prédio principal
 MHzSmallStation

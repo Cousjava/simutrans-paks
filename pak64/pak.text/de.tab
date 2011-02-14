@@ -5,7 +5,7 @@
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 16.01 2011                           #
+#                           Date Created: 14.02 2011                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Alexander Brose - AlexB                           #
@@ -312,6 +312,8 @@ Goods_StationBlg
 Lagerhalle
 Gymnasium
 Oberstufenzentrum\n\n\n(Ehemals Oberrealschule, jetzt\nOberstufenzentrum mit\ngymnasialer Oberstufe)\nDiese Bildungsanstalt mittlerweile\ndeutlich mehr Schulreformen\nals Anstriche miterlebt. Immerhin\nheizen jetzt im Keller ein paar\nPCs statt des alten Kohleofens.\n
+HallBusStop
+Überdachtes Busterminal
 IND_00_01
 Eine Lagerhalle. Kisten, Säcke\nund Fässer türmen sich bis zur\nDecke. Ob der Besitzer noch\nweiss, was hier alles\neingelagert ist?\n
 IND_00_02
@@ -382,6 +384,8 @@ LeuchtturmShipStop
 Überseekai mit Leuchtturm
 Lighthouse
 Leuchtturm\n\neinst der hellste Leuchtturm an\ndieser Küste. Doch seit die\nSchiffe per Radar-Autopilot\ndurch die Weltmeere\nrauschen, ist er heute nur\nnoch eine Touristenattraktion.\n
+LongBusStop
+Doppelhaltestelle
 MainTerminal1930
 Terminal-Haupthalle (1930)
 MHzSmallStation
