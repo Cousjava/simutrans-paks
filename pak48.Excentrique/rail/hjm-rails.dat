@@ -1,0 +1,77 @@
+#
+# Railroad tracks for Simutrans pak48.Excentrique
+#
+# author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
+#
+# created:  2011/01/24
+# update:   2011/01/24
+#
+Obj=way
+Name=hjm_enerrail-2
+cost=10000
+maintenance=800
+topspeed=200
+max_weight=100
+intro_year = 1920
+intro_month = 7
+waytype=track
+# skin
+icon=> hjm_enerrail.3.0
+cursor=hjm_enerrail.3.1
+# rbis * animation
+Image[-]=hjm_enerrail.1.5
+Image[N]=hjm_enerrail.0.4
+Image[S]=hjm_enerrail.1.6
+Image[E]=hjm_enerrail.1.7
+Image[W]=hjm_enerrail.0.3
+Image[NS]=hjm_enerrail.0.0
+Image[EW]=hjm_enerrail.0.1
+Image[NSE]=hjm_enerrail.1.3
+Image[NSW]=hjm_enerrail.1.1
+Image[NEW]=hjm_enerrail.1.2
+Image[SEW]=hjm_enerrail.1.4
+Image[NSEW]=hjm_enerrail.1.0
+Image[NE]=hjm_enerrail.2.1
+Image[SE]=hjm_enerrail.2.3
+Image[NW]=hjm_enerrail.2.2
+Image[SW]=hjm_enerrail.2.0
+# hangtyp * animation
+ImageUp[3]=hjm_enerrail.2.7
+ImageUp[6]=hjm_enerrail.2.6
+ImageUp[9]=hjm_enerrail.2.5
+ImageUp[12]=hjm_enerrail.2.4
+------------------------
+Obj=way
+Name=hjm_enerrail
+cost=10000
+maintenance=800
+topspeed=80
+max_weight=100
+intro_year = 1920
+intro_month = 7
+waytype=track
+# skin
+icon=> hjm_enerrail-green.3.0
+cursor=hjm_enerrail-green.3.1
+# rbis * animation
+Image[-]=hjm_enerrail-green.1.5
+Image[N]=hjm_enerrail-green.0.4
+Image[S]=hjm_enerrail-green.1.6
+Image[E]=hjm_enerrail-green.1.7
+Image[W]=hjm_enerrail-green.0.3
+Image[NS]=hjm_enerrail-green.0.0
+Image[EW]=hjm_enerrail-green.0.1
+Image[NSE]=hjm_enerrail-green.1.3
+Image[NSW]=hjm_enerrail-green.1.1
+Image[NEW]=hjm_enerrail-green.1.2
+Image[SEW]=hjm_enerrail-green.1.4
+Image[NSEW]=hjm_enerrail-green.1.0
+Image[NE]=hjm_enerrail-green.2.1
+Image[SE]=hjm_enerrail-green.2.3
+Image[NW]=hjm_enerrail-green.2.2
+Image[SW]=hjm_enerrail-green.2.0
+# hangtyp * animation
+ImageUp[3]=hjm_enerrail-green.2.7
+ImageUp[6]=hjm_enerrail-green.2.6
+ImageUp[9]=hjm_enerrail-green.2.5
+ImageUp[12]=hjm_enerrail-green.2.4
