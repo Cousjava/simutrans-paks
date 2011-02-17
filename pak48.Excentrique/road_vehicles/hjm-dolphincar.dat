@@ -1,0 +1,97 @@
+#
+# Dolphin car
+#
+# author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
+#
+# created:  2010/10/27
+# update:   2010/10/27
+#
+
+#
+# Vehicles have object type vehicle
+#
+obj=vehicle
+
+#
+# The name of the vehicle. Used as index in the translations files.
+# If no translation is present, the text will be shown directly.
+# Convention says, don't use spaces here.
+#
+name=hjm_dolphincar
+copyright=Hajo
+
+#
+# The type of way needed for this vehicle to drive on.
+# Allowed values are:
+# air, monorail_track, maglev_track, narrowgauge_track
+# road, track, tram_track, water
+#
+waytype=road
+
+#
+# Type of freight. This must match a freight in the pak set.
+#
+freight=Passagiere
+
+#
+# Payload, how many units of freight this vehicle can carry.
+#
+payload=24
+
+#
+# Top speed of the vehicle in km/h.
+#
+speed=90
+
+#
+# Vehicle price in credit cent (=3400.00 Cr)
+#
+cost=340000
+
+#
+# Weight of the vehicle in tons without freight.
+#
+weight=15
+
+#
+# Vehicle length
+#
+length=7
+
+#
+# Power in KW
+#
+power=300
+
+#
+# Running cost per km
+#
+RunningCost=55
+
+#
+# Sound to be played upon starting.
+# Numbers depend on pak set.
+#
+Sound=1
+
+intro_year=1929
+intro_month=1
+retire_year=9999
+retire_month=1
+
+#
+# Cannot be grouped after another vehicle in a convoi.
+#
+Constraint[Prev][0]=none
+
+#
+# Images of the vehicle if empty
+#
+EmptyImage[W]=hjm-dolphincar.0.0
+EmptyImage[S]=hjm-dolphincar.0.1
+EmptyImage[E]=hjm-dolphincar.0.2
+EmptyImage[N]=hjm-dolphincar.0.3
+EmptyImage[SE]=hjm-dolphincar.2.1
+EmptyImage[NW]=hjm-dolphincar.2.0
+EmptyImage[NE]=hjm-dolphincar.2.2
+EmptyImage[SW]=hjm-dolphincar.2.3

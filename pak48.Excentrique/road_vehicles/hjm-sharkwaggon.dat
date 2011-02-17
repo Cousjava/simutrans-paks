@@ -1,0 +1,100 @@
+#
+# Shark waggon
+#
+# author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
+#
+# created:  2010/11/01
+# update:   2010/11/01
+#
+
+#
+# Vehicles have object type vehicle
+#
+obj=vehicle
+
+#
+# The name of the vehicle. Used as index in the translations files.
+# If no translation is present, the text will be shown directly.
+# Convention says, don't use spaces here.
+#
+name=hjm_sharkwaggon
+copyright=Hajo
+
+#
+# The type of way needed for this vehicle to drive on.
+# Allowed values are:
+# air, monorail_track, maglev_track, narrowgauge_track
+# road, track, tram_track, water
+#
+waytype=road
+
+#
+# Type of freight. This must match a freight in the pak set.
+#
+freight=Passagiere
+
+#
+# Payload, how many units of freight this vehicle can carry.
+#
+payload=40
+
+#
+# Top speed of the vehicle in km/h.
+#
+speed=80
+
+#
+# Vehicle price in credit cent (=3400.00 Cr)
+#
+cost=340000
+
+#
+# Weight of the vehicle in tons without freight.
+#
+weight=18
+
+#
+# Vehicle length
+#
+length=7
+
+#
+# Power in KW
+#
+power=300
+
+#
+# Running cost per km
+#
+RunningCost=60
+
+#
+# Sound to be played upon starting.
+# Numbers depend on pak set.
+#
+Sound=1
+
+#
+# Introduction year.
+#
+intro_year=1929
+intro_month=1
+retire_year=9999
+retire_month=1
+
+#
+# Cannot be grouped after another vehicle in a convoi.
+#
+Constraint[Prev][0]=none
+
+#
+# Images of the vehicle if empty
+#
+EmptyImage[W]=hjm-sharkwaggon.0.0
+EmptyImage[S]=hjm-sharkwaggon.0.1
+EmptyImage[E]=hjm-sharkwaggon.0.2
+EmptyImage[N]=hjm-sharkwaggon.0.3
+EmptyImage[SE]=hjm-sharkwaggon.2.1
+EmptyImage[NW]=hjm-sharkwaggon.2.0
+EmptyImage[NE]=hjm-sharkwaggon.2.2
+EmptyImage[SW]=hjm-sharkwaggon.2.3
