@@ -51,8 +51,8 @@ intro_year=1610
 animation_time=1000
 climates=mediterran,temperate,tundra
 #field stuff (now part of factory)
-max_fields=10
-min_fields=36
+max_fields=36
+min_fields=10
 probability_to_spawn=1
 fields=wheat_fields
 has_snow=1
