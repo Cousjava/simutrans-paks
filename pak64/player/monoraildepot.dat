@@ -4,6 +4,7 @@ Name=MonorailDepot
 # must be 1*1
 Dims=1,1,4
 NoInfo=1
+intro_year=1964
 type=depot
 waytype=monorail_track
 FrontImage[0][0][0][0][0][0]=ls-depot-monorail.0.0
@@ -20,6 +21,7 @@ cursor=ls-depot-monorail.0.5
 Obj=building
 Name=MonorailGround
 # must be 1*1
+intro_year=1964
 Dims=1,1
 NoInfo=1
 BackImage[0][0][0][0][0]=ls-depot-monorail.1.0
@@ -29,6 +31,7 @@ Name=MonorailFoundation
 # must be 1*1
 Dims=1,1
 NoInfo=1
+intro_year=1964
 type=extension
 waytype=monorail_track
 BackImage[0][0][0][0][0]=ls-depot-monorail.1.0
