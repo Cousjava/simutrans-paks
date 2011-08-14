@@ -14,6 +14,10 @@
 #
 ##################################industry stuff#################################
 
+# the weight based routing works nicely
+city_short_range_percentage = 0
+city_medium_range_percentage = 0
+
 # passenger generation (default is 16) Smaller values means less passengers
 passenger_factor=16
 
