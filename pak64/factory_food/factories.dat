@@ -227,7 +227,7 @@ max_fields=5
 min_fields=3
 production_per_field=7
 Image[0]=cow-farm.0.4
-Image[0]=cow-farm.0.5
+Image[1]=cow-farm.0.5
 ---------------------------------------
 Obj=factory
 name=brewery
