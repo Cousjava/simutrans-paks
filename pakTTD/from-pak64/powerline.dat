@@ -3,11 +3,24 @@ Obj=misc
 Name=PowerSource
 Image[0]=ls-power-land-trans.1.0
 Image[1]=ls-power-land-trans.1.1
+# winter
+Image[2]=ls-power-land-trans.1.0
+Image[3]=ls-power-land-trans.1.1
+# icon
+Image[4]=> ls-power-land-trans.0.2
+# cursor
+Image[5]=ls-power-land-trans.1.2
 --------------------
 Obj=misc
 Name=PowerDest
 Image[0]=ls-power-land-trans.0.0
 Image[1]=ls-power-land-trans.0.1
+# winter
+Image[2]=ls-power-land-trans.0.0
+Image[3]=ls-power-land-trans.0.1
+# icon
+# cursor
+# not needed for dest
 --------------------
 Obj=way
 Name=Powerline

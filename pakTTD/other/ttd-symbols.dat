@@ -19,8 +19,8 @@ name=NewYear
 Image[0]=> ttd-symbols.0.4
 --------------------
 Obj=symbol
-name=Builder
-Image[0]=ttd-symbols.0.5
+name=ColorOptions
+Image[0]=> ttd-symbols.0.6
 --------------------
 Obj=symbol
 name=BusStop
@@ -48,7 +48,7 @@ Image[0]=> ttd-symbols.1.5
 --------------------
 Obj=symbol
 name=TramStop
-Image[0]=> ttd-symbols.2.4
+Image[0]=> ttd-symbols.2.5
 --------------------
 Obj=symbol
 name=Passagiere
@@ -81,7 +81,19 @@ Image[0]=> ttd-symbols.3.1
 Image[1]=> ttd-symbols.3.2
 Image[2]=> ttd-symbols.3.3
 --------------------
-obj=symbol
-name=ShipDepotNS
-image[0]=> ttd-symbols.1.7
----
+Obj=symbol
+name=networksym
+Image[0]=> ttd-symbols.3.4
+--------------------
+Obj=symbol
+name=timelinesym
+Image[0]=> ttd-symbols.3.5
+--------------------
+Obj=symbol
+name=fastforwardsym
+Image[0]=> ttd-symbols.3.6
+--------------------
+Obj=symbol
+name=pausesym
+Image[0]=> ttd-symbols.3.7
+--------------------

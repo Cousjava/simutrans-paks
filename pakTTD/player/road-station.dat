@@ -3,7 +3,8 @@
 Obj=building
 Name=BusStop
 # must be 1*1
-type=busstop
+type=stop
+waytype=road
 enables_pax=1
 NoInfo=1
 Dims=1,1,2
