@@ -135,7 +135,7 @@ EmptyImage[NE]=221A.1.7
 ------------------------------
 obj=vehicle
 name=Adler
-copyright=érin
+copyright=érin/Phileksa
 engine_type=steam
 smoke=Steam
 engine_type=steam
