@@ -755,6 +755,7 @@ BackImage[0][1][1][0][0][1]=./n0-furnfac-64.1.0
 --------------------
 Obj=factory
 name=Moebelhaus
+copyright=Paul Szczepanek
 Location=City
 DistributionWeight=110
 Productivity=60

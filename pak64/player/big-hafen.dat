@@ -54,7 +54,7 @@ BackImage[2][3][0][0][0]=new-alpha2.1.1
 BackImage[2][4][0][1][0]=new-alpha2.0.0
 BackImage[2][4][0][0][0]=new-alpha2.3.0
 
-------------------------------------------------------------
+--
 Obj=building
 Name=rightShipStop
 # must be 1*2
@@ -92,7 +92,7 @@ BackImage[2][3][0][0][0]=new-alpha2.3.1
 BackImage[2][4][0][0][0]=new-alpha2.3.0
 
 
----------------------------------------------------------------------
+--
 Obj=building
 Name=FreightShipStop
 Dims=1,1,16
@@ -123,7 +123,7 @@ BackImage[14][0][0][0][0]=new-alpha1.5.3
 BackImage[15][0][0][0][0]=new-alpha3.5.3
 BackImage[7][0][0][0][0]=new-alpha2.5.3
 BackImage[6][0][0][0][0]=new-alpha4.5.3
-------------------------------------------------------------
+--
 Obj=building
 Name=LeuchtturmShipStop
 # must be 1*2
@@ -178,7 +178,7 @@ BackImage[2][1][0][0][0]=new-alpha2.4.2
 BackImage[2][2][0][0][0]=new-alpha2.3.2
 BackImage[2][3][0][0][0]=new-alpha2.4.1
 BackImage[2][4][0][0][0]=new-alpha2.1.0
-------------------------------------------------------------
+--
 Obj=building
 Name=rampShipStop
 Dims=1,1,4
@@ -192,7 +192,4 @@ BackImage[1][0][0][0][0]=new-alpha1.2.1
 BackImage[0][0][0][0][0]=new-alpha3.2.4
 BackImage[3][0][0][0][0]=new-alpha4.2.3
 BackImage[2][0][0][0][0]=new-alpha2.2.0
-
-
-
-
+--

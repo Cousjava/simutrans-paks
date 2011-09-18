@@ -331,6 +331,7 @@ toolbar[0][33]=simple_tool[19],,),+
 toolbar[0][34]=simple_tool[19],,(,-
 toolbar[0][35]=simple_tool[15],,
 toolbar[0][36]=dialog_tool[28]
+toolbar[0][37]=simple_tool[0],,^p,
 
 # slope tools
 toolbar[1][0]=general_tool[2]
