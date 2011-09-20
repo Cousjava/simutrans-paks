@@ -325,7 +325,7 @@ waytype=road
 freight=Post
 copyright=unbekannt1984/GPL V3
 # just guesswork ...
-payload=66
+payload=60
 speed=100
 cost=80000
 RunningCost=180
