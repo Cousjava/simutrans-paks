@@ -378,6 +378,7 @@ OutputGood[0]=Oel
 OutputCapacity[0]=500
 MapColor=76
 pax_level=25
+level=4
 enables_pax=1
 enables_post=1
 electricity_boost=0

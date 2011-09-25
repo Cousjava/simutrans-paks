@@ -141,6 +141,7 @@ passenger_boost=0
 mail_boost=0
 passenger_demand=0
 mail_demand=0
+level=1
 enables_pax=0
 enables_post=0
 intro_year=1610
