@@ -1,0 +1,17 @@
+------------
+obj=vehicle
+name=TPPassagierwagen
+waytype=track
+freight=Passagiere
+payload=40
+speed=200
+cost=850000
+weight=35
+RunningCost = 65
+intro_year= 1965
+Sound=-1
+EmptyImage[SE]=TPPassagierwagen.0.0
+EmptyImage[S]=TPPassagierwagen.0.1
+EmptyImage[SW]=TPPassagierwagen.0.2
+EmptyImage[W]=TPPassagierwagen.0.3
+----------------

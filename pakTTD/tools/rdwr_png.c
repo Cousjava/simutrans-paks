@@ -12,8 +12,7 @@
 
 static int bit_depth, color_type, interlace_type;
 
-void
-read_png(unsigned char **block, unsigned *width, unsigned *height, FILE *file)
+void read_png(unsigned char **block, unsigned *width, unsigned *height, FILE *file)
 {
     png_structp png_ptr;
     png_infop   info_ptr;
@@ -24,15 +23,15 @@ read_png(unsigned char **block, unsigned *width, unsigned *height, FILE *file)
 
     png_ptr = png_create_read_struct(PNG_LIBPNG_VER_STRING,NULL,NULL,NULL);
     if (png_ptr == NULL) {
-	printf("read_png: Could not create read struct.\n");
-	exit(1);
+		printf("read_png: Could not create read struct.\n");
+		exit(1);
     }
 
     info_ptr = png_create_info_struct(png_ptr);
     if (info_ptr == NULL) {
-	printf("read_png: Could not create info struct.\n");
-	png_destroy_read_struct(&png_ptr, (png_infopp)NULL, (png_infopp)NULL);
-	exit(1);
+		printf("read_png: Could not create info struct.\n");
+		png_destroy_read_struct(&png_ptr, (png_infopp)NULL, (png_infopp)NULL);
+		exit(1);
     }
 
 
@@ -43,8 +42,7 @@ read_png(unsigned char **block, unsigned *width, unsigned *height, FILE *file)
         /* free pointers before returning, if necessary */
         free(png_ptr);
         free(info_ptr);
-
-	exit(1);
+		exit(1);
     }
 
     /* Set up the input control if you are using standard C streams */
@@ -56,9 +54,7 @@ read_png(unsigned char **block, unsigned *width, unsigned *height, FILE *file)
      */
     png_read_info(png_ptr, info_ptr);
 
-    png_get_IHDR(png_ptr, info_ptr,
-                 width, height, &bit_depth, &color_type,
-		 &interlace_type, NULL, NULL);
+    png_get_IHDR(png_ptr, info_ptr, width, height, &bit_depth, &color_type, &interlace_type, NULL, NULL);
 
     // printf("read_png: width=%d, height=%d, bit_depth=%d\n", width, height, bit_depth);
     // printf("read_png: color_type=%d, interlace_type=%d\n", color_type, interlace_type);
@@ -103,11 +99,9 @@ read_png(unsigned char **block, unsigned *width, unsigned *height, FILE *file)
 
     dst = *block;
     for(y = 0; y < *height; y++) {
-	for(x = 0; x < *width * 3; x++) {
-	  *dst++ = row_pointers[y][x];
-
-	  // *dst++ = 0;
-	}
+		for(x = 0; x < *width * 3; x++) {
+			*dst++ = row_pointers[y][x];
+		}
     }
   
     free(row_pointers[0]);
@@ -179,6 +173,3 @@ void write_png( char *file_name, int w, int h, void *data )
     /* clean up after the read, and free any memory allocated - REQUIRED */
     png_destroy_write_struct(&png_ptr, &info_ptr);
 }
-
-
-

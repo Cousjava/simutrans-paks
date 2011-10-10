@@ -24,8 +24,8 @@ unsigned char LUT[768];
  */
 const PIXRGB rgbt_simu[SPECIAL_COLORS] =
 {
-  0x395E7C, // Player colors
-  0x4C7191,
+  0x244B67, // Player colors
+  0x395E7C,
   0x4C7191,
   0x6084A7,
   0x7497BD,
