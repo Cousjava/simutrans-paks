@@ -5,7 +5,7 @@
 #                            Language: pt Portugues                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 13.02 2011                           #
+#                           Date Created: 21.05 2011                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                 André - An_dz                                #
@@ -16,9 +16,11 @@
 #                                    note:                                     #
 #                              Frank Penz - FrankP                             #
 #                                    note:                                     #
-#                          Igor Eliezer - IgorEliezer                          #
+#                                 - IgorEliezer                                #
 #                                    note:                                     #
 #                  Richard Gatinho Ruas Ramos - RichardGatinho                 #
+#                                    note:                                     #
+#                                - VictorKoehler                               #
 #                                    note:                                     #
 #                             Eric Oliveira - eric                             #
 #                                    note:                                     #
@@ -434,14 +436,20 @@ RES_01_22
 Edifício "Corta-céu"\n\nPoderia ser chamado arranha-céu, mas o pessoal do bairro passou a chamá-lo de "corta-céu", pois sua forma lembra a lâminas. Já os moradores do edifício não gostaram nada da ideia.
 RES_02_01
 Casa com varanda\n\nA varanda além de proteger a casa do calor do verão é um ótimo lugar para os donos da casa receberem as visitas.
+RES_02_07
+Antiga casa do Capitão Tiriros\n\n\Capitão Tiriros foi o descobridor famoso do recife de mesmo nome (o qual tirou sua vida). Dizem que o fantasma do capitão voltou a assombrar esta casa. Para melhorar o aspecto, duas árvores foram plantadas por uma imobiliária, porém, com o passar dos anos, as árvores reforçaram mais ainda a atmosfera tenebrosa do lugar.
 RES_02_16
 Apartamentos de luxo\n\nEstes apartamentos dão aos seus residentes uma sala só para respirar. A cobertura é para pessoas que precisam respirar mais ainda.
 RES_02_20
 Hotel Gran Leblanc\n\nUm dos mais famosos edifícios da região por suas impresionantes festas tropicais na piscina. Não se esqueça dos trajes de banho ou voltará para casa com o terno encharcado.
+RES_10_01
+Chalé de dois pavimentos\n\nO dono do chalé é um marceneiro, e existe uma edícula nos fundos onde funciona sua oficina de corte de pranchas de madeira.
 RES_10_02
 Casa medieval do século XIV\n\nPertencera a uma família por 12 gerações e ainda conserva seu aspecto original, ao menos a fachada.
 RES_10_03
 Casario em estilo alemão\n\nEsta casa conserva o estilo arquitetônico dos teutões, mas o poço foi tampado para ser usado como fossa séptica. A edícula de madera se usa como garagem.
+RES_10_04
+Pequena casa de forro de madeira\n\nOs inquilinos estavam sofrendo com os cupins que estão comendo o forro da casa. E quando chove, aparecem muitas goteiras por toda casa. Chamem o controle pragas!
 RES_10_05
 Casa de madeira do século XIV\n\nUma casa de madeira original renovada e modernizada com bonito jardim. Em qualquer caso, o proprietário terá retorno do seu investimento.
 RES_10_08
@@ -522,6 +530,8 @@ factory_2Raffinerie_details
 <title>Detalhes da Refinaria (gasolina)</title><h1>Refinamento do petróleo</h1><p>Nesta unidade de processamento industrial é onde o óleo cru é tratado e refinado para obter produtos derivados como o diesel, a gasolina, entre outros. As instalações têm uma intrincada e complexa rede de tubos e dutos que transportam os fluidos de uma unidade de processamento à outra.<br><br>\nO processo de refinamento do óleo cru para obter combustíveis inclui várias fases: aquecimento, decantação por fervura, e destilacção para obter cada um dos vários componentes distintos do petróleo.</p>
 factory_3Raffinerie_details
 <title>Detalhes da Refinaria (Gás+Plást.)</title><h1>Obtenção do plástico</h1><p>Existem muitos tipos de plásticos, mas nesta unidade fabrica-se especificamente os de tipo sintético derivados do petróleo como o polietileno, PVC e o acrílico.<br><br>\nHoje em dia, o plástico é usado em todos os âmbitos da vida moderna tais como isolamento elétrico, embalagens, sacos de lixo, tubos, peças de motores, carrocerias, brinquedos, malas, artigos esportivos, fibras têxteis, eletrodomésticos, aparelhos eletrônicos e móveis... está em toda parte.</p>
+factory_Aufwindkraftwerk_details
+<title>Detalhes de usina termo-solar por ascendência</title><h1>Obtenção de energia</h1><p>A usina termo-solar por ascendência é uma forma de produção de energia renovável. O ar que está contido dentro de uma grande cobertura transparente que fica ao redor de uma alta chaminé é aquecido pela luz solar. Uma vez aquecido, o ar forma uma corrente de convecção e sobe pela torre. Esta corrente de ar gira as turbinas, o que produz eletricidade.</p>
 factory_Buchgrosshandel_details
 <title>Detalhes da Livraria</title><h1>Livraria</h1><p>Esta livraria tem tudo o que pode ser impresso. Desde uma enciclopédia de 271 volumes sobre páginas amarelas para a Internet até revistas de mangá; até mesmo as etiquetas de preços são escritas de trás para frente...</p>
 factory_Cementmill_details

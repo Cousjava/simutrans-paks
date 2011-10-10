@@ -5,7 +5,7 @@
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 14.02 2011                           #
+#                           Date Created: 21.05 2011                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Alexander Brose - AlexB                           #
@@ -396,6 +396,8 @@ MonorailDepot
 Depot für Magnetschienenfahrzeuge
 MonorailFoundation
 Einschienenbahn Fundament
+MonorailGround
+Einschienenbahn Depot Fundament
 OldTownhall
 Altes Rathaus\n\nals noch jeder Bürger in der\nStadt eine Stimme hatte. (Der\nschlecht beleuchtete\nDachraum soll der Anlass für\ndie Schildbürger gewesen\nhaben, die Licht in Säcken\nhineinbringen wollten.)\n
 Patricks_Rock
@@ -573,7 +575,7 @@ factory_Buchgrosshandel_details
 factory_ChemicalPlant_details
 <title>Chemiefabrik Details</title><h1>Chemiefabrik Details</h1><p>Schon seit Anfang des Jahrhunderts werden hier Chemikalien und Druckerfarbe produziert.</p>
 factory_Concretefactory_details
-<title>Gasbetonwerk Details</title><h1>Gasbetonwerk</h1><p>Diese Fabrik stellt aus Kalk, Wasser, Sand und ein ganz bisschen Aluminium Gasbeton (jetzt Porenbeton) her. Die Poren kommen durch die Entstehung von Wasserstoff, wenn das Aluminiumpulver mit dem Wasser reagiert.</p><p>Gasbeton ist sehr leicht, isoliert gut und ist ein sehr veilseitig verwendeter Rohstoff. Erfunden wurde er in den 20er Jahren des 20. Jahrhunderts.</p>\n
+<title>Gasbetonwerk Details</title><h1>Gasbetonwerk</h1><p>Diese Fabrik stellt aus Kalk, Wasser, Sand und ein ganz bisschen Aluminium Gasbeton (jetzt Porenbeton) her. Die Poren kommen durch die Entstehung von Wasserstoff, wenn das Aluminiumpulver mit dem Wasser reagiert.</p><p>Gasbeton ist sehr leicht, isoliert gut und ist ein sehr vielseitig verwendeter Rohstoff. Erfunden wurde er in den 20er Jahren des 20. Jahrhunderts.</p>\n
 factory_Erzbergwerk_details
 <title>Erzbergwerk Details</title><h1>Erzbergwerk</h1>\n<p>Neben Salz zählt Eisen zu den ältesten bergbaulich gewonnenen \nProdukten. 8. - 15. Jh v.Chr. Eisenzeit (Kelten).\nVortrieb und Erzabbau waren bis ins 17. Jh reine Handarbeit. Um \ndas Gestein mürbe zu machen, brannte man große Holzstöße ab \n(Feuersetzarbeit). Heutzutage wird aber wegen dem einfacheren Zugang einfach der Berg darüber abgetragen, so auch in diesem Erzbergwerk im Tagebau.</p><p>Die ergiebigsten Eisenerzlager befinden sich in geologisch alten Gesteinsschichten; sie entstanden, als die ersten Photosynthesealgen die Meere mit Sauerstoff anreicherten und das im Meer gelöste Eisen sich als Rost auf den Stränden und auf dem Meeresgrund absetzte.</p>
 factory_fish_pond_details
@@ -1362,6 +1364,10 @@ X2000car
 X-2000 Wagen
 X2000front
 X-2000 vorn
+XMail
+Kirayami X-1 Postwagen
+XTest
+Kirayami X-1
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road

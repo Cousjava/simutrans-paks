@@ -5,13 +5,23 @@
 #                            Language: zh T. Chinese                           #
 #                                Encoding: UTF-8                               #
 #                           Font : wenquanyi_9pt.bdf                           #
-#                           Date Created: 21.02 2010                           #
+#                           Date Created: 21.05 2011                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
 #                              Frank Penz - FrankP                             #
+#                                    note:                                     #
+#                                     - Jun                                    #
 #                                    note:                                     #
 #                               Alan - LondonBVE                               #
 #           note: Hope to translate at least 50% by end of November.           #
+#                          Anson Leung - ansonscleung                          #
+#                                    note:                                     #
+#                           Issac Chau - chautakhuen                           #
+#                                    note:                                     #
+#                                   - knightly                                 #
+#                                    note:                                     #
 #                                苗一莘 - mys_721tx                               #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
@@ -36,6 +46,8 @@ ModernRoad
 現代式道路橋(鋼筋混凝土)
 MonorailRamp
 單軌鐵路坡道
+PowerBridge
+電力橋
 Schiffhebewerk
 船隻起重機
 SteelRail
@@ -310,6 +322,14 @@ Stone
 #__________________________________ground_obj___________________________________
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
+pedestrian_1
+行人
+pedestrian_2
+行人
+pedestrian_4
+行人
+pedestrian_child
+小童
 Woman
 女人
 #_________________________________program_text__________________________________

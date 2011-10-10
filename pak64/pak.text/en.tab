@@ -5,102 +5,104 @@
 #                             Language: en English                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 16.01 2011                           #
+#                           Date Created: 24.07 2011                           #
 #                                                                              #
 #                                   authors:                                   #
-#                            Alexander Brose - AlexB                           #
+#                          Markus Pristovsek - prissi                          #
 #                                    note:                                     #
-#                                 André - An_dz                                #
-#                 note: Sempre verifica aonde os textos estão!                 #
-#                         Klaus Thenmayer - Bitfreezer                         #
-#                                    note:                                     #
-#                                  - Christian                                 #
+#                               Sven Osada - sojo                              #
+#                         note: maintainer pak96.comic                         #
+#                         Roman Schwörer - Gotthardlok                         #
 #                                    note:                                     #
 #                            Colin W Anetts - Colin                            #
 #                                    note:                                     #
-#                            Colin Teubner - ColinT                            #
-#                                    note:                                     #
-#                                   - Combuijs                                 #
-#                                    note:                                     #
-#                             Michael Hohl - Cruzer                            #
-#                       note: Administrator pak192.comic                       #
-#                             Dirk W. - DirrrtyDirk                            #
-#                                    note:                                     #
-#                                    - Dwachs                                  #
-#                                    note:                                     #
-#                              Frank Penz - FrankP                             #
-#                                    note:                                     #
-#                                    - GerdW                                   #
-#                                    note:                                     #
-#                         Roman Schwörer - Gotthardlok                         #
-#                                    note:                                     #
 #                           Hansjörg Malthaner - Hajo                          #
 #                                    note:                                     #
-#                              Jaroslaw - Jaroslaw                             #
+#                         Klaus Thenmayer - Bitfreezer                         #
 #                                    note:                                     #
-#                             Marcus Haupt - Marcus                            #
-#note: if I´m not available by email to proximity.de try mail@marcus-haupt.de (#
-#                                   - Nico192                                  #
+#                       Venkatesh Parthasarathy - Venkat                       #
 #                                    note:                                     #
-#                                    - Paco_m                                  #
+#                            Jonas Bushart - jonasbb                           #
 #                                    note:                                     #
 #                           Sava Bogdanets - Sava2004                          #
 #                                    note:                                     #
-#                          Susanna Björverud - Susanna                         #
+#                                  - Christian                                 #
+#                                    note:                                     #
+#                                   - shinexus                                 #
+#                                    note:                                     #
+#                            Colin Teubner - ColinT                            #
+#                                    note:                                     #
+#                           Lincoln Sayger - skreyola                          #
+#                                    note:                                     #
+#                                    - GerdW                                   #
 #                                    note:                                     #
 #                                   - TheHood                                  #
 #                                    note:                                     #
-#                           Timothy Baldock - Timothy                          #
+#                                 - transporter                                #
 #                                    note:                                     #
-#                       Venkatesh Parthasarathy - Venkat                       #
+#                                 André - An_dz                                #
+#                 note: Sempre verifica aonde os textos estão!                 #
+#                                   - knightly                                 #
+#                                    note:                                     #
+#                             Michael Hohl - Cruzer                            #
+#                       note: Administrator pak192.comic                       #
+#                                - jounior-fuchs                               #
+#                                    note:                                     #
+#                                    - petter                                  #
+#                                    note:                                     #
+#                            Alexander Brose - AlexB                           #
+#                                    note:                                     #
+#                           Michael Olbricht - whoami                          #
+#                                    note:                                     #
+#                                   - Combuijs                                 #
+#                                    note:                                     #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
+#                             Dirk W. - DirrrtyDirk                            #
+#                                    note:                                     #
+#                              Jaroslaw - Jaroslaw                             #
 #                                    note:                                     #
 #                                  - enternald                                 #
 #     note: Need more lt translators. Eiti ? http://simutrans-germany.com/     #
 #                               Florian - floppy                               #
 #                                    note:                                     #
+#                              Frank Penz - FrankP                             #
+#                                    note:                                     #
+#                                    - Paco_m                                  #
+#                                    note:                                     #
 #                            Günter Beine - gebeine                            #
 #                        note: maintainer pak128.german                        #
-#                        Lorenz Van Damme - gforcetheone                       #
+#                                 - IgorEliezer                                #
 #                                    note:                                     #
 #                          James E. Petts - jamespetts                         #
 #  note: Maintainer for Simutrans-Experimental. Also works on Pak128.Britain.  #
-#                            Jonas Bushart - jonasbb                           #
+#                        Lorenz Van Damme - gforcetheone                       #
 #                                    note:                                     #
-#                                - jounior-fuchs                               #
-#                                    note:                                     #
-#                                   - knightly                                 #
-#                                    note:                                     #
+#                             Marcus Haupt - Marcus                            #
+#note: if I´m not available by email to proximity.de try mail@marcus-haupt.de (#
 #                             Mark Knoester - mark                             #
-#                                    note:                                     #
-#                              Markus Rex - msrex                              #
 #                                    note:                                     #
 #                              Tomá? Kube? - napik                             #
 #                                    note:                                     #
-#                                    - petter                                  #
+#                              Markus Rex - msrex                              #
+#                                    note:                                     #
+#                                   - Nico192                                  #
 #                                    note:                                     #
 #                             P. Hamming - phamming                            #
 #                                    note:                                     #
-#                          Markus Pristovsek - prissi                          #
-#                                    note:                                     #
 #                                     - sdog                                   #
 #                                    note:                                     #
-#                                   - shinexus                                 #
-#                                    note:                                     #
-#                           Lincoln Sayger - skreyola                          #
+#                            Vladimír Slávik - vsys                            #
+#                             note: Vladimír Slávik                            #
+#                          Susanna Björverud - Susanna                         #
 #                                    note:                                     #
 #                                    - smu42                                   #
 #                                    note:                                     #
-#                               Sven Osada - sojo                              #
-#                         note: maintainer pak96.comic                         #
-#                                 - transporter                                #
-#                                    note:                                     #
-#                              Xavier Paz - vilvoh                             #
+#                                   - Timothy                                  #
 #                                    note:                                     #
 #                         Tomá? Vrbický - vrbicky_tomas                        #
 #                     note: Don´thurry up! Death is faster.                    #
-#                            Vladimír Slávik - vsys                            #
-#                             note: Vladimír Slávik                            #
-#                           Michael Olbricht - whoami                          #
+#                              Xavier Paz - vilvoh                             #
 #                                    note:                                     #
 #                                                                              #
 ################################################################################
@@ -514,6 +516,8 @@ factory_Oelbohrinsel_details
 <title>About oil rigs</title><h1>Oil rigs</h1><p>Second half of 20th century brought hunger for oil - consumption doubled every decade. Apart from land resources, sea offered also some oil deposits, although hard to reach.<br><br>Oil rigs are structures built to exploit these resources located in shelf areas (depth 0 to 200 meters). They are HUGE, but no one actually realizes it - most of the building is hidden under water surface. And also expensive to maintain. Columns that hold the platform are usually hollow and they also function as reservoir for oil.</p><p>The biggest oil rig in the world, Statfjord B, was built by Norway. Its weight is roughly 800,000 tonnes and height about 192 m. With tower the height increases by another 80 meters.</p>
 factory_Oelfeld_details
 <title>About Oilfields</title><h1>Oilfields</h1><p>Oil is a raw material which was used for paints, lubricants and also as a fuel for heating before the turn of 19th/20th century. Then it gained great importance with boom of combustion engine and automobiles.</p><p>Oil is a liquid consisting of numerous hydrocarbons. It is unclear how exactly the oil deposits came into being, probably it was a process similar to creating coal deposits but with some extra conditions - under high pressure & without oxygen. They are within depth of up to hundreds of meters. Oil is there usually found together with gas under high pressure, what eases pumping it to the surface.</p>
+factory_Raffinerie_details
+<title>Detalhes da Refinaria</title><h1>Processamento do petróleo</h1><p>Nesta planta industrial, o petróleo cru é refinado e processado originando vários produtos derivados como gasolina, óleo diesel, base para asfalto, querosene e gás liquefeito. É comum que este tipo de instalações tenha um complexo sistema de tubulações para transportar os fluidos e gases de uma unidade de processamento à outra.</p>
 factory_Rinnenkraftwerk_details
 <title>Parabolic Solar Power Plant Details</title><h1>Parabolic Solar Power Plant</h1><p>Sunlight is focused on a tube of oil using parabolic mirrors that follow the sun. The oil heats up to at least 300°C and goes through a heat exchanger to produce steam, which moves a turbine. Nine such power stations were built in California, but then a special tax was levied on solar electricity. At 384MW, they are by far the most powerful solar power stations.</p>
 factory_Stahlwerk_details
