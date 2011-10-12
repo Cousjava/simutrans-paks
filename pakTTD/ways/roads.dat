@@ -8,8 +8,8 @@ intro_year = 1940
 intro_month = 7
 waytype=road
 # skin
-icon=> asphalt-road.2.6
-cursor=asphalt-road.2.7
+icon=> asphalt-road.2.4
+cursor=asphalt-road.2.5
 # rbis * animation
 Image[-]=asphalt-road.0.2
 Image[N]=asphalt-road.1.6
@@ -42,8 +42,8 @@ max_weight=100
 intro_year = 1440
 waytype=road
 # skin
-icon=> rough-road.2.6
-cursor=rough-road.2.7
+icon=> rough-road.2.4
+cursor=rough-road.2.5
 # rbis * animation
 Image[-]=rough-road.0.2
 Image[N]=rough-road.1.6

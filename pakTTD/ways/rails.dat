@@ -7,8 +7,8 @@ max_weight=100
 intro_year = 1810
 waytype=track
 # skin
-icon=> wodden-rails.2.6
-cursor=wodden-rails.2.7
+icon=> wodden-rails.2.4
+cursor=wodden-rails.2.5
 # rbis * animation
 Image[-]=wodden-rails.0.2
 Image[N]=wodden-rails.0.1
