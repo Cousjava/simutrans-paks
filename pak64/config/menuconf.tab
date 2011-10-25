@@ -146,6 +146,10 @@ general_tool[35]=,,11,^K
 # WKZ_PWDHASH_TOOL=27 (internal use)
 # WKZ_SET_PLAYER_TOOL=28 (internal use)
 # WKZ_TRAFFIC_LIGHT_TOOL=29 (internal use)
+#WKZ_CHANGE_CITY_TOOL=30 (internal use)
+#WKZ_RENAME_TOOL=31 (internal use)
+#WKZ_ADD_MESSAGE_TOOL=32 (internal use)
+#WKZ_TOGGLE_RESERVATION=33
 #
 simple_tool[0]=0,p
 simple_tool[1]=1,W
