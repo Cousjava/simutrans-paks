@@ -150,6 +150,7 @@ general_tool[35]=,,11,^K
 #WKZ_RENAME_TOOL=31 (internal use)
 #WKZ_ADD_MESSAGE_TOOL=32 (internal use)
 #WKZ_TOGGLE_RESERVATION=33
+#WKZ_VIEW_OWNER=34
 #
 simple_tool[0]=0,p
 simple_tool[1]=1,W
@@ -172,6 +173,7 @@ simple_tool[16]=11,R
 # Quit (17) removed due to people accidentally killing their games
 #simple_tool[17]=,^Q
 simple_tool[20]=,/
+simple_tool[34]=,O
 
 
 # THIRD SECTION: dialoge tools
