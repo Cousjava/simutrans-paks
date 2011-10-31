@@ -5,9 +5,11 @@
 #                            Language: sk Slovencina                           #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 21.02 2010                           #
+#                           Date Created: 31.10 2011                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
 #                              Frank Penz - FrankP                             #
 #                                    note:                                     #
 #                           Peter Karak - peter.karak                          #
@@ -19,11 +21,11 @@
 #____________________________________bridge_____________________________________
 #____________________________________bridge_____________________________________
 ClassicRail
-Betónový ?elezni?ný
+Betónový most
 ClassicRoad
 Klasický cestný
 SteelRail
-Oce?ový ?elezni?ný
+oceµový most
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 01_CITY
@@ -62,6 +64,8 @@ CarDepot
 vozovòa
 CarStop
 nákladná rampa
+COM_00_10
+Dom oblo¾ený èervenými\ntehlami.\n\n
 Control_StationBlg
 stavadlo
 DenkFlor
@@ -85,7 +89,7 @@ Pamätník Volkera Meyera,\nktorý zdokonalil Simutrans v\nmnohých oblastiach.\n
 Fluid_StationBlg
 Nádr¾ na kvapaliny
 FreightTrainStop
-?elezni?ná nákladná stanica
+Nákladná rampa
 Gas_StationBlg
 Èerpacia stanica
 GCG1TrainStop
@@ -94,10 +98,20 @@ GCG2TrainStop
 Pravá ?ast' dvojitej ?el. stanice
 Goods_StationBlg
 Sklad tovarov
+IND_00_01
+Toto je miestna továreò na\nhluk. Hocikto mô¾e prís» a\nvyrobi» toµko hluku, koµko\nlen chce. Problémy\nnastávajú a¾ pri odchode,\nlebo vtedy si musí ka¾dý\nsvoju èinnos» zaplati».\n
+IND_00_02
+Chcete rozreza» nejaké\ndrevo? Tak potom príd»e\nsem, na pílu.\n\n
 LargeShipStop
 Ve?ký lodný prístav
+MonorailDepot
+Vozov?a Alwegu
+MonorailFoundation
+Základy Alwegu
+MonorailGround
+Základy Alwegu
 PostOffice
-Po?ta
+Po¹ta
 PSFreightTrainStop
 ?elezni?ná nákladná stanica
 PSHall1TrainStop
@@ -106,28 +120,30 @@ PSHall2TrainStop
 Jednoduchá halová ?el. stanica
 RUIN_0
 Stará ruina, ktorá stále\ndoká?e pritiahnut' mnoho\nnáv?tevníkov.\n
+ShipDepot
+Lodenica
 ShipStop
-Jednoduchý lodný prístav
+Osobný prístav
 STADIUM2
 Tento ?tadión je domovom\nmnohých zábavných\n?portových udalostí ! Mô?e\npojat' a? 25.000 divákov.\n
 Tennis_Court
 Tenisové kurty\n
 Theatre
 Divadlo\n
+TrainDepot
+Ru¹òové depo
 TrainStop
-?elezni?ná osobná stanica\n
+Stanica
+TramDepot
+Vozovòa elektrièiek
 VictorianStation
 Viktoriánska stanica
 Windmill
-Veterný mlyn\n
+Veterný mlyn\n\nNiekto sa chodí dpozera» na veterný\nmlyn, preto¾e sa mu páèi\nelegancia, s ktorou sa vo\nvetre otáèajú jeho lopatky;\nniekto zase proto, ¾e sa mu\nchce ís» na prechádzku a nemá\nv okolí lep¹í cieµ. No a niektorí\nvýtr¾níci chodia k veternému\nmlynu, aby si po òom\nvyskú¹ali hodi» kameòom.\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
 Sanitka
-#__________________________________dummy_info___________________________________
-#__________________________________dummy_info___________________________________
-factory_Cementmill_details
-Cementáre?
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -145,29 +161,29 @@ Kníhkupectvo
 cannery
 Konzerváreò
 Cementmill
-Cementáre?
+Cementáreò
 CHEMIST
 Lekáre? (od Setha)
 Concretefactory
-Betonáre?
+Betonárka
 cow_farm
-Farma na dobytok
+Kravín
 dairy
 Mliekáreò
 Druckerei
-Tla?iare?
+Tlaèiareò
 Erzbergwerk
-?eleznorudná ba?a
+®eleznorudná baòa
 fish_pond
-Chovný rybník
+Rybník
 fish_swarm
-Lovisko rýb
+Ryby
 food_processing_plant
-Potravinárska fabrika
+Potravinársky závod
 grain_farm
 Farma na obilie
 grain_mill
-Mlyn na obilie
+Mlyn
 Kohlegrube
 Uho?ná ba?a
 Kohlekraftwerk
@@ -175,23 +191,23 @@ Uho?ná elektráre?
 Materialswholesale
 Staveb. ve?koobchod
 Moebelfabrik
-Nábytkáre?
+Nábytkáreò
 Moebelhaus
-Dom nábytku
+IKEA
 Nutzwald
 Les
 Oelbohrinsel
-Ropná plo?ina
+Ropná plo¹ina
 Oelfeld
 Ropné pole
 Oelkraftwerk
 Tepelná elektráre?
 Papierfabrik
-Papiere?
+Papiereò
 Pharmaceutics
 Farmaceutická továre?
 Raffinerie
-Rafinéria (pre plasty)
+Rafinéria
 Saegewerk
 Píla
 Sandquarry
@@ -199,7 +215,7 @@ Ba?a na piesok
 Stahlwerk
 Oceliare?
 Stonequarry
-Kame?olom
+Kameòolom
 supermarket
 Supermarket
 TANKE
@@ -209,81 +225,83 @@ Veterná elektráre?
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
-Autá
+automobily
 beer
-Pivo
+piva
 Bretter
-Dosky
+dosiek
 Buecher
 Knihy
 canned_food
-Potr. konzervy
+konzerv.potr.
 Cement
 cementu
 Chemicals
-Chemikálie
+chemikálií
 Concrete
-Betón
+betónu
 Eisenerz
-?elezná ruda
+¾elezné rudy
 fish
-Ryby
+rýb
 flour
-Múka
+múky
 food
-Potraviny
+jedla
 Gasoline
-Benzín
+benzínu
 grain
-Obilie
+p¹enice
 Holz
-Drevo
+dreva
 Kohle
-Uhlie
+uhlie
 meat
-Mäso
+mäsa
 Medicine
 Lie?ivá
 milk
-Mlieko
+mlieka
 Moebel
-Nábytok
+nábytku
 None
-ni?
+nic
 Oel
-Ropa
+surovej ropy
+Papier
+papieru
 Passagiere
-pasa¾ierov
+pasa?ierov
 Plastik
-Plasty
+plastov
 Post
-Po¹ta
+Po?ta
 PrintersInk
 Tla?iar. farba
 Sand
-Piesok
+piesku
 Stahl
-Oce?
+oceli
 Stone
-Kamenie
-#__________________________________ground_obj___________________________________
-#__________________________________ground_obj___________________________________
-#__________________________________pedestrian___________________________________
-#__________________________________pedestrian___________________________________
+¹trku
+waste
+odpadu
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
 kusový tovar
 CATEGORY_02
-sypký tovar
+sypký náklad
 CATEGORY_03
-ropa/benzín
+fosílne palivá
 CATEGORY_04
-mraz. tovar
+mrazený tovar
 CATEGORY_05
-nápoje
+tekuté potraviny
 CATEGORY_06
 drevo
+CATEGORY_07
+poµnoprodukty
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 choose_point
@@ -296,8 +314,6 @@ NoEntry
 Zákaz vjazdu (jednosmerka)
 traffic_light
 semafóry
-#_____________________________________tree______________________________________
-#_____________________________________tree______________________________________
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 RailTunnel
@@ -467,7 +483,7 @@ Mestská cesta
 cobblestone_road
 Dlá?dená cesta
 concrete_sleeper_track
-Trat' s betónovými pra?cami
+tra» s betónovými podvalmi
 dirt_road
 Po?ná cesta
 gavel_road
@@ -477,14 +493,12 @@ Panelová cesta
 monorail
 Jednoko?ajová trat'
 Powerline
-Elektrické vedenie
+Vedenie vysokého napätia
 Rillenschienen
 Elektri?ková trat'
 runway_modern
 Moderná runway
 steel_sleeper_track
-Celooce?ová trat'
+vysokorýchlostná tra»
 wooden_sleeper_track
-Trat' s drevenými pra?cami
-#__________________________________way-object___________________________________
-#__________________________________way-object___________________________________
+tra» s drevenými podvalmi

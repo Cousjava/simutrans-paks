@@ -5,12 +5,16 @@
 #                             Language: hr Hrvatski                            #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 23.05 2010                           #
+#                           Date Created: 31.10 2011                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
 #                                    - EdinU                                   #
 #                                    note:                                     #
 #                              Frank Penz - FrankP                             #
+#                                    note:                                     #
+#                                   - Nico192                                  #
 #                                    note:                                     #
 #                          Alen Milincevic - phantom25                         #
 #                                    note:                                     #
@@ -45,7 +49,7 @@ Betonski cestovni most
 ViaductRail
 vijadukt od kamene opeke
 WoodenRoad
-Drveni cestovni most\n
+Drveni cestovni most
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 00_01_CITY
@@ -93,7 +97,7 @@ Veliki moderni terminal
 Bulk_StationBlg
 Zgrada Stanice Rasutog Tereta
 BusStop
-Autobusno stajaliste\n
+Autobusno stajaliste
 Car_StationBlg
 Stanicno Parkiraliste
 CarDepot
@@ -101,17 +105,17 @@ Garaza
 CarStop
 Zaljev Punjenja
 COM_00_10
-Kuca je poplocena crvenim\nciglicama.\n\n\n\n\n\n
+Kuca je poplocena crvenim\nciglicama.\n\n
 COM_00_22
-Uredska zgrada\n\n\n\n\n\n\n
+Uredska zgrada\n\n
 COM_01_01
-riblja trgovina\n\n\n\n\n\n\n
+riblja trgovina\n\n
 COM_01_17
-Visekatni Autopark\n\n\n\n\n\n\n
+Visekatni Autopark\n\n
 COM_01_21
-Bok ureda\n\n\n\n\n\n\n
+Bok ureda\n\n
 COM_02_13
-Stanarska Zgrada\n\n\n\n\n\n\n
+Stanarska Zgrada\n\n
 Control_StationBlg
 Zgrada Kontrole Stanice
 Fluid_StationBlg
@@ -123,13 +127,13 @@ Zgrada Plinare
 Goods_StationBlg
 Zgrada Stanice Robe
 IND_00_03
-Plantaza\n\n\n\n\n\n\n
+Plantaza\n\n
 IND_01_03
-Pasnjak sa Kravama\n\n\n\n\n\n\n
+Pasnjak sa Kravama\n\n
 IND_01_04
-Park\n\n\n\n\n\n\n
+Park\n\n
 IND_01_11
-Stambena zgrada\n\n\n\n\n\n\n
+Stambena zgrada\n\n
 MonorailDepot
 Uzdignuti tracnicki depo
 MonorailFoundation
@@ -152,8 +156,6 @@ Stanica u viktorijanskom stilu
 #____________________________________citycar____________________________________
 Motorrad
 Motor
-#__________________________________dummy_info___________________________________
-#__________________________________dummy_info___________________________________
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 bakery
@@ -268,10 +270,6 @@ Stone
 kamen
 waste
 smece
-#__________________________________ground_obj___________________________________
-#__________________________________ground_obj___________________________________
-#__________________________________pedestrian___________________________________
-#__________________________________pedestrian___________________________________
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -304,8 +302,6 @@ Signals
 Signal (standardni tip)
 traffic_light
 Prometno svjetlo
-#_____________________________________tree______________________________________
-#_____________________________________tree______________________________________
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 RailTunnel

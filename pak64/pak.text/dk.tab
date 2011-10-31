@@ -5,9 +5,11 @@
 #                              Language: dk Dansk                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 21.02 2010                           #
+#                           Date Created: 30.10 2011                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
 #                              Frank Penz - FrankP                             #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
@@ -29,19 +31,19 @@ Rådhus
 04_CITY
 Rådhus
 10_WOHN
-Kirke (af Trikky\n\n
+Kirke (af Trikky)\n\n
 A1_ALTE_KIRCHE
-En berømt gammel  kirke. Alle \nbør besøge denne fantastiske \nbygning.\n
+Brømt gammel  kirke\n\nAlle bør besøge denne fantastiske \nbygning.\n
 A2_SCHLOSS1
-Den gale konges slot. Det er\nvirkelig  værd at besøge!\n
+Den gale konges slot.\n\nDet er\nvirkelig  værd at besøge!\n
 A3_BURG1
-Nogle ruiner, som har set\nbedre tider. De er dog altid en\nrejse værd.\n
+Nogle ruiner,\n\n som har set\nbedre tider. De er dog altid en\nrejse værd.\n
 A4_SCHLOSS2
-Dette slot er altid et besøg\nværd.\n
+Slot\n\nDette slot er altid et besøg\nværd.\n
 A5_STONEHENGE
-En hemmelighedsfuld stenring.\nUrgammel og fuld af mystik!\n
+En hemmelighedsfuld stenring.\n\nUrgammel og fuld af mystik!\n
 A6_DOME
-Denne vidunderlige gamle\nkatedral er en rigtig attraktion.\n
+Vidunderlige gamle katedral\n\nDenne vidunderlige gamle\nkatedral er en rigtig attraktion.\n
 Avila_Big_StationBlg
 Stor passager stations bygning
 Avila_Small_StationBlg
@@ -69,21 +71,17 @@ Dette monument tilegnes\nManfred 'VT Wien' Tomaschitz,\nden berømte ingeniør som
 DenkVolker
 Dette monument tilegnes\nVolker Meyer, som\nforbedrede Simutrans på\nmange, mange måder.\n
 RUIN_0
-En prægtig, gammel borgruin.\nKom forbi og mærk historiens\nvingesus!\n
+Gammel borgruin\n\nEn prægtig, gammel borgruin.\nKom forbi og mærk historiens\nvingesus!\n
 STADIUM2
-Dette olympiske- stadion kan\nrumme 100000 tilskuere.\n
+Olympiske-stadion\n\nDette olympiske- stadion kan\nrumme 100000 tilskuere.\n
 Tennis_Court
-Tennis anlæg.\n
+Tennis anlæg.\n\n
 Theatre
 Teater. Ethvert besøg er en\nkulturel berigelse.\n
 Windmill
-Mølle\n
-#____________________________________citycar____________________________________
-#____________________________________citycar____________________________________
+Mølle\n\n
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_Cementmill_details
-Cementfabrik
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -190,10 +188,6 @@ Stahl
 stål
 Stone
 sten
-#__________________________________ground_obj___________________________________
-#__________________________________ground_obj___________________________________
-#__________________________________pedestrian___________________________________
-#__________________________________pedestrian___________________________________
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -204,12 +198,6 @@ CATEGORY_03
 olie/benzin
 CATEGORY_04
 Kølegods
-#___________________________________roadsign____________________________________
-#___________________________________roadsign____________________________________
-#_____________________________________tree______________________________________
-#_____________________________________tree______________________________________
-#____________________________________tunnel_____________________________________
-#____________________________________tunnel_____________________________________
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -356,5 +344,3 @@ TPI VT98 (dmu)
 #______________________________________way______________________________________
 cobblestone_road
 Brostensvej
-#__________________________________way-object___________________________________
-#__________________________________way-object___________________________________

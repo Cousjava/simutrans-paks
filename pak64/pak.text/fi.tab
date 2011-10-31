@@ -5,7 +5,7 @@
 #                              Language: fi Suomi                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 16.01 2011                           #
+#                           Date Created: 31.10 2011                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
@@ -13,6 +13,8 @@
 #                              Esa Lindroos - Esa                              #
 #                                    note:                                     #
 #                              Frank Penz - FrankP                             #
+#                                    note:                                     #
+#                                    - alluk                                   #
 #                                    note:                                     #
 #                        Jaakko Mäkinen - jaakko.makinen                       #
 #                                    note:                                     #
@@ -83,15 +85,15 @@ Yhtiösi pääkonttori
 3headquarter
 Yhtiösi pääkonttori
 A1_ALTE_KIRCHE
-Kuuluisa vanha  kirkko\nA. Jokaisen pitäisi nähdä \ntämä hieno \nrakennus.\n
+Kuuluisa vanha  kirkko\n\nA. Jokaisen pitäisi nähdä \ntämä hieno \nrakennus.\n
 A2_SCHLOSS1
-Hassun kuninkaan  linna.  Tämä\non todella  näkemisen\narvoinen!\n
+Hassun kuninkaan linna.\n\nTämä on todella  näkemisen arvoinen!\n
 A3_BURG1
-Vanhoja raunioita  jotka\nkertovat  paremmista ajoista. \nNe ovat aina  katsomisen\narvoisia.\n
+Vanhoja raunioita jotka\n\nkertovat  paremmista ajoista. \nNe ovat aina  katsomisen\narvoisia.\n
 A4_SCHLOSS2
-Tämä vanha  linna on aina \nnäkemisen arvoinen.\n
+Tämä vanha  linna on aina\n\nnäkemisen arvoinen.\n
 A5_STONEHENGE
-Muinainen kivimuodostelma.\nHyvin  salaperäistä!\n
+Muinainen kivimuodostelma.\n\nHyvin  salaperäistä!\n
 A6_DOME
 Tämä kaunis vanha  kirkko on\ntodellinen nähtävyys.\n
 AirDepot
@@ -99,7 +101,7 @@ Hangaari
 AirportShed1930
 Postiterminaali
 AirStop
-Lastaussilta\n
+Lastaussilta
 AirTerminal477
 Lentoterminaali
 Avila_Big_StationBlg
@@ -115,13 +117,13 @@ Suuri terminaali
 Bulk_StationBlg
 Hiilivarasto
 BusStop
-Bussi pysäkki\n
+Bussi pysäkki
 Car_StationBlg
 Autoparkki
 CarDepot
 Autotalli
 CarStop
-Lastaus asema\n
+Lastaus asema
 ChannelStop
 Kanavalaituri
 COM_00_01
@@ -287,11 +289,11 @@ Raskas nosturi
 LeuchtturmShipStop
 Majakka
 Lighthouse
-Majakka\n
+Majakka\n\n
 MainTerminal1930
 Aseman sisäänkäynti
 MHzSmallStation
-Asemarakennus (tehnyt MHz)
+Asemarakennus
 ModernAirTerminal477
 Modermi lentoterminaali
 MonorailDepot
@@ -301,9 +303,9 @@ Monorail-aseman perusta
 MonorailGround
 Monorail-perustus
 OldTownhall
-Vanha kaupungintalo\n
+Vanha kaupungintalo\n\n
 Patricks_Rock
-Patrickin kallio\n
+Patrickin kallio\n\n
 PlainAirStop
 Lentokonepysäkki
 PostOffice
@@ -385,25 +387,25 @@ Hiekkapohjainen asema
 ShipDepot
 Telakka
 ShipDepotEW
-Telakka\n
+Telakka
 ShipStop
 Satama
 STADIUM2
-Iso stadion\n
+Iso stadion\n\n
 Tennis_Court
-Tenniskenttä\n
+Tenniskenttä\n\n
 Terminal1930
 Lentoterminaali
 Theatre
-Teatteri\n
+Teatteri\n\n
 Tower1930
 Lennonjohtotorni (1930)
 TowerMoistboy
-Lennojohtotorni (tehnyt Moistboy)
+Lennojohtotorni
 TrainDepot
 Veturitalli
 TrainStop
-Katettu asema\n
+Katettu asema
 TrainStopMaglev
 Monorail-pysäkki
 TrainStopMaglevIndicator
@@ -415,7 +417,7 @@ Viktoriaaninen asema
 Vorplatz
 Asemapiha
 Windmill
-Tuulimylly\n
+Tuulimylly\n\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -434,10 +436,6 @@ Roadster
 Vanha auto
 yellow_car
 Keltainen auto
-#__________________________________dummy_info___________________________________
-#__________________________________dummy_info___________________________________
-factory_Cementmill_details
-Sementtimylly
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -802,8 +800,6 @@ Book_Trike
 Kirjarekka
 Boxcar
 Tavaravaunu
-BR45-Tender
-BR45-tenderi
 Br614back
 Br614 takayksikkö
 Br614car
@@ -1100,8 +1096,6 @@ Tugboat
 Hinaaja
 VolvoFH12
 Volvo FH12
-waste wagon
-Jätevaunu
 XMail
 Xpostivaunu
 XTest

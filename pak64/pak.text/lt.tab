@@ -5,7 +5,7 @@
 #                            Language: lt Lithuanian                           #
 #                                Encoding: UTF-8                               #
 #                                Font : cyr.bdf                                #
-#                           Date Created: 27.12 2010                           #
+#                           Date Created: 31.10 2011                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
@@ -85,7 +85,7 @@ Angaras (1900 m)
 AirportShed1930
 Pasto pašiūrė (1900)
 AirStop
-įėjimo tiltelis.\n
+įėjimo tiltelis.
 AirTerminal477
 orouosto terminalas (1950)
 Avila_Big_StationBlg
@@ -101,7 +101,7 @@ Didelis modernus terminalas
 Bulk_StationBlg
 anglies stotis
 BusStop
-Autobuso stotelė \n
+Autobuso stotelė
 Car_StationBlg
 mašinų aikštelė
 CarDepot
@@ -111,7 +111,7 @@ Krovinių aikštelė
 ChannelStop
 Prieplauka
 COM_00_01
-Maža parduotuvė \n\ Pigios ir ekologiškos prekės verčia lankytojus niekados nepalikti šios parduotuvės tuščios
+Maža parduotuvė\n\nPigios ir ekologiškos prekės verčia lankytojus niekados nepalikti šios parduotuvės tuščios
 Control_StationBlg
 geležinkelio dispečiarinė
 Eingang
@@ -157,7 +157,7 @@ Oroousto dispečiarinė
 TrainDepot
 Traukinių depas
 TrainStop
-Dengta platforma\n
+Dengta platforma
 TrainStopMaglev
 Mag. levitacijos traukinio stotelė
 TrainStopMaglevIndicator
@@ -188,8 +188,6 @@ Roadster
 Senas kabrioletas
 yellow_car
 Geltonoji mašina
-#__________________________________dummy_info___________________________________
-#__________________________________dummy_info___________________________________
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -459,63 +457,63 @@ traffic_light
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Ahorn-1
-Klevas
+Klevas\n
 Ahorn-2
-Klevas
+Klevas\n
 Ahorn-Gruppe
-Klevynas
+Klevynas\n
 Birke-1
-Beržas \n\n
+Beržas\n
 Buche-1
-krūmas \n\n
+krūmas\n
 Busch_2
-krūmas \n\n
+krūmas\n
 Kiefer_1
-Sakingoji pušis
+Sakingoji pušis\n
 Kiefer_2
-Sakingoji pušis
+Sakingoji pušis\n
 Kiefer_3
-Sakingoji pušis
+Sakingoji pušis\n
 Kiefer_4
-Sakingoji pušis
+Sakingoji pušis\n
 Kiefer_5
-Sakingoji pušis
+Sakingoji pušis\n
 Latschenkiefer
-Kalnų pušis \n\n
+Kalnų pušis\n
 Palmtree1
-Palmė
+Palmė\n
 Palmtree2
-Palmė
+Palmė\n
 Palmtree3
-Palmė
+Palmė\n
 Palmtree4
-Palmė
+Palmė\n
 Palmtree5
-Palmė
+Palmė\n
 Palmtree6
-Palmė
+Palmė\n
 Palmtree7
-Palmė
+Palmė\n
 Pappel-1
-Tuopa \n\n
+Tuopa\n
 Pappel-2
-Tuopa \n\n
+Tuopa\n
 Tanne_1
-Kėnis \n\n
+Kėnis\n
 Tanne_2
-Kėnis \n\n
+Kėnis\n
 Tanne_3
-Kėnis \n\n
+Kėnis\n
 Tanne_4
-Kėnis \n\n
+Kėnis\n
 Tanne_5
-Kėnis \n\n
+Kėnis\n
 Tanne_6
-Kėnis \n\n
+Kėnis\n
 Tree6
-Kėnis \n\n
+Kėnis\n
 Willow
-Gluosnis \n\n
+Gluosnis\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel
@@ -606,8 +604,6 @@ BR39
 SingCo BR289 2-8-2
 BR45
 SingCo BR45 2-10-2
-BR45-Tender
-SingCo BR45 tenderis
 Br614back
 BR614 Keleivinis tr. (galas)
 Br614car
@@ -990,8 +986,6 @@ Viggen
 Viggen keltas
 VolvoFH12
 Volvo FH12 
-waste wagon
-SimCo šiukšlių vagonas
 X2000back
 X-ray 2000 keleivinis traukinys (galas)
 X2000car

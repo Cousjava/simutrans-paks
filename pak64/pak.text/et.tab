@@ -5,7 +5,7 @@
 #                              Language: et Eesti                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 22.11 2010                           #
+#                           Date Created: 31.10 2011                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
@@ -67,7 +67,7 @@ Su firma peakorter!
 3headquarter
 Su firma peakorter!
 A1_ALTE_KIRCHE
-kuulus kirik\n
+kuulus kirik\n\n
 A2_SCHLOSS1
 Neuschwansteini loss\n\nTõsiselt hullu kuninga loss. See\non väärt nägemist!\n
 A3_BURG1
@@ -83,7 +83,7 @@ Angaar aastast 1900
 AirportShed1930
 Lennujaama kirjakuur (1901)
 AirStop
-lennukisild\n
+lennukisild
 AirTerminal477
 Lennujaama terminal (1950)
 Avila_Big_StationBlg
@@ -95,13 +95,13 @@ ladu
 Bulk_StationBlg
 söejaam
 BusStop
-bussipeatus\n
+bussipeatus
 Car_StationBlg
 autoparkla
 CarDepot
 garaa?
 CarStop
-parkla\n
+parkla
 ChannelStop
 kai
 COM_00_01
@@ -171,17 +171,17 @@ Lukskorterid varikatusega\n
 Residenz
 Residents. Seda kohta\nkasutab kohalik joogaguru,\nkes õpetab mediteerimist ja\nsisemist rahu. Seal on palju\nBonge, mis iganes need ka\nei ole.\n
 Tennis_Court
-Tenniseväljakud\n
+Tenniseväljakud\n\n
 Tower1930
 Lennujaamatorn (1930)
 TowerMoistboy
-Lennujaamatorn (Moistboy'lt)
+Lennujaamatorn
 TrainDepot
 Rongidepoo
 VictorianStation
 Viktooria-stiilis rongijaam
 Windmill
-Tuuleveski\n
+Tuuleveski\n\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -190,10 +190,6 @@ Motorrad
 Mootorratas
 yellow_car
 Kollane auto
-#__________________________________dummy_info___________________________________
-#__________________________________dummy_info___________________________________
-factory_Cementmill_details
-tsemenditehas
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -258,14 +254,10 @@ Papier
 Paber
 PrintersInk
 Printeri tint
-#__________________________________ground_obj___________________________________
-#__________________________________ground_obj___________________________________
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Woman
 naine
-#_________________________________program_text__________________________________
-#_________________________________program_text__________________________________
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 Minimum80
@@ -408,5 +400,3 @@ Powerline
 Elektriliin
 wooden_sleeper_track
 Puuliipritega raudtee
-#__________________________________way-object___________________________________
-#__________________________________way-object___________________________________

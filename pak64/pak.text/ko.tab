@@ -5,7 +5,7 @@
 #                              Language: ko Korean                             #
 #                                Encoding: UTF-8                               #
 #                                Font : cyr.bdf                                #
-#                           Date Created: 22.11 2010                           #
+#                           Date Created: 31.10 2011                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
@@ -45,7 +45,7 @@ tb_classic_road
 ViaductRail
 벽돌 고가교
 WoodenRoad
-목재 도로 교량\n
+목재 도로 교량
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 00_01_CITY
@@ -113,7 +113,7 @@ BigTerminal477
 Bulk_StationBlg
 석탄 취급역
 BusStop
-버스 정류장\n
+버스 정류장
 Car_StationBlg
 차량선적주차장
 CarDepot
@@ -157,7 +157,7 @@ Lighthouse
 MainTerminal1930
 메인 터미널 건물(1930년형)
 MHzSmallStation
-철도역 역사(by MHz)
+철도역 역사
 ModernAirTerminal477
 현대식 공항 터미널
 MonorailDepot
@@ -209,11 +209,11 @@ Theatre
 Tower1930
 관제탑(1930년형)
 TowerMoistboy
-관제탑(by Moistboy)
+관제탑
 TrainDepot
 철도 차량기지
 TrainStop
-지붕있는 플랫폼\n
+지붕있는 플랫폼
 TrainStopMaglev
 자기부상열차 역
 TrainStopMaglevIndicator
@@ -244,8 +244,6 @@ Roadster
 래그탑 로드스터
 yellow_car
 노란색 승용차
-#__________________________________dummy_info___________________________________
-#__________________________________dummy_info___________________________________
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -519,91 +517,91 @@ traffic_light
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Ahorn-1
-단풍나무
+단풍나무\n
 Ahorn-2
-단풍나무
+단풍나무\n
 Ahorn-Gruppe
-단풍나무 숲
+단풍나무 숲\n
 Birke-1
-자작나무\n\n
+자작나무\n
 Buche-1
-관목\n\n
+관목\n
 Busch_2
-관목\n\n
+관목\n
 Kiefer_1
-적송
+적송\n
 Kiefer_2
-적송
+적송\n
 Kiefer_3
-적송
+적송\n
 Kiefer_4
-적송
+적송\n
 Kiefer_5
-적송
+적송\n
 Latschenkiefer
-남미 소나무\n\n
+남미 소나무\n
 Palmtree1
-야자수
+야자수\n
 Palmtree2
-야자수
+야자수\n
 Palmtree3
-야자수
+야자수\n
 Palmtree4
-야자수
+야자수\n
 Palmtree5
-야자수
+야자수\n
 Palmtree6
-야자수
+야자수\n
 Palmtree7
-야자수
+야자수\n
 Pappel-1
-포플러\n\n
+포플러\n
 Pappel-2
-포플러\n\n
+포플러\n
 Shunter-tree2
-나무
+나무\n
 Tanne_1
-전나무\n\n
+전나무\n
 Tanne_2
-전나무\n\n
+전나무\n
 Tanne_3
-전나무\n\n
+전나무\n
 Tanne_4
-전나무\n\n
+전나무\n
 Tanne_5
-전나무\n\n
+전나무\n
 Tanne_6
-전나무\n\n
+전나무\n
 Tree1
-나무
+나무\n
 Tree3
-나무
+나무\n
 Tree4
-나무
+나무\n
 Tree5
-나무
+나무\n
 Tree6
-전나무\n\n
+전나무\n
 tropictree1
-열대우림
+열대우림\n
 tropictree2
-열대우림
+열대우림\n
 tropictree3
-열대우림
+열대우림\n
 tropictree4
-열대우림
+열대우림\n
 tropictree5
-열대우림
+열대우림\n
 tropictree6
-열대우림
+열대우림\n
 tropictree7
-열대우림
+열대우림\n
 tropictree8
-열대우림
+열대우림\n
 tropictree9
-열대우림
+열대우림\n
 Willow
-버드나무\n\n
+버드나무\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel

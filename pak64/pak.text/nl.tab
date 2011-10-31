@@ -5,14 +5,22 @@
 #                            Language: nl Nederlands                           #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 21.02 2010                           #
+#                           Date Created: 31.10 2011                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                   - Combuijs                                 #
 #                                    note:                                     #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
 #                              Frank Penz - FrankP                             #
 #                                    note:                                     #
 #                            Nathan Samson - Nathan                            #
+#                                    note:                                     #
+#                        Lorenz Van Damme - gforcetheone                       #
+#                                    note:                                     #
+#                             Mark Knoester - mark                             #
+#                                    note:                                     #
+#                             P. Hamming - phamming                            #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
 #                                    note:                                     #
@@ -97,7 +105,7 @@ Hangar van 1900
 AirportShed1930
 Loods voor post (1901)
 AirStop
-Pier\n
+Pier
 AirTerminal477
 Luchthaventerminal
 Avila_Big_StationBlg
@@ -113,7 +121,7 @@ grote terminal
 Bulk_StationBlg
 bulkgoederen station
 BusStop
-Bushalte\n
+Bushalte
 Car_StationBlg
 auto opslag
 CarDepot
@@ -179,7 +187,7 @@ Rechter helft van perron met overkapping
 Goods_StationBlg
 Pakhuis
 Gymnasium
-\nScholengemeenschap\n\n\n
+Scholengemeenschap\n\n
 IND_00_01
 Warenhuis\n\n
 IND_00_18
@@ -203,7 +211,7 @@ Vuurtoren\n\n
 MainTerminal1930
 Hoofd terminal gebouw (1930)
 MHzSmallStation
-Klein stationsgebouw (door MHz)
+Klein stationsgebouw
 ModernAirTerminal477
 Modern terminal gebouw
 MonorailDepot
@@ -239,31 +247,31 @@ Residentie\n\nHier kun je door middel van\nmeditatie weer helemaal tot\njezelf k
 rightShipStop
 Kaai met pier
 RUIN_0
-Middelseeuwse ruïne\n\n Dit was eens een groot en\nmooi kasteel voordat het in\n1400 geheel afbrandde. Aan\nde fundamenten kun je nog\nongeveer zien hoe groot het\nkasteel geweest moet zijn.\n\n
+Middelseeuwse ruïne\n\n Dit was eens een groot en\nmooi kasteel voordat het in\n1400 geheel afbrandde. Aan\nde fundamenten kun je nog\nongeveer zien hoe groot het\nkasteel geweest moet zijn.\n
 SandStationMHz
 Zandstation
 ShipDepot
 Scheepswerf
 ShipDepotEW
-Scheepswerf (OW)\n
+Scheepswerf (OW)
 ShipStop
 Haven
 STADIUM2
-Groot stadion\n\n Alle grote internationale\nevenementen vinden hier\nplaats.\n\n
+Groot stadion\n\n Alle grote internationale\nevenementen vinden hier\nplaats.\n
 Tennis_Court
-\nTennisbanen\n\n\n
+Tennisbanen\n\n
 Terminal1930
 Luchthaventerminal
 Theatre
-\nTheater\n\n\n
+Theater\n\n
 Tower1930
 Verkeerstoren (1930)
 TowerMoistboy
-Verkeerstoren (door Moistboy)
+Verkeerstoren
 TrainDepot
 Trein remise
 TrainStop
-overdekt station\n
+overdekt station
 TrainStopMaglev
 Monorail/Maglev halte
 TrainStopMaglevIndicator
@@ -294,8 +302,6 @@ yellow_car
 gele auto
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_Cementmill_details
-Cementfabriek
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -511,31 +517,31 @@ Stoplicht
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Pappel-1
-Populier\n\n
+Populier\n
 Pappel-2
-Populier\n\n
+Populier\n
 Shunter-tree2
-Loofboom (by Shunter)\n\n
+Loofboom\n
 Tanne_1
-Den\n\n
+Den\n
 Tanne_2
-Den\n\n
+Den\n
 Tanne_3
-Den\n\n
+Den\n
 Tanne_4
-Denneboom\n\n
+Denneboom\n
 Tanne_5
-Denneboom\n\n
+Denneboom\n
 Tanne_6
-Naaldboom\n\n
+Naaldboom\n
 Tree4
-Lariks\n\n
+Lariks\n
 Tree5
-Fake Plastic Tree\n\n
+Fake Plastic Tree\n
 Tree6
-Spar\n\n
+Spar\n
 Willow
-Wilg\n\n
+Wilg\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel

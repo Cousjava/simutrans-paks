@@ -5,18 +5,30 @@
 #                           Language: cn Sim. Chinese                          #
 #                                Encoding: UTF-8                               #
 #                           Font : wenquanyi_9pt.bdf                           #
-#                           Date Created: 21.02 2010                           #
+#                           Date Created: 31.10 2011                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
 #                              Frank Penz - FrankP                             #
+#                                    note:                                     #
+#                                     - Jun                                    #
 #                                    note:                                     #
 #                               Alan - LondonBVE                               #
 #           note: Hope to translate at least 50% by end of November.           #
+#                           Nicole Chen - Nicole_Chen                          #
+#                                    note:                                     #
+#                          Anson Leung - ansonscleung                          #
+#                                    note:                                     #
+#                                   - knightly                                 #
+#                                    note:                                     #
 #                                苗一莘 - mys_721tx                               #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
 #                                    note:                                     #
 #                                   - shinexus                                 #
+#                                    note:                                     #
+#                              Jon - viewofheaven                              #
 #                                    note:                                     #
 #                                                                              #
 ################################################################################
@@ -83,7 +95,7 @@ BigTerminal477
 Bulk_StationBlg
 散货转运站
 BusStop
-与建巴士站/电车站\n
+与建巴士站/电车站
 Car_StationBlg
 车辆装卸区
 CarDepot
@@ -100,6 +112,8 @@ Gas_StationBlg
 气体储存缸
 Goods_StationBlg
 货物处理中心
+KingsbridgeMonastry
+寺院\n\n神秘古怪的吟唱每天早晨响起 - 还是浴室的水太冷了吗？
 LargeShipStop
 与建大型码头
 MainTerminal1930
@@ -116,6 +130,8 @@ ShipDepot
 造船厂
 ShipStop
 与建码头
+Tennis_Court
+网球场\n\n
 Terminal1930
 早期候机楼
 Tower1930
@@ -146,10 +162,6 @@ Pickup
 私家车
 yellow_car
 黄色私家车
-#__________________________________dummy_info___________________________________
-#__________________________________dummy_info___________________________________
-factory_Cementmill_details
-水泥厂
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -286,8 +298,6 @@ Stone
 石
 waste
 废物
-#__________________________________ground_obj___________________________________
-#__________________________________ground_obj___________________________________
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Woman
@@ -328,8 +338,6 @@ SignalsMonorail
 单轨列车信号
 traffic_light
 交通灯
-#_____________________________________tree______________________________________
-#_____________________________________tree______________________________________
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRoadTunnel

@@ -5,10 +5,12 @@
 #                             Language: fr Francais                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 9.09 2010                           #
+#                           Date Created: 31.10 2011                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                  - Christophe                                #
+#                                    note:                                     #
+#                                    - Dwachs                                  #
 #                                    note:                                     #
 #                              Frank Penz - FrankP                             #
 #                                    note:                                     #
@@ -18,11 +20,21 @@
 #                                    note:                                     #
 #                          Jean Beaudet - cagliostro_2                         #
 #                                    note:                                     #
+#                                   - cantien                                  #
+#                                    note:                                     #
 #                                  - coincoin42                                #
+#                                    note:                                     #
+#                        Lorenz Van Damme - gforcetheone                       #
+#                                    note:                                     #
+#                                    - gwalch                                  #
 #                                    note:                                     #
 #                                - jounior-fuchs                               #
 #                                    note:                                     #
 #                            Luc Mallet - luc.mallet                           #
+#                                    note:                                     #
+#                                     - mEGa                                   #
+#                          note: Tilecutter translator                         #
+#                          Christophe Manaud - manaud                          #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
 #                                    note:                                     #
@@ -101,7 +113,7 @@ Cathédrale\n\nCette magnifique vieille\ncathédrale est une\nvéritable attraction
 AirDepot
 Hangar
 AirStop
-Passerelle d'embarquement\n
+Passerelle d'embarquement
 AirTerminal477
 Terminal d'aéroport (1950)
 Avila_Big_StationBlg
@@ -117,7 +129,7 @@ Grand Terminal
 Bulk_StationBlg
 Aire de stockage (en vrac)
 BusStop
-Arrêt de bus\n
+Arrêt de bus
 Car_StationBlg
 parc de stationnement
 CarDepot
@@ -126,8 +138,6 @@ CarStop
 Zone de chargement
 ChannelStop
 Port fluvial
-COM_00_01
-Petite boutique\n
 COM_00_02
 Station service.\n\nAttention, les prix y sont\nexorbitants!\n
 COM_00_03
@@ -142,24 +152,14 @@ COM_00_10
 Petit bloc de bureaux avec\nparking\n
 COM_00_11
 Nova Nouveautés. Récent\net coloré magasin de\nnouveautés vendant de\ntout depuis les lampes à\nlave jusqu'aux cuirassés\ngris. (C'est toute une\nnouveauté)\n
-COM_00_12
-Immeuble de bureaux\n
 COM_00_14
 Ce bâtiment ressemble à\nune usine, mais il s'agit en\nfait d'un entrepôt pour le\ntrafic illégal de livres de\nprières.\n
-COM_00_18
-Bureaux modernes\n
 COM_00_22
 Bureaux de l'ONU, sorte\nd'embassade pour la région\n
 COM_01_01
 Aire de départ et d'arrivée de\nmontgolfières. Le site est\nfréquenté par de nombreux\npoliticiens, c'est pourquoi il\nn'y a pas de bonbonne \nde gaz.\n
-COM_01_04
-Promenade boisée\n
-COM_01_09
-Vieux cinéma\n
 COM_01_10
 La clinique locale. La\nfaçade a été changée par\nune nouvelle plus joyeuse\npour remonter le moral des\npatients, spécialement\nceux en visite chez le\ndentiste. Ne gardez pas de\ndent contre eux!\n
-COM_01_17
-Immeuble de bureau\n
 Control_StationBlg
 Service du contrôle
 DenkFlor
@@ -207,13 +207,13 @@ Port (grands quais)
 leftShipStop
 Grue Hautes-Charges
 Lighthouse
-Phare\n
+Phare\n\nConstruit en 1900, et le feu etait visible à 40 miles nautiques. Mais aujourdhui il y a seulement une petit boutique vendu cartes postales. Et le vue magnifique!
 ModernAirTerminal477
 Terminal Aérien Moderne
 MonorailDepot
 Dépôt De Monorail
 OldTownhall
-Vieil Hôtel De Ville\n
+Vieil Hôtel De Ville\n\nVieil Hôtel De Ville\n\nLes hîvers s'etait froid, alors il manque du fenêtre. Une fois ils même essaient à l'emporter la lumière avec de sac dans la bâtiment.
 PlainAirStop
 Arrêt Pour Avions
 PostOffice
@@ -232,26 +232,10 @@ RES_00_06
 Un petit jet d'eau. Même s'il\nn'est pas aussi grand que\ncelui à Genève, il fait du\nplaisir aux gens qui se\npromènent autour de lui,\nspécialement en été.\n
 RES_00_07
 Maison avec jardin\n
-RES_00_08
-Maison moyenne\n
 RES_00_09
 Petit parc avec un étang à\ncanard\n
-RES_00_11
-Grande maison avec jardin\n
-RES_00_13
-Maisons mitoyennes avec\njardins\n
-RES_00_19
-Appartements moderne\n
 RES_01_01
 Maison préfabriquée\nmoderne avec une grande\nchambre pour les enfants\nau grenier\n
-RES_01_07
-Grande maison luxueuse\n
-RES_01_08
-Maison avec jardin\n
-RES_01_10
-Maison moderne\n
-RES_01_12
-Immeuble en briques\n
 Residenz
 Résidence\n\nCet endroit est utilisé par le\nGourou de la place pour\nenseigner la méditation et\nla paix intérieur. Certaines\nde ses techniques sont\ntrès dicutables et font l'objet\nd'enquête des autorités de la\nplace.\n
 RUIN_0
@@ -265,11 +249,11 @@ Port de voyageurs
 STADIUM2
 Stade\n\nLe stade est lieu de\nnombreux événements\nsportifs très excitants.\n
 Tennis_Court
-Terrain de tennis\n
+Terrain de tennis\n\nUne fois, la champion de la cité jouait ici. Mais le son n'a pas changé.
 TrainDepot
 Dépôt de train
 TrainStop
-quai couvert\n
+quai couvert
 TrainStopMaglev
 Quai Maglev
 TrainStopMaglevIndicator
@@ -277,7 +261,7 @@ Quai Maglev avec tableau d'affichage
 TramDepot
 Dépot de Trams
 Windmill
-Moulin à vent\n
+Moulin à vent\n\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -288,8 +272,6 @@ green_car
 Voiture verte
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_Cementmill_details
-Cimenterie
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -434,10 +416,6 @@ Stone
 Pierre
 waste
 Déchet
-#__________________________________ground_obj___________________________________
-#__________________________________ground_obj___________________________________
-#__________________________________pedestrian___________________________________
-#__________________________________pedestrian___________________________________
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -672,5 +650,3 @@ steel_sleeper_track
 voie de chemin de fer, traverses en acier
 wooden_sleeper_track
 voie de chemin de fer à traverses en bois
-#__________________________________way-object___________________________________
-#__________________________________way-object___________________________________

@@ -5,7 +5,7 @@
 #                             Language: it Italiano                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 27.12 2010                           #
+#                           Date Created: 31.10 2011                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
@@ -17,6 +17,8 @@
 #                                   - davemds                                  #
 #                                    note:                                     #
 #                                    - milko                                   #
+#                                    note:                                     #
+#                                   - notorius                                 #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
 #                                    note:                                     #
@@ -103,7 +105,7 @@ Deposito aerei del 1900
 AirportShed1930
 Ufficio posta aerea (1901)
 AirStop
-Ponte d'imbarco\n
+Ponte d'imbarco
 AirTerminal477
 Terminal (1950)
 Avila_Big_StationBlg
@@ -119,13 +121,15 @@ Moderno terminal grande
 Bulk_StationBlg
 Magazzino sfusi
 BusStop
-Fermata autobus\n
+Fermata autobus
 Car_StationBlg
 Magazzino auto
 CarDepot
 Deposito per veicoli stradali
 CarStop
-Area carico merci\n
+Area carico merci
+CattlePorch
+Recinto per bestiame
 ChannelStop
 Banchina
 COM_00_01
@@ -194,6 +198,8 @@ COM_10_08
 Studio dell'inventore\n\nQuesto edificio è di una delle\nmenti più geniali della città.\nLe opinioni locali variano tra\nchi pensa sia un inventore e\nchi un sognatore pazzo.\n\n
 Control_StationBlg
 centro di controllo ferroviario
+DenkDirk
+Dirk Burkholz Memorial\n\nQuesto monumento è dedicato a Dirk Burkholz fondatore del forum tedesco nel 2004 e morto a 26 anni nel 2010.
 DenkFlor
 Memorial Flor Wauters\n\nQuesto monumento è dedicato a\nFlor 'WF Ultd.' Wauters, il\nfamoso ingegnere che ha\ncreato tanti veicoli stradali\ne ferroviari. È anche\nconosciuto per aver disegnato\nmolte industrie.\n
 DenkHajo
@@ -249,7 +255,9 @@ Gru grande carico
 LeuchtturmShipStop
 Porto con faro
 Lighthouse
-Faro\n
+Faro\n\n
+LongBusStop
+Fermata per autobus media
 MainTerminal1930
 Terminal (1930)
 MHzSmallStation
@@ -284,28 +292,14 @@ Raven_Kirche
 Chiesa di San Meinard\n\nL'eremita San Meinrad è\nstato accompagnato da due\ncorvi secondo la leggenda.\nQuando è stato ucciso,\ni due corvi hanno\nseguito gli uccisori e\nli hanno convinti. Oggi,\nal posto della sua capanna\nc'è il\nmonastero Einsiedeln.\n\n
 RES_00_06
 Piccola fontana\n\nSebbene non sia grandiosa\ncome quella di Ginevra,\ndelizia le persone che le\npasseggiano accanto,\nspecialmente in estate.\n
-RES_00_07
-Casa media
 RES_00_08
 Casa media con box\n\nNon ti preoccupare, usano\nl'auto solo per andare alle\ntue fermate dei mezzi.\n\n
 RES_00_09
 Parco\n\nUn piccolo parco con uno\nstagno per le anatre\n
-RES_00_11
-Casa grande con giardino
-RES_00_16
-Vecchia villa
-RES_00_19
-Appartamenti moderni
-RES_01_08
-Casa media con giardino
 RES_01_10
 Casa moderna\n\nIl patio sul tetto è un bel\nposto per godersi l'ambiente\nesterno senza lasciare la casa.\n\n
 RES_02_16
 Appartamenti di lusso\n\nQuesti appartamenti sono fatti\nper far respirare i\nproprietari. L'attico è per\nchi vuole respirare di più.\n\n
-RES_11_02
-Bungalow
-RES_11_03
-Casa rustica
 Residenz
 Residence\n\nQuesto è il residence-museo del\ncapo dei boy-scouts,\nBaden Powell.\nEgli sosteneva che "Non\nesiste buono o cattivo\ntempo, ma \nbuono o  cattivo equipaggiamento".\n
 rightShipStop
@@ -323,7 +317,7 @@ Porto passeggeri
 STADIUM2
 Stadio\n\nGrande stadio che ospita tutti\ngli eventi internazionali.\n\n
 Tennis_Court
-Campo da tennis
+Campo da tennis\n\n
 Terminal1930
 Terminal del 1930
 Theatre
@@ -347,7 +341,7 @@ Stazione in stile vittoriano
 Vorplatz
 Spiazzo
 Windmill
-Mulino a vento
+Mulino a vento\n\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -366,12 +360,8 @@ yellow_car
 Macchina gialla
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_Cementmill_details
-cementeria\n
-factory_Druckerei_details
-Tipografia
 factory_Kohlegrube_details
-Nelle miniere i minatori cercando il carbone. È un lavoro duro, ma il carbone è necessario per industrie importanti come fonderie per l'acciaio e centrali elettriche.
+<title>Miniera di carbone</title><h1>Miniera di carbone</h1>\nNelle miniere i minatori cercando il carbone. È un lavoro duro, ma il carbone è necessario per industrie importanti come fonderie per l'acciaio e centrali elettriche.
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -393,7 +383,7 @@ Grossista di libri
 cannery
 Fabbrica di cibi in scatola
 Cementmill
-cementeria\n
+Cementeria
 ChemicalPlant
 Impianto chimico
 CHEMIST
@@ -547,33 +537,35 @@ Rifiuti
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
 bushes
-Cespugli
+Cespugli\n
 deco_rock
-Piccolo masso
+Piccolo masso\n
+deco_rock_2
+Piccolo masso\n
 flowers
-Fiori spontanei
+Fiori spontanei\n
 gemsen
-Camosci
+Camosci\n
 gooses
-Oche
+Oche\n
 Hochsitz1
-Cervo
+Cervo\n
 Hochsitz2
-Cervo
+Cervo\n
 moles
-Talpe
+Talpe\n
 rocks
-Rocce
+Rocce\n
 See1
-Lago senza uccelli acquatici
+Lago senza uccelli acquatici\n
 See2
-Lago
+Lago\n
 See3
-Lago
+Lago\n
 See4
-Lago
+Lago\n
 sheeps
-Pecore
+Pecore\n
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Couple
@@ -636,6 +628,8 @@ preSignalsMonorail
 Presegnali (per 2 blocchi)
 RailClose
 Chiudi tratto ferroviario
+Railgate
+Portale ferroviario
 Signals
 Segnale ferroviario
 SignalsMonorail
@@ -645,73 +639,75 @@ Semaforo
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Ahorn-1
-Acero
+Acero\n
 Ahorn-2
-Acero
+Acero\n
 Ahorn-Gruppe
-Aceri
+Aceri\n
 Birke-1
-Betulla\n\n
+Betulla\n
 Buche-1
-Arbusto\n\n
+Arbusto\n
 Busch_2
-Cespuglio\n\n
+Cespuglio\n
 Kiefer_1
-Pino rosso
+Pino rosso\n
 Kiefer_2
-Pino rosso
+Pino rosso\n
 Kiefer_3
-Pino rosso
+Pino rosso\n
 Kiefer_4
-Pino rosso
+Pino rosso\n
 Kiefer_5
-Pino rosso
+Pino rosso\n
 Latschenkiefer
-Pino di montagna\n\n
+Pino di montagna\n
 Palmtree1
-Palma
+Palma\n
 Palmtree2
-Palma
+Palma\n
 Palmtree3
-Palma
+Palma\n
 Palmtree4
-Palma
+Palma\n
 Palmtree5
-Palma
+Palma\n
 Palmtree6
-Palma
+Palma\n
 Palmtree7
-Palma
+Palma\n
 Pappel-1
-Pioppo\n\n
+Pioppo\n
 Pappel-2
-Pioppo\n\n
+Pioppo\n
 Shunter-tree2
-Albero
+Albero\n
 Tanne_1
-Abete\n\n\n
+Abete\n
 Tanne_2
-Abete\n\n\n
+Abete\n
 Tanne_3
-Abete\n\n\n
+Abete\n
 Tanne_4
-Abete\n\n\n
+Abete\n
 Tanne_5
-Abete\n\n\n
+Abete\n
 Tanne_6
-Abete\n\n\n
+Abete\n
+Tree6
+Abete\n
 tropictree5
-Albero tropicale
+Albero tropicale\n
 tropictree6
-Albero tropicale
+Albero tropicale\n
 tropictree7
-Albero tropicale
+Albero tropicale\n
 tropictree8
-Albero tropicale
+Albero tropicale\n
 tropictree9
-Albero tropicale
+Albero tropicale\n
 Willow
-Salice\n\n
+Salice\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel
@@ -802,8 +798,6 @@ BR39
 SingCo BR289 2-8-2
 BR45
 SingCo BR45 2-10-2
-BR45-Tender
-SingCo BR45 Tender
 Br614back
 BR614 Passenger Train (coda)
 Br614car
@@ -1180,8 +1174,6 @@ Ucy
 MHz vagone merci Mk. III
 VolvoFH12
 Ikarus FH12 Naso piatto Semi
-waste wagon
-SimCo vagone rifiuti
 X2000back
 X2000 - Retro
 X2000car

@@ -5,9 +5,11 @@
 #                             Language: cz Cestina                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                            Date Created: 9.09 2010                           #
+#                           Date Created: 31.10 2011                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
 #                              Frank Penz - FrankP                             #
 #                                    note:                                     #
 #                                    - JOHNY                                   #
@@ -15,6 +17,8 @@
 #                        Václav Macùrek - VaclavMacurek                        #
 #                                    note:                                     #
 #                                   - hernajs                                  #
+#                                    note:                                     #
+#                           Jiri Svoboda - jxsvoboda                           #
 #                                    note:                                     #
 #                              Tomá¹ Kube¹ - napik                             #
 #                                    note:                                     #
@@ -25,7 +29,7 @@
 #                         Tomá¹ Vrbický - vrbicky_tomas                        #
 #                     note: Don´thurry up! Death is faster.                    #
 #                            Vladimír Slávik - vsys                            #
-#                             note: Vladimír Slávik                            #
+#                                    note:                                     #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -107,7 +111,7 @@ Hangár (1900)
 AirportShed1930
 Leti¹tní po¹tovní sklad (1901)
 AirStop
-výstupní schùdky\n
+výstupní schùdky
 AirTerminal477
 Leti¹tní terminál (1950)
 Avila_Big_StationBlg
@@ -123,31 +127,19 @@ Velký moderní terminál
 Bulk_StationBlg
 Sklady sypkého zbo¾í
 BusStop
-Autobusová zastávka\n
+Autobusová zastávka
 Car_StationBlg
 Pøekladi¹tì automobilù
 CarDepot
 Depo pro silnièní vozidla
 CarStop
-Nákladová rampa\n
+Nákladová rampa
 ChannelStop
 Molo na vodním kanále
-COM_00_01
-Samoobsluha\n
 COM_00_02
 Nezávislá benzínová stanice\n\nJe nezávislá na na\ntransportních korporacích\njako ta tvoje, ale není\npotøeba ji hned bourat.\nNevezme ¾ádné tvé\nzákazníky\n
-COM_00_03
-Opravna aut\n
-COM_00_05
-Banka\n
-COM_00_06
-Kavárna\n
 COM_00_08
 Èin¾ovní dùm s obchody v\npøízemí\n
-COM_00_10
-Kanceláøský vìzák\n
-COM_00_12
-Kaceláøská budova\n
 COM_00_14
 Moderní kanceláøská\nbudova s prosklenými\nschodi¹ti\n
 COM_00_18
@@ -156,20 +148,12 @@ COM_00_22
 Budova OSN, pro somálskou\ndelegaci\n
 COM_01_01
 Odtud mù¾ete vyrazit na\nnezapomenutelný\nvyhlídkový let\nhorkovzdu¹ným balónem!\n
-COM_01_09
-Kino\n
-COM_01_17
-Kanceláøská budova.\n
 COM_01_18
 Vý¹ková kanceláøská\nbudova\n
 COM_01_20
 Kanceláøská budova s\nheliportem pro pana\ngenerálního\n
-COM_01_22
-Kanceláøská budova\n
 COM_02_02
 parkovi¹tì\n
-COM_02_13
-Kino Mír\n
 COM_02_16
 Kanceláøe, s minimálním\nmno¾stvím oken.\n
 COM_02_17
@@ -213,59 +197,21 @@ Pravá strana velké nádra¾ní rampy
 Goods_StationBlg
 Sklad
 Gymnasium
-Gymnázium\n
-IND_00_01
-Skladi¹e\n
-IND_00_02
-Malé skladi¹te\n
-IND_00_03
-Silo na benzín/ropu\n
-IND_00_04
-Válcovna plechù\n
-IND_00_05
-Vodojem\n
-IND_00_06
-Továrna\n
-IND_00_09
-Skladi¹tì uhlí\n
-IND_00_10
-Malá továrna\n
-IND_00_12
-Strojírna\n
-IND_00_14
-Továrna na optiku\n
-IND_00_16
-Moderní továrna\n
-IND_00_17
-Továrna\n
-IND_00_18
-Teplárna\n
-IND_01_01
-Parkovi¹tì\n
+Gymnázium\n\n
 IND_01_03
 Nádr¾ na kapalný dusík\n
-IND_01_04
-Stodola\n
 IND_01_06
 Postar¹í továrna postavená\nz èervených neomítaných\ncihel\n
 IND_01_07
 Transformátorová stanice\n
 IND_01_08
 Továrna na umìlá hnojiva\n
-IND_01_09
-Pøeèerpávací stanice\n
-IND_01_10
-Továrna na náøadí\n
 IND_01_11
 Továrna na tyèinky\n"Venus"\n
 IND_01_12
 Továrna.\n\nHlavnì na ply¹ové medvídky\n
 IND_01_15
 Továrna na absolutno\n
-IND_02_01
-Tøídírna odpadu\n
-IND_02_02
-Spalovna pneumatik\n
 IND_02_06
 Továrna na supermoderní\nprocesor "Pentilium"\n
 LargeShipStop
@@ -273,11 +219,11 @@ Velký nakládací jeøáb
 LeuchtturmShipStop
 Pøístavní molo s majákem
 Lighthouse
-Maják\n
+Maják\n\n
 MainTerminal1930
 Hlavní terminál (1930)
 MHzSmallStation
-Malá stanice (od MHz)
+Malá stanice
 ModernAirTerminal477
 Morerní leti¹tní hala
 MonorailDepot
@@ -287,7 +233,7 @@ Základy jednokolejky
 MonorailGround
 Podlo¾í jednokolejky
 OldTownhall
-Stará radnice\n
+Stará radnice\n\n
 Patricks_Rock
 Èedièová hora\n\nPo miliony let z vulkánu\nvytékala láva a vytvoøila\ntento pozoruhodný pøírodní\núkaz, na který se dnes\njezdí dívat turisté z ¹irého\nokolí.\n
 PlainAirStop
@@ -304,50 +250,10 @@ PSHall2TrainStop
 Nádra¾ní hala
 RES_00_06
 Fontána. I kdy¾ to není\npøímo ¾enevská fontána,\ntak stále potì¹í\nkolemjdoucí, zejména v\nlétì.\n
-RES_00_07
-Rodinný domek s gará¾í\n
-RES_00_08
-Rodinný domek\n
-RES_00_09
-Men¹í park s jezírkem\n
-RES_00_10
-Moistboyovo sídlo\n
-RES_00_11
-Postar¹í èin¾ovní dùm\n
-RES_00_12
-Vila \n
-RES_00_13
-Rodinný dvojdomek\n
-RES_00_16
-Stará vila\n
 RES_00_17
 I pro takové barabizny jako\ntato existovalo vyuètování\nza vytápìní pro ka¾dý byt\nzvlá¹» - ka¾dý si platil za\nsvoje døevo\n
-RES_00_18
-Star¹í bytovka s bilboardem\n
-RES_00_19
-Moderní dùm plný\napartmánù\n
 RES_00_21
 Panelák\n\nPatøí mezi díla vrcholného\nreálného socialismu.\nNetøeba se bát, tvoje\ndopravní firmièka nebude\nzestátnìna.\n
-RES_00_23
-Apartmány\n
-RES_01_01
-Malý domeèek se zahradou\n
-RES_01_02
-Áèkový dùm\n
-RES_01_05
-Domek\n
-RES_01_07
-Luxusní domek\n
-RES_01_08
-Rodinný dùm se zahradou\n
-RES_01_10
-Moderní vícepatrová vila\n
-RES_01_12
-Cihlová bytovka\n
-RES_01_15
-Bytovka\n
-RES_01_21
-Moderní vì¾ák\n
 RES_01_22
 Budova s byty\nvýtah vìt¹inou nefunguje,\nproto èím vý¹ je byt, tím je\nlevnìj¹í. \n
 RES_01_23
@@ -365,19 +271,19 @@ Lodìnice
 ShipStop
 Pøístav
 STADIUM2
-Velký stadion Tento veliký\nstadion s kapacitou 25 000\nosob èasto hostí rozlièné\nsportovní události.\n
+Velký stadion\n\nTento veliký\nstadion s kapacitou 25 000\nosob èasto hostí rozlièné\nsportovní události.\n
 Tennis_Court
-Tenisový kurt\n
+Tenisový kurt\n\n
 Theatre
-Divadlo\n
+Divadlo\n\n
 Tower1930
 Leti¹tní vì¾ (1930)
 TowerMoistboy
-Leti¹tní vì¾ (by Moistboy)
+Leti¹tní vì¾
 TrainDepot
 ®eleznièní depo
 TrainStop
-Zastøe¹ené nástupi¹tì\n
+Zastøe¹ené nástupi¹tì
 TramDepot
 Vozovna tramvají
 VictorianStation
@@ -385,7 +291,7 @@ Zastávka ve viktoriánském stylu
 Vorplatz
 Místo pøed zastávkou
 Windmill
-Vìtrný mlýn\n
+Vìtrný mlýn\n\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -397,33 +303,31 @@ Zelený rodinný sedan
 Motorrad
 Motorka
 orange_bus
-Oran¾ový autobus
+Oran?ový autobus
 Pickup
 Pick-up
 yellow_car
-®luté auto
+?luté auto
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
 factory_bakery_details
-<title>Pekárna - detaily</title>\n<h1>Pekárna</h1>\n<p>První doklady o obilí pro úèely stravování jsou dolo¾eny od samého poèátku zemìdìlství, ba je¹tì do dob sbìraèù. Ov¹em co bylo nalezeno jako obilí, by nám dnes pøipadalo jen jako tráva: a) ¹lo o ¹irou smìs zrn, b) obilí, jak je známe dnes, pro¹lo znaènou ¹lechtitelskou promìnou.</p><p>Podstatným milníkem v historii peèiva byl pøechod od peèení na kameni k vynálezu pece: Ta se svou tepelnì akumulaèní schopností pøinasla vy¹¹í teploty, rovnomìrnìj¹í peèení ze v¹ech stran, trvalej¹í teplo s mo¾ností peèení rùzných peèiv jak teplota po vyhøátí a ometení uhlíkù zvolna klesá, ménì promìnlivé prostøedí a vneposlední øadì také vy¹¹í úèinnost a úspory energie, paliva.</p><p>Za hlavní evropské obiloviny pro potraviny lze oznaèit ¾ito a p¹enici. S postupem doby je vidìt nárùst podílu vyu¾ívání p¹enice na úkor ¾ita: Podíl svìtlého p¹enièného peèiva se dlouhodobì zvy¹uje. S módou racionální vý¾ivy v západním svìtì lze pozorovat znovuobjevování tmavého peèiva, tedy ¾itné mouky a dal¹ích alternativ.</p>\n
+<title>Pekárna - detaily</title>\n<h1>Pekárna</h1>\n<p>První doklady o obilí pro ú?ely stravování jsou dolo?eny od samého po?átku zem?d?lství, ba je?t? do dob sb?ra??. Ov?em co bylo nalezeno jako obilí, by nám dnes p?ipadalo jen jako tráva: a) ?lo o ?irou sm?s zrn, b) obilí, jak je známe dnes, pro?lo zna?nou ?lechtitelskou prom?nou.</p><p>Podstatným milníkem v historii pe?iva byl p?echod od pe?ení na kameni k vynálezu pece: Ta se svou tepeln? akumula?ní schopností p?inasla vy??í teploty, rovnom?rn?j?í pe?ení ze v?ech stran, trvalej?í teplo s mo?ností pe?ení r?zných pe?iv jak teplota po vyh?átí a ometení uhlík? zvolna klesá, mén? prom?nlivé prost?edí a vneposlední ?ad? také vy??í ú?innost a úspory energie, paliva.</p><p>Za hlavní evropské obiloviny pro potraviny lze ozna?it ?ito a p?enici. S postupem doby je vid?t nár?st podílu vyu?ívání p?enice na úkor ?ita: Podíl sv?tlého p?eni?ného pe?iva se dlouhodob? zvy?uje. S módou racionální vý?ivy v západním sv?t? lze pozorovat znovuobjevování tmavého pe?iva, tedy ?itné mouky a dal?ích alternativ.</p>\n
 factory_brewery_details
-<title>Pivovar - detaily</title>\n<h1>Pivovar</h1>\n<p>Pivovar je technologický celek vyrábìjící pivo. Pivovar je obvykle rozdìlen do nìkolika samostatných provozù, které odpovídají jednotlivým fázím výroby. Velikost pivovaru se mù¾e pohybovat od malého domácího témìø kuchyòského provozu a¾ po velký prùmyslový podnik. Variabilita existuje i v konkrétní technologii vaøení piva. V Èesku ale prakticky v¹echny pivovary u¾ívají metodu spodního kva¹ení a vyrábìjí piva plzeòského typu.</p>
+<title>Pivovar - detaily</title>\n<h1>Pivovar</h1>\n<p>Pivovar je technologický celek vyráb?jící pivo. Pivovar je obvykle rozd?len do n?kolika samostatných provoz?, které odpovídají jednotlivým fázím výroby. Velikost pivovaru se m??e pohybovat od malého domácího tém?? kuchy?ského provozu a? po velký pr?myslový podnik. Variabilita existuje i v konkrétní technologii va?ení piva. V ?esku ale prakticky v?echny pivovary u?ívají metodu spodního kva?ení a vyráb?jí piva plze?ského typu.</p>
 factory_cannery_details
-<title>Konzervárna - detaily</title>\n<h1>Konzervárna</h1>\n<p>Konzerva pochází od slova konzervovat, jedná se o ka¾dý zásobník urèený pro dlouhodobé skladování a konzervaci netrvanlivých komodit, zejména potravin, a to v bì¾ných teplotních a vlhkostních podmínkách.</p><p>Èasto se jedná o plechovou pikslu nebo obyèejnou èirou sklenìnou nádobu opatøenou plechovým víèkem. Kromì vlastní konzervace potravin konzerva také slou¾í k bezpeènému transportu, k lep¹ímu uskladnìní pøíslu¹né komodity, nejèastìji se jedná o potraviny.</p><p>V pøevá¾né míøe se jedná o válcové tvary (nejèastìji pro ovoce, barvy, oleje atd.), ve tvaru kvádru (pro maso, paliva v kanystrech atd.), malé podlouhlé nádobky pro moøské rybièky (tzv. olejovky) atd. Kovové konzervy se vyrábìjí nejèastìji z ocelového plechu pota¾eného cínem, nebo novìji z hliníkových slitin.</p>\n
-factory_Cementmill_details
-Cementárna
+<title>Konzervárna - detaily</title>\n<h1>Konzervárna</h1>\n<p>Konzerva pochází od slova konzervovat, jedná se o ka?dý zásobník ur?ený pro dlouhodobé skladování a konzervaci netrvanlivých komodit, zejména potravin, a to v b??ných teplotních a vlhkostních podmínkách.</p><p>?asto se jedná o plechovou pikslu nebo oby?ejnou ?irou sklen?nou nádobu opat?enou plechovým ví?kem. Krom? vlastní konzervace potravin konzerva také slou?í k bezpe?nému transportu, k lep?ímu uskladn?ní p?íslu?né komodity, nej?ast?ji se jedná o potraviny.</p><p>V p?evá?né mí?e se jedná o válcové tvary (nej?ast?ji pro ovoce, barvy, oleje atd.), ve tvaru kvádru (pro maso, paliva v kanystrech atd.), malé podlouhlé nádobky pro mo?ské rybi?ky (tzv. olejovky) atd. Kovové konzervy se vyráb?jí nej?ast?ji z ocelového plechu pota?eného cínem, nebo nov?ji z hliníkových slitin.</p>\n
 factory_Concretefactory_details
-<title>Betonárka - detaily</title>\n<h1>Betonárka</h1><p>Beton je umìlý slepenec a patøí mezi nejpou¾ívanìj¹í kompozitní materiály. Nejèastìj¹í forma je tzv. cementový beton, kde je pojivem cement a plnivem kamenivo; dal¹ím materiálem pro výrobu je voda. Kromì cementovýho betonu existuje je¹tì asfaltový beton, co¾ je materiál, ze kterého jsou vyrábìny asfaltové vozovky.</p>
+<title>Betonárka - detaily</title>\n<h1>Betonárka</h1><p>Beton je um?lý slepenec a pat?í mezi nejpou?ívan?j?í kompozitní materiály. Nej?ast?j?í forma je tzv. cementový beton, kde je pojivem cement a plnivem kamenivo; dal?ím materiálem pro výrobu je voda. Krom? cementovýho betonu existuje je?t? asfaltový beton, co? je materiál, ze kterého jsou vyráb?ny asfaltové vozovky.</p>
 factory_cow_farm_details
-<title>Kravín - detaily</title>\n<h1>Kravín</h1><p>Zde se chovají krávy pro maso a nebo pro mléko. Vedle prasete je tur domácí jedním z neju¾iteènìj¹ích chovných zvíøat.</p>
+<title>Kravín - detaily</title>\n<h1>Kravín</h1><p>Zde se chovají krávy pro maso a nebo pro mléko. Vedle prasete je tur domácí jedním z neju?ite?n?j?ích chovných zví?at.</p>
 factory_dairy_details
-<title>Mlékárna - detaily</title>\n<h1>Mlékárna</h1><p>Mlékárna je továrna, ve které se zpracovává mléko na velké mno¾ství produktù. Napø. jogurt byl vymy¹len v Radlické mlékárnì na Smíchovì. Nìkolik l¾ièek jahodové marmelády na povrchu jogurtu mìlo zabránit vytváøení plísní na jogurtu.</p>
+<title>Mlékárna - detaily</title>\n<h1>Mlékárna</h1><p>Mlékárna je továrna, ve které se zpracovává mléko na velké mno?ství produkt?. Nap?. jogurt byl vymy?len v Radlické mlékárn? na Smíchov?. N?kolik l?i?ek jahodové marmelády na povrchu jogurtu m?lo zabránit vytvá?ení plísní na jogurtu.</p>
 factory_Druckerei_details
-<title>Tiskárna - detaily</title>\n<h1>Tiskárna</h1><p>Polygrafie je výrobní obor, který zpracovává a tiskem rozmno¾uje textové a obrazové pøedlohy. Zahrnuje tyto základní výrobní fáze: zhotovování tiskových forem, tisk, dokonèovací výroba a pøidru¾ené odborné èinnosti.</p>
+<title>Tiskárna - detaily</title>\n<h1>Tiskárna</h1><p>Polygrafie je výrobní obor, který zpracovává a tiskem rozmno?uje textové a obrazové p?edlohy. Zahrnuje tyto základní výrobní fáze: zhotovování tiskových forem, tisk, dokon?ovací výroba a p?idru?ené odborné ?innosti.</p>
 factory_Erzbergwerk_details
-<title>Dùl na ¾eleznou rudu - detaily</title>\n<h1>Dùl na ¾eleznou rudu</h1><p>®elezná ruda je hornina, minerál, který obsahuje ¾elezo v takové chemické formì, která umo¾òuje jeho hospodárné získání hutnickými metodami. ®elezné rudy se zpravidla tì¾í hornickým zpùsobem. Jsou to jednak hlubinné doly nebo mnohem èastìji povrchová tì¾ba.</p><p>Úpravárenskými pochody jako drcením v èelis»ových a válcových drtièích, praním a flotací se takto vytì¾ená surová ruda zbavuje hlu¹iny a dosáhne se vy¹¹ího obsahu ¾eleza. Takto upravená a obohacená ruda se dopravuje do hutních podnikù.</p>
+<title>D?l na ?eleznou rudu - detaily</title>\n<h1>D?l na ?eleznou rudu</h1><p>?elezná ruda je hornina, minerál, který obsahuje ?elezo v takové chemické form?, která umo??uje jeho hospodárné získání hutnickými metodami. ?elezné rudy se zpravidla t??í hornickým zp?sobem. Jsou to jednak hlubinné doly nebo mnohem ?ast?ji povrchová t??ba.</p><p>Úpravárenskými pochody jako drcením v ?elis?ových a válcových drti?ích, praním a flotací se takto vyt??ená surová ruda zbavuje hlu?iny a dosáhne se vy??ího obsahu ?eleza. Takto upravená a obohacená ruda se dopravuje do hutních podnik?.</p>
 factory_fish_pond_details
-<title>Chovný rybník - detaily</title>\n<h1>Chovný rybník</h1><p>Metody chovu Tøeboòského kapra vycházejí z bohaté historie tøeboòského rybníkáøství. Vlastní výrobní cyklus Tøeboòského kapra pøedstavuje dobu, která uplyne od výtìru a¾ do prodeje tr¾ních ryby. Základním principem je metoda oddìleného chovu ryb podle stáøí.</p><p>Celý proces zaèíná v øízeném prostøedí na rybí líhni, kde probíhá umìlý výtìr, váèkový plùdek je pak vysazován do speciálních plùdkových rybníkù a dále je pøelovován do násadových a hlavních rybníkù. Doba rùstu tr¾ní ryby Tøeboòského kapra trvá 3 anebo 4 roky.</p><p>Zcela zvlá¹tní pozornost je vìnována chovu generaèních ryb Tøeboòského kapra, který probíhá oddìlenì od chovu kaprù urèených ke konzumaci.</p>
+<title>Chovný rybník - detaily</title>\n<h1>Chovný rybník</h1><p>Metody chovu T?ebo?ského kapra vycházejí z bohaté historie t?ebo?ského rybníká?ství. Vlastní výrobní cyklus T?ebo?ského kapra p?edstavuje dobu, která uplyne od výt?ru a? do prodeje tr?ních ryby. Základním principem je metoda odd?leného chovu ryb podle stá?í.</p><p>Celý proces za?íná v ?ízeném prost?edí na rybí líhni, kde probíhá um?lý výt?r, vá?kový pl?dek je pak vysazován do speciálních pl?dkových rybník? a dále je p?elovován do násadových a hlavních rybník?. Doba r?stu tr?ní ryby T?ebo?ského kapra trvá 3 anebo 4 roky.</p><p>Zcela zvlá?tní pozornost je v?nována chovu genera?ních ryb T?ebo?ského kapra, který probíhá odd?len? od chovu kapr? ur?ených ke konzumaci.</p>
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -431,23 +335,23 @@ Benzínová rafinerie
 3Raffinerie
 Rafinerie
 Aufwindkraftwerk
-Vìtrná elektrárna
+V?trná elektrárna
 Autohaus
 Autosalón
 Autohersteller
 Automobilka
 bakery
-Pekaøství
+Peka?ství
 brewery
 Pivovar
 Buchgrosshandel
-Kni¾ní velkoobchod
+Kni?ní velkoobchod
 cannery
 Konzervárna
 Cementmill
 Cementárna
 ChemicalPlant
-Chemièka
+Chemi?ka
 CHEMIST
 Lékárna
 Concretefactory
@@ -459,7 +363,7 @@ Mlékárna
 Druckerei
 Tiskárna
 Erzbergwerk
-®eleznorudný dùl
+?eleznorudný d?l
 fish_pond
 Chovný rybník
 fish_swarm
@@ -471,7 +375,7 @@ Obilná pole
 grain_mill
 Mlýn
 Kohlegrube
-Uhelný dùl
+Uhelný d?l
 Kohlekraftwerk
 Elektrárna
 Materialswholesale
@@ -483,7 +387,7 @@ Obchod s nábytkem
 Nutzwald
 Les
 Oelbohrinsel
-Ropná plo¹ina
+Ropná plo?ina
 Oelfeld
 Ropné pole
 Oelkraftwerk
@@ -501,7 +405,7 @@ Pila
 SaegewerkMHz
 Stará pila
 Sandquarry
-Píseèný lom
+Píse?ný lom
 Stahlwerk
 Slévárna
 Stonequarry
@@ -509,9 +413,9 @@ Kamenolom
 supermarket
 Supermarket
 TANKE
-Èerpací stanice
+?erpací stanice
 Windkraftwerk
-Vìtrná elektrárna
+V?trná elektrárna
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
@@ -529,7 +433,7 @@ Chemikálie
 Concrete
 Beton
 Eisenerz
-®elezná ruda
+?elezná ruda
 fish
 ryb
 flour
@@ -541,7 +445,7 @@ Benzín
 grain
 obilí
 Holz
-Døevo
+D?evo
 Kohle
 Uhlí
 meat
@@ -563,7 +467,7 @@ Cestující
 Plastik
 Plast
 Post
-Po¹ta
+Po?ta
 PrintersInk
 Tiskárnový inkoust
 Sand
@@ -593,39 +497,39 @@ Chodec 3
 pedestrian_4
 Chodec 4
 pedestrian_child
-Chodec s dítìtem
+Chodec s dít?tem
 pedestrian_dog
 Chodec se psem
 Woman
-®ena
+?ena
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
-kusù zbo¾í
+kus? zbo?í
 CATEGORY_02
-sypké zbo¾í
+sypké zbo?í
 CATEGORY_03
 ropa/benzín
 CATEGORY_04
-mra¾eného zbo¾í
+mra?eného zbo?í
 CATEGORY_05
 tekuté potraviny
 CATEGORY_06
-Døevo
+D?evo
 rolls
  rolí
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 choose_point
-Znaèka vyber pøí¹tí zastávku
+Zna?ka vyber p?í?tí zastávku
 ChooseSignals
-Návìstidlo volby stanièní koleje
+Náv?stidlo volby stani?ní koleje
 ChooseSignalsMonorail
-Návìstidlo volby stanièní koleje
+Náv?stidlo volby stani?ní koleje
 Endofchoosetrack
-Návìstidlo zákazu volby stanièní koleje
+Náv?stidlo zákazu volby stani?ní koleje
 LongBlockSignals
-Návìstidlo úseku s více zastávkami
+Náv?stidlo úseku s více zastávkami
 Minimum80
 Minimální rychlost 80 km/h
 NoAirEntry
@@ -633,31 +537,29 @@ Zákaz vjezdu
 NoEntry
 Zákaz vjezdu
 preSignals
-Návìstidlo vlakové cesty
+Náv?stidlo vlakové cesty
 preSignalsMonorail
-Návìstidlo vlakové cesty
+Náv?stidlo vlakové cesty
 RailClose
-Tra» uzavøena
+Tra? uzav?ena
 Signals
-Návìstidlo tra»ového bloku
+Náv?stidlo tra?ového bloku
 SignalsMonorail
-Návìstidlo tra»ového bloku
+Náv?stidlo tra?ového bloku
 traffic_light
 Semafory
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Ahorn-2
-Javor
+Javor\n
 Birke-1
-bøíza\n
+b?íza\n
 Latschenkiefer
 Horská borovice\n
 Palmtree1
 Palma\n
 Tree4
 Borovice\n
-Tree5
-Tree5\n
 Tree6
 Jedle\n
 Willow
@@ -665,13 +567,13 @@ vrba\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel
-Vysokorychlostní ¾eleznièní tunel
+Vysokorychlostní ?elezni?ní tunel
 FastRoadTunnel
-Vysokorychlostní silnièní tunel
+Vysokorychlostní silni?ní tunel
 RailTunnel
-®eleznièní Tunel
+?elezni?ní Tunel
 RoadTunnel
-Silnièní tunel
+Silni?ní tunel
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -695,7 +597,7 @@ H-Trans BR218
 2Ellok
 H-Trans Tigress I
 2Garrat
-RVg Garratt (støed)
+RVg Garratt (st?ed)
 3Ben185
 Bennhardt BR185
 3Diesellokomotive
@@ -705,53 +607,51 @@ RVg Garratt (konec)
 707
 Boeing 707
 A3-5
-A 3/5 (©výcarské federální dráhy)
+A 3/5 (?výcarské federální dráhy)
 A380
 Airbus A380 - 'SuperJambo'
 AdlerPersonenwagen
 Adler - osobní vagón
 Autotransportanhaenger
-H-Trans pøívìs na auta
+H-Trans p?ív?s na auta
 Autotransporter
-H-Trans nákladní vùz na auta
+H-Trans nákladní v?z na auta
 Autotransportwagen
 TPI Lopomo vagón na auta
 Boxcar
-Vagón na kusové zbo¾í
+Vagón na kusové zbo?í
 BR38-Tender
 Tendr BR38
-BR45-Tender
-Tendr BR45
 Bretteranhaenger
-WF Ultd. pøívìs na prkna
+WF Ultd. p?ív?s na prkna
 Brettertransporter
 WF Ultd. nákl. auto na prkna
 Bretterwagen
 VT-V nákladní vagón na prkna
 Buchanhaenger
-S/H-T pøívìs na kusové zbo¾í
+S/H-T p?ív?s na kusové zbo?í
 Buchtrailer
-Pøívìs na kusové zbo¾í I.
+P?ív?s na kusové zbo?í I.
 Buchtrailer2
-Pøívìs na kusové zbo¾í II
+P?ív?s na kusové zbo?í II
 Buchtransporter
-S/H-T dodávka na kusové zbo¾í
+S/H-T dodávka na kusové zbo?í
 Buchwagen
-VT-V nákl. vagón na kusové zbo¾í
+VT-V nákl. vagón na kusové zbo?í
 Bus
 H-Trans Autobus
 Cargosprinter-Front
-CargoSprinter - pøední vùz
+CargoSprinter - p?ední v?z
 Cargosprinter-Mittel
 CargoSprinter - vagón
 Cargosprinter-Steuer
-CargoSprinter - zadní vùz
+CargoSprinter - zadní v?z
 Cementtrailer
-Pøívìs na cement
+P?ív?s na cement
 Comet
 De Havilland 'Kometa'
 Cooling_Container
-Chladící pøívìs
+Chladící p?ív?s
 Cooling_Truck
 Mrazící auto
 Cooling_Waggon
@@ -759,85 +659,85 @@ Nákladní mrazící vagón
 DC-3
 Dacota DC-3
 Doubledeck_city_bus
-Dvoupatrový mìstský autobus
+Dvoupatrový m?stský autobus
 EinheitsTender
 tendr
 Erzanhaenger
-H-Trans pøívìs na sypké zbo¾í
+H-Trans p?ív?s na sypké zbo?í
 Erztransporter
-H-T nákladní auto na sypké zbo¾í
+H-T nákladní auto na sypké zbo?í
 Erzwagen
-H-Trans nákl. vagón na sypké zbo¾í
+H-Trans nákl. vagón na sypké zbo?í
 FastFerry
-O.Bang Fast Ferry vzná¹edlo
+O.Bang Fast Ferry vzná?edlo
 Fishing_Boat
-Rybáøská loï
+Rybá?ská lo?
 H-Trans-Tiger-Car
 H-Trans Tigress osobní vagón
 H-Trans-Tiger-Mail-Car
-H-Trans Tigress po¹tovní vùz
+H-Trans Tigress po?tovní v?z
 Hadley-Page-V1500
 RVg Hadley-Page V1500
 Heavy_ore_truck
-Tì¾ký sklápìè
+T??ký skláp??
 Holzanhaenger
-JET pøívìs na døevo
+JET p?ív?s na d?evo
 Holztransporter
-H-Trans nákladní auto na døevo
+H-Trans nákladní auto na d?evo
 Holzwagen
-H-Trans nákladní vagón na døevo
+H-Trans nákladní vagón na d?evo
 Horsebookscariage
-Vozík na kusové zbo¾í
+Vozík na kusové zbo?í
 Horsepapercariage
 Vozík na papír
 Horsepassengerscariage
-Koèár
+Ko?ár
 Horses
-Koòské spøe¾ení
+Ko?ské sp?e?ení
 Horsewoodcariage
-Vozík na døevo
+Vozík na d?evo
 HVPosttransporter
-DIBU/H-Trans po¹tovní dodávka
+DIBU/H-Trans po?tovní dodávka
 JumboJet
 Boeing 747 'Jumbo Jet'
 Kohleanhaenger
-H-Trans pøívìs na sypké zbo¾í
+H-Trans p?ív?s na sypké zbo?í
 Kohletransporter
-H-T nákladní auto na sypké zbo¾í
+H-T nákladní auto na sypké zbo?í
 Kohlewagen
-H-Trans nákl. vagón na sypké zbo¾í
+H-Trans nákl. vagón na sypké zbo?í
 Kunststofanhaenger
-H-Trans pøívìs na plasty
+H-Trans p?ív?s na plasty
 Kunststofftransporter
 H-Trans nákladní auto na plasty
 logs
-Vleèené klády
+Vle?ené klády
 Lowa
 Tramvaj Lowa
 Lowa_Anhaenger
-Tramvaj Lowa (vleèòák)
+Tramvaj Lowa (vle??ák)
 Milk_Truck
 Cisterna na mléko
 Milk_Waggon
 Nákladní vagón na mléko
 Moebelschiff
-Loï na kusové zbo¾í
+Lo? na kusové zbo?í
 Moebelwagen
-VT-V nákl. vagón na kusové zbo¾í
+VT-V nákl. vagón na kusové zbo?í
 NeuOelwagen
 Cisterna na ropu/benzín (80m2)
 Oelanhaenger
-H-T pøípojná cist. na ropu/benzín
+H-T p?ípojná cist. na ropu/benzín
 Oelwagen
 VT Vienna cisterna na ropu/benzín
 Oilbarge
-Nákladní èlun na ropu
+Nákladní ?lun na ropu
 Oiltrailer
-Pøívìsná cisterna na ropu
+P?ív?sná cisterna na ropu
 OldOil
 Cisterna na ropu/benzín (18m2)
 Papieranhaenger
-TRK pøívìs na papír
+TRK p?ív?s na papír
 Papiertransporter
 Trikky nákladní auto na papír
 Papierwagen
@@ -845,25 +745,25 @@ VT Vienna nákladní vagón na papír
 Passagierwagen
 H-Trans osobní vagón
 Pferdebahn
-Koòské spøe¾ení
+Ko?ské sp?e?ení
 Postschiff
-Po¹tovní loï
+Po?tovní lo?
 Posttransporter
-H-Trans po¹tovní dodávka
+H-Trans po?tovní dodávka
 Postwagen
-H-Trans Po¹tovní/Zavazadlový vùz
+H-Trans Po?tovní/Zavazadlový v?z
 RenaultTH5
 Renault TH5
 Sandanhaenger
-WF Ultd. pøívìs na sypké zbo¾í
+WF Ultd. p?ív?s na sypké zbo?í
 Sandtransporter
-WF Ultd. nákl. auto na sypké zbo¾í
+WF Ultd. nákl. auto na sypké zbo?í
 schooner
-Osobní ¹kuner
+Osobní ?kuner
 SlowFerry
 H-Trans osobní trajekt
 Stahlanhaenger
-H-Trans pøívìs na ocel
+H-Trans p?ív?s na ocel
 Stahltransporter
 H-Trans nákladní auto na ocel
 Stahlwagen
@@ -871,15 +771,15 @@ VT Vienna nákladní vagón na ocel
 Staubkesselwagen
 VT Vienna nákl. vagón na plasty
 Stoneanhaenger
-WF Ultd. pøívìs na sypké zbo¾í
+WF Ultd. p?ív?s na sypké zbo?í
 Stonetransporter
-WF Ultd. nákl. auto na sypké zbo¾í
+WF Ultd. nákl. auto na sypké zbo?í
 Tanklastzug
 H-Trans cisterna na ropu/benzín
 Tatra-T4
 Tatra T4
 Tatra-T4_Wagon
-Tatra T4 (vleèòák)
+Tatra T4 (vle??ák)
 TPBeiwagen
 TPI VT98 osobní vagón
 TPPassagierwagen
@@ -887,17 +787,17 @@ TPI osobní vagón
 TPSchienenbus
 TPI VT98
 Tram_GT6_Ende
-GT6 zadní vùz
+GT6 zadní v?z
 Tram_GT6_Kopf
-GT6 pøední vùz
+GT6 p?ední v?z
 Tugboat
 remorkér
 VolvoFH12
 Volvo FH12
 XMail
-Vùz jednokolejky pro pøepravu po¹ty
+V?z jednokolejky pro p?epravu po?ty
 XTest
-Vùz jednokolejky
+V?z jednokolejky
 Zeppelin
 Hindenburg
 #______________________________________way______________________________________
@@ -905,33 +805,33 @@ Hindenburg
 asphalt_road
 Asfaltová silnice
 city_road
-Mìstská silnice
+M?stská silnice
 cobblestone_road
-Dlá¾dìná silnice
+Dlá?d?ná silnice
 concrete_sleeper_track
-®el. tra» s betonovými pra¾ci
+?el. tra? s betonovými pra?ci
 dirt_road
 Blátivá cesta
 elevated_monorail
 Vysutá jednokolejka
 gavel_road
-©tìrková silnice
+?t?rková silnice
 Kanal
-Prùplav
+Pr?plav
 MaglevTrack
-Magnetická tra»
+Magnetická tra?
 MaglevTrackElevated
-Vysutá magnetická tra»
+Vysutá magnetická tra?
 mip_cobblestone_road
-Dlá¾dìná silnice 2
+Dlá?d?ná silnice 2
 monorail
 Jednokolejka
 Powerline
 Elektrické vedení
 Rillenschienen
-Tramvajová tra»
+Tramvajová tra?
 river
-Splavná øeka
+Splavná ?eka
 river2
 Potok
 runway_grass
@@ -939,11 +839,11 @@ Travnatá ranvej
 runway_modern
 Moderní ranvej
 steel_sleeper_track
-®el. tra» s ocelovými pra¾ci
+?el. tra? s ocelovými pra?ci
 taxiway
-Pojí¾dìcí dráha
+Pojí?d?cí dráha
 wooden_sleeper_track
-®el. tra» s døevìnými pra¾ci
+?el. tra? s d?ev?nými pra?ci
 #__________________________________way-object___________________________________
 #__________________________________way-object___________________________________
 HighSpeedOverheadpower

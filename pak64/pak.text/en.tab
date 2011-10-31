@@ -5,7 +5,7 @@
 #                             Language: en English                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 24.07 2011                           #
+#                           Date Created: 31.10 2011                           #
 #                                                                              #
 #                                   authors:                                   #
 #                          Markus Pristovsek - prissi                          #
@@ -36,7 +36,7 @@
 #                                    note:                                     #
 #                                    - GerdW                                   #
 #                                    note:                                     #
-#                                   - TheHood                                  #
+#                            James P. Hood - TheHood                           #
 #                                    note:                                     #
 #                                 - transporter                                #
 #                                    note:                                     #
@@ -49,6 +49,8 @@
 #                                - jounior-fuchs                               #
 #                                    note:                                     #
 #                                    - petter                                  #
+#                                    note:                                     #
+#                                   - Xelofino                                 #
 #                                    note:                                     #
 #                            Alexander Brose - AlexB                           #
 #                                    note:                                     #
@@ -88,17 +90,21 @@
 #                                    note:                                     #
 #                                   - Nico192                                  #
 #                                    note:                                     #
+#                                 - Nicole_Chen                                #
+#                                    note:                                     #
 #                             P. Hamming - phamming                            #
 #                                    note:                                     #
 #                                     - sdog                                   #
 #                                    note:                                     #
 #                            Vladimír Slávik - vsys                            #
-#                             note: Vladimír Slávik                            #
+#                                    note:                                     #
 #                          Susanna Björverud - Susanna                         #
 #                                    note:                                     #
 #                                    - smu42                                   #
 #                                    note:                                     #
 #                                   - Timothy                                  #
+#                                    note:                                     #
+#                              Jon - viewofheaven                              #
 #                                    note:                                     #
 #                         Tomá? Vrbický - vrbicky_tomas                        #
 #                     note: Don´thurry up! Death is faster.                    #
@@ -133,7 +139,7 @@ Concrete road bridge
 ViaductRail
 brick stone viaduct
 WoodenRoad
-wooden road bridge\n
+wooden road bridge
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 00_01_CITY
@@ -169,23 +175,23 @@ bigger headquarters
 3headquarter
 international company headquarter
 A1_ALTE_KIRCHE
-famous church\n\nA famous old church with\nmarvellous paintings.\nEverybody should see this\nfantastic building.\n\n
+famous church\n\nA famous old church with\nmarvellous paintings.\nEverybody should see this\nfantastic building.\n
 A2_SCHLOSS1
-Neuschwanstein\n\nthe castle of the crazy king.\nThis is really worth seeing!\n\n
+Neuschwanstein\n\nthe castle of the crazy king.\nThis is really worth seeing!\n
 A3_BURG1
-Some ruins\n\ntelling of better times. They're\nalways worth a journey.\n\n
+Some ruins\n\ntelling of better times. They're\nalways worth a journey.\n
 A4_SCHLOSS2
-Old castle\n\nwith a marvellous collection\nof paintings. Perfect for a\nsightseeing tour, even\nwhen it rains.\n\n
+Old castle\n\nwith a marvellous collection\nof paintings. Perfect for a\nsightseeing tour, even\nwhen it rains.\n
 A5_STONEHENGE
-Stonehenge\n\nan ancient ring of stones.\nFeel the mystery walking\nbetween the monoliths.\n\n
+Stonehenge\n\nan ancient ring of stones.\nFeel the mystery walking\nbetween the monoliths.\n
 A6_DOME
-Old cathedral\n\nthe very heart of this city\nfor nearly thousand years.\n\n
+Old cathedral\n\nthe very heart of this city\nfor nearly thousand years.\n
 AirDepot
 Air depot of 1900
 AirportShed1930
 Airport shed for mail (1901)
 AirStop
-boarding bridge\n
+Jetway
 AirTerminal477
 Airport Terminal (1950)
 Avila_Big_StationBlg
@@ -201,51 +207,49 @@ Big modern terminal
 Bulk_StationBlg
 coal station
 BusStop
-Bus stop\n
+Bus stop
 Car_StationBlg
 car shipment
 CarDepot
 Depot for road vehicles
 CarStop
-Freight yard\n
+Freight yard
 ChannelStop
 Wharf
 COM_00_01
 Small Shop\n\nThe low prices and friendly service at this small shop keep the parking lot full most of the time.
 COM_00_02
-Independent gas station\n\nIt's independent from the big\ntransportation companies\n(like yours), but there's no\nneed to remove it. It won't\ntake away any of your\nbusiness.\n\n
+Independent gas station\n\nIt's independent from the big\ntransportation companies\n(like yours), but there's no\nneed to remove it. It won't\ntake away any of your\nbusiness.\n
 COM_00_03
-This backyard garage\nwants to get out of this\nshadowy existence for a\nlong time and to open a\nshowroom on the Mainstreet.\nBut there is still this lack\nof money, permission and\nMainstreet.\n\n
+This backyard garage\nwants to get out of this\nshadowy existence for a\nlong time and to open a\nshowroom on the Mainstreet.\nBut there is still this lack\nof money, permission and\nMainstreet.\n
 COM_00_05
-Drive through bank. It's\ncalled a drive through\nbecause you don't stop,\nand when you pass through\nyour wallet magically\nempties.The manager can\nusually be seen wringing his\nhands with glee.\n\n
+Drive through bank. It's\ncalled a drive through\nbecause you don't stop,\nand when you pass through\nyour wallet magically\nempties.The manager can\nusually be seen wringing his\nhands with glee.\n
 COM_00_06
-Better coffee is nowhere to\nbe found that is better\nthan up on this cafe's\nroof-terrace\n\n
+Better coffee is nowhere to\nbe found that is better\nthan up on this cafe's\nroof-terrace\n
 COM_00_08
 Apartment Block\n\nThese apartments appeal to the upper middle class. There are some boutique shops on the lobby floor.
 COM_00_10
 Medium Office Block\n\nThis building is home to many small firms. The underground parking garage and the juice bar on the first floor make it a great place to work.
 COM_00_11
-Nova's Novelties. A very\nbright and colourful Novelty\nShop which sells\neverything from Wax Lamps\nto Grey Battleships. (Now\nthat's a novelty)\n\n
+Nova's Novelties. A very\nbright and colourful Novelty\nShop which sells\neverything from Wax Lamps\nto Grey Battleships. (Now\nthat's a novelty)\n
 COM_00_12
 Office Block\n\nThis office building houses many small, faceless corporations. One day, they each hope to be large, faceless corporations.
 COM_00_14
-This building may look like an\nold factory, but is in\nfact a highly organized\nillegal betting shop.\n\n
+This building may look like an\nold factory, but is in\nfact a highly organized\nillegal betting shop.\n
 COM_00_18
 Blade Tower\nThis office building maintains its position on the cutting edge of technology through constant upgrades. Of course, all this attention to features comes at a hefty price. Rents here are 30% higher than in nearby office spaces of similar size, but some businesses still pay it.
-COM_00_22
-New UN building for Somalia.\n\n
 COM_01_01
 Balloon Launch\n\nThis is a hot-air balloon take off and landing site. This site is frequented by a lot of politicians; that's why you can't see any gas bottles.
 COM_01_04
 Bird Watcher Park\n\nThe city bird-watching association put up the money for this park to be built. It has many trees and bird houses where bird can nest, as well as benches where bird watchers can sit to enjoy the sights and sounds.
 COM_01_09
-Old cinema. Lots of old\nBlack & White movies\nare shown here. It is very\npopular with Charlie\nChaplin fans.\n\n
+Old cinema. Lots of old\nBlack & White movies\nare shown here. It is very\npopular with Charlie\nChaplin fans.\n
 COM_01_10
-The local clinic. The boring\nfront was replaced by a\nnew entrance to cheer\neveryone up, especially\nthose in for the dentists.\nDon't clench your teeth on\nthem!\n\n
+The local clinic. The boring\nfront was replaced by a\nnew entrance to cheer\neveryone up, especially\nthose in for the dentists.\nDon't clench your teeth on\nthem!\n
 COM_01_17
 Medical Center\n\nThis building houses the offices of many doctors. You can get nearly any procedure done here, including the famous walletectomy.
 COM_01_18
-Assets Management\nCompany "Global Trust" is\na global funds trader. Their\nJunk Bond funds and micro\ncredit institutes in India\nand Peru make a lot of\nmoney. But will this continue\nin the future? There is no\nget-your-money-back-guarantee\non the stock-market.\n\n
+Assets Management\nCompany "Global Trust" is\na global funds trader. Their\nJunk Bond funds and micro\ncredit institutes in India\nand Peru make a lot of\nmoney. But will this continue\nin the future? There is no\nget-your-money-back-guarantee\non the stock-market.\n
 COM_01_20
 Holiday Tower\n\nThis office building has special events throughout the year. On holidays, or for a large fee, the maintenance staff will make sure the offices are lighted or darkened to form pictures on the sides.
 COM_02_02
@@ -255,11 +259,11 @@ Heritage Park\n\nThis park is set aside to protect some of the city's heritage t
 COM_02_13
 Seafood Restaurant\n\nThis eatery is so popular, the owner has had to expand it three times. He finds himself with less and less office space as he puts in more tables and chairs. To eat supper here, you have to show up at noon, or you might not get a table.
 COM_02_19
-While the building itself is\nnot very notable its\nexternal elevator was soon\na tourist attraction. Even\nthough the tickets are\nexpensive, the real money\nis made by the kiosk next to\nthe queue for the elevator.\n\n
+While the building itself is\nnot very notable its\nexternal elevator was soon\na tourist attraction. Even\nthough the tickets are\nexpensive, the real money\nis made by the kiosk next to\nthe queue for the elevator.\n
 COM_03_14
 Pharmacy\n\nThis pharmacy has an extensive storage area to ensure that it has whatever medicines its customers need. It is open 24/7 and has a price-matching guarantee for all generic medicines.
 COM_03_15
-Shortly before WWII this\nDepartment of the Ministry\nof Defense was erected,\ninfluenced by the futurists.\nUnfourtunately, it was\nsoon found out that the\nferro-concrete used was indeed\nmade to last a thousand\nyears. No way to beautify\nthis, even though today it is\nthe headquarter of a charity\norganisation.\n\n
+Shortly before WWII this\nDepartment of the Ministry\nof Defense was erected,\ninfluenced by the futurists.\nUnfourtunately, it was\nsoon found out that the\nferro-concrete used was indeed\nmade to last a thousand\nyears. No way to beautify\nthis, even though today it is\nthe headquarter of a charity\norganisation.\n
 COM_03_17
 Publisher's Headquarters\n\nThis building houses the corporate headquarters of a large magazine publisher. They publish a variety of periodicals, including a mini-zine that lists mass-transit timetables.
 COM_03_19
@@ -267,13 +271,13 @@ Television Studios\n\nThis building houses several television studios. One whole
 COM_03_20
 12-story Office Building\nThis building houses many offices. The building superintendent keeps everything running smoothly, most of the time, even though he's hardly ever there.
 COM_04_15
-This office building has\nbeen retrofitted many\ntimes, as you can see by\nthe satellite dish on the\ntop.  You will also notice a\nglass portion of the roof,\nwhich covers the swimming\npool three floors beneath. \nThe swimming pool has a\nslide, which is intended to\ninspire the computer\nprogrammers within, but\nunfortunately their mood is\noften wrecked when people\ndecide to take off their pants\nand sit on the glass roof.\n\n
+This office building has\nbeen retrofitted many\ntimes, as you can see by\nthe satellite dish on the\ntop.  You will also notice a\nglass portion of the roof,\nwhich covers the swimming\npool three floors beneath. \nThe swimming pool has a\nslide, which is intended to\ninspire the computer\nprogrammers within, but\nunfortunately their mood is\noften wrecked when people\ndecide to take off their pants\nand sit on the glass roof.\n
 COM_10_01
-Beautiful lake with trees\nnearby. What kid wouldn't\nwant to swim here at\nsummer and skate in winter\n\n
+Beautiful lake with trees\nnearby. What kid wouldn't\nwant to swim here at\nsummer and skate in winter\n
 COM_10_02
 Carging for orignal alpine experience by hour was the best idea farmer Fred ever had in his life; because the small field near town was way to small any other big revenue.
 COM_10_05
-This barn have been in use\nin a lot of year by a farmer\nJenkins. You could taste\nfresh milk if you want. Just\ncome here.\n\n
+This barn have been in use\nin a lot of year by a farmer\nJenkins. You could taste\nfresh milk if you want. Just\ncome here.\n
 COM_10_07
 Meditation Resort\n\nThis converted mansion features a large butterfly garden and live-in meditation consultants to help visitors achieve inner peace. The price to stay the weekend is high, but people still pay it.
 COM_10_08
@@ -281,7 +285,7 @@ Inventor's Studio\nThis building is owned by one of the bright fellows in town w
 COM_10_10
 Gabled Pottery Store\n\nThis store has pottery of all different types. There's even a section where you can throw, glaze, and fire your own pieces, for a small charge.
 COM_10_12
-This old creepy house\nresemble times when\nsimupeople haven't known\nwhat is holy power of\nelectrification or rail.\n\n
+This old creepy house\nresemble times when\nsimupeople haven't known\nwhat is holy power of\nelectrification or rail.\n
 COM_11_11
 Boarding House\nThis is a cozy place where travelers can rest when they come to this town. Live entertainment is provided one night a week (and when a local performer wants to come in and earn tips on other nights).
 COM_11_12
@@ -291,27 +295,27 @@ railway control centre
 DenkDirk
 Dirk Burkholz Memorial\n\nThis monument is dedicated to Dirk Burkholz who founded the german forum in 2004 and suddenly died at 26 in 2010. He spread the word widely.
 DenkFlor
-Flor Wauters Memorial\n\nThis monument is dedicated\nto Flor 'WF Ultd.' Wauters,\nthe famous engineer who\ncreated so many great road\nand rail vehicles. He is also\nwell known for designing many\nwell working factories.\n\n
+Flor Wauters Memorial\n\nThis monument is dedicated\nto Flor 'WF Ultd.' Wauters,\nthe famous engineer who\ncreated so many great road\nand rail vehicles. He is also\nwell known for designing many\nwell working factories.\n
 DenkHajo
-Hajo Malthaner Memorial\n\nThis monument is dedicated\nto Hansj?rg Malthaner, who\ncreated this game in seven\nyears. Demigods take\nlonger for such tasks.\n\n
+Hajo Malthaner Memorial\n\nThis monument is dedicated\nto Hansj?rg Malthaner, who\ncreated this game in seven\nyears. Demigods take\nlonger for such tasks.\n
 DenkMHz
-Georg Heiduk Memorial\n\nThis monument is dedicated\nto Georg Heiduk ("MHz")\nthe master of rendered\nbuildings. It stands for his\nsharp eye for details.\n\n
+Georg Heiduk Memorial\n\nThis monument is dedicated\nto Georg Heiduk ("MHz")\nthe master of rendered\nbuildings. It stands for his\nsharp eye for details.\n
 DenkOwen
-Memorial\n\nThis place is dedicated to\nOwen Rudge the famous\nfinance expert and sound\ntechnician.\n\n
+Memorial\n\nThis place is dedicated to\nOwen Rudge the famous\nfinance expert and sound\ntechnician.\n
 DenkSeth
-Memorial\n\nThis place is dedicated to\nSeth C. Triggs the famous\narchitect who designed so\nmany beautiful city\nbuildings. He is also well\nknown for doing many studies\nhow to improve traffic\nsystems.\n\n
+Memorial\n\nThis place is dedicated to\nSeth C. Triggs the famous\narchitect who designed so\nmany beautiful city\nbuildings. He is also well\nknown for doing many studies\nhow to improve traffic\nsystems.\n
 DenkTomas
-Memorial\n\nThis monument is dedicated\nto Tomas Kubes who\nhelped to improve\nSimutrans in many, many\naspects with advice and\nhard work.\n\n
+Memorial\n\nThis monument is dedicated\nto Tomas Kubes who\nhelped to improve\nSimutrans in many, many\naspects with advice and\nhard work.\n
 DenkTrikky
-Memorial\n\nThis monument is dedicated\nto 'Trikky' Rick McGreal the\nfamous architect who\ndesigned so many\nimpressive buildings.\n\n
+Memorial\n\nThis monument is dedicated\nto 'Trikky' Rick McGreal the\nfamous architect who\ndesigned so many\nimpressive buildings.\n
 DenkVM
-Memorial\n\nThis monument is dedicated\nto Manfred 'VT Vienna'\nTomaschitz the famous\nengineer who designed\nmany superior rail vehicles.\n\n
+Memorial\n\nThis monument is dedicated\nto Manfred 'VT Vienna'\nTomaschitz the famous\nengineer who designed\nmany superior rail vehicles.\n
 DenkVolker
-Memorial\n\nThis Stupa was built by Volker\nMeyer who improved\nSimutrans in many, many\nareas.\n\n
+Memorial\n\nThis Stupa was built by Volker\nMeyer who improved\nSimutrans in many, many\nareas.\n
 Eingang
 Entrance
 Feste
-Konuberts' Stronghold\n\nThis massive castle was\nerected around the year\n1400.\n\n
+Konuberts' Stronghold\n\nThis massive castle was\nerected around the year\n1400.\n
 Fluid_StationBlg
 oil tank
 FreightShipStop
@@ -327,7 +331,7 @@ big station hall right
 Goods_StationBlg
 Warehouse
 Gymnasium
-High school/grammar school\n\n
+High school/grammar school\n\nSince Simutrans runs on smartphone, even less studying is done there!
 IND_00_01
 Warehouse\n\nThis warehouse is used for storing wares... or shooting spy thriller movies.
 IND_00_03
@@ -337,7 +341,7 @@ Water Tank\n\nThis tank holds drinking water for this area of the city.
 IND_00_06
 Factory\n\nThis factory makes many useful items, such as joy buzzers and whoopee cushions.
 IND_01_01
-Free parking. Some people\neven abandon their old\ncars here.\n\n
+Free parking. Some people\neven abandon their old\ncars here.\n
 IND_01_04
 Toy Factory\n\nThis factory produces old-fashioned wooden toys.
 IND_01_06
@@ -349,7 +353,9 @@ Guess what is produced here: Neither cough medicine nor plastic molds but Grandm
 IND_02_01
 Brickyard\n\nThis firm makes bricks and cinder blocks of various types and colors.
 IND_02_10
-The old soap works still\nlooks as neat as the day it\nwas erected. A true miracle!\n\n
+The old soap works still\nlooks as neat as the day it\nwas erected. A true miracle!\n
+KingsbridgeMonastry
+Monastry\n\nMysterious voices are heard in the morning - or are those rather from the poor guys in the cold showers?
 LargeShipStop
 Dock with Large Crane
 leftShipStop
@@ -357,11 +363,11 @@ Heavy duty crane
 LeuchtturmShipStop
 Lighthouse Ship Stop
 Lighthouse
-Lighthouse\n\n
+Lighthouse\n\nOnce the brightest on the shore, but nowdays only preserved to server as mobile base station and to sell postcards to tourists.
 MainTerminal1930
 Main terminal building (1930)
 MHzSmallStation
-Station building (by MHz)
+Station building
 ModernAirTerminal477
 Modern air terminal
 MonorailDepot
@@ -373,7 +379,7 @@ Monorail Depot Foundation
 OldTownhall
 Historic Hall\n\nThis building used to house the city officials' offices. Now, it houses a museum and coffee shop.
 Patricks_Rock
-Patrick's Rock\n\n
+Patrick's Rock\n\nClimbing it is only for the fearles. Unfourtunately the same goes for the scalding hot spring at its bottom.)
 PlainAirStop
 Aircraft Stop
 PostOffice
@@ -389,7 +395,7 @@ station hall
 rampShipStop
 Boat Ramp
 Raven_Kirche
-Church St. Meinrad\n\nThe hermit St. Meinrad has\nbeen accompagned by two\nravens according to the\nlegend. When he has been\nmurdered, the two ravens\nfollowed the murderers and\nhave convicted them. Today,\nat the place of his hut is\nthe \nmonastery Einsiedeln.\n\n
+Church St. Meinrad\n\nThe hermit St. Meinrad has\nbeen accompagned by two\nravens according to the\nlegend. When he has been\nmurdered, the two ravens\nfollowed the murderers and\nhave convicted them. Today,\nat the place of his hut is\nthe \nmonastery Einsiedeln.\n
 RES_00_01
 This small house may not look out of the ordinary: But it is right at the center of the Simutrans universe. It was the first buildings errected in Simutrans.
 RES_00_02
@@ -399,19 +405,19 @@ The famous pirate Blackbird was once once the owner of this building. However, h
 RES_00_04
 This modern house looks nothing out of the ordinary. But the whole structure has an extended tunnel network below, where a scientist works on beaming. However, he is most famed and feared for the frequent power outages in this neighbourhood.\n
 RES_00_06
-A little fountain. Even if it\nis not so great as the one\nin Geneva, it is delighting\npeople walking around it,\nespecially in the\nsummertime.\n\n
+A little fountain. Even if it\nis not so great as the one\nin Geneva, it is delighting\npeople walking around it,\nespecially in the\nsummertime.\n
 RES_00_08
 Medium House with Attached Garage\n\nDon't worry. They use the car to get to one of your mass-transit stations.
 RES_00_09
 Park\n\nNearby residents like to come here to feed the ducks and pigeons.
 RES_00_12
-Live less ordinary! The\ninterior is unique as well:\nPower outlet are for\nthree-phase-power only,\nthe transparent bath-tube\nis iluminated with neon\nlamps, the stove is powered\nby stirling motor und Paintings\nare projected onto the walls,\nbecause the architect forbid\nnails in the walls.\n\n
+Live less ordinary! The\ninterior is unique as well:\nPower outlet are for\nthree-phase-power only,\nthe transparent bath-tube\nis iluminated with neon\nlamps, the stove is powered\nby stirling motor und Paintings\nare projected onto the walls,\nbecause the architect forbid\nnails in the walls.\n
 RES_00_13
 Duplex\n\nGood hedges make good neighbors?
 RES_00_16
 This old villa is something of a fixer-upper. On the other hand you will be the only one in town who can operates switches from Alva Edison to light the stairs.\n
 RES_00_17
-Even for old houses like\nthis, consumption-based\nheating cost billing existed\n- everyone had to pay for\nhis own firewood.\n\n
+Even for old houses like\nthis, consumption-based\nheating cost billing existed\n- everyone had to pay for\nhis own firewood.\n
 RES_00_18
 Even before the war, building companies went bankrupt. The owner of this building used his chance and improved the look and his wallets with a big beer ad.\n
 RES_00_19
@@ -421,9 +427,9 @@ In the 60ies this was an award-winning house. Today people are only in awe by th
 RES_00_23
 Any room with a window: It sounds well until you try to put you cupboard to a wall - no square corners, not flat walls. Dust bunnies will soon take over this place.\n
 RES_01_01
-Modern prefab house with a\nlarge room for the kid in the\nattic.\n\n
+Modern prefab house with a\nlarge room for the kid in the\nattic.\n
 RES_01_02
-A-Frame type house. Very\nstable, but with only a few\nwindows and walls, so it's\nnot really suitable for\npeople who like framed\npictures.\n\n
+A-Frame type house. Very\nstable, but with only a few\nwindows and walls, so it's\nnot really suitable for\npeople who like framed\npictures.\n
 RES_01_05
 With its large den and shady back yard, this is the home of a retired musician.
 RES_01_07
@@ -441,11 +447,11 @@ Luxury Apartments\n\nThese apartments give their residents room to breathe. The 
 RES_10_11
 The apple tree in the small garden is well fertilized - since we still wait for the reinventing of plumbing. However, it is lacking light for a rich harvest.
 Residenz
-Residence\n\nThis place is used by the\nlocal Yoga Guru to teach\nmeditation and inner peace.\nThere are lots of things\ncalled Bongs here.\n\n
+Residence\n\nThis place is used by the\nlocal Yoga Guru to teach\nmeditation and inner peace.\nThere are lots of things\ncalled Bongs here.\n
 rightShipStop
 Quay with pier
 RUIN_0
-Medieval castle\n\nThis castle was becoming a\nruin, but parts of it have\nbeen reconstructed, and\nthe whole complex is a\nmuseum now.\nThe view over the landscape\nis fantastic, you just have to\nclimb lots of stairs to see it.\n\n
+Medieval castle\n\nThis castle was becoming a\nruin, but parts of it have\nbeen reconstructed, and\nthe whole complex is a\nmuseum now.\nThe view over the landscape\nis fantastic, you just have to\nclimb lots of stairs to see it.\n
 SandStationMHz
 Stop without platform
 ShipDepot
@@ -455,21 +461,21 @@ Shipyard
 ShipStop
 Seaport
 STADIUM2
-Big stadium\n\nhosting all the international\nevents here.\n\n
+Big stadium\n\nhosting all the international\nevents here.\n
 Tennis_Court
-Tennis courts\n\n
+Tennis courts\n\nThe neighbours long for winter, when they can sit ouside again without constant pangs.
 Terminal1930
 Airport Terminal (1930)
 Theatre
-Theatre\n\nMany people come here to see plays, concerts, and improvisational acts.
+Theatre\n\nThe plays are as modern as its exterieur; still there seems to be enough spectators.
 Tower1930
 Airport tower (1930)
 TowerMoistboy
-Airport tower (by Moistboy)
+Modern airport tower
 TrainDepot
 Train depot
 TrainStop
-covered platform\n
+covered platform
 TrainStopMaglev
 Maglev station
 TrainStopMaglevIndicator
@@ -504,10 +510,12 @@ factory_Buchgrosshandel_details
 <title>Bookshop Details</title><h1>Bookshop</h1><p>This bookshop has everything that can be printed. From a 271 volume encyclopedia over the yellow pages for the internet to the manga corner (there, even the labels are written backwards...) </p>
 factory_Concretefactory_details
 <title>Concrete factory details</title><h1>Concrete factory</h1><p>Autoclaved Aerated concrete (AAC) is produced in this factory. The small pores that reduce weight and increase insulation originate from aluminum powder, which reacts with the water. AAC was invented in the 1920ies.</p>
+factory_fish_pond_details
+<title>Fish Pond Details</title>\n<h1>Fish Ponds</h1>\n<p>Pond is a body of water where even its deepest areas are reached by sunlight or where a human can walk across the entire body of water without being underneath. In some dialects of English, pond normally refers to small artificially created bodies of water.</p>\n<p>In medieval times in Europe, it was typical for many monasteries, castles, etc. (small, partly self-sufficient communities) to have fish ponds. These are still common in the East Asia (notably Japan), where koi carp may be kept.</p>\n<p>This pond is now used for breeding fish which can be later caught, transported, and processed to food. Swimming in it is forbidden.</p>\n<p>Pond works as extensive aquaculture based on local photosynthetical production, meaning that fish are not being fed by artificial food.</p>\n<p>Limiting for fish growth here is the available food supply by natural sources, commonly zooplankton feeding on pelagic algae or benthic animals, such as certain crustaceans and mollusks. Tilapia species filter feed directly on phytoplankton, which makes higher production possible. The photosynthetical production can be increased by fertilizing the pond water with artificial fertilizer mixtures, such as potash, phosphorus, nitrogen and micro elements. Because most fishes are carnivorous, they occupy a higher place in the trophic chain and therefore only a tiny fraction of primary photosynthetical production (typically 1%) will be converted into harvestable fish.</p>\n<p>As a result, without additional feeding the fish harvest will not exceed 200 kilograms of fish per hectare per year, equivalent to 1% of the gross photosynthetic production.</p>\n<p>In order to tap all available food sources in the pond, the aquaculturist will choose fish species which occupy different places in the pond ecosystem, e.g., a filter algae feeder such as tilapia, a benthic feeder such as carp or catfish and a zooplankton feeder (various carps) or submerged weeds feeder such as grass carp.</p>
 factory_Kohlegrube_details
-<title>About Coalmines</title><h1>Coalmines</h1><p>In coal mines the miners dig for coal. This is hard labour, but the coal is needed for such important industreis like iron foundries and power plants.<p>\n\n
+<title>About Coalmines</title><h1>Coalmines</h1><p>In coal mines the miners dig for coal. This is hard labour, but the coal is needed for such important industreis like iron foundries and power plants.<p>\n
 factory_Materialswholesale_details
-<title>DIY superstore details</title><h1>Do-It-Yourself Superstore</h1><p>All sorts of building materials are obtainable at this site. You should be able to finish a house at least structurally complete, without having to receive from another supplier than this DIY superstore.</p>\n\n
+<title>DIY superstore details</title><h1>Do-It-Yourself Superstore</h1><p>All sorts of building materials are obtainable at this site. You should be able to finish a house at least structurally complete, without having to receive from another supplier than this DIY superstore.</p>\n
 factory_Moebelfabrik_details
 <title>Furniture factory details</title><h1>Furniture factory</h1><p>Alas even furniture became a mass product following short-lived trends. Only a few pieces made in this factory were ever touched by a real cabinet maker. And if they did, then only because a machine failed.</p>
 factory_Nutzwald_details
@@ -768,6 +776,8 @@ preSignalsMonorail
 Pre-Signals (for two blocks)
 RailClose
 Rail Close
+Railgate
+Gate excluding other player
 Signals
 Rail Signal
 SignalsMonorail
@@ -777,63 +787,63 @@ Traffic lights
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Ahorn-1
-Maple Tree
+Maple Tree\n
 Ahorn-2
-Maple Tree
+Maple Tree\n
 Ahorn-Gruppe
-Stand of Maples
+Stand of Maples\n
 Birke-1
-birch\n\n
+birch\n
 Buche-1
-bush\n\n
+bush\n
 Busch_2
-bush\n\n
+bush\n
 Kiefer_1
-Red Pine
+Red Pine\n
 Kiefer_2
-Red Pine
+Red Pine\n
 Kiefer_3
-Red Pine
+Red Pine\n
 Kiefer_4
-Red Pine
+Red Pine\n
 Kiefer_5
-Red Pine
+Red Pine\n
 Latschenkiefer
-Mountain pine\n\n
+Mountain pine\n
 Palmtree1
-Palm Tree
+Palm Tree\n
 Palmtree2
-Palm Tree
+Palm Tree\n
 Palmtree3
-Palm Tree
+Palm Tree\n
 Palmtree4
-Palm Tree
+Palm Tree\n
 Palmtree5
-Palm Tree
+Palm Tree\n
 Palmtree6
-Palm Tree
+Palm Tree\n
 Palmtree7
-Palm Tree
+Palm Tree\n
 Pappel-1
-Poplar\n\n
+Poplar\n
 Pappel-2
-Poplar\n\n
+Poplar\n
 Tanne_1
-Fir\n\n
+Fir\n
 Tanne_2
-Fir\n\n
+Fir\n
 Tanne_3
-Fir\n\n
+Fir\n
 Tanne_4
-Fir\n\n
+Fir\n
 Tanne_5
-Fir\n\n
+Fir\n
 Tanne_6
-Fir\n\n
+Fir\n
 Tree6
-Fir\n\n
+Fir\n
 Willow
-willow\n\n
+willow\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel
@@ -922,8 +932,6 @@ BR39
 SingCo BR39 2-8-2
 BR45
 SingCo BR45 2-10-2
-BR45-Tender
-SingCo BR45 Tender
 Br614back
 BR614 Passenger Train (rear)
 Br614car
@@ -1298,8 +1306,6 @@ Ucy
 MHz Pellet Car Mk. III
 VolvoFH12
 Ikarus FH12 Flat-nose Semi
-waste wagon
-SimCo Waste Hopper
 X2000back
 X2000 Rear
 X2000car

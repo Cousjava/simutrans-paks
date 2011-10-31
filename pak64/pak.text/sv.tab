@@ -5,12 +5,14 @@
 #                             Language: sv Svenska                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 27.12 2010                           #
+#                           Date Created: 31.10 2011                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
 #                              Frank Penz - FrankP                             #
+#                                    note:                                     #
+#                                   - MagnusA                                  #
 #                                    note:                                     #
 #                           Michael Persson - Mippzon                          #
 #                                    note:                                     #
@@ -101,7 +103,7 @@ Hangar från 1900
 AirportShed1930
 Flygpostmagasin (1901)
 AirStop
-Embarkeringsbrygga\n
+Embarkeringsbrygga
 AirTerminal477
 Flygplatsterminal (1950)
 Avila_Big_StationBlg
@@ -117,13 +119,13 @@ Stor terminalbyggnad
 Bulk_StationBlg
 Kolningsanläggning
 BusStop
-busshållplats\n
+busshållplats
 Car_StationBlg
 Lastplats för bilar
 CarDepot
 Garage
 CarStop
-Lastkaj\n
+Lastkaj
 ChannelStop
 Inlandshamn
 COM_00_01
@@ -287,11 +289,11 @@ Hamn
 STADIUM2
 Stort stadion\n\nHär äger alla de stora internationella tävlingarna\nrum.
 Tennis_Court
-Tennisbanor\n
+Tennisbanor\n\n
 Terminal1930
 Terminalbyggnad (1930t)
 Theatre
-Teater\n
+Teater\n\n
 Tower1930
 Flygledartorn (1930)
 TowerMoistboy
@@ -311,7 +313,7 @@ Stationsbyggnad i viktoriansk stil
 Vorplatz
 Stationsentré
 Windmill
-Väderkvarn\n
+Väderkvarn\n\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -328,12 +330,6 @@ yellow_car
 Gul bil
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_Aufwindkraftwerk_details
-Vindkraftverk
-factory_Cementmill_details
-Cementfabrik
-factory_thermisches_Solarkraftwerk_details
-Solkraftverk
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -605,27 +601,27 @@ Trafikljus
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Ahorn-1
-Lönn\n\n
+Lönn\n
 Ahorn-2
-Lönn\n\n
+Lönn\n
 Ahorn-Gruppe
-Lönndunge\n\n
+Lönndunge\n
 Birke-1
-Björk\n\n
+Björk\n
 Buche-1
-Bok\n\n\n
+Bok\n
 Busch_2
-Buske\n\n
+Buske\n
 Kiefer_1
-Tall
+Tall\n
 Kiefer_2
-Tall
+Tall\n
 Kiefer_3
-Tall
+Tall\n
 Kiefer_4
-Tall
+Tall\n
 Kiefer_5
-Tall
+Tall\n
 Latschenkiefer
 Bergtall\nPinus montana\n\nStädsegrönt barrträd som kan bli upp\ntill 6 m högt. Förekommer i bergen\ni Mellan- och Sydeuropa upp till\n2400 m höjd. Större bestånd finns\nhuvudsakligen på stenig mark vid\nden övre trädgränsen. Det hårda,\nkådrika träet används till mest\ntill ved. Från de unga skotten\nutvinns olja som används som\nluktolja och inhalationsmedel.\n
 Palmtree1
@@ -647,7 +643,7 @@ Poppel\n
 Pappel-2
 Poppel\n
 Shunter-tree2
-Lövträd
+Lövträd\n
 Tanne_1
 Gran\n
 Tanne_2
@@ -667,15 +663,15 @@ Björk\n
 Tree4
 Tall är det viktigaste trädslaget världen över för skogsbruk.\nMestadels anspråkslös och snabbväxande ersätter den ofta inhemska trädslag som återplanteringsväxt efter skogsförstörelse eller avverkning. Den kommer från början från fuktiga och kyliga klimatområden.\nGenom inplantering återfinns tall nu över hela världen, - t o m i Antarktis.\n
 Tree5
-Eukalyptus
+Eukalyptus\n
 Tree6
 Gran (rödgran) Picea abies\n\n\n\nEtt högt och smalt barrträd som förekommer över hela världen. Den kan bli 35-65 m hög med en stamgrovlek på 2 meter och upp till 1000 år gammal.\nDess naturliga hemvist är Nord- och Östeuropa samt Mellaneuropas bergsområden. Genom plantering även spridd till andra områden.\nAnvändning: utomhus- och inomhussnickerier, undertaksbygge, byggnadsställningar, spånplattor, resonansträ i musikinstrument, cellulosa- och pappersindustri.
 tropictree1
-Tropiskt träd
+Tropiskt träd\n
 tropictree2
-Tropiskt träd
+Tropiskt träd\n
 tropictree3
-Tropiskt träd
+Tropiskt träd\n
 tropictree4
 Tropiskt träd\n
 tropictree5
@@ -689,7 +685,7 @@ Tropiskt träd\n
 tropictree9
 Tropiskt träd\n
 Willow
-Tårpil\n\n
+Tårpil\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel
@@ -764,8 +760,6 @@ BR38
 BR38 (Pr. P8)
 BR38-Tender
 Tender till BR38
-BR45-Tender
-Tender till BR45
 Br614back
 Br614 (B-ände)
 Br614car
@@ -1120,8 +1114,6 @@ Viggen
 Skärgårdsfärja
 VolvoFH12
 VolvoFH12 Dragbil
-waste wagon
-Sopvagn
 X2000back
 X2000 (B-ände)
 X2000car

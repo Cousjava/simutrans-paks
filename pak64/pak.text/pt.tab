@@ -5,9 +5,11 @@
 #                            Language: pt Portugues                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 21.05 2011                           #
+#                           Date Created: 31.10 2011                           #
 #                                                                              #
 #                                   authors:                                   #
+#                               Adilson - Adilson                              #
+#                                    note:                                     #
 #                                 André - An_dz                                #
 #                 note: Sempre verifica aonde os textos estão!                 #
 #                                    - Dwachs                                  #
@@ -345,7 +347,7 @@ Parada de ônibus descoberta
 MainTerminal1930
 Terminal aéreo de 1930, prédio principal
 MHzSmallStation
-Pequeno prédio da estação ferroviária (por MHz)
+Pequeno prédio da estação ferroviária
 ModernAirTerminal477
 Moderno terminal aeroportuário
 MonorailDepot
@@ -479,7 +481,7 @@ Estação sem plataforma
 ShipDepot
 Estaleiro
 ShipDepotEW
-Estaleiro (L-O)\n
+Estaleiro (L-O)
 ShipStop
 Pier
 STADIUM2
@@ -534,8 +536,6 @@ factory_Aufwindkraftwerk_details
 <title>Detalhes de usina termo-solar por ascendência</title><h1>Obtenção de energia</h1><p>A usina termo-solar por ascendência é uma forma de produção de energia renovável. O ar que está contido dentro de uma grande cobertura transparente que fica ao redor de uma alta chaminé é aquecido pela luz solar. Uma vez aquecido, o ar forma uma corrente de convecção e sobe pela torre. Esta corrente de ar gira as turbinas, o que produz eletricidade.</p>
 factory_Buchgrosshandel_details
 <title>Detalhes da Livraria</title><h1>Livraria</h1><p>Esta livraria tem tudo o que pode ser impresso. Desde uma enciclopédia de 271 volumes sobre páginas amarelas para a Internet até revistas de mangá; até mesmo as etiquetas de preços são escritas de trás para frente...</p>
-factory_Cementmill_details
-Cimenteira
 factory_Concretefactory_details
 <title>Detalhes de Concreteira</title><h1>Concreteira</h1><p>Concreto Celular Autoclavado (CCA) é produzido nesta fábrica. Os pequenos poros que reduzem peso e aumentam o isolamento se originam do pó de alumínio que reage com a água. CCA foi inventado na década de 1920.</p>
 factory_Kohlegrube_details
@@ -833,71 +833,71 @@ Semáforo
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Ahorn-1
-Bordo\n\n
+Bordo\n
 Ahorn-2
-Bordo\n\n
+Bordo\n
 Ahorn-Gruppe
-Bordos\n\n
+Bordos\n
 Birke-1
-Vidoeiro\n\n
+Vidoeiro\n
 Buche-1
-Faia\n\n
+Faia\n
 Busch_2
-Arbusto\n\n
+Arbusto\n
 Kiefer_1
-Pinus\n\n
+Pinus\n
 Kiefer_2
-Pinus\n\n
+Pinus\n
 Kiefer_3
-Pinus\n\n
+Pinus\n
 Kiefer_4
-Pinus\n\n
+Pinus\n
 Kiefer_5
-Pinus\n\n
+Pinus\n
 Latschenkiefer
-Pinheiro da montanha\n\n
+Pinheiro da montanha\n
 Palmtree1
-Palmeira\n\n
+Palmeira\n
 Palmtree2
-Palmeira\n\n
+Palmeira\n
 Palmtree3
-Palmeira\n\n
+Palmeira\n
 Palmtree4
-Palmeira\n\n
+Palmeira\n
 Palmtree5
-Palmeira\n\n
+Palmeira\n
 Palmtree6
-Palmeira\n\n
+Palmeira\n
 Palmtree7
-Palmeira\n\n
+Palmeira\n
 Pappel-1
-Álamo\n\n
+Álamo\n
 Pappel-2
-Álamo\n\n
+Álamo\n
 Shunter-tree2
-Salgueiro\n\n
+Salgueiro\n
 Tanne_1
-Abeto\n\n
+Abeto\n
 Tanne_2
-Abeto\n\n
+Abeto\n
 Tanne_3
-Abeto\n\n
+Abeto\n
 Tanne_4
-Abeto\n\n
+Abeto\n
 Tanne_5
-Abeto\n\n
+Abeto\n
 Tanne_6
-Abeto\n\n
+Abeto\n
 Tree1
-Carvalho
+Carvalho\n
 Tree3
-Bétula
+Bétula\n
 Tree4
-Pinheiro
+Pinheiro\n
 Tree5
-Eucalipto
+Eucalipto\n
 Tree6
-Abeto\n\n
+Abeto\n
 tropictree1
 Eucalipto\n
 tropictree2
@@ -917,7 +917,7 @@ Figueira\n
 tropictree9
 Castanheira do Pará\n
 Willow
-Chorão\n\n
+Chorão\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel
@@ -1006,8 +1006,6 @@ BR39
 BR 39
 BR45
 BR 45
-BR45-Tender
-BR 45, alimentador
 Br614back
 Br614, traseira
 Br614car
@@ -1386,8 +1384,6 @@ Viggen
 Barco Viggen
 VolvoFH12
 Volvo FH12
-waste wagon
-Vagão para lixo
 X2000back
 X2000, traseira
 X2000car

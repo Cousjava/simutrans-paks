@@ -5,7 +5,7 @@
 #                            Language: ce C-English                            #
 #                                Encoding: ASCII                               #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 27.12 2010                           #
+#                           Date Created: 31.10 2011                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
@@ -93,7 +93,7 @@ Airplane Hangar
 AirportShed1930
 1930s-style Airport Shed
 AirStop
-Jetway\n
+Jetway
 AirTerminal477
 1970s-style Terminal Building
 Avila_Big_StationBlg
@@ -115,7 +115,7 @@ Car Park
 CarDepot
 Garage for road vehicles.
 CarStop
-Truck Loading Bay\n
+Truck Loading Bay
 ChannelStop
 Wharf
 COM_00_01
@@ -225,7 +225,7 @@ Warehouse\n
 IND_00_02
 Factory Tower with Clean\nRooms\n
 IND_00_03
-Oil\\Gasoline Depot\n
+Oil\Gasoline Depot\n
 IND_00_04
 Sheet-metal Fabricator\n
 IND_00_05
@@ -392,10 +392,6 @@ Roadster
 Convertible
 yellow_car
 Yellow Family Sedan
-#__________________________________dummy_info___________________________________
-#__________________________________dummy_info___________________________________
-factory_Cementmill_details
-Cement Mill
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -626,8 +622,6 @@ BR39
 Kahan 39
 BR45
 Kahan 45
-BR45-Tender
-Kahan 45 Tender
 BR85
 Kahan 86
 Bretteranhaenger

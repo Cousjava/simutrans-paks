@@ -5,9 +5,11 @@
 #                              Language: pl Polski                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 27.12 2010                           #
+#                           Date Created: 31.10 2011                           #
 #                                                                              #
 #                                   authors:                                   #
+#                       Bartlomiej Weclewski - BarthVader                      #
+#                                    note:                                     #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
 #                              Frank Penz - FrankP                             #
@@ -111,49 +113,33 @@ Terminal (du¿y)
 Bulk_StationBlg
 Sk³ad materia³ów sypkich
 BusStop
-Przystanek autobusowy\n
+Przystanek autobusowy
 Car_StationBlg
 Parking
 CarDepot
 Zajezdnia pojazdów drogowych
 CarStop
-Stacja za³adunkowa\n
+Stacja za³adunkowa
 ChannelStop
 Nadbrze¿e
-COM_00_01
-Sklep\n
 COM_00_02
 Niezrzeszona stacja paliw\n\nStacja paliw nie nale¿±ca do\n¿adnego koncernu (nawet\ndo twojego). Sprzedaj± tam\nchrzczon± bajurê, wiêc nie\nwarto jej niszczyæ - nie\nstanowi dla ciebie\nkonkurencji.\n
 COM_00_03
 Automyjnia - obs³uga\ntopless!\n
-COM_00_05
-Szpital\\n
 COM_00_06
 Zajazd "Golonka u Zdzicha"\n
-COM_00_08
-Apartamentowiec\n
-COM_00_10
-Dom Mody\n
 COM_00_11
 Cukiernia pana Jêdrzeja.\nCiastka, p±czki,\njagodzianki!\n
-COM_00_12
-Biurowiec\n
 COM_00_14
 Salon sukien ¶lubnych. Nie\npokazuj tego miejsca\nswojej dziewczynie!\n
-COM_00_18
-Nowoczesny biurowiec\\n
 COM_00_22
 Biuro handlowe Microsoft\n
 COM_01_01
 L±dowisko sportowe\n\nDzi¶ na l±dowisku odbywaj±\nsiê pokazy balonowe.\nBalony unosz± siê w górê\ndlatego, ¿e s± nape³nione\nciep³ym powietrzem, które\njest l¿ejsze od zimnego. Nie\nu¿ywasz ich do transportu\npasa¿erów, poniewa¿ s±\npowolne i lec± tam, gdzie\nwiatr je poniesie.\n
-COM_01_04
-Planty\n
 COM_01_09
 Stare kino\n\nTo stare kino obecnie\nprze¿ywa renesans. Po\nprostu jego nowy\nw³a¶ciciel wpad³ na\npomys³, aby zamiast hitów\nkinowych puszczaæ w nim\ntylko takie dziwad³a, jak filmy\nprodukcji irañskiej lub\nmongolskiej. Od tego czasu\nkino ma swoich sta³ych\nbywalców i zaczê³o na siebie\nzarabiaæ.\n
 COM_01_10
 Siedziba partii zielonych\n\nPartia zielonych w Simutrans\nd±¿y do ochrony przyrody\npod ka¿dym wzglêdem. Poza\nprowadzeniem akcji typu\nnie jemy miêsa, nie nosimy\nnaturalnej skóry ma te¿ na\nswoim koncie osi±gniêcia,\nm.in. protesty przeciwko\nwycinaniu puszcz\ndoprowadzi³y do wynalezienia\npodk³adów betonowych\numo¿liwiaj±c zwiêkszenie\nprêdko¶ci poci±gów.\n
-COM_01_17
-¦redni biurowiec\n
 COM_01_18
 Przeszklony budynek\n\nTen budynek, wbrew\npozorom, nie jest\nzbudowany ze szk³a, tylko\nz ceg³y i betonu. P³yty\nszklane s± przymocowane\ndo ¶cian, daj±c wra¿enie\nogromnego, niebieskiego\nlustra. Pierwszy taki biurowiec\nwybudowano w roku 1961.\n
 COM_01_20
@@ -164,8 +150,6 @@ COM_02_02
 Darmowe miejsca parkingowe\n\nMo¿esz tu zostawiæ swój\nsamochód, je¶li chcesz.\nNikt jednak nie gwarantuje,\n¿e po powrocie zastaniesz\nswoje radio tam, gdzie je\nzostawi³e¶.\n
 COM_02_13
 Biblioteka miejska\n\nW tym budynku mo¿esz\nwypo¿yczyæ ksi±¿ki i\nczasopisma, ale wiêkszo¶æ\nzbiorów biblioteki stanowi±\np³yty z nagraniami do nauki\njêzyków obcych. Mieszkañcy\nmiasta bardzo du¿o podró¿uj±,\nrównie¿ za granicê, wiêc\nbardzo chêtnie je\nwypo¿yczaj±.\n
-COM_02_16
-Biurowiec\n
 COM_02_17
 Siedziba korporacji\n\nW tym budynku ma\nsiedzibê korporacja\nsprzedaj±ca w\nplastikowych butelkach\nwodê pitn±. Wbrew\npowszechnym opiniom nie jest\nto kranówa, woda ta\notrzymywana jest z lodu,\nktóry zalega w okolicy\nbiegunów od tysiêcy, a mo¿e\nnawet milionów lat.\n
 COM_02_19
@@ -228,36 +212,8 @@ Goods_StationBlg
 Magazyny
 Gymnasium
 Gimnazjum\n\nTo w³a¶nie tu dzieci ¶wiata\nSimutrans ucz± siê\npodstaw matematyki, fizyki\ni chemii, aby potem\nkonstruowaæ nowe, szybsze\npojazdy i jeszcze lepiej i\nszybciej transportowaæ\ntowary i ludzi.\n
-IND_00_01
-Dom towarowy\n
-IND_00_02
-Magazyny\n
-IND_00_03
-Zbiornik ropy/benzyny\n
-IND_00_04
-Magazyn wyrobów\nmetalowych\n
-IND_00_05
-Zbiornik wody\n
-IND_00_06
-Hala fabryczna\n
-IND_00_09
-Silosy\n
-IND_00_10
-Ma³a fabryka\n
-IND_00_12
-Stara fabryka maszyn\n
-IND_00_14
-Fabryka kafelków\n
-IND_00_16
-Kominy\n
-IND_00_17
-Kominy\n
-IND_00_18
-Elektrociep³ownia\n
 IND_01_01
 Darmowe miejsca\nparkingowe.\n
-IND_01_03
-Zbiornik gazu\n
 IND_01_04
 Magazyn wyrobów\ngotowych.\n
 IND_01_06
@@ -266,30 +222,12 @@ IND_01_07
 Stacja transformatorowa\n\nPr±d p³yn±cy liniami\nwysokiego napiêcia jest tu\nzamieniany na zwyk³e 230V\ni rozprowadzany po mie¶cie.\nOsobom nieupowa¿nionym\nwstêp wzbroniony!\n
 IND_01_08
 Fabryka nawozów\nazotowych\n
-IND_01_09
-Stacja pomp\n
-IND_01_10
-Fabryka narzêdzi\n
-IND_01_11
-Fabryka czekolady\n
-IND_01_12
-Fabryka cukierków\n
-IND_01_13
-Komin\n
-IND_01_15
-Dwa kominy\n
-IND_02_01
-Skup z³omu\n
 IND_02_02
 Prywatna piekarnia\n\nTa piekarnia ma swoich\nsta³ych klientów. Pieczywo\nmo¿na kupiæ od pi±tej rano\ndo teoretycznie dwunastej\nw po³udnie, ale ju¿ o\ndziewi±tej pó³ki ¶wiec±\npustkami.\n
-IND_02_06
-Hala produkcyjna\n
-IND_02_09
-Przepompownia ¶cieków\n
 LeuchtturmShipStop
 Latarnia morska
 Lighthouse
-Latarnia morska\n
+Latarnia morska\n\n
 MainTerminal1930
 Terminal (1930)
 MHzSmallStation
@@ -299,7 +237,7 @@ Nowoczesny terminal
 MonorailDepot
 Zajezdnia
 OldTownhall
-Stary ratusz\n
+Stary ratusz\n\n
 Patricks_Rock
 £ysa góra\n\nLegenda g³osi, ¿e kiedy¶ raz do\nroku odbywa³ siê na tej\ngórze zlot czarownic. Dzi¶\nnie ma tu ich wcale, lub\nskutecznie ukrywaj± siê w\nt³umie turystów, licznie\nodwiedzaj±cych to miejsce.\n
 PostOffice
@@ -314,40 +252,8 @@ PSHall2TrainStop
 Dworzec kolejowy I
 Raven_Kirche
 Ko¶ció³ ¶w. Krzysztofa\n\n¦wiêty Krzysztof jest uwa¿any\nza opiekuna podró¿nych,\npielgrzymów, kierowców\nprzewodników, flisaków,\nmarynarzy, wo¼niców,\n¿eglarzy, biegaczy i tragarzy.\nNic dziwnego, ¿e w tym\nko¶ciele zawsze jest mnóstwo\nludzi. Na pewno spotkasz tu\nrównie¿ pracowników Twoich\nlinii.\n
-RES_00_01
-Domek ogrodnik\n
-Ju¿ na pierwszy rzut oka
-widaæ, ¿e w tym ma³ym
-domku musi mieszkaæ
-mi³o¶nik ogrodnictwa. Przed
-domkiem kwitn± maki, a na
-rabatce obok wybuja³y
-konopie. Noc± mo¿na dostrzec
-¶wiat³o, które pali siê ci±gle w
-piwnicy - zapewne jakie¶
-bardzo egzotyczne ro¶liny
-wymagaj± do¶wietlania ca³±
-dobê.\nJu¿ na pierwszy rzut ok\nwidaæ, ¿e w tym ma³y\ndomku musi mieszka\nmi³o¶nik ogrodnictwa. Prze\ndomkiem kwitn± maki, a n\nrabatce obok wybuja³\nkonopie. Noc± mo¿na dostrze\n¶wiat³o, które pali siê ci±gle \npiwnicy - zapewne jakie\nbardzo egzotyczne ro¶lin\nwymagaj± do¶wietlania ca³\ndobê\n
-RES_00_06
-Fontanna\n
-RES_00_07
-Kamienica\\n
 RES_00_08
 Dom z gara¿em\n\nPierwotnie gara¿ tego domku by³ w\npiwnicy, ale jego w³a¶ciciel\npewnego dnia kupi³ sobie\ndu¿y wóz kempingowy i\nzapragn±³ trzymaæ go w\ngara¿u. Wybudowa³ wiêc nowy\ngara¿ obok domu zas³aniaj±c\nsiê nim przy okazji od\nw¶cibskich s±siadów.\n
-RES_00_09
-Ma³y park z sadzawk±\n
-RES_00_11
-Du¿a kamienica\n
-RES_00_13
-Dom-bli¼niak z ogrodem\n
-RES_00_16
-Stara kamienica\\n
-RES_01_01
-Willa z ogrodem\\n
-RES_01_02
-Domek kempingowy\n
-RES_01_07
-Du¿y luksusowy dom\n
 Residenz
 Rezydencja Burmistrza\n\nBurmistrz tego miasta jest ju¿\nwystarczaj±co bogaty, aby\nwystawiæ sobie ten ma³y\nreprezentacyjny pa³acyk i\nw nim mieszkaæ oraz\nprzyjmowaæ licznych go¶ci z\nca³ego ¶wiata.\n
 SandStationMHz
@@ -355,17 +261,13 @@ Peron tymczasowy
 ShipDepot
 Stocznia
 ShipDepotEW
-Stocznia\n
+Stocznia
 ShipStop
 Doki pasa¿erskie
 STADIUM2
 Du¿y stadion\n\nTutaj odbywaj± siê wszystkie\nwa¿ne i du¿e imprezy\nwidowiskowe. Równie¿ te o\nrandze miêdzynarodowej.\n
-Tennis_Court
-Kort tenisowy\n
 Terminal1930
 Terminal pasa¿erski (1930)
-Theatre
-Teatr\n
 Tower1930
 Wie¿a kontroli lotów (1930)
 TowerMoistboy
@@ -383,7 +285,7 @@ Stacja kolejowa
 Vorplatz
 Wej¶cie
 Windmill
-Wiatrak\n
+Wiatrak\n\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -404,8 +306,6 @@ yellow_car
 #__________________________________dummy_info___________________________________
 factory_cannery_details
 <title>Fabryki konserw</title>\n<h1>Fabryki konserw</h1>\n<p>Produkty konserwowane w puszkach wprowadzi³ Anglik, Peter Durand. Jego pomys³ kupi³a firma Dinkin, Hall and Gamble. W 1811 za³o¿y³a ona zak³ady puszkuj±ce ¿ywno¶æ i od 1830 puszkowan± ¿ywno¶æ mo¿na by³o zakupiæ w londyñskich sklepach.</p>\n<p>W tej fabryce specjalizuj± siê w przetworach miêsnych (mielonki, konserwy turystyczne, pasztety) oraz rybnych (paprykarze, ¶ledzie w oleju i pomidorach, tuñczyk w oleju lub sosie w³asnym itp.</p>\n
-factory_Cementmill_details
-Cementownia
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -738,8 +638,6 @@ BR39
 Lokomotywa BR 39
 BR45
 Lokomotywa BR 45
-BR45-Tender
-Tender parowozu BR45
 BR85
 Lokomotywa BR 86
 Bretteranhaenger

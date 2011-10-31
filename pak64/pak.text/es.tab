@@ -5,7 +5,7 @@
 #                             Language: es Espanol                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 27.12 2010                           #
+#                           Date Created: 31.10 2011                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                   - Diegote                                  #
@@ -79,7 +79,7 @@ Ayuntamiento
 04_CITY_C
 Ayuntamiento
 10_WOHN
-Pequeña iglesia\n
+Pequeña iglesia\n\n
 1930AirDepot
 Hangar de 1930
 1headquarter
@@ -89,15 +89,15 @@ Hangar de 1930
 3headquarter
 ¡El cuartel general de tu compañía!
 A1_ALTE_KIRCHE
-Iglesia Famosa  Una\nfamosa catedral antigua.\ncon magníficas pinturas.\nTodo el mundo  debería ver\neste fantástico  edificio.\n\n
+Iglesia Famosa\n\nUna famosa catedral antigua.\ncon magníficas pinturas.\nTodo el mundo  debería ver\neste fantástico  edificio.\n\n
 A2_SCHLOSS1
-Neuschwanstein El castillo\ndel rey loco. ¡Merece una\nvisita!\n\n
+Neuschwanstein\n\nEl castillo del rey loco. ¡Merece una\nvisita!\n\n
 A3_BURG1
-Algunas ruinas que hablan\nde tiempos mejores.\nSiempre son una  visita\ninteresante.\n\n
+Algunas ruinas\n\nque hablan de tiempos mejores.\nSiempre son una  visita\ninteresante.\n\n
 A4_SCHLOSS2
-Viejo castillo  con una\nmaravillosa coleccion de\ncuadros. Perfecto para una\nvisita rápida, incluso si\nhace un mal día.\n\n
+Viejo castillo\n\ncon una\nmaravillosa coleccion de\ncuadros. Perfecto para una\nvisita rápida, incluso si\nhace un mal día.\n\n
 A5_STONEHENGE
-Stonehedge Un antiguo\nanillo de piedras. ¡Sienta el\nmisterio deslizandose entre\nsus monolitos!\n\n
+Stonehedge\n\nUn antiguo\nanillo de piedras. ¡Sienta el\nmisterio deslizandose entre\nsus monolitos!\n\n
 A6_DOME
 Catedral Antigua Ha sido el\ncorazón de esta ciudad\ndurante siglos.\n\n
 AirDepot
@@ -105,7 +105,7 @@ Hangar de 1900
 AirportShed1930
 Oficina de correo aéreo
 AirStop
-Puente de embarque\n
+Puente de embarque
 AirTerminal477
 Terminal de aeropuerto (1950)
 Avila_Big_StationBlg
@@ -121,13 +121,13 @@ Terminal moderna grande
 Bulk_StationBlg
 Plataforma de carga de carbon
 BusStop
-Parada de autobús\n
+Parada de autobús
 Car_StationBlg
 bodega de carga
 CarDepot
 Cochera 
 CarStop
-Parada de mercancías\n
+Parada de mercancías
 ChannelStop
 Puerto fluvial
 COM_00_01
@@ -194,8 +194,6 @@ COM_03_19
 Oficinas centrales de una\ngran aseguradora\n\n
 COM_03_20
 Sede de SimuTV\nLa cadena de televisión más vista en internet.\nNo te pierdas el especial\n Grandes Leyendas de Simutrans de los jueves,\n donde repasan la historia del juego a \ntravés de las personas que lo hicieron grande.\nEsta semana, Raven "el magnífico".
-COM_04_13
-Oficinas comerciales
 COM_04_14
 Oficinas de la Seguridad Social
 COM_04_15
@@ -509,17 +507,17 @@ Astillero\n
 ShipStop
 Puerto
 STADIUM2
-Gran estadio\n
+Gran estadio\n\n
 Tennis_Court
-Pistas de tenis\n
+Pistas de tenis\n\n
 Terminal1930
 Terminal de Aeropuerto (1930)
 Theatre
-Teatro Real\n
+Teatro Real\n\n
 Tower1930
 Torre de Control (1930)
 TowerMoistboy
-Torre de Control (MoistBoy)
+Torre de Control
 TrainDepot
 Cochera de trenes
 TrainStop
@@ -535,7 +533,7 @@ Estación de estilo Victoriano
 Vorplatz
 Esplanada
 Windmill
-Antiguo molino de viento\n
+Antiguo molino de viento\n\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -568,8 +566,6 @@ factory_Autohersteller_details
 <title>Fabricación de un automóvil</title>\nEl proceso de fabricación de un coche es largo y costoso. Todo comienza con una serie de bocetos e intercambios de ideas entre los diseñadores e ingenieros industriales. Para ello se ayudan de ordenadores que hacen complejos cálculos de estructuras, formas, materiales y aerodinámica. En la última etapa de diseño se crea prototipo del modelo mediante ordenador, para llevar a cabo las pruebas previas antes de fabricar el modelo a escala. <br><br>\nUna vez se tiene el coche <i>concepto</i>, se procede a introducir los cambios necesarios en la cadena de producción para adaptarla a los requerimientos del nuevo modelo. Cuando todo está listo, comienza la producción del automóvil, donde cada unidad recorre la cadena de ensamblaje hasta llegar al la última etapa, donde se perfuma con la famosa fragancia <i>olor a coche nuevo nº 5</i>, que tanto gusta a los consumidores.\n
 factory_Buchgrosshandel_details
 <title>Casa del Libro</title>\nEsta tienda tiene todo lo que ha sido editado, desde la enciclopedia de 271 vólumenes sobre el diseño de redes de transporte, pasando por la guía de teléfonos de Internet e incluso hasta un rincón del manga; aquí hay hasta un manual de instalación de Simutrans para patosos...
-factory_Cementmill_details
-Fábrica de cemento
 factory_ChemicalPlant_details
 <title>Planta Química</title>\nEsta planta de procesado industrial manufactura productos químicos, a gran escala. El objetivo es crear nuevas materias mediante procesos químicos o biológicos. La instalaciones se dividen en unidades, las cuales tienen distintas funciones y aplican diferentes procesos, y se comunican mediante complejos sistemas de transporte de fluidos como cañerías o conductos.
 factory_Concretefactory_details
@@ -893,91 +889,91 @@ Semáforos
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Ahorn-1
-Gran encina\n\n
+Gran encina\n
 Ahorn-2
-Encina\n\n
+Encina\n
 Ahorn-Gruppe
-Arboleda\n\n
+Arboleda\n
 Birke-1
-Abedul\n\n
+Abedul\n
 Buche-1
-Platanero\n\n
+Platanero\n
 Busch_2
-arbusto\n\n
+arbusto\n
 Kiefer_1
-Sequoya roja\n\n
+Sequoya roja\n
 Kiefer_2
-Acacia común\n\n
+Acacia común\n
 Kiefer_3
-Acacia\n\n
+Acacia\n
 Kiefer_4
-Pino piñonero\n\n
+Pino piñonero\n
 Kiefer_5
-Sequoya\n\n
+Sequoya\n
 Latschenkiefer
-Pino de montaña\n\n
+Pino de montaña\n
 Palmtree1
-Palmera\n\n
+Palmera\n
 Palmtree2
-Palmera tropical\n\n
+Palmera tropical\n
 Palmtree3
-Palmera baoba\n\n
+Palmera baoba\n
 Palmtree4
-Palmera cocotera\n\n
+Palmera cocotera\n
 Palmtree5
-Palmera parasol\n\n
+Palmera parasol\n
 Palmtree6
-Palmera de desierto\n\n
+Palmera de desierto\n
 Palmtree7
-Palmera ecuatorial\n\n
+Palmera ecuatorial\n
 Pappel-1
-Alamo\n\n
+Alamo\n
 Pappel-2
-Alamo joven\n\n
+Alamo joven\n
 Shunter-tree2
-Retama\n\n
+Retama\n
 Tanne_1
-Frondoso Fir\n\n
+Frondoso Fir\n
 Tanne_2
-Pequeño Fir\n\n
+Pequeño Fir\n
 Tanne_3
-Viejo Fir\n\n
+Viejo Fir\n
 Tanne_4
-Gran Fir\n\n
+Gran Fir\n
 Tanne_5
-Abeto Fir\n\n
+Abeto Fir\n
 Tanne_6
-Fir\n\n
+Fir\n
 Tree1
 Roble\n
 Tree3
 Abedul\n
 Tree4
-Pino negro\n\n
+Pino negro\n
 Tree5
-Eucalipto\n\n
+Eucalipto\n
 Tree6
-Abeto picea Picea abies \nConífera estrecha. Alcanza\nuna altura de 35 to 65m y\nun diámetro principal de 2m,\ny vive hasta 1000 años. Su\nhábitat natural es el norte y\nel este de Europa, así como\nlas montañas de Europa\nCentral. Por repoblación\nartificial se encuentra en\nzonas más bajas.  Uso:\nconstrucción interior y\nexterior, estibación,\nconstrucción de casetas,\naglomerado, cajas de\nresonancia para instrumentos\nmusicales, industrias de la\ncelulosa y el papel.\n\n
+Abeto picea Picea abies \n\nConífera estrecha. Alcanza\nuna altura de 35 to 65m y\nun diámetro principal de 2m,\ny vive hasta 1000 años. Su\nhábitat natural es el norte y\nel este de Europa, así como\nlas montañas de Europa\nCentral. Por repoblación\nartificial se encuentra en\nzonas más bajas.  Uso:\nconstrucción interior y\nexterior, estibación,\nconstrucción de casetas,\naglomerado, cajas de\nresonancia para instrumentos\nmusicales, industrias de la\ncelulosa y el papel.\n
 tropictree1
-Arbol tropical I\n\n
+Arbol tropical I\n
 tropictree2
-Sauce tropical \n\n
+Sauce tropical \n
 tropictree3
-Manglar tropical\n\n
+Manglar tropical\n
 tropictree4
-Abedul tropical\n\n
+Abedul tropical\n
 tropictree5
-Platanero\n\n
+Platanero\n
 tropictree6
-Sauce espinoso\n\n
+Sauce espinoso\n
 tropictree7
-Conífera tropical\n\n
+Conífera tropical\n
 tropictree8
-Baoba\n\n
+Baoba\n
 tropictree9
-Acacia tropical\n\n
+Acacia tropical\n
 Willow
-sauce\n\n
+sauce\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel
@@ -1068,8 +1064,6 @@ BR39
 BR 39
 BR45
 BR 45
-BR45-Tender
-BR 45 Tender
 Br614back
 BR 614 (trasero)
 Br614car
@@ -1444,8 +1438,6 @@ Viggen
 Crucero Viggen
 VolvoFH12
 Volvo FH 12 (cabeza tractora)
-waste wagon
-Vagón contenedor de basura
 X2000back
 X2000 (trasero)
 X2000car

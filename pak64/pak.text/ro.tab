@@ -5,10 +5,12 @@
 #                              Language: ro Romana                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                            Date Created: 9.09 2010                           #
+#                           Date Created: 31.10 2011                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                   - CDAndrei                                 #
+#                                    note:                                     #
+#                                    - Dwachs                                  #
 #                                    note:                                     #
 #                              Frank Penz - FrankP                             #
 #                                    note:                                     #
@@ -25,31 +27,31 @@ Pod feroviar din beton
 ClassicRoad
 Pod din beton
 SteelRail
-Pod feroviar din o?el
+Pod feroviar din oþel
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 01_CITY
-Prim?rie
+\nPrimãrie\n
 A1_ALTE_KIRCHE
-Biserica veche\n
+Biserica veche\n\n
 A2_SCHLOSS1
-Castelul Regelui Nebun\nAtrac?ie turistic?. Merit?\nvizitat.\n
+Castelul Regelui Nebun\n\nAtracþie turisticã.\nMeritã vizitat.\n
 A3_BURG1
-Mândria ora?ului :-)\n
+\nMândria oraºului :-)\n
 A4_SCHLOSS2
-Izvorul Palatului\n
+\nIzvorul Palatului\n
 A5_STONEHENGE
-Menhir\n
+Menhir\n\n
 A6_DOME
-Cathedral? gothic?\n
+Cathedralã gothicã\n\n
 COM_00_01
 Mic ABC\n
 COM_00_02
-Benzinãrie independentã\nEste independentã de marile\ncompanii de transport\n(cum ar fi a ta), dar nu e nevoie\nsã o distrugi. Nu î?i va fura\nafacerea.\n\n
+Benzin?rie independent?\nEste independent? de marile\ncompanii de transport\n(cum ar fi a ta), dar nu e nevoie\ns? o distrugi. Nu î?i va fura\nafacerea.\n\n
 COM_00_03
-Micul atelier de repara?ii auto\nvrea sa iasã din aceastã afacere\ndubioasã si sã deschidã un showroom.\nDar lipsa banilor\n, avizelor ?i \na unui loc mai bun îl impiedica.\n\n
+Micul atelier de repara?ii auto\nvrea sa ias? din aceast? afacere\ndubioas? si s? deschid? un showroom.\nDar lipsa banilor\n, avizelor ?i \na unui loc mai bun îl impiedica.\n\n
 COM_00_05
-Bancã din viitor.\nE numitã a?a pentru ca\nnu trebuie sa intri în ea,\ndoar î?i sco?i portofelul\n?i îl arã?i automatului\ncare se ocupã de tranzac?ie.
+Banc? din viitor.\nE numit? a?a pentru ca\nnu trebuie sa intri în ea,\ndoar î?i sco?i portofelul\n?i îl ar??i automatului\ncare se ocup? de tranzac?ie.
 COM_00_06
 Cafenea\n
 COM_00_10
@@ -63,21 +65,21 @@ Centru Zeppelin\n
 COM_01_09
 Cinema\n
 DenkFlor
-Dedicat pt. Flor WF Ultd.\nWautersn, inginerul care a\nproiectat multe din\nvechicolele folosite în\nSimutrans.\n
+\nDedicat pt. Flor WF Ultd.\nWautersn, inginerul\ncare a proiectat multe\ndin vechicolele folosite\nîn Simutrans.\n
 DenkOwen
-Acest monument este\ndedicat lui Owen Rudge,\nspecialis în finan?e.\n
+\nAcest monument este\ndedicat lui Owen Rudge,\nspecialis în finanþe.\n
 DenkSeth
-Memorial ridicat pt. Seth C.\nTriggs.\n
+\nMemorial ridicat pt.\nSeth C. Triggs.\n
 DenkTomas
-Dedicat pt. Tomas Kubes\ngazda distribu?iei pak128.\n
+\nDedicat pt. Tomas Kubes\ngazda distribuþiei pak128.\n
 DenkTrikky
-Statuie ridicat? pt. Trikky'\nRick McGreal.\n
+\nStatuie ridicatã pt.\nTrikky' Rick McGreal.\n
 DenkVM
-Dedicat pt. Manfred VT\nVienna'  Tomaschitz.\n
+\nDedicat pt. Manfred VT Vienna' \nTomaschitz.\n
 DenkVolker
-Aceast? cl?dire a fost\nconstruit? de c?tre Volker\nMeyer.\n
+\nAceastã clãdire a\nfost construitã de cãtre\nVolker Meyer.\n
 FreightTrainStop
-Sta?ie marfar
+Staþie marfar
 IND_00_01
 Magazin depozit\n
 IND_00_02
@@ -133,73 +135,95 @@ Vile luxoase\n
 RES_01_10
 Cas? modern?\n
 RUIN_0
-Ruine din evul mediu\n
+Ruine din evul mediu
 STADIUM2
-Stadion pt. rugbi\n
+\nStadion pt. rugbi\n
 Tennis_Court
-Aren? tenis\n
+Arenã tenis
 Theatre
-Teatru\n
+Teatru
 Windmill
-Moar? de vânt\n
-#____________________________________citycar____________________________________
-#____________________________________citycar____________________________________
+Moarã de vânt
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
-factory_Cementmill_details
-Uzin? ciment
+factory_Kohlegrube_details
+<title>Descriere minã de cãrbune<\title><h1>Minã de cãrnune<\h1><p>Cãrbunele este materialul prim care este folosit în fabricarea oþelului ºi sticlei.<\p>
+factory_Nutzwald_details
+<title>Descriere pepinierã<\title><h1>Pepinierã<\h1><p>Se cresc puieþi care la maturitate sunt tãiaþi, dar dupã fiecare copac tãiat se planteazã altu.<\p>
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
-Rafin?rie
+Rafinãrie
 Autohaus
 Salon auto
 Autohersteller
-Uzin? de automobile
+Uzinã de automobile
+bakery
+Brutãrie
+brewery
+Fabricã de înbuteliat
 Buchgrosshandel
-Depozit en-gros c?r?i
+Depozit en-gros cãrþi
+cannery
+Fabricã de conserve
 Cementmill
-Uzin? ciment
+Uzinã ciment
 CHEMIST
-Fabric? de chimicale
+Fabricã de chimicale
 Concretefactory
-Uzin? beton
+Uzinã beton
+cow_farm
+Fermã de vaci
+dairy
+Lãptãrie
 Druckerei
 Tipografie
 Erzbergwerk
-Min? minereu de fier
+Minã minereu de fier
+fish_pond
+Heleºteu
+fish_swarm
+Roi de peºti
+food_processing_plant
+Fabricã de alimente
+grain_farm
+Câmpie de grâne
+grain_mill
+Moarã
 Kohlegrube
-Min? c?rbune
+Minã cãrbune
 Kohlekraftwerk
-Central? termic?
+Centralã termicã
 Materialswholesale
 Curte de fier
 Moebelfabrik
-Fabric? de mobil?
+Fabricã de mobilã
 Moebelhaus
 Centru de magazine
 Nutzwald
-Pepinier?
+Pepinierã
 Oelbohrinsel
-Platform? petrol
+Platformã petrol
 Oelfeld
-Câmpie petrolifer?
+Câmpie petroliferã
 Papierfabrik
-Fabric? de hârtie
+Fabricã de hârtie
 Pharmaceutics
 Fabrica de produse farmaceutice
 Raffinerie
-Rafin?rie
+Rafinãrie
 Saegewerk
 Gater
 Sandquarry
-Min? nisip
+Minã nisip
 Stahlwerk
-Uzin? metalurgic?
+Uzinã metalurgicã
 Stonequarry
-Min? piatr?
+Minã piatrã
+supermarket
+Supermarket
 TANKE
-Benzin?rie
+Benzinãrie
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
@@ -207,9 +231,9 @@ automobile
 beer
 bere
 Bretter
-scândur?
+scândurã
 Buecher
-c?r?i
+cãrþi
 canned_food
 conserve
 Cement
@@ -220,6 +244,10 @@ Concrete
 beton
 Eisenerz
 fier
+fish
+peºte
+flour
+fãinã
 food
 alimente
 Gasoline
@@ -229,7 +257,7 @@ grâne
 Holz
 bustean
 Kohle
-c?rbune
+cãrbune
 meat
 carne
 Medicine
@@ -237,7 +265,7 @@ Medicamente
 milk
 lapte
 Moebel
-mobil?
+mobilã
 None
 nimic
 Oel
@@ -246,34 +274,30 @@ Papier
 hârtie
 Plastik
 material plast.
+Post
+postã
 PrintersInk
 Vopsele tipografice
 Sand
 nisip
 Stahl
-o?el
+oþel
 Stone
-piatr?
-#__________________________________ground_obj___________________________________
-#__________________________________ground_obj___________________________________
-#__________________________________pedestrian___________________________________
-#__________________________________pedestrian___________________________________
-#_________________________________program_text__________________________________
-#_________________________________program_text__________________________________
-#___________________________________roadsign____________________________________
-#___________________________________roadsign____________________________________
+piatrã
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Latschenkiefer
 Pin\n
+Tree1
+Puiet\n
+Tree3
+Fag\n
 Tree4
 Ulm\n
 Tree5
 Pin\n
 Tree6
 Brad\n
-#____________________________________tunnel_____________________________________
-#____________________________________tunnel_____________________________________
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -299,113 +323,121 @@ Locomotiva Bennhardt B-185 "Santa"
 3Diesellokomotive
 Locomotiva Canonball-WF 365
 Autotransportanhaenger
-Remorc? transport auto
+Remorcã transport auto
 Autotransporter
-Ma?in? de transport auto
+Maºinã de transport auto
 Autotransportwagen
 Vagon pt. automobile tip Canonball-B
 Bretteranhaenger
-Remorc? pt. transport scândur?
+Remorcã pt. transport scândurã
 Brettertransporter
-Ma?in? pt. transport scândur?
+Maºinã pt. transport scândurã
 Bretterwagen
 Vagon pt. scânduri tip B
 Buchanhaenger
-Remorc? pt. transport c?r?i
+Remorcã pt. transport cãrþi
 Buchtransporter
-Ma?in? pt. transport c?r?i
+Maºinã pt. transport cãrþi
 Buchwagen
-Vagon pt. transport c?r?i
+Vagon pt. transport cãrþi
 Bus
 Autobus
+Cooling_Truck
+Maºinã frigorificã
 Cooling_Waggon
 Vagon frigorific
 Erzanhaenger
-Remorc? pt. transport minereu de fier
+Remorcã pt. transport minereu de fier
 Erztransporter
-Ma?in? pt. transport minereu de fier
+Maºinã pt. transport minereu de fier
 Erzwagen
-Vagon material prim tip PH-B (nisip/c?rbune/piatr?/fier)
+Vagon material prim tip PH-B (nisip/cãrbune/piatrã/fier)
 FastFerry
-Feribot cu pern? de aer
+Feribot cu pernã de aer
 H-Trans-Tiger-Car
 Automotor H-Trans Tigress (centru)
 H-Trans-Tiger-Mail-Car
-Automotor po?t? H-Trans Tigress (centru)
+Automotor poºtã H-Trans Tigress (centru)
 H-Trans-Tigress-II-Back
 Automotor H-Trans Tigress II (spate)
 H-Trans-Tigress-II-Front
 Automotor H-Trans Tigress II (front)
 Holzanhaenger
-Remorc? pt. transport bu?teni
+Remorcã pt. transport buºteni
 Holztransporter
-Ma?in? pt. transport bu?teni
+Maºinã pt. transport buºteni
 Holzwagen
-Vagon pt. bu?teni tip C
+Vagon pt. buºteni tip C
 Horsebookscariage
-C?ru?? pt. transport c?r?i
+Cãruþã pt. transport cãrþi
 Horsepapercariage
-C?ru?? pt. transport hârtie
+Cãruþã pt. transport hârtie
 Horsepassengerscariage
-C?ru?? pt. transport persoane
+Cãruþã pt. transport persoane
 Horses
 Cai
 Horsewoodcariage
-C?ru?? pt. transport busteni
+Cãruþã pt. transport busteni
 HVPosttransporter
-Ma?in? ot. transport po?t?
+Maºinã ot. transport poºtã
 Kohleanhaenger
-Remorc? pt. transport c?rbune
+Remorcã pt. transport cãrbune
 Kohletransporter
-Ma?in? pt. transport c?rbune
+Maºinã pt. transport cãrbune
 Kohlewagen
-Vagon material prim tip Canonball-A (nisip/c?rbune/piatr?/fi
+Vagon material prim tip Canonball-A (nisip/cãrbune/piatrã/fi
 Kunststofanhaenger
-Remorc? pt. transport material plastic
+Remorcã pt. transport material plastic
 Kunststofftransporter
-Ma?in? pt. transport material plastic
+Maºinã pt. transport material plastic
+Milk_Truck
+Camion pt. lapte tip PMNV
+Milk_Waggon
+Vagon cisternã pt. lapte tip BB-A
 Moebelschiff
-Tanc?r pt. transport mobil?
+Tancãr pt. transport mobilã
 Moebelwagen
-Vagon pt. transport mobil?
+Vagon pt. transport mobilã
 Oelanhaenger
-Remorc? pt. transport carburan?i
+Remorcã pt. transport carburanþi
 Oelwagen
-Vagon cistern? pt. petrol/carburan?i tip Shorty-MAVA
+Vagon cisternã pt. petrol/carburanþi tip Shorty-MAVA
 Papieranhaenger
-Remorc? pt. transport hârtie
+Remorcã pt. transport hârtie
 Papiertransporter
-Ma?in? pt. transport hârtie
+Maºinã pt. transport hârtie
 Papierwagen
 Vagon pt. hârtie tip PMNV Bed
 Passagierwagen
 Vagon pasageri tip Canonball BTx 60
 Postschiff
-Nav? po?t?
+Navã poºtã
 Posttransporter
-Remorc? po?t?
+Remorcã poºtã
 Postwagen
-Vagon po?t? tip Canonball
+Vagon poºtã tip Canonball
 Sandanhaenger
-Remorc? pt. transport material prim(nispi/c?rbune/piatr?/fie
+Remorcã pt. transport material prim(nispi/cãrbune/piatrã/fie
 Sandtransporter
-Ma?in? pt. transport material prim(nispi/c?rbune/piatr?/fier
+Maºinã pt. transport material prim(nispi/cãrbune/piatrã/fier
+Serj-Mini
+Maxi-Taxi
 SlowFerry
 Feribot H-Trans
 Stahlanhaenger
-Remorc? pt. transport o?el
+Remorcã pt. transport oþel
 Stahltransporter
-Ma?in? pt. transport o?el
+Maºinã pt. transport oþel
 Stahlwagen
-Vagon o?el tip Canonball Bed
+Vagon oþel tip Canonball Bed
 Staubkesselwagen
 Vagon materiale plastice
 Stoneanhaenger
-Remorc? pt. transport piatr?
+Remorcã pt. transport piatrã
 Stonetransporter
-Ma?in? pt. transport piatr?
+Maºinã pt. transport piatrã
 Tanklastzug
-Ma?in? pt. transport carburan?i
+Maºinã pt. transport carburanþi
 TPBeiwagen
 Vagon transport persoane tip TPI VT98
 TPPassagierwagen
@@ -417,20 +449,18 @@ Locomotiva TPI VT98
 asphalt_road
 Drum asfaltat
 city_road
-Drum or???nesc
+Drum orãºãnesc
 cobblestone_road
 Drum pavat cu calup
 concrete_sleeper_track
-Linie ferat? cu travers? din beton
+Linie feratã cu traversã din beton
 dirt_road
-Drum de ?ar?
+Drum de þarã
 gavel_road
-Drum din prundi?
+Drum din prundiº
 mip_cobblestone_road
 Drum pavat cu calup tip MIP
 steel_sleeper_track
-Linie ferat? cu travers? din o?el
+Linie feratã cu traversã din oþel
 wooden_sleeper_track
-Linie ferat? cu travers? din lemn
-#__________________________________way-object___________________________________
-#__________________________________way-object___________________________________
+Linie feratã cu traversã din lemn
