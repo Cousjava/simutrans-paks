@@ -1,0 +1,26 @@
+#
+# Sidewalks for Simutrans pak48.Excentrique
+#
+# Hj. Malthaner <h_malthaner@users.sourceforge.net>
+#
+# created:  ???
+# update:   2010/11/04
+#
+#-----------------------------------------------------
+Obj=misc
+# Special name, must not be changed.
+Name=Sidewalk
+Image[0]=hjm-sidewalk.0.4
+Image[1]=-
+Image[2]=-
+Image[3]=hjm-sidewalk.0.2
+Image[4]=-
+Image[5]=-
+Image[6]=hjm-sidewalk.0.3
+Image[7]=-
+Image[8]=-
+Image[9]=hjm-sidewalk.0.1
+Image[10]=-
+Image[11]=-
+Image[12]=hjm-sidewalk.0.0
+
