@@ -1,0 +1,38 @@
+#
+# forestrules.tab
+#
+# Forest configuration for Simutrans pak48.Excentrique
+#
+# Author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
+# Creation:   ???
+# Update: ???
+#
+
+# Number of trees on square 2 - minimal usable, 3 good, 4 very nice looking
+forest_no_of_trees_per_square = 1
+
+# Base forest size - minimal size of forest - map independent
+forest_base_size = 36
+
+# Map size divisor - smaller it is the larger are individual forests
+forest_map_size_divisor = 38
+
+# Forest count divisor - smaller it is, the more forest are generated
+forest_count_divisor = 20
+
+# Forest boundary sharpenss: 0 - perfectly sharp boundaries, 20 - very blurred
+forest_boundary_blur = 20
+
+# Forest boundary thickness  - determines how thick will the boundary line be
+forest_boundary_thickness = 7
+
+# Determins how dense are spare trees going to be planted (works inversly)
+forest_inverse_spare_tree_density = 90
+
+# climate with trees entirely (1: water, 2:desert, 4:tropic, 8:mediterran, 16:temperate, 32:tundra, 64:rocky, 128:arctic) 
+# zero (default) means no climate with at least one tree per tile
+tree_climates = 0
+
+# climate with trees entirely (1: water, 2:desert, 4:tropic, 8:mediterran, 16:temperate, 32:tundra, 64:rocky, 128:arctic) 
+# climates with no trees at all (desert and arctic at the moment) 
+no_tree_climates = 0

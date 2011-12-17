@@ -1,0 +1,114 @@
+# Simutrans pak48.Excentrique texts
+#
+# --- Hajo: Testing overrides ---
+# --- Hajo: Testing overrides ---
+Fahrtziel
+To: 
+return ticket
+Way back
+promote to line
+Create line
+month wait time
+Max. waiting time:
+Climate Control
+Climate Settings
+Water level
+Water level:
+Mountain height
+Mountain height:
+Map roughness
+Map roughness:
+Summer snowline
+Summer snowline:
+Winter snowline
+Winter snowline:
+desert
+Desert climate:
+tropic
+Tropical climate:
+mediterran
+Mediterran climate:
+temperate
+Temperate climate:
+tundra
+Tundra:
+rocky
+Alpine climate:
+no tree
+No trees on map
+cost for removal
+Cost for removal: 
+isometric map
+Isometric map
+underground mode
+Underground view
+Neue Welt
+Create a New Map
+3WORLD_CHOOSE
+Size: %d MB
+5WORLD_CHOOSE
+Number of cities:
+Median Citizen per town
+Average city size:
+Intercity road len:
+Intercity road length:
+6WORLD_CHOOSE
+Traffic density:
+Land industries
+Industry chains:
+Percent Electricity
+Percent electricity:
+Tourist attractions
+Tourist attractions:
+Use timeline start year
+Use chronology from year:
+8WORLD_CHOOSE
+Darken map at night
+hide city building
+Hide city buildings
+hide all building
+Hide all buildings
+transparent station coverage
+Transparent station coverage
+show station names
+Show station names
+show waiting bars
+Show waiting bars
+hide transparent
+Make hidden trees transparent
+minimum length of rivers
+Min. length of rivers
+maximum length of rivers
+Max. length of rivers
+#____________________________________bridge_____________________________________
+#____________________________________bridge_____________________________________
+#___________________________________building____________________________________
+#___________________________________building____________________________________
+#____________________________________citycar____________________________________
+#____________________________________citycar____________________________________
+#___________________________________crossing____________________________________
+#___________________________________crossing____________________________________
+#__________________________________factory_info___________________________________
+#__________________________________factory_info___________________________________
+#____________________________________factory____________________________________
+#____________________________________factory____________________________________
+#_____________________________________good______________________________________
+#_____________________________________good______________________________________
+#_____________________________________misc______________________________________
+#_____________________________________misc______________________________________
+#__________________________________pedestrian___________________________________
+#__________________________________pedestrian___________________________________
+#_________________________________program_text__________________________________
+#_________________________________program_text__________________________________
+#___________________________________roadsign____________________________________
+#___________________________________roadsign____________________________________
+#_____________________________________tree______________________________________
+#_____________________________________tree______________________________________
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
+#____________________________________vehicle____________________________________
+#____________________________________vehicle____________________________________
+#______________________________________way______________________________________
+#______________________________________way______________________________________
+hjm_powertrack
+Power trail

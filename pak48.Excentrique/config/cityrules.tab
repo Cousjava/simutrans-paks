@@ -1,0 +1,153 @@
+# cityrules.tab
+#
+# City building rules (new fashion)
+#
+# author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
+# date:   25-Nov-03
+# update: 22-Aug-04
+# update: 5-Jan-05
+
+
+# how far cities should be minimum apart (default 16)
+minimum_city_distance = 32
+
+# if the area covered by buldings is less than this, the city borders will not increase => more compact cities,
+# not fading out along a single street (default: 25) 
+minimum_building_desity = 25
+
+# chance for renovation versus new building (bigger number => less sprawling)
+renovation_percentage = 12
+
+# at which number of inhabitants we need a new market?
+industry_increase_every = 2000
+
+#
+# relative affinities for certain building types which can lead to clustering of certain building types
+#
+
+# avoid building next to industry
+res_start_score = 0
+res_near_ind = -8
+res_near_com = 4
+res_near_res = 8
+
+# everywhere is good, next to com best
+com_start_score = -10
+com_near_ind = 4
+com_near_com = 8
+com_near_res = 4
+
+# next to res means expensive filters and no truck after 10 pm => avoid this ...
+ind_start_score = 8
+ind_near_ind = 9
+ind_near_com = 0
+ind_near_res = -8
+
+
+#
+# now the actual building rules. They can be up to 7x7.
+# allowed sizes are 3x3 5x5 and 7x7!
+#
+
+#
+# Symbols in rules:
+# S = must not be road
+# s = must be road
+# n = must be bare land
+# H = must not be house
+# h = must be house
+# . = anything matches
+# SPACE = next row
+#
+# Each row must have EXACTLY the same number of members!
+#
+
+
+# Haus an Strassenecke.
+house_1 = ... .ns .sH
+house_1.chance = -8
+
+house_2 = ... hnh ...
+house_2.chance = 8
+
+# Haus in mitte 3er Zelle
+house_3 = ..... ..... ..nhs ..h.. ..s..
+house_3.chance = 8
+
+house_4 = ..... ..... ..nhs. ..s.. .....
+house_4.chance = 8
+
+house_5 = SSSSS SSSSS nnnnn sssss .....
+house_5.chance = 8
+
+
+
+# Strassenende weiterbauen.
+road_1 = ....... ...H... ..SHS.. .SSnSS. ...s... ...s... .......
+road_1.chance = 8
+
+# Strassenende weiterbauen.
+road_2 = ....... ...H... ...H... SSSnSSS ...s... ...s... .......
+road_2.chance = 8
+
+# Abzweigen oder weiterbauen.
+road_3 = ....... ...H... ...H... SSSnSSS ...s... ....... .......
+road_3.chance = 8
+
+# Verbinden, gerade.
+road_4 = SsS .n. .s.
+road_4.chance = 8
+
+# 2er Zelle bilden.
+road_5 = ....... ....... ....... shhnh.. ...s... ....... .......
+road_5.chance = 8
+
+# 2er Zelle bilden.
+road_6 = ....... ....... ....... ..hnhhs ...s... ....... .......
+road_6.chance = 8
+
+# Ecke schliessen.
+road_7 = ... sn. Ss.
+road_7.chance = 8
+
+# Verbinden, gerade.
+road_8 = ...s... ....... ...S... .SSnSS. ...s... ....... .......
+road_8.chance = 8
+
+# Verbinden, schräg.
+road_9 = ....s.. ....... ...S... .SSnSS. ...s... ....... .......
+road_9.chance = 8
+
+# Verbinden, schräg.
+road_10 = ..s.... ....... ...S... .SSnSS. ...s... ....... .......
+road_10.chance = 8
+
+# Verbinden, schräg.
+road_11 = SSs SnS .s.
+road_11.chance = 8
+
+# Verbinden, schräg.
+road_12 = sSS SnS .s.
+road_12.chance = 8
+
+# Strassenende weiterbauen.
+road_13 = ....... ...H... ...H... SSSnSSS ...s... ...s... .......
+road_13.chance = 8
+
+# Strassenende weiterbauen.
+road_14 = ....... ...H... ...H... SSSnSSS ...s... ...s... .......
+road_14.chance = -8
+
+# Strassenende weiterbauen.
+road_15 = ....... ...H... ...H... SSSnSSS ...s... ...s... .......
+road_15.chance = 7
+
+# Strassenende weiterbauen.
+road_16 = ....... ...H... ...H... SSSnSSS ...s... ...s... .......
+road_16.chance = -7
+
+# Strassenende weiterbauen.
+road_17 = ....... ...H... ...H... SSSnSSS ...s... ...s... .......
+road_17.chance = 6
+
+
