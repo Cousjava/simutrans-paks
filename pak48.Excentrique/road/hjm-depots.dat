@@ -1,0 +1,37 @@
+#
+# Road depots for Simutrans pak48.Excentrique
+#
+# Author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
+#
+# Created:  ???
+# Update:   2010/11/04
+#
+#
+# climates: desert, tropic, mediterran, temperate, tundra, rocky
+# BackImage[Layout][x Position][y Position][Height][Phase]
+# FrontImage[Layout][x Position][y Position][Height][Phase]
+#
+Obj=building
+Name=car-depot
+type=depot
+waytype=road
+# must be 1*1
+level=1
+intro_year=1
+Dims=1,1,4
+NoInfo=1
+intro_year=1929
+intro_month=1
+retire_year=9999
+retire_month=1
+icon=> hjm-coildepot_1.1.1
+cursor=hjm-coildepot_1.1.0
+FrontImage[0][0][0][0][0][0]=hjm-coildepot_1.0.0
+FrontImage[1][0][0][0][0][0]=hjm-coildepot_1.0.1
+FrontImage[2][0][0][0][0][0]=hjm-coildepot_1.0.0
+FrontImage[3][0][0][0][0][0]=hjm-coildepot_1.0.1
+FrontImage[0][0][0][0][0][1]=hjm-coildepot_1.0.0
+FrontImage[1][0][0][0][0][1]=hjm-coildepot_1.0.1
+FrontImage[2][0][0][0][0][1]=hjm-coildepot_1.0.0
+FrontImage[3][0][0][0][0][1]=hjm-coildepot_1.0.1
+--------------------
