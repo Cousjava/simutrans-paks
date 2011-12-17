@@ -1,0 +1,17 @@
+#
+# Construction site for Simutrans pak48.Excentrique
+#
+# author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
+#
+# created:  ???
+# update:   2010/???
+#
+Obj=misc
+Name=Construction
+Image[0]=hjm-construction-site.0.0
+Image[1]=hjm-construction-site.0.1
+Image[2]=hjm-construction-site.0.2
+Image[3]=hjm-construction-site.0.3
+Image[4]=hjm-construction-site.0.4
+Image[5]=hjm-construction-site.0.5
+Image[6]=hjm-construction-site.0.6

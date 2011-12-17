@@ -1,0 +1,20 @@
+#
+# Tool symbols for Simutrans pak48.Excentrique
+#
+# Author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
+#
+# Created:  ???
+# Update:   2010/???
+#
+Obj=cursor
+name=Builder
+Image[0]=hjm-tool-symbols.0.0
+--
+Obj=cursor
+Name=Marked
+Image[0]=hjm-tool-symbols.0.1
+--
+Obj=cursor
+Name=Mouse
+Image[0]=> hjm-tool-symbols.0.2
+--
