@@ -1,0 +1,22 @@
+#
+# Water tiles/textures for Simutrans pak48.Excentrique
+#
+# author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
+#
+# created:  ???
+# update:   2010/10/29
+#
+Obj=ground
+Name=Water
+Image[0][0]=hjm-water.0.0
+Image[1][0]=hjm-water.0.0
+Image[2][0]=hjm-water.0.1
+Image[3][0]=hjm-water.0.2
+Image[4][0]=hjm-water.0.3
+Image[5][0]=hjm-water.0.4
+--------------------
+Obj=ground
+Name=Outside
+# hangtyp * animation
+Image[0][0]=hjm-starpatch.0.0
+--------------------
