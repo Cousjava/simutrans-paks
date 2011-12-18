@@ -1,6 +1,10 @@
 del ..\simutrans\pak48.Excentrique\*.pak
 
 
+cd big_logo
+call create.bat
+move *.pak ..\..\simutrans\pak48.Excentrique
+cd ..
 cd goods
 call create.bat
 move *.pak ..\..\simutrans\pak48.Excentrique

@@ -1,0 +1,14 @@
+#
+# Big logo for Simutrans pak48.Excentrique
+#
+# author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
+#
+# created:  ???
+# update:   2011/12/18
+#
+Obj=symbol
+name=BigLogo
+Image[0]=> big-logo.0.0
+Image[1]=> big-logo.0.1
+Image[2]=> big-logo.1.0
+Image[3]=> big-logo.1.1

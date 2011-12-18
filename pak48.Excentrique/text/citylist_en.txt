@@ -7,7 +7,7 @@ Smallfire
 Arclight
 Flashton
 Tsingpan
-Jellyville
+Villyjell
 Sprite-Over-Hill
 Duskglow
 Sunspark
@@ -36,3 +36,8 @@ Topshine
 Sideflash
 Elmo's Fire
 Farlight
+Blinkywink
+Jellybeams
+Sugarshapes
+Mountainfire
+Neverdark
