@@ -9,7 +9,7 @@
 # BackImage[Layout][x Position][y Position][Height][Phase][Season]
 #
 Obj=building
-Name=car-stop
+Name=hjm-car-stop
 type=stop
 waytype=road
 # must be 1*1

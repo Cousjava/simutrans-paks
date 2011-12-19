@@ -1,0 +1,45 @@
+
+cd big_logo
+del err.txt
+cd ..
+cd goods
+del err.txt
+cd ..
+cd ground
+del err.txt
+cd ..
+cd powerline
+del err.txt
+cd ..
+cd road
+del err.txt
+cd ..
+cd road_vehicles
+del err.txt
+cd ..
+cd rail
+del err.txt
+cd ..
+cd tree
+del err.txt
+cd ..
+cd decoration
+del err.txt
+cd ..
+cd city
+del err.txt
+cd ..
+cd pedestrians
+del err.txt
+cd ..
+cd misc
+del err.txt
+cd ..
+cd skin
+del err.txt
+cd ..
+cd menus
+del err.txt
+cd ..
+
+pause

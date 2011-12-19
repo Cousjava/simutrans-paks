@@ -12,7 +12,7 @@
 # FrontImage[Layout][x Position][y Position][Height][Phase]
 #
 Obj=building
-Name=car-depot
+Name=hjm-car-depot
 type=depot
 waytype=road
 # must be 1*1

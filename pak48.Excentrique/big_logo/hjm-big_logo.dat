@@ -8,7 +8,7 @@
 #
 Obj=symbol
 name=BigLogo
-Image[0]=> big-logo.0.0
-Image[1]=> big-logo.0.1
-Image[2]=> big-logo.1.0
-Image[3]=> big-logo.1.1
+Image[0]=> hjm-big_logo.0.0
+Image[1]=> hjm-big_logo.0.1
+Image[2]=> hjm-big_logo.1.0
+Image[3]=> hjm-big_logo.1.1

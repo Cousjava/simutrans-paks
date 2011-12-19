@@ -36,3 +36,5 @@ Aura
 Elmsfeuer
 Bergfeuer
 Immerhell
+Zwielicht
+Flamming

@@ -45,7 +45,7 @@ Underground view
 Neue Welt
 Create a New Map
 3WORLD_CHOOSE
-Size: %d MB
+Memory: %dMB
 5WORLD_CHOOSE
 Number of cities:
 Median Citizen per town
@@ -61,7 +61,7 @@ Percent electricity:
 Tourist attractions
 Tourist attractions:
 Use timeline start year
-Use chronology from year:
+Use chronology starting at
 8WORLD_CHOOSE
 Darken map at night
 hide city building
@@ -80,6 +80,22 @@ minimum length of rivers
 Min. length of rivers
 maximum length of rivers
 Max. length of rivers
+Load game
+Lade Game
+join game
+Play Online
+Einstellungsfenster
+Game Options
+RAILTOOLS
+Magnatrack Tools
+ROADTOOLS
+Powertrail Tools
+Fast forward
+Fast Forward
+SLOPETOOLS
+Landscaping Tools
+Rotate map
+Rotate Map
 #____________________________________bridge_____________________________________
 #____________________________________bridge_____________________________________
 #___________________________________building____________________________________
@@ -98,6 +114,14 @@ Max. length of rivers
 #_____________________________________misc______________________________________
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
+hjm-spark_1
+Wandering spark.
+hjm-spark_2
+Traveling spark.
+hjm-spark_3
+Floating spark.
+hjm-spark_4
+Sparking spark.
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 #___________________________________roadsign____________________________________
@@ -108,7 +132,19 @@ Max. length of rivers
 #____________________________________tunnel_____________________________________
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
+hjm-dolphincar
+Dolphin car
+hjm-sharkwaggon
+Shark waggon
 #______________________________________way______________________________________
 #______________________________________way______________________________________
-hjm_powertrack
+hjm-powertrack
 Power trail
+hjm-enerrail
+Swift dynobone magnatrack
+#__________________________________way-object___________________________________
+#__________________________________way-object___________________________________
+#____________________________________depots_____________________________________
+#____________________________________depots_____________________________________
+hjm-car-depot
+Coil depot

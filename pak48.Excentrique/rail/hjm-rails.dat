@@ -7,7 +7,7 @@
 # update:   2011/01/24
 #
 Obj=way
-Name=hjm_enerrail-2
+Name=hjm-enerrail_2
 cost=10000
 maintenance=800
 topspeed=200
@@ -42,7 +42,7 @@ ImageUp[9]=hjm_enerrail.2.5
 ImageUp[12]=hjm_enerrail.2.4
 ------------------------
 Obj=way
-Name=hjm_enerrail
+Name=hjm-enerrail
 cost=10000
 maintenance=800
 topspeed=80

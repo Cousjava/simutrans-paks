@@ -23,19 +23,24 @@ name=WindowSkin
 Image[0]=> hjm-skin.0.4
 
 # Window close gadget
-Image[1]=> hjm-skin.1.0
+#Image[1]=> hjm-skin.1.0
+Image[1]=-
 
 # Window help gadget
-Image[2]=> hjm-skin.1.1
+#Image[2]=> hjm-skin.1.1
+Image[2]=-
 
 # Window minimize gadget
-Image[3]=> hjm-skin.1.2
+#Image[3]=> hjm-skin.1.2
+Image[3]=-
 
 # Prev window gadget
-Image[4]=> hjm-skin.1.3
+#Image[4]=> hjm-skin.1.3
+Image[4]=-
 
 # Next window gadget
-Image[5]=> hjm-skin.1.4
+#Image[5]=> hjm-skin.1.4
+Image[5]=-
 
 # Square button
 Image[6]=> hjm-skin.2.0

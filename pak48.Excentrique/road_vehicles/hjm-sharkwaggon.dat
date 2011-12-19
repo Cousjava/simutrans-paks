@@ -17,7 +17,7 @@ obj=vehicle
 # If no translation is present, the text will be shown directly.
 # Convention says, don't use spaces here.
 #
-name=hjm_sharkwaggon
+name=hjm-sharkwaggon
 copyright=Hajo
 
 #

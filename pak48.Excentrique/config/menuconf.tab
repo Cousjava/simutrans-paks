@@ -302,7 +302,20 @@ toolbar[1][6]=general_tool[4],14,,16 #all up slope
 toolbar[1][7]=general_tool[4],15,,17 #all down slope
 toolbar[1][8]=general_tool[5]
 
-# railtools
+# roadtools (waytype 1)
+toolbar[4][0]=ways(1,0)
+toolbar[4][1]=ways(1,1)
+toolbar[4][2]=bridges(1)
+toolbar[4][3]=tunnels(1)
+toolbar[4][4]=wayobjs(1)
+toolbar[4][5]=signs(1)
+toolbar[4][6]=general_tool[17],19,,1 
+toolbar[4][7]=buildings(33,1)
+toolbar[4][8]=buildings(34,1)
+toolbar[4][9]=buildings(35,1)
+toolbar[4][10]=general_tool[14],,s,1
+
+# railtools (waytype 2?)
 toolbar[2][0]=ways(2,0)
 toolbar[2][1]=ways(2,1)
 toolbar[2][2]=bridges(2)
@@ -326,19 +339,6 @@ toolbar[3][6]=general_tool[17],17,,5
 toolbar[3][7]=buildings(33,5)
 toolbar[3][8]=buildings(34,5)
 toolbar[3][9]=buildings(35,5)
-
-# roadtools (waytype 1)
-toolbar[4][0]=ways(1,0)
-toolbar[4][1]=ways(1,1)
-toolbar[4][2]=bridges(1)
-toolbar[4][3]=tunnels(1)
-toolbar[4][4]=wayobjs(1)
-toolbar[4][5]=signs(1)
-toolbar[4][6]=general_tool[17],19,,1 
-toolbar[4][7]=buildings(33,1)
-toolbar[4][8]=buildings(34,1)
-toolbar[4][9]=buildings(35,1)
-toolbar[4][10]=general_tool[14],,s,1
 
 # specialtools
 toolbar[5][0]=buildings(35,0)
