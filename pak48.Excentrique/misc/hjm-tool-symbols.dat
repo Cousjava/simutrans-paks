@@ -9,7 +9,7 @@
 Obj=cursor
 name=GeneralTools
 Image[0]=wkz_cursors.0.0
-Image[1]=wkz_cursors.0.1
+Image[1]=hjm-tool-symbols.0.1,0,-7
 Image[2]=wkz_cursors.0.2
 Image[3]=wkz_cursors.0.3
 Image[4]=wkz_cursors.0.4
@@ -28,7 +28,7 @@ Image[0]=hjm-tool-symbols.0.0
 --
 Obj=cursor
 Name=Marked
-Image[0]=hjm-tool-symbols.0.1
+Image[0]=hjm-tool-symbols.1.0
 --
 Obj=cursor
 Name=Mouse
