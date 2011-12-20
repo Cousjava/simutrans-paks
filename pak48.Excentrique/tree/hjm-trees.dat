@@ -10,6 +10,22 @@
 # climates: desert, tropic, mediterran, temperate, tundra, rocky
 --------------------
 Obj=tree
+Name=hjm-purplebush
+copyright=Hajo
+intro_year=1929
+intro_month=1
+retire_year=9999
+retire_month=1
+climates=desert, tropic
+seasons=1
+#Image[Age][Season]
+Image[0][0]=./hjm-purplebush.0.0
+Image[1][0]=./hjm-purplebush.0.1
+Image[2][0]=./hjm-purplebush.0.2
+Image[3][0]=./hjm-purplebush.0.3
+Image[4][0]=./hjm-purplebush.0.4
+--------------------
+Obj=tree
 Name=hjm-bluespike
 copyright=Hajo
 intro_year=1929
@@ -32,14 +48,14 @@ intro_year=1929
 intro_month=1
 retire_year=9999
 retire_month=1
-climates=desert, tropic, mediterran
+climates=tropic, mediterran
 seasons=1
 #Image[Age][Season]
-Image[0][0]=./hjm-green.0.0
-Image[1][0]=./hjm-green.0.1
-Image[2][0]=./hjm-green.0.2
-Image[3][0]=./hjm-green.0.3
-Image[4][0]=./hjm-green.0.4
+Image[0][0]=./hjm-torquoise_2.0.0
+Image[1][0]=./hjm-torquoise_2.0.1
+Image[2][0]=./hjm-torquoise_2.0.2
+Image[3][0]=./hjm-torquoise_2.0.3
+Image[4][0]=./hjm-torquoise_2.0.4
 --------------------
 Obj=tree
 Name=Tree1
@@ -51,11 +67,11 @@ retire_month=1
 climates=mediterran, temperate
 seasons=1
 #Image[Age][Season]
-Image[0][0]=./hjm-torquoise_2.0.0
-Image[1][0]=./hjm-torquoise_2.0.1
-Image[2][0]=./hjm-torquoise_2.0.2
-Image[3][0]=./hjm-torquoise_2.0.3
-Image[4][0]=./hjm-torquoise_2.0.4
+Image[0][0]=./hjm-green.0.0
+Image[1][0]=./hjm-green.0.1
+Image[2][0]=./hjm-green.0.2
+Image[3][0]=./hjm-green.0.3
+Image[4][0]=./hjm-green.0.4
 --------------------
 Obj=tree
 Name=hjm-orangecherry
@@ -64,7 +80,7 @@ intro_year=1929
 intro_month=1
 retire_year=9999
 retire_month=1
-climates=temperate
+climates=mediterran, temperate
 seasons=1
 #Image[Age][Season]
 Image[0][0]=hjm-orangecherry.0.0
@@ -80,7 +96,7 @@ intro_year=1929
 intro_month=1
 retire_year=9999
 retire_month=1
-climates=temperate
+climates=mediterran, temperate
 seasons=1
 #Image[Age][Season]
 Image[0][0]=./hjm-yellow.0.0
