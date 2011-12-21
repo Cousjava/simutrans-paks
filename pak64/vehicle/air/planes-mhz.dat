@@ -1,4 +1,5 @@
 # planes by MHz
+--
 obj=vehicle
 name=Blimp
 waytype=air
@@ -64,10 +65,11 @@ waytype=air
 engine_type=diesel
 freight=Passagiere
 payload=390
-speed=973
-power=34000
+speed=894
+# 3*213,5kN*880km/h
+power=44700
 gear=100
-weight=130
+weight=165
 cost=9000000
 runningcost=4330
 intro_year=1972
@@ -149,10 +151,10 @@ waytype=air
 engine_type=diesel
 freight=Post
 payload=520
-speed=800
-power=64000
-gear=90
-weight=210
+speed=750
+# 4*118kN*750km/h
+power=30000
+weight=130
 cost=11000000
 runningcost=6100
 intro_year=1970
