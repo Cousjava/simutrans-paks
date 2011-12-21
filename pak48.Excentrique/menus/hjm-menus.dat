@@ -115,7 +115,8 @@ Image[28]=> menu_buttons.8.6
 Image[29]=> menu_buttons.8.6
 Image[30]=-
 Image[31]=-
-Image[32]=-
+# Empty icon
+Image[32]=> menu_buttons.8.7
 Image[33]=-
 Image[34]=-
 Image[35]=-

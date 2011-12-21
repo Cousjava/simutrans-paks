@@ -259,33 +259,53 @@ dialog_tool[23]=24
 # SPACES have a meaning here! Do not use spaces, if you did not intend so!
 #
 
+#
 # toolbar[0] is always main menu
+#
+
+# game options
 toolbar[0][0]=dialog_tool[1]
+# map
 toolbar[0][1]=dialog_tool[2]
+# inspection
 toolbar[0][2]=general_tool[0]
+# slope toolbar
 toolbar[0][3]=toolbar[1],0,,SLOPETOOLS,slopetools.txt
+# railroad toolbar
 toolbar[0][4]=toolbar[2],1,,RAILTOOLS,railtools.txt
+# monorail toolbar
 toolbar[0][5]=toolbar[3],2,,MONORAILTOOLS,monorailtools.txt
-# toolbar[0][6]=toolbar[4],3,,TRAMTOOLS,tramtools.txt
+# road toolbar
 toolbar[0][6]=toolbar[4],4,,ROADTOOLS,roadtools.txt
-#toolbar[0][7]=toolbar[5],5,,SHIPTOOLS,shiptools.txt
-# toolbar[0][9]=toolbar[7],6,,AIRTOOLS,airtools.txt
+# does not appear in bar ???
 toolbar[0][7]=buildings(11,3)
+# does not appear in bar ???
 toolbar[0][8]=buildings(33,3)
+# next icon - specialtools
 toolbar[0][9]=toolbar[5],7,,SPECIALTOOLS,special.txt
+# remover
 toolbar[0][10]=general_tool[1]
-toolbar[0][11]=-
+# empty space - where does the icon come from ???
+# toolbar[0][11]=-
+# Hack: show empty blue icon with inspection tool binding
+toolbar[0][11]=general_tool[0],32,,
 toolbar[0][12]=dialog_tool[3]
 toolbar[0][13]=toolbar[6],8,,LISTTOOLS,list.txt
 toolbar[0][14]=dialog_tool[4]
 toolbar[0][15]=dialog_tool[5]
-toolbar[0][16]=-
+# empty space - where does the icon come from ???
+# toolbar[0][16]=-
+# Hack: show empty blue icon with inspection tool binding
+toolbar[0][16]=general_tool[0],32,,
 toolbar[0][17]=simple_tool[2]
 toolbar[0][18]=simple_tool[0]
 toolbar[0][19]=simple_tool[1]
 toolbar[0][20]=dialog_tool[0]
 # invisible tools (here because they need a parameter or are added twice)
-toolbar[0][21]=-
+# empty space - where does the icon come from ???
+# toolbar[0][21]=-
+# Hack: show empty blue icon with inspection tool binding
+toolbar[0][21]=general_tool[0],32,,
 toolbar[0][22]=simple_tool[16]
 toolbar[0][23]=simple_tool[7],,.,+1
 toolbar[0][24]=simple_tool[7],,#44,-1
