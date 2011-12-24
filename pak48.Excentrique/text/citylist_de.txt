@@ -17,7 +17,7 @@ Licht-Ober-Hügel
 Funkenglanz
 Aurafunken
 Sanftglüh
-Dunkelglüh
+Dunkelschein
 Buntland
 Farbenheim
 Leuchtfarben
@@ -38,3 +38,9 @@ Bergfeuer
 Immerhell
 Zwielicht
 Flamming
+Niedunkel
+Fernglüh
+Farbenfroh
+Lichtblick
+Nachtlicht
+Zwinkering

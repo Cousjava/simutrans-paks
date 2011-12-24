@@ -42,4 +42,6 @@ Sugarshapes
 Mountainfire
 Neverdark
 Twilight
-
+Crystal
+Everlight
+Colorpool

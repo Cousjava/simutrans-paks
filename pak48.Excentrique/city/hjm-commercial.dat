@@ -71,3 +71,17 @@ retire_month=1
 BackImage[0][0][0][0][0][0]=hjm-com_1n.0.4
 BackImage[0][0][0][0][0][1]=hjm-com_1n.0.4
 --------------------
+Obj=building
+Name=05_COM
+copyright=Hajo
+Type=com
+Level=5
+intro_year=1929
+intro_month=1
+retire_year=9999
+retire_month=1
+BackImage[0][0][0][1][0][0]=hjm-com-prismcleaner.1.0
+BackImage[0][0][0][0][0][0]=hjm-com-prismcleaner.2.0
+BackImage[0][0][0][1][0][1]=hjm-com-prismcleaner.1.0
+BackImage[0][0][0][0][0][1]=hjm-com-prismcleaner.2.0
+--------------------
