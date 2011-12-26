@@ -17,7 +17,6 @@ type=depot
 waytype=road
 # must be 1*1
 level=1
-intro_year=1
 Dims=1,1,4
 NoInfo=1
 intro_year=1929
