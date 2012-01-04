@@ -53,6 +53,10 @@ cd skin
 call create.bat
 move *.pak ..\..\simutrans\pak48.Excentrique
 cd ..
+cd sights
+call create.bat
+move *.pak ..\..\simutrans\pak48.Excentrique
+cd ..
 cd menus
 call create.bat
 move *.pak ..\..\simutrans\pak48.Excentrique

@@ -38,6 +38,7 @@ cd ..
 cd skin
 del err.txt
 cd ..
+del sights\err.txt
 cd menus
 del err.txt
 cd ..

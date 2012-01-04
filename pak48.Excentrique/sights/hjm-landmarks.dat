@@ -1,0 +1,33 @@
+#
+# Landmarks for Simutrans pak48.Excentrique
+#
+# author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
+#
+# created:  2012/01/03
+# update:   2012/01/03
+#
+Obj=building
+Name=hjm-splinter_plant
+copyright=HjM
+Type=cur
+Passengers=50
+intro_year=1929
+retire_year=9999
+chance=100
+Dims=2,2
+climates=temperate,tundra,rocky,arctic
+#######[dir][j][i][h][anim][season]
+BackImage[0][1][0][0][0][0]=hjm-splinter_plant.0.0
+BackImage[0][0][1][0][0][0]=hjm-splinter_plant.0.1
+# BackImage[0][1][0][1][0][0]=hjm-splinter_plant.0.2
+# BackImage[0][0][1][1][0][0]=hjm-splinter_plant.0.3
+BackImage[0][1][1][0][0][0]=hjm-splinter_plant.1.0
+BackImage[0][0][0][0][0][0]=hjm-splinter_plant.1.1
+BackImage[0][0][0][1][0][0]=hjm-splinter_plant.1.2
+BackImage[0][1][0][0][0][1]=hjm-splinter_plant.0.0
+BackImage[0][0][1][0][0][1]=hjm-splinter_plant.0.1
+# BackImage[0][1][0][1][0][1]=hjm-splinter_plant.0.2
+# BackImage[0][0][1][1][0][1]=hjm-splinter_plant.0.3
+BackImage[0][1][1][0][0][1]=hjm-splinter_plant.1.0
+BackImage[0][0][0][0][0][1]=hjm-splinter_plant.1.1
+BackImage[0][0][0][1][0][1]=hjm-splinter_plant.1.2
