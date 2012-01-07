@@ -1,10 +1,10 @@
 #
-# Railroad tracks for Simutrans pak48.Excentrique
+# Magnatracks for Simutrans pak48.Excentrique
 #
 # author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
 #
 # created:  2011/01/24
-# update:   2011/01/24
+# update:   2012/01/07
 #
 Obj=way
 Name=hjm-enerrail_2
@@ -45,7 +45,7 @@ Obj=way
 Name=hjm-enerrail
 cost=10000
 maintenance=800
-topspeed=80
+topspeed=120
 max_weight=100
 intro_year = 1920
 intro_month = 7

@@ -17,6 +17,7 @@ cd ..
 cd road_vehicles
 del err.txt
 cd ..
+del rail_vehicles\err.txt
 cd rail
 del err.txt
 cd ..
