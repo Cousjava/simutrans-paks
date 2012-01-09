@@ -1,0 +1,40 @@
+#----------------------------------------------------------------------------
+#
+# Railroad signals for Simutrans pak48.Excentrique
+#
+# author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
+#
+# created:  2012/01/09
+# update:   2012/01/09
+#
+# image order S, N, E, W, first red, then green, then yellow (for presignal)
+# repeat (optionally) for electrification
+#
+#----------------------------------------------------------------------------
+# normal signal
+obj=roadsign
+copyright=HjM
+name=Signals
+waytype=track
+cost=750
+is_signal=1
+intro_year = 1929
+intro_month = 1
+Image[0]=hjm-rail_signals.0.0
+Image[1]=hjm-rail_signals.0.1
+Image[2]=hjm-rail_signals.0.2
+Image[3]=hjm-rail_signals.0.3
+Image[4]=hjm-rail_signals.0.4
+Image[5]=hjm-rail_signals.0.5
+Image[6]=hjm-rail_signals.0.6
+Image[7]=hjm-rail_signals.0.7
+#Image[8]=hjm-rail_signals.0.0
+#Image[9]=hjm-rail_signals.0.1
+#Image[10]=hjm-rail_signals.0.2
+#Image[11]=hjm-rail_signals.0.3
+#Image[12]=hjm-rail_signals.0.4
+#Image[13]=hjm-rail_signals.0.5
+#Image[14]=hjm-rail_signals.0.6
+#Image[15]=hjm-rail_signals.0.7
+Icon=> hjm-rail_signals.0.12
+Cursor=hjm-rail_signals.0.13
