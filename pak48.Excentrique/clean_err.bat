@@ -39,6 +39,7 @@ cd ..
 cd skin
 del err.txt
 cd ..
+del industry_music\err.txt
 del sights\err.txt
 cd menus
 del err.txt

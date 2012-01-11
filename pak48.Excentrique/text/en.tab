@@ -44,6 +44,8 @@ underground mode
 Underground view
 Neue Welt
 Create a New Map
+1WORLD_CHOOSE
+Settings for the new map:
 3WORLD_CHOOSE
 Memory: %dMB
 5WORLD_CHOOSE
@@ -102,6 +104,16 @@ residential house
 Spark capacitor.
 shops and stores
 Spark cleaning.
+fl_title
+Factory List
+curlist_title
+Attraction List
+tl_title
+City List
+player -1
+Human
+player 0
+Public Service
 #____________________________________bridge_____________________________________
 #____________________________________bridge_____________________________________
 #___________________________________building____________________________________
@@ -138,6 +150,14 @@ Sparking spark.
 #_________________________________program_text__________________________________
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
+hjm-force_gate
+Force Gate
+#____________________________________sights_____________________________________
+#____________________________________sights_____________________________________
+hjm-splinter_plant_dark
+Dark Crystal Splinter Plant\n\nAn ancient growths of dark crystal splinters, taller than any of the surrounding growths.
+hjm-splinter_plant_light
+Light Crystal Splinter Plant\n\nAn ancient growths of shining crystal splinters, taller than any of the surrounding growths.
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 #____________________________________tunnel_____________________________________
@@ -151,12 +171,16 @@ Shark waggon
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 hjm-powertrack
-Power trail
+Power Trail
 hjm-enerrail
-Swift dynobone magnatrack
+Dynobone Magnatrack
 #__________________________________way-object___________________________________
 #__________________________________way-object___________________________________
+hjm-enerrail_station
+Magnatrack Resting Point
 #____________________________________depots_____________________________________
 #____________________________________depots_____________________________________
 hjm-car-depot
-Depot coil 
+Depot Coil 
+hjm-enerrail-depot
+Magnatrack Drops Depot

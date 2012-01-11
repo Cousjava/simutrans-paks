@@ -14,7 +14,7 @@
 # normal signal
 obj=roadsign
 copyright=HjM
-name=Signals
+name=hjm-force_gate
 waytype=track
 cost=750
 is_signal=1

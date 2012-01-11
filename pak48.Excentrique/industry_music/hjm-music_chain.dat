@@ -1,0 +1,72 @@
+#---------------------------------------------------------------------
+#
+# Music industry chain for Simutrans pak48.Excentrique
+#
+# author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
+#
+# created:  2012/01/11
+# update:   2012/01/11
+#
+#---------------------------------------------------------------------
+Obj=factory
+name=hjm-fanfostar
+Location=Land
+DistributionWeight=100
+Productivity=300
+Range=600
+OutputGood[0]=fanfars
+OutputCapacity[0]=380
+MapColor=176
+pax_level=30
+intro_year=1929
+electricity_boost=100
+passenger_boost=1000
+mail_boost=0
+passenger_demand=150
+Dims=2,2
+climates=tropic,mediterran,temperate,tundra
+BackImage[0][1][0][0][0][0]=hjm-fanfostar_cut.0.0
+BackImage[0][0][1][0][0][0]=hjm-fanfostar_cut.0.1
+BackImage[0][1][0][1][0][0]=hjm-fanfostar_cut.0.2
+BackImage[0][0][1][1][0][0]=hjm-fanfostar_cut.0.3
+BackImage[0][1][1][0][0][0]=hjm-fanfostar_cut.1.0
+BackImage[0][0][0][0][0][0]=hjm-fanfostar_cut.1.1
+BackImage[0][0][0][1][0][0]=hjm-fanfostar_cut.1.2
+# Wintergrafiken
+BackImage[0][1][0][0][0][1]=hjm-fanfostar_cut.0.0
+BackImage[0][0][1][0][0][1]=hjm-fanfostar_cut.0.1
+BackImage[0][1][0][1][0][1]=hjm-fanfostar_cut.0.2
+BackImage[0][0][1][1][0][1]=hjm-fanfostar_cut.0.3
+BackImage[0][1][1][0][0][1]=hjm-fanfostar_cut.1.0
+BackImage[0][0][0][0][0][1]=hjm-fanfostar_cut.1.1
+BackImage[0][0][0][1][0][1]=hjm-fanfostar_cut.1.2
+--------------------
+Obj=factory
+name=hjm-sounder
+Location=City
+DistributionWeight=85
+Productivity=80
+Range=60
+InputGood[0]=fanfars
+InputCapacity[0]=100
+MapColor=175
+pax_level=30
+intro_year=1929
+electricity_boost=100
+passenger_boost=2000
+mail_boost=1000
+passenger_demand=300
+mail_demand=40
+Dims=2,2
+climates=tropic,mediterran,temperate,tundra,rocky,arctic
+BackImage[0][1][0][0][0][0]=hjm-trompetechos_cut.0.0
+BackImage[0][0][1][0][0][0]=hjm-trompetechos_cut.0.1
+BackImage[0][1][1][0][0][0]=hjm-trompetechos_cut.1.0
+BackImage[0][0][0][0][0][0]=hjm-trompetechos_cut.1.1
+BackImage[0][0][0][1][0][0]=hjm-trompetechos_cut.1.2
+# Wintergrafiken
+BackImage[0][1][0][0][0][1]=hjm-trompetechos_cut.0.0
+BackImage[0][0][1][0][0][1]=hjm-trompetechos_cut.0.1
+BackImage[0][1][1][0][0][1]=hjm-trompetechos_cut.1.0
+BackImage[0][0][0][0][0][1]=hjm-trompetechos_cut.1.1
+BackImage[0][0][0][1][0][1]=hjm-trompetechos_cut.1.2

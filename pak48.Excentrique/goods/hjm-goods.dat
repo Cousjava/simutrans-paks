@@ -3,8 +3,8 @@
 #
 # author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
 #
-# created:  ???
-# update:   2010/11/04
+# created:  2010/11/04
+# update:   2012/01/11
 #
 # categories:
 # 0 = type defined (unique)
@@ -35,4 +35,12 @@ catg=0
 value=0
 speed_bonus=0
 weight_per_unit=0
+-----------------------
+obj=good
+name=fanfars
+metric=
+catg=0
+value=50
+speed_bonus=0
+weight_per_unit=15
 -----------------------

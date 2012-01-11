@@ -142,6 +142,30 @@ show_month = 1
 #
 bits_per_month = 18
 
+##################################forest stuff#################################
+
+# Number of trees on square 2 - minimal usable, 3 good, 4 very nice looking
+max_no_of_trees_on_square = 2
+
+# Base forest size - minimal size of forest - map independent
+forest_base_size = 32
+
+# Map size divisor - smaller it is the larger are individual forests
+forest_map_size_divisor = 38
+
+# Forest count divisor - smaller it is, the more forest are generated
+forest_count_divisor = 20
+
+# Determins how dense are spare trees going to be planted (works inversly)
+forest_inverse_spare_tree_density = 100
+
+# climate with trees entirely (1: water, 2:desert, 4:tropic, 8:mediterran, 16:temperate, 32:tundra, 64:rocky, 128:arctic)
+# zero (default) means no climate with at least one tree per tile
+tree_climates = 0
+
+# climates with no trees at all (desert and arctic at the moment)
+no_tree_climates = 0
+
 ###################################other stuff##################################
 
 # Max. length of intitial intercity road connections

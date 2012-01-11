@@ -57,6 +57,9 @@ cd skin
 call create.bat
 move *.pak ..\..\simutrans\pak48.Excentrique
 cd ..
+cd industry_music
+call create.bat
+move *.pak ..\..\simutrans\pak48.Excentrique
 cd sights
 call create.bat
 move *.pak ..\..\simutrans\pak48.Excentrique
