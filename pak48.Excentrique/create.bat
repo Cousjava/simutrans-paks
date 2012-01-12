@@ -21,15 +21,19 @@ cd road
 call create.bat
 move *.pak ..\..\simutrans\pak48.Excentrique
 cd ..
+cd rail
+call create.bat
+move *.pak ..\..\simutrans\pak48.Excentrique
+cd ..
+cd way_misc
+call create.bat
+move *.pak ..\..\simutrans\pak48.Excentrique
+cd ..
 cd rail_vehicles
 call create.bat
 move *.pak ..\..\simutrans\pak48.Excentrique
 cd ..
 cd road_vehicles
-call create.bat
-move *.pak ..\..\simutrans\pak48.Excentrique
-cd ..
-cd rail
 call create.bat
 move *.pak ..\..\simutrans\pak48.Excentrique
 cd ..
