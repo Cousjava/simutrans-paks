@@ -17,11 +17,11 @@ cd powerline
 call create.bat
 move *.pak ..\..\simutrans\pak48.Excentrique
 cd ..
-cd road
+cd way_road
 call create.bat
 move *.pak ..\..\simutrans\pak48.Excentrique
 cd ..
-cd rail
+cd way_rail
 call create.bat
 move *.pak ..\..\simutrans\pak48.Excentrique
 cd ..
@@ -29,11 +29,11 @@ cd way_misc
 call create.bat
 move *.pak ..\..\simutrans\pak48.Excentrique
 cd ..
-cd rail_vehicles
+cd vehicles_rail
 call create.bat
 move *.pak ..\..\simutrans\pak48.Excentrique
 cd ..
-cd road_vehicles
+cd vehicles_road
 call create.bat
 move *.pak ..\..\simutrans\pak48.Excentrique
 cd ..
@@ -64,6 +64,7 @@ cd ..
 cd industry_music
 call create.bat
 move *.pak ..\..\simutrans\pak48.Excentrique
+cd ..
 cd sights
 call create.bat
 move *.pak ..\..\simutrans\pak48.Excentrique

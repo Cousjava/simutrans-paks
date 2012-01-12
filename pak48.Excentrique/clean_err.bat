@@ -11,13 +11,11 @@ cd ..
 cd powerline
 del err.txt
 cd ..
-del road\err.txt
-del rail\err.txt
+del way_road\err.txt
+del way_rail\err.txt
 del way_misc\err.txt
-cd road_vehicles
-del err.txt
-cd ..
-del rail_vehicles\err.txt
+del vehicles_road\err.txt
+del vehicles_rail\err.txt
 cd tree
 del err.txt
 cd ..
@@ -38,8 +36,7 @@ del err.txt
 cd ..
 del industry_music\err.txt
 del sights\err.txt
-cd menus
-del err.txt
-cd ..
+del menus\err.txt
+
 
 pause
