@@ -17,7 +17,7 @@ name=Passagiere
 metric=
 catg=0
 value=45
-speed_bonus=15
+speed_bonus=8
 weight_per_unit=75
 -----------------------
 obj=good
@@ -25,7 +25,7 @@ name=Post
 metric=sack
 catg=0
 value=55
-speed_bonus=15
+speed_bonus=8
 weight_per_unit=50
 -----------------------
 obj=good
@@ -41,6 +41,14 @@ name=fanfars
 metric=
 catg=0
 value=50
-speed_bonus=0
+speed_bonus=2
 weight_per_unit=15
+-----------------------
+obj=good
+name=beats
+metric=
+catg=0
+value=170
+speed_bonus=0
+weight_per_unit=75
 -----------------------

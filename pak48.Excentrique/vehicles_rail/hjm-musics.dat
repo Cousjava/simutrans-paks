@@ -1,0 +1,55 @@
+#
+# Music transporters
+#
+# author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
+#
+# created:  2012/01/07
+# update:   2012/01/13
+#
+obj=vehicle
+name=hjm-fanfaporter
+copyright=HjM
+waytype=track
+freight=fanfars
+payload=30
+speed=120
+cost=70000
+weight=12
+length=8
+RunningCost=12
+intro_year=1929
+intro_month=1
+retire_year=9999
+retire_month=1
+EmptyImage[W]=hjm-fanfaporter.0.1
+EmptyImage[S]=hjm-fanfaporter.0.0
+EmptyImage[E]=hjm-fanfaporter.0.1
+EmptyImage[N]=hjm-fanfaporter.0.0
+EmptyImage[SE]=hjm-fanfaporter.1.0
+EmptyImage[NW]=hjm-fanfaporter.1.0
+EmptyImage[NE]=hjm-fanfaporter.0.2
+EmptyImage[SW]=hjm-fanfaporter.0.2
+--------------------------------
+obj=vehicle
+name=hjm-beatnut
+copyright=HjM
+waytype=track
+freight=beats
+payload=8
+speed=120
+cost=80000
+weight=25
+length=8
+RunningCost=14
+intro_year=1929
+intro_month=1
+retire_year=9999
+retire_month=1
+EmptyImage[W]=hjm-beatnut.0.1
+EmptyImage[S]=hjm-beatnut.0.0
+EmptyImage[E]=hjm-beatnut.0.1
+EmptyImage[N]=hjm-beatnut.0.0
+EmptyImage[SE]=hjm-beatnut.1.0
+EmptyImage[NW]=hjm-beatnut.1.0
+EmptyImage[NE]=hjm-beatnut.0.2
+EmptyImage[SW]=hjm-beatnut.0.2
