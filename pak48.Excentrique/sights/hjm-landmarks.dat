@@ -55,4 +55,37 @@ BackImage[0][0][1][0][0][1]=hjm-splinter_plant_light.0.1
 BackImage[0][1][1][0][0][1]=hjm-splinter_plant_light.1.0
 BackImage[0][0][0][0][0][1]=hjm-splinter_plant_light.1.1
 BackImage[0][0][0][1][0][1]=hjm-splinter_plant_light.1.2
+---------------------------------
+# Test/Example for Tilemaster 3x3 cut
+#Obj=building
+#Name=hjm-test
+#copyright=HjM
+#Type=cur
+#Passengers=50
+#intro_year=1929
+#retire_year=9999
+#chance=100
+#Dims=3,3
+#climates=tropic,temperate,tundra,rocky,arctic
 
+#######[dir][j][i][h][anim][season]
+
+#BackImage[0][0][0][0][0][0]=test.3.0
+#BackImage[0][1][0][0][0][0]=test.4.0
+#BackImage[0][1][1][0][0][0]=test.4.1
+#BackImage[0][0][1][0][0][0]=test.4.2
+#BackImage[0][2][0][0][0][0]=test.5.0
+#BackImage[0][2][1][0][0][0]=test.5.1
+#BackImage[0][2][2][0][0][0]=test.5.2
+#BackImage[0][1][2][0][0][0]=test.5.3
+#BackImage[0][0][2][0][0][0]=test.5.4
+
+#BackImage[0][0][0][1][0][0]=test.0.0
+#BackImage[0][1][0][1][0][0]=test.1.0
+#BackImage[0][1][1][1][0][0]=test.1.1
+#BackImage[0][0][1][1][0][0]=test.1.2
+#BackImage[0][2][0][1][0][0]=test.2.0
+#BackImage[0][2][1][1][0][0]=test.2.1
+#BackImage[0][2][2][1][0][0]=test.2.2
+#BackImage[0][1][2][1][0][0]=test.2.3
+#BackImage[0][0][2][1][0][0]=test.2.4
