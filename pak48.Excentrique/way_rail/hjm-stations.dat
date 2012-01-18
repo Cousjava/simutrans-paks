@@ -4,7 +4,7 @@
 # Author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
 #
 # Created:  2011/12/25
-# Update:   2011/12/25
+# Update:   2012/01/18
 #
 # BackImage[Layout][x Position][y Position][Height][Phase][Season]
 #
@@ -12,10 +12,10 @@ Obj=building
 Name=hjm-enerrail_station
 type=stop
 waytype=track
-# must be 1*1
+level=2
 enables_pax=1
 enables_post=1
-#enables_ware=1
+enables_ware=1
 NoInfo=1
 intro_year=1929
 intro_month=1

@@ -73,7 +73,7 @@ signals_on_left = 0
 starting_money = 50000000
 
 # Maintenance costs of buildings
-maintenance_building = 2000
+maintenance_building = 4000
 
 cost_transformer=2500 
 cost_maintain_transformer=100
@@ -81,9 +81,9 @@ cost_maintain_transformer=100
 # you can adjust all the cost in the game, that are not inside some pak file
 
 # first stops: the actual cost is (cost*level*width*height)
-cost_multiply_dock=500
-cost_multiply_station=600
-cost_multiply_roadstop=400
+cost_multiply_dock=1000
+cost_multiply_station=1200
+cost_multiply_roadstop=800
 cost_multiply_airterminal=3000
 cost_multiply_post=300
 cost_multiply_headquarter=10000
@@ -93,9 +93,9 @@ cost_transformer=2500
 cost_maintain_transformer=100
 
 # cost for depots
-cost_depot_rail=1000
-cost_depot_road=1300
-cost_depot_ship=2500
+cost_depot_rail=10000
+cost_depot_road=13000
+cost_depot_ship=25000
 
 # other way related stuff
 cost_signal=500
@@ -106,7 +106,7 @@ cost_third_rail=80
 cost_alter_land=1000
 cost_buy_land=100
 cost_set_slope=2500
-cost_found_city=5000000
+cost_found_city=50000000
 cost_multiply_found_industry=20000
 cost_remove_tree=100
 cost_multiply_remove_haus=1000

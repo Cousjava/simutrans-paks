@@ -3,17 +3,15 @@
 #
 # Author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
 #
-# Created:  ???
-# Update:   2010/11/04
+# Created:  2010/11/04
+# Update:   2012/01/18
 #
 Obj=way
 Name=hjm-powertrack
-cost=10000
-maintenance=800
+cost=15000
+maintenance=400
 topspeed=130
 max_weight=100
-intro_year = 1920
-intro_month = 7
 waytype=road
 intro_year=1929
 intro_month=1

@@ -44,7 +44,7 @@ payload=0
 speed=120
 
 #
-# Vehicle price in credit cent (=3400.00 Cr)
+# Vehicle price in credit cent
 #
 cost=450000
 
@@ -66,7 +66,7 @@ power=800
 #
 # Running cost per km
 #
-RunningCost=45
+RunningCost=120
 
 #
 # Sound to be played upon starting.

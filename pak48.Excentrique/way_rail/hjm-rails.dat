@@ -4,11 +4,11 @@
 # author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
 #
 # created:  2011/01/24
-# update:   2012/01/07
+# update:   2012/01/18
 #
 Obj=way
 Name=hjm-enerrail_2
-cost=10000
+cost=40000
 maintenance=800
 topspeed=200
 max_weight=100
@@ -43,8 +43,8 @@ ImageUp[12]=hjm_enerrail.2.4
 ------------------------
 Obj=way
 Name=hjm-enerrail
-cost=10000
-maintenance=800
+cost=20000
+maintenance=400
 topspeed=120
 max_weight=100
 intro_year = 1920

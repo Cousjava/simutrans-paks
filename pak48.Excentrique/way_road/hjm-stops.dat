@@ -3,8 +3,8 @@
 #
 # Author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
 #
-# Created:  ???
-# Update:   2010/11/04
+# Created:  2010/11/04
+# Update:   2012/01/18
 #
 # BackImage[Layout][x Position][y Position][Height][Phase][Season]
 #
@@ -12,7 +12,7 @@ Obj=building
 Name=hjm-car-stop
 type=stop
 waytype=road
-# must be 1*1
+level=2
 enables_pax=1
 enables_post=1
 #enables_ware=1
