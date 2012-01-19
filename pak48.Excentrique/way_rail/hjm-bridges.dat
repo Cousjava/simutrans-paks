@@ -1,0 +1,61 @@
+#----------------------------------------------------------------------------
+#
+# Magnatrack bridges for Simutrans pak48.Excentrique
+#
+# author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
+#
+# created:  2012/01/19
+# update:   2012/01/19
+#
+#----------------------------------------------------------------------------
+Obj=bridge
+name=hjm-basic_magnabridge
+copyright=HjM
+waytype=track
+cost=24000
+maintenance=2000
+topspeed=120
+max_lenght=10
+intro_year=1929
+icon=> hjm-bridge_basic.1.2
+cursor=hjm-bridge_basic.1.3
+BackImage[NS][0]=hjm-bridge_basic.0.0
+#FrontImage[NS][0]=hjm-bridge_basic.1.0
+BackImage[EW][0]=hjm-bridge_basic.0.1
+#FrontImage[EW][0]=hjm-bridge_basic.1.1
+BackStart[N][0]=hjm-bridge_basic.0.2
+#FrontStart[N][0]=hjm-bridge_basic.1.0
+BackStart[S][0]=hjm-bridge_basic.0.2
+#FrontStart[S][0]=hjm-bridge_basic.1.0
+BackStart[E][0]=hjm-bridge_basic.0.3
+#FrontStart[E][0]=hjm-bridge_basic.1.1
+BackStart[W][0]=hjm-bridge_basic.0.3
+#FrontStart[W][0]=hjm-bridge_basic.1.1
+BackRamp[N][0]=hjm-bridge_basic.0.4
+#FrontRamp[N][0]=hjm-bridge_basic.1.4
+BackRamp[S][0]=hjm-bridge_basic.0.6
+#FrontRamp[S][0]=hjm-bridge_basic.1.6
+BackRamp[E][0]=hjm-bridge_basic.0.7
+#FrontRamp[E][0]=hjm-bridge_basic.1.7
+BackRamp[W][0]=hjm-bridge_basic.0.5
+#FrontRamp[W][0]=hjm-bridge_basic.1.5
+#BackImage[NS][1]=hjm-bridge_basic.2.0
+#FrontImage[NS][1]=hjm-bridge_basic.1.0
+#BackImage[EW][1]=hjm-bridge_basic.2.1
+#FrontImage[EW][1]=hjm-bridge_basic.1.1
+#BackStart[N][1]=hjm-bridge_basic.2.2
+#FrontStart[N][1]=hjm-bridge_basic.1.0
+#BackStart[S][1]=hjm-bridge_basic.2.2
+#FrontStart[S][1]=hjm-bridge_basic.1.0
+#BackStart[E][1]=hjm-bridge_basic.2.3
+#FrontStart[E][1]=hjm-bridge_basic.1.1
+#BackStart[W][1]=hjm-bridge_basic.2.3
+#FrontStart[W][1]=hjm-bridge_basic.1.1
+#BackRamp[N][1]=hjm-bridge_basic.0.4
+#FrontRamp[N][1]=hjm-bridge_basic.1.4
+#BackRamp[S][1]=hjm-bridge_basic.0.6
+#FrontRamp[S][1]=hjm-bridge_basic.1.6
+#BackRamp[E][1]=hjm-bridge_basic.0.7
+#FrontRamp[E][1]=hjm-bridge_basic.1.7
+#BackRamp[W][1]=hjm-bridge_basic.0.5
+#FrontRamp[W][1]=hjm-bridge_basic.1.5
