@@ -37,7 +37,7 @@ speed_bonus=0
 weight_per_unit=0
 -----------------------
 obj=good
-name=fanfars
+name=fanfares
 metric=
 catg=0
 value=50
