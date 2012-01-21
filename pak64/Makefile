@@ -6,6 +6,7 @@ MAKEOBJ ?= ./makeobj
 
 DESTDIR  ?= simutrans
 PAKDIR   ?= $(DESTDIR)/pak
+ADDONDIR ?= $(DESTDIR)/addons/pak
 DESTFILE ?= simupak64
 
 OUTSIDE :=
@@ -16,12 +17,7 @@ DIRS64 += city_extra
 DIRS64 += com
 DIRS64 += cur
 DIRS64 += factory
-#DIRS64 += factory_alcohol
-#DIRS64 += factory_computer
-#DIRS64 += factory_food
-#DIRS64 += factory_waste
-#DIRS64 += ground
-#DIRS64 += ground/oldgrounds
+DIRS64 += factory_waste
 DIRS64 += ind
 DIRS64 += monument
 DIRS64 += other
@@ -39,13 +35,19 @@ DIRS64 += way
 DIRS128 :=
 DIRS128 += big-logo
 
+ADDON_DIRS64 :=
+#ADDON_DIRS64 += factory_alcohol
+#ADDON_DIRS64 += factory_computer
+ADDON_DIRS64 += factory_food
+
 
 DIRS := $(OUTSIDE) $(DIRS64) $(DIRS128)
+ADDON_DIRS := $(ADDON_DIRS64)
 
 
-.PHONY: $(DIRS) copy tar zip
+.PHONY: $(DIRS) $(ADDON_DIRS64) copy tar zip
 
-all: copy $(DIRS)
+all: copy $(DIRS) zip
 
 archives: tar zip
 
@@ -91,3 +93,15 @@ $(OUTSIDE):
 clean:
 	@echo "===> CLEAN"
 	@rm -fr $(PAKDIR) $(DESTFILE).tbz2 $(DESTFILE).zip
+
+
+addons: 	copy_addons $(ADDON_DIRS64) zip
+
+copy_addons:
+	@echo "===> COPY"
+	@mkdir  -p $(ADDONDIR)
+
+$(ADDON_DIRS64):
+	@echo "===> PAK64 $@"
+	mkdir -p $(ADDONDIR)
+	$(MAKEOBJ) quiet PAK $(ADDONDIR)/ $@/ > /dev/null
