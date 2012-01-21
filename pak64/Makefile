@@ -94,8 +94,7 @@ clean:
 	@echo "===> CLEAN"
 	@rm -fr $(PAKDIR) $(DESTFILE).tbz2 $(DESTFILE).zip
 
-
-addons: 	copy_addons $(ADDON_DIRS64) zip
+addons: 	clean copy_addons $(ADDON_DIRS64) zip
 
 copy_addons:
 	@echo "===> COPY"
@@ -103,5 +102,5 @@ copy_addons:
 
 $(ADDON_DIRS64):
 	@echo "===> PAK64 $@"
-	mkdir -p $(ADDONDIR)
-	$(MAKEOBJ) quiet PAK $(ADDONDIR)/ $@/ > /dev/null
+	@mkdir -p $(ADDONDIR)
+	@$(MAKEOBJ) quiet PAK $(ADDONDIR)/ $@/ > /dev/null
