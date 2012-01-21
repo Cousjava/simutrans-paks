@@ -5,7 +5,7 @@
 #                             Language: it Italiano                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 31.10 2011                           #
+#                            Date Created: 8.11 2011                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
@@ -391,7 +391,7 @@ Laboratorio chimico
 Concretefactory
 Fabbrica calcestruzzo
 cow_farm
-Allevamento bovino
+Allevamento bovini
 dairy
 Caseificio
 Druckerei
@@ -407,7 +407,7 @@ Industria alimentare
 Geokraftwerk
 Centrale geotermica
 grain_farm
-Fattoria di grano
+Fattoria con campi di grano
 grain_mill
 Macina per grano
 grain_windmill

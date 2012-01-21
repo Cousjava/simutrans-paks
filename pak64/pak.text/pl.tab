@@ -5,7 +5,7 @@
 #                              Language: pl Polski                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 31.10 2011                           #
+#                           Date Created: 21.01 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                       Bartlomiej Weclewski - BarthVader                      #
@@ -20,7 +20,7 @@
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
 #                                    note:                                     #
-#                                 Kamil - qamil                                #
+#                                    - qamil                                   #
 #                                    note:                                     #
 #                                                                              #
 ################################################################################
@@ -40,6 +40,8 @@ ModernRoad
 Nowoczesny most (sprê¿ony beton)
 MonorailRamp
 Most
+PowerBridge
+"Most" dla linii wysokiego napiêcia
 Schiffhebewerk
 ¦luza
 SteelRail
@@ -309,11 +311,11 @@ factory_cannery_details
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
-Refineria ropy
+Refineria
 3Raffinerie
 Rafineria
 Aufwindkraftwerk
-Wie¿a s³oneczna (elektrownia)
+Elektrownia s³oneczna
 Autohaus
 Salon samochodowy
 Autohersteller
@@ -348,20 +350,28 @@ fish_swarm
 £awica ryb
 food_processing_plant
 Przetwórnia ¿ywno¶ci
+Geokraftwerk
+Elektrownia geotermalna
 grain_farm
 Gospodarstwo rolne
 grain_mill
+M³yny zbo¿owe
+grain_windmill
 M³yny zbo¿owe
 Kohlegrube
 Kopalnia wêgla
 Kohlekraftwerk
 Elektrownia
+Marketplace
+Targowisko
 Materialswholesale
 Sk³ad materia³ów budowlanych
 Moebelfabrik
 Fabryka mebli
 Moebelhaus
 Sklep meblowy
+Muellkraftwerk
+Spalarnia ¶mieci
 Nutzwald
 Wycinka drzewa
 Oelbohrinsel
@@ -372,18 +382,24 @@ Oelkraftwerk
 Elektrownia naftowa
 Oelpumpe
 Kiwon
+old_farm
+Farma
 Papierfabrik
 Zak³ady papiernicze
 Pharmaceutics
 Farmaceutyka
 Raffinerie
 Wytwórnia plastiku
+Rinnenkraftwerk
+Elektrownia s³oneczna
 Saegewerk
 Tartak
 SaegewerkMHz
 Tartak
 Sandquarry
 Piaskownia
+scrap_yard
+Wysypisko ¶mieci
 Stahlwerk
 Huta ¿elaza
 Stonequarry
@@ -392,44 +408,50 @@ supermarket
 Supermarket
 TANKE
 Stacja benzynowa
+thermisches_Solarkraftwerk
+Elektrownia s³oneczna
+Turmkraftwerk
+Elektrownia s³oneczna
+Windkraftwerk
+Elektrownia wiatrowa
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
 Samochody
 beer
-piwo
+Piwo
 Bretter
 Deski
 Buecher
 Ksi±¿ki
 canned_food
-konserw
+Konserwy
 Chemicals
 Chemikalia
 Concrete
 Beton
 Eisenerz
-rudy ¿elaza
+Ruda ¿elaza
 fish
-ryb
+Ryby
 flour
-m±ka
+M±ka
 food
-¿ywno¶ci
+¯ywno¶æ
 Gasoline
 Benzyna
 grain
-zbo¿a
+Zbo¿e
 Holz
 Drewno
 Kohle
 Wêgiel
 meat
-miêsa
+Miêso
 Medicine
 Lekarstwa
 milk
-mleko
+Mleko
 Moebel
 Meble
 None
@@ -447,17 +469,19 @@ Piasek
 Stahl
 Stal
 Stone
-kamienia
+Kamieñ
 waste
-mieci
+¦mieci
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
 flowers
 Kwiaty
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
+Couple
+Zakochani\n\nZakochani s± w¶ród nas, jak ¶piewa³a Helena Majdaniec... Podgl±danie ich raczej nie jest zbyt kulturalne, wiêc lepiej wybudowaæ jak±¶ liniê.
 Cyclist
-Rowerzysta
+Rowerzysta\n\nLech Janerka "jedzie na rowerze do byle gdzie". Ten osobnik zapewne te¿, bo gdyby wiedzia³ gdzie jechaæ, skorzysta³by z komunikacji publicznej.
 pedestrian_1
 Pan Tomek\n\nPan Tomkek w³a¶nie przyjecha³. Za kilka dni bêdzie wraca³, s±dz±c po minie wybierze te same linie, bo wygl±da na zadowolonego.
 pedestrian_2
@@ -467,7 +491,7 @@ Policjant\n\nPolicjant pilnuje tu porz±dku. Ma wiele pracy, w zat³oczonej okolic
 pedestrian_4
 Kieszonkowiec\n\nKieszonkowiec wygl±da i zachowuje siê jak przeciêtny przechodzieñ. Wystarczy jednak, aby¶ na chwilê spu¶ci³ z oka swój baga¿, a chêtnie siê nim zaopiekuje.
 pedestrian_child
-Matka z dzieckiem
+Matka z dzieckiem\n\nZbyt du¿y t³ok jest w autobusach, wiêc ta pani woli chodziæ bezpiecznie ni¿ nara¿aæ dziecko na uduszenie w przepchanym busie.
 pedestrian_dog
 Cz³owiek z psem\n\nNie masz z kim chodziæ na spacery? Kup sobie psa.
 Woman
@@ -475,17 +499,21 @@ Kobieta
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
-sztuk
+sztuki
 CATEGORY_02
-towarów sypkich
+towary sypkie
 CATEGORY_03
 ropa/benzyna
 CATEGORY_04
-mro¿onek
+mro¿onki
 CATEGORY_05
-mleka
+p³ynne produkty
 CATEGORY_06
 drewna
+CATEGORY_07
+proszek/granulki
+rolls
+rolki
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 choose_point
@@ -500,12 +528,20 @@ NoAirEntry
 Zakaz wjazdu (pas startowy)
 NoEntry
 Zakaz wjazdu
+preSignals
+Pre-sygna³
+preSignalsMonorail
+Pre-sygna³
 RailClose
 Zakaz wjazdu
+Railgate
+Brama kolejowa
+Roadgate
+Brama drogowa
 Signals
-Semafory
+Semafor
 SignalsMonorail
-Semafory
+Semafor
 traffic_light
 Sygnalizacja ¶wietlna
 #_____________________________________tree______________________________________
@@ -902,10 +938,16 @@ concrete_sleeper_track
 Tor na podk³adach betonowych
 dirt_road
 Droga polna
+elevated_monorail
+Podwy¿szona kolej jednoszynowa
 gavel_road
 Droga szutrowa
 Kanal
 Kana³
+MaglevTrack
+Kolej magnetyczna
+MaglevTrackElevated
+Podwy¿szona kolej magnetyczna
 mip_cobblestone_road
 Kocie ³by
 monorail
@@ -914,6 +956,10 @@ Powerline
 Linia wysokiego napiêcia
 Rillenschienen
 Tory tramwajowe
+river
+Rzeka
+river2
+Strumyk
 runway_grass
 Trawiasty pas startowy
 runway_modern

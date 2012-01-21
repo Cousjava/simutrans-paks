@@ -5,7 +5,7 @@
 #                            Language: pt Portugues                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 31.10 2011                           #
+#                            Date Created: 8.01 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                               Adilson - Adilson                              #
@@ -94,6 +94,10 @@ Esta é a sede da sua empresa!
 Esta é a sede da sua empresa!
 3headquarter
 Esta é a sede da sua empresa!
+4headquarter
+Esta é a sede da sua empresa!
+5headquarter
+Esta é a sede da sua empresa!
 A1_ALTE_KIRCHE
 Velha igreja\n\nUma famosa antiga igreja com\nmaravilhosas pinturas.\nTodo o mundo deveria ver\neste fantástico edifício.\n\n
 A2_SCHLOSS1
@@ -134,6 +138,8 @@ CarDepot
 Garagem
 CarStop
 Baia de carga
+CattlePorch
+Curral de gado
 ChannelStop
 Cais de canal
 COM_00_01
@@ -266,6 +272,8 @@ GCG1TrainStop
 Grande saguão de estação, lado esquerdo
 GCG2TrainStop
 Grande saguão de estação, lado direito
+GCGTrainStop
+Grande saguão de estação, lado esquerdo
 Goods_StationBlg
 Armazém
 Gymnasium
@@ -334,6 +342,8 @@ IND_02_09
 Estação de tratamento de\nefluentes industriais \n
 IND_02_10
 Uma velha e limpa fábrica de sabão\n\nEsta velha fábrica de sabão ainda se parece tão limpa quanto no dia em que foi erguida. Um verdadeiro milagre!
+KingsbridgeMonastry
+Monastério\n\nTodas as manhãs, são ouvidas vozes misteriosas vindas desse montastério... ou são apenas os pobres noviços tomando banho frio logo após acordar?
 LargeShipStop
 Molhe com guindaste
 leftShipStop
@@ -434,8 +444,12 @@ RES_01_16
 Bloco de residências operárias\n\nInício do século XX, construiu-se muitas destas residências para as famílias dos operários das fábricas. As moradias eram bem apertadas. Aos domingos, a rua era totalmente tomada pelas crianças e os adultos ficam na calçada conversando, já que dentro não tinha muito espaço.
 RES_01_17
 Edifício inglês do século XIX\n\nEste edifício abriga uma comunidade de imigrantes singular. Aqui moram uma viúva de um antigo magnata da siderurgia, um limpador de chaminés aposentado que mais tosse que fala, um capitão da marinha um tanto meio maluco e um banqueiro com 7 crianças, sendo este último mais perigoso que o capitão.
+RES_01_21
+Torre "Branco de Medo"\n\nAqui houve um síndico que tinha medo de altura e não subia o prédio de forma alguma. Um dia os moradores se revoltaram: ou ele subia ou deixaria o cargo. Ele subiu, mas ficou branco de tando medo. E os moradores pintaram o prédio de branco em homenagem à bravura do síndico.
 RES_01_22
 Edifício "Corta-céu"\n\nPoderia ser chamado arranha-céu, mas o pessoal do bairro passou a chamá-lo de "corta-céu", pois sua forma lembra a lâminas. Já os moradores do edifício não gostaram nada da ideia.
+RES_01_23
+Edifício "Toicinho"\n\nO prédio era fino e comprido, as janelas formavam estrias quando vistas à distância, e entao recebeu esse vermelho pálido. Logo os moradores do bairro passaram a apelidá-lo de "toicinho". 
 RES_02_01
 Casa com varanda\n\nA varanda além de proteger a casa do calor do verão é um ótimo lugar para os donos da casa receberem as visitas.
 RES_02_07
@@ -524,6 +538,10 @@ Motorrad
 Bicicleta motorizada
 orange_bus
 Ônibus laranja
+Pickup
+Caminhonete picape
+Roadster
+Estradeiro conversível
 yellow_car
 Carro amarelo
 #__________________________________dummy_info___________________________________
@@ -824,6 +842,10 @@ preSignalsMonorail
 Pré-semáforo de Monotrilho (para duas seções)
 RailClose
 Sentido único
+Railgate
+Portão ferroviário
+Roadgate
+Portão rodoviário
 Signals
 Semáforo ferrovário
 SignalsMonorail
@@ -1298,6 +1320,8 @@ Pferdebahn
 Junta de cavalos para bondes
 Pferdebahnwagen
 Pequeno vagão de passageiros
+PonyExpress
+Jegue Express
 Postschiff
 Navio postal
 Posttransporter
@@ -1384,12 +1408,18 @@ Viggen
 Barco Viggen
 VolvoFH12
 Volvo FH12
+Wastecarriage
+Reboque para lixo
+wastewagon
+Vagão para lixo
 X2000back
 X2000, traseira
 X2000car
 X2000, vagão
 X2000front
 X2000, dianteira
+Zeppelin
+Zepelim
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road
