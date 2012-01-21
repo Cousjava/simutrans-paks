@@ -126,7 +126,7 @@ Image[5][0]=fences.1.2
 --------------------
 Obj=ground
 Name=Marker
-copyright=prissi
+copyright=HjM
 # the front part (obtained by hang&7) for single slopes
 Image[0][0]=hjm-marker_st.0.6
 Image[1][0]=hjm-marker_st.0.1
