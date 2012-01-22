@@ -94,7 +94,7 @@ clean:
 	@echo "===> CLEAN"
 	@rm -fr $(PAKDIR) $(DESTFILE).tbz2 $(DESTFILE).zip
 
-addons: 	clean copy_addons $(ADDON_DIRS64) zip
+addons: 	clean copy_addons $(ADDON_DIRS64)
 
 copy_addons:
 	@echo "===> COPY"
