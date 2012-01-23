@@ -1,0 +1,72 @@
+#
+# Engines
+#
+# author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
+#
+# created:  2012/01/07
+# update:   2012/01/22
+#
+
+obj=vehicle
+name=hjm-powerdrop_1
+copyright=HjM
+waytype=track
+freight=None
+payload=0
+speed=120
+cost=550000
+weight=30
+length=8
+power=800
+RunningCost=120
+Sound=1
+intro_year=1929
+intro_month=1
+retire_year=5460
+retire_month=1
+
+#
+# Cannot be grouped after another vehicle in a convoi.
+#
+Constraint[Prev][0]=none
+
+EmptyImage[W]=hjm-powerdrop_1.0.1
+EmptyImage[S]=hjm-powerdrop_1.0.0
+EmptyImage[E]=hjm-powerdrop_1.0.1
+EmptyImage[N]=hjm-powerdrop_1.0.0
+EmptyImage[SE]=hjm-powerdrop_1.1.0
+EmptyImage[NW]=hjm-powerdrop_1.1.0
+EmptyImage[NE]=hjm-powerdrop_1.0.2
+EmptyImage[SW]=hjm-powerdrop_1.0.2
+------------------------------
+obj=vehicle
+name=hjm-powernut
+copyright=HjM
+waytype=track
+freight=None
+payload=0
+speed=80
+cost=800000
+weight=50
+length=8
+power=1700
+RunningCost=160
+Sound=1
+intro_year=1929
+intro_month=1
+retire_year=5460
+retire_month=1
+
+#
+# Cannot be grouped after another vehicle in a convoi.
+#
+Constraint[Prev][0]=none
+
+EmptyImage[W]=hjm-powernut.0.1
+EmptyImage[S]=hjm-powernut.0.0
+EmptyImage[E]=hjm-powernut.0.1
+EmptyImage[N]=hjm-powernut.0.0
+EmptyImage[SE]=hjm-powernut.1.0
+EmptyImage[NW]=hjm-powernut.1.0
+EmptyImage[NE]=hjm-powernut.0.2
+EmptyImage[SW]=hjm-powernut.0.2
