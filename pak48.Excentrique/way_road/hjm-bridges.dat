@@ -1,0 +1,34 @@
+#----------------------------------------------------------------------------
+#
+# Powertrail bridges for Simutrans pak48.Excentrique
+#
+# author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
+#
+# created:  2012/01/24
+# update:   2012/01/24
+#
+#----------------------------------------------------------------------------
+Obj=bridge
+name=hjm-powertrail_nobridge
+copyright=HjM
+waytype=road
+cost=24000
+maintenance=2000
+topspeed=90
+max_lenght=10
+intro_year=1929
+intro_month=1
+retire_year=5460
+retire_month=1
+icon=> hjm-nobridge.3.0
+cursor=hjm-nobridge.3.1
+BackImage[NS][0]=hjm-nobridge.0.0
+BackImage[EW][0]=hjm-nobridge.0.1
+BackStart[N][0]=hjm-nobridge.0.0
+BackStart[S][0]=hjm-nobridge.0.0
+BackStart[E][0]=hjm-nobridge.0.1
+BackStart[W][0]=hjm-nobridge.0.1
+BackRamp[N][0]=hjm-nobridge.2.4
+BackRamp[S][0]=hjm-nobridge.2.7
+BackRamp[E][0]=hjm-nobridge.2.6
+BackRamp[W][0]=hjm-nobridge.2.5
