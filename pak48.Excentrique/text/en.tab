@@ -78,6 +78,8 @@ show waiting bars
 Show waiting bars
 hide transparent
 Make hidden trees transparent
+COLOR_CHOOSE\n
+Choose a primary\nand secondary\nvehicle color from\nthe right hand lists.
 minimum length of rivers
 Min. length of rivers
 maximum length of rivers
@@ -114,6 +116,8 @@ player -1
 Human
 player 0
 Public Service
+Screenshot\ngespeichert.\n
+Screenshot saved.\n
 #____________________________________bridge_____________________________________
 #____________________________________bridge_____________________________________
 #___________________________________building____________________________________

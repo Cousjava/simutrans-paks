@@ -4,8 +4,8 @@
 # --- Hajo: Testing overrides ---
 Neue Welt
 Neue Karte
-3WORLD_CHOOSE
-Größe: %d MB
+COLOR_CHOOSE\n
+Wählen Sie eine pri-\nmäre und sekundäre\nFahrzeugfarbe aus\nden Listen rechts.
 Land industries
 Anzahl Industriezweige:
 Percent Electricity
@@ -66,6 +66,8 @@ residential house
 Funkensammler.
 shops and stores
 Funkenreinigung.
+join game
+Online Spiel
 #____________________________________bridge_____________________________________
 #____________________________________bridge_____________________________________
 #___________________________________building____________________________________
