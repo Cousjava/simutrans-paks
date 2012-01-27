@@ -71,9 +71,9 @@ RunningCost=8
 #
 # Availability of the vehicle in the game (from ... to)
 #
-intro_year=1929
+intro_year=1
 intro_month=1
-retire_year=9999
+retire_year=5460
 retire_month=1
 
 #

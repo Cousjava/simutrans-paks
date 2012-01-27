@@ -12,8 +12,10 @@ cost=40000
 maintenance=800
 topspeed=200
 max_weight=100
-intro_year = 1920
-intro_month = 7
+intro_year=1
+intro_month=1
+retire_year=5460
+retire_month=1
 waytype=track
 # skin
 icon=> hjm_enerrail.3.0
@@ -47,8 +49,10 @@ cost=20000
 maintenance=400
 topspeed=120
 max_weight=100
-intro_year = 1920
-intro_month = 7
+intro_year=1
+intro_month=1
+retire_year=5460
+retire_month=1
 waytype=track
 # skin
 icon=> hjm_enerrail-green.3.0

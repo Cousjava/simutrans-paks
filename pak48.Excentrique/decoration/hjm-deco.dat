@@ -8,14 +8,14 @@
 #
 Obj=ground_obj
 Name=hjm-deco_1
-copyright=Hajo
+copyright=HjM
 cost=0
 noinfo=1
 trees_on_top=0
 DistributionWeight=15
-intro_year=1929
+intro_year=1
 intro_month=1
-retire_year=9999
+retire_year=5460
 retire_month=1
 #desert, tropic, mediterran, temperate, tundra, rocky, arctic
 climates=tropic, mediterran, temperate, tundra, rocky
@@ -25,14 +25,14 @@ Image[0][1]=hjm-deco.1.0
 ----------------------------------------
 Obj=ground_obj
 Name=hjm-deco_2
-copyright=Hajo
+copyright=HjM
 cost=0
 noinfo=1
 trees_on_top=0
 DistributionWeight=15
-intro_year=1929
+intro_year=1
 intro_month=1
-retire_year=9999
+retire_year=5460
 retire_month=1
 #desert, tropic, mediterran, temperate, tundra, rocky, arctic
 climates=tropic, mediterran, temperate, tundra, rocky
@@ -42,14 +42,14 @@ Image[0][1]=hjm-deco.1.1
 ----------------------------------------
 Obj=ground_obj
 Name=hjm-deco_3
-copyright=Hajo
+copyright=HjM
 cost=0
 noinfo=1
 trees_on_top=0
 DistributionWeight=15
-intro_year=1929
+intro_year=1
 intro_month=1
-retire_year=9999
+retire_year=5460
 retire_month=1
 #desert, tropic, mediterran, temperate, tundra, rocky, arctic
 climates=tropic, mediterran, temperate, tundra, rocky
@@ -62,14 +62,14 @@ Image[0][4]=hjm-deco.0.5
 ----------------------------------------
 Obj=ground_obj
 Name=hjm-deco_4
-copyright=Hajo
+copyright=HjM
 cost=0
 noinfo=1
 trees_on_top=0
 DistributionWeight=15
-intro_year=1929
+intro_year=1
 intro_month=1
-retire_year=9999
+retire_year=5460
 retire_month=1
 #desert, tropic, mediterran, temperate, tundra, rocky, arctic
 climates=tropic, mediterran, temperate, tundra, rocky

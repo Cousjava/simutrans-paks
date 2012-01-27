@@ -8,6 +8,10 @@
 #
 Obj=misc
 Name=PowerSource
+intro_year=1
+intro_month=1
+retire_year=5460
+retire_month=1
 Image[0]=hjm-powerline.1.0
 Image[1]=hjm-powerline.1.1
 # winter
@@ -20,6 +24,10 @@ Image[5]=hjm-powerline.1.4
 --------------------
 Obj=misc
 Name=PowerDest
+intro_year=1
+intro_month=1
+retire_year=5460
+retire_month=1
 Image[0]=hjm-powerline.0.0
 Image[1]=hjm-powerline.0.1
 # winter
