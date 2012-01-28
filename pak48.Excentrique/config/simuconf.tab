@@ -196,5 +196,5 @@ display_height = 560
 
 ###################################ui stuff##################################
 
-front_window_bar_color=0
+front_window_bar_color=2
 bottom_window_bar_color=0
