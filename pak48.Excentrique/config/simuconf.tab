@@ -194,4 +194,7 @@ display_width = 768
 # also see readme.txt, -screensize option
 display_height = 560
 
+###################################ui stuff##################################
 
+front_window_bar_color=0
+bottom_window_bar_color=0
