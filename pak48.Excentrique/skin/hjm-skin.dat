@@ -96,22 +96,29 @@ Image[22]=> hjm-skin_st.1.4
 # Unstick
 Image[23]=> hjm-skin_st.1.5
 
-Image[24]=-
-Image[25]=-
-Image[26]=-
-Image[27]=-
-Image[28]=-
-Image[29]=-
-Image[30]=-
-Image[31]=-
-Image[32]=-
-Image[33]=-
-Image[34]=-
-Image[35]=-
+Image[24]=> hjm-skin_st.5.2
+Image[25]=> hjm-skin_st.5.3
+
+Image[26]=> hjm-skin_st.4.4
+Image[27]=> hjm-skin_st.4.5
+Image[28]=> hjm-skin_st.4.6
+Image[29]=> hjm-skin_st.4.7
+
+Image[30]=> hjm-skin_st.5.0
+Image[31]=> hjm-skin_st.5.1
+
+# V-Scroll, background
+Image[32]=> hjm-skin_st.4.3
+# V-Scroll, top
+Image[33]=> hjm-skin_st.4.0
+# V-Scroll, bottom
+Image[34]=> hjm-skin_st.4.1
+# V-Scroll, body
+Image[35]=> hjm-skin_st.4.2
 
 # Window resize gadget
 #Image[36]=> hjm-skin_st.4.1,-16,-16
-Image[36]=> hjm-skin_st.4.1
+Image[36]=> hjm-skin_st.0.1
 
 # Center
 Image[37]=> hjm-skin_st.0.0
