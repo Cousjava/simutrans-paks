@@ -110,7 +110,8 @@ Image[34]=-
 Image[35]=-
 
 # Window resize gadget
-Image[36]=-
+#Image[36]=> hjm-skin_st.4.1,-16,-16
+Image[36]=> hjm-skin_st.4.1
 
 # Center
 Image[37]=> hjm-skin_st.0.0
