@@ -129,9 +129,9 @@ Helle Kristallstruktur\n\nEine uralte, gewachsene Struktur aus leuchtenden Krist
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 hjm-dolphincar
-Renaht Delphinwagen
+T-Lam Delphinwagen
 hjm-sharkwaggon
-Renaht Haibus
+T-Lam Haibus
 hjm-beatnut
 Renaht Rhythmusnuss
 hjm-fanfaporter
@@ -143,7 +143,7 @@ Renaht Transfunkel
 hjm-powernut
 Renaht Treibnuss
 hjm-darter
-Renaht Pfeilzug
+Renaht Zugpfeil
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 hjm-powertrack
@@ -153,10 +153,10 @@ Schwunknochen-Magnetschiene
 #__________________________________way-object___________________________________
 #__________________________________way-object___________________________________
 hjm-enerrail_station
-Schwunknochen Ruhepunkt
+Schwunknochen-Station
 #____________________________________depots_____________________________________
 #____________________________________depots_____________________________________
 hjm-car-depot
-Depotspule
+Kraftspurdepot
 hjm-enerrail-depot
-Magnettropfen Depot
+Magnetgleiterdepot
