@@ -1,13 +1,12 @@
+#----------------------------------------------------------------------------
 #
 # Commercial city buildings for Simutrans pak48.Excentrique
 #
 # author: Hj. Malthaner <h_malthaner@users.sourceforge.net>
 #
-# created:  ???
-# update:   2010/11/04
+# created:  2010/11/04
+# update:   2012/01/31
 #
-#----------------------------------------------------------------------------
-# List of commercial buildings
 #----------------------------------------------------------------------------
 Obj=building
 Name=01_COM
@@ -99,6 +98,42 @@ Obj=building
 Name=08_COM
 copyright=HjM
 Type=com
+Level=5
+intro_year=1
+intro_month=1
+retire_year=5460
+retire_month=1
+BackImage[0][0][0][0][0][0]=img_com/hjm-eggs.0.0
+BackImage[0][0][0][0][0][1]=img_com/hjm-eggs.0.0
+--------------------
+Obj=building
+Name=09_COM
+copyright=HjM
+Type=com
+Level=6
+intro_year=1
+intro_month=1
+retire_year=5460
+retire_month=1
+BackImage[0][0][0][0][0][0]=img_com/hjm-eggs.0.1
+BackImage[0][0][0][0][0][1]=img_com/hjm-eggs.0.1
+--------------------
+Obj=building
+Name=97_COM
+copyright=HjM
+Type=com
+Level=7
+intro_year=1
+intro_month=1
+retire_year=5460
+retire_month=1
+BackImage[0][0][0][0][0][0]=img_com/hjm-eggs.0.2
+BackImage[0][0][0][0][0][1]=img_com/hjm-eggs.0.2
+--------------------
+Obj=building
+Name=98_COM
+copyright=HjM
+Type=com
 Level=7
 intro_year=1
 intro_month=1
@@ -108,7 +143,7 @@ BackImage[0][0][0][0][0][0]=img_com/hjm-ringcones.0.2
 BackImage[0][0][0][0][0][1]=img_com/hjm-ringcones.0.2
 --------------------
 Obj=building
-Name=05_COM
+Name=99_COM
 copyright=HjM
 Type=com
 Level=7

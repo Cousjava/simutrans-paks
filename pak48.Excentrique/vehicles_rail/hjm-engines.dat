@@ -70,3 +70,35 @@ EmptyImage[SE]=hjm-powernut.1.0
 EmptyImage[NW]=hjm-powernut.1.0
 EmptyImage[NE]=hjm-powernut.0.2
 EmptyImage[SW]=hjm-powernut.0.2
+------------------------------
+obj=vehicle
+name=hjm-darter
+copyright=HjM
+waytype=track
+freight=None
+payload=0
+speed=160
+cost=800000
+weight=50
+length=8
+power=1600
+RunningCost=180
+# Sound=1
+intro_year=1
+intro_month=1
+retire_year=5460
+retire_month=1
+
+#
+# Cannot be grouped after another vehicle in a convoi.
+#
+Constraint[Prev][0]=none
+
+EmptyImage[W]=hjm-darter.0.2
+EmptyImage[S]=hjm-darter.0.1
+EmptyImage[E]=hjm-darter.0.0
+EmptyImage[N]=hjm-darter.0.3
+EmptyImage[SE]=hjm-darter.1.0
+EmptyImage[NW]=hjm-darter.1.2
+EmptyImage[NE]=hjm-darter.1.3
+EmptyImage[SW]=hjm-darter.1.1
