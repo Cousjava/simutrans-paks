@@ -150,7 +150,7 @@ void banner_t::zeichnen(koord pos, koord gr )
 
         // Hajo: display a white line at top, because there is no title bar
 	display_fillbox_wh(pos.x, pos.y + 16, gr.x, 1, COL_GREY6, false);
-	
+
 	const KOORD_VAL text_line = (line / 9) * 2;
 	const KOORD_VAL text_offset = line % 9;
 	const KOORD_VAL left = pos.x + margin;
