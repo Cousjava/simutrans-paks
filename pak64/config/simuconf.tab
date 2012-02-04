@@ -57,6 +57,10 @@ factory_worker_maximum_towns = 4
 # if enabled (default = 0 off) stops may have different capacities for passengers, mail, and  freight
 seperate_halt_capacities = 0
 
+# lowest possible income with speedbonus (1000=1) default 125
+bonus_basefactor = 1255
+
+
 # three modes (default = 0)
 # 1: the payment is only relative to the distance to next interchange, 2 to the trips destination (default 0 is distance since last stop)
 pay_for_total_distance = 0
@@ -119,6 +123,23 @@ water_animation_ms = 250
 # how long is a diagonal (512: faktor 2=1024/512, old way, 724: sqrt(2)=1024/724
 # THIS WILL BE ONLY USED, WHEN THIS FILE IS IN THE pakxyz/config!
 diagonal_multiplier = 724
+
+# special pak set colors for day and night
+special_color[0]=0x57, 0x65, 0x6F, 0xD3, 0xC3, 0x80 // Dark windows, lit yellowish at night
+special_color[1]=0x7F, 0x9B, 0xF1, 0x80, 0xC3, 0xD3 // Lighter windows, lit blueish at night
+special_color[2]=0xFF, 0xFF, 0x53, 0xFF, 0xFF, 0x53 // Yellow light
+special_color[3]=0xFF, 0x21, 0x1D, 0xFF, 0x21, 0x1D // Red light
+special_color[4]=0x01, 0xDD, 0x01, 0x01, 0xDD, 0x01 // Green light
+special_color[5]=0x6B, 0x6B, 0x6B, 0x6B, 0x6B, 0x6B // Non-darkening grey 1 (menus)
+special_color[6]=0x9B, 0x9B, 0x9B, 0x9B, 0x9B, 0x9B // Non-darkening grey 2 (menus)
+special_color[7]=0xB3, 0xB3, 0xB3, 0xB3, 0xB3, 0xB3 // non-darkening grey 3 (menus)
+special_color[8]=0xC9, 0xC9, 0xC9, 0xC9, 0xC9, 0xC9 // Non-darkening grey 4 (menus)
+special_color[9]=0xDF, 0xDF, 0xDF, 0xDF, 0xDF, 0xDF // Non-darkening grey 5 (menus)
+special_color[10]=0xE3, 0xE3, 0xFF, 0xFF, 0xFF, 0xE3 // Nearly white light at day, yellowish light at night
+special_color[11]=0xC1, 0xB1, 0xD1, 0xD3, 0xC3, 0x80 // Windows, lit yellow
+special_color[12]=0x4D, 0x4D, 0x4D, 0xD3, 0xC3, 0x80 // Windows, lit yellow
+special_color[13]=0xE1, 0x00, 0xE1, 0xE1, 0x00, 0xE1 // purple light for signals
+special_color[14]=0x01, 0x01, 0xFF, 0x01, 0x01, 0xFF // blue light
 
 ###################################money stuff##################################
 #

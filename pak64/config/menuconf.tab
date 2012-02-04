@@ -151,6 +151,7 @@ general_tool[35]=,,11,^K
 #WKZ_ADD_MESSAGE_TOOL=32 (internal use)
 #WKZ_TOGGLE_RESERVATION=33
 #WKZ_VIEW_OWNER=34
+#WKZ_HIDE_UNDER_CURSOR=35
 #
 simple_tool[0]=0,p
 simple_tool[1]=1,W
