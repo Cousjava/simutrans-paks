@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2001 Hansj�rg Malthaner
- * hansjoerg.malthaner@gmx.de
+ * Copyright (c) 2001 Hj. Malthaner
+ * h_malthaner@users.sourceforge.net
  *
  * This file is part of the Simugraph engine and may not be used
  * in other projects without written permission of the author.
@@ -28,6 +28,8 @@
 typedef uint16 PIXVAL;
 
 int large_font_height = 10;
+static font_t large_font = { 0, 0, 0, NULL, NULL, 11 };
+struct font_t * large_font_p = &large_font;
 
 KOORD_VAL tile_raster_width = 16; // zoomed
 KOORD_VAL base_tile_raster_width = 16; // original
@@ -76,6 +78,7 @@ int display_set_unicode(int)
 
 bool display_load_font(const char*)
 {
+        large_font.line_spacing = 11;
 	return true;
 }
 

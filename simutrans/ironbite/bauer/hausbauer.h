@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2002 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2002 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -19,10 +19,10 @@ class spieler_t;
 class werkzeug_waehler_t;
 
 /**
- * Diese Klasse übernimmt den Bau von mehrteiligen Gebäuden. Sie kennt die
- * Beschreibung (fast) aller Gebäude was Typ, Höhe, Größe, Bilder, Animationen
- * angeht. Diese Daten werden aus "gebaeude.tab" gelesen. Für Denkmäler wird
- * eine Liste der ungebauten geführt.
+ * Diese Klasse ï¿½bernimmt den Bau von mehrteiligen Gebï¿½uden. Sie kennt die
+ * Beschreibung (fast) aller Gebï¿½ude was Typ, Hï¿½he, Grï¿½ï¿½e, Bilder, Animationen
+ * angeht. Diese Daten werden aus "gebaeude.tab" gelesen. Fï¿½r Denkmï¿½ler wird
+ * eine Liste der ungebauten gefï¿½hrt.
  * @author Hj. Malthaner/V. Meyer
  */
 class hausbauer_t
@@ -37,7 +37,7 @@ private:
 
 public:
 	/**
-	 * Gebäude, die das Programm direkt kennen muß
+	 * Gebï¿½ude, die das Programm direkt kennen muï¿½
 	 */
 	static const haus_besch_t* elevated_foundation_besch;
 
@@ -47,7 +47,7 @@ private:
 	static vector_tpl<const haus_besch_t*> headquarter;
 
 	/**
-	 * Liefert einen zufälligen Eintrag aus der Liste.
+	 * Liefert einen zufï¿½lligen Eintrag aus der Liste.
 	 * @author V. Meyer
 	 */
 	static const haus_besch_t* waehle_aus_liste(vector_tpl<const haus_besch_t*>& liste, uint16 time, bool ignore_retire, climate cl);
@@ -70,21 +70,21 @@ public:
 	static void fill_menu(werkzeug_waehler_t* wzw, haus_besch_t::utyp, waytype_t wt, sint16 sound_ok, const karte_t* welt);
 
 	/**
-	 * Gewerbegebäude passend zum Level liefern. Zur Zeit sind die Einträge
+	 * Gewerbegebï¿½ude passend zum Level liefern. Zur Zeit sind die Eintrï¿½ge
 	 * eindeutig aufsteigend.
 	 * @author V. Meyer
 	 */
 	static const haus_besch_t* get_gewerbe(int level, uint16 time, climate cl);
 
 	/**
-	 * Industriegebäude passend zum Level liefern. Zur Zeit sind die Einträge
+	 * Industriegebï¿½ude passend zum Level liefern. Zur Zeit sind die Eintrï¿½ge
 	 * eindeutig aufsteigend.
 	 * @author V. Meyer
 	 */
 	static const haus_besch_t* get_industrie(int level, uint16 time, climate cl);
 
 	/**
-	 * Wohnhaus passend zum Level liefern. Zur Zeit sind die Einträge
+	 * Wohnhaus passend zum Level liefern. Zur Zeit sind die Eintrï¿½ge
 	 * eindeutig aufsteigend.
 	 * @author V. Meyer
 	 */
@@ -118,7 +118,7 @@ public:
 
 	/**
 	 * Teilt dem Hausbauer mit, dass eine neue Karte geladen oder generiert wird.
-	 * In diesem Fall müssen wir die Liste der ungebauten Denkmäler wieder füllen.
+	 * In diesem Fall mï¿½ssen wir die Liste der ungebauten Denkmï¿½ler wieder fï¿½llen.
 	 * @author V. Meyer
 	 */
 	static void neue_karte();

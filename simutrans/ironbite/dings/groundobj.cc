@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -35,12 +35,12 @@
 
 
 /*
- * Diese Tabelle ermöglicht das Auffinden dient zur Auswahl eines Baumtypen
+ * Diese Tabelle ermï¿½glicht das Auffinden dient zur Auswahl eines Baumtypen
  */
 vector_tpl<const groundobj_besch_t *> groundobj_t::groundobj_typen(0);
 
 /*
- * Diese Tabelle ermöglicht das Auffinden einer Beschreibung durch ihren Namen
+ * Diese Tabelle ermï¿½glicht das Auffinden einer Beschreibung durch ihren Namen
  */
 stringhashtable_tpl<groundobj_besch_t *> groundobj_t::besch_names;
 
@@ -220,7 +220,7 @@ void groundobj_t::rdwr(loadsave_t *file)
 
 
 /**
- * Öffnet ein neues Beobachtungsfenster für das Objekt.
+ * ï¿½ffnet ein neues Beobachtungsfenster fï¿½r das Objekt.
  * @author Hj. Malthaner
  */
 void groundobj_t::zeige_info()
@@ -233,7 +233,7 @@ void groundobj_t::zeige_info()
 
 
 /**
- * @return Einen Beschreibungsstring für das Objekt, der z.B. in einem
+ * @return Einen Beschreibungsstring fï¿½r das Objekt, der z.B. in einem
  * Beobachtungsfenster angezeigt wird.
  * @author Hj. Malthaner
  */

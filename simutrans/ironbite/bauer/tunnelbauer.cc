@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -209,12 +209,12 @@ koord3d tunnelbauer_t::finde_ende(karte_t *welt, koord3d pos, koord zv, waytype_
 			}
 			if(  !ribi  ) {
 				// Ende am Hang - Endschiene fehlt oder hat keine ribis
-				// Wir prüfen noch, ob uns dort ein anderer Weg stört
+				// Wir prï¿½fen noch, ob uns dort ein anderer Weg stï¿½rt
 				if(  !gr->hat_wege()  ||  gr->hat_weg(wegtyp)  ) {
 					return pos;
 				}
 			}
-			return koord3d::invalid;  // Was im Weg (schräger Hang oder so)
+			return koord3d::invalid;  // Was im Weg (schrï¿½ger Hang oder so)
 		}
 		// tunnel slope underneath?
 		gr = welt->lookup(pos +koord3d(0,0,-1));
@@ -451,7 +451,7 @@ const char *tunnelbauer_t::remove(karte_t *welt, spieler_t *sp, koord3d start, w
 	const char    *msg;
 	koord3d   pos = start;
 
-	// Erstmal das ganze Außmaß des Tunnels bestimmen und sehen,
+	// Erstmal das ganze Auï¿½maï¿½ des Tunnels bestimmen und sehen,
 	// ob uns was im Weg ist.
 	tmp_list.insert(pos);
 	marker.markiere(welt->lookup(pos));
@@ -473,7 +473,7 @@ const char *tunnelbauer_t::remove(karte_t *welt, spieler_t *sp, koord3d start, w
 		else {
 			part_list.insert(pos);
 		}
-		// Alle Tunnelteile auf Entfernbarkeit prüfen!
+		// Alle Tunnelteile auf Entfernbarkeit prï¿½fen!
 		msg = from->kann_alle_obj_entfernen(sp);
 
 		if(msg != NULL) {
@@ -491,7 +491,7 @@ const char *tunnelbauer_t::remove(karte_t *welt, spieler_t *sp, koord3d start, w
 		}
 	} while (!tmp_list.empty());
 
-	// Jetzt geht es ans löschen der Tunnel
+	// Jetzt geht es ans lï¿½schen der Tunnel
 	while (!part_list.empty()) {
 		pos = part_list.remove_first();
 		grund_t *gr = welt->lookup(pos);
@@ -509,7 +509,7 @@ const char *tunnelbauer_t::remove(karte_t *welt, spieler_t *sp, koord3d start, w
 		reliefkarte_t::get_karte()->calc_map_pixel( pos.get_2d() );
 	}
 
-	// Und die Tunnelenden am Schluß
+	// Und die Tunnelenden am Schluï¿½
 	while (!end_list.empty()) {
 		pos = end_list.remove_first();
 

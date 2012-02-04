@@ -1,5 +1,5 @@
 /*
- *  Copyright (c) 1997 - 2002 by Volker Meyer & Hansjörg Malthaner
+ *  Copyright (c) 1997 - 2002 by Volker Meyer & Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  */
@@ -17,7 +17,7 @@
  *      Volker Meyer
  *
  *  Beschreibung:
- *      Verschiedene Untergründe - viellcht bald weisse Berge?
+ *      Verschiedene Untergrï¿½nde - viellcht bald weisse Berge?
  *
  *  Kindknoten:
  *	0   Name

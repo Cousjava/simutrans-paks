@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -148,7 +148,7 @@ int *tabfileobj_t::get_ints(const char *key)
 			count++;
 		}
 	}
-	// Ergebnisvektor erstellen und füllen
+	// Ergebnisvektor erstellen und fï¿½llen
 	result = new int[count + 1];
 
 	result[0] = count;
@@ -181,7 +181,7 @@ sint64 *tabfileobj_t::get_sint64s(const char *key)
 			count++;
 		}
 	}
-	// Ergebnisvektor erstellen und füllen
+	// Ergebnisvektor erstellen und fï¿½llen
 	result = new sint64[count + 1];
 
 	result[0] = count;

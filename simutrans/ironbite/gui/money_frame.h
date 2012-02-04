@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -107,7 +107,7 @@ private:
 public:
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.
-	 * @return den Dateinamen für die Hilfe, oder NULL
+	 * @return den Dateinamen fï¿½r die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
 	const char * get_hilfe_datei() const {return "finances.txt";}
@@ -119,7 +119,7 @@ public:
 	money_frame_t(spieler_t *sp);
 
 	/**
-	 * komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
+	 * komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
 	 * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
 	 * in dem die Komponente dargestellt wird.
 	 * @author Hj. Malthaner

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2001 Hansj�rg Malthaner
+ * Copyright (c) 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  */
@@ -15,6 +15,10 @@
 #define simgraph_h
 
 extern int large_font_height;
+
+// Hajo: at the moment this is our only font.
+extern struct font_t * large_font_p;
+
 
 #include "simcolor.h"
 #include "unicode.h"

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansj�rg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -498,7 +498,7 @@ bool route_t::intern_calc_route(karte_t *welt, const koord3d ziel, const koord3d
 /* searches route, uses intern_calc_route() for distance between stations
  * handles only driving in stations by itself
  * corrected 12/2005 for station search
- * @author Hansj�rg Malthaner, prissi
+ * @author Hj. Malthaner, prissi
  */
 bool route_t::calc_route(karte_t *welt, const koord3d ziel, const koord3d start, driver_t *fahr, const sint32 max_khm, sint32 max_len )
 {

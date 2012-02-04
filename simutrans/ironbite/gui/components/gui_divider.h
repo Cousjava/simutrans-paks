@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2001 Hansjörg Malthaner
+ * Copyright (c) 2001 Hj. Malthaner
  * Written (w) 2001 Markus Weber
  *
  * This file is part of the Simutrans project under the artistic licence.

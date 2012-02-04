@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -62,7 +62,7 @@ void sve_info_t::rdwr(loadsave_t *file)
 
 /**
  * Aktion, die nach Knopfdruck gestartet wird.
- * @author Hansjörg Malthaner
+ * @author Hj. Malthaner
  */
 void loadsave_frame_t::action(const char *filename)
 {
@@ -132,7 +132,7 @@ loadsave_frame_t::loadsave_frame_t(karte_t *welt, bool do_load) : savegame_frame
 
 /**
  * Manche Fenster haben einen Hilfetext assoziiert.
- * @return den Dateinamen für die Hilfe, oder NULL
+ * @return den Dateinamen fï¿½r die Hilfe, oder NULL
  * @author Hj. Malthaner
  */
 const char * loadsave_frame_t::get_hilfe_datei() const

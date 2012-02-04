@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  * (see license.txt)
@@ -17,7 +17,7 @@ class karte_t;
  * pos_liste_t:
  *
  * Liefert nach wachsender Entfernung von (0, 0) sortiert alle Koordinaten
- * mit x und y im Bereich [-max_xy;max_xy] außer (0, 0) selber.
+ * mit x und y im Bereich [-max_xy;max_xy] auï¿½er (0, 0) selber.
  * (0, 0) wird als Endekenzeichen verwendet.
  *
  * @author V. Meyer
@@ -33,7 +33,7 @@ class pos_liste_t {
 
 public:
 	/**
-	* @param max_xy (Maximalwert für x und y-Position)
+	* @param max_xy (Maximalwert fï¿½r x und y-Position)
 	*
 	* @author V. Meyer
 	*/
@@ -49,8 +49,8 @@ public:
 /**
  * pos_liste_wh_t:
  *
- * Erweiterte Version von pos_liste_t. Liefert die umliegenden Positionen für
- * einen Bereich der Größe h mal w.
+ * Erweiterte Version von pos_liste_t. Liefert die umliegenden Positionen fï¿½r
+ * einen Bereich der Grï¿½ï¿½e h mal w.
  * (0, 0) wird wieder als Endekenzeichen verwendet.
  *
  * @author V. Meyer

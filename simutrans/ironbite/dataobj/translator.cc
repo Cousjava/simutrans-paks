@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -94,7 +94,7 @@ static void dump_hashtable(stringhashtable_tpl<const char*>* tbl)
 
 /* first two file fuctions needed in connection with utf */
 
-/* checks, if we need a unicode translation (during load only done for identifying strings like "Auflösen")
+/* checks, if we need a unicode translation (during load only done for identifying strings like "Auflï¿½sen")
  * @date 2.1.2005
  * @author prissi
  */
@@ -201,7 +201,7 @@ void translator::load_custom_list( int lang, vector_tpl<char*> &name_list, const
 {
 	FILE* file;
 
-	// alle namen aufräumen
+	// alle namen aufrï¿½umen
 	for(uint32 i=0; i<name_list.get_count(); i++) {
 		free( name_list[i] );
 	}

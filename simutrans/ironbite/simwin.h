@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2003 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2003 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  * (see license.txt)
@@ -20,7 +20,7 @@ struct event_t;
 /* Typen fuer die Fenster */
 enum wintype {
 	w_info         = 1,	// Ein Info-Fenster
-	w_do_not_delete= 2, // Ein Info-Fenster dessen GUI-Objekt beim schliessen nicht gelöscht werden soll
+	w_do_not_delete= 2, // Ein Info-Fenster dessen GUI-Objekt beim schliessen nicht gelï¿½scht werden soll
 	w_no_overlap   = 4, // try to place it below a previous window with the same flag
 	w_time_delete  = 8	// deletion after MESG_WAIT has elapsed
 };
@@ -66,8 +66,9 @@ enum magic_numbers {
 	magic_halt_list=magic_line_list+MAX_PLAYER_COUNT,
 	magic_line_management_t=magic_halt_list+MAX_PLAYER_COUNT,
 	magic_ai_options_t=magic_line_management_t+MAX_PLAYER_COUNT,
+	magic_pwd_t=magic_ai_options_t+MAX_PLAYER_COUNT,
 	// normal stuff
-	magic_jump=magic_ai_options_t+MAX_PLAYER_COUNT,
+	magic_jump=magic_pwd_t+MAX_PLAYER_COUNT,
 	magic_curiositylist,
 	magic_factorylist,
 	magic_goodslist,
@@ -93,7 +94,7 @@ enum magic_numbers {
 	magic_max = magic_info_pointer+843
 };
 
-// Haltezeit für Nachrichtenfenster
+// Haltezeit fï¿½r Nachrichtenfenster
 #define MESG_WAIT 80
 
 

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -33,7 +33,7 @@ signal_t::signal_t( karte_t *welt, loadsave_t *file) :
 
 
 /**
- * @return Einen Beschreibungsstring für das Objekt, der z.B. in einem
+ * @return Einen Beschreibungsstring fï¿½r das Objekt, der z.B. in einem
  * Beobachtungsfenster angezeigt wird.
  * @author Hj. Malthaner
  */

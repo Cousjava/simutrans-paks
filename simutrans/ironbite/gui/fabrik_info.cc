@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2003 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2003 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -136,7 +136,7 @@ void fabrik_info_t::set_fenstergroesse(koord groesse)
 
 
 /**
- * komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
+ * komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
  * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
  * in dem die Komponente dargestellt wird.
  *

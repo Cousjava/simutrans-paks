@@ -1,6 +1,6 @@
 /**
  * convoi_t Klasse f�r Fahrzeugverb�nde
- * von Hansj�rg Malthaner
+ * von Hj. Malthaner
  */
 
 #include <stdlib.h>

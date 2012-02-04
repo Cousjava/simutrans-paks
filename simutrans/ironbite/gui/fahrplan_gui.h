@@ -148,7 +148,7 @@ public:
 
 	/**
 	 * Zeichnet das Frame
-	 * @author Hansjörg Malthaner
+	 * @author Hj. Malthaner
 	 */
 	void zeichnen(koord pos, koord gr);
 

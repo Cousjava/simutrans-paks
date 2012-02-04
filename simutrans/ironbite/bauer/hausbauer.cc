@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2002 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2002 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -33,7 +33,7 @@
 #include "hausbauer.h"
 
 /*
- * Die verschiedenen Gebäudegruppen sind in eigenen Listen gesammelt.
+ * Die verschiedenen Gebï¿½udegruppen sind in eigenen Listen gesammelt.
  */
 static vector_tpl<const haus_besch_t*> wohnhaeuser;
 static vector_tpl<const haus_besch_t*> gewerbehaeuser;
@@ -45,13 +45,13 @@ vector_tpl<const haus_besch_t *> hausbauer_t::denkmaeler;
 vector_tpl<const haus_besch_t *> hausbauer_t::ungebaute_denkmaeler;
 
 /*
- * Diese Tabelle ermöglicht das Auffinden einer Beschreibung durch ihren Namen
+ * Diese Tabelle ermï¿½glicht das Auffinden einer Beschreibung durch ihren Namen
  */
 static stringhashtable_tpl<const haus_besch_t*> besch_names;
 
 /*
- * Alle Gebäude, die die Anwendung direkt benötigt, kriegen feste IDs.
- * Außerdem müssen wir dafür sorgen, dass sie alle da sind.
+ * Alle Gebï¿½ude, die die Anwendung direkt benï¿½tigt, kriegen feste IDs.
+ * Auï¿½erdem mï¿½ssen wir dafï¿½r sorgen, dass sie alle da sind.
  */
 const haus_besch_t *hausbauer_t::elevated_foundation_besch = NULL;
 
@@ -71,8 +71,8 @@ static bool compare_haus_besch(const haus_besch_t* a, const haus_besch_t* b)
 {
 	int diff = a->get_level() - b->get_level();
 	if (diff == 0) {
-		/* Gleiches Level - wir führen eine künstliche, aber eindeutige Sortierung
-		 * über den Namen herbei. */
+		/* Gleiches Level - wir fï¿½hren eine kï¿½nstliche, aber eindeutige Sortierung
+		 * ï¿½ber den Namen herbei. */
 		diff = strcmp(a->get_name(), b->get_name());
 	}
 	return diff < 0;
@@ -86,8 +86,8 @@ static bool compare_hq_besch(const haus_besch_t* a, const haus_besch_t* b)
 		diff = a->get_level() - b->get_level();
 	}
 	if (diff == 0) {
-		/* Gleiches Level - wir führen eine künstliche, aber eindeutige Sortierung
-		 * über den Namen herbei. */
+		/* Gleiches Level - wir fï¿½hren eine kï¿½nstliche, aber eindeutige Sortierung
+		 * ï¿½ber den Namen herbei. */
 		diff = strcmp(a->get_name(), b->get_name());
 	}
 	return diff < 0;
@@ -101,8 +101,8 @@ static bool compare_station_besch(const haus_besch_t* a, const haus_besch_t* b)
 		diff = a->get_level() - b->get_level();
 	}
 	if (diff == 0) {
-		/* Gleiches Level - wir führen eine künstliche, aber eindeutige Sortierung
-		 * über den Namen herbei. */
+		/* Gleiches Level - wir fï¿½hren eine kï¿½nstliche, aber eindeutige Sortierung
+		 * ï¿½ber den Namen herbei. */
 		diff = strcmp(a->get_name(), b->get_name());
 	}
 	return diff < 0;
@@ -452,7 +452,7 @@ gebaeude_t* hausbauer_t::baue(karte_t* welt, spieler_t* sp, koord3d pos, int org
 					if(lt) {
 						gr->obj_remove(lt);
 					}
-					gr->obj_loesche_alle(sp);	// alles weg außer vehikel ...
+					gr->obj_loesche_alle(sp);	// alles weg auï¿½er vehikel ...
 				}
 				needs_ground_recalc |= gr->get_grund_hang()!=hang_t::flach;
 				grund_t *gr2 = new fundament_t(welt, gr->get_pos(), gr->get_grund_hang());

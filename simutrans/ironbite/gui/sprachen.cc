@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -119,7 +119,7 @@ sprachengui_t::sprachengui_t() :
 		char prop_font_file_name [1024];
 		sprintf(prop_font_file_name, "%s%s", FONT_PATH_X, fontname);
 		bool ok = true;
-		font_type fnt;
+		font_t fnt;
 		fnt.screen_width = NULL;
 		fnt.char_data = NULL;
 		if(  *fontname==0  ||  !load_font(&fnt,prop_font_file_name)  ) {

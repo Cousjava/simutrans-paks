@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  * (see license.txt)
@@ -26,8 +26,8 @@ stringhashtable_tpl<const fussgaenger_besch_t *> fussgaenger_t::table;
 
 static bool compare_fussgaenger_besch(const fussgaenger_besch_t* a, const fussgaenger_besch_t* b)
 {
-	/* Gleiches Level - wir führen eine künstliche, aber eindeutige Sortierung
-	 * über den Namen herbei. */
+	/* Gleiches Level - wir fï¿½hren eine kï¿½nstliche, aber eindeutige Sortierung
+	 * ï¿½ber den Namen herbei. */
 	return strcmp(a->get_name(), b->get_name())<0;
 }
 

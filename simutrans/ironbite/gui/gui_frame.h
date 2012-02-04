@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -25,7 +25,7 @@ class loadsave_t;
 class spieler_t;
 
 /**
- * Eine Klasse für Fenster mit Komponenten.
+ * Eine Klasse fï¿½r Fenster mit Komponenten.
  * Anders als die anderen Fensterklasen in Simutrans ist dies
  * ein richtig Komponentenorientiertes Fenster, das alle
  * aktionen an die Komponenten delegiert.
@@ -86,7 +86,7 @@ public:
 	virtual ~gui_frame_t() {}
 
 	/**
-	 * Fügt eine Komponente zum Fenster hinzu.
+	 * Fï¿½gt eine Komponente zum Fenster hinzu.
 	 * @author Hj. Malthaner
 	 */
 	void add_komponente(gui_komponente_t *komp) { container.add_komponente(komp); }
@@ -118,14 +118,14 @@ public:
 	virtual void rdwr( loadsave_t * ) {}
 
 	/**
-	 * gibt farbinformationen fuer Fenstertitel, -ränder und -körper
-	 * zurück
+	 * gibt farbinformationen fuer Fenstertitel, -rï¿½nder und -kï¿½rper
+	 * zurï¿½ck
 	 * @author Hj. Malthaner
 	 */
 	virtual PLAYER_COLOR_VAL get_titelcolor() const;
 
 	/**
-	 * @return gibt wunschgroesse für das Darstellungsfenster zurueck
+	 * @return gibt wunschgroesse fï¿½r das Darstellungsfenster zurueck
 	 * @author Hj. Malthaner
 	 */
 	koord get_fenstergroesse() const { return groesse; }
@@ -159,7 +159,7 @@ public:
 
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.
-	 * @return den Dateinamen für die Hilfe, oder NULL
+	 * @return den Dateinamen fï¿½r die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
 	virtual const char * get_hilfe_datei() const {return NULL;}
@@ -208,7 +208,7 @@ public:
 	resize_modes get_resizemode(void) { return resize_mode; }
 
 	/**
-	 * Prüft, ob eine Position innerhalb der Komponente liegt.
+	 * Prï¿½ft, ob eine Position innerhalb der Komponente liegt.
 	 * @author Hj. Malthaner
 	 */
 	virtual bool getroffen(int x, int y)
@@ -225,7 +225,7 @@ public:
 	virtual bool infowin_event(const event_t *ev);
 
 	/**
-	 * komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
+	 * komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
 	 * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
 	 * in dem die Komponente dargestellt wird.
 	 * @author Hj. Malthaner

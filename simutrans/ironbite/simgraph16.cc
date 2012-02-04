@@ -1,6 +1,6 @@
 /*
  * Copyright 1997, 2001 Hj. Malthaner
- * hansjoerg.malthaner@gmx.de
+ * h_malthaner@users.sourceforge.net
  * Copyright 2010 Simutrans contributors
  * Available under the Artistic License (see license.txt)
  *
@@ -106,12 +106,10 @@ static uint8 active_ribi = 15; // set all to active
  */
 static bool has_unicode = false;
 
-static font_type large_font = { 0, 0, 0, NULL, NULL };
-
-// needed for gui
 int large_font_height = 10;
+static font_t large_font = { 0, 0, 0, NULL, NULL, 11 };
+struct font_t * large_font_p = &large_font;
 
-#define LIGHT_COUNT (15)
 #define MAX_PLAYER_COUNT (16)
 
 #define RGBMAPSIZE (0x8000+LIGHT_COUNT+16)
@@ -128,7 +126,7 @@ static PIXVAL rgbmap_day_night[RGBMAPSIZE];
 
 
 /*
- * Hajo: same as rgbmap_day_night, but allways daytime colors
+ * Hajo: same as rgbmap_day_night, but always daytime colors
  */
 static PIXVAL rgbmap_all_day[RGBMAPSIZE];
 
@@ -247,7 +245,7 @@ static int night_shift = -1;
 /*
  * Hajo: speical colors during daytime
  */
-static const uint8 day_lights[LIGHT_COUNT*3] = {
+COLOR_VAL display_day_lights[LIGHT_COUNT*3] = {
 	0x57,	0x65,	0x6F, // Dark windows, lit yellowish at night
 	0x7F,	0x9B,	0xF1, // Lighter windows, lit blueish at night
 	0xFF,	0xFF,	0x53, // Yellow light
@@ -269,7 +267,7 @@ static const uint8 day_lights[LIGHT_COUNT*3] = {
 /*
  * Hajo: speical colors during nighttime
  */
-static const uint8 night_lights[LIGHT_COUNT*3] = {
+COLOR_VAL display_night_lights[LIGHT_COUNT*3] = {
 	0xD3,	0xC3,	0x80, // Dark windows, lit yellowish at night
 	0x80,	0xC3,	0xD3, // Lighter windows, lit blueish at night
 	0xFF,	0xFF,	0x53, // Yellow light
@@ -290,7 +288,7 @@ static const uint8 night_lights[LIGHT_COUNT*3] = {
 
 // the players colors and colors for simple drawing operations
 // each eight colors are corresponding to a player color
-static const uint8 special_pal[224*3]=
+static const COLOR_VAL special_pal[224*3]=
 {
 	36, 75, 103,
 	57, 94, 124,
@@ -1674,7 +1672,7 @@ static void calc_base_pal_from_night_shift(const int night)
 	}
 	// special light colors (actually, only non-darkening greys should be used
 	for(i=0;  i<LIGHT_COUNT;  i++  ) {
-		specialcolormap_day_night[i+224] = system_get_color( day_lights[i*3 + 0], day_lights[i*3 + 1], 	day_lights[i*3 + 2] );
+		specialcolormap_day_night[i+224] = system_get_color( display_day_lights[i*3 + 0], display_day_lights[i*3 + 1], 	display_day_lights[i*3 + 2] );
 	}
 	// init with black for forbidden colors
 	for(i=224+LIGHT_COUNT;  i<256;  i++  ) {
@@ -1689,13 +1687,13 @@ static void calc_base_pal_from_night_shift(const int night)
 
 	// Lights
 	for (i = 0; i < LIGHT_COUNT; i++) {
-		const int day_R = day_lights[i*3+0];
-		const int day_G = day_lights[i*3+1];
-		const int day_B = day_lights[i*3+2];
+		const int day_R = display_day_lights[i*3+0];
+		const int day_G = display_day_lights[i*3+1];
+		const int day_B = display_day_lights[i*3+2];
 
-		const int night_R = night_lights[i*3+0];
-		const int night_G = night_lights[i*3+1];
-		const int night_B = night_lights[i*3+2];
+		const int night_R = display_night_lights[i*3+0];
+		const int night_G = display_night_lights[i*3+1];
+		const int night_B = display_night_lights[i*3+2];
 
 		const int R = (day_R * day + night_R * night2) >> 2;
 		const int G = (day_G * day + night_G * night2) >> 2;
@@ -3011,12 +3009,13 @@ int	display_set_unicode(int use_unicode)
 
 bool display_load_font(const char* fname)
 {
-	font_type fnt;
+	font_t fnt;
 	if (load_font(&fnt, fname)) {
 		free(large_font.screen_width);
 		free(large_font.char_data);
 		large_font = fnt;
 		large_font_height = large_font.height;
+                large_font.line_spacing = 11;
 		return true;
 	}
 	else {
@@ -3141,7 +3140,7 @@ unsigned short get_prev_char_with_metrics(const char* &text, const char *const t
  */
 int display_calc_proportional_string_len_width(const char* text, size_t len)
 {
-	const font_type* const fnt = &large_font;
+	const font_t* const fnt = &large_font;
 	unsigned int c, width = 0;
 	int w;
 
@@ -3220,7 +3219,7 @@ static unsigned char get_h_mask(const int xL, const int xR, const int cL, const 
  */
 int display_text_proportional_len_clip(KOORD_VAL x, KOORD_VAL y, const char* txt, int flags, const PLAYER_COLOR_VAL color_index, long len)
 {
-	const font_type* const fnt = &large_font;
+	const font_t* const fnt = &large_font;
 	KOORD_VAL cL, cR, cT, cB;
 	uint32 c;
 	size_t iTextPos = 0; // pointer on text position: prissi

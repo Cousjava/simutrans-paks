@@ -16,7 +16,7 @@ private:
 protected:
 	/**
 	* Aktion, die nach Knopfdruck gestartet wird.
-	* @author Hansjörg Malthaner
+	* @author Hj. Malthaner
 	*/
 	virtual void action(const char *filename);
 

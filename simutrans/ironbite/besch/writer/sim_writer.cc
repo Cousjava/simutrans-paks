@@ -1,10 +1,10 @@
 /*
- *  Copyright (c) 1997 - 2002 by Volker Meyer & Hansjörg Malthaner
+ *  Copyright (c) 1997 - 2002 by Volker Meyer & Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  *
  *  Modulbeschreibung:
- *		Statische Instanzen alle writer_t Klassen die für Simutrans benötigt
+ *		Statische Instanzen alle writer_t Klassen die fï¿½r Simutrans benï¿½tigt
  *		werden
  */
 

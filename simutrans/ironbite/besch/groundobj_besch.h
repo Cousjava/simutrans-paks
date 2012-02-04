@@ -1,5 +1,5 @@
 /*
- *  Copyright (c) 1997 - 2002 by Volker Meyer & Hansjörg Malthaner
+ *  Copyright (c) 1997 - 2002 by Volker Meyer & Hj. Malthaner
  * 2004-2008 by Markus Pristovsek
  *
  */

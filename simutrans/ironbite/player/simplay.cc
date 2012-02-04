@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -83,6 +83,7 @@ spieler_t::spieler_t(karte_t *wl, uint8 nr) :
 	konto_ueberzogen = 0;
 	automat = false;		// Start nicht als automatischer Spieler
 	locked = false;	/* allowe to change anything */
+	unlock_pending = false;
 
 	headquarter_pos = koord::invalid;
 	headquarter_level = 0;
@@ -142,26 +143,6 @@ const char* spieler_t::get_name(void) const
 void spieler_t::set_name(const char *new_name)
 {
 	tstrncpy( spieler_name_buf, new_name, lengthof(spieler_name_buf) );
-}
-
-
-/* returns FALSE when unlocking!
- */
-bool spieler_t::set_unlock( const uint8 *hash )
-{
-	if(  pwd_hash.empty()  ) {
-		locked = false;
-	}
-	else if(  hash!=NULL  ) {
-		// matches password?
-		locked = (pwd_hash != hash);
-	}
-	if(  !locked  &&  player_nr==1  ) {
-		// public player unlocked:
-		// allow to change active player
-		welt->get_settings().set_allow_player_change(true);
-	}
-	return locked;
 }
 
 
@@ -965,9 +946,8 @@ DBG_DEBUG("spieler_t::rdwr()","player %i: loading %i halts.",welt->sp2num( this 
 			file->rdwr_byte(pwd_hash[i]);
 		}
 		if(  file->is_loading()  ) {
-			locked = true;
-			// disallow all actions, if password set (might be unlocked by karte_t::set_werkzeug() )
-			set_unlock( NULL );
+			// disallow all actions, if password set (might be unlocked by password gui )
+			locked = !pwd_hash.empty();
 		}
 	}
 
@@ -998,8 +978,8 @@ void spieler_t::rotate90( const sint16 y_size )
 
 
 /**
- * Rückruf, um uns zu informieren, dass ein Vehikel ein Problem hat
- * @author Hansjörg Malthaner
+ * Rï¿½ckruf, um uns zu informieren, dass ein Vehikel ein Problem hat
+ * @author Hj. Malthaner
  * @date 26-Nov-2001
  */
 void spieler_t::bescheid_vehikel_problem(convoihandle_t cnv,const koord3d ziel)

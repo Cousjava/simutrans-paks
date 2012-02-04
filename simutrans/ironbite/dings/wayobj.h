@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2004 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2004 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -72,7 +72,7 @@ public:
 
 	/**
 	* 'Jedes Ding braucht einen Typ.'
-	* @return Gibt den typ des Objekts zurück.
+	* @return Gibt den typ des Objekts zurï¿½ck.
 	* @author Hj. Malthaner
 	*/
 	typ get_typ() const { return wayobj; }

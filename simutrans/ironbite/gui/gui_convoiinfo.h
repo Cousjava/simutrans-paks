@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -38,7 +38,7 @@ private:
 
 public:
 	/**
-	* @param cnv das Handle für den anzuzeigenden Convoi.
+	* @param cnv das Handle fï¿½r den anzuzeigenden Convoi.
 	* @author Hj. Malthaner
 	*/
 	gui_convoiinfo_t(convoihandle_t cnv, int n);

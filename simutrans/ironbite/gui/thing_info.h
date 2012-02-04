@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -48,7 +48,7 @@ public:
 	virtual void info(cbuffer_t& buf) const { get_ding()->info(buf); }
 
 	/**
-	* komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
+	* komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
 	* das Fenster, d.h. es sind die Bildschirmkoordinaten des Fensters
 	* in dem die Komponente dargestellt wird.
 	*/

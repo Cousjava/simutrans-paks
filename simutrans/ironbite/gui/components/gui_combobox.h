@@ -1,7 +1,7 @@
 /*
  * with a connected edit field
  *
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -133,7 +133,7 @@ public:
 	void set_selection(int s);
 
 	/**
-	 * Vorzugsweise sollte diese Methode zum Setzen der Größe benutzt werden,
+	 * Vorzugsweise sollte diese Methode zum Setzen der Grï¿½ï¿½e benutzt werden,
 	 * obwohl groesse public ist.
 	 * @author Hj. Malthaner
 	 */

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansj�rg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  * Written (w) 2001 by Markus Weber
  * filtering added by Volker Meyer
  *

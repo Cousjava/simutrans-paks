@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -13,7 +13,7 @@
 
 
 /**
- * Klasse für runwayn in Simutrans.
+ * Klasse fï¿½r runwayn in Simutrans.
  * speed >250 are for take of (maybe rather use system type in next release?)
  *
  * @author Hj. Malthaner

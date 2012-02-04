@@ -8,6 +8,7 @@
  */
 
 #include "../simcolor.h"
+#include "../font.h"
 #include "../simevent.h"
 #include "../simimg.h"
 #include "../simworld.h"
@@ -34,8 +35,10 @@ banner_t::banner_t( karte_t *w) : gui_frame_t(""),
 	line = 0;
 	logo.set_pos( koord( 238, 40 ) );
 	add_komponente( &logo );
+
 	const koord size( BUTTON_WIDTH*3+40, 16+113+12*LINESPACE+2*BUTTON_HEIGHT+12 );
 	set_fenstergroesse( size );
+
 	new_map.init( button_t::roundbox, "Neue Karte", koord( 10, size.y-16-2*BUTTON_HEIGHT-12 ), koord( BUTTON_WIDTH, BUTTON_HEIGHT ) );
 	new_map.add_listener( this );
 	add_komponente( &new_map );
@@ -90,17 +93,22 @@ void banner_t::zeichnen(koord pos, koord gr )
 {
 	gui_frame_t::zeichnen( pos, gr );
 	
-	const int color_text = COL_WHITE; // COL_GREY6;
+	// Hajo: set up colors. Maybe we need some global rules to
+	// define which colors to use for which semantics of text ...
+	const int color_text = COL_WHITE;
 	const int color_high = 87;
         const int color_shadow = COL_GREY1;
         const int color_warn = COL_LIGHT_ORANGE + 1;
-        const int margin = 10;
+        
+	// Hajo: layout constants. Also global some day?
+	const int margin = 10;
         const int indent = 24;
+        const int line_space = large_font_p->line_spacing;
 	
 	KOORD_VAL yp = pos.y+22;
 	display_shadow_proportional( pos.x + margin, yp, color_high, color_shadow,
                                      "Welcome to Simutrans Iron Bite!", true );
-	yp += LINESPACE+5;
+	yp += line_space+5;
 #ifdef REVISION
 	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
                                      "Version " VERSION_NUMBER " " VERSION_DATE " r" QUOTEME(REVISION), true );
@@ -108,40 +116,40 @@ void banner_t::zeichnen(koord pos, koord gr )
 	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
                                      "Version " VERSION_NUMBER " " VERSION_DATE, true );
 #endif
-	yp += LINESPACE+7;
+	yp += line_space+7;
 
 	display_shadow_proportional( pos.x + margin, yp, color_high, color_shadow,
                                      "This version is developed by", true );
-	yp += LINESPACE+5;
+	yp += line_space+5;
 	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
                                      "Hj. Malthaner, based on", true );
-	yp += LINESPACE+2;
+	yp += line_space+2;
 	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
                                      "Simutrans 111.2 by", true );
-	yp += LINESPACE+2;
+	yp += line_space+2;
 	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
                                      "the Simutrans Team, released", true );
-	yp += LINESPACE+2;
+	yp += line_space+2;
 	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
                                      "under the Artistic Licence.", true );
-	yp += LINESPACE+7;
+	yp += line_space+7;
 
 	display_shadow_proportional( pos.x + margin, yp, color_warn, color_shadow,
                                      "Selling of the program is forbidden.", true );
-	yp += LINESPACE+5;
+	yp += line_space+5;
 
 	display_shadow_proportional( pos.x + margin, yp, color_high, color_shadow,
                                      "For questions and support please visit:", true );
-	yp += LINESPACE+2;
+	yp += line_space+2;
 	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
                                      "http://www.simutrans.com", true );
-	yp += LINESPACE+2;
+	yp += line_space+2;
 	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
                                      "http://forum.simutrans.com", true );
-	yp += LINESPACE+2;
+	yp += line_space+2;
 	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
                                      "http://wiki.simutrans-germany.com/", true );
-	yp += LINESPACE+7;
+	yp += line_space+7;
 
 	// now the scrolling
 	static const char* const scrolltext[] = {

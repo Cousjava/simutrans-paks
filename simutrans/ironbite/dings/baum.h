@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -17,7 +17,7 @@
 #include "../dataobj/umgebung.h"
 
 /**
- * Bäume in Simutrans.
+ * Bï¿½ume in Simutrans.
  * @author Hj. Malthaner
  */
 class baum_t : public ding_t
@@ -74,7 +74,7 @@ public:
 	static void recalc_outline_color() { outline_color = (umgebung_t::hide_trees  &&  umgebung_t::hide_with_transparency) ? (TRANSPARENT25_FLAG | OUTLINE_FLAG | COL_BLACK) : 0; }
 
 	/**
-	 * Berechnet Alter und Bild abhängig vom Alter
+	 * Berechnet Alter und Bild abhï¿½ngig vom Alter
 	 * @author Hj. Malthaner
 	 */
 	void calc_bild();

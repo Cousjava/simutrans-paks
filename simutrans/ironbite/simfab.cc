@@ -1,7 +1,7 @@
 /*
  * Fabrikfunktionen und Fabrikbau
  *
- * Hansj�rg Malthaner
+ * Hj. Malthaner
  *
  *
  * 25.03.00 Anpassung der Lagerkapazit�ten: min. 5 normale Lieferungen

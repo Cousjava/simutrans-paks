@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansj�rg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  * filtering added by Volker Meyer
  *
  * This file is part of the Simutrans project under the artistic licence.

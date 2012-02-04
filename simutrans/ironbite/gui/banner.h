@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2004 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2004 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -15,9 +15,8 @@
 class karte_t;
 
 /**
- * Eine Klasse, die ein Fenster zur Auswahl von bis zu acht
- * Parametern für ein Werkzeug per Icon darstellt.
- *
+ * Game splash screen (aka banner)
+
  * @author Hj. Malthaner
  */
 class banner_t : public gui_frame_t, action_listener_t
@@ -46,8 +45,8 @@ public:
 	const char *get_name() const {return ""; }
 
 	/**
-	* gibt farbinformationen fuer Fenstertitel, -ränder und -körper
-	* zurück
+	* gibt farbinformationen fuer Fenstertitel, -rï¿½nder und -kï¿½rper
+	* zurï¿½ck
 	* @author Hj. Malthaner
 	*/
 	PLAYER_COLOR_VAL get_titelcolor() const {return WIN_TITEL; }
@@ -64,7 +63,7 @@ public:
 	bool infowin_event(const event_t *ev);
 
 	/**
-	* komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
+	* komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
 	* das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
 	* in dem die Komponente dargestellt wird.
 	* @author Hj. Malthaner

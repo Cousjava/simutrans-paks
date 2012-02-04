@@ -152,7 +152,7 @@ static int dsp_read_bdf_glyph(FILE *fin, uint8 *data, uint8 *screen_w, int char_
 /**
  * Reads a single character
  */
-static bool dsp_read_bdf_font(FILE* fin, font_type* font)
+static bool dsp_read_bdf_font(FILE* fin, font_t* font)
 {
 	uint8* screen_widths = NULL;
 	uint8* data = NULL;
@@ -228,7 +228,7 @@ static bool dsp_read_bdf_font(FILE* fin, font_type* font)
 }
 
 
-bool load_font(font_type* fnt, const char* fname)
+bool load_font(font_t* fnt, const char* fname)
 {
 	FILE* f = fopen(fname, "rb");
 	int c;

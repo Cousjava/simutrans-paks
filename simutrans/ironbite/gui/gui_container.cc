@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -19,7 +19,7 @@ gui_container_t::gui_container_t() : gui_komponente_t(), komp_focus(NULL)
 
 
 /**
- * Fügt eine Komponente zum Container hinzu.
+ * Fï¿½gt eine Komponente zum Container hinzu.
  * @author Hj. Malthaner
  */
 void gui_container_t::add_komponente(gui_komponente_t *komp)

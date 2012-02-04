@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -28,7 +28,7 @@ class vehikel_besch_t;
 /**
  * Depot frame, handles all interaction with a vehicle depot.
  *
- * @author Hansjörg Malthaner
+ * @author Hj. Malthaner
  * @date 22-Nov-01
  */
 class depot_frame_t : public gui_frame_t,
@@ -37,7 +37,7 @@ class depot_frame_t : public gui_frame_t,
 private:
 	/**
 	 * The depot to display
-	 * @author Hansjörg Malthaner
+	 * @author Hj. Malthaner
 	 */
 	depot_t *depot;
 
@@ -247,7 +247,7 @@ public:
 
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.
-	 * @return den Dateinamen für die Hilfe, oder NULL
+	 * @return den Dateinamen fï¿½r die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
 	const char * get_hilfe_datei() const {return "depot.txt";}
@@ -271,7 +271,7 @@ public:
 
 	/**
 	 * Zeichnet das Frame
-	 * @author Hansjörg Malthaner
+	 * @author Hj. Malthaner
 	 */
 	void zeichnen(koord pos, koord gr);
 

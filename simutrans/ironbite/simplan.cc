@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  * (see license.txt)
@@ -181,8 +181,8 @@ void planquadrat_t::kartenboden_setzen(grund_t *bd)
 
 
 /**
- * Ersetzt Boden alt durch neu, löscht Boden alt.
- * @author Hansjörg Malthaner
+ * Ersetzt Boden alt durch neu, lï¿½scht Boden alt.
+ * @author Hj. Malthaner
  */
 void planquadrat_t::boden_ersetzen(grund_t *alt, grund_t *neu)
 {
@@ -498,7 +498,7 @@ void planquadrat_t::display_overlay(const sint16 xpos, const sint16 ypos, const 
 
 
 /**
- * Manche Böden können zu Haltestellen gehören.
+ * Manche Bï¿½den kï¿½nnen zu Haltestellen gehï¿½ren.
  * Der Zeiger auf die Haltestelle wird hiermit gesetzt.
  * @author Hj. Malthaner
  */

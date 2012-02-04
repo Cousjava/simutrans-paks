@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -64,8 +64,8 @@ void gui_frame_t::set_fenstergroesse(koord groesse)
 
 
 /**
- * gibt farbinformationen fuer Fenstertitel, -ränder und -körper
- * zurück
+ * gibt farbinformationen fuer Fenstertitel, -rï¿½nder und -kï¿½rper
+ * zurï¿½ck
  * @author Hj. Malthaner
  */
 PLAYER_COLOR_VAL gui_frame_t::get_titelcolor() const
@@ -134,7 +134,7 @@ void gui_frame_t::resize(const koord delta)
 
 
 /**
- * komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
+ * komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
  * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
  * in dem die Komponente dargestellt wird.
  * @author Hj. Malthaner

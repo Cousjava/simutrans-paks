@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -51,7 +51,7 @@ public:
 	gui_komponente_t(bool _focusable = false) : visible(true), focusable(_focusable) {}
 
 	/**
-	* Virtueller Destruktor, damit Klassen sauber abgeleitet werden können
+	* Virtueller Destruktor, damit Klassen sauber abgeleitet werden kï¿½nnen
 	* @author Hj. Malthaner
 	*/
 	virtual ~gui_komponente_t() {}
@@ -95,13 +95,13 @@ public:
 	}
 
 	/**
-	* Größe der Komponente.
+	* Grï¿½ï¿½e der Komponente.
 	* @author Hj. Malthaner
 	*/
 	koord groesse;
 
 	/**
-	* Vorzugsweise sollte diese Methode zum Setzen der Größe benutzt werden,
+	* Vorzugsweise sollte diese Methode zum Setzen der Grï¿½ï¿½e benutzt werden,
 	* obwohl groesse public ist.
 	* @author Hj. Malthaner
 	*/
@@ -110,7 +110,7 @@ public:
 	}
 
 	/**
-	* Vorzugsweise sollte diese Methode zum Abfragen der Größe benutzt werden,
+	* Vorzugsweise sollte diese Methode zum Abfragen der Grï¿½ï¿½e benutzt werden,
 	* obwohl groesse public ist.
 	* @author Hj. Malthaner
 	*/
@@ -119,7 +119,7 @@ public:
 	}
 
 	/**
-	* Prüft, ob eine Position innerhalb der Komponente liegt.
+	* Prï¿½ft, ob eine Position innerhalb der Komponente liegt.
 	* @author Hj. Malthaner
 	*/
 	virtual bool getroffen(int x, int y) {

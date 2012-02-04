@@ -3,13 +3,14 @@
 
 #include "simtypes.h"
 
-struct font_type
+struct font_t
 {
 	sint16	height;
 	sint16	descent;
 	uint16 num_chars;
 	uint8 *screen_width;
 	uint8 *char_data;
+        uint8 line_spacing;
 };
 
 /*
@@ -25,6 +26,6 @@ struct font_type
 /**
  * Loads a font
  */
-bool load_font(font_type* font, const char* fname);
+bool load_font(font_t* font, const char* fname);
 
 #endif

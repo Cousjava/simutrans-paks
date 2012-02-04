@@ -1,13 +1,13 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
  *
- * Basisklasse für Wege in Simutrans.
+ * Basisklasse fï¿½r Wege in Simutrans.
  *
  * 14.06.00 getrennt von simgrund.cc
- * Überarbeitet Januar 2001
+ * ï¿½berarbeitet Januar 2001
  *
  * derived from simdings.h in 2007
  *
@@ -118,7 +118,7 @@ const char *weg_t::waytype_to_string(waytype_t wt)
 
 
 /**
- * Setzt neue Beschreibung. Ersetzt alte Höchstgeschwindigkeit
+ * Setzt neue Beschreibung. Ersetzt alte Hï¿½chstgeschwindigkeit
  * mit wert aus Beschreibung.
  * @author Hj. Malthaner
  */
@@ -218,7 +218,7 @@ void weg_t::rdwr(loadsave_t *file)
 
 
 /**
- * Info-text für diesen Weg
+ * Info-text fï¿½r diesen Weg
  * @author Hj. Malthaner
  */
 void weg_t::info(cbuffer_t & buf) const

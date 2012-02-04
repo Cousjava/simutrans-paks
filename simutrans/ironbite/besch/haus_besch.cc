@@ -1,5 +1,5 @@
 /*
- *  Copyright (c) 1997 - 2002 by Volker Meyer & Hansjörg Malthaner
+ *  Copyright (c) 1997 - 2002 by Volker Meyer & Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  */
@@ -15,7 +15,7 @@
  *      Volker Meyer
  *
  *  Beschreibung:
- *      Rechnet aus dem Index das Layout aus, zu dem diese Tile gehört.
+ *      Rechnet aus dem Index das Layout aus, zu dem diese Tile gehï¿½rt.
  */
 uint8 haus_tile_besch_t::get_layout() const
 {
@@ -31,7 +31,7 @@ uint8 haus_tile_besch_t::get_layout() const
  *
  *  Beschreibung:
  *      Bestimmt die Relativ-Position des Einzelbildes im Gesamtbild des
- *	Gebäudes.
+ *	Gebï¿½udes.
  */
 koord haus_tile_besch_t::get_offset() const
 {
@@ -82,7 +82,7 @@ bool haus_besch_t::is_connected_with_town() const
  *      Volker Meyer
  *
  *  Beschreibung:
- *      Abhängig von Position und Layout ein tile zurückliefern
+ *      Abhï¿½ngig von Position und Layout ein tile zurï¿½ckliefern
  */
 const haus_tile_besch_t *haus_besch_t::get_tile(int layout, int x, int y) const
 {

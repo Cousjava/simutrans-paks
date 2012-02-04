@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -15,7 +15,7 @@
 #include "../dataobj/umgebung.h"
 
 /**
- * Bäume in Simutrans.
+ * Bï¿½ume in Simutrans.
  * @author Hj. Malthaner
  */
 class groundobj_t : public ding_t
@@ -49,7 +49,7 @@ public:
 	image_id get_bild() const { return bild; }
 
 	/**
-	 * Berechnet Alter und Bild abhängig vom Alter
+	 * Berechnet Alter und Bild abhï¿½ngig vom Alter
 	 * @author Hj. Malthaner
 	 */
 	void calc_bild();

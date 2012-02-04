@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2001 Hansj�rg Malthaner
- * hansjoerg.malthaner@gmx.de
+ * Copyright (c) 2001 Hj. Malthaner
+ * h_malthaner@users.sourceforge.net
  *
  * This file is part of the Simugraph engine and may not be used
  * in other projects without written permission of the author.
@@ -77,10 +77,9 @@ int old_my = -1;
  */
 static bool has_unicode = false;
 
-static font_type large_font;
-
-// needed for gui
 int large_font_height = 10;
+static font_t large_font = { 0, 0, 0, NULL, NULL, 11 };
+struct font_t * large_font_p = &large_font;
 
 #define CLEAR_COLOR (239)
 #define DEFAULT_COLOR (239)
@@ -974,6 +973,7 @@ bool display_load_font(const char* fname)
 {
 	if (load_font(&large_font, fname)) {
 		large_font_height = large_font.height;
+                large_font.line_spacing = 11;
 		return true;
 	} else {
 		return false;
@@ -2115,7 +2115,7 @@ unsigned short get_prev_char_with_metrics(const char* &text, const char *const t
  */
 int display_calc_proportional_string_len_width(const char* text, size_t len)
 {
-	const font_type* const fnt = &large_font;
+	const font_t* const fnt = &large_font;
 	unsigned int c, width = 0;
 	int w;
 
@@ -2190,7 +2190,7 @@ static unsigned char get_h_mask(const int xL, const int xR, const int cL, const 
  */
 int display_text_proportional_len_clip(KOORD_VAL x, KOORD_VAL y, const char* txt, int flags, const PLAYER_COLOR_VAL color_index, long len)
 {
-	const font_type* fnt = &large_font;
+	const font_t* fnt = &large_font;
 	KOORD_VAL cL, cR, cT, cB;
 	unsigned c;
 	size_t	iTextPos = 0; // pointer on text position: prissi

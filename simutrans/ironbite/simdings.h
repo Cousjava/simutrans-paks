@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  * (see license.txt)
@@ -37,7 +37,7 @@ public:
 private:
 	/**
 	* Dies ist die Koordinate des Planquadrates in der Karte zu
-	* dem das Objekt gehört.
+	* dem das Objekt gehï¿½rt.
 	* @author Hj. Malthaner
 	*/
 	koord3d pos;
@@ -104,7 +104,7 @@ public:
 	/**
 	* Ein Objekt kann einen Besitzer haben.
 	* @return Einen Zeiger auf den Besitzer des Objekts oder NULL,
-	* wenn das Objekt niemand gehört.
+	* wenn das Objekt niemand gehï¿½rt.
 	* @author Hj. Malthaner
 	*/
 	spieler_t * get_besitzer() const;
@@ -187,17 +187,17 @@ public:
 	 * Mit diesem Konstruktor werden Objekte aus einer Datei geladen
 	 *
 	 * @param welt Zeiger auf die Karte, in die das Objekt geladen werden soll.
-	 * @param file Dateizeiger auf die Datei, die die Objektdaten enthält.
+	 * @param file Dateizeiger auf die Datei, die die Objektdaten enthï¿½lt.
 	 * @author Hj. Malthaner
 	 */
 	ding_t(karte_t *welt, loadsave_t *file);
 
 	/**
-	 * Mit diesem Konstruktor werden Objekte für den Boden[x][y][z] erzeugt,
-	 * diese Objekte müssem nach der Erzeugung mit
+	 * Mit diesem Konstruktor werden Objekte fï¿½r den Boden[x][y][z] erzeugt,
+	 * diese Objekte mï¿½ssem nach der Erzeugung mit
 	 * plan[x][y][z].obj_add explizit auf das Planquadrat gesezt werden.
 	 *
-	 * @param welt Zeiger auf die Karte, zu der das Objekt gehören soll.
+	 * @param welt Zeiger auf die Karte, zu der das Objekt gehï¿½ren soll.
 	 * @param pos Die Koordinate des Planquadrates.
 	 * @author Hj. Malthaner
 	 */
@@ -206,7 +206,7 @@ public:
 	karte_t* get_welt() const { return welt; }
 
 	/**
-	 * Der Destruktor schließt alle Beobachtungsfenster für dieses Objekt.
+	 * Der Destruktor schlieï¿½t alle Beobachtungsfenster fï¿½r dieses Objekt.
 	 * Er entfernt das Objekt aus der Karte.
 	 * @author Hj. Malthaner
 	 */
@@ -220,14 +220,14 @@ public:
 
 	/**
 	 * 'Jedes Ding braucht einen Namen.'
-	 * @return Gibt den unübersetzten(!) Namen des Objekts zurück.
+	 * @return Gibt den unï¿½bersetzten(!) Namen des Objekts zurï¿½ck.
 	 * @author Hj. Malthaner
 	 */
 	virtual const char *get_name() const {return "Ding";}
 
 	/**
 	 * 'Jedes Ding braucht einen Typ.'
-	 * @return Gibt den typ des Objekts zurück.
+	 * @return Gibt den typ des Objekts zurï¿½ck.
 	 * @author Hj. Malthaner
 	 */
 	virtual typ get_typ() const = 0;
@@ -293,7 +293,7 @@ public:
 	virtual void rdwr(loadsave_t *file);
 
 	/**
-	 * Wird nach dem Laden der Welt aufgerufen - üblicherweise benutzt
+	 * Wird nach dem Laden der Welt aufgerufen - ï¿½blicherweise benutzt
 	 * um das Aussehen des Dings an Boden und Umgebung anzupassen
 	 *
 	 * @author Hj. Malthaner
@@ -301,7 +301,7 @@ public:
 	virtual void laden_abschliessen() {}
 
 	/**
-	 * Ein Objekt gehört immer zu einem grund_t
+	 * Ein Objekt gehï¿½rt immer zu einem grund_t
 	 * @return Die aktuellen Koordinaten des Grundes.
 	 * @author V. Meyer
 	 * @see ding_t#ding_t
@@ -312,7 +312,7 @@ public:
 	inline void set_pos(koord3d k) { if(k!=pos) { set_flag(dirty); pos = k;} }
 
 	/**
-	 * @return Einen Beschreibungsstring für das Objekt, der z.B. in einem
+	 * @return Einen Beschreibungsstring fï¿½r das Objekt, der z.B. in einem
 	 * Beobachtungsfenster angezeigt wird.
 	 * @author Hj. Malthaner
 	 * @see simwin

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2004 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2004 Hj. Malthaner
  *
  * Line management
  *

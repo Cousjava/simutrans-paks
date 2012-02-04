@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  * (see license.txt)
@@ -19,7 +19,7 @@ class ding_t;
 
 /**
  * Die Karte ist aus Planquadraten zusammengesetzt.
- * Planquadrate speichern Untergründe (Böden) der Karte.
+ * Planquadrate speichern Untergrï¿½nde (Bï¿½den) der Karte.
  * @author Hj. Malthaner
  */
 class planquadrat_t
@@ -41,7 +41,7 @@ private:
 public:
 	/**
 	 * Constructs a planquadrat with initial capacity of one ground
-	 * @author Hansjörg Malthaner
+	 * @author Hj. Malthaner
 	 */
 	planquadrat_t() { ground_size=0; data.one = NULL; halt_list_count=0;  halt_list=NULL; }
 
@@ -54,19 +54,19 @@ public:
 	void kartenboden_setzen(grund_t *bd);
 
 	/**
-	* Ersetzt Boden alt durch neu, löscht Boden alt.
-	* @author Hansjörg Malthaner
+	* Ersetzt Boden alt durch neu, lï¿½scht Boden alt.
+	* @author Hj. Malthaner
 	*/
 	void boden_ersetzen(grund_t *alt, grund_t *neu);
 
 	/**
-	* Setzen einen Brücken- oder Tunnelbodens
+	* Setzen einen Brï¿½cken- oder Tunnelbodens
 	* @author V. Meyer
 	*/
 	void boden_hinzufuegen(grund_t *bd);
 
 	/**
-	* Löschen eines Brücken- oder Tunnelbodens
+	* Lï¿½schen eines Brï¿½cken- oder Tunnelbodens
 	* @author V. Meyer
 	*/
 	bool boden_entfernen(grund_t *bd);
@@ -97,7 +97,7 @@ public:
 	/**
 	* returns normal ground (always first index)
 	* @return not defined if no ground (must not happen!)
-	* @author Hansjörg Malthaner
+	* @author Hj. Malthaner
 	*/
 	inline grund_t *get_kartenboden() const { return (ground_size<=1) ? data.one : data.some[0]; }
 
@@ -118,7 +118,7 @@ public:
 	inline grund_t *get_boden_bei(const unsigned idx) const { return (ground_size<=1 ? data.one : data.some[idx]); }
 
 	/**
-	* @return Anzahl der Böden dieses Planquadrats
+	* @return Anzahl der Bï¿½den dieses Planquadrats
 	* @author Hj. Malthaner
 	*/
 	unsigned int get_boden_count() const { return ground_size; }
@@ -130,7 +130,7 @@ public:
 	void abgesenkt(karte_t *welt);
 
 	/**
-	* konvertiert Wasser zu Land wenn über Grundwasserniveau angehoben
+	* konvertiert Wasser zu Land wenn ï¿½ber Grundwasserniveau angehoben
 	* @author Hj. Malthaner
 	*/
 	void angehoben(karte_t *welt);

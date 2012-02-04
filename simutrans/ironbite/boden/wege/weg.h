@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -35,15 +35,15 @@ enum way_statistics {
 
 /**
  * <p>Der Weg ist die Basisklasse fuer alle Verkehrswege in Simutrans.
- * Wege "gehören" immer zu einem Grund. Sie besitzen Richtungsbits sowie
+ * Wege "gehï¿½ren" immer zu einem Grund. Sie besitzen Richtungsbits sowie
  * eine Maske fuer Richtungsbits.</p>
  *
- * <p>Ein Weg gehört immer zu genau einer Wegsorte</p>
+ * <p>Ein Weg gehï¿½rt immer zu genau einer Wegsorte</p>
  *
- * <p>Kreuzungen werden dadurch unterstützt, daß ein Grund zwei Wege
- * enthalten kann (prinzipiell auch mehrere möglich.</p>
+ * <p>Kreuzungen werden dadurch unterstï¿½tzt, daï¿½ ein Grund zwei Wege
+ * enthalten kann (prinzipiell auch mehrere mï¿½glich.</p>
  *
- * <p>Wegtyp -1 ist reserviert und kann nicht für Wege benutzt werden<p>
+ * <p>Wegtyp -1 ist reserviert und kann nicht fï¿½r Wege benutzt werden<p>
  *
  * @author Hj. Malthaner
  */
@@ -85,14 +85,14 @@ private:
 	const weg_besch_t * besch;
 
 	/**
-	* Richtungsbits für den Weg. Norden ist oben rechts auf dem Monitor.
+	* Richtungsbits fï¿½r den Weg. Norden ist oben rechts auf dem Monitor.
 	* 1=Nord, 2=Ost, 4=Sued, 8=West
 	* @author Hj. Malthaner
 	*/
 	uint8 ribi:4;
 
 	/**
-	* Maske für Richtungsbits
+	* Maske fï¿½r Richtungsbits
 	* @author Hj. Malthaner
 	*/
 	uint8 ribi_maske:4;
@@ -136,19 +136,19 @@ public:
 	void calc_bild();
 
 	/**
-	* Setzt die erlaubte Höchstgeschwindigkeit
+	* Setzt die erlaubte Hï¿½chstgeschwindigkeit
 	* @author Hj. Malthaner
 	*/
 	void set_max_speed(sint32 s) { max_speed = s; }
 
 	/**
-	* Ermittelt die erlaubte Höchstgeschwindigkeit
+	* Ermittelt die erlaubte Hï¿½chstgeschwindigkeit
 	* @author Hj. Malthaner
 	*/
 	sint32 get_max_speed() const { return max_speed; }
 
 	/**
-	* Setzt neue Beschreibung. Ersetzt alte Höchstgeschwindigkeit
+	* Setzt neue Beschreibung. Ersetzt alte Hï¿½chstgeschwindigkeit
 	* mit wert aus Beschreibung.
 	* @author Hj. Malthaner
 	*/
@@ -164,7 +164,7 @@ public:
 	virtual void rdwr(loadsave_t *file);
 
 	/**
-	* Info-text für diesen Weg
+	* Info-text fï¿½r diesen Weg
 	* @author Hj. Malthaner
 	*/
 	virtual void info(cbuffer_t & buf) const;
@@ -176,13 +176,13 @@ public:
 	virtual const char *ist_entfernbar(const spieler_t *sp);
 
 	/**
-	* Wegtyp zurückliefern
+	* Wegtyp zurï¿½ckliefern
 	*/
 	virtual waytype_t get_waytype() const = 0;
 
 	/**
 	* 'Jedes Ding braucht einen Typ.'
-	* @return Gibt den typ des Objekts zurück.
+	* @return Gibt den typ des Objekts zurï¿½ck.
 	* @author Hj. Malthaner
 	*/
 	typ get_typ() const { return ding_t::way; }
@@ -194,11 +194,11 @@ public:
 	const char *get_name() const { return besch->get_name(); }
 
 	/**
-	* Setzt neue Richtungsbits für einen Weg.
+	* Setzt neue Richtungsbits fï¿½r einen Weg.
 	*
-	* Nachdem die ribis geändert werden, ist das weg_bild des
-	* zugehörigen Grundes falsch (Ein Aufruf von grund_t::calc_bild()
-	* zur Reparatur muß folgen).
+	* Nachdem die ribis geï¿½ndert werden, ist das weg_bild des
+	* zugehï¿½rigen Grundes falsch (Ein Aufruf von grund_t::calc_bild()
+	* zur Reparatur muï¿½ folgen).
 	* @param ribi Richtungsbits
 	*/
 	void ribi_add(ribi_t::ribi ribi) { this->ribi |= (uint8)ribi;}
@@ -206,36 +206,36 @@ public:
 	/**
 	* Entfernt Richtungsbits von einem Weg.
 	*
-	* Nachdem die ribis geändert werden, ist das weg_bild des
-	* zugehörigen Grundes falsch (Ein Aufruf von grund_t::calc_bild()
-	* zur Reparatur muß folgen).
+	* Nachdem die ribis geï¿½ndert werden, ist das weg_bild des
+	* zugehï¿½rigen Grundes falsch (Ein Aufruf von grund_t::calc_bild()
+	* zur Reparatur muï¿½ folgen).
 	* @param ribi Richtungsbits
 	*/
 	void ribi_rem(ribi_t::ribi ribi) { this->ribi &= (uint8)~ribi;}
 
 	/**
-	* Setzt Richtungsbits für den Weg.
+	* Setzt Richtungsbits fï¿½r den Weg.
 	*
-	* Nachdem die ribis geändert werden, ist das weg_bild des
-	* zugehörigen Grundes falsch (Ein Aufruf von grund_t::calc_bild()
-	* zur Reparatur muß folgen).
+	* Nachdem die ribis geï¿½ndert werden, ist das weg_bild des
+	* zugehï¿½rigen Grundes falsch (Ein Aufruf von grund_t::calc_bild()
+	* zur Reparatur muï¿½ folgen).
 	* @param ribi Richtungsbits
 	*/
 	void set_ribi(ribi_t::ribi ribi) { this->ribi = (uint8)ribi;}
 
 	/**
-	* Ermittelt die unmaskierten Richtungsbits für den Weg.
+	* Ermittelt die unmaskierten Richtungsbits fï¿½r den Weg.
 	*/
 	ribi_t::ribi get_ribi_unmasked() const { return (ribi_t::ribi)ribi; }
 
 	/**
-	* Ermittelt die (maskierten) Richtungsbits für den Weg.
+	* Ermittelt die (maskierten) Richtungsbits fï¿½r den Weg.
 	*/
 	ribi_t::ribi get_ribi() const { return (ribi_t::ribi)(ribi & ~ribi_maske); }
 
 	/**
-	* für Signale ist es notwendig, bestimmte Richtungsbits auszumaskieren
-	* damit Fahrzeuge nicht "von hinten" über Ampeln fahren können.
+	* fï¿½r Signale ist es notwendig, bestimmte Richtungsbits auszumaskieren
+	* damit Fahrzeuge nicht "von hinten" ï¿½ber Ampeln fahren kï¿½nnen.
 	* @param ribi Richtungsbits
 	*/
 	void set_ribi_maske(ribi_t::ribi ribi) { ribi_maske = (uint8)ribi; }

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -173,7 +173,7 @@ koord3d halt_info_t::get_weltpos()
 
 
 /**
- * Komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
+ * Komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
  * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
  * in dem die Komponente dargestellt wird.
  * @author Hj. Malthaner

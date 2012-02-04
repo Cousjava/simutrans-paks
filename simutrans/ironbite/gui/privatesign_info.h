@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2003 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2003 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -31,7 +31,7 @@ class privatesign_info_t : public ding_infowin_t, public action_listener_t
 
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.
-	 * @return den Dateinamen für die Hilfe, oder NULL
+	 * @return den Dateinamen fï¿½r die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
 	const char *get_hilfe_datei() const {return "privatesign_info.txt";}

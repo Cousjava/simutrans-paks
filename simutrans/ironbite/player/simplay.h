@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2002 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2002 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  */
@@ -103,7 +103,7 @@ protected:
 	sint64 starting_money;
 
 	/**
-	 * Zählt wie viele Monate das Konto schon ueberzogen ist
+	 * Zï¿½hlt wie viele Monate das Konto schon ueberzogen ist
 	 *
 	 * @author Hj. Malthaner
 	 */
@@ -128,7 +128,7 @@ protected:
 	void add_message(koord k, sint32 summe);
 
 	/**
-	 * Kennfarbe (Fahrzeuge, Gebäude) des Speielers
+	 * Kennfarbe (Fahrzeuge, Gebï¿½ude) des Speielers
 	 * @author Hj. Malthaner
 	 */
 	uint8 kennfarbe1, kennfarbe2;
@@ -163,6 +163,8 @@ protected:
 	 */
 	bool locked;
 
+	bool unlock_pending;
+
 	// contains the password hash for local games
 	pwd_hash_t pwd_hash;
 
@@ -173,10 +175,14 @@ public:
 
 	bool is_locked() const { return locked; }
 
-	bool set_unlock( const uint8 *hash );
+	bool is_unlock_pending() const { return unlock_pending; }
+
+	void unlock(bool unlock_, bool unlock_pending_=false) { locked = !unlock_; unlock_pending = unlock_pending_; }
+
+	void check_unlock( const pwd_hash_t& hash ) { locked = (pwd_hash != hash); }
 
 	// some routine needs this for direct manipulation
-	pwd_hash_t& get_password_hash() { return pwd_hash; }
+	pwd_hash_t& access_password_hash() { return pwd_hash; }
 
 	// this type of AIs identifier
 	virtual uint8 get_ai_id() const { return HUMAN; }
@@ -247,7 +253,7 @@ public:
 	double get_konto_als_double() const { return konto / 100.0; }
 
 	/**
-	 * @return true wenn Konto Überzogen ist
+	 * @return true wenn Konto ï¿½berzogen ist
 	 * @author Hj. Malthaner
 	 */
 	int get_konto_ueberzogen() const { return konto_ueberzogen; }
@@ -259,7 +265,7 @@ public:
 	void display_messages();
 
 	/**
-	 * Wird von welt in kurzen abständen aufgerufen
+	 * Wird von welt in kurzen abstï¿½nden aufgerufen
 	 * @author Hj. Malthaner
 	 */
 	virtual void step();
@@ -301,7 +307,7 @@ public:
 	int get_haltcount() const { return haltcount; }
 
 	/**
-	 * Lädt oder speichert Zustand des Spielers
+	 * Lï¿½dt oder speichert Zustand des Spielers
 	 * @param file die offene Save-Datei
 	 * @author Hj. Malthaner
 	 */
@@ -358,8 +364,8 @@ public:
 	void roll_finance_history_month();
 
 	/**
-	 * Rückruf, um uns zu informieren, dass ein Vehikel ein Problem hat
-	 * @author Hansjörg Malthaner
+	 * Rï¿½ckruf, um uns zu informieren, dass ein Vehikel ein Problem hat
+	 * @author Hj. Malthaner
 	 * @date 26-Nov-2001
 	 */
 	virtual void bescheid_vehikel_problem(convoihandle_t cnv,const koord3d ziel);

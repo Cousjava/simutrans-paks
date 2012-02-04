@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2003 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2003 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -59,7 +59,7 @@ koord3d::koord3d(loadsave_t *file)
 }
 
 
-// für debugmeldungen ...
+// fï¿½r debugmeldungen ...
 const char *koord3d::get_str() const
 {
 	static char pos_str[32];
@@ -71,7 +71,7 @@ const char *koord3d::get_str() const
 }
 
 
-// für debugmeldungen ...
+// fï¿½r debugmeldungen ...
 const char *koord3d::get_fullstr() const
 {
 	static char pos_str[32];
