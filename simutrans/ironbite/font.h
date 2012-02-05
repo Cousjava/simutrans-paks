@@ -13,6 +13,14 @@ struct font_t
         uint8 line_spacing;
 };
 
+// Hajo: don't know where this is currently used ...
+// I guess it should be replaced some day.
+extern int large_font_height;
+
+// Hajo: at the moment this is our only font.
+extern struct font_t * large_font_p;
+
+
 /*
  * characters are stored dense in a array
  * first 12 bytes are the first row

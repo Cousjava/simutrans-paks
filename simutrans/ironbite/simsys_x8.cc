@@ -1,8 +1,6 @@
-#include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
-#include <math.h>
 
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
@@ -16,11 +14,11 @@
 #include "simversion.h"
 
 
-static int using_shm = FALSE;
-static int doing_sync = TRUE;
+static bool using_shm  = false;
+static bool doing_sync = true;
 
 static int display_depth = 8;
-static int is_truecolor = FALSE;
+static bool is_truecolor = false;
 
 static Cursor standard_cursor;
 static Cursor invisible_cursor;
@@ -66,7 +64,7 @@ static void init_cursors(void)
 }
 
 
-int system_init(const int* parameter)
+bool system_init(const int* parameter)
 {
 	using_shm  = parameter[0];
 	doing_sync = parameter[1];
@@ -74,7 +72,7 @@ int system_init(const int* parameter)
 	// init time count
 	gettimeofday(&start, NULL);
 
-	return TRUE;
+	return true;
 }
 
 
@@ -98,9 +96,9 @@ int system_open(int const w, int const h, int)
 	fprintf(stderr, "Using %d bpp\n", display_depth);
 
 	if (display_depth == 8) {
-		is_truecolor = FALSE;
+		is_truecolor = false;
 	} else if(display_depth >= 15) {
-		is_truecolor = TRUE;
+		is_truecolor = true;
 		fprintf(stderr,"Warning: using experimental HiColor/TrueColor mode\n");
 	} else {
 		fprintf(
@@ -170,14 +168,13 @@ int system_open(int const w, int const h, int)
 
 	XSetForeground(md, mgc, 1);
 
-	return TRUE;
+	return w;
 }
 
 
-int system_close(void)
+void system_close(void)
 {
 	XCloseDisplay(md);
-	return TRUE;
 }
 
 
@@ -306,7 +303,7 @@ void dr_textur(int xp, int yp, int w, int h)
 
 void system_flush_framebuffer(void)
 {
-	if (doing_sync) XSync(md, FALSE);
+	if (doing_sync) XSync(md, False);
 }
 
 
@@ -366,7 +363,7 @@ int system_screenshot(const char *filename)
 /*
  * Hier sind die Funktionen zur Messageverarbeitung
  */
-static void internal_system_wait_event(int wait)
+static void internal_system_wait_event(bool const wait)
 {
 	XEvent event;
 
@@ -455,7 +452,11 @@ static void internal_system_wait_event(int wait)
 
 void system_wait_event(void)
 {
+<<<<<<< .mine
 	internal_system_wait_event(TRUE);
+=======
+	internal_GetEvents(true);
+>>>>>>> .r5221
 }
 
 void system_poll_event(void)
@@ -465,7 +466,11 @@ void system_poll_event(void)
 	sys_event.type = SIM_NOEVENT;
 	sys_event.code = 0;
 
+<<<<<<< .mine
 	if (n > 0) internal_system_wait_event(FALSE);
+=======
+	if (n > 0) internal_GetEvents(false);
+>>>>>>> .r5221
 }
 
 

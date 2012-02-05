@@ -26,6 +26,7 @@
 #include "loadsave_frame.h"
 #include "server_frame.h"
 
+static const int margin = 40;
 
 banner_t::banner_t( karte_t *w) : gui_frame_t(""),
 	logo( skinverwaltung_t::logosymbol->get_bild_nr(0), 0 ),
@@ -33,22 +34,26 @@ banner_t::banner_t( karte_t *w) : gui_frame_t(""),
 {
 	last_ms = system_time();
 	line = 0;
-	logo.set_pos( koord( 238, 40 ) );
+
+        const int height = 16+113+12*LINESPACE+2*BUTTON_HEIGHT+12;
+        const int width = height * 160/100 + 1;
+	const koord size(width, height);
+	set_fenstergroesse(size);
+
+	logo.set_pos(koord(width - margin - 64, 24));
 	add_komponente( &logo );
 
-	const koord size( BUTTON_WIDTH*3+40, 16+113+12*LINESPACE+2*BUTTON_HEIGHT+12 );
-	set_fenstergroesse( size );
 
-	new_map.init( button_t::roundbox, "Neue Karte", koord( 10, size.y-16-2*BUTTON_HEIGHT-12 ), koord( BUTTON_WIDTH, BUTTON_HEIGHT ) );
+	new_map.init( button_t::roundbox, "Neue Karte", koord(margin, size.y-16-BUTTON_HEIGHT-12 ), koord( BUTTON_WIDTH, BUTTON_HEIGHT ) );
 	new_map.add_listener( this );
 	add_komponente( &new_map );
-	load_map.init( button_t::roundbox, "Load game", koord( 10+BUTTON_WIDTH+10, size.y-16-2*BUTTON_HEIGHT-12 ), koord( BUTTON_WIDTH, BUTTON_HEIGHT ) );
+	load_map.init( button_t::roundbox, "Load game", koord(margin+BUTTON_WIDTH+11, size.y-16-BUTTON_HEIGHT-12 ), koord( BUTTON_WIDTH, BUTTON_HEIGHT ) );
 	load_map.add_listener( this );
 	add_komponente( &load_map );
-	join_map.init( button_t::roundbox, "join game", koord( 10+2*BUTTON_WIDTH+20, size.y-16-2*BUTTON_HEIGHT-12 ), koord( BUTTON_WIDTH, BUTTON_HEIGHT ) );
+	join_map.init( button_t::roundbox, "join game", koord(margin+2*BUTTON_WIDTH+22, size.y-16-BUTTON_HEIGHT-12 ), koord( BUTTON_WIDTH, BUTTON_HEIGHT ) );
 	join_map.add_listener( this );
 	add_komponente( &join_map );
-	quit.init( button_t::roundbox, "Beenden", koord( 10+2*BUTTON_WIDTH+20, size.y-16-BUTTON_HEIGHT-7 ), koord( BUTTON_WIDTH, BUTTON_HEIGHT ) );
+	quit.init( button_t::roundbox, "Beenden", koord(margin+3*BUTTON_WIDTH+33, size.y-16-BUTTON_HEIGHT-12 ), koord( BUTTON_WIDTH, BUTTON_HEIGHT ) );
 	quit.add_listener( this );
 	add_komponente( &quit );
 }
@@ -96,18 +101,18 @@ void banner_t::zeichnen(koord pos, koord gr )
 	// Hajo: set up colors. Maybe we need some global rules to
 	// define which colors to use for which semantics of text ...
 	const int color_text = COL_WHITE;
-	const int color_high = 87;
+	const int color_high = 207;
         const int color_shadow = COL_GREY1;
-        const int color_warn = COL_LIGHT_ORANGE + 1;
+        const int color_warn = 127;
         
-	// Hajo: layout constants. Also global some day?
-	const int margin = 10;
-        const int indent = 24;
+	// Hajo: layout constants for this dialog
+        const int indent = 32;
         const int line_space = large_font_p->line_spacing;
 	
-	KOORD_VAL yp = pos.y+22;
+	KOORD_VAL yp = pos.y+26;
+
 	display_shadow_proportional( pos.x + margin, yp, color_high, color_shadow,
-                                     "Welcome to Simutrans Iron Bite!", true );
+                                     "Welcome  to  Simutrans  Iron  Bite!", true );
 	yp += line_space+5;
 #ifdef REVISION
 	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
@@ -116,31 +121,31 @@ void banner_t::zeichnen(koord pos, koord gr )
 	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
                                      "Version " VERSION_NUMBER " " VERSION_DATE, true );
 #endif
-	yp += line_space+7;
+	yp += line_space+6;
 
 	display_shadow_proportional( pos.x + margin, yp, color_high, color_shadow,
-                                     "This version is developed by", true );
+                                     "Simutrans Iron Bite is developed by Hj. Malthaner,", true );
 	yp += line_space+5;
 	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
-                                     "Hj. Malthaner, based on", true );
+                                     "based on Simutrans 111.2 by Markus Pristovsek", true );
 	yp += line_space+2;
 	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
-                                     "Simutrans 111.2 by", true );
+                                     "and the Simutrans Team, which is based on", true );
 	yp += line_space+2;
 	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
-                                     "the Simutrans Team, released", true );
+                                     "Simutrans 0.84.21.2 by Hj. Malthaner et. al.", true );
 	yp += line_space+2;
 	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
-                                     "under the Artistic Licence.", true );
-	yp += line_space+7;
+                                     "Simutrans is available under the Artistic Licence.", true );
+	yp += line_space+6;
 
 	display_shadow_proportional( pos.x + margin, yp, color_warn, color_shadow,
-                                     "Selling of the program is forbidden.", true );
-	yp += line_space+5;
+                                     "Simutrans is free software, if you payed for it, ask for a refund!", true );
+	yp += line_space+6;
 
 	display_shadow_proportional( pos.x + margin, yp, color_high, color_shadow,
                                      "For questions and support please visit:", true );
-	yp += line_space+2;
+	yp += line_space+5;
 	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
                                      "http://www.simutrans.com", true );
 	yp += line_space+2;
@@ -151,7 +156,7 @@ void banner_t::zeichnen(koord pos, koord gr )
                                      "http://wiki.simutrans-germany.com/", true );
 	yp += line_space+7;
 
-	// now the scrolling
+	// now the scrolling intro
 	static const char* const scrolltext[] = {
 #include "../scrolltext.h"
 	};
@@ -162,7 +167,7 @@ void banner_t::zeichnen(koord pos, koord gr )
 	const KOORD_VAL text_line = (line / 9) * 2;
 	const KOORD_VAL text_offset = line % 9;
 	const KOORD_VAL left = pos.x + margin;
-	const KOORD_VAL width = gr.x-20;
+	const KOORD_VAL width = gr.x - margin*2;
 
 	display_fillbox_wh(left, yp, width, 52, COL_GREY1, true);
 	display_fillbox_wh(left, yp - 1, width, 1, COL_GREY3, false);

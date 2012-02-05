@@ -6,17 +6,14 @@
  */
 
 #ifndef _MSC_VER
-#include <unistd.h>
 #include <dirent.h>
 #else
 #include <io.h>
-#include <direct.h>
 #endif
 
 #include <string>
 
 #include <string.h>
-#include <time.h>
 
 #include "../pathes.h"
 
@@ -294,7 +291,7 @@ bool savegame_frame_t::action_triggered( gui_action_creator_t *komp, value_t /* 
 	if(komp == &input || komp == &savebutton) {
 		// Save/Load Button or Enter-Key pressed
 		//---------------------------------------
-		if (strstr(ibuf,"net:")==ibuf) {
+		if (strstart(ibuf, "net:")) {
 			tstrncpy(buf,ibuf,lengthof(buf));
 		}
 		else {

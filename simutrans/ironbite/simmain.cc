@@ -6,13 +6,9 @@
 #include <stdio.h>
 #include <string>
 #include <new>
-#include <time.h>
 
 #ifdef _MSC_VER
 #include <new.h> // for _set_new_handler
-#include <direct.h>
-#else
-#include <unistd.h>
 #endif
 
 #include "pathes.h"
@@ -717,7 +713,10 @@ int simu_main(int argc, char** argv)
 	int parameter[2];
 	parameter[0] = gimme_arg(argc, argv, "-net",   0)==NULL;
 	parameter[1] = gimme_arg(argc, argv, "-async", 0)==NULL;
-	system_init(parameter);
+	if (!system_init(parameter)) {
+		system_fatal_notify("Failed to initialize backend.\n");
+		return EXIT_FAILURE;
+	}
 
 	// Get optimal resolution.
 	if (disp_width == 0 || disp_height == 0) {
@@ -896,7 +895,7 @@ int simu_main(int argc, char** argv)
 		 * Added automatic adding of extension
 		 */
 		const char *name = gimme_arg(argc, argv, "-load", 1);
-		if(  strstr(name,"net:") == name  ) {
+		if (strstart(name, "net:")) {
 			buf.append( name );
 		}
 		else {

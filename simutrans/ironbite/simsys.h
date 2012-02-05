@@ -10,10 +10,11 @@
 #include <stddef.h>
 #include "simtypes.h"
 
-
-#ifndef TRUE
-#define TRUE 1
-#define FALSE 0
+// Provide chdir().
+#ifdef _WIN32
+#	include <direct.h>
+#else
+#	include <unistd.h>
 #endif
 
 
@@ -58,7 +59,7 @@ struct sys_event
 extern struct sys_event sys_event;
 
 
-int system_init(const int* parameter);
+bool system_init(const int* parameter);
 
 /* maximum size possible (if there) */
 struct resolution
@@ -70,7 +71,7 @@ struct resolution
 resolution system_query_screen_resolution();
 
 int system_open(int w, int h, int fullscreen);
-int system_close(void);
+void system_close(void);
 
 void system_mkdir(char const* path);
 

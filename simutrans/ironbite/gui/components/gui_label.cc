@@ -13,6 +13,7 @@
 #include "gui_label.h"
 #include "../../simgraph.h"
 #include "../../simcolor.h"
+#include "../../font.h"
 #include "../../dataobj/translator.h"
 #include "../../utils/simstring.h"
 

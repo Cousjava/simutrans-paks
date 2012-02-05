@@ -1,9 +1,9 @@
 /*
  * Copyright 1997, 2001 Hj. Malthaner
  * h_malthaner@users.sourceforge.net
+ *
  * Copyright 2010 Simutrans contributors
  * Available under the Artistic License (see license.txt)
- *
  */
 
 #include <stdlib.h>
@@ -100,15 +100,12 @@ static int number_of_clips =0;
 static uint8 active_ribi = 15; // set all to active
 
 
-/* Flag, if we have Unicode font => do unicode (UTF8) support! *
+/*
+ * Flag, if we have Unicode font => do unicode (UTF8) support! *
  * @author prissi
  * @date 29.11.04
  */
 static bool has_unicode = false;
-
-int large_font_height = 10;
-static font_t large_font = { 0, 0, 0, NULL, NULL, 11 };
-struct font_t * large_font_p = &large_font;
 
 #define MAX_PLAYER_COUNT (16)
 
@@ -607,17 +604,17 @@ static int clip_wh(KOORD_VAL *x, KOORD_VAL *width, const KOORD_VAL min_width, co
 
 /**
  * places x and w within bounds left and right
- * if nothing to show, returns FALSE
+ * if nothing to show, returns false
  * @author Niels Roest
  */
-static int clip_lr(KOORD_VAL *x, KOORD_VAL *w, const KOORD_VAL left, const KOORD_VAL right)
+static bool clip_lr(KOORD_VAL *x, KOORD_VAL *w, const KOORD_VAL left, const KOORD_VAL right)
 {
 	const KOORD_VAL l = *x;      // leftmost pixel
 	const sint32 r = (sint32)*x + (sint32)*w; // rightmost pixel
 
 	if (*w <= 0 || l >= right || r <= left) {
 		*w = 0;
-		return FALSE;
+		return false;
 	}
 
 	// there is something to show.
@@ -2865,7 +2862,7 @@ static void display_pixel(KOORD_VAL x, KOORD_VAL y, PIXVAL color)
 /**
  * Zeichnet gefuelltes Rechteck
  */
-static void display_fb_internal(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL w, KOORD_VAL h, int color, int dirty, KOORD_VAL cL, KOORD_VAL cR, KOORD_VAL cT, KOORD_VAL cB)
+static void display_fb_internal(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL w, KOORD_VAL h, int color, bool dirty, KOORD_VAL cL, KOORD_VAL cR, KOORD_VAL cT, KOORD_VAL cB)
 {
 	if (clip_lr(&xp, &w, cL, cR) && clip_lr(&yp, &h, cT, cB)) {
 		PIXVAL *p = textur + xp + yp * disp_width;
@@ -2923,13 +2920,13 @@ static void display_fb_internal(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL w, KOORD_V
 }
 
 
-void display_fillbox_wh(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL w, KOORD_VAL h, PLAYER_COLOR_VAL color, int dirty)
+void display_fillbox_wh(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL w, KOORD_VAL h, PLAYER_COLOR_VAL color, bool dirty)
 {
 	display_fb_internal(xp, yp, w, h, color, dirty, 0, disp_width, 0, disp_height);
 }
 
 
-void display_fillbox_wh_clip(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL w, KOORD_VAL h, PLAYER_COLOR_VAL color, int dirty)
+void display_fillbox_wh_clip(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL w, KOORD_VAL h, PLAYER_COLOR_VAL color, bool dirty)
 {
 	display_fb_internal(xp, yp, w, h, color, dirty, clip_rect.x, clip_rect.xx, clip_rect.y, clip_rect.yy);
 }
@@ -2955,13 +2952,13 @@ static void display_vl_internal(const KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL h, c
 }
 
 
-void display_vline_wh(const KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL h, const PLAYER_COLOR_VAL color, int dirty)
+void display_vline_wh(const KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL h, const PLAYER_COLOR_VAL color, bool dirty)
 {
 	display_vl_internal(xp, yp, h, color, dirty, 0, disp_width, 0, disp_height);
 }
 
 
-void display_vline_wh_clip(const KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL h, const PLAYER_COLOR_VAL color, int dirty)
+void display_vline_wh_clip(const KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL h, const PLAYER_COLOR_VAL color, bool dirty)
 {
 	display_vl_internal(xp, yp, h, color, dirty, clip_rect.x, clip_rect.xx, clip_rect.y, clip_rect.yy);
 }
@@ -3011,11 +3008,11 @@ bool display_load_font(const char* fname)
 {
 	font_t fnt;
 	if (load_font(&fnt, fname)) {
-		free(large_font.screen_width);
-		free(large_font.char_data);
-		large_font = fnt;
-		large_font_height = large_font.height;
-                large_font.line_spacing = 11;
+		free(large_font_p->screen_width);
+		free(large_font_p->char_data);
+		*large_font_p = fnt;
+		large_font_height = large_font_p->height;
+                large_font_p->line_spacing = 11;
 		return true;
 	}
 	else {
@@ -3051,8 +3048,8 @@ long get_prev_char(const char* text, long pos)
 
 KOORD_VAL display_get_char_width(utf16 c)
 {
-	KOORD_VAL w = large_font.screen_width[c];
-	if (w == 0) w = large_font.screen_width[0];
+	KOORD_VAL w = large_font_p->screen_width[c];
+	if (w == 0) w = large_font_p->screen_width[0];
 	return w;
 }
 
@@ -3083,9 +3080,9 @@ unsigned short get_next_char_with_metrics(const char* &text, unsigned char &byte
 	else {
 		text += len;
 		byte_length = len;
-		if(  char_code>=large_font.num_chars  ||  (pixel_width=large_font.screen_width[char_code])==0  ) {
+		if(  char_code>=large_font_p->num_chars  ||  (pixel_width=large_font_p->screen_width[char_code])==0  ) {
 			// default width for missing characters
-			pixel_width = large_font.screen_width[0];
+			pixel_width = large_font_p->screen_width[0];
 		}
 	}
 	return char_code;
@@ -3123,9 +3120,9 @@ unsigned short get_prev_char_with_metrics(const char* &text, const char *const t
 		char_code = (unsigned char)(*text);
 		byte_length = 1;
 	}
-	if(  char_code>=large_font.num_chars  ||  (pixel_width=large_font.screen_width[char_code])==0  ) {
+	if(  char_code>=large_font_p->num_chars  ||  (pixel_width=large_font_p->screen_width[char_code])==0  ) {
 		// default width for missing characters
-		pixel_width = large_font.screen_width[0];
+		pixel_width = large_font_p->screen_width[0];
 	}
 	return char_code;
 }
@@ -3140,7 +3137,7 @@ unsigned short get_prev_char_with_metrics(const char* &text, const char *const t
  */
 int display_calc_proportional_string_len_width(const char* text, size_t len)
 {
-	const font_t* const fnt = &large_font;
+	const font_t* const fnt = large_font_p;
 	unsigned int c, width = 0;
 	int w;
 
@@ -3219,7 +3216,7 @@ static unsigned char get_h_mask(const int xL, const int xR, const int cL, const 
  */
 int display_text_proportional_len_clip(KOORD_VAL x, KOORD_VAL y, const char* txt, int flags, const PLAYER_COLOR_VAL color_index, long len)
 {
-	const font_t* const fnt = &large_font;
+	const font_t* const fnt = large_font_p;
 	KOORD_VAL cL, cR, cT, cB;
 	uint32 c;
 	size_t iTextPos = 0; // pointer on text position: prissi
@@ -3399,13 +3396,13 @@ int display_text_proportional_len_clip(KOORD_VAL x, KOORD_VAL y, const char* txt
  */
 void display_ddd_box(KOORD_VAL x1, KOORD_VAL y1, KOORD_VAL w, KOORD_VAL h, PLAYER_COLOR_VAL tl_color, PLAYER_COLOR_VAL rd_color)
 {
-	display_fillbox_wh(x1, y1,         w, 1, tl_color, TRUE);
-	display_fillbox_wh(x1, y1 + h - 1, w, 1, rd_color, TRUE);
+	display_fillbox_wh(x1, y1,         w, 1, tl_color, true);
+	display_fillbox_wh(x1, y1 + h - 1, w, 1, rd_color, true);
 
 	h -= 2;
 
-	display_vline_wh(x1,         y1 + 1, h, tl_color, TRUE);
-	display_vline_wh(x1 + w - 1, y1 + 1, h, rd_color, TRUE);
+	display_vline_wh(x1,         y1 + 1, h, tl_color, true);
+	display_vline_wh(x1 + w - 1, y1 + 1, h, rd_color, true);
 }
 
 
@@ -3432,13 +3429,13 @@ void display_shadow_proportional(KOORD_VAL xpos, KOORD_VAL ypos, PLAYER_COLOR_VA
  */
 void display_ddd_box_clip(KOORD_VAL x1, KOORD_VAL y1, KOORD_VAL w, KOORD_VAL h, PLAYER_COLOR_VAL tl_color, PLAYER_COLOR_VAL rd_color)
 {
-	display_fillbox_wh_clip(x1, y1,         w, 1, tl_color, TRUE);
-	display_fillbox_wh_clip(x1, y1 + h - 1, w, 1, rd_color, TRUE);
+	display_fillbox_wh_clip(x1, y1,         w, 1, tl_color, true);
+	display_fillbox_wh_clip(x1, y1 + h - 1, w, 1, rd_color, true);
 
 	h -= 2;
 
-	display_vline_wh_clip(x1,         y1 + 1, h, tl_color, TRUE);
-	display_vline_wh_clip(x1 + w - 1, y1 + 1, h, rd_color, TRUE);
+	display_vline_wh_clip(x1,         y1 + 1, h, tl_color, true);
+	display_vline_wh_clip(x1 + w - 1, y1 + 1, h, rd_color, true);
 }
 
 
@@ -3566,10 +3563,10 @@ void display_progress(int part, int total)
 	display_ddd_box(width/2-1, disp_height/2-8, width+2, 18, COL_GREY4, COL_GREY6);
 
 	// inner
-	display_fillbox_wh(width/2, disp_height/2-7, width, 16, COL_GREY5, TRUE);
+	display_fillbox_wh(width / 2, disp_height / 2 - 7, width, 16, COL_GREY5, true);
 
 	// progress
-	display_fillbox_wh(width/2, disp_height/2-5, part, 12, COL_BLUE, TRUE);
+	display_fillbox_wh(width / 2, disp_height / 2 - 5, part,  12, COL_BLUE,  true);
 
 	if(progress_text) {
 		display_proportional(width,disp_height/2-4,progress_text,ALIGN_MIDDLE,COL_WHITE,0);
@@ -3605,8 +3602,8 @@ void display_flush_buffer(void)
 	}
 	// no pointer image available, draw a crosshair
 	else {
-		display_fb_internal( sys_event.mx-1, sys_event.my-3, 3, 7, COL_WHITE, 1, 0, disp_width, 0, disp_height);
-		display_fb_internal( sys_event.mx-3, sys_event.my-1, 7, 3, COL_WHITE, 1, 0, disp_width, 0, disp_height);
+		display_fb_internal(sys_event.mx - 1, sys_event.my - 3, 3, 7, COL_WHITE, true, 0, disp_width, 0, disp_height);
+		display_fb_internal(sys_event.mx - 3, sys_event.my - 1, 7, 3, COL_WHITE, true, 0, disp_width, 0, disp_height);
 		display_direct_line( sys_event.mx-2, sys_event.my, sys_event.mx+2, sys_event.my, COL_BLACK );
 		display_direct_line( sys_event.mx, sys_event.my-2, sys_event.mx, sys_event.my+2, COL_BLACK );
 
@@ -3630,10 +3627,10 @@ void display_flush_buffer(void)
 					x++;
 				} while(x < tiles_per_line && is_tile_dirty(x, y));
 
-				display_vline_wh((xl << DIRTY_TILE_SHIFT) - 1, y << DIRTY_TILE_SHIFT, DIRTY_TILE_SIZE, 80, FALSE);
-				display_vline_wh(x << DIRTY_TILE_SHIFT, y << DIRTY_TILE_SHIFT, DIRTY_TILE_SIZE, 80, FALSE);
-				display_fillbox_wh(xl << DIRTY_TILE_SHIFT, y << DIRTY_TILE_SHIFT, (x - xl) << DIRTY_TILE_SHIFT, 1, 80, FALSE);
-				display_fillbox_wh(xl << DIRTY_TILE_SHIFT, (y << DIRTY_TILE_SHIFT) + DIRTY_TILE_SIZE - 1, (x - xl) << DIRTY_TILE_SHIFT, 1, 80, FALSE);
+				display_vline_wh((xl << DIRTY_TILE_SHIFT) - 1, y << DIRTY_TILE_SHIFT, DIRTY_TILE_SIZE, 80, false);
+				display_vline_wh( x  << DIRTY_TILE_SHIFT,      y << DIRTY_TILE_SHIFT, DIRTY_TILE_SIZE, 80, false);
+				display_fillbox_wh(xl << DIRTY_TILE_SHIFT,  y << DIRTY_TILE_SHIFT,                        (x - xl) << DIRTY_TILE_SHIFT, 1, 80, false);
+				display_fillbox_wh(xl << DIRTY_TILE_SHIFT, (y << DIRTY_TILE_SHIFT) + DIRTY_TILE_SIZE - 1, (x - xl) << DIRTY_TILE_SHIFT, 1, 80, false);
 			}
 			x++;
 		} while (x < tiles_per_line);
@@ -3737,7 +3734,7 @@ int get_mouse_y(void)
  * Initialises the graphics module
  * @author Hj. Malthaner
  */
-int simgraph_init(KOORD_VAL width, KOORD_VAL height, int full_screen)
+void simgraph_init(KOORD_VAL width, KOORD_VAL height, int full_screen)
 {
 	int i;
 
@@ -3752,8 +3749,8 @@ int simgraph_init(KOORD_VAL width, KOORD_VAL height, int full_screen)
 		textur = system_init_framebuffer();
 
 		// init, load, and check fonts
-		large_font.screen_width = NULL;
-		large_font.char_data = NULL;
+		large_font_p->screen_width = NULL;
+		large_font_p->char_data = NULL;
 		display_load_font(FONT_PATH_X "prop.fnt");
 	}
 	else {
@@ -3818,8 +3815,6 @@ int simgraph_init(KOORD_VAL width, KOORD_VAL height, int full_screen)
 
 	printf("Init done.\n");
 	fflush(NULL);
-
-	return TRUE;
 }
 
 
@@ -3829,7 +3824,7 @@ int simgraph_init(KOORD_VAL width, KOORD_VAL height, int full_screen)
  */
 int is_display_init(void)
 {
-	return textur != NULL  &&  large_font.num_chars>0;
+	return textur != NULL  &&  large_font_p->num_chars>0;
 }
 
 
@@ -3837,7 +3832,7 @@ int is_display_init(void)
  * Schliest das Grafikmodul
  * @author Hj. Malthaner
  */
-int simgraph_exit()
+void simgraph_exit()
 {
 	guarded_free(tile_dirty);
 	guarded_free(tile_dirty_old);
@@ -3847,7 +3842,7 @@ int simgraph_exit()
 	tile_dirty = tile_dirty_old = NULL;
 	images = NULL;
 
-	return system_close();
+	system_close();
 }
 
 

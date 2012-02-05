@@ -33,7 +33,7 @@
 " Tilman Raatz","patches",
 " Pasi Ruhanen","BeOS, SDL",
 " Mat Hounsell","GUI",
-" Kieron Green","skinned grounds",
+" Kieron Green","textured grounds",
 " z9999","patches",
 " Gerd Wachsmuth", "patches",
 " Knightly", "ex-developer",

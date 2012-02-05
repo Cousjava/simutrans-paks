@@ -10,26 +10,11 @@
 
 #include "simconst.h"
 #include "simsys.h"
-#include "simdebug.h"
 #include "besch/bild_besch.h"
-
-#ifdef _MSC_VER
-#	include <io.h>
-#	include <direct.h>
-#	define W_OK 2
-#else
-#	include <sys/stat.h>
-#	include <fcntl.h>
-#	include <unistd.h>
-#endif
 
 #include "simgraph.h"
 
 typedef uint16 PIXVAL;
-
-int large_font_height = 10;
-static font_t large_font = { 0, 0, 0, NULL, NULL, 11 };
-struct font_t * large_font_p = &large_font;
 
 KOORD_VAL tile_raster_width = 16; // zoomed
 KOORD_VAL base_tile_raster_width = 16; // original
@@ -78,7 +63,7 @@ int display_set_unicode(int)
 
 bool display_load_font(const char*)
 {
-        large_font.line_spacing = 11;
+        large_font_p->line_spacing = 11;
 	return true;
 }
 
@@ -196,19 +181,19 @@ void display_mark_img_dirty(unsigned, KOORD_VAL, KOORD_VAL)
 {
 }
 
-void display_fillbox_wh(KOORD_VAL, KOORD_VAL, KOORD_VAL, KOORD_VAL, PLAYER_COLOR_VAL, int)
+void display_fillbox_wh(KOORD_VAL, KOORD_VAL, KOORD_VAL, KOORD_VAL, PLAYER_COLOR_VAL, bool)
 {
 }
 
-void display_fillbox_wh_clip(KOORD_VAL, KOORD_VAL, KOORD_VAL, KOORD_VAL, PLAYER_COLOR_VAL, int)
+void display_fillbox_wh_clip(KOORD_VAL, KOORD_VAL, KOORD_VAL, KOORD_VAL, PLAYER_COLOR_VAL, bool)
 {
 }
 
-void display_vline_wh(const KOORD_VAL, KOORD_VAL, KOORD_VAL, const PLAYER_COLOR_VAL, int)
+void display_vline_wh(KOORD_VAL, KOORD_VAL, KOORD_VAL, PLAYER_COLOR_VAL, bool)
 {
 }
 
-void display_vline_wh_clip(const KOORD_VAL, KOORD_VAL, KOORD_VAL, const PLAYER_COLOR_VAL, int)
+void display_vline_wh_clip(KOORD_VAL, KOORD_VAL, KOORD_VAL, PLAYER_COLOR_VAL, bool)
 {
 }
 
@@ -303,9 +288,8 @@ void display_show_load_pointer(int)
 {
 }
 
-int simgraph_init(KOORD_VAL, KOORD_VAL, int)
+void simgraph_init(KOORD_VAL, KOORD_VAL, int)
 {
-	return TRUE;
 }
 
 int is_display_init(void)
@@ -317,9 +301,13 @@ void display_free_all_images_above( unsigned)
 {
 }
 
-int simgraph_exit()
+void simgraph_exit()
 {
+<<<<<<< .mine
 	return system_close();
+=======
+	dr_os_close();
+>>>>>>> .r5221
 }
 
 void simgraph_resize(KOORD_VAL, KOORD_VAL)

@@ -93,11 +93,11 @@ static SDL_Cursor* hourglass;
  * Schnittstelle untergebracht
  * -> init,open,close
  */
-int system_init(const int* parameter)
+bool system_init(const int* parameter)
 {
 	if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_NOPARACHUTE) != 0) {
 		fprintf(stderr, "Couldn't initialize SDL: %s\n", SDL_GetError());
-		return FALSE;
+		return false;
 	}
 
 	sync_blit = parameter[1];
@@ -107,7 +107,7 @@ int system_init(const int* parameter)
 	sys_event.code = 0;
 
 	atexit(SDL_Quit); // clean up on exit
-	return TRUE;
+	return true;
 }
 
 
@@ -172,7 +172,7 @@ int system_open(int w, int const h, int const fullscreen)
 	}
 	DBG_MESSAGE("system_open(SDL)", "SDL realized screen size width=%d, height=%d (requested w=%d, h=%d)", screen->w, screen->h, w, h);
 
-	SDL_EnableUNICODE(TRUE);
+	SDL_EnableUNICODE(true);
 	SDL_EnableKeyRepeat(SDL_DEFAULT_REPEAT_DELAY, SDL_DEFAULT_REPEAT_INTERVAL);
 
 	// set the caption for the window
@@ -187,13 +187,12 @@ int system_open(int w, int const h, int const fullscreen)
 
 
 // shut down SDL
-int system_close(void)
+void system_close(void)
 {
 	SDL_FreeCursor(hourglass);
 	// Hajo: SDL doc says, screen is free'd by SDL_Quit and should not be
 	// free'd by the user
 	// SDL_FreeSurface(screen);
-	return TRUE;
 }
 
 
@@ -365,7 +364,7 @@ static int conv_mouse_buttons(Uint8 const state)
 }
 
 
-static void internal_system_wait_event(int wait)
+static void internal_system_wait_event(bool const wait)
 {
 	SDL_Event event;
 	event.type = 1;
@@ -380,13 +379,13 @@ static void internal_system_wait_event(int wait)
 	}
 	else {
 		int n;
-		int got_one = FALSE;
+		bool got_one = false;
 
 		do {
 			n = SDL_PollEvent(&event);
 
 			if (n != 0) {
-				got_one = TRUE;
+				got_one = true;
 
 				if (event.type == SDL_MOUSEMOTION) {
 					sys_event.type = SIM_MOUSE_MOVE;
@@ -559,7 +558,7 @@ static void internal_system_wait_event(int wait)
 
 void system_wait_event(void)
 {
-	internal_system_wait_event(TRUE);
+	internal_system_wait_event(true);
 }
 
 
@@ -568,7 +567,7 @@ void system_poll_event(void)
 	sys_event.type = SIM_NOEVENT;
 	sys_event.code = 0;
 
-	internal_system_wait_event(FALSE);
+	internal_system_wait_event(false);
 }
 
 

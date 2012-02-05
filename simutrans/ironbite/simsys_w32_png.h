@@ -7,7 +7,7 @@ extern "C" {
 
 #ifdef _WIN32
 // Try using GDIplus to save an screenshot.
-int system_screenshot_png(char const* filename, int w, int h, int maxwidth, unsigned short* data, int bitdepth);
+bool system_screenshot_png(char const* filename, int w, int h, int maxwidth, unsigned short* data, int bitdepth);
 #endif
 
 #ifdef __cplusplus

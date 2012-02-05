@@ -7,6 +7,16 @@
 #include "font.h"
 
 
+// Hajo: moved them from simgraph??.cc to here, because
+// I believe that they belong to the other font stuff
+// Also, this was code exists only once, not thrice.
+
+int large_font_height = 10;
+static font_t large_font = { 0, 0, 0, NULL, NULL, 11 };
+struct font_t * large_font_p = &large_font;
+
+static font_t larger_font = { 0, 0, 0, NULL, NULL, 13 };
+
 /* if defined, for the old .fnt files a .bdf core will be generated */
 //#define DUMP_OLD_FONTS
 

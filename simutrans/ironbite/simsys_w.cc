@@ -85,13 +85,13 @@ HANDLE	hFlushThread=0;
  * Schnittstelle untergebracht
  * -> init,open,close
  */
-int system_init(const int* /*parameter*/)
+bool system_init(const int* /*parameter*/)
 {
 	// prepare for next event
 	sys_event.type = SIM_NOEVENT;
 	sys_event.code = 0;
 
-	return TRUE;
+	return true;
 }
 
 
@@ -192,7 +192,7 @@ int system_open(int const w, int const h, int fullscreen)
 }
 
 
-int system_close(void)
+void system_close(void)
 {
 	if (hwnd != NULL) {
 		DestroyWindow(hwnd);
@@ -204,7 +204,6 @@ int system_close(void)
 	if(  is_fullscreen  ) {
 		ChangeDisplaySettings(NULL, 0);
 	}
-	return TRUE;
 }
 
 
@@ -620,7 +619,6 @@ LRESULT WINAPI WindowProc(HWND this_hwnd, UINT msg, WPARAM wParam, LPARAM lParam
 			if (AllDibData != NULL) {
 				sys_event.type = SIM_SYSTEM;
 				sys_event.code = SIM_SYSTEM_QUIT;
-				return FALSE;
 			}
 			break;
 
@@ -630,18 +628,17 @@ LRESULT WINAPI WindowProc(HWND this_hwnd, UINT msg, WPARAM wParam, LPARAM lParam
 			if (AllDibData == NULL) {
 				PostQuitMessage(0);
 				hwnd = NULL;
-				return TRUE;
 			}
-			return FALSE;
+			break;
 
 		default:
 			return DefWindowProc(this_hwnd, msg, wParam, lParam);
 	}
-	return FALSE;
+	return 0;
 }
 
 
-static void internal_system_wait_event(int wait)
+static void internal_system_wait_event(bool const wait)
 {
 	do {
 		// wait for keybord/mouse event
@@ -656,7 +653,7 @@ void system_wait_event()
 {
 	// already even processed?
 	if(sys_event.type==SIM_NOEVENT) {
-		internal_system_wait_event(TRUE);
+		internal_system_wait_event(true);
 	}
 }
 
@@ -664,7 +661,7 @@ void system_wait_event()
 void system_poll_event()
 {
 	if (sys_event.type==SIM_NOEVENT  &&  PeekMessage(&msg, NULL, 0, 0, PM_NOREMOVE)) {
-		internal_system_wait_event(FALSE);
+		internal_system_wait_event(false);
 	}
 }
 

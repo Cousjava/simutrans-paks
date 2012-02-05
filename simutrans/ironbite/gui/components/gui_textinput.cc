@@ -8,6 +8,7 @@
 #include <string.h>
 
 #include "gui_textinput.h"
+#include "../../font.h"
 #include "../../simwin.h"
 #include "../../simsys.h"
 #include "../../dataobj/translator.h"

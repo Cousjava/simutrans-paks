@@ -5,15 +5,16 @@
  * (see license.txt)
  */
 
-/* Subfenster fuer Sim
- * keine Klasse, da die funktionen von C-Code aus aufgerufen werden koennen
+/*
+ * Simutrans sub-windows
+ * Legacy: keine Klasse, da die funktionen von C-Code aus aufgerufen werden koennen
  *
- * Die Funktionen implementieren ein 'Object' Windowmanager
- * Es gibt nur diesen einen Windowmanager
+ * The functions implement an window manager "object"
+ * there is only this one window manager in Simutrans
  *
  * 17.11.97, Hj. Malthaner
  *
- * Fenster jetzt typisiert
+ * Typed windows
  * 21.06.98, Hj. Malthaner
  */
 
@@ -22,6 +23,7 @@
 #include <stdlib.h>
 
 #include "simcolor.h"
+#include "font.h"
 #include "simevent.h"
 #include "simgraph.h"
 #include "simmenu.h"
