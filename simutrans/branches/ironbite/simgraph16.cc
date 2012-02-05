@@ -3012,7 +3012,6 @@ bool display_load_font(const char* fname)
 		free(large_font_p->char_data);
 		*large_font_p = fnt;
 		large_font_height = large_font_p->height;
-                large_font_p->line_spacing = 11;
 		return true;
 	}
 	else {

@@ -967,7 +967,6 @@ bool display_load_font(const char* fname)
 {
 	if (load_font(large_font_p, fname)) {
 		large_font_height = large_font_p->height;
-                large_font_p->line_spacing = 11;
 		return true;
 	} else {
 		return false;

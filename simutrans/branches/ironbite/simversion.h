@@ -1,7 +1,7 @@
 #ifndef simversion_h
 #define simversion_h
 
-#define REVISION 1
+#define REVISION 0002
 
 #define SIM_BUILD_NIGHTLY           0
 #define SIM_BUILD_RELEASE_CANDIDATE 1

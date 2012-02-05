@@ -63,7 +63,7 @@ int display_set_unicode(int)
 
 bool display_load_font(const char*)
 {
-        large_font_p->line_spacing = 11;
+        large_font_p->line_spacing = 13;
 	return true;
 }
 

@@ -12,10 +12,9 @@
 // Also, this was code exists only once, not thrice.
 
 int large_font_height = 10;
-static font_t large_font = { 0, 0, 0, NULL, NULL, 11 };
+static font_t large_font = { 0, 0, 0, NULL, NULL, 13 };
 struct font_t * large_font_p = &large_font;
 
-static font_t larger_font = { 0, 0, 0, NULL, NULL, 13 };
 
 /* if defined, for the old .fnt files a .bdf core will be generated */
 //#define DUMP_OLD_FONTS
@@ -240,6 +239,10 @@ static bool dsp_read_bdf_font(FILE* fin, font_t* font)
 
 bool load_font(font_t* fnt, const char* fname)
 {
+        // Hajo: currently this is the default. We need a real
+        // calculation in future.
+        fnt->line_spacing = 13;
+
 	FILE* f = fopen(fname, "rb");
 	int c;
 

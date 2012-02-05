@@ -16,7 +16,7 @@ class karte_t;
 
 /**
  * Game splash screen (aka banner)
-
+ *
  * @author Hj. Malthaner
  */
 class banner_t : public gui_frame_t, action_listener_t
@@ -32,42 +32,42 @@ private:
 	karte_t *welt;
 
 public:
-	banner_t( karte_t *w );
+	banner_t( karte_t *welt );
 
 	bool has_sticky() const { return false; }
 
 	virtual bool has_title() const { return false; }
 
 	/**
-	* Fenstertitel
-	* @author Hj. Malthaner
-	*/
+	 * @return Window title
+	 * @author Hj. Malthaner
+	 */
 	const char *get_name() const {return ""; }
 
 	/**
-	* gibt farbinformationen fuer Fenstertitel, -r�nder und -k�rper
-	* zur�ck
-	* @author Hj. Malthaner
-	*/
+	 * @return window base color
+	 * @author Hj. Malthaner
+	 */
 	PLAYER_COLOR_VAL get_titelcolor() const {return WIN_TITEL; }
 
-	/* returns true, if inside window area ...
-	* @author Hj. Malthaner
-	*/
+	/**
+         * @return true, if inside window area, false otherwise
+	 * @author Hj. Malthaner
+	 */
 	bool getroffen(int , int ) { return true; }
 
-	/* Events werden hiermit an die GUI-Komponenten
-	* gemeldet
-	* @author Hj. Malthaner
-	*/
+	/**
+         * Events are passed through this method to the components
+	 *
+	 * @author Hj. Malthaner
+	 */
 	bool infowin_event(const event_t *ev);
 
-	/**
-	* komponente neu zeichnen. Die �bergebenen Werte beziehen sich auf
-	* das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
-	* in dem die Komponente dargestellt wird.
-	* @author Hj. Malthaner
-	*/
+        /**
+         * Display game splash screen (aka banner)
+         *
+         * @author Hj. Malthaner
+         */
 	void zeichnen(koord pos, koord gr);
 
 	bool action_triggered( gui_action_creator_t *komp, value_t extra);
