@@ -88,13 +88,13 @@ public:
 	 * F�gt eine Komponente zum Fenster hinzu.
 	 * @author Hj. Malthaner
 	 */
-	void add_komponente(gui_komponente_t *komp) { container.add_komponente(komp); }
+	void add_komponente(gui_component_t *komp) { container.add_komponente(komp); }
 
 	/**
 	 * Entfernt eine Komponente aus dem Container.
 	 * @author Hj. Malthaner
 	 */
-	void remove_komponente(gui_komponente_t *komp) { container.remove_komponente(komp); }
+	void remove_komponente(gui_component_t *komp) { container.remove_komponente(komp); }
 
 	/**
 	 * Der Name wird in der Titelzeile dargestellt
@@ -234,8 +234,8 @@ public:
 	// called, when the map is rotated
 	virtual void map_rotate90( sint16 /*new_ysize*/ ) { }
 
-	void set_focus( gui_komponente_t *k ) { container.set_focus(k); }
-	virtual gui_komponente_t *get_focus() { return container.get_focus(); }
+	void set_focus( gui_component_t *k ) { container.set_focus(k); }
+	virtual gui_component_t *get_focus() { return container.get_focus(); }
 };
 
 #endif

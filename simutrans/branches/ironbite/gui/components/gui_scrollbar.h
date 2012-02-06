@@ -14,7 +14,7 @@
  */
 class scrollbar_t :
 	public gui_action_creator_t,
-	public gui_komponente_t
+	public gui_component_t
 {
 public:
 	enum type { vertical, horizontal };
@@ -59,7 +59,7 @@ public:
 	scrollbar_t(enum type type);
 
 	/**
-	 * Vorzugsweise sollte diese Methode zum Setzen der Größe benutzt werden,
+	 * Vorzugsweise sollte diese Methode zum Setzen der Grï¿½ï¿½e benutzt werden,
 	 * obwohl groesse public ist.
 	 * @author Hj. Malthaner
 	 */

@@ -19,7 +19,7 @@ class karte_t;
  * City list stats display
  * @author Hj. Malthaner
  */
-class message_stats_t : public gui_komponente_t
+class message_stats_t : public gui_component_t
 {
 private:
 	karte_t *welt;

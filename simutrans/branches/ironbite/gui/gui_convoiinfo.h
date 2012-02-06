@@ -19,7 +19,7 @@
  *
  * @autor Hj. Malthaner
  */
-class gui_convoiinfo_t : public gui_komponente_t
+class gui_convoiinfo_t : public gui_component_t
 {
 private:
 	/**

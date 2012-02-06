@@ -23,7 +23,7 @@ int gui_scrolled_list_t::total_vertical_size() const
 
 
 gui_scrolled_list_t::gui_scrolled_list_t(enum type type) :
-	gui_komponente_t(true),
+	gui_component_t(true),
 	sb(scrollbar_t::vertical)
 {
 	this->type = type;
@@ -120,7 +120,7 @@ koord gui_scrolled_list_t::request_groesse(koord request)
 }
 
 void gui_scrolled_list_t::set_groesse(koord groesse) {
-	gui_komponente_t::set_groesse(groesse);
+	gui_component_t::set_groesse(groesse);
 	adjust_scrollbar();
 }
 

@@ -15,7 +15,7 @@
 #include "gui_komponente.h"
 
 
-class gui_image_t : public gui_komponente_t
+class gui_image_t : public gui_component_t
 {
 private:
 	image_id id;

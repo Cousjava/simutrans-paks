@@ -22,7 +22,7 @@ namespace labellist {
  * Curiosity list stats display
  * @author Hj. Malthaner
  */
-class labellist_stats_t : public gui_komponente_t
+class labellist_stats_t : public gui_component_t
 {
 private:
 	karte_t * welt;

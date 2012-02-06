@@ -35,7 +35,7 @@ class karte_t;
 class loadsave_t;
 
 
-class fahrplan_gui_stats_t : public gui_komponente_t
+class fahrplan_gui_stats_t : public gui_component_t
 {
 private:
 	static karte_t *welt;

@@ -21,7 +21,7 @@
  */
 class button_t :
 	public gui_action_creator_t,
-	public gui_komponente_t
+	public gui_component_t
 {
 public:
 	/*
@@ -185,7 +185,7 @@ public:
 	bool enabled() { return b_enabled; }
 
 	// Knightly : a button can only be focusable when it is enabled
-	virtual bool is_focusable() { return b_enabled && gui_komponente_t::is_focusable(); }
+	virtual bool is_focusable() { return b_enabled && gui_component_t::is_focusable(); }
 
 	void update_focusability();
 

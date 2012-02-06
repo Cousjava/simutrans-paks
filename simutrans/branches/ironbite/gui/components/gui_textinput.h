@@ -22,7 +22,7 @@
  */
 class gui_textinput_t :
 	public gui_action_creator_t,
-	public gui_komponente_t
+	public gui_component_t
 {
 protected:
 

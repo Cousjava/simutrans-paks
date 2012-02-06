@@ -37,7 +37,7 @@ void gui_fixedwidth_textarea_t::set_width(const sint16 width)
 {
 	if(  width>0  ) {
 		// height is simply reset to 0 as it requires recalculation anyway
-		gui_komponente_t::set_groesse( koord(width, 0) );
+		gui_component_t::set_groesse( koord(width, 0) );
 	}
 }
 
@@ -139,7 +139,7 @@ void gui_fixedwidth_textarea_t::calc_display_text(const koord offset, const bool
 
 	// reset component height where necessary
 	if(  y!=get_groesse().y  ) {
-		gui_komponente_t::set_groesse( koord(get_groesse().x, y) );
+		gui_component_t::set_groesse( koord(get_groesse().x, y) );
 	}
 }
 

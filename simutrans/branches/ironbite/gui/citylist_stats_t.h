@@ -22,7 +22,7 @@ namespace citylist {
 
 
 /** City list stats display */
-class citylist_stats_t : public gui_komponente_t
+class citylist_stats_t : public gui_component_t
 {
 private:
 	karte_t *welt;

@@ -27,7 +27,7 @@ void gui_chart_t::set_background(int i)
 }
 
 
-gui_chart_t::gui_chart_t() : gui_komponente_t()
+gui_chart_t::gui_chart_t() : gui_component_t()
 {
 	// no toolstips at the start
 	tooltipkoord = koord::invalid;

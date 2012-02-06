@@ -20,7 +20,7 @@ void ding_view_t::set_groesse(koord size)
 		}
 	}
 
-	gui_komponente_t::set_groesse(size);
+	gui_component_t::set_groesse(size);
 	world_view_t::calc_offsets(size, max_dy_off);
 }
 

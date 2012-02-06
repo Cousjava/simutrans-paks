@@ -23,7 +23,7 @@ namespace factorylist {
  * Factory list stats display
  * @author Hj. Malthaner
  */
-class factorylist_stats_t : public gui_komponente_t
+class factorylist_stats_t : public gui_component_t
 {
 private:
 	karte_t *welt;

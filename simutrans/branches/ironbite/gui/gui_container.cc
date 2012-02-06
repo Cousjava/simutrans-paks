@@ -12,7 +12,7 @@
 #include "gui_container.h"
 #include "../simwin.h"
 
-gui_container_t::gui_container_t() : gui_komponente_t(), komp_focus(NULL)
+gui_container_t::gui_container_t() : gui_component_t(), komp_focus(NULL)
 {
 	list_dirty = false;
 }
@@ -22,7 +22,7 @@ gui_container_t::gui_container_t() : gui_komponente_t(), komp_focus(NULL)
  * F�gt eine Komponente zum Container hinzu.
  * @author Hj. Malthaner
  */
-void gui_container_t::add_komponente(gui_komponente_t *komp)
+void gui_container_t::add_komponente(gui_component_t *komp)
 {
 	/* insert builds the diologe from bottom to top:
 	 * Essential for comobo-boxes, so they overlap lower elements
@@ -36,7 +36,7 @@ void gui_container_t::add_komponente(gui_komponente_t *komp)
  * Entfernt eine Komponente aus dem Container.
  * @author Hj. Malthaner
  */
-void gui_container_t::remove_komponente(gui_komponente_t *komp)
+void gui_container_t::remove_komponente(gui_component_t *komp)
 {
 	/* since we can remove a subcomponent,
 	 * that actually contains the element with focus
@@ -70,7 +70,7 @@ void gui_container_t::remove_all()
 bool gui_container_t::infowin_event(const event_t *ev)
 {
 	bool swallowed = false;
-	gui_komponente_t *new_focus = komp_focus;
+	gui_component_t *new_focus = komp_focus;
 
 	// need to change focus?
 	if(  ev->ev_class==EVENT_KEYBOARD  ) {
@@ -85,7 +85,7 @@ bool gui_container_t::infowin_event(const event_t *ev)
 		if(  !swallowed  ||  (ev->ev_code==9  &&  komp_focus  &&  komp_focus->get_focus()==NULL)  ) {
 			if(  ev->ev_code==SIM_KEY_TAB  ) {
 				// TAB: find new focus
-				slist_iterator_tpl<gui_komponente_t *> iter (komponenten);
+				slist_iterator_tpl<gui_component_t *> iter (komponenten);
 				new_focus = NULL;
 				if(  !IS_SHIFT_PRESSED(ev)  ) {
 					// find next textinput field
@@ -134,10 +134,10 @@ bool gui_container_t::infowin_event(const event_t *ev)
 		const int x = ev->ev_class==EVENT_MOVE ? ev->mx : ev->cx;
 		const int y = ev->ev_class==EVENT_MOVE ? ev->my : ev->cy;
 
-		slist_iterator_tpl<gui_komponente_t *> iter (komponenten);
-		slist_tpl<gui_komponente_t *>handle_mouseover;
+		slist_iterator_tpl<gui_component_t *> iter (komponenten);
+		slist_tpl<gui_component_t *>handle_mouseover;
 		while(  !list_dirty  &&  iter.next()  ) {
-			gui_komponente_t *komp = iter.get_current();
+			gui_component_t *komp = iter.get_current();
 
 			// Hajo: deliver events if
 			// a) The mouse or click coordinates are inside the component
@@ -159,9 +159,9 @@ bool gui_container_t::infowin_event(const event_t *ev)
 		/* since the last drawn are overlaid over all others
 		 * the event-handling must go reverse too
 		 */
-		slist_iterator_tpl<gui_komponente_t *> iter_mouseover (handle_mouseover);
+		slist_iterator_tpl<gui_component_t *> iter_mouseover (handle_mouseover);
 		while(  !list_dirty  &&  iter_mouseover.next()  ) {
-			gui_komponente_t *komp = iter_mouseover.get_current();
+			gui_component_t *komp = iter_mouseover.get_current();
 
 			// Hajo: if componet hit, translate coordinates and deliver event
 			event_t ev2 = *ev;
@@ -171,7 +171,7 @@ bool gui_container_t::infowin_event(const event_t *ev)
 			swallowed = komp->infowin_event(&ev2);
 
 			// focused component of this container can only be one of its immediate children
-			gui_komponente_t *focus = komp->get_focus() ? komp : NULL;
+			gui_component_t *focus = komp->get_focus() ? komp : NULL;
 
 			// set focus for komponente, if komponente allows focus
 			if(  focus  &&  IS_LEFTCLICK(ev)  &&  komp->getroffen(ev->cx, ev->cy)  ) {
@@ -191,7 +191,7 @@ bool gui_container_t::infowin_event(const event_t *ev)
 
 	// handle unfocus/next focus stuff
 	if(  new_focus!=komp_focus  ) {
-		gui_komponente_t *old_focus = komp_focus;
+		gui_component_t *old_focus = komp_focus;
 		komp_focus = new_focus;
 		if(  old_focus  ) {
 			// release focus
@@ -215,7 +215,7 @@ void gui_container_t::zeichnen(koord offset)
 {
 	const koord screen_pos = pos + offset;
 
-	slist_iterator_tpl<gui_komponente_t *> iter (komponenten);
+	slist_iterator_tpl<gui_component_t *> iter (komponenten);
 
 	while(iter.next()) {
 		if (iter.get_current()->is_visible()) {
@@ -228,7 +228,7 @@ void gui_container_t::zeichnen(koord offset)
 
 bool gui_container_t::is_focusable()
 {
-	slist_iterator_tpl<gui_komponente_t *> iter (komponenten);
+	slist_iterator_tpl<gui_component_t *> iter (komponenten);
 
 	while(  iter.next()  ) {
 		if(  iter.get_current()->is_focusable()  ) {
@@ -239,7 +239,7 @@ bool gui_container_t::is_focusable()
 }
 
 
-void gui_container_t::set_focus( gui_komponente_t *k )
+void gui_container_t::set_focus( gui_component_t *k )
 {
 	if(  komponenten.is_contained(k)  ||  k==NULL  ) {
 		komp_focus = k;
@@ -251,7 +251,7 @@ void gui_container_t::set_focus( gui_komponente_t *k )
  * returns element that has the focus
  * that is: go down the hierarchy as much as possible
  */
-gui_komponente_t *gui_container_t::get_focus()
+gui_component_t *gui_container_t::get_focus()
 {
 	// if the komp_focus-element has another focused element
 	// .. return this element instead

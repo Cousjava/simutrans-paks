@@ -17,7 +17,7 @@ struct event_t;
  *
  * @autor Hj. Malthaner
  */
-class gui_komponente_t
+class gui_component_t
 {
 private:
 	/**
@@ -47,13 +47,13 @@ public:
 	* Basic contructor, initialises member variables
 	* @author Hj. Malthaner
 	*/
-	gui_komponente_t(bool _focusable = false) : visible(true), focusable(_focusable) {}
+	gui_component_t(bool _focusable = false) : visible(true), focusable(_focusable) {}
 
 	/**
 	* Virtueller Destruktor, damit Klassen sauber abgeleitet werden k�nnen
 	* @author Hj. Malthaner
 	*/
-	virtual ~gui_komponente_t() {}
+	virtual ~gui_component_t() {}
 
 	void set_focusable(bool yesno) { focusable = yesno; }
 
@@ -94,16 +94,16 @@ public:
 	}
 
 	/**
-	* Gr��e der Komponente.
-	* @author Hj. Malthaner
-	*/
+	 * Component size
+	 * @author Hj. Malthaner
+	 */
 	koord groesse;
 
 	/**
-	* Vorzugsweise sollte diese Methode zum Setzen der Gr��e benutzt werden,
-	* obwohl groesse public ist.
-	* @author Hj. Malthaner
-	*/
+	 * Vorzugsweise sollte diese Methode zum Setzen der Gr��e benutzt werden,
+	 * obwohl groesse public ist.
+	 * @author Hj. Malthaner
+	 */
 	virtual void set_groesse(const koord groesse) {this->groesse = groesse;}
 	
 	/**
@@ -111,7 +111,7 @@ public:
  	 * 
 	 * @author Hj. Malthaner
 	 */
-	virtual void set_size(const int w, const int h) {groesse.x = w; groesse.y = h;}
+	virtual void set_size(const int w, const int h) {set_groesse(koord(w, h));}
 
 	/**
 	* Vorzugsweise sollte diese Methode zum Abfragen der Gr��e benutzt werden,
@@ -152,7 +152,7 @@ public:
 	 * other derivates like scrolled list of tabs want to
 	 * return a component out of their selection
 	 */
-	virtual gui_komponente_t *get_focus() { return is_focusable() ? (gui_komponente_t *)this : NULL; }
+	virtual gui_component_t *get_focus() { return is_focusable() ? (gui_component_t *)this : NULL; }
 
 	/**
 	 * Get the relative position of the focused component.

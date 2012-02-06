@@ -17,7 +17,7 @@
  * as a list like display
  * @author Hj. Malthaner
  */
-class goods_stats_t : public gui_komponente_t
+class goods_stats_t : public gui_component_t
 {
 private:
 	uint16 *goodslist;

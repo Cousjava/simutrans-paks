@@ -24,7 +24,7 @@
  * @author: Volker Meyer
  * @date 25.05.03
  */
-class gui_label_t : public gui_komponente_t
+class gui_label_t : public gui_component_t
 {
 public:
 	enum align_t {

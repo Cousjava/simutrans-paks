@@ -19,7 +19,7 @@
 
 
 gui_combobox_t::gui_combobox_t() :
-	gui_komponente_t(true),
+	gui_component_t(true),
 	droplist(gui_scrolled_list_t::select)
 {
 	bt_prev.set_typ(button_t::arrowleft);
@@ -267,7 +267,7 @@ void gui_combobox_t::set_groesse(koord gr)
 	textinp.set_pos( pos+koord(12,0) );
 	textinp.set_groesse( koord(gr.x-26,14) );
 	bt_next.set_pos( koord(gr.x-12,2) );
-	gui_komponente_t::groesse = gr;
+	gui_component_t::groesse = gr;
 }
 
 /**

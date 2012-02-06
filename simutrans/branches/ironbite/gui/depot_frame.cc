@@ -1317,7 +1317,7 @@ void depot_frame_t::draw_vehicle_info_text(koord pos)
 	const koord size = get_fenstergroesse();
 	PUSH_CLIP(pos.x, pos.y, size.x-1, size.y-1);
 
-	gui_komponente_t const* const tab = tabs.get_aktives_tab();
+	gui_component_t const* const tab = tabs.get_aktives_tab();
 	gui_image_list_t const* const lst =
 		tab == &scrolly_pas       ? &pas       :
 		tab == &scrolly_electrics ? &electrics :
@@ -1457,7 +1457,7 @@ void depot_frame_t::draw_vehicle_info_text(koord pos)
 
 void depot_frame_t::update_tabs()
 {
-	gui_komponente_t *old_tab = tabs.get_aktives_tab();
+	gui_component_t *old_tab = tabs.get_aktives_tab();
 	tabs.clear();
 
 	bool one = false;

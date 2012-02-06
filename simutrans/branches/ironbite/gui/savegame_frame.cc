@@ -80,8 +80,8 @@ gui_frame_t( translator::translate("Load/Save") ),
 	const int width = DIALOG_WIDTH;
 	const int height = width*10/16;
 	
+	set_min_windowsize(koord(2*(BUTTON_WIDTH+D_LEFT_MARGIN)+BUTTON_SPACER, height));
 	set_fenstergroesse(koord(width, height));
-	set_min_windowsize(koord(2*(BUTTON_WIDTH+scrollbar_t::BAR_SIZE)+BUTTON_SPACER, get_fenstergroesse().y+1));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -186,8 +186,10 @@ void savegame_frame_t::fill_list()
 		y += BUTTON_HEIGHT;
 	}
 	// since width was maybe increased, we only set the heigth.
-	button_frame.set_groesse( koord( get_fenstergroesse().x-1, y ) );
-	set_fenstergroesse(koord(get_fenstergroesse().x, TITLEBAR_HEIGHT+12+y+30+1));
+
+        const koord old_size = get_fenstergroesse();
+	button_frame.set_groesse( koord( old_size.x-1, y ) );
+	set_fenstergroesse(koord(old_size.x, TITLEBAR_HEIGHT+12+y+30+1));
 }
 
 
@@ -376,9 +378,10 @@ void savegame_frame_t::set_fenstergroesse(koord groesse)
 {
 	if(groesse.y>display_get_height()-70) {
 		// too large ...
-		groesse.y = ((display_get_height()-TITLEBAR_HEIGHT-12-30-1)/BUTTON_HEIGHT)*BUTTON_HEIGHT+TITLEBAR_HEIGHT+12+30+1-70;
-		// position adjustment will be done automatically ... nice!
+                groesse.y = ((display_get_height()-TITLEBAR_HEIGHT-12-30-1)/BUTTON_HEIGHT)*BUTTON_HEIGHT+TITLEBAR_HEIGHT+12+30+1-70;
+                // position adjustment will be done automatically ... nice!
 	}
+
 	gui_frame_t::set_fenstergroesse(groesse);
 	groesse = get_fenstergroesse();
 
@@ -404,7 +407,7 @@ void savegame_frame_t::set_fenstergroesse(koord groesse)
 	const int button_y = groesse.y-BUTTON_HEIGHT-D_BOTTOM_MARGIN-TITLEBAR_HEIGHT;
 	const int div_y = button_y - D_COMP_Y_SPACE;
 
-	scrolly.set_size(groesse.x, div_y-D_COMP_Y_SPACE);
+	scrolly.set_size(groesse.x, div_y-D_COMP_Y_SPACE-scrolly.get_pos().y);
 	
 	divider1.set_pos(koord(4, div_y));
 	divider1.set_size(groesse.x-8-1, 0);

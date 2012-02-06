@@ -21,13 +21,13 @@
  * @author Hj. Malthaner
  * @date 03-Mar-01
  */
-class gui_container_t : public gui_komponente_t
+class gui_container_t : public gui_component_t
 {
 private:
-	slist_tpl <gui_komponente_t *> komponenten;
+	slist_tpl <gui_component_t *> komponenten;
 
 	// holds the GUI Komponent that has the focus in this window
-	gui_komponente_t *komp_focus;
+	gui_component_t *komp_focus;
 
 	bool list_dirty:1;
 
@@ -41,13 +41,13 @@ public:
 	* F�gt eine Komponente zum Container hinzu.
 	* @author Hj. Malthaner
 	*/
-	void add_komponente(gui_komponente_t *komp);
+	void add_komponente(gui_component_t *komp);
 
 	/**
 	* Entfernt eine Komponente aus dem Container.
 	* @author Hj. Malthaner
 	*/
-	void remove_komponente(gui_komponente_t *komp);
+	void remove_komponente(gui_component_t *komp);
 
 	/**
 	* Events werden hiermit an die GUI-Komponenten
@@ -75,13 +75,13 @@ public:
 	virtual bool is_focusable();
 
 	// activates this element
-	void set_focus( gui_komponente_t *komp_focus );
+	void set_focus( gui_component_t *komp_focus );
 
 	/**
 	 * returns element that has the focus
 	 * that is: go down the hierarchy as much as possible
 	 */
-	virtual gui_komponente_t *get_focus();
+	virtual gui_component_t *get_focus();
 
 	/**
 	 * Get the relative position of the focused component.

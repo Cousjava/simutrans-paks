@@ -25,7 +25,7 @@
  */
 class gui_image_list_t :
 	public gui_action_creator_t,
-	public gui_komponente_t
+	public gui_component_t
 {
 public:
 	struct image_data_t {
@@ -60,7 +60,7 @@ private:
 	int use_rows;
 
 	/**
-	 * Kennfarbe für Bilder (Spielerfarbe).
+	 * Kennfarbe fï¿½r Bilder (Spielerfarbe).
 	 * @author Hj. Malthaner
 	 */
 	sint8 player_nr;

@@ -23,7 +23,7 @@ namespace curiositylist {
  * Curiosity list stats display
  * @author Hj. Malthaner
  */
-class curiositylist_stats_t : public gui_komponente_t
+class curiositylist_stats_t : public gui_component_t
 {
 private:
 	karte_t * welt;

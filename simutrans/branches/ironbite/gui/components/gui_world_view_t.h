@@ -21,7 +21,7 @@ class karte_t;
  * Displays a little piece of the world
  * @autor Hj. Malthaner
  */
-class world_view_t : public gui_komponente_t
+class world_view_t : public gui_component_t
 {
 private:
 	vector_tpl<koord> offsets; /**< Offsets are stored. */

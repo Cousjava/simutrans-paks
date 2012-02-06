@@ -197,7 +197,7 @@ void world_view_t::internal_draw(const koord offset, ding_t const* const ding)
  */
 void world_view_t::set_groesse(koord size)
 {
-	gui_komponente_t::set_groesse(size);
+	gui_component_t::set_groesse(size);
 	calc_offsets(size, 5);
 }
 

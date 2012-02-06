@@ -30,7 +30,7 @@ gui_tab_panel_t::gui_tab_panel_t() :
 
 
 
-void gui_tab_panel_t::add_tab(gui_komponente_t *c, const char *name, const skin_besch_t *besch, const char *tooltip )
+void gui_tab_panel_t::add_tab(gui_component_t *c, const char *name, const skin_besch_t *besch, const char *tooltip )
 {
 	tabs.append( tab(c, besch?NULL:name, besch?besch->get_bild(0):NULL, tooltip) );
 	set_groesse( get_groesse() );
@@ -41,7 +41,7 @@ void gui_tab_panel_t::add_tab(gui_komponente_t *c, const char *name, const skin_
 
 void gui_tab_panel_t::set_groesse(koord gr)
 {
-	gui_komponente_t::set_groesse(gr);
+	gui_component_t::set_groesse(gr);
 
 	required_groesse = koord( 8, HEADER_VSIZE );
 	for (slist_tpl<tab>::iterator i = tabs.begin(), end = tabs.end(); i != end; ++i) {

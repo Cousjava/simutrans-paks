@@ -14,14 +14,14 @@
 #include "gui_komponente.h"
 #include "gui_scrollbar.h"
 
-class gui_scrollpane_t : public gui_komponente_t
+class gui_scrollpane_t : public gui_component_t
 {
 private:
 	/**
 	 * Die zu scrollende Komponente
 	 * @author Hj. Malthaner
 	 */
-	gui_komponente_t *komp;
+	gui_component_t *komp;
 	koord old_komp_groesse;
 
 	/**
@@ -41,7 +41,7 @@ public:
 	 * @param komp Die zu scrollende Komponente
 	 * @author Hj. Malthaner
 	 */
-	gui_scrollpane_t(gui_komponente_t *komp);
+	gui_scrollpane_t(gui_component_t *komp);
 
 	/**
 	 * Bei Scrollpanes _muss_ diese Methode zum setzen der Groesse
@@ -93,7 +93,7 @@ public:
 	/**
 	 * returns element that has the focus
 	 */
-	gui_komponente_t *get_focus() { return komp->get_focus(); }
+	gui_component_t *get_focus() { return komp->get_focus(); }
 
 	/**
 	 * Get the relative position of the focused component.
