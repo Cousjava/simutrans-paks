@@ -16,8 +16,6 @@
 #define TRANSPARENT75_FLAG (0x6000)
 #define OUTLINE_FLAG (0x0800)
 
-typedef unsigned short PLAYER_COLOR_VAL;
-typedef unsigned char COLOR_VAL;
 
 // Menuefarben (aendern sich nicht von Tag zu Nacht)
 #define MN_GREY0  (229)

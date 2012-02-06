@@ -318,7 +318,7 @@ void nwc_auth_player_t::init_player_lock_server(karte_t *welt)
 	uint16 player_unlocked = 0;
 	for(uint8 i=0; i<PLAYER_UNOWNED; i++) {
 		// player not activated or password matches stores password
-		if (welt->get_spieler(i) == NULL  ||  welt->get_spieler(i)->access_password_hash() == welt->get_player_password_hash(i) ) {
+		if (welt->get_spieler(i) == NULL  ||  welt->get_spieler(i)->access_password_hash() == *welt->get_player_password_hash(i) ) {
 			player_unlocked |= 1<<i;
 		}
 	}

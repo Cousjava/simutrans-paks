@@ -96,7 +96,7 @@ public:
 	 * @param suffix Filename suffix, i.e. ".sve", must be four characters
 	 * @author Hj. Malthaner
 	 */
-	savegame_frame_t(const char *suffix, const char *path, bool only_directories=false );
+	savegame_frame_t(const char *suffix, const char *path, bool only_directories);
 
 	virtual ~savegame_frame_t();
 

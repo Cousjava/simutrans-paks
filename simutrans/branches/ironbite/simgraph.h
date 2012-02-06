@@ -14,18 +14,11 @@
 #ifndef simgraph_h
 #define simgraph_h
 
-
-#include "simcolor.h"
-#include "unicode.h"
-
 #define LINESPACE 11
 
-// size of koordinates
-typedef short KOORD_VAL;
-
-
-struct clip_dimension {
-    KOORD_VAL x, xx, w, y, yy, h;
+struct clip_dimension 
+{
+    int x, xx, w, y, yy, h;
 };
 
 
@@ -55,13 +48,13 @@ void activate_ribi_clip(int ribi=15);
  * @author Hj. Malthaner
  */
 #define get_tile_raster_width()    (tile_raster_width)
-extern KOORD_VAL tile_raster_width;
+extern int tile_raster_width;
 
 #define get_base_tile_raster_width() (base_tile_raster_width)
-extern KOORD_VAL base_tile_raster_width;
+extern int base_tile_raster_width;
 
 /* changes the raster width after loading */
-KOORD_VAL display_set_base_raster_width(KOORD_VAL new_raster);
+int display_set_base_raster_width(int new_raster);
 
 
 int display_zoom_in(void);
@@ -72,10 +65,10 @@ int display_zoom_out(void);
  * Initialises the graphics module
  * @author Hj. Malthaner
  */
-void simgraph_init(KOORD_VAL width, KOORD_VAL height, int fullscreen);
+void simgraph_init(int width, int height, int fullscreen);
 int is_display_init(void);
 void simgraph_exit();
-void simgraph_resize(KOORD_VAL w, KOORD_VAL h);
+void simgraph_resize(int w, int h);
 
 /*
  * uncomment to enable unicode
@@ -95,22 +88,22 @@ void display_register_image(struct bild_t*);
 void display_free_all_images_above( unsigned above );
 
 // unzoomed offsets
-void display_set_base_image_offset( unsigned bild, KOORD_VAL xoff, KOORD_VAL yoff );
-void display_get_base_image_offset( unsigned bild, KOORD_VAL *xoff, KOORD_VAL *yoff, KOORD_VAL *xw, KOORD_VAL *yw );
+void display_set_base_image_offset( unsigned bild, int xoff, int yoff );
+void display_get_base_image_offset( unsigned bild, int *xoff, int *yoff, int *xw, int *yw );
 // zoomed offsets
-void display_get_image_offset( unsigned bild, KOORD_VAL *xoff, KOORD_VAL *yoff, KOORD_VAL *xw, KOORD_VAL *yw );
-void display_get_base_image_offset( unsigned bild, KOORD_VAL *xoff, KOORD_VAL *yoff, KOORD_VAL *xw, KOORD_VAL *yw );
-void display_mark_img_dirty( unsigned bild, KOORD_VAL x, KOORD_VAL y );
+void display_get_image_offset( unsigned bild, int *xoff, int *yoff, int *xw, int *yw );
+void display_get_base_image_offset( unsigned bild, int *xoff, int *yoff, int *xw, int *yw );
+void display_mark_img_dirty( unsigned bild, int x, int y );
 
 int get_mouse_x(void);
 int get_mouse_y(void);
 
-void mark_rect_dirty_wc(KOORD_VAL x1, KOORD_VAL y1, KOORD_VAL x2, KOORD_VAL y2);
+void mark_rect_dirty_wc(int x1, int y1, int x2, int y2);
 
-KOORD_VAL display_get_width(void);
-KOORD_VAL display_get_height(void);
-void      display_set_height(KOORD_VAL);
-void      display_set_actual_width(KOORD_VAL);
+int display_get_width(void);
+int display_get_height(void);
+void      display_set_height(int);
+void      display_set_actual_width(int);
 
 
 int display_get_light(void);
@@ -120,34 +113,34 @@ void display_day_night_shift(int night);
 
 
 // scrolls horizontally, will ignore clipping etc.
-void display_scroll_band( const KOORD_VAL start_y, const KOORD_VAL x_offset, const KOORD_VAL h );
+void display_scroll_band( const int start_y, const int x_offset, const int h );
 
 // set first and second company color for player
-void display_set_player_color_scheme(const int player, const COLOR_VAL col1, const COLOR_VAL col2 );
+void display_set_player_color_scheme(const int player, const int col1, const int col2 );
 
 // display image with day and night change
-void display_img_aux(const unsigned n, KOORD_VAL xp, KOORD_VAL yp, const signed char player_nr, const int daynight, const int dirty);
+void display_img_aux(const unsigned n, int xp, int yp, const signed char player_nr, const int daynight, const int dirty);
 #define display_img( n, x, y, d ) display_img_aux( (n), (x), (y), 0, true, (d) )
 
 /**
  * draws the images with alpha, either blended or as outline
  * @author kierongreen
  */
-void display_rezoomed_img_blend(const unsigned n, KOORD_VAL xp, KOORD_VAL yp, const signed char player_nr, const PLAYER_COLOR_VAL color_index, const int daynight, const int dirty);
+void display_rezoomed_img_blend(const unsigned n, int xp, int yp, const signed char player_nr, const int color_index, const int daynight, const int dirty);
 #define display_img_blend( n, x, y, c, dn, d ) display_rezoomed_img_blend( (n), (x), (y), 0, (c), (dn), (d) )
 
 // display image with color (if there) and optinal day and nightchange
-void display_color_img(const unsigned n, KOORD_VAL xp, KOORD_VAL yp, const signed char player_nr, const int daynight, const int dirty);
+void display_color_img(const unsigned n, int xp, int yp, const signed char player_nr, const int daynight, const int dirty);
 
 // display unzoomed image
-void display_base_img(const unsigned n, KOORD_VAL xp, KOORD_VAL yp, const signed char player_nr, const int daynight, const int dirty);
+void display_base_img(const unsigned n, int xp, int yp, const signed char player_nr, const int daynight, const int dirty);
 
 // Knightly : display unzoomed image with alpha, either blended or as outline
-void display_base_img_blend(const unsigned n, KOORD_VAL xp, KOORD_VAL yp, const signed char player_nr, const PLAYER_COLOR_VAL color_index, const int daynight, const int dirty);
+void display_base_img_blend(const unsigned n, int xp, int yp, const signed char player_nr, const int color_index, const int daynight, const int dirty);
 
 // Knightly : pointer to image display procedures
-typedef void (*display_image_proc)(const unsigned n, KOORD_VAL xp, KOORD_VAL yp, const signed char player_nr, const int daynight, const int dirty);
-typedef void (*display_blend_proc)(const unsigned n, KOORD_VAL xp, KOORD_VAL yp, const signed char player_nr, const PLAYER_COLOR_VAL color_index, const int daynight, const int dirty);
+typedef void (*display_image_proc)(const unsigned n, int xp, int yp, const signed char player_nr, const int daynight, const int dirty);
+typedef void (*display_blend_proc)(const unsigned n, int xp, int yp, const signed char player_nr, const int color_index, const int daynight, const int dirty);
 
 // Knightly : variables for storing currently used image procedure set and tile raster width
 extern display_image_proc display_normal;
@@ -176,34 +169,32 @@ extern signed short current_tile_raster_width;
 }
 
 
-void display_fillbox_wh(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL w, KOORD_VAL h, PLAYER_COLOR_VAL color, bool dirty);
-void display_fillbox_wh_clip(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL w, KOORD_VAL h, PLAYER_COLOR_VAL color, bool dirty);
-void display_vline_wh(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL h, PLAYER_COLOR_VAL color, bool dirty);
-void display_vline_wh_clip(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL h, PLAYER_COLOR_VAL c, bool dirty);
+void display_fillbox_wh(int xp, int yp, int w, int h, int color, bool dirty);
+void display_fillbox_wh_clip(int xp, int yp, int w, int h, int color, bool dirty);
+void display_vline_wh(int xp, int yp, int h, int color, bool dirty);
+void display_vline_wh_clip(int xp, int yp, int h, int c, bool dirty);
 void display_clear(void);
 
 void display_flush_buffer(void);
 
-void display_system_move_pointer(KOORD_VAL dx, KOORD_VAL dy);
+void display_system_move_pointer(int dx, int dy);
 void display_system_show_pointer(int yesno);
 void display_system_set_pointer(int pointer);
 void display_show_load_pointer(int loading);
 
 
-void display_array_wh(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL w, KOORD_VAL h, const COLOR_VAL *arr);
+void display_array_wh(int xp, int yp, int w, int h, const unsigned char *arr);
 
 // compound painting routines
-void display_outline_proportional(KOORD_VAL xpos, KOORD_VAL ypos, PLAYER_COLOR_VAL text_color, PLAYER_COLOR_VAL shadow_color, const char *text, int dirty);
-void display_shadow_proportional(KOORD_VAL xpos, KOORD_VAL ypos, PLAYER_COLOR_VAL text_color, PLAYER_COLOR_VAL shadow_color, const char *text, int dirty);
-void display_ddd_box(KOORD_VAL x1, KOORD_VAL y1, KOORD_VAL w, KOORD_VAL h, PLAYER_COLOR_VAL tl_color, PLAYER_COLOR_VAL rd_color);
-void display_ddd_box_clip(KOORD_VAL x1, KOORD_VAL y1, KOORD_VAL w, KOORD_VAL h, PLAYER_COLOR_VAL tl_color, PLAYER_COLOR_VAL rd_color);
+void display_outline_proportional(int xpos, int ypos, int text_color, int shadow_color, const char *text, int dirty);
+void display_shadow_proportional(int xpos, int ypos, int text_color, int shadow_color, const char *text, int dirty);
+void display_ddd_box(int x1, int y1, int w, int h, int tl_color, int rd_color);
+void display_ddd_box_clip(int x1, int y1, int w, int h, int tl_color, int rd_color);
 
 
 // unicode save moving in strings
-size_t get_next_char(const char* text, size_t pos);
-long get_prev_char(const char* text, long pos);
-
-KOORD_VAL display_get_char_width(utf16 c);
+int get_next_char(const char* text, int pos);
+int get_prev_char(const char* text, int pos);
 
 /**
  * For the next logical character in the text, returns the character code
@@ -225,7 +216,7 @@ unsigned short get_prev_char_with_metrics(const char* &text, const char *const t
 #define proportional_string_width(text)          display_calc_proportional_string_len_width(text, 0x7FFF)
 #define proportional_string_len_width(text, len) display_calc_proportional_string_len_width(text, len)
 // length of a string in pixel
-int display_calc_proportional_string_len_width(const char* text, size_t len);
+int display_calc_proportional_string_len_width(const char* text, int len);
 
 /*
  * len parameter added - use -1 for previous behaviour.
@@ -243,19 +234,19 @@ enum
 	DT_CLIP      = 1 << 3
 };
 
-int display_text_proportional_len_clip(KOORD_VAL x, KOORD_VAL y, const char* txt, int flags, PLAYER_COLOR_VAL color_index, long len);
+int display_text_proportional_len_clip(int x, int y, const char* txt, int flags, int color_index, long len);
 /* macro are for compatibility */
 #define display_proportional(     x,  y, txt, align, color, dirty) display_text_proportional_len_clip(x, y, txt, align | (dirty ? DT_DIRTY : 0),           color,  -1)
 #define display_proportional_clip(x,  y, txt, align, color, dirty) display_text_proportional_len_clip(x, y, txt, align | (dirty ? DT_DIRTY : 0) | DT_CLIP, color,  -1)
 
-void display_ddd_proportional(KOORD_VAL xpos, KOORD_VAL ypos, KOORD_VAL width, KOORD_VAL hgt,PLAYER_COLOR_VAL ddd_farbe, PLAYER_COLOR_VAL text_farbe,const char *text, int dirty);
-void display_ddd_proportional_clip(KOORD_VAL xpos, KOORD_VAL ypos, KOORD_VAL width, KOORD_VAL hgt,PLAYER_COLOR_VAL ddd_farbe, PLAYER_COLOR_VAL text_farbe, const char *text, int dirty);
+void display_ddd_proportional(int xpos, int ypos, int width, int hgt,int ddd_farbe, int text_farbe,const char *text, int dirty);
+void display_ddd_proportional_clip(int xpos, int ypos, int width, int hgt,int ddd_farbe, int text_farbe, const char *text, int dirty);
 
-int display_multiline_text(KOORD_VAL x, KOORD_VAL y, const char *inbuf, PLAYER_COLOR_VAL color);
+int display_multiline_text(int x, int y, const char *inbuf, int color);
 
-void display_direct_line(const KOORD_VAL x, const KOORD_VAL y, const KOORD_VAL xx, const KOORD_VAL yy, const PLAYER_COLOR_VAL color);
+void display_direct_line(const int x, const int y, const int xx, const int yy, const int color);
 
-void display_set_clip_wh(KOORD_VAL x, KOORD_VAL y, KOORD_VAL w, KOORD_VAL h);
+void display_set_clip_wh(int x, int y, int w, int h);
 struct clip_dimension display_get_clip_wh(void);
 
 void display_snapshot(void);
@@ -264,8 +255,8 @@ void display_set_progress_text(const char *text);
 void display_progress(int part, int total);
 
 #if COLOUR_DEPTH != 0
-extern COLOR_VAL display_day_lights[  LIGHT_COUNT * 3];
-extern COLOR_VAL display_night_lights[LIGHT_COUNT * 3];
+extern int * display_day_lights_p;
+extern int * display_night_lights_p;
 #endif
 
 #endif

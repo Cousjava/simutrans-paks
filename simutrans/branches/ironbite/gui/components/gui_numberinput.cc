@@ -7,9 +7,9 @@
 
 #include "../gui_frame.h"
 #include "gui_numberinput.h"
-#include "../../simwin.h"
+#include "../../simcolor.h"
 #include "../../simgraph.h"
-#include "../../macros.h"
+#include "../../simwin.h"
 #include "../../dataobj/translator.h"
 
 

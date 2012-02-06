@@ -9,7 +9,7 @@
 #define simbau_h
 
 #include "../boden/wege/weg.h"
-#include "../tpl/vector_tpl.h"
+#include "../dataobj/koord_3d_vector_t.h"
 #include "../simtypes.h"
 
 

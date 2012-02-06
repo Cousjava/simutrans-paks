@@ -13,6 +13,7 @@
 #include "../../simgraph.h"
 #include "../../simcolor.h"
 #include "../../simwin.h"
+#include "../../simevent.h"
 
 static char tooltip[64];
 

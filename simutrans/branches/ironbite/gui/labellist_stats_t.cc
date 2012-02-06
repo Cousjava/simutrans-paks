@@ -12,6 +12,7 @@
 #include "../simcolor.h"
 #include "../simworld.h"
 #include "../simskin.h"
+#include "../simevent.h"
 #include "../player/simplay.h"
 
 #include "../dings/gebaeude.h"

@@ -260,7 +260,7 @@ void gui_vehicleinfo_t::zeichnen(koord offset)
 			freight_info.clear();
 
 			// first image
-			KOORD_VAL x, y, w, h;
+			int x, y, w, h;
 			const image_id bild=v->get_basis_bild();
 			display_get_base_image_offset(bild, &x, &y, &w, &h );
 			display_base_img(bild,11-x+pos.x+offset.x,pos.y+offset.y+total_height-y-LINESPACE+2,cnv->get_besitzer()->get_player_nr(),false,true);

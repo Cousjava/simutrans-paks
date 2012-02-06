@@ -77,7 +77,7 @@ bool loadsave_frame_t::del_action(const char *filename)
 }
 
 
-loadsave_frame_t::loadsave_frame_t(karte_t *welt, bool do_load) : savegame_frame_t(".sve",NULL)
+loadsave_frame_t::loadsave_frame_t(karte_t *welt, bool do_load) : savegame_frame_t(".sve", NULL, false)
 {
 	this->welt = welt;
 	this->do_load = do_load;

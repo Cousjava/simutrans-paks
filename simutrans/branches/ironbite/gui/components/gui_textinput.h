@@ -10,8 +10,6 @@
 
 #include "gui_action_creator.h"
 #include "gui_komponente.h"
-#include "../../simcolor.h"
-#include "../../simgraph.h"
 
 
 /**
@@ -36,30 +34,30 @@ protected:
 
 
 	/**
-	 * Maximall�nge des Stringbuffers
+	 * Max length of the string buffer
 	 * @author Hj. Malthaner
 	 */
-	size_t max;
+	int max;
 
 	/**
 	 * position of head cursor to the text
 	 * represents front end of the selected text portion
 	 * @author hsiegeln
 	 */
-	size_t head_cursor_pos;
+	int head_cursor_pos;
 
 	/**
 	 * position of tail cursor to the text
 	 * represent rear end of the selected text portion
 	 * @author Knightly
 	 */
-	size_t tail_cursor_pos;
+	int tail_cursor_pos;
 
 	/**
 	  * offset for controlling horizontal text scroll
 	  * Dwachs: made private to check for mouse induced cursor moves
 	  */
-	KOORD_VAL scroll_offset;
+	int scroll_offset;
 
 	/**
 	 * text alignment
@@ -67,7 +65,7 @@ protected:
 	 */
 	uint8 align;
 
-	COLOR_VAL textcol;
+	int textcol;
 
 	/**
 	 * reference time for regulating cursor blinking
@@ -85,7 +83,7 @@ protected:
 	 * determine new cursor position from event coordinates
 	 * @author Knightly
 	 */
-	size_t calc_cursor_pos(const int x);
+	int calc_cursor_pos(const int x);
 
 	/**
 	 * Remove selected text portion, if any.

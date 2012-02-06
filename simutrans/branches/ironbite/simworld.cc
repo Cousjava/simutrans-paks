@@ -1651,6 +1651,12 @@ karte_t::karte_t() :
 	stadt(0),
 	marker(0,0)
 {
+
+	for(int i=0; i<MAX_PLAYER_COUNT; i++)
+	{
+		player_password_hash[i] = new pwd_hash_t();		
+	}
+	
 	// length of day and other time stuff
 	ticks_per_world_month_shift = 20;
 	ticks_per_world_month = (1 << ticks_per_world_month_shift);
@@ -1684,7 +1690,7 @@ karte_t::karte_t() :
 
 	for(int i=0; i<MAX_PLAYER_COUNT ; i++) {
 		spieler[i] = NULL;
-		MEMZERO(player_password_hash[i]);
+		MEMZERO(*player_password_hash[i]);
 	}
 
 	// no distance to show at first ...
@@ -2300,16 +2306,19 @@ bool karte_t::ebne_planquadrat(spieler_t *sp, koord pos, sint8 hgt, bool keep_wa
 
 void karte_t::store_player_password_hash( uint8 player_nr, const pwd_hash_t& hash )
 {
-	player_password_hash[player_nr] = hash;
+	if(player_password_hash[player_nr] != 0) delete player_password_hash[player_nr];
+	player_password_hash[player_nr] = new pwd_hash_t(hash);
 }
 
 
 void karte_t::clear_player_password_hashes()
 {
 	for(int i=0; i<MAX_PLAYER_COUNT ; i++) {
-		player_password_hash[i].clear();
-		if (spieler[i]) {
-			spieler[i]->check_unlock(player_password_hash[i]);
+		player_password_hash[i]->clear();
+		if (spieler[i]) 
+		{
+			pwd_hash_t local = *player_password_hash[i];
+			spieler[i]->check_unlock(local);
 		}
 	}
 }
@@ -4878,8 +4887,10 @@ DBG_MESSAGE("karte_t::laden()", "%d factories loaded", fab_list.get_count());
 	// network game this will be done in nwc_sync_t::do_command
 	if(  !umgebung_t::networkmode  ) {
 		for(  uint8 i=0;  i<PLAYER_UNOWNED;  i++  ) {
-			if(  spieler[i]  ) {
-				spieler[i]->check_unlock( player_password_hash[i] );
+			if(  spieler[i]  ) 
+			{
+				pwd_hash_t local = *player_password_hash[i];
+				spieler[i]->check_unlock(local);
 			}
 		}
 	}
@@ -6142,4 +6153,27 @@ const vector_tpl<const freight_desc_t*> &karte_t::get_goods_list()
 	}
 
 	return goods_in_game;
+}
+
+/**
+ * Converts speed (yards per tick) into tiles per month
+ *       * A derived quantity:
+ * speed * ticks_per_world_month / yards_per_tile
+ * == speed << ticks_per_world_month_shift  (pak-set dependent, 18 in old games)
+ *          >> yards_per_tile_shift (which is 12 + 8 = 20, see above)
+ * This is hard to do with full generality, because shift operators
+ * take positive numbers!
+ *
+ * @author neroden
+ */
+uint32 karte_t::speed_to_tiles_per_month(uint32 speed) const
+{
+	const int left_shift = ticks_per_world_month_shift - YARDS_PER_TILE_SHIFT;
+	if (left_shift >= 0) {
+		return speed << left_shift;
+	} else {
+		const int right_shift = -left_shift;
+		// round to nearest
+		return (speed + (1<<(right_shift -1)) ) >> right_shift;
+	}
 }

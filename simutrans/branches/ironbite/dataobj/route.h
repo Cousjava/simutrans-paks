@@ -10,13 +10,12 @@
 
 #include "../simdebug.h"
 
-#include "../dataobj/koord3d.h"
-
-#include "../tpl/vector_tpl.h"
+#include "koord_3d_vector_t.h"
 
 class karte_t;
 class driver_t;
 class grund_t;
+class loadsave_t;
 
 /**
  * Routen, zB f�r Fahrzeuge

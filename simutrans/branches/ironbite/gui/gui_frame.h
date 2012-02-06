@@ -5,21 +5,20 @@
  * (see licence.txt)
  */
 
-/*
- * [Mathew Hounsell] Min Size Button On Map Window 20030313
- */
-
 #ifndef gui_gui_frame_h
 #define gui_gui_frame_h
 
 #include "../dataobj/koord.h"
-#include "../simgraph.h"
-#include "gui_container.h"
-#include "../simcolor.h"
 #include "../dataobj/koord3d.h"
+#include "gui_container.h"
 
 // height of titlebar
 #define TITLEBAR_HEIGHT (16)
+#define D_LEFT_MARGIN  (12)
+#define D_RIGHT_MARGIN  (12)
+#define D_TOP_MARGIN  (8)
+#define D_BOTTOM_MARGIN  (8)
+#define D_COMP_Y_SPACE  (6)
 
 class loadsave_t;
 class spieler_t;

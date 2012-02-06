@@ -13,9 +13,7 @@
 #ifndef simworld_h
 #define simworld_h
 
-#include "simconst.h"
 #include "simtypes.h"
-#include "simunits.h"
 
 #include "convoihandle_t.h"
 #include "halthandle_t.h"
@@ -26,7 +24,6 @@
 
 #include "dataobj/marker.h"
 #include "dataobj/einstellungen.h"
-#include "dataobj/pwd_hash.h"
 
 #include "simplan.h"
 
@@ -50,7 +47,7 @@ class weg_besch_t;
 class network_world_command_t;
 class freight_desc_t;
 class memory_rw_t;
-
+class pwd_hash_t;
 
 struct checklist_t
 {
@@ -307,7 +304,7 @@ private:
 	 * locally store password hashes
 	 * will be used after reconnect to a server
 	 */
-	pwd_hash_t player_password_hash[MAX_PLAYER_COUNT];
+	pwd_hash_t * player_password_hash[MAX_PLAYER_COUNT];
 
 	/*
 	 * counter for schedules
@@ -559,7 +556,7 @@ public:
 	void switch_active_player(uint8 nr, bool silent);
 	const char *new_spieler( uint8 nr, uint8 type );
 	void store_player_password_hash( uint8 player_nr, const pwd_hash_t& hash );
-	const pwd_hash_t& get_player_password_hash( uint8 player_nr ) const { return player_password_hash[player_nr]; }
+	const pwd_hash_t * get_player_password_hash( uint8 player_nr ) const { return player_password_hash[player_nr]; }
 	void clear_player_password_hashes();
 
 	/**
@@ -620,18 +617,9 @@ public:
 	 *
 	 * @author neroden
 	 */
-	uint32 speed_to_tiles_per_month(uint32 speed) const
-	{
-		const int left_shift = ticks_per_world_month_shift - YARDS_PER_TILE_SHIFT;
-		if (left_shift >= 0) {
-			return speed << left_shift;
-		} else {
-			const int right_shift = -left_shift;
-			// round to nearest
-			return (speed + (1<<(right_shift -1)) ) >> right_shift;
-		}
-	}
+	uint32 speed_to_tiles_per_month(uint32 speed) const;
 
+	
 	sint32 get_time_multiplier() const { return time_multiplier; }
 	void change_time_multiplier( sint32 delta );
 

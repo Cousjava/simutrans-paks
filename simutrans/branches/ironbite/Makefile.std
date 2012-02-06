@@ -198,6 +198,7 @@ SOURCES += dataobj/freelist.cc
 SOURCES += dataobj/gameinfo.cc
 SOURCES += dataobj/koord.cc
 SOURCES += dataobj/koord3d.cc
+SOURCES += dataobj/koord_3d_vector_t.cc
 SOURCES += dataobj/loadsave.cc
 SOURCES += dataobj/marker.cc
 SOURCES += dataobj/network.cc

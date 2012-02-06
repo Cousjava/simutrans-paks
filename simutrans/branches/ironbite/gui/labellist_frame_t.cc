@@ -10,6 +10,7 @@
 #include "components/list_button.h"
 #include "../dataobj/translator.h"
 #include "../simcolor.h"
+#include "../font.h"
 
 
 /**
@@ -59,13 +60,13 @@ labellist_frame_t::labellist_frame_t(karte_t * welt) :
 
 	scrolly.set_pos(koord(0,14+BUTTON_HEIGHT+2));
 	scrolly.set_show_scroll_x(true);
-	scrolly.set_scroll_amount_y(LINESPACE+1);
+	scrolly.set_scroll_amount_y(large_font_p->line_spacing);
 	add_komponente(&scrolly);
 
 	display_list();
 
-	set_fenstergroesse(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+18*(LINESPACE+1)+14+BUTTON_HEIGHT+2+1));
-	set_min_windowsize(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+4*(LINESPACE+1)+14+BUTTON_HEIGHT+2+1));
+	set_fenstergroesse(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+18*(large_font_p->line_spacing)+14+BUTTON_HEIGHT+2+1));
+	set_min_windowsize(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+4*(large_font_p->line_spacing)+14+BUTTON_HEIGHT+2+1));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));

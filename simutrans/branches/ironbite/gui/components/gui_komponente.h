@@ -9,7 +9,6 @@
 #define ifc_gui_komponente_h
 
 #include "../../dataobj/koord.h"
-#include "../../simevent.h"
 
 struct event_t;
 
@@ -105,9 +104,14 @@ public:
 	* obwohl groesse public ist.
 	* @author Hj. Malthaner
 	*/
-	virtual void set_groesse(koord groesse) {
-		this->groesse = groesse;
-	}
+	virtual void set_groesse(const koord groesse) {this->groesse = groesse;}
+	
+	/**
+ 	 * Instead of accessing the "groesse" member, use this method to set a component's size
+ 	 * 
+	 * @author Hj. Malthaner
+	 */
+	virtual void set_size(const int w, const int h) {groesse.x = w; groesse.y = h;}
 
 	/**
 	* Vorzugsweise sollte diese Methode zum Abfragen der Gr��e benutzt werden,

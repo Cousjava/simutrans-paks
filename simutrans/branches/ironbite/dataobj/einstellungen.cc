@@ -727,10 +727,10 @@ void settings_t::parse_simuconf(tabfile_t& simuconf, sint16& disp_width, sint16&
 		if(  c[0]>=6  ) {
 			// now update RGB values
 			for(  int j=0;  j<3;  j++  ) {
-				display_day_lights[i*3+j] = c[j+1];
+				display_day_lights_p[i*3+j] = c[j+1];
 			}
 			for(  int j=0;  j<3;  j++  ) {
-				display_night_lights[i*3+j] = c[j+4];
+				display_night_lights_p[i*3+j] = c[j+4];
 			}
 		}
 		delete [] c;

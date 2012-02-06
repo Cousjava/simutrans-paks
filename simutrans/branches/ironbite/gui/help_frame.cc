@@ -13,6 +13,7 @@
 #include "../simmenu.h"
 #include "../simsys.h"
 #include "../simworld.h"
+#include "../unicode.h"
 
 #include "../utils/cbuffer_t.h"
 #include "../utils/simstring.h"

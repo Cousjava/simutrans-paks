@@ -13,14 +13,15 @@
 #include "besch/bild_besch.h"
 
 #include "simgraph.h"
+#include "simcolor.h"
 
 typedef uint16 PIXVAL;
 
-KOORD_VAL tile_raster_width = 16; // zoomed
-KOORD_VAL base_tile_raster_width = 16; // original
+int tile_raster_width = 16; // zoomed
+int base_tile_raster_width = 16; // original
 
 
-KOORD_VAL display_set_base_raster_width(KOORD_VAL)
+int display_set_base_raster_width(int)
 {
 	return 0;
 }
@@ -52,7 +53,7 @@ static inline int is_tile_dirty(const int, const int)
 	return false;
 }
 
-void mark_rect_dirty_wc(KOORD_VAL, KOORD_VAL, KOORD_VAL, KOORD_VAL)
+void mark_rect_dirty_wc(int, int, int, int)
 {
 }
 
@@ -63,25 +64,24 @@ int display_set_unicode(int)
 
 bool display_load_font(const char*)
 {
-        large_font_p->line_spacing = 13;
-	return true;
+  	return true;
 }
 
-sint16 display_get_width(void)
+int display_get_width(void)
 {
 	return 0;
 }
 
-sint16 display_get_height(void)
+int display_get_height(void)
 {
 	return 0;
 }
 
-void display_set_height(KOORD_VAL)
+void display_set_height(int)
 {
 }
 
-void display_set_actual_width(KOORD_VAL)
+void display_set_actual_width(int)
 {
 }
 
@@ -98,7 +98,7 @@ void display_day_night_shift(int)
 {
 }
 
-void display_set_player_color_scheme(const int, const COLOR_VAL, const COLOR_VAL)
+void display_set_player_color_scheme(const int, const int, const int)
 {
 }
 
@@ -107,15 +107,15 @@ void display_register_image(struct bild_t* bild)
 	bild->bild_nr = 1;
 }
 
-void display_get_image_offset(unsigned, KOORD_VAL *, KOORD_VAL *, KOORD_VAL *, KOORD_VAL *)
+void display_get_image_offset(unsigned, int *, int *, int *, int *)
 {
 }
 
-void display_get_base_image_offset(unsigned, KOORD_VAL *, KOORD_VAL *, KOORD_VAL *, KOORD_VAL *)
+void display_get_base_image_offset(unsigned, int *, int *, int *, int *)
 {
 }
 
-void display_set_base_image_offset(unsigned, KOORD_VAL, KOORD_VAL)
+void display_set_base_image_offset(unsigned, int, int)
 {
 }
 
@@ -135,11 +135,11 @@ struct clip_dimension display_get_clip_wh(void)
 	return clip_rect;
 }
 
-void display_set_clip_wh(KOORD_VAL, KOORD_VAL, KOORD_VAL, KOORD_VAL)
+void display_set_clip_wh(int, int, int, int)
 {
 }
 
-void display_scroll_band(const KOORD_VAL, const KOORD_VAL, const KOORD_VAL)
+void display_scroll_band(const int, const int, const int)
 {
 }
 
@@ -151,23 +151,23 @@ static inline void colorpixcopy(PIXVAL *, const PIXVAL *, const PIXVAL * const)
 {
 }
 
-void display_img_aux(const unsigned, KOORD_VAL, KOORD_VAL, const signed char, const int, const int)
+void display_img_aux(const unsigned, int, int, const signed char, const int, const int)
 {
 }
 
-void display_color_img(const unsigned, KOORD_VAL, KOORD_VAL, const signed char, const int, const int)
+void display_color_img(const unsigned, int, int, const signed char, const int, const int)
 {
 }
 
-void display_base_img(const unsigned, KOORD_VAL, KOORD_VAL, const signed char, const int, const int)
+void display_base_img(const unsigned, int, int, const signed char, const int, const int)
 {
 }
 
-void display_rezoomed_img_blend(const unsigned, KOORD_VAL, KOORD_VAL, const signed char, const PLAYER_COLOR_VAL, const int, const int)
+void display_rezoomed_img_blend(const unsigned, int, int, const signed char, const int, const int, const int)
 {
 }
 
-void display_base_img_blend(const unsigned, KOORD_VAL, KOORD_VAL, const signed char, const PLAYER_COLOR_VAL, const int, const int)
+void display_base_img_blend(const unsigned, int, int, const signed char, const int, const int, const int)
 {
 }
 
@@ -177,46 +177,41 @@ display_image_proc display_color = display_base_img;
 display_blend_proc display_blend = display_base_img_blend;
 signed short current_tile_raster_width = 0;
 
-void display_mark_img_dirty(unsigned, KOORD_VAL, KOORD_VAL)
+void display_mark_img_dirty(unsigned, int, int)
 {
 }
 
-void display_fillbox_wh(KOORD_VAL, KOORD_VAL, KOORD_VAL, KOORD_VAL, PLAYER_COLOR_VAL, bool)
+void display_fillbox_wh(int, int, int, int, int, bool)
 {
 }
 
-void display_fillbox_wh_clip(KOORD_VAL, KOORD_VAL, KOORD_VAL, KOORD_VAL, PLAYER_COLOR_VAL, bool)
+void display_fillbox_wh_clip(int, int, int, int, int, bool)
 {
 }
 
-void display_vline_wh(KOORD_VAL, KOORD_VAL, KOORD_VAL, PLAYER_COLOR_VAL, bool)
+void display_vline_wh(int, int, int, int, bool)
 {
 }
 
-void display_vline_wh_clip(KOORD_VAL, KOORD_VAL, KOORD_VAL, PLAYER_COLOR_VAL, bool)
+void display_vline_wh_clip(int, int, int, int, bool)
 {
 }
 
-void display_array_wh(KOORD_VAL, KOORD_VAL, KOORD_VAL, KOORD_VAL, const COLOR_VAL *)
+void display_array_wh(int, int, int, int, const unsigned char *)
 {
 }
 
-size_t get_next_char(const char*, size_t pos)
+int get_next_char(const char*, int pos)
 {
 	return pos + 1;
 }
 
-long get_prev_char(const char*, long pos)
+int get_prev_char(const char*, int pos)
 {
 	if (pos <= 0) {
 		return 0;
 	}
 	return pos - 1;
-}
-
-KOORD_VAL display_get_char_width(utf16)
-{
-	return 0;
 }
 
 unsigned short get_next_char_with_metrics(const char* &, unsigned char &, unsigned char &)
@@ -229,41 +224,41 @@ unsigned short get_prev_char_with_metrics(const char* &, const char *const, unsi
 	return 0;
 }
 
-int display_calc_proportional_string_len_width(const char*, size_t)
+int display_calc_proportional_string_len_width(const char*, int)
 {
 	return 0;
 }
 
-int display_text_proportional_len_clip(KOORD_VAL, KOORD_VAL, const char*, int, const PLAYER_COLOR_VAL, long)
+int display_text_proportional_len_clip(int, int, const char*, int, const int, long)
 {
 	return 0;
 }
 
-void display_outline_proportional(KOORD_VAL, KOORD_VAL, PLAYER_COLOR_VAL, PLAYER_COLOR_VAL, const char *, int)
+void display_outline_proportional(int, int, int, int, const char *, int)
 {
 }
 
-void display_shadow_proportional(KOORD_VAL, KOORD_VAL, PLAYER_COLOR_VAL, PLAYER_COLOR_VAL, const char *, int)
+void display_shadow_proportional(int, int, int, int, const char *, int)
 {
 }
 
-void display_ddd_box(KOORD_VAL, KOORD_VAL, KOORD_VAL, KOORD_VAL, PLAYER_COLOR_VAL, PLAYER_COLOR_VAL)
+void display_ddd_box(int, int, int, int, int, int)
 {
 }
 
-void display_ddd_box_clip(KOORD_VAL, KOORD_VAL, KOORD_VAL, KOORD_VAL, PLAYER_COLOR_VAL, PLAYER_COLOR_VAL)
+void display_ddd_box_clip(int, int, int, int, int, int)
 {
 }
 
-void display_ddd_proportional(KOORD_VAL, KOORD_VAL, KOORD_VAL, KOORD_VAL, PLAYER_COLOR_VAL, PLAYER_COLOR_VAL, const char *, int)
+void display_ddd_proportional(int, int, int, int, int, int, const char *, int)
 {
 }
 
-void display_ddd_proportional_clip(KOORD_VAL, KOORD_VAL, KOORD_VAL, KOORD_VAL, PLAYER_COLOR_VAL, PLAYER_COLOR_VAL, const char *, int)
+void display_ddd_proportional_clip(int, int, int, int, int, int, const char *, int)
 {
 }
 
-int display_multiline_text(KOORD_VAL, KOORD_VAL, const char *, PLAYER_COLOR_VAL)
+int display_multiline_text(int, int, const char *, int)
 {
 	return 0;
 }
@@ -272,7 +267,7 @@ void display_flush_buffer(void)
 {
 }
 
-void display_system_move_pointer(KOORD_VAL, KOORD_VAL)
+void display_system_move_pointer(int, int)
 {
 }
 
@@ -288,7 +283,7 @@ void display_show_load_pointer(int)
 {
 }
 
-void simgraph_init(KOORD_VAL, KOORD_VAL, int)
+void simgraph_init(int, int, int)
 {
 }
 
@@ -303,14 +298,10 @@ void display_free_all_images_above( unsigned)
 
 void simgraph_exit()
 {
-<<<<<<< .mine
-	return system_close();
-=======
-	dr_os_close();
->>>>>>> .r5221
+	system_close();
 }
 
-void simgraph_resize(KOORD_VAL, KOORD_VAL)
+void simgraph_resize(int, int)
 {
 }
 
@@ -318,7 +309,7 @@ void display_snapshot()
 {
 }
 
-void display_direct_line(const KOORD_VAL, const KOORD_VAL, const KOORD_VAL, const KOORD_VAL, const PLAYER_COLOR_VAL)
+void display_direct_line(const int, const int, const int, const int, const int)
 {
 }
 

@@ -16,6 +16,21 @@ static font_t large_font = { 0, 0, 0, NULL, NULL, 13 };
 struct font_t * large_font_p = &large_font;
 
 
+/**
+ * Calculate width of a character
+ */
+int font_t::get_char_width(const int c)
+{
+	int width = screen_width[c];
+	if (width == 0) 
+	{
+		width = screen_width[0];
+	}
+	
+	return width;
+}
+
+
 /* if defined, for the old .fnt files a .bdf core will be generated */
 //#define DUMP_OLD_FONTS
 

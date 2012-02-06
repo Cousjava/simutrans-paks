@@ -9,6 +9,7 @@
 
 #include <string.h>
 #include "../simtypes.h"
+#include "../macros.h"
 #include "../simdebug.h"
 #include "../boden/grund.h"
 #include "marker.h"

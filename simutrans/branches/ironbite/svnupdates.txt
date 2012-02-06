@@ -9,3 +9,9 @@ Summary of conflicts:
   Skipped paths: 1
 
 Updated to revision 5190.
+Updating '.':
+At revision 5233.
+Updating '.':
+At revision 5233.
+Updating '.':
+At revision 5234.

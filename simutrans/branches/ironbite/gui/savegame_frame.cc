@@ -45,40 +45,43 @@ gui_frame_t( translator::translate("Load/Save") ),
 	// both NULL is not acceptable
 	assert(suffix!=path);
 
-	fnlabel.set_pos (koord(10,4));
+	fnlabel.set_pos (koord(10, D_TOP_MARGIN+2));
 	add_komponente(&fnlabel);
 
 	// Input box for game name
 	tstrncpy(ibuf, "", lengthof(ibuf));
 	input.set_text(ibuf, 128);
-	input.set_pos(koord(75,2));
-	input.set_groesse(koord(DIALOG_WIDTH-75-scrollbar_t::BAR_SIZE-1, BUTTON_HEIGHT));
+	input.set_pos(koord(75, D_TOP_MARGIN));
+	input.set_size(DIALOG_WIDTH-75-scrollbar_t::BAR_SIZE-1, BUTTON_HEIGHT);
 	add_komponente(&input);
 
 	// needs to be scrollable
-	scrolly.set_pos( koord(0,20) );
+	scrolly.set_pos( koord(0, input.get_pos().y + input.get_groesse().y + D_COMP_Y_SPACE) );
 	scrolly.set_scroll_amount_y(BUTTON_HEIGHT);
 	scrolly.set_size_corner(false);
 	add_komponente(&scrolly);
 
 	add_komponente(&divider1);
 
-	savebutton.set_groesse(koord(BUTTON_WIDTH, BUTTON_HEIGHT));
+	savebutton.set_size(BUTTON_WIDTH, BUTTON_HEIGHT);
 	savebutton.set_text("Ok");
 	savebutton.set_typ(button_t::roundbox);
 	savebutton.add_listener(this);
 	add_komponente(&savebutton);
 
-	cancelbutton.set_groesse(koord(BUTTON_WIDTH, BUTTON_HEIGHT));
+	cancelbutton.set_size(BUTTON_WIDTH, BUTTON_HEIGHT);
 	cancelbutton.set_text("Cancel");
 	cancelbutton.set_typ(button_t::roundbox);
 	cancelbutton.add_listener(this);
 	add_komponente(&cancelbutton);
 
 	set_focus( &input );
-
+	
+	const int width = DIALOG_WIDTH;
+	const int height = width*10/16;
+	
+	set_fenstergroesse(koord(width, height));
 	set_min_windowsize(koord(2*(BUTTON_WIDTH+scrollbar_t::BAR_SIZE)+BUTTON_SPACER, get_fenstergroesse().y+1));
-	set_fenstergroesse(koord(DIALOG_WIDTH, TITLEBAR_HEIGHT+20+3*BUTTON_HEIGHT+30+1));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -379,7 +382,7 @@ void savegame_frame_t::set_fenstergroesse(koord groesse)
 	gui_frame_t::set_fenstergroesse(groesse);
 	groesse = get_fenstergroesse();
 
-	input.set_groesse(koord(groesse.x-75-scrollbar_t::BAR_SIZE-1, BUTTON_HEIGHT));
+	input.set_size(groesse.x-75-scrollbar_t::BAR_SIZE-1, BUTTON_HEIGHT);
 
 	sint16 y = 0;
 	for (slist_tpl<entry>::const_iterator i = entries.begin(), end = entries.end(); i != end; ++i) {
@@ -396,14 +399,18 @@ void savegame_frame_t::set_fenstergroesse(koord groesse)
 		}
 	}
 
-	button_frame.set_groesse(koord(groesse.x,y));
-	scrolly.set_groesse(koord(groesse.x,groesse.y-TITLEBAR_HEIGHT-12-30-1));
+	button_frame.set_size(groesse.x, y);
 
-	divider1.set_pos(koord(4,groesse.y-36));
-	divider1.set_groesse(koord(groesse.x-8-1,0));
+	const int button_y = groesse.y-BUTTON_HEIGHT-D_BOTTOM_MARGIN-TITLEBAR_HEIGHT;
+	const int div_y = button_y - D_COMP_Y_SPACE;
 
-	savebutton.set_pos(koord(scrollbar_t::BAR_SIZE,groesse.y-BUTTON_HEIGHT-2-16-1));
-	cancelbutton.set_pos(koord(groesse.x-BUTTON_WIDTH-scrollbar_t::BAR_SIZE,groesse.y-BUTTON_HEIGHT-2-16-1));
+	scrolly.set_size(groesse.x, div_y-D_COMP_Y_SPACE);
+	
+	divider1.set_pos(koord(4, div_y));
+	divider1.set_size(groesse.x-8-1, 0);
+
+	savebutton.set_pos(koord(D_LEFT_MARGIN, button_y));
+	cancelbutton.set_pos(koord(groesse.x-BUTTON_WIDTH-D_RIGHT_MARGIN, button_y));
 }
 
 

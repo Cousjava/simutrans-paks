@@ -51,7 +51,7 @@ news_img::news_img(const char* text, image_id id, PLAYER_COLOR_VAL color) :
 	bild(id)
 {
 	if(  id!=IMG_LEER  ) {
-		KOORD_VAL xoff, yoff, xw, yw;
+		int xoff, yoff, xw, yw;
 		display_get_base_image_offset(id, &xoff, &yoff, &xw, &yw);
 		extend_window_with_component(&bild, koord(xw, yw), koord(-xoff, -yoff));
 	}

@@ -7,6 +7,7 @@
 
 #include "factorylist_frame_t.h"
 #include "components/list_button.h"
+#include "../font.h"
 #include "../dataobj/translator.h"
 
 /**
@@ -57,11 +58,11 @@ factorylist_frame_t::factorylist_frame_t(karte_t * welt) :
 	sorteddir.set_text(get_reverse() ? "hl_btn_sort_desc" : "hl_btn_sort_asc");
 
 	scrolly.set_pos(koord(0, 14+BUTTON_HEIGHT+2));
-	scrolly.set_scroll_amount_y(LINESPACE+1);
+	scrolly.set_scroll_amount_y(large_font_p->line_spacing);
 	add_komponente(&scrolly);
 
-	set_fenstergroesse(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+18*(LINESPACE+1)+14+BUTTON_HEIGHT+2+1));
-	set_min_windowsize(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+4*(LINESPACE+1)+14+BUTTON_HEIGHT+2+1));
+	set_fenstergroesse(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+18*(large_font_p->line_spacing)+14+BUTTON_HEIGHT+2+1));
+	set_min_windowsize(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+4*(large_font_p->line_spacing)+14+BUTTON_HEIGHT+2+1));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));

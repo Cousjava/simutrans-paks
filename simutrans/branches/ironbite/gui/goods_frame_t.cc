@@ -15,6 +15,7 @@
 #include "../besch/ware_besch.h"
 #include "../dataobj/translator.h"
 
+#include "../simunits.h"
 #include "../simcolor.h"
 #include "../simworld.h"
 

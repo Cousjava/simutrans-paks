@@ -27,6 +27,7 @@
 
 #include "simconst.h"
 #include "simtypes.h"
+#include "simcolor.h"
 #include "macros.h"
 #include "font.h"
 #include "pathes.h"
@@ -332,12 +333,12 @@ static const PIXVAL colortable_system[3 * 16] = {
 /*
  * Hajo: speical colors during daytime
  */
-COLOR_VAL display_day_lights[LIGHT_COUNT * 3] = {
+static int display_day_lights[LIGHT_COUNT*3] = {
 	0x57,	0x65,	0x6F, // Dark windows, lit yellowish at night
 	0x7F,	0x9B,	0xF1, // Lighter windows, lit blueish at night
 	0xFF,	0xFF,	0x53, // Yellow light
 	0xFF,	0x21,	0x1D, // Red light
-	0x01,	0xDD,	0x01, // Green light
+	0x01,	0xDD, 0x01, // Green light
 	0x6B,	0x6B,	0x6B, // Non-darkening grey 1 (menus)
 	0x9B,	0x9B,	0x9B, // Non-darkening grey 2 (menus)
 	0xB3,	0xB3,	0xB3, // non-darkening grey 3 (menus)
@@ -349,12 +350,12 @@ COLOR_VAL display_day_lights[LIGHT_COUNT * 3] = {
 	0xE1,	0x00,	0xE1, // purple light for signals
 	0x01, 0x01, 0xFF, // blue light
 };
-
+int * display_day_lights_p = display_day_lights;
 
 /*
- * Hajo: special colors during nighttime
+ * Hajo: speical colors during nighttime
  */
-COLOR_VAL display_night_lights[LIGHT_COUNT * 3] = {
+static int display_night_lights[LIGHT_COUNT*3] = {
 	0xD3,	0xC3,	0x80, // Dark windows, lit yellowish at night
 	0x80,	0xC3,	0xD3, // Lighter windows, lit blueish at night
 	0xFF,	0xFF,	0x53, // Yellow light
@@ -371,6 +372,7 @@ COLOR_VAL display_night_lights[LIGHT_COUNT * 3] = {
 	0xE1,	0x00,	0xE1, // purple light for signals
 	0x01, 0x01, 0xFF, // blue light
 };
+int * display_night_lights_p = display_night_lights;
 
 
 // offsets of first and second comany color
@@ -481,8 +483,8 @@ static PIXVAL darken_table[768];
 /*
  * Hajo: tile raster width
  */
-KOORD_VAL tile_raster_width = 16;
-KOORD_VAL base_tile_raster_width = 16;
+int tile_raster_width = 16;
+int base_tile_raster_width = 16;
 
 /*
  * Hajo: Zoom factor
@@ -491,9 +493,9 @@ static int zoom_factor = 1;
 
 
 /* changes the raster width after loading */
-KOORD_VAL display_set_base_raster_width(KOORD_VAL new_raster)
+int display_set_base_raster_width(int new_raster)
 {
-	KOORD_VAL old = base_tile_raster_width;
+	int old = base_tile_raster_width;
 	base_tile_raster_width = new_raster;
 //	tile_raster_width = (new_raster *  zoom_num[zoom_factor]) / zoom_den[zoom_factor];
 	tile_raster_width = new_raster / zoom_factor;
@@ -591,7 +593,7 @@ static inline int is_tile_dirty(const int x, const int y)
  * Markiert ein Tile as schmutzig, ohne Clipping
  * @author Hj. Malthaner
  */
-static void mark_rect_dirty_nc(KOORD_VAL x1, KOORD_VAL y1, KOORD_VAL x2, KOORD_VAL y2)
+static void mark_rect_dirty_nc(int x1, int y1, int x2, int y2)
 {
 	// floor to tile size
 	x1 >>= DIRTY_TILE_SHIFT;
@@ -618,7 +620,7 @@ static void mark_rect_dirty_nc(KOORD_VAL x1, KOORD_VAL y1, KOORD_VAL x2, KOORD_V
  * Markiert ein Tile as schmutzig, mit Clipping
  * @author Hj. Malthaner
  */
-void mark_rect_dirty_wc(KOORD_VAL x1, KOORD_VAL y1, KOORD_VAL x2, KOORD_VAL y2)
+void mark_rect_dirty_wc(int x1, int y1, int x2, int y2)
 {
 	// inside display?
 	if (x2 >= 0 && y2 >= 0 && x1 < disp_width && y1 < disp_height) {
@@ -974,19 +976,19 @@ bool display_load_font(const char* fname)
 }
 
 
-KOORD_VAL display_get_width(void)
+int display_get_width(void)
 {
 	return disp_width;
 }
 
 
-KOORD_VAL display_get_height(void)
+int display_get_height(void)
 {
 	return disp_height;
 }
 
 
-void display_set_height(KOORD_VAL const h)
+void display_set_height(int const h)
 {
 	disp_height = h;
 }
@@ -1098,7 +1100,7 @@ void display_day_night_shift(int night)
 
 
 // set first and second company color for player
-void display_set_player_color_scheme(const int player, const COLOR_VAL col1, const COLOR_VAL col2 )
+void display_set_player_color_scheme(const int player, const int col1, const int col2 )
 {
 	if(player_offsets[player][0]!=col1  ||  player_offsets[player][1]!=col2) {
 		// set new player colors
@@ -1173,7 +1175,7 @@ void display_register_image(struct bild_t* bild)
 
 
 // prissi: query offsets
-void display_get_image_offset(unsigned bild, KOORD_VAL *xoff, KOORD_VAL *yoff, KOORD_VAL *xw, KOORD_VAL *yw)
+void display_get_image_offset(unsigned bild, int *xoff, int *yoff, int *xw, int *yw)
 {
 	if (bild < anz_images) {
 		*xoff = images[bild].x;
@@ -1185,7 +1187,7 @@ void display_get_image_offset(unsigned bild, KOORD_VAL *xoff, KOORD_VAL *yoff, K
 
 
 // prissi: query unzoiomed offsets
-void display_get_base_image_offset(unsigned bild, KOORD_VAL *xoff, KOORD_VAL *yoff, KOORD_VAL *xw, KOORD_VAL *yw)
+void display_get_base_image_offset(unsigned bild, int *xoff, int *yoff, int *xw, int *yw)
 {
 	if (bild < anz_images) {
 		*xoff = images[bild].base_x;
@@ -1198,7 +1200,7 @@ void display_get_base_image_offset(unsigned bild, KOORD_VAL *xoff, KOORD_VAL *yo
 
 // prissi: canges the offset of an image
 // we need it this complex, because the actual x-offset is coded into the image
-void display_set_base_image_offset(unsigned bild, KOORD_VAL xoff, KOORD_VAL yoff)
+void display_set_base_image_offset(unsigned bild, int xoff, int yoff)
 {
 	if(bild >= anz_images) {
 		fprintf(stderr, "Warning: display_set_base_image_offset(): illegal image=%d\n", bild);
@@ -1246,10 +1248,10 @@ int get_mouse_y(void)
  * so check the value after calling and before displaying
  * @author Hj. Malthaner
  */
-static int clip_wh(KOORD_VAL *x, KOORD_VAL *width, const KOORD_VAL min_width, const KOORD_VAL max_width)
+static int clip_wh(int *x, int *width, const int min_width, const int max_width)
 {
 	if (*x < min_width) {
-		const KOORD_VAL xoff = min_width - *x;
+		const int xoff = min_width - *x;
 
 		*width += *x-min_width;
 		*x = min_width;
@@ -1269,10 +1271,10 @@ static int clip_wh(KOORD_VAL *x, KOORD_VAL *width, const KOORD_VAL min_width, co
  * if nothing to show, returns false
  * @author Niels Roest
  */
-static bool clip_lr(KOORD_VAL *x, KOORD_VAL *w, const KOORD_VAL left, const KOORD_VAL right)
+static bool clip_lr(int *x, int *w, const int left, const int right)
 {
-	const KOORD_VAL l = *x;          // leftmost pixel
-	const KOORD_VAL r = *x + *w - 1; // rightmost pixel
+	const int l = *x;          // leftmost pixel
+	const int r = *x + *w - 1; // rightmost pixel
 
 	if (l > right || r < left) {
 		*w = 0;
@@ -1305,7 +1307,7 @@ struct clip_dimension display_get_clip_wh(void)
  * Setzt Clipping Rechteck
  * @author Hj. Malthaner
  */
-void display_set_clip_wh(KOORD_VAL x, KOORD_VAL y, KOORD_VAL w, KOORD_VAL h)
+void display_set_clip_wh(int x, int y, int w, int h)
 {
 #if 0
 	clip_wh(&x, &w, 0, disp_width);
@@ -1328,7 +1330,7 @@ void display_set_clip_wh(KOORD_VAL x, KOORD_VAL y, KOORD_VAL w, KOORD_VAL h)
 
 
 // scrolls horizontally, will ignore clipping etc.
-void display_scroll_band(const KOORD_VAL start_y, const KOORD_VAL x_offset, const KOORD_VAL h)
+void display_scroll_band(const int start_y, const int x_offset, const int h)
 {
 	const PIXVAL* src = textur + start_y * disp_width + x_offset;
 	PIXVAL* dst = textur + start_y * disp_width;
@@ -1383,7 +1385,7 @@ static inline void colorpixcopy(PIXVAL *dest, const PIXVAL *src, const PIXVAL * 
  * Zeichnet Bild mit Clipping
  * @author Hj. Malthaner
  */
-static void display_img_wc(KOORD_VAL h, const KOORD_VAL xp, const KOORD_VAL yp, const PIXVAL *sp)
+static void display_img_wc(int h, const int xp, const int yp, const PIXVAL *sp)
 {
 	if (h > 0) {
 		PIXVAL *tp = textur + yp * disp_width;
@@ -1422,7 +1424,7 @@ static void display_img_wc(KOORD_VAL h, const KOORD_VAL xp, const KOORD_VAL yp, 
 /**
  * Zeichnet Bild ohne Clipping
  */
-static void display_img_nc(KOORD_VAL h, const KOORD_VAL xp, const KOORD_VAL yp, const PIXVAL *sp)
+static void display_img_nc(int h, const int xp, const int yp, const PIXVAL *sp)
 {
 	if (h > 0) {
 		PIXVAL *tp = textur + xp + yp * disp_width;
@@ -1464,11 +1466,11 @@ static void display_img_nc(KOORD_VAL h, const KOORD_VAL xp, const KOORD_VAL yp, 
  * Zeichnet Bild mit verticalem clipping (schnell) und horizontalem (langsam)
  * @author prissi
  */
-void display_img_aux(const unsigned n, KOORD_VAL xp, KOORD_VAL yp, const int dirty, bool player)
+void display_img_aux(const unsigned n, int xp, int yp, const int dirty, bool player)
 {
 	if (n < anz_images) {
 		// need to go to nightmode and or rezoomed?
-		KOORD_VAL h, reduce_h, skip_lines;
+		int h, reduce_h, skip_lines;
 
 		if (images[n].recode_flags&FLAG_REZOOM) {
 			rezoom_img(n);
@@ -1518,7 +1520,7 @@ void display_img_aux(const unsigned n, KOORD_VAL xp, KOORD_VAL yp, const int dir
 		// new block for new variables
 		{
 			// needed now ...
-			const KOORD_VAL w = images[n].w;
+			const int w = images[n].w;
 			xp += images[n].x;
 
 			// use horzontal clipping or skip it?
@@ -1541,11 +1543,11 @@ void display_img_aux(const unsigned n, KOORD_VAL xp, KOORD_VAL yp, const int dir
  * assumes height is ok and valid data are caluclated
  * @author hajo/prissi
  */
-static void display_color_img_aux(const int n, KOORD_VAL xp, const KOORD_VAL yp, const uint8 player)
+static void display_color_img_aux(const int n, int xp, const int yp, const uint8 player)
 {
-	KOORD_VAL h = images[n].h;
-	KOORD_VAL y = yp + images[n].y;
-	KOORD_VAL yoff = clip_wh(&y, &h, clip_rect.y, clip_rect.yy);
+	int h = images[n].h;
+	int y = yp + images[n].y;
+	int yoff = clip_wh(&y, &h, clip_rect.y, clip_rect.yy);
 
 	static uint8 conversion[256] = {
 		0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
@@ -1636,7 +1638,7 @@ static void display_color_img_aux(const int n, KOORD_VAL xp, const KOORD_VAL yp,
  * Zeichnet Bild, ersetzt Spielerfarben
  * @author Hj. Malthaner
  */
-void display_color_img(const unsigned n, const KOORD_VAL xp, const KOORD_VAL yp, const sint8 color, const int daynight, const int dirty)
+void display_color_img(const unsigned n, const int xp, const int yp, const sint8 color, const int daynight, const int dirty)
 {
 	if (n < anz_images) {
 		// Hajo: since the colors for player 0 are already right,
@@ -1660,10 +1662,10 @@ void display_color_img(const unsigned n, const KOORD_VAL xp, const KOORD_VAL yp,
 
 		// prissi: now test if visible and clipping needed
 		{
-			const KOORD_VAL x = images[n].x;
-			const KOORD_VAL y = images[n].y;
-			const KOORD_VAL w = images[n].w;
-			const KOORD_VAL h = images[n].h;
+			const int x = images[n].x;
+			const int y = images[n].y;
+			const int w = images[n].w;
+			const int h = images[n].h;
 
 			if (h == 0 || xp > clip_rect.xx || yp + y > clip_rect.yy || xp + x + w <= clip_rect.x || yp + y + h <= clip_rect.y) {
 				// not visible => we are done
@@ -1685,7 +1687,7 @@ void display_color_img(const unsigned n, const KOORD_VAL xp, const KOORD_VAL yp,
  * draw unscaled images, replaces base color
  * @author prissi
  */
-void display_base_img(const unsigned n, const KOORD_VAL xp, const KOORD_VAL yp, const sint8 player_nr, const int daynight, const int dirty)
+void display_base_img(const unsigned n, const int xp, const int yp, const sint8 player_nr, const int daynight, const int dirty)
 {
 	display_color_img( n, xp, yp, player_nr, daynight, dirty );
 /*
@@ -1696,10 +1698,10 @@ void display_base_img(const unsigned n, const KOORD_VAL xp, const KOORD_VAL yp, 
 	else if (n < anz_images) {
 
 		// prissi: now test if visible and clipping needed
-		const KOORD_VAL x = images[n].base_x;
-		const KOORD_VAL y = images[n].base_y;
-		const KOORD_VAL w = images[n].base_w;
-		const KOORD_VAL h = images[n].base_h;
+		const int x = images[n].base_x;
+		const int y = images[n].base_y;
+		const int w = images[n].base_w;
+		const int h = images[n].base_h;
 
 		if (h == 0 || xp > clip_rect.xx || yp + y > clip_rect.yy || xp + x + w <= clip_rect.x || yp + y + h <= clip_rect.y) {
 			// not visible => we are done
@@ -1724,7 +1726,7 @@ void display_base_img(const unsigned n, const KOORD_VAL xp, const KOORD_VAL yp, 
 */
 }
 
-static void display_img_blend_wc(KOORD_VAL h, const KOORD_VAL xp, const KOORD_VAL yp, const PIXVAL *sp, uint8 factor )
+static void display_img_blend_wc(int h, const int xp, const int yp, const PIXVAL *sp, uint8 factor )
 {
 	const uint16 offset = 256*factor;
 	if (h > 0) {
@@ -1745,8 +1747,8 @@ static void display_img_blend_wc(KOORD_VAL h, const KOORD_VAL xp, const KOORD_VA
 
 				// Hajo: something to display?
 				if (xpos + runlen >= clip_rect.x && xpos <= clip_rect.xx) {
-					const KOORD_VAL left = (xpos >= clip_rect.x ? 0 : clip_rect.x - xpos);
-					const KOORD_VAL len  = (clip_rect.xx - xpos >= runlen ? runlen : clip_rect.xx - xpos);
+					const int left = (xpos >= clip_rect.x ? 0 : clip_rect.x - xpos);
+					const int len  = (clip_rect.xx - xpos >= runlen ? runlen : clip_rect.xx - xpos);
 					{
 						PIXVAL *dest = tp + xpos + left;
 						const PIXVAL *const end = dest + len;
@@ -1770,11 +1772,11 @@ static void display_img_blend_wc(KOORD_VAL h, const KOORD_VAL xp, const KOORD_VA
  * draws the transparent outline of an image
  * @author kierongreen
  */
-void display_rezoomed_img_blend(const unsigned n, KOORD_VAL xp, KOORD_VAL yp, int, const PLAYER_COLOR_VAL color_index, const int /*daynight*/, const int dirty)
+void display_rezoomed_img_blend(const unsigned n, int xp, int yp, int, const int color_index, const int /*daynight*/, const int dirty)
 {
 	if (n < anz_images) {
 		// need to go to nightmode and or rezoomed?
-		KOORD_VAL h, reduce_h, skip_lines;
+		int h, reduce_h, skip_lines;
 
 		if (images[n].recode_flags&FLAG_REZOOM) {
 			rezoom_img(n);
@@ -1820,7 +1822,7 @@ void display_rezoomed_img_blend(const unsigned n, KOORD_VAL xp, KOORD_VAL yp, in
 		// new block for new variables
 		{
 			// needed now ...
-			const KOORD_VAL w = images[n].w;
+			const int w = images[n].w;
 			// we use function pointer for the blend runs for the moment ...
 			uint8 blend_factor = (color_index&OUTLINE_FLAG) ? (color_index&TRANSPARENT_FLAGS)/TRANSPARENT25_FLAG - 1 : (color_index&TRANSPARENT_FLAGS)/TRANSPARENT25_FLAG - 1;
 
@@ -1844,7 +1846,7 @@ void display_rezoomed_img_blend(const unsigned n, KOORD_VAL xp, KOORD_VAL yp, in
  * the area of this image need update
  * @author Hj. Malthaner
  */
-void display_mark_img_dirty(unsigned bild, KOORD_VAL xp, KOORD_VAL yp)
+void display_mark_img_dirty(unsigned bild, int xp, int yp)
 {
 	if (bild < anz_images) {
 		mark_rect_dirty_wc(
@@ -1861,7 +1863,7 @@ void display_mark_img_dirty(unsigned bild, KOORD_VAL xp, KOORD_VAL yp)
  * Zeichnet ein Pixel
  * @author Hj. Malthaner
  */
-static void display_pixel(KOORD_VAL x, KOORD_VAL y, int color)
+static void display_pixel(int x, int y, int color)
 {
 	if (x >= clip_rect.x && x <= clip_rect.xx && y >= clip_rect.y && y <= clip_rect.yy) {
 		PIXVAL* const p = textur + x + y * disp_width;
@@ -1875,7 +1877,7 @@ static void display_pixel(KOORD_VAL x, KOORD_VAL y, int color)
 /**
  * Zeichnet gefuelltes Rechteck
  */
-static void display_fb_internal(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL w, KOORD_VAL h, int color, bool dirty, KOORD_VAL cL, KOORD_VAL cR, KOORD_VAL cT, KOORD_VAL cB)
+static void display_fb_internal(int xp, int yp, int w, int h, int color, bool dirty, int cL, int cR, int cT, int cB)
 {
 	clip_lr(&xp, &w, cL, cR);
 	clip_lr(&yp, &h, cT, cB - 1);
@@ -1908,13 +1910,13 @@ static void display_fb_internal(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL w, KOORD_V
 }
 
 
-void display_fillbox_wh(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL w, KOORD_VAL h, PLAYER_COLOR_VAL color, bool dirty)
+void display_fillbox_wh(int xp, int yp, int w, int h, int color, bool dirty)
 {
 	display_fb_internal(xp, yp, w, h, color, dirty, 0, disp_width - 1, 0, disp_height);
 }
 
 
-void display_fillbox_wh_clip(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL w, KOORD_VAL h, PLAYER_COLOR_VAL color, bool dirty)
+void display_fillbox_wh_clip(int xp, int yp, int w, int h, int color, bool dirty)
 {
 	display_fb_internal(xp, yp, w, h, color, dirty, clip_rect.x, clip_rect.xx, clip_rect.y, clip_rect.yy);
 }
@@ -1924,7 +1926,7 @@ void display_fillbox_wh_clip(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL w, KOORD_VAL 
  * Zeichnet vertikale Linie
  * @author Hj. Malthaner
  */
-static void display_vl_internal(const KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL h, const PLAYER_COLOR_VAL color, int dirty, KOORD_VAL cL, KOORD_VAL cR, KOORD_VAL cT, KOORD_VAL cB)
+static void display_vl_internal(const int xp, int yp, int h, const int color, int dirty, int cL, int cR, int cT, int cB)
 {
 	clip_lr(&yp, &h, cT, cB - 1);
 
@@ -1942,13 +1944,13 @@ static void display_vl_internal(const KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL h, c
 }
 
 
-void display_vline_wh(const KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL h, const PLAYER_COLOR_VAL color, bool dirty)
+void display_vline_wh(const int xp, int yp, int h, const int color, bool dirty)
 {
 	display_vl_internal(xp, yp, h, color, dirty, 0, disp_width - 1, 0, disp_height - 1);
 }
 
 
-void display_vline_wh_clip(const KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL h, const PLAYER_COLOR_VAL color, bool dirty)
+void display_vline_wh_clip(const int xp, int yp, int h, const int color, bool dirty)
 {
 	display_vl_internal(xp, yp, h, color, dirty, clip_rect.x, clip_rect.xx, clip_rect.y, clip_rect.yy);
 }
@@ -1957,11 +1959,11 @@ void display_vline_wh_clip(const KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL h, const 
 /**
  * Zeichnet rohe Pixeldaten
  */
-void display_array_wh(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL w, KOORD_VAL h, const COLOR_VAL *arr)
+void display_array_wh(int xp, int yp, int w, int h, const unsigned char *arr)
 {
 	const int arr_w = w;
-	const KOORD_VAL xoff = clip_wh(&xp, &w, clip_rect.x, clip_rect.xx);
-	const KOORD_VAL yoff = clip_wh(&yp, &h, clip_rect.y, clip_rect.yy);
+	const int xoff = clip_wh(&xp, &w, clip_rect.x, clip_rect.xx);
+	const int yoff = clip_wh(&yp, &h, clip_rect.y, clip_rect.yy);
 
 	if (w > 0 && h > 0) {
 		PIXVAL *p = textur + xp + yp * disp_width;
@@ -1987,7 +1989,7 @@ void display_array_wh(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL w, KOORD_VAL h, cons
 
 
 // unicode save moving in strings
-long get_prev_char(const char* text, long pos)
+int get_prev_char(const char* text, int pos)
 {
 	if (has_unicode) {
 		return utf8_get_next_char((const utf8*)text, pos);
@@ -1997,7 +1999,7 @@ long get_prev_char(const char* text, long pos)
 }
 
 
-size_t get_next_char(const char* text, size_t pos)
+int get_next_char(const char* text, int pos)
 {
 	if (pos <= 0) return 0;
 	if (has_unicode) {
@@ -2005,14 +2007,6 @@ size_t get_next_char(const char* text, size_t pos)
 	} else {
 		return pos - 1;
 	}
-}
-
-
-KOORD_VAL display_get_char_width(utf16 c)
-{
-	KOORD_VAL w = large_font_p->screen_width[c];
-	if (w == 0) w = large_font_p->screen_width[0];
-	return w;
 }
 
 
@@ -2106,7 +2100,7 @@ unsigned short get_prev_char_with_metrics(const char* &text, const char *const t
  * @author prissi
  * @date 29.11.04
  */
-int display_calc_proportional_string_len_width(const char* text, size_t len)
+int display_calc_proportional_string_len_width(const char* text, int len)
 {
 	const font_t* const fnt = large_font_p;
 	unsigned int c, width = 0;
@@ -2181,19 +2175,19 @@ static unsigned char get_h_mask(const int xL, const int xR, const int cL, const 
  * @author Volker Meyer, prissi
  * @date  15.06.2003, 2.1.2005
  */
-int display_text_proportional_len_clip(KOORD_VAL x, KOORD_VAL y, const char* txt, int flags, const PLAYER_COLOR_VAL color_index, long len)
+int display_text_proportional_len_clip(int x, int y, const char* txt, int flags, const int color_index, long len)
 {
 	const font_t* fnt = large_font_p;
-	KOORD_VAL cL, cR, cT, cB;
+	int cL, cR, cT, cB;
 	unsigned c;
 	size_t	iTextPos = 0; // pointer on text position: prissi
 	int char_width_1, char_width_2; // 1 is char only, 2 includes room
 	int screen_pos;
 	unsigned char *char_data;
 	unsigned char *p;
-	KOORD_VAL yy = y + fnt->height;
-	KOORD_VAL x0;	// store the inital x (for dirty marking)
-	KOORD_VAL y0, y_offset, char_height;	// real y for display with clipping
+	int yy = y + fnt->height;
+	int x0;	// store the inital x (for dirty marking)
+	int y0, y_offset, char_height;	// real y for display with clipping
 	unsigned char mask1, mask2;	// for horizontal clipping
 	const PIXVAL color = color_index;
 
@@ -2357,7 +2351,7 @@ int display_text_proportional_len_clip(KOORD_VAL x, KOORD_VAL y, const char* txt
  * Zeichnet schattiertes Rechteck
  * @author Hj. Malthaner
  */
-void display_ddd_box(KOORD_VAL x1, KOORD_VAL y1, KOORD_VAL w, KOORD_VAL h, PLAYER_COLOR_VAL tl_color, PLAYER_COLOR_VAL rd_color)
+void display_ddd_box(int x1, int y1, int w, int h, int tl_color, int rd_color)
 {
 	display_fillbox_wh(x1, y1,         w, 1, tl_color, true);
 	display_fillbox_wh(x1, y1 + h - 1, w, 1, rd_color, true);
@@ -2373,7 +2367,7 @@ void display_ddd_box(KOORD_VAL x1, KOORD_VAL y1, KOORD_VAL w, KOORD_VAL h, PLAYE
  * Zeichnet schattiertes Rechteck
  * @author Hj. Malthaner
  */
-void display_ddd_box_clip(KOORD_VAL x1, KOORD_VAL y1, KOORD_VAL w, KOORD_VAL h, PLAYER_COLOR_VAL tl_color, PLAYER_COLOR_VAL rd_color)
+void display_ddd_box_clip(int x1, int y1, int w, int h, int tl_color, int rd_color)
 {
 	display_fillbox_wh_clip(x1, y1,         w, 1, tl_color, true);
 	display_fillbox_wh_clip(x1, y1 + h - 1, w, 1, rd_color, true);
@@ -2386,7 +2380,7 @@ void display_ddd_box_clip(KOORD_VAL x1, KOORD_VAL y1, KOORD_VAL w, KOORD_VAL h, 
 
 
 // if width equals zero, take default value
-void display_ddd_proportional(KOORD_VAL xpos, KOORD_VAL ypos, KOORD_VAL width, KOORD_VAL hgt, PLAYER_COLOR_VAL ddd_farbe, PLAYER_COLOR_VAL text_farbe, const char *text, int dirty)
+void display_ddd_proportional(int xpos, int ypos, int width, int hgt, int ddd_farbe, int text_farbe, const char *text, int dirty)
 {
 	int halfheight = large_font_height / 2 + 1;
 
@@ -2405,7 +2399,7 @@ void display_ddd_proportional(KOORD_VAL xpos, KOORD_VAL ypos, KOORD_VAL width, K
  * display text in 3d box with clipping
  * @author: hsiegeln
  */
-void display_ddd_proportional_clip(KOORD_VAL xpos, KOORD_VAL ypos, KOORD_VAL width, KOORD_VAL hgt, PLAYER_COLOR_VAL ddd_farbe, PLAYER_COLOR_VAL text_farbe, const char *text, int dirty)
+void display_ddd_proportional_clip(int xpos, int ypos, int width, int hgt, int ddd_farbe, int text_farbe, const char *text, int dirty)
 {
 	int halfheight = large_font_height / 2 + 1;
 
@@ -2435,7 +2429,7 @@ void display_ddd_proportional_clip(KOORD_VAL xpos, KOORD_VAL ypos, KOORD_VAL wid
  * @author Volker Meyer
  * @date  15.06.2003
  */
-int display_multiline_text(KOORD_VAL x, KOORD_VAL y, const char *buf, PLAYER_COLOR_VAL color)
+int display_multiline_text(int x, int y, const char *buf, int color)
 {
 	int max_px_len = 0;
 	if (buf != NULL && *buf != '\0') {
@@ -2514,7 +2508,7 @@ void display_flush_buffer(void)
  * Bewegt Mauszeiger
  * @author Hj. Malthaner
  */
-void display_system_move_pointer(KOORD_VAL dx, KOORD_VAL dy)
+void display_system_move_pointer(int dx, int dy)
 {
 	system_move_pointer(dx, dy);
 }
@@ -2562,7 +2556,7 @@ void display_show_load_pointer(int loading)
  * Initialises the graphics module
  * @author Hj. Malthaner
  */
-void simgraph_init(KOORD_VAL width, KOORD_VAL height, int full_screen)
+void simgraph_init(int width, int height, int full_screen)
 {
 	int parameter[2];
 
@@ -2669,7 +2663,7 @@ void simgraph_exit()
 /* changes display size
  * @author prissi
  */
-void simgraph_resize(KOORD_VAL w, KOORD_VAL h)
+void simgraph_resize(int w, int h)
 {
 	if (disp_width != w || disp_height != h) {
 		disp_width = (w + 15) & 0x7FF0;
@@ -2719,7 +2713,7 @@ void display_snapshot()
  * zeichnet linie von x,y nach xx,yy
  * von Hajo
  **/
-void display_direct_line(const KOORD_VAL x, const KOORD_VAL y, const KOORD_VAL xx, const KOORD_VAL yy, const PLAYER_COLOR_VAL color)
+void display_direct_line(const int x, const int y, const int xx, const int yy, const int color)
 {
 	int i, steps;
 	int xp, yp;

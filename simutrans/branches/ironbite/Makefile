@@ -99,9 +99,9 @@ endif
 
 ifdef DEBUG
   ifeq ($(shell expr $(DEBUG) \>= 1), 1)
+    CFLAGS += -g -DDEBUG
     # Hajo: I need to conserve disk space ...
-    # CFLAGS += -g -DDEBUG
-    CFLAGS += -DDEBUG
+    # CFLAGS += -DDEBUG
   endif
   ifeq ($(shell expr $(DEBUG) \>= 2), 1)
     ifneq ($(PROFILE), 2)
@@ -200,6 +200,7 @@ SOURCES += dataobj/freelist.cc
 SOURCES += dataobj/gameinfo.cc
 SOURCES += dataobj/koord.cc
 SOURCES += dataobj/koord3d.cc
+SOURCES += dataobj/koord_3d_vector_t.cc
 SOURCES += dataobj/loadsave.cc
 SOURCES += dataobj/marker.cc
 SOURCES += dataobj/network.cc

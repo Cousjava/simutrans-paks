@@ -14,6 +14,7 @@
 #include "../simwin.h"
 #include "../simworld.h"
 #include "../simskin.h"
+#include "../simevent.h"
 
 #include "components/gui_button.h"
 #include "components/list_button.h"

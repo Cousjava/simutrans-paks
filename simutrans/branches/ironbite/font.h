@@ -3,14 +3,20 @@
 
 #include "simtypes.h"
 
-struct font_t
+class font_t
 {
+public:
 	sint16	height;
 	sint16	descent;
 	uint16 num_chars;
 	uint8 *screen_width;
 	uint8 *char_data;
         uint8 line_spacing;
+
+	/**
+	 * Calculate width of a character
+	 */
+	int get_char_width(const int c);
 };
 
 // Hajo: don't know where this is currently used ...

@@ -6,6 +6,7 @@ OSTYPE = cygwin
 # BACKEND must be one of: sdl mixer_sdl allegro gdi x11
 # COLOR_DEPTH must be one of: 8 16
 BACKEND = sdl
+#COLOUR_DEPTH = 16
 COLOUR_DEPTH = 16
 
 DEBUG = 3    # Level 1-3, higher number means more debug-friendly, see Makefile
