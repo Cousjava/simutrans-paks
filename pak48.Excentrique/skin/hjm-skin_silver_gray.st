@@ -11,7 +11,7 @@ Tags
 1
 Value
 0
-50
+48
 Tile Description
 v.3
 1
@@ -672,34 +672,6 @@ data
 0
 Tile Description
 v.3
-50
-0 0
-End Of Header
-Item
-v.1
-data
-2
-player title left
-
-1
-0
-0
-Tile Description
-v.3
-49
-0 0
-End Of Header
-Item
-v.1
-data
-2
-player title center
-
-1
-0
-0
-Tile Description
-v.3
 48
 0 0
 End Of Header
@@ -707,7 +679,7 @@ Item
 v.1
 data
 2
-player title right
+
 
 1
 0
