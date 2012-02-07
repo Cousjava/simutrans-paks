@@ -6,16 +6,12 @@
  */
 
 #include "gui_button.h"
-#include "../gui_frame.h"
 
-#include "../../simdebug.h"
 #include "../../simcolor.h"
 #include "../../font.h"
 #include "../../simgraph.h"
 #include "../../simevent.h"
 #include "../../simwin.h"
-
-#include "../../besch/reader/obj_reader.h"
 
 #include "../../dataobj/translator.h"
 

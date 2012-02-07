@@ -8,11 +8,9 @@
 #include <stdio.h>
 
 #include "gui_world_view_t.h"
-#include "../../simevent.h"
 #include "../../simworld.h"
 #include "../../simdings.h"
-#include "../../simgraph.h"
-#include "../../simcolor.h"
+#include "../../simevent.h"
 #include "../../vehicle/simvehikel.h"
 #include "../../boden/grund.h"
 #include "../../simdings.h"

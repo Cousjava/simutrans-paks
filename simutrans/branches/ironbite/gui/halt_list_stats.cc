@@ -9,10 +9,8 @@
 #include "halt_list_stats.h"
 #include "../simhalt.h"
 #include "../simskin.h"
-#include "../simcolor.h"
-#include "../simgraph.h"
-#include "../player/simplay.h"
 #include "../simevent.h"
+#include "../player/simplay.h"
 #include "../simworld.h"
 #include "../simimg.h"
 

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -78,7 +78,7 @@ gui_frame_t( translator::translate("Load/Save") ),
 	set_focus( &input );
 	
 	const int width = DIALOG_WIDTH;
-	const int height = width*10/16;
+	const int height = width*9/16;
 	
 	set_min_windowsize(koord(2*(BUTTON_WIDTH+D_LEFT_MARGIN)+BUTTON_SPACER, height));
 	set_fenstergroesse(koord(width, height));
@@ -370,8 +370,9 @@ bool savegame_frame_t::action_triggered( gui_action_creator_t *komp, value_t /* 
 
 
 /**
- * Bei Scrollpanes _muss_ diese Methode zum setzen der Groesse
- * benutzt werden.
+ * Tries to adjust window size and layouts the components
+ * freshly.
+ *
  * @author Hj. Malthaner
  */
 void savegame_frame_t::set_fenstergroesse(koord groesse)
