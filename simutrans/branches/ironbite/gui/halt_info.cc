@@ -17,6 +17,8 @@
 
 #include "../freight_list_sorter.h"
 
+#include "../boden/grund.h"
+
 #include "../dataobj/umgebung.h"
 #include "../dataobj/translator.h"
 #include "../dataobj/loadsave.h"

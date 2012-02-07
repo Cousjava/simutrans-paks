@@ -691,3 +691,13 @@ void senke_t::info(cbuffer_t & buf) const
 	buf.printf( translator::translate("Act. load: %u MW\n"), power_load>>POWER_TO_MW );
 	buf.printf( translator::translate("Supplied: %u %%"), (100*power_load)/(last_power_demand>0?last_power_demand:1) );
 }
+
+image_id leitung_t::get_bild() const 
+{
+	return is_crossing ? IMG_LEER : bild;
+}
+
+image_id leitung_t::get_after_bild() const 
+{
+	return is_crossing ? bild : IMG_LEER;
+}

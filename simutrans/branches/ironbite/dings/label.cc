@@ -21,6 +21,8 @@
 #include "../besch/grund_besch.h"
 #include "../besch/skin_besch.h"
 
+#include "../boden/grund.h"
+
 #include "../dataobj/umgebung.h"
 
 #include "label.h"

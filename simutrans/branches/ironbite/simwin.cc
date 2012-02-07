@@ -162,7 +162,7 @@ static int display_gadget_box(simwin_gadget_et const  code,
 {
 	display_vline_wh_clip(x,    y,   16, color+1, false);
 	display_vline_wh_clip(x+15, y+1, 14, COL_BLACK, false);
-	display_vline_wh_clip(x+16, y+1, 14, color+1, false);
+	// display_vline_wh_clip(x+16, y+1, 14, color+1, false);
 
 	if(pushed) {
 		display_fillbox_wh_clip(x+1, y+1, 14, 14, color+1, false);
@@ -305,30 +305,89 @@ static simwin_gadget_et decode_gadget_boxes(
 	return COUNT_GADGET;
 }
 
-//-------------------------------------------------------------------------
-// (Mathew Hounsell) Refactored
-static void win_draw_window_title(const koord pos, const koord gr,
-		const PLAYER_COLOR_VAL titel_farbe,
-		const char * const text,
-		const PLAYER_COLOR_VAL text_farbe,
-		const koord3d welt_pos,
-		const bool closing,
-		const bool sticky,
-		simwin_gadget_flags_t &flags )
+/**
+ * Draw window title bar.
+ *
+ * @author Mat Hounsell, Hj. Malthaner
+ */
+static void win_draw_window_title(const koord pos, 
+                                  const koord gr,
+				  const PLAYER_COLOR_VAL titel_farbe,
+				  const char * const text,
+				  const PLAYER_COLOR_VAL text_farbe,
+				  const koord3d welt_pos,
+				  const bool closing,
+				  const bool sticky,
+				  simwin_gadget_flags_t &flags)
 {
 	PUSH_CLIP(pos.x, pos.y, gr.x, gr.y);
-	display_fillbox_wh_clip(pos.x, pos.y, gr.x, 1, titel_farbe+1, false);
-	display_fillbox_wh_clip(pos.x, pos.y+1, gr.x, 14, titel_farbe, false);
-	display_fillbox_wh_clip(pos.x, pos.y+15, gr.x, 1, COL_BLACK, false);
-	display_vline_wh_clip(pos.x+gr.x-1, pos.y,   15, COL_BLACK, false);
 
+	// Hajo: check if we have a titlebar skin
+	// default to nothing
+	int img_l = IMG_LEER;
+	int img_c = IMG_LEER;
+	int img_r = IMG_LEER;
+
+	// Hajo: has skin?
+	if(skinverwaltung_t::window_skin) 
+	{
+		// Hajo: try to tell player from normal color		
+		if(titel_farbe & PLAYER_FLAG)
+		{
+			// Hajo: player title bar
+			img_l = skinverwaltung_t::window_skin->get_bild_nr(41);
+			img_c = skinverwaltung_t::window_skin->get_bild_nr(42);
+			img_r = skinverwaltung_t::window_skin->get_bild_nr(43);
+		}
+		else
+		{
+			// Hajo: normal title bar
+			img_l = skinverwaltung_t::window_skin->get_bild_nr(38);
+			img_c = skinverwaltung_t::window_skin->get_bild_nr(39);
+			img_r = skinverwaltung_t::window_skin->get_bild_nr(40);
+		}
+	}
+	
+	// Hajo: has title bar images?
+	if(img_l != IMG_LEER && img_c != IMG_LEER && img_r != IMG_LEER) 
+	{
+		// Hajo: hack ... deduce player color base from title color
+		int player_nr = 0;
+
+		if(titel_farbe & PLAYER_FLAG)
+		{
+			player_nr = (titel_farbe & 0x0F00) >> 8;
+		}
+
+		display_color_img(img_l, pos.x, pos.y, player_nr, false, false);
+		
+		for(int x=4; x<gr.x; x+=64)
+		{
+			display_color_img(img_c, pos.x + x, pos.y, player_nr, false, false);
+		}
+		
+		display_color_img(img_r, pos.x+gr.x-4, pos.y, player_nr, false, false);
+	}
+	else
+	{
+		// Hajo: draw fallback title bar
+		const int title_color = (titel_farbe & 0xF8)+umgebung_t::front_window_bar_color;
+		
+		display_fillbox_wh_clip(pos.x, pos.y, gr.x, 1, title_color + 1, false);
+		display_fillbox_wh_clip(pos.x, pos.y+1, gr.x, 14, title_color, false);
+		display_fillbox_wh_clip(pos.x, pos.y+15, gr.x, 1, COL_BLACK, false);
+		display_vline_wh_clip(pos.x+gr.x-1, pos.y,   15, COL_BLACK, false);
+	}
+	
 	// Draw the gadgets and then move left and draw text.
 	flags.gotopos = (welt_pos != koord3d::invalid);
 	int width = display_gadget_boxes( &flags, pos.x+(REVERSE_GADGETS?0:gr.x-20), pos.y, titel_farbe, closing, sticky );
-	int titlewidth = display_proportional_clip( pos.x + (REVERSE_GADGETS?width+4:4), pos.y+(16-large_font_height)/2, text, ALIGN_LEFT, text_farbe, false );
-	if(  flags.gotopos  ) {
-		display_proportional_clip( pos.x + (REVERSE_GADGETS?width+4:4)+titlewidth+8, pos.y+(16-large_font_height)/2, welt_pos.get_2d().get_fullstr(), ALIGN_LEFT, text_farbe, false );
+	int titlewidth = display_proportional_clip( pos.x + (REVERSE_GADGETS?width+5:5), pos.y+(18-large_font_height)/2, text, ALIGN_LEFT, text_farbe, false );
+	if(flags.gotopos)
+	{
+		display_proportional_clip( pos.x + (REVERSE_GADGETS?width+5:5)+titlewidth+8, pos.y+(16-large_font_height)/2, welt_pos.get_2d().get_fullstr(), ALIGN_LEFT, text_farbe, false );
 	}
+
 	POP_CLIP();
 }
 
@@ -336,18 +395,23 @@ static void win_draw_window_title(const koord pos, const koord gr,
 //-------------------------------------------------------------------------
 
 /**
- * Draw dragger widget
+ * Draw window dragger gadget
+ *
  * @author Hj. Malthaner
  */
-static void win_draw_window_dragger(koord pos, koord gr)
+static void win_draw_window_dragger(koord pos, const koord gr)
 {
 	pos += gr;
-	if(  skinverwaltung_t::window_skin  &&  skinverwaltung_t::window_skin->get_bild_nr(36)!=IMG_LEER  ) {
+	if(skinverwaltung_t::window_skin &&
+	   skinverwaltung_t::window_skin->get_bild_nr(36) != IMG_LEER) 
+	{
 		const bild_besch_t *dragger = skinverwaltung_t::window_skin->get_bild(36);
 		display_color_img( dragger->get_nummer(), pos.x-dragger->get_pic()->w, pos.y-dragger->get_pic()->h, 0, false, false);
 	}
-	else {
-		for(  int x=0;  x<dragger_size;  x++  ) {
+	else 
+	{
+		for(int x=0; x<dragger_size; x++) 
+		{
 			display_fillbox_wh( pos.x-x, pos.y-dragger_size+x, x, 1, (x & 1) ? COL_BLACK : MN_GREY4, true);
 		}
 	}
@@ -768,25 +832,33 @@ int top_win(int win)
 	return wins.get_count()-1;
 }
 
-
-void display_win(int win)
+/**
+ * Show window on screen
+ *
+ * @author Hj. Malthaner
+ */
+void display_win(const int win)
 {
-	// ok, now process it
 	gui_frame_t *komp = wins[win].gui;
-	koord gr = komp->get_fenstergroesse();
-	koord pos = wins[win].pos;
-	PLAYER_COLOR_VAL title_color = (komp->get_titelcolor()&0xF8)+umgebung_t::front_window_bar_color;
-	PLAYER_COLOR_VAL text_color = +umgebung_t::front_window_text_color;
-	if(  (unsigned)win!=wins.get_count()-1  ) {
-		// not top => maximum brightness
-		title_color = (title_color&0xF8)+umgebung_t::bottom_window_bar_color;
+	const koord gr = komp->get_fenstergroesse();
+	const koord pos = wins[win].pos;
+	
+	const PLAYER_COLOR_VAL title_color = komp->get_titelcolor();
+	PLAYER_COLOR_VAL text_color = umgebung_t::front_window_text_color;
+	
+	if((unsigned)win != wins.get_count()-1)
+	{
+		// Hajo ... later
+		// title_color = (title_color&0xF8)+umgebung_t::bottom_window_bar_color;
 		text_color = umgebung_t::bottom_window_text_color;
 	}
-	bool need_dragger = komp->get_resizemode() != gui_frame_t::no_resize;
+	const bool need_dragger = komp->get_resizemode() != gui_frame_t::no_resize;
 
 	// %HACK (Mathew Hounsell) So draw will know if gadget is needed.
 	wins[win].flags.help = ( komp->get_hilfe_datei() != NULL );
-	if(  wins[win].flags.title  ) {
+	
+	if(wins[win].flags.title)
+	{
 		win_draw_window_title(wins[win].pos,
 				gr,
 				title_color,
@@ -797,21 +869,28 @@ void display_win(int win)
 				wins[win].sticky,
 				wins[win].flags );
 	}
+	
 	// mark top window, if requested
-	if(umgebung_t::window_frame_active  &&  (unsigned)win==wins.get_count()-1) {
+	if(umgebung_t::window_frame_active  &&  (unsigned)win==wins.get_count()-1) 
+	{
 		const int y_off = wins[win].flags.title ? 0 : 16;
-		if(!wins[win].rollup) {
+		if(!wins[win].rollup) 
+		{
 			display_ddd_box( wins[win].pos.x-1, wins[win].pos.y-1 + y_off, gr.x+2, gr.y+2 - y_off, title_color, title_color+1 );
 		}
-		else {
+		else 
+		{
 			display_ddd_box( wins[win].pos.x-1, wins[win].pos.y-1 + y_off, gr.x+2, 18 - y_off, title_color, title_color+1 );
 		}
 	}
-	if(!wins[win].rollup) {
+	
+	if(!wins[win].rollup) 
+	{
 		komp->zeichnen(wins[win].pos, gr);
 
-		// dragger zeichnen
-		if(need_dragger) {
+		// Hajo: draw window drag gadget
+		if(need_dragger) 
+		{
 			win_draw_window_dragger( pos, gr);
 		}
 	}

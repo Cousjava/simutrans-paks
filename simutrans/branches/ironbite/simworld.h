@@ -14,6 +14,7 @@
 #define simworld_h
 
 #include "simtypes.h"
+#include "dataobj/koord3d.h"
 
 #include "convoihandle_t.h"
 #include "halthandle_t.h"

@@ -343,3 +343,31 @@ void ding_t::mark_image_dirty(image_id bild,sint16 yoff) const
 		display_mark_img_dirty( bild, x+welt->get_x_off(), y+welt->get_y_off() );
 	}
 }
+
+/**
+ * give image for height > 0 (max. height currently 3)
+ * IMG_LEER is no images
+ * @author Hj. Malthaner
+ */
+image_id ding_t::get_bild(int /*height*/) const 
+{
+	return IMG_LEER;
+}
+
+/**
+ * this image is drawn after all get_bild() on this tile
+ * Currently only single height is supported for this feature
+ */
+image_id ding_t::get_after_bild() const 
+{
+	return IMG_LEER;
+}
+
+/**
+ * The image, that will be outlined
+ * @author kierongreen
+ */
+image_id ding_t::get_outline_bild() const 
+{
+	return IMG_LEER;
+}

@@ -70,7 +70,15 @@ void gui_frame_t::set_fenstergroesse(koord groesse)
  */
 PLAYER_COLOR_VAL gui_frame_t::get_titelcolor() const
 {
-	return owner ? PLAYER_FLAG|(owner->get_player_color1()+1) : WIN_TITEL;
+	if(owner)
+	{
+		const int nr = owner->get_player_nr();
+		return PLAYER_FLAG | (nr << 8) | owner->get_player_color1();
+	}
+	else
+	{
+		 return WIN_TITEL;
+	}
 }
 
 

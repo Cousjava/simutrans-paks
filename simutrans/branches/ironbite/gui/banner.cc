@@ -142,7 +142,7 @@ void banner_t::zeichnen(koord pos, koord gr )
 	yp += line_space+6;
 
 	display_shadow_proportional( pos.x + margin, yp, color_high, color_shadow,
-                                     " Simutrans is free software, if you payed for it, ask for a refund!", true );
+                                     " Simutrans is free software. If you paid for it, ask for a refund!", true );
 	yp += line_space+6;
 
 	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,

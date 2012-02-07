@@ -17,7 +17,7 @@
 #include "../dings/label.h"
 #include "../utils/simstring.h"
 #include "../utils/cbuffer_t.h"
-
+#include "../boden/grund.h"
 
 
 karte_t *label_info_t::welt = NULL;

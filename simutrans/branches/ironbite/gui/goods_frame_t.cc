@@ -17,6 +17,8 @@
 
 #include "../simunits.h"
 #include "../simcolor.h"
+#include "../simgraph.h"
+#include "../font.h"
 #include "../simworld.h"
 
 /**
@@ -79,19 +81,19 @@ goods_frame_t::goods_frame_t(karte_t *wl) :
 	speed_up.add_listener(this);
 	add_komponente(&speed_up);
 
-	y=BUTTON_HEIGHT+4+5*LINESPACE;
+	y=BUTTON_HEIGHT+4+5*large_font_p->line_spacing;
 
 	filter_goods_toggle.init(button_t::square_state, "Show only used", koord(BUTTON1_X, y));
 	filter_goods_toggle.set_tooltip(translator::translate("Only show goods which are currently handled by factories"));
 	filter_goods_toggle.add_listener(this);
 	filter_goods_toggle.pressed = filter_goods;
 	add_komponente(&filter_goods_toggle);
-	y += LINESPACE+2;
+	y += large_font_p->line_spacing+2;
 
 	sort_label.set_pos(koord(BUTTON1_X, y));
 	add_komponente(&sort_label);
 
-	y += LINESPACE+1;
+	y += large_font_p->line_spacing+1;
 
 	sortedby.init(button_t::roundbox, "", koord(BUTTON1_X, y), koord(BUTTON_WIDTH,BUTTON_HEIGHT));
 	sortedby.add_listener(this);
@@ -104,17 +106,17 @@ goods_frame_t::goods_frame_t(karte_t *wl) :
 	y += BUTTON_HEIGHT+2;
 
 	scrolly.set_pos(koord(1, y));
-	scrolly.set_scroll_amount_y(LINESPACE+1);
+	scrolly.set_scroll_amount_y(large_font_p->line_spacing+1);
 	add_komponente(&scrolly);
 
 	sort_list();
 
-	int h = (freight_builder_t::get_waren_anzahl()+1)*(LINESPACE+1)+y;
+	int h = (freight_builder_t::get_waren_anzahl()+1)*(large_font_p->line_spacing+1)+y;
 	if(h>450) {
-		h = y+27*(LINESPACE+1)+TITLEBAR_HEIGHT+1;
+		h = y+27*(large_font_p->line_spacing+1)+TITLEBAR_HEIGHT+1;
 	}
 	set_fenstergroesse(koord(TOTAL_WIDTH, h));
-	set_min_windowsize(koord(TOTAL_WIDTH,3*(LINESPACE+1)+TITLEBAR_HEIGHT+y+1));
+	set_min_windowsize(koord(TOTAL_WIDTH,3*(large_font_p->line_spacing+1)+TITLEBAR_HEIGHT+y+1));
 
 	set_resizemode(vertical_resize);
 	resize (koord(0,0));
@@ -260,11 +262,11 @@ void goods_frame_t::zeichnen(koord pos, koord gr)
 		(welt->get_average_speed(maglev_wt)*relative_speed_change)/100,
 		(welt->get_average_speed(narrowgauge_wt)*relative_speed_change)/100
 	);
-	display_multiline_text(pos.x+11, pos.y+BUTTON_HEIGHT+4+3*LINESPACE, speed_message, COL_WHITE);
+	display_multiline_text(pos.x+11, pos.y+BUTTON_HEIGHT+4+3*large_font_p->line_spacing, speed_message, COL_WHITE);
 
 	speed_message.clear();
 	speed_message.printf(translator::translate("100 km/h = %i tiles/month"),
 		welt->speed_to_tiles_per_month(kmh_to_speed(100))
 	);
-	display_multiline_text(pos.x+11, pos.y+BUTTON_HEIGHT+4+5*LINESPACE, speed_message, COL_WHITE);
+	display_multiline_text(pos.x+11, pos.y+BUTTON_HEIGHT+4+5*large_font_p->line_spacing, speed_message, COL_WHITE);
 }

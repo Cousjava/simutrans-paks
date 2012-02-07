@@ -313,6 +313,34 @@ static grund_t *wkz_intern_koord_to_weg_grund(spieler_t *sp, karte_t *welt, koor
 
 /****************************************** now the actual tools **************************************/
 
+
+image_id wkz_raise_t::get_icon(spieler_t*) const OVERRIDE 
+{
+	return grund_t::underground_mode==grund_t::ugm_all ? IMG_LEER : icon; 
+}
+
+image_id wkz_lower_t::get_icon(spieler_t*) const OVERRIDE 
+{ 
+	return grund_t::underground_mode==grund_t::ugm_all ? IMG_LEER : icon; 
+}
+
+image_id wkz_brueckenbau_t::get_icon(spieler_t*) const OVERRIDE 
+{ 
+	return grund_t::underground_mode==grund_t::ugm_all ? IMG_LEER : icon; 
+}
+
+bool wkz_show_grid_t::is_selected(karte_t const*) const OVERRIDE 
+{
+	return grund_t::show_grid; 
+}
+
+bool wkz_show_grid_t::init( karte_t *welt, spieler_t * ) 
+{
+	grund_t::toggle_grid();
+	welt->set_dirty();
+	return false;
+}
+
 // werkzeuge
 const char *wkz_abfrage_t::work( karte_t *welt, spieler_t *sp, koord3d pos )
 {

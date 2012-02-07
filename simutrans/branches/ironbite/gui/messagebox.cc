@@ -9,6 +9,7 @@
 #include "../simgraph.h"
 
 #include "../dataobj/translator.h"
+#include "../boden/grund.h"
 #include "messagebox.h"
 
 

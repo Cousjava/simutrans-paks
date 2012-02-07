@@ -9,6 +9,9 @@
 #define list_button_h
 
 #define BUTTON_WIDTH (92)
+#define BUTTON_WIDE_WIDTH (104)
+#define BUTTON_WIDER_WIDTH (116)
+
 #define BUTTON_HEIGHT (14)
 
 #define BUTTON_SPACER (2)

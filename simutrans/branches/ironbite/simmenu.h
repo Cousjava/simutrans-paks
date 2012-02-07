@@ -202,7 +202,8 @@ public:
 
 	static void read_menu(const std::string &objfilename);
 
-	werkzeug_t() : id(0xFFFFu) { cursor = icon = IMG_LEER; ok_sound = NO_SOUND; offset = Z_PLAN; default_param = NULL; command_key = 0; }
+	werkzeug_t();
+
 	virtual ~werkzeug_t() {}
 
 	virtual image_id get_icon(spieler_t *) const { return icon; }

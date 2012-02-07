@@ -58,6 +58,14 @@ vector_tpl<toolbar_t *>werkzeug_t::toolbar_tool(0);
 char werkzeug_t::toolstr[1024];
 
 
+werkzeug_t::werkzeug_t() : id(0xFFFFu) 
+{ 
+	cursor = icon = IMG_LEER; 
+	ok_sound = NO_SOUND; 
+	offset = Z_PLAN; 
+	default_param = NULL; 
+	command_key = 0; 
+}
 
 werkzeug_t *create_general_tool(int toolnr)
 {

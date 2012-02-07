@@ -442,11 +442,7 @@ public:
 
 	sint32 get_kennfarbe() const { return besch->get_kennfarbe(); }
 
-	spieler_t *get_besitzer() const
-	{
-		grund_t const* const p = welt->lookup(pos);
-		return p ? p->first_obj()->get_besitzer() : 0;
-	}
+	spieler_t *get_besitzer() const;
 
 	void zeige_info();
 

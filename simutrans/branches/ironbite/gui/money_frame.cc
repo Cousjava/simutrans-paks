@@ -21,6 +21,8 @@
 #include "../dataobj/scenario.h"
 #include "../dataobj/loadsave.h"
 
+#include "../boden/grund.h"
+
 // for headquarter construction only ...
 #include "../simskin.h"
 #include "../simwerkz.h"

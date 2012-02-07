@@ -52,7 +52,7 @@
 #include "messagebox.h"
 #include "scenario_frame.h"
 
-#define START_HEIGHT (28)
+#define START_HEIGHT (TITLEBAR_HEIGHT + D_TOP_MARGIN*2)
 
 #define LEFT_ARROW (110)
 #define RIGHT_ARROW (160)
@@ -65,8 +65,12 @@
 #define RIGHT_COLUMN (185)
 #define RIGHT_COLUMN_WIDTH (60)
 
-#define PREVIEW_SIZE (64) // size of the minimap
+#define PREVIEW_SIZE (80) // size of the minimap
 #define PREVIEW_SIZE_MIN (16) // minimum width/height of the minimap
+
+#define option_spacing_y BUTTON_HEIGHT
+
+#define LEFT_MARGIN (14)
 
 
 welt_gui_t::welt_gui_t(karte_t* const welt, settings_t* const sets) :
@@ -77,12 +81,18 @@ welt_gui_t::welt_gui_t(karte_t* const welt, settings_t* const sets) :
 	this->sets = sets;
 	this->old_lang = -1;
 	this->sets->beginner_mode = umgebung_t::default_einstellungen.get_beginner_mode();
+	
+	const int win_width = 284;
+	const int right_column_x = win_width - LEFT_MARGIN - RIGHT_COLUMN_WIDTH;
+	
 
-	karte_size = koord(PREVIEW_SIZE, PREVIEW_SIZE); // default preview minimap size
+	// default preview minimap size
+	karte_size = koord(PREVIEW_SIZE, PREVIEW_SIZE); 
 
 	// find earliest start and end date ...
 	uint16 game_start = 4999;
 	uint16 game_ends = 0;
+	
 	// first townhalls
 	const vector_tpl<const haus_besch_t *> *s = hausbauer_t::get_list(haus_besch_t::rathaus);
 	for (uint32 i = 0; i<s->get_count(); i++) {
@@ -96,14 +106,17 @@ welt_gui_t::welt_gui_t(karte_t* const welt, settings_t* const sets) :
 			game_ends = retire_year;
 		}
 	}
+	
 	// then streets
 	game_start = max( game_start, (wegbauer_t::get_earliest_way(road_wt)->get_intro_year_month()+11)/12 );
 	game_ends = min( game_ends, (wegbauer_t::get_latest_way(road_wt)->get_retire_year_month()+11)/12 );
 
 	loaded_heightfield = load_heightfield = false;
 	load = start = close = scenario = quit = false;
-	int intTopOfButton=START_HEIGHT;
+	int intTopOfButton = START_HEIGHT;
 	sets->heightfield = "";
+
+	intTopOfButton += 4;
 
 	// select map stuff ..
 	inp_map_number.init( abs(sets->get_karte_nummer()), 0, 0x7FFFFFFF, 1, true );
@@ -112,156 +125,163 @@ welt_gui_t::welt_gui_t(karte_t* const welt, settings_t* const sets) :
 	inp_map_number.add_listener( this );
 	add_komponente( &inp_map_number );
 
-	intTopOfButton += 12;
-	intTopOfButton += 12;
+	intTopOfButton += option_spacing_y;
 
 	inp_x_size.init( sets->get_groesse_x(), 8, min(32000,4194304/sets->get_groesse_y()), sets->get_groesse_x()>=512 ? 128 : 64, false );
 	inp_x_size.set_pos(koord(LEFT_ARROW,intTopOfButton) );
-	inp_x_size.set_groesse(koord(RIGHT_ARROW-LEFT_ARROW+10, 12));
+	inp_x_size.set_size(RIGHT_ARROW-LEFT_ARROW+10, 12);
 	inp_x_size.add_listener(this);
 	add_komponente( &inp_x_size );
-	intTopOfButton += 12;
+	intTopOfButton += option_spacing_y;
 
 	inp_y_size.init( sets->get_groesse_y(), 8, min(32000,4194304/sets->get_groesse_x()), sets->get_groesse_y()>=512 ? 128 : 64, false );
 	inp_y_size.set_pos(koord(LEFT_ARROW,intTopOfButton) );
-	inp_y_size.set_groesse(koord(RIGHT_ARROW-LEFT_ARROW+10, 12));
+	inp_y_size.set_size(RIGHT_ARROW-LEFT_ARROW+10, 12);
 	inp_y_size.add_listener(this);
 	add_komponente( &inp_y_size );
-	intTopOfButton += 12;
+	intTopOfButton += option_spacing_y;
 
-	// maps etc.
-	intTopOfButton += 5;
-	random_map.set_pos( koord(10, intTopOfButton) );
-	random_map.set_groesse( koord(104, BUTTON_HEIGHT) );
+	intTopOfButton += option_spacing_y;
+
+	intTopOfButton += 12;
+	
+	// Hajo: map buttons
+	random_map.set_pos( koord(LEFT_MARGIN, intTopOfButton) );
+	random_map.set_size(BUTTON_WIDER_WIDTH, BUTTON_HEIGHT);
 	random_map.set_typ(button_t::roundbox);
 	random_map.add_listener( this );
 	add_komponente( &random_map );
 
-	load_map.set_pos( koord(104+11+30, intTopOfButton) );
-	load_map.set_groesse( koord(104, BUTTON_HEIGHT) );
+	load_map.set_pos( koord(win_width-LEFT_MARGIN-BUTTON_WIDER_WIDTH, intTopOfButton) );
+	load_map.set_size(BUTTON_WIDER_WIDTH, BUTTON_HEIGHT);
 	load_map.set_typ(button_t::roundbox);
 	load_map.add_listener( this );
 	add_komponente( &load_map );
+	
 	intTopOfButton += BUTTON_HEIGHT;
 
 	// city stuff
-	intTopOfButton += 5;
-	inp_number_of_towns.set_pos(koord(RIGHT_COLUMN,intTopOfButton) );
-	inp_number_of_towns.set_groesse(koord(RIGHT_COLUMN_WIDTH, 12));
+	intTopOfButton += 10;
+	inp_number_of_towns.set_pos(koord(right_column_x,intTopOfButton) );
+	inp_number_of_towns.set_size(RIGHT_COLUMN_WIDTH, 12);
 	inp_number_of_towns.add_listener(this);
 	inp_number_of_towns.set_limits(0,999);
 	inp_number_of_towns.set_value(abs(sets->get_anzahl_staedte()) );
 	add_komponente( &inp_number_of_towns );
-	intTopOfButton += 12;
+	intTopOfButton += option_spacing_y;
 
-	inp_town_size.set_pos(koord(RIGHT_COLUMN,intTopOfButton) );
-	inp_town_size.set_groesse(koord(RIGHT_COLUMN_WIDTH, 12));
+	inp_town_size.set_pos(koord(right_column_x,intTopOfButton) );
+	inp_town_size.set_size(RIGHT_COLUMN_WIDTH, 12);
 	inp_town_size.add_listener(this);
 	inp_town_size.set_limits(0,999999);
 	inp_town_size.set_increment_mode(50);
 	inp_town_size.set_value( sets->get_mittlere_einwohnerzahl() );
 	add_komponente( &inp_town_size );
-	intTopOfButton += 12;
+	intTopOfButton += option_spacing_y;
 
-	inp_intercity_road_len.set_pos(koord(RIGHT_COLUMN,intTopOfButton) );
-	inp_intercity_road_len.set_groesse(koord(RIGHT_COLUMN_WIDTH, 12));
+	inp_intercity_road_len.set_pos(koord(right_column_x,intTopOfButton) );
+	inp_intercity_road_len.set_size(RIGHT_COLUMN_WIDTH, 12);
 	inp_intercity_road_len.add_listener(this);
 	inp_intercity_road_len.set_limits(0,9999);
 	inp_intercity_road_len.set_value( umgebung_t::intercity_road_length );
 	inp_intercity_road_len.set_increment_mode( umgebung_t::intercity_road_length>=1000 ? 100 : 20 );
 	add_komponente( &inp_intercity_road_len );
-	intTopOfButton += 12;
+	intTopOfButton += option_spacing_y;
 
 	// industry stuff
-	inp_other_industries.set_pos(koord(RIGHT_COLUMN,intTopOfButton) );
-	inp_other_industries.set_groesse(koord(RIGHT_COLUMN_WIDTH, 12));
+	inp_other_industries.set_pos(koord(right_column_x,intTopOfButton) );
+	inp_other_industries.set_size(RIGHT_COLUMN_WIDTH, 12);
 	inp_other_industries.add_listener(this);
 	inp_other_industries.set_limits(0,999);
 	inp_other_industries.set_value(abs(sets->get_land_industry_chains()) );
 	add_komponente( &inp_other_industries );
-	intTopOfButton += 12;
+	intTopOfButton += option_spacing_y;
 
-	inp_tourist_attractions.set_pos(koord(RIGHT_COLUMN,intTopOfButton) );
-	inp_tourist_attractions.set_groesse(koord(RIGHT_COLUMN_WIDTH, 12));
+	inp_tourist_attractions.set_pos(koord(right_column_x,intTopOfButton) );
+	inp_tourist_attractions.set_size(RIGHT_COLUMN_WIDTH, 12);
 	inp_tourist_attractions.add_listener(this);
 	inp_tourist_attractions.set_limits(0,999);
 	inp_tourist_attractions.set_value(abs(sets->get_tourist_attractions()) );
 	add_komponente( &inp_tourist_attractions );
-	intTopOfButton += 12;
+	intTopOfButton += option_spacing_y;
 
 	// other settings
 	intTopOfButton += 5;
-	use_intro_dates.set_pos( koord(10,intTopOfButton) );
+	use_intro_dates.set_pos( koord(LEFT_MARGIN,intTopOfButton) );
 	use_intro_dates.set_typ( button_t::square_state );
 	use_intro_dates.pressed = sets->get_use_timeline()&1;
 	use_intro_dates.add_listener( this );
 	add_komponente( &use_intro_dates );
 
-	inp_intro_date.set_pos(koord(RIGHT_COLUMN,intTopOfButton) );
-	inp_intro_date.set_groesse(koord(RIGHT_COLUMN_WIDTH, 12));
+	inp_intro_date.set_pos(koord(right_column_x,intTopOfButton) );
+	inp_intro_date.set_size(RIGHT_COLUMN_WIDTH, 12);
 	inp_intro_date.add_listener(this);
 	inp_intro_date.set_limits(game_start,game_ends);
 	inp_intro_date.set_increment_mode(10);
 	inp_intro_date.set_value(abs(sets->get_starting_year()) );
 	add_komponente( &inp_intro_date );
-	intTopOfButton += 12;
+	intTopOfButton += option_spacing_y;
 
-	use_beginner_mode.set_pos( koord(10,intTopOfButton) );
+	use_beginner_mode.set_pos( koord(LEFT_MARGIN,intTopOfButton) );
 	use_beginner_mode.set_typ( button_t::square_state );
 	use_beginner_mode.pressed = sets->get_beginner_mode();
 	use_beginner_mode.add_listener( this );
 	add_komponente( &use_beginner_mode );
-	intTopOfButton += 12;
+	intTopOfButton += option_spacing_y;
 
-	intTopOfButton += 10;
-	open_setting_gui.set_pos( koord(10,intTopOfButton) );
-	open_setting_gui.set_groesse( koord(80, 14) );
+	intTopOfButton += 14; // Hajo: skip divider
+
+	// Hajo: game settings button
+	open_setting_gui.set_pos( koord(LEFT_MARGIN,intTopOfButton) );
+	open_setting_gui.set_size(BUTTON_WIDER_WIDTH, BUTTON_HEIGHT);
 	open_setting_gui.set_typ( button_t::roundbox );
-	open_setting_gui.set_text("Setting");
+	open_setting_gui.set_text("Game Settings");
 	open_setting_gui.add_listener( this );
 	open_setting_gui.pressed = win_get_magic( magic_settings_frame_t );
 	add_komponente( &open_setting_gui );
 
-	open_climate_gui.set_pos( koord(80+20,intTopOfButton) );
-	open_climate_gui.set_groesse( koord(150, 14) );
+	// Hajo: climate settings button
+	open_climate_gui.set_pos( koord(win_width-LEFT_MARGIN-BUTTON_WIDER_WIDTH, intTopOfButton) );
+	open_climate_gui.set_size(BUTTON_WIDER_WIDTH, BUTTON_HEIGHT);
 	open_climate_gui.set_typ( button_t::roundbox );
 	open_climate_gui.add_listener( this );
 	open_climate_gui.set_text("Climate Control");
 	open_climate_gui.pressed = win_get_magic( magic_climate );
 	add_komponente( &open_climate_gui );
-	intTopOfButton += 12;
+	intTopOfButton += option_spacing_y;
 
 	// load game
-	intTopOfButton += 10;
-	load_game.set_pos( koord(10, intTopOfButton) );
-	load_game.set_groesse( koord(104, 14) );
+	intTopOfButton += 16; // Hajo: skip divider
+	load_game.set_pos( koord(LEFT_MARGIN, intTopOfButton) );
+	load_game.set_size(BUTTON_WIDER_WIDTH, BUTTON_HEIGHT);
 	load_game.set_typ(button_t::roundbox);
 	load_game.add_listener( this );
 	add_komponente( &load_game );
 
 	// load scenario
-	load_scenario.set_pos( koord(104+11+30, intTopOfButton) );
-	load_scenario.set_groesse( koord(104, 14) );
+	load_scenario.set_pos( koord(win_width-LEFT_MARGIN-BUTTON_WIDER_WIDTH, intTopOfButton) );
+	load_scenario.set_size(BUTTON_WIDER_WIDTH, BUTTON_HEIGHT);
 	load_scenario.set_typ(button_t::roundbox);
 	load_scenario.add_listener( this );
 	add_komponente( &load_scenario );
 
 	// start game
 	intTopOfButton += 5+BUTTON_HEIGHT;
-	start_game.set_pos( koord(10, intTopOfButton) );
-	start_game.set_groesse( koord(104, 14) );
+	start_game.set_pos( koord(LEFT_MARGIN, intTopOfButton) );
+	start_game.set_size(BUTTON_WIDER_WIDTH, BUTTON_HEIGHT);
 	start_game.set_typ(button_t::roundbox);
 	start_game.add_listener( this );
 	add_komponente( &start_game );
 
 	// quit game
-	quit_game.set_pos( koord(104+11+30, intTopOfButton) );
-	quit_game.set_groesse( koord(104, 14) );
+	quit_game.set_pos( koord(win_width-LEFT_MARGIN-BUTTON_WIDER_WIDTH, intTopOfButton) );
+	quit_game.set_size(BUTTON_WIDER_WIDTH, BUTTON_HEIGHT);
 	quit_game.set_typ(button_t::roundbox);
 	quit_game.add_listener( this );
 	add_komponente( &quit_game );
 
-	set_fenstergroesse( koord(260, intTopOfButton+14+8+16) );
+	const int win_height = intTopOfButton+BUTTON_HEIGHT+D_BOTTOM_MARGIN+TITLEBAR_HEIGHT;
+	set_fenstergroesse(koord(win_width, win_height));
 
 	update_preview();
 }
@@ -332,11 +352,11 @@ void welt_gui_t::resize_preview()
 
 	if(  world_aspect > 1.0  ) {
 		karte_size.x = PREVIEW_SIZE;
-		karte_size.y = (sint16) max( (float)karte_size.x / world_aspect, PREVIEW_SIZE_MIN);
+		karte_size.y = (sint16) max( (int)(karte_size.x / world_aspect), PREVIEW_SIZE_MIN);
 	}
 	else {
 		karte_size.y = PREVIEW_SIZE;
-		karte_size.x = (sint16) max( (float)karte_size.y * world_aspect, PREVIEW_SIZE_MIN);
+		karte_size.x = (sint16) max( (int)(karte_size.y * world_aspect), PREVIEW_SIZE_MIN);
 	}
 	karte.resize( karte_size.x, karte_size.y );
 }
@@ -528,7 +548,7 @@ void welt_gui_t::zeichnen(koord pos, koord gr)
 		use_intro_dates.set_text("Use timeline start year");
 		use_beginner_mode.set_text("Use beginner mode");
 		use_beginner_mode.set_tooltip("Higher transport fees, crossconnect all factories");
-		open_setting_gui.set_text("Setting");
+		open_setting_gui.set_text("Game Settings");
 		open_climate_gui.set_text("Climate Control");
 		load_game.set_text("Load game");
 		load_scenario.set_text("Load scenario");
@@ -547,18 +567,24 @@ void welt_gui_t::zeichnen(koord pos, koord gr)
 	gui_frame_t::zeichnen(pos, gr);
 
 	cbuffer_t buf;
-	const int x = pos.x+10;
-	int y = pos.y+16+START_HEIGHT;
+	const int x = pos.x+LEFT_MARGIN;
+	int y = pos.y+TITLEBAR_HEIGHT+START_HEIGHT;
 
 	display_proportional_clip(x, y-20, translator::translate("1WORLD_CHOOSE"),ALIGN_LEFT, COL_BLACK, true);
 	display_ddd_box_clip(x, y-5, RIGHT_ARROW, 0, MN_GREY0, MN_GREY4);		// seperator
 
-	display_ddd_box_clip(x+173, y-20, karte_size.x+2, karte_size.y+2, MN_GREY0,MN_GREY4);
-	display_array_wh(x+174, y-19, karte_size.x, karte_size.y, karte.to_array());
+	// Hajo: map preview bevel border
+	display_ddd_box_clip(pos.x + gr.x - karte_size.x - LEFT_MARGIN-1, 
+			     y-20, karte_size.x+2, karte_size.y+2, MN_GREY0,MN_GREY4);
+	
+	// Hajo: map preview itself
+	display_array_wh(pos.x + gr.x - karte_size.x - LEFT_MARGIN, 
+	                 y-19, karte_size.x, karte_size.y, karte.to_array());
 
+	y += 3;
 	display_proportional_clip(x, y, translator::translate("2WORLD_CHOOSE"), ALIGN_LEFT, COL_BLACK, true);
 	// since the display is done via a textfiled, we have nothing to do
-	y += 12;
+	y += option_spacing_y;
 
 	const uint sx = sets->get_groesse_x();
 	const uint sy = sets->get_groesse_y();
@@ -575,28 +601,36 @@ void welt_gui_t::zeichnen(koord pos, koord gr)
 			sizeof(void*) * 4
 		) * sx * sy
 	) / (1024 * 1024);
-	buf.printf( translator::translate("3WORLD_CHOOSE"), memory );
+	
+	display_proportional_clip(x, y, translator::translate("Map width:"), ALIGN_LEFT, COL_BLACK, true);
+	
+	y += option_spacing_y;		// x size
+	display_proportional_clip(x, y, translator::translate("Map height:"), ALIGN_LEFT, COL_BLACK, true);
+	
+	y += option_spacing_y+5;	// y size
+	buf.printf( translator::translate("Required memory: %dMB"), memory );
 	display_proportional_clip(x, y, buf, ALIGN_LEFT, COL_BLACK, true);
-	y += 12;	// x size
-	y += 12+5;	// y size
-	y += BUTTON_HEIGHT+12+5;	// buttons
+
+	y += BUTTON_HEIGHT+31;		// Hajo: skip buttons
 
 	display_proportional_clip(x, y, translator::translate("5WORLD_CHOOSE"), ALIGN_LEFT, COL_BLACK, true);
-	y += 12;
+	y += option_spacing_y;
 	display_proportional_clip(x, y, translator::translate("Median Citizen per town"), ALIGN_LEFT, COL_BLACK, true);
-	y += 12;
+	y += option_spacing_y;
 	display_proportional_clip(x, y, translator::translate("Intercity road len:"), ALIGN_LEFT, COL_BLACK, true);
-	y += 12;
+	y += option_spacing_y;
 	display_proportional_clip(x, y, translator::translate("Land industries"), ALIGN_LEFT, COL_BLACK, true);
-	y += 12;
+	y += option_spacing_y;
 	display_proportional_clip(x, y, translator::translate("Tourist attractions"), ALIGN_LEFT, COL_BLACK, true);
-	y += 12+5;
+	y += option_spacing_y+5;
 
-	y += 12+12+5;
-	y += 12+5;
-	y += 5;
+	y += option_spacing_y+12+5;
+	y += option_spacing_y+5;
+	y += 6;
 
-	display_ddd_box_clip(x, y-22, 240, 0, MN_GREY0, MN_GREY4);
+	// Hajo: show dividers
+	display_ddd_box_clip(x, y-22, gr.x - LEFT_MARGIN*2, 0, MN_GREY0, MN_GREY4);
 
-	display_ddd_box_clip(x, y, 240, 0, MN_GREY0, MN_GREY4);
+	y += 8;
+	display_ddd_box_clip(x, y, gr.x - LEFT_MARGIN*2, 0, MN_GREY0, MN_GREY4);
 }

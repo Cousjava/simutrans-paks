@@ -14,6 +14,7 @@
 #include "../tpl/weighted_vector_tpl.h"
 #include "../besch/baum_besch.h"
 #include "../simcolor.h"
+#include "../simdings.h"
 #include "../dataobj/umgebung.h"
 
 /**

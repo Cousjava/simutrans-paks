@@ -30,6 +30,29 @@
 
 #include "gui/karte.h"
 
+/**
+ * Return either ground tile in this height or NULL if not existing
+ * 
+ * @return NULL if not ground in this height
+ * @author Hj. Malthaner
+ */
+grund_t * planquadrat_t::get_boden_in_hoehe(const int z) const 
+{
+	if(ground_size==1) {
+		// must be valid ground at this point!
+		if(  data.one->get_hoehe() == z  ) {
+			return data.one;
+		}
+	}
+	else {
+		for(  uint8 i = 0;  i < ground_size;  i++  ) {
+			if(  data.some[i]->get_hoehe() == z  ) {
+				return data.some[i];
+			}
+		}
+	}
+	return NULL;
+}
 
 // deletes also all grounds in this array!
 planquadrat_t::~planquadrat_t()

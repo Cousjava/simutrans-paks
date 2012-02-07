@@ -2176,3 +2176,9 @@ slist_tpl<const freight_desc_t*> *fabrik_t::get_produced_goods() const
 
 	return goods;
 }
+
+spieler_t * fabrik_t::get_besitzer() const
+{
+	grund_t const* const p = welt->lookup(pos);
+	return p ? p->first_obj()->get_besitzer() : 0;
+}

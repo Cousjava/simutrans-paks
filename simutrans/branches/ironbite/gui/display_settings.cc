@@ -22,6 +22,7 @@
 #include "../simgraph.h"
 #include "../simmenu.h"
 #include "../player/simplay.h"
+#include "../boden/grund.h"
 
 #include "../utils/simstring.h"
 

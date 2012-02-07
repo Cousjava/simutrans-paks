@@ -10,6 +10,7 @@
 #include "../simworld.h"
 #include "../dataobj/translator.h"
 #include "../utils/simstring.h"
+#include "../boden/grund.h"
 #include "ground_info.h"
 
 

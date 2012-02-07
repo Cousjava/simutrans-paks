@@ -9,6 +9,7 @@
 #define boden_wege_schiene_h
 
 
+#include "../../simcolor.h"
 #include "weg.h"
 #include "../../convoihandle_t.h"
 

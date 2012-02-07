@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <string>
 
+#include "../simgraph.h"
 #include "../simmem.h"
 #include "../simwin.h"
 #include "../simmenu.h"

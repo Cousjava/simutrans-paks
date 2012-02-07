@@ -15,6 +15,8 @@
 #include "../simevent.h"
 #include "../player/simplay.h"
 
+#include "../boden/grund.h"
+
 #include "../dings/gebaeude.h"
 #include "../dings/label.h"
 

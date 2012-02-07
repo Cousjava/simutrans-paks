@@ -13,6 +13,7 @@
 #include "../simhalt.h"
 #include "../simline.h"
 #include "../simconvoi.h"
+#include "../boden/grund.h"
 
 #include "../besch/ware_besch.h"
 #include "../bauer/warenbauer.h"

@@ -3,6 +3,7 @@
 
 #include "../besch/bruecke_besch.h"
 #include "../simworld.h"
+#include "../simdings.h"
 
 /**
  * Brueckenteile (sichtbar)
