@@ -99,9 +99,9 @@ endif
 
 ifdef DEBUG
   ifeq ($(shell expr $(DEBUG) \>= 1), 1)
-    CFLAGS += -g -DDEBUG
+    # CFLAGS += -g -DDEBUG
     # Hajo: I need to conserve disk space ...
-    # CFLAGS += -DDEBUG
+    CFLAGS += -DDEBUG
   endif
   ifeq ($(shell expr $(DEBUG) \>= 2), 1)
     ifneq ($(PROFILE), 2)
@@ -110,7 +110,8 @@ ifdef DEBUG
   endif
   ifeq ($(shell expr $(DEBUG) \>= 3), 1)
     ifneq ($(PROFILE), 2)
-      CFLAGS += -O0
+      #CFLAGS += -O0
+      CFLAGS += -O
     endif
   endif
 else

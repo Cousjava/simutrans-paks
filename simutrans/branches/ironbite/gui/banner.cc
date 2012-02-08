@@ -10,14 +10,12 @@
 #include "../simcolor.h"
 #include "../font.h"
 #include "../simevent.h"
-#include "../simimg.h"
 #include "../simworld.h"
 #include "../simskin.h"
 #include "../simwin.h"
 #include "../simsys.h"
 #include "../simversion.h"
 #include "../simgraph.h"
-#include "../macros.h"
 #include "../besch/skin_besch.h"
 #include "../dataobj/umgebung.h"
 
@@ -26,10 +24,10 @@
 #include "loadsave_frame.h"
 #include "server_frame.h"
 
+
 static const int margin = 40;
 
-banner_t::banner_t(karte_t *welt) : gui_frame_t(""),
-	logo( skinverwaltung_t::logosymbol->get_bild_nr(0), 0 )
+banner_t::banner_t(karte_t *welt) : gui_frame_t("")
 {
         this->welt = welt;
 	last_ms = system_time();
@@ -37,37 +35,30 @@ banner_t::banner_t(karte_t *welt) : gui_frame_t(""),
 
         const int height = 16+113+12*LINESPACE+2*BUTTON_HEIGHT+12;
         const int width = height * 160/100 + 1;
-	const koord size(width, height);
+	
+	const koord size(width, height+20);
 	set_fenstergroesse(size);
 
-	// logo.set_pos(koord(width - margin - 80, 34));
-	// add_komponente( &logo );
-
-
-	new_map.init( button_t::roundbox, "Neue Karte", koord(margin, size.y-16-BUTTON_HEIGHT-12 ), koord( BUTTON_WIDTH, BUTTON_HEIGHT ) );
+	const int button_bottom_margin = 18;
+	const int button_y = size.y-16-BUTTON_HEIGHT-button_bottom_margin;
+	const koord button_size ( BUTTON_WIDTH, BUTTON_HEIGHT );
+	
+	new_map.init(button_t::roundbox, "Neue Karte", koord(margin, button_y), button_size);
 	new_map.add_listener( this );
 	add_komponente( &new_map );
-	load_map.init( button_t::roundbox, "Load game", koord(margin+BUTTON_WIDTH+11, size.y-16-BUTTON_HEIGHT-12 ), koord( BUTTON_WIDTH, BUTTON_HEIGHT ) );
+
+	load_map.init(button_t::roundbox, "Load game", koord(margin+BUTTON_WIDTH+11, button_y), button_size);
 	load_map.add_listener( this );
 	add_komponente( &load_map );
-	join_map.init( button_t::roundbox, "join game", koord(margin+2*BUTTON_WIDTH+22, size.y-16-BUTTON_HEIGHT-12 ), koord( BUTTON_WIDTH, BUTTON_HEIGHT ) );
+
+	join_map.init(button_t::roundbox, "join game", koord(margin+2*BUTTON_WIDTH+22, button_y), button_size);
 	join_map.add_listener( this );
 	add_komponente( &join_map );
-	quit.init( button_t::roundbox, "Beenden", koord(margin+3*BUTTON_WIDTH+33, size.y-16-BUTTON_HEIGHT-12 ), koord( BUTTON_WIDTH, BUTTON_HEIGHT ) );
+
+	quit.init(button_t::roundbox, "Beenden", koord(margin+3*BUTTON_WIDTH+33, button_y), button_size);
 	quit.add_listener( this );
 	add_komponente( &quit );
 }
-
-
-
-bool banner_t::infowin_event(const event_t *ev)
-{
-	if(  gui_frame_t::getroffen( ev->cx, ev->cy  )  ) {
-		gui_frame_t::infowin_event( ev );
-	}
-	return false;
-}
-
 
 
 bool banner_t::action_triggered( gui_action_creator_t *komp, value_t)
@@ -95,7 +86,7 @@ bool banner_t::action_triggered( gui_action_creator_t *komp, value_t)
  *
  * @author Hj. Malthaner
  */
-void banner_t::zeichnen(koord pos, koord gr )
+void banner_t::zeichnen(const koord pos, const koord gr )
 {
 	gui_frame_t::zeichnen( pos, gr );
 	
@@ -103,25 +94,46 @@ void banner_t::zeichnen(koord pos, koord gr )
 	// define which colors to use for which semantics of text ...
 	const int color_text = COL_WHITE;
 	const int color_high = 207;
-        // const int color_high = COL_WHITE;
         const int color_shadow = COL_GREY1;
-        // const int color_warn = 127;
         
 	// Hajo: layout constants for this dialog
         const int indent = 60;
         const int line_space = large_font_p->line_spacing;
 	
-	KOORD_VAL yp = pos.y+29;
-
-	display_shadow_proportional( pos.x + margin, yp, color_high, color_shadow,
-                                     "***** W e l c o m e  t o  S i m u t r a n s  I r o n  B i t e *****", true );
-	yp += line_space+5;
+	// Hajo: 8 pixels outer border
+	int yp = pos.y + 31 + 8;
+	
+	// Hajo: display backdrop image if there is one
+	if(skinverwaltung_t::iron_backdrop)
+	{
+		const int imgx = (pos.x + gr.x - 320) / 2 + 60;
+		const int imgy = (pos.y + gr.y - 192) / 2 + 20;
+		
+		for(int y=0; y<3; y++)
+		{
+			for(int x=0; x<5; x++)
+			{
+				const int nr = y*5 + x;
+				const int img_nr = skinverwaltung_t::iron_backdrop->get_bild_nr(nr);
+				
+				display_base_img(img_nr,
+						 imgx + x*64, imgy + y*64, 
+				                 0, false, false);
+			}
+		}
+	}
+	
+	// Hajo: now display the intro message
+	
+	display_outline_proportional( pos.x + margin, yp, color_high, color_shadow,
+                                     "          W e l c o m e  t o  S i m u t r a n s  I r o n  B i t e", true );
+	yp += line_space+6;
 #ifdef REVISION
-	display_shadow_proportional( pos.x + margin + indent, yp, color_high, color_shadow,
-                                     "    Version " VERSION_NUMBER " " VERSION_DATE " r" QUOTEME(REVISION), true );
+	display_shadow_proportional( pos.x + margin + indent, yp, COL_GREY4, color_shadow,
+                                     "      Version " VERSION_NUMBER " " VERSION_DATE " r" QUOTEME(REVISION), true );
 #else
-	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
-                                     "Version " VERSION_NUMBER " " VERSION_DATE, true );
+	display_shadow_proportional( pos.x + margin + indent, yp, COL_GREY4, color_shadow,
+                                     "  Version " VERSION_NUMBER " " VERSION_DATE, true );
 #endif
 	yp += line_space+6;
 
@@ -139,11 +151,11 @@ void banner_t::zeichnen(koord pos, koord gr )
 	yp += line_space;
 	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
                                      "Simutrans is available under the Artistic Licence.", true );
-	yp += line_space+6;
+	yp += line_space+5;
 
 	display_shadow_proportional( pos.x + margin, yp, color_high, color_shadow,
-                                     " Simutrans is free software. If you paid for it, ask for a refund!", true );
-	yp += line_space+6;
+                                     "   Simutrans is free software. If you paid for it, ask for a refund!", true );
+	yp += line_space+5;
 
 	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
                                      "     For questions and support please visit:", true );
@@ -152,7 +164,7 @@ void banner_t::zeichnen(koord pos, koord gr )
                                      "           http://forum.simutrans.com", true );
 	yp += line_space;
 	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
-                                     "         http://wiki.simutrans-germany.com", true );
+                                     "        http://wiki.simutrans-germany.com", true );
 
 	yp += line_space+9;
 
@@ -162,12 +174,12 @@ void banner_t::zeichnen(koord pos, koord gr )
 	};
 
         // Hajo: display a white line at top, because there is no title bar
-	display_fillbox_wh(pos.x, pos.y + 16, gr.x, 1, COL_GREY6, false);
+	display_fillbox_wh(pos.x, pos.y + 16, gr.x, 1, MN_GREY4, false);
 
-	const KOORD_VAL text_line = (line / 9) * 2;
-	const KOORD_VAL text_offset = line % 9;
-	const KOORD_VAL left = pos.x + margin;
-	const KOORD_VAL width = gr.x - margin*2;
+	const int text_line = (line / 9) * 2;
+	const int text_offset = line % 9;
+	const int left = pos.x + margin;
+	const int width = gr.x - margin*2;
 
 	display_fillbox_wh(left, yp, width, 52, COL_GREY1, true);
 	display_fillbox_wh(left, yp - 1, width, 1, COL_GREY3, false);
@@ -189,12 +201,19 @@ void banner_t::zeichnen(koord pos, koord gr )
 	POP_CLIP();
 
 	// scroll on every 70 ms
-	if(system_time()>last_ms+70u) {
+	if(system_time()>last_ms+70u) 
+	{
 		last_ms += 70u;
 		line ++;
 	}
 
-	if (scrolltext[text_line + 12] == 0) {
+	if (scrolltext[text_line + 12] == 0) 
+	{
 		line = 0;
 	}
+
+	// Hajo: add inner bevel border
+	display_ddd_box_clip(pos.x + 4, pos.y + 4 + TITLEBAR_HEIGHT, 
+	                     gr.x-8, gr.y-8-TITLEBAR_HEIGHT, MN_GREY0, MN_GREY4);
+	
 }

@@ -21,6 +21,12 @@ public:
 	 */
 	static const skin_besch_t *window_skin;
 
+	/**
+	 * Window skin images (menus too!)
+	 * @author Hj. Malthaner
+	 */
+	static const skin_besch_t *iron_backdrop;
+
 	// symbols
 	static const skin_besch_t *logosymbol;
 	static const skin_besch_t *biglogosymbol;
