@@ -1,0 +1,17 @@
+Obj=citycar
+Name=hjm-red_globe
+copyright=HjM
+DistributionWeight=5
+intro_year=1
+intro_month=1
+retire_year=5460
+retire_month=1
+speed=50
+Image[S]=hjm-red_globe.0.0
+Image[N]=hjm-red_globe.0.1
+Image[E]=hjm-red_globe.1.0
+Image[W]=hjm-red_globe.1.1
+Image[SE]=hjm-red_globe.0.0
+Image[NW]=hjm-red_globe.0.1
+Image[NE]=hjm-red_globe.1.0
+Image[SW]=hjm-red_globe.1.1
