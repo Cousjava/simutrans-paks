@@ -115,8 +115,8 @@ goods_frame_t::goods_frame_t(karte_t *wl) :
 	if(h>450) {
 		h = y+27*(large_font_p->line_spacing+1)+TITLEBAR_HEIGHT+1;
 	}
-	set_fenstergroesse(koord(TOTAL_WIDTH, h));
-	set_min_windowsize(koord(TOTAL_WIDTH,3*(large_font_p->line_spacing+1)+TITLEBAR_HEIGHT+y+1));
+	set_window_size(koord(TOTAL_WIDTH, h));
+	set_min_window_size(koord(TOTAL_WIDTH,3*(large_font_p->line_spacing+1)+TITLEBAR_HEIGHT+y+1));
 
 	set_resizemode(vertical_resize);
 	resize (koord(0,0));
@@ -195,7 +195,7 @@ void goods_frame_t::sort_list()
 void goods_frame_t::resize(const koord delta)
 {
 	gui_frame_t::resize(delta);
-	koord groesse = get_fenstergroesse()-scrolly.get_pos()-koord(0,TITLEBAR_HEIGHT);
+	koord groesse = get_window_size()-scrolly.get_pos()-koord(0,TITLEBAR_HEIGHT);
 	scrolly.set_groesse(groesse);
 }
 

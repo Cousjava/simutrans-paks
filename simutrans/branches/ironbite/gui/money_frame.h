@@ -115,7 +115,7 @@ public:
 	 * @return den Dateinamen f�r die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	const char * get_hilfe_datei() const {return "finances.txt";}
+	const char * get_help_file() const {return "finances.txt";}
 
 	/**
 	 * Konstruktor. Erzeugt alle notwendigen Subkomponenten.

@@ -96,17 +96,24 @@ int baum_t::get_anzahl_besch(climate cl)
 /**
  * tree planting function - it takes care of checking suitability of area
  */
-uint8 baum_t::plant_tree_on_coordinate(karte_t * welt, koord pos, const uint8 maximum_count, const uint8 count)
+uint8 baum_t::plant_tree_on_coordinate(karte_t * welt, 
+				       const koord pos, 
+				       const uint8 maximum_count, 
+				       const uint8 count)
 {
-	grund_t * gr = welt->lookup_kartenboden(pos);
-	if(gr) {
+	grund_t * const gr = welt->lookup_kartenboden(pos);
+	if(gr) 
+	{
 		if(get_anzahl_besch(welt->get_climate(gr->get_pos().z))>0  &&
 			gr->ist_natur()  &&
 			gr->get_top()<maximum_count)
 		{
-			ding_t *ding = gr->obj_bei(0);
-			if(ding) {
-				switch(ding->get_typ()) {
+			const ding_t * const ding = gr->obj_bei(0);
+			
+			if(ding) 
+			{
+				switch(ding->get_typ()) 
+				{
 					case ding_t::wolke:
 					case ding_t::aircraft:
 					case ding_t::baum:
@@ -116,7 +123,8 @@ uint8 baum_t::plant_tree_on_coordinate(karte_t * welt, koord pos, const uint8 ma
 						// ok to built here
 						break;
 					case ding_t::groundobj:
-						if(((groundobj_t *)ding)->get_besch()->can_built_trees_here()) {
+						if(((const groundobj_t *)ding)->get_besch()->can_built_trees_here()) 
+						{
 							break;
 						}
 						// leave these (and all other empty)
@@ -124,9 +132,12 @@ uint8 baum_t::plant_tree_on_coordinate(karte_t * welt, koord pos, const uint8 ma
 						return 0;
 				}
 			}
+			
 			const uint8 count_planted = min( maximum_count - gr->get_top(), count);
-			for (uint8 i=0; i<count_planted; i++) {
-				gr->obj_add( new baum_t(welt, gr->get_pos()) ); //plants the tree(s)
+			for (uint8 i=0; i<count_planted; i++) 
+			{
+				//plants the tree(s)
+				gr->obj_add(new baum_t(welt, gr->get_pos())); 
 			}
 			return count_planted;
 		}
@@ -490,47 +501,56 @@ baum_t::baum_t(karte_t *welt, koord3d pos, const baum_besch_t *besch) : ding_t(w
 
 bool baum_t::saee_baum()
 {
-	// spawn a new tree in an area 3x3 tiles around
-	// the area for normal new tree planting is slightly more restricted, square of 9x9 was too much
+	// Hajo: try to spawn a new tree in an area 7x7 tiles
 
 	// to have same execution order for simrand
-	const sint16 sx = simrand(5)-2;
-	const sint16 sy = simrand(5)-2;
+	const sint16 sx = simrand(7)-3;
+	const sint16 sy = simrand(7)-3;
 	const koord k = get_pos().get_2d() + koord(sx,sy);
 
 	return plant_tree_on_coordinate(welt, k, baum_typen[baumtype], true, false);
 }
 
 
-/* we should be as fast as possible, because trees are nearly the most common object on a map */
-bool baum_t::check_season(long month)
+/**
+ * This routine should be as fast as possible, because trees are nearly
+ * the most common object on a map 
+ * @author Hj. Malthaner
+ */
+bool baum_t::check_season(const long month)
 {
 	// take care of birth/death and seasons
 	long alter = (month - geburt);
 
 	// attention: integer underflow (geburt is 16bit, month 32bit);
-	while (alter < 0) {
+	while (alter < 0) 
+	{
 		alter += 0x7fff;
 	}
 
-	if(  alter>=512  &&  alter<=515  ) {
-		// only in this month a tree can span new trees
+	// Hajo: Trees will try three times to seed new trees.
+	if((alter >= 412 && alter <= 415)  ||
+	   (alter >= 512 && alter <= 515)  ||
+	   (alter >= 612 && alter <= 615)) 
+	{
+		// only in this months a tree can span new trees
 		// only 1-3 trees will be planted....
-		uint8 const c_plant_tree_max = 1 + simrand(welt->get_settings().get_max_no_of_trees_on_square());
-		uint retrys = 0;
-		for(uint8 c_temp=0;  c_temp<c_plant_tree_max  &&  retrys<c_plant_tree_max;  c_temp++ ) {
-			if(  !saee_baum()  ) {
-				retrys++;
-				c_temp--;
-			}
+		const int c_plant_tree_max = 1 + simrand(welt->get_settings().get_max_no_of_trees_on_square());
+
+		for(int n=0; n<c_plant_tree_max; n++)
+		{
+			saee_baum();
 		}
-		// we make the tree four months older to avoid second spawning
-		geburt = geburt-4;
+		
+		// Hajo: we make the tree four months older now to avoid
+		// a second spawning of new trees during this seeding season
+		geburt -= 4;
 	}
 
 	// tree will die after 704 month (i.e. 58 years 8 month)
-	if(alter>=704) {
-		mark_image_dirty( get_bild(), 0 );
+	if(alter >= 704) 
+	{
+		mark_image_dirty(get_bild(), 0);
 		return false;
 	}
 

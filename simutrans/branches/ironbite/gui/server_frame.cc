@@ -100,8 +100,8 @@ server_frame_t::server_frame_t(karte_t* w) :
 	}
 	pos_y += 16;
 
-	set_fenstergroesse( koord( 240, pos_y ) );
-	set_min_windowsize( koord( 240, pos_y ) );
+	set_window_size( koord( 240, pos_y ) );
+	set_min_window_size( koord( 240, pos_y ) );
 	set_resizemode( no_resize );
 }
 

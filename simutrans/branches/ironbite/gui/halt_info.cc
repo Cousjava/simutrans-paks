@@ -144,8 +144,8 @@ halt_info_t::halt_info_t(karte_t *welt, halthandle_t halt) :
 	scrolly.set_show_scroll_x(true);
 	add_komponente(&scrolly);
 
-	set_fenstergroesse(koord(total_width, view.get_groesse().y+208+scrollbar_t::BAR_SIZE));
-	set_min_windowsize(koord(total_width, view.get_groesse().y+131+scrollbar_t::BAR_SIZE));
+	set_window_size(koord(total_width, view.get_groesse().y+208+scrollbar_t::BAR_SIZE));
+	set_min_window_size(koord(total_width, view.get_groesse().y+131+scrollbar_t::BAR_SIZE));
 
 	set_resizemode(diagonal_resize);     // 31-May-02	markus weber	added
 	resize(koord(0,0));
@@ -290,10 +290,10 @@ void halt_info_t::show_hide_statistics( bool show )
 {
 	toggler.pressed = show;
 	const koord offset = show ? koord(0, 165) : koord(0, -165);
-	set_min_windowsize(get_min_windowsize() + offset);
+	set_min_window_size(get_min_window_size() + offset);
 	scrolly.set_pos(scrolly.get_pos() + offset);
 	chart.set_visible(show);
-	set_fenstergroesse(get_fenstergroesse() + offset);
+	set_window_size(get_window_size() + offset);
 	resize(koord(0,0));
 	for (int i=0;i<MAX_HALT_COST;i++) {
 		filterButtons[i].set_visible(toggler.pressed);
@@ -351,15 +351,15 @@ bool halt_info_t::action_triggered( gui_action_creator_t *comp,value_t /* */)
  * Set window size and adjust component sizes and/or positions accordingly
  * @author Markus Weber
  */
-void halt_info_t::set_fenstergroesse(koord groesse)
+void halt_info_t::set_window_size(koord groesse)
 {
-	gui_frame_t::set_fenstergroesse(groesse);
+	gui_frame_t::set_window_size(groesse);
 
-	input.set_groesse(koord(get_fenstergroesse().x-20, 13));
+	input.set_groesse(koord(get_window_size().x-20, 13));
 
-	view.set_pos(koord(get_fenstergroesse().x - view.get_groesse().x - 10 , 21));
+	view.set_pos(koord(get_window_size().x - view.get_groesse().x - 10 , 21));
 
-	scrolly.set_groesse(get_client_windowsize()-scrolly.get_pos());
+	scrolly.set_groesse(get_client_window_size()-scrolly.get_pos());
 
 	const sint16 yoff = scrolly.get_pos().y-BUTTON_HEIGHT-3;
 	sort_button.set_pos(koord(BUTTON1_X,yoff));
@@ -391,7 +391,7 @@ halt_info_t::halt_info_t(karte_t *welt):
 void halt_info_t::rdwr(loadsave_t *file)
 {
 	koord3d halt_pos;
-	koord gr = get_fenstergroesse();
+	koord gr = get_window_size();
 	uint32 flags = 0;
 	bool stats = toggler.pressed;
 	sint32 xoff = scrolly.get_scroll_x();
@@ -421,7 +421,7 @@ void halt_info_t::rdwr(loadsave_t *file)
 		if(  stats  ) {
 			gr.y -= 170;
 		}
-		w->set_fenstergroesse( gr );
+		w->set_window_size( gr );
 		for( int i = 0; i<MAX_HALT_COST; i++) {
 			w->filterButtons[i].pressed = (flags>>i)&1;
 			if(w->filterButtons[i].pressed) {

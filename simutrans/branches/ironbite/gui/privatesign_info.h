@@ -34,7 +34,7 @@ class privatesign_info_t : public ding_infowin_t, public action_listener_t
 	 * @return den Dateinamen f�r die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	const char *get_hilfe_datei() const {return "privatesign_info.txt";}
+	const char *get_help_file() const {return "privatesign_info.txt";}
 
 	/**
 	 * This method is called if an action is triggered

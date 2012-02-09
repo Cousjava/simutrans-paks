@@ -44,7 +44,7 @@ public:
 	 * @return den Dateinamen f�r die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	const char * get_hilfe_datei() const {return "mailbox.txt";}
+	const char * get_help_file() const {return "mailbox.txt";}
 
 	/**
 	* resize window in response to a resize event

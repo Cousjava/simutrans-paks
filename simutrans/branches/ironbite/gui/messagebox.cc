@@ -36,13 +36,13 @@ void news_window::extend_window_with_component(gui_component_t *const component,
 		textarea.recalc_size();
 		const sint16 width = textarea.get_groesse().x + 20;
 		const sint16 height = max( textarea.get_groesse().y, size.y ) + 36;
-		set_fenstergroesse( koord(width, height) );
+		set_window_size( koord(width, height) );
 		component->set_pos( koord(width - size.x - 10 + offset.x, 10 + offset.y) );
 		add_komponente(component);
 	}
 	else {
 		textarea.recalc_size();
-		set_fenstergroesse( koord(textarea.get_groesse().x + 20, textarea.get_groesse().y + 36) );
+		set_window_size( koord(textarea.get_groesse().x + 20, textarea.get_groesse().y + 36) );
 	}
 }
 

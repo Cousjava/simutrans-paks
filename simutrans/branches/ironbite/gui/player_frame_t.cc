@@ -108,7 +108,7 @@ ki_kontroll_t::ki_kontroll_t(karte_t *wl) :
 	freeplay.pressed = welt->get_settings().is_freeplay();
 	add_komponente( &freeplay );
 
-	set_fenstergroesse(koord(295, (MAX_PLAYER_COUNT-1)*LINESPACE*2+16+14+4));
+	set_window_size(koord(295, (MAX_PLAYER_COUNT-1)*LINESPACE*2+16+14+4));
 	update_data();
 }
 

@@ -183,7 +183,7 @@ void modal_dialogue( gui_frame_t *gui, long magic, karte_t *welt, bool (*quit)()
 	}
 
 	event_t ev;
-	create_win( (display_get_width()-gui->get_fenstergroesse().x)/2, (display_get_height()-gui->get_fenstergroesse().y)/2, gui, w_info, magic );
+	create_win( (display_get_width()-gui->get_window_size().x)/2, (display_get_height()-gui->get_window_size().y)/2, gui, w_info, magic );
 
 	if(  welt  ) {
 		welt->set_pause( false );
@@ -206,8 +206,8 @@ void modal_dialogue( gui_frame_t *gui, long magic, karte_t *welt, bool (*quit)()
 				}
 				if(  ev.ev_class == EVENT_KEYBOARD  &&  ev.ev_code == SIM_KEY_F1  ) {
 					if(  gui_frame_t *win = win_get_top()  ) {
-						if(  win->get_hilfe_datei()!=NULL  ) {
-							create_win(new help_frame_t(win->get_hilfe_datei()), w_info, (long)(win->get_hilfe_datei()) );
+						if(  win->get_help_file()!=NULL  ) {
+							create_win(new help_frame_t(win->get_help_file()), w_info, (long)(win->get_help_file()) );
 							continue;
 						}
 					}
@@ -238,7 +238,7 @@ void modal_dialogue( gui_frame_t *gui, long magic, karte_t *welt, bool (*quit)()
 		while(  win_is_open(gui)  &&  !umgebung_t::quit_simutrans  &&  !quit()  ) {
 			// do not move, do not close it!
 			system_prepare_flush();
-			gui->zeichnen( koord(win_get_posx(gui),win_get_posy(gui)), gui->get_fenstergroesse() );
+			gui->zeichnen( koord(win_get_posx(gui),win_get_posy(gui)), gui->get_window_size() );
 			system_flush_framebuffer();
 
 			display_poll_event(&ev);

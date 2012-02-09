@@ -59,8 +59,8 @@ convoi_detail_t::convoi_detail_t(convoihandle_t cnv)
 	scrolly.set_show_scroll_x(true);
 	add_komponente(&scrolly);
 
-	set_fenstergroesse(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+50+17*(LINESPACE+1)+scrollbar_t::BAR_SIZE-6));
-	set_min_windowsize(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+50+3*(LINESPACE+1)+scrollbar_t::BAR_SIZE-3));
+	set_window_size(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+50+17*(LINESPACE+1)+scrollbar_t::BAR_SIZE-6));
+	set_min_window_size(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+50+3*(LINESPACE+1)+scrollbar_t::BAR_SIZE-3));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -148,10 +148,10 @@ bool convoi_detail_t::action_triggered(gui_action_creator_t *komp,value_t /* */)
  * Set window size and adjust component sizes and/or positions accordingly
  * @author Markus Weber
  */
-void convoi_detail_t::set_fenstergroesse(koord groesse)
+void convoi_detail_t::set_window_size(koord groesse)
 {
-	gui_frame_t::set_fenstergroesse(groesse);
-	scrolly.set_groesse(get_client_windowsize()-scrolly.get_pos());
+	gui_frame_t::set_window_size(groesse);
+	scrolly.set_groesse(get_client_window_size()-scrolly.get_pos());
 }
 
 
@@ -169,7 +169,7 @@ void convoi_detail_t::rdwr(loadsave_t *file)
 {
 	koord3d cnv_pos;
 	char name[128];
-	koord gr = get_fenstergroesse();
+	koord gr = get_window_size();
 	sint32 xoff = scrolly.get_scroll_x();
 	sint32 yoff = scrolly.get_scroll_y();
 	if(  file->is_saving()  ) {
@@ -216,7 +216,7 @@ void convoi_detail_t::rdwr(loadsave_t *file)
 		KOORD_VAL ypos = win_get_posy( this );
 		convoi_detail_t *w = new convoi_detail_t(cnv);
 		create_win( xpos, ypos, w, w_info, magic_convoi_detail+cnv.get_id() );
-		w->set_fenstergroesse( gr );
+		w->set_window_size( gr );
 		w->scrolly.set_scroll_position( xoff, yoff );
 		// we must invalidate halthandle
 		cnv = convoihandle_t();

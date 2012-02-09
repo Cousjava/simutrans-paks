@@ -51,7 +51,7 @@ public:
 	 * @return den Dateinamen f�r die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	const char *get_hilfe_datei() const {return "settings.txt";}
+	const char *get_help_file() const {return "settings.txt";}
 
 	/**
 	* resize window in response to a resize event

@@ -31,7 +31,7 @@ protected:
 public:
 	password_frame_t( spieler_t *sp );
 
-	const char * get_hilfe_datei() const {return "password.txt";}
+	const char * get_help_file() const {return "password.txt";}
 
 	/**
 	 * This method is called if an action is triggered

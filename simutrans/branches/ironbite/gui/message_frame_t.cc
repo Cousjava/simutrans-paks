@@ -80,8 +80,8 @@ message_frame_t::message_frame_t(karte_t *welt) :
 		set_focus( &input );
 	}
 
-	set_fenstergroesse(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+BUTTON_HEIGHT+gui_tab_panel_t::HEADER_VSIZE+2+16*(LINESPACE+1)+scrollbar_t::BAR_SIZE));
-	set_min_windowsize(koord(BUTTON3_X, TITLEBAR_HEIGHT+BUTTON_HEIGHT+gui_tab_panel_t::HEADER_VSIZE+2+3*(LINESPACE+1)+scrollbar_t::BAR_SIZE));
+	set_window_size(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+BUTTON_HEIGHT+gui_tab_panel_t::HEADER_VSIZE+2+16*(LINESPACE+1)+scrollbar_t::BAR_SIZE));
+	set_min_window_size(koord(BUTTON3_X, TITLEBAR_HEIGHT+BUTTON_HEIGHT+gui_tab_panel_t::HEADER_VSIZE+2+3*(LINESPACE+1)+scrollbar_t::BAR_SIZE));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -97,7 +97,7 @@ message_frame_t::message_frame_t(karte_t *welt) :
 void message_frame_t::resize(const koord delta)
 {
 	gui_frame_t::resize(delta);
-	koord groesse = get_fenstergroesse()-koord(0,TITLEBAR_HEIGHT+BUTTON_HEIGHT);
+	koord groesse = get_window_size()-koord(0,TITLEBAR_HEIGHT+BUTTON_HEIGHT);
 	input.set_groesse(koord(groesse.x-scrollbar_t::BAR_SIZE-BUTTON2_X, BUTTON_HEIGHT));
 	tabs.set_groesse(groesse);
 	scrolly.set_groesse(groesse-koord(0,BUTTON_HEIGHT+4+1));

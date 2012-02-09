@@ -39,7 +39,7 @@ public:
 	 * @return den Dateinamen f�r die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	const char * get_hilfe_datei() const { return "color.txt"; }
+	const char * get_help_file() const { return "color.txt"; }
 
 //	void infowin_event(const event_t *ev);
 

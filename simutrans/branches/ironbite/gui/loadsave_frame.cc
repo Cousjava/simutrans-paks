@@ -128,7 +128,7 @@ loadsave_frame_t::loadsave_frame_t(karte_t *welt, bool do_load) : savegame_frame
  * @return den Dateinamen f�r die Hilfe, oder NULL
  * @author Hj. Malthaner
  */
-const char * loadsave_frame_t::get_hilfe_datei() const
+const char * loadsave_frame_t::get_help_file() const
 {
 	return do_load ? "load.txt" : "save.txt";
 }

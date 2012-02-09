@@ -184,8 +184,8 @@ convoi_info_t::convoi_info_t(convoihandle_t cnv)
 
 	cnv->set_sortby( umgebung_t::default_sortmode );
 
-	set_fenstergroesse(koord(total_width, view.get_groesse().y+208+scrollbar_t::BAR_SIZE));
-	set_min_windowsize(koord(total_width, view.get_groesse().y+131+scrollbar_t::BAR_SIZE));
+	set_window_size(koord(total_width, view.get_groesse().y+208+scrollbar_t::BAR_SIZE));
+	set_min_window_size(koord(total_width, view.get_groesse().y+131+scrollbar_t::BAR_SIZE));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -328,10 +328,10 @@ void convoi_info_t::show_hide_statistics( bool show )
 {
 	toggler.pressed = show;
 	const koord offset = show ? koord(0, 155) : koord(0, -155);
-	set_min_windowsize(get_min_windowsize() + offset);
+	set_min_window_size(get_min_window_size() + offset);
 	scrolly.set_pos(scrolly.get_pos() + offset);
 	chart.set_visible(show);
-	set_fenstergroesse(get_fenstergroesse() + offset + koord(0,show?LINESPACE:-LINESPACE));
+	set_window_size(get_window_size() + offset + koord(0,show?LINESPACE:-LINESPACE));
 	resize(koord(0,0));
 	for(  int i = 0;  i < convoi_t::MAX_CONVOI_COST;  i++  ) {
 		filterButtons[i].set_visible(toggler.pressed);
@@ -510,16 +510,16 @@ void convoi_info_t::rename_cnv()
  * Set window size and adjust component sizes and/or positions accordingly
  * @author Markus Weber
  */
-void convoi_info_t::set_fenstergroesse(koord groesse)
+void convoi_info_t::set_window_size(koord groesse)
 {
-	gui_frame_t::set_fenstergroesse(groesse);
+	gui_frame_t::set_window_size(groesse);
 
-	input.set_groesse(koord(get_fenstergroesse().x - 20, 13));
+	input.set_groesse(koord(get_window_size().x - 20, 13));
 
-	view.set_pos(koord(get_fenstergroesse().x - view.get_groesse().x - 10 , 21));
+	view.set_pos(koord(get_window_size().x - view.get_groesse().x - 10 , 21));
 	follow_button.set_pos(koord(view.get_pos().x, view.get_groesse().y + 21));
 
-	scrolly.set_groesse(get_client_windowsize()-scrolly.get_pos());
+	scrolly.set_groesse(get_client_window_size()-scrolly.get_pos());
 
 	const sint16 yoff = scrolly.get_pos().y-BUTTON_HEIGHT-3;
 	sort_button.set_pos(koord(BUTTON1_X,yoff));
@@ -554,7 +554,7 @@ void convoi_info_t::rdwr(loadsave_t *file)
 {
 	koord3d cnv_pos;
 	char name[128];
-	koord gr = get_fenstergroesse();
+	koord gr = get_window_size();
 	uint32 flags = 0;
 	bool stats = toggler.pressed;
 	sint32 xoff = scrolly.get_scroll_x();
@@ -614,7 +614,7 @@ void convoi_info_t::rdwr(loadsave_t *file)
 		if(  stats  ) {
 			gr.y -= 170;
 		}
-		w->set_fenstergroesse( gr );
+		w->set_window_size( gr );
 		if(  file->get_version()<111001  ) {
 			for(  int i = 0;  i < 6;  i++  ) {
 				w->filterButtons[i].pressed = (flags>>i)&1;

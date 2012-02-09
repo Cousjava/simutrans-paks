@@ -85,8 +85,8 @@ fabrik_info_t::fabrik_info_t(fabrik_t* fab_, const gebaeude_t* gb) :
 	scrolly.set_show_scroll_x(false);
 	add_komponente(&scrolly);
 
-	gui_frame_t::set_fenstergroesse(koord(TOTAL_WIDTH, 16+offset_below_viewport+BUTTON_HEIGHT+3+fab_info.get_groesse().y+LINESPACE+10-1));
-	set_min_windowsize(koord(TOTAL_WIDTH, 16+offset_below_viewport+BUTTON_HEIGHT+3+LINESPACE*3));
+	gui_frame_t::set_window_size(koord(TOTAL_WIDTH, 16+offset_below_viewport+BUTTON_HEIGHT+3+fab_info.get_groesse().y+LINESPACE+10-1));
+	set_min_window_size(koord(TOTAL_WIDTH, 16+offset_below_viewport+BUTTON_HEIGHT+3+LINESPACE*3));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -123,15 +123,15 @@ void fabrik_info_t::rename_factory()
  * Set window size and adjust component sizes and/or positions accordingly
  * @author Markus Weber
  */
-void fabrik_info_t::set_fenstergroesse(koord groesse)
+void fabrik_info_t::set_window_size(koord groesse)
 {
-	gui_frame_t::set_fenstergroesse(groesse);
+	gui_frame_t::set_window_size(groesse);
 
 	// would be only needed in case of enabling horizontal resizes
-	input.set_groesse(koord(get_fenstergroesse().x-20, 13));
-	view.set_pos(koord(get_fenstergroesse().x - view.get_groesse().x - 10 , 21));
+	input.set_groesse(koord(get_window_size().x-20, 13));
+	view.set_pos(koord(get_window_size().x - view.get_groesse().x - 10 , 21));
 
-	scrolly.set_groesse(get_client_windowsize()-scrolly.get_pos());
+	scrolly.set_groesse(get_client_window_size()-scrolly.get_pos());
 }
 
 
@@ -218,7 +218,7 @@ bool fabrik_info_t::action_triggered( gui_action_creator_t *komp, value_t v)
 		chart_button.set_pos( koord(BUTTON3_X,offset_below_viewport) );
 		details_button.set_pos( koord(BUTTON4_X,offset_below_viewport) );
 		scrolly.set_pos( koord(0,offset_below_viewport+BUTTON_HEIGHT+3) );
-		set_min_windowsize(koord(TOTAL_WIDTH, 16+offset_below_viewport+BUTTON_HEIGHT+3+LINESPACE*3));
+		set_min_window_size(koord(TOTAL_WIDTH, 16+offset_below_viewport+BUTTON_HEIGHT+3+LINESPACE*3));
 		resize( koord(0,(chart_button.pressed ? chart.get_groesse().y : -chart.get_groesse().y) ) );
 	}
 	else if(komp == &input) {

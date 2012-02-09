@@ -115,20 +115,20 @@ void pakselector_t::fill_list()
 	}
 	chdir( umgebung_t::program_dir );
 
-	button_frame.set_groesse( koord( get_fenstergroesse().x-1, y ) );
-	set_fenstergroesse(koord(get_fenstergroesse().x, TITLEBAR_HEIGHT+30+y+3*LINESPACE+4+1));
+	button_frame.set_groesse( koord( get_window_size().x-1, y ) );
+	set_window_size(koord(get_window_size().x, TITLEBAR_HEIGHT+30+y+3*LINESPACE+4+1));
 }
 
 
-void pakselector_t::set_fenstergroesse(koord groesse)
+void pakselector_t::set_window_size(koord groesse)
 {
 	if(groesse.y>display_get_height()-70) {
 		// too large ...
 		groesse.y = ((display_get_height()-TITLEBAR_HEIGHT-30-3*LINESPACE-4-1)/BUTTON_HEIGHT)*BUTTON_HEIGHT+TITLEBAR_HEIGHT+30+3*LINESPACE+4+1-70;
 		// position adjustment will be done automatically ... nice!
 	}
-	gui_frame_t::set_fenstergroesse(groesse);
-	groesse = get_fenstergroesse();
+	gui_frame_t::set_window_size(groesse);
+	groesse = get_window_size();
 
 	sint16 y = 0;
 	for (slist_tpl<entry>::const_iterator i = entries.begin(), end = entries.end(); i != end; ++i) {

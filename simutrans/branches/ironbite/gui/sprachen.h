@@ -45,10 +45,10 @@ public:
 
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.
-	 * @return den Dateinamen für die Hilfe, oder NULL
+	 * @return den Dateinamen fï¿½r die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	const char *get_hilfe_datei() const {return "language.txt";}
+	const char *get_help_file() const {return "language.txt";}
 
 	/**
 	 * This method is called if an action is triggered

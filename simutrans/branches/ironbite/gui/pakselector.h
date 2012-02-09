@@ -39,12 +39,12 @@ public:
 
 	bool has_pak() const { return !entries.empty(); }
 
-	const char * get_hilfe_datei() const { return ""; }
+	const char * get_help_file() const { return ""; }
 
 	// since we only want to see the frames ...
 	void zeichnen(koord pos, koord gr);
 
-	void set_fenstergroesse(koord groesse);
+	void set_window_size(koord groesse);
 
 	/**
 	 * This method is called if an action is triggered

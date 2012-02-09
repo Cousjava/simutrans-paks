@@ -223,8 +223,8 @@ convoi_frame_t::convoi_frame_t(spieler_t* sp) :
 
 	sort_list();
 
-	set_fenstergroesse(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+5*(40)+31+1));
-	set_min_windowsize(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+2*(40)+31+1));
+	set_window_size(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+5*(40)+31+1));
+	set_min_window_size(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+2*(40)+31+1));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -253,7 +253,7 @@ bool convoi_frame_t::infowin_event(const event_t *ev)
 		// (and sometime even not then ... )
 		return vscroll.infowin_event(ev);
 	}
-	else if(  (IS_LEFTRELEASE(ev)  ||  IS_RIGHTRELEASE(ev))  &&  ev->my>47  &&  ev->mx<get_fenstergroesse().x-xr  ) {
+	else if(  (IS_LEFTRELEASE(ev)  ||  IS_RIGHTRELEASE(ev))  &&  ev->my>47  &&  ev->mx<get_window_size().x-xr  ) {
 		int y = (ev->my-47)/40 + vscroll.get_knob_offset();
 		if(y<(sint32)convois.get_count()) {
 			// let gui_convoiinfo_t() handle this, since then it will be automatically consistent
@@ -301,7 +301,7 @@ bool convoi_frame_t::action_triggered( gui_action_creator_t *komp,value_t /* */)
 void convoi_frame_t::resize(const koord size_change)                          // 28-Dec-01    Markus Weber    Added
 {
 	gui_frame_t::resize(size_change);
-	koord groesse = get_fenstergroesse()-koord(0,47);
+	koord groesse = get_window_size()-koord(0,47);
 	vscroll.set_visible(false);
 	remove_komponente(&vscroll);
 	vscroll.set_knob( groesse.y/40, convois.get_count() );

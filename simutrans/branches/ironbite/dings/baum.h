@@ -90,6 +90,11 @@ public:
 	const char *get_name() const {return "Baum";}
 	typ get_typ() const { return baum; }
 
+	/**
+	 * This routine should be as fast as possible, because trees are nearly
+	 * the most common object on a map 
+	 * @author Hj. Malthaner
+	 */
 	bool check_season(const long delta_t);
 
 	void zeige_info();

@@ -140,8 +140,8 @@ convoi_filter_frame_t::convoi_filter_frame_t(spieler_t *sp, convoi_frame_t *main
 	ware_cont.set_groesse(koord(100, n*BUTTON_HEIGHT));
 	ware_scrolly.set_groesse(koord(125, 13*BUTTON_HEIGHT));
 
-	set_fenstergroesse(koord(317, TITLEBAR_HEIGHT+(FILTER_BUTTONS)*BUTTON_HEIGHT+8+10));
-	set_min_windowsize(koord(255, TITLEBAR_HEIGHT+(FILTER_BUTTONS)*BUTTON_HEIGHT+8-2));
+	set_window_size(koord(317, TITLEBAR_HEIGHT+(FILTER_BUTTONS)*BUTTON_HEIGHT+8+10));
+	set_min_window_size(koord(255, TITLEBAR_HEIGHT+(FILTER_BUTTONS)*BUTTON_HEIGHT+8-2));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -222,7 +222,7 @@ void convoi_filter_frame_t::resize(const koord delta)
 {
 	gui_frame_t::resize(delta);
 
-	const koord gr = get_fenstergroesse()-koord(0, TITLEBAR_HEIGHT);
+	const koord gr = get_window_size()-koord(0, TITLEBAR_HEIGHT);
 
 	const KOORD_VAL w1 = gr.x/2-4;
 	const KOORD_VAL w2 = (gr.x+1)/2;

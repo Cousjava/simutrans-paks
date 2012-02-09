@@ -10,107 +10,138 @@
  * Niels Roest, Hj. Malthaner, 2000
  */
 
-#include <stdio.h>
-
 #include "../simworld.h"
-#include "../simimg.h"
 #include "../simwin.h"
-#include "../simgraph.h"
 #include "optionen.h"
 #include "display_settings.h"
 #include "sprachen.h"
 #include "player_frame_t.h"
-#include "welt.h"
 #include "kennfarbe.h"
 #include "sound_frame.h"
 #include "loadsave_frame.h"
 #include "../dataobj/translator.h"
+#include "components/list_button.h"
 
+/**
+ * Build a dialog to access various settings
+ *
+ * @author Hj. Malthaner
+ */
 optionen_gui_t::optionen_gui_t(karte_t *welt) :
 	gui_frame_t( translator::translate("Einstellungen")),
 	txt("Einstellungen aendern")
 {
 	this->welt = welt;
 
+	// Hajo: run-variables for element positioning
+	int ypos = D_TOP_MARGIN;
+	int xpos = D_LEFT_MARGIN;
+	
+	// Hajo: text starts a bit lower ...
+	ypos += 3;
+	
+	txt.set_pos( koord(xpos-1, ypos) );
+	add_komponente( &txt );
+
+	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
 	// init buttons
-	bt_lang.set_groesse( koord(90, 14) );
+	bt_lang.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
 	bt_lang.set_typ(button_t::roundbox);
-	bt_lang.set_pos( koord(11,30) );
+	bt_lang.set_pos( koord(xpos,  ypos) );
 	bt_lang.set_text("Sprache");
 	bt_lang.add_listener(this);
 	add_komponente( &bt_lang );
 
-	bt_color.set_groesse( koord(90, 14) );
+	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
+	
+	bt_color.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
 	bt_color.set_typ(button_t::roundbox);
-	bt_color.set_pos( koord(11,47) );
+	bt_color.set_pos( koord(xpos, ypos) );
 	bt_color.set_text("Farbe");
 	bt_color.add_listener(this);
 	add_komponente( &bt_color );
 
-	bt_display.set_groesse( koord(90, 14) );
+	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
+	
+	bt_display.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
 	bt_display.set_typ(button_t::roundbox);
-	bt_display.set_pos( koord(11,64) );
+	bt_display.set_pos( koord(xpos, ypos) );
 	bt_display.set_text("Helligk.");
 	bt_display.add_listener(this);
 	add_komponente( &bt_display );
 
-	bt_sound.set_groesse( koord(90, 14) );
+	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
+	
+	bt_sound.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
 	bt_sound.set_typ(button_t::roundbox);
-	bt_sound.set_pos( koord(11,81) );
+	bt_sound.set_pos( koord(xpos, ypos) );
 	bt_sound.set_text("Sound");
 	bt_sound.add_listener(this);
 	add_komponente( &bt_sound );
 
-	bt_player.set_groesse( koord(90, 14) );
+	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
+	
+	bt_player.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
 	bt_player.set_typ(button_t::roundbox);
-	bt_player.set_pos( koord(11,98) );
+	bt_player.set_pos( koord(xpos, ypos) );
 	bt_player.set_text("Spieler(mz)");
 	bt_player.add_listener(this);
 	add_komponente( &bt_player );
 
-	bt_load.set_groesse( koord(90, 14) );
+	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
+	
+	bt_load.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
 	bt_load.set_typ(button_t::roundbox);
-	bt_load.set_pos( koord(112,30) );
+	bt_load.set_pos( koord(xpos, ypos) );
 	bt_load.set_text("Laden");
 	bt_load.add_listener(this);
 	add_komponente( &bt_load );
 
-	bt_save.set_groesse( koord(90, 14) );
+	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
+	
+	bt_save.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
 	bt_save.set_typ(button_t::roundbox);
-	bt_save.set_pos( koord(112,47) );
+	bt_save.set_pos( koord(xpos, ypos) );
 	bt_save.set_text("Speichern");
 	bt_save.add_listener(this);
 	add_komponente( &bt_save );
 
-	bt_new.set_groesse( koord(90, 14) );
+	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
+	
+	bt_new.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
 	bt_new.set_typ(button_t::roundbox);
-	bt_new.set_pos( koord(112,64) );
+	bt_new.set_pos( koord(xpos, ypos) );
 	bt_new.set_text("Neue Karte");
 	bt_new.add_listener(this);
 	add_komponente( &bt_new );
 
+	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
+
+	seperator.set_pos( koord(xpos,  ypos) );
+	seperator.set_groesse( koord(BUTTON_WIDTH, 1) );
+	add_komponente( &seperator );
+
+	ypos += 3 + D_COMP_Y_SPACE;
+	
 	// 01-Nov-2001      Markus Weber    Added
-	bt_quit.set_groesse( koord(90, 14) );
+	bt_quit.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
 	bt_quit.set_typ(button_t::roundbox);
-	bt_quit.set_pos( koord(112,98) );
+	bt_quit.set_pos( koord(xpos, ypos) );
 	bt_quit.set_text("Beenden");
 	bt_quit.add_listener(this);
 	add_komponente( &bt_quit );
 
-	txt.set_pos( koord(10,10) );
-	add_komponente( &txt );
+	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
 
-	seperator.set_pos( koord(112, 81+6) );
-	seperator.set_groesse( koord(90,1) );
-	add_komponente( &seperator );
-
-	set_fenstergroesse( koord(213, 98+7+14+16) );
+	// Hajo: compute total window size
+	set_window_size( koord(D_LEFT_MARGIN+BUTTON_WIDTH + D_RIGHT_MARGIN, 
+	                                    ypos + TITLEBAR_HEIGHT+2) );
 }
-
 
 
 /**
  * This method is called if an action is triggered
+ *
  * @author Hj. Malthaner
  */
 bool optionen_gui_t::action_triggered( gui_action_creator_t *comp,value_t /* */)

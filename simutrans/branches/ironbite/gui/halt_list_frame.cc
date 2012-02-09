@@ -266,8 +266,8 @@ halt_list_frame_t::halt_list_frame_t(spieler_t *sp) :
 
 	display_list();
 
-	set_fenstergroesse(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+7*(28)+31+1));
-	set_min_windowsize(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+3*(28)+31+1));
+	set_window_size(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+7*(28)+31+1));
+	set_min_window_size(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+3*(28)+31+1));
 
 	set_resizemode(diagonal_resize);
 	resize (koord(0,0));
@@ -346,7 +346,7 @@ bool halt_list_frame_t::infowin_event(const event_t *ev)
 		// (and sometime even not then ... )
 		return vscroll.infowin_event(ev);
 	}
-	else if(  (IS_LEFTRELEASE(ev)  ||  IS_RIGHTRELEASE(ev))  &&  ev->my>47  &&  ev->mx<get_fenstergroesse().x-xr  ) {
+	else if(  (IS_LEFTRELEASE(ev)  ||  IS_RIGHTRELEASE(ev))  &&  ev->my>47  &&  ev->mx<get_window_size().x-xr  ) {
 		const int y = (ev->my-47)/28 + vscroll.get_knob_offset();
 
 		if(  y<num_filtered_stops  ) {
@@ -404,7 +404,7 @@ bool halt_list_frame_t::action_triggered( gui_action_creator_t *komp,value_t /* 
 void halt_list_frame_t::resize(const koord size_change)
 {
 	gui_frame_t::resize(size_change);
-	koord groesse = get_fenstergroesse()-koord(0,47);
+	koord groesse = get_window_size()-koord(0,47);
 	vscroll.set_visible(false);
 	remove_komponente(&vscroll);
 	vscroll.set_knob( groesse.y/28, num_filtered_stops );

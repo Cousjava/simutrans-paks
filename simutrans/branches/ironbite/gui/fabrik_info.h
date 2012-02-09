@@ -85,13 +85,13 @@ public:
 	 * @return den Dateinamen f�r die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	const char *get_hilfe_datei() const {return "industry_info.txt";}
+	const char *get_help_file() const {return "industry_info.txt";}
 
 	virtual bool has_min_sizer() const {return true;}
 
 	virtual koord3d get_weltpos() { return fab->get_pos(); }
 
-	virtual void set_fenstergroesse(koord groesse);
+	virtual void set_window_size(koord groesse);
 
 	/**
 	* komponente neu zeichnen. Die �bergebenen Werte beziehen sich auf

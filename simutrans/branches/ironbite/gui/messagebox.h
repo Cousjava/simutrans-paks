@@ -17,7 +17,7 @@
 class news_window : public gui_frame_t
 {
 public:
-	virtual PLAYER_COLOR_VAL get_titelcolor() const { return color; }
+	virtual PLAYER_COLOR_VAL get_title_color() const { return color; }
 
 protected:
 	news_window(const char* text, PLAYER_COLOR_VAL color);

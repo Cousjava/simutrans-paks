@@ -41,7 +41,7 @@ gui_frame_t( "", NULL),
 	textarea.set_pos( koord(10, 10) );
 	add_komponente( &textarea );
 
-	set_fenstergroesse( koord(width, height) );
+	set_window_size( koord(width, height) );
 }
 
 
@@ -68,8 +68,8 @@ void grund_info_t::zeichnen(koord pos, koord groesse)
 
 	// Knightly : text may be changed and need more vertical space to display
 	const sint16 current_height = max( textarea.get_groesse().y, view.get_groesse().y ) + 36;
-	if(  current_height != get_fenstergroesse().y  ) {
-		set_fenstergroesse( koord(get_fenstergroesse().x, current_height) );
+	if(  current_height != get_window_size().y  ) {
+		set_window_size( koord(get_window_size().x, current_height) );
 	}
 }
 

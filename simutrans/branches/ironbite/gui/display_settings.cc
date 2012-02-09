@@ -231,14 +231,14 @@ gui_frame_t( translator::translate("Helligk. u. Farben") )
 	// add_komponente( buttons+5 );
 
 	set_resizemode(gui_frame_t::horizonal_resize);
-	set_min_windowsize( koord(RIGHT_WIDTH, BOTTOM) );
-	set_fenstergroesse( koord(RIGHT_WIDTH, BOTTOM) );
+	set_min_window_size( koord(RIGHT_WIDTH, BOTTOM) );
+	set_window_size( koord(RIGHT_WIDTH, BOTTOM) );
 }
 
 
-void color_gui_t::set_fenstergroesse(koord groesse)
+void color_gui_t::set_window_size(koord groesse)
 {
-	gui_frame_t::set_fenstergroesse(groesse);
+	gui_frame_t::set_window_size(groesse);
 	const sint16 w = groesse.x;
 	inp_underground_level.set_pos( koord(w-10-50, SLICE) );
 	brightness.set_pos( koord(w-10-40,BRIGHTNESS) );
@@ -397,7 +397,7 @@ void color_gui_t::zeichnen(koord pos, koord gr)
 	}
 
 	// seperator
-	const sint16 w = this->get_fenstergroesse().x;
+	const sint16 w = this->get_window_size().x;
 	display_ddd_box_clip(x+10, y+SEPERATE1, w-20, 0, MN_GREY0, MN_GREY4);
 	display_ddd_box_clip(x+10, y+SEPERATE2, w-20, 0, MN_GREY0, MN_GREY4);
 	display_ddd_box_clip(x+10, y+SEPERATE3, w-20, 0, MN_GREY0, MN_GREY4);

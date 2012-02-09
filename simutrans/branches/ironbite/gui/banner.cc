@@ -37,7 +37,7 @@ banner_t::banner_t(karte_t *welt) : gui_frame_t("")
         const int width = height * 160/100 + 1;
 	
 	const koord size(width, height+20);
-	set_fenstergroesse(size);
+	set_window_size(size);
 
 	const int button_bottom_margin = 18;
 	const int button_y = size.y-16-BUTTON_HEIGHT-button_bottom_margin;

@@ -32,14 +32,15 @@ private:
 	karte_t *welt;
 
 public:
-    optionen_gui_t(karte_t *welt);
+
+	optionen_gui_t(karte_t *welt);
 
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.
-	 * @return den Dateinamen für die Hilfe, oder NULL
+	 * @return den Dateinamen fï¿½r die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	const char * get_hilfe_datei() const {return "options.txt";}
+	const char * get_help_file() const {return "options.txt";}
 
 	/**
 	 * This method is called if an action is triggered

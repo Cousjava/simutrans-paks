@@ -173,8 +173,8 @@ map_frame_t::map_frame_t(karte_t *welt) :
  	// Hajo: Hack: use static size if set by a former object
 	const koord size2 = size;
 
-	set_fenstergroesse(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+256+6));
-	set_min_windowsize(koord(BUTTON4_X, TITLEBAR_HEIGHT+2*BUTTON_HEIGHT+4+64));
+	set_window_size(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+256+6));
+	set_min_window_size(koord(BUTTON4_X, TITLEBAR_HEIGHT+2*BUTTON_HEIGHT+4+64));
 
 	if(  size2 != koord(0,0)  ) {
 		if(  legend_visible  ) {
@@ -187,7 +187,7 @@ map_frame_t::map_frame_t(karte_t *welt) :
 			show_hide_directory( directory_visible );
 		}
 
-		resize( size2 - get_fenstergroesse() );
+		resize( size2 - get_window_size() );
 	}
 
 	set_resizemode(diagonal_resize);
@@ -241,12 +241,12 @@ void map_frame_t::update_factory_legend(karte_t *welt /*= NULL*/)
 	// then to become non unique and thus get clumped together
 	if(  directory_visible  ) {
 		const int dot_len = proportional_string_width("..");
-		const int fac_cols = clamp(fabesch.get_count(), 1, get_fenstergroesse().x / (TOTAL_WIDTH/3));
+		const int fac_cols = clamp(fabesch.get_count(), 1, get_window_size().x / (TOTAL_WIDTH/3));
 
 		for(  size_t l = 0;  l < legend.get_count();  l++  ) {
 			std::string label = legend[l].text;
 			size_t i;
-			for(  i=12;  i < label.size()  &&  display_calc_proportional_string_len_width(label.c_str(), i) < get_fenstergroesse().x / fac_cols - dot_len - 13;  i++  ) {}
+			for(  i=12;  i < label.size()  &&  display_calc_proportional_string_len_width(label.c_str(), i) < get_window_size().x / fac_cols - dot_len - 13;  i++  ) {}
 			if(  i < label.size()  ) {
 				label = label.substr(0, i);
 				label.append("..");
@@ -262,7 +262,7 @@ void map_frame_t::show_hide_legend(const bool show)
 	b_show_legend.pressed = show;
 	legend_visible = show;
 
-	const int col = max( 1, min( (get_fenstergroesse().x-2)/(BUTTON_WIDTH+BUTTON_SPACER), reliefkarte_t::MAX_MAP_BUTTON ) );
+	const int col = max( 1, min( (get_window_size().x-2)/(BUTTON_WIDTH+BUTTON_SPACER), reliefkarte_t::MAX_MAP_BUTTON ) );
 	const int row = ((reliefkarte_t::MAX_MAP_BUTTON-1)/col)+1;
 	const int offset_y = (BUTTON_HEIGHT+2)*row;
 	const koord offset = show ? koord(0, offset_y) : koord(0, -offset_y);
@@ -272,8 +272,8 @@ void map_frame_t::show_hide_legend(const bool show)
 	}
 	scrolly.set_pos(scrolly.get_pos() + offset);
 
-	set_min_windowsize(get_min_windowsize() + offset);
-	set_fenstergroesse(get_fenstergroesse() + offset);
+	set_min_window_size(get_min_window_size() + offset);
+	set_window_size(get_window_size() + offset);
 	resize(koord(0,0));
 }
 
@@ -287,8 +287,8 @@ void map_frame_t::show_hide_scale(const bool show)
 
 	scrolly.set_pos(scrolly.get_pos() + offset);
 
-	set_min_windowsize(get_min_windowsize() + offset);
-	set_fenstergroesse(get_fenstergroesse() + offset);
+	set_min_window_size(get_min_window_size() + offset);
+	set_window_size(get_window_size() + offset);
 	resize(koord(0,0));
 }
 
@@ -307,15 +307,15 @@ void map_frame_t::show_hide_directory(const bool show)
 		b_filter_factory_list.disable();
 	}
 
-	const int fac_cols = clamp(legend.get_count(), 1, get_fenstergroesse().x / (TOTAL_WIDTH/3));
+	const int fac_cols = clamp(legend.get_count(), 1, get_window_size().x / (TOTAL_WIDTH/3));
 	const int fac_rows = (legend.get_count() - 1) / fac_cols + 1;
 	//No need to resize when only factory filter button state changes
 	const koord offset = directory_view_toggeled ? (show ? koord(0, (fac_rows*14)) : koord(0, -(fac_rows*14))) : koord(0, 0);
 
 	scrolly.set_pos(scrolly.get_pos() + offset);
 
-	set_min_windowsize(get_min_windowsize() + offset);
-	set_fenstergroesse(get_fenstergroesse() + offset);
+	set_min_window_size(get_min_window_size() + offset);
+	set_window_size(get_window_size() + offset);
 	resize(koord(0,0));
 }
 
@@ -519,12 +519,12 @@ bool map_frame_t::infowin_event(const event_t *ev)
  * @author (Mathew Hounsell)
  * @date   11-Mar-2003
  */
-void map_frame_t::set_fenstergroesse(koord groesse)
+void map_frame_t::set_window_size(koord groesse)
 {
-	gui_frame_t::set_fenstergroesse( groesse );
+	gui_frame_t::set_window_size( groesse );
 
-	scrolly.set_groesse(get_client_windowsize()-scrolly.get_pos());
-	map_frame_t::size = get_fenstergroesse();
+	scrolly.set_groesse(get_client_window_size()-scrolly.get_pos());
+	map_frame_t::size = get_window_size();
 }
 
 
@@ -542,7 +542,7 @@ void map_frame_t::resize(const koord delta)
 
 	if(legend_visible) {
 		// calculate space with legend
-		const int col = max( 1, min( (get_fenstergroesse().x-2)/(BUTTON_WIDTH+BUTTON_SPACER), reliefkarte_t::MAX_MAP_BUTTON ) );
+		const int col = max( 1, min( (get_window_size().x-2)/(BUTTON_WIDTH+BUTTON_SPACER), reliefkarte_t::MAX_MAP_BUTTON ) );
 		const int row = ((reliefkarte_t::MAX_MAP_BUTTON-1)/col)+1;
 
 		// set button pos
@@ -561,7 +561,7 @@ void map_frame_t::resize(const koord delta)
 	if(directory_visible) {
 		// full program including factory texts
 		update_factory_legend();
-		const int fac_cols = clamp(legend.get_count(), 1, get_fenstergroesse().x / (TOTAL_WIDTH/3));
+		const int fac_cols = clamp(legend.get_count(), 1, get_window_size().x / (TOTAL_WIDTH/3));
 		const int fac_rows = (legend.get_count() - 1) / fac_cols + 1;
 		offset_y += fac_rows*14;
 	}
@@ -571,7 +571,7 @@ void map_frame_t::resize(const koord delta)
 	set_dirty();
 
 	if(  offset_y != old_offset_y  ) {
-		set_min_windowsize(get_min_windowsize() + koord(0,offset_y - old_offset_y));
+		set_min_window_size(get_min_window_size() + koord(0,offset_y - old_offset_y));
 		resize(koord(0,0));
 	}
 }
@@ -665,7 +665,7 @@ void map_frame_t::rdwr( loadsave_t *file )
 	if(  file->is_loading()  ) {
 		koord savesize;
 		savesize.rdwr(file);
-		set_fenstergroesse( savesize );
+		set_window_size( savesize );
 		resize( koord(0,0) );
 		// notify minimap of new settings
 		reliefkarte_t::get_karte()->calc_map_groesse();
@@ -686,7 +686,7 @@ void map_frame_t::rdwr( loadsave_t *file )
 		}
 	}
 	else {
-		koord gr = get_fenstergroesse();
+		koord gr = get_window_size();
 		gr.rdwr(file);
 		sint32 xoff = scrolly.get_scroll_x();
 		file->rdwr_long( xoff );

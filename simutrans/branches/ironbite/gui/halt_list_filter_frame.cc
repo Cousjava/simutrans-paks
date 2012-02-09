@@ -145,8 +145,8 @@ halt_list_filter_frame_t::halt_list_filter_frame_t(spieler_t *sp, halt_list_fram
 	ware_cont_ab.set_groesse(koord(100, n*BUTTON_HEIGHT));
 	ware_scrolly_ab.set_groesse(koord(125, 13*BUTTON_HEIGHT));
 
-	set_fenstergroesse(koord(488, TITLEBAR_HEIGHT+(FILTER_BUTTONS-1)*BUTTON_HEIGHT+8+10));
-	set_min_windowsize(koord(395, TITLEBAR_HEIGHT+(FILTER_BUTTONS-1)*BUTTON_HEIGHT+8-2));
+	set_window_size(koord(488, TITLEBAR_HEIGHT+(FILTER_BUTTONS-1)*BUTTON_HEIGHT+8+10));
+	set_min_window_size(koord(395, TITLEBAR_HEIGHT+(FILTER_BUTTONS-1)*BUTTON_HEIGHT+8-2));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -239,7 +239,7 @@ void halt_list_filter_frame_t::resize(const koord delta)
 {
 	gui_frame_t::resize(delta);
 
-	const koord gr = get_fenstergroesse()-koord(0, TITLEBAR_HEIGHT);
+	const koord gr = get_window_size()-koord(0, TITLEBAR_HEIGHT);
 
 	const KOORD_VAL w1 = gr.x/3-4;
 	const KOORD_VAL w2 = (gr.x+1)/3-4;

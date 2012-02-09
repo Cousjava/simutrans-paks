@@ -35,7 +35,7 @@ public:
 	* @return den Dateinamen f�r die Hilfe, oder NULL
 	* @author Hj. Malthaner
 	*/
-	const char * get_hilfe_datei() const { return "jump_frame.txt"; }
+	const char * get_help_file() const { return "jump_frame.txt"; }
 
 	/**
 	 * This method is called if an action is triggered

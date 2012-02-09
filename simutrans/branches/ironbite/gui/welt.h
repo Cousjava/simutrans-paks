@@ -99,10 +99,10 @@ public:
 
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.
-	 * @return den Dateinamen für die Hilfe, oder NULL
+	 * @return den Dateinamen fï¿½r die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	const char * get_hilfe_datei() const {return "new_world.txt";}
+	const char * get_help_file() const {return "new_world.txt";}
 
 	settings_t* get_sets() const { return sets; }
 
@@ -117,7 +117,7 @@ public:
 	bool infowin_event(const event_t *ev);
 
 	/**
-	 * komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
+	 * komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
 	 * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
 	 * in dem die Komponente dargestellt wird.
 	 *

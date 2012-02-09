@@ -26,7 +26,7 @@ gui_frame_t::gui_frame_t(char const* const name, spieler_t const* const sp)
 {
 	this->name = name;
 	groesse = koord(200, 100);
-	min_windowsize = koord(0,0);
+	min_window_size = koord(0,0);
 	owner = sp;
 	container.set_pos(koord(0,TITLEBAR_HEIGHT));
 	set_resizemode(no_resize); //25-may-02	markus weber	added
@@ -39,7 +39,7 @@ gui_frame_t::gui_frame_t(char const* const name, spieler_t const* const sp)
  * Setzt die Fenstergroesse
  * @author Hj. Malthaner
  */
-void gui_frame_t::set_fenstergroesse(koord groesse)
+void gui_frame_t::set_window_size(koord groesse)
 {
 	if(groesse!=this->groesse) {
 		// mark old size dirty
@@ -47,13 +47,13 @@ void gui_frame_t::set_fenstergroesse(koord groesse)
 		mark_rect_dirty_wc(pos.x,pos.y,pos.x+this->groesse.x,pos.y+this->groesse.y);
 
 		// minimal width //25-may-02	markus weber	added
-		if (groesse.x < min_windowsize.x) {
-			groesse.x = min_windowsize.x;
+		if (groesse.x < min_window_size.x) {
+			groesse.x = min_window_size.x;
 		}
 
 		// minimal heigth //25-may-02	markus weber	added
-		if (groesse.y < min_windowsize.y) {
-			groesse.y = min_windowsize.y;
+		if (groesse.y < min_window_size.y) {
+			groesse.y = min_window_size.y;
 		}
 
 		this->groesse = groesse;
@@ -67,7 +67,7 @@ void gui_frame_t::set_fenstergroesse(koord groesse)
  * zur�ck
  * @author Hj. Malthaner
  */
-PLAYER_COLOR_VAL gui_frame_t::get_titelcolor() const
+PLAYER_COLOR_VAL gui_frame_t::get_title_color() const
 {
 	if(owner)
 	{
@@ -95,7 +95,7 @@ bool gui_frame_t::infowin_event(const event_t *ev)
 		resize(delta);
 		return true;	// not pass to childs!
 	} else if(IS_WINDOW_MAKE_MIN_SIZE(ev)) {
-		set_fenstergroesse( get_min_windowsize() ) ;
+		set_window_size( get_min_window_size() ) ;
 		resize( koord(0,0) ) ;
 		return true;	// not pass to childs!
 	}
@@ -121,24 +121,42 @@ void gui_frame_t::resize(const koord delta)
 	koord new_size = groesse + delta;
 
 	// resize window to the minimal width
-	if (new_size.x < min_windowsize.x) {
-		size_change.x = min_windowsize.x - groesse.x;
-		new_size.x = min_windowsize.x;
+	if (new_size.x < min_window_size.x) {
+		size_change.x = min_window_size.x - groesse.x;
+		new_size.x = min_window_size.x;
 	}
 
 	// resize window to the minimal heigth
-	if (new_size.y < min_windowsize.y) {
-		size_change.y = min_windowsize.y - groesse.y;
-		new_size.y = min_windowsize.y;
+	if (new_size.y < min_window_size.y) {
+		size_change.y = min_window_size.y - groesse.y;
+		new_size.y = min_window_size.y;
 	}
 
 	// resize window
-	set_fenstergroesse(new_size);
+	set_window_size(new_size);
 
 	// change drag start
 	change_drag_start(size_change.x, size_change.y);
 }
 
+
+/**
+ * Position of a connected thing on the map
+ */
+koord3d gui_frame_t::get_weltpos() 
+{
+	return koord3d::invalid; 
+}
+
+/**
+ * Check if position is inside this window
+ * @author Hj. Malthaner
+ */
+bool gui_frame_t::getroffen(const int x, const int y)
+{
+	const koord groesse = get_window_size();
+	return (  x>=0  &&  y>=0  &&  x<groesse.x  &&  y<groesse.y  );
+}
 
 /**
  * komponente neu zeichnen. Die �bergebenen Werte beziehen sich auf
@@ -180,7 +198,23 @@ void gui_frame_t::zeichnen(koord pos, koord gr)
 	// Hajo: bottom line
 	display_fillbox_wh(pos.x, pos.y+gr.y-1, gr.x, 1, MN_GREY0, false);
 
+	// Hajo: title-less windows need a top line, too
+	if(!has_title())
+	{
+		display_fillbox_wh(pos.x, pos.y+TITLEBAR_HEIGHT, gr.x, 1, MN_GREY4, false);
+	}
+	
 	container.zeichnen(pos);
 
 	POP_CLIP();
+}
+
+void gui_frame_t::set_focus(gui_component_t *k)
+{
+        container.set_focus(k);
+}
+
+gui_component_t * gui_frame_t::get_focus()
+{
+        return container.get_focus();
 }

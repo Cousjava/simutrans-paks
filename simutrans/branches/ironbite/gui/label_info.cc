@@ -59,7 +59,7 @@ label_info_t::label_info_t(karte_t *welt, label_t* l) :
 	add_komponente(&player_name);
 
 	set_focus(&input);
-	set_fenstergroesse(koord(min_width, view.get_groesse().y+47));
+	set_window_size(koord(min_width, view.get_groesse().y+47));
 }
 
 

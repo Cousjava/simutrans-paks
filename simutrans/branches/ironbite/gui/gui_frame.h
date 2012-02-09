@@ -12,7 +12,6 @@
 #include "../dataobj/koord3d.h"
 #include "gui_container.h"
 
-// height of titlebar
 #define TITLEBAR_HEIGHT (16)
 #define D_LEFT_MARGIN  (12)
 #define D_RIGHT_MARGIN  (12)
@@ -24,10 +23,7 @@ class loadsave_t;
 class spieler_t;
 
 /**
- * Eine Klasse f�r Fenster mit Komponenten.
- * Anders als die anderen Fensterklasen in Simutrans ist dies
- * ein richtig Komponentenorientiertes Fenster, das alle
- * aktionen an die Komponenten delegiert.
+ * A window class for the new component based UI system.
  *
  * @author Hj. Malthaner
  */
@@ -54,7 +50,7 @@ private:
 	 * @author Markus Weber
 	 * @date   11-May-2002
 	 */
-	koord min_windowsize;
+	koord min_window_size;
 
 	resize_modes resize_mode; // 25-may-02  markus weber added
 	const spieler_t *owner;
@@ -85,13 +81,13 @@ public:
 	virtual ~gui_frame_t() {}
 
 	/**
-	 * F�gt eine Komponente zum Fenster hinzu.
+	 * Adds a component to this window
 	 * @author Hj. Malthaner
 	 */
 	void add_komponente(gui_component_t *komp) { container.add_komponente(komp); }
 
 	/**
-	 * Entfernt eine Komponente aus dem Container.
+	 * Removes a component from this window
 	 * @author Hj. Malthaner
 	 */
 	void remove_komponente(gui_component_t *komp) { container.remove_komponente(komp); }
@@ -109,59 +105,60 @@ public:
 	 */
 	void set_name(const char *name) { this->name=name; }
 
-	/* this returns an unique id, if the dialoge can be saved
-	 * if this is defined, you better define a matching constructor with karte_t * and loadsave_t *
+	/**
+         * this returns an unique id, if the dialoge can be saved
+	 * if this is defined, you better define a matching constructor
+         * with karte_t * and loadsave_t *
 	 */
 	virtual uint32 get_rdwr_id() { return 0; }
 
 	virtual void rdwr( loadsave_t * ) {}
 
 	/**
-	 * gibt farbinformationen fuer Fenstertitel, -r�nder und -k�rper
-	 * zur�ck
+	 * @return color information to display this window
 	 * @author Hj. Malthaner
 	 */
-	virtual PLAYER_COLOR_VAL get_titelcolor() const;
+	virtual PLAYER_COLOR_VAL get_title_color() const;
 
 	/**
-	 * @return gibt wunschgroesse f�r das Darstellungsfenster zurueck
+	 * @return the preferred display size
 	 * @author Hj. Malthaner
 	 */
-	koord get_fenstergroesse() const { return groesse; }
+	koord get_window_size() const { return groesse; }
 
 	/**
-	 * Setzt die Fenstergroesse
+	 * Set the size of the window
 	 * @author Hj. Malthaner
 	 */
-	virtual void set_fenstergroesse(koord groesse);
+	virtual void set_window_size(koord groesse);
 
 	/**
 	 * Set minimum size of the window
 	 * @author Markus Weber
 	 * @date   11-May-2002
 	 */
-	void set_min_windowsize(koord size) { min_windowsize = size; }
+	void set_min_window_size(koord size) { min_window_size = size; }
 
 	/**
 	 * Set minimum size of the window
 	 * @author Markus Weber
 	 * @date   11-May-2002
 	 */
-	koord get_min_windowsize() { return min_windowsize; }
+	koord get_min_window_size() { return min_window_size; }
 
 	/**
 	 * @return returns the usable width and heigth of the window
 	 * @author Markus Weber
 	 * @date   11-May-2002
 	*/
-	koord get_client_windowsize() const {return groesse-koord(0,16); }
+	koord get_client_window_size() const {return groesse-koord(0,16); }
 
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.
 	 * @return den Dateinamen f�r die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	virtual const char * get_hilfe_datei() const {return NULL;}
+	virtual const char * get_help_file() const {return NULL;}
 
 	/**
 	 * Does this window need a min size button in the title bar?
@@ -186,11 +183,15 @@ public:
 
 	virtual bool has_sticky() const { return true; }
 
-	// if false, title and all gadgets will be not drawn
+	/**
+	 * if false, title and all gadgets will be not drawn
+	 */
 	virtual bool has_title() const { return true; }
 
-	// position of a connected thing on the map
-	virtual koord3d get_weltpos() { return koord3d::invalid; }
+	/**
+	 * Position of a connected thing on the map
+	 */
+	virtual koord3d get_weltpos();
 
 	/**
 	 * Set resize mode
@@ -207,14 +208,10 @@ public:
 	resize_modes get_resizemode(void) { return resize_mode; }
 
 	/**
-	 * Pr�ft, ob eine Position innerhalb der Komponente liegt.
+	 * Check if position is inside this window
 	 * @author Hj. Malthaner
 	 */
-	virtual bool getroffen(int x, int y)
-	{
-		const koord groesse = get_fenstergroesse();
-		return (  x>=0  &&  y>=0  &&  x<groesse.x  &&  y<groesse.y  );
-	}
+	virtual bool getroffen(int x, int y);
 
 	/**
 	 * Events werden hiermit an die GUI-Komponenten
@@ -231,11 +228,13 @@ public:
 	 */
 	virtual void zeichnen(koord pos, koord gr);
 
-	// called, when the map is rotated
+	/**
+         * called, when the map is rotated
+         */
 	virtual void map_rotate90( sint16 /*new_ysize*/ ) { }
 
-	void set_focus( gui_component_t *k ) { container.set_focus(k); }
-	virtual gui_component_t *get_focus() { return container.get_focus(); }
+	void set_focus(gui_component_t *k);
+	virtual gui_component_t * get_focus();
 };
 
 #endif

@@ -54,7 +54,7 @@ class citylist_frame_t : public gui_frame_t, private action_listener_t
     citylist_frame_t(karte_t * welt);
 
    /**
-     * Komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
+     * Komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
      * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
      * in dem die Komponente dargestellt wird.
      * @author Hj. Malthaner
@@ -69,10 +69,10 @@ class citylist_frame_t : public gui_frame_t, private action_listener_t
 
     /**
      * Manche Fenster haben einen Hilfetext assoziiert.
-     * @return den Dateinamen für die Hilfe, oder NULL
+     * @return den Dateinamen fï¿½r die Hilfe, oder NULL
      * @author V. Meyer
      */
-    const char * get_hilfe_datei() const {return "citylist_filter.txt"; }
+    const char * get_help_file() const {return "citylist_filter.txt"; }
 
     static citylist::sort_mode_t get_sortierung() { return sortby; }
     static void set_sortierung(const citylist::sort_mode_t& sm) { sortby = sm; }

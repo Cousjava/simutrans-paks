@@ -93,7 +93,7 @@ sound_frame_t::sound_frame_t()
 	shufflebtn.add_listener(this);
 	add_komponente(&shufflebtn);
 
-	set_fenstergroesse(koord(276, 164));
+	set_window_size(koord(276, 164));
 }
 
 

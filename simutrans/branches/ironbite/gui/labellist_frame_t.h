@@ -43,10 +43,10 @@ class labellist_frame_t : public gui_frame_t, private action_listener_t
 
     /**
      * Manche Fenster haben einen Hilfetext assoziiert.
-     * @return den Dateinamen für die Hilfe, oder NULL
+     * @return den Dateinamen fï¿½r die Hilfe, oder NULL
      * @author V. Meyer
      */
-    const char * get_hilfe_datei() const {return "labellist_filter.txt"; }
+    const char * get_help_file() const {return "labellist_filter.txt"; }
 
      /**
      * This function refreshs the station-list

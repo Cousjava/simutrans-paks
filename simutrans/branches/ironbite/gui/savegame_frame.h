@@ -105,7 +105,7 @@ public:
 	 * @author (Mathew Hounsell)
 	 * @date   11-Mar-2003
 	 */
-	virtual void set_fenstergroesse(koord groesse);
+	virtual void set_window_size(koord groesse);
 
 	/**
 	 * This method is called if an action is triggered

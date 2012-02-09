@@ -606,7 +606,7 @@ int create_win(int x, int y, gui_frame_t* const gui, wintype const wt, long cons
 
 		if (!wins.empty()) {
 			// mark old title dirty
-			mark_rect_dirty_wc( wins.back().pos.x, wins.back().pos.y, wins.back().pos.x+wins.back().gui->get_fenstergroesse().x, wins.back().pos.y+16 );
+			mark_rect_dirty_wc( wins.back().pos.x, wins.back().pos.y, wins.back().pos.x+wins.back().gui->get_window_size().x, wins.back().pos.y+16 );
 		}
 
 		wins.append( simwin_t() );
@@ -616,7 +616,7 @@ int create_win(int x, int y, gui_frame_t* const gui, wintype const wt, long cons
 		// Must Reset as the entries and thus flags are reused
 		win.flags.close = true;
 		win.flags.title = gui->has_title();
-		win.flags.help = ( gui->get_hilfe_datei() != NULL );
+		win.flags.help = ( gui->get_help_file() != NULL );
 		win.flags.prev = gui->has_prev();
 		win.flags.next = gui->has_next();
 		win.flags.size = gui->has_min_sizer();
@@ -648,7 +648,7 @@ int create_win(int x, int y, gui_frame_t* const gui, wintype const wt, long cons
 		gui->infowin_event(&ev);
 		inside_event_handling = old;
 
-		koord gr = gui->get_fenstergroesse();
+		koord gr = gui->get_window_size();
 
 		if(x == -1) {
 			// try to keep the toolbar below all other toolbars
@@ -657,7 +657,7 @@ int create_win(int x, int y, gui_frame_t* const gui, wintype const wt, long cons
 				for( uint32 i=0;  i<wins.get_count()-1;  i++  ) {
 					if(wins[i].wt & w_no_overlap) {
 						if(wins[i].pos.y>=y) {
-							sint16 lower_y = wins[i].pos.y + wins[i].gui->get_fenstergroesse().y;
+							sint16 lower_y = wins[i].pos.y + wins[i].gui->get_window_size().y;
 							if(lower_y >= y) {
 								y = lower_y;
 							}
@@ -712,7 +712,7 @@ static void process_kill_list()
 static void destroy_framed_win(simwin_t *wins)
 {
 	// mark dirty
-	koord gr = wins->gui->get_fenstergroesse();
+	koord gr = wins->gui->get_window_size();
 	mark_rect_dirty_wc( wins->pos.x, wins->pos.y, wins->pos.x+gr.x, wins->pos.y+gr.y );
 
 	if(wins->gui) {
@@ -803,7 +803,7 @@ int top_win(int win)
 	} // already topped
 
 	// mark old title dirty
-	mark_rect_dirty_wc( wins.back().pos.x, wins.back().pos.y, wins.back().pos.x+wins.back().gui->get_fenstergroesse().x, wins.back().pos.y+16 );
+	mark_rect_dirty_wc( wins.back().pos.x, wins.back().pos.y, wins.back().pos.x+wins.back().gui->get_window_size().x, wins.back().pos.y+16 );
 
 	simwin_t tmp = wins[win];
 	wins.remove_at(win);
@@ -811,7 +811,7 @@ int top_win(int win)
 	wins.append(tmp);
 
 	 // mark new dirty
-	koord gr = wins.back().gui->get_fenstergroesse();
+	koord gr = wins.back().gui->get_window_size();
 	mark_rect_dirty_wc( wins.back().pos.x, wins.back().pos.y, wins.back().pos.x+gr.x, wins.back().pos.y+gr.y );
 
 	event_t ev;
@@ -840,10 +840,10 @@ int top_win(int win)
 void display_win(const int win)
 {
 	gui_frame_t *komp = wins[win].gui;
-	const koord gr = komp->get_fenstergroesse();
+	const koord gr = komp->get_window_size();
 	const koord pos = wins[win].pos;
 	
-	const PLAYER_COLOR_VAL title_color = komp->get_titelcolor();
+	const PLAYER_COLOR_VAL title_color = komp->get_title_color();
 	PLAYER_COLOR_VAL text_color = umgebung_t::front_window_text_color;
 	
 	if((unsigned)win != wins.get_count()-1)
@@ -855,7 +855,7 @@ void display_win(const int win)
 	const bool need_dragger = komp->get_resizemode() != gui_frame_t::no_resize;
 
 	// %HACK (Mathew Hounsell) So draw will know if gadget is needed.
-	wins[win].flags.help = ( komp->get_hilfe_datei() != NULL );
+	wins[win].flags.help = ( komp->get_help_file() != NULL );
 	
 	if(wins[win].flags.title)
 	{
@@ -908,7 +908,7 @@ void display_all_win()
 	tooltip_element = NULL;
 	for(  int i=wins.get_count()-1;  i>=0;  i--  ) {
 		if(  (!wins[i].rollup  &&  wins[i].gui->getroffen(x-wins[i].pos.x,y-wins[i].pos.y))  ||
-		     (wins[i].rollup  &&  x>=wins[i].pos.x  &&  x<wins[i].pos.x+wins[i].gui->get_fenstergroesse().x  &&  y>=wins[i].pos.y  &&  y<wins[i].pos.y+16)
+		     (wins[i].rollup  &&  x>=wins[i].pos.x  &&  x<wins[i].pos.x+wins[i].gui->get_window_size().x  &&  y>=wins[i].pos.y  &&  y<wins[i].pos.y+16)
 		) {
 			// tooltips are only allowed for this window
 			tooltip_element = wins[i].gui;
@@ -992,7 +992,7 @@ void snap_check_win( const int win, koord *r, const koord from_pos, const koord 
 		}
 		else {
 			// Snap to other window
-			other_gr = wins[i].gui->get_fenstergroesse();
+			other_gr = wins[i].gui->get_window_size();
 			other_pos = wins[i].pos;
 			if(  wins[i].rollup  ) {
 				other_gr.y = 18;
@@ -1072,7 +1072,7 @@ void move_win(int win, event_t *ev)
 	const koord mouse_to( ev->mx, ev->my );
 
 	const koord from_pos = wins[win].pos;
-	koord from_gr = wins[win].gui->get_fenstergroesse();
+	koord from_gr = wins[win].gui->get_window_size();
 	if(  wins[win].rollup  ) {
 		from_gr.y = 18;
 	}
@@ -1111,7 +1111,7 @@ void resize_win(int win, event_t *ev)
 	const koord mouse_to( wev.mx, wev.my );
 
 	const koord from_pos = wins[win].pos;
-	const koord from_gr = wins[win].gui->get_fenstergroesse();
+	const koord from_gr = wins[win].gui->get_window_size();
 
 	const koord to_pos = from_pos;
 	koord to_gr = from_gr+(mouse_to-mouse_from);
@@ -1178,7 +1178,7 @@ void win_set_pos(gui_frame_t *gui, int x, int y)
 		if(wins[i].gui == gui) {
 			wins[i].pos.x = x;
 			wins[i].pos.y = y;
-			const koord gr = wins[i].gui->get_fenstergroesse();
+			const koord gr = wins[i].gui->get_window_size();
 			mark_rect_dirty_wc( x, y, x+gr.x, y+gr.y );
 			return;
 		}
@@ -1298,17 +1298,17 @@ bool check_pos_win(event_t *ev)
 				is_moving = -1;
 
 				// %HACK (Mathew Hounsell) So decode will know if gadget is needed.
-				wins[i].flags.help = ( wins[i].gui->get_hilfe_datei() != NULL );
+				wins[i].flags.help = ( wins[i].gui->get_help_file() != NULL );
 
 				// Where Was It ?
-				simwin_gadget_et code = decode_gadget_boxes( ( & wins[i].flags ), wins[i].pos.x + (REVERSE_GADGETS?0:wins[i].gui->get_fenstergroesse().x-20), x );
+				simwin_gadget_et code = decode_gadget_boxes( ( & wins[i].flags ), wins[i].pos.x + (REVERSE_GADGETS?0:wins[i].gui->get_window_size().x-20), x );
 
 				switch( code ) {
 					case GADGET_CLOSE :
 						if (IS_LEFTCLICK(ev)) {
 							wins[i].closing = true;
 						} else if  (IS_LEFTRELEASE(ev)) {
-							if (  ev->my>=wins[i].pos.y  &&  ev->my<wins[i].pos.y+16  &&  decode_gadget_boxes( ( & wins[i].flags ), wins[i].pos.x + (REVERSE_GADGETS?0:wins[i].gui->get_fenstergroesse().x-20), ev->mx )==GADGET_CLOSE) {
+							if (  ev->my>=wins[i].pos.y  &&  ev->my<wins[i].pos.y+16  &&  decode_gadget_boxes( ( & wins[i].flags ), wins[i].pos.x + (REVERSE_GADGETS?0:wins[i].gui->get_window_size().x-20), ev->mx )==GADGET_CLOSE) {
 								destroy_win(wins[i].gui);
 							} else {
 								wins[i].closing = false;
@@ -1324,7 +1324,7 @@ bool check_pos_win(event_t *ev)
 						break;
 					case GADGET_HELP :
 						if (IS_LEFTCLICK(ev)) {
-							create_win(new help_frame_t(wins[i].gui->get_hilfe_datei()), w_info, (long)(wins[i].gui->get_hilfe_datei()) );
+							create_win(new help_frame_t(wins[i].gui->get_help_file()), w_info, (long)(wins[i].gui->get_help_file()) );
 							inside_event_handling = 0;
 						}
 						break;
@@ -1352,7 +1352,7 @@ bool check_pos_win(event_t *ev)
 						if (IS_LEFTCLICK(ev)) {
 							wins[i].sticky = !wins[i].sticky;
 							// mark title bar dirty
-							mark_rect_dirty_wc( wins[i].pos.x, wins[i].pos.y, wins[i].pos.x+wins[i].gui->get_fenstergroesse().x, wins[i].pos.y+16 );
+							mark_rect_dirty_wc( wins[i].pos.x, wins[i].pos.y, wins[i].pos.x+wins[i].gui->get_window_size().x, wins[i].pos.y+16 );
 						}
 						break;
 					default : // Title
@@ -1364,7 +1364,7 @@ bool check_pos_win(event_t *ev)
 						if(IS_RIGHTCLICK(ev)) {
 							wins[i].rollup ^= 1;
 							gui_frame_t *gui = wins[i].gui;
-							koord gr = gui->get_fenstergroesse();
+							koord gr = gui->get_window_size();
 							mark_rect_dirty_wc( wins[i].pos.x, wins[i].pos.y, wins[i].pos.x+gr.x, wins[i].pos.y+gr.y );
 						}
 
@@ -1379,7 +1379,7 @@ bool check_pos_win(event_t *ev)
 					// click in Window / Resize?
 					//11-May-02   markus weber added
 
-					koord gr = wins[i].gui->get_fenstergroesse();
+					koord gr = wins[i].gui->get_window_size();
 
 					// resizer hit ?
 					const bool canresize = is_resizing>=0  ||

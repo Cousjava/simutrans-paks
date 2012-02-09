@@ -57,7 +57,7 @@ public:
 	* @return den Dateinamen f�r die Hilfe, oder NULL
 	* @author Hj. Malthaner
 	*/
-	virtual const char * get_hilfe_datei() const;
+	virtual const char * get_help_file() const;
 
 	loadsave_frame_t(karte_t *welt, bool do_load);
 

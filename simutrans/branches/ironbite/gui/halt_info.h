@@ -68,7 +68,7 @@ public:
 	 * @return den Dateinamen f�r die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	const char * get_hilfe_datei() const {return "station.txt";}
+	const char * get_help_file() const {return "station.txt";}
 
 	/**
 	 * Komponente neu zeichnen. Die �bergebenen Werte beziehen sich auf
@@ -82,7 +82,7 @@ public:
 	 * Set window size and adjust component sizes and/or positions accordingly
 	 * @author Hj. Malthaner
 	 */
-	virtual void set_fenstergroesse(koord groesse);
+	virtual void set_window_size(koord groesse);
 
 	virtual koord3d get_weltpos();
 

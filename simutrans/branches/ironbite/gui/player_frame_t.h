@@ -13,7 +13,7 @@
 class karte_t;
 
 /**
- * Ein Menü zur Wahl der automatischen Spieler.
+ * Ein Menï¿½ zur Wahl der automatischen Spieler.
  * @author Hj. Malthaner
  */
 class ki_kontroll_t : public gui_frame_t, private action_listener_t
@@ -38,13 +38,13 @@ public:
 
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.
-	 * @return den Dateinamen für die Hilfe, oder NULL
+	 * @return den Dateinamen fï¿½r die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	const char * get_hilfe_datei() const {return "players.txt";}
+	const char * get_help_file() const {return "players.txt";}
 
 	/**
-	 * komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
+	 * komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
 	 * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
 	 * in dem die Komponente dargestellt wird.
 	 * @author Hj. Malthaner

@@ -229,7 +229,7 @@ public:
 	 * @author (Mathew Hounsell)
 	 * @date   11-Mar-2003
 	 */
-	void set_fenstergroesse(koord groesse);
+	void set_window_size(koord groesse);
 
 	/**
 	 * Create and fill loks_vec and waggons_vec.
@@ -250,7 +250,7 @@ public:
 	 * @return den Dateinamen f�r die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	const char * get_hilfe_datei() const {return "depot.txt";}
+	const char * get_help_file() const {return "depot.txt";}
 
 	/**
 	 * Does this window need a next button in the title bar?

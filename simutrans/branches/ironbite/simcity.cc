@@ -1557,7 +1557,8 @@ void stadt_t::neuer_monat( bool recalc_destinations )
 		factor = log10(factor);
 
 		uint16 number_of_cars = simrand( factor * s.get_verkehr_level() ) / 16;
-
+		// uint16 number_of_cars = 16;
+		
 		city_history_month[0][HIST_CITYCARS] = number_of_cars;
 		city_history_year[0][HIST_CITYCARS] += number_of_cars;
 
@@ -1570,7 +1571,8 @@ void stadt_t::neuer_monat( bool recalc_destinations )
 				}
 
 				grund_t* gr = welt->lookup_kartenboden(k);
-				if (gr != NULL && gr->get_weg(road_wt) && ribi_t::is_twoway(gr->get_weg_ribi_unmasked(road_wt)) && gr->find<stadtauto_t>() == NULL) {
+				if (gr != NULL && gr->get_weg(road_wt) && ribi_t::is_twoway(gr->get_weg_ribi_unmasked(road_wt)) && gr->find<stadtauto_t>() == NULL) 
+				{
 					stadtauto_t* vt = new stadtauto_t(welt, gr->get_pos(), koord::invalid);
 					gr->obj_add(vt);
 					welt->sync_add(vt);

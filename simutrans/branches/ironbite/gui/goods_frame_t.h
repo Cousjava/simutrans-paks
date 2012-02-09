@@ -71,7 +71,7 @@ public:
      * @return den Dateinamen f�r die Hilfe, oder NULL
      * @author V. Meyer
      */
-    const char * get_hilfe_datei() const {return "goods_filter.txt"; }
+    const char * get_help_file() const {return "goods_filter.txt"; }
 
     /**
      * komponente neu zeichnen. Die �bergebenen Werte beziehen sich auf

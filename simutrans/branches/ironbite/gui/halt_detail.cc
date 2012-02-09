@@ -43,8 +43,8 @@ halt_detail_t::halt_detail_t(halthandle_t halt_) :
 	scrolly.set_show_scroll_x(true);
 	add_komponente(&scrolly);
 
-	set_fenstergroesse(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+4+22*(LINESPACE)+scrollbar_t::BAR_SIZE+2));
-	set_min_windowsize(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+4+3*(LINESPACE)+scrollbar_t::BAR_SIZE+2));
+	set_window_size(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+4+22*(LINESPACE)+scrollbar_t::BAR_SIZE+2));
+	set_min_window_size(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+4+3*(LINESPACE)+scrollbar_t::BAR_SIZE+2));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -377,10 +377,10 @@ void halt_detail_t::zeichnen(koord pos, koord gr)
 
 
 
-void halt_detail_t::set_fenstergroesse(koord groesse)
+void halt_detail_t::set_window_size(koord groesse)
 {
-	gui_frame_t::set_fenstergroesse(groesse);
-	scrolly.set_groesse(get_client_windowsize()-scrolly.get_pos());
+	gui_frame_t::set_window_size(groesse);
+	scrolly.set_groesse(get_client_window_size()-scrolly.get_pos());
 }
 
 
@@ -398,7 +398,7 @@ halt_detail_t::halt_detail_t(karte_t *):
 void halt_detail_t::rdwr(loadsave_t *file)
 {
 	koord3d halt_pos;
-	koord gr = get_fenstergroesse();
+	koord gr = get_window_size();
 	sint32 xoff = scrolly.get_scroll_x();
 	sint32 yoff = scrolly.get_scroll_y();
 	if(  file->is_saving()  ) {
@@ -415,7 +415,7 @@ void halt_detail_t::rdwr(loadsave_t *file)
 		KOORD_VAL ypos = win_get_posy( this );
 		halt_detail_t *w = new halt_detail_t(halt);
 		create_win( xpos, ypos, w, w_info, magic_halt_detail+halt.get_id() );
-		w->set_fenstergroesse( gr );
+		w->set_window_size( gr );
 		w->scrolly.set_scroll_position( xoff, yoff );
 		destroy_win( this );
 	}

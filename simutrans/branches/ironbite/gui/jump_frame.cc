@@ -39,7 +39,7 @@ jump_frame_t::jump_frame_t(karte_t *welt) :
 	add_komponente(&jumpbutton);
 
 	set_focus(&input);
-	set_fenstergroesse(koord(BUTTON_WIDTH+20, 62));
+	set_window_size(koord(BUTTON_WIDTH+20, 62));
 }
 
 

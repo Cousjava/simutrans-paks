@@ -118,7 +118,7 @@ enlarge_map_frame_t::enlarge_map_frame_t(spieler_t *, karte_t *w) :
 	start_button.add_listener( this );
 	add_komponente( &start_button );
 
-	set_fenstergroesse( koord(260, intTopOfButton+14+8+16) );
+	set_window_size( koord(260, intTopOfButton+14+8+16) );
 
 	update_preview();
 }

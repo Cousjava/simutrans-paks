@@ -374,8 +374,8 @@ fahrplan_gui_t::fahrplan_gui_t(schedule_t* fpl_, spieler_t* sp_, convoihandle_t 
 	mode = adding;
 	update_selection();
 
-	set_fenstergroesse( koord(BUTTON4_X, ypos+BUTTON_HEIGHT+min(15,fpl->get_count())*(LINESPACE + 1)+TITLEBAR_HEIGHT) );
-	set_min_windowsize( koord(BUTTON4_X, ypos+BUTTON_HEIGHT+3*(LINESPACE + 1)+TITLEBAR_HEIGHT) );
+	set_window_size( koord(BUTTON4_X, ypos+BUTTON_HEIGHT+min(15,fpl->get_count())*(LINESPACE + 1)+TITLEBAR_HEIGHT) );
+	set_min_window_size( koord(BUTTON4_X, ypos+BUTTON_HEIGHT+3*(LINESPACE + 1)+TITLEBAR_HEIGHT) );
 
 	set_resizemode(diagonal_resize);
 	resize( koord(0,0) );
@@ -691,11 +691,11 @@ void fahrplan_gui_t::zeichnen(koord pos, koord gr)
  * @author Hj. Malthaner
  * @date   16-Oct-2003
  */
-void fahrplan_gui_t::set_fenstergroesse(koord groesse)
+void fahrplan_gui_t::set_window_size(koord groesse)
 {
-	gui_frame_t::set_fenstergroesse(groesse);
+	gui_frame_t::set_window_size(groesse);
 
-	groesse = get_fenstergroesse()-koord(0,16+1);
+	groesse = get_window_size()-koord(0,16+1);
 	scrolly.set_groesse(groesse-koord(0,scrolly.get_pos().y));
 
 	line_selector.set_max_size(koord(BUTTON4_X-2, groesse.y-line_selector.get_pos().y -16-1));
@@ -733,7 +733,7 @@ void fahrplan_gui_t::rdwr(loadsave_t *file)
 	koord3d cnv_pos;
 	char cnv_name[256];
 	uint8 player_nr;
-	koord gr = get_fenstergroesse();
+	koord gr = get_window_size();
 	if(  file->is_saving()  ) {
 		tstrncpy( cnv_name, cnv->get_name(), sizeof(cnv_name) );
 		player_nr = sp->get_player_nr();
@@ -779,7 +779,7 @@ void fahrplan_gui_t::rdwr(loadsave_t *file)
 			KOORD_VAL ypos = win_get_posy( this );
 			fahrplan_gui_t *w = new fahrplan_gui_t( cnv->get_schedule(), cnv->get_besitzer(), cnv );
 			create_win( xpos, ypos, w, w_info, (long)cnv->get_schedule() );
-			w->set_fenstergroesse( gr );
+			w->set_window_size( gr );
 			w->fpl->copy_from( fpl );
 			cnv->get_schedule()->eingabe_abschliessen();
 			w->fpl->eingabe_abschliessen();

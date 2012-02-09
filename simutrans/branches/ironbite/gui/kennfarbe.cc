@@ -24,7 +24,7 @@ farbengui_t::farbengui_t(spieler_t *sp) :
 	this->sp = sp;
 	buf.clear();
 	buf.append(translator::translate("COLOR_CHOOSE\n"));
-	set_fenstergroesse( koord(180, 17+6*28) );
+	set_window_size( koord(180, 17+6*28) );
 	txt.set_pos( koord(10,9) );
 	add_komponente( &txt );
 	bild.set_pos( koord(25, 70) );

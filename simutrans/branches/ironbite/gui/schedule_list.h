@@ -81,10 +81,10 @@ public:
 
 	/**
 	* Manche Fenster haben einen Hilfetext assoziiert.
-	* @return den Dateinamen für die Hilfe, oder NULL
+	* @return den Dateinamen fï¿½r die Hilfe, oder NULL
 	* @author Hj. Malthaner
 	*/
-	const char* get_hilfe_datei() const { return "linemanagement.txt"; }
+	const char* get_help_file() const { return "linemanagement.txt"; }
 
 	/**
 	* Does this window need a min size button in the title bar?
@@ -94,7 +94,7 @@ public:
 	bool has_min_sizer() const {return true;}
 
 	/**
-	* komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
+	* komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
 	* das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
 	* in dem die Komponente dargestellt wird.
 	*
@@ -106,7 +106,7 @@ public:
 	* Set window size and adjust component sizes and/or positions accordingly
 	* @author Hj. Malthaner
 	*/
-	virtual void set_fenstergroesse(koord groesse);
+	virtual void set_window_size(koord groesse);
 
 	/**
 	* Mausklicks werden hiermit an die GUI-Komponenten

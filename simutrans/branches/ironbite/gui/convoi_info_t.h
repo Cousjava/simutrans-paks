@@ -98,7 +98,7 @@ public:
 	 * @return den Dateinamen f�r die Hilfe, oder NULL
 	 * @author V. Meyer
 	 */
-	const char * get_hilfe_datei() const { return "convoiinfo.txt"; }
+	const char * get_help_file() const { return "convoiinfo.txt"; }
 
 	/**
 	 * komponente neu zeichnen. Die �bergebenen Werte beziehen sich auf
@@ -112,7 +112,7 @@ public:
 	 * Set window size and adjust component sizes and/or positions accordingly
 	 * @author Hj. Malthaner
 	 */
-	virtual void set_fenstergroesse(koord groesse);
+	virtual void set_window_size(koord groesse);
 
 	/**
 	 * This method is called if an action is triggered

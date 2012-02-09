@@ -103,8 +103,8 @@ stadt_info_t::stadt_info_t(stadt_t* stadt_) :
 
 	pax_destinations_last_change = stadt->get_pax_destinations_new_change();
 
-	set_fenstergroesse(koord(PAX_DEST_X + PAX_DESTINATIONS_SIZE + PAX_DEST_MARGIN*2 + 1, 342));
-	set_min_windowsize(koord(TOTAL_WIDTH, 256));
+	set_window_size(koord(PAX_DEST_X + PAX_DESTINATIONS_SIZE + PAX_DEST_MARGIN*2 + 1, 342));
+	set_min_window_size(koord(TOTAL_WIDTH, 256));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -116,14 +116,14 @@ void stadt_info_t::resize(const koord delta)
 	gui_frame_t::resize(delta);
 
 	// calculate layout of filter buttons
-	const int col = max( 1, min( (get_fenstergroesse().x-2)/(BUTTON_WIDTH+BUTTON_SPACER), MAX_CITY_HISTORY-1 ) );
+	const int col = max( 1, min( (get_window_size().x-2)/(BUTTON_WIDTH+BUTTON_SPACER), MAX_CITY_HISTORY-1 ) );
 	const int row = ((MAX_CITY_HISTORY-2)/col)+1;
 
 	// calculate new minimaps size : expand horizontally or vertically ?
 	const karte_t* const welt = stadt_t::get_welt();
 	const float world_aspect = (float)welt->get_groesse_x() / (float)welt->get_groesse_y();
 
-	const koord space = koord(get_fenstergroesse().x - PAX_DEST_X - PAX_DEST_MARGIN - 1, max( allow_growth.get_pos().y + LINESPACE+1 - 5, get_fenstergroesse().y - 166 - (BUTTON_HEIGHT+2)*row ));
+	const koord space = koord(get_window_size().x - PAX_DEST_X - PAX_DEST_MARGIN - 1, max( allow_growth.get_pos().y + LINESPACE+1 - 5, get_window_size().y - 166 - (BUTTON_HEIGHT+2)*row ));
 	const float space_aspect = (float)space.x / (float)space.y;
 
 	if(  world_aspect / space_aspect > PAX_DEST_VERTICAL  ) { // world wider than space, use vertical minimap layout
@@ -157,11 +157,11 @@ void stadt_info_t::resize(const koord delta)
 
 	// move and resize charts
 	year_month_tabs.set_pos(koord(60, max( allow_growth.get_pos().y + LINESPACE, (world_aspect / space_aspect > PAX_DEST_VERTICAL ? minimaps_size.y*2 + PAX_DEST_MARGIN : minimaps_size.y) + PAX_DEST_MARGIN )) );
-	year_month_tabs.set_groesse(koord(get_fenstergroesse().x - 80, get_fenstergroesse().y - TITLEBAR_HEIGHT - year_month_tabs.get_pos().y - 4 - (BUTTON_HEIGHT+2)*(row+1) - 1 ));
+	year_month_tabs.set_groesse(koord(get_window_size().x - 80, get_window_size().y - TITLEBAR_HEIGHT - year_month_tabs.get_pos().y - 4 - (BUTTON_HEIGHT+2)*(row+1) - 1 ));
 
 	// move and resize filter buttons
 	for(  int hist=0;  hist<MAX_CITY_HISTORY-1;  hist++  ) {
-		const koord pos = koord(2 + (BUTTON_WIDTH+BUTTON_SPACER)*(hist%col), get_fenstergroesse().y - (BUTTON_HEIGHT+2)*(row+1) - 1 + (BUTTON_HEIGHT+2)*((int)hist/col) );
+		const koord pos = koord(2 + (BUTTON_WIDTH+BUTTON_SPACER)*(hist%col), get_window_size().y - (BUTTON_HEIGHT+2)*(row+1) - 1 + (BUTTON_HEIGHT+2)*((int)hist/col) );
 		filterButtons[hist].set_pos( pos );
 	}
 }

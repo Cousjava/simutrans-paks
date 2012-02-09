@@ -146,7 +146,7 @@ public:
 	 */
 	bool infowin_event(const event_t *ev);
 
-	const char *get_hilfe_datei() const {return "schedule.txt";}
+	const char *get_help_file() const {return "schedule.txt";}
 
 	/**
 	 * Zeichnet das Frame
@@ -158,7 +158,7 @@ public:
 	 * Set window size and adjust component sizes and/or positions accordingly
 	 * @author Hj. Malthaner
 	 */
-	virtual void set_fenstergroesse(koord groesse);
+	virtual void set_window_size(koord groesse);
 
 	/**
 	 * show or hide the line selector combobox and its associated label

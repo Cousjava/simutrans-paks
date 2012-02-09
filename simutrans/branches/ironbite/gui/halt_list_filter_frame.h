@@ -134,7 +134,7 @@ public:
 	 * @return den Dateinamen f�r die Hilfe, oder NULL
 	 * @author V. Meyer
 	 */
-	const char * get_hilfe_datei() const {return "haltlist_filter.txt"; }
+	const char * get_help_file() const {return "haltlist_filter.txt"; }
 
 	/**
 	 * This method is called if an action is triggered

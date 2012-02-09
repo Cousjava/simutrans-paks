@@ -223,7 +223,7 @@ DBG_DEBUG("depot_frame_t::depot_frame_t()","get_max_convoi_length()=%i",depot->g
 	koord gr = koord(0,0);
 	build_vehicle_lists();
 	layout(&gr);
-	gui_frame_t::set_fenstergroesse(gr);
+	gui_frame_t::set_window_size(gr);
 
 	// text will be translated by ourselves (after update data)!
 	lb_convois.set_text_pointer(txt_convois);
@@ -261,7 +261,7 @@ void depot_frame_t::layout(koord *gr)
 	int grid_dx;
 	int placement_dx;
 
-	koord fgr = (gr!=NULL)? *gr : get_fenstergroesse();
+	koord fgr = (gr!=NULL)? *gr : get_window_size();
 
 	/*
 	* These parameter are adjusted to resolution.
@@ -362,9 +362,9 @@ void depot_frame_t::layout(koord *gr)
 	/*
 	* DONE with layout planning - now build everything.
 	*/
-	set_min_windowsize(koord(MIN_TOTAL_WIDTH, MIN_TOTAL_HEIGHT));
+	set_min_window_size(koord(MIN_TOTAL_WIDTH, MIN_TOTAL_HEIGHT));
 	if(fgr.x<TOTAL_WIDTH) {
-		gui_frame_t::set_fenstergroesse(koord(MIN_TOTAL_WIDTH, max(fgr.y,MIN_TOTAL_HEIGHT) ));
+		gui_frame_t::set_window_size(koord(MIN_TOTAL_WIDTH, max(fgr.y,MIN_TOTAL_HEIGHT) ));
 	}
 	if(gr  &&  gr->x==0) {
 		gr->x = TOTAL_WIDTH;
@@ -516,18 +516,18 @@ void depot_frame_t::layout(koord *gr)
 	vehicle_filter.set_max_size(koord(ABUTTON_WIDTH + 60, LINESPACE * 8));
 
 	const uint8 margin = 4;
-	img_bolt.set_pos(koord(get_fenstergroesse().x-skinverwaltung_t::electricity->get_bild(0)->get_pic()->w-margin,margin));
+	img_bolt.set_pos(koord(get_window_size().x-skinverwaltung_t::electricity->get_bild(0)->get_pic()->w-margin,margin));
 }
 
 
 
 
-void depot_frame_t::set_fenstergroesse( koord gr )
+void depot_frame_t::set_window_size( koord gr )
 {
 	koord g=gr;
 	layout(&g);
 	update_data();
-	gui_frame_t::set_fenstergroesse(gr);
+	gui_frame_t::set_window_size(gr);
 }
 
 
@@ -1147,8 +1147,8 @@ bool depot_frame_t::infowin_event(const event_t *ev)
 		return true;
 
 	} else if(IS_WINDOW_REZOOM(ev)) {
-		koord gr = get_fenstergroesse();
-		set_fenstergroesse(gr);
+		koord gr = get_window_size();
+		set_window_size(gr);
 	}
 	else {
 		if(IS_LEFTCLICK(ev) &&  !line_selector.getroffen(ev->cx, ev->cy-16)) {
@@ -1314,7 +1314,7 @@ void depot_frame_t::draw_vehicle_info_text(koord pos)
 {
 	char buf[1024];
 	const char *c;
-	const koord size = get_fenstergroesse();
+	const koord size = get_window_size();
 	PUSH_CLIP(pos.x, pos.y, size.x-1, size.y-1);
 
 	gui_component_t const* const tab = tabs.get_aktives_tab();

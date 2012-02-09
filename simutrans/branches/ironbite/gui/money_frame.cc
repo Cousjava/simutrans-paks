@@ -349,7 +349,7 @@ money_frame_t::money_frame_t(spieler_t *sp)
 		}
 	}
 
-	set_fenstergroesse(koord(582, 340));
+	set_window_size(koord(582, 340));
 }
 
 

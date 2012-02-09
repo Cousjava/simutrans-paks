@@ -54,7 +54,7 @@ void help_frame_t::set_text(const char * buf)
 	if(curr.y>display_get_height()-64) {
 		curr.y = display_get_height()-64;
 	}
-	set_fenstergroesse( curr );
+	set_window_size( curr );
 	resize( koord(0,0) );
 }
 
@@ -68,7 +68,7 @@ help_frame_t::help_frame_t() :
 	set_resizemode(diagonal_resize);
 	scrolly.set_show_scroll_x(true);
 	add_komponente(&scrolly);
-	set_min_windowsize(koord(16*4, 16));
+	set_min_window_size(koord(16*4, 16));
 }
 
 
@@ -154,7 +154,7 @@ help_frame_t::help_frame_t(char const* const filename) :
 	scrolly.set_show_scroll_x(true);
 	add_komponente(&scrolly);
 	flow.add_listener(this);
-	set_min_windowsize(koord(16*4, 16));
+	set_min_window_size(koord(16*4, 16));
 }
 
 
@@ -184,8 +184,8 @@ bool help_frame_t::action_triggered( gui_action_creator_t *, value_t extra)
 void help_frame_t::resize(const koord delta)
 {
 	gui_frame_t::resize(delta);
-	scrolly.set_groesse(get_client_windowsize());
-	koord gr = get_client_windowsize() -flow.get_pos() - koord(scrollbar_t::BAR_SIZE, scrollbar_t::BAR_SIZE);
+	scrolly.set_groesse(get_client_window_size());
+	koord gr = get_client_window_size() -flow.get_pos() - koord(scrollbar_t::BAR_SIZE, scrollbar_t::BAR_SIZE);
 	flow.set_groesse( gr );
 	flow.set_groesse( flow.get_text_size());
 }

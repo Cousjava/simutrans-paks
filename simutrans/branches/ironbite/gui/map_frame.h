@@ -99,7 +99,7 @@ public:
 	 * @return den Dateinamen f�r die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	const char * get_hilfe_datei() const {return "map.txt";}
+	const char * get_help_file() const {return "map.txt";}
 
 	/**
 	 * Does this window need a min size button in the title bar?
@@ -130,7 +130,7 @@ public:
 	 * @author (Mathew Hounsell)
 	 * @date   11-Mar-2003
 	 */
-	void set_fenstergroesse(koord groesse);
+	void set_window_size(koord groesse);
 
 	/**
 	 * resize window in response to a resize event

@@ -285,7 +285,7 @@ welt_gui_t::welt_gui_t(karte_t* const welt, settings_t* const sets) :
 	add_komponente( &quit_game );
 
 	const int win_height = intTopOfButton+BUTTON_HEIGHT+D_BOTTOM_MARGIN+TITLEBAR_HEIGHT;
-	set_fenstergroesse(koord(win_width, win_height));
+	set_window_size(koord(win_width, win_height));
 
 	update_preview();
 }
@@ -485,7 +485,7 @@ bool welt_gui_t::action_triggered( gui_action_creator_t *komp,value_t v)
 		}
 		else {
 			climate_gui_t *cg = new climate_gui_t(sets);
-			create_win((display_get_width() - cg->get_fenstergroesse().x-10), 40, cg, w_info, magic_climate );
+			create_win((display_get_width() - cg->get_window_size().x-10), 40, cg, w_info, magic_climate );
 			open_climate_gui.pressed = true;
 		}
 	}

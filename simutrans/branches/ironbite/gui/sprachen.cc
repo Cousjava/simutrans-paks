@@ -163,7 +163,7 @@ sprachengui_t::sprachengui_t() :
 
 	chdir(umgebung_t::user_dir);
 
-	set_fenstergroesse( koord(220, 74+(translator::get_language_count()/2)*14) );
+	set_window_size( koord(220, 74+(translator::get_language_count()/2)*14) );
 }
 
 

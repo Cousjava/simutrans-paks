@@ -1687,6 +1687,8 @@ karte_t::karte_t() :
 	grid_hgts = 0;
 	schedule_counter = 0;
 	nosave_warning = nosave = false;
+	letztes_jahr = 1930;
+	letzter_monat = 0;
 
 	for(int i=0; i<MAX_PLAYER_COUNT ; i++) {
 		spieler[i] = NULL;
@@ -5443,8 +5445,8 @@ void karte_t::interactive_event(event_t &ev)
 
 			case SIM_KEY_F1:
 				if(  gui_frame_t *win = win_get_top()  ) {
-					if(  win->get_hilfe_datei()!=NULL  ) {
-						create_win(new help_frame_t(win->get_hilfe_datei()), w_info, (long)(win->get_hilfe_datei()) );
+					if(  win->get_help_file()!=NULL  ) {
+						create_win(new help_frame_t(win->get_help_file()), w_info, (long)(win->get_help_file()) );
 						break;
 					}
 				}

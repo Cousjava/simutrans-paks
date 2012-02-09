@@ -77,7 +77,7 @@ void line_management_gui_t::rdwr(loadsave_t *file)
 	// this handles only schedules of bound convois
 	// lines are handled by line_management_gui_t
 	uint8 player_nr;
-	koord gr = get_fenstergroesse();
+	koord gr = get_window_size();
 	if(  file->is_saving()  ) {
 		player_nr = line->get_besitzer()->get_player_nr();
 	}
@@ -101,7 +101,7 @@ void line_management_gui_t::rdwr(loadsave_t *file)
 			KOORD_VAL ypos = win_get_posy( this );
 			line_management_gui_t *w = new line_management_gui_t( line, sp );
 			create_win( xpos, ypos, w, w_info, (long)line.get_rep() );
-			w->set_fenstergroesse( gr );
+			w->set_window_size( gr );
 			w->fpl->copy_from( fpl );
 		}
 		else {

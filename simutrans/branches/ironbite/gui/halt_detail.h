@@ -62,10 +62,10 @@ public:
 	 * @return den Dateinamen f�r die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	const char * get_hilfe_datei() const { return "station_details.txt"; }
+	const char * get_help_file() const { return "station_details.txt"; }
 
     // Set window size and adjust component sizes and/or positions accordingly
-    virtual void set_fenstergroesse(koord groesse);
+    virtual void set_window_size(koord groesse);
 
 	// callback for posbuttons
 	bool action_triggered( gui_action_creator_t *komp, value_t extra);
