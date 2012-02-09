@@ -37,6 +37,10 @@ cd vehicles_road
 call create.bat
 move *.pak ..\..\simutrans\pak48.Excentrique
 cd ..
+cd citycar
+call create.bat
+move *.pak ..\..\simutrans\pak48.Excentrique
+cd ..
 cd tree
 call create.bat
 move *.pak ..\..\simutrans\pak48.Excentrique
