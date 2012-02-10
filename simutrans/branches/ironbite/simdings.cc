@@ -48,7 +48,7 @@ bool ding_t::show_owner = false;
 void ding_t::init(karte_t *wl)
 {
 	welt = wl;
-	pos = koord3d::invalid;    // nicht in der karte enthalten!
+	pos = koord3d::invalid;
 
 	xoff = 0;
 	yoff = 0;
@@ -86,11 +86,10 @@ ding_t::~ding_t()
 	destroy_win((long)this);
 
 	if(flags&not_on_map  ||  !welt->ist_in_kartengrenzen(pos.get_2d())) {
-//		DBG_MESSAGE("ding_t::~ding_t()","deleted %p not on the map",this);
 		return;
 	}
 
-	// pruefe ob objekt auf karte und ggf. entfernen
+	// find object on the map and remove it
 	grund_t *gr = welt->lookup(pos);
 	if(!gr  ||  !gr->obj_remove(this)) {
 		// not found? => try harder at all map locations
@@ -123,14 +122,11 @@ ding_t::~ding_t()
 			}
 		}
 	}
-//DBG_MESSAGE("ding_t::~ding_t()","finished");
 }
 
 
 /**
- * setzt den Besitzer des dings
- * (public wegen Rathausumbau - V.Meyer)
- * @author Hj. Malthaner
+ * sets owner of object
  */
 void ding_t::set_besitzer(spieler_t *sp)
 {
@@ -259,13 +255,13 @@ void ding_t::display(int xpos, int ypos) const
 				// only transparent outline
 				display_blend(get_outline_bild(), xpos, start_ypos, besitzer_n, transparent, 0, is_dirty);
 			}
-			else if(  ding_t::get_flag( highlite )  ) {
-				// highlite this tile
+			else if(  ding_t::get_flag( highlight )  ) {
+				// highlight this tile
 				display_blend(get_bild(), xpos, start_ypos, besitzer_n, COL_RED | OUTLINE_FLAG | TRANSPARENT75_FLAG, 0, is_dirty);
 			}
 		}
-		else if(  ding_t::get_flag( highlite )  ) {
-			// highlite this tile
+		else if(  ding_t::get_flag( highlight )  ) {
+			// highlight this tile
 			display_blend(get_bild(), xpos, start_ypos, besitzer_n, COL_RED | OUTLINE_FLAG | TRANSPARENT75_FLAG, 0, is_dirty);
 		}
 	}
@@ -300,16 +296,16 @@ void ding_t::display_after(int xpos, int ypos, bool) const
 			if(  ding_t::show_owner  ) {
 				display_blend(bild, xpos, ypos, besitzer_n, (welt->get_spieler(besitzer_n)->get_player_color1()+2) | OUTLINE_FLAG | TRANSPARENT75_FLAG, 0, is_dirty);
 			}
-			else if(  ding_t::get_flag( highlite )  ) {
-				// highlite this tile
+			else if(  ding_t::get_flag( highlight )  ) {
+				// highlight this tile
 				display_blend( bild, xpos, ypos, besitzer_n, COL_RED | OUTLINE_FLAG | TRANSPARENT75_FLAG, 0, is_dirty);
 			}
 			else {
 				display_color(bild, xpos, ypos, besitzer_n, true, is_dirty);
 			}
 		}
-		else if(  ding_t::get_flag( highlite )  ) {
-			// highlite this tile
+		else if(  ding_t::get_flag( highlight )  ) {
+			// highlight this tile
 			display_blend( bild, xpos, ypos, besitzer_n, COL_RED | OUTLINE_FLAG | TRANSPARENT75_FLAG, 0, is_dirty);
 		}
 		else {

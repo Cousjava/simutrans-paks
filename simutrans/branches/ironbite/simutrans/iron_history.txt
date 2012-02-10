@@ -1,0 +1,16 @@
+
+
+
+
+
+
+- Split new skin elements from window skin. Red both, windowSkin and iron_skin,
+  and override WindowSkin with iron skin if it exists.
+
+- Testing new one-column layout for options dialog.
+
+
+- Backdrop image for game splash screen.
+- New game splash screen.
+
+add older messages ...

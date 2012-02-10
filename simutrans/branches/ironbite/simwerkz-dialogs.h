@@ -72,7 +72,7 @@ public:
 	char const* get_tooltip(spieler_t const*) const OVERRIDE { return translator::translate("Einstellungsfenster"); }
 	bool is_selected(karte_t const*) const OVERRIDE { return win_get_magic(magic_optionen_gui_t); }
 	bool init(karte_t* welt, spieler_t*) OVERRIDE {
-		create_win(240, 120, new optionen_gui_t(welt), w_info, magic_optionen_gui_t);
+		create_win(0, 32, new optionen_gui_t(welt), w_info, magic_optionen_gui_t);
 		return false;
 	}
 	bool exit(karte_t*, spieler_t*) OVERRIDE { destroy_win(magic_optionen_gui_t); return false; }

@@ -19,7 +19,8 @@ public:
 	 * Window skin images (menus too!)
 	 * @author Hj. Malthaner
 	 */
-	static const skin_besch_t *window_skin;
+	static const skin_besch_t * window_skin;
+	static const skin_besch_t * iron_skin;
 
 	/**
 	 * Window skin images (menus too!)

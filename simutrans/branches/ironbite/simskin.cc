@@ -3,6 +3,7 @@
 #include "simskin.h"
 
 #include "tpl/slist_tpl.h"
+
 /*
  * Alle Skin-Bestandteile, die wir brauchen
  */
@@ -15,6 +16,7 @@ const skin_besch_t* skinverwaltung_t::werkzeuge_toolbars = NULL;
 
 /* Window skin images are menus too! */
 const skin_besch_t* skinverwaltung_t::window_skin = NULL;
+const skin_besch_t* skinverwaltung_t::iron_skin = NULL;
 
 // symbol images
 const skin_besch_t* skinverwaltung_t::biglogosymbol      = NULL;
@@ -76,6 +78,7 @@ static spezial_obj_tpl<skin_besch_t> misc_objekte[] = {
 static spezial_obj_tpl<skin_besch_t> menu_objekte[] = {
 	// new menu system
 	{ &skinverwaltung_t::window_skin,       "WindowSkin"   },
+	{ &skinverwaltung_t::iron_skin,         "iron_skin"   },
 	{ &skinverwaltung_t::werkzeuge_general, "GeneralTools" },
 	{ &skinverwaltung_t::werkzeuge_simple,  "SimpleTools"  },
 	{ &skinverwaltung_t::werkzeuge_dialoge, "DialogeTools" },
@@ -134,7 +137,15 @@ bool skinverwaltung_t::alles_geladen(skintyp_t type)
 {
 	spezial_obj_tpl<skin_besch_t>* sb;
 	switch (type) {
-		case menu:    sb = menu_objekte+1;       break;
+		case menu:    
+			sb = menu_objekte + 2;   
+			if(iron_skin)
+			{
+				window_skin = iron_skin;
+				dbg->message("skinverwaltung_t::alles_geladen()",
+				             "Using iron_skin as window skin." );
+			}
+			break;
 		case cursor:  sb = cursor_objekte;     break;
 		case symbol:  sb = symbol_objekte;     break;
 		case misc:
@@ -147,6 +158,7 @@ bool skinverwaltung_t::alles_geladen(skintyp_t type)
 		case nothing: return true;
 		default:      return false;
 	}
+	
 	return ::alles_geladen(sb);
 }
 
@@ -167,10 +179,12 @@ bool skinverwaltung_t::register_besch(skintyp_t type, const skin_besch_t* besch)
 		if(  !(type==cursor  ||  type==symbol)  ) {
 			if(  type==menu  ) {
 				extra_obj.insert( besch );
-				dbg->message( "skinverwaltung_t::register_besch()","Extra object %s added.", besch->get_name() );
+				dbg->message("skinverwaltung_t::register_besch()",
+				             "Extra object %s added.", besch->get_name() );
 			}
 			else {
-				dbg->warning("skinverwaltung_t::register_besch()","Spurious object '%s' loaded (will not be referenced anyway)!", besch->get_name() );
+				dbg->warning("skinverwaltung_t::register_besch()",
+				             "Spurious object '%s' loaded (will not be referenced anyway)!", besch->get_name() );
 			}
 		}
 		else {
