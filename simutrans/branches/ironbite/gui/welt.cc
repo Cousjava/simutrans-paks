@@ -622,7 +622,7 @@ void welt_gui_t::zeichnen(koord pos, koord gr)
 		(
 			sizeof(grund_t) +
 			sizeof(planquadrat_t) +
-			sizeof(baum_t) * 2 +
+			sizeof(tree_t) * 2 +
 			sizeof(void*) * 4
 		) * sx * sy
 	) / (1024 * 1024);

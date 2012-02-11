@@ -126,6 +126,43 @@ ding_t::~ding_t()
 
 
 /**
+ * @returns untranslated name of object
+ * @author Hj. Malthaner
+ */
+const char * ding_t::get_name() const 
+{
+	return "Ding";
+}
+
+/**
+ * waytype associated with this object
+ */
+waytype_t ding_t::get_waytype() const 
+{
+	return invalid_wt; 
+}
+
+/**
+ * called whenever the snowline height changes
+ * return false and the ding_t will be deleted
+ * @author prissi
+ */
+bool ding_t::check_season(const long /*month*/) 
+{
+	return true; 
+}
+
+/**
+ * if a function returns a value here with TRANSPARENT_FLAGS set
+ * then a transparent outline with the color from the lower 8 bit is drawn
+ * @author kierongreen
+ */
+PLAYER_COLOR_VAL ding_t::get_outline_colour() const 
+{
+	return 0;
+}
+
+/**
  * sets owner of object
  */
 void ding_t::set_besitzer(spieler_t *sp)

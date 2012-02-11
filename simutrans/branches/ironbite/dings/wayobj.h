@@ -9,8 +9,7 @@
 #define wayobj_t_h
 
 #include "../simtypes.h"
-#include "../simimg.h"
-#include "../simdings.h"
+#include "thing_without_info_t.h"
 #include "../dataobj/ribi.h"
 #include "../besch/way_obj_besch.h"
 #include "../tpl/vector_tpl.h"

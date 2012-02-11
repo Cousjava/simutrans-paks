@@ -782,7 +782,7 @@ public:
 	char const* get_tooltip(spieler_t const*) const OVERRIDE { return translator::translate("Fill trees"); }
 	bool init( karte_t *welt, spieler_t * ) {
 		if(  default_param  ) {
-			baum_t::fill_trees( welt, atoi(default_param) );
+			tree_t::fill_trees( welt, atoi(default_param) );
 		}
 		return false;
 	}

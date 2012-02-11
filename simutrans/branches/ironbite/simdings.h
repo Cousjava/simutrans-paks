@@ -220,7 +220,7 @@ public:
 	 * @returns untranslated name of object
 	 * @author Hj. Malthaner
 	 */
-	virtual const char *get_name() const {return "Ding";}
+	virtual const char *get_name() const;
 
 	/**
 	 * @return the object type
@@ -232,14 +232,14 @@ public:
 	/**
 	 * waytype associated with this object
 	 */
-	virtual waytype_t get_waytype() const { return invalid_wt; }
+	virtual waytype_t get_waytype() const;
 
 	/**
 	 * called whenever the snowline height changes
 	 * return false and the ding_t will be deleted
 	 * @author prissi
 	 */
-	virtual bool check_season(const long /*month*/) { return true; }
+	virtual bool check_season(const long /*month*/);
 
 	/**
 	 * called during map rotation
@@ -272,7 +272,7 @@ public:
 	 * then a transparent outline with the color from the lower 8 bit is drawn
 	 * @author kierongreen
 	 */
-	virtual PLAYER_COLOR_VAL get_outline_colour() const {return 0;}
+	virtual PLAYER_COLOR_VAL get_outline_colour() const;
 
 	/**
 	 * The image, that will be outlined
@@ -365,22 +365,5 @@ template<typename T> static inline T const* ding_cast(ding_t const* const d)
 {
 	return ding_cast<T>(const_cast<ding_t*>(d));
 }
-
-
-/**
- * Game objects that do not have description windows (for instance zeiger_t, wolke_t)
- */
-class ding_no_info_t : public ding_t
-{
-public:
-	ding_no_info_t(karte_t* welt, loadsave_t* file) : ding_t(welt, file) {}
-
-	ding_no_info_t(karte_t* welt, koord3d pos) : ding_t(welt, pos) {}
-
-	void zeige_info() {}
-
-protected:
-	ding_no_info_t(karte_t* welt) : ding_t(welt) {}
-};
 
 #endif

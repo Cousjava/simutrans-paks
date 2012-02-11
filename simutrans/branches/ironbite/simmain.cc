@@ -88,7 +88,7 @@ static void show_sizes()
 
 	DBG_MESSAGE("sizes", "ding_t: %d", sizeof(ding_t));
 	DBG_MESSAGE("sizes", "gebaeude_t: %d", sizeof(gebaeude_t));
-	DBG_MESSAGE("sizes", "baum_t: %d", sizeof(baum_t));
+	DBG_MESSAGE("sizes", "tree_t: %d", sizeof(tree_t));
 	DBG_MESSAGE("sizes", "weg_t: %d", sizeof(weg_t));
 	DBG_MESSAGE("sizes", "stadtauto_t: %d\n", sizeof(stadtauto_t));
 
@@ -1051,7 +1051,7 @@ DBG_MESSAGE("simmain","loadgame file found at %s",buffer);
 	}
 
 	welt->set_fast_forward(false);
-	baum_t::recalc_outline_color();
+	tree_t::recalc_outline_color();
 #if defined DEBUG || defined PROFILE
 	// do a render test?
 	if (gimme_arg(argc, argv, "-times", 0) != NULL) {

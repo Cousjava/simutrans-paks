@@ -43,8 +43,36 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 	txt.set_pos( koord(xpos-1, ypos) );
 	add_komponente( &txt );
 
-	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
 	// init buttons
+	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
+
+	bt_new.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
+	bt_new.set_typ(button_t::roundbox);
+	bt_new.set_pos( koord(xpos, ypos) );
+	bt_new.set_text("Neue Karte");
+	bt_new.add_listener(this);
+	add_komponente( &bt_new );
+
+	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
+
+	bt_load.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
+	bt_load.set_typ(button_t::roundbox);
+	bt_load.set_pos( koord(xpos, ypos) );
+	bt_load.set_text("Laden");
+	bt_load.add_listener(this);
+	add_komponente( &bt_load );
+
+	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
+	
+	bt_save.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
+	bt_save.set_typ(button_t::roundbox);
+	bt_save.set_pos( koord(xpos, ypos) );
+	bt_save.set_text("Speichern");
+	bt_save.add_listener(this);
+	add_komponente( &bt_save );
+
+	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
+	
 	bt_lang.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
 	bt_lang.set_typ(button_t::roundbox);
 	bt_lang.set_pos( koord(xpos,  ypos) );
@@ -90,33 +118,6 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 
 	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
 	
-	bt_load.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
-	bt_load.set_typ(button_t::roundbox);
-	bt_load.set_pos( koord(xpos, ypos) );
-	bt_load.set_text("Laden");
-	bt_load.add_listener(this);
-	add_komponente( &bt_load );
-
-	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
-	
-	bt_save.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
-	bt_save.set_typ(button_t::roundbox);
-	bt_save.set_pos( koord(xpos, ypos) );
-	bt_save.set_text("Speichern");
-	bt_save.add_listener(this);
-	add_komponente( &bt_save );
-
-	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
-	
-	bt_new.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
-	bt_new.set_typ(button_t::roundbox);
-	bt_new.set_pos( koord(xpos, ypos) );
-	bt_new.set_text("Neue Karte");
-	bt_new.add_listener(this);
-	add_komponente( &bt_new );
-
-	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
-
 	seperator.set_pos( koord(xpos,  ypos) );
 	seperator.set_groesse( koord(BUTTON_WIDTH, 1) );
 	add_komponente( &seperator );

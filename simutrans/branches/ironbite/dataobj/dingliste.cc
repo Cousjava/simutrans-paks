@@ -491,7 +491,7 @@ bool dingliste_t::add(ding_t* ding)
 			 * therefore the y-order must be correct!
 			 */
 			for(  ;  i<top;  i++) {
-				baum_t const* const tree = ding_cast<baum_t>(obj.some[i]);
+				tree_t const* const tree = ding_cast<tree_t>(obj.some[i]);
 				if (!tree  ||  compare_trees(ding, tree)) {
 					break;
 				}
@@ -912,7 +912,7 @@ void dingliste_t::rdwr(karte_t *welt, loadsave_t *file, koord3d current_pos)
 
 				case ding_t::baum:
 				{
-					baum_t *b = new baum_t(welt, file);
+					tree_t *b = new tree_t(welt, file);
 					if(!b->get_besch()) {
 						// do not remove from this position, since there will be nothing
 						b->set_flag(ding_t::not_on_map);

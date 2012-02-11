@@ -1380,7 +1380,7 @@ sint64 grund_t::remove_trees()
 {
 	sint64 cost=0;
 	// remove all trees ...
-	while (baum_t* const d = find<baum_t>(0)) {
+	while (tree_t* const d = find<tree_t>(0)) {
 		// we must mark it by hand, sinc ewe want to join costs
 		d->mark_image_dirty( get_bild(), 0 );
 		delete d;

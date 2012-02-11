@@ -1352,7 +1352,7 @@ DBG_DEBUG("karte_t::init()","init_felder");
 
 DBG_DEBUG("karte_t::init()","distributing trees");
 	if (!settings.get_no_trees()) {
-		baum_t::distribute_trees(this,3);
+		tree_t::distribute_trees(this,3);
 	}
 
 DBG_DEBUG("karte_t::init()","built timeline");

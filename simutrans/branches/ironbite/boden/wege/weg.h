@@ -8,9 +8,8 @@
 #ifndef boden_wege_weg_h
 #define boden_wege_weg_h
 
-#include "../../simimg.h"
 #include "../../simtypes.h"
-#include "../../simdings.h"
+#include "../../dings/thing_without_info_t.h"
 #include "../../besch/weg_besch.h"
 #include "../../dataobj/koord3d.h"
 

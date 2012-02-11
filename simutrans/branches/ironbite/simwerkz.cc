@@ -1210,7 +1210,7 @@ const char *wkz_setslope_t::wkz_set_slope_work( karte_t *welt, spieler_t *sp, ko
 				// correct tree offsets if slope has changed
 				if(  slope_changed  ) {
 					for(  int i=0;  i<gr1->get_top();  i++  ) {
-						baum_t *tree = ding_cast<baum_t>(gr1->obj_bei(i));
+						tree_t *tree = ding_cast<tree_t>(gr1->obj_bei(i));
 						if (tree) {
 							tree->recalc_off();
 						}
@@ -1531,15 +1531,15 @@ const char *wkz_plant_tree_t::work( karte_t *welt, spieler_t *sp, koord3d pos )
 		bool check_climates = true;
 		bool random_age = false;
 		if(default_param==NULL  ||  strlen(default_param)==0) {
-			besch = baum_t::random_tree_for_climate( welt->get_climate(pos.z) );
+			besch = tree_t::random_tree_for_climate( welt->get_climate(pos.z) );
 		}
 		else {
 			// parse default_param: bbbesch_nr b=1 ignore climate b=1 random age
 			check_climates = default_param[0]=='0';
 			random_age = default_param[1]=='1';
-			besch = baum_t::find_tree(default_param+3);
+			besch = tree_t::find_tree(default_param+3);
 		}
-		if(besch  &&  baum_t::plant_tree_on_coordinate( welt, pos.get_2d(), besch, check_climates, random_age )  ) {
+		if(besch  &&  tree_t::plant_tree_on_coordinate( welt, pos.get_2d(), besch, check_climates, random_age )  ) {
 			spieler_t::accounting(sp, welt->get_settings().cst_remove_tree, pos.get_2d(), COST_CONSTRUCTION);
 			return NULL;
 		}
@@ -4647,7 +4647,7 @@ const char *wkz_forest_t::do_work( karte_t *welt, spieler_t *sp, const koord3d &
 	nw.x = min(start.x, end.x)+(wh.x/2);
 	nw.y = min(start.y, end.y)+(wh.y/2);
 
-	sint64 costs = baum_t::create_forest( welt, nw, wh );
+	sint64 costs = tree_t::create_forest( welt, nw, wh );
 	spieler_t::accounting(sp, costs * welt->get_settings().cst_remove_tree, end.get_2d(), COST_CONSTRUCTION);
 
 	return NULL;
@@ -5049,7 +5049,7 @@ const char *wkz_make_stop_public_t::work( karte_t *welt, spieler_t *sp, koord3d 
 bool wkz_show_trees_t::init( karte_t *welt, spieler_t * )
 {
 	umgebung_t::hide_trees = !umgebung_t::hide_trees;
-	baum_t::recalc_outline_color();
+	tree_t::recalc_outline_color();
 	welt->set_dirty();
 	return false;
 }

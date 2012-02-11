@@ -1,9 +1,9 @@
 
-
+- Changed option dialog buttons order (new map, load, save, ... quit)
 - Ongoing class/file insulation efforts to reduce build times with gcc.
-- Cut revision nr. to 3 digits, even if I make daily builds that is enough for ~ 3 years.
+- Cut revision no. to 3 digits, even if I make daily builds that is enough for ~ 3 years.
 - Push effect for window close gadget.
-- Split new skin elements from window skin. Red both, windowSkin and iron_skin,
+- Split new skin elements from window skin. Read both, windowSkin and iron_skin,
   and override WindowSkin with iron skin if it exists.
 - Testing new one-column layout for options dialog.
 - Backdrop image for game splash screen.

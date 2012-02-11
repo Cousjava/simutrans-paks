@@ -14,9 +14,7 @@
 #include "wolke.h"
 
 #include "../dataobj/loadsave.h"
-
-#include "../tpl/vector_tpl.h"
-
+#include "../besch/skin_besch.h"
 
 vector_tpl<const skin_besch_t *>wolke_t::all_clouds(0);
 
@@ -33,9 +31,6 @@ bool wolke_t::register_besch(const skin_besch_t* besch)
 }
 
 
-
-
-
 wolke_t::wolke_t(karte_t *welt, koord3d pos, sint8 x_off, sint8 y_off, const skin_besch_t* besch ) :
 	ding_no_info_t(welt, pos)
 {
@@ -48,19 +43,16 @@ wolke_t::wolke_t(karte_t *welt, koord3d pos, sint8 x_off, sint8 y_off, const ski
 }
 
 
-
 wolke_t::~wolke_t()
 {
 	mark_image_dirty( get_bild(), 0 );
 }
 
 
-
 wolke_t::wolke_t(karte_t* const welt, loadsave_t* const file) : ding_no_info_t(welt)
 {
 	rdwr(file);
 }
-
 
 
 void wolke_t::rdwr(loadsave_t *file)
@@ -86,7 +78,6 @@ void wolke_t::rdwr(loadsave_t *file)
 }
 
 
-
 bool wolke_t::sync_step(long delta_t)
 {
 	insta_zeit += (uint16)delta_t;
@@ -109,6 +100,11 @@ bool wolke_t::sync_step(long delta_t)
 }
 
 
+image_id wolke_t::get_bild() const 
+{
+	return all_clouds[cloud_nr]->get_bild_nr(insta_zeit/divisor); 
+}
+
 
 /**
  * Wird aufgerufen, wenn wolke entfernt wird. Entfernt wolke aus
@@ -119,7 +115,6 @@ void wolke_t::entferne(spieler_t *)
 {
 	welt->sync_remove(this);
 }
-
 
 
 // called during map rotation
@@ -144,6 +139,10 @@ raucher_t::raucher_t(karte_t *welt, loadsave_t *file) : ding_t(welt)
 	ding_t::set_flag(ding_t::not_on_map);
 }
 
+image_id raucher_t::get_bild() const 
+{
+	return IMG_LEER; 
+}
 
 async_wolke_t::async_wolke_t(karte_t *welt, loadsave_t *file) : ding_t(welt)
 {
@@ -157,4 +156,9 @@ async_wolke_t::async_wolke_t(karte_t *welt, loadsave_t *file) : ding_t(welt)
 
 	// do not remove from this position, since there will be nothing
 	ding_t::set_flag(ding_t::not_on_map);
+}
+
+image_id async_wolke_t::get_bild() const 
+{
+	return IMG_LEER; 
 }

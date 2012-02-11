@@ -12,7 +12,7 @@ class wkz_plant_tree_t;
 class baum_edit_frame_t : public extend_edit_gui_t
 {
 private:
-	static wkz_plant_tree_t baum_tool;
+	static wkz_plant_tree_t tree_tool;
 	static char param_str[256];
 
 	const baum_besch_t *besch;

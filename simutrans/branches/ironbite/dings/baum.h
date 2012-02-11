@@ -21,7 +21,7 @@
  * B�ume in Simutrans.
  * @author Hj. Malthaner
  */
-class baum_t : public ding_t
+class tree_t : public ding_t
 {
 private:
 	static PLAYER_COLOR_VAL outline_color;
@@ -40,8 +40,8 @@ private:
 
 	// static for administration
 	static stringhashtable_tpl<const baum_besch_t *> besch_names;
-	static vector_tpl<const baum_besch_t *> baum_typen;
-	static vector_tpl<weighted_vector_tpl<uint32> > baum_typen_per_climate;
+	static vector_tpl<const baum_besch_t *> tree_typen;
+	static vector_tpl<weighted_vector_tpl<uint32> > tree_typen_per_climate;
 
 	bool saee_baum();
 
@@ -57,10 +57,10 @@ private:
 public:
 	// only the load save constructor should be called outside
 	// otherwise I suggest use the plant tree function (see below)
-	baum_t(karte_t *welt, loadsave_t *file);
-	baum_t(karte_t *welt, koord3d pos);
-	baum_t(karte_t *welt, koord3d pos, uint8 type, sint32 age, uint8 slope );
-	baum_t(karte_t *welt, koord3d pos, const baum_besch_t *besch);
+	tree_t(karte_t *welt, loadsave_t *file);
+	tree_t(karte_t *welt, koord3d pos);
+	tree_t(karte_t *welt, koord3d pos, uint8 type, sint32 age, uint8 slope );
+	tree_t(karte_t *welt, koord3d pos, const baum_besch_t *besch);
 
 	void rdwr(loadsave_t *file);
 
@@ -106,7 +106,7 @@ public:
 	void * operator new(size_t s);
 	void operator delete(void *p);
 
-	const baum_besch_t* get_besch() const { return baum_typen[baumtype]; }
+	const baum_besch_t* get_besch() const { return tree_typen[baumtype]; }
 	uint16 get_besch_id() const { return baumtype; }
 	uint32 get_age() const;
 
@@ -125,13 +125,13 @@ public:
 
 
 	// return list to beschs
-	static const vector_tpl<const baum_besch_t *> *get_all_besch() { return &baum_typen; }
+	static const vector_tpl<const baum_besch_t *> *get_all_besch() { return &tree_typen; }
 
-	static const baum_besch_t *random_tree_for_climate(climate cl) { uint16 b = random_tree_for_climate_intern(cl);  return b!=0xFFFF ? baum_typen[b] : NULL; }
+	static const baum_besch_t *random_tree_for_climate(climate cl) { uint16 b = random_tree_for_climate_intern(cl);  return b!=0xFFFF ? tree_typen[b] : NULL; }
 
-	static const baum_besch_t *find_tree( const char *tree_name ) { return baum_typen.empty() ? NULL : besch_names.get(tree_name); }
+	static const baum_besch_t *find_tree( const char *tree_name ) { return tree_typen.empty() ? NULL : besch_names.get(tree_name); }
 
-	static int get_anzahl_besch() { return baum_typen.get_count(); }
+	static int get_anzahl_besch() { return tree_typen.get_count(); }
 	static int get_anzahl_besch(climate cl);
 
 };

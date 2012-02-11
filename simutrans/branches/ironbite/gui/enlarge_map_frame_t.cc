@@ -264,7 +264,7 @@ void enlarge_map_frame_t::update_preview()
 		(
 			sizeof(grund_t) +
 			sizeof(planquadrat_t) +
-			sizeof(baum_t) * 2 +
+			sizeof(tree_t) * 2 +
 			sizeof(void*) * 4
 		) * sx * sy
 	) / (1024 * 1024);

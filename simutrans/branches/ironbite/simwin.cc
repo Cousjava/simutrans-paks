@@ -179,7 +179,8 @@ static int display_gadget_box(simwin_gadget_et const  code,
 	{
 		if(pushed)
 		{
-			display_base_img_blend(img, x, y, 0, TRANSPARENT50_FLAG|OUTLINE_FLAG|COL_BLACK, false, false);
+			// display_base_img_blend(img, x, y, 0, TRANSPARENT50_FLAG|OUTLINE_FLAG|COL_BLACK, false, false);
+			display_base_img_blend(img, x, y, 0, TRANSPARENT50_FLAG|COL_BLACK, false, false);
 		}
 		else
 		{
