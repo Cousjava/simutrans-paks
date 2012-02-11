@@ -44,7 +44,7 @@ static const sint8 hours2night[] =
 
 void map_display_t::display(bool force_dirty)
 {
-#if COLOUR_DEPTH > 0
+#if COLOUR_DEPTH != 0
 	DBG_DEBUG4("map_display_t::display", "starting ...");
 	display_set_image_proc(true);
 
@@ -309,5 +309,5 @@ void map_display_t::display(bool force_dirty)
 	DBG_DEBUG4("map_display_t::display", "... ready");
 #else
 	(void)force_dirty;
-#endif // COLOUR_DEPTH > 0
+#endif
 }

@@ -5,11 +5,12 @@
 #include "simcolor.h"
 #include "simimg.h"
 #include "dataobj/koord.h"
-#include "tpl/slist_tpl.h"
 
 class karte_t;
+template<class T> class slist_tpl;
 
-/* class for a simple message
+/*
+ * class for a simple message
  * this way they are stored in a list
  * @author prissi
  */
@@ -54,10 +55,10 @@ private:
 	sint32 auto_win_flags;
 	sint32 ignore_flags;
 
-	slist_tpl<node *> list;
+	slist_tpl<node *> * list;
 
 public:
-	const slist_tpl<node *> &get_list() const { return list; }
+	const slist_tpl<node *> * get_list() const { return list; }
 
 	void clear();
 

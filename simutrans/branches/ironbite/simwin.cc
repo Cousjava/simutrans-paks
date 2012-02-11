@@ -168,13 +168,23 @@ static int display_gadget_box(simwin_gadget_et const  code,
 		display_fillbox_wh_clip(x+1, y+1, 14, 14, color+1, false);
 	}
 
-	image_id img = IMG_LEER;
-	if(  skinverwaltung_t::window_skin  ) {
+	int img = IMG_LEER;
+	if(skinverwaltung_t::window_skin) 
+	{
 		// "x", "?", "=", "�", "�"
 		img = skinverwaltung_t::window_skin->get_bild_nr(code+1);
 	}
-	if(  img != IMG_LEER  ) {
-		display_color_img(img, x, y, 0, false, false);
+
+	if(img != IMG_LEER)
+	{
+		if(pushed)
+		{
+			display_base_img_blend(img, x, y, 0, TRANSPARENT50_FLAG|OUTLINE_FLAG|COL_BLACK, false, false);
+		}
+		else
+		{
+			display_color_img(img, x, y, 0, false, false);
+		}
 	}
 	else {
 		const char *gadget_text = "#";

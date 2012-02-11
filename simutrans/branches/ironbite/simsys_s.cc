@@ -255,6 +255,7 @@ unsigned int system_get_color(unsigned int r, unsigned int g, unsigned int b)
 }
 
 
+// unused?
 void system_set_colors(int first, int count, unsigned char* data)
 {
 	ALLOCA(SDL_Color, rgb, count);
@@ -274,7 +275,6 @@ void system_prepare_flush()
 {
 	return;
 }
-
 
 
 void system_flush_framebuffer(void)

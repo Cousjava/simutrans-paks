@@ -38,18 +38,18 @@ bool message_stats_t::filter_messages(const sint32 msg_type)
 	// only update if there is a change in message type
 	if(  msg_type>=-1  &&  message_type!=msg_type  ) {
 		message_type = msg_type;
-		last_count = msg->get_list().get_count();
+		last_count = msg->get_list()->get_count();
 		message_selected = -1;
 		if(  msg_type==-1  ) {
 			// case : no message filtering
-			message_list = &(msg->get_list());
+			message_list =msg->get_list();
 			recalc_size();
 		}
 		else {
 			// case : filter messages belonging to the specified type
 			message_list = &filtered_messages;
 			filtered_messages.clear();
-			for(  slist_tpl<message_t::node *>::const_iterator iter=msg->get_list().begin(), end=msg->get_list().end();  iter!=end;  ++iter  ) {
+			for(  slist_tpl<message_t::node *>::const_iterator iter=msg->get_list()->begin(), end=msg->get_list()->end();  iter!=end;  ++iter  ) {
 				if(  (*iter)->get_type_shifted() & message_type  ) {
 					filtered_messages.append( *iter );
 				}
@@ -169,7 +169,7 @@ void message_stats_t::recalc_size()
 void message_stats_t::zeichnen(koord offset)
 {
 	// Knightly : update component size and filtered message list where necessary
-	const uint32 new_count = msg->get_list().get_count();
+	const uint32 new_count = msg->get_list()->get_count();
 	if(  last_count<new_count  ) {
 		if(  message_type==-1  ) {
 			// no message filtering -> only update last count and component size
@@ -181,7 +181,7 @@ void message_stats_t::zeichnen(koord offset)
 			uint32 entry_count = new_count - last_count;
 			// Knightly : for ensuring correct chronological order of the new messages
 			slist_tpl<message_t::node *> temp_list;
-			for(  slist_tpl<message_t::node *>::const_iterator iter=msg->get_list().begin(), end=msg->get_list().end();  iter!=end  &&  entry_count>0;  ++iter, --entry_count  ) {
+			for(  slist_tpl<message_t::node *>::const_iterator iter=msg->get_list()->begin(), end=msg->get_list()->end();  iter!=end  &&  entry_count>0;  ++iter, --entry_count  ) {
 				if(  (*iter)->get_type_shifted() & message_type  ) {
 					temp_list.insert(*iter);
 				}

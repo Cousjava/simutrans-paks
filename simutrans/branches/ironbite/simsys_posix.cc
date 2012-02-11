@@ -61,6 +61,7 @@ unsigned int system_get_color(unsigned int, unsigned int, unsigned int)
 	return 1;
 }
 
+// unused ?
 void system_set_colors(int, int, unsigned char*)
 {
 }

@@ -90,7 +90,8 @@ int dr_textur_resize(unsigned short** textur, int w, int h);
 void system_prepare_flush();	// waits, if previous update not yet finished
 void system_flush_framebuffer(void);	// copy to screen (eventuall multithreaded)
 
-void system_set_colors(int first, int count, unsigned char * data);
+// no longer used
+// void system_set_colors(int first, int count, unsigned char * data);
 
 /**
  * Transform a 24 bit RGB color into the system format.

@@ -50,30 +50,36 @@ PLAYER_COLOR_VAL message_t::node::get_player_color(karte_t *welt) const
 }
 
 
-message_t::message_t(karte_t *w)
+message_t::message_t(karte_t *welt)
 {
-	welt = w;
+	this->welt = welt;
 	ticker_flags = 0xFF7F;	// everything on the ticker only
 	win_flags = 0;
 	auto_win_flags = 0;
 	ignore_flags = 0;
-	if(w) {
+	
+	if(welt)
+	{
 		win_flags = 256+8;
 		auto_win_flags = 128+512;
 	}
+	
+	list = new slist_tpl<node *> ();
 }
 
 
 message_t::~message_t()
 {
 	clear();
+	delete list;
 }
 
 
 void message_t::clear()
 {
-	while (!list.empty()) {
-		delete list.remove_first();
+	while (!list->empty()) 
+	{
+		delete list->remove_first();
 	}
 	ticker::clear_ticker();
 }
@@ -127,7 +133,7 @@ DBG_MESSAGE("message_t::add_msg()","%40s (at %i,%i)", text, pos.x, pos.y );
 	if(  what == traffic_jams  ) {
 		sint32 now = welt->get_current_month()-2;
 		uint32 i = 0;
-		for(  slist_tpl<node *>::const_iterator iter = list.begin(), end = list.end();  iter!=end  &&  i<20; ++iter  ) {
+		for(  slist_tpl<node *>::const_iterator iter = list->begin(), end = list->end();  iter!=end  &&  i<20; ++iter  ) {
 			const node& n = *(*iter);
 			if (n.time >= now &&
 					strcmp(n.msg, text) == 0 &&
@@ -157,8 +163,8 @@ DBG_MESSAGE("message_t::add_msg()","%40s (at %i,%i)", text, pos.x, pos.y );
 	}
 
 	// insert at the top
-	list.insert(n);
-	char* p = list.front()->msg;
+	list->insert(n);
+	char* p = list->front()->msg;
 
 	// if local flag is set and we are not current player, do not open windows
 	if(  (color & PLAYER_FLAG) != 0  &&  welt->get_active_player_nr() != (color&(~PLAYER_FLAG))  ) {
@@ -199,7 +205,7 @@ DBG_MESSAGE("message_t::add_msg()","%40s (at %i,%i)", text, pos.x, pos.y );
 
 void message_t::rotate90( sint16 size_w )
 {
-	for(  slist_tpl<message_t::node *>::iterator iter = list.begin(), end = list.end();  iter!=end; ++iter  ) {
+	for(  slist_tpl<message_t::node *>::iterator iter = list->begin(), end = list->end();  iter!=end; ++iter  ) {
 		(*iter)->pos.rotate90( size_w );
 	}
 
@@ -213,13 +219,13 @@ void message_t::rdwr( loadsave_t *file )
 		if(  umgebung_t::server  ) {
 			// on server: do not save local messages
 			msg_count = 0;
-			for(  slist_tpl<node *>::const_iterator iter=list.begin(), end=list.end();  iter!=end  &&  msg_count<2000;  ++iter  ) {
+			for(  slist_tpl<node *>::const_iterator iter=list->begin(), end=list->end();  iter!=end  &&  msg_count<2000;  ++iter  ) {
 				if(  ((*iter)->type & local_flag) == 0  ) {
 					msg_count ++;
 				}
 			}
 			file->rdwr_short( msg_count );
-			for(  slist_tpl<node *>::const_iterator iter=list.begin(), end=list.end();  iter!=end  &&  msg_count>0;  ++iter  ) {
+			for(  slist_tpl<node *>::const_iterator iter=list->begin(), end=list->end();  iter!=end  &&  msg_count>0;  ++iter  ) {
 				if(  ((*iter)->type & local_flag) == 0  ) {
 					(*iter)->rdwr(file);
 					msg_count --;
@@ -228,9 +234,9 @@ void message_t::rdwr( loadsave_t *file )
 			assert( msg_count == 0 );
 		}
 		else {
-			msg_count = min( 2000u, list.get_count() );
+			msg_count = min( 2000u, list->get_count() );
 			file->rdwr_short( msg_count );
-			for(  slist_tpl<node *>::const_iterator iter=list.begin(), end=list.end();  iter!=end  &&  msg_count>0;  ++iter, --msg_count  ) {
+			for(  slist_tpl<node *>::const_iterator iter=list->begin(), end=list->end();  iter!=end  &&  msg_count>0;  ++iter, --msg_count  ) {
 				(*iter)->rdwr(file);
 			}
 		}
@@ -242,7 +248,7 @@ void message_t::rdwr( loadsave_t *file )
 		while(  (msg_count--)>0  ) {
 			node *n = new node();
 			n->rdwr(file);
-			list.append(n);
+			list->append(n);
 		}
 	}
 }

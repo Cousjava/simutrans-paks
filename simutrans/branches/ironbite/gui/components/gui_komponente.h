@@ -152,7 +152,7 @@ public:
 	 * other derivates like scrolled list of tabs want to
 	 * return a component out of their selection
 	 */
-	virtual gui_component_t *get_focus() { return is_focusable() ? (gui_component_t *)this : NULL; }
+	virtual gui_component_t *get_focus() { return is_focusable() ? this : 0; }
 
 	/**
 	 * Get the relative position of the focused component.

@@ -317,6 +317,7 @@ unsigned int system_get_color(unsigned int r, unsigned int g, unsigned int b)
 }
 
 
+<<<<<<< .mine
 void system_set_colors(int first, int count, unsigned char* data)
 {
 	PALETTE p;
@@ -332,6 +333,8 @@ void system_set_colors(int first, int count, unsigned char* data)
 }
 
 
+=======
+>>>>>>> .r5256
 void system_prepare_flush()
 {
 	return;

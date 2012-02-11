@@ -45,13 +45,7 @@
 #include "simdebug.h"
 #include "macros.h"
 
-#if COLOUR_DEPTH == 8
-typedef unsigned char PIXVAL;
-#elif COLOUR_DEPTH == 16
 typedef unsigned short PIXVAL;
-#else
-#	error unknown COLOUR_DEPTH
-#endif
 
 static HWND hwnd;
 static bool is_fullscreen = false;
@@ -127,11 +121,7 @@ int system_open(int const w, int const h, int fullscreen)
 		MEMZERO(settings);
 		settings.dmSize = sizeof(settings);
 		settings.dmFields = DM_BITSPERPEL | DM_PELSWIDTH | DM_PELSHEIGHT;
-#if COLOUR_DEPTH != 16 || defined USE_16BIT_DIB
 		settings.dmBitsPerPel = COLOUR_DEPTH;
-#else
-		settings.dmBitsPerPel = 16;
-#endif
 		settings.dmPelsWidth  = w;
 		settings.dmPelsHeight = h;
 		settings.dmDisplayFrequency = 0;
@@ -155,13 +145,7 @@ int system_open(int const w, int const h, int fullscreen)
 	WindowSize.right  = w;
 	WindowSize.bottom = h;
 
-#if COLOUR_DEPTH == 8
-	DWORD const clr = 224 + 15;
-	AllDib = MALLOCF(BITMAPINFO, bmiColors, 256);
-#else
-	DWORD const clr = 0;
 	AllDib = MALLOCF(BITMAPINFO, bmiColors, 3);
-#endif
 	BITMAPINFOHEADER& header = AllDib->bmiHeader;
 	header.biSize          = sizeof(BITMAPINFOHEADER);
 	header.biWidth         = w;
@@ -172,20 +156,18 @@ int system_open(int const w, int const h, int fullscreen)
 	header.biSizeImage     = 0;
 	header.biXPelsPerMeter = 0;
 	header.biYPelsPerMeter = 0;
-	header.biClrUsed       = clr;
-	header.biClrImportant  = clr;
-#if COLOUR_DEPTH == 16
+	header.biClrUsed       = 0;
+	header.biClrImportant  = 0;
 	DWORD* const masks = (DWORD*)AllDib->bmiColors;
-#	ifdef USE_16BIT_DIB
+#ifdef USE_16BIT_DIB
 	header.biCompression   = BI_BITFIELDS;
 	masks[0]               = 0x0000F800;
 	masks[1]               = 0x000007E0;
 	masks[2]               = 0x0000001F;
-#	else
+#else
 	masks[0]               = 0x01;
 	masks[1]               = 0x02;
 	masks[2]               = 0x03;
-#	endif
 #endif
 
 	return MaxSize.right;
@@ -261,6 +243,7 @@ unsigned int system_get_color(unsigned int r, unsigned int g, unsigned int b)
 }
 
 
+// unused ?
 void system_set_colors(int first, int count, unsigned char* data)
 {
 	// set color in DibHeader ...
@@ -358,13 +341,12 @@ void system_set_pointer(int loading)
  */
 int system_screenshot(const char *filename)
 {
-#if COLOUR_DEPTH != 16 || defined USE_16BIT_DIB
+#if defined USE_16BIT_DIB
 	int const bpp = COLOUR_DEPTH;
 #else
 	int const bpp = 15;
 #endif
 	if (!system_screenshot_png(filename, display_get_width() - 1, WindowSize.bottom + 1, AllDib->bmiHeader.biWidth, (unsigned short*)AllDibData, bpp)) {
-#if COLOUR_DEPTH != 8
 		// not successful => save as BMP
 		FILE *fBmp = fopen(filename, "wb");
 		if (fBmp) {
@@ -394,7 +376,6 @@ int system_screenshot(const char *filename)
 		else {
 			return -1;
 		}
-#endif
 	}
 	return 0;
 }
@@ -434,7 +415,7 @@ LRESULT WINAPI WindowProc(HWND this_hwnd, UINT msg, WPARAM wParam, LPARAM lParam
 					MEMZERO(settings);
 					settings.dmSize = sizeof(settings);
 					settings.dmFields = DM_BITSPERPEL | DM_PELSWIDTH | DM_PELSHEIGHT;
-#if COLOUR_DEPTH != 16 || defined USE_16BIT_DIB
+#if defined USE_16BIT_DIB
 					settings.dmBitsPerPel = COLOUR_DEPTH;
 #else
 					settings.dmBitsPerPel = 15;
