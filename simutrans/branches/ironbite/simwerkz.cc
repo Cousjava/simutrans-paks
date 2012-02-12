@@ -1633,6 +1633,9 @@ const weg_besch_t *wkz_wegebau_t::get_besch( uint16 timeline_year_month, bool re
 	return besch;
 }
 
+bool wkz_wegebau_t::is_move_network_save(spieler_t* const sp) const OVERRIDE { return two_click_werkzeug_t::is_move_network_save(sp) && (besch && (besch->get_styp() != 1 || besch->get_wtyp() == air_wt)); }
+
+
 image_id wkz_wegebau_t::get_icon(spieler_t *) const
 {
 	const weg_besch_t *besch = wegbauer_t::get_besch(default_param,0);
@@ -2684,7 +2687,7 @@ DBG_MESSAGE("wkz_station_building_aux()", "building mail office/station building
 				koord offset(((j&1)^1)*(testsize.x-1),((j>>1)&1)*(testsize.y-1));
 				if(welt->ist_platz_frei(pos-offset, testsize.x, testsize.y, NULL, besch->get_allowed_climate_bits())) {
 					// first we must check over/under halt
-					halthandle_t last_halt = halthandle_t();
+					halthandle_t last_halt;
 					for(  sint16 x=0;  x<testsize.x;  x++  ) {
 						for(  sint16 y=0;  y<testsize.y;  y++  ) {
 							const planquadrat_t *pl = welt->lookup( pos-offset+koord(x,y) );
@@ -2909,7 +2912,7 @@ const char *wkz_station_t::wkz_station_dock_aux(karte_t *welt, spieler_t *sp, ko
 	int len = besch->get_groesse().y-1;
 	koord dx = koord((hang_t::typ)hang);
 	koord last_pos = pos - dx*len;
-	halthandle_t halt = halthandle_t();
+	halthandle_t halt;
 
 	// check, if we can build here ...
 	if(!hang_t::ist_einfach(hang)) {
@@ -3719,11 +3722,17 @@ const char *wkz_roadsign_t::do_work( karte_t *welt, spieler_t *sp, const koord3d
 	// mark tiles to calculate positions of signals
 	mark_tiles(welt, sp, start, end);
 	// only search the marked tiles
-	for(  slist_tpl<zeiger_t*>::const_iterator i=marked[sp->get_player_nr()].begin(); i!=marked[sp->get_player_nr()].end();  ++i  ) {
-		koord3d pos = (*i)->get_pos();
+	
+	slist_iterator_tpl <zeiger_t *> iter (marked[sp->get_player_nr()]);
+
+	while(iter.next())
+	{
+		zeiger_t * zeiger = iter.get_current();
+		
+		koord3d pos = zeiger->get_pos();
 		grund_t *gr = welt->lookup(pos);
 		weg_t *weg = gr->get_weg(besch->get_wtyp());
-		if( (*i)->get_richtung()) {
+		if( zeiger->get_richtung()) {
 			// try to place signal
 			const char* error_text =  place_sign_intern( welt, sp, gr );
 			if(  error_text  ) {
@@ -3743,7 +3752,7 @@ const char *wkz_roadsign_t::do_work( karte_t *welt, spieler_t *sp, const koord3d
 			roadsign_t* rs = gr->find<signal_t>();
 			if(rs == NULL) rs = gr->find<roadsign_t>();
 			assert(rs);
-			rs->set_dir( (*i)->get_richtung() );
+			rs->set_dir( zeiger->get_richtung() );
 		}
 		else {
 			// Place no signal -> remove existing signal

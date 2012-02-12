@@ -23,6 +23,7 @@
 #include "../bauer/wegbauer.h"
 
 #include "../besch/haus_besch.h"
+#include "../besch/weg_besch.h"
 
 #include "../dataobj/loadsave.h"
 

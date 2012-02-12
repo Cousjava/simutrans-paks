@@ -3,13 +3,14 @@
 
 #include "../../simimg.h"
 
-#include "../../besch/skin_besch.h"
 
 #include "gui_action_creator.h"
 #include "gui_komponente.h"
 #include "gui_button.h"
 
 class bild_besch_t;
+class skin_besch_t;
+template <class T> class slist_tpl;
 
 /**
  * Eine Klasse f�r Registerkartenartige Aufteilung von gui_component_t
@@ -35,7 +36,7 @@ private:
 		sint16 width;
 	};
 
-	slist_tpl<tab> tabs;
+	slist_tpl<tab> * tabs;
 	int active_tab, offset_tab;
 
 	koord required_groesse;
@@ -45,6 +46,7 @@ public:
 	enum { HEADER_VSIZE = 18};
 
 	gui_tab_panel_t();
+	virtual ~gui_tab_panel_t();
 
 	/**
 	 * F�gt eine neue Registerkarte hinzu.
@@ -60,17 +62,12 @@ public:
 	 */
 	gui_component_t* get_aktives_tab() const { return get_tab(active_tab); }
 
-	gui_component_t* get_tab( uint8 i ) const { return i < tabs.get_count() ? tabs.at(i).component : NULL; }
+	gui_component_t* get_tab( uint8 i ) const;
 
-	int get_active_tab_index() const { return min((int)tabs.get_count()-1,active_tab); }
-	void set_active_tab_index( int i ) { active_tab = min((int)tabs.get_count()-1,i); }
+	int get_active_tab_index() const;
+	void set_active_tab_index( int i );
 
-	/**
-	 * Events werden hiermit an die GUI-Komponenten
-	 * gemeldet
-	 * @author Hj. Malthaner
-	 */
-	bool infowin_event(const event_t *ev);
+	bool infowin_event(event_t const*) OVERRIDE;
 
 	/**
 	 * Zeichnet die Registerkarten
@@ -83,7 +80,7 @@ public:
 	 * @author Volker Meyer
 	 * @date  18.06.2003
 	 */
-	void set_groesse(koord groesse);
+	void set_groesse(koord groesse) OVERRIDE;
 
 	/*
 	 * Remove all tabs.
@@ -97,28 +94,24 @@ public:
 	 * @author Gerd Wachsmuth
 	 * @date  08.05.2009
 	 */
-	uint32 get_count () const { return tabs.get_count(); }
+	uint32 get_count () const;
 
-	/**
-	 * This method is called if an action is triggered:
-	 * currently only left/right button
-	 */
-	bool action_triggered(gui_action_creator_t *komp, value_t p);
+	bool action_triggered(gui_action_creator_t*, value_t) OVERRIDE;
 
 	/**
 	 * Returns true if the hosted component of the active tab is focusable
 	 * @author Knightly
 	 */
-	virtual bool is_focusable() { return get_aktives_tab()->is_focusable(); }
+	virtual bool is_focusable();
 
-	gui_component_t *get_focus() { return get_aktives_tab()->get_focus(); }
+	gui_component_t *get_focus();
 
 	/**
 	 * Get the relative position of the focused component.
 	 * Used for auto-scrolling inside a scroll pane.
 	 * @author Knightly
 	 */
-	virtual koord get_focus_pos() { return pos + get_aktives_tab()->get_focus_pos(); }
+	virtual koord get_focus_pos();
 };
 
 #endif

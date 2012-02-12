@@ -573,11 +573,7 @@ public:
 	* @author DarioK
 	* @see get_weg
 	*/
-	uint8 get_styp(waytype_t typ) const
-	{
-		weg_t *weg = get_weg(typ);
-		return (weg) ? weg->get_besch()->get_styp() : 0;
-	}
+	uint8 get_styp(waytype_t typ) const;
 
 	/**
 	* Ermittelt die Richtungsbits furr den weg vom Typ 'typ'.
@@ -622,7 +618,7 @@ public:
 	* Strassenbahnschienen duerfen nicht als Kreuzung erkannt werden!
 	* @author V. Meyer, dariok
 	*/
-	inline bool ist_uebergang() const { return (flags&has_way2)!=0  &&  ((weg_t *)dinge.bei(1))->get_besch()->get_styp()!=7; }
+	bool ist_uebergang() const;
 
 	/**
 	* returns the vehcile of a convoi (if there)

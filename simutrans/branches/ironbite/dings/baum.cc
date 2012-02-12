@@ -45,6 +45,30 @@ PLAYER_COLOR_VAL tree_t::outline_color = 0;
 static image_id baumtype_to_bild[256][5*5];
 
 
+// static for administration
+static stringhashtable_tpl<const baum_besch_t *> besch_names;
+
+
+/*
+ * Diese Tabelle ermoeglicht das Auffinden dient zur Auswahl eines Baumtypen
+ */
+static vector_tpl<const baum_besch_t *> tree_typen;
+
+// index vector into baumtypen, accessible per climate
+static vector_tpl<weighted_vector_tpl<uint32> *> tree_typen_per_climate;
+
+/*
+ * Diese Tabelle ermoeglicht das Auffinden einer Beschreibung durch ihren Namen
+ */
+const vector_tpl<const baum_besch_t *> * tree_t::get_all_besch() { return &tree_typen; }
+
+const baum_besch_t *tree_t::find_tree( const char *tree_name ) { return tree_typen.empty() ? NULL : besch_names.get(tree_name); }
+
+const baum_besch_t * tree_t::random_tree_for_climate(climate cl) { uint16 b = random_tree_for_climate_intern(cl);  return b!=0xFFFF ? tree_typen[b] : NULL; }
+
+int tree_t::get_anzahl_besch() { return tree_typen.get_count(); }
+	
+
 // distributes trees on a map
 void tree_t::distribute_trees(karte_t *welt, int dichte)
 {
@@ -71,25 +95,14 @@ DBG_MESSAGE("verteile_baeume()","creating %i forest",c_forest_count);
 
 /*************************** first the static function for the tree_t and baum_besch_t administration ***************/
 
-/*
- * Diese Tabelle ermoeglicht das Auffinden dient zur Auswahl eines Baumtypen
- */
-vector_tpl<const baum_besch_t *> tree_t::tree_typen(0);
 
-// index vector into baumtypen, accessible per climate
-vector_tpl<weighted_vector_tpl<uint32> > tree_t::tree_typen_per_climate(MAX_CLIMATES);
-
-/*
- * Diese Tabelle ermoeglicht das Auffinden einer Beschreibung durch ihren Namen
- */
-stringhashtable_tpl<const baum_besch_t *> tree_t::besch_names;
 
 
 // total number of trees
 // the same for a certain climate
 int tree_t::get_anzahl_besch(climate cl)
 {
-	return tree_typen_per_climate[cl].get_count();
+	return tree_typen_per_climate[cl]->get_count();
 }
 
 
@@ -280,7 +293,7 @@ bool tree_t::alles_geladen()
 		}
 		// fill the vector with zeros
 		for (uint8 j=0; j<MAX_CLIMATES; j++) {
-			tree_typen_per_climate.append( weighted_vector_tpl<uint32>() );
+			tree_typen_per_climate.append( new weighted_vector_tpl<uint32>() );
 		}
 		// clear cache
 		memset( baumtype_to_bild, -1, lengthof(baumtype_to_bild) );
@@ -289,7 +302,7 @@ bool tree_t::alles_geladen()
 			// add this tree to climates
 			for(  uint8 j=0;  j<MAX_CLIMATES;  j++  ) {
 				if(  tree_typen[typ]->is_allowed_climate((climate)j)  ) {
-					tree_typen_per_climate[j].append(typ, tree_typen[typ]->get_distribution_weight(), /*extend weighted vector if necess by*/ 4 );
+					tree_typen_per_climate[j]->append(typ, tree_typen[typ]->get_distribution_weight(), /*extend weighted vector if necess by*/ 4 );
 				}
 			}
 			// create cache images
@@ -454,8 +467,8 @@ uint32 tree_t::get_age() const
 uint16 tree_t::random_tree_for_climate_intern(climate cl)
 {
 	// now weight their distribution
-	weighted_vector_tpl<uint32> const& t = tree_typen_per_climate[cl];
-	return t.empty() ? 0xFFFF : pick_any_weighted(t);
+	weighted_vector_tpl<uint32> const * t = tree_typen_per_climate[cl];
+	return t->empty() ? 0xFFFF : pick_any_weighted(t);
 }
 
 
@@ -649,6 +662,11 @@ void tree_t::entferne(spieler_t *sp)
 {
 	spieler_t::accounting(sp, welt->get_settings().cst_remove_tree, get_pos().get_2d(), COST_CONSTRUCTION);
 	mark_image_dirty( get_bild(), 0 );
+}
+
+const baum_besch_t* tree_t::get_besch() const 
+{
+	return tree_typen[baumtype]; 
 }
 
 

@@ -985,8 +985,12 @@ void haltestelle_t::verbinde_fabriken()
 	fab_list.clear();
 
 	// then reconnect
-	for (slist_tpl<tile_t>::const_iterator i = tiles.begin(), end = tiles.end(); i != end; ++i) {
-		grund_t* gb = i->grund;
+	slist_iterator_tpl <tile_t> iter (tiles);
+	while(iter.next())
+	{
+		const tile_t & tile = iter.get_current();
+		
+		grund_t* gb = tile.grund;
 		koord p = gb->get_pos().get_2d();
 
 		int const cov = welt->get_settings().get_station_coverage();
@@ -1979,8 +1983,12 @@ dbg->warning("haltestelle_t::liefere_an()","%d %s delivered to %s have no longer
 			// arriving passenger may create pedestrians
 			if (welt->get_settings().get_show_pax()) {
 				int menge = ware.menge;
-				for (slist_tpl<tile_t>::const_iterator i = tiles.begin(), end = tiles.end(); menge > 0 && i != end; ++i) {
-					grund_t* gr = i->grund;
+
+				slist_iterator_tpl <tile_t> iter (tiles);
+				while(iter.next())
+				{
+					const tile_t & tile = iter.get_current();
+					grund_t* gr = tile.grund;
 					menge = erzeuge_fussgaenger(welt, gr->get_pos(), menge);
 				}
 				INT_CHECK("simhalt 938");
@@ -2147,8 +2155,12 @@ void haltestelle_t::make_public_and_join( spieler_t *sp )
 	// only something to do if not yet owner ...
 	if(besitzer_p!=public_owner) {
 		// now recalculate maintenance
-		for(slist_tpl<tile_t>::const_iterator i = tiles.begin(), end = tiles.end(); i != end; ++i) {
-			grund_t* gr = i->grund;
+		
+		slist_iterator_tpl <tile_t> iter (tiles);
+		while(iter.next())
+		{
+			const tile_t & tile = iter.get_current();
+			grund_t* gr = tile.grund;
 			gebaeude_t* gb = gr->find<gebaeude_t>();
 			if(gb) {
 				spieler_t *gb_sp=gb->get_besitzer();
@@ -2271,8 +2283,12 @@ void haltestelle_t::recalc_station_type()
 	enables &= CROWDED;	// clear flags
 
 	// iterate over all tiles
-	for (slist_tpl<tile_t>::const_iterator i = tiles.begin(), end = tiles.end(); i != end; ++i) {
-		grund_t* gr = i->grund;
+	slist_iterator_tpl <tile_t> iter (tiles);
+	while(iter.next())
+	{
+		const tile_t & tile = iter.get_current();
+
+		grund_t* gr = tile.grund;
 		const gebaeude_t* gb = gr->find<gebaeude_t>();
 		const haus_besch_t *besch=gb?gb->get_tile()->get_besch():NULL;
 
@@ -2461,8 +2477,11 @@ void haltestelle_t::rdwr(loadsave_t *file)
 			k.rdwr( file );
 		}
 	} else {
-		for (slist_tpl<tile_t>::const_iterator i = tiles.begin(), end = tiles.end(); i != end; ++i) {
-			k = i->grund->get_pos();
+		slist_iterator_tpl <tile_t> iter (tiles);
+		while(iter.next())
+		{
+			const tile_t & tile = iter.get_current();
+			k = tile.grund->get_pos();
 			k.rdwr( file );
 		}
 		k = koord3d::invalid;

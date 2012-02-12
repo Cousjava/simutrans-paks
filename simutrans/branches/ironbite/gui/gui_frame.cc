@@ -61,6 +61,59 @@ void gui_frame_t::set_window_size(koord groesse)
 	}
 }
 
+/**
+ * Manche Fenster haben einen Hilfetext assoziiert.
+ * @return den Dateinamen f�r die Hilfe, oder NULL
+ * @author Hj. Malthaner
+ */
+const char * gui_frame_t::get_help_file() const 
+{
+	return NULL;
+}
+
+/**
+ * Does this window need a min size button in the title bar?
+ * @return true if such a button is needed
+ * @author Hj. Malthaner
+ */
+bool gui_frame_t::has_min_sizer() const 
+{
+	return false;
+}
+
+/**
+ * Does this window need a next button in the title bar?
+ * @return true if such a button is needed
+ * @author Volker Meyer
+ */
+bool gui_frame_t::has_next() const 
+{
+	return false;
+}
+
+/**
+ * Does this window need a prev button in the title bar?
+ * @return true if such a button is needed
+ * @author Volker Meyer
+ */
+bool gui_frame_t::has_prev() const 
+{
+	return has_next();
+}
+
+bool gui_frame_t::has_sticky() const 
+{ 
+	return true; 
+}
+
+/**
+ * if false, title and all gadgets will be not drawn
+ */
+bool gui_frame_t::has_title() const 
+{
+	return true; 
+}
+
 
 /**
  * gibt farbinformationen fuer Fenstertitel, -r�nder und -k�rper

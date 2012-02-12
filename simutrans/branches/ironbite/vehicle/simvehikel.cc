@@ -51,6 +51,7 @@
 
 #include "../gui/karte.h"
 
+#include "../besch/weg_besch.h"
 #include "../besch/stadtauto_besch.h"
 #include "../besch/ware_besch.h"
 #include "../besch/skin_besch.h"

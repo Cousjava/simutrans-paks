@@ -26,8 +26,8 @@ private:
 	button_t bt_new;
 	button_t bt_quit;
 
+	gui_divider_t seperator_file;
 	gui_divider_t seperator;
-	gui_label_t txt;
 
 	karte_t *welt;
 
@@ -42,15 +42,7 @@ public:
 	 */
 	const char * get_help_file() const {return "options.txt";}
 
-	/**
-	 * This method is called if an action is triggered
-	 * @author Hj. Malthaner
-	 *
-	 * Returns true, if action is done and no more
-	 * components should be triggered.
-	 * V.Meyer
-	 */
-	bool action_triggered( gui_action_creator_t *komp, value_t extra);
+	bool action_triggered(gui_action_creator_t*, value_t) OVERRIDE;
 };
 
 #endif

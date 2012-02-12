@@ -63,7 +63,7 @@ public:
 	 * obwohl groesse public ist.
 	 * @author Hj. Malthaner
 	 */
-	void set_groesse(koord groesse);
+	void set_groesse(koord groesse) OVERRIDE;
 
 	void set_scroll_amount(const sint32 sa) { knob_scroll_amount = sa; }
 	void set_scroll_discrete(const bool sd) { knob_scroll_discrete = sd; }
@@ -77,7 +77,7 @@ public:
 
 	void set_knob_offset(sint32 v) { knob_offset = v; reposition_buttons(); }
 
-	bool infowin_event(const event_t *ev);
+	bool infowin_event(event_t const*) OVERRIDE;
 
 	void zeichnen(koord pos);
 };

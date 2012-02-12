@@ -10,14 +10,14 @@
 #include "gui_scrolled_list.h"
 
 #include "../../simgraph.h"
-#include "../../simcolor.h"
+// #include "../../simcolor.h"
 #include "../../simwin.h"
-
+#include "../../tpl/slist_tpl.h"
 
 
 int gui_scrolled_list_t::total_vertical_size() const
 {
-	return item_list.get_count() * LINESPACE + 2;
+	return item_list->get_count() * LINESPACE + 2;
 }
 
 
@@ -32,6 +32,9 @@ gui_scrolled_list_t::gui_scrolled_list_t(enum type type) :
 	pos = koord(0,0);
 	offset = 0;
 	border = 0;
+	
+	item_list = new slist_tpl<gui_scrolled_list_t::scrollitem_t *> ();
+	
 	if (type==select) {
 		border = 2;
 	}
@@ -42,6 +45,22 @@ gui_scrolled_list_t::gui_scrolled_list_t(enum type type) :
 	sb.set_knob_offset(0);
 
 	clear_elements();
+}
+
+gui_scrolled_list_t::~gui_scrolled_list_t() 
+{
+	clear_elements(); 
+	delete item_list;
+}
+
+sint32 gui_scrolled_list_t::get_count() const 
+{
+	return item_list->get_count(); 
+}
+
+gui_scrolled_list_t::scrollitem_t * gui_scrolled_list_t::get_element(sint32 i) const 
+{
+	return ((uint32)i<item_list->get_count()) ? item_list->at(i) : NULL; 
 }
 
 
@@ -58,7 +77,7 @@ bool gui_scrolled_list_t::action_triggered( gui_action_creator_t * /* comp */, v
 // set the scrollbar offset, so that the selected itm is visible
 void gui_scrolled_list_t::show_selection(int s)
 {
-	if((unsigned)s<item_list.get_count()) {
+	if((unsigned)s<item_list->get_count()) {
 		selection = s;
 DBG_MESSAGE("gui_scrolled_list_t::show_selection()","sel=%d, offset=%d, groesse.y=%d",s,offset,groesse.y);
 		s *= LINESPACE;
@@ -77,8 +96,8 @@ DBG_MESSAGE("gui_scrolled_list_t::show_selection()","sel=%d, offset=%d, groesse.
 
 void gui_scrolled_list_t::clear_elements()
 {
-	while(  !item_list.empty()  ) {
-		delete item_list.remove_first();
+	while(  !item_list->empty()  ) {
+		delete item_list->remove_first();
 	}
 	adjust_scrollbar();
 }
@@ -86,7 +105,7 @@ void gui_scrolled_list_t::clear_elements()
 
 void gui_scrolled_list_t::append_element( scrollitem_t *item )
 {
-	item_list.append( item );
+	item_list->append( item );
 	adjust_scrollbar();
 }
 
@@ -160,7 +179,7 @@ bool gui_scrolled_list_t::infowin_event(const event_t *ev)
 					int new_selection = (y-(border/2)-2+offset);
 					if(new_selection>=0) {
 						new_selection/=LINESPACE;
-						if((unsigned)new_selection>=item_list.get_count()) {
+						if((unsigned)new_selection>=item_list->get_count()) {
 							new_selection = -1;
 						}
 						DBG_MESSAGE("gui_scrolled_list_t::infowin_event()","selected %i",selection);
@@ -174,7 +193,7 @@ bool gui_scrolled_list_t::infowin_event(const event_t *ev)
 
 	// got to next/previous choice
 	if(  ev->ev_class == EVENT_KEYBOARD  &&  (ev->ev_code==SIM_KEY_UP  ||  ev->ev_code==SIM_KEY_DOWN)  ) {
-		int new_selection = (ev->ev_code==SIM_KEY_DOWN) ? min(item_list.get_count()-1, selection+1) : max(0, selection-1);
+		int new_selection = (ev->ev_code==SIM_KEY_DOWN) ? min(item_list->get_count()-1, selection+1) : max(0, selection-1);
 		selection = new_selection;
 		show_selection(selection);
 		call_listeners((long)new_selection);
@@ -231,7 +250,7 @@ void gui_scrolled_list_t::zeichnen(koord pos)
 		ok = iter.next();
 
 		if(  !item->is_valid()  ) {
-			item_list.remove(item);
+			item_list->remove(item);
 			delete item;
 			if(i == selection) {
 				selection = -1;

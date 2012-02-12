@@ -158,35 +158,35 @@ public:
 	 * @return den Dateinamen f�r die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	virtual const char * get_help_file() const {return NULL;}
+	virtual const char * get_help_file() const;
 
 	/**
 	 * Does this window need a min size button in the title bar?
 	 * @return true if such a button is needed
 	 * @author Hj. Malthaner
 	 */
-	virtual bool has_min_sizer() const {return false;}
+	virtual bool has_min_sizer() const;
 
 	/**
 	 * Does this window need a next button in the title bar?
 	 * @return true if such a button is needed
 	 * @author Volker Meyer
 	 */
-	virtual bool has_next() const {return false;}
+	virtual bool has_next() const;
 
 	/**
 	 * Does this window need a prev button in the title bar?
 	 * @return true if such a button is needed
 	 * @author Volker Meyer
 	 */
-	virtual bool has_prev() const {return has_next();}
+	virtual bool has_prev() const;
 
-	virtual bool has_sticky() const { return true; }
+	virtual bool has_sticky() const;
 
 	/**
 	 * if false, title and all gadgets will be not drawn
 	 */
-	virtual bool has_title() const { return true; }
+	virtual bool has_title() const;
 
 	/**
 	 * Position of a connected thing on the map
@@ -209,6 +209,7 @@ public:
 
 	/**
 	 * Check if position is inside this window
+	 * @return true, if inside window area.
 	 * @author Hj. Malthaner
 	 */
 	virtual bool getroffen(int x, int y);

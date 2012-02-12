@@ -8,9 +8,9 @@
 #include "gui_tab_panel.h"
 #include "../../simevent.h"
 #include "../../simgraph.h"
+#include "../../tpl/slist_tpl.h"
 #include "../../simcolor.h"
 #include "../../simwin.h"
-
 #include "../../besch/skin_besch.h"
 
 #define IMG_WIDTH 20
@@ -18,6 +18,7 @@
 gui_tab_panel_t::gui_tab_panel_t() :
 	required_groesse( 8, HEADER_VSIZE )
 {
+	tabs = new slist_tpl<tab> ();
 	active_tab = 0;
 	offset_tab = 0;
 	left.init( button_t::arrowleft, NULL, koord(0,0) );
@@ -26,23 +27,69 @@ gui_tab_panel_t::gui_tab_panel_t() :
 	right.add_listener( this );
 }
 
+gui_tab_panel_t::~gui_tab_panel_t()
+{
+	delete tabs;
+}
 
 
 void gui_tab_panel_t::add_tab(gui_component_t *c, const char *name, const skin_besch_t *besch, const char *tooltip )
 {
-	tabs.append( tab(c, besch?NULL:name, besch?besch->get_bild(0):NULL, tooltip) );
+	tabs->append( tab(c, besch?NULL:name, besch?besch->get_bild(0):NULL, tooltip) );
 	set_groesse( get_groesse() );
 }
 
+gui_component_t * gui_tab_panel_t::get_tab( uint8 i ) const 
+{ 
+	return i < tabs->get_count() ? tabs->at(i).component : NULL; 
+}
+
+int gui_tab_panel_t::get_active_tab_index() const 
+{
+	return min((int)tabs->get_count()-1,active_tab); 
+}
+
+void gui_tab_panel_t::set_active_tab_index( int i ) 
+{
+	active_tab = min((int)tabs->get_count()-1,i); 
+}
 
 
+uint32 gui_tab_panel_t::get_count () const 
+{
+	return tabs->get_count(); 
+}
+
+/**
+ * Returns true if the hosted component of the active tab is focusable
+ * @author Knightly
+ */
+bool gui_tab_panel_t::is_focusable() 
+{
+	return get_aktives_tab()->is_focusable(); 
+}
+
+gui_component_t * gui_tab_panel_t::get_focus() 
+{
+	return get_aktives_tab()->get_focus(); 
+}
+
+/**
+ * Get the relative position of the focused component.
+ * Used for auto-scrolling inside a scroll pane.
+ * @author Knightly
+ */
+koord gui_tab_panel_t::get_focus_pos() 
+{
+	return pos + get_aktives_tab()->get_focus_pos(); 
+}
 
 void gui_tab_panel_t::set_groesse(koord gr)
 {
 	gui_component_t::set_groesse(gr);
 
 	required_groesse = koord( 8, HEADER_VSIZE );
-	for (slist_tpl<tab>::iterator i = tabs.begin(), end = tabs.end(); i != end; ++i) {
+	for (slist_tpl<tab>::iterator i = tabs->begin(), end = tabs->end(); i != end; ++i) {
 		i->x_offset = required_groesse.x-4;
 		i->width = 8 + (i->title ? proportional_string_width( i->title ) : IMG_WIDTH);
 		required_groesse.x += i->width;
@@ -60,7 +107,7 @@ void gui_tab_panel_t::set_groesse(koord gr)
 bool gui_tab_panel_t::action_triggered(gui_action_creator_t *komp, value_t)
 {
 	if(  komp==&right  ) {
-		offset_tab = min( offset_tab+1, tabs.get_count()-1 );
+		offset_tab = min( offset_tab+1, tabs->get_count()-1 );
 	}
 	else if(  komp==&left  ) {
 		offset_tab = max( offset_tab-1, 0 );
@@ -89,16 +136,25 @@ bool gui_tab_panel_t::infowin_event(const event_t *ev)
 		// Reiter getroffen
 		int text_x = required_groesse.x>groesse.x ? 14 : 4;
 		int k=0;
-		for(  slist_tpl<tab>::const_iterator i = tabs.begin(), end = tabs.end();  i != end;  ++i, ++k  ) {
-			if(  k>=offset_tab  ) {
-				if(  text_x < ev->mx  &&  text_x+i->width > ev->mx  ) {
+
+		slist_iterator_tpl <tab> iter (tabs);
+
+		while(iter.next()) 
+		{
+			const tab & i = iter.get_current();
+			
+			if(  k>=offset_tab  ) 
+			{
+				if(  text_x < ev->mx  &&  text_x+i.width > ev->mx  ) 
+				{
 					// either tooltip or change
 					active_tab = k;
 					call_listeners((long)active_tab);
 					return true;
 				}
-				text_x += i->width;
+				text_x += i.width;
 			}
+			++k;
 		}
 		return true;
 	}
@@ -108,13 +164,13 @@ bool gui_tab_panel_t::infowin_event(const event_t *ev)
 		if(  ev->ev_code==SIM_KEY_PGUP  ) {
 			// Ctrl-PgUp -> go to the previous tab
 			const int next_tab_idx = active_tab - 1;
-			active_tab = next_tab_idx<0 ? max(0, (int)tabs.get_count()-1) : next_tab_idx;
+			active_tab = next_tab_idx<0 ? max(0, (int)tabs->get_count()-1) : next_tab_idx;
 			return true;
 		}
 		else if(  ev->ev_code==SIM_KEY_PGDN  ) {
 			// Ctrl-PgDn -> go to the next tab
 			const int next_tab_idx = active_tab + 1;
-			active_tab = next_tab_idx>=(int)tabs.get_count() ? 0 : next_tab_idx;
+			active_tab = next_tab_idx>=(int)tabs->get_count() ? 0 : next_tab_idx;
 			return true;
 		}
 	}
@@ -151,16 +207,22 @@ void gui_tab_panel_t::zeichnen(koord parent_pos)
 	int xx = required_groesse.x>get_groesse().x ? get_groesse().x-22 : get_groesse().x;
 
 	int i=0;
-	for (slist_tpl<tab>::const_iterator iter = tabs.begin(), end = tabs.end(); iter != end; ++iter, ++i) {
+	slist_iterator_tpl <tab> iter (tabs);
+
+	while(iter.next()) 
+	{
+		const tab & tab = iter.get_current();
+		
 		// just draw component, if here ...
 		if (i == active_tab) {
-			iter->component->zeichnen( parent_pos+pos );
+			tab.component->zeichnen( parent_pos+pos );
 		}
+		
 		if(i>=offset_tab) {
 			// set clipping
 			PUSH_CLIP(xpos, ypos, xx, ypos+HEADER_VSIZE);
 			// only start drwing here ...
-			const char* text = iter->title;
+			const char* text = tab.title;
 			const int width = text ? proportional_string_width( text ) : IMG_WIDTH;
 
 			if (i != active_tab) {
@@ -174,7 +236,7 @@ void gui_tab_panel_t::zeichnen(koord parent_pos)
 					display_proportional_clip(text_x, ypos+7, text, ALIGN_LEFT, COL_WHITE, true);
 				}
 				else {
-					display_img_blend( iter->img->get_nummer(), text_x - iter->img->get_pic()->x + (IMG_WIDTH/2) - (iter->img->get_pic()->w/2), ypos - iter->img->get_pic()->y + 10 - (iter->img->get_pic()->h/2), TRANSPARENT50_FLAG, false, true);
+					display_img_blend( tab.img->get_nummer(), text_x - tab.img->get_pic()->x + (IMG_WIDTH/2) - (tab.img->get_pic()->w/2), ypos - tab.img->get_pic()->y + 10 - (tab.img->get_pic()->h/2), TRANSPARENT50_FLAG, false, true);
 				}
 			}
 			else {
@@ -187,13 +249,14 @@ void gui_tab_panel_t::zeichnen(koord parent_pos)
 					display_proportional_clip(text_x, ypos+7, text, ALIGN_LEFT, COL_BLACK, true);
 				}
 				else {
-					display_color_img( iter->img->get_nummer(), text_x - iter->img->get_pic()->x + (IMG_WIDTH/2) - (iter->img->get_pic()->w/2), ypos - iter->img->get_pic()->y + 10 - (iter->img->get_pic()->h/2), 0, false, true);
+					display_color_img( tab.img->get_nummer(), text_x - tab.img->get_pic()->x + (IMG_WIDTH/2) - (tab.img->get_pic()->w/2), ypos - tab.img->get_pic()->y + 10 - (tab.img->get_pic()->h/2), 0, false, true);
 				}
 			}
 			text_x += width + 8;
 			// reset clipping
 			POP_CLIP();
 		}
+		++i;
 	}
 	display_fillbox_wh_clip(text_x-4, ypos+HEADER_VSIZE-1, xpos+groesse.x-(text_x-4), 1, MN_GREY4, true);
 
@@ -204,19 +267,25 @@ void gui_tab_panel_t::zeichnen(koord parent_pos)
 		int mx = get_mouse_x()-parent_pos.x-pos.x-11;
 		int text_x = 4;
 		int i=0;
-		for (slist_tpl<tab>::const_iterator iter = tabs.begin(), end = tabs.end(); iter != end; ++iter, ++i) {
+		slist_iterator_tpl <tab> iter (tabs);
+
+		while(iter.next()) 
+		{
+			const tab & tab = iter.get_current();
+
 			if(  i>=offset_tab  ) {
-				const char* text = iter->title;
+				const char* text = tab.title;
 				const int width = text ? proportional_string_width( text ) : IMG_WIDTH;
 
 				if(text_x < mx && text_x+width+8 > mx  && (required_groesse.x<=get_groesse().x || mx < right.get_pos().x-12)) {
 					// tooltip or change
-					win_set_tooltip(get_mouse_x() + 16, ypos + HEADER_VSIZE + 12, iter->tooltip, &(*iter), this);
+					win_set_tooltip(get_mouse_x() + 16, ypos + HEADER_VSIZE + 12, tab.tooltip, &tab, this);
 					break;
 				}
 
 				text_x += width + 8;
 			}
+			++i;
 		}
 	}
 }
@@ -224,6 +293,6 @@ void gui_tab_panel_t::zeichnen(koord parent_pos)
 
 void gui_tab_panel_t::clear()
 {
-	tabs.clear();
+	tabs->clear();
 	active_tab = 0;
 }

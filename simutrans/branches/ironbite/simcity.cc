@@ -35,6 +35,7 @@
 #include "gui/stadt_info.h"
 
 #include "besch/haus_besch.h"
+#include "besch/weg_besch.h"
 
 #include "simintr.h"
 #include "simdebug.h"

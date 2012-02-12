@@ -27,6 +27,8 @@
 
 #include "../dings/wayobj.h"
 
+#include "../besch/weg_besch.h"
+
 #include "../utils/simstring.h"
 #include "../utils/cbuffer_t.h"
 

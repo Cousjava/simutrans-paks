@@ -78,13 +78,13 @@ private:
 
 	scrollbar_t sb;
 
-	slist_tpl<gui_scrolled_list_t::scrollitem_t *> item_list;
+	slist_tpl<gui_scrolled_list_t::scrollitem_t *> * item_list;
 	int total_vertical_size() const;
 
 public:
 	gui_scrolled_list_t(enum type);
 
-	~gui_scrolled_list_t() { clear_elements(); }
+	~gui_scrolled_list_t();
 
 	/**
 	* Sets the color of selected entry
@@ -96,13 +96,13 @@ public:
 
 	void set_selection(int s) { selection = s; }
 	sint32 get_selection() const { return selection; }
-	sint32 get_count() const { return item_list.get_count(); }
+	sint32 get_count() const;
 
 	/*  when rebuilding a list, be sure to call recalculate the slider
 	 *  with recalculate_slider() to update the scrollbar properly. */
 	void clear_elements();
 	void append_element( scrollitem_t *item );
-	scrollitem_t *get_element(sint32 i) const { return ((uint32)i<item_list.get_count()) ? item_list.at(i) : NULL; }
+	scrollitem_t *get_element(sint32 i) const;
 
 	// set the first element to be shown in the list
 	sint32 get_sb_offset() { return sb.get_knob_offset(); }
@@ -118,21 +118,13 @@ public:
 	 */
 	koord request_groesse(koord request);
 
-	void set_groesse(koord groesse);
+	void set_groesse(koord groesse) OVERRIDE;
 
-	bool infowin_event(const event_t *ev);
+	bool infowin_event(event_t const*) OVERRIDE;
 
 	void zeichnen(koord pos);
 
-	/**
-	 * This method is called if an action is triggered
-	 * @author Hj. Malthaner
-	 *
-	 * Returns true, if action is done and no more
-	 * components should be triggered.
-	 * V.Meyer
-	 */
-	bool action_triggered(gui_action_creator_t *komp, value_t extra);
+	bool action_triggered(gui_action_creator_t*, value_t) OVERRIDE;
 };
 
 #endif

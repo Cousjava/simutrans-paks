@@ -5,20 +5,65 @@
 #include "../../simgraph.h"
 #include "gui_flowtext.h"
 
+#include "../../tpl/slist_tpl.h"
+
+enum attributes
+{
+	ATT_NONE,
+	ATT_NEWLINE,
+	ATT_A_START,      ATT_A_END,
+	ATT_H1_START,     ATT_H1_END,
+	ATT_EM_START,     ATT_EM_END,
+	ATT_IT_START,     ATT_IT_END,
+	ATT_STRONG_START, ATT_STRONG_END,
+	ATT_UNKNOWN
+};
+
+struct node_t
+{
+	node_t(const std::string &text_, attributes att_) : text(text_), att(att_) {}
+
+	std::string text;
+	attributes att;
+};
+
+/**
+ * Hyperlink position container
+ * @author Hj. Malthaner
+ */
+struct hyperlink_t
+{
+	hyperlink_t(const std::string &param_) : param(param_) {}
+
+	koord        tl;    // top left display position
+	koord        br;    // bottom right display position
+	std::string  param;
+};
 
 gui_flowtext_t::gui_flowtext_t()
 {
 	title[0] = '\0';
 	last_offset = koord::invalid;
 	dirty = true;
+	
+	nodes = new slist_tpl<node_t *> ();
+	links = new slist_tpl<hyperlink_t *> ();	
 }
 
+gui_flowtext_t::~gui_flowtext_t()
+{
+	nodes->clear();
+	links->clear();
+
+	delete nodes;
+	delete links;	
+}
 
 void gui_flowtext_t::set_text(const char *text)
 {
 	// purge all old texts
-	nodes.clear();
-	links.clear();
+	nodes->clear();
+	links->clear();
 
 	// Hajo: danger here, longest word in text
 	// must not exceed 511 chars!
@@ -58,7 +103,7 @@ void gui_flowtext_t::set_text(const char *text)
 				}
 				else {
 					att = ATT_A_END;
-					links.append(hyperlink_t(param.substr(8, param.size() - 9)));
+					links->append(new hyperlink_t(param.substr(8, param.size() - 9)));
 				}
 			} else if (word[0] == 'h' && word[1] == '1') {
 				att = endtag ? ATT_H1_END : ATT_H1_START;
@@ -127,7 +172,7 @@ void gui_flowtext_t::set_text(const char *text)
 		}
 
 		if (att != ATT_UNKNOWN) { // only add know commands
-			nodes.append(node_t(word, att));
+			nodes->append(new node_t(word, att));
 		}
 
 		// skip white spaces
@@ -171,8 +216,6 @@ koord gui_flowtext_t::output(koord offset, bool doit, bool return_max_width)
 {
 	const int width = groesse.x;
 
-	slist_tpl<hyperlink_t>::iterator link = links.begin();
-
 	int xpos         = 0;
 	int ypos         = 0;
 	int color        = COL_BLACK;
@@ -181,7 +224,16 @@ koord gui_flowtext_t::output(koord offset, bool doit, bool return_max_width)
 	int max_width    = width;
 	int text_width   = width;
 
-	for (slist_tpl<node_t>::const_iterator node = nodes.begin(), end = nodes.end(); node != end; ++node) {
+
+	hyperlink_t * link = 0;
+	
+	slist_iterator_tpl <node_t *> iter (nodes); 
+	slist_iterator_tpl <hyperlink_t *> link_iter (links);
+	
+	while(iter.next())
+	{
+		node_t * node = iter.get_current();
+		
 		switch (node->att) {
 			case ATT_NONE: {
 				int nxpos = xpos + proportional_string_width(node->text.c_str()) + 4;
@@ -217,14 +269,15 @@ koord gui_flowtext_t::output(koord offset, bool doit, bool return_max_width)
 
 			case ATT_A_START:
 				color = COL_BLUE;
-				// link == links.end() if there is an endtag </a> is missing
-				if (link!=links.end()) {
-					link->tl.x = xpos;
-					link->tl.y = ypos;
-				}
+			
+				link = link_iter.get_current();
+				link->tl.x = xpos;
+				link->tl.y = ypos;
+			
 				break;
 
 			case ATT_A_END:
+				
 				link->br.x = xpos - 4;
 				link->br.y = ypos + LINESPACE;
 
@@ -233,11 +286,13 @@ koord gui_flowtext_t::output(koord offset, bool doit, bool return_max_width)
 					link->tl.y = ypos;
 				}
 
+				// links.append(link);
+				
 				if (doit) {
 					display_fillbox_wh_clip(link->tl.x + offset.x, link->tl.y + offset.y + 10, link->br.x - link->tl.x, 1, color, false);
 				}
 
-				++link;
+				link_iter.next();
 				color = COL_BLACK;
 				break;
 
@@ -303,10 +358,15 @@ bool gui_flowtext_t::infowin_event(const event_t* ev)
 {
 	if (IS_LEFTCLICK(ev)) {
 		// scan links for hit
-		for (slist_tpl<hyperlink_t>::const_iterator i = links.begin(), end = links.end(); i != end; ++i) {
-			if (i->tl.x <= ev->cx && ev->cx < i->br.x &&
-					i->tl.y <= ev->cy && ev->cy < i->br.y) {
-				call_listeners((const void*)i->param.c_str());
+		slist_iterator_tpl <hyperlink_t *> iter (links);
+
+		while(iter.next())
+		{
+			hyperlink_t * link = iter.get_current();
+			
+			if (link->tl.x <= ev->cx && ev->cx < link->br.x &&
+			    link->tl.y <= ev->cy && ev->cy < link->br.y) {
+				call_listeners((const void*)link->param.c_str());
 			}
 		}
 	}

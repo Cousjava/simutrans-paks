@@ -28,8 +28,7 @@
  * @author Hj. Malthaner
  */
 optionen_gui_t::optionen_gui_t(karte_t *welt) :
-	gui_frame_t( translator::translate("Einstellungen")),
-	txt("Einstellungen aendern")
+	gui_frame_t( translator::translate("Einstellungen"))
 {
 	this->welt = welt;
 
@@ -38,13 +37,13 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 	int xpos = D_LEFT_MARGIN;
 	
 	// Hajo: text starts a bit lower ...
-	ypos += 3;
+	ypos += 2;
 	
-	txt.set_pos( koord(xpos-1, ypos) );
-	add_komponente( &txt );
+	// txt.set_pos( koord(xpos-1, ypos) );
+	// add_komponente( &txt );
 
 	// init buttons
-	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
+	// ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
 
 	bt_new.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
 	bt_new.set_typ(button_t::roundbox);
@@ -72,6 +71,12 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 	add_komponente( &bt_save );
 
 	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
+	
+	seperator_file.set_pos( koord(xpos,  ypos) );
+	seperator_file.set_groesse( koord(BUTTON_WIDTH, 1) );
+	add_komponente( &seperator_file );
+
+	ypos += 3 + D_COMP_Y_SPACE;
 	
 	bt_lang.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
 	bt_lang.set_typ(button_t::roundbox);

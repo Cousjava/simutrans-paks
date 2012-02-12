@@ -9,13 +9,13 @@
 #define dings_baum_h
 
 #include <string>
-#include "../tpl/stringhashtable_tpl.h"
-#include "../tpl/vector_tpl.h"
-#include "../tpl/weighted_vector_tpl.h"
+
 #include "../besch/baum_besch.h"
 #include "../simcolor.h"
 #include "../simdings.h"
 #include "../dataobj/umgebung.h"
+
+template <class T> class weighted_vector_tpl;
 
 /**
  * B�ume in Simutrans.
@@ -37,11 +37,6 @@ private:
 	// z-offset, max TILE_HEIGHT_STEP ie 4 bits
 	uint8 zoff:4;
 	// one bit free ;)
-
-	// static for administration
-	static stringhashtable_tpl<const baum_besch_t *> besch_names;
-	static vector_tpl<const baum_besch_t *> tree_typen;
-	static vector_tpl<weighted_vector_tpl<uint32> > tree_typen_per_climate;
 
 	bool saee_baum();
 
@@ -106,7 +101,7 @@ public:
 	void * operator new(size_t s);
 	void operator delete(void *p);
 
-	const baum_besch_t* get_besch() const { return tree_typen[baumtype]; }
+	const baum_besch_t* get_besch() const;
 	uint16 get_besch_id() const { return baumtype; }
 	uint32 get_age() const;
 
@@ -125,13 +120,13 @@ public:
 
 
 	// return list to beschs
-	static const vector_tpl<const baum_besch_t *> *get_all_besch() { return &tree_typen; }
+	static const vector_tpl<const baum_besch_t *> * get_all_besch() ;
 
-	static const baum_besch_t *random_tree_for_climate(climate cl) { uint16 b = random_tree_for_climate_intern(cl);  return b!=0xFFFF ? tree_typen[b] : NULL; }
+	static const baum_besch_t *random_tree_for_climate(climate cl);
 
-	static const baum_besch_t *find_tree( const char *tree_name ) { return tree_typen.empty() ? NULL : besch_names.get(tree_name); }
+	static const baum_besch_t *find_tree( const char *tree_name );
 
-	static int get_anzahl_besch() { return tree_typen.get_count(); }
+	static int get_anzahl_besch();
 	static int get_anzahl_besch(climate cl);
 
 };

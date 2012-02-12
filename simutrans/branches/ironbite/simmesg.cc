@@ -133,16 +133,22 @@ DBG_MESSAGE("message_t::add_msg()","%40s (at %i,%i)", text, pos.x, pos.y );
 	if(  what == traffic_jams  ) {
 		sint32 now = welt->get_current_month()-2;
 		uint32 i = 0;
-		for(  slist_tpl<node *>::const_iterator iter = list->begin(), end = list->end();  iter!=end  &&  i<20; ++iter  ) {
-			const node& n = *(*iter);
-			if (n.time >= now &&
-					strcmp(n.msg, text) == 0 &&
-					(n.pos.x & 0xFFF0) == (pos.x & 0xFFF0) && // positions need not 100% match ...
-					(n.pos.y & 0xFFF0) == (pos.y & 0xFFF0)) {
+
+		slist_iterator_tpl <node *> iter (list);
+		while(iter.next())
+		{
+			node * node = iter.get_current();
+			
+			if (node->time >= now &&
+					strcmp(node->msg, text) == 0 &&
+					(node->pos.x & 0xFFF0) == (pos.x & 0xFFF0) && // positions need not 100% match ...
+					(node->pos.y & 0xFFF0) == (pos.y & 0xFFF0)) {
 				// we had exactly this message already
 				return;
 			}
 			i++;
+			
+			if(i > 20) break;
 		}
 	}
 
@@ -219,16 +225,33 @@ void message_t::rdwr( loadsave_t *file )
 		if(  umgebung_t::server  ) {
 			// on server: do not save local messages
 			msg_count = 0;
-			for(  slist_tpl<node *>::const_iterator iter=list->begin(), end=list->end();  iter!=end  &&  msg_count<2000;  ++iter  ) {
-				if(  ((*iter)->type & local_flag) == 0  ) {
+
+			slist_iterator_tpl <node *> iter (list);
+			while(iter.next())
+			{
+				node * node = iter.get_current();
+				if((node->type & local_flag) == 0  )
+				{
 					msg_count ++;
+				}
+				if(msg_count >= 2000)
+				{
+					break;
 				}
 			}
 			file->rdwr_short( msg_count );
-			for(  slist_tpl<node *>::const_iterator iter=list->begin(), end=list->end();  iter!=end  &&  msg_count>0;  ++iter  ) {
-				if(  ((*iter)->type & local_flag) == 0  ) {
-					(*iter)->rdwr(file);
+
+			slist_iterator_tpl <node *> iter2 (list);
+			while(iter2.next())
+			{
+				node * node = iter2.get_current();
+				if(  (node->type & local_flag) == 0  ) {
+					node->rdwr(file);
 					msg_count --;
+				}
+				if(msg_count == 0)
+				{
+					break;
 				}
 			}
 			assert( msg_count == 0 );
@@ -236,8 +259,19 @@ void message_t::rdwr( loadsave_t *file )
 		else {
 			msg_count = min( 2000u, list->get_count() );
 			file->rdwr_short( msg_count );
-			for(  slist_tpl<node *>::const_iterator iter=list->begin(), end=list->end();  iter!=end  &&  msg_count>0;  ++iter, --msg_count  ) {
-				(*iter)->rdwr(file);
+
+			slist_iterator_tpl <node *> iter (list);
+			while(iter.next())
+			{
+				node * node = iter.get_current();
+
+				node->rdwr(file);
+				
+				--msg_count;
+				if(msg_count == 0)
+				{
+					break;
+				}
 			}
 		}
 	}

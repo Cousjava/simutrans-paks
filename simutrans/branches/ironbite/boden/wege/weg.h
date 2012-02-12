@@ -8,9 +8,7 @@
 #ifndef boden_wege_weg_h
 #define boden_wege_weg_h
 
-#include "../../simtypes.h"
 #include "../../dings/thing_without_info_t.h"
-#include "../../besch/weg_besch.h"
 #include "../../dataobj/koord3d.h"
 
 
@@ -26,7 +24,8 @@ template <class T> class slist_tpl;
 // number of different statistics collected
 #define MAX_WAY_STATISTICS 2
 
-enum way_statistics {
+enum way_statistics 
+{
 	WAY_STAT_GOODS   = 0, ///< number of goods transported over this weg
 	WAY_STAT_CONVOIS = 1  ///< number of convois that passed this weg
 };
@@ -163,9 +162,9 @@ public:
 	virtual void rdwr(loadsave_t *file);
 
 	/**
-	* Info-text f�r diesen Weg
-	* @author Hj. Malthaner
-	*/
+	 * Info-text for this way
+	 * @author Hj. Malthaner
+	 */
 	virtual void info(cbuffer_t & buf) const;
 
 	/**
@@ -175,22 +174,22 @@ public:
 	virtual const char *ist_entfernbar(const spieler_t *sp);
 
 	/**
-	* Wegtyp zur�ckliefern
-	*/
+	 * Wegtyp zur�ckliefern
+	 */
 	virtual waytype_t get_waytype() const = 0;
 
 	/**
-	* 'Jedes Ding braucht einen Typ.'
-	* @return Gibt den typ des Objekts zur�ck.
-	* @author Hj. Malthaner
-	*/
-	typ get_typ() const { return ding_t::way; }
+	 * 'Jedes Ding braucht einen Typ.'
+	 * @return Gibt den typ des Objekts zur�ck.
+	 * @author Hj. Malthaner
+	 */
+	typ get_typ() const;
 
 	/**
-	* Die Bezeichnung des Wegs
-	* @author Hj. Malthaner
-	*/
-	const char *get_name() const { return besch->get_name(); }
+	 * Die Bezeichnung des Wegs
+	 * @author Hj. Malthaner
+	 */
+	const char *get_name() const;
 
 	/**
 	* Setzt neue Richtungsbits f�r einen Weg.

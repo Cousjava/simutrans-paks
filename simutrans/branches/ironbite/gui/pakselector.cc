@@ -96,19 +96,26 @@ void pakselector_t::fill_list()
 	savegame_frame_t::fill_list();
 
 	int y = 0;
-	for(  slist_tpl<entry>::iterator iter = entries.begin(), end = entries.end();  iter != end;  ++iter  ) {
+
+	slist_iterator_tpl <entry> iter (entries);
+
+	while(iter.next()) 
+	{
+		const entry & entry = iter.get_current();
+
 		char path[1024];
-		sprintf(path,"%saddons/%s", umgebung_t::user_dir, iter->button->get_text() );
-		iter->del->groesse.x += 150;
-		iter->del->set_text( "Load with addons" );
-		iter->button->set_pos( koord(150,0)+iter->button->get_pos() );
+		sprintf(path,"%saddons/%s", umgebung_t::user_dir, entry.button->get_text() );
+		koord size = entry.del->get_groesse();
+		entry.del->set_groesse(size + koord(150, 0));
+		entry.del->set_text( "Load with addons" );
+		entry.button->set_pos( koord(150,0)+entry.button->get_pos() );
 		if(  chdir( path )!=0  ) {
 			// no addons for this
-			iter->del->set_visible( false );
-			iter->del->disable();
+			entry.del->set_visible( false );
+			entry.del->disable();
 			if(entries.get_count()==1) {
 				// only single entry and no addons => no need to question further ...
-				umgebung_t::objfilename = (std::string)iter->button->get_text() + "/";
+				umgebung_t::objfilename = (std::string)entry.button->get_text() + "/";
 			}
 		}
 		y += BUTTON_HEIGHT;
@@ -131,13 +138,19 @@ void pakselector_t::set_window_size(koord groesse)
 	groesse = get_window_size();
 
 	sint16 y = 0;
-	for (slist_tpl<entry>::const_iterator i = entries.begin(), end = entries.end(); i != end; ++i) {
+
+	slist_iterator_tpl <entry> iter (entries);
+
+	while(iter.next()) 
+	{
+		const entry & entry = iter.get_current();
+
 		// resize all but delete button
-		if(  i->button->is_visible()  ) {
-			button_t*    button1 = i->del;
+		if(  entry.button->is_visible()  ) {
+			button_t*    button1 = entry.del;
 			button1->set_pos( koord( button1->get_pos().x, y ) );
-			button_t*    button2 = i->button;
-			gui_label_t* label   = i->label;
+			button_t*    button2 = entry.button;
+			gui_label_t* label   = entry.label;
 			button2->set_pos( koord( button2->get_pos().x, y ) );
 			button2->set_groesse(koord( groesse.x/2-40, BUTTON_HEIGHT));
 			label->set_pos(koord(groesse.x/2-40+30, y+2));

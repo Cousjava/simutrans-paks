@@ -12,6 +12,7 @@
 #include "../simimg.h"
 #include "../simmem.h"
 #include "../bauer/brueckenbauer.h"
+#include "../besch/weg_besch.h"
 #include "../dataobj/loadsave.h"
 #include "../dataobj/translator.h"
 

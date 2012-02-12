@@ -45,11 +45,14 @@ public:
         /**
          * Display game splash screen (aka banner)
          *
-         * @author Hj. Malthaner
-         */
+ 	 * komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
+	 * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
+	 * in dem die Komponente dargestellt wird.
+	 * @author Hj. Malthaner
+	 */
 	void zeichnen(koord pos, koord gr);
 
-	bool action_triggered( gui_action_creator_t *komp, value_t extra);
+	bool action_triggered(gui_action_creator_t*, value_t) OVERRIDE;
 };
 
 #endif

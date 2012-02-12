@@ -20,21 +20,23 @@ struct event_t;
 class gui_component_t
 {
 private:
+	
 	/**
-	* allow component to show/hide itself
-	* @author hsiegeln
-	*/
+	 * allow component to show/hide itself
+	 * @author hsiegeln
+	 */
 	bool visible:1;
 
 	/**
-	* some components might not be allowed to gain focus
-	* for example: gui_textarea_t
-	* this flag can be set to true to deny focus request for a gui_component always
-	* @author hsiegeln
-	*/
+	 * some components might not be allowed to gain focus
+	 * for example: gui_textarea_t
+	 * this flag can be set to true to deny focus request for a gui_component always
+	 * @author hsiegeln
+	 */
 	bool focusable:1;
 
 protected:
+	
 	/**
 	 * Position der Komponente. Eintraege sind relativ zu links/oben der
 	 * umgebenden Komponente.
@@ -42,32 +44,41 @@ protected:
 	 */
 	koord pos;
 
-public:
 	/**
-	* Basic contructor, initialises member variables
-	* @author Hj. Malthaner
-	*/
+	 * Component size
+	 * @author Hj. Malthaner
+	 */
+	koord groesse;
+
+public:
+	
+	/**
+ 	 * Basic contructor, initialises member variables
+	 * @author Hj. Malthaner
+	 */
 	gui_component_t(bool _focusable = false) : visible(true), focusable(_focusable) {}
 
 	/**
-	* Virtueller Destruktor, damit Klassen sauber abgeleitet werden k�nnen
-	* @author Hj. Malthaner
-	*/
+	 * Virtueller Destruktor, damit Klassen sauber abgeleitet werden k�nnen
+	 * @author Hj. Malthaner
+	 */
 	virtual ~gui_component_t() {}
 
 	void set_focusable(bool yesno) { focusable = yesno; }
 
-	// Knightly : a component can only be focusable when it is visible
+	/**
+	 * a component can only be focusable when it is visible
+	 * @author Knightly
+	 */
 	virtual bool is_focusable() { return visible && focusable; }
 
 	/**
-	* Sets component to be shown/hidden
-	* @author Hj. Malthaner
-	*/
+	 * Sets component to be shown/hidden
+	 * @author Hj. Malthaner
+	 */
 	void set_visible(bool yesno) {
 		visible = yesno;
 	}
-
 
 	/**
 	* Checks if component should be displayed
@@ -92,12 +103,6 @@ public:
 	koord get_pos() const {
 		return pos;
 	}
-
-	/**
-	 * Component size
-	 * @author Hj. Malthaner
-	 */
-	koord groesse;
 
 	/**
 	 * Vorzugsweise sollte diese Methode zum Setzen der Gr��e benutzt werden,

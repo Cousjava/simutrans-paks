@@ -5,8 +5,11 @@
 
 #include "gui_action_creator.h"
 #include "gui_komponente.h"
-#include "../../tpl/slist_tpl.h"
 
+struct node_t;
+struct hyperlink_t;
+
+template <class T> class slist_tpl;
 
 /**
  * A component for floating text.
@@ -18,6 +21,7 @@ class gui_flowtext_t :
 {
 public:
 	gui_flowtext_t();
+	~gui_flowtext_t();
 
 	/**
 	 * Sets the text to display.
@@ -37,11 +41,7 @@ public:
 	 */
 	void zeichnen(koord offset);
 
-	/**
-	 * Events werden hiermit an die GUI-Komponenten gemeldet
-	 * @author Hj. Malthaner
-	 */
-	bool infowin_event(const event_t*);
+	bool infowin_event(event_t const*) OVERRIDE;
 
 	bool dirty;
 	koord last_offset;
@@ -49,41 +49,9 @@ public:
 private:
 	koord output(koord pos, bool doit, bool return_max_width=true);
 
-	enum attributes
-	{
-		ATT_NONE,
-		ATT_NEWLINE,
-		ATT_A_START,      ATT_A_END,
-		ATT_H1_START,     ATT_H1_END,
-		ATT_EM_START,     ATT_EM_END,
-		ATT_IT_START,     ATT_IT_END,
-		ATT_STRONG_START, ATT_STRONG_END,
-		ATT_UNKNOWN
-	};
+	slist_tpl<node_t *>      * nodes;
+	slist_tpl<hyperlink_t *> * links;
 
-	struct node_t
-	{
-		node_t(const std::string &text_, attributes att_) : text(text_), att(att_) {}
-
-		std::string text;
-		attributes att;
-	};
-
-	/**
-	 * Hyperlink position container
-	 * @author Hj. Malthaner
-	 */
-	struct hyperlink_t
-	{
-		hyperlink_t(const std::string &param_) : param(param_) {}
-
-		koord        tl;    // top left display position
-		koord        br;    // bottom right display position
-		std::string  param;
-	};
-
-	slist_tpl<node_t>      nodes;
-	slist_tpl<hyperlink_t> links;
 	char title[128];
 };
 

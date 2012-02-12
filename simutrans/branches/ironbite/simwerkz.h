@@ -227,7 +227,7 @@ public:
 	char const* get_default_param(spieler_t*) const OVERRIDE;
 	bool is_selected(karte_t const*) const OVERRIDE;
 	bool init(karte_t*, spieler_t*) OVERRIDE;
-	bool is_move_network_save(spieler_t* const sp) const OVERRIDE { return two_click_werkzeug_t::is_move_network_save(sp) && (besch && (besch->get_styp() != 1 || besch->get_wtyp() == air_wt)); }
+	bool is_move_network_save(spieler_t* const sp) const OVERRIDE;
 	bool is_init_network_save() const OVERRIDE { return true; }
 };
 

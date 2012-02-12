@@ -819,8 +819,10 @@ void toolbar_t::update(karte_t *welt, spieler_t *sp)
 
 	wzw->reset_tools();
 	// now (re)fill it
-	for (slist_tpl<werkzeug_t *>::const_iterator iter = tools.begin(), end = tools.end(); iter != end; ++iter) {
-		werkzeug_t *w = *iter;
+	slist_iterator_tpl <werkzeug_t *> iter (tools);
+	while(iter.next())
+	{
+		werkzeug_t *w = iter.get_current();
 		// no way to call this tool? => then it is most likely a metatool
 		if(w->command_key==1  &&  w->get_icon(welt->get_active_player())==IMG_LEER) {
 			if (char const* const param = w->get_default_param()) {

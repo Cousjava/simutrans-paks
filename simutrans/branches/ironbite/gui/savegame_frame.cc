@@ -161,10 +161,14 @@ void savegame_frame_t::fill_list()
 
 	// The file entries
 	int y = 0;
-	for (slist_tpl<entry>::const_iterator i = entries.begin(), end = entries.end(); i != end; ++i) {
-		button_t*    button1 = i->del;
-		button_t*    button2 = i->button;
-		gui_label_t* label   = i->label;
+	slist_iterator_tpl <entry> iter (entries);
+
+	while(iter.next()) 
+	{
+		const entry & entry = iter.get_current();
+		button_t*    button1 = entry.del;
+		button_t*    button2 = entry.button;
+		gui_label_t* label   = entry.label;
 
 		button1->set_groesse(koord(14, BUTTON_HEIGHT));
 		button1->set_text("X");
@@ -195,12 +199,16 @@ void savegame_frame_t::fill_list()
 
 savegame_frame_t::~savegame_frame_t()
 {
-	for (slist_tpl<entry>::const_iterator i = entries.begin(), end = entries.end(); i != end; ++i) {
-		delete [] const_cast<char*>(i->button->get_text());
-		delete i->button;
-		delete [] const_cast<char*>(i->label->get_text_pointer());
-		delete i->label;
-		delete i->del;
+	slist_iterator_tpl <entry> iter (entries);
+
+	while(iter.next()) 
+	{
+		const entry & entry = iter.get_current();
+		delete [] const_cast<char*>(entry.button->get_text());
+		delete entry.button;
+		delete [] const_cast<char*>(entry.label->get_text_pointer());
+		delete entry.label;
+		delete entry.del;
 	}
 }
 
@@ -389,13 +397,17 @@ void savegame_frame_t::set_window_size(koord groesse)
 	input.set_size(groesse.x-75-scrollbar_t::BAR_SIZE-1, BUTTON_HEIGHT);
 
 	sint16 y = 0;
-	for (slist_tpl<entry>::const_iterator i = entries.begin(), end = entries.end(); i != end; ++i) {
+	slist_iterator_tpl <entry> iter (entries);
+
+	while(iter.next()) 
+	{
+		const entry & entry = iter.get_current();
 		// resize all but delete button
-		if(  i->button->is_visible()  ) {
-			button_t*    button1 = i->del;
+		if(  entry.button->is_visible()  ) {
+			button_t*    button1 = entry.del;
 			button1->set_pos( koord( button1->get_pos().x, y ) );
-			button_t*    button2 = i->button;
-			gui_label_t* label   = i->label;
+			button_t*    button2 = entry.button;
+			gui_label_t* label   = entry.label;
 			button2->set_pos( koord( button2->get_pos().x, y ) );
 			button2->set_groesse(koord( groesse.x/2-40, BUTTON_HEIGHT));
 			label->set_pos(koord(groesse.x/2-40+30, y+2));

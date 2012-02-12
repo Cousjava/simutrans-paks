@@ -242,6 +242,7 @@ SOURCES += gui/citylist_frame_t.cc
 SOURCES += gui/citylist_stats_t.cc
 SOURCES += gui/climates.cc
 SOURCES += gui/display_settings.cc
+SOURCES += gui/components/gui_action_creator.cc
 SOURCES += gui/components/gui_button.cc
 SOURCES += gui/components/gui_chart.cc
 SOURCES += gui/components/gui_combobox.cc

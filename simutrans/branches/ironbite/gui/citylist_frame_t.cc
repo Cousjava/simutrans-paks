@@ -10,7 +10,7 @@
 
 #include "components/list_button.h"
 #include "../dataobj/translator.h"
-#include "../simcolor.h"
+#include "../simgraph.h"
 #include "../dataobj/umgebung.h"
 
 

@@ -156,6 +156,25 @@ PLAYER_COLOR_VAL grund_t::text_farbe() const
 	return COL_WHITE;
 }
 
+/**
+* Returns the system type s_type of a way of type typ at this location
+* Currently only needed for tramways or other different types of rails
+*
+* @author DarioK
+* @see get_weg
+*/
+uint8 grund_t::get_styp(waytype_t typ) const
+{
+	weg_t *weg = get_weg(typ);
+	return (weg) ? weg->get_besch()->get_styp() : 0;
+}
+
+/**
+* Kreuzen sich hier 2 verschiedene Wege?
+* Strassenbahnschienen duerfen nicht als Kreuzung erkannt werden!
+* @author V. Meyer, dariok
+*/
+bool grund_t::ist_uebergang() const { return (flags&has_way2)!=0  &&  ((weg_t *)dinge.bei(1))->get_besch()->get_styp()!=7; }
 
 // ---------------- init, rdwr, and destruct from here ---------------------
 

@@ -29,7 +29,7 @@
 
 #include "../grund.h"
 #include "../../simworld.h"
-#include "../../simimg.h"
+// #include "../../simimg.h"
 #include "../../simhalt.h"
 #include "../../simdings.h"
 #include "../../player/simplay.h"
@@ -116,6 +116,24 @@ const char *weg_t::waytype_to_string(waytype_t wt)
 	return "invalid waytype";
 }
 
+/**
+ * 'Jedes Ding braucht einen Typ.'
+ * @return Gibt den typ des Objekts zur�ck.
+ * @author Hj. Malthaner
+ */
+ding_t::typ weg_t::get_typ() const 
+{ 
+	return ding_t::way; 
+}
+
+/**
+ * Die Bezeichnung des Wegs
+ * @author Hj. Malthaner
+ */
+const char * weg_t::get_name() const 
+{
+	return besch->get_name(); 
+}
 
 /**
  * Setzt neue Beschreibung. Ersetzt alte H�chstgeschwindigkeit

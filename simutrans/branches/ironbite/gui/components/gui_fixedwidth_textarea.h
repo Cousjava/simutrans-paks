@@ -42,7 +42,7 @@ public:
 	void set_reserved_area(const koord area);
 
 	// it will deliberately ignore the y-component (height) of groesse
-	virtual void set_groesse(koord groesse);
+	void set_groesse(koord groesse) OVERRIDE;
 
 	virtual void zeichnen(koord offset);
 };

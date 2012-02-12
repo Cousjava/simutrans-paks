@@ -32,6 +32,7 @@
 #include "../gui/werkzeug_waehler.h"
 #include "../gui/karte.h"
 
+#include "../besch/weg_besch.h"
 #include "../besch/bruecke_besch.h"
 #include "../besch/skin_besch.h"
 
