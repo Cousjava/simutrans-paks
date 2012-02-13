@@ -56,27 +56,27 @@ bool freight_builder_t::alles_geladen()
 
 	// assign indexes
 	for(  uint8 i=3;  i<waren.get_count();  i++  ) {
-		waren[i]->ware_index = i;
+		waren.get(i)->ware_index = i;
 	}
 
 	// now assign unique category indexes for unique categories
 	max_catg_index = 0;
 	// first assign special freight (which always needs an own category)
 	for( unsigned i=0;  i<waren.get_count();  i++  ) {
-		if(waren[i]->get_catg()==0) {
-			waren[i]->catg_index = max_catg_index++;
+		if(waren.get(i)->get_catg()==0) {
+			waren.get(i)->catg_index = max_catg_index++;
 		}
 	}
 	// mapping of waren_t::catg to catg_index, map[catg] = catg_index
 	uint8 map[255] = {0};
 
 	for(  uint8 i=0;  i<waren.get_count();  i++  ) {
-		const uint8 catg = waren[i]->get_catg();
+		const uint8 catg = waren.get(i)->get_catg();
 		if(  catg > 0  ) {
 			if(  map[catg] == 0  ) { // We didn't found this category yet -> just create new index.
 				map[catg] = max_catg_index++;
 			}
-			waren[i]->catg_index = map[catg];
+			waren.get(i)->catg_index = map[catg];
 		}
 	}
 
@@ -88,19 +88,19 @@ bool freight_builder_t::alles_geladen()
 			freight_t::index_to_besch[i] = NULL;
 		}
 		else {
-			assert(waren[i]->get_index()==i);
-			freight_t::index_to_besch[i] = waren[i];
-			if(waren[i]->color==255) {
-				waren[i]->color = 16+4+((i-2)*8)%207;
+			assert(waren.get(i)->get_index()==i);
+			freight_t::index_to_besch[i] = waren.get(i);
+			if(waren.get(i)->color==255) {
+				waren.get(i)->color = 16+4+((i-2)*8)%207;
 			}
 		}
 	}
 	// passenger and good colors
-	if(waren[0]->color==255) {
-		waren[0]->color = COL_GREY3;
+	if(waren.get(0)->color==255) {
+		waren.get(0)->color = COL_GREY3;
 	}
-	if(waren[1]->color==255) {
-		waren[1]->color = COL_YELLOW;
+	if(waren.get(1)->color==255) {
+		waren.get(1)->color = COL_YELLOW;
 	}
 	// none should never be loaded to something ...
 	// however, some place do need the dummy ...
@@ -162,25 +162,25 @@ const freight_desc_t *freight_builder_t::get_info_catg(const uint8 catg)
 {
 	if(catg>0) {
 		for(unsigned i=0;  i<get_waren_anzahl();  i++  ) {
-			if(waren[i]->catg==catg) {
-				return waren[i];
+			if(waren.get(i)->catg==catg) {
+				return waren.get(i);
 			}
 		}
 	}
 	dbg->warning("freight_builder_t::get_info()", "No info for good catg %d available, set to passengers", catg);
-	return waren[0];
+	return waren.get(0);
 }
 
 
 const freight_desc_t *freight_builder_t::get_info_catg_index(const uint8 catg_index)
 {
 	for(unsigned i=0;  i<get_waren_anzahl();  i++  ) {
-		if(waren[i]->get_catg_index()==catg_index) {
-			return waren[i];
+		if(waren.get(i)->get_catg_index()==catg_index) {
+			return waren.get(i);
 		}
 	}
 	// return none as default
-	return waren[2];
+	return waren.get(2);
 }
 
 
@@ -189,7 +189,7 @@ void freight_builder_t::set_multiplier(sint32 multiplier)
 {
 //DBG_MESSAGE("freight_builder_t::set_multiplier()","new factor %i",multiplier);
 	for(unsigned i=0;  i<get_waren_anzahl();  i++  ) {
-		sint32 long_base_value = waren[i]->base_value;
-		waren[i]->value = (uint16)((long_base_value*multiplier)/1000l);
+		sint32 long_base_value = waren.get(i)->base_value;
+		waren.get(i)->value = (uint16)((long_base_value*multiplier)/1000l);
 	}
 }

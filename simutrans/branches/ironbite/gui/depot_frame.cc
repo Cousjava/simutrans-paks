@@ -577,7 +577,7 @@ void depot_frame_t::add_to_vehicle_list(const vehikel_besch_t *info)
 				const vector_tpl<const freight_desc_t*> &goods = get_welt()->get_goods_list();
 				bool found = false;
 				for(uint32 i = 0; i<goods.get_count(); i++) {
-					if (freight->get_catg_index() == goods[i]->get_catg_index()) {
+					if (freight->get_catg_index() == goods.get(i)->get_catg_index()) {
 						found = true;
 						break;
 					}
@@ -590,7 +590,7 @@ void depot_frame_t::add_to_vehicle_list(const vehikel_besch_t *info)
 			// Filter on specific selected good
 			uint32 goods_index = depot->selected_filter - VEHICLE_FILTER_GOODS_OFFSET;
 			if (goods_index < get_welt()->get_goods_list().get_count()) {
-				const freight_desc_t *selected_good = get_welt()->get_goods_list()[goods_index];
+				const freight_desc_t *selected_good = get_welt()->get_goods_list().get(goods_index);
 				if (freight->get_catg_index() != selected_good->get_catg_index()) {
 					return; // This vehicle can't transport the selected good
 				}
@@ -629,7 +629,7 @@ void depot_frame_t::add_to_vehicle_list(const vehikel_besch_t *info)
 // add all current vehicles
 void depot_frame_t::build_vehicle_lists()
 {
-	if(depot->get_vehicle_type()==NULL) {
+	if (depot->get_vehicle_type().empty()) {
 		// there are tracks etc. but no vehicles => do nothing
 		// at least initialize some data
 		update_data();
@@ -800,21 +800,21 @@ void depot_frame_t::update_data()
 		}
 
 		/* color bars for current convoi: */
-		convoi_pics[0].lcolor = cnv->front()->get_besch()->can_follow(NULL) ? COL_GREEN : COL_YELLOW;
+		convoi_pics.at(0).lcolor = cnv->front()->get_besch()->can_follow(NULL) ? COL_GREEN : COL_YELLOW;
 		for(  i=1;  i<cnv->get_vehikel_anzahl(); i++) {
-			convoi_pics[i - 1].rcolor = cnv->get_vehikel(i-1)->get_besch()->can_lead(cnv->get_vehikel(i)->get_besch()) ? COL_GREEN : COL_RED;
-			convoi_pics[i].lcolor     = cnv->get_vehikel(i)->get_besch()->can_follow(cnv->get_vehikel(i-1)->get_besch()) ? COL_GREEN : COL_RED;
+			convoi_pics.at(i-1).rcolor = cnv->get_vehikel(i-1)->get_besch()->can_lead(cnv->get_vehikel(i)->get_besch()) ? COL_GREEN : COL_RED;
+			convoi_pics.at(i).lcolor     = cnv->get_vehikel(i)->get_besch()->can_follow(cnv->get_vehikel(i-1)->get_besch()) ? COL_GREEN : COL_RED;
 		}
-		convoi_pics[i - 1].rcolor = cnv->get_vehikel(i-1)->get_besch()->can_lead(NULL) ? COL_GREEN : COL_YELLOW;
+		convoi_pics.at(i-1).rcolor = cnv->get_vehikel(i-1)->get_besch()->can_lead(NULL) ? COL_GREEN : COL_YELLOW;
 
 		// change grren into blue for retired vehicles
 		for(i=0;  i<cnv->get_vehikel_anzahl(); i++) {
 			if(cnv->get_vehikel(i)->get_besch()->is_future(month_now) || cnv->get_vehikel(i)->get_besch()->is_retired(month_now)) {
-				if (convoi_pics[i].lcolor == COL_GREEN) {
-					convoi_pics[i].lcolor = COL_BLUE;
+				if (convoi_pics.get(i).lcolor == COL_GREEN) {
+					convoi_pics.at(i).lcolor = COL_BLUE;
 				}
-				if (convoi_pics[i].rcolor == COL_GREEN) {
-					convoi_pics[i].rcolor = COL_BLUE;
+				if (convoi_pics.get(i).rcolor == COL_GREEN) {
+					convoi_pics.at(i).rcolor = COL_BLUE;
 				}
 			}
 		}
@@ -900,7 +900,7 @@ void depot_frame_t::update_data()
 
 	const vector_tpl<const freight_desc_t*> &goods = get_welt()->get_goods_list();
 	for(uint32 i = 0; i<goods.get_count(); i++) {
-		vehicle_filter.append_element(new gui_scrolled_list_t::const_text_scrollitem_t(translator::translate(goods[i]->get_name()), COL_BLACK));
+		vehicle_filter.append_element(new gui_scrolled_list_t::const_text_scrollitem_t(translator::translate(goods.get(i)->get_name()), COL_BLACK));
 	}
 
 	if (depot->selected_filter > vehicle_filter.count_elements()) {
@@ -1031,13 +1031,13 @@ bool depot_frame_t::action_triggered( gui_action_creator_t *komp,value_t p)
 		} else if(komp == &convoi) {
 			image_from_convoi_list( p.i );
 		} else if(komp == &pas) {
-			image_from_storage_list(&pas_vec[p.i]);
+			image_from_storage_list(&pas_vec.at(p.i));
 		} else if (komp == &electrics) {
-			image_from_storage_list(&electrics_vec[p.i]);
+			image_from_storage_list(&electrics_vec.at(p.i));
 		} else if(komp == &loks) {
-			image_from_storage_list(&loks_vec[p.i]);
+			image_from_storage_list(&loks_vec.at(p.i));
 		} else if(komp == &waggons) {
-			image_from_storage_list(&waggons_vec[p.i]);
+			image_from_storage_list(&waggons_vec.at(p.i));
 		} else if(komp == &bt_obsolete) {
 			show_retired_vehicles = (show_retired_vehicles==0);
 			depot_t::update_all_win();
@@ -1076,7 +1076,7 @@ bool depot_frame_t::action_triggered( gui_action_creator_t *komp,value_t p)
 			if(  (uint32)(selection-1)<(uint32)line_selector.count_elements()  ) {
 				vector_tpl<linehandle_t> lines;
 				get_line_list(depot, &lines);
-				selected_line = lines[selection - 1];
+				selected_line = lines.get(selection - 1);
 				depot->set_selected_line(selected_line);
 			}
 			else {
@@ -1332,8 +1332,8 @@ void depot_frame_t::draw_vehicle_info_text(koord pos)
 
 	if ((sel_index != -1) && (tabs.getroffen(x-pos.x,y-pos.y))) {
 		const vector_tpl<gui_image_list_t::image_data_t>& vec = (lst == &electrics ? electrics_vec : (lst == &pas ? pas_vec : (lst == &loks ? loks_vec : waggons_vec)));
-		veh_type = vehikelbauer_t::get_info(vec[sel_index].text);
-		if (vec[sel_index].count > 0) {
+		veh_type = vehikelbauer_t::get_info(vec.get(sel_index).text);
+		if (vec.get(sel_index).count > 0) {
 			value = calc_restwert(veh_type) / 100;
 		}
 	}

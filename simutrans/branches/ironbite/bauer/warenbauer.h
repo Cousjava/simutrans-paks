@@ -53,7 +53,7 @@ public:
 	*/
 	static const freight_desc_t *get_info(const char* name);
 
-	static const freight_desc_t *get_info(uint16 idx) { return waren[idx]; }
+	static const freight_desc_t *get_info(uint16 idx) { return waren.get(idx); }
 
 	static uint16 get_waren_anzahl() { return waren.get_count(); }
 

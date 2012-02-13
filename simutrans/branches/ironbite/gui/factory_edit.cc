@@ -60,7 +60,7 @@ factory_edit_frame_t::factory_edit_frame_t(spieler_t* sp_, karte_t* welt) :
 	land_chain_tool.set_default_param(param_str);
 	city_chain_tool.set_default_param(param_str);
 	fab_tool.set_default_param(param_str);
-	land_chain_tool.cursor = city_chain_tool.cursor = fab_tool.cursor = werkzeug_t::general_tool[WKZ_BUILD_FACTORY]->cursor;
+	land_chain_tool.cursor = city_chain_tool.cursor = fab_tool.cursor = werkzeug_t::general_tool.get(WKZ_BUILD_FACTORY)->cursor;
 
 	fab_besch = NULL;
 
@@ -152,17 +152,17 @@ void factory_edit_frame_t::fill_list( bool translate )
 	for(  uint i=0;  i<fablist.get_count();  i++  ) {
 		// color code for objects: BLACK: normal, YELLOW: consumer only, GREEN: source only
 		COLOR_VAL color=COL_BLACK;
-		if(fablist[i]->get_produkt(0)==NULL) {
+		if(fablist.get(i)->get_produkt(0)==NULL) {
 			color = COL_BLUE;
 		}
-		else if(fablist[i]->get_lieferant(0)==NULL) {
+		else if(fablist.get(i)->get_lieferant(0)==NULL) {
 			color = COL_DARK_GREEN;
 		}
 		scl.append_element( new gui_scrolled_list_t::const_text_scrollitem_t(
-			translate ? translator::translate( fablist[i]->get_name() ):fablist[i]->get_name(),
+			translate ? translator::translate( fablist.get(i)->get_name() ):fablist.get(i)->get_name(),
 			color )
 		);
-		if(fablist[i]==fab_besch) {
+		if(fablist.get(i)==fab_besch) {
 			scl.set_selection(scl.get_count()-1);
 		}
 	}
@@ -216,7 +216,7 @@ void factory_edit_frame_t::change_item_info(sint32 entry)
 {
 	if(entry>=0  &&  entry<(sint32)fablist.get_count()) {
 
-		const fabrik_besch_t *new_fab_besch = fablist[entry];
+		const fabrik_besch_t *new_fab_besch = fablist.get(entry);
 		if(new_fab_besch!=fab_besch) {
 
 			fab_besch = new_fab_besch;
@@ -287,7 +287,7 @@ void factory_edit_frame_t::change_item_info(sint32 entry)
 			}
 			buf.append("\n");
 
-			fabrik_besch_t const& f = *fablist[entry];
+			fabrik_besch_t const& f = *fablist.get(entry);
 			buf.printf( translator::translate("Passenger Demand %d\n"), f.get_pax_demand()  != 65535 ? f.get_pax_demand()  : f.get_pax_level());
 			buf.printf( translator::translate("Mail Demand %d\n"),      f.get_mail_demand() != 65535 ? f.get_mail_demand() : f.get_pax_level() >> 2);
 
@@ -313,7 +313,7 @@ void factory_edit_frame_t::change_item_info(sint32 entry)
 			}
 
 			// now for the tool
-			fab_besch = fablist[entry];
+			fab_besch = fablist.get(entry);
 		}
 
 		// change lable numbers
@@ -374,6 +374,6 @@ void factory_edit_frame_t::change_item_info(sint32 entry)
 		prod_str[0] = 0;
 		tstrncpy(rot_str, translator::translate("random"), lengthof(rot_str));
 		fab_besch = NULL;
-		welt->set_werkzeug( werkzeug_t::general_tool[WKZ_ABFRAGE], sp );
+		welt->set_werkzeug( werkzeug_t::general_tool.get(WKZ_ABFRAGE), sp );
 	}
 }

@@ -61,7 +61,7 @@ citybuilding_edit_frame_t::citybuilding_edit_frame_t(spieler_t* sp_, karte_t* we
 	rot_str[0] = 0;
 	besch = NULL;
 	haus_tool.set_default_param(NULL);
-	haus_tool.cursor = werkzeug_t::general_tool[WKZ_BUILD_HAUS]->cursor;
+	haus_tool.cursor = werkzeug_t::general_tool.get(WKZ_BUILD_HAUS)->cursor;
 
 	bt_res.init( button_t::square_state, "residential house", koord(get_tab_panel_width()+2*MARGIN, offset_of_comp-4 ) );
 	bt_res.add_listener(this);
@@ -213,7 +213,7 @@ void citybuilding_edit_frame_t::change_item_info(sint32 entry)
 {
 	if(entry>=0  &&  entry<(sint32)hauslist.get_count()) {
 
-		const haus_besch_t *new_besch = hauslist[entry];
+		const haus_besch_t *new_besch = hauslist.get(entry);
 		if(new_besch!=besch) {
 
 			buf.clear();
@@ -281,6 +281,6 @@ void citybuilding_edit_frame_t::change_item_info(sint32 entry)
 	}
 	else if(welt->get_werkzeug(sp->get_player_nr())==&haus_tool) {
 		besch = NULL;
-		welt->set_werkzeug( werkzeug_t::general_tool[WKZ_ABFRAGE], sp );
+		welt->set_werkzeug( werkzeug_t::general_tool.get(WKZ_ABFRAGE), sp );
 	}
 }

@@ -128,7 +128,7 @@ bool labellist_stats_t::infowin_event(const event_t * ev)
 		return false;
 	}
 
-	koord pos = labels[line];
+	koord pos = labels.get(line);
 	if (pos==koord::invalid) {
 		return false;
 	}
@@ -164,7 +164,7 @@ void labellist_stats_t::recalc_size()
 	static cbuffer_t buf;
 
 	for(  uint32 i=0;  i<labels.get_count();   i++) {
-		const koord pos = labels[i];
+		const koord pos = labels.get(i);
 
 		buf.clear();
 
@@ -217,7 +217,7 @@ void labellist_stats_t::zeichnen(koord offset)
 
 	// changes to loop affecting x_size must be copied to ::recalc_size()
 	for (uint32 i=0; i<labels.get_count()  &&  yoff<end; i++) {
-		const koord pos = labels[i];
+		const koord pos = labels.get(i);
 
 		// skip invisible lines
 		if(yoff<start) {

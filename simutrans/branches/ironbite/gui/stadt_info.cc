@@ -314,8 +314,8 @@ bool stadt_info_t::action_triggered( gui_action_creator_t *komp,value_t /* */)
 	if(  komp==&allow_growth  ) {
 		sprintf(param,"g%hi,%hi,%hi", stadt->get_pos().x, stadt->get_pos().y, !stadt->get_citygrowth() );
 		karte_t *welt = stadt->get_welt();
-		werkzeug_t::simple_tool[WKZ_CHANGE_CITY_TOOL]->set_default_param( param );
-		welt->set_werkzeug( werkzeug_t::simple_tool[WKZ_CHANGE_CITY_TOOL],welt->get_active_player());
+		werkzeug_t::simple_tool.get(WKZ_CHANGE_CITY_TOOL)->set_default_param( param );
+		welt->set_werkzeug( werkzeug_t::simple_tool.get(WKZ_CHANGE_CITY_TOOL),welt->get_active_player());
 		return true;
 	}
 	if(  komp==&name_input  ) {

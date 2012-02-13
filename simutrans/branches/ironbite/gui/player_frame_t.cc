@@ -147,8 +147,8 @@ bool ki_kontroll_t::action_triggered( gui_action_creator_t *komp,value_t p )
 			else {
 				// activate
 				sprintf( param, "a,%i,%i", i, !welt->get_spieler(i)->is_active() );
-				werkzeug_t::simple_tool[WKZ_SET_PLAYER_TOOL]->set_default_param( param );
-				welt->set_werkzeug( werkzeug_t::simple_tool[WKZ_SET_PLAYER_TOOL], welt->get_active_player() );
+				werkzeug_t::simple_tool.get(WKZ_SET_PLAYER_TOOL)->set_default_param( param );
+				welt->set_werkzeug( werkzeug_t::simple_tool.get(WKZ_SET_PLAYER_TOOL), welt->get_active_player() );
 			}
 			break;
 		}

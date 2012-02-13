@@ -22,8 +22,8 @@ bool wolke_t::register_besch(const skin_besch_t* besch)
 {
 	// avoid duplicates with same name
 	for(uint8 i=0; i<all_clouds.get_count(); i++) {
-		if (strcmp(all_clouds[i]->get_name(),besch->get_name())==0) {
-			all_clouds[i] = besch;
+		if (strcmp(all_clouds.get(i)->get_name(),besch->get_name())==0) {
+			all_clouds.at(i) = besch;
 			return true;
 		}
 	}
@@ -102,7 +102,7 @@ bool wolke_t::sync_step(long delta_t)
 
 image_id wolke_t::get_bild() const 
 {
-	return all_clouds[cloud_nr]->get_bild_nr(insta_zeit/divisor); 
+	return all_clouds.get(cloud_nr)->get_bild_nr(insta_zeit/divisor); 
 }
 
 

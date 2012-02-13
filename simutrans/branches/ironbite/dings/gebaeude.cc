@@ -840,7 +840,7 @@ void gebaeude_t::rdwr(loadsave_t *file)
 		}
 		file->rdwr_long(city_index);
 		if(  file->is_loading()  &&  city_index!=-1  &&  (tile==NULL  ||  tile->get_besch()==NULL  ||  tile->get_besch()->is_connected_with_town())  ) {
-			ptr.stadt = welt->get_staedte()[city_index];
+			ptr.stadt = welt->get_staedte().get(city_index);
 		}
 	}
 

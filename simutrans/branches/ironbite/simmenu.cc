@@ -330,7 +330,7 @@ void werkzeug_t::read_menu(const std::string &objfilename)
 		 * final is the sound
 		 * -1 will disable any of them
 		 */
-		werkzeug_t *w = general_tool[i];
+		werkzeug_t *w = general_tool.get(i);
 		if(*str  &&  *str!=',') {
 			// ok, first comes icon
 			while(*str==' ') {
@@ -402,7 +402,7 @@ void werkzeug_t::read_menu(const std::string &objfilename)
 		char id[256];
 		sprintf( id, "simple_tool[%i]", i );
 		const char *str = contents.get( id );
-		werkzeug_t *w = simple_tool[i];
+		werkzeug_t *w = simple_tool.get(i);
 		/* str should now contain something like 1,2,-1
 		 * first parameter is the image number in "GeneralTools"
 		 * next is the cursor in "GeneralTools"
@@ -453,7 +453,7 @@ void werkzeug_t::read_menu(const std::string &objfilename)
 		char id[256];
 		sprintf( id, "dialog_tool[%i]", i );
 		const char *str = contents.get( id );
-		werkzeug_t *w = dialog_tool[i];
+		werkzeug_t *w = dialog_tool.get(i);
 		/* str should now contain something like 1,2,-1
 		 * first parameter is the image number in "GeneralTools"
 		 * next is the cursor in "GeneralTools"
@@ -505,7 +505,7 @@ void werkzeug_t::read_menu(const std::string &objfilename)
 	// first: add main menu
 	toolbar_tool.resize( skinverwaltung_t::werkzeuge_toolbars->get_bild_anzahl() );
 	toolbar_tool.append(new toolbar_t("", "", size));
-	toolbar_tool[0]->id = TOOLBAR_TOOL;
+	toolbar_tool.get(0)->id = TOOLBAR_TOOL;
 	// now for the rest
 	for(  uint16 i=0;  i<toolbar_tool.get_count();  i++  ) {
 		char id[256];
@@ -604,7 +604,7 @@ void werkzeug_t::read_menu(const std::string &objfilename)
 						// now create tool
 						addtool = create_general_tool( toolnr );
 						// copy defaults
-						*addtool = *(general_tool[toolnr]);
+						*addtool = *(general_tool.get(toolnr));
 						// add specials
 						if(icon!=IMG_LEER) {
 							addtool->icon = icon;
@@ -619,7 +619,7 @@ void werkzeug_t::read_menu(const std::string &objfilename)
 						general_tool.append( addtool );
 					}
 					else {
-						addtool = general_tool[toolnr];
+						addtool = general_tool.get(toolnr);
 					}
 				}
 				else {
@@ -630,7 +630,7 @@ void werkzeug_t::read_menu(const std::string &objfilename)
 				if(  toolnr<SIMPLE_TOOL_COUNT  ) {
 					if(icon!=IMG_LEER  ||  key_str  ||  param_str) {
 						addtool = create_simple_tool( toolnr );
-						*addtool = *(simple_tool[toolnr]);
+						*addtool = *(simple_tool.get(toolnr));
 						if(icon!=IMG_LEER) {
 							addtool->icon = icon;
 						}
@@ -644,7 +644,7 @@ void werkzeug_t::read_menu(const std::string &objfilename)
 						simple_tool.append( addtool );
 					}
 					else {
-						addtool = simple_tool[toolnr];
+						addtool = simple_tool.get(toolnr);
 					}
 				}
 				else {
@@ -655,7 +655,7 @@ void werkzeug_t::read_menu(const std::string &objfilename)
 				if(  toolnr<DIALOGE_TOOL_COUNT  ) {
 					if(icon!=IMG_LEER  ||  key_str  ||  param_str) {
 						addtool = create_dialog_tool( toolnr );
-						*addtool = *(dialog_tool[toolnr]);
+						*addtool = *(dialog_tool.get(toolnr));
 						if(icon!=IMG_LEER) {
 							addtool->icon = icon;
 						}
@@ -669,7 +669,7 @@ void werkzeug_t::read_menu(const std::string &objfilename)
 						dialog_tool.append( addtool );
 					}
 					else {
-						addtool = dialog_tool[toolnr];
+						addtool = dialog_tool.get(toolnr);
 					}
 				}
 				else {
@@ -706,7 +706,7 @@ void werkzeug_t::read_menu(const std::string &objfilename)
 				addtool->command_key = 1;
 			}
 			if(addtool) {
-				toolbar_tool[i]->append(addtool);
+				toolbar_tool.get(i)->append(addtool);
 			}
 		}
 	}
@@ -806,7 +806,7 @@ void toolbar_t::update(karte_t *welt, spieler_t *sp)
 	const bool create = (wzw == NULL);
 	if(create) {
 		DBG_MESSAGE("toolbar_t::update()","create toolbar %s",default_param);
-		wzw = new werkzeug_waehler_t( welt, default_param, helpfile, toolbar_tool.index_of(this), iconsize, this!=werkzeug_t::toolbar_tool[0] );
+		wzw = new werkzeug_waehler_t( welt, default_param, helpfile, toolbar_tool.index_of(this), iconsize, this!=werkzeug_t::toolbar_tool.get(0) );
 	}
 	else {
 		DBG_MESSAGE("toolbar_t::update()","update toolbar %s",default_param);
@@ -893,7 +893,7 @@ bool toolbar_t::init(karte_t *welt, spieler_t *sp)
 		}
 
 	}
-	else if(!close  &&  this!=werkzeug_t::toolbar_tool[0]) {
+	else if(!close  &&  this!=werkzeug_t::toolbar_tool.get(0)) {
 		// not open and not main menu
 		create_win( wzw, w_info|w_do_not_delete|w_no_overlap, magic_toolbar+toolbar_tool.index_of(this) );
 		DBG_MESSAGE("toolbar_t::init()", "ID=%id", id);

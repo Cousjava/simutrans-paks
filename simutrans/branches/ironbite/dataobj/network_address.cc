@@ -38,6 +38,6 @@ void address_list_t::rdwr(packet_t *packet)
 		if (packet->is_loading()) {
 			append(net_address_t());
 		}
-		(*this)[i].rdwr(packet);
+		at(i).rdwr(packet);
 	}
 }

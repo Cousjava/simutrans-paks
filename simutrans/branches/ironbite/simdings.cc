@@ -25,6 +25,7 @@
 #include "simworld.h"
 #include "dings/baum.h"
 #include "vehicle/simvehikel.h"
+#include "dataobj/umgebung.h"
 #include "dataobj/translator.h"
 #include "dataobj/loadsave.h"
 #include "boden/grund.h"

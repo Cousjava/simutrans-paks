@@ -827,7 +827,7 @@ void reliefkarte_t::draw_schedule(const koord pos) const
 
 	// get stop list from schedule
 	for( int i=0;  i<fpl->get_count();  i++  ) {
-		koord new_koord = fpl->eintrag[i].pos.get_2d();
+		koord new_koord = fpl->eintrag.get(i).pos.get_2d();
 		karte_to_screen( new_koord );
 		new_koord += pos;
 
@@ -839,7 +839,7 @@ void reliefkarte_t::draw_schedule(const koord pos) const
 			first_koord = new_koord;
 		}
 		//check, if mouse is near coordinate
-		if(koord_distance(last_world_pos,fpl->eintrag[i].pos.get_2d())<=2) {
+		if(koord_distance(last_world_pos,fpl->eintrag.get(i).pos.get_2d())<=2) {
 			// draw stop name with an index
 			cbuffer_t buf;
 			buf.clear();

@@ -65,7 +65,7 @@ public:
 
 	void entferne(spieler_t *sp);
 
-	const groundobj_besch_t* get_besch() const { return groundobj_typen[groundobjtype]; }
+	const groundobj_besch_t* get_besch() const { return groundobj_typen.get(groundobjtype); }
 
 	void * operator new(size_t s);
 	void operator delete(void *p);

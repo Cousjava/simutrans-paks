@@ -83,7 +83,7 @@ public:
 	 * @return Koordinate an index n
 	 * @author Hj. Malthaner
 	 */
-	const koord3d& position_bei(const uint16 n) const { return route[n]; }
+	const koord3d& position_bei(const uint16 n) const { return route.get(n); }
 
 	koord3d const& front() const { return route.front(); }
 

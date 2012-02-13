@@ -57,7 +57,7 @@ public:
 	uint8 get_aktuell() const { return aktuell; }
 
 	// always returns a valid entry to the current stop
-	const struct linieneintrag_t &get_current_eintrag() const { return aktuell>=eintrag.get_count() ? dummy_eintrag : eintrag[aktuell]; }
+	const struct linieneintrag_t &get_current_eintrag() const { return aktuell>=eintrag.get_count() ? dummy_eintrag : eintrag.get(aktuell); }
 
 private:
 	/**

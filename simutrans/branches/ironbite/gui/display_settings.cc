@@ -258,8 +258,8 @@ bool color_gui_t::action_triggered( gui_action_creator_t *komp, value_t v)
 		if(  !umgebung_t::networkmode  ||  welt->get_active_player_nr()==1  ) {
 			static char level[16];
 			sprintf(level, "%li", v.i);
-			werkzeug_t::simple_tool[WKZ_TRAFFIC_LEVEL&0xFFF]->set_default_param( level );
-			welt->set_werkzeug( werkzeug_t::simple_tool[WKZ_TRAFFIC_LEVEL&0xFFF], welt->get_active_player() );
+			werkzeug_t::simple_tool.get(WKZ_TRAFFIC_LEVEL&0xFFF)->set_default_param( level );
+			welt->set_werkzeug( werkzeug_t::simple_tool.get(WKZ_TRAFFIC_LEVEL&0xFFF), welt->get_active_player() );
 		}
 		else {
 			traffic_density.set_value(welt->get_settings().get_verkehr_level());
@@ -277,11 +277,11 @@ bool color_gui_t::action_triggered( gui_action_creator_t *komp, value_t v)
 		umgebung_t::scroll_multi = -umgebung_t::scroll_multi;
 	} else if((buttons+7)==komp) {
 		if(  !umgebung_t::networkmode  ||  welt->get_active_player_nr()==1  ) {
-			welt->set_werkzeug( werkzeug_t::simple_tool[WKZ_TOOGLE_PAX&0xFFF], welt->get_active_player() );
+			welt->set_werkzeug( werkzeug_t::simple_tool.get(WKZ_TOOGLE_PAX&0xFFF), welt->get_active_player() );
 		}
 	} else if((buttons+8)==komp) {
 		if(  !umgebung_t::networkmode  ||  welt->get_active_player_nr()==1  ) {
-			welt->set_werkzeug( werkzeug_t::simple_tool[WKZ_TOOGLE_PEDESTRIANS&0xFFF], welt->get_active_player() );
+			welt->set_werkzeug( werkzeug_t::simple_tool.get(WKZ_TOOGLE_PEDESTRIANS&0xFFF), welt->get_active_player() );
 		}
 	} else if((buttons+9)==komp) {
 		umgebung_t::night_shift = !umgebung_t::night_shift;

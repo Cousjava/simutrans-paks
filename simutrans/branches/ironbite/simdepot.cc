@@ -153,7 +153,7 @@ void depot_t::convoi_arrived(convoihandle_t acnv, bool fpl_adjust)
 		schedule_t *fpl = acnv->get_schedule();
 		for(  int i=0;  i<fpl->get_count();  i++  ) {
 			// only if convoi found
-			if(fpl->eintrag[i].pos==get_pos()) {
+			if(fpl->eintrag.get(i).pos==get_pos()) {
 				fpl->set_aktuell( i );
 				fpl->remove();
 				acnv->set_schedule(fpl);
@@ -443,7 +443,7 @@ void depot_t::rdwr_vehikel(slist_tpl<vehikel_t *> &list, loadsave_t *file)
 		// no house definition for this => use a normal hut ...
 		if(  this->get_tile()==NULL  ) {
 			dbg->error( "depot_t::rdwr()", "tile for depot not found!" );
-			set_tile( (*hausbauer_t::get_citybuilding_list( gebaeude_t::wohnung ))[0]->get_tile(0) );
+			set_tile( hausbauer_t::get_citybuilding_list( gebaeude_t::wohnung )->get(0)->get_tile(0) );
 		}
 
 		DBG_MESSAGE("depot_t::vehikel_laden()","loading %d vehicles",count);
@@ -512,7 +512,7 @@ const char * depot_t::ist_entfernbar(const spieler_t *sp)
 }
 
 
-slist_tpl<const vehikel_besch_t*>* depot_t::get_vehicle_type()
+slist_tpl<vehikel_besch_t const*> const& depot_t::get_vehicle_type() const
 {
 	return vehikelbauer_t::get_info(get_wegtyp());
 }

@@ -200,7 +200,7 @@ bool nwc_ready_t::execute(karte_t *welt)
 		}
 		// check the validity of the map counter
 		for(  uint32 i=0;  i<all_map_counters.get_count();  ++i  ) {
-			if(  all_map_counters[i]==map_counter  ) {
+			if(  all_map_counters.get(i)==map_counter  ) {
 				// unpause the sender by sending nwc_ready_t back
 				nwc_ready_t nwc(sync_step, map_counter, checklist);
 				if(  !nwc.send( get_sender())  ) {
@@ -813,7 +813,7 @@ void nwc_tool_t::do_command(karte_t *welt)
 			index = tool_list.get_count()-1;
 		}
 		// this node stores the tool and its default_param
-		tool_node = &(tool_list[index]);
+		tool_node = &(tool_list.at(index));
 
 		wkz = tool_node->get_tool();
 		// create a new tool if necessary
@@ -874,7 +874,7 @@ bool nwc_service_t::execute(karte_t *welt)
 	while(exec_time.get_count() <= SRVC_MAX) {
 		exec_time.append(time - 60000);
 	}
-	if (flag>=SRVC_MAX  ||  time - exec_time[flag] < 60000  ||  !umgebung_t::server) {
+	if (flag>=SRVC_MAX  ||  time - exec_time.get(flag) < 60000  ||  !umgebung_t::server) {
 		// wrong flag, last execution less than 1min ago, no server
 		return true;  // to delete
 	}

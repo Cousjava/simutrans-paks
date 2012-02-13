@@ -87,7 +87,7 @@ bool citylist_stats_t::infowin_event(const event_t * ev)
 		return false;
 	}
 
-	stadt_t* stadt = city_list[line];
+	stadt_t* stadt = city_list.get(line);
 	if(  ev->button_state>0  &&  ev->cx>0  &&  ev->cx<15  ) {
 		line_selected = line;
 	}
@@ -129,7 +129,7 @@ void citylist_stats_t::zeichnen(koord offset)
 	}
 
 	for (uint32 i = 0; i < city_list.get_count(); i++) {
-		const stadt_t* stadt = city_list[i];
+		const stadt_t* stadt = city_list.get(i);
 		sint32 bev = stadt->get_einwohner();
 		sint32 growth = stadt->get_wachstum();
 

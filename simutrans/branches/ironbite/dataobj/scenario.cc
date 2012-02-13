@@ -27,6 +27,7 @@ scenario_t::scenario_t(karte_t *w)
 	what_scenario = 0;
 	city = NULL;
 	target_factory = NULL;
+	factor = 0;
 }
 
 
@@ -60,8 +61,8 @@ void scenario_t::init( const char *filename, karte_t *w )
 		// find a city with this name ...
 		const weighted_vector_tpl<stadt_t*>& staedte = welt->get_staedte();
 		for(  int i=0;  staedte.get_count();  i++  ) {
-			if(  strcmp( staedte[i]->get_name(), cityname )==0  ) {
-				city = staedte[i];
+			if(  strcmp( staedte.get(i)->get_name(), cityname )==0  ) {
+				city = staedte.get(i);
 			}
 		}
 	}
@@ -97,7 +98,7 @@ void scenario_t::rdwr(loadsave_t *file)
 
 	if(  file->is_loading()  ) {
 		if(  city_nr < welt->get_staedte().get_count()  ) {
-			city = welt->get_staedte()[city_nr];
+			city = welt->get_staedte().get(city_nr);
 		}
 		target_factory = fabrik_t::get_fab( welt, fabpos );
 	}
@@ -137,7 +138,7 @@ void scenario_t::get_factory_producing( fabrik_t *fab, int &producing, int &exis
 	// now all delivering factories
 	const vector_tpl <koord> & sources = fab->get_suppliers();
 	for( unsigned q=0;  q<sources.get_count();  q++  ) {
-		fabrik_t *qfab = fabrik_t::get_fab(welt,sources[q]);
+		fabrik_t *qfab = fabrik_t::get_fab(welt, sources.get(q));
 		if(  own_producing==own_existing  ) {
 			// fully supplied => counts as 100% ...
 			int i=0, cnt=0;
@@ -185,7 +186,7 @@ int scenario_t::completed(int player_nr)
 		{
 			spieler_t *sp = welt->get_spieler(player_nr);
 			int pts = 0;
-			for (vector_tpl<convoihandle_t>::const_iterator i = welt->convois_begin(), end = welt->convois_end(); pts < factor  &&  i != end; ++i) {
+			for (vector_tpl<convoihandle_t>::const_iterator i = welt->convoys().begin(), end = welt->convoys().end(); pts < factor && i != end; ++i) {
 				convoihandle_t cnv = *i;
 				if (cnv->get_besitzer()         == sp                &&
 						cnv->get_jahresgewinn()     >  0                 &&

@@ -3,11 +3,9 @@
 
 #include "extend_edit.h"
 
-#include "components/gui_label.h"
-
-
 class baum_besch_t;
 class wkz_plant_tree_t;
+template <class T> class vector_tpl;
 
 class baum_edit_frame_t : public extend_edit_gui_t
 {
@@ -17,7 +15,7 @@ private:
 
 	const baum_besch_t *besch;
 
-	vector_tpl<const baum_besch_t *>baumlist;
+	vector_tpl<const baum_besch_t *> * baumlist;
 
 	void fill_list( bool translate );
 
@@ -25,6 +23,7 @@ private:
 
 public:
 	baum_edit_frame_t(spieler_t* sp,karte_t* welt);
+	virtual ~baum_edit_frame_t();
 
 	/**
 	* in top-level fenstern wird der Name in der Titelzeile dargestellt

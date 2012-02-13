@@ -50,7 +50,7 @@ void route_t::kopiere(const route_t *r)
 	route.clear();
 	route.resize(hops + 1);
 	for( unsigned int i=0;  i<=hops;  i++ ) {
-		route.append(r->route[i]);
+		route.append(r->route.get(i));
 	}
 }
 
@@ -185,8 +185,8 @@ bool route_t::find_route(karte_t *welt, const koord3d start, driver_t *fahr, con
 			INT_CHECK("route 161");
 		}
 
-		tmp = open[0];
-		open.remove_at( 0 );
+		tmp = open.get(0);
+		open.remove_at(0);
 
 		close.append(tmp);
 		gr = tmp->gr;
@@ -212,7 +212,7 @@ bool route_t::find_route(karte_t *welt, const koord3d start, driver_t *fahr, con
 
 				// already in open list?
 				for(  index=0;  index<open.get_count();  index++  ) {
-					if (open[index]->gr == to) {
+					if (open.get(index)->gr == to) {
 						break;
 					}
 				}
@@ -224,7 +224,7 @@ bool route_t::find_route(karte_t *welt, const koord3d start, driver_t *fahr, con
 
 				// already in closed list (i.e. all processed nodes)
 				for( index=0;  index<close.get_count();  index++  ) {
-					if (close[index]->gr == to) {
+					if (close.get(index)->gr == to) {
 						break;
 					}
 				}
@@ -533,14 +533,14 @@ DBG_MESSAGE("route_t::calc_route()","No route from %d,%d to %d,%d found",start.x
 
 			// first: find out how many tiles I am already in the station
 			max_len--;
-			for(  sint32 i=route.get_count()-1;  i>=0  &&  max_len>0  &&  halt == haltestelle_t::get_halt( welt, route[i], NULL );  i--, max_len--  ) {
+			for(  sint32 i=route.get_count()-1;  i>=0  &&  max_len>0  &&  halt == haltestelle_t::get_halt( welt, route.get(i), NULL );  i--, max_len--  ) {
 			}
 
 			// and now go forward, if possible
 			if(  max_len>0  ) {
 
 				const uint32 max_n = route.get_count()-1;
-				const koord zv = route[max_n].get_2d() - route[max_n - 1].get_2d();
+				const koord zv = route.get(max_n).get_2d() - route.get(max_n - 1).get_2d();
 				const int ribi = ribi_typ(zv);//fahr->get_ribi(welt->lookup(start));
 
 				grund_t *gr = welt->lookup(start);
@@ -583,7 +583,7 @@ void route_t::rdwr(loadsave_t *file)
 	else {
 		// writing
 		for(sint32 i=0; i<=max_n; i++) {
-			route[i].rdwr(file);
+			route.at(i).rdwr(file);
 		}
 	}
 }

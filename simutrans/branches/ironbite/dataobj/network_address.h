@@ -32,7 +32,7 @@ public:
 
 	bool contains(const net_address_t &other) {
 		for(uint32 i=0; i<get_count(); i++) {
-			if ((*this)[i].matches(other)) {
+			if (this->get(i).matches(other)) {
 				return true;
 			}
 		}

@@ -143,12 +143,12 @@ bool ai_goods_t::get_factory_tree_lowest_missing( fabrik_t *fab )
 
 		const vector_tpl <koord> & sources = fab->get_suppliers();
 		for( unsigned q=0;  q<sources.get_count();  q++  ) {
-			fabrik_t *qfab = fabrik_t::get_fab(welt,sources[q]);
+			fabrik_t *qfab = fabrik_t::get_fab(welt,sources.get(q));
 			const fabrik_besch_t* const fb = qfab->get_besch();
 			for (uint qq = 0; qq < fb->get_produkte(); qq++) {
 				if (fb->get_produkt(qq)->get_ware() == ware
-					  &&  !is_forbidden( fabrik_t::get_fab(welt,sources[q]), fab, ware )
-					  &&  !is_connected( sources[q], fab->get_pos().get_2d(), ware )  ) {
+					  &&  !is_forbidden( fabrik_t::get_fab(welt,sources.get(q)), fab, ware )
+					  &&  !is_connected( sources.get(q), fab->get_pos().get_2d(), ware )  ) {
 					// find out how much is there
 					const array_tpl<ware_production_t>& ausgang = qfab->get_ausgang();
 					uint ware_nr;
@@ -196,9 +196,9 @@ int ai_goods_t::get_factory_tree_missing_count( fabrik_t *fab )
 		bool complete = false;	// found at least one factory
 		const vector_tpl <koord> & sources = fab->get_suppliers();
 		for( unsigned q=0;  q<sources.get_count();  q++  ) {
-			fabrik_t *qfab = fabrik_t::get_fab(welt,sources[q]);
+			fabrik_t *qfab = fabrik_t::get_fab(welt,sources.get(q));
 			if(!qfab) {
-				dbg->error( "fabrik_t::get_fab()","fab %s at %s does not find supplier at %s.", fab->get_name(), fab->get_pos().get_str(), sources[q].get_str() );
+				dbg->error( "fabrik_t::get_fab()","fab %s at %s does not find supplier at %s.", fab->get_name(), fab->get_pos().get_str(), sources.get(q).get_str() );
 				continue;
 			}
 			if( !is_forbidden( qfab, fab, ware ) ) {
@@ -208,7 +208,7 @@ int ai_goods_t::get_factory_tree_missing_count( fabrik_t *fab )
 						int n = get_factory_tree_missing_count( qfab );
 						if(n>=0) {
 							complete = true;
-							if(  !is_connected( sources[q], fab->get_pos().get_2d(), ware )  ) {
+							if(  !is_connected( sources.get(q), fab->get_pos().get_2d(), ware )  ) {
 								numbers += 1;
 							}
 							numbers += n;
@@ -231,7 +231,7 @@ void add_neighbourhood( vector_tpl<koord> &list, const uint16 size)
 	for( uint32 i = 0; i < old_size; i++ ) {
 		for( test.x = -size; test.x < size+1; test.x++ ) {
 			for( test.y = -size; test.y < size+1; test.y++ ) {
-				list.append_unique( list[i] + test );
+				list.append_unique( list.get(i) + test );
 			}
 		}
 	}
@@ -266,7 +266,7 @@ bool ai_goods_t::suche_platz1_platz2(fabrik_t *qfab, fabrik_t *zfab, int length 
 				// Any halts here?
 				vector_tpl<koord> halts;
 				for( uint32 j = 0; j < one_more.get_count(); j++ ) {
-					halthandle_t halt = haltestelle_t::get_halt( welt, one_more[j], this );
+					halthandle_t halt = haltestelle_t::get_halt( welt, one_more.get(j), this );
 					if( halt.is_bound() && !halts.is_contained(halt->get_basis_pos()) ) {
 						bool halt_connected = halt->get_fab_list().is_contained( fab );
 						for( slist_tpl< haltestelle_t::tile_t >::const_iterator iter = halt->get_tiles().begin(); iter != halt->get_tiles().end(); ++iter ) {
@@ -282,7 +282,7 @@ bool ai_goods_t::suche_platz1_platz2(fabrik_t *qfab, fabrik_t *zfab, int length 
 				for( uint8 k = 0; k < 2; k++ ) {
 					// On which tiles we can start?
 					for( uint32 j = 0; j < next->get_count(); j++ ) {
-						const grund_t* gr = welt->lookup_kartenboden( next->operator[](j) );
+						const grund_t* gr = welt->lookup_kartenboden( next->get(j) );
 						if(  gr  &&  gr->get_grund_hang() == hang_t::flach  &&  !gr->hat_wege()  &&  !gr->get_leitung()  ) {
 							tile_list[i].append_unique( gr->get_pos() );
 						}
@@ -1120,7 +1120,7 @@ DBG_MESSAGE("ai_goods_t::step()","remove already constructed rail between %i,%i 
 					if(!lines.empty()) {
 						linehandle_t line = lines.back();
 						schedule_t *fpl=line->get_schedule();
-						if(fpl->get_count()>1  &&  haltestelle_t::get_halt(welt,fpl->eintrag[0].pos,this)==start_halt) {
+						if(fpl->get_count()>1  &&  haltestelle_t::get_halt(welt,fpl->eintrag.get(0).pos,this)==start_halt) {
 							while(line->count_convoys()>0) {
 								convoihandle_t cnv = line->get_convoy(0);
 								cnv->self_destruct();
@@ -1180,8 +1180,8 @@ DBG_MESSAGE("ai_goods_t::step()","remove already constructed rail between %i,%i 
 		{
 			next_construction_steps = welt->get_steps() + simrand( ai_t::construction_speed ) + 25;
 
-			for( int i = welt->get_convoi_count()-1;  i>=0;  i--  ) {
-				const convoihandle_t cnv = welt->get_convoi(i);
+			for (size_t i = welt->convoys().get_count(); i-- != 0;) {
+				convoihandle_t const cnv = welt->convoys().get(i);
 				if(!cnv.is_bound()  ||  cnv->get_besitzer()!=this) {
 					continue;
 				}
@@ -1220,8 +1220,8 @@ DBG_MESSAGE("ai_goods_t::step()","remove already constructed rail between %i,%i 
 					koord3d start_pos, end_pos;
 					schedule_t *fpl = cnv->get_schedule();
 					if(fpl  &&  fpl->get_count()>1) {
-						start_pos = fpl->eintrag[0].pos;
-						end_pos = fpl->eintrag[1].pos;
+						start_pos = fpl->eintrag.get(0).pos;
+						end_pos = fpl->eintrag.get(1).pos;
 					}
 
 					cnv->self_destruct();
@@ -1241,8 +1241,8 @@ DBG_MESSAGE("ai_goods_t::step()","remove already constructed rail between %i,%i 
 							for (vector_tpl<linehandle_t>::const_iterator iter2 = lines.begin(), end = lines.end(); iter2 != end; iter2++) {
 								linehandle_t line = *iter2;
 								schedule_t *fpl=line->get_schedule();
-								if(fpl->get_count()>1  &&  haltestelle_t::get_halt(welt,fpl->eintrag[0].pos,this)==start_halt) {
-									water_stop = koord( (start_pos.x+fpl->eintrag[0].pos.x)/2, (start_pos.y+fpl->eintrag[0].pos.y)/2 );
+								if(fpl->get_count()>1  &&  haltestelle_t::get_halt(welt,fpl->eintrag.get(0).pos,this)==start_halt) {
+									water_stop = koord( (start_pos.x+fpl->eintrag.get(0).pos.x)/2, (start_pos.y+fpl->eintrag.get(0).pos.y)/2 );
 									while(line->count_convoys()>0) {
 										convoihandle_t cnv = line->get_convoy(0);
 										cnv->self_destruct();

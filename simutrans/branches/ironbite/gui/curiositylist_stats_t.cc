@@ -107,7 +107,7 @@ bool curiositylist_stats_t::infowin_event(const event_t * ev)
 		return false;
 	}
 
-	gebaeude_t* geb = attractions[line];
+	gebaeude_t* geb = attractions.get(line);
 	if (geb==NULL) {
 		return false;
 	}
@@ -159,7 +159,7 @@ void curiositylist_stats_t::zeichnen(koord offset)
 	}
 
 	for (uint32 i=0; i<attractions.get_count()  &&  yoff<end; i++) {
-		const gebaeude_t* geb = attractions[i];
+		const gebaeude_t* geb = attractions.get(i);
 
 		int xoff = offset.x+10;
 

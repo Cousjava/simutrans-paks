@@ -205,7 +205,7 @@ void halt_detail_t::halt_detail_info()
 	if(  !halt->registered_lines.empty()  ) {
 		for (unsigned int i = 0; i<halt->registered_lines.get_count(); i++) {
 			// Line buttons only if owner ...
-			if (halt->get_welt()->get_active_player()==halt->registered_lines[i]->get_besitzer()) {
+			if (halt->get_welt()->get_active_player()==halt->registered_lines.get(i)->get_besitzer()) {
 				button_t *b = new button_t();
 				b->init( button_t::posbutton, NULL, koord(10, offset_y) );
 				b->set_targetpos( koord(-1,i) );
@@ -215,8 +215,8 @@ void halt_detail_t::halt_detail_info()
 			}
 
 			// Line labels with color of player
-			label_names.append( strdup(halt->registered_lines[i]->get_name()) );
-			gui_label_t *l = new gui_label_t( label_names.back(), PLAYER_FLAG|(halt->registered_lines[i]->get_besitzer()->get_player_color1()+0) );
+			label_names.append( strdup(halt->registered_lines.get(i)->get_name()) );
+			gui_label_t *l = new gui_label_t( label_names.back(), PLAYER_FLAG|(halt->registered_lines.get(i)->get_besitzer()->get_player_color1()+0) );
 			l->set_pos( koord(26, offset_y) );
 			linelabels.append( l );
 			cont.add_komponente( l );
@@ -250,8 +250,8 @@ void halt_detail_t::halt_detail_info()
 			cont.add_komponente( b );
 
 			// Line labels with color of player
-			label_names.append( strdup(halt->registered_convoys[i]->get_name()) );
-			gui_label_t *l = new gui_label_t( label_names.back(), PLAYER_FLAG|(halt->registered_convoys[i]->get_besitzer()->get_player_color1()+0) );
+			label_names.append( strdup(halt->registered_convoys.get(i)->get_name()) );
+			gui_label_t *l = new gui_label_t( label_names.back(), PLAYER_FLAG|(halt->registered_convoys.get(i)->get_besitzer()->get_player_color1()+0) );
 			l->set_pos( koord(26, offset_y) );
 			convoylabels.append( l );
 			cont.add_komponente( l );
@@ -289,7 +289,7 @@ void halt_detail_t::halt_detail_info()
 			offset_y += LINESPACE;
 
 			for(  uint32 idx=0;  idx<connections.get_count();  idx++  ) {
-				const haltestelle_t::connection_t &conn = connections[idx];
+				const haltestelle_t::connection_t &conn = connections.get(idx);
 				if(  conn.halt.is_bound()  ) {
 
 					has_stops = true;
@@ -338,7 +338,7 @@ bool halt_detail_t::action_triggered( gui_action_creator_t *, value_t extra)
 			// Line button pressed.
 			uint16 j=k.y;
 			if(  j < halt->registered_lines.get_count()  ) {
-				linehandle_t line=halt->registered_lines[j];
+				linehandle_t line=halt->registered_lines.get(j);
 				spieler_t *sp=halt->get_welt()->get_active_player();
 				if(  sp==line->get_besitzer()  ) {
 					//TODO:
@@ -352,7 +352,7 @@ bool halt_detail_t::action_triggered( gui_action_creator_t *, value_t extra)
 			// Knightly : lineless convoy button pressed
 			uint16 j = k.y;
 			if(  j<halt->registered_convoys.get_count()  ) {
-				convoihandle_t convoy = halt->registered_convoys[j];
+				convoihandle_t convoy = halt->registered_convoys.get(j);
 				convoy->zeige_info();
 			}
 		}

@@ -674,7 +674,7 @@ void karte_t::add_stadt(stadt_t *s)
 
 	// Knightly : add links between this city and other cities as well as attractions
 	for(  uint32 c=0;  c<stadt.get_count();  ++c  ) {
-		stadt[c]->add_target_city(s);
+		stadt.get(c)->add_target_city(s);
 	}
 	s->recalc_target_cities();
 	s->recalc_target_attractions();
@@ -701,7 +701,7 @@ bool karte_t::rem_stadt(stadt_t *s)
 
 	// Knightly : remove links between this city and other cities
 	for(  uint32 c=0;  c<stadt.get_count();  ++c  ) {
-		stadt[c]->remove_target_city(s);
+		stadt.at(c)->remove_target_city(s);
 	}
 
 	// remove all links from factories
@@ -895,7 +895,7 @@ DBG_DEBUG("karte_t::distribute_groundobjs_cities()","prepare cities");
 
 		// Ansicht auf erste Stadt zentrieren
 		if (old_x+old_y == 0)
-			change_world_position( koord3d((*pos)[0], min_hgt((*pos)[0])) );
+			change_world_position( koord3d(pos->get(0), min_hgt(pos->get(0))) );
 
 		{
 			// Loop only new cities:
@@ -903,7 +903,7 @@ DBG_DEBUG("karte_t::distribute_groundobjs_cities()","prepare cities");
 			uint32 tbegin = system_time();
 #endif
 			for(  int i=0;  i<new_anzahl_staedte;  i++  ) {
-				stadt_t* s = new stadt_t(spieler[1], (*pos)[i], 1 );
+				stadt_t* s = new stadt_t(spieler[1], pos->get(i), 1 );
 				DBG_DEBUG("karte_t::distribute_groundobjs_cities()","Erzeuge stadt %i with %ld inhabitants",i,(s->get_city_history_month())[HIST_CITICENS] );
 				add_stadt(s);
 			}
@@ -915,7 +915,7 @@ DBG_DEBUG("karte_t::distribute_groundobjs_cities()","prepare cities");
 			// townhalls available since?
 			const vector_tpl<const haus_besch_t *> *s = hausbauer_t::get_list(haus_besch_t::rathaus);
 			for (uint32 i = 0; i<s->get_count(); i++) {
-				const haus_besch_t *besch = (*s)[i];
+				const haus_besch_t *besch = s->get(i);
 				uint32 intro_year_month = besch->get_intro_year_month();
 				if(  intro_year_month<game_start  ) {
 					game_start = intro_year_month;
@@ -930,7 +930,7 @@ DBG_DEBUG("karte_t::distribute_groundobjs_cities()","prepare cities");
 
 			for(  uint32 i=old_anzahl_staedte;  i<stadt.get_count();  i++  ) {
 				// Hajo: do final init after world was loaded/created
-				stadt[i]->laden_abschliessen();
+				stadt.get(i)->laden_abschliessen();
 
 	//			int citizens=(int)(new_mittlere_einwohnerzahl*0.9);
 	//			citizens = citizens/10+simrand(2*citizens+1);
@@ -949,7 +949,7 @@ DBG_DEBUG("karte_t::distribute_groundobjs_cities()","prepare cities");
 				while(  current_bev < citizens  ) {
 					growth = min( citizens-current_bev, growth*2 );
 					current_bev += growth;
-					stadt[i]->change_size( growth );
+					stadt.get(i)->change_size( growth );
 					if(  current_bev > citizens/2  &&  not_updated  ) {
 						if(is_display_init()) {
 							old_progress ++;
@@ -1005,16 +1005,16 @@ DBG_DEBUG("karte_t::distribute_groundobjs_cities()","prepare cities");
 			// find townhall of city i and road in front of it
 			vector_tpl<koord3d> k;
 			for (int i = 0;  i < settings.get_anzahl_staedte(); ++i) {
-				koord k1(stadt[i]->get_townhall_road());
+				koord k1(stadt.get(i)->get_townhall_road());
 				if (lookup_kartenboden(k1)  &&  lookup_kartenboden(k1)->hat_weg(road_wt)) {
 					k.append(lookup_kartenboden(k1)->get_pos());
 				}
 				else {
 					// look for a road near the townhall
-					gebaeude_t const* const gb = ding_cast<gebaeude_t>(lookup_kartenboden(stadt[i]->get_pos())->first_obj());
+					gebaeude_t const* const gb = ding_cast<gebaeude_t>(lookup_kartenboden(stadt.get(i)->get_pos())->first_obj());
 					bool ok = false;
 					if(  gb  &&  gb->ist_rathaus()  ) {
-						koord pos = stadt[i]->get_pos() + koord(-1,-1);
+						koord pos = stadt.get(i)->get_pos() + koord(-1,-1);
 						const koord size = gb->get_tile()->get_besch()->get_groesse(gb->get_tile()->get_layout());
 						koord inc(1,0);
 						// scan all adjacent tiles, take the first that has a road
@@ -1042,7 +1042,7 @@ DBG_DEBUG("karte_t::distribute_groundobjs_cities()","prepare cities");
 			for (sint32 i = 0; i < settings.get_anzahl_staedte(); ++i) {
 				city_dist.at(i,i) = 0;
 				for (sint32 j = i + 1; j < settings.get_anzahl_staedte(); ++j) {
-					city_dist.at(i,j) = koord_distance(k[i], k[j]);
+					city_dist.at(i,j) = koord_distance(k.get(i), k.get(j));
 					city_dist.at(j,i) = city_dist.at(i,j);
 					// count unbuildable connections to new cities
 					if(  j>=old_anzahl_staedte && city_dist.at(i,j) >= umgebung_t::intercity_road_length  ) {
@@ -1062,7 +1062,7 @@ DBG_DEBUG("karte_t::distribute_groundobjs_cities()","prepare cities");
 			}
 			// mark first town as connected
 			if (old_anzahl_staedte==0) {
-				city_flag[0]=conn_comp;
+				city_flag.at(0)=conn_comp;
 			}
 
 			// get a default vehikel
@@ -1087,10 +1087,10 @@ DBG_DEBUG("karte_t::distribute_groundobjs_cities()","prepare cities");
 				if(  phase == 0  ) {
 					// loop over all unconnected cities
 					for (int i = 0; i < settings.get_anzahl_staedte(); ++i) {
-						if(  city_flag[i] == conn_comp  ) {
+						if(  city_flag.get(i) == conn_comp  ) {
 							// loop over all connections to connected cities
 							for (int j = old_anzahl_staedte; j < settings.get_anzahl_staedte(); ++j) {
-								if(  city_flag[j] == 0  ) {
+								if(  city_flag.get(j) == 0  ) {
 									ready=false;
 									if(  city_dist.at(i,j) < best  ) {
 										best = city_dist.at(i,j);
@@ -1107,8 +1107,8 @@ DBG_DEBUG("karte_t::distribute_groundobjs_cities()","prepare cities");
 						// try the first not connected city
 						ready = true;
 						for (int i = old_anzahl_staedte; i < settings.get_anzahl_staedte(); ++i) {
-							if(  city_flag[i] ==0 ) {
-								city_flag[i] = conn_comp;
+							if(  city_flag.get(i) ==0 ) {
+								city_flag.at(i) = conn_comp;
 								ready=false;
 								break;
 							}
@@ -1119,14 +1119,14 @@ DBG_DEBUG("karte_t::distribute_groundobjs_cities()","prepare cities");
 					// loop over all unconnected cities
 					for (int i = 0; i < settings.get_anzahl_staedte(); ++i) {
 						for (int j = max(old_anzahl_staedte, i + 1);  j < settings.get_anzahl_staedte(); ++j) {
-							if(  city_dist.at(i,j) < best  &&  city_flag[i] == city_flag[j]  ) {
+							if(  city_dist.at(i,j) < best  &&  city_flag.get(i) == city_flag.get(j)  ) {
 								bool ok = true;
 								// is there a connection i..l..j ? forbid stumpfe winkel
 								for (int l = 0; l < settings.get_anzahl_staedte(); ++l) {
-									if(  city_flag[i] == city_flag[l]  &&  city_dist.at(i,l) == umgebung_t::intercity_road_length  &&  city_dist.at(j,l) == umgebung_t::intercity_road_length  ) {
+									if(  city_flag.get(i) == city_flag.get(l)  &&  city_dist.at(i,l) == umgebung_t::intercity_road_length  &&  city_dist.at(j,l) == umgebung_t::intercity_road_length  ) {
 										// cosine < 0 ?
-										koord3d d1 = k[i]-k[l];
-										koord3d d2 = k[j]-k[l];
+										koord3d d1 = k.get(i)-k.get(l);
+										koord3d d2 = k.get(j)-k.get(l);
 										if(  d1.x*d2.x + d1.y*d2.y < 0  ) {
 											city_dist.at(i,j) = umgebung_t::intercity_road_length+1;
 											city_dist.at(j,i) = umgebung_t::intercity_road_length+1;
@@ -1148,7 +1148,7 @@ DBG_DEBUG("karte_t::distribute_groundobjs_cities()","prepare cities");
 				// valid connection?
 				if(  conn.x >= 0  ) {
 					// is there a connection already
-					const bool connected = (  phase==1  &&  verbindung.calc_route( this, k[conn.x], k[conn.y], test_driver, 0, 0 )  );
+					const bool connected = (  phase==1  &&  verbindung.calc_route( this, k.get(conn.x), k.get(conn.y), test_driver, 0, 0 )  );
 					// build this connestion?
 					bool build = false;
 					// set appropriate max length for way builder
@@ -1164,13 +1164,13 @@ DBG_DEBUG("karte_t::distribute_groundobjs_cities()","prepare cities");
 					}
 
 					if(  build  ) {
-						bauigel.calc_route(k[conn.x],k[conn.y]);
+						bauigel.calc_route(k.get(conn.x),k.get(conn.y));
 					}
 
 					if(  build  &&  bauigel.get_count() >= 2  ) {
 						bauigel.baue();
 						if (phase==0) {
-							city_flag[ conn.y ] = conn_comp;
+							city_flag.at(conn.y) = conn_comp;
 						}
 						// mark as built
 						city_dist.at(conn) =  umgebung_t::intercity_road_length;
@@ -1186,7 +1186,7 @@ DBG_DEBUG("karte_t::distribute_groundobjs_cities()","prepare cities");
 						if (phase==0) {
 							// do not try to connect to this connected component again
 							for (int i = 0; i < settings.get_anzahl_staedte(); ++i) {
-								if (  city_flag[i] == conn_comp  && city_dist.at(i, conn.y)<umgebung_t::intercity_road_length) {
+								if (  city_flag.get(i) == conn_comp  && city_dist.at(i, conn.y)<umgebung_t::intercity_road_length) {
 									city_dist.at(i, conn.y) =  umgebung_t::intercity_road_length+1;
 									city_dist.at(conn.y, i) =  umgebung_t::intercity_road_length+1;
 									count++;
@@ -1291,7 +1291,7 @@ void karte_t::init(settings_t* const sets, sint8 const* const h_field)
 	}
 
 	for(  uint i=0;  i<MAX_PLAYER_COUNT;  i++  ) {
-		werkzeug[i] = werkzeug_t::general_tool[WKZ_ABFRAGE];
+		werkzeug[i] = werkzeug_t::general_tool.get(WKZ_ABFRAGE);
 	}
 	if(is_display_init()) {
 		display_system_show_pointer(false);
@@ -1392,7 +1392,7 @@ DBG_DEBUG("karte_t::init()","built timeline");
 	// finishes the line preparation and sets id 0 to invalid ...
 	spieler[0]->simlinemgmt.laden_abschliessen();
 
-	set_werkzeug( werkzeug_t::general_tool[WKZ_ABFRAGE], get_active_player() );
+	set_werkzeug( werkzeug_t::general_tool.get(WKZ_ABFRAGE), get_active_player() );
 
 	recalc_average_speed();
 
@@ -1670,7 +1670,7 @@ karte_t::karte_t() :
 	fix_ratio_frame_time = 200;
 
 	for(  uint i=0;  i<MAX_PLAYER_COUNT;  i++  ) {
-		werkzeug[i] = werkzeug_t::general_tool[WKZ_ABFRAGE];
+		werkzeug[i] = werkzeug_t::general_tool.get(WKZ_ABFRAGE);
 	}
 
 	follow_convoi = convoihandle_t();
@@ -2551,7 +2551,7 @@ void karte_t::rotate90()
 
 	// rotate all other objects like factories and convois
 	for(unsigned i=0; i<convoi_array.get_count();  i++) {
-		convoi_array[i]->rotate90( cached_groesse_karte_x );
+		convoi_array.get(i)->rotate90( cached_groesse_karte_x );
 	}
 
 	for(  int i=0;  i<MAX_PLAYER_COUNT;  i++  ) {
@@ -2668,7 +2668,7 @@ void karte_t::add_ausflugsziel(gebaeude_t *gb)
 
 	// Knightly : add links between this attraction and all cities
 	for(  uint32 c=0;  c<stadt.get_count();  ++c  ) {
-		stadt[c]->add_target_attraction(gb);
+		stadt.get(c)->add_target_attraction(gb);
 	}
 }
 
@@ -2680,7 +2680,7 @@ void karte_t::remove_ausflugsziel(gebaeude_t *gb)
 
 	// Knightly : remove links between this attraction and all cities
 	for(  uint32 c=0;  c<stadt.get_count();  ++c  ) {
-		stadt[c]->remove_target_attraction(gb);
+		stadt.at(c)->remove_target_attraction(gb);
 	}
 }
 
@@ -2979,7 +2979,7 @@ void karte_t::neuer_monat()
 //	DBG_MESSAGE("karte_t::neuer_monat()","convois");
 	// hsiegeln - call new month for convois
 	for(unsigned i=0;  i<convoi_array.get_count();  i++ ) {
-		convoihandle_t cnv = convoi_array[i];
+		convoihandle_t cnv = convoi_array.get(i);
 		cnv->new_month();
 	}
 
@@ -3088,7 +3088,7 @@ DBG_MESSAGE("karte_t::neues_jahr()","speedbonus for %d %i, %i, %i, %i, %i, %i, %
 	msg->add_message(buf,koord::invalid,message_t::general,COL_BLACK,skinverwaltung_t::neujahrsymbol->get_bild_nr(0));
 
 	for(unsigned i=0;  i<convoi_array.get_count();  i++ ) {
-		convoihandle_t cnv = convoi_array[i];
+		convoihandle_t cnv = convoi_array.get(i);
 		cnv->neues_jahr();
 	}
 
@@ -3117,53 +3117,50 @@ void karte_t::recalc_average_speed()
 	//	DBG_MESSAGE("karte_t::recalc_average_speed()","");
 	if(use_timeline()) {
 		for(int i=road_wt; i<=air_wt; i++) {
-			slist_tpl<const vehikel_besch_t*>* cl = vehikelbauer_t::get_info((waytype_t)i);
-			if(cl) {
-				const char *vehicle_type=NULL;
-				switch(i) {
-					case road_wt:
-						vehicle_type = "road vehicle";
-						break;
-					case track_wt:
-						vehicle_type = "rail car";
-						break;
-					case water_wt:
-						vehicle_type = "water vehicle";
-						break;
-					case monorail_wt:
-						vehicle_type = "monorail vehicle";
-						break;
-					case tram_wt:
-						vehicle_type = "street car";
-						break;
-					case air_wt:
-						vehicle_type = "airplane";
-						break;
-					case maglev_wt:
-						vehicle_type = "maglev vehicle";
-						break;
-					case narrowgauge_wt:
-						vehicle_type = "narrowgauge vehicle";
-						break;
+			const char *vehicle_type=NULL;
+			switch(i) {
+				case road_wt:
+					vehicle_type = "road vehicle";
+					break;
+				case track_wt:
+					vehicle_type = "rail car";
+					break;
+				case water_wt:
+					vehicle_type = "water vehicle";
+					break;
+				case monorail_wt:
+					vehicle_type = "monorail vehicle";
+					break;
+				case tram_wt:
+					vehicle_type = "street car";
+					break;
+				case air_wt:
+					vehicle_type = "airplane";
+					break;
+				case maglev_wt:
+					vehicle_type = "maglev vehicle";
+					break;
+				case narrowgauge_wt:
+					vehicle_type = "narrowgauge vehicle";
+					break;
+			}
+			vehicle_type = translator::translate( vehicle_type );
+
+			slist_iterator_tpl<vehikel_besch_t const*> vehinfo(vehikelbauer_t::get_info((waytype_t)i));
+			while (vehinfo.next()) {
+				const vehikel_besch_t* info = vehinfo.get_current();
+				const uint16 intro_month = info->get_intro_year_month();
+				if(intro_month == current_month) {
+					cbuffer_t buf;
+					buf.printf( translator::translate("New %s now available:\n%s\n"), vehicle_type, translator::translate(info->get_name()) );
+					msg->add_message(buf,koord::invalid,message_t::new_vehicle,NEW_VEHICLE,info->get_basis_bild());
 				}
-				vehicle_type = translator::translate( vehicle_type );
 
-				slist_iterator_tpl<const vehikel_besch_t*> vehinfo(cl);
-				while (vehinfo.next()) {
-					const vehikel_besch_t* info = vehinfo.get_current();
-					const uint16 intro_month = info->get_intro_year_month();
-					if(intro_month == current_month) {
-						cbuffer_t buf;
-						buf.printf( translator::translate("New %s now available:\n%s\n"), vehicle_type, translator::translate(info->get_name()) );
-						msg->add_message(buf,koord::invalid,message_t::new_vehicle,NEW_VEHICLE,info->get_basis_bild());
-					}
-
-					const uint16 retire_month = info->get_retire_year_month();
-					if(retire_month == current_month) {
-						cbuffer_t buf;
-						buf.printf( translator::translate("Production of %s has been stopped:\n%s\n"), vehicle_type, translator::translate(info->get_name()) );
-						msg->add_message(buf,koord::invalid,message_t::new_vehicle,NEW_VEHICLE,info->get_basis_bild());
-					}
+				const uint16 retire_month = info->get_retire_year_month();
+				if(retire_month == current_month) {
+					cbuffer_t buf;
+					buf.printf( translator::translate("Production of %s has been stopped:\n%s\n"), vehicle_type, translator::translate(info->get_name()) );
+					msg->add_message(buf,koord::invalid,message_t::new_vehicle,NEW_VEHICLE,info->get_basis_bild());
 				}
 			}
 		}
@@ -3377,7 +3374,7 @@ void karte_t::step()
 	DBG_DEBUG4("karte_t::step", "step convois");
 	// since convois will be deleted during stepping, we need to step backwards
 	for(sint32 i=convoi_array.get_count()-1;  i>=0;  i--  ) {
-		convoihandle_t cnv = convoi_array[i];
+		convoihandle_t cnv = convoi_array.get(i);
 		cnv->step();
 		if((i&7)==0) {
 			INT_CHECK("simworld 1947");
@@ -4140,7 +4137,7 @@ DBG_MESSAGE("karte_t::speichern(loadsave_t *file)", "saved stops");
 	}
 	for(unsigned i=0;  i<convoi_array.get_count();  i++ ) {
 		// one MUST NOT call INT_CHECK here or else the convoi will be broken during reloading!
-		convoihandle_t cnv = convoi_array[i];
+		convoihandle_t cnv = convoi_array.get(i);
 		cnv->rdwr(file);
 	}
 	if(  file->get_version()<101000  ) {
@@ -4381,7 +4378,7 @@ DBG_MESSAGE("karte_t::laden()","Savegame version is %d", file.get_version());
 		mute_sound(false);
 
 		werkzeug_t::update_toolbars(this);
-		set_werkzeug( werkzeug_t::general_tool[WKZ_ABFRAGE], get_active_player() );
+		set_werkzeug( werkzeug_t::general_tool.get(WKZ_ABFRAGE), get_active_player() );
 	}
 	settings.set_filename(filename);
 	display_show_load_pointer(false);
@@ -4397,7 +4394,7 @@ void karte_t::laden(loadsave_t *file)
 	intr_disable();
 	dbg->message("karte_t::laden()", "Prepare for loading" );
 	for(  uint i=0;  i<MAX_PLAYER_COUNT;  i++  ) {
-		werkzeug[i] = werkzeug_t::general_tool[WKZ_ABFRAGE];
+		werkzeug[i] = werkzeug_t::general_tool.get(WKZ_ABFRAGE);
 	}
 	destroy_all_win(true);
 
@@ -4814,7 +4811,7 @@ DBG_MESSAGE("karte_t::laden()", "%d factories loaded", fab_list.get_count());
 
 	// adding lines and other stuff for convois
 	for(unsigned i=0;  i<convoi_array.get_count();  i++ ) {
-		convoihandle_t cnv = convoi_array[i];
+		convoihandle_t cnv = convoi_array.get(i);
 		cnv->laden_abschliessen();
 		// was deleted during loading => use same position again
 		if(!cnv.is_bound()) {
@@ -5451,7 +5448,7 @@ void karte_t::interactive_event(event_t &ev)
 						break;
 					}
 				}
-				set_werkzeug( werkzeug_t::dialog_tool[WKZ_HELP], get_active_player() );
+				set_werkzeug( werkzeug_t::dialog_tool.get(WKZ_HELP), get_active_player() );
 				break;
 
 			// just ignore the key
@@ -6091,7 +6088,7 @@ void karte_t::announce_server(int status)
 			buf.printf( "&towns=%u",     stadt.get_count() );
 			buf.printf( "&citizens=%u",  stadt.get_sum_weight() );
 			buf.printf( "&factories=%u", fab_list.get_count() );
-			buf.printf( "&convoys=%u",   get_convoi_count() );
+			buf.printf( "&convoys=%u",   convoys().get_count());
 			buf.printf( "&stops=%u",     haltestelle_t::get_alle_haltestellen().get_count() );
 		}
 

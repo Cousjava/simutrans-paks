@@ -1,6 +1,9 @@
 #ifndef TPL_WEIGHTED_VECTOR_H
 #define TPL_WEIGHTED_VECTOR_H
 
+#include <cstddef>
+#include <iterator>
+
 #include "../macros.h"
 #include "../simdebug.h"
 
@@ -25,6 +28,12 @@ template<class T> class weighted_vector_tpl
 		class iterator
 		{
 			public:
+				typedef std::forward_iterator_tag iterator_category;
+				typedef std::ptrdiff_t            difference_type;
+				typedef T const*                  pointer;
+				typedef T const&                  reference;
+				typedef T                         value_type;
+
 				T& operator *() const { return ptr->data; }
 
 				iterator& operator ++() { ++ptr; return *this; }
@@ -43,6 +52,12 @@ template<class T> class weighted_vector_tpl
 		class const_iterator
 		{
 			public:
+				typedef std::forward_iterator_tag iterator_category;
+				typedef std::ptrdiff_t            difference_type;
+				typedef T const*                  pointer;
+				typedef T const&                  reference;
+				typedef T                         value_type;
+
 				const_iterator(const iterator& o) : ptr(o.ptr) {}
 
 				const T& operator *() const { return ptr->data; }
@@ -60,12 +75,6 @@ template<class T> class weighted_vector_tpl
 		};
 
 		weighted_vector_tpl() : nodes(NULL), size(0), count(0), total_weight(0) {}
-
-		weighted_vector_tpl& operator=( weighted_vector_tpl const& other )
-		{
-			assert(other.get_count()==0);
-			return *this;
-		}
 
 		/** Construct a vector for size elements */
 		explicit weighted_vector_tpl(uint32 size)
@@ -331,13 +340,13 @@ template<class T> class weighted_vector_tpl
 			return true;
 		}
 
-		T& operator [](uint32 i)
+		T & at(uint32 i)
 		{
-			if (i >= count) dbg->fatal("weighted_vector_tpl<T>::get()", "index out of bounds: %i not in 0..%d", i, count - 1);
+			if (i >= count) dbg->fatal("weighted_vector_tpl<T>::at()", "index out of bounds: %i not in 0..%d", i, count - 1);
 			return nodes[i].data;
 		}
 
-		const T& operator [](uint32 i) const
+		const T & get(uint32 i) const
 		{
 			if (i >= count) dbg->fatal("weighted_vector_tpl<T>::get()", "index out of bounds: %i not in 0..%d", i, count - 1);
 			return nodes[i].data;
@@ -416,6 +425,8 @@ template<class T> class weighted_vector_tpl
 		unsigned long total_weight; ///< Sum of all weights
 
 		weighted_vector_tpl(const weighted_vector_tpl& other);
+
+		weighted_vector_tpl& operator=( weighted_vector_tpl const& other );
 
 	friend void swap<>(weighted_vector_tpl<T>&, weighted_vector_tpl<T>&);
 };

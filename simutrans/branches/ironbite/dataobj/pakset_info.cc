@@ -56,7 +56,7 @@ void pakset_info_t::calculate_checksum()
 	}
 	// now loop
 	for(uint32 i=0; i<sorted.get_count(); i++) {
-		sorted[i].chk->calc_checksum(&general);
+		sorted.get(i).chk->calc_checksum(&general);
 	}
 	general.finish();
 }

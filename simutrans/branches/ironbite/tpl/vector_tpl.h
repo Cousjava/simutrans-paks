@@ -210,22 +210,22 @@ template<class T> class vector_tpl
 			count--;
 		}
 
-		T& operator [](uint i)
+		T & at(uint i)
 		{
 			if (i >= count) {
-				dbg->fatal("vector_tpl<T>::[]", "%s: index out of bounds: %i not in 0..%d", typeid(T).name(), i, count - 1);
+				dbg->fatal("vector_tpl<T>::at", "%s: index out of bounds: %i not in 0..%d", typeid(T).name(), i, count - 1);
 			}
 			return data[i];
 		}
 
-		const T& operator [](uint i) const
+		const T & get(uint i) const
 		{
 			if (i >= count) {
-				dbg->fatal("vector_tpl<T>::[]", "%s: index out of bounds: %i not in 0..%d", typeid(T).name(), i, count - 1);
+				dbg->fatal("vector_tpl<T>::get", "%s: index out of bounds: %i not in 0..%d", typeid(T).name(), i, count - 1);
 			}
 			return data[i];
 		}
-
+		
 		T& front() const { return data[0]; }
 
 		T& back() const { return data[count - 1]; }
@@ -273,7 +273,7 @@ template<class T> void swap(vector_tpl<T>& a, vector_tpl<T>& b)
 template<class T> void clear_ptr_vector(vector_tpl<T*>& v)
 {
 	for(uint32 i=0; i<v.get_count(); i++) {
-		delete v[i];
+		delete v.at(i);
 	}
 	v.clear();
 }

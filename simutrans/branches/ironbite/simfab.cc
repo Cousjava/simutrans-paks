@@ -391,8 +391,8 @@ void fabrik_t::recalc_demands_at_target_cities()
 	if (!welt->get_settings().get_factory_enforce_demand()) {
 		// demand not enforced -> no splitting of demands
 		for(  uint32 c=0;  c<target_cities.get_count();  ++c  ) {
-			target_cities[c]->access_target_factories_for_pax().update_factory(this, (scaled_pax_demand << DEMAND_BITS));
-			target_cities[c]->access_target_factories_for_mail().update_factory(this, (scaled_mail_demand << DEMAND_BITS));
+			target_cities.at(c)->access_target_factories_for_pax().update_factory(this, (scaled_pax_demand << DEMAND_BITS));
+			target_cities.at(c)->access_target_factories_for_mail().update_factory(this, (scaled_mail_demand << DEMAND_BITS));
 		}
 		return;
 	}
@@ -402,8 +402,8 @@ void fabrik_t::recalc_demands_at_target_cities()
 	}
 	else if(  target_cities.get_count()==1  ) {
 		// only 1 target city -> no need to apportion pax/mail demand
-		target_cities[0]->access_target_factories_for_pax().update_factory(this, (scaled_pax_demand << DEMAND_BITS));
-		target_cities[0]->access_target_factories_for_mail().update_factory(this, (scaled_mail_demand << DEMAND_BITS));
+		target_cities.at(0)->access_target_factories_for_pax().update_factory(this, (scaled_pax_demand << DEMAND_BITS));
+		target_cities.at(0)->access_target_factories_for_mail().update_factory(this, (scaled_mail_demand << DEMAND_BITS));
 	}
 	else {
 		// more than 1 target cities -> need to apportion pax/mail demand among the cities
@@ -412,15 +412,15 @@ void fabrik_t::recalc_demands_at_target_cities()
 		uint32 sum_of_weights = 0;
 		// first, calculate the weights
 		for(  uint32 c=0;  c<target_cities.get_count();  ++c  ) {
-			weights.append( weight_by_distance( target_cities[c]->get_einwohner(), shortest_distance( get_pos().get_2d(), target_cities[c]->get_center() ) ) );
-			sum_of_weights += weights[c];
+			weights.append( weight_by_distance( target_cities.at(c)->get_einwohner(), shortest_distance( get_pos().get_2d(), target_cities.at(c)->get_center() ) ) );
+			sum_of_weights += weights.get(c);
 		}
 		// finally, apportion the pax/mail demand; formula : demand * (city_weight / aggregate_city_weight); (sum_of_weights >> 1) is for rounding
 		for(  uint32 c=0;  c<target_cities.get_count();  ++c  ) {
-			const uint32 pax_amount = (uint32)(( (sint64)(scaled_pax_demand << DEMAND_BITS) * (sint64)weights[c] + (sint64)(sum_of_weights >> 1) ) / (sint64)sum_of_weights);
-			target_cities[c]->access_target_factories_for_pax().update_factory(this, pax_amount);
-			const uint32 mail_amount = (uint32)(( (sint64)(scaled_mail_demand << DEMAND_BITS) * (sint64)weights[c] + (sint64)(sum_of_weights >> 1) ) / (sint64)sum_of_weights);
-			target_cities[c]->access_target_factories_for_mail().update_factory(this, mail_amount);
+			const uint32 pax_amount = (uint32)(( (sint64)(scaled_pax_demand << DEMAND_BITS) * (sint64)weights.get(c) + (sint64)(sum_of_weights >> 1) ) / (sint64)sum_of_weights);
+			target_cities.at(c)->access_target_factories_for_pax().update_factory(this, pax_amount);
+			const uint32 mail_amount = (uint32)(( (sint64)(scaled_mail_demand << DEMAND_BITS) * (sint64)weights.get(c) + (sint64)(sum_of_weights >> 1) ) / (sint64)sum_of_weights);
+			target_cities.at(c)->access_target_factories_for_mail().update_factory(this, mail_amount);
 		}
 	}
 }
@@ -436,7 +436,7 @@ void fabrik_t::recalc_storage_capacities()
 			const field_group_besch_t *const field_group = besch->get_field_group();
 			sint32 field_capacities = 0;
 			for(  uint32 f=0;  f<fields.get_count();  ++f  ) {
-				field_capacities += field_group->get_field_class( fields[f].field_class_index )->get_storage_capacity();
+				field_capacities += field_group->get_field_class( fields.get(f).field_class_index )->get_storage_capacity();
 			}
 			const sint32 share = (sint32)( ( (sint64)field_capacities << precision_bits ) / (sint64)freight_types );
 			// first, for input goods
@@ -505,8 +505,8 @@ void fabrik_t::remove_target_city(stadt_t *const city)
 void fabrik_t::clear_target_cities()
 {
 	for(  uint32 c=0;  c<target_cities.get_count();  ++c  ) {
-		target_cities[c]->access_target_factories_for_pax().remove_factory(this);
-		target_cities[c]->access_target_factories_for_mail().remove_factory(this);
+		target_cities.at(c)->access_target_factories_for_pax().remove_factory(this);
+		target_cities.at(c)->access_target_factories_for_mail().remove_factory(this);
 	}
 	target_cities.clear();
 }
@@ -711,13 +711,13 @@ void fabrik_t::baue(sint32 rotate, bool build_fields)
 		// if there are fields
 		if(!fields.empty()) {
 			for( uint16 i=0;  i<fields.get_count();  i++  ) {
-				const koord k = fields[i].location;
+				const koord k = fields.get(i).location;
 				grund_t *gr=welt->lookup_kartenboden(k);
 				if(  gr->ist_natur()  ) {
 					// first make foundation below
 					grund_t *gr2 = new fundament_t(welt, gr->get_pos(), gr->get_grund_hang());
 					welt->access(k)->boden_ersetzen(gr, gr2);
-					gr2->obj_add( new field_t( welt, gr2->get_pos(), besitzer_p, besch->get_field_group()->get_field_class( fields[i].field_class_index ), this ) );
+					gr2->obj_add( new field_t( welt, gr2->get_pos(), besitzer_p, besch->get_field_group()->get_field_class( fields.get(i).field_class_index ), this ) );
 				}
 				else {
 					// there was already a building at this position => do not restore!
@@ -818,7 +818,7 @@ void fabrik_t::remove_field_at(koord pos)
 {
 	field_data_t field(pos);
 	assert(fields.is_contained( field ));
-	field = fields[ fields.index_of(field) ];
+	field = fields.get(fields.index_of(field));
 	const field_class_besch_t *const field_class = besch->get_field_group()->get_field_class( field.field_class_index );
 	fields.remove(field);
 	// Knightly : revert the field's effect on production base and storage capacities
@@ -1056,7 +1056,7 @@ DBG_DEBUG("fabrik_t::rdwr()","loading factory '%s'",s);
 	}
 	else {
 		for(int i=0; i<anz_lieferziele; i++) {
-			koord k = lieferziele[i];
+			koord k = lieferziele.get(i);
 			k.rdwr(file);
 		}
 	}
@@ -1069,16 +1069,16 @@ DBG_DEBUG("fabrik_t::rdwr()","loading factory '%s'",s);
 			if(  file->get_version() > 102002  ) {
 				// each field stores location and a field class index
 				for(  uint16 i=0  ;  i<nr  ;  ++i  ) {
-					koord k = fields[i].location;
+					koord k = fields.get(i).location;
 					k.rdwr(file);
-					uint16 idx = fields[i].field_class_index;
+					uint16 idx = fields.get(i).field_class_index;
 					file->rdwr_short(idx);
 				}
 			}
 			else {
 				// each field only stores location
 				for(  uint16 i=0  ;  i<nr  ;  ++i  ) {
-					koord k = fields[i].location;
+					koord k = fields.get(i).location;
 					k.rdwr(file);
 				}
 			}
@@ -1118,12 +1118,12 @@ DBG_DEBUG("fabrik_t::rdwr()","loading factory '%s'",s);
 		for(  int i=0;  i<nr;  i++  ) {
 			sint32 city_index = -1;
 			if(file->is_saving()) {
-				city_index = welt->get_staedte().index_of( target_cities[i] );
+				city_index = welt->get_staedte().index_of( target_cities.get(i) );
 			}
 			file->rdwr_long(city_index);
 			if(  file->is_loading()  ) {
 				// will also update factory information
-				target_cities.append( welt->get_staedte()[city_index] );
+				target_cities.append( welt->get_staedte().get(city_index) );
 			}
 		}
 	}
@@ -1614,7 +1614,7 @@ void fabrik_t::verteile_waren(const uint32 produkt)
 		for(  uint32 n=0;  n<lieferziele.get_count();  n++  ) {
 
 			// prissi: this way, the halt, that is tried first, will change. As a result, if all destinations are empty, it will be spread evenly
-			const koord lieferziel = lieferziele[(n + index_offset) % lieferziele.get_count()];
+			const koord lieferziel = lieferziele.get((n + index_offset) % lieferziele.get_count());
 
 			fabrik_t * ziel_fab = get_fab(welt, lieferziel);
 			int vorrat;
@@ -1653,12 +1653,12 @@ void fabrik_t::verteile_waren(const uint32 produkt)
 
 		distribute_freight_t *best = NULL;
 		for(  uint32 i=0;  i<dist_list.get_count();  i++  ) {
-			freight_t& ware = dist_list[i].ware;
+			freight_t& ware = dist_list.at(i).ware;
 			// now search route
-			const int result = haltestelle_t::search_route(&dist_list[i].halt, 1U, welt->get_settings().is_no_routing_over_overcrowding(), ware);
+			const int result = haltestelle_t::search_route(&dist_list.at(i).halt, 1U, welt->get_settings().is_no_routing_over_overcrowding(), ware);
 			if(  result == haltestelle_t::ROUTE_OK  ||  result == haltestelle_t::ROUTE_WALK  ) {
 				// we can deliver to this destination
-				best = &dist_list[i];
+				best = &dist_list.at(i);
 				break;
 			}
 		}
@@ -1687,9 +1687,9 @@ void fabrik_t::verteile_waren(const uint32 produkt)
 			freight_t most_waiting(ausgang[produkt].get_typ());
 			most_waiting.menge = 0;
 			for(  uint32 n=0;  n<lieferziele.get_count();  n++  ) {
-				const uint32 amount = (sint32)best_halt->get_ware_fuer_zielpos( ausgang[produkt].get_typ(), lieferziele[n] );
+				const uint32 amount = (sint32)best_halt->get_ware_fuer_zielpos( ausgang[produkt].get_typ(), lieferziele.get(n) );
 				if(  amount > most_waiting.menge  ) {
-					most_waiting.set_zielpos( lieferziele[n] );
+					most_waiting.set_zielpos( lieferziele.get(n) );
 					most_waiting.menge = amount;
 				}
 			}
@@ -1975,7 +1975,7 @@ void fabrik_t::info_conn(cbuffer_t& buf) const
 		buf.append(translator::translate("Abnehmer"));
 
 		for(uint32 i=0; i<lieferziele.get_count(); i++) {
-			const koord lieferziel = lieferziele[i];
+			const koord lieferziel = lieferziele.get(i);
 
 			fabrik_t *fab = get_fab( welt, lieferziel );
 			if(fab) {
@@ -1992,7 +1992,7 @@ void fabrik_t::info_conn(cbuffer_t& buf) const
 		buf.append(translator::translate("Suppliers"));
 
 		for(uint32 i=0; i<suppliers.get_count(); i++) {
-			const koord supplier = suppliers[i];
+			const koord supplier = suppliers.get(i);
 
 			fabrik_t *fab = get_fab( welt, supplier );
 			if(fab) {
@@ -2035,13 +2035,13 @@ void fabrik_t::laden_abschliessen()
 	}
 	else {
 		for(uint32 i=0; i<lieferziele.get_count(); i++) {
-			fabrik_t * fab2 = fabrik_t::get_fab(welt, lieferziele[i]);
+			fabrik_t * fab2 = fabrik_t::get_fab(welt, lieferziele.get(i));
 			if (fab2) {
 				fab2->add_supplier(pos.get_2d());
 			}
 			else {
 				// remove this ...
-				dbg->warning( "fabrik_t::laden_abschliessen()", "No factory at expected position %s!", lieferziele[i].get_str() );
+				dbg->warning( "fabrik_t::laden_abschliessen()", "No factory at expected position %s!", lieferziele.get(i).get_str() );
 				lieferziele.remove_at(i);
 				i--;
 			}
@@ -2068,22 +2068,22 @@ void fabrik_t::rotate90( const sint16 y_size )
 	rotate = (rotate+3)%besch->get_haus()->get_all_layouts();
 
 	for( uint32 i=0;  i<lieferziele.get_count();  i++  ) {
-		lieferziele[i].rotate90( y_size );
+		lieferziele.at(i).rotate90( y_size );
 		// on larger factories the target position changed too
-		fabrik_t *fab = get_fab( welt, lieferziele[i] );
+		fabrik_t *fab = get_fab( welt, lieferziele.get(i) );
 		if(  fab  ) {
-			lieferziele[i] = fab->get_pos().get_2d();
+			lieferziele.at(i) = fab->get_pos().get_2d();
 		}
 	}
 	for( uint32 i=0;  i<suppliers.get_count();  i++  ) {
-		suppliers[i].rotate90( y_size );
-		fabrik_t *fab = get_fab( welt, suppliers[i] );
+		suppliers.at(i).rotate90( y_size );
+		fabrik_t *fab = get_fab( welt, suppliers.get(i) );
 		if(  fab  ) {
-			suppliers[i] = fab->get_pos().get_2d();
+			suppliers.at(i) = fab->get_pos().get_2d();
 		}
 	}
 	for( uint32 i=0;  i<fields.get_count();  i++  ) {
-		fields[i].location.rotate90( y_size );
+		fields.at(i).location.rotate90( y_size );
 	}
 }
 

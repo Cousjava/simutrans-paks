@@ -101,7 +101,7 @@ welt_gui_t::welt_gui_t(karte_t* const welt, settings_t* const sets) :
 	// first townhalls
 	const vector_tpl<const haus_besch_t *> *s = hausbauer_t::get_list(haus_besch_t::rathaus);
 	for (uint32 i = 0; i<s->get_count(); i++) {
-		const haus_besch_t *besch = (*s)[i];
+		const haus_besch_t *besch = s->get(i);
 		uint16 intro_year = (besch->get_intro_year_month()+11)/12;
 		if(  intro_year<game_start  ) {
 			game_start = intro_year;

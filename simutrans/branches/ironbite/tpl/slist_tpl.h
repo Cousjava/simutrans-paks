@@ -110,10 +110,10 @@ public:
 	{
 		public:
 			typedef std::forward_iterator_tag iterator_category;
-			typedef const T                   value_type;
+			typedef T                         value_type;
 			typedef ptrdiff_t                 difference_type;
-			typedef value_type*               pointer;
-			typedef value_type&               reference;
+			typedef T const*                  pointer;
+			typedef T const&                  reference;
 
 			const_iterator(const iterator& o) : ptr(o.ptr) {}
 

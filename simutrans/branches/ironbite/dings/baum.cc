@@ -5,13 +5,12 @@
  * (see licence.txt)
  */
 
-#include <string>
-#include <stdio.h>
 #include <math.h>
+
+#include "../besch/baum_besch.h"
 
 #include "../simdebug.h"
 #include "../simworld.h"
-#include "../simdings.h"
 #include "../simimg.h"
 #include "../player/simplay.h"
 #include "../simtools.h"
@@ -19,7 +18,6 @@
 
 #include "../boden/grund.h"
 
-#include "../besch/baum_besch.h"
 
 #include "../dings/groundobj.h"
 
@@ -62,11 +60,19 @@ static vector_tpl<weighted_vector_tpl<uint32> *> tree_typen_per_climate;
  */
 const vector_tpl<const baum_besch_t *> * tree_t::get_all_besch() { return &tree_typen; }
 
+
 const baum_besch_t *tree_t::find_tree( const char *tree_name ) { return tree_typen.empty() ? NULL : besch_names.get(tree_name); }
 
-const baum_besch_t * tree_t::random_tree_for_climate(climate cl) { uint16 b = random_tree_for_climate_intern(cl);  return b!=0xFFFF ? tree_typen[b] : NULL; }
+const baum_besch_t * tree_t::random_tree_for_climate(climate cl)
+{
+	uint16 b = random_tree_for_climate_intern(cl);  
+	return b!=0xFFFF ? tree_typen.get(b) : 0; 
+}
 
-int tree_t::get_anzahl_besch() { return tree_typen.get_count(); }
+int tree_t::get_anzahl_besch() 
+{
+	return tree_typen.get_count(); 
+}
 	
 
 // distributes trees on a map
@@ -97,12 +103,11 @@ DBG_MESSAGE("verteile_baeume()","creating %i forest",c_forest_count);
 
 
 
-
 // total number of trees
 // the same for a certain climate
 int tree_t::get_anzahl_besch(climate cl)
 {
-	return tree_typen_per_climate[cl]->get_count();
+	return tree_typen_per_climate.get(cl)->get_count();
 }
 
 
@@ -291,25 +296,30 @@ bool tree_t::alles_geladen()
 				break;
 			}
 		}
+
+		tree_typen_per_climate.clear();
+
 		// fill the vector with zeros
-		for (uint8 j=0; j<MAX_CLIMATES; j++) {
+		for (uint8 j=0; j<MAX_CLIMATES; j++) 
+		{
 			tree_typen_per_climate.append( new weighted_vector_tpl<uint32>() );
 		}
+
 		// clear cache
 		memset( baumtype_to_bild, -1, lengthof(baumtype_to_bild) );
 		// now register all trees for all fitting climates
 		for(  uint32 typ=0;  typ<tree_typen.get_count();  typ++  ) {
 			// add this tree to climates
 			for(  uint8 j=0;  j<MAX_CLIMATES;  j++  ) {
-				if(  tree_typen[typ]->is_allowed_climate((climate)j)  ) {
-					tree_typen_per_climate[j]->append(typ, tree_typen[typ]->get_distribution_weight(), /*extend weighted vector if necess by*/ 4 );
+				if(  tree_typen.get(typ)->is_allowed_climate((climate)j)  ) {
+					tree_typen_per_climate.get(j)->append(typ, tree_typen.get(typ)->get_distribution_weight(), /*extend weighted vector if necess by*/ 4 );
 				}
 			}
 			// create cache images
 			for(  uint8 season=0;  season<5;  season++  ) {
 				for(  uint8 age=0;  age<5;  age++  ) {
 					uint8 use_season = 0;
-					const sint16 seasons = tree_typen[typ]->get_seasons();
+					const sint16 seasons = tree_typen.get(typ)->get_seasons();
 					if(seasons>1) {
 						use_season = season;
 						// three possibilities
@@ -325,7 +335,7 @@ bool tree_t::alles_geladen()
 							}
 						}
 					}
-					baumtype_to_bild[typ][season*5+age] = tree_typen[typ]->get_bild_nr( use_season, age );
+					baumtype_to_bild[typ][season*5+age] = tree_typen.get(typ)->get_bild_nr( use_season, age );
 				}
 			}
 		}
@@ -467,7 +477,7 @@ uint32 tree_t::get_age() const
 uint16 tree_t::random_tree_for_climate_intern(climate cl)
 {
 	// now weight their distribution
-	weighted_vector_tpl<uint32> const * t = tree_typen_per_climate[cl];
+	weighted_vector_tpl<uint32> const * t = tree_typen_per_climate.get(cl);
 	return t->empty() ? 0xFFFF : pick_any_weighted(t);
 }
 
@@ -521,7 +531,7 @@ bool tree_t::saee_baum()
 	const sint16 sy = simrand(7)-3;
 	const koord k = get_pos().get_2d() + koord(sx,sy);
 
-	return plant_tree_on_coordinate(welt, k, tree_typen[baumtype], true, false);
+	return plant_tree_on_coordinate(welt, k, tree_typen.get(baumtype), true, false);
 }
 
 
@@ -640,6 +650,10 @@ void tree_t::zeige_info()
 }
 
 
+void tree_t::recalc_outline_color() 
+{
+	outline_color = (umgebung_t::hide_trees  &&  umgebung_t::hide_with_transparency) ? (TRANSPARENT25_FLAG | OUTLINE_FLAG | COL_BLACK) : 0; 
+}
 
 /**
  * @return Einen Beschreibungsstring f�r das Objekt, der z.B. in einem
@@ -666,7 +680,7 @@ void tree_t::entferne(spieler_t *sp)
 
 const baum_besch_t* tree_t::get_besch() const 
 {
-	return tree_typen[baumtype]; 
+	return tree_typen.get(baumtype); 
 }
 
 

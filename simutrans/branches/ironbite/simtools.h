@@ -42,7 +42,7 @@ template<typename T, size_t N> T const& pick_any(T const (&array)[N])
 /* Randomly select an entry from the given container. */
 template<typename T, template<typename> class U> T const& pick_any(U<T> const& container)
 {
-	return container[simrand(container.get_count())];
+	return container.get(simrand(container.get_count()));
 }
 
 /* Randomly select an entry from the given weighted container. */

@@ -46,7 +46,7 @@ void schedule_t::copy_from(const schedule_t *src)
 	}
 	eintrag.clear();
 	for(  uint8 i=0;  i<src->eintrag.get_count();  i++  ) {
-		eintrag.append(src->eintrag[i]);
+		eintrag.append(src->eintrag.get(i));
 	}
 	set_aktuell( src->get_aktuell() );
 
@@ -158,20 +158,20 @@ void schedule_t::cleanup()
 	koord3d lastpos = eintrag.back().pos;
 	// now we have to check all entries ...
 	for(  uint8 i=0;  i<eintrag.get_count();  i++  ) {
-		if(  eintrag[i].pos == lastpos  ) {
+		if(  eintrag.get(i).pos == lastpos  ) {
 			// ingore double entries just one after the other
 			eintrag.remove_at(i);
 			if(  i<aktuell  ) {
 				aktuell --;
 			}
 			i--;
-		} else if(  eintrag[i].pos == koord3d::invalid  ) {
+		} else if(  eintrag.get(i).pos == koord3d::invalid  ) {
 			// ingore double entries just one after the other
 			eintrag.remove_at(i);
 		}
 		else {
 			// next pos for check
-			lastpos = eintrag[i].pos;
+			lastpos = eintrag.get(i).pos;
 		}
 	}
 	make_aktuell_valid();
@@ -234,12 +234,12 @@ void schedule_t::rdwr(loadsave_t *file)
 		for(  uint8 i=0;  i<size;  i++  ) {
 			if(eintrag.get_count()<=i) {
 				eintrag.append( linieneintrag_t() );
-				eintrag[i] .waiting_time_shift = 0;
+				eintrag.at(i) .waiting_time_shift = 0;
 			}
-			eintrag[i].pos.rdwr(file);
-			file->rdwr_byte(eintrag[i].ladegrad);
+			eintrag.at(i).pos.rdwr(file);
+			file->rdwr_byte(eintrag.at(i).ladegrad);
 			if(file->get_version()>=99018) {
-				file->rdwr_byte(eintrag[i].waiting_time_shift);
+				file->rdwr_byte(eintrag.at(i).waiting_time_shift);
 			}
 		}
 	}
@@ -260,7 +260,7 @@ void schedule_t::rotate90( sint16 y_size )
 {
 	// now we have to rotate all entries ...
 	for(  uint8 i = 0;  i<eintrag.get_count();  i++  ) {
-		eintrag[i].pos.rotate90(y_size);
+		eintrag.at(i).pos.rotate90(y_size);
 	}
 }
 
@@ -288,7 +288,7 @@ bool schedule_t::matches(karte_t *welt, const schedule_t *fpl)
 	// we need to do this that complicated, because the last stop may make the difference
 	uint16 f1=0, f2=0;
 	while(  f1+f2<eintrag.get_count()+fpl->eintrag.get_count()  ) {
-		if(f1<eintrag.get_count()  &&  f2<fpl->eintrag.get_count()  &&  fpl->eintrag[(uint8)f2].pos == eintrag[(uint8)f1].pos) {
+		if(f1<eintrag.get_count()  &&  f2<fpl->eintrag.get_count()  &&  fpl->eintrag.get((uint8)f2).pos == eintrag.get((uint8)f1).pos) {
 			// ladegrad/waiting ignored: identical
 			f1++;
 			f2++;
@@ -296,7 +296,7 @@ bool schedule_t::matches(karte_t *welt, const schedule_t *fpl)
 		else {
 			bool ok = false;
 			if(  f1<eintrag.get_count()  ) {
-				grund_t *gr1 = welt->lookup(eintrag[(uint8)f1].pos);
+				grund_t *gr1 = welt->lookup(eintrag.at((uint8)f1).pos);
 				if(  gr1  &&  gr1->get_depot()  ) {
 					// skip depot
 					f1++;
@@ -304,7 +304,7 @@ bool schedule_t::matches(karte_t *welt, const schedule_t *fpl)
 				}
 			}
 			if(  f2<fpl->eintrag.get_count()  ) {
-				grund_t *gr2 = welt->lookup(fpl->eintrag[(uint8)f2].pos);
+				grund_t *gr2 = welt->lookup(fpl->eintrag.get((uint8)f2).pos);
 				if(  gr2  &&  gr2->get_depot()  ) {
 					ok = true;
 					f2++;
@@ -328,7 +328,7 @@ void schedule_t::add_return_way()
 {
 	if(  eintrag.get_count()<127  &&  eintrag.get_count()>1  ) {
 		for(  uint8 maxi=eintrag.get_count()-2;  maxi>0;  maxi--  ) {
-			eintrag.append(eintrag[maxi]);
+			eintrag.append(eintrag.get(maxi));
 		}
 	}
 }
@@ -339,7 +339,7 @@ void schedule_t::sprintf_schedule( cbuffer_t &buf ) const
 {
 	buf.printf("%u|%d|", aktuell, (int)get_type());
 	for(  uint8 i = 0;  i<eintrag.get_count();  i++  ) {
-		buf.printf( "%s,%i,%i|", eintrag[i].pos.get_str(), (int)eintrag[i].ladegrad, (int)eintrag[i].waiting_time_shift );
+		buf.printf( "%s,%i,%i|", eintrag.get(i).pos.get_str(), (int)eintrag.get(i).ladegrad, (int)eintrag.get(i).waiting_time_shift );
 	}
 }
 

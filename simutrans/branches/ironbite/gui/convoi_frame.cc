@@ -170,12 +170,12 @@ bool convoi_frame_t::compare_convois(convoihandle_t const cnv1, convoihandle_t c
 void convoi_frame_t::sort_list()
 {
 	const karte_t* welt = owner->get_welt();
-	last_world_convois = welt->get_convoi_count();
+	last_world_convois = welt->convoys().get_count();
 
 	convois.clear();
-	convois.resize( welt->get_convoi_count() );
+	convois.resize(last_world_convois);
 
-	for (vector_tpl<convoihandle_t>::const_iterator i = welt->convois_begin(), end = welt->convois_end(); i != end; ++i) {
+	for (vector_tpl<convoihandle_t>::const_iterator i = welt->convoys().begin(), end = welt->convoys().end(); i != end; ++i) {
 		convoihandle_t cnv = *i;
 		if(cnv->get_besitzer()==owner  &&   passes_filter(cnv)) {
 			convois.append(cnv);
@@ -257,7 +257,7 @@ bool convoi_frame_t::infowin_event(const event_t *ev)
 		int y = (ev->my-47)/40 + vscroll.get_knob_offset();
 		if(y<(sint32)convois.get_count()) {
 			// let gui_convoiinfo_t() handle this, since then it will be automatically consistent
-			gui_convoiinfo_t ci(convois[y]);
+			gui_convoiinfo_t ci(convois.get(y));
 			return ci.infowin_event( ev );
 		}
 	}
@@ -330,13 +330,13 @@ void convoi_frame_t::zeichnen(koord pos, koord gr)
 	uint32 start = vscroll.get_knob_offset();
 	sint16 yoffset = 47;
 
-	if(  last_world_convois != owner->get_welt()->get_convoi_count()  ) {
+	if (last_world_convois != owner->get_welt()->convoys().get_count()) {
 		// some deleted/ added => resort
 		sort_list();
 	}
 
 	for(  unsigned i=start;  i<convois.get_count()  &&  yoffset<gr.y+47;  i++  ) {
-		convoihandle_t cnv = convois[i];
+		convoihandle_t cnv = convois.get(i);
 
 		if(cnv.is_bound()) {
 			gui_convoiinfo_t ci(cnv);

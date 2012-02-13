@@ -115,7 +115,7 @@ bool factorylist_stats_t::infowin_event(const event_t * ev)
 		return false;
 	}
 
-	fabrik_t* fab = fab_list[line];
+	fabrik_t* fab = fab_list.get(line);
 	if (!fab) {
 		return false;
 	}
@@ -177,7 +177,7 @@ void factorylist_stats_t::zeichnen(koord offset)
 			continue;
 		}
 
-		const fabrik_t* fab = fab_list[i];
+		const fabrik_t* fab = fab_list.get(i);
 		if(fab) {
 			//DBG_DEBUG("factorylist_stats_t()","zeichnen() factory %i",i);
 			unsigned indikatorfarbe = fabrik_t::status_to_color[fab->get_status()];
@@ -185,7 +185,7 @@ void factorylist_stats_t::zeichnen(koord offset)
 			buf.clear();
 			//		buf.append(i+1);
 			//		buf.append(".) ");
-			buf.append(fab_list[i]->get_name());
+			buf.append(fab_list.get(i)->get_name());
 			buf.append(" (");
 
 			if (!fab->get_eingang().empty()) {

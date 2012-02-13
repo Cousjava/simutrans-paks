@@ -210,7 +210,7 @@ bool ai_passenger_t::create_water_transport_vehikel(const stadt_t* start_stadt, 
 			start_hub = halthandle_t();
 			// is there already one harbour next to this one?
 			for(  uint32 i=0;  i<start_connect_hub->get_connections(0)->get_count();  i++  ) {
-				halthandle_t h = (*(start_connect_hub->get_connections(0)))[i].halt;
+				halthandle_t h = start_connect_hub->get_connections(0)->get(i).halt;
 				if( h->get_station_type()&haltestelle_t::dock  ) {
 					start_hub = h;
 					break;
@@ -239,7 +239,7 @@ bool ai_passenger_t::create_water_transport_vehikel(const stadt_t* start_stadt, 
 			end_hub = halthandle_t();
 			// is there already one harbour next to this one?
 			for(  uint32 i=0;  i<end_connect_hub->get_connections(0)->get_count();  i++  ) {
-				halthandle_t h = (*(end_connect_hub->get_connections(0)))[i].halt;
+				halthandle_t h = end_connect_hub->get_connections(0)->get(i).halt;
 				if( h->get_station_type()&haltestelle_t::dock  ) {
 					start_hub = h;
 					break;
@@ -621,7 +621,7 @@ bool ai_passenger_t::create_air_transport_vehikel(const stadt_t *start_stadt, co
 			start_hub = halthandle_t();
 			// is there already one airport next to this town?
 			for(  uint32 i=0;  i<start_connect_hub->get_connections(0)->get_count();  i++  ) {
-				halthandle_t h = (*(start_connect_hub->get_connections(0)))[i].halt;
+				halthandle_t h = start_connect_hub->get_connections(0)->get(i).halt;
 				if( h->get_station_type()&haltestelle_t::airstop  ) {
 					start_hub = h;
 					break;
@@ -650,7 +650,7 @@ bool ai_passenger_t::create_air_transport_vehikel(const stadt_t *start_stadt, co
 			end_hub = halthandle_t();
 			// is there already one airport next to this town?
 			for(  uint32 i=0;  i<end_connect_hub->get_connections(0)->get_count();  i++  ) {
-				halthandle_t h = (*(end_connect_hub->get_connections(0)))[i].halt;
+				halthandle_t h = end_connect_hub->get_connections(0)->get(i).halt;
 				if( h->get_station_type()&haltestelle_t::airstop  ) {
 					start_hub = h;
 					break;
@@ -989,7 +989,7 @@ DBG_MESSAGE("ai_passenger_t::do_passenger_ki()","searching attraction");
 					unsigned	dist;
 					koord pos, size;
 					if(ausflug) {
-						const gebaeude_t* a = ausflugsziele[i];
+						const gebaeude_t* a = ausflugsziele.get(i);
 						if (a->get_post_level() <= 25) {
 							// not a good object to go to ...
 							continue;
@@ -998,7 +998,7 @@ DBG_MESSAGE("ai_passenger_t::do_passenger_ki()","searching attraction");
 						size = a->get_tile()->get_besch()->get_groesse(a->get_tile()->get_layout());
 					}
 					else {
-						const fabrik_t* f = fabriken[i].factory;
+						const fabrik_t* f = fabriken.get(i).factory;
 						const fabrik_besch_t *const besch = f->get_besch();
 						if (( besch->get_pax_demand()==65535 ? besch->get_pax_level() : besch->get_pax_demand() ) <= 10) {
 							// not a good object to go to ... we want more action ...
@@ -1021,10 +1021,10 @@ DBG_MESSAGE("ai_passenger_t::do_passenger_ki()","searching attraction");
 							if(dist+simrand(50)<last_dist  &&   dist>3) {
 								// but closer than the others
 								if(ausflug) {
-									end_ausflugsziel = ausflugsziele[i];
+									end_ausflugsziel = ausflugsziele.get(i);
 								}
 								else {
-									ziel = fabriken[i].factory;
+									ziel = fabriken.get(i).factory;
 								}
 								last_dist = dist;
 								platz2 = test_platz;
@@ -1045,7 +1045,7 @@ DBG_MESSAGE("ai_passenger_t::do_passenger_ki()","searching town");
 				// find a good route
 				for( int i=0;  i<anzahl;  i++  ) {
 					const int nr = (i+offset)%anzahl;
-					const stadt_t* cur = staedte[nr];
+					const stadt_t* cur = staedte.get(nr);
 					if(cur!=last_start_stadt  &&  cur!=start_stadt) {
 						halthandle_t end_halt = get_our_hub(cur);
 						int dist = koord_distance(platz1,cur->get_pos());
@@ -1260,7 +1260,7 @@ DBG_MESSAGE("ai_passenger_t::do_passenger_ki()","using %s on %s",road_vehicle->g
 			simlinemgmt.get_lines( simline_t::line, &lines);
 			const uint32 offset = simrand(lines.get_count());
 			for (uint32 i = 0;  i<lines.get_count();  i++  ) {
-				linehandle_t line = lines[(i+offset)%lines.get_count()];
+				linehandle_t line = lines.get((i+offset) % lines.get_count());
 				if(line->get_linetype()!=simline_t::airline  &&  line->get_linetype()!=simline_t::truckline) {
 					continue;
 				}
@@ -1300,7 +1300,7 @@ DBG_MESSAGE("ai_passenger_t::do_passenger_ki()","using %s on %s",road_vehicle->g
 										// too many convois => cannot do anything about this ...
 										break;
 									}
-									vehikel_t* v = vehikelbauer_t::baue( line->get_schedule()->eintrag[0].pos, this, NULL, v_besch  );
+									vehikel_t* v = vehikelbauer_t::baue( line->get_schedule()->eintrag.get(0).pos, this, NULL, v_besch  );
 									convoi_t* new_cnv = new convoi_t(this);
 									new_cnv->set_name( v->get_besch()->get_name() );
 									new_cnv->add_vehikel( v );
@@ -1331,16 +1331,16 @@ DBG_MESSAGE("ai_passenger_t::do_passenger_ki()","using %s on %s",road_vehicle->g
 				// next: check for overflowing lines, i.e. running with 3/4 of the capacity
 				if(  ratio<10  &&  !convoihandle_t::is_exhausted()  ) {
 					// else add the first convoi again
-					vehikel_t* const v = vehikelbauer_t::baue(line->get_schedule()->eintrag[0].pos, this, NULL, line->get_convoy(0)->front()->get_besch());
+					vehikel_t* const v = vehikelbauer_t::baue(line->get_schedule()->eintrag.get(0).pos, this, NULL, line->get_convoy(0)->front()->get_besch());
 					convoi_t* new_cnv = new convoi_t(this);
 					new_cnv->set_name( v->get_besch()->get_name() );
 					new_cnv->add_vehikel( v );
 					welt->sync_add( new_cnv );
 					new_cnv->set_line( line );
 					// on waiting line, wait at alternating stations for load balancing
-					if(  line->get_schedule()->eintrag[1].ladegrad==90  &&  line->get_linetype()!=simline_t::truckline  &&  (line->count_convoys()&1)==0  ) {
-						new_cnv->get_schedule()->eintrag[0].ladegrad = 90;
-						new_cnv->get_schedule()->eintrag[1].ladegrad = 0;
+					if(  line->get_schedule()->eintrag.get(1).ladegrad==90  &&  line->get_linetype()!=simline_t::truckline  &&  (line->count_convoys()&1)==0  ) {
+						new_cnv->get_schedule()->eintrag.at(0).ladegrad = 90;
+						new_cnv->get_schedule()->eintrag.at(1).ladegrad = 0;
 					}
 					new_cnv->start();
 					return;

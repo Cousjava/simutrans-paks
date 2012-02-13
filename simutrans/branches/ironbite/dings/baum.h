@@ -8,13 +8,12 @@
 #ifndef dings_baum_h
 #define dings_baum_h
 
-#include <string>
-
 #include "../besch/baum_besch.h"
 #include "../simcolor.h"
 #include "../simdings.h"
-#include "../dataobj/umgebung.h"
 
+class baum_besch_t;
+template <class T> class vector_tpl;
 template <class T> class weighted_vector_tpl;
 
 /**
@@ -67,7 +66,7 @@ public:
 	PLAYER_COLOR_VAL get_outline_colour() const { return outline_color; }
 	image_id get_outline_bild() const;
 
-	static void recalc_outline_color() { outline_color = (umgebung_t::hide_trees  &&  umgebung_t::hide_with_transparency) ? (TRANSPARENT25_FLAG | OUTLINE_FLAG | COL_BLACK) : 0; }
+	static void recalc_outline_color();
 
 	/**
 	 * Berechnet Alter und Bild abh�ngig vom Alter
@@ -118,10 +117,10 @@ public:
 	static uint32 create_forest(karte_t *welt, koord center, koord size );
 	static void fill_trees(karte_t *welt, int dichte);
 
-
 	// return list to beschs
 	static const vector_tpl<const baum_besch_t *> * get_all_besch() ;
 
+	
 	static const baum_besch_t *random_tree_for_climate(climate cl);
 
 	static const baum_besch_t *find_tree( const char *tree_name );

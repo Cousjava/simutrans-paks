@@ -405,7 +405,7 @@ void spieler_t::calc_assets()
 {
 	sint64 assets = 0;
 	// all convois
-	for(  vector_tpl<convoihandle_t>::const_iterator i = welt->convois_begin(), end = welt->convois_end();  i != end;  ++i  ) {
+	for (vector_tpl<convoihandle_t>::const_iterator i = welt->convoys().begin(), end = welt->convoys().end(); i != end; ++i) {
 		convoihandle_t cnv = *i;
 		if(  cnv->get_besitzer() == this  ) {
 			assets += cnv->calc_restwert();
@@ -540,8 +540,8 @@ void spieler_t::ai_bankrupt()
 {
 	DBG_MESSAGE("spieler_t::ai_bankrupt()","Removing convois");
 
-	for( int i = welt->get_convoi_count()-1;  i>=0;  i--  ) {
-		const convoihandle_t cnv = welt->get_convoi(i);
+	for (size_t i = welt->convoys().get_count(); i-- != 0;) {
+		convoihandle_t const cnv = welt->convoys().get(i);
 		if(cnv->get_besitzer()!=this) {
 			continue;
 		}
@@ -595,7 +595,7 @@ void spieler_t::ai_bankrupt()
 	}
 
 	// deactivate active tool (remove dummy grounds)
-	welt->set_werkzeug(werkzeug_t::general_tool[WKZ_ABFRAGE], this);
+	welt->set_werkzeug(werkzeug_t::general_tool.get(WKZ_ABFRAGE), this);
 
 	// next remove all ways, depot etc, that are not road or channels
 	for( int y=0;  y<welt->get_groesse_y();  y++  ) {
@@ -1047,7 +1047,7 @@ sint64 spieler_t::undo()
 	}
 	// check, if we can still do undo
 	for(unsigned short i=0;  i<last_built.get_count();  i++  ) {
-		grund_t* gr = welt->lookup(last_built[i]);
+		grund_t* gr = welt->lookup(last_built.get(i));
 		if(gr==NULL  ||  gr->get_typ()!=grund_t::boden) {
 			// well, something was built here ... so no undo
 			last_built.clear();
@@ -1094,7 +1094,7 @@ sint64 spieler_t::undo()
 	// ok, now remove everything last built
 	sint64 cost=0;
 	for(  uint32 i=0;  i<last_built.get_count();  i++  ) {
-		grund_t* gr = welt->lookup(last_built[i]);
+		grund_t* gr = welt->lookup(last_built.get(i));
 		if(  undo_type != powerline_wt  ) {
 			cost += gr->weg_entfernen(undo_type,true);
 		}

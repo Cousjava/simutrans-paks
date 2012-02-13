@@ -199,7 +199,7 @@ void translator::load_custom_list( int lang, vector_tpl<char*> &name_list, const
 
 	// alle namen aufr�umen
 	for(uint32 i=0; i<name_list.get_count(); i++) {
-		free( name_list[i] );
+		free( name_list.get(i) );
 	}
 	name_list.clear();
 

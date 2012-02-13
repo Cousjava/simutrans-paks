@@ -29,12 +29,17 @@ boden_t::boden_t(karte_t *welt, loadsave_t *file, koord pos ) : grund_t( welt, k
 		while(  id!=-1  ) {
 			sint32 age;
 			file->rdwr_long( age );
-			// check, if we still have this tree ... (if there are not trees, the first index is NULL!)
-			if(  tree_t::get_anzahl_besch()>id  &&  (*(tree_t::get_all_besch()))[id]!=NULL  ) {
-				tree_t *tree = new tree_t( welt, get_pos(), (uint8)id, age, slope );
+			
+			// check, if we still have this tree ... (if there are no trees, the first index is NULL!)
+			const vector_tpl<const baum_besch_t *> * all_trees = tree_t::get_all_besch();
+			
+			if(id < tree_t::get_anzahl_besch()  && all_trees->get(id)) 
+			{
+				tree_t *tree = new tree_t(welt, get_pos(), (uint8)id, age, slope );
 				dinge.add( tree );
 			}
-			else {
+			else 
+			{
 				dbg->warning( "boden_t::boden_t()", "Could not restore tree type %i at (%s)", id, pos.get_str() );
 			}
 			// check for next tree

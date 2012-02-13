@@ -353,12 +353,12 @@ bool halt_list_frame_t::infowin_event(const event_t *ev)
 			// find the 'y'th filtered stop in the unfiltered stops list
 			uint32 i=0;
 			for(  int j=0;  i<stops.get_count()  &&  j<=y;  i++  ){
-				if(  passes_filter(stops[i].get_halt())  ) {
+				if(  passes_filter(stops.get(i).get_halt())  ) {
 					j++;
 				}
 			}
 			// let gui_convoiinfo_t() handle this, since then it will be automatically consistent
-			return stops[i-1].infowin_event( ev );
+			return stops.at(i-1).infowin_event( ev );
 		}
 	}
 	return gui_frame_t::infowin_event(ev);
@@ -441,11 +441,11 @@ void halt_list_frame_t::zeichnen(koord pos, koord gr)
 	}
 
 	for(  unsigned i=0;  i<stops.get_count();  i++  ) {
-		const halthandle_t halt = stops[i].get_halt();
+		const halthandle_t halt = stops.get(i).get_halt();
 		if(  halt.is_bound()  &&  passes_filter(halt)  ) {
 			num_filtered_stops++;
 			if(  num_filtered_stops>start  &&  yoffset<gr.y+47  ) {
-				stops[i].zeichnen( pos+koord(0,yoffset) );
+				stops.at(i).zeichnen( pos+koord(0,yoffset) );
 				yoffset += 28;
 			}
 		}

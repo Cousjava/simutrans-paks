@@ -111,7 +111,7 @@ bool simwin_t::operator== (const simwin_t &other) const { return gui == other.gu
 static bool windows_dirty = false;
 
 #define MAX_WIN (64)
-static vector_tpl<simwin_t> wins(MAX_WIN);
+static vector_tpl<simwin_t> windows(MAX_WIN);
 static vector_tpl<simwin_t> kill_list(MAX_WIN);
 
 static karte_t* wl = NULL; // Zeiger auf aktuelle Welt, wird in win_set_welt gesetzt
@@ -438,10 +438,10 @@ gui_frame_t *win_get_magic(long magic)
 {
 	if(magic!=-1  &&  magic!=0) {
 		// es kann nur ein fenster fuer jede pos. magic number geben
-		for(  uint i=0;  i<wins.get_count();  i++  ) {
-			if(wins[i].magic_number == magic) {
+		for(  uint i=0;  i<windows.get_count();  i++  ) {
+			if(windows.at(i).magic_number == magic) {
 				// if 'special' magic number, return it
-				return wins[i].gui;
+				return windows.at(i).gui;
 			}
 		}
 	}
@@ -456,7 +456,7 @@ gui_frame_t *win_get_magic(long magic)
  */
 gui_frame_t *win_get_top()
 {
-	return wins.empty() ? 0 : wins.back().gui;
+	return windows.empty() ? 0 : windows.back().gui;
 }
 
 
@@ -466,21 +466,21 @@ gui_frame_t *win_get_top()
  */
 gui_component_t *win_get_focus()
 {
-	return wins.empty() ? 0 : wins.back().gui->get_focus();
+	return windows.empty() ? 0 : windows.back().gui->get_focus();
 }
 
 
 int win_get_open_count()
 {
-	return wins.get_count();
+	return windows.get_count();
 }
 
 
 // brings a window to front, if open
 bool top_win(const gui_frame_t *gui)
 {
-	for(  uint i=0;  i<wins.get_count()-1;  i++  ) {
-		if(wins[i].gui==gui) {
+	for(  uint i=0;  i<windows.get_count()-1;  i++  ) {
+		if(windows.at(i).gui==gui) {
 			top_win(i);
 			return true;
 		}
@@ -495,7 +495,7 @@ bool top_win(const gui_frame_t *gui)
  */
 bool win_is_top(const gui_frame_t *ig)
 {
-	return !wins.empty() && wins.back().gui == ig;
+	return !windows.empty() && windows.back().gui == ig;
 }
 
 
@@ -507,15 +507,15 @@ void rdwr_all_win(loadsave_t *file)
 {
 	if(  file->get_version()>102003  ) {
 		if(  file->is_saving()  ) {
-			for ( uint32 i=0;  i < wins.get_count();  i++ ) {
-				uint32 id = wins[i].gui->get_rdwr_id();
+			for ( uint32 i=0;  i < windows.get_count();  i++ ) {
+				uint32 id = windows.at(i).gui->get_rdwr_id();
 				if(  id!=magic_reserved  ) {
 					file->rdwr_long( id );
-					wins[i].pos.rdwr( file );
-					file->rdwr_byte( wins[i].wt );
-					file->rdwr_bool( wins[i].sticky );
-					file->rdwr_bool( wins[i].rollup );
-					wins[i].gui->rdwr( file );
+					windows.at(i).pos.rdwr( file );
+					file->rdwr_byte( windows.at(i).wt );
+					file->rdwr_bool( windows.at(i).sticky );
+					file->rdwr_bool( windows.at(i).rollup );
+					windows.at(i).gui->rdwr( file );
 				}
 			}
 			uint32 end = magic_none;
@@ -552,8 +552,8 @@ void rdwr_all_win(loadsave_t *file)
 							w = new schedule_list_gui_t( wl->get_spieler(id-magic_line_management_t) );
 						}
 						else if(  id>=magic_toolbar  &&  id<magic_toolbar+256  ) {
-							werkzeug_t::toolbar_tool[id-magic_toolbar]->update(wl,wl->get_active_player());
-							w = werkzeug_t::toolbar_tool[id-magic_toolbar]->get_werkzeug_waehler();
+							werkzeug_t::toolbar_tool.get(id-magic_toolbar)->update(wl,wl->get_active_player());
+							w = werkzeug_t::toolbar_tool.get(id-magic_toolbar)->get_werkzeug_waehler();
 						}
 						else {
 							dbg->fatal( "rdwr_all_win()", "No idea how to restore magic $%Xlu", id );
@@ -575,8 +575,8 @@ void rdwr_all_win(loadsave_t *file)
 				file->rdwr_bool( sticky );
 				file->rdwr_bool( rollup );
 				w->rdwr( file );
-				wins.back().sticky = sticky;
-				wins.back().rollup = rollup;
+				windows.back().sticky = sticky;
+				windows.back().rollup = rollup;
 			}
 		}
 	}
@@ -603,25 +603,25 @@ int create_win(int x, int y, gui_frame_t* const gui, wintype const wt, long cons
 	 * we search for any error/news message at the bottom of the stack and delete it
 	 * => newer information might be more important ...
 	 */
-	if(  wins.get_count()==MAX_WIN  ) {
+	if(  windows.get_count()==MAX_WIN  ) {
 		// we try to remove one of the lowest news windows (magic_none)
 		for(  uint i=0;  i<MAX_WIN;  i++  ) {
-			if(  wins[i].magic_number == magic_none  &&  dynamic_cast<news_window *>(wins[i].gui)!=NULL  ) {
-				destroy_win( wins[i].gui );
+			if(  windows.at(i).magic_number == magic_none  &&  dynamic_cast<news_window *>(windows.at(i).gui)!=NULL  ) {
+				destroy_win( windows.at(i).gui );
 				break;
 			}
 		}
 	}
 
-	if(  wins.get_count() < MAX_WIN  ) {
+	if(  windows.get_count() < MAX_WIN  ) {
 
-		if (!wins.empty()) {
+		if (!windows.empty()) {
 			// mark old title dirty
-			mark_rect_dirty_wc( wins.back().pos.x, wins.back().pos.y, wins.back().pos.x+wins.back().gui->get_window_size().x, wins.back().pos.y+16 );
+			mark_rect_dirty_wc( windows.back().pos.x, windows.back().pos.y, windows.back().pos.x+windows.back().gui->get_window_size().x, windows.back().pos.y+16 );
 		}
 
-		wins.append( simwin_t() );
-		simwin_t& win = wins.back();
+		windows.append( simwin_t() );
+		simwin_t& win = windows.back();
 
 		// (Mathew Hounsell) Make Sure Closes Aren't Forgotten.
 		// Must Reset as the entries and thus flags are reused
@@ -665,10 +665,10 @@ int create_win(int x, int y, gui_frame_t* const gui, wintype const wt, long cons
 			// try to keep the toolbar below all other toolbars
 			y = 32;
 			if(wt & w_no_overlap) {
-				for( uint32 i=0;  i<wins.get_count()-1;  i++  ) {
-					if(wins[i].wt & w_no_overlap) {
-						if(wins[i].pos.y>=y) {
-							sint16 lower_y = wins[i].pos.y + wins[i].gui->get_window_size().y;
+				for( uint32 i=0;  i<windows.get_count()-1;  i++  ) {
+					if(windows.at(i).wt & w_no_overlap) {
+						if(windows.at(i).pos.y>=y) {
+							sint16 lower_y = windows.at(i).pos.y + windows.at(i).gui->get_window_size().y;
 							if(lower_y >= y) {
 								y = lower_y;
 							}
@@ -694,7 +694,7 @@ int create_win(int x, int y, gui_frame_t* const gui, wintype const wt, long cons
 		}
 		win.pos = koord(x,y);
 		mark_rect_dirty_wc( x, y, x+gr.x, y+gr.y );
-		return wins.get_count();
+		return windows.get_count();
 	}
 	else {
 		return -1;
@@ -709,8 +709,8 @@ int create_win(int x, int y, gui_frame_t* const gui, wintype const wt, long cons
 static void process_kill_list()
 {
 	for(uint i = 0; i < kill_list.get_count(); i++) {
-		wins.remove(kill_list[i]);
-		destroy_framed_win(&kill_list[i]);
+		windows.remove(kill_list.at(i));
+		destroy_framed_win(&kill_list.at(i));
 	}
 	kill_list.clear();
 }
@@ -720,13 +720,13 @@ static void process_kill_list()
  * Destroy a framed window
  * @author Hj. Malthaner
  */
-static void destroy_framed_win(simwin_t *wins)
+static void destroy_framed_win(simwin_t *windows)
 {
 	// mark dirty
-	koord gr = wins->gui->get_window_size();
-	mark_rect_dirty_wc( wins->pos.x, wins->pos.y, wins->pos.x+gr.x, wins->pos.y+gr.y );
+	koord gr = windows->gui->get_window_size();
+	mark_rect_dirty_wc( windows->pos.x, windows->pos.y, windows->pos.x+gr.x, windows->pos.y+gr.y );
 
-	if(wins->gui) {
+	if(windows->gui) {
 		event_t ev;
 
 		ev.ev_class = INFOWIN;
@@ -738,21 +738,21 @@ static void destroy_framed_win(simwin_t *wins)
 		ev.button_state = 0;
 
 		void *old = inside_event_handling;
-		inside_event_handling = wins->gui;
-		wins->gui->infowin_event(&ev);
+		inside_event_handling = windows->gui;
+		windows->gui->infowin_event(&ev);
 		inside_event_handling = old;
 	}
 
-	if(  (wins->wt&w_do_not_delete)==0  ) {
+	if(  (windows->wt&w_do_not_delete)==0  ) {
 		// remove from kill list first
 		// otherwise delete will be called again on that window
 		for(  uint j = 0;  j < kill_list.get_count();  j++  ) {
-			if(  kill_list[j].gui == wins->gui  ) {
+			if(  kill_list.at(j).gui == windows->gui  ) {
 				kill_list.remove_at(j);
 				break;
 			}
 		}
-		delete wins->gui;
+		delete windows->gui;
 	}
 	windows_dirty = true;
 }
@@ -771,14 +771,14 @@ void destroy_win(const long magic)
 
 void destroy_win(const gui_frame_t *gui)
 {
-	for(  uint i=0;  i<wins.get_count();  i++  ) {
-		if(wins[i].gui == gui) {
-			if(inside_event_handling==wins[i].gui) {
-				kill_list.append_unique(wins[i]);
+	for(  uint i=0;  i<windows.get_count();  i++  ) {
+		if(windows.at(i).gui == gui) {
+			if(inside_event_handling==windows.at(i).gui) {
+				kill_list.append_unique(windows.at(i));
 			}
 			else {
-				simwin_t win = wins[i];
-				wins.remove_at(i);
+				simwin_t win = windows.at(i);
+				windows.remove_at(i);
 				destroy_framed_win(&win);
 			}
 			break;
@@ -790,17 +790,17 @@ void destroy_win(const gui_frame_t *gui)
 
 void destroy_all_win(bool destroy_sticky)
 {
-	for ( int curWin=0 ; curWin < (int)wins.get_count() ; curWin++ ) {
-		if(  destroy_sticky  || !wins[curWin].sticky  ) {
-			if(  inside_event_handling==wins[curWin].gui  ) {
+	for ( int curWin=0 ; curWin < (int)windows.get_count() ; curWin++ ) {
+		if(  destroy_sticky  || !windows.at(curWin).sticky  ) {
+			if(  inside_event_handling==windows.at(curWin).gui  ) {
 				// only add this, if not already added
-				kill_list.append_unique(wins[curWin]);
+				kill_list.append_unique(windows.at(curWin));
 			}
 			else {
-				destroy_framed_win(&wins[curWin]);
+				destroy_framed_win(&windows.at(curWin));
 			}
 			// compact the window list
-			wins.remove_at(curWin);
+			windows.remove_at(curWin);
 			curWin--;
 		}
 	}
@@ -809,21 +809,21 @@ void destroy_all_win(bool destroy_sticky)
 
 int top_win(int win)
 {
-	if(  (uint32)win==wins.get_count()-1  ) {
+	if(  (uint32)win==windows.get_count()-1  ) {
 		return win;
 	} // already topped
 
 	// mark old title dirty
-	mark_rect_dirty_wc( wins.back().pos.x, wins.back().pos.y, wins.back().pos.x+wins.back().gui->get_window_size().x, wins.back().pos.y+16 );
+	mark_rect_dirty_wc( windows.back().pos.x, windows.back().pos.y, windows.back().pos.x+windows.back().gui->get_window_size().x, windows.back().pos.y+16 );
 
-	simwin_t tmp = wins[win];
-	wins.remove_at(win);
+	simwin_t tmp = windows.at(win);
+	windows.remove_at(win);
 	tmp.rollup = false;	// make visible when topping
-	wins.append(tmp);
+	windows.append(tmp);
 
 	 // mark new dirty
-	koord gr = wins.back().gui->get_window_size();
-	mark_rect_dirty_wc( wins.back().pos.x, wins.back().pos.y, wins.back().pos.x+gr.x, wins.back().pos.y+gr.y );
+	koord gr = windows.back().gui->get_window_size();
+	mark_rect_dirty_wc( windows.back().pos.x, windows.back().pos.y, windows.back().pos.x+gr.x, windows.back().pos.y+gr.y );
 
 	event_t ev;
 
@@ -840,7 +840,7 @@ int top_win(int win)
 	tmp.gui->infowin_event(&ev);
 	inside_event_handling = old;
 
-	return wins.get_count()-1;
+	return windows.get_count()-1;
 }
 
 /**
@@ -850,14 +850,14 @@ int top_win(int win)
  */
 void display_win(const int win)
 {
-	gui_frame_t *komp = wins[win].gui;
+	gui_frame_t *komp = windows.at(win).gui;
 	const koord gr = komp->get_window_size();
-	const koord pos = wins[win].pos;
+	const koord pos = windows.at(win).pos;
 	
 	const PLAYER_COLOR_VAL title_color = komp->get_title_color();
 	PLAYER_COLOR_VAL text_color = umgebung_t::front_window_text_color;
 	
-	if((unsigned)win != wins.get_count()-1)
+	if((unsigned)win != windows.get_count()-1)
 	{
 		// Hajo ... later
 		// title_color = (title_color&0xF8)+umgebung_t::bottom_window_bar_color;
@@ -866,38 +866,38 @@ void display_win(const int win)
 	const bool need_dragger = komp->get_resizemode() != gui_frame_t::no_resize;
 
 	// %HACK (Mathew Hounsell) So draw will know if gadget is needed.
-	wins[win].flags.help = ( komp->get_help_file() != NULL );
+	windows.at(win).flags.help = ( komp->get_help_file() != NULL );
 	
-	if(wins[win].flags.title)
+	if(windows.at(win).flags.title)
 	{
-		win_draw_window_title(wins[win].pos,
+		win_draw_window_title(windows.at(win).pos,
 				gr,
 				title_color,
 				komp->get_name(),
 				text_color,
 				komp->get_weltpos(),
-				wins[win].closing,
-				wins[win].sticky,
-				wins[win].flags );
+				windows.at(win).closing,
+				windows.at(win).sticky,
+				windows.at(win).flags );
 	}
 	
 	// mark top window, if requested
-	if(umgebung_t::window_frame_active  &&  (unsigned)win==wins.get_count()-1) 
+	if(umgebung_t::window_frame_active  &&  (unsigned)win==windows.get_count()-1) 
 	{
-		const int y_off = wins[win].flags.title ? 0 : 16;
-		if(!wins[win].rollup) 
+		const int y_off = windows.at(win).flags.title ? 0 : 16;
+		if(!windows.at(win).rollup) 
 		{
-			display_ddd_box( wins[win].pos.x-1, wins[win].pos.y-1 + y_off, gr.x+2, gr.y+2 - y_off, title_color, title_color+1 );
+			display_ddd_box( windows.at(win).pos.x-1, windows.at(win).pos.y-1 + y_off, gr.x+2, gr.y+2 - y_off, title_color, title_color+1 );
 		}
 		else 
 		{
-			display_ddd_box( wins[win].pos.x-1, wins[win].pos.y-1 + y_off, gr.x+2, 18 - y_off, title_color, title_color+1 );
+			display_ddd_box( windows.at(win).pos.x-1, windows.at(win).pos.y-1 + y_off, gr.x+2, 18 - y_off, title_color, title_color+1 );
 		}
 	}
 	
-	if(!wins[win].rollup) 
+	if(!windows.at(win).rollup) 
 	{
-		komp->zeichnen(wins[win].pos, gr);
+		komp->zeichnen(windows.at(win).pos, gr);
 
 		// Hajo: draw window drag gadget
 		if(need_dragger) 
@@ -917,20 +917,20 @@ void display_all_win()
 	const sint16 x = get_mouse_x();
 	const sint16 y = get_mouse_y();
 	tooltip_element = NULL;
-	for(  int i=wins.get_count()-1;  i>=0;  i--  ) {
-		if(  (!wins[i].rollup  &&  wins[i].gui->getroffen(x-wins[i].pos.x,y-wins[i].pos.y))  ||
-		     (wins[i].rollup  &&  x>=wins[i].pos.x  &&  x<wins[i].pos.x+wins[i].gui->get_window_size().x  &&  y>=wins[i].pos.y  &&  y<wins[i].pos.y+16)
+	for(  int i=windows.get_count()-1;  i>=0;  i--  ) {
+		if(  (!windows.at(i).rollup  &&  windows.at(i).gui->getroffen(x-windows.at(i).pos.x,y-windows.at(i).pos.y))  ||
+		     (windows.at(i).rollup  &&  x>=windows.at(i).pos.x  &&  x<windows.at(i).pos.x+windows.at(i).gui->get_window_size().x  &&  y>=windows.at(i).pos.y  &&  y<windows.at(i).pos.y+16)
 		) {
 			// tooltips are only allowed for this window
-			tooltip_element = wins[i].gui;
+			tooltip_element = windows.at(i).gui;
 			break;
 		}
 	}
 
 	// then display windows
-	for(  uint i=0;  i<wins.get_count();  i++  ) {
+	for(  uint i=0;  i<windows.get_count();  i++  ) {
 		void *old_gui = inside_event_handling;
-		inside_event_handling = wins[i].gui;
+		inside_event_handling = windows.at(i).gui;
 		display_win(i);
 		inside_event_handling = old_gui;
 	}
@@ -940,8 +940,8 @@ void display_all_win()
 
 void win_rotate90( sint16 new_ysize )
 {
-	for(  uint i=0;  i<wins.get_count();  i++  ) {
-		wins[i].gui->map_rotate90( new_ysize );
+	for(  uint i=0;  i<windows.get_count();  i++  ) {
+		windows.at(i).gui->map_rotate90( new_ysize );
 	}
 }
 
@@ -950,11 +950,11 @@ void win_rotate90( sint16 new_ysize )
 static void remove_old_win()
 {
 	// alte fenster entfernen, falls dauer abgelaufen
-	for(  int i=wins.get_count()-1;  i>=0;  i=min(i,(int)wins.get_count())-1  ) {
-		if(wins[i].dauer > 0) {
-			wins[i].dauer --;
-			if(wins[i].dauer == 0) {
-				destroy_win( wins[i].gui );
+	for(  int i=windows.get_count()-1;  i>=0;  i=min(i,(int)windows.get_count())-1  ) {
+		if(windows.at(i).dauer > 0) {
+			windows.at(i).dauer --;
+			if(windows.at(i).dauer == 0) {
+				destroy_win( windows.at(i).gui );
 			}
 		}
 	}
@@ -982,16 +982,16 @@ void snap_check_win( const int win, koord *r, const koord from_pos, const koord 
 		return; // or nothing to do.
 	}
 
-	const int wins_count = wins.get_count();
+	const int windows_count = windows.get_count();
 
-	for(  int i=0;  i<=wins_count;  i++  ) {
+	for(  int i=0;  i<=windows_count;  i++  ) {
 		if(  i==win  ) {
 			// Don't snap to self
 			continue;
 		}
 
 		koord other_gr, other_pos;
-		if(  i==wins_count  ) {
+		if(  i==windows_count  ) {
 			// Allow snap to screen edge
 			other_pos.x = 0;
 			other_pos.y = 32;
@@ -1003,9 +1003,9 @@ void snap_check_win( const int win, koord *r, const koord from_pos, const koord 
 		}
 		else {
 			// Snap to other window
-			other_gr = wins[i].gui->get_window_size();
-			other_pos = wins[i].pos;
-			if(  wins[i].rollup  ) {
+			other_gr = windows.at(i).gui->get_window_size();
+			other_pos = windows.at(i).pos;
+			if(  windows.at(i).rollup  ) {
 				other_gr.y = 18;
 			}
 		}
@@ -1082,13 +1082,13 @@ void move_win(int win, event_t *ev)
 	const koord mouse_from( ev->cx, ev->cy );
 	const koord mouse_to( ev->mx, ev->my );
 
-	const koord from_pos = wins[win].pos;
-	koord from_gr = wins[win].gui->get_window_size();
-	if(  wins[win].rollup  ) {
+	const koord from_pos = windows.at(win).pos;
+	koord from_gr = windows.at(win).gui->get_window_size();
+	if(  windows.at(win).rollup  ) {
 		from_gr.y = 18;
 	}
 
-	koord to_pos = wins[win].pos+(mouse_to-mouse_from);
+	koord to_pos = windows.at(win).pos+(mouse_to-mouse_from);
 	const koord to_gr = from_gr;
 
 	if(  umgebung_t::window_snap_distance>0  ) {
@@ -1102,7 +1102,7 @@ void move_win(int win, event_t *ev)
 	// delta is actual window movement.
 	const koord delta = to_pos - from_pos;
 
-	wins[win].pos += delta;
+	windows.at(win).pos += delta;
 
 	// need to mark all of old and new positions dirty
 	mark_rect_dirty_wc( from_pos.x, from_pos.y, from_pos.x+from_gr.x, from_pos.y+from_gr.y );
@@ -1121,8 +1121,8 @@ void resize_win(int win, event_t *ev)
 	const koord mouse_from( wev.cx, wev.cy );
 	const koord mouse_to( wev.mx, wev.my );
 
-	const koord from_pos = wins[win].pos;
-	const koord from_gr = wins[win].gui->get_window_size();
+	const koord from_pos = windows.at(win).pos;
+	const koord from_gr = windows.at(win).gui->get_window_size();
 
 	const koord to_pos = from_pos;
 	koord to_gr = from_gr+(mouse_to-mouse_from);
@@ -1138,7 +1138,7 @@ void resize_win(int win, event_t *ev)
 	wev.mx = wev.cx + to_gr.x - from_gr.x;
 	wev.my = wev.cy + to_gr.y - from_gr.y;
 
-	wins[win].gui->infowin_event( &wev );
+	windows.at(win).gui->infowin_event( &wev );
 }
 
 
@@ -1146,10 +1146,10 @@ void resize_win(int win, event_t *ev)
 // returns true, if gui is a open window handle
 bool win_is_open(gui_frame_t *gui)
 {
-	for(  uint i=0;  i<wins.get_count();  i++  ) {
-		if(  wins[i].gui == gui  ) {
+	for(  uint i=0;  i<windows.get_count();  i++  ) {
+		if(  windows.at(i).gui == gui  ) {
 			for(  uint j = 0;  j < kill_list.get_count();  j++  ) {
-				if(  kill_list[j].gui == gui  ) {
+				if(  kill_list.at(j).gui == gui  ) {
 					return false;
 				}
 			}
@@ -1163,9 +1163,9 @@ bool win_is_open(gui_frame_t *gui)
 
 int win_get_posx(gui_frame_t *gui)
 {
-	for(  int i=wins.get_count()-1;  i>=0;  i--  ) {
-		if(wins[i].gui == gui) {
-			return wins[i].pos.x;
+	for(  int i=windows.get_count()-1;  i>=0;  i--  ) {
+		if(windows.at(i).gui == gui) {
+			return windows.at(i).pos.x;
 		}
 	}
 	return -1;
@@ -1174,9 +1174,9 @@ int win_get_posx(gui_frame_t *gui)
 
 int win_get_posy(gui_frame_t *gui)
 {
-	for(  int i=wins.get_count()-1;  i>=0;  i--  ) {
-		if(wins[i].gui == gui) {
-			return wins[i].pos.y;
+	for(  int i=windows.get_count()-1;  i>=0;  i--  ) {
+		if(windows.at(i).gui == gui) {
+			return windows.at(i).pos.y;
 		}
 	}
 	return -1;
@@ -1185,11 +1185,11 @@ int win_get_posy(gui_frame_t *gui)
 
 void win_set_pos(gui_frame_t *gui, int x, int y)
 {
-	for(  int i=wins.get_count()-1;  i>=0;  i--  ) {
-		if(wins[i].gui == gui) {
-			wins[i].pos.x = x;
-			wins[i].pos.y = y;
-			const koord gr = wins[i].gui->get_window_size();
+	for(  int i=windows.get_count()-1;  i>=0;  i--  ) {
+		if(windows.at(i).gui == gui) {
+			windows.at(i).pos.x = x;
+			windows.at(i).pos.y = y;
+			const koord gr = windows.at(i).gui->get_window_size();
 			mark_rect_dirty_wc( x, y, x+gr.x, y+gr.y );
 			return;
 		}
@@ -1236,20 +1236,20 @@ bool check_pos_win(event_t *ev)
 
 	// click in main menu?
 	if (!werkzeug_t::toolbar_tool.empty()                   &&
-			werkzeug_t::toolbar_tool[0]->get_werkzeug_waehler() &&
-			werkzeug_t::toolbar_tool[0]->iconsize.y > y         &&
+			werkzeug_t::toolbar_tool.get(0)->get_werkzeug_waehler() &&
+			werkzeug_t::toolbar_tool.get(0)->iconsize.y > y         &&
 			ev->ev_class != EVENT_KEYBOARD) {
 		event_t wev = *ev;
-		inside_event_handling = werkzeug_t::toolbar_tool[0];
-		werkzeug_t::toolbar_tool[0]->get_werkzeug_waehler()->infowin_event( &wev );
+		inside_event_handling = werkzeug_t::toolbar_tool.get(0);
+		werkzeug_t::toolbar_tool.get(0)->get_werkzeug_waehler()->infowin_event( &wev );
 		inside_event_handling = NULL;
 		// swallow event
 		return true;
 	}
 
 	// cursor event only go to top window
-	if(  ev->ev_class == EVENT_KEYBOARD  &&  !wins.empty()  ) {
-		simwin_t&               win  = wins.back();
+	if(  ev->ev_class == EVENT_KEYBOARD  &&  !windows.empty()  ) {
+		simwin_t&               win  = windows.back();
 		inside_event_handling = win.gui;
 		swallowed = win.gui->infowin_event(ev);
 		inside_event_handling = NULL;
@@ -1258,13 +1258,13 @@ bool check_pos_win(event_t *ev)
 	}
 
 	// just move top window until button release
-	if(  is_moving>=0  &&  (unsigned)is_moving<wins.get_count()  &&  (IS_LEFTDRAG(ev)  ||  IS_LEFTREPEAT(ev))  ) {
+	if(  is_moving>=0  &&  (unsigned)is_moving<windows.get_count()  &&  (IS_LEFTDRAG(ev)  ||  IS_LEFTREPEAT(ev))  ) {
 		move_win( is_moving, ev );
 		return true;
 	}
 
 	// just resize window until button release
-	if(  is_resizing>=0  &&  (unsigned)is_resizing<wins.get_count()  &&  (IS_LEFTDRAG(ev)  ||  IS_LEFTREPEAT(ev))  ) {
+	if(  is_resizing>=0  &&  (unsigned)is_resizing<windows.get_count()  &&  (IS_LEFTDRAG(ev)  ||  IS_LEFTREPEAT(ev))  ) {
 		resize_win( is_resizing, ev );
 		return true;
 	}
@@ -1289,40 +1289,40 @@ bool check_pos_win(event_t *ev)
 	}
 
 	// handle all the other events
-	for(  int i=wins.get_count()-1;  i>=0  &&  !swallowed;  i=min(i,(int)wins.get_count())-1  ) {
+	for(  int i=windows.get_count()-1;  i>=0  &&  !swallowed;  i=min(i,(int)windows.get_count())-1  ) {
 
-		if(  wins[i].gui->getroffen( x-wins[i].pos.x, y-wins[i].pos.y )  ) {
+		if(  windows.at(i).gui->getroffen( x-windows.at(i).pos.x, y-windows.at(i).pos.y )  ) {
 
 			// all events in window are swallowed
 			swallowed = true;
 
-			inside_event_handling = wins[i].gui;
+			inside_event_handling = windows.at(i).gui;
 
 			// Top window first
-			if(  (int)wins.get_count()-1>i  &&  IS_LEFTCLICK(ev)  &&  (!wins[i].rollup  ||  ev->cy<wins[i].pos.y+16)  ) {
+			if(  (int)windows.get_count()-1>i  &&  IS_LEFTCLICK(ev)  &&  (!windows.at(i).rollup  ||  ev->cy<windows.at(i).pos.y+16)  ) {
 				i = top_win(i);
 			}
 
 			// Hajo: if within title bar && window needs decoration
-			if(  y<wins[i].pos.y+16  &&  wins[i].flags.title  ) {
+			if(  y<windows.at(i).pos.y+16  &&  windows.at(i).flags.title  ) {
 				// no more moving
 				is_moving = -1;
 
 				// %HACK (Mathew Hounsell) So decode will know if gadget is needed.
-				wins[i].flags.help = ( wins[i].gui->get_help_file() != NULL );
+				windows.at(i).flags.help = ( windows.at(i).gui->get_help_file() != NULL );
 
 				// Where Was It ?
-				simwin_gadget_et code = decode_gadget_boxes( ( & wins[i].flags ), wins[i].pos.x + (REVERSE_GADGETS?0:wins[i].gui->get_window_size().x-20), x );
+				simwin_gadget_et code = decode_gadget_boxes( ( & windows.at(i).flags ), windows.at(i).pos.x + (REVERSE_GADGETS?0:windows.at(i).gui->get_window_size().x-20), x );
 
 				switch( code ) {
 					case GADGET_CLOSE :
 						if (IS_LEFTCLICK(ev)) {
-							wins[i].closing = true;
+							windows.at(i).closing = true;
 						} else if  (IS_LEFTRELEASE(ev)) {
-							if (  ev->my>=wins[i].pos.y  &&  ev->my<wins[i].pos.y+16  &&  decode_gadget_boxes( ( & wins[i].flags ), wins[i].pos.x + (REVERSE_GADGETS?0:wins[i].gui->get_window_size().x-20), ev->mx )==GADGET_CLOSE) {
-								destroy_win(wins[i].gui);
+							if (  ev->my>=windows.at(i).pos.y  &&  ev->my<windows.at(i).pos.y+16  &&  decode_gadget_boxes( ( & windows.at(i).flags ), windows.at(i).pos.x + (REVERSE_GADGETS?0:windows.at(i).gui->get_window_size().x-20), ev->mx )==GADGET_CLOSE) {
+								destroy_win(windows.at(i).gui);
 							} else {
-								wins[i].closing = false;
+								windows.at(i).closing = false;
 							}
 						}
 						break;
@@ -1330,12 +1330,12 @@ bool check_pos_win(event_t *ev)
 						if (IS_LEFTCLICK(ev)) {
 							ev->ev_class = WINDOW_MAKE_MIN_SIZE;
 							ev->ev_code = 0;
-							wins[i].gui->infowin_event( ev );
+							windows.at(i).gui->infowin_event( ev );
 						}
 						break;
 					case GADGET_HELP :
 						if (IS_LEFTCLICK(ev)) {
-							create_win(new help_frame_t(wins[i].gui->get_help_file()), w_info, (long)(wins[i].gui->get_help_file()) );
+							create_win(new help_frame_t(windows.at(i).gui->get_help_file()), w_info, (long)(windows.at(i).gui->get_help_file()) );
 							inside_event_handling = 0;
 						}
 						break;
@@ -1343,27 +1343,27 @@ bool check_pos_win(event_t *ev)
 						if (IS_LEFTCLICK(ev)) {
 							ev->ev_class = WINDOW_CHOOSE_NEXT;
 							ev->ev_code = PREV_WINDOW;  // backward
-							wins[i].gui->infowin_event( ev );
+							windows.at(i).gui->infowin_event( ev );
 						}
 						break;
 					case GADGET_NEXT:
 						if (IS_LEFTCLICK(ev)) {
 							ev->ev_class = WINDOW_CHOOSE_NEXT;
 							ev->ev_code = NEXT_WINDOW;  // forward
-							wins[i].gui->infowin_event( ev );
+							windows.at(i).gui->infowin_event( ev );
 						}
 						break;
 					case GADGET_GOTOPOS:
 						if (IS_LEFTCLICK(ev)) {
 							// change position on map
-							spieler_t::get_welt()->change_world_position( wins[i].gui->get_weltpos() );
+							spieler_t::get_welt()->change_world_position( windows.at(i).gui->get_weltpos() );
 						}
 						break;
 					case GADGET_STICKY:
 						if (IS_LEFTCLICK(ev)) {
-							wins[i].sticky = !wins[i].sticky;
+							windows.at(i).sticky = !windows.at(i).sticky;
 							// mark title bar dirty
-							mark_rect_dirty_wc( wins[i].pos.x, wins[i].pos.y, wins[i].pos.x+wins[i].gui->get_window_size().x, wins[i].pos.y+16 );
+							mark_rect_dirty_wc( windows.at(i).pos.x, windows.at(i).pos.y, windows.at(i).pos.x+windows.at(i).gui->get_window_size().x, windows.at(i).pos.y+16 );
 						}
 						break;
 					default : // Title
@@ -1373,10 +1373,10 @@ bool check_pos_win(event_t *ev)
 							is_moving = i;
 						}
 						if(IS_RIGHTCLICK(ev)) {
-							wins[i].rollup ^= 1;
-							gui_frame_t *gui = wins[i].gui;
+							windows.at(i).rollup ^= 1;
+							gui_frame_t *gui = windows.at(i).gui;
 							koord gr = gui->get_window_size();
-							mark_rect_dirty_wc( wins[i].pos.x, wins[i].pos.y, wins[i].pos.x+gr.x, wins[i].pos.y+gr.y );
+							mark_rect_dirty_wc( windows.at(i).pos.x, windows.at(i).pos.y, windows.at(i).pos.x+gr.x, windows.at(i).pos.y+gr.y );
 						}
 
 				}
@@ -1386,18 +1386,18 @@ bool check_pos_win(event_t *ev)
 
 			}
 			else {
-				if(!wins[i].rollup) {
+				if(!windows.at(i).rollup) {
 					// click in Window / Resize?
 					//11-May-02   markus weber added
 
-					koord gr = wins[i].gui->get_window_size();
+					koord gr = windows.at(i).gui->get_window_size();
 
 					// resizer hit ?
 					const bool canresize = is_resizing>=0  ||
-												(ev->cx > wins[i].pos.x + gr.x - dragger_size  &&
-												 ev->cy > wins[i].pos.y + gr.y - dragger_size);
+												(ev->cx > windows.at(i).pos.x + gr.x - dragger_size  &&
+												 ev->cy > windows.at(i).pos.y + gr.y - dragger_size);
 
-					if((IS_LEFTCLICK(ev)  ||  IS_LEFTDRAG(ev)  ||  IS_LEFTREPEAT(ev))  &&  canresize  &&  wins[i].gui->get_resizemode()!=gui_frame_t::no_resize) {
+					if((IS_LEFTCLICK(ev)  ||  IS_LEFTDRAG(ev)  ||  IS_LEFTREPEAT(ev))  &&  canresize  &&  windows.at(i).gui->get_resizemode()!=gui_frame_t::no_resize) {
 						resize_win( i, ev );
 						is_resizing = i;
 					}
@@ -1405,8 +1405,8 @@ bool check_pos_win(event_t *ev)
 						is_resizing = -1;
 						// click in Window
 						event_t wev = *ev;
-						translate_event(&wev, -wins[i].pos.x, -wins[i].pos.y);
-						wins[i].gui->infowin_event( &wev );
+						translate_event(&wev, -windows.at(i).pos.x, -windows.at(i).pos.y);
+						windows.at(i).gui->infowin_event( &wev );
 					}
 				}
 				else {
@@ -1448,10 +1448,10 @@ void win_display_flush(double konto)
 {
 	const sint16 disp_width = display_get_width();
 	const sint16 disp_height = display_get_height();
-	const sint16 menu_height = werkzeug_t::toolbar_tool[0]->iconsize.y;
+	const sint16 menu_height = werkzeug_t::toolbar_tool.get(0)->iconsize.y;
 
 	// display main menu
-	werkzeug_waehler_t *main_menu = werkzeug_t::toolbar_tool[0]->get_werkzeug_waehler();
+	werkzeug_waehler_t *main_menu = werkzeug_t::toolbar_tool.get(0)->get_werkzeug_waehler();
 	display_set_clip_wh( 0, 0, disp_width, menu_height+1 );
 	display_fillbox_wh(0, 0, disp_width, menu_height, MN_GREY2, false);
 	// .. extra logic to enable tooltips
@@ -1723,8 +1723,8 @@ bool win_change_zoom_factor(bool magnify)
 		ev.cy = 0;
 		ev.button_state = 0;
 
-		for(  sint32 i=wins.get_count()-1;  i>=0;  i=min(i,(int)wins.get_count())-1  ) {
-			wins[i].gui->infowin_event(&ev);
+		for(  sint32 i=windows.get_count()-1;  i>=0;  i=min(i,(int)windows.get_count())-1  ) {
+			windows.at(i).gui->infowin_event(&ev);
 		}
 	}
 	return ok;

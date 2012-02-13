@@ -198,11 +198,11 @@ void modal_dialogue( gui_frame_t *gui, long magic, karte_t *welt, bool (*quit)()
 				DBG_DEBUG4("zeige_banner", "calling win_poll_event");
 				win_poll_event(&ev);
 				// no toolbar events
-				if(  ev.my < werkzeug_t::toolbar_tool[0]->iconsize.y  ) {
-					ev.my = werkzeug_t::toolbar_tool[0]->iconsize.y;
+				if(  ev.my < werkzeug_t::toolbar_tool.get(0)->iconsize.y  ) {
+					ev.my = werkzeug_t::toolbar_tool.get(0)->iconsize.y;
 				}
-				if(  ev.cy < werkzeug_t::toolbar_tool[0]->iconsize.y  ) {
-					ev.cy = werkzeug_t::toolbar_tool[0]->iconsize.y;
+				if(  ev.cy < werkzeug_t::toolbar_tool.get(0)->iconsize.y  ) {
+					ev.cy = werkzeug_t::toolbar_tool.get(0)->iconsize.y;
 				}
 				if(  ev.ev_class == EVENT_KEYBOARD  &&  ev.ev_code == SIM_KEY_F1  ) {
 					if(  gui_frame_t *win = win_get_top()  ) {
@@ -1031,7 +1031,7 @@ DBG_MESSAGE("simmain","loadgame file found at %s",buffer);
 		//  start in June ...
 		intr_set(welt, view);
 		win_set_welt(welt);
-		werkzeug_t::toolbar_tool[0]->init(welt,welt->get_active_player());
+		werkzeug_t::toolbar_tool.get(0)->init(welt,welt->get_active_player());
 		welt->set_fast_forward(true);
 		welt->sync_step(5000,true,false);
 		welt->step_month(5);
@@ -1047,7 +1047,7 @@ DBG_MESSAGE("simmain","loadgame file found at %s",buffer);
 		// just init view (world was loaded from file)
 		intr_set(welt, view);
 		win_set_welt(welt);
-		werkzeug_t::toolbar_tool[0]->init(welt,welt->get_active_player());
+		werkzeug_t::toolbar_tool.get(0)->init(welt,welt->get_active_player());
 	}
 
 	welt->set_fast_forward(false);

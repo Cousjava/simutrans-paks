@@ -3,18 +3,16 @@
 
 #include "gui_frame.h"
 #include "gui_container.h"
-#include "components/gui_textinput.h"
+
 #include "components/gui_scrolled_list.h"
 #include "components/gui_scrollpane.h"
 #include "components/gui_tab_panel.h"
-#include "components/gui_divider.h"
 #include "components/gui_button.h"
 #include "components/gui_image.h"
 #include "components/gui_fixedwidth_textarea.h"
 
-#include "gui_convoiinfo.h"
 #include "../utils/cbuffer_t.h"
-#include "../simtypes.h"
+
 
 class karte_t;
 class spieler_t;

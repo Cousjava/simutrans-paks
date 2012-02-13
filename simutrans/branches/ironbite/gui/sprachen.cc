@@ -157,8 +157,8 @@ sprachengui_t::sprachengui_t() :
 		const bool right = 2*i >= count;
 		const sint16 x = 10 + (right  ? 100 : 0);
 		const sint16 y = 44 + 14 * (right ? i - (count+1)/2: i);
-		buttons[i].button->set_pos(koord(x,y));
-		add_komponente( buttons[i].button );
+		buttons.at(i).button->set_pos(koord(x,y));
+		add_komponente( buttons.at(i).button );
 	}
 
 	chdir(umgebung_t::user_dir);
@@ -171,10 +171,10 @@ sprachengui_t::sprachengui_t() :
 bool sprachengui_t::action_triggered( gui_action_creator_t *komp, value_t)
 {
 	for(int i=0; i<translator::get_language_count(); i++) {
-		button_t *b = buttons[i].button;
+		button_t *b = buttons.at(i).button;
 		if(b == komp) {
 			b->pressed = true;
-			translator::set_language(buttons[i].id);
+			translator::set_language(buttons.at(i).id);
 			init_font_from_lang();
 		}
 		else {
