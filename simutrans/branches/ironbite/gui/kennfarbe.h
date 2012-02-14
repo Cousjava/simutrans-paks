@@ -12,11 +12,11 @@
 #include "components/action_listener.h"
 #include "components/gui_button.h"
 #include "components/gui_image.h"
-#include "components/gui_textarea.h"
-#include "../utils/cbuffer_t.h"
+#include "components/gui_label.h"
 
 /**
- * Hierueber kann der Spieler seine Kennfarbe einstellen
+ * This dialog allows the player to choose their preferred color for
+ * vehicles and buildings.
  *
  * @author Hj. Malthaner
  */
@@ -24,8 +24,9 @@ class farbengui_t : public gui_frame_t, action_listener_t
 {
 private:
 	spieler_t *sp;
-	cbuffer_t buf;
-	gui_textarea_t txt;
+	gui_label_t txt;
+	gui_label_t primary;
+	gui_label_t secondary;
 	gui_image_t bild;
 
 	button_t player_color_1[28];

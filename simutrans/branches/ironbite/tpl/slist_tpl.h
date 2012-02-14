@@ -33,8 +33,7 @@ template<class T> class slist_iterator_tpl;
  * @author Hj. Malthaner
  */
 
-template<class T>
-class slist_tpl
+template<class T> class slist_tpl
 {
 private:
 	struct node_t
@@ -56,6 +55,7 @@ private:
 	friend class slist_iterator_tpl<T>;
 
 public:
+	class const_iterator;
 
 	/**
 	 * Iterator class: can be used to erase nodes and to modify nodes
@@ -465,19 +465,19 @@ template<class T>
 class slist_iterator_tpl
 {
 private:
-	typename slist_tpl<T>::node_t *current_node;
-	typename slist_tpl<T>::node_t *next_node;
+	typename slist_tpl<T>::node_t * current_node;
+	typename slist_tpl<T>::node_t * next_node;
 
 public:
-	slist_iterator_tpl(const slist_tpl<T>* list) :
+	slist_iterator_tpl(const slist_tpl<T> * list) :
 		// we start with NULL
 		// after one call to next() current_node points to first node in list
-		current_node(NULL),
+		current_node(0),
 		next_node(list->head)
 	{}
 
-	slist_iterator_tpl(const slist_tpl<T>& list) :
-		current_node(NULL),
+	slist_iterator_tpl(const slist_tpl<T> & list) :
+		current_node(0),
 		next_node(list.head)
 	{}
 
@@ -496,20 +496,24 @@ public:
 	bool next()
 	{
 		current_node = next_node;
-		if (next_node) {
+		if (next_node) 
+		{
 			next_node = next_node->next;
 		}
-		return (current_node!= 0);
+		return (current_node != 0);
 	}
 
 	/**
 	 * @return the current element (as const reference)
 	 * @author Hj. Malthaner
 	 */
-	const T& get_current() const
+	const T & get_current() const
 	{
-		if(current_node==NULL) {
-			dbg->fatal("class slist_iterator_tpl.get_current()", "Iteration: accessed NULL!");
+		if(current_node == 0) 
+		{
+			dbg->fatal("slist_iterator_tpl.get_current()", 
+				    "<%s> iteration accessed NULL!", 
+				    typeid(T).name());
 		}
 		return current_node->data;
 	}
@@ -519,10 +523,13 @@ public:
 	 * @return the current element (as reference)
 	 * @author Hj. Malthaner
 	 */
-	T& access_current()
+	T & access_current()
 	{
-		if(current_node==NULL) {
-			dbg->fatal("class slist_iterator_tpl.access_current()", "Iteration: accessed NULL!");
+		if(current_node == 0) 
+		{
+			dbg->fatal("slist_iterator_tpl.access_current()",
+				    "<%s> iteration accessed NULL!", 
+				    typeid(T).name());
 		}
 		return current_node->data;
 	}

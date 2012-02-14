@@ -26,6 +26,7 @@ private:
 	button_t bt_new;
 	button_t bt_quit;
 
+	gui_divider_t seperator_map;
 	gui_divider_t seperator_file;
 	gui_divider_t seperator;
 

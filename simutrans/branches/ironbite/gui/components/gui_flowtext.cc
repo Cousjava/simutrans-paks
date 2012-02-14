@@ -85,7 +85,7 @@ void gui_flowtext_t::set_text(const char *text)
 				tail++;
 			}
 
-			// parse a tag (not allowed to exeec 511 letters)
+			// parse a tag (not allowed to exceed 511 letters)
 			for (int i = 0; *lead != '>' && *lead > 0 && i < 511; i++) {
 				lead++;
 			}
@@ -97,13 +97,15 @@ void gui_flowtext_t::set_text(const char *text)
 			if (word[0] == 'p' || (word[0] == 'b' && word[1] == 'r')) {
 				att = ATT_NEWLINE;
 			} else if (word[0] == 'a') {
-				if (!endtag) {
+				if (!endtag) 
+				{
 					att = ATT_A_START;
 					param = word;
-				}
-				else {
-					att = ATT_A_END;
 					links->append(new hyperlink_t(param.substr(8, param.size() - 9)));
+				}
+				else 
+				{
+					att = ATT_A_END;
 				}
 			} else if (word[0] == 'h' && word[1] == '1') {
 				att = endtag ? ATT_H1_END : ATT_H1_START;
@@ -224,7 +226,6 @@ koord gui_flowtext_t::output(koord offset, bool doit, bool return_max_width)
 	int max_width    = width;
 	int text_width   = width;
 
-
 	hyperlink_t * link = 0;
 	
 	slist_iterator_tpl <node_t *> iter (nodes); 
@@ -270,29 +271,36 @@ koord gui_flowtext_t::output(koord offset, bool doit, bool return_max_width)
 			case ATT_A_START:
 				color = COL_BLUE;
 			
-				link = link_iter.get_current();
-				link->tl.x = xpos;
-				link->tl.y = ypos;
-			
+				if(link_iter.next())
+				{
+					link = link_iter.get_current();
+					link->tl.x = xpos;
+					link->tl.y = ypos;
+				}
+				
 				break;
 
 			case ATT_A_END:
 				
-				link->br.x = xpos - 4;
-				link->br.y = ypos + LINESPACE;
+				// see if there was a start tag ...
+				if(link)
+				{				
+					link->br.x = xpos - 4;
+					link->br.y = ypos + LINESPACE;
 
-				if (link->br.x < link->tl.x) {
-					link->tl.x = 0;
-					link->tl.y = ypos;
+					if (link->br.x < link->tl.x) {
+						link->tl.x = 0;
+						link->tl.y = ypos;
+					}
+
+					if (doit) 
+					{
+						display_fillbox_wh_clip(link->tl.x + offset.x, link->tl.y + offset.y + 10, link->br.x - link->tl.x, 1, color, false);
+					}
+					
+					link = 0;
 				}
-
-				// links.append(link);
 				
-				if (doit) {
-					display_fillbox_wh_clip(link->tl.x + offset.x, link->tl.y + offset.y + 10, link->br.x - link->tl.x, 1, color, false);
-				}
-
-				link_iter.next();
 				color = COL_BLACK;
 				break;
 

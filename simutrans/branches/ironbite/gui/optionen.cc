@@ -54,6 +54,12 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 
 	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
 
+	seperator_map.set_pos( koord(xpos,  ypos) );
+	seperator_map.set_groesse( koord(BUTTON_WIDTH, 1) );
+	add_komponente( &seperator_map );
+
+	ypos += 3 + D_COMP_Y_SPACE;
+
 	bt_load.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
 	bt_load.set_typ(button_t::roundbox);
 	bt_load.set_pos( koord(xpos, ypos) );
@@ -156,7 +162,7 @@ bool optionen_gui_t::action_triggered( gui_action_creator_t *comp,value_t /* */)
 		create_win(new sprachengui_t(), w_info, magic_sprachengui_t);
 	}
 	else if(comp==&bt_color) {
-		create_win(new farbengui_t(welt->get_active_player()), w_info, magic_farbengui_t);
+		create_win(get_window_size().x-32, 36, new farbengui_t(welt->get_active_player()), w_info, magic_farbengui_t);
 	}
 	else if(comp==&bt_display) {
 		create_win(new color_gui_t(welt), w_info, magic_color_gui_t);
