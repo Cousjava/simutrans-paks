@@ -3,7 +3,8 @@
 
 
 /**
- * A character buffer. Main operation is 'append'
+ * A character buffer. Main operation is 'append'.
+ *
  * @author Hj. Malthaner
  */
 class cbuffer_t
@@ -32,9 +33,18 @@ public:
 	int len() const { return size; }
 
 	/**
-	 * Creates a new cbuffer with capacity cap
+	 * Creates a new empty cbuffer with capacity 128
+	 * @author Hj. Malthaner
 	 */
 	cbuffer_t();
+
+	/**
+	 * Creates a new cbuffer with content string
+	 * Capacity will be at least 128 characters
+	 * @author Hj. Malthaner
+	 */
+	cbuffer_t(const char * string);
+
 	~cbuffer_t();
 
 

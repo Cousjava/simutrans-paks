@@ -177,7 +177,10 @@ void gui_chart_t::zeichnen(koord offset)
 	}
 
 	// draw chart's curves
-	for (slist_iterator_tpl<curve_t> i(curves); i.next();) {
+	slist_iterator_tpl<curve_t> i(curves);
+	
+	while(i.next())
+	{
 		const curve_t& c = i.get_current();
 		if (c.show) {
 			// for each curve iterate through all elements and display curve
@@ -230,8 +233,11 @@ void gui_chart_t::zeichnen(koord offset)
 	}
 
 	// draw chart's lines
-	for(  slist_iterator_tpl<line_t> i(lines);  i.next();  ) {
-		const line_t &line = i.get_current();
+	slist_iterator_tpl<line_t> lines_i(lines);
+	while(lines_i.next())
+	{
+		const line_t &line = lines_i.get_current();
+		
 		if(  line.show  ) {
 			tmp = ( line.convert ? line.convert(*(line.value)) : *(line.value) );
 			for(  int t=0;  t<line.times;  ++t  ) {
@@ -272,8 +278,11 @@ void gui_chart_t::calc_gui_chart_values(sint64 *baseline, float *scale, char *cm
 	int precision = 0;
 
 	// first, check curves
-	for(  slist_iterator_tpl<curve_t> i(curves);  i.next();  ) {
+	slist_iterator_tpl<curve_t> i (curves);
+	while(i.next())
+	{
 		const curve_t& c = i.get_current();
+
 		if(  c.show  ) {
 			for(  int i=0;  i<c.elements;  i++  ) {
 				tmp = c.values[i*c.size+c.offset];
@@ -297,8 +306,11 @@ void gui_chart_t::calc_gui_chart_values(sint64 *baseline, float *scale, char *cm
 	}
 
 	// second, check lines
-	for(  slist_iterator_tpl<line_t> i(lines);  i.next();  ) {
-		const line_t &line = i.get_current();
+	slist_iterator_tpl<line_t> lines_i (lines);
+	while(lines_i.next())
+	{
+		const line_t & line = lines_i.get_current();
+		
 		if(  line.show  ) {
 			tmp = ( line.convert ? line.convert(*(line.value)) : *(line.value) );
 			if(  min>tmp  ) {

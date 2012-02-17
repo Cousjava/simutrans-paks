@@ -85,13 +85,13 @@ public:
 	 */
 	const koord3d& position_bei(const uint16 n) const { return route.get(n); }
 
-	koord3d const& front() const { return route.front(); }
+	koord3d const& front() const { return route.get(0); }
 
-	koord3d const& back() const { return route.back(); }
+	koord3d const& back() const { return route.get(route.get_count()-1); }
 
 	uint32 get_count() const { return route.get_count(); }
 
-	bool empty() const { return route.get_count()<2; }
+	bool is_empty() const { return route.get_count()<2; }
 
 	/**
 	 * kopiert positionen und hoehen von einer anderen route

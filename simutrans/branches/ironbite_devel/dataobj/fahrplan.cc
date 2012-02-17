@@ -45,7 +45,9 @@ void schedule_t::copy_from(const schedule_t *src)
 		return;
 	}
 	eintrag.clear();
-	for(  uint8 i=0;  i<src->eintrag.get_count();  i++  ) {
+
+	for(  uint8 i=0;  i<src->eintrag.get_count();  i++  ) 
+	{
 		eintrag.append(src->eintrag.get(i));
 	}
 	set_aktuell( src->get_aktuell() );
@@ -149,7 +151,7 @@ bool schedule_t::append(const grund_t* gr, uint8 ladegrad, uint8 waiting_time_sh
 // cleanup a schedule
 void schedule_t::cleanup()
 {
-	if (eintrag.empty()) {
+	if (eintrag.is_empty()) {
 		return; // nothing to check
 		aktuell = 0;
 	}
@@ -247,7 +249,7 @@ void schedule_t::rdwr(loadsave_t *file)
 		abgeschlossen = true;
 	}
 	if(aktuell>=eintrag.get_count()  ) {
-		if (!eintrag.empty()) {
+		if (!eintrag.is_empty()) {
 			dbg->error("fahrplan_t::rdwr()","aktuell %i >count %i => aktuell = 0", aktuell, eintrag.get_count() );
 		}
 		aktuell = 0;
@@ -259,7 +261,9 @@ void schedule_t::rdwr(loadsave_t *file)
 void schedule_t::rotate90( sint16 y_size )
 {
 	// now we have to rotate all entries ...
-	for(  uint8 i = 0;  i<eintrag.get_count();  i++  ) {
+
+	for(  uint8 i = 0;  i<eintrag.get_count();  i++  ) 
+	{
 		eintrag.at(i).pos.rotate90(y_size);
 	}
 }
@@ -338,7 +342,9 @@ void schedule_t::add_return_way()
 void schedule_t::sprintf_schedule( cbuffer_t &buf ) const
 {
 	buf.printf("%u|%d|", aktuell, (int)get_type());
-	for(  uint8 i = 0;  i<eintrag.get_count();  i++  ) {
+
+	for(  uint8 i = 0;  i<eintrag.get_count();  i++  ) 
+	{
 		buf.printf( "%s,%i,%i|", eintrag.get(i).pos.get_str(), (int)eintrag.get(i).ladegrad, (int)eintrag.get(i).waiting_time_shift );
 	}
 }
@@ -348,7 +354,7 @@ bool schedule_t::sscanf_schedule( const char *ptr )
 {
 	const char *p = ptr;
 	// first: clear current schedule
-	while (!eintrag.empty()) {
+	while (!eintrag.is_empty()) {
 		remove();
 	}
 	//  first get aktuell pointer

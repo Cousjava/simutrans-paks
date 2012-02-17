@@ -297,10 +297,14 @@ void werkzeug_t::exit_menu()
 
 
 // for sorting: compare tool key
-static bool compare_werkzeug(werkzeug_t const* const a, werkzeug_t const* const b)
+static int compare_werkzeug(const void * aa, const void * bb)
 {
+	werkzeug_t const * const a = (werkzeug_t const *) aa;
+	werkzeug_t const * const b = (werkzeug_t const *) bb;
+	
 	uint16 const ac = a->command_key & ~32;
 	uint16 const bc = b->command_key & ~32;
+	
 	return ac != bc ? ac < bc : a->command_key < b->command_key;
 }
 
@@ -711,15 +715,20 @@ void werkzeug_t::read_menu(const std::string &objfilename)
 		}
 	}
 	// sort characters
-	std::sort(char_to_tool.begin(), char_to_tool.end(), compare_werkzeug);
+	// std::sort(char_to_tool.begin(), char_to_tool.end(), compare_werkzeug);
+	char_to_tool.sort(compare_werkzeug);
 }
 
 
 void werkzeug_t::update_toolbars(karte_t *welt)
 {
 	// renew toolbar
-	for (vector_tpl<toolbar_t *>::const_iterator i = toolbar_tool.begin(), end = toolbar_tool.end();  i != end;  ++i  ) {
-		(*i)->update(welt, welt->get_active_player());
+	vector_iterator_tpl <toolbar_t*> iter (toolbar_tool);
+
+	while(iter.next())
+	{
+		toolbar_t* const i = iter.get_current();
+		i->update(welt, welt->get_active_player());
 	}
 }
 
@@ -769,8 +778,12 @@ image_id toolbar_t::get_icon(spieler_t *sp) const
 		return IMG_LEER;
 	}
 	// now have we a least one visible tool?
-	for(  slist_tpl<werkzeug_t *>::const_iterator iter = tools.begin(), end = tools.end();  iter != end;  ++iter  ) {
-		if(  (*iter)->get_icon(sp)!=IMG_LEER  ) {
+	slist_iterator_tpl <werkzeug_t*> iter (tools);
+
+	while(iter.next())
+	{
+		werkzeug_t* const i = iter.get_current();
+		if (i->get_icon(sp) != IMG_LEER) {
 			return icon;
 		}
 	}
@@ -818,11 +831,14 @@ void toolbar_t::update(karte_t *welt, spieler_t *sp)
 	}
 
 	wzw->reset_tools();
+
 	// now (re)fill it
+
 	slist_iterator_tpl <werkzeug_t *> iter (tools);
 	while(iter.next())
 	{
 		werkzeug_t *w = iter.get_current();
+
 		// no way to call this tool? => then it is most likely a metatool
 		if(w->command_key==1  &&  w->get_icon(welt->get_active_player())==IMG_LEER) {
 			if (char const* const param = w->get_default_param()) {
@@ -864,6 +880,7 @@ void toolbar_t::update(karte_t *welt, spieler_t *sp)
 		else if(w->get_icon(welt->get_active_player())!=IMG_LEER) {
 			// get the right city_road
 			if(w->get_id() == (WKZ_CITYROAD | GENERAL_TOOL)) {
+				w->flags = 0;
 				w->init(welt,sp);
 			}
 			if(  create  ) {
@@ -1084,7 +1101,7 @@ void two_click_werkzeug_t::cleanup( spieler_t *sp, bool delete_start_marker )
 		start_marker[sp_nr] = NULL;
 	}
 	// delete old route.
-	while(!marked[sp_nr].empty()) {
+	while(!marked[sp_nr].is_empty()) {
 		zeiger_t *z = marked[sp_nr].remove_first();
 		z->mark_image_dirty( z->get_bild(), 0 );
 		z->mark_image_dirty( z->get_after_bild(), 0 );

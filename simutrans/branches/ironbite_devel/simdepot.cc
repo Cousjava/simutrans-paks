@@ -36,10 +36,42 @@
 #include "utils/cbuffer_t.h"
 
 
-slist_tpl<depot_t *> depot_t::all_depots;
+static slist_tpl<depot_t *> all_depots;
+
+
+class depot_data_t
+{
+public:
+	/**
+	 * Reworked depot data!
+	 *
+	 * It can now contain any number of vehicles bought by the user (as before).
+	 * And it can hold any number of convois (before only one).
+	 * It is possible to have 0 convois in a depot, but an empty one shall be
+	 * automatically created, when necessary.
+	 * Convois are numbered 0...(n-1).
+	 * Vehicles are accessed by type.
+	 *
+	 * @author Volker Meyer
+	 * @date  30.05.2003
+	 */
+	slist_tpl<vehikel_t *> vehicles;
+	slist_tpl<convoihandle_t> convois;
+
+	linehandle_t selected_line;
+};
+
+
+const slist_tpl<depot_t *> & depot_t::get_depot_list() 
+{
+	return all_depots; 
+}
+
 
 depot_t::depot_t(karte_t *welt,loadsave_t *file) : gebaeude_t(welt)
 {
+	ooo = new depot_data_t();
+	
 	rdwr(file);
 	if(file->get_version()<88002) {
 		set_yoff(0);
@@ -53,6 +85,8 @@ depot_t::depot_t(karte_t *welt,loadsave_t *file) : gebaeude_t(welt)
 depot_t::depot_t(karte_t *welt, koord3d pos, spieler_t *sp, const haus_tile_besch_t *t) :
     gebaeude_t(welt, pos, sp, t)
 {
+	ooo = new depot_data_t();
+
 	all_depots.append(this);
 	selected_filter = VEHICLE_FILTER_RELEVANT;
 }
@@ -62,6 +96,9 @@ depot_t::~depot_t()
 {
 	destroy_win((long)this);
 	all_depots.remove(this);
+	
+	delete ooo;
+	ooo = 0;
 }
 
 
@@ -72,9 +109,11 @@ depot_t *depot_t::find_depot( koord3d start, const ding_t::typ depot_type, const
 	koord3d found_pos = forward ? koord3d(welt->get_groesse_x()+1,welt->get_groesse_y()+1,welt->get_grundwasser()) : koord3d(-1,-1,-1);
 	long found_hash = forward ? 0x7FFFFFF : -1;
 	long start_hash = start.x + (8192*start.y);
-	slist_iterator_tpl<depot_t *> iter(all_depots);
-	while(iter.next()) {
-		depot_t *d = iter.access_current();
+	slist_iterator_tpl <depot_t*> iter (all_depots);
+
+	while(iter.next())
+	{
+		depot_t* const d = iter.get_current();
 		if(d->get_typ()==depot_type  &&  d->get_besitzer()==sp) {
 			// ok, the right type of depot
 			const koord3d pos = d->get_pos();
@@ -162,7 +201,7 @@ void depot_t::convoi_arrived(convoihandle_t acnv, bool fpl_adjust)
 		}
 	}
 	// this part stores the convoi in the depot
-	convois.append(acnv);
+	ooo->convois.append(acnv);
 	depot_frame_t *depot_frame = dynamic_cast<depot_frame_t *>(win_get_magic( (long)this ));
 	if(depot_frame) {
 		depot_frame->action_triggered(NULL,(long int)0);
@@ -184,8 +223,8 @@ vehikel_t* depot_t::buy_vehicle(const vehikel_besch_t* info)
 	vehikel_t* veh = vehikelbauer_t::baue(get_pos(), get_besitzer(), NULL, info );
 	DBG_DEBUG("depot_t::buy_vehicle()", "vehiclebauer %p", veh);
 
-	vehicles.append(veh);
-	DBG_DEBUG("depot_t::buy_vehicle()", "appended %i vehicle", vehicles.get_count());
+	ooo->vehicles.append(veh);
+	DBG_DEBUG("depot_t::buy_vehicle()", "appended %i vehicle", ooo->vehicles.get_count());
 	return veh;
 }
 
@@ -198,7 +237,7 @@ void depot_t::append_vehicle(convoihandle_t cnv, vehikel_t* veh, bool infront)
 	}
 	veh->set_pos(get_pos());
 	cnv->add_vehikel(veh, infront);
-	vehicles.remove(veh);
+	ooo->vehicles.remove(veh);
 }
 
 
@@ -206,14 +245,25 @@ void depot_t::remove_vehicle(convoihandle_t cnv, int ipos)
 {
 	vehikel_t* veh = cnv->remove_vehikel_bei(ipos);
 	if (veh) {
-		vehicles.append(veh);
+		ooo->vehicles.append(veh);
 	}
+}
+
+/**
+ * Access to vehicles not bound to a convoi. They are not ordered
+ * in any way.
+ * @author Volker Meyer
+ * @date  30.05.2003
+ */
+slist_tpl<vehikel_t*> const & depot_t::get_vehicle_list() 
+{
+	return ooo->vehicles; 
 }
 
 
 void depot_t::sell_vehicle(vehikel_t* veh)
 {
-	vehicles.remove(veh);
+	ooo->vehicles.remove(veh);
 	get_besitzer()->buche(veh->calc_restwert(), get_pos().get_2d(), COST_NEW_VEHICLE );
 	get_besitzer()->buche(-(sint64)veh->calc_restwert(), COST_ASSETS );
 	DBG_MESSAGE("depot_t::sell_vehicle()", "this=%p sells %p", this, veh);
@@ -225,9 +275,11 @@ void depot_t::sell_vehicle(vehikel_t* veh)
 vehikel_t* depot_t::find_oldest_newest(const vehikel_besch_t* besch, bool old)
 {
 	vehikel_t* found_veh = NULL;
-	slist_iterator_tpl<vehikel_t*> iter(vehicles);
+
+	slist_iterator_tpl<vehikel_t*> iter(ooo->vehicles);
 	while (iter.next()) {
 		vehikel_t* veh = iter.get_current();
+
 		if (veh->get_besch() == besch) {
 			// joy of XOR, finally a line where I could use it!
 			if (found_veh == NULL ||
@@ -239,13 +291,27 @@ vehikel_t* depot_t::find_oldest_newest(const vehikel_besch_t* besch, bool old)
 	return found_veh;
 }
 
+/**
+ * Access to convoi list.
+ * @author Volker Meyer
+ * @date  30.05.2003
+ */
+unsigned depot_t::convoi_count() const 
+{
+	return ooo->convois.get_count(); 
+}
+
+convoihandle_t depot_t::get_convoi(unsigned int icnv) const 
+{
+	return icnv < convoi_count() ? ooo->convois.at(icnv) : convoihandle_t(); 
+}
 
 
 convoihandle_t depot_t::add_convoi()
 {
 	convoi_t* new_cnv = new convoi_t(get_besitzer());
 	new_cnv->set_home_depot(get_pos());
-	convois.append(new_cnv->self);
+	ooo->convois.append(new_cnv->self);
 	depot_frame_t *win = dynamic_cast<depot_frame_t *>(win_get_magic( (long)this ));
 	if(  win  ) {
 		win->activate_convoi( new_cnv->self );
@@ -310,18 +376,18 @@ bool depot_t::disassemble_convoi(convoihandle_t cnv, bool sell)
 				v->loesche_fracht();
 				v->set_erstes(false);
 				v->set_letztes(false);
-				vehicles.append(v);
+				ooo->vehicles.append(v);
 			}
 		}
 
 		// remove from depot lists
-		sint32 icnv = (sint32)convois.index_of( cnv );
-		if (convois.remove(cnv)) {
+		sint32 icnv = (sint32)ooo->convois.index_of( cnv );
+		if (ooo->convois.remove(cnv)) {
 			// actually removed cnv from depot, here icnv>=0
 			// make another the current selected convoi
 			depot_frame_t *win = dynamic_cast<depot_frame_t *>(win_get_magic( (long)this ));
 			if(  win  ) {
-				win->activate_convoi( !convois.empty() ? convois.at( min((uint32)icnv, convois.get_count()-1) ) : convoihandle_t() );
+				win->activate_convoi( !ooo->convois.is_empty() ? ooo->convois.at( min((uint32)icnv, ooo->convois.get_count()-1) ) : convoihandle_t() );
 			}
 		}
 
@@ -344,11 +410,11 @@ bool depot_t::start_convoi(convoihandle_t cnv, bool local_execution)
 	}
 
 	// convoi not in depot anymore, maybe user double-clicked on start-button
-	if(!convois.is_contained(cnv)) {
+	if(!ooo->convois.is_contained(cnv)) {
 		return false;
 	}
 
-	if (cnv.is_bound() && cnv->get_schedule() && !cnv->get_schedule()->empty()) {
+	if (cnv.is_bound() && cnv->get_schedule() && !cnv->get_schedule()->is_empty()) {
 		// if next schedule entry is this depot => advance to next entry
 		const koord3d& cur_pos = cnv->get_schedule()->get_current_eintrag().pos;
 		if (cur_pos == get_pos()) {
@@ -376,15 +442,15 @@ bool depot_t::start_convoi(convoihandle_t cnv, bool local_execution)
 			cnv->start();
 
 			// remove from depot lists
-			sint32 icnv = (sint32)convois.index_of( cnv );
-			if (convois.remove(cnv)) {
+			sint32 icnv = (sint32)ooo->convois.index_of( cnv );
+			if (ooo->convois.remove(cnv)) {
 				// actually removed cnv from depot, here icnv>=0
 				// make another convoi the current selected one
 				depot_frame_t *win = dynamic_cast<depot_frame_t *>(win_get_magic( (long)this ));
 				if(  win  ) {
 					if (local_execution) {
 						// change state of depot window only for local execution
-						win->activate_convoi( !convois.empty() ? convois.at( min((uint32)icnv, convois.get_count()-1) ) : convoihandle_t() );
+						win->activate_convoi( !ooo->convois.is_empty() ? ooo->convois.at( min((uint32)icnv, ooo->convois.get_count()-1) ) : convoihandle_t() );
 					}
 					else {
 						win->update_data();
@@ -418,11 +484,11 @@ void depot_t::rdwr(loadsave_t *file)
 {
 	gebaeude_t::rdwr(file);
 
-	rdwr_vehikel(vehicles, file);
+	rdwr_vehikel(ooo->vehicles, file);
 	if (file->get_version() < 81033) {
 		// waggons are stored extra, just add them to vehicles
 		assert(file->is_loading());
-		rdwr_vehikel(vehicles, file);
+		rdwr_vehikel(ooo->vehicles, file);
 	}
 }
 
@@ -480,10 +546,13 @@ void depot_t::rdwr_vehikel(slist_tpl<vehikel_t *> &list, loadsave_t *file)
 		}
 	}
 	else {
-		slist_iterator_tpl<vehikel_t *> l_iter ( list);
-		while(l_iter.next()) {
-			file->wr_obj_id( l_iter.get_current()->get_typ() );
-			l_iter.get_current()->rdwr_from_convoi( file );
+		slist_iterator_tpl <vehikel_t*> iter (list);
+
+	while(iter.next())
+	{
+		vehikel_t* const v = iter.get_current();
+			file->wr_obj_id(v->get_typ());
+			v->rdwr_from_convoi(file);
 		}
 	}
 }
@@ -498,13 +567,17 @@ const char * depot_t::ist_entfernbar(const spieler_t *sp)
 	if(sp!=get_besitzer()  &&  sp!=welt->get_spieler(1)) {
 		return "Das Feld gehoert\neinem anderen Spieler\n";
 	}
-	if (!vehicles.empty()) {
+	if (!ooo->vehicles.is_empty()) {
 		return "There are still vehicles\nstored in this depot!\n";
 	}
-	slist_iterator_tpl<convoihandle_t> iter(convois);
 
-	while(iter.next()) {
-		if(iter.get_current()->get_vehikel_anzahl() > 0) {
+	slist_iterator_tpl<convoihandle_t> iter(ooo->convois);
+
+	while(iter.next())
+	{
+		convoihandle_t cnv = iter.get_current();
+		
+		if (cnv->get_vehikel_anzahl() > 0) {
 			return "There are still vehicles\nstored in this depot!\n";
 		}
 	}
@@ -521,9 +594,11 @@ slist_tpl<vehikel_besch_t const*> const& depot_t::get_vehicle_type() const
 vehikel_t* depot_t::get_oldest_vehicle(const vehikel_besch_t* besch)
 {
 	vehikel_t* oldest_veh = NULL;
-	slist_iterator_tpl<vehikel_t*> iter(get_vehicle_list());
-	while (iter.next()) {
-		vehikel_t* veh = iter.get_current();
+	slist_iterator_tpl <vehikel_t*> iter (get_vehicle_list());
+
+	while(iter.next())
+	{
+		vehikel_t* const veh = iter.get_current();
 		if (veh->get_besch() == besch) {
 			if (oldest_veh == NULL ||
 					oldest_veh->get_insta_zeit() > veh->get_insta_zeit()) {
@@ -540,7 +615,7 @@ vehikel_t* depot_t::get_oldest_vehicle(const vehikel_besch_t* besch)
  */
 void depot_t::set_selected_line(const linehandle_t sel_line)
 {
-	selected_line = sel_line;
+	ooo->selected_line = sel_line;
 	depot_frame_t *win = dynamic_cast<depot_frame_t *>(win_get_magic( (long)this ));
 	if(  win  ) {
 		win->layout(NULL);
@@ -551,7 +626,7 @@ void depot_t::set_selected_line(const linehandle_t sel_line)
 
 linehandle_t depot_t::get_selected_line()
 {
-	return selected_line;
+	return ooo->selected_line;
 }
 
 
@@ -573,13 +648,21 @@ void depot_t::neuer_monat()
 
 void depot_t::update_all_win()
 {
-	slist_iterator_tpl<depot_t *> iter(all_depots);
-	while(iter.next()) {
-		iter.access_current()->update_win();
+	slist_iterator_tpl <depot_t*> iter (all_depots);
+
+	while(iter.next())
+	{
+		depot_t* const d = iter.get_current();
+		d->update_win();
 	}
 }
 
 unsigned bahndepot_t::get_max_convoi_length() const
 {
 	return convoi_t::max_rail_vehicle;
+}
+
+void bahndepot_t::rdwr_vehicles(loadsave_t *file) 
+{
+	depot_t::rdwr_vehikel(ooo->vehicles, file); 
 }

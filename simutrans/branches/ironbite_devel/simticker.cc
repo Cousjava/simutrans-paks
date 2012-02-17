@@ -35,7 +35,7 @@ static int next_pos;
 
 bool ticker::empty()
 {
-  return list.empty();
+  return list.is_empty();
 }
 
 
@@ -97,7 +97,7 @@ koord ticker::get_welt_pos()
 
 void ticker::zeichnen(void)
 {
-	if (!list.empty()) {
+	if (!list.is_empty()) {
 		const int start_y=display_get_height()-TICKER_YPOS_BOTTOM;
 		const int width = display_get_width();
 
@@ -111,19 +111,23 @@ void ticker::zeichnen(void)
 			display_fillbox_wh(width-X_DIST, start_y+1, X_DIST, TICKER_HEIGHT, MN_GREY2, true);
 			// ok, ready for the text
 			PUSH_CLIP(width-X_DIST-1,start_y+1,X_DIST+1,TICKER_HEIGHT);
-			for (slist_iterator_tpl<node> i(list); i.next();) {
-				node* n = &i.access_current();
-				n->xpos -= X_DIST;
-				if(n->xpos<width) {
-					display_proportional_clip(n->xpos, start_y+4, n->msg,  ALIGN_LEFT, n->color, true);
-					default_pos = n->pos;
+			slist_iterator_tpl <node> iter (list);
+
+			while(iter.next())
+			{
+				node & n = iter.access_current();
+				
+				n.xpos -= X_DIST;
+				if (n.xpos < width) {
+					display_proportional_clip(n.xpos, start_y + 4, n.msg, ALIGN_LEFT, n.color, true);
+					default_pos = n.pos;
 				}
 			}
 			POP_CLIP();
 		}
 
 		// remove old news
-		while (!list.empty()  &&  list.front().xpos + list.front().w < 0) {
+		while (!list.is_empty()  &&  list.front().xpos + list.front().w < 0) {
 			list.remove_first();
 		}
 		if(next_pos>width) {
@@ -139,19 +143,23 @@ void ticker::zeichnen(void)
 // complete redraw (after resizing)
 void ticker::redraw_ticker()
 {
-	if (!list.empty()) {
+	if (!list.is_empty()) {
 		const int start_y=display_get_height()-TICKER_YPOS_BOTTOM;
 		const int width = display_get_width();
 
 		// just draw the ticker grey ... (to be sure ... )
 		display_fillbox_wh(0, start_y, width, 1, COL_BLACK, true);
 		display_fillbox_wh(0, start_y+1, width, TICKER_HEIGHT, MN_GREY2, true);
-		for (slist_iterator_tpl<node> i(list); i.next();) {
-			node* n = &i.access_current();
-			n->xpos -= X_DIST;
-			if(n->xpos<width) {
-				display_proportional_clip(n->xpos, start_y+4, n->msg,  ALIGN_LEFT, n->color, true);
-				default_pos = n->pos;
+		slist_iterator_tpl <node> iter (list);
+
+		while(iter.next())
+		{
+			node & n = iter.access_current();
+			
+			n.xpos -= X_DIST;
+			if (n.xpos < width) {
+				display_proportional_clip(n.xpos, start_y + 4, n.msg, ALIGN_LEFT, n.color, true);
+				default_pos = n.pos;
 			}
 		}
 	}

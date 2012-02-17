@@ -174,6 +174,7 @@ bool stadt_t::bewerte_loc(const koord pos, const rule_t &regel, int rotation)
 
 	for(uint32 i=0; i<regel.rule.get_count(); i++){
 		const rule_entry_t &r = regel.rule.get(i);
+
 		uint8 x,y;
 		switch (rotation) {
 			default:
@@ -694,9 +695,11 @@ void stadt_t::recalc_city_size()
 {
 	lo = pos;
 	ur = pos;
+
 	for(  uint32 i=0;  i<buildings.get_count();  i++  ) {
 		if(buildings.get(i)->get_tile()->get_besch()->get_utyp()!=haus_besch_t::firmensitz) {
 			const koord gb_pos = buildings.get(i)->get_pos().get_2d();
+
 			if (lo.x > gb_pos.x) {
 				lo.x = gb_pos.x;
 			}
@@ -786,8 +789,10 @@ stadt_t::factory_entry_t* stadt_t::factory_set_t::get_random_entry()
 {
 	if(  total_remaining>0  ) {
 		sint32 weight = simrand(total_remaining);
+
 		for(  uint32 e=0;  e<entries.get_count();  ++e  ) {
 			factory_entry_t &entry = entries.at(e);
+
 			if(  entry.remaining>0  ) {
 				if(  weight<entry.remaining  ) {
 					return &entry;
@@ -870,8 +875,10 @@ void stadt_t::factory_set_t::recalc_generation_ratio(const sint32 default_percen
 		const sint64 supply_promille = ( ( (average_generated << 10) * (sint64)default_percent ) / 100 ) / (sint64)target_supply;
 		if(  supply_promille<1024  ) {
 			// expected supply is really smaller than target supply
+
 			for(  uint32 e=0;  e<entries.get_count();  ++e  ) {
 				factory_entry_t & entry = entries.at(e);
+
 				const sint32 new_supply = (sint32)( ( (sint64)entry.demand * SUPPLY_FACTOR * supply_promille + ((1<<(DEMAND_BITS+SUPPLY_BITS+10))-1) ) >> (DEMAND_BITS+SUPPLY_BITS+10) );
 				const sint32 delta_supply = new_supply - entry.supply;
 				if(  delta_supply==0  ) {
@@ -893,8 +900,10 @@ void stadt_t::factory_set_t::recalc_generation_ratio(const sint32 default_percen
 		}
 	}
 	// expected supply is unknown or sufficient to meet target supply
+
 	for(  uint32 e=0;  e<entries.get_count();  ++e  ) {
 		factory_entry_t & entry = entries.at(e);
+
 		const sint32 new_supply = ( entry.demand * SUPPLY_FACTOR + ((1<<(DEMAND_BITS+SUPPLY_BITS))-1) ) >> (DEMAND_BITS+SUPPLY_BITS);
 		const sint32 delta_supply = new_supply - entry.supply;
 		if(  delta_supply==0  ) {
@@ -954,6 +963,7 @@ void stadt_t::factory_set_t::rdwr(loadsave_t *file)
 void stadt_t::factory_set_t::resolve_factories()
 {
 	uint32 remove_count = 0;
+
 	for(  uint32 e=0;  e<entries.get_count();  ++e  ) {
 		entries.at(e).resolve_factory();
 		if(  entries.get(e).factory == NULL  ) {
@@ -981,7 +991,7 @@ stadt_t::~stadt_t()
 		welt->lookup_kartenboden(pos)->set_text(NULL);
 
 		// remove city info and houses
-		while (!buildings.empty()) {
+		while (!buildings.is_empty()) {
 			// old buildings are not where they think they are, so we ask for map floor
 			gebaeude_t* const gb = buildings.front();
 			buildings.remove(gb);
@@ -1004,8 +1014,12 @@ stadt_t::~stadt_t()
 
 static bool name_used(weighted_vector_tpl<stadt_t*> const& cities, char const* const name)
 {
-	for (weighted_vector_tpl<stadt_t*>::const_iterator i = cities.begin(), end = cities.end(); i != end; ++i) {
-		if (strcmp((*i)->get_name(), name) == 0) {
+	weighted_vector_iterator_tpl <stadt_t*> iter (cities);
+
+	while(iter.next())
+	{
+		stadt_t* const i = iter.get_current();
+		if (strcmp(i->get_name(), name) == 0) {
 			return true;
 		}
 	}
@@ -1046,7 +1060,7 @@ stadt_t::stadt_t(spieler_t* sp, koord pos, sint32 citizens) :
 	/* get a unique cityname */
 	char                          const* n       = "simcity";
 	weighted_vector_tpl<stadt_t*> const& staedte = welt->get_staedte();
-	for (vector_tpl<char*> city_names(translator::get_city_name_list()); !city_names.empty();) {
+	for (vector_tpl<char*> city_names(translator::get_city_name_list()); !city_names.is_empty();) {
 		size_t      const idx  = simrand(city_names.get_count());
 		char const* const cand = city_names.get(idx);
 		if (name_used(staedte, cand)) {
@@ -1262,7 +1276,7 @@ void stadt_t::laden_abschliessen()
 	}
 
 	// new city => need to grow
-	if (buildings.empty()) {
+	if (buildings.is_empty()) {
 		step_bau();
 	}
 
@@ -1375,12 +1389,14 @@ void stadt_t::zeige_info(void)
 void stadt_t::verbinde_fabriken()
 {
 	DBG_MESSAGE("stadt_t::verbinde_fabriken()", "search factories near %s (center at %i,%i)", get_name(), pos.x, pos.y);
-	assert( target_factories_pax.get_entries().empty() );
-	assert( target_factories_mail.get_entries().empty() );
+	assert( target_factories_pax.get_entries().is_empty() );
+	assert( target_factories_mail.get_entries().is_empty() );
 
-	slist_iterator_tpl<fabrik_t*> fab_iter(welt->get_fab_list());
-	while (fab_iter.next()) {
-		fabrik_t* fab = fab_iter.get_current();
+	slist_iterator_tpl <fabrik_t*> iter (welt->get_fab_list());
+
+	while(iter.next())
+	{
+		fabrik_t* const fab = iter.get_current();
 		const uint32 count = fab->get_target_cities().get_count();
 		settings_t const& s = welt->get_settings();
 		if (count < s.get_factory_worker_maximum_towns() && koord_distance(fab->get_pos(), pos) < s.get_factory_worker_radius()) {
@@ -1589,9 +1605,13 @@ void stadt_t::calc_growth()
 {
 	// now iterate over all factories to get the ratio of producing version nonproducing factories
 	// we use the incoming storage as a measure und we will only look for end consumers (power stations, markets)
-	for(  vector_tpl<factory_entry_t>::const_iterator iter = target_factories_pax.get_entries().begin(), end = target_factories_pax.get_entries().end();  iter!=end;  ++iter  ) {
-		fabrik_t *const fab = iter->factory;
-		if (fab->get_lieferziele().empty() && !fab->get_suppliers().empty()) {
+	vector_iterator_tpl <factory_entry_t> iter (target_factories_pax.get_entries());
+
+	while(iter.next())
+	{
+		factory_entry_t const& i = iter.get_current();
+		fabrik_t *const fab = i.factory;
+		if (fab->get_lieferziele().is_empty() && !fab->get_suppliers().is_empty()) {
 			// consumer => check for it storage
 			const fabrik_besch_t *const besch = fab->get_besch();
 			for(  int i=0;  i<besch->get_lieferanten();  i++  ) {
@@ -1671,7 +1691,7 @@ void stadt_t::step_passagiere()
 	if (step_count >= buildings.get_count()) {
 		step_count = 0;
 	}
-	if (buildings.empty()) {
+	if (buildings.is_empty()) {
 		return;
 	}
 	const gebaeude_t* gb = buildings.get(step_count);
@@ -1707,7 +1727,7 @@ void stadt_t::step_passagiere()
 	city_history_month[0][history_type+1] += num_pax;
 
 	// only continue, if this is a good start halt
-	if (!start_halts.empty()) {
+	if (!start_halts.is_empty()) {
 		// Find passenger destination
 		for(  int pax_routed=0, pax_left_to_do=0;  pax_routed<num_pax;  pax_routed+=pax_left_to_do  ) {
 			// number of passengers that want to travel
@@ -1780,6 +1800,7 @@ void stadt_t::step_passagiere()
 				}
 				else {
 					// all routes to goal are overcrowded -> register at all start halts
+
 					for(  uint32 s=0;  s<start_halts.get_count();  ++s  ) {
 						start_halts.at(s)->add_pax_unhappy(pax_left_to_do);
 						merke_passagier_ziel(dest_pos, COL_ORANGE);
@@ -1788,6 +1809,7 @@ void stadt_t::step_passagiere()
 			}
 			else {
 				// since there is no route from any start halt -> register no route at all start halts
+
 				for(  uint32 s=0;  s<start_halts.get_count();  ++s  ) {
 					start_halts.at(s)->add_pax_no_route(pax_left_to_do);
 				}
@@ -1867,7 +1889,7 @@ void stadt_t::step_passagiere()
  */
 koord stadt_t::get_zufallspunkt() const
 {
-	if(!buildings.empty()) {
+	if(!buildings.is_empty()) {
 		gebaeude_t* const gb = pick_any_weighted(buildings);
 		koord k = gb->get_pos().get_2d();
 		if(!welt->ist_in_kartengrenzen(k)) {
@@ -1896,6 +1918,7 @@ void stadt_t::add_target_city(stadt_t *const city)
 void stadt_t::recalc_target_cities()
 {
 	target_cities.clear();
+
 	const weighted_vector_tpl<stadt_t *> &cities = welt->get_staedte();
 	for(  uint32 c=0;  c<cities.get_count();  ++c  ) {
 		add_target_city( cities.get(c) );
@@ -1917,6 +1940,7 @@ void stadt_t::add_target_attraction(gebaeude_t *const attraction)
 void stadt_t::recalc_target_attractions()
 {
 	target_attractions.clear();
+
 	const weighted_vector_tpl<gebaeude_t *> &attractions = welt->get_ausflugsziele();
 	for(  uint32 a=0;  a<attractions.get_count();  ++a  ) {
 		add_target_attraction( attractions.get(a) );
@@ -1982,8 +2006,12 @@ class bauplatz_mit_strasse_sucher_t: public bauplatz_sucher_t
 		{
 			const weighted_vector_tpl<gebaeude_t*>& attractions = welt->get_ausflugsziele();
 			int dist = welt->get_groesse_x() * welt->get_groesse_y();
-			for (weighted_vector_tpl<gebaeude_t*>::const_iterator i = attractions.begin(), end = attractions.end(); i != end; ++i) {
-				int d = koord_distance((*i)->get_pos(), pos);
+			weighted_vector_iterator_tpl <gebaeude_t*> iter (attractions);
+
+	while(iter.next())
+	{
+		gebaeude_t* const i = iter.get_current();
+				int const d = koord_distance(i->get_pos(), pos);
 				if (d < dist) {
 					dist = d;
 				}
@@ -2936,7 +2964,7 @@ void stadt_t::baue()
 	}
 
 	// renovation (only done when nothing matches a certain location
-	if (!buildings.empty()  &&  simrand(100) <= renovation_percentage) {
+	if (!buildings.is_empty()  &&  simrand(100) <= renovation_percentage) {
 		// try to find a public owned building
 		for(uint8 i=0; i<4; i++) {
 			gebaeude_t* const gb = pick_any(buildings);
@@ -2971,7 +2999,7 @@ vector_tpl<koord>* stadt_t::random_place(const karte_t* wl, const sint32 anzahl,
 	const uint32 xmax = (2*wl->get_groesse_x())/minimum_city_distance+1;
 	const uint32 ymax = (2*wl->get_groesse_y())/minimum_city_distance+1;
 	array2d_tpl< vector_tpl<koord> > places(xmax, ymax);
-	while (!list->empty()) {
+	while (!list->is_empty()) {
 		const koord k = list->remove_first();
 		places.at( (2*k.x)/minimum_city_distance, (2*k.y)/minimum_city_distance).append(k);
 	}
@@ -2979,7 +3007,7 @@ vector_tpl<koord>* stadt_t::random_place(const karte_t* wl, const sint32 anzahl,
 	weighted_vector_tpl<koord> index_to_places(xmax*ymax);
 	for(uint32 i=0; i<xmax; i++) {
 		for(uint32 j=0; j<ymax; j++) {
-			if (!places.at(i,j).empty()) {
+			if (!places.at(i,j).is_empty()) {
 				index_to_places.append( koord(i,j), places.at(i,j).get_count());
 			}
 		}
@@ -2993,13 +3021,13 @@ vector_tpl<koord>* stadt_t::random_place(const karte_t* wl, const sint32 anzahl,
 
 	for (int i = 0; i < anzahl; i++) {
 		// check distances of all cities to their respective neightbours
-		while (!index_to_places.empty()) {
+		while (!index_to_places.is_empty()) {
 			// find a random cell
 			koord const ip = pick_any_weighted(index_to_places);
 			// remove this cell from index list
 			index_to_places.remove(ip);
 			// get random place in the cell
-			if (places.at(ip).empty()) continue;
+			if (places.at(ip).is_empty()) continue;
 			const uint32 j = simrand(places.at(ip).get_count());
 			const koord k = places.at(ip).get(j);
 
@@ -3010,6 +3038,7 @@ vector_tpl<koord>* stadt_t::random_place(const karte_t* wl, const sint32 anzahl,
 			for(sint32 i=k2mcd.x-1; ok && i<=k2mcd.x+1; i++) {
 				for(sint32 j=k2mcd.y-1; ok && j<=k2mcd.y+1; j++) {
 					if (i>=0 && i<(sint32)xmax2 && j>=0 && j<(sint32)ymax2) {
+
 						for(uint32 l=0; ok && l<result_places.at(i,j).get_count(); l++) {
 							if (koord_distance(k, result_places.at(i,j).get(l)) < minimum_city_distance){
 								ok = false;
@@ -3029,14 +3058,14 @@ vector_tpl<koord>* stadt_t::random_place(const karte_t* wl, const sint32 anzahl,
 				// remove the place from the list
 				places.at(ip).remove_at(j);
 				// re-insert in index list with new weight
-				if (!places.at(ip).empty()) {
+				if (!places.at(ip).is_empty()) {
 					index_to_places.append( ip, places.at(ip).get_count());
 				}
 			}
 			// if we reached here, the city was not far enough => try again
 		}
 
-		if (index_to_places.empty() && i < anzahl - 1) {
+		if (index_to_places.is_empty() && i < anzahl - 1) {
 			dbg->warning("stadt_t::random_place()", "Not enough places found!");
 			break;
 		}

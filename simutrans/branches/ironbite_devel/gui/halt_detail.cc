@@ -56,32 +56,32 @@ halt_detail_t::halt_detail_t(halthandle_t halt_) :
 
 halt_detail_t::~halt_detail_t()
 {
-	while(!posbuttons.empty()) {
+	while(!posbuttons.is_empty()) {
 		button_t *b = posbuttons.remove_first();
 		cont.remove_komponente( b );
 		delete b;
 	}
-	while(!linelabels.empty()) {
+	while(!linelabels.is_empty()) {
 		gui_label_t *l = linelabels.remove_first();
 		cont.remove_komponente( l );
 		delete l;
 	}
-	while(!linebuttons.empty()) {
+	while(!linebuttons.is_empty()) {
 		button_t *b = linebuttons.remove_first();
 		cont.remove_komponente( b );
 		delete b;
 	}
-	while(!convoylabels.empty()) {
+	while(!convoylabels.is_empty()) {
 		gui_label_t *l = convoylabels.remove_first();
 		cont.remove_komponente( l );
 		delete l;
 	}
-	while(!convoybuttons.empty()) {
+	while(!convoybuttons.is_empty()) {
 		button_t *b = convoybuttons.remove_first();
 		cont.remove_komponente( b );
 		delete b;
 	}
-	while(!label_names.empty()) {
+	while(!label_names.is_empty()) {
 		free(label_names.remove_first());
 	}
 }
@@ -94,32 +94,32 @@ void halt_detail_t::halt_detail_info()
 		return;
 	}
 
-	while(!posbuttons.empty()) {
+	while(!posbuttons.is_empty()) {
 		button_t *b = posbuttons.remove_first();
 		cont.remove_komponente( b );
 		delete b;
 	}
-	while(!linelabels.empty()) {
+	while(!linelabels.is_empty()) {
 		gui_label_t *l = linelabels.remove_first();
 		cont.remove_komponente( l );
 		delete l;
 	}
-	while(!linebuttons.empty()) {
+	while(!linebuttons.is_empty()) {
 		button_t *b = linebuttons.remove_first();
 		cont.remove_komponente( b );
 		delete b;
 	}
-	while(!convoylabels.empty()) {
+	while(!convoylabels.is_empty()) {
 		gui_label_t *l = convoylabels.remove_first();
 		cont.remove_komponente( l );
 		delete l;
 	}
-	while(!convoybuttons.empty()) {
+	while(!convoybuttons.is_empty()) {
 		button_t *b = convoybuttons.remove_first();
 		cont.remove_komponente( b );
 		delete b;
 	}
-	while(!label_names.empty()) {
+	while(!label_names.is_empty()) {
 		free(label_names.remove_first());
 	}
 	buf.clear();
@@ -132,12 +132,12 @@ void halt_detail_t::halt_detail_info()
 	buf.append("\n");
 	offset_y += LINESPACE;
 
-	if (!fab_list.empty()) {
+	if (!fab_list.is_empty()) {
+		slist_iterator_tpl <fabrik_t*> iter (fab_list);
 
-		slist_iterator_tpl<fabrik_t *> fab_iter(fab_list);
-
-		while(fab_iter.next()) {
-			const fabrik_t * fab = fab_iter.get_current();
+	while(iter.next())
+	{
+		fabrik_t* const fab = iter.get_current();
 			const koord pos = fab->get_pos().get_2d();
 
 			// target button ...
@@ -153,7 +153,7 @@ void halt_detail_t::halt_detail_info()
 
 			const array_tpl<ware_production_t>& eingang = fab->get_eingang();
 			for (uint32 i = 0; i < eingang.get_count(); i++) {
-				const freight_desc_t* ware = eingang[i].get_typ();
+				const freight_desc_t* ware = eingang.get(i).get_typ();
 
 				if(!nimmt_an.is_contained(ware)) {
 					nimmt_an.append(ware);
@@ -175,7 +175,7 @@ void halt_detail_t::halt_detail_info()
 	buf.append("\n");
 	offset_y += LINESPACE;
 
-	if (!nimmt_an.empty()  &&  halt->get_ware_enabled()) {
+	if (!nimmt_an.is_empty()  &&  halt->get_ware_enabled()) {
 		for(uint32 i=0; i<freight_builder_t::get_waren_anzahl(); i++) {
 			const freight_desc_t *ware = freight_builder_t::get_info(i);
 			if(nimmt_an.is_contained(ware)) {
@@ -202,7 +202,7 @@ void halt_detail_t::halt_detail_info()
 	buf.append("\n");
 	offset_y += LINESPACE;
 
-	if(  !halt->registered_lines.empty()  ) {
+	if(  !halt->registered_lines.is_empty()  ) {
 		for (unsigned int i = 0; i<halt->registered_lines.get_count(); i++) {
 			// Line buttons only if owner ...
 			if (halt->get_welt()->get_active_player()==halt->registered_lines.get(i)->get_besitzer()) {
@@ -239,7 +239,7 @@ void halt_detail_t::halt_detail_info()
 	buf.append("\n");
 	offset_y += LINESPACE;
 
-	if(  !halt->registered_convoys.empty()  ) {
+	if(  !halt->registered_convoys.is_empty()  ) {
 		for(  uint32 i=0;  i<halt->registered_convoys.get_count();  ++i  ) {
 			// Convoy buttons
 			button_t *b = new button_t();
@@ -277,7 +277,7 @@ void halt_detail_t::halt_detail_info()
 
 	for (uint i=0; i<freight_builder_t::get_max_catg_index(); i++){
 		const vector_tpl<haltestelle_t::connection_t> &connections = *(halt->get_connections(i));
-		if(  !connections.empty()  ) {
+		if(  !connections.is_empty()  ) {
 			buf.append("\n");
 			offset_y += LINESPACE;
 

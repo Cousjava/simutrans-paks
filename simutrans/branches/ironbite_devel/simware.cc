@@ -14,6 +14,7 @@
 #include "simhalt.h"
 #include "simtypes.h"
 #include "simware.h"
+#include "simworld.h"
 #include "dataobj/loadsave.h"
 #include "dataobj/koord.h"
 

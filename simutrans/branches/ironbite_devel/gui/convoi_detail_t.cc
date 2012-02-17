@@ -198,9 +198,15 @@ void convoi_detail_t::rdwr(loadsave_t *file)
 		}
 		// we might be unlucky, then search all convois for a convoi with this name
 		if(  !cnv.is_bound()  ) {
-			for (vector_tpl<convoihandle_t>::const_iterator i = welt->convoys().begin(), end = welt->convoys().end(); i != end; ++i) {
-				if(  strcmp( (*i)->get_name(),name)==0  ) {
-					cnv = *i;
+			// FOR(vector_tpl<convoihandle_t>, const i, welt->convoys()) {
+			
+			const vector_tpl<convoihandle_t> & convois = welt->convoys();
+			for(uint32 i=0; i<convois.get_count(); i++)
+			{
+			        convoihandle_t tmp = convois.get(i);
+			
+				if (strcmp(tmp->get_name(), name) == 0) {
+					cnv = tmp;
 					break;
 				}
 			}

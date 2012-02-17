@@ -616,11 +616,11 @@ public:
 	/**
 	 * @return Vehicle at position i
 	 */
-	vehikel_t* get_vehikel(uint16 i) const { return fahr[i]; }
+	vehikel_t * get_vehikel(uint16 i) const { return fahr.at(i); }
 
-	vehikel_t* front() const { return fahr[0]; }
+	vehikel_t * front() const { return fahr.at(0); }
 
-	vehikel_t* back() const { return fahr[anz_vehikel - 1]; }
+	vehikel_t * back() const { return fahr.at(anz_vehikel - 1); }
 
 	/**
 	* Adds a vehicel at the start or end of the convoi.

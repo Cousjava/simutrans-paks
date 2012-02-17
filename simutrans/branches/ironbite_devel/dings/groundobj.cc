@@ -55,16 +55,17 @@ bool groundobj_t::alles_geladen()
 	groundobj_typen.resize(besch_names.get_count());
 	stringhashtable_iterator_tpl<groundobj_besch_t *>iter(besch_names);
 	while(  iter.next()  ) {
-		groundobj_typen.insert_ordered( iter.get_current_value(), compare_groundobj_besch );
+		groundobj_typen.insert_ordered( iter.get_current(), compare_groundobj_besch );
 	}
 	// iterate again to assign the index
 	stringhashtable_iterator_tpl<groundobj_besch_t *>iter2(besch_names);
 	while(  iter2.next()  ) {
-		iter2.access_current_value()->index = groundobj_typen.index_of( iter2.get_current_value());
+		iter2.access_current()->index = groundobj_typen.index_of( iter2.get_current());
 	}
 
-	if(besch_names.empty()) {
-		groundobj_typen.append( NULL );
+	if(besch_names.is_empty()) 
+	{
+		groundobj_typen.append(0);
 		DBG_MESSAGE("groundobj_t", "No groundobj found - feature disabled");
 	}
 	return true;
@@ -92,12 +93,13 @@ bool groundobj_t::register_besch(groundobj_besch_t *besch)
 const groundobj_besch_t *groundobj_t::random_groundobj_for_climate(climate cl, hang_t::typ slope  )
 {
 	// none there
-	if(  besch_names.empty()  ) {
+	if(  besch_names.is_empty()  ) {
 		return NULL;
 	}
 
 	int weight = 0;
-	for(  unsigned i=0;  i<groundobj_typen.get_count();  i++  ) {
+
+	for(uint32 i=0;  i<groundobj_typen.get_count();  i++  ) {
 		if(  groundobj_typen.get(i)->is_allowed_climate(cl)  &&  (slope==hang_t::flach  ||  groundobj_typen.get(i)->get_phases()==16)  ) {
 			weight += groundobj_typen.get(i)->get_distribution_weight();
 		}
@@ -107,10 +109,12 @@ const groundobj_besch_t *groundobj_t::random_groundobj_for_climate(climate cl, h
 	if(  weight > 0  ) {
 		const int w=simrand(weight);
 		weight = 0;
-		for(  unsigned i=0;  i<groundobj_typen.get_count();  i++  ) {
+
+		for(uint32 i=0;  i<groundobj_typen.get_count();  i++  ) {
 			if(  groundobj_typen.get(i)->is_allowed_climate(cl)  &&  (slope==hang_t::flach  ||  groundobj_typen.get(i)->get_phases()==16)  ) {
 				weight += groundobj_typen.get(i)->get_distribution_weight();
-				if(weight>=w) {
+				if(weight>=w) 
+				{
 					return groundobj_typen.get(i);
 				}
 			}
@@ -207,7 +211,8 @@ void groundobj_t::rdwr(loadsave_t *file)
 		char bname[128];
 		file->rdwr_str(bname, lengthof(bname));
 		groundobj_besch_t *besch = besch_names.get(bname);
-		if(  besch_names.empty()  ||  besch==NULL  ) {
+		if(  besch_names.is_empty()  ||  besch==0  ) 
+		{
 			groundobjtype = simrand(groundobj_typen.get_count());
 		}
 		else {

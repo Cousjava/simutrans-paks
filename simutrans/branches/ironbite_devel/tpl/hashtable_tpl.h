@@ -1,13 +1,13 @@
 #ifndef tpl_hashtable_tpl_h
 #define tpl_hashtable_tpl_h
 
+#include "../macros.h"
 #include "slist_tpl.h"
 
 #define STHT_BAGSIZE 101
 #define STHT_BAG_COUNTER_T uint8
 
 template<class key_t, class value_t, class hash_t>  class hashtable_iterator_tpl;
-
 
 /*
  * Generic hashtable, which maps key_t to value_t. key_t depended functions
@@ -22,8 +22,8 @@ class hashtable_tpl
 protected:
 	struct node_t {
 	public:
-		key_t	key;
-		value_t	object;
+		key_t	 key;
+		value_t value;
 
 		int operator == (const node_t &x) const { return key == x.key; }
 	};
@@ -54,12 +54,13 @@ public:
 
 	const value_t get(const key_t key) const
 	{
-		slist_iterator_tpl<node_t> iter(bags[get_hash(key)]);
-		while(iter.next()) {
-			node_t node = iter.get_current();
-
-			if (hash_t::comp(node.key, key) == 0) {
-				return node.object;
+		slist_iterator_tpl <node_t> iter (bags[get_hash(key)]);
+		while(iter.next())
+		{
+			node_t & node = iter.access_current();
+			if (hash_t::comp(node.key, key) == 0) 
+			{
+				return node.value;
 			}
 		}
 		return value_t();
@@ -67,15 +68,16 @@ public:
 
 	value_t *access(const key_t key)
 	{
-		slist_iterator_tpl<node_t> iter(bags[get_hash(key)]);
-		while(iter.next()) {
-			node_t &node = iter.access_current();
-
-			if (hash_t::comp(node.key, key) == 0) {
-				return &node.object;
+		slist_iterator_tpl <node_t> iter (bags[get_hash(key)]);
+		while(iter.next())
+		{
+			node_t & node = iter.access_current();
+			if (hash_t::comp(node.key, key) == 0) 
+			{
+				return &node.value;
 			}
 		}
-		return NULL;
+		return 0;
 	}
 
 	//
@@ -85,14 +87,15 @@ public:
 	bool put(const key_t key, value_t object)
 	{
 		const STHT_BAG_COUNTER_T code = get_hash(key);
-		slist_iterator_tpl<node_t> iter(bags[code]);
 
 		//
 		// Duplicate values are hard to debug, so better check here.
 		// ->exception? V.Meyer
 		//
-		while(iter.next()) {
-			const node_t &node = iter.get_current();
+		slist_iterator_tpl <node_t> iter (bags[code]);
+		while(iter.next())
+		{
+			node_t & node = iter.access_current();
 
 			if (hash_t::comp(node.key, key) == 0) {
 				// duplicate
@@ -101,8 +104,8 @@ public:
 		}
 		node_t node;
 
-		node.key = key;
-		node.object = object;
+		node.key   = key;
+		node.value = object;
 		bags[code].insert(node);
 		return true;
 	}
@@ -114,15 +117,15 @@ public:
 	bool put(const key_t key)
 	{
 		const STHT_BAG_COUNTER_T code = get_hash(key);
-		slist_iterator_tpl<node_t> iter(bags[code]);
 
 		//
 		// Duplicate values are hard to debug, so better check here.
 		// ->exception? V.Meyer
 		//
-		while(iter.next()) {
-			const node_t &node = iter.get_current();
-
+		slist_iterator_tpl <node_t> iter (bags[code]);
+		while(iter.next())
+		{
+			node_t & node = iter.access_current();
 			if (hash_t::comp(node.key, key) == 0) {
 				// duplicate
 				return false;
@@ -142,21 +145,20 @@ public:
 	value_t set(const key_t key, value_t object)
 	{
 		const STHT_BAG_COUNTER_T code = get_hash(key);
-
-		slist_iterator_tpl<node_t> iter(bags[code]);
-
-		while(iter.next()) {
-			node_t &node = iter.access_current();
+		slist_iterator_tpl <node_t> iter (bags[code]);
+		while(iter.next())
+		{
+			node_t & node = iter.access_current();
 			if (hash_t::comp(node.key, key) == 0) {
-				value_t value = node.object;
-				node.object = object;
+				value_t value = node.value;
+				node.value = object;
 				return value;
 			}
 		}
 		node_t node;
 
-		node.key = key;
-		node.object = object;
+		node.key   = key;
+		node.value = object;
 		bags[code].insert(node);
 
 		return value_t();
@@ -170,14 +172,14 @@ public:
 	value_t remove(const key_t key)
 	{
 		const STHT_BAG_COUNTER_T code = get_hash(key);
-		slist_iterator_tpl<node_t> iter(bags[code]);
-
-		while(iter.next()) {
-			node_t node = iter.get_current();
+		slist_iterator_tpl <node_t> iter (bags[code]);
+		while(iter.next())
+		{
+			node_t & node = iter.access_current();
 			if (hash_t::comp(node.key, key) == 0) {
 				bags[code].remove( node );
 
-				return node.object;
+				return node.value;
 			}
 		}
 		return value_t();
@@ -186,8 +188,9 @@ public:
 	value_t remove_first()
 	{
 		for(STHT_BAG_COUNTER_T i = 0; i < STHT_BAGSIZE; i++) {
-			if(  !bags[i].empty()  ) {
-				return bags[i].remove_first().object;
+			if(  !bags[i].is_empty()  ) 
+			{
+				return bags[i].remove_first().value;
 			}
 		}
 		dbg->fatal( "hashtable_tpl::remove_first()", "Hashtable already empty!" );
@@ -201,10 +204,11 @@ public:
 
 			printf("Bag %d contains %ud elements\n", i, count);
 
-			slist_iterator_tpl<node_t> iter ( bags[i] );
+			slist_iterator_tpl <node_t> iter (bags[i]);
+			while(iter.next())
+			{
+				node_t & node = iter.access_current();
 
-			while(iter.next()) {
-				node_t node = iter.get_current();
 				printf(" ");
 				hash_t::dump(node.key);
 				printf("\n");
@@ -221,17 +225,18 @@ public:
 		return count;
 	}
 
-	bool empty() const
+	bool is_empty() const
 	{
-		for (STHT_BAG_COUNTER_T i = 0; i < STHT_BAGSIZE; i++) {
-			if (!bags[i].empty()) {
+		for (STHT_BAG_COUNTER_T i = 0; i < STHT_BAGSIZE; i++) 
+		{
+			if (!bags[i].is_empty())
+			{
 				return false;
 			}
 		}
 		return true;
 	}
 };
-
 
 /*
  * Generic iterator for hashtable
@@ -273,15 +278,14 @@ public:
 		return bag_iter.get_current().key;
 	}
 
-	const value_t & get_current_value() const
+	const value_t & get_current() const
 	{
-		return bag_iter.get_current().object;
+		return bag_iter.get_current().value;
 	}
 
-	value_t & access_current_value()
+	value_t & access_current()
 	{
-		return bag_iter.access_current().object;
+		return bag_iter.access_current().value;
 	}
 };
-
 #endif

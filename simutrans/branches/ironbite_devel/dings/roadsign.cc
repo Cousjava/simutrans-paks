@@ -30,6 +30,7 @@
 #include "../gui/werkzeug_waehler.h"
 
 #include "../tpl/stringhashtable_tpl.h"
+#include "../tpl/vector_tpl.h"
 
 #include "../utils/cbuffer_t.h"
 #include "../utils/simstring.h"
@@ -37,9 +38,16 @@
 #include "roadsign.h"
 
 
-const roadsign_besch_t *roadsign_t::default_signal=NULL;
+static vector_tpl<const roadsign_besch_t *> liste;
+static stringhashtable_tpl<const roadsign_besch_t *> table;
 
-stringhashtable_tpl<const roadsign_besch_t *> roadsign_t::table;
+const roadsign_besch_t * roadsign_t::find_besch(const char *name) 
+{
+	return table.get(name); 
+}
+
+	
+const roadsign_besch_t *roadsign_t::default_signal=NULL;
 
 
 roadsign_t::roadsign_t(karte_t *welt, loadsave_t *file) : ding_t (welt)
@@ -539,9 +547,9 @@ void roadsign_t::rdwr(loadsave_t *file)
 		char bname[128];
 		file->rdwr_str(bname, lengthof(bname));
 
-		besch = roadsign_t::table.get(bname);
+		besch = table.get(bname);
 		if(besch==NULL) {
-			besch = roadsign_t::table.get(translator::compatibility_name(bname));
+			besch = table.get(translator::compatibility_name(bname));
 			if(besch==NULL) {
 				dbg->warning("roadsign_t::rwdr", "description %s for roadsign/signal at %d,%d not found! (may be ignored)", bname, get_pos().x, get_pos().y);
 				welt->add_missing_paks( bname, karte_t::MISSING_SIGN );
@@ -590,8 +598,11 @@ void roadsign_t::laden_abschliessen()
 
 
 // to sort compare_roadsign_besch for always the same menu order
-static bool compare_roadsign_besch(const roadsign_besch_t* a, const roadsign_besch_t* b)
+static int compare_roadsign_besch(const void * aa, const void * bb)
 {
+	const roadsign_besch_t* a = (const roadsign_besch_t*) aa;
+	const roadsign_besch_t* b = (const roadsign_besch_t*) bb;
+
 	int diff = a->get_wtyp() - b->get_wtyp();
 	if (diff == 0) {
 		if(a->is_choose_sign()) {
@@ -613,7 +624,8 @@ static bool compare_roadsign_besch(const roadsign_besch_t* a, const roadsign_bes
 /* static stuff from here on ... */
 bool roadsign_t::alles_geladen()
 {
-	if(table.empty()) {
+	if(table.is_empty()) 
+	{
 		DBG_MESSAGE("roadsign_t", "No signs found - feature disabled");
 	}
 	return true;
@@ -645,7 +657,7 @@ bool roadsign_t::register_besch(roadsign_besch_t *besch)
 		besch->set_builder( NULL );
 	}
 
-	roadsign_t::table.put(besch->get_name(), besch);
+	table.put(besch->get_name(), besch);
 
 	if(besch->get_wtyp()==track_wt  &&  besch->get_flags()==roadsign_besch_t::SIGN_SIGNAL) {
 		default_signal = besch;
@@ -663,21 +675,26 @@ void roadsign_t::fill_menu(werkzeug_waehler_t *wzw, waytype_t wtyp, sint16 /*sou
 {
 	const uint16 time = welt->get_timeline_year_month();
 
-	stringhashtable_iterator_tpl<const roadsign_besch_t *>iter(table);
 	vector_tpl<const roadsign_besch_t *>matching;
 
+	stringhashtable_iterator_tpl<const roadsign_besch_t *>iter(table);
 	while(  iter.next()  ) {
-		const roadsign_besch_t* besch = iter.get_current_value();
+		const roadsign_besch_t* besch = iter.get_current();
 		if(time==0  ||  (besch->get_intro_year_month()<=time  &&  besch->get_retire_year_month()>time)) {
 
 			if(besch->get_builder()  &&  wtyp==besch->get_wtyp()) {
 				// only add items with a cursor
-				matching.insert_ordered( besch, compare_roadsign_besch );
+				matching.append(besch);
 			}
 		}
 	}
-	for (vector_tpl<const roadsign_besch_t*>::const_iterator i = matching.begin(), end = matching.end(); i != end; ++i) {
-		wzw->add_werkzeug( (*i)->get_builder() );
+	
+	matching.sort(compare_roadsign_besch); 
+	
+	// FOR(vector_tpl<roadsign_besch_t const*>, const i, matching) {
+	for(uint32 i=0; i<matching.get_count(); i++)
+	{
+		wzw->add_werkzeug(matching.get(i)->get_builder());
 	}
 }
 
@@ -689,8 +706,10 @@ void roadsign_t::fill_menu(werkzeug_waehler_t *wzw, waytype_t wtyp, sint16 /*sou
 const roadsign_besch_t *roadsign_t::roadsign_search(roadsign_besch_t::types const flag, waytype_t const wt, uint16 const time)
 {
 	stringhashtable_iterator_tpl<const roadsign_besch_t *>iter(table);
-	while(  iter.next()  ) {
-		const roadsign_besch_t* besch = iter.get_current_value();
+	while(  iter.next()  ) 
+	{
+		const roadsign_besch_t * const besch = iter.get_current();
+
 		if((time==0  ||  (besch->get_intro_year_month()<=time  &&  besch->get_retire_year_month()>time))
 			&&  besch->get_wtyp()==wt  &&  besch->get_flags()==flag) {
 				return besch;

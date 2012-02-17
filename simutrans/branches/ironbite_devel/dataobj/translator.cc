@@ -77,12 +77,11 @@ const translator::lang_info* translator::get_langs()
 // diagnosis
 static void dump_hashtable(stringhashtable_tpl<const char*>* tbl)
 {
-	stringhashtable_iterator_tpl<const char*> iter(tbl);
 	printf("keys\n====\n");
 	tbl->dump_stats();
 	printf("entries\n=======\n");
-	while (iter.next()) {
-		printf("%s\n",iter.get_current_value());
+	FOR(stringhashtable_tpl<char const*>, const& i, *tbl) {
+		printf("%s\n", i.object);
 	}
 	fflush(NULL);
 }
@@ -198,7 +197,9 @@ void translator::load_custom_list( int lang, vector_tpl<char*> &name_list, const
 	FILE* file;
 
 	// alle namen aufr�umen
-	for(uint32 i=0; i<name_list.get_count(); i++) {
+
+	for(uint32 i=0; i<name_list.get_count(); i++) 
+	{
 		free( name_list.get(i) );
 	}
 	name_list.clear();
@@ -270,7 +271,7 @@ void translator::init_custom_names(int lang)
 	load_custom_list( lang, city_name_list, "citylist_" );
 	load_custom_list( lang, street_name_list, "streetlist_" );
 
-	if (city_name_list.empty()) {
+	if (city_name_list.is_empty()) {
 		DBG_MESSAGE("translator::init_city_names", "reading failed, creating random names.");
 		// Hajo: try to read list failed, create random names
 		for(  uint i = 0;  i < 36;  i++  ) {
@@ -365,8 +366,11 @@ void translator::load_files_from_folder(const char* folder_name, const char* wha
 	int num_pak_lang_dat = folder.search(folder_name, "tab");
 	DBG_MESSAGE("translator::load_files_from_folder()", "search folder \"%s\" and found %i files", folder_name, num_pak_lang_dat);
 	//read now the basic language infos
-	for (searchfolder_t::const_iterator i = folder.begin(), end = folder.end(); i != end; ++i) {
-		const string fileName(*i);
+
+	// FOR(searchfolder_t, const& i, folder) {
+	for(uint32 i=0; i<folder.files.get_count(); i++)
+	{
+		string const fileName(folder.files.get(i));
 		size_t pstart = fileName.rfind('/') + 1;
 		const string iso = fileName.substr(pstart, fileName.size() - pstart - 4);
 
@@ -402,8 +406,9 @@ bool translator::load(const string &path_to_pakset)
 	folder.search("text/", "tab");
 
 	//read now the basic language infos
-	for (searchfolder_t::const_iterator i = folder.begin(), end = folder.end(); i != end; ++i) {
-		const string fileName(*i);
+	for(uint32 i=0; i<folder.files.get_count(); i++)
+	{
+		const string fileName(folder.files.get(i));
 		size_t pstart = fileName.rfind('/') + 1;
 		const string iso = fileName.substr(pstart, fileName.size() - pstart - 4);
 
@@ -416,11 +421,13 @@ bool translator::load(const string &path_to_pakset)
 			fclose(file);
 			single_instance.lang_count++;
 			if (single_instance.lang_count == lengthof(langs)) {
-				if (++i != end) {
+				if (i < folder.files.get_count()) 
+				{
 					// some languages were not loaded, let the user know what happened
 					dbg->warning("translator::load()", "some languages were not loaded, limit reached");
-					for (; i != end; ++i) {
-						dbg->warning("translator::load()", " %s not loaded", *i);
+					for (; i < folder.files.get_count(); i++)
+					{
+						dbg->warning("translator::load()", " %s not loaded", folder.files.get(i));
 					}
 				}
 				break;

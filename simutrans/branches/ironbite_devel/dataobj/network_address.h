@@ -30,9 +30,13 @@ class address_list_t : public vector_tpl<net_address_t> {
 public:
 	address_list_t() : vector_tpl<net_address_t>(10) {}
 
-	bool contains(const net_address_t &other) {
-		for(uint32 i=0; i<get_count(); i++) {
-			if (this->get(i).matches(other)) {
+	bool contains(const net_address_t &other) 
+	{
+
+		for(uint32 i=0; i<get_count(); i++) 
+		{
+			if (this->get(i).matches(other)) 
+			{
 				return true;
 			}
 		}

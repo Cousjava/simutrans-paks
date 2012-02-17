@@ -1,4 +1,3 @@
-#include <algorithm>
 
 #include "freight_list_sorter.h"
 #include "simhalt.h"
@@ -108,9 +107,6 @@ void freight_list_sorter_t::sort_freight(const vector_tpl<freight_t>* warray, cb
 	welt = world;
 	sortby = sort_mode;
 
-	// if there, give the capacity for each freight
-	slist_tpl <freight_t> dummy;
-	slist_iterator_tpl<freight_t> full_iter ( full_list==NULL ? &dummy : full_list );
 	bool list_finish=1;
 
 	// hsiegeln
@@ -118,18 +114,23 @@ void freight_list_sorter_t::sort_freight(const vector_tpl<freight_t>* warray, cb
 	int pos = 0;
 	ALLOCA(freight_t, wlist, warray->get_count());
 
-	for(unsigned i=0;  i<warray->get_count();  i++  ) {
+	for(unsigned int i=0;  i<warray->get_count();  i++  )
+	{
 		const freight_t & ware = warray->get(i);
+		
 		if(ware.get_besch()==freight_builder_t::nichts  ||  ware.menge==0) {
 			continue;
 		}
+		
 //DBG_MESSAGE("freight_list_sorter_t::get_freight_info()","for halt %i",pos);
 		wlist[pos] = ware;
 		// for the sorting via the number for the next stop we unify entries
-		if (sort_mode == by_via_sum) {
+		if (sort_mode == by_via_sum) 
+		{
 //DBG_MESSAGE("freight_list_sorter_t::get_freight_info()","for halt %i check connection",pos);
 			// only add it, if there is not another thing waiting with the same via but another destination
-			for( int i=0;  i<pos;  i++ ) {
+			for( int i=0;  i<pos;  i++ ) 
+			{
 				freight_t& wi = wlist[i];
 				if(  wi.get_index()==ware.get_index()  &&  wi.get_zwischenziel()==ware.get_zwischenziel()  &&
 					( wi.get_ziel()==wi.get_zwischenziel() )==( ware.get_ziel()==ware.get_zwischenziel() )    ) {
@@ -143,6 +144,10 @@ void freight_list_sorter_t::sort_freight(const vector_tpl<freight_t>* warray, cb
 		pos++;
 	}
 
+	// if there, give the capacity for each freight
+	slist_tpl<freight_t>                 const  dummy;
+	slist_iterator_tpl<freight_t> full_iter ( full_list==NULL ? &dummy : full_list );
+	
 	// at least some capacity added?
 	if(pos!=0) {
 		// sort the ware's list
@@ -233,7 +238,8 @@ void freight_list_sorter_t::sort_freight(const vector_tpl<freight_t>* warray, cb
 	}
 
 	// still entires left?
-	while(list_finish  &&  full_iter.next()) {
+	while(list_finish  &&  full_iter.next()) 
+	{
 		add_ware_heading( buf, 0, full_iter.get_current().menge, &(full_iter.get_current()), what_doing );
 	}
 }

@@ -11,6 +11,7 @@
 
 
 struct obj_node_info_t;
+
 template<class key_t, class value_t> class inthashtable_tpl;
 template<class value_t> class stringhashtable_tpl;
 template<class key_t, class value_t> class ptrhashtable_tpl;
@@ -66,13 +67,15 @@ class obj_reader_t
 	//
 	// table of registered obj readers sorted by id
 	//
-	static inthashtable_tpl<obj_type, obj_reader_t *> *obj_reader;
+	typedef inthashtable_tpl<obj_type, obj_reader_t*> obj_map;
+	static obj_map * obj_reader;
 	//
 	// object addresses needed for resolving xrefs later
 	// - stored in a hashhash table with type and name
 	//
 	static inthashtable_tpl<obj_type, stringhashtable_tpl<obj_besch_t *> > loaded;
-	static inthashtable_tpl<obj_type, stringhashtable_tpl< slist_tpl<obj_besch_t **> > > unresolved;
+	typedef inthashtable_tpl<obj_type, stringhashtable_tpl<slist_tpl<obj_besch_t**> > > unresolved_map;
+	static unresolved_map unresolved;
 	static ptrhashtable_tpl<obj_besch_t **, int>  fatals;
 
 	static void read_file(const char *name);

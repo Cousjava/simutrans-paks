@@ -39,13 +39,11 @@ wkz_build_factory_t factory_edit_frame_t::fab_tool = wkz_build_factory_t();
 char factory_edit_frame_t::param_str[256];
 
 
-
 static bool compare_fabrik_besch(const fabrik_besch_t* a, const fabrik_besch_t* b)
 {
 	int diff = strcmp( translator::translate(a->get_name()), translator::translate(b->get_name()) );
 	return diff < 0;
 }
-
 
 
 factory_edit_frame_t::factory_edit_frame_t(spieler_t* sp_, karte_t* welt) :
@@ -106,7 +104,6 @@ factory_edit_frame_t::factory_edit_frame_t(spieler_t* sp_, karte_t* welt) :
 }
 
 
-
 // fill the current fablist
 void factory_edit_frame_t::fill_list( bool translate )
 {
@@ -119,10 +116,12 @@ void factory_edit_frame_t::fill_list( bool translate )
 	fablist.clear();
 
 	// timeline will be obeyed; however, we may show obsolete ones ...
-	stringhashtable_iterator_tpl<const fabrik_besch_t *> iter(fabrikbauer_t::get_fabesch());
-	while(iter.next()) {
+	stringhashtable_iterator_tpl <fabrik_besch_t const*> iter (fabrikbauer_t::get_fabesch());
 
-		const fabrik_besch_t *besch = iter.get_current_value();
+	while(iter.next())
+	{
+		fabrik_besch_t const* const besch = iter.get_current();
+
 		if(besch->get_gewichtung()>0) {
 			// DistributionWeight=0 is obsoluted item, only for backward compatibility
 
@@ -149,6 +148,7 @@ void factory_edit_frame_t::fill_list( bool translate )
 	// now buil scrolled list
 	scl.clear_elements();
 	scl.set_selection(-1);
+
 	for(  uint i=0;  i<fablist.get_count();  i++  ) {
 		// color code for objects: BLACK: normal, YELLOW: consumer only, GREEN: source only
 		COLOR_VAL color=COL_BLACK;

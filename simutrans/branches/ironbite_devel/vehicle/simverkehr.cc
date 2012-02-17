@@ -311,7 +311,7 @@ bool stadtauto_t::register_besch(const stadtauto_besch_t *besch)
 
 bool stadtauto_t::alles_geladen()
 {
-	if(table.empty()) {
+	if(table.is_empty()) {
 		DBG_MESSAGE("stadtauto_t", "No citycars found - feature disabled");
 	}
 	return true;
@@ -338,14 +338,17 @@ void stadtauto_t::built_timeline_liste(karte_t *welt)
 	// this list will contain all citycars
 	liste_timeline.clear();
 	vector_tpl<const stadtauto_besch_t*> temp_liste(0);
-	if(  !table.empty()  ) {
+	if(  !table.is_empty()  ) {
 		const int month_now = welt->get_current_month();
 //DBG_DEBUG("stadtauto_t::built_timeline_liste()","year=%i, month=%i", month_now/12, month_now%12+1);
 
 		// check for every citycar, if still ok ...
-		stringhashtable_iterator_tpl<const stadtauto_besch_t *> iter(table);
-		while(   iter.next()  ) {
-			const stadtauto_besch_t* info = iter.get_current_value();
+		stringhashtable_iterator_tpl <stadtauto_besch_t const*> iter (table);
+
+		while(iter.next())
+		{
+			stadtauto_besch_t const * const info = iter.get_current();
+
 			const int intro_month = info->get_intro_year_month();
 			const int retire_month = info->get_retire_year_month();
 
@@ -355,8 +358,12 @@ void stadtauto_t::built_timeline_liste(karte_t *welt)
 		}
 	}
 	liste_timeline.resize( temp_liste.get_count() );
-	for (vector_tpl<const stadtauto_besch_t*>::const_iterator i = temp_liste.begin(), end = temp_liste.end(); i != end; ++i) {
-		liste_timeline.append( (*i), (*i)->get_gewichtung() );
+	vector_iterator_tpl <stadtauto_besch_t const*> iter (temp_liste);
+
+	while(iter.next())
+	{
+		stadtauto_besch_t const* const i = iter.get_current();
+		liste_timeline.append(i, i->get_gewichtung());
 	}
 }
 
@@ -364,7 +371,7 @@ void stadtauto_t::built_timeline_liste(karte_t *welt)
 
 bool stadtauto_t::list_empty()
 {
-	return liste_timeline.empty();
+	return liste_timeline.is_empty();
 }
 
 
@@ -389,7 +396,7 @@ stadtauto_t::stadtauto_t(karte_t *welt, loadsave_t *file) :
 
 stadtauto_t::stadtauto_t(karte_t* const welt, koord3d const pos, koord const target) :
 	verkehrsteilnehmer_t(welt, pos),
-	besch(liste_timeline.empty() ? 0 : pick_any_weighted(liste_timeline))
+	besch(liste_timeline.is_empty() ? 0 : pick_any_weighted(liste_timeline))
 {
 	pos_next_next = koord3d::invalid;
 	time_to_life = welt->get_settings().get_stadtauto_duration() << welt->ticks_per_world_month_shift;
@@ -465,7 +472,7 @@ void stadtauto_t::rdwr(loadsave_t *file)
 		file->rdwr_str(s, lengthof(s));
 		besch = table.get(s);
 
-		if(  besch == 0  &&  !liste_timeline.empty()  ) {
+		if(  besch == 0  &&  !liste_timeline.is_empty()  ) {
 			dbg->warning("stadtauto_t::rdwr()", "Object '%s' not found in table, trying random stadtauto object type",s);
 			besch = pick_any_weighted(liste_timeline);
 		}
@@ -798,7 +805,7 @@ bool stadtauto_t::hop_check()
 			}
 		}
 #ifdef DESTINATION_CITYCARS
-		if (!posliste.empty()) {
+		if (!posliste.is_empty()) {
 			pos_next_next = pick_any_weighted(posliste);
 		}
 		else {

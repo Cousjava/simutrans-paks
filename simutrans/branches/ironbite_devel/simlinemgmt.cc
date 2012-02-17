@@ -34,7 +34,7 @@ simlinemgmt_t::~simlinemgmt_t()
 {
 	destroy_win( (long)this );
 	// and delete all lines ...
-	while (!all_managed_lines.empty()) {
+	while (!all_managed_lines.is_empty()) {
 		linehandle_t line = all_managed_lines.back();
 		all_managed_lines.remove_at( all_managed_lines.get_count()-1 );
 		delete line.get_rep();	// detaching handled by line itself
@@ -102,10 +102,14 @@ void simlinemgmt_t::rdwr(karte_t * welt, loadsave_t *file, spieler_t *sp)
 
 		uint32 count = all_managed_lines.get_count();
 		file->rdwr_long(count);
-		for (vector_tpl<linehandle_t>::const_iterator i = all_managed_lines.begin(), end = all_managed_lines.end(); i != end; i++) {
-			simline_t::linetype lt = (*i)->get_linetype();
+		vector_iterator_tpl <linehandle_t> iter (all_managed_lines);
+
+	while(iter.next())
+	{
+		linehandle_t const i = iter.get_current();
+			simline_t::linetype lt = i->get_linetype();
 			file->rdwr_enum(lt);
-			(*i)->rdwr(file);
+			i->rdwr(file);
 		}
 	}
 	else {
@@ -155,8 +159,11 @@ DBG_MESSAGE("simlinemgmt_t::rdwr()","number of lines=%i",totalLines);
 }
 
 
-static bool compare_lines(const linehandle_t& a, const linehandle_t& b)
+static int compare_lines(const void * aa, const void * bb)
 {
+	const linehandle_t& a = *((const linehandle_t *)aa); 
+	const linehandle_t& b = *((const linehandle_t *)bb); 
+	
 	int diff = 0;
 	if(  a->get_name()[0]=='('  &&  b->get_name()[0]=='('  ) {
 		diff = atoi(a->get_name()+1)-atoi(b->get_name()+1);
@@ -173,14 +180,19 @@ static bool compare_lines(const linehandle_t& a, const linehandle_t& b)
 
 void simlinemgmt_t::sort_lines()
 {
-	std::sort(all_managed_lines.begin(), all_managed_lines.end(), compare_lines);
+	// std::sort(all_managed_lines.begin(), all_managed_lines.end(), compare_lines);
+	all_managed_lines.sort(compare_lines);
 }
 
 
 void simlinemgmt_t::laden_abschliessen()
 {
-	for (vector_tpl<linehandle_t>::const_iterator i = all_managed_lines.begin(), end = all_managed_lines.end(); i != end; i++) {
-		(*i)->laden_abschliessen();
+	vector_iterator_tpl <linehandle_t> iter (all_managed_lines);
+
+	while(iter.next())
+	{
+		linehandle_t const i = iter.get_current();
+		i->laden_abschliessen();
 	}
 	sort_lines();
 }
@@ -188,9 +200,12 @@ void simlinemgmt_t::laden_abschliessen()
 
 void simlinemgmt_t::rotate90( sint16 y_size )
 {
-	for (vector_tpl<linehandle_t>::const_iterator i = all_managed_lines.begin(), end = all_managed_lines.end(); i != end; i++) {
-		schedule_t *fpl = (*i)->get_schedule();
-		if(fpl) {
+	vector_iterator_tpl <linehandle_t> iter (all_managed_lines);
+
+	while(iter.next())
+	{
+		linehandle_t const i = iter.get_current();
+		if (schedule_t* const fpl = i->get_schedule()) {
 			fpl->rotate90( y_size );
 		}
 	}
@@ -199,8 +214,12 @@ void simlinemgmt_t::rotate90( sint16 y_size )
 
 void simlinemgmt_t::new_month()
 {
-	for (vector_tpl<linehandle_t>::const_iterator i = all_managed_lines.begin(), end = all_managed_lines.end(); i != end; i++) {
-		(*i)->new_month();
+	vector_iterator_tpl <linehandle_t> iter (all_managed_lines);
+
+	while(iter.next())
+	{
+		linehandle_t const i = iter.get_current();
+		i->new_month();
 	}
 }
 
@@ -233,8 +252,11 @@ linehandle_t simlinemgmt_t::create_line(int ltype, spieler_t * sp, schedule_t * 
 void simlinemgmt_t::get_lines(int type, vector_tpl<linehandle_t>* lines) const
 {
 	lines->clear();
-	for (vector_tpl<linehandle_t>::const_iterator i = all_managed_lines.begin(), end = all_managed_lines.end(); i != end; i++) {
-		linehandle_t line = *i;
+	vector_iterator_tpl <linehandle_t> iter (all_managed_lines);
+
+	while(iter.next())
+	{
+		linehandle_t const line = iter.get_current();
 		if (type == simline_t::line || line->get_linetype() == simline_t::line || line->get_linetype() == type) {
 			lines->append(line);
 		}

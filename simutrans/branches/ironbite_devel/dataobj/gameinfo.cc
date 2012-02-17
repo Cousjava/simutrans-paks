@@ -7,12 +7,9 @@
  */
 
 #include "gameinfo.h"
-#include "network.h"
 #include "network_socket_list.h"
-#include "einstellungen.h"
 #include "translator.h"
 #include "umgebung.h"
-#include "../simtools.h"
 #include "../simdebug.h"
 #include "../simworld.h"
 #include "../simcity.h"
@@ -39,12 +36,12 @@ gameinfo_t::gameinfo_t(karte_t *welt) :
 
 	// create a minimap
 
-
 	industries = welt->get_fab_list().get_count();
 	tourist_attractions = welt->get_ausflugsziele().get_count();
 	anzahl_staedte = welt->get_staedte().get_count();
 	einwohnerzahl = 0;
-	for(  weighted_vector_tpl<stadt_t*>::const_iterator i = welt->get_staedte().begin(), end = welt->get_staedte().end();  i != end;  ++i  ) {
+	for(weighted_vector_tpl<stadt_t*>::const_iterator i = welt->get_staedte().begin(), end = welt->get_staedte().end();  i != end;  ++i ) 
+	{
 		einwohnerzahl += (*i)->get_einwohner();
 	}
 

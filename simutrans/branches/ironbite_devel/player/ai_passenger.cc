@@ -73,14 +73,16 @@ bool ai_passenger_t::set_active(bool new_state)
  */
 halthandle_t ai_passenger_t::get_our_hub( const stadt_t *s ) const
 {
-	slist_iterator_tpl <halthandle_t> iter( halt_list );
-	while(iter.next()) {
-		halthandle_t halt = iter.get_current();
+	slist_iterator_tpl <halthandle_t> iter (halt_list);
+
+	while(iter.next())
+	{
+		halthandle_t const halt = iter.get_current();
 		if(  halt->get_pax_enabled()  &&  (halt->get_station_type()&haltestelle_t::busstop)!=0  ) {
 			koord h=halt->get_basis_pos();
 			if(h.x>=s->get_linksoben().x  &&  h.y>=s->get_linksoben().y  &&  h.x<=s->get_rechtsunten().x  &&  h.y<=s->get_rechtsunten().y  ) {
 DBG_MESSAGE("ai_passenger_t::get_our_hub()","found %s at (%i,%i)",s->get_name(),h.x,h.y);
-				return iter.get_current();
+				return halt;
 			}
 		}
 	}
@@ -209,8 +211,10 @@ bool ai_passenger_t::create_water_transport_vehikel(const stadt_t* start_stadt, 
 			start_connect_hub = start_hub;
 			start_hub = halthandle_t();
 			// is there already one harbour next to this one?
+
 			for(  uint32 i=0;  i<start_connect_hub->get_connections(0)->get_count();  i++  ) {
 				halthandle_t h = start_connect_hub->get_connections(0)->get(i).halt;
+
 				if( h->get_station_type()&haltestelle_t::dock  ) {
 					start_hub = h;
 					break;
@@ -238,8 +242,10 @@ bool ai_passenger_t::create_water_transport_vehikel(const stadt_t* start_stadt, 
 			end_connect_hub = end_hub;
 			end_hub = halthandle_t();
 			// is there already one harbour next to this one?
+
 			for(  uint32 i=0;  i<end_connect_hub->get_connections(0)->get_count();  i++  ) {
 				halthandle_t h = end_connect_hub->get_connections(0)->get(i).halt;
+
 				if( h->get_station_type()&haltestelle_t::dock  ) {
 					start_hub = h;
 					break;
@@ -620,8 +626,10 @@ bool ai_passenger_t::create_air_transport_vehikel(const stadt_t *start_stadt, co
 			start_connect_hub = start_hub;
 			start_hub = halthandle_t();
 			// is there already one airport next to this town?
+
 			for(  uint32 i=0;  i<start_connect_hub->get_connections(0)->get_count();  i++  ) {
 				halthandle_t h = start_connect_hub->get_connections(0)->get(i).halt;
+
 				if( h->get_station_type()&haltestelle_t::airstop  ) {
 					start_hub = h;
 					break;
@@ -649,8 +657,10 @@ bool ai_passenger_t::create_air_transport_vehikel(const stadt_t *start_stadt, co
 			end_connect_hub = end_hub;
 			end_hub = halthandle_t();
 			// is there already one airport next to this town?
+
 			for(  uint32 i=0;  i<end_connect_hub->get_connections(0)->get_count();  i++  ) {
 				halthandle_t h = end_connect_hub->get_connections(0)->get(i).halt;
+
 				if( h->get_station_type()&haltestelle_t::airstop  ) {
 					start_hub = h;
 					break;
@@ -690,7 +700,7 @@ bool ai_passenger_t::create_air_transport_vehikel(const stadt_t *start_stadt, co
 		if(!end_hub.is_bound()) {
 			end_hub = build_airport(end_stadt, end_airport, true);
 			if(!end_hub.is_bound()) {
-				if (start_hub->get_pax_connections()->empty()) {
+				if (start_hub->get_pax_connections()->is_empty()) {
 					// remove airport busstop
 					welt->lookup_kartenboden(start_hub->get_basis_pos())->remove_everything_from_way( this, road_wt, ribi_t::keine );
 					koord center = start_hub->get_basis_pos() + koord( welt->lookup_kartenboden(start_hub->get_basis_pos())->get_weg_ribi_unmasked( air_wt ) );
@@ -1272,7 +1282,7 @@ DBG_MESSAGE("ai_passenger_t::do_passenger_ki()","using %s on %s",road_vehicle->g
 				}
 
 				// avoid empty schedule ?!?
-				assert(!line->get_schedule()->empty());
+				assert(!line->get_schedule()->is_empty());
 
 				// made loss with this line
 				if(line->get_finance_history(0,LINE_PROFIT)<0) {
@@ -1309,7 +1319,7 @@ DBG_MESSAGE("ai_passenger_t::do_passenger_ki()","using %s on %s",road_vehicle->g
 									new_cnv->start();
 								}
 								// delete all old convois
-								while(!obsolete.empty()) {
+								while(!obsolete.is_empty()) {
 									obsolete.remove_first()->self_destruct();
 								}
 								return;

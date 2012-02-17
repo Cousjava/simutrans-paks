@@ -45,18 +45,27 @@ bool fussgaenger_t::register_besch(const fussgaenger_besch_t *besch)
 bool fussgaenger_t::alles_geladen()
 {
 	liste.resize(table.get_count());
-	if (table.empty()) {
+	if (table.is_empty()) {
 		DBG_MESSAGE("fussgaenger_t", "No pedestrians found - feature disabled");
 	}
 	else {
-		vector_tpl<const fussgaenger_besch_t*> temp_liste(0);
-		stringhashtable_iterator_tpl<const fussgaenger_besch_t *>iter(table);
-		while(  iter.next()  ) {
+		vector_tpl<const fussgaenger_besch_t*> temp_liste(16);
+		
+		stringhashtable_iterator_tpl <fussgaenger_besch_t const*> b_iter (table);
+
+		while(b_iter.next())
+		{
+			fussgaenger_besch_t const * const i = b_iter.get_current();
 			// just entered them sorted
-			temp_liste.insert_ordered( iter.get_current_value(), compare_fussgaenger_besch );
+			temp_liste.insert_ordered(i, compare_fussgaenger_besch);
 		}
-		for (vector_tpl<const fussgaenger_besch_t *>::const_iterator i = temp_liste.begin(), end = temp_liste.end(); i != end; ++i) {
-			liste.append( (*i), (*i)->get_gewichtung() );
+
+		vector_iterator_tpl <fussgaenger_besch_t const*> iter (temp_liste);
+
+		while(iter.next())
+		{
+			fussgaenger_besch_t const* const i = iter.get_current();
+			liste.append(i, i->get_gewichtung());
 		}
 	}
 	return true;
@@ -105,7 +114,7 @@ void fussgaenger_t::rdwr(loadsave_t *file)
 		file->rdwr_str(s, lengthof(s));
 		besch = table.get(s);
 		// unknow pedestrian => create random new one
-		if(besch == NULL  &&  !liste.empty()  ) {
+		if(besch == NULL  &&  !liste.is_empty()  ) {
 			besch = pick_any_weighted(liste);
 		}
 	}
@@ -120,7 +129,7 @@ void fussgaenger_t::rdwr(loadsave_t *file)
 // create anzahl pedestrains (if possible)
 void fussgaenger_t::erzeuge_fussgaenger_an(karte_t *welt, const koord3d k, int &anzahl)
 {
-	if (liste.empty()) {
+	if (liste.is_empty()) {
 		return;
 	}
 

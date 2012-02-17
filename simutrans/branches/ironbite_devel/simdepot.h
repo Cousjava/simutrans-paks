@@ -8,7 +8,6 @@
 #ifndef _simdepot_h
 #define _simdepot_h
 
-#include "tpl/slist_tpl.h"
 #include "dings/gebaeude.h"
 #include "convoihandle_t.h"
 #include "simline.h"
@@ -21,7 +20,9 @@ class karte_t;
 class vehikel_t;
 class depot_frame_t;
 class vehikel_besch_t;
+template <class T> class slist_tpl;
 
+class depot_data_t;
 
 /**
  * In Depots werden Fahrzeuge gekauft, gewartet, verkauft und gelagert.
@@ -30,25 +31,10 @@ class vehikel_besch_t;
 class depot_t : public gebaeude_t
 {
 protected:
-	/**
-	 * Reworked depot data!
-	 *
-	 * It can now contain any number of vehicles bought by the user (as before).
-	 * And it can hold any number of convois (before only one).
-	 * It is possible to have 0 convois in a depot, but an empty one shall be
-	 * automatically created, when necessary.
-	 * Convois are numbered 0...(n-1).
-	 * Vehicles are accessed by type.
-	 *
-	 * @author Volker Meyer
-	 * @date  30.05.2003
-	 */
-	slist_tpl<vehikel_t *> vehicles;
-	slist_tpl<convoihandle_t> convois;
+
+	depot_data_t * ooo;
 
 	void rdwr_vehikel(slist_tpl<vehikel_t*> &list, loadsave_t *file);
-
-	static slist_tpl<depot_t *> all_depots;
 
 public:
 	// Last selected vehicle filter
@@ -57,7 +43,7 @@ public:
 	// finds the next/previous depot relative to the current position
 	static depot_t *find_depot( koord3d start, const ding_t::typ depot_type, const spieler_t *sp, bool next);
 
-	static const slist_tpl<depot_t *>& get_depot_list() { return all_depots; }
+	static const slist_tpl<depot_t *> & get_depot_list();
 
 	depot_t(karte_t *welt,loadsave_t *file);
 	depot_t(karte_t *welt, koord3d pos, spieler_t *sp, const haus_tile_besch_t *t);
@@ -82,9 +68,9 @@ public:
 	 * @author Volker Meyer
 	 * @date  30.05.2003
 	 */
-	unsigned convoi_count() const { return convois.get_count(); }
+	unsigned convoi_count() const;
 
-	convoihandle_t get_convoi(unsigned int icnv) const { return icnv < convoi_count() ? convois.at(icnv) : convoihandle_t(); }
+	convoihandle_t get_convoi(unsigned int icnv) const;
 
 	convoihandle_t add_convoi();
 
@@ -133,7 +119,7 @@ public:
 	 * @author Volker Meyer
 	 * @date  30.05.2003
 	 */
-	slist_tpl<vehikel_t*> const& get_vehicle_list() { return vehicles; }
+	slist_tpl<vehikel_t*> const & get_vehicle_list();
 
 	/**
 	 * A new vehicle is bought and added to the vehicle list.
@@ -219,8 +205,6 @@ public:
 	 */
 	void update_win();
 
-private:
-	linehandle_t selected_line;
 };
 
 
@@ -239,7 +223,7 @@ public:
 
 	virtual simline_t::linetype get_line_type() const { return simline_t::trainline; }
 
-	void rdwr_vehicles(loadsave_t *file) { depot_t::rdwr_vehikel(vehicles,file); }
+	void rdwr_vehicles(loadsave_t *file);
 
 	/**
 	 * Parameters to determine layout and behaviour of the depot_frame_t.

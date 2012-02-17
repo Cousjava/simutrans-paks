@@ -41,7 +41,8 @@ address_list_t blacklist;
 
 void clear_command_queue()
 {
-	while(!received_command_queue.empty()) {
+	while(!received_command_queue.is_empty()) 
+	{
 		network_command_t *nwc = received_command_queue.remove_first();
 		if (nwc) {
 			delete nwc;
@@ -415,8 +416,7 @@ bool network_init_server( int port )
 	vector_tpl<std::string> const& ips = umgebung_t::listen;
 #endif
 	// For each address in the list of listen addresses try and create a socket to listen on
-	for (uint i = 0; i != ips.get_count(); ++i) {
-		std::string const& ip = ips[i];
+	FOR(vector_tpl<std::string>, const& ip, ips) {
 
 #ifdef HAS_NTOP_AND_PTON
 		// Check address is valid
@@ -556,7 +556,8 @@ void network_set_socket_nodelay( SOCKET sock )
 
 network_command_t* network_get_received_command()
 {
-	if (!received_command_queue.empty()) {
+	if (!received_command_queue.is_empty()) 
+	{
 		return received_command_queue.remove_first();
 	}
 	return NULL;

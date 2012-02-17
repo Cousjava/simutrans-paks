@@ -61,7 +61,7 @@ static vector_tpl<weighted_vector_tpl<uint32> *> tree_typen_per_climate;
 const vector_tpl<const baum_besch_t *> * tree_t::get_all_besch() { return &tree_typen; }
 
 
-const baum_besch_t *tree_t::find_tree( const char *tree_name ) { return tree_typen.empty() ? NULL : besch_names.get(tree_name); }
+const baum_besch_t *tree_t::find_tree( const char *tree_name ) { return tree_typen.is_empty() ? NULL : besch_names.get(tree_name); }
 
 const baum_besch_t * tree_t::random_tree_for_climate(climate cl)
 {
@@ -170,7 +170,7 @@ uint8 tree_t::plant_tree_on_coordinate(karte_t * welt,
 bool tree_t::plant_tree_on_coordinate(karte_t * welt, koord pos, const baum_besch_t *besch, const bool check_climate, const bool random_age )
 {
 	// none there
-	if(  besch_names.empty()  ) {
+	if(  besch_names.is_empty()  ) {
 		return false;
 	}
 	grund_t *gr = welt->lookup_kartenboden(pos);
@@ -214,7 +214,7 @@ bool tree_t::plant_tree_on_coordinate(karte_t * welt, koord pos, const baum_besc
 uint32 tree_t::create_forest(karte_t *welt, koord new_center, koord wh )
 {
 	// none there
-	if(  besch_names.empty()  ) {
+	if(  besch_names.is_empty()  ) {
 		return 0;
 	}
 	const sint16 xpos_f = new_center.x;
@@ -252,7 +252,7 @@ uint32 tree_t::create_forest(karte_t *welt, koord new_center, koord wh )
 void tree_t::fill_trees(karte_t *welt, int dichte)
 {
 	// none there
-	if(  besch_names.empty()  ) {
+	if(  besch_names.is_empty()  ) {
 		return;
 	}
 DBG_MESSAGE("verteile_baeume()","distributing single trees");
@@ -283,14 +283,16 @@ static bool compare_baum_besch(const baum_besch_t* a, const baum_besch_t* b)
 
 bool tree_t::alles_geladen()
 {
-	if (besch_names.empty()) {
+	if (besch_names.is_empty()) {
 		DBG_MESSAGE("tree_t", "No trees found - feature disabled");
 		tree_typen.append( NULL );
 	}
-	else {
+	else 
+	{
+
 		stringhashtable_iterator_tpl<const baum_besch_t*> iter(besch_names);
 		while(  iter.next()  ) {
-			tree_typen.insert_ordered( iter.get_current_value(), compare_baum_besch );
+			tree_typen.insert_ordered( iter.get_current(), compare_baum_besch );
 			if(  tree_typen.get_count()==254  ) {
 				dbg->error( "tree_t::alles_geladen()", "Maximum tree count exceeded! (max 254 instead of %i)", besch_names.get_count() );
 				break;
@@ -478,7 +480,7 @@ uint16 tree_t::random_tree_for_climate_intern(climate cl)
 {
 	// now weight their distribution
 	weighted_vector_tpl<uint32> const * t = tree_typen_per_climate.get(cl);
-	return t->empty() ? 0xFFFF : pick_any_weighted(t);
+	return t->is_empty() ? 0xFFFF : pick_any_weighted(t);
 }
 
 

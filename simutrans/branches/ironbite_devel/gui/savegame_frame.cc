@@ -117,16 +117,28 @@ void savegame_frame_t::fill_list()
 	DIR     *dir;                      /* Schnittstellen zum BS */
 
 	dir=opendir( searchpath );
-	if(dir==NULL) {
-		dbg->warning("savegame_frame_t::savegame_frame_t()","Couldn't read directory.");
+	if(dir==NULL) 
+	{
+		dbg->warning("savegame_frame_t::fill_list()","Couldn't read directory %s.", searchpath);
+		fprintf(stderr, "savegame_frame_t::fill_list()\tCouldn't read directory %s.\n", searchpath);
+		fflush(stderr);
 	}
 	else {
+		dbg->debug("savegame_frame_t::fill_list()", "Reading directory %s.", searchpath);
+		fprintf(stderr, "savegame_frame_t::fill_list()\tsearching directory %s for suffix %s.\n", searchpath, suffix);
+		fflush(stderr);
+
 		const dirent* entry;
 		do {
 			entry=readdir(dir);
 			if(entry!=NULL) {
 				if(entry->d_name[0]!='.' ||  (entry->d_name[1]!='.' && entry->d_name[1]!=0)) {
-					if(check_file(entry->d_name,suffix)) {
+
+					fprintf(stderr, "savegame_frame_t::fill_list()\t-> %s\n", entry->d_name);
+					fflush(stderr);
+
+					if(check_file(entry->d_name, suffix)) 
+					{
 						add_file(entry->d_name, get_info(entry->d_name), not_cutting_extension);
 					}
 				}
@@ -161,11 +173,16 @@ void savegame_frame_t::fill_list()
 
 	// The file entries
 	int y = 0;
+
 	slist_iterator_tpl <entry> iter (entries);
 
 	while(iter.next()) 
 	{
 		const entry & entry = iter.get_current();
+
+		dbg->debug("savegame_frame_t::fill_list()", "found %p", &entry);
+
+
 		button_t*    button1 = entry.del;
 		button_t*    button2 = entry.button;
 		gui_label_t* label   = entry.label;
@@ -245,42 +262,63 @@ void savegame_frame_t::add_file(const char *filename, const char *pak, const boo
 
 	std::string const compare_to = !umgebung_t::objfilename.empty() ? umgebung_t::objfilename.substr(0, umgebung_t::objfilename.size() - 1) + " -" : std::string();
 	// sort by date descending:
-	slist_tpl<entry>::iterator i = entries.begin();
-	slist_tpl<entry>::iterator end = entries.end();
-	if(  strncmp( compare_to.c_str(), pak, compare_to.size() )!=0  ) {
-		// skip current ones
-		while(  i != end  ) {
-			// extract palname in same format than in savegames ...
-			if(  strncmp( compare_to.c_str(), i->label->get_text_pointer(), compare_to.size() ) !=0  ) {
-				break;
+	
+	slist_iterator_tpl<entry> iter (entries);
+	
+	/*
+	if(iter.next())
+	{
+		bool ok = true;
+	
+		if(strncmp( compare_to.c_str(), pak, compare_to.size() )!=0  ) {
+			// skip current ones
+			while(ok) 
+			{
+				// extract palname in same format than in savegames ...
+				if(  strncmp( compare_to.c_str(), 
+					      iter.get_current().label->get_text_pointer(), compare_to.size() ) !=0  ) {
+					break;
+				}
+				ok = iter.next();
 			}
-			++i;
+			// now just sort according time
+			while(ok) 
+			{
+				if(  strcmp(iter.get_current().label->get_text_pointer(), 
+					    date) < 0  ) {
+					break;
+				}
+				ok=iter.next();
+			}
 		}
-		// now just sort according time
-		while(  i != end  ) {
-			if(  strcmp(i->label->get_text_pointer(), date) < 0  ) {
-				break;
+		else {
+			// Insert to our games (or in front if none)
+			while(ok) 
+			{
+				if(  strcmp(iter.get_current().label->get_text_pointer(), 
+					    date) < 0  ) {
+					break;
+				}
+				// not our savegame any more => insert
+				if(  strncmp( compare_to.c_str(), 
+					      iter.get_current().label->get_text_pointer(), compare_to.size() ) !=0  ) {
+					break;
+				}
+				ok = iter.next();
 			}
-			++i;
 		}
 	}
-	else {
-		// Insert to our games (or in front if none)
-		while(  i != end  ) {
-			if(  strcmp(i->label->get_text_pointer(), date) < 0  ) {
-				break;
-			}
-			// not our savegame any more => insert
-			if(  strncmp( compare_to.c_str(), i->label->get_text_pointer(), compare_to.size() ) !=0  ) {
-				break;
-			}
-			++i;
-		}
-	}
-
+	
 	gui_label_t* l = new gui_label_t(NULL);
 	l->set_text_pointer(date);
-	entries.insert(i, entry(button, new button_t, l));
+	// TODO
+	// entries.insert(iter.get_current(), entry(button, new button_t, l));
+	
+	*/
+
+	gui_label_t* label = new gui_label_t(0);
+	label->set_text_pointer(date);
+	entries.insert(entry(button, new button_t, label));
 }
 
 
@@ -332,15 +370,20 @@ bool savegame_frame_t::action_triggered( gui_action_creator_t *komp, value_t /* 
 	else {
 		// File in list selected
 		//--------------------------
-		for(  slist_tpl<entry>::iterator i = entries.begin(), end = entries.end();  i != end  &&  !in_action;  ++i  ) {
-			if(  komp == i->button  ||  komp == i->del  ) {
+		slist_iterator_tpl <entry> iter (entries);
+
+	while(iter.next())
+	{
+		entry const& i = iter.get_current();
+			if (in_action) break;
+			if (komp == i.button || komp == i.del) {
 				in_action = true;
-				const bool action_btn = komp == i->button;
+				bool const action_btn = komp == i.button;
 				buf[0] = 0;
 				if(fullpath) {
 					tstrncpy(buf, fullpath, lengthof(buf));
 				}
-				strcat(buf, i->button->get_text());
+				strcat(buf, i.button->get_text());
 				if(suffix) {
 					strcat(buf, suffix);
 				}
@@ -359,11 +402,11 @@ bool savegame_frame_t::action_triggered( gui_action_creator_t *komp, value_t /* 
 						set_focus(NULL);
 						// do not delete components
 						// simply hide them
-						i->button->set_visible(false);
-						i->del->set_visible(false);
-						i->label->set_visible(false);
-						i->button->set_groesse( koord( 0, 0 ) );
-						i->del->set_groesse( koord( 0, 0 ) );
+						i.button->set_visible(false);
+						i.del->set_visible(false);
+						i.label->set_visible(false);
+						i.button->set_groesse(koord(0, 0));
+						i.del->set_groesse(koord(0, 0));
 
 						resize( koord(0,0) );
 						in_action = false;
@@ -397,20 +440,26 @@ void savegame_frame_t::set_window_size(koord groesse)
 	input.set_size(groesse.x-75-scrollbar_t::BAR_SIZE-1, BUTTON_HEIGHT);
 
 	sint16 y = 0;
+
 	slist_iterator_tpl <entry> iter (entries);
 
 	while(iter.next()) 
 	{
 		const entry & entry = iter.get_current();
+
 		// resize all but delete button
-		if(  entry.button->is_visible()  ) {
+
+		if(  entry.button->is_visible()  ) 
+		{
 			button_t*    button1 = entry.del;
+
 			button1->set_pos( koord( button1->get_pos().x, y ) );
-			button_t*    button2 = entry.button;
+			button_t *  const button2 = entry.button;
 			gui_label_t* label   = entry.label;
+
 			button2->set_pos( koord( button2->get_pos().x, y ) );
 			button2->set_groesse(koord( groesse.x/2-40, BUTTON_HEIGHT));
-			label->set_pos(koord(groesse.x/2-40+30, y+2));
+			label->set_pos(koord(groesse.x / 2 - 40 + 30, y + 2));
 			y += BUTTON_HEIGHT;
 		}
 	}
@@ -432,7 +481,7 @@ void savegame_frame_t::set_window_size(koord groesse)
 
 bool savegame_frame_t::infowin_event(const event_t *ev)
 {
-	if(ev->ev_class == INFOWIN  &&  ev->ev_code == WIN_OPEN  &&  entries.empty()) {
+	if(ev->ev_class == INFOWIN  &&  ev->ev_code == WIN_OPEN  &&  entries.is_empty()) {
 		// before no virtual functions can be used ...
 		fill_list();
 		set_focus( &input );

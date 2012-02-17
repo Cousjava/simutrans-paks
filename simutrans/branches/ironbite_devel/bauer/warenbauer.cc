@@ -62,6 +62,7 @@ bool freight_builder_t::alles_geladen()
 	// now assign unique category indexes for unique categories
 	max_catg_index = 0;
 	// first assign special freight (which always needs an own category)
+
 	for( unsigned i=0;  i<waren.get_count();  i++  ) {
 		if(waren.get(i)->get_catg()==0) {
 			waren.get(i)->catg_index = max_catg_index++;
@@ -72,6 +73,7 @@ bool freight_builder_t::alles_geladen()
 
 	for(  uint8 i=0;  i<waren.get_count();  i++  ) {
 		const uint8 catg = waren.get(i)->get_catg();
+
 		if(  catg > 0  ) {
 			if(  map[catg] == 0  ) { // We didn't found this category yet -> just create new index.
 				map[catg] = max_catg_index++;

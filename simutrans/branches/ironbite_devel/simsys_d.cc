@@ -180,11 +180,7 @@ END_OF_FUNCTION(my_close_button_callback)
  */
 
 
-<<<<<<< .mine
-int system_init(const int* parameter)
-=======
-bool dr_os_init(int const* parameter)
->>>>>>> .r5221
+bool system_init(const int* parameter)
 {
 	if (allegro_init() != 0) {
 		dr_fatal_notify("Could not init Allegro.\n");
@@ -203,12 +199,6 @@ bool dr_os_init(int const* parameter)
 	LOCK_FUNCTION(my_close_button_callback);
 	set_close_button_callback(my_close_button_callback);
 
-<<<<<<< .mine
-	if (ok != 0) {
-		system_fatal_notify("Could not init Allegro.\n");
-	}
-=======
->>>>>>> .r5221
 	simtimer_init();
 
 	return true;
@@ -259,11 +249,7 @@ int system_open(int const w, int const h, int const fullscreen)
 }
 
 
-<<<<<<< .mine
-int system_close(void)
-=======
-void dr_os_close()
->>>>>>> .r5221
+void system_close(void)
 {
 	allegro_exit();
 }
@@ -317,7 +303,7 @@ unsigned int system_get_color(unsigned int r, unsigned int g, unsigned int b)
 }
 
 
-<<<<<<< .mine
+// unused ?
 void system_set_colors(int first, int count, unsigned char* data)
 {
 	PALETTE p;
@@ -333,13 +319,10 @@ void system_set_colors(int first, int count, unsigned char* data)
 }
 
 
-=======
->>>>>>> .r5256
 void system_prepare_flush()
 {
 	return;
 }
-
 
 
 void system_flush_framebuffer(void)

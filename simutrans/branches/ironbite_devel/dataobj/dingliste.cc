@@ -1293,7 +1293,7 @@ void dingliste_t::check_season(const long month)
 	}
 
 	// delete all objects, which do not want to step anymore
-	while (!loeschen.empty()) {
+	while (!loeschen.is_empty()) {
 		delete loeschen.remove_first();
 	}
 }

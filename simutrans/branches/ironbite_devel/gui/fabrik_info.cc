@@ -240,26 +240,57 @@ bool fabrik_info_t::action_triggered( gui_action_creator_t *komp, value_t v)
 	return true;
 }
 
+static void make_button(button_t & button, int y_off, 
+			koord pos, action_listener_t* const listener)
+{
+	button.set_pos(koord(10, y_off));
+	button.set_typ(button_t::posbutton);
+	button.set_targetpos(pos);
+	button.add_listener(listener);
+}
 
-static inline koord const& get_coord(koord   const&       c) { return c; }
-static inline koord        get_coord(stadt_t const* const c) { return c->get_pos(); }
-
-
-template <typename T> static void make_buttons(button_t*& dst, T const& coords, int& y_off, gui_container_t& fab_info, action_listener_t* const listener)
+static void make_buttons(button_t*& dst, vector_tpl<koord> const & input, int& y_off, gui_container_t& fab_info, action_listener_t* const listener)
 {
 	delete [] dst;
-	if (coords.empty()) {
-		dst = 0;
-	} else {
-		button_t* b = dst = new button_t[coords.get_count()];
-		for (typename T::const_iterator i = coords.begin(), end = coords.end(); i != end; ++b, ++i) {
-			b->set_pos(koord(10, y_off));
+	dst = 0;
+	if (!input.is_empty()) 
+	{
+		dst = new button_t[input.get_count()];
+		
+		vector_iterator_tpl <koord> iter (input);
+		int idx = 0;
+		
+		while(iter.next()) 
+		{
+			make_button(dst[idx], y_off, iter.get_current(), listener);
+			fab_info.add_komponente(&dst[idx]);
 			y_off += LINESPACE;
-			b->set_typ(button_t::posbutton);
-			b->set_targetpos(get_coord(*i));
-			b->add_listener(listener);
-			fab_info.add_komponente(b);
+			idx ++;
 		}
+		
+		y_off += 2 * LINESPACE;
+	}
+}
+
+static void make_city_buttons(button_t*& dst, vector_tpl<stadt_t *> const & input, int& y_off, gui_container_t& fab_info, action_listener_t* const listener)
+{
+	delete [] dst;
+	dst = 0;
+	if (!input.is_empty()) 
+	{
+		dst = new button_t[input.get_count()];
+		
+		vector_iterator_tpl <stadt_t *> iter (input);
+		int idx = 0;
+		
+		while(iter.next()) 
+		{
+			make_button(dst[idx], y_off, iter.get_current()->get_pos(), listener);
+			fab_info.add_komponente(&dst[idx]);
+			y_off += LINESPACE;
+			idx ++;
+		}
+		
 		y_off += 2 * LINESPACE;
 	}
 }
@@ -281,7 +312,7 @@ void fabrik_info_t::update_info()
 	int y_off = LINESPACE;
 	make_buttons(lieferbuttons,   fab->get_lieferziele(),   y_off, fab_info, this);
 	make_buttons(supplierbuttons, fab->get_suppliers(),     y_off, fab_info, this);
-	make_buttons(stadtbuttons,    fab->get_target_cities(), y_off, fab_info, this);
+	make_city_buttons(stadtbuttons,    fab->get_target_cities(), y_off, fab_info, this);
 
 	fab_info.set_groesse( koord( fab_info.get_groesse().x, txt.get_groesse().y-LINESPACE ) );
 }
@@ -307,13 +338,22 @@ void gui_fabrik_info_t::zeichnen(koord offset)
 	yoff += fab->get_suppliers().get_count() * LINESPACE;
 	yoff += fab->get_suppliers().get_count() ? 2*LINESPACE : 0;
 
-	const vector_tpl<stadt_t *> &target_cities = fab->get_target_cities();
-	if(  !target_cities.empty()  ) {
+	const vector_tpl<stadt_t *> & target_cities = fab->get_target_cities();
+	if(  !target_cities.is_empty()  ) 
+	{
 		yoff += LINESPACE;
+		
+		vector_iterator_tpl <stadt_t *> iter (target_cities);
 
-		for(  uint32 c = 0;  c < target_cities.get_count();  c++  ) {
-			const stadt_t::factory_entry_t *const pax_entry = target_cities.get(c)->get_target_factories_for_pax().get_entry(fab);
-			const stadt_t::factory_entry_t *const mail_entry = target_cities.get(c)->get_target_factories_for_mail().get_entry(fab);
+		while(iter.next()) 
+		{
+			stadt_t * city = iter.get_current();
+
+			const stadt_t::factory_entry_t * const pax_entry = 
+				city->get_target_factories_for_pax().get_entry(fab);
+			const stadt_t::factory_entry_t * const mail_entry = 
+				city->get_target_factories_for_mail().get_entry(fab);
+			
 			assert( pax_entry && mail_entry );
 
 			cbuffer_t buf;
@@ -331,7 +371,7 @@ void gui_fabrik_info_t::zeichnen(koord offset)
 			display_proportional_clip( xoff+62+(w>21?w-21:0), yoff, buf, ALIGN_RIGHT, COL_BLACK, true );
 			display_color_img(skinverwaltung_t::post->get_bild_nr(0), xoff+64+1+(w>21?w-21:0), yoff, 0, false, false);
 
-			display_proportional_clip( xoff+90, yoff, target_cities.get(c)->get_name(), ALIGN_LEFT, COL_BLACK, true );
+			display_proportional_clip( xoff+90, yoff, city->get_name(), ALIGN_LEFT, COL_BLACK, true );
 			yoff += LINESPACE;
 		}
 	}

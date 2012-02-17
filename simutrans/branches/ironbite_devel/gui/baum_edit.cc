@@ -77,15 +77,19 @@ void baum_edit_frame_t::fill_list( bool translate )
 	// now buil scrolled list
 	scl.clear_elements();
 	scl.set_selection(-1);
-	for (vector_tpl<const baum_besch_t *>::const_iterator i = baumlist->begin(), end = baumlist->end(); i != end; ++i) {
+	// for (vector_tpl<const baum_besch_t *>::const_iterator i = baumlist->begin(), end = baumlist->end(); i != end; ++i) {
+	for (uint32 i=0; i<baumlist->get_count(); i++)
+	{
+		const baum_besch_t * tmp = baumlist->get(i);
 		scl.append_element( new gui_scrolled_list_t::const_text_scrollitem_t(
-			translate ? translator::translate( (*i)->get_name() ):(*i)->get_name(),
+			translate ? translator::translate(tmp->get_name() ) : tmp->get_name(),
 			COL_BLACK )
 		);
-		if(  (*i) == besch  ) {
+		if(  tmp == besch  ) {
 			scl.set_selection(scl.get_count()-1);
 		}
 	}
+	
 	// always update current selection (since the tool may depend on it)
 	change_item_info( scl.get_selection() );
 }

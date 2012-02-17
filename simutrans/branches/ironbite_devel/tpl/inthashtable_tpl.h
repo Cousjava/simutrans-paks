@@ -11,8 +11,8 @@
 /*
  * Define the key characteristica for hashing integer types
  */
-template<class key_t>
-class inthash_tpl {
+template<class key_t> class inthash_tpl 
+{
 public:
     static uint32 hash(const key_t key)
     {
@@ -44,7 +44,6 @@ private:
 	inthashtable_tpl(const inthashtable_tpl&);
 	inthashtable_tpl& operator=( inthashtable_tpl const&);
 };
-
 
 template<class key_t, class value_t>
 class inthashtable_iterator_tpl : public hashtable_iterator_tpl<key_t, value_t, inthash_tpl<key_t> >

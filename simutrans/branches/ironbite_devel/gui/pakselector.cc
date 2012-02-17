@@ -7,6 +7,10 @@
 #include "../simsys.h"
 #include "components/list_button.h"
 
+bool pakselector_t::has_pak() const 
+{
+	return !entries.is_empty(); 
+}
 
 /**
  * what to do after loading
@@ -104,16 +108,21 @@ void pakselector_t::fill_list()
 		const entry & entry = iter.get_current();
 
 		char path[1024];
+
 		sprintf(path,"%saddons/%s", umgebung_t::user_dir, entry.button->get_text() );
 		koord size = entry.del->get_groesse();
 		entry.del->set_groesse(size + koord(150, 0));
 		entry.del->set_text( "Load with addons" );
 		entry.button->set_pos( koord(150,0)+entry.button->get_pos() );
-		if(  chdir( path )!=0  ) {
+
+		if(  chdir( path )!=0  ) 
+		{
 			// no addons for this
 			entry.del->set_visible( false );
 			entry.del->disable();
-			if(entries.get_count()==1) {
+
+			if(entries.get_count()==1) 
+			{
 				// only single entry and no addons => no need to question further ...
 				umgebung_t::objfilename = (std::string)entry.button->get_text() + "/";
 			}
@@ -149,11 +158,12 @@ void pakselector_t::set_window_size(koord groesse)
 		if(  entry.button->is_visible()  ) {
 			button_t*    button1 = entry.del;
 			button1->set_pos( koord( button1->get_pos().x, y ) );
-			button_t*    button2 = entry.button;
+			button_t * const   button2 = entry.button;
 			gui_label_t* label   = entry.label;
 			button2->set_pos( koord( button2->get_pos().x, y ) );
 			button2->set_groesse(koord( groesse.x/2-40, BUTTON_HEIGHT));
-			label->set_pos(koord(groesse.x/2-40+30, y+2));
+			
+			label->set_pos(koord(groesse.x / 2 - 40 + 30, y + 2));
 			y += BUTTON_HEIGHT;
 		}
 	}

@@ -39,13 +39,13 @@ static char const* const version[] =
 // just free memory
 void settings_stats_t::free_all()
 {
-	while(  !label.empty()  ) {
+	while(  !label.is_empty()  ) {
 		delete label.remove_first();
 	}
-	while(  !numinp.empty()  ) {
+	while(  !numinp.is_empty()  ) {
 		delete numinp.remove_first();
 	}
-	while(  !button.empty()  ) {
+	while(  !button.is_empty()  ) {
 		delete button.remove_first();
 	}
 }
@@ -384,6 +384,7 @@ void settings_costs_stats_t::init(settings_t const* const sets)
 void settings_costs_stats_t::read(settings_t* const sets)
 {
 	READ_INIT
+	(void)booliter;
 	READ_NUM_VALUE( sets->maint_building );
 	READ_COST_VALUE( sets->cst_multiply_dock )*(-1);
 	READ_COST_VALUE( sets->cst_multiply_station )*(-1);
@@ -442,9 +443,12 @@ void settings_climates_stats_t::init(settings_t* const sets)
 	INIT_NUM_NEW( "minimum length of rivers", sets->get_min_river_length(), 0, max(16,sets->get_max_river_length())-16, gui_numberinput_t::AUTOLINEAR, false );
 	INIT_NUM_NEW( "maximum length of rivers", sets->get_max_river_length(), sets->get_min_river_length()+16, 8196, gui_numberinput_t::AUTOLINEAR, false );
 	// add listener to all of them
-	slist_iterator_tpl<gui_numberinput_t *>iter(numinp);
-	while(  iter.next()  ) {
-		iter.get_current()->add_listener( this );
+	slist_iterator_tpl <gui_numberinput_t*> iter (numinp);
+
+	while(iter.next())
+	{
+		gui_numberinput_t* const n = iter.get_current();
+		n->add_listener(this);
 	}
 	// the following are independent and thus need no listener
 	SEPERATOR
@@ -505,12 +509,18 @@ bool settings_climates_stats_t::action_triggered(gui_action_creator_t *komp, val
 {
 	welt_gui_t *welt_gui = dynamic_cast<welt_gui_t *>(win_get_magic( magic_welt_gui_t ));
 	read( local_sets );
-	slist_iterator_tpl<gui_numberinput_t *>iter(numinp);
-	for(  uint i=0;  iter.next();  i++  ) {
-		if(  iter.get_current()==komp  &&  i<3  &&  welt_gui  ) {
+	uint i = 0;
+	slist_iterator_tpl <gui_numberinput_t*> iter (numinp);
+
+	while(iter.next())
+	{
+		gui_numberinput_t* const n = iter.get_current();
+		if (n == komp && i < 3 && welt_gui) {
 			// update world preview
 			welt_gui->update_preview();
 		}
+		
+		i++;
 	}
 	return true;
 }

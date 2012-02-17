@@ -16,7 +16,6 @@
 #include "tpl/array_tpl.h"
 #include "besch/fabrik_besch.h"
 #include "halthandle_t.h"
-#include "simworld.h"
 #include "utils/plainstring.h"
 
 
@@ -517,7 +516,7 @@ public:
 	sint32 get_base_production() const { return prodbase; }
 	void set_base_production(sint32 p);
 
-	sint32 get_current_production() const { return ((sint64)prodbase * (sint64)(get_prodfactor()))>>(26l-(long)welt->ticks_per_world_month_shift); }
+	sint32 get_current_production() const;
 
 	/* prissi: returns the status of the current factory, as well as output */
 	enum { bad, medium, good, inactive, nothing };
@@ -546,7 +545,7 @@ public:
 	uint32 get_scaled_pax_demand() const { return scaled_pax_demand; }
 	uint32 get_scaled_mail_demand() const { return scaled_mail_demand; }
 
-	bool is_end_consumer() const { return (ausgang.empty() && !besch->is_electricity_producer()); }
+	bool is_end_consumer() const { return (ausgang.is_empty() && !besch->is_electricity_producer()); }
 
 	// Returns a list of goods produced by this factory.
 	slist_tpl<const freight_desc_t*> *get_produced_goods() const;

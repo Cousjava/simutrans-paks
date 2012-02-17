@@ -60,7 +60,7 @@ void route_t::append(const route_t *r)
 	const uint32 hops = r->get_count()-1;
 	route.resize(hops+1+route.get_count());
 
-	while (!route.empty() && back() == r->front()) {
+	while (!route.is_empty() && back() == r->front()) {
 		// skip identical end tiles
 		route.remove_at(get_count()-1);
 	}
@@ -249,7 +249,7 @@ bool route_t::find_route(karte_t *welt, const koord3d start, driver_t *fahr, con
 		// ok, now no more restrains
 		start_dir = ribi_t::alle;
 
-	} while(  !open.empty()  &&  step < MAX_STEP  &&  open.get_count() < max_depth  );
+	} while(  !open.is_empty()  &&  step < MAX_STEP  &&  open.get_count() < max_depth  );
 
 	INT_CHECK("route 194");
 
@@ -269,7 +269,7 @@ bool route_t::find_route(karte_t *welt, const koord3d start, driver_t *fahr, con
 //DBG_DEBUG("add","%i,%i",tmp->pos.x,tmp->pos.y);
 			tmp = tmp->parent;
 		}
-		ok = !route.empty();
+		ok = !route.is_empty();
   }
 
 	RELEASE_NODE();

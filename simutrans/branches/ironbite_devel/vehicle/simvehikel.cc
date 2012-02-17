@@ -634,9 +634,11 @@ void vehikel_t::rotate90()
 	pos_prev.rotate90( welt->get_groesse_y()-1 );
 	last_stop_pos.rotate90( welt->get_groesse_y()-1 );
 	// now rotate the freight
+
 	slist_iterator_tpl<freight_t> iter (fracht);
 	while(iter.next()) {
 		freight_t& tmp = iter.access_current();
+
 		koord k = tmp.get_zielpos();
 		k.rotate90( welt->get_groesse_y()-1 );
 		tmp.set_zielpos( k );
@@ -661,7 +663,7 @@ void vehikel_t::set_convoi(convoi_t *c)
 		// we need to reestablish the finish flag after loading
 		if(ist_erstes) {
 			route_t const& r = *cnv->get_route();
-			check_for_finish = r.empty() || route_index >= r.get_count() || get_pos() == r.position_bei(route_index);
+			check_for_finish = r.is_empty() || route_index >= r.get_count() || get_pos() == r.position_bei(route_index);
 		}
 		// some convois were saved with broken coordinates
 		if(  !welt->lookup(pos_prev)  ) {
@@ -677,7 +679,7 @@ void vehikel_t::set_convoi(convoi_t *c)
 		}
 		if(  pos_next != koord3d::invalid  ) {
 			route_t const& r = *cnv->get_route();
-			if (!r.empty() && route_index < r.get_count() - 1) {
+			if (!r.is_empty() && route_index < r.get_count() - 1) {
 				grund_t const* const gr = welt->lookup(pos_next);
 				if (!gr || !gr->get_weg(get_waytype())) {
 					if (!(water_wt == get_waytype()  &&  gr->ist_wasser())) { // ships on the open sea are valid
@@ -687,6 +689,7 @@ void vehikel_t::set_convoi(convoi_t *c)
 			}
 		}
 		// just correct freight deistinations
+
 		slist_iterator_tpl <freight_t> iter (fracht);
 		while(iter.next()) {
 			iter.access_current().laden_abschliessen(welt,get_besitzer());
@@ -705,10 +708,14 @@ uint16 vehikel_t::unload_freight(halthandle_t halt)
 	uint16 sum_menge = 0;
 
 	if(halt->is_enabled( get_fracht_typ() )) {
-		if (!fracht.empty()) {
+		if (!fracht.is_empty()) {
 
-			for(  slist_tpl<freight_t>::iterator i = fracht.begin(), end = fracht.end();  i != end;  ) {
-				const freight_t& tmp = *i;
+			// for(  slist_tpl<freight_t>::iterator i = fracht.begin(), end = fracht.end();  i != end;  ) {for(  slist_tpl<freight_t>::iterator i = fracht.begin(), end = fracht.end();  i != end;  ) {
+			slist_iterator_tpl <freight_t> iter (fracht);
+			
+			while(iter.next())
+			{
+				const freight_t & tmp = iter.get_current();
 
 				halthandle_t end_halt = tmp.get_ziel();
 				halthandle_t via_halt = tmp.get_zwischenziel();
@@ -719,7 +726,7 @@ uint16 vehikel_t::unload_freight(halthandle_t halt)
 				if(!end_halt.is_bound() || !via_halt.is_bound()) {
 					DBG_MESSAGE("vehikel_t::unload_freight()", "destination of %d %s is no longer reachable",tmp.menge,translator::translate(tmp.get_name()));
 					total_freight -= tmp.menge;
-					i = fracht.erase( i );
+					fracht.remove(tmp);
 				}
 				else if(end_halt==halt || via_halt==halt) {
 
@@ -742,10 +749,7 @@ uint16 vehikel_t::unload_freight(halthandle_t halt)
 						get_besitzer()->buche( menge, (player_cost)(COST_TRANSPORTED_PAS+categorie) );
 					}
 
-					i = fracht.erase( i );
-				}
-				else {
-					++i;
+					fracht.remove(tmp);
 				}
 			}
 		}
@@ -771,18 +775,23 @@ bool vehikel_t::load_freight(halthandle_t halt)
 		slist_tpl<freight_t> zuladung;
 		halt->hole_ab(zuladung, besch->get_ware(), hinein, fpl, cnv->get_besitzer() );
 
-		if(zuladung.empty()) {
+		if(zuladung.is_empty()) {
 			// now empty, but usually, we can get it here ...
 			return ok;
 		}
 
-		for(slist_tpl<freight_t>::iterator iter_z=zuladung.begin(); !iter_z.end(); ) {
-			freight_t &ware = *iter_z;
+
+		// for(slist_tpl<freight_t>::iterator iter_z=zuladung.begin(); !iter_z.end(); ) {
+		slist_iterator_tpl <freight_t> iter(zuladung);
+		while(iter.next())
+		{
+			freight_t & ware = iter.access_current();
 
 			total_freight += ware.menge;
 
 			slist_iterator_tpl<freight_t> iter (fracht);
 			// could this be joined with existing freight?
+
 			while(iter.next()) {
 				freight_t &tmp = iter.access_current();
 
@@ -796,16 +805,13 @@ bool vehikel_t::load_freight(halthandle_t halt)
 			}
 
 			// if != 0 we could not join it to existing => load it
-			if(ware.menge != 0) {
-				++iter_z;
-				// we add list directly
-			}
-			else {
-				iter_z = zuladung.erase(iter_z);
+			if(ware.menge == 0) {
+				zuladung.remove(ware);
 			}
 		}
 
-		if(!zuladung.empty()) {
+		if(!zuladung.is_empty()) 
+		{
 			fracht.append_list(zuladung);
 		}
 
@@ -830,7 +836,8 @@ void vehikel_t::remove_stale_freight()
 	slist_tpl<freight_t> kill_queue;
 	total_freight = 0;
 
-	if (!fracht.empty()) {
+	if (!fracht.is_empty()) {
+
 		slist_iterator_tpl<freight_t> iter (fracht);
 		while(iter.next()) {
 			schedule_t *fpl = cnv->get_schedule();
@@ -840,6 +847,7 @@ void vehikel_t::remove_stale_freight()
 
 			for (int i = 0; i < fpl->get_count(); i++) {
 				if (haltestelle_t::get_halt( welt, fpl->eintrag.get(i).pos, cnv->get_besitzer() ) == tmp.get_zwischenziel()) {
+
 					found = true;
 					break;
 				}
@@ -1000,7 +1008,7 @@ bool vehikel_t::hop_check()
 
 		// now check, if we can go here
 		const grund_t *bd = welt->lookup(pos_next);
-		if(bd==NULL  ||  !ist_befahrbar(bd)  ||  cnv->get_route()->empty()) {
+		if(bd==NULL  ||  !ist_befahrbar(bd)  ||  cnv->get_route()->is_empty()) {
 			// weg not existent (likely destroyed) or no route ...
 			cnv->suche_neue_route();
 			return false;
@@ -1199,7 +1207,7 @@ void vehikel_t::rauche() const
 sint64 vehikel_t::calc_gewinn(koord start, koord end) const
 {
 	// may happen when waiting in station
-	if (start == end || fracht.empty()) {
+	if (start == end || fracht.is_empty()) {
 		return 0;
 	}
 
@@ -1211,10 +1219,12 @@ sint64 vehikel_t::calc_gewinn(koord start, koord end) const
 	const sint32 kmh_base = (100 * cnv_kmh) / ref_kmh - 100;
 
 	sint64 value = 0;
+
 	slist_iterator_tpl <freight_t> iter (fracht);
 
 	if (welt->get_settings().get_pay_for_total_distance_mode() == settings_t::TO_DESTINATION) {
 		// pay only the distance, we get closer to our destination
+
 		while( iter.next() ) {
 
 			const freight_t & ware = iter.get_current();
@@ -1237,6 +1247,7 @@ sint64 vehikel_t::calc_gewinn(koord start, koord end) const
 		}
 	} else if (welt->get_settings().get_pay_for_total_distance_mode() == settings_t::TO_TRANSFER) {
 		// pay distance traveled to next trasnfer stop
+
 		while( iter.next() ) {
 
 			const freight_t & ware = iter.get_current();
@@ -1261,6 +1272,7 @@ sint64 vehikel_t::calc_gewinn(koord start, koord end) const
 	else {
 		// pay distance traveled
 		const long dist = koord_distance( start, end );
+
 		while( iter.next() ) {
 
 			const freight_t & ware = iter.get_current();
@@ -1317,12 +1329,13 @@ const char *vehikel_t::get_fracht_name() const
 
 void vehikel_t::get_fracht_info(cbuffer_t & buf) const
 {
-	if (fracht.empty()) {
+	if (fracht.is_empty()) {
 		buf.append("  ");
 		buf.append(translator::translate("leer"));
 		buf.append("\n");
 	} else {
 
+		
 		slist_iterator_tpl<freight_t> iter (fracht);
 
 		while(iter.next()) {
@@ -1391,7 +1404,7 @@ ribi_t::ribi vehikel_t::richtung() const
 void vehikel_t::calc_bild()
 {
 	image_id old_bild=get_bild();
-	if (fracht.empty()) {
+	if (fracht.is_empty()) {
 		set_bild(besch->get_bild_nr(ribi_t::get_dir(get_fahrtrichtung()),NULL));
 	}
 	else {
@@ -1550,7 +1563,7 @@ DBG_MESSAGE("vehicle_t::rdwr_from_convoi()","bought at %i/%i.",(insta_zeit%12)+1
 	}
 
 	if(file->is_saving()) {
-		if (fracht.empty()  &&  fracht_count>0) {
+		if (fracht.is_empty()  &&  fracht_count>0) {
 			// create dummy freight for savegame compatibility
 			freight_t ware( besch->get_ware() );
 			ware.menge = 0;
@@ -1560,6 +1573,7 @@ DBG_MESSAGE("vehicle_t::rdwr_from_convoi()","bought at %i/%i.",(insta_zeit%12)+1
 			ware.rdwr(welt,file);
 		}
 		else {
+
 			slist_iterator_tpl<freight_t> iter(fracht);
 			while(iter.next()) {
 				freight_t ware = iter.get_current();
@@ -1600,6 +1614,7 @@ DBG_MESSAGE("vehicle_t::rdwr_from_convoi()","bought at %i/%i.",(insta_zeit%12)+1
 		}
 		// recalc total freight
 		total_freight = 0;
+
 		slist_iterator_tpl<freight_t> iter(fracht);
 		while(iter.next()) {
 			total_freight += iter.get_current().menge;
@@ -1782,15 +1797,15 @@ automobil_t::automobil_t(karte_t *welt, loadsave_t *file, bool is_first, bool is
 		}
 		// try to find a matching vehivle
 		if(besch==NULL) {
-			const freight_desc_t* w = (!fracht.empty() ? fracht.front().get_besch() : freight_builder_t::passagiere);
+			const freight_desc_t* w = (!fracht.is_empty() ? fracht.front().get_besch() : freight_builder_t::passagiere);
 			dbg->warning("automobil_t::automobil_t()","try to find a fitting vehicle for %s.",  w->get_name() );
-			besch = vehikelbauer_t::get_best_matching(road_wt, 0, (fracht.empty() ? 0 : 50), is_first?50:0, speed_to_kmh(speed_limit), w, true, last_besch, is_last );
+			besch = vehikelbauer_t::get_best_matching(road_wt, 0, (fracht.is_empty() ? 0 : 50), is_first?50:0, speed_to_kmh(speed_limit), w, true, last_besch, is_last );
 			if(besch) {
 				DBG_MESSAGE("automobil_t::automobil_t()","replaced by %s",besch->get_name());
 				// still wrong load ...
 				calc_bild();
 			}
-			if(!fracht.empty()  &&  fracht.front().menge == 0) {
+			if(!fracht.is_empty()  &&  fracht.front().menge == 0) {
 				// this was only there to find a matching vehicle
 				fracht.remove_first();
 			}
@@ -2264,7 +2279,7 @@ void automobil_t::set_convoi(convoi_t *c)
 	if(c!=NULL) {
 		bool target=(bool)cnv;	// only during loadtype: cnv==1 indicates, that the convoi did reserve a stop
 		vehikel_t::set_convoi(c);
-		if(target  &&  ist_erstes  &&  c->get_route()->empty()) {
+		if(target  &&  ist_erstes  &&  c->get_route()->is_empty()) {
 			// reintitialize the target halt
 			const route_t *rt = cnv->get_route();
 			target_halt = haltestelle_t::get_halt( welt, rt->back(), get_besitzer() );
@@ -2301,8 +2316,8 @@ waggon_t::waggon_t(karte_t *welt, loadsave_t *file, bool is_first, bool is_last)
 		}
 		// try to find a matching vehivle
 		if(besch==NULL) {
-			int power = (is_first || fracht.empty() || fracht.front() == freight_builder_t::nichts) ? 500 : 0;
-			const freight_desc_t* w = fracht.empty() ? freight_builder_t::nichts : fracht.front().get_besch();
+			int power = (is_first || fracht.is_empty() || fracht.front() == freight_builder_t::nichts) ? 500 : 0;
+			const freight_desc_t* w = fracht.is_empty() ? freight_builder_t::nichts : fracht.front().get_besch();
 			dbg->warning("waggon_t::waggon_t()","try to find a fitting vehicle for %s.", power>0 ? "engine": w->get_name() );
 			if(last_besch!=NULL  &&  last_besch->can_follow(last_besch)  &&  last_besch->get_ware()==w  &&  (!is_last  ||  last_besch->get_nachfolger(0)==NULL)) {
 				// same as previously ...
@@ -2319,7 +2334,7 @@ DBG_MESSAGE("waggon_t::waggon_t()","replaced by %s",besch->get_name());
 			else {
 				dbg->error("waggon_t::waggon_t()","no matching besch found for %s!",w->get_name());
 			}
-			if (!fracht.empty() && fracht.front().menge == 0) {
+			if (!fracht.is_empty() && fracht.front().menge == 0) {
 				// this was only there to find a matchin vehicle
 				fracht.remove_first();
 			}
@@ -2343,7 +2358,7 @@ waggon_t::~waggon_t()
 {
 	if (cnv && ist_erstes) {
 		route_t const& r = *cnv->get_route();
-		if (!r.empty() && route_index < r.get_count()) {
+		if (!r.is_empty() && route_index < r.get_count()) {
 			// free all reserved blocks
 			uint16 dummy;
 			block_reserver(&r, cnv->back()->get_route_index(), dummy, dummy, target_halt.is_bound() ? 100000 : 1, false, false);
@@ -2367,7 +2382,7 @@ void waggon_t::set_convoi(convoi_t *c)
 			if(cnv!=NULL  &&  cnv!=(convoi_t *)1) {
 				// free route from old convoi
 				route_t const& r = *cnv->get_route();
-				if(  !r.empty()  &&  route_index + 1U < r.get_count() - 1  ) {
+				if(  !r.is_empty()  &&  route_index + 1U < r.get_count() - 1  ) {
 					uint16 dummy;
 					block_reserver(&r, cnv->back()->get_route_index(), dummy, dummy, 100000, false, false);
 					target_halt = halthandle_t();
@@ -2377,7 +2392,7 @@ void waggon_t::set_convoi(convoi_t *c)
 				assert(c!=NULL);
 				// eventually search new route
 				route_t const& r = *c->get_route();
-				if(  (r.get_count()<=route_index  ||  r.empty()  ||  get_pos()==r.back())  &&  c->get_state()!=convoi_t::INITIAL  &&  c->get_state()!=convoi_t::LOADING  &&  c->get_state()!=convoi_t::SELF_DESTRUCT  ) {
+				if(  (r.get_count()<=route_index  ||  r.is_empty()  ||  get_pos()==r.back())  &&  c->get_state()!=convoi_t::INITIAL  &&  c->get_state()!=convoi_t::LOADING  &&  c->get_state()!=convoi_t::SELF_DESTRUCT  ) {
 					check_for_finish = true;
 					dbg->warning("waggon_t::set_convoi()", "convoi %i had a too high route index! (%i of max %i)", c->self.get_id(), route_index, r.get_count() - 1);
 				}
@@ -2999,10 +3014,12 @@ bool waggon_t::block_reserver(const route_t *route, uint16 start_index, uint16 &
 	}
 
 	// ok, switch everything green ...
-	slist_iterator_tpl<grund_t *> iter(signs);
-	while(iter.next()) {
-		signal_t* signal = iter.get_current()->find<signal_t>();
-		if(signal) {
+	slist_iterator_tpl <grund_t*> iter (signs);
+
+	while(iter.next())
+	{
+		grund_t* const g = iter.get_current();
+		if (signal_t* const signal = g->find<signal_t>()) {
 			signal->set_zustand(roadsign_t::gruen);
 		}
 	}
@@ -3095,8 +3112,10 @@ schiff_t::schiff_t(karte_t *welt, loadsave_t *file, bool is_first, bool is_last)
 		}
 		// try to find a matching vehivle
 		if(besch==NULL) {
-			dbg->warning("schiff_t::schiff_t()", "try to find a fitting vehicle for %s.", !fracht.empty() ? fracht.front().get_name() : "passagiere");
-			besch = vehikelbauer_t::get_best_matching(water_wt, 0, fracht.empty() ? 0 : 30, 100, 40, !fracht.empty() ? fracht.front().get_besch() : freight_builder_t::passagiere, true, last_besch, is_last );
+			dbg->warning("schiff_t::schiff_t()", "try to find a fitting vehicle for %s.", !fracht.is_empty() ? fracht.front().get_name() : "passagiere");
+
+			besch = vehikelbauer_t::get_best_matching(water_wt, 0, fracht.is_empty() ? 0 : 30, 100, 40, !fracht.is_empty() ? fracht.front().get_besch() : freight_builder_t::passagiere, true, last_besch, is_last );
+
 			if(besch) {
 				calc_bild();
 			}
@@ -3395,7 +3414,7 @@ bool aircraft_t::block_reserver( uint32 start, uint32 end, bool reserve ) const
 	uint32 i;
 
 	const route_t *route = cnv->get_route();
-	if(route->empty()) {
+	if(route->is_empty()) {
 		return false;
 	}
 
@@ -3613,8 +3632,8 @@ aircraft_t::aircraft_t(karte_t *welt, loadsave_t *file, bool is_first, bool is_l
 		}
 		// try to find a matching vehivle
 		if(besch==NULL) {
-			dbg->warning("aircraft_t::aircraft_t()", "try to find a fitting vehicle for %s.", !fracht.empty() ? fracht.front().get_name() : "passagiere");
-			besch = vehikelbauer_t::get_best_matching(air_wt, 0, 101, 1000, 800, !fracht.empty() ? fracht.front().get_besch() : freight_builder_t::passagiere, true, last_besch, is_last );
+			dbg->warning("aircraft_t::aircraft_t()", "try to find a fitting vehicle for %s.", !fracht.is_empty() ? fracht.front().get_name() : "passagiere");
+			besch = vehikelbauer_t::get_best_matching(air_wt, 0, 101, 1000, 800, !fracht.is_empty() ? fracht.front().get_besch() : freight_builder_t::passagiere, true, last_besch, is_last );
 			if(besch) {
 				calc_bild();
 			}
@@ -3657,7 +3676,7 @@ void aircraft_t::set_convoi(convoi_t *c)
 			target_halt->unreserve_position(welt->lookup(r.back()), cnv->self);
 			target_halt = halthandle_t();
 		}
-		if (!r.empty()) {
+		if (!r.is_empty()) {
 			// free runway reservation
 			if(route_index>=takeoff  &&  route_index<touchdown-4  &&  state!=flying) {
 				block_reserver( takeoff, takeoff+100, false );

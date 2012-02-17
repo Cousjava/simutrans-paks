@@ -45,8 +45,10 @@ karte_t *fahrplan_gui_t::welt = NULL;
 void fahrplan_gui_stats_t::highlight_schedule( schedule_t *markfpl, bool marking )
 {
 	marking &= umgebung_t::visualize_schedule;
+
 	for(  int i=0;  i<markfpl->get_count();  i++  ) {
 		if(  grund_t *gr = welt->lookup(markfpl->eintrag.get(i).pos)  ) {
+
 			for(  uint idx=0;  idx<gr->get_top();  idx++  ) {
 				ding_t *d = gr->obj_bei(idx);
 				if(  marking  ) {
@@ -419,7 +421,7 @@ void fahrplan_gui_t::update_selection()
 	// update load
 	lb_load.set_color( COL_GREY3 );
 	lb_wait.set_color( COL_GREY3 );
-	if (!fpl->empty()) {
+	if (!fpl->is_empty()) {
 		fpl->set_aktuell( min(fpl->get_count()-1,fpl->get_aktuell()) );
 		const uint8 aktuell = fpl->get_aktuell();
 		if(  haltestelle_t::get_halt(sp->get_welt(), fpl->eintrag.get(aktuell).pos, sp).is_bound()  ) {
@@ -545,13 +547,13 @@ DBG_MESSAGE("fahrplan_gui_t::action_triggered()","komp=%p combo=%p",komp,&line_s
 		update_werkzeug( false );
 	}
 	else if(komp == &numimp_load) {
-		if (!fpl->empty()) {
+		if (!fpl->is_empty()) {
 			fpl->eintrag.at(fpl->get_aktuell()).ladegrad = (uint8)p.i;
 			update_selection();
 		}
 	}
 	else if(komp == &bt_wait_prev) {
-		if (!fpl->empty()) {
+		if (!fpl->is_empty()) {
 			sint8& wait = fpl->eintrag.at(fpl->get_aktuell()).waiting_time_shift;
 			if(wait>7) {
 				wait --;
@@ -566,7 +568,7 @@ DBG_MESSAGE("fahrplan_gui_t::action_triggered()","komp=%p combo=%p",komp,&line_s
 		}
 	}
 	else if(komp == &bt_wait_next) {
-		if (!fpl->empty()) {
+		if (!fpl->is_empty()) {
 			sint8& wait = fpl->eintrag.at(fpl->get_aktuell()).waiting_time_shift;
 			if(wait==0) {
 				wait = 7;
@@ -644,8 +646,11 @@ void fahrplan_gui_t::init_line_selector()
 		}
 	}
 
-	for (vector_tpl<linehandle_t>::const_iterator i = lines.begin(), end = lines.end(); i != end; i++) {
-		linehandle_t line = *i;
+	vector_iterator_tpl <linehandle_t> iter (lines);
+
+	while(iter.next())
+	{
+		linehandle_t const line = iter.get_current();
 		line_selector.append_element( new line_scrollitem_t(line) );
 		if(  !new_line.is_bound()  ) {
 			if(  fpl->matches( sp->get_welt(), line->get_schedule() )  ) {
@@ -765,10 +770,16 @@ void fahrplan_gui_t::rdwr(loadsave_t *file)
 		}
 		if(  !cnv.is_bound() ) {
 			// not found (most likely convoi in depot ... )
-			for (vector_tpl<convoihandle_t>::const_iterator i = welt->convoys().begin(), end = welt->convoys().end(); i != end; ++i) {
-				if(  (*i)->get_besitzer()->get_player_nr()==player_nr  &&  strncmp( (*i)->get_name(), cnv_name, 256 )==0  &&  old_fpl->matches( welt, (*i)->get_schedule() )  ) {
+			vector_iterator_tpl <convoihandle_t> iter (welt->convoys());
+
+	while(iter.next())
+	{
+		convoihandle_t const i = iter.get_current();
+				if (i->get_besitzer()->get_player_nr()    == player_nr &&
+						strncmp(i->get_name(), cnv_name, 256) == 0         &&
+						old_fpl->matches(welt, i->get_schedule())) {
 					// valid convoi found
-					cnv = *i;
+					cnv = i;
 					break;
 				}
 			}

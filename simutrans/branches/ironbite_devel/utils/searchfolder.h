@@ -22,12 +22,7 @@ public:
 
 	static std::string complete(const std::string &filepath, const std::string &extension);
 
-	typedef vector_tpl<char*>::const_iterator const_iterator;
-	const_iterator begin() const { return files.begin(); }
-	const_iterator end()   const { return files.end();   }
-
-	private:
-		vector_tpl<char*> files; // NEVER EVER USE ctring_T here!!!
+	vector_tpl<char*> files; // NEVER EVER USE ctring_T here!!!
 };
 
 #endif

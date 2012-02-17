@@ -85,20 +85,6 @@ private:
 	 */
 	gui_frame_t *filter_frame;
 
-	/*
-	 * All filter settings are static, so they are not reset each
-	 * time the window closes.
-	 */
-	static sort_mode_t sortby;
-	static bool sortreverse;
-
-	static uint32 filter_flags;
-
-	static char name_filter_value[64];
-
-	static slist_tpl<const freight_desc_t *> waren_filter;
-
-	static bool compare_convois(convoihandle_t, convoihandle_t);
 
 	/**
 	 * Check all filters for one convoi.
@@ -151,18 +137,19 @@ public:
 	 */
 	const char * get_help_file() const {return "convoi.txt"; }
 
-	static sort_mode_t get_sortierung() { return sortby; }
-	static void set_sortierung(sort_mode_t sm) { sortby = sm; }
+	static sort_mode_t get_sortierung();
+	static void set_sortierung(sort_mode_t sm);
 
-	static bool get_reverse() { return sortreverse; }
-	static void set_reverse(bool reverse) { sortreverse = reverse; }
+	static bool get_reverse();
+	static void set_reverse(bool reverse);
 
-	static bool get_filter(filter_flag_t filter) { return (filter_flags & filter) != 0; }
-	static void set_filter(filter_flag_t filter, bool on) { filter_flags = on ? (filter_flags | filter) : (filter_flags & ~filter); }
+	static bool get_filter(filter_flag_t filter);
+	static void set_filter(filter_flag_t filter, bool on);
 
-	static char *access_name_filter() { return name_filter_value; }
+	static char * access_name_filter();
 
-	static bool get_ware_filter(const freight_desc_t *ware) { return waren_filter.is_contained(ware); }
+	static bool get_ware_filter(const freight_desc_t *ware);
+	
 	// mode: 0=off, 1=on, -1=toggle
 	static void set_ware_filter(const freight_desc_t *ware, int mode);
 	static void set_alle_ware_filter(int mode);

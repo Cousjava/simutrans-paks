@@ -49,9 +49,14 @@ bool message_stats_t::filter_messages(const sint32 msg_type)
 			// case : filter messages belonging to the specified type
 			message_list = &filtered_messages;
 			filtered_messages.clear();
-			for(  slist_tpl<message_t::node *>::const_iterator iter=msg->get_list()->begin(), end=msg->get_list()->end();  iter!=end;  ++iter  ) {
-				if(  (*iter)->get_type_shifted() & message_type  ) {
-					filtered_messages.append( *iter );
+
+			slist_iterator_tpl <message_t::node *> iter (msg->get_list());
+			while(iter.next())
+			{
+				message_t::node * node = iter.get_current();
+				if(node->get_type_shifted() & message_type) 
+				{
+					filtered_messages.append( node );
 				}
 			}
 			recalc_size();
@@ -114,8 +119,12 @@ void message_stats_t::recalc_size()
 
 	// loop copied from ::zeichnen(), trimmed to minimum for x_size calculation
 
-	for(  slist_tpl<message_t::node *>::const_iterator iter=message_list->begin(), end=message_list->end();  iter!=end;  ++iter, y_size+=(LINESPACE+1)  ) {
-		const message_t::node &n = *(*iter);
+	slist_iterator_tpl <message_t::node*> iter (*message_list);
+
+	while(iter.next())
+	{
+		message_t::node* const i = iter.get_current();
+		message_t::node const& n = *i;
 
 		// add time
 		char time[64];
@@ -156,6 +165,8 @@ void message_stats_t::recalc_size()
 		if(  left>x_size  ) {
 			x_size = left;
 		}
+		
+		y_size += LINESPACE + 1;
 	}
 
 	set_groesse(koord(x_size+4,y_size));
@@ -181,13 +192,18 @@ void message_stats_t::zeichnen(koord offset)
 			uint32 entry_count = new_count - last_count;
 			// Knightly : for ensuring correct chronological order of the new messages
 			slist_tpl<message_t::node *> temp_list;
-			for(  slist_tpl<message_t::node *>::const_iterator iter=msg->get_list()->begin(), end=msg->get_list()->end();  iter!=end  &&  entry_count>0;  ++iter, --entry_count  ) {
-				if(  (*iter)->get_type_shifted() & message_type  ) {
-					temp_list.insert(*iter);
+
+			slist_iterator_tpl <message_t::node *> iter (msg->get_list());
+			while(iter.next())
+			{
+				message_t::node * node = iter.get_current();
+				if(node->get_type_shifted() & message_type)
+				{
+					temp_list.insert(node);
 				}
 			}
 			// insert new messages to old messages
-			while (!temp_list.empty()) {
+			while (!temp_list.is_empty()) {
 				filtered_messages.insert( temp_list.remove_first() );
 			}
 			last_count = new_count;
@@ -199,8 +215,11 @@ void message_stats_t::zeichnen(koord offset)
 	sint16 y = offset.y+2;
 
 	// changes to loop affecting x_size must be copied to ::recalc_size()
-	for(  slist_tpl<message_t::node *>::const_iterator iter=message_list->begin(), end=message_list->end();  iter!=end;  ++iter, y+=(LINESPACE+1)  ) {
+	slist_iterator_tpl <message_t::node*> iter (*message_list);
 
+	while(iter.next())
+	{
+		message_t::node* const i = iter.get_current();
 		if(  y<cd.y  ) {
 			// below the top
 			continue;
@@ -208,7 +227,7 @@ void message_stats_t::zeichnen(koord offset)
 		if(  y>cd.yy  ) {
 			break;
 		}
-		const message_t::node &n = *(*iter);
+		message_t::node const n = *i;
 
 		// goto information
 		if(  n.pos!=koord::invalid  ) {
@@ -255,5 +274,6 @@ void message_stats_t::zeichnen(koord offset)
 			}
 		}
 		display_proportional_clip(offset.x+left, y, buf, ALIGN_LEFT, colorval, true);
+		y += LINESPACE + 1;
 	}
 }

@@ -37,7 +37,7 @@ public:
 
 	virtual bool has_title() const { return false; }
 
-	bool has_pak() const { return !entries.empty(); }
+	bool has_pak() const;
 
 	const char * get_help_file() const { return ""; }
 

@@ -91,7 +91,7 @@ loadsave_frame_t::loadsave_frame_t(karte_t *welt, bool do_load) : savegame_frame
 	}
 
 	// load cached entries
-	if (cached_info.empty()) {
+	if (cached_info.is_empty()) {
 		loadsave_t file;
 		const char *cache_file = SAVE_PATH_X "_cached.xml";
 		if (file.rd_open(cache_file)) {
@@ -197,14 +197,18 @@ loadsave_frame_t::~loadsave_frame_t()
 	file.wr_open(cache_file, loadsave_t::xml, "cache", SAVEGAME_VER_NR);
 	const char *text="Automatically generated file. Do not edit. An invalid file may crash the game. Deleting is allowed though.";
 	file.rdwr_str(text);
-	stringhashtable_iterator_tpl<sve_info_t *> iterator(cached_info);
-	while(  iterator.next()  ) {
+	stringhashtable_iterator_tpl <sve_info_t*> iter (cached_info);
+
+	while(iter.next())
+	{
+		sve_info_t* const i = iter.get_current();
 		// save only existing files
-		if (iterator.get_current_value()->file_exists) {
+		if (i->file_exists) 
+		{
 			xml_tag_t t(&file, "save_game_info");
-			const char *filename = iterator.get_current_key();
+			char const* filename = iter.get_current_key();
 			file.rdwr_str(filename);
-			iterator.access_current_value()->rdwr(&file);
+			i->rdwr(&file);
 		}
 	}
 	// mark end with empty entry

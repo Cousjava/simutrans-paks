@@ -12,8 +12,6 @@
 #include "../simtypes.h"
 #include "../besch/roadsign_besch.h"
 #include "../ifc/sync_steppable.h"
-#include "../tpl/vector_tpl.h"
-#include "../tpl/stringhashtable_tpl.h"
 
 class werkzeug_waehler_t;
 
@@ -136,9 +134,6 @@ public:
 	void laden_abschliessen();
 
 	// static routines from here
-private:
-	static vector_tpl<const roadsign_besch_t *> liste;
-	static stringhashtable_tpl<const roadsign_besch_t *> table;
 
 protected:
 	static const roadsign_besch_t *default_signal;
@@ -155,7 +150,7 @@ public:
 
 	static const roadsign_besch_t *roadsign_search(roadsign_besch_t::types flag, const waytype_t wt, const uint16 time);
 
-	static const roadsign_besch_t *find_besch(const char *name) { return table.get(name); }
+	static const roadsign_besch_t *find_besch(const char *name);
 };
 
 #endif

@@ -410,7 +410,10 @@ template<class T> class weighted_vector_tpl
 		/** Gets the total weight */
 		unsigned long get_sum_weight() const { return total_weight; }
 
-		bool empty() const { return count == 0; }
+		bool is_empty() const 
+		{
+			return count == 0; 
+		}
 
 		iterator begin() { return iterator(nodes); }
 		iterator end()   { return iterator(nodes + count); }
@@ -439,5 +442,75 @@ template<class T> void swap(weighted_vector_tpl<T>& a, weighted_vector_tpl<T>& b
 	sim::swap(a.count, b.count);
 	sim::swap(a.total_weight, b.total_weight);
 }
+
+/**
+ * Iterator class for vectors.
+ * Iterators may be invalid after any changing operation on the vector!
+ *
+ * This iterator can modify nodes, but not the list
+ * Usage:
+ *
+ * vector_iterator_tpl<T> iter(some_vector);
+ * while (iter.next()) {
+ * 	T& current = iter.access_current();
+ * }
+ *
+ * @author Hj. Malthaner
+ */
+template<class T> class weighted_vector_iterator_tpl
+{
+private:
+	const weighted_vector_tpl<T> * const vec;
+	int idx;
+
+public:
+	
+	weighted_vector_iterator_tpl(const weighted_vector_tpl<T> * vector) : vec (vector)
+	{
+		idx = -1;
+	}
+
+	weighted_vector_iterator_tpl(const weighted_vector_tpl<T> & vector) : vec (&vector)
+	{
+		idx = -1;
+	}
+
+	weighted_vector_iterator_tpl<T> &operator = (const weighted_vector_iterator_tpl<T> &iter)
+	{
+		idx = iter.idx;
+		return *this;
+	}
+
+	/**
+	 * iterate next element
+	 * @return false, if no more elements
+	 * @author Hj. Malthaner
+	 */
+	bool next()
+	{
+		idx++;
+		return ((uint32)idx < vec->get_count());
+	}
+
+	
+	/**
+	 * @return the current element (as const reference)
+	 * @author Hj. Malthaner
+	 */
+	const T & get_current() const
+	{
+		return vec->get((uint32)idx);
+	}
+
+
+	/**
+	 * @return the current element (as reference)
+	 * @author Hj. Malthaner
+	 */
+	T & access_current()
+	{
+		return vec->at((uint32)idx);
+	}
+};
 
 #endif

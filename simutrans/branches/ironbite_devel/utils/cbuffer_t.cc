@@ -1,3 +1,10 @@
+/*
+ * A character buffer. Main operation is 'append'.
+ *
+ * author: Hj. Malthaner
+ */
+
+
 #include <assert.h>
 #include <stdarg.h>
 #include <stdio.h>
@@ -9,11 +16,23 @@
 
 
 cbuffer_t::cbuffer_t() :
-	capacity(256),
+	capacity(128),
 	size(0),
 	buf(new char[capacity])
 {
 	buf[0] = '\0';
+}
+
+/**
+ * Creates a new cbuffer with content string
+ */
+cbuffer_t::cbuffer_t(const char * string) :
+	capacity(max(128, strlen(string))),
+	size(0),
+	buf(new char[capacity])
+{
+	buf[0] = '\0';
+	append(string);
 }
 
 

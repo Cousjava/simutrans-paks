@@ -32,14 +32,15 @@
 #include "obj_reader.h"
 
 
-inthashtable_tpl<obj_type, stringhashtable_tpl<obj_besch_t *> > obj_reader_t::loaded;
-inthashtable_tpl<obj_type, stringhashtable_tpl< slist_tpl<obj_besch_t **> > > obj_reader_t::unresolved;
-ptrhashtable_tpl<obj_besch_t **, int> obj_reader_t::fatals;
+obj_reader_t::obj_map *                                        obj_reader_t::obj_reader;
+inthashtable_tpl<obj_type, stringhashtable_tpl<obj_besch_t*> > obj_reader_t::loaded;
+obj_reader_t::unresolved_map                                   obj_reader_t::unresolved;
+ptrhashtable_tpl<obj_besch_t**, int>                           obj_reader_t::fatals;
 
 void obj_reader_t::register_reader()
 {
 	if(!obj_reader) {
-		obj_reader =  new inthashtable_tpl<obj_type, obj_reader_t *>;
+		obj_reader = new obj_map;
 	}
 	obj_reader->put(get_type(), this);
 	//printf("This program can read %s objects\n", get_type_name());
@@ -65,12 +66,16 @@ bool obj_reader_t::laden_abschliessen()
 {
 	resolve_xrefs();
 
+	// FOR(obj_map, const& i, *obj_reader) 
 	inthashtable_iterator_tpl<obj_type, obj_reader_t *> iter(obj_reader);
 
-	while(iter.next()) {
-DBG_MESSAGE("obj_reader_t::laden_abschliessen()","Checking %s objects...",iter.get_current_value()->get_type_name());
+	while(iter.next())
+	{
+		DBG_MESSAGE("obj_reader_t::laden_abschliessen()",
+		            "Checking %s objects...", iter.get_current()->get_type_name());
 
-		if(!iter.get_current_value()->successfully_loaded()) {
+		if(!iter.get_current()->successfully_loaded()) 
+		{
 			dbg->warning("obj_reader_t::laden_abschliessen()","... failed!");
 			return false;
 		}
@@ -113,8 +118,11 @@ bool obj_reader_t::load(const char *liste, const char *message)
 				}
 
 				find.search(buf, "pak");
-				for (searchfolder_t::const_iterator i = find.begin(), end = find.end(); i != end; ++i) {
-					read_file(*i);
+				// FOR(searchfolder_t, const& i, find) {
+				// for (searchfolder_t::const_iterator i = find.begin(), end = find.end(); i != end; ++i) 
+				for(unsigned int i=0; i<find.files.get_count(); i++)
+				{
+					read_file(find.files.get(i));
 				}
 			}
 			fclose(listfp);
@@ -172,8 +180,11 @@ DBG_MESSAGE("obj_reader_t::load()","big logo %p", skinverwaltung_t::biglogosymbo
 
 DBG_MESSAGE("obj_reader_t::load()", "reading from '%s'", name.c_str());
 		uint n = 0;
-		for (searchfolder_t::const_iterator i = find.begin(), end = find.end(); i != end; ++i, n++) {
-			read_file(*i);
+		// for (searchfolder_t::const_iterator i = find.begin(), end = find.end(); i != end; ++i, n++) {
+		for(unsigned int i=0; i<find.files.get_count(); i++)
+		{
+			read_file(find.files.get(i));
+			
 			if ((n & teilung) == 0 && drawing) {
 				display_progress(n, max);
 				// name of the pak
@@ -181,9 +192,11 @@ DBG_MESSAGE("obj_reader_t::load()", "reading from '%s'", name.c_str());
 					display_proportional(display_get_width() / 2, display_get_height() / 2 - 8 - LINESPACE - 4, copyright, ALIGN_MIDDLE, COL_WHITE, true);
 				}
 			}
+			n ++;
 		}
 
-		return find.begin()!=find.end();
+		// return find.begin()!=find.end();
+		return find.files.get_count() > 0;
 	}
 	return false;
 }
@@ -348,26 +361,28 @@ void obj_reader_t::delete_node(obj_besch_t *data)
 void obj_reader_t::resolve_xrefs()
 {
 	slist_tpl<obj_besch_t *> xref_nodes;
+
 	inthashtable_iterator_tpl<obj_type, stringhashtable_tpl<slist_tpl<obj_besch_t **> > > xreftype_iter(unresolved);
 
-	while(xreftype_iter.next()) {
-		stringhashtable_iterator_tpl<slist_tpl<obj_besch_t **> > xrefname_iter(xreftype_iter.get_current_value());
+	while(xreftype_iter.next()) 
+	{
+		stringhashtable_iterator_tpl<slist_tpl<obj_besch_t **> > xrefname_iter(xreftype_iter.get_current());
 
 		while(xrefname_iter.next()) {
 			obj_besch_t *obj_loaded = NULL;
 
-			if(strlen(xrefname_iter.get_current_key()) > 0) {
+			if(strlen(xrefname_iter.get_current_key()) > 0) 
+			{
 				stringhashtable_tpl<obj_besch_t *> *objtype_loaded = loaded.access(xreftype_iter.get_current_key());
-				if(objtype_loaded) {
+				if(objtype_loaded) 
+				{
 					obj_loaded = objtype_loaded->get(xrefname_iter.get_current_key());
 				}
-				/*if(!objtype_loaded || !obj_loaded) {
-				dbg->fatal("obj_reader_t::resolve_xrefs", "cannot resolve '%4.4s-%s'",&xreftype_iter.get_current_key(), xrefname_iter.get_current_key());
-				}*/
 			}
 
-			slist_iterator_tpl<obj_besch_t **> xref_iter(xrefname_iter.get_current_value());
-			while(  xref_iter.next()  ) {
+			slist_iterator_tpl<obj_besch_t **> xref_iter(xrefname_iter.get_current());
+			while(  xref_iter.next()  ) 
+			{
 				if(  !obj_loaded  &&  fatals.get(xref_iter.get_current())  ) {
 					dbg->fatal("obj_reader_t::resolve_xrefs", "cannot resolve '%4.4s-%s'",	&xreftype_iter.get_current_key(), xrefname_iter.get_current_key());
 				}
@@ -378,7 +393,8 @@ void obj_reader_t::resolve_xrefs()
 		}
 	}
 
-	while (!xref_nodes.empty()) {
+	while (!xref_nodes.is_empty()) 
+	{
 		delete_node(xref_nodes.remove_first());
 	}
 

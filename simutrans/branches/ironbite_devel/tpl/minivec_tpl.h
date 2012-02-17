@@ -1,9 +1,10 @@
 #ifndef TPL_MINIVEC_H
 #define TPL_MINIVEC_H
 
+#include <typeinfo>
+
 #include "../simdebug.h"
 #include "../simtypes.h"
-
 
 /** A template class for a simple vector type */
 template<class T> class minivec_tpl
@@ -136,15 +137,23 @@ public:
 		return false;
 	}
 
-	T & at(uint8 i)
+	T & at(const uint8 i) const
 	{
-		if (i >= count) dbg->fatal("minivec_tpl<T>::[]", "index out of bounds: %i not in 0..%d", i, count - 1);
+		if (i >= count) 
+		{
+			dbg->fatal("minivec_tpl<T>::at", "%s: index out of bounds: %i not in 0..%d", typeid(T).name(), i, count - 1);
+		}
+		
 		return data[i];
 	}
 
-	const T & get(uint8 i) const
+	const T & get(const uint8 i) const
 	{
-		if (i >= count) dbg->fatal("minivec_tpl<T>::[]", "index out of bounds: %i not in 0..%d", i, count - 1);
+		if (i >= count) 
+		{
+			dbg->fatal("minivec_tpl<T>::get", "%s: index out of bounds: %i not in 0..%d", typeid(T).name(), i, count - 1);
+		}
+
 		return data[i];
 	}
 
@@ -162,9 +171,9 @@ public:
 
 
 	/** Get the capacity */
-	uint8 get_size() const { return size; }
+	uint8 get_capacity() const { return size; }
 
-	bool empty() const { return count == 0; }
+	bool is_empty() const { return count == 0; }
 
 private:
 	minivec_tpl(const minivec_tpl&);
@@ -174,5 +183,75 @@ private:
 	uint8 size;  ///< Capacity
 	uint8 count; ///< Number of elements in vector
 } GCC_PACKED;
+
+/**
+ * Iterator class for vectors.
+ * Iterators may be invalid after any changing operation on the vector!
+ *
+ * This iterator can modify nodes, but not the list
+ * Usage:
+ *
+ * vector_iterator_tpl<T> iter(some_vector);
+ * while (iter.next()) {
+ * 	T& current = iter.access_current();
+ * }
+ *
+ * @author Hj. Malthaner
+ */
+template<class T> class minivec_iterator_tpl
+{
+private:
+	const minivec_tpl<T> * const vec;
+	int idx;
+
+public:
+	
+	minivec_iterator_tpl(const minivec_tpl<T> * vector) : vec (vector)
+	{
+		idx = -1;
+	}
+
+	minivec_iterator_tpl(const minivec_tpl<T> & vector) : vec (&vector)
+	{		
+		idx = -1;
+	}
+
+	minivec_iterator_tpl<T> &operator = (const minivec_iterator_tpl<T> &iter)
+	{
+		idx = iter.idx;
+		return *this;
+	}
+
+	/**
+	 * iterate next element
+	 * @return false, if no more elements
+	 * @author Hj. Malthaner
+	 */
+	bool next()
+	{
+		idx++;
+		return ((uint8)idx < vec->get_count());
+	}
+
+	
+	/**
+	 * @return the current element (as const reference)
+	 * @author Hj. Malthaner
+	 */
+	const T & get_current() const
+	{
+		return vec->get((uint8)idx);
+	}
+
+
+	/**
+	 * @return the current element (as reference)
+	 * @author Hj. Malthaner
+	 */
+	T & access_current()
+	{
+		return vec->at((uint8)idx);
+	}
+};
 
 #endif

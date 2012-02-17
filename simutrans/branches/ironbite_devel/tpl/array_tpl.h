@@ -33,7 +33,7 @@ template<class T> class array_tpl
 
 		index get_count() const { return size; }
 
-		bool empty() const { return size == 0; }
+		bool is_empty() const { return size == 0; }
 
 		void clear()
 		{
@@ -72,18 +72,18 @@ template<class T> class array_tpl
 			}
 		}
 
-		T& operator [](index i)
+		const T & get(index i) const
 		{
 			if (i >= size) {
-				dbg->fatal("array_tpl<T>::[]", "index out of bounds: %d not in 0..%d, T=%s", i, size - 1, typeid(T).name());
+				dbg->fatal("array_tpl<T>::get", "index out of bounds: %d not in 0..%d, T=%s", i, size - 1, typeid(T).name());
 			}
 			return data[i];
 		}
 
-		const T& operator [](index i) const
+		T & at(index i) const
 		{
 			if (i >= size) {
-				dbg->fatal("array_tpl<T>::[]", "index out of bounds: %d not in 0..%d, T=%s", i, size - 1, typeid(T).name());
+				dbg->fatal("array_tpl<T>::at", "index out of bounds: %d not in 0..%d, T=%s", i, size - 1, typeid(T).name());
 			}
 			return data[i];
 		}
@@ -100,6 +100,76 @@ template<class T> class array_tpl
 
 		T* data;
 		index size;
+};
+
+/**
+ * Iterator class for array templates.
+ * Iterators may be invalid after any changing operation on the vector!
+ *
+ * This iterator can modify nodes, but not the list
+ * Usage:
+ *
+ * array_iterator_tpl<T> iter(some_array);
+ * while (iter.next()) {
+ * 	T& current = iter.access_current();
+ * }
+ *
+ * @author Hj. Malthaner
+ */
+template<class T> class array_iterator_tpl
+{
+private:
+	const array_tpl<T> * const arr;
+	int idx;
+
+public:
+	
+	array_iterator_tpl(const array_tpl<T> * vector) : arr (vector)
+	{
+		idx = -1;
+	}
+
+	array_iterator_tpl(const array_tpl<T> & vector) : arr (&vector)
+	{
+		idx = -1;
+	}
+
+	array_iterator_tpl<T> &operator = (const array_iterator_tpl<T> &iter)
+	{
+		idx = iter.idx;
+		return *this;
+	}
+
+	/**
+	 * iterate next element
+	 * @return false, if no more elements
+	 * @author Hj. Malthaner
+	 */
+	bool next()
+	{
+		idx++;
+		return ((uint32)idx < arr->get_count());
+	}
+
+	
+	/**
+	 * @return the current element (as const reference)
+	 * @author Hj. Malthaner
+	 */
+	const T & get_current() const
+	{
+		return arr->get((uint32)idx);
+	}
+
+
+	/**
+	 * @return the current element (as reference)
+	 * @author Hj. Malthaner
+	 */
+	T & access_current()
+	{
+		return arr->at((uint32)idx);
+	}
 };
 
 #endif

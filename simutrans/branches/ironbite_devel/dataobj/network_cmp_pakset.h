@@ -1,6 +1,7 @@
 #ifndef _NETWORK_CMP_PAKSET_H_
 #define _NETWORK_CMP_PAKSET_H_
 
+#include "../tpl/stringhashtable_tpl.h"
 #include "network_cmd.h"
 #include "pakset_info.h"
 #include <string>

@@ -412,7 +412,8 @@ void pumpe_t::neue_karte()
 void pumpe_t::step_all(long delta_t)
 {
 	slist_iterator_tpl<pumpe_t *> pumpe_iter( pumpe_list );
-	while(  pumpe_iter.next()  ) {
+	while(pumpe_iter.next()) 
+	{
 		pumpe_iter.get_current()->step( delta_t );
 	}
 }
@@ -515,10 +516,10 @@ void senke_t::neue_karte()
 void senke_t::step_all(long delta_t)
 {
 	slist_iterator_tpl<senke_t *> senke_iter( senke_list );
-	while(  senke_iter.next()  ) {
+	while(senke_iter.next()) 
+	{
 		senke_iter.get_current()->step( delta_t );
 	}
-
 }
 
 

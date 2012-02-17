@@ -19,7 +19,8 @@ void powernet_t::neue_karte()
 {
 	loading_table.clear();
 
-	while(!powernet_list.empty()) {
+	while(!powernet_list.is_empty()) 
+	{
 		powernet_t *net = powernet_list.remove_first();
 		delete net;
 	}
@@ -47,7 +48,8 @@ powernet_t::load_net(powernet_t *key)
 void powernet_t::step_all(long delta_t)
 {
 	slist_iterator_tpl<powernet_t *> powernet_iter( powernet_list );
-	while(  powernet_iter.next()  ) {
+	while(powernet_iter.next()) 
+	{
 		powernet_iter.get_current()->step( delta_t );
 	}
 }

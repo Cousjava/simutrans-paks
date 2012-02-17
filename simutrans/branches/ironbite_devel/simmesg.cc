@@ -77,7 +77,7 @@ message_t::~message_t()
 
 void message_t::clear()
 {
-	while (!list->empty()) 
+	while (!list->is_empty()) 
 	{
 		delete list->remove_first();
 	}
@@ -142,13 +142,32 @@ DBG_MESSAGE("message_t::add_msg()","%40s (at %i,%i)", text, pos.x, pos.y );
 			if (node->time >= now &&
 					strcmp(node->msg, text) == 0 &&
 					(node->pos.x & 0xFFF0) == (pos.x & 0xFFF0) && // positions need not 100% match ...
-					(node->pos.y & 0xFFF0) == (pos.y & 0xFFF0)) {
+					(node->pos.y & 0xFFF0) == (pos.y & 0xFFF0)) 
+			{
 				// we had exactly this message already
 				return;
 			}
-			i++;
+			if (++i == 20) break;
 			
 			if(i > 20) break;
+		}
+	}
+
+	// if no coordinate is provided, there is maybe one in the text message?
+	// syntax: either @x,y or (x,y)
+	if (pos == koord::invalid) {
+		const char *str = text;
+		// scan until either @ or ( are found
+		while( *(str += strcspn(str, "@(")) ) {
+			str += 1;
+			int x=-1, y=-1;
+			if (sscanf(str, "%d,%d", &x, &y) == 2) {
+				if (welt->ist_in_kartengrenzen(x,y)) {
+					pos.x = x;
+					pos.y = y;
+					break; // success
+				}
+			}
 		}
 	}
 
@@ -211,10 +230,11 @@ DBG_MESSAGE("message_t::add_msg()","%40s (at %i,%i)", text, pos.x, pos.y );
 
 void message_t::rotate90( sint16 size_w )
 {
-	for(  slist_tpl<message_t::node *>::iterator iter = list->begin(), end = list->end();  iter!=end; ++iter  ) {
-		(*iter)->pos.rotate90( size_w );
+	slist_iterator_tpl <message_t::node *> iter (list); 
+	while(iter.next())
+	{
+		iter.access_current()->pos.rotate90( size_w );
 	}
-
 }
 
 

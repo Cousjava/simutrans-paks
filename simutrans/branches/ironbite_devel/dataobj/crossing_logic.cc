@@ -57,12 +57,13 @@ void crossing_logic_t::info(cbuffer_t & buf) const
 // after merging or splitting two crossings ...
 void crossing_logic_t::recalc_state()
 {
-	if(  !crossings.empty()  ) {
+	if(  !crossings.is_empty()  ) {
 		on_way1.clear();
 		on_way2.clear();
-		for(  uint i=0;  i<crossings.get_count();  i++  ) {
+		for(unsigned int i=0;  i<crossings.get_count();  i++  ) 
+		{
 			// add vehicles already there
-			grund_t *gr = welt->lookup(crossings.get(i)->get_pos());
+			grund_t * const gr = welt->lookup(crossings.get(i)->get_pos());
 			if(gr) {
 				for( uint8 i=3;  i<gr->get_top();  i++  ) {
 					if(  vehicle_base_t const* const v = ding_cast<vehicle_base_t>(gr->obj_bei(i))  ) {
@@ -75,7 +76,7 @@ void crossing_logic_t::recalc_state()
 	request_close = NULL;
 	if(zustand==CROSSING_INVALID) {
 		// now just set the state, if needed
-		if(on_way2.empty()) {
+		if(on_way2.is_empty()) {
 			set_state( CROSSING_OPEN );
 		}
 		else {
@@ -90,7 +91,7 @@ void crossing_logic_t::recalc_state()
 bool crossing_logic_t::request_crossing( const vehicle_base_t *v )
 {
 	if(v->get_waytype()==besch->get_waytype(0)) {
-		if(on_way2.empty()  &&  zustand == CROSSING_OPEN) {
+		if(on_way2.is_empty()  &&  zustand == CROSSING_OPEN) {
 			// way2 is empty ...
 			return true;
 		}
@@ -146,7 +147,7 @@ crossing_logic_t::release_crossing( const vehicle_base_t *v )
 {
 	if(v->get_waytype()==besch->get_waytype(0)) {
 		on_way1.remove(v);
-		if(zustand == CROSSING_REQUEST_CLOSE  &&  on_way1.empty()) {
+		if(zustand == CROSSING_REQUEST_CLOSE  &&  on_way1.is_empty()) {
 			set_state( CROSSING_CLOSED );
 		}
 	}
@@ -155,7 +156,7 @@ crossing_logic_t::release_crossing( const vehicle_base_t *v )
 		if(  request_close==v  ) {
 			request_close = NULL;
 		}
-		if(on_way2.empty()  &&  request_close==NULL) {
+		if(on_way2.is_empty()  &&  request_close==NULL) {
 			set_state( CROSSING_OPEN );
 		}
 	}
@@ -178,7 +179,7 @@ crossing_logic_t::set_state( crossing_state_t new_state )
 
 	if(new_state!=zustand) {
 		zustand = new_state;
-		for(  uint8 i=0;  i<crossings.get_count();  i++  ) {
+		for(uint8 i=0;  i<crossings.get_count();  i++  ) {
 			crossings.get(i)->state_changed();
 		}
 	}
@@ -253,22 +254,28 @@ const kreuzung_besch_t *crossing_logic_t::get_crossing(const waytype_t ns, const
 	const kreuzung_besch_t *best = NULL;
 	if(way0<8  &&  way1<9  &&  way0!=way1) {
 		uint8 index = way0 * 9 + way1 - ((way0+2)*(way0+1))/2;
+
 		minivec_tpl<const kreuzung_besch_t *> &vec = can_cross_array[index];
 		for(  uint8 i=0;  i<vec.get_count();  i++  ) {
 			if (!vec.get(i)->is_available(timeline_year_month)) continue;
+
 			// better matching speed => take this
 			if (best) {
 				// match maxspeed of first way
 				uint8  const way0_nr = way0 == ow;
 				sint32 const imax0   = vec.get(i)->get_maxspeed(way0_nr);
 				sint32 const bmax0   =   best->get_maxspeed(way0_nr);
+
 				if ((imax0 < way_0_speed || bmax0 < imax0) && (way_0_speed < bmax0 || imax0 < bmax0)) continue;
 				// match maxspeed of second way
 				uint8  const way1_nr = way1 == ow;
+
 				sint32 const imax1   = vec.get(i)->get_maxspeed(way1_nr);
 				sint32 const bmax1   =   best->get_maxspeed(way1_nr);
+
 				if ((imax1 < way_1_speed || bmax1 < imax1) && (way_1_speed < bmax1 || imax1 < bmax1)) continue;
 			}
+
 			best = vec.get(i);
 		}
 	}
@@ -348,7 +355,8 @@ void crossing_logic_t::add( karte_t *w, crossing_t *start_cr, crossing_state_t z
 
 	// set new crossing logic to all
 	slist_iterator_tpl<crossing_t *> iter(crossings);
-	while( iter.next() ) {
+	while( iter.next() ) 
+	{
 		crossing_t *cr=iter.get_current();
 		cr->set_logic( found_logic );
 		found_logic->append_crossing( cr );
@@ -363,7 +371,7 @@ void crossing_logic_t::add( karte_t *w, crossing_t *start_cr, crossing_state_t z
 void crossing_logic_t::remove( crossing_t *cr )
 {
 	crossings.remove( cr );
-	if(  crossings.empty()  ) {
+	if(  crossings.is_empty()  ) {
 		delete this;
 	}
 	else {

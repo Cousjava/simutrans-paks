@@ -10,11 +10,17 @@
 
 #include "gui_action_creator.h"
 #include "gui_komponente.h"
-// #include "../../simimg.h"
 
+#define BUTTON_WIDTH (92)
+#define BUTTON_WIDE_WIDTH (104)
+#define BUTTON_WIDER_WIDTH (116)
+
+#define BUTTON_HEIGHT (14)
+
+#define BUTTON_SPACER (2)
 
 /**
- * Klasse f�r Buttons in Fenstern
+ * Buttons
  *
  * @author Hj. Malthaner, Niels Roest
  * @date December 2000

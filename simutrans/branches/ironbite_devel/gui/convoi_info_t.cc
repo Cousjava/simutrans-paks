@@ -224,7 +224,7 @@ void convoi_info_t::zeichnen(koord pos, koord gr)
 			button.enable();
 			go_home_button.pressed = route_search_in_progress;
 			details_button.pressed = win_get_magic( magic_convoi_detail+cnv.get_id() );
-			if (!cnv->get_schedule()->empty()) {
+			if (!cnv->get_schedule()->is_empty()) {
 				const grund_t* g = cnv->get_welt()->lookup(cnv->get_schedule()->get_current_eintrag().pos);
 				if (g != NULL && g->get_depot()) {
 					go_home_button.disable();
@@ -404,24 +404,27 @@ DBG_MESSAGE("convoi_info_t::action_triggered()","convoi state %i => cannot chang
 			route_search_in_progress = true;
 
 			// iterate over all depots and try to find shortest route
-			slist_iterator_tpl<depot_t *> depot_iter(depot_t::get_depot_list());
 			route_t * shortest_route = new route_t();
 			route_t * route = new route_t();
 			koord3d home = koord3d(0,0,0);
-			while (depot_iter.next()) {
+
+			slist_iterator_tpl<depot_t *> depot_iter(depot_t::get_depot_list());
+			while (depot_iter.next()) 
+			{
 				depot_t *depot = depot_iter.get_current();
+
 				vehikel_t& v = *cnv->front();
 				if (depot->get_wegtyp()   != v.get_besch()->get_waytype() ||
 						depot->get_besitzer() != cnv->get_besitzer()) {
 					continue;
 				}
 				koord3d pos = depot->get_pos();
-				if(!shortest_route->empty()    &&    koord_distance(pos.get_2d(),cnv->get_pos().get_2d())>=shortest_route->get_count()-1) {
+				if(!shortest_route->is_empty()    &&    koord_distance(pos.get_2d(),cnv->get_pos().get_2d())>=shortest_route->get_count()-1) {
 					// the current route is already shorter, no need to search further
 					continue;
 				}
 				if (v.calc_route(cnv->get_pos(), pos, 50, route)) { // do not care about speed
-					if(  route->get_count() < shortest_route->get_count()    ||    shortest_route->empty()  ) {
+					if(  route->get_count() < shortest_route->get_count()    ||    shortest_route->is_empty()  ) {
 						shortest_route->kopiere(route);
 						home = pos;
 					}
@@ -432,7 +435,7 @@ DBG_MESSAGE("convoi_info_t::action_triggered()","convoi state %i => cannot chang
 
 			// if route to a depot has been found, update the convoi's schedule
 			const char *txt;
-			if(!shortest_route->empty()) {
+			if(!shortest_route->is_empty()) {
 				schedule_t *fpl = cnv->get_schedule()->copy();
 				fpl->insert(cnv->get_welt()->lookup(home));
 				fpl->set_aktuell( (fpl->get_aktuell()+fpl->get_count()-1)%fpl->get_count() );
@@ -593,9 +596,15 @@ void convoi_info_t::rdwr(loadsave_t *file)
 		}
 		// we might be unlucky, then search all convois for a convoi with this name
 		if(  !cnv.is_bound()  ) {
-			for (vector_tpl<convoihandle_t>::const_iterator i = welt->convoys().begin(), end = welt->convoys().end(); i != end; ++i) {
-				if(  strcmp( (*i)->get_name(),name)==0  ) {
-					cnv = *i;
+			// FOR(vector_tpl<convoihandle_t>, const i, welt->convoys()) {
+
+			const vector_tpl<convoihandle_t> & all_cnv = welt->convoys();
+			for(uint32 i=0; i<all_cnv.get_count(); i++)
+			{
+				convoihandle_t tmp = all_cnv.get(i);
+			
+				if (strcmp(tmp->get_name(), name) == 0) {
+					cnv = tmp;
 					break;
 				}
 			}

@@ -199,7 +199,7 @@ bool nwc_ready_t::execute(karte_t *welt)
 			return true;
 		}
 		// check the validity of the map counter
-		for(  uint32 i=0;  i<all_map_counters.get_count();  ++i  ) {
+		for(unsigned int i=0;  i<all_map_counters.get_count();  ++i  ) {
 			if(  all_map_counters.get(i)==map_counter  ) {
 				// unpause the sender by sending nwc_ready_t back
 				nwc_ready_t nwc(sync_step, map_counter, checklist);

@@ -9,7 +9,7 @@
 
 #include <stdlib.h>
 
-stringhashtable_iterator_tpl<checksum_t*> nwc_pakset_info_t::server_iterator(pakset_info_t::info);
+stringhashtable_iterator_tpl<checksum_t *> nwc_pakset_info_t::server_iterator(pakset_info_t::info);
 SOCKET nwc_pakset_info_t::server_receiver = INVALID_SOCKET;
 
 
@@ -58,7 +58,7 @@ bool nwc_pakset_info_t::execute(karte_t *)
 			case CL_WANT_NEXT: // client received one info packet, wants next
 				if (server_iterator.next()) {
 					nwi.flag = SV_DATA;
-					nwi.chk  = new checksum_t(*server_iterator.get_current_value());
+					nwi.chk  = new checksum_t(*server_iterator.get_current());
 					nwi.name = strdup(server_iterator.get_current_key());
 					DBG_MESSAGE("nwc_pakset_info_t::execute", "send info about %s",nwi.name);
 				}
@@ -135,8 +135,10 @@ void network_compare_pakset_with_server(const char* cp, std::string &msg)
 		stringhashtable_tpl<checksum_t*> addons;
 		{
 			stringhashtable_iterator_tpl<checksum_t*> iterator(pakset_info_t::get_info());
-			while(iterator.next()) {
-				addons.put(iterator.get_current_key(), iterator.get_current_value());
+			while(iterator.next()) 
+			{
+				addons.put(iterator.get_current_key(), 
+				           iterator.get_current());
 			}
 		}
 		//
@@ -243,11 +245,12 @@ void network_compare_pakset_with_server(const char* cp, std::string &msg)
 		msg.append("<title>");
 		msg.append(translator::translate("Pakset differences"));
 		msg.append("</title>\n");
-		if (wrong_paks<=MAX_WRONG_PAKS  &&  !addons.empty()) {
-			stringhashtable_iterator_tpl<checksum_t*> iterator(addons);
+		if (wrong_paks<=MAX_WRONG_PAKS  &&  !addons.is_empty()) 
+		{
 			msg.append("<h1>");
 			msg.append(translator::translate("Pak(s) not on server:"));
 			msg.append("</h1><br>\n");
+			stringhashtable_iterator_tpl<checksum_t*> iterator(addons);
 			while(iterator.next()) {
 				dbg->warning("network_compare_pakset_with_server", "PAK NOT ON SERVER: %s", iterator.get_current_key());
 				msg.append(translator::translate(iterator.get_current_key()));
@@ -255,11 +258,12 @@ void network_compare_pakset_with_server(const char* cp, std::string &msg)
 			}
 			msg.append("<br>\n");
 		}
-		if (!different.empty()) {
-			stringhashtable_iterator_tpl<checksum_t*> iterator(different);
+		if (!different.is_empty()) 
+		{
 			msg.append("<h1>");
 			msg.append(translator::translate("Pak(s) different:"));
 			msg.append("</h1><br>\n");
+			stringhashtable_iterator_tpl<checksum_t*> iterator(different);
 			while(iterator.next()) {
 				dbg->warning("network_compare_pakset_with_server", "PAK DIFFERENT: %s", iterator.get_current_key());
 				msg.append(translator::translate(iterator.get_current_key()));
@@ -267,11 +271,12 @@ void network_compare_pakset_with_server(const char* cp, std::string &msg)
 			}
 			msg.append("<br>\n");
 		}
-		if (!missing.empty()) {
-			stringhashtable_iterator_tpl<checksum_t*> iterator(missing);
+		if (!missing.is_empty())
+		{
 			msg.append("<h1>");
 			msg.append(translator::translate("Pak(s) missing on client:"));
 			msg.append("</h1><br>\n");
+			stringhashtable_iterator_tpl<checksum_t*> iterator(missing);
 			while(iterator.next()) {
 				dbg->warning("network_compare_pakset_with_server", "PAK MISSING: %s", iterator.get_current_key());
 				msg.append(translator::translate(iterator.get_current_key()));

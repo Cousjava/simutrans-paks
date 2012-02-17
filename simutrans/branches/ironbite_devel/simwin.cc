@@ -143,7 +143,6 @@ static void *tooltip_element = NULL;
 
 static void destroy_framed_win(simwin_t *win);
 
-//=========================================================================
 // Helper Functions
 
 #define REVERSE_GADGETS (!umgebung_t::window_buttons_right)
@@ -429,23 +428,23 @@ static void win_draw_window_dragger(koord pos, const koord gr)
 }
 
 
-//=========================================================================
-
-
 
 // returns the window (if open) otherwise zero
 gui_frame_t *win_get_magic(long magic)
 {
 	if(magic!=-1  &&  magic!=0) {
 		// es kann nur ein fenster fuer jede pos. magic number geben
-		for(  uint i=0;  i<windows.get_count();  i++  ) {
-			if(windows.at(i).magic_number == magic) {
-				// if 'special' magic number, return it
+
+		for(uint i=0;  i<windows.get_count();  i++) 
+		{
+			if(windows.at(i).magic_number == magic) 
+				{
 				return windows.at(i).gui;
 			}
 		}
 	}
-	return NULL;
+	
+	return 0;
 }
 
 
@@ -456,7 +455,7 @@ gui_frame_t *win_get_magic(long magic)
  */
 gui_frame_t *win_get_top()
 {
-	return windows.empty() ? 0 : windows.back().gui;
+	return windows.is_empty() ? 0 : windows.back().gui;
 }
 
 
@@ -466,7 +465,7 @@ gui_frame_t *win_get_top()
  */
 gui_component_t *win_get_focus()
 {
-	return windows.empty() ? 0 : windows.back().gui->get_focus();
+	return windows.is_empty() ? 0 : windows.back().gui->get_focus();
 }
 
 
@@ -495,7 +494,7 @@ bool top_win(const gui_frame_t *gui)
  */
 bool win_is_top(const gui_frame_t *ig)
 {
-	return !windows.empty() && windows.back().gui == ig;
+	return !windows.is_empty() && windows.back().gui == ig;
 }
 
 
@@ -507,10 +506,13 @@ void rdwr_all_win(loadsave_t *file)
 {
 	if(  file->get_version()>102003  ) {
 		if(  file->is_saving()  ) {
+
 			for ( uint32 i=0;  i < windows.get_count();  i++ ) {
 				uint32 id = windows.at(i).gui->get_rdwr_id();
+
 				if(  id!=magic_reserved  ) {
 					file->rdwr_long( id );
+
 					windows.at(i).pos.rdwr( file );
 					file->rdwr_byte( windows.at(i).wt );
 					file->rdwr_bool( windows.at(i).sticky );
@@ -615,7 +617,7 @@ int create_win(int x, int y, gui_frame_t* const gui, wintype const wt, long cons
 
 	if(  windows.get_count() < MAX_WIN  ) {
 
-		if (!windows.empty()) {
+		if (!windows.is_empty()) {
 			// mark old title dirty
 			mark_rect_dirty_wc( windows.back().pos.x, windows.back().pos.y, windows.back().pos.x+windows.back().gui->get_window_size().x, windows.back().pos.y+16 );
 		}
@@ -708,7 +710,8 @@ int create_win(int x, int y, gui_frame_t* const gui, wintype const wt, long cons
  */
 static void process_kill_list()
 {
-	for(uint i = 0; i < kill_list.get_count(); i++) {
+	for(uint i = 0; i < kill_list.get_count(); i++) 
+	{
 		windows.remove(kill_list.at(i));
 		destroy_framed_win(&kill_list.at(i));
 	}
@@ -940,7 +943,8 @@ void display_all_win()
 
 void win_rotate90( sint16 new_ysize )
 {
-	for(  uint i=0;  i<windows.get_count();  i++  ) {
+	for(  uint i=0;  i<windows.get_count();  i++  ) 
+	{
 		windows.at(i).gui->map_rotate90( new_ysize );
 	}
 }
@@ -1235,7 +1239,7 @@ bool check_pos_win(event_t *ev)
 	}
 
 	// click in main menu?
-	if (!werkzeug_t::toolbar_tool.empty()                   &&
+	if (!werkzeug_t::toolbar_tool.is_empty()                   &&
 			werkzeug_t::toolbar_tool.get(0)->get_werkzeug_waehler() &&
 			werkzeug_t::toolbar_tool.get(0)->iconsize.y > y         &&
 			ev->ev_class != EVENT_KEYBOARD) {
@@ -1248,7 +1252,7 @@ bool check_pos_win(event_t *ev)
 	}
 
 	// cursor event only go to top window
-	if(  ev->ev_class == EVENT_KEYBOARD  &&  !windows.empty()  ) {
+	if(  ev->ev_class == EVENT_KEYBOARD  &&  !windows.is_empty()  ) {
 		simwin_t&               win  = windows.back();
 		inside_event_handling = win.gui;
 		swallowed = win.gui->infowin_event(ev);

@@ -1326,10 +1326,13 @@ const char *wkz_clear_reservation_t::work( karte_t *welt, spieler_t *, koord3d k
 					// reset driving state
 					cnv->suche_neue_route();
 				}
-				slist_iterator_tpl<weg_t *>iter(weg_t::get_alle_wege());
-				while(iter.next()) {
-					if(iter.get_current()->get_waytype()==waytype) {
-						schiene_t* const sch = ding_cast<schiene_t>(iter.access_current());
+				slist_iterator_tpl <weg_t*> iter (weg_t::get_alle_wege());
+
+	while(iter.next())
+	{
+		weg_t* const w = iter.get_current();
+					if (w->get_waytype() == waytype) {
+						schiene_t* const sch = ding_cast<schiene_t>(w);
 						if (sch->get_reserved_convoi() == cnv) {
 							vehikel_t& v = *cnv->front();
 							if (!gr->suche_obj(v.get_typ())) {
@@ -1510,9 +1513,11 @@ const char *wkz_change_city_size_t::work( karte_t *welt, spieler_t *, koord3d po
 	stadt_t *city = welt->suche_naechste_stadt(pos.get_2d());
 	if(city!=NULL) {
 		city->change_size( atoi(default_param) );
+
 		// Knightly : update the links from other cities to this city
 		const weighted_vector_tpl<stadt_t *> &cities = welt->get_staedte();
-		for(  uint32 c=0;  c<cities.get_count();  ++c  ) {
+		for(  uint32 c=0;  c<cities.get_count();  ++c  ) 
+		{
 			cities.get(c)->remove_target_city(city);
 			cities.get(c)->add_target_city(city);
 		}
@@ -2317,8 +2322,13 @@ bool wkz_wayremover_t::calc_route( route_t &verbindung, spieler_t *sp, const koo
 	bool can_delete = start == end  ||  verbindung.get_count()>1;
 	if(  can_delete  ) {
 		// found a route => check if I can delete anything on it
-		for(  uint32 i=0;  can_delete  &&  i<verbindung.get_count();  i++  ) {
-			grund_t *gr=welt->lookup(verbindung.position_bei(i));
+		// FOR(koord3d_vector_t, const& i, verbindung.get_route()) {
+		for(uint32 idx=0; idx<verbindung.get_route().get_count(); idx++)
+		{
+			koord3d i = verbindung.get_route().get(idx);
+			
+			if (!can_delete) break;
+			grund_t const* const gr = welt->lookup(i);
 			if(  wt!=powerline_wt  ) {
 				// no way found
 				if(  gr==NULL  ||  gr->get_weg(wt)==NULL  ) {
@@ -3722,7 +3732,7 @@ const char *wkz_roadsign_t::do_work( karte_t *welt, spieler_t *sp, const koord3d
 	// mark tiles to calculate positions of signals
 	mark_tiles(welt, sp, start, end);
 	// only search the marked tiles
-	
+
 	slist_iterator_tpl <zeiger_t *> iter (marked[sp->get_player_nr()]);
 
 	while(iter.next())
@@ -3732,7 +3742,8 @@ const char *wkz_roadsign_t::do_work( karte_t *welt, spieler_t *sp, const koord3d
 		koord3d pos = zeiger->get_pos();
 		grund_t *gr = welt->lookup(pos);
 		weg_t *weg = gr->get_weg(besch->get_wtyp());
-		if( zeiger->get_richtung()) {
+		if( zeiger->get_richtung()) 
+		{
 			// try to place signal
 			const char* error_text =  place_sign_intern( welt, sp, gr );
 			if(  error_text  ) {
@@ -4208,10 +4219,12 @@ const char *wkz_build_industries_land_t::work( karte_t *welt, spieler_t *sp, koo
 
 			// crossconnect all?
 			if (welt->get_settings().is_crossconnect_factories()) {
-				const slist_tpl<fabrik_t *> & list = welt->get_fab_list();
-				slist_iterator_tpl <fabrik_t *> iter (list);
-				while( iter.next() ) {
-					iter.get_current()->add_all_suppliers();
+				slist_iterator_tpl <fabrik_t*> iter (welt->get_fab_list());
+
+	while(iter.next())
+	{
+		fabrik_t* const f = iter.get_current();
+					f->add_all_suppliers();
 				}
 			}
 			return NULL;
@@ -4278,10 +4291,12 @@ const char *wkz_build_industries_city_t::work( karte_t *welt, spieler_t *sp, koo
 
 		// crossconnect all?
 		if (welt->get_settings().is_crossconnect_factories()) {
-			const slist_tpl<fabrik_t *> & list = welt->get_fab_list();
-			slist_iterator_tpl <fabrik_t *> iter (list);
-			while( iter.next() ) {
-				iter.get_current()->add_all_suppliers();
+			slist_iterator_tpl <fabrik_t*> iter (welt->get_fab_list());
+
+	while(iter.next())
+	{
+		fabrik_t* const f = iter.get_current();
+				f->add_all_suppliers();
 			}
 		}
 		// ain't going to be cheap
@@ -4374,10 +4389,12 @@ const char *wkz_build_factory_t::work( karte_t *welt, spieler_t *sp, koord3d k )
 
 			// crossconnect all?
 			if (welt->get_settings().is_crossconnect_factories()) {
-				const slist_tpl<fabrik_t *> & list = welt->get_fab_list();
-				slist_iterator_tpl <fabrik_t *> iter (list);
-				while( iter.next() ) {
-					iter.get_current()->add_all_suppliers();
+				slist_iterator_tpl <fabrik_t*> iter (welt->get_fab_list());
+
+	while(iter.next())
+	{
+		fabrik_t* const f = iter.get_current();
+					f->add_all_suppliers();
 				}
 			}
 			return NULL;
@@ -4805,14 +4822,19 @@ const char *wkz_stop_moving_t::do_work( karte_t *welt, spieler_t *sp, const koor
 			}
 
 			// first, check convoi without line
-			for (vector_tpl<convoihandle_t>::const_iterator i = welt->convoys().begin(), end = welt->convoys().end(); i != end; ++i) {
-				convoihandle_t cnv = *i;
+			vector_iterator_tpl <convoihandle_t> c_iter (welt->convoys());
+
+			while(c_iter.next())
+			{
+				convoihandle_t const cnv = c_iter.get_current();
+				
 				// check line and owner
 				if(!cnv->get_line().is_bound()  &&  cnv->get_besitzer()==sp) {
 					schedule_t *fpl = cnv->get_schedule();
 					// check waytype
 					if(fpl  &&  fpl->ist_halt_erlaubt(bd)) {
 						bool updated = false;
+
 						for(  int k=0;  k<fpl->get_count();  k++  ) {
 							if(  (catch_all_halt  &&  haltestelle_t::get_halt(welt,fpl->eintrag.get(k).pos,cnv->get_besitzer())==last_halt)  ||  old_platform.is_contained(fpl->eintrag.get(k).pos)  ) {
 								fpl->eintrag.at(k).pos = pos;
@@ -4842,16 +4864,29 @@ const char *wkz_stop_moving_t::do_work( karte_t *welt, spieler_t *sp, const koor
 			// next, check lines serving old_halt (no owner check needed for own lines ...
 			vector_tpl<linehandle_t>lines;
 			sp->simlinemgmt.get_lines(simline_t::line,&lines);
-			for (vector_tpl<linehandle_t>::const_iterator i = lines.begin(), end = lines.end(); i != end; ++i) {
-				linehandle_t line = (*i);
+			
+			vector_iterator_tpl <linehandle_t> line_iter (lines);
+
+			while(line_iter.next())
+			{
+				linehandle_t const line = line_iter.get_current();
+				
 				schedule_t *fpl = line->get_schedule();
 				// check waytype
 				if(fpl->ist_halt_erlaubt(bd)) {
 					bool updated = false;
-					for(  int k=0;  k<fpl->get_count();  k++  ) {
+					
+					minivec_iterator_tpl <linieneintrag_t> e_iter (fpl->eintrag);
+
+					while(e_iter.next())
+					{
+						linieneintrag_t & k = e_iter.access_current();
 						// ok!
-						if(  (catch_all_halt  &&  haltestelle_t::get_halt(welt,fpl->eintrag.get(k).pos,line->get_besitzer())==last_halt)  ||  old_platform.is_contained(fpl->eintrag.get(k).pos)  ) {
-							fpl->eintrag.at(k).pos = pos;
+
+						if( (catch_all_halt  &&  haltestelle_t::get_halt(welt, k.pos, line->get_besitzer())==last_halt)  ||  
+								old_platform.is_contained(k.pos) ) 
+						{
+							k.pos = pos;
 							updated = true;
 						}
 					}

@@ -123,7 +123,7 @@ spieler_t::spieler_t(karte_t *wl, uint8 nr) :
 
 spieler_t::~spieler_t()
 {
-	while(  !messages.empty()  ) {
+	while(  !messages.is_empty()  ) {
 		delete messages.remove_first();
 	}
 	destroy_win( (long)this );
@@ -178,10 +178,11 @@ void spieler_t::display_messages()
 	const sint16 raster = get_tile_raster_width();
 	const sint16 yoffset = welt->get_y_off()+((display_get_width()/raster)&1)*(raster/4);
 
-	slist_iterator_tpl<income_message_t *>iter(messages);
-	while(iter.next()) {
-		income_message_t *m = iter.get_current();
+	slist_iterator_tpl <income_message_t*> iter (messages);
 
+	while(iter.next())
+	{
+		income_message_t* const m = iter.get_current();
 		const koord ij = m->pos - welt->get_world_position()-welt->get_ansicht_ij_offset();
 		const sint16 x = (ij.x-ij.y)*(raster/2) + welt->get_x_off();
 		const sint16 y = (ij.x+ij.y)*(raster/4) + (m->alter >> 4) - tile_raster_scale_y( welt->lookup_hgt(m->pos)*TILE_HEIGHT_STEP, raster) + yoffset;
@@ -196,16 +197,16 @@ void spieler_t::display_messages()
  */
 void spieler_t::age_messages(long /*delta_t*/)
 {
-	for(slist_tpl<income_message_t *>::iterator iter = messages.begin(); iter != messages.end(); ) {
-		income_message_t *m = *iter;
+	slist_iterator_tpl <income_message_t *> iter (messages);
+	
+	while(iter.next())
+	{
+		income_message_t * m = iter.get_current();
 		m->alter -= 5;
 
 		if(m->alter<-80) {
-			iter = messages.erase(iter);
+			messages.remove(m);
 			delete m;
-		}
-		else {
-			++iter;
 		}
 	}
 }
@@ -213,7 +214,7 @@ void spieler_t::age_messages(long /*delta_t*/)
 
 void spieler_t::add_message(koord k, sint32 betrag)
 {
-	if(  !messages.empty()  &&  messages.back()->pos==k  &&  messages.back()->alter==127  ) {
+	if(  !messages.is_empty()  &&  messages.back()->pos==k  &&  messages.back()->alter==127  ) {
 		// last message exactly at same place, not aged
 		messages.back()->amount += betrag;
 		money_to_string(messages.back()->str, messages.back()->amount/100.0);
@@ -405,22 +406,29 @@ void spieler_t::calc_assets()
 {
 	sint64 assets = 0;
 	// all convois
-	for (vector_tpl<convoihandle_t>::const_iterator i = welt->convoys().begin(), end = welt->convoys().end(); i != end; ++i) {
-		convoihandle_t cnv = *i;
+	vector_iterator_tpl <convoihandle_t> c_iter (welt->convoys());
+
+	while(c_iter.next())
+	{
+		convoihandle_t const cnv = c_iter.get_current();
 		if(  cnv->get_besitzer() == this  ) {
 			assets += cnv->calc_restwert();
 		}
 	}
 
 	// all vehikels stored in depot not part of a convoi
-	slist_iterator_tpl<depot_t *> depot_iter(depot_t::get_depot_list());
-	while(  depot_iter.next()  ) {
-		depot_t* const depot = depot_iter.get_current();
+	slist_iterator_tpl <depot_t*> d_iter (depot_t::get_depot_list());
+
+	while(d_iter.next())
+	{
+		depot_t* const depot = d_iter.get_current();
 		if(  depot->get_player_nr() == player_nr  ) {
-			slist_iterator_tpl<vehikel_t *> veh_iter(depot->get_vehicle_list());
-			while(  veh_iter.next()  ) {
-				const vehikel_t* const veh = veh_iter.get_current();
-				assets += veh->calc_restwert();
+			slist_iterator_tpl <vehikel_t*> iter (depot->get_vehicle_list());
+
+			while(iter.next())
+			{
+				vehikel_t* const vehicel = iter.get_current();
+				assets += vehicel->calc_restwert();
 			}
 		}
 	}
@@ -567,19 +575,25 @@ void spieler_t::ai_bankrupt()
 	headquarter_pos = koord::invalid;
 
 	// remove all stops
-	while (!halt_list.empty()) {
+	while (!halt_list.is_empty()) {
 		halthandle_t h = halt_list.remove_first();
 		haltestelle_t::destroy( h );
 	}
 
 	// transfer all ways in public stops belonging to me to no one
-	slist_iterator_tpl<halthandle_t>iter(haltestelle_t::get_alle_haltestellen());
-	while(  iter.next()  ) {
-		halthandle_t halt = iter.get_current();
+	slist_iterator_tpl <halthandle_t> iter (haltestelle_t::get_alle_haltestellen());
+
+	while(iter.next())
+	{
+		halthandle_t const halt = iter.get_current();
 		if(  halt->get_besitzer()==welt->get_spieler(1)  ) {
 			// only concerns public stops tiles
-			for(  slist_tpl<haltestelle_t::tile_t>::const_iterator iter_tiles = halt->get_tiles().begin(), end = halt->get_tiles().end();  iter_tiles != end;  ++iter_tiles  ) {
-				const grund_t *gr = iter_tiles->grund;
+			slist_iterator_tpl <haltestelle_t::tile_t> iter (halt->get_tiles());
+
+	while(iter.next())
+	{
+		haltestelle_t::tile_t const& i = iter.get_current();
+				grund_t const* const gr = i.grund;
 				for(  uint8 wnr=0;  wnr<2;  wnr++  ) {
 					weg_t *w = gr->get_weg_nr(wnr);
 					if(  w  &&  w->get_besitzer()==this  ) {
@@ -1032,7 +1046,8 @@ DBG_MESSAGE("spieler_t::int_undo()","undo tiles %i",max);
 
 void spieler_t::add_undo(koord3d k)
 {
-	if(last_built.get_size()>0) {
+	if(last_built.get_capacity() > 0) 
+	{
 //DBG_DEBUG("spieler_t::add_undo()","tile at (%i,%i)",k.x,k.y);
 		last_built.append(k);
 	}
@@ -1041,13 +1056,16 @@ void spieler_t::add_undo(koord3d k)
 
 sint64 spieler_t::undo()
 {
-	if (last_built.empty()) {
+	if (last_built.is_empty()) {
 		// nothing to UNDO
 		return false;
 	}
 	// check, if we can still do undo
-	for(unsigned short i=0;  i<last_built.get_count();  i++  ) {
+
+	for(unsigned int i=0;  i<last_built.get_count();  i++)
+	{
 		grund_t* gr = welt->lookup(last_built.get(i));
+
 		if(gr==NULL  ||  gr->get_typ()!=grund_t::boden) {
 			// well, something was built here ... so no undo
 			last_built.clear();
@@ -1093,8 +1111,10 @@ sint64 spieler_t::undo()
 
 	// ok, now remove everything last built
 	sint64 cost=0;
+
 	for(  uint32 i=0;  i<last_built.get_count();  i++  ) {
 		grund_t* gr = welt->lookup(last_built.get(i));
+
 		if(  undo_type != powerline_wt  ) {
 			cost += gr->weg_entfernen(undo_type,true);
 		}

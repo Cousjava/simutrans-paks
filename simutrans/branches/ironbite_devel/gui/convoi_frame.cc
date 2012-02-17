@@ -29,16 +29,32 @@
  * All filter and sort settings are static, so the old settings are
  * used when the window is reopened.
  */
-convoi_frame_t::sort_mode_t convoi_frame_t::sortby = convoi_frame_t::nach_name;
-bool convoi_frame_t::sortreverse = false;
+static convoi_frame_t::sort_mode_t sort_by = convoi_frame_t::nach_name;
+static bool sortreverse = false;
+static uint32 filter_flags = 0;
+static char name_filter_value[64] = "";
+static slist_tpl<const freight_desc_t *> waren_filter;
 
-uint32 convoi_frame_t::filter_flags = 0;
+convoi_frame_t::sort_mode_t convoi_frame_t::get_sortierung() { return sort_by; }
+void convoi_frame_t::set_sortierung(sort_mode_t sm) { sort_by = sm; }
 
-char convoi_frame_t::name_filter_value[64] = "";
+bool convoi_frame_t::get_reverse() { return sortreverse; }
+void convoi_frame_t::set_reverse(bool reverse) { sortreverse = reverse; }
 
-slist_tpl<const freight_desc_t *> convoi_frame_t::waren_filter;
+bool convoi_frame_t::get_filter(filter_flag_t filter) { return (filter_flags & filter) != 0; }
+void convoi_frame_t::set_filter(filter_flag_t filter, bool on) { filter_flags = on ? (filter_flags | filter) : (filter_flags & ~filter); }
 
-const char *convoi_frame_t::sort_text[SORT_MODES] = {
+char * convoi_frame_t::access_name_filter() 
+{
+	return name_filter_value; 
+}
+
+bool convoi_frame_t::get_ware_filter(const freight_desc_t *ware) 
+{
+	return waren_filter.is_contained(ware); 
+}
+
+const char * convoi_frame_t::sort_text[SORT_MODES] = {
 	"cl_btn_sort_name",
 	"cl_btn_sort_income",
 	"cl_btn_sort_type",
@@ -133,19 +149,22 @@ bool convoi_frame_t::passes_filter(convoihandle_t cnv)
 }
 
 
-bool convoi_frame_t::compare_convois(convoihandle_t const cnv1, convoihandle_t const cnv2)
+static int compare_convois(const void * a, const void * b)
 {
+	convoihandle_t const cnv1 = *((const convoihandle_t *)a);
+	convoihandle_t const cnv2 = *((const convoihandle_t *)b);
+	
 	long result=0;
 
-	switch (sortby) {
+	switch (sort_by) {
 		default:
-		case nach_name:
+		case convoi_frame_t::nach_name:
 			result = strcmp(cnv1->get_internal_name(), cnv2->get_internal_name());
 			break;
-		case nach_gewinn:
+		case convoi_frame_t::nach_gewinn:
 			result = sgn(cnv1->get_jahresgewinn() - cnv2->get_jahresgewinn());
 			break;
-		case nach_typ:
+		case convoi_frame_t::nach_typ:
 			if(cnv1->get_vehikel_anzahl()*cnv2->get_vehikel_anzahl()>0) {
 				vehikel_t const* const fahr1 = cnv1->front();
 				vehikel_t const* const fahr2 = cnv2->front();
@@ -159,7 +178,7 @@ bool convoi_frame_t::compare_convois(convoihandle_t const cnv1, convoihandle_t c
 				}
 			}
 			break;
-		case nach_id:
+		case convoi_frame_t::nach_id:
 			result = cnv1.get_id()-cnv2.get_id();
 			break;
 	}
@@ -175,13 +194,16 @@ void convoi_frame_t::sort_list()
 	convois.clear();
 	convois.resize(last_world_convois);
 
-	for (vector_tpl<convoihandle_t>::const_iterator i = welt->convoys().begin(), end = welt->convoys().end(); i != end; ++i) {
-		convoihandle_t cnv = *i;
+	const vector_tpl<convoihandle_t> & all_cnv = welt->convoys();
+	for(uint32 i=0; i<all_cnv.get_count(); i++)
+	{
+		convoihandle_t cnv = all_cnv.get(i);
 		if(cnv->get_besitzer()==owner  &&   passes_filter(cnv)) {
 			convois.append(cnv);
 		}
 	}
-	std::sort(convois.begin(), convois.end(), compare_convois);
+	
+	convois.sort(compare_convois);
 
 	sortedby.set_text(sort_text[get_sortierung()]);
 	sorteddir.set_text( get_reverse() ? "cl_btn_sort_desc" : "cl_btn_sort_asc");

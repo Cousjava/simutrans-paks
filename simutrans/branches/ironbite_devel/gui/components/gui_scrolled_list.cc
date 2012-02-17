@@ -96,7 +96,7 @@ DBG_MESSAGE("gui_scrolled_list_t::show_selection()","sel=%d, offset=%d, groesse.
 
 void gui_scrolled_list_t::clear_elements()
 {
-	while(  !item_list->empty()  ) {
+	while(  !item_list->is_empty()  ) {
 		delete item_list->remove_first();
 	}
 	adjust_scrollbar();
@@ -240,36 +240,42 @@ void gui_scrolled_list_t::zeichnen(koord pos)
 	PUSH_CLIP(x+1,y+1,w-2,h-2);
 	int ycum = y+2-offset; // y cumulative
 	int i=0;
-	slist_iterator_tpl<gui_scrolled_list_t::scrollitem_t *>iter( item_list );
-	bool ok = iter.next();
-	while(ok) {
-		gui_scrolled_list_t::scrollitem_t *item = iter.get_current();
 
-		// Hajo: advance iterator, so that we can remove the current object
-		// safely
-		ok = iter.next();
-
-		if(  !item->is_valid()  ) {
-			item_list->remove(item);
-			delete item;
-			if(i == selection) {
+	slist_iterator_tpl <scrollitem_t *> iter (item_list);
+	while(iter.next())
+	{
+		scrollitem_t * const item = iter.get_current();
+		if(  !item->is_valid()  ) 
+		{		
+			if(i == selection)
+			{
 				selection = -1;
 			}
-			else if(  i<selection  ) {
+			else if(  i<selection  ) 
+			{
 				selection --;
 			}
+
+			item_list->remove(item);
+
+			// Hajo: I think this is safe?
+			delete item;			
 		}
-		else {
-			if(i == selection) {
+		else 
+		{
+			if(i == selection) 
+				{
 				// the selection is grey on color
 				display_fillbox_wh_clip(x+3, ycum-1, w-5, LINESPACE, highlight_color, true);
 				display_proportional_clip(x+7, ycum, item->get_text(), ALIGN_LEFT, (win_get_focus()==this ? COL_WHITE : MN_GREY3), true);
 			}
-			else {
+			else 
+			{
 				// normal text
 				display_proportional_clip(x+7, ycum, item->get_text(), ALIGN_LEFT, item->get_color(), true);
 			}
 			ycum += LINESPACE;
+
 			i++;
 		}
 	}

@@ -1,18 +1,14 @@
 #ifndef GUI_COMPONENTS_FLOWTEXT_H
 #define GUI_COMPONENTS_FLOWTEXT_H
 
-#include <string>
-
 #include "gui_action_creator.h"
 #include "gui_komponente.h"
 
-struct node_t;
-struct hyperlink_t;
-
-template <class T> class slist_tpl;
+class gui_flowtext_data_t;
 
 /**
  * A component for floating text.
+ *
  * @author Hj. Malthaner
  */
 class gui_flowtext_t :
@@ -21,7 +17,7 @@ class gui_flowtext_t :
 {
 public:
 	gui_flowtext_t();
-	~gui_flowtext_t();
+	virtual ~gui_flowtext_t();
 
 	/**
 	 * Sets the text to display.
@@ -43,16 +39,10 @@ public:
 
 	bool infowin_event(event_t const*) OVERRIDE;
 
-	bool dirty;
-	koord last_offset;
-
 private:
 	koord output(koord pos, bool doit, bool return_max_width=true);
 
-	slist_tpl<node_t *>      * nodes;
-	slist_tpl<hyperlink_t *> * links;
-
-	char title[128];
+	gui_flowtext_data_t * ooo;
 };
 
 #endif

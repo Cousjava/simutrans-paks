@@ -117,12 +117,12 @@ void world_view_t::internal_draw(const koord offset, ding_t const* const ding)
 		gr.y     - raster;          // align the bottom of the image
 	const koord display_off = koord((gr.x - raster) / 2, hgt + yoff) + fine_here;
 
-	const vector_tpl<koord>::const_iterator  start = offsets.begin();
-	const vector_tpl<koord>::const_iterator  end   = offsets.end();
-
 	// display grounds
-	for(  vector_tpl<koord>::const_iterator i = start;  i != end;  ++i  ) {
-		koord  const& off   = *i;
+	// FOR(vector_tpl<koord>, const& off, offsets) {
+	for(uint32 i=0; i<offsets.get_count(); i++) 
+	{
+		koord const & off = offsets.get(i);
+		
 		const koord   k     = here + off + koord(y_offset, y_offset);
 		const sint16  off_x = (off.x - off.y) * 32 * raster / 64 + display_off.x;
 
@@ -144,8 +144,10 @@ void world_view_t::internal_draw(const koord offset, ding_t const* const ding)
 	}
 
 	// display things
-	for(  vector_tpl<koord>::const_iterator i = start;  i != end;  ++i  ) {
-		koord  const& off   = *i;
+	for(uint32 i=0; i<offsets.get_count(); i++) 
+	{
+		koord const & off = offsets.get(i);
+
 		const koord   k     = here + off + koord(y_offset, y_offset);
 		const sint16  off_x = (off.x - off.y) * 32 * raster / 64 + display_off.x;
 		if(  off_x + raster < 0  ||  gr.x < off_x  ||  k.x < 0  ||  k.y < 0  ) {

@@ -547,7 +547,7 @@ DBG_MESSAGE("karte_t::destroy()", "label clear");
 	display_progress(old_progress, max_display_progress);
 
 	// alle convois aufraeumen
-	while (!convoi_array.empty()) {
+	while (!convoi_array.is_empty()) {
 		convoihandle_t cnv = convoi_array.back();
 		cnv->destroy();
 		old_progress ++;
@@ -565,17 +565,18 @@ DBG_MESSAGE("karte_t::destroy()", "stops destroyed");
 	display_progress(old_progress, max_display_progress);
 
 	// remove all target cities (we can skip recalculation anyway)
+	slist_iterator_tpl <fabrik_t*> f_iter (fab_list);
+
+	while(f_iter.next())
 	{
-		slist_iterator_tpl<fabrik_t*> fab_iter(fab_list);
-		while(fab_iter.next()) {
-			fab_iter.get_current()->clear_target_cities();
-		}
+		fabrik_t* const fab = f_iter.get_current();
+		fab->clear_target_cities();
 	}
 
 	// delete towns first (will also delete all their houses)
 	// for the next game we need to remember the desired number ...
 	sint32 const no_of_cities = settings.get_anzahl_staedte();
-	for(  uint32 i=0;  !stadt.empty();  i++  ) {
+	for(  uint32 i=0;  !stadt.is_empty();  i++  ) {
 		rem_stadt(stadt.front());
 		old_progress += 10;
 		if(  (i&0x00F) == 0  ) {
@@ -587,14 +588,14 @@ DBG_MESSAGE("karte_t::destroy()", "towns destroyed");
 
 	display_progress( old_progress, max_display_progress );
 	old_progress += cached_groesse_karte_x*cached_groesse_karte_y;
+	while(!sync_list.is_empty()) {
 #ifndef SYNC_VECTOR
-	while(!sync_list.empty()) {
 		sync_steppable *ss = sync_list.remove_first();
 		delete ss;
-	}
 #else
-	clear_ptr_vector( sync_list );
+		delete sync_list.back();
 #endif
+	}
 	// entfernt alle synchronen objekte aus der liste
 	sync_list.clear();
 	display_progress( old_progress, max_display_progress );
@@ -630,11 +631,12 @@ DBG_MESSAGE("karte_t::destroy()", "marker destroyed");
 DBG_MESSAGE("karte_t::destroy()", "player destroyed");
 
 	// alle fabriken aufraeumen
+	slist_iterator_tpl <fabrik_t*> iter (fab_list);
+
+	while(iter.next())
 	{
-		slist_iterator_tpl<fabrik_t*> fab_iter(fab_list);
-		while(fab_iter.next()) {
-			delete fab_iter.get_current();
-		}
+		fabrik_t* const f = iter.get_current();
+		delete f;
 	}
 	fab_list.clear();
 DBG_MESSAGE("karte_t::destroy()", "factories destroyed");
@@ -646,7 +648,7 @@ DBG_MESSAGE("karte_t::destroy()", "attraction list destroyed");
 	delete scenario;
 	scenario = NULL;
 
-assert( depot_t::get_depot_list().empty() );
+assert( depot_t::get_depot_list().is_empty() );
 
 DBG_MESSAGE("karte_t::destroy()", "world destroyed");
 	printf("World destroyed.\n");
@@ -673,7 +675,8 @@ void karte_t::add_stadt(stadt_t *s)
 	stadt.append(s, s->get_einwohner(), 64);
 
 	// Knightly : add links between this city and other cities as well as attractions
-	for(  uint32 c=0;  c<stadt.get_count();  ++c  ) {
+	for(  uint32 c=0;  c<stadt.get_count();  ++c  ) 
+	{
 		stadt.get(c)->add_target_city(s);
 	}
 	s->recalc_target_cities();
@@ -686,7 +689,7 @@ void karte_t::add_stadt(stadt_t *s)
  */
 bool karte_t::rem_stadt(stadt_t *s)
 {
-	if(s == NULL  ||  stadt.empty()) {
+	if(s == NULL  ||  stadt.is_empty()) {
 		// no town there to delete ...
 		return false;
 	}
@@ -700,15 +703,19 @@ bool karte_t::rem_stadt(stadt_t *s)
 	settings.set_anzahl_staedte(settings.get_anzahl_staedte() - 1);
 
 	// Knightly : remove links between this city and other cities
-	for(  uint32 c=0;  c<stadt.get_count();  ++c  ) {
+	for(  uint32 c=0;  c<stadt.get_count();  ++c  ) 
+	{
 		stadt.at(c)->remove_target_city(s);
 	}
 
 	// remove all links from factories
 	DBG_DEBUG4("karte_t::rem_stadt()", "fab_list %i", fab_list.get_count() );
-	slist_iterator_tpl<fabrik_t *> iter(fab_list);
-	while(iter.next()) {
-		(iter.get_current())->remove_target_city(s);
+	slist_iterator_tpl <fabrik_t*> iter (fab_list);
+
+	while(iter.next())
+	{
+		fabrik_t* const f = iter.get_current();
+		f->remove_target_city(s);
 	}
 
 	// ok, we can delete this
@@ -839,14 +846,14 @@ void karte_t::create_rivers( sint16 number )
 			}
 		}
 	}
-	if (water_tiles.empty()) {
+	if (water_tiles.is_empty()) {
 		dbg->message("karte_t::create_rivers()","There aren't any water tiles!\n");
 		return;
 	}
 
 	// now make rivers
 	uint8 retrys = 0;
-	while (number > 0 && !mountain_tiles.empty() && retrys++ < 100) {
+	while (number > 0 && !mountain_tiles.is_empty() && retrys++ < 100) {
 		koord const start = pick_any_weighted(mountain_tiles);
 		koord const end   = pick_any(water_tiles);
 		sint16 dist = koord_distance(start,end);
@@ -884,7 +891,7 @@ printf("Creating cities ...\n");
 DBG_DEBUG("karte_t::distribute_groundobjs_cities()","prepare cities");
 	vector_tpl<koord> *pos = stadt_t::random_place(this, new_anzahl_staedte, old_x, old_y);
 
-	if(  !pos->empty()  ) {
+	if(  !pos->is_empty()  ) {
 		const sint32 old_anzahl_staedte = stadt.get_count();
 		new_anzahl_staedte = pos->get_count();
 
@@ -913,9 +920,11 @@ DBG_DEBUG("karte_t::distribute_groundobjs_cities()","prepare cities");
 
 			uint32 game_start = current_month;
 			// townhalls available since?
+
 			const vector_tpl<const haus_besch_t *> *s = hausbauer_t::get_list(haus_besch_t::rathaus);
 			for (uint32 i = 0; i<s->get_count(); i++) {
 				const haus_besch_t *besch = s->get(i);
+
 				uint32 intro_year_month = besch->get_intro_year_month();
 				if(  intro_year_month<game_start  ) {
 					game_start = intro_year_month;
@@ -2490,9 +2499,12 @@ void karte_t::rotate90()
 	zeiger->change_pos( koord3d::invalid );
 
 	// preprocessing, detach stops from factories to prevent crash
-	slist_iterator_tpl <halthandle_t> halt_pre_iter (haltestelle_t::get_alle_haltestellen());
-	while( halt_pre_iter.next() ) {
-		halt_pre_iter.get_current()->release_factory_links();
+	slist_iterator_tpl <halthandle_t> h_iter (haltestelle_t::get_alle_haltestellen());
+
+	while(h_iter.next())
+	{
+		halthandle_t const halt = h_iter.get_current();
+		halt->release_factory_links();
 	}
 
 	// first: rotate all things on the map
@@ -2535,22 +2547,33 @@ void karte_t::rotate90()
 	cached_groesse_gitter_y = wx;
 
 	// now step all towns (to generate passengers)
-	for (weighted_vector_tpl<stadt_t*>::const_iterator i = stadt.begin(), end = stadt.end(); i != end; ++i) {
-		(*i)->rotate90( cached_groesse_karte_x );
+	weighted_vector_iterator_tpl <stadt_t*> s_iter (stadt);
+
+	while(s_iter.next())
+	{
+		stadt_t * const city = s_iter.get_current();
+		city->rotate90(cached_groesse_karte_x);
 	}
 
-	slist_iterator_tpl<fabrik_t *> iter(fab_list);
-	while(iter.next()) {
-		iter.get_current()->rotate90( cached_groesse_karte_x );
+	slist_iterator_tpl <fabrik_t*> f_iter (fab_list);
+
+	while(f_iter.next())
+	{
+		fabrik_t * const fab = f_iter.get_current();
+		fab->rotate90(cached_groesse_karte_x);
 	}
 
-	slist_iterator_tpl <halthandle_t> halt_iter (haltestelle_t::get_alle_haltestellen());
-	while( halt_iter.next() ) {
-		halt_iter.get_current()->rotate90( cached_groesse_karte_x );
+	slist_iterator_tpl <halthandle_t> h_iter2 (haltestelle_t::get_alle_haltestellen());
+
+	while(h_iter2.next())
+	{
+		halthandle_t const halt = h_iter2.get_current();
+		halt->rotate90(cached_groesse_karte_x);
 	}
 
 	// rotate all other objects like factories and convois
-	for(unsigned i=0; i<convoi_array.get_count();  i++) {
+	for(unsigned i=0; i<convoi_array.get_count();  i++) 
+	{
 		convoi_array.get(i)->rotate90( cached_groesse_karte_x );
 	}
 
@@ -2561,9 +2584,12 @@ void karte_t::rotate90()
 	}
 
 	// rotate label texts
-	slist_iterator_tpl <koord> label_iter (labels);
-	while( label_iter.next() ) {
-		label_iter.access_current().rotate90( cached_groesse_karte_x );
+	slist_iterator_tpl <koord> la_iter (labels);
+
+	while(la_iter.next())
+	{
+		koord & label = la_iter.access_current();
+		label.rotate90(cached_groesse_karte_x);
 	}
 
 	// rotate view
@@ -2637,9 +2663,11 @@ bool karte_t::rem_fab(fabrik_t *fab)
 		}
 
 		// remove all links from factories
-		slist_iterator_tpl<fabrik_t *> iter (fab_list);
-		while(iter.next()) {
-			fabrik_t * fab = iter.get_current();
+		slist_iterator_tpl <fabrik_t*> iter (fab_list);
+
+	while(iter.next())
+	{
+		fabrik_t* const fab = iter.get_current();
 			fab->rem_lieferziel(pos);
 			fab->rem_supplier(pos);
 		}
@@ -2667,7 +2695,8 @@ void karte_t::add_ausflugsziel(gebaeude_t *gb)
 	ausflugsziele.append( gb, gb->get_tile()->get_besch()->get_level(), 16 );
 
 	// Knightly : add links between this attraction and all cities
-	for(  uint32 c=0;  c<stadt.get_count();  ++c  ) {
+	for(  uint32 c=0;  c<stadt.get_count();  ++c  ) 
+	{
 		stadt.get(c)->add_target_attraction(gb);
 	}
 }
@@ -2679,7 +2708,8 @@ void karte_t::remove_ausflugsziel(gebaeude_t *gb)
 	ausflugsziele.remove( gb );
 
 	// Knightly : remove links between this attraction and all cities
-	for(  uint32 c=0;  c<stadt.get_count();  ++c  ) {
+	for(  uint32 c=0;  c<stadt.get_count();  ++c  ) 
+	{
 		stadt.at(c)->remove_target_attraction(gb);
 	}
 }
@@ -2693,8 +2723,11 @@ stadt_t *karte_t::suche_naechste_stadt(const koord pos) const
 	stadt_t *best = NULL;
 
 	if(ist_in_kartengrenzen(pos)) {
-		for (weighted_vector_tpl<stadt_t*>::const_iterator i = stadt.begin(), end = stadt.end(); i != end; ++i) {
-			stadt_t* s = *i;
+		weighted_vector_iterator_tpl <stadt_t*> iter (stadt);
+
+	while(iter.next())
+	{
+		stadt_t* const s = iter.get_current();
 			const koord k = s->get_pos();
 			const long dist = (pos.x-k.x)*(pos.x-k.x) + (pos.y-k.y)*(pos.y-k.y);
 			if(dist < min_dist) {
@@ -2764,17 +2797,17 @@ void karte_t::sync_step(long delta_t, bool sync, bool display )
 
 #ifndef SYNC_VECTOR
 		// insert new objects created during last sync_step (eg vehicle smoke)
-		if(!sync_add_list.empty()) {
+		if(!sync_add_list.is_empty()) {
 			sync_list.append_list(sync_add_list);
 		}
 #else
-		while(  !sync_add_list.empty()  ) {
+		while(  !sync_add_list.is_empty()  ) {
 			sync_list.append( sync_add_list.remove_first() );
 		}
 #endif
 
 		// now remove everything from last time
-		while(!sync_remove_list.empty()) {
+		while(!sync_remove_list.is_empty()) {
 			sync_list.remove( sync_remove_list.remove_first() );
 		}
 
@@ -2793,9 +2826,12 @@ void karte_t::sync_step(long delta_t, bool sync, bool display )
 #else
 		static vector_tpl<sync_steppable *> sync_list_copy;
 		sync_list_copy.resize( sync_list.get_count() );
-		for(  vector_tpl<sync_steppable*>::const_iterator i=sync_list.begin(), ende=sync_list.end();  i!=ende;  ++i  ) {
+		vector_iterator_tpl <sync_steppable*> iter (sync_list);
+
+	while(iter.next())
+	{
+		sync_steppable* const ss = iter.get_current();
 			// if false, then remove
-			sync_steppable *ss = *i;
 			if(!ss->sync_step(delta_t)) {
 				delete ss;
 			}
@@ -2808,7 +2844,7 @@ void karte_t::sync_step(long delta_t, bool sync, bool display )
 #endif
 
 		// now remove everything from this time
-		while(!sync_remove_list.empty()) {
+		while(!sync_remove_list.is_empty()) {
 			sync_list.remove( sync_remove_list.remove_first() );
 		}
 
@@ -2966,9 +3002,12 @@ void karte_t::neuer_monat()
 
 	// this should be done before a map update, since the map may want an update of the way usage
 //	DBG_MESSAGE("karte_t::neuer_monat()","ways");
-	slist_iterator_tpl <weg_t *> weg_iter (weg_t::get_alle_wege());
-	while( weg_iter.next() ) {
-		weg_iter.get_current()->neuer_monat();
+	slist_iterator_tpl <weg_t*> w_iter (weg_t::get_alle_wege());
+
+	while(w_iter.next())
+	{
+		weg_t* const way = w_iter.get_current();
+		way->neuer_monat();
 	}
 
 	// recalc old settings (and maybe update the staops with the current values)
@@ -2978,7 +3017,8 @@ void karte_t::neuer_monat()
 
 //	DBG_MESSAGE("karte_t::neuer_monat()","convois");
 	// hsiegeln - call new month for convois
-	for(unsigned i=0;  i<convoi_array.get_count();  i++ ) {
+	for(unsigned i=0;  i<convoi_array.get_count();  i++ ) 
+	{
 		convoihandle_t cnv = convoi_array.get(i);
 		cnv->new_month();
 	}
@@ -2986,20 +3026,31 @@ void karte_t::neuer_monat()
 	INT_CHECK("simworld 1701");
 
 //	DBG_MESSAGE("karte_t::neuer_monat()","factories");
-	slist_iterator_tpl<fabrik_t*> iter (fab_list);
-	while(iter.next()) {
-		fabrik_t * fab = iter.get_current();
+	slist_iterator_tpl <fabrik_t*> fab_iter (fab_list);
+
+	while(fab_iter.next())
+	{
+		fabrik_t * const fab = fab_iter.get_current();
 		fab->neuer_monat();
 	}
 	INT_CHECK("simworld 1278");
 
 
 //	DBG_MESSAGE("karte_t::neuer_monat()","cities");
-	for (weighted_vector_tpl<stadt_t*>::const_iterator i = stadt.begin(), end = stadt.end(); i != end; ++i) {
-		stadt.update( *i, (*i)->get_einwohner() );
+	weighted_vector_iterator_tpl <stadt_t*> c_iter (stadt);
+
+	while(c_iter.next())
+	{
+		stadt_t * const city = c_iter.get_current();
+		stadt.update(city, city->get_einwohner());
 	}
-	for (weighted_vector_tpl<stadt_t*>::const_iterator i = stadt.begin(), end = stadt.end(); i != end; ++i) {
-		(*i)->neuer_monat( need_locality_update );
+	
+	weighted_vector_iterator_tpl <stadt_t*> s_iter (stadt);
+
+	while(s_iter.next())
+	{
+		stadt_t * const city = s_iter.get_current();
+		city->neuer_monat(need_locality_update);
 	}
 
 	INT_CHECK("simworld 1282");
@@ -3039,9 +3090,12 @@ void karte_t::neuer_monat()
 	INT_CHECK("simworld 1289");
 
 //	DBG_MESSAGE("karte_t::neuer_monat()","halts");
-	slist_iterator_tpl <halthandle_t> halt_iter (haltestelle_t::get_alle_haltestellen());
-	while( halt_iter.next() ) {
-		halt_iter.get_current()->neuer_monat();
+	slist_iterator_tpl <halthandle_t> iter (haltestelle_t::get_alle_haltestellen());
+
+	while(iter.next())
+	{
+		halthandle_t const s = iter.get_current();
+		s->neuer_monat();
 		INT_CHECK("simworld 1877");
 	}
 
@@ -3087,7 +3141,8 @@ DBG_MESSAGE("karte_t::neues_jahr()","speedbonus for %d %i, %i, %i, %i, %i, %i, %
 	buf.printf( translator::translate("Year %i has started."), letztes_jahr );
 	msg->add_message(buf,koord::invalid,message_t::general,COL_BLACK,skinverwaltung_t::neujahrsymbol->get_bild_nr(0));
 
-	for(unsigned i=0;  i<convoi_array.get_count();  i++ ) {
+	for(unsigned i=0;  i<convoi_array.get_count();  i++ ) 
+	{
 		convoihandle_t cnv = convoi_array.get(i);
 		cnv->neues_jahr();
 	}
@@ -3146,9 +3201,11 @@ void karte_t::recalc_average_speed()
 			}
 			vehicle_type = translator::translate( vehicle_type );
 
-			slist_iterator_tpl<vehikel_besch_t const*> vehinfo(vehikelbauer_t::get_info((waytype_t)i));
-			while (vehinfo.next()) {
-				const vehikel_besch_t* info = vehinfo.get_current();
+			slist_iterator_tpl <vehikel_besch_t const*> iter (vehikelbauer_t::get_info((waytype_t)i));
+
+	while(iter.next())
+	{
+		vehikel_besch_t const* const info = iter.get_current();
 				const uint16 intro_month = info->get_intro_year_month();
 				if(intro_month == current_month) {
 					cbuffer_t buf;
@@ -3384,18 +3441,25 @@ void karte_t::step()
 	// now step all towns (to generate passengers)
 	DBG_DEBUG4("karte_t::step", "step cities");
 	sint64 bev=0;
-	for (weighted_vector_tpl<stadt_t*>::const_iterator i = stadt.begin(), end = stadt.end(); i != end; ++i) {
-		(*i)->step(delta_t);
-		bev += (*i)->get_finance_history_month( 0, HIST_CITICENS );
+	weighted_vector_iterator_tpl <stadt_t*> c_iter (stadt);
+
+	while(c_iter.next())
+	{
+		stadt_t* const i = c_iter.get_current();
+		i->step(delta_t);
+		bev += i->get_finance_history_month(0, HIST_CITICENS);
 	}
 
 	// the inhabitants stuff
 	finance_history_month[0][WORLD_CITICENS] = bev;
 
 	DBG_DEBUG4("karte_t::step", "step factories");
-	slist_iterator_tpl<fabrik_t *> iter(fab_list);
-	while(iter.next()) {
-		iter.get_current()->step(delta_t);
+	slist_iterator_tpl <fabrik_t*> f_iter (fab_list);
+
+	while(f_iter.next())
+	{
+		fabrik_t* const fab = f_iter.get_current();
+		fab->step(delta_t);
 	}
 	finance_history_year[0][WORLD_FACTORIES] = finance_history_month[0][WORLD_FACTORIES] = fab_list.get_count();
 
@@ -3460,14 +3524,18 @@ void karte_t::restore_history()
 		sint64 total_pas = 1, trans_pas = 0;
 		sint64 total_mail = 1, trans_mail = 0;
 		sint64 total_goods = 1, supplied_goods = 0;
-		for (weighted_vector_tpl<stadt_t*>::const_iterator i = stadt.begin(), end = stadt.end(); i != end; ++i) {
-			bev += (*i)->get_finance_history_month( m, HIST_CITICENS );
-			trans_pas += (*i)->get_finance_history_month( m, HIST_PAS_TRANSPORTED );
-			total_pas += (*i)->get_finance_history_month( m, HIST_PAS_GENERATED );
-			trans_mail += (*i)->get_finance_history_month( m, HIST_MAIL_TRANSPORTED );
-			total_mail += (*i)->get_finance_history_month( m, HIST_MAIL_GENERATED );
-			supplied_goods += (*i)->get_finance_history_month( m, HIST_GOODS_RECIEVED );
-			total_goods += (*i)->get_finance_history_month( m, HIST_GOODS_NEEDED );
+		weighted_vector_iterator_tpl <stadt_t*> iter (stadt);
+
+	while(iter.next())
+	{
+		stadt_t* const i = iter.get_current();
+			bev            += i->get_finance_history_month(m, HIST_CITICENS);
+			trans_pas      += i->get_finance_history_month(m, HIST_PAS_TRANSPORTED);
+			total_pas      += i->get_finance_history_month(m, HIST_PAS_GENERATED);
+			trans_mail     += i->get_finance_history_month(m, HIST_MAIL_TRANSPORTED);
+			total_mail     += i->get_finance_history_month(m, HIST_MAIL_GENERATED);
+			supplied_goods += i->get_finance_history_month(m, HIST_GOODS_RECIEVED);
+			total_goods    += i->get_finance_history_month(m, HIST_GOODS_NEEDED);
 		}
 
 		// the inhabitants stuff
@@ -3504,14 +3572,18 @@ void karte_t::restore_history()
 		sint64 total_pas_year = 1, trans_pas_year = 0;
 		sint64 total_mail_year = 1, trans_mail_year = 0;
 		sint64 total_goods_year = 1, supplied_goods_year = 0;
-		for (weighted_vector_tpl<stadt_t*>::const_iterator i = stadt.begin(), end = stadt.end(); i != end; ++i) {
-			bev += (*i)->get_finance_history_year( y, HIST_CITICENS );
-			trans_pas_year += (*i)->get_finance_history_year( y, HIST_PAS_TRANSPORTED );
-			total_pas_year += (*i)->get_finance_history_year( y, HIST_PAS_GENERATED );
-			trans_mail_year += (*i)->get_finance_history_year( y, HIST_MAIL_TRANSPORTED );
-			total_mail_year += (*i)->get_finance_history_year( y, HIST_MAIL_GENERATED );
-			supplied_goods_year += (*i)->get_finance_history_year( y, HIST_GOODS_RECIEVED );
-			total_goods_year += (*i)->get_finance_history_year( y, HIST_GOODS_NEEDED );
+		weighted_vector_iterator_tpl <stadt_t*> iter (stadt);
+
+	while(iter.next())
+	{
+		stadt_t* const i = iter.get_current();
+			bev                 += i->get_finance_history_year(y, HIST_CITICENS);
+			trans_pas_year      += i->get_finance_history_year(y, HIST_PAS_TRANSPORTED);
+			total_pas_year      += i->get_finance_history_year(y, HIST_PAS_GENERATED);
+			trans_mail_year     += i->get_finance_history_year(y, HIST_MAIL_TRANSPORTED);
+			total_mail_year     += i->get_finance_history_year(y, HIST_MAIL_GENERATED);
+			supplied_goods_year += i->get_finance_history_year(y, HIST_GOODS_RECIEVED);
+			total_goods_year    += i->get_finance_history_year(y, HIST_GOODS_NEEDED);
 		}
 
 		// the inhabitants stuff
@@ -3558,20 +3630,24 @@ void karte_t::update_history()
 	sint64 total_pas_year = 1, trans_pas_year = 0;
 	sint64 total_mail_year = 1, trans_mail_year = 0;
 	sint64 total_goods_year = 1, supplied_goods_year = 0;
-	for (weighted_vector_tpl<stadt_t*>::const_iterator i = stadt.begin(), end = stadt.end(); i != end; ++i) {
-		bev += (*i)->get_finance_history_month( 0, HIST_CITICENS );
-		trans_pas += (*i)->get_finance_history_month( 0, HIST_PAS_TRANSPORTED );
-		total_pas += (*i)->get_finance_history_month( 0, HIST_PAS_GENERATED );
-		trans_mail += (*i)->get_finance_history_month( 0, HIST_MAIL_TRANSPORTED );
-		total_mail += (*i)->get_finance_history_month( 0, HIST_MAIL_GENERATED );
-		supplied_goods += (*i)->get_finance_history_month( 0, HIST_GOODS_RECIEVED );
-		total_goods += (*i)->get_finance_history_month( 0, HIST_GOODS_NEEDED );
-		trans_pas_year += (*i)->get_finance_history_year( 0, HIST_PAS_TRANSPORTED );
-		total_pas_year += (*i)->get_finance_history_year( 0, HIST_PAS_GENERATED );
-		trans_mail_year += (*i)->get_finance_history_year( 0, HIST_MAIL_TRANSPORTED );
-		total_mail_year += (*i)->get_finance_history_year( 0, HIST_MAIL_GENERATED );
-		supplied_goods_year += (*i)->get_finance_history_year( 0, HIST_GOODS_RECIEVED );
-		total_goods_year += (*i)->get_finance_history_year( 0, HIST_GOODS_NEEDED );
+	weighted_vector_iterator_tpl <stadt_t*> iter (stadt);
+
+	while(iter.next())
+	{
+		stadt_t* const i = iter.get_current();
+		bev                 += i->get_finance_history_month(0, HIST_CITICENS);
+		trans_pas           += i->get_finance_history_month(0, HIST_PAS_TRANSPORTED);
+		total_pas           += i->get_finance_history_month(0, HIST_PAS_GENERATED);
+		trans_mail          += i->get_finance_history_month(0, HIST_MAIL_TRANSPORTED);
+		total_mail          += i->get_finance_history_month(0, HIST_MAIL_GENERATED);
+		supplied_goods      += i->get_finance_history_month(0, HIST_GOODS_RECIEVED);
+		total_goods         += i->get_finance_history_month(0, HIST_GOODS_NEEDED);
+		trans_pas_year      += i->get_finance_history_year( 0, HIST_PAS_TRANSPORTED);
+		total_pas_year      += i->get_finance_history_year( 0, HIST_PAS_GENERATED);
+		trans_mail_year     += i->get_finance_history_year( 0, HIST_MAIL_TRANSPORTED);
+		total_mail_year     += i->get_finance_history_year( 0, HIST_MAIL_GENERATED);
+		supplied_goods_year += i->get_finance_history_year( 0, HIST_GOODS_RECIEVED);
+		total_goods_year    += i->get_finance_history_year( 0, HIST_GOODS_NEEDED);
 	}
 
 	finance_history_month[0][WORLD_GROWTH] = bev-last_month_bev;
@@ -4082,8 +4158,12 @@ DBG_MESSAGE("karte_t::speichern(loadsave_t *file)", "start");
 		}
 	}
 
-	for (weighted_vector_tpl<stadt_t*>::const_iterator i = stadt.begin(), end = stadt.end(); i != end; ++i) {
-		(*i)->rdwr(file);
+	weighted_vector_iterator_tpl <stadt_t*> iter (stadt);
+
+	while(iter.next())
+	{
+		stadt_t* const i = iter.get_current();
+		i->rdwr(file);
 		if(silent) {
 			INT_CHECK("saving");
 		}
@@ -4113,9 +4193,12 @@ DBG_MESSAGE("karte_t::speichern(loadsave_t *file)", "saved tiles");
 
 	sint32 fabs = fab_list.get_count();
 	file->rdwr_long(fabs);
-	slist_iterator_tpl<fabrik_t*> fiter( fab_list );
-	while(fiter.next()) {
-		(fiter.get_current())->rdwr(file);
+	slist_iterator_tpl <fabrik_t*> f_iter (fab_list);
+
+	while(f_iter.next())
+	{
+		fabrik_t* const f = f_iter.get_current();
+		f->rdwr(file);
 		if(silent) {
 			INT_CHECK("saving");
 		}
@@ -4124,9 +4207,12 @@ DBG_MESSAGE("karte_t::speichern(loadsave_t *file)", "saved fabs");
 
 	sint32 haltcount=haltestelle_t::get_alle_haltestellen().get_count();
 	file->rdwr_long(haltcount);
-	slist_iterator_tpl<halthandle_t> iter (haltestelle_t::get_alle_haltestellen());
-	while(iter.next()) {
-		iter.get_current()->rdwr( file );
+	slist_iterator_tpl <halthandle_t> h_iter (haltestelle_t::get_alle_haltestellen());
+
+	while(h_iter.next())
+	{
+		halthandle_t const halt = h_iter.get_current();
+		halt->rdwr(file);
 	}
 DBG_MESSAGE("karte_t::speichern(loadsave_t *file)", "saved stops");
 
@@ -4135,7 +4221,8 @@ DBG_MESSAGE("karte_t::speichern(loadsave_t *file)", "saved stops");
 		uint16 i=convoi_array.get_count();
 		file->rdwr_short(i);
 	}
-	for(unsigned i=0;  i<convoi_array.get_count();  i++ ) {
+	for(int i=0; i<convoi_array.get_count(); i++)
+	{
 		// one MUST NOT call INT_CHECK here or else the convoi will be broken during reloading!
 		convoihandle_t cnv = convoi_array.get(i);
 		cnv->rdwr(file);
@@ -4326,7 +4413,7 @@ DBG_MESSAGE("karte_t::laden()","Savegame version is %d", file.get_version());
 		file.close();
 		if(  !umgebung_t::networkmode  ||  !umgebung_t::restore_UI  ) {
 			// warning message about missing paks
-			if(  !missing_pak_names.empty()  ) {
+			if(  !missing_pak_names.is_empty()  ) {
 				cbuffer_t msg;
 				msg.append("<title>");
 				msg.append(translator::translate("Missing pakfiles"));
@@ -4334,14 +4421,19 @@ DBG_MESSAGE("karte_t::laden()","Savegame version is %d", file.get_version());
 
 				cbuffer_t error_paks;
 				cbuffer_t warning_paks;
-				stringhashtable_iterator_tpl<missing_level_t> iterator(missing_pak_names);
-				while(iterator.next()) {
-					if(  iterator.get_current_value() <= MISSING_ERROR  ) {
-						error_paks.append(translator::translate(iterator.get_current_key()));
+				stringhashtable_iterator_tpl <missing_level_t> iter (missing_pak_names);
+
+				while(iter.next())
+				{
+					const char *key = iter.get_current_key();
+					missing_level_t const & i = iter.get_current();
+					
+					if (i <= MISSING_ERROR) {
+						error_paks.append(translator::translate(key));
 						error_paks.append("<br>\n");
 					}
 					else {
-						warning_paks.append(translator::translate(iterator.get_current_key()));
+						warning_paks.append(translator::translate(key));
 						warning_paks.append("<br>\n");
 					}
 				}
@@ -4757,8 +4849,12 @@ DBG_MESSAGE("karte_t::laden()", "%d ways loaded",weg_t::get_alle_wege().get_coun
 
 	// must finish loading cities first before cleaning up factories
 	weighted_vector_tpl<stadt_t*> new_weighted_stadt(stadt.get_count() + 1);
-	for (weighted_vector_tpl<stadt_t*>::const_iterator i = stadt.begin(), end = stadt.end(); i != end; ++i) {
-		stadt_t* s = *i;
+	
+	weighted_vector_iterator_tpl <stadt_t*> c_iter (stadt);
+
+	while(c_iter.next())
+	{
+		stadt_t* const s = c_iter.get_current();
 		s->laden_abschliessen();
 		s->recalc_target_cities();
 		new_weighted_stadt.append(s, s->get_einwohner(), 64);
@@ -4768,9 +4864,12 @@ DBG_MESSAGE("karte_t::laden()", "%d ways loaded",weg_t::get_alle_wege().get_coun
 	DBG_MESSAGE("karte_t::laden()", "cities initialized");
 
 	DBG_MESSAGE("karte_t::laden()", "clean up factories");
-	slist_iterator_tpl<fabrik_t*> fiter ( fab_list );
-	while(fiter.next()) {
-		fiter.get_current()->laden_abschliessen();
+	slist_iterator_tpl <fabrik_t*> iter (fab_list);
+
+	while(iter.next())
+	{
+		fabrik_t* const f = iter.get_current();
+		f->laden_abschliessen();
 	}
 
 DBG_MESSAGE("karte_t::laden()", "%d factories loaded", fab_list.get_count());
@@ -4782,30 +4881,40 @@ DBG_MESSAGE("karte_t::laden()", "%d factories loaded", fab_list.get_count());
 		// this needs to avoid the first city to be connected to all town
 		settings.set_factory_worker_minimum_towns(0);
 		settings.set_factory_worker_maximum_towns(stadt.get_count() + 1);
-		for (weighted_vector_tpl<stadt_t*>::const_iterator i = stadt.begin(), end = stadt.end(); i != end; ++i) {
-			(*i)->verbinde_fabriken();
+		weighted_vector_iterator_tpl <stadt_t*> iter (stadt);
+
+	while(iter.next())
+	{
+		stadt_t* const i = iter.get_current();
+			i->verbinde_fabriken();
 		}
 		settings.set_factory_worker_minimum_towns(temp_min);
 		settings.set_factory_worker_maximum_towns(temp_max);
 	}
 
 	// resolve dummy stops into real stops first ...
-	for(  slist_tpl<halthandle_t>::const_iterator i=haltestelle_t::get_alle_haltestellen().begin(); i!=haltestelle_t::get_alle_haltestellen().end();  ++i  ) {
-		if(  (*i)->get_besitzer()  &&  (*i)->existiert_in_welt()  ) {
-			(*i)->laden_abschliessen();
+	slist_iterator_tpl <halthandle_t> hl_iter (haltestelle_t::get_alle_haltestellen());
+
+	while(hl_iter.next())
+	{
+		halthandle_t const i = hl_iter.get_current();
+		if (i->get_besitzer() && i->existiert_in_welt()) {
+			i->laden_abschliessen();
 		}
 	}
 
 	// ... before removing dummy stops
-	for(  slist_tpl<halthandle_t>::const_iterator i=haltestelle_t::get_alle_haltestellen().begin(); i!=haltestelle_t::get_alle_haltestellen().end();  ) {
-		if(  (*i)->get_besitzer()==NULL  ||  !(*i)->existiert_in_welt()  ) {
+	// for(  slist_tpl<halthandle_t>::const_iterator i=haltestelle_t::get_alle_haltestellen().begin(); i!=haltestelle_t::get_alle_haltestellen().end();  ) {
+	slist_iterator_tpl<halthandle_t> halt_iter (haltestelle_t::get_alle_haltestellen());
+	
+	while(halt_iter.next())
+	{
+		halthandle_t halt = halt_iter.access_current();
+		
+		if(  halt->get_besitzer()==NULL  ||  ! halt->existiert_in_welt()  ) 
+		{
 			// this stop was only needed for loading goods ...
-			halthandle_t h = (*i);
-			++i;	// goto next
-			haltestelle_t::destroy(h);	// remove from list
-		}
-		else {
-			++i;
+			haltestelle_t::destroy(halt);	// remove from list
 		}
 	}
 
@@ -4841,12 +4950,16 @@ DBG_MESSAGE("karte_t::laden()", "%d factories loaded", fab_list.get_count());
 #if 0
 	// reroute goods for benchmarking
 	dt = system_time();
-	for(  slist_tpl<halthandle_t>::const_iterator i=haltestelle_t::get_alle_haltestellen().begin(); i!=haltestelle_t::get_alle_haltestellen().end();  ++i  ) {
+	slist_iterator_tpl <halthandle_t> iter (haltestelle_t::get_alle_haltestellen());
+
+	while(iter.next())
+	{
+		halthandle_t const i = iter.get_current();
 		sint16 dummy = 0x7FFF;
 		if((hnr++%64)==0) {
 			display_progress(get_groesse_y()+48+stadt.get_count()+128+(hnr*40)/hmax, get_groesse_y()+256+stadt.get_count());
 		}
-		(*i)->reroute_goods(dummy);
+		i->reroute_goods(dummy);
 	}
 	DBG_MESSAGE("reroute_goods()","for all haltstellen_t took %ld ms", system_time()-dt );
 #endif
@@ -5102,9 +5215,13 @@ void karte_t::step_year()
 	reset_timer();
 	recalc_average_speed();
 	koord::locality_factor = settings.get_locality_factor( letztes_jahr );
-	for (weighted_vector_tpl<stadt_t*>::const_iterator i = stadt.begin(), end = stadt.end(); i != end; ++i) {
-		(*i)->recalc_target_cities();
-		(*i)->recalc_target_attractions();
+	weighted_vector_iterator_tpl <stadt_t*> iter (stadt);
+
+	while(iter.next())
+	{
+		stadt_t* const i = iter.get_current();
+		i->recalc_target_cities();
+		i->recalc_target_attractions();
 	}
 }
 
@@ -5472,9 +5589,13 @@ void karte_t::interactive_event(event_t &ev)
 			default:
 				{
 					bool ok=false;
-					for (vector_tpl<werkzeug_t *>::const_iterator iter = werkzeug_t::char_to_tool.begin(), end = werkzeug_t::char_to_tool.end(); iter != end; ++iter) {
-						if(  (*iter)->command_key==ev.ev_code  ) {
-							set_werkzeug( *iter, get_active_player() );
+					vector_iterator_tpl <werkzeug_t*> iter (werkzeug_t::char_to_tool);
+
+	while(iter.next())
+	{
+		werkzeug_t* const i = iter.get_current();
+						if (i->command_key == ev.ev_code) {
+							set_werkzeug(i, get_active_player());
 							ok = true;
 							break;
 						}
@@ -5593,18 +5714,35 @@ static slist_tpl<network_world_command_t*> command_queue;
 
 void karte_t::command_queue_append(network_world_command_t* nwc) const
 {
+	/*
 	slist_tpl<network_world_command_t*>::iterator i = command_queue.begin();
 	slist_tpl<network_world_command_t*>::iterator end = command_queue.end();
 	while(i != end  &&  network_world_command_t::cmp(*i, nwc)) {
 		++i;
 	}
 	command_queue.insert(i, nwc);
+	*/
+
+	slist_iterator_tpl<network_world_command_t*> iter (command_queue);
+	int index = 0;
+
+	while(iter.next())
+	{
+		if(network_world_command_t::cmp(iter.get_current(), nwc))
+		{
+			break;
+		}
+		
+		index ++;
+	}
+
+	command_queue.insert_at(index, nwc);
 }
 
 
 void karte_t::clear_command_queue() const
 {
-	while (!command_queue.empty()) {
+	while (!command_queue.is_empty()) {
 		delete command_queue.remove_first();
 	}
 }
@@ -5814,7 +5952,7 @@ bool karte_t::interactive(uint32 quit_month)
 				nwc = network_get_received_command();
 			}
 			// when execute next command?
-			if(  !command_queue.empty()  ) {
+			if(  !command_queue.is_empty()  ) {
 				next_command_step = command_queue.front()->get_sync_step();
 			}
 			else {
@@ -5844,7 +5982,7 @@ bool karte_t::interactive(uint32 quit_month)
 			DBG_DEBUG4("karte_t::interactive", "end of sleep");
 		}
 
-		while(  !command_queue.empty()  &&  (next_command_step<=sync_steps/*  ||  step_mode&PAUSE_FLAG*/)  ) {
+		while(  !command_queue.is_empty()  &&  (next_command_step<=sync_steps/*  ||  step_mode&PAUSE_FLAG*/)  ) {
 			network_world_command_t *nwc = command_queue.remove_first();
 			if (nwc) {
 				// want to execute something in the past?
@@ -5894,7 +6032,7 @@ bool karte_t::interactive(uint32 quit_month)
 				delete nwc;
 			}
 			// when execute next command?
-			if(  !command_queue.empty()  ) {
+			if(  !command_queue.is_empty()  ) {
 				next_command_step = command_queue.front()->get_sync_step();
 			}
 			else {
@@ -6119,9 +6257,13 @@ void karte_t::network_disconnect()
 }
 
 
-static bool sort_ware_by_name(const freight_desc_t* a, const freight_desc_t* b)
+static int sort_ware_by_name(const void * aa, const void * bb)
 {
-	int diff = strcmp(translator::translate(a->get_name()), translator::translate(b->get_name()));
+	const freight_desc_t* a = (const freight_desc_t*) aa;
+	const freight_desc_t* b = (const freight_desc_t*) bb;
+	
+	const int diff = strcmp(translator::translate(a->get_name()), translator::translate(b->get_name()));
+	
 	return diff < 0;
 }
 
@@ -6132,16 +6274,30 @@ const vector_tpl<const freight_desc_t*> &karte_t::get_goods_list()
 		// Goods list needs to be rebuilt
 
 		// Reset last vehicle filter in all depots, in case goods list has changed
-		slist_iterator_tpl<depot_t *> iter(depot_t::get_depot_list());
-		while (iter.next()) {
-			iter.get_current()->selected_filter = VEHICLE_FILTER_RELEVANT;
+		slist_iterator_tpl <depot_t *> depot_i (depot_t::get_depot_list());
+		while(depot_i.next())
+		{
+			depot_t * depot = depot_i.get_current(); 
+			depot->selected_filter = VEHICLE_FILTER_RELEVANT;
 		}
 
 		const slist_tpl<fabrik_t*> &factories_in_game = get_fab_list();
-		for (slist_tpl<fabrik_t *>::const_iterator factory = factories_in_game.begin(), end = factories_in_game.end(); factory != end;  ++factory) {
-			slist_tpl<const freight_desc_t*> *produced_goods = (*factory)->get_produced_goods();
-			for (slist_tpl<const freight_desc_t*>::iterator good = produced_goods->begin(), end = produced_goods->end(); good != end; ++good) {
-				goods_in_game.insert_unique_ordered(*good, sort_ware_by_name);
+
+		// for (slist_tpl<fabrik_t *>::const_iterator factory = factories_in_game.begin(), end = factories_in_game.end(); factory != end;  ++factory) 
+		slist_iterator_tpl <fabrik_t *> iter (factories_in_game);
+		
+		while(iter.next())
+		{
+			fabrik_t * fab = iter.get_current();
+			
+			slist_tpl<const freight_desc_t*> * produced_goods = fab->get_produced_goods();
+			
+			// for (slist_tpl<const freight_desc_t*>::iterator good = produced_goods->begin(), end = produced_goods->end(); good != end; ++good) 
+			slist_iterator_tpl <const freight_desc_t*> good_iter (produced_goods);
+			
+			while(good_iter.next())
+			{
+				goods_in_game.insert_unique_ordered(good_iter.get_current(), sort_ware_by_name);
 			}
 			delete produced_goods;
 		}

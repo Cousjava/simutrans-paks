@@ -45,7 +45,6 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 	// init buttons
 	// ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
 
-	bt_new.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
 	bt_new.set_typ(button_t::roundbox);
 	bt_new.set_pos( koord(xpos, ypos) );
 	bt_new.set_text("Neue Karte");
@@ -60,7 +59,6 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 
 	ypos += 3 + D_COMP_Y_SPACE;
 
-	bt_load.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
 	bt_load.set_typ(button_t::roundbox);
 	bt_load.set_pos( koord(xpos, ypos) );
 	bt_load.set_text("Laden");
@@ -69,7 +67,6 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 
 	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
 	
-	bt_save.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
 	bt_save.set_typ(button_t::roundbox);
 	bt_save.set_pos( koord(xpos, ypos) );
 	bt_save.set_text("Speichern");
@@ -84,7 +81,6 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 
 	ypos += 3 + D_COMP_Y_SPACE;
 	
-	bt_lang.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
 	bt_lang.set_typ(button_t::roundbox);
 	bt_lang.set_pos( koord(xpos,  ypos) );
 	bt_lang.set_text("Sprache");
@@ -93,7 +89,6 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 
 	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
 	
-	bt_color.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
 	bt_color.set_typ(button_t::roundbox);
 	bt_color.set_pos( koord(xpos, ypos) );
 	bt_color.set_text("Farbe");
@@ -102,7 +97,6 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 
 	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
 	
-	bt_display.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
 	bt_display.set_typ(button_t::roundbox);
 	bt_display.set_pos( koord(xpos, ypos) );
 	bt_display.set_text("Helligk.");
@@ -111,7 +105,6 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 
 	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
 	
-	bt_sound.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
 	bt_sound.set_typ(button_t::roundbox);
 	bt_sound.set_pos( koord(xpos, ypos) );
 	bt_sound.set_text("Sound");
@@ -120,7 +113,6 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 
 	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
 	
-	bt_player.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
 	bt_player.set_typ(button_t::roundbox);
 	bt_player.set_pos( koord(xpos, ypos) );
 	bt_player.set_text("Spieler(mz)");
@@ -136,7 +128,6 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 	ypos += 3 + D_COMP_Y_SPACE;
 	
 	// 01-Nov-2001      Markus Weber    Added
-	bt_quit.set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
 	bt_quit.set_typ(button_t::roundbox);
 	bt_quit.set_pos( koord(xpos, ypos) );
 	bt_quit.set_text("Beenden");

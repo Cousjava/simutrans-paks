@@ -53,7 +53,6 @@ private:
 	stringhashtable_tpl& operator=( stringhashtable_tpl const&);
 };
 
-
 template<class value_t>
 class stringhashtable_iterator_tpl : public hashtable_iterator_tpl<const char *, value_t, stringhash_t>
 {
@@ -64,5 +63,4 @@ public:
 	stringhashtable_iterator_tpl(const hashtable_tpl<const char *, value_t, stringhash_t> &hashtable) :
 		hashtable_iterator_tpl<const char *, value_t, stringhash_t>(hashtable) {}
 };
-
 #endif

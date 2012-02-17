@@ -274,9 +274,10 @@ void button_t::draw_scrollbar(sint16 x, sint16 y, sint16 w, sint16 h, bool horiz
 	}
 }
 
-button_t::button_t() :
-	gui_component_t(true)
+button_t::button_t() : gui_component_t(true)
 {
+	set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
+	
 	b_no_translate = false;
 	translated_text = text = empty;
 	pressed = false;

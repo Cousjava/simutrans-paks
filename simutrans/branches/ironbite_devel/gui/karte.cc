@@ -335,7 +335,7 @@ void reliefkarte_t::calc_map_pixel(const koord k)
 		case MAP_PASSENGER:
 			if(  plan->get_haltlist_count()>0  ) {
 				halthandle_t halt = plan->get_haltlist()[0];
-				if(  halt->get_pax_enabled()  &&  !halt->get_pax_connections()->empty()  ){
+				if(  halt->get_pax_enabled()  &&  !halt->get_pax_connections()->is_empty()  ){
 					set_relief_farbe( k, halt->get_besitzer()->get_player_color1() + 3 );
 				}
 			}
@@ -346,7 +346,7 @@ void reliefkarte_t::calc_map_pixel(const koord k)
 		case MAP_MAIL:
 			if(  plan->get_haltlist_count()>0  ) {
 				halthandle_t halt = plan->get_haltlist()[0];
-				if(  halt->get_post_enabled()  &&  !halt->get_mail_connections()->empty()  ) {
+				if(  halt->get_post_enabled()  &&  !halt->get_mail_connections()->is_empty()  ) {
 					set_relief_farbe( k, halt->get_besitzer()->get_player_color1() + 3 );
 				}
 			}
@@ -653,15 +653,22 @@ void reliefkarte_t::calc_map()
 		const weighted_vector_tpl<gebaeude_t *> &ausflugsziele = welt->get_ausflugsziele();
 		// find the current maximum
 		max_tourist_ziele = 1;
-		for (weighted_vector_tpl<gebaeude_t*>::const_iterator i = ausflugsziele.begin(), end = ausflugsziele.end(); i != end; ++i) {
-			int pax = (*i)->get_passagier_level();
+		weighted_vector_iterator_tpl <gebaeude_t*> iter (ausflugsziele);
+
+		while(iter.next())
+		{
+			gebaeude_t* const i = iter.get_current();
+			int const pax = i->get_passagier_level();
 			if (max_tourist_ziele < pax) {
 				max_tourist_ziele = pax;
 			}
 		}
 		// draw them
-		for (weighted_vector_tpl<gebaeude_t*>::const_iterator i = ausflugsziele.begin(), end = ausflugsziele.end(); i != end; ++i) {
-			const gebaeude_t* g = *i;
+		weighted_vector_iterator_tpl <gebaeude_t*> iter2 (ausflugsziele);
+
+		while(iter2.next())
+		{
+			gebaeude_t* const g = iter2.get_current();
 			koord pos = g->get_pos().get_2d();
 			set_relief_farbe_area( pos, 7, calc_severity_color(g->get_passagier_level(), max_tourist_ziele));
 		}
@@ -670,23 +677,29 @@ void reliefkarte_t::calc_map()
 
 	// since we do iterate the factory info list, this must be done here
 	if(mode==MAP_FACTORIES) {
-		slist_iterator_tpl <fabrik_t *> iter (welt->get_fab_list());
-		while(iter.next()) {
-			koord pos = iter.get_current()->get_pos().get_2d();
+		slist_iterator_tpl <fabrik_t*> iter (welt->get_fab_list());
+
+		while(iter.next())
+		{
+			fabrik_t* const f = iter.get_current();
+			koord const pos = f->get_pos().get_2d();
 			set_relief_farbe_area( pos, 9, COL_BLACK );
-			set_relief_farbe_area( pos, 7, iter.get_current()->get_kennfarbe() );
+			set_relief_farbe_area(pos, 7, f->get_kennfarbe());
 		}
 		return;
 	}
 
 	if(mode==MAP_DEPOT) {
-		slist_iterator_tpl <depot_t *> iter (depot_t::get_depot_list());
-		while(iter.next()) {
-			if(iter.get_current()->get_besitzer()==welt->get_active_player()) {
-				koord pos = iter.get_current()->get_pos().get_2d();
+		slist_iterator_tpl <depot_t*> iter (depot_t::get_depot_list());
+
+		while(iter.next())
+		{
+			depot_t* const d = iter.get_current();
+			if (d->get_besitzer() == welt->get_active_player()) {
+				koord const pos = d->get_pos().get_2d();
 				// offset of one to avoid
 				static uint8 depot_typ_to_color[19]={ COL_ORANGE, COL_YELLOW, COL_RED, 0, 0, 0, 0, 0, 0, COL_PURPLE, COL_DARK_RED, COL_DARK_ORANGE, 0, 0, 0, 0, 0, 0, COL_LIGHT_RED };
-				set_relief_farbe_area(pos, 7, depot_typ_to_color[iter.get_current()->get_typ()-ding_t::bahndepot] );
+				set_relief_farbe_area(pos, 7, depot_typ_to_color[d->get_typ() - ding_t::bahndepot]);
 			}
 		}
 		return;
@@ -795,8 +808,11 @@ const fabrik_t* reliefkarte_t::draw_fab_connections(const uint8 colour, const ko
 		karte_to_screen( fabpos );
 		fabpos += pos;
 		const vector_tpl<koord>& lieferziele = event_get_last_control_shift() & 1 ? fab->get_suppliers() : fab->get_lieferziele();
-		for (vector_tpl<koord>::const_iterator i = lieferziele.begin(), end = lieferziele.end(); i != end; ++i) {
-			koord lieferziel = *i;
+		vector_iterator_tpl <koord> iter (lieferziele);
+
+	while(iter.next())
+	{
+		koord lieferziel = iter.get_current();
 			const fabrik_t * fab2 = fabrik_t::get_fab(welt, lieferziel);
 			if (fab2) {
 				karte_to_screen( lieferziel );
@@ -819,7 +835,7 @@ const fabrik_t* reliefkarte_t::draw_fab_connections(const uint8 colour, const ko
 // draw current schedule
 void reliefkarte_t::draw_schedule(const koord pos) const
 {
-	assert(fpl && !fpl->empty());
+	assert(fpl && !fpl->is_empty());
 
 	koord first_koord;
 	koord last_koord;
@@ -919,8 +935,11 @@ void reliefkarte_t::zeichnen(koord pos)
 		// get city list
 		const weighted_vector_tpl<stadt_t*>& staedte = welt->get_staedte();
 		// for all cities
-		for(  weighted_vector_tpl<stadt_t*>::const_iterator i = staedte.begin(), end = staedte.end();  i != end;  ++i  ) {
-			const stadt_t* stadt = *i;
+		weighted_vector_iterator_tpl <stadt_t*> iter (staedte);
+
+	while(iter.next())
+	{
+		stadt_t* const stadt = iter.get_current();
 			koord k[4];
 			k[0] = stadt->get_linksoben(); // top left
 			k[2] = stadt->get_rechtsunten(); // bottom right
@@ -971,8 +990,11 @@ void reliefkarte_t::zeichnen(koord pos)
 	// ADD: if CRTL key is pressed, temporary show the name
 	if(  mode==MAP_TOWN  ||  event_get_last_control_shift()==2  ) {
 		const weighted_vector_tpl<stadt_t*>& staedte = welt->get_staedte();
-		for (weighted_vector_tpl<stadt_t*>::const_iterator i = staedte.begin(), end = staedte.end(); i != end; ++i) {
-			const stadt_t* stadt = *i;
+		weighted_vector_iterator_tpl <stadt_t*> iter (staedte);
+
+	while(iter.next())
+	{
+		stadt_t* const stadt = iter.get_current();
 			koord p = stadt->get_pos();
 			const char * name = stadt->get_name();
 
@@ -1006,8 +1028,10 @@ void reliefkarte_t::zeichnen(koord pos)
 	}
 
 	// draw a halt name, if it is under the cursor of a schedule
-	if(is_show_schedule  &&  fpl) {
-		if (fpl->empty()) {
+	if(is_show_schedule  &&  fpl) 
+	{
+		if (fpl->is_empty()) 
+		{
 			fpl = NULL;
 		}
 		else {

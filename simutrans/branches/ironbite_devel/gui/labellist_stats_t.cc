@@ -101,8 +101,11 @@ void labellist_stats_t::get_unique_labels(labellist::sort_mode_t sb, bool sr, bo
 	last_world_labels = welt->get_label_list().get_count();
 	labels.resize(last_world_labels);
 
-	for (slist_iterator_tpl<koord> iter(welt->get_label_list()); iter.next();) {
-		koord pos = iter.get_current();
+	slist_iterator_tpl <koord> iter (welt->get_label_list());
+
+	while(iter.next())
+	{
+		koord const& pos = iter.get_current();
 		label_t* label = welt->lookup_kartenboden(pos)->find<label_t>();
 		const char* name = welt->lookup_kartenboden(pos)->get_text();
 		// some old version games don't have label nor name.
@@ -163,7 +166,8 @@ void labellist_stats_t::recalc_size()
 
 	static cbuffer_t buf;
 
-	for(  uint32 i=0;  i<labels.get_count();   i++) {
+	for(uint32 i=0;  i<labels.get_count();   i++) 
+	{
 		const koord pos = labels.get(i);
 
 		buf.clear();

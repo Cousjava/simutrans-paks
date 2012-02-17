@@ -219,21 +219,27 @@ void map_frame_t::update_factory_legend(karte_t *welt /*= NULL*/)
 	// When dialog is opened, update the list of industries currently in the world
 	if (welt != NULL) {
 		factory_list.clear();
-		const slist_tpl<fabrik_t*> &factories_in_game = welt->get_fab_list();
-		slist_iterator_tpl<fabrik_t*> iter(factories_in_game);
-		while (iter.next()) {
-			const fabrik_besch_t *factory_description = iter.get_current()->get_besch();
+		slist_iterator_tpl <fabrik_t*> iter (welt->get_fab_list());
+
+	while(iter.next())
+	{
+		fabrik_t* const f = iter.get_current();
+			fabrik_besch_t const* const factory_description = f->get_besch();
 			factory_list.put(factory_description->get_name(), factory_description);
 		}
 	}
 
 	// Build factory legend
 	const stringhashtable_tpl<const fabrik_besch_t *> & fabesch = (filter_factory_list) ? factory_list : fabrikbauer_t::get_fabesch();
-	stringhashtable_iterator_tpl<const fabrik_besch_t *> iter (fabesch);
-	while(  iter.next()  ) {
-		if(  iter.get_current_value()->get_gewichtung()>0  ) {
-			std::string label( translator::translate(iter.get_current_value()->get_name()) );
-			legend.append_unique( legend_entry_t(label, iter.get_current_value()->get_kennfarbe()) );
+	stringhashtable_iterator_tpl <fabrik_besch_t const*> iter (fabesch);
+
+	while(iter.next())
+	{
+		fabrik_besch_t const * const d = iter.get_current();
+
+		if (d->get_gewichtung() > 0) {
+			std::string const label(translator::translate(d->get_name()));
+			legend.append_unique(legend_entry_t(label, d->get_kennfarbe()));
 		}
 	}
 
@@ -245,6 +251,7 @@ void map_frame_t::update_factory_legend(karte_t *welt /*= NULL*/)
 
 		for(  size_t l = 0;  l < legend.get_count();  l++  ) {
 			std::string label = legend.get(l).text;
+
 			size_t i;
 			for(  i=12;  i < label.size()  &&  display_calc_proportional_string_len_width(label.c_str(), i) < get_window_size().x / fac_cols - dot_len - 13;  i++  ) {}
 			if(  i < label.size()  ) {
@@ -635,15 +642,21 @@ void map_frame_t::zeichnen(koord pos, koord gr)
 	if(directory_visible) {
 		const int fac_cols = clamp(legend.get_count(), 1, gr.x / (TOTAL_WIDTH/3));
 		uint u = 0;
-		for(  vector_tpl<legend_entry_t>::const_iterator i = legend.begin(), end = legend.end(); i != end; ++i, ++u  ) {
+
+		vector_iterator_tpl<legend_entry_t> iter (legend);
+		while(iter.next())
+		{
+			legend_entry_t const & i = iter.get_current();
+
 			const int xpos = pos.x + (u % fac_cols) * (gr.x-fac_cols/2-1)/fac_cols + 3;
 			const int ypos = pos.y + (u / fac_cols) * 14 + offset_y+2;
 
 			if(  ypos+LINESPACE > pos.y+gr.y  ) {
 				break;
 			}
-			display_fillbox_wh(xpos, ypos + 1 , 7, 7, i->colour, false);
-			display_proportional(xpos + 9, ypos, i->text.c_str(), ALIGN_LEFT, COL_BLACK, false);
+			display_fillbox_wh(xpos, ypos + 1 , 7, 7, i.colour, false);
+			display_proportional(xpos + 9, ypos, i.text.c_str(), ALIGN_LEFT, COL_BLACK, false);
+			u++;
 		}
 	}
 }

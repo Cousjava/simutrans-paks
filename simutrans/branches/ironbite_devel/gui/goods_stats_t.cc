@@ -17,6 +17,7 @@
 #include "../dataobj/translator.h"
 #include "../utils/cbuffer_t.h"
 #include "../utils/simstring.h"
+#include "components/gui_button.h"
 #include "components/list_button.h"
 
 

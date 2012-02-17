@@ -11,7 +11,7 @@ void socket_info_t::reset()
 		delete packet;
 		packet = NULL;
 	}
-	while(!send_queue.empty()) {
+	while(!send_queue.is_empty()) {
 		packet_t *p = send_queue.remove_first();
 		if (p) {
 			delete p;
@@ -54,7 +54,8 @@ network_command_t* socket_info_t::receive_nwc()
 
 void socket_info_t::process_send_queue()
 {
-	while(!send_queue.empty()) {
+	while(!send_queue.is_empty()) 
+	{
 		packet_t *p = send_queue.front();
 		p->send(socket, false);
 		if (p->has_failed()) {
@@ -140,8 +141,9 @@ void socket_list_t::change_state(uint32 id, uint8 new_state)
 
 void socket_list_t::reset()
 {
-	for(uint32 j=0; j<list.get_count(); j++) {
-		list.get(j)->reset();
+	for(uint32 i=0; i<list.get_count(); i++) 
+	{
+		list.get(i)->reset();
 	}
 	connected_clients = 0;
 	playing_clients = 0;
@@ -295,8 +297,11 @@ void socket_list_t::send_all(network_command_t* nwc, bool only_playing_clients)
 SOCKET socket_list_t::fill_set(fd_set *fds)
 {
 	SOCKET s_max = 0;
-	for(uint32 i=0; i<list.get_count(); i++) {
-		if(  list.get(i)->state != socket_info_t::inactive  &&  list.get(i)->socket!=INVALID_SOCKET  ) {
+
+	for(uint32 i=0; i<list.get_count(); i++) 
+	{
+		if(  list.get(i)->state != socket_info_t::inactive  &&  list.get(i)->socket!=INVALID_SOCKET  ) 
+		{
 			SOCKET s = list.get(i)->socket;
 			s_max = max( s, s_max );
 			FD_SET( s, fds );

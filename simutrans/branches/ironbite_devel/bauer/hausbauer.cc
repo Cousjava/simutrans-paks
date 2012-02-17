@@ -111,10 +111,11 @@ static bool compare_station_besch(const haus_besch_t* a, const haus_besch_t* b)
 
 bool hausbauer_t::alles_geladen()
 {
-	stringhashtable_iterator_tpl<const haus_besch_t *>iter(besch_names);
-	while(  iter.next()  ) {
-		const haus_besch_t* besch = iter.get_current_value();
-
+	stringhashtable_iterator_tpl <haus_besch_t const*> iter (besch_names);
+	while(iter.next())
+	{
+		haus_besch_t const* const besch = iter.get_current();
+		
 		switch(besch->get_typ()) {
 			case gebaeude_t::wohnung:
 				wohnhaeuser.insert_ordered(besch,compare_haus_besch);
@@ -234,8 +235,11 @@ void hausbauer_t::fill_menu(werkzeug_waehler_t* wzw, haus_besch_t::utyp utyp, wa
 {
 	const uint16 time = welt->get_timeline_year_month();
 DBG_DEBUG("hausbauer_t::fill_menu()","maximum %i",station_building.get_count());
-	for(  vector_tpl<const haus_besch_t *>::const_iterator iter = station_building.begin(), end = station_building.end();  iter != end;  ++iter  ) {
-		const haus_besch_t* besch = (*iter);
+
+	for(unsigned int i=0; i<station_building.get_count(); i++)
+	{
+		haus_besch_t const* const besch = station_building.get(i);
+
 //		DBG_DEBUG("hausbauer_t::fill_menu()", "try to add %s (%p)", besch->get_name(), besch);
 		if(  besch->get_utyp()==utyp  &&  besch->get_builder()  &&  (utyp==haus_besch_t::firmensitz  ||  besch->get_extra()==(uint16)wt)  ) {
 			if(time==0  ||  (besch->get_intro_year_month()<=time  &&  besch->get_retire_year_month()>time)) {
@@ -250,6 +254,7 @@ DBG_DEBUG("hausbauer_t::fill_menu()","maximum %i",station_building.get_count());
 void hausbauer_t::neue_karte()
 {
 	ungebaute_denkmaeler.clear();
+
 	for(uint32 i=0; i<denkmaeler.get_count(); i++) {
 		ungebaute_denkmaeler.append(denkmaeler.get(i));
 	}
@@ -660,8 +665,10 @@ const haus_besch_t* hausbauer_t::get_random_station(const haus_besch_t::utyp uty
 {
 	weighted_vector_tpl<const haus_besch_t*> stops;
 
-	for(  vector_tpl<const haus_besch_t *>::const_iterator iter = station_building.begin(), end = station_building.end();  iter != end;  ++iter  ) {
-		const haus_besch_t* besch = (*iter);
+	for(unsigned int i=0; i<station_building.get_count(); i++)
+	{
+		haus_besch_t const* const besch = station_building.get(i);
+
 		if(besch->get_utyp()==utype  &&  besch->get_extra()==wt  &&  (enables==0  ||  (besch->get_enabled()&enables)!=0)) {
 			// ok, now check timeline
 			if(time==0  ||  (besch->get_intro_year_month()<=time  &&  besch->get_retire_year_month()>time)) {
@@ -669,7 +676,7 @@ const haus_besch_t* hausbauer_t::get_random_station(const haus_besch_t::utyp uty
 			}
 		}
 	}
-	return stops.empty() ? 0 : pick_any_weighted(stops);
+	return stops.is_empty() ? 0 : pick_any_weighted(stops);
 }
 
 
@@ -679,8 +686,10 @@ const haus_besch_t* hausbauer_t::get_special(int bev, haus_besch_t::utyp utype, 
 	weighted_vector_tpl<const haus_besch_t *> auswahl(16);
 
 	vector_tpl<const haus_besch_t*> &list = utype == haus_besch_t::rathaus ? rathaeuser : (bev == -1 ? sehenswuerdigkeiten_land : sehenswuerdigkeiten_city);
+
 	for(uint32 i=0; i<list.get_count(); i++) {
 		const haus_besch_t * besch = list.get(i);
+
 		// extra data contains number of inhabitants for building
 		if(bev == -1 || besch->get_extra()==bev) {
 			if(cl==MAX_CLIMATES  ||  besch->is_allowed_climate(cl)) {
@@ -691,7 +700,7 @@ const haus_besch_t* hausbauer_t::get_special(int bev, haus_besch_t::utyp utype, 
 			}
 		}
 	}
-	if (auswahl.empty()) {
+	if (auswahl.is_empty()) {
 		return 0;
 	}
 	else if(auswahl.get_count()==1) {
@@ -714,8 +723,11 @@ static const haus_besch_t* get_aus_liste(const vector_tpl<const haus_besch_t*>& 
 
 //	DBG_MESSAGE("hausbauer_t::get_aus_liste()","target level %i", level );
 	const haus_besch_t *besch_at_least=NULL;
-	for (vector_tpl<const haus_besch_t*>::const_iterator i = liste.begin(), end = liste.end(); i != end; ++i) {
-		const haus_besch_t* besch = *i;
+
+	for(unsigned int i=0; i<liste.get_count(); i++)
+	{
+		haus_besch_t const* const besch = liste.get(i);
+
 		if(	besch->is_allowed_climate(cl)  &&
 			besch->get_chance()>0  &&
 			(time==0  ||  (besch->get_intro_year_month()<=time  &&  besch->get_retire_year_month()>time))) {
@@ -724,7 +736,7 @@ static const haus_besch_t* get_aus_liste(const vector_tpl<const haus_besch_t*>& 
 
 		const int thislevel = besch->get_level();
 		if(thislevel>level) {
-			if (auswahl.empty()) {
+			if (auswahl.is_empty()) {
 				// continue with search ...
 				level = thislevel;
 			}
@@ -775,10 +787,11 @@ const haus_besch_t* hausbauer_t::get_wohnhaus(int level, uint16 time, climate cl
 
 const haus_besch_t* hausbauer_t::get_headquarter(int level, uint16 time)
 {
-	for (vector_tpl<const haus_besch_t*>::const_iterator iter = hausbauer_t::headquarter.begin(), end = hausbauer_t::headquarter.end(); iter != end; ++iter) {
-		const haus_besch_t* besch = *iter;
+	for(unsigned int i=0; i<hausbauer_t::headquarter.get_count(); i++)
+	{
+		const haus_besch_t * besch = hausbauer_t::headquarter.get(i);
 		if (besch->get_extra() == level  &&  !besch->is_future(time)  &&  !besch->is_retired(time)) {
-			return *iter;
+			return besch;
 		}
 	}
 	return NULL;
@@ -788,11 +801,14 @@ const haus_besch_t* hausbauer_t::get_headquarter(int level, uint16 time)
 // get a random object
 const haus_besch_t *hausbauer_t::waehle_aus_liste(vector_tpl<const haus_besch_t *> &liste, uint16 time, bool ignore_retire, climate cl)
 {
-	if (!liste.empty()) {
+	if (!liste.is_empty()) 
+	{
 		// previously just returned a random object; however, now we do als look at the chance entry
 		weighted_vector_tpl<const haus_besch_t *> auswahl(16);
+
 		for(uint32 i=0; i<liste.get_count(); i++) {
 			const haus_besch_t *besch = liste.get(i);
+
 			if((cl==MAX_CLIMATES  ||  besch->is_allowed_climate(cl))  &&  besch->get_chance()>0  &&  (time==0  ||  (besch->get_intro_year_month()<=time  &&  (ignore_retire  ||  besch->get_retire_year_month()>time)  )  )  ) {
 //				DBG_MESSAGE("hausbauer_t::get_aus_liste()","appended %s at %i", besch->get_name(), thislevel );
 				auswahl.append(besch,besch->get_chance(),4);

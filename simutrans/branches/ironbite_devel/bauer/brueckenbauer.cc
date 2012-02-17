@@ -88,9 +88,10 @@ bool brueckenbauer_t::laden_erfolgreich()
 	bool strasse_da = false;
 	bool schiene_da = false;
 
-	stringhashtable_iterator_tpl<const bruecke_besch_t *>iter(bruecken_by_name);
-	while(  iter.next()  ) {
-		const bruecke_besch_t* besch = iter.get_current_value();
+	stringhashtable_iterator_tpl <bruecke_besch_t const*> iter (bruecken_by_name);
+	while(iter.next())
+	{
+		bruecke_besch_t const* const besch = iter.get_current();
 
 		if(besch && besch->get_waytype() == track_wt) {
 			schiene_da = true;
@@ -121,9 +122,11 @@ const bruecke_besch_t *brueckenbauer_t::find_bridge(const waytype_t wtyp, const 
 {
 	const bruecke_besch_t *find_besch=NULL;
 
-	stringhashtable_iterator_tpl<const bruecke_besch_t *>iter(bruecken_by_name);
-	while(  iter.next()  ) {
-		const bruecke_besch_t* besch = iter.get_current_value();
+	stringhashtable_iterator_tpl <bruecke_besch_t const*> iter (bruecken_by_name);
+	while(iter.next())
+	{
+		bruecke_besch_t const* const besch = iter.get_current();
+
 		if(besch->get_waytype() == wtyp) {
 			if(time==0  ||  (besch->get_intro_year_month()<=time  &&  besch->get_retire_year_month()>time)) {
 				if(find_besch==NULL  ||
@@ -158,20 +161,24 @@ void brueckenbauer_t::fill_menu(werkzeug_waehler_t *wzw, const waytype_t wtyp, s
 	vector_tpl<const bruecke_besch_t*> matching(bruecken_by_name.get_count());
 
 	// list of matching types (sorted by speed)
-	stringhashtable_iterator_tpl<const bruecke_besch_t *>iter(bruecken_by_name);
-	while(  iter.next()  ) {
-		const bruecke_besch_t* b = iter.get_current_value();
-		if (b->get_waytype() == wtyp && (
+	stringhashtable_iterator_tpl <bruecke_besch_t const*> iter (bruecken_by_name);
+	while(iter.next())
+	{
+		bruecke_besch_t const* const besch = iter.get_current();
+
+		if (besch->get_waytype() == wtyp && (
 					time == 0 ||
-					(b->get_intro_year_month() <= time && time < b->get_retire_year_month())
+					(besch->get_intro_year_month() <= time && time < besch->get_retire_year_month())
 				)) {
-			matching.insert_ordered( b, compare_bridges);
+			matching.insert_ordered( besch, compare_bridges);
 		}
 	}
 
 	// now sorted ...
-	for (vector_tpl<const bruecke_besch_t*>::const_iterator i = matching.begin(), end = matching.end(); i != end; ++i) {
-		wzw->add_werkzeug( (*i)->get_builder() );
+	for(unsigned int i = 0; i<matching.get_count(); i++)
+	{
+		bruecke_besch_t const * besch = matching.get(i);
+		wzw->add_werkzeug(besch->get_builder());
 	}
 }
 
@@ -651,10 +658,10 @@ const char *brueckenbauer_t::remove(karte_t *welt, spieler_t *sp, koord3d pos, w
 				}
 			}
 		}
-	} while (!tmp_list.empty());
+	} while (!tmp_list.is_empty());
 
 	// now delete the bridge
-	while (!part_list.empty()) {
+	while (!part_list.is_empty()) {
 		pos = part_list.remove_first();
 
 		grund_t *gr = welt->lookup(pos);
@@ -687,7 +694,7 @@ const char *brueckenbauer_t::remove(karte_t *welt, spieler_t *sp, koord3d pos, w
 		reliefkarte_t::get_karte()->calc_map_pixel(pos.get_2d());
 	}
 	// finally delete the bridge ends
-	while (!end_list.empty()) {
+	while (!end_list.is_empty()) {
 		pos = end_list.remove_first();
 
 		grund_t *gr = welt->lookup(pos);

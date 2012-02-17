@@ -107,14 +107,14 @@ void simline_t::create_schedule()
 
 void simline_t::add_convoy(convoihandle_t cnv)
 {
-	if (line_managed_convoys.empty()  &&  self.is_bound()) {
+	if (line_managed_convoys.is_empty()  &&  self.is_bound()) {
 		// first convoi -> ok, now we can announce this connection to the stations
 		// unbound self can happen during loading if this line had line_id=0
 		register_stops(fpl);
 	}
 
 	// first convoi may change line type
-	if (type == trainline  &&  line_managed_convoys.empty() &&  cnv.is_bound()) {
+	if (type == trainline  &&  line_managed_convoys.is_empty() &&  cnv.is_bound()) {
 		// check, if needed to convert to tram/monorail line
 		if (vehikel_t const* const v = cnv->front()) {
 			switch (v->get_besch()->get_waytype()) {
@@ -132,9 +132,11 @@ void simline_t::add_convoy(convoihandle_t cnv)
 	// what goods can this line transport?
 	bool update_schedules = false;
 	if(  cnv->get_state()!=convoi_t::INITIAL  ) {
+
 		const minivec_tpl<uint8> &convoys_goods = cnv->get_goods_catg_index();
 		for(  uint8 i = 0;  i < convoys_goods.get_count();  i++  ) {
 			const uint8 catg_index = convoys_goods.get(i);
+
 			if(  !goods_catg_index.is_contained( catg_index )  ) {
 				goods_catg_index.append( catg_index, 1 );
 				update_schedules = true;
@@ -161,7 +163,7 @@ void simline_t::remove_convoy(convoihandle_t cnv)
 		financial_history[0][LINE_CONVOIS] = count_convoys();
 		recalc_status();
 	}
-	if(line_managed_convoys.empty()) {
+	if(line_managed_convoys.is_empty()) {
 		unregister_stops();
 	}
 }
@@ -261,7 +263,7 @@ void simline_t::laden_abschliessen()
 		assert( self.get_rep() == this );
 		DBG_MESSAGE("simline_t::laden_abschliessen", "assigned id=%d to line %s", self.get_id(), get_name());
 	}
-	if (!line_managed_convoys.empty()) {
+	if (!line_managed_convoys.is_empty()) {
 		register_stops(fpl);
 	}
 	recalc_status();
@@ -272,8 +274,10 @@ void simline_t::laden_abschliessen()
 void simline_t::register_stops(schedule_t * fpl)
 {
 DBG_DEBUG("simline_t::register_stops()", "%d fpl entries in schedule %p", fpl->get_count(),fpl);
+
 	for (int i = 0; i<fpl->get_count(); i++) {
 		const halthandle_t halt = haltestelle_t::get_halt( welt, fpl->eintrag.get(i).pos, sp );
+
 		if(halt.is_bound()) {
 //DBG_DEBUG("simline_t::register_stops()", "halt not null");
 			halt->add_line(self);
@@ -296,6 +300,7 @@ void simline_t::unregister_stops(schedule_t * fpl)
 {
 	for (int i = 0; i<fpl->get_count(); i++) {
 		halthandle_t halt = haltestelle_t::get_halt( welt, fpl->eintrag.get(i).pos, sp );
+
 		if(halt.is_bound()) {
 			halt->remove_line(self);
 		}
@@ -305,7 +310,7 @@ void simline_t::unregister_stops(schedule_t * fpl)
 
 void simline_t::renew_stops()
 {
-	if (!line_managed_convoys.empty()) {
+	if (!line_managed_convoys.is_empty()) {
 		register_stops( fpl );
 		DBG_DEBUG("simline_t::renew_stops()", "Line id=%d, name='%s'", self.get_id(), name.c_str());
 	}
@@ -317,8 +322,10 @@ void simline_t::new_month()
 	recalc_status();
 	// then calculate maxspeed
 	sint64 line_max_speed = 0, line_max_speed_count = 0;
+
 	for(  unsigned i=0;  i < line_managed_convoys.get_count();  i++ ) {
 		if(  !line_managed_convoys.get(i)->in_depot()  ) {
+
 			// since convoi stepped first, our history is in month 1 ...
 			line_max_speed += line_managed_convoys.get(i)->get_finance_history( 1, convoi_t::CONVOI_MAXSPEED );
 			line_max_speed_count ++;
@@ -368,6 +375,7 @@ void simline_t::recalc_status()
 	else if(welt->use_timeline()) {
 		// convois has obsolete vehicles?
 		bool has_obsolete = false;
+
 		for(unsigned i=0;  !has_obsolete  &&  i<line_managed_convoys.get_count();  i++ ) {
 			has_obsolete = line_managed_convoys.get(i)->has_obsolete_vehicles();
 		}
@@ -387,16 +395,23 @@ void simline_t::recalc_catg_index()
 {
 	// first copy old
 	minivec_tpl<uint8> old_goods_catg_index(goods_catg_index.get_count());
+
 	for(  uint i=0;  i<goods_catg_index.get_count();  i++  ) {
 		old_goods_catg_index.append( goods_catg_index.get(i) );
 	}
 	goods_catg_index.clear();
-	withdraw = !line_managed_convoys.empty();
+	withdraw = !line_managed_convoys.is_empty();
 	// then recreate current
-	for(unsigned i=0;  i<line_managed_convoys.get_count();  i++ ) {
+	vector_iterator_tpl <convoihandle_t> iter (line_managed_convoys);
+
+	while(iter.next())
+	{
+		convoihandle_t const i = iter.get_current();
 		// what goods can this line transport?
+
 		// const convoihandle_t cnv = line_managed_convoys.get(i);
-		const convoi_t *cnv = line_managed_convoys.get(i).get_rep();
+		const convoi_t *cnv = i.get_rep();
+		
 		withdraw &= cnv->get_withdraw();
 
 		const minivec_tpl<uint8> &convoys_goods = cnv->get_goods_catg_index();
@@ -412,8 +427,10 @@ void simline_t::recalc_catg_index()
 	}
 	else {
 		// maybe changed => must test all entries
+
 		for(  uint i=0;  i<goods_catg_index.get_count();  i++  ) {
 			if(  !old_goods_catg_index.is_contained(goods_catg_index.get(i))  ) {
+
 				// different => recalc
 				welt->set_schedule_counter();
 				break;
@@ -426,7 +443,7 @@ void simline_t::recalc_catg_index()
 
 void simline_t::set_withdraw( bool yes_no )
 {
-	withdraw = yes_no && !line_managed_convoys.empty();
+	withdraw = yes_no && !line_managed_convoys.is_empty();
 	// convois in depots will be immeadiately destroyed, thus we go backwards
 	for( sint32 i=line_managed_convoys.get_count()-1;  i>=0;  i--  ) {
 		line_managed_convoys.get(i)->set_no_load(yes_no);	// must be first, since set withdraw might destroy convoi if in depot!

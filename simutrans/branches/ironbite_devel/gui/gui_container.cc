@@ -55,7 +55,7 @@ void gui_container_t::remove_komponente(gui_component_t *komp)
 void gui_container_t::remove_all()
 {
 	// clear also focus
-	while(  !komponenten.empty()  ) {
+	while(  !komponenten.is_empty()  ) {
 		remove_komponente( komponenten.remove_first() );
 	}
 }
@@ -83,26 +83,33 @@ bool gui_container_t::infowin_event(const event_t *ev)
 		// Knightly : either event not swallowed, or inner container has no focused child component after TAB event
 		if(  !swallowed  ||  (ev->ev_code==9  &&  komp_focus  &&  komp_focus->get_focus()==NULL)  ) {
 			if(  ev->ev_code==SIM_KEY_TAB  ) {
+
 				// TAB: find new focus
 				slist_iterator_tpl<gui_component_t *> iter (komponenten);
+
 				new_focus = NULL;
 				if(  !IS_SHIFT_PRESSED(ev)  ) {
 					// find next textinput field
-					while(  iter.next()  &&  (komp_focus==NULL  ||  iter.get_current()!=komp_focus)  ) {
-						if(  iter.get_current()->is_focusable()  ) {
-							new_focus = iter.get_current();
+					while(iter.next())
+					{
+						gui_component_t * c = iter.get_current();
+						if (c == komp_focus) break;
+						if (c->is_focusable()) {
+							new_focus = c;
 						}
 					}
 				}
 				else {
 					// or previous input field
 					bool valid = komp_focus==NULL;
-					while(  iter.next()  ) {
-						if(  valid  &&  iter.get_current()->is_focusable()  ) {
-							new_focus = iter.get_current();
+					while(iter.next())
+					{
+						gui_component_t * c = iter.get_current();
+						if (valid && c->is_focusable()) {
+							new_focus = c;
 							break;
 						}
-						if(  iter.get_current()==komp_focus  ) {
+						if (c == komp_focus) {
 							valid = true;
 						}
 					}
@@ -135,7 +142,9 @@ bool gui_container_t::infowin_event(const event_t *ev)
 
 		slist_iterator_tpl<gui_component_t *> iter (komponenten);
 		slist_tpl<gui_component_t *>handle_mouseover;
-		while(  !list_dirty  &&  iter.next()  ) {
+
+		while(!list_dirty  &&  iter.next())
+		{
 			gui_component_t *komp = iter.get_current();
 
 			// Hajo: deliver events if
@@ -153,13 +162,14 @@ bool gui_container_t::infowin_event(const event_t *ev)
 				}
 
 			} // if(komp)
-		} // while()
+		}
 
 		/* since the last drawn are overlaid over all others
 		 * the event-handling must go reverse too
 		 */
 		slist_iterator_tpl<gui_component_t *> iter_mouseover (handle_mouseover);
-		while(  !list_dirty  &&  iter_mouseover.next()  ) {
+		while(!list_dirty  &&  iter_mouseover.next()) 
+		{
 			gui_component_t *komp = iter_mouseover.get_current();
 
 			// Hajo: if componet hit, translate coordinates and deliver event

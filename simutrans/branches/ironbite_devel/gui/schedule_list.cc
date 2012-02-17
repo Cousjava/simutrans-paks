@@ -91,8 +91,11 @@ static uint8 current_sort_mode = 0;
 #define SCL_HEIGHT (15*LINESPACE-1)
 
 
-static bool compare_lines(line_scrollitem_t* a, line_scrollitem_t* b)
+static int compare_lines(const void * aa, const void * bb)
 {
+	const line_scrollitem_t* a = (const line_scrollitem_t*)aa;
+	const line_scrollitem_t* b = (const line_scrollitem_t*)bb;
+	
 	switch(  current_sort_mode  ) {
 		case SORT_BY_NAME:	// default
 			break;
@@ -158,6 +161,7 @@ schedule_list_gui_t::schedule_list_gui_t(spieler_t *sp_) :
 	selection = -1;
 	loadfactor = 0;
 	schedule_filter[0] = 0;
+	old_schedule_filter[0] = 0;
 
 	// init scrolled list
 	scl.set_pos(koord(0,1));
@@ -198,7 +202,7 @@ schedule_list_gui_t::schedule_list_gui_t(spieler_t *sp_) :
 		tabs.add_tab(&scl, translator::translate("Narrowgauge"), skinverwaltung_t::narrowgaugehaltsymbol, translator::translate("Narrowgauge"));
 		tabs_to_lineindex[max_idx++] = simline_t::narrowgaugeline;
 	}
-	if (!vehikelbauer_t::get_info(tram_wt).empty()) {
+	if (!vehikelbauer_t::get_info(tram_wt).is_empty()) {
 		tabs.add_tab(&scl, translator::translate("Tram"), skinverwaltung_t::tramhaltsymbol, translator::translate("Tram"));
 		tabs_to_lineindex[max_idx++] = simline_t::tramline;
 	}
@@ -206,7 +210,7 @@ schedule_list_gui_t::schedule_list_gui_t(spieler_t *sp_) :
 		tabs.add_tab(&scl, translator::translate("Truck"), skinverwaltung_t::autohaltsymbol, translator::translate("Truck"));
 		tabs_to_lineindex[max_idx++] = simline_t::truckline;
 	}
-	if (!vehikelbauer_t::get_info(water_wt).empty()) {
+	if (!vehikelbauer_t::get_info(water_wt).is_empty()) {
 		tabs.add_tab(&scl, translator::translate("Ship"), skinverwaltung_t::schiffshaltsymbol, translator::translate("Ship"));
 		tabs_to_lineindex[max_idx++] = simline_t::shipline;
 	}
@@ -585,18 +589,25 @@ void schedule_list_gui_t::build_line_list(int filter)
 	sp->simlinemgmt.get_lines(tabs_to_lineindex[filter], &lines);
 	vector_tpl<line_scrollitem_t *>selected_lines;
 
-	for (vector_tpl<linehandle_t>::const_iterator i = lines.begin(), end = lines.end(); i != end; i++) {
-		linehandle_t l = *i;
+	vector_iterator_tpl <linehandle_t> iter1 (lines);
+
+	while(iter1.next())
+	{
+		linehandle_t const l = iter1.get_current();
 		// search name
 		if (strstr(l->get_name(), schedule_filter))
 			selected_lines.append(new line_scrollitem_t(l));
 	}
 
-	std::sort(selected_lines.begin(),selected_lines.end(),compare_lines);
+	selected_lines.sort(compare_lines);
 
-	for (vector_tpl<line_scrollitem_t *>::const_iterator i = selected_lines.begin(), end = selected_lines.end(); i != end; i++) {
-		scl.append_element( *i );
-		if(line == (*i)->get_line()  ) {
+	vector_iterator_tpl <line_scrollitem_t*> iter (selected_lines);
+
+	while(iter.next())
+	{
+		line_scrollitem_t* const i = iter.get_current();
+		scl.append_element(i);
+		if (line == i->get_line()) {
 			sel = scl.get_count() - 1;
 		}
 	}
@@ -658,6 +669,7 @@ void schedule_list_gui_t::update_lineinfo(linehandle_t new_line)
 		// fill haltestellen container with info of line's haltestellen
 		cont_haltestellen.remove_all();
 		ypos = 0;
+
 		for(i=0; i<new_line->get_schedule()->get_count(); i++) {
 			const koord3d fahrplan_koord = new_line->get_schedule()->eintrag.get(i).pos;
 			halthandle_t halt = haltestelle_t::get_halt(sp->get_welt(),fahrplan_koord, sp);

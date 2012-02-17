@@ -105,7 +105,7 @@ bool halt_list_frame_t::compare_halts(halthandle_t const halt1, halthandle_t con
 bool halt_list_frame_t::passes_filter(halthandle_t halt)
 {
 	bool ok;
-	uint32 i, j;
+	uint32 i;
 
 	if(!get_filter(any_filter)) {
 		return true;
@@ -139,7 +139,7 @@ bool halt_list_frame_t::passes_filter(halthandle_t halt)
 		if(!ok && get_filter(ohneverb_filter)) {
 			ok = true;
 			for (uint8 i = 0; i<freight_builder_t::get_max_catg_index(); i++){
-				ok &= halt->get_connections(i)->empty(); //only display stations with NO connection
+				ok &= halt->get_connections(i)->is_empty(); //only display stations with NO connection
 			}
 		}
 		if(!ok) {
@@ -172,13 +172,22 @@ bool halt_list_frame_t::passes_filter(halthandle_t halt)
 				  // Oh Mann - eine doppelte Schleife und das noch pro Haltestelle
 				  // Zum Gl�ck ist die Anzahl der Fabriken und die ihrer Ausg�nge
 				  // begrenzt (Normal 1-2 Fabriken mit je 0-1 Ausgang) -  V. Meyer
-					slist_iterator_tpl<fabrik_t *> fab_iter(halt->get_fab_list());
-					while(!ok && fab_iter.next()) {
-						const array_tpl<ware_production_t>& ausgang = fab_iter.get_current()->get_ausgang();
-						for (j = 0; !ok && j < ausgang.get_count(); j++) {
-							ok = (ausgang[j].get_typ() == ware);
+					slist_iterator_tpl <fabrik_t*> iter (halt->get_fab_list());
+
+					while(iter.next())
+					{
+						fabrik_t* const f = iter.get_current();
+						
+						array_iterator_tpl <ware_production_t> iter (f->get_ausgang());
+
+						while(iter.next())
+						{
+							ware_production_t const& j = iter.get_current();
+							ok = j.get_typ() == ware;
+							if (ok) goto found_out;
 						}
 					}
+found_out:;
 				}
 			}
 		}
@@ -214,14 +223,21 @@ bool halt_list_frame_t::passes_filter(halthandle_t halt)
 					// Oh Mann - eine doppelte Schleife und das noch pro Haltestelle
 					// Zum Gl�ck ist die Anzahl der Fabriken und die ihrer Ausg�nge
 					// begrenzt (Normal 1-2 Fabriken mit je 0-1 Ausgang) -  V. Meyer
+					slist_iterator_tpl <fabrik_t*> iter (halt->get_fab_list());
 
-					slist_iterator_tpl<fabrik_t *> fab_iter(halt->get_fab_list());
-					while(!ok && fab_iter.next()) {
-						const array_tpl<ware_production_t>& eingang = fab_iter.get_current()->get_eingang();
-						for (j = 0; !ok && j < eingang.get_count(); j++) {
-							ok = (eingang[j].get_typ() == ware);
+	while(iter.next())
+	{
+		fabrik_t* const f = iter.get_current();
+						array_iterator_tpl <ware_production_t> iter (f->get_eingang());
+
+	while(iter.next())
+	{
+		ware_production_t const& j = iter.get_current();
+							ok = j.get_typ() == ware;
+							if (ok) goto found_in;
 						}
 					}
+found_in:;
 				}
 			}
 		}
@@ -288,7 +304,6 @@ halt_list_frame_t::~halt_list_frame_t()
 */
 void halt_list_frame_t::display_list(void)
 {
-	slist_iterator_tpl<halthandle_t > halt_iter (haltestelle_t::get_alle_haltestellen());	// iteration with haltestellen (stations)
 	last_world_stops = haltestelle_t::get_alle_haltestellen().get_count();				// count of stations
 
 	ALLOCA(halthandle_t, a, last_world_stops);
@@ -301,8 +316,11 @@ void halt_list_frame_t::display_list(void)
 
 	// create a unsorted station list
 	num_filtered_stops = 0;
-	while(halt_iter.next()) {
-		halthandle_t halt = halt_iter.get_current();
+	slist_iterator_tpl <halthandle_t> iter (haltestelle_t::get_alle_haltestellen());
+
+	while(iter.next())
+	{
+		halthandle_t const halt = iter.get_current();
 		if(  halt->get_besitzer() == m_sp  ) {
 			a[n++] = halt;
 			if(  passes_filter(halt)  ) {
@@ -440,11 +458,14 @@ void halt_list_frame_t::zeichnen(koord pos, koord gr)
 		display_list();
 	}
 
-	for(  unsigned i=0;  i<stops.get_count();  i++  ) {
+	for(unsigned int i=0;  i<stops.get_count();  i++  ) 
+	{
 		const halthandle_t halt = stops.get(i).get_halt();
+
 		if(  halt.is_bound()  &&  passes_filter(halt)  ) {
 			num_filtered_stops++;
-			if(  num_filtered_stops>start  &&  yoffset<gr.y+47  ) {
+			if(  num_filtered_stops>start  &&  yoffset<gr.y+47  ) 
+			{
 				stops.at(i).zeichnen( pos+koord(0,yoffset) );
 				yoffset += 28;
 			}

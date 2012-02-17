@@ -143,7 +143,7 @@ old_blockmanager_t::laden_abschliessen(karte_t *welt)
 	char buf[256];
 	const char *err_text=translator::translate("Error restoring old signal near (%i,%i)!");
 	int failure=0;
-	while (!signale.empty()) {
+	while (!signale.is_empty()) {
 		oldsignal_t *os1=signale.remove_first();
 		oldsignal_t *os2=NULL;
 		grund_t *gr=welt->lookup(os1->get_pos());
@@ -151,10 +151,13 @@ old_blockmanager_t::laden_abschliessen(karte_t *welt)
 		uint8 directions=0;
 		waytype_t wt=gr->hat_weg(track_wt) ? track_wt : monorail_wt;
 		if(  gr->get_neighbour(to,wt,os1->get_dir())  ) {
-			slist_iterator_tpl<oldsignal_t *> iter(signale);
-			while(iter.next()) {
-				if(iter.get_current()->get_pos()==to->get_pos()) {
-					os2 = iter.get_current();
+			slist_iterator_tpl <oldsignal_t*> iter (signale);
+
+	while(iter.next())
+	{
+		oldsignal_t* const s = iter.get_current();
+				if (s->get_pos() == to->get_pos()) {
+					os2 = s;
 					break;
 				}
 			}

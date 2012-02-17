@@ -42,7 +42,7 @@ public:
 	*/
 	virtual bool ist_halt_erlaubt(const grund_t *gr) const;
 
-	bool empty() const { return eintrag.empty(); }
+	bool is_empty() const { return eintrag.is_empty(); }
 
 	uint8 get_count() const { return eintrag.get_count(); }
 
@@ -87,7 +87,7 @@ public:
 
 	// advance entry by one ...
 	void advance() {
-		if(  !eintrag.empty()  ) {
+		if(  !eintrag.is_empty()  ) {
 			aktuell = (aktuell+1)%eintrag.get_count();
 		}
 	}

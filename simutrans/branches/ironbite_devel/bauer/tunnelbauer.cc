@@ -43,7 +43,7 @@
 #include "../tpl/vector_tpl.h"
 
 
-static stringhashtable_tpl<tunnel_besch_t *> tunnel_by_name;
+static stringhashtable_tpl<const tunnel_besch_t *> tunnel_by_name;
 
 
 void tunnelbauer_t::register_besch(tunnel_besch_t *besch)
@@ -70,10 +70,12 @@ void tunnelbauer_t::register_besch(tunnel_besch_t *besch)
 // now we have to convert old tunnel to new ones ...
 bool tunnelbauer_t::laden_erfolgreich()
 {
-	stringhashtable_iterator_tpl<tunnel_besch_t *>iter(tunnel_by_name);
-	while(  iter.next()  ) {
-		tunnel_besch_t* besch = iter.get_current_value();
+	stringhashtable_iterator_tpl <tunnel_besch_t const *> iter (tunnel_by_name);
+	while(iter.next())
+	{
+		tunnel_besch_t const* const besch = iter.get_current();
 
+		/* TODO
 		if(besch->get_topspeed()==0) {
 			// old style, need to convert
 			if(strcmp(besch->get_name(),"RoadTunnel")==0) {
@@ -93,6 +95,7 @@ bool tunnelbauer_t::laden_erfolgreich()
 				besch->obsolete_date = DEFAULT_RETIRE_DATE*12;
 			}
 		}
+		*/
 	}
 	return true;
 }
@@ -112,9 +115,10 @@ const tunnel_besch_t *tunnelbauer_t::find_tunnel(const waytype_t wtyp, const sin
 {
 	const tunnel_besch_t *find_besch=NULL;
 
-	stringhashtable_iterator_tpl<tunnel_besch_t *>iter(tunnel_by_name);
-	while(  iter.next()  ) {
-		tunnel_besch_t* besch = iter.get_current_value();
+	stringhashtable_iterator_tpl <tunnel_besch_t const*> iter (tunnel_by_name);
+	while(iter.next())
+	{
+		tunnel_besch_t const* const besch = iter.get_current();
 
 		if(besch->get_waytype() == wtyp) {
 			if(time==0  ||  (besch->get_intro_year_month()<=time  &&  besch->get_retire_year_month()>time)) {
@@ -153,9 +157,11 @@ void tunnelbauer_t::fill_menu(werkzeug_waehler_t* wzw, const waytype_t wtyp, sin
 	const uint16 time=welt->get_timeline_year_month();
 	vector_tpl<const tunnel_besch_t*> matching(tunnel_by_name.get_count());
 
-	stringhashtable_iterator_tpl<tunnel_besch_t *>iter(tunnel_by_name);
-	while(  iter.next()  ) {
-		tunnel_besch_t* besch = iter.get_current_value();
+	stringhashtable_iterator_tpl <tunnel_besch_t const*> iter (tunnel_by_name);
+	while(iter.next())
+	{
+		tunnel_besch_t const* const besch = iter.get_current();
+
 		if (besch->get_waytype() == wtyp && (
 					time == 0 ||
 					(besch->get_intro_year_month() <= time && time < besch->get_retire_year_month())
@@ -164,8 +170,10 @@ void tunnelbauer_t::fill_menu(werkzeug_waehler_t* wzw, const waytype_t wtyp, sin
 		}
 	}
 	// now sorted ...
-	for (vector_tpl<const tunnel_besch_t*>::const_iterator i = matching.begin(), end = matching.end(); i != end; ++i) {
-		wzw->add_werkzeug( (*i)->get_builder() );
+	for(unsigned int i = 0; i<matching.get_count(); i++)
+	{
+		tunnel_besch_t const * besch = matching.get(i);
+		wzw->add_werkzeug(besch->get_builder());
 	}
 }
 
@@ -489,10 +497,10 @@ const char *tunnelbauer_t::remove(karte_t *welt, spieler_t *sp, koord3d start, w
 				marker.markiere(to);
 			}
 		}
-	} while (!tmp_list.empty());
+	} while (!tmp_list.is_empty());
 
 	// Jetzt geht es ans l�schen der Tunnel
-	while (!part_list.empty()) {
+	while (!part_list.is_empty()) {
 		pos = part_list.remove_first();
 		grund_t *gr = welt->lookup(pos);
 		// remove the second way first in the tunnel
@@ -510,7 +518,7 @@ const char *tunnelbauer_t::remove(karte_t *welt, spieler_t *sp, koord3d start, w
 	}
 
 	// Und die Tunnelenden am Schlu�
-	while (!end_list.empty()) {
+	while (!end_list.is_empty()) {
 		pos = end_list.remove_first();
 
 		grund_t *gr = welt->lookup(pos);

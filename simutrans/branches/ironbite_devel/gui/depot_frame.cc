@@ -552,8 +552,10 @@ void depot_frame_t::activate_convoi( convoihandle_t c )
 bool depot_frame_t::is_contained(const vehikel_besch_t *info)
 {
 	slist_iterator_tpl<vehikel_t*> iter(depot->get_vehicle_list());
-	while (iter.next()) {
-		if (iter.get_current()->get_besch() == info) {
+	while (iter.next()) 
+	{
+		if (iter.get_current()->get_besch() == info) 
+		{
 			return true;
 		}
 	}
@@ -575,6 +577,7 @@ void depot_frame_t::add_to_vehicle_list(const vehikel_besch_t *info)
 		if (depot->selected_filter == VEHICLE_FILTER_RELEVANT) {
 			if(freight->get_catg_index() >= 3) {
 				const vector_tpl<const freight_desc_t*> &goods = get_welt()->get_goods_list();
+
 				bool found = false;
 				for(uint32 i = 0; i<goods.get_count(); i++) {
 					if (freight->get_catg_index() == goods.get(i)->get_catg_index()) {
@@ -629,7 +632,7 @@ void depot_frame_t::add_to_vehicle_list(const vehikel_besch_t *info)
 // add all current vehicles
 void depot_frame_t::build_vehicle_lists()
 {
-	if (depot->get_vehicle_type().empty()) {
+	if (depot->get_vehicle_type().is_empty()) {
 		// there are tracks etc. but no vehicles => do nothing
 		// at least initialize some data
 		update_data();
@@ -644,11 +647,14 @@ void depot_frame_t::build_vehicle_lists()
 	 * If the vectors get resized, the vehicle_map becomes invalid, therefore
 	 * we need to resize them before filling them.
 	 */
-	if(electrics_vec.empty()  &&  pas_vec.empty()  &&  loks_vec.empty()  &&  waggons_vec.empty()) {
+	if(electrics_vec.is_empty()  &&  pas_vec.is_empty()  &&  loks_vec.is_empty()  &&  waggons_vec.is_empty()) {
 		int loks = 0, waggons = 0, pax=0, electrics = 0;
+
 		slist_iterator_tpl<const vehikel_besch_t*> vehinfo(depot->get_vehicle_type());
-		while (vehinfo.next()) {
+		while (vehinfo.next())
+		{
 			const vehikel_besch_t* info = vehinfo.get_current();
+
 			if(  info->get_engine_type() == vehikel_besch_t::electric  &&  (info->get_ware()==freight_builder_t::passagiere  ||  info->get_ware()==freight_builder_t::post)) {
 				electrics++;
 			}
@@ -686,10 +692,9 @@ void depot_frame_t::build_vehicle_lists()
 		// just list the one to sell
 		slist_iterator_tpl<vehikel_t *> iter2(depot->get_vehicle_list());
 		while(iter2.next()) {
-			if(vehicle_map.get(iter2.get_current()->get_besch())) {
-				continue;
+			if(!vehicle_map.get(iter2.get_current()->get_besch())) {
+				add_to_vehicle_list( iter2.get_current()->get_besch() );
 			}
-			add_to_vehicle_list( iter2.get_current()->get_besch() );
 		}
 	}
 	else {
@@ -823,13 +828,16 @@ void depot_frame_t::update_data()
 	}
 
 	ptrhashtable_iterator_tpl<const vehikel_besch_t *, gui_image_list_t::image_data_t *> iter1(vehicle_map);
-	while(iter1.next()) {
+	while(iter1.next()) 
+	{
 		const vehikel_besch_t *info = iter1.get_current_key();
 		const uint8 ok_color = info->is_future(month_now) || info->is_retired(month_now) ? COL_BLUE: COL_GREEN;
 
-		iter1.get_current_value()->count = 0;
-		iter1.get_current_value()->lcolor = ok_color;
-		iter1.get_current_value()->rcolor = ok_color;
+		gui_image_list_t::image_data_t * const img = iter1.get_current();
+		
+		img->count = 0;
+		img->lcolor = ok_color;
+		img->rcolor = ok_color;
 
 		/*
 		* color bars for current convoi:
@@ -841,29 +849,28 @@ void depot_frame_t::update_data()
 
 		if(veh_action == va_insert) {
 			if(!info->can_lead(veh)  ||  (veh  &&  !veh->can_follow(info))) {
-				iter1.get_current_value()->lcolor = COL_RED;
-				iter1.get_current_value()->rcolor = COL_RED;
+				img->lcolor = COL_RED;
+				img->rcolor = COL_RED;
 			} else if(!info->can_follow(NULL)) {
-				iter1.get_current_value()->lcolor = COL_YELLOW;
+				img->lcolor = COL_YELLOW;
 			}
 		} else if(veh_action == va_append) {
 			if(!info->can_follow(veh)  ||  (veh  &&  !veh->can_lead(info))) {
-				iter1.get_current_value()->lcolor = COL_RED;
-				iter1.get_current_value()->rcolor = COL_RED;
+				img->lcolor = COL_RED;
+				img->rcolor = COL_RED;
 			} else if(!info->can_lead(NULL)) {
-				iter1.get_current_value()->rcolor = COL_YELLOW;
+				img->rcolor = COL_YELLOW;
 			}
 		} else if( veh_action == va_sell ) {
-			iter1.get_current_value()->lcolor = COL_RED;
-			iter1.get_current_value()->rcolor = COL_RED;
+			img->lcolor = COL_RED;
+			img->rcolor = COL_RED;
 		}
-
-//DBG_DEBUG("depot_frame_t::update_data()","current %i = %s with color %i",info->get_name(),iter1.get_current_value()->lcolor);
 	}
 
 	slist_iterator_tpl<vehikel_t *> iter2(depot->get_vehicle_list());
 	while(iter2.next()) {
-		gui_image_list_t::image_data_t *imgdat=vehicle_map.get(iter2.get_current()->get_besch());
+		gui_image_list_t::image_data_t *imgdat = vehicle_map.get(iter2.get_current()->get_besch());
+
 		// can fail, if currently not visible
 		if(imgdat) {
 			imgdat->count++;
@@ -885,8 +892,11 @@ void depot_frame_t::update_data()
 	// check all matching lines
 	vector_tpl<linehandle_t> lines;
 	get_line_list(depot, &lines);
-	for (vector_tpl<linehandle_t>::const_iterator i = lines.begin(), end = lines.end(); i != end; i++) {
-		linehandle_t line = *i;
+	
+	// for (vector_tpl<linehandle_t>::const_iterator i = lines.begin(), end = lines.end(); i != end; i++) {
+	for(uint32 i=0; i<lines.get_count(); i++) 
+	{
+		linehandle_t line = lines.get(i);
 		line_selector.append_element( new line_scrollitem_t(line) );
 		if(line==selected_line) {
 			line_selector.set_selection( line_selector.count_elements()-1 );
@@ -1171,7 +1181,7 @@ void depot_frame_t::zeichnen(koord pos, koord groesse)
 
 	convoihandle_t cnv = depot->get_convoi(icnv);
 	// check for data inconsistencies (can happen with withdraw-all and vehicle in depot)
-	if (!cnv.is_bound() && !convoi_pics.empty()) {
+	if (!cnv.is_bound() && !convoi_pics.is_empty()) {
 		icnv=0;
 		update_data();
 		cnv = depot->get_convoi(icnv);
@@ -1464,28 +1474,28 @@ void depot_frame_t::update_tabs()
 
 	cont_pas.add_komponente(&pas);
 	// add only if there are any
-	if(!pas_vec.empty()) {
+	if(!pas_vec.is_empty()) {
 		tabs.add_tab(&scrolly_pas, translator::translate( depot->get_passenger_name() ) );
 		one = true;
 	}
 
 	cont_electrics.add_komponente(&electrics);
 	// add only if there are any trolleybuses
-	if(!electrics_vec.empty()) {
+	if(!electrics_vec.is_empty()) {
 		tabs.add_tab(&scrolly_electrics, translator::translate( depot->get_electrics_name() ) );
 		one = true;
 	}
 
 	cont_loks.add_komponente(&loks);
 	// add, if waggons are there ...
-	if (!loks_vec.empty() || !waggons_vec.empty()) {
+	if (!loks_vec.is_empty() || !waggons_vec.is_empty()) {
 		tabs.add_tab(&scrolly_loks, translator::translate( depot->get_zieher_name() ) );
 		one = true;
 	}
 
 	cont_waggons.add_komponente(&waggons);
 	// only add, if there are waggons
-	if (!waggons_vec.empty()) {
+	if (!waggons_vec.is_empty()) {
 		tabs.add_tab(&scrolly_waggons, translator::translate( depot->get_haenger_name() ) );
 		one = true;
 	}
