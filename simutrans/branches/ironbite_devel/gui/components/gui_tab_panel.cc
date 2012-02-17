@@ -1,0 +1,298 @@
+/*
+ * Copyright (c) 1997 - 2001 Hj. Malthaner
+ *
+ * This file is part of the Simutrans project under the artistic licence.
+ * (see licence.txt)
+ */
+
+#include "gui_tab_panel.h"
+#include "../../simevent.h"
+#include "../../simgraph.h"
+#include "../../tpl/slist_tpl.h"
+#include "../../simcolor.h"
+#include "../../simwin.h"
+#include "../../besch/skin_besch.h"
+
+#define IMG_WIDTH 20
+
+gui_tab_panel_t::gui_tab_panel_t() :
+	required_groesse( 8, HEADER_VSIZE )
+{
+	tabs = new slist_tpl<tab> ();
+	active_tab = 0;
+	offset_tab = 0;
+	left.init( button_t::arrowleft, NULL, koord(0,0) );
+	left.add_listener( this );
+	right.init( button_t::arrowright, NULL, koord(0,0) );
+	right.add_listener( this );
+}
+
+gui_tab_panel_t::~gui_tab_panel_t()
+{
+	delete tabs;
+}
+
+
+void gui_tab_panel_t::add_tab(gui_component_t *c, const char *name, const skin_besch_t *besch, const char *tooltip )
+{
+	tabs->append( tab(c, besch?NULL:name, besch?besch->get_bild(0):NULL, tooltip) );
+	set_groesse( get_groesse() );
+}
+
+gui_component_t * gui_tab_panel_t::get_tab( uint8 i ) const 
+{ 
+	return i < tabs->get_count() ? tabs->at(i).component : NULL; 
+}
+
+int gui_tab_panel_t::get_active_tab_index() const 
+{
+	return min((int)tabs->get_count()-1,active_tab); 
+}
+
+void gui_tab_panel_t::set_active_tab_index( int i ) 
+{
+	active_tab = min((int)tabs->get_count()-1,i); 
+}
+
+
+uint32 gui_tab_panel_t::get_count () const 
+{
+	return tabs->get_count(); 
+}
+
+/**
+ * Returns true if the hosted component of the active tab is focusable
+ * @author Knightly
+ */
+bool gui_tab_panel_t::is_focusable() 
+{
+	return get_aktives_tab()->is_focusable(); 
+}
+
+gui_component_t * gui_tab_panel_t::get_focus() 
+{
+	return get_aktives_tab()->get_focus(); 
+}
+
+/**
+ * Get the relative position of the focused component.
+ * Used for auto-scrolling inside a scroll pane.
+ * @author Knightly
+ */
+koord gui_tab_panel_t::get_focus_pos() 
+{
+	return pos + get_aktives_tab()->get_focus_pos(); 
+}
+
+void gui_tab_panel_t::set_groesse(koord gr)
+{
+	gui_component_t::set_groesse(gr);
+
+	required_groesse = koord( 8, HEADER_VSIZE );
+	for (slist_tpl<tab>::iterator i = tabs->begin(), end = tabs->end(); i != end; ++i) {
+		i->x_offset = required_groesse.x-4;
+		i->width = 8 + (i->title ? proportional_string_width( i->title ) : IMG_WIDTH);
+		required_groesse.x += i->width;
+		i->component->set_pos( koord(0, HEADER_VSIZE) );
+		i->component->set_groesse( get_groesse() - koord(0, HEADER_VSIZE) );
+	}
+
+	if(  required_groesse.x>gr.x  ) {
+		left.set_pos( koord( 2, 5 ) );
+		right.set_pos( koord( gr.x-10, 5 ) );
+	}
+}
+
+
+bool gui_tab_panel_t::action_triggered(gui_action_creator_t *komp, value_t)
+{
+	if(  komp==&right  ) {
+		offset_tab = min( offset_tab+1, tabs->get_count()-1 );
+	}
+	else if(  komp==&left  ) {
+		offset_tab = max( offset_tab-1, 0 );
+	}
+	return true;
+}
+
+
+bool gui_tab_panel_t::infowin_event(const event_t *ev)
+{
+	if(  required_groesse.x>groesse.x  &&  ev->ev_class!=EVENT_KEYBOARD  &&  ev->ev_code==MOUSE_LEFTBUTTON  ) {
+		// buttons pressed
+		if(  left.getroffen(ev->cx, ev->cy)  ) {
+			event_t ev2 = *ev;
+			translate_event(&ev2, -left.get_pos().x, -left.get_pos().y);
+			return left.infowin_event(&ev2);
+		}
+		else if(  right.getroffen(ev->cx, ev->cy)  ) {
+			event_t ev2 = *ev;
+			translate_event(&ev2, -right.get_pos().x, -right.get_pos().y);
+			return right.infowin_event(&ev2);
+		}
+	}
+
+	if(  IS_LEFTRELEASE(ev)  &&  (ev->my > 0  &&  ev->my < HEADER_VSIZE-1)  )  {
+		// Reiter getroffen
+		int text_x = required_groesse.x>groesse.x ? 14 : 4;
+		int k=0;
+
+		slist_iterator_tpl <tab> iter (tabs);
+
+		while(iter.next()) 
+		{
+			const tab & i = iter.get_current();
+			
+			if(  k>=offset_tab  ) 
+			{
+				if(  text_x < ev->mx  &&  text_x+i.width > ev->mx  ) 
+				{
+					// either tooltip or change
+					active_tab = k;
+					call_listeners((long)active_tab);
+					return true;
+				}
+				text_x += i.width;
+			}
+			++k;
+		}
+		return true;
+	}
+
+	// Knightly : navigate among the tabs using Ctrl-PgUp and Ctrl-PgDn
+	if(  ev->ev_class==EVENT_KEYBOARD  &&  IS_CONTROL_PRESSED(ev)  ) {
+		if(  ev->ev_code==SIM_KEY_PGUP  ) {
+			// Ctrl-PgUp -> go to the previous tab
+			const int next_tab_idx = active_tab - 1;
+			active_tab = next_tab_idx<0 ? max(0, (int)tabs->get_count()-1) : next_tab_idx;
+			return true;
+		}
+		else if(  ev->ev_code==SIM_KEY_PGDN  ) {
+			// Ctrl-PgDn -> go to the next tab
+			const int next_tab_idx = active_tab + 1;
+			active_tab = next_tab_idx>=(int)tabs->get_count() ? 0 : next_tab_idx;
+			return true;
+		}
+	}
+
+	if(  ev->ev_class == EVENT_KEYBOARD  ||  DOES_WINDOW_CHILDREN_NEED(ev)  ||  get_aktives_tab()->getroffen(ev->mx, ev->my)  ||  get_aktives_tab()->getroffen(ev->cx, ev->cy)) {
+		// Komponente getroffen
+		event_t ev2 = *ev;
+		translate_event(&ev2, -get_aktives_tab()->get_pos().x, -get_aktives_tab()->get_pos().y );
+		return get_aktives_tab()->infowin_event(&ev2);
+	}
+	return false;
+}
+
+
+
+void gui_tab_panel_t::zeichnen(koord parent_pos)
+{
+	// Position am Bildschirm/Fenster
+	int xpos = parent_pos.x + pos.x;
+	const int ypos = parent_pos.y + pos.y;
+
+	if(  required_groesse.x>groesse.x  ) {
+		left.zeichnen( parent_pos+pos );
+		right.zeichnen( parent_pos+pos );
+		display_fillbox_wh_clip(xpos, ypos+HEADER_VSIZE-1, 10, 1, COL_WHITE, true);
+		xpos += 10;
+	}
+
+	int text_x = xpos+8;
+
+	display_fillbox_wh_clip(xpos, ypos+HEADER_VSIZE-1, 4, 1, COL_WHITE, true);
+
+	// do not draw under right button
+	int xx = required_groesse.x>get_groesse().x ? get_groesse().x-22 : get_groesse().x;
+
+	int i=0;
+	slist_iterator_tpl <tab> iter (tabs);
+
+	while(iter.next()) 
+	{
+		const tab & tab = iter.get_current();
+		
+		// just draw component, if here ...
+		if (i == active_tab) {
+			tab.component->zeichnen( parent_pos+pos );
+		}
+		
+		if(i>=offset_tab) {
+			// set clipping
+			PUSH_CLIP(xpos, ypos, xx, ypos+HEADER_VSIZE);
+			// only start drwing here ...
+			const char* text = tab.title;
+			const int width = text ? proportional_string_width( text ) : IMG_WIDTH;
+
+			if (i != active_tab) {
+				display_fillbox_wh_clip(text_x-4, ypos+HEADER_VSIZE-1, width+8, 1, MN_GREY4, true);
+				display_fillbox_wh_clip(text_x-3, ypos+4, width+5, 1, MN_GREY4, true);
+
+				display_vline_wh_clip(text_x-4, ypos+5, HEADER_VSIZE-6, MN_GREY4, true);
+				display_vline_wh_clip(text_x+width+3, ypos+5, HEADER_VSIZE-6, MN_GREY0, true);
+
+				if(text) {
+					display_proportional_clip(text_x, ypos+7, text, ALIGN_LEFT, COL_WHITE, true);
+				}
+				else {
+					display_img_blend( tab.img->get_nummer(), text_x - tab.img->get_pic()->x + (IMG_WIDTH/2) - (tab.img->get_pic()->w/2), ypos - tab.img->get_pic()->y + 10 - (tab.img->get_pic()->h/2), TRANSPARENT50_FLAG, false, true);
+				}
+			}
+			else {
+				display_fillbox_wh_clip(text_x-3, ypos+3, width+5, 1, MN_GREY4, true);
+
+				display_vline_wh_clip(text_x-4, ypos+4, 13, MN_GREY4, true);
+				display_vline_wh_clip(text_x+width+3, ypos+4, 13, MN_GREY0, true);
+
+				if(text) {
+					display_proportional_clip(text_x, ypos+7, text, ALIGN_LEFT, COL_BLACK, true);
+				}
+				else {
+					display_color_img( tab.img->get_nummer(), text_x - tab.img->get_pic()->x + (IMG_WIDTH/2) - (tab.img->get_pic()->w/2), ypos - tab.img->get_pic()->y + 10 - (tab.img->get_pic()->h/2), 0, false, true);
+				}
+			}
+			text_x += width + 8;
+			// reset clipping
+			POP_CLIP();
+		}
+		++i;
+	}
+	display_fillbox_wh_clip(text_x-4, ypos+HEADER_VSIZE-1, xpos+groesse.x-(text_x-4), 1, MN_GREY4, true);
+
+	// now for tooltips ...
+	int my = get_mouse_y()-parent_pos.y-pos.y-6;
+	if(my>=0  &&  my < HEADER_VSIZE-1) {
+		// Reiter getroffen?
+		int mx = get_mouse_x()-parent_pos.x-pos.x-11;
+		int text_x = 4;
+		int i=0;
+		slist_iterator_tpl <tab> iter (tabs);
+
+		while(iter.next()) 
+		{
+			const tab & tab = iter.get_current();
+
+			if(  i>=offset_tab  ) {
+				const char* text = tab.title;
+				const int width = text ? proportional_string_width( text ) : IMG_WIDTH;
+
+				if(text_x < mx && text_x+width+8 > mx  && (required_groesse.x<=get_groesse().x || mx < right.get_pos().x-12)) {
+					// tooltip or change
+					win_set_tooltip(get_mouse_x() + 16, ypos + HEADER_VSIZE + 12, tab.tooltip, &tab, this);
+					break;
+				}
+
+				text_x += width + 8;
+			}
+			++i;
+		}
+	}
+}
+
+
+void gui_tab_panel_t::clear()
+{
+	tabs->clear();
+	active_tab = 0;
+}
