@@ -186,7 +186,7 @@ koord3d stadt_info_t::get_weltpos()
  */
 void stadt_info_t::rename_city()
 {
-	if (stadt->get_welt()->get_staedte().is_contained(stadt)) {
+	if (stadt->get_welt()->get_staedte().contains(stadt)) {
 		const char *t = name_input.get_text();
 		// only change if old name and current name are the same
 		// otherwise some unintended undo if renaming would occur
@@ -210,7 +210,7 @@ void stadt_info_t::rename_city()
 void stadt_info_t::reset_city_name()
 {
 	// change text input
-	if (stadt->get_welt()->get_staedte().is_contained(stadt)) {
+	if (stadt->get_welt()->get_staedte().contains(stadt)) {
 		tstrncpy(old_name, stadt->get_name(), sizeof(old_name));
 		tstrncpy(name, stadt->get_name(), sizeof(name));
 		name_input.set_text(name, sizeof(name));

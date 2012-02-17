@@ -1389,13 +1389,13 @@ void settings_t::set_default_player_color(spieler_t* const sp) const
 				spieler_t *test_sp = sp->get_welt()->get_spieler(i);
 				if(  test_sp  &&  sp!=test_sp  ) {
 					uint8 rem = 1<<(sp->get_player_color1()/8);
-					if(  all_colors1.is_contained(rem)  ) {
+					if(  all_colors1.contains(rem)  ) {
 						all_colors1.remove( rem );
 					}
 				}
 				else if(  default_player_color[i][0]!=255  ) {
 					uint8 rem = default_player_color[i][0];
-					if(  all_colors1.is_contained(rem)  ) {
+					if(  all_colors1.contains(rem)  ) {
 						all_colors1.remove( rem );
 					}
 				}
@@ -1423,13 +1423,13 @@ void settings_t::set_default_player_color(spieler_t* const sp) const
 				spieler_t *test_sp = sp->get_welt()->get_spieler(i);
 				if(  test_sp  &&  sp!=test_sp  ) {
 					uint8 rem = 1<<(sp->get_player_color2()/8);
-					if(  all_colors2.is_contained(rem)  ) {
+					if(  all_colors2.contains(rem)  ) {
 						all_colors2.remove( rem );
 					}
 				}
 				else if(  default_player_color[i][1]!=255  ) {
 					uint8 rem = default_player_color[i][1];
-					if(  all_colors2.is_contained(rem)  ) {
+					if(  all_colors2.contains(rem)  ) {
 						all_colors2.remove( rem );
 					}
 				}

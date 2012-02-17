@@ -51,7 +51,7 @@ void marker_t::markiere(const grund_t *gr)
 			const int bit = gr->get_pos().y*cached_groesse+gr->get_pos().x;
 			bits[bit/bit_unit] |= 1 << (bit & bit_mask);
 		}
-		else if(!more.is_contained(gr)) {
+		else if(!more.contains(gr)) {
 			more.insert(gr);
 		}
 	}
@@ -82,6 +82,6 @@ bool marker_t::ist_markiert(const grund_t *gr) const
 		return (bits[bit/bit_unit] & (1 << (bit & bit_mask))) != 0;
 	}
 	else {
-		return more.is_contained(gr);
+		return more.contains(gr);
 	}
 }

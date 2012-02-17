@@ -51,7 +51,7 @@ char * convoi_frame_t::access_name_filter()
 
 bool convoi_frame_t::get_ware_filter(const freight_desc_t *ware) 
 {
-	return waren_filter.is_contained(ware); 
+	return waren_filter.contains(ware); 
 }
 
 const char * convoi_frame_t::sort_text[SORT_MODES] = {

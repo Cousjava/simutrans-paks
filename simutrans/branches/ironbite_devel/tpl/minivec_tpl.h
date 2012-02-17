@@ -52,7 +52,7 @@ public:
 	 * Checks if element elem is contained in vector.
 	 * Uses the == operator for comparison.
 	 */
-	bool is_contained(T elem) const
+	bool contains(T elem) const
 	{
 		for (uint i = 0; i < count; i++) {
 			if (data[i] == elem) return true;
@@ -74,7 +74,7 @@ public:
 	/** Checks if element is contained. Appends only new elements. */
 	bool append_unique(T elem)
 	{
-		if (is_contained(elem)) return false;
+		if (contains(elem)) return false;
 		append(elem);
 		return true;
 	}
@@ -85,7 +85,7 @@ public:
 	 */
 	bool append_unique(T elem, uint8 extend)
 	{
-		if (is_contained(elem)) return false;
+		if (contains(elem)) return false;
 		append(elem, extend);
 		return true;
 	}

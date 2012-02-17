@@ -326,7 +326,7 @@ haltestelle_t::haltestelle_t(karte_t* wl, loadsave_t* file)
 haltestelle_t::haltestelle_t(karte_t* wl, koord k, spieler_t* sp)
 {
 	self = halthandle_t(this);
-	assert( !alle_haltestellen.is_contained(self) );
+	assert( !alle_haltestellen.contains(self) );
 	alle_haltestellen.append(self);
 
 	markers[ self.get_id() ] = current_marker;
@@ -367,7 +367,7 @@ haltestelle_t::~haltestelle_t()
 
 	// first: remove halt from all lists
 	int i=0;
-	while(alle_haltestellen.is_contained(self)) {
+	while(alle_haltestellen.contains(self)) {
 		alle_haltestellen.remove(self);
 		i++;
 	}
@@ -629,7 +629,7 @@ char* haltestelle_t::create_name(koord const k, char const* const typ)
 				// since the distance are presorted, we can just append for a good choice ...
 				for(  int test=0;  test<24;  test++  ) {
 					fabrik_t *fab = fabrik_t::get_fab(welt,k+next_building[test]);
-					if(fab  &&  fabs.is_contained(fab)) {
+					if(fab  &&  fabs.contains(fab)) {
 						fabs.append(fab);
 					}
 				}
@@ -824,7 +824,7 @@ char* haltestelle_t::create_name(koord const k, char const* const typ)
 // add convoi to loading
 void haltestelle_t::request_loading( convoihandle_t cnv )
 {
-	if(  !loading_here.is_contained(cnv)  ) {
+	if(  !loading_here.contains(cnv)  ) {
 		loading_here.append (cnv );
 	}
 	if(  last_loading_step != welt->get_steps()  ) {
@@ -1016,7 +1016,7 @@ void haltestelle_t::verbinde_fabriken()
 		for(unsigned i=0; i<fablist.get_count(); i++) 
 		{
 			fabrik_t * fab = fablist.get(i);
-			if(!fab_list.is_contained(fab))
+			if(!fab_list.contains(fab))
 			{
 				fab_list.insert(fab);
 				fab->link_halt(self);
@@ -2236,7 +2236,7 @@ void haltestelle_t::make_public_and_join( spieler_t *sp )
 				const planquadrat_t *pl2 = welt->lookup(gr->get_pos().get_2d()+koord::neighbours[i]);
 				if(  pl2  ) {
 					halthandle_t halt = pl2->get_halt();
-					if(  halt.is_bound()  &&  halt->get_besitzer()==public_owner  &&  !joining.is_contained(halt)  ) {
+					if(  halt.is_bound()  &&  halt->get_besitzer()==public_owner  &&  !joining.contains(halt)  ) {
 						joining.append(halt);
 					}
 				}
@@ -2839,7 +2839,7 @@ bool haltestelle_t::add_grund(grund_t *gr)
 	assert(gr!=NULL);
 
 	// neu halt?
-	if (tiles.is_contained(gr)) {
+	if (tiles.contains(gr)) {
 		return false;
 	}
 
@@ -2870,7 +2870,7 @@ bool haltestelle_t::add_grund(grund_t *gr)
 	{
 		fabrik_t * const fab = fablist.get(i);
 
-		if(!fab_list.is_contained(fab)) {
+		if(!fab_list.contains(fab)) {
 			fab_list.insert(fab);
 			fab->link_halt(self);
 		}
@@ -2888,7 +2888,7 @@ bool haltestelle_t::add_grund(grund_t *gr)
 				{
 					// only add unknown lines
 
-					if(  !registered_lines.is_contained(check_line.get(j))  &&  check_line.get(j)->count_convoys()>0  ) {
+					if(  !registered_lines.contains(check_line.get(j))  &&  check_line.get(j)->count_convoys()>0  ) {
 						const schedule_t *fpl = check_line.get(j)->get_schedule();
 						for(  int k=0;  k<fpl->get_count();  k++  ) {
 							if(get_halt(welt,fpl->eintrag.get(k).pos,check_line.get(j)->get_besitzer())==self) {
@@ -2908,7 +2908,7 @@ bool haltestelle_t::add_grund(grund_t *gr)
 	{
 		convoihandle_t const cnv = iter.get_current();
 			// only check lineless convoys which are not yet registered
-			if(  !cnv->get_line().is_bound()  &&  !registered_convoys.is_contained(cnv)  ) {
+			if(  !cnv->get_line().is_bound()  &&  !registered_convoys.contains(cnv)  ) {
 				const schedule_t *const fpl = cnv->get_schedule();
 				if(  fpl  ) {
 					for(  int k=0;  k<fpl->get_count();  ++k  ) {
@@ -2927,7 +2927,7 @@ bool haltestelle_t::add_grund(grund_t *gr)
 		{
 
 			// only add unknown lines
-			if(  !registered_lines.is_contained(check_line.get(j))  &&  check_line.get(j)->count_convoys()>0  ) {
+			if(  !registered_lines.contains(check_line.get(j))  &&  check_line.get(j)->count_convoys()>0  ) {
 				const schedule_t *fpl = check_line.get(j)->get_schedule();
 				for(  int k=0;  k<fpl->get_count();  k++  ) {
 					if(get_halt(welt,fpl->eintrag.get(k).pos,get_besitzer())==self) {
@@ -2944,7 +2944,7 @@ bool haltestelle_t::add_grund(grund_t *gr)
 	{
 		convoihandle_t const cnv = iter.get_current();
 			// only check lineless convoys which have matching ownership and which are not yet registered
-			if(  !cnv->get_line().is_bound()  &&  cnv->get_besitzer()==get_besitzer()  &&  !registered_convoys.is_contained(cnv)  ) {
+			if(  !cnv->get_line().is_bound()  &&  cnv->get_besitzer()==get_besitzer()  &&  !registered_convoys.contains(cnv)  ) {
 				const schedule_t *const fpl = cnv->get_schedule();
 				if(  fpl  ) {
 					for(  int k=0;  k<fpl->get_count();  ++k  ) {

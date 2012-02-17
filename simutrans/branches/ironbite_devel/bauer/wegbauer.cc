@@ -1025,7 +1025,7 @@ void wegbauer_t::check_for_bridge(const grund_t* parent_from, const grund_t* fro
 			end = brueckenbauer_t::finde_ende( welt, from->get_pos(), zv, bruecke_besch, error, true, min_length );
 			gr_end = welt->lookup(end);
 			uint32 length = koord_distance(from->get_pos(), end);
-			if (gr_end && !error && !ziel.is_contained(end) && brueckenbauer_t::ist_ende_ok(sp, gr_end) && length <= welt->get_settings().way_max_bridge_len) {
+			if (gr_end && !error && !ziel.contains(end) && brueckenbauer_t::ist_ende_ok(sp, gr_end) && length <= welt->get_settings().way_max_bridge_len) {
 				// If there is a slope on the starting tile, it's taken into account in is_allowed_step, but a bridge will be flat!
 				sint8 num_slopes = (from->get_grund_hang() == hang_t::flach) ? 1 : -1;
 				// On the end tile, we haven't to subtract way_count_slope, since is_allowed_step isn't called with this tile.
@@ -1044,7 +1044,7 @@ void wegbauer_t::check_for_bridge(const grund_t* parent_from, const grund_t* fro
 		// uphill hang ... may be tunnel?
 		const long cost_difference=besch->get_wartung()>0 ? (tunnel_besch->get_wartung()*4l+3l)/besch->get_wartung() : 16;
 		koord3d end = tunnelbauer_t::finde_ende( welt, from->get_pos(), zv, besch->get_wtyp());
-		if(  end != koord3d::invalid  &&  !ziel.is_contained(end)  ) {
+		if(  end != koord3d::invalid  &&  !ziel.contains(end)  ) {
 			uint32 length = koord_distance(from->get_pos(), end);
 			next_gr.append(next_gr_t(welt->lookup(end), length * cost_difference, build_straight ));
 			return;
@@ -1266,7 +1266,7 @@ DBG_DEBUG("insert to close","(%i,%i,%i)  f=%i",gr->get_pos().x,gr->get_pos().y,g
 #endif
 
 		// already there
-		if(  ziel.is_contained(gr_pos)  ||  tmp->g>maximum) {
+		if(  ziel.contains(gr_pos)  ||  tmp->g>maximum) {
 			// we added a target to the closed list: we are finished
 			break;
 		}
@@ -1440,7 +1440,7 @@ DBG_DEBUG("wegbauer_t::intern_calc_route()","steps=%i  (max %i) in route, open %
 
 //DBG_DEBUG("reached","%i,%i",tmp->pos.x,tmp->pos.y);
 	// target reached?
-	if( !ziel.is_contained(gr->get_pos())  ||  step>=route_t::MAX_STEP  ||  tmp->parent==NULL) {
+	if( !ziel.contains(gr->get_pos())  ||  step>=route_t::MAX_STEP  ||  tmp->parent==NULL) {
 		dbg->warning("wegbauer_t::intern_calc_route()","Too many steps (%i>=max %i) in route (too long/complex)",step,route_t::MAX_STEP);
 		return -1;
 	}

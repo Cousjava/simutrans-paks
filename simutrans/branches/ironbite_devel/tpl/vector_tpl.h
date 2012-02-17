@@ -82,7 +82,7 @@ template<class T> class vector_tpl
 		 * Checks if element elem is contained in vector.
 		 * Uses the == operator for comparison.
 		 */
-		bool is_contained(const T & elem) const
+		bool contains(const T & elem) const
 		{
 			for (uint32 i = 0; i < count; i++) {
 				if (data[i] == elem) {
@@ -121,7 +121,7 @@ template<class T> class vector_tpl
 		 */
 		bool append_unique(const T & elem)
 		{
-			if (is_contained(elem)) 
+			if (contains(elem)) 
 			{
 				return false;
 			}

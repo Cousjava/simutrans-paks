@@ -410,7 +410,7 @@ bool depot_t::start_convoi(convoihandle_t cnv, bool local_execution)
 	}
 
 	// convoi not in depot anymore, maybe user double-clicked on start-button
-	if(!ooo->convois.is_contained(cnv)) {
+	if(!ooo->convois.contains(cnv)) {
 		return false;
 	}
 

@@ -74,7 +74,7 @@ public:
 	void rotate90( sint16 y_size ) { route.rotate90( y_size ); };
 
 
-	bool is_contained(const koord3d k) const { return route.is_contained(k); }
+	bool contains(const koord3d k) const { return route.contains(k); }
 
 	uint32 index_of(const koord3d k) const { return (uint32)(route.index_of(k)); }
 

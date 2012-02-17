@@ -150,11 +150,11 @@ public:
 
     static char *access_name_filter() { return name_filter_value; }
 
-    static bool get_ware_filter_ab(const freight_desc_t *ware) { return waren_filter_ab.is_contained(ware); }
+    static bool get_ware_filter_ab(const freight_desc_t *ware) { return waren_filter_ab.contains(ware); }
     static void set_ware_filter_ab(const freight_desc_t *ware, int mode);
     static void set_alle_ware_filter_ab(int mode);
 
-    static bool get_ware_filter_an(const freight_desc_t *ware) { return waren_filter_an.is_contained(ware); }
+    static bool get_ware_filter_an(const freight_desc_t *ware) { return waren_filter_an.contains(ware); }
     static void set_ware_filter_an(const freight_desc_t *ware, int mode);
     static void set_alle_ware_filter_an(int mode);
 

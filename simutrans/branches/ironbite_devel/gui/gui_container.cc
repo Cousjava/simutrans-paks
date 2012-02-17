@@ -250,7 +250,7 @@ bool gui_container_t::is_focusable()
 
 void gui_container_t::set_focus( gui_component_t *k )
 {
-	if(  komponenten.is_contained(k)  ||  k==NULL  ) {
+	if(  komponenten.contains(k)  ||  k==NULL  ) {
 		komp_focus = k;
 	}
 }

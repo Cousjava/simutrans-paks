@@ -176,7 +176,7 @@ void goods_frame_t::sort_list()
 
 		// Hajo: we skip goods that don't generate income
 		//       this should only be true for the special good 'None'
-		if(  wtyp->get_preis()!=0  &&  (!filter_goods  ||  goods_in_game.is_contained(wtyp))  ) {
+		if(  wtyp->get_preis()!=0  &&  (!filter_goods  ||  goods_in_game.contains(wtyp))  ) {
 			good_list[n++] = i;
 		}
 	}

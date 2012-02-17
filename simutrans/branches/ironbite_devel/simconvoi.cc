@@ -886,7 +886,7 @@ bool convoi_t::drive_to()
 		// avoid stopping midhalt
 		if(  start==ziel  ) {
 			halthandle_t halt = haltestelle_t::get_halt(welt,ziel,get_besitzer());
-			if(  halt.is_bound()  &&  route.is_contained(start)  ) {
+			if(  halt.is_bound()  &&  route.contains(start)  ) {
 				for(  uint32 i=route.index_of(start);  i<route.get_count();  i++  ) {
 					grund_t *gr = welt->lookup(route.position_bei(i));
 					if(  gr  && gr->get_halt()==halt  ) {

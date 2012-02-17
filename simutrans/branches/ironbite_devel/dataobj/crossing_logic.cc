@@ -98,7 +98,7 @@ bool crossing_logic_t::request_crossing( const vehicle_base_t *v )
 		// passage denied, since there are vehicle on way2
 		// which has priority
 		// => ok only if I am already crossing
-		return on_way1.is_contained(v);
+		return on_way1.contains(v);
 	}
 	else if(v->get_waytype()==besch->get_waytype(1)) {
 

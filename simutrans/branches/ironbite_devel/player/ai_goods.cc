@@ -272,15 +272,15 @@ bool ai_goods_t::suche_platz1_platz2(fabrik_t *qfab, fabrik_t *zfab, int length 
 				for( uint32 j = 0; j < one_more.get_count(); j++ ) {
 					halthandle_t halt = haltestelle_t::get_halt( welt, one_more.get(j), this );
 
-					if( halt.is_bound() && !halts.is_contained(halt->get_basis_pos()) ) {
-						bool halt_connected = halt->get_fab_list().is_contained( fab );
+					if( halt.is_bound() && !halts.contains(halt->get_basis_pos()) ) {
+						bool halt_connected = halt->get_fab_list().contains( fab );
 						slist_iterator_tpl <haltestelle_t::tile_t> iter (halt->get_tiles());
 
 	while(iter.next())
 	{
 		haltestelle_t::tile_t const& i = iter.get_current();
 							koord const pos = i.grund->get_pos().get_2d();
-							if( halt_connected || fab_tiles.is_contained(pos) ) {
+							if( halt_connected || fab_tiles.contains(pos) ) {
 								halts.append_unique( pos );
 							}
 						}
@@ -318,7 +318,7 @@ bool ai_goods_t::suche_platz1_platz2(fabrik_t *qfab, fabrik_t *zfab, int length 
 				koord3d_vector_t const& r = bauigel.get_route();
 				start = r.get(0).get_2d();
 				ziel  = r.back().get_2d();
-				if (!tile_list[0].is_contained(r.get(0))) sim::swap(start, ziel);
+				if (!tile_list[0].contains(r.get(0))) sim::swap(start, ziel);
 				ok = true;
 				has_ziel = true;
 			}
@@ -714,7 +714,7 @@ DBG_MESSAGE("ai_goods_t::create_simple_rail_transport()","building simple track 
 		koord3d_vector_t const& r     = with_tf ? baumaulwurf.get_route() : bauigel.get_route();
 		koord3d                 tile1 = r.get(0);
 		koord3d                 tile2 = r.back();
-		if (!starttiles.is_contained(tile1)) sim::swap(tile1, tile2);
+		if (!starttiles.contains(tile1)) sim::swap(tile1, tile2);
 		// No botflag, since we want to connect with the station.
 		bauigel.route_fuer( wegbauer_t::schiene, rail_weg, tunnelbauer_t::find_tunnel(track_wt,rail_engine->get_geschw(),welt->get_timeline_year_month()), brueckenbauer_t::find_bridge(track_wt,rail_engine->get_geschw(),welt->get_timeline_year_month()) );
 		bauigel.calc_straight_route( koord3d(platz1,z1), tile1);
@@ -1029,7 +1029,7 @@ DBG_MESSAGE("ai_goods_t::do_ki()","No roadway possible.");
 				harbour=platz1;
 				int ships_needed = 1 + (prod*koord_distance(harbour,start->get_pos().get_2d())) / (ship_vehicle->get_zuladung()*max(20,ship_vehicle->get_geschw()));
 				if(create_ship_transport_vehikel(start,ships_needed)) {
-					if(welt->lookup(harbour)->get_halt()->get_fab_list().is_contained(ziel)) {
+					if(welt->lookup(harbour)->get_halt()->get_fab_list().contains(ziel)) {
 						// so close, so we are already connected
 						grund_t *gr = welt->lookup_kartenboden(platz2);
 						if (gr) gr->obj_loesche_alle(this);

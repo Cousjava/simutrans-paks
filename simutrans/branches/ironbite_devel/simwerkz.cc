@@ -4836,7 +4836,7 @@ const char *wkz_stop_moving_t::do_work( karte_t *welt, spieler_t *sp, const koor
 						bool updated = false;
 
 						for(  int k=0;  k<fpl->get_count();  k++  ) {
-							if(  (catch_all_halt  &&  haltestelle_t::get_halt(welt,fpl->eintrag.get(k).pos,cnv->get_besitzer())==last_halt)  ||  old_platform.is_contained(fpl->eintrag.get(k).pos)  ) {
+							if(  (catch_all_halt  &&  haltestelle_t::get_halt(welt,fpl->eintrag.get(k).pos,cnv->get_besitzer())==last_halt)  ||  old_platform.contains(fpl->eintrag.get(k).pos)  ) {
 								fpl->eintrag.at(k).pos = pos;
 								updated = true;
 							}
@@ -4884,7 +4884,7 @@ const char *wkz_stop_moving_t::do_work( karte_t *welt, spieler_t *sp, const koor
 						// ok!
 
 						if( (catch_all_halt  &&  haltestelle_t::get_halt(welt, k.pos, line->get_besitzer())==last_halt)  ||  
-								old_platform.is_contained(k.pos) ) 
+								old_platform.contains(k.pos) ) 
 						{
 							k.pos = pos;
 							updated = true;
@@ -5749,7 +5749,7 @@ bool wkz_change_depot_t::init( karte_t *welt, spieler_t *sp )
 
 					if(tool!='a') {
 						// start of composition
-						while (info->get_vorgaenger_count() == 1 && info->get_vorgaenger(0) != NULL  &&  !new_vehicle_info.is_contained(info)) {
+						while (info->get_vorgaenger_count() == 1 && info->get_vorgaenger(0) != NULL  &&  !new_vehicle_info.contains(info)) {
 							info = info->get_vorgaenger(0);
 							new_vehicle_info.insert(info);
 						}
@@ -5757,7 +5757,7 @@ bool wkz_change_depot_t::init( karte_t *welt, spieler_t *sp )
 					}
 					while(info) {
 						new_vehicle_info.append( info );
-						if(info->get_nachfolger_count()!=1  ||  (tool=='i'  &&  info==start_info)  ||  new_vehicle_info.is_contained(info->get_nachfolger(0))) {
+						if(info->get_nachfolger_count()!=1  ||  (tool=='i'  &&  info==start_info)  ||  new_vehicle_info.contains(info->get_nachfolger(0))) {
 							break;
 						}
 						info = info->get_nachfolger(0);

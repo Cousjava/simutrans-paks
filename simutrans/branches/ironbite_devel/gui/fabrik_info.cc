@@ -106,7 +106,7 @@ fabrik_info_t::~fabrik_info_t()
 
 void fabrik_info_t::rename_factory()
 {
-	if(  fabname[0]  &&  welt->get_fab_list().is_contained(fab)  &&  strcmp(fabname, fab->get_name())  ) {
+	if(  fabname[0]  &&  welt->get_fab_list().contains(fab)  &&  strcmp(fabname, fab->get_name())  ) {
 		// text changed and factory still exists => call tool
 		cbuffer_t buf;
 		buf.printf( "f%s,%s", fab->get_pos().get_str(), fabname );

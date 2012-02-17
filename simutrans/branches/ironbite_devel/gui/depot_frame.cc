@@ -549,7 +549,7 @@ void depot_frame_t::activate_convoi( convoihandle_t c )
 
 
 // true if already stored here
-bool depot_frame_t::is_contained(const vehikel_besch_t *info)
+bool depot_frame_t::contains(const vehikel_besch_t *info)
 {
 	slist_iterator_tpl<vehikel_t*> iter(depot->get_vehicle_list());
 	while (iter.next()) 
@@ -709,7 +709,7 @@ void depot_frame_t::build_vehicle_lists()
 			}
 
 			// current vehicle
-			if( is_contained(info)  ||
+			if( contains(info)  ||
 				((weg_electrified  ||  info->get_engine_type()!=vehikel_besch_t::electric)  &&
 					 ((!info->is_future(month_now))  &&  (show_retired_vehicles  ||  (!info->is_retired(month_now)) )  ) )) {
 				// check, if allowed

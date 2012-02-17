@@ -805,7 +805,7 @@ void nwc_tool_t::do_command(karte_t *welt)
 		// do we have a tool for this client already?
 		tool_node_t new_tool_node(NULL, player_nr, tool_client_id);
 		uint32 index;
-		if (tool_list.is_contained(new_tool_node)) {
+		if (tool_list.contains(new_tool_node)) {
 			index = tool_list.index_of(new_tool_node);
 		}
 		else {

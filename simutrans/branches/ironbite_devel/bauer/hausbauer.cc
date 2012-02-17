@@ -479,7 +479,7 @@ gebaeude_t* hausbauer_t::baue(karte_t* welt, spieler_t* sp, koord3d pos, int org
 				welt->add_ausflugsziel( gb );
 			}
 			if(besch->get_typ() == gebaeude_t::unbekannt) {
-				if(station_building.is_contained(besch)) {
+				if(station_building.contains(besch)) {
 					(*static_cast<halthandle_t *>(param))->add_grund(gr);
 				}
 				if (besch->get_utyp() == haus_besch_t::hafen) {
@@ -624,7 +624,7 @@ hausbauer_t::neues_gebaeude(karte_t *welt, spieler_t *sp, koord3d pos, int built
 
 	gr->obj_add(gb);
 
-	if(station_building.is_contained(besch)  &&  besch->get_utyp()!=haus_besch_t::depot) {
+	if(station_building.contains(besch)  &&  besch->get_utyp()!=haus_besch_t::depot) {
 		// is a station/bus stop
 		(*static_cast<halthandle_t *>(param))->add_grund(gr);
 		gr->calc_bild();

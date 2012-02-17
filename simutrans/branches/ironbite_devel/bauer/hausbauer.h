@@ -127,7 +127,7 @@ public:
 	 * True, if this is still valid ...
 	 * @author V. Meyer
 	 */
-	static bool is_valid_denkmal(const haus_besch_t* besch) { return ungebaute_denkmaeler.is_contained(besch); }
+	static bool is_valid_denkmal(const haus_besch_t* besch) { return ungebaute_denkmaeler.contains(besch); }
 
 	/**
 	 * Dem Hausbauer Bescheid sagen, dass ein bestimmtes Denkmal gebaut wurde.

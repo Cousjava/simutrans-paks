@@ -137,7 +137,7 @@ void simline_t::add_convoy(convoihandle_t cnv)
 		for(  uint8 i = 0;  i < convoys_goods.get_count();  i++  ) {
 			const uint8 catg_index = convoys_goods.get(i);
 
-			if(  !goods_catg_index.is_contained( catg_index )  ) {
+			if(  !goods_catg_index.contains( catg_index )  ) {
 				goods_catg_index.append( catg_index, 1 );
 				update_schedules = true;
 			}
@@ -157,7 +157,7 @@ void simline_t::add_convoy(convoihandle_t cnv)
 
 void simline_t::remove_convoy(convoihandle_t cnv)
 {
-	if(line_managed_convoys.is_contained(cnv)) {
+	if(line_managed_convoys.contains(cnv)) {
 		line_managed_convoys.remove(cnv);
 		recalc_catg_index();
 		financial_history[0][LINE_CONVOIS] = count_convoys();
@@ -429,7 +429,7 @@ void simline_t::recalc_catg_index()
 		// maybe changed => must test all entries
 
 		for(  uint i=0;  i<goods_catg_index.get_count();  i++  ) {
-			if(  !old_goods_catg_index.is_contained(goods_catg_index.get(i))  ) {
+			if(  !old_goods_catg_index.contains(goods_catg_index.get(i))  ) {
 
 				// different => recalc
 				welt->set_schedule_counter();

@@ -114,7 +114,7 @@ template<class T> class weighted_vector_tpl
 		 * Checks if element elem is contained in vector.
 		 * Uses the == operator for comparison.
 		 */
-		bool is_contained(T elem) const
+		bool contains(T elem) const
 		{
 			for (uint32 i = 0; i < count; i++) {
 				if (nodes[i].data == elem) return true;
@@ -184,7 +184,7 @@ template<class T> class weighted_vector_tpl
 		 */
 		bool append_unique(T elem, unsigned long weight)
 		{
-			return is_contained(elem) || append(elem, weight);
+			return contains(elem) || append(elem, weight);
 		}
 
 		/**
@@ -193,7 +193,7 @@ template<class T> class weighted_vector_tpl
 		 */
 		bool append_unique(T elem, unsigned long weight, uint32 extend)
 		{
-			return is_contained(elem) || append(elem, weight, extend);
+			return contains(elem) || append(elem, weight, extend);
 		}
 
 		/** inserts data at a certain pos */

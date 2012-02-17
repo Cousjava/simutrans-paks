@@ -527,7 +527,7 @@ halthandle_t spieler_t::halt_add(koord pos)
  */
 void spieler_t::halt_add(halthandle_t halt)
 {
-	if(!halt_list.is_contained(halt)) {
+	if(!halt_list.contains(halt)) {
 		halt_list.append(halt);
 		haltcount ++;
 	}

@@ -155,7 +155,7 @@ void halt_detail_t::halt_detail_info()
 			for (uint32 i = 0; i < eingang.get_count(); i++) {
 				const freight_desc_t* ware = eingang.get(i).get_typ();
 
-				if(!nimmt_an.is_contained(ware)) {
+				if(!nimmt_an.contains(ware)) {
 					nimmt_an.append(ware);
 				}
 			}
@@ -178,7 +178,7 @@ void halt_detail_t::halt_detail_info()
 	if (!nimmt_an.is_empty()  &&  halt->get_ware_enabled()) {
 		for(uint32 i=0; i<freight_builder_t::get_waren_anzahl(); i++) {
 			const freight_desc_t *ware = freight_builder_t::get_info(i);
-			if(nimmt_an.is_contained(ware)) {
+			if(nimmt_an.contains(ware)) {
 
 				buf.append(" - ");
 				buf.append(translator::translate(ware->get_name()));

@@ -913,7 +913,7 @@ public:
 	void remove_ausflugsziel(gebaeude_t *gb);
 	const weighted_vector_tpl<gebaeude_t*> &get_ausflugsziele() const {return ausflugsziele; }
 
-	void add_label(koord pos) { if (!labels.is_contained(pos)) labels.append(pos); }
+	void add_label(koord pos) { if (!labels.contains(pos)) labels.append(pos); }
 	void remove_label(koord pos) { labels.remove(pos); }
 	const slist_tpl<koord>& get_label_list() const { return labels; }
 

@@ -179,7 +179,7 @@ private:
 	bool has_min_sizer() const {return true;}
 
 	// true if already stored here
-	bool is_contained(const vehikel_besch_t *info);
+	bool contains(const vehikel_besch_t *info);
 
 	// add a single vehicle (helper function)
 	void add_to_vehicle_list(const vehikel_besch_t *info);

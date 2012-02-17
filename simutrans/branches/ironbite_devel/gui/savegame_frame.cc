@@ -91,7 +91,7 @@ gui_frame_t( translator::translate("Load/Save") ),
 void savegame_frame_t::fill_list()
 {
 	char searchpath[1024];
-	bool not_cutting_extension = (suffix==NULL  ||  suffix[0]!='.');
+	bool keep_extension = (suffix == NULL || suffix[0] != '.');
 
 	if(fullpath==NULL) {
 #ifndef _MSC_VER
@@ -123,23 +123,26 @@ void savegame_frame_t::fill_list()
 		fprintf(stderr, "savegame_frame_t::fill_list()\tCouldn't read directory %s.\n", searchpath);
 		fflush(stderr);
 	}
-	else {
+	else 
+	{
 		dbg->debug("savegame_frame_t::fill_list()", "Reading directory %s.", searchpath);
 		fprintf(stderr, "savegame_frame_t::fill_list()\tsearching directory %s for suffix %s.\n", searchpath, suffix);
 		fflush(stderr);
 
 		const dirent* entry;
-		do {
+		do 
+		{
 			entry=readdir(dir);
-			if(entry!=NULL) {
-				if(entry->d_name[0]!='.' ||  (entry->d_name[1]!='.' && entry->d_name[1]!=0)) {
-
+			if(entry!=NULL) 
+			{
+				if(entry->d_name[0]!='.' ||  (entry->d_name[1]!='.' && entry->d_name[1]!=0)) 
+				{
 					fprintf(stderr, "savegame_frame_t::fill_list()\t-> %s\n", entry->d_name);
 					fflush(stderr);
 
 					if(check_file(entry->d_name, suffix)) 
 					{
-						add_file(entry->d_name, get_info(entry->d_name), not_cutting_extension);
+						add_file(entry->d_name, get_info(entry->d_name), keep_extension);
 					}
 				}
 			}
@@ -158,12 +161,14 @@ void savegame_frame_t::fill_list()
 		else {
 			do {
 				if(only_directories) {
-					if ((entry.attrib & _A_SUBDIR)==0) {
+					if ((entry.attrib & _A_SUBDIR) == 0) 
+					{
 						continue;
 					}
 				}
-				if(check_file(entry.name,suffix)) {
-					add_file(entry.name, get_info(entry.name), not_cutting_extension);
+				if(check_file(entry.name,suffix)) 
+				{
+					add_file(entry.name, get_info(entry.name), keep_extension);
 				}
 			} while(_findnext(hfind, &entry) == 0 );
 		}
@@ -180,12 +185,9 @@ void savegame_frame_t::fill_list()
 	{
 		const entry & entry = iter.get_current();
 
-		dbg->debug("savegame_frame_t::fill_list()", "found %p", &entry);
-
-
-		button_t*    button1 = entry.del;
-		button_t*    button2 = entry.button;
-		gui_label_t* label   = entry.label;
+		button_t * button1 = entry.del;
+		button_t * button2 = entry.button;
+		gui_label_t * label   = entry.label;
 
 		button1->set_groesse(koord(14, BUTTON_HEIGHT));
 		button1->set_text("X");
@@ -246,7 +248,9 @@ void savegame_frame_t::set_filename(const char *fn)
 }
 
 
-void savegame_frame_t::add_file(const char *filename, const char *pak, const bool no_cutting_suffix )
+void savegame_frame_t::add_file(const char *filename, 
+				const char *pak, 
+				const bool keep_suffix)
 {
 	button_t * button = new button_t();
 	char * name = new char [strlen(filename)+10];
@@ -254,71 +258,38 @@ void savegame_frame_t::add_file(const char *filename, const char *pak, const boo
 
 	strcpy( date, pak );
 	strcpy( name, filename );
-	if(!no_cutting_suffix) {
+	
+	if(keep_suffix == false) 
+	{
 		name[strlen(name)-4] = '\0';
 	}
+	
 	button->set_no_translate(true);
 	button->set_text(name);	// to avoid translation
 
 	std::string const compare_to = !umgebung_t::objfilename.empty() ? umgebung_t::objfilename.substr(0, umgebung_t::objfilename.size() - 1) + " -" : std::string();
-	// sort by date descending:
 	
+
+	// Hajo: search for position where to add the entry
 	slist_iterator_tpl<entry> iter (entries);
-	
-	/*
-	if(iter.next())
+
+	int index = 0;
+	while(iter.next())
 	{
-		bool ok = true;
-	
-		if(strncmp( compare_to.c_str(), pak, compare_to.size() )!=0  ) {
-			// skip current ones
-			while(ok) 
-			{
-				// extract palname in same format than in savegames ...
-				if(  strncmp( compare_to.c_str(), 
-					      iter.get_current().label->get_text_pointer(), compare_to.size() ) !=0  ) {
-					break;
-				}
-				ok = iter.next();
-			}
-			// now just sort according time
-			while(ok) 
-			{
-				if(  strcmp(iter.get_current().label->get_text_pointer(), 
-					    date) < 0  ) {
-					break;
-				}
-				ok=iter.next();
-			}
+		// TODO: filter by pak name.
+		
+		// Hajo: insert if "bigger" than the last date label.
+		const char * text_entry = iter.get_current().label->get_text_pointer();
+		if(strcmp(date, text_entry) > 0)
+		{
+			break;
 		}
-		else {
-			// Insert to our games (or in front if none)
-			while(ok) 
-			{
-				if(  strcmp(iter.get_current().label->get_text_pointer(), 
-					    date) < 0  ) {
-					break;
-				}
-				// not our savegame any more => insert
-				if(  strncmp( compare_to.c_str(), 
-					      iter.get_current().label->get_text_pointer(), compare_to.size() ) !=0  ) {
-					break;
-				}
-				ok = iter.next();
-			}
-		}
+		index ++;
 	}
 	
-	gui_label_t* l = new gui_label_t(NULL);
-	l->set_text_pointer(date);
-	// TODO
-	// entries.insert(iter.get_current(), entry(button, new button_t, l));
-	
-	*/
-
 	gui_label_t* label = new gui_label_t(0);
 	label->set_text_pointer(date);
-	entries.insert(entry(button, new button_t, label));
+	entries.insert_at(index, entry(button, new button_t(), label));
 }
 
 

@@ -807,7 +807,7 @@ stadt_t::factory_entry_t* stadt_t::factory_set_t::get_random_entry()
 
 void stadt_t::factory_set_t::update_factory(fabrik_t *const factory, const sint32 demand)
 {
-	if(  entries.is_contained( factory_entry_t(factory) )  ) {
+	if(  entries.contains( factory_entry_t(factory) )  ) {
 		// existing target factory
 		factory_entry_t &entry = entries.at(entries.index_of( factory_entry_t(factory) ) );
 		total_demand += demand - entry.demand;
@@ -825,7 +825,7 @@ void stadt_t::factory_set_t::update_factory(fabrik_t *const factory, const sint3
 
 void stadt_t::factory_set_t::remove_factory(fabrik_t *const factory)
 {
-	if(  entries.is_contained( factory_entry_t(factory) )  ) {
+	if(  entries.contains( factory_entry_t(factory) )  ) {
 		factory_entry_t &entry = entries.at( entries.index_of( factory_entry_t(factory) ) );
 		total_demand -= entry.demand;
 		total_remaining -= entry.remaining;
@@ -995,7 +995,7 @@ stadt_t::~stadt_t()
 			// old buildings are not where they think they are, so we ask for map floor
 			gebaeude_t* const gb = buildings.front();
 			buildings.remove(gb);
-			assert(  gb!=NULL  &&  !buildings.is_contained(gb)  );
+			assert(  gb!=NULL  &&  !buildings.contains(gb)  );
 			if(gb->get_tile()->get_besch()->get_utyp()==haus_besch_t::firmensitz) {
 				stadt_t *city = welt->suche_naechste_stadt(gb->get_pos().get_2d());
 				gb->set_stadt( city );

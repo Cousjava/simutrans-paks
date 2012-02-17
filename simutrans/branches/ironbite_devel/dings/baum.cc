@@ -602,7 +602,7 @@ void tree_t::rdwr(loadsave_t *file)
 		char buf[128];
 		file->rdwr_str(buf, lengthof(buf));
 		const baum_besch_t *besch = besch_names.get(buf);
-		if(  tree_typen.is_contained(besch)  ) {
+		if(  tree_typen.contains(besch)  ) {
 			baumtype = tree_typen.index_of( besch );
 		}
 		else {

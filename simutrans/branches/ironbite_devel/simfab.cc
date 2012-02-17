@@ -522,7 +522,7 @@ void fabrik_t::add_target_city(stadt_t *const city)
 
 void fabrik_t::remove_target_city(stadt_t *const city)
 {
-	if(  target_cities.is_contained(city)  ) {
+	if(  target_cities.contains(city)  ) {
 		target_cities.remove(city);
 		city->access_target_factories_for_pax().remove_factory(this);
 		city->access_target_factories_for_mail().remove_factory(this);
@@ -588,7 +588,7 @@ void fabrik_t::unlink_halt(halthandle_t halt)
 
 void fabrik_t::add_lieferziel(koord ziel)
 {
-	if(  !lieferziele.is_contained(ziel)  ) {
+	if(  !lieferziele.contains(ziel)  ) {
 		lieferziele.insert_ordered( ziel, RelativeDistanceOrdering(pos.get_2d()) );
 		// now tell factory too
 		fabrik_t * fab = fabrik_t::get_fab(welt, ziel);
@@ -831,7 +831,7 @@ bool fabrik_t::add_random_field(uint16 probability)
 		// first make foundation below
 		const koord k = gr->get_pos().get_2d();
 		field_data_t new_field(k);
-		assert(!fields.is_contained(new_field));
+		assert(!fields.contains(new_field));
 		// Knightly : fetch a random field class besch based on spawn weights
 		const weighted_vector_tpl<uint16> &field_class_indices = fb->get_field_class_indices();
 		new_field.field_class_index = pick_any_weighted(field_class_indices);
@@ -855,7 +855,7 @@ bool fabrik_t::add_random_field(uint16 probability)
 void fabrik_t::remove_field_at(koord pos)
 {
 	field_data_t field(pos);
-	assert(fields.is_contained( field ));
+	assert(fields.contains( field ));
 	field = fields.get(fields.index_of(field));
 	const field_class_besch_t *const field_class = besch->get_field_group()->get_field_class( field.field_class_index );
 	fields.remove(field);
