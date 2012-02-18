@@ -58,7 +58,7 @@ factory_worker_maximum_towns = 4
 seperate_halt_capacities = 0
 
 # lowest possible income with speedbonus (1000=1) default 125
-bonus_basefactor = 1255
+bonus_basefactor = 125
 
 
 # three modes (default = 0)
