@@ -10,7 +10,8 @@
 #include "gui_scrollbar.h"
 
 #include "../../simgraph.h"
-#include "../../simcolor.h"
+//#include "../../simcolor.h"
+#include "../../simevent.h"
 
 
 /**

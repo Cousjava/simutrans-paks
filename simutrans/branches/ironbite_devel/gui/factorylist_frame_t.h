@@ -5,6 +5,7 @@
 #include "components/gui_scrollpane.h"
 #include "components/gui_label.h"
 #include "factorylist_stats_t.h"
+#include "components/gui_button.h"
 
 
 class karte_t;

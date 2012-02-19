@@ -6,6 +6,7 @@
  */
 
 #include "factorylist_frame_t.h"
+
 #include "components/list_button.h"
 #include "../font.h"
 #include "../dataobj/translator.h"

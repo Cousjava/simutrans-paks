@@ -10,7 +10,7 @@
 #include "gui_scrolled_list.h"
 
 #include "../../simgraph.h"
-// #include "../../simcolor.h"
+#include "../../simevent.h"
 #include "../../simwin.h"
 #include "../../tpl/slist_tpl.h"
 

@@ -13,6 +13,7 @@
 #include "gui_frame.h"
 #include "components/gui_scrollpane.h"
 #include "components/gui_label.h"
+#include "components/gui_button.h"
 
 #include "../halthandle_t.h"
 #include "../utils/cbuffer_t.h"
