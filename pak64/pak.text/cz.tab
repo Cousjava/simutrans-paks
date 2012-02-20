@@ -5,7 +5,7 @@
 #                             Language: cz Cestina                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 31.10 2011                           #
+#                           Date Created: 21.02 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
@@ -94,6 +94,10 @@ Sídlo va¹í spoleènosti (1. úroveò)
 Sídlo va¹í spoleènosti (2. úroveò)
 3headquarter
 Sídlo va¹í spoleènosti (3. úroveò)
+4headquarter
+Sídlo va¹í spoleènosti (4. úroveò)
+5headquarter
+Sídlo va¹í spoleènosti (5. úroveò)
 A1_ALTE_KIRCHE
 Slavný kostel\n\nSlavný starý kostel. Tato\nfantastická budova láká\nspoustu turistù.\n
 A2_SCHLOSS1
@@ -134,12 +138,28 @@ CarDepot
 Depo pro silnièní vozidla
 CarStop
 Nákladová rampa
+CattlePorch
+Pøístøe¹ek pro dobytek
 ChannelStop
 Molo na vodním kanále
+COM_00_01
+Kavárna\nPùvodnì velící mùstek zaoceánské lodi. Pradìdeèkovi majitele patøila celá loï. Potomci se ale nemohli se dohodnout kam plout, tak si loï mezi sebe rozdìlili. Na tohoto zbyl velicí mùstek, nyní slou¾ící jako kavárna. Ta velké prosklená okna jsou pùvodní.
 COM_00_02
 Nezávislá benzínová stanice\n\nJe nezávislá na na\ntransportních korporacích\njako ta tvoje, ale není\npotøeba ji hned bourat.\nNevezme ¾ádné tvé\nzákazníky\n
+COM_00_03
+Pùjèovna automibilù\n
+COM_00_05
+Banka\nPrávì v tomto bankovním domu Krejcar & Trhlina byla vynalezena penì¾eka, co si vybírá poplatky za no¹ení penìz.
+COM_00_06
+Prodejna akvarijních rybièek\nKapra na Vánoce tu sice nekoupíte, ale v nadobce pod vodotryskem si prohlédnete exotické rybièky. V pøízemí se nachází kadeønictví.
 COM_00_08
 Èin¾ovní dùm s obchody v\npøízemí\n
+COM_00_10
+Kanceláøe\nV budovì sídlí nìkolik místních spoleèností zabývajících se lepením obálek. Budova má kromì schodù také bezbarierový pøístup, bylo potøeba pøed budovou vyhloubit jámu aby vznikla teréní nerovnost a byl dùvod k jej pou¾ít. 
+COM_00_11
+Obchod se zeleninou\nNabízí èerstvou místní zeleninu dostupnou v daném roèním období. Ve vedlej¹ím domì se zelenou plachtou prodávají èokoládové speciality.
+COM_00_12
+Kanceláøská budova\nKdysi továrna na boty, nyní kanceláøe spoleènosti tisknoucí grafy na objednávku.
 COM_00_14
 Moderní kanceláøská\nbudova s prosklenými\nschodi¹ti\n
 COM_00_18
@@ -148,20 +168,42 @@ COM_00_22
 Budova OSN, pro somálskou\ndelegaci\n
 COM_01_01
 Odtud mù¾ete vyrazit na\nnezapomenutelný\nvyhlídkový let\nhorkovzdu¹ným balónem!\n
+COM_01_04
+Park\n\nOblíbené místo na odpolední svaèinu.
+COM_01_09
+Biograf\nPromítá se ka¾dé úterý a o víkendu.
+COM_01_10
+Obchodní dùm Knósos\nProdávají zde v¹e, naè si vzpomenete. Musíte to ale umìt najít. 
+COM_01_17
+Kanceláøe\nSídlo spoleènosti, která zbohatla na prodeji poèítadel. Rozebiratelná poèítadla s duhovými kulièkami byla mezi dìtmi oblíbená.
 COM_01_18
 Vý¹ková kanceláøská\nbudova\n
 COM_01_20
 Kanceláøská budova s\nheliportem pro pana\ngenerálního\n
+COM_01_21
+Kanceláøe\nV budovì se nachází nìkolik pøedná¹kových sálù a nìkolikrát do roka se zde konají konference, poslední byla o vlivu perských kobercù na rychlost rùstu vlasù.
+COM_01_22
+Kanceláøe\nPo postavení nìkolika pater byl stavitel upozornìn, ¾e kóty jsou v metrech. Následující patro mìlo ji¾ po¾adované rozmìru. Dobøe provedený ¾elezobetonový skelet zajistil ¾e budova stojí dodnes.
 COM_02_02
 parkovi¹tì\n
+COM_02_04
+Park\nKdysi to bývala ka¹na. Pak v ní ale vyrostl strom a od té doby se nepou¾ívá. Dnes je to park s památným stromem.
+COM_02_13
+Resturace\nRestaurace nabízející moøské speciality.
 COM_02_16
 Kanceláøe, s minimálním\nmno¾stvím oken.\n
 COM_02_17
 Kanceláøe s masivní\nventilací. \n
+COM_02_19
+Kanceláøe\nSídlo místní televize. Vysílají se odsud kanály "Vèer A" a "Lon I"
+COM_03_14
+Lékárna\nKromì lékù prodává i pantofle a bì¾nou drogerii.
 COM_03_15
 Dùm kultury\n
 COM_10_01
 nádhera, ¾e?\n
+COM_10_02
+Rychlé obèestvení\nV nabídce jsou klobásy domácí výroby. Obèas i rùzné druhy zeleniny pøepasírované pøes pøes prase.
 Control_StationBlg
 ®eleznièní hradlo
 DenkFlor
@@ -220,6 +262,8 @@ LeuchtturmShipStop
 Pøístavní molo s majákem
 Lighthouse
 Maják\n\n
+LongBusStop
+autobusová zastávka
 MainTerminal1930
 Hlavní terminál (1930)
 MHzSmallStation
@@ -248,6 +292,8 @@ PSHall1TrainStop
 Nádra¾ní hala s trafikou
 PSHall2TrainStop
 Nádra¾ní hala
+RES_00_01
+Malý domek se zahradou\nNa zahradì se nachází rajèatová plantá¾.
 RES_00_06
 Fontána. I kdy¾ to není\npøímo ¾enevská fontána,\ntak stále potì¹í\nkolemjdoucí, zejména v\nlétì.\n
 RES_00_17
@@ -341,17 +387,17 @@ Autosalón
 Autohersteller
 Automobilka
 bakery
-Peka?ství
+Pekaøství
 brewery
 Pivovar
 Buchgrosshandel
-Kni?ní velkoobchod
+Kni¾ní velkoobchod
 cannery
 Konzervárna
 Cementmill
 Cementárna
 ChemicalPlant
-Chemi?ka
+Chemièka
 CHEMIST
 Lékárna
 Concretefactory
@@ -363,27 +409,35 @@ Mlékárna
 Druckerei
 Tiskárna
 Erzbergwerk
-?eleznorudný d?l
+¾eleznorudný dùl
 fish_pond
 Chovný rybník
 fish_swarm
 Rybí hejno
 food_processing_plant
 Závod na výrobu potravin
+Geokraftwerk
+Geotermální elektrárna
 grain_farm
 Obilná pole
 grain_mill
 Mlýn
+grain_windmill
+Vìtrný mlýn
 Kohlegrube
-Uhelný d?l
+Uhelný dùl
 Kohlekraftwerk
 Elektrárna
+Marketplace
+Trh s potravinami
 Materialswholesale
 Velkoob. s materiálem
 Moebelfabrik
 Truhlárna
 Moebelhaus
 Obchod s nábytkem
+Muellkraftwerk
+Spalovna odpadu
 Nutzwald
 Les
 Oelbohrinsel
@@ -394,6 +448,8 @@ Oelkraftwerk
 Olejová elektrárna
 Oelpumpe
 Ropná pumpa
+old_farm
+stará farma
 Papierfabrik
 Papírna
 Pharmaceutics
@@ -405,7 +461,7 @@ Pila
 SaegewerkMHz
 Stará pila
 Sandquarry
-Píse?ný lom
+Píseèný lom
 Stahlwerk
 Slévárna
 Stonequarry
@@ -413,7 +469,7 @@ Kamenolom
 supermarket
 Supermarket
 TANKE
-?erpací stanice
+Èerpací stanice
 Windkraftwerk
 V?trná elektrárna
 #_____________________________________good______________________________________
@@ -433,7 +489,7 @@ Chemikálie
 Concrete
 Beton
 Eisenerz
-?elezná ruda
+¾elezná ruda
 fish
 ryb
 flour
@@ -445,7 +501,7 @@ Benzín
 grain
 obilí
 Holz
-D?evo
+Døevo
 Kohle
 Uhlí
 meat
@@ -467,7 +523,7 @@ Cestující
 Plastik
 Plast
 Post
-Po?ta
+Po¹ta
 PrintersInk
 Tiskárnový inkoust
 Sand
@@ -482,6 +538,8 @@ Odpad
 #__________________________________ground_obj___________________________________
 rocks
 kamení
+sheeps
+ovce
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Couple
@@ -521,15 +579,15 @@ rolls
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 choose_point
-Zna?ka vyber p?í?tí zastávku
+Znaèka vyber pøí¹tí zastávku
 ChooseSignals
-Náv?stidlo volby stani?ní koleje
+Návìstidlo volby stanièní koleje
 ChooseSignalsMonorail
-Náv?stidlo volby stani?ní koleje
+Návìstidlo volby stanièní koleje
 Endofchoosetrack
-Náv?stidlo zákazu volby stani?ní koleje
+Návìstidlo zákazu volby stanièní koleje
 LongBlockSignals
-Náv?stidlo úseku s více zastávkami
+Návìstidlo úseku s více zastávkami
 Minimum80
 Minimální rychlost 80 km/h
 NoAirEntry
@@ -537,15 +595,19 @@ Zákaz vjezdu
 NoEntry
 Zákaz vjezdu
 preSignals
-Náv?stidlo vlakové cesty
+Návìstidlo vlakové cesty
 preSignalsMonorail
-Náv?stidlo vlakové cesty
+Návìstidlo vlakové cesty
 RailClose
-Tra? uzav?ena
+Tra» uzavøena
+Railgate
+Závora
+Roadgate
+Závora
 Signals
-Náv?stidlo tra?ového bloku
+Návìstidlo tra»ového bloku
 SignalsMonorail
-Náv?stidlo tra?ového bloku
+Návìstidlo tra»ového bloku
 traffic_light
 Semafory
 #_____________________________________tree______________________________________
@@ -567,13 +629,13 @@ vrba\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel
-Vysokorychlostní ?elezni?ní tunel
+Vysokorychlostní ¾eleznièní tunel
 FastRoadTunnel
-Vysokorychlostní silni?ní tunel
+Vysokorychlostní silnièní tunel
 RailTunnel
-?elezni?ní Tunel
+¾eleznièní Tunel
 RoadTunnel
-Silni?ní tunel
+Silnièní tunel
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -736,6 +798,10 @@ Oiltrailer
 P?ív?sná cisterna na ropu
 OldOil
 Cisterna na ropu/benzín (18m2)
+Ox2
+pár ta¾ného skotu
+Ox4
+dva páry ta¾ného skotu
 Papieranhaenger
 TRK p?ív?s na papír
 Papiertransporter
@@ -794,6 +860,8 @@ Tugboat
 remorkér
 VolvoFH12
 Volvo FH12
+wastewagon
+vagon na odpad
 XMail
 V?z jednokolejky pro p?epravu po?ty
 XTest
@@ -807,7 +875,7 @@ Asfaltová silnice
 city_road
 M?stská silnice
 cobblestone_road
-Dlá?d?ná silnice
+Dlá¾dìná silnice
 concrete_sleeper_track
 ?el. tra? s betonovými pra?ci
 dirt_road

@@ -5,7 +5,7 @@
 #                              Language: pl Polski                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 21.01 2012                           #
+#                           Date Created: 21.02 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                       Bartlomiej Weclewski - BarthVader                      #
@@ -358,6 +358,8 @@ grain_mill
 M³yny zbo¿owe
 grain_windmill
 M³yny zbo¿owe
+Incinerator
+Spalarnia ¶mieci
 Kohlegrube
 Kopalnia wêgla
 Kohlekraftwerk
@@ -474,8 +476,36 @@ waste
 ¦mieci
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
+bushes
+Krzaki
+deco_rock
+G³az
+deco_rock_2
+G³az
 flowers
 Kwiaty
+gemsen
+Kozice
+gooses
+Gêsi
+Hochsitz1
+Budka my¶liwska
+Hochsitz2
+Budka my¶liwska
+moles
+Kretowisko
+rocks
+Ska³y
+See1
+Jezioro
+See2
+Jezioro
+See3
+Jezioro
+See4
+Jezioro
+sheeps
+Owce
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Couple
@@ -522,6 +552,10 @@ ChooseSignals
 Semafor wyboru peronu
 ChooseSignalsMonorail
 Semafor wyboru peronu
+Endofchoosetrack
+Koniec peronu
+LongBlockSignals
+Semafor d³ugiego bloku
 Minimum80
 Prêdko¶æ minimalna 80km/h
 NoAirEntry
@@ -844,6 +878,10 @@ old_open_car
 wagon wêglarka
 OldOil
 Cysterna (18t)
+Ox2
+Wo³y (2)
+Ox4
+Wo³y (4)
 Papieranhaenger
 Przyczepa Trikky (papier)
 Papiertransporter
@@ -903,9 +941,9 @@ Tramwaj T24
 Tanklastzug
 Cysterna H-Trans (ropa/benzyna)
 Tatra-T4
-Tramwaj Tatra T4
+Tatra T4
 Tatra-T4_Wagon
-Doczepa Tatra T4
+Tatra T4 (doczepa)
 TB13
 Doczepa TB13
 TB24
@@ -916,10 +954,14 @@ TPPassagierwagen
 TPI wagon pasa¿erski
 TPSchienenbus
 TPI VT98 (dmu)
+Tram_GT6_Ende
+Düwag GT6 (koñcówka)
+Tram_GT6_Kopf
+Düwag GT6
 Tugboat
 Holownik
 VolvoFH12
-Ci±gnik siod³owy VOLVO FH 12
+Volvo FH12
 XMail
 Wagon pocztowy
 XTest
