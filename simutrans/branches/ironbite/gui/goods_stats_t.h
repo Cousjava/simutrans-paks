@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2003 Hj. Malthaner
+ * Copyright (c) 1997 - 2003 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -17,7 +17,7 @@
  * as a list like display
  * @author Hj. Malthaner
  */
-class goods_stats_t : public gui_component_t
+class goods_stats_t : public gui_komponente_t
 {
 private:
 	uint16 *goodslist;

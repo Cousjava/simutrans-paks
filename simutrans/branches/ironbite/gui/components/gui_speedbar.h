@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -17,7 +17,7 @@
  * @author Volker Meyer
  * @date  12.06.2003
  */
-class gui_speedbar_t : public gui_component_t
+class gui_speedbar_t : public gui_komponente_t
 {
 private:
 	struct info_t {

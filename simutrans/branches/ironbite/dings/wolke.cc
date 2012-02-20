@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -14,21 +14,26 @@
 #include "wolke.h"
 
 #include "../dataobj/loadsave.h"
-#include "../besch/skin_besch.h"
+
+#include "../tpl/vector_tpl.h"
+
 
 vector_tpl<const skin_besch_t *>wolke_t::all_clouds(0);
 
 bool wolke_t::register_besch(const skin_besch_t* besch)
 {
 	// avoid duplicates with same name
-	for(uint8 i=0; i<all_clouds.get_count(); i++) {
-		if (strcmp(all_clouds.get(i)->get_name(),besch->get_name())==0) {
-			all_clouds.at(i) = besch;
+	FOR(vector_tpl<skin_besch_t const*>, & i, all_clouds) {
+		if (strcmp(i->get_name(), besch->get_name()) == 0) {
+			i = besch;
 			return true;
 		}
 	}
 	return all_clouds.append_unique( besch );
 }
+
+
+
 
 
 wolke_t::wolke_t(karte_t *welt, koord3d pos, sint8 x_off, sint8 y_off, const skin_besch_t* besch ) :
@@ -43,16 +48,20 @@ wolke_t::wolke_t(karte_t *welt, koord3d pos, sint8 x_off, sint8 y_off, const ski
 }
 
 
+
 wolke_t::~wolke_t()
 {
 	mark_image_dirty( get_bild(), 0 );
+	welt->sync_remove(this);
 }
+
 
 
 wolke_t::wolke_t(karte_t* const welt, loadsave_t* const file) : ding_no_info_t(welt)
 {
 	rdwr(file);
 }
+
 
 
 void wolke_t::rdwr(loadsave_t *file)
@@ -78,6 +87,7 @@ void wolke_t::rdwr(loadsave_t *file)
 }
 
 
+
 bool wolke_t::sync_step(long delta_t)
 {
 	insta_zeit += (uint16)delta_t;
@@ -97,23 +107,6 @@ bool wolke_t::sync_step(long delta_t)
 		set_flag(ding_t::dirty);
 	}
 	return true;
-}
-
-
-image_id wolke_t::get_bild() const 
-{
-	return all_clouds.get(cloud_nr)->get_bild_nr(insta_zeit/divisor); 
-}
-
-
-/**
- * Wird aufgerufen, wenn wolke entfernt wird. Entfernt wolke aus
- * der Verwaltung synchroner Objekte.
- * @author Hj. Malthaner
- */
-void wolke_t::entferne(spieler_t *)
-{
-	welt->sync_remove(this);
 }
 
 
@@ -139,10 +132,6 @@ raucher_t::raucher_t(karte_t *welt, loadsave_t *file) : ding_t(welt)
 	ding_t::set_flag(ding_t::not_on_map);
 }
 
-image_id raucher_t::get_bild() const 
-{
-	return IMG_LEER; 
-}
 
 async_wolke_t::async_wolke_t(karte_t *welt, loadsave_t *file) : ding_t(welt)
 {
@@ -156,9 +145,4 @@ async_wolke_t::async_wolke_t(karte_t *welt, loadsave_t *file) : ding_t(welt)
 
 	// do not remove from this position, since there will be nothing
 	ding_t::set_flag(ding_t::not_on_map);
-}
-
-image_id async_wolke_t::get_bild() const 
-{
-	return IMG_LEER; 
 }

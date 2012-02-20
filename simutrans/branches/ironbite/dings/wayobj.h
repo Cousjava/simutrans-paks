@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2004 Hj. Malthaner
+ * Copyright (c) 1997 - 2004 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -9,7 +9,8 @@
 #define wayobj_t_h
 
 #include "../simtypes.h"
-#include "thing_without_info_t.h"
+#include "../simimg.h"
+#include "../simdings.h"
 #include "../dataobj/ribi.h"
 #include "../besch/way_obj_besch.h"
 #include "../tpl/vector_tpl.h"
@@ -71,7 +72,7 @@ public:
 
 	/**
 	* 'Jedes Ding braucht einen Typ.'
-	* @return Gibt den typ des Objekts zurï¿½ck.
+	* @return Gibt den typ des Objekts zurück.
 	* @author Hj. Malthaner
 	*/
 	typ get_typ() const { return wayobj; }

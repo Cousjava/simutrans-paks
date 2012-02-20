@@ -99,9 +99,11 @@ welt_gui_t::welt_gui_t(karte_t* const welt, settings_t* const sets) :
 	uint16 game_ends = 0;
 	
 	// first townhalls
+
 	const vector_tpl<const haus_besch_t *> *s = hausbauer_t::get_list(haus_besch_t::rathaus);
 	for (uint32 i = 0; i<s->get_count(); i++) {
-		const haus_besch_t *besch = s->get(i);
+		const haus_besch_t *besch = s->operator[](i);
+
 		uint16 intro_year = (besch->get_intro_year_month()+11)/12;
 		if(  intro_year<game_start  ) {
 			game_start = intro_year;
@@ -286,7 +288,7 @@ welt_gui_t::welt_gui_t(karte_t* const welt, settings_t* const sets) :
 	add_komponente( &quit_game );
 
 	const int win_height = intTopOfButton+BUTTON_HEIGHT+D_BOTTOM_MARGIN+TITLEBAR_HEIGHT;
-	set_window_size(koord(win_width, win_height));
+	set_fenstergroesse(koord(win_width, win_height));
 
 	update_preview();
 }
@@ -486,7 +488,7 @@ bool welt_gui_t::action_triggered( gui_action_creator_t *komp,value_t v)
 		}
 		else {
 			climate_gui_t *cg = new climate_gui_t(sets);
-			create_win((display_get_width() - cg->get_window_size().x-10), 40, cg, w_info, magic_climate );
+			create_win((display_get_width() - cg->get_fenstergroesse().x-10), 40, cg, w_info, magic_climate );
 			open_climate_gui.pressed = true;
 		}
 	}
@@ -623,7 +625,7 @@ void welt_gui_t::zeichnen(koord pos, koord gr)
 		(
 			sizeof(grund_t) +
 			sizeof(planquadrat_t) +
-			sizeof(tree_t) * 2 +
+			sizeof(baum_t) * 2 +
 			sizeof(void*) * 4
 		) * sx * sy
 	) / (1024 * 1024);

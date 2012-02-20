@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2003 Hj. Malthaner
+ * Copyright (c) 1997 - 2003 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -11,9 +11,9 @@
 #include "../simtypes.h"
 #include "../simcolor.h"
 #include "../simworld.h"
-#include "../simevent.h"
 #include "../simhalt.h"
 #include "../simskin.h"
+#include "../font.h"
 
 #include "../dings/gebaeude.h"
 
@@ -82,8 +82,7 @@ void curiositylist_stats_t::get_unique_attractions(curiositylist::sort_mode_t sb
 	last_world_curiosities = ausflugsziele.get_count();
 	attractions.resize(last_world_curiosities);
 
-	for (weighted_vector_tpl<gebaeude_t*>::const_iterator i = ausflugsziele.begin(), end = ausflugsziele.end(); i != end; ++i) {
-		gebaeude_t* geb = *i;
+	FOR(weighted_vector_tpl<gebaeude_t*>, const geb, ausflugsziele) {
 		if (geb != NULL &&
 				geb->get_tile()->get_offset() == koord(0, 0) &&
 				geb->get_passagier_level() != 0) {
@@ -100,14 +99,14 @@ void curiositylist_stats_t::get_unique_attractions(curiositylist::sort_mode_t sb
  */
 bool curiositylist_stats_t::infowin_event(const event_t * ev)
 {
-	const unsigned int line = (ev->cy) / (LINESPACE+1);
+	const unsigned int line = (ev->cy) / (large_font_p->line_spacing+1);
 
 	line_selected = 0xFFFFFFFFu;
 	if (line>=attractions.get_count()) {
 		return false;
 	}
 
-	gebaeude_t* geb = attractions.get(line);
+	gebaeude_t* geb = attractions[line];
 	if (geb==NULL) {
 		return false;
 	}
@@ -135,7 +134,7 @@ bool curiositylist_stats_t::infowin_event(const event_t * ev)
 void curiositylist_stats_t::recalc_size()
 {
 	// show_scroll_x==false ->> groesse.x not important ->> no need to calc text pixel length
-	set_groesse(koord(210, attractions.get_count()*(LINESPACE+1)-10));
+	set_groesse(koord(210, attractions.get_count()*(large_font_p->line_spacing+1)-10));
 }
 
 
@@ -145,8 +144,8 @@ void curiositylist_stats_t::recalc_size()
  */
 void curiositylist_stats_t::zeichnen(koord offset)
 {
-	const struct clip_dimension cd = display_get_clip_wh();
-	const int start = cd.y-LINESPACE+1;
+	clip_dimension const cd = display_get_clip_wh();
+	const int start = cd.y-large_font_p->line_spacing+1;
 	const int end = cd.yy;
 
 	static cbuffer_t buf;
@@ -159,13 +158,13 @@ void curiositylist_stats_t::zeichnen(koord offset)
 	}
 
 	for (uint32 i=0; i<attractions.get_count()  &&  yoff<end; i++) {
-		const gebaeude_t* geb = attractions.get(i);
+		const gebaeude_t* geb = attractions[i];
 
 		int xoff = offset.x+10;
 
 		// skip invisible lines
 		if(yoff<start) {
-			yoff += LINESPACE+1;
+			yoff += large_font_p->line_spacing+1;
 			continue;
 		}
 
@@ -245,6 +244,6 @@ void curiositylist_stats_t::zeichnen(koord offset)
 		    display_color_img(skinverwaltung_t::intown->get_bild_nr(0), xoff+INDICATOR_WIDTH+9, yoff, 0, false, false);
 		}
 
-		yoff +=LINESPACE+1;
+		yoff +=large_font_p->line_spacing+1;
 	}
 }

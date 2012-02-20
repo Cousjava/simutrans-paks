@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  * (see license.txt)
@@ -26,17 +26,17 @@
 class convoi_t;
 class schedule_t;
 class signal_t;
-class freight_t;
+class ware_t;
 class route_t;
 
 /*----------------------- Fahrdings ------------------------------------*/
 
 /**
- * Basisklasse fï¿½r alle Fahrzeuge
+ * Basisklasse für alle Fahrzeuge
  *
  * @author Hj. Malthaner
  */
-class vehicle_base_t : public ding_t
+class vehikel_basis_t : public ding_t
 {
 protected:
 	// offsets for different directions
@@ -92,7 +92,7 @@ protected:
 	virtual void calc_bild() = 0;
 
 	// check for road vehicle, if next tile is free
-	vehicle_base_t *no_cars_blocking( const grund_t *gr, const convoi_t *cnv, const uint8 current_fahrtrichtung, const uint8 next_fahrtrichtung, const uint8 next_90fahrtrichtung );
+	vehikel_basis_t *no_cars_blocking( const grund_t *gr, const convoi_t *cnv, const uint8 current_fahrtrichtung, const uint8 next_fahrtrichtung, const uint8 next_90fahrtrichtung );
 
 	// only needed for old way of moving vehicles to determine position at loading time
 	bool is_about_to_hop( const sint8 neu_xoff, const sint8 neu_yoff ) const;
@@ -139,25 +139,25 @@ public:
 
 	virtual overtaker_t *get_overtaker() { return NULL; }
 
-	vehicle_base_t(karte_t *welt);
+	vehikel_basis_t(karte_t *welt);
 
-	vehicle_base_t(karte_t *welt, koord3d pos);
+	vehikel_basis_t(karte_t *welt, koord3d pos);
 };
 
 
-template<> inline vehicle_base_t* ding_cast<vehicle_base_t>(ding_t* const d)
+template<> inline vehikel_basis_t* ding_cast<vehikel_basis_t>(ding_t* const d)
 {
-	return d->is_moving() ? static_cast<vehicle_base_t*>(d) : 0;
+	return d->is_moving() ? static_cast<vehikel_basis_t*>(d) : 0;
 }
 
 
 /**
- * Klasse fï¿½r alle Fahrzeuge mit Route
+ * Klasse für alle Fahrzeuge mit Route
  *
  * @author Hj. Malthaner
  */
 
-class vehikel_t : public vehicle_base_t, public driver_t
+class vehikel_t : public vehikel_basis_t, public fahrer_t
 {
 private:
 	/**
@@ -220,7 +220,7 @@ protected:
 	uint16 route_index;
 
 	uint16 total_freight;	// since the sum is needed quite often, it is chached
-	slist_tpl<freight_t> fracht;   // liste der gerade transportierten gï¿½ter
+	slist_tpl<ware_t> fracht;   // liste der gerade transportierten güter
 
 	const vehikel_besch_t *besch;
 
@@ -232,8 +232,8 @@ protected:
 	*/
 	koord3d pos_prev;
 
-	bool ist_erstes:1;				// falls vehikel im convoi fï¿½hrt, geben diese
-	bool ist_letztes:1;				// flags auskunft ï¿½ber die position
+	bool ist_erstes:1;				// falls vehikel im convoi fährt, geben diese
+	bool ist_letztes:1;				// flags auskunft über die position
 	bool rauchen:1;
 	bool check_for_finish:1;		// true, if on the last tile
 	bool has_driven:1;
@@ -259,8 +259,8 @@ public:
 	virtual waytype_t get_waytype() const = 0;
 
 	/**
-	* Ermittelt die fï¿½r das Fahrzeug geltenden Richtungsbits,
-	* abhï¿½ngig vom Untergrund.
+	* Ermittelt die für das Fahrzeug geltenden Richtungsbits,
+	* abhängig vom Untergrund.
 	*
 	* @author Hj. Malthaner, 04.01.01
 	*/
@@ -344,10 +344,10 @@ public:
 	// the convoi takes care of the max_speed of the vehicle
 	sint32 get_speed_limit() const { return speed_limit; }
 
-	const slist_tpl<freight_t> & get_fracht() const { return fracht;}   // liste der gerade transportierten gï¿½ter
+	const slist_tpl<ware_t> & get_fracht() const { return fracht;}   // liste der gerade transportierten güter
 
 	/**
-	* berechnet die gesamtmenge der befï¿½rderten waren
+	* berechnet die gesamtmenge der beförderten waren
 	*/
 	uint16 get_fracht_menge() const { return total_freight; }
 
@@ -360,9 +360,9 @@ public:
 	const char * get_fracht_name() const;
 
 	/**
-	* setzt den typ der befï¿½rderbaren ware
+	* setzt den typ der beförderbaren ware
 	*/
-	const freight_desc_t* get_fracht_typ() const { return besch->get_ware(); }
+	const ware_besch_t* get_fracht_typ() const { return besch->get_ware(); }
 
 	/**
 	* setzt die maximale Kapazitaet
@@ -424,7 +424,7 @@ public:
 	void remove_stale_freight();
 
 	/**
-	* erzeuge einen fï¿½r diesen Vehikeltyp passenden Fahrplan
+	* erzeuge einen für diesen Vehikeltyp passenden Fahrplan
 	* @author Hj. Malthaner
 	*/
 	virtual schedule_t * erzeuge_neuen_fahrplan() const = 0;
@@ -451,7 +451,7 @@ template<> inline vehikel_t* ding_cast<vehikel_t>(ding_t* const d)
 
 
 /**
- * Eine Klasse fï¿½r Strassenfahrzeuge. Verwaltet das Aussehen der
+ * Eine Klasse für Strassenfahrzeuge. Verwaltet das Aussehen der
  * Fahrzeuge und die Befahrbarkeit des Untergrundes.
  *
  * @author Hj. Malthaner
@@ -494,7 +494,7 @@ public:
 
 
 /**
- * Eine Klasse fï¿½r Schienenfahrzeuge. Verwaltet das Aussehen der
+ * Eine Klasse für Schienenfahrzeuge. Verwaltet das Aussehen der
  * Fahrzeuge und die Befahrbarkeit des Untergrundes.
  *
  * @author Hj. Malthaner
@@ -614,7 +614,7 @@ public:
 
 
 /**
- * Eine Klasse fï¿½r Wasserfahrzeuge. Verwaltet das Aussehen der
+ * Eine Klasse für Wasserfahrzeuge. Verwaltet das Aussehen der
  * Fahrzeuge und die Befahrbarkeit des Untergrundes.
  *
  * @author Hj. Malthaner
@@ -648,7 +648,7 @@ public:
 
 
 /**
- * Eine Klasse fï¿½r Flugzeuge. Verwaltet das Aussehen der
+ * Eine Klasse für Flugzeuge. Verwaltet das Aussehen der
  * Fahrzeuge und die Befahrbarkeit des Untergrundes.
  *
  * @author hsiegeln

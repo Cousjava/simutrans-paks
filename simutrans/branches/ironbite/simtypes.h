@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  * (see license.txt)
@@ -7,6 +7,8 @@
 
 #ifndef SIMTYPES_H
 #define SIMTYPES_H
+
+#include "utils/for.h"
 
 #if defined _MSC_VER
 #	if _MSC_VER <= 1200
@@ -109,7 +111,6 @@ enum waytype_t {
 	powerline_wt     = 128
 };
 
-
 // makros are not very safe: thus use these macro like functions
 // otherwise things may fail or functions are called uneccessarily twice
 
@@ -131,6 +132,11 @@ typedef unsigned long       uint32;
 #endif
 typedef   signed long long  sint64;
 typedef unsigned long long  uint64;
+
+typedef uint16 image_id;
+typedef unsigned short PLAYER_COLOR_VAL;
+typedef unsigned char COLOR_VAL;
+
 #ifdef _MSC_VER
 #	define GCC_PACKED
 #	define NORETURN __declspec(noreturn)
@@ -141,13 +147,6 @@ typedef unsigned long long  uint64;
 #endif
 
 #ifdef __cplusplus
-
-// size of koordinates
-typedef short KOORD_VAL;
-typedef unsigned short PLAYER_COLOR_VAL;
-typedef unsigned char COLOR_VAL;
-
-typedef uint16 image_id;
 
 template<typename T> static inline int sgn(T x)
 {

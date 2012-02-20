@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -67,15 +67,15 @@ public:
 
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.
-	 * @return den Dateinamen fï¿½r die Hilfe, oder NULL
+	 * @return den Dateinamen für die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	const char *get_help_file() const {return "citywindow.txt";}
+	const char *get_hilfe_datei() const {return "citywindow.txt";}
 
 	virtual koord3d get_weltpos();
 
 	/**
-	* komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
+	* komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
 	* das Fenster, d.h. es sind die Bildschirmkoordinaten des Fensters
 	* in dem die Komponente dargestellt wird.
 	*/

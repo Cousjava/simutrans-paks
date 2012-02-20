@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2004 Hj. Malthaner
+ * Copyright (c) 1997 - 2004 Hansjörg Malthaner
  *
  * Line management
  *
@@ -17,6 +17,7 @@
 #include "../simwerkz.h"
 
 #include "components/list_button.h"
+#include "components/gui_scrolled_item.h"
 
 #include "../bauer/hausbauer.h"
 
@@ -56,7 +57,7 @@ curiosity_edit_frame_t::curiosity_edit_frame_t(spieler_t* sp_, karte_t* welt) :
 	rotation = 255;
 	besch = NULL;
 	haus_tool.set_default_param(NULL);
-	haus_tool.cursor = werkzeug_t::general_tool.get(WKZ_BUILD_HAUS)->cursor;
+	haus_tool.cursor = werkzeug_t::general_tool[WKZ_BUILD_HAUS]->cursor;
 
 	bt_city_attraction.init( button_t::square_state, "City attraction", koord(get_tab_panel_width()+2*MARGIN, offset_of_comp-4 ) );
 	bt_city_attraction.add_listener(this);
@@ -107,10 +108,7 @@ void curiosity_edit_frame_t::fill_list( bool translate )
 	hauslist.clear();
 
 	if(bt_city_attraction.pressed) {
-		const vector_tpl<const haus_besch_t *> *s = hausbauer_t::get_list( haus_besch_t::attraction_city );
-		for (uint32 i = 0; i < s->get_count(); i++) {
-
-			const haus_besch_t *besch = s->get(i);
+		FOR(vector_tpl<haus_besch_t const*>, const besch, *hausbauer_t::get_list(haus_besch_t::attraction_city)) {
 			if(!use_timeline  ||  (!besch->is_future(month_now)  &&  (!besch->is_retired(month_now)  ||  allow_obsolete))  ) {
 				// timeline allows for this
 				hauslist.insert_ordered(besch,compare_haus_besch);
@@ -119,10 +117,7 @@ void curiosity_edit_frame_t::fill_list( bool translate )
 	}
 
 	if(bt_land_attraction.pressed) {
-		const vector_tpl<const haus_besch_t *> *s = hausbauer_t::get_list( haus_besch_t::attraction_land );
-		for (uint32 i = 0; i < s->get_count(); i++) {
-
-			const haus_besch_t *besch = s->get(i);
+		FOR(vector_tpl<haus_besch_t const*>, const besch, *hausbauer_t::get_list(haus_besch_t::attraction_land)) {
 			if(!use_timeline  ||  (!besch->is_future(month_now)  &&  (!besch->is_retired(month_now)  ||  allow_obsolete))  ) {
 				// timeline allows for this
 				hauslist.insert_ordered(besch,compare_haus_besch);
@@ -131,10 +126,7 @@ void curiosity_edit_frame_t::fill_list( bool translate )
 	}
 
 	if(bt_monuments.pressed) {
-		const vector_tpl<const haus_besch_t *> *s = hausbauer_t::get_list( haus_besch_t::denkmal );
-		for (uint32 i = 0; i < s->get_count(); i++) {
-
-			const haus_besch_t *besch = s->get(i);
+		FOR(vector_tpl<haus_besch_t const*>, const besch, *hausbauer_t::get_list(haus_besch_t::denkmal)) {
 			if(!use_timeline  ||  (!besch->is_future(month_now)  &&  (!besch->is_retired(month_now)  ||  allow_obsolete))  ) {
 				// timeline allows for this
 				hauslist.insert_ordered(besch,compare_haus_besch);
@@ -145,20 +137,17 @@ void curiosity_edit_frame_t::fill_list( bool translate )
 	// now buil scrolled list
 	scl.clear_elements();
 	scl.set_selection(-1);
-	for (vector_tpl<const haus_besch_t *>::const_iterator i = hauslist.begin(), end = hauslist.end(); i != end; ++i) {
+	FOR(vector_tpl<haus_besch_t const*>, const i, hauslist) {
 		// color code for objects: BLACK: normal, YELLOW: consumer only, GREEN: source only
-		COLOR_VAL color=COL_BLACK;
-		if(  (*i)->get_utyp()==haus_besch_t::attraction_city  ) {
-			color = COL_BLUE;
+		COLOR_VAL color;
+		switch (i->get_utyp()) {
+			case haus_besch_t::attraction_city: color = COL_BLUE;       break;
+			case haus_besch_t::attraction_land: color = COL_DARK_GREEN; break;
+			default:                            color = COL_BLACK;      break;
 		}
-		else if(  (*i)->get_utyp()==haus_besch_t::attraction_land  ) {
-			color = COL_DARK_GREEN;
-		}
-		scl.append_element( new gui_scrolled_list_t::const_text_scrollitem_t(
-			translate ? translator::translate( (*i)->get_name() ):(*i)->get_name(),
-			color )
-		);
-		if(  (*i) == besch  ) {
+		char const* const name = translate ? translator::translate(i->get_name()) : i->get_name();
+		scl.append_element(new const_text_scrollitem_t(name, color));
+		if (i == besch) {
 			scl.set_selection(scl.get_count()-1);
 		}
 	}
@@ -207,7 +196,7 @@ void curiosity_edit_frame_t::change_item_info(sint32 entry)
 {
 	if(entry>=0  &&  entry<(sint32)hauslist.get_count()) {
 
-		const haus_besch_t *new_besch = hauslist.get(entry);
+		const haus_besch_t *new_besch = hauslist[entry];
 
 		if(new_besch!=besch) {
 
@@ -311,7 +300,7 @@ void curiosity_edit_frame_t::change_item_info(sint32 entry)
 		}
 
 		besch = NULL;
-		welt->set_werkzeug(werkzeug_t::general_tool.get(WKZ_ABFRAGE), sp );
+		welt->set_werkzeug( werkzeug_t::general_tool[WKZ_ABFRAGE], sp );
 	}
 }
 

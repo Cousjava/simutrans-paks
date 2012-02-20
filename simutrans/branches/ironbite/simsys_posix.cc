@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  */
@@ -19,7 +19,7 @@
 #include "simsys.h"
 
 
-bool system_init(const int*)
+bool dr_os_init(const int*)
 {
 	// prepare for next event
 	sys_event.type = SIM_NOEVENT;
@@ -27,19 +27,20 @@ bool system_init(const int*)
 	return true;
 }
 
-resolution system_query_screen_resolution()
+resolution dr_query_screen_resolution()
 {
 	resolution const res = { 0, 0 };
 	return res;
 }
 
 // open the window
-int system_open(int, int, int)
+int dr_os_open(int, int, int)
 {
 	return 1;
 }
 
-void system_close(void)
+
+void dr_os_close()
 {
 }
 
@@ -51,26 +52,21 @@ int dr_textur_resize(unsigned short** const textur, int, int)
 }
 
 
-unsigned short *system_init_framebuffer()
+unsigned short *dr_textur_init()
 {
 	return NULL;
 }
 
-unsigned int system_get_color(unsigned int, unsigned int, unsigned int)
+unsigned int get_system_color(unsigned int, unsigned int, unsigned int)
 {
 	return 1;
 }
 
-// unused ?
-void system_set_colors(int, int, unsigned char*)
+void dr_prepare_flush()
 {
 }
 
-void system_prepare_flush()
-{
-}
-
-void system_flush_framebuffer(void)
+void dr_flush(void)
 {
 }
 
@@ -78,15 +74,15 @@ void dr_textur(int, int, int, int)
 {
 }
 
-void system_move_pointer(int, int)
+void move_pointer(int, int)
 {
 }
 
-void system_set_pointer(int)
+void set_pointer(int)
 {
 }
 
-int system_screenshot(const char *)
+int dr_screenshot(const char *)
 {
 	return -1;
 }
@@ -96,15 +92,15 @@ static inline unsigned int ModifierKeys(void)
 	return 0;
 }
 
-void system_wait_event(void)
+void GetEvents(void)
 {
 }
 
-void system_poll_event(void)
+void GetEventsNoWait(void)
 {
 }
 
-void system_show_pointer(int)
+void show_pointer(int)
 {
 }
 
@@ -114,7 +110,7 @@ void ex_ord_update_mx_my()
 
 static timeval first;
 
-unsigned long system_time(void)
+unsigned long dr_time(void)
 {
 	timeval second;
 	gettimeofday(&second,NULL);
@@ -126,7 +122,7 @@ unsigned long system_time(void)
 	return (unsigned long)(second.tv_sec - first.tv_sec)*1000ul + (unsigned long)(unsigned long)(second.tv_usec - first.tv_usec)/1000ul;
 }
 
-void system_sleep(uint32 msec)
+void dr_sleep(uint32 msec)
 {
 /*
 	// this would be 100% POSIX but is usually not very accurate ...
@@ -148,5 +144,5 @@ void system_sleep(uint32 msec)
 int main(int argc, char **argv)
 {
 	gettimeofday(&first,NULL);
-	return system_main(argc, argv);
+	return sysmain(argc, argv);
 }

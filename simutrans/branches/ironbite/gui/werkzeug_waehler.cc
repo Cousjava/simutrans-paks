@@ -9,6 +9,7 @@
 #include "../simimg.h"
 #include "../simworld.h"
 #include "../simskin.h"
+#include "../simevent.h"
 #include "../simwin.h"
 #include "../simgraph.h"
 #include "../simmenu.h"
@@ -32,7 +33,7 @@ werkzeug_waehler_t::werkzeug_waehler_t(karte_t* welt, const char* titel, const c
 	this->tool_icon_disp_end = 0;
 	this->titel = titel;
 	has_prev_next= false;
-	set_window_size( koord(max(icon.x,MIN_WIDTH), TITLEBAR_HEIGHT) );
+	set_fenstergroesse( koord(max(icon.x,MIN_WIDTH), TITLEBAR_HEIGHT) );
 	dirty = true;
 }
 
@@ -70,7 +71,7 @@ DBG_DEBUG4("werkzeug_waehler_t::add_tool()","ww=%i, rows=%i",ww,rows);
 		tool_icon_height = min(tool_icon_height, umgebung_t::toolbar_max_height);
 	}
 	dirty = true;
-	set_window_size( koord( tool_icon_width*icon.x, min(tool_icon_height, ((tools.get_count()-1)/tool_icon_width)+1)*icon.y+TITLEBAR_HEIGHT ) );
+	set_fenstergroesse( koord( tool_icon_width*icon.x, min(tool_icon_height, ((tools.get_count()-1)/tool_icon_width)+1)*icon.y+TITLEBAR_HEIGHT ) );
 	tool_icon_disp_start = 0;
 	tool_icon_disp_end = min( tool_icon_disp_start+tool_icon_width*tool_icon_height, tools.get_count() );
 	has_prev_next = ((uint32)tool_icon_width*tool_icon_height < tools.get_count());
@@ -87,7 +88,7 @@ void werkzeug_waehler_t::reset_tools()
 		i--;
 		tools.remove_at(i);
 	}
-	gui_frame_t::set_window_size( koord(max(icon.x,MIN_WIDTH), TITLEBAR_HEIGHT) );
+	gui_frame_t::set_fenstergroesse( koord(max(icon.x,MIN_WIDTH), TITLEBAR_HEIGHT) );
 	tool_icon_width = 0;
 	tool_icon_disp_start = 0;
 	tool_icon_disp_end = 0;
@@ -99,7 +100,7 @@ bool werkzeug_waehler_t::getroffen(int x, int y)
 	int dx = x/icon.x;
 	int dy = (y-16)/icon.y;
 	// either click in titlebar or on an icon
-	if(  x>=0   &&  y>=0  &&  ( (y<TITLEBAR_HEIGHT  &&  x<get_window_size().x)  ||  (dx<tool_icon_width  &&  dy<tool_icon_height) )  ) {
+	if(  x>=0   &&  y>=0  &&  ( (y<TITLEBAR_HEIGHT  &&  x<get_fenstergroesse().x)  ||  (dx<tool_icon_width  &&  dy<tool_icon_height) )  ) {
 		return y < TITLEBAR_HEIGHT || dx + tool_icon_width * dy + tool_icon_disp_start < (int)tools.get_count();
 	}
 	return false;
@@ -120,15 +121,15 @@ bool werkzeug_waehler_t::infowin_event(const event_t *ev)
 				dirty = true;
 				// change tool
 				if(IS_LEFTRELEASE(ev)) {
-					welt->set_werkzeug( tools.get(wz_idx), welt->get_active_player() );
+					welt->set_werkzeug( tools[wz_idx], welt->get_active_player() );
 				}
 				else {
 					// right-click on toolbar icon closes toolbars and dialogues. Resets selectable simple and general tools to the query-tool
-					if (tools.get(wz_idx)  &&  tools.get(wz_idx)->is_selected(welt)  ) {
+					if (tools[wz_idx]  &&  tools[wz_idx]->is_selected(welt)  ) {
 						// ->exit triggers werkzeug_waehler_t::infowin_event in the closing toolbar,
 						// which resets active tool to query tool
-						if(  tools.get(wz_idx)->exit(welt, welt->get_active_player())  ) {
-							welt->set_werkzeug( werkzeug_t::general_tool.get(WKZ_ABFRAGE), welt->get_active_player() );
+						if(  tools[wz_idx]->exit(welt, welt->get_active_player())  ) {
+							welt->set_werkzeug( werkzeug_t::general_tool[WKZ_ABFRAGE], welt->get_active_player() );
 						}
 					}
 				}
@@ -138,9 +139,9 @@ bool werkzeug_waehler_t::infowin_event(const event_t *ev)
 	}
 	// this resets to query-tool, when closing toolsbar - but only for selected general tools in the closing toolbar
 	else if(ev->ev_class==INFOWIN &&  ev->ev_code==WIN_CLOSE) {
-		for(  int i=0;  i<(int)tools.get_count();  i++) {
-			if(  tools.get(i)->is_selected(welt)   &&  (tools.get(i)->get_id()&GENERAL_TOOL)  ) {
-				welt->set_werkzeug( werkzeug_t::general_tool.get(WKZ_ABFRAGE), welt->get_active_player() );
+		FOR(vector_tpl<werkzeug_t*>, const i, tools) {
+			if (i->is_selected(welt) && i->get_id() & GENERAL_TOOL) {
+				welt->set_werkzeug( werkzeug_t::general_tool[WKZ_ABFRAGE], welt->get_active_player() );
 				break;
 			}
 		}
@@ -174,7 +175,7 @@ void werkzeug_waehler_t::zeichnen(koord pos, koord)
 {
 	spieler_t *sp = welt->get_active_player();
 	for(  uint i = tool_icon_disp_start;  i < tool_icon_disp_end;  i++  ) {
-		const image_id icon_img = tools.get(i)->get_icon(sp);
+		const image_id icon_img = tools[i]->get_icon(sp);
 
 		const koord draw_pos=pos+koord(((i-tool_icon_disp_start)%tool_icon_width)*icon.x,16+((i-tool_icon_disp_start)/tool_icon_width)*icon.y);
 		if(icon_img == IMG_LEER) {
@@ -194,23 +195,19 @@ void werkzeug_waehler_t::zeichnen(koord pos, koord)
 		}
 		else {
 			display_color_img(icon_img, draw_pos.x, draw_pos.y, 0, false, dirty);
-			tools.get(i)->draw_after( welt, draw_pos );
+			tools[i]->draw_after( welt, draw_pos );
 		}
 	}
 
 	// tooltips?
-	const sint16 mx = get_mouse_x();
-	const sint16 my = get_mouse_y();
+	const sint16 mx = get_maus_x();
+	const sint16 my = get_maus_y();
 	const sint16 xdiff = (mx - pos.x) / icon.x;
 	const sint16 ydiff = (my - pos.y - 16) / icon.y;
 	if(xdiff>=0  &&  xdiff<tool_icon_width  &&  ydiff>=0  &&  mx>=pos.x  &&  my>=pos.y+16) {
 		const int tipnr = xdiff+(tool_icon_width*ydiff)+tool_icon_disp_start;
 		if (tipnr < (int)tool_icon_disp_end) {
-			win_set_tooltip(get_mouse_x() + 16, 
-				        pos.y + 16 + ((ydiff+1)*icon.y) + 12, 
-			                tools.get(tipnr)->get_tooltip(welt->get_active_player()),
-					tools.get(tipnr), 
-					this);
+			win_set_tooltip(get_maus_x() + 16, pos.y + 16 + ((ydiff+1)*icon.y) + 12, tools[tipnr]->get_tooltip(welt->get_active_player()), tools[tipnr], this);
 		}
 	}
 

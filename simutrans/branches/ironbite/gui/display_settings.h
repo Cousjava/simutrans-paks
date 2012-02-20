@@ -10,7 +10,7 @@
 class karte_t;
 
 /**
- * Menï¿½ zur ï¿½nderung der Anzeigeeinstellungen.
+ * Menü zur Änderung der Anzeigeeinstellungen.
  * @author Hj. Malthaner
  */
 class color_gui_t : public gui_frame_t, private action_listener_t
@@ -25,16 +25,16 @@ public:
 
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.
-	 * @return den Dateinamen fï¿½r die Hilfe, oder NULL
+	 * @return den Dateinamen für die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	const char * get_help_file() const { return "display.txt"; }
+	const char * get_hilfe_datei() const { return "display.txt"; }
 
 	void zeichnen(koord pos, koord gr);
 
 	bool action_triggered(gui_action_creator_t*, value_t) OVERRIDE;
 
-	virtual void set_window_size(koord groesse);
+	virtual void set_fenstergroesse(koord groesse);
 };
 
 #endif

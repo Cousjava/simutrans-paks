@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  * written by Volker Meyer
  *
  * This file is part of the Simutrans project under the artistic licence.
@@ -117,9 +117,9 @@ convoi_filter_frame_t::convoi_filter_frame_t(spieler_t *sp, convoi_frame_t *main
 	add_komponente(&ware_scrolly);
 
 	int n=0;
-	for(int i=0; i<freight_builder_t::get_waren_anzahl(); i++) {
-		const freight_desc_t *ware = freight_builder_t::get_info(i);
-		if(ware == freight_builder_t::nichts) {
+	for(  int i=0; i<warenbauer_t::get_waren_anzahl(); i++  ) {
+		const ware_besch_t *ware = warenbauer_t::get_info(i);
+		if(ware == warenbauer_t::nichts) {
 			continue;
 		}
 		if(ware->get_catg()==0) {
@@ -129,19 +129,19 @@ convoi_filter_frame_t::convoi_filter_frame_t(spieler_t *sp, convoi_frame_t *main
 			ware_cont.add_komponente(item);
 		}
 	}
-	// now add goods categories
-	for(  int i=1; i<freight_builder_t::get_max_catg_index(); i++  ) {
-		if(freight_builder_t::get_info_catg(i)->get_catg()!=0) {
-			ware_item_t *item = new ware_item_t(this, freight_builder_t::get_info_catg(i));
-			item->init(button_t::square, translator::translate(freight_builder_t::get_info_catg(i)->get_catg_name()), koord(5, BUTTON_HEIGHT*n++));
+	// no add goo categories
+	for(  int i=1; i<warenbauer_t::get_max_catg_index(); i++  ) {
+		if(warenbauer_t::get_info_catg(i)->get_catg()!=0) {
+			ware_item_t *item = new ware_item_t(this, warenbauer_t::get_info_catg(i));
+			item->init(button_t::square, translator::translate(warenbauer_t::get_info_catg(i)->get_catg_name()), koord(5, BUTTON_HEIGHT*n++));
 			ware_cont.add_komponente(item);
 		}
 	}
 	ware_cont.set_groesse(koord(100, n*BUTTON_HEIGHT));
 	ware_scrolly.set_groesse(koord(125, 13*BUTTON_HEIGHT));
 
-	set_window_size(koord(317, TITLEBAR_HEIGHT+(FILTER_BUTTONS)*BUTTON_HEIGHT+8+10));
-	set_min_window_size(koord(255, TITLEBAR_HEIGHT+(FILTER_BUTTONS)*BUTTON_HEIGHT+8-2));
+	set_fenstergroesse(koord(317, TITLEBAR_HEIGHT+(FILTER_BUTTONS)*BUTTON_HEIGHT+8+10));
+	set_min_windowsize(koord(255, TITLEBAR_HEIGHT+(FILTER_BUTTONS)*BUTTON_HEIGHT+8-2));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -192,14 +192,14 @@ bool convoi_filter_frame_t::action_triggered( gui_action_creator_t *komp,value_t
 }
 
 
-void convoi_filter_frame_t::ware_item_triggered(const freight_desc_t *ware)
+void convoi_filter_frame_t::ware_item_triggered(const ware_besch_t *ware)
 {
 	if(ware->get_catg()==0) {
 		main_frame->set_ware_filter(ware, -1);
 	}
 	else {
-		for(uint8 i=0; i<freight_builder_t::get_waren_anzahl(); i++) {
-			const freight_desc_t *testware = freight_builder_t::get_info(i);
+		for(uint8 i=0; i<warenbauer_t::get_waren_anzahl(); i++) {
+			const ware_besch_t *testware = warenbauer_t::get_info(i);
 			if(testware->get_catg() == ware->get_catg()) {
 				main_frame->set_ware_filter(testware, -1);
 			}
@@ -222,7 +222,7 @@ void convoi_filter_frame_t::resize(const koord delta)
 {
 	gui_frame_t::resize(delta);
 
-	const koord gr = get_window_size()-koord(0, TITLEBAR_HEIGHT);
+	const koord gr = get_fenstergroesse()-koord(0, TITLEBAR_HEIGHT);
 
 	const KOORD_VAL w1 = gr.x/2-4;
 	const KOORD_VAL w2 = (gr.x+1)/2;

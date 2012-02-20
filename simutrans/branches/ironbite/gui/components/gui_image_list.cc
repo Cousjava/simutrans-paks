@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  */
@@ -57,7 +57,7 @@ int gui_image_list_t::index_at(koord parent_pos, int xpos, int ypos) const
 		row * columns + column :
 		column * rows + row;
 
-		if (bild_index < images->get_count()  &&  images->get(bild_index).image != IMG_LEER) {
+		if (bild_index < images->get_count()  &&  (*images)[bild_index].image != IMG_LEER) {
 			return bild_index;
 		}
 	}
@@ -73,9 +73,9 @@ void gui_image_list_t::zeichnen(koord parent_pos)
 	const int columns = (groesse.x - 2 * BORDER) / grid.x;
 
 	// sel_index should come from infowin_event, but it is not sure?
-	const unsigned int sel_index = index_at(parent_pos, get_mouse_x(), get_mouse_y());
+	const unsigned int sel_index = index_at(parent_pos, get_maus_x(), get_maus_y());
 
-	// zeige verfï¿½gbare waggontypen
+	// zeige verfügbare waggontypen
 	int xmin = parent_pos.x + pos.x + BORDER;
 	int ymin = parent_pos.y + pos.y + BORDER;
 	int ymax = ymin + rows * grid.y;
@@ -84,7 +84,7 @@ void gui_image_list_t::zeichnen(koord parent_pos)
 	int ypos = ymin;
 
 	for(unsigned int i=0; i< images->get_count(); i++) {
-		const image_data_t& idata = images->get(i);
+		const image_data_t& idata = (*images)[i];
 
 		if(idata.count>=0) {
 			// display mark

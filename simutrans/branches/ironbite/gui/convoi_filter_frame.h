@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -29,10 +29,10 @@ private:
 	*/
 	class ware_item_t : public button_t
 	{
-		const freight_desc_t *ware;
+		const ware_besch_t *ware;
 		convoi_filter_frame_t *parent;
 	public:
-		ware_item_t(convoi_filter_frame_t *parent, const freight_desc_t *ware)
+		ware_item_t(convoi_filter_frame_t *parent, const ware_besch_t *ware)
 		{
 			this->ware = ware;
 			this->parent = parent;
@@ -94,13 +94,13 @@ public:
 	 * Propagate funktion from main_frame for ware_item_t
 	 * @author V. Meyer
 	 */
-	bool get_ware_filter(const freight_desc_t *ware) const { return main_frame->get_ware_filter(ware); }
+	bool get_ware_filter(const ware_besch_t *ware) const { return main_frame->get_ware_filter(ware); }
 
 	/*
 	 * Handler for ware_item_t event.
 	 * @author V. Meyer
 	 */
-	void ware_item_triggered(const freight_desc_t *ware);
+	void ware_item_triggered(const ware_besch_t *ware);
 
 	/**
 	 * Does this window need a min size button in the title bar?
@@ -109,24 +109,24 @@ public:
 	bool has_min_sizer() const {return true;}
 
 	/**
-	 * komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
+	 * komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
 	 * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
 	 * in dem die Komponente dargestellt wird.
 	 * @author V. Meyer
 	 */
 	void zeichnen(koord pos, koord gr);
 
-        /**
-         * resize window in response to a resize event
-         */
+    /**
+     * resize window in response to a resize event
+     */
 	void resize(const koord delta);
 
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.
-	 * @return den Dateinamen fï¿½r die Hilfe, oder NULL
+	 * @return den Dateinamen für die Hilfe, oder NULL
 	 * @author V. Meyer
 	 */
-	const char * get_help_file() const {return "convoi_filter.txt"; }
+	const char * get_hilfe_datei() const {return "convoi_filter.txt"; }
 
 	bool action_triggered(gui_action_creator_t*, value_t) OVERRIDE;
 };

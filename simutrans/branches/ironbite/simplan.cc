@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  * (see license.txt)
@@ -12,8 +12,8 @@
 #include "simworld.h"
 #include "simhalt.h"
 #include "player/simplay.h"
-#include "simdebug.h"
 #include "simconst.h"
+#include "macros.h"
 #include "besch/grund_besch.h"
 #include "boden/grund.h"
 #include "boden/boden.h"
@@ -30,28 +30,14 @@
 
 #include "gui/karte.h"
 
-/**
- * Return either ground tile in this height or NULL if not existing
- * 
- * @return NULL if not ground in this height
- * @author Hj. Malthaner
- */
-grund_t * planquadrat_t::get_boden_in_hoehe(const int z) const 
+
+void swap(planquadrat_t& a, planquadrat_t& b)
 {
-	if(ground_size==1) {
-		// must be valid ground at this point!
-		if(  data.one->get_hoehe() == z  ) {
-			return data.one;
-		}
-	}
-	else {
-		for(  uint8 i = 0;  i < ground_size;  i++  ) {
-			if(  data.some[i]->get_hoehe() == z  ) {
-				return data.some[i];
-			}
-		}
-	}
-	return NULL;
+	sim::swap(a.this_halt, b.this_halt);
+	sim::swap(a.halt_list, b.halt_list);
+	sim::swap(a.ground_size, b.ground_size);
+	sim::swap(a.halt_list_count, b.halt_list_count);
+	sim::swap(a.data, b.data);
 }
 
 // deletes also all grounds in this array!
@@ -204,8 +190,8 @@ void planquadrat_t::kartenboden_setzen(grund_t *bd)
 
 
 /**
- * Ersetzt Boden alt durch neu, lï¿½scht Boden alt.
- * @author Hj. Malthaner
+ * Ersetzt Boden alt durch neu, löscht Boden alt.
+ * @author Hansjörg Malthaner
  */
 void planquadrat_t::boden_ersetzen(grund_t *alt, grund_t *neu)
 {
@@ -408,7 +394,7 @@ void planquadrat_t::display_dinge(const sint16 xpos, const sint16 ypos, const si
 	}
 
 	// clip everything at the next tile above
-	struct clip_dimension p_cr;
+	clip_dimension p_cr;
 	if(  i < ground_size  ) {
 		p_cr = display_get_clip_wh();
 		for(uint8 j=i; j<ground_size; j++) {
@@ -521,7 +507,7 @@ void planquadrat_t::display_overlay(const sint16 xpos, const sint16 ypos, const 
 
 
 /**
- * Manche Bï¿½den kï¿½nnen zu Haltestellen gehï¿½ren.
+ * Manche Böden können zu Haltestellen gehören.
  * Der Zeiger auf die Haltestelle wird hiermit gesetzt.
  * @author Hj. Malthaner
  */

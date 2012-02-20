@@ -28,7 +28,7 @@ class cbuffer_t;
  * Used by grund_t::find<T>()
  */
 class aircraft_t;
-class tree_t;
+class baum_t;
 class bruecke_t;
 class crossing_t;
 class field_t;
@@ -50,7 +50,7 @@ class zeiger_t;
 
 template<typename T> struct map_ding {};
 template<> struct map_ding<aircraft_t>    { static const ding_t::typ code = ding_t::aircraft;    };
-template<> struct map_ding<tree_t>        { static const ding_t::typ code = ding_t::baum;        };
+template<> struct map_ding<baum_t>        { static const ding_t::typ code = ding_t::baum;        };
 template<> struct map_ding<bruecke_t>     { static const ding_t::typ code = ding_t::bruecke;     };
 template<> struct map_ding<crossing_t>    { static const ding_t::typ code = ding_t::crossing;    };
 template<> struct map_ding<field_t>       { static const ding_t::typ code = ding_t::field;       };
@@ -79,7 +79,7 @@ template<typename T> static inline T* ding_cast(ding_t* const d)
 
 
 /**
- * <p>Abstrakte Basisklasse fï¿½r Untergrï¿½nde in Simutrans.</p>
+ * <p>Abstrakte Basisklasse für Untergründe in Simutrans.</p>
  *
  * <p>Von der Klasse grund_t sind alle Untergruende (Land, Wasser, Strassen ...)
  * in simu abgeleitet. Jedes Planquadrat hat einen Untergrund.</p>
@@ -95,7 +95,7 @@ class grund_t
 {
 public:
 	/**
-	 * Flag-Werte fï¿½r das neuzeichnen geï¿½nderter Untergrï¿½nde
+	 * Flag-Werte für das neuzeichnen geänderter Untergründe
 	 * @author Hj. Malthaner
 	 */
 	enum flag_values {
@@ -144,7 +144,7 @@ protected:
 	koord3d pos;
 
 	/**
-	 * Flags fï¿½r das neuzeichnen geï¿½nderter Untergrï¿½nde
+	 * Flags für das neuzeichnen geänderter Untergründe
 	 * @author Hj. Malthaner
 	 */
 	uint8 flags;
@@ -195,6 +195,11 @@ public:
 	grund_t(karte_t *welt, loadsave_t *file);
 	grund_t(karte_t *welt, koord3d pos);
 
+private:
+	grund_t(grund_t const&);
+	grund_t& operator=(grund_t const&);
+
+public:
 	virtual ~grund_t();
 
 	/**
@@ -210,7 +215,7 @@ public:
 	karte_t *get_welt() const {return welt;}
 
 	/**
-	* Setzt Flags fï¿½r das neuzeichnen geï¿½nderter Untergrï¿½nde
+	* Setzt Flags für das neuzeichnen geänderter Untergründe
 	* @author Hj. Malthaner
 	*/
 	inline void set_flag(flag_values flag) {flags |= flag;}
@@ -360,13 +365,13 @@ public:
 	void set_grund_hang(hang_t::typ sl) { slope = sl; }
 
 	/**
-	 * Manche Bï¿½den kï¿½nnen zu Haltestellen gehï¿½ren.
+	 * Manche Böden können zu Haltestellen gehören.
 	 * @author Hj. Malthaner
 	 */
 	void set_halt(halthandle_t halt);
 
 	/**
-	 * Ermittelt, ob dieser Boden zu einer Haltestelle gehï¿½rt.
+	 * Ermittelt, ob dieser Boden zu einer Haltestelle gehört.
 	 * @return NULL wenn keine Haltestelle, sonst Zeiger auf Haltestelle
 	 * @author Hj. Malthaner
 	 */
@@ -573,7 +578,11 @@ public:
 	* @author DarioK
 	* @see get_weg
 	*/
-	uint8 get_styp(waytype_t typ) const;
+	uint8 get_styp(waytype_t typ) const
+	{
+		weg_t *weg = get_weg(typ);
+		return (weg) ? weg->get_besch()->get_styp() : 0;
+	}
 
 	/**
 	* Ermittelt die Richtungsbits furr den weg vom Typ 'typ'.
@@ -587,7 +596,7 @@ public:
 
 	/**
 	* Ermittelt die Richtungsbits furr den weg vom Typ 'typ' unmaskiert.
-	* Dies wird beim Bauen benï¿½tigt. Furr die Routenfindung werden die
+	* Dies wird beim Bauen ben÷tigt. Furr die Routenfindung werden die
 	* maskierten ribis benutzt.
 	* @author Hj. Malthaner/V. Meyer
 	*
@@ -608,7 +617,7 @@ public:
 	virtual sint8 get_weg_yoff() const { return 0; }
 
 	/**
-	* Hat der Boden mindestens ein weg_t-Objekt? Liefert false fï¿½r Wasser!
+	* Hat der Boden mindestens ein weg_t-Objekt? Liefert false für Wasser!
 	* @author V. Meyer
 	*/
 	inline bool hat_wege() const { return (flags&(has_way1|has_way2))!=0;}
@@ -618,7 +627,7 @@ public:
 	* Strassenbahnschienen duerfen nicht als Kreuzung erkannt werden!
 	* @author V. Meyer, dariok
 	*/
-	bool ist_uebergang() const;
+	inline bool ist_uebergang() const { return (flags&has_way2)!=0  &&  ((weg_t *)dinge.bei(1))->get_besch()->get_styp()!=7; }
 
 	/**
 	* returns the vehcile of a convoi (if there)

@@ -111,7 +111,7 @@ public:
 	 * get convoy
 	 * @author hsiegeln
 	 */
-	convoihandle_t get_convoy(int i) const { return line_managed_convoys.get(i); }
+	convoihandle_t get_convoy(int i) const { return line_managed_convoys[i]; }
 
 	/*
 	 * return number of manages convoys in this line

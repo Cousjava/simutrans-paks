@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -34,7 +34,7 @@ private:
 
 public:
     /**
-     * @param cnv das Handle fï¿½r den anzuzeigenden Convoi.
+     * @param cnv das Handle für den anzuzeigenden Convoi.
      * @author Hj. Malthaner
      */
     gui_vehicleinfo_t(convoihandle_t cnv);
@@ -76,7 +76,7 @@ public:
     convoi_detail_t(convoihandle_t cnv);
 
     /**
-     * komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
+     * komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
      * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
      * in dem die Komponente dargestellt wird.
      * @author Hj. Malthaner
@@ -85,16 +85,16 @@ public:
 
     /**
      * Manche Fenster haben einen Hilfetext assoziiert.
-     * @return den Dateinamen fï¿½r die Hilfe, oder NULL
+     * @return den Dateinamen für die Hilfe, oder NULL
      * @author V. Meyer
      */
-    const char * get_help_file() const {return "convoidetail.txt"; }
+    const char * get_hilfe_datei() const {return "convoidetail.txt"; }
 
     /**
      * Set window size and adjust component sizes and/or positions accordingly
      * @author Hj. Malthaner
      */
-    virtual void set_window_size(koord groesse);
+    virtual void set_fenstergroesse(koord groesse);
 
 	bool action_triggered(gui_action_creator_t*, value_t) OVERRIDE;
 

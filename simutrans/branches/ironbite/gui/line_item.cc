@@ -4,6 +4,10 @@
 #include "../player/simplay.h"
 #include "../utils/cbuffer_t.h"
 
+line_scrollitem_t::line_scrollitem_t( linehandle_t l ) : scrollitem_t( COL_ORANGE ) 
+{
+	line = l; 
+}
 
 const char* line_scrollitem_t::get_text() const
 {

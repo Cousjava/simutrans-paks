@@ -305,7 +305,7 @@ bool dingliste_t::intern_add_moving(ding_t* ding)
 	// however ships and planes may be where not way is below ...
 	if(start!=0  &&  obj.some[0]->get_typ()==ding_t::way  &&  ((weg_t *)obj.some[0])->get_waytype()==road_wt) {
 
-		const uint8 fahrtrichtung = ((vehicle_base_t*)ding)->get_fahrtrichtung();
+		const uint8 fahrtrichtung = ((vehikel_basis_t*)ding)->get_fahrtrichtung();
 
 		// this is very complicated:
 		// we may have many objects in two lanes (actually five with tram and pedestrians)
@@ -339,7 +339,7 @@ bool dingliste_t::intern_add_moving(ding_t* ding)
 					// if we are going south or southeast we must be drawn as the first in east direction (after nord and nordeast)
 					for(uint8 i=start;  i<end;  i++  ) {
 						if (ding_t const* const dt = obj.some[i]) {
-							if (vehicle_base_t const* const v = ding_cast<vehicle_base_t>(dt)) {
+							if (vehikel_basis_t const* const v = ding_cast<vehikel_basis_t>(dt)) {
 								if ((v->get_fahrtrichtung() & ribi_t::suedwest) != 0) {
 									intern_insert_at(ding, i);
 									return true;
@@ -491,7 +491,7 @@ bool dingliste_t::add(ding_t* ding)
 			 * therefore the y-order must be correct!
 			 */
 			for(  ;  i<top;  i++) {
-				tree_t const* const tree = ding_cast<tree_t>(obj.some[i]);
+				baum_t const* const tree = ding_cast<baum_t>(obj.some[i]);
 				if (!tree  ||  compare_trees(ding, tree)) {
 					break;
 				}
@@ -570,7 +570,7 @@ bool dingliste_t::remove(const ding_t* ding)
  */
 void local_delete_object(ding_t *ding, spieler_t *sp)
 {
-	vehicle_base_t* const v = ding_cast<vehicle_base_t>(ding);
+	vehikel_basis_t* const v = ding_cast<vehikel_basis_t>(ding);
 	if (v  &&  ding->get_typ() != ding_t::fussgaenger  &&  ding->get_typ() != ding_t::verkehr  &&  ding->get_typ() != ding_t::movingobj) {
 		v->verlasse_feld();
 	}
@@ -912,7 +912,7 @@ void dingliste_t::rdwr(karte_t *welt, loadsave_t *file, koord3d current_pos)
 
 				case ding_t::baum:
 				{
-					tree_t *b = new tree_t(welt, file);
+					baum_t *b = new baum_t(welt, file);
 					if(!b->get_besch()) {
 						// do not remove from this position, since there will be nothing
 						b->set_flag(ding_t::not_on_map);
@@ -1185,7 +1185,7 @@ uint8 dingliste_t::display_dinge_bg( const sint16 xpos, const sint16 ypos, const
  */
 inline bool local_display_dinge_vh(const ding_t *ding, const sint16 xpos, const sint16 ypos, const ribi_t::ribi ribi, const bool ontile)
 {
-	vehicle_base_t const* const v = ding_cast<vehicle_base_t>(ding);
+	vehikel_basis_t const* const v = ding_cast<vehikel_basis_t>(ding);
 	aircraft_t      const*       a;
 	if (v && (ontile || !(a = ding_cast<aircraft_t>(v)) || a->is_on_ground())) {
 		const ribi_t::ribi veh_ribi = v->get_fahrtrichtung();

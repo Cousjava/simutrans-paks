@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2003 Hj. Malthaner
+ * Copyright (c) 1997 - 2003 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -12,10 +12,7 @@
 #include "../simcolor.h"
 #include "../simworld.h"
 #include "../simskin.h"
-#include "../simevent.h"
 #include "../player/simplay.h"
-
-#include "../boden/grund.h"
 
 #include "../dings/gebaeude.h"
 #include "../dings/label.h"
@@ -101,8 +98,7 @@ void labellist_stats_t::get_unique_labels(labellist::sort_mode_t sb, bool sr, bo
 	last_world_labels = welt->get_label_list().get_count();
 	labels.resize(last_world_labels);
 
-	for (slist_iterator_tpl<koord> iter(welt->get_label_list()); iter.next();) {
-		koord pos = iter.get_current();
+	FOR(slist_tpl<koord>, const& pos, welt->get_label_list()) {
 		label_t* label = welt->lookup_kartenboden(pos)->find<label_t>();
 		const char* name = welt->lookup_kartenboden(pos)->get_text();
 		// some old version games don't have label nor name.
@@ -128,7 +124,7 @@ bool labellist_stats_t::infowin_event(const event_t * ev)
 		return false;
 	}
 
-	koord pos = labels.get(line);
+	koord pos = labels[line];
 	if (pos==koord::invalid) {
 		return false;
 	}
@@ -163,9 +159,7 @@ void labellist_stats_t::recalc_size()
 
 	static cbuffer_t buf;
 
-	for(  uint32 i=0;  i<labels.get_count();   i++) {
-		const koord pos = labels.get(i);
-
+	FOR(vector_tpl<koord>, const& pos, labels) {
 		buf.clear();
 
 		// the other infos
@@ -207,7 +201,7 @@ void labellist_stats_t::zeichnen(koord offset)
 	// keep previous maximum width
 	int x_size = get_groesse().x-10-4;
 
-	const struct clip_dimension cd = display_get_clip_wh();
+	clip_dimension const cd = display_get_clip_wh();
 	const int start = cd.y-LINESPACE+1;
 	const int end = cd.yy;
 
@@ -217,7 +211,7 @@ void labellist_stats_t::zeichnen(koord offset)
 
 	// changes to loop affecting x_size must be copied to ::recalc_size()
 	for (uint32 i=0; i<labels.get_count()  &&  yoff<end; i++) {
-		const koord pos = labels.get(i);
+		const koord pos = labels[i];
 
 		// skip invisible lines
 		if(yoff<start) {

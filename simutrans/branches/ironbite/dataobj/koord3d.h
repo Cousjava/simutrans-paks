@@ -2,8 +2,8 @@
 #define KOORD3D_H
 
 #include "koord.h"
+#include "ribi.h"
 #include "../simtypes.h"
-
 
 /**
  * 3d Koordinaten

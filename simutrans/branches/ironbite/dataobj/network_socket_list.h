@@ -130,13 +130,13 @@ public:
 	}
 
 	static SOCKET get_socket( uint32 client_id ) {
-		return client_id < list.get_count()  &&  list.get(client_id)->state != socket_info_t::inactive
-			? list.get(client_id)->socket : INVALID_SOCKET;
+		return client_id < list.get_count()  &&  list[client_id]->state != socket_info_t::inactive
+			? list[client_id]->socket : INVALID_SOCKET;
 	}
 
 	static socket_info_t& get_client(uint32 client_id ) {
 		assert (client_id < list.get_count());
-		return * list.get(client_id);
+		return *list[client_id];
 	}
 
 	/**

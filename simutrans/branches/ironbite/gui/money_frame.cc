@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -20,8 +20,6 @@
 #include "../dataobj/umgebung.h"
 #include "../dataobj/scenario.h"
 #include "../dataobj/loadsave.h"
-
-#include "../boden/grund.h"
 
 // for headquarter construction only ...
 #include "../simskin.h"
@@ -291,6 +289,7 @@ money_frame_t::money_frame_t(spieler_t *sp)
 	// easier headquarter access
 	old_level = sp->get_headquarter_level();
 	old_pos = sp->get_headquarter_pos();
+	headquarter_tooltip[0] = 0;
 
 	if(  sp->get_ai_id()!=spieler_t::HUMAN  ) {
 		// misuse headquarter button for AI configure
@@ -308,7 +307,7 @@ money_frame_t::money_frame_t(spieler_t *sp)
 		headquarter.disable();
 
 		// reuse tooltip from wkz_headquarter_t
-		const char * c = werkzeug_t::general_tool.get(WKZ_HEADQUARTER)->get_tooltip(sp);
+		const char * c = werkzeug_t::general_tool[WKZ_HEADQUARTER]->get_tooltip(sp);
 		if(c) {
 			// only true, if the headquarter can be built/updated
 			tstrncpy(headquarter_tooltip, c, lengthof(headquarter_tooltip));
@@ -349,7 +348,7 @@ money_frame_t::money_frame_t(spieler_t *sp)
 		}
 	}
 
-	set_window_size(koord(582, 340));
+	set_fenstergroesse(koord(582, 340));
 }
 
 
@@ -461,7 +460,7 @@ void money_frame_t::zeichnen(koord pos, koord gr)
 		if(old_level!=sp->get_headquarter_level()) {
 
 			// reuse tooltip from wkz_headquarter_t
-			const char * c = werkzeug_t::general_tool.get(WKZ_HEADQUARTER)->get_tooltip(sp);
+			const char * c = werkzeug_t::general_tool[WKZ_HEADQUARTER]->get_tooltip(sp);
 			if(c) {
 				// only true, if the headquarter can be built/updated
 				tstrncpy(headquarter_tooltip, c, lengthof(headquarter_tooltip));
@@ -519,7 +518,7 @@ bool money_frame_t::action_triggered( gui_action_creator_t *komp,value_t /* */)
 			create_win( new ai_option_t(sp), w_info, magic_ai_options_t+sp->get_player_nr() );
 		}
 		else {
-			sp->get_welt()->set_werkzeug( werkzeug_t::general_tool.get(WKZ_HEADQUARTER), sp );
+			sp->get_welt()->set_werkzeug( werkzeug_t::general_tool[WKZ_HEADQUARTER], sp );
 		}
 		return true;
 	}

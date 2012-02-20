@@ -1,7 +1,8 @@
 #ifndef dings_tunnel_h
 #define dings_tunnel_h
 
-#include "thing_without_info_t.h"
+#include "../simdings.h"
+#include "../simimg.h"
 
 class tunnel_besch_t;
 

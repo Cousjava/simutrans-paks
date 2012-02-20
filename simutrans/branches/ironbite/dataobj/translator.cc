@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -77,12 +77,11 @@ const translator::lang_info* translator::get_langs()
 // diagnosis
 static void dump_hashtable(stringhashtable_tpl<const char*>* tbl)
 {
-	stringhashtable_iterator_tpl<const char*> iter(tbl);
 	printf("keys\n====\n");
 	tbl->dump_stats();
 	printf("entries\n=======\n");
-	while (iter.next()) {
-		printf("%s\n",iter.get_current_value());
+	FOR(stringhashtable_tpl<char const*>, const& i, *tbl) {
+		printf("%s\n", i.object);
 	}
 	fflush(NULL);
 }
@@ -90,7 +89,7 @@ static void dump_hashtable(stringhashtable_tpl<const char*>* tbl)
 
 /* first two file fuctions needed in connection with utf */
 
-/* checks, if we need a unicode translation (during load only done for identifying strings like "Auflï¿½sen")
+/* checks, if we need a unicode translation (during load only done for identifying strings like "Auflösen")
  * @date 2.1.2005
  * @author prissi
  */
@@ -162,7 +161,7 @@ static char* recode(const char* src, bool translate_from_utf, bool translate_to_
 					dst += c = utf16_to_utf8((unsigned char)*src++, (utf8*)dst);
 				} else if (translate_from_utf) {
 					// make latin from UTF8 (ignore overflows!)
-					int len = 0;
+					size_t len = 0;
 					*dst++ = c = (uint8)utf8_to_utf16((const utf8*)src, &len);
 					src += len;
 				}
@@ -197,9 +196,9 @@ void translator::load_custom_list( int lang, vector_tpl<char*> &name_list, const
 {
 	FILE* file;
 
-	// alle namen aufrï¿½umen
-	for(uint32 i=0; i<name_list.get_count(); i++) {
-		free( name_list.get(i) );
+	// alle namen aufräumen
+	FOR(vector_tpl<char*>, const i, name_list) {
+		free(i);
 	}
 	name_list.clear();
 
@@ -365,8 +364,8 @@ void translator::load_files_from_folder(const char* folder_name, const char* wha
 	int num_pak_lang_dat = folder.search(folder_name, "tab");
 	DBG_MESSAGE("translator::load_files_from_folder()", "search folder \"%s\" and found %i files", folder_name, num_pak_lang_dat);
 	//read now the basic language infos
-	for (searchfolder_t::const_iterator i = folder.begin(), end = folder.end(); i != end; ++i) {
-		const string fileName(*i);
+	FOR(searchfolder_t, const& i, folder) {
+		string const fileName(i);
 		size_t pstart = fileName.rfind('/') + 1;
 		const string iso = fileName.substr(pstart, fileName.size() - pstart - 4);
 

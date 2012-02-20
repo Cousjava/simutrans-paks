@@ -22,8 +22,7 @@
 #include "../tpl/slist_tpl.h"
 
 
-struct linieneintrag_t schedule_t::dummy_eintrag = { koord3d::invalid, 0, 0 };
-
+linieneintrag_t schedule_t::dummy_eintrag(koord3d::invalid, 0, 0);
 
 
 schedule_t::schedule_t(loadsave_t* const file)
@@ -45,8 +44,8 @@ void schedule_t::copy_from(const schedule_t *src)
 		return;
 	}
 	eintrag.clear();
-	for(  uint8 i=0;  i<src->eintrag.get_count();  i++  ) {
-		eintrag.append(src->eintrag.get(i));
+	FOR(minivec_tpl<linieneintrag_t>, const& i, src->eintrag) {
+		eintrag.append(i);
 	}
 	set_aktuell( src->get_aktuell() );
 
@@ -87,14 +86,6 @@ bool schedule_t::ist_halt_erlaubt(const grund_t *gr) const
 
 bool schedule_t::insert(const grund_t* gr, uint8 ladegrad, uint8 waiting_time_shift )
 {
-#ifndef _MSC_VER
-	struct linieneintrag_t stop = { gr->get_pos(), ladegrad, waiting_time_shift };
-#else
-	struct linieneintrag_t stop;
-	stop.pos = gr->get_pos();
-	stop.ladegrad = ladegrad;
-	stop.waiting_time_shift = waiting_time_shift;
-#endif
 	// stored in minivec, so wie have to avoid adding too many
 	if(  eintrag.get_count()>=254  ) {
 		create_win( new news_img("Maximum 254 stops\nin a schedule!\n"), w_time_delete, magic_none);
@@ -102,7 +93,7 @@ bool schedule_t::insert(const grund_t* gr, uint8 ladegrad, uint8 waiting_time_sh
 	}
 
 	if(  ist_halt_erlaubt(gr)  ) {
-		eintrag.insert_at(aktuell, stop);
+		eintrag.insert_at(aktuell, linieneintrag_t(gr->get_pos(), ladegrad, waiting_time_shift));
 		aktuell ++;
 		return true;
 	}
@@ -117,15 +108,6 @@ bool schedule_t::insert(const grund_t* gr, uint8 ladegrad, uint8 waiting_time_sh
 
 bool schedule_t::append(const grund_t* gr, uint8 ladegrad, uint8 waiting_time_shift)
 {
-#ifndef _MSC_VER
-	struct linieneintrag_t stop = { gr->get_pos(), ladegrad, waiting_time_shift };
-#else
-	struct linieneintrag_t stop;
-	stop.pos = gr->get_pos();
-	stop.ladegrad = ladegrad;
-	stop.waiting_time_shift = waiting_time_shift;
-#endif
-
 	// stored in minivec, so wie have to avoid adding too many
 	if(eintrag.get_count()>=254) {
 		create_win( new news_img("Maximum 254 stops\nin a schedule!\n"), w_time_delete, magic_none);
@@ -133,7 +115,7 @@ bool schedule_t::append(const grund_t* gr, uint8 ladegrad, uint8 waiting_time_sh
 	}
 
 	if(ist_halt_erlaubt(gr)) {
-		eintrag.append(stop, 4);
+		eintrag.append(linieneintrag_t(gr->get_pos(), ladegrad, waiting_time_shift), 4);
 		return true;
 	}
 	else {
@@ -158,20 +140,20 @@ void schedule_t::cleanup()
 	koord3d lastpos = eintrag.back().pos;
 	// now we have to check all entries ...
 	for(  uint8 i=0;  i<eintrag.get_count();  i++  ) {
-		if(  eintrag.get(i).pos == lastpos  ) {
+		if(  eintrag[i].pos == lastpos  ) {
 			// ingore double entries just one after the other
 			eintrag.remove_at(i);
 			if(  i<aktuell  ) {
 				aktuell --;
 			}
 			i--;
-		} else if(  eintrag.get(i).pos == koord3d::invalid  ) {
+		} else if(  eintrag[i].pos == koord3d::invalid  ) {
 			// ingore double entries just one after the other
 			eintrag.remove_at(i);
 		}
 		else {
 			// next pos for check
-			lastpos = eintrag.get(i).pos;
+			lastpos = eintrag[i].pos;
 		}
 	}
 	make_aktuell_valid();
@@ -221,12 +203,7 @@ void schedule_t::rdwr(loadsave_t *file)
 			uint32 dummy;
 			pos.rdwr(file);
 			file->rdwr_long(dummy);
-
-			struct linieneintrag_t stop;
-			stop.pos = pos;
-			stop.ladegrad = (sint8)dummy;
-			stop.waiting_time_shift = 0;
-			eintrag.append(stop);
+			eintrag.append(linieneintrag_t(pos, (uint8)dummy, 0));
 		}
 	}
 	else {
@@ -234,12 +211,12 @@ void schedule_t::rdwr(loadsave_t *file)
 		for(  uint8 i=0;  i<size;  i++  ) {
 			if(eintrag.get_count()<=i) {
 				eintrag.append( linieneintrag_t() );
-				eintrag.at(i) .waiting_time_shift = 0;
+				eintrag[i] .waiting_time_shift = 0;
 			}
-			eintrag.at(i).pos.rdwr(file);
-			file->rdwr_byte(eintrag.at(i).ladegrad);
+			eintrag[i].pos.rdwr(file);
+			file->rdwr_byte(eintrag[i].ladegrad);
 			if(file->get_version()>=99018) {
-				file->rdwr_byte(eintrag.at(i).waiting_time_shift);
+				file->rdwr_byte(eintrag[i].waiting_time_shift);
 			}
 		}
 	}
@@ -259,8 +236,8 @@ void schedule_t::rdwr(loadsave_t *file)
 void schedule_t::rotate90( sint16 y_size )
 {
 	// now we have to rotate all entries ...
-	for(  uint8 i = 0;  i<eintrag.get_count();  i++  ) {
-		eintrag.at(i).pos.rotate90(y_size);
+	FOR(minivec_tpl<linieneintrag_t>, & i, eintrag) {
+		i.pos.rotate90(y_size);
 	}
 }
 
@@ -288,7 +265,7 @@ bool schedule_t::matches(karte_t *welt, const schedule_t *fpl)
 	// we need to do this that complicated, because the last stop may make the difference
 	uint16 f1=0, f2=0;
 	while(  f1+f2<eintrag.get_count()+fpl->eintrag.get_count()  ) {
-		if(f1<eintrag.get_count()  &&  f2<fpl->eintrag.get_count()  &&  fpl->eintrag.get((uint8)f2).pos == eintrag.get((uint8)f1).pos) {
+		if(f1<eintrag.get_count()  &&  f2<fpl->eintrag.get_count()  &&  fpl->eintrag[(uint8)f2].pos == eintrag[(uint8)f1].pos) {
 			// ladegrad/waiting ignored: identical
 			f1++;
 			f2++;
@@ -296,7 +273,7 @@ bool schedule_t::matches(karte_t *welt, const schedule_t *fpl)
 		else {
 			bool ok = false;
 			if(  f1<eintrag.get_count()  ) {
-				grund_t *gr1 = welt->lookup(eintrag.at((uint8)f1).pos);
+				grund_t *gr1 = welt->lookup(eintrag[(uint8)f1].pos);
 				if(  gr1  &&  gr1->get_depot()  ) {
 					// skip depot
 					f1++;
@@ -304,7 +281,7 @@ bool schedule_t::matches(karte_t *welt, const schedule_t *fpl)
 				}
 			}
 			if(  f2<fpl->eintrag.get_count()  ) {
-				grund_t *gr2 = welt->lookup(fpl->eintrag.get((uint8)f2).pos);
+				grund_t *gr2 = welt->lookup(fpl->eintrag[(uint8)f2].pos);
 				if(  gr2  &&  gr2->get_depot()  ) {
 					ok = true;
 					f2++;
@@ -328,7 +305,7 @@ void schedule_t::add_return_way()
 {
 	if(  eintrag.get_count()<127  &&  eintrag.get_count()>1  ) {
 		for(  uint8 maxi=eintrag.get_count()-2;  maxi>0;  maxi--  ) {
-			eintrag.append(eintrag.get(maxi));
+			eintrag.append(eintrag[maxi]);
 		}
 	}
 }
@@ -338,8 +315,8 @@ void schedule_t::add_return_way()
 void schedule_t::sprintf_schedule( cbuffer_t &buf ) const
 {
 	buf.printf("%u|%d|", aktuell, (int)get_type());
-	for(  uint8 i = 0;  i<eintrag.get_count();  i++  ) {
-		buf.printf( "%s,%i,%i|", eintrag.get(i).pos.get_str(), (int)eintrag.get(i).ladegrad, (int)eintrag.get(i).waiting_time_shift );
+	FOR(minivec_tpl<linieneintrag_t>, const& i, eintrag) {
+		buf.printf("%s,%i,%i|", i.pos.get_str(), (int)i.ladegrad, (int)i.waiting_time_shift);
 	}
 }
 
@@ -395,15 +372,7 @@ bool schedule_t::sscanf_schedule( const char *ptr )
 			p++;
 		}
 		// ok, now we have a complete entry
-#ifndef _MSC_VER
-		struct linieneintrag_t stop = { koord3d(values[0],values[1],values[2]), values[3], values[4] };
-#else
-		struct linieneintrag_t stop;
-		stop.pos = koord3d(values[0], values[1], (sint8)values[2]);
-		stop.ladegrad = (uint8)values[3];
-		stop.waiting_time_shift = (sint8)values[4];
-#endif
-		eintrag.append( stop );
+		eintrag.append(linieneintrag_t(koord3d(values[0], values[1], values[2]), values[3], values[4]));
 	}
 	return true;
 }

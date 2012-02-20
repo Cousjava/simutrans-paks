@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2003 Hj. Malthaner
+ * Copyright (c) 1997 - 2003 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -15,10 +15,7 @@
 #include "../besch/ware_besch.h"
 #include "../dataobj/translator.h"
 
-#include "../simunits.h"
 #include "../simcolor.h"
-#include "../simgraph.h"
-#include "../font.h"
 #include "../simworld.h"
 
 /**
@@ -81,19 +78,19 @@ goods_frame_t::goods_frame_t(karte_t *wl) :
 	speed_up.add_listener(this);
 	add_komponente(&speed_up);
 
-	y=BUTTON_HEIGHT+4+5*large_font_p->line_spacing;
+	y=BUTTON_HEIGHT+4+5*LINESPACE;
 
 	filter_goods_toggle.init(button_t::square_state, "Show only used", koord(BUTTON1_X, y));
 	filter_goods_toggle.set_tooltip(translator::translate("Only show goods which are currently handled by factories"));
 	filter_goods_toggle.add_listener(this);
 	filter_goods_toggle.pressed = filter_goods;
 	add_komponente(&filter_goods_toggle);
-	y += large_font_p->line_spacing+2;
+	y += LINESPACE+2;
 
 	sort_label.set_pos(koord(BUTTON1_X, y));
 	add_komponente(&sort_label);
 
-	y += large_font_p->line_spacing+1;
+	y += LINESPACE+1;
 
 	sortedby.init(button_t::roundbox, "", koord(BUTTON1_X, y), koord(BUTTON_WIDTH,BUTTON_HEIGHT));
 	sortedby.add_listener(this);
@@ -106,17 +103,17 @@ goods_frame_t::goods_frame_t(karte_t *wl) :
 	y += BUTTON_HEIGHT+2;
 
 	scrolly.set_pos(koord(1, y));
-	scrolly.set_scroll_amount_y(large_font_p->line_spacing+1);
+	scrolly.set_scroll_amount_y(LINESPACE+1);
 	add_komponente(&scrolly);
 
 	sort_list();
 
-	int h = (freight_builder_t::get_waren_anzahl()+1)*(large_font_p->line_spacing+1)+y;
+	int h = (warenbauer_t::get_waren_anzahl()+1)*(LINESPACE+1)+y;
 	if(h>450) {
-		h = y+27*(large_font_p->line_spacing+1)+TITLEBAR_HEIGHT+1;
+		h = y+27*(LINESPACE+1)+TITLEBAR_HEIGHT+1;
 	}
-	set_window_size(koord(TOTAL_WIDTH, h));
-	set_min_window_size(koord(TOTAL_WIDTH,3*(large_font_p->line_spacing+1)+TITLEBAR_HEIGHT+y+1));
+	set_fenstergroesse(koord(TOTAL_WIDTH, h));
+	set_min_windowsize(koord(TOTAL_WIDTH,3*(LINESPACE+1)+TITLEBAR_HEIGHT+y+1));
 
 	set_resizemode(vertical_resize);
 	resize (koord(0,0));
@@ -125,8 +122,8 @@ goods_frame_t::goods_frame_t(karte_t *wl) :
 
 bool goods_frame_t::compare_goods(uint16 const a, uint16 const b)
 {
-	freight_desc_t const* const w1 = freight_builder_t::get_info(a);
-	freight_desc_t const* const w2 = freight_builder_t::get_info(b);
+	ware_besch_t const* const w1 = warenbauer_t::get_info(a);
+	ware_besch_t const* const w2 = warenbauer_t::get_info(b);
 
 	int order = 0;
 
@@ -168,11 +165,11 @@ void goods_frame_t::sort_list()
 	sorteddir.set_text(sortreverse ? "hl_btn_sort_desc" : "hl_btn_sort_asc");
 
 	// Fetch the list of goods produced by the factories that exist in the current game
-	const vector_tpl<const freight_desc_t*> &goods_in_game = welt->get_goods_list();
+	const vector_tpl<const ware_besch_t*> &goods_in_game = welt->get_goods_list();
 
 	int n=0;
-	for(unsigned int i=0; i<freight_builder_t::get_waren_anzahl(); i++) {
-		const freight_desc_t * wtyp = freight_builder_t::get_info(i);
+	for(unsigned int i=0; i<warenbauer_t::get_waren_anzahl(); i++) {
+		const ware_besch_t * wtyp = warenbauer_t::get_info(i);
 
 		// Hajo: we skip goods that don't generate income
 		//       this should only be true for the special good 'None'
@@ -195,7 +192,7 @@ void goods_frame_t::sort_list()
 void goods_frame_t::resize(const koord delta)
 {
 	gui_frame_t::resize(delta);
-	koord groesse = get_window_size()-scrolly.get_pos()-koord(0,TITLEBAR_HEIGHT);
+	koord groesse = get_fenstergroesse()-scrolly.get_pos()-koord(0,TITLEBAR_HEIGHT);
 	scrolly.set_groesse(groesse);
 }
 
@@ -262,11 +259,11 @@ void goods_frame_t::zeichnen(koord pos, koord gr)
 		(welt->get_average_speed(maglev_wt)*relative_speed_change)/100,
 		(welt->get_average_speed(narrowgauge_wt)*relative_speed_change)/100
 	);
-	display_multiline_text(pos.x+11, pos.y+BUTTON_HEIGHT+4+3*large_font_p->line_spacing, speed_message, COL_WHITE);
+	display_multiline_text(pos.x+11, pos.y+BUTTON_HEIGHT+4+3*LINESPACE, speed_message, COL_WHITE);
 
 	speed_message.clear();
 	speed_message.printf(translator::translate("100 km/h = %i tiles/month"),
 		welt->speed_to_tiles_per_month(kmh_to_speed(100))
 	);
-	display_multiline_text(pos.x+11, pos.y+BUTTON_HEIGHT+4+5*large_font_p->line_spacing, speed_message, COL_WHITE);
+	display_multiline_text(pos.x+11, pos.y+BUTTON_HEIGHT+4+5*LINESPACE, speed_message, COL_WHITE);
 }

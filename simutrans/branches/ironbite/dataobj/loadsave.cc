@@ -37,24 +37,13 @@ bool loadsave_t::rd_open(const char *filename)
 {
 	close();
 
-	fprintf(stderr, "loadsave_t::rd_open : %s ... \n", filename);
-	fflush(stderr);
-
 	version = 0;
 	mode = zipped;
 	fp = fopen(filename, "rb");
 	if(  fp==NULL  ) {
 		// most likely not existing
-
-		fprintf(stderr, "loadsave_t::rd_open : file not found %s ... \n", filename);
-		fflush(stderr);
-
 		return false;
 	}
-
-	fprintf(stderr, "loadsave_t::rd_open : checking mode ... \n", filename);
-	fflush(stderr);
-
 	// now check for BZ2 format
 	char buf[80];
 	if(  fread( buf, 1, 80, fp )==80  ) {
@@ -65,10 +54,6 @@ bool loadsave_t::rd_open(const char *filename)
 	}
 
 	if(  mode==bzip2  ) {
-
-		fprintf(stderr, "loadsave_t::rd_open : reading bz2 ... \n", filename);
-		fflush(stderr);
-
 		bse = BZ_OK+1;
 		bzfp = NULL;
 		bzfp = BZ2_bzReadOpen( &bse, fp, 0, 0, NULL, 0 );
@@ -92,67 +77,30 @@ bool loadsave_t::rd_open(const char *filename)
 	}
 
 	if(  mode!=bzip2  ) {
-
-		fprintf(stderr, "loadsave_t::rd_open : reading zlib ... \n");
-		fflush(stderr);
-
 		fclose(fp);
 		// and now with zlib ...
-
-		fprintf(stderr, "loadsave_t::rd_open : gzopen %s ... \n", filename);
-		fflush(stderr);
-
 		fp = (FILE *)gzopen(filename, "rb");
 		if(fp==NULL) {
-			fprintf(stderr, "loadsave_t::rd_open : gzopen failed ... \n");
-			fflush(stderr);
 			return false;
 		}
-
-		fprintf(stderr, "loadsave_t::rd_open : gzgets prefix ... \n");
-		fflush(stderr);
-
 		gzgets(fp, buf, 80);
 	}
 	saving = false;
 
-	fprintf(stderr, "loadsave_t::rd_open : checking prefix ... \n");
-	fflush(stderr);
-
 	if(strncmp(buf, SAVEGAME_PREFIX, sizeof(SAVEGAME_PREFIX) - 1)) {
 		if(strncmp(buf, XML_SAVEGAME_PREFIX, sizeof(XML_SAVEGAME_PREFIX)-1)!=0) {
 			close();
-
-			fprintf(stderr, "loadsave_t::rd_open : prefix check failed ... \n");
-			fflush(stderr);
-
 			return false;
 		}
 		else {
-
 			mode |= xml;
-
-			fprintf(stderr, "loadsave_t::rd_open : skipping prolog ... \n");
-			fflush(stderr);
-
 			while(  lsgetc()!='<'  ) { /* nothing */ }
-
-			fprintf(stderr, "loadsave_t::rd_open : reading prefix ... \n");
-			fflush(stderr);
-
 			read( buf, sizeof(SAVEGAME_PREFIX) - 1 );
 			if(  strncmp(buf, SAVEGAME_PREFIX, sizeof(SAVEGAME_PREFIX) - 1)  ) {
 				close();
-
-				fprintf(stderr, "loadsave_t::rd_open : not simutrans xml ... \n");
-				fflush(stderr);
-
 				// not a simutrans XML file ...
 				return false;
 			}
-
-			fprintf(stderr, "loadsave_t::rd_open : reading version ... \n");
-			fflush(stderr);
 
 			read( buf, sizeof("version=\"")-1 );
 			char str[256];
@@ -167,9 +115,6 @@ bool loadsave_t::rd_open(const char *filename)
 			*s = 0;
 			int dummy;
 			version = int_version(str, &dummy, pak_extension);
-
-			fprintf(stderr, "loadsave_t::rd_open : reading pak ... \n");
-			fflush(stderr);
 
 			read( buf, sizeof(" pak=\"")-1 );
 			if (version>0) {

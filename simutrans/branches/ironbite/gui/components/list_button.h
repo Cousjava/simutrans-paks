@@ -8,14 +8,6 @@
 #ifndef list_button_h
 #define list_button_h
 
-#define BUTTON_WIDTH (92)
-#define BUTTON_WIDE_WIDTH (104)
-#define BUTTON_WIDER_WIDTH (116)
-
-#define BUTTON_HEIGHT (14)
-
-#define BUTTON_SPACER (2)
-
 #define BUTTON1_X (2)
 #define BUTTON2_X (2+1*(BUTTON_WIDTH+BUTTON_SPACER))
 #define BUTTON3_X (2+2*(BUTTON_WIDTH+BUTTON_SPACER))

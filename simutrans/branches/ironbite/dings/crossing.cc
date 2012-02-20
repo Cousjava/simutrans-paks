@@ -14,7 +14,6 @@
 #include "../simsound.h"
 
 #include "../besch/kreuzung_besch.h"
-#include "../besch/weg_besch.h"
 
 #include "../boden/grund.h"
 #include "../boden/wege/weg.h"

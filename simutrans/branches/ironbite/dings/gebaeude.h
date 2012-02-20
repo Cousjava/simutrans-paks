@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -17,7 +17,7 @@ class fabrik_t;
 class stadt_t;
 
 /**
- * Asynchron oder synchron animierte Gebaeude fï¿½r Simutrans.
+ * Asynchron oder synchron animierte Gebaeude für Simutrans.
  * @author Hj. Malthaner
  */
 class gebaeude_t : public ding_t, sync_steppable
@@ -110,9 +110,9 @@ public:
 	void set_stadt(stadt_t *s);
 
 	/**
-	 * Ein Gebaeude kann zu einer Fabrik gehï¿½ren.
-	 * @return Einen Zeiger auf die Fabrik zu der das Objekt gehï¿½rt oder NULL,
-	 * wenn das Objekt zu keiner Fabrik gehï¿½rt.
+	 * Ein Gebaeude kann zu einer Fabrik gehören.
+	 * @return Einen Zeiger auf die Fabrik zu der das Objekt gehört oder NULL,
+	 * wenn das Objekt zu keiner Fabrik gehört.
 	 * @author Hj. Malthaner
 	 */
 	fabrik_t* get_fabrik() const { return is_factory ? ptr.fab : NULL; }
@@ -152,7 +152,7 @@ public:
 	bool is_monument() const;
 
 	/**
-	 * @return Einen Beschreibungsstring fï¿½r das Objekt, der z.B. in einem
+	 * @return Einen Beschreibungsstring für das Objekt, der z.B. in einem
 	 * Beobachtungsfenster angezeigt wird.
 	 * @author Hj. Malthaner
 	 */
@@ -161,7 +161,7 @@ public:
 	void rdwr(loadsave_t *file);
 
 	/**
-	 * Methode fï¿½r Echtzeitfunktionen eines Objekts. Spielt animation.
+	 * Methode für Echtzeitfunktionen eines Objekts. Spielt animation.
 	 * @return true
 	 * @author Hj. Malthaner
 	 */

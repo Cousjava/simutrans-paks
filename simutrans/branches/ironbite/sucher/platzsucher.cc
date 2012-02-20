@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  * (see license.txt)
@@ -212,7 +212,6 @@ koord platzsucher_t::suche_platz(koord start, sint16 b, sint16 h, climate_bits c
 
 	this->b = b;
 	this->h = h;
-	this->cl = cl;
 
 	koord rel1, rel2;
 

@@ -254,6 +254,7 @@ SOURCES += gui/components/gui_label.cc
 SOURCES += gui/components/gui_numberinput.cc
 SOURCES += gui/components/gui_scrollbar.cc
 SOURCES += gui/components/gui_scrolled_list.cc
+SOURCES += gui/components/gui_scrolled_item.cc
 SOURCES += gui/components/gui_scrollpane.cc
 SOURCES += gui/components/gui_speedbar.cc
 SOURCES += gui/components/gui_tab_panel.cc

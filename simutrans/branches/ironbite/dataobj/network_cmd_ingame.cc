@@ -199,8 +199,8 @@ bool nwc_ready_t::execute(karte_t *welt)
 			return true;
 		}
 		// check the validity of the map counter
-		for(  uint32 i=0;  i<all_map_counters.get_count();  ++i  ) {
-			if(  all_map_counters.get(i)==map_counter  ) {
+		FOR(vector_tpl<uint32>, const i, all_map_counters) {
+			if (i == map_counter) {
 				// unpause the sender by sending nwc_ready_t back
 				nwc_ready_t nwc(sync_step, map_counter, checklist);
 				if(  !nwc.send( get_sender())  ) {
@@ -318,7 +318,7 @@ void nwc_auth_player_t::init_player_lock_server(karte_t *welt)
 	uint16 player_unlocked = 0;
 	for(uint8 i=0; i<PLAYER_UNOWNED; i++) {
 		// player not activated or password matches stores password
-		if (welt->get_spieler(i) == NULL  ||  welt->get_spieler(i)->access_password_hash() == *welt->get_player_password_hash(i) ) {
+		if (welt->get_spieler(i) == NULL  ||  welt->get_spieler(i)->access_password_hash() == welt->get_player_password_hash(i) ) {
 			player_unlocked |= 1<<i;
 		}
 	}
@@ -751,6 +751,34 @@ bool nwc_tool_t::cmp_default_param(const char *d1, const char *d2)
 }
 
 
+nwc_tool_t::tool_node_t::~tool_node_t()
+{
+	delete wkz;
+}
+
+
+nwc_tool_t::tool_node_t& nwc_tool_t::tool_node_t::operator=(const tool_node_t& other)
+{
+	set_default_param( other.get_default_param() );
+	if (other.wkz) {
+		wkz = create_tool(other.wkz->get_id());
+		wkz->set_default_param(default_param);
+	}
+	else {
+		wkz = NULL;
+	}
+	client_id = other.client_id;
+	player_id = other.player_id;
+	return *this;
+}
+
+
+nwc_tool_t::tool_node_t::tool_node_t(const tool_node_t& other)
+{
+	*this = other;
+}
+
+
 void nwc_tool_t::tool_node_t::set_tool(werkzeug_t *wkz_) {
 	if (wkz == wkz_) {
 		return;
@@ -813,7 +841,7 @@ void nwc_tool_t::do_command(karte_t *welt)
 			index = tool_list.get_count()-1;
 		}
 		// this node stores the tool and its default_param
-		tool_node = &(tool_list.at(index));
+		tool_node = &(tool_list[index]);
 
 		wkz = tool_node->get_tool();
 		// create a new tool if necessary
@@ -870,11 +898,11 @@ extern address_list_t blacklist;
 
 bool nwc_service_t::execute(karte_t *welt)
 {
-	const long time = system_time();
+	const long time = dr_time();
 	while(exec_time.get_count() <= SRVC_MAX) {
 		exec_time.append(time - 60000);
 	}
-	if (flag>=SRVC_MAX  ||  time - exec_time.get(flag) < 60000  ||  !umgebung_t::server) {
+	if (flag>=SRVC_MAX  ||  time - exec_time[flag] < 60000  ||  !umgebung_t::server) {
 		// wrong flag, last execution less than 1min ago, no server
 		return true;  // to delete
 	}

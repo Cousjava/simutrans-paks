@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2003 Hj. Malthaner
+ * Copyright (c) 1997 - 2003 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -72,8 +72,8 @@ void citylist_stats_t::sort(citylist::sort_mode_t sb, bool sr)
 	city_list.clear();
 	city_list.resize(cities.get_count());
 
-	for (weighted_vector_tpl<stadt_t*>::const_iterator i = cities.begin(), end = cities.end(); i != end; ++i) {
-		city_list.insert_ordered(*i,compare_cities(sortby, sortreverse));
+	FOR(weighted_vector_tpl<stadt_t*>, const i, cities) {
+		city_list.insert_ordered(i, compare_cities(sortby, sortreverse));
 	}
 }
 
@@ -87,7 +87,7 @@ bool citylist_stats_t::infowin_event(const event_t * ev)
 		return false;
 	}
 
-	stadt_t* stadt = city_list.get(line);
+	stadt_t* stadt = city_list[line];
 	if(  ev->button_state>0  &&  ev->cx>0  &&  ev->cx<15  ) {
 		line_selected = line;
 	}
@@ -129,7 +129,7 @@ void citylist_stats_t::zeichnen(koord offset)
 	}
 
 	for (uint32 i = 0; i < city_list.get_count(); i++) {
-		const stadt_t* stadt = city_list.get(i);
+		const stadt_t* stadt = city_list[i];
 		sint32 bev = stadt->get_einwohner();
 		sint32 growth = stadt->get_wachstum();
 

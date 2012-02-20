@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -184,8 +184,8 @@ convoi_info_t::convoi_info_t(convoihandle_t cnv)
 
 	cnv->set_sortby( umgebung_t::default_sortmode );
 
-	set_window_size(koord(total_width, view.get_groesse().y+208+scrollbar_t::BAR_SIZE));
-	set_min_window_size(koord(total_width, view.get_groesse().y+131+scrollbar_t::BAR_SIZE));
+	set_fenstergroesse(koord(total_width, view.get_groesse().y+208+scrollbar_t::BAR_SIZE));
+	set_min_windowsize(koord(total_width, view.get_groesse().y+131+scrollbar_t::BAR_SIZE));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -201,7 +201,7 @@ convoi_info_t::~convoi_info_t()
 
 
 /**
- * komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
+ * komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
  * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
  * in dem die Komponente dargestellt wird.
  * @author Hj. Malthaner
@@ -328,10 +328,10 @@ void convoi_info_t::show_hide_statistics( bool show )
 {
 	toggler.pressed = show;
 	const koord offset = show ? koord(0, 155) : koord(0, -155);
-	set_min_window_size(get_min_window_size() + offset);
+	set_min_windowsize(get_min_windowsize() + offset);
 	scrolly.set_pos(scrolly.get_pos() + offset);
 	chart.set_visible(show);
-	set_window_size(get_window_size() + offset + koord(0,show?LINESPACE:-LINESPACE));
+	set_fenstergroesse(get_fenstergroesse() + offset + koord(0,show?LINESPACE:-LINESPACE));
 	resize(koord(0,0));
 	for(  int i = 0;  i < convoi_t::MAX_CONVOI_COST;  i++  ) {
 		filterButtons[i].set_visible(toggler.pressed);
@@ -404,12 +404,10 @@ DBG_MESSAGE("convoi_info_t::action_triggered()","convoi state %i => cannot chang
 			route_search_in_progress = true;
 
 			// iterate over all depots and try to find shortest route
-			slist_iterator_tpl<depot_t *> depot_iter(depot_t::get_depot_list());
 			route_t * shortest_route = new route_t();
 			route_t * route = new route_t();
 			koord3d home = koord3d(0,0,0);
-			while (depot_iter.next()) {
-				depot_t *depot = depot_iter.get_current();
+			FOR(slist_tpl<depot_t*>, const depot, depot_t::get_depot_list()) {
 				vehikel_t& v = *cnv->front();
 				if (depot->get_wegtyp()   != v.get_besch()->get_waytype() ||
 						depot->get_besitzer() != cnv->get_besitzer()) {
@@ -510,16 +508,16 @@ void convoi_info_t::rename_cnv()
  * Set window size and adjust component sizes and/or positions accordingly
  * @author Markus Weber
  */
-void convoi_info_t::set_window_size(koord groesse)
+void convoi_info_t::set_fenstergroesse(koord groesse)
 {
-	gui_frame_t::set_window_size(groesse);
+	gui_frame_t::set_fenstergroesse(groesse);
 
-	input.set_groesse(koord(get_window_size().x - 20, 13));
+	input.set_groesse(koord(get_fenstergroesse().x - 20, 13));
 
-	view.set_pos(koord(get_window_size().x - view.get_groesse().x - 10 , 21));
+	view.set_pos(koord(get_fenstergroesse().x - view.get_groesse().x - 10 , 21));
 	follow_button.set_pos(koord(view.get_pos().x, view.get_groesse().y + 21));
 
-	scrolly.set_groesse(get_client_window_size()-scrolly.get_pos());
+	scrolly.set_groesse(get_client_windowsize()-scrolly.get_pos());
 
 	const sint16 yoff = scrolly.get_pos().y-BUTTON_HEIGHT-3;
 	sort_button.set_pos(koord(BUTTON1_X,yoff));
@@ -554,7 +552,7 @@ void convoi_info_t::rdwr(loadsave_t *file)
 {
 	koord3d cnv_pos;
 	char name[128];
-	koord gr = get_window_size();
+	koord gr = get_fenstergroesse();
 	uint32 flags = 0;
 	bool stats = toggler.pressed;
 	sint32 xoff = scrolly.get_scroll_x();
@@ -593,9 +591,9 @@ void convoi_info_t::rdwr(loadsave_t *file)
 		}
 		// we might be unlucky, then search all convois for a convoi with this name
 		if(  !cnv.is_bound()  ) {
-			for (vector_tpl<convoihandle_t>::const_iterator i = welt->convoys().begin(), end = welt->convoys().end(); i != end; ++i) {
-				if(  strcmp( (*i)->get_name(),name)==0  ) {
-					cnv = *i;
+			FOR(vector_tpl<convoihandle_t>, const i, welt->convoys()) {
+				if (strcmp(i->get_name(), name) == 0) {
+					cnv = i;
 					break;
 				}
 			}
@@ -614,7 +612,7 @@ void convoi_info_t::rdwr(loadsave_t *file)
 		if(  stats  ) {
 			gr.y -= 170;
 		}
-		w->set_window_size( gr );
+		w->set_fenstergroesse( gr );
 		if(  file->get_version()<111001  ) {
 			for(  int i = 0;  i < 6;  i++  ) {
 				w->filterButtons[i].pressed = (flags>>i)&1;

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -18,10 +18,6 @@ bool tabfile_t::open(const char *filename)
 {
 	close();
 	file = fopen(filename, "rt");
-	
-	fprintf(stderr, "tabfile open %s result %p\n", filename, file);
-	fflush(stderr);
-	
 	return file != NULL;
 }
 
@@ -70,10 +66,9 @@ bool tabfileobj_t::put(const char *key, const char *value)
 
 void tabfileobj_t::clear()
 {
-	stringhashtable_iterator_tpl<const char *> iter(objinfo);
-	while(iter.next()) {
-		free(const_cast<char *>(iter.get_current_key()));
-		free(const_cast<char *>(iter.get_current_value()));
+	FOR(stringhashtable_tpl<char const*>, const& i, objinfo) {
+		free(const_cast<char*>(i.key));
+		free(const_cast<char*>(i.value));
 	}
 	objinfo.clear();
 }
@@ -154,7 +149,7 @@ int *tabfileobj_t::get_ints(const char *key)
 			count++;
 		}
 	}
-	// Ergebnisvektor erstellen und fï¿½llen
+	// Ergebnisvektor erstellen und füllen
 	result = new int[count + 1];
 
 	result[0] = count;
@@ -192,7 +187,7 @@ sint64 *tabfileobj_t::get_sint64s(const char *key)
 			count++;
 		}
 	}
-	// Ergebnisvektor erstellen und fï¿½llen
+	// Ergebnisvektor erstellen und füllen
 	result = new sint64[count + 1];
 
 	result[0] = count;
@@ -226,9 +221,6 @@ bool tabfile_t::read(tabfileobj_t &objinfo)
 		}
 	} while(!lines && !feof(file)); // skip empty objects
 
-	fprintf(stderr, "Reading done\n");
-	fflush(stderr);
-
 	return lines;
 }
 
@@ -249,9 +241,6 @@ bool tabfile_t::read_line(char *s, int size)
 			r[--l] = '\0';
 		}
 	}
-	
-	// fprintf(stderr, "Reading line %s, result %p\n", s, r);
-	
 	return r != NULL;
 }
 

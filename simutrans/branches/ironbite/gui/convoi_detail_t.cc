@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -59,8 +59,8 @@ convoi_detail_t::convoi_detail_t(convoihandle_t cnv)
 	scrolly.set_show_scroll_x(true);
 	add_komponente(&scrolly);
 
-	set_window_size(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+50+17*(LINESPACE+1)+scrollbar_t::BAR_SIZE-6));
-	set_min_window_size(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+50+3*(LINESPACE+1)+scrollbar_t::BAR_SIZE-3));
+	set_fenstergroesse(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+50+17*(LINESPACE+1)+scrollbar_t::BAR_SIZE-6));
+	set_min_windowsize(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+50+3*(LINESPACE+1)+scrollbar_t::BAR_SIZE-3));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -148,10 +148,10 @@ bool convoi_detail_t::action_triggered(gui_action_creator_t *komp,value_t /* */)
  * Set window size and adjust component sizes and/or positions accordingly
  * @author Markus Weber
  */
-void convoi_detail_t::set_window_size(koord groesse)
+void convoi_detail_t::set_fenstergroesse(koord groesse)
 {
-	gui_frame_t::set_window_size(groesse);
-	scrolly.set_groesse(get_client_window_size()-scrolly.get_pos());
+	gui_frame_t::set_fenstergroesse(groesse);
+	scrolly.set_groesse(get_client_windowsize()-scrolly.get_pos());
 }
 
 
@@ -169,7 +169,7 @@ void convoi_detail_t::rdwr(loadsave_t *file)
 {
 	koord3d cnv_pos;
 	char name[128];
-	koord gr = get_window_size();
+	koord gr = get_fenstergroesse();
 	sint32 xoff = scrolly.get_scroll_x();
 	sint32 yoff = scrolly.get_scroll_y();
 	if(  file->is_saving()  ) {
@@ -198,9 +198,9 @@ void convoi_detail_t::rdwr(loadsave_t *file)
 		}
 		// we might be unlucky, then search all convois for a convoi with this name
 		if(  !cnv.is_bound()  ) {
-			for (vector_tpl<convoihandle_t>::const_iterator i = welt->convoys().begin(), end = welt->convoys().end(); i != end; ++i) {
-				if(  strcmp( (*i)->get_name(),name)==0  ) {
-					cnv = *i;
+			FOR(vector_tpl<convoihandle_t>, const i, welt->convoys()) {
+				if (strcmp(i->get_name(), name) == 0) {
+					cnv = i;
 					break;
 				}
 			}
@@ -216,7 +216,7 @@ void convoi_detail_t::rdwr(loadsave_t *file)
 		KOORD_VAL ypos = win_get_posy( this );
 		convoi_detail_t *w = new convoi_detail_t(cnv);
 		create_win( xpos, ypos, w, w_info, magic_convoi_detail+cnv.get_id() );
-		w->set_window_size( gr );
+		w->set_fenstergroesse( gr );
 		w->scrolly.set_scroll_position( xoff, yoff );
 		// we must invalidate halthandle
 		cnv = convoihandle_t();
@@ -259,7 +259,7 @@ void gui_vehicleinfo_t::zeichnen(koord offset)
 			freight_info.clear();
 
 			// first image
-			int x, y, w, h;
+			KOORD_VAL x, y, w, h;
 			const image_id bild=v->get_basis_bild();
 			display_get_base_image_offset(bild, &x, &y, &w, &h );
 			display_base_img(bild,11-x+pos.x+offset.x,pos.y+offset.y+total_height-y-LINESPACE+2,cnv->get_besitzer()->get_player_nr(),false,true);
@@ -312,7 +312,7 @@ void gui_vehicleinfo_t::zeichnen(koord offset)
 				display_proportional_clip( pos.x+w+offset.x+len, pos.y+offset.y+total_height+extra_y, number, ALIGN_LEFT, price>0?MONEY_PLUS:MONEY_MINUS, true );
 				extra_y += LINESPACE;
 
-				freight_desc_t const& g    = *v->get_fracht_typ();
+				ware_besch_t const& g    = *v->get_fracht_typ();
 				char const*  const  name = translator::translate(g.get_catg() == 0 ? g.get_name() : g.get_catg_name());
 				freight_info.printf("%u/%u%s %s\n", v->get_fracht_menge(), v->get_fracht_max(), translator::translate(v->get_fracht_mass()), name);
 				v->get_fracht_info(freight_info);

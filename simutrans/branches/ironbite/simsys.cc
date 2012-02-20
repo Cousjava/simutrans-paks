@@ -11,7 +11,7 @@
 #	define WIN32_LEAN_AND_MEAN
 #	include <direct.h>
 #	include <windows.h>
-#	define PATH_MAX MAX_PATH
+// #	define PATH_MAX MAX_PATH
 #else
 #	include <limits.h>
 #	if !defined __AMIGA__ && !defined __BEOS__
@@ -23,7 +23,7 @@
 struct sys_event sys_event;
 
 
-void system_mkdir(char const* const path)
+void dr_mkdir(char const* const path)
 {
 #ifdef _WIN32
 	mkdir(path);
@@ -33,7 +33,7 @@ void system_mkdir(char const* const path)
 }
 
 
-char const* system_user_home_dir()
+char const* dr_query_homedir()
 {
 	static char buffer[PATH_MAX];
 
@@ -50,7 +50,7 @@ char const* system_user_home_dir()
 	sprintf(buffer, "%s/simutrans", getenv("HOME"));
 #endif
 
-	system_mkdir(buffer);
+	dr_mkdir(buffer);
 
 	// create other subdirectories
 #ifdef _WIN32
@@ -60,17 +60,17 @@ char const* system_user_home_dir()
 #endif
 	char b2[PATH_MAX];
 	sprintf(b2, "%smaps", buffer);
-	system_mkdir(b2);
+	dr_mkdir(b2);
 	sprintf(b2, "%ssave", buffer);
-	system_mkdir(b2);
+	dr_mkdir(b2);
 	sprintf(b2, "%sscreenshot", buffer);
-	system_mkdir(b2);
+	dr_mkdir(b2);
 
 	return buffer;
 }
 
 
-void system_fatal_notify(char const* const msg)
+void dr_fatal_notify(char const* const msg)
 {
 #ifdef _WIN32
 	MessageBoxA(0, msg, "Fatal Error", MB_ICONEXCLAMATION);
@@ -80,7 +80,7 @@ void system_fatal_notify(char const* const msg)
 }
 
 
-int system_main(int const argc, char** const argv)
+int sysmain(int const argc, char** const argv)
 {
 #ifdef _WIN32
 	char pathname[1024];

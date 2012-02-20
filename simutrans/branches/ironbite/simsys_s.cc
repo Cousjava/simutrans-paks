@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  */
@@ -93,7 +93,7 @@ static SDL_Cursor* hourglass;
  * Schnittstelle untergebracht
  * -> init,open,close
  */
-bool system_init(const int* parameter)
+bool dr_os_init(const int* parameter)
 {
 	if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_NOPARACHUTE) != 0) {
 		fprintf(stderr, "Couldn't initialize SDL: %s\n", SDL_GetError());
@@ -111,7 +111,7 @@ bool system_init(const int* parameter)
 }
 
 
-resolution system_query_screen_resolution()
+resolution dr_query_screen_resolution()
 {
 	resolution res;
 #if SDL_VERSION_ATLEAST(1, 2, 10)
@@ -137,7 +137,7 @@ resolution system_query_screen_resolution()
 
 
 // open the window
-int system_open(int w, int const h, int const fullscreen)
+int dr_os_open(int w, int const h, int const fullscreen)
 {
 	Uint32 flags = sync_blit ? 0 : SDL_ASYNCBLIT;
 
@@ -170,7 +170,7 @@ int system_open(int w, int const h, int const fullscreen)
 	else {
 		fprintf(stderr, "Screen Flags: requested=%x, actual=%x\n", flags, screen->flags);
 	}
-	DBG_MESSAGE("system_open(SDL)", "SDL realized screen size width=%d, height=%d (requested w=%d, h=%d)", screen->w, screen->h, w, h);
+	DBG_MESSAGE("dr_os_open(SDL)", "SDL realized screen size width=%d, height=%d (requested w=%d, h=%d)", screen->w, screen->h, w, h);
 
 	SDL_EnableUNICODE(true);
 	SDL_EnableKeyRepeat(SDL_DEFAULT_REPEAT_DELAY, SDL_DEFAULT_REPEAT_INTERVAL);
@@ -187,7 +187,7 @@ int system_open(int w, int const h, int const fullscreen)
 
 
 // shut down SDL
-void system_close(void)
+void dr_os_close()
 {
 	SDL_FreeCursor(hourglass);
 	// Hajo: SDL doc says, screen is free'd by SDL_Quit and should not be
@@ -235,7 +235,7 @@ int dr_textur_resize(unsigned short** const textur, int w, int const h)
 }
 
 
-unsigned short *system_init_framebuffer()
+unsigned short *dr_textur_init()
 {
 #ifdef USE_HW
 	SDL_LockSurface(screen);
@@ -249,35 +249,20 @@ unsigned short *system_init_framebuffer()
  * @return converted color value
  * @author Hj. Malthaner
  */
-unsigned int system_get_color(unsigned int r, unsigned int g, unsigned int b)
+unsigned int get_system_color(unsigned int r, unsigned int g, unsigned int b)
 {
 	return SDL_MapRGB(screen->format, (Uint8)r, (Uint8)g, (Uint8)b);
 }
 
 
-// unused?
-void system_set_colors(int first, int count, unsigned char* data)
-{
-	ALLOCA(SDL_Color, rgb, count);
-	int n;
-
-	for (n = 0; n < count; n++) {
-		rgb[n].r = *data++;
-		rgb[n].g = *data++;
-		rgb[n].b = *data++;
-	}
-
-	SDL_SetColors(screen, rgb, first, count);
-}
-
-
-void system_prepare_flush()
+void dr_prepare_flush()
 {
 	return;
 }
 
 
-void system_flush_framebuffer(void)
+
+void dr_flush(void)
 {
 	display_flush_buffer();
 #ifdef USE_HW
@@ -310,14 +295,14 @@ void dr_textur(int xp, int yp, int w, int h)
 
 
 // move cursor to the specified location
-void system_move_pointer(int x, int y)
+void move_pointer(int x, int y)
 {
 	SDL_WarpMouse((Uint16)x, (Uint16)y);
 }
 
 
 // set the mouse cursor (pointer/load)
-void system_set_pointer(int loading)
+void set_pointer(int loading)
 {
 	SDL_SetCursor(loading ? hourglass : arrow);
 }
@@ -329,10 +314,10 @@ void system_set_pointer(int loading)
  *         in case of error.
  * @author Hj. Malthaner
  */
-int system_screenshot(const char *filename)
+int dr_screenshot(const char *filename)
 {
 #ifdef WIN32
-	if(system_screenshot_png(filename, display_get_width(), height, width, ( unsigned short *)(screen->pixels), screen->format->BitsPerPixel)) {
+	if(dr_screenshot_png(filename, display_get_width(), height, width, ( unsigned short *)(screen->pixels), screen->format->BitsPerPixel)) {
 		return 1;
 	}
 #endif
@@ -364,7 +349,7 @@ static int conv_mouse_buttons(Uint8 const state)
 }
 
 
-static void internal_system_wait_event(bool const wait)
+static void internal_GetEvents(bool const wait)
 {
 	SDL_Event event;
 	event.type = 1;
@@ -489,7 +474,7 @@ static void internal_system_wait_event(bool const wait)
 					if (event.key.keysym.unicode != 0) {
 						code = event.key.keysym.unicode;
 						if (event.key.keysym.unicode == 22 /* ^V */) {
-#if 0	// disabled as internal buffer is used; code is retained for possible future implementation of system_clipboard_paste()
+#if 0	// disabled as internal buffer is used; code is retained for possible future implementation of dr_paste()
 							// X11 magic ... not tested yet!
 							SDL_SysWMinfo si;
 							if (SDL_GetWMInfo(&si) && si.subsystem == SDL_SYSWM_X11) {
@@ -556,22 +541,22 @@ static void internal_system_wait_event(bool const wait)
 }
 
 
-void system_wait_event(void)
+void GetEvents(void)
 {
-	internal_system_wait_event(true);
+	internal_GetEvents(true);
 }
 
 
-void system_poll_event(void)
+void GetEventsNoWait(void)
 {
 	sys_event.type = SIM_NOEVENT;
 	sys_event.code = 0;
 
-	internal_system_wait_event(false);
+	internal_GetEvents(false);
 }
 
 
-void system_show_pointer(int yesno)
+void show_pointer(int yesno)
 {
 	SDL_ShowCursor(yesno != 0);
 }
@@ -583,13 +568,13 @@ void ex_ord_update_mx_my()
 }
 
 
-unsigned long system_time(void)
+unsigned long dr_time(void)
 {
 	return SDL_GetTicks();
 }
 
 
-void system_sleep(uint32 usec)
+void dr_sleep(uint32 usec)
 {
 	SDL_Delay(usec);
 }
@@ -605,10 +590,5 @@ int main(int argc, char **argv)
 	int    const argc = __argc;
 	char** const argv = __argv;
 #endif
-	int result = system_main(argc, argv);
-
-	fprintf(stderr, "Returning with code %d ...\n", result);
-	fflush(stderr);
-	
-	return result;
+	return sysmain(argc, argv);
 }

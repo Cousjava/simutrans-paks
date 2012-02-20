@@ -5,18 +5,18 @@
 #include "dataobj/koord.h"
 #include "besch/ware_besch.h"
 
-class freight_builder_t;
+class warenbauer_t;
 class karte_t;
 class spieler_t;
 
 /** Eine Klasse zur Verwaltung von Informationen ueber Fracht und Waren */
-class freight_t
+class ware_t
 {
-	friend class freight_builder_t;
+	friend class warenbauer_t;
 
 private:
-	// private lookup table to speedup
-	static const freight_desc_t *index_to_besch[256];
+	// private lookup table to sppedup
+	static const ware_besch_t *index_to_besch[256];
 
 public:
 	uint32 index: 8;
@@ -37,13 +37,13 @@ private:
 	halthandle_t ziel;
 
 	/**
-	 * Koordinte des nï¿½chsten Zwischenstops
+	 * Koordinte des nächsten Zwischenstops
 	 * @author Hj. Malthaner
 	 */
 	halthandle_t zwischenziel;
 
 	/**
-	 * die engï¿½ltige Zielposition,
+	 * die engültige Zielposition,
 	 * das ist i.a. nicht die Zielhaltestellenposition
 	 * @author Hj. Malthaner
 	 */
@@ -60,12 +60,12 @@ public:
 	koord get_zielpos() const { return zielpos; }
 	void set_zielpos(const koord zielpos) { this->zielpos = zielpos; }
 
-	freight_t();
-	freight_t(const freight_desc_t *typ);
-	freight_t(karte_t *welt,loadsave_t *file);
+	ware_t();
+	ware_t(const ware_besch_t *typ);
+	ware_t(karte_t *welt,loadsave_t *file);
 
 	/**
-	 * gibt den nicht-uebersetzten warennamen zurï¿½ck
+	 * gibt den nicht-uebersetzten warennamen zurück
 	 * @author Hj. Malthaner
 	 */
 	const char *get_name() const { return get_besch()->get_name(); }
@@ -74,8 +74,8 @@ public:
 	uint8 get_catg() const { return get_besch()->get_catg(); }
 	uint8 get_index() const { return index; }
 
-	const freight_desc_t* get_besch() const { return index_to_besch[index]; }
-	void set_besch(const freight_desc_t* type);
+	const ware_besch_t* get_besch() const { return index_to_besch[index]; }
+	void set_besch(const ware_besch_t* type);
 
 	void rdwr(karte_t *welt,loadsave_t *file);
 
@@ -86,7 +86,7 @@ public:
 	bool is_mail() const {  return index==1; }
 	bool is_freight() const {  return index>2; }
 
-	int operator==(const freight_t &w) {
+	int operator==(const ware_t &w) {
 		return index  == w.index  &&
 			menge == w.menge &&
 			to_factory == w.to_factory &&
@@ -95,11 +95,11 @@ public:
 			zielpos == w.zielpos;
 	}
 
-	int operator!=(const freight_t &w) { return !(*this == w); 	}
+	int operator!=(const ware_t &w) { return !(*this == w); 	}
 
 	// mail and passengers just care about target station
 	// freight needs to obey coordinates (since more than one factory might by connected!)
-	inline bool same_destination(const freight_t &w) const {
+	inline bool same_destination(const ware_t &w) const {
 		return index==w.get_index()  &&  ziel==w.get_ziel()  &&  to_factory==w.to_factory  &&  (!to_factory  ||  zielpos==w.get_zielpos());
 	}
 };

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2003 Hj. Malthaner
+ * Copyright (c) 1997 - 2003 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -82,19 +82,19 @@ public:
 
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.
-	 * @return den Dateinamen fï¿½r die Hilfe, oder NULL
+	 * @return den Dateinamen für die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	const char *get_help_file() const {return "industry_info.txt";}
+	const char *get_hilfe_datei() const {return "industry_info.txt";}
 
 	virtual bool has_min_sizer() const {return true;}
 
 	virtual koord3d get_weltpos() { return fab->get_pos(); }
 
-	virtual void set_window_size(koord groesse);
+	virtual void set_fenstergroesse(koord groesse);
 
 	/**
-	* komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
+	* komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
 	* das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
 	* in dem die Komponente dargestellt wird.
 	*

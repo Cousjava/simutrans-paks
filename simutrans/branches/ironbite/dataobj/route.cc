@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -50,7 +50,7 @@ void route_t::kopiere(const route_t *r)
 	route.clear();
 	route.resize(hops + 1);
 	for( unsigned int i=0;  i<=hops;  i++ ) {
-		route.append(r->route.get(i));
+		route.append(r->route[i]);
 	}
 }
 
@@ -130,7 +130,7 @@ bool route_t::node_in_use=false;
 /* find the route to an unknow location
  * @author prissi
  */
-bool route_t::find_route(karte_t *welt, const koord3d start, driver_t *fahr, const uint32 /*max_khm*/, uint8 start_dir, uint32 max_depth )
+bool route_t::find_route(karte_t *welt, const koord3d start, fahrer_t *fahr, const uint32 /*max_khm*/, uint8 start_dir, uint32 max_depth )
 {
 	bool ok = false;
 
@@ -185,8 +185,8 @@ bool route_t::find_route(karte_t *welt, const koord3d start, driver_t *fahr, con
 			INT_CHECK("route 161");
 		}
 
-		tmp = open.get(0);
-		open.remove_at(0);
+		tmp = open[0];
+		open.remove_at( 0 );
 
 		close.append(tmp);
 		gr = tmp->gr;
@@ -212,7 +212,7 @@ bool route_t::find_route(karte_t *welt, const koord3d start, driver_t *fahr, con
 
 				// already in open list?
 				for(  index=0;  index<open.get_count();  index++  ) {
-					if (open.get(index)->gr == to) {
+					if (open[index]->gr == to) {
 						break;
 					}
 				}
@@ -224,7 +224,7 @@ bool route_t::find_route(karte_t *welt, const koord3d start, driver_t *fahr, con
 
 				// already in closed list (i.e. all processed nodes)
 				for( index=0;  index<close.get_count();  index++  ) {
-					if (close.get(index)->gr == to) {
+					if (close[index]->gr == to) {
 						break;
 					}
 				}
@@ -296,7 +296,7 @@ ribi_t::ribi *get_next_dirs(const koord gr_pos, const koord ziel)
 
 
 
-bool route_t::intern_calc_route(karte_t *welt, const koord3d ziel, const koord3d start, driver_t *fahr, const sint32 max_speed, const uint32 max_cost)
+bool route_t::intern_calc_route(karte_t *welt, const koord3d ziel, const koord3d start, fahrer_t *fahr, const sint32 max_speed, const uint32 max_cost)
 {
 	bool ok = false;
 
@@ -430,7 +430,7 @@ bool route_t::intern_calc_route(karte_t *welt, const koord3d ziel, const koord3d
 					if(tmp->dir!=current_dir) {
 						new_g += 3;
 						if(tmp->parent->dir!=tmp->dir  &&  tmp->parent->parent!=NULL) {
-							// discourage 90ï¿½ turns
+							// discourage 90° turns
 							new_g += 10;
 						}
 						else if(ribi_t::ist_exakt_orthogonal(tmp->dir,current_dir)) {
@@ -498,9 +498,9 @@ bool route_t::intern_calc_route(karte_t *welt, const koord3d ziel, const koord3d
 /* searches route, uses intern_calc_route() for distance between stations
  * handles only driving in stations by itself
  * corrected 12/2005 for station search
- * @author Hj. Malthaner, prissi
+ * @author Hansjörg Malthaner, prissi
  */
-bool route_t::calc_route(karte_t *welt, const koord3d ziel, const koord3d start, driver_t *fahr, const sint32 max_khm, sint32 max_len )
+bool route_t::calc_route(karte_t *welt, const koord3d ziel, const koord3d start, fahrer_t *fahr, const sint32 max_khm, sint32 max_len )
 {
 	route.clear();
 
@@ -508,11 +508,11 @@ bool route_t::calc_route(karte_t *welt, const koord3d ziel, const koord3d start,
 
 #ifdef DEBUG_ROUTES
 	// profiling for routes ...
-	long ms=system_time();
+	long ms=dr_time();
 #endif
 	bool ok = intern_calc_route(welt, start, ziel, fahr, max_khm, 0xFFFFFFFFul );
 #ifdef DEBUG_ROUTES
-	if(fahr->get_waytype()==water_wt) {DBG_DEBUG("route_t::calc_route()","route from %d,%d to %d,%d with %i steps in %u ms found.",start.x, start.y, ziel.x, ziel.y, route.get_count()-1, system_time()-ms );}
+	if(fahr->get_waytype()==water_wt) {DBG_DEBUG("route_t::calc_route()","route from %d,%d to %d,%d with %i steps in %u ms found.",start.x, start.y, ziel.x, ziel.y, route.get_count()-1, dr_time()-ms );}
 #endif
 
 	INT_CHECK("route 343");
@@ -533,14 +533,14 @@ DBG_MESSAGE("route_t::calc_route()","No route from %d,%d to %d,%d found",start.x
 
 			// first: find out how many tiles I am already in the station
 			max_len--;
-			for(  sint32 i=route.get_count()-1;  i>=0  &&  max_len>0  &&  halt == haltestelle_t::get_halt( welt, route.get(i), NULL );  i--, max_len--  ) {
+			for(  sint32 i=route.get_count()-1;  i>=0  &&  max_len>0  &&  halt == haltestelle_t::get_halt( welt, route[i], NULL );  i--, max_len--  ) {
 			}
 
 			// and now go forward, if possible
 			if(  max_len>0  ) {
 
 				const uint32 max_n = route.get_count()-1;
-				const koord zv = route.get(max_n).get_2d() - route.get(max_n - 1).get_2d();
+				const koord zv = route[max_n].get_2d() - route[max_n - 1].get_2d();
 				const int ribi = ribi_typ(zv);//fahr->get_ribi(welt->lookup(start));
 
 				grund_t *gr = welt->lookup(start);
@@ -583,7 +583,7 @@ void route_t::rdwr(loadsave_t *file)
 	else {
 		// writing
 		for(sint32 i=0; i<=max_n; i++) {
-			route.at(i).rdwr(file);
+			route[i].rdwr(file);
 		}
 	}
 }

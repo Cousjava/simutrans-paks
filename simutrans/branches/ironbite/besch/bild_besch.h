@@ -1,5 +1,5 @@
 /*
- *  Copyright (c) 1997 - 2002 by Volker Meyer & Hj. Malthaner
+ *  Copyright (c) 1997 - 2002 by Volker Meyer & Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  */
@@ -26,7 +26,7 @@ struct bild_t {
 	sint16 h;
 	uint8 zoomable; // some image may not be zoomed i.e. icons
 	uint32 len;	// since the maximum size of a node is uint16!
-	image_id bild_nr;	// Speichern wir erstmal als Dummy mit, wird von display_register_image() ersetzt
+	image_id bild_nr;	// Speichern wir erstmal als Dummy mit, wird von register_image() ersetzt
 	uint16 data[];
 };
 
@@ -58,7 +58,7 @@ public:
 	 */
 	bild_besch_t* copy_rotate(const sint16 angle) const;
 
-	void display_register_image() { ::display_register_image(&pic); }
+	void register_image() { ::register_image(&pic); }
 
 	using obj_besch_t::operator new;
 

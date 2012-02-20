@@ -1,5 +1,5 @@
 /*
- *  Copyright (c) 1997 - 2002 by Volker Meyer & Hj. Malthaner
+ *  Copyright (c) 1997 - 2002 by Volker Meyer & Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  *
@@ -60,7 +60,7 @@ private:
 
 public:
 	/*
-	 * Nummerierung all der verschiedenen Schienstï¿½cke
+	 * Nummerierung all der verschiedenen Schienstücke
 	 */
 	enum img_t {
 		NS_Segment, OW_Segment, N_Start, S_Start, O_Start, W_Start, N_Rampe, S_Rampe, O_Rampe, W_Rampe, NS_Pillar, OW_Pillar

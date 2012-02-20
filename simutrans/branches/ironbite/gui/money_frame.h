@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -9,6 +9,7 @@
 #define money_frame_h
 
 #include "gui_frame.h"
+#include "gui_container.h"
 #include "components/action_listener.h"
 #include "components/gui_button.h"
 #include "components/gui_label.h"
@@ -112,10 +113,10 @@ private:
 public:
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.
-	 * @return den Dateinamen fï¿½r die Hilfe, oder NULL
+	 * @return den Dateinamen für die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	const char * get_help_file() const {return "finances.txt";}
+	const char * get_hilfe_datei() const {return "finances.txt";}
 
 	/**
 	 * Konstruktor. Erzeugt alle notwendigen Subkomponenten.
@@ -124,7 +125,7 @@ public:
 	money_frame_t(spieler_t *sp);
 
 	/**
-	 * komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
+	 * komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
 	 * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
 	 * in dem die Komponente dargestellt wird.
 	 * @author Hj. Malthaner

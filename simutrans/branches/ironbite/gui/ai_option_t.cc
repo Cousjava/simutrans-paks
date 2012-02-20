@@ -111,7 +111,7 @@ ai_option_t::ai_option_t( spieler_t *sp ) :
 		ypos += BUTTON_HEIGHT+2;
 	}
 
-	set_window_size( koord(140, 18+ypos) );
+	set_fenstergroesse( koord(140, 18+ypos) );
 }
 
 

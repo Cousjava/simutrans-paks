@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -281,7 +281,7 @@ void gebaeude_t::set_tile(const haus_tile_besch_t *new_tile)
 
 
 /**
- * Methode fï¿½r Echtzeitfunktionen eines Objekts.
+ * Methode für Echtzeitfunktionen eines Objekts.
  * @return false wenn Objekt aus der Liste der synchronen
  * Objekte entfernt werden sol
  * @author Hj. Malthaner
@@ -484,7 +484,7 @@ const char *gebaeude_t::get_name() const
 		case gewerbe:
 			break;//return "Gewerbehaus";
 		case industrie:
-			break;//return "Industriegebï¿½ude";
+			break;//return "Industriegebäude";
 		default:
 			switch(tile->get_besch()->get_utyp()) {
 				case haus_besch_t::attraction_city:   return "Besonderes Gebaeude";
@@ -542,9 +542,9 @@ gebaeude_t::typ gebaeude_t::get_haustyp() const
 
 void gebaeude_t::zeige_info()
 {
-	// Fï¿½r die Anzeige ist bei mehrteiliggen Gebï¿½uden immer
-	// das erste laut Layoutreihenfolge zustï¿½ndig.
-	// Sonst gibt es fï¿½r eine 2x2-Fabrik bis zu 4 Infofenster.
+	// Für die Anzeige ist bei mehrteiliggen Gebäuden immer
+	// das erste laut Layoutreihenfolge zuständig.
+	// Sonst gibt es für eine 2x2-Fabrik bis zu 4 Infofenster.
 	koord k = tile->get_offset();
 	if(k != koord(0, 0)) {
 		grund_t *gr = welt->lookup(get_pos() - k);
@@ -840,7 +840,7 @@ void gebaeude_t::rdwr(loadsave_t *file)
 		}
 		file->rdwr_long(city_index);
 		if(  file->is_loading()  &&  city_index!=-1  &&  (tile==NULL  ||  tile->get_besch()==NULL  ||  tile->get_besch()->is_connected_with_town())  ) {
-			ptr.stadt = welt->get_staedte().get(city_index);
+			ptr.stadt = welt->get_staedte()[city_index];
 		}
 	}
 
@@ -859,7 +859,7 @@ void gebaeude_t::rdwr(loadsave_t *file)
 
 
 /**
- * Wird nach dem Laden der Welt aufgerufen - ï¿½blicherweise benutzt
+ * Wird nach dem Laden der Welt aufgerufen - üblicherweise benutzt
  * um das Aussehen des Dings an Boden und Umgebung anzupassen
  *
  * @author Hj. Malthaner

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -10,15 +10,17 @@
 
 #include "../simdebug.h"
 
-#include "koord_3d_vector_t.h"
+#include "../dataobj/koord3d.h"
+#include "../dataobj/koord_3d_vector_t.h"
+
+#include "../tpl/vector_tpl.h"
 
 class karte_t;
-class driver_t;
+class fahrer_t;
 class grund_t;
-class loadsave_t;
 
 /**
- * Routen, zB fï¿½r Fahrzeuge
+ * Routen, zB für Fahrzeuge
  *
  * @author Hj. Malthaner
  * @date 15.01.00
@@ -30,7 +32,7 @@ private:
 	 * Die eigentliche Routensuche
 	 * @author Hj. Malthaner
 	 */
-	bool intern_calc_route(karte_t *w, koord3d start, koord3d ziel, driver_t *fahr, const sint32 max_kmh, const uint32 max_cost);
+	bool intern_calc_route(karte_t *w, koord3d start, koord3d ziel, fahrer_t *fahr, const sint32 max_kmh, const uint32 max_cost);
 
 	koord3d_vector_t route;           // Die Koordinaten fuer die Fahrtroute
 
@@ -83,7 +85,7 @@ public:
 	 * @return Koordinate an index n
 	 * @author Hj. Malthaner
 	 */
-	const koord3d& position_bei(const uint16 n) const { return route.get(n); }
+	const koord3d& position_bei(const uint16 n) const { return route[n]; }
 
 	koord3d const& front() const { return route.front(); }
 
@@ -106,13 +108,13 @@ public:
 	void append(const route_t *route);
 
 	/**
-	 * fï¿½gt k vorne in die route ein
+	 * fügt k vorne in die route ein
 	 * @author Hj. Malthaner
 	 */
 	void insert(koord3d k);
 
 	/**
-	 * fï¿½gt k hinten in die route ein
+	 * fügt k hinten in die route ein
 	 * @author prissi
 	 */
 	inline void append(koord3d k)
@@ -145,16 +147,16 @@ public:
 	* the max_depth is the maximum length of a route
 	* @author prissi
 	*/
-	bool find_route(karte_t *w, const koord3d start, driver_t *fahr, const uint32 max_khm, uint8 start_dir, uint32 max_depth );
+	bool find_route(karte_t *w, const koord3d start, fahrer_t *fahr, const uint32 max_khm, uint8 start_dir, uint32 max_depth );
 
 	/**
 	 * berechnet eine route von start nach ziel.
 	 * @author Hj. Malthaner
 	 */
-	bool calc_route(karte_t *welt, koord3d start, koord3d ziel, driver_t *fahr, const sint32 max_speed_kmh, sint32 max_tile_len );
+	bool calc_route(karte_t *welt, koord3d start, koord3d ziel, fahrer_t *fahr, const sint32 max_speed_kmh, sint32 max_tile_len );
 
 	/**
-	 * Lï¿½dt/speichert eine Route
+	 * Lädt/speichert eine Route
 	 * @author V. Meyer
 	 */
 	void rdwr(loadsave_t *file);

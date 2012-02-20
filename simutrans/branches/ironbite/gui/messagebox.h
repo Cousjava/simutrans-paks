@@ -11,19 +11,19 @@
 #include "../utils/cbuffer_t.h"
 
 /**
- * Eine Klasse fï¿½r Nachrichtenfenster.
+ * Eine Klasse für Nachrichtenfenster.
  * @author Hj. Malthaner
  */
 class news_window : public gui_frame_t
 {
 public:
-	virtual PLAYER_COLOR_VAL get_title_color() const { return color; }
+	virtual PLAYER_COLOR_VAL get_titelcolor() const { return color; }
 
 protected:
 	news_window(const char* text, PLAYER_COLOR_VAL color);
 
 	// Knightly : to extend the window with an extra component in the upper right corner
-	void extend_window_with_component(gui_component_t *const component, const koord size, const koord offset = koord(0,0));
+	void extend_window_with_component(gui_komponente_t *const component, const koord size, const koord offset = koord(0,0));
 
 private:
 	cbuffer_t buf;

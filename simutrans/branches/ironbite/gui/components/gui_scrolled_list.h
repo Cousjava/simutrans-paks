@@ -1,11 +1,12 @@
-#ifndef gui_scrolled_list_h
-#define gui_scrolled_list_h
+#ifndef gui_scrolled_list_t_h
+#define gui_scrolled_list_t_h
 
-#include "gui_scrollbar.h"
 #include "action_listener.h"
 #include "gui_action_creator.h"
-#include "../../simcolor.h"
-#include "../../utils/plainstring.h"
+
+class scrollitem_t;
+class scrollbar_t;
+template <class T> class slist_tpl;
 
 /**
  * Scrollable list.
@@ -20,49 +21,11 @@
 class gui_scrolled_list_t :
 	public gui_action_creator_t,
 	public action_listener_t,
-	public gui_component_t
+	public gui_komponente_t
 {
 public:
 	enum type { list, select };
 
-	/**
-	 * Container for list entries - consisting of text and color
-	 */
-	class scrollitem_t {
-	private:
-		COLOR_VAL color;
-	public:
-		scrollitem_t( COLOR_VAL col ) { color = col; }
-		virtual ~scrollitem_t() {}
-		virtual uint8 get_color() { return color; }
-		virtual void set_color(uint8 col) { color = col; }
-		virtual char const* get_text() const = 0;
-		virtual void set_text(char const*) = 0;
-		virtual bool is_valid() { return true; }	//  can be used to indicate invalid entries
-	};
-
-	// editable text
-	class var_text_scrollitem_t : public scrollitem_t {
-	private:
-		plainstring text;
-
-	public:
-		var_text_scrollitem_t(char const* const t, uint8 const col) : scrollitem_t(col), text(t) {}
-
-		char const* get_text() const OVERRIDE { return text; }
-
-		void set_text(char const *t) OVERRIDE { text = t; }
-	};
-
-	// only uses pointer, non-editable
-	class const_text_scrollitem_t : public scrollitem_t {
-	private:
-		const char *text;
-	public:
-		const_text_scrollitem_t( const char *t, uint8 col ) : scrollitem_t(col) { text = t; }
-		char const* get_text() const OVERRIDE { return text; }
-		void set_text(char const *) OVERRIDE {}
-	};
 
 private:
 	enum type type;
@@ -76,9 +39,9 @@ private:
 	 */
 	int highlight_color;
 
-	scrollbar_t sb;
+	scrollbar_t  * sb;
 
-	slist_tpl<gui_scrolled_list_t::scrollitem_t *> * item_list;
+	slist_tpl<scrollitem_t *> * item_list;
 	int total_vertical_size() const;
 
 public:
@@ -102,11 +65,11 @@ public:
 	 *  with recalculate_slider() to update the scrollbar properly. */
 	void clear_elements();
 	void append_element( scrollitem_t *item );
-	scrollitem_t *get_element(sint32 i) const;
+	scrollitem_t * get_element(sint32 i) const;
 
 	// set the first element to be shown in the list
-	sint32 get_sb_offset() { return sb.get_knob_offset(); }
-	void set_sb_offset( sint32 off ) { sb.set_knob_offset( off ); offset = sb.get_knob_offset(); }
+	sint32 get_sb_offset();
+	void set_sb_offset( sint32 off );
 
 	// resizes scrollbar
 	void adjust_scrollbar();

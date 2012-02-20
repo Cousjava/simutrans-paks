@@ -13,8 +13,9 @@
 #ifndef simworld_h
 #define simworld_h
 
+#include "simconst.h"
 #include "simtypes.h"
-#include "dataobj/koord3d.h"
+#include "simunits.h"
 
 #include "convoihandle_t.h"
 #include "halthandle_t.h"
@@ -25,6 +26,7 @@
 
 #include "dataobj/marker.h"
 #include "dataobj/einstellungen.h"
+#include "dataobj/pwd_hash.h"
 
 #include "simplan.h"
 
@@ -38,16 +40,16 @@ class gebaeude_t;
 class zeiger_t;
 class grund_t;
 class planquadrat_t;
-class map_display_t;
+class karte_ansicht_t;
 class sync_steppable;
 class werkzeug_t;
 class scenario_t;
 class message_t;
 class weg_besch_t;
 class network_world_command_t;
-class freight_desc_t;
+class ware_besch_t;
 class memory_rw_t;
-class pwd_hash_t;
+
 
 struct checklist_t
 {
@@ -219,7 +221,7 @@ private:
 	slist_tpl<fabrik_t *> fab_list;
 
 	// Stores a list of goods produced by factories currently in the game;
-	vector_tpl<const freight_desc_t*> goods_in_game;
+	vector_tpl<const ware_besch_t*> goods_in_game;
 
 	weighted_vector_tpl<gebaeude_t *> ausflugsziele;
 
@@ -253,7 +255,7 @@ private:
 	speed_record_t max_ship_speed;
 	speed_record_t max_air_speed;
 
-	map_display_t *view;
+	karte_ansicht_t *view;
 
 	/**
 	 * Raise tile (x,y): height of each corner is given
@@ -304,7 +306,7 @@ private:
 	 * locally store password hashes
 	 * will be used after reconnect to a server
 	 */
-	pwd_hash_t * player_password_hash[MAX_PLAYER_COUNT];
+	pwd_hash_t player_password_hash[MAX_PLAYER_COUNT];
 
 	/*
 	 * counter for schedules
@@ -478,8 +480,8 @@ public:
 	// recalcs all map images
 	void update_map();
 
-	map_display_t *get_ansicht() const { return view; }
-	void set_ansicht(map_display_t *v) { view = v; }
+	karte_ansicht_t *get_ansicht() const { return view; }
+	void set_ansicht(karte_ansicht_t *v) { view = v; }
 
 	/**
 	 * viewpoint in tile koordinates
@@ -556,7 +558,7 @@ public:
 	void switch_active_player(uint8 nr, bool silent);
 	const char *new_spieler( uint8 nr, uint8 type );
 	void store_player_password_hash( uint8 player_nr, const pwd_hash_t& hash );
-	const pwd_hash_t * get_player_password_hash( uint8 player_nr ) const { return player_password_hash[player_nr]; }
+	const pwd_hash_t& get_player_password_hash( uint8 player_nr ) const { return player_password_hash[player_nr]; }
 	void clear_player_password_hashes();
 
 	/**
@@ -617,9 +619,18 @@ public:
 	 *
 	 * @author neroden
 	 */
-	uint32 speed_to_tiles_per_month(uint32 speed) const;
+	uint32 speed_to_tiles_per_month(uint32 speed) const
+	{
+		const int left_shift = ticks_per_world_month_shift - YARDS_PER_TILE_SHIFT;
+		if (left_shift >= 0) {
+			return speed << left_shift;
+		} else {
+			const int right_shift = -left_shift;
+			// round to nearest
+			return (speed + (1<<(right_shift -1)) ) >> right_shift;
+		}
+	}
 
-	
 	sint32 get_time_multiplier() const { return time_multiplier; }
 	void change_time_multiplier( sint32 delta );
 
@@ -924,7 +935,7 @@ public:
 	const slist_tpl<fabrik_t*>& get_fab_list() const { return fab_list; }
 
 	// Returns a list of goods produced by factories that exist in current game
-	const vector_tpl<const freight_desc_t*> &get_goods_list();
+	const vector_tpl<const ware_besch_t*> &get_goods_list();
 
 	/**
 	 * sucht naechstgelegene Stadt an Position i,j
@@ -1004,9 +1015,10 @@ public:
 	 * Spielt den Sound, wenn die Position im sichtbaren Bereich liegt.
 	 * Spielt weiter entfernte Sounds leiser ab.
 	 * @param pos Position an der das Ereignis stattfand
+	 * @param idx Index of the sound
 	 * @author Hj. Malthaner
 	 */
-	bool play_sound_area_clipped(koord pos, sound_info info) const;
+	bool play_sound_area_clipped(koord pos, uint16 idx) const;
 
 	void mute_sound( bool state ) { is_sound = !state; }
 

@@ -1,5 +1,5 @@
 /*
- *  Copyright (c) 1997 - 2002 by Volker Meyer & Hj. Malthaner
+ *  Copyright (c) 1997 - 2002 by Volker Meyer & Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  */
@@ -109,7 +109,7 @@ public:
 		geschw = speed;
 	}
 
-	freight_desc_t const* get_ware() const { return get_child<freight_desc_t>(2); }
+	ware_besch_t const* get_ware() const { return get_child<ware_besch_t>(2); }
 
 	skin_besch_t const* get_rauch() const { return get_child<skin_besch_t>(3); }
 
@@ -122,7 +122,7 @@ public:
 	// beware, there are three class of vehicles
 	// vehicles with and without freight images, and vehicles with different freight images
 	// they can have 4 or 8 directions ...
-	image_id get_bild_nr(ribi_t::dir dir, const freight_desc_t *ware) const
+	image_id get_bild_nr(ribi_t::dir dir, const ware_besch_t *ware) const
 	{
 		const bild_besch_t *bild=0;
 		const bildliste_besch_t *liste=0;
@@ -133,7 +133,7 @@ public:
 			sint8 ware_index=0; // freight images: if not found use first freight
 
 			for( sint8 i=0;  i<freight_image_type;  i++  ) {
-				if (ware == get_child<freight_desc_t>(6 + nachfolger + vorgaenger + i)) {
+				if (ware == get_child<ware_besch_t>(6 + nachfolger + vorgaenger + i)) {
 					ware_index = i;
 					break;
 				}
@@ -176,7 +176,7 @@ public:
 
 	// Liefert die erlaubten Vorgaenger.
 	// liefert get_vorgaenger(0) == NULL, so bedeutet das entweder alle
-	// Vorgï¿½nger sind erlaubt oder keine. Um das zu unterscheiden, sollte man
+	// Vorgänger sind erlaubt oder keine. Um das zu unterscheiden, sollte man
 	// vorher hat_vorgaenger() befragen
 	const vehikel_besch_t *get_vorgaenger(int i) const
 	{

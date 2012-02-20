@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2002 Hj. Malthaner
+ * Copyright (c) 1997 - 2002 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -14,7 +14,7 @@
 
 
 /**
- * Signale fï¿½r die Bahnlinien.
+ * Signale für die Bahnlinien.
  *
  * @see blockstrecke_t
  * @see blockmanager
@@ -27,7 +27,7 @@ public:
 	signal_t(karte_t *welt, spieler_t *sp, koord3d pos, ribi_t::ribi dir,const roadsign_besch_t *besch) : roadsign_t(welt,sp,pos,dir,besch) { zustand = rot;}
 
 	/**
-	* @return Einen Beschreibungsstring fï¿½r das Objekt, der z.B. in einem
+	* @return Einen Beschreibungsstring für das Objekt, der z.B. in einem
 	* Beobachtungsfenster angezeigt wird.
 	* @author Hj. Malthaner
 	*/

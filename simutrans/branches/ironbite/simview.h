@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2001 Hj. Malthaner
+ * Copyright (c) 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  */
@@ -10,17 +10,17 @@
 class karte_t;
 
 /**
- * View-Klasse fï¿½r Weltmodell.
+ * View-Klasse für Weltmodell.
  *
  * @author Hj. Malthaner
  */
-class map_display_t
+class karte_ansicht_t
 {
 private:
 	karte_t *welt;
 
 public:
-	map_display_t(karte_t *welt);
+	karte_ansicht_t(karte_t *welt);
 	void display(bool dirty);
 };
 

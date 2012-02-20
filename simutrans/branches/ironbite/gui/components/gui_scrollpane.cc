@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  */
@@ -17,7 +17,7 @@
  * @param komp Die zu scrollende Komponente
  * @author Hj. Malthaner
  */
-gui_scrollpane_t::gui_scrollpane_t(gui_component_t *komp) :
+gui_scrollpane_t::gui_scrollpane_t(gui_komponente_t *komp) :
     scroll_x(scrollbar_t::horizontal),
     scroll_y(scrollbar_t::vertical)
 {
@@ -65,7 +65,7 @@ void gui_scrollpane_t::recalc_sliders(koord groesse)
  */
 void gui_scrollpane_t::set_groesse(koord groesse)
 {
-	gui_component_t::set_groesse(groesse);
+	gui_komponente_t::set_groesse(groesse);
 	recalc_sliders(groesse);
 }
 
@@ -104,9 +104,9 @@ bool gui_scrollpane_t::infowin_event(const event_t *ev)
 
 		// Knightly : check if we need to scroll to the focused component
 		if(  IS_LEFTCLICK(ev)  ||  (ev->ev_class==EVENT_KEYBOARD  &&  ev->ev_code==9)  ) {
-			const gui_component_t *const focused_komp = komp->get_focus();
+			const gui_komponente_t *const focused_komp = komp->get_focus();
 			if(  focused_komp  ) {
-				const koord komp_size = focused_komp->get_groesse();
+				const koord komp_size = focused_komp->groesse;
 				const koord relative_pos = komp->get_focus_pos();
 				if(  b_show_scroll_x  ) {
 					const sint32 knob_offset_x = scroll_x.get_knob_offset();

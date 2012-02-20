@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -55,7 +55,7 @@ void sve_info_t::rdwr(loadsave_t *file)
 
 /**
  * Aktion, die nach Knopfdruck gestartet wird.
- * @author Hj. Malthaner
+ * @author Hansjörg Malthaner
  */
 void loadsave_frame_t::action(const char *filename)
 {
@@ -77,7 +77,7 @@ bool loadsave_frame_t::del_action(const char *filename)
 }
 
 
-loadsave_frame_t::loadsave_frame_t(karte_t *welt, bool do_load) : savegame_frame_t(".sve", NULL, false)
+loadsave_frame_t::loadsave_frame_t(karte_t *welt, bool do_load) : savegame_frame_t(".sve",NULL)
 {
 	this->welt = welt;
 	this->do_load = do_load;
@@ -125,10 +125,10 @@ loadsave_frame_t::loadsave_frame_t(karte_t *welt, bool do_load) : savegame_frame
 
 /**
  * Manche Fenster haben einen Hilfetext assoziiert.
- * @return den Dateinamen fï¿½r die Hilfe, oder NULL
+ * @return den Dateinamen für die Hilfe, oder NULL
  * @author Hj. Malthaner
  */
-const char * loadsave_frame_t::get_help_file() const
+const char * loadsave_frame_t::get_hilfe_datei() const
 {
 	return do_load ? "load.txt" : "save.txt";
 }
@@ -197,14 +197,13 @@ loadsave_frame_t::~loadsave_frame_t()
 	file.wr_open(cache_file, loadsave_t::xml, "cache", SAVEGAME_VER_NR);
 	const char *text="Automatically generated file. Do not edit. An invalid file may crash the game. Deleting is allowed though.";
 	file.rdwr_str(text);
-	stringhashtable_iterator_tpl<sve_info_t *> iterator(cached_info);
-	while(  iterator.next()  ) {
+	FOR(stringhashtable_tpl<sve_info_t*>, const& i, cached_info) {
 		// save only existing files
-		if (iterator.get_current_value()->file_exists) {
+		if (i.value->file_exists) {
 			xml_tag_t t(&file, "save_game_info");
-			const char *filename = iterator.get_current_key();
+			char const* filename = i.key;
 			file.rdwr_str(filename);
-			iterator.access_current_value()->rdwr(&file);
+			i.value->rdwr(&file);
 		}
 	}
 	// mark end with empty entry

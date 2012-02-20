@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2003 Hj. Malthaner
+ * Copyright (c) 1997 - 2003 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -17,12 +17,14 @@
 #include "../dataobj/translator.h"
 #include "../utils/cbuffer_t.h"
 #include "../utils/simstring.h"
+
+#include "components/gui_button.h"
 #include "components/list_button.h"
 
 
 goods_stats_t::goods_stats_t()
 {
-	set_groesse(koord(BUTTON4_X+BUTTON_WIDTH+2,(freight_builder_t::get_waren_anzahl()-1)*(LINESPACE+1)));
+	set_groesse(koord(BUTTON4_X+BUTTON_WIDTH+2,(warenbauer_t::get_waren_anzahl()-1)*(LINESPACE+1)));
 }
 
 
@@ -46,7 +48,7 @@ void goods_stats_t::zeichnen(koord offset)
 	cbuffer_t buf;
 
 	for(  uint16 i=0;  i<listed_goods;  i++  ) {
-		const freight_desc_t * wtyp = freight_builder_t::get_info(goodslist[i]);
+		const ware_besch_t * wtyp = warenbauer_t::get_info(goodslist[i]);
 
 		display_ddd_box_clip(offset.x + 2, yoff, 8, 8, MN_GREY0, MN_GREY4);
 		display_fillbox_wh_clip(offset.x + 3, yoff+1, 6, 6, wtyp->get_color(), true);

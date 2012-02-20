@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -16,7 +16,7 @@
 #include "../player/simplay.h"
 #include "../utils/simstring.h"
 #include "../utils/cbuffer_t.h"
-#include "../boden/grund.h"
+
 
 
 karte_t *label_info_t::welt = NULL;
@@ -59,7 +59,7 @@ label_info_t::label_info_t(karte_t *welt, label_t* l) :
 	add_komponente(&player_name);
 
 	set_focus(&input);
-	set_window_size(koord(min_width, view.get_groesse().y+47));
+	set_fenstergroesse(koord(min_width, view.get_groesse().y+47));
 }
 
 

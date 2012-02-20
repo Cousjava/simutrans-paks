@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2002 Hj. Malthaner
+ * Copyright (c) 1997 - 2002 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -12,7 +12,7 @@
 #include "../dataobj/koord3d.h"
 
 class haus_besch_t;
-class freight_desc_t;
+class ware_besch_t;
 class fabrik_besch_t;
 class stadt_t;
 class karte_t;
@@ -27,23 +27,6 @@ class fabrik_t;
 class fabrikbauer_t
 {
 private:
-	/**
-	* Diese Klasse wird in verteile_industrie benï¿½tigt.
-	* Sie dient dazu, daï¿½  wir uns merken, bei welcher
-	* Stadt schon welche Endfabrike gebaut wurde.
-	* @author V. Meyer
-	*/
-	struct stadt_fabrik_t {
-		const stadt_t	    *stadt;
-		const fabrik_besch_t   *info;
-
-		int operator != (const stadt_fabrik_t &x) const {
-			return stadt != x.stadt || info != x.info;
-		}
-		int operator == (const stadt_fabrik_t &x) const {
-			return !(*this != x);
-		}
-	};
 
 	// nedded for crossconnections checks
 	class fabs_to_crossconnect_t {
@@ -59,8 +42,8 @@ private:
 
 	static stringhashtable_tpl<const fabrik_besch_t *> table;
 
-	static int finde_anzahl_hersteller(const freight_desc_t *ware, uint16 timeline);
-	static const fabrik_besch_t * finde_hersteller(const freight_desc_t *ware, uint16 timeline);
+	static int finde_anzahl_hersteller(const ware_besch_t *ware, uint16 timeline);
+	static const fabrik_besch_t * finde_hersteller(const ware_besch_t *ware, uint16 timeline);
 
 public:
 	static void register_besch(fabrik_besch_t *besch);
@@ -68,7 +51,7 @@ public:
 
 	/**
 	 * Teilt dem Hausbauer mit, dass eine neue Karte geladen oder generiert wird.
-	 * In diesem Fall mï¿½ssen wir die Liste der Fabrikpositionen neu initialisieren
+	 * In diesem Fall müssen wir die Liste der Fabrikpositionen neu initialisieren
 	 * @author V. Meyer
 	 */
 	static void neue_karte( karte_t * );
@@ -98,7 +81,7 @@ public:
 	static fabrik_t* baue_fabrik(karte_t* welt, koord3d* parent, const fabrik_besch_t* info, int rotate, koord3d pos, spieler_t* spieler);
 
 	/**
-	 * vorbedingung: pos ist fï¿½r fabrikbau geeignet
+	 * vorbedingung: pos ist für fabrikbau geeignet
 	 / number of chains is the maximum number of waren types for which suppliers chains are built
 	 * @return: Anzahl gebauter Fabriken
 	 * @author Hj.Malthaner

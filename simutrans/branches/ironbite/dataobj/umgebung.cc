@@ -216,13 +216,7 @@ void umgebung_t::init()
 // save/restore environment
 void umgebung_t::rdwr(loadsave_t *file)
 {
-	fprintf(stderr, "umgebung_t::rdrw xml tag ... \n");
-	fflush(stderr);
-
 	xml_tag_t u( file, "umgebung_t" );
-
-	fprintf(stderr, "umgebung_t::rdrw xml tag done ... \n");
-	fflush(stderr);
 
 	file->rdwr_short( scroll_multi );
 	file->rdwr_bool( night_shift );
@@ -269,9 +263,6 @@ void umgebung_t::rdwr(loadsave_t *file)
 
 	file->rdwr_byte( verbose_debug );
 
-	fprintf(stderr, "umgebung_t::rdrw 7 ... \n");
-	fflush(stderr);
-
 	file->rdwr_long( intercity_road_length );
 	if(  file->get_version()<=102002  ) {
 		bool no_tree = false;
@@ -279,9 +270,6 @@ void umgebung_t::rdwr(loadsave_t *file)
 	}
 	file->rdwr_long( ground_object_probability );
 	file->rdwr_long( moving_object_probability );
-
-	fprintf(stderr, "umgebung_t::rdrw 6... \n");
-	fflush(stderr);
 
 	if(  file->is_loading()  ) {
 		// these three bytes will be lost ...
@@ -299,16 +287,10 @@ void umgebung_t::rdwr(loadsave_t *file)
 	file->rdwr_bool( mute_midi );
 	file->rdwr_bool( shuffle_midi );
 
-	fprintf(stderr, "umgebung_t::rdrw 5 ... \n");
-	fflush(stderr);
-
 	if(  file->get_version()>102001  ) {
 		file->rdwr_byte( show_vehicle_states );
 		file->rdwr_bool( left_to_right_graphs );
 	}
-
-	fprintf(stderr, "umgebung_t::rdrw 4 ... \n");
-	fflush(stderr);
 
 	if(  file->get_version()>=102003  ) {
 		file->rdwr_long( tooltip_delay );
@@ -318,9 +300,6 @@ void umgebung_t::rdwr(loadsave_t *file)
 		file->rdwr_byte( bottom_window_bar_color );
 		file->rdwr_byte( bottom_window_text_color );
 	}
-
-	fprintf(stderr, "umgebung_t::rdrw 3 ... \n");
-	fflush(stderr);
 
 	if(  file->get_version()>=110000  ) {
 		file->rdwr_bool( add_player_name_to_message );
@@ -335,22 +314,13 @@ void umgebung_t::rdwr(loadsave_t *file)
 
 	}
 
-	fprintf(stderr, "umgebung_t::rdrw 2 ... \n");
-	fflush(stderr);
-
 	if(  file->get_version()>=111001  ) {
 		file->rdwr_bool( hide_under_cursor );
 		file->rdwr_short( cursor_hide_range );
 	}
 
-	fprintf(stderr, "umgebung_t::rdrw 1 ... \n");
-	fflush(stderr);
-
 	if(  file->get_version()>=111002  ) {
 		file->rdwr_bool( visualize_schedule );
 	}
 	// server settings are not saved, since the are server specific and could be different on different servers on the save computers
-
-	fprintf(stderr, "umgebung_t::rdrw done ... \n");
-	fflush(stderr);
 }

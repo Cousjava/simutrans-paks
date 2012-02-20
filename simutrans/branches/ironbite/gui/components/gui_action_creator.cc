@@ -26,8 +26,9 @@ gui_action_creator_t::~gui_action_creator_t()
  */
 void gui_action_creator_t::call_listeners(value_t v)
 {
-	slist_iterator_tpl<action_listener_t *> iter (listeners);
-	while (iter.next() && !iter.get_current()->action_triggered(this, v)) {}
+	FOR(slist_tpl<action_listener_t*>, const l, *listeners) {
+		if (l->action_triggered(this, v)) break;
+	}
 }
 
 /**

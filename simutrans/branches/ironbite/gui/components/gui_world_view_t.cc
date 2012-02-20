@@ -10,7 +10,8 @@
 #include "gui_world_view_t.h"
 #include "../../simworld.h"
 #include "../../simdings.h"
-#include "../../simevent.h"
+#include "../../simgraph.h"
+#include "../../simcolor.h"
 #include "../../vehicle/simvehikel.h"
 #include "../../boden/grund.h"
 #include "../../simdings.h"
@@ -65,7 +66,7 @@ void world_view_t::internal_draw(const koord offset, ding_t const* const ding)
 	if(ding) { // offsets?
 		fine_here = koord(tile_raster_scale_x(-ding->get_xoff(), raster), tile_raster_scale_y(-ding->get_yoff() % (OBJECT_OFFSET_STEPS * 2), raster));
 		y_offset  = ding->get_yoff() / (OBJECT_OFFSET_STEPS * 2);
-		if(vehicle_base_t const* const v = ding_cast<vehicle_base_t>(ding)) {
+		if(vehikel_basis_t const* const v = ding_cast<vehikel_basis_t>(ding)) {
 			int x = 0;
 			int y = 0;
 			v->get_screen_offset(x, y, raster);
@@ -117,12 +118,8 @@ void world_view_t::internal_draw(const koord offset, ding_t const* const ding)
 		gr.y     - raster;          // align the bottom of the image
 	const koord display_off = koord((gr.x - raster) / 2, hgt + yoff) + fine_here;
 
-	const vector_tpl<koord>::const_iterator  start = offsets.begin();
-	const vector_tpl<koord>::const_iterator  end   = offsets.end();
-
 	// display grounds
-	for(  vector_tpl<koord>::const_iterator i = start;  i != end;  ++i  ) {
-		koord  const& off   = *i;
+	FOR(vector_tpl<koord>, const& off, offsets) {
 		const koord   k     = here + off + koord(y_offset, y_offset);
 		const sint16  off_x = (off.x - off.y) * 32 * raster / 64 + display_off.x;
 
@@ -144,8 +141,7 @@ void world_view_t::internal_draw(const koord offset, ding_t const* const ding)
 	}
 
 	// display things
-	for(  vector_tpl<koord>::const_iterator i = start;  i != end;  ++i  ) {
-		koord  const& off   = *i;
+	FOR(vector_tpl<koord>, const& off, offsets) {
 		const koord   k     = here + off + koord(y_offset, y_offset);
 		const sint16  off_x = (off.x - off.y) * 32 * raster / 64 + display_off.x;
 		if(  off_x + raster < 0  ||  gr.x < off_x  ||  k.x < 0  ||  k.y < 0  ) {
@@ -195,7 +191,7 @@ void world_view_t::internal_draw(const koord offset, ding_t const* const ding)
  */
 void world_view_t::set_groesse(koord size)
 {
-	gui_component_t::set_groesse(size);
+	gui_komponente_t::set_groesse(size);
 	calc_offsets(size, 5);
 }
 

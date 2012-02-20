@@ -53,10 +53,10 @@ public:
 
 	/**
 	* Manche Fenster haben einen Hilfetext assoziiert.
-	* @return den Dateinamen fï¿½r die Hilfe, oder NULL
+	* @return den Dateinamen für die Hilfe, oder NULL
 	* @author Hj. Malthaner
 	*/
-	const char* get_help_file() const { return "factory_build.txt"; }
+	const char* get_hilfe_datei() const { return "factory_build.txt"; }
 
 	bool action_triggered(gui_action_creator_t*, value_t) OVERRIDE;
 };

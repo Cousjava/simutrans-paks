@@ -96,64 +96,50 @@ void pakselector_t::fill_list()
 	savegame_frame_t::fill_list();
 
 	int y = 0;
-
-	slist_iterator_tpl <entry> iter (entries);
-
-	while(iter.next()) 
-	{
-		const entry & entry = iter.get_current();
-
+	FOR(slist_tpl<entry>, const& i, entries) {
 		char path[1024];
-		sprintf(path,"%saddons/%s", umgebung_t::user_dir, entry.button->get_text() );
-		koord size = entry.del->get_groesse();
-		entry.del->set_groesse(size + koord(150, 0));
-		entry.del->set_text( "Load with addons" );
-		entry.button->set_pos( koord(150,0)+entry.button->get_pos() );
+		sprintf(path,"%saddons/%s", umgebung_t::user_dir, i.button->get_text());
+		i.del->groesse.x += 150;
+		i.del->set_text("Load with addons");
+		i.button->set_pos(koord(150,0) + i.button->get_pos());
 		if(  chdir( path )!=0  ) {
 			// no addons for this
-			entry.del->set_visible( false );
-			entry.del->disable();
+			i.del->set_visible(false);
+			i.del->disable();
 			if(entries.get_count()==1) {
 				// only single entry and no addons => no need to question further ...
-				umgebung_t::objfilename = (std::string)entry.button->get_text() + "/";
+				umgebung_t::objfilename = (std::string)i.button->get_text() + "/";
 			}
 		}
 		y += BUTTON_HEIGHT;
 	}
 	chdir( umgebung_t::program_dir );
 
-	button_frame.set_groesse( koord( get_window_size().x-1, y ) );
-	set_window_size(koord(get_window_size().x, TITLEBAR_HEIGHT+30+y+3*LINESPACE+4+1));
+	button_frame.set_groesse( koord( get_fenstergroesse().x-1, y ) );
+	set_fenstergroesse(koord(get_fenstergroesse().x, TITLEBAR_HEIGHT+30+y+3*LINESPACE+4+1));
 }
 
 
-void pakselector_t::set_window_size(koord groesse)
+void pakselector_t::set_fenstergroesse(koord groesse)
 {
 	if(groesse.y>display_get_height()-70) {
 		// too large ...
 		groesse.y = ((display_get_height()-TITLEBAR_HEIGHT-30-3*LINESPACE-4-1)/BUTTON_HEIGHT)*BUTTON_HEIGHT+TITLEBAR_HEIGHT+30+3*LINESPACE+4+1-70;
 		// position adjustment will be done automatically ... nice!
 	}
-	gui_frame_t::set_window_size(groesse);
-	groesse = get_window_size();
+	gui_frame_t::set_fenstergroesse(groesse);
+	groesse = get_fenstergroesse();
 
 	sint16 y = 0;
-
-	slist_iterator_tpl <entry> iter (entries);
-
-	while(iter.next()) 
-	{
-		const entry & entry = iter.get_current();
-
+	FOR(slist_tpl<entry>, const& i, entries) {
 		// resize all but delete button
-		if(  entry.button->is_visible()  ) {
-			button_t*    button1 = entry.del;
+		if (i.button->is_visible()) {
+			button_t* const button1 = i.del;
 			button1->set_pos( koord( button1->get_pos().x, y ) );
-			button_t*    button2 = entry.button;
-			gui_label_t* label   = entry.label;
+			button_t* const button2 = i.button;
 			button2->set_pos( koord( button2->get_pos().x, y ) );
 			button2->set_groesse(koord( groesse.x/2-40, BUTTON_HEIGHT));
-			label->set_pos(koord(groesse.x/2-40+30, y+2));
+			i.label->set_pos(koord(groesse.x / 2 - 40 + 30, y + 2));
 			y += BUTTON_HEIGHT;
 		}
 	}

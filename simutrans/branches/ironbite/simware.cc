@@ -22,11 +22,11 @@
 
 
 
-const freight_desc_t *freight_t::index_to_besch[256];
+const ware_besch_t *ware_t::index_to_besch[256];
 
 
 
-freight_t::freight_t() : ziel(), zwischenziel(), zielpos(-1, -1)
+ware_t::ware_t() : ziel(), zwischenziel(), zielpos(-1, -1)
 {
 	menge = 0;
 	index = 0;
@@ -34,27 +34,27 @@ freight_t::freight_t() : ziel(), zwischenziel(), zielpos(-1, -1)
 }
 
 
-freight_t::freight_t(const freight_desc_t *wtyp) : ziel(), zwischenziel(), zielpos(-1, -1)
+ware_t::ware_t(const ware_besch_t *wtyp) : ziel(), zwischenziel(), zielpos(-1, -1)
 {
 	menge = 0;
 	index = wtyp->get_index();
 	to_factory = 0;
 }
 
-freight_t::freight_t(karte_t *welt,loadsave_t *file)
+ware_t::ware_t(karte_t *welt,loadsave_t *file)
 {
 	rdwr(welt,file);
 }
 
 
-void freight_t::set_besch(const freight_desc_t* type)
+void ware_t::set_besch(const ware_besch_t* type)
 {
 	index = type->get_index();
 }
 
 
 
-void freight_t::rdwr(karte_t *welt,loadsave_t *file)
+void ware_t::rdwr(karte_t *welt,loadsave_t *file)
 {
 	sint32 amount = menge;
 	file->rdwr_long(amount);
@@ -86,10 +86,10 @@ void freight_t::rdwr(karte_t *welt,loadsave_t *file)
 	else {
 		char typ[256];
 		file->rdwr_str(typ, lengthof(typ));
-		const freight_desc_t *type = freight_builder_t::get_info(typ);
+		const ware_besch_t *type = warenbauer_t::get_info(typ);
 		if(type==NULL) {
-			dbg->warning("freight_t::rdwr()","unknown ware of catg %d!",catg);
-			index = freight_builder_t::get_info_catg(catg)->get_index();
+			dbg->warning("ware_t::rdwr()","unknown ware of catg %d!",catg);
+			index = warenbauer_t::get_info_catg(catg)->get_index();
 			menge = 0;
 		}
 		else {
@@ -142,7 +142,7 @@ void freight_t::rdwr(karte_t *welt,loadsave_t *file)
 
 
 
-void freight_t::laden_abschliessen(karte_t *welt,spieler_t * /*sp*/)
+void ware_t::laden_abschliessen(karte_t *welt,spieler_t * /*sp*/)
 {
 	// since some halt was referred by with several koordinates
 	// this routine will correct it

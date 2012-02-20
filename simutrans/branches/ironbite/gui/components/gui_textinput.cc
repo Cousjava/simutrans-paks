@@ -8,18 +8,13 @@
 #include <string.h>
 
 #include "gui_textinput.h"
-#include "../../font.h"
-#include "../../unicode.h"
-#include "../../simcolor.h"
-#include "../../simgraph.h"
 #include "../../simwin.h"
-#include "../../simevent.h"
 #include "../../simsys.h"
 #include "../../dataobj/translator.h"
 
 
 gui_textinput_t::gui_textinput_t() :
-	gui_component_t(true),
+	gui_komponente_t(true),
 	text(NULL),
 	max(0),
 	head_cursor_pos(0),
@@ -36,9 +31,9 @@ gui_textinput_t::gui_textinput_t() :
  * determine new cursor position from event coordinates
  * @author Knightly
  */
-int gui_textinput_t::calc_cursor_pos(const int x)
+size_t gui_textinput_t::calc_cursor_pos(const int x)
 {
-	int new_cursor_pos = 0;
+	size_t new_cursor_pos = 0;
 	if (  text  ) {
 		const char* tmp_text = text;
 		uint8 byte_length = 0;
@@ -62,8 +57,8 @@ int gui_textinput_t::calc_cursor_pos(const int x)
 bool gui_textinput_t::remove_selection()
 {
 	if(  head_cursor_pos!=tail_cursor_pos  ) {
-		int start_pos = min(head_cursor_pos, tail_cursor_pos);
-		int end_pos = ::max(head_cursor_pos, tail_cursor_pos);
+		size_t start_pos = min(head_cursor_pos, tail_cursor_pos);
+		size_t end_pos = ::max(head_cursor_pos, tail_cursor_pos);
 		tail_cursor_pos = head_cursor_pos = start_pos;
 		do {
 			text[start_pos++] = text[end_pos];
@@ -83,7 +78,7 @@ bool gui_textinput_t::infowin_event(const event_t *ev)
 {
 	if(  ev->ev_class==EVENT_KEYBOARD  ) {
 		if(  text  ) {
-			int len = (int)strlen(text);
+			size_t len = strlen(text);
 
 			switch(ev->ev_code) {
 					// handled by container
@@ -106,9 +101,9 @@ bool gui_textinput_t::infowin_event(const event_t *ev)
 				case 3:
 					// Knightly : if Ctrl-C -> copy selected text to clipboard
 					if(  IS_CONTROL_PRESSED(ev)  &&  head_cursor_pos!=tail_cursor_pos  ) {
-						const int start_pos = min(head_cursor_pos, tail_cursor_pos);
-						const int end_pos = ::max(head_cursor_pos, tail_cursor_pos);
-						system_clipboard_copy(text + start_pos, end_pos - start_pos);
+						const size_t start_pos = min(head_cursor_pos, tail_cursor_pos);
+						const size_t end_pos = ::max(head_cursor_pos, tail_cursor_pos);
+						dr_copy(text + start_pos, end_pos - start_pos);
 					}
 					break;
 				case 22:
@@ -118,15 +113,15 @@ bool gui_textinput_t::infowin_event(const event_t *ev)
 							// recalculate text length after deleting selection
 							len = strlen(text);
 						}
-						tail_cursor_pos = ( head_cursor_pos += system_clipboard_paste(text + head_cursor_pos, max - len - 1) );
+						tail_cursor_pos = ( head_cursor_pos += dr_paste(text + head_cursor_pos, max - len - 1) );
 					}
 					break;
 				case 24:
 					// Knightly : if Ctrl-X -> cut and copy selected text to clipboard
 					if(  IS_CONTROL_PRESSED(ev)  &&  head_cursor_pos!=tail_cursor_pos  ) {
-						const int start_pos = min(head_cursor_pos, tail_cursor_pos);
-						const int end_pos = ::max(head_cursor_pos, tail_cursor_pos);
-						system_clipboard_copy(text + start_pos, end_pos - start_pos);
+						const size_t start_pos = min(head_cursor_pos, tail_cursor_pos);
+						const size_t end_pos = ::max(head_cursor_pos, tail_cursor_pos);
+						dr_copy(text + start_pos, end_pos - start_pos);
 						remove_selection();
 					}
 					break;
@@ -213,9 +208,9 @@ bool gui_textinput_t::infowin_event(const event_t *ev)
 					// Knightly : check and remove any selected text first
 					if(  !remove_selection()  &&  head_cursor_pos>0  ) {
 						if (  head_cursor_pos<len  ) {
-							int prev_pos = head_cursor_pos;
+							size_t prev_pos = head_cursor_pos;
 							tail_cursor_pos = head_cursor_pos = get_prev_char(text, head_cursor_pos);
-							for (  int pos=head_cursor_pos;  pos<=len-(prev_pos-head_cursor_pos);  pos++  ) {
+							for (  size_t pos=head_cursor_pos;  pos<=len-(prev_pos-head_cursor_pos);  pos++  ) {
 								text[pos] = text[pos+(prev_pos-head_cursor_pos)];
 							}
 						}
@@ -229,8 +224,8 @@ bool gui_textinput_t::infowin_event(const event_t *ev)
 					// delete
 					// Knightly : check and remove any selected text first
 					if(  !remove_selection()  &&  head_cursor_pos<=len  ) {
-						int next_pos = get_next_char(text, head_cursor_pos);
-						for(  int pos=head_cursor_pos;  pos<len;  pos++  ) {
+						size_t next_pos = get_next_char(text, head_cursor_pos);
+						for(  size_t pos=head_cursor_pos;  pos<len;  pos++  ) {
 							text[pos] = text[pos+(next_pos-head_cursor_pos)];
 						}
 					}
@@ -282,7 +277,7 @@ bool gui_textinput_t::infowin_event(const event_t *ev)
 						letter[1] = 0;
 					}
 
-					int num_letter = (int)strlen(letter);
+					size_t num_letter = strlen(letter);
 
 					if(len+num_letter>=max) {
 						// too many chars ...
@@ -308,7 +303,7 @@ bool gui_textinput_t::infowin_event(const event_t *ev)
 		else {
 			DBG_MESSAGE("gui_textinput_t::infowin_event", "called but text is NULL");
 		}
-		cursor_reference_time = system_time();	// update reference time for cursor blinking
+		cursor_reference_time = dr_time();	// update reference time for cursor blinking
 		return true;
 	}
 	else if(  IS_LEFTCLICK(ev)  ) {
@@ -316,13 +311,13 @@ bool gui_textinput_t::infowin_event(const event_t *ev)
 		// moreover, only (click) or (release) event happened inside textinput, the other one could lie outside
 		// Knightly : use mouse *click* position; update both head and tail cursors
 		tail_cursor_pos = head_cursor_pos = calc_cursor_pos(ev->cx);
-		cursor_reference_time = system_time();	// update reference time for cursor blinking
+		cursor_reference_time = dr_time();	// update reference time for cursor blinking
 		return true;
 	}
 	else if(  IS_LEFTDRAG(ev)  ) {
 		// Knightly : use mouse *move* position; update head cursor only in order to enable text selection
 		head_cursor_pos = calc_cursor_pos(ev->mx);
-		cursor_reference_time = system_time();	// update reference time for cursor blinking
+		cursor_reference_time = dr_time();	// update reference time for cursor blinking
 		return true;
 	}
 	else if(  IS_LEFTDBLCLK(ev)  ) {
@@ -335,7 +330,7 @@ bool gui_textinput_t::infowin_event(const event_t *ev)
 			tail_cursor_pos -= byte_length;
 		}
 		// for head cursor pos -> skip over all contiguous non-space characters to the right
-		const int len = (int)strlen(text);
+		const size_t len = strlen(text);
 		tmp_text = text + head_cursor_pos;
 		while(  head_cursor_pos<len  &&  get_next_char_with_metrics(tmp_text, byte_length, pixel_width)!=SIM_KEY_SPACE  ) {
 			head_cursor_pos += byte_length;
@@ -375,12 +370,12 @@ void gui_textinput_t::display_with_focus(koord offset, bool has_focus)
 	if(  focus_recieved!=has_focus  ) {
 		if(  has_focus  ) {
 			// update reference time for cursor blinking if focus has just been received
-			cursor_reference_time = system_time();
+			cursor_reference_time = dr_time();
 		}
 		focus_recieved = has_focus;
 	}
 
-	display_with_cursor( offset, has_focus, (has_focus  &&  ((system_time()-cursor_reference_time)&512ul)==0) );
+	display_with_cursor( offset, has_focus, (has_focus  &&  ((dr_time()-cursor_reference_time)&512ul)==0) );
 }
 
 
@@ -445,8 +440,8 @@ void gui_textinput_t::display_with_cursor(koord offset, bool cursor_active, bool
 		if(  cursor_active  ) {
 			// Knightly : display selected text block with light grey text on charcoal bounding box
 			if(  head_cursor_pos!= tail_cursor_pos  ) {
-				const int start_pos = min(head_cursor_pos, tail_cursor_pos);
-				const int end_pos = ::max(head_cursor_pos, tail_cursor_pos);
+				const size_t start_pos = min(head_cursor_pos, tail_cursor_pos);
+				const size_t end_pos = ::max(head_cursor_pos, tail_cursor_pos);
 				const KOORD_VAL start_offset = proportional_string_len_width(text, start_pos);
 				const KOORD_VAL highlight_width = proportional_string_len_width(text+start_pos, end_pos-start_pos);
 				display_fillbox_wh_clip(pos.x+offset.x+2-scroll_offset+start_offset, pos.y+offset.y+1, highlight_width, 11, COL_GREY2, true);
@@ -488,7 +483,7 @@ bool gui_hidden_textinput_t::infowin_event(const event_t *ev)
 		if (  text  ) {
 			head_cursor_pos = min( strlen(text), ev->cx/asterix_width );
 		}
-		cursor_reference_time = system_time();	// update reference time for cursor blinking
+		cursor_reference_time = dr_time();	// update reference time for cursor blinking
 		return true;
 	}
 	else {
@@ -518,7 +513,7 @@ void gui_hidden_textinput_t::display_with_cursor(koord const offset, bool, bool 
 		const int clip_x =  old_clip.x > text_clip_x ? old_clip.x : text_clip_x;
 		display_set_clip_wh( clip_x, old_clip.y, min(old_clip.xx, text_clip_x+text_clip_w)-clip_x, old_clip.h);
 
-		int text_pos=0;
+		size_t text_pos=0;
 		sint16 xpos = pos.x+offset.x+2;
 		utf16  c = 0;
 		do {

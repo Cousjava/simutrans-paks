@@ -10,9 +10,9 @@
 
 void good_reader_t::register_obj(obj_besch_t *&data)
 {
-	freight_desc_t *besch = static_cast<freight_desc_t *>(data);
+	ware_besch_t *besch = static_cast<ware_besch_t *>(data);
 
-	freight_builder_t::register_besch(besch);
+	warenbauer_t::register_besch(besch);
 	DBG_DEBUG("good_reader_t::register_obj()","loaded good '%s'", besch->get_name());
 
 	obj_for_xref(get_type(), besch->get_name(), data);
@@ -25,7 +25,7 @@ void good_reader_t::register_obj(obj_besch_t *&data)
 
 bool good_reader_t::successfully_loaded() const
 {
-	return freight_builder_t::alles_geladen();
+	return warenbauer_t::alles_geladen();
 }
 
 
@@ -33,7 +33,7 @@ obj_besch_t * good_reader_t::read_node(FILE *fp, obj_node_info_t &node)
 {
 	ALLOCA(char, besch_buf, node.size);
 
-	freight_desc_t *besch = new freight_desc_t();
+	ware_besch_t *besch = new ware_besch_t();
 	besch->node_info = new obj_besch_t*[node.children];
 
 	// some defaults

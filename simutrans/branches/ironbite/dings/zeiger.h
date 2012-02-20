@@ -1,7 +1,9 @@
 #ifndef dings_zeiger_h
 #define dings_zeiger_h
 
-#include "thing_without_info_t.h"
+#include "../simdings.h"
+#include "../simtypes.h"
+#include "../simimg.h"
 
 /**
  * Objekte dieser Klasse dienen sowohl als Landschaftszeiger im UI

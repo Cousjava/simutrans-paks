@@ -1,6 +1,6 @@
 /*
- * Natur-Untergrund fï¿½r Simutrans.
- * ï¿½berarbeitet Januar 2001
+ * Natur-Untergrund für Simutrans.
+ * Überarbeitet Januar 2001
  * von Hj. Malthaner
  */
 
@@ -29,17 +29,12 @@ boden_t::boden_t(karte_t *welt, loadsave_t *file, koord pos ) : grund_t( welt, k
 		while(  id!=-1  ) {
 			sint32 age;
 			file->rdwr_long( age );
-			
-			// check, if we still have this tree ... (if there are no trees, the first index is NULL!)
-			const vector_tpl<const baum_besch_t *> * all_trees = tree_t::get_all_besch();
-			
-			if(id < tree_t::get_anzahl_besch()  && all_trees->get(id)) 
-			{
-				tree_t *tree = new tree_t(welt, get_pos(), (uint8)id, age, slope );
+			// check, if we still have this tree ... (if there are not trees, the first index is NULL!)
+			if (id < baum_t::get_anzahl_besch() && baum_t::get_all_besch()[id]) {
+				baum_t *tree = new baum_t( welt, get_pos(), (uint8)id, age, slope );
 				dinge.add( tree );
 			}
-			else 
-			{
+			else {
 				dbg->warning( "boden_t::boden_t()", "Could not restore tree type %i at (%s)", id, pos.get_str() );
 			}
 			// check for next tree
@@ -66,7 +61,7 @@ void boden_t::rdwr(loadsave_t *file)
 			for(  uint8 i=0;  i<dinge.get_top();  i++  ) {
 				ding_t *d = dinge.bei(i);
 				if(  d->get_typ()==ding_t::baum  ) {
-					tree_t *tree = (tree_t *)d;
+					baum_t *tree = (baum_t *)d;
 					file->wr_obj_id( tree->get_besch_id() );
 					sint32 age = tree->get_age();
 					file->rdwr_long( age );

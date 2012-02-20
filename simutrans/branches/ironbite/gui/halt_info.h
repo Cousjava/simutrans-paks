@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -65,13 +65,13 @@ public:
 
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.
-	 * @return den Dateinamen fï¿½r die Hilfe, oder NULL
+	 * @return den Dateinamen für die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	const char * get_help_file() const {return "station.txt";}
+	const char * get_hilfe_datei() const {return "station.txt";}
 
 	/**
-	 * Komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
+	 * Komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
 	 * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
 	 * in dem die Komponente dargestellt wird.
 	 * @author Hj. Malthaner
@@ -82,7 +82,7 @@ public:
 	 * Set window size and adjust component sizes and/or positions accordingly
 	 * @author Hj. Malthaner
 	 */
-	virtual void set_window_size(koord groesse);
+	virtual void set_fenstergroesse(koord groesse);
 
 	virtual koord3d get_weltpos();
 

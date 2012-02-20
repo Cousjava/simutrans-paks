@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -19,8 +19,6 @@
 #include "../simgraph.h"
 
 #include "../utils/cbuffer_t.h"
-
-#include "../besch/weg_besch.h"
 
 #include "../dataobj/translator.h"
 #include "../dataobj/loadsave.h"
@@ -303,7 +301,7 @@ void leitung_t::calc_neighbourhood()
 
 
 /**
- * @return Einen Beschreibungsstring fï¿½r das Objekt, der z.B. in einem
+ * @return Einen Beschreibungsstring für das Objekt, der z.B. in einem
  * Beobachtungsfenster angezeigt wird.
  * @author Hj. Malthaner
  */
@@ -325,7 +323,7 @@ void leitung_t::info(cbuffer_t & buf) const
 
 
 /**
- * Wird nach dem Laden der Welt aufgerufen - ï¿½blicherweise benutzt
+ * Wird nach dem Laden der Welt aufgerufen - üblicherweise benutzt
  * um das Aussehen des Dings an Boden und Umgebung anzupassen
  *
  * @author Hj. Malthaner
@@ -411,9 +409,8 @@ void pumpe_t::neue_karte()
 
 void pumpe_t::step_all(long delta_t)
 {
-	slist_iterator_tpl<pumpe_t *> pumpe_iter( pumpe_list );
-	while(  pumpe_iter.next()  ) {
-		pumpe_iter.get_current()->step( delta_t );
+	FOR(slist_tpl<pumpe_t*>, const p, pumpe_list) {
+		p->step(delta_t);
 	}
 }
 
@@ -514,11 +511,9 @@ void senke_t::neue_karte()
 
 void senke_t::step_all(long delta_t)
 {
-	slist_iterator_tpl<senke_t *> senke_iter( senke_list );
-	while(  senke_iter.next()  ) {
-		senke_iter.get_current()->step( delta_t );
+	FOR(slist_tpl<senke_t*>, const s, senke_list) {
+		s->step(delta_t);
 	}
-
 }
 
 
@@ -692,14 +687,4 @@ void senke_t::info(cbuffer_t & buf) const
 	buf.printf( translator::translate("Demand: %u MW\n"), last_power_demand>>POWER_TO_MW );
 	buf.printf( translator::translate("Act. load: %u MW\n"), power_load>>POWER_TO_MW );
 	buf.printf( translator::translate("Supplied: %u %%"), (100*power_load)/(last_power_demand>0?last_power_demand:1) );
-}
-
-image_id leitung_t::get_bild() const 
-{
-	return is_crossing ? IMG_LEER : bild;
-}
-
-image_id leitung_t::get_after_bild() const 
-{
-	return is_crossing ? bild : IMG_LEER;
 }

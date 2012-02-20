@@ -25,7 +25,6 @@
 #include "simworld.h"
 #include "dings/baum.h"
 #include "vehicle/simvehikel.h"
-#include "dataobj/umgebung.h"
 #include "dataobj/translator.h"
 #include "dataobj/loadsave.h"
 #include "boden/grund.h"
@@ -127,43 +126,6 @@ ding_t::~ding_t()
 
 
 /**
- * @returns untranslated name of object
- * @author Hj. Malthaner
- */
-const char * ding_t::get_name() const 
-{
-	return "Ding";
-}
-
-/**
- * waytype associated with this object
- */
-waytype_t ding_t::get_waytype() const 
-{
-	return invalid_wt; 
-}
-
-/**
- * called whenever the snowline height changes
- * return false and the ding_t will be deleted
- * @author prissi
- */
-bool ding_t::check_season(const long /*month*/) 
-{
-	return true; 
-}
-
-/**
- * if a function returns a value here with TRANSPARENT_FLAGS set
- * then a transparent outline with the color from the lower 8 bit is drawn
- * @author kierongreen
- */
-PLAYER_COLOR_VAL ding_t::get_outline_colour() const 
-{
-	return 0;
-}
-
-/**
  * sets owner of object
  */
 void ding_t::set_besitzer(spieler_t *sp)
@@ -174,12 +136,6 @@ void ding_t::set_besitzer(spieler_t *sp)
 }
 
 
-/**
- * Ein Objekt kann einen Besitzer haben.
- * @return Einen Zeiger auf den Besitzer des Objekts oder NULL,
- * wenn das Objekt niemand geh�rt.
- * @author Hj. Malthaner
- */
 spieler_t *ding_t::get_besitzer() const
 {
 	return welt->get_spieler(besitzer_n);
@@ -260,7 +216,7 @@ void ding_t::display(int xpos, int ypos) const
 		const int raster_width = get_current_tile_raster_width();
 		const bool is_dirty = get_flag(ding_t::dirty);
 
-		if (vehicle_base_t const* const v = ding_cast<vehicle_base_t>(this)) {
+		if (vehikel_basis_t const* const v = ding_cast<vehikel_basis_t>(this)) {
 			// vehicles need finer steps to appear smoother
 			v->get_screen_offset( xpos, ypos, raster_width );
 		}
@@ -364,7 +320,7 @@ void ding_t::mark_image_dirty(image_id bild,sint16 yoff) const
 	if(bild!=IMG_LEER) {
 		int xpos=0, ypos=0;
 		if(  is_moving()  ) {
-			vehicle_base_t const* const v = ding_cast<vehicle_base_t>(this);
+			vehikel_basis_t const* const v = ding_cast<vehikel_basis_t>(this);
 			// vehicles need finer steps to appear smoother
 			v->get_screen_offset( xpos, ypos, get_tile_raster_width() );
 		}
@@ -376,32 +332,4 @@ void ding_t::mark_image_dirty(image_id bild,sint16 yoff) const
 		// mark the region after the image as dirty
 		display_mark_img_dirty( bild, x+welt->get_x_off(), y+welt->get_y_off() );
 	}
-}
-
-/**
- * give image for height > 0 (max. height currently 3)
- * IMG_LEER is no images
- * @author Hj. Malthaner
- */
-image_id ding_t::get_bild(int /*height*/) const 
-{
-	return IMG_LEER;
-}
-
-/**
- * this image is drawn after all get_bild() on this tile
- * Currently only single height is supported for this feature
- */
-image_id ding_t::get_after_bild() const 
-{
-	return IMG_LEER;
-}
-
-/**
- * The image, that will be outlined
- * @author kierongreen
- */
-image_id ding_t::get_outline_bild() const 
-{
-	return IMG_LEER;
 }

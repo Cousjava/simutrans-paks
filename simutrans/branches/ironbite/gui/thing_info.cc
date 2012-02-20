@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -37,13 +37,13 @@ ding_infowin_t::ding_infowin_t(const ding_t* ding) :
 	textarea.set_pos( koord(10, 10) );
 	add_komponente( &textarea );
 
-	set_window_size(koord(width, height));
+	set_fenstergroesse(koord(width, height));
 }
 
 
 
 /**
- * komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
+ * komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
  * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
  * in dem die Komponente dargestellt wird.
  */
@@ -59,7 +59,7 @@ void ding_infowin_t::zeichnen(koord pos, koord gr)
 
 	// Knightly : text may be changed and need more vertical space to display
 	const sint16 current_height = max( textarea.get_groesse().y, view.get_groesse().y ) + 36;
-	if(  current_height != get_window_size().y  ) {
-		set_window_size( koord(get_window_size().x, current_height) );
+	if(  current_height != get_fenstergroesse().y  ) {
+		set_fenstergroesse( koord(get_fenstergroesse().x, current_height) );
 	}
 }

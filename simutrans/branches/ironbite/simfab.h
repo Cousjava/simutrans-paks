@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  * (see license.txt)
@@ -76,13 +76,13 @@ class stadt_t;
 class ware_production_t
 {
 private:
-	const freight_desc_t *type;
+	const ware_besch_t *type;
 	// Knightly : statistics for each goods
 	sint64 statistics[MAX_MONTH][MAX_FAB_GOODS_STAT];
 	sint64 weighted_sum_storage;
 public:
-	const freight_desc_t* get_typ() const { return type; }
-	void set_typ(const freight_desc_t *t) { type=t; }
+	const ware_besch_t* get_typ() const { return type; }
+	void set_typ(const ware_besch_t *t) { type=t; }
 
 	// Knightly : functions for manipulating goods statistics
 	void init_stats();
@@ -100,7 +100,7 @@ public:
 
 
 /**
- * Eine Klasse fï¿½r Fabriken in Simutrans. Fabriken produzieren und
+ * Eine Klasse für Fabriken in Simutrans. Fabriken produzieren und
  * verbrauchen Waren und beliefern nahe Haltestellen.
  *
  * @date 1998
@@ -140,7 +140,7 @@ private:
 	uint32 index_offset;
 
 	/**
-	 * Die mï¿½glichen Lieferziele
+	 * Die möglichen Lieferziele
 	 * @author Hj. Malthaner
 	 */
 	vector_tpl <koord> lieferziele;
@@ -195,7 +195,7 @@ private:
 	sint32 prodbase;
 
 	/**
-	 * multiplikator fï¿½r die Produktionsgrundmenge
+	 * multiplikator für die Produktionsgrundmenge
 	 * @author Hj. Malthaner
 	 */
 	sint32 prodfactor_electric;
@@ -206,7 +206,7 @@ private:
 	array_tpl<ware_production_t> ausgang; //< das ausgangslagerfeld
 
 	/**
-	 * Zeitakkumulator fï¿½r Produktion
+	 * Zeitakkumulator für Produktion
 	 * @author Hj. Malthaner
 	 */
 	sint32 delta_sum;
@@ -385,7 +385,7 @@ public:
 	const vector_tpl<stadt_t *>& get_target_cities() const { return target_cities; }
 
 	/**
-	 * Fï¿½gt ein neues Lieferziel hinzu
+	 * Fügt ein neues Lieferziel hinzu
 	 * @author Hj. Malthaner
 	 */
 	void  add_lieferziel(koord ziel);
@@ -403,8 +403,8 @@ public:
 	 *   -1 wenn typ nicht produziert wird
 	 *   sonst die gelagerte menge
 	 */
-	sint32 input_vorrat_an(const freight_desc_t *ware);        // Vorrat von Warentyp
-	sint32 vorrat_an(const freight_desc_t *ware);        // Vorrat von Warentyp
+	sint32 input_vorrat_an(const ware_besch_t *ware);        // Vorrat von Warentyp
+	sint32 vorrat_an(const ware_besch_t *ware);        // Vorrat von Warentyp
 
 	// returns all power and consume it to prevent multiple pumpes
 	uint32 get_power() { uint32 p=power; power=0; return p; }
@@ -431,8 +431,8 @@ public:
 	 * 0 wenn Produktionsstopp,
 	 * -1 wenn Ware nicht verarbeitet wird
 	 */
-	sint32 verbraucht(const freight_desc_t *);             // Nimmt fab das an ??
-	sint32 liefere_an(const freight_desc_t *, sint32 menge);
+	sint32 verbraucht(const ware_besch_t *);             // Nimmt fab das an ??
+	sint32 liefere_an(const ware_besch_t *, sint32 menge);
 
 	void step(long delta_t);                  // fabrik muss auch arbeiten
 	void neuer_monat();
@@ -442,7 +442,11 @@ public:
 
 	sint32 get_kennfarbe() const { return besch->get_kennfarbe(); }
 
-	spieler_t *get_besitzer() const;
+	spieler_t *get_besitzer() const
+	{
+		grund_t const* const p = welt->lookup(pos);
+		return p ? p->first_obj()->get_besitzer() : 0;
+	}
 
 	void zeige_info();
 
@@ -462,7 +466,7 @@ public:
 	void get_tile_list( vector_tpl<koord> &tile_list ) const;
 
 	/**
-	 * gibt eine NULL-Terminierte Liste von Fabrikpointern zurï¿½ck
+	 * gibt eine NULL-Terminierte Liste von Fabrikpointern zurück
 	 *
 	 * @author Hj. Malthaner
 	 */
@@ -479,7 +483,7 @@ public:
 	// hier die methoden zum parametrisieren der Fabrik
 
 	/**
-	 * Baut die Gebï¿½ude fï¿½r die Fabrik
+	 * Baut die Gebäude für die Fabrik
 	 *
 	 * @author Hj. Malthaner, V. Meyer
 	 */
@@ -549,7 +553,7 @@ public:
 	bool is_end_consumer() const { return (ausgang.empty() && !besch->is_electricity_producer()); }
 
 	// Returns a list of goods produced by this factory.
-	slist_tpl<const freight_desc_t*> *get_produced_goods() const;
+	slist_tpl<const ware_besch_t*> *get_produced_goods() const;
 };
 
 #endif

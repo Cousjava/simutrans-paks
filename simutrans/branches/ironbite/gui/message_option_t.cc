@@ -63,7 +63,7 @@ message_option_t::message_option_t(karte_t *welt) :
 		buttons[i*4+3].add_listener(this);
 		add_komponente( buttons+i*4+3 );
 	}
-	set_window_size( koord(BUTTON_ROW+70, 16+18+message_t::MAX_MESSAGE_TYPE*LINESPACE*2) );
+	set_fenstergroesse( koord(BUTTON_ROW+70, 16+18+message_t::MAX_MESSAGE_TYPE*LINESPACE*2) );
 }
 
 

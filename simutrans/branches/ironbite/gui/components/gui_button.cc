@@ -177,7 +177,7 @@ void button_t::draw_roundbutton(sint16 x, sint16 y, sint16 w, sint16 h, bool pre
 		const sint16 rw = skinverwaltung_t::window_skin->get_bild(13)->get_pic()->w;
 		// first the center (may need extra clipping)
 		if(w-lw-rw<64) {
-			struct clip_dimension cl=display_get_clip_wh();
+			clip_dimension const cl = display_get_clip_wh();
 			display_set_clip_wh(cl.x, cl.y, max(0,min(x+w-rw,cl.xx)-cl.x), cl.h );
 			display_button_image(x+lw, y, RB_BODY_BUTTON, pressed);
 			display_set_clip_wh(cl.x, cl.y, cl.w, cl.h );
@@ -232,7 +232,7 @@ void button_t::draw_scrollbar(sint16 x, sint16 y, sint16 w, sint16 h, bool horiz
 			const sint16 rw = skinverwaltung_t::window_skin->get_bild(image_offset+1)->get_pic()->w;
 			// first the center (may need extra clipping)
 			if(w-lw-rw<64) {
-				struct clip_dimension cl=display_get_clip_wh();
+				clip_dimension const cl = display_get_clip_wh();
 				display_set_clip_wh(cl.x, cl.y, max(0,min(x+w-rw,cl.xx)-cl.x), cl.h );
 				display_color_img(skinverwaltung_t::window_skin->get_bild_nr(image_offset+2), x+lw, y, 0, false, true);
 				display_set_clip_wh(cl.x, cl.y, cl.w, cl.h );
@@ -255,7 +255,7 @@ void button_t::draw_scrollbar(sint16 x, sint16 y, sint16 w, sint16 h, bool horiz
 			const sint16 rh = skinverwaltung_t::window_skin->get_bild(image_offset+1)->get_pic()->h;
 			// first the center (may need extra clipping)
 			if(h-lh-rh<64) {
-				struct clip_dimension cl=display_get_clip_wh();
+				clip_dimension const cl = display_get_clip_wh();
 				display_set_clip_wh(cl.x, cl.y, cl.w, max(0,min(y+h-rh,cl.yy)-cl.y) );
 				display_color_img(skinverwaltung_t::window_skin->get_bild_nr(image_offset+2), x, y+lh, 0, false, true);
 				display_set_clip_wh(cl.x, cl.y, cl.w, cl.h );
@@ -274,9 +274,10 @@ void button_t::draw_scrollbar(sint16 x, sint16 y, sint16 w, sint16 h, bool horiz
 	}
 }
 
-button_t::button_t() :
-	gui_component_t(true)
+button_t::button_t() : gui_komponente_t(true)
 {
+	set_groesse( koord(BUTTON_WIDTH, BUTTON_HEIGHT) );
+	
 	b_no_translate = false;
 	translated_text = text = empty;
 	pressed = false;
@@ -370,7 +371,7 @@ void button_t::set_tooltip(const char * t)
 
 bool button_t::getroffen(int x,int y)
 {
-	bool hit=gui_component_t::getroffen(x, y);
+	bool hit=gui_komponente_t::getroffen(x, y);
 	if(pressed  &&  !hit  &&  type<=STATE_MASK) {
 		// moved away
 		pressed = 0;
@@ -477,7 +478,7 @@ void button_t::zeichnen(koord offset)
 				display_fillbox_wh_clip(bx+1, by+1, bw-2, bh-2, background, false);
 				int len = proportional_string_width(translated_text);
 				display_proportional_clip(bx+max((bw-len)/2,0),by+(bh-large_font_height)/2, translated_text, ALIGN_LEFT, b_enabled ? foreground : COL_GREY4, true);
-				if(  win_get_focus()==this  ) {
+				if(  win_get_focus() == this  ) {
 					// white box around
 					display_fillbox_wh_clip(bx, by, bw, 1, COL_WHITE, false);
 					display_fillbox_wh_clip(bx, by+bh-1, bw, 1, COL_WHITE, false);
@@ -611,8 +612,8 @@ void button_t::zeichnen(koord offset)
 		break;
 	}
 
-	if(translated_tooltip &&  getroffen( get_mouse_x()-offset.x, get_mouse_y()-offset.y )) {
-		win_set_tooltip(get_mouse_x() + 16, by + bh + 12, translated_tooltip, this);
+	if(translated_tooltip &&  getroffen( get_maus_x()-offset.x, get_maus_y()-offset.y )) {
+		win_set_tooltip(get_maus_x() + 16, by + bh + 12, translated_tooltip, this);
 	}
 }
 

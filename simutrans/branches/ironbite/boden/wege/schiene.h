@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -9,16 +9,15 @@
 #define boden_wege_schiene_h
 
 
-#include "../../simcolor.h"
 #include "weg.h"
 #include "../../convoihandle_t.h"
 
 class vehikel_t;
 
 /**
- * Klasse fï¿½r Schienen in Simutrans.
- * Auf den Schienen koennen Zï¿½ge fahren.
- * Jede Schiene gehï¿½rt zu einer Blockstrecke
+ * Klasse für Schienen in Simutrans.
+ * Auf den Schienen koennen Züge fahren.
+ * Jede Schiene gehört zu einer Blockstrecke
  *
  * @author Hj. Malthaner
  */
@@ -45,13 +44,6 @@ public:
 	schiene_t(karte_t *welt);
 
 	virtual waytype_t get_waytype() const {return track_wt;}
-
-	/**
-	* Calculates the image of this pice of railroad track.
-	*
-	* @author Hj. Malthaner
-	*/
-	void calc_bild(koord3d) { weg_t::calc_bild(); }
 
 	/**
 	* @return additional info is reservation!

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  */
@@ -79,7 +79,7 @@ HANDLE	hFlushThread=0;
  * Schnittstelle untergebracht
  * -> init,open,close
  */
-bool system_init(const int* /*parameter*/)
+bool dr_os_init(int const* /*parameter*/)
 {
 	// prepare for next event
 	sys_event.type = SIM_NOEVENT;
@@ -89,7 +89,7 @@ bool system_init(const int* /*parameter*/)
 }
 
 
-resolution system_query_screen_resolution()
+resolution dr_query_screen_resolution()
 {
 	resolution res;
 	res.w = GetSystemMetrics(SM_CXSCREEN);
@@ -108,7 +108,7 @@ static void create_window(DWORD const ex_style, DWORD const style, int const x, 
 
 
 // open the window
-int system_open(int const w, int const h, int fullscreen)
+int dr_os_open(int const w, int const h, int fullscreen)
 {
 	MaxSize.right = (w+15)&0x7FF0;
 	MaxSize.bottom = h+1;
@@ -128,7 +128,7 @@ int system_open(int const w, int const h, int fullscreen)
 
 		if(  ChangeDisplaySettings(&settings, CDS_TEST)!=DISP_CHANGE_SUCCESSFUL  ) {
 			ChangeDisplaySettings( NULL, 0 );
-			printf( "system_open()::Could not reduce color depth to 16 Bit in fullscreen." );
+			printf( "dr_os_open()::Could not reduce color depth to 16 Bit in fullscreen." );
 			fullscreen = false;
 		}
 		else {
@@ -174,7 +174,7 @@ int system_open(int const w, int const h, int fullscreen)
 }
 
 
-void system_close(void)
+void dr_os_close()
 {
 	if (hwnd != NULL) {
 		DestroyWindow(hwnd);
@@ -218,7 +218,7 @@ int dr_textur_resize(unsigned short** const textur, int w, int const h)
 }
 
 
-unsigned short *system_init_framebuffer()
+unsigned short *dr_textur_init()
 {
 	size_t const n = MaxSize.right * MaxSize.bottom;
 	AllDibData = MALLOCN(PIXVAL, n);
@@ -233,7 +233,7 @@ unsigned short *system_init_framebuffer()
  * @return converted color value
  * @author Hj. Malthaner
  */
-unsigned int system_get_color(unsigned int r, unsigned int g, unsigned int b)
+unsigned int get_system_color(unsigned int r, unsigned int g, unsigned int b)
 {
 #ifdef USE_16BIT_DIB
 	return ((r & 0x00F8) << 8) | ((g & 0x00FC) << 3) | (b >> 3);
@@ -243,22 +243,9 @@ unsigned int system_get_color(unsigned int r, unsigned int g, unsigned int b)
 }
 
 
-// unused ?
-void system_set_colors(int first, int count, unsigned char* data)
-{
-	// set color in DibHeader ...
-	RGBQUAD *pRGB = (RGBQUAD *)((char *)AllDib + sizeof(BITMAPINFOHEADER));
-	for(  int i=first;  i<first+count;  i++  ) {
-		pRGB[i].rgbRed = data[i*3];
-		pRGB[i].rgbGreen = data[i*3+1];
-		pRGB[i].rgbBlue = data[i*3+2];
-	}
-}
-
-
 #ifdef MULTI_THREAD
 // multhreaded screen copy ...
-DWORD WINAPI system_flush_framebuffer_screen(LPVOID lpParam)
+DWORD WINAPI dr_flush_screen(LPVOID lpParam)
 {
 	while(1) {
 		// wait for finish of thread
@@ -273,19 +260,19 @@ DWORD WINAPI system_flush_framebuffer_screen(LPVOID lpParam)
 }
 #endif
 
-void system_prepare_flush()
+void dr_prepare_flush()
 {
 #ifdef MULTI_THREAD
 	// thread there?
 	if(hFlushThread==0) {
 		DWORD id=22;
-		hFlushThread = CreateThread( NULL, 0, system_flush_framebuffer_screen, 0, CREATE_SUSPENDED, &id );
+		hFlushThread = CreateThread( NULL, 0, dr_flush_screen, 0, CREATE_SUSPENDED, &id );
 	}
 	WAIT_FOR_SCREEN();
 #endif
 }
 
-void system_flush_framebuffer()
+void dr_flush()
 {
 #ifdef MULTI_THREAD
 	// just let the thread do its work
@@ -317,7 +304,7 @@ void dr_textur(int xp, int yp, int w, int h)
 
 
 // move cursor to the specified location
-void system_move_pointer(int x, int y)
+void move_pointer(int x, int y)
 {
 	POINT pt = { x, y };
 
@@ -327,7 +314,7 @@ void system_move_pointer(int x, int y)
 
 
 // set the mouse cursor (pointer/load)
-void system_set_pointer(int loading)
+void set_pointer(int loading)
 {
 	SetCursor(LoadCursor(NULL, loading != 0 ? IDC_WAIT : IDC_ARROW));
 }
@@ -339,14 +326,14 @@ void system_set_pointer(int loading)
  *         in case of error.
  * @author Hj. Malthaner
  */
-int system_screenshot(const char *filename)
+int dr_screenshot(const char *filename)
 {
 #if defined USE_16BIT_DIB
 	int const bpp = COLOUR_DEPTH;
 #else
 	int const bpp = 15;
 #endif
-	if (!system_screenshot_png(filename, display_get_width() - 1, WindowSize.bottom + 1, AllDib->bmiHeader.biWidth, (unsigned short*)AllDibData, bpp)) {
+	if (!dr_screenshot_png(filename, display_get_width() - 1, WindowSize.bottom + 1, AllDib->bmiHeader.biWidth, (unsigned short*)AllDibData, bpp)) {
 		// not successful => save as BMP
 		FILE *fBmp = fopen(filename, "wb");
 		if (fBmp) {
@@ -619,7 +606,7 @@ LRESULT WINAPI WindowProc(HWND this_hwnd, UINT msg, WPARAM wParam, LPARAM lParam
 }
 
 
-static void internal_system_wait_event(bool const wait)
+static void internal_GetEvents(bool const wait)
 {
 	do {
 		// wait for keybord/mouse event
@@ -630,24 +617,24 @@ static void internal_system_wait_event(bool const wait)
 }
 
 
-void system_wait_event()
+void GetEvents()
 {
 	// already even processed?
 	if(sys_event.type==SIM_NOEVENT) {
-		internal_system_wait_event(true);
+		internal_GetEvents(true);
 	}
 }
 
 
-void system_poll_event()
+void GetEventsNoWait()
 {
 	if (sys_event.type==SIM_NOEVENT  &&  PeekMessage(&msg, NULL, 0, 0, PM_NOREMOVE)) {
-		internal_system_wait_event(false);
+		internal_GetEvents(false);
 	}
 }
 
 
-void system_show_pointer(int yesno)
+void show_pointer(int yesno)
 {
 	static int state=true;
 	if(state^yesno) {
@@ -665,7 +652,7 @@ void ex_ord_update_mx_my()
 
 
 
-unsigned long system_time(void)
+unsigned long dr_time(void)
 {
 	return timeGetTime();
 }
@@ -673,7 +660,7 @@ unsigned long system_time(void)
 
 
 
-void system_sleep(uint32 millisec)
+void dr_sleep(uint32 millisec)
 {
 	Sleep(millisec);
 }
@@ -707,7 +694,7 @@ int CALLBACK WinMain(HINSTANCE const hInstance, HINSTANCE, LPSTR, int)
 		}
 	}
 
-	int const res = system_main(__argc, __argv);
+	int const res = sysmain(__argc, __argv);
 	timeEndPeriod(1);
 
 #ifdef MULTI_THREAD

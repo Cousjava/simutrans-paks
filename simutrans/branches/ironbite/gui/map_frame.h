@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -25,7 +25,7 @@
 class karte_t;
 
 /**
- * Reliefkartenfenster fï¿½r Simutrans.
+ * Reliefkartenfenster für Simutrans.
  *
  * @author Hj. Malthaner
  * @date 03-Mar-01
@@ -96,10 +96,10 @@ public:
 
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.
-	 * @return den Dateinamen fï¿½r die Hilfe, oder NULL
+	 * @return den Dateinamen für die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	const char * get_help_file() const {return "map.txt";}
+	const char * get_hilfe_datei() const {return "map.txt";}
 
 	/**
 	 * Does this window need a min size button in the title bar?
@@ -125,7 +125,7 @@ public:
 	 * @author (Mathew Hounsell)
 	 * @date   11-Mar-2003
 	 */
-	void set_window_size(koord groesse);
+	void set_fenstergroesse(koord groesse);
 
 	/**
 	 * resize window in response to a resize event
@@ -135,7 +135,7 @@ public:
 	void resize(const koord delta);
 
 	/**
-	 * komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
+	 * komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
 	 * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
 	 * in dem die Komponente dargestellt wird.
 	 * @author Hj. Malthaner

@@ -420,12 +420,12 @@ void settings_t::rdwr(loadsave_t *file)
 
 		// since vehicle will need realignment afterwards!
 		if(file->get_version()<=99018) {
-			vehicle_base_t::set_diagonal_multiplier( pak_diagonal_multiplier, 1024 );
+			vehikel_basis_t::set_diagonal_multiplier( pak_diagonal_multiplier, 1024 );
 		}
 		else {
 			uint16 old_multiplier = pak_diagonal_multiplier;
 			file->rdwr_short(old_multiplier );
-			vehicle_base_t::set_diagonal_multiplier( pak_diagonal_multiplier, old_multiplier );
+			vehikel_basis_t::set_diagonal_multiplier( pak_diagonal_multiplier, old_multiplier );
 			// since vehicle will need realignment afterwards!
 		}
 
@@ -727,10 +727,10 @@ void settings_t::parse_simuconf(tabfile_t& simuconf, sint16& disp_width, sint16&
 		if(  c[0]>=6  ) {
 			// now update RGB values
 			for(  int j=0;  j<3;  j++  ) {
-				display_day_lights_p[i*3+j] = c[j+1];
+				display_day_lights[i*3+j] = c[j+1];
 			}
 			for(  int j=0;  j<3;  j++  ) {
-				display_night_lights_p[i*3+j] = c[j+4];
+				display_night_lights[i*3+j] = c[j+4];
 			}
 		}
 		delete [] c;

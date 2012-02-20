@@ -25,7 +25,7 @@ class karte_t;
  * Base class for traffic participants with random movement
  * @author Hj. Malthaner
  */
-class verkehrsteilnehmer_t : public vehicle_base_t, public sync_steppable
+class verkehrsteilnehmer_t : public vehikel_basis_t, public sync_steppable
 {
 protected:
 	/**
@@ -54,7 +54,7 @@ public:
 	typ get_typ() const  = 0;
 
 	/**
-	 * ï¿½ffnet ein neues Beobachtungsfenster fï¿½r das Objekt.
+	 * Öffnet ein neues Beobachtungsfenster für das Objekt.
 	 * @author Hj. Malthaner
 	 */
 	virtual void zeige_info();
@@ -119,7 +119,7 @@ public:
 	typ get_typ() const { return verkehr; }
 
 	/**
-	 * @return Einen Beschreibungsstring fï¿½r das Objekt, der z.B. in einem
+	 * @return Einen Beschreibungsstring für das Objekt, der z.B. in einem
 	 * Beobachtungsfenster angezeigt wird.
 	 * @author Hj. Malthaner
 	 * @see simwin

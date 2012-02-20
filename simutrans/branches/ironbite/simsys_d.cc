@@ -180,11 +180,7 @@ END_OF_FUNCTION(my_close_button_callback)
  */
 
 
-<<<<<<< .mine
-int system_init(const int* parameter)
-=======
 bool dr_os_init(int const* parameter)
->>>>>>> .r5221
 {
 	if (allegro_init() != 0) {
 		dr_fatal_notify("Could not init Allegro.\n");
@@ -203,19 +199,13 @@ bool dr_os_init(int const* parameter)
 	LOCK_FUNCTION(my_close_button_callback);
 	set_close_button_callback(my_close_button_callback);
 
-<<<<<<< .mine
-	if (ok != 0) {
-		system_fatal_notify("Could not init Allegro.\n");
-	}
-=======
->>>>>>> .r5221
 	simtimer_init();
 
 	return true;
 }
 
 
-resolution system_query_screen_resolution()
+resolution dr_query_screen_resolution()
 {
 	resolution res;
 	if (get_desktop_resolution(&res.w, &res.h) != 0) {
@@ -226,7 +216,7 @@ resolution system_query_screen_resolution()
 }
 
 
-int system_open(int const w, int const h, int const fullscreen)
+int dr_os_open(int const w, int const h, int const fullscreen)
 {
 	width = w;
 	height = h;
@@ -259,11 +249,7 @@ int system_open(int const w, int const h, int const fullscreen)
 }
 
 
-<<<<<<< .mine
-int system_close(void)
-=======
 void dr_os_close()
->>>>>>> .r5221
 {
 	allegro_exit();
 }
@@ -275,7 +261,7 @@ void dr_os_close()
 
 static BITMAP* texture_map;
 
-unsigned short* system_init_framebuffer(void)
+unsigned short* dr_textur_init(void)
 {
 	texture_map = create_bitmap(width, height);
 	if (texture_map == NULL) {
@@ -307,7 +293,7 @@ void dr_textur(int xp, int yp, int w, int h)
  * @return converted color value
  * @author Hj. Malthaner
  */
-unsigned int system_get_color(unsigned int r, unsigned int g, unsigned int b)
+unsigned int get_system_color(unsigned int r, unsigned int g, unsigned int b)
 {
 #if 1// USE_16BIT_DIB
 	return ((r & 0x00F8) << 8) | ((g & 0x00FC) << 3) | (b >> 3);
@@ -317,32 +303,14 @@ unsigned int system_get_color(unsigned int r, unsigned int g, unsigned int b)
 }
 
 
-<<<<<<< .mine
-void system_set_colors(int first, int count, unsigned char* data)
-{
-	PALETTE p;
-	int n;
-
-	for (n = 0; n < count; n++) {
-		p[n + first].r = data[n * 3 + 0] >> 2;
-		p[n + first].g = data[n * 3 + 1] >> 2;
-		p[n + first].b = data[n * 3 + 2] >> 2;
-	}
-
-	set_palette_range(p, first, first + count - 1, true);
-}
-
-
-=======
->>>>>>> .r5256
-void system_prepare_flush()
+void dr_prepare_flush()
 {
 	return;
 }
 
 
 
-void system_flush_framebuffer(void)
+void dr_flush(void)
 {
 	display_flush_buffer();
 }
@@ -353,10 +321,10 @@ void system_flush_framebuffer(void)
  *         in case of error.
  * @author Hj. Malthaner
  */
-int system_screenshot(const char *filename)
+int dr_screenshot(const char *filename)
 {
 #ifdef WIN32
-	if(system_screenshot_png(filename, width-1, height, width, (short unsigned int *)texture_map, 16)) {
+	if(dr_screenshot_png(filename, width-1, height, width, (short unsigned int *)texture_map, 16)) {
 		return 1;
 	}
 #endif
@@ -366,13 +334,13 @@ int system_screenshot(const char *filename)
 }
 
 
-void system_move_pointer(int x, int y)
+void move_pointer(int x, int y)
 {
 	position_mouse(x, y);
 }
 
 
-void system_set_pointer(int loading)
+void set_pointer(int loading)
 {
 	// not supported
 }
@@ -389,7 +357,7 @@ static inline int recalc_keys(void)
 
 
 
-static void internalsystem_wait_event(void)
+static void internalGetEvents(void)
 {
 	if (event_top_mark != event_bot_mark) {
 		sys_event.type    = event_queue[event_bot_mark++];
@@ -413,7 +381,7 @@ static void internalsystem_wait_event(void)
 }
 
 
-void system_wait_event(void)
+void GetEvents(void)
 {
 	while (event_top_mark == event_bot_mark) {
 		// try to be nice where possible
@@ -421,16 +389,16 @@ void system_wait_event(void)
 	}
 
 	do {
-		internalsystem_wait_event();
+		internalGetEvents();
 	} while(sys_event.type == SIM_MOUSE_MOVE);
 }
 
 
-void system_poll_event(void)
+void GetEventsNoWait(void)
 {
 	if (event_top_mark != event_bot_mark) {
 		do {
-			internalsystem_wait_event();
+			internalGetEvents();
 		} while (event_top_mark != event_bot_mark && sys_event.type == SIM_MOUSE_MOVE);
 	} else {
 		sys_event.type    = SIM_NOEVENT;
@@ -442,7 +410,7 @@ void system_poll_event(void)
 }
 
 
-void system_show_pointer(int yesno)
+void show_pointer(int yesno)
 {
 }
 
@@ -480,19 +448,19 @@ static void simtimer_init(void)
 		printf("Timer installed.\n");
 	}
 	else {
-		system_fatal_notify("Error: Timer not available, aborting.\n");
+		dr_fatal_notify("Error: Timer not available, aborting.\n");
 		exit(1);
 	}
 }
 
 
-unsigned long system_time(void)
+unsigned long dr_time(void)
 {
 	return milli_counter;
 }
 
 
-void system_sleep(uint32 usec)
+void dr_sleep(uint32 usec)
 {
 	rest(usec);
 }
@@ -500,6 +468,6 @@ void system_sleep(uint32 usec)
 
 int main(int argc, char **argv)
 {
-	return system_main(argc, argv);
+	return sysmain(argc, argv);
 }
 END_OF_MAIN()

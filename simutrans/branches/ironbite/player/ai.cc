@@ -23,7 +23,6 @@
 #include "../bauer/wegbauer.h"
 
 #include "../besch/haus_besch.h"
-#include "../besch/weg_besch.h"
 
 #include "../dataobj/loadsave.h"
 
@@ -75,7 +74,7 @@ bool ai_bauplatz_mit_strasse_sucher_t::ist_platz_ok(koord pos, sint16 b, sint16 
  * if there is already a connection
  * @author prissi
  */
-bool ai_t::is_connected( const koord start_pos, const koord dest_pos, const freight_desc_t *wtyp ) const
+bool ai_t::is_connected( const koord start_pos, const koord dest_pos, const ware_besch_t *wtyp ) const
 {
 	// Dario: Check if there's a stop near destination
 	const planquadrat_t* start_plan = welt->lookup(start_pos);
@@ -106,7 +105,7 @@ bool ai_t::is_connected( const koord start_pos, const koord dest_pos, const frei
 
 	// now try to find a route
 	// ok, they are not in walking distance
-	freight_t ware(wtyp);
+	ware_t ware(wtyp);
 	ware.set_zielpos(dest_pos);
 	ware.menge = 1;
 	for (uint16 hh = 0; hh<start_plan->get_haltlist_count(); hh++) {
@@ -125,10 +124,10 @@ bool ai_t::is_connected( const koord start_pos, const koord dest_pos, const frei
 // prepares a general tool just like a player work do
 bool ai_t::init_general_tool( int tool, const char *param )
 {
-	const char *old_param = werkzeug_t::general_tool.get(tool)->get_default_param();
-	werkzeug_t::general_tool.get(tool)->set_default_param(param);
-	bool ok = werkzeug_t::general_tool.get(tool)->init( welt, this );
-	werkzeug_t::general_tool.get(tool)->set_default_param(old_param);
+	const char *old_param = werkzeug_t::general_tool[tool]->get_default_param();
+	werkzeug_t::general_tool[tool]->set_default_param(param);
+	bool ok = werkzeug_t::general_tool[tool]->init( welt, this );
+	werkzeug_t::general_tool[tool]->set_default_param(old_param);
 	return ok;
 }
 
@@ -139,9 +138,9 @@ bool ai_t::call_general_tool( int tool, koord k, const char *param )
 {
 	grund_t *gr = welt->lookup_kartenboden(k);
 	koord3d pos = gr ? gr->get_pos() : koord3d::invalid;
-	const char *old_param = werkzeug_t::general_tool.get(tool)->get_default_param();
-	werkzeug_t::general_tool.get(tool)->set_default_param(param);
-	const char * err = werkzeug_t::general_tool.get(tool)->work( welt, this, pos );
+	const char *old_param = werkzeug_t::general_tool[tool]->get_default_param();
+	werkzeug_t::general_tool[tool]->set_default_param(param);
+	const char * err = werkzeug_t::general_tool[tool]->work( welt, this, pos );
 	if(err) {
 		if(*err) {
 			dbg->message("ai_t::call_general_tool()","failed for tool %i at (%s) because of \"%s\"", tool, pos.get_str(), err );
@@ -150,7 +149,7 @@ bool ai_t::call_general_tool( int tool, koord k, const char *param )
 			dbg->message("ai_t::call_general_tool()","not successful for tool %i at (%s)", tool, pos.get_str() );
 		}
 	}
-	werkzeug_t::general_tool.get(tool)->set_default_param(old_param);
+	werkzeug_t::general_tool[tool]->set_default_param(old_param);
 	return err==0;
 }
 
@@ -364,7 +363,7 @@ bool ai_t::built_update_headquarter()
 			}
 			const char *err="No suitable ground!";
 			if(  place!=koord::invalid  ) {
-				err = werkzeug_t::general_tool.get(WKZ_HEADQUARTER)->work( welt, this, welt->lookup_kartenboden(place)->get_pos() );
+				err = werkzeug_t::general_tool[WKZ_HEADQUARTER]->work( welt, this, welt->lookup_kartenboden(place)->get_pos() );
 				// success
 				if(  err==NULL  ) {
 					return true;

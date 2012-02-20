@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -16,7 +16,7 @@
 
 /**
  * Aktion, die nach Knopfdruck gestartet wird.
- * @author Hj. Malthaner
+ * @author Hansjörg Malthaner
  */
 void load_relief_frame_t::action(const char *filename)
 {
@@ -33,7 +33,7 @@ bool load_relief_frame_t::del_action(const char *filename)
 }
 
 
-load_relief_frame_t::load_relief_frame_t(settings_t* const sets) : savegame_frame_t(NULL, "maps/", false)
+load_relief_frame_t::load_relief_frame_t(settings_t* const sets) : savegame_frame_t(NULL, "maps/")
 {
 	set_name( translator::translate("Laden") );
 	this->sets = sets;

@@ -35,7 +35,7 @@ class karte_t;
 class loadsave_t;
 
 
-class fahrplan_gui_stats_t : public gui_component_t
+class fahrplan_gui_stats_t : public gui_komponente_t
 {
 private:
 	static karte_t *welt;
@@ -142,11 +142,11 @@ public:
 
 	bool infowin_event(event_t const*) OVERRIDE;
 
-	const char *get_help_file() const {return "schedule.txt";}
+	const char *get_hilfe_datei() const {return "schedule.txt";}
 
 	/**
 	 * Zeichnet das Frame
-	 * @author Hj. Malthaner
+	 * @author Hansjörg Malthaner
 	 */
 	void zeichnen(koord pos, koord gr);
 
@@ -154,7 +154,7 @@ public:
 	 * Set window size and adjust component sizes and/or positions accordingly
 	 * @author Hj. Malthaner
 	 */
-	virtual void set_window_size(koord groesse);
+	virtual void set_fenstergroesse(koord groesse);
 
 	/**
 	 * show or hide the line selector combobox and its associated label

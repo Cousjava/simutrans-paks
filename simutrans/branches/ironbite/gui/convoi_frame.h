@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -18,7 +18,7 @@
 #include "../tpl/vector_tpl.h"
 
 class spieler_t;
-class freight_desc_t;
+class ware_besch_t;
 
 /**
  * Displays a scrollable list of all convois of a player
@@ -96,7 +96,7 @@ private:
 
 	static char name_filter_value[64];
 
-	static slist_tpl<const freight_desc_t *> waren_filter;
+	static slist_tpl<const ware_besch_t *> waren_filter;
 
 	static bool compare_convois(convoihandle_t, convoihandle_t);
 
@@ -137,7 +137,7 @@ public:
 	void resize(const koord size_change);                       // 28-Dec-01        Markus Weber Added
 
 	/**
-	 * komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
+	 * komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
 	 * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
 	 * in dem die Komponente dargestellt wird.
 	 * @author Hj. Malthaner
@@ -146,10 +146,10 @@ public:
 
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.
-	 * @return den Dateinamen fï¿½r die Hilfe, oder NULL
+	 * @return den Dateinamen für die Hilfe, oder NULL
 	 * @author V. Meyer
 	 */
-	const char * get_help_file() const {return "convoi.txt"; }
+	const char * get_hilfe_datei() const {return "convoi.txt"; }
 
 	static sort_mode_t get_sortierung() { return sortby; }
 	static void set_sortierung(sort_mode_t sm) { sortby = sm; }
@@ -162,9 +162,9 @@ public:
 
 	static char *access_name_filter() { return name_filter_value; }
 
-	static bool get_ware_filter(const freight_desc_t *ware) { return waren_filter.is_contained(ware); }
+	static bool get_ware_filter(const ware_besch_t *ware) { return waren_filter.is_contained(ware); }
 	// mode: 0=off, 1=on, -1=toggle
-	static void set_ware_filter(const freight_desc_t *ware, int mode);
+	static void set_ware_filter(const ware_besch_t *ware, int mode);
 	static void set_alle_ware_filter(int mode);
 
 	bool action_triggered(gui_action_creator_t*, value_t) OVERRIDE;

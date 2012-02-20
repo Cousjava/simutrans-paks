@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2003 Hj. Malthaner
+ * Copyright (c) 1997 - 2003 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -46,9 +46,8 @@ powernet_t::load_net(powernet_t *key)
 
 void powernet_t::step_all(long delta_t)
 {
-	slist_iterator_tpl<powernet_t *> powernet_iter( powernet_list );
-	while(  powernet_iter.next()  ) {
-		powernet_iter.get_current()->step( delta_t );
+	FOR(slist_tpl<powernet_t*>, const p, powernet_list) {
+		p->step(delta_t);
 	}
 }
 

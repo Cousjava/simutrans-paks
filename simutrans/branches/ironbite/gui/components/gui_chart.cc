@@ -12,7 +12,6 @@
 #include "../../simgraph.h"
 #include "../../simcolor.h"
 #include "../../simwin.h"
-#include "../../simevent.h"
 
 static char tooltip[64];
 
@@ -26,7 +25,7 @@ void gui_chart_t::set_background(int i)
 }
 
 
-gui_chart_t::gui_chart_t() : gui_component_t()
+gui_chart_t::gui_chart_t() : gui_komponente_t()
 {
 	// no toolstips at the start
 	tooltipkoord = koord::invalid;
@@ -177,8 +176,7 @@ void gui_chart_t::zeichnen(koord offset)
 	}
 
 	// draw chart's curves
-	for (slist_iterator_tpl<curve_t> i(curves); i.next();) {
-		const curve_t& c = i.get_current();
+	FOR(slist_tpl<curve_t>, const& c, curves) {
 		if (c.show) {
 			// for each curve iterate through all elements and display curve
 			for (int i=0;i<c.elements;i++) {
@@ -197,7 +195,7 @@ void gui_chart_t::zeichnen(koord offset)
 				// display tooltip?
 				if(i==tooltip_n  &&  abs((int)(baseline-(int)(tmp/scale)-tooltipkoord.y))<10) {
 					number_to_string(tooltip, (double)tmp, c.precision);
-					win_set_tooltip( get_mouse_x()+8, get_mouse_y()-12, tooltip );
+					win_set_tooltip( get_maus_x()+8, get_maus_y()-12, tooltip );
 				}
 
 				// draw line between two financial markers; this is only possible from the second value on
@@ -230,8 +228,7 @@ void gui_chart_t::zeichnen(koord offset)
 	}
 
 	// draw chart's lines
-	for(  slist_iterator_tpl<line_t> i(lines);  i.next();  ) {
-		const line_t &line = i.get_current();
+	FOR(slist_tpl<line_t>, const& line, lines) {
 		if(  line.show  ) {
 			tmp = ( line.convert ? line.convert(*(line.value)) : *(line.value) );
 			for(  int t=0;  t<line.times;  ++t  ) {
@@ -241,7 +238,7 @@ void gui_chart_t::zeichnen(koord offset)
 				// display tooltip?
 				if(  t==tooltip_n  &&  abs((int)(baseline-(int)(tmp/scale)-tooltipkoord.y))<10  ) {
 					number_to_string(tooltip, (double)tmp, line.precision);
-					win_set_tooltip( get_mouse_x()+8, get_mouse_y()-12, tooltip );
+					win_set_tooltip( get_maus_x()+8, get_maus_y()-12, tooltip );
 				}
 				// for the first element print the current value (optionally)
 				// only print value if not too close to min/max/zero
@@ -272,8 +269,7 @@ void gui_chart_t::calc_gui_chart_values(sint64 *baseline, float *scale, char *cm
 	int precision = 0;
 
 	// first, check curves
-	for(  slist_iterator_tpl<curve_t> i(curves);  i.next();  ) {
-		const curve_t& c = i.get_current();
+	FOR(slist_tpl<curve_t>, const& c, curves) {
 		if(  c.show  ) {
 			for(  int i=0;  i<c.elements;  i++  ) {
 				tmp = c.values[i*c.size+c.offset];
@@ -297,8 +293,7 @@ void gui_chart_t::calc_gui_chart_values(sint64 *baseline, float *scale, char *cm
 	}
 
 	// second, check lines
-	for(  slist_iterator_tpl<line_t> i(lines);  i.next();  ) {
-		const line_t &line = i.get_current();
+	FOR(slist_tpl<line_t>, const& line, lines) {
 		if(  line.show  ) {
 			tmp = ( line.convert ? line.convert(*(line.value)) : *(line.value) );
 			if(  min>tmp  ) {

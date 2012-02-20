@@ -1,5 +1,5 @@
 /*
- *  Copyright (c) 1997 - 2002 by Volker Meyer & Hj. Malthaner
+ *  Copyright (c) 1997 - 2002 by Volker Meyer & Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  */
@@ -20,11 +20,11 @@ class checksum_t;
  *  Kindknoten:
  *	0   Name
  *	1   Copyright
- *	2   Text Maï¿½einheit
+ *	2   Text Maßeinheit
  */
-class freight_desc_t : public obj_besch_std_name_t {
+class ware_besch_t : public obj_besch_std_name_t {
 	friend class good_reader_t;
-	friend class freight_builder_t;
+	friend class warenbauer_t;
 
 	/*
 	* The base value is the one for multiplier 1000.
@@ -46,7 +46,7 @@ class freight_desc_t : public obj_besch_std_name_t {
 	*/
 	uint8 catg_index;
 
-	// used for inderect index (saves 3 bytes per freight_t!)
+	// used for inderect index (saves 3 bytes per ware_t!)
 	// assinged during registration
 	uint8 ware_index;
 
@@ -117,7 +117,7 @@ public:
 	*
 	* @author Hj. Malthaner
 	*/
-	bool is_interchangeable(const freight_desc_t *other) const
+	bool is_interchangeable(const ware_besch_t *other) const
 	{
 		return catg_index == other->get_catg_index();
 	}

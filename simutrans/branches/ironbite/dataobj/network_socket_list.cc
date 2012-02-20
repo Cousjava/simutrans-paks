@@ -131,17 +131,17 @@ void socket_list_t::book_state_change(uint8 state, sint8 incr)
 
 void socket_list_t::change_state(uint32 id, uint8 new_state)
 {
-	book_state_change(list.get(id)->state, -1);
-	list.get(id)->state = new_state;
-	list.get(id)->player_unlocked = 0;
-	book_state_change(list.get(id)->state, +1);
+	book_state_change(list[id]->state, -1);
+	list[id]->state = new_state;
+	list[id]->player_unlocked = 0;
+	book_state_change(list[id]->state, +1);
 }
 
 
 void socket_list_t::reset()
 {
-	for(uint32 j=0; j<list.get_count(); j++) {
-		list.get(j)->reset();
+	FOR(vector_tpl<socket_info_t*>, const i, list) {
+		i->reset();
 	}
 	connected_clients = 0;
 	playing_clients = 0;
@@ -152,7 +152,7 @@ void socket_list_t::reset()
 void socket_list_t::reset_clients()
 {
 	for(uint32 j=server_sockets; j<list.get_count(); j++) {
-		list.get(j)->reset();
+		list[j]->reset();
 	}
 	connected_clients = 0;
 	playing_clients = 0;
@@ -165,18 +165,18 @@ void socket_list_t::add_client( SOCKET sock, uint32 ip )
 	uint32 i = list.get_count();
 	// check whether socket already added
 	for(  uint32 j=server_sockets;  j<list.get_count();  j++  ) {
-		if(  list.get(j)->socket == sock  &&  list.get(j)->state != socket_info_t::inactive  ) {
+		if(  list[j]->socket == sock  &&  list[j]->state != socket_info_t::inactive  ) {
 			return;
 		}
-		if(  list.get(j)->state == socket_info_t::inactive  &&  i == list.get_count()  ) {
+		if(  list[j]->state == socket_info_t::inactive  &&  i == list.get_count()  ) {
 			i = j;
 		}
 	}
 	if(  i == list.get_count()  ) {
 		list.append(new socket_info_t() );
 	}
-	list.get(i)->socket = sock;
-	list.get(i)->address = net_address_t(ip, 0);
+	list[i]->socket = sock;
+	list[i]->address = net_address_t(ip, 0);
 	change_state( i, socket_info_t::connected );
 
 	network_set_socket_nodelay( sock );
@@ -190,10 +190,10 @@ void socket_list_t::add_server( SOCKET sock )
 	uint32 i = server_sockets;
 	// check whether socket already added
 	for(uint32 j=0; j<server_sockets; j++) {
-		if (list.get(j)->socket == sock  &&  list.get(j)->state == socket_info_t::server) {
+		if (list[j]->socket == sock  &&  list[j]->state == socket_info_t::server) {
 			return;
 		}
-		if (list.get(j)->state == socket_info_t::inactive  &&  i == server_sockets) {
+		if (list[j]->state == socket_info_t::inactive  &&  i == server_sockets) {
 			i = j;
 		}
 	}
@@ -201,7 +201,7 @@ void socket_list_t::add_server( SOCKET sock )
 		list.insert_at(server_sockets, new socket_info_t());
 		server_sockets++;
 	}
-	list.get(i)->socket = sock;
+	list[i]->socket = sock;
 	change_state(i, socket_info_t::server);
 
 	network_set_socket_nodelay( sock );
@@ -212,9 +212,9 @@ bool socket_list_t::remove_client( SOCKET sock )
 {
 	dbg->message("socket_list_t::remove_client", "remove client socket[%d]", sock);
 	for(uint32 j=0; j<list.get_count(); j++) {
-		if (list.get(j)->socket == sock) {
+		if (list[j]->socket == sock) {
 			change_state(j, socket_info_t::inactive);
-			list.get(j)->reset();
+			list[j]->reset();
 
 			network_close_socket(sock);
 			return true;
@@ -232,7 +232,7 @@ bool socket_list_t::has_client( SOCKET sock )
 
 uint32 socket_list_t::get_client_id( SOCKET sock ){
 	for(uint32 j=0; j<list.get_count(); j++) {
-		if (list.get(j)->state != socket_info_t::inactive  &&  list.get(j)->socket == sock) {
+		if (list[j]->state != socket_info_t::inactive  &&  list[j]->socket == sock) {
 			return j;
 		}
 	}
@@ -245,24 +245,24 @@ void socket_list_t::unlock_player_all(uint8 player_nr, bool unlock, uint32 excep
 // nettool does not know about nwc_auth_player_t
 #ifndef NETTOOL
 	for(uint32 i=0; i<list.get_count(); i++) {
-		if (i!=except_client  &&  (i==0  ||  list.get(i)->state == socket_info_t::playing) ) {
-			uint16 old_player_unlocked = list.get(i)->player_unlocked;
+		if (i!=except_client  &&  (i==0  ||  list[i]->state == socket_info_t::playing) ) {
+			uint16 old_player_unlocked = list[i]->player_unlocked;
 			if (unlock) {
-				list.get(i)->unlock_player(player_nr);
+				list[i]->unlock_player(player_nr);
 			}
 			else {
-				list.get(i)->lock_player(player_nr);
+				list[i]->lock_player(player_nr);
 			}
-			if (old_player_unlocked != list.get(i)->player_unlocked) {
-				dbg->warning("socket_list_t::unlock_player_all", "old = %d  new = %d  id = %d", old_player_unlocked, list.get(i)->player_unlocked, i);
+			if (old_player_unlocked != list[i]->player_unlocked) {
+				dbg->warning("socket_list_t::unlock_player_all", "old = %d  new = %d  id = %d", old_player_unlocked, list[i]->player_unlocked, i);
 				// tell the player
 				nwc_auth_player_t *nwc = new nwc_auth_player_t();
-				nwc->player_unlocked = list.get(i)->player_unlocked;
+				nwc->player_unlocked = list[i]->player_unlocked;
 				if (i==0) {
 					network_send_server(nwc);
 				}
 				else {
-					nwc->send(list.get(i)->socket);
+					nwc->send(list[i]->socket);
 					delete nwc;
 				}
 			}
@@ -282,11 +282,11 @@ void socket_list_t::send_all(network_command_t* nwc, bool only_playing_clients)
 		return;
 	}
 	for(uint32 i=server_sockets; i<list.get_count(); i++) {
-		if (list.get(i)->is_active()  &&  list.get(i)->socket!=INVALID_SOCKET
-			&&  (!only_playing_clients  ||  list.get(i)->state == socket_info_t::playing)) {
+		if (list[i]->is_active()  &&  list[i]->socket!=INVALID_SOCKET
+			&&  (!only_playing_clients  ||  list[i]->state == socket_info_t::playing)) {
 
 			packet_t *p = nwc->copy_packet();
-			list.get(i)->send_queue_append(p);
+			list[i]->send_queue_append(p);
 		}
 	}
 }
@@ -295,9 +295,9 @@ void socket_list_t::send_all(network_command_t* nwc, bool only_playing_clients)
 SOCKET socket_list_t::fill_set(fd_set *fds)
 {
 	SOCKET s_max = 0;
-	for(uint32 i=0; i<list.get_count(); i++) {
-		if(  list.get(i)->state != socket_info_t::inactive  &&  list.get(i)->socket!=INVALID_SOCKET  ) {
-			SOCKET s = list.get(i)->socket;
+	FOR(vector_tpl<socket_info_t*>, const i, list) {
+		if (i->state != socket_info_t::inactive && i->socket != INVALID_SOCKET) {
+			SOCKET const s = i->socket;
 			s_max = max( s, s_max );
 			FD_SET( s, fds );
 		}
@@ -312,7 +312,7 @@ SOCKET socket_list_t::fd_isset(fd_set *fds, bool use_server_sockets, uint32 *off
 	const uint32 end   = use_server_sockets ? server_sockets : list.get_count();
 
 	for(uint32 i=begin; i<end; i++) {
-		const SOCKET socket = list.get(i)->socket;
+		const SOCKET socket = list[i]->socket;
 		if (socket!=INVALID_SOCKET) {
 			if(  FD_ISSET(socket, fds)  ) {
 				if (offset) {
@@ -360,9 +360,9 @@ void socket_list_t::rdwr(packet_t *p, vector_tpl<socket_info_t*> *list)
 		if (p->is_loading()) {
 			list->append(new socket_info_t());
 		}
-		p->rdwr_byte(list->get(i)->state);
-		if (list->get(i)->state==socket_info_t::playing) {
-			list->get(i)->rdwr(p);
+		p->rdwr_byte((*list)[i]->state);
+		if ( (*list)[i]->state==socket_info_t::playing) {
+			(*list)[i]->rdwr(p);
 		}
 	}
 }

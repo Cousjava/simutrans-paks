@@ -1,5 +1,5 @@
 /*
- *  Copyright (c) 1997 - 2002 by Volker Meyer & Hj. Malthaner
+ *  Copyright (c) 1997 - 2002 by Volker Meyer & Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  */
@@ -147,7 +147,7 @@ private:
 	uint16  verbrauch;
 
 public:
-	freight_desc_t const* get_ware() const { return get_child<freight_desc_t>(0); }
+	ware_besch_t const* get_ware() const { return get_child<ware_besch_t>(0); }
 	int get_kapazitaet() const { return kapazitaet; }
 	int get_anzahl() const { return anzahl; }
 	int get_verbrauch() const { return verbrauch; }
@@ -179,7 +179,7 @@ private:
     uint16 faktor;
 
 public:
-	freight_desc_t const* get_ware() const { return get_child<freight_desc_t>(0); }
+	ware_besch_t const* get_ware() const { return get_child<ware_besch_t>(0); }
 	uint32 get_kapazitaet() const { return kapazitaet; }
 	uint32 get_faktor() const { return faktor; }
 	void calc_checksum(checksum_t *chk) const;
@@ -234,7 +234,7 @@ private:
 
 public:
 	/*
-	* Name und Copyright sind beim Gebï¿½ude gespeichert!
+	* Name und Copyright sind beim Gebäude gespeichert!
 	*/
 	const char *get_name() const { return get_haus()->get_name(); }
 	const char *get_copyright() const { return get_haus()->get_copyright(); }
@@ -256,6 +256,9 @@ public:
 		}
 		return get_child<field_group_besch_t>(2 + lieferanten + produkte);
 	}
+
+	bool is_consumer_only() const { return produkte    == 0; }
+	bool is_producer_only() const { return lieferanten == 0; }
 
 	int get_lieferanten() const { return lieferanten; }
 	uint get_produkte() const { return produkte; }

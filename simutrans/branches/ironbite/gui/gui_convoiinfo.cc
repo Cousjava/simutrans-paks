@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -84,7 +84,7 @@ void gui_convoiinfo_t::zeichnen(koord offset)
 		const int xoff = max(190, max_x);
 		int left = pos.x+offset.x+xoff+4;
 		for(unsigned i=0; i<cnv->get_vehikel_anzahl();i++) {
-			int x, y, w, h;
+			KOORD_VAL x, y, w, h;
 			const image_id bild=cnv->get_vehikel(i)->get_basis_bild();
 			display_get_base_image_offset(bild, &x, &y, &w, &h );
 			display_base_img(bild,left-x,pos.y+offset.y+13-y-h/2,cnv->get_besitzer()->get_player_nr(),false,true);

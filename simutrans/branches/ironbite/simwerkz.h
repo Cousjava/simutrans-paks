@@ -8,15 +8,23 @@
 #define simwerkz2_h
 
 #include "simtypes.h"
-#include "simimg.h"
+#include "simskin.h"
+#include "simworld.h"
 #include "simmenu.h"
 #include "simdings.h"
+
+#include "besch/way_obj_besch.h"
+
+#include "boden/wege/schiene.h"
 
 #include "dataobj/umgebung.h"
 #include "dataobj/translator.h"
 
+#include "dings/baum.h"
+
 #include "player/simplay.h"
 
+#include "tpl/slist_tpl.h"
 
 class koord3d;
 class koord;
@@ -25,7 +33,6 @@ class haus_besch_t;
 class roadsign_besch_t;
 class weg_besch_t;
 class route_t;
-class way_obj_besch_t;
 
 /****************************** helper functions: *****************************/
 
@@ -63,9 +70,7 @@ private:
 public:
 	wkz_raise_t() : werkzeug_t() { offset = Z_GRID; id = WKZ_RAISE_LAND | GENERAL_TOOL; }
 	char const* get_tooltip(spieler_t const* const sp) const OVERRIDE { return tooltip_with_price("Anheben", sp->get_welt()->get_settings().cst_alter_land); }
-
-	image_id get_icon(spieler_t*) const OVERRIDE;
-
+	image_id get_icon(spieler_t*) const OVERRIDE { return grund_t::underground_mode==grund_t::ugm_all ? IMG_LEER : icon; }
 	bool init(karte_t*, spieler_t*) OVERRIDE { is_dragging = false; return true; }
 	bool exit(karte_t*, spieler_t*) OVERRIDE { is_dragging = false; return true; }
 	char const* check_pos(karte_t*, spieler_t*, koord3d) OVERRIDE;
@@ -81,9 +86,7 @@ private:
 public:
 	wkz_lower_t() : werkzeug_t() { offset = Z_GRID; id = WKZ_LOWER_LAND | GENERAL_TOOL;  }
 	char const* get_tooltip(spieler_t const* const sp) const OVERRIDE { return tooltip_with_price("Absenken", sp->get_welt()->get_settings().cst_alter_land); }
-
-	image_id get_icon(spieler_t*) const OVERRIDE;
-
+	image_id get_icon(spieler_t*) const OVERRIDE { return grund_t::underground_mode==grund_t::ugm_all ? IMG_LEER : icon; }
 	bool init(karte_t*, spieler_t*) OVERRIDE { is_dragging = false; return true; }
 	bool exit(karte_t*, spieler_t*) OVERRIDE { is_dragging = false; return true; }
 	char const* check_pos(karte_t*, spieler_t*, koord3d) OVERRIDE;
@@ -220,7 +223,7 @@ public:
 	char const* get_default_param(spieler_t*) const OVERRIDE;
 	bool is_selected(karte_t const*) const OVERRIDE;
 	bool init(karte_t*, spieler_t*) OVERRIDE;
-	bool is_move_network_save(spieler_t* const sp) const OVERRIDE;
+	bool is_move_network_save(spieler_t* const sp) const OVERRIDE { return two_click_werkzeug_t::is_move_network_save(sp) && (besch && (besch->get_styp() != 1 || besch->get_wtyp() == air_wt)); }
 	bool is_init_network_save() const OVERRIDE { return true; }
 };
 
@@ -244,9 +247,7 @@ private:
 	uint8 is_valid_pos(karte_t*, spieler_t*, koord3d const&, char const*&, koord3d const&) OVERRIDE;
 public:
 	wkz_brueckenbau_t() : two_click_werkzeug_t() { id = WKZ_BRUECKENBAU | GENERAL_TOOL; }
-
-	image_id get_icon(spieler_t*) const OVERRIDE;
-
+	image_id get_icon(spieler_t*) const OVERRIDE { return grund_t::underground_mode==grund_t::ugm_all ? IMG_LEER : icon; }
 	char const* get_tooltip(spieler_t const*) const OVERRIDE;
 	bool is_move_network_save(spieler_t*) const OVERRIDE { return false;}
 	bool is_init_network_save() const OVERRIDE { return true; }
@@ -688,11 +689,12 @@ class wkz_show_grid_t : public werkzeug_t {
 public:
 	wkz_show_grid_t() : werkzeug_t() { id = WKZ_SHOW_GRID | SIMPLE_TOOL; }
 	char const* get_tooltip(spieler_t const*) const OVERRIDE { return translator::translate("show grid"); }
-
-	bool is_selected(karte_t const*) const OVERRIDE;
-
-	bool init( karte_t *welt, spieler_t * );
-
+	bool is_selected(karte_t const*) const OVERRIDE { return grund_t::show_grid; }
+	bool init( karte_t *welt, spieler_t * ) {
+		grund_t::toggle_grid();
+		welt->set_dirty();
+		return false;
+	}
 	bool exit( karte_t *w, spieler_t *s ) { return init(w,s); }
 	bool is_init_network_save() const OVERRIDE { return true; }
 	bool is_work_network_save() const OVERRIDE { return true; }
@@ -773,7 +775,12 @@ class wkz_fill_trees_t : public werkzeug_t {
 public:
 	wkz_fill_trees_t() : werkzeug_t() { id = WKZ_FILL_TREES | SIMPLE_TOOL; }
 	char const* get_tooltip(spieler_t const*) const OVERRIDE { return translator::translate("Fill trees"); }
-	bool init( karte_t *welt, spieler_t * );
+	bool init( karte_t *welt, spieler_t * ) {
+		if(  default_param  ) {
+			baum_t::fill_trees( welt, atoi(default_param) );
+		}
+		return false;
+	}
 };
 
 /* change day/night view manually */
@@ -831,8 +838,12 @@ class wkz_toggle_reservation_t : public werkzeug_t {
 public:
 	wkz_toggle_reservation_t() : werkzeug_t() { id = WKZ_TOGGLE_RESERVATION | SIMPLE_TOOL; }
 	char const* get_tooltip(spieler_t const*) const OVERRIDE { return translator::translate("show/hide block reservations"); }
-	bool is_selected(karte_t const*) const OVERRIDE;
-	bool init( karte_t *welt, spieler_t * );
+	bool is_selected(karte_t const*) const OVERRIDE { return schiene_t::show_reservations; }
+	bool init( karte_t *welt, spieler_t * ) {
+		schiene_t::show_reservations ^= 1;
+		welt->set_dirty();
+		return false;
+	}
 	bool is_init_network_save() const OVERRIDE { return true; }
 	bool is_work_network_save() const OVERRIDE { return true; }
 };

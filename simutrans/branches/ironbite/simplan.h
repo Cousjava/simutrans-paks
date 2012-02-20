@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  * (see license.txt)
@@ -9,18 +9,20 @@
 #define simplan_h
 
 #include "halthandle_t.h"
-#include "dataobj/koord.h"
-// #include "boden/grund.h"
+#include "boden/grund.h"
 
 
 class karte_t;
 class grund_t;
 class ding_t;
 
+class planquadrat_t;
+void swap(planquadrat_t& a, planquadrat_t& b);
+
 
 /**
  * Die Karte ist aus Planquadraten zusammengesetzt.
- * Planquadrate speichern Untergrï¿½nde (Bï¿½den) der Karte.
+ * Planquadrate speichern Untergründe (Böden) der Karte.
  * @author Hj. Malthaner
  */
 class planquadrat_t
@@ -34,7 +36,7 @@ private:
 	/* only one station per ground xy tile */
 	halthandle_t this_halt;
 
-	union {
+	union DATA {
 		grund_t ** some;    // valid if capacity > 1
 		grund_t * one;      // valid if capacity == 1
 	} data;
@@ -42,12 +44,18 @@ private:
 public:
 	/**
 	 * Constructs a planquadrat with initial capacity of one ground
-	 * @author Hj. Malthaner
+	 * @author Hansjörg Malthaner
 	 */
 	planquadrat_t() { ground_size=0; data.one = NULL; halt_list_count=0;  halt_list=NULL; }
 
 	~planquadrat_t();
 
+private:
+	planquadrat_t(planquadrat_t const&);
+	planquadrat_t& operator=(planquadrat_t const&);
+	friend void swap(planquadrat_t& a, planquadrat_t& b);
+
+public:
 	/**
 	* Setzen des "normalen" Bodens auf Kartenniveau
 	* @author V. Meyer
@@ -55,35 +63,50 @@ public:
 	void kartenboden_setzen(grund_t *bd);
 
 	/**
-	* Ersetzt Boden alt durch neu, lï¿½scht Boden alt.
-	* @author Hj. Malthaner
+	* Ersetzt Boden alt durch neu, löscht Boden alt.
+	* @author Hansjörg Malthaner
 	*/
 	void boden_ersetzen(grund_t *alt, grund_t *neu);
 
 	/**
-	* Setzen einen Brï¿½cken- oder Tunnelbodens
+	* Setzen einen Brücken- oder Tunnelbodens
 	* @author V. Meyer
 	*/
 	void boden_hinzufuegen(grund_t *bd);
 
 	/**
-	* Lï¿½schen eines Brï¿½cken- oder Tunnelbodens
+	* Löschen eines Brücken- oder Tunnelbodens
 	* @author V. Meyer
 	*/
 	bool boden_entfernen(grund_t *bd);
 
 	/**
-	 * Return either ground tile in this height or NULL if not existing
-	 * 
-	 * @return NULL if not ground in this height
-	 * @author Hj. Malthaner
-	 */
-	grund_t *get_boden_in_hoehe(const int z) const;
+	* Return either ground tile in this height or NULL if not existing
+	* Inline, since called from karte_t::lookup() and thus extremely often
+	* @return NULL if not ground in this height
+	* @author Hj. Malthaner
+	*/
+	inline grund_t *get_boden_in_hoehe(const sint16 z) const {
+		if(ground_size==1) {
+			// must be valid ground at this point!
+			if(  data.one->get_hoehe() == z  ) {
+				return data.one;
+			}
+		}
+		else {
+			for(  uint8 i = 0;  i < ground_size;  i++  ) {
+				if(  data.some[i]->get_hoehe() == z  ) {
+					return data.some[i];
+				}
+			}
+		}
+		return NULL;
+	}
 
 	/**
 	* returns normal ground (always first index)
 	* @return not defined if no ground (must not happen!)
-	* @author Hj. Malthaner
+	* @author Hansjörg Malthaner
 	*/
 	inline grund_t *get_kartenboden() const { return (ground_size<=1) ? data.one : data.some[0]; }
 
@@ -104,7 +127,7 @@ public:
 	inline grund_t *get_boden_bei(const unsigned idx) const { return (ground_size<=1 ? data.one : data.some[idx]); }
 
 	/**
-	* @return Anzahl der Bï¿½den dieses Planquadrats
+	* @return Anzahl der Böden dieses Planquadrats
 	* @author Hj. Malthaner
 	*/
 	unsigned int get_boden_count() const { return ground_size; }
@@ -116,7 +139,7 @@ public:
 	void abgesenkt(karte_t *welt);
 
 	/**
-	* konvertiert Wasser zu Land wenn ï¿½ber Grundwasserniveau angehoben
+	* konvertiert Wasser zu Land wenn über Grundwasserniveau angehoben
 	* @author Hj. Malthaner
 	*/
 	void angehoben(karte_t *welt);

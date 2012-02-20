@@ -16,7 +16,6 @@
 #define TRANSPARENT75_FLAG (0x6000)
 #define OUTLINE_FLAG (0x0800)
 
-
 // Menuefarben (aendern sich nicht von Tag zu Nacht)
 #define MN_GREY0  (229)
 #define MN_GREY1  (230)

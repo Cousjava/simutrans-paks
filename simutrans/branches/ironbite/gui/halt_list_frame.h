@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  * Written (w) 2001 Markus Weber
  *
  * This file is part of the Simutrans project under the artistic licence.
@@ -19,7 +19,7 @@
 #include "../tpl/vector_tpl.h"
 
 class spieler_t;
-class freight_desc_t;
+class ware_besch_t;
 
 /**
  * Displays a scrollable list of all stations of a player
@@ -86,17 +86,10 @@ private:
 
     static char name_filter_value[64];
 
-    static slist_tpl<const freight_desc_t *> waren_filter_ab;
-    static slist_tpl<const freight_desc_t *> waren_filter_an;
+    static slist_tpl<const ware_besch_t *> waren_filter_ab;
+    static slist_tpl<const ware_besch_t *> waren_filter_an;
 
     static bool compare_halts(halthandle_t, halthandle_t);
-
-    /**
-     * Check all filters for one halt.
-     * returns true, if it is not filtered away.
-     * @author V. Meyer
-     */
-    static bool passes_filter(halthandle_t halt);
 
 public:
     halt_list_frame_t(spieler_t *sp);
@@ -119,7 +112,7 @@ public:
     void resize(const koord size_change);
 
 	/**
-     * komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
+     * komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
      * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
      * in dem die Komponente dargestellt wird.
      * @author Hj. Malthaner
@@ -134,10 +127,10 @@ public:
 
     /**
      * Manche Fenster haben einen Hilfetext assoziiert.
-     * @return den Dateinamen fï¿½r die Hilfe, oder NULL
+     * @return den Dateinamen für die Hilfe, oder NULL
      * @author V. Meyer
      */
-    const char *get_help_file() const {return "haltlist.txt"; }
+    const char *get_hilfe_datei() const {return "haltlist.txt"; }
 
     static sort_mode_t get_sortierung() { return sortby; }
     static void set_sortierung(sort_mode_t sm) { sortby = sm; }
@@ -150,12 +143,12 @@ public:
 
     static char *access_name_filter() { return name_filter_value; }
 
-    static bool get_ware_filter_ab(const freight_desc_t *ware) { return waren_filter_ab.is_contained(ware); }
-    static void set_ware_filter_ab(const freight_desc_t *ware, int mode);
+    static bool get_ware_filter_ab(const ware_besch_t *ware) { return waren_filter_ab.is_contained(ware); }
+    static void set_ware_filter_ab(const ware_besch_t *ware, int mode);
     static void set_alle_ware_filter_ab(int mode);
 
-    static bool get_ware_filter_an(const freight_desc_t *ware) { return waren_filter_an.is_contained(ware); }
-    static void set_ware_filter_an(const freight_desc_t *ware, int mode);
+    static bool get_ware_filter_an(const ware_besch_t *ware) { return waren_filter_an.is_contained(ware); }
+    static void set_ware_filter_an(const ware_besch_t *ware, int mode);
     static void set_alle_ware_filter_an(int mode);
 
 	bool action_triggered(gui_action_creator_t*, value_t) OVERRIDE;

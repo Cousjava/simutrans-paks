@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  * (see license.txt)
@@ -94,17 +94,6 @@ public:
 		}
 		nodes[index] = item;
 		node_count ++;
-	}
-
-	/**
-	* Checks if the given element is already contained in the queue.
-	*
-	* @author Hj. Malthaner
-	*/
-	bool contains(const T data) const
-	{
-		// the fact that we are sorted does not help here ...
-		assert(0);
 	}
 
 

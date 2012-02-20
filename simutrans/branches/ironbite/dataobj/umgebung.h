@@ -1,8 +1,8 @@
 /*
- * Hier werden die Kommandozeilenparametr in fï¿½r das Spiel
+ * Hier werden die Kommandozeilenparametr in für das Spiel
  * nutzbarer Form gespeichert.
  *
- * von Hj. Malthaner, November 2000
+ * von Hansjörg Malthaner, November 2000
  */
 
 #ifndef dataobj_umgebung_h
@@ -23,7 +23,7 @@
 
 /**
  * Diese Klasse bildet eine Abstraktion der Kommandozeilenparameter.
- * Alle Attribute sind statisch, damit sie ï¿½berall zugï¿½nglich sind.
+ * Alle Attribute sind statisch, damit sie überall zugänglich sind.
  * Das ist kein Problem, denn sie existieren garantiert nur einmal!
  *
  * The game specific stuff is in default_einstellungen, to keep them centralized ...
@@ -133,7 +133,7 @@ public:
 	static uint16 cursor_hide_range;
 
 	/**
-	* Namen (Stï¿½dte, Haltestellen) anzeigen? (0 .. 3)
+	* Namen (Städte, Haltestellen) anzeigen? (0 .. 3)
 	* lable type 4..7
 	*
 	* @author Hj. Malthaner
@@ -166,14 +166,14 @@ public:
 	static uint32 moving_object_probability;
 
 	/**
-	* Info-Fenster fï¿½r Fussgï¿½nger und Privatfahrzeuge
+	* Info-Fenster für Fussgänger und Privatfahrzeuge
 	*
 	* @author Hj. Malthaner
 	*/
 	static bool verkehrsteilnehmer_info;
 
 	/**
-	* Info-Fenster fï¿½r Bï¿½ume
+	* Info-Fenster für Bäume
 	* @author prissi
 	*/
 	static bool tree_info;
@@ -185,7 +185,7 @@ public:
 	static bool ground_info;
 
 	/**
-	* Info-Fenster fï¿½r Townhall
+	* Info-Fenster für Townhall
 	* @author prissi
 	*/
 	static bool townhall_info;
@@ -217,7 +217,7 @@ public:
 	static sint8 default_mapmode;
 
 	/**
-	* Max. Lï¿½nge fï¿½r initiale Stadtverbindungen
+	* Max. Länge für initiale Stadtverbindungen
 	*
 	* @author Hj. Malthaner
 	*/

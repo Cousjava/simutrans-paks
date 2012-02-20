@@ -59,7 +59,7 @@ struct sys_event
 extern struct sys_event sys_event;
 
 
-bool system_init(const int* parameter);
+bool dr_os_init(int const* parameter);
 
 /* maximum size possible (if there) */
 struct resolution
@@ -67,18 +67,17 @@ struct resolution
 	int w;
 	int h;
 };
+resolution dr_query_screen_resolution();
 
-resolution system_query_screen_resolution();
+int dr_os_open(int w, int h, int fullscreen);
+void dr_os_close();
 
-int system_open(int w, int h, int fullscreen);
-void system_close(void);
-
-void system_mkdir(char const* path);
+void dr_mkdir(char const* path);
 
 /* query home directory */
-char const* system_user_home_dir();
+char const* dr_query_homedir();
 
-unsigned short* system_init_framebuffer(void);
+unsigned short* dr_textur_init(void);
 
 
 void dr_textur(int xp, int yp, int w, int h);
@@ -87,35 +86,32 @@ void dr_textur(int xp, int yp, int w, int h);
 int dr_textur_resize(unsigned short** textur, int w, int h);
 
 // needed for screen update
-void system_prepare_flush();	// waits, if previous update not yet finished
-void system_flush_framebuffer(void);	// copy to screen (eventuall multithreaded)
-
-// no longer used
-// void system_set_colors(int first, int count, unsigned char * data);
+void dr_prepare_flush();	// waits, if previous update not yet finished
+void dr_flush(void);	// copy to screen (eventuall multithreaded)
 
 /**
  * Transform a 24 bit RGB color into the system format.
  * @return converted color value
  * @author Hj. Malthaner
  */
-unsigned int system_get_color(unsigned int r, unsigned int g, unsigned int b);
+unsigned int get_system_color(unsigned int r, unsigned int g, unsigned int b);
 
-void system_show_pointer(int yesno);
+void show_pointer(int yesno);
 
-void system_set_pointer(int loading);
+void set_pointer(int loading);
 
-void system_move_pointer(int x, int y);
+void move_pointer(int x, int y);
 
 void ex_ord_update_mx_my(void);
 
-void system_wait_event(void);
-void system_poll_event(void);
+void GetEvents(void);
+void GetEventsNoWait(void);
 
-unsigned long system_time(void);
-void system_sleep(uint32 millisec);
+unsigned long dr_time(void);
+void dr_sleep(uint32 millisec);
 
 // error message in case of fatal events
-void system_fatal_notify(char const* msg);
+void dr_fatal_notify(char const* msg);
 
 /**
  * Some wrappers can save screenshots.
@@ -123,7 +119,7 @@ void system_fatal_notify(char const* msg);
  *         in case of error.
  * @author Hj. Malthaner
  */
-int system_screenshot(const char *filename);
+int dr_screenshot(const char *filename);
 
 /**
  * Copy text to the clipboard
@@ -131,7 +127,7 @@ int system_screenshot(const char *filename);
  * @param length : number of character bytes to copy
  * @author Knightly
  */
-void system_clipboard_copy(const char *source, size_t length);
+void dr_copy(const char *source, size_t length);
 
 /**
  * Paste text from the clipboard
@@ -140,8 +136,8 @@ void system_clipboard_copy(const char *source, size_t length);
  * @return number of character bytes actually inserted -> for cursor advancing
  * @author Knightly
  */
-size_t system_clipboard_paste(char *target, size_t max_length);
+size_t dr_paste(char *target, size_t max_length);
 
-int system_main(int argc, char** argv);
+int sysmain(int argc, char** argv);
 
 #endif

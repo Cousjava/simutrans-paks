@@ -7,9 +7,9 @@
 
 #include "../gui_frame.h"
 #include "gui_numberinput.h"
-#include "../../simcolor.h"
-#include "../../simgraph.h"
 #include "../../simwin.h"
+#include "../../simgraph.h"
+#include "../../macros.h"
 #include "../../dataobj/translator.h"
 
 
@@ -17,11 +17,11 @@ char gui_numberinput_t::tooltip[256];
 
 
 gui_numberinput_t::gui_numberinput_t() :
-	gui_component_t(true)
+	gui_komponente_t(true)
 {
 	bt_left.set_typ(button_t::repeatarrowleft );
-	bt_left.set_pos( koord(0, 0) );
-	bt_left.set_groesse( koord(10, 10) );
+	bt_left.set_pos( koord(0,-1) );
+	bt_left.set_groesse( koord(10,10) );
 	bt_left.add_listener(this );
 
 	textinp.set_alignment( ALIGN_RIGHT );
@@ -29,7 +29,7 @@ gui_numberinput_t::gui_numberinput_t() :
 	textinp.add_listener( this );
 
 	bt_right.set_typ(button_t::repeatarrowright );
-	bt_right.set_groesse( koord(10, 10) );
+	bt_right.set_groesse( koord(10,10) );
 	bt_right.add_listener(this );
 
 	set_limits(0, 9999);
@@ -47,8 +47,8 @@ void gui_numberinput_t::set_groesse(koord groesse)
 	// [<] [0124] [>]
 	// 10 4  ??  4 10
 	textinp.set_groesse(koord(groesse.x-2*10-2*4, groesse.y));
-	textinp.set_pos( koord(14, -2) );
-	bt_right.set_pos( koord(groesse.x-10, 0) );
+	textinp.set_pos( koord(14,-2) );
+	bt_right.set_pos( koord(groesse.x-10,-1) );
 
 	this->groesse = groesse;
 }
@@ -335,8 +335,8 @@ void gui_numberinput_t::zeichnen(koord offset)
 	textinp.display_with_focus( new_offset, (win_get_focus()==this) );
 	bt_right.zeichnen(new_offset);
 
-	if(getroffen( get_mouse_x()-offset.x, get_mouse_y()-offset.y )) {
+	if(getroffen( get_maus_x()-offset.x, get_maus_y()-offset.y )) {
 		sprintf( tooltip, translator::translate("enter a value between %i and %i"), min_value, max_value );
-		win_set_tooltip(get_mouse_x() + 16, new_offset.y + groesse.y + 12, tooltip, this);
+		win_set_tooltip(get_maus_x() + 16, new_offset.y + groesse.y + 12, tooltip, this);
 	}
 }

@@ -139,7 +139,7 @@ obj_besch_t *image_reader_t::read_node(FILE *fp, obj_node_info_t &node)
 
 	if (besch->pic.len != 0) {
 		// get the adler hash (since we have zlib on board anyway ... )
-		bool do_display_register_image = true;
+		bool do_register_image = true;
 		uint32 adler = adler32(0L, NULL, 0 );
 		// remember pic.len is sizeof(uint16)!
 		adler = adler32(adler, (const Bytef *)(besch->pic.data), besch->pic.len*2 );
@@ -149,7 +149,7 @@ obj_besch_t *image_reader_t::read_node(FILE *fp, obj_node_info_t &node)
 			// same checksum => if same then skip!
 			bild_t const& a = *besch->get_pic();
 			bild_t const& b = *same->get_pic();
-			do_display_register_image =
+			do_register_image =
 				a.x        != b.x        ||
 				a.y        != b.y        ||
 				a.w        != b.w        ||
@@ -159,12 +159,12 @@ obj_besch_t *image_reader_t::read_node(FILE *fp, obj_node_info_t &node)
 				memcmp(a.data, b.data, sizeof(*a.data) * a.len) != 0;
 		}
 		// unique image here
-		if(  do_display_register_image  ) {
+		if(  do_register_image  ) {
 			if(!same) {
 				images_adlers.put(adler,besch);	// still with bild_nr == IMG_LEER!
 			}
 			// register image adds this image to the internal array maintained by simgraph??.cc
-			display_register_image( &(besch->pic) );
+			register_image( &(besch->pic) );
 		}
 		else {
 			// no need to load doubles ...

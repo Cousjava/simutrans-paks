@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -22,7 +22,6 @@
 #include "../simgraph.h"
 #include "../simmenu.h"
 #include "../player/simplay.h"
-#include "../boden/grund.h"
 
 #include "../utils/simstring.h"
 
@@ -231,14 +230,14 @@ gui_frame_t( translator::translate("Helligk. u. Farben") )
 	// add_komponente( buttons+5 );
 
 	set_resizemode(gui_frame_t::horizonal_resize);
-	set_min_window_size( koord(RIGHT_WIDTH, BOTTOM) );
-	set_window_size( koord(RIGHT_WIDTH, BOTTOM) );
+	set_min_windowsize( koord(RIGHT_WIDTH, BOTTOM) );
+	set_fenstergroesse( koord(RIGHT_WIDTH, BOTTOM) );
 }
 
 
-void color_gui_t::set_window_size(koord groesse)
+void color_gui_t::set_fenstergroesse(koord groesse)
 {
-	gui_frame_t::set_window_size(groesse);
+	gui_frame_t::set_fenstergroesse(groesse);
 	const sint16 w = groesse.x;
 	inp_underground_level.set_pos( koord(w-10-50, SLICE) );
 	brightness.set_pos( koord(w-10-40,BRIGHTNESS) );
@@ -258,8 +257,8 @@ bool color_gui_t::action_triggered( gui_action_creator_t *komp, value_t v)
 		if(  !umgebung_t::networkmode  ||  welt->get_active_player_nr()==1  ) {
 			static char level[16];
 			sprintf(level, "%li", v.i);
-			werkzeug_t::simple_tool.get(WKZ_TRAFFIC_LEVEL&0xFFF)->set_default_param( level );
-			welt->set_werkzeug( werkzeug_t::simple_tool.get(WKZ_TRAFFIC_LEVEL&0xFFF), welt->get_active_player() );
+			werkzeug_t::simple_tool[WKZ_TRAFFIC_LEVEL&0xFFF]->set_default_param( level );
+			welt->set_werkzeug( werkzeug_t::simple_tool[WKZ_TRAFFIC_LEVEL&0xFFF], welt->get_active_player() );
 		}
 		else {
 			traffic_density.set_value(welt->get_settings().get_verkehr_level());
@@ -277,11 +276,11 @@ bool color_gui_t::action_triggered( gui_action_creator_t *komp, value_t v)
 		umgebung_t::scroll_multi = -umgebung_t::scroll_multi;
 	} else if((buttons+7)==komp) {
 		if(  !umgebung_t::networkmode  ||  welt->get_active_player_nr()==1  ) {
-			welt->set_werkzeug( werkzeug_t::simple_tool.get(WKZ_TOOGLE_PAX&0xFFF), welt->get_active_player() );
+			welt->set_werkzeug( werkzeug_t::simple_tool[WKZ_TOOGLE_PAX&0xFFF], welt->get_active_player() );
 		}
 	} else if((buttons+8)==komp) {
 		if(  !umgebung_t::networkmode  ||  welt->get_active_player_nr()==1  ) {
-			welt->set_werkzeug( werkzeug_t::simple_tool.get(WKZ_TOOGLE_PEDESTRIANS&0xFFF), welt->get_active_player() );
+			welt->set_werkzeug( werkzeug_t::simple_tool[WKZ_TOOGLE_PEDESTRIANS&0xFFF], welt->get_active_player() );
 		}
 	} else if((buttons+9)==komp) {
 		umgebung_t::night_shift = !umgebung_t::night_shift;
@@ -289,10 +288,10 @@ bool color_gui_t::action_triggered( gui_action_creator_t *komp, value_t v)
 	} else if((buttons+10)==komp) {
 		umgebung_t::hide_with_transparency = !umgebung_t::hide_with_transparency;
 		buttons[10].pressed ^= 1;
-		tree_t::recalc_outline_color();
+		baum_t::recalc_outline_color();
 	} else if((buttons+11)==komp) {
 		umgebung_t::hide_trees = !umgebung_t::hide_trees;
-		tree_t::recalc_outline_color();
+		baum_t::recalc_outline_color();
 	} else if((buttons+12)==komp) {
 		umgebung_t::hide_buildings = (umgebung_t::hide_buildings+2)%3;
 	} else if((buttons+13)==komp) {
@@ -397,7 +396,7 @@ void color_gui_t::zeichnen(koord pos, koord gr)
 	}
 
 	// seperator
-	const sint16 w = this->get_window_size().x;
+	const sint16 w = this->get_fenstergroesse().x;
 	display_ddd_box_clip(x+10, y+SEPERATE1, w-20, 0, MN_GREY0, MN_GREY4);
 	display_ddd_box_clip(x+10, y+SEPERATE2, w-20, 0, MN_GREY0, MN_GREY4);
 	display_ddd_box_clip(x+10, y+SEPERATE3, w-20, 0, MN_GREY0, MN_GREY4);

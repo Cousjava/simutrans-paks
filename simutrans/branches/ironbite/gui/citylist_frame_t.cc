@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2003 Hj. Malthaner
+ * Copyright (c) 1997 - 2003 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -10,7 +10,7 @@
 
 #include "components/list_button.h"
 #include "../dataobj/translator.h"
-#include "../simgraph.h"
+#include "../simcolor.h"
 #include "../dataobj/umgebung.h"
 
 
@@ -158,8 +158,8 @@ citylist_frame_t::citylist_frame_t(karte_t * welt) :
 	scrolly.set_scroll_amount_y(LINESPACE+1);
 	add_komponente(&scrolly);
 
-	set_window_size(koord(TOTAL_WIDTH, TOTAL_HEIGHT+CHART_HEIGHT));
-	set_min_window_size(koord(TOTAL_WIDTH, TOTAL_HEIGHT));
+	set_fenstergroesse(koord(TOTAL_WIDTH, TOTAL_HEIGHT+CHART_HEIGHT));
+	set_min_windowsize(koord(TOTAL_WIDTH, TOTAL_HEIGHT));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -184,7 +184,7 @@ bool citylist_frame_t::action_triggered( gui_action_creator_t *komp,value_t /* *
 		show_stats.pressed = !show_stats.pressed;
 		chart.set_visible( show_stats.pressed );
 		year_month_tabs.set_visible( show_stats.pressed );
-		set_min_window_size( koord(TOTAL_WIDTH, show_stats.pressed ? TOTAL_HEIGHT+CHART_HEIGHT : TOTAL_HEIGHT));
+		set_min_windowsize( koord(TOTAL_WIDTH, show_stats.pressed ? TOTAL_HEIGHT+CHART_HEIGHT : TOTAL_HEIGHT));
 		for(  int i=0;  i<karte_t::MAX_WORLD_COST;  i++ ) {
 			filterButtons[i].set_visible(show_stats.pressed);
 		}
@@ -213,7 +213,7 @@ void citylist_frame_t::resize(const koord delta)
 {
 	gui_frame_t::resize(delta);
 
-	koord groesse = get_window_size()-koord(0,TITLEBAR_HEIGHT+42+1);	// fensterhoehe - 16(title) -42 (header)
+	koord groesse = get_fenstergroesse()-koord(0,TITLEBAR_HEIGHT+42+1);	// fensterhoehe - 16(title) -42 (header)
 	if(show_stats.pressed) {
 		// addition space for statistics
 		groesse += koord(0,-CHART_HEIGHT);

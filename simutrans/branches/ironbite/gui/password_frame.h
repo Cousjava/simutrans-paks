@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -31,7 +31,7 @@ protected:
 public:
 	password_frame_t( spieler_t *sp );
 
-	const char * get_help_file() const {return "password.txt";}
+	const char * get_hilfe_datei() const {return "password.txt";}
 
 	bool action_triggered(gui_action_creator_t*, value_t) OVERRIDE;
 };

@@ -25,7 +25,7 @@ class schedule_t;
  *
  * @author Hj. Malthaner
  */
-class reliefkarte_t : public gui_component_t
+class reliefkarte_t : public gui_komponente_t
 {
 public:
 	enum MAP_MODES {

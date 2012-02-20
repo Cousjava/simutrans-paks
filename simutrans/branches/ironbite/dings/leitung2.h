@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -88,7 +88,7 @@ public:
 	waytype_t get_waytype() const { return powerline_wt; }
 
 	/**
-	* @return Einen Beschreibungsstring fï¿½r das Objekt, der z.B. in einem
+	* @return Einen Beschreibungsstring für das Objekt, der z.B. in einem
 	* Beobachtungsfenster angezeigt wird.
 	* @author Hj. Malthaner
 	*/
@@ -97,8 +97,8 @@ public:
 	ribi_t::ribi get_ribi(void) const { return ribi; }
 
 	inline void set_bild( image_id b ) { bild = b; }
-	image_id get_bild() const;
-	image_id get_after_bild() const;
+	image_id get_bild() const {return is_crossing ? IMG_LEER : bild;}
+	image_id get_after_bild() const {return is_crossing ? bild : IMG_LEER;}
 
 	/**
 	* Recalculates the images of all neighbouring
@@ -109,7 +109,7 @@ public:
 	void calc_neighbourhood();
 
 	/**
-	* Wird nach dem Laden der Welt aufgerufen - ï¿½blicherweise benutzt
+	* Wird nach dem Laden der Welt aufgerufen - üblicherweise benutzt
 	* um das Aussehen des Dings an Boden und Umgebung anzupassen
 	*
 	* @author Hj. Malthaner

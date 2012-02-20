@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -15,19 +15,19 @@
 #include "components/gui_komponente.h"
 
 /**
- * Ein Behï¿½lter fï¿½r andere gui_komponenten. Ist selbst eine
+ * Ein Behälter für andere gui_komponenten. Ist selbst eine
  * gui_komponente, kann also geschachtelt werden.
  *
  * @author Hj. Malthaner
  * @date 03-Mar-01
  */
-class gui_container_t : public gui_component_t
+class gui_container_t : public gui_komponente_t
 {
 private:
-	slist_tpl <gui_component_t *> komponenten;
+	slist_tpl <gui_komponente_t *> komponenten;
 
 	// holds the GUI Komponent that has the focus in this window
-	gui_component_t *komp_focus;
+	gui_komponente_t *komp_focus;
 
 	bool list_dirty:1;
 
@@ -38,16 +38,16 @@ public:
 	void clear_dirty() {list_dirty=false;}
 
 	/**
-	* Fï¿½gt eine Komponente zum Container hinzu.
+	* Fügt eine Komponente zum Container hinzu.
 	* @author Hj. Malthaner
 	*/
-	void add_komponente(gui_component_t *komp);
+	void add_komponente(gui_komponente_t *komp);
 
 	/**
 	* Entfernt eine Komponente aus dem Container.
 	* @author Hj. Malthaner
 	*/
-	void remove_komponente(gui_component_t *komp);
+	void remove_komponente(gui_komponente_t *komp);
 
 	bool infowin_event(event_t const*) OVERRIDE;
 
@@ -70,13 +70,13 @@ public:
 	virtual bool is_focusable();
 
 	// activates this element
-	void set_focus( gui_component_t *komp_focus );
+	void set_focus( gui_komponente_t *komp_focus );
 
 	/**
 	 * returns element that has the focus
 	 * that is: go down the hierarchy as much as possible
 	 */
-	virtual gui_component_t *get_focus();
+	virtual gui_komponente_t *get_focus();
 
 	/**
 	 * Get the relative position of the focused component.

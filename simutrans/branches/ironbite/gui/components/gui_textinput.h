@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -10,6 +10,8 @@
 
 #include "gui_action_creator.h"
 #include "gui_komponente.h"
+#include "../../simcolor.h"
+#include "../../simgraph.h"
 
 
 /**
@@ -22,7 +24,7 @@
  */
 class gui_textinput_t :
 	public gui_action_creator_t,
-	public gui_component_t
+	public gui_komponente_t
 {
 protected:
 
@@ -34,30 +36,30 @@ protected:
 
 
 	/**
-	 * Max length of the string buffer
+	 * Maximallänge des Stringbuffers
 	 * @author Hj. Malthaner
 	 */
-	int max;
+	size_t max;
 
 	/**
 	 * position of head cursor to the text
 	 * represents front end of the selected text portion
 	 * @author hsiegeln
 	 */
-	int head_cursor_pos;
+	size_t head_cursor_pos;
 
 	/**
 	 * position of tail cursor to the text
 	 * represent rear end of the selected text portion
 	 * @author Knightly
 	 */
-	int tail_cursor_pos;
+	size_t tail_cursor_pos;
 
 	/**
 	  * offset for controlling horizontal text scroll
 	  * Dwachs: made private to check for mouse induced cursor moves
 	  */
-	int scroll_offset;
+	KOORD_VAL scroll_offset;
 
 	/**
 	 * text alignment
@@ -65,7 +67,7 @@ protected:
 	 */
 	uint8 align;
 
-	int textcol;
+	COLOR_VAL textcol;
 
 	/**
 	 * reference time for regulating cursor blinking
@@ -83,7 +85,7 @@ protected:
 	 * determine new cursor position from event coordinates
 	 * @author Knightly
 	 */
-	int calc_cursor_pos(const int x);
+	size_t calc_cursor_pos(const int x);
 
 	/**
 	 * Remove selected text portion, if any.

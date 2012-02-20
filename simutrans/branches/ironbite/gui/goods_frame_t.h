@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2003 Hj. Malthaner
+ * Copyright (c) 1997 - 2003 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -68,13 +68,13 @@ public:
 
     /**
      * Manche Fenster haben einen Hilfetext assoziiert.
-     * @return den Dateinamen fï¿½r die Hilfe, oder NULL
+     * @return den Dateinamen für die Hilfe, oder NULL
      * @author V. Meyer
      */
-    const char * get_help_file() const {return "goods_filter.txt"; }
+    const char * get_hilfe_datei() const {return "goods_filter.txt"; }
 
     /**
-     * komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
+     * komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
      * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
      * in dem die Komponente dargestellt wird.
      * @author Hj. Malthaner

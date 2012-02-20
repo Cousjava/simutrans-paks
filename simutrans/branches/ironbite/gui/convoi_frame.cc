@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  * filtering added by Volker Meyer
  *
  * This file is part of the Simutrans project under the artistic licence.
@@ -36,7 +36,7 @@ uint32 convoi_frame_t::filter_flags = 0;
 
 char convoi_frame_t::name_filter_value[64] = "";
 
-slist_tpl<const freight_desc_t *> convoi_frame_t::waren_filter;
+slist_tpl<const ware_besch_t *> convoi_frame_t::waren_filter;
 
 const char *convoi_frame_t::sort_text[SORT_MODES] = {
 	"cl_btn_sort_name",
@@ -175,8 +175,7 @@ void convoi_frame_t::sort_list()
 	convois.clear();
 	convois.resize(last_world_convois);
 
-	for (vector_tpl<convoihandle_t>::const_iterator i = welt->convoys().begin(), end = welt->convoys().end(); i != end; ++i) {
-		convoihandle_t cnv = *i;
+	FOR(vector_tpl<convoihandle_t>, const cnv, welt->convoys()) {
 		if(cnv->get_besitzer()==owner  &&   passes_filter(cnv)) {
 			convois.append(cnv);
 		}
@@ -223,8 +222,8 @@ convoi_frame_t::convoi_frame_t(spieler_t* sp) :
 
 	sort_list();
 
-	set_window_size(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+5*(40)+31+1));
-	set_min_window_size(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+2*(40)+31+1));
+	set_fenstergroesse(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+5*(40)+31+1));
+	set_min_windowsize(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+2*(40)+31+1));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -253,11 +252,11 @@ bool convoi_frame_t::infowin_event(const event_t *ev)
 		// (and sometime even not then ... )
 		return vscroll.infowin_event(ev);
 	}
-	else if(  (IS_LEFTRELEASE(ev)  ||  IS_RIGHTRELEASE(ev))  &&  ev->my>47  &&  ev->mx<get_window_size().x-xr  ) {
+	else if(  (IS_LEFTRELEASE(ev)  ||  IS_RIGHTRELEASE(ev))  &&  ev->my>47  &&  ev->mx<get_fenstergroesse().x-xr  ) {
 		int y = (ev->my-47)/40 + vscroll.get_knob_offset();
 		if(y<(sint32)convois.get_count()) {
 			// let gui_convoiinfo_t() handle this, since then it will be automatically consistent
-			gui_convoiinfo_t ci(convois.get(y));
+			gui_convoiinfo_t ci(convois[y]);
 			return ci.infowin_event( ev );
 		}
 	}
@@ -301,7 +300,7 @@ bool convoi_frame_t::action_triggered( gui_action_creator_t *komp,value_t /* */)
 void convoi_frame_t::resize(const koord size_change)                          // 28-Dec-01    Markus Weber    Added
 {
 	gui_frame_t::resize(size_change);
-	koord groesse = get_window_size()-koord(0,47);
+	koord groesse = get_fenstergroesse()-koord(0,47);
 	vscroll.set_visible(false);
 	remove_komponente(&vscroll);
 	vscroll.set_knob( groesse.y/40, convois.get_count() );
@@ -336,7 +335,7 @@ void convoi_frame_t::zeichnen(koord pos, koord gr)
 	}
 
 	for(  unsigned i=start;  i<convois.get_count()  &&  yoffset<gr.y+47;  i++  ) {
-		convoihandle_t cnv = convois.get(i);
+		convoihandle_t cnv = convois[i];
 
 		if(cnv.is_bound()) {
 			gui_convoiinfo_t ci(cnv);
@@ -350,9 +349,9 @@ void convoi_frame_t::zeichnen(koord pos, koord gr)
 }
 
 
-void convoi_frame_t::set_ware_filter(const freight_desc_t *ware, int mode)
+void convoi_frame_t::set_ware_filter(const ware_besch_t *ware, int mode)
 {
-	if(ware!=freight_builder_t::nichts) {
+	if(ware!=warenbauer_t::nichts) {
 		if(get_ware_filter(ware)) {
 			if(mode != 1) {
 				waren_filter.remove(ware);
@@ -373,8 +372,8 @@ void convoi_frame_t::set_alle_ware_filter(int mode)
 		waren_filter.clear();
 	}
 	else {
-		for(unsigned int i = 0; i<freight_builder_t::get_waren_anzahl(); i++) {
-			set_ware_filter(freight_builder_t::get_info(i), mode);
+		for(unsigned int i = 0; i<warenbauer_t::get_waren_anzahl(); i++) {
+			set_ware_filter(warenbauer_t::get_info(i), mode);
 		}
 	}
 }

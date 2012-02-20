@@ -1,6 +1,6 @@
 /**
- * Header Datei fï¿½r dir convoi_t Klasse fï¿½r Fahrzeugverbï¿½nde
- * von Hj. Malthaner
+ * Header Datei für dir convoi_t Klasse für Fahrzeugverbände
+ * von Hansjörg Malthaner
  */
 
 #ifndef simconvoi_h
@@ -32,9 +32,9 @@ class schedule_t;
 class cbuffer_t;
 
 /**
- * Basisklasse fï¿½r alle Fahrzeugverbï¿½nde. Convois kï¿½nnnen ï¿½ber Zeiger
- * oder Handles angesprochen werden. Zeiger sind viel schneller, dafï¿½r
- * kï¿½nnen Handles geprï¿½ft werden, ob das Ziel noch vorhanden ist.
+ * Basisklasse für alle Fahrzeugverbände. Convois könnnen über Zeiger
+ * oder Handles angesprochen werden. Zeiger sind viel schneller, dafür
+ * können Handles geprüft werden, ob das Ziel noch vorhanden ist.
  *
  * @author Hj. Malthaner
  */
@@ -247,7 +247,7 @@ private:
 	/**
 	* manchmal muss eine bestimmte Zeit gewartet werden.
 	* wait_lock bestimmt wie lange gewartet wird (in ms).
-	* @author Hanjsï¿½rg Malthaner
+	* @author Hanjsörg Malthaner
 	*/
 	sint32 wait_lock;
 
@@ -258,8 +258,8 @@ private:
 	uint32 go_on_ticks;
 
 	/**
-	* akkumulierter gewinn ï¿½ber ein jahr hinweg
-	* @author Hanjsï¿½rg Malthaner
+	* akkumulierter gewinn über ein jahr hinweg
+	* @author Hanjsörg Malthaner
 	*/
 	sint64 jahresgewinn;
 
@@ -305,14 +305,14 @@ private:
 
 	/**
 	* Berechne route von Start- zu Zielkoordinate
-	* @author Hanjsï¿½rg Malthaner
+	* @author Hanjsörg Malthaner
 	*/
 	bool drive_to();
 
 	/**
 	* Setup vehicles for moving in same direction than before
 	* if the direction is the same as before
-	* @author Hanjsï¿½rg Malthaner
+	* @author Hanjsörg Malthaner
 	*/
 	bool can_go_alte_richtung();
 
@@ -323,7 +323,7 @@ private:
 
 	/**
 	* Mark first and last vehicle.
-	* @author Hanjsï¿½rg Malthaner
+	* @author Hanjsörg Malthaner
 	*/
 	void set_erstes_letztes();
 
@@ -450,15 +450,15 @@ public:
 	void reset_waiting() { state=WAITING_FOR_CLEARANCE; }
 
 	/**
-	* Das Handle fï¿½r uns selbst. In Anlehnung an 'this' aber mit
+	* Das Handle für uns selbst. In Anlehnung an 'this' aber mit
 	* allen checks beim Zugriff.
-	* @author Hanjsï¿½rg Malthaner
+	* @author Hanjsörg Malthaner
 	*/
 	convoihandle_t self;
 
 	/**
 	 * Der Gewinn in diesem Jahr
-	 * @author Hanjsï¿½rg Malthaner
+	 * @author Hanjsörg Malthaner
 	 */
 	const sint64 & get_jahresgewinn() const {return jahresgewinn;}
 
@@ -492,7 +492,7 @@ public:
 
 	/**
 	* Called if a vehicle enters a depot
-	* @author Hanjsï¿½rg Malthaner
+	* @author Hanjsörg Malthaner
 	*/
 	void betrete_depot(depot_t *dep);
 
@@ -503,7 +503,7 @@ public:
 	karte_t* get_welt() { return welt; }
 
 	/**
-	* Gibt Namen des Convois zurï¿½ck.
+	* Gibt Namen des Convois zurück.
 	* @return Name des Convois
 	* @author Hj. Malthaner
 	*/
@@ -517,7 +517,7 @@ public:
 	char *access_internal_name() {return name_and_id+name_offset;}
 
 	/**
-	* Gibt Namen des Convois zurï¿½ck.
+	* Gibt Namen des Convois zurück.
 	* @return Name des Convois
 	* @author Hj. Malthaner
 	*/
@@ -530,7 +530,7 @@ public:
 	void set_name(const char *name, bool with_new_id = true);
 
 	/**
-	 * Gibt die Position des Convois zurï¿½ck.
+	 * Gibt die Position des Convois zurück.
 	 * @return Position des Convois
 	 * @author Hj. Malthaner
 	 */
@@ -596,7 +596,7 @@ public:
 	/**
 	* Ein Fahrzeug hat ein Problem erkannt und erzwingt die
 	* Berechnung einer neuen Route
-	* @author Hanjsï¿½rg Malthaner
+	* @author Hanjsörg Malthaner
 	*/
 	void suche_neue_route();
 
@@ -672,7 +672,7 @@ public:
 	void zeige_info();
 
 	/**
-	* @return Einen Beschreibungsstring fï¿½r das Objekt, der z.B. in einem
+	* @return Einen Beschreibungsstring für das Objekt, der z.B. in einem
 	* Beobachtungsfenster angezeigt wird.
 	* @author Hj. Malthaner
 	* @see simwin
@@ -710,7 +710,7 @@ public:
 
 	/**
 	* Setup vehicles before starting to move
-	* @author Hanjsï¿½rg Malthaner
+	* @author Hanjsörg Malthaner
 	*/
 	void vorfahren();
 

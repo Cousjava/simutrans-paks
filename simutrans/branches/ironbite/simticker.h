@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  * (see license.txt)
@@ -28,7 +28,7 @@ namespace ticker
 	/**
 	 * Add a message to the message list
 	 * @param pos    position of the event
-	 * @param color  message colorï¿½
+	 * @param color  message color 
 	 */
 	void add_msg(const char*, koord pos, int color = COL_BLACK);
 

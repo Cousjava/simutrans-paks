@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  * (see license.txt)
@@ -20,7 +20,7 @@
  * moving stuff like sheeps or birds
  * @author prissi
  */
-class movingobj_t : public vehicle_base_t, public sync_steppable
+class movingobj_t : public vehikel_basis_t, public sync_steppable
 {
 private:
 	/**
@@ -79,7 +79,7 @@ public:
 
 	void entferne(spieler_t *sp);
 
-	const groundobj_besch_t* get_besch() const { return movingobj_typen.get(groundobjtype); }
+	const groundobj_besch_t* get_besch() const { return movingobj_typen[groundobjtype]; }
 
 	void * operator new(size_t s);
 	void operator delete(void *p);

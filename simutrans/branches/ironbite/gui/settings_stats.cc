@@ -13,6 +13,8 @@
 #include "../dataobj/translator.h"
 #include "../vehicle/simvehikel.h"
 #include "settings_stats.h"
+#include "components/gui_scrolled_item.h"
+#include "components/gui_scrolled_list.h"
 
 
 /* stuff not set here ....
@@ -115,7 +117,7 @@ void settings_general_stats_t::init(settings_t const* const sets)
 	savegame.set_pos( koord(2,ypos-2) );
 	savegame.set_groesse( koord(70,BUTTON_HEIGHT) );
 	for(  uint32 i=0;  i<lengthof(version);  i++  ) {
-		savegame.append_element( new gui_scrolled_list_t::const_text_scrollitem_t( version[i]+2, COL_BLACK ) );
+		savegame.append_element( new const_text_scrollitem_t( version[i]+2, COL_BLACK ) );
 		if(  strcmp(version[i],umgebung_t::savegame_version_str)==0  ) {
 			savegame.set_selection( i );
 		}
@@ -133,7 +135,7 @@ void settings_general_stats_t::read(settings_t* const sets)
 {
 	READ_INIT
 	READ_BOOL_VALUE( sets->drive_on_left );
-	vehicle_base_t::set_overtaking_offsets( sets->drive_on_left );
+	vehikel_basis_t::set_overtaking_offsets( sets->drive_on_left );
 	READ_BOOL_VALUE( sets->signals_on_left );
 
 	READ_NUM_VALUE( umgebung_t::autosave );
@@ -384,6 +386,7 @@ void settings_costs_stats_t::init(settings_t const* const sets)
 void settings_costs_stats_t::read(settings_t* const sets)
 {
 	READ_INIT
+	(void)booliter;
 	READ_NUM_VALUE( sets->maint_building );
 	READ_COST_VALUE( sets->cst_multiply_dock )*(-1);
 	READ_COST_VALUE( sets->cst_multiply_station )*(-1);
@@ -442,9 +445,8 @@ void settings_climates_stats_t::init(settings_t* const sets)
 	INIT_NUM_NEW( "minimum length of rivers", sets->get_min_river_length(), 0, max(16,sets->get_max_river_length())-16, gui_numberinput_t::AUTOLINEAR, false );
 	INIT_NUM_NEW( "maximum length of rivers", sets->get_max_river_length(), sets->get_min_river_length()+16, 8196, gui_numberinput_t::AUTOLINEAR, false );
 	// add listener to all of them
-	slist_iterator_tpl<gui_numberinput_t *>iter(numinp);
-	while(  iter.next()  ) {
-		iter.get_current()->add_listener( this );
+	FOR(slist_tpl<gui_numberinput_t*>, const n, numinp) {
+		n->add_listener(this);
 	}
 	// the following are independent and thus need no listener
 	SEPERATOR
@@ -505,9 +507,9 @@ bool settings_climates_stats_t::action_triggered(gui_action_creator_t *komp, val
 {
 	welt_gui_t *welt_gui = dynamic_cast<welt_gui_t *>(win_get_magic( magic_welt_gui_t ));
 	read( local_sets );
-	slist_iterator_tpl<gui_numberinput_t *>iter(numinp);
-	for(  uint i=0;  iter.next();  i++  ) {
-		if(  iter.get_current()==komp  &&  i<3  &&  welt_gui  ) {
+	uint i = 0;
+	FORX(slist_tpl<gui_numberinput_t*>, const n, numinp, ++i) {
+		if (n == komp && i < 3 && welt_gui) {
 			// update world preview
 			welt_gui->update_preview();
 		}

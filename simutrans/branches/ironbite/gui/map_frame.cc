@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -126,7 +126,7 @@ map_frame_t::map_frame_t(karte_t *welt) :
 	zoom_label.set_pos( koord(54,BUTTON_HEIGHT+4) );
 	add_komponente( &zoom_label );
 
-	// rotate map 45ï¿½
+	// rotate map 45°
 	b_rotate45.init(button_t::square_state, "isometric map", koord(BUTTON_WIDTH+40,BUTTON_HEIGHT+4));
 	b_rotate45.set_tooltip("Similar view as the main window");
 	b_rotate45.add_listener(this);
@@ -173,8 +173,8 @@ map_frame_t::map_frame_t(karte_t *welt) :
  	// Hajo: Hack: use static size if set by a former object
 	const koord size2 = size;
 
-	set_window_size(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+256+6));
-	set_min_window_size(koord(BUTTON4_X, TITLEBAR_HEIGHT+2*BUTTON_HEIGHT+4+64));
+	set_fenstergroesse(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+256+6));
+	set_min_windowsize(koord(BUTTON4_X, TITLEBAR_HEIGHT+2*BUTTON_HEIGHT+4+64));
 
 	if(  size2 != koord(0,0)  ) {
 		if(  legend_visible  ) {
@@ -187,7 +187,7 @@ map_frame_t::map_frame_t(karte_t *welt) :
 			show_hide_directory( directory_visible );
 		}
 
-		resize( size2 - get_window_size() );
+		resize( size2 - get_fenstergroesse() );
 	}
 
 	set_resizemode(diagonal_resize);
@@ -219,21 +219,19 @@ void map_frame_t::update_factory_legend(karte_t *welt /*= NULL*/)
 	// When dialog is opened, update the list of industries currently in the world
 	if (welt != NULL) {
 		factory_list.clear();
-		const slist_tpl<fabrik_t*> &factories_in_game = welt->get_fab_list();
-		slist_iterator_tpl<fabrik_t*> iter(factories_in_game);
-		while (iter.next()) {
-			const fabrik_besch_t *factory_description = iter.get_current()->get_besch();
+		FOR(slist_tpl<fabrik_t*>, const f, welt->get_fab_list()) {
+			fabrik_besch_t const* const factory_description = f->get_besch();
 			factory_list.put(factory_description->get_name(), factory_description);
 		}
 	}
 
 	// Build factory legend
 	const stringhashtable_tpl<const fabrik_besch_t *> & fabesch = (filter_factory_list) ? factory_list : fabrikbauer_t::get_fabesch();
-	stringhashtable_iterator_tpl<const fabrik_besch_t *> iter (fabesch);
-	while(  iter.next()  ) {
-		if(  iter.get_current_value()->get_gewichtung()>0  ) {
-			std::string label( translator::translate(iter.get_current_value()->get_name()) );
-			legend.append_unique( legend_entry_t(label, iter.get_current_value()->get_kennfarbe()) );
+	FOR(stringhashtable_tpl<fabrik_besch_t const*>, const& i, fabesch) {
+		fabrik_besch_t const& d = *i.value;
+		if (d.get_gewichtung() > 0) {
+			std::string const label(translator::translate(d.get_name()));
+			legend.append_unique(legend_entry_t(label, d.get_kennfarbe()));
 		}
 	}
 
@@ -241,16 +239,16 @@ void map_frame_t::update_factory_legend(karte_t *welt /*= NULL*/)
 	// then to become non unique and thus get clumped together
 	if(  directory_visible  ) {
 		const int dot_len = proportional_string_width("..");
-		const int fac_cols = clamp(fabesch.get_count(), 1, get_window_size().x / (TOTAL_WIDTH/3));
+		const int fac_cols = clamp(fabesch.get_count(), 1, get_fenstergroesse().x / (TOTAL_WIDTH/3));
 
-		for(  size_t l = 0;  l < legend.get_count();  l++  ) {
-			std::string label = legend.get(l).text;
+		FOR(vector_tpl<legend_entry_t>, & l, legend) {
+			std::string label = l.text;
 			size_t i;
-			for(  i=12;  i < label.size()  &&  display_calc_proportional_string_len_width(label.c_str(), i) < get_window_size().x / fac_cols - dot_len - 13;  i++  ) {}
+			for(  i=12;  i < label.size()  &&  display_calc_proportional_string_len_width(label.c_str(), i) < get_fenstergroesse().x / fac_cols - dot_len - 13;  i++  ) {}
 			if(  i < label.size()  ) {
 				label = label.substr(0, i);
 				label.append("..");
-				legend.at(l).text = label;
+				l.text = label;
 			}
 		}
 	}
@@ -262,7 +260,7 @@ void map_frame_t::show_hide_legend(const bool show)
 	b_show_legend.pressed = show;
 	legend_visible = show;
 
-	const int col = max( 1, min( (get_window_size().x-2)/(BUTTON_WIDTH+BUTTON_SPACER), reliefkarte_t::MAX_MAP_BUTTON ) );
+	const int col = max( 1, min( (get_fenstergroesse().x-2)/(BUTTON_WIDTH+BUTTON_SPACER), reliefkarte_t::MAX_MAP_BUTTON ) );
 	const int row = ((reliefkarte_t::MAX_MAP_BUTTON-1)/col)+1;
 	const int offset_y = (BUTTON_HEIGHT+2)*row;
 	const koord offset = show ? koord(0, offset_y) : koord(0, -offset_y);
@@ -272,8 +270,8 @@ void map_frame_t::show_hide_legend(const bool show)
 	}
 	scrolly.set_pos(scrolly.get_pos() + offset);
 
-	set_min_window_size(get_min_window_size() + offset);
-	set_window_size(get_window_size() + offset);
+	set_min_windowsize(get_min_windowsize() + offset);
+	set_fenstergroesse(get_fenstergroesse() + offset);
 	resize(koord(0,0));
 }
 
@@ -287,8 +285,8 @@ void map_frame_t::show_hide_scale(const bool show)
 
 	scrolly.set_pos(scrolly.get_pos() + offset);
 
-	set_min_window_size(get_min_window_size() + offset);
-	set_window_size(get_window_size() + offset);
+	set_min_windowsize(get_min_windowsize() + offset);
+	set_fenstergroesse(get_fenstergroesse() + offset);
 	resize(koord(0,0));
 }
 
@@ -307,15 +305,15 @@ void map_frame_t::show_hide_directory(const bool show)
 		b_filter_factory_list.disable();
 	}
 
-	const int fac_cols = clamp(legend.get_count(), 1, get_window_size().x / (TOTAL_WIDTH/3));
+	const int fac_cols = clamp(legend.get_count(), 1, get_fenstergroesse().x / (TOTAL_WIDTH/3));
 	const int fac_rows = (legend.get_count() - 1) / fac_cols + 1;
 	//No need to resize when only factory filter button state changes
 	const koord offset = directory_view_toggeled ? (show ? koord(0, (fac_rows*14)) : koord(0, -(fac_rows*14))) : koord(0, 0);
 
 	scrolly.set_pos(scrolly.get_pos() + offset);
 
-	set_min_window_size(get_min_window_size() + offset);
-	set_window_size(get_window_size() + offset);
+	set_min_windowsize(get_min_windowsize() + offset);
+	set_fenstergroesse(get_fenstergroesse() + offset);
 	resize(koord(0,0));
 }
 
@@ -444,7 +442,7 @@ bool map_frame_t::infowin_event(const event_t *ev)
 	// we track this here, and adjust size.
 	if(  IS_RIGHTCLICK(ev)  ) {
 		is_dragging = false;
-		display_system_show_pointer(false);
+		display_show_pointer(false);
 		is_cursor_hidden = true;
 		reliefkarte_t::get_karte()->get_welt()->set_scroll_lock(false);
 		return true;
@@ -454,7 +452,7 @@ bool map_frame_t::infowin_event(const event_t *ev)
 			resize( koord(0,0) );
 		}
 		is_dragging = false;
-		display_system_show_pointer(true);
+		display_show_pointer(true);
 		is_cursor_hidden = false;
 		reliefkarte_t::get_karte()->get_welt()->set_scroll_lock(false);
 		return true;
@@ -473,7 +471,7 @@ bool map_frame_t::infowin_event(const event_t *ev)
 		scrolly.set_scroll_position(  max(0, x),  max(0, y) );
 
 		// Hajo: re-center mouse pointer
-		display_system_move_pointer(screenpos.x+ev->cx, screenpos.y+ev->cy);
+		display_move_pointer(screenpos.x+ev->cx, screenpos.y+ev->cy);
 		return true;
 	}
 	else if(  IS_LEFTDBLCLK(ev)  &&  reliefkarte_t::get_karte()->getroffen(ev2.mx,ev2.my)  ) {
@@ -506,7 +504,7 @@ bool map_frame_t::infowin_event(const event_t *ev)
 		return true;
 	}
 	else if(  is_cursor_hidden  ) {
-		display_system_show_pointer(true);
+		display_show_pointer(true);
 		is_cursor_hidden = false;
 	}
 
@@ -519,12 +517,12 @@ bool map_frame_t::infowin_event(const event_t *ev)
  * @author (Mathew Hounsell)
  * @date   11-Mar-2003
  */
-void map_frame_t::set_window_size(koord groesse)
+void map_frame_t::set_fenstergroesse(koord groesse)
 {
-	gui_frame_t::set_window_size( groesse );
+	gui_frame_t::set_fenstergroesse( groesse );
 
-	scrolly.set_groesse(get_client_window_size()-scrolly.get_pos());
-	map_frame_t::size = get_window_size();
+	scrolly.set_groesse(get_client_windowsize()-scrolly.get_pos());
+	map_frame_t::size = get_fenstergroesse();
 }
 
 
@@ -542,7 +540,7 @@ void map_frame_t::resize(const koord delta)
 
 	if(legend_visible) {
 		// calculate space with legend
-		const int col = max( 1, min( (get_window_size().x-2)/(BUTTON_WIDTH+BUTTON_SPACER), reliefkarte_t::MAX_MAP_BUTTON ) );
+		const int col = max( 1, min( (get_fenstergroesse().x-2)/(BUTTON_WIDTH+BUTTON_SPACER), reliefkarte_t::MAX_MAP_BUTTON ) );
 		const int row = ((reliefkarte_t::MAX_MAP_BUTTON-1)/col)+1;
 
 		// set button pos
@@ -561,7 +559,7 @@ void map_frame_t::resize(const koord delta)
 	if(directory_visible) {
 		// full program including factory texts
 		update_factory_legend();
-		const int fac_cols = clamp(legend.get_count(), 1, get_window_size().x / (TOTAL_WIDTH/3));
+		const int fac_cols = clamp(legend.get_count(), 1, get_fenstergroesse().x / (TOTAL_WIDTH/3));
 		const int fac_rows = (legend.get_count() - 1) / fac_cols + 1;
 		offset_y += fac_rows*14;
 	}
@@ -571,14 +569,14 @@ void map_frame_t::resize(const koord delta)
 	set_dirty();
 
 	if(  offset_y != old_offset_y  ) {
-		set_min_window_size(get_min_window_size() + koord(0,offset_y - old_offset_y));
+		set_min_windowsize(get_min_windowsize() + koord(0,offset_y - old_offset_y));
 		resize(koord(0,0));
 	}
 }
 
 
 /**
- * komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
+ * komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
  * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
  * in dem die Komponente dargestellt wird.
  * @author Hj. Malthaner
@@ -635,15 +633,15 @@ void map_frame_t::zeichnen(koord pos, koord gr)
 	if(directory_visible) {
 		const int fac_cols = clamp(legend.get_count(), 1, gr.x / (TOTAL_WIDTH/3));
 		uint u = 0;
-		for(  vector_tpl<legend_entry_t>::const_iterator i = legend.begin(), end = legend.end(); i != end; ++i, ++u  ) {
+		FORX(vector_tpl<legend_entry_t>, const& i, legend, ++u) {
 			const int xpos = pos.x + (u % fac_cols) * (gr.x-fac_cols/2-1)/fac_cols + 3;
 			const int ypos = pos.y + (u / fac_cols) * 14 + offset_y+2;
 
 			if(  ypos+LINESPACE > pos.y+gr.y  ) {
 				break;
 			}
-			display_fillbox_wh(xpos, ypos + 1 , 7, 7, i->colour, false);
-			display_proportional(xpos + 9, ypos, i->text.c_str(), ALIGN_LEFT, COL_BLACK, false);
+			display_fillbox_wh(xpos, ypos + 1 , 7, 7, i.colour, false);
+			display_proportional(xpos + 9, ypos, i.text.c_str(), ALIGN_LEFT, COL_BLACK, false);
 		}
 	}
 }
@@ -665,7 +663,7 @@ void map_frame_t::rdwr( loadsave_t *file )
 	if(  file->is_loading()  ) {
 		koord savesize;
 		savesize.rdwr(file);
-		set_window_size( savesize );
+		set_fenstergroesse( savesize );
 		resize( koord(0,0) );
 		// notify minimap of new settings
 		reliefkarte_t::get_karte()->calc_map_groesse();
@@ -686,7 +684,7 @@ void map_frame_t::rdwr( loadsave_t *file )
 		}
 	}
 	else {
-		koord gr = get_window_size();
+		koord gr = get_fenstergroesse();
 		gr.rdwr(file);
 		sint32 xoff = scrolly.get_scroll_x();
 		file->rdwr_long( xoff );

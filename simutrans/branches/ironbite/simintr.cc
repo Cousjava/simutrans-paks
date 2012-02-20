@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  * (see license.txt)
@@ -20,7 +20,7 @@
 #include "boden/wasser.h"
 
 static karte_t *welt_modell = NULL;
-static map_display_t *welt_ansicht = NULL;
+static karte_ansicht_t *welt_ansicht = NULL;
 
 
 static long last_time;
@@ -70,10 +70,10 @@ void set_frame_time(long time)
 void intr_refresh_display(bool dirty)
 {
 	wasser_t::prepare_for_refresh();
-	system_prepare_flush();
+	dr_prepare_flush();
 	welt_ansicht->display( dirty );
 	win_display_flush(welt_modell->get_active_player()->get_konto_als_double());
-	system_flush_framebuffer();
+	dr_flush();
 }
 
 
@@ -91,7 +91,7 @@ void interrupt_check(const char* caller_info)
 	if(enabled) {
 		static uint32 last_ms = 0;
 		if(  !welt_modell->is_fast_forward()  ||  welt_modell->get_zeit_ms() != last_ms  ) {
-			const long now = system_time();
+			const long now = dr_time();
 			if((now-last_time)*FRAME_TIME_MULTI < frame_time) {
 				return;
 			}
@@ -109,11 +109,11 @@ void interrupt_check(const char* caller_info)
 }
 
 
-void intr_set(karte_t *welt, map_display_t *view)
+void intr_set(karte_t *welt, karte_ansicht_t *view)
 {
 	welt_modell = welt;
 	welt_ansicht = view;
-	last_time = system_time();
+	last_time = dr_time();
 	enabled = true;
 }
 

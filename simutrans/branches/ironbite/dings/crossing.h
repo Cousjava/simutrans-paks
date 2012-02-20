@@ -13,7 +13,7 @@
 #include "../besch/kreuzung_besch.h"
 #include "../dataobj/crossing_logic.h"
 
-class vehicle_base_t;
+class vehikel_basis_t;
 
 /**
  * road sign for traffic (one way minimum speed, traffic lights)
@@ -67,13 +67,13 @@ public:
 	virtual void entferne(spieler_t *);
 
 	// returns true, if the crossing can be passed by this vehicle
-	bool request_crossing( const vehicle_base_t *v ) { return logic->request_crossing( v ); }
+	bool request_crossing( const vehikel_basis_t *v ) { return logic->request_crossing( v ); }
 
 	// adds to crossing
-	void add_to_crossing( const vehicle_base_t *v ) { return logic->add_to_crossing( v ); }
+	void add_to_crossing( const vehikel_basis_t *v ) { return logic->add_to_crossing( v ); }
 
 	// removes the vehicle from the crossing
-	void release_crossing( const vehicle_base_t *v ) { return logic->release_crossing( v ); }
+	void release_crossing( const vehikel_basis_t *v ) { return logic->release_crossing( v ); }
 
 	crossing_logic_t::crossing_state_t get_state() { return logic->get_state(); }
 

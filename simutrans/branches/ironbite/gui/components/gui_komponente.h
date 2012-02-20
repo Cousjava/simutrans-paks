@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -9,6 +9,7 @@
 #define ifc_gui_komponente_h
 
 #include "../../dataobj/koord.h"
+#include "../../simevent.h"
 
 struct event_t;
 
@@ -17,26 +18,24 @@ struct event_t;
  *
  * @autor Hj. Malthaner
  */
-class gui_component_t
+class gui_komponente_t
 {
 private:
-	
 	/**
-	 * allow component to show/hide itself
-	 * @author hsiegeln
-	 */
+	* allow component to show/hide itself
+	* @author hsiegeln
+	*/
 	bool visible:1;
 
 	/**
-	 * some components might not be allowed to gain focus
-	 * for example: gui_textarea_t
-	 * this flag can be set to true to deny focus request for a gui_component always
-	 * @author hsiegeln
-	 */
+	* some components might not be allowed to gain focus
+	* for example: gui_textarea_t
+	* this flag can be set to true to deny focus request for a gui_component always
+	* @author hsiegeln
+	*/
 	bool focusable:1;
 
 protected:
-	
 	/**
 	 * Position der Komponente. Eintraege sind relativ zu links/oben der
 	 * umgebenden Komponente.
@@ -44,41 +43,32 @@ protected:
 	 */
 	koord pos;
 
-	/**
-	 * Component size
-	 * @author Hj. Malthaner
-	 */
-	koord groesse;
-
 public:
-	
 	/**
- 	 * Basic contructor, initialises member variables
-	 * @author Hj. Malthaner
-	 */
-	gui_component_t(bool _focusable = false) : visible(true), focusable(_focusable) {}
+	* Basic contructor, initialises member variables
+	* @author Hj. Malthaner
+	*/
+	gui_komponente_t(bool _focusable = false) : visible(true), focusable(_focusable) {}
 
 	/**
-	 * Virtueller Destruktor, damit Klassen sauber abgeleitet werden kï¿½nnen
-	 * @author Hj. Malthaner
-	 */
-	virtual ~gui_component_t() {}
+	* Virtueller Destruktor, damit Klassen sauber abgeleitet werden können
+	* @author Hj. Malthaner
+	*/
+	virtual ~gui_komponente_t() {}
 
 	void set_focusable(bool yesno) { focusable = yesno; }
 
-	/**
-	 * a component can only be focusable when it is visible
-	 * @author Knightly
-	 */
+	// Knightly : a component can only be focusable when it is visible
 	virtual bool is_focusable() { return visible && focusable; }
 
 	/**
-	 * Sets component to be shown/hidden
-	 * @author Hj. Malthaner
-	 */
+	* Sets component to be shown/hidden
+	* @author Hj. Malthaner
+	*/
 	void set_visible(bool yesno) {
 		visible = yesno;
 	}
+
 
 	/**
 	* Checks if component should be displayed
@@ -105,21 +95,31 @@ public:
 	}
 
 	/**
-	 * Vorzugsweise sollte diese Methode zum Setzen der Grï¿½ï¿½e benutzt werden,
-	 * obwohl groesse public ist.
-	 * @author Hj. Malthaner
-	 */
-	virtual void set_groesse(const koord groesse) {this->groesse = groesse;}
-	
+	* Größe der Komponente.
+	* @author Hj. Malthaner
+	*/
+	koord groesse;
+
+	/**
+	* Vorzugsweise sollte diese Methode zum Setzen der Größe benutzt werden,
+	* obwohl groesse public ist.
+	* @author Hj. Malthaner
+	*/
+	virtual void set_groesse(koord groesse) {
+		this->groesse = groesse;
+	}
+
 	/**
  	 * Instead of accessing the "groesse" member, use this method to set a component's size
  	 * 
 	 * @author Hj. Malthaner
 	 */
-	virtual void set_size(const int w, const int h) {set_groesse(koord(w, h));}
+	virtual void set_size(const int w, const int h) {
+		set_groesse(koord(w, h));
+	}
 
 	/**
-	* Vorzugsweise sollte diese Methode zum Abfragen der Grï¿½ï¿½e benutzt werden,
+	* Vorzugsweise sollte diese Methode zum Abfragen der Größe benutzt werden,
 	* obwohl groesse public ist.
 	* @author Hj. Malthaner
 	*/
@@ -128,7 +128,7 @@ public:
 	}
 
 	/**
-	* Prï¿½ft, ob eine Position innerhalb der Komponente liegt.
+	* Prüft, ob eine Position innerhalb der Komponente liegt.
 	* @author Hj. Malthaner
 	*/
 	virtual bool getroffen(int x, int y) {
@@ -157,7 +157,7 @@ public:
 	 * other derivates like scrolled list of tabs want to
 	 * return a component out of their selection
 	 */
-	virtual gui_component_t *get_focus() { return is_focusable() ? this : 0; }
+	virtual gui_komponente_t *get_focus() { return is_focusable() ? this : 0; }
 
 	/**
 	 * Get the relative position of the focused component.

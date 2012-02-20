@@ -1,6 +1,6 @@
 /**
- * convoi_t Klasse fï¿½r Fahrzeugverbï¿½nde
- * von Hj. Malthaner
+ * convoi_t Klasse für Fahrzeugverbände
+ * von Hansjörg Malthaner
  */
 
 #include <stdlib.h>
@@ -33,7 +33,6 @@
 #include "boden/wege/schiene.h"	// for railblocks
 
 #include "besch/vehikel_besch.h"
-#include "besch/weg_besch.h"
 #include "besch/roadsign_besch.h"
 
 #include "dataobj/fahrplan.h"
@@ -388,8 +387,7 @@ DBG_MESSAGE("convoi_t::laden_abschliessen()","next_stop_index=%d", next_stop_ind
 				vector_tpl<linehandle_t> lines;
 				get_besitzer()->simlinemgmt.get_lines(fpl->get_type(), &lines);
 				new_line = linehandle_t();
-				for (vector_tpl<linehandle_t>::const_iterator i = lines.begin(), end = lines.end(); i != end; i++) {
-					linehandle_t l = *i;
+				FOR(vector_tpl<linehandle_t>, const l, lines) {
 					if(  fpl->matches( welt, l->get_schedule() )  ) {
 						// if a line is assigned, set line!
 						new_line = l;
@@ -514,7 +512,7 @@ void convoi_t::rotate90( const sint16 y_size )
 
 
 /**
- * Gibt die Position des Convois zurï¿½ck.
+ * Gibt die Position des Convois zurück.
  * @return Position des Convois
  * @author Hj. Malthaner
  */
@@ -760,7 +758,7 @@ bool convoi_t::sync_step(long delta_t)
 
 	switch(state) {
 		case INITIAL:
-			// jemand muï¿½ start aufrufen, damit der convoi von INITIAL
+			// jemand muß start aufrufen, damit der convoi von INITIAL
 			// nach ROUTING_1 geht, das kann nicht automatisch gehen
 			break;
 
@@ -872,7 +870,7 @@ bool convoi_t::sync_step(long delta_t)
 
 /**
  * Berechne route von Start- zu Zielkoordinate
- * @author Hanjsï¿½rg Malthaner
+ * @author Hanjsörg Malthaner
  */
 bool convoi_t::drive_to()
 {
@@ -917,7 +915,7 @@ bool convoi_t::drive_to()
 /**
  * Ein Fahrzeug hat ein Problem erkannt und erzwingt die
  * Berechnung einer neuen Route
- * @author Hanjsï¿½rg Malthaner
+ * @author Hanjsörg Malthaner
  */
 void convoi_t::suche_neue_route()
 {
@@ -1422,8 +1420,8 @@ DBG_MESSAGE("convoi_t::add_vehikel()","extend array_tpl to %i totals.",max_rail_
 		freight_info_resort = true;
 		// Add good_catg_index:
 		if(v->get_fracht_max() != 0) {
-			const freight_desc_t *ware=v->get_fracht_typ();
-			if(ware!=freight_builder_t::nichts  ) {
+			const ware_besch_t *ware=v->get_fracht_typ();
+			if(ware!=warenbauer_t::nichts  ) {
 				goods_catg_index.append_unique( ware->get_catg_index(), 1 );
 			}
 		}
@@ -1514,8 +1512,8 @@ void convoi_t::recalc_catg_index()
 		if(get_vehikel(i)->get_fracht_max() == 0) {
 			continue;
 		}
-		const freight_desc_t *ware=get_vehikel(i)->get_fracht_typ();
-		if(ware!=freight_builder_t::nichts  ) {
+		const ware_besch_t *ware=get_vehikel(i)->get_fracht_typ();
+		if(ware!=warenbauer_t::nichts  ) {
 			goods_catg_index.append_unique( ware->get_catg_index(), 1 );
 		}
 	}
@@ -2349,9 +2347,9 @@ void convoi_t::get_freight_info(cbuffer_t & buf)
 	if(freight_info_resort) {
 		freight_info_resort = false;
 		// rebuilt the list with goods ...
-		vector_tpl<freight_t> total_fracht;
+		vector_tpl<ware_t> total_fracht;
 
-		size_t const n = freight_builder_t::get_waren_anzahl();
+		size_t const n = warenbauer_t::get_waren_anzahl();
 		ALLOCA(uint32, max_loaded_waren, n);
 		MEMZERON(max_loaded_waren, n);
 
@@ -2359,20 +2357,16 @@ void convoi_t::get_freight_info(cbuffer_t & buf)
 			const vehikel_t* v = fahr[i];
 
 			// first add to capacity indicator
-			const freight_desc_t* ware_besch = v->get_besch()->get_ware();
+			const ware_besch_t* ware_besch = v->get_besch()->get_ware();
 			const uint16 menge = v->get_besch()->get_zuladung();
-			if(menge>0  &&  ware_besch!=freight_builder_t::nichts) {
+			if(menge>0  &&  ware_besch!=warenbauer_t::nichts) {
 				max_loaded_waren[ware_besch->get_index()] += menge;
 			}
 
 			// then add the actual load
-			slist_iterator_tpl<freight_t> iter_vehicle_ware(v->get_fracht());
-			while(iter_vehicle_ware.next()) {
-				freight_t ware = iter_vehicle_ware.get_current();
-				for(unsigned i=0;  i<total_fracht.get_count();  i++ ) {
-
+			FOR(slist_tpl<ware_t>, ware, v->get_fracht()) {
+				FOR(vector_tpl<ware_t>, & tmp, total_fracht) {
 					// could this be joined with existing freight?
-					freight_t & tmp = total_fracht.at(i);
 
 					// for pax: join according next stop
 					// for all others we *must* use target coordinates
@@ -2394,14 +2388,14 @@ void convoi_t::get_freight_info(cbuffer_t & buf)
 		buf.clear();
 
 		// apend info on total capacity
-		slist_tpl <freight_t>capacity;
+		slist_tpl <ware_t>capacity;
 		for (size_t i = 0; i != n; ++i) {
-			if(max_loaded_waren[i]>0  &&  i!=freight_builder_t::INDEX_NONE) {
-				freight_t ware(freight_builder_t::get_info(i));
+			if(max_loaded_waren[i]>0  &&  i!=warenbauer_t::INDEX_NONE) {
+				ware_t ware(warenbauer_t::get_info(i));
 				ware.menge = max_loaded_waren[i];
 				// append to category?
-				slist_tpl<freight_t>::iterator j   = capacity.begin();
-				slist_tpl<freight_t>::iterator end = capacity.end();
+				slist_tpl<ware_t>::iterator j   = capacity.begin();
+				slist_tpl<ware_t>::iterator end = capacity.end();
 				while (j != end && j->get_besch()->get_catg_index() < ware.get_besch()->get_catg_index()) ++j;
 				if (j != end && j->get_besch()->get_catg_index() == ware.get_besch()->get_catg_index()) {
 					j->menge += max_loaded_waren[i];
@@ -2710,7 +2704,7 @@ void convoi_t::calc_speedbonus_kmh()
 			const vehikel_besch_t* const besch = fahr[i]->get_besch();
 			total_max_weight += besch->get_gewicht();
 			total_weight += fahr[i]->get_gesamtgewicht(); // convoi_t::sum_gesamgewicht may not be updated yet when this method is called...
-			if(  besch->get_ware() == freight_builder_t::nichts  ) {
+			if(  besch->get_ware() == warenbauer_t::nichts  ) {
 				; // nothing
 			}
 			else if(  besch->get_ware()->get_catg() == 0  ) {
@@ -2968,7 +2962,7 @@ void convoi_t::check_pending_updates()
 			// something to check for ...
 			current = fpl->get_current_eintrag().pos;
 
-			if(  aktuell<new_fpl->get_count() &&  current==new_fpl->eintrag.get(aktuell).pos  ) {
+			if(  aktuell<new_fpl->get_count() &&  current==new_fpl->eintrag[aktuell].pos  ) {
 				// next pos is the same => keep the convoi state
 				is_same = true;
 			}
@@ -2989,30 +2983,30 @@ void convoi_t::check_pending_updates()
 				 * (To detect also places, where only the platform
 				 *  changed, we also compare the halthandle)
 				 */
-				const koord3d next = fpl->eintrag.get((aktuell+1)%fpl->get_count()).pos;
-				const koord3d nextnext = fpl->eintrag.get((aktuell+2)%fpl->get_count()).pos;
-				const koord3d nextnextnext = fpl->eintrag.get((aktuell+3)%fpl->get_count()).pos;
+				const koord3d next = fpl->eintrag[(aktuell+1)%fpl->get_count()].pos;
+				const koord3d nextnext = fpl->eintrag[(aktuell+2)%fpl->get_count()].pos;
+				const koord3d nextnextnext = fpl->eintrag[(aktuell+3)%fpl->get_count()].pos;
 				int how_good_matching = 0;
 				const uint8 new_count = new_fpl->get_count();
 
 				for(  uint8 i=0;  i<new_count;  i++  ) {
 					int quality =
-						matches_halt(current,new_fpl->eintrag.get(i).pos)*3 +
-						matches_halt(next,new_fpl->eintrag.get((i+1)%new_count).pos)*4 +
-						matches_halt(nextnext,new_fpl->eintrag.get((i+2)%new_count).pos)*2 +
-						matches_halt(nextnextnext,new_fpl->eintrag.get((i+3)%new_count).pos);
+						matches_halt(current,new_fpl->eintrag[i].pos)*3 +
+						matches_halt(next,new_fpl->eintrag[(i+1)%new_count].pos)*4 +
+						matches_halt(nextnext,new_fpl->eintrag[(i+2)%new_count].pos)*2 +
+						matches_halt(nextnextnext,new_fpl->eintrag[(i+3)%new_count].pos);
 					if(  quality>how_good_matching  ) {
 						// better match than previous: but depending of distance, the next number will be different
-						if(  matches_halt(current,new_fpl->eintrag.get(i).pos)  ) {
+						if(  matches_halt(current,new_fpl->eintrag[i].pos)  ) {
 							aktuell = i;
 						}
-						else if(  matches_halt(next,new_fpl->eintrag.get((i+1)%new_count).pos)  ) {
+						else if(  matches_halt(next,new_fpl->eintrag[(i+1)%new_count].pos)  ) {
 							aktuell = i+1;
 						}
-						else if(  matches_halt(nextnext,new_fpl->eintrag.get((i+2)%new_count).pos)  ) {
+						else if(  matches_halt(nextnext,new_fpl->eintrag[(i+2)%new_count].pos)  ) {
 							aktuell = i+2;
 						}
-						else if(  matches_halt(nextnextnext,new_fpl->eintrag.get((i+3)%new_count).pos)  ) {
+						else if(  matches_halt(nextnextnext,new_fpl->eintrag[(i+3)%new_count].pos)  ) {
 							aktuell = i+3;
 						}
 						aktuell %= new_count;
@@ -3025,7 +3019,7 @@ void convoi_t::check_pending_updates()
 					aktuell = new_fpl->get_aktuell();
 				}
 				// if we go to same, then we do not need route recalculation ...
-				is_same = matches_halt(current,new_fpl->eintrag.get(aktuell).pos);
+				is_same = matches_halt(current,new_fpl->eintrag[aktuell].pos);
 			}
 		}
 
@@ -3082,8 +3076,8 @@ void convoi_t::check_pending_updates()
 void convoi_t::register_stops()
 {
 	if(  fpl  ) {
-		for(  uint8 i=0;  i<fpl->get_count();  ++i  ) {
-			const halthandle_t halt = haltestelle_t::get_halt( welt, fpl->eintrag.get(i).pos, get_besitzer() );
+		FOR(minivec_tpl<linieneintrag_t>, const& i, fpl->eintrag) {
+			halthandle_t const halt = haltestelle_t::get_halt(welt, i.pos, get_besitzer());
 			if(  halt.is_bound()  ) {
 				halt->add_convoy(self);
 			}
@@ -3099,8 +3093,8 @@ void convoi_t::register_stops()
 void convoi_t::unregister_stops()
 {
 	if(  fpl  ) {
-		for(  uint8 i=0;  i<fpl->get_count();  ++i  ) {
-			const halthandle_t halt = haltestelle_t::get_halt( welt, fpl->eintrag.get(i).pos, get_besitzer() );
+		FOR(minivec_tpl<linieneintrag_t>, const& i, fpl->eintrag) {
+			halthandle_t const halt = haltestelle_t::get_halt(welt, i.pos, get_besitzer());
 			if(  halt.is_bound()  ) {
 				halt->remove_convoy(self);
 			}
@@ -3249,7 +3243,7 @@ bool convoi_t::can_overtake(overtaker_t *other_overtaker, sint32 other_speed, si
 			// Check for other vehicles on the next tile
 			const uint8 top = gr->get_top();
 			for(  uint8 j=1;  j<top;  j++  ) {
-				if(  vehicle_base_t* const v = ding_cast<vehicle_base_t>(gr->obj_bei(j))  ) {
+				if(  vehikel_basis_t* const v = ding_cast<vehikel_basis_t>(gr->obj_bei(j))  ) {
 					// check for other traffic on the road
 					const overtaker_t *ov = v->get_overtaker();
 					if(ov) {
@@ -3327,14 +3321,14 @@ bool convoi_t::can_overtake(overtaker_t *other_overtaker, sint32 other_speed, si
 			return false;
 		}
 
-		int d = ribi_t::ist_gerade(str->get_ribi()) ? VEHICLE_STEPS_PER_TILE : vehicle_base_t::get_diagonal_vehicle_steps_per_tile();
+		int d = ribi_t::ist_gerade(str->get_ribi()) ? VEHICLE_STEPS_PER_TILE : vehikel_basis_t::get_diagonal_vehicle_steps_per_tile();
 		distance -= d;
 		time_overtaking += d;
 
 		// Check for other vehicles
 		const uint8 top = gr->get_top();
 		for(  uint8 j=1;  j<top;  j++ ) {
-			if (vehicle_base_t* const v = ding_cast<vehicle_base_t>(gr->obj_bei(j))) {
+			if (vehikel_basis_t* const v = ding_cast<vehikel_basis_t>(gr->obj_bei(j))) {
 				// check for other traffic on the road
 				const overtaker_t *ov = v->get_overtaker();
 				if(ov) {
@@ -3386,14 +3380,14 @@ bool convoi_t::can_overtake(overtaker_t *other_overtaker, sint32 other_speed, si
 			time_overtaking -= (VEHICLE_STEPS_PER_TILE<<16) / kmh_to_speed(str->get_max_speed());
 		}
 		else {
-			time_overtaking -= (vehicle_base_t::get_diagonal_vehicle_steps_per_tile()<<16) / kmh_to_speed(str->get_max_speed());
+			time_overtaking -= (vehikel_basis_t::get_diagonal_vehicle_steps_per_tile()<<16) / kmh_to_speed(str->get_max_speed());
 		}
 
 		// Check for other vehicles in facing direction
 		ribi_t::ribi their_direction = ribi_t::rueckwaerts( fahr[0]->calc_richtung(pos_prev, pos_next.get_2d()) );
 		const uint8 top = gr->get_top();
 		for(  uint8 j=1;  j<top;  j++ ) {
-			vehicle_base_t* const v = ding_cast<vehicle_base_t>(gr->obj_bei(j));
+			vehikel_basis_t* const v = ding_cast<vehikel_basis_t>(gr->obj_bei(j));
 			if (v && v->get_fahrtrichtung() == their_direction && v->get_overtaker()) {
 				return false;
 			}

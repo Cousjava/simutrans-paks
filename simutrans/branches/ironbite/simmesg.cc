@@ -50,36 +50,30 @@ PLAYER_COLOR_VAL message_t::node::get_player_color(karte_t *welt) const
 }
 
 
-message_t::message_t(karte_t *welt)
+message_t::message_t(karte_t *w)
 {
-	this->welt = welt;
+	welt = w;
 	ticker_flags = 0xFF7F;	// everything on the ticker only
 	win_flags = 0;
 	auto_win_flags = 0;
 	ignore_flags = 0;
-	
-	if(welt)
-	{
+	if(w) {
 		win_flags = 256+8;
 		auto_win_flags = 128+512;
 	}
-	
-	list = new slist_tpl<node *> ();
 }
 
 
 message_t::~message_t()
 {
 	clear();
-	delete list;
 }
 
 
 void message_t::clear()
 {
-	while (!list->empty()) 
-	{
-		delete list->remove_first();
+	while (!list.empty()) {
+		delete list.remove_first();
 	}
 	ticker::clear_ticker();
 }
@@ -133,22 +127,34 @@ DBG_MESSAGE("message_t::add_msg()","%40s (at %i,%i)", text, pos.x, pos.y );
 	if(  what == traffic_jams  ) {
 		sint32 now = welt->get_current_month()-2;
 		uint32 i = 0;
-
-		slist_iterator_tpl <node *> iter (list);
-		while(iter.next())
-		{
-			node * node = iter.get_current();
-			
-			if (node->time >= now &&
-					strcmp(node->msg, text) == 0 &&
-					(node->pos.x & 0xFFF0) == (pos.x & 0xFFF0) && // positions need not 100% match ...
-					(node->pos.y & 0xFFF0) == (pos.y & 0xFFF0)) {
+		FOR(slist_tpl<node*>, const iter, list) {
+			node const& n = *iter;
+			if (n.time >= now &&
+					strcmp(n.msg, text) == 0 &&
+					(n.pos.x & 0xFFF0) == (pos.x & 0xFFF0) && // positions need not 100% match ...
+					(n.pos.y & 0xFFF0) == (pos.y & 0xFFF0)) {
 				// we had exactly this message already
 				return;
 			}
-			i++;
-			
-			if(i > 20) break;
+			if (++i == 20) break;
+		}
+	}
+
+	// if no coordinate is provided, there is maybe one in the text message?
+	// syntax: either @x,y or (x,y)
+	if (pos == koord::invalid) {
+		const char *str = text;
+		// scan until either @ or ( are found
+		while( *(str += strcspn(str, "@(")) ) {
+			str += 1;
+			int x=-1, y=-1;
+			if (sscanf(str, "%d,%d", &x, &y) == 2) {
+				if (welt->ist_in_kartengrenzen(x,y)) {
+					pos.x = x;
+					pos.y = y;
+					break; // success
+				}
+			}
 		}
 	}
 
@@ -169,8 +175,8 @@ DBG_MESSAGE("message_t::add_msg()","%40s (at %i,%i)", text, pos.x, pos.y );
 	}
 
 	// insert at the top
-	list->insert(n);
-	char* p = list->front()->msg;
+	list.insert(n);
+	char* p = list.front()->msg;
 
 	// if local flag is set and we are not current player, do not open windows
 	if(  (color & PLAYER_FLAG) != 0  &&  welt->get_active_player_nr() != (color&(~PLAYER_FLAG))  ) {
@@ -178,7 +184,7 @@ DBG_MESSAGE("message_t::add_msg()","%40s (at %i,%i)", text, pos.x, pos.y );
 	}
 	// check if some window has focus
 	gui_frame_t *old_top = win_get_top();
-	gui_component_t *focus = win_get_focus();
+	gui_komponente_t *focus = win_get_focus();
 
 	// should we open an autoclose windows?
 	if(  art & auto_win_flags  ) {
@@ -211,10 +217,9 @@ DBG_MESSAGE("message_t::add_msg()","%40s (at %i,%i)", text, pos.x, pos.y );
 
 void message_t::rotate90( sint16 size_w )
 {
-	for(  slist_tpl<message_t::node *>::iterator iter = list->begin(), end = list->end();  iter!=end; ++iter  ) {
-		(*iter)->pos.rotate90( size_w );
+	FOR(slist_tpl<node*>, const i, list) {
+		i->pos.rotate90(size_w);
 	}
-
 }
 
 
@@ -225,53 +230,27 @@ void message_t::rdwr( loadsave_t *file )
 		if(  umgebung_t::server  ) {
 			// on server: do not save local messages
 			msg_count = 0;
-
-			slist_iterator_tpl <node *> iter (list);
-			while(iter.next())
-			{
-				node * node = iter.get_current();
-				if((node->type & local_flag) == 0  )
-				{
-					msg_count ++;
-				}
-				if(msg_count >= 2000)
-				{
-					break;
+			FOR(slist_tpl<node*>, const i, list) {
+				if (!(i->type & local_flag)) {
+					if (++msg_count == 2000) break;
 				}
 			}
 			file->rdwr_short( msg_count );
-
-			slist_iterator_tpl <node *> iter2 (list);
-			while(iter2.next())
-			{
-				node * node = iter2.get_current();
-				if(  (node->type & local_flag) == 0  ) {
-					node->rdwr(file);
+			FOR(slist_tpl<node*>, const i, list) {
+				if (msg_count == 0) break;
+				if (!(i->type & local_flag)) {
+					i->rdwr(file);
 					msg_count --;
-				}
-				if(msg_count == 0)
-				{
-					break;
 				}
 			}
 			assert( msg_count == 0 );
 		}
 		else {
-			msg_count = min( 2000u, list->get_count() );
+			msg_count = min( 2000u, list.get_count() );
 			file->rdwr_short( msg_count );
-
-			slist_iterator_tpl <node *> iter (list);
-			while(iter.next())
-			{
-				node * node = iter.get_current();
-
-				node->rdwr(file);
-				
-				--msg_count;
-				if(msg_count == 0)
-				{
-					break;
-				}
+			FOR(slist_tpl<node*>, const i, list) {
+				i->rdwr(file);
+				if (--msg_count == 0) break;
 			}
 		}
 	}
@@ -282,7 +261,7 @@ void message_t::rdwr( loadsave_t *file )
 		while(  (msg_count--)>0  ) {
 			node *n = new node();
 			n->rdwr(file);
-			list->append(n);
+			list.append(n);
 		}
 	}
 }

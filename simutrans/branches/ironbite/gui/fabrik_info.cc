@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2003 Hj. Malthaner
+ * Copyright (c) 1997 - 2003 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -85,8 +85,8 @@ fabrik_info_t::fabrik_info_t(fabrik_t* fab_, const gebaeude_t* gb) :
 	scrolly.set_show_scroll_x(false);
 	add_komponente(&scrolly);
 
-	gui_frame_t::set_window_size(koord(TOTAL_WIDTH, 16+offset_below_viewport+BUTTON_HEIGHT+3+fab_info.get_groesse().y+LINESPACE+10-1));
-	set_min_window_size(koord(TOTAL_WIDTH, 16+offset_below_viewport+BUTTON_HEIGHT+3+LINESPACE*3));
+	gui_frame_t::set_fenstergroesse(koord(TOTAL_WIDTH, 16+offset_below_viewport+BUTTON_HEIGHT+3+fab_info.get_groesse().y+LINESPACE+10-1));
+	set_min_windowsize(koord(TOTAL_WIDTH, 16+offset_below_viewport+BUTTON_HEIGHT+3+LINESPACE*3));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -123,20 +123,20 @@ void fabrik_info_t::rename_factory()
  * Set window size and adjust component sizes and/or positions accordingly
  * @author Markus Weber
  */
-void fabrik_info_t::set_window_size(koord groesse)
+void fabrik_info_t::set_fenstergroesse(koord groesse)
 {
-	gui_frame_t::set_window_size(groesse);
+	gui_frame_t::set_fenstergroesse(groesse);
 
 	// would be only needed in case of enabling horizontal resizes
-	input.set_groesse(koord(get_window_size().x-20, 13));
-	view.set_pos(koord(get_window_size().x - view.get_groesse().x - 10 , 21));
+	input.set_groesse(koord(get_fenstergroesse().x-20, 13));
+	view.set_pos(koord(get_fenstergroesse().x - view.get_groesse().x - 10 , 21));
 
-	scrolly.set_groesse(get_client_window_size()-scrolly.get_pos());
+	scrolly.set_groesse(get_client_windowsize()-scrolly.get_pos());
 }
 
 
 /**
- * komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
+ * komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
  * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
  * in dem die Komponente dargestellt wird.
  *
@@ -218,7 +218,7 @@ bool fabrik_info_t::action_triggered( gui_action_creator_t *komp, value_t v)
 		chart_button.set_pos( koord(BUTTON3_X,offset_below_viewport) );
 		details_button.set_pos( koord(BUTTON4_X,offset_below_viewport) );
 		scrolly.set_pos( koord(0,offset_below_viewport+BUTTON_HEIGHT+3) );
-		set_min_window_size(koord(TOTAL_WIDTH, 16+offset_below_viewport+BUTTON_HEIGHT+3+LINESPACE*3));
+		set_min_windowsize(koord(TOTAL_WIDTH, 16+offset_below_viewport+BUTTON_HEIGHT+3+LINESPACE*3));
 		resize( koord(0,(chart_button.pressed ? chart.get_groesse().y : -chart.get_groesse().y) ) );
 	}
 	else if(komp == &input) {
@@ -252,11 +252,11 @@ template <typename T> static void make_buttons(button_t*& dst, T const& coords, 
 		dst = 0;
 	} else {
 		button_t* b = dst = new button_t[coords.get_count()];
-		for (typename T::const_iterator i = coords.begin(), end = coords.end(); i != end; ++b, ++i) {
+		FORTX(T, const& i, coords, ++b) {
 			b->set_pos(koord(10, y_off));
 			y_off += LINESPACE;
 			b->set_typ(button_t::posbutton);
-			b->set_targetpos(get_coord(*i));
+			b->set_targetpos(get_coord(i));
 			b->add_listener(listener);
 			fab_info.add_komponente(b);
 		}
@@ -311,9 +311,9 @@ void gui_fabrik_info_t::zeichnen(koord offset)
 	if(  !target_cities.empty()  ) {
 		yoff += LINESPACE;
 
-		for(  uint32 c = 0;  c < target_cities.get_count();  c++  ) {
-			const stadt_t::factory_entry_t *const pax_entry = target_cities.get(c)->get_target_factories_for_pax().get_entry(fab);
-			const stadt_t::factory_entry_t *const mail_entry = target_cities.get(c)->get_target_factories_for_mail().get_entry(fab);
+		FOR(vector_tpl<stadt_t*>, const c, target_cities) {
+			stadt_t::factory_entry_t const* const pax_entry  = c->get_target_factories_for_pax().get_entry(fab);
+			stadt_t::factory_entry_t const* const mail_entry = c->get_target_factories_for_mail().get_entry(fab);
 			assert( pax_entry && mail_entry );
 
 			cbuffer_t buf;
@@ -331,7 +331,7 @@ void gui_fabrik_info_t::zeichnen(koord offset)
 			display_proportional_clip( xoff+62+(w>21?w-21:0), yoff, buf, ALIGN_RIGHT, COL_BLACK, true );
 			display_color_img(skinverwaltung_t::post->get_bild_nr(0), xoff+64+1+(w>21?w-21:0), yoff, 0, false, false);
 
-			display_proportional_clip( xoff+90, yoff, target_cities.get(c)->get_name(), ALIGN_LEFT, COL_BLACK, true );
+			display_proportional_clip(xoff + 90, yoff, c->get_name(), ALIGN_LEFT, COL_BLACK, true);
 			yoff += LINESPACE;
 		}
 	}

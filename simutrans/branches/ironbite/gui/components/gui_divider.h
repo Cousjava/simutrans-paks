@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2001 Hj. Malthaner
+ * Copyright (c) 2001 Hansjörg Malthaner
  * Written (w) 2001 Markus Weber
  *
  * This file is part of the Simutrans project under the artistic licence.
@@ -20,7 +20,7 @@
  * @date 30-Oct-01
  * @author Markus Weber
  */
-class gui_divider_t : public gui_component_t
+class gui_divider_t : public gui_komponente_t
 {
 public:
     /**

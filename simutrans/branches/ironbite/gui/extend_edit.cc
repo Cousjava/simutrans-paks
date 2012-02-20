@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2004 Hj. Malthaner
+ * Copyright (c) 1997 - 2004 Hansjörg Malthaner
  *
  * Line management
  *
@@ -89,7 +89,7 @@ extend_edit_gui_t::extend_edit_gui_t(const char *name, spieler_t* sp_, karte_t* 
 	}
 
 	// resize button
-	set_min_window_size(koord(tab_panel_width+COLUMN_WIDTH+3*MARGIN, TITLEBAR_HEIGHT+SCL_HEIGHT+(get_base_tile_raster_width()*3)/2+5*MARGIN));
+	set_min_windowsize(koord(tab_panel_width+COLUMN_WIDTH+3*MARGIN, TITLEBAR_HEIGHT+SCL_HEIGHT+(get_base_tile_raster_width()*3)/2+5*MARGIN));
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
 }
@@ -155,7 +155,7 @@ void extend_edit_gui_t::resize(const koord delta)
 	gui_frame_t::resize(delta);
 
 	// text region
-	koord groesse = get_window_size()-koord( tab_panel_width+2*MARGIN, offset_of_comp+16 );
+	koord groesse = get_fenstergroesse()-koord( tab_panel_width+2*MARGIN, offset_of_comp+16 );
 	info_text.set_width(groesse.x - 20);
 	info_text.recalc_size();
 	cont.set_groesse( info_text.get_groesse() + koord(0, 20) );

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -11,8 +11,11 @@
 #include "components/gui_textarea.h"
 
 #include "gui_frame.h"
+#include "gui_container.h"
+
 #include "components/gui_scrollpane.h"
 #include "components/gui_label.h"
+#include "components/gui_button.h"
 
 #include "../halthandle_t.h"
 #include "../utils/cbuffer_t.h"
@@ -59,13 +62,13 @@ public:
 
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.
-	 * @return den Dateinamen fï¿½r die Hilfe, oder NULL
+	 * @return den Dateinamen für die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	const char * get_help_file() const { return "station_details.txt"; }
+	const char * get_hilfe_datei() const { return "station_details.txt"; }
 
     // Set window size and adjust component sizes and/or positions accordingly
-    virtual void set_window_size(koord groesse);
+    virtual void set_fenstergroesse(koord groesse);
 
 	bool action_triggered(gui_action_creator_t*, value_t) OVERRIDE;
 

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -12,6 +12,7 @@
 #include <stdio.h>
 
 #include "gui_frame.h"
+#include "gui_container.h"
 #include "../simcolor.h"
 #include "../simgraph.h"
 #include "../simwin.h"
@@ -25,21 +26,54 @@
 gui_frame_t::gui_frame_t(char const* const name, spieler_t const* const sp)
 {
 	this->name = name;
+	container = new gui_container_t();
 	groesse = koord(200, 100);
-	min_window_size = koord(0,0);
+	min_windowsize = koord(0,0);
 	owner = sp;
-	container.set_pos(koord(0,TITLEBAR_HEIGHT));
+	container->set_pos(koord(0,TITLEBAR_HEIGHT));
 	set_resizemode(no_resize); //25-may-02	markus weber	added
 	dirty = true;
 }
 
+gui_frame_t::~gui_frame_t()
+{
+	delete container;
+	container = 0;
+}
 
+/**
+ * Fügt eine Komponente zum Fenster hinzu.
+ * @author Hj. Malthaner
+ */
+void gui_frame_t::add_komponente(gui_komponente_t *komp) 
+{ 
+	container->add_komponente(komp); 
+}
+
+/**
+ * Entfernt eine Komponente aus dem Container.
+ * @author Hj. Malthaner
+ */
+void gui_frame_t::remove_komponente(gui_komponente_t *komp) 
+{ 
+	container->remove_komponente(komp); 
+}
+
+void gui_frame_t::set_focus( gui_komponente_t *k ) 
+{	
+	container->set_focus(k); 
+}
+
+gui_komponente_t * gui_frame_t::get_focus() 
+{ 
+	return container->get_focus(); 
+}
 
 /**
  * Setzt die Fenstergroesse
  * @author Hj. Malthaner
  */
-void gui_frame_t::set_window_size(koord groesse)
+void gui_frame_t::set_fenstergroesse(koord groesse)
 {
 	if(groesse!=this->groesse) {
 		// mark old size dirty
@@ -47,13 +81,13 @@ void gui_frame_t::set_window_size(koord groesse)
 		mark_rect_dirty_wc(pos.x,pos.y,pos.x+this->groesse.x,pos.y+this->groesse.y);
 
 		// minimal width //25-may-02	markus weber	added
-		if (groesse.x < min_window_size.x) {
-			groesse.x = min_window_size.x;
+		if (groesse.x < min_windowsize.x) {
+			groesse.x = min_windowsize.x;
 		}
 
 		// minimal heigth //25-may-02	markus weber	added
-		if (groesse.y < min_window_size.y) {
-			groesse.y = min_window_size.y;
+		if (groesse.y < min_windowsize.y) {
+			groesse.y = min_windowsize.y;
 		}
 
 		this->groesse = groesse;
@@ -61,76 +95,15 @@ void gui_frame_t::set_window_size(koord groesse)
 	}
 }
 
+
 /**
- * Manche Fenster haben einen Hilfetext assoziiert.
- * @return den Dateinamen fï¿½r die Hilfe, oder NULL
+ * gibt farbinformationen fuer Fenstertitel, -ränder und -körper
+ * zurück
  * @author Hj. Malthaner
  */
-const char * gui_frame_t::get_help_file() const 
+PLAYER_COLOR_VAL gui_frame_t::get_titelcolor() const
 {
-	return NULL;
-}
-
-/**
- * Does this window need a min size button in the title bar?
- * @return true if such a button is needed
- * @author Hj. Malthaner
- */
-bool gui_frame_t::has_min_sizer() const 
-{
-	return false;
-}
-
-/**
- * Does this window need a next button in the title bar?
- * @return true if such a button is needed
- * @author Volker Meyer
- */
-bool gui_frame_t::has_next() const 
-{
-	return false;
-}
-
-/**
- * Does this window need a prev button in the title bar?
- * @return true if such a button is needed
- * @author Volker Meyer
- */
-bool gui_frame_t::has_prev() const 
-{
-	return has_next();
-}
-
-bool gui_frame_t::has_sticky() const 
-{ 
-	return true; 
-}
-
-/**
- * if false, title and all gadgets will be not drawn
- */
-bool gui_frame_t::has_title() const 
-{
-	return true; 
-}
-
-
-/**
- * gibt farbinformationen fuer Fenstertitel, -rï¿½nder und -kï¿½rper
- * zurï¿½ck
- * @author Hj. Malthaner
- */
-PLAYER_COLOR_VAL gui_frame_t::get_title_color() const
-{
-	if(owner)
-	{
-		const int nr = owner->get_player_nr();
-		return PLAYER_FLAG | (nr << 8) | owner->get_player_color1();
-	}
-	else
-	{
-		 return WIN_TITEL;
-	}
+	return owner ? PLAYER_FLAG|(owner->get_player_color1()+1) : WIN_TITEL;
 }
 
 
@@ -148,17 +121,17 @@ bool gui_frame_t::infowin_event(const event_t *ev)
 		resize(delta);
 		return true;	// not pass to childs!
 	} else if(IS_WINDOW_MAKE_MIN_SIZE(ev)) {
-		set_window_size( get_min_window_size() ) ;
+		set_fenstergroesse( get_min_windowsize() ) ;
 		resize( koord(0,0) ) ;
 		return true;	// not pass to childs!
 	}
 	else if(ev->ev_class==INFOWIN  &&  (ev->ev_code==WIN_CLOSE  ||  ev->ev_code==WIN_OPEN  ||  ev->ev_code==WIN_TOP)) {
 		dirty = true;
-		container.clear_dirty();
+		container->clear_dirty();
 	}
 	event_t ev2 = *ev;
 	translate_event(&ev2, 0, -TITLEBAR_HEIGHT);
-	return container.infowin_event(&ev2);
+	return container->infowin_event(&ev2);
 }
 
 
@@ -174,19 +147,19 @@ void gui_frame_t::resize(const koord delta)
 	koord new_size = groesse + delta;
 
 	// resize window to the minimal width
-	if (new_size.x < min_window_size.x) {
-		size_change.x = min_window_size.x - groesse.x;
-		new_size.x = min_window_size.x;
+	if (new_size.x < min_windowsize.x) {
+		size_change.x = min_windowsize.x - groesse.x;
+		new_size.x = min_windowsize.x;
 	}
 
 	// resize window to the minimal heigth
-	if (new_size.y < min_window_size.y) {
-		size_change.y = min_window_size.y - groesse.y;
-		new_size.y = min_window_size.y;
+	if (new_size.y < min_windowsize.y) {
+		size_change.y = min_windowsize.y - groesse.y;
+		new_size.y = min_windowsize.y;
 	}
 
 	// resize window
-	set_window_size(new_size);
+	set_fenstergroesse(new_size);
 
 	// change drag start
 	change_drag_start(size_change.x, size_change.y);
@@ -194,25 +167,7 @@ void gui_frame_t::resize(const koord delta)
 
 
 /**
- * Position of a connected thing on the map
- */
-koord3d gui_frame_t::get_weltpos() 
-{
-	return koord3d::invalid; 
-}
-
-/**
- * Check if position is inside this window
- * @author Hj. Malthaner
- */
-bool gui_frame_t::getroffen(const int x, const int y)
-{
-	const koord groesse = get_window_size();
-	return (  x>=0  &&  y>=0  &&  x<groesse.x  &&  y<groesse.y  );
-}
-
-/**
- * komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
+ * komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
  * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
  * in dem die Komponente dargestellt wird.
  * @author Hj. Malthaner
@@ -251,23 +206,7 @@ void gui_frame_t::zeichnen(koord pos, koord gr)
 	// Hajo: bottom line
 	display_fillbox_wh(pos.x, pos.y+gr.y-1, gr.x, 1, MN_GREY0, false);
 
-	// Hajo: title-less windows need a top line, too
-	if(!has_title())
-	{
-		display_fillbox_wh(pos.x, pos.y+TITLEBAR_HEIGHT, gr.x, 1, MN_GREY4, false);
-	}
-	
-	container.zeichnen(pos);
+	container->zeichnen(pos);
 
 	POP_CLIP();
-}
-
-void gui_frame_t::set_focus(gui_component_t *k)
-{
-        container.set_focus(k);
-}
-
-gui_component_t * gui_frame_t::get_focus()
-{
-        return container.get_focus();
 }

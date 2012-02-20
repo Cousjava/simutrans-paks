@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -12,7 +12,7 @@
 #include "../utils/simstring.h"
 #include "../simversion.h"
 
-#include "components/list_button.h"
+#include "components/gui_scrolled_item.h"
 #include "../dataobj/translator.h"
 #include "../dataobj/network.h"
 #include "../dataobj/network_file_transfer.h"
@@ -100,8 +100,8 @@ server_frame_t::server_frame_t(karte_t* w) :
 	}
 	pos_y += 16;
 
-	set_window_size( koord( 240, pos_y ) );
-	set_min_window_size( koord( 240, pos_y ) );
+	set_fenstergroesse( koord( 240, pos_y ) );
+	set_min_windowsize( koord( 240, pos_y ) );
 	set_resizemode( no_resize );
 }
 
@@ -332,7 +332,7 @@ bool server_frame_t::update_serverlist( uint revision, const char *pakset )
 
 			// TODO - Need to decouple the text which is displayed in the listing box from the actual DNS/IP entry which is used to connect to the server in question
 
-			serverlist.append_element( new gui_scrolled_list_t::var_text_scrollitem_t( serverentry, COL_BLUE ) );
+			serverlist.append_element( new var_text_scrollitem_t( serverentry, COL_BLUE ) );
 			dbg->warning( "server_frame_t::update_serverlist", "Appended %s to list", serverentry );
 		}
 		// Clean up, remove temp file used for recv. listings
@@ -384,7 +384,7 @@ bool server_frame_t::action_triggered( gui_action_creator_t *komp, value_t p )
 		set_dirty();
 	}
 	else if(  &add == komp  ) {
-		serverlist.append_element( new gui_scrolled_list_t::var_text_scrollitem_t( "Enter address", COL_BLUE ) );
+		serverlist.append_element( new var_text_scrollitem_t( "Enter address", COL_BLUE ) );
 		serverlist.set_selection( serverlist.count_elements()-1 );
 	}
 	else if(  &show_all_rev == komp  ) {

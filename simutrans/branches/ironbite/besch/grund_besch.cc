@@ -1,5 +1,5 @@
 /*
- *  Copyright (c) 1997 - 2002 by Volker Meyer & Hj. Malthaner
+ *  Copyright (c) 1997 - 2002 by Volker Meyer & Hansjörg Malthaner
  *  2006 completely changed by prissi and Kieron Green
  *
  * This file is part of the Simutrans project under the artistic licence.
@@ -98,7 +98,7 @@ static bild_besch_t* create_textured_tile(const bild_besch_t* bild_lightmap, con
 	}
 	assert(dest - bild_dest->get_daten() == (ptrdiff_t)bild_dest->get_pic()->len);
 
-	bild_dest->display_register_image();
+	bild_dest->register_image();
 	return bild_dest;
 }
 
@@ -251,7 +251,7 @@ static bild_besch_t* create_textured_tile_mix(const bild_besch_t* bild_lightmap,
 		} while(  *dest++!=0 );
 	}
 
-	bild_dest->display_register_image();
+	bild_dest->register_image();
 	return bild_dest;
 }
 

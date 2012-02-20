@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  * Written (w) 2001 Markus Weber
  *
  * This file is part of the Simutrans project under the artistic licence.
@@ -17,7 +17,7 @@
 /**
  * @autor Hj. Malthaner
  */
-class halt_list_stats_t : public gui_component_t
+class halt_list_stats_t : public gui_komponente_t
 {
 private:
 	halthandle_t halt;

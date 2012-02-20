@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2001 Hj. Malthaner
+ * Copyright (c) 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  */
@@ -25,7 +25,7 @@
 #include "simtools.h"
 
 
-map_display_t::map_display_t(karte_t *welt)
+karte_ansicht_t::karte_ansicht_t(karte_t *welt)
 {
     this->welt = welt;
 }
@@ -42,16 +42,16 @@ static const sint8 hours2night[] =
 
 
 
-void map_display_t::display(bool force_dirty)
+void karte_ansicht_t::display(bool force_dirty)
 {
 #if COLOUR_DEPTH != 0
-	DBG_DEBUG4("map_display_t::display", "starting ...");
+	DBG_DEBUG4("karte_ansicht_t::display", "starting ...");
 	display_set_image_proc(true);
 
 	uint32 rs = get_random_seed();
 	const sint16 disp_width = display_get_width();
 	const sint16 disp_real_height = display_get_height();
-	const sint16 menu_height = werkzeug_t::toolbar_tool.get(0)->iconsize.y;
+	const sint16 menu_height = werkzeug_t::toolbar_tool[0]->iconsize.y;
 
 	const sint16 disp_height = display_get_height() - 16 - (!ticker::empty() ? 16 : 0);
 	display_set_clip_wh( 0, menu_height, disp_width, disp_height-menu_height );
@@ -121,7 +121,7 @@ void map_display_t::display(bool force_dirty)
 	const uint8 saved_hide_buildings = umgebung_t::hide_buildings;
 
 	// first display ground
-	DBG_DEBUG4("map_display_t::display", "display ground");
+	DBG_DEBUG4("karte_ansicht_t::display", "display ground");
 	int	y;
 	for(y=y_min; y<dpy_height+4*4; y++) {
 
@@ -164,7 +164,7 @@ void map_display_t::display(bool force_dirty)
 		}
 	}
 
-	DBG_DEBUG4("map_display_t::display", "display things");
+	DBG_DEBUG4("karte_ansicht_t::display", "display things");
 
 	// and then things (and other ground)
 	// especially necessary for vehicles
@@ -227,7 +227,7 @@ void map_display_t::display(bool force_dirty)
 	}
 
 	// and finally overlays (station coverage and signs)
-	DBG_DEBUG4("map_display_t::display", "display overlays");
+	DBG_DEBUG4("karte_ansicht_t::display", "display overlays");
 	for(y=y_min; y<dpy_height+4*4; y++) {
 
 		const sint16 ypos = y*(IMG_SIZE/4) + const_y_off;
@@ -258,7 +258,7 @@ void map_display_t::display(bool force_dirty)
 		}
 	}
 	ding_t *zeiger = welt->get_zeiger();
-	DBG_DEBUG4("map_display_t::display", "display pointer");
+	DBG_DEBUG4("karte_ansicht_t::display", "display pointer");
 	if(zeiger) {
 		// better not try to twist your brain to follow the retransformation ...
 		const sint16 rasterweite=get_tile_raster_width();
@@ -291,7 +291,7 @@ void map_display_t::display(bool force_dirty)
 		zeiger->clear_flag(ding_t::dirty);
 	}
 
-	DBG_DEBUG4("map_display_t::display", "display ticker");
+	DBG_DEBUG4("karte_ansicht_t::display", "display ticker");
 	if(welt) {
 		// show players income/cost messages
 		for(int x=0; x<MAX_PLAYER_COUNT; x++) {
@@ -306,7 +306,7 @@ void map_display_t::display(bool force_dirty)
 	if(force_dirty) {
 		mark_rect_dirty_wc( 0, 0, display_get_width(), display_get_height() );
 	}
-	DBG_DEBUG4("map_display_t::display", "... ready");
+	DBG_DEBUG4("karte_ansicht_t::display", "... ready");
 #else
 	(void)force_dirty;
 #endif

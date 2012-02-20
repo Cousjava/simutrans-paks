@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2010 Hj. Malthaner
+ * Copyright (c) 1997 - 2010 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -8,10 +8,6 @@
 #include <string.h>
 
 #include "gui_fixedwidth_textarea.h"
-#include "../../simcolor.h"
-#include "../../simgraph.h"
-#include "../../font.h"
-#include "../../unicode.h"
 #include "../../dataobj/translator.h"
 #include "../../utils/cbuffer_t.h"
 
@@ -37,7 +33,7 @@ void gui_fixedwidth_textarea_t::set_width(const sint16 width)
 {
 	if(  width>0  ) {
 		// height is simply reset to 0 as it requires recalculation anyway
-		gui_component_t::set_groesse( koord(width, 0) );
+		gui_komponente_t::set_groesse( koord(width, 0) );
 	}
 }
 
@@ -85,7 +81,7 @@ void gui_fixedwidth_textarea_t::calc_display_text(const koord offset, const bool
 		do {
 
 			// end of line?
-			int len = 0;
+			size_t len = 0;
 			uint16 next_char = unicode ? utf8_to_utf16(p, &len) : *p++;
 			p += len;
 
@@ -102,14 +98,14 @@ void gui_fixedwidth_textarea_t::calc_display_text(const koord offset, const bool
 			else if(  next_char==' '  ||  (next_char >= 0x3000  &&   next_char<0xFE70)  ) {
 				// ignore space at start of line
 				if(next_char!=' '  ||  x>0) {
-					x += (KOORD_VAL)large_font_p->get_char_width( next_char );
+					x += (KOORD_VAL)display_get_char_width( next_char );
 				}
 				word_start = p;
 				word_x = 0;
 			}
 			else {
 				// normal char: retrieve and calculate width
-				int ch_width = large_font_p->get_char_width( next_char );
+				int ch_width = display_get_char_width( next_char );
 				x += ch_width;
 				word_x += ch_width;
 			}
@@ -139,7 +135,7 @@ void gui_fixedwidth_textarea_t::calc_display_text(const koord offset, const bool
 
 	// reset component height where necessary
 	if(  y!=get_groesse().y  ) {
-		gui_component_t::set_groesse( koord(get_groesse().x, y) );
+		gui_komponente_t::set_groesse( koord(get_groesse().x, y) );
 	}
 }
 

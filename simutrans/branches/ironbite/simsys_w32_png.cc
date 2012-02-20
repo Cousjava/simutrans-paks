@@ -103,7 +103,7 @@ template<typename T> static void GetProcAddress(T& dst, HMODULE const module, ch
  * Windows XP and newer
  * On Win98 and up, if .NET is installed
  */
-bool system_screenshot_png(const char *filename,  int w, int h, int maxwidth, unsigned short *data, int bitdepth )
+bool dr_screenshot_png(char const* filename,  int w, int h, int maxwidth, unsigned short* data, int bitdepth)
 {
 	// first we try as PNG
 	CLSID encoderClsid;
@@ -160,7 +160,7 @@ bool system_screenshot_png(const char *filename,  int w, int h, int maxwidth, un
 		free( newdata );
 	}
 
-	// Passenden Encoder fï¿½r jpegs suchen:
+	// Passenden Encoder für jpegs suchen:
 	// Genausogut kann man auch image/png benutzen um png's zu speichern ;D
 	// ...oder image/gif um gif's zu speichern, ...
 	bool ok = false;

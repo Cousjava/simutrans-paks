@@ -35,12 +35,12 @@
 
 
 /*
- * Diese Tabelle ermï¿½glicht das Auffinden dient zur Auswahl eines Baumtypen
+ * Diese Tabelle ermöglicht das Auffinden dient zur Auswahl eines Baumtypen
  */
 vector_tpl<const groundobj_besch_t *> movingobj_t::movingobj_typen(0);
 
 /*
- * Diese Tabelle ermï¿½glicht das Auffinden einer Beschreibung durch ihren Namen
+ * Diese Tabelle ermöglicht das Auffinden einer Beschreibung durch ihren Namen
  */
 stringhashtable_tpl<groundobj_besch_t *> movingobj_t::besch_names;
 
@@ -51,14 +51,12 @@ bool compare_groundobj_besch(const groundobj_besch_t* a, const groundobj_besch_t
 bool movingobj_t::alles_geladen()
 {
 	movingobj_typen.resize(besch_names.get_count());
-	stringhashtable_iterator_tpl<groundobj_besch_t *>iter(besch_names);
-	while(  iter.next()  ) {
-		movingobj_typen.insert_ordered( iter.get_current_value(), compare_groundobj_besch );
+	FOR(stringhashtable_tpl<groundobj_besch_t*>, const& i, besch_names) {
+		movingobj_typen.insert_ordered(i.value, compare_groundobj_besch);
 	}
 	// iterate again to assign the index
-	stringhashtable_iterator_tpl<groundobj_besch_t *>iter2(besch_names);
-	while(  iter2.next()  ) {
-		iter2.access_current_value()->index = movingobj_typen.index_of( iter2.get_current_value());
+	FOR(stringhashtable_tpl<groundobj_besch_t*>, const& i, besch_names) {
+		i.value->index = movingobj_typen.index_of(i.value);
 	}
 
 	if(besch_names.empty()) {
@@ -95,9 +93,9 @@ const groundobj_besch_t *movingobj_t::random_movingobj_for_climate(climate cl)
 
 	int weight = 0;
 
-	for( unsigned i=0;  i<movingobj_typen.get_count();  i++  ) {
-		if(  movingobj_typen.get(i)->is_allowed_climate(cl)   ) {
-			weight += movingobj_typen.get(i)->get_distribution_weight();
+	FOR(vector_tpl<groundobj_besch_t const*>, const i, movingobj_typen) {
+		if (i->is_allowed_climate(cl) ) {
+			weight += i->get_distribution_weight();
 		}
 	}
 
@@ -105,11 +103,11 @@ const groundobj_besch_t *movingobj_t::random_movingobj_for_climate(climate cl)
 	if (weight > 0) {
 		const int w=simrand(weight);
 		weight = 0;
-		for( unsigned i=0; i<movingobj_typen.get_count();  i++  ) {
-			if(  movingobj_typen.get(i)->is_allowed_climate(cl) ) {
-				weight += movingobj_typen.get(i)->get_distribution_weight();
+		FOR(vector_tpl<groundobj_besch_t const*>, const i, movingobj_typen) {
+			if (i->is_allowed_climate(cl)) {
+				weight += i->get_distribution_weight();
 				if(weight>=w) {
-					return movingobj_typen.get(i);
+					return i;
 				}
 			}
 		}
@@ -158,7 +156,7 @@ void movingobj_t::calc_bild()
 
 
 
-movingobj_t::movingobj_t(karte_t *welt, loadsave_t *file) : vehicle_base_t(welt)
+movingobj_t::movingobj_t(karte_t *welt, loadsave_t *file) : vehikel_basis_t(welt)
 {
 	rdwr(file);
 	if(get_besch()) {
@@ -168,7 +166,7 @@ movingobj_t::movingobj_t(karte_t *welt, loadsave_t *file) : vehicle_base_t(welt)
 
 
 
-movingobj_t::movingobj_t(karte_t *welt, koord3d pos, const groundobj_besch_t *b ) : vehicle_base_t(welt, pos)
+movingobj_t::movingobj_t(karte_t *welt, koord3d pos, const groundobj_besch_t *b ) : vehikel_basis_t(welt, pos)
 {
 	groundobjtype = movingobj_typen.index_of(b);
 	season = 0xFF;	// mark dirty
@@ -203,7 +201,7 @@ void movingobj_t::rdwr(loadsave_t *file)
 {
 	xml_tag_t d( file, "movingobj_t" );
 
-	vehicle_base_t::rdwr(file);
+	vehikel_basis_t::rdwr(file);
 
 	file->rdwr_enum(fahrtrichtung);
 	if (file->is_loading()) {
@@ -244,7 +242,7 @@ void movingobj_t::rdwr(loadsave_t *file)
 
 
 /**
- * ï¿½ffnet ein neues Beobachtungsfenster fï¿½r das Objekt.
+ * Öffnet ein neues Beobachtungsfenster für das Objekt.
  * @author Hj. Malthaner
  */
 void movingobj_t::zeige_info()
@@ -257,7 +255,7 @@ void movingobj_t::zeige_info()
 
 
 /**
- * @return Einen Beschreibungsstring fï¿½r das Objekt, der z.B. in einem
+ * @return Einen Beschreibungsstring für das Objekt, der z.B. in einem
  * Beobachtungsfenster angezeigt wird.
  * @author Hj. Malthaner
  */
@@ -325,7 +323,7 @@ bool movingobj_t::ist_befahrbar( const grund_t *gr ) const
 			return false;
 		}
 		if(!besch->can_built_trees_here()) {
-			return gr->find<tree_t>()==NULL;
+			return gr->find<baum_t>()==NULL;
 		}
 	}
 	else if(besch->get_waytype()==air_wt) {
@@ -342,7 +340,7 @@ bool movingobj_t::ist_befahrbar( const grund_t *gr ) const
 			return false;
 		}
 		if(!besch->can_built_trees_here()) {
-			return gr->find<tree_t>()==NULL;
+			return gr->find<baum_t>()==NULL;
 		}
 	}
 	return true;

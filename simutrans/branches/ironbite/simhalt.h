@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  * (see license.txt)
@@ -49,7 +49,7 @@ class koord3d;
 class loadsave_t;
 class schedule_t;
 class spieler_t;
-class freight_t;
+class ware_t;
 
 // -------------------------- Haltestelle ----------------------------
 
@@ -72,7 +72,7 @@ public:
 
 private:
 	/**
-	 * Manche Methoden mï¿½ssen auf alle Haltestellen angewandt werden
+	 * Manche Methoden müssen auf alle Haltestellen angewandt werden
 	 * deshalb verwaltet die Klasse eine Liste aller Haltestellen
 	 * @author Hj. Malthaner
 	 */
@@ -183,7 +183,7 @@ private:
 
 public:
 	/**
-	 * Liste aller felder (Grund-Objekte) die zu dieser Haltestelle gehï¿½ren
+	 * Liste aller felder (Grund-Objekte) die zu dieser Haltestelle gehören
 	 * @author Hj. Malthaner
 	 */
 	struct tile_t
@@ -236,7 +236,7 @@ private:
 	uint8 *serving_schedules;
 
 	// Array with different categries that contains all waiting goods at this stop
-	vector_tpl<freight_t> **waren;
+	vector_tpl<ware_t> **waren;
 
 	/**
 	 * Liste der angeschlossenen Fabriken
@@ -272,16 +272,16 @@ private:
 	 * versucht die ware mit beriets wartender ware zusammenzufassen
 	 * @author Hj. Malthaner
 	 */
-	bool vereinige_waren(const freight_t &ware);
+	bool vereinige_waren(const ware_t &ware);
 
 	// add the ware to the internal storage, called only internally
-	void add_freight_to_halt(freight_t ware);
+	void add_ware_to_halt(ware_t ware);
 
 	/**
 	 * liefert wartende ware an eine Fabrik
 	 * @author Hj. Malthaner
 	 */
-	void liefere_an_fabrik(const freight_t& ware) const;
+	void liefere_an_fabrik(const ware_t& ware) const;
 
 	/*
 	 * transfers all goods to given station
@@ -440,7 +440,7 @@ public:
 	 *
 	 * @author prissi
 	 */
-	static int search_route( const halthandle_t *const start_halts, const uint16 start_halt_count, const bool no_routing_over_overcrowding, freight_t &ware, freight_t *const return_ware=NULL );
+	static int search_route( const halthandle_t *const start_halts, const uint16 start_halt_count, const bool no_routing_over_overcrowding, ware_t &ware, ware_t *const return_ware=NULL );
 
 	/**
 	 * A separate version of route searching code for re-calculating routes
@@ -448,7 +448,7 @@ public:
 	 * it reuses search history from last search
 	 * It is faster than calling the above version on each packet, and is used for re-routing packets from the same halt.
 	 */
-	void search_route_resumable( freight_t &ware );
+	void search_route_resumable( ware_t &ware );
 
 	bool get_pax_enabled()  const { return enables & PAX;  }
 	bool get_post_enabled() const { return enables & POST; }
@@ -456,17 +456,17 @@ public:
 
 	// check, if we accepts this good
 	// often called, thus inline ...
-	bool is_enabled( const freight_desc_t *wtyp ) {
+	bool is_enabled( const ware_besch_t *wtyp ) {
 		return is_enabled(wtyp->get_catg_index());
 	}
 
 	// a separate version for checking with goods category index
 	bool is_enabled( const uint8 catg_index )
 	{
-		if (catg_index == freight_builder_t::INDEX_PAS) {
+		if (catg_index == warenbauer_t::INDEX_PAS) {
 			return enables&PAX;
 		}
-		else if(catg_index == freight_builder_t::INDEX_MAIL) {
+		else if(catg_index == warenbauer_t::INDEX_MAIL) {
 			return enables&POST;
 		}
 		return enables&WARE;
@@ -521,34 +521,34 @@ public:
 	bool is_overcrowded( const uint8 idx ) const { return (overcrowded[idx/8] & (1<<(idx%8)))!=0; }
 
 	/**
-	 * gibt Gesamtmenge derware vom typ typ zurï¿½ck
+	 * gibt Gesamtmenge derware vom typ typ zurück
 	 * @author Hj. Malthaner
 	 */
-	uint32 get_ware_summe(const freight_desc_t *warentyp) const;
+	uint32 get_ware_summe(const ware_besch_t *warentyp) const;
 
 	/**
 	 * returns total number for a certain position (since more than one factory might connect to a stop)
 	 * @author Hj. Malthaner
 	 */
-	uint32 get_ware_fuer_zielpos(const freight_desc_t *warentyp, const koord zielpos) const;
+	uint32 get_ware_fuer_zielpos(const ware_besch_t *warentyp, const koord zielpos) const;
 
 	// true, if we accept/deliver this kind of good
-	bool gibt_ab(const freight_desc_t *warentyp) const { return waren[warentyp->get_catg_index()] != NULL; }
+	bool gibt_ab(const ware_besch_t *warentyp) const { return waren[warentyp->get_catg_index()] != NULL; }
 
 	/* retrieves a ware packet for any destination in the list
 	 * needed, if the factory in question wants to remove something
 	 */
-	bool recall_ware( freight_t& w, uint32 menge );
+	bool recall_ware( ware_t& w, uint32 menge );
 
 	/**
 	 * fetches goods from this halt
 	 * @param fracht goods will be put into this list, vehicle has to load it
 	 * @author Hj. Malthaner, dwachs
 	 */
-	void hole_ab( slist_tpl<freight_t> &fracht, const freight_desc_t *warentyp, uint32 menge, const schedule_t *fpl, const spieler_t *sp );
+	void hole_ab( slist_tpl<ware_t> &fracht, const ware_besch_t *warentyp, uint32 menge, const schedule_t *fpl, const spieler_t *sp );
 
 	/* liefert ware an. Falls die Ware zu wartender Ware dazugenommen
-	 * werden kann, kann freight_t gelï¿½scht werden! D.h. man darf ware nach
+	 * werden kann, kann ware_t gelöscht werden! D.h. man darf ware nach
 	 * aufruf dieser Methode nicht mehr referenzieren!
 	 *
 	 * The second version is like the first, but will not recalculate the route
@@ -557,8 +557,8 @@ public:
 	 * @return angenommene menge
 	 * @author Hj. Malthaner/prissi
 	 */
-	uint32 liefere_an(freight_t ware);
-	uint32 starte_mit_route(freight_t ware);
+	uint32 liefere_an(ware_t ware);
+	uint32 starte_mit_route(ware_t ware);
 
 	const grund_t *find_matching_position(waytype_t wt) const;
 

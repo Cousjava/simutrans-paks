@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2004 Hj. Malthaner
+ * Copyright (c) 1997 - 2004 Hansjörg Malthaner
  *
  * Line management
  *
@@ -7,24 +7,31 @@
  * (see licence.txt)
  */
 
-#include "../besch/baum_besch.h"
-#include "baum_edit.h"
+#include <stdio.h>
 
+#include "../simcolor.h"
+#include "../simtools.h"
+#include "../simworld.h"
+#include "../simgraph.h"
+#include "../simskin.h"
 #include "../simwerkz.h"
+#include "../simmenu.h"
 
-#include "../dings/baum.h"
 #include "../dataobj/translator.h"
 #include "components/list_button.h"
+#include "components/gui_scrolled_item.h"
 
+#include "../besch/bild_besch.h"
 #include "../besch/grund_besch.h"
 
 #include "../utils/cbuffer_t.h"
+#include "../utils/simstring.h"
 
-#include "components/gui_label.h"
+#include "baum_edit.h"
 
 
 // new tool definition
-wkz_plant_tree_t baum_edit_frame_t::tree_tool;
+wkz_plant_tree_t baum_edit_frame_t::baum_tool;
 char baum_edit_frame_t::param_str[256];
 
 
@@ -40,49 +47,39 @@ static bool compare_baum_besch(const baum_besch_t* a, const baum_besch_t* b)
 
 
 baum_edit_frame_t::baum_edit_frame_t(spieler_t* sp_, karte_t* welt) :
-	extend_edit_gui_t(translator::translate("baum builder"), sp_, welt)
+	extend_edit_gui_t(translator::translate("baum builder"), sp_, welt),
+	baumlist(16)
 {
-	baumlist = new vector_tpl<const baum_besch_t *>(16);
-	
 	bt_timeline.set_text( "Random age" );
 
 	remove_komponente( &bt_obsolete );
 	offset_of_comp -= BUTTON_HEIGHT;
 
 	besch = NULL;
-	tree_tool.set_default_param(NULL);
+	baum_tool.set_default_param(NULL);
 
 	fill_list( is_show_trans_name );
 
 	resize( koord(0,0) );
 }
 
-baum_edit_frame_t::~baum_edit_frame_t()
-{
-	delete baumlist;
-}
 
 
 // fill the current fablist
 void baum_edit_frame_t::fill_list( bool translate )
 {
-	baumlist->clear();
-	const vector_tpl<const baum_besch_t *> * s = tree_t::get_all_besch();
-
-	for(uint i=0; i<s->get_count(); i++)
-	{
-		baumlist->insert_ordered(s->get(i), compare_baum_besch );
+	baumlist.clear();
+	FOR(vector_tpl<baum_besch_t const*>, const i, baum_t::get_all_besch()) {
+		baumlist.insert_ordered(i, compare_baum_besch);
 	}
 
 	// now buil scrolled list
 	scl.clear_elements();
 	scl.set_selection(-1);
-	for (vector_tpl<const baum_besch_t *>::const_iterator i = baumlist->begin(), end = baumlist->end(); i != end; ++i) {
-		scl.append_element( new gui_scrolled_list_t::const_text_scrollitem_t(
-			translate ? translator::translate( (*i)->get_name() ):(*i)->get_name(),
-			COL_BLACK )
-		);
-		if(  (*i) == besch  ) {
+	FOR(vector_tpl<baum_besch_t const*>, const i, baumlist) {
+		char const* const name = translate ? translator::translate(i->get_name()): i->get_name();
+		scl.append_element(new const_text_scrollitem_t(name, COL_BLACK));
+		if (i == besch) {
 			scl.set_selection(scl.get_count()-1);
 		}
 	}
@@ -98,9 +95,9 @@ void baum_edit_frame_t::change_item_info(sint32 entry)
 		img[i].set_image( IMG_LEER );
 	}
 	buf.clear();
-	if(entry>=0  &&  entry<(sint32)baumlist->get_count()) {
+	if(entry>=0  &&  entry<(sint32)baumlist.get_count()) {
 
-		besch = baumlist->get(entry);
+		besch = baumlist[entry];
 
 		buf.append(translator::translate(besch->get_name()));
 		buf.append("\n\n");
@@ -136,12 +133,12 @@ void baum_edit_frame_t::change_item_info(sint32 entry)
 		img[3].set_image( besch->get_bild_nr( 0, 3 ) );
 
 		sprintf( param_str, "%i%i,%s", bt_climates.pressed, bt_timeline.pressed, besch->get_name() );
-		tree_tool.set_default_param(param_str);
-		tree_tool.cursor = werkzeug_t::general_tool.get(WKZ_PLANT_TREE)->cursor;
-		welt->set_werkzeug( &tree_tool, sp );
+		baum_tool.set_default_param(param_str);
+		baum_tool.cursor = werkzeug_t::general_tool[WKZ_PLANT_TREE]->cursor;
+		welt->set_werkzeug( &baum_tool, sp );
 	}
-	else if(welt->get_werkzeug(sp->get_player_nr())==&tree_tool) {
+	else if(welt->get_werkzeug(sp->get_player_nr())==&baum_tool) {
 		besch = NULL;
-		welt->set_werkzeug( werkzeug_t::general_tool.get(WKZ_ABFRAGE), sp );
+		welt->set_werkzeug( werkzeug_t::general_tool[WKZ_ABFRAGE], sp );
 	}
 }

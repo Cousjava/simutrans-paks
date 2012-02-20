@@ -51,7 +51,7 @@ signal_spacing_frame_t::signal_spacing_frame_t(spieler_t *sp_, wkz_roadsign_t* t
 	add_komponente( &replace_button );
 	intTopOfButton += 12+4;
 
-	set_window_size( koord(110+80+10, intTopOfButton+38) );
+	set_fenstergroesse( koord(110+80+10, intTopOfButton+38) );
 }
 
 bool signal_spacing_frame_t::action_triggered( gui_action_creator_t *komp, value_t)

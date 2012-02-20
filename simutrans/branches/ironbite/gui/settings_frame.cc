@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2003 Hj. Malthaner
+ * Copyright (c) 1997 - 2003 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -16,7 +16,8 @@
 #include "../dataobj/tabfile.h"
 #include "settings_frame.h"
 
-#include "components/list_button.h"
+#include "components/gui_scrolled_item.h"
+#include "components/gui_scrolled_list.h"
 #include "components/action_listener.h"
 
 using std::string;
@@ -57,8 +58,8 @@ settings_frame_t::settings_frame_t(settings_t* const s) :
 	tabs.add_tab(&scrolly_climates, translator::translate("Climate Control"));
 	add_komponente(&tabs);
 
-	set_window_size(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+BUTTON_HEIGHT+gui_tab_panel_t::HEADER_VSIZE+18*(BUTTON_HEIGHT/2)+2+1));
-	set_min_window_size(koord(BUTTON3_X, TITLEBAR_HEIGHT+BUTTON_HEIGHT+gui_tab_panel_t::HEADER_VSIZE+6*(BUTTON_HEIGHT/2)+2+1));
+	set_fenstergroesse(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+BUTTON_HEIGHT+gui_tab_panel_t::HEADER_VSIZE+18*(BUTTON_HEIGHT/2)+2+1));
+	set_min_windowsize(koord(BUTTON3_X, TITLEBAR_HEIGHT+BUTTON_HEIGHT+gui_tab_panel_t::HEADER_VSIZE+6*(BUTTON_HEIGHT/2)+2+1));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -74,7 +75,7 @@ settings_frame_t::settings_frame_t(settings_t* const s) :
 void settings_frame_t::resize(const koord delta)
 {
 	gui_frame_t::resize(delta);
-	koord groesse = get_window_size()-koord(0,TITLEBAR_HEIGHT+BUTTON_HEIGHT);
+	koord groesse = get_fenstergroesse()-koord(0,TITLEBAR_HEIGHT+BUTTON_HEIGHT);
 	tabs.set_groesse(groesse);
 }
 

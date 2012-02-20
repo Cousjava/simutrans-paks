@@ -59,7 +59,7 @@ password_frame_t::password_frame_t( spieler_t *sp ) :
 	add_komponente(&password);
 	set_focus( &password );
 
-	set_window_size(koord(DIALOG_WIDTH, 16+12+2*BUTTON_HEIGHT));
+	set_fenstergroesse(koord(DIALOG_WIDTH, 16+12+2*BUTTON_HEIGHT));
 }
 
 

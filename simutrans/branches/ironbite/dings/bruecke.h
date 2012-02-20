@@ -4,8 +4,7 @@
 class karte_t;
 
 #include "../besch/bruecke_besch.h"
-#include "thing_without_info_t.h"
-
+#include "../simdings.h"
 
 /**
  * Brueckenteile (sichtbar)

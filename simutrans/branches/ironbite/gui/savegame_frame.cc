@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -45,43 +45,40 @@ gui_frame_t( translator::translate("Load/Save") ),
 	// both NULL is not acceptable
 	assert(suffix!=path);
 
-	fnlabel.set_pos (koord(10, D_TOP_MARGIN+2));
+	fnlabel.set_pos (koord(10,4));
 	add_komponente(&fnlabel);
 
 	// Input box for game name
 	tstrncpy(ibuf, "", lengthof(ibuf));
 	input.set_text(ibuf, 128);
-	input.set_pos(koord(75, D_TOP_MARGIN));
-	input.set_size(DIALOG_WIDTH-75-scrollbar_t::BAR_SIZE-1, BUTTON_HEIGHT);
+	input.set_pos(koord(75,2));
+	input.set_groesse(koord(DIALOG_WIDTH-75-scrollbar_t::BAR_SIZE-1, BUTTON_HEIGHT));
 	add_komponente(&input);
 
 	// needs to be scrollable
-	scrolly.set_pos( koord(0, input.get_pos().y + input.get_groesse().y + D_COMP_Y_SPACE) );
+	scrolly.set_pos( koord(0,20) );
 	scrolly.set_scroll_amount_y(BUTTON_HEIGHT);
 	scrolly.set_size_corner(false);
 	add_komponente(&scrolly);
 
 	add_komponente(&divider1);
 
-	savebutton.set_size(BUTTON_WIDTH, BUTTON_HEIGHT);
+	savebutton.set_groesse(koord(BUTTON_WIDTH, BUTTON_HEIGHT));
 	savebutton.set_text("Ok");
 	savebutton.set_typ(button_t::roundbox);
 	savebutton.add_listener(this);
 	add_komponente(&savebutton);
 
-	cancelbutton.set_size(BUTTON_WIDTH, BUTTON_HEIGHT);
+	cancelbutton.set_groesse(koord(BUTTON_WIDTH, BUTTON_HEIGHT));
 	cancelbutton.set_text("Cancel");
 	cancelbutton.set_typ(button_t::roundbox);
 	cancelbutton.add_listener(this);
 	add_komponente(&cancelbutton);
 
 	set_focus( &input );
-	
-	const int width = DIALOG_WIDTH;
-	const int height = width*9/16;
-	
-	set_min_window_size(koord(2*(BUTTON_WIDTH+D_LEFT_MARGIN)+BUTTON_SPACER, height));
-	set_window_size(koord(width, height));
+
+	set_min_windowsize(koord(2*(BUTTON_WIDTH+scrollbar_t::BAR_SIZE)+BUTTON_SPACER, get_fenstergroesse().y+1));
+	set_fenstergroesse(koord(DIALOG_WIDTH, TITLEBAR_HEIGHT+20+3*BUTTON_HEIGHT+30+1));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -99,7 +96,7 @@ void savegame_frame_t::fill_list()
 #else
 		sprintf( searchpath, "%s/*%s", SAVE_PATH, suffix==NULL ? "" : suffix );
 #endif
-		system_mkdir(SAVE_PATH);
+		dr_mkdir(SAVE_PATH);
 		fullpath = SAVE_PATH_X;
 	}
 	else {
@@ -161,14 +158,10 @@ void savegame_frame_t::fill_list()
 
 	// The file entries
 	int y = 0;
-	slist_iterator_tpl <entry> iter (entries);
-
-	while(iter.next()) 
-	{
-		const entry & entry = iter.get_current();
-		button_t*    button1 = entry.del;
-		button_t*    button2 = entry.button;
-		gui_label_t* label   = entry.label;
+	FOR(slist_tpl<entry>, const& i, entries) {
+		button_t*    const button1 = i.del;
+		button_t*    const button2 = i.button;
+		gui_label_t* const label   = i.label;
 
 		button1->set_groesse(koord(14, BUTTON_HEIGHT));
 		button1->set_text("X");
@@ -190,25 +183,19 @@ void savegame_frame_t::fill_list()
 		y += BUTTON_HEIGHT;
 	}
 	// since width was maybe increased, we only set the heigth.
-
-        const koord old_size = get_window_size();
-	button_frame.set_groesse( koord( old_size.x-1, y ) );
-	set_window_size(koord(old_size.x, TITLEBAR_HEIGHT+12+y+30+1));
+	button_frame.set_groesse( koord( get_fenstergroesse().x-1, y ) );
+	set_fenstergroesse(koord(get_fenstergroesse().x, TITLEBAR_HEIGHT+12+y+30+1));
 }
 
 
 savegame_frame_t::~savegame_frame_t()
 {
-	slist_iterator_tpl <entry> iter (entries);
-
-	while(iter.next()) 
-	{
-		const entry & entry = iter.get_current();
-		delete [] const_cast<char*>(entry.button->get_text());
-		delete entry.button;
-		delete [] const_cast<char*>(entry.label->get_text_pointer());
-		delete entry.label;
-		delete entry.del;
+	FOR(slist_tpl<entry>, const& i, entries) {
+		delete [] const_cast<char*>(i.button->get_text());
+		delete i.button;
+		delete [] const_cast<char*>(i.label->get_text_pointer());
+		delete i.label;
+		delete i.del;
 	}
 }
 
@@ -332,15 +319,16 @@ bool savegame_frame_t::action_triggered( gui_action_creator_t *komp, value_t /* 
 	else {
 		// File in list selected
 		//--------------------------
-		for(  slist_tpl<entry>::iterator i = entries.begin(), end = entries.end();  i != end  &&  !in_action;  ++i  ) {
-			if(  komp == i->button  ||  komp == i->del  ) {
+		FOR(slist_tpl<entry>, const& i, entries) {
+			if (in_action) break;
+			if (komp == i.button || komp == i.del) {
 				in_action = true;
-				const bool action_btn = komp == i->button;
+				bool const action_btn = komp == i.button;
 				buf[0] = 0;
 				if(fullpath) {
 					tstrncpy(buf, fullpath, lengthof(buf));
 				}
-				strcat(buf, i->button->get_text());
+				strcat(buf, i.button->get_text());
 				if(suffix) {
 					strcat(buf, suffix);
 				}
@@ -359,11 +347,11 @@ bool savegame_frame_t::action_triggered( gui_action_creator_t *komp, value_t /* 
 						set_focus(NULL);
 						// do not delete components
 						// simply hide them
-						i->button->set_visible(false);
-						i->del->set_visible(false);
-						i->label->set_visible(false);
-						i->button->set_groesse( koord( 0, 0 ) );
-						i->del->set_groesse( koord( 0, 0 ) );
+						i.button->set_visible(false);
+						i.del->set_visible(false);
+						i.label->set_visible(false);
+						i.button->set_groesse(koord(0, 0));
+						i.del->set_groesse(koord(0, 0));
 
 						resize( koord(0,0) );
 						in_action = false;
@@ -378,55 +366,44 @@ bool savegame_frame_t::action_triggered( gui_action_creator_t *komp, value_t /* 
 
 
 /**
- * Tries to adjust window size and layouts the components
- * freshly.
- *
+ * Bei Scrollpanes _muss_ diese Methode zum setzen der Groesse
+ * benutzt werden.
  * @author Hj. Malthaner
  */
-void savegame_frame_t::set_window_size(koord groesse)
+void savegame_frame_t::set_fenstergroesse(koord groesse)
 {
 	if(groesse.y>display_get_height()-70) {
 		// too large ...
-                groesse.y = ((display_get_height()-TITLEBAR_HEIGHT-12-30-1)/BUTTON_HEIGHT)*BUTTON_HEIGHT+TITLEBAR_HEIGHT+12+30+1-70;
-                // position adjustment will be done automatically ... nice!
+		groesse.y = ((display_get_height()-TITLEBAR_HEIGHT-12-30-1)/BUTTON_HEIGHT)*BUTTON_HEIGHT+TITLEBAR_HEIGHT+12+30+1-70;
+		// position adjustment will be done automatically ... nice!
 	}
+	gui_frame_t::set_fenstergroesse(groesse);
+	groesse = get_fenstergroesse();
 
-	gui_frame_t::set_window_size(groesse);
-	groesse = get_window_size();
-
-	input.set_size(groesse.x-75-scrollbar_t::BAR_SIZE-1, BUTTON_HEIGHT);
+	input.set_groesse(koord(groesse.x-75-scrollbar_t::BAR_SIZE-1, BUTTON_HEIGHT));
 
 	sint16 y = 0;
-	slist_iterator_tpl <entry> iter (entries);
-
-	while(iter.next()) 
-	{
-		const entry & entry = iter.get_current();
+	FOR(slist_tpl<entry>, const& i, entries) {
 		// resize all but delete button
-		if(  entry.button->is_visible()  ) {
-			button_t*    button1 = entry.del;
+		if (i.button->is_visible()) {
+			button_t* const button1 = i.del;
 			button1->set_pos( koord( button1->get_pos().x, y ) );
-			button_t*    button2 = entry.button;
-			gui_label_t* label   = entry.label;
+			button_t* const button2 = i.button;
 			button2->set_pos( koord( button2->get_pos().x, y ) );
 			button2->set_groesse(koord( groesse.x/2-40, BUTTON_HEIGHT));
-			label->set_pos(koord(groesse.x/2-40+30, y+2));
+			i.label->set_pos(koord(groesse.x / 2 - 40 + 30, y + 2));
 			y += BUTTON_HEIGHT;
 		}
 	}
 
-	button_frame.set_size(groesse.x, y);
+	button_frame.set_groesse(koord(groesse.x,y));
+	scrolly.set_groesse(koord(groesse.x,groesse.y-TITLEBAR_HEIGHT-12-30-1));
 
-	const int button_y = groesse.y-BUTTON_HEIGHT-D_BOTTOM_MARGIN-TITLEBAR_HEIGHT;
-	const int div_y = button_y - D_COMP_Y_SPACE;
+	divider1.set_pos(koord(4,groesse.y-36));
+	divider1.set_groesse(koord(groesse.x-8-1,0));
 
-	scrolly.set_size(groesse.x, div_y-D_COMP_Y_SPACE-scrolly.get_pos().y);
-	
-	divider1.set_pos(koord(4, div_y));
-	divider1.set_size(groesse.x-8-1, 0);
-
-	savebutton.set_pos(koord(D_LEFT_MARGIN, button_y));
-	cancelbutton.set_pos(koord(groesse.x-BUTTON_WIDTH-D_RIGHT_MARGIN, button_y));
+	savebutton.set_pos(koord(scrollbar_t::BAR_SIZE,groesse.y-BUTTON_HEIGHT-2-16-1));
+	cancelbutton.set_pos(koord(groesse.x-BUTTON_WIDTH-scrollbar_t::BAR_SIZE,groesse.y-BUTTON_HEIGHT-2-16-1));
 }
 
 

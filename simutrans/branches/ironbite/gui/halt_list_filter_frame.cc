@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  * written by Volker Meyer
  *
  * This file is part of the Simutrans project under the artistic licence.
@@ -108,9 +108,9 @@ halt_list_filter_frame_t::halt_list_filter_frame_t(spieler_t *sp, halt_list_fram
 	add_komponente(&ware_scrolly_an);
 
 	int n=0;
-	for(int i=0; i<freight_builder_t::get_waren_anzahl();  i++  ) {
-		const freight_desc_t *ware = freight_builder_t::get_info(i);
-		if(  ware != freight_builder_t::nichts  ) {
+	for(  int i=0;  i<warenbauer_t::get_waren_anzahl();  i++  ) {
+		const ware_besch_t *ware = warenbauer_t::get_info(i);
+		if(  ware != warenbauer_t::nichts  ) {
 			ware_item_t *item = new ware_item_t(this, NULL, ware);
 			item->init(button_t::square, translator::translate(ware->get_name()), koord(5, BUTTON_HEIGHT*n++));
 			ware_cont_an.add_komponente(item);
@@ -134,9 +134,9 @@ halt_list_filter_frame_t::halt_list_filter_frame_t(spieler_t *sp, halt_list_fram
 	add_komponente(&ware_scrolly_ab);
 
 	n=0;
-	for(  int i=0;  i<freight_builder_t::get_waren_anzahl();  i++  ) {
-		const freight_desc_t *ware = freight_builder_t::get_info(i);
-		if(  ware != freight_builder_t::nichts  ) {
+	for(  int i=0;  i<warenbauer_t::get_waren_anzahl();  i++  ) {
+		const ware_besch_t *ware = warenbauer_t::get_info(i);
+		if(  ware != warenbauer_t::nichts  ) {
 		ware_item_t *item = new ware_item_t(this, ware, NULL);
 		item->init(button_t::square, translator::translate(ware->get_name()), koord(5, BUTTON_HEIGHT*n++));
 			ware_cont_ab.add_komponente(item);
@@ -145,8 +145,8 @@ halt_list_filter_frame_t::halt_list_filter_frame_t(spieler_t *sp, halt_list_fram
 	ware_cont_ab.set_groesse(koord(100, n*BUTTON_HEIGHT));
 	ware_scrolly_ab.set_groesse(koord(125, 13*BUTTON_HEIGHT));
 
-	set_window_size(koord(488, TITLEBAR_HEIGHT+(FILTER_BUTTONS-1)*BUTTON_HEIGHT+8+10));
-	set_min_window_size(koord(395, TITLEBAR_HEIGHT+(FILTER_BUTTONS-1)*BUTTON_HEIGHT+8-2));
+	set_fenstergroesse(koord(488, TITLEBAR_HEIGHT+(FILTER_BUTTONS-1)*BUTTON_HEIGHT+8+10));
+	set_min_windowsize(koord(395, TITLEBAR_HEIGHT+(FILTER_BUTTONS-1)*BUTTON_HEIGHT+8-2));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -214,7 +214,7 @@ bool halt_list_filter_frame_t::action_triggered( gui_action_creator_t *komp,valu
 }
 
 
-void halt_list_filter_frame_t::ware_item_triggered(const freight_desc_t *ware_ab, const freight_desc_t *ware_an)
+void halt_list_filter_frame_t::ware_item_triggered(const ware_besch_t *ware_ab, const ware_besch_t *ware_an)
 {
 	if (ware_ab) {
 		main_frame->set_ware_filter_ab(ware_ab, -1);
@@ -239,7 +239,7 @@ void halt_list_filter_frame_t::resize(const koord delta)
 {
 	gui_frame_t::resize(delta);
 
-	const koord gr = get_window_size()-koord(0, TITLEBAR_HEIGHT);
+	const koord gr = get_fenstergroesse()-koord(0, TITLEBAR_HEIGHT);
 
 	const KOORD_VAL w1 = gr.x/3-4;
 	const KOORD_VAL w2 = (gr.x+1)/3-4;

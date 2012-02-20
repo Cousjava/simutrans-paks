@@ -156,25 +156,6 @@ PLAYER_COLOR_VAL grund_t::text_farbe() const
 	return COL_WHITE;
 }
 
-/**
-* Returns the system type s_type of a way of type typ at this location
-* Currently only needed for tramways or other different types of rails
-*
-* @author DarioK
-* @see get_weg
-*/
-uint8 grund_t::get_styp(waytype_t typ) const
-{
-	weg_t *weg = get_weg(typ);
-	return (weg) ? weg->get_besch()->get_styp() : 0;
-}
-
-/**
-* Kreuzen sich hier 2 verschiedene Wege?
-* Strassenbahnschienen duerfen nicht als Kreuzung erkannt werden!
-* @author V. Meyer, dariok
-*/
-bool grund_t::ist_uebergang() const { return (flags&has_way2)!=0  &&  ((weg_t *)dinge.bei(1))->get_besch()->get_styp()!=7; }
 
 // ---------------- init, rdwr, and destruct from here ---------------------
 
@@ -444,7 +425,8 @@ void grund_t::sort_trees()
 void grund_t::rotate90()
 {
 	const bool finish_rotate90 = (pos.x==welt->get_groesse_x()-1)  &&  (pos.y==welt->get_groesse_y()-1);
-	static inthashtable_tpl<uint32, char*> ground_texts_rotating;
+	typedef inthashtable_tpl<uint32, char*> text_map;
+	static text_map ground_texts_rotating;
 	const uint32 old_n = get_ground_text_key(pos);
 	// first internal corrections
 	// since the hash changes, we must put the text to the new position
@@ -475,10 +457,8 @@ void grund_t::rotate90()
 		// first of course remove the old positions
 		ground_texts.clear();
 		// then transfer all rotated texts
-		inthashtable_iterator_tpl<uint32, char*> iter(ground_texts_rotating);
-		while(iter.next()) {
-			char *txt = iter.get_current_value();
-			ground_texts.put( iter.get_current_key(), txt );
+		FOR(text_map, const& i, ground_texts_rotating) {
+			ground_texts.put(i.key, i.value);
 		}
 		ground_texts_rotating.clear();
 	}
@@ -1399,7 +1379,7 @@ sint64 grund_t::remove_trees()
 {
 	sint64 cost=0;
 	// remove all trees ...
-	while (tree_t* const d = find<tree_t>(0)) {
+	while (baum_t* const d = find<baum_t>(0)) {
 		// we must mark it by hand, sinc ewe want to join costs
 		d->mark_image_dirty( get_bild(), 0 );
 		delete d;

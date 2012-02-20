@@ -158,6 +158,7 @@ schedule_list_gui_t::schedule_list_gui_t(spieler_t *sp_) :
 	selection = -1;
 	loadfactor = 0;
 	schedule_filter[0] = 0;
+	old_schedule_filter[0] = 0;
 
 	// init scrolled list
 	scl.set_pos(koord(0,1));
@@ -309,7 +310,7 @@ schedule_list_gui_t::schedule_list_gui_t(spieler_t *sp_) :
 	update_lineinfo( line );
 
 	// resize button
-	set_min_window_size(koord(488, 300));
+	set_min_windowsize(koord(488, 300));
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
 	resize(koord(0,100));
@@ -546,7 +547,7 @@ void schedule_list_gui_t::display(koord pos)
 	money_to_string(ctmp, profit/100.0);
 	len2 += display_proportional(pos.x+LINE_NAME_COLUMN_WIDTH+len2, pos.y+16+14+SCL_HEIGHT+BUTTON_HEIGHT*2+4+LINESPACE, ctmp, ALIGN_LEFT, profit>=0?MONEY_PLUS:MONEY_MINUS, true );
 
-	int rest_width = max( (get_window_size().x-LINE_NAME_COLUMN_WIDTH)/2, max(len2,len) );
+	int rest_width = max( (get_fenstergroesse().x-LINE_NAME_COLUMN_WIDTH)/2, max(len2,len) );
 	number_to_string(ctmp, capacity, 2);
 	buf.clear();
 	buf.printf( translator::translate("Capacity: %s\nLoad: %d (%d%%)"), ctmp, load, loadfactor );
@@ -554,16 +555,16 @@ void schedule_list_gui_t::display(koord pos)
 }
 
 
-void schedule_list_gui_t::set_window_size(koord groesse)
+void schedule_list_gui_t::set_fenstergroesse(koord groesse)
 {
-	gui_frame_t::set_window_size(groesse);
+	gui_frame_t::set_fenstergroesse(groesse);
 
-	int rest_width = get_window_size().x-LINE_NAME_COLUMN_WIDTH;
+	int rest_width = get_fenstergroesse().x-LINE_NAME_COLUMN_WIDTH;
 	int button_per_row=max(1,rest_width/(BUTTON_WIDTH+BUTTON_SPACER));
 	int button_rows= MAX_LINE_COST/button_per_row + ((MAX_LINE_COST%button_per_row)!=0);
 
-	scrolly_convois.set_groesse( koord(rest_width, get_client_window_size().y-scrolly_convois.get_pos().y) );
-	scrolly_haltestellen.set_groesse( koord(LINE_NAME_COLUMN_WIDTH-4, get_client_window_size().y-scrolly_haltestellen.get_pos().y) );
+	scrolly_convois.set_groesse( koord(rest_width, get_client_windowsize().y-scrolly_convois.get_pos().y) );
+	scrolly_haltestellen.set_groesse( koord(LINE_NAME_COLUMN_WIDTH-4, get_client_windowsize().y-scrolly_haltestellen.get_pos().y) );
 
 	chart.set_groesse(koord(rest_width-58, SCL_HEIGHT-11-14-(button_rows*(BUTTON_HEIGHT+BUTTON_SPACER))));
 	inp_name.set_groesse(koord(rest_width-8, 14));
@@ -585,8 +586,7 @@ void schedule_list_gui_t::build_line_list(int filter)
 	sp->simlinemgmt.get_lines(tabs_to_lineindex[filter], &lines);
 	vector_tpl<line_scrollitem_t *>selected_lines;
 
-	for (vector_tpl<linehandle_t>::const_iterator i = lines.begin(), end = lines.end(); i != end; i++) {
-		linehandle_t l = *i;
+	FOR(vector_tpl<linehandle_t>, const l, lines) {
 		// search name
 		if (strstr(l->get_name(), schedule_filter))
 			selected_lines.append(new line_scrollitem_t(l));
@@ -594,9 +594,9 @@ void schedule_list_gui_t::build_line_list(int filter)
 
 	std::sort(selected_lines.begin(),selected_lines.end(),compare_lines);
 
-	for (vector_tpl<line_scrollitem_t *>::const_iterator i = selected_lines.begin(), end = selected_lines.end(); i != end; i++) {
-		scl.append_element( *i );
-		if(line == (*i)->get_line()  ) {
+	FOR(vector_tpl<line_scrollitem_t*>, const i, selected_lines) {
+		scl.append_element(i);
+		if (line == i->get_line()) {
 			sel = scl.get_count() - 1;
 		}
 	}
@@ -658,9 +658,8 @@ void schedule_list_gui_t::update_lineinfo(linehandle_t new_line)
 		// fill haltestellen container with info of line's haltestellen
 		cont_haltestellen.remove_all();
 		ypos = 0;
-		for(i=0; i<new_line->get_schedule()->get_count(); i++) {
-			const koord3d fahrplan_koord = new_line->get_schedule()->eintrag.get(i).pos;
-			halthandle_t halt = haltestelle_t::get_halt(sp->get_welt(),fahrplan_koord, sp);
+		FOR(minivec_tpl<linieneintrag_t>, const& i, new_line->get_schedule()->eintrag) {
+			halthandle_t const halt = haltestelle_t::get_halt(sp->get_welt(), i.pos, sp);
 			if (halt.is_bound()) {
 				halt_list_stats_t* cinfo = new halt_list_stats_t(halt);
 				cinfo->set_pos(koord(0, ypos));
@@ -763,7 +762,7 @@ void schedule_list_gui_t::rdwr( loadsave_t *file )
 	koord gr;
 	sint32 cont_xoff, cont_yoff, halt_xoff, halt_yoff;
 	if(  file->is_saving()  ) {
-		gr = get_window_size();
+		gr = get_fenstergroesse();
 		cont_xoff = scrolly_convois.get_scroll_x();
 		cont_yoff = scrolly_convois.get_scroll_y();
 		halt_xoff = scrolly_haltestellen.get_scroll_x();
@@ -783,7 +782,7 @@ void schedule_list_gui_t::rdwr( loadsave_t *file )
 	// open dialoge
 	if(  file->is_loading()  ) {
 		show_lineinfo( line );
-		set_window_size( gr );
+		set_fenstergroesse( gr );
 		resize( koord(0,0) );
 		scrolly_convois.set_scroll_position( cont_xoff, cont_yoff );
 		scrolly_haltestellen.set_scroll_position( halt_xoff, halt_yoff );

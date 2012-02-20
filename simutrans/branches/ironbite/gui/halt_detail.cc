@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -12,7 +12,6 @@
 #include "../simhalt.h"
 #include "../simline.h"
 #include "../simconvoi.h"
-#include "../boden/grund.h"
 
 #include "../besch/ware_besch.h"
 #include "../bauer/warenbauer.h"
@@ -43,8 +42,8 @@ halt_detail_t::halt_detail_t(halthandle_t halt_) :
 	scrolly.set_show_scroll_x(true);
 	add_komponente(&scrolly);
 
-	set_window_size(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+4+22*(LINESPACE)+scrollbar_t::BAR_SIZE+2));
-	set_min_window_size(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+4+3*(LINESPACE)+scrollbar_t::BAR_SIZE+2));
+	set_fenstergroesse(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+4+22*(LINESPACE)+scrollbar_t::BAR_SIZE+2));
+	set_min_windowsize(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+4+3*(LINESPACE)+scrollbar_t::BAR_SIZE+2));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -125,7 +124,7 @@ void halt_detail_t::halt_detail_info()
 	buf.clear();
 
 	const slist_tpl<fabrik_t *> & fab_list = halt->get_fab_list();
-	slist_tpl<const freight_desc_t *> nimmt_an;
+	slist_tpl<const ware_besch_t *> nimmt_an;
 
 	sint16 offset_y = LINESPACE;
 	buf.append(translator::translate("Fabrikanschluss"));
@@ -133,11 +132,7 @@ void halt_detail_t::halt_detail_info()
 	offset_y += LINESPACE;
 
 	if (!fab_list.empty()) {
-
-		slist_iterator_tpl<fabrik_t *> fab_iter(fab_list);
-
-		while(fab_iter.next()) {
-			const fabrik_t * fab = fab_iter.get_current();
+		FOR(slist_tpl<fabrik_t*>, const fab, fab_list) {
 			const koord pos = fab->get_pos().get_2d();
 
 			// target button ...
@@ -151,10 +146,8 @@ void halt_detail_t::halt_detail_info()
 			buf.printf("   %s (%d, %d)\n", translator::translate(fab->get_name()), pos.x, pos.y);
 			offset_y += LINESPACE;
 
-			const array_tpl<ware_production_t>& eingang = fab->get_eingang();
-			for (uint32 i = 0; i < eingang.get_count(); i++) {
-				const freight_desc_t* ware = eingang[i].get_typ();
-
+			FOR(array_tpl<ware_production_t>, const& i, fab->get_eingang()) {
+				ware_besch_t const* const ware = i.get_typ();
 				if(!nimmt_an.is_contained(ware)) {
 					nimmt_an.append(ware);
 				}
@@ -176,8 +169,8 @@ void halt_detail_t::halt_detail_info()
 	offset_y += LINESPACE;
 
 	if (!nimmt_an.empty()  &&  halt->get_ware_enabled()) {
-		for(uint32 i=0; i<freight_builder_t::get_waren_anzahl(); i++) {
-			const freight_desc_t *ware = freight_builder_t::get_info(i);
+		for(uint32 i=0; i<warenbauer_t::get_waren_anzahl(); i++) {
+			const ware_besch_t *ware = warenbauer_t::get_info(i);
 			if(nimmt_an.is_contained(ware)) {
 
 				buf.append(" - ");
@@ -205,7 +198,7 @@ void halt_detail_t::halt_detail_info()
 	if(  !halt->registered_lines.empty()  ) {
 		for (unsigned int i = 0; i<halt->registered_lines.get_count(); i++) {
 			// Line buttons only if owner ...
-			if (halt->get_welt()->get_active_player()==halt->registered_lines.get(i)->get_besitzer()) {
+			if (halt->get_welt()->get_active_player()==halt->registered_lines[i]->get_besitzer()) {
 				button_t *b = new button_t();
 				b->init( button_t::posbutton, NULL, koord(10, offset_y) );
 				b->set_targetpos( koord(-1,i) );
@@ -215,8 +208,8 @@ void halt_detail_t::halt_detail_info()
 			}
 
 			// Line labels with color of player
-			label_names.append( strdup(halt->registered_lines.get(i)->get_name()) );
-			gui_label_t *l = new gui_label_t( label_names.back(), PLAYER_FLAG|(halt->registered_lines.get(i)->get_besitzer()->get_player_color1()+0) );
+			label_names.append( strdup(halt->registered_lines[i]->get_name()) );
+			gui_label_t *l = new gui_label_t( label_names.back(), PLAYER_FLAG|(halt->registered_lines[i]->get_besitzer()->get_player_color1()+0) );
 			l->set_pos( koord(26, offset_y) );
 			linelabels.append( l );
 			cont.add_komponente( l );
@@ -250,8 +243,8 @@ void halt_detail_t::halt_detail_info()
 			cont.add_komponente( b );
 
 			// Line labels with color of player
-			label_names.append( strdup(halt->registered_convoys.get(i)->get_name()) );
-			gui_label_t *l = new gui_label_t( label_names.back(), PLAYER_FLAG|(halt->registered_convoys.get(i)->get_besitzer()->get_player_color1()+0) );
+			label_names.append( strdup(halt->registered_convoys[i]->get_name()) );
+			gui_label_t *l = new gui_label_t( label_names.back(), PLAYER_FLAG|(halt->registered_convoys[i]->get_besitzer()->get_player_color1()+0) );
 			l->set_pos( koord(26, offset_y) );
 			convoylabels.append( l );
 			cont.add_komponente( l );
@@ -275,21 +268,20 @@ void halt_detail_t::halt_detail_info()
 
 	bool has_stops = false;
 
-	for (uint i=0; i<freight_builder_t::get_max_catg_index(); i++){
+	for (uint i=0; i<warenbauer_t::get_max_catg_index(); i++){
 		const vector_tpl<haltestelle_t::connection_t> &connections = *(halt->get_connections(i));
 		if(  !connections.empty()  ) {
 			buf.append("\n");
 			offset_y += LINESPACE;
 
-			buf.append(" ï¿½");
-			const freight_desc_t* info = freight_builder_t::get_info_catg_index(i);
+			buf.append(" ·");
+			const ware_besch_t* info = warenbauer_t::get_info_catg_index(i);
 			// If it is a special freight, we display the name of the good, otherwise the name of the category.
 			buf.append(translator::translate(info->get_catg()==0?info->get_name():info->get_catg_name()));
 			buf.append(":\n");
 			offset_y += LINESPACE;
 
-			for(  uint32 idx=0;  idx<connections.get_count();  idx++  ) {
-				const haltestelle_t::connection_t &conn = connections.get(idx);
+			FOR(vector_tpl<haltestelle_t::connection_t>, const& conn, connections) {
 				if(  conn.halt.is_bound()  ) {
 
 					has_stops = true;
@@ -338,7 +330,7 @@ bool halt_detail_t::action_triggered( gui_action_creator_t *, value_t extra)
 			// Line button pressed.
 			uint16 j=k.y;
 			if(  j < halt->registered_lines.get_count()  ) {
-				linehandle_t line=halt->registered_lines.get(j);
+				linehandle_t line=halt->registered_lines[j];
 				spieler_t *sp=halt->get_welt()->get_active_player();
 				if(  sp==line->get_besitzer()  ) {
 					//TODO:
@@ -352,7 +344,7 @@ bool halt_detail_t::action_triggered( gui_action_creator_t *, value_t extra)
 			// Knightly : lineless convoy button pressed
 			uint16 j = k.y;
 			if(  j<halt->registered_convoys.get_count()  ) {
-				convoihandle_t convoy = halt->registered_convoys.get(j);
+				convoihandle_t convoy = halt->registered_convoys[j];
 				convoy->zeige_info();
 			}
 		}
@@ -377,10 +369,10 @@ void halt_detail_t::zeichnen(koord pos, koord gr)
 
 
 
-void halt_detail_t::set_window_size(koord groesse)
+void halt_detail_t::set_fenstergroesse(koord groesse)
 {
-	gui_frame_t::set_window_size(groesse);
-	scrolly.set_groesse(get_client_window_size()-scrolly.get_pos());
+	gui_frame_t::set_fenstergroesse(groesse);
+	scrolly.set_groesse(get_client_windowsize()-scrolly.get_pos());
 }
 
 
@@ -398,7 +390,7 @@ halt_detail_t::halt_detail_t(karte_t *):
 void halt_detail_t::rdwr(loadsave_t *file)
 {
 	koord3d halt_pos;
-	koord gr = get_window_size();
+	koord gr = get_fenstergroesse();
 	sint32 xoff = scrolly.get_scroll_x();
 	sint32 yoff = scrolly.get_scroll_y();
 	if(  file->is_saving()  ) {
@@ -415,7 +407,7 @@ void halt_detail_t::rdwr(loadsave_t *file)
 		KOORD_VAL ypos = win_get_posy( this );
 		halt_detail_t *w = new halt_detail_t(halt);
 		create_win( xpos, ypos, w, w_info, magic_halt_detail+halt.get_id() );
-		w->set_window_size( gr );
+		w->set_fenstergroesse( gr );
 		w->scrolly.set_scroll_position( xoff, yoff );
 		destroy_win( this );
 	}

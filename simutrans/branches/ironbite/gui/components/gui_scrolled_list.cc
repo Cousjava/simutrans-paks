@@ -4,15 +4,18 @@
  * Has a min and a max size, and can be displayed with any size in between
  */
 
-#include <stdio.h>
+// #include <stdio.h>
 
 #include "gui_scrollbar.h"
 #include "gui_scrolled_list.h"
+#include "gui_scrolled_item.h"
+#include "gui_scrollbar.h"
 
 #include "../../simgraph.h"
-// #include "../../simcolor.h"
+#include "../../simcolor.h"
 #include "../../simwin.h"
 #include "../../tpl/slist_tpl.h"
+
 
 
 int gui_scrolled_list_t::total_vertical_size() const
@@ -21,53 +24,69 @@ int gui_scrolled_list_t::total_vertical_size() const
 }
 
 
-
-gui_scrolled_list_t::gui_scrolled_list_t(enum type type) :
-	gui_component_t(true),
-	sb(scrollbar_t::vertical)
+gui_scrolled_list_t::gui_scrolled_list_t(enum type type) : gui_komponente_t(true)
 {
+	sb = new scrollbar_t(scrollbar_t::vertical);
+	item_list = new slist_tpl<scrollitem_t *>();
+	
 	this->type = type;
 	selection = -1; // nothing
 	groesse = koord(0,0);
 	pos = koord(0,0);
 	offset = 0;
 	border = 0;
-	
-	item_list = new slist_tpl<gui_scrolled_list_t::scrollitem_t *> ();
-	
 	if (type==select) {
 		border = 2;
 	}
 	else if (type==list) {
 		border = 4;
 	}
-	sb.add_listener(this);
-	sb.set_knob_offset(0);
+	sb->add_listener(this);
+	sb->set_knob_offset(0);
 
 	clear_elements();
 }
+
 
 gui_scrolled_list_t::~gui_scrolled_list_t() 
 {
 	clear_elements(); 
 	delete item_list;
+	item_list = 0;
+	delete sb;
+	sb = 0;
 }
+
 
 sint32 gui_scrolled_list_t::get_count() const 
 {
 	return item_list->get_count(); 
 }
 
-gui_scrolled_list_t::scrollitem_t * gui_scrolled_list_t::get_element(sint32 i) const 
-{
+
+scrollitem_t * gui_scrolled_list_t::get_element(sint32 i) const 
+{ 
 	return ((uint32)i<item_list->get_count()) ? item_list->at(i) : NULL; 
 }
 
 
+// set the first element to be shown in the list
+sint32 gui_scrolled_list_t::get_sb_offset() 
+{ 
+	return sb->get_knob_offset(); 
+}
+
+
+void gui_scrolled_list_t::set_sb_offset( sint32 off ) 
+{ 
+	sb->set_knob_offset( off ); 
+	offset = sb->get_knob_offset(); 
+}
+
 
 bool gui_scrolled_list_t::action_triggered( gui_action_creator_t * /* comp */, value_t extra)
 {
-	// search/replace all offsets with sb.get_offset() is also an option
+	// search/replace all offsets with sb->get_offset() is also an option
 	offset = extra.i;
 	return true;
 }
@@ -83,8 +102,8 @@ DBG_MESSAGE("gui_scrolled_list_t::show_selection()","sel=%d, offset=%d, groesse.
 		s *= LINESPACE;
 		if(s<offset  ||  (s+LINESPACE)>offset+groesse.y) {
 			// outside range => reposition
-			sb.set_knob_offset( max(0,s-(groesse.y/2) ) );
-			offset = sb.get_knob_offset();
+			sb->set_knob_offset( max(0,s-(groesse.y/2) ) );
+			offset = sb->get_knob_offset();
 		}
 	}
 	else {
@@ -139,7 +158,7 @@ koord gui_scrolled_list_t::request_groesse(koord request)
 }
 
 void gui_scrolled_list_t::set_groesse(koord groesse) {
-	gui_component_t::set_groesse(groesse);
+	gui_komponente_t::set_groesse(groesse);
 	adjust_scrollbar();
 }
 
@@ -147,17 +166,17 @@ void gui_scrolled_list_t::set_groesse(koord groesse) {
 /* resizes scrollbar */
 void gui_scrolled_list_t::adjust_scrollbar()
 {
-	sb.set_pos(koord(groesse.x-scrollbar_t::BAR_SIZE,0));
+	sb->set_pos(koord(groesse.x-scrollbar_t::BAR_SIZE,0));
 
 	int vz = total_vertical_size();
 	// need scrollbar?
 	if ( groesse.y-border < vz) {
-		sb.set_visible(true);
-		sb.set_groesse(koord(scrollbar_t::BAR_SIZE, (int)groesse.y+border-1));
-		sb.set_knob(groesse.y-border, vz);
+		sb->set_visible(true);
+		sb->set_groesse(koord(scrollbar_t::BAR_SIZE, (int)groesse.y+border-1));
+		sb->set_knob(groesse.y-border, vz);
 	}
 	else {
-		sb.set_visible(false);
+		sb->set_visible(false);
 	}
 }
 
@@ -200,10 +219,10 @@ bool gui_scrolled_list_t::infowin_event(const event_t *ev)
 		return true;
 	}
 
-	if(sb.getroffen(x, y)  ||  IS_WHEELUP(ev)  ||  IS_WHEELDOWN(ev)) {
+	if(sb->getroffen(x, y)  ||  IS_WHEELUP(ev)  ||  IS_WHEELDOWN(ev)) {
 		event_t ev2 = *ev;
-		translate_event(&ev2, -sb.get_pos().x, -sb.get_pos().y);
-		return sb.infowin_event(&ev2);
+		translate_event(&ev2, -sb->get_pos().x, -sb->get_pos().y);
+		return sb->infowin_event(&ev2);
 	}
 
 	return false;
@@ -240,17 +259,10 @@ void gui_scrolled_list_t::zeichnen(koord pos)
 	PUSH_CLIP(x+1,y+1,w-2,h-2);
 	int ycum = y+2-offset; // y cumulative
 	int i=0;
-	slist_iterator_tpl<gui_scrolled_list_t::scrollitem_t *>iter( item_list );
-	bool ok = iter.next();
-	while(ok) {
-		gui_scrolled_list_t::scrollitem_t *item = iter.get_current();
-
-		// Hajo: advance iterator, so that we can remove the current object
-		// safely
-		ok = iter.next();
-
+	for (slist_tpl<scrollitem_t*>::iterator iter = item_list->begin(), end = item_list->end(); iter != end;) {
+		scrollitem_t* const item = *iter;
 		if(  !item->is_valid()  ) {
-			item_list->remove(item);
+			iter = item_list->erase(iter);
 			delete item;
 			if(i == selection) {
 				selection = -1;
@@ -270,12 +282,13 @@ void gui_scrolled_list_t::zeichnen(koord pos)
 				display_proportional_clip(x+7, ycum, item->get_text(), ALIGN_LEFT, item->get_color(), true);
 			}
 			ycum += LINESPACE;
+			++iter;
 			i++;
 		}
 	}
 	POP_CLIP();
 
-	if (sb.is_visible()) {
-		sb.zeichnen(pos);
+	if (sb->is_visible()) {
+		sb->zeichnen(pos);
 	}
 }

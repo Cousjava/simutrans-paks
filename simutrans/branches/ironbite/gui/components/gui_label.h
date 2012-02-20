@@ -1,7 +1,7 @@
 /*
  * just displays a text, will be auto-translated
  *
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -24,7 +24,7 @@
  * @author: Volker Meyer
  * @date 25.05.03
  */
-class gui_label_t : public gui_component_t
+class gui_label_t : public gui_komponente_t
 {
 public:
 	enum align_t {
@@ -38,7 +38,7 @@ private:
 
 	/**
 	 * Farbe des Labels
-	 * @author Hj. Malthaner
+	 * @author Hansjörg Malthaner
 	 */
 	uint8 color;
 
@@ -49,19 +49,19 @@ public:
 
 	/**
 	 * setzt den Text des Labels
-	 * @author Hj. Malthaner
+	 * @author Hansjörg Malthaner
 	 */
 	void set_text(const char *text);
 
 	/**
 	 * set the text without translation
-	 * @author Hj. Malthaner
+	 * @author Hansjörg Malthaner
 	 */
 	void set_text_pointer(const char *text) { this->text = text; }
 
 	/**
 	 * returns the pointer (i.e. for freeing untranslater contents)
-	 * @author Hj. Malthaner
+	 * @author Hansjörg Malthaner
 	 */
 	const char * get_text_pointer() { return text; }
 

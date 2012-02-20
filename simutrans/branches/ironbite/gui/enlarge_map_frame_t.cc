@@ -49,12 +49,12 @@ koord enlarge_map_frame_t::koord_from_rotation(settings_t const* const sets, sin
 {
 	koord offset( sets->get_origin_x(), sets->get_origin_y() );
 	switch( sets->get_rotation() ) {
+		default:
 		case 0: return offset+koord(x,y);
 		case 1: return offset+koord(y,w-x);
 		case 2: return offset+koord(w-x,h-y);
 		case 3: return offset+koord(h-y,x);
 	}
-	assert(sets->get_rotation()<3);
 }
 
 
@@ -118,7 +118,7 @@ enlarge_map_frame_t::enlarge_map_frame_t(spieler_t *, karte_t *w) :
 	start_button.add_listener( this );
 	add_komponente( &start_button );
 
-	set_window_size( koord(260, intTopOfButton+14+8+16) );
+	set_fenstergroesse( koord(260, intTopOfButton+14+8+16) );
 
 	update_preview();
 }
@@ -264,7 +264,7 @@ void enlarge_map_frame_t::update_preview()
 		(
 			sizeof(grund_t) +
 			sizeof(planquadrat_t) +
-			sizeof(tree_t) * 2 +
+			sizeof(baum_t) * 2 +
 			sizeof(void*) * 4
 		) * sx * sy
 	) / (1024 * 1024);

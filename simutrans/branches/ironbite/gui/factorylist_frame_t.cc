@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2003 Hj. Malthaner
+ * Copyright (c) 1997 - 2003 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -7,8 +7,8 @@
 
 #include "factorylist_frame_t.h"
 #include "components/list_button.h"
-#include "../font.h"
 #include "../dataobj/translator.h"
+#include "../font.h"
 
 /**
  * This variable defines the sort order (ascending or descending)
@@ -58,11 +58,11 @@ factorylist_frame_t::factorylist_frame_t(karte_t * welt) :
 	sorteddir.set_text(get_reverse() ? "hl_btn_sort_desc" : "hl_btn_sort_asc");
 
 	scrolly.set_pos(koord(0, 14+BUTTON_HEIGHT+2));
-	scrolly.set_scroll_amount_y(large_font_p->line_spacing);
+	scrolly.set_scroll_amount_y(large_font_p->line_spacing+1);
 	add_komponente(&scrolly);
 
-	set_window_size(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+18*(large_font_p->line_spacing)+14+BUTTON_HEIGHT+2+1));
-	set_min_window_size(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+4*(large_font_p->line_spacing)+14+BUTTON_HEIGHT+2+1));
+	set_fenstergroesse(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+18*(large_font_p->line_spacing+1)+14+BUTTON_HEIGHT+2+1));
+	set_min_windowsize(koord(TOTAL_WIDTH, TITLEBAR_HEIGHT+4*(large_font_p->line_spacing+1)+14+BUTTON_HEIGHT+2+1));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -101,6 +101,6 @@ void factorylist_frame_t::resize(const koord delta)
 {
 	gui_frame_t::resize(delta);
 	// fensterhoehe - 16(title) -offset (header)
-	koord groesse = get_window_size()-koord(0,TITLEBAR_HEIGHT+14+BUTTON_HEIGHT+2+1);
+	koord groesse = get_fenstergroesse()-koord(0,TITLEBAR_HEIGHT+14+BUTTON_HEIGHT+2+1);
 	scrolly.set_groesse(groesse);
 }

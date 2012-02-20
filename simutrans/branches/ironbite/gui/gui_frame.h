@@ -1,8 +1,12 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
+ */
+
+/*
+ * [Mathew Hounsell] Min Size Button On Map Window 20030313
  */
 
 #ifndef gui_gui_frame_h
@@ -10,8 +14,8 @@
 
 #include "../dataobj/koord.h"
 #include "../dataobj/koord3d.h"
-#include "gui_container.h"
 
+// height of titlebar
 #define TITLEBAR_HEIGHT (16)
 #define D_LEFT_MARGIN  (12)
 #define D_RIGHT_MARGIN  (12)
@@ -21,9 +25,15 @@
 
 class loadsave_t;
 class spieler_t;
+class event_t;
+class gui_komponente_t;
+class gui_container_t;
 
 /**
- * A window class for the new component based UI system.
+ * Eine Klasse für Fenster mit Komponenten.
+ * Anders als die anderen Fensterklasen in Simutrans ist dies
+ * ein richtig Komponentenorientiertes Fenster, das alle
+ * aktionen an die Komponenten delegiert.
  *
  * @author Hj. Malthaner
  */
@@ -40,7 +50,7 @@ public:
 	};
 
 private:
-	gui_container_t container;
+	gui_container_t * container;
 
 	const char * name;
 	koord groesse;
@@ -50,7 +60,7 @@ private:
 	 * @author Markus Weber
 	 * @date   11-May-2002
 	 */
-	koord min_window_size;
+	koord min_windowsize;
 
 	resize_modes resize_mode; // 25-may-02  markus weber added
 	const spieler_t *owner;
@@ -78,19 +88,19 @@ public:
 	 */
 	gui_frame_t(const char *name, const spieler_t *sp=NULL);
 
-	virtual ~gui_frame_t() {}
+	virtual ~gui_frame_t();
 
 	/**
-	 * Adds a component to this window
+	 * Fügt eine Komponente zum Fenster hinzu.
 	 * @author Hj. Malthaner
 	 */
-	void add_komponente(gui_component_t *komp) { container.add_komponente(komp); }
+	void add_komponente(gui_komponente_t *komp);
 
 	/**
-	 * Removes a component from this window
+	 * Entfernt eine Komponente aus dem Container.
 	 * @author Hj. Malthaner
 	 */
-	void remove_komponente(gui_component_t *komp) { container.remove_komponente(komp); }
+	void remove_komponente(gui_komponente_t *komp);
 
 	/**
 	 * Der Name wird in der Titelzeile dargestellt
@@ -105,93 +115,88 @@ public:
 	 */
 	void set_name(const char *name) { this->name=name; }
 
-	/**
-         * this returns an unique id, if the dialoge can be saved
-	 * if this is defined, you better define a matching constructor
-         * with karte_t * and loadsave_t *
+	/* this returns an unique id, if the dialoge can be saved
+	 * if this is defined, you better define a matching constructor with karte_t * and loadsave_t *
 	 */
 	virtual uint32 get_rdwr_id() { return 0; }
 
 	virtual void rdwr( loadsave_t * ) {}
 
 	/**
-	 * @return color information to display this window
+	 * gibt farbinformationen fuer Fenstertitel, -ränder und -körper
+	 * zurück
 	 * @author Hj. Malthaner
 	 */
-	virtual PLAYER_COLOR_VAL get_title_color() const;
+	virtual PLAYER_COLOR_VAL get_titelcolor() const;
 
 	/**
-	 * @return the preferred display size
+	 * @return gibt wunschgroesse für das Darstellungsfenster zurueck
 	 * @author Hj. Malthaner
 	 */
-	koord get_window_size() const { return groesse; }
+	koord get_fenstergroesse() const { return groesse; }
 
 	/**
-	 * Set the size of the window
+	 * Setzt die Fenstergroesse
 	 * @author Hj. Malthaner
 	 */
-	virtual void set_window_size(koord groesse);
+	virtual void set_fenstergroesse(koord groesse);
 
 	/**
 	 * Set minimum size of the window
 	 * @author Markus Weber
 	 * @date   11-May-2002
 	 */
-	void set_min_window_size(koord size) { min_window_size = size; }
+	void set_min_windowsize(koord size) { min_windowsize = size; }
 
 	/**
 	 * Set minimum size of the window
 	 * @author Markus Weber
 	 * @date   11-May-2002
 	 */
-	koord get_min_window_size() { return min_window_size; }
+	koord get_min_windowsize() { return min_windowsize; }
 
 	/**
 	 * @return returns the usable width and heigth of the window
 	 * @author Markus Weber
 	 * @date   11-May-2002
 	*/
-	koord get_client_window_size() const {return groesse-koord(0,16); }
+	koord get_client_windowsize() const {return groesse-koord(0,16); }
 
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.
-	 * @return den Dateinamen fï¿½r die Hilfe, oder NULL
+	 * @return den Dateinamen für die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	virtual const char * get_help_file() const;
+	virtual const char * get_hilfe_datei() const {return NULL;}
 
 	/**
 	 * Does this window need a min size button in the title bar?
 	 * @return true if such a button is needed
 	 * @author Hj. Malthaner
 	 */
-	virtual bool has_min_sizer() const;
+	virtual bool has_min_sizer() const {return false;}
 
 	/**
 	 * Does this window need a next button in the title bar?
 	 * @return true if such a button is needed
 	 * @author Volker Meyer
 	 */
-	virtual bool has_next() const;
+	virtual bool has_next() const {return false;}
 
 	/**
 	 * Does this window need a prev button in the title bar?
 	 * @return true if such a button is needed
 	 * @author Volker Meyer
 	 */
-	virtual bool has_prev() const;
+	virtual bool has_prev() const {return has_next();}
 
-	virtual bool has_sticky() const;
+	virtual bool has_sticky() const { return true; }
 
-	/**
-	 * if false, title and all gadgets will be not drawn
-	 */
-	virtual bool has_title() const;
+	// if false, title and all gadgets will be not drawn
+	virtual bool has_title() const { return true; }
 
-	/**
-	 * Position of a connected thing on the map
-	 */
-	virtual koord3d get_weltpos();
+	// position of a connected thing on the map
+	virtual koord3d get_weltpos() { return koord3d::invalid; }
 
 	/**
 	 * Set resize mode
@@ -208,11 +213,13 @@ public:
 	resize_modes get_resizemode(void) { return resize_mode; }
 
 	/**
-	 * Check if position is inside this window
-	 * @return true, if inside window area.
-	 * @author Hj. Malthaner
+	 * Returns true, if inside window area.
 	 */
-	virtual bool getroffen(int x, int y);
+	virtual bool getroffen(int x, int y)
+	{
+		koord groesse = get_fenstergroesse();
+		return (  x>=0  &&  y>=0  &&  x<groesse.x  &&  y<groesse.y  );
+	}
 
 	/**
 	 * Events werden hiermit an die GUI-Komponenten
@@ -222,20 +229,18 @@ public:
 	virtual bool infowin_event(const event_t *ev);
 
 	/**
-	 * komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
+	 * komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
 	 * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
 	 * in dem die Komponente dargestellt wird.
 	 * @author Hj. Malthaner
 	 */
 	virtual void zeichnen(koord pos, koord gr);
 
-	/**
-         * called, when the map is rotated
-         */
+	// called, when the map is rotated
 	virtual void map_rotate90( sint16 /*new_ysize*/ ) { }
 
-	void set_focus(gui_component_t *k);
-	virtual gui_component_t * get_focus();
+	void set_focus( gui_komponente_t *k );
+	virtual gui_komponente_t *get_focus();
 };
 
 #endif

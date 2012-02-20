@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2002 Hj. Malthaner
+ * Copyright (c) 1997 - 2002 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  */
@@ -103,7 +103,7 @@ protected:
 	sint64 starting_money;
 
 	/**
-	 * Zï¿½hlt wie viele Monate das Konto schon ueberzogen ist
+	 * Zählt wie viele Monate das Konto schon ueberzogen ist
 	 *
 	 * @author Hj. Malthaner
 	 */
@@ -117,7 +117,7 @@ protected:
 		koord pos;
 		sint32 amount;
 		sint8 alter;
-		income_message_t() { str[0]=0; alter=127; pos==koord::invalid; amount=0; }
+		income_message_t() { str[0]=0; alter=127; pos=koord::invalid; amount=0; }
 		income_message_t( sint32 betrag, koord pos );
 		void * operator new(size_t s);
 		void operator delete(void *p);
@@ -128,7 +128,7 @@ protected:
 	void add_message(koord k, sint32 summe);
 
 	/**
-	 * Kennfarbe (Fahrzeuge, Gebï¿½ude) des Speielers
+	 * Kennfarbe (Fahrzeuge, Gebäude) des Speielers
 	 * @author Hj. Malthaner
 	 */
 	uint8 kennfarbe1, kennfarbe2;
@@ -253,7 +253,7 @@ public:
 	double get_konto_als_double() const { return konto / 100.0; }
 
 	/**
-	 * @return true wenn Konto ï¿½berzogen ist
+	 * @return true wenn Konto Überzogen ist
 	 * @author Hj. Malthaner
 	 */
 	int get_konto_ueberzogen() const { return konto_ueberzogen; }
@@ -265,7 +265,7 @@ public:
 	void display_messages();
 
 	/**
-	 * Wird von welt in kurzen abstï¿½nden aufgerufen
+	 * Wird von welt in kurzen abständen aufgerufen
 	 * @author Hj. Malthaner
 	 */
 	virtual void step();
@@ -307,7 +307,7 @@ public:
 	int get_haltcount() const { return haltcount; }
 
 	/**
-	 * Lï¿½dt oder speichert Zustand des Spielers
+	 * Lädt oder speichert Zustand des Spielers
 	 * @param file die offene Save-Datei
 	 * @author Hj. Malthaner
 	 */
@@ -364,8 +364,8 @@ public:
 	void roll_finance_history_month();
 
 	/**
-	 * Rï¿½ckruf, um uns zu informieren, dass ein Vehikel ein Problem hat
-	 * @author Hj. Malthaner
+	 * Rückruf, um uns zu informieren, dass ein Vehikel ein Problem hat
+	 * @author Hansjörg Malthaner
 	 * @date 26-Nov-2001
 	 */
 	virtual void bescheid_vehikel_problem(convoihandle_t cnv,const koord3d ziel);

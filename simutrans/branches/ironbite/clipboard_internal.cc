@@ -25,7 +25,7 @@ static size_t content_length = 0;
  * @param length : number of character bytes to copy
  * @author Knightly
  */
-void system_clipboard_copy(const char *source, size_t length)
+void dr_copy(const char *source, size_t length)
 {
 	assert( length<MAX_SIZE );
 	content_length = length;
@@ -43,7 +43,7 @@ void system_clipboard_copy(const char *source, size_t length)
  * @return number of character bytes actually inserted -> for cursor advancing
  * @author Knightly
  */
-size_t system_clipboard_paste(char *target, size_t max_length)
+size_t dr_paste(char *target, size_t max_length)
 {
 	// determine the number of bytes to be pasted
 	if(  content_length<=max_length  ) {

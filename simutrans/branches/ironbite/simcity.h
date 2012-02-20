@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  * (see license.txt)
@@ -344,7 +344,7 @@ private:
 
 public:
 	/**
-	 * sucht arbeitsplï¿½tze fï¿½r die Einwohner
+	 * sucht arbeitsplätze für die Einwohner
 	 * @author Hj. Malthaner
 	 */
 	void verbinde_fabriken();
@@ -389,32 +389,32 @@ public:
 	sint32 get_homeless()   const { return bev - won; }
 
 	/**
-	 * Gibt den Namen der Stadt zurï¿½ck.
+	 * Gibt den Namen der Stadt zurück.
 	 * @author Hj. Malthaner
 	 */
 	const char *get_name() const { return name; }
 
 	/**
-	 * Ermï¿½glicht Zugriff auf Namesnarray
+	 * Ermöglicht Zugriff auf Namesnarray
 	 * @author Hj. Malthaner
 	 */
 	void set_name( const char *name );
 
 	/**
-	 * gibt einen zufï¿½llingen gleichverteilten Punkt innerhalb der
-	 * Stadtgrenzen zurï¿½ck
+	 * gibt einen zufällingen gleichverteilten Punkt innerhalb der
+	 * Stadtgrenzen zurück
 	 * @author Hj. Malthaner
 	 */
 	koord get_zufallspunkt() const;
 
 	/**
-	 * gibt das pax-statistik-array fï¿½r letzten monat zurï¿½ck
+	 * gibt das pax-statistik-array für letzten monat zurück
 	 * @author Hj. Malthaner
 	 */
 	const sparse_tpl<unsigned char>* get_pax_destinations_old() const { return &pax_destinations_old; }
 
 	/**
-	 * gibt das pax-statistik-array fï¿½r den aktuellen monat zurï¿½ck
+	 * gibt das pax-statistik-array für den aktuellen monat zurück
 	 * @author Hj. Malthaner
 	 */
 	const sparse_tpl<unsigned char>* get_pax_destinations_new() const { return &pax_destinations_new; }
@@ -461,7 +461,7 @@ public:
 
 	/**
 	 * Wird am Ende der LAderoutine aufgerufen, wenn die Welt geladen ist
-	 * und nur noch die Datenstrukturenneu verknï¿½pft werden mï¿½ssen.
+	 * und nur noch die Datenstrukturenneu verknüpft werden müssen.
 	 * @author Hj. Malthaner
 	 */
 	void laden_abschliessen();
@@ -511,7 +511,7 @@ public:
 	void recalc_target_attractions();
 
 	/**
-	 * such ein (zufï¿½lliges) ziel fï¿½r einen Passagier
+	 * such ein (zufälliges) ziel für einen Passagier
 	 * @author Hj. Malthaner
 	 */
 	koord find_destination(factory_set_t &target_factories, const sint64 generated, pax_return_type* will_return, factory_entry_t* &factory_entry);

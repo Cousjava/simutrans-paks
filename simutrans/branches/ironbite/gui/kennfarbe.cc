@@ -28,7 +28,7 @@ farbengui_t::farbengui_t(spieler_t * sp) :
 	this->sp = sp;
 	
 	const int width = D_LEFT_MARGIN*2 + 14 * 24 - 2;
-	set_window_size( koord(width, 202+TITLEBAR_HEIGHT) );
+	set_fenstergroesse( koord(width, 202+TITLEBAR_HEIGHT) );
 	
 	txt.set_text("Please choose your preferred player colors.");
 	txt.set_pos( koord(D_LEFT_MARGIN, D_TOP_MARGIN+2) );

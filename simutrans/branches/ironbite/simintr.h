@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic license.
  * (see license.txt)
@@ -11,7 +11,7 @@
 #include "macros.h"
 
 class karte_t;
-class map_display_t;
+class karte_ansicht_t;
 
 
 bool reduce_frame_time();
@@ -22,7 +22,7 @@ void set_frame_time(long time);
 
 void intr_refresh_display(bool dirty);
 
-void intr_set(karte_t *welt, map_display_t *view);
+void intr_set(karte_t *welt, karte_ansicht_t *view);
 
 
 /**

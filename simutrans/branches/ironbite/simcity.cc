@@ -35,7 +35,6 @@
 #include "gui/stadt_info.h"
 
 #include "besch/haus_besch.h"
-#include "besch/weg_besch.h"
 
 #include "simintr.h"
 #include "simdebug.h"
@@ -133,7 +132,7 @@ public:
 			if (file->is_loading()) {
 				rule.append(rule_entry_t());
 			}
-			rule.at(i).rdwr(file);
+			rule[i].rdwr(file);
 		}
 	}
 };
@@ -172,8 +171,7 @@ bool stadt_t::bewerte_loc(const koord pos, const rule_t &regel, int rotation)
 	//printf("Test for (%s) in rotation %d\n", pos.get_str(), rotation);
 	koord k;
 
-	for(uint32 i=0; i<regel.rule.get_count(); i++){
-		const rule_entry_t &r = regel.rule.get(i);
+	FOR(vector_tpl<rule_entry_t>, const& r, regel.rule) {
 		uint8 x,y;
 		switch (rotation) {
 			default:
@@ -337,7 +335,7 @@ bool stadt_t::cityrules_init(const std::string &objfilename)
 	for (uint32 i = 0; i < num_house_rules; i++) {
 		house_rules.append(new rule_t());
 		sprintf(buf, "house_%d.chance", i + 1);
-		house_rules.get(i)->chance = contents.get_int(buf, 0);
+		house_rules[i]->chance = contents.get_int(buf, 0);
 
 		sprintf(buf, "house_%d", i + 1);
 		const char* rule = contents.get_string(buf, "");
@@ -366,7 +364,7 @@ bool stadt_t::cityrules_init(const std::string &objfilename)
 				// check for allowed characters; ignore '.';
 				// leave midpoint out, should be 'n', which is checked in baue() anyway
 				if ((x+offset!=3  ||  y+offset!=3)  &&  (flag!=0  &&  strchr(allowed_chars_in_rule, flag))) {
-					house_rules.get(i)->rule.append(rule_entry_t(x+offset,y+offset,flag));
+					house_rules[i]->rule.append(rule_entry_t(x+offset,y+offset,flag));
 				}
 				else {
 					if ((x+offset!=3  ||  y+offset!=3)  &&  flag!='.') {
@@ -381,7 +379,7 @@ bool stadt_t::cityrules_init(const std::string &objfilename)
 	for (uint32 i = 0; i < num_road_rules; i++) {
 		road_rules.append(new rule_t());
 		sprintf(buf, "road_%d.chance", i + 1);
-		road_rules.get(i)->chance = contents.get_int(buf, 0);
+		road_rules[i]->chance = contents.get_int(buf, 0);
 
 		sprintf(buf, "road_%d", i + 1);
 		const char* rule = contents.get_string(buf, "");
@@ -410,7 +408,7 @@ bool stadt_t::cityrules_init(const std::string &objfilename)
 				// check for allowed characters; ignore '.';
 				// leave midpoint out, should be 'n', which is checked in baue() anyway
 				if ((x+offset!=3  ||  y+offset!=3)  &&  (flag!=0  &&  strchr(allowed_chars_in_rule, flag))) {
-					road_rules.get(i)->rule.append(rule_entry_t(x+offset,y+offset,flag));
+					road_rules[i]->rule.append(rule_entry_t(x+offset,y+offset,flag));
 				}
 				else {
 					if ((x+offset!=3  ||  y+offset!=3)  &&  flag!='.') {
@@ -459,7 +457,7 @@ void stadt_t::cityrules_rdwr(loadsave_t *file)
 		if (file->is_loading()) {
 			house_rules.append(new rule_t());
 		}
-		house_rules.at(i)->rdwr(file);
+		house_rules[i]->rdwr(file);
 	}
 	// road rules
 	if (file->is_loading()) {
@@ -471,7 +469,7 @@ void stadt_t::cityrules_rdwr(loadsave_t *file)
 		if (file->is_loading()) {
 			road_rules.append(new rule_t());
 		}
-		road_rules.at(i)->rdwr(file);
+		road_rules[i]->rdwr(file);
 	}
 }
 
@@ -694,9 +692,9 @@ void stadt_t::recalc_city_size()
 {
 	lo = pos;
 	ur = pos;
-	for(  uint32 i=0;  i<buildings.get_count();  i++  ) {
-		if(buildings.get(i)->get_tile()->get_besch()->get_utyp()!=haus_besch_t::firmensitz) {
-			const koord gb_pos = buildings.get(i)->get_pos().get_2d();
+	FOR(weighted_vector_tpl<gebaeude_t*>, const i, buildings) {
+		if (i->get_tile()->get_besch()->get_utyp() != haus_besch_t::firmensitz) {
+			koord const& gb_pos = i->get_pos().get_2d();
 			if (lo.x > gb_pos.x) {
 				lo.x = gb_pos.x;
 			}
@@ -773,9 +771,9 @@ void stadt_t::factory_entry_t::resolve_factory()
 
 const stadt_t::factory_entry_t* stadt_t::factory_set_t::get_entry(const fabrik_t *const factory) const
 {
-	for(  uint32 e=0;  e<entries.get_count();  ++e  ) {
-		if(  entries.get(e).factory==factory  ) {
-			return &entries.get(e);
+	FOR(vector_tpl<factory_entry_t>, const& e, entries) {
+		if (e.factory == factory) {
+			return &e;
 		}
 	}
 	return NULL;	// not found
@@ -786,8 +784,7 @@ stadt_t::factory_entry_t* stadt_t::factory_set_t::get_random_entry()
 {
 	if(  total_remaining>0  ) {
 		sint32 weight = simrand(total_remaining);
-		for(  uint32 e=0;  e<entries.get_count();  ++e  ) {
-			factory_entry_t &entry = entries.at(e);
+		FOR(vector_tpl<factory_entry_t>, & entry, entries) {
 			if(  entry.remaining>0  ) {
 				if(  weight<entry.remaining  ) {
 					return &entry;
@@ -804,7 +801,7 @@ void stadt_t::factory_set_t::update_factory(fabrik_t *const factory, const sint3
 {
 	if(  entries.is_contained( factory_entry_t(factory) )  ) {
 		// existing target factory
-		factory_entry_t &entry = entries.at(entries.index_of( factory_entry_t(factory) ) );
+		factory_entry_t &entry = entries[ entries.index_of( factory_entry_t(factory) ) ];
 		total_demand += demand - entry.demand;
 		entry.demand = demand;
 		// entry.supply, entry.remaining and total_remaining will be adjusted in recalc_generation_ratio()
@@ -821,7 +818,7 @@ void stadt_t::factory_set_t::update_factory(fabrik_t *const factory, const sint3
 void stadt_t::factory_set_t::remove_factory(fabrik_t *const factory)
 {
 	if(  entries.is_contained( factory_entry_t(factory) )  ) {
-		factory_entry_t &entry = entries.at( entries.index_of( factory_entry_t(factory) ) );
+		factory_entry_t &entry = entries[ entries.index_of( factory_entry_t(factory) ) ];
 		total_demand -= entry.demand;
 		total_remaining -= entry.remaining;
 		entries.remove( entry );
@@ -870,8 +867,7 @@ void stadt_t::factory_set_t::recalc_generation_ratio(const sint32 default_percen
 		const sint64 supply_promille = ( ( (average_generated << 10) * (sint64)default_percent ) / 100 ) / (sint64)target_supply;
 		if(  supply_promille<1024  ) {
 			// expected supply is really smaller than target supply
-			for(  uint32 e=0;  e<entries.get_count();  ++e  ) {
-				factory_entry_t & entry = entries.at(e);
+			FOR(vector_tpl<factory_entry_t>, & entry, entries) {
 				const sint32 new_supply = (sint32)( ( (sint64)entry.demand * SUPPLY_FACTOR * supply_promille + ((1<<(DEMAND_BITS+SUPPLY_BITS+10))-1) ) >> (DEMAND_BITS+SUPPLY_BITS+10) );
 				const sint32 delta_supply = new_supply - entry.supply;
 				if(  delta_supply==0  ) {
@@ -893,8 +889,7 @@ void stadt_t::factory_set_t::recalc_generation_ratio(const sint32 default_percen
 		}
 	}
 	// expected supply is unknown or sufficient to meet target supply
-	for(  uint32 e=0;  e<entries.get_count();  ++e  ) {
-		factory_entry_t & entry = entries.at(e);
+	FOR(vector_tpl<factory_entry_t>, & entry, entries) {
 		const sint32 new_supply = ( entry.demand * SUPPLY_FACTOR + ((1<<(DEMAND_BITS+SUPPLY_BITS))-1) ) >> (DEMAND_BITS+SUPPLY_BITS);
 		const sint32 delta_supply = new_supply - entry.supply;
 		if(  delta_supply==0  ) {
@@ -917,8 +912,8 @@ void stadt_t::factory_set_t::recalc_generation_ratio(const sint32 default_percen
 
 void stadt_t::factory_set_t::new_month()
 {
-	for(  uint32 e=0;  e<entries.get_count();  ++e  ) {
-		entries.at(e).new_month();
+	FOR(vector_tpl<factory_entry_t>, & e, entries) {
+		e.new_month();
 	}
 	total_remaining = 0;
 	total_generated = 0;
@@ -943,7 +938,7 @@ void stadt_t::factory_set_t::rdwr(loadsave_t *file)
 		}
 		else {
 			for(  uint32 e=0;  e<entry_count;  ++e  ) {
-				entries.at(e).rdwr( file );
+				entries[e].rdwr( file );
 			}
 		}
 		file->rdwr_long( total_generated );
@@ -954,9 +949,9 @@ void stadt_t::factory_set_t::rdwr(loadsave_t *file)
 void stadt_t::factory_set_t::resolve_factories()
 {
 	uint32 remove_count = 0;
-	for(  uint32 e=0;  e<entries.get_count();  ++e  ) {
-		entries.at(e).resolve_factory();
-		if(  entries.get(e).factory == NULL  ) {
+	FOR(vector_tpl<factory_entry_t>, & e, entries) {
+		e.resolve_factory();
+		if (!e.factory) {
 			remove_count ++;
 		}
 	}
@@ -1004,8 +999,8 @@ stadt_t::~stadt_t()
 
 static bool name_used(weighted_vector_tpl<stadt_t*> const& cities, char const* const name)
 {
-	for (weighted_vector_tpl<stadt_t*>::const_iterator i = cities.begin(), end = cities.end(); i != end; ++i) {
-		if (strcmp((*i)->get_name(), name) == 0) {
+	FOR(weighted_vector_tpl<stadt_t*>, const i, cities) {
+		if (strcmp(i->get_name(), name) == 0) {
 			return true;
 		}
 	}
@@ -1048,7 +1043,7 @@ stadt_t::stadt_t(spieler_t* sp, koord pos, sint32 citizens) :
 	weighted_vector_tpl<stadt_t*> const& staedte = welt->get_staedte();
 	for (vector_tpl<char*> city_names(translator::get_city_name_list()); !city_names.empty();) {
 		size_t      const idx  = simrand(city_names.get_count());
-		char const* const cand = city_names.get(idx);
+		char const* const cand = city_names[idx];
 		if (name_used(staedte, cand)) {
 			city_names.remove_at(idx);
 		} else {
@@ -1378,9 +1373,7 @@ void stadt_t::verbinde_fabriken()
 	assert( target_factories_pax.get_entries().empty() );
 	assert( target_factories_mail.get_entries().empty() );
 
-	slist_iterator_tpl<fabrik_t*> fab_iter(welt->get_fab_list());
-	while (fab_iter.next()) {
-		fabrik_t* fab = fab_iter.get_current();
+	FOR(slist_tpl<fabrik_t*>, const fab, welt->get_fab_list()) {
 		const uint32 count = fab->get_target_cities().get_count();
 		settings_t const& s = welt->get_settings();
 		if (count < s.get_factory_worker_maximum_towns() && koord_distance(fab->get_pos(), pos) < s.get_factory_worker_radius()) {
@@ -1558,8 +1551,7 @@ void stadt_t::neuer_monat( bool recalc_destinations )
 		factor = log10(factor);
 
 		uint16 number_of_cars = simrand( factor * s.get_verkehr_level() ) / 16;
-		// uint16 number_of_cars = 16;
-		
+
 		city_history_month[0][HIST_CITYCARS] = number_of_cars;
 		city_history_year[0][HIST_CITYCARS] += number_of_cars;
 
@@ -1572,8 +1564,7 @@ void stadt_t::neuer_monat( bool recalc_destinations )
 				}
 
 				grund_t* gr = welt->lookup_kartenboden(k);
-				if (gr != NULL && gr->get_weg(road_wt) && ribi_t::is_twoway(gr->get_weg_ribi_unmasked(road_wt)) && gr->find<stadtauto_t>() == NULL) 
-				{
+				if (gr != NULL && gr->get_weg(road_wt) && ribi_t::is_twoway(gr->get_weg_ribi_unmasked(road_wt)) && gr->find<stadtauto_t>() == NULL) {
 					stadtauto_t* vt = new stadtauto_t(welt, gr->get_pos(), koord::invalid);
 					gr->obj_add(vt);
 					welt->sync_add(vt);
@@ -1589,8 +1580,8 @@ void stadt_t::calc_growth()
 {
 	// now iterate over all factories to get the ratio of producing version nonproducing factories
 	// we use the incoming storage as a measure und we will only look for end consumers (power stations, markets)
-	for(  vector_tpl<factory_entry_t>::const_iterator iter = target_factories_pax.get_entries().begin(), end = target_factories_pax.get_entries().end();  iter!=end;  ++iter  ) {
-		fabrik_t *const fab = iter->factory;
+	FOR(vector_tpl<factory_entry_t>, const& i, target_factories_pax.get_entries()) {
+		fabrik_t *const fab = i.factory;
 		if (fab->get_lieferziele().empty() && !fab->get_suppliers().empty()) {
 			// consumer => check for it storage
 			const fabrik_besch_t *const besch = fab->get_besch();
@@ -1663,9 +1654,9 @@ void stadt_t::step_bau()
 void stadt_t::step_passagiere()
 {
 	// post oder pax erzeugen ?
-	const freight_desc_t *const wtyp = ( simrand(400)<300 ? freight_builder_t::passagiere : freight_builder_t::post );
-	const int history_type = (wtyp == freight_builder_t::passagiere) ? HIST_PAS_TRANSPORTED : HIST_MAIL_TRANSPORTED;
-	factory_set_t &target_factories = (  wtyp==freight_builder_t::passagiere ? target_factories_pax : target_factories_mail );
+	const ware_besch_t *const wtyp = ( simrand(400)<300 ? warenbauer_t::passagiere : warenbauer_t::post );
+	const int history_type = (wtyp == warenbauer_t::passagiere) ? HIST_PAS_TRANSPORTED : HIST_MAIL_TRANSPORTED;
+	factory_set_t &target_factories = (  wtyp==warenbauer_t::passagiere ? target_factories_pax : target_factories_mail );
 
 	// restart at first buiulding?
 	if (step_count >= buildings.get_count()) {
@@ -1674,16 +1665,16 @@ void stadt_t::step_passagiere()
 	if (buildings.empty()) {
 		return;
 	}
-	const gebaeude_t* gb = buildings.get(step_count);
+	const gebaeude_t* gb = buildings[step_count];
 
 	// prissi: since now backtravels occur, we damp the numbers a little
 	const int num_pax =
-		(wtyp == freight_builder_t::passagiere) ?
+		(wtyp == warenbauer_t::passagiere) ?
 			(gb->get_tile()->get_besch()->get_level()      + 6) >> 2 :
 			(gb->get_tile()->get_besch()->get_post_level() + 8) >> 3 ;
 
 	// create pedestrians in the near area?
-	if (welt->get_settings().get_random_pedestrians() && wtyp == freight_builder_t::passagiere) {
+	if (welt->get_settings().get_random_pedestrians() && wtyp == warenbauer_t::passagiere) {
 		haltestelle_t::erzeuge_fussgaenger(welt, gb->get_pos(), num_pax);
 	}
 
@@ -1728,7 +1719,7 @@ void stadt_t::step_passagiere()
 					target_factories.total_remaining -= pax_left_to_do;
 				}
 				target_factories.total_generated += pax_left_to_do;
-				factory_entry->factory->book_stat( pax_left_to_do, ( wtyp==freight_builder_t::passagiere ? FAB_PAX_GENERATED : FAB_MAIL_GENERATED ) );
+				factory_entry->factory->book_stat( pax_left_to_do, ( wtyp==warenbauer_t::passagiere ? FAB_PAX_GENERATED : FAB_MAIL_GENERATED ) );
 			}
 
 #ifdef DESTINATION_CITYCARS
@@ -1738,20 +1729,20 @@ void stadt_t::step_passagiere()
 			}
 #endif
 
-			freight_t pax(wtyp);
+			ware_t pax(wtyp);
 			pax.set_zielpos(dest_pos);
 			pax.menge = pax_left_to_do;
 			pax.to_factory = ( factory_entry ? 1 : 0 );
 
-			freight_t return_pax(wtyp);
+			ware_t return_pax(wtyp);
 
 			// now, finally search a route; this consumes most of the time
-			int const route_result = haltestelle_t::search_route( &start_halts.get(0), start_halts.get_count(), welt->get_settings().is_no_routing_over_overcrowding(), pax, &return_pax);
+			int const route_result = haltestelle_t::search_route( &start_halts[0], start_halts.get_count(), welt->get_settings().is_no_routing_over_overcrowding(), pax, &return_pax);
 			halthandle_t start_halt = return_pax.get_ziel();
 			if(  route_result==haltestelle_t::ROUTE_OK  ) {
 				// register departed pax/mail at factory
 				if(  factory_entry  ) {
-					factory_entry->factory->book_stat( pax.menge, ( wtyp==freight_builder_t::passagiere ? FAB_PAX_DEPARTED : FAB_MAIL_DEPARTED ) );
+					factory_entry->factory->book_stat( pax.menge, ( wtyp==warenbauer_t::passagiere ? FAB_PAX_DEPARTED : FAB_MAIL_DEPARTED ) );
 				}
 				// so we have happy traveling passengers
 				start_halt->starte_mit_route(pax);
@@ -1764,7 +1755,7 @@ void stadt_t::step_passagiere()
 			else if(  route_result==haltestelle_t::ROUTE_WALK  ) {
 				if(  factory_entry  ) {
 					// workers who walk to the factory or customers who walk to the consumer store
-					factory_entry->factory->book_stat( pax_left_to_do, ( wtyp==freight_builder_t::passagiere ? FAB_PAX_DEPARTED : FAB_MAIL_DEPARTED ) );
+					factory_entry->factory->book_stat( pax_left_to_do, ( wtyp==warenbauer_t::passagiere ? FAB_PAX_DEPARTED : FAB_MAIL_DEPARTED ) );
 					factory_entry->factory->liefere_an(wtyp, pax_left_to_do);
 				}
 				// people who walk or mail delivered by hand do not count as transported or happy
@@ -1780,16 +1771,16 @@ void stadt_t::step_passagiere()
 				}
 				else {
 					// all routes to goal are overcrowded -> register at all start halts
-					for(  uint32 s=0;  s<start_halts.get_count();  ++s  ) {
-						start_halts.at(s)->add_pax_unhappy(pax_left_to_do);
+					FOR(vector_tpl<halthandle_t>, const s, start_halts) {
+						s->add_pax_unhappy(pax_left_to_do);
 						merke_passagier_ziel(dest_pos, COL_ORANGE);
 					}
 				}
 			}
 			else {
 				// since there is no route from any start halt -> register no route at all start halts
-				for(  uint32 s=0;  s<start_halts.get_count();  ++s  ) {
-					start_halts.at(s)->add_pax_no_route(pax_left_to_do);
+				FOR(vector_tpl<halthandle_t>, const s, start_halts) {
+					s->add_pax_no_route(pax_left_to_do);
 				}
 				merke_passagier_ziel(dest_pos, COL_DARK_ORANGE);
 #ifdef DESTINATION_CITYCARS
@@ -1803,7 +1794,7 @@ void stadt_t::step_passagiere()
 				halthandle_t return_halt = pax.get_ziel();
 				if(  !return_halt->is_overcrowded( wtyp->get_catg_index() )  ) {
 					// prissi: not overcrowded and can receive => add them
-					if(  will_return!=city_return  &&  wtyp==freight_builder_t::post  ) {
+					if(  will_return!=city_return  &&  wtyp==warenbauer_t::post  ) {
 						// attractions/factory generate more mail than they receive
 						return_pax.menge = pax_left_to_do*3;
 					}
@@ -1849,7 +1840,7 @@ void stadt_t::step_passagiere()
 				target_factories.total_remaining -= amount;
 			}
 			target_factories.total_generated += amount;
-			factory_entry->factory->book_stat( amount, ( wtyp==freight_builder_t::passagiere ? FAB_PAX_GENERATED : FAB_MAIL_GENERATED ) );
+			factory_entry->factory->book_stat( amount, ( wtyp==warenbauer_t::passagiere ? FAB_PAX_GENERATED : FAB_MAIL_GENERATED ) );
 		}
 #ifdef DESTINATION_CITYCARS
 		//citycars with destination
@@ -1896,9 +1887,8 @@ void stadt_t::add_target_city(stadt_t *const city)
 void stadt_t::recalc_target_cities()
 {
 	target_cities.clear();
-	const weighted_vector_tpl<stadt_t *> &cities = welt->get_staedte();
-	for(  uint32 c=0;  c<cities.get_count();  ++c  ) {
-		add_target_city( cities.get(c) );
+	FOR(weighted_vector_tpl<stadt_t*>, const c, welt->get_staedte()) {
+		add_target_city(c);
 	}
 }
 
@@ -1917,9 +1907,8 @@ void stadt_t::add_target_attraction(gebaeude_t *const attraction)
 void stadt_t::recalc_target_attractions()
 {
 	target_attractions.clear();
-	const weighted_vector_tpl<gebaeude_t *> &attractions = welt->get_ausflugsziele();
-	for(  uint32 a=0;  a<attractions.get_count();  ++a  ) {
-		add_target_attraction( attractions.get(a) );
+	FOR(weighted_vector_tpl<gebaeude_t*>, const a, welt->get_ausflugsziele()) {
+		add_target_attraction(a);
 	}
 }
 
@@ -1982,8 +1971,8 @@ class bauplatz_mit_strasse_sucher_t: public bauplatz_sucher_t
 		{
 			const weighted_vector_tpl<gebaeude_t*>& attractions = welt->get_ausflugsziele();
 			int dist = welt->get_groesse_x() * welt->get_groesse_y();
-			for (weighted_vector_tpl<gebaeude_t*>::const_iterator i = attractions.begin(), end = attractions.end(); i != end; ++i) {
-				int d = koord_distance((*i)->get_pos(), pos);
+			FOR(weighted_vector_tpl<gebaeude_t*>, const i, attractions) {
+				int const d = koord_distance(i->get_pos(), pos);
 				if (d < dist) {
 					dist = d;
 				}
@@ -2606,7 +2595,7 @@ void stadt_t::renoviere_gebaeude(gebaeude_t* gb)
 		}
 	}
 	// check for industry, also if we wanted com, but there was no com good enough ...
-	if ((sum_industrie > sum_industrie && sum_industrie > sum_wohnung) || (sum_gewerbe > sum_wohnung && will_haben == gebaeude_t::unbekannt)) {
+	if ((sum_industrie > sum_gewerbe && sum_industrie > sum_wohnung) || (sum_gewerbe > sum_wohnung && will_haben == gebaeude_t::unbekannt)) {
 		// we must check, if we can really update to higher level ...
 		const int try_level = (alt_typ == gebaeude_t::industrie ? level + 1 : level);
 		h = hausbauer_t::get_industrie(try_level , current_month, cl);
@@ -2907,7 +2896,7 @@ void stadt_t::baue()
 		uint32 offset = simrand(num_road_rules);	// start with random rule
 		for (uint32 i = 0; i < num_road_rules  &&  !best_strasse.found(); i++) {
 			uint32 rule = ( i+offset ) % num_road_rules;
-			bewerte_strasse(k, 8 + road_rules.get(rule)->chance, *road_rules.get(rule));
+			bewerte_strasse(k, 8 + road_rules[rule]->chance, *road_rules[rule]);
 		}
 		// ok => then built road
 		if (best_strasse.found()) {
@@ -2924,7 +2913,7 @@ void stadt_t::baue()
 		offset = simrand(num_house_rules);	// start with random rule
 		for (uint32 i = 0; i < num_house_rules  &&  !best_haus.found(); i++) {
 			uint32 rule = ( i+offset ) % num_house_rules;
-			bewerte_haus(k, 8 + house_rules.get(rule)->chance, *house_rules.get(rule));
+			bewerte_haus(k, 8 + house_rules[rule]->chance, *house_rules[rule]);
 		}
 		// one rule applied?
 		if (best_haus.found()) {
@@ -3001,7 +2990,7 @@ vector_tpl<koord>* stadt_t::random_place(const karte_t* wl, const sint32 anzahl,
 			// get random place in the cell
 			if (places.at(ip).empty()) continue;
 			const uint32 j = simrand(places.at(ip).get_count());
-			const koord k = places.at(ip).get(j);
+			const koord k = places.at(ip)[j];
 
 			// check minimum distance
 			bool ok = true;
@@ -3010,8 +2999,8 @@ vector_tpl<koord>* stadt_t::random_place(const karte_t* wl, const sint32 anzahl,
 			for(sint32 i=k2mcd.x-1; ok && i<=k2mcd.x+1; i++) {
 				for(sint32 j=k2mcd.y-1; ok && j<=k2mcd.y+1; j++) {
 					if (i>=0 && i<(sint32)xmax2 && j>=0 && j<(sint32)ymax2) {
-						for(uint32 l=0; ok && l<result_places.at(i,j).get_count(); l++) {
-							if (koord_distance(k, result_places.at(i,j).get(l)) < minimum_city_distance){
+						FOR(vector_tpl<koord>, const& l, result_places.at(i, j)) {
+							if (koord_distance(k, l) < minimum_city_distance) {
 								ok = false;
 							}
 						}

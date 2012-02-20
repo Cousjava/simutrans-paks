@@ -34,7 +34,7 @@ void change_drag_start(int x, int y)
 }
 
 
-static void fill_event(struct event_t *ev)
+static void fill_event(event_t* const ev)
 {
 	// Knightly : variables for detecting double-clicks and triple-clicks
 	const  unsigned long interval = 400;
@@ -146,7 +146,7 @@ static void fill_event(struct event_t *ev)
 	}
 
 	// Knightly : check for double-clicks and triple-clicks
-	const unsigned long curr_time = system_time();
+	const unsigned long curr_time = dr_time();
 	if(  ev->ev_class==EVENT_CLICK  ) {
 		if(  prev_ev_class==EVENT_RELEASE  &&  prev_ev_code==ev->ev_code  &&  curr_time-prev_ev_time<=interval  ) {
 			// case : a mouse click which forms an unbroken sequence with the previous clicks and releases
@@ -218,7 +218,7 @@ static void fill_event(struct event_t *ev)
  * Holt ein Event ohne zu warten
  * @author Hj. Malthaner
  */
-void display_poll_event(struct event_t *ev)
+void display_poll_event(event_t* const ev)
 {
 	// Knightly : if there is any pending meta-event, consume it instead of fetching a new event from the system
 	if(  meta_event.ev_class!=EVENT_NONE  ) {
@@ -226,7 +226,7 @@ void display_poll_event(struct event_t *ev)
 		meta_event.ev_class = EVENT_NONE;
 	}
 	else {
-		system_poll_event();
+		GetEventsNoWait();
 		fill_event(ev);
 		// prepare for next event
 		sys_event.type = SIM_NOEVENT;
@@ -239,7 +239,7 @@ void display_poll_event(struct event_t *ev)
  * Holt ein Event mit warten
  * @author Hj. Malthaner
  */
-void display_get_event(struct event_t *ev)
+void display_get_event(event_t* const ev)
 {
 	// Knightly : if there is any pending meta-event, consume it instead of fetching a new event from the system
 	if(  meta_event.ev_class!=EVENT_NONE  ) {
@@ -247,7 +247,7 @@ void display_get_event(struct event_t *ev)
 		meta_event.ev_class = EVENT_NONE;
 	}
 	else {
-		system_wait_event();
+		GetEvents();
 		fill_event(ev);
 		// prepare for next event
 		sys_event.type = SIM_NOEVENT;

@@ -4,6 +4,7 @@
 #include "gui_frame.h"
 #include "components/gui_scrollpane.h"
 #include "components/gui_label.h"
+#include "components/gui_button.h"
 #include "factorylist_stats_t.h"
 
 
@@ -43,10 +44,10 @@ public:
 
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.
-	 * @return den Dateinamen fï¿½r die Hilfe, oder NULL
+	 * @return den Dateinamen für die Hilfe, oder NULL
 	 * @author V. Meyer
 	 */
-	const char * get_help_file() const {return "factorylist_filter.txt"; }
+	const char * get_hilfe_datei() const {return "factorylist_filter.txt"; }
 
 	static factorylist::sort_mode_t get_sortierung() { return sortby; }
 	static void set_sortierung(const factorylist::sort_mode_t& sm) { sortby = sm; }

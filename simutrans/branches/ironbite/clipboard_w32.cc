@@ -28,7 +28,7 @@ static char buffer[MAX_SIZE] = "";
  * @param length : number of character bytes to copy
  * @author Knightly
  */
-void system_clipboard_copy(const char *source, size_t length)
+void dr_copy(const char *source, size_t length)
 {
 	const bool has_unicode = translator::get_lang()->utf_encoded;
 
@@ -82,7 +82,7 @@ void system_clipboard_copy(const char *source, size_t length)
  * @return number of character bytes actually inserted -> for cursor advancing
  * @author Knightly
  */
-size_t system_clipboard_paste(char *target, size_t max_length)
+size_t dr_paste(char *target, size_t max_length)
 {
 	const bool has_unicode = translator::get_lang()->utf_encoded;
 	size_t inserted_length = 0;

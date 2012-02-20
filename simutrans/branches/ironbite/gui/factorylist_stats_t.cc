@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2003 Hj. Malthaner
+ * Copyright (c) 1997 - 2003 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -13,7 +13,6 @@
 #include "../simfab.h"
 #include "../simworld.h"
 #include "../simskin.h"
-#include "../simevent.h"
 
 #include "components/gui_button.h"
 #include "components/list_button.h"
@@ -96,8 +95,8 @@ void factorylist_stats_t::sort(factorylist::sort_mode_t sb, bool sr)
 	fab_list.clear();
 	fab_list.resize(welt->get_fab_list().get_count());
 
-	for (slist_iterator_tpl<fabrik_t*> i(welt->get_fab_list()); i.next();) {
-		fab_list.insert_ordered( i.get_current(), compare_factories(sortby, sortreverse) );
+	FOR(slist_tpl<fabrik_t*>, const f, welt->get_fab_list()) {
+		fab_list.insert_ordered(f, compare_factories(sortby, sortreverse));
 	}
 }
 
@@ -115,7 +114,7 @@ bool factorylist_stats_t::infowin_event(const event_t * ev)
 		return false;
 	}
 
-	fabrik_t* fab = fab_list.get(line);
+	fabrik_t* fab = fab_list[line];
 	if (!fab) {
 		return false;
 	}
@@ -155,7 +154,7 @@ void factorylist_stats_t::recalc_size()
  */
 void factorylist_stats_t::zeichnen(koord offset)
 {
-	const struct clip_dimension cd = display_get_clip_wh();
+	clip_dimension const cd = display_get_clip_wh();
 	const int start = cd.y-LINESPACE-1;
 	const int end = cd.yy+LINESPACE+1;
 
@@ -177,7 +176,7 @@ void factorylist_stats_t::zeichnen(koord offset)
 			continue;
 		}
 
-		const fabrik_t* fab = fab_list.get(i);
+		const fabrik_t* fab = fab_list[i];
 		if(fab) {
 			//DBG_DEBUG("factorylist_stats_t()","zeichnen() factory %i",i);
 			unsigned indikatorfarbe = fabrik_t::status_to_color[fab->get_status()];
@@ -185,7 +184,7 @@ void factorylist_stats_t::zeichnen(koord offset)
 			buf.clear();
 			//		buf.append(i+1);
 			//		buf.append(".) ");
-			buf.append(fab_list.get(i)->get_name());
+			buf.append(fab_list[i]->get_name());
 			buf.append(" (");
 
 			if (!fab->get_eingang().empty()) {

@@ -78,12 +78,12 @@ public:
 
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.
-	 * @return den Dateinamen fï¿½r die Hilfe, oder NULL
+	 * @return den Dateinamen für die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	const char *get_help_file() const {return hilfe_datei;}
+	const char *get_hilfe_datei() const {return hilfe_datei;}
 
-	PLAYER_COLOR_VAL get_title_color() const { return WIN_TITEL; }
+	PLAYER_COLOR_VAL get_titelcolor() const { return WIN_TITEL; }
 
 	bool getroffen(int x, int y) OVERRIDE;
 
@@ -97,7 +97,7 @@ public:
 	bool infowin_event(event_t const*) OVERRIDE;
 
 	/**
-	 * komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
+	 * komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
 	 * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
 	 * in dem die Komponente dargestellt wird.
 	 * @author Hj. Malthaner

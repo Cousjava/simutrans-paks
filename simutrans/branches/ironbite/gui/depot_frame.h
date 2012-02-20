@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -9,6 +9,8 @@
 #define gui_depot_frame2_t_h
 
 #include "gui_frame.h"
+#include "gui_container.h"
+
 #include "components/gui_label.h"
 #include "components/gui_image.h"
 #include "components/gui_image_list.h"
@@ -28,7 +30,7 @@ class vehikel_besch_t;
 /**
  * Depot frame, handles all interaction with a vehicle depot.
  *
- * @author Hj. Malthaner
+ * @author Hansjörg Malthaner
  * @date 22-Nov-01
  */
 class depot_frame_t : public gui_frame_t,
@@ -37,7 +39,7 @@ class depot_frame_t : public gui_frame_t,
 private:
 	/**
 	 * The depot to display
-	 * @author Hj. Malthaner
+	 * @author Hansjörg Malthaner
 	 */
 	depot_t *depot;
 
@@ -152,7 +154,8 @@ private:
 	 * @author Volker Meyer
 	 * @date  09.06.2003
 	 */
-	ptrhashtable_tpl<const vehikel_besch_t *, gui_image_list_t::image_data_t *> vehicle_map;
+	typedef ptrhashtable_tpl<vehikel_besch_t const*, gui_image_list_t::image_data_t*> vehicle_image_map;
+	vehicle_image_map vehicle_map;
 
 	/**
 	 * Draw the info text for the vehicle the mouse is over - if any.
@@ -229,7 +232,7 @@ public:
 	 * @author (Mathew Hounsell)
 	 * @date   11-Mar-2003
 	 */
-	void set_window_size(koord groesse);
+	void set_fenstergroesse(koord groesse);
 
 	/**
 	 * Create and fill loks_vec and waggons_vec.
@@ -247,10 +250,10 @@ public:
 
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.
-	 * @return den Dateinamen fï¿½r die Hilfe, oder NULL
+	 * @return den Dateinamen für die Hilfe, oder NULL
 	 * @author Hj. Malthaner
 	 */
-	const char * get_help_file() const {return "depot.txt";}
+	const char * get_hilfe_datei() const {return "depot.txt";}
 
 	/**
 	 * Does this window need a next button in the title bar?
@@ -271,7 +274,7 @@ public:
 
 	/**
 	 * Zeichnet das Frame
-	 * @author Hj. Malthaner
+	 * @author Hansjörg Malthaner
 	 */
 	void zeichnen(koord pos, koord gr);
 

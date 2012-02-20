@@ -141,7 +141,7 @@ climate_gui_t::climate_gui_t(settings_t* const sets) :
 	add_komponente( &river_max );
 	intTopOfButton += 12;
 
-	set_window_size( koord(RIGHT_ARROW+16, intTopOfButton+4+16) );
+	set_fenstergroesse( koord(RIGHT_ARROW+16, intTopOfButton+4+16) );
 }
 
 

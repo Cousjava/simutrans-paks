@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2002 Hj. Malthaner
+ * Copyright (c) 1997 - 2002 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -109,31 +109,29 @@ sint32 vehikelbauer_t::get_speedbonus( sint32 monthyear, waytype_t wt )
 	// ok, now lets see if we have data for this
 	if(speedbonus[typ].get_count()) {
 		uint i=0;
-		while(  i<speedbonus[typ].get_count()  &&  monthyear>=speedbonus[typ].get(i).year  ) {
+		while(  i<speedbonus[typ].get_count()  &&  monthyear>=speedbonus[typ][i].year  ) {
 			i++;
 		}
 		if(  i==speedbonus[typ].get_count()  ) {
 			// maxspeed already?
-			return speedbonus[typ].get(i-1).speed;
+			return speedbonus[typ][i-1].speed;
 		}
 		else if(i==0) {
 			// minspeed below
-			return speedbonus[typ].get(0).speed;
+			return speedbonus[typ][0].speed;
 		}
 		else {
 			// interpolate linear
-			const sint32 delta_speed = speedbonus[typ].get(i).speed - speedbonus[typ].get(i-1).speed;
-			const sint32 delta_years = speedbonus[typ].get(i).year - speedbonus[typ].get(i-1).year;
-			return ( (delta_speed*(monthyear-speedbonus[typ].get(i-1).year)) / delta_years ) + speedbonus[typ].get(i-1).speed;
+			const sint32 delta_speed = speedbonus[typ][i].speed - speedbonus[typ][i-1].speed;
+			const sint32 delta_years = speedbonus[typ][i].year - speedbonus[typ][i-1].year;
+			return ( (delta_speed*(monthyear-speedbonus[typ][i-1].year)) / delta_years ) + speedbonus[typ][i-1].speed;
 		}
 	}
 	else {
 		sint32 speed_sum = 0;
 		sint32 num_averages = 0;
 		// needs to do it the old way => iterate over all vehicles with this type ...
-		slist_iterator_tpl<const vehikel_besch_t*> vehinfo(typ_fahrzeuge[GET_WAYTYPE_INDEX(wt)]);
-		while(  vehinfo.next()  ) {
-			const vehikel_besch_t* info = vehinfo.get_current();
+		FOR(slist_tpl<vehikel_besch_t const*>, const info, typ_fahrzeuge[GET_WAYTYPE_INDEX(wt)]) {
 			if(  info->get_leistung()>0  &&  !info->is_future(monthyear)  &&  !info->is_retired(monthyear)  ) {
 				speed_sum += info->get_geschw();
 				num_averages ++;
@@ -162,7 +160,7 @@ void vehikelbauer_t::rdwr_speedbonus(loadsave_t *file)
 			if (file->is_loading()) {
 				speedbonus[j].append(bonus_record_t());
 			}
-			speedbonus[j].at(i).rdwr(file);
+			speedbonus[j][i].rdwr(file);
 		}
 	}
 }
@@ -298,7 +296,7 @@ slist_tpl<vehikel_besch_t const*>& vehikelbauer_t::get_info(waytype_t const typ)
  * tries to get best with but adds a little random action
  * @author prissi
  */
-const vehikel_besch_t *vehikelbauer_t::vehikel_search( waytype_t wt, const uint16 month_now, const uint32 target_weight, const sint32 target_speed, const freight_desc_t * target_freight, bool include_electric, bool not_obsolete )
+const vehikel_besch_t *vehikelbauer_t::vehikel_search( waytype_t wt, const uint16 month_now, const uint32 target_weight, const sint32 target_speed, const ware_besch_t * target_freight, bool include_electric, bool not_obsolete )
 {
 	const vehikel_besch_t *besch = NULL;
 	long besch_index=-100000;
@@ -308,10 +306,7 @@ const vehikel_besch_t *vehikelbauer_t::vehikel_search( waytype_t wt, const uint1
 		return NULL;
 	}
 
-	slist_iterator_tpl<const vehikel_besch_t*> vehinfo(typ_fahrzeuge[GET_WAYTYPE_INDEX(wt)]);
-	while(  vehinfo.next(  )) {
-		const vehikel_besch_t* test_besch = vehinfo.get_current();
-
+	FOR(slist_tpl<vehikel_besch_t const*>, const test_besch, typ_fahrzeuge[GET_WAYTYPE_INDEX(wt)]) {
 		// no constricts allow for rail vehicles concerning following engines
 		if(wt==track_wt  &&  !test_besch->can_follow_any()  ) {
 			continue;
@@ -413,15 +408,12 @@ const vehikel_besch_t *vehikelbauer_t::vehikel_search( waytype_t wt, const uint1
  * if prev_besch==NULL, then the convoi must be able to lead a convoi
  * @author prissi
  */
-const vehikel_besch_t *vehikelbauer_t::get_best_matching( waytype_t wt, const uint16 month_now, const uint32 target_weight, const uint32 target_power, const sint32 target_speed, const freight_desc_t * target_freight, bool not_obsolete, const vehikel_besch_t *prev_veh, bool is_last )
+const vehikel_besch_t *vehikelbauer_t::get_best_matching( waytype_t wt, const uint16 month_now, const uint32 target_weight, const uint32 target_power, const sint32 target_speed, const ware_besch_t * target_freight, bool not_obsolete, const vehikel_besch_t *prev_veh, bool is_last )
 {
 	const vehikel_besch_t *besch = NULL;
 	long besch_index=-100000;
 
-	slist_iterator_tpl<const vehikel_besch_t*> vehinfo(typ_fahrzeuge[GET_WAYTYPE_INDEX(wt)]);
-	while(  vehinfo.next()  ) {
-		const vehikel_besch_t* test_besch = vehinfo.get_current();
-
+	FOR(slist_tpl<vehikel_besch_t const*>, const test_besch, typ_fahrzeuge[GET_WAYTYPE_INDEX(wt)]) {
 		if(target_power>0  &&  test_besch->get_leistung()==0) {
 			continue;
 		}

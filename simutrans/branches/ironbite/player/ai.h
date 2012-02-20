@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -15,7 +15,7 @@
 #include "../sucher/bauplatz_sucher.h"
 
 class karte_t;
-class freight_desc_t;
+class ware_besch_t;
 
 /**
  * bauplatz_mit_strasse_sucher_t:
@@ -69,7 +69,7 @@ public:
 	virtual void rdwr(loadsave_t *file);
 
 	// return true, if there is already a connection
-	bool is_connected(const koord star_pos, const koord end_pos, const freight_desc_t *wtyp) const;
+	bool is_connected(const koord star_pos, const koord end_pos, const ware_besch_t *wtyp) const;
 
 	// prepares a general tool just like a human player work do
 	bool init_general_tool( int tool, const char *param );

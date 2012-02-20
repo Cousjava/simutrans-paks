@@ -1,5 +1,5 @@
 /*
- *  Copyright (c) 1997 - 2002 by Volker Meyer & Hj. Malthaner
+ *  Copyright (c) 1997 - 2002 by Volker Meyer & Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  */
@@ -23,7 +23,7 @@ class checksum_t;
  *      Volker Meyer
  *
  *  Beschreibung:
- *      Das komplette Bild besteht aus Hinter- und Vorgergrund. Auï¿½erdem ist
+ *      Das komplette Bild besteht aus Hinter- und Vorgergrund. Außerdem ist
  *      hier die Anzahl der Animationen festgelegt. Diese weiter unten zu
  *      definieren macht kaum Sinn, da die Animationslogik immer das ganze
  *      Tile betrifft.
@@ -111,8 +111,8 @@ public:
  *      Volker Meyer
  *
  *  Beschreibung:
- *      Die Hausbeschreibung enthï¿½lt die Komplettbeschrebung eines Gebï¿½udes.
- *      Das sind mehre Tiles und die Attribute fï¿½r die Spielsteuerung.
+ *      Die Hausbeschreibung enthält die Komplettbeschrebung eines Gebäudes.
+ *      Das sind mehre Tiles und die Attribute für die Spielsteuerung.
  *
  *  Kindknoten:
  *	0   Name
@@ -121,11 +121,11 @@ public:
  *	3   Tile 2
  *	... ...
  */
-class haus_besch_t : public obj_besch_std_name_t { // Daten fï¿½r ein ganzes Gebï¿½ude
+class haus_besch_t : public obj_besch_std_name_t { // Daten für ein ganzes Gebäude
 	friend class building_reader_t;
 
 	public:
-		/* Unbekannte Gebï¿½ude sind nochmal unterteilt */
+		/* Unbekannte Gebäude sind nochmal unterteilt */
 		enum utyp
 		{
 			unbekannt         =  0,

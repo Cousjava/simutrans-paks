@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -93,7 +93,7 @@ sound_frame_t::sound_frame_t()
 	shufflebtn.add_listener(this);
 	add_komponente(&shufflebtn);
 
-	set_window_size(koord(276, 164));
+	set_fenstergroesse(koord(276, 164));
 }
 
 
@@ -136,7 +136,7 @@ sound_frame_t::action_triggered( gui_action_creator_t *komp,value_t p)
 
 
 /**
- * komponente neu zeichnen. Die ï¿½bergebenen Werte beziehen sich auf
+ * komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
  * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
  * in dem die Komponente dargestellt wird.
  * @author Hj. Malthaner

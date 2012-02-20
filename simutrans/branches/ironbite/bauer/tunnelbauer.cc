@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -70,10 +70,8 @@ void tunnelbauer_t::register_besch(tunnel_besch_t *besch)
 // now we have to convert old tunnel to new ones ...
 bool tunnelbauer_t::laden_erfolgreich()
 {
-	stringhashtable_iterator_tpl<tunnel_besch_t *>iter(tunnel_by_name);
-	while(  iter.next()  ) {
-		tunnel_besch_t* besch = iter.get_current_value();
-
+	FOR(stringhashtable_tpl<tunnel_besch_t*>, const& i, tunnel_by_name) {
+		tunnel_besch_t* const besch = i.value;
 		if(besch->get_topspeed()==0) {
 			// old style, need to convert
 			if(strcmp(besch->get_name(),"RoadTunnel")==0) {
@@ -112,10 +110,8 @@ const tunnel_besch_t *tunnelbauer_t::find_tunnel(const waytype_t wtyp, const sin
 {
 	const tunnel_besch_t *find_besch=NULL;
 
-	stringhashtable_iterator_tpl<tunnel_besch_t *>iter(tunnel_by_name);
-	while(  iter.next()  ) {
-		tunnel_besch_t* besch = iter.get_current_value();
-
+	FOR(stringhashtable_tpl<tunnel_besch_t*>, const& i, tunnel_by_name) {
+		tunnel_besch_t* const besch = i.value;
 		if(besch->get_waytype() == wtyp) {
 			if(time==0  ||  (besch->get_intro_year_month()<=time  &&  besch->get_retire_year_month()>time)) {
 				if(find_besch==NULL  ||
@@ -153,9 +149,8 @@ void tunnelbauer_t::fill_menu(werkzeug_waehler_t* wzw, const waytype_t wtyp, sin
 	const uint16 time=welt->get_timeline_year_month();
 	vector_tpl<const tunnel_besch_t*> matching(tunnel_by_name.get_count());
 
-	stringhashtable_iterator_tpl<tunnel_besch_t *>iter(tunnel_by_name);
-	while(  iter.next()  ) {
-		tunnel_besch_t* besch = iter.get_current_value();
+	FOR(stringhashtable_tpl<tunnel_besch_t*>, const& i, tunnel_by_name) {
+		tunnel_besch_t* const besch = i.value;
 		if (besch->get_waytype() == wtyp && (
 					time == 0 ||
 					(besch->get_intro_year_month() <= time && time < besch->get_retire_year_month())
@@ -164,8 +159,8 @@ void tunnelbauer_t::fill_menu(werkzeug_waehler_t* wzw, const waytype_t wtyp, sin
 		}
 	}
 	// now sorted ...
-	for (vector_tpl<const tunnel_besch_t*>::const_iterator i = matching.begin(), end = matching.end(); i != end; ++i) {
-		wzw->add_werkzeug( (*i)->get_builder() );
+	FOR(vector_tpl<tunnel_besch_t const*>, const i, matching) {
+		wzw->add_werkzeug(i->get_builder());
 	}
 }
 
@@ -209,12 +204,12 @@ koord3d tunnelbauer_t::finde_ende(karte_t *welt, koord3d pos, koord zv, waytype_
 			}
 			if(  !ribi  ) {
 				// Ende am Hang - Endschiene fehlt oder hat keine ribis
-				// Wir prï¿½fen noch, ob uns dort ein anderer Weg stï¿½rt
+				// Wir prüfen noch, ob uns dort ein anderer Weg stört
 				if(  !gr->hat_wege()  ||  gr->hat_weg(wegtyp)  ) {
 					return pos;
 				}
 			}
-			return koord3d::invalid;  // Was im Weg (schrï¿½ger Hang oder so)
+			return koord3d::invalid;  // Was im Weg (schräger Hang oder so)
 		}
 		// tunnel slope underneath?
 		gr = welt->lookup(pos +koord3d(0,0,-1));
@@ -451,7 +446,7 @@ const char *tunnelbauer_t::remove(karte_t *welt, spieler_t *sp, koord3d start, w
 	const char    *msg;
 	koord3d   pos = start;
 
-	// Erstmal das ganze Auï¿½maï¿½ des Tunnels bestimmen und sehen,
+	// Erstmal das ganze Außmaß des Tunnels bestimmen und sehen,
 	// ob uns was im Weg ist.
 	tmp_list.insert(pos);
 	marker.markiere(welt->lookup(pos));
@@ -473,7 +468,7 @@ const char *tunnelbauer_t::remove(karte_t *welt, spieler_t *sp, koord3d start, w
 		else {
 			part_list.insert(pos);
 		}
-		// Alle Tunnelteile auf Entfernbarkeit prï¿½fen!
+		// Alle Tunnelteile auf Entfernbarkeit prüfen!
 		msg = from->kann_alle_obj_entfernen(sp);
 
 		if(msg != NULL) {
@@ -491,7 +486,7 @@ const char *tunnelbauer_t::remove(karte_t *welt, spieler_t *sp, koord3d start, w
 		}
 	} while (!tmp_list.empty());
 
-	// Jetzt geht es ans lï¿½schen der Tunnel
+	// Jetzt geht es ans löschen der Tunnel
 	while (!part_list.empty()) {
 		pos = part_list.remove_first();
 		grund_t *gr = welt->lookup(pos);
@@ -509,7 +504,7 @@ const char *tunnelbauer_t::remove(karte_t *welt, spieler_t *sp, koord3d start, w
 		reliefkarte_t::get_karte()->calc_map_pixel( pos.get_2d() );
 	}
 
-	// Und die Tunnelenden am Schluï¿½
+	// Und die Tunnelenden am Schluß
 	while (!end_list.empty()) {
 		pos = end_list.remove_first();
 

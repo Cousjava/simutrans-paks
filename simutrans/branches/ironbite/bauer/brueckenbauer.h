@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -20,7 +20,7 @@ class weg_besch_t;
 class werkzeug_waehler_t;
 
 /**
- * Baut Brï¿½cken. Brï¿½cken sollten nicht direct instanziiert werden
+ * Baut Brücken. Brücken sollten nicht direct instanziiert werden
  * sondern immer vom brueckenbauer_t erzeugt werden.
  *
  * Es gibt keine Instanz - nur statische Methoden.
@@ -35,15 +35,15 @@ private:
 
 public:
 	/*
-	 * Grund bestimmen, auf dem die Brï¿½cke enden soll.
+	 * Grund bestimmen, auf dem die Brücke enden soll.
 	 *
 	 * @author V. Meyer
 	 */
 	static koord3d finde_ende(karte_t *welt, koord3d pos, koord zv, const bruecke_besch_t *besch, const char *&msg, bool ai_bridge=false, uint32 min_length=0 );
 
 	/*
-	 * Brï¿½ckenendpunkte bei Rampen werden auf flachem Grund gebaut und mï¿½ssen daher genauer
-	 * auf stï¿½rende vorhandene Bauten ï¿½berprï¿½ft werden.
+	 * Brückenendpunkte bei Rampen werden auf flachem Grund gebaut und müssen daher genauer
+	 * auf störende vorhandene Bauten überprüft werden.
 	 *
 	 * @author V. Meyer
 	 */
@@ -71,7 +71,7 @@ public:
 	static const char *baue( karte_t *welt, spieler_t *sp, koord pos, const bruecke_besch_t *besch);
 
 	/*
-	 * Brï¿½ckenlï¿½sch-Funktion
+	 * Brückenlösch-Funktion
 	 *
 	 * @author V. Meyer
 	 */

@@ -9,6 +9,8 @@
 #define simdings_h
 
 #include "simtypes.h"
+#include "simimg.h"
+#include "simcolor.h"
 #include "dataobj/koord3d.h"
 
 
@@ -38,10 +40,11 @@ public:
 	static bool show_owner;
 
 private:
+	ding_t(ding_t const&);
+	ding_t& operator=(ding_t const&);
+
 	/**
-	 * This is the coordinate of the map square where this
-	 * thing is located.
-	 * @author Hj. Malthaner
+	 * Coordinate of position
 	 */
 	koord3d pos;
 
@@ -100,14 +103,12 @@ public:
 	void set_besitzer(spieler_t *sp);
 
 	/**
-	 * Ein Objekt kann einen Besitzer haben.
-	 * @return A pointer to the owner of the object or NULL if there is no owner.
-	 * @author Hj. Malthaner
+	 * returns owner of object
 	 */
 	spieler_t * get_besitzer() const;
 
 	/**
-	 * Routines to set, clear, get bit flags
+	 * routines to set, clear, get bit flags
 	 * @author Hj. Malthaner
 	 */
 	inline void set_flag(flag_values flag) {flags |= flag;}
@@ -184,19 +185,13 @@ public:
 
 	/**
 	 * Constructor to load object from file
-	 *
-	 * @param welt Zeiger auf die Karte, in die das Objekt geladen werden soll.
-	 * @param file Dateizeiger auf die Datei, die die Objektdaten enth�lt.
 	 * @author Hj. Malthaner
 	 */
 	ding_t(karte_t *welt, loadsave_t *file);
 
 	/**
-	 * This coostruktor creates objekts for ground at [x][y][z].
-	 * It will not automatically add the objects to the ground.
-	 *
-	 * @param welt Zeiger auf die Karte, zu der das Objekt geh�ren soll.
-	 * @param pos Die Koordinate des Planquadrates.
+	 * Constructor to set position of object
+	 * This does *not* add the object to the tile
 	 * @author Hj. Malthaner
 	 */
 	ding_t(karte_t *welt, koord3d pos);
@@ -204,8 +199,7 @@ public:
 	karte_t* get_welt() const { return welt; }
 
 	/**
-	 * This destructor removes the object from the map sqaure,
-	 * and closes all open inspection windows for the object.
+	 * Destructor: removes object from tile, should close any inspection windows
 	 * @author Hj. Malthaner
 	 */
 	virtual ~ding_t();
@@ -220,10 +214,10 @@ public:
 	 * @returns untranslated name of object
 	 * @author Hj. Malthaner
 	 */
-	virtual const char *get_name() const;
+	virtual const char *get_name() const {return "Ding";}
 
 	/**
-	 * @return the object type
+	 * @return object type
 	 * @author Hj. Malthaner
 	 * @see typ
 	 */
@@ -232,14 +226,14 @@ public:
 	/**
 	 * waytype associated with this object
 	 */
-	virtual waytype_t get_waytype() const;
+	virtual waytype_t get_waytype() const { return invalid_wt; }
 
 	/**
 	 * called whenever the snowline height changes
 	 * return false and the ding_t will be deleted
 	 * @author prissi
 	 */
-	virtual bool check_season(const long /*month*/);
+	virtual bool check_season(const long /*month*/) { return true; }
 
 	/**
 	 * called during map rotation
@@ -259,26 +253,26 @@ public:
 	 * IMG_LEER is no images
 	 * @author Hj. Malthaner
 	 */
-	virtual image_id get_bild(int /*height*/) const;
+	virtual image_id get_bild(int /*height*/) const {return IMG_LEER;}
 
 	/**
 	 * this image is drawn after all get_bild() on this tile
 	 * Currently only single height is supported for this feature
 	 */
-	virtual image_id get_after_bild() const;
+	virtual image_id get_after_bild() const {return IMG_LEER;}
 
 	/**
 	 * if a function returns a value here with TRANSPARENT_FLAGS set
 	 * then a transparent outline with the color from the lower 8 bit is drawn
 	 * @author kierongreen
 	 */
-	virtual PLAYER_COLOR_VAL get_outline_colour() const;
+	virtual PLAYER_COLOR_VAL get_outline_colour() const {return 0;}
 
 	/**
 	 * The image, that will be outlined
 	 * @author kierongreen
 	 */
-	virtual image_id get_outline_bild() const;
+	virtual PLAYER_COLOR_VAL get_outline_bild() const {return IMG_LEER;}
 
 	/**
 	 * Save and Load of object data in one routine
@@ -287,18 +281,14 @@ public:
 	virtual void rdwr(loadsave_t *file);
 
 	/**
-	 * Called after the world is completely loaded from savegame.
+	 * Called after the world is completely loaded from savegame
 	 *
 	 * @author Hj. Malthaner
 	 */
 	virtual void laden_abschliessen() {}
 
 	/**
-	 * A thing always belongs to a grund_t
-	 * @return the position of the object
-	 * @author V. Meyer
-	 * @see ding_t#ding_t
-	 * @see grund_t
+	 * @return position
 	 */
 	inline koord3d get_pos() const {return pos;}
 
@@ -308,9 +298,8 @@ public:
 	inline void set_pos(koord3d k) { if(k!=pos) { set_flag(dirty); pos = k;} }
 
 	/**
-	 * @return Fill the given buffer with a description text for
-	 * this object.
-	 *
+	 * put description of object into the buffer
+	 * (used for certain windows)
 	 * @author Hj. Malthaner
 	 * @see simwin
 	 */
@@ -365,5 +354,22 @@ template<typename T> static inline T const* ding_cast(ding_t const* const d)
 {
 	return ding_cast<T>(const_cast<ding_t*>(d));
 }
+
+
+/**
+ * Game objects that do not have description windows (for instance zeiger_t, wolke_t)
+ */
+class ding_no_info_t : public ding_t
+{
+public:
+	ding_no_info_t(karte_t* welt, loadsave_t* file) : ding_t(welt, file) {}
+
+	ding_no_info_t(karte_t* welt, koord3d pos) : ding_t(welt, pos) {}
+
+	void zeige_info() {}
+
+protected:
+	ding_no_info_t(karte_t* welt) : ding_t(welt) {}
+};
 
 #endif

@@ -340,13 +340,13 @@ template<class T> class weighted_vector_tpl
 			return true;
 		}
 
-		T & at(uint32 i)
+		T& operator [](uint32 i)
 		{
-			if (i >= count) dbg->fatal("weighted_vector_tpl<T>::at()", "index out of bounds: %i not in 0..%d", i, count - 1);
+			if (i >= count) dbg->fatal("weighted_vector_tpl<T>::get()", "index out of bounds: %i not in 0..%d", i, count - 1);
 			return nodes[i].data;
 		}
 
-		const T & get(uint32 i) const
+		const T& operator [](uint32 i) const
 		{
 			if (i >= count) dbg->fatal("weighted_vector_tpl<T>::get()", "index out of bounds: %i not in 0..%d", i, count - 1);
 			return nodes[i].data;

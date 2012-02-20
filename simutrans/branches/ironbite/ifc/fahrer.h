@@ -1,5 +1,5 @@
 /*
- * Interface fï¿½r Verbindung von Fahrzeugen mit der Route
+ * Interface für Verbindung von Fahrzeugen mit der Route
  *
  * 15.01.00, Hj. Malthaner
  */
@@ -11,20 +11,20 @@
 class grund_t;
 
 /**
- * Interface fï¿½r Verbindung von Fahrzeugen mit der Route.
+ * Interface für Verbindung von Fahrzeugen mit der Route.
  *
  * @author Hj. Malthaner, 15.01.00
  */
-class driver_t
+class fahrer_t
 {
 public:
-	virtual ~driver_t() {}
+	virtual ~fahrer_t() {}
 
 	virtual bool ist_befahrbar(const grund_t* ) const = 0;
 
 	/**
-	 * Ermittelt die fï¿½r das Fahrzeug geltenden Richtungsbits,
-	 * abhï¿½ngig vom Untergrund.
+	 * Ermittelt die für das Fahrzeug geltenden Richtungsbits,
+	 * abhängig vom Untergrund.
 	 *
 	 * @author Hj. Malthaner, 03.01.01
 	 */

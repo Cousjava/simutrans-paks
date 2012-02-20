@@ -19,66 +19,73 @@
 #include "../besch/skin_besch.h"
 #include "../dataobj/umgebung.h"
 
-#include "components/list_button.h"
+#include "components/gui_button.h"
+#include "components/action_listener.h"
+
 #include "banner.h"
 #include "loadsave_frame.h"
 #include "server_frame.h"
 
-
 static const int margin = 40;
+
+class banner_data_t : public action_listener_t
+{
+public:
+	button_t new_map;
+	button_t load_map;
+	button_t join_map;
+	button_t quit;
+
+	karte_t *welt;
+
+	banner_data_t()
+	{
+		new_map.add_listener(this);
+		load_map.add_listener(this);
+		join_map.add_listener(this);
+		quit.add_listener(this);
+	};
+	
+	virtual bool action_triggered(gui_action_creator_t*, value_t) OVERRIDE;
+};
+
 
 banner_t::banner_t(karte_t *welt) : gui_frame_t("")
 {
-        this->welt = welt;
-	last_ms = system_time();
+	ooo = new banner_data_t();
+        ooo->welt = welt;
+	
+	// last_ms = system_time();
+	last_ms = dr_time();
 	line = 0;
 
         const int height = 16+113+12*LINESPACE+2*BUTTON_HEIGHT+12;
         const int width = height * 160/100 + 1;
 	
 	const koord size(width, height+20);
-	set_window_size(size);
+	set_fenstergroesse(size);
 
 	const int button_bottom_margin = 18;
 	const int button_y = size.y-16-BUTTON_HEIGHT-button_bottom_margin;
 	const koord button_size ( BUTTON_WIDTH, BUTTON_HEIGHT );
 	
-	new_map.init(button_t::roundbox, "Neue Karte", koord(margin, button_y), button_size);
-	new_map.add_listener( this );
-	add_komponente( &new_map );
+	ooo->new_map.init(button_t::roundbox, "Neue Karte", koord(margin, button_y), button_size);
+	add_komponente( &ooo->new_map );
 
-	load_map.init(button_t::roundbox, "Load game", koord(margin+BUTTON_WIDTH+11, button_y), button_size);
-	load_map.add_listener( this );
-	add_komponente( &load_map );
+	ooo->load_map.init(button_t::roundbox, "Load game", koord(margin+BUTTON_WIDTH+11, button_y), button_size);
+	add_komponente( &ooo->load_map );
 
-	join_map.init(button_t::roundbox, "join game", koord(margin+2*BUTTON_WIDTH+22, button_y), button_size);
-	join_map.add_listener( this );
-	add_komponente( &join_map );
+	ooo->join_map.init(button_t::roundbox, "join game", koord(margin+2*BUTTON_WIDTH+22, button_y), button_size);
+	add_komponente( &ooo->join_map );
 
-	quit.init(button_t::roundbox, "Beenden", koord(margin+3*BUTTON_WIDTH+33, button_y), button_size);
-	quit.add_listener( this );
-	add_komponente( &quit );
+	ooo->quit.init(button_t::roundbox, "Beenden", koord(margin+3*BUTTON_WIDTH+33, button_y), button_size);
+	add_komponente( &ooo->quit );
 }
 
-
-bool banner_t::action_triggered( gui_action_creator_t *komp, value_t)
+banner_t::~banner_t()
 {
-	if(  komp == &quit  ) {
-		umgebung_t::quit_simutrans = true;
-		destroy_all_win(true);
-	}
-	else if(  komp == &new_map  ) {
-		destroy_all_win(true);
-	}
-	else if(  komp == &load_map  ) {
-		destroy_all_win(true);
-		create_win( new loadsave_frame_t(welt, true), w_info, magic_load_t);
-	}
-	else if(  komp == &join_map  ) {
-		destroy_all_win(true);
-		create_win( new server_frame_t(welt), w_info, magic_server_frame_t );
-	}
-	return true;
+	delete ooo;
+	ooo = 0;
 }
 
 /**
@@ -217,7 +224,8 @@ void banner_t::zeichnen(const koord pos, const koord gr )
 	POP_CLIP();
 
 	// scroll on every 70 ms
-	if(system_time()>last_ms+70u) 
+	// if(system_time()>last_ms+70u) 
+	if(dr_time()>last_ms+70u) 
 	{
 		last_ms += 70u;
 		line ++;
@@ -232,4 +240,24 @@ void banner_t::zeichnen(const koord pos, const koord gr )
 	display_ddd_box_clip(pos.x + 4, pos.y + 4 + TITLEBAR_HEIGHT, 
 	                     gr.x-8, gr.y-8-TITLEBAR_HEIGHT, MN_GREY0, MN_GREY4);
 	
+}
+
+bool banner_data_t::action_triggered( gui_action_creator_t *komp, value_t)
+{
+	if(  komp == &quit  ) {
+		umgebung_t::quit_simutrans = true;
+		destroy_all_win(true);
+	}
+	else if(  komp == &new_map  ) {
+		destroy_all_win(true);
+	}
+	else if(  komp == &load_map  ) {
+		destroy_all_win(true);
+		create_win( new loadsave_frame_t(welt, true), w_info, magic_load_t);
+	}
+	else if(  komp == &join_map  ) {
+		destroy_all_win(true);
+		create_win( new server_frame_t(welt), w_info, magic_server_frame_t );
+	}
+	return true;
 }

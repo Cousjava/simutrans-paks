@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -8,19 +8,19 @@
 #ifndef dings_baum_h
 #define dings_baum_h
 
+#include <string>
+#include "../tpl/stringhashtable_tpl.h"
+#include "../tpl/vector_tpl.h"
+#include "../tpl/weighted_vector_tpl.h"
 #include "../besch/baum_besch.h"
 #include "../simcolor.h"
-#include "../simdings.h"
-
-class baum_besch_t;
-template <class T> class vector_tpl;
-template <class T> class weighted_vector_tpl;
+#include "../dataobj/umgebung.h"
 
 /**
- * Bï¿½ume in Simutrans.
+ * Bäume in Simutrans.
  * @author Hj. Malthaner
  */
-class tree_t : public ding_t
+class baum_t : public ding_t
 {
 private:
 	static PLAYER_COLOR_VAL outline_color;
@@ -37,6 +37,11 @@ private:
 	uint8 zoff:4;
 	// one bit free ;)
 
+	// static for administration
+	static stringhashtable_tpl<const baum_besch_t *> besch_names;
+	static vector_tpl<const baum_besch_t *> baum_typen;
+	static weighted_vector_tpl<uint32>* baum_typen_per_climate;
+
 	bool saee_baum();
 
 	/**
@@ -51,10 +56,10 @@ private:
 public:
 	// only the load save constructor should be called outside
 	// otherwise I suggest use the plant tree function (see below)
-	tree_t(karte_t *welt, loadsave_t *file);
-	tree_t(karte_t *welt, koord3d pos);
-	tree_t(karte_t *welt, koord3d pos, uint8 type, sint32 age, uint8 slope );
-	tree_t(karte_t *welt, koord3d pos, const baum_besch_t *besch);
+	baum_t(karte_t *welt, loadsave_t *file);
+	baum_t(karte_t *welt, koord3d pos);
+	baum_t(karte_t *welt, koord3d pos, uint8 type, sint32 age, uint8 slope );
+	baum_t(karte_t *welt, koord3d pos, const baum_besch_t *besch);
 
 	void rdwr(loadsave_t *file);
 
@@ -66,10 +71,10 @@ public:
 	PLAYER_COLOR_VAL get_outline_colour() const { return outline_color; }
 	image_id get_outline_bild() const;
 
-	static void recalc_outline_color();
+	static void recalc_outline_color() { outline_color = (umgebung_t::hide_trees  &&  umgebung_t::hide_with_transparency) ? (TRANSPARENT25_FLAG | OUTLINE_FLAG | COL_BLACK) : 0; }
 
 	/**
-	 * Berechnet Alter und Bild abhï¿½ngig vom Alter
+	 * Berechnet Alter und Bild abhängig vom Alter
 	 * @author Hj. Malthaner
 	 */
 	void calc_bild();
@@ -84,11 +89,6 @@ public:
 	const char *get_name() const {return "Baum";}
 	typ get_typ() const { return baum; }
 
-	/**
-	 * This routine should be as fast as possible, because trees are nearly
-	 * the most common object on a map 
-	 * @author Hj. Malthaner
-	 */
 	bool check_season(const long delta_t);
 
 	void zeige_info();
@@ -100,7 +100,7 @@ public:
 	void * operator new(size_t s);
 	void operator delete(void *p);
 
-	const baum_besch_t* get_besch() const;
+	const baum_besch_t* get_besch() const { return baum_typen[baumtype]; }
 	uint16 get_besch_id() const { return baumtype; }
 	uint32 get_age() const;
 
@@ -118,14 +118,13 @@ public:
 	static void fill_trees(karte_t *welt, int dichte);
 
 	// return list to beschs
-	static const vector_tpl<const baum_besch_t *> * get_all_besch() ;
+	static vector_tpl<baum_besch_t const*> const& get_all_besch() { return baum_typen; }
 
-	
-	static const baum_besch_t *random_tree_for_climate(climate cl);
+	static const baum_besch_t *random_tree_for_climate(climate cl) { uint16 b = random_tree_for_climate_intern(cl);  return b!=0xFFFF ? baum_typen[b] : NULL; }
 
-	static const baum_besch_t *find_tree( const char *tree_name );
+	static const baum_besch_t *find_tree( const char *tree_name ) { return baum_typen.empty() ? NULL : besch_names.get(tree_name); }
 
-	static int get_anzahl_besch();
+	static int get_anzahl_besch() { return baum_typen.get_count(); }
 	static int get_anzahl_besch(climate cl);
 
 };

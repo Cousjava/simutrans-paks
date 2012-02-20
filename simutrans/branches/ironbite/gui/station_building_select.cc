@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -97,7 +97,7 @@ station_building_select_t::station_building_select_t(karte_t *welt, const haus_b
 		actionbutton[i].add_listener(this);
 		add_komponente(&actionbutton[i]);
 	}
-	set_window_size(koord(width*2+10, (height+BUTTON_HEIGHT+10)*(row+1)+10));
+	set_fenstergroesse(koord(width*2+10, (height+BUTTON_HEIGHT+10)*(row+1)+10));
 }
 
 

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2001 Hj. Malthaner
+ * Copyright (c) 1997 - 2001 Hansjörg Malthaner
  * Written (w) 2001 Markus Weber
  *
  * This file is part of the Simutrans project under the artistic licence.
@@ -9,7 +9,8 @@
 #include "halt_list_stats.h"
 #include "../simhalt.h"
 #include "../simskin.h"
-#include "../simevent.h"
+#include "../simcolor.h"
+#include "../simgraph.h"
 #include "../player/simplay.h"
 #include "../simworld.h"
 #include "../simimg.h"

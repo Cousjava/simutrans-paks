@@ -69,7 +69,7 @@ protected:
 
 	/**
 	 * Aktion, die nach Knopfdruck gestartet wird.
-	 * @author Hj. Malthaner
+	 * @author Hansjörg Malthaner
 	 */
 	virtual void action(const char *filename) = 0;
 
@@ -96,7 +96,7 @@ public:
 	 * @param suffix Filename suffix, i.e. ".sve", must be four characters
 	 * @author Hj. Malthaner
 	 */
-	savegame_frame_t(const char *suffix, const char *path, bool only_directories);
+	savegame_frame_t(const char *suffix, const char *path, bool only_directories=false );
 
 	virtual ~savegame_frame_t();
 
@@ -105,7 +105,7 @@ public:
 	 * @author (Mathew Hounsell)
 	 * @date   11-Mar-2003
 	 */
-	virtual void set_window_size(koord groesse);
+	virtual void set_fenstergroesse(koord groesse);
 
 	bool action_triggered(gui_action_creator_t*, value_t) OVERRIDE;
 

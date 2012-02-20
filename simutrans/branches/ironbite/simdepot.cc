@@ -72,9 +72,7 @@ depot_t *depot_t::find_depot( koord3d start, const ding_t::typ depot_type, const
 	koord3d found_pos = forward ? koord3d(welt->get_groesse_x()+1,welt->get_groesse_y()+1,welt->get_grundwasser()) : koord3d(-1,-1,-1);
 	long found_hash = forward ? 0x7FFFFFF : -1;
 	long start_hash = start.x + (8192*start.y);
-	slist_iterator_tpl<depot_t *> iter(all_depots);
-	while(iter.next()) {
-		depot_t *d = iter.access_current();
+	FOR(slist_tpl<depot_t*>, const d, all_depots) {
 		if(d->get_typ()==depot_type  &&  d->get_besitzer()==sp) {
 			// ok, the right type of depot
 			const koord3d pos = d->get_pos();
@@ -153,7 +151,7 @@ void depot_t::convoi_arrived(convoihandle_t acnv, bool fpl_adjust)
 		schedule_t *fpl = acnv->get_schedule();
 		for(  int i=0;  i<fpl->get_count();  i++  ) {
 			// only if convoi found
-			if(fpl->eintrag.get(i).pos==get_pos()) {
+			if(fpl->eintrag[i].pos==get_pos()) {
 				fpl->set_aktuell( i );
 				fpl->remove();
 				acnv->set_schedule(fpl);
@@ -225,9 +223,7 @@ void depot_t::sell_vehicle(vehikel_t* veh)
 vehikel_t* depot_t::find_oldest_newest(const vehikel_besch_t* besch, bool old)
 {
 	vehikel_t* found_veh = NULL;
-	slist_iterator_tpl<vehikel_t*> iter(vehicles);
-	while (iter.next()) {
-		vehikel_t* veh = iter.get_current();
+	FOR(slist_tpl<vehikel_t*>, const veh, vehicles) {
 		if (veh->get_besch() == besch) {
 			// joy of XOR, finally a line where I could use it!
 			if (found_veh == NULL ||
@@ -443,7 +439,7 @@ void depot_t::rdwr_vehikel(slist_tpl<vehikel_t *> &list, loadsave_t *file)
 		// no house definition for this => use a normal hut ...
 		if(  this->get_tile()==NULL  ) {
 			dbg->error( "depot_t::rdwr()", "tile for depot not found!" );
-			set_tile( hausbauer_t::get_citybuilding_list( gebaeude_t::wohnung )->get(0)->get_tile(0) );
+			set_tile( (*hausbauer_t::get_citybuilding_list( gebaeude_t::wohnung ))[0]->get_tile(0) );
 		}
 
 		DBG_MESSAGE("depot_t::vehikel_laden()","loading %d vehicles",count);
@@ -480,10 +476,9 @@ void depot_t::rdwr_vehikel(slist_tpl<vehikel_t *> &list, loadsave_t *file)
 		}
 	}
 	else {
-		slist_iterator_tpl<vehikel_t *> l_iter ( list);
-		while(l_iter.next()) {
-			file->wr_obj_id( l_iter.get_current()->get_typ() );
-			l_iter.get_current()->rdwr_from_convoi( file );
+		FOR(slist_tpl<vehikel_t*>, const v, list) {
+			file->wr_obj_id(v->get_typ());
+			v->rdwr_from_convoi(file);
 		}
 	}
 }
@@ -501,10 +496,9 @@ const char * depot_t::ist_entfernbar(const spieler_t *sp)
 	if (!vehicles.empty()) {
 		return "There are still vehicles\nstored in this depot!\n";
 	}
-	slist_iterator_tpl<convoihandle_t> iter(convois);
 
-	while(iter.next()) {
-		if(iter.get_current()->get_vehikel_anzahl() > 0) {
+	FOR(slist_tpl<convoihandle_t>, const c, convois) {
+		if (c->get_vehikel_anzahl() > 0) {
 			return "There are still vehicles\nstored in this depot!\n";
 		}
 	}
@@ -521,9 +515,7 @@ slist_tpl<vehikel_besch_t const*> const& depot_t::get_vehicle_type() const
 vehikel_t* depot_t::get_oldest_vehicle(const vehikel_besch_t* besch)
 {
 	vehikel_t* oldest_veh = NULL;
-	slist_iterator_tpl<vehikel_t*> iter(get_vehicle_list());
-	while (iter.next()) {
-		vehikel_t* veh = iter.get_current();
+	FOR(slist_tpl<vehikel_t*>, const veh, get_vehicle_list()) {
 		if (veh->get_besch() == besch) {
 			if (oldest_veh == NULL ||
 					oldest_veh->get_insta_zeit() > veh->get_insta_zeit()) {
@@ -573,9 +565,8 @@ void depot_t::neuer_monat()
 
 void depot_t::update_all_win()
 {
-	slist_iterator_tpl<depot_t *> iter(all_depots);
-	while(iter.next()) {
-		iter.access_current()->update_win();
+	FOR(slist_tpl<depot_t*>, const d, all_depots) {
+		d->update_win();
 	}
 }
 

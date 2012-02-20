@@ -1,19 +1,20 @@
 #ifndef gui_tab_panel_h
 #define gui_tab_panel_h
 
-#include "../../simimg.h"
+// #include "../../simimg.h"
 
+// #include "../../besch/skin_besch.h"
 
 #include "gui_action_creator.h"
 #include "gui_komponente.h"
 #include "gui_button.h"
+#include "../../tpl/slist_tpl.h"
 
 class bild_besch_t;
 class skin_besch_t;
-template <class T> class slist_tpl;
 
 /**
- * Eine Klasse fï¿½r Registerkartenartige Aufteilung von gui_component_t
+ * Eine Klasse für Registerkartenartige Aufteilung von gui_komponente_t
  * Objekten.
  *
  * @author Hj. Malthaner
@@ -21,14 +22,14 @@ template <class T> class slist_tpl;
 class gui_tab_panel_t :
 	public gui_action_creator_t,
 	public action_listener_t,
-	public gui_component_t
+	public gui_komponente_t
 {
 private:
 	struct tab
 	{
-		tab(gui_component_t* c, const char *name, const bild_besch_t *b, const char *tool) : component(c), title(name), img(b), tooltip(tool), x_offset(4) {}
+		tab(gui_komponente_t* c, const char *name, const bild_besch_t *b, const char *tool) : component(c), title(name), img(b), tooltip(tool), x_offset(4) {}
 
-		gui_component_t* component;
+		gui_komponente_t* component;
 		const char *title;
 		const bild_besch_t *img;
 		const char *tooltip;
@@ -36,7 +37,7 @@ private:
 		sint16 width;
 	};
 
-	slist_tpl<tab> * tabs;
+	slist_tpl<tab> tabs;
 	int active_tab, offset_tab;
 
 	koord required_groesse;
@@ -46,26 +47,25 @@ public:
 	enum { HEADER_VSIZE = 18};
 
 	gui_tab_panel_t();
-	virtual ~gui_tab_panel_t();
 
 	/**
-	 * Fï¿½gt eine neue Registerkarte hinzu.
-	 * @param c die Komponente fï¿½r die Rgisterkarte
-	 * @param name der Name der Registerkarte fï¿½r die Komponente
+	 * Fügt eine neue Registerkarte hinzu.
+	 * @param c die Komponente für die Rgisterkarte
+	 * @param name der Name der Registerkarte für die Komponente
 	 * @author Hj. Malthaner
 	 */
-	void add_tab(gui_component_t *c, const char *name, const skin_besch_t *b=NULL, const char *tooltip=NULL );
+	void add_tab(gui_komponente_t *c, const char *name, const skin_besch_t *b=NULL, const char *tooltip=NULL );
 
 	/**
-	 * Gibt die aktuell angezeigte Komponente zurï¿½ck.
+	 * Gibt die aktuell angezeigte Komponente zurück.
 	 * @author Hj. Malthaner
 	 */
-	gui_component_t* get_aktives_tab() const { return get_tab(active_tab); }
+	gui_komponente_t* get_aktives_tab() const { return get_tab(active_tab); }
 
-	gui_component_t* get_tab( uint8 i ) const;
+	gui_komponente_t* get_tab( uint8 i ) const { return i < tabs.get_count() ? tabs.at(i).component : NULL; }
 
-	int get_active_tab_index() const;
-	void set_active_tab_index( int i );
+	int get_active_tab_index() const { return min((int)tabs.get_count()-1,active_tab); }
+	void set_active_tab_index( int i ) { active_tab = min((int)tabs.get_count()-1,i); }
 
 	bool infowin_event(event_t const*) OVERRIDE;
 
@@ -94,7 +94,7 @@ public:
 	 * @author Gerd Wachsmuth
 	 * @date  08.05.2009
 	 */
-	uint32 get_count () const;
+	uint32 get_count () const { return tabs.get_count(); }
 
 	bool action_triggered(gui_action_creator_t*, value_t) OVERRIDE;
 
@@ -102,16 +102,16 @@ public:
 	 * Returns true if the hosted component of the active tab is focusable
 	 * @author Knightly
 	 */
-	virtual bool is_focusable();
+	virtual bool is_focusable() { return get_aktives_tab()->is_focusable(); }
 
-	gui_component_t *get_focus();
+	gui_komponente_t *get_focus() { return get_aktives_tab()->get_focus(); }
 
 	/**
 	 * Get the relative position of the focused component.
 	 * Used for auto-scrolling inside a scroll pane.
 	 * @author Knightly
 	 */
-	virtual koord get_focus_pos();
+	virtual koord get_focus_pos() { return pos + get_aktives_tab()->get_focus_pos(); }
 };
 
 #endif

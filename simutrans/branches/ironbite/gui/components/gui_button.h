@@ -10,18 +10,24 @@
 
 #include "gui_action_creator.h"
 #include "gui_komponente.h"
-// #include "../../simimg.h"
 
+#define BUTTON_WIDTH (92)
+#define BUTTON_WIDE_WIDTH (104)
+#define BUTTON_WIDER_WIDTH (116)
+
+#define BUTTON_HEIGHT (14)
+
+#define BUTTON_SPACER (2)
 
 /**
- * Klasse f�r Buttons in Fenstern
+ * Buttons
  *
  * @author Hj. Malthaner, Niels Roest
  * @date December 2000
  */
 class button_t :
 	public gui_action_creator_t,
-	public gui_component_t
+	public gui_komponente_t
 {
 public:
 	/*
@@ -121,8 +127,8 @@ private:
 public:
 	static void init_button_images();	// must be called at least once after loading skins
 
-	PLAYER_COLOR_VAL background; //@author hsiegeln
-	PLAYER_COLOR_VAL foreground;
+	int background; //@author hsiegeln
+	int foreground;
 
 	bool pressed:1;
 
@@ -180,7 +186,7 @@ public:
 	bool enabled() { return b_enabled; }
 
 	// Knightly : a button can only be focusable when it is enabled
-	virtual bool is_focusable() { return b_enabled && gui_component_t::is_focusable(); }
+	virtual bool is_focusable() { return b_enabled && gui_komponente_t::is_focusable(); }
 
 	void update_focusability();
 

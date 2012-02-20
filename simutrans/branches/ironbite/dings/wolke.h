@@ -1,12 +1,12 @@
 #ifndef dings_wolke_t
 #define dings_wolke_t
 
-#include "thing_without_info_t.h"
+#include "../besch/skin_besch.h"
 #include "../ifc/sync_steppable.h"
 #include "../tpl/vector_tpl.h"
+#include "../simimg.h"
 
 class karte_t;
-class skin_besch_t;
 
 /**
  * smoke clouds (formerly sync_wolke_t)
@@ -35,11 +35,9 @@ public:
 	const char* get_name() const { return "Wolke"; }
 	typ get_typ() const { return sync_wolke; }
 
-	image_id get_bild() const;
+	image_id get_bild() const { return all_clouds[cloud_nr]->get_bild_nr(insta_zeit/divisor); }
 
 	void rdwr(loadsave_t *file);
-
-	virtual void entferne(spieler_t *sp);
 
 	virtual void rotate90();
 };
@@ -53,7 +51,7 @@ class async_wolke_t : public ding_t
 public:
 	async_wolke_t(karte_t *welt, loadsave_t *file);
 	typ get_typ() const { return async_wolke; }
-	image_id get_bild() const;
+	image_id get_bild() const { return IMG_LEER; }
 };
 
 class raucher_t : public ding_t
@@ -61,7 +59,7 @@ class raucher_t : public ding_t
 public:
 	raucher_t(karte_t *welt, loadsave_t *file);
 	typ get_typ() const { return raucher; }
-	image_id get_bild() const;
+	image_id get_bild() const { return IMG_LEER; }
 };
 
 #endif
