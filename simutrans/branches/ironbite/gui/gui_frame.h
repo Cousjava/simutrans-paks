@@ -14,6 +14,7 @@
 
 #include "../dataobj/koord.h"
 #include "../dataobj/koord3d.h"
+#include "components/list_button.h"
 
 // height of titlebar
 #define TITLEBAR_HEIGHT (16)
@@ -160,7 +161,7 @@ public:
 	 * @author Markus Weber
 	 * @date   11-May-2002
 	*/
-	koord get_client_windowsize() const {return groesse-koord(0,16); }
+	koord get_client_windowsize() const {return groesse-koord(0,TITLEBAR_HEIGHT); }
 
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.

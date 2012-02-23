@@ -194,6 +194,7 @@ void modal_dialogue( gui_frame_t *gui, long magic, karte_t *welt, bool (*quit)()
 		uint32 last_step = dr_time()+ms_pause;
 		uint step_count = 5;
 		while(  win_is_open(gui)  &&  !umgebung_t::quit_simutrans  &&  !quit()  ) {
+			
 			do {
 				DBG_DEBUG4("zeige_banner", "calling win_poll_event");
 				win_poll_event(&ev);
@@ -220,6 +221,7 @@ void modal_dialogue( gui_frame_t *gui, long magic, karte_t *welt, bool (*quit)()
 				}
 				dr_sleep(5);
 			} while(  dr_time()<last_step  );
+			
 			DBG_DEBUG4("zeige_banner", "calling welt->sync_step");
 			welt->sync_step( ms_pause, true, true );
 			DBG_DEBUG4("zeige_banner", "calling welt->step");
@@ -1048,11 +1050,19 @@ DBG_MESSAGE("simmain","loadgame file found at %s",buffer);
 		check_midi();
 
 		if(  !umgebung_t::networkmode  &&  new_world  ) {
-			printf( "Show banner ... \n" );
-			ticker::add_msg("Welcome to Simutrans, a game created by Hj. Malthaner and the Simutrans community.", koord::invalid, PLAYER_FLAG + 1);
-			modal_dialogue( new banner_t(welt), magic_none, welt, never_quit );
-			// only show new world, if no other dialoge is active ...
-			new_world = win_get_open_count()==0;
+			static bool show_banner = true;
+			
+			if(show_banner)
+			{	
+				printf( "Show banner ... \n" );
+				ticker::add_msg("Welcome to Simutrans, a game created by Hj. Malthaner and the Simutrans community.", koord::invalid, PLAYER_FLAG + 1);
+				modal_dialogue( new banner_t(welt), magic_none, welt, never_quit );
+				// only show new world, if no other dialoge is active ...
+				new_world = win_get_open_count()==0;
+				
+				// Hajo: once is good enough
+				show_banner = false;
+			}
 		}
 		if(  umgebung_t::quit_simutrans  ) {
 			break;

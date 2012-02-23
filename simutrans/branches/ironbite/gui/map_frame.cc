@@ -19,6 +19,7 @@
 
 #include "../simworld.h"
 #include "../simwin.h"
+#include "../simevent.h"
 #include "../simgraph.h"
 #include "../simcolor.h"
 #include "../bauer/fabrikbauer.h"

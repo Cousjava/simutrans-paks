@@ -7,6 +7,7 @@
 
 #include "labellist_stats_t.h"
 
+#include "../simevent.h"
 #include "../simgraph.h"
 #include "../simtypes.h"
 #include "../simcolor.h"

@@ -12,6 +12,7 @@
 
 #include "messagebox.h"
 
+#include "../simevent.h"
 #include "../simgraph.h"
 #include "../simcolor.h"
 #include "../simwin.h"

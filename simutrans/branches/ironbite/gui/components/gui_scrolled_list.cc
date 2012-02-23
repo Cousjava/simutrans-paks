@@ -11,6 +11,7 @@
 #include "gui_scrolled_item.h"
 #include "gui_scrollbar.h"
 
+#include "../../simevent.h"
 #include "../../simgraph.h"
 #include "../../simcolor.h"
 #include "../../simwin.h"

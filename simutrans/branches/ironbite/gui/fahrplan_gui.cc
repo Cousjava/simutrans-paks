@@ -12,6 +12,7 @@
 #include "../simskin.h"
 #include "../simworld.h"
 #include "../simmenu.h"
+#include "../simevent.h"
 #include "../simgraph.h"
 
 #include "../utils/simstring.h"

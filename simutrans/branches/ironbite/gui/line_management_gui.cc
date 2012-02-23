@@ -8,6 +8,7 @@
 #include "../dataobj/translator.h"
 #include "../dataobj/loadsave.h"
 #include "../simline.h"
+#include "../simevent.h"
 #include "../simwin.h"
 #include "../simwerkz.h"
 #include "../simlinemgmt.h"

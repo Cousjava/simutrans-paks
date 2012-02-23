@@ -7,6 +7,7 @@
 
 #include "../simworld.h"
 #include "../simcolor.h"
+#include "../simevent.h"
 #include "../simgraph.h"
 #include "../simwin.h"
 #include "../utils/simstring.h"

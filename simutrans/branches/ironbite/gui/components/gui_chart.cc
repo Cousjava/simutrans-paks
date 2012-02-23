@@ -9,6 +9,7 @@
 #include "gui_chart.h"
 #include "../../dataobj/umgebung.h"
 #include "../../utils/simstring.h"
+#include "../../simevent.h"
 #include "../../simgraph.h"
 #include "../../simcolor.h"
 #include "../../simwin.h"

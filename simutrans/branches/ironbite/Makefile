@@ -50,8 +50,8 @@ endif
 
 ifeq ($(OSTYPE),cygwin)
   SOURCES += simsys_w32_png.cc
-  CFLAGS += -I/usr/include/mingw -mwin32
-  CCFLAGS += -I/usr/include/mingw -mwin32
+  CFLAGS += -I/usr/include/mingw -mwin32 -DNOMINMAX=1
+  CCFLAGS += -I/usr/include/mingw -mwin32 -DNOMINMAX=1
   LDFLAGS += -L/usr/i686-pc-mingw32/sys-root/mingw/lib/ -mno-cygwin
   LIBS   += -lgdi32 -lwinmm -lwsock32 -lz -lbz2
 endif
@@ -59,7 +59,7 @@ endif
 ifeq ($(OSTYPE),mingw)
   CC ?= gcc
   SOURCES += simsys_w32_png.cc
-  CFLAGS  += -DPNG_STATIC -DZLIB_STATIC -march=pentium
+  CFLAGS  += -DPNG_STATIC -DZLIB_STATIC -march=pentium -DNOMINMAX=1
   ifeq ($(BACKEND),gdi)
     LIBS += -lunicows
     ifeq  ($(WIN32_CONSOLE),)

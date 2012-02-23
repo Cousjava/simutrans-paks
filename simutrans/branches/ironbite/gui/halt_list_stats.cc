@@ -10,6 +10,7 @@
 #include "../simhalt.h"
 #include "../simskin.h"
 #include "../simcolor.h"
+#include "../simevent.h"
 #include "../simgraph.h"
 #include "../player/simplay.h"
 #include "../simworld.h"

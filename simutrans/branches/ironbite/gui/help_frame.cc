@@ -9,6 +9,7 @@
 #include <string>
 
 #include "../simmem.h"
+#include "../simevent.h"
 #include "../simwin.h"
 #include "../simmenu.h"
 #include "../simsys.h"

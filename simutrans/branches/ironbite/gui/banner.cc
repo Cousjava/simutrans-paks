@@ -131,19 +131,24 @@ void banner_t::zeichnen(const koord pos, const koord gr )
 	}
 	
 	// Hajo: now display the intro message
-	
+	/*
 	display_outline_proportional( pos.x + margin, yp, color_high, color_shadow,
                                      "          W e l c o m e  t o  S i m u t r a n s  I r o n  B i t e", true );
+	*/
 	yp += line_space+6;
 #ifdef REVISION
-	display_shadow_proportional( pos.x + margin + indent, yp, COL_GREY4, color_shadow,
-                                     "      Version " VERSION_NUMBER " " VERSION_DATE " r" QUOTEME(REVISION), true );
+	display_proportional(pos.x + margin + indent, yp+1,
+                             "      Version " VERSION_NUMBER " " VERSION_DATE " r" QUOTEME(REVISION), 
+			     ALIGN_LEFT,
+			     90,
+			     false);
 #else
 	display_shadow_proportional( pos.x + margin + indent, yp, COL_GREY4, color_shadow,
                                      "  Version " VERSION_NUMBER " " VERSION_DATE, true );
 #endif
 	yp += line_space+6;
-
+	
+	
 	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
                                      "Simutrans Iron Bite is developed by Hj. Malthaner,", true );
 	yp += line_space;

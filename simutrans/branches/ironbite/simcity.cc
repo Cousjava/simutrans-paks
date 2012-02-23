@@ -1045,7 +1045,8 @@ stadt_t::stadt_t(spieler_t* sp, koord pos, sint32 citizens) :
 		size_t      const idx  = simrand(city_names.get_count());
 		char const* const cand = city_names[idx];
 		if (name_used(staedte, cand)) {
-			city_names.remove_at(idx);
+			city_names[idx] = city_names.back();
+			city_names.pop_back();
 		} else {
 			n = cand;
 			break;
@@ -2595,7 +2596,7 @@ void stadt_t::renoviere_gebaeude(gebaeude_t* gb)
 		}
 	}
 	// check for industry, also if we wanted com, but there was no com good enough ...
-	if ((sum_industrie > sum_gewerbe && sum_industrie > sum_wohnung) || (sum_gewerbe > sum_wohnung && will_haben == gebaeude_t::unbekannt)) {
+	if(  (sum_industrie > sum_gewerbe  &&  sum_industrie > sum_wohnung) || (sum_gewerbe > sum_wohnung  &&  will_haben == gebaeude_t::unbekannt)  ) {
 		// we must check, if we can really update to higher level ...
 		const int try_level = (alt_typ == gebaeude_t::industrie ? level + 1 : level);
 		h = hausbauer_t::get_industrie(try_level , current_month, cl);
@@ -2968,8 +2969,9 @@ vector_tpl<koord>* stadt_t::random_place(const karte_t* wl, const sint32 anzahl,
 	weighted_vector_tpl<koord> index_to_places(xmax*ymax);
 	for(uint32 i=0; i<xmax; i++) {
 		for(uint32 j=0; j<ymax; j++) {
-			if (!places.at(i,j).empty()) {
-				index_to_places.append( koord(i,j), places.at(i,j).get_count());
+			vector_tpl<koord> const& p = places.at(i, j);
+			if (!p.empty()) {
+				index_to_places.append(koord(i,j), p.get_count());
 			}
 		}
 	}
@@ -2987,40 +2989,36 @@ vector_tpl<koord>* stadt_t::random_place(const karte_t* wl, const sint32 anzahl,
 			koord const ip = pick_any_weighted(index_to_places);
 			// remove this cell from index list
 			index_to_places.remove(ip);
+			vector_tpl<koord>& p = places.at(ip);
 			// get random place in the cell
-			if (places.at(ip).empty()) continue;
-			const uint32 j = simrand(places.at(ip).get_count());
-			const koord k = places.at(ip)[j];
-
-			// check minimum distance
-			bool ok = true;
+			if (p.empty()) continue;
+			uint32 const j = simrand(p.get_count());
+			koord  const k = p[j];
 
 			const koord k2mcd = koord( k.x/minimum_city_distance, k.y/minimum_city_distance );
-			for(sint32 i=k2mcd.x-1; ok && i<=k2mcd.x+1; i++) {
-				for(sint32 j=k2mcd.y-1; ok && j<=k2mcd.y+1; j++) {
+			for (sint32 i = k2mcd.x - 1; i <= k2mcd.x + 1; ++i) {
+				for (sint32 j = k2mcd.y - 1; j <= k2mcd.y + 1; ++j) {
 					if (i>=0 && i<(sint32)xmax2 && j>=0 && j<(sint32)ymax2) {
 						FOR(vector_tpl<koord>, const& l, result_places.at(i, j)) {
 							if (koord_distance(k, l) < minimum_city_distance) {
-								ok = false;
+								goto too_close;
 							}
 						}
 					}
 				}
 			}
 
-			if (ok){ //minimum_dist > minimum_city_distance) {
-				// all citys are far enough => ok, find next place
-				result->append(k);
-				result_places.at(k2mcd).append(k);
-				break;
-			}
-			else {
-				// remove the place from the list
-				places.at(ip).remove_at(j);
-				// re-insert in index list with new weight
-				if (!places.at(ip).empty()) {
-					index_to_places.append( ip, places.at(ip).get_count());
-				}
+			// all citys are far enough => ok, find next place
+			result->append(k);
+			result_places.at(k2mcd).append(k);
+			break;
+
+too_close:
+			// remove the place from the list
+			p.remove_at(j);
+			// re-insert in index list with new weight
+			if (!p.empty()) {
+				index_to_places.append(ip, p.get_count());
 			}
 			// if we reached here, the city was not far enough => try again
 		}

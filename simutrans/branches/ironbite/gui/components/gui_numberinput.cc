@@ -5,9 +5,10 @@
  * (see licence.txt)
  */
 
-#include "../gui_frame.h"
 #include "gui_numberinput.h"
+#include "../gui_frame.h"
 #include "../../simwin.h"
+#include "../../simevent.h"
 #include "../../simgraph.h"
 #include "../../macros.h"
 #include "../../dataobj/translator.h"

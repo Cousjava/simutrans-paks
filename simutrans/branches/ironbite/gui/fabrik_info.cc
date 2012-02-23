@@ -41,21 +41,19 @@ fabrik_info_t::fabrik_info_t(fabrik_t* fab_, const gebaeude_t* gb) :
 	tstrncpy( fabname, fab->get_name(), lengthof(fabname) );
 	gui_frame_t::set_name( fabname );
 
-	input.set_pos(koord(10,4));
-	input.set_groesse( koord(TOTAL_WIDTH-20, 13));
+	input.set_pos(koord(DIALOG_LEFT,DIALOG_TOP));
 	input.set_text( fabname, lengthof(fabname) );
 	input.add_listener(this);
 	add_komponente(&input);
 
-	view.set_pos( koord(TOTAL_WIDTH - view.get_groesse().x - 10 , 21) );
 	add_komponente(&view);
 
-	prod.set_pos( koord( 10, 14 ) );
+	prod.set_pos( koord( DIALOG_LEFT, DIALOG_TOP+BUTTON_HEIGHT+DIALOG_SPACER ) );
 	fab->info_prod( prod_buf );
 	prod.recalc_size();
 	add_komponente( &prod );
 
-	const sint16 offset_below_viewport = max( 14+prod.get_groesse().y+LINESPACE+5, 21 + view.get_groesse().y + 14);
+	const sint16 offset_below_viewport = DIALOG_TOP+BUTTON_HEIGHT+DIALOG_SPACER+ max( prod.get_groesse().y, view.get_groesse().y + 8 );
 
 	chart_button.init(button_t::roundbox_state, "Chart", koord(BUTTON3_X,offset_below_viewport), koord(BUTTON_WIDTH, BUTTON_HEIGHT));
 	chart_button.set_tooltip("Show/hide statistics");
@@ -81,12 +79,12 @@ fabrik_info_t::fabrik_info_t(fabrik_t* fab_, const gebaeude_t* gb) :
 	txt.recalc_size();
 	update_info();
 
-	scrolly.set_pos(koord(0, offset_below_viewport+BUTTON_HEIGHT+3));
+	scrolly.set_pos(koord(0, offset_below_viewport+BUTTON_HEIGHT+DIALOG_SPACER));
 	scrolly.set_show_scroll_x(false);
 	add_komponente(&scrolly);
 
-	gui_frame_t::set_fenstergroesse(koord(TOTAL_WIDTH, 16+offset_below_viewport+BUTTON_HEIGHT+3+fab_info.get_groesse().y+LINESPACE+10-1));
-	set_min_windowsize(koord(TOTAL_WIDTH, 16+offset_below_viewport+BUTTON_HEIGHT+3+LINESPACE*3));
+	set_min_windowsize(koord(TOTAL_WIDTH, 16+offset_below_viewport+BUTTON_HEIGHT+DIALOG_TOP+LINESPACE*3+DIALOG_BOTTOM+TITLEBAR_HEIGHT));
+	gui_frame_t::set_fenstergroesse(koord(TOTAL_WIDTH, scrolly.get_pos().y+fab_info.get_pos().y+fab_info.get_groesse().y+TITLEBAR_HEIGHT ));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -128,8 +126,8 @@ void fabrik_info_t::set_fenstergroesse(koord groesse)
 	gui_frame_t::set_fenstergroesse(groesse);
 
 	// would be only needed in case of enabling horizontal resizes
-	input.set_groesse(koord(get_fenstergroesse().x-20, 13));
-	view.set_pos(koord(get_fenstergroesse().x - view.get_groesse().x - 10 , 21));
+	input.set_groesse(koord(get_fenstergroesse().x-DIALOG_LEFT-DIALOG_RIGHT, BUTTON_HEIGHT));
+	view.set_pos(koord(get_fenstergroesse().x - view.get_groesse().x - DIALOG_RIGHT , DIALOG_TOP+BUTTON_HEIGHT+DIALOG_SPACER ));
 
 	scrolly.set_groesse(get_client_windowsize()-scrolly.get_pos());
 }
@@ -144,13 +142,16 @@ void fabrik_info_t::set_fenstergroesse(koord groesse)
  */
 void fabrik_info_t::zeichnen(koord pos, koord gr)
 {
+	const koord old_size = txt.get_groesse();
+
 	fab->info_prod( prod_buf );
 	fab->info_conn( info_buf );
-	txt.recalc_size();
-	if(  fab_info.get_groesse().y!=txt.get_groesse().y-LINESPACE  ) {
+
+	gui_frame_t::zeichnen(pos,gr);
+
+	if(  old_size != txt.get_groesse()  ) {
 		update_info();
 	}
-	gui_frame_t::zeichnen(pos,gr);
 
 	prod_buf.clear();
 	prod_buf.append( translator::translate("Durchsatz") );
@@ -158,37 +159,37 @@ void fabrik_info_t::zeichnen(koord pos, koord gr)
 	prod_buf.append( translator::translate("units/day") );
 
 	unsigned indikatorfarbe = fabrik_t::status_to_color[fab->get_status()];
-	display_ddd_box_clip(pos.x + view.get_pos().x, pos.y + view.get_pos().y + view.get_groesse().y + 16, view.get_groesse().x, 8, MN_GREY0, MN_GREY4);
-	display_fillbox_wh_clip(pos.x + view.get_pos().x + 1, pos.y + view.get_pos().y + view.get_groesse().y + 17, view.get_groesse().x - 2, 6, indikatorfarbe, true);
-	KOORD_VAL x_view_pos = 4;
-	KOORD_VAL x_prod_pos = 4+proportional_string_width(prod_buf)+10;
+	display_ddd_box_clip(pos.x + view.get_pos().x, pos.y + view.get_pos().y + view.get_groesse().y + TITLEBAR_HEIGHT, view.get_groesse().x, 8, MN_GREY0, MN_GREY4);
+	display_fillbox_wh_clip(pos.x + view.get_pos().x + 1, pos.y + view.get_pos().y + view.get_groesse().y + TITLEBAR_HEIGHT+1, view.get_groesse().x - 2, 6, indikatorfarbe, true);
+	KOORD_VAL x_view_pos = DIALOG_LEFT;
+	KOORD_VAL x_prod_pos = DIALOG_LEFT+proportional_string_width(prod_buf)+10;
 	if(  skinverwaltung_t::electricity->get_bild_nr(0)!=IMG_LEER  ) {
 		// indicator for recieving
 		if(  fab->get_prodfactor_electric()>0  ) {
-			display_color_img(skinverwaltung_t::electricity->get_bild_nr(0), pos.x + view.get_pos().x + x_view_pos, pos.y + view.get_pos().y + 20, 0, false, false);
+			display_color_img(skinverwaltung_t::electricity->get_bild_nr(0), pos.x + view.get_pos().x + x_view_pos, pos.y + view.get_pos().y + TITLEBAR_HEIGHT+4, 0, false, false);
 			x_view_pos += skinverwaltung_t::electricity->get_bild(0)->get_pic()->w+4;
 		}
 		// indicator for enabled
 		if(  fab->get_besch()->get_electric_boost()  ) {
-			display_color_img( skinverwaltung_t::electricity->get_bild_nr(0), pos.x + x_prod_pos, pos.y + view.get_pos().y + 20, 0, false, false);
+			display_color_img( skinverwaltung_t::electricity->get_bild_nr(0), pos.x + x_prod_pos, pos.y + view.get_pos().y + TITLEBAR_HEIGHT, 0, false, false);
 			x_prod_pos += skinverwaltung_t::electricity->get_bild(0)->get_pic()->w+4;
 		}
 	}
 	if(  skinverwaltung_t::passagiere->get_bild_nr(0)!=IMG_LEER  ) {
 		if(  fab->get_prodfactor_pax()>0  ) {
-			display_color_img(skinverwaltung_t::passagiere->get_bild_nr(0), pos.x + view.get_pos().x + 4 + 8, pos.y + view.get_pos().y + 20, 0, false, false);
+			display_color_img(skinverwaltung_t::passagiere->get_bild_nr(0), pos.x + view.get_pos().x + 4 + 8, pos.y + view.get_pos().y + TITLEBAR_HEIGHT+4, 0, false, false);
 		}
 		if(  fab->get_besch()->get_pax_boost()  ) {
-			display_color_img( skinverwaltung_t::passagiere->get_bild_nr(0), pos.x + x_prod_pos, pos.y + view.get_pos().y + 20, 0, false, false);
+			display_color_img( skinverwaltung_t::passagiere->get_bild_nr(0), pos.x + x_prod_pos, pos.y + view.get_pos().y + TITLEBAR_HEIGHT, 0, false, false);
 			x_prod_pos += skinverwaltung_t::passagiere->get_bild(0)->get_pic()->w+4;
 		}
 	}
 	if(  skinverwaltung_t::post->get_bild_nr(0)!=IMG_LEER  ) {
 		if(  fab->get_prodfactor_mail()>0  ) {
-			display_color_img(skinverwaltung_t::post->get_bild_nr(0), pos.x + view.get_pos().x + 4 + 18, pos.y + view.get_pos().y + 20, 0, false, false);
+			display_color_img(skinverwaltung_t::post->get_bild_nr(0), pos.x + view.get_pos().x + 4 + 18, pos.y + view.get_pos().y + TITLEBAR_HEIGHT+4, 0, false, false);
 		}
 		if(  fab->get_besch()->get_mail_boost()  ) {
-			display_color_img( skinverwaltung_t::post->get_bild_nr(0), pos.x + x_prod_pos, pos.y + view.get_pos().y + 20, 0, false, false);
+			display_color_img( skinverwaltung_t::post->get_bild_nr(0), pos.x + x_prod_pos, pos.y + view.get_pos().y + TITLEBAR_HEIGHT, 0, false, false);
 		}
 	}
 }
@@ -250,10 +251,11 @@ template <typename T> static void make_buttons(button_t*& dst, T const& coords, 
 	delete [] dst;
 	if (coords.empty()) {
 		dst = 0;
-	} else {
+	}
+	else {
 		button_t* b = dst = new button_t[coords.get_count()];
 		FORTX(T, const& i, coords, ++b) {
-			b->set_pos(koord(10, y_off));
+			b->set_pos(koord(DIALOG_LEFT, y_off));
 			y_off += LINESPACE;
 			b->set_typ(button_t::posbutton);
 			b->set_targetpos(get_coord(i));
@@ -275,15 +277,15 @@ void fabrik_info_t::update_info()
 
 	// needs to update all text
 	fab_info.set_pos( koord(0,0) );
-	txt.set_pos( koord(10,-LINESPACE) );
+	txt.set_pos( koord(DIALOG_LEFT,DIALOG_TOP) );
 	fab_info.add_komponente(&txt);
 
-	int y_off = LINESPACE;
+	int y_off = LINESPACE+DIALOG_TOP;
 	make_buttons(lieferbuttons,   fab->get_lieferziele(),   y_off, fab_info, this);
 	make_buttons(supplierbuttons, fab->get_suppliers(),     y_off, fab_info, this);
 	make_buttons(stadtbuttons,    fab->get_target_cities(), y_off, fab_info, this);
 
-	fab_info.set_groesse( koord( fab_info.get_groesse().x, txt.get_groesse().y-LINESPACE ) );
+	fab_info.set_groesse( koord( fab_info.get_groesse().x, txt.get_groesse().y+DIALOG_TOP+DIALOG_BOTTOM ) );
 }
 
 
@@ -296,16 +298,18 @@ gui_fabrik_info_t::gui_fabrik_info_t(const fabrik_t* fab)
 
 void gui_fabrik_info_t::zeichnen(koord offset)
 {
-	int xoff = pos.x+offset.x+10+16;
-	int yoff = pos.y+offset.y;
+	int xoff = pos.x+offset.x+DIALOG_LEFT+16;
+	int yoff = pos.y+offset.y+DIALOG_TOP;
 
 	gui_container_t::zeichnen( offset );
 
-	yoff += fab->get_lieferziele().get_count() * LINESPACE;
-	yoff += fab->get_lieferziele().get_count() ? 2*LINESPACE : 0;
+	if(  fab->get_lieferziele().get_count()  ) {
+		yoff += (fab->get_lieferziele().get_count()+2) * LINESPACE;
+	}
 
-	yoff += fab->get_suppliers().get_count() * LINESPACE;
-	yoff += fab->get_suppliers().get_count() ? 2*LINESPACE : 0;
+	if(  fab->get_suppliers().get_count()  ) {
+		yoff += (fab->get_suppliers().get_count()+2) * LINESPACE;
+	}
 
 	const vector_tpl<stadt_t *> &target_cities = fab->get_target_cities();
 	if(  !target_cities.empty()  ) {
@@ -334,5 +338,6 @@ void gui_fabrik_info_t::zeichnen(koord offset)
 			display_proportional_clip(xoff + 90, yoff, c->get_name(), ALIGN_LEFT, COL_BLACK, true);
 			yoff += LINESPACE;
 		}
+		yoff += 2 * LINESPACE;
 	}
 }

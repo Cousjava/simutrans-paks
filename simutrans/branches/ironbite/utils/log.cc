@@ -25,6 +25,7 @@
 
 // for display ...
 #include "../gui/messagebox.h"
+#include "../simevent.h"
 #include "../simgraph.h"
 #include "../simwin.h"
 

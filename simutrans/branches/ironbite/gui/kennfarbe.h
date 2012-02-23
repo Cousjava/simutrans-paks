@@ -27,6 +27,7 @@ private:
 	gui_label_t txt;
 	gui_label_t primary;
 	gui_label_t secondary;
+	gui_label_t c1, c2;
 	gui_image_t bild;
 
 	button_t player_color_1[28];

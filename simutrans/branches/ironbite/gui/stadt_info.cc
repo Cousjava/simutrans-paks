@@ -10,6 +10,8 @@
 #include "../simmenu.h"
 #include "../simworld.h"
 #include "../simcolor.h"
+#include "../simevent.h"
+#include "../simgraph.h"
 #include "../dataobj/translator.h"
 #include "../dataobj/umgebung.h"
 #include "../utils/cbuffer_t.h"
@@ -18,8 +20,6 @@
 
 #include "stadt_info.h"
 #include "karte.h"
-
-#include "../simgraph.h"
 
 #define PAX_DEST_X (138)
 #define PAX_DEST_Y (20)

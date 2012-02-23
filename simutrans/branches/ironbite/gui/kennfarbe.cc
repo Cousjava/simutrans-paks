@@ -26,14 +26,14 @@ farbengui_t::farbengui_t(spieler_t * sp) :
 	     sp->get_player_nr())
 {
 	this->sp = sp;
-	
+
 	const int width = D_LEFT_MARGIN*2 + 14 * 24 - 2;
 	set_fenstergroesse( koord(width, 202+TITLEBAR_HEIGHT) );
 	
 	txt.set_text("Please choose your preferred player colors.");
 	txt.set_pos( koord(D_LEFT_MARGIN, D_TOP_MARGIN+2) );
 	add_komponente( &txt );
-	
+
 	bild.set_pos( koord(width - 64 - D_RIGHT_MARGIN, D_TOP_MARGIN) );
 	add_komponente( &bild );
 	
@@ -78,6 +78,7 @@ farbengui_t::farbengui_t(spieler_t * sp) :
 		add_komponente(player_color_2+i);
 	}
 	player_color_2[sp->get_player_color2()/8].pressed = true;
+
 }
 
 

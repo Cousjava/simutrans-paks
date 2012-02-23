@@ -10,6 +10,7 @@
 
 #include "../simcity.h"
 #include "../simcolor.h"
+#include "../simevent.h"
 #include "../simgraph.h"
 #include "../simskin.h"
 #include "../simwin.h"

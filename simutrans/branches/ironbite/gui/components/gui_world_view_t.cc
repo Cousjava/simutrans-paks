@@ -10,6 +10,7 @@
 #include "gui_world_view_t.h"
 #include "../../simworld.h"
 #include "../../simdings.h"
+#include "../../simevent.h"
 #include "../../simgraph.h"
 #include "../../simcolor.h"
 #include "../../vehicle/simvehikel.h"

@@ -7,9 +7,8 @@
 
 /*
  * Simutrans sub-windows
- * Legacy: keine Klasse, da die funktionen von C-Code aus aufgerufen werden koennen
  *
- * The functions implement an window manager "object"
+ * These functions implement an window manager "object"
  * there is only this one window manager in Simutrans
  *
  * 17.11.97, Hj. Malthaner
@@ -152,23 +151,49 @@ enum simwin_gadget_et { GADGET_CLOSE, GADGET_HELP, GADGET_SIZE, GADGET_PREV, GAD
 
 /**
  * Display a window gadget
+ *
  * @author Hj. Malthaner
  */
-static int display_gadget_box(simwin_gadget_et const  code,
-			      int const x, int const y,
-			      int const color,
-			      bool const pushed)
+static int display_gadget_box(simwin_gadget_et const code,
+			      const int x, 
+			      const int y,
+			      const int color,
+			      const bool pushed,
+			      const bool active)
 {
 	display_vline_wh_clip(x,    y,   16, color+1, false);
 	display_vline_wh_clip(x+15, y+1, 14, COL_BLACK, false);
 	// display_vline_wh_clip(x+16, y+1, 14, color+1, false);
 
-	if(pushed) {
+	if(pushed) 
+	{
 		display_fillbox_wh_clip(x+1, y+1, 14, 14, color+1, false);
 	}
 
 	int img = IMG_LEER;
-	if(skinverwaltung_t::window_skin) 
+
+	if(skinverwaltung_t::iron_skin) 
+	{
+		// "x", "?", "=", "�", "�"
+		int n = code + 1;
+		if(!active)
+		{
+			if(code < 12) 
+			{
+				n += 48;
+			}
+			else if(code < 30)
+			{
+				n += (54 - 22);
+			} 
+			else
+			{
+				n += (55 - 37); 
+			}
+		}			
+		img = skinverwaltung_t::window_skin->get_bild_nr(n);
+	}
+	else if(skinverwaltung_t::window_skin) 
 	{
 		// "x", "?", "=", "�", "�"
 		img = skinverwaltung_t::window_skin->get_bild_nr(code+1);
@@ -209,50 +234,55 @@ static int display_gadget_box(simwin_gadget_et const  code,
 }
 
 
-//-------------------------------------------------------------------------
-// (Mathew Hounsell) Created
+/**
+ * Display window gadgets.
+ *
+ * @author Mat Hounsell, Hj. Malthaner
+ */
 static int display_gadget_boxes(
-	simwin_gadget_flags_t const * const flags,
-	int const x, int const y,
-	int const color,
-	bool const close_pushed,
-	bool const sticky_pushed
-) {
-    int width = 0;
-    const int w=(REVERSE_GADGETS?16:-16);
+	const simwin_gadget_flags_t * const flags,
+	const int x, 
+	const int y,
+	const int color,
+	const bool close_pushed,
+	const bool sticky_pushed,
+	const bool active)
+{
+	int width = 0;
+	const int w = (REVERSE_GADGETS ? 16 : -16);
 
 	// Only the close and sticky gadget can be pushed.
 	if(  flags->close  ) {
-	    display_gadget_box( GADGET_CLOSE, x +w*width, y, color, close_pushed );
+	    display_gadget_box( GADGET_CLOSE, x +w*width, y, color, close_pushed, active);
 	    width ++;
 	}
 	if(  flags->size  ) {
-	    display_gadget_box( GADGET_SIZE, x + w*width, y, color, false );
+	    display_gadget_box( GADGET_SIZE, x + w*width, y, color, false, active);
 	    width++;
 	}
 	if(  flags->help  ) {
-	    display_gadget_box( GADGET_HELP, x + w*width, y, color, false );
+	    display_gadget_box( GADGET_HELP, x + w*width, y, color, false, active);
 	    width++;
 	}
 	if(  flags->prev  ) {
-	    display_gadget_box( GADGET_PREV, x + w*width, y, color, false );
+	    display_gadget_box( GADGET_PREV, x + w*width, y, color, false, active);
 	    width++;
 	}
 	if(  flags->next  ) {
-	    display_gadget_box( GADGET_NEXT, x + w*width, y, color, false );
+	    display_gadget_box( GADGET_NEXT, x + w*width, y, color, false, active);
 	    width++;
 	}
 	if(  flags->gotopos  ) {
-	    display_gadget_box( GADGET_GOTOPOS, x + w*width, y, color, false );
+	    display_gadget_box( GADGET_GOTOPOS, x + w*width, y, color, false, active);
 	    width++;
 	}
 	if(  flags->sticky  ) {
-		display_gadget_box( sticky_pushed ? GADGET_STICKY_PUSHED : GADGET_STICKY, x + w*width, y, color, sticky_pushed );
+		display_gadget_box( sticky_pushed ? GADGET_STICKY_PUSHED : GADGET_STICKY, x + w*width, y, color, sticky_pushed, active);
 	    width++;
 	}
 
 
-    return abs( w*width );
+	return abs(w*width);
 }
 
 
@@ -264,26 +294,21 @@ static simwin_gadget_et decode_gadget_boxes(
 	int offset = px-x;
 	const int w=(REVERSE_GADGETS?-16:16);
 
-//DBG_MESSAGE("simwin_gadget_et decode_gadget_boxes()","offset=%i, w=%i",offset, w );
-
 	// Only the close gadget can be pushed.
 	if( flags->close ) {
 		if( offset >= 0  &&  offset<16  ) {
-//DBG_MESSAGE("simwin_gadget_et decode_gadget_boxes()","close" );
 			return GADGET_CLOSE;
 		}
 		offset += w;
 	}
 	if( flags->size ) {
 		if( offset >= 0  &&  offset<16  ) {
-//DBG_MESSAGE("simwin_gadget_et decode_gadget_boxes()","size" );
 			return GADGET_SIZE;
 		}
 		offset += w;
 	}
 	if( flags->help ) {
 		if( offset >= 0  &&  offset<16  ) {
-//DBG_MESSAGE("simwin_gadget_et decode_gadget_boxes()","help" );
 			return GADGET_HELP;
 		}
 		offset += w;
@@ -328,7 +353,8 @@ static void win_draw_window_title(const koord pos,
 				  const koord3d welt_pos,
 				  const bool closing,
 				  const bool sticky,
-				  simwin_gadget_flags_t &flags)
+				  simwin_gadget_flags_t &flags,
+				  const bool active)
 {
 	PUSH_CLIP(pos.x, pos.y, gr.x, gr.y);
 
@@ -339,22 +365,42 @@ static void win_draw_window_title(const koord pos,
 	int img_r = IMG_LEER;
 
 	// Hajo: has skin?
-	if(skinverwaltung_t::window_skin) 
+	if(skinverwaltung_t::iron_skin) 
 	{
 		// Hajo: try to tell player from normal color		
 		if(titel_farbe & PLAYER_FLAG)
 		{
-			// Hajo: player title bar
-			img_l = skinverwaltung_t::window_skin->get_bild_nr(41);
-			img_c = skinverwaltung_t::window_skin->get_bild_nr(42);
-			img_r = skinverwaltung_t::window_skin->get_bild_nr(43);
+			if(active)
+			{
+				// Hajo: active player title bar
+				img_l = skinverwaltung_t::iron_skin->get_bild_nr(41);
+				img_c = skinverwaltung_t::iron_skin->get_bild_nr(42);
+				img_r = skinverwaltung_t::iron_skin->get_bild_nr(43);
+			}
+			else
+			{
+				// Hajo: inactive player title bar
+				img_l = skinverwaltung_t::iron_skin->get_bild_nr(59);
+				img_c = skinverwaltung_t::iron_skin->get_bild_nr(60);
+				img_r = skinverwaltung_t::iron_skin->get_bild_nr(61);
+			}
 		}
 		else
 		{
-			// Hajo: normal title bar
-			img_l = skinverwaltung_t::window_skin->get_bild_nr(38);
-			img_c = skinverwaltung_t::window_skin->get_bild_nr(39);
-			img_r = skinverwaltung_t::window_skin->get_bild_nr(40);
+			if(active)
+			{
+				// Hajo: normal active title bar
+				img_l = skinverwaltung_t::iron_skin->get_bild_nr(38);
+				img_c = skinverwaltung_t::iron_skin->get_bild_nr(39);
+				img_r = skinverwaltung_t::iron_skin->get_bild_nr(40);
+			}
+			else
+			{
+				// Hajo: normal inactive title bar
+				img_l = skinverwaltung_t::iron_skin->get_bild_nr(56);
+				img_c = skinverwaltung_t::iron_skin->get_bild_nr(57);
+				img_r = skinverwaltung_t::iron_skin->get_bild_nr(58);
+			}
 		}
 	}
 	
@@ -391,7 +437,7 @@ static void win_draw_window_title(const koord pos,
 	
 	// Draw the gadgets and then move left and draw text.
 	flags.gotopos = (welt_pos != koord3d::invalid);
-	int width = display_gadget_boxes( &flags, pos.x+(REVERSE_GADGETS?0:gr.x-20), pos.y, titel_farbe, closing, sticky );
+	int width = display_gadget_boxes( &flags, pos.x+(REVERSE_GADGETS?0:gr.x-20), pos.y, titel_farbe, closing, sticky, active);
 	int titlewidth = display_proportional_clip( pos.x + (REVERSE_GADGETS?width+5:5), pos.y+(18-large_font_height)/2, text, ALIGN_LEFT, text_farbe, false );
 	if(flags.gotopos)
 	{
@@ -860,12 +906,15 @@ void display_win(const int win)
 	const PLAYER_COLOR_VAL title_color = komp->get_titelcolor();
 	PLAYER_COLOR_VAL text_color = umgebung_t::front_window_text_color;
 	
-	if((unsigned)win != windows.get_count()-1)
+	bool active = ((unsigned)win == windows.get_count()-1);
+	
+	if(!active)
 	{
 		// Hajo ... later
 		// title_color = (title_color&0xF8)+umgebung_t::bottom_window_bar_color;
 		text_color = umgebung_t::bottom_window_text_color;
 	}
+	
 	const bool need_dragger = komp->get_resizemode() != gui_frame_t::no_resize;
 
 	// %HACK (Mathew Hounsell) So draw will know if gadget is needed.
@@ -881,7 +930,8 @@ void display_win(const int win)
 				komp->get_weltpos(),
 				windows[ win ].closing,
 				windows[ win ].sticky,
-				windows[ win ].flags );
+				windows[ win ].flags,
+				active);
 	}
 	
 	// mark top window, if requested
