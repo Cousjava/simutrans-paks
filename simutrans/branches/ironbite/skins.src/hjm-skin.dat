@@ -259,3 +259,53 @@ Image[42]=> hjm-skin_silver_st.6.0
 
 # Player color title bar right
 Image[43]=> hjm-skin_silver_st.6.1
+
+
+Image[44]=-
+Image[45]=-
+Image[46]=-
+Image[47]=-
+
+######### inactive ##########
+
+# Window close gadget, dark
+Image[48]=> hjm-skin_silver_st.7.7
+
+# Window help gadget, dark
+Image[49]=> hjm-skin_silver_st.7.1
+
+# Window minimize gadget, dark
+Image[50]=> hjm-skin_silver_st.7.2
+
+# Prev window gadget, dark
+Image[51]=> hjm-skin_silver_st.7.3
+
+# Next window gadget, dark
+Image[52]=> hjm-skin_silver_st.7.4
+
+# Stick
+Image[53]=> hjm-skin_silver_st.7.5
+
+# Unstick
+Image[54]=> hjm-skin_silver_st.7.6
+
+# Center
+Image[55]=> hjm-skin_silver_st.7.0
+
+# Title bar left
+Image[56]=> hjm-skin_silver_st.8.0
+
+# Title bar center
+Image[57]=> hjm-skin_silver_st.8.1
+
+# Title bar right
+Image[58]=> hjm-skin_silver_st.8.2
+
+# Player color title bar left
+Image[59]=> hjm-skin_silver_st.8.3
+
+# Player color title bar center
+Image[60]=> hjm-skin_silver_st.8.4
+
+# Player color title bar right
+Image[61]=> hjm-skin_silver_st.8.5
