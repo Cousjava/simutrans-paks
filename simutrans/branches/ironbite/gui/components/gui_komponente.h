@@ -42,6 +42,12 @@ protected:
 	 */
 	koord pos;
 
+	/**
+	* Größe der Komponente.
+	* @author Hj. Malthaner
+	*/
+	koord groesse;
+
 public:
 	/**
 	* Basic contructor, initialises member variables
@@ -57,8 +63,11 @@ public:
 
 	void set_focusable(bool yesno) { focusable = yesno; }
 
-	// Knightly : a component can only be focusable when it is visible
-	virtual bool is_focusable() { return visible && focusable; }
+	/**
+	 * A component can only be focusable when it is visible
+	 * @author Knightly
+	 */
+	virtual bool is_focusable();
 
 	/**
 	* Sets component to be shown/hidden
@@ -67,7 +76,6 @@ public:
 	void set_visible(bool yesno) {
 		visible = yesno;
 	}
-
 
 	/**
 	* Checks if component should be displayed
@@ -84,6 +92,10 @@ public:
 		this->pos = pos;
 	}
 
+	void set_pos(int x, int y) {
+		set_pos(koord(x, y));
+	}
+
 	/**
 	* Vorzugsweise sollte diese Methode zum Abfragen der Position benutzt werden,
 	* obwohl pos public ist.
@@ -94,28 +106,18 @@ public:
 	}
 
 	/**
-	* Größe der Komponente.
-	* @author Hj. Malthaner
-	*/
-	koord groesse;
-
-	/**
 	* Vorzugsweise sollte diese Methode zum Setzen der Größe benutzt werden,
 	* obwohl groesse public ist.
 	* @author Hj. Malthaner
 	*/
-	virtual void set_groesse(koord groesse) {
-		this->groesse = groesse;
-	}
+	virtual void set_groesse(koord groesse);
 
 	/**
  	 * Instead of accessing the "groesse" member, use this method to set a component's size
  	 * 
 	 * @author Hj. Malthaner
 	 */
-	virtual void set_size(const int w, const int h) {
-		set_groesse(koord(w, h));
-	}
+	virtual void set_size(const int w, const int h);
 
 	/**
 	* Vorzugsweise sollte diese Methode zum Abfragen der Größe benutzt werden,
@@ -130,9 +132,7 @@ public:
 	* Prüft, ob eine Position innerhalb der Komponente liegt.
 	* @author Hj. Malthaner
 	*/
-	virtual bool getroffen(int x, int y) {
-		return (pos.x <= x && pos.y <= y && (pos.x+groesse.x) > x && (pos.y+groesse.y) > y);
-	}
+	virtual bool getroffen(int x, int y);
 
 	/**
 	* deliver event to a component if
@@ -143,7 +143,7 @@ public:
 	* @author Hj. Malthaner
 	* prissi: default -> do nothing
 	*/
-	virtual bool infowin_event(const event_t *) { return false; }
+	virtual bool infowin_event(const event_t *);
 
 	/**
 	* Zeichnet die Komponente
@@ -156,14 +156,14 @@ public:
 	 * other derivates like scrolled list of tabs want to
 	 * return a component out of their selection
 	 */
-	virtual gui_komponente_t *get_focus() { return is_focusable() ? this : 0; }
+	virtual gui_komponente_t *get_focus();
 
 	/**
 	 * Get the relative position of the focused component.
 	 * Used for auto-scrolling inside a scroll pane.
 	 * @author Knightly
 	 */
-	virtual koord get_focus_pos() { return pos; }
+	virtual koord get_focus_pos();
 };
 
 #endif

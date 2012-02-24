@@ -62,12 +62,13 @@ banner_t::banner_t(karte_t *welt) : gui_frame_t("")
         const int height = 16+113+12*LINESPACE+2*BUTTON_HEIGHT+12;
         const int width = height * 160/100 + 1;
 	
-	const koord size(width, height+20);
-	set_fenstergroesse(size);
+	set_window_size(width, height+20);
 
 	const int button_bottom_margin = 18;
-	const int button_y = size.y-16-BUTTON_HEIGHT-button_bottom_margin;
-	const koord button_size ( BUTTON_WIDTH, BUTTON_HEIGHT );
+	const int button_y = height-14-button_bottom_margin;
+	
+	// Hajo: testing larger buttons
+	const koord button_size (BUTTON_WIDTH, BUTTON_HEIGHT+3);
 	
 	ooo->new_map.init(button_t::roundbox, "Neue Karte", koord(margin, button_y), button_size);
 	add_komponente( &ooo->new_map );

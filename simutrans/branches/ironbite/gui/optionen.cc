@@ -89,97 +89,100 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 	// Hajo: text starts a bit lower ...
 	ypos += 2;
 	
-	// txt.set_pos( koord(xpos-1, ypos) );
-	// add_komponente( &txt );
-
-	// init buttons
-	// ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
-
 	ooo->bt_new.set_typ(button_t::roundbox);
-	ooo->bt_new.set_pos( koord(xpos, ypos) );
+	ooo->bt_new.set_pos(xpos, ypos);
+	ooo->bt_new.set_size(BUTTON_WIDTH, BUTTON_TALL_HEIGHT);
 	ooo->bt_new.set_text("Neue Karte");
 	add_komponente( &ooo->bt_new );
 
-	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
+	ypos += BUTTON_TALL_HEIGHT + D_COMP_Y_SPACE;
 
-	ooo->seperator_map.set_pos( koord(xpos,  ypos) );
-	ooo->seperator_map.set_groesse( koord(BUTTON_WIDTH, 1) );
+	ooo->seperator_map.set_pos(xpos,  ypos);
+	ooo->seperator_map.set_size(BUTTON_WIDTH, 1);
 	add_komponente( &ooo->seperator_map );
 
 	ypos += 3 + D_COMP_Y_SPACE;
 
 	ooo->bt_load.set_typ(button_t::roundbox);
-	ooo->bt_load.set_pos( koord(xpos, ypos) );
+	ooo->bt_load.set_pos(xpos, ypos);
+	ooo->bt_load.set_size(BUTTON_WIDTH, BUTTON_TALL_HEIGHT);
 	ooo->bt_load.set_text("Laden");
 	add_komponente( &ooo->bt_load );
 
-	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
+	ypos += BUTTON_TALL_HEIGHT + D_COMP_Y_SPACE;
 	
 	ooo->bt_save.set_typ(button_t::roundbox);
-	ooo->bt_save.set_pos( koord(xpos, ypos) );
+	ooo->bt_save.set_pos(xpos, ypos);
+	ooo->bt_save.set_size(BUTTON_WIDTH, BUTTON_TALL_HEIGHT);
 	ooo->bt_save.set_text("Speichern");
 	add_komponente( &ooo->bt_save );
 
-	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
+	ypos += BUTTON_TALL_HEIGHT + D_COMP_Y_SPACE;
 	
-	ooo->seperator_file.set_pos( koord(xpos,  ypos) );
-	ooo->seperator_file.set_groesse( koord(BUTTON_WIDTH, 1) );
+	ooo->seperator_file.set_pos(xpos,  ypos);
+	ooo->seperator_file.set_size(BUTTON_WIDTH, 1);
 	add_komponente( &ooo->seperator_file );
 
 	ypos += 3 + D_COMP_Y_SPACE;
 	
 	ooo->bt_lang.set_typ(button_t::roundbox);
-	ooo->bt_lang.set_pos( koord(xpos,  ypos) );
+	ooo->bt_lang.set_pos(xpos,  ypos);
+	ooo->bt_lang.set_size(BUTTON_WIDTH, BUTTON_TALL_HEIGHT);
 	ooo->bt_lang.set_text("Sprache");
 	add_komponente( &ooo->bt_lang );
 
-	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
+	ypos += BUTTON_TALL_HEIGHT + D_COMP_Y_SPACE;
 	
 	ooo->bt_color.set_typ(button_t::roundbox);
-	ooo->bt_color.set_pos( koord(xpos, ypos) );
+	ooo->bt_color.set_pos(xpos, ypos);
+	ooo->bt_color.set_size(BUTTON_WIDTH, BUTTON_TALL_HEIGHT);
 	ooo->bt_color.set_text("Farbe");
 	add_komponente( &ooo->bt_color );
 
-	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
+	ypos += BUTTON_TALL_HEIGHT + D_COMP_Y_SPACE;
 	
 	ooo->bt_display.set_typ(button_t::roundbox);
-	ooo->bt_display.set_pos( koord(xpos, ypos) );
+	ooo->bt_display.set_pos(xpos, ypos);
+	ooo->bt_display.set_size(BUTTON_WIDTH, BUTTON_TALL_HEIGHT);
 	ooo->bt_display.set_text("Helligk.");
 	add_komponente( &ooo->bt_display );
 
-	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
+	ypos += BUTTON_TALL_HEIGHT + D_COMP_Y_SPACE;
 	
 	ooo->bt_sound.set_typ(button_t::roundbox);
-	ooo->bt_sound.set_pos( koord(xpos, ypos) );
+	ooo->bt_sound.set_pos(xpos, ypos);
+	ooo->bt_sound.set_size(BUTTON_WIDTH, BUTTON_TALL_HEIGHT);
 	ooo->bt_sound.set_text("Sound");
 	add_komponente( &ooo->bt_sound );
 
-	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
+	ypos += BUTTON_TALL_HEIGHT + D_COMP_Y_SPACE;
 	
 	ooo->bt_player.set_typ(button_t::roundbox);
-	ooo->bt_player.set_pos( koord(xpos, ypos) );
+	ooo->bt_player.set_pos(xpos, ypos);
+	ooo->bt_player.set_size(BUTTON_WIDTH, BUTTON_TALL_HEIGHT);
 	ooo->bt_player.set_text("Spieler(mz)");
 	add_komponente( &ooo->bt_player );
 
-	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
+	ypos += BUTTON_TALL_HEIGHT + D_COMP_Y_SPACE;
 	
-	ooo->seperator.set_pos( koord(xpos,  ypos) );
-	ooo->seperator.set_groesse( koord(BUTTON_WIDTH, 1) );
+	ooo->seperator.set_pos(xpos,  ypos);
+	ooo->seperator.set_size(BUTTON_WIDTH, 1);
 	add_komponente( &ooo->seperator );
 
 	ypos += 3 + D_COMP_Y_SPACE;
 	
 	// 01-Nov-2001      Markus Weber    Added
 	ooo->bt_quit.set_typ(button_t::roundbox);
-	ooo->bt_quit.set_pos( koord(xpos, ypos) );
+	ooo->bt_quit.set_pos(xpos, ypos);
+	ooo->bt_quit.set_size(BUTTON_WIDTH, BUTTON_TALL_HEIGHT);
 	ooo->bt_quit.set_text("Beenden");
 	add_komponente( &ooo->bt_quit );
 
-	ypos += BUTTON_HEIGHT + D_COMP_Y_SPACE;
+	ypos += BUTTON_TALL_HEIGHT + D_COMP_Y_SPACE;
 
 	// Hajo: compute total window size
-	set_fenstergroesse( koord(D_LEFT_MARGIN+BUTTON_WIDTH + D_RIGHT_MARGIN, 
-	                                    ypos + TITLEBAR_HEIGHT+2) );
+	set_window_size(D_LEFT_MARGIN+BUTTON_WIDTH + D_RIGHT_MARGIN, 
+	                        ypos + TITLEBAR_HEIGHT+2);
 }
 
 optionen_gui_t::~optionen_gui_t() 

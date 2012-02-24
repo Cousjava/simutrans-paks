@@ -1,3 +1,4 @@
+- Added support for bigger buttons.
 - Options menu "new map" skips banner and shows "new map" dialog immediately.
 - Options window got a third separator.
 - New player color choice window.

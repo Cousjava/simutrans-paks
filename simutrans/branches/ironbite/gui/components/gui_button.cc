@@ -170,30 +170,52 @@ void button_t::display_button_image(sint16 x, sint16 y, int number, bool pushed)
 
 
 // draw a rectangular button
-void button_t::draw_roundbutton(sint16 x, sint16 y, sint16 w, sint16 h, bool pressed)
+void button_t::draw_roundbutton(int x, int y, int w, int h, bool pressed)
 {
-	if(b_cap_left!=IMG_LEER  &&  h==14) {
-		const sint16 lw = skinverwaltung_t::window_skin->get_bild(12)->get_pic()->w;
-		const sint16 rw = skinverwaltung_t::window_skin->get_bild(13)->get_pic()->w;
+	if(b_cap_left != IMG_LEER) 
+	{
+		const int lw = skinverwaltung_t::window_skin->get_bild(12)->get_pic()->w;
+		const int rw = skinverwaltung_t::window_skin->get_bild(13)->get_pic()->w;
+	
+		// Hajo: try to allow bigger buttons by drawing top and bottom half
+		// with different clipping and pray that the middle part has an
+		// uniform graphics style. This works up to BUTTON_HEIGHT + 3
+		// with pak64 style buttons and BUTTON_HEIGHT + 4 with pak.Excentrique
+		
+		PUSH_CLIP(x, y, w, 10);
+		
 		// first the center (may need extra clipping)
-		if(w-lw-rw<64) {
-			clip_dimension const cl = display_get_clip_wh();
-			display_set_clip_wh(cl.x, cl.y, max(0,min(x+w-rw,cl.xx)-cl.x), cl.h );
-			display_button_image(x+lw, y, RB_BODY_BUTTON, pressed);
-			display_set_clip_wh(cl.x, cl.y, cl.w, cl.h );
+		for(int j=0; j+64<w-rw-lw; j+=64) 
+		{
+			display_button_image(x+j+lw, y, RB_BODY_BUTTON, pressed);
 		}
-		else {
-			// wider buttons
-			for( sint16 j=0;  j+64<w-rw-lw;  j+=64) {
-				display_button_image(x+j+lw, y, RB_BODY_BUTTON, pressed);
-			}
-			display_button_image(x+w-rw-64, y, RB_BODY_BUTTON, pressed);
-		}
+		display_button_image(x+w-rw-64, y, RB_BODY_BUTTON, pressed);
+		
 		// now the begin and end ...
 		display_button_image(x, y, RB_LEFT_BUTTON, pressed);
 		display_button_image(x+w-rw, y, RB_RIGHT_BUTTON, pressed);
+
+		POP_CLIP();
+		
+		const int yoff = h - BUTTON_HEIGHT;
+		
+		PUSH_CLIP(x, y+7, w, h-6);
+		
+		// first the center (may need extra clipping)
+		for(int j=0; j+64<w-rw-lw; j+=64) 
+		{
+			display_button_image(x+j+lw, y+yoff, RB_BODY_BUTTON, pressed);
+		}
+		display_button_image(x+w-rw-64, y+yoff, RB_BODY_BUTTON, pressed);
+		
+		// now the begin and end ...
+		display_button_image(x, y+yoff, RB_LEFT_BUTTON, pressed);
+		display_button_image(x+w-rw, y+yoff, RB_RIGHT_BUTTON, pressed);
+
+		POP_CLIP();
 	}
-	else {
+	else 
+	{
 		// draw the button conventionally from boxes
 		// fallback, if nothing defined
 		if (pressed) {

@@ -143,6 +143,12 @@ public:
 	virtual void set_fenstergroesse(koord groesse);
 
 	/**
+	 * Sets the window size
+	 * @author Hj. Malthaner
+	 */
+	void set_window_size(int w, int h) {set_fenstergroesse(koord(w, h));};
+
+	/**
 	 * Set minimum size of the window
 	 * @author Markus Weber
 	 * @date   11-May-2002

@@ -460,7 +460,9 @@ DBG_MESSAGE("convoi_t::laden_abschliessen()","next_stop_index=%d", next_stop_ind
 	}
 	// when saving with open window, this can happen
 	if(  state==FAHRPLANEINGABE  ) {
-		wait_lock = 30000; // 60s to drive on, if the client in question had left
+		if (umgebung_t::networkmode) {
+			wait_lock = 30000; // 60s to drive on, if the client in question had left
+		}
 		fpl->eingabe_abschliessen();
 	}
 	// some convois had wrong old direction in them
@@ -507,6 +509,7 @@ void convoi_t::rotate90( const sint16 y_size )
 	for(  int i=0;  i<anz_vehikel;  i++  ) {
 		fahr[i]->remove_stale_freight();
 	}
+	freight_info_resort = true;
 }
 
 
@@ -1591,6 +1594,7 @@ bool convoi_t::set_schedule(schedule_t * f)
 	for(unsigned i=0; i<anz_vehikel; i++) {
 		fahr[i]->remove_stale_freight();
 	}
+	freight_info_resort = true;
 
 	// ok, now we have a schedule
 	if(old_state!=INITIAL) {
@@ -1916,14 +1920,9 @@ void convoi_t::rdwr(loadsave_t *file)
 		}
 	}
 
-	// do not change state during saving, only save changed state
-	states save_state = state;
 	// do the update, otherwise we might lose the line after save & reload
 	if(file->is_saving()  &&  line_update_pending.is_bound()) {
 		check_pending_updates();
-		if (fpl->ist_abgeschlossen()  &&  state == FAHRPLANEINGABE) {
-			save_state = ROUTING_1;
-		}
 	}
 
 	simline_t::rdwr_linehandle_t(file, line);
@@ -1950,7 +1949,7 @@ void convoi_t::rdwr(loadsave_t *file)
 	file->rdwr_long(akt_speed);
 	file->rdwr_long(akt_speed_soll);
 	file->rdwr_long(sp_soll);
-	file->rdwr_enum(file->is_saving() ? save_state : state);
+	file->rdwr_enum(state);
 	file->rdwr_enum(alte_richtung);
 
 	// read the yearly income (which has since then become a 64 bit value)
@@ -3055,6 +3054,7 @@ void convoi_t::check_pending_updates()
 				for(uint8 i=0; i<anz_vehikel; i++) {
 					fahr[i]->remove_stale_freight();
 				}
+				freight_info_resort = true;
 			}
 			else {
 				// need re-routing

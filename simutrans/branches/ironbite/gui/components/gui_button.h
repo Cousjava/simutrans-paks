@@ -16,6 +16,7 @@
 #define BUTTON_WIDER_WIDTH (116)
 
 #define BUTTON_HEIGHT (14)
+#define BUTTON_TALL_HEIGHT (17)
 
 #define BUTTON_SPACER (2)
 
@@ -119,7 +120,7 @@ private:
 	void display_button_image(sint16 x, sint16 y, int number, bool pushed) const;
 
 	// draw a rectangular button
-	void draw_roundbutton(sint16 x, sint16 y, sint16 w, sint16 h, bool pressed);
+	void draw_roundbutton(int x, int y, int w, int h, bool pressed);
 
 	// scrollbar either skinned or simple
 	void draw_scrollbar(sint16 x, sint16 y, sint16 w, sint16 h, bool horizontal, bool slider);

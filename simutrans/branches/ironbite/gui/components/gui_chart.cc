@@ -13,6 +13,43 @@
 #include "../../simgraph.h"
 #include "../../simcolor.h"
 #include "../../simwin.h"
+#include "../../tpl/slist_tpl.h"
+
+
+
+/*
+ * curve struct
+ * @author hsiegeln
+ */
+struct curve_t {
+	int color;
+	const sint64 *values;
+	int size;
+	int offset;
+	int elements;
+	bool show;
+	bool show_value; // show first value of curve as number on chart?
+	int type; // 0 = standard, 1 = money
+	int precision;	// how many numbers ...
+	gui_chart_t::convert_proc convert;	// Knightly : procedure for converting supplied values before use
+};
+
+/**
+ * line struct
+ * @author Knightly
+ */
+struct line_t {
+	int color;
+	const sint64 *value;		// pointer to a single value only
+	int times;					// number of times the same value is repeated
+	bool show;
+	bool show_value;			// whether to show the value as number on the chart
+	int precision;
+	gui_chart_t::convert_proc convert;	// Knightly : procedure for converting supplied value before use
+};
+
+
+
 
 static char tooltip[64];
 
@@ -28,6 +65,9 @@ void gui_chart_t::set_background(int i)
 
 gui_chart_t::gui_chart_t() : gui_komponente_t()
 {
+	curves = new slist_tpl <curve_t>();
+	lines = new  slist_tpl <line_t>();
+	
 	// no toolstips at the start
 	tooltipkoord = koord::invalid;
 
@@ -40,6 +80,13 @@ gui_chart_t::gui_chart_t() : gui_komponente_t()
 	background = -1;
 }
 
+gui_chart_t::~gui_chart_t()
+{
+	delete curves;
+	curves = 0;
+	delete lines;
+	lines = 0;
+}
 
 int gui_chart_t::add_curve(int color, const sint64 *values, int size, int offset, int elements, int type, bool show, bool show_value, int precision, convert_proc proc)
 {
@@ -54,8 +101,8 @@ int gui_chart_t::add_curve(int color, const sint64 *values, int size, int offset
 	new_curve.type = type;
 	new_curve.precision = precision;
 	new_curve.convert = proc;
-	curves.append(new_curve);
-	return curves.get_count();
+	curves->append(new_curve);
+	return curves->get_count();
 }
 
 
@@ -69,42 +116,55 @@ uint32 gui_chart_t::add_line(int color, const sint64 *value, int times, bool sho
 	new_line.show_value = show_value;
 	new_line.precision = precision;
 	new_line.convert = proc;
-	lines.append(new_line);
-	return lines.get_count();
+	lines->append(new_line);
+	return lines->get_count();
 }
 
+void gui_chart_t::remove_curves() 
+{ 
+	curves->clear(); 
+}
+
+void gui_chart_t::remove_lines() 
+{ 
+	lines->clear(); 
+}
 
 void gui_chart_t::hide_curve(unsigned int id)
 {
-	if (id < curves.get_count()) {
-		curves.at(id).show = false;
+	if (id < curves->get_count()) {
+		curves->at(id).show = false;
 	}
 }
 
 
 void gui_chart_t::show_curve(unsigned int id)
 {
-	if (id < curves.get_count()) {
-		curves.at(id).show = true;
+	if (id < curves->get_count()) {
+		curves->at(id).show = true;
 	}
 }
 
 
 void gui_chart_t::show_line(uint32 id)
 {
-	if(  id<lines.get_count()  ) {
-		lines.at(id).show = true;
+	if(  id<lines->get_count()  ) {
+		lines->at(id).show = true;
 	}
 }
 
 
 void gui_chart_t::hide_line(uint32 id)
 {
-	if(  id<lines.get_count()  ) {
-		lines.at(id).show = false;
+	if(  id<lines->get_count()  ) {
+		lines->at(id).show = false;
 	}
 }
 
+int gui_chart_t::get_curve_count() 
+{ 
+	return curves->get_count(); 
+}
 
 void gui_chart_t::zeichnen(koord offset)
 {
@@ -177,7 +237,7 @@ void gui_chart_t::zeichnen(koord offset)
 	}
 
 	// draw chart's curves
-	FOR(slist_tpl<curve_t>, const& c, curves) {
+	FOR(slist_tpl<curve_t>, const& c, *curves) {
 		if (c.show) {
 			// for each curve iterate through all elements and display curve
 			for (int i=0;i<c.elements;i++) {
@@ -229,7 +289,7 @@ void gui_chart_t::zeichnen(koord offset)
 	}
 
 	// draw chart's lines
-	FOR(slist_tpl<line_t>, const& line, lines) {
+	FOR(slist_tpl<line_t>, const& line, *lines) {
 		if(  line.show  ) {
 			tmp = ( line.convert ? line.convert(*(line.value)) : *(line.value) );
 			for(  int t=0;  t<line.times;  ++t  ) {
@@ -270,7 +330,7 @@ void gui_chart_t::calc_gui_chart_values(sint64 *baseline, float *scale, char *cm
 	int precision = 0;
 
 	// first, check curves
-	FOR(slist_tpl<curve_t>, const& c, curves) {
+	FOR(slist_tpl<curve_t>, const& c, *curves) {
 		if(  c.show  ) {
 			for(  int i=0;  i<c.elements;  i++  ) {
 				tmp = c.values[i*c.size+c.offset];
@@ -294,7 +354,7 @@ void gui_chart_t::calc_gui_chart_values(sint64 *baseline, float *scale, char *cm
 	}
 
 	// second, check lines
-	FOR(slist_tpl<line_t>, const& line, lines) {
+	FOR(slist_tpl<line_t>, const& line, *lines) {
 		if(  line.show  ) {
 			tmp = ( line.convert ? line.convert(*(line.value)) : *(line.value) );
 			if(  min>tmp  ) {

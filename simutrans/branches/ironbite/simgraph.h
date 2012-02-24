@@ -194,6 +194,8 @@ void display_show_load_pointer(int loading);
 
 void display_array_wh(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL w, KOORD_VAL h, const COLOR_VAL *arr);
 
+void display_shadow_50(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL w, KOORD_VAL h,  bool dirty);
+
 // compound painting routines
 void display_outline_proportional(KOORD_VAL xpos, KOORD_VAL ypos, PLAYER_COLOR_VAL text_color, PLAYER_COLOR_VAL shadow_color, const char *text, int dirty);
 void display_shadow_proportional(KOORD_VAL xpos, KOORD_VAL ypos, PLAYER_COLOR_VAL text_color, PLAYER_COLOR_VAL shadow_color, const char *text, int dirty);

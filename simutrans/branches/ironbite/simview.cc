@@ -53,7 +53,7 @@ void karte_ansicht_t::display(bool force_dirty)
 	const sint16 disp_real_height = display_get_height();
 	const sint16 menu_height = werkzeug_t::toolbar_tool[0]->iconsize.y;
 
-	const sint16 disp_height = display_get_height() - 16 - (!ticker::empty() ? 16 : 0);
+	const sint16 disp_height = display_get_height() - 16 - ((!ticker::empty() && !ticker::is_transparent()) ? 16 : 0);
 	display_set_clip_wh( 0, menu_height, disp_width, disp_height-menu_height );
 
 	// zuerst den boden zeichnen

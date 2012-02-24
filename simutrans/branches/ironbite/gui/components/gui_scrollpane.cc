@@ -107,7 +107,7 @@ bool gui_scrollpane_t::infowin_event(const event_t *ev)
 		if(  IS_LEFTCLICK(ev)  ||  (ev->ev_class==EVENT_KEYBOARD  &&  ev->ev_code==9)  ) {
 			const gui_komponente_t *const focused_komp = komp->get_focus();
 			if(  focused_komp  ) {
-				const koord komp_size = focused_komp->groesse;
+				const koord komp_size = focused_komp->get_groesse();
 				const koord relative_pos = komp->get_focus_pos();
 				if(  b_show_scroll_x  ) {
 					const sint32 knob_offset_x = scroll_x.get_knob_offset();

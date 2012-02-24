@@ -341,6 +341,63 @@ static simwin_gadget_et decode_gadget_boxes(
 }
 
 /**
+ * Check if we have a titlebar skin.
+ * Default to empty images.
+ *
+ * @author Hj. Malthaner
+ */
+static void fillTitleBarSkin(int * img_l, int *img_c, int * img_r, 
+                             bool active, bool is_player_window)
+{
+	// Hajo: has skin?
+	if(skinverwaltung_t::iron_skin) 
+	{
+		// Hajo: try to tell player from normal color		
+		if(is_player_window)
+		{
+			if(active)
+			{
+				// Hajo: active player title bar
+				*img_l = skinverwaltung_t::iron_skin->get_bild_nr(41);
+				*img_c = skinverwaltung_t::iron_skin->get_bild_nr(42);
+				*img_r = skinverwaltung_t::iron_skin->get_bild_nr(43);
+			}
+			else
+			{
+				// Hajo: inactive player title bar
+				*img_l = skinverwaltung_t::iron_skin->get_bild_nr(59);
+				*img_c = skinverwaltung_t::iron_skin->get_bild_nr(60);
+				*img_r = skinverwaltung_t::iron_skin->get_bild_nr(61);
+			}
+		}
+		else
+		{
+			if(active)
+			{
+				// Hajo: normal active title bar
+				*img_l = skinverwaltung_t::iron_skin->get_bild_nr(38);
+				*img_c = skinverwaltung_t::iron_skin->get_bild_nr(39);
+				*img_r = skinverwaltung_t::iron_skin->get_bild_nr(40);
+			}
+			else
+			{
+				// Hajo: normal inactive title bar
+				*img_l = skinverwaltung_t::iron_skin->get_bild_nr(56);
+				*img_c = skinverwaltung_t::iron_skin->get_bild_nr(57);
+				*img_r = skinverwaltung_t::iron_skin->get_bild_nr(58);
+			}
+		}
+	}
+	else
+	{
+		*img_l = IMG_LEER;
+		*img_c = IMG_LEER;
+		*img_r = IMG_LEER;
+	}
+}
+
+
+/**
  * Draw window title bar.
  *
  * @author Mat Hounsell, Hj. Malthaner
@@ -358,51 +415,11 @@ static void win_draw_window_title(const koord pos,
 {
 	PUSH_CLIP(pos.x, pos.y, gr.x, gr.y);
 
-	// Hajo: check if we have a titlebar skin
-	// default to nothing
-	int img_l = IMG_LEER;
-	int img_c = IMG_LEER;
-	int img_r = IMG_LEER;
+	int img_l;
+	int img_c;
+	int img_r;
 
-	// Hajo: has skin?
-	if(skinverwaltung_t::iron_skin) 
-	{
-		// Hajo: try to tell player from normal color		
-		if(titel_farbe & PLAYER_FLAG)
-		{
-			if(active)
-			{
-				// Hajo: active player title bar
-				img_l = skinverwaltung_t::iron_skin->get_bild_nr(41);
-				img_c = skinverwaltung_t::iron_skin->get_bild_nr(42);
-				img_r = skinverwaltung_t::iron_skin->get_bild_nr(43);
-			}
-			else
-			{
-				// Hajo: inactive player title bar
-				img_l = skinverwaltung_t::iron_skin->get_bild_nr(59);
-				img_c = skinverwaltung_t::iron_skin->get_bild_nr(60);
-				img_r = skinverwaltung_t::iron_skin->get_bild_nr(61);
-			}
-		}
-		else
-		{
-			if(active)
-			{
-				// Hajo: normal active title bar
-				img_l = skinverwaltung_t::iron_skin->get_bild_nr(38);
-				img_c = skinverwaltung_t::iron_skin->get_bild_nr(39);
-				img_r = skinverwaltung_t::iron_skin->get_bild_nr(40);
-			}
-			else
-			{
-				// Hajo: normal inactive title bar
-				img_l = skinverwaltung_t::iron_skin->get_bild_nr(56);
-				img_c = skinverwaltung_t::iron_skin->get_bild_nr(57);
-				img_r = skinverwaltung_t::iron_skin->get_bild_nr(58);
-			}
-		}
-	}
+	fillTitleBarSkin(&img_l, &img_c, &img_r, active, titel_farbe & PLAYER_FLAG);
 	
 	// Hajo: has title bar images?
 	if(img_l != IMG_LEER && img_c != IMG_LEER && img_r != IMG_LEER) 
@@ -915,12 +932,13 @@ void display_win(const int win)
 		text_color = umgebung_t::bottom_window_text_color;
 	}
 	
-	const bool need_dragger = komp->get_resizemode() != gui_frame_t::no_resize;
 
 	// %HACK (Mathew Hounsell) So draw will know if gadget is needed.
 	windows[ win ].flags.help = ( komp->get_hilfe_datei() != NULL );
-	
-	if(windows[ win ].flags.title)
+
+	const bool has_title = windows[ win ].flags.title;
+
+	if(has_title)
 	{
 		win_draw_window_title(windows[ win ].pos,
 				gr,
@@ -950,10 +968,39 @@ void display_win(const int win)
 	
 	if(!windows[ win ].rollup) 
 	{
-		komp->zeichnen(windows[ win ].pos, gr);
+		// Hajo: shadow test
+		const int shadow = 2;
+		const koord pos = windows[ win ].pos;
+		const int yoff = has_title ? 0 : 16;
+		
+		// Hajo: try minmal roundings at the corners ...
+		
+		// bottom
+		display_shadow_50(pos.x+1, pos.y+gr.y, gr.x+shadow-1, shadow-1, true);
+		display_shadow_50(pos.x+2, pos.y+gr.y+shadow-1, gr.x+shadow-3, 1, true);
+		// right
+		display_shadow_50(pos.x+gr.x, pos.y+yoff+1, shadow-1, gr.y-yoff-1, true);
+		display_shadow_50(pos.x+gr.x+shadow-1, pos.y+yoff+2, 1, gr.y-yoff-2, true);
 
-		// Hajo: draw window drag gadget
-		if(need_dragger) 
+		/*
+		// top
+		display_shadow_50(pos.x-shadow+1, pos.y+yoff-shadow, gr.x+shadow+shadow-2, 1, true);
+		display_shadow_50(pos.x-shadow, pos.y+yoff-shadow+1, gr.x+shadow+shadow, shadow, true);
+		// bottom
+		display_shadow_50(pos.x-shadow, pos.y+gr.y, gr.x+shadow+shadow, shadow-1, true);
+		display_shadow_50(pos.x-shadow+1, pos.y+gr.y+shadow-1, gr.x+shadow+shadow-2, 1, true);
+		// left
+		display_shadow_50(pos.x-shadow, pos.y+yoff, shadow, gr.y-yoff, true);
+		// right
+		display_shadow_50(pos.x+gr.x, pos.y+yoff, shadow, gr.y-yoff, true);
+		*/
+
+
+		// Hajo: now display window contents
+		komp->zeichnen(pos, gr);
+
+		// Hajo: and draw window drag gadget if this window needs one
+		if(komp->get_resizemode() != gui_frame_t::no_resize) 
 		{
 			win_draw_window_dragger( pos, gr);
 		}

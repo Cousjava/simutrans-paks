@@ -2846,7 +2846,8 @@ void display_scroll_band(const KOORD_VAL start_y, const KOORD_VAL x_offset, cons
 
 
 /**
- * Zeichnet ein Pixel
+ * Draws a pixel.
+ *
  * @author Hj. Malthaner
  */
 static void display_pixel(KOORD_VAL x, KOORD_VAL y, PIXVAL color)
@@ -2856,6 +2857,36 @@ static void display_pixel(KOORD_VAL x, KOORD_VAL y, PIXVAL color)
 
 		*p = color;
 		mark_tile_dirty(x >> DIRTY_TILE_SHIFT, y >> DIRTY_TILE_SHIFT);
+	}
+}
+
+
+/**
+ * Halves color values in a rectanglar box area.
+ *
+ * @author Hj. Malthaner
+ */
+void display_shadow_50(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL w, KOORD_VAL h, bool dirty)
+{
+	if (clip_lr(&xp, &w, clip_rect.x, clip_rect.xx) && clip_lr(&yp, &h, clip_rect.y, clip_rect.yy)) 
+	{
+		uint32 c = get_system_color( 0, 255, 0 ) >> 5;
+		const PIXVAL mask = (c==31) ? 0xFBDE : 0xF7DE;
+
+		if (dirty) {
+			mark_rect_dirty_nc(xp, yp, xp + w - 1, yp + h - 1);
+		}
+
+		for(int y=0; y<h; y++)
+		{
+			PIXVAL *p = textur + xp + (yp+y) * disp_width;
+			
+			for(int x=0; x<w; x++)
+			{
+				const PIXVAL v = (*p & mask) >> 1;
+				*p++ = v;
+			}
+		}
 	}
 }
 

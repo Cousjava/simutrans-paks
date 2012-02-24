@@ -17,6 +17,9 @@
 // how much scrolling per call?
 #define X_DIST 2
 
+// Hajo: use transparent ticker?
+static bool transparent = true;
+
 
 struct node {
 	char msg[256];
@@ -35,9 +38,13 @@ static int next_pos;
 
 bool ticker::empty()
 {
-  return list.empty();
+	return list.empty();
 }
 
+bool ticker::is_transparent()
+{
+	return transparent;
+}
 
 void ticker::clear_ticker()
 {
@@ -100,9 +107,10 @@ void ticker::zeichnen(void)
 	if (!list.empty()) {
 		const int start_y=display_get_height()-TICKER_YPOS_BOTTOM;
 		const int width = display_get_width();
-
+	
 		// redraw whole ticker
-		if(redraw_all) {
+		if(redraw_all || transparent)
+		{
 			redraw_ticker();
 		}
 		// redraw ticker partially
@@ -120,7 +128,7 @@ void ticker::zeichnen(void)
 			}
 			POP_CLIP();
 		}
-
+		
 		// remove old news
 		while (!list.empty()  &&  list.front().xpos + list.front().w < 0) {
 			list.remove_first();
@@ -138,13 +146,22 @@ void ticker::zeichnen(void)
 // complete redraw (after resizing)
 void ticker::redraw_ticker()
 {
-	if (!list.empty()) {
+	if (!list.empty()) 
+	{
 		const int start_y=display_get_height()-TICKER_YPOS_BOTTOM;
 		const int width = display_get_width();
 
 		// just draw the ticker grey ... (to be sure ... )
 		display_fillbox_wh(0, start_y, width, 1, COL_BLACK, true);
-		display_fillbox_wh(0, start_y+1, width, TICKER_HEIGHT, MN_GREY2, true);
+		
+		if(transparent)
+		{
+			display_shadow_50(0, start_y+1, width, TICKER_HEIGHT, true);
+		}
+		else
+		{
+			display_fillbox_wh(0, start_y+1, width, TICKER_HEIGHT, MN_GREY2, true);
+		}
 		FOR(slist_tpl<node>, & n, list) {
 			n.xpos -= X_DIST;
 			if (n.xpos < width) {

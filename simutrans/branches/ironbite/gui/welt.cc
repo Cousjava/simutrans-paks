@@ -69,7 +69,7 @@
 #define PREVIEW_SIZE (80) // size of the minimap
 #define PREVIEW_SIZE_MIN (16) // minimum width/height of the minimap
 
-#define option_spacing_y BUTTON_HEIGHT
+#define OPTION_SPACING_Y BUTTON_HEIGHT
 
 #define LEFT_MARGIN (14)
 
@@ -132,40 +132,40 @@ welt_gui_t::welt_gui_t(karte_t* const welt, settings_t* const sets) :
 	inp_map_number.add_listener( this );
 	add_komponente( &inp_map_number );
 
-	intTopOfButton += option_spacing_y;
+	intTopOfButton += OPTION_SPACING_Y;
 
 	inp_x_size.init( sets->get_groesse_x(), 8, min(32000,4194304/sets->get_groesse_y()), sets->get_groesse_x()>=512 ? 128 : 64, false );
 	inp_x_size.set_pos(koord(LEFT_ARROW,intTopOfButton) );
 	inp_x_size.set_size(RIGHT_ARROW-LEFT_ARROW+10, 12);
 	inp_x_size.add_listener(this);
 	add_komponente( &inp_x_size );
-	intTopOfButton += option_spacing_y;
+	intTopOfButton += OPTION_SPACING_Y;
 
 	inp_y_size.init( sets->get_groesse_y(), 8, min(32000,4194304/sets->get_groesse_x()), sets->get_groesse_y()>=512 ? 128 : 64, false );
 	inp_y_size.set_pos(koord(LEFT_ARROW,intTopOfButton) );
 	inp_y_size.set_size(RIGHT_ARROW-LEFT_ARROW+10, 12);
 	inp_y_size.add_listener(this);
 	add_komponente( &inp_y_size );
-	intTopOfButton += option_spacing_y;
+	intTopOfButton += OPTION_SPACING_Y;
 
-	intTopOfButton += option_spacing_y;
+	intTopOfButton += OPTION_SPACING_Y;
 
 	intTopOfButton += 12;
 	
 	// Hajo: map buttons
-	random_map.set_pos( koord(LEFT_MARGIN, intTopOfButton) );
-	random_map.set_size(BUTTON_WIDER_WIDTH, BUTTON_HEIGHT);
 	random_map.set_typ(button_t::roundbox);
+	random_map.set_pos(LEFT_MARGIN, intTopOfButton);
+	random_map.set_size(BUTTON_WIDER_WIDTH, BUTTON_TALL_HEIGHT);
 	random_map.add_listener( this );
 	add_komponente( &random_map );
 
-	load_map.set_pos( koord(win_width-LEFT_MARGIN-BUTTON_WIDER_WIDTH, intTopOfButton) );
-	load_map.set_size(BUTTON_WIDER_WIDTH, BUTTON_HEIGHT);
 	load_map.set_typ(button_t::roundbox);
+	load_map.set_pos(win_width-LEFT_MARGIN-BUTTON_WIDER_WIDTH, intTopOfButton);
+	load_map.set_size(BUTTON_WIDER_WIDTH, BUTTON_TALL_HEIGHT);
 	load_map.add_listener( this );
 	add_komponente( &load_map );
 	
-	intTopOfButton += BUTTON_HEIGHT;
+	intTopOfButton += BUTTON_TALL_HEIGHT + 1;
 
 	// city stuff
 	intTopOfButton += 10;
@@ -175,7 +175,7 @@ welt_gui_t::welt_gui_t(karte_t* const welt, settings_t* const sets) :
 	inp_number_of_towns.set_limits(0,999);
 	inp_number_of_towns.set_value(abs(sets->get_anzahl_staedte()) );
 	add_komponente( &inp_number_of_towns );
-	intTopOfButton += option_spacing_y;
+	intTopOfButton += OPTION_SPACING_Y;
 
 	inp_town_size.set_pos(koord(right_column_x,intTopOfButton) );
 	inp_town_size.set_size(RIGHT_COLUMN_WIDTH, 12);
@@ -184,7 +184,7 @@ welt_gui_t::welt_gui_t(karte_t* const welt, settings_t* const sets) :
 	inp_town_size.set_increment_mode(50);
 	inp_town_size.set_value( sets->get_mittlere_einwohnerzahl() );
 	add_komponente( &inp_town_size );
-	intTopOfButton += option_spacing_y;
+	intTopOfButton += OPTION_SPACING_Y;
 
 	inp_intercity_road_len.set_pos(koord(right_column_x,intTopOfButton) );
 	inp_intercity_road_len.set_size(RIGHT_COLUMN_WIDTH, 12);
@@ -193,7 +193,7 @@ welt_gui_t::welt_gui_t(karte_t* const welt, settings_t* const sets) :
 	inp_intercity_road_len.set_value( umgebung_t::intercity_road_length );
 	inp_intercity_road_len.set_increment_mode( umgebung_t::intercity_road_length>=1000 ? 100 : 20 );
 	add_komponente( &inp_intercity_road_len );
-	intTopOfButton += option_spacing_y;
+	intTopOfButton += OPTION_SPACING_Y;
 
 	// industry stuff
 	inp_other_industries.set_pos(koord(right_column_x,intTopOfButton) );
@@ -202,7 +202,7 @@ welt_gui_t::welt_gui_t(karte_t* const welt, settings_t* const sets) :
 	inp_other_industries.set_limits(0,999);
 	inp_other_industries.set_value(abs(sets->get_land_industry_chains()) );
 	add_komponente( &inp_other_industries );
-	intTopOfButton += option_spacing_y;
+	intTopOfButton += OPTION_SPACING_Y;
 
 	inp_tourist_attractions.set_pos(koord(right_column_x,intTopOfButton) );
 	inp_tourist_attractions.set_size(RIGHT_COLUMN_WIDTH, 12);
@@ -210,12 +210,12 @@ welt_gui_t::welt_gui_t(karte_t* const welt, settings_t* const sets) :
 	inp_tourist_attractions.set_limits(0,999);
 	inp_tourist_attractions.set_value(abs(sets->get_tourist_attractions()) );
 	add_komponente( &inp_tourist_attractions );
-	intTopOfButton += option_spacing_y;
+	intTopOfButton += OPTION_SPACING_Y;
 
 	// other settings
 	intTopOfButton += 5;
-	use_intro_dates.set_pos( koord(LEFT_MARGIN,intTopOfButton) );
-	use_intro_dates.set_typ( button_t::square_state );
+	use_intro_dates.set_pos(LEFT_MARGIN + 1, intTopOfButton);
+	use_intro_dates.set_typ(button_t::square_state);
 	use_intro_dates.pressed = sets->get_use_timeline()&1;
 	use_intro_dates.add_listener( this );
 	add_komponente( &use_intro_dates );
@@ -227,67 +227,70 @@ welt_gui_t::welt_gui_t(karte_t* const welt, settings_t* const sets) :
 	inp_intro_date.set_increment_mode(10);
 	inp_intro_date.set_value(abs(sets->get_starting_year()) );
 	add_komponente( &inp_intro_date );
-	intTopOfButton += option_spacing_y;
+	
+	intTopOfButton += OPTION_SPACING_Y;
 
-	use_beginner_mode.set_pos( koord(LEFT_MARGIN,intTopOfButton) );
-	use_beginner_mode.set_typ( button_t::square_state );
+	use_beginner_mode.set_pos(LEFT_MARGIN + 1, intTopOfButton);
+	use_beginner_mode.set_typ(button_t::square_state);
 	use_beginner_mode.pressed = sets->get_beginner_mode();
 	use_beginner_mode.add_listener( this );
 	add_komponente( &use_beginner_mode );
-	intTopOfButton += option_spacing_y;
+	intTopOfButton += OPTION_SPACING_Y;
 
 	intTopOfButton += 14; // Hajo: skip divider
 
 	// Hajo: game settings button
-	open_setting_gui.set_pos( koord(LEFT_MARGIN,intTopOfButton) );
-	open_setting_gui.set_size(BUTTON_WIDER_WIDTH, BUTTON_HEIGHT);
-	open_setting_gui.set_typ( button_t::roundbox );
+	open_setting_gui.set_typ(button_t::roundbox);
+	open_setting_gui.set_pos(LEFT_MARGIN,intTopOfButton);
+	open_setting_gui.set_size(BUTTON_WIDER_WIDTH, BUTTON_TALL_HEIGHT);
 	open_setting_gui.set_text("Game Settings");
 	open_setting_gui.add_listener( this );
 	open_setting_gui.pressed = win_get_magic( magic_settings_frame_t );
 	add_komponente( &open_setting_gui );
 
 	// Hajo: climate settings button
-	open_climate_gui.set_pos( koord(win_width-LEFT_MARGIN-BUTTON_WIDER_WIDTH, intTopOfButton) );
-	open_climate_gui.set_size(BUTTON_WIDER_WIDTH, BUTTON_HEIGHT);
-	open_climate_gui.set_typ( button_t::roundbox );
+	open_climate_gui.set_typ(button_t::roundbox);
+	open_climate_gui.set_pos(win_width-LEFT_MARGIN-BUTTON_WIDER_WIDTH, intTopOfButton);
+	open_climate_gui.set_size(BUTTON_WIDER_WIDTH, BUTTON_TALL_HEIGHT);
 	open_climate_gui.add_listener( this );
 	open_climate_gui.set_text("Climate Control");
 	open_climate_gui.pressed = win_get_magic( magic_climate );
 	add_komponente( &open_climate_gui );
-	intTopOfButton += option_spacing_y;
+	intTopOfButton += OPTION_SPACING_Y;
 
 	// load game
 	intTopOfButton += 16; // Hajo: skip divider
-	load_game.set_pos( koord(LEFT_MARGIN, intTopOfButton) );
-	load_game.set_size(BUTTON_WIDER_WIDTH, BUTTON_HEIGHT);
+
 	load_game.set_typ(button_t::roundbox);
+	load_game.set_pos(LEFT_MARGIN, intTopOfButton);
+	load_game.set_size(BUTTON_WIDER_WIDTH, BUTTON_TALL_HEIGHT);
 	load_game.add_listener( this );
 	add_komponente( &load_game );
 
 	// load scenario
-	load_scenario.set_pos( koord(win_width-LEFT_MARGIN-BUTTON_WIDER_WIDTH, intTopOfButton) );
-	load_scenario.set_size(BUTTON_WIDER_WIDTH, BUTTON_HEIGHT);
 	load_scenario.set_typ(button_t::roundbox);
+	load_scenario.set_pos(win_width-LEFT_MARGIN-BUTTON_WIDER_WIDTH, intTopOfButton);
+	load_scenario.set_size(BUTTON_WIDER_WIDTH, BUTTON_TALL_HEIGHT);
 	load_scenario.add_listener( this );
 	add_komponente( &load_scenario );
 
 	// start game
-	intTopOfButton += 5+BUTTON_HEIGHT;
-	start_game.set_pos( koord(LEFT_MARGIN, intTopOfButton) );
-	start_game.set_size(BUTTON_WIDER_WIDTH, BUTTON_HEIGHT);
+	intTopOfButton += 5+BUTTON_TALL_HEIGHT;
+
 	start_game.set_typ(button_t::roundbox);
+	start_game.set_pos(LEFT_MARGIN, intTopOfButton);
+	start_game.set_size(BUTTON_WIDER_WIDTH, BUTTON_TALL_HEIGHT);
 	start_game.add_listener( this );
 	add_komponente( &start_game );
 
 	// quit game
-	quit_game.set_pos( koord(win_width-LEFT_MARGIN-BUTTON_WIDER_WIDTH, intTopOfButton) );
-	quit_game.set_size(BUTTON_WIDER_WIDTH, BUTTON_HEIGHT);
 	quit_game.set_typ(button_t::roundbox);
+	quit_game.set_pos(win_width-LEFT_MARGIN-BUTTON_WIDER_WIDTH, intTopOfButton);
+	quit_game.set_size(BUTTON_WIDER_WIDTH, BUTTON_TALL_HEIGHT);
 	quit_game.add_listener( this );
 	add_komponente( &quit_game );
 
-	const int win_height = intTopOfButton+BUTTON_HEIGHT+D_BOTTOM_MARGIN+TITLEBAR_HEIGHT;
+	const int win_height = intTopOfButton+BUTTON_TALL_HEIGHT+D_BOTTOM_MARGIN+TITLEBAR_HEIGHT;
 	set_fenstergroesse(koord(win_width, win_height));
 
 	update_preview();
@@ -612,7 +615,7 @@ void welt_gui_t::zeichnen(koord pos, koord gr)
 	y += 3;
 	display_proportional_clip(x, y, translator::translate("2WORLD_CHOOSE"), ALIGN_LEFT, COL_BLACK, true);
 	// since the display is done via a textfiled, we have nothing to do
-	y += option_spacing_y;
+	y += OPTION_SPACING_Y;
 
 	const uint sx = sets->get_groesse_x();
 	const uint sy = sets->get_groesse_y();
@@ -632,33 +635,33 @@ void welt_gui_t::zeichnen(koord pos, koord gr)
 	
 	display_proportional_clip(x, y, translator::translate("Map width:"), ALIGN_LEFT, COL_BLACK, true);
 	
-	y += option_spacing_y;		// x size
+	y += OPTION_SPACING_Y;		// x size
 	display_proportional_clip(x, y, translator::translate("Map height:"), ALIGN_LEFT, COL_BLACK, true);
 	
-	y += option_spacing_y+5;	// y size
+	y += OPTION_SPACING_Y+5;	// y size
 	buf.printf( translator::translate("Required memory: %dMB"), memory );
 	display_proportional_clip(x, y, buf, ALIGN_LEFT, COL_BLACK, true);
 
-	y += BUTTON_HEIGHT+31;		// Hajo: skip buttons
+	y += BUTTON_HEIGHT+34;		// Hajo: skip buttons
 
 	display_proportional_clip(x, y, translator::translate("5WORLD_CHOOSE"), ALIGN_LEFT, COL_BLACK, true);
-	y += option_spacing_y;
+	y += OPTION_SPACING_Y;
 	display_proportional_clip(x, y, translator::translate("Median Citizen per town"), ALIGN_LEFT, COL_BLACK, true);
-	y += option_spacing_y;
+	y += OPTION_SPACING_Y;
 	display_proportional_clip(x, y, translator::translate("Intercity road len:"), ALIGN_LEFT, COL_BLACK, true);
-	y += option_spacing_y;
+	y += OPTION_SPACING_Y;
 	display_proportional_clip(x, y, translator::translate("Land industries"), ALIGN_LEFT, COL_BLACK, true);
-	y += option_spacing_y;
+	y += OPTION_SPACING_Y;
 	display_proportional_clip(x, y, translator::translate("Tourist attractions"), ALIGN_LEFT, COL_BLACK, true);
-	y += option_spacing_y+5;
+	y += OPTION_SPACING_Y+5;
 
-	y += option_spacing_y+12+5;
-	y += option_spacing_y+5;
-	y += 6;
+	y += OPTION_SPACING_Y+12+5;
+	y += OPTION_SPACING_Y+5;
+	y += 7;
 
 	// Hajo: show dividers
 	display_ddd_box_clip(x, y-22, gr.x - LEFT_MARGIN*2, 0, MN_GREY0, MN_GREY4);
 
-	y += 8;
+	y += 10;
 	display_ddd_box_clip(x, y, gr.x - LEFT_MARGIN*2, 0, MN_GREY0, MN_GREY4);
 }

@@ -99,7 +99,8 @@ void pakselector_t::fill_list()
 	FOR(slist_tpl<entry>, const& i, entries) {
 		char path[1024];
 		sprintf(path,"%saddons/%s", umgebung_t::user_dir, i.button->get_text());
-		i.del->groesse.x += 150;
+		koord size = i.del->get_groesse();
+		i.del->set_size(size.x + 150, size.y);
 		i.del->set_text("Load with addons");
 		i.button->set_pos(koord(150,0) + i.button->get_pos());
 		if(  chdir( path )!=0  ) {

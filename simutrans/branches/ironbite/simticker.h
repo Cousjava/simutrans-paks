@@ -25,6 +25,8 @@ namespace ticker
 {
 	bool empty();
 
+	bool is_transparent();
+
 	/**
 	 * Add a message to the message list
 	 * @param pos    position of the event

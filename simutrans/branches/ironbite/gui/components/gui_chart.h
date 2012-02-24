@@ -6,13 +6,15 @@
 #ifndef gui_chart_h
 #define gui_chart_h
 
-#include "../../simtypes.h"
 #include "gui_komponente.h"
-#include "../../tpl/slist_tpl.h"
 
-// CURVE TYPES
+// Curve types
 #define STANDARD 0
 #define MONEY 1
+
+template <class T> class slist_tpl; 
+struct curve_t;
+struct line_t;
 
 /**
  * Draws a group of curves.
@@ -28,6 +30,7 @@ public:
 	void set_background(int color);
 
 	gui_chart_t();
+	virtual ~gui_chart_t();
 
 	/*
 	 * paint chart
@@ -68,9 +71,9 @@ public:
 
 	uint32 add_line(int color, const sint64 *value, int times, bool show, bool show_value, int precision, convert_proc proc=NULL);
 
-	void remove_curves() { curves.clear(); }
+	void remove_curves();
 
-	void remove_lines() { lines.clear(); }
+	void remove_lines();
 
 	/**
 	 * Hide a curve of the set
@@ -100,45 +103,14 @@ public:
 
 	void set_show_y_axis(bool yesno) { show_y_axis = yesno; }
 
-	int get_curve_count() { return curves.get_count(); }
+	int get_curve_count();
 
 private:
 
 	void calc_gui_chart_values(sint64 *baseline, float *scale, char *, char *) const;
 
-	/*
-	 * curve struct
-	 * @author hsiegeln
-	 */
-	struct curve_t {
-		int color;
-		const sint64 *values;
-		int size;
-		int offset;
-		int elements;
-		bool show;
-		bool show_value; // show first value of curve as number on chart?
-		int type; // 0 = standard, 1 = money
-		int precision;	// how many numbers ...
-		convert_proc convert;	// Knightly : procedure for converting supplied values before use
-	};
-
-	/**
-	 * line struct
-	 * @author Knightly
-	 */
-	struct line_t {
-		int color;
-		const sint64 *value;		// pointer to a single value only
-		int times;					// number of times the same value is repeated
-		bool show;
-		bool show_value;			// whether to show the value as number on the chart
-		int precision;
-		convert_proc convert;	// Knightly : procedure for converting supplied value before use
-	};
-
-	slist_tpl <curve_t> curves;
-	slist_tpl <line_t> lines;
+	slist_tpl <curve_t> * curves;
+	slist_tpl <line_t> * lines;
 
 	int x_elements, y_elements;
 
