@@ -167,14 +167,15 @@ void gui_frame_t::resize(const koord delta)
 
 
 /**
- * komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
+ * Komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
  * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
  * in dem die Komponente dargestellt wird.
+ *
  * @author Hj. Malthaner
  */
-void gui_frame_t::zeichnen(koord pos, koord gr)
+void gui_frame_t::zeichnen(const koord pos, const koord gr)
 {
-	// ok, resized, move or draw for the first time
+	// Hajo: resized, moved or drawn for the first time
 	if(dirty) {
 		mark_rect_dirty_wc(pos.x,pos.y,pos.x+gr.x,pos.y+gr.y);
 		dirty = false;
@@ -183,29 +184,39 @@ void gui_frame_t::zeichnen(koord pos, koord gr)
 	// draw background
 	PUSH_CLIP(pos.x+1,pos.y+16,gr.x-2,gr.y-16);
 
-	// Hajo: skinned windows code
-	if(skinverwaltung_t::window_skin!=NULL) {
-		const int img = skinverwaltung_t::window_skin->get_bild_nr(0);
+	// Hajo: this shoudl be configurable ...
+	if(true)
+	{
+		// Hajo: test transparent body
+	
+		display_blend_50(pos.x, pos.y+16, gr.x, gr.y-16, 0xFFF0F7, false);
+	}
+	else
+	{
+		// Hajo: skinned windows code
+		if(skinverwaltung_t::window_skin!=NULL) {
+			const int img = skinverwaltung_t::window_skin->get_bild_nr(0);
 
-		for(int j=0; j<gr.y; j+=64) {
-			for(int i=0; i<gr.x; i+=64) {
-				// the background will not trigger a redraw!
-				display_color_img(img, pos.x+1 + i, pos.y+16 + j, 0, false, false);
+			for(int j=0; j<gr.y; j+=64) {
+				for(int i=0; i<gr.x; i+=64) {
+					// the background will not trigger a redraw!
+					display_color_img(img, pos.x+1 + i, pos.y+16 + j, 0, false, false);
+				}
 			}
 		}
+		else {
+			// Hajo: plain colored box
+			display_fillbox_wh(pos.x+1, pos.y+16, gr.x-2, gr.y-16, MN_GREY1, false);
+		}
+
+		// Hajo: left, right
+		display_vline_wh(pos.x, pos.y+16, gr.y-16, MN_GREY4, false);
+		display_vline_wh(pos.x+gr.x-1, pos.y+16, gr.y-16, MN_GREY0, false);
+
+		// Hajo: bottom line
+		display_fillbox_wh(pos.x, pos.y+gr.y-1, gr.x, 1, MN_GREY0, false);
 	}
-	else {
-		// empty box
-		display_fillbox_wh(pos.x+1, pos.y+16, gr.x-2, gr.y-16, MN_GREY1, false);
-	}
-
-	// Hajo: left, right
-	display_vline_wh(pos.x, pos.y+16, gr.y-16, MN_GREY4, false);
-	display_vline_wh(pos.x+gr.x-1, pos.y+16, gr.y-16, MN_GREY0, false);
-
-	// Hajo: bottom line
-	display_fillbox_wh(pos.x, pos.y+gr.y-1, gr.x, 1, MN_GREY0, false);
-
+	
 	container->zeichnen(pos);
 
 	POP_CLIP();

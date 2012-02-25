@@ -629,6 +629,31 @@ static bool clip_lr(KOORD_VAL *x, KOORD_VAL *w, const KOORD_VAL left, const KOOR
 	return *w > 0;
 }
 
+static bool clip(int *x, int *w, const int left, const int right)
+{
+	const int l = *x;      // leftmost pixel
+	const int r = *x + *w; // rightmost pixel
+
+	if (*w <= 0 || l >= right || r <= left) 
+	{
+		*w = 0;
+		return false;
+	}
+
+	// Hajo: there might be something to show.
+	if (l < left) 
+	{
+		*w -= left - l;
+		*x = left;
+	}
+	if (r > right) 
+	{
+		*w -= r - right;
+	}
+	
+	// Hajo: something left?
+	return *w > 0;
+}
 
 /**
  * Ermittelt Clipping Rechteck
@@ -2860,23 +2885,33 @@ static void display_pixel(KOORD_VAL x, KOORD_VAL y, PIXVAL color)
 	}
 }
 
+/**
+ * Get a mask for pixel blending operations, based on system RGB555 or system RGB565
+ *
+ * @author Hj. Malthaner
+ */
+static PIXVAL get_system_rgb_mask()
+{
+	const uint32 c = get_system_color( 0, 255, 0 ) >> 5;
+	return (c==31) ? 0xFBDE : 0xF7DE;
+}
 
 /**
  * Halves color values in a rectanglar box area.
  *
  * @author Hj. Malthaner
  */
-void display_shadow_50(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL w, KOORD_VAL h, bool dirty)
+void display_shadow_50(int xp, int yp, int w, int h, const bool dirty)
 {
-	if (clip_lr(&xp, &w, clip_rect.x, clip_rect.xx) && clip_lr(&yp, &h, clip_rect.y, clip_rect.yy)) 
+	if (clip(&xp, &w, clip_rect.x, clip_rect.xx) && clip(&yp, &h, clip_rect.y, clip_rect.yy)) 
 	{
-		uint32 c = get_system_color( 0, 255, 0 ) >> 5;
-		const PIXVAL mask = (c==31) ? 0xFBDE : 0xF7DE;
 
 		if (dirty) {
 			mark_rect_dirty_nc(xp, yp, xp + w - 1, yp + h - 1);
 		}
 
+		const PIXVAL mask = get_system_rgb_mask();
+		
 		for(int y=0; y<h; y++)
 		{
 			PIXVAL *p = textur + xp + (yp+y) * disp_width;
@@ -2890,6 +2925,38 @@ void display_shadow_50(KOORD_VAL xp, KOORD_VAL yp, KOORD_VAL w, KOORD_VAL h, boo
 	}
 }
 
+/**
+ * Blends color values in a rectanglar box area.
+ *
+ * @author Hj. Malthaner
+ */
+void display_blend_50(int xp, int yp, int w, int h, const int rgb, const bool dirty)
+{
+	if (clip(&xp, &w, clip_rect.x, clip_rect.xx) && clip(&yp, &h, clip_rect.y, clip_rect.yy)) 
+	{
+		if (dirty) {
+			mark_rect_dirty_nc(xp, yp, xp + w - 1, yp + h - 1);
+		}
+
+		const int R = (rgb >> 16) & 0xFF;
+		const int G = (rgb >> 8) & 0xFF;
+		const int B = (rgb) & 0xFF;
+		
+		const PIXVAL mask = get_system_rgb_mask();
+		const PIXVAL masked_rgb = get_system_color(R, G, B) & mask;
+		
+		for(int y=0; y<h; y++)
+		{
+			PIXVAL *p = textur + xp + (yp+y) * disp_width;
+			
+			for(int x=0; x<w; x++)
+			{
+				const PIXVAL v = ((*p & mask) + masked_rgb) >> 1;
+				*p++ = v;
+			}
+		}
+	}
+}
 
 /**
  * Zeichnet gefuelltes Rechteck
