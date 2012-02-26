@@ -8,8 +8,6 @@
 #ifndef SIMTICKER_H
 #define SIMTICKER_H
 
-#include "simcolor.h"
-
 // ticker height
 #define TICKER_HEIGHT      15
 // ticker vertical position from bottom of screen
@@ -19,12 +17,17 @@ class koord;
 
 /**
  * A very simple news ticker.
+ *
  * The news are displayed by karte_vollansicht_t
  */
 namespace ticker
 {
 	bool empty();
 
+	/**
+	 * Check if the ticker is set to transparent.
+	 * @author Hj. Malthaner
+	 */
 	bool is_transparent();
 
 	/**
@@ -32,7 +35,7 @@ namespace ticker
 	 * @param pos    position of the event
 	 * @param color  message color 
 	 */
-	void add_msg(const char*, koord pos, int color = COL_BLACK);
+	void add_msg(const char*, koord pos, int color);
 
 	/**
 	 * Ticker infowin pops up

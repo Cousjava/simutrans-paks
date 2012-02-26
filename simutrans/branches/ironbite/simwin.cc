@@ -115,6 +115,8 @@ static vector_tpl<simwin_t> kill_list(MAX_WIN);
 
 static karte_t* wl = NULL; // Zeiger auf aktuelle Welt, wird in win_set_welt gesetzt
 
+static int top_win(int win, bool keep_state );
+static void display_win(int win);
 
 
 // Hajo: tooltip data
@@ -539,11 +541,11 @@ int win_get_open_count()
 
 
 // brings a window to front, if open
-bool top_win(const gui_frame_t *gui)
+bool top_win( const gui_frame_t *gui, bool keep_rollup )
 {
 	for(  uint i=0;  i<windows.get_count()-1;  i++  ) {
 		if(windows[ i ].gui==gui) {
-			top_win(i);
+			top_win(i,keep_rollup);
 			return true;
 		}
 	}
@@ -873,7 +875,7 @@ void destroy_all_win(bool destroy_sticky)
 }
 
 
-int top_win(int win)
+int top_win(int win, bool keep_state )
 {
 	if(  (uint32)win==windows.get_count()-1  ) {
 		return win;
@@ -884,7 +886,9 @@ int top_win(int win)
 
 	simwin_t tmp = windows[ win ];
 	windows.remove_at( win );
-	tmp.rollup = false;	// make visible when topping
+	if(  !keep_state  ) {
+		tmp.rollup = false;	// make visible when topping
+	}
 	windows.append(tmp);
 
 	 // mark new dirty
@@ -1348,11 +1352,13 @@ bool check_pos_win(event_t *ev)
 		return true;
 	}
 
-	// cursor event only go to top window
+	// cursor event only go to top window (but not if rolled up)
 	if(  ev->ev_class == EVENT_KEYBOARD  &&  !windows.empty()  ) {
 		simwin_t&               win  = windows.back();
-		inside_event_handling = win.gui;
-		swallowed = win.gui->infowin_event(ev);
+		if(  !win.rollup  )  {
+			inside_event_handling = win.gui;
+			swallowed = win.gui->infowin_event(ev);
+		}
 		inside_event_handling = NULL;
 		process_kill_list();
 		return swallowed;
@@ -1401,7 +1407,7 @@ bool check_pos_win(event_t *ev)
 
 			// Top window first
 			if(  (int)windows.get_count()-1>i  &&  IS_LEFTCLICK(ev)  &&  (!windows[ i ].rollup  ||  ev->cy<windows[ i ].pos.y+16)  ) {
-				i = top_win(i);
+				i = top_win(i,false);
 			}
 
 			// Hajo: if within title bar && window needs decoration
@@ -1469,7 +1475,7 @@ bool check_pos_win(event_t *ev)
 						break;
 					default : // Title
 						if (IS_LEFTDRAG(ev)) {
-							i = top_win(i);
+							i = top_win(i,false);
 							move_win(i, ev);
 							is_moving = i;
 						}

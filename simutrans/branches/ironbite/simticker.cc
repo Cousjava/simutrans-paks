@@ -41,6 +41,10 @@ bool ticker::empty()
 	return list.empty();
 }
 
+/**
+ * Check if the ticker is set to transparent.
+ * @author Hj. Malthaner
+ */
 bool ticker::is_transparent()
 {
 	return transparent;
@@ -156,7 +160,8 @@ void ticker::redraw_ticker()
 		
 		if(transparent)
 		{
-			display_shadow_50(0, start_y+1, width, TICKER_HEIGHT, true);
+			// display_shadow_50(0, start_y+1, width, TICKER_HEIGHT, true);
+			display_blend_50(0, start_y+1, width, TICKER_HEIGHT, 0xDFD0D7, true);
 		}
 		else
 		{
