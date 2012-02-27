@@ -11,14 +11,14 @@ Name=hjm-deco_1
 copyright=HjM
 cost=0
 noinfo=1
-trees_on_top=0
+trees_on_top=1
 DistributionWeight=15
 intro_year=1
 intro_month=1
 retire_year=5460
 retire_month=1
 #desert, tropic, mediterran, temperate, tundra, rocky, arctic
-climates=tropic, mediterran, temperate, tundra, rocky
+climates=desert, mediterran, temperate, tundra, rocky, arctic
 seasons=2
 Image[0][0]=hjm-deco.0.0
 Image[0][1]=hjm-deco.1.0
@@ -28,7 +28,7 @@ Name=hjm-deco_2
 copyright=HjM
 cost=0
 noinfo=1
-trees_on_top=0
+trees_on_top=1
 DistributionWeight=15
 intro_year=1
 intro_month=1
@@ -45,7 +45,7 @@ Name=hjm-deco_3
 copyright=HjM
 cost=0
 noinfo=1
-trees_on_top=0
+trees_on_top=1
 DistributionWeight=15
 intro_year=1
 intro_month=1
@@ -76,4 +76,154 @@ climates=tropic, mediterran, temperate, tundra, rocky
 seasons=2
 Image[0][0]=hjm-deco.0.3
 Image[0][1]=hjm-deco.1.3
+----------------------------------------
+Obj=ground_obj
+Name=hjm-rock_1
+copyright=HjM
+cost=300
+noinfo=1
+trees_on_top=0
+DistributionWeight=15
+intro_year=1
+intro_month=1
+retire_year=5460
+retire_month=1
+#desert, tropic, mediterran, temperate, tundra, rocky, arctic
+climates=desert, tropic, mediterran, temperate, tundra, rocky, arctic
+Image[0][0]=hjm-deco.2.0
+----------------------------------------
+Obj=ground_obj
+Name=hjm-rock_2
+copyright=HjM
+cost=500
+noinfo=1
+trees_on_top=0
+DistributionWeight=15
+intro_year=1
+intro_month=1
+retire_year=5460
+retire_month=1
+#desert, tropic, mediterran, temperate, tundra, rocky, arctic
+climates=desert, tropic, mediterran, temperate, tundra, rocky, arctic
+Image[0][0]=hjm-deco.3.1
+----------------------------------------
+Obj=ground_obj
+Name=hjm-green_patch_1
+copyright=HjM
+cost=0
+noinfo=1
+trees_on_top=1
+DistributionWeight=15
+intro_year=1
+intro_month=1
+retire_year=5460
+retire_month=1
+#desert, tropic, mediterran, temperate, tundra, rocky, arctic
+climates=desert, tropic, mediterran, temperate, tundra, rocky, arctic
+Image[0][0]=hjm-deco.2.1
+----------------------------------------
+Obj=ground_obj
+Name=hjm-green_patch_2
+copyright=HjM
+cost=0
+noinfo=1
+trees_on_top=1
+DistributionWeight=15
+intro_year=1
+intro_month=1
+retire_year=5460
+retire_month=1
+#desert, tropic, mediterran, temperate, tundra, rocky, arctic
+climates=desert, tropic, mediterran, temperate, tundra, rocky, arctic
+Image[0][0]=hjm-deco.2.2
+----------------------------------------
+Obj=ground_obj
+Name=hjm-mushroom_patch_1
+copyright=HjM
+cost=0
+noinfo=1
+trees_on_top=1
+DistributionWeight=15
+intro_year=1
+intro_month=1
+retire_year=5460
+retire_month=1
+#desert, tropic, mediterran, temperate, tundra, rocky, arctic
+climates=desert, tropic, mediterran, temperate, tundra
+Image[0][0]=hjm-deco.2.3
+----------------------------------------
+Obj=ground_obj
+Name=hjm-ochre_spots
+copyright=HjM
+cost=0
+noinfo=1
+trees_on_top=1
+DistributionWeight=15
+intro_year=1
+intro_month=1
+retire_year=5460
+retire_month=1
+#desert, tropic, mediterran, temperate, tundra, rocky, arctic
+climates=desert, tropic, mediterran, temperate, tundra
+Image[0][0]=hjm-deco.2.4
+----------------------------------------
+Obj=ground_obj
+Name=hjm-gray_spots
+copyright=HjM
+cost=0
+noinfo=1
+trees_on_top=1
+DistributionWeight=15
+intro_year=1
+intro_month=1
+retire_year=5460
+retire_month=1
+#desert, tropic, mediterran, temperate, tundra, rocky, arctic
+climates=tropic, mediterran, temperate, tundra, arctic
+Image[0][0]=hjm-deco.2.5
+----------------------------------------
+Obj=ground_obj
+Name=hjm-yellow_flowers
+copyright=HjM
+cost=0
+noinfo=1
+trees_on_top=1
+DistributionWeight=15
+intro_year=1
+intro_month=1
+retire_year=5460
+retire_month=1
+#desert, tropic, mediterran, temperate, tundra, rocky, arctic
+climates=desert, tropic, mediterran, temperate, tundra, arctic
+Image[0][0]=hjm-deco.1.4
+----------------------------------------
+Obj=ground_obj
+Name=hjm-violet_flowers
+copyright=HjM
+cost=0
+noinfo=1
+trees_on_top=1
+DistributionWeight=15
+intro_year=1
+intro_month=1
+retire_year=5460
+retire_month=1
+#desert, tropic, mediterran, temperate, tundra, rocky, arctic
+climates=desert, tropic, mediterran, temperate, tundra, arctic
+Image[0][0]=hjm-deco.1.5
+----------------------------------------
+Obj=ground_obj
+Name=hjm-white_blue_flowers
+copyright=HjM
+cost=0
+noinfo=1
+trees_on_top=1
+DistributionWeight=15
+intro_year=1
+intro_month=1
+retire_year=5460
+retire_month=1
+#desert, tropic, mediterran, temperate, tundra, rocky, arctic
+climates=desert, tropic, mediterran, temperate, tundra, arctic
+Image[0][0]=hjm-deco.4.1
 ----------------------------------------
