@@ -15,7 +15,6 @@
 
 #include "simconst.h"
 #include "simtypes.h"
-#include "simunits.h"
 
 #include "convoihandle_t.h"
 #include "halthandle_t.h"
@@ -29,8 +28,6 @@
 #include "dataobj/pwd_hash.h"
 
 #include "simplan.h"
-
-#include "simdebug.h"
 
 struct event_t;
 struct sound_info;
@@ -620,17 +617,7 @@ public:
 	 *
 	 * @author neroden
 	 */
-	uint32 speed_to_tiles_per_month(uint32 speed) const
-	{
-		const int left_shift = ticks_per_world_month_shift - YARDS_PER_TILE_SHIFT;
-		if (left_shift >= 0) {
-			return speed << left_shift;
-		} else {
-			const int right_shift = -left_shift;
-			// round to nearest
-			return (speed + (1<<(right_shift -1)) ) >> right_shift;
-		}
-	}
+	uint32 speed_to_tiles_per_month(uint32 speed) const;
 
 	sint32 get_time_multiplier() const { return time_multiplier; }
 	void change_time_multiplier( sint32 delta );

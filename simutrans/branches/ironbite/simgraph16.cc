@@ -1,9 +1,8 @@
 /*
  * Copyright 1997, 2001 Hj. Malthaner
- * hansjoerg.malthaner@gmx.de
+ * 
  * Copyright 2010 Simutrans contributors
  * Available under the Artistic License (see license.txt)
- *
  */
 
 #include <stdlib.h>
@@ -2934,17 +2933,18 @@ void display_blend_50(int xp, int yp, int w, int h, const int rgb, const bool di
 {
 	if (clip(&xp, &w, clip_rect.x, clip_rect.xx) && clip(&yp, &h, clip_rect.y, clip_rect.yy)) 
 	{
-		if (dirty) {
+		if (dirty) 
+		{
 			mark_rect_dirty_nc(xp, yp, xp + w - 1, yp + h - 1);
 		}
-
+		
 		const int R = (rgb >> 16) & 0xFF;
 		const int G = (rgb >> 8) & 0xFF;
 		const int B = (rgb) & 0xFF;
 		
 		const PIXVAL mask = get_system_rgb_mask();
 		const PIXVAL masked_rgb = get_system_color(R, G, B) & mask;
-		
+
 		for(int y=0; y<h; y++)
 		{
 			PIXVAL *p = textur + xp + (yp+y) * disp_width;
@@ -3507,8 +3507,12 @@ void display_ddd_box(KOORD_VAL x1, KOORD_VAL y1, KOORD_VAL w, KOORD_VAL h, PLAYE
 void display_outline_proportional(KOORD_VAL xpos, KOORD_VAL ypos, PLAYER_COLOR_VAL text_color, PLAYER_COLOR_VAL shadow_color, const char *text, int dirty)
 {
 	const int flags = ALIGN_LEFT | DT_CLIP | (dirty ? DT_DIRTY : 0);
-	display_text_proportional_len_clip(xpos - 1, ypos - 1 + (12 - large_font_height) / 2, text, flags, shadow_color, -1);
-	display_text_proportional_len_clip(xpos + 1, ypos + 1 + (12 - large_font_height) / 2, text, flags, shadow_color, -1);
+
+	display_text_proportional_len_clip(xpos - 1, ypos + (12 - large_font_height) / 2, text, flags, shadow_color, -1);
+	display_text_proportional_len_clip(xpos + 1, ypos + (12 - large_font_height) / 2, text, flags, shadow_color, -1);
+	display_text_proportional_len_clip(xpos, ypos - 1 + (12 - large_font_height) / 2, text, flags, shadow_color, -1);
+	display_text_proportional_len_clip(xpos, ypos + 1 + (12 - large_font_height) / 2, text, flags, shadow_color, -1);
+
 	display_text_proportional_len_clip(xpos, ypos + (12 - large_font_height) / 2, text, flags, text_color, -1);
 }
 
@@ -3516,6 +3520,7 @@ void display_outline_proportional(KOORD_VAL xpos, KOORD_VAL ypos, PLAYER_COLOR_V
 void display_shadow_proportional(KOORD_VAL xpos, KOORD_VAL ypos, PLAYER_COLOR_VAL text_color, PLAYER_COLOR_VAL shadow_color, const char *text, int dirty)
 {
 	const int flags = ALIGN_LEFT | DT_CLIP | (dirty ? DT_DIRTY : 0);
+
 	display_text_proportional_len_clip(xpos + 1, ypos + 1 + (12 - large_font_height) / 2, text, flags, shadow_color, -1);
 	display_text_proportional_len_clip(xpos, ypos + (12 - large_font_height) / 2, text, flags, text_color, -1);
 }

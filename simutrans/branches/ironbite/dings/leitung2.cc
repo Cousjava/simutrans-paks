@@ -275,6 +275,15 @@ void leitung_t::calc_bild()
 	}
 }
 
+image_id leitung_t::get_bild() const 
+{
+	return is_crossing ? IMG_LEER : bild;
+}
+
+image_id leitung_t::get_after_bild() const 
+{
+	return is_crossing ? bild : IMG_LEER;
+}
 
 /**
  * Recalculates the images of all neighbouring

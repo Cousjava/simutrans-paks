@@ -102,7 +102,7 @@ void banner_t::zeichnen(const koord pos, const koord gr )
 	// define which colors to use for which semantics of text ...
 	const int color_text = COL_WHITE;
 	const int color_high = 207;
-        const int color_shadow = COL_GREY1;
+        const int color_shadow = COL_GREY2;
         
 	// Hajo: layout constants for this dialog
         const int indent = 60;
@@ -130,6 +130,27 @@ void banner_t::zeichnen(const koord pos, const koord gr )
 			}
 		}
 	}
+
+	if(skinverwaltung_t::iron_skin)
+	{
+		const int img_screw = skinverwaltung_t::iron_skin->get_bild_nr(62);
+
+		if(img_screw != IMG_LEER)
+		{
+			display_base_img(img_screw,
+					 pos.x+10, pos.y + TITLEBAR_HEIGHT+10, 
+					 0, false, false);
+			display_base_img(img_screw,
+					 pos.x+gr.x-10-16, pos.y + TITLEBAR_HEIGHT+10, 
+					 0, false, false);
+			display_base_img(img_screw,
+					 pos.x+10, pos.y+gr.y-10-16, 
+					 0, false, false);
+			display_base_img(img_screw,
+					 pos.x+gr.x-10-16, pos.y+gr.y-10-16, 
+					 0, false, false);
+		}
+	}
 	
 	// Hajo: now display the intro message
 	/*
@@ -150,33 +171,33 @@ void banner_t::zeichnen(const koord pos, const koord gr )
 	yp += line_space+6;
 	
 	
-	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
+	display_outline_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
                                      "Simutrans Iron Bite is developed by Hj. Malthaner,", true );
 	yp += line_space;
-	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
+	display_outline_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
                                      " based on Simutrans 111.2 by Markus Pristovsek", true );
 	yp += line_space;
-	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
+	display_outline_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
                                      "  and the Simutrans Team, which is based on", true );
 	yp += line_space;
-	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
+	display_outline_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
                                      "   Simutrans 0.84.21.2 by Hj. Malthaner et. al.", true );
 	yp += line_space;
-	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
+	display_outline_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
                                      "Simutrans is available under the Artistic Licence.", true );
 	yp += line_space+5;
 
-	display_shadow_proportional( pos.x + margin, yp, color_high, color_shadow,
+	display_outline_proportional( pos.x + margin, yp, color_high, color_shadow,
                                      "   Simutrans is free software. If you paid for it, ask for a refund!", true );
 	yp += line_space+5;
 
-	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
+	display_outline_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
                                      "     For questions and support please visit:", true );
 	yp += line_space+5;
-	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
+	display_outline_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
                                      "           http://forum.simutrans.com", true );
 	yp += line_space;
-	display_shadow_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
+	display_outline_proportional( pos.x + margin + indent, yp, color_text, color_shadow,
                                      "        http://wiki.simutrans-germany.com", true );
 
 	yp += line_space+9;

@@ -12,7 +12,7 @@
  * The log for all messages
  * @author Hj. Malthaner
  */
-log_t *dbg = NULL;
+log_t *dbg = new log_t("stderr", true, true, true, "Iron Bite default logging\n");
 
 
 /**

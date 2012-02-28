@@ -64,6 +64,9 @@
 #include "gui/schedule_list.h"
 
 
+#include "ironbite/configuration_settings.h"
+
+
 
 #define dragger_size 12
 
@@ -913,6 +916,41 @@ int top_win(int win, bool keep_state )
 	return windows.get_count()-1;
 }
 
+
+/**
+ * Draw a drop shadow for a window
+ * @author Hj. Malthaner
+ */
+static void draw_drop_shadow(const int xpos, const int ypos, 
+                             const int width, const int height, 
+			     const int yoff, const int rgb)
+{
+	const int shadow = 2;
+	
+	// Hajo: try minmal roundings at the corners ...
+	
+	// bottom
+	display_blend_50(xpos+1, ypos+height, width+shadow-1, shadow-1, rgb, true);
+	display_blend_50(xpos+2, ypos+height+shadow-1, width+shadow-3, 1, rgb, true);
+	// right
+	display_blend_50(xpos+width, ypos+yoff+1, shadow-1, height-yoff-1, rgb, true);
+	display_blend_50(xpos+width+shadow-1, ypos+yoff+2, 1, height-yoff-2, rgb, true);
+
+	/*
+	// top
+	display_blend_50(pos.x-shadow+1, pos.y+yoff-shadow, gr.x+shadow+shadow-2, 1, true);
+	display_blend_50(pos.x-shadow, pos.y+yoff-shadow+1, gr.x+shadow+shadow, shadow, true);
+	// bottom
+	display_blend_50(pos.x-shadow, pos.y+gr.y, gr.x+shadow+shadow, shadow-1, true);
+	display_blend_50(pos.x-shadow+1, pos.y+gr.y+shadow-1, gr.x+shadow+shadow-2, 1, true);
+	// left
+	display_blend_50(pos.x-shadow, pos.y+yoff, shadow, gr.y-yoff, true);
+	// right
+	display_blend_50(pos.x+gr.x, pos.y+yoff, shadow, gr.y-yoff, true);
+	*/	
+}
+
+
 /**
  * Show window on screen
  *
@@ -972,33 +1010,16 @@ void display_win(const int win)
 	
 	if(!windows[ win ].rollup) 
 	{
-		// Hajo: shadow test
-		const int shadow = 2;
 		const koord pos = windows[ win ].pos;
 		const int yoff = has_title ? 0 : 16;
 		
-		// Hajo: try minmal roundings at the corners ...
-		
-		// bottom
-		display_shadow_50(pos.x+1, pos.y+gr.y, gr.x+shadow-1, shadow-1, true);
-		display_shadow_50(pos.x+2, pos.y+gr.y+shadow-1, gr.x+shadow-3, 1, true);
-		// right
-		display_shadow_50(pos.x+gr.x, pos.y+yoff+1, shadow-1, gr.y-yoff-1, true);
-		display_shadow_50(pos.x+gr.x+shadow-1, pos.y+yoff+2, 1, gr.y-yoff-2, true);
-
-		/*
-		// top
-		display_shadow_50(pos.x-shadow+1, pos.y+yoff-shadow, gr.x+shadow+shadow-2, 1, true);
-		display_shadow_50(pos.x-shadow, pos.y+yoff-shadow+1, gr.x+shadow+shadow, shadow, true);
-		// bottom
-		display_shadow_50(pos.x-shadow, pos.y+gr.y, gr.x+shadow+shadow, shadow-1, true);
-		display_shadow_50(pos.x-shadow+1, pos.y+gr.y+shadow-1, gr.x+shadow+shadow-2, 1, true);
-		// left
-		display_shadow_50(pos.x-shadow, pos.y+yoff, shadow, gr.y-yoff, true);
-		// right
-		display_shadow_50(pos.x+gr.x, pos.y+yoff, shadow, gr.y-yoff, true);
-		*/
-
+		// Hajo: shadow test
+		if(configuration_settings.iron_drop_shadow_color != -1)
+		{
+			draw_drop_shadow(pos.x, pos.y, gr.x, gr.y, 
+			                 yoff, 
+					 configuration_settings.iron_drop_shadow_color);
+		}
 
 		// Hajo: now display window contents
 		komp->zeichnen(pos, gr);

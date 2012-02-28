@@ -5102,6 +5102,28 @@ void karte_t::step_month( sint16 months )
 }
 
 
+/**
+ * Converts speed (yards per tick) into tiles per month
+ *       * A derived quantity:
+ * speed * ticks_per_world_month / yards_per_tile
+ * == speed << ticks_per_world_month_shift  (pak-set dependent, 18 in old games)
+ *          >> yards_per_tile_shift (which is 12 + 8 = 20, see above)
+ * This is hard to do with full generality, because shift operators
+ * take positive numbers!
+ *
+ * @author neroden
+ */
+uint32 karte_t::speed_to_tiles_per_month(const uint32 speed) const
+{
+	const int left_shift = ticks_per_world_month_shift - YARDS_PER_TILE_SHIFT;
+	if (left_shift >= 0) {
+		return speed << left_shift;
+	} else {
+		const int right_shift = -left_shift;
+		// round to nearest
+		return (speed + (1<<(right_shift -1)) ) >> right_shift;
+	}
+}
 
 void karte_t::change_time_multiplier(sint32 delta)
 {

@@ -13,12 +13,10 @@
 #include "simcolor.h"
 #include "tpl/slist_tpl.h"
 
+#include "ironbite/configuration_settings.h"
 
 // how much scrolling per call?
 #define X_DIST 2
-
-// Hajo: use transparent ticker?
-static bool transparent = true;
 
 
 struct node {
@@ -47,7 +45,7 @@ bool ticker::empty()
  */
 bool ticker::is_transparent()
 {
-	return transparent;
+	return configuration_settings.iron_ticker_body_color >= 0;
 }
 
 void ticker::clear_ticker()
@@ -113,7 +111,7 @@ void ticker::zeichnen(void)
 		const int width = display_get_width();
 	
 		// redraw whole ticker
-		if(redraw_all || transparent)
+		if(redraw_all || is_transparent())
 		{
 			redraw_ticker();
 		}
@@ -158,18 +156,32 @@ void ticker::redraw_ticker()
 		// just draw the ticker grey ... (to be sure ... )
 		display_fillbox_wh(0, start_y, width, 1, COL_BLACK, true);
 		
-		if(transparent)
+		if(configuration_settings.iron_ticker_body_color >= 0)
 		{
-			// display_shadow_50(0, start_y+1, width, TICKER_HEIGHT, true);
-			display_blend_50(0, start_y+1, width, TICKER_HEIGHT, 0xDFD0D7, true);
+			// display_blend_50(0, start_y+1, width, TICKER_HEIGHT, 0xDFD0D7, true);
+			display_blend_50(0, start_y+1, width, TICKER_HEIGHT, 
+					 configuration_settings.iron_ticker_body_color, true);
 		}
 		else
 		{
 			display_fillbox_wh(0, start_y+1, width, TICKER_HEIGHT, MN_GREY2, true);
 		}
-		FOR(slist_tpl<node>, & n, list) {
+		
+		FOR(slist_tpl<node>, & n, list) 
+		{
 			n.xpos -= X_DIST;
-			if (n.xpos < width) {
+			if (n.xpos < width) 
+			{
+				/*
+				if(n.color == COL_BLACK)
+				{
+					display_proportional_clip(n.xpos, start_y + 4, n.msg, ALIGN_LEFT, n.color, true);
+				}
+				else
+				{
+					display_shadow_proportional(n.xpos, start_y + 4, n.color, COL_BLACK, n.msg, true);
+				}
+				*/
 				display_proportional_clip(n.xpos, start_y + 4, n.msg, ALIGN_LEFT, n.color, true);
 				default_pos = n.pos;
 			}

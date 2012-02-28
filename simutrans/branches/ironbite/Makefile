@@ -132,6 +132,7 @@ CFLAGS   += -Wall -W -Wcast-qual -Wpointer-arith -Wcast-align $(FLAGS)
 CCFLAGS  += -Wstrict-prototypes
 
 
+SOURCES += ironbite/configuration_settings.cc
 SOURCES += bauer/brueckenbauer.cc
 SOURCES += bauer/fabrikbauer.cc
 SOURCES += bauer/hausbauer.cc

@@ -183,6 +183,43 @@ const char *ding_t::ist_entfernbar(const spieler_t *sp)
 	}
 }
 
+/**
+ * give image for height > 0 (max. height currently 3)
+ * IMG_LEER is no images
+ * @author Hj. Malthaner
+ */
+image_id ding_t::get_bild(int /*height*/) const 
+{
+	return IMG_LEER;
+}
+
+/**
+ * this image is drawn after all get_bild() on this tile
+ * Currently only single height is supported for this feature
+ */
+image_id ding_t::get_after_bild() const 
+{
+	return IMG_LEER;
+}
+
+/**
+ * if a function returns a value here with TRANSPARENT_FLAGS set
+ * then a transparent outline with the color from the lower 8 bit is drawn
+ * @author kierongreen
+ */
+ PLAYER_COLOR_VAL ding_t::get_outline_colour() const 
+{
+	return 0;
+}
+
+/**
+ * The image, that will be outlined
+ * @author kierongreen
+ */
+PLAYER_COLOR_VAL ding_t::get_outline_bild() const 
+{
+	return IMG_LEER;
+}
 
 void ding_t::rdwr(loadsave_t *file)
 {

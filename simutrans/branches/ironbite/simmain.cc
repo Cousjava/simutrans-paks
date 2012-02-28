@@ -72,6 +72,8 @@
 #include "vehicle/simvehikel.h"
 #include "vehicle/simverkehr.h"
 
+#include "ironbite/configuration_settings.h"
+
 using std::string;
 
 /* diagnostic routine:
@@ -507,6 +509,9 @@ int simu_main(int argc, char** argv)
 		if(simuconf.open(path_to_simuconf)) {
 			printf("parse_simuconf() at config/simuconf.tab: ");
 			umgebung_t::default_einstellungen.parse_simuconf( simuconf, disp_width, disp_height, fullscreen, umgebung_t::objfilename );
+
+			// Hajo: read Iron Bite settings
+			configuration_settings.read(path_to_simuconf);
 		}
 	}
 
@@ -516,6 +521,9 @@ int simu_main(int argc, char** argv)
 	if (simuconf.open(obj_conf.c_str())) {
 		printf("parse_simuconf() at %s: ", obj_conf.c_str() );
 		umgebung_t::default_einstellungen.parse_simuconf( simuconf, disp_width, disp_height, fullscreen, umgebung_t::objfilename );
+
+		// Hajo: read Iron Bite settings
+		configuration_settings.read(obj_conf.c_str());
 	}
 
 	// umgebung: overide previous settings
@@ -697,6 +705,9 @@ int simu_main(int argc, char** argv)
 		pak_diagonal_multiplier = umgebung_t::default_einstellungen.get_pak_diagonal_multiplier();
 		pak_tile_height = TILE_HEIGHT_STEP;
 		simuconf.close();
+		
+		// Hajo: read Iron Bite settings
+		configuration_settings.read(obj_conf.c_str());		
 	}
 	// and parse again the user settings
 	obj_conf = string(umgebung_t::user_dir) + "simuconf.tab";
@@ -706,6 +717,9 @@ int simu_main(int argc, char** argv)
 		printf("parse_simuconf() at %s: ", obj_conf.c_str());
 		umgebung_t::default_einstellungen.parse_simuconf( simuconf, idummy, idummy, idummy, dummy );
 		simuconf.close();
+		
+		// Hajo: read Iron Bite settings
+		configuration_settings.read(obj_conf.c_str());
 	}
 
 	// load with private addons (now in addons/pak-name either in simutrans main dir or in userdir)
@@ -727,6 +741,9 @@ int simu_main(int argc, char** argv)
 			printf("parse_simuconf() at %s: ", obj_conf.c_str());
 			umgebung_t::default_einstellungen.parse_simuconf( simuconf, idummy, idummy, idummy, dummy );
 			simuconf.close();
+			
+			// Hajo: read Iron Bite settings
+			configuration_settings.read(obj_conf.c_str());
 		}
 		// and parse user settings again ...
 		obj_conf = string(umgebung_t::user_dir) + "simuconf.tab";
@@ -734,6 +751,9 @@ int simu_main(int argc, char** argv)
 			printf("parse_simuconf() at %s: ", obj_conf.c_str());
 			umgebung_t::default_einstellungen.parse_simuconf( simuconf, idummy, idummy, idummy, dummy );
 			simuconf.close();
+
+			// Hajo: read Iron Bite settings
+			configuration_settings.read(obj_conf.c_str());
 		}
 	}
 

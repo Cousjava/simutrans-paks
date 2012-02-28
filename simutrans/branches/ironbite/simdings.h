@@ -8,11 +8,7 @@
 #ifndef simdings_h
 #define simdings_h
 
-#include "simtypes.h"
-#include "simimg.h"
-#include "simcolor.h"
 #include "dataobj/koord3d.h"
-
 
 class cbuffer_t;
 class karte_t;
@@ -253,26 +249,26 @@ public:
 	 * IMG_LEER is no images
 	 * @author Hj. Malthaner
 	 */
-	virtual image_id get_bild(int /*height*/) const {return IMG_LEER;}
+	virtual image_id get_bild(int /*height*/) const;
 
 	/**
 	 * this image is drawn after all get_bild() on this tile
 	 * Currently only single height is supported for this feature
 	 */
-	virtual image_id get_after_bild() const {return IMG_LEER;}
+	virtual image_id get_after_bild() const;
 
 	/**
 	 * if a function returns a value here with TRANSPARENT_FLAGS set
 	 * then a transparent outline with the color from the lower 8 bit is drawn
 	 * @author kierongreen
 	 */
-	virtual PLAYER_COLOR_VAL get_outline_colour() const {return 0;}
+	virtual PLAYER_COLOR_VAL get_outline_colour() const;
 
 	/**
 	 * The image, that will be outlined
 	 * @author kierongreen
 	 */
-	virtual PLAYER_COLOR_VAL get_outline_bild() const {return IMG_LEER;}
+	virtual PLAYER_COLOR_VAL get_outline_bild() const;
 
 	/**
 	 * Save and Load of object data in one routine

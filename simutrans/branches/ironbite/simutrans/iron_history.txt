@@ -1,3 +1,6 @@
+- Configuration file "iron_bite.ini"
+- Transparency support for ticker line and window body.
+- Optional window drop shadows.
 - Added support for bigger buttons.
 - Options menu "new map" skips banner and shows "new map" dialog immediately.
 - Options window got a third separator.

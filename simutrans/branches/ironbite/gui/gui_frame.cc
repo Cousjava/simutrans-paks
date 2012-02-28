@@ -22,6 +22,7 @@
 #include "../simskin.h"
 #include "../besch/skin_besch.h"
 
+#include "../ironbite/configuration_settings.h"
 
 gui_frame_t::gui_frame_t(char const* const name, spieler_t const* const sp)
 {
@@ -184,29 +185,39 @@ void gui_frame_t::zeichnen(const koord pos, const koord gr)
 	// draw background
 	PUSH_CLIP(pos.x+1,pos.y+16,gr.x-2,gr.y-16);
 
-	// Hajo: this shoudl be configurable ...
-	if(true)
+	// Hajo: do we want transparent windows?
+	if(configuration_settings.iron_window_body_color != -1)
 	{
 		// Hajo: test transparent body
 	
-		display_blend_50(pos.x, pos.y+16, gr.x, gr.y-16, 0xFFF0F7, false);
+		// display_blend_50(pos.x, pos.y+16, gr.x, gr.y-16, 0xFFF0F7, false);
+		display_blend_50(pos.x, 
+				 pos.y+16, 
+				 gr.x+1,  // why +1 ? 
+				 gr.y-16, 
+				 configuration_settings.iron_window_body_color, 
+				 false);
 	}
 	else
 	{
 		// Hajo: skinned windows code
-		if(skinverwaltung_t::window_skin!=NULL) {
+		if(skinverwaltung_t::window_skin!=NULL) 
+		{
 			const int img = skinverwaltung_t::window_skin->get_bild_nr(0);
 
-			for(int j=0; j<gr.y; j+=64) {
-				for(int i=0; i<gr.x; i+=64) {
+			for(int j=0; j<gr.y; j+=64) 
+			{
+				for(int i=0; i<gr.x; i+=64) 
+				{
 					// the background will not trigger a redraw!
 					display_color_img(img, pos.x+1 + i, pos.y+16 + j, 0, false, false);
 				}
 			}
 		}
-		else {
+		else 
+		{
 			// Hajo: plain colored box
-			display_fillbox_wh(pos.x+1, pos.y+16, gr.x-2, gr.y-16, MN_GREY1, false);
+			display_fillbox_wh(pos.x+1, pos.y+16, gr.x-2, gr.y-17, MN_GREY1, false);
 		}
 
 		// Hajo: left, right

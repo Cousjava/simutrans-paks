@@ -143,6 +143,12 @@ public:
 	int get_int(const char *key, int def);
 
 	/**
+	 * Get an int from a hex (0x...) entry
+	 * @author Hj. Malthaner
+	 */
+	int get_hex(const char *key, int def);
+
+/**
 	 * Get an sint64 (actually uses double, thus only 48 bits are retrievable)
 	 * @author prissi
 	 */

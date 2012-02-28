@@ -112,6 +112,26 @@ int tabfileobj_t::get_int(const char *key, int def)
 	}
 }
 
+int tabfileobj_t::get_hex(const char *key, int def)
+{
+	const char *value = get(key);
+
+	if(value  &&*value) 
+	{
+		// skip spaces/tabs
+		while ( *value>0  &&  *value<=32  ) {
+			value ++;
+		}
+		
+		if(value[0] == '0' && value[1] == 'x')
+		{
+			sscanf(value + 2, "%x", &def); 
+		}
+	}
+
+	return def;	
+}
+
 
 sint64 atosint64(const char* a)
 {
