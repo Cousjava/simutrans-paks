@@ -27,21 +27,21 @@ farbengui_t::farbengui_t(spieler_t * sp) :
 {
 	this->sp = sp;
 
-	const int width = D_LEFT_MARGIN*2 + 14 * 24 - 2;
-	set_fenstergroesse( koord(width, 202+TITLEBAR_HEIGHT) );
+	const int width = D_MARGIN_LEFT*2 + 14 * 24 - 2;
+	set_fenstergroesse( koord(width, 202+D_TITLEBAR_HEIGHT) );
 	
 	txt.set_text("Please choose your preferred player colors.");
-	txt.set_pos( koord(D_LEFT_MARGIN, D_TOP_MARGIN+2) );
+	txt.set_pos( koord(D_MARGIN_LEFT, D_MARGIN_TOP+2) );
 	add_komponente( &txt );
 
-	bild.set_pos( koord(width - 64 - D_RIGHT_MARGIN, D_TOP_MARGIN) );
+	bild.set_pos( koord(width - 64 - D_MARGIN_RIGHT, D_MARGIN_TOP) );
 	add_komponente( &bild );
 	
 	const int top_y = 52;
 	const int bot_y = 130;
 	
 	primary.set_text("Your primary color:");
-	primary.set_pos(koord(D_LEFT_MARGIN, top_y));
+	primary.set_pos(koord(D_MARGIN_LEFT, top_y));
 	add_komponente(&primary);
 
 	const unsigned int color_sets = 28;
@@ -51,7 +51,7 @@ farbengui_t::farbengui_t(spieler_t * sp) :
 	{
 		player_color_1[i].init(button_t::box_state, 
 		                            "", 
-		                            koord(D_LEFT_MARGIN + (i % 14) * 24, top_y+15 + (i/14) * 24), 
+		                            koord(D_MARGIN_LEFT + (i % 14) * 24, top_y+15 + (i/14) * 24), 
 		                            koord(22, 22) 
 		                            );
 		
@@ -62,7 +62,7 @@ farbengui_t::farbengui_t(spieler_t * sp) :
 	player_color_1[sp->get_player_color1()/8].pressed = true;
 	
 	secondary.set_text("Your secondary color:");
-	secondary.set_pos(koord(D_LEFT_MARGIN, bot_y));
+	secondary.set_pos(koord(D_MARGIN_LEFT, bot_y));
 	add_komponente(&secondary);
 
 	// player color 2 buttons
@@ -70,7 +70,7 @@ farbengui_t::farbengui_t(spieler_t * sp) :
 	{
 		player_color_2[i].init( button_t::box_state,
 		                            "", 
-		                            koord(D_LEFT_MARGIN + (i % 14) * 24, bot_y+15 + (i/14) * 24), 
+		                            koord(D_MARGIN_LEFT + (i % 14) * 24, bot_y+15 + (i/14) * 24), 
 		                            koord(22, 22) 
 		                            );
 		player_color_2[i].background = i*8 + 4;

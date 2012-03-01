@@ -249,9 +249,9 @@ depot_frame_t::~depot_frame_t()
 
 
 // returns position of depot on the map
-koord3d depot_frame_t::get_weltpos()
+void depot_frame_t::get_weltpos(koord3d & k) const
 {
-	return depot->get_pos();
+	k = depot->get_pos();
 }
 
 

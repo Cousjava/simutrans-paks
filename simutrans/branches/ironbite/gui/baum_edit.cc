@@ -18,8 +18,8 @@
 #include "../simmenu.h"
 
 #include "../dataobj/translator.h"
-#include "components/list_button.h"
 #include "components/gui_scrolled_item.h"
+
 
 #include "../besch/bild_besch.h"
 #include "../besch/grund_besch.h"
@@ -53,7 +53,7 @@ baum_edit_frame_t::baum_edit_frame_t(spieler_t* sp_, karte_t* welt) :
 	bt_timeline.set_text( "Random age" );
 
 	remove_komponente( &bt_obsolete );
-	offset_of_comp -= BUTTON_HEIGHT;
+	offset_of_comp -= D_BUTTON_HEIGHT;
 
 	besch = NULL;
 	baum_tool.set_default_param(NULL);

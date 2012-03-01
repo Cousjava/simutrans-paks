@@ -13,22 +13,51 @@
 #define gui_gui_frame_h
 
 #include "../dataobj/koord.h"
-#include "../dataobj/koord3d.h"
-#include "components/list_button.h"
 
-// height of titlebar
-#define TITLEBAR_HEIGHT (16)
-#define D_LEFT_MARGIN  (12)
-#define D_RIGHT_MARGIN  (12)
-#define D_TOP_MARGIN  (8)
-#define D_BOTTOM_MARGIN  (8)
-#define D_COMP_Y_SPACE  (6)
-
+class koord3d;
 class loadsave_t;
 class spieler_t;
 class event_t;
 class gui_komponente_t;
 class gui_container_t;
+
+
+/*
+ * The following gives positioning aids for elements in dialoges
+ * Only those, LINESPACE, and dimensions of elements itself must be
+ * exclusively used to calculate positions in dialogues to have a
+ * scaleable interface
+ */
+
+// default button width (may change with langugae and font)
+#define D_BUTTON_WIDTH (gui_frame_t::gui_button_width)
+#define D_BUTTON_HEIGHT (gui_frame_t::gui_button_height)
+
+// titlebar height
+#define D_TITLEBAR_HEIGHT (gui_frame_t::gui_titlebar_height)
+
+// dialog borders
+#define D_MARGIN_LEFT (gui_frame_t::gui_frame_left)
+#define D_MARGIN_TOP (gui_frame_t::gui_frame_top)
+#define D_MARGIN_RIGHT (gui_frame_t::gui_frame_right)
+#define D_MARGIN_BOTTOM (gui_frame_t::gui_frame_bottom)
+
+// space between two elements
+#define D_H_SPACE (gui_frame_t::gui_hspace)
+#define D_V_SPACE (gui_frame_t::gui_vspace)
+
+#define BUTTON1_X (D_MARGIN_LEFT)
+#define BUTTON2_X (D_MARGIN_LEFT+1*(D_BUTTON_WIDTH+D_H_SPACE))
+#define BUTTON3_X (D_MARGIN_LEFT+2*(D_BUTTON_WIDTH+D_H_SPACE))
+#define BUTTON4_X (D_MARGIN_LEFT+3*(D_BUTTON_WIDTH+D_H_SPACE))
+
+// The width of a typical dialoge (either list/covoi/factory) and intial width when it makes sense
+#define D_DEFAULT_WIDTH (D_MARGIN_LEFT+4*D_BUTTON_WIDTH+3*D_H_SPACE+D_MARGIN_RIGHT)
+
+// dimensions of indicator bars (not yet a gui element ...)
+#define D_INDICATOR_WIDTH (gui_frame_t::gui_indicator_width)
+#define D_INDICATOR_HEIGHT (gui_frame_t::gui_indicator_height)
+
 
 /**
  * Eine Klasse für Fenster mit Komponenten.
@@ -49,6 +78,27 @@ public:
 	enum resize_modes {
 		no_resize = 0, vertical_resize = 1, horizonal_resize = 2, diagonal_resize = 3
 	};
+
+	// default button sizes
+	static int gui_button_width;
+	static int gui_button_height;
+
+	// titlebar height
+	static int gui_titlebar_height;
+
+	// dialog borders
+	static int gui_frame_left;
+	static int gui_frame_top;
+	static int gui_frame_right;
+	static int gui_frame_bottom;
+
+	// space between two elements
+	static int gui_hspace;
+	static int gui_vspace;
+
+	// and the indicator box dimension
+	static int gui_indicator_width;
+	static int gui_indicator_height;
 
 private:
 	gui_container_t * container;
@@ -167,7 +217,7 @@ public:
 	 * @author Markus Weber
 	 * @date   11-May-2002
 	*/
-	koord get_client_windowsize() const {return groesse-koord(0,TITLEBAR_HEIGHT); }
+	koord get_client_windowsize() const {return groesse-koord(0,D_TITLEBAR_HEIGHT); }
 
 	/**
 	 * Manche Fenster haben einen Hilfetext assoziiert.
@@ -202,8 +252,10 @@ public:
 	// if false, title and all gadgets will be not drawn
 	virtual bool has_title() const { return true; }
 
-	// position of a connected thing on the map
-	virtual koord3d get_weltpos() { return koord3d::invalid; }
+	/**
+	 * Position of a connected thing on the map
+	 */
+	virtual void get_weltpos(koord3d &) const;
 
 	/**
 	 * Set resize mode

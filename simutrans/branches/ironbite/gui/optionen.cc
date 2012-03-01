@@ -23,7 +23,6 @@
 #include "../dataobj/translator.h"
 
 #include "components/gui_button.h"
-#include "components/list_button.h"
 #include "components/gui_label.h"
 #include "components/gui_divider.h"
 
@@ -83,8 +82,8 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 	ooo->welt = welt;
 
 	// Hajo: run-variables for element positioning
-	int ypos = D_TOP_MARGIN;
-	int xpos = D_LEFT_MARGIN;
+	int ypos = D_MARGIN_TOP;
+	int xpos = D_MARGIN_LEFT;
 	
 	// Hajo: text starts a bit lower ...
 	ypos += 2;
@@ -95,13 +94,13 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 	ooo->bt_new.set_text("Neue Karte");
 	add_komponente( &ooo->bt_new );
 
-	ypos += BUTTON_TALL_HEIGHT + D_COMP_Y_SPACE;
+	ypos += BUTTON_TALL_HEIGHT + D_V_SPACE;
 
 	ooo->seperator_map.set_pos(xpos,  ypos);
 	ooo->seperator_map.set_size(BUTTON_WIDTH, 1);
 	add_komponente( &ooo->seperator_map );
 
-	ypos += 3 + D_COMP_Y_SPACE;
+	ypos += 3 + D_V_SPACE;
 
 	ooo->bt_load.set_typ(button_t::roundbox);
 	ooo->bt_load.set_pos(xpos, ypos);
@@ -109,7 +108,7 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 	ooo->bt_load.set_text("Laden");
 	add_komponente( &ooo->bt_load );
 
-	ypos += BUTTON_TALL_HEIGHT + D_COMP_Y_SPACE;
+	ypos += BUTTON_TALL_HEIGHT + D_V_SPACE;
 	
 	ooo->bt_save.set_typ(button_t::roundbox);
 	ooo->bt_save.set_pos(xpos, ypos);
@@ -117,13 +116,13 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 	ooo->bt_save.set_text("Speichern");
 	add_komponente( &ooo->bt_save );
 
-	ypos += BUTTON_TALL_HEIGHT + D_COMP_Y_SPACE;
+	ypos += BUTTON_TALL_HEIGHT + D_V_SPACE;
 	
 	ooo->seperator_file.set_pos(xpos,  ypos);
 	ooo->seperator_file.set_size(BUTTON_WIDTH, 1);
 	add_komponente( &ooo->seperator_file );
 
-	ypos += 3 + D_COMP_Y_SPACE;
+	ypos += 3 + D_V_SPACE;
 	
 	ooo->bt_lang.set_typ(button_t::roundbox);
 	ooo->bt_lang.set_pos(xpos,  ypos);
@@ -131,7 +130,7 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 	ooo->bt_lang.set_text("Sprache");
 	add_komponente( &ooo->bt_lang );
 
-	ypos += BUTTON_TALL_HEIGHT + D_COMP_Y_SPACE;
+	ypos += BUTTON_TALL_HEIGHT + D_V_SPACE;
 	
 	ooo->bt_color.set_typ(button_t::roundbox);
 	ooo->bt_color.set_pos(xpos, ypos);
@@ -139,7 +138,7 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 	ooo->bt_color.set_text("Farbe");
 	add_komponente( &ooo->bt_color );
 
-	ypos += BUTTON_TALL_HEIGHT + D_COMP_Y_SPACE;
+	ypos += BUTTON_TALL_HEIGHT + D_V_SPACE;
 	
 	ooo->bt_display.set_typ(button_t::roundbox);
 	ooo->bt_display.set_pos(xpos, ypos);
@@ -147,7 +146,7 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 	ooo->bt_display.set_text("Helligk.");
 	add_komponente( &ooo->bt_display );
 
-	ypos += BUTTON_TALL_HEIGHT + D_COMP_Y_SPACE;
+	ypos += BUTTON_TALL_HEIGHT + D_V_SPACE;
 	
 	ooo->bt_sound.set_typ(button_t::roundbox);
 	ooo->bt_sound.set_pos(xpos, ypos);
@@ -155,7 +154,7 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 	ooo->bt_sound.set_text("Sound");
 	add_komponente( &ooo->bt_sound );
 
-	ypos += BUTTON_TALL_HEIGHT + D_COMP_Y_SPACE;
+	ypos += BUTTON_TALL_HEIGHT + D_V_SPACE;
 	
 	ooo->bt_player.set_typ(button_t::roundbox);
 	ooo->bt_player.set_pos(xpos, ypos);
@@ -163,13 +162,13 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 	ooo->bt_player.set_text("Spieler(mz)");
 	add_komponente( &ooo->bt_player );
 
-	ypos += BUTTON_TALL_HEIGHT + D_COMP_Y_SPACE;
+	ypos += BUTTON_TALL_HEIGHT + D_V_SPACE;
 	
 	ooo->seperator.set_pos(xpos,  ypos);
 	ooo->seperator.set_size(BUTTON_WIDTH, 1);
 	add_komponente( &ooo->seperator );
 
-	ypos += 3 + D_COMP_Y_SPACE;
+	ypos += 3 + D_V_SPACE;
 	
 	// 01-Nov-2001      Markus Weber    Added
 	ooo->bt_quit.set_typ(button_t::roundbox);
@@ -178,11 +177,11 @@ optionen_gui_t::optionen_gui_t(karte_t *welt) :
 	ooo->bt_quit.set_text("Beenden");
 	add_komponente( &ooo->bt_quit );
 
-	ypos += BUTTON_TALL_HEIGHT + D_COMP_Y_SPACE;
+	ypos += BUTTON_TALL_HEIGHT + D_V_SPACE;
 
 	// Hajo: compute total window size
-	set_window_size(D_LEFT_MARGIN+BUTTON_WIDTH + D_RIGHT_MARGIN, 
-	                        ypos + TITLEBAR_HEIGHT+2);
+	set_window_size(D_MARGIN_LEFT+BUTTON_WIDTH + D_MARGIN_RIGHT, 
+	                        ypos + D_TITLEBAR_HEIGHT+2);
 }
 
 optionen_gui_t::~optionen_gui_t() 
@@ -202,7 +201,7 @@ bool optionen_gui_data_t::action_triggered( gui_action_creator_t *comp,value_t /
 		create_win(new sprachengui_t(), w_info, magic_sprachengui_t);
 	}
 	else if(comp==&bt_color) {
-		create_win(D_LEFT_MARGIN+BUTTON_WIDTH + D_RIGHT_MARGIN-32, 36, new farbengui_t(welt->get_active_player()), w_info, magic_farbengui_t);
+		create_win(D_MARGIN_LEFT+BUTTON_WIDTH + D_MARGIN_RIGHT-32, 36, new farbengui_t(welt->get_active_player()), w_info, magic_farbengui_t);
 	}
 	else if(comp==&bt_display) {
 		create_win(new color_gui_t(welt), w_info, magic_color_gui_t);

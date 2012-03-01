@@ -73,9 +73,9 @@ void grund_info_t::zeichnen(koord pos, koord groesse)
 }
 
 
-koord3d grund_info_t::get_weltpos()
+void grund_info_t::get_weltpos(koord3d & k) const
 {
-	return gr->get_pos();
+	k = gr->get_pos();
 }
 
 

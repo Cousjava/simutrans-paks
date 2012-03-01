@@ -43,7 +43,6 @@
 
 #include "../simsys.h"
 #include "../utils/simstring.h"
-#include "components/list_button.h"
 
 #include "sprachen.h"
 #include "climates.h"
@@ -53,7 +52,7 @@
 #include "messagebox.h"
 #include "scenario_frame.h"
 
-#define START_HEIGHT (TITLEBAR_HEIGHT + D_TOP_MARGIN*2)
+#define START_HEIGHT (D_TITLEBAR_HEIGHT + D_MARGIN_TOP*2)
 
 #define LEFT_ARROW (110)
 #define RIGHT_ARROW (160)
@@ -290,7 +289,7 @@ welt_gui_t::welt_gui_t(karte_t* const welt, settings_t* const sets) :
 	quit_game.add_listener( this );
 	add_komponente( &quit_game );
 
-	const int win_height = intTopOfButton+BUTTON_TALL_HEIGHT+D_BOTTOM_MARGIN+TITLEBAR_HEIGHT;
+	const int win_height = intTopOfButton + BUTTON_TALL_HEIGHT+D_MARGIN_BOTTOM + D_TITLEBAR_HEIGHT;
 	set_fenstergroesse(koord(win_width, win_height));
 
 	update_preview();
@@ -599,7 +598,7 @@ void welt_gui_t::zeichnen(koord pos, koord gr)
 
 	cbuffer_t buf;
 	const int x = pos.x+LEFT_MARGIN;
-	int y = pos.y+TITLEBAR_HEIGHT+START_HEIGHT;
+	int y = pos.y + D_TITLEBAR_HEIGHT + START_HEIGHT;
 
 	display_proportional_clip(x, y-20, translator::translate("1WORLD_CHOOSE"),ALIGN_LEFT, COL_BLACK, true);
 	display_ddd_box_clip(x, y-5, RIGHT_ARROW, 0, MN_GREY0, MN_GREY4);		// seperator

@@ -25,7 +25,7 @@ void ding_view_t::set_groesse(koord size)
 }
 
 
-koord3d ding_view_t::get_location()
+koord3d ding_view_t::get_location() const
 {
 	return ding->get_pos();
 }

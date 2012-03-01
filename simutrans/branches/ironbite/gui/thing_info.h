@@ -8,7 +8,6 @@
 #ifndef gui_thing_info_h
 #define gui_thing_info_h
 
-#include "../simdebug.h"
 #include "../simdings.h"
 #include "gui_frame.h"
 #include "components/gui_ding_view_t.h"
@@ -37,7 +36,7 @@ public:
 
 	ding_t const* get_ding() const { return view.get_ding(); }
 
-	virtual koord3d get_weltpos() { return get_ding()->get_pos(); }
+	virtual void get_weltpos(koord3d & k) const;
 
 	/**
 	 * @return the text to display in the info window

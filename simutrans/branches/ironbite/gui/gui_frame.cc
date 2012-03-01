@@ -16,6 +16,7 @@
 #include "../simcolor.h"
 #include "../simgraph.h"
 #include "../simwin.h"
+#include "../dataobj/koord3d.h"
 #include "../player/simplay.h"
 
 #include "../besch/reader/obj_reader.h"
@@ -24,6 +25,28 @@
 
 #include "../ironbite/configuration_settings.h"
 
+// default button sizes
+int gui_frame_t::gui_button_width = 92;
+int gui_frame_t::gui_button_height = 14;
+
+// default titlebar height
+int gui_frame_t::gui_titlebar_height = 16;
+
+// dialog borders
+int gui_frame_t::gui_frame_left = 10;
+int gui_frame_t::gui_frame_top = 10;
+int gui_frame_t::gui_frame_right = 10;
+int gui_frame_t::gui_frame_bottom = 10;
+
+// space between two elements
+int gui_frame_t::gui_hspace = 4;
+int gui_frame_t::gui_vspace = 4;
+
+// size of staus indicator elements (colored boxes)
+int gui_frame_t::gui_indicator_width = 20;
+int gui_frame_t::gui_indicator_height = 4;
+
+
 gui_frame_t::gui_frame_t(char const* const name, spieler_t const* const sp)
 {
 	this->name = name;
@@ -31,7 +54,9 @@ gui_frame_t::gui_frame_t(char const* const name, spieler_t const* const sp)
 	groesse = koord(200, 100);
 	min_windowsize = koord(0,0);
 	owner = sp;
-	container->set_pos(koord(0,TITLEBAR_HEIGHT));
+
+	container->set_pos(koord(0, D_TITLEBAR_HEIGHT));
+
 	set_resizemode(no_resize); //25-may-02	markus weber	added
 	dirty = true;
 }
@@ -131,7 +156,7 @@ bool gui_frame_t::infowin_event(const event_t *ev)
 		container->clear_dirty();
 	}
 	event_t ev2 = *ev;
-	translate_event(&ev2, 0, -TITLEBAR_HEIGHT);
+	translate_event(&ev2, 0, -D_TITLEBAR_HEIGHT);
 	return container->infowin_event(&ev2);
 }
 
@@ -166,6 +191,13 @@ void gui_frame_t::resize(const koord delta)
 	change_drag_start(size_change.x, size_change.y);
 }
 
+/**
+ * Position of a connected thing on the map
+ */
+void gui_frame_t::get_weltpos(koord3d & k) const
+{ 
+	k = koord3d::invalid; 
+}
 
 /**
  * Komponente neu zeichnen. Die übergebenen Werte beziehen sich auf

@@ -24,7 +24,7 @@ public:
 
 	void zeichnen(koord offset) { internal_draw(offset, 0); }
 
-	koord3d get_location() { return location; }
+	koord3d get_location() const { return location; }
 };
 
 

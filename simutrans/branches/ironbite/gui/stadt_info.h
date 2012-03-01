@@ -72,7 +72,7 @@ public:
 	 */
 	const char *get_hilfe_datei() const {return "citywindow.txt";}
 
-	virtual koord3d get_weltpos();
+	virtual void get_weltpos(koord3d & k) const;
 
 	/**
 	* komponente neu zeichnen. Die übergebenen Werte beziehen sich auf

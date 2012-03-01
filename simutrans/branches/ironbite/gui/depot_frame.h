@@ -262,7 +262,7 @@ public:
 	 */
 	bool has_next() const {return true;}
 
-	virtual koord3d get_weltpos();
+	virtual void get_weltpos(koord3d & k) const;
 
 	/**
 	 * Open dialog for schedule entry.

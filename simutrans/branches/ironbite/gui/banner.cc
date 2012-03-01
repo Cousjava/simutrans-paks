@@ -89,6 +89,27 @@ banner_t::~banner_t()
 	ooo = 0;
 }
 
+static void draw_corner_decorations(const int xpos, const int ypos, const int width, const int height)
+{
+	const int img_screw = skinverwaltung_t::iron_skin->get_bild_nr(62);
+
+	if(img_screw != IMG_LEER)
+	{
+		display_base_img(img_screw,
+				 xpos+10, ypos + D_TITLEBAR_HEIGHT+10, 
+				 0, false, false);
+		display_base_img(img_screw,
+				 xpos+width-10-16, ypos + D_TITLEBAR_HEIGHT+10, 
+				 0, false, false);
+		display_base_img(img_screw,
+				 xpos+10, ypos+height-10-16, 
+				 0, false, false);
+		display_base_img(img_screw,
+				 xpos+width-10-16, ypos+height-10-16, 
+				 0, false, false);
+	}
+}	
+
 /**
  * Display game splash screen (aka banner)
  *
@@ -133,23 +154,7 @@ void banner_t::zeichnen(const koord pos, const koord gr )
 
 	if(skinverwaltung_t::iron_skin)
 	{
-		const int img_screw = skinverwaltung_t::iron_skin->get_bild_nr(62);
-
-		if(img_screw != IMG_LEER)
-		{
-			display_base_img(img_screw,
-					 pos.x+10, pos.y + TITLEBAR_HEIGHT+10, 
-					 0, false, false);
-			display_base_img(img_screw,
-					 pos.x+gr.x-10-16, pos.y + TITLEBAR_HEIGHT+10, 
-					 0, false, false);
-			display_base_img(img_screw,
-					 pos.x+10, pos.y+gr.y-10-16, 
-					 0, false, false);
-			display_base_img(img_screw,
-					 pos.x+gr.x-10-16, pos.y+gr.y-10-16, 
-					 0, false, false);
-		}
+		draw_corner_decorations(pos.x, pos.y, gr.x, gr.y);
 	}
 	
 	// Hajo: now display the intro message
@@ -264,8 +269,8 @@ void banner_t::zeichnen(const koord pos, const koord gr )
 	}
 
 	// Hajo: add inner bevel border
-	display_ddd_box_clip(pos.x + 4, pos.y + 4 + TITLEBAR_HEIGHT, 
-	                     gr.x-8, gr.y-8-TITLEBAR_HEIGHT, MN_GREY0, MN_GREY4);
+	display_ddd_box_clip(pos.x + 4, pos.y + 4 + D_TITLEBAR_HEIGHT, 
+	                     gr.x-8, gr.y-8-D_TITLEBAR_HEIGHT, MN_GREY0, MN_GREY4);
 	
 }
 

@@ -29,7 +29,7 @@ private:
 	static karte_t*   welt;    /**< The world to display. */
 
 protected:
-	virtual koord3d get_location() = 0;
+	virtual koord3d get_location() const = 0;
 
 	void internal_draw(koord offset, ding_t const *);
 

@@ -40,6 +40,10 @@ ding_infowin_t::ding_infowin_t(const ding_t* ding) :
 	set_fenstergroesse(koord(width, height));
 }
 
+ void ding_infowin_t::get_weltpos(koord3d & k) const 
+{
+	k = get_ding()->get_pos(); 
+}
 
 
 /**

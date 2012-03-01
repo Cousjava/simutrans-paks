@@ -51,7 +51,7 @@ public:
 
 	void map_rotate90( sint16 new_ysize );
 
-	virtual koord3d get_weltpos();
+	virtual void get_weltpos(koord3d & k) const;
 
 private:
 	location_view_t view;

@@ -15,7 +15,7 @@ private:
 	ding_t const* const ding; /**< The object to display */
 
 protected:
-	koord3d get_location();
+	koord3d get_location() const;
 
 public:
 	ding_view_t(karte_t *w, koord const size) :

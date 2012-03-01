@@ -105,6 +105,13 @@ public:
 	simwin_t() : flags() {}
 
 	bool operator== (const simwin_t &) const;
+
+	koord3d get_weltpos()
+	{
+		koord3d k;
+		gui->get_weltpos(k);
+		return k;
+	}
 };
 
 bool simwin_t::operator== (const simwin_t &other) const { return gui == other.gui; }
@@ -987,7 +994,7 @@ void display_win(const int win)
 				title_color,
 				komp->get_name(),
 				text_color,
-				komp->get_weltpos(),
+				windows[ win ].get_weltpos(),
 				windows[ win ].closing,
 				windows[ win ].sticky,
 				windows[ win ].flags,
@@ -1484,7 +1491,7 @@ bool check_pos_win(event_t *ev)
 					case GADGET_GOTOPOS:
 						if (IS_LEFTCLICK(ev)) {
 							// change position on map
-							spieler_t::get_welt()->change_world_position( windows[ i ].gui->get_weltpos() );
+							spieler_t::get_welt()->change_world_position(windows[ i ].get_weltpos());
 						}
 						break;
 					case GADGET_STICKY:

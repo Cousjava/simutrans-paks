@@ -89,7 +89,7 @@ public:
 
 	virtual bool has_min_sizer() const {return true;}
 
-	virtual koord3d get_weltpos() { return fab->get_pos(); }
+	virtual const koord3d get_weltpos() const { return fab->get_pos(); }
 
 	virtual void set_fenstergroesse(koord groesse);
 
