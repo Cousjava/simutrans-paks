@@ -581,3 +581,12 @@ const char *weg_t::ist_entfernbar(const spieler_t *sp)
 	}
 	return ding_t::ist_entfernbar(sp);
 }
+
+/**
+* Die Bezeichnung des Wegs
+* @author Hj. Malthaner
+*/
+const char * weg_t::get_name() const 
+{
+	return besch->get_name(); 
+}

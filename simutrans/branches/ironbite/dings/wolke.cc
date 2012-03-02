@@ -132,6 +132,10 @@ raucher_t::raucher_t(karte_t *welt, loadsave_t *file) : ding_t(welt)
 	ding_t::set_flag(ding_t::not_on_map);
 }
 
+image_id raucher_t::get_bild() const 
+{
+	return IMG_LEER; 
+}
 
 async_wolke_t::async_wolke_t(karte_t *welt, loadsave_t *file) : ding_t(welt)
 {
@@ -145,4 +149,9 @@ async_wolke_t::async_wolke_t(karte_t *welt, loadsave_t *file) : ding_t(welt)
 
 	// do not remove from this position, since there will be nothing
 	ding_t::set_flag(ding_t::not_on_map);
+}
+
+image_id async_wolke_t::get_bild() const 
+{
+	return IMG_LEER; 
 }

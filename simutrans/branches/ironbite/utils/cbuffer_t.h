@@ -63,12 +63,38 @@ public:
 	/* enlarge the buffer if needed (i.e. size+by_amount larger than capacity) */
 	void extend(unsigned int by_amount);
 
+
+	/**
+	 * Check if buffer contains the given string as substring
+	 * @author Hj. Malthaner
+	 */
+	bool contains(const char * str) const;
+	
+	/**
+	 * Check if buffer contains the given string as substring
+	 * @return index os substring or -1 if not found
+	 * @author Hj. Malthaner
+	 */
+	int index_of(const char * str) const;
+	
+	/**
+	 * Shortens the string to the given number of characters.
+	 * Does not reduce the buffer capacity.
+	 * @author Hj. Malthaner
+	 */
+	void truncate(int len);
+	
 	/**
 	 * Automagic conversion to a const char* for backwards compatibility
 	 * @author Hj. Malthaner
 	 */
 	operator const char *() const {return buf;}
 
+	/**
+	 * Explicit conversion to a const char*
+	 * @author Hj. Malthaner
+	 */
+	const char * to_string() const {return buf;}
 };
 
 #endif

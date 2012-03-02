@@ -175,3 +175,13 @@ void schiene_t::rdwr(loadsave_t *file)
 		//DBG_MESSAGE("schiene_t::rdwr","track %s at (%i,%i) max_speed %i",bname,get_pos().x,get_pos().y,old_max_speed);
 	}
 }
+
+/**
+ * if a function return here a value with TRANSPARENT_FLAGS set
+ * then a transparent outline with the color form the lower 8 Bit is drawn
+ * @author kierongreen
+ */
+PLAYER_COLOR_VAL schiene_t::get_outline_colour() const 
+{
+	return (show_reservations  &&  reserved.is_bound()) ? TRANSPARENT75_FLAG | OUTLINE_FLAG | COL_RED : 0;
+}

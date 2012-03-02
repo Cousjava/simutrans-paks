@@ -99,7 +99,7 @@ public:
 	 * then a transparent outline with the color form the lower 8 Bit is drawn
 	 * @author kierongreen
 	 */
-	virtual PLAYER_COLOR_VAL get_outline_colour() const { return (show_reservations  &&  reserved.is_bound()) ? TRANSPARENT75_FLAG | OUTLINE_FLAG | COL_RED : 0;}
+	virtual PLAYER_COLOR_VAL get_outline_colour() const;
 
 	/*
 	 * to show reservations if needed

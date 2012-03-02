@@ -10,7 +10,7 @@
 
 #include "../simtypes.h"
 #include "../simimg.h"
-#include "../simdings.h"
+#include "thing_no_info.h"
 #include "../dataobj/ribi.h"
 #include "../besch/way_obj_besch.h"
 #include "../tpl/vector_tpl.h"

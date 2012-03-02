@@ -1,10 +1,10 @@
 #ifndef dings_wolke_t
 #define dings_wolke_t
 
+#include "thing_no_info.h"
 #include "../besch/skin_besch.h"
 #include "../ifc/sync_steppable.h"
 #include "../tpl/vector_tpl.h"
-#include "../simimg.h"
 
 class karte_t;
 
@@ -51,7 +51,7 @@ class async_wolke_t : public ding_t
 public:
 	async_wolke_t(karte_t *welt, loadsave_t *file);
 	typ get_typ() const { return async_wolke; }
-	image_id get_bild() const { return IMG_LEER; }
+	image_id get_bild() const;
 };
 
 class raucher_t : public ding_t
@@ -59,7 +59,7 @@ class raucher_t : public ding_t
 public:
 	raucher_t(karte_t *welt, loadsave_t *file);
 	typ get_typ() const { return raucher; }
-	image_id get_bild() const { return IMG_LEER; }
+	image_id get_bild() const;
 };
 
 #endif

@@ -8,12 +8,7 @@
 #ifndef boden_wege_weg_h
 #define boden_wege_weg_h
 
-#include "../../simimg.h"
-#include "../../simtypes.h"
-#include "../../simdings.h"
-#include "../../besch/weg_besch.h"
-#include "../../dataobj/koord3d.h"
-
+#include "../../dings/thing_no_info.h"
 
 class karte_t;
 class weg_besch_t;
@@ -204,7 +199,7 @@ public:
 	* Die Bezeichnung des Wegs
 	* @author Hj. Malthaner
 	*/
-	const char *get_name() const { return besch->get_name(); }
+	const char *get_name() const;
 
 	/**
 	* Setzt neue Richtungsbits für einen Weg.

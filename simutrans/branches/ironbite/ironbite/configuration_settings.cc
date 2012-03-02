@@ -1,9 +1,8 @@
-#include <string.h>
-
 #include "configuration_settings.h"
 
 #include "../simdebug.h"
 #include "../dataobj/tabfile.h"
+#include "../utils/cbuffer_t.h"
 
 /**
  * Global Iron Bite settings
@@ -28,30 +27,24 @@ configuration_settings_t::configuration_settings_t()
 bool configuration_settings_t::read(const char * path)
 {
 	const char * simuconf = "simuconf.tab";
-	char buf[4096];
-	int len = (int)strlen(path);
+	cbuffer_t buf;
 	
-	if(len > 4000)
-	{
-		dbg->fatal("configuration_settings_t::read()", "Path %s is too long, more than 4000 characters", path);
-	}
+	buf.append(path);
 	
-	strcpy(buf, path);
-	
-	if(strstr(path, simuconf))
+	if(buf.contains(simuconf))
 	{
 		// Hajo: we need to clean the path.
-		buf[len - strlen(simuconf)] = 0;
+		buf.truncate(buf.len() - strlen(simuconf));
 	}
 
-	strcat(buf, "iron_bite.ini");
+	buf.append("iron_bite.ini");
 	
 	tabfile_t tabfile;
 	tabfileobj_t data;
 	
 	if(tabfile.open(buf))
 	{
-		dbg->warning("configuration_settings_t::read()", "Reading %s\n", buf);
+		dbg->warning("configuration_settings_t::read()", "Reading %s\n", buf.to_string());
 		
 		tabfile.read(data);
 		tabfile.close();
@@ -75,7 +68,7 @@ bool configuration_settings_t::read(const char * path)
 	}
 	else
 	{
-		dbg->warning("configuration_settings_t::read()", "Could not read %s\n", buf);
+		dbg->warning("configuration_settings_t::read()", "Could not read %s\n", buf.to_string());
 		return false;
 	}
 		

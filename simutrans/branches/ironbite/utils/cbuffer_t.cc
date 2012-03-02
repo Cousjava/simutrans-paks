@@ -19,14 +19,15 @@ cbuffer_t::cbuffer_t() :
 
 cbuffer_t::~cbuffer_t()
 {
-  delete [] buf;
+	delete [] buf;
+	buf = 0;
 }
 
 
 void cbuffer_t::clear()
 {
-  buf[0] = '\0';
-  size = 0;
+	buf[0] = '\0';
+	size = 0;
 }
 
 
@@ -168,6 +169,46 @@ void cbuffer_t::printf(const char* fmt, ...)
 			inc = (size_t)count;
 		}
 		extend(inc);
+	}
+}
+
+/**
+ * Check if buffer contains the given string as substring
+ * @author Hj. Malthaner
+ */
+bool cbuffer_t::contains(const char * str) const
+{
+	return strstr(buf, str);
+}
+
+/**
+ * Check if buffer contains the given string as substring
+ * @return index os substring or -1 if not found
+ * @author Hj. Malthaner
+ */
+int cbuffer_t::index_of(const char * str) const
+{
+	int pos = -1;
+	const char * p = strstr(buf, str);
+	
+	if(p)
+	{
+		pos = p - buf;
+	}
+	
+	return pos; 
+}
+
+/**
+ * Shortens the string to the given number of characters.
+ * Does not reduce the buffer capacity.
+ * @author Hj. Malthaner
+ */
+void cbuffer_t::truncate(const int len)
+{
+	if(len >=0 && (unsigned int)len < capacity)
+	{
+		buf[len] = '\0';
 	}
 }
 

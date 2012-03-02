@@ -10,9 +10,9 @@
 
 
 #include "../halthandle_t.h"
-// #include "../simimg.h"
-// #include "../simcolor.h"
+
 #include "../simconst.h"
+#include "../besch/weg_besch.h"
 #include "../dataobj/koord3d.h"
 #include "../dataobj/dingliste.h"
 #include "wege/weg.h"
@@ -578,9 +578,9 @@ public:
 	* @author DarioK
 	* @see get_weg
 	*/
-	uint8 get_styp(waytype_t typ) const
+	uint8 get_styp(const waytype_t typ) const
 	{
-		weg_t *weg = get_weg(typ);
+		const weg_t * weg = get_weg(typ);
 		return (weg) ? weg->get_besch()->get_styp() : 0;
 	}
 

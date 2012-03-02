@@ -161,8 +161,7 @@ bool karte_t::recalc_snowline()
 // read height data from bmp or ppm files
 bool karte_t::get_height_data_from_file( const char *filename, sint8 grundwasser, sint8 *&hfield, sint16 &ww, sint16 &hh, bool update_only_values )
 {
-	FILE *file = fopen(filename, "rb");
-	if(file) {
+	if (FILE* const file = fopen(filename, "rb")) {
 		char id[3];
 		// parsing the header of this mixed file format is nottrivial ...
 		id[0] = fgetc(file);
@@ -646,16 +645,14 @@ DBG_MESSAGE("karte_t::destroy()", "world destroyed");
 }
 
 
-
-void karte_t::add_convoi(convoihandle_t &cnv)
+void karte_t::add_convoi(convoihandle_t const cnv)
 {
 	assert(cnv.is_bound());
 	convoi_array.append_unique(cnv);
 }
 
 
-
-void karte_t::rem_convoi(convoihandle_t& cnv)
+void karte_t::rem_convoi(convoihandle_t const cnv)
 {
 	convoi_array.remove(cnv);
 }
@@ -4781,14 +4778,11 @@ DBG_MESSAGE("karte_t::laden()", "%d factories loaded", fab_list.get_count());
 
 	// ... before removing dummy stops
 	for(  slist_tpl<halthandle_t>::const_iterator i=haltestelle_t::get_alle_haltestellen().begin(); i!=haltestelle_t::get_alle_haltestellen().end();  ) {
-		if(  (*i)->get_besitzer()==NULL  ||  !(*i)->existiert_in_welt()  ) {
+		halthandle_t const h = *i;
+		++i;
+		if (!h->get_besitzer() || !h->existiert_in_welt()) {
 			// this stop was only needed for loading goods ...
-			halthandle_t h = (*i);
-			++i;	// goto next
 			haltestelle_t::destroy(h);	// remove from list
-		}
-		else {
-			++i;
 		}
 	}
 
