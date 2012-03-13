@@ -52,3 +52,11 @@ value=170
 speed_bonus=0
 weight_per_unit=75
 -----------------------
+obj=good
+name=melodies
+metric=
+catg=0
+value=90
+speed_bonus=1
+weight_per_unit=40
+-----------------------

@@ -22,9 +22,8 @@ cd ..
 cd decoration
 del err.txt
 cd ..
-cd city
-del err.txt
-cd ..
+del city\err.txt
+del citycar\err.txt
 cd pedestrians
 del err.txt
 cd ..
