@@ -395,16 +395,61 @@ Diagonal[NE][1]=elv_SFCA_at_winter.5.2,0,+16
 Diagonal[SE][1]=elv_SFCA_at_winter.5.3,0,+16
 --
 Obj=bridge
+name=steel_truss_asphaltroad
+copyright=Timothy Baldock
+waytype=road
+cost=80000
+maintenance=1500
+topspeed=50
+max_weight=130
+max_lenght=16
+intro_year=1940
+intro_month=1
+retire_year=
+retire_month=
+pillar_distance=1
+#
+cursor=steel-truss-current.3.4
+icon=> steel-truss-current.3.5
+backPillar[S]=steel-truss-current.2.4
+backPillar[W]=steel-truss-current.2.5
+#
+BackImage[NS]=steel-truss-current.0.0
+FrontImage[NS]=steel-truss-current.1.0
+BackImage[EW]=steel-truss-current.0.1
+FrontImage[EW]=steel-truss-current.1.1
+#
+BackRamp[N]=steel-truss-current.0.5
+FrontRamp[N]=steel-truss-current.1.5
+BackRamp[W]=steel-truss-current.0.4
+FrontRamp[W]=steel-truss-current.1.4
+BackRamp[S]=steel-truss-current.0.2
+FrontRamp[S]=steel-truss-current.1.2
+BackRamp[E]=steel-truss-current.0.3
+FrontRamp[E]=steel-truss-current.1.3
+#
+BackStart[N]=steel-truss-current.2.3
+FrontStart[N]=steel-truss-current.3.3
+BackStart[S]=steel-truss-current.2.0
+FrontStart[S]=steel-truss-current.3.0
+BackStart[E]=steel-truss-current.2.1
+FrontStart[E]=steel-truss-current.3.1
+BackStart[W]=steel-truss-current.2.2
+FrontStart[W]=steel-truss-current.3.2
+--
+Obj=bridge
 copyright=TKU
 Obj=bridge
 copyright=TKU
-name=suburb_road_brudge
+name=suburb_road_bridge
 waytype=road
 cost=100000
-maintenance=150000
+maintenance=1500
 topspeed=70
 max_weight=120
 max_lenght=8
+intro_year = 1954
+intro_month = 11
 cursor=./70_Japan_Bridge.2.4
 icon=> ./70_Japan_Bridge.2.5
 pillar_distance=1

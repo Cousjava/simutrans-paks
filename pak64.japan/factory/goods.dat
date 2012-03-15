@@ -2,7 +2,7 @@ obj=good
 name=Passagiere
 metric=
 catg=0
-value=30
+value=40
 speed_bonus=8
 weight_per_unit=75
 -----------------------
