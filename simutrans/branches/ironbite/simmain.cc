@@ -209,8 +209,8 @@ void modal_dialogue( gui_frame_t *gui, long magic, karte_t *welt, bool (*quit)()
 				}
 				if(  ev.ev_class == EVENT_KEYBOARD  &&  ev.ev_code == SIM_KEY_F1  ) {
 					if(  gui_frame_t *win = win_get_top()  ) {
-						if(  win->get_hilfe_datei()!=NULL  ) {
-							create_win(new help_frame_t(win->get_hilfe_datei()), w_info, (long)(win->get_hilfe_datei()) );
+						if(  const char *helpfile = win->get_hilfe_datei()  ) {
+							help_frame_t::open_help_on( helpfile );
 							continue;
 						}
 					}
@@ -242,7 +242,7 @@ void modal_dialogue( gui_frame_t *gui, long magic, karte_t *welt, bool (*quit)()
 		while(  win_is_open(gui)  &&  !umgebung_t::quit_simutrans  &&  !quit()  ) {
 			// do not move, do not close it!
 			dr_prepare_flush();
-			gui->zeichnen( koord(win_get_posx(gui),win_get_posy(gui)), gui->get_fenstergroesse() );
+			gui->zeichnen(win_get_pos(gui), gui->get_fenstergroesse());
 			dr_flush();
 
 			display_poll_event(&ev);
@@ -594,9 +594,10 @@ int simu_main(int argc, char** argv)
 	}
 
 	DBG_MESSAGE( "simmain::main()", "Version: " VERSION_NUMBER "  Date: " VERSION_DATE);
-	DBG_MESSAGE( "Debuglevel","%i", umgebung_t::verbose_debug );
-	DBG_MESSAGE( "program_dir", umgebung_t::program_dir );
-	DBG_MESSAGE( "home_dir", umgebung_t::user_dir );
+	DBG_MESSAGE("Debuglevel",  "%i", umgebung_t::verbose_debug);
+	DBG_MESSAGE("program_dir", "%s", umgebung_t::program_dir);
+	DBG_MESSAGE("home_dir",    "%s", umgebung_t::user_dir);
+	DBG_MESSAGE("locale",      "%s", dr_get_locale_string());
 #ifdef DEBUG
 	if (gimme_arg(argc, argv, "-sizes", 0) != NULL) {
 		// show the size of some structures ...
@@ -868,7 +869,7 @@ int simu_main(int argc, char** argv)
 		// try recover with the latest savegame
 		if(  file.rd_open(servername)  ) {
 			// compare pakset (objfilename has trailing path separator, pak_extension not)
-			if(  strncmp( file.get_pak_extension(), umgebung_t::objfilename.c_str(), strlen(file.get_pak_extension() ) )==0  ) {
+			if (strstart(umgebung_t::objfilename.c_str(), file.get_pak_extension())) {
 				// same pak directory - load this
 				loadgame = servername;
 				new_world = false;
@@ -1061,7 +1062,7 @@ DBG_MESSAGE("simmain","loadgame file found at %s",buffer);
 	sprachengui_t::init_font_from_lang();
 
 	destroy_all_win(true);
-	if(  !umgebung_t::server  ) {
+	if(  !umgebung_t::networkmode  &&  !umgebung_t::server  ) {
 		welt->get_message()->clear();
 	}
 	while(  !umgebung_t::quit_simutrans  ) {

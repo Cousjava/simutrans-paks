@@ -93,55 +93,37 @@ void fahrplan_gui_stats_t::highlight_schedule( schedule_t *markfpl, bool marking
 }
 
 
-
 /**
- * Fills buf with description of schedule's i'th entry.
- *
- * @author Hj. Malthaner
+ * Append description of entry to buf.
  */
-void fahrplan_gui_t::gimme_stop_name(cbuffer_t & buf, karte_t *welt, const spieler_t *sp, const linieneintrag_t &entry )
+static void gimme_stop_name(cbuffer_t& buf, karte_t* const welt, spieler_t const* const sp, linieneintrag_t const& entry)
 {
-	halthandle_t halt = haltestelle_t::get_halt(welt, entry.pos, sp);
-	if(halt.is_bound()) {
+	char const* what;
+	halthandle_t const halt = haltestelle_t::get_halt(welt, entry.pos, sp);
+	if (halt.is_bound()) {
 		if (entry.ladegrad != 0) {
-			buf.printf("%d%% %s (%s)", entry.ladegrad, halt->get_name(), entry.pos.get_str() );
+			buf.printf("%d%% ", entry.ladegrad);
 		}
-		else {
-			buf.printf("%s (%s)",
-				halt->get_name(),
-				entry.pos.get_str() );
-		}
-	}
-	else {
-		const grund_t* gr = welt->lookup(entry.pos);
-		if(  gr==NULL  ) {
-			buf.printf("%s (%s)", translator::translate("Invalid coordinate"), entry.pos.get_str() );
-		}
-		else if(  gr->get_depot() != NULL  ) {
-			buf.printf("%s (%s)", translator::translate("Depot"), entry.pos.get_str() );
-		}
-		else if(  const char *label_text = gr->get_text()  ){
-			buf.printf("%s %s (%s)", translator::translate("Wegpunkt"), label_text, entry.pos.get_str() );
-		}
-		else {
-			buf.printf("%s (%s)", translator::translate("Wegpunkt"), entry.pos.get_str() );
+		what = halt->get_name();
+	} else {
+		grund_t const* const gr = welt->lookup(entry.pos);
+		if (!gr) {
+			what = translator::translate("Invalid coordinate");
+		} else if (gr->get_depot()) {
+			what = translator::translate("Depot");
+		} else if (char const* const label_text = gr->get_text()) {
+			buf.printf("%s ", translator::translate("Wegpunkt"));
+			what = label_text;
+		} else {
+			what = translator::translate("Wegpunkt");
 		}
 	}
+	buf.printf("%s (%s)", what, entry.pos.get_str());
 }
 
 
-/**
- * Fills buf with description of schedule's i'th entry.
- * short version, without loading level and position ...
- * @author Hj. Malthaner
- */
-void fahrplan_gui_t::gimme_short_stop_name(cbuffer_t &buf, karte_t *welt, const spieler_t *sp, const schedule_t *fpl, int i, int max_chars)
+void fahrplan_gui_t::gimme_short_stop_name(cbuffer_t& buf, karte_t* const welt, spieler_t const* const sp, linieneintrag_t const& entry, int const max_chars)
 {
-	if(i<0  ||  fpl==NULL  ||  i>=fpl->get_count()) {
-		dbg->warning("void fahrplan_gui_t::gimme_short_stop_name()","tried to receive unused entry %i in schedule %p.",i,fpl);
-		return;
-	}
-	const linieneintrag_t& entry = fpl->eintrag[i];
 	const char *p;
 	halthandle_t halt = haltestelle_t::get_halt(welt, entry.pos, sp);
 	if(halt.is_bound()) {
@@ -176,38 +158,36 @@ cbuffer_t fahrplan_gui_stats_t::buf;
 
 void fahrplan_gui_stats_t::zeichnen(koord offset)
 {
-	if(fpl) {
-		sint16 width = get_groesse().x-16;
+	if (!fpl) return;
 
-		if(  fpl->get_count()==0  ) {
-			buf.clear();
-			buf.append( translator::translate( "Please click on the map to add\nwaypoints or stops to this\nschedule." ) );
-			width = display_multiline_text( offset.x+4, offset.y, buf, COL_WHITE );
-			set_groesse( koord(width+4+16,3*LINESPACE ) );
-		}
-		else {
-			for (int i = 0; i < fpl->get_count(); i++) {
-
-				if(  i==fpl->get_aktuell()  ) {
-					// highlight current entry (width is just wide enough, scrolly will do clipping)
-					display_fillbox_wh_clip( offset.x, offset.y + i*(LINESPACE+1)-1, 2048, LINESPACE+1, sp->get_player_color1()+1, false );
-				}
-
-				buf.clear();
-				buf.printf( "%i) ", i+1 );
-				fahrplan_gui_t::gimme_stop_name( buf, welt, sp, fpl->eintrag[i] );
-				sint16 w = display_proportional_clip(offset.x + 4 + 10, offset.y + i * (LINESPACE + 1), buf, ALIGN_LEFT, i!=fpl->get_aktuell() ? COL_BLACK : COL_WHITE, true);
-				if(  w>width  ) {
-					width = w;
-				}
-
-				// the goto button (right arrow)
-				display_color_img( i!=fpl->get_aktuell() ? button_t::arrow_right_normal : button_t::arrow_right_pushed, offset.x + 2, offset.y + i * (LINESPACE + 1), 0, false, true);
-
+	if (fpl->empty()) {
+		buf.clear();
+		buf.append(translator::translate("Please click on the map to add\nwaypoints or stops to this\nschedule."));
+		sint16 const width = display_multiline_text(offset.x + 4, offset.y, buf, COL_WHITE);
+		set_groesse(koord(width + 4 + 16, 3 * LINESPACE));
+	} else {
+		int    i     = 0;
+		size_t sel   = fpl->get_aktuell();
+		sint16 width = get_groesse().x - 16;
+		FORX(minivec_tpl<linieneintrag_t>, const& e, fpl->eintrag, (--sel, offset.y += LINESPACE + 1)) {
+			if (sel == 0) {
+				// highlight current entry (width is just wide enough, scrolly will do clipping)
+				display_fillbox_wh_clip(offset.x, offset.y - 1, 2048, LINESPACE + 1, sp->get_player_color1() + 1, false);
 			}
-			set_groesse( koord(width+16, fpl->get_count() * (LINESPACE + 1) ) );
-			highlight_schedule( fpl, true );
+
+			buf.clear();
+			buf.printf("%i) ", ++i);
+			gimme_stop_name(buf, welt, sp, e);
+			PLAYER_COLOR_VAL const c = sel == 0 ? COL_BLACK : COL_WHITE;
+			sint16           const w = display_proportional_clip(offset.x + 4 + 10, offset.y, buf, ALIGN_LEFT, c, true);
+			if (width < w) width = w;
+
+			// the goto button (right arrow)
+			image_id const img = sel == 0 ? button_t::arrow_right_normal : button_t::arrow_right_pushed;
+			display_color_img(img, offset.x + 2, offset.y, 0, false, true);
 		}
+		set_groesse(koord(width + 16, fpl->get_count() * (LINESPACE + 1)));
+		highlight_schedule(fpl, true);
 	}
 }
 
@@ -778,10 +758,9 @@ void fahrplan_gui_t::rdwr(loadsave_t *file)
 		}
 		if(  cnv.is_bound() ) {
 			// now we can open the window ...
-			KOORD_VAL xpos = win_get_posx( this );
-			KOORD_VAL ypos = win_get_posy( this );
+			koord const& pos = win_get_pos(this);
 			fahrplan_gui_t *w = new fahrplan_gui_t( cnv->get_schedule(), cnv->get_besitzer(), cnv );
-			create_win( xpos, ypos, w, w_info, (long)cnv->get_schedule() );
+			create_win(pos.x, pos.y, w, w_info, (long)cnv->get_schedule());
 			w->set_fenstergroesse( gr );
 			w->fpl->copy_from( fpl );
 			cnv->get_schedule()->eingabe_abschliessen();

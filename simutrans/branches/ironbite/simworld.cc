@@ -683,7 +683,7 @@ bool karte_t::rem_stadt(stadt_t *s)
 
 	// reduce number of towns
 	if(s->get_name()) {
-		DBG_MESSAGE("karte_t::rem_stadt()", s->get_name() );
+		DBG_MESSAGE("karte_t::rem_stadt()", "%s", s->get_name());
 	}
 	stadt.remove(s);
 	DBG_DEBUG4("karte_t::rem_stadt()", "reduce city to %i", settings.get_anzahl_staedte() - 1);
@@ -2382,7 +2382,7 @@ void karte_t::set_werkzeug( werkzeug_t *w, spieler_t *sp )
 	}
 
 	if(  (!w->is_init_network_save()  ||  !w->is_work_network_save())  &&
-		 !(w->get_id()==(WKZ_SET_PLAYER_TOOL|SIMPLE_TOOL))  &&
+		 !(w->get_id()==(WKZ_SET_PLAYER_TOOL|SIMPLE_TOOL)  ||  w->get_id()==(WKZ_ADD_MESSAGE_TOOL|SIMPLE_TOOL))  &&
 		 sp  &&  sp->is_locked()  ) {
 		// player is currently password protected => request unlock first
 		create_win( -1, -1, new password_frame_t(sp), w_info, magic_pwd_t + sp->get_player_nr() );
@@ -3113,6 +3113,9 @@ void karte_t::recalc_average_speed()
 				case narrowgauge_wt:
 					vehicle_type = "narrowgauge vehicle";
 					break;
+				default:
+					// this is not a valid waytype
+					continue;
 			}
 			vehicle_type = translator::translate( vehicle_type );
 
@@ -3341,7 +3344,7 @@ void karte_t::step()
 
 	DBG_DEBUG4("karte_t::step", "step convois");
 	// since convois will be deleted during stepping, we need to step backwards
-	for(sint32 i=convoi_array.get_count()-1;  i>=0;  i--  ) {
+	for (size_t i = convoi_array.get_count(); i-- != 0;) {
 		convoihandle_t cnv = convoi_array[i];
 		cnv->step();
 		if((i&7)==0) {
@@ -3401,6 +3404,15 @@ void karte_t::step()
 		if(  umgebung_t::server_announce  ) {
 			// inform the master server
 			announce_server( 1 );
+		}
+
+		// check if player has left and send message
+		for(uint32 i=0; i < socket_list_t::get_count(); i++) {
+			socket_info_t& info = socket_list_t::get_client(i);
+			if (info.state == socket_info_t::has_left) {
+				nwc_nick_t::server_tools(this, i, nwc_nick_t::FAREWELL, NULL);
+				info.state = socket_info_t::inactive;
+			}
 		}
 		last_clients = socket_list_t::get_playing_clients();
 		// add message via tool
@@ -5435,8 +5447,8 @@ void karte_t::interactive_event(event_t &ev)
 
 			case SIM_KEY_F1:
 				if(  gui_frame_t *win = win_get_top()  ) {
-					if(  win->get_hilfe_datei()!=NULL  ) {
-						create_win(new help_frame_t(win->get_hilfe_datei()), w_info, (long)(win->get_hilfe_datei()) );
+					if(  const char *helpfile = win->get_hilfe_datei()  ) {
+						help_frame_t::open_help_on( helpfile );
 						break;
 					}
 				}
@@ -5472,8 +5484,7 @@ void karte_t::interactive_event(event_t &ev)
 						}
 					}
 					if(!ok) {
-						// key help dialoge
-						create_win(new help_frame_t("keys.txt"), w_info, magic_keyhelp);
+						help_frame_t::open_help_on( "keys.txt" );
 					}
 				}
 				break;

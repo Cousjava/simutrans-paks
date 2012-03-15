@@ -73,7 +73,6 @@ HANDLE	hFlushThread=0;
 #endif
 
 
-
 /*
  * Hier sind die Basisfunktionen zur Initialisierung der
  * Schnittstelle untergebracht

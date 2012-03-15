@@ -70,7 +70,7 @@ news_loc::news_loc(karte_t* welt, const char* text, koord k, PLAYER_COLOR_VAL co
 }
 
 
-// returns position of depot on the map
+// returns position of the location shown in the subwindow
 void news_loc::get_weltpos(koord3d & k) const
 {
 	k = view.get_location();

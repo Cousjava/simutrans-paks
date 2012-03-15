@@ -2023,7 +2023,7 @@ bool wegbauer_t::baue_tunnelboden()
 
 void wegbauer_t::baue_elevated()
 {
-	FOR(vector_tpl<koord3d>, & i, route) {
+	FOR(koord3d_vector_t, & i, route) {
 		planquadrat_t* const plan = welt->access(i.get_2d());
 
 		grund_t* const gr0 = plan->get_boden_in_hoehe(i.z);
@@ -2149,7 +2149,11 @@ void wegbauer_t::baue_schiene()
 
 				// do not touch fences, tram way etc. if there is already same way with different type
 				// keep faster ways or if it is the same way ... (@author prissi)
-				if(  weg->get_besch()==besch  ||  (besch->get_styp()==0 && weg->get_besch()->get_styp()==7 && gr->has_two_ways())  ||  keep_existing_ways  ||  (keep_existing_faster_ways  &&  weg->get_besch()->get_topspeed()>besch->get_topspeed()) || (gr->get_typ()==grund_t::monorailboden  &&  (bautyp&elevated_flag)==0)  ) {
+				if (weg->get_besch() == besch                                                               ||
+						(besch->get_styp() == 0 && weg->get_besch()->get_styp() == 7 && gr->has_two_ways())     ||
+						keep_existing_ways                                                                      ||
+						(keep_existing_faster_ways && weg->get_besch()->get_topspeed() > besch->get_topspeed()) ||
+						(gr->get_typ() == grund_t::monorailboden && !(bautyp & elevated_flag))) {
 					//nothing to be done
 					change_besch = false;
 				}

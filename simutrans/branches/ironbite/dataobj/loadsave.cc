@@ -98,52 +98,48 @@ bool loadsave_t::rd_open(const char *filename)
 	}
 	saving = false;
 
-	if(strncmp(buf, SAVEGAME_PREFIX, sizeof(SAVEGAME_PREFIX) - 1)) {
-		if(strncmp(buf, XML_SAVEGAME_PREFIX, sizeof(XML_SAVEGAME_PREFIX)-1)!=0) {
+	if (strstart(buf, SAVEGAME_PREFIX)) {
+		version = int_version(buf + sizeof(SAVEGAME_PREFIX) - 1, &mode, pak_extension);
+	} else if (strstart(buf, XML_SAVEGAME_PREFIX)) {
+		mode |= xml;
+		while (lsgetc() != '<') { /* nothing */ }
+		read(buf, sizeof(SAVEGAME_PREFIX) - 1);
+		if (!strstart(buf, SAVEGAME_PREFIX)) {
 			close();
+			// not a simutrans XML file ...
 			return false;
 		}
-		else {
-			mode |= xml;
-			while(  lsgetc()!='<'  ) { /* nothing */ }
-			read( buf, sizeof(SAVEGAME_PREFIX) - 1 );
-			if(  strncmp(buf, SAVEGAME_PREFIX, sizeof(SAVEGAME_PREFIX) - 1)  ) {
-				close();
-				// not a simutrans XML file ...
-				return false;
-			}
 
-			read( buf, sizeof("version=\"")-1 );
-			char str[256];
-			char *s = str;
-			for(  int i=0;  i<255;  i++ ) {
+		read(buf, sizeof("version=\"") - 1);
+		char str[256];
+		char *s = str;
+		for (int i = 0; i < 255; i++) {
+			char c = lsgetc();
+			if (c=='\"') {
+				break;
+			}
+			*s++ = c;
+		}
+		*s = 0;
+		int dummy;
+		version = int_version(str, &dummy, pak_extension);
+
+		read(buf, sizeof(" pak=\"") - 1);
+		if (version > 0) {
+			s = pak_extension;
+			for (int i = 0; i < 63; i++) {
 				char c = lsgetc();
-				if(c=='\"') {
+				if (c=='\"') {
 					break;
 				}
 				*s++ = c;
 			}
 			*s = 0;
-			int dummy;
-			version = int_version(str, &dummy, pak_extension);
-
-			read( buf, sizeof(" pak=\"")-1 );
-			if (version>0) {
-				s = pak_extension;
-				for(  int i=0;  i<63;  i++ ) {
-					char c = lsgetc();
-					if(c=='\"') {
-						break;
-					}
-					*s++ = c;
-				}
-				*s = 0;
-				while(  lsgetc()!='>'  )  ;
-			}
+			while (lsgetc() != '>');
 		}
-	}
-	else {
-		version = int_version(buf + sizeof(SAVEGAME_PREFIX) - 1, &mode, pak_extension);
+	} else {
+		close();
+		return false;
 	}
 	if(mode==text) {
 		close();
@@ -246,7 +242,7 @@ const char *loadsave_t::close()
 	const char *success = NULL;
 
 	if(  is_xml()  &&  saving  &&  (!is_bzip2()  ||  fd->bse==BZ_OK)
-	     &&  (is_zipped()  ?  fd->gzfp  :  fd->fp) ) {
+	     &&  (is_zipped()  ?  fd->gzfp != NULL :  fd->fp != NULL) ) {
 		// only write when close and no error occurred
 		const char *end = "\n</Simutrans>\n";
 		write( end, strlen(end) );
@@ -727,8 +723,8 @@ void loadsave_t::rdwr_str(char* s, size_t const size)
 			char buffer[10];
 			read( buffer, 7 );
 			bool string = true;
-			if(  strncmp("string>",buffer,7)!=0  ) {
-				if(  strncmp("![CDATA",buffer,7)!=0  ||  lsgetc()!='['  ) {
+			if (!strstart(buffer, "string>")) {
+				if (!strstart(buffer, "![CDATA") || lsgetc() != '[') {
 					buffer[7] = 0;
 					dbg->fatal( "loadsave_t::rdwr_str()","expected str \"<![CDATA[\", got \"%s\"", buffer );
 				}
@@ -743,7 +739,7 @@ void loadsave_t::rdwr_str(char* s, size_t const size)
 						ptr = s;
 					}
 					if(  c=='>'  ) {
-						if(  i>=8  &&  strncmp( s-8, "</string>", 8 )==0  ) {
+						if (i >= 8 && strstart(s - 8, "</string")) {
 							s[-8] = 0;
 							ptr = s-8;
 							break;
@@ -815,11 +811,10 @@ void loadsave_t::start_tag(const char *tag)
 		}
 		else {
 			char buf[256];
-			const size_t len = strlen(tag);
 			// find start of tag
 			while(  lsgetc()!='<'  ) { /* nothing */ }
-			read( buf, len );
-			if(  strncmp(buf,tag,len)!=0  ) {
+			read(buf, strlen(tag));
+			if (!strstart(buf, tag)) {
 				dbg->fatal( "loadsave_t::start_tag()","expected \"%s\", got \"%s\"", tag, buf );
 			}
 			while(  lsgetc()!='>'  )  ;
@@ -916,7 +911,7 @@ void loadsave_t::rd_obj_id(char *id_buf, int size)
 			while(  lsgetc()!='<'  ) { /* nothing */ }
 			read( buf, 6 );
 			buf[5] = 0;
-			if(  strncmp(buf,"<id=\"",5)!=0  ) {
+			if (!strstart(buf, "<id=\"")) {
 				dbg->fatal( "loadsave_t::rd_obj_id()","expected id str \"<id=\"\", got \"%s\"", buf );
 			}
 			// now parse input
@@ -931,7 +926,7 @@ void loadsave_t::rd_obj_id(char *id_buf, int size)
 			}
 			*id_buf = 0;
 			read( buf, 2 );
-			if(  strncmp(buf,"/>",2)!=0  ) {
+			if (!strstart(buf, "/>")) {
 				dbg->fatal( "loadsave_t::rd_obj_id()","id tag not properly closed!" );
 			}
 		}
@@ -979,11 +974,10 @@ uint32 loadsave_t::int_version(const char *version_text, int * /*mode*/, char *p
 		/* the compression and the mode we determined already ourselves (otherwise we cannot read this
 		 * => leave the mode alone but for unknown modes!
 		 */
-		if(!strncmp(version_text, "bin", 3)) {
+		if (strstart(version_text, "bin")) {
 			//*mode = binary;
 			version_text += 3;
-		}
-		else if(!strncmp(version_text, "zip", 3)) {
+		} else if (strstart(version_text, "zip")) {
 			//*mode = zipped;
 			version_text += 3;
 		}

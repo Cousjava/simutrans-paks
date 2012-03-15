@@ -378,10 +378,10 @@ const char *wkz_abfrage_t::work( karte_t *welt, spieler_t *sp, koord3d pos )
 					}
 				}
 
-				for(int n=gr->get_top()-1;  n>=0;  n--  ) {
+				for (size_t n = gr->get_top(); n-- != 0;) {
 					ding_t *dt = gr->obj_bei(n);
 					if(dt  &&  dt->get_typ()!=ding_t::wayobj  &&  dt->get_typ()!=ding_t::pillar  &&  dt->get_typ()!=ding_t::label) {
-						DBG_MESSAGE("wkz_abfrage()", "index %d", n);
+						DBG_MESSAGE("wkz_abfrage()", "index %u", (unsigned)n);
 						dt->zeige_info();
 						// did some new window open?
 						if(old_count!=win_get_open_count()) {
@@ -812,7 +812,7 @@ const char *wkz_raise_t::work( karte_t *welt, spieler_t *sp, koord3d k )
 		if(hgt < 14*Z_TILE_STEP) {
 
 			int n = 0;	// tiles changed
-			if(default_param  &&  strlen(default_param)>0) {
+			if (!strempty(default_param)) {
 				// called by dragging or by AI
 				sint16 height = atoi(default_param);
 				// dragging may be going up or down!
@@ -900,7 +900,7 @@ const char *wkz_lower_t::work( karte_t *welt, spieler_t *sp, koord3d k )
 		if(hgt > welt->get_grundwasser()) {
 
 			int n = 0;	// tiles changed
-			if(default_param  &&  strlen(default_param)>0) {
+			if (!strempty(default_param)) {
 				// called by dragging or by AI
 				sint16 height = atoi(default_param);
 				// dragging may be going up or down!
@@ -1645,10 +1645,11 @@ const char* wkz_wegebau_t::get_default_param(spieler_t *sp) const
 
 bool wkz_wegebau_t::is_selected( const karte_t *welt ) const
 {
-	if (welt->get_werkzeug(welt->get_active_player_nr())->get_id()!=id) {
+	werkzeug_t const* const tool = welt->get_werkzeug(welt->get_active_player_nr());
+	if (tool->get_id() != get_id()) {
 		return false;
 	}
-	const wkz_wegebau_t *selected = dynamic_cast<const wkz_wegebau_t *>(welt->get_werkzeug(welt->get_active_player_nr()));
+	wkz_wegebau_t const* const selected = dynamic_cast<wkz_wegebau_t const*>(tool);
 	return (selected  &&  selected->get_besch(welt->get_timeline_year_month(),false) == get_besch(welt->get_timeline_year_month(),false));
 }
 
@@ -3415,19 +3416,6 @@ const char *wkz_station_t::work( karte_t *welt, spieler_t *sp, koord3d pos )
 }
 
 
-// builds roadsigns and signals
-wkz_roadsign_t::wkz_roadsign_t() : two_click_werkzeug_t()
-{
-	id = WKZ_ROADSIGN | GENERAL_TOOL;
-	for (uint8 i=0; i<MAX_PLAYER_COUNT; i++) {
-		signal_spacing[i] = 2;
-		remove_intermediate_signals[i] = true;
-		replace_other_signals[i] = true;
-	}
-	besch = NULL;
-}
-
-
 char const* wkz_roadsign_t::get_tooltip(spieler_t const*) const
 {
 	const roadsign_besch_t * besch = roadsign_t::find_besch(default_param);
@@ -3442,7 +3430,7 @@ void wkz_roadsign_t::draw_after( karte_t *welt, koord pos ) const
 	if(  icon!=IMG_LEER  &&  is_selected(welt)  ) {
 		display_img_blend( icon, pos.x, pos.y, TRANSPARENT50_FLAG|OUTLINE_FLAG|COL_BLACK, false, true );
 		char level_str[16];
-		sprintf( level_str, "%i", signal_spacing[welt->get_active_player_nr()] );
+		sprintf(level_str, "%i", signal[welt->get_active_player_nr()].spacing);
 		display_proportional( pos.x+4, pos.y+4, level_str, ALIGN_LEFT, COL_YELLOW, true );
 	}
 }
@@ -3517,7 +3505,8 @@ char wkz_roadsign_t::toolstring[256];
 const char* wkz_roadsign_t::get_default_param(spieler_t *sp) const
 {
 	if (besch  &&  sp) {
-		sprintf(toolstring, "%s,%d,%d,%d", besch->get_name(), signal_spacing[sp->get_player_nr()], remove_intermediate_signals[sp->get_player_nr()], replace_other_signals[sp->get_player_nr()]);
+		signal_info const& s = signal[sp->get_player_nr()];
+		sprintf(toolstring, "%s,%d,%d,%d", besch->get_name(), s.spacing, s.remove_intermediate, s.replace_other);
 		return toolstring;
 	}
 	else {
@@ -3539,13 +3528,14 @@ void wkz_roadsign_t::read_default_param(spieler_t * sp)
 	besch = roadsign_t::find_besch(name);
 
 	if (default_param[i]) {
-		int i_signal_spacing = signal_spacing[sp->get_player_nr()];
-		int i_remove_intermediate_signals = remove_intermediate_signals[sp->get_player_nr()];
-		int i_replace_other_signals = replace_other_signals[sp->get_player_nr()];
+		signal_info& s = signal[sp->get_player_nr()];
+		int i_signal_spacing              = s.spacing;
+		int i_remove_intermediate_signals = s.remove_intermediate;
+		int i_replace_other_signals       = s.replace_other;
 		sscanf(default_param+i, ",%d,%d,%d", &i_signal_spacing, &i_remove_intermediate_signals, &i_replace_other_signals);
-		signal_spacing[sp->get_player_nr()] = (uint8)i_signal_spacing;
-		remove_intermediate_signals[sp->get_player_nr()] = i_remove_intermediate_signals!=0;
-		replace_other_signals[sp->get_player_nr()] = i_replace_other_signals!=0;
+		s.spacing             = (uint8)i_signal_spacing;
+		s.remove_intermediate = i_remove_intermediate_signals != 0;
+		s.replace_other       = i_replace_other_signals       != 0;
 	}
 	if (default_param==toolstring) {
 		default_param = besch->get_name();
@@ -3616,9 +3606,10 @@ void wkz_roadsign_t::mark_tiles( karte_t *welt, spieler_t *sp, const koord3d &st
 	if (!calc_route(route, sp, start, ziel)) {
 		return;
 	}
-	const uint8 signal_density = 2*signal_spacing[sp->get_player_nr()]; // measured in half tiles (straight track count as 2, diagonal as 1, since sqrt(1/2) = 1/2 ;)
-	uint8 next_signal = signal_density+1; // to place a sign asap
-	sint32 cost = 0;
+	signal_info const& s              = signal[sp->get_player_nr()];
+	uint8       const  signal_density = 2 * s.spacing;      // measured in half tiles (straight track count as 2, diagonal as 1, since sqrt(1/2) = 1/2 ;)
+	uint8              next_signal    = signal_density + 1; // to place a sign asap
+	sint32             cost           = 0;
 	// dummy roadsign to get images for preview
 	roadsign_t *dummy_rs;
 	if (besch->is_signal_type()) {
@@ -3651,7 +3642,7 @@ void wkz_roadsign_t::mark_tiles( karte_t *welt, spieler_t *sp, const koord3d &st
 		if(  next_signal >= signal_density  /*&&  !ribi_t::ist_einfach(ribi)*/  ) {
 			// can we place signal here?
 			if (check_pos_intern(welt, sp, route.position_bei(i))==NULL  ||
-				(replace_other_signals[sp->get_player_nr()]  &&  rs != NULL  &&  rs->ist_entfernbar(sp) == NULL) ) {
+					(s.replace_other && rs && !rs->ist_entfernbar(sp))) {
 				zeiger_t* zeiger = new zeiger_t(welt, gr->get_pos(), sp );
 				marked[sp->get_player_nr()].append(zeiger);
 				zeiger->set_bild( skinverwaltung_t::bauigelsymbol->get_bild_nr(0) );
@@ -3666,8 +3657,7 @@ void wkz_roadsign_t::mark_tiles( karte_t *welt, spieler_t *sp, const koord3d &st
 				dummy_rs->set_dir(rs ? rs->get_dir() : (ribi_t::ribi)ribi_t::keine);
 				cost += rs ? (rs->get_besch()==besch ? 0  : besch->get_preis()+rs->get_besch()->get_preis()) : besch->get_preis();
 			}
-		}
-		else if (remove_intermediate_signals[sp->get_player_nr()]  &&  rs  &&  rs->ist_entfernbar(sp)==NULL) {
+		} else if (s.remove_intermediate && rs && !rs->ist_entfernbar(sp)) {
 				zeiger_t* zeiger = new zeiger_t(welt, gr->get_pos(), sp );
 				marked[sp->get_player_nr()].append(zeiger);
 				zeiger->set_bild( werkzeug_t::general_tool[WKZ_REMOVER]->cursor );
@@ -3699,7 +3689,7 @@ const char *wkz_roadsign_t::do_work( karte_t *welt, spieler_t *sp, const koord3d
 			// try to place signal
 			const char* error_text =  place_sign_intern( welt, sp, gr );
 			if(  error_text  ) {
-				if(  replace_other_signals[sp->get_player_nr()]  ) {
+				if (signal[sp->get_player_nr()].replace_other) {
 					roadsign_t* rs = gr->find<signal_t>();
 					if(rs == NULL) rs = gr->find<roadsign_t>();
 					if(  rs != NULL  &&  rs->ist_entfernbar(sp) == NULL  ) {
@@ -3738,16 +3728,21 @@ const char *wkz_roadsign_t::do_work( karte_t *welt, spieler_t *sp, const koord3d
  */
 void wkz_roadsign_t::set_values( spieler_t *sp, uint8 spacing, bool remove, bool replace )
 {
-	signal_spacing[sp->get_player_nr()] = spacing;
-	remove_intermediate_signals[sp->get_player_nr()] = remove;
-	replace_other_signals[sp->get_player_nr()] = replace;
+	signal_info& s = signal[sp->get_player_nr()];
+	s.spacing             = spacing;
+	s.remove_intermediate = remove;
+	s.replace_other       = replace;
 }
+
+
 void wkz_roadsign_t::get_values( spieler_t *sp, uint8 &spacing, bool &remove, bool &replace )
 {
-	spacing = signal_spacing[sp->get_player_nr()];
-	remove = remove_intermediate_signals[sp->get_player_nr()];
-	replace = replace_other_signals[sp->get_player_nr()];
+	signal_info const& s = signal[sp->get_player_nr()];
+	spacing = s.spacing;
+	remove  = s.remove_intermediate;
+	replace = s.replace_other;
 }
+
 
 const char *wkz_roadsign_t::place_sign_intern( karte_t *welt, spieler_t *sp, grund_t* gr, const roadsign_besch_t*)
 {
@@ -4010,7 +4005,7 @@ const char *wkz_depot_t::work( karte_t *welt, spieler_t *sp, koord3d k )
  */
 bool wkz_build_haus_t::init( karte_t *welt, spieler_t * )
 {
-	if(is_local_execution()  &&  default_param  &&  strlen(default_param)>0) {
+	if (is_local_execution() && !strempty(default_param)) {
 		const char *c = default_param+2;
 		const haus_tile_besch_t *tile = hausbauer_t::find_tile(c,0);
 		if(tile!=NULL) {
@@ -4030,7 +4025,7 @@ const char *wkz_build_haus_t::work( karte_t *welt, spieler_t *sp, koord3d pos )
 
 	// Parsing parameter (if there)
 	const haus_besch_t *besch = NULL;
-	if(default_param  &&  strlen(default_param)>0) {
+	if (!strempty(default_param)) {
 		const char *c = default_param+2;
 		const haus_tile_besch_t *tile = hausbauer_t::find_tile(c,0);
 		if(tile) {
@@ -4081,7 +4076,7 @@ const char *wkz_build_haus_t::work( karte_t *welt, spieler_t *sp, koord3d pos )
 // show industry size in cursor (in known)
 bool wkz_build_industries_land_t::init( karte_t *welt, spieler_t * )
 {
-	if(is_local_execution()  &&  default_param  &&  strlen(default_param)>0) {
+	if (is_local_execution() && !strempty(default_param)) {
 		const char *c = default_param+2;
 		while(*c  &&  *c++!=',') { /* do nothing */ }
 		const fabrik_besch_t *fab = fabrikbauer_t::get_fabesch(c);
@@ -4111,7 +4106,7 @@ const char *wkz_build_industries_land_t::work( karte_t *welt, spieler_t *sp, koo
 	}
 
 	const fabrik_besch_t *fab = NULL;
-	if(default_param  &&  strlen(default_param)>0) {
+	if (!strempty(default_param)) {
 		const char *c = default_param+2;
 		while(*c  &&  *c++!=',') { /* do nothing */ }
 		fab = fabrikbauer_t::get_fabesch(c);
@@ -4161,7 +4156,7 @@ const char *wkz_build_industries_land_t::work( karte_t *welt, spieler_t *sp, koo
 			spieler_t::accounting(sp, anzahl * welt->get_settings().cst_multiply_found_industry, k.get_2d(), COST_CONSTRUCTION);
 
 			// eventually adjust production
-			if(default_param  &&  strlen(default_param)>0) {
+			if (!strempty(default_param)) {
 				fabrik_t::get_fab(welt,k.get_2d())->set_base_production( atol(default_param+2)>>(welt->ticks_per_world_month_shift-18) );
 			}
 
@@ -4181,7 +4176,7 @@ const char *wkz_build_industries_land_t::work( karte_t *welt, spieler_t *sp, koo
 // show industry size in cursor (in known)
 bool wkz_build_industries_city_t::init( karte_t *welt, spieler_t * )
 {
-	if(is_local_execution()  &&  default_param  &&  strlen(default_param)>0) {
+	if (is_local_execution() && !strempty(default_param)) {
 		const char *c = default_param+2;
 		while(*c  &&  *c++!=',') { /* do nothing */ }
 		const fabrik_besch_t *fab = fabrikbauer_t::get_fabesch(c);
@@ -4206,7 +4201,7 @@ const char *wkz_build_industries_city_t::work( karte_t *welt, spieler_t *sp, koo
 	}
 
 	const fabrik_besch_t *fab = NULL;
-	if(default_param  &&  strlen(default_param)>0) {
+	if (!strempty(default_param)) {
 		const char *c = default_param+2;
 		while(*c  &&  *c++!=',') { /* do nothing */ }
 		fab = fabrikbauer_t::get_fabesch(c);
@@ -4229,7 +4224,7 @@ const char *wkz_build_industries_city_t::work( karte_t *welt, spieler_t *sp, koo
 		welt->change_world_position( k.get_2d(), 0, 0 );
 
 		// eventually adjust production
-		if(default_param  &&  strlen(default_param)>0) {
+		if (!strempty(default_param)) {
 			fabrik_t::get_fab(welt,k.get_2d())->set_base_production( atol(default_param+2)>>(welt->ticks_per_world_month_shift-18) );
 		}
 
@@ -4251,7 +4246,7 @@ const char *wkz_build_industries_city_t::work( karte_t *welt, spieler_t *sp, koo
 // show industry size in cursor (must be known!)
 bool wkz_build_factory_t::init( karte_t *welt, spieler_t * )
 {
-	if(is_local_execution()  &&  default_param  &&  strlen(default_param)>0) {
+	if (is_local_execution() && !strempty(default_param)) {
 		const char *c = default_param+2;
 		while(*c  &&  *c++!=',') { /* do nothing */ }
 		const fabrik_besch_t *fab = fabrikbauer_t::get_fabesch(c);
@@ -4275,7 +4270,7 @@ const char *wkz_build_factory_t::work( karte_t *welt, spieler_t *sp, koord3d k )
 	}
 
 	const fabrik_besch_t *fab = NULL;
-	if(default_param  &&  strlen(default_param)>0) {
+	if (!strempty(default_param)) {
 		const char *c = default_param+2;
 		while(*c  &&  *c++!=',') { /* do nothing */ }
 		fab = fabrikbauer_t::get_fabesch(c);
@@ -4323,7 +4318,7 @@ const char *wkz_build_factory_t::work( karte_t *welt, spieler_t *sp, koord3d k )
 			spieler_t::accounting(sp, welt->get_settings().cst_multiply_found_industry, k.get_2d(), COST_CONSTRUCTION);
 
 			// eventually adjust production
-			if(default_param  &&  strlen(default_param)>0) {
+			if (!strempty(default_param)) {
 				f->set_base_production( max(1,atol(default_param+2)>>(welt->ticks_per_world_month_shift-18)) );
 			}
 
@@ -4829,7 +4824,7 @@ const char *wkz_stop_moving_t::do_work( karte_t *welt, spieler_t *sp, const koor
 
 char const* wkz_daynight_level_t::get_tooltip(spieler_t const*) const
 {
-	if(default_param  &&  strlen(default_param)>0) {
+	if (!strempty(default_param)) {
 		if(default_param[0]=='+'  ||  default_param[0]=='-') {
 			sprintf(toolstr, "%s %s",
 			translator::translate("1LIGHT_CHOOSE"),
@@ -4849,7 +4844,7 @@ bool wkz_daynight_level_t::init( karte_t *, spieler_t * ) {
 	if(grund_t::underground_mode==grund_t::ugm_all  ||  umgebung_t::night_shift) {
 		return false;
 	}
-	if(default_param  &&  strlen(default_param)>0) {
+	if (!strempty(default_param)) {
 		if(default_param[0]=='+'  &&  umgebung_t::daynight_level > 0) {
 			// '+': fade in one level
 			umgebung_t::daynight_level = umgebung_t::daynight_level-1;
@@ -5971,19 +5966,33 @@ bool wkz_add_message_t::init( karte_t *welt, spieler_t *sp )
 {
 	if(  *default_param  ) {
 		if(  sp  ) {
-			if(  umgebung_t::add_player_name_to_message  ) {
-				cbuffer_t buffer;
-				buffer.printf("[%s]\n%s", sp->get_name(), default_param);
-				welt->get_message()->add_message( buffer, koord::invalid, message_t::chat, PLAYER_FLAG|sp->get_player_nr(), IMG_LEER );
-			}
-			else {
-				welt->get_message()->add_message( default_param, koord::invalid, message_t::chat, PLAYER_FLAG|sp->get_player_nr(), IMG_LEER );
-			}
+			/*if(  umgebung_t::add_player_name_to_message  ) { */
+			welt->get_message()->add_message( default_param, koord::invalid, message_t::chat, PLAYER_FLAG|sp->get_player_nr(), IMG_LEER );
 		}
 		else {
+			// chat message if first character is '[' otherwise
 			// system message (will not be save on server and will not appear on new clients)
-			welt->get_message()->add_message( default_param, koord::invalid, message_t::general | message_t::local_flag, COL_BLACK, IMG_LEER );
+			uint16 what = default_param  &&  default_param[0]=='[' ? message_t::chat : message_t::general | message_t::local_flag;
+			welt->get_message()->add_message( default_param, koord::invalid, what, what != message_t::chat ? COL_BLACK : COL_WHITE, IMG_LEER );
 		}
 	}
 	return false;
+}
+
+char const* wkz_add_message_t::get_default_param(spieler_t *sp) const
+{
+	static cbuffer_t buf;
+	if (sp == NULL) {
+		// do not transmit leading ['s
+		const char *ptr = default_param;
+		while (*ptr == '[') ptr++;
+		return ptr;
+	}
+	buf.clear();
+	const char *nick = umgebung_t::nickname.c_str();
+	if (strlen(nick)==0) {
+		nick = sp->get_name();
+	}
+	buf.printf("[%s]\n%s", nick, default_param);
+	return buf;
 }

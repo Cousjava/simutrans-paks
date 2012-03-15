@@ -31,6 +31,33 @@ void cbuffer_t::clear()
 }
 
 
+cbuffer_t::cbuffer_t (const cbuffer_t& cbx)
+{
+	copy( cbx );
+}
+
+
+cbuffer_t& cbuffer_t::operator= (const cbuffer_t& cbx)
+{
+	if (  this != &cbx  )
+	{
+		delete [] buf;
+		copy( cbx );
+	}
+
+	return *this;
+}
+
+
+void cbuffer_t::copy (const cbuffer_t& cbx)
+{
+	capacity = cbx.capacity;
+	size = cbx.size;
+	buf = new char[capacity];
+	memcpy( buf, cbx.buf, size + 1 );
+}
+
+
 void cbuffer_t::append(const char * text)
 {
 	size_t const n = strlen(text);
@@ -40,11 +67,27 @@ void cbuffer_t::append(const char * text)
 }
 
 
+void cbuffer_t::append (const char* text, size_t maxchars)
+{
+	size_t const n = min( strlen( text ), maxchars );
+	extend( n );
+	memcpy( buf + size, text, n );
+	size += n;
+	buf[size] = '\0';  // Ensure buffer is null terminated
+}
+
+
 void cbuffer_t::append(double n,int decimals)
 {
 	char tmp[32];
 	number_to_string( tmp, n, decimals );
 	append(tmp);
+}
+
+
+const char* cbuffer_t::get_str () const
+{
+	return buf;
 }
 
 
@@ -209,6 +252,7 @@ void cbuffer_t::truncate(const int len)
 	if(len >=0 && (unsigned int)len < capacity)
 	{
 		buf[len] = '\0';
+		size = len;
 	}
 }
 

@@ -4,19 +4,17 @@
  * Has a min and a max size, and can be displayed with any size in between
  */
 
-// #include <stdio.h>
-
 #include "gui_scrollbar.h"
 #include "gui_scrolled_list.h"
 #include "gui_scrolled_item.h"
 #include "gui_scrollbar.h"
+#include "gui_component_colors.h"
 
 #include "../../simevent.h"
 #include "../../simgraph.h"
 #include "../../simcolor.h"
 #include "../../simwin.h"
 #include "../../tpl/slist_tpl.h"
-
 
 
 int gui_scrolled_list_t::total_vertical_size() const
@@ -246,6 +244,8 @@ void gui_scrolled_list_t::zeichnen(koord pos)
 		case list:
 			break;
 		case select:
+			// Hajo: I believe that this has no effect because it is overdrawn by the fillbox statement
+			// right after the switch 
 			display_vline_wh(x, y+1, h-1, MN_GREY0, true);
 			display_fillbox_wh(x,y,w,1, MN_GREY0, true);
 			display_vline_wh(x+w-1, y+1, h-2, MN_GREY4, true);
@@ -254,7 +254,7 @@ void gui_scrolled_list_t::zeichnen(koord pos)
 			break;
 	}
 
-	display_fillbox_wh(x,y,w,h, MN_GREY3, true);
+	display_fillbox_wh(x,y,w,h, COLOR_LIST_BACKGROUND, true);
 	display_ddd_box(x,y-1,w,h+2, COL_BLACK, COL_WHITE);
 
 	PUSH_CLIP(x+1,y+1,w-2,h-2);

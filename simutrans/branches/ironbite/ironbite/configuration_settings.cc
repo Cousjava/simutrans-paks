@@ -41,11 +41,11 @@ bool configuration_settings_t::read(const char * path)
 	
 	tabfile_t tabfile;
 	tabfileobj_t data;
-	
+
 	if(tabfile.open(buf))
 	{
 		dbg->warning("configuration_settings_t::read()", "Reading %s\n", buf.to_string());
-		
+				
 		tabfile.read(data);
 		tabfile.close();
 		

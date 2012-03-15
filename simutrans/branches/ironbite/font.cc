@@ -5,6 +5,7 @@
 #include "simmem.h"
 #include "macros.h"
 #include "font.h"
+#include "utils/simstring.h"
 
 
 // Hajo: moved them from simgraph??.cc to here, because
@@ -77,7 +78,7 @@ static void dsp_decode_bdf_data_row(uint8 *target, int y, int xoff, int g_width,
 /**
  * Reads a single character
  */
-static int dsp_read_bdf_glyph(FILE *fin, uint8 *data, uint8 *screen_w, int char_limit, int f_height, int f_desc)
+static void dsp_read_bdf_glyph(FILE *fin, uint8 *data, uint8 *screen_w, int char_limit, int f_height, int f_desc)
 {
 	uint32	char_nr = 0;
 	int g_width, h, g_desc;
@@ -90,7 +91,7 @@ static int dsp_read_bdf_glyph(FILE *fin, uint8 *data, uint8 *screen_w, int char_
 		fgets(str, sizeof(str), fin);
 
 		// endcoding (sint8 number) in decimal
-		if (strncmp(str, "ENCODING", 8) == 0) {
+		if (strstart(str, "ENCODING")) {
 			char_nr = atoi(str + 8);
 			if (char_nr == 0 || (sint32)char_nr >= char_limit) {
 				fprintf(stderr, "Unexpected character (%i) for %i character font!\n", char_nr, char_limit);
@@ -101,23 +102,23 @@ static int dsp_read_bdf_glyph(FILE *fin, uint8 *data, uint8 *screen_w, int char_
 		}
 
 		// information over size and coding
-		if (strncmp(str, "BBX", 3) == 0) {
+		if (strstart(str, "BBX")) {
 			sscanf(str + 3, "%d %d %d %d", &g_width, &h, &xoff, &g_desc);
 			continue;
 		}
 
 		// information over size and coding
-		if (strncmp(str, "DWIDTH", 6) == 0) {
+		if (strstart(str, "DWIDTH")) {
 			d_width = atoi(str + 6);
 			continue;
 		}
 
 		// start if bitmap data
-		if (strncmp(str, "BITMAP", 6) == 0) {
+		if (strstart(str, "BITMAP")) {
 			const int top = f_height + f_desc - h - g_desc;
 			int y;
 
-			// maximum size 10 pixels
+			// maximum size 12 pixels
 			h += top;
 			if (h > 12) {
 				h = 12;
@@ -134,7 +135,7 @@ static int dsp_read_bdf_glyph(FILE *fin, uint8 *data, uint8 *screen_w, int char_
 		}
 
 		// finally add width information (width = 0: not there!)
-		if (strncmp(str, "ENDCHAR", 7) == 0) {
+		if (strstart(str, "ENDCHAR")) {
 			uint8 start_h=0, i;
 
 			// find the start offset
@@ -166,10 +167,9 @@ static int dsp_read_bdf_glyph(FILE *fin, uint8 *data, uint8 *screen_w, int char_
 			}
 			screen_w[char_nr] = d_width;
 			// finished
-			return char_nr;
+			return;
 		}
 	}
-	return 0;
 }
 
 
@@ -189,12 +189,12 @@ static bool dsp_read_bdf_font(FILE* fin, font_t* font)
 
 		fgets(str, sizeof(str), fin);
 
-		if (strncmp(str, "FONTBOUNDINGBOX", 15) == 0) {
+		if (strstart(str, "FONTBOUNDINGBOX")) {
 			sscanf(str + 15, "%*d %d %*d %d", &f_height, &f_desc);
 			continue;
 		}
 
-		if (strncmp(str, "CHARS", 5) == 0  &&  str[5]<=' ') {
+		if (strstart(str, "CHARS") && str[5] <= ' ') {
 			// the characters 0xFFFF and 0xFFFE are guranteed to be non-unicode characters
 			f_chars = atoi(str + 5) <= 256 ? 256 : 65534;
 
@@ -216,7 +216,7 @@ static bool dsp_read_bdf_font(FILE* fin, font_t* font)
 			continue;
 		}
 
-		if (strncmp(str, "STARTCHAR", 9) == 0 && f_chars > 0) {
+		if (strstart(str, "STARTCHAR") && f_chars > 0) {
 			dsp_read_bdf_glyph(fin, data, screen_widths, f_chars, f_height, f_desc);
 			continue;
 		}
@@ -244,7 +244,7 @@ static bool dsp_read_bdf_font(FILE* fin, font_t* font)
 		font->screen_width = screen_widths;
 		font->char_data    = data;
 		font->height       = f_height;
-		font->descent      = f_height + f_desc;
+		font->descent      = f_desc;
 		font->num_chars    = f_chars;
 		return true;
 	}
@@ -296,8 +296,8 @@ bool load_font(font_t* fnt, const char* fname)
 		fnt->screen_width = MALLOCN(uint8, 256);
 		fnt->char_data    = MALLOCN(uint8, CHARACTER_LEN * 256);
 		fnt->num_chars    = 256;
-		fnt->height       = 10;
-		fnt->descent      = -1;
+		fnt->height       = 11;
+		fnt->descent      = -2;
 
 		for (i = 0; i < 256; i++) {
 			int j;

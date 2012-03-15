@@ -3,7 +3,6 @@
 
 #include "gui_action_creator.h"
 #include "gui_komponente.h"
-#include "../../dataobj/koord.h"
 
 class event_t;
 class gui_scrollbar_data_t;

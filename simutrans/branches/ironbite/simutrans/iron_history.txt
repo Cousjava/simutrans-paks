@@ -1,3 +1,6 @@
+- Updated goods list design.
+- New layout and default size for factory list.
+- New placement rules for list windows.
 - Configuration file "iron_bite.ini"
 - Transparency support for ticker line and window body.
 - Optional window drop shadows.

@@ -14,13 +14,15 @@
 #ifndef simgraph_h
 #define simgraph_h
 
-extern int large_font_height;
+extern int large_font_ascent;
+extern int large_font_total_height;
 
 #include "simcolor.h"
 #include "unicode.h"
 #include "simtypes.h"
 
-#define LINESPACE 11
+#define LINEASCENT (large_font_ascent)
+#define LINESPACE (large_font_total_height)
 
 // size of koordinates
 typedef short KOORD_VAL;

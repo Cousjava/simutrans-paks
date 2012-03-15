@@ -432,10 +432,8 @@ haltestelle_t::~haltestelle_t()
 	self.detach();
 
 	for(unsigned i=0; i<warenbauer_t::get_max_catg_index(); i++) {
-		if(waren[i]) {
-			delete waren[i];
-			waren[i] = NULL;
-		}
+		delete waren[i];
+		waren[i] = NULL;
 	}
 	free( waren );
 	delete[] connections;
@@ -910,7 +908,7 @@ bool haltestelle_t::reroute_goods(sint16 &units_remaining)
 			vector_tpl<ware_t> * warray = waren[last_catg_index];
 			vector_tpl<ware_t> * new_warray = new vector_tpl<ware_t>(warray->get_count());
 
-			for(  int j=warray->get_count()-1;  j>=0;  j--  ) {
+			for (size_t j = warray->get_count(); j-- != 0;) {
 				ware_t & ware = (*warray)[j];
 
 				if(ware.menge==0) {
@@ -2029,7 +2027,15 @@ haltestelle_t::quote_bezeichnung(int quote, convoihandle_t cnv) const
 
 void haltestelle_t::info(cbuffer_t & buf) const
 {
-	buf.printf(translator::translate("Passengers %d %c, %d %c, %d no route"), get_pax_happy(), 30, get_pax_unhappy(), 31, get_pax_no_route());
+	if(  translator::get_lang()->utf_encoded  ) {
+		utf8 happy[4], unhappy[4];
+		happy[ utf16_to_utf8( 0x263A, happy ) ] = 0;
+		unhappy[ utf16_to_utf8( 0x2639, unhappy ) ] = 0;
+		buf.printf(translator::translate("Passengers %d %s, %d %s, %d no route"), get_pax_happy(), happy, get_pax_unhappy(), unhappy, get_pax_no_route());
+	}
+	else {
+		buf.printf(translator::translate("Passengers %d %c, %d %c, %d no route"), get_pax_happy(), 30, get_pax_unhappy(), 31, get_pax_no_route());
+	}
 	buf.append("\n\n");
 }
 
@@ -2049,7 +2055,7 @@ void haltestelle_t::get_freight_info(cbuffer_t & buf)
 		for(unsigned i=0; i<warenbauer_t::get_max_catg_index(); i++) {
 			const vector_tpl<ware_t> * warray = waren[i];
 			if(warray) {
-				freight_list_sorter_t::sort_freight(warray, buf, (freight_list_sorter_t::sort_mode_t)sortierung, NULL, "waiting", welt);
+				freight_list_sorter_t::sort_freight(*warray, buf, (freight_list_sorter_t::sort_mode_t)sortierung, NULL, "waiting", welt);
 			}
 		}
 	}
@@ -2499,7 +2505,7 @@ void haltestelle_t::rdwr(loadsave_t *file)
 
 	if(  file->get_version()>=111001  ) {
 		for (int j = 0; j<MAX_HALT_COST; j++) {
-			for (int k = MAX_MONTHS-1; k>=0; k--) {
+			for (size_t k = MAX_MONTHS; k-- != 0;) {
 				file->rdwr_longlong(financial_history[k][j]);
 			}
 		}
@@ -2507,11 +2513,11 @@ void haltestelle_t::rdwr(loadsave_t *file)
 	else {
 		// old history did not know about walked pax
 		for (int j = 0; j<7; j++) {
-			for (int k = MAX_MONTHS-1; k>=0; k--) {
+			for (size_t k = MAX_MONTHS; k-- != 0;) {
 				file->rdwr_longlong(financial_history[k][j]);
 			}
 		}
-		for (int k = MAX_MONTHS-1; k>=0; k--) {
+		for (size_t k = MAX_MONTHS; k-- != 0;) {
 			financial_history[k][HALT_WALKED] = 0;
 		}
 	}
@@ -2586,8 +2592,7 @@ void haltestelle_t::init_financial_history()
 {
 	for (int j = 0; j<MAX_HALT_COST; j++)
 	{
-		for (int k = MAX_MONTHS-1; k>=0; k--)
-		{
+		for (size_t k = MAX_MONTHS; k-- != 0;) {
 			financial_history[k][j] = 0;
 		}
 	}
@@ -2637,12 +2642,12 @@ void haltestelle_t::recalc_status()
 	if(status_color!=COL_RED  &&  get_ware_enabled()) {
 		const int count = warenbauer_t::get_waren_anzahl();
 		sint32 max_ware = get_capacity(2);
-		for( int i=2; i+1<count; i++) {
-			const ware_besch_t *wtyp = warenbauer_t::get_info(i+1);
+		for (int i = 3; i < count; ++i) {
+			ware_besch_t const* const wtyp = warenbauer_t::get_info(i);
 			long ware_sum = get_ware_summe(wtyp);
 			total_sum += ware_sum;
 			if(ware_sum>max_ware) {
-				status_bits |= (ware_sum>max_ware+32  ||  CROWDED) ? 2 : 1;
+				status_bits |= ware_sum > max_ware + 32 || enables & CROWDED ? 2 : 1;
 				overcrowded[wtyp->get_catg_index()/8] |= 1<<(wtyp->get_catg_index()%8);
 			}
 		}
@@ -2902,7 +2907,7 @@ bool haltestelle_t::rem_grund(grund_t *gr)
 	verbinde_fabriken();
 
 	// remove lines eventually
-	for(  int j=registered_lines.get_count()-1;  j>=0;  j--  ) {
+	for (size_t j = registered_lines.get_count(); j-- != 0;) {
 		bool ok=false;
 		FOR(minivec_tpl<linieneintrag_t>, const& k, registered_lines[j]->get_schedule()->eintrag) {
 			if (get_halt(welt, k.pos, registered_lines[j]->get_besitzer()) == self) {
@@ -2917,7 +2922,7 @@ bool haltestelle_t::rem_grund(grund_t *gr)
 	}
 
 	// Knightly : remove registered lineless convoys as well
-	for(  int j=registered_convoys.get_count()-1;  j>=0;  --j  ) {
+	for (size_t j = registered_convoys.get_count(); j-- != 0;) {
 		bool ok = false;
 		FOR(minivec_tpl<linieneintrag_t>, const& k, registered_convoys[j]->get_schedule()->eintrag) {
 			if (get_halt(welt, k.pos, registered_convoys[j]->get_besitzer()) == self) {

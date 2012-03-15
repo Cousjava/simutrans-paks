@@ -59,7 +59,7 @@ banner_t::banner_t(karte_t *welt) : gui_frame_t("")
 	last_ms = dr_time();
 	line = 0;
 
-        const int height = 16+113+12*LINESPACE+2*BUTTON_HEIGHT+12;
+        const int height = 302;
         const int width = height * 160/100 + 1;
 	
 	set_window_size(width, height+20);

@@ -13,10 +13,10 @@
 #include "../simcolor.h"
 #include "../simfab.h"
 #include "../simworld.h"
-#include "../simskin.h"
 
 #include "gui_frame.h"
 #include "components/gui_button.h"
+#include "components/gui_component_colors.h"
 
 #include "../bauer/warenbauer.h"
 #include "../besch/skin_besch.h"
@@ -155,10 +155,13 @@ void factorylist_stats_t::recalc_size()
  */
 void factorylist_stats_t::zeichnen(koord offset)
 {
-	clip_dimension const cd = display_get_clip_wh();
+	const clip_dimension cd = display_get_clip_wh();
 	const int start = cd.y-LINESPACE-1;
-	const int end = cd.yy+LINESPACE+1;
+	const int end = cd.yy+LINESPACE+2;
 
+	// Hajo: try a different background color for lists
+	display_fillbox_wh(cd.x, cd.y, cd.xx-cd.x+1, cd.yy-cd.y+1, COLOR_LIST_BACKGROUND, true);
+	
 	static cbuffer_t buf;
 	int xoff = offset.x+16;
 	int yoff = offset.y;
@@ -169,23 +172,19 @@ void factorylist_stats_t::zeichnen(koord offset)
 		recalc_size();
 	}
 
-	for (uint32 i=0; i<fab_list.get_count()  &&  yoff<end; i++) {
+	uint32 sel = line_selected;
+	FORX(vector_tpl<fabrik_t*>, const fab, fab_list, yoff += LINESPACE + 2) 
+	{
+		if (yoff >= end) break;
 
 		// skip invisible lines
-		if(yoff<start) {
-			yoff += LINESPACE+1;
-			continue;
-		}
+		if (yoff < start) continue;
 
-		const fabrik_t* fab = fab_list[i];
 		if(fab) {
-			//DBG_DEBUG("factorylist_stats_t()","zeichnen() factory %i",i);
 			unsigned indikatorfarbe = fabrik_t::status_to_color[fab->get_status()];
 
 			buf.clear();
-			//		buf.append(i+1);
-			//		buf.append(".) ");
-			buf.append(fab_list[i]->get_name());
+			buf.append(fab->get_name());
 			buf.append(" (");
 
 			if (!fab->get_eingang().empty()) {
@@ -197,37 +196,52 @@ void factorylist_stats_t::zeichnen(koord offset)
 			buf.append(", ");
 
 			if (!fab->get_ausgang().empty()) {
-				buf.append(fab->get_total_out(),0);
+				buf.append(fab->get_total_out(), 0);
 			}
 			else {
 				buf.append("-");
 			}
 			buf.append(", ");
 
-			buf.append(fab->get_current_production(),0);
+			buf.append(fab->get_current_production(), 0);
 			buf.append(") ");
 
-
-			//display_ddd_box_clip(xoff+7, yoff+2, 8, 8, MN_GREY0, MN_GREY4);
+			display_ddd_box_clip(xoff+1, yoff+1, D_INDICATOR_WIDTH+2, D_INDICATOR_HEIGHT+2, MN_GREY0, MN_GREY4);
 			display_fillbox_wh_clip(xoff+2, yoff+2, D_INDICATOR_WIDTH, D_INDICATOR_HEIGHT, indikatorfarbe, true);
 
-			if(  fab->get_prodfactor_electric()>0  ) {
-				display_color_img(skinverwaltung_t::electricity->get_bild_nr(0), xoff+4+D_INDICATOR_WIDTH, yoff, 0, false, true);
+			if(fab->get_prodfactor_electric() > 0) 
+			{
+				display_color_img(skinverwaltung_t::electricity->get_bild_nr(0), xoff+6+D_INDICATOR_WIDTH, yoff, 0, false, true);
 			}
-			if(  fab->get_prodfactor_pax()>0  ) {
-				display_color_img(skinverwaltung_t::passagiere->get_bild_nr(0), xoff+4+8+D_INDICATOR_WIDTH, yoff, 0, false, true);
+			else
+			{
+				display_proportional_clip(xoff+6+D_INDICATOR_WIDTH, yoff, "-", ALIGN_LEFT, MN_GREY0, true);
 			}
-			if(  fab->get_prodfactor_mail()>0  ) {
-				display_color_img(skinverwaltung_t::post->get_bild_nr(0), xoff+4+18+D_INDICATOR_WIDTH, yoff, 0, false, true);
+			
+			if(fab->get_prodfactor_pax() > 0)
+			{
+				display_color_img(skinverwaltung_t::passagiere->get_bild_nr(0), xoff+6+8+D_INDICATOR_WIDTH, yoff, 0, false, true);
+			}
+			else
+			{
+				display_proportional_clip(xoff+6+10+D_INDICATOR_WIDTH, yoff, "-", ALIGN_LEFT, MN_GREY0, true);
+			}
+
+			if(fab->get_prodfactor_mail() > 0) 
+			{
+				display_color_img(skinverwaltung_t::post->get_bild_nr(0), xoff+6+19+D_INDICATOR_WIDTH, yoff, 0, false, true);
+			}
+			else
+			{
+				display_proportional_clip(xoff+6+20+D_INDICATOR_WIDTH, yoff, "-", ALIGN_LEFT, MN_GREY0, true);
 			}
 
 			// show text
-			display_proportional_clip(xoff+D_INDICATOR_WIDTH+6+28,yoff,buf,ALIGN_LEFT,COL_BLACK,true);
+			display_proportional_clip(xoff+D_INDICATOR_WIDTH+6+34, yoff, buf, ALIGN_LEFT, COLOR_TEXT, true);
 
 			// goto button
-			display_color_img( i!=line_selected ? button_t::arrow_right_normal : button_t::arrow_right_pushed, xoff-14, yoff, 0, false, true);
-
+			image_id const img = sel-- != 0 ? button_t::arrow_right_normal : button_t::arrow_right_pushed;
+			display_color_img(img, xoff-14, yoff, 0, false, true);
 		}
-		yoff += LINESPACE+1;
 	}
 }
