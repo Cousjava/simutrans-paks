@@ -271,7 +271,7 @@ public:
 	bool init(karte_t*, spieler_t* sp) OVERRIDE {
 		int x = get_maus_x();
 		int y = get_maus_y();
-		create_win(x - (x & 63), y | 31, new halt_list_frame_t(sp), w_info, magic_halt_list_t );
+		create_win(x & 0xFFC0, y | 7, new halt_list_frame_t(sp), w_info, magic_halt_list_t );
 		return false;
 	}
 	bool exit(karte_t*, spieler_t*) OVERRIDE { destroy_win(magic_halt_list_t); return false; }
@@ -288,7 +288,7 @@ public:
 	bool init(karte_t*, spieler_t* sp) OVERRIDE {
 		int x = get_maus_x();
 		int y = get_maus_y();
-		create_win(x - (x & 63), y | 31, new convoi_frame_t(sp), w_info, magic_convoi_list+sp->get_player_nr() );
+		create_win(x & 0xFFC0, y | 7, new convoi_frame_t(sp), w_info, magic_convoi_list+sp->get_player_nr() );
 		return false;
 	}
 	bool exit(karte_t*, spieler_t* const sp) OVERRIDE { destroy_win(magic_convoi_list + sp->get_player_nr()); return false; }
@@ -305,7 +305,7 @@ public:
 	bool init(karte_t* welt, spieler_t*) OVERRIDE {
 		int x = get_maus_x();
 		int y = get_maus_y();
-		create_win(x - (x & 63), y | 31, new citylist_frame_t(welt), w_info, magic_citylist_frame_t );
+		create_win(x & 0xFFC0, y | 7, new citylist_frame_t(welt), w_info, magic_citylist_frame_t );
 		return false;
 	}
 	bool exit(karte_t*, spieler_t*) OVERRIDE { destroy_win(magic_citylist_frame_t); return false; }
@@ -322,7 +322,7 @@ public:
 	bool init(karte_t* welt, spieler_t*) OVERRIDE {
 		int x = get_maus_x();
 		int y = get_maus_y();
-		create_win(x - (x & 63), y | 31, new goods_frame_t(welt), w_info, magic_goodslist );
+		create_win(x & 0xFFC0, y | 7, new goods_frame_t(welt), w_info, magic_goodslist );
 		return false;
 	}
 	bool exit(karte_t*, spieler_t*) OVERRIDE { destroy_win(magic_goodslist); return false; }
@@ -339,7 +339,7 @@ public:
 	bool init(karte_t* welt, spieler_t*) OVERRIDE {
 		int x = get_maus_x();
 		int y = get_maus_y();
-		create_win(x - (x & 63), y | 31, new factorylist_frame_t(welt), w_info, magic_factorylist );
+		create_win(x & 0xFFC0, y | 7, new factorylist_frame_t(welt), w_info, magic_factorylist );
 		return false;
 	}
 	bool exit(karte_t*, spieler_t*) OVERRIDE { destroy_win(magic_factorylist); return false; }
@@ -356,7 +356,7 @@ public:
 	bool init(karte_t* welt, spieler_t*) OVERRIDE {
 		int x = get_maus_x();
 		int y = get_maus_y();
-		create_win(x - (x & 63), y | 31, new curiositylist_frame_t(welt), w_info, magic_curiositylist );
+		create_win(x & 0xFFC0, y | 7, new curiositylist_frame_t(welt), w_info, magic_curiositylist );
 		return false;
 	}
 	bool exit(karte_t*, spieler_t*) OVERRIDE { destroy_win(magic_curiositylist); return false; }

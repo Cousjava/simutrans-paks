@@ -105,6 +105,13 @@ int CSV_t::get_lines () const
 	return lines;
 }
 
+void CSV_t::add_field (int newfield)
+{
+	char tmp[32];
+	sprintf( tmp, "%i", newfield );
+	add_field( tmp );
+}
+
 void CSV_t::add_field (const char *newfield)
 {
 	// Add comma if this isn't the first field on a line
@@ -157,11 +164,10 @@ int CSV_t::encode( const char *text, cbuffer_t& output )
 		}
 	}
 
+	int len = output.len();
 	if(  wrap  ) {
-		char* cpy = new char[strlen( text )];
+		char* cpy = strdup(text);
 		char* tmp = cpy;
-		int len = output.len();
-		tstrncpy( cpy, text, strlen( text ) + 1 );
 
 		output.append( "\"" );
 
@@ -176,13 +182,12 @@ int CSV_t::encode( const char *text, cbuffer_t& output )
 		output.append( tmp );
 		output.append( "\"" );
 		tmp = NULL;
-		delete [] cpy;
-		return output.len() - len;
+		free(cpy);
 	}
 	else {
 		output.append( text );
-		return (int)strlen( text );
 	}
+	return output.len() - len;
 }
 
 

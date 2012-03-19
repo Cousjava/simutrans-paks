@@ -70,7 +70,7 @@ public:
 	 *  (e.g. it should be equivalent to the output of strlen())
 	 * @author Timothy Baldock <tb@entropy.me.uk>
 	 */
-	void append (const char* text, size_t maxchars);
+	void append (const char* text, int maxchars);
 
 	/**
 	 * Return contents of buffer

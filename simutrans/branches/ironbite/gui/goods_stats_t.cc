@@ -23,6 +23,7 @@
 
 #include "gui_frame.h"
 
+#include "../ironbite/configuration_settings.h"
 
 goods_stats_t::goods_stats_t()
 {
@@ -35,7 +36,7 @@ void goods_stats_t::update_goodslist( uint16 *g, int b, int l )
 	goodslist = g;
 	bonus = b;
 	listed_goods = l;
-	set_groesse(koord(BUTTON4_X+D_BUTTON_WIDTH+2,max(2,listed_goods-2)*(LINESPACE+1)));
+	set_size(BUTTON4_X+D_BUTTON_WIDTH+2, max(2, listed_goods-1)*(LINESPACE+4));
 }
 
 
@@ -53,35 +54,41 @@ void goods_stats_t::zeichnen(koord offset)
 	// Hajo: try a different background color for lists
 	display_fillbox_wh(cd.x, cd.y, cd.xx-cd.x+1, cd.yy-cd.y+1, COLOR_LIST_BACKGROUND, true);
 
-	for(  uint16 i=0;  i<listed_goods;  i++  ) {
+	for(  uint16 i=0;  i<listed_goods;  i++  ) 
+	{
+		if((i & 1) && configuration_settings.iron_zebra_lists)
+		{
+			display_fillbox_wh_clip(cd.x, yoff-1, cd.xx-cd.x+1, LINESPACE+4, COLOR_LIST_BACKGROUND_ZEBRA, true);
+		}
+		
 		const ware_besch_t * wtyp = warenbauer_t::get_info(goodslist[i]);
 
-		display_ddd_box_clip(offset.x + 2, yoff, 8, 8, MN_GREY0, MN_GREY4);
-		display_fillbox_wh_clip(offset.x + 3, yoff+1, 6, 6, wtyp->get_color(), true);
+		display_ddd_box_clip(offset.x + 2, yoff+2, 8, 8, MN_GREY0, MN_GREY4);
+		display_fillbox_wh_clip(offset.x + 3, yoff+3, 6, 6, wtyp->get_color(), true);
 
 		buf.clear();
 		buf.append(translator::translate(wtyp->get_name()));
-		display_proportional_clip(offset.x + 15, yoff,	buf, ALIGN_LEFT, COLOR_TEXT, true);
+		display_proportional_clip(offset.x + 15, yoff+2, buf, ALIGN_LEFT, COLOR_TEXT, true);
 
 		// prissi
 		const sint32 grundwert128 = wtyp->get_preis()<<7;
 		const sint32 grundwert_bonus = wtyp->get_preis()*(1000l+(bonus-100l)*wtyp->get_speed_bonus());
 		const sint32 price = (grundwert128>grundwert_bonus ? grundwert128 : grundwert_bonus);
 		money_to_string( money_buf, price/300000.0 );
-		display_proportional_clip(offset.x + 170, yoff, money_buf, ALIGN_RIGHT, COLOR_TEXT, true);
+		display_proportional_clip(offset.x + 170, yoff+2, money_buf, ALIGN_RIGHT, COLOR_TEXT, true);
 
 		buf.clear();
 		buf.printf("%d%%", wtyp->get_speed_bonus());
-		display_proportional_clip(offset.x + 195, yoff, buf, ALIGN_RIGHT, COLOR_TEXT, true);
+		display_proportional_clip(offset.x + 195, yoff+2, buf, ALIGN_RIGHT, COLOR_TEXT, true);
 
 		buf.clear();
 		buf.append(translator::translate(wtyp->get_catg_name()));
-		display_proportional_clip(offset.x + 205, yoff, buf, 	ALIGN_LEFT, COLOR_TEXT, true);
+		display_proportional_clip(offset.x + 205, yoff+2, buf, 	ALIGN_LEFT, COLOR_TEXT, true);
 
 		buf.clear();
 		buf.printf("%dKg", wtyp->get_weight_per_unit());
-		display_proportional_clip(offset.x + 345, yoff, buf, ALIGN_RIGHT, COLOR_TEXT, true);
+		display_proportional_clip(offset.x + 345, yoff+2, buf, ALIGN_RIGHT, COLOR_TEXT, true);
 
-		yoff += LINESPACE+2;
+		yoff += LINESPACE+4;
 	}
 }

@@ -18,6 +18,7 @@ configuration_settings_t::configuration_settings_t()
 	iron_window_body_color = -1;
 	iron_ticker_body_color = -1;
 	iron_drop_shadow_color = -1;
+	iron_zebra_lists = false;
 }
 
 /**
@@ -62,6 +63,11 @@ bool configuration_settings_t::read(const char * path)
 		if(data.get("iron_drop_shadow_color"))
 		{
 			iron_drop_shadow_color = data.get_hex("iron_drop_shadow_color", -1);
+		} 
+		
+		if(data.get("iron_zebra_lists"))
+		{
+			iron_zebra_lists = data.get_int("iron_zebra_lists", 0) != 0;
 		} 
 		
 		return true;

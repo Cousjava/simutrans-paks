@@ -187,20 +187,25 @@ static int display_gadget_box(simwin_gadget_et const code,
 	if(skinverwaltung_t::iron_skin) 
 	{
 		// "x", "?", "=", "�", "�"
-		int n = code + 1;
-		if(!active)
+		int n = 1;
+		
+		if(active)
+		{
+			n = code + 1;
+		}
+		else
 		{
 			if(code < 12) 
 			{
-				n += 48;
+				n = code + 48;
 			}
 			else if(code < 30)
 			{
-				n += (54 - 22);
+				n = code + (54 - 22);
 			} 
 			else
 			{
-				n += (55 - 37); 
+				n = code + (55 - 37); 
 			}
 		}			
 		img = skinverwaltung_t::window_skin->get_bild_nr(n);

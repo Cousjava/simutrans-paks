@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2003 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2003 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -130,8 +130,8 @@ factorylist_frame_t::factorylist_frame_t(karte_t * welt) :
 	add_komponente(&ooo->sorteddir);
 	add_komponente(&ooo->scrolly);
 
-	set_fenstergroesse(koord(D_DEFAULT_WIDTH-50, D_TITLEBAR_HEIGHT+18*(large_font_p->line_spacing+1)+14+D_BUTTON_HEIGHT+2+1));
-	set_min_windowsize(koord(D_DEFAULT_WIDTH-50, D_TITLEBAR_HEIGHT+4*(large_font_p->line_spacing+1)+14+D_BUTTON_HEIGHT+2+1));
+	set_fenstergroesse(koord(D_DEFAULT_WIDTH-50, D_TITLEBAR_HEIGHT+18*(large_font_p->line_spacing+1)+14+D_BUTTON_HEIGHT+4+1));
+	set_min_windowsize(koord(D_DEFAULT_WIDTH-50, D_TITLEBAR_HEIGHT+4*(large_font_p->line_spacing+1)+14+D_BUTTON_HEIGHT+4+1));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -152,7 +152,7 @@ void factorylist_frame_t::resize(const koord delta)
 {
 	gui_frame_t::resize(delta);
 
-	koord scrolly_pos = ooo->scrolly.get_pos();
+	const koord scrolly_pos = ooo->scrolly.get_pos();
 	
 	const koord groesse = get_fenstergroesse() - scrolly_pos - koord(2, D_TITLEBAR_HEIGHT+D_MARGIN_BOTTOM);
 	ooo->scrolly.set_groesse(groesse);

@@ -1782,7 +1782,13 @@ bool automobil_t::calc_route(koord3d start, koord3d ziel, sint32 max_speed, rout
 		}
 	}
 	target_halt = halthandle_t();	// no block reserved
-	return route->calc_route(welt, start, ziel, this, max_speed, cnv->get_tile_length() );
+	route_t::route_result_t r = route->calc_route(welt, start, ziel, this, max_speed, cnv->get_tile_length() );
+	if(  r == route_t::valid_route_halt_too_short  ) {
+		cbuffer_t buf;
+		buf.printf( translator::translate("Vehicle %s cannot choose because stop too short!"), cnv->get_name());
+		welt->get_message()->add_message( (const char *)buf, ziel.get_2d(), message_t::traffic_jams, PLAYER_FLAG | cnv->get_besitzer()->get_player_nr(), cnv->front()->get_basis_bild() );
+	}
+	return r;
 }
 
 
@@ -1921,11 +1927,6 @@ bool automobil_t::choose_route( int &restart_speed, ribi_t::dir richtung, uint16
 				}
 				else {
 					// if this is the original stop, it is too short!
-					if(  original_route  &&  can_go_there  ) {
-						cbuffer_t buf;
-						buf.printf( translator::translate("Vehicle %s cannot choose because stop too short!"), cnv->get_name());
-						welt->get_message()->add_message( (const char *)buf, cnv->get_pos().get_2d(), message_t::warnings, PLAYER_FLAG | cnv->get_besitzer()->get_player_nr(), cnv->front()->get_basis_bild() );
-					}
 					can_go_there |= original_route;
 				}
 			}
@@ -2313,7 +2314,7 @@ void waggon_t::set_convoi(convoi_t *c)
 					target_halt = halthandle_t();
 				}
 			}
-			else {
+			else if(  c->get_next_reservation_index()==0  ) {
 				assert(c!=NULL);
 				// eventually search new route
 				route_t const& r = *c->get_route();
@@ -2347,6 +2348,7 @@ bool waggon_t::calc_route(koord3d start, koord3d ziel, sint32 max_speed, route_t
 		uint16 dummy;
 		block_reserver(cnv->get_route(), cnv->back()->get_route_index(), dummy, dummy, target_halt.is_bound() ? 100000 : 1, false, true);
 	}
+	cnv->set_next_reservation_index( 0 );	// nothing to reserve
 	target_halt = halthandle_t();	// no block reserved
 	// use length 8888 tiles to advance to the end of all stations
 	return route->calc_route(welt, start, ziel, this, max_speed, 8888 /*cnv->get_tile_length()*/ );
@@ -2851,11 +2853,16 @@ bool waggon_t::block_reserver(const route_t *route, uint16 start_index, uint16 &
 	slist_tpl<grund_t *> signs;	// switch all signals on their way too ...
 
 	if(start_index>=route->get_count()) {
+		cnv->set_next_reservation_index( max(route->get_count(),1)-1 );
 		return 0;
 	}
 
 	if(route->position_bei(start_index)==get_pos()  &&  reserve) {
 		start_index++;
+	}
+
+	if(  !reserve  ) {
+		cnv->set_next_reservation_index( start_index );
 	}
 
 	// find next blocksegment enroute
@@ -2935,6 +2942,7 @@ bool waggon_t::block_reserver(const route_t *route, uint16 start_index, uint16 &
 				sch1->unreserve(cnv->self);
 			}
 		}
+		cnv->set_next_reservation_index( start_index );
 		return false;
 	}
 
@@ -2944,6 +2952,7 @@ bool waggon_t::block_reserver(const route_t *route, uint16 start_index, uint16 &
 			signal->set_zustand(roadsign_t::gruen);
 		}
 	}
+	cnv->set_next_reservation_index( i );
 
 	return true;
 }

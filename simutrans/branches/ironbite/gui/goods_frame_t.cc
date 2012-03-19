@@ -109,12 +109,12 @@ goods_frame_t::goods_frame_t(karte_t *wl) :
 
 	sort_list();
 
-	int h = (warenbauer_t::get_waren_anzahl()+1)*(LINESPACE+2)+y + 2;
+	int h = (warenbauer_t::get_waren_anzahl()+1)*(LINESPACE+4)+y + 2;
 	if(h>450) {
-		h = y+27*(LINESPACE+1)+D_TITLEBAR_HEIGHT+1;
+		h = y+22*(LINESPACE+4)+D_TITLEBAR_HEIGHT+1;
 	}
 	set_fenstergroesse(koord(D_DEFAULT_WIDTH-20, h));
-	set_min_windowsize(koord(D_DEFAULT_WIDTH-20, 3*(LINESPACE+1)+D_TITLEBAR_HEIGHT+y+1));
+	set_min_windowsize(koord(D_DEFAULT_WIDTH-20, 3*(LINESPACE+4)+D_TITLEBAR_HEIGHT+y+1));
 
 	set_resizemode(vertical_resize);
 	resize (koord(0,0));

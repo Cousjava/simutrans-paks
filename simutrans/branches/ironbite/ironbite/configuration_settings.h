@@ -19,6 +19,7 @@ public:
 	int iron_window_body_color;
 	int iron_ticker_body_color;
 	int iron_drop_shadow_color;
+	bool iron_zebra_lists;
 
 	/**
 	 * Read the configuration settings from specified path.

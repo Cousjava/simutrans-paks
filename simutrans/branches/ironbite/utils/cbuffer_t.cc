@@ -1,8 +1,14 @@
-#include <assert.h>
+/*
+ * Copyright (c) 2002 - 2003 Hj. Malthaner
+ *
+ * This file is part of the Simutrans project under the artistic licence.
+ * (see licence.txt)
+ */
+
 #include <stdarg.h>
 #include <stdio.h>
-#include <errno.h>
 #include <string.h>
+
 #include "cbuffer_t.h"
 #include "simstring.h"
 #include "../simtypes.h"
@@ -67,7 +73,7 @@ void cbuffer_t::append(const char * text)
 }
 
 
-void cbuffer_t::append (const char* text, size_t maxchars)
+void cbuffer_t::append (const char* text, int maxchars)
 {
 	size_t const n = min( strlen( text ), maxchars );
 	extend( n );

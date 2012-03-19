@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2003 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2003 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -22,6 +22,8 @@
 #include "../besch/skin_besch.h"
 #include "../utils/cbuffer_t.h"
 #include "../utils/simstring.h"
+
+#include "../ironbite/configuration_settings.h"
 
 
 factorylist_stats_t::factorylist_stats_t(karte_t* w, factorylist::sort_mode_t sortby, bool sortreverse) :
@@ -145,7 +147,7 @@ bool factorylist_stats_t::infowin_event(const event_t * ev)
 void factorylist_stats_t::recalc_size()
 {
 	// show_scroll_x==false ->> groesse.x not important ->> no need to calc text pixel length
-	set_groesse(koord(210, welt->get_fab_list().get_count()*(LINESPACE+1)-10));
+	set_groesse(koord(210, welt->get_fab_list().get_count()*(LINESPACE+4)-10));
 }
 
 
@@ -164,7 +166,7 @@ void factorylist_stats_t::zeichnen(koord offset)
 	
 	static cbuffer_t buf;
 	int xoff = offset.x+16;
-	int yoff = offset.y;
+	int yoff = offset.y+1;
 
 	if(  fab_list.get_count()!=welt->get_fab_list().get_count()  ) {
 		// some deleted/ added => resort
@@ -172,8 +174,10 @@ void factorylist_stats_t::zeichnen(koord offset)
 		recalc_size();
 	}
 
+	int zebra = 0;
+	
 	uint32 sel = line_selected;
-	FORX(vector_tpl<fabrik_t*>, const fab, fab_list, yoff += LINESPACE + 2) 
+	FORX(vector_tpl<fabrik_t*>, const fab, fab_list, yoff += LINESPACE + 4) 
 	{
 		if (yoff >= end) break;
 
@@ -206,42 +210,49 @@ void factorylist_stats_t::zeichnen(koord offset)
 			buf.append(fab->get_current_production(), 0);
 			buf.append(") ");
 
-			display_ddd_box_clip(xoff+1, yoff+1, D_INDICATOR_WIDTH+2, D_INDICATOR_HEIGHT+2, MN_GREY0, MN_GREY4);
-			display_fillbox_wh_clip(xoff+2, yoff+2, D_INDICATOR_WIDTH, D_INDICATOR_HEIGHT, indikatorfarbe, true);
+			if((zebra & 1) && configuration_settings.iron_zebra_lists)
+			{
+				display_fillbox_wh_clip(cd.x, yoff-1, cd.xx-cd.x+1, LINESPACE+4, COLOR_LIST_BACKGROUND_ZEBRA, true);
+			}
+			
+			display_ddd_box_clip(xoff+1, yoff+3, D_INDICATOR_WIDTH+2, D_INDICATOR_HEIGHT+2, MN_GREY0, MN_GREY4);
+			display_fillbox_wh_clip(xoff+2, yoff+4, D_INDICATOR_WIDTH, D_INDICATOR_HEIGHT, indikatorfarbe, true);
 
 			if(fab->get_prodfactor_electric() > 0) 
 			{
-				display_color_img(skinverwaltung_t::electricity->get_bild_nr(0), xoff+6+D_INDICATOR_WIDTH, yoff, 0, false, true);
+				display_color_img(skinverwaltung_t::electricity->get_bild_nr(0), xoff+6+D_INDICATOR_WIDTH, yoff+2, 0, false, true);
 			}
 			else
 			{
-				display_proportional_clip(xoff+6+D_INDICATOR_WIDTH, yoff, "-", ALIGN_LEFT, MN_GREY0, true);
+				display_proportional_clip(xoff+6+D_INDICATOR_WIDTH, yoff+2, "-", ALIGN_LEFT, MN_GREY0, true);
 			}
 			
 			if(fab->get_prodfactor_pax() > 0)
 			{
-				display_color_img(skinverwaltung_t::passagiere->get_bild_nr(0), xoff+6+8+D_INDICATOR_WIDTH, yoff, 0, false, true);
+				display_color_img(skinverwaltung_t::passagiere->get_bild_nr(0), xoff+6+8+D_INDICATOR_WIDTH, yoff+2, 0, false, true);
 			}
 			else
 			{
-				display_proportional_clip(xoff+6+10+D_INDICATOR_WIDTH, yoff, "-", ALIGN_LEFT, MN_GREY0, true);
+				display_proportional_clip(xoff+6+10+D_INDICATOR_WIDTH, yoff+2, "-", ALIGN_LEFT, MN_GREY0, true);
 			}
 
 			if(fab->get_prodfactor_mail() > 0) 
 			{
-				display_color_img(skinverwaltung_t::post->get_bild_nr(0), xoff+6+19+D_INDICATOR_WIDTH, yoff, 0, false, true);
+				display_color_img(skinverwaltung_t::post->get_bild_nr(0), xoff+6+19+D_INDICATOR_WIDTH, yoff+2, 0, false, true);
 			}
 			else
 			{
-				display_proportional_clip(xoff+6+20+D_INDICATOR_WIDTH, yoff, "-", ALIGN_LEFT, MN_GREY0, true);
+				display_proportional_clip(xoff+6+20+D_INDICATOR_WIDTH, yoff+2, "-", ALIGN_LEFT, MN_GREY0, true);
 			}
 
 			// show text
-			display_proportional_clip(xoff+D_INDICATOR_WIDTH+6+34, yoff, buf, ALIGN_LEFT, COLOR_TEXT, true);
+			display_proportional_clip(xoff+D_INDICATOR_WIDTH+6+34, yoff+2, buf, ALIGN_LEFT, COLOR_TEXT, true);
 
 			// goto button
 			image_id const img = sel-- != 0 ? button_t::arrow_right_normal : button_t::arrow_right_pushed;
-			display_color_img(img, xoff-14, yoff, 0, false, true);
+			display_color_img(img, xoff-14, yoff+2, 0, false, true);
 		}
+		
+		zebra ++;
 	}
 }

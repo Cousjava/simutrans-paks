@@ -10,7 +10,6 @@
 #include "../simevent.h"
 #include "../simgraph.h"
 #include "../simtypes.h"
-#include "../simcolor.h"
 #include "../simworld.h"
 #include "../simhalt.h"
 #include "../simskin.h"
@@ -21,12 +20,16 @@
 #include "../besch/haus_besch.h"
 #include "../besch/skin_besch.h"
 
+#include "components/gui_component_colors.h"
+
 #include "../dataobj/translator.h"
 
 #include "../utils/simstring.h"
 #include "../utils/cbuffer_t.h"
 
 #include "gui_frame.h"
+
+#include "../ironbite/configuration_settings.h"
 
 
 curiositylist_stats_t::curiositylist_stats_t(karte_t* w, curiositylist::sort_mode_t sortby, bool sortreverse) :
@@ -135,7 +138,7 @@ bool curiositylist_stats_t::infowin_event(const event_t * ev)
 void curiositylist_stats_t::recalc_size()
 {
 	// show_scroll_x==false ->> groesse.x not important ->> no need to calc text pixel length
-	set_groesse(koord(210, attractions.get_count()*(large_font_p->line_spacing+1)-10));
+	set_groesse(koord(210, attractions.get_count()*(large_font_p->line_spacing+4)-10));
 }
 
 
@@ -149,6 +152,9 @@ void curiositylist_stats_t::zeichnen(koord offset)
 	const int start = cd.y-large_font_p->line_spacing+1;
 	const int end = cd.yy;
 
+	// Hajo: try a different background color for lists
+	display_fillbox_wh(cd.x, cd.y, cd.xx-cd.x+1, cd.yy-cd.y+1, COLOR_LIST_BACKGROUND, true);
+
 	static cbuffer_t buf;
 	int yoff = offset.y;
 
@@ -158,8 +164,11 @@ void curiositylist_stats_t::zeichnen(koord offset)
 		recalc_size();
 	}
 
+	int zebra = 0;
+
 	uint32 sel = line_selected;
-	FORX(vector_tpl<gebaeude_t*>, const geb, attractions, yoff += LINESPACE + 1) {
+	FORX(vector_tpl<gebaeude_t*>, const geb, attractions, yoff += LINESPACE + 4) 
+	{
 		if (yoff >= end) break;
 
 		int xoff = offset.x+10;
@@ -167,9 +176,14 @@ void curiositylist_stats_t::zeichnen(koord offset)
 		// skip invisible lines
 		if (yoff < start) continue;
 
+		if((zebra & 1) && configuration_settings.iron_zebra_lists)
+		{
+			display_fillbox_wh_clip(cd.x, yoff-1, cd.xx-cd.x+1, LINESPACE+4, COLOR_LIST_BACKGROUND_ZEBRA, true);
+		}
+
 		// goto button
 		image_id const img = sel-- != 0 ? button_t::arrow_right_normal : button_t::arrow_right_pushed;
-		display_color_img(img, xoff - 8, yoff, 0, false, true);
+		display_color_img(img, xoff - 8, yoff+2, 0, false, true);
 
 		buf.clear();
 
@@ -213,7 +227,8 @@ void curiositylist_stats_t::zeichnen(koord offset)
 			indicatorfarbe = post ? COL_BLUE : COL_YELLOW;
 		}
 
-		display_fillbox_wh_clip(xoff+7, yoff+2, D_INDICATOR_WIDTH, D_INDICATOR_HEIGHT, indicatorfarbe, true);
+		display_ddd_box_clip(xoff+7, yoff+3, D_INDICATOR_WIDTH+2, D_INDICATOR_HEIGHT+2, MN_GREY0, MN_GREY4);
+		display_fillbox_wh_clip(xoff+8, yoff+4, D_INDICATOR_WIDTH, D_INDICATOR_HEIGHT, indicatorfarbe, true);
 
 		// the other infos
 		const unsigned char *name = (const unsigned char *)ltrim( translator::translate(geb->get_tile()->get_besch()->get_name()) );
@@ -238,11 +253,17 @@ void curiositylist_stats_t::zeichnen(koord offset)
 		// now we have a short name ...
 		buf.printf("%s (%d)", short_name, geb->get_passagier_level());
 
-		display_proportional_clip(xoff+D_INDICATOR_WIDTH+10+9,yoff,buf,ALIGN_LEFT,COL_BLACK,true);
+		display_proportional_clip(xoff+D_INDICATOR_WIDTH+22, yoff+2, buf, ALIGN_LEFT, COLOR_TEXT, true);
 
-		if (geb->get_tile()->get_besch()->get_extra() != 0) {
-		    display_color_img(skinverwaltung_t::intown->get_bild_nr(0), xoff+D_INDICATOR_WIDTH+9, yoff, 0, false, false);
+		if (geb->get_tile()->get_besch()->get_extra() != 0) 
+		{
+		    display_color_img(skinverwaltung_t::intown->get_bild_nr(0), xoff+D_INDICATOR_WIDTH+11, yoff, 0, false, false);
 		}
-
+		else
+		{
+			display_proportional_clip(xoff+12+D_INDICATOR_WIDTH, yoff+2, "-", ALIGN_LEFT, MN_GREY0, true);
+		}
+		
+		zebra ++;
 	}
 }

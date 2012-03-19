@@ -42,25 +42,27 @@ curiositylist_frame_t::curiositylist_frame_t(karte_t * welt) :
 	stats(welt,sortby,sortreverse),
 	scrolly(&stats)
 {
-	sort_label.set_pos(koord(BUTTON1_X, 2));
+	const int top = D_MARGIN_TOP;
+
+	sort_label.set_pos(koord(D_MARGIN_LEFT, top+3));
 	add_komponente(&sort_label);
 
-	sortedby.init(button_t::roundbox, "", koord(BUTTON1_X, 14), koord(D_BUTTON_WIDTH,D_BUTTON_HEIGHT));
+	sortedby.init(button_t::roundbox, "", koord(90, top), koord(D_BUTTON_WIDTH, BUTTON_TALL_HEIGHT));
 	sortedby.add_listener(this);
 	add_komponente(&sortedby);
 
-	sorteddir.init(button_t::roundbox, "", koord(BUTTON2_X, 14), koord(D_BUTTON_WIDTH,D_BUTTON_HEIGHT));
+	sorteddir.init(button_t::roundbox, "", koord(90 + BUTTON1_X + D_BUTTON_WIDTH, top), koord(D_BUTTON_WIDTH, BUTTON_TALL_HEIGHT));
 	sorteddir.add_listener(this);
 	add_komponente(&sorteddir);
 
-	scrolly.set_pos(koord(0,14+D_BUTTON_HEIGHT+2));
+	scrolly.set_pos(koord(1, D_TITLEBAR_HEIGHT+BUTTON_TALL_HEIGHT+2));
 	scrolly.set_scroll_amount_y(large_font_p->line_spacing+1);
 	add_komponente(&scrolly);
 
 	display_list();
 
-	set_fenstergroesse(koord(D_DEFAULT_WIDTH, D_TITLEBAR_HEIGHT+18*(large_font_p->line_spacing+1)+14+D_BUTTON_HEIGHT+2+1));
-	set_min_windowsize(koord(D_DEFAULT_WIDTH, D_TITLEBAR_HEIGHT+4*(large_font_p->line_spacing+1)+14+D_BUTTON_HEIGHT+2+1));
+	set_fenstergroesse(koord(D_DEFAULT_WIDTH-50, D_TITLEBAR_HEIGHT+18*(large_font_p->line_spacing+4)+14+BUTTON_TALL_HEIGHT+2+1));
+	set_min_windowsize(koord(D_DEFAULT_WIDTH-50, D_TITLEBAR_HEIGHT+4*(large_font_p->line_spacing+4)+14+BUTTON_TALL_HEIGHT+2+1));
 
 	set_resizemode(diagonal_resize);
 	resize(koord(0,0));
@@ -95,8 +97,10 @@ bool curiositylist_frame_t::action_triggered( gui_action_creator_t *komp,value_t
 void curiositylist_frame_t::resize(const koord delta)
 {
 	gui_frame_t::resize(delta);
-	// fensterhoehe - 16(title) -offset (header)
-	koord groesse = get_fenstergroesse()-koord(0,D_TITLEBAR_HEIGHT+14+D_BUTTON_HEIGHT+2+1);
+
+	const koord scrolly_pos = scrolly.get_pos();
+	
+	const koord groesse = get_fenstergroesse() - scrolly_pos - koord(2, D_TITLEBAR_HEIGHT+D_MARGIN_BOTTOM);
 	scrolly.set_groesse(groesse);
 }
 

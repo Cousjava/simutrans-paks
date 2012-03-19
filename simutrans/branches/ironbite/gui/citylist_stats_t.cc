@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997 - 2003 Hansjörg Malthaner
+ * Copyright (c) 1997 - 2003 Hj. Malthaner
  *
  * This file is part of the Simutrans project under the artistic licence.
  * (see licence.txt)
@@ -9,12 +9,12 @@
 #include "stadt_info.h"
 
 #include "../simcity.h"
-#include "../simcolor.h"
 #include "../simevent.h"
 #include "../simgraph.h"
 #include "../simskin.h"
 #include "../simwin.h"
 #include "../simworld.h"
+#include "components/gui_component_colors.h"
 
 #include "../besch/skin_besch.h"
 
@@ -22,6 +22,8 @@
 
 #include "../utils/cbuffer_t.h"
 #include "../utils/simstring.h"
+
+#include "../ironbite/configuration_settings.h"
 
 static const char* total_bev_translation = NULL;
 char citylist_stats_t::total_bev_string[128];
@@ -111,13 +113,17 @@ bool citylist_stats_t::infowin_event(const event_t * ev)
 
 void citylist_stats_t::recalc_size()
 {
-	// show_scroll_x==false ->> groesse.x not important ->> no need to calc text pixel length
-	set_groesse(koord(210, welt->get_staedte().get_count() * (LINESPACE + 1) - 10));
+	set_size(210, welt->get_staedte().get_count() * (LINESPACE + 4) - 10);
 }
 
 
 void citylist_stats_t::zeichnen(koord offset)
 {
+	const clip_dimension cd = display_get_clip_wh();
+
+	// Hajo: try a different background color for lists
+	display_fillbox_wh(cd.x, cd.y, cd.xx-cd.x+1, cd.yy-cd.y+1, COLOR_LIST_BACKGROUND, true);
+
 	cbuffer_t buf;
 
 	sint32 total_bev = 0;
@@ -129,36 +135,47 @@ void citylist_stats_t::zeichnen(koord offset)
 		recalc_size();
 	}
 
+	int zebra = 0;
+	int yoff = offset.y +1;
 	uint32 sel = line_selected;
-	FORX(vector_tpl<stadt_t*>, const stadt, city_list, offset.y += LINESPACE + 1) {
+	FORX(vector_tpl<stadt_t*>, const stadt, city_list, yoff += LINESPACE + 4) 
+	{
+		if((zebra & 1) && configuration_settings.iron_zebra_lists)
+		{
+			display_fillbox_wh_clip(cd.x, yoff-1, cd.xx-cd.x+1, LINESPACE+4, COLOR_LIST_BACKGROUND_ZEBRA, true);
+		}
+		
 		sint32 bev = stadt->get_einwohner();
 		sint32 growth = stadt->get_wachstum();
 
 		buf.clear();
-		buf.printf( "%s: ", stadt->get_name() );
+		buf.append( stadt->get_name() );
+		buf.append( ": ");
 		buf.append( bev, 0 );
 		buf.append( " (" );
 		buf.append( growth/10.0, 1 );
 		buf.append( ")" );
-		display_proportional_clip(offset.x + 4 + 10, offset.y, buf, ALIGN_LEFT, COL_BLACK, true);
+		display_proportional_clip(offset.x + 16, yoff+1, buf, ALIGN_LEFT, COL_BLACK, true);
 
 		// goto button
 		image_id const img = sel-- != 0 ? button_t::arrow_right_normal : button_t::arrow_right_pushed;
-		display_color_img(img, offset.x + 2, offset.y, 0, false, true);
+		display_color_img(img, offset.x + 2, yoff+1, 0, false, true);
 
-		total_bev    += bev;
+		total_bev += bev;
 		total_growth += growth;
+		zebra ++;
 	}
+
+	total_bev_string[0] = 0;
+
 	// some cities there?
-	if(  total_bev > 0  ) {
+	if(  total_bev > 0  ) 
+	{
 		buf.clear();
-		buf.printf( "%s%u", total_bev_translation, total_bev );
+		buf.printf( "%s %u", total_bev_translation, total_bev );
 		buf.append( " (" );
 		buf.append( total_growth/10.0, 1 );
 		buf.append( ")" );
 		tstrncpy(total_bev_string, buf, lengthof(total_bev_string));
-	}
-	else {
-		total_bev_string[0] = 0;
 	}
 }
