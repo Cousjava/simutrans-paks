@@ -136,8 +136,10 @@ static void show_times(karte_t *welt, karte_ansicht_t *view)
 	DBG_MESSAGE("test", "display_color_img(), other AI: %i iterations took %i ms", i, dr_time() - ms);
 
 	ms = dr_time();
-	for (i = 0;  i < 300;  i++)
+	for (i = 0;  i < 300;  i++) {
+		dr_prepare_flush();
 		dr_flush();
+	}
 	DBG_MESSAGE("test", "display_flush_buffer(): %i iterations took %i ms", i, dr_time() - ms);
 
 	ms = dr_time();
@@ -185,7 +187,7 @@ void modal_dialogue( gui_frame_t *gui, long magic, karte_t *welt, bool (*quit)()
 	}
 
 	event_t ev;
-	create_win( (display_get_width()-gui->get_fenstergroesse().x)/2, (display_get_height()-gui->get_fenstergroesse().y)/2, gui, w_info, magic );
+	create_win( (display_get_width()-gui->get_fenstergroesse().x)/2, (display_get_height()-gui->get_fenstergroesse().y)/2-16, gui, w_info, magic );
 
 	if(  welt  ) {
 		welt->set_pause( false );
@@ -241,6 +243,7 @@ void modal_dialogue( gui_frame_t *gui, long magic, karte_t *welt, bool (*quit)()
 		display_fillbox_wh( 0, 0, display_get_width(), display_get_height(), COL_BLACK, true );
 		while(  win_is_open(gui)  &&  !umgebung_t::quit_simutrans  &&  !quit()  ) {
 			// do not move, do not close it!
+			dr_sleep(50);
 			dr_prepare_flush();
 			gui->zeichnen(win_get_pos(gui), gui->get_fenstergroesse());
 			dr_flush();
@@ -261,7 +264,6 @@ void modal_dialogue( gui_frame_t *gui, long magic, karte_t *welt, bool (*quit)()
 				// other events
 				check_pos_win(&ev);
 			}
-			dr_sleep(50);
 		}
 		set_pointer(1);
 		display_fillbox_wh( 0, 0, display_get_width(), display_get_height(), COL_BLACK, true );

@@ -1,7 +1,7 @@
 #ifndef simversion_h
 #define simversion_h
 
-#define REVISION 010
+#define REVISION 011
 
 #define SIM_BUILD_NIGHTLY           0
 #define SIM_BUILD_RELEASE_CANDIDATE 1
@@ -9,7 +9,7 @@
 
 #define SIM_VERSION_MAJOR 111
 #define SIM_VERSION_MINOR   2
-#define SIM_VERSION_PATCH   2
+#define SIM_VERSION_PATCH   3
 #define SIM_VERSION_BUILD SIM_BUILD_NIGHTLY
 
 // Beware: SAVEGAME minor is often ahead of version minor when there were patches.

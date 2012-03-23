@@ -166,9 +166,11 @@ void savegame_frame_t::fill_list()
 		button1->set_text("X");
 		button1->set_pos(koord(5, y));
 		button1->set_tooltip("Delete this file.");
-
+		button1->set_no_translate(true);
+		
 		button2->set_pos(koord(25, y));
 		button2->set_groesse(koord(140, D_BUTTON_HEIGHT));
+		button2->set_no_translate(true);
 
 		label->set_pos(koord(170, y+2));
 

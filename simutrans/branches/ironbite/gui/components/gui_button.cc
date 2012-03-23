@@ -489,7 +489,7 @@ void button_t::zeichnen(koord offset)
 	const KOORD_VAL bw = groesse.x;
 	const KOORD_VAL bh = groesse.y;
 	// mean offset to center zero line relative to the button
-	const KOORD_VAL y_text_offset = (D_BUTTON_HEIGHT-LINESPACE)/2;
+	const KOORD_VAL y_text_offset = (bh-LINESPACE)/2;
 
 	switch (type&STATE_MASK) {
 

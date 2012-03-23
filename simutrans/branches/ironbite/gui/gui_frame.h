@@ -131,6 +131,20 @@ protected:
 
 	void set_owner( const spieler_t *sp ) { owner = sp; }
 
+	/**
+	 * Draw the frame body.
+	 * @author Hj. Malthaner
+	 */
+	virtual void draw_frame_body(const koord pos, const koord gr);
+	
+	/**
+	 * Draws screws in the corners (needs iron skin)
+	 * @author Hj. Malthaner
+	 */
+	void gui_frame_t::draw_corner_decorations(const int xpos, const int ypos, 
+						  const int width, const int height,
+						  const int inset_x, const int inset_y);
+
 public:
 	/**
 	 * @param name Fenstertitel

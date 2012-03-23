@@ -20,6 +20,7 @@
 #include "../simwin.h"
 #include "../simcolor.h"
 #include "../besch/skin_besch.h"
+#include "components/gui_component_colors.h"
 
 #include "../bauer/warenbauer.h"
 
@@ -27,6 +28,7 @@
 
 #include "../utils/cbuffer_t.h"
 
+#include "../ironbite/configuration_settings.h"
 
 
 /**
@@ -427,7 +429,7 @@ void halt_list_frame_t::zeichnen(koord pos, koord gr)
 
 	gui_frame_t::zeichnen(pos, gr);
 
-	const sint16 xr = vscroll.is_visible() ? scrollbar_t::BAR_SIZE+4 : 6;
+	const sint16 xr = vscroll.is_visible() ? scrollbar_t::BAR_SIZE+1 : 1;
 	PUSH_CLIP(pos.x, pos.y+47, gr.x-xr, gr.y-48 );
 
 	const sint32 start = vscroll.get_knob_offset();
@@ -440,13 +442,29 @@ void halt_list_frame_t::zeichnen(koord pos, koord gr)
 		display_list();
 	}
 
+	int zebra = 0;
+	
 	FOR(vector_tpl<halt_list_stats_t>, & i, stops) {
 		halthandle_t const halt = i.get_halt();
 		if (halt.is_bound() && passes_filter(*halt)) {
 			num_filtered_stops++;
-			if(  num_filtered_stops>start  &&  yoffset<gr.y+47  ) {
+			if(  num_filtered_stops>start  &&  yoffset<gr.y+47  ) 
+			{
+				
+				// Hajo: try a different background color for lists
+
+				if((zebra & 1) && configuration_settings.iron_zebra_lists)
+				{
+					display_fillbox_wh_clip(pos.x+1, pos.y + yoffset, gr.x, 28, COLOR_LIST_BACKGROUND, true);
+				}
+				else
+				{
+					display_fillbox_wh_clip(pos.x+1, pos.y + yoffset, gr.x, 28, COLOR_LIST_BACKGROUND_ZEBRA, true);
+				}
+				
 				i.zeichnen(pos + koord(0, yoffset));
 				yoffset += 28;
+				zebra ++;
 			}
 		}
 	}

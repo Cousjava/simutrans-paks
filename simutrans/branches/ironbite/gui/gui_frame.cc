@@ -199,24 +199,14 @@ void gui_frame_t::get_weltpos(koord3d & k) const
 	k = koord3d::invalid; 
 }
 
+
 /**
- * Komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
- * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
- * in dem die Komponente dargestellt wird.
+ * Draw the frame body.
  *
  * @author Hj. Malthaner
  */
-void gui_frame_t::zeichnen(const koord pos, const koord gr)
+void gui_frame_t::draw_frame_body(const koord pos, const koord gr)
 {
-	// Hajo: resized, moved or drawn for the first time
-	if(dirty) {
-		mark_rect_dirty_wc(pos.x,pos.y,pos.x+gr.x,pos.y+gr.y);
-		dirty = false;
-	}
-
-	// draw background
-	PUSH_CLIP(pos.x+1,pos.y+16,gr.x-2,gr.y-16);
-
 	// Hajo: do we want transparent windows?
 	if(configuration_settings.iron_window_body_color != -1)
 	{
@@ -233,7 +223,7 @@ void gui_frame_t::zeichnen(const koord pos, const koord gr)
 	else
 	{
 		// Hajo: skinned windows code
-		if(skinverwaltung_t::window_skin!=NULL) 
+		if(skinverwaltung_t::window_skin) 
 		{
 			const int img = skinverwaltung_t::window_skin->get_bild_nr(0);
 
@@ -259,7 +249,54 @@ void gui_frame_t::zeichnen(const koord pos, const koord gr)
 		// Hajo: bottom line
 		display_fillbox_wh(pos.x, pos.y+gr.y-1, gr.x, 1, MN_GREY0, false);
 	}
-	
+}
+
+
+/**
+ * Draws screws in the corners (needs iron skin)
+ * @author Hj. Malthaner
+ */
+void gui_frame_t::draw_corner_decorations(const int xpos, const int ypos, const int width, const int height,
+					  const int inset_x, const int inset_y)
+{
+	const int img_screw = skinverwaltung_t::iron_skin->get_bild_nr(62);
+
+	if(img_screw != IMG_LEER)
+	{
+		display_base_img(img_screw,
+				 xpos+10+inset_x, ypos + D_TITLEBAR_HEIGHT+10+inset_y, 
+				 0, false, false);
+		display_base_img(img_screw,
+				 xpos+width-10-16-inset_x, ypos + D_TITLEBAR_HEIGHT+10+inset_y, 
+				 0, false, false);
+		display_base_img(img_screw,
+				 xpos+10+inset_x, ypos+height-10-16-inset_y, 
+				 0, false, false);
+		display_base_img(img_screw,
+				 xpos+width-10-16-inset_x, ypos+height-10-16-inset_y, 
+				 0, false, false);
+	}
+}	
+
+/**
+ * Komponente neu zeichnen. Die übergebenen Werte beziehen sich auf
+ * das Fenster, d.h. es sind die Bildschirkoordinaten des Fensters
+ * in dem die Komponente dargestellt wird.
+ *
+ * @author Hj. Malthaner
+ */
+void gui_frame_t::zeichnen(const koord pos, const koord gr)
+{
+	// Hajo: resized, moved or drawn for the first time
+	if(dirty) {
+		mark_rect_dirty_wc(pos.x,pos.y,pos.x+gr.x,pos.y+gr.y);
+		dirty = false;
+	}
+
+	// draw background
+	PUSH_CLIP(pos.x+1,pos.y+16,gr.x-2,gr.y-16);
+
+	draw_frame_body(pos, gr);
 	container->zeichnen(pos);
 
 	POP_CLIP();

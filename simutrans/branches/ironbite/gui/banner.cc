@@ -89,26 +89,29 @@ banner_t::~banner_t()
 	ooo = 0;
 }
 
-static void draw_corner_decorations(const int xpos, const int ypos, const int width, const int height)
+/**
+ * Draw the iron bite logo in the background.
+ * @author Hj. Malthaner
+ */
+static void draw_iron_backdrop(const int xpos, const int ypos, const int width, const int height)
 {
-	const int img_screw = skinverwaltung_t::iron_skin->get_bild_nr(62);
-
-	if(img_screw != IMG_LEER)
+	const int imgx = (xpos + width - 320) / 2 + 60;
+	const int imgy = (ypos + height - 192) / 2 + 12;
+	
+	for(int y=0; y<3; y++)
 	{
-		display_base_img(img_screw,
-				 xpos+10, ypos + D_TITLEBAR_HEIGHT+10, 
-				 0, false, false);
-		display_base_img(img_screw,
-				 xpos+width-10-16, ypos + D_TITLEBAR_HEIGHT+10, 
-				 0, false, false);
-		display_base_img(img_screw,
-				 xpos+10, ypos+height-10-16, 
-				 0, false, false);
-		display_base_img(img_screw,
-				 xpos+width-10-16, ypos+height-10-16, 
-				 0, false, false);
+		for(int x=0; x<5; x++)
+		{
+			const int nr = y*5 + x;
+			const int img_nr = skinverwaltung_t::iron_backdrop->get_bild_nr(nr);
+			
+			display_base_img(img_nr,
+					 imgx + x*64, imgy + y*64, 
+					 0, false, false);
+		}
 	}
 }	
+
 
 /**
  * Display game splash screen (aka banner)
@@ -135,26 +138,12 @@ void banner_t::zeichnen(const koord pos, const koord gr )
 	// Hajo: display backdrop image if there is one
 	if(skinverwaltung_t::iron_backdrop)
 	{
-		const int imgx = (pos.x + gr.x - 320) / 2 + 60;
-		const int imgy = (pos.y + gr.y - 192) / 2 + 20;
-		
-		for(int y=0; y<3; y++)
-		{
-			for(int x=0; x<5; x++)
-			{
-				const int nr = y*5 + x;
-				const int img_nr = skinverwaltung_t::iron_backdrop->get_bild_nr(nr);
-				
-				display_base_img(img_nr,
-						 imgx + x*64, imgy + y*64, 
-				                 0, false, false);
-			}
-		}
+		draw_iron_backdrop(pos.x, pos.y, gr.x, gr.y);
 	}
 
 	if(skinverwaltung_t::iron_skin)
 	{
-		draw_corner_decorations(pos.x, pos.y, gr.x, gr.y);
+		draw_corner_decorations(pos.x, pos.y, gr.x, gr.y, 0, 0);
 	}
 	
 	// Hajo: now display the intro message

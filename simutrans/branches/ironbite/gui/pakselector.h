@@ -13,6 +13,7 @@ private:
 	button_t load_addons;
 	bool at_least_one_add;
 
+
 protected:
 	/**
 	* Aktion, die nach Knopfdruck gestartet wird.
@@ -31,6 +32,12 @@ protected:
 
 	// true, if valid
 	virtual bool check_file( const char *filename, const char *suffix );
+
+	/**
+	 * Draw the frame body.
+	 * @author Hj. Malthaner
+	 */
+	void draw_frame_body(const koord pos, const koord gr);
 
 public:
 	void fill_list();	// do the search ...
