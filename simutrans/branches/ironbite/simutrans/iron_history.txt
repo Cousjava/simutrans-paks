@@ -1,3 +1,5 @@
+- Convoi list got zebra background.
+- Stations list got zebra background.
 - Updated goods list design.
 - New layout and default size for factory list.
 - New placement rules for list windows.

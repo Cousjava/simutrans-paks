@@ -7,13 +7,12 @@
  */
 
 #include <string.h>
-#include <algorithm>
 
 #include "gui_convoiinfo.h"
 
-
 #include "convoi_frame.h"
 #include "convoi_filter_frame.h"
+#include "components/gui_component_colors.h"
 
 #include "../simconvoi.h"
 #include "../simwin.h"
@@ -24,6 +23,8 @@
 #include "../player/simplay.h"
 #include "../utils/simstring.h"
 #include "../vehicle/simvehikel.h"
+
+#include "../ironbite/configuration_settings.h"
 
  /**
  * All filter and sort settings are static, so the old settings are
@@ -334,13 +335,33 @@ void convoi_frame_t::zeichnen(koord pos, koord gr)
 		sort_list();
 	}
 
-	for(  unsigned i=start;  i<convois.get_count()  &&  yoffset<gr.y+47;  i++  ) {
+	int zebra = 0;
+
+	for(  unsigned i=start;  i<convois.get_count()  &&  yoffset<gr.y+47;  i++  ) 
+	{
 		convoihandle_t cnv = convois[i];
 
-		if(cnv.is_bound()) {
+		if(cnv.is_bound()) 
+		{
+			
+			// Hajo: try a different background color for lists
+
+			if((zebra & 1) && configuration_settings.iron_zebra_lists)
+			{
+				display_fillbox_wh_clip(pos.x+1, pos.y + yoffset, gr.x, 40, COLOR_LIST_BACKGROUND, true);
+			}
+			else
+			{
+				display_fillbox_wh_clip(pos.x+1, pos.y + yoffset, gr.x, 40, COLOR_LIST_BACKGROUND_ZEBRA, true);
+			}
+			
+			
 			gui_convoiinfo_t ci(cnv);
 			ci.zeichnen( pos+koord(4,yoffset) );
+
+			zebra ++;
 		}
+
 		// full height of a convoi is 40 for all info
 		yoffset += 40;
 	}
