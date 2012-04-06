@@ -1,0 +1,84 @@
+Obj=tree
+Name=tree1
+copyright=JP-Set
+DistributionWeight=200
+climates=tropic,mediterran,temperate,tundra
+seasons=4
+# Juli - September (summer)
+Image[0][0]=jpset-tree1.2.0
+Image[1][0]=jpset-tree1.2.1
+Image[2][0]=jpset-tree1.2.1
+Image[3][0]=jpset-tree1.2.2
+Image[4][0]=jpset-tree1.2.2
+# Oktober - Dezember (winter)
+Image[0][1]=jpset-tree1.3.0
+Image[1][1]=jpset-tree1.3.1
+Image[2][1]=jpset-tree1.3.1
+Image[3][1]=jpset-tree1.3.2
+Image[4][1]=jpset-tree1.3.2
+# Januar - März (winter)
+Image[0][2]=jpset-tree1.0.0
+Image[1][2]=jpset-tree1.0.1
+Image[2][2]=jpset-tree1.0.1
+Image[3][2]=jpset-tree1.0.2
+Image[4][2]=jpset-tree1.0.2
+# April - Juni (spring -missing) 
+Image[0][3]=jpset-tree1.2.0
+Image[1][3]=jpset-tree1.2.1
+Image[2][3]=jpset-tree1.2.1
+Image[3][3]=jpset-tree1.2.2
+Image[4][3]=jpset-tree1.2.2
+--
+Obj=tree
+Name=tree2
+copyright=JP-Set
+DistributionWeight=200
+climates=tropic,mediterran,temperate,tundra
+seasons=4
+# Juli - September (summer)
+Image[0][0]=jpset-tree2.2.0
+Image[1][0]=jpset-tree2.2.1
+Image[2][0]=jpset-tree2.2.1
+Image[3][0]=jpset-tree2.2.2
+Image[4][0]=jpset-tree2.2.2
+# Oktober - Dezember (winter)
+Image[0][1]=jpset-tree2.3.0
+Image[1][1]=jpset-tree2.3.1
+Image[2][1]=jpset-tree2.3.1
+Image[3][1]=jpset-tree2.3.2
+Image[4][1]=jpset-tree2.3.2
+# Januar - März (winter)
+Image[0][2]=jpset-tree2.0.0
+Image[1][2]=jpset-tree2.0.1
+Image[2][2]=jpset-tree2.0.1
+Image[3][2]=jpset-tree2.0.2
+Image[4][2]=jpset-tree2.0.2
+# April - Juni (spring -missing) 
+Image[0][3]=jpset-tree2.2.0
+Image[1][3]=jpset-tree2.2.1
+Image[2][3]=jpset-tree2.2.1
+Image[3][3]=jpset-tree2.2.2
+Image[4][3]=jpset-tree2.2.2
+--
+Obj=tree
+Name=Tree3a
+copyright=JP-Set
+DistributionWeight=200
+climates=tropic,mediterran,temperate,tundra
+Image[0][0]=jpset-tree3.0.0
+Image[1][0]=jpset-tree3.0.1
+Image[2][0]=jpset-tree3.0.2
+Image[3][0]=jpset-tree3.0.3
+Image[4][0]=jpset-tree3.0.3
+--
+Obj=tree
+Name=Tree3b
+copyright=JP-Set
+DistributionWeight=200
+climates=tropic,mediterran,temperate,tundra
+Image[0][0]=jpset-tree3.1.0
+Image[1][0]=jpset-tree3.1.1
+Image[2][0]=jpset-tree3.1.2
+Image[3][0]=jpset-tree3.1.3
+Image[4][0]=jpset-tree3.1.3
+--
