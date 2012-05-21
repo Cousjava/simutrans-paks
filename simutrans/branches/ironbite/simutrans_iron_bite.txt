@@ -1,8 +1,0 @@
-Simutrans Iron bite is a fork of Simutrans.
-
-Contact: <h_malthaner@users.sourceforge.net>
-
-Simutrans Iron Bite will have a focus on better UI layout and design,
-but otherwise keep all the features of Simutrans Standard.
-
-It's all just beginning so there are no real changes yet.

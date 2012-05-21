@@ -1,3 +1,0 @@
-Sorry, the code for simutrans is currently at:
-svn://tron.homeunix.org/simutrans/simutrans/
-username "anon"

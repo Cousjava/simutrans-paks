@@ -25,6 +25,17 @@ Level=2
 intro_year=1950
 BackImage[0][0][0][0][0]=ind.1.2
 --
+# empty field (also res object)
+Obj=building
+Name=IND_32_02
+copyright=prissi
+Type=ind
+Level=2
+chance=100
+intro_year=1400
+BackImage[0][0][0][0][0][0]=com.1.1
+BackImage[0][0][0][0][0][1]=winter-com.1.1
+--
 Obj=building
 Name=IND_31_02
 Type=ind

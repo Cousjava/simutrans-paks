@@ -1,3 +1,11 @@
 Sorry, the code for simutrans is currently at:
 svn://tron.homeunix.org/simutrans/simutrans/
 username "anon"
+This is mirrored on github:
+https://github.com/aburch/simutrans
+
+You can find also two forks, one is experimental on github:
+http://github.com/jamespetts/simutrans-experimental/tree/master
+
+The other one is ironbite, on sourceforge:
+http://sourceforge.net/projects/ironsimu/
