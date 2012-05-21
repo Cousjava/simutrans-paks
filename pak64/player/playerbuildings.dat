@@ -361,10 +361,8 @@ NoInfo=1
 hq_level=2
 passengers=150
 intro_year=1935
-BackImage[0][0][0][1][0][0]=HQ.0.4
-BackImage[0][0][0][0][0][0]=HQ.1.4
-#BackImage[0][0][0][1][0][1]=HQ.0.5
-#BackImage[0][0][0][0][0][1]=HQ.1.5
+BackImage[0][0][0][1][0][0]=HQ.0.6
+BackImage[0][0][0][0][0][0]=HQ.1.6
 --------------------
 Obj=building
 type=hq
