@@ -5,7 +5,7 @@
 #                            Language: sk Slovencina                           #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 31.10 2011                           #
+#                           Date Created: 10.06 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
@@ -21,35 +21,37 @@
 #____________________________________bridge_____________________________________
 #____________________________________bridge_____________________________________
 ClassicRail
-Betónový most
+Betónový ¾eleznièný
 ClassicRoad
 Klasický cestný
 SteelRail
-oceµový most
+Oceµový ¾eleznièný
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 01_CITY
-Radnica
+Radnica\n
 02_CITY
 Radnica
 03_CITY
 Radnica
 04_CITY
 Radnica
+10_WOHN
+\nKostol\n(od Trikkyho)\n
 1930AirDepot
 Drevený hangár
 A1_ALTE_KIRCHE
-Slávny starý kostol, ktorý\nmusí ka?dý aspo? raz\nvidiet'.\n
+\nSlávny starý kostol,\nktorý musí ka¾dý\naspoò raz vidiet'.\n
 A2_SCHLOSS1
-Zámok bláznivého krá?a.\nObrovská obdivuhodnost' !\n
+\nZámok bláznivého kráµa.\nObrovská\nobdivuhodnost' !\n
 A3_BURG1
-Ruina, ktorá u? aj lep?ie\n?asy videla. Oplatí sa ju\nv?dy nav?tívit'.\n
+\nRuina, ktorá u¾ aj\nlep¹ie èasy videla.\nOplatí sa ju v¾dy\nnav¹tívit'.\n
 A4_SCHLOSS2
-Toto staré panské sídlo je\nve?kým cie?om turistov.\n
+\nToto staré panské\nsídlo je veµkým\ncieµom turistov.\n
 A5_STONEHENGE
-Tajuplný kruh zo skál,\nstarodávny a plný mýtov.\n
+\nTajuplný kruh zo skál,\nstarodávny a plný\nmýtov.\n
 A6_DOME
-Táto o?arujúca stará\ngotická katedrála je ve?kou\nturistickou atrakciou.\n
+\nTáto oèarujúca stará\ngotická katedrála je\nveµkou turistickou\natrakciou.\n
 Avila_Big_StationBlg
 Veµká stanièná budova
 Avila_Small_StationBlg
@@ -57,7 +59,7 @@ Malá stanièná budova
 Avila_Warehouse_StationBlg
 Stanièný sklad
 BusStop
-Autobusová/elektri?ková\nzastávka\n
+Autobusová/elektrièková zastávka
 Car_StationBlg
 parkovisko
 CarDepot
@@ -69,33 +71,33 @@ Dom oblo¾ený èervenými\ntehlami.\n\n
 Control_StationBlg
 stavadlo
 DenkFlor
-Pamätník Flora ,,WF Ultd.''\nWautersa, stavite?a\ntovární.\n
+\nPamätník\nFlora ,,WF Ultd.''\nWautersa,\nstaviteµa tovární.\n
 DenkHajo
-Pamätník venovaný\nHansjörgovi Malthanerovi,\nktorý sám 7 rokov vytváral\ntúto hru.\n
+\nPamätník venovaný\nHansjörgovi\nMalthanerovi, ktorý\nsám 7 rokov vytváral\ntúto hru.\n
 DenkMHz
-Pamätník venovaný\nGeorgovi Heidukovi\nmajstrovi v budovaní s\nprenikavým zmyslom pre\ndetaily.\n
+\nPamätník venovaný\nGeorgovi Heidukovi\nmajstrovi v budovaní\ns prenikavým zmyslom\npre detaily.\n
 DenkOwen
-Pamätník Owena Rudgea,\nznámeho finan?ného\nexperta.\n
+\nPamätník\nOwena Rudgea,\nznámeho finanèného\nexperta.\n
 DenkSeth
-Pamätník Setha C. Triggsa,\nslávneho architekta, ktorý\nnavrhol mnoho krásnych\nmestských budov. Je tiez\nznámy mnohými ?túdiami,\nako zdokonalit systémy\ndopravy.\n
+\nPamätník\nSetha C. Triggsa,\nslávneho architekta,\nktorý navrhol mnoho\nkrásnych mestských budov.\nJe tiez známy mnohými ¹túdiami,\nako zdokonalit systémy dopravy.\n
 DenkTomas
-Tento pamätník je\nvenovaný Tomá?ovi\nKube?ovi, ktorý pomáhal\nvylep?ovat' Simutrans vo\nve?a, ve?a oh?adoch\nsvojimi radami a tvrdou\nprácou.\n
+\nTento pamätník je\nvenovaný\nTomá¹ovi Kube¹ovi,\nktorý pomáhal\nvylep¹ovat' Simutrans vo veµa,\nveµa ohµadoch svojimi radami\na tvrdou prácou.\n
 DenkTrikky
-Pamätník ,,Trikkyho'' Ricka\nMcGreala, slávneho\narchitekta, ktorý navrhol\nmnoho prekrásnych budov.\n
+\nPamätník ,,Trikkyho''\nRicka McGreala,\nslávneho architekta,\nktorý navrhol mnoho\nprekrásnych budov.\n
 DenkVM
-Pamätník Manfreda ,,VT\nVienna''  Tomaschitza,\n?elezni?ného stavite?a.\n
+\nPamätník\nManfreda ,,VT Vienna''\n Tomaschitza,\n¾eleznièného staviteµa.\n
 DenkVolker
-Pamätník Volkera Meyera,\nktorý zdokonalil Simutrans v\nmnohých oblastiach.\n
+\nPamätník\nVolkera Meyera,\nktorý zdokonalil\nSimutrans v mnohých\noblastiach.\n
 Fluid_StationBlg
 Nádr¾ na kvapaliny
 FreightTrainStop
-Nákladná rampa
+®eleznièná nákladná stanica
 Gas_StationBlg
 Èerpacia stanica
 GCG1TrainStop
-?avá ?ast' dvojitej ?el. stanice
+¥avá èast' dvojitej ¾el. stanice
 GCG2TrainStop
-Pravá ?ast' dvojitej ?el. stanice
+Pravá èast' dvojitej ¾el. stanice
 Goods_StationBlg
 Sklad tovarov
 IND_00_01
@@ -103,7 +105,7 @@ Toto je miestna továreò na\nhluk. Hocikto mô¾e prís» a\nvyrobi» toµko hluku, koµ
 IND_00_02
 Chcete rozreza» nejaké\ndrevo? Tak potom príd»e\nsem, na pílu.\n\n
 LargeShipStop
-Ve?ký lodný prístav
+Veµký lodný prístav
 MonorailDepot
 Vozov?a Alwegu
 MonorailFoundation
@@ -113,33 +115,33 @@ Základy Alwegu
 PostOffice
 Po¹ta
 PSFreightTrainStop
-?elezni?ná nákladná stanica
+®eleznièná nákladná stanica
 PSHall1TrainStop
-Jednoduchá halová ?el. stanica
+Jednoduchá halová ¾el. stanica
 PSHall2TrainStop
-Jednoduchá halová ?el. stanica
+Jednoduchá halová ¾el. stanica
 RUIN_0
-Stará ruina, ktorá stále\ndoká?e pritiahnut' mnoho\nnáv?tevníkov.\n
+\nStará ruina, ktorá\nstále doká¾e pritiahnut'\nmnoho náv¹tevníkov.\n
 ShipDepot
 Lodenica
 ShipStop
-Osobný prístav
+Jednoduchý lodný prístav
 STADIUM2
-Tento ?tadión je domovom\nmnohých zábavných\n?portových udalostí ! Mô?e\npojat' a? 25.000 divákov.\n
+\nTento ¹tadión je\ndomovom mnohých\nzábavných ¹portových\nudalostí !\nMô¾e pojat' a¾ 25.000 divákov.\n
 Tennis_Court
-Tenisové kurty\n
+\nTenisové kurty\n
 Theatre
-Divadlo\n
+\nDivadlo\n
 TrainDepot
 Ru¹òové depo
 TrainStop
-Stanica
+®eleznièná osobná stanica
 TramDepot
 Vozovòa elektrièiek
 VictorianStation
 Viktoriánska stanica
 Windmill
-Veterný mlyn\n\nNiekto sa chodí dpozera» na veterný\nmlyn, preto¾e sa mu páèi\nelegancia, s ktorou sa vo\nvetre otáèajú jeho lopatky;\nniekto zase proto, ¾e sa mu\nchce ís» na prechádzku a nemá\nv okolí lep¹í cieµ. No a niektorí\nvýtr¾níci chodia k veternému\nmlynu, aby si po òom\nvyskú¹ali hodi» kameòom.\n
+\nVeterný mlyn\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -149,7 +151,7 @@ Sanitka
 2Raffinerie
 Rafinéria (pre benzín)
 Autohaus
-Autopredaj?a
+Autopredajòa
 Autohersteller
 Automobilka
 bakery
@@ -159,15 +161,15 @@ Pivovar
 Buchgrosshandel
 Kníhkupectvo
 cannery
-Konzerváreò
+Potr. konzerváreò
 Cementmill
 Cementáreò
 CHEMIST
-Lekáre? (od Setha)
+Lekáreò (od Setha)
 Concretefactory
-Betonárka
+Betonáreò
 cow_farm
-Kravín
+Farma na dobytok
 dairy
 Mliekáreò
 Druckerei
@@ -175,25 +177,27 @@ Tlaèiareò
 Erzbergwerk
 ®eleznorudná baòa
 fish_pond
-Rybník
+Chovný rybník
 fish_swarm
-Ryby
+Lovisko rýb
 food_processing_plant
-Potravinársky závod
+Potravinárska fabrika
 grain_farm
 Farma na obilie
 grain_mill
-Mlyn
+Mlyn na obilie
+Incinerator
+Spaµovòa
 Kohlegrube
-Uho?ná ba?a
+Uhoµná baòa
 Kohlekraftwerk
-Uho?ná elektráre?
+Uhoµná elektráreò
 Materialswholesale
-Staveb. ve?koobchod
+Staveb. veµkoobchod
 Moebelfabrik
 Nábytkáreò
 Moebelhaus
-IKEA
+Dom nábytku
 Nutzwald
 Les
 Oelbohrinsel
@@ -201,91 +205,91 @@ Ropná plo¹ina
 Oelfeld
 Ropné pole
 Oelkraftwerk
-Tepelná elektráre?
+Tepelná elektráreò
 Papierfabrik
 Papiereò
 Pharmaceutics
-Farmaceutická továre?
+Farmaceutická továreò
 Raffinerie
-Rafinéria
+Rafinéria (pre plasty)
 Saegewerk
 Píla
 Sandquarry
-Ba?a na piesok
+Baòa na piesok
+scrap_yard
+Skládka odpadu
 Stahlwerk
-Oceliare?
+Oceliareò
 Stonequarry
 Kameòolom
 supermarket
 Supermarket
 TANKE
-?erpacia stanica
+Èerpacia stanica
 Windkraftwerk
-Veterná elektráre?
+Veterná elektráreò
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
-automobily
+Autá
 beer
-piva
+Pivo
 Bretter
-dosiek
+Dosky
 Buecher
 Knihy
 canned_food
-konzerv.potr.
+Potr. konzervy
 Cement
 cementu
 Chemicals
-chemikálií
+Chemikálie
 Concrete
-betónu
+Betón
 Eisenerz
-¾elezné rudy
+®elezná ruda
 fish
-rýb
+Ryby
 flour
-múky
+Múka
 food
-jedla
+Potraviny
 Gasoline
-benzínu
+Benzín
 grain
-p¹enice
+Obilie
 Holz
-dreva
+Drevo
 Kohle
-uhlie
+Uhlie
 meat
-mäsa
+Mäso
 Medicine
-Lie?ivá
+Lieèivá
 milk
-mlieka
+Mlieko
 Moebel
-nábytku
+Nábytok
 None
-nic
+niè
 Oel
-surovej ropy
-Papier
-papieru
+Ropa
 Passagiere
-pasa?ierov
+Pasa¾ieri
 Plastik
-plastov
+Plasty
 Post
-Po?ta
+Po¹ta
 PrintersInk
-Tla?iar. farba
+Tlaèiar. farba
 Sand
-piesku
+Piesok
 Stahl
-oceli
+Oceµ
 Stone
-¹trku
+Kamenie
 waste
-odpadu
+smeti
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -371,17 +375,19 @@ MAN mraziarenský
 Cooling_Waggon
 Mraziarenský vagón
 Erzanhaenger
-Príves na ?eleznú rudu
+Príves na ¾eleznú rudu
 Erztransporter
-Daewoo-Avia na ?eleznú rudu
+Daewoo-Avia na ¾eleznú rudu
 Erzwagen
-Vagón na ?eleznú rudu
+Vagón na ¾eleznú rudu
 FastFerry
-Rýchla pasa?ierska kompa
+Rýchla pasa¾ierska kompa
+Fishing_Boat
+Rybárska loï
 H-Trans-Tiger-Car
-H-Trans-Tigress osobný voze?
+H-Trans-Tigress osobný vozeò
 H-Trans-Tiger-Mail-Car
-H-Trans-Tigress po?tový vagón
+H-Trans-Tigress po¹tový vagón
 Holzanhaenger
 Príves na drevo
 Holztransporter
@@ -389,17 +395,17 @@ Daewoo-Avia na drevo
 Holzwagen
 Vagón na drevo
 Horsebookscariage
-Ko? na knihy
+Koè na knihy
 Horsepapercariage
-Ko? na papier
+Koè na papier
 Horsepassengerscariage
 Osobný dostavník
 Horses
 Kone
 Horsewoodcariage
-Ko? na drevo
+Koè na drevo
 HVPosttransporter
-Mercedes na po?tu
+Mercedes na po¹tu
 Kohleanhaenger
 Príves na uhlie
 Kohletransporter
@@ -411,15 +417,15 @@ Príves na plasty
 Kunststofftransporter
 Daewoo-Avia na plasty
 Lowa
-Elektri?ka T3
+Elektrièka T3
 Lowa_Anhaenger
-Vle?ný elektri?kový voze? T3
+Vleèný elektrièkový vozeò T3
 Milk_Truck
 IVECO cisterna na mlieko
 Milk_Waggon
 Cisternový vagón na mlieko
 Moebelschiff
-Lo? na nábytok
+Loï na nábytok
 Moebelwagen
 Vagón na nábytok
 Oelanhaenger
@@ -433,25 +439,27 @@ IVECO na papier
 Papierwagen
 VT Wien vagón na papier
 Passagierwagen
-H-Trans Pasa?iersky voze?
+H-Trans Pasa¾iersky vozeò
 Postschiff
-Po?tová lo?
+Po¹tová loï
 Posttransporter
-Daewoo-Avia na po?tu
+Daewoo-Avia na po¹tu
 Postwagen
-H-Trans Po?tový/bato?inový voze?
+H-Trans Po¹tový/bato¾inový vozeò
 Sandanhaenger
 Príves na piesok
 Sandtransporter
 VOLVO na piesok
+Serj-Mini
+SOR B7.5 autobus
 SlowFerry
-Pasa?ierska kompa
+Pasa¾ierska kompa
 Stahlanhaenger
-Príves na oce?
+Príves na oceµ
 Stahltransporter
-IVECO na oce?
+IVECO na oceµ
 Stahlwagen
-VT Wien vagón na oce?
+VT Wien vagón na oceµ
 Staubkesselwagen
 VT Wien vagón na plasty
 Stoneanhaenger
@@ -461,19 +469,19 @@ VOLVO na kamenie
 Tanklastzug
 IVECO cisterna na rop. látky
 Tatra-T4
-Elektri?ka T4
+Elektrièka T4
 Tatra-T4_Wagon
-Vle?ný elektri?kový voze? T4
+Vleèný elektrièkový vozeò T4
 TPBeiwagen
-TPI VB98 lahký voze? (DMU)
+TPI VB98 lahký vozeò (DMU)
 TPPassagierwagen
-TPI Lopomo Pasa?iersky voze?
+TPI Lopomo Pasa¾iersky vozeò
 TPSchienenbus
-TPI VT98 motor. voze? (DMU)
+TPI VT98 motor. vozeò (DMU)
 Tram_GT6_Ende
-Elektri?ka GT6 - zadný diel
+Elektrièka GT6 - zadný diel
 Tram_GT6_Kopf
-Elektri?ka GT6 - predný diel
+Elektrièka GT6 - predný diel
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road
@@ -481,24 +489,24 @@ Asfaltová cesta
 city_road
 Mestská cesta
 cobblestone_road
-Dlá?dená cesta
+Dlá¾dená cesta
 concrete_sleeper_track
-tra» s betónovými podvalmi
+Trat' s betónovými pra¾cami
 dirt_road
-Po?ná cesta
+Poµná cesta
 gavel_road
-Valcovaná ?trková cesta
+Valcovaná ¹trková cesta
 mip_cobblestone_road
 Panelová cesta
 monorail
-Jednoko?ajová trat'
+Jednokoµajová trat'
 Powerline
-Vedenie vysokého napätia
+Elektrické vedenie
 Rillenschienen
-Elektri?ková trat'
+Elektrièková trat'
 runway_modern
 Moderná runway
 steel_sleeper_track
-vysokorýchlostná tra»
+Celooceµová trat'
 wooden_sleeper_track
-tra» s drevenými podvalmi
+Trat' s drevenými pra¾cami

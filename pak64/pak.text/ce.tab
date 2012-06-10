@@ -5,13 +5,17 @@
 #                            Language: ce C-English                            #
 #                                Encoding: ASCII                               #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 31.10 2011                           #
+#                           Date Created: 10.06 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
 #                              Frank Penz - FrankP                             #
 #                                    note:                                     #
+#                            Carl Baker - carlbaker                            #
+#                                    note:                                     #
+#                                   - neroden                                  #
+#                               note: Programmer                               #
 #                          Markus Pristovsek - prissi                          #
 #                                    note:                                     #
 #                           Lincoln Sayger - skreyola                          #
@@ -180,8 +184,6 @@ COM_10_10
 Tall A-Frame House\n
 COM_10_11
 Townhouse Block\n
-COM_10_12
-Two Tall Houses\n
 Control_StationBlg
 Signal Control Tower
 DenkFlor
@@ -767,7 +769,7 @@ Bennhardt TD (wagon)
 ICE_TD-front
 Bennhardt TD (front)
 IL-76
-Ilyushin IL-76
+Ilyushin IL-76 Postflieger
 JNR_C11
 Wottrich JNR-C11
 JR_9600

@@ -5,7 +5,7 @@
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 21.01 2012                           #
+#                           Date Created: 10.06 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Alexander Brose - AlexB                           #
@@ -191,7 +191,7 @@ Tierpferch
 ChannelStop
 Binnenhafen
 COM_00_01
-Ein Kiosk, in dem es jede\nMenge billigen Krimskrams,\nohne den niemand leben kann,\ngibt. Ehrlich!\n
+Kleiner Kiosk\n\n\nHier gibt es jede Menge billigen Krimskrams, ohne den niemand leben kann.\nEhrlich!\nWenn der Betreiber nicht gerade Pause macht oder im Schrebergarten ist, dann hat der Laden 24 Stunden am Tag geöffnet.
 COM_00_02
 Alle Mopedfahrer der Stadt\nlieben die Tankstelle von Herrn\nReichmuth, denn hier gibt es\neine vollautomatische\nZweitaktbenzin- Zapfsäule.\n
 COM_00_03
@@ -276,6 +276,8 @@ COM_10_11
 Süddeutsches Fachwerk:\nSchön anzusehen, aber die\nBesitzer sind nicht so\nglücklich: Weder mit dem\ntickenden Holzwurm hinter\nden Schindeln, noch mit der\nTatsache, dass alle Bilder ober\nund unten Nägel brauchen, um\nplatt an der Wand zu hängen.\n
 COM_10_12
 Zwei Pferde stehen vor der\nSchmiede. Auch sie wollen\nbeschlagen werden, aber\nbekannt ist Schmied Ambros\nvor allem für seine kunstvollen\nGeländer.\n
+COM_12_04
+Der Park zur heiligen Meernynphe zieht wegen seinem Names die Besuchermassen an; die wenigsten Spaziergänger entdecken jedoch den seltenen Nynphenstrauch in der hinteren Ecke.
 Control_StationBlg
 Stellwerk
 DenkDirk
@@ -323,7 +325,7 @@ Oberstufenzentrum\n\n(Ehemals Oberrealschule, jetzt\nOberstufenzentrum mit\ngymn
 HallBusStop
 Überdachtes Busterminal
 IND_00_01
-Eine Lagerhalle. Kisten, Säcke\nund Fässer türmen sich bis zur\nDecke. Ob der Besitzer noch\nweiss, was hier alles\neingelagert ist?\n
+Eine Lagerhalle: Die Kisten, Säcke\nund Fässer türmen sich bis zur\nDecke. Ob der Besitzer noch\nweiss, was hier alles\neingelagert ist?\n
 IND_00_02
 Ein Schuppen zur Lagerung von\nMaschinen und Ersatzteilen für\nden Großhandel.\n
 IND_00_03
@@ -792,6 +794,10 @@ See4
 Teich
 sheeps
 Schafherde
+#___________________________________menu_text___________________________________
+#___________________________________menu_text___________________________________
+MONORAILTOOLS
+Maglevwerkzeuge
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Couple
@@ -856,6 +862,8 @@ RailClose
 Gleissperre
 Railgate
 Freigabesignal für andere Spieler
+Roadgate
+Privateinfahrt
 Signals
 Signale
 SignalsMonorail
@@ -904,6 +912,8 @@ Pappel-1
 Pappel\n
 Pappel-2
 Pappel\n
+Shunter-tree2
+Flatterulme\n
 Tanne_1
 Tanne\n
 Tanne_2
@@ -916,8 +926,14 @@ Tanne_5
 Tanne\n
 Tanne_6
 Tanne\n
+Tree1
+Linde\n
+Tree3
+Silberpappel\n
 Tree4
 Kiefer\n\nKiefern sind weltweit\ngesehen die wichtigsten\nBaumarten der\nForstwirtschaft. Meist\nanspruchslos und gutwüchsig,\nwerden sie oft an Stelle der\neinheimischen Baumarten für die\neffektive Wiederaufforstungen\nnach Waldzerstörungen und\nRodungen verwendet. Ursprung\nsind eigentlich aus kühl-feuchten\nKlimabereichen. Angebaut werden\nKiefern aber inzwischen weltweit\n- außer in der Antarktis.\n
+Tree5
+Wacholder\n
 Tree6
 Fichte (Rotfichte, Rottanne)\nPicea abies\n\nWeitverbreiteter, schlanker, immergrüner\nNadelbaum. Er erreicht eine\nHöhe von 35 bis 65m, einen\nStammdurchmesser bis 2m und\nein Alter bis zu 1000 Jahren.\nNatürliche Standorte sind Nord-\nund Osteuropa sowie die Gebirge\nMitteleuropas. Durch künstliche\nVerbreitung auch in tieferen\nRegionen angesiedelt. Daher der\nName "Brotbaum der heimischen\nForstwirtschaft". Verwendung:\nAussen- und Innenbau,\nUntertagebau, Gerüstebau,\nSpanplatten, Resonanzholz für\nMusikinstrumente, Zellulose- und\nPapierindustrie.\n
 Willow
@@ -984,6 +1000,8 @@ Autotransporter
 H-Trans Autotransporter
 Autotransportwagen
 TPI Lopomo Autotransporter
+BB1280
+SNCF BB 1280
 BB200
 BB 200
 Be5-7
@@ -1202,12 +1220,22 @@ ICE_TD-car
 ICE-TD Mittelwagen
 ICE_TD-front
 ICE-TD
+IL-76
+Ilyushin 76
 JNR_C11
 JNR C11 (2-6-4T)
 JR_9600
 JR 9600
 JR_9600_tender
 JR9600 Tender
+Ju52
+Junker 52
+JumboCruiser
+Jumbo Cruiser Fernbus
+JumboCruiserBack1
+Jumbo Cruiser Fernbus (Ende)
+JumboCruiserBack2
+Jumbo Cruiser Fernbus (Postanhänger)
 JumboJet
 Boeing 747 "Jumbo Jet"
 kkStB_tender
@@ -1370,6 +1398,10 @@ Viggen
 Schärenfähre
 VolvoFH12
 Volvo FH12 Sattelschlepper
+Wastecarriage
+Lumpensammler
+wastewagon
+offener Müllwaggon
 X2000back
 X-2000 hinten
 X2000car

@@ -5,7 +5,7 @@
 #                              Language: pl Polski                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 21.02 2012                           #
+#                            Date Created: 7.06 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                       Bartlomiej Weclewski - BarthVader                      #
@@ -27,19 +27,19 @@
 #____________________________________bridge_____________________________________
 #____________________________________bridge_____________________________________
 ClassicRail
-Klasyczny most kolejowy
+Betonowy most kolejowy
 ClassicRoad
-Most drogowy
+Betonowy most drogowy
 koka_Bridge_single
-wiadukt kolejowy
+Wiadukt kolejowy
 MaglevBridge
-Maglev - most
+Most Maglev
 mlm_concrete_bridge
-Monorail - most betonowy
+Betonowy most kolei jednoszynowej
 ModernRoad
 Nowoczesny most (sprê¿ony beton)
 MonorailRamp
-Most
+Most kolei jednoszynowej
 PowerBridge
 "Most" dla linii wysokiego napiêcia
 Schiffhebewerk
@@ -49,7 +49,7 @@ Stalowy most kolejowy
 tb_classic_road
 Most ¿elbetonowy
 ViaductRail
-kamienny wiadukt
+Kamienny wiadukt
 WoodenRoad
 Most drewniany
 #___________________________________building____________________________________
@@ -79,7 +79,7 @@ Ratusz
 1930AirDepot
 Hangar (1930)
 1headquarter
-Siedziba twojej korporacji!
+Siedziba twojej korporacji.
 2headquarter
 Siedziba twojej korporacji!
 3headquarter
@@ -311,7 +311,7 @@ factory_cannery_details
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
-Refineria
+Rafineria
 3Raffinerie
 Rafineria
 Aufwindkraftwerk
@@ -987,11 +987,11 @@ Droga szutrowa
 Kanal
 Kana³
 MaglevTrack
-Kolej magnetyczna
+Tory Maglev
 MaglevTrackElevated
-Podwy¿szona kolej magnetyczna
+Podwy¿szone tory kolei Maglev
 mip_cobblestone_road
-Kocie ³by
+Droga brukowana MIP
 monorail
 Tor kolei jednoszynowej
 Powerline

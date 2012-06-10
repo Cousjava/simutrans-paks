@@ -5,110 +5,114 @@
 #                             Language: en English                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 31.10 2011                           #
+#                           Date Created: 10.06 2012                           #
 #                                                                              #
 #                                   authors:                                   #
-#                          Markus Pristovsek - prissi                          #
+#                            Alexander Brose - AlexB                           #
 #                                    note:                                     #
-#                               Sven Osada - sojo                              #
-#                         note: maintainer pak96.comic                         #
-#                         Roman Schwörer - Gotthardlok                         #
-#                                    note:                                     #
-#                            Colin W Anetts - Colin                            #
-#                                    note:                                     #
-#                           Hansjörg Malthaner - Hajo                          #
-#                                    note:                                     #
+#                                    - An_dz                                   #
+#                   note: Verified where all texts are shown                   #
 #                         Klaus Thenmayer - Bitfreezer                         #
-#                                    note:                                     #
-#                       Venkatesh Parthasarathy - Venkat                       #
-#                                    note:                                     #
-#                            Jonas Bushart - jonasbb                           #
-#                                    note:                                     #
-#                           Sava Bogdanets - Sava2004                          #
 #                                    note:                                     #
 #                                  - Christian                                 #
 #                                    note:                                     #
-#                                   - shinexus                                 #
+#                            Colin W Anetts - Colin                            #
 #                                    note:                                     #
 #                            Colin Teubner - ColinT                            #
 #                                    note:                                     #
-#                           Lincoln Sayger - skreyola                          #
-#                                    note:                                     #
-#                                    - GerdW                                   #
-#                                    note:                                     #
-#                            James P. Hood - TheHood                           #
-#                                    note:                                     #
-#                                 - transporter                                #
-#                                    note:                                     #
-#                                 André - An_dz                                #
-#                 note: Sempre verifica aonde os textos estão!                 #
-#                                   - knightly                                 #
+#                                   - Combuijs                                 #
 #                                    note:                                     #
 #                             Michael Hohl - Cruzer                            #
 #                       note: Administrator pak192.comic                       #
-#                                - jounior-fuchs                               #
-#                                    note:                                     #
-#                                    - petter                                  #
-#                                    note:                                     #
-#                                   - Xelofino                                 #
-#                                    note:                                     #
-#                            Alexander Brose - AlexB                           #
-#                                    note:                                     #
-#                           Michael Olbricht - whoami                          #
-#                                    note:                                     #
-#                                   - Combuijs                                 #
+#                             Dirk W. - DirrrtyDirk                            #
 #                                    note:                                     #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
-#                             Dirk W. - DirrrtyDirk                            #
+#                              Frank Penz - FrankP                             #
+#                                    note:                                     #
+#                                    - GerdW                                   #
+#                                    note:                                     #
+#                         Roman Schwörer - Gotthardlok                         #
+#                                    note:                                     #
+#                           Hansjörg Malthaner - Hajo                          #
+#                                    note:                                     #
+#                                 - IgorEliezer                                #
 #                                    note:                                     #
 #                              Jaroslaw - Jaroslaw                             #
+#                                    note:                                     #
+#                             Marcus Haupt - Marcus                            #
+#note: if I´m not available by email to proximity.de try mail@marcus-haupt.de (#
+#                                   - Nico192                                  #
+#                                    note:                                     #
+#                                 - Nicole_Chen                                #
+#                                    note:                                     #
+#                                    - Paco_m                                  #
+#                                    note:                                     #
+#                           Sava Bogdanets - Sava2004                          #
+#                                    note:                                     #
+#                          Susanna Björverud - Susanna                         #
+#                                    note:                                     #
+#                            James P. Hood - TheHood                           #
+#                                    note:                                     #
+#                                   - Timothy                                  #
+#                                    note:                                     #
+#                       Venkatesh Parthasarathy - Venkat                       #
+#                                    note:                                     #
+#                                   - Xelofino                                 #
+#                                    note:                                     #
+#                            Carl Baker - carlbaker                            #
 #                                    note:                                     #
 #                                  - enternald                                 #
 #     note: Need more lt translators. Eiti ? http://simutrans-germany.com/     #
 #                               Florian - floppy                               #
 #                                    note:                                     #
-#                              Frank Penz - FrankP                             #
-#                                    note:                                     #
-#                                    - Paco_m                                  #
-#                                    note:                                     #
 #                            Günter Beine - gebeine                            #
 #                        note: maintainer pak128.german                        #
-#                                 - IgorEliezer                                #
+#                        Lorenz Van Damme - gforcetheone                       #
 #                                    note:                                     #
 #                          James E. Petts - jamespetts                         #
 #  note: Maintainer for Simutrans-Experimental. Also works on Pak128.Britain.  #
-#                        Lorenz Van Damme - gforcetheone                       #
+#                            Jonas Bushart - jonasbb                           #
 #                                    note:                                     #
-#                             Marcus Haupt - Marcus                            #
-#note: if I´m not available by email to proximity.de try mail@marcus-haupt.de (#
+#                                - jounior-fuchs                               #
+#                                    note:                                     #
+#                                   - knightly                                 #
+#                                    note:                                     #
 #                             Mark Knoester - mark                             #
-#                                    note:                                     #
-#                              Tomá? Kube? - napik                             #
 #                                    note:                                     #
 #                              Markus Rex - msrex                              #
 #                                    note:                                     #
-#                                   - Nico192                                  #
+#                              Tomá? Kube? - napik                             #
 #                                    note:                                     #
-#                                 - Nicole_Chen                                #
+#                                   - neroden                                  #
+#                               note: Programmer                               #
+#                                    - petter                                  #
 #                                    note:                                     #
 #                             P. Hamming - phamming                            #
 #                                    note:                                     #
+#                          Markus Pristovsek - prissi                          #
+#                                    note:                                     #
 #                                     - sdog                                   #
 #                                    note:                                     #
-#                            Vladimír Slávik - vsys                            #
+#                                   - shinexus                                 #
 #                                    note:                                     #
-#                          Susanna Björverud - Susanna                         #
+#                           Lincoln Sayger - skreyola                          #
 #                                    note:                                     #
 #                                    - smu42                                   #
 #                                    note:                                     #
-#                                   - Timothy                                  #
+#                               Sven Osada - sojo                              #
+#                         note: maintainer pak96.comic                         #
+#                                 - transporter                                #
 #                                    note:                                     #
 #                              Jon - viewofheaven                              #
 #                                    note:                                     #
+#                              Xavier Paz - vilvoh                             #
+#                                    note:                                     #
 #                         Tomá? Vrbický - vrbicky_tomas                        #
 #                     note: Don´thurry up! Death is faster.                    #
-#                              Xavier Paz - vilvoh                             #
+#                            Vladimír Slávik - vsys                            #
+#                                    note:                                     #
+#                           Michael Olbricht - whoami                          #
 #                                    note:                                     #
 #                                                                              #
 ################################################################################
@@ -290,6 +294,8 @@ COM_11_11
 Boarding House\nThis is a cozy place where travelers can rest when they come to this town. Live entertainment is provided one night a week (and when a local performer wants to come in and earn tips on other nights).
 COM_11_12
 Spice Shop\nThis is a shop that carries spices from faraway places. The atmosphere in the shop is worth the visit, even if you don't find a spice you like.
+COM_12_04
+The Mermaid parc attracts thousands of visitors every years - albeit for the wrong reasons. Almost nobody happens to find the small maremate bush in the back corner. (Some people say the spelling error was deliberately introduced by the restaurant owner next to its entrance.)
 Control_StationBlg
 railway control centre
 DenkDirk
@@ -333,13 +339,23 @@ Warehouse
 Gymnasium
 High school/grammar school\n\nSince Simutrans runs on smartphone, even less studying is done there!
 IND_00_01
-Warehouse\n\nThis warehouse is used for storing wares... or shooting spy thriller movies.
+This warehouse is used for storing wares... or shooting spy thriller movies.
 IND_00_03
 Fuel/Oil Storage Tank\n\nNo smoking is allowed within 25 ft. (8m)
+IND_00_04
+For the welding a place was needed, which could not burning down. So the welded the from corrugated steel plated. Ironically, this is the most long lasting product from this workshop.
 IND_00_05
-Water Tank\n\nThis tank holds drinking water for this area of the city.
+This tank holds drinking water for this area of the city.
 IND_00_06
 Factory\n\nThis factory makes many useful items, such as joy buzzers and whoopee cushions.
+IND_00_12
+The building still let you feel the rumble of a big one cylinder engine driving all transmissions. Nowadays the only rumble comes from the worker running down the stairs during lunch break.
+IND_00_14
+Pentagon optics produces the latest infra red binoculars for ... undisclosed customers. You could guess this by the totally not suspicious looking guy in the bush.
+IND_00_16
+The big chimney is actually needed for the many filters. This neat looking building is actually burning hazardous waste. But the colors nearly fooled them all.
+IND_00_18
+Modern gas power station, with high figure of merit and even producing heat for nearby buildings. An industry you could certainly living next to it.
 IND_01_01
 Free parking. Some people\neven abandon their old\ncars here.\n
 IND_01_04
@@ -348,6 +364,8 @@ IND_01_06
 Cog Factory\n\nIt makes either gears or corporate employees.
 IND_01_10
 Tool Factory\n\nThis firm makes drop-forged tools. They will provide a free replacement for any tool they made that breaks.
+IND_01_13
+The own of the company change a lot; and thus the only recently painted side is the main entrance.
 IND_01_16
 Guess what is produced here: Neither cough medicine nor plastic molds but Grandma's secret spider recipe - at least this is claimed by the owners.
 IND_02_01
@@ -406,6 +424,8 @@ RES_00_04
 This modern house looks nothing out of the ordinary. But the whole structure has an extended tunnel network below, where a scientist works on beaming. However, he is most famed and feared for the frequent power outages in this neighbourhood.\n
 RES_00_06
 A little fountain. Even if it\nis not so great as the one\nin Geneva, it is delighting\npeople walking around it,\nespecially in the\nsummertime.\n
+RES_00_07
+It was an old farming house which survived urbanisation. Now it is by far the oldest structure around and people tell scary story about its attic.
 RES_00_08
 Medium House with Attached Garage\n\nDon't worry. They use the car to get to one of your mass-transit stations.
 RES_00_09
@@ -529,7 +549,7 @@ factory_Raffinerie_details
 factory_Rinnenkraftwerk_details
 <title>Parabolic Solar Power Plant Details</title><h1>Parabolic Solar Power Plant</h1><p>Sunlight is focused on a tube of oil using parabolic mirrors that follow the sun. The oil heats up to at least 300°C and goes through a heat exchanger to produce steam, which moves a turbine. Nine such power stations were built in California, but then a special tax was levied on solar electricity. At 384MW, they are by far the most powerful solar power stations.</p>
 factory_Stahlwerk_details
-<title>About Iron foundries</title><h1>Iron foundries (Steel mills)</h1><p>These industries convert iron ore into iron or steel. This is done by heating ore (and recycled iron scrap) up in blast furnaces - huge cylindric structures that can withstand the immense heat of about 2000°C. The ore inside melts quickly and separates into a pool of liquid iron and slag floating on top of it.</p><p>The iron is further processed in converters so as to reduce the carbon volume; the lower it is, the higher quality steel you get. Such processes need lots of energy, usually gained by burning mountains of coal.<p>
+<title>About Iron foundries</title><h1>Iron foundries (Steel mills)</h1><p>These industries convert iron ore into iron or steel. This is done by heating ore (and recycled iron scrap) up in blast furnaces - huge cylindric structures that can withstand the immense heat of about 2000°C. The ore inside melts quickly and separates into a pool of liquid iron and slag floating on top of it.</p><p>The iron is further processed in converters so as to reduce the carbon volume; the lower it is, the higher quality steel you get. Such processes need lots of energy, usually gained by burning mountains of coal.</p>
 factory_Windkraftwerk_details
 <title>Wind Power Station Details</title><h1>Wind energy</h1><p>The first wind power station was actully built in Scotland 1885 by Prof. James Blyth from Strathclyde. Aparently it was not a great success, comapring with water power and thus the idea went on the back burner for the next 60 year but for Denmark. The first modern type was built 1957 in Germany (2 blades) and Denmark (3 blades). However, the big breakthrough came after the oil crisis and the next after govermetns began to subsidize reneable energies.</p>\n
 #____________________________________factory____________________________________
@@ -714,6 +734,10 @@ See4
 Lake
 sheeps
 Sheep
+#___________________________________menu_text___________________________________
+#___________________________________menu_text___________________________________
+MONORAILTOOLS
+Maglev Tools
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Couple
@@ -778,6 +802,8 @@ RailClose
 Rail Close
 Railgate
 Gate excluding other player
+Roadgate
+Private road entry barrier
 Signals
 Rail Signal
 SignalsMonorail
@@ -828,6 +854,8 @@ Pappel-1
 Poplar\n
 Pappel-2
 Poplar\n
+Shunter-tree2
+White Elm\n
 Tanne_1
 Fir\n
 Tanne_2
@@ -840,6 +868,12 @@ Tanne_5
 Fir\n
 Tanne_6
 Fir\n
+Tree1
+Linden tree (Tilia)\n
+Tree3
+White Poplar\n
+Tree5
+Juniper\n
 Tree6
 Fir\n
 Willow
@@ -875,15 +909,15 @@ JaCo 221A 4-6-0
 221A_tender
 JaCo 221A Tender
 2Ben155
-DB BR250
+DR BR250
 2Diesellokomotive
-German Railways class 218
+DB class 218
 2Ellok
 H-Trans Tigress I
 2Garrat
 Garratt (middle)
 3Ben185
-Bennhardt BR185
+DB BR185
 3Diesellokomotive
 H-Trans BR365
 3Garrat
@@ -1053,7 +1087,7 @@ Rama Bulk Goods Trailer
 Erztransporter
 Kirayami Bulk Goods Truck
 Erzwagen
-Bennhardt Hopper Car
+Hopper Car
 F7back
 Empire F7 B-unit
 FastFerry
@@ -1123,11 +1157,11 @@ Stake Wagon
 HVPosttransporter
 Eagle HVP Mail Truck
 ICE_TD-back
-Bennhardt TD (back)
+TD (back)
 ICE_TD-car
-Bennhardt TD (passenger car)
+TD (passenger car)
 ICE_TD-front
-Bennhardt TD ICE
+TD ICE
 IL-76
 Ilyushin IL-76 Mail Plane
 JNR_C11
@@ -1169,9 +1203,9 @@ Simlock S-188 Electra
 logs
 Logs
 Lowa
-BennHardt T-26
+T-26
 Lowa_Anhaenger
-BennHardt T-26 (car)
+T-26 (car)
 Mack_Truck_01
 TMC Long-nose Semi
 Mailcontainerwagon

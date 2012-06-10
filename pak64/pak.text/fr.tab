@@ -5,7 +5,7 @@
 #                             Language: fr Francais                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 21.02 2012                           #
+#                           Date Created: 10.06 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                  - Christophe                                #
@@ -36,6 +36,8 @@
 #                            note: French translator                           #
 #                          Christophe Manaud - manaud                          #
 #                                    note:                                     #
+#                           Maxime Cheminel - maxime                           #
+#                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
 #                                    note:                                     #
 #                                                                              #
@@ -58,6 +60,8 @@ MonorailRamp
 Rampe pour monorail
 PowerBridge
 Pont à haute tension
+Schiffhebewerk
+Pont fluviale
 SteelRail
 Pont ferroviaire en acier
 tb_classic_road
@@ -192,8 +196,6 @@ Goods_StationBlg
 Entrepôt
 Gymnasium
 Lycée/École secondaire\n
-IND_00_01
-Entrepôt\n
 IND_01_01
 Parking Gratuit\n\nIl y a même quelques\npersonnes qui abandonnent\nleur voiture ici.\n
 IND_01_03

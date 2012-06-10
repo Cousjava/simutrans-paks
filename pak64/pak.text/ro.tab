@@ -5,7 +5,7 @@
 #                              Language: ro Romana                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 31.10 2011                           #
+#                           Date Created: 10.06 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                   - CDAndrei                                 #
@@ -80,26 +80,16 @@ DenkVolker
 \nAceastã clãdire a\nfost construitã de cãtre\nVolker Meyer.\n
 FreightTrainStop
 Staþie marfar
-IND_00_01
-Magazin depozit\n
 IND_00_02
 Barac?\n
 IND_00_03
 Magazin depozit carburan?i\n
-IND_00_04
-O?el?rie\n
-IND_00_05
-Cistren? ap?\n
 IND_00_06
 \mFabric?\n
 IND_00_09
 Uzin? ciment\n
 IND_00_10
 Hal?\n
-IND_00_12
-Interpriderea de utilaje\n
-IND_00_14
-Optica\n
 IND_00_16
 Fabric? de materiale\nfotosensibile\n
 IND_01_01

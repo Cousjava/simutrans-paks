@@ -5,7 +5,7 @@
 #                            Language: nl Nederlands                           #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 31.10 2011                           #
+#                           Date Created: 10.06 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                   - Combuijs                                 #
@@ -188,8 +188,6 @@ Goods_StationBlg
 Pakhuis
 Gymnasium
 Scholengemeenschap\n\n
-IND_00_01
-Warenhuis\n\n
 IND_00_18
 Brouwerij van inferieur bier\n\n
 IND_01_03
@@ -536,8 +534,6 @@ Tanne_6
 Naaldboom\n
 Tree4
 Lariks\n
-Tree5
-Fake Plastic Tree\n
 Tree6
 Spar\n
 Willow

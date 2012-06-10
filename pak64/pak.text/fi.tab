@@ -5,7 +5,7 @@
 #                              Language: fi Suomi                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 31.10 2011                           #
+#                           Date Created: 10.06 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
@@ -188,8 +188,6 @@ COM_10_10
 Alppitalo\n
 COM_10_11
 Paritalo\n
-COM_10_12
-Paritalo\n
 Control_StationBlg
 Valvontatorni
 DenkFlor
@@ -230,14 +228,10 @@ Goods_StationBlg
 Varasto
 Gymnasium
 Yksityislukio\n\nTäällä opiskelee rikkaita ihmisiä.\n
-IND_00_01
-Varasto\n
 IND_00_02
 Tehdashalli\n
 IND_00_03
 Polttoainesäiliö\n
-IND_00_04
-Peltipaja\n
 IND_00_05
 Vesivarasto\n
 IND_00_06
@@ -246,8 +240,6 @@ IND_00_09
 Vanha paloasema\n
 IND_00_10
 Pieni tehdas\n
-IND_00_12
-Vanha konepaja\n
 IND_00_14
 Keramiikkatehdas\n
 IND_00_17
