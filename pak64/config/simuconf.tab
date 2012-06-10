@@ -93,7 +93,7 @@ crossconnect_factories_percentage = 33
 
 # true if transformers are allowed underground (default)
 
-allow_undergroud_transformers = 0
+allow_underground_transformers = 0
 
 # how much is the total electric power available (in relation to total production) in parts per thousand
 electric_promille = 330
