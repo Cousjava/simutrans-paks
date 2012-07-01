@@ -5,7 +5,7 @@
 #                             Language: cz Cestina                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 10.06 2012                           #
+#                            Date Created: 1.07 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
@@ -226,6 +226,8 @@ COM_10_10
 Obchod s koøením a léèivými bylinkami v¹eho druhu.
 COM_10_11
 Hotel\n\nZ oknen je nádherný výhled po okolí.
+COM_12_04
+Park\n v létì zde prodávají zmrzlinu
 Control_StationBlg
 ®eleznièní hradlo
 DenkDirk
@@ -272,10 +274,14 @@ Gymnasium
 Gymnázium\n\n
 HallBusStop
 Zastøe¹ená autobusová zastávka
+IND_00_01
+Skladové plochy k pronajmutí
 IND_00_02
 Dílny\n\nZde jsou obrábìny rùzné kovové souèástky.
 IND_00_03
 Sídlo tajné slu¾by\nPostavit zásobník na ropu mezi mìstské budovy by ¾ádný rozumì uva¾ující èlovìk nepovolil. To naznaèuje, ¾e se pod kupolí nádr¾e na ropné produkty nachází nìco jiného - tajná kanceláø výzvìdné slu¾by CH4. 
+IND_00_04
+Opravna nákladních automobilù
 IND_00_05
 vodojem
 IND_00_06
@@ -368,6 +374,10 @@ RES_00_04
 Dùm s plochou støechou.\n Kdy¾ jej stavìli, mysleli si, ¾e u¹etøí za ta¹ky na støechu. Dnes jim rovnou støechou zatéká.
 RES_00_06
 Fontána. I kdy¾ to není\npøímo ¾enevská fontána,\ntak stále potì¹í\nkolemjdoucí, zejména v\nlétì.\n
+RES_00_07
+Obytný srub. Uvnitø je velký krb, který vyhøeje celý dùm.
+RES_00_08
+Obytný dùm\n\nRozkvetlá zahrádka pøitahuje pozornost celé ulice.
 RES_00_09
 Jezírko s ostùvkem
 RES_00_10
@@ -408,6 +418,8 @@ RES_01_15
 Obytný dùm\n\nStrom pøed vchodem vrhá v letním parnu pøíjemný stín.
 RES_01_16
 Trojice èin¾ovních domù. Na krajní právì z venku èervì natøeli. Je¹tì je tam le¹ení.
+RES_01_17
+Èin¾ovní dùm\nV pøízemí je restaurace
 RES_01_18
 Èin¾ovní dùm s vikýøi a trochou zelenì.
 RES_01_22
@@ -418,6 +430,8 @@ RES_02_01
 Chý¹e v palmovém háji\n
 RES_02_07
 Domek s pøístavbami.\n\nPo dùkladném zalévání dvojice stromù vyrostla i pøilehlá èást domu. Kdyby jej zalévali i z druhé strany, vyrostl by dùm celý. 
+RES_02_16
+Prosklené stìny poskytují dostatek svìtla po celý den. Kdyby se tak dalo pøed ním v létì schovat.
 RES_10_01
 Jednopatrový dùm s pultovou støechou.\n\nVìt¹í pøesah støechy chrání místnosti ve vrchním patru pøed úporným letním sluncem.
 RES_10_02
@@ -520,8 +534,10 @@ factory_brewery_details
 <title>Pivovar - detaily</title>\n<h1>Pivovar</h1>\n<p>Pivovar je technologický celek vyrábìjící pivo. Pivovar je obvykle rozdìlen do nìkolika samostatných provozù, které odpovídají jednotlivým fázím výroby. Velikost pivovaru se mù¾e pohybovat od malého domácího témìø kuchyòského provozu a¾ po velký prùmyslový podnik. Variabilita existuje i v konkrétní technologii vaøení piva. V Èesku ale prakticky v¹echny pivovary u¾ívají metodu spodního kva¹ení a vyrábìjí piva plzeòského typu.</p>
 factory_cannery_details
 <title>Konzervárna - detaily</title>\n<h1>Konzervárna</h1>\n<p>Konzerva pochází od slova konzervovat, jedná se o ka?dý zásobník ur?ený pro dlouhodobé skladování a konzervaci netrvanlivých komodit, zejména potravin, a to v b??ných teplotních a vlhkostních podmínkách.</p><p>?asto se jedná o plechovou pikslu nebo oby?ejnou ?irou sklen?nou nádobu opat?enou plechovým ví?kem. Krom? vlastní konzervace potravin konzerva také slou?í k bezpe?nému transportu, k lep?ímu uskladn?ní p?íslu?né komodity, nej?ast?ji se jedná o potraviny.</p><p>V p?evá?né mí?e se jedná o válcové tvary (nej?ast?ji pro ovoce, barvy, oleje atd.), ve tvaru kvádru (pro maso, paliva v kanystrech atd.), malé podlouhlé nádobky pro mo?ské rybi?ky (tzv. olejovky) atd. Kovové konzervy se vyráb?jí nej?ast?ji z ocelového plechu pota?eného cínem, nebo nov?ji z hliníkových slitin.</p>\n
+factory_Cementmill_details
+<title>Cementárna - detaily</title>\n<h1>Cementárna</h1>\n<p>Cement se vyrábí z vápence, slínu, køemièitého písku a dal¹ích pøísad. Suroviny jsou drceny a pak ohøívány a¾ na 1300°C v rotaèních pecích. Po ochlazení je mo¾no plnit cement do pytlù. </p>
 factory_Concretefactory_details
-<title>Betonárka - detaily</title>\n<h1>Betonárka</h1><p>Beton je um?lý slepenec a pat?í mezi nejpou?ívan?j?í kompozitní materiály. Nej?ast?j?í forma je tzv. cementový beton, kde je pojivem cement a plnivem kamenivo; dal?ím materiálem pro výrobu je voda. Krom? cementovýho betonu existuje je?t? asfaltový beton, co? je materiál, ze kterého jsou vyráb?ny asfaltové vozovky.</p>
+<title>Betonárka - detaily</title>\n<h1>Betonárka</h1><p>Beton je umìlý slepenec a patøí mezi nejpou¾ívanìj¹í kompozitní materiály. Nejèastìj¹í forma je tzv. cementový beton, kde je pojivem cement a plnivem kamenivo; dal¹ím materiálem pro výrobu je voda. Kromì cementového betonu existuje je¹tì asfaltový beton, co¾ je materiál, ze kterého jsou vyrábìny asfaltové vozovky.</p>
 factory_cow_farm_details
 <title>Kravín - detaily</title>\n<h1>Kravín</h1><p>Zde se chovají krávy pro maso a nebo pro mléko. Vedle prasete je tur domácí jedním z neju?ite?n?j?ích chovných zví?at.</p>
 factory_dairy_details
@@ -529,17 +545,33 @@ factory_dairy_details
 factory_Druckerei_details
 <title>Tiskárna - detaily</title>\n<h1>Tiskárna</h1><p>Polygrafie je výrobní obor, který zpracovává a tiskem rozmno?uje textové a obrazové p?edlohy. Zahrnuje tyto základní výrobní fáze: zhotovování tiskových forem, tisk, dokon?ovací výroba a p?idru?ené odborné ?innosti.</p>
 factory_Erzbergwerk_details
-<title>D?l na ?eleznou rudu - detaily</title>\n<h1>D?l na ?eleznou rudu</h1><p>?elezná ruda je hornina, minerál, který obsahuje ?elezo v takové chemické form?, která umo??uje jeho hospodárné získání hutnickými metodami. ?elezné rudy se zpravidla t??í hornickým zp?sobem. Jsou to jednak hlubinné doly nebo mnohem ?ast?ji povrchová t??ba.</p><p>Úpravárenskými pochody jako drcením v ?elis?ových a válcových drti?ích, praním a flotací se takto vyt??ená surová ruda zbavuje hlu?iny a dosáhne se vy??ího obsahu ?eleza. Takto upravená a obohacená ruda se dopravuje do hutních podnik?.</p>
+<title>Dùl na ¾eleznou rudu - detaily</title>\n<h1>Dùl na ¾eleznou rudu</h1><p>®elezná ruda je hornina, minerál, který obsahuje ¾elezo v takové chemické formì, která umo¾òuje jeho hospodárné získání hutnickými metodami. ®elezné rudy se zpravidla tì¾í hornickým zpùsobem. Jsou to jednak hlubinné doly nebo mnohem èastìji povrchová tì¾ba.</p><p>Úpravárenskými pochody jako drcením v èelis»ových a válcových drtièích, praním a flotací se takto vytì¾ená surová ruda zbavuje hlu¹iny a dosáhne se vy¹¹ího obsahu ¾eleza. Takto upravená a obohacená ruda se dopravuje do hutních podnikù.</p>
 factory_fish_pond_details
 <title>Chovný rybník - detaily</title>\n<h1>Chovný rybník</h1><p>Metody chovu T?ebo?ského kapra vycházejí z bohaté historie t?ebo?ského rybníká?ství. Vlastní výrobní cyklus T?ebo?ského kapra p?edstavuje dobu, která uplyne od výt?ru a? do prodeje tr?ních ryby. Základním principem je metoda odd?leného chovu ryb podle stá?í.</p><p>Celý proces za?íná v ?ízeném prost?edí na rybí líhni, kde probíhá um?lý výt?r, vá?kový pl?dek je pak vysazován do speciálních pl?dkových rybník? a dále je p?elovován do násadových a hlavních rybník?. Doba r?stu tr?ní ryby T?ebo?ského kapra trvá 3 anebo 4 roky.</p><p>Zcela zvlá?tní pozornost je v?nována chovu genera?ních ryb T?ebo?ského kapra, který probíhá odd?len? od chovu kapr? ur?ených ke konzumaci.</p>
+factory_Kohlegrube_details
+<title>Uhelný dùl</title>\n<h1>Uhelný dùl</h1>\n<p>Uhlí se vyu¾ívá k výrobì koksu pro vysoké pece a v tepelných elektrárnách.</p>
 factory_Kohlekraftwerk_details
-Uhlí se vyu¾ívá k výrobì koksu pro vysoké pece a v tepelných elektrárnách.
+<title>Tepelná elektrárna na uhlí</title>\n<h1>Tepelná elektrárna na uhlí</h1>\n\n<p>Spalováním uhlí se získává teplo potøebné pro ohøev vody a pøemìnu vody na páru. Pára roztáèí turbínu spojenou. Turbína je pomocí høídele spojena s generátorem. V generároru vzniká elektrický proud a ten je pak dále distribuován pomocí rozvodné sítì.</p>\n
+factory_Nutzwald_details
+<title>Hospodáøský les - detaily</title>\n<h1>Hozpodáøský les</h1>\n<p>Døevo je významnou hospodáøskou surovinou. Staví se z nìj domy, je surovinou pro výrobu papíru, slou¾í jako topivo.</p>\n<p>V hospodáøsky intenzivnì vyu¾ívaných lesích jsou vysazovány pøedev¹ím rychle rostoucí stromy. To vede ke vzniku monokultur.</p>\n<p>Nejbli¾¹í silná vichøice nás upozorní, jak jsme se mýlili. Na místì lesa je zem pokryta vývratem. A hned je co tì¾it.</p>
 factory_Oelbohrinsel_details
 Ropná plo¹ina slou¾í k tì¾bì ropy z moøského dna. Mù¾e být pevnì pøipevnìna ke dnu nebo plovat po hladinì.\nPomocí ropných plo¹in se tì¾í pøedev¹ím v mìlkých pobøe¾ních vodách pevniského ¹elfu.
+factory_Oelfeld_details
+<title>Ropné pole - detaily</title>\n<h1>Ropné pole</h1>\n<p>Ropné pole je tvoøeno nìkolika ropnými vrty na jednom místì. Tomu odpovídá i mno¾ství vytì¾ené ropy: Z nìkolika vrtù se dá vytì¾it víc najednou.</p>
+factory_Oelpumpe_details
+<title>Ropný vrt - detaily</title>\n<h1>Ropný vrt</h1>\n<p>Ropa je kapalnou smìsí uhlovodíkù. Vytì¾ená ropa je dopravena pomocí tankerù a ropovodù do rafinerie, kde dochází k jejímu zpracování.</p>\n<p>Na pevninì se tì¾í pomocí ropných vrtù. Ropný vrt poskytuje men¹í mno¾ství ropy, ne¾ ropné pole skládající se více vrtù.</p>
+factory_Papierfabrik_details
+<title>Papírna - detaily</title>\n<h1>Papírna</h1><p>Papír se vyrábí z rozdrceného døeva, ale také ze lnìného nebo bavlnìného odpadu. Samotný papír je velmi savý, proto se do nìj pøidávají látky omezující savost. Prùsvitnost papíru se odstraní pøidáním plniv - kaolinu nebo vápence.</p>\n<p>K výrobì papíru je tøeba znaèného mno¾ství vody, proto byly papírny stavìny v blízkosti øek.</p>
+factory_SaegewerkMHz_details
+<title>Stará pila - detaily</title>\n<h1>Stará pila</h1>\n<p>Na pile se z klád vyrábìjí trámy, fo¹ny a prkna.</p>\n<p>Z pøivezeného døeva se odstraní kùra a klády se na katru podélnì rozøe¾ou na po¾adované profily. Trámky, fo¹ny a prkna jsou pak po nìjaký èas ponechány venku aby døevo vyschlo a støídáním teplot a vlhkosti se "unavilo". Takto ponechané døevo se tolik nekroutí.</p>\n<p>Pily bývaly pohánìny vodní silou, proto je najdeme v blízkosti vodních tokù.</p>
 factory_Sandquarry_details
 Pískovny po sobì zanechávají ve volné krajinì památku ve formì prohlubní. V blískosti øek jsou tyto prohlubnì zaplnìné vodou a mohou slou¾it ke koupání.
 factory_Stahlwerk_details
 <title>Slévárna, ocelárna, vysoká pec</title>\n<h1>Vysoká pec</h1>\n<p>Vysoká pec je továrna vyrábející z ¾elezné rudy surové ¾elezo. K výrobì ¾eleza je kromì ¾elená rudy tøeba je¹tì koks vyrobený z koksovatelného uhlí a vápenec.</p>\n<p>Ve vysoké peci dochází redukci oxidù ¾eleza na surové ¾elezo. Tekuté surové ¾elezo je ihned dopravováno do oceláren.</p>\n<h1>Ocelárna</h1>\n<p>V ocelárnì se tekuté surové ¾elezo zbavuje v konvertorech pøimíchaného uhlíku a prvkù zpùsobujících køehkost, jako jsou fosfor a síra. Pøi výrobì legovaných druhù oceli se v závislosti na výsledném druhu oceli pøidávají legující pøímìsi, napø. chrom, vanad, mangan.</p>\n<h1>Slévárna</h1>\n<p>Ve slévárnì jsou pak z oceli vyrábìny odlitky po¾adovaných tvarù.</p>\n\n<p>Tato továrna je komplexním provozem. Obsahuje koksárnu, vysokou pec, ocelárnu a slévárnu na jednom místì.</p>\n
+factory_Stonequarry_details
+<title>Kamenolom - detaily</title>\n<h1>Kamenolom</h1>\n<p>Kámen je dùle¾itou surovinou pro stavebnictví. I kdy¾ dnes se ji¾ budovy z kamenných blokù nestaví, kámen se pou¾ívá ve formì ¹tìrku do betonu. Dal¹í vyu¾ití nachází kámen ve formì ¹tìrkového podkladu pod silnicemi a ¾eleznicemi.</p
+factory_TANKE_details
+<title>Èerpací stanice</title>\n<h1>Èerpací stanice</h1>\n<p>Na èerpací stanici doplníte benzin do svého vozu a hurá vstøíc dal¹ím kilometrùm.</p>\n<p>Jezdíte na naftu? Není. A zatím nebude.</p>
 Geokraftwerk_details
 Geotermální elektrárna vyu¾ívá energii zemského jádra. Do podzemí je pomocí vrtù vhánìna voda. Voda od horké skály pøijme teplo a vrací se jinými vrty zpìt na zemský povrch v podobì páry. Z páry je v odluèovaèi odstranìna voda a pára pak postupuje je¹tì èi¹tìní. Vyèi¹tìná pára pára  pohání turbínu.\nOdpadní teplo je pou¾ito pro vytápìní domù.\nGeotermální elektrárna se neobejde bez vydatného zdroje vody. To ostatnì ani uhelná nebo jaderná elektrárna .
 grain_windmill_details
@@ -728,6 +760,8 @@ Hochsitz1
 posed
 Hochsitz2
 posed
+moles
+krtiny
 rocks
 kamení
 See1
@@ -848,6 +882,10 @@ Palmtree6
 palma
 Palmtree7
 palma
+Pappel-1
+topol
+Pappel-2
+topol
 Tanne_1
 jedle
 Tanne_2
@@ -926,18 +964,48 @@ Autotransporter
 H-Trans nákladní v?z na auta
 Autotransportwagen
 TPI Lopomo vagón na auta
+BB1280
+BB 1280
+BB200
+BB 200
+Be5-7
+Be 5/7
+Blimp
+Vzducholoï bez výstu¾e
 Book_Trike
 tøíkolka na kusové zbo¾í
 Boxcar
 Vagón na kusové zbo¾í
+BR01
+BR 01
+Br118DR
+BR 118 DR
+Br234
+BR 234
+BR38
+BR 38
 BR38-Tender
 Tendr BR38
+BR39
+BR 39
+BR45
+BR 45
+Br614back
+BR 614, konec
+Br614car
+BR 614, støed
+Br614front
+BR 614
+BR85
+BR 85
 Bretteranhaenger
 WF Ultd. pøívìs na prkna
 Brettertransporter
 WF Ultd. nákl. auto na prkna
 Bretterwagen
 VT-V nákladní vagón na prkna
+BRV36
+BR V36
 Buchanhaenger
 S/H-T pøívìs na kusové zbo¾í
 Buchtrailer
@@ -962,8 +1030,12 @@ Cargosprinter-Mittel
 CargoSprinter - vagón
 Cargosprinter-Steuer
 CargoSprinter - zadní vùz
+CC7100
+CC 7100
 Cementtrailer
 Pøívìs na cement
+Class86
+Class 86
 Comet
 De Havilland 'Kometa'
 Cooling_Container
@@ -978,6 +1050,8 @@ DC-3
 Dacota DC-3
 Doubledeck_city_bus
 Dvoupatrový mìstský autobus
+DoubleDecker
+Dvoupatrový vagon
 EinheitsTender
 tendr
 EnCo_Bulk_Ship
@@ -1040,8 +1114,16 @@ Horses
 Koòské spøe¾ení
 Horsewoodcariage
 Vozík na døevo
+Hunslet
+Hunslet Linden 0-6-0
 HVPosttransporter
 DIBU/H-Trans po¹tovní dodávka
+ICE_TD-back
+ICE, zadní èást
+ICE_TD-car
+ICE, støed
+ICE_TD-front
+ICE, pøední èást
 JR_9600
 JR 9600
 JR_9600_tender
@@ -1090,6 +1172,10 @@ Muellschiff
 Loï na pøepravu odpadu
 NeuOelwagen
 Cisterna na ropu/benzín (80m2)
+NS1000
+NS 1000
+NS1600
+NS 1600
 Oelanhaenger
 H-T p?ípojná cist. na ropu/benzín
 Oelwagen
@@ -1138,6 +1224,10 @@ Sandtransporter
 WF Ultd. nákl. auto na sypké zbo?í
 schooner
 Osobní ¹kuner
+SD40-2-back
+SD 40, 2. díl
+SD40-2-front
+SD 40
 setra_S10
 autobus Setra S10
 SlowFerry
@@ -1158,14 +1248,24 @@ Stoneanhaenger
 WF Ultd. pøívìs na sypké zbo¾í
 Stonetransporter
 WF Ultd. nákl. auto na sypké zbo¾í
+T13
+Bennhardt T13
 T21_bus
 autobus T21
+T24
+Bennhardt T24
 Tanklastzug
 H-Trans cisterna na ropu/benzín
 Tatra-T4
 Tatra T4
 Tatra-T4_Wagon
 Tatra T4 (vle??ák)
+TB13
+BT13 - vleèný vùz
+TB24
+TB24 - vleèný vùz
+teaclipper
+clipper - rychlá plachetnice
 TPBeiwagen
 TPI VT98 osobní vagón
 TPPassagierwagen
@@ -1186,6 +1286,12 @@ Wastecarriage
 Vùz na odpad
 wastewagon
 vagon na odpad
+X2000back
+X 2000, konec
+X2000car
+X 2000, støed
+X2000front
+X 2000
 XMail
 V?z jednokolejky pro p?epravu po?ty
 XTest
@@ -1205,13 +1311,13 @@ concrete_sleeper_track
 dirt_road
 Blátivá cesta
 elevated_monorail
-Vysutá jednokolejka
+Vyvý¹ená jednokolejka
 gavel_road
 ¹tìrková silnice
 Kanal
 Prùplav
 MaglevTrack
-Magnetická tra?
+Magnetická tra»
 MaglevTrackElevated
 Visutá magnetická tra»
 mip_cobblestone_road

@@ -5,7 +5,7 @@
 #                              Language: pl Polski                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                            Date Created: 7.06 2012                           #
+#                            Date Created: 1.07 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                       Bartlomiej Weclewski - BarthVader                      #
@@ -76,14 +76,16 @@ Ratusz
 Ratusz
 04_CITY_C
 Ratusz
+10_WOHN
+Ko¶ció³ pw. ¶w. £ukasza\n\nMa³a, ale rozwijaj±ca siê parafia, przyci±gaj±ca nowych wiernych i turystów.
 1930AirDepot
 Hangar (1930)
 1headquarter
 Siedziba twojej korporacji.
 2headquarter
-Siedziba twojej korporacji!
+Siedziba wielkiej korporacji\n
 3headquarter
-Imponuj±ca siedziba twojej korporacji!
+Siedziba miêdzynarodowej korporacji
 A1_ALTE_KIRCHE
 S³ynny stary ko¶ció³.\nWszyscy powinni zobaczyæ\nten wspania³y budynek z\nczasów króla ¦wieczka.\n
 A2_SCHLOSS1
@@ -100,6 +102,8 @@ AirDepot
 Hangar (1900)
 AirportShed1930
 Poczta lotnicza (1901)
+AirStop
+Rêkaw
 AirTerminal477
 Terminal (1950)
 Avila_Big_StationBlg
@@ -295,15 +299,13 @@ Ambulans
 FordT
 Ford T
 green_car
-Zielony samochód
+Zielony sedan
 Motorrad
 Motocykl
 orange_bus
 Gimbus
-Roadster
-Automobil
 yellow_car
-¯ó³ty samochód
+¯ó³ty sedan
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
 factory_cannery_details
@@ -457,7 +459,7 @@ Mleko
 Moebel
 Meble
 None
-brak
+nic
 Oel
 Ropa
 Passagiere
@@ -493,7 +495,7 @@ Budka my¶liwska
 Hochsitz2
 Budka my¶liwska
 moles
-Kretowisko
+Kretowiska
 rocks
 Ska³y
 See1
@@ -509,7 +511,7 @@ Owce
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Couple
-Zakochani\n\nZakochani s± w¶ród nas, jak ¶piewa³a Helena Majdaniec... Podgl±danie ich raczej nie jest zbyt kulturalne, wiêc lepiej wybudowaæ jak±¶ liniê.
+Zakochani\n\nZakochani s± w¶ród nas, jak ¶piewa³a Helena Majdaniec... Podgl±danie ich raczej nie jest zbyt kulturalne, wiêc lepiej zaj±æ siê czym¶ innym, np. wybudowaæ jak±¶ liniê.
 Cyclist
 Rowerzysta\n\nLech Janerka "jedzie na rowerze do byle gdzie". Ten osobnik zapewne te¿, bo gdyby wiedzia³ gdzie jechaæ, skorzysta³by z komunikacji publicznej.
 pedestrian_1
@@ -1017,6 +1019,6 @@ Tor na podk³adach drewnianych
 #__________________________________way-object___________________________________
 #__________________________________way-object___________________________________
 HighSpeedOverheadpower
-Nowoczesna trakcja
+Nowoczesna sieæ trakcyjna
 SlowOverheadpower
-Linia trakcyjna
+Sieæ trakcyjna
