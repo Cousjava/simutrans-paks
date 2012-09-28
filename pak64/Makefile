@@ -54,6 +54,7 @@ archives: tar zip
 tar: $(DESTFILE).tbz2
 zip: $(DESTFILE).zip
 
+
 $(DESTFILE).tbz2: $(PAKDIR)
 	@echo "===> TAR $@"
 	@tar cjf $@ $(DESTDIR)
@@ -64,11 +65,13 @@ $(DESTFILE).zip: $(PAKDIR)
 
 copy:
 	@echo "===> COPY"
+	@rm -rf $(PAKDIR)
 	@mkdir -p $(PAKDIR)/sound $(PAKDIR)/text $(PAKDIR)/config $(PAKDIR)/scenario
 	@cp -p compat/compat.tab $(PAKDIR)
 	@cp -p sound/* $(PAKDIR)/sound
 	@cp -p config/* $(PAKDIR)/config
-	@cp -p scenario/* $(PAKDIR)/scenario
+	@cp -rp scenario/* $(PAKDIR)/scenario
+	@find $(PAKDIR)/scenario "(" -name ".svn" ")" -depth -exec rm -rf {} \;
 	@cp -p pak.text/* $(PAKDIR)/text
 
 $(DIRS64):
