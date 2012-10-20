@@ -254,6 +254,7 @@ intro_year = 1977
 intro_month = 9
 retire_year = 2027
 Constraint[Prev][0]=SD40-2-front
+Constraint[Prev][1]=SD40-2-back
 EmptyImage[S]=sd40-2.0.7
 EmptyImage[E]=sd40-2.0.5
 EmptyImage[SE]=sd40-2.0.6
