@@ -5,7 +5,7 @@
 #                             Language: en English                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 10.06 2012                           #
+#                           Date Created: 21.10 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Alexander Brose - AlexB                           #
@@ -66,8 +66,8 @@
 #     note: Need more lt translators. Eiti ? http://simutrans-germany.com/     #
 #                               Florian - floppy                               #
 #                                    note:                                     #
-#                            Günter Beine - gebeine                            #
-#                        note: maintainer pak128.german                        #
+#                                   - gebeine                                  #
+#                        note: maintainer PAK128.german                        #
 #                        Lorenz Van Damme - gforcetheone                       #
 #                                    note:                                     #
 #                          James E. Petts - jamespetts                         #
@@ -338,6 +338,8 @@ Goods_StationBlg
 Warehouse
 Gymnasium
 High school/grammar school\n\nSince Simutrans runs on smartphone, even less studying is done there!
+HallBusStop
+Full covered stop
 IND_00_01
 This warehouse is used for storing wares... or shooting spy thriller movies.
 IND_00_03
@@ -382,6 +384,8 @@ LeuchtturmShipStop
 Lighthouse Ship Stop
 Lighthouse
 Lighthouse\n\nOnce the brightest on the shore, but nowdays only preserved to server as mobile base station and to sell postcards to tourists.
+LongBusStop
+Long Bus Stop
 MainTerminal1930
 Main terminal building (1930)
 MHzSmallStation
@@ -891,17 +895,17 @@ Road tunnel
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
-DB BR 103
+Haru Br103
 1Ben140
-DB BR 140
+Benn Br140 
 1Dampflokomotive
 H-Trans 0-4-0T
 1Diesellokomotive
-H-Trans BR212
+H-Trans Br212
 1Ellok
-H-Trans BR103
+H-Trans Hui
 1Garrat
-Garratt
+RvG Garratt
 1TPEllok
 Empire F7 A
 221A
@@ -909,31 +913,31 @@ JaCo 221A 4-6-0
 221A_tender
 JaCo 221A Tender
 2Ben155
-DR BR250
+Abro Br250
 2Diesellokomotive
-DB class 218
+H-Trans Br218
 2Ellok
 H-Trans Tigress I
 2Garrat
-Garratt (middle)
+RvG Garratt (middle)
 3Ben185
-DB BR185
+Abro Br185
 3Diesellokomotive
-H-Trans BR365
+H-Trans Br365
 3Garrat
-Garratt (rear)
+RvG Garratt (rear)
 707
-Boeing 707
+RvG 707
 A3-5
-Swiss federal Railways A 3/5
+JaCo A3/5
 A3-5_tender
-Tender for SBB A 3/5
+JaCo A3/5 Tender
 A380
-Airbus A380
+RvG A380
 Adler
-Locmoto Eagle
+Erin Eagle
 AdlerPersonenwagen
-Adler passenger car
+Eagle car
 Autotrailer
 Car Trailer
 Autotransportanhaenger
@@ -947,15 +951,17 @@ JaCo BB1280
 BB200
 Empire BB200
 Be5-7
-BLS Be 5/7
+Empire Be 5/7
+Blimp
+MHz Blimp
 Book_Trike
 Parcel delivery trike
 Boxcar
 MJHN Box Car
 BR01
-SingCo BR01 4-6-2
+SingCo Br01 4-6-2
 Br118DR
-Sojo Group BR118DR
+Sojo Group Br118
 Br234
 Brose BR234
 BR38
@@ -993,7 +999,7 @@ Serj/H-Trans goods van
 Buchwagen
 VT Vienna Freight car
 Buessig
-Ikarus Model B
+H-Trans Ikarus
 BuessingLinie
 MHz Long Bus
 Bulkcarriage
@@ -1023,7 +1029,7 @@ Combino GT-4S (rear)
 CombinoShortE(T)
 Combino GT-4S Diesel
 Comet
-De Havilland 'Comet'
+RvG De Havilland 'Comet'
 Concept1Front
 Concept 1
 Concept1Mail
@@ -1040,14 +1046,18 @@ Concept2Pass
 Concept 2 Passenger Waggon
 Concept2Rear
 Concept 2 Rear Engine
+Concorde
+RvG Concorde
 Cooling_Container
 Refrigerated car
+Cooling_Truck
+Serj Cooling Truck
 Cooling_Waggon
 Food cooling waggon
 DaimlerStoll
-DaimlerCo Bus
+RvG Stoll Bus
 DC-3
-MHz Airframes MC-3
+RvG MC-3
 Deponielaster
 Waste Truck
 Deponielaster2
@@ -1059,7 +1069,7 @@ Double-decker Passenger Car
 E44
 Empire E44
 Eb3-5
-Swiss federal Railways Eb 3/5
+JaCo Eb3/5 4-6-0
 Ed2x2
 JaCo Saker 0-4-4-0
 EinheitsTender
@@ -1113,7 +1123,7 @@ Passenger Clipper
 Grossraumwagen
 Empire "Alto" Passenger Car
 Guppy
-Aero Spacelines 377SGT Super Guppy
+RvG 377SGT Super Guppy
 H-Trans-Pantheress
 H-Trans Pantheress
 H-Trans-Pantheress-Back
@@ -1127,13 +1137,13 @@ H-Trans Tigress II (rear)
 H-Trans-Tigress-II-Front
 H-Trans Tigress II
 Hadley-Page-V1500
-RavenCo V1500 Goose
+RvG V1500 Goose
 Heavy_ore_truck
 H1750 Heavy Dump Truck
 HJMAvia
 HJM Avia Flat-nose Semi
 Hochbordwagen
-Ravenco Hopper Car
+RvG Hopper Car
 Holzanhaenger
 H-Trans Log Trailer
 Holztrailer
@@ -1154,26 +1164,30 @@ Horses
 Carriage Team
 Horsewoodcariage
 Stake Wagon
+Hunslet
+MHz Hunslet 0-4-0T
 HVPosttransporter
 Eagle HVP Mail Truck
 ICE_TD-back
-TD (back)
+RvG TD (back)
 ICE_TD-car
-TD (passenger car)
+RvG TD (car)
 ICE_TD-front
-TD ICE
+RvG ICE TD
 IL-76
-Ilyushin IL-76 Mail Plane
+MHz Airframes IL-76 Mail
 JNR_C11
-RavenCo JNR-C11 2-8-4
+RvG JNR-C11 2-8-4
 JR_9600
-RavenCo JR9600 2-8-0
+RvG JR9600 2-8-0
 JR_9600_tender
-RavenCo JR-9600 Tender
+RvG JR-9600 Tender
 Ju52
-RavAir Ju-52 Juliet
+RvG Ju-52
+JumboCruiser
+SimCo Jumbo Cruiser
 JumboJet
-RavAir BN-747D
+RvG 747D
 kkStB_tender
 WEC kkStB Tender
 kkStB110
@@ -1197,9 +1211,9 @@ MHz Car Carrier
 Laaekks553_b
 MHz Car Carrier Companion
 Lockhead_Tristar
-MHz M-1011 TriStar
+MHz Airframes M-1011 TriStar
 Lockheed10-Electra
-Simlock S-188 Electra
+MHz Airframes S-188 Electra
 logs
 Logs
 Lowa
@@ -1211,7 +1225,7 @@ TMC Long-nose Semi
 Mailcontainerwagon
 MSP Mail Car
 MailExpress
-Empire Mail-Prop
+MHz Airframes Red Mail
 Mailwagon
 Empire "Alto" Mail Car
 Milk_Truck
@@ -1219,7 +1233,7 @@ Milk truck
 Milk_Waggon
 Milk car
 Moebelschiff
-RavenCo Crate Freighter
+RvG Crate Freighter
 Moebelwagen
 DMC Boxcar
 Muellschiff
@@ -1303,7 +1317,7 @@ Empire Bulk-Tip Trailer
 Stonetransporter
 Empire Dump Truck
 SuperConstellation
-RavenCo R-1049 Super Constellation
+RvG R-1049 Super Constellation
 T13
 Bernhardt-Empire T-13
 T21_bus
@@ -1323,11 +1337,11 @@ T-24 (car)
 teaclipper
 Freight Clipper
 TPBeiwagen
-Brose TP-5200 (rear)
+Abro TP-5200 (rear)
 TPPassagierwagen
 Empire-Osaka Passenger Car
 TPSchienenbus
-Brose TP-5200
+Abro TP-5200
 Tram_GT6_Ende
 Autocar GT-6 (rear)
 Tram_GT6_Kopf
@@ -1340,6 +1354,8 @@ Ucy
 MHz Pellet Car Mk. III
 VolvoFH12
 Ikarus FH12 Flat-nose Semi
+wastewagon
+SimCo Waste Car
 X2000back
 X2000 Rear
 X2000car
@@ -1350,6 +1366,8 @@ XMail
 Kirayami X-1 Mail Car
 XTest
 Kirayami X-1
+Zeppelin
+RvG Zeppelin
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road

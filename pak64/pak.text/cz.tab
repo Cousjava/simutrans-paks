@@ -5,7 +5,7 @@
 #                             Language: cz Cestina                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                            Date Created: 1.07 2012                           #
+#                           Date Created: 21.10 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
@@ -17,6 +17,8 @@
 #                        Václav Macùrek - VaclavMacurek                        #
 #                                    note:                                     #
 #                                   - hernajs                                  #
+#                                    note:                                     #
+#                              Honza Kobel - jk271                             #
 #                                    note:                                     #
 #                           Jiri Svoboda - jxsvoboda                           #
 #                                    note:                                     #
@@ -288,10 +290,14 @@ IND_00_06
 Továrna na ¹roubky, matky, podlo¾ky, vruty, høebíky, kramle, skoby, pøipínáèky, øetìzy a øetízky, háèky a ostatní ¾eleznou drobotinu.
 IND_00_10
 Stavební firma P a M, s.r.o.\nZnaèných úspìchù dosáhla díky novému stavitelskému postupu "a je to". \nVlevo se nacházejí gará¾e na tì¾kou stavební techniku.
+IND_00_12
+Továrna na baterky
 IND_00_14
 Výrobna klimatizací, vìtrákù a vzduchovodù. 
 IND_00_16
 Kdysi spalovna odpadu, dnes muzeum odpadkù
+IND_00_17
+Továrna na výrobu biftekù.
 IND_01_01
 Odstavné parkovi¹tì. 
 IND_01_03
@@ -310,8 +316,12 @@ IND_01_11
 Továrna na tyèinky\n"Venus"\n
 IND_01_12
 Továrna.\n\nHlavnì na ply¹ové medvídky\n
+IND_01_13
+Teplárna\n Spaluje mazut i hnìdé uhlí.
 IND_01_15
 Továrna na absolutno\n
+IND_01_16
+Tajná továrna\nNìco se tu vyrábí, o èem¾ svìdèí i kouø unikající z komína a obèasný hluk lisù a obrábìcích strojù. Ale co tu vzniká nikdo zatím netu¹í. A¾ jednou z budovy vyjede ¹lapací autobus, budou se cestující divit.
 IND_02_01
 Skládka stavebního materiálu pro stavbu plovoucí dálnice
 IND_02_02
@@ -432,6 +442,8 @@ RES_02_07
 Domek s pøístavbami.\n\nPo dùkladném zalévání dvojice stromù vyrostla i pøilehlá èást domu. Kdyby jej zalévali i z druhé strany, vyrostl by dùm celý. 
 RES_02_16
 Prosklené stìny poskytují dostatek svìtla po celý den. Kdyby se tak dalo pøed ním v létì schovat.
+RES_02_20
+Cachtání dìtí v bazénku na støe¹e zalévá okolní zeleò i náhodné kolemjdoucí.
 RES_10_01
 Jednopatrový dùm s pultovou støechou.\n\nVìt¹í pøesah støechy chrání místnosti ve vrchním patru pøed úporným letním sluncem.
 RES_10_02
@@ -448,6 +460,8 @@ RES_10_10
 Obytné domy\n\nNa pøedzahrádce by chtìlo posekat trávu.
 RES_10_11
 Obytné domy\n\nJabloò na dvorku sice plodí, ale trochu svìtla navíc by ne¹kodilo.
+RES_10_12
+Stará tiskárna.\nKdysi se zde tiskly knihy, dnes tu sídlí muzeum knihtisku.
 RES_10_14
 Obutné domy\n\nKdy¾ napadne hodnì snìhu, vychází se ven s prvního patra. Odpadá tak práce s odklízením.
 RES_10_15
@@ -528,30 +542,44 @@ yellow_car
 #__________________________________dummy_info___________________________________
 factory_Aufwindkraftwerk_details
 Tento typ elektrárny vyu¾ívá rozdílných hustot teplého a studeného vzduchu. Na zemi okolo komína se nachází rozlehlý kolektor. V kolektoru - obrovském skleníku - se ohøívá vzduch. Ohøátý vzduch stoupá komínem a vytváøí podtlak roztáèející turbíny. Generátory pak pøemìní mechanickou energii na elektrickou.\nNaspod kolektoru se nachází hnota schopná akumulovat teplo aby byla zaji¹tìna výroba elektrické energie i pøes noc.
+factory_Autohaus_details
+<title>Autosalon - detaily</title>\n<h1>Autosalon</h1> \n<p>Zde se prodávají vyrobené automobily. Obèas se tu konají i pøehlídky nových modelù.</p>
+factory_Autohersteller_details
+<title>Automobilka - detaily</title>\n<h1>Automobilka</h1> \n<p>K výrobì automobilù je tøeba spousta pøesnì opracovaných souèástek z rùzných materiálù. Døíve si automobilky vyrábìly vìt¹inu z nich samy, dnes je kupují od dodavatelù.</p> <p>Také skladovací kapacity pro¹ly v posledních letech velkými zmìnami: Takøka neexistují a co se doveze po pár hodinách míøí pøímo do výroby. To ¹etøí náklady na výstavbu a údr¾bu skladù. Staèí v¹ak aby chybìl jeden typ souèástky a stojí celý provoz.</p>
 factory_bakery_details
 <title>Pekárna - detaily</title>\n<h1>Pekárna</h1>\n<p>První doklady o obilí pro úèely stravování jsou dolo¾eny od samého poèátku zemìdìlství, ba je¹tì do dob sbìraèù. Ov¹em co bylo nalezeno jako obilí, by nám dnes pøipadalo jen jako tráva: a) ¹lo o ¹irou smìs zrn, b) obilí, jak je známe dnes, pro¹lo znaènou ¹lechtitelskou promìnou.</p><p>Podstatným milníkem v historii peèiva byl pøechod od peèení na kameni k vynálezu pece: Ta se svou tepelnì akumulaèní schopností pøinesla vy¹¹í teploty, rovnomìrnìj¹í peèení ze v¹ech stran, trvalej¹í teplo s mo¾ností peèení rùzných peèiv jak teplota po vyhøátí a ometení uhlík? zvolna klesá, ménì promìnlivé prostøedí a vneposlední øad? také vy¹¹í úèinnost a úspory energie, paliva.</p><p>Za hlavní evropské obiloviny pro potraviny lze ozna?it ¾ito a p¹enici. S postupem doby je vidìt nárùst podílu vyu¾ívání p¹enice na úkor ¾ita: Podíl svìtlého p¹eni?ného peèiva se dlouhodob? zvy¹uje. S módou racionální vý¾ivy v západním svìtì lze pozorovat znovuobjevování tmavého peèiva, tedy ¾itné mouky a dal¹ích alternativ.</p>\n
 factory_brewery_details
 <title>Pivovar - detaily</title>\n<h1>Pivovar</h1>\n<p>Pivovar je technologický celek vyrábìjící pivo. Pivovar je obvykle rozdìlen do nìkolika samostatných provozù, které odpovídají jednotlivým fázím výroby. Velikost pivovaru se mù¾e pohybovat od malého domácího témìø kuchyòského provozu a¾ po velký prùmyslový podnik. Variabilita existuje i v konkrétní technologii vaøení piva. V Èesku ale prakticky v¹echny pivovary u¾ívají metodu spodního kva¹ení a vyrábìjí piva plzeòského typu.</p>
+factory_Buchgrosshandel_details
+<title>Kni¾ní velkoobchod - detaily</title>\n<h1>Kni¾ní velkoobchod</h1> \n<p>V kni¾ním velkoobchodu prodávají nejen knihy ale i se¹ity a nástìnné kalendáøe.</p>
 factory_cannery_details
-<title>Konzervárna - detaily</title>\n<h1>Konzervárna</h1>\n<p>Konzerva pochází od slova konzervovat, jedná se o ka?dý zásobník ur?ený pro dlouhodobé skladování a konzervaci netrvanlivých komodit, zejména potravin, a to v b??ných teplotních a vlhkostních podmínkách.</p><p>?asto se jedná o plechovou pikslu nebo oby?ejnou ?irou sklen?nou nádobu opat?enou plechovým ví?kem. Krom? vlastní konzervace potravin konzerva také slou?í k bezpe?nému transportu, k lep?ímu uskladn?ní p?íslu?né komodity, nej?ast?ji se jedná o potraviny.</p><p>V p?evá?né mí?e se jedná o válcové tvary (nej?ast?ji pro ovoce, barvy, oleje atd.), ve tvaru kvádru (pro maso, paliva v kanystrech atd.), malé podlouhlé nádobky pro mo?ské rybi?ky (tzv. olejovky) atd. Kovové konzervy se vyráb?jí nej?ast?ji z ocelového plechu pota?eného cínem, nebo nov?ji z hliníkových slitin.</p>\n
+<title>Konzervárna - detaily</title>\n<h1>Konzervárna</h1>\n<p>Konzerva pochází od slova konzervovat, jedná se o ka¾dý zásobník urèený pro dlouhodobé skladování a konzervaci netrvanlivých komodit, zejména potravin, a to v bì¾ných teplotních a vlhkostních podmínkách.</p><p>Èasto se jedná o plechovou pikslu nebo obyèejnou èirou sklenìnou nádobu opatøenou plechovým víèkem. Kromì vlastní konzervace potravin konzerva také slou¾í k bezpeènému transportu, k lep¹ímu uskladnìní pøíslu¹né komodity, nejèastìji se jedná o potraviny.</p><p>V pøevá¾né míøe se jedná o válcové tvary (nejèastìji pro ovoce, barvy, oleje atd.), ve tvaru kvádru (pro maso, paliva v kanystrech atd.), malé podlouhlé nádobky pro moøské rybièky (tzv. olejovky) atd. Kovové konzervy se vyrábìjí nejèastìji z ocelového plechu pota¾eného cínem, nebo novìji z hliníkových slitin.</p>\n
 factory_Cementmill_details
 <title>Cementárna - detaily</title>\n<h1>Cementárna</h1>\n<p>Cement se vyrábí z vápence, slínu, køemièitého písku a dal¹ích pøísad. Suroviny jsou drceny a pak ohøívány a¾ na 1300°C v rotaèních pecích. Po ochlazení je mo¾no plnit cement do pytlù. </p>
 factory_Concretefactory_details
 <title>Betonárka - detaily</title>\n<h1>Betonárka</h1><p>Beton je umìlý slepenec a patøí mezi nejpou¾ívanìj¹í kompozitní materiály. Nejèastìj¹í forma je tzv. cementový beton, kde je pojivem cement a plnivem kamenivo; dal¹ím materiálem pro výrobu je voda. Kromì cementového betonu existuje je¹tì asfaltový beton, co¾ je materiál, ze kterého jsou vyrábìny asfaltové vozovky.</p>
 factory_cow_farm_details
-<title>Kravín - detaily</title>\n<h1>Kravín</h1><p>Zde se chovají krávy pro maso a nebo pro mléko. Vedle prasete je tur domácí jedním z neju?ite?n?j?ích chovných zví?at.</p>
+<title>Kravín - detaily</title>\n<h1>Kravín</h1><p>Zde se chovají krávy pro maso a nebo pro mléko. Vedle prasete je tur domácí jedním z neju¾iteènìj¹ích chovných zvíøat.</p>
 factory_dairy_details
-<title>Mlékárna - detaily</title>\n<h1>Mlékárna</h1><p>Mlékárna je továrna, ve které se zpracovává mléko na velké mno?ství produkt?. Nap?. jogurt byl vymy?len v Radlické mlékárn? na Smíchov?. N?kolik l?i?ek jahodové marmelády na povrchu jogurtu m?lo zabránit vytvá?ení plísní na jogurtu.</p>
+<title>Mlékárna - detaily</title>\n<h1>Mlékárna</h1><p>Mlékárna je továrna, ve které se zpracovává mléko na velké mno¾ství produktù. Napø. jogurt byl vymy¹len v Radlické mlékárnì na Smíchovì. Nìkolik l¾ièek jahodové marmelády na povrchu jogurtu mìlo zabránit vytváøení plísní na jogurtu.</p>
 factory_Druckerei_details
-<title>Tiskárna - detaily</title>\n<h1>Tiskárna</h1><p>Polygrafie je výrobní obor, který zpracovává a tiskem rozmno?uje textové a obrazové p?edlohy. Zahrnuje tyto základní výrobní fáze: zhotovování tiskových forem, tisk, dokon?ovací výroba a p?idru?ené odborné ?innosti.</p>
+<title>Tiskárna - detaily</title>\n<h1>Tiskárna</h1><p>Polygrafie je výrobní obor, který zpracovává a tiskem rozmno¾uje textové a obrazové pøedlohy. Zahrnuje tyto základní výrobní fáze: zhotovování tiskových forem, tisk, dokonèovací výroba a pøidru¾ené odborné èinnosti.</p>
 factory_Erzbergwerk_details
 <title>Dùl na ¾eleznou rudu - detaily</title>\n<h1>Dùl na ¾eleznou rudu</h1><p>®elezná ruda je hornina, minerál, který obsahuje ¾elezo v takové chemické formì, která umo¾òuje jeho hospodárné získání hutnickými metodami. ®elezné rudy se zpravidla tì¾í hornickým zpùsobem. Jsou to jednak hlubinné doly nebo mnohem èastìji povrchová tì¾ba.</p><p>Úpravárenskými pochody jako drcením v èelis»ových a válcových drtièích, praním a flotací se takto vytì¾ená surová ruda zbavuje hlu¹iny a dosáhne se vy¹¹ího obsahu ¾eleza. Takto upravená a obohacená ruda se dopravuje do hutních podnikù.</p>
 factory_fish_pond_details
-<title>Chovný rybník - detaily</title>\n<h1>Chovný rybník</h1><p>Metody chovu T?ebo?ského kapra vycházejí z bohaté historie t?ebo?ského rybníká?ství. Vlastní výrobní cyklus T?ebo?ského kapra p?edstavuje dobu, která uplyne od výt?ru a? do prodeje tr?ních ryby. Základním principem je metoda odd?leného chovu ryb podle stá?í.</p><p>Celý proces za?íná v ?ízeném prost?edí na rybí líhni, kde probíhá um?lý výt?r, vá?kový pl?dek je pak vysazován do speciálních pl?dkových rybník? a dále je p?elovován do násadových a hlavních rybník?. Doba r?stu tr?ní ryby T?ebo?ského kapra trvá 3 anebo 4 roky.</p><p>Zcela zvlá?tní pozornost je v?nována chovu genera?ních ryb T?ebo?ského kapra, který probíhá odd?len? od chovu kapr? ur?ených ke konzumaci.</p>
+<title>Chovný rybník - detaily</title>\n<h1>Chovný rybník</h1><p>Metody chovu Tøeboòského kapra vycházejí z bohaté historie tøeboòského rybníkáøství. Vlastní výrobní cyklus Tøeboòského kapra pøedstavuje dobu, která uplyne od výtìru a¾ do prodeje tr¾ních ryby. Základním principem je metoda oddìleného chovu ryb podle stáøí.</p><p>Celý proces zaèíná v øízeném prostøedí na rybí líhni, kde probíhá umìlý výtìr, váèkový plùdek je pak vysazován do speciálních plùdkových rybníkù a dále je pøelovován do násadových a hlavních rybníkù. Doba rùstu tr¾ní ryby Tøeboòského kapra trvá 3 anebo 4 roky.</p><p>Zcela zvlá¹tní pozornost je vìnována chovu generaèních ryb Tøeboòského kapra, který probíhá oddìlenì od chovu kaprù urèených ke konzumaci.</p>
+factory_fish_swarm_details
+<title>Rybí hejno - detaily</title>\n<h1>Rybí hejno</h1> \n<p>V místech v moøi, kde dochází k mísení teplých a studených moøských proudù jsou vhodné podmínky pro výskyt planktonu. A kde je plankton, tam jsou i hejna ryb.</p>
+factory_Geokraftwerk_details
+<title>Geotermální elektrárna - detaily</title>\n<h1>Geotermální elektrárna</h1> \n<p>Geotermální elektrárna vyu¾ívá energii zemského jádra. </p> <p>Teplo nahromadìné v zemské kùøe je pøedáváno vodì vhánìné vrty pod zemský povrch. Hluboko pod zemí se voda ohøívá. Ohøátá voda nebo vodní pára se dopravuje na zemský povrch a zde roztáèí turbínu. Voda z turbíny smìøuje opìt pod zem. Pøed tím se mù¾e je¹tì pou¾ít k vytápìní domù v zimním období.</p> <p>Geotermální elektrárna potøebuje stálý pøísun vody, aby bylo co ohøívat. Pod zem se vpou¹»í více vody ne¾ jde na povrch, nebo» pod zemí dochází ke ztrátám.</p>
 factory_Kohlegrube_details
 <title>Uhelný dùl</title>\n<h1>Uhelný dùl</h1>\n<p>Uhlí se vyu¾ívá k výrobì koksu pro vysoké pece a v tepelných elektrárnách.</p>
 factory_Kohlekraftwerk_details
 <title>Tepelná elektrárna na uhlí</title>\n<h1>Tepelná elektrárna na uhlí</h1>\n\n<p>Spalováním uhlí se získává teplo potøebné pro ohøev vody a pøemìnu vody na páru. Pára roztáèí turbínu spojenou. Turbína je pomocí høídele spojena s generátorem. V generároru vzniká elektrický proud a ten je pak dále distribuován pomocí rozvodné sítì.</p>\n
+factory_Marketplace_details
+<title>Tr¾i¹tì - detaily</title>\n<h1>Tr¾i¹tì</h1> \n<p>Místo pravidelných trhù. Nakoupíte zde v¹emo¾né potraviny: Od mouky, piva a¾ po rùzné druhy ryb.</p>
+factory_Materialswholesale_details
+title>Velkoobchod s materiálem - detaily</title>\n<h1>Velkoobchod s materiálem</h1> \n<p>Ve zdej¹ím velkoobchodu nakoupíte materiál na stavbu domu. Nic není dokonalé: cihly, písek a vápno zatím nejsou k dostání. </p>
 factory_Nutzwald_details
 <title>Hospodáøský les - detaily</title>\n<h1>Hozpodáøský les</h1>\n<p>Døevo je významnou hospodáøskou surovinou. Staví se z nìj domy, je surovinou pro výrobu papíru, slou¾í jako topivo.</p>\n<p>V hospodáøsky intenzivnì vyu¾ívaných lesích jsou vysazovány pøedev¹ím rychle rostoucí stromy. To vede ke vzniku monokultur.</p>\n<p>Nejbli¾¹í silná vichøice nás upozorní, jak jsme se mýlili. Na místì lesa je zem pokryta vývratem. A hned je co tì¾it.</p>
 factory_Oelbohrinsel_details
@@ -562,6 +590,8 @@ factory_Oelpumpe_details
 <title>Ropný vrt - detaily</title>\n<h1>Ropný vrt</h1>\n<p>Ropa je kapalnou smìsí uhlovodíkù. Vytì¾ená ropa je dopravena pomocí tankerù a ropovodù do rafinerie, kde dochází k jejímu zpracování.</p>\n<p>Na pevninì se tì¾í pomocí ropných vrtù. Ropný vrt poskytuje men¹í mno¾ství ropy, ne¾ ropné pole skládající se více vrtù.</p>
 factory_Papierfabrik_details
 <title>Papírna - detaily</title>\n<h1>Papírna</h1><p>Papír se vyrábí z rozdrceného døeva, ale také ze lnìného nebo bavlnìného odpadu. Samotný papír je velmi savý, proto se do nìj pøidávají látky omezující savost. Prùsvitnost papíru se odstraní pøidáním plniv - kaolinu nebo vápence.</p>\n<p>K výrobì papíru je tøeba znaèného mno¾ství vody, proto byly papírny stavìny v blízkosti øek.</p>
+factory_Saegewerk_details
+<title>Pila - detaily</title>\n<h1>Pila</h1> \n<p>S pøíchodem parního stroje a posléze i elektrické energie se stala závislost pil na blízkosti vodních tokù minulostí. Proto¾e na blízku není voda, bylo nutné zøídit u pily po¾ární nádr¾.</p>
 factory_SaegewerkMHz_details
 <title>Stará pila - detaily</title>\n<h1>Stará pila</h1>\n<p>Na pile se z klád vyrábìjí trámy, fo¹ny a prkna.</p>\n<p>Z pøivezeného døeva se odstraní kùra a klády se na katru podélnì rozøe¾ou na po¾adované profily. Trámky, fo¹ny a prkna jsou pak po nìjaký èas ponechány venku aby døevo vyschlo a støídáním teplot a vlhkosti se "unavilo". Takto ponechané døevo se tolik nekroutí.</p>\n<p>Pily bývaly pohánìny vodní silou, proto je najdeme v blízkosti vodních tokù.</p>
 factory_Sandquarry_details
@@ -572,6 +602,8 @@ factory_Stonequarry_details
 <title>Kamenolom - detaily</title>\n<h1>Kamenolom</h1>\n<p>Kámen je dùle¾itou surovinou pro stavebnictví. I kdy¾ dnes se ji¾ budovy z kamenných blokù nestaví, kámen se pou¾ívá ve formì ¹tìrku do betonu. Dal¹í vyu¾ití nachází kámen ve formì ¹tìrkového podkladu pod silnicemi a ¾eleznicemi.</p
 factory_TANKE_details
 <title>Èerpací stanice</title>\n<h1>Èerpací stanice</h1>\n<p>Na èerpací stanici doplníte benzin do svého vozu a hurá vstøíc dal¹ím kilometrùm.</p>\n<p>Jezdíte na naftu? Není. A zatím nebude.</p>
+factory_Windkraftwerk_details
+<title>Vìtrná elektrárna - detaily</title>\n<h1>Vìtrná elektrárna</h1> \n<p>Vìtrná elektrárna vyu¾ívá síly vìtru k výrobì elektrické energie.</p> <p>Vítr roztáèí vrtuli a pomocí pøevodovky je dosa¾eno potøebných otáèek pro roztoèení generátoru. Vìtrné elektrárny se vyplatí stavìt jen v místech kde fouká vítr po celý rok.</p>
 Geokraftwerk_details
 Geotermální elektrárna vyu¾ívá energii zemského jádra. Do podzemí je pomocí vrtù vhánìna voda. Voda od horké skály pøijme teplo a vrací se jinými vrty zpìt na zemský povrch v podobì páry. Z páry je v odluèovaèi odstranìna voda a pára pak postupuje je¹tì èi¹tìní. Vyèi¹tìná pára pára  pohání turbínu.\nOdpadní teplo je pou¾ito pro vytápìní domù.\nGeotermální elektrárna se neobejde bez vydatného zdroje vody. To ostatnì ani uhelná nebo jaderná elektrárna .
 grain_windmill_details
@@ -961,7 +993,7 @@ Návìs na auta
 Autotransportanhaenger
 H-Trans pøívìs na auta
 Autotransporter
-H-Trans nákladní v?z na auta
+H-Trans nákladní vùz na auta
 Autotransportwagen
 TPI Lopomo vagón na auta
 BB1280
@@ -1009,9 +1041,9 @@ BR V36
 Buchanhaenger
 S/H-T pøívìs na kusové zbo¾í
 Buchtrailer
-P?ív?s na kusové zbo?í I.
+Pøívìs na kusové zbo¾í I.
 Buchtrailer2
-P?ív?s na kusové zbo?í II
+Pøívìs na kusové zbo¾í II
 Buchtransporter
 S/H-T dodávka na kusové zbo?í
 Buchwagen
@@ -1020,6 +1052,8 @@ Buessig
 autobus Buessig
 BuessingLinie
 autobus Buesig Linie
+Bulkcarriage
+Vozík na sypké zbo¾í
 Bus
 H-Trans Autobus
 CarFlat
@@ -1036,8 +1070,32 @@ Cementtrailer
 Pøívìs na cement
 Class86
 Class 86
+CombinoShort(T)
+Siemens Combino, støed
+CombinoShortA(Mc)
+Siemens Combino, pøední díl
+CombinoShortB(Mc)
+Siemens Combino, konec
+CombinoShortE(T)
+Siemens Cobino, støed (E)
 Comet
 De Havilland 'Kometa'
+Concept1Front
+Concept 1, èelo
+Concept1Mail
+Concept 1, po¹ta
+Concept1Pass
+Concept 1, støed
+Concept1Rear
+Concept 1, zadní vùz
+Concept2Front
+Concept 2, èelo
+Concept2Mail
+Concept 2, po¹tovní vùz
+Concept2Pass
+Concept 2, støed
+Concept2Rear
+Concept 2, zadní vùz
 Cooling_Container
 Chladící p?ív?s
 Cooling_Truck
@@ -1103,7 +1161,7 @@ H-Trans nákladní auto na døevo
 Holzwagen
 H-Trans nákladní vagón na d?evo
 Horsebookscariage
-Vozík na kusové zbo?í
+Vozík na kusové zbo¾í
 Horsemailcariage
 Po¹tovní vùz
 Horsepapercariage
@@ -1139,9 +1197,9 @@ Boeing 747 'Jumbo Jet'
 kkStB_tender
 kkStB (tender)
 Kohleanhaenger
-H-Trans p?ív?s na sypké zbo?í
+H-Trans pøívìs na sypké zbo¾í
 Kohletransporter
-H-T nákladní auto na sypké zbo?í
+H-T nákladní auto na sypké zbo¾í
 Kohlewagen
 H-Trans nákl. vagón na sypké zbo?í
 Kunststofanhaenger
@@ -1177,13 +1235,13 @@ NS 1000
 NS1600
 NS 1600
 Oelanhaenger
-H-T p?ípojná cist. na ropu/benzín
+H-T pøípojná cist. na ropu/benzín
 Oelwagen
 VT Vienna cisterna na ropu/benzín
 Oilbarge
 Nákladní ?lun na ropu
 Oiltrailer
-P?ív?sná cisterna na ropu
+Pøívìsná cisterna na ropu
 old_open_car
 otevøený vùz na sypké hmoty
 OldOil
@@ -1209,7 +1267,7 @@ pony expres po¹»ák
 Postschiff
 Po¹tovní loï
 Posttransporter
-H-Trans po?tovní dodávka
+H-Trans po¹tovní dodávka
 Postwagen
 H-Trans Po?tovní/Zavazadlový v?z
 PrPersonenwagen
@@ -1219,9 +1277,9 @@ po¹tovní vùz
 RenaultTH5
 Renault TH5
 Sandanhaenger
-WF Ultd. p?ív?s na sypké zbo?í
+WF Ultd. pøívìs na sypké zbo¾í
 Sandtransporter
-WF Ultd. nákl. auto na sypké zbo?í
+WF Ultd. nákl. auto na sypké zbo¾í
 schooner
 Osobní ¹kuner
 SD40-2-back
@@ -1293,9 +1351,9 @@ X 2000, støed
 X2000front
 X 2000
 XMail
-V?z jednokolejky pro p?epravu po?ty
+Vùz jednokolejky pro pøepravu po¹ty
 XTest
-V?z jednokolejky
+Vùz jednokolejky
 Zeppelin
 Hindenburg
 #______________________________________way______________________________________

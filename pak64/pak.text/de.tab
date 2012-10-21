@@ -5,7 +5,7 @@
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 10.06 2012                           #
+#                           Date Created: 21.10 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Alexander Brose - AlexB                           #
@@ -22,7 +22,7 @@
 #                                    note:                                     #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
-#                            Christian W. - Eps-Omo                            #
+#                                   - Eps-Omo                                  #
 #                                    note:                                     #
 #                                   - Florian                                  #
 #                                    note:                                     #
@@ -42,6 +42,8 @@
 #note: if I´m not available by email to proximity.de try mail@marcus-haupt.de (#
 #                        Constantin Grabowski - Moistboy                       #
 #                                    note:                                     #
+#                                     - NNW                                    #
+#                                    note:                                     #
 #                                   - Nico192                                  #
 #                                    note:                                     #
 #                                    - Paco_m                                  #
@@ -52,8 +54,8 @@
 #                                    note:                                     #
 #                               Florian - floppy                               #
 #                                    note:                                     #
-#                            Günter Beine - gebeine                            #
-#                        note: maintainer pak128.german                        #
+#                                   - gebeine                                  #
+#                        note: maintainer PAK128.german                        #
 #                            Jonas Bushart - jonasbb                           #
 #                                    note:                                     #
 #                                - jounior-fuchs                               #
@@ -951,45 +953,45 @@ Straßentunnel
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
-DB BR 103
+DB Br 103
 1Ben140
-DB BR 140
+DB Br 140
 1Dampflokomotive
 H-Trans 0-4-0T
 1Diesellokomotive
-H-Trans BR212
+H-Trans Br 212
 1Ellok
-H-Trans BR103
+H-Trans Hui
 1Garrat
 Garratt
 1TPEllok
 F7 A
 221A
-Franz. 221 Schnellzuglok
+SNCF 221A Schnellzuglok
 221A_tender
 221A Tender
 2Ben155
-DR BR250
+DR Br 250
 2Diesellokomotive
-DB BR 218
+DB Br 218
 2Ellok
 H-Trans Tigress I
 2Garrat
-Garratt (Mittelsegment)
+SAR Garratt (Mittelsegment)
 3Ben185
-DB BR185
+DB Br 185
 3Diesellokomotive
-H-Trans BR365
+H-Trans Br 365
 3Garrat
-Garratt (Endsegment)
+SAR Garratt (Endsegment)
 707
 Boeing 707
 A3-5
 SBB A 3/5
 A3-5_tender
-Tender zu SBB A 3/5
+SBB A 3/5 Tender
 A380
-Airbus A380
+Airbus 380
 AdlerPersonenwagen
 Adler Personenwagen
 Autotrailer
@@ -1003,7 +1005,7 @@ TPI Lopomo Autotransporter
 BB1280
 SNCF BB 1280
 BB200
-BB 200
+SNCF BB 200
 Be5-7
 BLS Be 5/7
 Blimp
@@ -1013,27 +1015,27 @@ Dreirädriger Lieferwagen
 Boxcar
 Stückgutwagen
 BR01
-Br01
+DB Br 01
 Br118DR
-Br118 DR
+DR Br 118
 Br234
-Br234 DR
+DB Br 234
 BR38
-Br38 (Pr. P8)
+DB Br 38 (Pr. P8)
 BR38-Tender
-Br38 Tender
+Br 38 Tender
 BR39
-Br39
+DB Br 39
 BR45
-Br45
+DB Br 45
 Br614back
-Br614
+DB Br 614 (Ende)
 Br614car
-Br614
+DB Br 614 (Mitte)
 Br614front
-Br614
+DB Br 614
 BR85
-Br86
+DB Br 86
 Bretteranhaenger
 WF Ultd. Bretteranhänger
 Brettertransporter
@@ -1041,13 +1043,13 @@ WF Ultd. Brettertransporter
 Bretterwagen
 VT Wien Rungenwagen Bretter
 BRV36
-Br V36
+DB Br V36
 Buchanhaenger
 Anhänger für Bücher (Serj)
 Buchtrailer
-Sattelanhänger für Stückgut I
+Stückgutauflieger
 Buchtrailer2
-Sattelanhänger für Stückgut II
+Stückgutauflieger Express
 Buchtransporter
 Serj/H-Trans Stückguttransporter
 Buchwagen
@@ -1069,11 +1071,11 @@ Cargosprinter Mittelwagon
 Cargosprinter-Steuer
 Cargosprinter Steuerwagen
 CC7100
-CC 7100
+SNCF CC 7100
 Cementtrailer
-Sattelanhänger für Zement
+Zementauflieger
 Class86
-Class 86
+BR Class 86
 CombinoShort(T)
 Combino Short (T)
 CombinoShortA(Mc)
@@ -1117,13 +1119,13 @@ Doppeldeckerbus
 DoubleDecker
 Doppelstock-Wagen
 E44
-E 44
+DB Br E44
 Eb3-5
 SBB Eb 3/5
 Ed2x2
-Ed 2x2
+SBB Ed 2x2
 EinheitsTender
-Einheitstender
+DB Einheitstender
 EnCo_Bulk_Ship
 EnCo Schüttgut-Frachter
 EnCo_Car_Ship
@@ -1143,7 +1145,7 @@ EnCo Holz-Frachter
 Erzanhaenger
 H-Trans Erzanhänger
 Erztrailer
-Sattelanhänger für Schüttgut
+Schüttgutauflieger
 Erztransporter
 H-Trans Lkw MK2
 Erzwagen
@@ -1185,7 +1187,7 @@ H-Trans Tigress-II hinterer Triebkopf
 H-Trans-Tigress-II-Front
 H-Trans Tigress-II
 Hadley-Page-V1500
-RVg Hadley-Page V1500
+Hadley-Page V1500
 Heavy_ore_truck
 Muldenkipper
 HJMAvia
@@ -1193,9 +1195,9 @@ Avia Zugmaschine
 Hochbordwagen
 Kohlewaggon (18t)
 Holzanhaenger
-JET Langholzanhänger
+Langholzanhänger
 Holztrailer
-Sattelanhänger für Langholz
+Langholzauflieger
 Holztransporter
 H-Trans Holztransporter
 Holzwagen
@@ -1223,11 +1225,21 @@ ICE-TD
 IL-76
 Ilyushin 76
 JNR_C11
-JNR C11 (2-6-4T)
+JNR C11
 JR_9600
 JR 9600
 JR_9600_tender
 JR9600 Tender
+JRE-Mp233
+JRE Mp233 Motorwagen
+JRE-Mpp233
+JRE Mp233 Motorwagen
+JRE-T233
+JRE T233
+JRE-T233cb
+JRE T233 Kopf
+JRE-Tcf233
+JRE T233 Ende
 Ju52
 Junker 52
 JumboCruiser
@@ -1264,6 +1276,8 @@ Lockheed10-Electra
 Lockheed 10 Electra
 logs
 Holzfloß
+Lowa
+Lowa Tram
 Lowa_Anhaenger
 Lowa Anhänger
 Mack_Truck_01
@@ -1272,6 +1286,8 @@ Mailcontainerwagon
 Postcontainerwaggon
 MailExpress
 Postflugzeug
+Mailtrailer
+Postauflieger
 Mailwagon
 Postwaggon
 Milk_Truck
@@ -1285,7 +1301,7 @@ VT Wien leichter Güterwagen
 Muellschiff
 Müllschiff
 NeuOelwagen
-Ölwaggon (80t)
+Großkesselwagen
 NS1000
 NS 1000
 NS1600
@@ -1297,11 +1313,11 @@ VT Wien Kesselwagen Öl
 Oilbarge
 Ölbarke
 Oiltrailer
-Sattelfahrzeug für Öl/Benzin
+Tankauflieger
 old_open_car
-Schüttgutwagon von 1837
+Adler Schüttgutwagen
 OldOil
-Tankwagen I
+Tankwagen
 Ox2
 Ochsenpaar
 Ox4
@@ -1319,7 +1335,7 @@ Gespann für Pferdebahnen
 Pferdebahnwagen
 Personenwagen (pferdegezogen)
 PonyExpress
-reitende Bote
+reitender Bote
 Postschiff
 Postboot
 Posttransporter
@@ -1327,9 +1343,9 @@ H-Trans Posttransporter
 Postwagen
 H-Trans Post-/Gepäckwagen
 PrPersonenwagen
-Personenwagen I
+Preuß. Abteilwagen
 PrPostwagen
-Post-/Gepäckwagen I
+Preuß. Post-/Gepäckwagen
 RenaultTH5
 Renault TH5 Sattelschlepper
 Sandanhaenger
@@ -1339,11 +1355,13 @@ WF Ultd. Kipper
 schooner
 Neuschottland Schoner
 Schooner_Bark
-Schooner Bark
+Schoonerbark
 SD40-2-back
 SD40-2 (zweite Lok)
 SD40-2-front
 SD40-2
+Serj-Mini
+Sammeltaxi
 setra_S10
 Setra S10
 SlowFerry
@@ -1374,8 +1392,16 @@ Tatra-T4
 Tatra T4
 Tatra-T4_Wagon
 Tatra-T4 Waggon
+TB13
+T13 Beiwagen
+TB24
+T24 Beiwagen
 teaclipper
-Segelschiff für Stückgut
+Teeclipper für Stückgut
+TIRpaper
+Papierauflieger
+TIRsteel
+Stahlauflieger
 TPBeiwagen
 VB98 Beiwagen
 TPPassagierwagen
