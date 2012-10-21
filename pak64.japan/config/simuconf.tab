@@ -60,6 +60,8 @@ seperate_halt_capacities = 0
 # lowest possible income with speedbonus (1000=1) default 125
 bonus_basefactor = 125
 
+# minimum distance between two city attractions
+special_building_distance = 4
 
 # three modes (default = 0)
 # 1: the payment is only relative to the distance to next interchange, 2 to the trips destination (default 0 is distance since last stop)
