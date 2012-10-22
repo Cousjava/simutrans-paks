@@ -5,12 +5,14 @@
 #                             Language: gr Ellinika                            #
 #                                Encoding: UTF-8                               #
 #                                Font : cyr.bdf                                #
-#                           Date Created: 10.10 2011                           #
+#                           Date Created: 22.10 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
 #                              Frank Penz - FrankP                             #
+#                                    note:                                     #
+#                                   - javavall                                 #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
 #                                    note:                                     #
@@ -53,19 +55,21 @@
 0Ben103
 Γερμανικός σιδηρόδρομος BR 103
 1Ben140
-Ηλεκτροκίνητη γερμανική μηχανή BR 140
+Bennhardt Br140
 1Dampflokomotive
 H-Trans 0-4-0T
 1Diesellokomotive
-H-Trans BR212
+H-Trans Br212
 1Ellok
-H-Trans BR103
+H-Trans E1
 1Garrat
 Ατμομηχανή Garratt
 1TPEllok
 F7 A
 2Ben155
-Ηλεκτροκίνητη γερμανική μηχανή BR 155
+Abro Br250
+2Ellok
+H-Trans Tigress I
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 city_road

@@ -5,7 +5,7 @@
 #                             Language: ru Russian                             #
 #                                Encoding: UTF-8                               #
 #                                Font : cyr.bdf                                #
-#                           Date Created: 31.10 2011                           #
+#                           Date Created: 22.10 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                       Semichenkov Alexander - AleksRevo                      #
@@ -17,6 +17,8 @@
 #                              Frank Penz - FrankP                             #
 #                                    note:                                     #
 #                           Sava Bogdanets - Sava2004                          #
+#                                    note:                                     #
+#                                    - SkyAn                                   #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
 #                                    note:                                     #
@@ -277,23 +279,23 @@ Bennhardt BR103
 1Ben140
 Bennhardt BR140
 1Dampflokomotive
-H-Trans 0-4-0T (пар)
+H-Trans 0-4-0T
 1Diesellokomotive
-H-Trans BR212 (дизель)
+H-Trans Br212
 1Ellok
-H-Trans BR103 (электр.)
+H-Trans E1
 1TPEllok
-TPI F7A (дизель)
+TPI F7A
 2Ben155
-Bennhardt BR155
+Abro Br250
 2Diesellokomotive
-H-Trans BR218 (дизель)
+H-Trans Br218
 2Ellok
-H-Trans Tigress I (электр.)
+H-Trans Tigress I
 3Ben185
-Bennhardt BR185
+Abro Br185
 3Diesellokomotive
-H-Trans BR365 (дизель)
+H-Trans Br365
 Autotransportanhaenger
 Прицеп автотранспортёра H-Trans
 Autotransporter

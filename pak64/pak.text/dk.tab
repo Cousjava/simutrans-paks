@@ -5,7 +5,7 @@
 #                              Language: dk Dansk                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 30.10 2011                           #
+#                           Date Created: 22.10 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
@@ -203,25 +203,25 @@ Kølegods
 0Ben103
 Bennhardt BR103 (el)
 1Ben140
-Bennhardt BR140 (el)
+Bennhardt BR140
 1Dampflokomotive
-H-Trans 0-4-0T (damp)
+H-Trans 0-4-0T
 1Diesellokomotive
-H-Trans BR212 (diesel)
+H-Trans Br212
 1Ellok
-H-Trans BR103 (el)
+H-Trans E1
 1TPEllok
 TPI F7A (diesel)
 2Ben155
-Bennhardt BR155 (el)
+Abro Br250
 2Diesellokomotive
-H-Trans BR218 (diesel)
+H-Trans Br218
 2Ellok
-H-Trans Tigress I (el)
+H-Trans Tigress I
 3Ben185
-Bennhardt BR185 (el)
+Abro Br185
 3Diesellokomotive
-H-Trans BR365 (diesel)
+H-Trans Br365
 707
 Boeing 707
 Autotransportanhaenger

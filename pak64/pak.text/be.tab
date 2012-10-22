@@ -5,12 +5,14 @@
 #                           Language: be Belaruskaja                           #
 #                                Encoding: UTF-8                               #
 #                                Font : cyr.bdf                                #
-#                           Date Created: 10.10 2011                           #
+#                           Date Created: 22.10 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
 #                              Frank Penz - FrankP                             #
+#                                    note:                                     #
+#                                    - SkyAn                                   #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
 #                                    note:                                     #
@@ -24,6 +26,10 @@ Passagiere
 пасажыры
 Post
 пошта
+#____________________________________vehicle____________________________________
+#____________________________________vehicle____________________________________
+3Diesellokomotive
+H-Trans Br365
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 city_road

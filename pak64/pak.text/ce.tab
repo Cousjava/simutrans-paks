@@ -5,7 +5,7 @@
 #                            Language: ce C-English                            #
 #                                Encoding: ASCII                               #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 10.06 2012                           #
+#                           Date Created: 22.10 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
@@ -567,11 +567,11 @@ Bennhardt 103
 1Ben140
 Bennhardt 140
 1Dampflokomotive
-Kirayami Steam Locomotive
+H-Trans 0-4-0T
 1Diesellokomotive
-Kahan 512
+H-TRans Kahan 512
 1Ellok
-Haltbar F9
+H-Trans E1
 1TPEllok
 Haltbar F7 (Front)
 221A
@@ -579,15 +579,15 @@ Wottrich 221A
 221A_tender
 Wottrich 221A Tender
 2Ben155
-Bennhardt 155
+Abro Br250
 2Diesellokomotive
 Wottrich 650
 2Ellok
 Colin Train 6300 "Tiger" (Front)
 3Ben185
-Bennhardt 185
+Abro Br185
 3Diesellokomotive
-Kahan 480
+H-Trans Br365
 707
 Boeing 707
 A3-5
@@ -647,7 +647,7 @@ Haltbar Box Car
 Buessig
 Ikarus Model B
 Bus
-Ikarus Model C
+H-Trans Bus
 Cargosprinter-Front
 Haltbar Carosprinter (Front)
 Cargosprinter-Mittel

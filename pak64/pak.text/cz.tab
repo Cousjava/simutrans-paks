@@ -5,7 +5,7 @@
 #                             Language: cz Cestina                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 21.10 2012                           #
+#                           Date Created: 22.10 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
@@ -955,9 +955,9 @@ Bennhardt BR140
 1Dampflokomotive
 H-Trans 0-4-0T
 1Diesellokomotive
-H-Trans BR212
+H-Trans Br212
 1Ellok
-H-Trans BR103
+H-Trans E1
 1Garrat
 RVg Garratt
 1TPEllok
@@ -965,17 +965,17 @@ TPI F7A
 221A_tender
 221A (tender)
 2Ben155
-Bennhardt BR155
+Abro Br250
 2Diesellokomotive
-H-Trans BR218
+H-Trans Br218
 2Ellok
 H-Trans Tigress I
 2Garrat
 RVg Garratt (støed)
 3Ben185
-Bennhardt BR185
+Abro Br185
 3Diesellokomotive
-H-Trans BR365
+H-Trans Br365
 3Garrat
 RVg Garratt (konec)
 707

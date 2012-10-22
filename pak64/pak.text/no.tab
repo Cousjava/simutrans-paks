@@ -5,7 +5,7 @@
 #                              Language: no Norsk                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 31.10 2011                           #
+#                           Date Created: 22.10 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                         Christian Berntsen - DonChris                        #
@@ -147,7 +147,7 @@ DB BR 140
 1Dampflokomotive
 H-Trans 0-4-0T
 2Diesellokomotive
-DB BR 218
+DB Br 218
 Autotransportwagen
 Bil Transporter
 Bretterwagen

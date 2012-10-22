@@ -5,7 +5,7 @@
 #                             Language: es Espanol                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 10.06 2012                           #
+#                           Date Created: 22.10 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                   - Diegote                                  #
@@ -16,8 +16,8 @@
 #                                    note:                                     #
 #                                    - Paco_m                                  #
 #                                    note:                                     #
-#                       Zeno (Albert Ruiz) - albert.yuste                      #
-#                                    note:                                     #
+#                                 - albert.yuste                               #
+#                               note: Albert Ruiz                              #
 #                                    - ispero                                  #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
@@ -993,9 +993,9 @@ Bennhardt BR140
 1Dampflokomotive
 H-Trans 0-4-0T
 1Diesellokomotive
-H-Trans BR212
+H-Trans Br212
 1Ellok
-H-Trans BR103
+H-Trans E1
 1Garrat
 Garrat
 1TPEllok
@@ -1005,7 +1005,7 @@ TPI F7A
 221A_tender
 221 A Tender
 2Ben155
-Bennhardt BR155
+Abro Br250
 2Diesellokomotive
 H-Trans BR218
 2Ellok
@@ -1013,9 +1013,9 @@ H-Trans Tigresa I
 2Garrat
 Garrat (medio)
 3Ben185
-Bennhardt BR185
+Abro Br185
 3Diesellokomotive
-H-Trans BR218
+H-Trans Br365
 3Garrat
 Garrat (trasero)
 707

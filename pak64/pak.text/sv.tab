@@ -5,7 +5,7 @@
 #                             Language: sv Svenska                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 10.06 2012                           #
+#                           Date Created: 22.10 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
@@ -705,9 +705,9 @@ DB BR 140
 1Dampflokomotive
 H-Trans 0-4-0T
 1Diesellokomotive
-H-Trans BR212
+H-Trans Br212
 1Ellok
-H-Trans BR103
+H-Trans E1
 1Garrat
 Garratt
 1TPEllok
@@ -715,17 +715,17 @@ F7 A
 221A_tender
 Tender till 221A
 2Ben155
-DR BR250
+DR Br 250
 2Diesellokomotive
-DB BR 218
+DB Br 218
 2Ellok
 H-Trans Tigress I
 2Garrat
 Garratt (mittdel)
 3Ben185
-DB BR185
+DB Br 185
 3Diesellokomotive
-H-Trans BR365
+H-Trans Br365
 3Garrat
 Garratt (bakre del)
 707

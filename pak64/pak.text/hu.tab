@@ -5,7 +5,7 @@
 #                              Language: hu Magyar                             #
 #                                Encoding: UTF-8                               #
 #                                Font : cyr.bdf                                #
-#                           Date Created: 31.10 2011                           #
+#                           Date Created: 22.10 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
@@ -593,33 +593,33 @@ Közúti alagút
 0Ben103
 Ben-103 mozdony
 1Ben140
-Ben-140 mozdony
+Bennhardt Br140
 1Dampflokomotive
-Gõzmozdony-A
+H-Trans 0-4-0T
 1Diesellokomotive
-Mozdony-B
+H-Trans Mozdony-B
 1Ellok
-Ellok-3 mozdony
+H-Trans E1
 1Garrat
 RVg Garratt (elsõ)
 1TPEllok
-Ellok-1 mozdony (elsõ)
+TPI F7a
 221A
 AC16 221A gõzmozdony
 221A_tender
 AC16 221A szerkocsi
 2Ben155
-Ben-155 mozdony
+Abro Br250
 2Diesellokomotive
-Mozdony-C
+H-Trans Br218
 2Ellok
-Ellok-4 mozdony
+H-Trans Tigress I
 2Garrat
 RVg Garratt (középsõ)
 3Ben185
-Ben-185 mozdony
+Abro Br185
 3Diesellokomotive
-Mozdony-A
+H-Trans Br365
 3Garrat
 RVg Garratt (hátsó)
 707
@@ -697,7 +697,7 @@ L busz
 Bulkcarriage
 Nyersanyagszállitó
 Bus
-Busz-B
+H-Trans Busz-B
 CarFlat
 Autószállító vagon
 Cargosprinter-Front

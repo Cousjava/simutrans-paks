@@ -5,7 +5,7 @@
 #                              Language: pl Polski                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                            Date Created: 1.07 2012                           #
+#                           Date Created: 22.10 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                       Bartlomiej Weclewski - BarthVader                      #
@@ -309,7 +309,7 @@ yellow_car
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
 factory_cannery_details
-<title>Fabryki konserw</title>\n<h1>Fabryki konserw</h1>\n<p>Produkty konserwowane w puszkach wprowadzi³ Anglik, Peter Durand. Jego pomys³ kupi³a firma Dinkin, Hall and Gamble. W 1811 za³o¿y³a ona zak³ady puszkuj±ce ¿ywno¶æ i od 1830 puszkowan± ¿ywno¶æ mo¿na by³o zakupiæ w londyñskich sklepach.</p>\n<p>W tej fabryce specjalizuj± siê w przetworach miêsnych (mielonki, konserwy turystyczne, pasztety) oraz rybnych (paprykarze, ¶ledzie w oleju i pomidorach, tuñczyk w oleju lub sosie w³asnym itp.</p>\n
+<title>Fabryki konserw</title>\n<h1>Fabryki konserw</h1>\n<p>Produkty konserwowane w puszkach wprowadzi³ Anglik, Peter Durand. Jego pomys³ kupi³a firma Dinkin, Hall and Gamble. W 1811 za³o¿y³a ona zak³ady puszkuj±ce ¿ywno¶æ i od 1830 puszkowan± ¿ywno¶æ mo¿na by³o zakupiæ w londyñskich sklepach.</p>\n<p>W tej fabryce specjalizuj± siê w przetworach miêsnych (mielonki, konserwy turystyczne, pasztety) oraz rybnych (paprykarze, ¶ledzie w oleju i pomidorach, tuñczyk w oleju lub sosie w³asnym)</p>\n
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -651,25 +651,25 @@ Bennhardt BR 103
 1Ben140
 Bennhardt BR 140
 1Dampflokomotive
-Lokomotywa 0-4-0T
+H-Trans 0-4-0T
 1Diesellokomotive
-Lokomotywa BR 212
+H-Trans Br 212
 1Ellok
-Lokomotywa BR 103
+H-Trans E1
 1TPEllok
-Lokomotywa TPI F7A
+TPI F7A
 2Ben155
-Bennhardt BR155
+Abro Br250
 2Diesellokomotive
-Lokomotywa BR 218
+H-Trans Br218
 2Ellok
-Lokomotywa Tigress I
+H-Trans Tigress I
 2Garrat
 Lokomotywa Garratt
 3Ben185
-Bennhardt BR 185
+Abro Br185
 3Diesellokomotive
-Lokomotywa BR 365
+H-Trans Br365
 3Garrat
 Tender Garratt
 707

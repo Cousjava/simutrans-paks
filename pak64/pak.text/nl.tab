@@ -5,7 +5,7 @@
 #                            Language: nl Nederlands                           #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 10.06 2012                           #
+#                           Date Created: 22.10 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                   - Combuijs                                 #
@@ -557,9 +557,9 @@ Bennhardt B-140
 1Dampflokomotive
 H-Trans 0-4-0T
 1Diesellokomotive
-H-Trans BR212
+H-Trans Br212
 1Ellok
-H-Trans BR103 (elektrisch)
+H-Trans E1 Storm
 1Garrat
 RVg Garratt
 1TPEllok
@@ -569,15 +569,15 @@ JC 221A (stoom)
 221A_tender
 JC 221A tender
 2Ben155
-Bennhardt BR155 (elektrisch)
+Abro Br250
 2Diesellokomotive
-H-Trans BR218 (diesel)
+H-Trans Br218
 2Ellok
-H-Trans Tigress I (electro)
+H-Trans Tigress I
 3Ben185
-Bennhardt BR185 (electro)
+Abro Br185
 3Diesellokomotive
-H-Trans BR365
+H-Trans Br365
 707
 Boeing 707
 A3-5

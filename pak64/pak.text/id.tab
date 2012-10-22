@@ -5,7 +5,7 @@
 #                            Language: id Indonesia                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 25.02 2012                           #
+#                           Date Created: 22.10 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
@@ -15,6 +15,8 @@
 #                              Frank Penz - FrankP                             #
 #                                    note:                                     #
 #                                     - Mhxi                                   #
+#                                    note:                                     #
+#                                    - daffi                                   #
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
 #                                    note:                                     #
@@ -229,9 +231,13 @@ Terowongan
 1Ben140
 Bennhardt B-140 "Limet"
 1Dampflokomotive
-RVg 0-4-0T
+H-Trans 0-4-0T
+2Ben155
+Abro Br250
 2Diesellokomotive
-H-Trans BR218
+H-Trans Br218
+2Ellok
+H-Trans Tigress I
 Horsemailcariage
 Delman Pengirim Pos
 Horsepapercariage

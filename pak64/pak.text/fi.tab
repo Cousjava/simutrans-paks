@@ -5,7 +5,7 @@
 #                              Language: fi Suomi                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 10.06 2012                           #
+#                           Date Created: 22.10 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
@@ -735,13 +735,13 @@ Tunneli
 0Ben103
 DB BR103
 1Ben140
-Bennhardt BR140 (sähkö)
+Bennhardt BR140
 1Dampflokomotive
-H-Trans 0-4-0T (höyry)
+H-Trans 0-4-0T
 1Diesellokomotive
-H-Trans BR212 (diesel)
+H-Trans Br212
 1Ellok
-H-Trans BR103 (sähkö)
+H-Trans E1
 1Garrat
 RVg Garrat
 1TPEllok
@@ -751,17 +751,17 @@ TPI F7A (diesel)
 221A_tender
 221A tenderi
 2Ben155
-Bennhardt BR155 (sähkö)
+Abro Br250
 2Diesellokomotive
-H-Trans BR218 (diesel)
+H-Trans Br218
 2Ellok
-H-Trans Tigress I (sähkö)
+H-Trans Tigress I
 2Garrat
 RVg Garratt (keski)
 3Ben185
-Bennhardt BR185 (sähkö)
+Abro Br185
 3Diesellokomotive
-H-Trans BR218 (diesel)
+H-Trans Br365
 3Garrat
 RVg Garratt (taka)
 707

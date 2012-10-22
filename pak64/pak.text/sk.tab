@@ -5,7 +5,7 @@
 #                            Language: sk Slovencina                           #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 10.06 2012                           #
+#                           Date Created: 22.10 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
@@ -333,21 +333,21 @@ Bennhardt BR140
 1Dampflokomotive
 H-Trans 0-4-0T
 1Diesellokomotive
-H-Trans BR212
+H-Trans Br212
 1Ellok
-H-Trans BR103
+H-Trans E1
 1TPEllok
 TPI F7A
 2Ben155
-Bennhardt BR155
+Abro Br250
 2Diesellokomotive
-H-Trans BR218
+H-Trans Br218
 2Ellok
-CKD Pegas
+H-Trans Tigress I
 3Ben185
-Bennhardt BR185
+Abro Br185
 3Diesellokomotive
-H-Trans BR365
+H-Trans Br365
 Autotransportanhaenger
 Príves na autotransportér
 Autotransporter
@@ -367,7 +367,7 @@ LIAZ na knihy
 Buchwagen
 VT Wien vagón na knihy
 Bus
-NovoPLAN autobus
+H-Trans autobus
 Cooling_Container
 Mraziarenský kontainerový vagón
 Cooling_Truck

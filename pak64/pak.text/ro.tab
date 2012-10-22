@@ -5,7 +5,7 @@
 #                              Language: ro Romana                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 10.06 2012                           #
+#                           Date Created: 22.10 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                   - CDAndrei                                 #
@@ -295,23 +295,23 @@ Locomotiva Bennhardt B-103
 1Ben140
 Locomotiva Bennhardt B-140 "Limet"
 1Dampflokomotive
-Locomotiva H-Trans 0-4-0T "Hello"
+H-Trans 0-4-0T
 1Diesellokomotive
-Locomotiva H-Trans BR212
+H-Trans Br212
 1Ellok
-Locomotiva H-Trans BR103
+H-Trans E1
 1TPEllok
-Locomotiva TPI F7A
+TPI F7A
 2Ben155
-Locomotiva Bennhardt B-155
+Abro Br250
 2Diesellokomotive
-Locomotiva H-Trans BR218
+H-Trans Br218
 2Ellok
-LocomotivaH-Trans-Pantheress
+H-Trans Tigress I
 3Ben185
-Locomotiva Bennhardt B-185 "Santa"
+Abro Br185
 3Diesellokomotive
-Locomotiva Canonball-WF 365
+H-Trans Br365
 Autotransportanhaenger
 Remorcã transport auto
 Autotransporter
@@ -331,7 +331,7 @@ Maºinã pt. transport cãrþi
 Buchwagen
 Vagon pt. transport cãrþi
 Bus
-Autobus
+Autobus H-Trans
 Cooling_Truck
 Maºinã frigorificã
 Cooling_Waggon

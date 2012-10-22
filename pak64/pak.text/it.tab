@@ -5,7 +5,7 @@
 #                             Language: it Italiano                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 10.06 2012                           #
+#                           Date Created: 22.10 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
@@ -723,33 +723,33 @@ Tunnel stradale
 0Ben103
 Bennhardt BR103 (elettrica)
 1Ben140
-Bennhardt BR140 (elettrica)
+Bennhardt BR140
 1Dampflokomotive
-H-Trans 0-4-0T (vapore)
+H-Trans 0-4-0T
 1Diesellokomotive
-H-Trans BR212 (diesel)
+H-Trans Br212
 1Ellok
-H-Trans BR103 (elettrica)
+H-Trans E1 Tempesta
 1Garrat
 Garratt
 1TPEllok
-TPI F7A (diesel)
+TPI F7A
 221A
 JaCo 221A 4-6-0
 221A_tender
 JaCo 221A Tender
 2Ben155
-Bennhardt BR155 (elettrica)
+Abro Br250
 2Diesellokomotive
-H-Trans BR218 (diesel)
+H-Trans Br218
 2Ellok
-H-Trans Tigress I (elettrica)
+H-Trans Tigress I
 2Garrat
 Garratt (centrale)
 3Ben185
-Bennhardt BR185 (elettrica)
+Abro Br185
 3Diesellokomotive
-H-Trans BR218 (diesel)
+H-Trans Br365
 3Garrat
 Garratt (coda)
 707

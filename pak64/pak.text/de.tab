@@ -5,7 +5,7 @@
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 21.10 2012                           #
+#                           Date Created: 22.10 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Alexander Brose - AlexB                           #
@@ -961,7 +961,7 @@ H-Trans 0-4-0T
 1Diesellokomotive
 H-Trans Br 212
 1Ellok
-H-Trans Hui
+H-Trans E1 Sturmwind
 1Garrat
 Garratt
 1TPEllok
@@ -981,7 +981,7 @@ SAR Garratt (Mittelsegment)
 3Ben185
 DB Br 185
 3Diesellokomotive
-H-Trans Br 365
+DB Br 365
 3Garrat
 SAR Garratt (Endsegment)
 707

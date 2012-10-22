@@ -5,12 +5,14 @@
 #                             Language: hr Hrvatski                            #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 31.10 2011                           #
+#                           Date Created: 22.10 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
 #                                    - EdinU                                   #
+#                                    note:                                     #
+#                            Filip Mravunac - Fichom                           #
 #                                    note:                                     #
 #                              Frank Penz - FrankP                             #
 #                                    note:                                     #
@@ -310,6 +312,10 @@ RoadTunnel
 Cestovni tunel
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
+2Ben155
+Abro Br250
+3Diesellokomotive
+H-Trans Br365
 Postwagen
 Cannonball Postanski Vagon
 #______________________________________way______________________________________
