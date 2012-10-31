@@ -95,7 +95,7 @@ intro_year=1
 needs_ground=1
 climates=tropic,mediterran
 BackImage[0][0][0][0][0][0]=com.1.4
-BackImage[0][0][0][0][0][1]=winter-com.1.4
+#BackImage[0][0][0][0][0][1]=winter-com.1.4
 --------------------
 Obj=building
 Name=COM_01_04
