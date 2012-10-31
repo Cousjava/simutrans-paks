@@ -514,8 +514,12 @@ passenger_demand=100
 Dims=2,2
 climates=tropic,mediterran,temperate,tundra
 intro_year=1610
-BackImage[0][0][0][0][0]=MHz-Marketplace.0.1
-BackImage[0][0][1][0][0]=MHz-Marketplace.1.1
-BackImage[0][1][0][0][0]=MHz-Marketplace.0.0
-BackImage[0][1][1][0][0]=MHz-Marketplace.1.0
+BackImage[0][0][0][0][0][0]=MHz-Marketplace.0.1
+BackImage[0][0][1][0][0][0]=MHz-Marketplace.1.1
+BackImage[0][1][0][0][0][0]=MHz-Marketplace.0.0
+BackImage[0][1][1][0][0][0]=MHz-Marketplace.1.0
+BackImage[0][0][0][0][0][1]=MHz-Marketplace-winter.0.1
+BackImage[0][0][1][0][0][1]=MHz-Marketplace-winter.1.1
+BackImage[0][1][0][0][0][1]=MHz-Marketplace-winter.0.0
+BackImage[0][1][1][0][0][1]=MHz-Marketplace-winter.1.0
 ----------------------------------------
