@@ -12,6 +12,7 @@ enables_pax=1
 # 1_1 is the land sqare
 Dims=1,1,16
 NoInfo=1
+allow_underground=0
 Level=8
 BackImage[0][0][0][0][0]=gcg-singapore2.0.0
 FrontImage[0][0][0][0][0]=gcg-singapore2.0.2
@@ -58,6 +59,7 @@ enables_pax=1
 # 1_1 is the land sqare
 Dims=1,1,2
 NoInfo=1
+allow_underground=2
 Level=8
 BackImage[0][0][0][0][0]=gcg-singapore2.0.0
 FrontImage[0][0][0][0][0]=gcg-singapore2.0.2
@@ -74,6 +76,7 @@ enables_pax=1
 # 1_1 is the land sqare
 Dims=1,1,2
 NoInfo=1
+allow_underground=2
 Level=8
 BackImage[0][0][0][0][0]=gcg-singapore2.1.0
 FrontImage[0][0][0][0][0]=gcg-singapore2.1.2

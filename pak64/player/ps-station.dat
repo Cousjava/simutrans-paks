@@ -11,6 +11,7 @@ enables_pax=1
 # 1_1 is the land sqare
 Dims=1,1,2
 NoInfo=1
+allow_underground=0
 Level=4
 BackImage[0][0][0][0][0]=purno-sigapore.0.0
 FrontImage[0][0][0][0][0]=purno-sigapore.0.2
@@ -28,6 +29,7 @@ enables_pax=1
 # 1_1 is the land sqare
 Dims=1,1,2
 NoInfo=1
+allow_underground=0
 Level=4
 BackImage[0][0][0][0][0]=purno-sigapore.1.0
 FrontImage[0][0][0][0][0]=purno-sigapore.0.2
@@ -40,6 +42,7 @@ Obj=building
 Name=PSFreightTrainStop
 type=stop
 waytype=track
+allow_underground=2
 enables_ware=1
 # must be 1*2
 # 1_1 is the land sqare
@@ -64,6 +67,7 @@ enables_pax=1
 # 1_1 is the land sqare
 Dims=1,1,2
 NoInfo=1
+allow_underground=0
 Level=1
 intro_year = 1810
 intro_month = 9
