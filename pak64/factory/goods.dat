@@ -197,7 +197,7 @@ metric=m3
 catg=7
 value=100
 speed_bonus=3
-weight_per_unit=1000
+weight_per_unit=500
 -----------------------
 obj=good
 name=Concrete
