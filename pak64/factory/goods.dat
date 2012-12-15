@@ -60,7 +60,7 @@ name=Stone
 metric=tonnen
 MapColor=8
 catg=2
-value=150
+value=165
 speed_bonus=2
 weight_per_unit=1000
 -----------------------
