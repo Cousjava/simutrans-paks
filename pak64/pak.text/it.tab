@@ -5,7 +5,7 @@
 #                             Language: it Italiano                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 22.10 2012                           #
+#                           Date Created: 23.12 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - Dwachs                                  #
@@ -629,7 +629,9 @@ Presegnali (per 2 blocchi)
 RailClose
 Chiudi tratto ferroviario
 Railgate
-Portale ferroviario
+Cancello ferroviario
+Roadgate
+Cancello stradale
 Signals
 Segnale ferroviario
 SignalsMonorail

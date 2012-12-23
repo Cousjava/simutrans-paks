@@ -5,7 +5,7 @@
 #                             Language: en English                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 22.10 2012                           #
+#                           Date Created: 23.12 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Alexander Brose - AlexB                           #
@@ -60,6 +60,8 @@
 #                                    note:                                     #
 #                                   - Xelofino                                 #
 #                                    note:                                     #
+#                                 - albert.yuste                               #
+#                               note: Albert Ruiz                              #
 #                            Carl Baker - carlbaker                            #
 #                                    note:                                     #
 #                                  - enternald                                 #
@@ -79,6 +81,8 @@
 #                                   - knightly                                 #
 #                                    note:                                     #
 #                             Mark Knoester - mark                             #
+#                                    note:                                     #
+#                          Michel Vorenhout - michelv                          #
 #                                    note:                                     #
 #                              Markus Rex - msrex                              #
 #                                    note:                                     #
@@ -141,7 +145,7 @@ Steel girder rail bridge
 tb_classic_road
 Concrete road bridge
 ViaductRail
-brick stone viaduct
+brick viaduct
 WoodenRoad
 wooden road bridge
 #___________________________________building____________________________________
@@ -173,11 +177,15 @@ St. Luke's Church\n\nThis church is small but growing. Its mission work in the c
 1930AirDepot
 Air depot of 1930
 1headquarter
-headquarter
+Headquarters
 2headquarter
 bigger headquarters
 3headquarter
-international company headquarter
+International company headquarters
+4headquarter
+Headquarters
+5headquarter
+Headquarters
 A1_ALTE_KIRCHE
 famous church\n\nA famous old church with\nmarvellous paintings.\nEverybody should see this\nfantastic building.\n
 A2_SCHLOSS1
@@ -187,9 +195,9 @@ Some ruins\n\ntelling of better times. They're\nalways worth a journey.\n
 A4_SCHLOSS2
 Old castle\n\nwith a marvellous collection\nof paintings. Perfect for a\nsightseeing tour, even\nwhen it rains.\n
 A5_STONEHENGE
-Stonehenge\n\nan ancient ring of stones.\nFeel the mystery walking\nbetween the monoliths.\n
+Stonehenge\n\nAn ancient ring of stones.\nFeel the mystery walking\nbetween the monoliths.\n
 A6_DOME
-Old cathedral\n\nthe very heart of this city\nfor nearly thousand years.\n
+Old cathedral\n\nThe very heart of this city\nfor nearly thousand years.\n
 AirDepot
 Air depot of 1900
 AirportShed1930
@@ -209,7 +217,7 @@ Big post office
 BigTerminal477
 Big modern terminal
 Bulk_StationBlg
-coal station
+Bulk goods station
 BusStop
 Bus stop
 Car_StationBlg
@@ -229,7 +237,7 @@ This backyard garage\nwants to get out of this\nshadowy existence for a\nlong ti
 COM_00_05
 Drive through bank. It's\ncalled a drive through\nbecause you don't stop,\nand when you pass through\nyour wallet magically\nempties.The manager can\nusually be seen wringing his\nhands with glee.\n
 COM_00_06
-Better coffee is nowhere to\nbe found that is better\nthan up on this cafe's\nroof-terrace\n
+There is no coffee to\nbe found that is better\nthan up on this cafe's\nroof-terrace\n
 COM_00_08
 Apartment Block\n\nThese apartments appeal to the upper middle class. There are some boutique shops on the lobby floor.
 COM_00_10
@@ -245,7 +253,7 @@ Blade Tower\nThis office building maintains its position on the cutting edge of 
 COM_01_01
 Balloon Launch\n\nThis is a hot-air balloon take off and landing site. This site is frequented by a lot of politicians; that's why you can't see any gas bottles.
 COM_01_04
-Bird Watcher Park\n\nThe city bird-watching association put up the money for this park to be built. It has many trees and bird houses where bird can nest, as well as benches where bird watchers can sit to enjoy the sights and sounds.
+Bird Watcher Park\n\nThe city bird-watching association raised the money for this park to be built. It has many trees and bird houses where bird can nest, as well as benches where bird watchers can sit to enjoy the sights and sounds.
 COM_01_09
 Old cinema. Lots of old\nBlack & White movies\nare shown here. It is very\npopular with Charlie\nChaplin fans.\n
 COM_01_10
@@ -259,7 +267,7 @@ Holiday Tower\n\nThis office building has special events throughout the year. On
 COM_02_02
 Ride Share\n\nThis parking lot is used by carpooling businesspeople as a meeting point for sharing rides. The city has encouraged this practice by posting signs reserving it for this use. Some people sleep in their cars here, but the city does not encourage that.
 COM_02_04
-Heritage Park\n\nThis park is set aside to protect some of the city's heritage trees. Some of these trees are over 200 years old.
+Heritage Park\n\nThis park has been created to protect some of the city's heritage trees. Some of these trees are over 200 years old.
 COM_02_13
 Seafood Restaurant\n\nThis eatery is so popular, the owner has had to expand it three times. He finds himself with less and less office space as he puts in more tables and chairs. To eat supper here, you have to show up at noon, or you might not get a table.
 COM_02_19
@@ -267,7 +275,7 @@ While the building itself is\nnot very notable its\nexternal elevator was soon\n
 COM_03_14
 Pharmacy\n\nThis pharmacy has an extensive storage area to ensure that it has whatever medicines its customers need. It is open 24/7 and has a price-matching guarantee for all generic medicines.
 COM_03_15
-Shortly before WWII this\nDepartment of the Ministry\nof Defense was erected,\ninfluenced by the futurists.\nUnfourtunately, it was\nsoon found out that the\nferro-concrete used was indeed\nmade to last a thousand\nyears. No way to beautify\nthis, even though today it is\nthe headquarter of a charity\norganisation.\n
+Shortly before WWII this\nDepartment of the Ministry\nof Defense was erected,\ninfluenced by the futurists.\nUnfortunately, it was\nsoon found out that the\nferro-concrete used was indeed\nmade to last a thousand\nyears. No way to beautify\nthis, even though today it is\nthe headquarter of a charity\norganisation.\n
 COM_03_17
 Publisher's Headquarters\n\nThis building houses the corporate headquarters of a large magazine publisher. They publish a variety of periodicals, including a mini-zine that lists mass-transit timetables.
 COM_03_19
@@ -275,13 +283,13 @@ Television Studios\n\nThis building houses several television studios. One whole
 COM_03_20
 12-story Office Building\nThis building houses many offices. The building superintendent keeps everything running smoothly, most of the time, even though he's hardly ever there.
 COM_04_15
-This office building has\nbeen retrofitted many\ntimes, as you can see by\nthe satellite dish on the\ntop.  You will also notice a\nglass portion of the roof,\nwhich covers the swimming\npool three floors beneath. \nThe swimming pool has a\nslide, which is intended to\ninspire the computer\nprogrammers within, but\nunfortunately their mood is\noften wrecked when people\ndecide to take off their pants\nand sit on the glass roof.\n
+This office building has\nbeen retrofitted many\ntimes, as you can see by\nthe satellite dish on the\ntop. You will also notice a\nglass portion of the roof,\nwhich covers the swimming\npool three floors beneath. \nThe swimming pool has a\nslide, which is intended to\ninspire the computer\nprogrammers within, but\nunfortunately their mood is\noften wrecked when people\ndecide to take off their pants\nand sit on the glass roof.\n
 COM_10_01
 Beautiful lake with trees\nnearby. What kid wouldn't\nwant to swim here at\nsummer and skate in winter\n
 COM_10_02
-Carging for orignal alpine experience by hour was the best idea farmer Fred ever had in his life; because the small field near town was way to small any other big revenue.
+Carging for original alpine experience by hour was the best idea farmer Fred ever had in his life; because the small field near town was way to small any other big revenue.
 COM_10_05
-This barn have been in use\nin a lot of year by a farmer\nJenkins. You could taste\nfresh milk if you want. Just\ncome here.\n
+This barn have been in use\nin a lot of years by a farmer\nJenkins. You could taste\nfresh milk if you would like.\n Just come in.\n
 COM_10_07
 Meditation Resort\n\nThis converted mansion features a large butterfly garden and live-in meditation consultants to help visitors achieve inner peace. The price to stay the weekend is high, but people still pay it.
 COM_10_08
@@ -289,17 +297,17 @@ Inventor's Studio\nThis building is owned by one of the bright fellows in town w
 COM_10_10
 Gabled Pottery Store\n\nThis store has pottery of all different types. There's even a section where you can throw, glaze, and fire your own pieces, for a small charge.
 COM_10_12
-This old creepy house\nresemble times when\nsimupeople haven't known\nwhat is holy power of\nelectrification or rail.\n
+This old creepy house\nresemble times when\nsimupeople did not know \nwhat was the holy power of\nelectrification or rail.\n
 COM_11_11
 Boarding House\nThis is a cozy place where travelers can rest when they come to this town. Live entertainment is provided one night a week (and when a local performer wants to come in and earn tips on other nights).
 COM_11_12
 Spice Shop\nThis is a shop that carries spices from faraway places. The atmosphere in the shop is worth the visit, even if you don't find a spice you like.
 COM_12_04
-The Mermaid parc attracts thousands of visitors every years - albeit for the wrong reasons. Almost nobody happens to find the small maremate bush in the back corner. (Some people say the spelling error was deliberately introduced by the restaurant owner next to its entrance.)
+The Mermaid parc attracts thousands of visitors every year - albeit for the wrong reasons. Almost nobody happens to find the small maremate bush in the back corner. (Some people say the spelling error was deliberately introduced by the restaurant owner next to its entrance.)
 Control_StationBlg
 railway control centre
 DenkDirk
-Dirk Burkholz Memorial\n\nThis monument is dedicated to Dirk Burkholz who founded the german forum in 2004 and suddenly died at 26 in 2010. He spread the word widely.
+Dirk Burkholz Memorial\n\nThis monument is dedicated to Dirk Burkholz who founded the German forum in 2004 and suddenly died in 2010 at the age of 26. He spread the word widely.
 DenkFlor
 Flor Wauters Memorial\n\nThis monument is dedicated\nto Flor 'WF Ultd.' Wauters,\nthe famous engineer who\ncreated so many great road\nand rail vehicles. He is also\nwell known for designing many\nwell working factories.\n
 DenkHajo
@@ -345,7 +353,7 @@ This warehouse is used for storing wares... or shooting spy thriller movies.
 IND_00_03
 Fuel/Oil Storage Tank\n\nNo smoking is allowed within 25 ft. (8m)
 IND_00_04
-For the welding a place was needed, which could not burning down. So the welded the from corrugated steel plated. Ironically, this is the most long lasting product from this workshop.
+For the welding a place was needed, which could not burn down. So they welded it from corrugated steel plated. Ironically, this is the only long lasting product from this workshop.
 IND_00_05
 This tank holds drinking water for this area of the city.
 IND_00_06
@@ -355,9 +363,9 @@ The building still let you feel the rumble of a big one cylinder engine driving 
 IND_00_14
 Pentagon optics produces the latest infra red binoculars for ... undisclosed customers. You could guess this by the totally not suspicious looking guy in the bush.
 IND_00_16
-The big chimney is actually needed for the many filters. This neat looking building is actually burning hazardous waste. But the colors nearly fooled them all.
+The big chimney is actually needed for the large number of airfilters. This neat looking building is burning hazardous waste. But the colors nearly fooled them all.
 IND_00_18
-Modern gas power station, with high figure of merit and even producing heat for nearby buildings. An industry you could certainly living next to it.
+Modern gas power station, with high figure of merit and even producing heat for nearby buildings. An industry you could certainly live next to.
 IND_01_01
 Free parking. Some people\neven abandon their old\ncars here.\n
 IND_01_04
@@ -367,13 +375,13 @@ Cog Factory\n\nIt makes either gears or corporate employees.
 IND_01_10
 Tool Factory\n\nThis firm makes drop-forged tools. They will provide a free replacement for any tool they made that breaks.
 IND_01_13
-The own of the company change a lot; and thus the only recently painted side is the main entrance.
+The owners of this company change a lot; and thus the only recently painted side is the main entrance.
 IND_01_16
 Guess what is produced here: Neither cough medicine nor plastic molds but Grandma's secret spider recipe - at least this is claimed by the owners.
 IND_02_01
 Brickyard\n\nThis firm makes bricks and cinder blocks of various types and colors.
 IND_02_10
-The old soap works still\nlooks as neat as the day it\nwas erected. A true miracle!\n
+The old soap factory still\nlooks as neat as the day it\nwas erected. A true miracle!\n
 KingsbridgeMonastry
 Monastry\n\nMysterious voices are heard in the morning - or are those rather from the poor guys in the cold showers?
 LargeShipStop
@@ -383,7 +391,7 @@ Heavy duty crane
 LeuchtturmShipStop
 Lighthouse Ship Stop
 Lighthouse
-Lighthouse\n\nOnce the brightest on the shore, but nowdays only preserved to server as mobile base station and to sell postcards to tourists.
+Lighthouse\n\nOnce the brightest on the shore, but nowadays only preserved to serve as a cell base station and to sell postcards to tourists.
 LongBusStop
 Long Bus Stop
 MainTerminal1930
@@ -401,7 +409,7 @@ Monorail Depot Foundation
 OldTownhall
 Historic Hall\n\nThis building used to house the city officials' offices. Now, it houses a museum and coffee shop.
 Patricks_Rock
-Patrick's Rock\n\nClimbing it is only for the fearles. Unfourtunately the same goes for the scalding hot spring at its bottom.)
+Patrick's Rock\n\nClimbing it is only for the fearless. Unfortunately the same goes for the scalding hot spring at its bottom.)
 PlainAirStop
 Aircraft Stop
 PostOffice
@@ -417,59 +425,75 @@ station hall
 rampShipStop
 Boat Ramp
 Raven_Kirche
-Church St. Meinrad\n\nThe hermit St. Meinrad has\nbeen accompagned by two\nravens according to the\nlegend. When he has been\nmurdered, the two ravens\nfollowed the murderers and\nhave convicted them. Today,\nat the place of his hut is\nthe \nmonastery Einsiedeln.\n
+Church St. Meinrad\n\nThe hermit St. Meinrad has\nbeen accompanied by two\nravens according to the\nlegend. When he has been\nmurdered, the two ravens\nfollowed the murderers and\nconvicted them. Today,\nat the place of his hut \nthe \nmonastery Einsiedeln is located.\n
 RES_00_01
-This small house may not look out of the ordinary: But it is right at the center of the Simutrans universe. It was the first buildings errected in Simutrans.
+This small house may not look like much out of the ordinary: But it is right at the center of the Simutrans universe. It was the first buildings erected in Simutrans.
 RES_00_02
-Since he lost everything when the fish bubble economy burst, this CEO now lives in the summer house. Luckily he bough it originally in the name of his dog.\n
+Since he lost everything when the fish bubble economy burst, this CEO now lives in the summer house. Luckily he bought it originally in the name of his dog.\n
 RES_00_03
-The famous pirate Blackbird was once once the owner of this building. However, he did when his heir was young, and left nothing. Generations (and movies) later the owner now has money to extend; but now this is a protected listed building ...\n
+The famous pirate Blackbird was once the owner of this building. However, he did when his heir was young, and left nothing. Generations (and movies) later the owner now has money to extend; but now this is a protected listed building ...\n
 RES_00_04
-This modern house looks nothing out of the ordinary. But the whole structure has an extended tunnel network below, where a scientist works on beaming. However, he is most famed and feared for the frequent power outages in this neighbourhood.\n
+This modern house may not look very special, but the whole structure has an extended tunnel network below. There, a scientist works on beaming. However, he is most famed and feared for the frequent power outages in this neighbourhood.\n
 RES_00_06
-A little fountain. Even if it\nis not so great as the one\nin Geneva, it is delighting\npeople walking around it,\nespecially in the\nsummertime.\n
+A little fountain. Even if it\nis not as big as the one\nin Geneva, it is delighting\npeople passing by,\nespecially in the\nsummertime.\n
 RES_00_07
-It was an old farming house which survived urbanisation. Now it is by far the oldest structure around and people tell scary story about its attic.
+It was an old farming house which survived urbanisation. Now it is by far the oldest structure around and people tell scary stories about its attic.
 RES_00_08
-Medium House with Attached Garage\n\nDon't worry. They use the car to get to one of your mass-transit stations.
+Medium House with Attached Garage\n\nDon't worry. They use the car only to get to one of your mass-transit stations.
 RES_00_09
 Park\n\nNearby residents like to come here to feed the ducks and pigeons.
+RES_00_10
+After having much fun\nbreeding a big family,\ndaddy had to build a big\nhouse with lots of rooms.\nAfter thousands of working\nhours he has learned his\nlessons. The pride of the\nfamily is the living room\nwith its winter garden.\n
 RES_00_12
-Live less ordinary! The\ninterior is unique as well:\nPower outlet are for\nthree-phase-power only,\nthe transparent bath-tube\nis iluminated with neon\nlamps, the stove is powered\nby stirling motor und Paintings\nare projected onto the walls,\nbecause the architect forbid\nnails in the walls.\n
+Live less ordinary! The\ninterior is unique as well:\nPower outlets are for\nthree-phase-power only,\nthe transparent bathtub\nis illuminated with neon\nlamps, the stove is powered\nby avstirling motor and Paintings\nare projected onto the walls,\nbecause the architect forbid\nnails in the walls.\n
 RES_00_13
 Duplex\n\nGood hedges make good neighbors?
 RES_00_16
 This old villa is something of a fixer-upper. On the other hand you will be the only one in town who can operates switches from Alva Edison to light the stairs.\n
 RES_00_17
-Even for old houses like\nthis, consumption-based\nheating cost billing existed\n- everyone had to pay for\nhis own firewood.\n
+Even for old houses like\nthis, consumption-based\nheating costs billing existed\n- everyone had to pay for\nhis own firewood.\n
 RES_00_18
 Even before the war, building companies went bankrupt. The owner of this building used his chance and improved the look and his wallets with a big beer ad.\n
 RES_00_19
-Modern Apartments\n\nEach apartment has a balcony for enjoying the view.
+Modern Apartments\n\nEach apartment has a balcony to enjoy the spectacular view.
 RES_00_21
-In the 60ies this was an award-winning house. Today people are only in awe by the wind it generates in the passage below. At least this took care of the litering in this area.\n
+In the 60ies this was an award-winning house. Today people are only in awe by the wind it generates in the passage below. At least this takes care of the littering in this area.\n
 RES_00_23
-Any room with a window: It sounds well until you try to put you cupboard to a wall - no square corners, not flat walls. Dust bunnies will soon take over this place.\n
+Any room with a window: It sounds nice until you try to put you cupboard to a wall - no square corners, no flat walls. Dust bunnies will soon take over this place.\n
 RES_01_01
 Modern prefab house with a\nlarge room for the kid in the\nattic.\n
 RES_01_02
-A-Frame type house. Very\nstable, but with only a few\nwindows and walls, so it's\nnot really suitable for\npeople who like framed\npictures.\n
+A-Frame type house. Very\nstable, but with only a few\nwindows and walls, so it's\nnot really suitable for\npeople that like framed\npictures.\n
 RES_01_05
 With its large den and shady back yard, this is the home of a retired musician.
 RES_01_07
-Build by a lover of the black forest; even planted two firs. Too bad, this are the only firs for miles.
+Build by a lover of the black forest; even planted two firs. Too bad, these are the only firs for miles.
 RES_01_09
 The public pool company is afraid it will loose its winter income from ice skating due to global warming.
 RES_01_10
 Modern House\n\nThe rooftop patio offers a great place to enjoy the outdoors without leaving the house.
+RES_01_12
+Worker barracks. These are\nfor people who work for a\nbig company during the\nweek; mostly in coal or ore\nmines. Living here is very\nsimple, just beds and two\nbathrooms. The lockers are\nfull of disgusting pictures.\n
 RES_01_23
-The shape stems form a bet. Villain Construction lost a million, because its trademarked V-shaped design actually passed revision.
+The shape stems from a bet. Villain Construction lost a million, because its trademarked V-shaped design actually passed revision.
 RES_02_07
-The former residence of Capt. Tiriros, the famous discoverer of the reef with the same name (which ended his life). It is said that his ghost came back to haunt this house. Thus two trees had been planted by real estate agent; over the years they added a lot to the dark atmosphere.
+The former residence of Capt. Tiriros, the famous discoverer of the reef with the same name (which ended his life). It is said that his ghost came back to haunt this house. Thus two trees had been planted by the real estate agent; over the years they added a lot to the dark atmosphere.
 RES_02_16
 Luxury Apartments\n\nThese apartments give their residents room to breathe. The penthouse is for people who need to breathe more.
 RES_10_11
 The apple tree in the small garden is well fertilized - since we still wait for the reinventing of plumbing. However, it is lacking light for a rich harvest.
+RES_10_15
+This small apartment\nbuilding is home to two\nfamilies. They get along\nwell.\n\n
+RES_11_03
+With its beautifully\nlandscaped front yard, this\nhome has won the prize for\nyard of the month over\nfifteen times.\n\n
+RES_11_04
+You can often find Mr. Bean\nwaxing his car under the\nmaple tree in the front\nyard. Sometimes he may do\nit more than once a day.\n\n
+RES_11_13
+The stones on this house\nare really made of plastic.\nIf you cannot afford real\nstone, fake stone will have\nto do. However, the trees\noutside are real.\n\n
+RES_11_14
+This is the home of the\nfamous football player\nJackson Stonewall. When\nhe is not on his way to a\ngame, he can be found in\nthe back yard throwing a\nfootball with his sons. In\nhis first year of\nprofessional football,\nStonewall had an average\nof 6 touchdowns per game.\nOnly his pharmacist knows\nhow he was able to do so well.\n
+RES_12_03
+This house uses a unique\nmodular design that is\neasily expandable. If more\nroom is needed you can\njust airlift a new room and\nslip it over the center\nsupport. If the demand for\nspace should lessen, you\ncan even sell off a few\nrooms.\n
 Residenz
 Residence\n\nThis place is used by the\nlocal Yoga Guru to teach\nmeditation and inner peace.\nThere are lots of things\ncalled Bongs here.\n
 rightShipStop
@@ -487,7 +511,7 @@ Seaport
 STADIUM2
 Big stadium\n\nhosting all the international\nevents here.\n
 Tennis_Court
-Tennis courts\n\nThe neighbours long for winter, when they can sit ouside again without constant pangs.
+Tennis court\n\nThe neighbours long for winter, when they can sit outside again without hearing the constant pangs.
 Terminal1930
 Airport Terminal (1930)
 Theatre
@@ -559,9 +583,9 @@ factory_Windkraftwerk_details
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
-Oil Refinery
+Oil Refinery (Gasoline)
 3Raffinerie
-Oil Refinery
+Oil Refinery (B+KS)
 Aufwindkraftwerk
 Updraft Power Station
 Autohaus
@@ -631,7 +655,7 @@ Paper mill
 Pharmaceutics
 Medicine Packaging Plant
 Raffinerie
-Refinery (Plastics)
+Refinery (Plastics, Ink, Chemicals)
 Rinnenkraftwerk
 Parabolic Solar Power Plant
 Saegewerk
@@ -945,7 +969,7 @@ H-Trans Car trailer
 Autotransporter
 H-Trans Car transporter
 Autotransportwagen
-TPI Lopomo Car transport waggon
+TPI Lopomo Car transport wagon
 BB1280
 JaCo BB1280 
 BB200
@@ -1043,7 +1067,7 @@ Concept 2
 Concept2Mail
 Concept 2 Mail Car
 Concept2Pass
-Concept 2 Passenger Waggon
+Concept 2 Passenger Wagon
 Concept2Rear
 Concept 2 Rear Engine
 Concorde
@@ -1053,7 +1077,7 @@ Refrigerated car
 Cooling_Truck
 Serj Cooling Truck
 Cooling_Waggon
-Food cooling waggon
+Food cooling wagon
 DaimlerStoll
 RvG Stoll Bus
 DC-3
@@ -1103,7 +1127,7 @@ Empire F7 B-unit
 FastFerry
 Hermes Ferry
 Fishing_Boat
-Fishing ship
+Fishing vessel
 Fishing_Boat_DanMacK
 Fishing boat
 Flachwagen
@@ -1115,9 +1139,9 @@ MHz Long-nose Semi
 GarbageTruck
 Garbage Truck
 Gelenkbus_Ende
-Jointed Bus (rear)
+Joined Bus (rear)
 Gelenkbus_Front
-Jointed Bus
+Joined Bus
 Godm_Spitz
 Passenger Clipper
 Grossraumwagen
@@ -1233,9 +1257,9 @@ Milk truck
 Milk_Waggon
 Milk car
 Moebelschiff
-RvG Crate Freighter
+RvG Furniture Freighter
 Moebelwagen
-DMC Boxcar
+DMC Furniture car
 Muellschiff
 MHz Waste Scow
 NeuOelwagen
