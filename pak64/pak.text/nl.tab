@@ -5,7 +5,7 @@
 #                            Language: nl Nederlands                           #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 22.10 2012                           #
+#                           Date Created: 23.12 2012                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                   - Combuijs                                 #
@@ -19,6 +19,8 @@
 #                        Lorenz Van Damme - gforcetheone                       #
 #                                    note:                                     #
 #                             Mark Knoester - mark                             #
+#                                    note:                                     #
+#                          Michel Vorenhout - michelv                          #
 #                                    note:                                     #
 #                             P. Hamming - phamming                            #
 #                                    note:                                     #
@@ -51,7 +53,7 @@ Scheepslift
 SteelRail
 Stalen spoorbrug
 tb_classic_road
-brug van beton
+Betonnen brug
 ViaductRail
 Bakstenen viaduct
 WoodenRoad
@@ -81,21 +83,21 @@ Stadhuis\n\noud stadhuis\n
 04_CITY_C
 \nStadhuis\n
 1930AirDepot
-Eenvoudige Hangar
+Eenvoudige Hangar uit 1930
 1headquarter
 Uw hoofdkantoor!
 2headquarter
-Uw hoofdkantoor!
+Groot hoofdkantoor
 3headquarter
-Uw hoofdkantoor!
+Uw internationale hoofdkantoor!
 A1_ALTE_KIRCHE
-Oude kerk\n\nEen beroemde oude kerk.\nIedereen moet het een keer\ngezien hebben. \n\n\n\n
+Oude kerk\n\nEen beroemde oude kerk.\nIedereen moet deze een keer\ngezien hebben. \n\n\n\n
 A2_SCHLOSS1
 Neuschwanstein\n\nHet kasteel van de krankzinnige\nkoning. Dit is echt het\nbekijken waard!\n\n\n
 A3_BURG1
 Oude ruines\n\nDeze ruines vertellen een oud\nverhaal. Leuk om eens langs te\ngaan.\n\n
 A4_SCHLOSS2
-Oud kasteel\n\nDit oude kasteel  is altijd een \nbezoekje waard.\n\n
+Oud kasteel\n\nDit oude kasteel  is altijd een \nbezoekje waard, zelfs als\n het regent.\n\n
 A5_STONEHENGE
 Stonehenge\n\nEen oude stenenkring. Zeer\nmysterieus!\n\n
 A6_DOME
@@ -107,7 +109,7 @@ Loods voor post (1901)
 AirStop
 Pier
 AirTerminal477
-Luchthaventerminal
+Luchthaventerminal (1950)
 Avila_Big_StationBlg
 Grote passagiershal
 Avila_Small_StationBlg
@@ -129,9 +131,9 @@ Depot voor straatvoertuigen
 ChannelStop
 laad- en losplaats
 COM_00_14
-Illegale wietplantage in een\noude fabriekshal\n\n
+Illegale wietplantage in een\noude fabriekshal.\n\n
 COM_01_01
-Vertekpunt voor luchtballonnen\n\n
+Vertrekpunt voor luchtballonnen\n\n
 COM_01_10
 Oude bioscoop, vergane glorie.\nTegenwoordig kun je er\nterecht voor cultfilms die je\nin andere bioscopen niet meer\nkunt zien\n\n
 COM_01_18
@@ -141,17 +143,21 @@ Groot kantoorgebouw met\nvele ramen. Als je goed kijkt\nzul je zien dat er const
 COM_01_22
 Hoofdkantoor van een\ninmiddels failliete dotcom\nbedrijf. Gelukkig was het\ngebouw beter bestand tegen\ngebakken lucht dan het\ndotcom bedrijf.\nTegenwoordig zit er een bank\nmet teveel geld.\n\n
 COM_02_02
-Parkeerterrein\n\n
+Carpool-parkeerterrein\n\n
 COM_02_19
 Groot kantoorgebouw met een\nbuitenlift. Vanuit de lift heb je\neen prachtig uitzicht op de\nstad.\n\n
+COM_03_14
+Apotheek
+COM_10_01
+Schattig meertje.
 COM_10_02
-Landschapsarchitect MHz\nheeft dit prachtige park\nspeciaal voor de Simutrans\npopulatie ontworpen\n\n
+Landschapsarchitect MHz\nheeft dit prachtige park\nspeciaal voor de Simutrans\npopulatie ontworpen.\n\n
 COM_10_05
 Historische arbeiderswoning\nmet grote kruidentuin\n\n
 Control_StationBlg
 Traffic control
 DenkFlor
-Flor Wauters Monument\n\nDit monument is opgedragen aan\nFlor 'WF Ultd.' Wauters, de\nberoemde ingenieur die veele\n(vracht)auto's ontworpen\nheeft. Hij is ook bekend van\nde vele ontwerpen van fabrieken.\n\n
+Flor Wauters Monument\n\nDit monument is opgedragen aan\nFlor 'WF Ultd.' Wauters, de\nberoemde ingenieur die vele\n(vracht)auto's ontworpen\nheeft. Hij is ook bekend van\nde vele ontwerpen van fabrieken.\n\n
 DenkHajo
 Hajo Malthaner Monument\n\nStandbeeld voor \nHansjörg Malthaner, \nde schepper van \nSimutrans.\n\n
 DenkMHz
@@ -159,13 +165,13 @@ Georg Heiduk Monument\n\nopgedragen aan Georg Heiduk ("MHz"),\nde ontwerper van 
 DenkOwen
 Deze plek is opgedragen aan\nOwen Rudge de beroemde\ngeld expert en geluids\ntechnicus.\n\n
 DenkSeth
-Deze plek is opgedragen aan\nSeth C. Triggs de beroemde\narchitect die veel mooie\ngebouwen ontworpen heeft.\nHij is ook bekendn voor de\nvele studies om het\nverkeerssysteem te verbeteren.\n\n
+Deze plek is opgedragen aan\nSeth C. Triggs de beroemde\narchitect die veel mooie\ngebouwen ontworpen heeft.\nHij is ook bekend van de\nvele studies om het\nverkeerssysteem te verbeteren.\n\n
 DenkTomas
 Dit monument is opgedragen\naan Tomas Kubes de beroemde\narchitect die geweldige\npanden ontworpen heeft.\n\n
 DenkTrikky
 Monument\n\nDit monument is opgedragen aan\n'Trikky' Rick McGreal de\nberoemde architect die\ngeweldige panden ontworpen\nheeft.\n\n
 DenkVM
-Monument\n\nDit monument is opgedragen aan\nManfred 'VT Vienna'\nTomaschitz de beroemde\ningineur die veel treinen\nontworpen heeft.\n\n
+Monument\n\nDit monument is opgedragen aan\nManfred 'VT Vienna'\nTomaschitz de beroemde\ningenieur die veel treinen\nontworpen heeft.\n\n
 DenkVolker
 Monument\n\nGebouwd voor Volker Meyer. Een\ninspiratie voor Simutrans, op\nvele gebieden.\n\n
 Eingang
@@ -188,6 +194,10 @@ Goods_StationBlg
 Pakhuis
 Gymnasium
 Scholengemeenschap\n\n
+HallBusStop
+Overkapte bushalte
+IND_00_03
+Olietank
 IND_00_18
 Brouwerij van inferieur bier\n\n
 IND_01_03
@@ -197,7 +207,7 @@ Leerbewerkingsbedrijf met als\nspecialiteit zadels voor\nhipische doeleinden.\n\
 IND_01_12
 In deze fabriek worden\nautobanden gerecycled tot\nontbijtkoek\n\n
 IND_01_13
-Zwarte fabriek\n\nDoor een ongeluk met een\nexploderende ketel met een\nzwarte smurrie is deze fabriek\nvoor altijd zwart.\n\n
+Zwarte fabriek\n\nDoor een ongeluk met een\nexploderende ketel vol met een\nzwarte smurrie is deze fabriek\nvoor altijd zwart.\n\n
 LargeShipStop
 Grote vrachtpier
 leftShipStop
@@ -221,7 +231,7 @@ Monorail bodem
 OldTownhall
 voormalig stadhuis\n\n
 Patricks_Rock
-Vulkaangebergte\n\n\nNa miljoenen jaren actief te\nzijn geweest is deze vulkaan\nal eeuwen in  rust en is een\ntoeristische attractie van de\neerste orde. Voor geologen\nen dagjesmensen een favoriete\nbestemming vanwege het\ntypische lava-landschap gevormd\ndoor de vele uitbarstingen in het\nverleden.\n\n
+Vulkaangebergte\n\n\nNa miljoenen jaren actief te\nzijn geweest is deze vulkaan\nal eeuwen in rust en is een\ntoeristische attractie van de\neerste orde. Voor geologen\nen dagjesmensen een favoriete\nbestemming vanwege het\ntypische lava-landschap gevormd\ndoor de vele uitbarstingen in het\nverleden.\n\n
 PlainAirStop
 Vliegtuighalte
 PostOffice
@@ -239,7 +249,7 @@ Aanlegsteiger met helling
 Raven_Kirche
 St. Meinrad kerk\n\n
 RES_01_01
-Modern prefab huis met grote\nzolderkamer\n\n
+Modern prefab huis met grote\nzolderkamer.\nIdeaal voor de kleine.\n
 Residenz
 Residentie\n\nHier kun je door middel van\nmeditatie weer helemaal tot\njezelf komen.\n\n
 rightShipStop
@@ -247,7 +257,7 @@ Kaai met pier
 RUIN_0
 Middelseeuwse ruïne\n\n Dit was eens een groot en\nmooi kasteel voordat het in\n1400 geheel afbrandde. Aan\nde fundamenten kun je nog\nongeveer zien hoe groot het\nkasteel geweest moet zijn.\n
 SandStationMHz
-Zandstation
+Eenvoudig station
 ShipDepot
 Scheepswerf
 ShipDepotEW
@@ -255,7 +265,7 @@ Scheepswerf (OW)
 ShipStop
 Haven
 STADIUM2
-Groot stadion\n\n Alle grote internationale\nevenementen vinden hier\nplaats.\n
+Groot stadion\n\n Alle grote internationale\nwedstrijden vinden hier\nplaats.\n
 Tennis_Court
 Tennisbanen\n\n
 Terminal1930
@@ -265,7 +275,7 @@ Theater\n\n
 Tower1930
 Verkeerstoren (1930)
 TowerMoistboy
-Verkeerstoren
+Verkeerstoren (1950)
 TrainDepot
 Trein remise
 TrainStop
@@ -289,7 +299,7 @@ Ambulance
 FordT
 T-Ford
 green_car
-groen auto
+groene auto
 Motorrad
 Motorfiets
 orange_bus
@@ -303,7 +313,7 @@ gele auto
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
-Raffinaderij (B.zine)
+Raffinaderij (Benzine)
 3Raffinerie
 Raffinaderij (B+KS)
 Autohaus
@@ -337,19 +347,23 @@ IJzererts mijn
 fish_pond
 Visvijver
 fish_swarm
-Visgrond
+School van vissen
 food_processing_plant
 Voedingsmiddelenfabriek
 grain_farm
 Graanboerderij
 grain_mill
 Graanmolen
+grain_windmill
+Windmolen (graan)
 Incinerator
 Vuilverbrander
 Kohlegrube
 Kolenmijn
 Kohlekraftwerk
 Kolencentrale
+Marketplace
+Markt
 Materialswholesale
 Doe-Het-Zelf centrum
 Moebelfabrik
@@ -363,9 +377,11 @@ Booreiland
 Oelfeld
 Olieveld
 Oelkraftwerk
-En. centrale/olie
+Oliecentrale
 Oelpumpe
 Ja-knikker
+old_farm
+Graanboerderij
 Papierfabrik
 Papierfabriek
 Pharmaceutics
@@ -374,6 +390,8 @@ Raffinerie
 Raffinaderij
 Saegewerk
 Houtzagerij
+SaegewerkMHz
+Houtzagerij MHz
 Sandquarry
 Zandgroeve
 Stahlwerk
@@ -450,14 +468,30 @@ waste
 afval
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
+bushes
+Struiken
 flowers
 Bloemen
+gemsen
+Gemsen
 gooses
 ganzen
 Hochsitz1
-Hoogzit
+Uitkijktoren
 Hochsitz2
-Hoogzit
+Uitkijktoren
+moles
+Mollen
+rocks
+Stenen
+See1
+Meer met watervogels
+See2
+Meer
+See4
+Begroeid meer
+sheeps
+Schapen
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Cyclist
@@ -490,6 +524,8 @@ CATEGORY_05
 vloeibaar voedsel
 CATEGORY_06
 Lange goederen
+CATEGORY_07
+Poeder/pillen
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 choose_point
@@ -506,6 +542,8 @@ preSignals
 Seinen voor twee blocks
 preSignalsMonorail
 Seinen voor twee blocks
+Roadgate
+Slagboom
 Signals
 Seinen
 SignalsMonorail
@@ -514,6 +552,38 @@ traffic_light
 Stoplicht
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
+Ahorn-1
+Esdoorn\n
+Ahorn-2
+Esdoorn\n
+Ahorn-Gruppe
+Esdoorns\n
+Birke-1
+Berk\n
+Busch_2
+Struik
+Kiefer_1
+Den\n
+Kiefer_2
+Den\n
+Kiefer_3
+Den\n
+Kiefer_4
+Den\n
+Kiefer_5
+Den\n
+Palmtree1
+Palmboom\n
+Palmtree2
+Palmboom\n
+Palmtree3
+Palmboom\n
+Palmtree4
+Palmboom\n
+Palmtree5
+Hoge palmboom\n
+Palmtree6
+Korte palmboom\n
 Pappel-1
 Populier\n
 Pappel-2
@@ -532,10 +602,18 @@ Tanne_5
 Denneboom\n
 Tanne_6
 Naaldboom\n
+Tree1
+Linde
+Tree3
+Populier
 Tree4
 Lariks\n
+Tree5
+Jeneverbes
 Tree6
 Spar\n
+tropictree7
+Zeeden
 Willow
 Wilg\n
 #____________________________________tunnel_____________________________________
@@ -543,7 +621,7 @@ Wilg\n
 FastRailTunnel
 Hogesnelheidstunnel
 FastRoadTunnel
-Autobaantunnel
+Snelwegtunnel
 RailTunnel
 Spoorwegtunnel
 RoadTunnel
@@ -594,6 +672,8 @@ Autotransportwagen
 Canonball Autotransporter
 Be5-7
 BLS Be 5/7
+Blimp
+Zeppelin
 Bretteranhaenger
 WF Ultd. Planken oplegger
 Brettertransporter
@@ -610,6 +690,8 @@ Buchtransporter
 Serj/H-Trans Boeken vrachtwagen
 Buchwagen
 VT Vienna Boeken wagon
+Bulkcarriage
+Bulkgoederen wagon
 Bus
 H-Trans Bus
 Cargosprinter-Front
@@ -635,7 +717,11 @@ Concept 2 post wagen
 Concept2Pass
 Concept 2 passagierswagon
 Cooling_Waggon
-Voedselwaggon met koeling
+Voedselwagon met koeling
+Deponielaster
+Afvalwagen
+Doubledeck_city_bus
+Dubbeldekker
 DoubleDecker
 Dubbeldekker
 E44
@@ -666,6 +752,8 @@ Erzwagen
 H-Trans ertswagen (30t)
 FastFerry
 O.Bang Passagiers Hovercraft
+Fishing_Boat
+Vissersboot
 Flachwagen
 Dieplader
 Fokker_F27
@@ -680,6 +768,8 @@ Gelenkbus_Front
 Scharnierbus
 Godm_Spitz
 Passagiers-zeilschip
+Grossraumwagen
+Grote passagiers wagon
 Guppy
 Guppie-transportvliegtuig
 H-Trans-Pantheress
@@ -752,6 +842,8 @@ Oelanhaenger
 H-Trans Olietank oplegger
 Oelwagen
 VT Vienna Olie tanker
+Oilbarge
+Olietanker
 Oiltrailer
 Oplegger voor olie
 OldOil
@@ -773,7 +865,7 @@ H-Trans Post vrachtwagen
 Postwagen
 H-Trans Post/Baggage wagon
 PrPersonenwagen
-Passagier wagon I
+Passagierswagon I
 PrPostwagen
 Post wagon I
 RenaultTH5
@@ -845,7 +937,7 @@ X prototype passagierstrein
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road
-Asfaltstraat
+Asfaltweg
 city_road
 Weg binnen de bebouwde kom
 cobblestone_road
@@ -860,6 +952,8 @@ gavel_road
 Gravelweg
 Kanal
 Kanaal
+mip_cobblestone_road
+Klinkerstraat
 Powerline
 Hoogspanningsleiding
 Rillenschienen
@@ -867,7 +961,7 @@ tramrails
 runway_grass
 Startbaan (gras)
 runway_modern
-moderne startbaan
+Start- en landingsbaan
 sand_track
 Rails op een ondergrond van zand
 steel_sleeper_track
