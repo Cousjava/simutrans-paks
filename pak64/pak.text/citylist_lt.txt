@@ -5,7 +5,8 @@ Ariogala
 Baltoji Vokë
 Birðtonas
 Birþai
-Daugai Druskininkai
+Daugai
+Druskininkai
 Dûkðtas
 Dusetos
 Eiðiðkës
@@ -13,7 +14,8 @@ Elektrënai
 Eþerëlis
 Gargþdai
 Garliava
-Gelgaudiðkis Grigiðkës
+Gelgaudiðkis
+Grigiðkës
 Ignalina
 Jieznas
 Jonava
@@ -21,7 +23,8 @@ Joniðkëlis
 Joniðkis
 Jurbarkas
 Kaiðiadorys
-Kalvarija Kaunas
+Kalvarija
+Kaunas
 Kavarskas
 Kazlø Rûda
 Këdainiai
@@ -37,14 +40,16 @@ Lentvaris
 Linkuva
 Marijampolë
 Maþeikiai
-Molëtai Naujoji Akmenë
+Molëtai
+Naujoji Akmenë
 Nemenèinë
 Neringa
 Obeliai
 Pabradë
 Pagëgiai
 Pakruojis
-Palanga Pandëlys
+Palanga
+Pandëlys
 Panemunë
 Panevëþys
 Pasvalys
@@ -52,14 +57,16 @@ Plungë
 Priekulë
 Prienai
 Radviliðkis
-Ramygala Raseiniai
+Ramygala
+Raseiniai
 Rietavas
 Rokiðkis
 Rûdiðkës
 Salantai
 Seda
 Simnas
-Skaudvilë Skuodas
+Skaudvilë
+Skuodas
 Smalininkai
 Subaèius
 Ðakiai
@@ -68,7 +75,8 @@ Subaèius
 Ðiauliai
 Ðilalë
 Ðilutë
-Ðirvintos Ðvenèionëliai
+Ðirvintos
+Ðvenèionëliai
 Ðvenèionys
 Tauragë
 Telðiai
@@ -76,7 +84,8 @@ Tytuvënai
 Trakai
 Troðkûnai
 Ukmergë
-Utena Uþventis
+Utena
+Uþventis
 Vabalninkas
 Varëna
 Varniai
@@ -85,7 +94,8 @@ Venta
 Viekðniai
 Vievis
 Vilkaviðkis
-Vilkija Vilnius
+Vilkija
+Vilnius
 Virbalis
 Visaginas
 Zarasai
