@@ -40,8 +40,8 @@ retire_year=1940
 climates=tropic,mediterran,temperate,tundra
 BackImage[0][0][0][1][0][0]=cur-city.6.0
 BackImage[0][0][0][0][0][0]=cur-city.7.0
-BackImage[0][0][0][1][0][0]=cur-city.6.1
-BackImage[0][0][0][0][0][0]=cur-city.7.1
+BackImage[0][0][0][1][0][1]=cur-city.6.1
+BackImage[0][0][0][0][0][1]=cur-city.7.1
 --------------------
 Obj=building
 Name=Gymnasium
