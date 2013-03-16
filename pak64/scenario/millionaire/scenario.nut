@@ -1,5 +1,5 @@
 
-map.file = "../book-empire/book-empire.sve"
+map.file = "millionaire.sve"
 
 scenario.short_description = "Millionaire"
 scenario.author = "prissi (scripting by Dwachs)"
