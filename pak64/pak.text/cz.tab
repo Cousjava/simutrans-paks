@@ -5,9 +5,11 @@
 #                             Language: cz Cestina                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 22.10 2012                           #
+#                           Date Created: 17.03 2013                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                    - An_dz                                   #
+#                   note: Verified where all texts are shown                   #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
 #                              Frank Penz - FrankP                             #
@@ -581,7 +583,7 @@ factory_Marketplace_details
 factory_Materialswholesale_details
 title>Velkoobchod s materiálem - detaily</title>\n<h1>Velkoobchod s materiálem</h1> \n<p>Ve zdej¹ím velkoobchodu nakoupíte materiál na stavbu domu. Nic není dokonalé: cihly, písek a vápno zatím nejsou k dostání. </p>
 factory_Nutzwald_details
-<title>Hospodáøský les - detaily</title>\n<h1>Hozpodáøský les</h1>\n<p>Døevo je významnou hospodáøskou surovinou. Staví se z nìj domy, je surovinou pro výrobu papíru, slou¾í jako topivo.</p>\n<p>V hospodáøsky intenzivnì vyu¾ívaných lesích jsou vysazovány pøedev¹ím rychle rostoucí stromy. To vede ke vzniku monokultur.</p>\n<p>Nejbli¾¹í silná vichøice nás upozorní, jak jsme se mýlili. Na místì lesa je zem pokryta vývratem. A hned je co tì¾it.</p>
+<title>Hospodáøský les - detaily</title>\n<h1>Hospodáøský les</h1>\n<p>Døevo je významnou hospodáøskou surovinou. Staví se z nìj domy, je surovinou pro výrobu papíru, slou¾í jako topivo.</p>\n<p>V hospodáøsky intenzivnì vyu¾ívaných lesích jsou vysazovány pøedev¹ím rychle rostoucí stromy. To vede ke vzniku monokultur.</p>\n<p>Nejbli¾¹í silná vichøice nás upozorní, jak jsme se mýlili. Na místì lesa je zem pokryta vývratem. A hned je co tì¾it.</p>
 factory_Oelbohrinsel_details
 Ropná plo¹ina slou¾í k tì¾bì ropy z moøského dna. Mù¾e být pevnì pøipevnìna ke dnu nebo plovat po hladinì.\nPomocí ropných plo¹in se tì¾í pøedev¹ím v mìlkých pobøe¾ních vodách pevniského ¹elfu.
 factory_Oelfeld_details

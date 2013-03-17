@@ -5,14 +5,18 @@
 #                             Language: ja Japanese                            #
 #                                Encoding: UTF-8                               #
 #                               Font : m+10r.bdf                               #
-#                           Date Created: 22.10 2012                           #
+#                           Date Created: 17.03 2013                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                    - An_dz                                   #
+#                   note: Verified where all texts are shown                   #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
 #                              Frank Penz - FrankP                             #
 #                                    note:                                     #
 #                                    - Hamo73                                  #
+#                                    note:                                     #
+#                            Shun Yamashita - Tajia                            #
 #                                    note:                                     #
 #                           Tomohiro MATSUMURA - hiro                          #
 #                                    note:                                     #
@@ -291,7 +295,7 @@ MonorailFoundation
 MonorailGround
 モノレール地上部
 OldTownhall
-前世紀の役場\n\n冬がす寒かったから、窓があまりない。
+前世紀の役場\n\n冬に寒かったため、窓があまりない。
 Patricks_Rock
 玄武岩の噴煙口\n\n数百万年の時を経て、爆発\nを繰り返した火山はその活\n動を終え、溶岩は山腹で凝\n固しました。山の上では空\n気がとても澄み、水が冷え\nて清涼であるため、地質学\nに興味をもつ人々だけでな\nく、登山や散策を楽しむ人\n人も惹きつけます。\n岩の上に登ることができま\nすが、そのためには特別な\n許可が必要です。\n
 PlainAirStop
@@ -310,6 +314,8 @@ rampShipStop
 港セット(斜面)
 Raven_Kirche
 聖マインラート教会\n\n隠者聖マインラートは二羽\nのワタリガラスに伴われて\n伝説となりました。彼が殺\n害されたとき、二羽のワタ\nリガラスは殺人者たちの付\nいて回り、彼らに有罪を宣\n告しました。今日、彼の小\n屋があった場所はアインジ\nーデルン修道院となってい\nます。\n
+RES_00_01
+この小さな家は、とても規格外には見えないかもしれません。\nしかし、これこそSimutrans世界の中心であり、\n初めて建てられた建物の1つなのです。\n
 RES_00_06
 小さな噴水。たとえそれが\nジュネーブの噴水に匹敵す\nる素晴らしいものでなくと\nも、夏にその周りを散歩し\nている人を喜ばせています。\n
 RES_00_09

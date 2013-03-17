@@ -5,9 +5,11 @@
 #                            Language: id Indonesia                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 22.10 2012                           #
+#                           Date Created: 17.03 2013                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                    - An_dz                                   #
+#                   note: Verified where all texts are shown                   #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
 #                             Edi Imanto - EImanto                             #
@@ -20,18 +22,38 @@
 #                                    note:                                     #
 #                          Markus Pristovsek - prissi                          #
 #                                    note:                                     #
+#                                    - vonjo                                   #
+#                                    note:                                     #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
 #____________________________________bridge_____________________________________
 ClassicRail
-Jembatan Beton
+Jembatan rel beton
 ClassicRoad
-Jembatan Dalam Kota
+Jembatan jalan beton
+koka_Bridge_single
+Rel layang
 MaglevBridge
 Jembatan Maglev
+mlm_concrete_bridge
+Jembatan monorel beton
+ModernRoad
+Jembatan jalan modern
+MonorailRamp
+Rel monorel
+PowerBridge
+Jembatan kabel listrik
+Schiffhebewerk
+Pengangkat kapal
 SteelRail
-Jembatan Pelat Baja
+Jembatan rel gelagar baja
+tb_classic_road
+Jembatan jalan beton
+ViaductRail
+Jembatan air bata
+WoodenRoad
+Jembatan jalan kayu
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 01_CITY
@@ -42,24 +64,6 @@ Balai Kota
 Balai Kota
 04_CITY
 Balai Kota
-1930AirDepot
-Hanggar (1930)
-Avila_Big_StationBlg
-Ruang Tunggu Modern (Besar)
-Avila_Small_StationBlg
-Ruang Tunggu Modern (Kecil)
-Avila_Warehouse_StationBlg
-Gudang Barang
-CarStop
-Loading Area
-Control_StationBlg
-Ruang Kontrol
-ShipStop
-Pelabuhan Penumpang
-TrainStop
-Stasiun Modern
-VictorianStation
-Ruang Tunggu Klasik
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
 factory_bakery_details
@@ -94,14 +98,30 @@ factory_Stonequarry_details
 <title>About Tambang Batuan</title><h1>Tambang Batuan</h1><p>Bangunan ini adalah tempat diambilnya bebatuan dari bumi, semua jenis batuan diambil untuk memenuhi kebutuhan masyarakat Simutrans dalam membangun rumahnya, selain itu batuan juga digunakan sebagai bahan baku pabrik semen.</p><p><br><br>Penambangan batu dimulai sejak dimulainya Zaman Batu (Stone Age), puncaknya adalah pada masa jayanya kerajaan Mesir Kuno. Pada masa itu, Mesir Kuno telah berhasil memproduksi batu-batu berkualitas dari dalam bumi, kemudian batu-batu itu digunakan untuk membangun monumen-monumen seperti Piramida, Spynx, Obelisk, serta berbagai produk seni lainnya.<p>
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
+2Raffinerie
+Kilang minyak (bensin)
+3Raffinerie
+Kilang minyak (B+KS)
+Aufwindkraftwerk
+Pembangkit listrik tenaga uap panas surya
+Autohaus
+Toko mobil
+Autohersteller
+Pabrik mobil
 bakery
-Pabrik Roti
+Toko Roti
 brewery
-Pabrik Softdrink
+Pabrik bir
+Buchgrosshandel
+Toko buku
 cannery
-Pengalengan Makanan
+Pabrik pengalengan
 Cementmill
 Pabrik Semen
+ChemicalPlant
+Pabrik kimia
+CHEMIST
+Toko obat
 Concretefactory
 Pabrik Beton
 cow_farm
@@ -113,47 +133,87 @@ Percetakan
 Erzbergwerk
 Tambang Bijih Besi
 fish_pond
-Empang
+Kolam ikan
 fish_swarm
 Peternakan Ikan
 food_processing_plant
 Pabrik Makanan
+Geokraftwerk
+Pembangkit listrik tenaga panas bumi
 grain_farm
-Pertanian Gandum
+Ladang gandum
 grain_mill
-Pabrik Tepung
+Pengolahan gandum
+grain_windmill
+Kincir angin
+Incinerator
+Pembakaran sampah
+Kohlegrube
+Tambang batu bara
 Kohlekraftwerk
-Pembangkit Listrik
+Pembangkit listrik tenaga batu bara
+Marketplace
+Pasar
 Materialswholesale
-Toko Bangunan
+Toko bahan bangunan
 Moebelfabrik
-Pabrik Furnitur
+Pabrik perabot kayu
 Moebelhaus
-Department Store
+Toko perabot kayu
+Muellkraftwerk
+Pembangkit listrik tenaga limbah
 Nutzwald
-Hutan Industri
+Perkebunan kayu
 Oelbohrinsel
-Tambang Minyak
+Pengeboran minyak
 Oelfeld
-Tambang Minyak
+Ladang minyak
+Oelkraftwerk
+Pembangkit listrik tenaga minyak bumi
+Oelpumpe
+Pompa minyak
+old_farm
+Ladang
 Papierfabrik
 Pabrik Kertas
+Pharmaceutics
+Pabrik obat
 Raffinerie
-Penyulingan Minyak
+Kilang minyak (plastik, tinta, kimia)
+Rinnenkraftwerk
+Pembangkit listrik tenaga surya
 Saegewerk
-Pemotongan Kayu
+Penggergajian
+SaegewerkMHz
+Tempat penggergajian
 Sandquarry
 Tambang Pasir
+scrap_yard
+Pembuangan sampah
+Stahlwerk
+Pabrik baja
 Stonequarry
-Tambang Batuan
+Penggalian
 supermarket
-Supermarket
+Toserba
+TANKE
+Pompa bensin
+thermisches_Solarkraftwerk
+Pembangkit listrik tenaga pengumpulan panas surya
+Turmkraftwerk
+Pembangkit listrik tenaga menara surya
+Windkraftwerk
+Pembangkit listrik tenaga angin
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
 Mobil
+beer
+Bir
 Bretter
-Kayu Olahan
+Papan kayu
+Buecher
+Buku
 canned_food
 Makanan Kaleng
 Cement
@@ -164,16 +224,30 @@ Concrete
 Beton
 Eisenerz
 Bijih Besi
+fish
+Ikan
+flour
+Tepung
+food
+Makanan
 Gasoline
 Bensin
+grain
+Gandum
 Holz
 Kayu
 Kohle
-Batubara
+Batu bara
+meat
+Daging
+Medicine
+Obat
+milk
+Susu
 Moebel
-Furnitur
+Perabot kayu
 None
-none
+tidak ada
 Oel
 Minyak
 Papier
@@ -182,89 +256,129 @@ Passagiere
 Penumpang
 Post
 Pos
+PrintersInk
+Tinta
 Sand
 Pasir
 Stahl
 Baja
 Stone
 Batu
+waste
+Sampah
+#___________________________________menu_text___________________________________
+#___________________________________menu_text___________________________________
+MONORAILTOOLS
+Peralatan maglev
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
-Kardus
+Barang kotakan
 CATEGORY_02
-bulk goods
+Barang berat
 CATEGORY_03
-Minyak
+Minyak/bahan bakar
 CATEGORY_04
-cooled goods
+Barang dingin
 CATEGORY_05
-Susu
+Makanan cair
 CATEGORY_06
 Kayu
 CATEGORY_07
-Produk Pertanian
+Bubuk/butiran
+rolls
+gulungan
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 choose_point
-Penunjuk Arah
+Sinyal pemilih (Memilih pemberhentian kosong secara otomatis)
 ChooseSignals
-Penunjuk Arah
+Sinyal pemilih (Memilih pemberhentian kosong secara otomatis)
+ChooseSignalsMonorail
+Sinyal pemilih (Memilih pemberhentian kosong secara otomatis)
+Endofchoosetrack
+Akhir fungsi sinyal pemilih
+LongBlockSignals
+Sinyal blok panjang
 Minimum80
-batas kecepatan minimum 80
+kecepatan minimum 80 km/h
+NoAirEntry
+Dilarang lewat
 NoEntry
-Dilarang Masuk
+Dilarang lewat
 preSignals
-Pre-Sinyal
+Pra-sinyal (meniru sinyal di depannya)
+preSignalsMonorail
+Pra-sinyal (meniru sinyal di depannya)
+RailClose
+Dilarang lewat
+Railgate
+Gerbang rel (pemain lain dilarang lewat)
+Roadgate
+Gerbang jalan (pemain lain dilarang lewat)
 Signals
 Sinyal
+SignalsMonorail
+Sinyal
 traffic_light
-Lampu Merah
+Lampu lalu lintas
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
+FastRailTunnel
+Terowongan kereta kecepatan tinggi
+FastRoadTunnel
+Terowongan jalan kecepatan tinggi
 RailTunnel
-Terowongan
+Terowongan kereta
 RoadTunnel
-Terowongan
-#____________________________________vehicle____________________________________
-#____________________________________vehicle____________________________________
-1Ben140
-Bennhardt B-140 "Limet"
-1Dampflokomotive
-H-Trans 0-4-0T
-2Ben155
-Abro Br250
-2Diesellokomotive
-H-Trans Br218
-2Ellok
-H-Trans Tigress I
-Horsemailcariage
-Delman Pengirim Pos
-Horsepapercariage
-Kereta Angkut Kertas
+Terowongan jalan
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road
 Jalan Aspal
 city_road
-Jalan Perkotaan
+Jalan kota
 cobblestone_road
 Jalan Batuan
 concrete_sleeper_track
 Rel Beton
 dirt_road
 Jalan Tanah
+elevated_monorail
+Rel monorel layang
+gavel_road
+Jalan kerikil
 MaglevTrack
-Jalur Maglev
+Rel Maglev
+MaglevTrackElevated
+Rel maglev layang
+mip_cobblestone_road
+Jalan batuan MIP
 monorail
-Monorel
+Rel monorel
 Powerline
-Jalur Listrik (SUTET)
+Kabel listrik (SUTET)
 Rillenschienen
-Rel Trem Klasik
+Rel kereta ringan
+river
+Sungai yang dapat dilewati
+river2
+Sungai
+runway_grass
+Landasan rumput
 runway_modern
-Runway Modern
+Landasan
+sand_track
+Rel kayu (di atas pasir)
 steel_sleeper_track
 Rel Baja
+taxiway
+Jalan pesawat
 wooden_sleeper_track
-Rel Kayu
+Rel kayu (di atas batu)
+#__________________________________way-object___________________________________
+#__________________________________way-object___________________________________
+HighSpeedOverheadpower
+Listrik untuk kecepatan tinggi
+SlowOverheadpower
+Listrik

@@ -5,9 +5,11 @@
 #                              Language: ko Korean                             #
 #                                Encoding: UTF-8                               #
 #                                Font : cyr.bdf                                #
-#                           Date Created: 22.10 2012                           #
+#                           Date Created: 17.03 2013                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                    - An_dz                                   #
+#                   note: Verified where all texts are shown                   #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
 #                              Frank Penz - FrankP                             #
@@ -244,6 +246,20 @@ Roadster
 래그탑 로드스터
 yellow_car
 노란색 승용차
+#__________________________________dummy_info___________________________________
+#__________________________________dummy_info___________________________________
+factory_bakery_details
+베이커리(상세)
+factory_brewery_details
+맥주양조장(상세)
+factory_cannery_details
+통조림공장(상세)
+factory_Cementmill_details
+시멘트공장(상세)
+factory_Sandquarry_details
+모래채석장(상세)
+factory_Stonequarry_details
+채석장(상세)
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -446,6 +462,10 @@ See4
 호수
 sheeps
 양
+#___________________________________menu_text___________________________________
+#___________________________________menu_text___________________________________
+MONORAILTOOLS
+모노레일 도구
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Couple
