@@ -137,20 +137,6 @@ Image[3][0]=Tree_Nadel.4.11
 Image[4][0]=Tree_Nadel.5.11
 ------------------------------------
 #
-# Kiefer
-#
-Obj=tree
-Name=Tree4
-copyright=Hajo
-DistributionWeight=200
-climates=tundra,temperate,mediterran
-Image[0][0]=ls-trees04.0.0
-Image[1][0]=ls-trees04.0.1
-Image[2][0]=ls-trees04.0.2
-Image[3][0]=ls-trees04.0.3
-Image[4][0]=ls-trees04.0.4
---------------------
-#
 # Tanne
 #
 Obj=tree
