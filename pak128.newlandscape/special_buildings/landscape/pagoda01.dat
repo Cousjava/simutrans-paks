@@ -1,0 +1,11 @@
+Obj=building
+Name=Pagoda01
+Copyright=Rmax500 & mEGa
+Type=cur
+Passengers=30
+Dims=1,1,2
+climates=tropic, temperate, mediterran
+BackImage[0][0][0][0][0][0]=pagoda01.1.0
+BackImage[1][0][0][0][0][0]=pagoda01.1.1
+BackImage[0][0][0][0][0][1]=pagoda01.1.2
+BackImage[1][0][0][0][0][1]=pagoda01.1.3

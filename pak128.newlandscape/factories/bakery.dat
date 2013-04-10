@@ -1,0 +1,49 @@
+Obj=factory
+name=bakery
+copyright=Patrick
+
+Location=City
+DistributionWeight=1
+
+# needed productivity in tones  : 700 (5 trains / month)
+# size                          : 3x3 = 9
+# average productivity per tile : 39
+
+Productivity=640
+Range=200
+
+Electricity_amount=10
+Electricity_boost=1000
+Mail_demand=20
+Mail_boost=500
+Passenger_demand=20
+Passenger_boost=800
+
+#Smoke=industry_smoke
+#SmokeTile=0,1
+#SmokeOffset=-13,-28
+#SmokeSpeed=96
+
+# total flour input 500
+InputGood[0]=flour
+InputFactor[0]=70
+InputCapacity[0]=5000
+InputSupplier[0]=0
+
+#OutputGood[0]=food
+#OutputCapacity[0]=400
+
+MapColor=194
+Dims=3,3
+
+BackImage[0][0][0][0][0]=bakery.0.2
+BackImage[0][1][0][0][0]=bakery.0.1
+BackImage[0][2][0][0][0]=bakery.0.0
+BackImage[0][0][1][0][0]=bakery.1.2
+BackImage[0][1][1][0][0]=bakery.1.1
+BackImage[0][2][1][0][0]=bakery.1.0
+BackImage[0][0][2][0][0]=bakery.2.2
+BackImage[0][1][2][0][0]=bakery.2.1
+BackImage[0][2][2][0][0]=bakery.2.0
+
+# EOF
