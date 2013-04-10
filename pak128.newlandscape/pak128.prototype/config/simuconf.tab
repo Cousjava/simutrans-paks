@@ -9,7 +9,10 @@
 # simutrans/pakfilefolder/config/simuconf.tab
 # ~/simutrans/simuconf.tab (read a second time, s.a.)
 #
+#############################  pakset settings  ############################
 
+tile_height = 8
+height_conversion_factor = 2
 
 #############################  passenger stuff  ############################
 
