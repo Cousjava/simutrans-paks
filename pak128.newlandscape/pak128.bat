@@ -204,6 +204,9 @@ del ground.Outside.pak
 ..\..\makeobj.exe merge ../../simutrans/pak128/ground.all.pak *.pak >..\..\err.txt
 del *.pak
 
+cd ..\rivers
+..\..\makeobj.exe pak160 ../../simutrans/pak128/rivers.all.pak ./ >>..\err.txt
+
 cd ..\trees
 ..\..\makeobj.exe pak128 ../../simutrans/pak128/trees.all.pak ./ >>..\err.txt
 
