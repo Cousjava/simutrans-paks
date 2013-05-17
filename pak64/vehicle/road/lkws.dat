@@ -339,7 +339,7 @@ FreightImage[SW]=veh-paper.3.7
 -----------------------
 obj=vehicle
 name=Buchtransporter
-copyright=Hajo
+copyright=Sergiu Croitor/Hajo
 waytype=road
 freight=Buecher
 payload=26

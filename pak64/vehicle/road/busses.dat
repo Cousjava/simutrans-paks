@@ -241,7 +241,7 @@ EmptyImage[SW]=gelenkbus.1.7
 --
 obj=vehicle
 name=Serj-Mini
-copyright=Serj
+copyright=Sergiu Croitor
 waytype=road
 engine_type=diesel
 smoke=Diesel

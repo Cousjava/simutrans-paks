@@ -104,6 +104,13 @@ just_in_time = 1
 # use beginner mode for new maps (can be switched anyway on the new map dialog)
 first_beginner = 0
 
+# how much amount in transport is sent before further distribution stops
+# This is only enabled when "just_in_time" is enabled
+# The limit is given in percent of factory storage (0=off)
+# It should be not too low to allow big convois fully loaded at more than one
+# factory (for medium sized maps 500 seems a reasonable number)
+maximum_intransit_percentage = 500
+
 # number of periods for averaging the amount of arrived pax/mail at factories for boost calculation
 # one period represents a fixed interval of 2^18 ms in-game time
 # value can range from 1 to 16, inclusive; 1 means no averaging; default is 4
@@ -138,6 +145,15 @@ player_color[1] = 1,4
 # how long is a diagonal (512: faktor 2=1024/512, old way, 724: sqrt(2)=1024/724
 # THIS WILL BE ONLY USED, WHEN THIS FILE IS IN THE pakxyz/config!
 diagonal_multiplier = 724
+
+# If enabled, default background is black
+#background_color = 240
+
+# Draw the earth slope to mark the border (default 1 on)
+draw_earth_border = 1
+
+# Tile the outside with the ground.ouside.pak (default 0 off)
+draw_outside_tile = 1
 
 # special pak set colors for day and night
 special_color[0]=0x57, 0x65, 0x6F, 0xD3, 0xC3, 0x80 // Dark windows, lit yellowish at night
