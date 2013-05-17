@@ -5,7 +5,7 @@
 #                             Language: cz Cestina                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 17.03 2013                           #
+#                           Date Created: 17.05 2013                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - An_dz                                   #
@@ -61,7 +61,7 @@ Nosníkový ¾eleznièní most
 tb_classic_road
 Betonový most
 ViaductRail
-kamenný most
+Kamenný most
 WoodenRoad
 Døevìný most
 #___________________________________building____________________________________
@@ -147,7 +147,7 @@ Pøístøe¹ek pro dobytek
 ChannelStop
 Molo na vodním kanále
 COM_00_01
-Kavárna\nPùvodnì velící mùstek zaoceánské lodi. Pradìdeèkovi majitele patøila celá loï. Potomci se ale nemohli se dohodnout kam plout, tak si loï mezi sebe rozdìlili. Na tohoto zbyl velicí mùstek, nyní slou¾ící jako kavárna. Ta velké prosklená okna jsou pùvodní.
+Kavárna\nPùvodnì velící mùstek zaoceánské lodi. Pradìdeèkovi majitele patøila celá loï. Potomci se ale nemohli se dohodnout kam plout, tak si loï mezi sebe rozdìlili. Na tohoto zbyl velicí mùstek, nyní slou¾ící jako kavárna. Ta velká prosklená okna jsou pùvodní.
 COM_00_02
 Nezávislá benzínová stanice\n\nJe nezávislá na na\ntransportních korporacích\njako ta tvoje, ale není\npotøeba ji hned bourat.\nNevezme ¾ádné tvé\nzákazníky\n
 COM_00_03
@@ -155,7 +155,7 @@ Pùjèovna automibilù\n
 COM_00_05
 Banka\nPrávì v tomto bankovním domu Krejcar & Trhlina byla vynalezena penì¾eka, co si vybírá poplatky za no¹ení penìz.
 COM_00_06
-Prodejna akvarijních rybièek\nKapra na Vánoce tu sice nekoupíte, ale v nadobce pod vodotryskem si prohlédnete exotické rybièky. V pøízemí se nachází kadeønictví.
+Prodejna akvarijních rybièek\nKapra na Vánoce tu sice nekoupíte, ale v nádobce pod vodotryskem si prohlédnete exotické rybièky. V pøízemí se nachází kadeønictví.
 COM_00_08
 Èin¾ovní dùm s obchody v\npøízemí\n
 COM_00_10
@@ -645,7 +645,7 @@ Mlékárna
 Druckerei
 Tiskárna
 Erzbergwerk
-¾eleznorudný dùl
+®eleznorudný dùl
 fish_pond
 Chovný rybník
 fish_swarm
@@ -661,7 +661,7 @@ Mlýn
 grain_windmill
 Vìtrný mlýn
 Incinerator
-spalovna odpadu
+Spalovna odpadu
 Kohlegrube
 Uhelný dùl
 Kohlekraftwerk
@@ -687,7 +687,7 @@ Olejová elektrárna
 Oelpumpe
 Ropný vrt
 old_farm
-stará farma
+Stará farma
 Papierfabrik
 Papírna
 Pharmaceutics
@@ -703,7 +703,7 @@ Stará pila
 Sandquarry
 Píseèný lom
 scrap_yard
-sbìrný dvùr
+Sbìrný dvùr
 Stahlwerk
 Slévárna
 Stonequarry
@@ -712,46 +712,50 @@ supermarket
 Supermarket
 TANKE
 Èerpací stanice
+thermisches_Solarkraftwerk
+Termální solární elektrárna
+Turmkraftwerk
+Termální solární elektrárna
 Windkraftwerk
 Vìtrná elektrárna
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
-Automobily
+Auta
 beer
-piva
+Pivo
 Bretter
 Prkna
 Buecher
 Knihy
 canned_food
-konzerv
+Konzervy
 Chemicals
 Chemikálie
 Concrete
 Beton
 Eisenerz
-¾elezná ruda
+®elezná ruda
 fish
-ryb
+Ryby
 flour
-mouky
+Mouka
 food
-jídla
+Jídlo
 Gasoline
 Benzín
 grain
-obilí
+Obilí
 Holz
 Døevo
 Kohle
 Uhlí
 meat
-masa
+Maso
 Medicine
 Léky
 milk
-mléka
+Mléko
 Moebel
 Nábytek
 None
@@ -763,7 +767,7 @@ Papír
 Passagiere
 Cestující
 Plastik
-Plast
+Plasty
 Post
 Po¹ta
 PrintersInk
@@ -775,7 +779,7 @@ Ocel
 Stone
 Kámen
 waste
-Odpad
+Odpadky
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
 bushes
@@ -890,6 +894,10 @@ Ahorn-Gruppe
 skupina javorù
 Birke-1
 bøíza\n
+Buche-1
+buk
+Busch_2
+keø
 Kiefer_1
 borovice
 Kiefer_2
@@ -932,8 +940,12 @@ Tanne_5
 jedle
 Tanne_6
 jedle
+Tree3
+Bøíza
 Tree4
 Borovice\n
+Tree5
+Jalovec
 Tree6
 Jedle\n
 Willow
@@ -1108,6 +1120,8 @@ DaimlerStoll
 autobus Daimler Stoll
 DC-3
 Dacota DC-3
+Deponielaster
+Nákladní vùz na odpadky
 Doubledeck_city_bus
 Dvoupatrový mìstský autobus
 DoubleDecker
@@ -1140,6 +1154,8 @@ FastFerry
 O.Bang Fast Ferry vzná?edlo
 Fishing_Boat
 Rybáøská loï
+FordZugmaschine
+Tahaè Ford
 Gelenkbus_Ende
 kloubový autobus (koncová èást)
 Gelenkbus_Front

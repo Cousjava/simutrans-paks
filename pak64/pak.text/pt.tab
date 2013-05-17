@@ -5,7 +5,7 @@
 #                            Language: pt Portugues                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 17.03 2013                           #
+#                           Date Created: 17.05 2013                           #
 #                                                                              #
 #                                   authors:                                   #
 #                               Adilson - Adilson                              #
@@ -780,6 +780,10 @@ See4
 Brejo
 sheeps
 Ovelhas
+#___________________________________menu_text___________________________________
+#___________________________________menu_text___________________________________
+MONORAILTOOLS
+Maglevs
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Couple
