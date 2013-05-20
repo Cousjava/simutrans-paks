@@ -9,16 +9,16 @@
 #
 #These lines must be edited in pak128\config\simuconf.tab 
 #rivers:
-# The highest number is the smallest. A river with max_speed==0 is not navigavable by ships.
-#river_type[0] = river_00
-#river_type[1] = river_01
-#river_type[2] = river_02
-#river_type[3] = river_03
-#river_type[4] = river_04
+# The highest number is the smallest. A river with max_speed==0 is not navigable by ships.
+#river_type[0] = river_30
+#river_type[1] = river_20
+#river_type[2] = river_10
+#river_type[3] = river_0b
+#river_type[4] = river_0a
 #
 --------------------------------------------------------------------------------
 Obj=way
-Name=river_04
+Name=river_0a
 copyright=Fabio Gonella
 cost=0
 maintenance=0
@@ -27,7 +27,7 @@ draw_as_ding=1
 max_weight=1
 intro_year = 1
 waytype=water
-#system_type=255
+system_type=255
 icon=> rivers.0.3
 cursor=rivers.1.2,-16,-32
 # Summer
@@ -82,7 +82,7 @@ ImageUp2[9][1]=rivers.5.5,-16,-16
 ImageUp2[12][1]=rivers.5.4,-16,-16
 --------------------------------------------------------------------------------
 Obj=way
-Name=river_03
+Name=river_0b
 copyright=Fabio Gonella
 cost=0
 maintenance=0
@@ -91,7 +91,7 @@ draw_as_ding=1
 max_weight=1
 intro_year = 1
 waytype=water
-#system_type=255
+system_type=255
 icon=> rivers.0.4
 cursor=rivers.7.2,-16,-32
 # Summer
@@ -146,16 +146,16 @@ ImageUp2[9][1]=rivers.11.5,-16,-16
 ImageUp2[12][1]=rivers.11.4,-16,-16
 --------------------------------------------------------------------------------
 Obj=way
-Name=river_02
+Name=river_10
 copyright=Fabio Gonella
 cost=0
 maintenance=0
-topspeed=0
+topspeed=10
 draw_as_ding=1
 max_weight=1
 intro_year = 1
 waytype=water
-#system_type=255
+system_type=255
 icon=> rivers.0.5
 cursor=rivers.13.2,-16,-32
 # Summer
@@ -179,10 +179,10 @@ ImageUp[3][0]=rivers.16.2,-16,-16
 ImageUp[6][0]=rivers.16.3,-16,-16
 ImageUp[9][0]=rivers.16.1,-16,-16
 ImageUp[12][0]=rivers.16.0,-16,-16
-ImageUp2[3][0]=rivers.17.2,-16,-16
-ImageUp2[6][0]=rivers.17.3,-16,-16
-ImageUp2[9][0]=rivers.17.1,-16,-16
-ImageUp2[12][0]=rivers.17.0,-16,-16
+#ImageUp2[3][0]=rivers.17.2,-16,-16
+#ImageUp2[6][0]=rivers.17.3,-16,-16
+#ImageUp2[9][0]=rivers.17.1,-16,-16
+#ImageUp2[12][0]=rivers.17.0,-16,-16
 # Winter
 Image[-][1]=rivers.13.6,-16,-16
 Image[N][1]=rivers.18.6,-16,-16
@@ -204,22 +204,22 @@ ImageUp[3][1]=rivers.16.6,-16,-16
 ImageUp[6][1]=rivers.16.7,-16,-16
 ImageUp[9][1]=rivers.16.5,-16,-16
 ImageUp[12][1]=rivers.16.4,-16,-16
-ImageUp2[3][1]=rivers.17.6,-16,-16
-ImageUp2[6][1]=rivers.17.7,-16,-16
-ImageUp2[9][1]=rivers.17.5,-16,-16
-ImageUp2[12][1]=rivers.17.4,-16,-16
+#ImageUp2[3][1]=rivers.17.6,-16,-16
+#ImageUp2[6][1]=rivers.17.7,-16,-16
+#ImageUp2[9][1]=rivers.17.5,-16,-16
+#ImageUp2[12][1]=rivers.17.4,-16,-16
 --------------------------------------------------------------------------------
 Obj=way
-Name=river_01
+Name=river_20
 copyright=Fabio Gonella
 cost=0
 maintenance=0
-topspeed=0
+topspeed=20
 draw_as_ding=1
 max_weight=1
 intro_year = 1
 waytype=water
-#system_type=255
+system_type=255
 icon=> rivers.0.6
 cursor=rivers.19.2,-16,-32
 # Summer
@@ -243,10 +243,10 @@ ImageUp[3][0]=rivers.22.2,-16,-16
 ImageUp[6][0]=rivers.22.3,-16,-16
 ImageUp[9][0]=rivers.22.1,-16,-16
 ImageUp[12][0]=rivers.22.0,-16,-16
-ImageUp2[3][0]=rivers.23.2,-16,-16
-ImageUp2[6][0]=rivers.23.3,-16,-16
-ImageUp2[9][0]=rivers.23.1,-16,-16
-ImageUp2[12][0]=rivers.23.0,-16,-16
+#ImageUp2[3][0]=rivers.23.2,-16,-16
+#ImageUp2[6][0]=rivers.23.3,-16,-16
+#ImageUp2[9][0]=rivers.23.1,-16,-16
+#ImageUp2[12][0]=rivers.23.0,-16,-16
 # Winter
 Image[-][1]=rivers.19.6,-16,-16
 Image[N][1]=rivers.24.6,-16,-16
@@ -267,23 +267,23 @@ Image[SW][1]=rivers.21.7,-16,-16
 ImageUp[3][1]=rivers.22.6,-16,-16
 ImageUp[6][1]=rivers.22.7,-16,-16
 ImageUp[9][1]=rivers.22.5,-16,-16
-ImageUp[12][1]=rivers.22.4,-16,-16
-ImageUp2[3][1]=rivers.23.6,-16,-16
-ImageUp2[6][1]=rivers.23.7,-16,-16
-ImageUp2[9][1]=rivers.23.5,-16,-16
-ImageUp2[12][1]=rivers.23.4,-16,-16
+#ImageUp[12][1]=rivers.22.4,-16,-16
+#ImageUp2[3][1]=rivers.23.6,-16,-16
+#ImageUp2[6][1]=rivers.23.7,-16,-16
+#ImageUp2[9][1]=rivers.23.5,-16,-16
+#ImageUp2[12][1]=rivers.23.4,-16,-16
 --------------------------------------------------------------------------------
 Obj=way
-Name=river_00
+Name=river_30
 copyright=Fabio Gonella
 cost=0
 maintenance=0
-topspeed=0
+topspeed=30
 draw_as_ding=1
 max_weight=1
 intro_year = 1
 waytype=water
-#system_type=255
+system_type=255
 icon=> rivers.0.7
 cursor=rivers.25.2,-16,-32
 # Summer
@@ -307,10 +307,10 @@ ImageUp[3][0]=rivers.28.2,-16,-16
 ImageUp[6][0]=rivers.28.3,-16,-16
 ImageUp[9][0]=rivers.28.1,-16,-16
 ImageUp[12][0]=rivers.28.0,-16,-16
-ImageUp2[3][0]=rivers.29.2,-16,-16
-ImageUp2[6][0]=rivers.29.3,-16,-16
-ImageUp2[9][0]=rivers.29.1,-16,-16
-ImageUp2[12][0]=rivers.29.0,-16,-16
+#ImageUp2[3][0]=rivers.29.2,-16,-16
+#ImageUp2[6][0]=rivers.29.3,-16,-16
+#ImageUp2[9][0]=rivers.29.1,-16,-16
+#ImageUp2[12][0]=rivers.29.0,-16,-16
 # Winter
 Image[-][1]=rivers.25.6,-16,-16
 Image[N][1]=rivers.30.6,-16,-16
@@ -332,8 +332,8 @@ ImageUp[3][1]=rivers.28.6,-16,-16
 ImageUp[6][1]=rivers.28.7,-16,-16
 ImageUp[9][1]=rivers.28.5,-16,-16
 ImageUp[12][1]=rivers.28.4,-16,-16
-ImageUp2[3][1]=rivers.29.6,-16,-16
-ImageUp2[6][1]=rivers.29.7,-16,-16
-ImageUp2[9][1]=rivers.29.5,-16,-16
-ImageUp2[12][1]=rivers.29.4,-16,-16
+#ImageUp2[3][1]=rivers.29.6,-16,-16
+#ImageUp2[6][1]=rivers.29.7,-16,-16
+#ImageUp2[9][1]=rivers.29.5,-16,-16
+#ImageUp2[12][1]=rivers.29.4,-16,-16
 --------------------------------------------------------------------------------
