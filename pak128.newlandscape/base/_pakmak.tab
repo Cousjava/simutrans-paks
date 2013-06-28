@@ -27,3 +27,6 @@ smokes
 station_buildings
 tram_tracks
 water_all
+
+OPTIONS
+compile yes
