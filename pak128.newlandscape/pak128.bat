@@ -40,7 +40,10 @@ rem for newer Windows versions can be added /EXCLUDE:svn
 
 rem new writing
 rem  ------------------------
-cd base\misc_GUI
+cd base
+..\makeobj.exe pak128 ..\simutrans\pak128 ./ >..\..\err.txt
+
+cd .\misc_GUI
 ..\..\makeobj.exe pak128 >..\..\err.txt
 rem symbol.biglogo.pak must stay a single file - so it is copied into the pak folder before the others are moved and merged
 copy symbol.biglogo.pak ..\..\simutrans\pak128
@@ -197,12 +200,13 @@ cd ..\..\landscape\groundobj_static
 ..\..\makeobj.exe pak128 ../../simutrans/pak128/groundobj.all.pak ./ >>..\err.txt
 
 cd ..\grounds
-..\..\makeobj.exe pak128 >..\..\err.txt
+rem #..\..\makeobj.exe pak128 >..\..\err.txt
 rem ground.Outside.pak must stay a single file - so it is copied into the pak folder before the others are merged
-copy ground.Outside.pak ..\..\simutrans\pak128
-del ground.Outside.pak
-..\..\makeobj.exe merge ../../simutrans/pak128/ground.all.pak *.pak >..\..\err.txt
-del *.pak
+rem #copy ground.Outside.pak ..\..\simutrans\pak128
+rem #del ground.Outside.pak
+rem #..\..\makeobj.exe merge ../../simutrans/pak128/ground.all.pak *.pak >..\..\err.txt
+rem #del *.pak
+..\..\makeobj.exe pak128 ../../simutrans/pak128/ground.all.pak ./ >..\..\err.txt
 
 cd ..\rivers
 ..\..\makeobj.exe pak160 ../../simutrans/pak128/rivers.all.pak ./ >>..\err.txt
