@@ -2,6 +2,7 @@ Const WaysFolderPath = "..\roads\"
 Const BridgesFolderPath = "..\road_bridges\"
 Const ElevatedFolderPath = "..\road_elevated\"
 Const TunnelsFolderPath = "..\road_tunnels\"
+Const CmdOptiPng = "optipng" '"optipng -o7" for highest compression
 
 Const Author = "Fabio Gonella"
 
@@ -100,6 +101,6 @@ End Function
 Private Function OptiPng(ByVal Path1)
 	Dim objShell
 	Set objShell = CreateObject ("WScript.shell")
-	objShell.Run "optipng -o7 """ & Path1 & "", 1, True
+	objShell.Run CmdOptiPng & " """ & Path1 & "", 1, True
 	Set objShell = Nothing
 End Function
