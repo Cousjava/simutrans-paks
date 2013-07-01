@@ -1,13 +1,14 @@
-;; SIMUTRANS TOOLS FOR GIMP 0.6+ working copy
+;; SIMUTRANS TOOLS FOR GIMP 0.8
 ;; ============================================================================================
 ;;
-;; working copy
+;; ver. 0.8 - 01/07/2013
+;; CHG Isometric surface tool transforms a front image into any slope
+;;     (tool completely reworked)
+;;
+;; ver. 0.7 - unreleased
 ;; ADD Multilayer transformtion tool (rotate & flip)
 ;; CHG Multilayer tools can filter for visible/not visible
 ;; CHG Swap Colors default to fore/back colors
-;; CHG Isometric Surface Helper tool converts any to any: front, wall, floor, slope with 
-;;     source autodetect and optional flip/rotate transformation
-;; CHG Isometric surface tools now crop the result
 ;;
 ;; ver. 0.6 - 19/06/2012
 ;; CHG Menu reordering
@@ -373,20 +374,6 @@
 	(cons (/ (length (cdr (member m (reverse l)))) (length l)) (/ (length l)))
 )
 
-(define (crop-to-alpha image drawable)
-	(gimp-image-undo-group-start image)
-	(gimp-selection-layer-alpha drawable)
-	(let* ((result (gimp-selection-bounds image)))
-		(gimp-image-crop image 
-			(- (list-ref result 3) (list-ref result 1)) ;new-width 
-			(- (list-ref result 4) (list-ref result 2)) ;new-height 
-			(list-ref result 1) ;offx 
-			(list-ref result 2) ;offy
-		)
-	)
-	(gimp-image-undo-group-end image)
-)
-
 (define (translate image drawable offx offy clone)
 	(gimp-image-undo-group-start image)
 	(when (zero? (car (gimp-selection-is-empty image)))
@@ -398,224 +385,6 @@
 				(gimp-buffer-delete buffer)
 			)	
 		)
-	)
-	(gimp-image-undo-group-end image)
-)
-
-(define (scale-image image drawable . param)
-	(gimp-image-undo-group-start image)
-	(let* 
-		(
-			(width 	 		(car (gimp-drawable-width 	drawable)))
-			(height 		(car (gimp-drawable-height 	drawable)))
-			(width-ratio	(if (>= (length param) 1) (list-ref param 0) 1))
-			(height-ratio	(if (>= (length param) 2) (list-ref param 1) width-ratio))
-			(interpolation	(if (>= (length param) 3) (list-ref param 2) INTERPOLATION-NONE))
-			(new-width		(ceiling (* width (cond ((positive? width-ratio) width-ratio) ((negative? width-ratio) (/ (abs width-ratio))) (else 1)))))
-			(new-height		(ceiling (* height (cond ((positive? height-ratio) height-ratio) ((negative? height-ratio) (/ (abs height-ratio))) (else 1)))))
-		)
-		(gimp-image-scale-full image new-width new-height interpolation)
-	)
-	(gimp-image-undo-group-end image)
-)
-
-(define (horizontal-skew image drawable . param)
-	(gimp-image-undo-group-start image)
-	(if (null? param) (set! param (list 0)))
-	(let*
-		(
-			;(progress	(if (list? (car (last param))) (car (last param)) nil))
-			;(direction	(if (null? progress) param (reverse (cdr (reverse param)))))
-			(direction	param)
-			(width 	 	(car (gimp-drawable-width 	drawable)))
-			(height 	(car (gimp-drawable-height 	drawable)))
-			(new-width  (ceiling (+ width (abs (* (/ (apply + direction) (length direction)) height)))))
-			(offx		(if (positive? (apply + direction)) 0 (- new-width width)))
-			(index		1)
-		)
-		(gimp-image-resize image new-width height offx 0)
-		(gimp-layer-resize-to-image-size drawable)
-		(while (< index height)
-			;(unless (null? progress)
-			;	(gimp-progress-set-text (list-ref progress 2))
-			;	(gimp-progress-update (+ (list-ref progress 0) (* (/ index height) (- (list-ref progress 1) (list-ref progress 0)))))
-			;)
-			(gimp-progress-pulse)
-			(let* ((dir	(list-ref direction (modulo (- index 1) (length direction)))))
-				(unless (zero? dir)
-					(gimp-rect-select image 0 0 new-width (- height index) CHANNEL-OP-REPLACE 0 0)
-					(gimp-floating-sel-anchor (car (gimp-selection-float drawable dir 0)))
-				)
-			)
-			(set! index (+ index 1))
-		)
-	)
-	(gimp-image-undo-group-end image)
-)
-
-(define (vertical-skew image drawable . param)
-	(gimp-image-undo-group-start image)
-	(let*
-		(
-			(direction	(if (null? param) +1 (if (<= (car param) 0) -1 +1)))
-			(alignment	(if (or (null? param) (null? (cdr param))) AL-LEFT (cadr param)))
-			;(progress	(if (or (null? param) (null? (cdr param)) (null? (cddr param))) nil (caddr param)))
-			(width 	 	(car (gimp-drawable-width 	drawable)))
-			(height 	(car (gimp-drawable-height 	drawable)))
-			(new-width  (* (ceiling (/ width 4)) 4))			
-			(new-height (* (+ height (if (odd? height) 1 0)) 1.5))
-			(offx		(cond	((= alignment AL-RIGHT) (- new-width width))
-								((= alignment AL-CENTER) (/ (- new-width (* 2 (if (> direction 0) (ceiling (/ width 2)) (floor (/ width 2))))) 2))
-								(else 0)
-						)
-			)
-			(offy		(if (> direction 0) 0 (- new-height height)))
-			(index		2)
-		)
-		(gimp-image-resize image new-width new-height offx offy)
-		(gimp-layer-resize-to-image-size drawable)
-		(while (< index new-width)
-			;(unless (null? progress)
-			;	(gimp-progress-set-text (list-ref progress 2))
-			;	(gimp-progress-update (+ (list-ref progress 0) (* (/ index new-width) (- (list-ref progress 1) (list-ref progress 0)))))
-			;)
-			(gimp-progress-pulse)
-			(gimp-rect-select image index 0 2 new-height CHANNEL-OP-REPLACE 0 0)
-			(gimp-floating-sel-anchor (car (gimp-selection-float drawable 0 (* (quotient index 2) direction))))
-			(set! index (+ index 2))
-		)
-	)
-	(gimp-image-undo-group-end image)
-)
-
-(define (shear-borders image drawable dir)
-	(gimp-image-undo-group-start image)
-	(let* 
-		(
-			(height (car (gimp-drawable-height drawable))) 
-			(width (car (gimp-drawable-width drawable)))
-			(alpha? (lambda (x y) (zero? (vector-ref (cadr (gimp-drawable-get-pixel drawable x y)) 3))))
-		)
-		(gimp-selection-none image)
-		(if (zero? dir)
-			(begin
-				(let* ((L2R #t) (R2L #t))
-					(let* ((index (- height 1)))
-						(while (>= index 0)
-							(if (even? (- height index))
-								(begin (set! L2R (and L2R (alpha? 0 index))) (set! R2L (and R2L (alpha? (- width 1) index))))
-								(begin (set! R2L (and R2L (alpha? 0 index))) (set! L2R (and L2R (alpha? (- width 1) index))))
-							)
-							(set! index (- index 1))
-						)
-					)
-					(when (or L2R R2L)
-						(if R2L (gimp-image-flip image ORIENTATION-HORIZONTAL))
-						(let* (	(index (- height 3)))
-							(while (>= index 0)
-								(gimp-rect-select image 1 index 1 1 CHANNEL-OP-ADD 0 0)
-								(set! index (- index 2))
-							)
-						)
-						(let* ((sel (selection-save image)))
-							(translate image drawable -1 +1 0)
-							(gimp-selection-load sel)
-							(gimp-selection-translate image +1 0)
-							(gimp-rect-select image 1 0 1 1 CHANNEL-OP-ADD 0 0)
-							(translate image drawable -1 +0 1)
-							(gimp-selection-load sel)
-							(gimp-selection-translate image (- width 2) +1)
-							(translate image drawable -1 -1 0)
-							(gimp-image-remove-channel image sel)
-						)
-						(gimp-image-resize image (- width 1) height 0 0)
-						(gimp-layer-resize-to-image-size drawable)
-						(if R2L (gimp-image-flip image ORIENTATION-HORIZONTAL))
-					)
-				)
-			)
-			(begin
-				(if (negative? dir) (gimp-image-flip image ORIENTATION-HORIZONTAL))
-				(gimp-image-resize image (+ width 1) height 0 0)
-				(gimp-layer-resize-to-image-size drawable)
-				(let* ((index (- height 2)))
-					(while (>= index 0)
-						(gimp-rect-select image 0 index 1 1 CHANNEL-OP-ADD 0 0)
-						(set! index (- index 2))
-					)
-				)	
-				(translate image drawable +1 -1 0)
-				(gimp-selection-none image)
-				(let* ((index (- height 3)))
-					(while (>= index 0)
-						(gimp-rect-select image (- width 1) index 1 1 CHANNEL-OP-ADD 0 0)
-						(set! index (- index 2))
-					)
-				)
-				(let* ((sel (selection-save image)))
-					(translate image drawable +1 +1 0)
-					(gimp-selection-load sel)
-					(gimp-selection-translate image -1 0)
-					(gimp-rect-select image (- width 1) 0 1 1 CHANNEL-OP-ADD 0 0)
-					(translate image drawable +1 +0 1)
-					(gimp-image-remove-channel image sel)
-				)
-				(if (negative? dir) (gimp-image-flip image ORIENTATION-HORIZONTAL))
-			)
-		)
-	)
-	(gimp-selection-none image)
-	(gimp-image-undo-group-end image)
-)
-
-(define (thicken-borders image drawable dir)
-	(gimp-image-undo-group-start image)
-	(let* 
-		(
-			(height 	(car (gimp-drawable-height drawable))) 
-			(width 		(car (gimp-drawable-width drawable)))
-			(new-width	(if (positive? dir) (+ width 2) (- width 2)))
-			(offx		(if (positive? dir) +1 -1))
-		)
-		(gimp-image-resize image new-width height offx 0)
-		(gimp-layer-resize-to-image-size drawable)
-		(when (positive? dir)
-			(gimp-rect-select image 1 0 1 height CHANNEL-OP-REPLACE 0 0)
-			(translate image drawable -1 0 1)
-			(gimp-rect-select image (- new-width 2) 0 1 height CHANNEL-OP-REPLACE 0 0)
-			(translate image drawable +1 0 1)
-			(gimp-selection-none image)
-		)
-	)
-	(gimp-image-undo-group-end image)		
-)
-
-(define (vertical-stretch image drawable ratio . interpolation)
-	(gimp-image-undo-group-start image)
-	(set! interpolation (if (null? interpolation) INTERPOLATION-NONE (car interpolation)))
-	(let* 
-		(
-			(width 	 		(car (gimp-drawable-width 	drawable)))
-			(height 		(car (gimp-drawable-height 	drawable)))
-			(new-height		(ceiling (* height (cond ((positive? ratio) ratio) ((negative? ratio) (/ (abs ratio))) (else 1)))))
-			(top-buffer		"")
-			(bottom-buffer	"")
-		)
-		(gimp-rect-select image 0 0 width 1 CHANNEL-OP-REPLACE 0 0)
-		(set! top-buffer (car (gimp-edit-named-copy drawable "simutrans-vertical-stretch-top")))
-		(gimp-selection-translate image 0 (- height 1))
-		(set! bottom-buffer (car (gimp-edit-named-copy drawable "simutrans-vertical-stretch-bottom")))
-		(gimp-image-crop image width (- height 2) 0 1)
-		(gimp-image-scale-full image width (- new-height 2) interpolation)
-		(gimp-image-resize image width new-height 0 1)
-		(gimp-layer-resize-to-image-size drawable)
-		(gimp-rect-select image 0 0 width 1 CHANNEL-OP-REPLACE 0 0)
-		(gimp-floating-sel-anchor (car (gimp-edit-named-paste drawable top-buffer 1)))
-		(gimp-selection-translate image 0 (- new-height 1))
-		(gimp-floating-sel-anchor (car (gimp-edit-named-paste drawable bottom-buffer 1)))
-		(gimp-buffer-delete top-buffer)
-		(gimp-buffer-delete bottom-buffer)
-		(gimp-selection-none image)
 	)
 	(gimp-image-undo-group-end image)
 )
@@ -971,147 +740,46 @@
 	)
 )
 
-(define (script-fu-simutrans-isometric-surface image drawable src-shape src-orientation src-alignment transf dst-shape dst-orientation dst-alignment zoom)
+(define (script-fu-simutrans-isometric-surface image drawable inclination orientation interpolation)
 	(gimp-image-undo-group-start image)
+	(unless (= (car (gimp-image-get-floating-sel image)) drawable) 
+		(unless (zero? (car (gimp-selection-is-empty image))) (gimp-selection-all image))
+		(set! drawable (car (gimp-selection-float drawable 0 0)))
+	)
 	(let* 
 		(
-			(temp-buffer-name	"simutrans-isometric-shape")
-			(autodetect			nil)
-			(prog				nil)
-			(info				"")
-			(interpolate		0)
-			(clip-result		0)
+			(width	(car (gimp-drawable-width  drawable))) 
+			(height	(car (gimp-drawable-height drawable)))
+			;Southern orientation
+			(xs3		(+ (list-ref (gimp-drawable-offsets drawable) 0) width	-0.5 ))
+			(ys3		(+ (list-ref (gimp-drawable-offsets drawable) 1) height  	 ))
+			(xs2		(- xs3 		width 		(if (<= 	inclination	-3)	2 0) 	 ))
+			(ys2		(- ys3	(/	width	2)	(if (<= -2	inclination	+0)	0 1) 	 ))
+			(xs1		(+ xs3 		height 		(if (<= 	inclination	-2)	2 0) 	 ))
+			(ys1		(- ys3 	(* 	height		(/	(+	2 	inclination) 4)	   ) 	 )) 
+			(xs0		(- xs1 		width 		(if (<= 	inclination	-3)	2 0) 	 ))
+			(ys0		(- ys1 	(/ 	width	2) 	(if (<= 	inclination	+0)	0 1) 	 ))
+			;Eastern orientation
+			(xe2		(+ (list-ref (gimp-drawable-offsets drawable) 0) 		-0.5 ))
+			(ye2		(+ (list-ref (gimp-drawable-offsets drawable) 1) height		 ))
+			(xe3		(+ xe2 		width 		(if (<= 	inclination	-2)	2 0) 	 ))
+			(ye3		(- ye2	(/	width	2)	(if (<= 	inclination	-2)	1 0) 	 ))
+			(xe0		(- xe2 		height 		(if (<= 	inclination	-2)	2 0) 	 ))
+			(ye0		(- ye2 	(* 	height		(/	(+	2	inclination) 4)	   ) 	 ))
+			(xe1		(+ xe0 		width 		(if (<= 	inclination	-2)	2 0) 	 ))
+			(ye1		(- ye0 	(/ 	width	2) 	(if (<= 	inclination	-2)	1 0) 	 ))
 		)
-
-		;Cut to temp buffer
-		;==================
-		(unless (zero? (car (gimp-selection-is-empty image))) (gimp-selection-all image))
-		(set! temp-buffer-name 
-			(car
-				(gimp-edit-named-cut drawable temp-buffer-name)
-			)
-		) ;end of set! temp-buffer-name
-		
-		;Edit in temp image
-		;==================
-		(set! temp-buffer-name 
-			(car
-				(edit-buffer-in-temporary-image temp-buffer-name 
-					(lambda (temp-image temp-layer)
-						(crop-to-alpha temp-image temp-layer)
-						(when (or (= src-shape SH-DEFAULT) (= src-orientation OR-DEFAULT))
-							(let* ((autodetect			(detect-shape temp-image temp-layer)))
-							(debug "Autodetected shape" autodetect)
-							(set! src-shape 		(list-ref autodetect 0))
-							(set! src-orientation 	(list-ref autodetect 1))
-							(set! src-alignment 	(list-ref autodetect 2))
-							)
-						)
-						;(if (= src-alignment AL-DEFAULT) 
-						;	(cond
-						;		((= src-orientation OR-SOUTH)	(set! src-alignment AL-RIGHT))
-						;		((= src-orientation OR-EAST)	(set! src-alignment AL-LEFT))
-						;		(else 							(set! src-alignment AL-CENTER))
-						;	)
-						;)
-						(if (= src-shape SH-DEFAULT) ;Autodetect failed 
-							(gimp-message "Impossible to autodetect the source shape, orientation or alignment. Please select an orientation and an alignment and try again.")
-							(begin
-								(if (= dst-shape SH-DEFAULT) 		(set! dst-shape 		src-shape))
-								(if (= dst-orientation OR-DEFAULT)	(set! dst-orientation 	src-orientation))
-								(if (= dst-alignment AL-DEFAULT) 	(set! dst-alignment 	src-alignment))
-								(set! info (string-append	(list-ref (SH-LIST) src-shape) " " (list-ref (OR-LIST) src-orientation) " " 
-															(if (> transf TR-NONE) (list-ref TR-LIST transf) "") " -> "
-															(list-ref (SH-LIST) dst-shape) " " (list-ref (OR-LIST) dst-orientation)))
-								;(gimp-progress-set-text info)
-								
-								;If not front image, transform the surface back to front image
-								;=============================================================
-								(let*
-									(
-										(horizontal-shear 
-											(cond
-												((= src-shape SH-FRONT)   +0.0)
-												((= src-shape SH-TILE)    +1.0)
-												((= src-shape SH-WALL)    +0.0)
-												((= src-shape SH-SLOPE-1) +2.0)
-												((= src-shape SH-SLOPE-2) +1.5)
-											)
-										)
-										(vertical-shear   (if (= src-shape SH-FRONT)   +0.0   -0.5))
-									)
-									(gimp-drawable-transform-shear-default temp-layer ORIENTATION-VERTICAL   (* (car (gimp-drawable-width  temp-layer)) vertical-shear  ) interpolate clip-result)
-									(gimp-drawable-transform-shear-default temp-layer ORIENTATION-HORIZONTAL (* (car (gimp-drawable-height temp-layer)) horizontal-shear) interpolate clip-result)
-								)
-
-								;If a transformation is selected, apply it now
-								;=============================================
-								(cond 
-									((= transf TR-ROTATE-90 ) (gimp-image-rotate temp-image ROTATE-90 ))
-									((= transf TR-ROTATE-270) (gimp-image-rotate temp-image ROTATE-270))
-									((= transf TR-ROTATE-180) (gimp-image-rotate temp-image ROTATE-180))
-									((= transf TR-FLIP-HOR  ) (gimp-image-flip temp-image ORIENTATION-HORIZONTAL))
-									((= transf TR-FLIP-VER  ) (gimp-image-flip temp-image ORIENTATION-VERTICAL  ))
-								)
-								
-								;Transform the image into the selected surface
-								;=============================================
-								(let*
-									(
-										(vertical-stretch
-											(cond
-												((= dst-shape SH-SLOPE-1)  +1.25)
-												((= dst-shape SH-SLOPE-2)  +1.50)
-												(else 					   +1.00)
-											)
-										)										
-										(vertical-shear
-											(cond
-												((= dst-shape SH-FRONT)    +0.00)
-												(else                      +0.50)
-											)
-										)										
-										(horizontal-shear
-											(cond
-												((= dst-shape SH-FRONT)    +0.00)
-												((= dst-shape SH-WALL)     +0.00)
-												(else (/ -1.00 vertical-stretch))
-											)
-										)										
-									)
-									(gimp-layer-scale-full temp-layer 
-										(car (gimp-drawable-width  temp-layer)) 
-										(* (car (gimp-drawable-height temp-layer)) vertical-stretch) 
-										FALSE interpolate
-									)
-									(gimp-drawable-transform-shear-default temp-layer 
-										ORIENTATION-HORIZONTAL 
-										(* (car (gimp-drawable-height temp-layer)) horizontal-shear) 
-										interpolate clip-result
-									)
-									(gimp-drawable-transform-shear-default temp-layer 
-										ORIENTATION-VERTICAL   
-										(* (car (gimp-drawable-width  temp-layer)) vertical-shear  ) 
-										interpolate clip-result
-									)
-								)
-								;(gimp-progress-update 1.000)
-							)
-						)
-					) ;end of lambda (temp-image temp-layer)
-				)
-			)
-		) ;end of set! temp-buffer-name 
-
-		;Paste back buffer
-		;=================
-		(gimp-edit-named-paste drawable temp-buffer-name 1)
-		(gimp-selection-none image)
-		(gimp-buffer-delete temp-buffer-name)
-
+		(gimp-drawable-transform-perspective drawable 
+			(if (zero? orientation) xs0 xe0)	(if (zero? orientation) ys0 ye0)
+			(if (zero? orientation) xs1 xe1)	(if (zero? orientation) ys1 ye1)
+			(if (zero? orientation) xs2 xe2)	(if (zero? orientation) ys2 ye2)
+			(if (zero? orientation) xs3 xe3)	(if (zero? orientation) ys3 ye3)
+			TRANSFORM-FORWARD interpolation FALSE 3 TRANSFORM-RESIZE-ADJUST
+		)
+		(plug-in-autocrop-layer RUN-NONINTERACTIVE image drawable)
 	)
 	(gimp-image-undo-group-end image)	
-	;(gimp-progress-end)
+	(gimp-progress-end)
 	(gimp-displays-flush)
 )
 
@@ -1540,22 +1208,27 @@
 )
 
 (script-fu-register "script-fu-simutrans-isometric-surface"
-	"Isometric _Surface Helper..."
-	"Create an isometric wall from selection or transform an existing wall..."
+	"Create Isometric _Surface..."
+	"Create an isometric surface..."
 	"Fabio Gonella"
 	"Fabio Gonella"
-	"June 2012"
+	"July 2013"
 	""
 	SF-IMAGE	 	"Image"	   					0
 	SF-DRAWABLE  	"Drawable"					0
-	SF-OPTION		"Source _Shape"				(SH-LIST "Auto")
-	SF-OPTION		"Source _Orientation"		(OR-LIST "Auto")
-	SF-OPTION		"Source _Alignment"			(AL-LIST "Auto")
-	SF-OPTION		"_Transformation"			 TR-LIST  	
-	SF-OPTION		"Destination S_hape"		(SH-LIST "Auto")
-	SF-OPTION		"Destination O_rientation"	(OR-LIST "Auto")
-	SF-OPTION		"Destination A_lignment"	(AL-LIST "Auto")
-	SF-ADJUSTMENT 	"S_mooth result" 		   '(0 0 2 1 1 1 0)	
+	SF-ADJUSTMENT	(string-append 
+						"Destination _Inclination" 
+						(string #\newline) 
+						"( 0 = Flat tile )"
+					)							'(+0 -3 +3 1 1 0 0)
+	SF-ADJUSTMENT	(string-append 
+						"Destination _Orientation" 
+						(string #\newline) 
+						"( 0 = South, " 
+						;(string #\newline) 
+						"1 = East )"
+					)							'(+0 +0 +1 1 1 0 0)
+	SF-ENUM 		"Inter_polation" 			'("InterpolationType" "none")
 )
 
 (script-fu-register "script-fu-swap-colors"
@@ -1595,7 +1268,7 @@
 (script-fu-menu-register "script-fu-simutrans-move-multilayer"
 	"<Image>/Si_mutrans/Drawing Tools" )
 
-	(script-fu-menu-register "script-fu-simutrans-transform-multilayer"
+(script-fu-menu-register "script-fu-simutrans-transform-multilayer"
 	"<Image>/Si_mutrans/Drawing Tools" )
 
 (script-fu-menu-register "script-fu-simutrans-copy-cut-multilayer"
@@ -1605,7 +1278,7 @@
 	"<Image>/Si_mutrans/Drawing Tools" )
 
 (script-fu-menu-register "script-fu-simutrans-isometric-surface"
-	"<Image>/Si_mutrans/Isometric Tools" )
+	"<Image>/Si_mutrans/_Isometric Tools" )
 
 (script-fu-menu-register "script-fu-swap-colors"
 	"<Image>/Si_mutrans/Color Tools" )
