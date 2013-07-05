@@ -100,7 +100,7 @@ cd ..\pedestrians
 echo Compiling Powerlines
 
 cd ..\powerlines
-..\..\makeobj.exe pak128 ../../simutrans/pak128/powerlines.all.pak ./ >>..\..\err.txt
+..\..\makeobj.exe pak176 ../../simutrans/pak128/powerlines.all.pak ./ >>..\..\err.txt
 
 echo Compiling Rail tools
 
@@ -200,12 +200,6 @@ cd ..\..\landscape\groundobj_static
 ..\..\makeobj.exe pak128 ../../simutrans/pak128/groundobj.all.pak ./ >>..\err.txt
 
 cd ..\grounds
-rem #..\..\makeobj.exe pak128 >..\..\err.txt
-rem ground.Outside.pak must stay a single file - so it is copied into the pak folder before the others are merged
-rem #copy ground.Outside.pak ..\..\simutrans\pak128
-rem #del ground.Outside.pak
-rem #..\..\makeobj.exe merge ../../simutrans/pak128/ground.all.pak *.pak >..\..\err.txt
-rem #del *.pak
 ..\..\makeobj.exe pak128 ../../simutrans/pak128/ground.all.pak ./ >..\..\err.txt
 
 cd ..\rivers
