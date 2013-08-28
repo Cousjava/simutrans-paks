@@ -1000,7 +1000,7 @@ intro_month=1
 retire_year=1965
 retire_month=1
 icon=> !20@12.0.16
-cursor=!20@12.1.16,0,-16
+cursor=!20@12.29.16,0,-16
 #SUMMER
 Image[-][0]=!20@12.2.19
 Image[N][0]=!20@12.6.18
@@ -1076,7 +1076,7 @@ intro_month=1
 retire_year=1965
 retire_month=1
 icon=> !20@12.0.18
-cursor=!20@12.1.18,0,-16
+cursor=!20@12.29.18,0,-16
 pillar_distance=1
 pillar_asymmetric=1
 #SUMMER
@@ -1141,7 +1141,7 @@ intro_month=1
 retire_year=1965
 retire_month=1
 icon=> !20@12.0.17
-cursor=!20@12.1.17,0,-16
+cursor=!20@12.29.17,0,-16
 #SUMMER
 FrontImage[N][0]=!20@12.9.16,0,0
 BackImage[N][0]=!20@12.8.16,-1,0
@@ -1183,7 +1183,7 @@ max_weight=80
 intro_year=1945
 intro_month=1
 icon=> !20@12.0.12
-cursor=!20@12.1.12,0,-16
+cursor=!20@12.29.12,0,-16
 #SUMMER
 Image[-][0]=!20@12.2.15
 Image[N][0]=!20@12.6.14
@@ -1257,7 +1257,7 @@ max_height=6
 intro_year=1945
 intro_month=1
 icon=> !20@12.0.14
-cursor=!20@12.1.14,0,-16
+cursor=!20@12.29.14,0,-16
 pillar_distance=1
 pillar_asymmetric=1
 #SUMMER
@@ -1321,7 +1321,7 @@ max_weight=80
 intro_year=1965
 intro_month=1
 icon=> !20@12.0.15
-cursor=!20@12.1.15,0,-48
+cursor=!20@12.29.15,0,-48
 #SUMMER
 Image[-][0]=!20@12.16.15,0,32
 Image[N][0]=!20@12.20.14,0,32
@@ -1450,7 +1450,7 @@ max_weight=80
 intro_year=1945
 intro_month=1
 icon=> !20@12.0.13
-cursor=!20@12.1.13,0,-16
+cursor=!20@12.29.13,0,-16
 #SUMMER
 FrontImage[N][0]=!20@12.9.12
 BackImage[N][0]=!20@12.8.12
