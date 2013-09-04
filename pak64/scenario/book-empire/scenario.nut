@@ -35,7 +35,7 @@ function get_result_text(pl)
 }
 
 // accessor to the book statistics
-local book_slot = null
+book_slot <- null
 
 function start()
 {

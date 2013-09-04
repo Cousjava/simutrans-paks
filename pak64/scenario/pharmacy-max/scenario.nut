@@ -38,7 +38,7 @@ function get_result_text(pl)
 }
 
 // accessor to the medicine supply statistics
-local medicine_slot = null
+medicine_slot <- null
 
 function start()
 {
