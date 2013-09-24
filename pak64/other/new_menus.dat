@@ -103,14 +103,19 @@ Image[26]=> wkz_icons.4.16
 # builds city road
 Image[27]=> wkz_icons.4.17
 # wayobjectremover tool icons
-Image[28]=> wkz_icons.5.6
+Image[28]=> wkz_icons.4.12
 # world editor
 Image[29]=> wkz_icons.1.12
-Image[30]=-
-Image[31]=-
-Image[32]=-
-Image[33]=-
-Image[34]=-
-Image[35]=-
-Image[36]=-
+#water level
+Image[30]=> wkz_icons.5.8
+Image[31]=> wkz_icons.5.9
+#alter climate
+Image[32]=> wkz_icons.5.7
+Image[33]=> wkz_icons.5.0
+Image[34]=> wkz_icons.5.1
+Image[35]=> wkz_icons.5.2
+Image[36]=> wkz_icons.5.3
+Image[37]=> wkz_icons.5.4
+Image[38]=> wkz_icons.5.5
+Image[39]=> wkz_icons.5.6
 --

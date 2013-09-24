@@ -65,6 +65,9 @@ icon_height = 32
 # WKZ_UNDERGROUND_PICK=34
 # WKZ_BUY_HOUSE=35
 # WKZ_CITYROAD=36
+# WKZ_ERR_MESSAGE_TOOL=37 (internal only)
+# WKZ_CHANGE_WATER_HEIGHT=38
+# WKZ_SET_CLIMATE=39
 #
 general_tool[0]=0,0,9,a
 general_tool[1]=1,1,14,r
@@ -350,6 +353,18 @@ toolbar[1][5]=general_tool[4],13,,9 #eastslope
 toolbar[1][6]=general_tool[4],14,,16 #all up slope
 toolbar[1][7]=general_tool[4],15,,17 #all down slope
 toolbar[1][8]=general_tool[5]
+# fill and draw bassins (images would be 30 and 31)
+toolbar[1][9]=general_tool[38],,^F,+1
+toolbar[1][10]=general_tool[38],,^D,-1
+# now alter climate tools
+toolbar[1][11]=general_tool[39],32,^W,0
+toolbar[1][12]=general_tool[39],33,^X,1
+toolbar[1][13]=general_tool[39],34,^T,2
+toolbar[1][14]=general_tool[39],35,^M,3
+toolbar[1][15]=general_tool[39],36,^E,4
+toolbar[1][16]=general_tool[39],37,^N,5
+toolbar[1][17]=general_tool[39],38,^R,6
+toolbar[1][18]=general_tool[39],39,^A,7
 
 # railtools
 toolbar[2][0]=ways(2,0)
