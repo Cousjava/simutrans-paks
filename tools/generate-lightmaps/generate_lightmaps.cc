@@ -17,6 +17,9 @@ typedef unsigned long   PIXRGB;
 #define TRANSPARENT ((0x00E7l<<8)|(0x00FFl<<16)|(0x00FF<<24l))
 
 
+PIXRGB default_color = 0x80808000;
+
+
 // output either a 32 or 16 or 15 bitmap
 int write_png( const char *file_name, unsigned char *data, int width, int height, int bit_depth )
 {
@@ -81,14 +84,6 @@ int write_png( const char *file_name, unsigned char *data, int width, int height
 
 	fclose( fp );
 	return 1;
-}
-
-
-void block_setpix( unsigned char *block, long x, long y, long ttd_width, PIXRGB color)
-{
-	block[y * ttd_width * 3 + x * 3]  = color>>16;
-	block[y * ttd_width * 3 + x * 3 + 1] = color >> 8;
-	block[y * ttd_width * 3 + x * 3 + 2] = color;
 }
 
 
@@ -208,7 +203,16 @@ void DrawVerticalGray( PIXRGB *dest, int h, int dest_w, long grey )
 	}
 }
 
-		
+
+void DrawVerticalColor( PIXRGB *dest, int h, int dest_w, long color )
+{
+	while(  h-->0  ) {
+		*dest = color;
+		dest += dest_w;
+	}
+}
+
+
 void DrawLine( int x0, int y0, const int x1, const int y1, int *y_coord, bool upper )
 {
 	int dx = abs(x1-x0);
@@ -373,7 +377,7 @@ void CreateMarker( int slope, PIXRGB *dest, long w )
 
 	// now actually draw something
 	for(  int x=0;  x<pak;  x++  ) {
-		DrawVerticalGray( dest+x+line[x]*w, 1, w, 0 );
+		DrawVerticalColor( dest+x+line[x]*w, 1, w, default_color );
 	}
 }
 
@@ -404,11 +408,19 @@ int HandleOptions(int argc,char *argv[])
 
 				case 'h':
 				case 'H':
+					Usage(argv[0]);
 					break;
-					if(  !stricmp(argv[i]+1,"help")  ) {
+
+				case 'c':
+				case 'C':
+					if(  !stricmp(argv[i]+1,"c#")  ) {
 						Usage(argv[0]);
 						break;
 					}
+					default_color = strtol( argv[i]+3, NULL, 16 );
+					default_color = (((default_color>>16)&0x000000FF)<<8)|(((default_color>>8)&0x000000FF)<<16)|((default_color&0x000000FF)<<24l);
+					break;
+
 
 				case 'p':
 				case 'P':

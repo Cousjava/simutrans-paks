@@ -3,6 +3,7 @@
 # to get fresh and ready to deploy .tbz2 and .zip archives
 
 MAKEOBJ ?= ./makeobj
+LIGHTMAP ?= ./lightmap
 
 DESTDIR  ?= simutrans
 PAKDIR   ?= $(DESTDIR)/pak
@@ -85,6 +86,10 @@ $(DIRS128):
 	@$(MAKEOBJ) quiet PAK128 $(PAKDIR)/ $@/ > /dev/null
 
 $(OUTSIDE):
+	@echo "===> Grounds calculations"
+	@$(LIGHTMAP) -pak64 -marker16 -c#0xFF8000 $@/marker.png
+	@$(LIGHTMAP) -pak64 -marker16 -c#0x800000 $@/borders.png
+	@$(LIGHTMAP) -pak64 -slope16 -bright32 $@/texture-lightmap.png
 	@echo "===> OUTSIDE with REVISION and grounds"
 	@mkdir -p $(PAKDIR)
 	@echo -e -n "Obj=ground\nName=Outside\ncopyright=pak64 112.3 r" >$@/outside.dat
@@ -92,6 +97,9 @@ $(OUTSIDE):
 	@echo -e "Image[0][0]=outside.0.1\n-" >>$@/outside.dat
 	@$(MAKEOBJ) PAK64 $(PAKDIR)/ $@/ > /dev/null
 	@rm $@/outside.dat
+	@rm $@/marker.png
+	@rm $@/borders.png
+	@rm $@/texture-lightmap.png
 
 clean:
 	@echo "===> CLEAN"
