@@ -228,6 +228,7 @@ cost_third_rail=80
 cost_alter_land=1500
 cost_buy_land=100
 cost_set_slope=2000
+cost_alter_climate=5000
 cost_found_city=5000000
 cost_multiply_found_industry=20000
 cost_remove_tree=100

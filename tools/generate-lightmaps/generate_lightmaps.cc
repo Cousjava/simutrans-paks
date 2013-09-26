@@ -297,7 +297,7 @@ void CreateSlope( int slope, PIXRGB *dest, long w )
 		/* Then we get left and right lights, assuming sun at south 45 deg
 		 * If I assume the SE (front) corner is (0,0,z_se) then I have two triangles:
 		 * left (0,-1,se-sw) x (1,0,nw-sw) = (sw-nw,se-sw,1)
-		 * right (-1,0,se-ne) x (0,1,nw-ne) =  (se-ne,ne-nw,1)
+		 * right (-1,0,se-ne) x (0,1,nw-ne) = (se-ne,ne-nw,1)
 		 *
 		 * The get their normal, I have to use the cross product a x b as above
 		 *
@@ -307,8 +307,8 @@ void CreateSlope( int slope, PIXRGB *dest, long w )
 		 * 
 		 * And nature is nice, so the diffuse reflected light (aka brightness) is the cos of the angle ...
 		 */
-		int left_brigthnes = base_brightness - (int)( (brightness*( sw-nw -(se-sw) + 1 )) / ( sqrt( 3.0 ) + sqrt( (nw-sw)*(nw-sw) + (sw-se)*(sw-se) + 1.0 ) ) );
-		int right_brigthnes = base_brightness - (int)( (brightness*( se-ne -(ne-nw) + 1 )) / ( sqrt( 3.0 ) + sqrt( (ne-se)*(ne-se) + (ne-nw)*(ne-nw) + 1.0 ) ) );
+		int left_brigthnes = base_brightness - (int)( (brightness*( sw-nw + (sw-se) + 1 )) / ( sqrt( 3.0 ) + sqrt( (nw-sw)*(nw-sw) + (sw-se)*(sw-se) + 1.0 ) ) );
+		int right_brigthnes = base_brightness - (int)( (brightness*( se-ne + (nw-ne) + 1 )) / ( sqrt( 3.0 ) + sqrt( (ne-se)*(ne-se) + (ne-nw)*(ne-nw) + 1.0 ) ) );
 
 		// nor we can render the tile
 		for(  int x=0;  x<pak;  x++  ) {
@@ -317,12 +317,13 @@ void CreateSlope( int slope, PIXRGB *dest, long w )
 	}
 	else {
 		/* now we look at the front back triangles, but otherwise all the same ...
-		 * we have to jsut turn it 90 degree
-		 * front one ( se-sw, ne-se, 1 )
-		 * back one ( ne-nw, nw-sw, 1 )
+		 * we have to just turn it 90 degree
+		 * If I assume the SE (front) corner is (0,0,z_se) then I have two triangles:
+		 * top (1,0,sw-se) x (0,-1,ne-se) = (nw-sw,sw-se,1)
+		 * back (1,0,nw-ne) x (0,1,ne-se) = (ne-nw,ne-se,1)
 		 */
-		int front_brigthnes = base_brightness - (int)( (brightness*( se-sw - (ne-se) + 1 )) / ( sqrt( 3.0 ) + sqrt( (se-sw)*(se-sw) + (ne-se)*(ne-se) + 1.0 ) ) );
-		int back_brigthnes = base_brightness - (int)( (brightness*( ne-nw - (nw-sw) + 1 )) / ( sqrt( 3.0 ) + sqrt( (ne-nw)*(ne-nw) + (sw-nw)*(sw-nw) + 1.0 ) ) );
+		int front_brigthnes = base_brightness - (int)( (brightness*( nw-sw - (sw-se) + 1 )) / ( sqrt( 3.0 ) + sqrt( (nw-sw)*(nw-sw) + (sw-se)*(sw-se) + 1.0 ) ) );
+		int back_brigthnes = base_brightness - (int)( (brightness*( ne-nw - (ne-se) + 1 )) / ( sqrt( 3.0 ) + sqrt( (ne-nw)*(ne-nw) + (ne-se)*(ne-se) + 1.0 ) ) );
 
 		/* now we can built the two triangles using two line algorithm ...
 		 * first the middle line then then bottom
