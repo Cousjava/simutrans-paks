@@ -346,25 +346,20 @@ toolbar[0][37]=simple_tool[0],,^p,
 # slope tools
 toolbar[1][0]=general_tool[2]
 toolbar[1][1]=general_tool[3]
-toolbar[1][2]=general_tool[4],10,,12 #southslope
-toolbar[1][3]=general_tool[4],11,,3 #northslope
-toolbar[1][4]=general_tool[4],12,,6 #westslope
-toolbar[1][5]=general_tool[4],13,,9 #eastslope
-toolbar[1][6]=general_tool[4],14,,16 #all up slope
-toolbar[1][7]=general_tool[4],15,,17 #all down slope
-toolbar[1][8]=general_tool[5]
-# fill and draw bassins (images would be 30 and 31)
-toolbar[1][9]=general_tool[38],,^F,+1
-toolbar[1][10]=general_tool[38],,^D,-1
+toolbar[1][2]=general_tool[4],10,,36 #southslope
+toolbar[1][3]=general_tool[4],40,,72 #double southslope
+toolbar[1][4]=general_tool[4],11,,4 #northslope
+toolbar[1][5]=general_tool[4],41,,8 #double northslope
+toolbar[1][6]=general_tool[4],12,,12 #westslope
+toolbar[1][7]=general_tool[4],42,,24 #double westslope
+toolbar[1][8]=general_tool[4],13,,28 #eastslope
+toolbar[1][9]=general_tool[4],43,,56 #double eastslope
+toolbar[1][10]=general_tool[4],14,,82 #all up slope
+toolbar[1][11]=general_tool[4],15,,83 #all down slope
+toolbar[1][12]=general_tool[5]
 # now alter climate tools
-toolbar[1][11]=general_tool[39],32,^W,0
-toolbar[1][12]=general_tool[39],33,^X,1
-toolbar[1][13]=general_tool[39],34,^T,2
-toolbar[1][14]=general_tool[39],35,^M,3
-toolbar[1][15]=general_tool[39],36,^E,4
-toolbar[1][16]=general_tool[39],37,^N,5
-toolbar[1][17]=general_tool[39],38,^R,6
-toolbar[1][18]=general_tool[39],39,^A,7
+toolbar[1][13]=general_tool[39],32,^W,0
+toolbar[1][14]=general_tool[39],35,,3
 
 # railtools
 toolbar[2][0]=ways(2,0)
@@ -475,6 +470,18 @@ toolbar[9][10]=general_tool[30]
 toolbar[9][11]=simple_tool[6]
 toolbar[9][12]=dialog_tool[24]
 toolbar[9][13]=general_tool[28]
+# fill and draw bassins (images would be 30 and 31)
+toolbar[9][14]=general_tool[38],30,,+1
+toolbar[9][15]=general_tool[38],31,,-1
+# new terraforming
+toolbar[9][16]=general_tool[39],32,,0
+toolbar[9][17]=general_tool[39],33,,1
+toolbar[9][18]=general_tool[39],34,,2
+toolbar[9][19]=general_tool[39],35,,3
+toolbar[9][20]=general_tool[39],36,,4
+toolbar[9][21]=general_tool[39],37,,5
+toolbar[9][22]=general_tool[39],38,,6
+toolbar[9][23]=general_tool[39],39,,7
 
 # list tools
 toolbar[10][0]=dialog_tool[14]

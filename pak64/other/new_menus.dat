@@ -107,15 +107,20 @@ Image[28]=> wkz_icons.4.12
 # world editor
 Image[29]=> wkz_icons.1.12
 #water level
-Image[30]=> wkz_icons.5.8
-Image[31]=> wkz_icons.5.9
+Image[30]=> wkz_icons.6.8
+Image[31]=> wkz_icons.6.9
 #alter climate
-Image[32]=> wkz_icons.5.7
-Image[33]=> wkz_icons.5.0
-Image[34]=> wkz_icons.5.1
-Image[35]=> wkz_icons.5.2
-Image[36]=> wkz_icons.5.3
-Image[37]=> wkz_icons.5.4
-Image[38]=> wkz_icons.5.5
-Image[39]=> wkz_icons.5.6
+Image[32]=> wkz_icons.6.7
+Image[33]=> wkz_icons.6.0
+Image[34]=> wkz_icons.6.1
+Image[35]=> wkz_icons.6.2
+Image[36]=> wkz_icons.6.3
+Image[37]=> wkz_icons.6.4
+Image[38]=> wkz_icons.6.5
+Image[39]=> wkz_icons.6.6
+#double slopes
+Image[40]=> wkz_icons.5.0
+Image[41]=> wkz_icons.5.1
+Image[42]=> wkz_icons.5.2
+Image[43]=> wkz_icons.5.3
 --
