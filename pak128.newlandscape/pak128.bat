@@ -41,7 +41,7 @@ rem for newer Windows versions can be added /EXCLUDE:svn
 rem new writing
 rem  ------------------------
 cd base
-..\makeobj.exe pak128 ..\simutrans\pak128 ./ >..\..\err.txt
+..\makeobj.exe pak128 ../simutrans/pak128/ ./ >..\..\err.txt
 
 cd .\misc_GUI
 ..\..\makeobj.exe pak128 >..\..\err.txt
@@ -79,8 +79,14 @@ cd ..\catenary_all
 
 echo Compiling Crossings
 
-cd ..\crossings_all
-..\..\makeobj.exe pak128 ../../simutrans/pak128/way.crossing.all.pak ./ >>..\..\err.txt
+cd ..\road_rail_crossings
+..\..\makeobj.exe pak128 ../../simutrans/pak128/way.crossing.road_rail.pak ./ >>..\..\err.txt
+
+cd ..\road_water_crossings
+..\..\makeobj.exe pak128 ../../simutrans/pak128/way.crossing.road_water.pak ./ >>..\..\err.txt
+
+cd ..\rail_water_crossings
+..\..\makeobj.exe pak128 ../../simutrans/pak128/way.crossing.rail_water.pak ./ >>..\..\err.txt
 
 echo Compiling Depots
 

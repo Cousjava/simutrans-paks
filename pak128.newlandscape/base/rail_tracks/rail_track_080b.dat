@@ -13,7 +13,7 @@ intro_month=1
 retire_year=2999
 retire_month=1
 icon=> rail_track_080b.0.6
-cursor=rail_track_080b.0.7
+cursor=rail_track_080b.0.7,0,-16
 #SUMMER
 Image[-][0]=rail_track_080b.1.0
 Image[N][0]=rail_track_080b.1.1

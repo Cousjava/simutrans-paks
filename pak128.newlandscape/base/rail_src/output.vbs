@@ -113,6 +113,6 @@ End Function
 Private Function OptiPng(ByVal Path1)
 	Dim objShell
 	Set objShell = CreateObject ("WScript.shell")
-	objShell.Run "optipng -o7 """ & Path1 & "", 1, True
+	objShell.Run "optipng """ & Path1 & "", 1, True
 	Set objShell = Nothing
 End Function
