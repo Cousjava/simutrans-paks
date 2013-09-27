@@ -1,5 +1,8 @@
-;; SIMUTRANS TOOLS FOR GIMP 0.8
+;; SIMUTRANS TOOLS FOR GIMP 0.9
 ;; ============================================================================================
+;;
+;; ver. 0.9 - 27/09/2013
+;; ADD Slope shading tool
 ;;
 ;; ver. 0.8 - 01/07/2013
 ;; CHG Isometric surface tool transforms a front image into any slope
@@ -58,6 +61,23 @@
 ;; ============================================================================================
 ;; CONSTANTS AND LISTS
 
+(define slope-shading-colors-list 
+	'((128 128 128)		; Front image	-	(128 128 128) means no lightning is applied!
+	  (128 128 128)		; South wall 
+	  (128 128 128)		; East Wall
+	  (128 128 128)		; Floor tile 
+	  (166 166 166)		; South slope 25%
+	  (133 133 133)		; East slope 25% 
+	  (106 106 106)		; North slope 25% 
+	  (131 131 131)		; West slope 25% 
+	  (188 188 188)		; South slope 50% 
+	  (123 123 123)		; East slope 50% 
+	  ( 68  68  68)		; North slope 50% 
+	  (118 118 118)		; West slope 50% 
+	  (128 128 128)		; South slope 75% 
+	  (128 128 128)		; East slope 75% 
+	  (128 128 128)		; North slope 75% 
+	  (128 128 128)))	; West slope 75% 
 (define non-darkening-greys-list 
 	'((107 107 107)  
 	  (155 155 155) 
@@ -96,47 +116,8 @@
 	  (  1   1 255)))
 (define transparent-color-list 
 	'((231 255 255)))
-(define (SH-LIST . default)	
-	(list	(if (null? default) "Default" (car default))
-			"Floor tile" 
-			"Wall" 
-			"Half slope"
-			"Double slope"
-			"Front image" 
-	)
-)
-(define (OR-LIST . default)	
-	(list	(if (null? default) "Default" (car default))
-			"South" 
-			"East" 
-			"North" 
-			"West"
-	)
-)
-(define (AL-LIST . default)	
-	(list	(if (null? default) "Default" (car default))
-			"Center" 
-			"Right" 
-			"Left" 
-	)
-)
 (define  TR-LIST 
 	'("None" "Rotate 90° clockwise" "Rotate 90° counter-clockwise" "Rotate 180°" "Flip Horizontally" "Flip Vertically"))
-(define SH-DEFAULT		0)
-(define SH-TILE			1)
-(define SH-WALL			2)
-(define SH-SLOPE-1		3)
-(define SH-SLOPE-2		4)
-(define SH-FRONT		5)
-(define OR-DEFAULT		0)
-(define OR-SOUTH		1)
-(define OR-EAST			2)
-(define OR-NORTH		3)
-(define OR-WEST 		4)
-(define AL-DEFAULT		0)
-(define AL-CENTER		1)
-(define AL-RIGHT		2)
-(define AL-LEFT			3)
 (define TR-NONE			0)
 (define TR-ROTATE-90	1)
 (define TR-ROTATE-270	2)
@@ -397,37 +378,36 @@
 			(plug-in-sel2path RUN-NONINTERACTIVE image drawable)
 			(let*
 				(
-					(shape 			SH-DEFAULT)
-					(orientation 	OR-DEFAULT)
-					(alignment		AL-CENTER)
-					(newpath		(vector-ref (cadr (gimp-image-get-vectors image)) 0))
-					(points			(gimp-vectors-stroke-get-points newpath (vector-ref (cadr (gimp-vectors-get-strokes newpath)) 0)))
-					(width			(car (gimp-drawable-width  drawable)))
-					(height			(car (gimp-drawable-height drawable)))
-					(area 			(lambda (k)
-										(set! k (append k (list (car k) (cadr k))))
-										(let* ((n (length k)) (i 0) (A 0))
-											(while (< i (- n 3))
-												(set! A (+ A (-	(* (list-ref k (+ i 0)) (list-ref k (+ i 3))) (* (list-ref k (+ i 2)) (list-ref k (+ i 1))))))
-												(set! i (+ i 2))
-											)
-											(/ (abs A) 2)
+					(newpath	(vector-ref (cadr (gimp-image-get-vectors image)) 0))
+					(points		(gimp-vectors-stroke-get-points newpath (vector-ref (cadr (gimp-vectors-get-strokes newpath)) 0)))
+					(area 		(lambda (k)
+									(set! k (append k (list (car k) (cadr k))))
+									(let* ((n (length k)) (i 0) (A 0))
+										(while (< i (- n 3))
+											(set! A (+ A (-	(* (list-ref k (+ i 0)) (list-ref k (+ i 3))) (* (list-ref k (+ i 2)) (list-ref k (+ i 1))))))
+											(set! i (+ i 2))
 										)
+										(/ (abs A) 2)
 									)
+								)
 					)
-					(f 				(lambda (m x c) 
-										(+ (* m x) c)
+					(f 			(lambda (m x c) 
+									(+ (* m x) c)
+								)
+					)
+					(i			(lambda (a1 b1 c1 a2 b2 c2)
+									(list	(/ (- (* b2 c1) (* b1 c2)) (- (* a1 b2) (* a2 b1)))
+											(/ (- (* a1 c2) (* a2 c1)) (- (* a1 b2) (* a2 b1)))
 									)
+								)
 					)
-					(i				(lambda (a1 b1 c1 a2 b2 c2)
-										(list	(/ (- (* b2 c1) (* b1 c2)) (- (* a1 b2) (* a2 b1)))
-												(/ (- (* a1 c2) (* a2 c1)) (- (* a1 b2) (* a2 b1)))
-										)
-									)
-					)
-					(cVER nil)		(cHOR nil)
-					(cI05 nil)		(cD05 nil)
-					(cI10 nil)		(cD10 nil)
+					(cVERT nil)		(c0000 nil)
+					(cI025 nil)		(cD025 nil)
+					(cI050 nil)		(cD050 nil)
+					(cI075 nil)		(cD075 nil)
+					(cI100 nil)		(cD100 nil)
+					(cI125 nil)		(cD125 nil)
+					(cI150 nil)		(cD150 nil)
 					(count	0)
 				)
 				(while (< count (- (cadr points) 1))
@@ -436,12 +416,20 @@
 							(x (round (vector-ref (caddr points) (+ count 2)))) 
 							(y (round (vector-ref (caddr points) (+ count 3))))
 						)
-						(set! cVER (cons  x           cVER)) ;c=x
-						(set! cHOR (cons  y 		  cHOR)) ;c=y
-						(set! cI05 (cons (f -0.5 x y) cI05)) ;c=y-x/2
-						(set! cD05 (cons (f +0.5 x y) cD05)) ;c=y+x/2
-						(set! cI10 (cons (f -1.0 x y) cI10)) ;c=y-x/2
-						(set! cD10 (cons (f +1.0 x y) cD10)) ;c=y+x/2
+						(set! cVERT (cons  x			cVERT)) ;c=x
+						(set! c0000 (cons  y			c0000)) ;c=y
+						(set! cI025 (cons (f -0.25 x y)	cI025)) ;c=y - x/4
+						(set! cD025 (cons (f +0.25 x y)	cD025)) ;c=y + x/4
+						(set! cI050 (cons (f -0.50 x y)	cI050)) ;c=y -2x/4
+						(set! cD050 (cons (f +0.50 x y)	cD050)) ;c=y +2x/4
+						(set! cI075 (cons (f -0.75 x y)	cI075)) ;c=y -3x/4
+						(set! cD075 (cons (f +0.75 x y)	cD075)) ;c=y +3x/4
+						(set! cI100 (cons (f -1.00 x y)	cI100)) ;c=y -4x/4
+						(set! cD100 (cons (f +1.00 x y)	cD100)) ;c=y +4x/4
+						(set! cI125 (cons (f -1.25 x y)	cI125)) ;c=y -5x/4
+						(set! cD125 (cons (f +1.25 x y)	cD125)) ;c=y +5x/4
+						(set! cI150 (cons (f -1.50 x y)	cI150)) ;c=y -6x/4
+						(set! cD150 (cons (f +1.50 x y)	cD150)) ;c=y +6x/4
 						(set! count (+ count 6))
 					)
 				)
@@ -449,63 +437,71 @@
 				(let* 
 					(	;It must convert lines from Slope Intercept formula to Standard Form formula.
 						;y=mx+c  ->  Ax+By=C  ::  A=-m  B=1  C=c
-						(frk (append	(i +1.0 +0.0 (apply max cVER) +0.0 +1.0 (apply max cHOR)) 	(i +1.0 +0.0 (apply min cVER) +0.0 +1.0 (apply max cHOR)) 
-										(i +1.0 +0.0 (apply min cVER) +0.0 +1.0 (apply min cHOR)) 	(i +1.0 +0.0 (apply max cVER) +0.0 +1.0 (apply min cHOR))	))
-						(swk (append	(i +1.0 +0.0 (apply max cVER) -0.5 +1.0 (apply max cI05)) 	(i +1.0 +0.0 (apply min cVER) -0.5 +1.0 (apply max cI05)) 
-										(i +1.0 +0.0 (apply min cVER) -0.5 +1.0 (apply min cI05)) 	(i +1.0 +0.0 (apply max cVER) -0.5 +1.0 (apply min cI05))	))
-						(ewk (append	(i +1.0 +0.0 (apply max cVER) +0.5 +1.0 (apply max cD05)) 	(i +1.0 +0.0 (apply min cVER) +0.5 +1.0 (apply max cD05)) 
-										(i +1.0 +0.0 (apply min cVER) +0.5 +1.0 (apply min cD05)) 	(i +1.0 +0.0 (apply max cVER) +0.5 +1.0 (apply min cD05))	))
-						(flk (append	(i -0.5 +1.0 (apply max cI05) +0.5 +1.0 (apply max cD05)) 	(i -0.5 +1.0 (apply min cI05) +0.5 +1.0 (apply max cD05)) 
-										(i -0.5 +1.0 (apply min cI05) +0.5 +1.0 (apply min cD05)) 	(i -0.5 +1.0 (apply max cI05) +0.5 +1.0 (apply min cD05))	))
-						(ssk (append	(i -0.5 +1.0 (apply max cI05) +1.0 +1.0 (apply max cD10)) 	(i -0.5 +1.0 (apply min cI05) +1.0 +1.0 (apply max cD10)) 
-										(i -0.5 +1.0 (apply min cI05) +1.0 +1.0 (apply min cD10)) 	(i -0.5 +1.0 (apply max cI05) +1.0 +1.0 (apply min cD10))	))
-						(esk (append	(i +0.5 +1.0 (apply max cD05) -1.0 +1.0 (apply max cI10)) 	(i +0.5 +1.0 (apply min cD05) -1.0 +1.0 (apply max cI10)) 
-										(i +0.5 +1.0 (apply min cD05) -1.0 +1.0 (apply min cI10)) 	(i +0.5 +1.0 (apply max cD05) -1.0 +1.0 (apply min cI10))	))
-						(nsk (append	(i -0.5 +1.0 (apply max cI05) +0.0 +1.0 (apply max cHOR)) 	(i -0.5 +1.0 (apply min cI05) +0.0 +1.0 (apply max cHOR)) 
-										(i -0.5 +1.0 (apply min cI05) +0.0 +1.0 (apply min cHOR)) 	(i -0.5 +1.0 (apply max cI05) +0.0 +1.0 (apply min cHOR))	))
-						(wsk (append	(i +0.5 +1.0 (apply max cD05) +0.0 +1.0 (apply max cHOR)) 	(i +0.5 +1.0 (apply min cD05) +0.0 +1.0 (apply max cHOR)) 
-										(i +0.5 +1.0 (apply min cD05) +0.0 +1.0 (apply min cHOR)) 	(i +0.5 +1.0 (apply max cD05) +0.0 +1.0 (apply min cHOR))	))
-						(lsk (list (area frk) (area swk) (area ewk) (area flk) (area ssk) (area esk) (area nsk) (area wsk)))
-					)
-					(debug	"FR" (area frk)		"SW" (area swk) 	"EW" (area ewk) 	"FL" (area flk)
-							"SS" (area ssk) 	"ES" (area esk) 	"NS" (area nsk) 	"WS" (area wsk) )
-					(case (length (cdr (member (apply min lsk) (reverse lsk))))
-						((0) (set! shape SH-FRONT)	(set! orientation OR-SOUTH)) ;frk
-						((1) (set! shape SH-WALL)	(set! orientation OR-SOUTH)) ;swk
-						((2) (set! shape SH-WALL)	(set! orientation OR-EAST))  ;ewk
-						((3) (set! shape SH-TILE)	(set! orientation OR-SOUTH)) ;flk
-						((4) (set! shape SH-SLOPE-2)	(set! orientation OR-SOUTH)) ;ssk
-						((5) (set! shape SH-SLOPE-2)	(set! orientation OR-EAST))	 ;esk	
-						((6) (set! shape SH-SLOPE-2)	(set! orientation OR-NORTH)) ;
-						((7) (set! shape SH-SLOPE-2)	(set! orientation OR-WEST))  ;
-					)
-				)
-				(when (= shape SH-WALL)
-					(let* 
-						(
-							(by (list-ref (gimp-selection-bounds image) 4))
-							(?  (gimp-rect-select image 0 (- by 1) width 1 CHANNEL-OP-INTERSECT 0 0))
-							(bl (list-ref (gimp-selection-bounds image) 1))
-							(br (list-ref (gimp-selection-bounds image) 3))
+						(coord-lst (list
+							; Front image
+							(append	(i +1.00 +0.00 (apply max cVERT) +0.00 +1.00 (apply max c0000)) 	(i +1.00 +0.00 (apply min cVERT) +0.00 +1.00 (apply max c0000)) 
+									(i +1.00 +0.00 (apply min cVERT) +0.00 +1.00 (apply min c0000)) 	(i +1.00 +0.00 (apply max cVERT) +0.00 +1.00 (apply min c0000))	)
+							; South wall 
+							(append	(i +1.00 +0.00 (apply max cVERT) -0.50 +1.00 (apply max cI050)) 	(i +1.00 +0.00 (apply min cVERT) -0.50 +1.00 (apply max cI050)) 
+									(i +1.00 +0.00 (apply min cVERT) -0.50 +1.00 (apply min cI050)) 	(i +1.00 +0.00 (apply max cVERT) -0.50 +1.00 (apply min cI050))	)
+							; East Wall
+							(append	(i +1.00 +0.00 (apply max cVERT) +0.50 +1.00 (apply max cD050)) 	(i +1.00 +0.00 (apply min cVERT) +0.50 +1.00 (apply max cD050)) 
+									(i +1.00 +0.00 (apply min cVERT) +0.50 +1.00 (apply min cD050)) 	(i +1.00 +0.00 (apply max cVERT) +0.50 +1.00 (apply min cD050))	)
+							; Floor tile 
+							(append	(i -0.50 +1.00 (apply max cI050) +0.50 +1.00 (apply max cD050)) 	(i -0.50 +1.00 (apply min cI050) +0.50 +1.00 (apply max cD050)) 
+									(i -0.50 +1.00 (apply min cI050) +0.50 +1.00 (apply min cD050)) 	(i -0.50 +1.00 (apply max cI050) +0.50 +1.00 (apply min cD050))	)
+							; South slope 25%
+							(append	(i -0.50 +1.00 (apply max cI050) +0.75 +1.00 (apply max cD075)) 	(i -0.50 +1.00 (apply min cI050) +0.75 +1.00 (apply max cD075)) 
+									(i -0.50 +1.00 (apply min cI050) +0.75 +1.00 (apply min cD075)) 	(i -0.50 +1.00 (apply max cI050) +0.75 +1.00 (apply min cD075))	)
+							; East slope 25% 
+							(append	(i +0.50 +1.00 (apply max cD050) -0.75 +1.00 (apply max cI075)) 	(i +0.50 +1.00 (apply min cD050) -0.75 +1.00 (apply max cI075)) 
+									(i +0.50 +1.00 (apply min cD050) -0.75 +1.00 (apply min cI075)) 	(i +0.50 +1.00 (apply max cD050) -0.75 +1.00 (apply min cI075))	)
+							; North slope 25% 
+							(append	(i -0.50 +1.00 (apply max cI050) +0.25 +1.00 (apply max cD025)) 	(i -0.50 +1.00 (apply min cI050) +0.25 +1.00 (apply max cD025)) 
+									(i -0.50 +1.00 (apply min cI050) +0.25 +1.00 (apply min cD025)) 	(i -0.50 +1.00 (apply max cI050) +0.25 +1.00 (apply min cD025))	)
+							; West slope 25% 
+							(append	(i +0.50 +1.00 (apply max cD050) -0.25 +1.00 (apply max cI025)) 	(i +0.50 +1.00 (apply min cD050) -0.25 +1.00 (apply max cI025)) 
+									(i +0.50 +1.00 (apply min cD050) -0.25 +1.00 (apply min cI025)) 	(i +0.50 +1.00 (apply max cD050) -0.25 +1.00 (apply min cI025))	)
+							; South slope 50% 
+							(append	(i -0.50 +1.00 (apply max cI050) +1.00 +1.00 (apply max cD100)) 	(i -0.50 +1.00 (apply min cI050) +1.00 +1.00 (apply max cD100)) 
+									(i -0.50 +1.00 (apply min cI050) +1.00 +1.00 (apply min cD100)) 	(i -0.50 +1.00 (apply max cI050) +1.00 +1.00 (apply min cD100))	)
+							; East slope 50% 
+							(append	(i +0.50 +1.00 (apply max cD050) -1.00 +1.00 (apply max cI100)) 	(i +0.50 +1.00 (apply min cD050) -1.00 +1.00 (apply max cI100)) 
+									(i +0.50 +1.00 (apply min cD050) -1.00 +1.00 (apply min cI100)) 	(i +0.50 +1.00 (apply max cD050) -1.00 +1.00 (apply min cI100))	)
+							; North slope 50% 
+							(append	(i -0.50 +1.00 (apply max cI050) +0.00 +1.00 (apply max c0000)) 	(i -0.50 +1.00 (apply min cI050) +0.00 +1.00 (apply max c0000)) 
+									(i -0.50 +1.00 (apply min cI050) +0.00 +1.00 (apply min c0000)) 	(i -0.50 +1.00 (apply max cI050) +0.00 +1.00 (apply min c0000))	)
+							; West slope 50% 
+							(append	(i +0.50 +1.00 (apply max cD050) +0.00 +1.00 (apply max c0000)) 	(i +0.50 +1.00 (apply min cD050) +0.00 +1.00 (apply max c0000)) 
+									(i +0.50 +1.00 (apply min cD050) +0.00 +1.00 (apply min c0000)) 	(i +0.50 +1.00 (apply max cD050) +0.00 +1.00 (apply min c0000))	)
+							; South slope 75% 
+							(append	(i -0.50 +1.00 (apply max cI050) +1.25 +1.00 (apply max cD125)) 	(i -0.50 +1.00 (apply min cI050) +1.25 +1.00 (apply max cD125)) 
+									(i -0.50 +1.00 (apply min cI050) +1.25 +1.00 (apply min cD125)) 	(i -0.50 +1.00 (apply max cI050) +1.25 +1.00 (apply min cD125))	)
+							; East slope 75% 
+							(append	(i +0.50 +1.00 (apply max cD050) -1.25 +1.00 (apply max cI125)) 	(i +0.50 +1.00 (apply min cD050) -1.25 +1.00 (apply max cI125)) 
+									(i +0.50 +1.00 (apply min cD050) -1.25 +1.00 (apply min cI125)) 	(i +0.50 +1.00 (apply max cD050) -1.25 +1.00 (apply min cI125))	)
+							; North slope 75% 
+							(append	(i -0.50 +1.00 (apply max cI050) -0.25 +1.00 (apply max cI025)) 	(i -0.50 +1.00 (apply min cI050) -0.25 +1.00 (apply max cI025)) 
+									(i -0.50 +1.00 (apply min cI050) -0.25 +1.00 (apply min cI025)) 	(i -0.50 +1.00 (apply max cI050) -0.25 +1.00 (apply min cI025))	)
+							; West slope 75% 
+							(append	(i +0.50 +1.00 (apply max cD050) +0.25 +1.00 (apply max cD025)) 	(i +0.50 +1.00 (apply min cD050) +0.25 +1.00 (apply max cD025)) 
+									(i +0.50 +1.00 (apply min cD050) +0.25 +1.00 (apply min cD025)) 	(i +0.50 +1.00 (apply max cD050) +0.25 +1.00 (apply min cD025))	))
 						)
-						(set! alignment
-							(if (= orientation OR-SOUTH)
-								(if (odd? (- width bl)) (if (odd? width) AL-LEFT  AL-CENTER) AL-RIGHT)
-								(if (odd? br) 			(if (odd? width) AL-RIGHT AL-CENTER) AL-LEFT)
-							)
+						(coord-index 
+							(length (cdr (member (apply min (map area coord-lst)) (reverse (map area coord-lst)))))
 						)
 					)
+					(gimp-selection-none image)
+					(gimp-image-undo-group-end image)				
+					(gimp-progress-end)
+					(cons coord-index (list-ref coord-lst coord-index))
 				)
-				(gimp-selection-none image)
-				(gimp-image-undo-group-end image)				
-				(gimp-progress-end)
-				(list shape orientation alignment)
 			) ;end of let*
 		) ;end of begin
 		(begin ;ELSE
 			(gimp-image-undo-group-end image)				
 			(gimp-message "The source image is empty or doesn't contain a valid shape.")
-			(list 0 0 0)
+			(list -1 0 0 0 0 0 0 0 0)
 		)
 	) ;end of if
 )
@@ -740,6 +736,44 @@
 	)
 )
 
+(define (script-fu-simutrans-color-grid image drawable tilesize new-tilesize)
+	(let* 
+		(
+			(width		(car (gimp-image-width  image)))
+			(height		(car (gimp-image-height image)))
+			(new-width	(quotient (* width new-tilesize) tilesize))
+			(new-height	(quotient (* height new-tilesize) tilesize))
+			(x			width)
+			(y			height)
+		)
+		
+		(gimp-image-undo-group-start image)		
+		
+		(gimp-image-resize image new-width new-height 0 0)
+		(for-each-layer image (string)
+			(lambda (this-layer) (gimp-layer-resize-to-image-size this-layer))
+		)
+		(while (> y 0)
+			(set! y (- y tilesize))
+			(set! x width)
+			(while (> x 0)
+				(set! x (- x tilesize))
+				(gimp-rect-select image x y tilesize tilesize CHANNEL-OP-REPLACE FALSE 0)
+				; (selection-fill drawable (list (quotient (* x 255) width) (quotient (* y 255) height) 127))
+				; (quotient (* width new-tilesize) tilesize)
+				(script-fu-simutrans-move-multilayer image drawable (* x (/ (- new-tilesize tilesize) tilesize)) (* y (/ (- new-tilesize tilesize) tilesize)) (string) FALSE)
+			)
+		)
+		
+		(gimp-image-grid-set-spacing image new-tilesize new-tilesize)
+		(gimp-image-grid-set-offset image 0 0)			
+		
+		(gimp-image-undo-group-end image)
+		(gimp-progress-end)
+		(gimp-displays-flush)
+	)
+)
+
 (define (script-fu-simutrans-isometric-surface image drawable inclination orientation interpolation)
 	(gimp-image-undo-group-start image)
 	(unless (= (car (gimp-image-get-floating-sel image)) drawable) 
@@ -775,6 +809,32 @@
 			(if (zero? orientation) xs2 xe2)	(if (zero? orientation) ys2 ye2)
 			(if (zero? orientation) xs3 xe3)	(if (zero? orientation) ys3 ye3)
 			TRANSFORM-FORWARD interpolation FALSE 3 TRANSFORM-RESIZE-ADJUST
+		)
+		(plug-in-autocrop-layer RUN-NONINTERACTIVE image drawable)
+	)
+	(gimp-image-undo-group-end image)	
+	(gimp-progress-end)
+	(gimp-displays-flush)
+)
+
+(define (script-fu-simutrans-isometric-surface-reverse image drawable interpolation)
+	(gimp-image-undo-group-start image)
+	(unless (= (car (gimp-image-get-floating-sel image)) drawable) 
+		(unless (zero? (car (gimp-selection-is-empty image))) (gimp-selection-all image))
+		(set! drawable (car (gimp-selection-float drawable 0 0)))
+	)
+	(let* 
+		(
+			(width	(car (gimp-drawable-width  drawable))) 
+			(height	(car (gimp-drawable-height drawable)))
+			(coord	(cdr (detect-shape image drawable)))
+		)
+		(gimp-drawable-transform-perspective drawable 
+			(list-ref coord 4)	(list-ref coord 5)
+			(list-ref coord 2)	(list-ref coord 3)
+			(list-ref coord 6)	(list-ref coord 7)
+			(list-ref coord 0)	(list-ref coord 1)
+			TRANSFORM-BACKWARD interpolation FALSE 3 TRANSFORM-RESIZE-ADJUST
 		)
 		(plug-in-autocrop-layer RUN-NONINTERACTIVE image drawable)
 	)
@@ -833,6 +893,47 @@
 			
 	)
 	
+)
+
+(define (script-fu-simutrans-slope-shading image drawable autodetect inclination orientation)
+	(gimp-image-undo-group-start image)
+	(gimp-context-push)
+	
+	;There must be a selection to be cut into temp buffer
+	(unless (zero? (car (gimp-selection-is-empty image))) (gimp-selection-all image))
+	
+	;Cut selection, edit in temp image, and paste back
+	(let ((temp-buffer-name	(car (gimp-edit-named-cut drawable "simutrans-shade-slope"))))
+		(edit-buffer-in-temporary-image temp-buffer-name 
+			(lambda (temp-image temp-layer)
+				(let* 
+					(
+						(index
+							(max 3 ;Flat Tile of Slope
+								(if	(zero? autodetect)
+									(+ (* 4 (abs inclination)) (if (negative? inclination) 2 0) orientation)
+									(car (detect-shape temp-image temp-layer))
+								)
+							)
+						)
+						(mask (car (gimp-layer-new temp-image 1 1 RGBA-IMAGE temp-buffer-name 100 GRAIN-MERGE-MODE)))
+					)	
+					(gimp-image-add-layer temp-image mask -1)
+					(gimp-layer-resize-to-image-size mask)
+					(gimp-context-set-foreground (list-ref slope-shading-colors-list index))
+					(gimp-drawable-fill mask FOREGROUND-FILL)
+					(set! temp-layer (car (gimp-image-merge-visible-layers temp-image CLIP-TO-IMAGE)))
+				) ;end of let
+			) ;end of lambda (temp-image temp-layer)
+		)			
+		(gimp-floating-sel-anchor (car (gimp-edit-named-paste drawable temp-buffer-name 1)))
+		(gimp-buffer-delete temp-buffer-name)			
+	)
+
+	(gimp-context-pop)
+	(gimp-image-undo-group-end image)
+	(gimp-progress-end)
+	(gimp-displays-flush)
 )
 
 (define (script-fu-swap-colors image drawable use-context color1 color2)
@@ -1231,6 +1332,30 @@
 	SF-ENUM 		"Inter_polation" 			'("InterpolationType" "none")
 )
 
+(script-fu-register "script-fu-simutrans-slope-shading"
+	"S_lope shading..."
+	"Apply default shading to a slope..."
+	"Fabio Gonella"
+	"Fabio Gonella"
+	"September 2013"
+	""
+	SF-IMAGE	 	"Image"	   					0
+	SF-DRAWABLE  	"Drawable"					0
+	SF-TOGGLE	 	"_Autodetect slope inclination & orientation" TRUE
+	SF-ADJUSTMENT	(string-append 
+						"Slope _Inclination" 
+						(string #\newline) 
+						"( 0 = Flat tile )"
+					)							'(+0 -2 +2 1 1 0 0)
+	SF-ADJUSTMENT	(string-append 
+						"Slope _Orientation" 
+						(string #\newline) 
+						"( 0 = South, " 
+						;(string #\newline) 
+						"1 = East )"
+					)							'(+0 +0 +1 1 1 0 0)
+)
+
 (script-fu-register "script-fu-swap-colors"
 	"_Swap two colors..."
 	"Swap two colors in selection"
@@ -1260,7 +1385,7 @@
 )
 	
 (script-fu-menu-register "script-fu-simutrans-special-colors-helper"
-	"<Image>/Si_mutrans/Color Tools" )
+	"<Image>/Si_mutrans/_Color Tools" )
 
 (script-fu-menu-register "script-fu-simutrans-export"
 	"<Image>/Si_mutrans/Image Tools" )
@@ -1280,8 +1405,11 @@
 (script-fu-menu-register "script-fu-simutrans-isometric-surface"
 	"<Image>/Si_mutrans/_Isometric Tools" )
 
+(script-fu-menu-register "script-fu-simutrans-slope-shading"
+	"<Image>/Si_mutrans/_Isometric Tools" )
+	
 (script-fu-menu-register "script-fu-swap-colors"
-	"<Image>/Si_mutrans/Color Tools" )
+	"<Image>/Si_mutrans/_Color Tools" )	
 	
 (script-fu-menu-register "script-fu-simutrans-set-grid"
     "<Image>/Si_mutrans/Image Tools" )	
