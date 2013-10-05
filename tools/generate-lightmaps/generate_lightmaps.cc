@@ -93,6 +93,8 @@ int slope_step = 16;
 bool make_lightmap = false;
 bool make_marker = false;
 
+double sun[3]={ -1, -1, 2 }, sun_abs=1;
+
 // how much change of brightness
 int brightness = 32;
 int base_brightness = 128;
@@ -292,23 +294,28 @@ void CreateSlope( int slope, PIXRGB *dest, long w )
 		diagonal = true;
 	}
 
+	/* we have a triangle with four corners
+	 * SE =: a at (0,0,se)
+	 * SW =: b at (1,0,sw)
+	 * NW =: c at (1,1,nw)
+	 * NE =: d at (0,1,ne)
+	 */
+
 	// either the tile is left right slopes or front back. first comes left-right ones
-	if(  !diagonal  ) {
-		/* Then we get left and right lights, assuming sun at south 45 deg
-		 * If I assume the SE (front) corner is (0,0,z_se) then I have two triangles:
-		 * left (0,-1,se-sw) x (1,0,nw-sw) = (sw-nw,se-sw,1)
-		 * right (-1,0,se-ne) x (0,1,nw-ne) = (se-ne,ne-nw,1)
+	if(  abs(nw-se) >= abs(sw-ne) ) {
+		/* Then we get left and right nromal with the above definintion
+		 * left (SW corner normal): (b-c) x (b-a) = (se-sw,sw-nw,1)
+		 * right (NE corner normal): (d-a) x (d-c) = (ne-nw,se-ne,1)
 		 *
-		 * The get their normal, I have to use the cross product a x b as above
-		 *
-		 * The sun is in the south at 45 deg, i.e. at s=(1, -1, 1)
+		 * The sun is in the south at 45 deg, i.e. at s=( 0, -1, sqrt(2) )
+		 * (we only care about angle, so we forget about the se offset ...)
 		 * angle to the sun is now cos(i,s) = l.s/(|l|*|s|) (and the same for r)
 		 * |s|=sqrt(3) and for the rest we use floating point
 		 * 
 		 * And nature is nice, so the diffuse reflected light (aka brightness) is the cos of the angle ...
 		 */
-		int left_brigthnes = base_brightness - (int)( (brightness*( sw-nw + (sw-se) + 1 )) / ( sqrt( 3.0 ) + sqrt( (nw-sw)*(nw-sw) + (sw-se)*(sw-se) + 1.0 ) ) );
-		int right_brigthnes = base_brightness - (int)( (brightness*( se-ne + (nw-ne) + 1 )) / ( sqrt( 3.0 ) + sqrt( (ne-se)*(ne-se) + (ne-nw)*(ne-nw) + 1.0 ) ) );
+		int left_brigthnes = base_brightness - (int)( (brightness*( (se-sw)*sun[0] + (sw-nw)*sun[1] + 1*sun[2] )) / ( sun_abs + sqrt( (se-sw)*(se-sw) + (sw-nw)*(sw-nw) + 1.0 ) ) );
+		int right_brigthnes = base_brightness - (int)( (brightness*( (ne-nw)*sun[0] + (se-ne)*sun[1] + 1*sun[2] )) / ( sun_abs + sqrt( (ne-nw)*(ne-nw) + (se-ne)*(se-ne) + 1.0 ) ) );
 
 		// nor we can render the tile
 		for(  int x=0;  x<pak;  x++  ) {
@@ -316,14 +323,12 @@ void CreateSlope( int slope, PIXRGB *dest, long w )
 		}
 	}
 	else {
-		/* now we look at the front back triangles, but otherwise all the same ...
-		 * we have to just turn it 90 degree
-		 * If I assume the SE (front) corner is (0,0,z_se) then I have two triangles:
-		 * top (1,0,sw-se) x (0,-1,ne-se) = (nw-sw,sw-se,1)
-		 * back (1,0,nw-ne) x (0,1,ne-se) = (ne-nw,ne-se,1)
+		/* Then we get left and right normal with the above definintion
+		 * back (NW corner normal): (c-d) x (c-b) = (ne-nw,sw-nw,1)
+		 * front (SE corner normal): (a-b) x (a-d) = (se-nw,se-ne,1)
 		 */
-		int front_brigthnes = base_brightness - (int)( (brightness*( nw-sw - (sw-se) + 1 )) / ( sqrt( 3.0 ) + sqrt( (nw-sw)*(nw-sw) + (sw-se)*(sw-se) + 1.0 ) ) );
-		int back_brigthnes = base_brightness - (int)( (brightness*( ne-nw - (ne-se) + 1 )) / ( sqrt( 3.0 ) + sqrt( (ne-nw)*(ne-nw) + (ne-se)*(ne-se) + 1.0 ) ) );
+		int back_brigthnes = base_brightness - (int)( (brightness*( (ne-nw)*sun[0] + (sw-nw)*sun[1] + 1*sun[2] )) / ( sun_abs + sqrt( (ne-nw)*(ne-nw) + (sw-nw)*(sw-nw) + 1.0 ) ) );
+		int front_brigthnes = base_brightness - (int)( (brightness*( (se-nw)*sun[0] + (se-ne)*sun[1] + 1*sun[2] )) / ( sun_abs + sqrt( (se-nw)*(se-nw) + (ne-se)*(ne-se) + 1.0 ) ) );
 
 		/* now we can built the two triangles using two line algorithm ...
 		 * first the middle line then then bottom
@@ -505,7 +510,8 @@ int main(int argc,char *argv[])
 
 	if(  make_lightmap  ) {
 		/* Create tile by tile */
-		base_brightness = 128 + (int)(brightness/(sqrt(3.0)+1.0));
+		sun_abs = sqrt( sun[0]*sun[0] + sun[1]*sun[1] + sun[2]*sun[2] );
+		base_brightness = 128 + (int)(brightness*sun[2]/(sun_abs+1.0));
 		for(  i=0;  i<=80;  i++  ) {
 			CreateSlope( i, bitmap + pak*(i%row) + (i / row)*bitmap_x*pak, bitmap_x );
 		}
