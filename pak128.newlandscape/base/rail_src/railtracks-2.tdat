@@ -1,5 +1,5 @@
 ----
-#(TRACK)
+#TRACK
 obj=way
 name=Rail_Track_180
 copyright=Fabio Gonella
@@ -15,7 +15,7 @@ retire_year=2999
 retire_month=1
 icon=> !20.0.0
 cursor=!20.1.4,0,-16
-#(SUMMER)
+#SUMMER
 Image[-][0]=!20.7.4
 Image[N][0]=!20.7.2
 Image[S][0]=!20.7.0
@@ -46,7 +46,7 @@ ImageUp[3][0]=!20.3.2
 ImageUp[6][0]=!20.3.3
 ImageUp[9][0]=!20.3.1
 ImageUp[12][0]=!20.3.0
-#(WINTER)
+#WINTER
 Image[-][1]=!21.7.4
 Image[N][1]=!21.7.2
 Image[S][1]=!21.7.0
@@ -78,7 +78,7 @@ ImageUp[6][1]=!21.3.3
 ImageUp[9][1]=!21.3.1
 ImageUp[12][1]=!21.3.0
 ----------------------------------------
-#(BRIDGE)
+#BRIDGE
 obj=bridge
 name=Rail_Track_180_Bridge
 copyright=Fabio Gonella
@@ -97,7 +97,7 @@ pillar_distance=1
 pillar_asymmetric=1
 icon=> !20.0.2
 cursor=!20.10.4,0,-16
-#(SUMMER)
+#SUMMER
 BackImage[NS][0]=!20.14.0,0,32
 FrontImage[NS][0]=!20.15.0,0,32
 BackImage2[NS][0]=!20.14.2,0,40
@@ -132,7 +132,7 @@ BackStart2[W][0]=!20.11.1,0,32
 FrontStart2[W][0]=!20.15.1,0,32
 backPillar[S][0]=!20.15.2,-12,4
 backPillar[W][0]=!20.15.3,12,4
-#(WINTER)
+#WINTER
 BackImage[NS][1]=!21.14.0,0,32
 FrontImage[NS][1]=!21.15.0,0,32
 BackImage2[NS][1]=!21.14.2,0,40
@@ -168,7 +168,7 @@ FrontStart2[W][1]=!21.15.1,0,32
 backPillar[S][1]=!21.15.2,-12,4
 backPillar[W][1]=!21.15.3,12,4
 ----------------------------------------
-#(ELEVATED)
+#ELEVATED
 obj=way
 name=Rail_Track_180_Elevated
 copyright=Fabio Gonella
@@ -185,7 +185,7 @@ retire_year=2999
 retire_month=1
 icon=> !20.0.3
 cursor=!20.16.4,0,-48
-#(SUMMER)
+#SUMMER
 Image[-][0]=!20.22.4,0,32
 Image[N][0]=!20.22.2,0,32
 Image[S][0]=!20.22.0,0,32
@@ -246,7 +246,7 @@ FrontImageUp[3][0]=!20.25.2,0,32
 FrontImageUp[6][0]=!20.25.3,0,32
 FrontImageUp[9][0]=!20.25.1,0,32
 FrontImageUp[12][0]=!20.25.0,0,32
-#(WINTER)
+#WINTER
 Image[-][1]=!21.22.4,0,32
 Image[N][1]=!21.22.2,0,32
 Image[S][1]=!21.22.0,0,32
@@ -308,7 +308,7 @@ FrontImageUp[6][1]=!21.25.3,0,32
 FrontImageUp[9][1]=!21.25.1,0,32
 FrontImageUp[12][1]=!21.25.0,0,32
 ----------------------------------------
-#(TUNNEL)
+#TUNNEL
 obj=tunnel
 name=Rail_Track_180_Tunnel
 copyright=Fabio Gonella
@@ -324,7 +324,7 @@ retire_year=2999
 retire_month=1
 icon=> !20.0.1
 cursor=!20.8.4,0,-16
-#(SUMMER)
+#SUMMER
 FrontImage[N][0]=!20.9.0
 BackImage[N][0]=!20.8.0
 FrontImage[S][0]=!20.9.2
@@ -333,7 +333,7 @@ FrontImage[E][0]=!20.9.3
 BackImage[E][0]=!20.8.3
 FrontImage[W][0]=!20.9.1
 BackImage[W][0]=!20.8.1
-#(WINTER)
+#WINTER
 FrontImage[N][1]=!21.9.0
 BackImage[N][1]=!21.8.0
 FrontImage[S][1]=!21.9.2
@@ -343,7 +343,7 @@ BackImage[E][1]=!21.8.3
 FrontImage[W][1]=!21.9.1
 BackImage[W][1]=!21.8.1
 ----------------------------------------
-#(TRACK)
+#TRACK
 obj=way
 name=Rail_Track_160
 copyright=Fabio Gonella
@@ -359,7 +359,7 @@ retire_year=2000
 retire_month=1
 icon=> !20.0.5
 cursor=!20.1.9,0,-16
-#(SUMMER)
+#SUMMER
 Image[-][0]=!20.7.9
 Image[N][0]=!20.7.7
 Image[S][0]=!20.7.5
@@ -390,7 +390,7 @@ ImageUp[3][0]=!20.3.7
 ImageUp[6][0]=!20.3.8
 ImageUp[9][0]=!20.3.6
 ImageUp[12][0]=!20.3.5
-#(WINTER)
+#WINTER
 Image[-][1]=!21.7.9
 Image[N][1]=!21.7.7
 Image[S][1]=!21.7.5
@@ -422,7 +422,7 @@ ImageUp[6][1]=!21.3.8
 ImageUp[9][1]=!21.3.6
 ImageUp[12][1]=!21.3.5
 ----------------------------------------
-#(BRIDGE)
+#BRIDGE
 obj=bridge
 name=Rail_Track_160_Bridge
 copyright=Fabio Gonella
@@ -441,7 +441,7 @@ pillar_distance=1
 pillar_asymmetric=1
 icon=> !20.0.7
 cursor=!20.10.9,0,-16
-#(SUMMER)
+#SUMMER
 BackImage[NS][0]=!20.14.5,0,32
 FrontImage[NS][0]=!20.15.5,0,32
 BackImage2[NS][0]=!20.14.7,0,40
@@ -476,7 +476,7 @@ BackStart2[W][0]=!20.11.6,0,32
 FrontStart2[W][0]=!20.15.6,0,32
 backPillar[S][0]=!20.15.7,-12,4
 backPillar[W][0]=!20.15.8,12,4
-#(WINTER)
+#WINTER
 BackImage[NS][1]=!21.14.5,0,32
 FrontImage[NS][1]=!21.15.5,0,32
 BackImage2[NS][1]=!21.14.7,0,40
@@ -512,7 +512,7 @@ FrontStart2[W][1]=!21.15.6,0,32
 backPillar[S][1]=!21.15.7,-12,4
 backPillar[W][1]=!21.15.8,12,4
 ----------------------------------------
-#(ELEVATED)
+#ELEVATED
 obj=way
 name=Rail_Track_160_Elevated
 copyright=Fabio Gonella
@@ -529,7 +529,7 @@ retire_year=2000
 retire_month=1
 icon=> !20.0.8
 cursor=!20.16.9,0,-48
-#(SUMMER)
+#SUMMER
 Image[-][0]=!20.22.9,0,32
 Image[N][0]=!20.22.7,0,32
 Image[S][0]=!20.22.5,0,32
@@ -590,7 +590,7 @@ FrontImageUp[3][0]=!20.25.7,0,32
 FrontImageUp[6][0]=!20.25.8,0,32
 FrontImageUp[9][0]=!20.25.6,0,32
 FrontImageUp[12][0]=!20.25.5,0,32
-#(WINTER)
+#WINTER
 Image[-][1]=!21.22.9,0,32
 Image[N][1]=!21.22.7,0,32
 Image[S][1]=!21.22.5,0,32
@@ -652,7 +652,7 @@ FrontImageUp[6][1]=!21.25.8,0,32
 FrontImageUp[9][1]=!21.25.6,0,32
 FrontImageUp[12][1]=!21.25.5,0,32
 ----------------------------------------
-#(TUNNEL)
+#TUNNEL
 obj=tunnel
 name=Rail_Track_160_Tunnel
 copyright=Fabio Gonella
@@ -668,7 +668,7 @@ retire_year=2000
 retire_month=1
 icon=> !20.0.6
 cursor=!20.8.9,0,-16
-#(SUMMER)
+#SUMMER
 FrontImage[N][0]=!20.9.5
 BackImage[N][0]=!20.8.5
 FrontImage[S][0]=!20.9.7
@@ -677,7 +677,7 @@ FrontImage[E][0]=!20.9.8
 BackImage[E][0]=!20.8.8
 FrontImage[W][0]=!20.9.6
 BackImage[W][0]=!20.8.6
-#(WINTER)
+#WINTER
 FrontImage[N][1]=!21.9.5
 BackImage[N][1]=!21.8.5
 FrontImage[S][1]=!21.9.7
@@ -687,7 +687,7 @@ BackImage[E][1]=!21.8.8
 FrontImage[W][1]=!21.9.6
 BackImage[W][1]=!21.8.6
 ----------------------------------------
-#(TRACK)
+#TRACK
 obj=way
 name=Rail_Track_140
 copyright=Fabio Gonella
@@ -703,7 +703,7 @@ retire_year=1980
 retire_month=1
 icon=> !20.0.10
 cursor=!20.1.14,0,-16
-#(SUMMER)
+#SUMMER
 Image[-][0]=!20.7.14
 Image[N][0]=!20.7.12
 Image[S][0]=!20.7.10
@@ -734,7 +734,7 @@ ImageUp[3][0]=!20.3.12
 ImageUp[6][0]=!20.3.13
 ImageUp[9][0]=!20.3.11
 ImageUp[12][0]=!20.3.10
-#(WINTER)
+#WINTER
 Image[-][1]=!21.7.14
 Image[N][1]=!21.7.12
 Image[S][1]=!21.7.10
@@ -766,7 +766,7 @@ ImageUp[6][1]=!21.3.13
 ImageUp[9][1]=!21.3.11
 ImageUp[12][1]=!21.3.10
 ----------------------------------------
-#(BRIDGE)
+#BRIDGE
 obj=bridge
 name=Rail_Track_140_Bridge
 copyright=Fabio Gonella
@@ -785,7 +785,7 @@ pillar_distance=1
 pillar_asymmetric=1
 icon=> !20.0.12
 cursor=!20.10.14,0,-16
-#(SUMMER)
+#SUMMER
 BackImage[NS][0]=!20.14.10,0,32
 FrontImage[NS][0]=!20.15.10,0,32
 BackImage2[NS][0]=!20.14.12,0,40
@@ -820,7 +820,7 @@ BackStart2[W][0]=!20.11.11,0,32
 FrontStart2[W][0]=!20.15.11,0,32
 backPillar[S][0]=!20.15.12,-12,4
 backPillar[W][0]=!20.15.13,12,4
-#(WINTER)
+#WINTER
 BackImage[NS][1]=!21.14.10,0,32
 FrontImage[NS][1]=!21.15.10,0,32
 BackImage2[NS][1]=!21.14.12,0,40
@@ -856,7 +856,7 @@ FrontStart2[W][1]=!21.15.11,0,32
 backPillar[S][1]=!21.15.12,-12,4
 backPillar[W][1]=!21.15.13,12,4
 ----------------------------------------
-#(ELEVATED)
+#ELEVATED
 obj=way
 name=Rail_Track_140_Elevated
 copyright=Fabio Gonella
@@ -873,7 +873,7 @@ retire_year=1980
 retire_month=1
 icon=> !20.0.13
 cursor=!20.16.14,0,-48
-#(SUMMER)
+#SUMMER
 Image[-][0]=!20.22.14,0,32
 Image[N][0]=!20.22.12,0,32
 Image[S][0]=!20.22.10,0,32
@@ -934,7 +934,7 @@ FrontImageUp[3][0]=!20.25.12,0,32
 FrontImageUp[6][0]=!20.25.13,0,32
 FrontImageUp[9][0]=!20.25.11,0,32
 FrontImageUp[12][0]=!20.25.10,0,32
-#(WINTER)
+#WINTER
 Image[-][1]=!21.22.14,0,32
 Image[N][1]=!21.22.12,0,32
 Image[S][1]=!21.22.10,0,32
@@ -996,7 +996,7 @@ FrontImageUp[6][1]=!21.25.13,0,32
 FrontImageUp[9][1]=!21.25.11,0,32
 FrontImageUp[12][1]=!21.25.10,0,32
 ----------------------------------------
-#(TUNNEL)
+#TUNNEL
 obj=tunnel
 name=Rail_Track_140_Tunnel
 copyright=Fabio Gonella
@@ -1012,7 +1012,7 @@ retire_year=1980
 retire_month=1
 icon=> !20.0.11
 cursor=!20.8.14,0,-16
-#(SUMMER)
+#SUMMER
 FrontImage[N][0]=!20.9.10
 BackImage[N][0]=!20.8.10
 FrontImage[S][0]=!20.9.12
@@ -1021,7 +1021,7 @@ FrontImage[E][0]=!20.9.13
 BackImage[E][0]=!20.8.13
 FrontImage[W][0]=!20.9.11
 BackImage[W][0]=!20.8.11
-#(WINTER)
+#WINTER
 FrontImage[N][1]=!21.9.10
 BackImage[N][1]=!21.8.10
 FrontImage[S][1]=!21.9.12
@@ -1031,7 +1031,7 @@ BackImage[E][1]=!21.8.13
 FrontImage[W][1]=!21.9.11
 BackImage[W][1]=!21.8.11
 ----------------------------------------
-#(TRACK)
+#TRACK
 obj=way
 name=Rail_Track_120
 copyright=Fabio Gonella
@@ -1047,7 +1047,7 @@ retire_year=1940
 retire_month=1
 icon=> !20.0.15
 cursor=!20.1.19,0,-16
-#(SUMMER)
+#SUMMER
 Image[-][0]=!20.7.19
 Image[N][0]=!20.7.17
 Image[S][0]=!20.7.15
@@ -1078,7 +1078,7 @@ ImageUp[3][0]=!20.3.17
 ImageUp[6][0]=!20.3.18
 ImageUp[9][0]=!20.3.16
 ImageUp[12][0]=!20.3.15
-#(WINTER)
+#WINTER
 Image[-][1]=!21.7.19
 Image[N][1]=!21.7.17
 Image[S][1]=!21.7.15
@@ -1110,7 +1110,7 @@ ImageUp[6][1]=!21.3.18
 ImageUp[9][1]=!21.3.16
 ImageUp[12][1]=!21.3.15
 ----------------------------------------
-#(BRIDGE)
+#BRIDGE
 obj=bridge
 name=Rail_Track_120_Bridge
 copyright=Fabio Gonella
@@ -1129,7 +1129,7 @@ pillar_distance=1
 pillar_asymmetric=1
 icon=> !20.0.17
 cursor=!20.10.19,0,-16
-#(SUMMER)
+#SUMMER
 BackImage[NS][0]=!20.14.15,0,32
 FrontImage[NS][0]=!20.15.15,0,32
 BackImage2[NS][0]=!20.14.17,0,40
@@ -1164,7 +1164,7 @@ BackStart2[W][0]=!20.11.16,0,32
 FrontStart2[W][0]=!20.15.16,0,32
 backPillar[S][0]=!20.15.17,-12,4
 backPillar[W][0]=!20.15.18,12,4
-#(WINTER)
+#WINTER
 BackImage[NS][1]=!21.14.15,0,32
 FrontImage[NS][1]=!21.15.15,0,32
 BackImage2[NS][1]=!21.14.17,0,40
@@ -1200,7 +1200,7 @@ FrontStart2[W][1]=!21.15.16,0,32
 backPillar[S][1]=!21.15.17,-12,4
 backPillar[W][1]=!21.15.18,12,4
 ----------------------------------------
-#(ELEVATED)
+#ELEVATED
 obj=way
 name=Rail_Track_120_Elevated
 copyright=Fabio Gonella
@@ -1340,7 +1340,7 @@ FrontImageUp[6][1]=!21.25.18,0,32
 FrontImageUp[9][1]=!21.25.16,0,32
 FrontImageUp[12][1]=!21.25.15,0,32
 ----------------------------------------
-#(TUNNEL)
+#TUNNEL
 obj=tunnel
 name=Rail_Track_120_Tunnel
 copyright=Fabio Gonella
@@ -1356,7 +1356,7 @@ retire_year=1940
 retire_month=1
 icon=> !20.0.16
 cursor=!20.8.19,0,-16
-#(SUMMER)
+#SUMMER
 FrontImage[N][0]=!20.9.15
 BackImage[N][0]=!20.8.15
 FrontImage[S][0]=!20.9.17
@@ -1365,7 +1365,7 @@ FrontImage[E][0]=!20.9.18
 BackImage[E][0]=!20.8.18
 FrontImage[W][0]=!20.9.16
 BackImage[W][0]=!20.8.16
-#(WINTER)
+#WINTER
 FrontImage[N][1]=!21.9.15
 BackImage[N][1]=!21.8.15
 FrontImage[S][1]=!21.9.17
