@@ -93,7 +93,7 @@ int slope_step = 16;
 bool make_lightmap = false;
 bool make_marker = false;
 
-double sun[3]={ -1, -1, 2 }, sun_abs=1;
+double sun[3]={ -0.5, 0.5, 1 }, sun_abs=1;
 
 // how much change of brightness
 int brightness = 32;
@@ -294,28 +294,31 @@ void CreateSlope( int slope, PIXRGB *dest, long w )
 		diagonal = true;
 	}
 
-	/* we have a triangle with four corners
-	 * SE =: a at (0,0,se)
-	 * SW =: b at (1,0,sw)
-	 * NW =: c at (1,1,nw)
-	 * NE =: d at (0,1,ne)
+	/* we have a triangle with four corners. In order to give a slope angle of roughly 22.5 for 16 slope_step
+	 * we have to have tan(22.5)=16/x => x=38,627...
+	 * However, 1 is easier to calculate, so we make those vectors just shorter in z direction
+	 * SE =: a at (0,0,se*slope_step/38)
+	 * SW =: b at (1,0,sw*slope_step/38)
+	 * NW =: c at (1,1,nw*slope_step/38)
+	 * NE =: d at (0,1,ne*slope_step/38)
 	 */
+	const double z_step = slope_step/38.627;
 
 	// either the tile is left right slopes or front back. first comes left-right ones
 	if(  abs(nw-se) >= abs(sw-ne) ) {
-		/* Then we get left and right nromal with the above definintion
+		/* Then we get left and right normal with the above definintion
 		 * left (SW corner normal): (b-c) x (b-a) = (se-sw,sw-nw,1)
 		 * right (NE corner normal): (d-a) x (d-c) = (ne-nw,se-ne,1)
 		 *
-		 * The sun is in the south at 45 deg, i.e. at s=( 0, -1, sqrt(2) )
+		 * The sun is in the south at 45 deg, i.e. at s=( 0, -1, 1 )
 		 * (we only care about angle, so we forget about the se offset ...)
 		 * angle to the sun is now cos(i,s) = l.s/(|l|*|s|) (and the same for r)
-		 * |s|=sqrt(3) and for the rest we use floating point
+		 * |s|=sqrt(2) and for the rest we use floating point
 		 * 
 		 * And nature is nice, so the diffuse reflected light (aka brightness) is the cos of the angle ...
 		 */
-		int left_brigthnes = base_brightness - (int)( (brightness*( (se-sw)*sun[0] + (sw-nw)*sun[1] + 1*sun[2] )) / ( sun_abs + sqrt( (se-sw)*(se-sw) + (sw-nw)*(sw-nw) + 1.0 ) ) );
-		int right_brigthnes = base_brightness - (int)( (brightness*( (ne-nw)*sun[0] + (se-ne)*sun[1] + 1*sun[2] )) / ( sun_abs + sqrt( (ne-nw)*(ne-nw) + (se-ne)*(se-ne) + 1.0 ) ) );
+		int left_brigthnes = base_brightness - (int)( (brightness*( (se-sw)*sun[0]*z_step + (sw-nw)*sun[1]*z_step + 1*sun[2] )) / ( sun_abs + sqrt( (se-sw)*(se-sw)*z_step*z_step + (sw-nw)*(sw-nw)*z_step*z_step + 1.0 ) ) );
+		int right_brigthnes = base_brightness - (int)( (brightness*( (ne-nw)*sun[0]*z_step + (se-ne)*sun[1]*z_step + 1*sun[2] )) / ( sun_abs + sqrt( (ne-nw)*(ne-nw)*z_step*z_step + (se-ne)*(se-ne)*z_step*z_step + 1.0 ) ) );
 
 		// nor we can render the tile
 		for(  int x=0;  x<pak;  x++  ) {
@@ -325,10 +328,10 @@ void CreateSlope( int slope, PIXRGB *dest, long w )
 	else {
 		/* Then we get left and right normal with the above definintion
 		 * back (NW corner normal): (c-d) x (c-b) = (ne-nw,sw-nw,1)
-		 * front (SE corner normal): (a-b) x (a-d) = (se-nw,se-ne,1)
+		 * front (SE corner normal): (a-b) x (a-d) = (se-sw,se-ne,1)
 		 */
-		int back_brigthnes = base_brightness - (int)( (brightness*( (ne-nw)*sun[0] + (sw-nw)*sun[1] + 1*sun[2] )) / ( sun_abs + sqrt( (ne-nw)*(ne-nw) + (sw-nw)*(sw-nw) + 1.0 ) ) );
-		int front_brigthnes = base_brightness - (int)( (brightness*( (se-nw)*sun[0] + (se-ne)*sun[1] + 1*sun[2] )) / ( sun_abs + sqrt( (se-nw)*(se-nw) + (ne-se)*(ne-se) + 1.0 ) ) );
+		int back_brigthnes = base_brightness - (int)( (brightness*( (ne-nw)*sun[0]*z_step + (nw-sw)*sun[1]*z_step + 1*sun[2] )) / ( sun_abs + sqrt( (ne-nw)*(ne-nw)*z_step*z_step + (sw-nw)*(sw-nw)*z_step*z_step + 1.0 ) ) );
+		int front_brigthnes = base_brightness - (int)( (brightness*( (se-sw)*sun[0]*z_step + (se-ne)*sun[1]*z_step + 1*sun[2] )) / ( sun_abs + sqrt( (se-sw)*(se-sw)*z_step*z_step + (ne-se)*(ne-se)*z_step*z_step + 1.0 ) ) );
 
 		/* now we can built the two triangles using two line algorithm ...
 		 * first the middle line then then bottom
