@@ -2,5 +2,5 @@ Obj=ground
 Name=Outside
 Image[0][0]=tile.1.1
 
-copyright=Pak128 NewLandscape r1301
+copyright=Pak128 NewLandscape r1303
 # copyright entry is shown when loading pakset above progress bar and should say what is pak/version
