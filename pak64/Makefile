@@ -78,7 +78,7 @@ copy:
 $(DIRS64):
 	@echo "===> PAK64 $@"
 	@mkdir -p $(PAKDIR)
-	@$(MAKEOBJ) quiet PAK $(PAKDIR)/ $@/ > /dev/null
+	@$(MAKEOBJ) verbose PAK $(PAKDIR)/ $@/ > /dev/null
 
 $(DIRS128):
 	@echo "===> PAK128 $@"
@@ -87,9 +87,6 @@ $(DIRS128):
 
 $(OUTSIDE):
 	@echo "===> Grounds calculations"
-	@$(LIGHTMAP) -pak64 -marker16 -c#0xFF8000 $@/marker.png
-	@$(LIGHTMAP) -pak64 -marker16 -c#0x800000 $@/borders.png
-	@$(LIGHTMAP) -pak64 -slope16 -bright32 $@/texture-lightmap.png
 	@echo "===> OUTSIDE with REVISION and grounds"
 	@mkdir -p $(PAKDIR)
 	@echo -e -n "Obj=ground\nName=Outside\ncopyright=pak64 112.3 r" >$@/outside.dat
@@ -97,12 +94,18 @@ $(OUTSIDE):
 	@echo -e "Image[0][0]=outside.0.1\n-" >>$@/outside.dat
 	@$(MAKEOBJ) PAK64 $(PAKDIR)/ $@/ > /dev/null
 	@rm $@/outside.dat
-	@rm $@/marker.png
-	@rm $@/borders.png
-	@rm $@/texture-lightmap.png
+
+calclight:
+	@echo "===> MAKE lightmaps and borders"
+	@$(LIGHTMAP) -pak64 -marker16 -c#0xFF8000 ground/marker.png
+	@$(LIGHTMAP) -pak64 -marker16 -c#0x800000 ground/borders.png
+	@$(LIGHTMAP) -pak64 -slope16 -bright128 ground/texture-lightmap.png
 
 clean:
 	@echo "===> CLEAN"
+#	@rm ground/marker.png
+#	@rm ground/borders.png
+#	@rm ground/texture-lightmap.png
 	@rm -fr $(PAKDIR) $(DESTFILE).tbz2 $(DESTFILE).zip
 
 addons: 	clean copy_addons $(ADDON_DIRS64)
