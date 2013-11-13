@@ -1,0 +1,47 @@
+# This file enables laoding of vehicles from a different set or to remove some vehicles
+# If something during loading is not found, it will be looked up here, and retried
+#-------------------------------------
+# changed names for 64 pak.japan
+# pak64 to pak64.japan
+Rillenschienen
+tramrailway
+monorail
+shinkansen_track
+elevated_monorail
+elevated_shinkansen_rail
+MaglevTrack
+shinkansen_track
+MaglevTrackElevated
+elevated_shinkansen_rail
+MonorailRamp
+shinkansen_ramp
+MaglevBridge
+shinkansen_bridge
+mlm_concrete_bridge
+shinkansen_bridge
+SignalsMonorail
+shinkansen_signals
+preSignalsMonorail
+shinkansen_presignals
+ChooseSignalsMonorail
+shinkansen_choose_signals
+XTest
+JR-Shinkansen-0a
+XMail
+JR-Shinkansen-0d
+Concept1Front
+JR-Shinkansen-0a
+Concept1Pass
+JR-Shinkansen-0b
+Concept1Mail
+JR-Shinkansen-0c
+Concept1Rear
+JR-Shinkansen-0d
+Concept2Front
+JRW-Shinkansen-N723
+Concept2Pass
+JRW-Shinkansen-N726
+Concept2Mail
+JRW-Shinkansen-N725M1w
+Concept2Rear
+JRW-Shinkansen-N724
