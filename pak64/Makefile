@@ -72,7 +72,7 @@ copy:
 	@cp -p sound/* $(PAKDIR)/sound
 	@cp -p config/* $(PAKDIR)/config
 	@cp -rp scenario/* $(PAKDIR)/scenario
-	@find $(PAKDIR)/scenario "(" -name ".svn" ")" -depth -exec rm -rf {} \;
+	@find $(PAKDIR)/scenario -depth "(" -name ".svn" ")" -exec rm -rf {} \;
 	@cp -p pak.text/* $(PAKDIR)/text
 
 $(DIRS64):
