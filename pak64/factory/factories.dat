@@ -406,12 +406,13 @@ BackImage[0][0][1][1][0][0]=oilrigg-vilvoh.1.0
 BackImage[0][1][0][0][0][0]=oilrigg-vilvoh.1.1
 BackImage[0][1][0][1][0][0]=oilrigg-vilvoh.1.2
 BackImage[0][1][1][0][0][0]=oilrigg-vilvoh.2.0
+# no frontimagewith h>1 ...
 FrontImage[0][0][0][0][0][0]=oilrigg-vilvoh.0.0
-FrontImage[0][0][0][1][0][0]=oilrigg-vilvoh.0.1
+#FrontImage[0][0][0][1][0][0]=oilrigg-vilvoh.0.1
 FrontImage[0][0][1][0][0][0]=oilrigg-vilvoh.0.2
-FrontImage[0][0][1][1][0][0]=oilrigg-vilvoh.1.0
+#FrontImage[0][0][1][1][0][0]=oilrigg-vilvoh.1.0
 FrontImage[0][1][0][0][0][0]=oilrigg-vilvoh.1.1
-FrontImage[0][1][0][1][0][0]=oilrigg-vilvoh.1.2
+#FrontImage[0][1][0][1][0][0]=oilrigg-vilvoh.1.2
 FrontImage[0][1][1][0][0][0]=oilrigg-vilvoh.2.0
 --------------------
 Obj=factory
