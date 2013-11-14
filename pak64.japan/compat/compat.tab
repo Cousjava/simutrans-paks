@@ -2,6 +2,23 @@
 # If something during loading is not found, it will be looked up here, and retried
 #-------------------------------------
 # changed names for 64 pak.japan
+03_CITY_A
+02_CITY
+03_CITY_B
+02_CITY
+03_CITY_C
+02_CITY
+03_CITY
+02_CITY
+04_CITY_A
+02_CITY
+04_CITY_B
+02_CITY
+04_CITY_C
+02_CITY
+04_CITY
+02_CITY
+#
 # pak64 to pak64.japan
 Rillenschienen
 tramrailway
