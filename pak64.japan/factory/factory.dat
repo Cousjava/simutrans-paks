@@ -225,7 +225,7 @@ BackImage[0][2][2][0][0]=forest.2.0
 --
 # not really a user building
 # Define a Level
-Obj=building
+Obj=factory
 Name=Windkraftwerk
 needs_ground=1
 Location=Land

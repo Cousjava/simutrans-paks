@@ -255,7 +255,7 @@ copyright=MHz
 Type=com
 Level=7
 intro_year=1990
-cahnce=5
+chance=5
 BackImage[0][0][0][0][0][0]=com.1.7
 # no-winter!!!
 --

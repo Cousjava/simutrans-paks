@@ -440,7 +440,7 @@ Name=RES_30_14
 copyright=477 & Haru (FT)
 Type=res
 Level=14
-xhance=100
+chance=100
 intro_year=1962
 BackImage[0][0][0][0][0]=res.1.14
 --
@@ -449,7 +449,7 @@ Name=RES_31_14
 copyright=477 & Haru (FT)
 Type=res
 Level=14
-xhance=100
+chance=100
 intro_year=1962
 BackImage[0][0][0][0][0]=res.2.14
 --

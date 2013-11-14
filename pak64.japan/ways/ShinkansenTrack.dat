@@ -215,7 +215,6 @@ maintenance=400
 topspeed=450
 intro_year=1964
 intro_month=6
-draw_as_ding=0
 icon=> ./hangerbase.5.0
 cursor=./hangerbase.5.2
 FrontImage[S]=hangerbase.0.0

@@ -64,7 +64,7 @@ copy:
 $(DIRS64):
 	@echo "===> PAK64 $@"
 	@mkdir -p $(PAKDIR)
-	@$(MAKEOBJ) quiet PAK $(PAKDIR)/ $@/ > /dev/null
+	@$(MAKEOBJ) verbose PAK $(PAKDIR)/ $@/ > /dev/null
 
 $(DIRS128):
 	@echo "===> PAK128 $@"
