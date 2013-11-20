@@ -514,6 +514,14 @@ BackStart[E]=bridges-modern-road.2.2
 FrontStart[E]=bridges-modern-road.3.2
 BackStart[W]=bridges-modern-road.2.3
 FrontStart[W]=bridges-modern-road.3.3
+BackStart2[N]=bridges-modern-road.4.0,0,16
+FrontStart2[N]=bridges-modern-road.3.0
+BackStart2[S]=bridges-modern-road.4.1,0,16
+FrontStart2[S]=bridges-modern-road.3.1
+BackStart2[E]=bridges-modern-road.4.2,0,16
+FrontStart2[E]=bridges-modern-road.3.2
+BackStart2[W]=bridges-modern-road.4.3,0,16
+FrontStart2[W]=bridges-modern-road.3.3
 backPillar[S]=bridges-modern-road.3.4
 backPillar[W]=bridges-modern-road.3.5
 --------------------

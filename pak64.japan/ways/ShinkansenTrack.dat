@@ -135,6 +135,14 @@ BackStart[E]=bridges-koka-rail.2.2
 FrontStart[E]=bridges-koka-rail.3.2
 BackStart[W]=bridges-koka-rail.2.3
 FrontStart[W]=bridges-koka-rail.3.3
+BackStart2[N]=bridges-koka-rail.3.2,0,16
+FrontStart2[N]=bridges-koka-rail.3.0
+BackStart2[S]=bridges-koka-rail.3.3,0,16
+FrontStart2[S]=bridges-koka-rail.3.1
+BackStart2[E]=bridges-koka-rail.2.4,0,16
+FrontStart2[E]=bridges-koka-rail.3.2
+BackStart2[W]=bridges-koka-rail.3.5,0,16
+FrontStart2[W]=bridges-koka-rail.3.3
 backPillar[S]=bridges-koka-rail.4.0
 backPillar[W]=bridges-koka-rail.4.1
 --
