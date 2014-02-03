@@ -19,6 +19,7 @@ catg=1
 value=270
 speed_bonus=2
 mapcolor=10
+weight_per_unit=700
 -----------------------
 obj=good
 name=flour
@@ -27,6 +28,7 @@ catg=1
 value=255
 speed_bonus=7
 mapcolor=175
+weight_per_unit=100
 -----------------------
 obj=good
 name=beer
@@ -35,6 +37,7 @@ catg=1
 value=285
 speed_bonus=9
 mapcolor=198
+weight_per_unit=500
 -----------------------
 obj=good
 name=grain
@@ -43,6 +46,7 @@ catg=2
 value=140
 speed_bonus=5
 mapcolor=31
+weight_per_unit=1000
 -----------------------
 obj=good
 name=meat
@@ -51,6 +55,7 @@ catg=4
 value=870
 speed_bonus=8
 mapcolor=95
+weight_per_unit=1000
 -----------------------
 obj=good
 name=fish
@@ -59,6 +64,7 @@ catg=4
 value=930
 speed_bonus=7
 mapcolor=103
+weight_per_unit=600
 -----------------------
 obj=good
 name=food
@@ -67,6 +73,7 @@ catg=4
 value=660
 speed_bonus=14
 mapcolor=119
+weight_per_unit=900
 -----------------------
 obj=good
 name=milk
@@ -75,4 +82,5 @@ catg=0
 value=90
 speed_bonus=9
 mapcolor=215
+weight_per_unit=1000
 -----------------------
