@@ -242,7 +242,7 @@ chance=50
 Level=10
 intro_year=1750
 retire_year=1950
-climates=tropic
+climates=mediterran,tropic
 BackImage[0][0][0][0][0][0]=com.4.10
 BackImage[0][0][0][0][0][1]=winter-com.4.10
 --------------------
@@ -277,7 +277,7 @@ chance=50
 Level=11
 intro_year=1750
 retire_year=1950
-climates=tropic
+climates=mediterran,tropic
 BackImage[0][0][0][0][0][0]=com.9.1
 BackImage[0][0][0][0][0][1]=winter-com.9.1
 --------------------
