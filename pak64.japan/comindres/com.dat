@@ -518,6 +518,15 @@ BackImage[0][0][0][0][0]=com.3.15
 # no-winter!!!
 --
 Obj=building
+Name=COM_32_15
+copyright=kiku
+Type=com
+intro_year=1980
+level=15
+BackImage[0][0][0][0][0][0]=com.4.15
+BackImage[0][0][0][0][0][1]=winter-com.4.15
+--
+Obj=building
 Name=COM_30_16
 copyright=Haru (FT)
 Type=com
@@ -538,14 +547,33 @@ BackImage[0][0][0][0][0][0]=com.4.16
 # no-winter!!!
 --
 Obj=building
-Name=COM_30_17
-copyright=Alexander Brose
+Name=COM_32_16
+copyright=kiku
 Type=com
-Level=17
-chance=30
-intro_year=1969
-BackImage[0][0][0][1][0]=com.1.17
-BackImage[0][0][0][0][0]=com.2.17
+intro_year=1967
+level=16
+BackImage[0][0][0][1][0][0]=com.5.16
+BackImage[0][0][0][0][0][0]=com.6.16
+BackImage[0][0][0][1][0][1]=winter-com.5.16
+BackImage[0][0][0][0][0][1]=winter-com.6.16
+# christmas tree animation
+FrontImage[0][0][0][0][0][1]=NipponComBuilding002.1.2
+FrontImage[0][0][0][0][1][1]=NipponComBuilding002.1.3
+FrontImage[0][0][0][0][2][1]=NipponComBuilding002.1.4
+FrontImage[0][0][0][0][3][1]=NipponComBuilding002.1.5
+FrontImage[0][0][0][0][4][1]=NipponComBuilding002.1.6
+FrontImage[0][0][0][0][5][1]=NipponComBuilding002.1.7
+--
+Obj=building
+Name=COM_30_17
+copyright=kiku
+Type=com
+intro_year=1980
+level=17
+BackImage[0][0][0][1][0][0]=com.1.17
+BackImage[0][0][0][0][0][0]=com.2.17
+BackImage[0][0][0][1][0][1]=winter-com.1.1
+BackImage[0][0][0][0][0][1]=winter-com.2.17
 --
 Obj=building
 Name=COM_31_17
@@ -562,7 +590,7 @@ Name=COM_30_18
 copyright=Alexander Brose
 Type=com
 Level=18
-chance=33
+chance=10
 intro_year=1973
 climates=mediterran,temperate,tundra,rocky
 BackImage[0][0][0][1][0]=com.1.18
@@ -574,6 +602,7 @@ copyright=diverse & prissi (FT)
 Type=com
 Level=18
 intro_year=1971
+chance=100
 BackImage[0][0][0][1][0]=com.3.18
 BackImage[0][0][0][0][0]=com.4.18
 # no-winter!!!
@@ -584,6 +613,7 @@ chance=10
 copyright=Haru (FT)
 Type=com
 Level=19
+chance=10
 intro_year=1994
 BackImage[0][0][0][0][0]=vhbi_005.1.0
 BackImage[0][0][0][1][0]=vhbi_005.0.0
@@ -603,4 +633,16 @@ chance=100
 BackImage[0][0][0][1][0][0]=com.3.19
 BackImage[0][0][0][0][0][0]=com.4.19
 # no-winter!!!
+--
+Obj=building
+Name=COM_32_19
+copyright=kiku
+Type=com
+chance=100
+intro_year=1974
+level=19
+BackImage[0][0][0][1][0][0]=com.5.19
+BackImage[0][0][0][0][0][0]=com.6.19
+BackImage[0][0][0][1][0][1]=winter-com.5.19
+BackImage[0][0][0][0][0][1]=winter-com.6.19
 --

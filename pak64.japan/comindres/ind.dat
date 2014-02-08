@@ -316,7 +316,18 @@ Name=IND_30_18
 copyright=Shino (FT)
 Type=ind
 Level=18
+chance=30
 intro_year=1992
 BackImage[0][0][0][1][0]=ind.6.7
 BackImage[0][0][0][0][0]=ind.7.7
+--
+Obj=building
+Name=IND_31_18
+copyright=Alexander Brose
+Type=ind
+Level=18
+chance=100
+intro_year=1974
+BackImage[0][0][0][1][0]=ind.8.7
+BackImage[0][0][0][0][0]=ind.9.7
 --
