@@ -1,4 +1,13 @@
 obj=good
+name=Bier
+catg=1
+metric=paletten
+value=200
+speed_bonus=7
+weight_per_unit=2000
+mapColor=70
+-------------
+obj=good
 name=latex
 catg=3
 metric=m3

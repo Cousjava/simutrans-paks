@@ -1,0 +1,180 @@
+{
+    "comment": "This is a TileCutter Project file (JSON formatted). You may edit it by hand if you are careful.", 
+    "data": {
+        "dat": {
+            "dat_lump": "obj=factory\nname=TireFactory\ncopyright=Reytm2\n#productivity=60\n#range=30\nInputGood[0]=latex\n#InputCapacity[0]=900\n#InputFactor[0]=60\nInputSupplier[0]=0\nOutputGood[0]=tires\nOutputCapacity[0]=900\npax_level=20\nmail_boost=400\npassenger_boost=350\nelectricity_boost=800\nelectricity_amount=75\nlocation=Land\ndistributionWeight=80\n#intro_year=1950\n#MapColor=205"
+        }, 
+        "dims": {
+            "directions": 1, 
+            "frames": 1, 
+            "frontimage": 0, 
+            "paksize": 96, 
+            "winter": 1, 
+            "x": 2, 
+            "y": 2, 
+            "z": 2
+        }, 
+        "files": {
+            "datfile_location": "TireFactory.dat", 
+            "datfile_write": true, 
+            "pakfile_location": "", 
+            "pngfile_location": "TireFactory.png"
+        }, 
+        "images": [
+            [
+                [
+                    [
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "TireFactory-uncut.png"
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": ""
+                        }
+                    ]
+                ], 
+                [
+                    [
+                        {
+                            "offset": [
+                                192, 
+                                0
+                            ], 
+                            "path": "TireFactory-uncut.png"
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": ""
+                        }
+                    ]
+                ]
+            ], 
+            [
+                [
+                    [
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": ""
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": ""
+                        }
+                    ]
+                ], 
+                [
+                    [
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": ""
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": ""
+                        }
+                    ]
+                ]
+            ], 
+            [
+                [
+                    [
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": ""
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": ""
+                        }
+                    ]
+                ], 
+                [
+                    [
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": ""
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": ""
+                        }
+                    ]
+                ]
+            ], 
+            [
+                [
+                    [
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": ""
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": ""
+                        }
+                    ]
+                ], 
+                [
+                    [
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": ""
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": ""
+                        }
+                    ]
+                ]
+            ]
+        ]
+    }, 
+    "type": "TCP_JSON", 
+    "version": "0.6.1"
+}
