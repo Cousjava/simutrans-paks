@@ -25,7 +25,7 @@ DIRS64 += vehicles/track
 DIRS64 += vehicles/water
 DIRS64 += vehicles/air
 DIRS64 += vehicles/shinkansen
-DIRS64 += vehicles/trams
+DIRS64 += vehicles/tram
 DIRS64 += ways
 
 DIRS128 :=
