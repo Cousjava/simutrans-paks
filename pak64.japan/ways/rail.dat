@@ -259,7 +259,7 @@ cost=18000
 topspeed=65
 maintenance=1500
 max_weight=80
-max_lenght=6
+max_lenght=16
 intro_year=1860
 cursor=bridges-rail_s1.2.4
 icon=> ./bridges-rail_s1.2.5
@@ -291,6 +291,8 @@ BackStart2[E]=bridges-rail_s1.4.2,0,16
 FrontStart2[E]=bridges-rail_s1.3.2
 BackStart2[W]=bridges-rail_s1.4.3,0,16
 FrontStart2[W]=bridges-rail_s1.3.3
+backPillar[S]=bridges-rail_s1.3.4
+backPillar[W]=bridges-rail_s1.3.5
 --
 Obj=bridge
 name=SteelRail
