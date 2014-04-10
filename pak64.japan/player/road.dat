@@ -54,6 +54,7 @@ Name=BusStop
 # must be 1*1
 copyright=Shiosai Industry
 type=stop
+allow_underground=2
 waytype=road
 enables_pax=1
 NoInfo=1
@@ -72,6 +73,7 @@ Name=PostStop
 # must be 1*1
 copyright=Shiosai Industry
 type=stop
+allow_underground=2
 waytype=road
 enables_pax=1
 enables_post=1
@@ -96,6 +98,7 @@ enables_post=1
 Level=4
 NoInfo=1
 Dims=1,1,2
+allow_underground=0
 intro_year=1963
 BackImage[0][0][0][0][0]=new-bus-stops.0.0
 FrontImage[0][0][0][0][0]=new-bus-stops.0.1
