@@ -1,0 +1,28 @@
+--------------------
+Obj=building
+Name=TramDepot
+# must be 1*1
+Dims=1,1,4
+type=depot
+waytype=tram_track
+NoInfo=1
+intro_year=1865
+BackImage[0][0][0][0][0][0]=ls-depot-rail-ttdx.1.2
+FrontImage[0][0][0][0][0][0]=ls-depot-rail-ttdx.0.0
+BackImage[1][0][0][0][0][0]=ls-depot-rail-ttdx.1.3
+FrontImage[1][0][0][0][0][0]=ls-depot-rail-ttdx.0.1
+BackImage[2][0][0][0][0][0]=-
+FrontImage[2][0][0][0][0][0]=ls-depot-rail-ttdx.0.3
+BackImage[3][0][0][0][0][0]=-
+FrontImage[3][0][0][0][0][0]=ls-depot-rail-ttdx.2.2
+BackImage[0][0][0][0][0][1]=ls-depot-rail-ttdx.1.2
+FrontImage[0][0][0][0][0][1]=ls-depot-rail-ttdx.2.0
+BackImage[1][0][0][0][0][1]=ls-depot-rail-ttdx.1.3
+FrontImage[1][0][0][0][0][1]=ls-depot-rail-ttdx.2.1
+BackImage[2][0][0][0][0][1]=-
+FrontImage[2][0][0][0][0][1]=ls-depot-rail-ttdx.2.3
+BackImage[3][0][0][0][0][1]=-
+FrontImage[3][0][0][0][0][1]=ls-depot-rail-ttdx.2.2
+icon=> ls-depot-rail-ttdx.1.0
+cursor=ls-depot-rail-ttdx.1.1
+--------------------
