@@ -283,6 +283,14 @@ BackStart[E]=bridges-rail_s1.2.2
 FrontStart[E]=bridges-rail_s1.3.2
 BackStart[W]=bridges-rail_s1.2.3
 FrontStart[W]=bridges-rail_s1.3.3
+BackStart2[N]=bridges-rail_s1.4.0,0,16
+FrontStart2[N]=bridges-rail_s1.3.0
+BackStart2[S]=bridges-rail_s1.4.1,0,16
+FrontStart2[S]=bridges-rail_s1.3.1
+BackStart2[E]=bridges-rail_s1.4.2,0,16
+FrontStart2[E]=bridges-rail_s1.3.2
+BackStart2[W]=bridges-rail_s1.4.3,0,16
+FrontStart2[W]=bridges-rail_s1.3.3
 --
 Obj=bridge
 name=SteelRail
