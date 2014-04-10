@@ -1,6 +1,6 @@
 --
 Obj=building
-Name=PostOffice
+Name=OldPostOffice
 NoInfo=1
 level=1
 type=extension
@@ -10,15 +10,44 @@ BackImage[0][0][0][0][0]=PostOffice.0.0
 icon=> PostOffice.1.0
 cursor=PostOffice.2.0
 --
+obj=building
+name=PostOffice
+copyright=wa
+NoInfo=2
+dims=1,1,2
+intro_year = 1962
+type=extension
+enables_post=1
+Level=1
+cursor=post-office-4.0.3
+icon=> post-office-4.0.2
+BackImage[0][0][0][0][0]=post-office-4.0.0
+BackImage[1][0][0][0][0]=post-office-4.0.1
+--
+obj=building
+name=ModernBigPostOffice
+copyright=wa
+NoInfo=1
+dims=1,1,2
+type=extension
+intro_year = 1982
+enables_post=1
+Level=4
+cursor=post-office-1.0.2
+icon=> post-office-1.0.1
+BackImage[0][0][0][0][0]=post-office-1.0.0
+BackImage[1][0][0][0][0]=post-office-1.0.1
+--
 Obj=building
 Name=BigPostOffice
 NoInfo=1
+dims=1,1,2
 type=extension
 enables_post=1
 level=4
 intro_year = 1955
-BackImage[0][0][0][0][0][0]=post_modern.0.0
-BackImage[0][0][0][0][0][1]=post_modern.1.0
-icon=> post_modern.0.2
-cursor=post_modern.0.1
+cursor=post-office-3.1.2
+icon=> post-office-3.1.1
+BackImage[0][0][0][0][0]=post-office-3.1.0
+BackImage[1][0][0][0][0]=post-office-3.0.0
 --
