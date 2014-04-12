@@ -53,8 +53,8 @@ Type=ind
 Level=
 intro_year=1959
 Dims=1,1,2
-BackImage[0][0][0][0][0]=ind_gaku_wa.1.1
-BackImage[1][0][0][0][0]=ind_gaku_wa.1.2
+BackImage[0][0][0][0][0]=ind-gaku-wa.1.1
+BackImage[1][0][0][0][0]=ind-gaku-wa.1.2
 --
 Obj=building
 Name=IND_30_03
@@ -91,8 +91,8 @@ Type=ind
 Level=3
 intro_year=1959
 Dims=1,1,2
-BackImage[0][0][0][0][0]=ind_gaku_wa.2.1
-BackImage[1][0][0][0][0]=ind_gaku_wa.2.2
+BackImage[0][0][0][0][0]=ind-gaku-wa.2.1
+BackImage[1][0][0][0][0]=ind-gaku-wa.2.2
 --
 Obj=building
 Name=IND_36_03
@@ -101,8 +101,8 @@ Type=ind
 Level=3
 intro_year=1959
 Dims=1,1,2
-BackImage[0][0][0][0][0]=ind_gaku_wa.2.3
-BackImage[1][0][0][0][0]=ind_gaku_wa.2.4
+BackImage[0][0][0][0][0]=ind-gaku-wa.2.3
+BackImage[1][0][0][0][0]=ind-gaku-wa.2.4
 --
 Obj=building
 Name=IND_30_04
@@ -132,8 +132,8 @@ Level=4
 intro_year=1959
 Dims=1,1,2
 chance=50
-BackImage[0][0][0][0][0]=ind_gaku_wa.3.1
-BackImage[1][0][0][0][0]=ind_gaku_wa.3.2
+BackImage[0][0][0][0][0]=ind-gaku-wa.3.1
+BackImage[1][0][0][0][0]=ind-gaku-wa.3.2
 --
 Obj=building
 Name=IND_00_05
@@ -183,8 +183,8 @@ Type=ind
 Level=6
 intro_year=1916
 Dims=1,1,2
-BackImage[0][0][0][0][0]=ind_gaku_wa.5.1
-BackImage[1][0][0][0][0]=ind_gaku_wa.5.2
+BackImage[0][0][0][0][0]=ind-gaku-wa.5.1
+BackImage[1][0][0][0][0]=ind-gaku-wa.5.2
 --
 # both also as res (since ind is usually far away)
 Obj=building
@@ -236,8 +236,8 @@ Level=8
 chance=100
 intro_year=1938
 Dims=1,1,2
-BackImage[0][0][0][0][0]=ind_gaku_wa.7.1
-BackImage[1][0][0][0][0]=ind_gaku_wa.7.2
+BackImage[0][0][0][0][0]=ind-gaku-wa.7.1
+BackImage[1][0][0][0][0]=ind-gaku-wa.7.2
 --
 Obj=building
 Name=IND_30_09
@@ -266,8 +266,8 @@ Level=9
 chance=100
 intro_year=1972
 Dims=1,1,2
-BackImage[0][0][0][0][0]=ind_gaku_wa.8.1
-BackImage[1][0][0][0][0]=ind_gaku_wa.8.2
+BackImage[0][0][0][0][0]=ind-gaku-wa.8.1
+BackImage[1][0][0][0][0]=ind-gaku-wa.8.2
 --
 Obj=building
 Name=IND_30_10
@@ -298,8 +298,8 @@ Level=10
 chance=100
 intro_year=1959
 Dims=1,1,2
-BackImage[0][0][0][0][0]=ind_gaku_wa.9.1
-BackImage[1][0][0][0][0]=ind_gaku_wa.9.2
+BackImage[0][0][0][0][0]=ind-gaku-wa.9.1
+BackImage[1][0][0][0][0]=ind-gaku-wa.9.2
 --
 Obj=building
 Name=IND_30_11
@@ -342,8 +342,8 @@ Level=11
 chance=100
 intro_year=1922
 Dims=1,1,2
-BackImage[0][0][0][0][0]=ind_gaku_wa.0.6
-BackImage[1][0][0][0][0]=ind_gaku_wa.0.7
+BackImage[0][0][0][0][0]=ind-gaku-wa.0.6
+BackImage[1][0][0][0][0]=ind-gaku-wa.0.7
 --
 Obj=building
 Name=IND_30_12
@@ -383,8 +383,8 @@ Level=14
 chance=100
 intro_year=1959
 Dims=1,1,2
-BackImage[0][0][0][0][0]=ind_gaku_wa.3.6
-BackImage[1][0][0][0][0]=ind_gaku_wa.3.7
+BackImage[0][0][0][0][0]=ind-gaku-wa.3.6
+BackImage[1][0][0][0][0]=ind-gaku-wa.3.7
 --
 Obj=building
 Name=IND_30_15
@@ -418,8 +418,8 @@ Level=16
 chance=100
 intro_year=1962
 Dims=1,1,2
-BackImage[0][0][0][0][0]=ind_gaku_wa.5.6
-BackImage[1][0][0][0][0]=ind_gaku_wa.5.7
+BackImage[0][0][0][0][0]=ind-gaku-wa.5.6
+BackImage[1][0][0][0][0]=ind-gaku-wa.5.7
 --
 Obj=building
 Name=IND_30_17
@@ -438,8 +438,8 @@ Level=17
 chance=100
 intro_year=1987
 Dims=1,1,2
-BackImage[0][0][0][0][0]=ind_gaku_wa.6.6
-BackImage[1][0][0][0][0]=ind_gaku_wa.6.7
+BackImage[0][0][0][0][0]=ind-gaku-wa.6.6
+BackImage[1][0][0][0][0]=ind-gaku-wa.6.7
 --
 Obj=building
 Name=IND_30_18
@@ -469,6 +469,6 @@ Level=18
 chance=100
 intro_year=2000
 Dims=1,1,2
-BackImage[0][0][0][0][0]=ind_gaku_wa.7.6
-BackImage[1][0][0][0][0]=ind_gaku_wa.7.7
+BackImage[0][0][0][0][0]=ind-gaku-wa.7.6
+BackImage[1][0][0][0][0]=ind-gaku-wa.7.7
 --
