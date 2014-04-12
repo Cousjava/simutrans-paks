@@ -31,6 +31,14 @@ speed_bonus=0
 weight_per_unit=900
 -----------------------
 obj=good
+name=Gasoline
+metric=m3
+catg=3
+value=120
+speed_bonus=3
+weight_per_unit=850
+-----------------------
+obj=good
 name=Holz
 metric=tonnen
 catg=6
