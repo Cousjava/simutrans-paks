@@ -3,7 +3,7 @@ obj=good
 name=raw-rice
 metric=tonnen
 catg=2
-speed_bonus=10
+speed_bonus=5
 value=80
 weight_per_unit=1000
 --
@@ -19,7 +19,7 @@ obj=good
 name=rice
 metric=bags
 catg=1
-speed_bonus=10
+speed_bonus=5
 value=110
 weight_per_unit=75
 --

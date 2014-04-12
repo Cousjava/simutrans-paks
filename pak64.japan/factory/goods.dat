@@ -26,7 +26,7 @@ obj=good
 name=Oel
 metric=m3
 catg=3
-value=100
+value=210
 speed_bonus=0
 weight_per_unit=900
 -----------------------
@@ -34,7 +34,7 @@ obj=good
 name=Gasoline
 metric=m3
 catg=3
-value=120
+value=240
 speed_bonus=3
 weight_per_unit=850
 -----------------------
