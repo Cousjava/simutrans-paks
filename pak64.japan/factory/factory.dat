@@ -223,8 +223,6 @@ BackImage[0][0][2][0][0]=forest.0.0
 BackImage[0][1][2][0][0]=forest.1.0
 BackImage[0][2][2][0][0]=forest.2.0
 --
-# not really a user building
-# Define a Level
 Obj=factory
 Name=Windkraftwerk
 needs_ground=1
@@ -387,7 +385,7 @@ BackImage[0][1][0][1][0]=DistillationPlant.3.0
 --
 obj=factory
 name=Gas_station_X
-Location=Land
+Location=City
 DistributionWeight=4
 Productivity=50
 intro_year=1950
@@ -403,7 +401,7 @@ BackImage[0][0][0][0][0][1]=ADDS-factory.0.1
 --
 obj=factory
 name=Gas_station_Y
-Location=Land
+Location=City
 DistributionWeight=4
 Productivity=50
 intro_year=1950
@@ -419,7 +417,7 @@ BackImage[0][0][0][0][0][1]=ADDS-factory.0.3
 --
 obj=factory
 name=Gas_station_Z
-Location=Land
+Location=City
 DistributionWeight=4
 Productivity=50
 intro_year=1950
