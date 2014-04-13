@@ -437,14 +437,14 @@ max_weight=130
 max_lenght=16
 intro_year=1940
 intro_month=1
-retire_year=
-retire_month=
+#retire_year=
+#retire_month=
 pillar_distance=1
 #
 cursor=steel-truss-current.3.4
 icon=> steel-truss-current.3.5
-backPillar[S]=steel-truss-current.2.4
-backPillar[W]=steel-truss-current.2.5
+#backPillar[S]=steel-truss-current.2.4
+#backPillar[W]=steel-truss-current.2.5
 #
 BackImage[NS]=steel-truss-current.0.0
 FrontImage[NS]=steel-truss-current.1.0

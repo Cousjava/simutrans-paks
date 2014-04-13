@@ -87,6 +87,9 @@ waytype=track
 needs_ground=1
 intro_year=1864
 #
+cursor=platform-0.4.1
+icon=> platform-0.4.0
+#
 BackImage[0][0][0][0][0][0]=platform-0.0.0
 BackImage[1][0][0][0][0][0]=platform-0.0.1
 BackImage[2][0][0][0][0][0]=platform-0.1.0
@@ -120,8 +123,6 @@ FrontImage[12][0][0][0][0][1]=platform-0-winter.2.2
 FrontImage[13][0][0][0][0][1]=platform-0-winter.2.3
 FrontImage[14][0][0][0][0][1]=platform-0-winter.3.2
 FrontImage[15][0][0][0][0][1]=platform-0-winter.3.3
-cursor=platform-1.4.1
-icon=> platform-1.4.0
 --
 Obj=building
 Name=FastTrainStop
@@ -188,8 +189,8 @@ enables_pax=1
 Level=1
 waytype=track
 needs_ground=1
-cursor=platform-0.4.1
-icon=> platform-0.4.0
+cursor=platform-1.4.1
+icon=> platform-1.4.0
 #
 BackImage[0][0][0][0][0][0]=platform-1.0.0
 BackImage[1][0][0][0][0][0]=platform-1.0.1
