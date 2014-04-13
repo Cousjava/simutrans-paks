@@ -1,5 +1,6 @@
 obj=vehicle
 name=VMaX_Gigantea_Zilia
+cell_size=192
 speed=40
 copyright=VaclavMacurek
 intro_year=1950
