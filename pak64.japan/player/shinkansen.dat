@@ -3,14 +3,14 @@ Obj=building
 Name=ShinkansenDepot
 copyright=wa
 NoInfo=1
+noconstruction=1
 Dims=1,1,8
-type=stop
+type=depot
 Level=2
 waytype=monorail_track
 needs_ground=0
 cursor=depot-2.4.1
 icon=> depot-2.4.0
-
 FrontImage[0][0][0][0][0]=depot-2.0.0
 FrontImage[1][0][0][0][0]=depot-2.0.1
 FrontImage[2][0][0][0][0]=depot-2.1.0
@@ -19,7 +19,6 @@ FrontImage[4][0][0][0][0]=depot-2.2.0
 FrontImage[5][0][0][0][0]=depot-2.2.1
 FrontImage[6][0][0][0][0]=depot-2.3.0
 FrontImage[7][0][0][0][0]=depot-2.3.1
-
 BackImage[0][0][0][0][0]=depot-2.0.2
 BackImage[1][0][0][0][0]=depot-2.0.3
 BackImage[2][0][0][0][0]=depot-2.1.2
@@ -28,18 +27,19 @@ BackImage[4][0][0][0][0]=depot-2.2.2
 BackImage[5][0][0][0][0]=depot-2.2.3
 BackImage[6][0][0][0][0]=depot-2.3.2
 BackImage[7][0][0][0][0]=depot-2.3.3
-
 --
 Obj=building
 Name=MonorailGround
 # must be this name; universal for all, always 1*1
 Dims=1,1
+noconstruction=1
 NoInfo=1
 BackImage[0][0][0][0][0]=ls-depot-monorail.1.0
 --
 Obj=building
 Name=shinkansen_foundation
 # must be 1*1
+noconstruction=1
 Dims=1,1
 NoInfo=1
 type=extension
@@ -53,6 +53,7 @@ Name=ShinkansenStop
 type=stop
 Dims=1,1,2
 NoInfo=1
+noconstruction=1
 allow_underground=0
 enables_pax=1
 Level=4
@@ -68,6 +69,7 @@ Obj=building
 Name=UndergroundStation
 copyright=Zkou2
 type=stop
+noconstruction=1
 waytype=monorail_track
 enables_pax=1
 intro_year=1964

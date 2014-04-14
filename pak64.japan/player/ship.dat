@@ -36,6 +36,7 @@ Name=leftShipStop
 # 1_1 is the land sqare
 Dims=1,5,4
 NoInfo=1
+noconstruction=1
 intro_year = 1928
 type=habour
 enables_ware=1
@@ -87,6 +88,7 @@ Obj=building
 Name=rightShipStop
 # must be 1*2
 # 1_1 is the land sqare
+noconstruction=1
 Dims=1,5,4
 NoInfo=1
 type=habour
@@ -156,6 +158,7 @@ NoInfo=1
 enables_ware=1
 enables_pax=1
 type=habour
+noconstruction=1
 intro_year = 1810
 animation_time=2500
 level=3

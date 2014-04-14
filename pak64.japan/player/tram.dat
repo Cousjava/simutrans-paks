@@ -6,6 +6,7 @@ Dims=1,1,4
 type=depot
 waytype=tram_track
 NoInfo=1
+noconstruction=1
 intro_year=1865
 BackImage[0][0][0][0][0][0]=ls-depot-rail-ttdx.1.2
 FrontImage[0][0][0][0][0][0]=ls-depot-rail-ttdx.0.0
