@@ -1,0 +1,13 @@
+--
+obj=program_text
+name=monorail
+--
+obj=program_text
+name=monorail vehicle
+--
+obj=program_text
+name=Build monorail depot
+--
+obj=program_text
+name=tram %i km/h, monorail %i km/h\nmaglev %i km/h, narrowgauge %i km/h.
+--
