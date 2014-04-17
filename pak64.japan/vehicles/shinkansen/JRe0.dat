@@ -10,7 +10,7 @@ payload=65
 cost=1900000
 weight=44
 power=825
-RunningCost=800
+RunningCost=750
 intro_year=1964
 intro_month=10
 retire_year=2008
@@ -27,7 +27,7 @@ EmptyImage[N]=JRw0pc.0.4
 EmptyImage[W]=JRw0pc.0.5
 EmptyImage[NW]=JRw0pc.0.6
 EmptyImage[NE]=JRw0pc.0.7
-------------------------------
+--
 obj=vehicle
 copyright=beginner
 name=JR-Shinkansen-0b
@@ -39,7 +39,7 @@ payload=90
 cost=1800000
 weight=46
 power=825
-RunningCost=680
+RunningCost=630
 intro_year=1964
 intro_month=10
 retire_year=2008
@@ -58,7 +58,7 @@ EmptyImage[N]=JRw0pc.2.4
 EmptyImage[W]=JRw0pc.2.5
 EmptyImage[NW]=JRw0pc.2.6
 EmptyImage[NE]=JRw0pc.2.7
-------------------------------
+--
 obj=vehicle
 copyright=beginner
 name=JR-Shinkansen-0c
@@ -70,7 +70,7 @@ payload=83
 power=825
 cost=1800000
 weight=44
-RunningCost=610
+RunningCost=560
 intro_year=1964
 intro_month=10
 retire_year=2008
@@ -89,7 +89,7 @@ EmptyImage[N]=JRw0pc.1.4
 EmptyImage[W]=JRw0pc.1.5
 EmptyImage[NW]=JRw0pc.1.6
 EmptyImage[NE]=JRw0pc.1.7
-------------------------------
+--
 obj=vehicle
 copyright=beginner
 name=JR-Shinkansen-0d
@@ -101,7 +101,7 @@ payload=65
 cost=1900000
 weight=46
 power=825
-RunningCost=800
+RunningCost=750
 intro_year=1964
 intro_month=10
 retire_year=2008
@@ -117,4 +117,4 @@ EmptyImage[N]=JRw0pc.3.4
 EmptyImage[W]=JRw0pc.3.5
 EmptyImage[NW]=JRw0pc.3.6
 EmptyImage[NE]=JRw0pc.3.7
-------------------------------
+--

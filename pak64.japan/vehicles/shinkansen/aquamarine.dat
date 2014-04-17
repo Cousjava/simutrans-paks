@@ -1,4 +1,4 @@
---------------------------------------------------------------------------------
+--
 obj=vehicle
 name=Aquamarine_Tf1
 copyright=E.T.
@@ -10,7 +10,7 @@ speed=360
 cost=11000000
 weight=32
 power=1100
-RunningCost=650
+RunningCost=600
 Constraint[Prev][0]=None
 Constraint[Next][0]=Aquamarine_M2
 Constraint[Next][1]=Aquamarine_M1
@@ -24,7 +24,7 @@ EmptyImage[N]=aquamarine.0.4
 EmptyImage[W]=aquamarine.0.5
 EmptyImage[NW]=aquamarine.0.6
 EmptyImage[NE]=aquamarine.0.7
---------------------------------------------------------------------------------
+--
 obj=vehicle
 name=Aquamarine_M2
 copyright=E.T.
@@ -37,7 +37,7 @@ Power=1100
 Gear=250
 cost=20000000
 weight=36
-RunningCost=720
+RunningCost=670
 Constraint[Prev][0]=Aquamarine_Tf1
 Constraint[Prev][1]=Aquamarine_M1
 Constraint[Next][0]=Aquamarine_Tr8
@@ -52,7 +52,7 @@ EmptyImage[N]=aquamarine.3.4
 EmptyImage[W]=aquamarine.3.5
 EmptyImage[NW]=aquamarine.3.6
 EmptyImage[NE]=aquamarine.3.7
---------------------------------------------------------------------------------
+--
 obj=vehicle
 name=Aquamarine_M1
 copyright=E.T.
@@ -65,7 +65,7 @@ Power=1100
 Gear=250
 cost=20000000
 weight=36
-RunningCost=630
+RunningCost=580
 Constraint[Prev][0]=Aquamarine_Tf1
 Constraint[Prev][1]=Aquamarine_M2
 Constraint[Next][0]=Aquamarine_Tr8
@@ -80,7 +80,7 @@ EmptyImage[N]=aquamarine.2.4
 EmptyImage[W]=aquamarine.2.5
 EmptyImage[NW]=aquamarine.2.6
 EmptyImage[NE]=aquamarine.2.7
---------------------------------------------------------------------------------
+--
 obj=vehicle
 name=Aquamarine_Tr8
 copyright=E.T.
@@ -93,7 +93,7 @@ Power=1000
 Gear=360
 cost=11000000
 weight=32
-RunningCost=650
+RunningCost=600
 Constraint[Prev][0]=Aquamarine_M1
 Constraint[Prev][0]=Aquamarine_M2
 Constraint[Next][0]=None
@@ -107,4 +107,4 @@ EmptyImage[N]=aquamarine.1.4
 EmptyImage[W]=aquamarine.1.5
 EmptyImage[NW]=aquamarine.1.6
 EmptyImage[NE]=aquamarine.1.7
---------------------------------------------------------------------------------
+--
