@@ -11,3 +11,24 @@ name=Build monorail depot
 obj=program_text
 name=tram %i km/h, monorail %i km/h\nmaglev %i km/h, narrowgauge %i km/h.
 --
+obj=menu_text
+name=MONORAILTOOLS
+--
+obj=error_text
+name=Monorails are not available yet!
+--
+obj=error_text
+name=Monorailhalt muss auf\nMonorail liegen!\n
+--
+obj=program_text
+name=clf_chk_monorail
+--
+obj=program_text
+name=hlf_chk_monorailstop
+--
+obj=record_text
+name=New world record for monorails: %.1f km/h by %s.
+--
+obj=program_text
+name=remove monorails
+--
