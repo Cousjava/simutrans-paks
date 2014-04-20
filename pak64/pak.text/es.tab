@@ -5,22 +5,30 @@
 #                             Language: es Espanol                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 22.10 2012                           #
+#                           Date Created: 20.04 2014                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                    - An_dz                                   #
+#                   note: Verified where all texts are shown                   #
 #                                   - Diegote                                  #
 #                                    note:                                     #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
-#                              Frank Penz - FrankP                             #
+#                                  - Flemmbrav                                 #
+#                                    note:                                     #
+#                                    - FrankP                                  #
+#                                    note:                                     #
+#                                    - JoanM                                   #
+#                                    note:                                     #
+#                                     - PTM                                    #
 #                                    note:                                     #
 #                                    - Paco_m                                  #
 #                                    note:                                     #
-#                                 - albert.yuste                               #
-#                               note: Albert Ruiz                              #
+#                          Albert Ruiz - albert.yuste                          #
+#                           note: Albert Ruiz - Zeno                           #
 #                                    - ispero                                  #
 #                                    note:                                     #
-#                          Markus Pristovsek - prissi                          #
+#                                    - prissi                                  #
 #                                    note:                                     #
 #                              Xavier Paz - vilvoh                             #
 #                                    note:                                     #
@@ -880,6 +888,8 @@ preSignalsMonorail
 Preseñales (ambos sentidos)
 RailClose
 Vía muerta
+Railgate
+Barrera que excluye a otro jugador
 Signals
 Señales
 SignalsMonorail

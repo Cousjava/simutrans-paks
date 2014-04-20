@@ -5,22 +5,26 @@
 #                             Language: ja Japanese                            #
 #                                Encoding: UTF-8                               #
 #                               Font : m+10r.bdf                               #
-#                           Date Created: 17.05 2013                           #
+#                           Date Created: 20.04 2014                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - An_dz                                   #
 #                   note: Verified where all texts are shown                   #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
-#                              Frank Penz - FrankP                             #
+#                                  - Flemmbrav                                 #
+#                                    note:                                     #
+#                                    - FrankP                                  #
 #                                    note:                                     #
 #                                    - Hamo73                                  #
+#                                    note:                                     #
+#                                     - PTM                                    #
 #                                    note:                                     #
 #                                    - Tajia                                   #
 #                                    note:                                     #
 #                           Tomohiro MATSUMURA - hiro                          #
 #                                    note:                                     #
-#                          Markus Pristovsek - prissi                          #
+#                                    - prissi                                  #
 #                                    note:                                     #
 #                          SHISHIDO Yoshihiro - yoshi                          #
 #                                    note:                                     #
@@ -90,6 +94,10 @@ WoodenRoad
 大型本社ビル\n
 3headquarter
 近代化本社ビル\n
+4headquarter
+本社ビル
+5headquarter
+本社ビル
 A1_ALTE_KIRCHE
 名高い教会\n\n優れた絵画を所蔵している\n高名な古い教会です。皆が\nこの素晴らしい建物を見る\nべきです。\n
 A2_SCHLOSS1
@@ -184,6 +192,8 @@ COM_02_13
 シーフードレストラン\n\nこの店は大人気で、もう\n三度も増築をしましたが\n行列を店内に収めるのが\nやっとです。
 COM_02_19
 運動科学の専門学校である。\n大講義室は最上階にあり、\n当然だがエレベーターは無\nい。「忍耐力」の授業を終\nえた学生がこの建物の構造\nに文句も言わずに最上階ま\nで上がってくるので、ゲス\nト講師が驚くことも珍しく\nない。\n
+COM_03_14
+薬局\n\nどんな客のニーズにも応えられるほどの広い在庫をもつ薬局です。営業時間は7-24時で、全てのジェネリック医薬品を信頼価格で提供します。
 COM_03_15
 国内初の投資信託銀行がこ\nこで設立された。グローバ\nル化とインターネットの時\n代にこのような威圧的な建\n物は必要ないが、古い鉄筋\nコンクリートは1000年程度\nの耐久性があるので、取り\n壊されること無く残ってい\nる。\n
 COM_03_17
@@ -206,6 +216,8 @@ COM_10_10
 この厩では、郵便馬車に使\nわれる馬が休憩している。\nもっともここで休めるのは\nせいぜい数十分だけど。\n
 COM_10_12
 この鍛冶屋には２頭の馬が\nいる。馬たちは走り回りた\nいのだが、ここの鍛治アン\nブロスは芸術的で非実用的\nなな蹄を造ることで知られ\nているのだ！\n
+COM_11_12
+香辛料店\n\nここでは遠くの地から輸入した香辛料を扱っています。もしあなた好みのものが見つからなくても、雰囲気を味わうために行く価値は十分あります。
 Control_StationBlg
 信号取扱所
 DenkDirk
@@ -1108,6 +1120,8 @@ Tugboat
 タグボート
 VolvoFH12
 ボルボ FH12
+wastewagon
+廃棄物運搬用無蓋車
 Zeppelin
 ツェッペリン飛行船
 #______________________________________way______________________________________

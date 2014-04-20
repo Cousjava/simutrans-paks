@@ -5,7 +5,7 @@
 #                             Language: en English                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 23.12 2012                           #
+#                           Date Created: 20.04 2014                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Alexander Brose - AlexB                           #
@@ -22,13 +22,15 @@
 #                                    note:                                     #
 #                                   - Combuijs                                 #
 #                                    note:                                     #
-#                             Michael Hohl - Cruzer                            #
-#                       note: Administrator pak192.comic                       #
+#                                    - Cruzer                                  #
+#                 note: Ex-Entwickler und Gründer pak192.comic                 #
 #                             Dirk W. - DirrrtyDirk                            #
 #                                    note:                                     #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
-#                              Frank Penz - FrankP                             #
+#                                  - Flemmbrav                                 #
+#                                    note:                                     #
+#                                    - FrankP                                  #
 #                                    note:                                     #
 #                                    - GerdW                                   #
 #                                    note:                                     #
@@ -40,15 +42,23 @@
 #                                    note:                                     #
 #                              Jaroslaw - Jaroslaw                             #
 #                                    note:                                     #
+#                                   - Leartin                                  #
+#                                    note:                                     #
 #                             Marcus Haupt - Marcus                            #
 #note: if I´m not available by email to proximity.de try mail@marcus-haupt.de (#
+#                                     - MaxK                                   #
+#                                    note:                                     #
 #                                   - Nico192                                  #
 #                                    note:                                     #
 #                                 - Nicole_Chen                                #
 #                                    note:                                     #
+#                                     - PTM                                    #
+#                                    note:                                     #
 #                                    - Paco_m                                  #
 #                                    note:                                     #
 #                           Sava Bogdanets - Sava2004                          #
+#                                    note:                                     #
+#                             Simon Small - SimonS                             #
 #                                    note:                                     #
 #                          Susanna Björverud - Susanna                         #
 #                                    note:                                     #
@@ -60,8 +70,8 @@
 #                                    note:                                     #
 #                                   - Xelofino                                 #
 #                                    note:                                     #
-#                                 - albert.yuste                               #
-#                               note: Albert Ruiz                              #
+#                          Albert Ruiz - albert.yuste                          #
+#                           note: Albert Ruiz - Zeno                           #
 #                            Carl Baker - carlbaker                            #
 #                                    note:                                     #
 #                                  - enternald                                 #
@@ -94,7 +104,7 @@
 #                                    note:                                     #
 #                             P. Hamming - phamming                            #
 #                                    note:                                     #
-#                          Markus Pristovsek - prissi                          #
+#                                    - prissi                                  #
 #                                    note:                                     #
 #                                     - sdog                                   #
 #                                    note:                                     #
@@ -263,7 +273,7 @@ Medical Center\n\nThis building houses the offices of many doctors. You can get 
 COM_01_18
 Assets Management\nCompany "Global Trust" is\na global funds trader. Their\nJunk Bond funds and micro\ncredit institutes in India\nand Peru make a lot of\nmoney. But will this continue\nin the future? There is no\nget-your-money-back-guarantee\non the stock-market.\n
 COM_01_20
-Holiday Tower\n\nThis office building has special events throughout the year. On holidays, or for a large fee, the maintenance staff will make sure the offices are lighted or darkened to form pictures on the sides.
+This office building has special events throughout the year. On holidays, or for a large fee, the maintenance staff will make sure the offices are lighted or darkened to form pictures on the sides.
 COM_02_02
 Ride Share\n\nThis parking lot is used by carpooling businesspeople as a meeting point for sharing rides. The city has encouraged this practice by posting signs reserving it for this use. Some people sleep in their cars here, but the city does not encourage that.
 COM_02_04

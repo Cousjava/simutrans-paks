@@ -5,16 +5,24 @@
 #                            Language: sk Slovencina                           #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 22.10 2012                           #
+#                           Date Created: 20.04 2014                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                    - An_dz                                   #
+#                   note: Verified where all texts are shown                   #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
-#                              Frank Penz - FrankP                             #
+#                                  - Flemmbrav                                 #
+#                                    note:                                     #
+#                                    - FrankP                                  #
+#                                    note:                                     #
+#                                     - PTM                                    #
+#                                    note:                                     #
+#                              Honza Kobel - jk271                             #
 #                                    note:                                     #
 #                           Peter Karak - peter.karak                          #
 #                                    note:                                     #
-#                          Markus Pristovsek - prissi                          #
+#                                    - prissi                                  #
 #                                    note:                                     #
 #                                                                              #
 ################################################################################
@@ -213,6 +221,8 @@ Farmaceutická továreò
 Raffinerie
 Rafinéria (pre plasty)
 Saegewerk
+Píla
+SaegewerkMHz
 Píla
 Sandquarry
 Baòa na piesok

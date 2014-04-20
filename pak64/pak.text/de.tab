@@ -5,28 +5,32 @@
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 22.10 2012                           #
+#                           Date Created: 20.04 2014                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Alexander Brose - AlexB                           #
 #                                    note:                                     #
+#                                    - An_dz                                   #
+#                   note: Verified where all texts are shown                   #
 #                         Klaus Thenmayer - Bitfreezer                         #
 #                                    note:                                     #
 #                                  - Christian                                 #
 #                                    note:                                     #
 #                                   - Combuijs                                 #
 #                                    note:                                     #
-#                             Michael Hohl - Cruzer                            #
-#                       note: Administrator pak192.comic                       #
+#                                    - Cruzer                                  #
+#                 note: Ex-Entwickler und Gründer pak192.comic                 #
 #                             Dirk W. - DirrrtyDirk                            #
 #                                    note:                                     #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
 #                                   - Eps-Omo                                  #
 #                                    note:                                     #
+#                                  - Flemmbrav                                 #
+#                                    note:                                     #
 #                                   - Florian                                  #
 #                                    note:                                     #
-#                              Frank Penz - FrankP                             #
+#                                    - FrankP                                  #
 #                                    note:                                     #
 #                                    - GerdW                                   #
 #                                    note:                                     #
@@ -36,19 +40,27 @@
 #                                    note:                                     #
 #                              Jaroslaw - Jaroslaw                             #
 #                                    note:                                     #
+#                                   - Leartin                                  #
+#                                    note:                                     #
 #                                   - Lemuria                                  #
 #                                    note:                                     #
 #                             Marcus Haupt - Marcus                            #
 #note: if I´m not available by email to proximity.de try mail@marcus-haupt.de (#
+#                                     - MaxK                                   #
+#                                    note:                                     #
 #                        Constantin Grabowski - Moistboy                       #
 #                                    note:                                     #
-#                                     - NNW                                    #
+#                                 Daniel - NNW                                 #
 #                                    note:                                     #
 #                                   - Nico192                                  #
+#                                    note:                                     #
+#                                     - PTM                                    #
 #                                    note:                                     #
 #                                    - Paco_m                                  #
 #                                    note:                                     #
 #                                   - Xelofino                                 #
+#                                    note:                                     #
+#                          Alexander Huber - alexhuber                         #
 #                                    note:                                     #
 #                                 compo - compo                                #
 #                                    note:                                     #
@@ -66,7 +78,7 @@
 #                                    note:                                     #
 #                                    - petter                                  #
 #                                    note:                                     #
-#                          Markus Pristovsek - prissi                          #
+#                                    - prissi                                  #
 #                                    note:                                     #
 #                            Oliver Mayer - rakishly                           #
 #                                    note:                                     #
@@ -76,8 +88,6 @@
 #                                    note:                                     #
 #                               Sven Osada - sojo                              #
 #                         note: maintainer pak96.comic                         #
-#                                     - test                                   #
-#                                    note:                                     #
 #                                 - transporter                                #
 #                                    note:                                     #
 #                           Werner Brandt - wernieman                          #
@@ -704,6 +714,8 @@ Pharmaceutics
 Pharmahersteller
 Raffinerie
 Raffinerie (Kunstst.)
+Rinnenkraftwerk
+Parabolrinnenkraftwerk
 Saegewerk
 Sägewerk
 SaegewerkMHz
@@ -849,7 +861,7 @@ Auswahlsignale
 Endofchoosetrack
 Gesperrt für Auswahlsuche
 LongBlockSignals
-Signale zur Blockreservierung
+Langstreckensignal
 Minimum80
 Mindestgeschwindigkeit 80 km/h
 NoAirEntry
@@ -1163,7 +1175,7 @@ Niederflurwagen
 Fokker_F27
 Fokker F27
 FordZugmaschine
-Ford Zugmaschiene
+Ford Zugmaschine
 GarbageTruck
 Müllwagen
 Gelenkbus_Ende
@@ -1281,7 +1293,7 @@ Lowa Tram
 Lowa_Anhaenger
 Lowa Anhänger
 Mack_Truck_01
-Mack Zugmaschiene
+Mack Zugmaschine
 Mailcontainerwagon
 Postcontainerwaggon
 MailExpress

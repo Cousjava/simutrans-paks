@@ -5,18 +5,28 @@
 #                              Language: hu Magyar                             #
 #                                Encoding: UTF-8                               #
 #                                Font : cyr.bdf                                #
-#                           Date Created: 22.10 2012                           #
+#                           Date Created: 20.04 2014                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                    - An_dz                                   #
+#                   note: Verified where all texts are shown                   #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
-#                              Frank Penz - FrankP                             #
+#                                  - Flemmbrav                                 #
+#                                    note:                                     #
+#                                    - FrankP                                  #
+#                                    note:                                     #
+#                                    - HDomos                                  #
 #                                    note:                                     #
 #                                   - LeitnerI                                 #
 #                                    note:                                     #
+#                                     - PTM                                    #
+#                                    note:                                     #
+#                                    - gyeben                                  #
+#                                    note:                                     #
 #                                    - petter                                  #
 #                                    note:                                     #
-#                          Markus Pristovsek - prissi                          #
+#                                    - prissi                                  #
 #                                    note:                                     #
 #                                                                              #
 ################################################################################
@@ -80,6 +90,10 @@ Cégközpont
 Cégközpont
 3headquarter
 Cégközpont
+4headquarter
+Székhely
+5headquarter
+Székhely
 A1_ALTE_KIRCHE
 Régi templom.\n\n
 A2_SCHLOSS1
@@ -122,6 +136,8 @@ CarStop
 Kocsi megálló
 ChannelStop
 Csatorna megálló
+COM_00_01
+Kisbolt\n\nEnnek a kisboltnak az alacsony árai és a barátságos kiszolgálása biztosítja, hogy a parkoló szinte mindig tele van.
 COM_02_16
 Irodaház.\n\nNem túl modern és az irodák \nis kicsik az épületben.\n
 Control_StationBlg
@@ -174,6 +190,8 @@ LeuchtturmShipStop
 Világítótornyos kikötõ
 Lighthouse
 Világítótorony.\n\n
+LongBusStop
+Hosszú buszmegálló
 MainTerminal1930
 Fõ várócsarnok (1930)
 MHzSmallStation
@@ -424,6 +442,10 @@ waste
 szemét
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
+bushes
+Bokrok
+flowers
+Vadvirágok
 rocks
 Kövek
 #__________________________________pedestrian___________________________________
@@ -780,6 +802,8 @@ Fokker_F27
 Fokker-F27 repülõgép
 FordZugmaschine
 Ford kamion
+GarbageTruck
+Szemeteskocsi
 Gelenkbus_Ende
 Csuklósbusz (hátsó)
 Gelenkbus_Front
@@ -1044,6 +1068,10 @@ Powerline
 Villamos vezeték
 Rillenschienen
 Villamos vágány
+river
+Hajózható folyó
+river2
+Folyam
 runway_grass
 füves kifutópálya
 runway_modern

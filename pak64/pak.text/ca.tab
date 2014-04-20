@@ -5,20 +5,26 @@
 #                              Language: ca Catala                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 17.05 2013                           #
+#                           Date Created: 20.04 2014                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - An_dz                                   #
 #                   note: Verified where all texts are shown                   #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
-#                              Frank Penz - FrankP                             #
+#                                  - Flemmbrav                                 #
+#                                    note:                                     #
+#                                    - FrankP                                  #
 #                                    note:                                     #
 #                           Joan-Josep Bargues - Joan                          #
 #                                    note:                                     #
-#                                 - albert.yuste                               #
-#                               note: Albert Ruiz                              #
-#                          Markus Pristovsek - prissi                          #
+#                                    - JoanM                                   #
+#                                    note:                                     #
+#                                     - PTM                                    #
+#                                    note:                                     #
+#                          Albert Ruiz - albert.yuste                          #
+#                           note: Albert Ruiz - Zeno                           #
+#                                    - prissi                                  #
 #                                    note:                                     #
 #                                                                              #
 ################################################################################
@@ -28,6 +34,10 @@ ClassicRail
 Via elevada
 ClassicRoad
 Carretera elevada
+koka_Bridge_single
+Via elevada
+PowerBridge
+Línia d'alta tensió
 SteelRail
 Estructura elevada
 #___________________________________building____________________________________
@@ -46,6 +56,28 @@ A5_STONEHENGE
 Un antic anell  de pedres. \n¡Molt misteriós!\n
 A6_DOME
 Aquesta preciosa  catedral\nantiga  és una gran  atracció.\n
+LargeShipStop
+Grúa pesada de càrrega
+leftShipStop
+Grúa de gran capacitat
+LeuchtturmShipStop
+Port amb far
+Lighthouse
+Far\n\nUn dels més brillants de la costa però avui en dia només es conserva per vendre postals als turistes.
+PSFreightTrainStop
+Estació de mercaderies
+PSHall1TrainStop
+Vestíbul d'estació amb oficina d'informació
+PSHall2TrainStop
+Vestíbul d'estació
+rampShipStop
+Rampa de càrrega per a vaixells
+Raven_Kirche
+Església de St. Meinrad\n\nL'ermita de St. Meinrad\nestà custodiada per dos enormes corbs\n segons la llegenda. Quan \nMeinrad va ser assassinat,\nels dos corbs van perseguir \nals assassins i els van\ncondemnar per tota la\neternitat. En l'actualitat, el\nlloc està ocupat pel\nmonastir d'Einsideln.\n\n
+RES_00_01
+Aquesta casa no sembla fora del normal però és al centre de l'univers Simutrans. Va ser un dels primers edificis construits a Simutrans.
+RES_00_02
+Des que la primera bombolla econòmica va explotar, aquest director general ara viu a la casa d'estiueig. Afortunadament la va comprar originalment en nom del seu gos.
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 Autohaus
@@ -118,12 +150,34 @@ Plastik
 Plàstics
 Post
 Correu
+PrintersInk
+Tinta industrial
 Sand
 Arena
 Stahl
 Acer
 Stone
 Pedra
+#___________________________________roadsign____________________________________
+#___________________________________roadsign____________________________________
+LongBlockSignals
+Senyals de bloqueig de tram llarg
+preSignals
+Presenyals (ambdos sentits)
+preSignalsMonorail
+Pre-senyals (ambdós sentits)
+RailClose
+Via morta
+Railgate
+Barrera que exclou un altre jugador
+#_____________________________________tree______________________________________
+#_____________________________________tree______________________________________
+Latschenkiefer
+Pi de montanya\n
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
+RailTunnel
+Túnel ferroviari clàssic
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
 0Ben103
@@ -182,8 +236,20 @@ Kohletransporter
 Camió per a carbó H-trans
 Kohlewagen
 Tolva per a carbó
+Kunststofanhaenger
+Remolc per a plàstics H-Trans
 Kunststofftransporter
 Camió per a plàstics H-trans
+Laaekks553_a
+Tràiler per transportar cotxes L1
+Laaekks553_b
+Tràiler per transportar cotxes L2
+Lockhead_Tristar
+Fuselatges MHz M-1011 TriStar
+Lockheed10-Electra
+Fuselatges MHz S-188 Electra
+logs
+Balises
 Moebelwagen
 VT Vienna Vagó per a mobles
 Oelanhaenger
@@ -202,6 +268,12 @@ Posttransporter
 Camió correu H-trans
 Postwagen
 Furgó correu/equipatges
+PrPersonenwagen
+Vagó I Passatgers
+PrPostwagen
+Vagó I Correu
+RenaultTH5
+Renault TH5
 SlowFerry
 Ferry convencional H-trans
 Stahltransporter
@@ -222,3 +294,5 @@ TPI VT98 (dièsel)
 #______________________________________way______________________________________
 city_road
 Carrer
+Powerline
+Xarxa elèctrica
