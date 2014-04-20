@@ -1,22 +1,30 @@
 §################################################################################
 #                                                                              #
 #                Simutrans Scenario Specific Translation File                  #
-#                              Scenario: pak.japan                             #
+#                             Scenario: pak64.japan                            #
 #                             Language: ja Japanese                            #
 #                                Encoding: UTF-8                               #
 #                               Font : m+10r.bdf                               #
-#                           Date Created: 25.01 2011                           #
+#                           Date Created: 20.04 2014                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                    - An_dz                                   #
+#                   note: Verified where all texts are shown                   #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
-#                              Frank Penz - FrankP                             #
+#                                  - Flemmbrav                                 #
+#                                    note:                                     #
+#                                    - FrankP                                  #
 #                                    note:                                     #
 #                                    - Hamo73                                  #
 #                                    note:                                     #
+#                                     - PTM                                    #
+#                                    note:                                     #
+#                                    - Tajia                                   #
+#                                    note:                                     #
 #                           Tomohiro MATSUMURA - hiro                          #
 #                                    note:                                     #
-#                          Markus Pristovsek - prissi                          #
+#                                    - prissi                                  #
 #                                    note:                                     #
 #                          SHISHIDO Yoshihiro - yoshi                          #
 #                                    note:                                     #
@@ -28,12 +36,12 @@
 #____________________________________bridge_____________________________________
 ClassicRail
 鉄道橋
-ClassicRoad
-コンクリートの道路橋
-ModernRoad
-コンクリート橋
+PowerBridge
+高圧線（橋）
 Schiffhebewerk
 運河エレベーター
+shinkansen_bridge
+新幹線橋
 SteelRail
 鋼鉄の鉄道橋
 ViaductRail
@@ -44,32 +52,24 @@ ViaductRail
 役場
 02_CITY
 役場
-03_CITY
-役場
-03_CITY_A
-役場
-03_CITY_B
-役場
-03_CITY_C
-市役所（建設中）
-04_CITY
-市役所
-04_CITY_A
-市役所
-04_CITY_B
-市役所
-04_CITY_C
-市役所（建設中）
+1headquarter
+本社ビル
+2headquarter
+大型本社ビル\n
+3headquarter
+近代化本社ビル\n
+4headquarter
+本社ビル
+5headquarter
+本社ビル
 AirDepot
 格納庫
-AirDepot1970
-格納庫(1970年)
 AirStop
 駐機場\n
 AirTerminal477
 空港ターミナル
 Baseball_Arena
-野球場\n
+野球場
 Big_black_monument
 人口10000人達成記念オブジェ\n
 Big_Temple
@@ -83,7 +83,7 @@ BusStop
 CarDepot
 車庫
 CarStop
-駐車場\n
+駐車場
 ChannelStop
 運河港
 City_Castle
@@ -106,18 +106,26 @@ Driving_School
 自動車教習所\n
 FastTrainStop
 屋根付きプラットホーム
+FreightShipStop
+港セット
 FreightTrainStop
 貨物駅
 Hospital
 市民病院\n
 IND_00_05
 この街の貯水槽。新しいタ\nンクは地価に建設されてい\nるため、一番古い地上のタ\nンクだけが見える。\n
+IND_01_03
+大きなガスタンク\n
 IND_30_13
 古い機械工場\n\n
 IND_31_03
 この半円柱状の建物はヴァ\nリマ株式会社の工場で、発\n電所用のボイラーとパイプ\n類の製造・組み立てを行っ\nている。しかしこの事業は\n需要が不安定なため、トン\nネル用の部品を作ったり、\nトラムやバスの修理も行っ\nている。また埋め込み式ガ\nーデンライトのフレームを\n造ることも珍しくない。今\n日は何を作っているのか、\n確認してみたいところだ。\n
-LargeShipStop
-貨物港
+Kasan
+火山\n\n\n火口から毒ガスが出るし、爆発もある。だから、下のある露天風呂へ行きましょう。
+leftShipStop
+港セット(クレーン)
+LeuchtturmShipStop
+港セット(灯台)
 LocalTrainStop
 ローカル駅
 ModernAirTerminal477
@@ -138,10 +146,16 @@ PostOffice
 郵便局
 PostStop
 郵便ポスト
+rampShipStop
+港セット(斜面)
+rightShipStop
+港セット(大きい埠頭)
+ShinkansenDepot
+新幹線車庫
+ShinkansenStop
+駅
 ShipDepot
 造船所
-ShipStop
-ドック\n
 SmallStationBlg
 小さな駅舎
 TowerMoistboy
@@ -149,11 +163,11 @@ TowerMoistboy
 TrainDepot
 操車場
 TrainStop
-駅\n
+駅
 TramDepot
 市電車庫
-Windkraftwerk
-風力発電所\n
+UndergroundStation
+地下駅
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -178,6 +192,12 @@ yellow_car
 #__________________________________dummy_info___________________________________
 factory_Nutzwald_details
 <title>材木農園に関して</title><h1>材木農園</h1><p>
+#__________________________________error_text___________________________________
+#__________________________________error_text___________________________________
+Monorailhalt muss auf\nMonorail liegen!\n
+新幹線が線路しか走りません。
+Monorails are not available yet!
+新幹線はまだ開発されていません！
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 ChemicalPlant
@@ -190,6 +210,8 @@ fish_pond
 釣堀
 fish_swarm
 漁場
+Geokraftwerk
+地熱発電所
 Nutzwald
 植林地
 Oelbohrinsel
@@ -210,6 +232,8 @@ Small_Rice_Field
 稲田
 Sushiya
 鮨屋
+Windkraftwerk
+風力発電所\n
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Buecher
@@ -218,246 +242,164 @@ Chemicals
 化学薬品
 fish
 魚肉
+Gasoline
+ガソリン
 Holz
 木材
 Medicine
 医薬品
+None
+無し
 Oel
 石油
 Papier
 紙
+Passagiere
+旅客
 Post
-Mail
+郵便
 PrintersInk
 印刷色
 raw-rice
 種籾
 rice
 米
+#___________________________________menu_text___________________________________
+#___________________________________menu_text___________________________________
+MONORAILTOOLS
+新幹線ツール
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
 Couple
 カップル
+Cyclist
+自転車
+pedestrian_1
+歩行者
+pedestrian_2
+歩行者
+pedestrian_3
+歩行者
+pedestrian_4
+歩行者
 pedestrian_child
 子供連れ
 pedestrian_dog
 犬と散歩
+Woman
+女性
+#_________________________________program_text__________________________________
+#_________________________________program_text__________________________________
+clf_chk_monorail
+新幹線
+hlf_chk_monorailstop
+新幹線
+monorail
+新幹線
+monorail vehicle
+新幹線車両
+remove monorails
+新幹線の撤去
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
+choose_point
+停車振分標識
+ChooseSignals
+入線振分信号
+Endofchoosetrack
+振分禁止標識
+LongBlockSignals
+多閉塞信号
+Minimum80
+最低速度80km/h標識
+NoEntry
+進入禁止
 preSignals
 二閉塞信号
+RailClose
+進入禁止標識
+shinkansen_choose_signals
+入線振分信号
+shinkansen_exclude_from_choose
+振分禁止標識
+shinkansen_long_block_signals
+多閉塞信号
+shinkansen_rail_close
+進入禁止標識
+shinkansen_signals
+信号機
 Signals
-信号
-#_____________________________________tree______________________________________
-#_____________________________________tree______________________________________
-Buna
-ブナの木\n
-Icho
-イチョウの木\n
-Kaede
-カエデの木\n
-Kusu
-クスノキ\n
-Matsu
-松の木\n
-Sakura
-桜の木\n
-Sugi
-杉の木\n
-Yanagi
-柳の木\n
+信号機
+traffic_light
+道路信号
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
+shinkansen_tunnel
+新幹線トンネル
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
-Akiu_EB101
-秋保電鉄 EB101電気機関車
-Akiu_Moha1401
-秋保電鉄 モハ1401形
-Akiu_Saha1401
-秋保電鉄 サハ401形付随客車
-Akiu_To501
-秋保電鉄 ト501無蓋貨車
-Akiu_To507
-秋保電鉄 ト507無蓋貨車
-Akiu_Wa501
-秋保電鉄 ワ501有蓋貨車
-Book Trike
-オート三輪
-BookTruck
-貨物トラック
-Buchtransporter
-Serj/H-Trans 貨物トラック
-Combino_back
-広島電鉄5000形 (後部)
-Combino_front
-広島電鉄5000形 GREEN MOVER
-CoolerTruck
-冷蔵トラック
-DAIHATSU POST VAN
-ダイハツ郵便バン
+Book_Trike
+書籍運搬トラック
+Bretterwagen
+VT板材用無蓋貨車
+EnCo_Container_Ship
+EnCo コンテナ運搬船
+EnCo_Oil_Ship
+EnCo 石油タンカー
+EnCo_Paper_Ship
+EnCo 紙運搬船
+EnCo_Wood_Ship
+EnCo 木材運搬船
+Erzanhaenger
+ばら荷トレーラー
+Erztransporter
+H-Trans ばら荷トラック
+Holzanhaenger
+JET 木材トレーラー
 Holztransporter
-H-Trans 材木用トラック
-Holzwagen
-H-Trans Wood stake car
-Holzwagen2
-材木用貨車
-Horsebookscariage
-貨物馬車
-Horsepassengerscariage
-乗り合い馬車
-Horses
-馬
-Horsewoodcariage
-材木馬車
-jinriki
-Riksha\n
-JNR_Dc22
-国鉄 キハ22気動車
-JR_113
-国鉄113系 (付随車)
-JR_113engine
-国鉄113系 (動力車)
-JR_113front
-国鉄113系近郊型電車
-JR_113rear
-国鉄113系 (後部制御車)
-JR_9600
+H-Trans 木材運搬トラック
+JR-9600
 国鉄 9600形蒸気機関車
-JR_9600_tender
-国鉄 9600形炭水車
-JR_C11
+JR-C11
 国鉄 C11形蒸気機関車
-JR_C12
+JR-C12
 国鉄 C12形蒸気機関車
-JR_C53
+JR-C53
 国鉄 C53形蒸気機関車
-JR_C57
+JR-C57
 国鉄 C57形蒸気機関車
-JR_chiki_300
-国鉄 チキ300 長物車
-JR_D52
+JR-D52
 国鉄 D52 蒸気機関車
-JR_DD51
+JR-DD51
 国鉄 DD51 ディーゼル機関車
-JR_DE10
-国鉄 DE10 ディーゼル機関車
-JR_DF200
-JR貨物 DF200
-JR_DF50
+JR-DF50
 国鉄 DF50
-JR_ED17
-鉄道省 ED17形 電気機関車
-JR_EF55
-鉄道省 EF55形 特急用電気機関車
-JR_EF58
+JR-EF58
 国鉄 EF58形 旅客用電気機関車
-JR_EF65-500
-国鉄 EF65形500番台 電気機関車
-JR_EF66
-国鉄 EF66
-JR_hoki2200_rice
-国鉄ホキ2200型　種籾輸送貨車
-JR_koki100_palette
-JR貨物コキ100　パレット輸送貨車
-JR_koki350_fish
-JR貨物コキ350鮮魚輸送貨車
-JR_OHA31
+JR-OHA31
 鉄道省オハ31三等客車
-JR_OHA35
+JR-OHA35
 鉄道省オハ35三等客車
-JR_OHAFU33
+JR-OHAFU33
 国鉄 オハフ33 普通客車
-JR_OYU10
-国鉄 オユ10 郵便車
-JR_OYUFU10
+JR-OYUFU10
 国鉄 オユフ10 郵便車
-JR_re12000_fish
-国鉄レ12000鮮魚輸送貨車
-JR_taki55000_oil
-国鉄タキ55000石油類輸送貨車
-JR_tamu200_oil
-国鉄タム200石油類輸送貨車
-JR_wamu8000_palette
-国鉄ワム80000　パレット輸送貨車
-JRE_253M
-JR東日本 モハ253形
-JRE_253T
-JR東日本 サハ253形
-JRE_253Tc
-JR東日本 クハ253形
-JRF_EF210
-JR貨物 EF210
-JRF_EH500-1
-JR貨物 EH-500 金太郎
-JRF_EH500-2
-JR貨物 EH-500 金太郎(後部)
-JRF_M251-1
-JR貨物 M251形（前）
-JRF_M251-2
-JR貨物 M251形（後）
-JRF_Mc250-1
-JR貨物 Mc250形（前）
-JRF_Mc250-2
-JR貨物 Mc250形（後）
-JRF_T250
-JR貨物 T260/261形（混載貨物）
-JRF_T250cooler
-JR貨物 T260/261形（低温貨物）
-JRh_Dc40
-JR北海道 キハ40形気動車
-JRh_Dc54
-JR北海道 キハ54形気動車
-JRM_DC5000
-鉄道省キハニ5000型
-JRw_0a
-新幹線0系 ひかり号
-JRw_0b
-新幹線0系 (中間車)
-JRw_0c
-新幹線0系 (中間車P付)
-JRw_0d
-新幹線0系 (後尾車)
-JRw_521
-新幹線500系 ひかり号(521)
-JRw_522
-新幹線500系 522
-JRw_525
-新幹線500系 525
-JRw_526
-新幹線500系 526
-Kobe_citybus
-神戸市バス
 logs
-材木筏
-Meitetsu Mc800
-名鉄モ800型
-Meitetsu-770-Mc1
-名鉄モ770型（前）
-Meitetsu-770-Mc2
-名鉄モ770型（後）
-Meitetsu-880-Mc1
-名鉄モ880型（前）
-Meitetsu-880-Mc2
-名鉄モ880型（後）
-Meitetsu-Mc510
-名鉄モ510型
-Meitetsu-Mc570
-名鉄モ570型
-Meitetsu-Mc590
-名鉄モ590型
-Meitetsu-Mc600
-名鉄モ600型
-Mitsubishi Aero Star(Kanachu Bus)
-三菱ふそうエアロスター(神中バス)
-OldTankerTruck
-タンクローリー
-Rice Trike
-オート三輪 (穀物用)
-Solar Car DANKICHI
-ソーラーカー「だん吉」
+木材筏
+Mailcontainerwagon
+郵便コンテナ貨車
+Oelanhaenger
+H-Trans　石油類輸送トレーラー
+Oilbarge
+オイルバージ
+OldOil
+タンク車
 Steamer
 蒸気客船
-TankerTruck
-タンクローリー
+Tanklastzug
+H-Trans タンクローリー
+Trike
+ばら荷運搬トラック
 Tugboat
 タグボート
 YS-11-100
@@ -468,8 +410,6 @@ YS-11A-400_Cargo
 日本航空機製造 YS-11A-400 貨物型
 YS-11A-400_Mail
 日本航空機製造 YS-11A-400 郵便型
-YS-11A-500
-日本航空機製造 YS-11A-500
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road
@@ -488,11 +428,25 @@ Kanal
 運河
 Powerline
 送電線
+river
+可航河川
+river2
+小川
 runway_modern
 舗装滑走路
+sand_track
+簡易線用線路
+shinkansen_track
+新幹線線路
 taxiway
 誘導路
 tramrailway
 路面軌道
 wooden_sleeper_track
 標準の線路
+#__________________________________way-object___________________________________
+#__________________________________way-object___________________________________
+shinkanesen_overhead
+架線
+SlowOverheadpower
+架線

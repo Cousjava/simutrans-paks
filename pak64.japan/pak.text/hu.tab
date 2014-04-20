@@ -1,22 +1,32 @@
 §################################################################################
 #                                                                              #
 #                Simutrans Scenario Specific Translation File                  #
-#                              Scenario: pak.japan                             #
+#                             Scenario: pak64.japan                            #
 #                              Language: hu Magyar                             #
 #                                Encoding: UTF-8                               #
 #                                Font : cyr.bdf                                #
-#                           Date Created: 25.01 2011                           #
+#                           Date Created: 20.04 2014                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                    - An_dz                                   #
+#                   note: Verified where all texts are shown                   #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
-#                              Frank Penz - FrankP                             #
+#                                  - Flemmbrav                                 #
+#                                    note:                                     #
+#                                    - FrankP                                  #
+#                                    note:                                     #
+#                                    - HDomos                                  #
 #                                    note:                                     #
 #                                   - LeitnerI                                 #
 #                                    note:                                     #
+#                                     - PTM                                    #
+#                                    note:                                     #
+#                                    - gyeben                                  #
+#                                    note:                                     #
 #                                    - petter                                  #
 #                                    note:                                     #
-#                          Markus Pristovsek - prissi                          #
+#                                    - prissi                                  #
 #                                    note:                                     #
 #                                                                              #
 ################################################################################
@@ -24,21 +34,275 @@
 #____________________________________bridge_____________________________________
 ClassicRail
 Beton vasúti híd
-ClassicRoad
-Beton közúti híd
-ModernRoad
-Modern közúti híd
+PowerBridge
+Áthidaló villanyvezeték
 Schiffhebewerk
-Hajózsilip (átemelõ)
+Hajó darú
 SteelRail
-Acélszerkezetes vasúti híd
+Acél vasúti híd
 ViaductRail
-Viadukt (völgy) híd
+Kõ viadukt
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 01_CITY
 Városháza
 02_CITY
 Városháza
-03_CITY
-Városháza
+1headquarter
+Cégközpont
+2headquarter
+Cégközpont
+3headquarter
+Cégközpont
+4headquarter
+Székhely
+5headquarter
+Székhely
+AirDepot
+Hangár
+AirStop
+Repülõ dokkoló
+AirTerminal477
+Reptéri fogadócsarnok (1950)
+BigPostOffice
+Nagy Postahivatal.
+BigTerminal477
+Nagy fogadócsarnok.
+BusStop
+Buszmegálló
+CarDepot
+Kocsi depó
+CarStop
+Kocsi megálló
+ChannelStop
+Csatorna megálló
+FreightShipStop
+Teherhajó megálló
+FreightTrainStop
+Tehervonat megálló
+leftShipStop
+Rakodó daru
+LeuchtturmShipStop
+Világítótornyos kikötõ
+ModernAirTerminal477
+Modern légi terminál
+MonorailGround
+Nyeregvasút talaj
+PlainAirStop
+Repülõ megálló
+PostOffice
+Posta
+PostStop
+Posta megálló
+rampShipStop
+lejtõs rakpart
+rightShipStop
+Rakpart hullámtörõvel
+ShipDepot
+Hajó depó
+TowerMoistboy
+Irányítótorony
+TrainDepot
+Vasúti depó
+TrainStop
+Vasúti megálló
+TramDepot
+Villamos depó
+#____________________________________citycar____________________________________
+#____________________________________citycar____________________________________
+Ambulanz
+Mentõautó
+FordT
+Ford T-modell
+green_car
+Zöld autó
+Motorrad
+Motor
+orange_bus
+VW Caraván
+Pickup
+Nissan B2500 Pickup
+Roadster
+Boyld roadster
+yellow_car
+Trabant 601
+#__________________________________dummy_info___________________________________
+#__________________________________dummy_info___________________________________
+factory_fish_pond_details
+<title>Halastó, halnevelő leírása</title><h1>Halastó</h1><p>Természetes és mesterséges tavak ahol halakat tenyésztenek.</p><p>A középkori Európában az erődöknél, kolostoroknál és a kastélyoknál is elterjedt volt, ahol a többnyire önellátó kolóniák éltek. Mostanában inkább kelet Ázsiában népszerű (főként Japánban), ahol a koi pontyot lehet tartani.</p><p>Ezekben a tavakban nevelik a halakat, majd lehalásszák, aztán szállítják, végül pedig feldolgozzák élelmiszerré. Az ilyen tavakban tilos úszni.</p><p>Ezek a telepek fejlett agrárkultúrával rendelkeznek főleg a fotoszintetizáció terén, mivel a halakat nem csak mesterséges táplálékkal etetik.</p><p>\n
+#____________________________________factory____________________________________
+#____________________________________factory____________________________________
+ChemicalPlant
+Vegyiüzem
+CHEMIST
+Patika
+Druckerei
+Nyomda
+fish_pond
+Halastó
+fish_swarm
+Halraj
+Nutzwald
+Faültetvény
+Oelbohrinsel
+Olajfúró torony
+Oelfeld
+Olajmezõ
+Oelkraftwerk
+Olajfûtésû hõerõmû
+Papierfabrik
+Papírgyár
+Pharmaceutics
+Gyógyszergyár
+Windkraftwerk
+Szélerõmû
+#_____________________________________good______________________________________
+#_____________________________________good______________________________________
+Buecher
+könyvek
+Chemicals
+vegyszerek
+fish
+hal
+Gasoline
+üzemanyag
+Holz
+rönk
+Medicine
+gyógyszerek
+None
+semmi
+Oel
+olaj
+Papier
+papír
+Passagiere
+Utas
+Post
+Posta
+PrintersInk
+nyomdafesték
+#__________________________________pedestrian___________________________________
+#__________________________________pedestrian___________________________________
+Couple
+Pár
+Cyclist
+Kerékpáros
+pedestrian_1
+Gyalogos
+pedestrian_2
+Gyalogos
+pedestrian_3
+Gyalogos
+pedestrian_4
+Gyalogos
+pedestrian_child
+Gyerek
+pedestrian_dog
+Kutya
+Woman
+Nõ
+#_________________________________program_text__________________________________
+#_________________________________program_text__________________________________
+monorail
+Nyeregvasút sín
+#___________________________________roadsign____________________________________
+#___________________________________roadsign____________________________________
+choose_point
+Útválsztó tábla
+ChooseSignals
+Szemafor
+Endofchoosetrack
+Útvonaljelzõ tábla
+LongBlockSignals
+Szemafor bakterházzal
+Minimum80
+Minimum 80 km/ó forgalmi tábla
+NoEntry
+Nem bejárat
+preSignals
+Elõ forgalmi jelzõ
+RailClose
+Vágányzár
+Signals
+Forgalmi jelzõk
+traffic_light
+Forgalmi fényjelzõ
+#____________________________________vehicle____________________________________
+#____________________________________vehicle____________________________________
+Book_Trike
+Könyvszállító teherautó
+Bretterwagen
+Faáruszállító-B vagon
+EnCo_Container_Ship
+EnCo konténerszállító tanker
+EnCo_Oil_Ship
+EnCo olajszállító tanker
+EnCo_Paper_Ship
+EnCo papírszállító tanker
+EnCo_Wood_Ship
+EnCo faárúszállító tanker
+Erzanhaenger
+Nyersanyagszállító-A utánfutó
+Erztransporter
+Nyersanyagszállító-E kocsi
+Holzanhaenger
+Faáruszállító-A utánfutó
+Holztransporter
+Faáruszállító-A kocsi
+Holzwagen
+Faáruszállító-A vagon
+logs
+Faárúszállító uszály
+Oelanhaenger
+Olajszármazékszállító-A utánfutó
+Oilbarge
+Olajszármazékszállító uszály
+OldOil
+Olajszármazék-szállító-A vagon
+Steamer
+Személyszállító gõzhajó
+T21_bus
+T-21 busz
+Tanklastzug
+Olajszármazékszállító kocsi
+Trike
+Trike nyersanyagszállító
+Tugboat
+Vontatóhajó
+Turgot
+Turgot vitorláshajó
+#______________________________________way______________________________________
+#______________________________________way______________________________________
+asphalt_road
+Aszfaltos út
+city_road
+Városi út
+cobblestone_road
+Kockaköves út
+concrete_sleeper_track
+Betontalpas sín
+dirt_road
+Föld út
+gavel_road
+Kavicsos út
+Kanal
+Csatorna
+Powerline
+Villamos vezeték
+river
+Hajózható folyó
+river2
+Folyam
+runway_modern
+Modern kifutópálya
+sand_track
+Homokos töltésû vasúti sín
+taxiway
+Kifutópálya
+wooden_sleeper_track
+Fatalpas sín
+#__________________________________way-object___________________________________
+#__________________________________way-object___________________________________
+SlowOverheadpower
+Alacsonysebességû felsõvezeték

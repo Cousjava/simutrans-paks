@@ -1,32 +1,36 @@
 ################################################################################
 #                                                                              #
 #                Simutrans Scenario Specific Translation File                  #
-#                              Scenario: pak.japan                             #
+#                             Scenario: pak64.japan                            #
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 28.01 2011                           #
+#                           Date Created: 20.04 2014                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Alexander Brose - AlexB                           #
 #                                    note:                                     #
+#                                    - An_dz                                   #
+#                   note: Verified where all texts are shown                   #
 #                         Klaus Thenmayer - Bitfreezer                         #
 #                                    note:                                     #
 #                                  - Christian                                 #
 #                                    note:                                     #
 #                                   - Combuijs                                 #
 #                                    note:                                     #
-#                             Michael Hohl - Cruzer                            #
-#                       note: Administrator pak192.comic                       #
+#                                    - Cruzer                                  #
+#                 note: Ex-Entwickler und Gründer pak192.comic                 #
 #                             Dirk W. - DirrrtyDirk                            #
 #                                    note:                                     #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
-#                            Christian W. - Eps-Omo                            #
+#                                   - Eps-Omo                                  #
+#                                    note:                                     #
+#                                  - Flemmbrav                                 #
 #                                    note:                                     #
 #                                   - Florian                                  #
 #                                    note:                                     #
-#                              Frank Penz - FrankP                             #
+#                                    - FrankP                                  #
 #                                    note:                                     #
 #                                    - GerdW                                   #
 #                                    note:                                     #
@@ -36,31 +40,45 @@
 #                                    note:                                     #
 #                              Jaroslaw - Jaroslaw                             #
 #                                    note:                                     #
+#                                   - Leartin                                  #
+#                                    note:                                     #
 #                                   - Lemuria                                  #
 #                                    note:                                     #
 #                             Marcus Haupt - Marcus                            #
 #note: if I´m not available by email to proximity.de try mail@marcus-haupt.de (#
+#                                     - MaxK                                   #
+#                                    note:                                     #
 #                        Constantin Grabowski - Moistboy                       #
+#                                    note:                                     #
+#                                 Daniel - NNW                                 #
 #                                    note:                                     #
 #                                   - Nico192                                  #
 #                                    note:                                     #
+#                                     - PTM                                    #
+#                                    note:                                     #
 #                                    - Paco_m                                  #
+#                                    note:                                     #
+#                                   - Xelofino                                 #
+#                                    note:                                     #
+#                          Alexander Huber - alexhuber                         #
 #                                    note:                                     #
 #                                 compo - compo                                #
 #                                    note:                                     #
 #                               Florian - floppy                               #
 #                                    note:                                     #
-#                            Günter Beine - gebeine                            #
-#                        note: maintainer pak128.german                        #
+#                                   - gebeine                                  #
+#                        note: maintainer PAK128.german                        #
 #                            Jonas Bushart - jonasbb                           #
 #                                    note:                                     #
 #                                - jounior-fuchs                               #
+#                                    note:                                     #
+#                            Hendrik - missingpiece                            #
 #                                    note:                                     #
 #                              Markus Rex - msrex                              #
 #                                    note:                                     #
 #                                    - petter                                  #
 #                                    note:                                     #
-#                          Markus Pristovsek - prissi                          #
+#                                    - prissi                                  #
 #                                    note:                                     #
 #                            Oliver Mayer - rakishly                           #
 #                                    note:                                     #
@@ -70,8 +88,6 @@
 #                                    note:                                     #
 #                               Sven Osada - sojo                              #
 #                         note: maintainer pak96.comic                         #
-#                                     - test                                   #
-#                                    note:                                     #
 #                                 - transporter                                #
 #                                    note:                                     #
 #                           Werner Brandt - wernieman                          #
@@ -82,42 +98,86 @@
 ################################################################################
 #____________________________________bridge_____________________________________
 #____________________________________bridge_____________________________________
-ClassicRoad
-Spannbetonbrücke
+asphalt_bridge
+Spannbetonschnellstraßenbrücke
+ClassicRail
+Stahlprofilbrücke
+PowerBridge
+Freileitungsbrücke
+Schiffhebewerk
+Schiffshebewerk
+shinkansen_bridge
+Shinkansenbrücke
+shinkansen_ramp
+Shinkansenrampe
+steel_truss_asphaltroad
+Kastenprofilbrücke
 SteelRail
 Stahlfachwerkbrücke
+suburb_road_bridge
+Stadtautobahnbrücke
+ViaductRail
+Eisenbahnviadukt
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 01_CITY
 Rathaus
 02_CITY
 Rathaus
-03_CITY
-Rathaus
-03_CITY_C
-Rathaus
-04_CITY
-Rathaus
+1headquarter
+Firmensitz
+2headquarter
+Großer Firmensitz
+3headquarter
+Firmenhauptquartier
+AirDepot
+Alter Flugzeughängar
+AirStop
+Gangway
+AirTerminal477
+50er-Jahre Terminal
 Baseball_Arena
 Baseballstadion\n\nfür den populärsten Sport in Japan. Der Klub hier kann aber nicht ganz so berühmt sein, denn für ein Dach hat es nicht mehr gereicht.
+Big_black_monument
+Monolith
+Big_Shrine
+Großer Shinto-Schrein\n\nHier wohnt der Gott des karen Baches (heute aushalb des Tempels in einer Betonröhre). Dennoch strömen die Massen, wenn auch viele die meiste Zeit am Eingang an dern Souvenirständen verbringen.
 Big_Temple
 Großer Shintoschrein\n\nOrt von Hochzeiten und Neujahrzeresmonie.
+BigPostOffice
+Großpostamt
+BigTerminal477
+Großes Terminalgebäude
+Bus_Stop_with_Roof
+überdachte Bushaltestelle
+BusStop
+einfache Bushaltestelle
 CarDepot
 Fahrzeugdepot
+CarStop
+Frachthof
+ChannelStop
+Kanalhafen
 City_Castle
 Stadtschloss\n\nFrüher Wohnsitz des Fürsten, jetzt Sehenwürdigkeit. Zurest der Abriss um 1900, nach dem 2. Weltkrieg wieder in Beton "nachgebaut".
 COM_30_01
 Ein Reisfeld am Stadtrand. Doch seine Tage sind gezählt, man feilscht nur noch über den Kaufpreis.
+COM_30_02
+Ein Reisfeld wie man es oft am Rande der Städte findet.
 COM_30_03
-Ein Parkplatz am Stadtrand. Nur 100 Yen pro Tag, selbst das Ticket mit dem Bus zur Stadtmitte kostet mindestens das Doppelte.\n\n
+Ein Parkplatz am Stadtrand. Nur 100 Yen pro Tag, selbst das Ticket mit dem Bus zur Stadtmitte kostet mehr als das Doppelte.
 COM_30_04
-EIn Combini, neben Abgepacktem gibt es hier auch Bento als Restaurantersatz und im Winter brodelt "Oden" neben der Kasse. Die ist meist in Händen eines jobbenden Studenten. \n
+Ein Combini, neben Abgepacktem gibt es hier auch Bento als Restaurantersatz und im Winter brodelt "Oden" neben der Kasse. Die ist meist in Händen eines jobbenden Studenten. 
 COM_30_05
 Ein Familienrestaurant. Im Gegensatz zu dem Namen sind es Teile einer Restaurantkette, die 24h westliches (wie Buletten) und japanisches Essen servieren. Trotzdem, preiswert und lecker.
+COM_30_08
+Ein kleiner Stadtpark für viel zu viele Anwohner rings herum. Aber immerhin sehen die Städter so mal eine Hauch wilder Natur.
 COM_30_09
-Patchiko, die japanische Spielothek und der Ort, wo man sich einen Gehörsturz beim Betreten holt. Da Glücksspiel offiziell verboten ist, unterhält die Mafia hinter dem Haus eine kleine Bude, wo die Gewinne umgetauscht werden, die es offiziell gar nicht gibt. Kinder sind schon in Autos an Hitzschlag gestorben, weil die Mutter drinnen nicht loskam.
+Pachinko, die japanische Spielothek und der Ort, wo man sich einen Gehörsturz beim Betreten holt. Da Glücksspiel offiziell verboten ist, unterhält die Mafia hinter dem Haus eine kleine Bude, wo die Gewinne umgetauscht werden, die es offiziell gar nicht gibt. Kinder sind schon in Autos an Hitzschlag gestorben, weil die Mutter drinnen nicht loskam.
+COM_30_10
+Eine Bankzentrale aus den 30er; das Kapital hat auch seine Baustile schon früh internationalisiert.
 COM_30_11
-Yamada Denki, das japanische Gegenstück zum verrückten Elektronikdiscounter.
+Yamada Denki, das japanische Gegenstück zum verrückten Elektronikdiscounter. Die neusten Sachen gibt es in Europa (wenn überhaupt) erst sechs Monate später zu kaufen.
 COM_30_12
 Das beste Kaufhaus der Stadt. Gucci, Versace oder was sonst noch einen Namen hat: Hier findet es reißenden Absatz zum doppelten Preis und hilft mit, den italienischen Haushalt zu sanieren.
 COM_30_14
@@ -125,9 +185,11 @@ H-Trans Hauptquartier. Natürlich in bester Citylage. Die Angestellten in den 16 
 COM_30_16
 Buissnesshotel, wo man ganz eng nächtigen kann. Aber für 4000 Yen ist sogar das Frühstück (Toast, Yogurt und Suppe) dabei.
 COM_30_17
-Viele Gebäude in Japan heißen einfach xyz-bil, nach dem Erbauer, wenn sie wie dies Alex-Biru viele unterschiedliche Firmenbüros beherbergen.
+Man braucht schon 100% gute Augen oder man hat keinerlei Chance, den gesuchten Laden in dem Anzeigenschilderwald zu finden.
+COM_30_18
+Viele Gebäude in Japan heißen einfach xyz-bil (von building, oder biru in Katakana). Alex ist der Erbauer, und dieses Alex-Biru beherbergt viele unterschiedliche Firmenbüros.
 COM_30_19
-Alles für den Arbeitskomfort im intelligenten Bürogebäude.
+Die Belechtung dieses intelligenten Bürogebäudes kann per Computer am Abend durch Beleuchtung der Fenster Videos zeigen. Heute abend läuft Gundam.
 COM_31_03
 Noch ein Parkplatz: Aber nicht mehr lange und hier wird gebaut.
 COM_31_04
@@ -135,7 +197,9 @@ Ein kleiner Combini, ein Laden der fast alles für das tägliche Überleben verkauf
 COM_31_05
 Ein Familienrestaurant, also eines der Kettenrestaurants, die billig und meist japanisch-westlich gemischt 24h Stunden essen servieren. Bloß keine Extrawünsche!
 COM_31_06
-Gebrauchtwagenhändler, steht an jeder Ecke und ab 30000 Yen (soviel wie ein brauchbares Fahrrad) ist man dabei.
+Mottanai, nichts veschwenden ist ein japanisches Motto. Und so sieht man einen Gebrauchtwagenhändler an jeder Ecke. Ab 3000 Yen für ein brauchbares Fahrrad ist man dabei. (Die Monatskarte kosten zehnmal so viel).
+COM_31_11
+Zwei Bürohäuser in denen die Angestellten ihre 12 Stunden Arbeitstage verbringen. Wenn sie nicht Mittags im Restaurant nebenan im Erdgeschoss weilen.
 COM_31_12
 Nicht umsonst sind die größten Kaufhäuser der Welt in Japan, 7 Tage lang geöffnet. Falls ein Feiertag auf einen Sonntag fällt, dann wird der am Montag nachgeholt, damit mehr geshoppt wird.
 COM_31_13
@@ -148,12 +212,16 @@ COM_31_16
 Ein großes Kaufhaus, und ganz oben ist immer die Restaurantetage mit oft leckerem Essen.
 COM_31_17
 Blickfang ist der Bildschirm. Dabei ist es noch ein kleiner. Wer will, kann sein Gesicht mit der Handykamera hier erscheinen lassen.
-COM_31_19
+COM_31_18
 Selbst für große Kaufhäuser reicht der Platz nicht mehr. Und dunkel wird es hier nur wenn der Strom ausfällt.
+COM_31_19
+Bei so kompakter Bauweise braucht man einfach Fahrstühle: Das Treppenhaus für den Notfall teilen sich hier gleich drei Gebäude. Und die Treppe ist wirklich nur für Notfälle zu betreten.
 COM_32_01
 Werbeplakat um auch den letzten Yen gleich wieder umzusetzen.
 COM_32_02
 Überall in Japan gibt es diese Verkaufsautomaten. Ob Suppe, Kameras, Hähnchensandwiches, Eis, Getränke oder Unaussprechliches - nichts was sie nicht verkaufen.
+COM_32_03
+Ein Reisfeld wie man es oft am Rande der Städte findet.
 COM_32_04
 Die Bilder der Überwachungskameras in diese kleinen Läden sind begehrt: Nicht wegen der seltenen Überfälle, sondern weil bei der Ladendichte fast immer einer auf dem Epizentrum des letzten Erdbeben steht und man so im Fernsehen unscharfe Gegenstände aus den Regalen fallen sieht.
 COM_32_05
@@ -161,43 +229,81 @@ Ein traditionelles japanisches Restaurant. Wenn es keine Kette ist, dann ist ein
 COM_32_07
 Eine Hochzeit ist in Japan großes Geschäft. Deswegen sind diese Hochzeitszentren aufwendig wie von Walt Disney gestaltet. Drinnen geht es nach strengem Zeitplan durch eine kirchliche Imitatszeremonie. Blonde Ausländer als Pfarrerersatz können sich hier ein gutes Zubrot verdienen.
 COM_32_12
-In den 30er waren solche Steinbauten der letzte Schrei. Weil der Abriss viel zu teuer wäre, steht es immer noch, obwohl es für ein richtiges Kaufhaus eigentlich schon zu klein ist.
+In den 30er waren solche Steinbauten der letzte Schrei. Weil der Abriss viel zu teuer wäre, steht es immer noch. Und seit der Jahrhundertwende ist alte Architektur wieder im Trend. Also verkauft man auf der kleinen Verkaufsfläche eben hochpreisige Edelmarken.
+COM_32_15
+Hier werfen Straßenlaternen nachts nur Schatten: selbst wenn sie angeschaltet sind. Zuviel Werbung: Das kann gibt es hier nicht.
+COM_32_16
+Man weiß nicht, was die Firma wirklich herstellt. Es ist kein Kaufhaus; aber dennoch kann ihr Weihnachtsschmuck sich sehen lasen. (Gestaltet wird er jedes jahr von einer lokalen Schule.)
+COM_32_19
+Werbetafeln auf den Dächern erhellen die Nacht. Selbst als nach Fukushima strengstes Stromsparen angesagt war: Mehr als ein Drittel wurden nicht dunkel.
+COM_33_02
+Hier gibt es nur vegetarisches Essen nach Kyoto-Art: Unglaublich lecker und selbst Steakliebhaber werden danach nichts vermissen.
+COM_33_04
+Ein kleines Kleidergeschäft, das immer noch traditionell gefertigte Kimono verkauft. Nebenan ist ein Laden für Schweißhandtücher (und auch zum Handabtrocknen, denn in Japan gibt es fast nur Tücher auf Toiletten).
+COM_33_05
+Süßigkeitengeschäft mit Teestube. Allerdings sind die traditionellen japanischen Süßigkeiten nicht sehr süß. Sie bestehen meist aus Klebreismasse, roten Bohnen, Kastanien und grünem Tee. Probieren lohnt sich!
+COM_33_06
+Eine Fahrradwerkstadt ist nun in der alten Schmiede eingezogen.
+COM_33_07
+Die hohe Fassade zeigt, dass der Immobilienmakler hier trotz der Lage sehr gute Geschäfte gemacht hat.
 COM_33_08
-Pro Quadratmeter tausend kleine Dinge. Vom Fisch, der an der Häuserecke trocknet, bis zum Shinseido Kosmetikgeschäft: Nichts, was hier nicht feilgeboten würde. \n
+Pro Quadratmeter tausend kleine Dinge. Vom Fisch, der an der Häuserecke trocknet, bis zum Shinseido Kosmetikgeschäft: Nichts, was hier nicht feilgeboten würde.
+COM_33_10
+Ja, auch in Japan gab es amerikanisch inspirierte Werbetafelarchitektur. In Deutsch sind das eher Potemkin'sche Fassaden. 
+COM_34_07
+Die Frisuren aus diesem Firseursalon sind mitnichten so langweilig, wie die Architektur. Im Gegenteil, da praktisch alle Japaner pechschwarze Haare haben, färben sich auch Großmütter und -väter die Haare. Und wenn das blond eher orange erscheint ...
+ControllerOffice
+Frachthofverwaltung
 Disneyland
 Disneyland\n\nWichtigste Freizeitattraktion im Großraum Tokio und auch darüber hinaus ... 
 Driving_School
 Fahrschule und Führerscheinprüfstelle\n\nDiese Schulen haben wirklich einen eigenen Parcour für Anfänger und zum Prüfen. 
 FastTrainStop
 Schnellzugbahnhof
+FreightShipStop
+Hafenkachel
 FreightTrainStop
 Frachtbahnhof
+GlassStripeHall
+Eingangsgebäude
 Hospital
 Krankenhaus\n\n
 IND_00_05
 Wassertank: Gut gechlort und voller Pestizide. Wasser trink man in Japan nicht aus dem Hahn.
 IND_01_03
 Einen Gastank sieht man selten. Meist wird das Gas per Laster in 50l Flasche direkt zum Haus transportiert.
+IND_01_05
+Öllager
 IND_30_01
 Aufgegebenes Reisfeld, sucht einen Käufer.
 IND_30_02
 Recyclinghof, oder lokale Müllverbrennung. Ist zwar verboten, aber am Wochenende verdunkelt sich immer noch der Himmel im ländlichen Japan und es riecht nach verbranntem Plastik. 
 IND_30_03
 Ein kleiner Bauernmarkt ist in diesen baufälligen Hallen. Das Gemüse dprt ist frisch und lecker und billiger als im Supermarkt. Jetzt muss man sich nur noch verständigen können.
+IND_30_04
+Ölpumpstation
 IND_30_06
 Umspannwerk, versorgt die Spinnennetze japanischer Städte.
 IND_30_07
 Weil der Wasserdruck schwank und schwach ist, hat fast jede größere Siedlung ihren eigenen Wasserturm. So ist auch noch morgens, wenn aller nochmal kurz aufs Klo gehen, genug Wasser da. Als Deutscher vermisst man so allerdings frisches kaltes Wasser ...
 IND_30_08
 Das Depot der kommunalen Behindertenbusse. Sie sind umsonst, aber fahren nur dreimal täglich auf wöchentlich ändernden Routen (Handgeschriebener Aushang im Rathaus), um die richtigen Busunternehmen nicht zu verärgern.
+IND_30_09
+Dies Fabrik hat auch schon mal bessere Zeiten gesehen. Jetzt lagert die Stadt die Asche aus der Müllverbrunnung im Hof.
+IND_30_10
+Das kleine Kraftwerk versorte ehemals die Straßenbahn mit Strom.
 IND_30_11
 Düngemittellabor, was bei den Mengen, die auf die kleinen Reisfelder gekippt werden, auch dringend nötig ist.
 IND_30_16
 Neue Filter für die alte Fabrik, damit kann man auch noch im Stadtzentrum produzieren.
+IND_30_17
+Dem Halbleiterforschungsinstitut war die erfolgreiche Aufholjagd der japanischen Industrie in den 80ern zu verdanken. Große Architektur sieht man von außen aber leider nicht.
 IND_30_18
 Das neue Nanotechnikinstitut ist der Schmuck der Stadt.
 IND_31_01
 Nur in ländlichen Gebieten findet man solche Mobilfunkmasten. In der Stadt sitzen sie direkt auf den Freileitungsmasten vor dem Fenster.
+IND_31_02
+Auf dieser lokalen Mülldeponie sthet naher der Wand eine große Stahltonne mit kleine Abzug oben drauf. Dort wird der brennbare Müll (gesammelt Montags- und Donnestags in diesem Jahr, Freitag nichtbreenbares) verbrannt um mehr Platz zu haben. Daher ist oft bei Windstille eine Brandnebel am Wochenende über dem ländlichen Japan, und die Dioxinwerte in der Umgebung liege auf öfter mal weit über den Werten von Seveso.
 IND_31_03
 Diese Wellblechgarage überstand schon hunderte Taifune. Das kann nur an der Aerodynamik liegen, denn die Streben frisst der Rost.
 IND_31_07
@@ -205,37 +311,61 @@ Ein betonverkleideter Wasserturm, damit auch in den oberen Stockwerken der nahen
 IND_31_08
 Hier wird Flüssiggas in Flaschen abgefüllt. Diese werden an die Häuser geliefert, da man mit 100V und 20A Wechselspannung (Hausanschluss) keine Durchlauferhitzer und Elektroherde betreiben kann.
 IND_31_09
-Hier wird Sojasoße gebraut. Nicht die beste Nachbarschaft bei Windstille.
+Hier wird Sojasoße gebraut. Nicht die beste Nachbarschaft bei Windstille für geruchsempfindliche Leute.
 IND_31_10
-Bodenstation für die Einspeisung ins lokale Kabelfernsehen.
+Bodenstation, speist Satelliten-TV in das lokale Kabelnetzwerk.
 IND_31_11
 Optikfabrik. Immer noch gilt Made in Germany als trendy; auch wenn im kleingedruckten steht: Linsen berechnet in Deutschland. Produziert wurde hier und seit drei Jahren in China.
 IND_32_03
 Schnell errichtet, siecht hier ein einst hoffnungsvolles Unternehmen dahin.
 IND_32_11
 In diesen alten Mauern hat die Universität den neuen Reinraum gebaut.
+JPN_Hydrangea_Temple
+Hortensien Tempel\n\nDieser Buddhistische Tempel ist für seinen vielen Hortensien berühmt. SIe blühen in Japan von Mai bei Ende Oktober.
+JPN_Zen_Temple1
+Zen Tempel\n\nDieser Tempel ist das Hauptquartier einer Buddhistischen Zen-Sekte. Berühmt sind hier die Steingärten, die jeden Morgen zur Entleerung des Geistes neu angelegt (gerecht) werden.
 Kasan
 aktiver Vulkan\n\nDer rauchende Schlot verrät ihn von weitem. Jährlich kommen Tausende um ihn zu sehen und dann an seinem Fuße in den heißen Quellen zu baden. 
+LargeHall
+Dreiecksdacheingangshalle
+leftShipStop
+Containerhafen
+LeuchtturmShipStop
+Hafenmole mit Leuchtturm
+LocalTrainStop
+Lokalbahnhof
+MediumRoundHall
+rundes Empangsgebäude
 ModernAirTerminal477
 Modernes Terminal
+ModernBigPostOffice
+modernes Großpostamt
 Monolith_(by_ono)
 \n\nDieser Monolith von ono steht stellvertretend für alle japanischen Zeichner.
+MonorailGround
+Einschienenbahn Depot Fundament
 Monument_for_477
 \n\nViele Grafiken wurden ursprünglich von 477 für das Programm FreeTrain gezeichnet.  
 Monument_for_Hajo
 \n\nDenkmal für Hajo, dem Schöpfer von Simurans.  
 Observatory_(by_MHz)
 \n\nDiese Sternwarte steht für MHz und dessen scharfes Auge für Details.  
+OldPostOffice
+historisches Postamt
 PlainAirStop
 Parkposition
 PostOffice
-Altes Postamt
+Postamt
+PostStop
+Buswartehalle und Briefkasten
+rampShipStop
+Rampe zum Hafen
 RES_30_01
 kleines Reisfeld am Stadtrand
 RES_30_02
 Eine Bauernhof am Stadtrand; die Bäume dienen als Klimaanlage und das Plumpsklo als Düngung.
 RES_30_03
-Altes Farmhaus im Schatten zwischen den Bäumen
+Altes Farmhaus im Schatten zwischen den Bäumen.
 RES_30_04
 Auch hier deutliche Anleihen bei Amerika (außer bei der Quadratmeterzahl).
 RES_30_10
@@ -276,18 +406,44 @@ RES_32_12
 Noch ein kleiner unschuldiger Apartmentturm
 RES_32_17
 Nebenan sind sechs Restaurants, unten Läden und die Straße lärmt vor dem Haus. Aber zum Glück ist gegen 22h Schluss mit dem Nachtleben und alle gehen nach Hause schlafen.
+rightShipStop
+Frachtkai mit Landebrücke
+ShinkansenDepot
+Shinkansenbetriebwerk
+ShinkansenStop
+Bahnhof
 ShipDepot
 Werft
 Small_Shrine
 Kleiner Tempel\n\nSo wie die Kirche an jeder Ecke hat in Japan jeder Bezirk einen kleinen Tempel oder Schrein. Dort kommt man in der Nachbarschaft zum Beispiel am Neujahrsmorgen zusammen.
+SmallDomeHall
+Station mit Domdach
+SmallHall
+kleiner Bahnhof der 50er
+SmallRoundHall
+Tonnendochbahnhof (klein)
+SmallStationBlg
+Nebenbahnhof
 SmallTemple
 Temple\n\nEinem reichen Erben hat diesem Tempel nicht nur sein imposantes Haupthaus zu verdanken, sondern auch die vielen Sakefässer für das Neujahrsfest.
+TowerMoistboy
+Kontrollturm
 TrainDepot
 Zugdepot
 TrainStop
 Zugstop 
 TramDepot
 Straßenbahndepot
+UndergroundStation
+Untergrundbahnhof
+uor_Koban
+lokale Polizeistation\n\nWenn du in Japan eine Adresse nicht findest (was selbst Anwohner häufig passiert), dann weiß der lokale Polizist sicher, wo sie ist. Solche Koban stehen fast an jeder zweiten Ecke und haben ein rotes Licht als Erkennungszeichen ...
+uor_Koban2
+lokale Polizeistation\n\nWenn du in Japan eine Adresse nicht findest (was selbst Anwohner häufig passiert), dann weiß der lokale Polizist sicher, wo sie ist. Solche Koban stehen fast an jeder zweiten Ecke und haben ein rotes Licht als Erkennungszeichen ...
+uor_Playground
+Spielplatz\n\nHier können noch die kleine Spielen, bis sie sechs werden. (Danach natürlich auch, aber neben der Schule, der Nachhilfeschule und den Musikstunden bleibt dazu ihnen aber keinen Zeit mehr: Erst aber 20 sieht man sie hier manchmal noch rumhängen.)
+uor_Playground1
+Spielplatz\n\nHier können noch die kleine Spielen, bis sie sechs werden. (Danach natürlich auch, aber neben der Schule, der Nachhilfeschule und den Musikstunden bleibt dazu ihnen aber keinen Zeit mehr: Erst aber 20 sieht man sie hier manchmal noch rumhängen.)
 Viewtower
 Aussichtsturm\n\nEs gibt über 150 von diesen in Japan. Sie sind eine Sehenswürdigkeit in sich und machen aus einem öden Hafen eine Touristenattraktion.
 #____________________________________citycar____________________________________
@@ -298,8 +454,12 @@ FordT
 Ford T-Modell
 green_car
 grünes Auto
+Motorrad
+Moped
 orange_bus
 orangener Bus
+Pickup
+Kleinlaster
 taxi
 Taxi
 yellow_car
@@ -308,6 +468,8 @@ gelbes Auto
 #__________________________________dummy_info___________________________________
 factory_BOOK-OFF_details
 <title>Buchhändler Details</title><h1>Buchhändler Details</h1><p>Man findet sie überall. In Wellblechgebäuden schnell errichtet bieten sie viele Bücher und Manga an. Studenlang darf man dort ganze Hefte durchlesen.</p>
+factory_ChemicalPlant_details
+<title>Chemiefabrik Details</title><h1>Chemiefabrik Details</h1><p>Schon seit Anfang des Jahrhunderts werden hier Chemikalien und Druckerfarbe produziert.</p>
 factory_Druckerei_details
 Druckerei
 factory_fish_pond_details
@@ -332,6 +494,14 @@ factory_Small_Rice_Field_details
 <title>Reisfelder Details</title><h1>Reisfelder Details</h1><p>Reisfelder, das was in Deutschland Weizenfelder sind. Im Winter kahl, im Frühling hellgrün und teilweise unter Wasser gesetzt im Sommer leicht bläulich. In Japan werden in der Reiswirtschaft unmengen Dünger und Pestizide eingesetzt.</p>
 factory_Sushiya_details
 <title>Sushi-Restaurant Details</title><h1>Sushi-Restaurant Details</h1><p>Sushi ist roher Fisch auf Reis, aber eigentlich eher mehr Fastfood. Deutlich teurer sind meist die Sashimi-Restaurant, wo man den Reis einfach weglässt.</p>
+factory_Windkraftwerk_details
+<title>Windkraftanlage Details</title><h1>Windkraftanlage</h1><p>Strom aus Windenergie ist umweltfreundlich und von allen sogenannten neuen erneuerbaren Energien die mit Abstand günstigste Stromproduktionsart. In windreichen Küstenländern kann sie namhaft zur Stromproduktion beitragen.</p><p>Die erste moderne Windkraftanlage wurde 1957 in Deutschland gebaut; die größten Verdienste, um die Entwicklung von Windkraft, hat aber Dänemark.</p><p>Wie schon früher spaltet sie die Bevölkerung: Die einen finden sie eine Landschaftsverschandelung und die anderen begrüßen den Fortschritt. Warscheinlich muss man nur 100 Jahre warten und sie sind wieder romatisch wie eine Bockwindmühle ...</p>
+#__________________________________error_text___________________________________
+#__________________________________error_text___________________________________
+Monorailhalt muss auf\nMonorail liegen!\n
+Shinkansen kann nur auf\nShinkansengleisen fahren!
+Monorails are not available yet!
+Noch keine Shinkansen verfügbar!
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 BOOK-OFF
@@ -344,6 +514,12 @@ fish_pond
 Fischteich
 fish_swarm
 Fischschwarm
+Gas_station_X
+Tankstelle
+Gas_station_Y
+Tankstelle
+Gas_station_Z
+Tankstelle
 Oelbohrinsel
 Ölbohrinsel
 Oelfeld
@@ -352,8 +528,14 @@ Oelkraftwerk
 Ölkraftwerk
 osushiya
 Sushi-Restaurant
+Pharmaceutics
+Medizinhersteller
+Refinery
+Ölraffinery
 Rice_Mill
 Reismühle
+Second_Rice_Field
+Reisbauernhof
 Small_Rice_Field
 Reisfelder
 Sushiya
@@ -366,8 +548,12 @@ Chemicals
 Chemikalien
 fish
 Frischfisch
+Gasoline
+Benzin
 Medicine
 Medizin
+None
+nichts
 Oel
 Öl
 PrintersInk
@@ -376,36 +562,172 @@ raw-rice
 Reisgarben
 rice
 Reis
+#___________________________________menu_text___________________________________
+#___________________________________menu_text___________________________________
+MONORAILTOOLS
+Shinkansenbau
+#__________________________________pedestrian___________________________________
+#__________________________________pedestrian___________________________________
+Couple
+Paar (oder Pärchen)
+Cyclist
+Radfahrer
+pedestrian_1
+Fußgänger
+pedestrian_2
+Fußgänger
+pedestrian_3
+Fußgänger
+pedestrian_4
+Fußgänger
+pedestrian_child
+Kind
+pedestrian_dog
+Hund
+Woman
+Frau
+#_________________________________program_text__________________________________
+#_________________________________program_text__________________________________
+Build monorail depot
+Baue ein SHinkansendepot
+clf_chk_monorail
+Shinkansen
+hlf_chk_monorailstop
+Shinkansen
+monorail
+Shinkansen
+monorail vehicle
+Shinkansen
+remove monorails
+Shinkansenstrecken entfernen
+#___________________________________roadsign____________________________________
+#___________________________________roadsign____________________________________
+choose_point
+Stoppwähler
+ChooseSignals
+Beginn Bahnsteigsuche
+Endofchoosetrack
+Begrenzt Bahnsteigsuche
+LongBlockSignals
+Langstreckensignale
+Minimum80
+Mindestgeschwindigkeit 80 km/h
+NoEntry
+Einfahrt verboten
+preSignals
+Zwei-Block-Signal
+RailClose
+Gleissperre
+shinkansen_choose_signals
+Bahnsteigwahl-Signal
+shinkansen_exclude_from_choose
+Begrenzung der Bahnsteigwahl
+shinkansen_long_block_signals
+Langstreckensignal
+shinkansen_presignals
+Zweiblocksignal
+shinkansen_rail_close
+Einfahrt verboten
+shinkansen_signals
+Signal
+Signals
+Signal
+traffic_light
+Ampeln
+#_____________________________________tree______________________________________
+#_____________________________________tree______________________________________
+tree1
+Linde\n
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
+PowerTunnel
+Erdkabel
+shinkansen_tunnel
+Shinkansentunnel
+wa-contrete-tunnel-track
+moderner Tunnel
+wa-stone-tunnel-road
+Straßentunnel (Klinker)
+wa-stone-tunnel-track
+Tunnel (gemauert)
+wa-stone-tunnel-water
+Kanaltunnel
+wa-tunnel-road
+moderner Straßentunnel
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
-Buchtransporter
-Serj/H-Trans Stückguttransporter
-CoolerTruck
-Kühllaster
-DAIHATSU POST VAN
-Daihatsu Post Van
+Book_Trike
+Dreirädriger Lieferwagen
+Bretterwagen
+VT Wien Rungenwagen Bretter
+Carelia
+Hochseefisher Carelia
+CoolingContainer
+Kühlcontainerwagen
+CoolingWaggon
+Kühlwagen
+EnCo_Container_Ship
+Containerschiff
+EnCo_Oil_Ship
+Öltanker
+EnCo_Paper_Ship
+EnCo Papier-Frachter
+EnCo_Wood_Ship
+EnCo Holz-Frachter
+Erzanhaenger
+H-Trans Erzanhänger
+Erztransporter
+H-Trans Lkw MK2
+Holzanhaenger
+Langholzanhänger
+Holztransporter
+H-Trans Holztransporter
 Holzwagen
 H-Trans Rungenwagen Holz
-Holzwagen2
-Holzwagen
-Horsebookscariage
-Bücherkutsche
-Horsepassengerscariage
-Kutsche
-Horses
-Pferdegespann
-Horsewoodcariage
-Pferdekarren für Holz
+jinriki
+Rikscha
+JRE-Mp233
+JRE Mp233 Motorwagen
+JRE-Mpp233
+JRE Mp233 Motorwagen
+JRE-T233
+JRE T233
+JRE-T233cb
+JRE T233 Kopf
+JRE-Tcf233
+JRE T233 Ende
+logs
+Stämme
+Mailcontainerwagon
+Postcontainer
+OceanArrow
+Meerespfeil
+Oelanhaenger
+Ölanhänger
 Oilbarge
 Ölbarke
-Solar Car DANKICHI
-Solarauto Dankichi
+OldOil
+alter Ölwagen
+PonyPost
+berittener Postbote
+PostBike
+Brieftäger mit Motorrad
+PostVan
+Postauto
+Serj-Mini
+Sammeltaxi
 Steamer
 Dampfschiff
-TankerTruck
-Tanklastwagen
+T21_bus
+Ford T21
+Tanklastzug
+H-Trans Tanklastzug
+Trike
+Schüttgutdreirad
 Tugboat
 Schleppkahn
+Turgot
+Brigantine Trugot
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road
@@ -418,15 +740,43 @@ concrete_sleeper_track
 Betonschwellen
 dirt_road
 Feldweg
+elevated_shinkansen_rail
+aufgeständerte Shinkansenstrecke
+elv_asphalt_road
+aufgeständerte Straße
 gavel_road
 Schotterpiste
+green_fence
+Zaun
+green_fence2
+doppelter Zaun
 Powerline
 Stromleitung
+river
+Fluss
+river2
+Fluss (nicht schiffbar)
 runway_modern
 Moderne Start- und Landebahn
+sand_track
+Schienen ohne Unterbau
+shinkansen_track
+Shinkansengleis
+suburb_road
+Vorortstraße
 taxiway
 Taxiway
 tramrailway
 Straßenbahnschienen
 wooden_sleeper_track
 Holzoberbau
+#__________________________________way-object___________________________________
+#__________________________________way-object___________________________________
+Pylon
+Freileitung in Stadt
+road_arcade
+überdachte Fußgängerzone
+shinkanesen_overhead
+Oberleitung
+SlowOverheadpower
+Oberleitung (geringe Geschwindigkeit) 

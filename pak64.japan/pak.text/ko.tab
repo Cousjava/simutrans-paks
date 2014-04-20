@@ -1,46 +1,26 @@
-################################################################################
+§################################################################################
 #                                                                              #
 #                Simutrans Scenario Specific Translation File                  #
 #                             Scenario: pak64.japan                            #
-#                             Language: fr Francais                            #
-#                             Encoding: ISO-8859-1                             #
-#                            Font : Prop-Latin1.bdf                            #
+#                              Language: ko Korean                             #
+#                                Encoding: UTF-8                               #
+#                                Font : cyr.bdf                                #
 #                           Date Created: 20.04 2014                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - An_dz                                   #
 #                   note: Verified where all texts are shown                   #
-#                                  - Christophe                                #
-#                                    note:                                     #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
 #                                  - Flemmbrav                                 #
 #                                    note:                                     #
 #                                    - FrankP                                  #
 #                                    note:                                     #
-#                         Roman Schw�rer - Gotthardlok                         #
+#                               J. H. Lee - JHLee                              #
 #                                    note:                                     #
 #                                     - PTM                                    #
 #                                    note:                                     #
-#                           Sava Bogdanets - Sava2004                          #
-#                                    note:                                     #
-#                          Jean Beaudet - cagliostro_2                         #
-#                                    note:                                     #
-#                                  - coincoin42                                #
-#                                    note:                                     #
-#                        Lorenz Van Damme - gforcetheone                       #
-#                                    note:                                     #
-#                                    - gwalch                                  #
-#                                    note:                                     #
-#                                - jounior-fuchs                               #
-#                                    note:                                     #
-#                            Luc Mallet - luc.mallet                           #
-#                                    note:                                     #
-#                                     - mEGa                                   #
-#                            note: French translator                           #
-#                          Christophe Manaud - manaud                          #
-#                                    note:                                     #
-#                           Maxime Cheminel - maxime                           #
+#                             Olbarn Soebl - olbarn                            #
 #                                    note:                                     #
 #                                    - prissi                                  #
 #                                    note:                                     #
@@ -49,178 +29,232 @@
 #____________________________________bridge_____________________________________
 #____________________________________bridge_____________________________________
 ClassicRail
-Pont ferroviaire en b�ton
+콘크리트 철도 교량
 PowerBridge
-Pont � haute tension
+송전선 교량
 Schiffhebewerk
-Pont fluviale
+선박승강장치
 SteelRail
-Pont ferroviaire en acier
+철골구조 철도 교량
 ViaductRail
-viaduc ferroviaire
+벽돌 고가교
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 01_CITY
-Mairie
+시청
 02_CITY
-Mairie
+시청
 1headquarter
-Si�ge de votre entreprise!
+본사
 2headquarter
-Si�ge de votre entreprise!
+대형 본사
 3headquarter
-Si�ge de votre entreprise!
+다국적 회사 본사
 AirDepot
-Hangar
+1900년대 격납고
 AirStop
-Passerelle d'embarquement
+탑승구 교량
 AirTerminal477
-Terminal d'a�roport (1950)
+1950년대 공항 터미널
 BigPostOffice
-Grand Bureau De Poste
+대형 우체국
 BigTerminal477
-Grand Terminal
+대형 현대식 터미널
 BusStop
-Arr�t de bus
+버스 정류장
 CarDepot
-D�p�t pour v�hicules routiers
+자동차용 차고
 CarStop
-Zone de chargement
+화물하역장
 ChannelStop
-Port fluvial
+부두
+FreightShipStop
+부두
 FreightTrainStop
-Quai � marchandise
-IND_01_03
-Grand R�servoir De Gaz\n
+화물역
 leftShipStop
-Grue Hautes-Charges
+대형 화물 크레인
+LeuchtturmShipStop
+등대 선착장
 ModernAirTerminal477
-Terminal A�rien Moderne
+현대식 공항 터미널
+MonorailGround
+모노레일 차량기지 토대
 PlainAirStop
-Arr�t Pour Avions
+항공기 승강장
 PostOffice
-Bureau de poste
+우체국
 PostStop
-Bo�te aux lettres
+우체통
+rampShipStop
+보트 선착장
+rightShipStop
+잔교 있는 항구
 ShipDepot
-chantier naval
+조선소
+TowerMoistboy
+관제탑
 TrainDepot
-D�p�t de train
+철도 차량기지
 TrainStop
-quai couvert
+지붕있는 플랫폼
 TramDepot
-D�pot de Trams
-Viewtower
-Les japonnais aiment ce\ngenre de tour; elles sont de\nv�ritable atraction\ntouristique. Vous pouvez en\nvoir plus de 150 au Japon.\n
+노면전차 차량기지
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
-Ambulance
+구급차
 FordT
-Ford Mod�le T
+포드 T형
 green_car
-Voiture verte
+녹색 승용차
+Motorrad
+오토바이
+orange_bus
+SimCo 버스
+Pickup
+픽업트럭
+Roadster
+래그탑 로드스터
+yellow_car
+노란색 승용차
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 ChemicalPlant
-Usine chimique
+화학공장
 CHEMIST
-Pharmacie
+약국
 Druckerei
-Imprimerie
+인쇄소
 fish_pond
-Pisciculture
+낚시터
 fish_swarm
-Banc de poisson
+어장
+Geokraftwerk
+지열 발전소
 Nutzwald
-Exploitation foresti�re
+숲
 Oelbohrinsel
-Plate-forme p�troli�re
+해상유전
 Oelfeld
-Puits de p�trole
+유전
+Oelkraftwerk
+석유발전소
 Papierfabrik
-Papeterie
+제지 공장
 Pharmaceutics
-Pharmaceutique
-Sushiya
-Restaurant � Sushi
+제약회사
 Windkraftwerk
-Eolienne
+풍력발전소
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Buecher
-Livres
+책
 Chemicals
-Solvants
+화학물질
 fish
-Poisson
+물고기
 Gasoline
-Carburant
+가솔린
 Holz
-Bois
+목재
 Medicine
-Medecine
+약품
 None
-aucun
+아무것도 없음
 Oel
-P�trole
+석유
+Papier
+종이
 Passagiere
-Passagers
+승객
 Post
-Message
+편지
 PrintersInk
-Imprimerie
+인쇄기 잉크
+#__________________________________pedestrian___________________________________
+#__________________________________pedestrian___________________________________
+Couple
+커플
+Cyclist
+자전거운전자
+pedestrian_1
+보행자
+pedestrian_2
+보행자
+pedestrian_3
+보행자
+pedestrian_4
+보행자
+pedestrian_child
+어린이
+pedestrian_dog
+개
+Woman
+여성
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 choose_point
-balise de choix
+목적지 선택 표지판
 ChooseSignals
-Signal de choix de quai
+경로선택 신호등
+Endofchoosetrack
+플랫폼 선택 제외 표지
+LongBlockSignals
+장거리 블록 신호등
 Minimum80
-Vitesse minimale 80 km/h
+80km/h 속도제한표지
 NoEntry
-Rue unisens
+진입금지 표지
+preSignals
+프리시그널(2블럭앞을 위한)
+RailClose
+선로폐쇄표지
 Signals
-signaux
+철도 신호등
 traffic_light
-feux tricolores
+도로 신호등
+#_____________________________________tree______________________________________
+#_____________________________________tree______________________________________
+tree1
+나무\n
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
-Bretterwagen
-Wagon � planches VT Vienna
-Erzanhaenger
-Remorque � minerai de fer
-Erztransporter
-Camion � minerai de fer H-Trans
-Holzanhaenger
-Remorque � bois JET
-Holztransporter
-Camion � bois H-Trans
-Holzwagen
-Wagon � rondins H-Trans
-Oelanhaenger
-Remorque � p�trole
-Tanklastzug
-Camion-citerne � p�trole H-Trans
+Steamer
+증기선
+Tugboat
+SimCo 예인선
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road
-Route goudronn�e
+아스팔트 도로
 city_road
-Rue de la ville
+시내 도로
 cobblestone_road
-route pav�e
+자갈 도로
 concrete_sleeper_track
-voie de chemin de fer (traverses en b�ton)
+콘크리트 침목 철도
 dirt_road
-chemin de terre
+비포장 도로
 gavel_road
-route en terre battue
+자갈 도로
 Kanal
-canal
+운하
 Powerline
-ligne haute tension
+송전선
+river
+항해 가능한 강
+river2
+하천
 runway_modern
-piste
+활주로
+sand_track
+목재 침목 철도(모래노반)
+taxiway
+유도로
 wooden_sleeper_track
-voie de chemin de fer � traverses en bois
+목재 침목 철도(자갈노반)
+#__________________________________way-object___________________________________
+#__________________________________way-object___________________________________
+SlowOverheadpower
+전철 배전선

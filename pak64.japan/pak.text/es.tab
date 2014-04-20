@@ -1,0 +1,326 @@
+################################################################################
+#                                                                              #
+#                Simutrans Scenario Specific Translation File                  #
+#                             Scenario: pak64.japan                            #
+#                             Language: es Espanol                             #
+#                             Encoding: ISO-8859-1                             #
+#                            Font : Prop-Latin1.bdf                            #
+#                           Date Created: 20.04 2014                           #
+#                                                                              #
+#                                   authors:                                   #
+#                                    - An_dz                                   #
+#                   note: Verified where all texts are shown                   #
+#                                   - Diegote                                  #
+#                                    note:                                     #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
+#                                  - Flemmbrav                                 #
+#                                    note:                                     #
+#                                    - FrankP                                  #
+#                                    note:                                     #
+#                                    - JoanM                                   #
+#                                    note:                                     #
+#                                     - PTM                                    #
+#                                    note:                                     #
+#                                    - Paco_m                                  #
+#                                    note:                                     #
+#                          Albert Ruiz - albert.yuste                          #
+#                           note: Albert Ruiz - Zeno                           #
+#                                    - ispero                                  #
+#                                    note:                                     #
+#                                    - prissi                                  #
+#                                    note:                                     #
+#                              Xavier Paz - vilvoh                             #
+#                                    note:                                     #
+#                                                                              #
+################################################################################
+#____________________________________bridge_____________________________________
+#____________________________________bridge_____________________________________
+ClassicRail
+Puente ferroviario con vigas de cemento
+PowerBridge
+Líneas de Alta Tensión
+Schiffhebewerk
+Puente levadizo
+SteelRail
+Puente ferroviario con vigas de acero
+ViaductRail
+Viaducto de ladrillo
+#___________________________________building____________________________________
+#___________________________________building____________________________________
+01_CITY
+Ayuntamiento
+02_CITY
+Ayuntamiento
+1headquarter
+¡La oficinas centrales de tu compañía!
+2headquarter
+¡Las oficinas centrales de tu compañía!
+3headquarter
+¡El cuartel general de tu compañía!
+AirDepot
+Hangar de 1900
+AirStop
+Puente de embarque
+AirTerminal477
+Terminal de aeropuerto (1950)
+BigPostOffice
+Oficina de correos grande
+BigTerminal477
+Terminal moderna grande
+BusStop
+Parada de autobús
+CarDepot
+Cochera 
+CarStop
+Parada de mercancías
+ChannelStop
+Puerto fluvial
+FreightShipStop
+Muelle de mercancías
+FreightTrainStop
+Estación para mercancías
+IND_00_05
+Depósito de agua\nHasta la última gota del excente de la ciudad está guardado aquí,\npor eso no dejan subir a nadie.\nSeguro que más de uno metería los pies..\n
+leftShipStop
+Grúa de gran tonelaje
+LeuchtturmShipStop
+Puerto con faro
+ModernAirTerminal477
+Terminal aérea moderna 477
+MonorailGround
+Plataforma de monorraíl
+PlainAirStop
+Terminal de carga de aviones
+PostOffice
+oficina de correos
+PostStop
+Buzón de correos
+rampShipStop
+Rampa de carga para barcos
+rightShipStop
+Muelle con faro
+ShipDepot
+Astillero
+TowerMoistboy
+Torre de Control
+TrainDepot
+Cochera de trenes
+TrainStop
+Estación de tren
+TramDepot
+Cochera de tranvías
+#____________________________________citycar____________________________________
+#____________________________________citycar____________________________________
+Ambulanz
+Ambulancia
+FordT
+Ford T
+green_car
+coche negro
+Motorrad
+Motorista
+orange_bus
+bus naranja
+Pickup
+Camioneta
+Roadster
+yellow_car
+yellow_car
+coche amarillo
+#__________________________________dummy_info___________________________________
+#__________________________________dummy_info___________________________________
+factory_ChemicalPlant_details
+<title>Planta Química</title>\nEsta planta de procesado industrial manufactura productos químicos, a gran escala. El objetivo es crear nuevas materias mediante procesos químicos o biológicos. La instalaciones se dividen en unidades, las cuales tienen distintas funciones y aplican diferentes procesos, y se comunican mediante complejos sistemas de transporte de fluidos como cañerías o conductos.
+factory_Geokraftwerk_details
+<title>Central geotérmica</title>\n\nLa energía geotérmica es aquella que se obtiene mediante el aprovechamiento del calor del interior de la Tierra.\n\n\nEn áreas de aguas termales muy calientes a poca profundidad, se perfora a través fracturas naturales en las rocas. El agua caliente o el vapor pueden fluir de forma natural, o ser extraidos por bombeo. A continuación se incorpora el agua caliente al circuito, donde termina moviendo las turbinas que finalmente generan electricidad.\n\n\nCuando el agua ha perdido su calor, se vuelve a inyectar nuevamente por tanto el sistema no pierde su fuente de energía primaria, y siempre se mantiene en equilibrio.
+factory_Oelbohrinsel_details
+<title>Extracción del crudo</title>\nLa segunda mitad del siglo XX trajo consigo un hambre de petróleo - el consumo se doblaba cada década. Además de los recursos terrestres, el mar ofrecía también algunos depósitos de crudo, aunque no de fácil acceso.<br><br>\n\nLos pozos petrolíferos son estructuras construidas para explotar los recursos localizados en las plataformas continentales (profundidad entre 0 a 200 m.) Son ENORMES pero realmente nadie se da cuenta de ello. La mayor parte del la estructura está sumergida. También son enormemente costosas de mantener. Los pilares que sustentan la plataforma a menudo estan huecos, actuando así como depósitos extra para el almacenamientos del crudo extraído.<br><br>\n\nLa plataforma petrolífera más grande del mundo, Statfjord B, fue construida en Noruega. Su peso ronda las 800.000 toneladas y mide 192 m., pero si contamos la torre de extracción sumaría 80 metros más.
+factory_Oelfeld_details
+<title>Campos petrolíferos</title>\nEl petróleo es una materia cruda usada para pinturas, lubricantes y también como combustible antes del cambio del siglo XIX al XX. En ese momento, comenzó a ganar importancia con la aparición de los motores de combustión y los automóviles.<br><br> El petróleo es un líquido viscoso consistente en numerosos hidrocarburos. No está claro como surgieron los depósitos de petróleo, pero probablemente fue un proceso similar al de la creación de los depósitos de carbón con algunas condiciones extra - bajo gran presión y sin oxígeno. Están bajo tierra, a gran profundidad. El petróleo situado allá se encuentra mezclado con gas a gran presión, lo que facilita el bombeo a la superficie.
+factory_Oelkraftwerk_details
+<title>Generación de Energía por Termodinámica</title>\n\nEsta planta es empleada para la generación de energía eléctrica a partir de la energía liberada en forma de calor, por la combustión de un combustible fósil como el petróleo. Este calor es empleado por un ciclo termodinámico convencional para mover un alternador y producir energía eléctrica. Este tipo de generación eléctrica contamina mucho, ya que libera dióxido de carbono durante el proceso de combustión.
+factory_Papierfabrik_details
+<title>Fábrica de Papel</title>\nHasta aquí llegan diariamente toneladas de madera y astillas, que tras un proceso mecánico de triturado, se convierte en pulpa de celulosa, la base para producir las bobinas de papel. Durante este proceso es cuando se genera ese mal olor tan característico de este tipo de industrias. 
+factory_Pharmaceutics_details
+<title>Farmacéutica</title>\nEl complejo consta de varios edificios y laboratorios donde se desarrollan las vacunas y curas para su uso en humanos y animales. La fábrica produce fundamentalmente vacunas contra la malaria y productos de veterinaria.
+factory_Windkraftwerk_details
+<title>Molinos de Viento</title>\n El primer parque eólico fue construido en Escocia en 1885 por el prof. James Blyth de Strathclyde. Aparentemente no tuvo mucho éxito, comparado con la energía hidroeléctrica y la idea quedó en el olvido durante 60 años, excepto en Dinamarca. El primero modelo moderno fue construido en el año 1957 en Alemania (modelo 2 palas) y Dinamarca (3 palas). Sin embargo, el espaldarazo definitivo llegó a raíz de la crisis del petróleo, y tras ello los distintos gobiernos empezaron a subvencionar este tipo de energías renovables.
+#____________________________________factory____________________________________
+#____________________________________factory____________________________________
+ChemicalPlant
+Planta química
+CHEMIST
+Farmacia
+Druckerei
+Imprenta
+fish_pond
+Estanque de pesca
+fish_swarm
+Banco de peces
+Geokraftwerk
+Planta geotérmica
+Nutzwald
+Explotac. forestal
+Oelbohrinsel
+Plataforma petrolífera
+Oelfeld
+Pozo de petróleo
+Oelkraftwerk
+Central termoeléctrica de fueloil
+Papierfabrik
+Fábrica de papel
+Pharmaceutics
+Ind. Farmacéutica
+Windkraftwerk
+Central eólica
+#_____________________________________good______________________________________
+#_____________________________________good______________________________________
+Buecher
+Libros
+Chemicals
+Prod. químicos
+fish
+Pescado
+Gasoline
+Gasolina
+Holz
+Madera
+Medicine
+Medicinas
+None
+Nada
+Oel
+Petróleo
+Papier
+Papel
+Passagiere
+Pasajeros
+Post
+Correo
+PrintersInk
+Tinta ind.
+#__________________________________pedestrian___________________________________
+#__________________________________pedestrian___________________________________
+Couple
+Pareja
+Cyclist
+Ciclista
+pedestrian_1
+Peatón_1
+pedestrian_2
+Peaton_2
+pedestrian_3
+Peatón_3
+pedestrian_4
+Peatón_4
+pedestrian_child
+Niño
+pedestrian_dog
+Peaton con perro
+Woman
+mujer
+#___________________________________roadsign____________________________________
+#___________________________________roadsign____________________________________
+choose_point
+Señal de selección de parada
+ChooseSignals
+Señales de selección de anden
+Endofchoosetrack
+Excluir anden
+LongBlockSignals
+Señales de bloqueo de tramo largo
+Minimum80
+Velocidad mínima 80 km/h
+NoEntry
+Prohibido
+preSignals
+Preseñales (ambos sentidos)
+RailClose
+Vía muerta
+Signals
+Señales
+traffic_light
+Semáforos
+#_____________________________________tree______________________________________
+#_____________________________________tree______________________________________
+tree1
+Roble\n
+#____________________________________vehicle____________________________________
+#____________________________________vehicle____________________________________
+Book_Trike
+Furgoneta de reparto
+Bretterwagen
+VT Vienna Vagón para tablones
+EnCo_Container_Ship
+Carguero para contenedores
+EnCo_Oil_Ship
+Carguero para petroleo
+EnCo_Paper_Ship
+Carguero para papel
+EnCo_Wood_Ship
+Carguero para madera
+Erzanhaenger
+Remolque hierro H-trans
+Erztransporter
+Camión para hierro H-trans
+Holzanhaenger
+JET remolque para madera
+Holztransporter
+Camión para madera H-trans
+Holzwagen
+Vagón para troncos de madera
+logs
+Balizas
+Mailcontainerwagon
+Vagón de contenedores de correo.
+Oelanhaenger
+Remolque petróleo H-trans
+Oilbarge
+barcaza para petróleo
+OldOil
+Vagoneta petróleo
+Steamer
+Barco a vapor
+T21_bus
+Autobus T 21
+Tanklastzug
+Camión cisterna
+Trike
+Camión Trike
+Tugboat
+Buque Remolcador
+#______________________________________way______________________________________
+#______________________________________way______________________________________
+asphalt_road
+Carretera asfaltada
+city_road
+carretera urbana
+cobblestone_road
+Carretera adoquinada
+concrete_sleeper_track
+Vía con traviesas de cemento
+dirt_road
+Pista forestal
+gavel_road
+Carretera de gravilla
+Kanal
+Canal acuático
+Powerline
+Tendido eléctrico
+river
+Cascada
+river2
+Chorrera
+runway_modern
+Pista de aterrizaje
+sand_track
+Vías de ferrocarril con arena
+taxiway
+Pista de maniobras
+wooden_sleeper_track
+Vía con traviesas de madera
+#__________________________________way-object___________________________________
+#__________________________________way-object___________________________________
+SlowOverheadpower
+Catenaria de baja velocidad

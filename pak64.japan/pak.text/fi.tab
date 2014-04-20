@@ -1,42 +1,300 @@
 ################################################################################
 #                                                                              #
 #                Simutrans Scenario Specific Translation File                  #
-#                              Scenario: pak.japan                             #
+#                             Scenario: pak64.japan                            #
 #                              Language: fi Suomi                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 25.01 2011                           #
+#                           Date Created: 20.04 2014                           #
 #                                                                              #
 #                                   authors:                                   #
+#                                    - An_dz                                   #
+#                   note: Verified where all texts are shown                   #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
 #                              Esa Lindroos - Esa                              #
 #                                    note:                                     #
-#                              Frank Penz - FrankP                             #
+#                                  - Flemmbrav                                 #
+#                                    note:                                     #
+#                                    - FrankP                                  #
+#                                    note:                                     #
+#                                     - PTM                                    #
+#                                    note:                                     #
+#                                    - alluk                                   #
 #                                    note:                                     #
 #                        Jaakko Mäkinen - jaakko.makinen                       #
 #                                    note:                                     #
-#                          Markus Pristovsek - prissi                          #
+#                                    - prissi                                  #
 #                                    note:                                     #
 #                                                                              #
 ################################################################################
+#____________________________________bridge_____________________________________
+#____________________________________bridge_____________________________________
+ClassicRail
+Betoninen rautatiesilta
+PowerBridge
+Voimalinjasilta
+Schiffhebewerk
+Laivanosturi
+SteelRail
+Teräksinen rautatiesilta
+ViaductRail
+Kivinen rautatiesilta
+#___________________________________building____________________________________
+#___________________________________building____________________________________
+01_CITY
+Kaupungintalo
+02_CITY
+Kaupungintalo
+1headquarter
+Yhtiösi  pääkonttori
+2headquarter
+Yhtiösi pääkonttori
+3headquarter
+Yhtiösi pääkonttori
+AirDepot
+Hangaari
+AirStop
+Lastaussilta
+AirTerminal477
+Lentoterminaali
+BigPostOffice
+Suuri postitoimisto
+BigTerminal477
+Suuri terminaali
+BusStop
+Bussi pysäkki
+CarDepot
+Autotalli
+CarStop
+Lastaus asema
+ChannelStop
+Kanavalaituri
+FreightShipStop
+Rahtilaituri
+FreightTrainStop
+Tavara-asema
+IND_00_05
+Vesivarasto\n
+IND_01_03
+Suuri kaasusäiliö\n
+leftShipStop
+Raskas nosturi
+LeuchtturmShipStop
+Majakka
+ModernAirTerminal477
+Modermi lentoterminaali
+MonorailGround
+Monorail-perustus
+PlainAirStop
+Lentokonepysäkki
+PostOffice
+Postitoimisto
+PostStop
+Postilaatikko
+rampShipStop
+Ramppi
+rightShipStop
+Laituri
+ShipDepot
+Telakka
+TowerMoistboy
+Lennojohtotorni
+TrainDepot
+Veturitalli
+TrainStop
+Katettu asema
+TramDepot
+Raitiovaunutalli
+#____________________________________citycar____________________________________
+#____________________________________citycar____________________________________
+Ambulanz
+Ambulanssi
+FordT
+T-ford
+green_car
+Vihreä auto
+Motorrad
+Moottoripyörä
+orange_bus
+Oranssi pakettiauto
+Pickup
+Lava-auto
+Roadster
+Vanha auto
+yellow_car
+Keltainen auto
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
+ChemicalPlant
+Kemikaalitehdas
+CHEMIST
+Apteekki
+Druckerei
+Kirjapaino
 fish_pond
-Kala-allas
+Kalalampi
 fish_swarm
 Kalaparvi
+Geokraftwerk
+Maalämpövoimala
+Nutzwald
+Viljelysmetsä
+Oelbohrinsel
+Öljynporauslautta
+Oelfeld
+Öljykenttä
+Oelkraftwerk
+Öljyvoimala
+Papierfabrik
+Paperitehdas
+Pharmaceutics
+Lääketehdas
 Rice_Mill
 Riisimylly
+Windkraftwerk
+Tuulivoimala
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
+Buecher
+kirjoja
+Chemicals
+kemikaaleja
+fish
+kalaa
+Gasoline
+bensiiniä
+Holz
+tukkeja
+Medicine
+lääkkeitä
+None
+tyhjä
+Oel
+öljyä
+Papier
+paperia
+Passagiere
+matkustajaa
 Post
-Postia
+postia
+PrintersInk
+mustetta
 raw-rice
 raakariisiä
 rice
 riisiä
-#_____________________________________tree______________________________________
-#_____________________________________tree______________________________________
-Sakura
-Kirsikkapuu\n
+#__________________________________pedestrian___________________________________
+#__________________________________pedestrian___________________________________
+Couple
+Pariskunta
+Cyclist
+Pyöräilijä
+pedestrian_1
+Jalankulkija
+pedestrian_2
+Jalankulkija
+pedestrian_3
+Jalankulkija
+pedestrian_4
+Jalankulkija
+pedestrian_child
+lapsi
+pedestrian_dog
+koira
+Woman
+Nainen
+#_________________________________program_text__________________________________
+#_________________________________program_text__________________________________
+monorail
+Monorail-rata
+#___________________________________roadsign____________________________________
+#___________________________________roadsign____________________________________
+choose_point
+Asemanvalintapiste
+ChooseSignals
+Valintaosoittimet
+Minimum80
+Vähimmäisnopeus 80 km/h
+NoEntry
+Pääsy kielletty
+preSignals
+Esiosoittimet
+RailClose
+Radan pääte
+Signals
+Ratailmaisimet
+traffic_light
+Liikennevalot
+#____________________________________vehicle____________________________________
+#____________________________________vehicle____________________________________
+Book_Trike
+Kirjarekka
+Bretterwagen
+VT Vienna lautavaunu
+EnCo_Container_Ship
+EnCo-kappalerahtialus
+EnCo_Oil_Ship
+EnCo-öljytankkeri
+EnCo_Wood_Ship
+EnCo-puurahtialus
+Erzanhaenger
+H-Trans rautamalmiperävaunu
+Erztransporter
+H-Trans rautamalmirekka
+Holzanhaenger
+H-Trans tukkiperävaunu
+Holztransporter
+H-Trans tukkirekka
+Holzwagen
+H-Trans puutavaravaunu
+logs
+tukkeja
+Oelanhaenger
+H-Trans öljysäiliöperävaunu
+Oilbarge
+Öljyproomu
+OldOil
+Vanha öljyvaunu
+Steamer
+Höyrylaiva
+Tanklastzug
+H-Trans öljysäiliöauto
+Trike
+Trike hiekka-rekka
+Tugboat
+Hinaaja
+#______________________________________way______________________________________
+#______________________________________way______________________________________
+asphalt_road
+Asfalttitie
+city_road
+Tie
+cobblestone_road
+Mukulakivitie
+concrete_sleeper_track
+Rautatie betonipalkeilla
+dirt_road
+Soratie
+gavel_road
+Öljysoratie
+Kanal
+Kanava
+Powerline
+Voimalinja
+river
+Kulkukelpoinen joki
+river2
+Puro
+runway_modern
+Kiitorata
+sand_track
+Rautatie puupalkeilla (hiekkapohjainen)
+taxiway
+Rullausalue
+wooden_sleeper_track
+Rautatie puupalkeilla
+#__________________________________way-object___________________________________
+#__________________________________way-object___________________________________
+SlowOverheadpower
+Alhaisen nopeuden ajolanka

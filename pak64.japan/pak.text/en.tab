@@ -1,17 +1,17 @@
 ################################################################################
 #                                                                              #
 #                Simutrans Scenario Specific Translation File                  #
-#                              Scenario: pak.japan                             #
+#                             Scenario: pak64.japan                            #
 #                             Language: en English                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 28.01 2011                           #
+#                           Date Created: 20.04 2014                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Alexander Brose - AlexB                           #
 #                                    note:                                     #
-#                                 André - An_dz                                #
-#                 note: Sempre verifica aonde os textos estão!                 #
+#                                    - An_dz                                   #
+#                   note: Verified where all texts are shown                   #
 #                         Klaus Thenmayer - Bitfreezer                         #
 #                                    note:                                     #
 #                                  - Christian                                 #
@@ -22,13 +22,15 @@
 #                                    note:                                     #
 #                                   - Combuijs                                 #
 #                                    note:                                     #
-#                             Michael Hohl - Cruzer                            #
-#                       note: Administrator pak192.comic                       #
+#                                    - Cruzer                                  #
+#                 note: Ex-Entwickler und Gründer pak192.comic                 #
 #                             Dirk W. - DirrrtyDirk                            #
 #                                    note:                                     #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
-#                              Frank Penz - FrankP                             #
+#                                  - Flemmbrav                                 #
+#                                    note:                                     #
+#                                    - FrankP                                  #
 #                                    note:                                     #
 #                                    - GerdW                                   #
 #                                    note:                                     #
@@ -36,30 +38,48 @@
 #                                    note:                                     #
 #                           Hansjörg Malthaner - Hajo                          #
 #                                    note:                                     #
+#                                 - IgorEliezer                                #
+#                                    note:                                     #
 #                              Jaroslaw - Jaroslaw                             #
+#                                    note:                                     #
+#                                   - Leartin                                  #
 #                                    note:                                     #
 #                             Marcus Haupt - Marcus                            #
 #note: if I´m not available by email to proximity.de try mail@marcus-haupt.de (#
+#                                     - MaxK                                   #
+#                                    note:                                     #
 #                                   - Nico192                                  #
+#                                    note:                                     #
+#                                 - Nicole_Chen                                #
+#                                    note:                                     #
+#                                     - PTM                                    #
 #                                    note:                                     #
 #                                    - Paco_m                                  #
 #                                    note:                                     #
 #                           Sava Bogdanets - Sava2004                          #
 #                                    note:                                     #
+#                             Simon Small - SimonS                             #
+#                                    note:                                     #
 #                          Susanna Björverud - Susanna                         #
 #                                    note:                                     #
-#                                   - TheHood                                  #
+#                            James P. Hood - TheHood                           #
 #                                    note:                                     #
-#                           Timothy Baldock - Timothy                          #
+#                                   - Timothy                                  #
 #                                    note:                                     #
 #                       Venkatesh Parthasarathy - Venkat                       #
+#                                    note:                                     #
+#                                   - Xelofino                                 #
+#                                    note:                                     #
+#                          Albert Ruiz - albert.yuste                          #
+#                           note: Albert Ruiz - Zeno                           #
+#                            Carl Baker - carlbaker                            #
 #                                    note:                                     #
 #                                  - enternald                                 #
 #     note: Need more lt translators. Eiti ? http://simutrans-germany.com/     #
 #                               Florian - floppy                               #
 #                                    note:                                     #
-#                            Günter Beine - gebeine                            #
-#                        note: maintainer pak128.german                        #
+#                                   - gebeine                                  #
+#                        note: maintainer PAK128.german                        #
 #                        Lorenz Van Damme - gforcetheone                       #
 #                                    note:                                     #
 #                          James E. Petts - jamespetts                         #
@@ -72,15 +92,19 @@
 #                                    note:                                     #
 #                             Mark Knoester - mark                             #
 #                                    note:                                     #
+#                          Michel Vorenhout - michelv                          #
+#                                    note:                                     #
 #                              Markus Rex - msrex                              #
 #                                    note:                                     #
 #                              Tomá? Kube? - napik                             #
 #                                    note:                                     #
+#                                   - neroden                                  #
+#                               note: Programmer                               #
 #                                    - petter                                  #
 #                                    note:                                     #
 #                             P. Hamming - phamming                            #
 #                                    note:                                     #
-#                          Markus Pristovsek - prissi                          #
+#                                    - prissi                                  #
 #                                    note:                                     #
 #                                     - sdog                                   #
 #                                    note:                                     #
@@ -94,60 +118,262 @@
 #                         note: maintainer pak96.comic                         #
 #                                 - transporter                                #
 #                                    note:                                     #
+#                              Jon - viewofheaven                              #
+#                                    note:                                     #
 #                              Xavier Paz - vilvoh                             #
 #                                    note:                                     #
 #                         Tomá? Vrbický - vrbicky_tomas                        #
 #                     note: Don´thurry up! Death is faster.                    #
 #                            Vladimír Slávik - vsys                            #
-#                             note: Vladimír Slávik                            #
+#                                    note:                                     #
 #                           Michael Olbricht - whoami                          #
 #                                    note:                                     #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
 #____________________________________bridge_____________________________________
+asphalt_bridge
+Concrete highway bridge
 ClassicRail
-Concrete rail bridge
-ClassicRoad
-Concrete road bridge
+Steel beam rail bridge
+PowerBridge
+Power Bridge
+Schiffhebewerk
+Ship Hoist
+shinkansen_bridge
+Shinkansen bridge
+shinkansen_ramp
+Shinkansen ramp to elevated way
+steel_truss_asphaltroad
+steel truss bridge
 SteelRail
 Steel girder rail bridge
+suburb_road_bridge
+Urban concrete bridge
+ViaductRail
+brick viaduct
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 01_CITY
 Town hall
+02_CITY
+Town Hall
+1headquarter
+Headquarters
+2headquarter
+bigger headquarters
+3headquarter
+International company headquarters
+4headquarter
+Headquarters
+5headquarter
+Headquarters
+AirDepot
+Old Hangar
+AirStop
+Jetway
+AirTerminal477
+Airport Terminal (1950)
 Baseball_Arena
 Baseball Stadium\n
+Big_black_monument
+Monolith
+Big_Shrine
+big Shinto-shrine\n\nFormer state religion (the emperor is still head) it is there for the people everyday needs. You go there to pay the god (literally) for better marks in school are a nicer husband.
 Big_Temple
-Large Shinto Shrine\n
+large Shinto-shrine\n\nwhere weddings and other rites are performed. Especially at new year everyone will be at some shrine. At most other times the small souvenir shops stand on the way to it are almost more attractive.
+BigPostOffice
+Large Post Office
+BigTerminal477
+Big modern terminal
+Bus_Stop_with_Roof
+roofed bus stop
+BusStop
+Bus stop
+CarDepot
+Depot for road vehicles
+CarStop
+freight yard
+ChannelStop
+Channel dock
 City_Castle
 City Castle\n
+COM_30_01
+Rice paddy, a common sight in the outskirts.
+COM_30_02
+Rice paddy, a common sight in the outskirts.
 COM_30_03
-Students work in these\nsmall 24h convenience\nstores.\n
+Parking lot. Only 100 Yen a day (even the bus ticket to the centre costs more than twice).
+COM_30_04
+"Combini" a small convenience store. Open 24h, an ATM, a toilet, a huge Manga supply, and all kinds of tasty prepared cold and warm foods. Most Japanese singles depend on them, instead of cooking. Usually manned by male students.
+COM_30_05
+Family restaurant, which is not part of a chain; hence cheaper and with better taste. The picture menu servers all kind of japanese and western style food.
+COM_30_08
+A small park for too many people living around it.
+COM_30_09
+Pachinko, the Japanese Flipper. Enter and and the noise may pierce your eardrums. Despite gambling strongly regulated in Japan, Pachinko let you win trivia which are exchange outside back into money. Children have died in cars while their mother gambled inside for hours.
+COM_30_10
+Banks build in the 30ies: Even at that age their was already a global finacial institution architectural style.
+COM_30_11
+Zamada denki, one big electronic chain. Things you can buy here will see the western markets six month later if ever.
+COM_30_12
+The best shopping mall of the town: Gucci, Versace or whatever has a good brand name. Here they buy it like crazy for twice of the price elsewhere. So a valuable help to recover the domestic and Italian economy.
+COM_30_14
+H-Trans headquarter, in top location. All employees enjoy at least a full square meter of desk as their home for the 14 hour office days.
+COM_30_16
+Business hotel, a cheap and usually good place to spend a night even when you are not on business. 4000 yen includes a breakfast, when it is ok for you to walk five minutes from the main station.
+COM_30_17
+Highly condensed city buildigns. If you have not 100% eyesight it is almost impossbile to find the sign where you want to go.
+COM_30_18
+This building is called (like many other buildings) by a name, in this case Alex. Aresu-biru (how it is written japanese= is the home of manz different company offices.
+COM_30_19
+This intelligent office building has special events throughout the year. On holidays, or for a large fee, the maintenance staff will make sure the offices are lighted or darkened to form pictures on the sides. This night they show Gundam.
 COM_31_03
-This big 24h convenience\nstore replace the\nsupermarket in many small\nvillages.\n
+Still a parking lot. But soon construction will start.
+COM_31_04
+A very small convenience store. Still part of one of the seven national chains, this one is so small, it does not even open 24/7.
+COM_31_05
+A chain family restaurant: If you saw one menu you know them all. Still the food is tasty, and they feature hamburger steak and other western style food.
+COM_31_06
+Mottanai, do not waste! A very Japanese motto and consequently there are plenty of resale shops. A bike for 3000 yen (less than a tenth of a month tickets) is easily found.
+COM_31_11
+Two office buildings of not so famous Japanese companies. Nameless employees work 12 hour days for their masters, although this includes the lunch break in the restaurants downstairs.
+COM_31_12
+Japan was once the largest and is at the very top of shopping nations worldwide. Open every day from 10 to 10, japanese go shopping to relax. If there is a holiday on a Sunday, it will be shifted to Monday, so even working people have more chances to shop.
+COM_31_13
+Since shopping is important for Japanese (even though there is little place in the houses) there are plenty of shopping centres. This one has an integrated parking place.
+COM_31_14
+Closely packed, in the underground floor two restaurant, ground floor some shops with show rooms, the above a music school, another restaurant , a drug store and in between some apartments. (You be better blind and deaf to sleep there). 
+COM_31_15
+Many offices and shops. Thousands of signs at the outside tell Japanese (and any foreigner with excellent reading skills) what is here. You get bonus points if you can make it to the okonomiyaki restaurant in the third floor.
+COM_31_16
+A large shooping mall, with an excellent food court (about 17 restaurants of all stzles, italien Pizza to Fugu sushi) occupies to top two floors.
+COM_31_17
+Nowadays normal: A large screen. But on this one you can see yourself. Mail the image to this address.
+COM_31_18
+Not enough place anymore for shopping malls. And darkness occurs here only if there is a total blackout.
+COM_31_19
+With such condensed buildings you have to rely on elevators. The emergency stairs are shared between three buildings and access is really emergencies only.
+COM_32_01
+Poster do not save yens, go shopping!
 COM_32_02
-You will find these vending\nmachines everywhere in\nJapan.\n
+You will find these vending machines everywhere in Japan, selling hot soup, ramen, or even used underwear from girls. Nothing what thez do not sell.
+COM_32_03
+Rice paddy, an often sight in the suburbs.
+COM_32_04
+The CCTV recordings of these "Combini" are frequently sought ofter. Not because of rare holdups. No they are so frequent one will be almost every on the epi-centre of a earthquake and show how the goods tumble to the floor (or not).
+COM_32_05
+Traditional japanese restaurant. Bring time (about two hours) and money (more than 3000 yen) and you will rewarded with a excellent food experience. Since the menu is in hand-written japanese, a japanese friend is highly recommended too.
+COM_32_07
+Commercial absolutely non-christian wedding chapel. Ok, there is something with will slightly resemble a mass, but only a Walt Disney version of it. This is the only Christian experience for a typical japanese in their life.
+COM_32_12
+This architecture was the latest in the 1930ies. But bringing down such a stone house was too expensive. And in the 2000 retro was chic again. And so there are only high-prized brands in this small exclusive shopping centre.
+COM_32_15
+The streetlamps throw shados on the streets - especially during night times. It seems there cannot be too much advertising here.
+COM_32_16
+Nobody really remembers what this company is famous for; but everybody remembers the famous Christmas illumination, designed each year by a local school.
+COM_32_19
+Advertisment signage illuminates the night: Even when after Fukushima energy saving was the rage: One third of them never went dark.
+COM_33_02
+All vegetarian food in Kyoto fashion. Very tasty, even steak lovers will not miss anything.
+COM_33_04
+A small cloth shop, selling hand dyed blueish cloths and kimono.
+COM_33_05
+Sweet shop with tea house. But compared to western products those are not so sweet. They are made from sweet rice (mochi), red beans, chestnuts, and green tea. Try them out!
+COM_33_06
+A bicycle mechanic has moved into the old forge many years ago.
+COM_33_07
+An real estate shop, still waiting for the next bubble. Its neighbor is a hand towel shops: Very important to clear sweat when outside in the heat. And the reason why almost no japanese toilet has towels.
 COM_33_08
-Here was the commercial\nheart of the old city. These\nwooden shops had\neverything you would need.\n
+Here was the commercial heart of the old city. These wooden shops had everything you would need.
+COM_33_10
+Japanese variation of billboard architecture.
+COM_34_07
+Outside boring building, inside a barber. Even old men color their hair. And if they want to go blond: With their strong black the result is a rather punky orange.
+ControllerOffice
+Controller's office
+Disneyland
+Disneyland\n\nTokyo's most important attraction (according to Japanese).
 Driving_School
-Driving School\n
+Driving School\n\nIndeed, you learn driving (and take the test) on this fenced in area (in urban areas also on rooftops). Complete with a fake railroad crossing.
+FastTrainStop
+modern platform
+FreightShipStop
+freight dock
+FreightTrainStop
+Freight platform
+GlassStripeHall
+50ies station hall
 Hospital
 General Hospital\n
+IND_00_05
+Water storage: The best of chlorine and pesticide. Most get their Water rather from bottles.
+IND_01_03
+One of the rare gas storages. Most places get their gas by bottles per truck.
 IND_30_01
 Derelic rice field, searching\nfor a real estate buyer.\n
+IND_30_10
+Powerstation for the local tramwaz network.
+IND_30_17
+This semiconductor research institute (and similar facilities) were one of the main contributors to the global rise of the the Japanese economy in the 80ies. However, a inspiring architecture is absent.
 IND_31_01
-Only in rural japan you will\nsee such mobile base\nstations. Inside towns\nthere are microcells,\nfeeded from the electical\npylons.\n
+Only in rural japan you will see such mobile base stations. Inside the towns Japan telecom companies use microcells. These feeded from the electical pylons.
+IND_31_02
+This is the local junkyard. In the corner close to the wall there is a huge steel barrel with a hole in its side. Here all the combustible rubbish (collected on Mondays and Thursdays this year) is burned to have less volume. So on Saturdays, the Japanese countryside often is with a haze from such places, and the soil around has have higher dioxine concentrations than in Seveso.
+IND_31_07
+This water tower supplies the neighbouring apartments with enough pressure. No need to build larger supply lines.
+IND_31_08
+This is the local filling depot for LPG. The bootle will be put on small pickups and then brought to the houses. Japan houses use LPG for hot water and cooking, since the electric mains often have only 100V and 35A. Enough to trip the main fuse every second week or so, when using water cooker, toaster and air conditioner at once.
+IND_31_09
+The local soy sauce brewery. On a hot humid summer day not the best neighbourhood if you have a sensitive nose.
+IND_31_10
+Ground receiver to feed the local cable television.
+IND_31_11
+Factory for optics. Even now Made in Germany is a brand in Japan, despite their long domination for consumer optics. And so hence you still find "Lenses calculated in Germany" even though almost all the work done here.
+JPN_Hydrangea_Temple
+Hydrangea temple\n\nFrom April to late October enchant the Hydrangea all visitors. Several meter high flower walls are a sigh, next to the ancient Buddhist temple.
+JPN_Zen_Temple1
+Zen temple\n\nThis is the main temple of the Zen Buddhist. Visitors are invited to meditate in the famous stone garden, which are raked every morning a anew.
 Kasan
 Volcano\n\nThis grandiose spectacle\nattracts thousands of\nvisitors each year.\nDo not miss the hotsprings at the bottom!
+LargeHall
+Triangular large station hall
+leftShipStop
+Docks with contrainer crane
+LeuchtturmShipStop
+Dock with lighthouse
+LocalTrainStop
+local train platform
+MediumRoundHall
+large round station hall
+ModernAirTerminal477
+Modern air terminal
+ModernBigPostOffice
+modern large Post office
+MonorailGround
+Monorail Depot Foundation
+Monument_for_477
+\n\nMonument for 477, who has initially made many graphics for Freetrain which were reused in the Japanese Simutrans set.
+Monument_for_Hajo
+\n\nMonument for Hajo, founder of Simutrans.
+Observatory_(by_MHz)
+\n\nMhz contributed a lot of graphics to this (and many other sets too).
+OldPostOffice
+traditonal Post office
+PlainAirStop
+parking position
 PostOffice
-A traditional japanese post office
+Post office
+PostStop
+Bus stop and post box
+rampShipStop
+Ramp to docks
 RES_30_01
-small rice field in between\nhouses\n
+A small rice field between houses.
 RES_30_02
-small house with a rice\nfield\n
+A small house with a rice field. Corrugated roof and outdoor plumbing are not too unusual in rural Japan.
 RES_30_03
-a proud old farmhouse\n
+A proud old farmhouse in the shade of some trees.
 RES_30_04
 generous house with a\ngarden\n
 RES_30_10
@@ -170,64 +396,278 @@ RES_32_02
 traditional wooden slate\ncovered house\n
 RES_32_03
 They still grow their own\nvegetables\n
+rightShipStop
+Quay with pier
+ShinkansenDepot
+Shinkansen depot
+ShinkansenStop
+Station
+ShipDepot
+Shipyard
+Small_Shrine
+Small Shrine\n\nfound in any neighbourhood. Does not have a full time priest. People meets here on new year.
+SmallDomeHall
+Dome-like station
+SmallHall
+small 50ies station
+SmallRoundHall
+small rounded station
+SmallStationBlg
+small station
+TowerMoistboy
+Modern airport tower
+TrainDepot
+Train depot
+TrainStop
+covered platform
+TramDepot
+Tram depot
+UndergroundStation
+underground station
 Viewtower
 Viewtower\n\nJapanese like these small towers. \nThey are tourist attractions\nin their own right - in fact\nyou can find at least 150\nscattered across Japan.\n\nThis one was built by Patrick,\nwith no help from anybody\nelse.  It took him months to\ninstall the windows by\nhimself!\n
+#____________________________________citycar____________________________________
+#____________________________________citycar____________________________________
+Ambulanz
+Ambulance
+FordT
+Ford Model T
+green_car
+green car
+Motorrad
+Motor bike
+orange_bus
+SimCo Bus
+Roadster
+Rag-top Roadster
+yellow_car
+Yellow car
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
+factory_fish_pond_details
+<title>Fish Pond Details</title>\n<h1>Fish Ponds</h1>\n<p>Pond is a body of water where even its deepest areas are reached by sunlight or where a human can walk across the entire body of water without being underneath. In some dialects of English, pond normally refers to small artificially created bodies of water.</p>\n<p>In medieval times in Europe, it was typical for many monasteries, castles, etc. (small, partly self-sufficient communities) to have fish ponds. These are still common in the East Asia (notably Japan), where koi carp may be kept.</p>\n<p>This pond is now used for breeding fish which can be later caught, transported, and processed to food. Swimming in it is forbidden.</p>\n<p>Pond works as extensive aquaculture based on local photosynthetical production, meaning that fish are not being fed by artificial food.</p>\n<p>Limiting for fish growth here is the available food supply by natural sources, commonly zooplankton feeding on pelagic algae or benthic animals, such as certain crustaceans and mollusks. Tilapia species filter feed directly on phytoplankton, which makes higher production possible. The photosynthetical production can be increased by fertilizing the pond water with artificial fertilizer mixtures, such as potash, phosphorus, nitrogen and micro elements. Because most fishes are carnivorous, they occupy a higher place in the trophic chain and therefore only a tiny fraction of primary photosynthetical production (typically 1%) will be converted into harvestable fish.</p>\n<p>As a result, without additional feeding the fish harvest will not exceed 200 kilograms of fish per hectare per year, equivalent to 1% of the gross photosynthetic production.</p>\n<p>In order to tap all available food sources in the pond, the aquaculturist will choose fish species which occupy different places in the pond ecosystem, e.g., a filter algae feeder such as tilapia, a benthic feeder such as carp or catfish and a zooplankton feeder (various carps) or submerged weeds feeder such as grass carp.</p>
 factory_Nutzwald_details
 <title>About timber plantations</title><h1>Timber plantations</h1><p>In the woods grows the most important renewable material and energy source, which is appropriated by forestry and transformed to high-quality brands by wood and paper industry.</p>
+factory_Oelbohrinsel_details
+<title>About oil rigs</title><h1>Oil rigs</h1><p>Second half of 20th century brought hunger for oil - consumption doubled every decade. Apart from land resources, sea offered also some oil deposits, although hard to reach.<br><br>Oil rigs are structures built to exploit these resources located in shelf areas (depth 0 to 200 meters). They are HUGE, but no one actually realizes it - most of the building is hidden under water surface. And also expensive to maintain. Columns that hold the platform are usually hollow and they also function as reservoir for oil.</p><p>The biggest oil rig in the world, Statfjord B, was built by Norway. Its weight is roughly 800,000 tonnes and height about 192 m. With tower the height increases by another 80 meters.</p>
+factory_Oelfeld_details
+<title>About Oilfields</title><h1>Oilfields</h1><p>Oil is a raw material which was used for paints, lubricants and also as a fuel for heating before the turn of 19th/20th century. Then it gained great importance with boom of combustion engine and automobiles.</p><p>Oil is a liquid consisting of numerous hydrocarbons. It is unclear how exactly the oil deposits came into being, probably it was a process similar to creating coal deposits but with some extra conditions - under high pressure & without oxygen. They are within depth of up to hundreds of meters. Oil is there usually found together with gas under high pressure, what eases pumping it to the surface.</p>
+factory_Windkraftwerk_details
+<title>Wind Power Station Details</title><h1>Wind energy</h1><p>The first wind power station was actully built in Scotland 1885 by Prof. James Blyth from Strathclyde. Aparently it was not a great success, comapring with water power and thus the idea went on the back burner for the next 60 year but for Denmark. The first modern type was built 1957 in Germany (2 blades) and Denmark (3 blades). However, the big breakthrough came after the oil crisis and the next after govermetns began to subsidize reneable energies.</p>\n
+#__________________________________error_text___________________________________
+#__________________________________error_text___________________________________
+Monorailhalt muss auf\nMonorail liegen!\n
+Shinkansen can only drive\non Shinkansen tracks!
+Monorails are not available yet!
+Sorry, Shinkansen are not yet available.
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 BOOK-OFF
 Book-Off by yuugen Co.
+ChemicalPlant
+Chemical Plant
 CHEMIST
 Chemist
 Druckerei
 Printing works
+fish_pond
+Fish Pond
+fish_swarm
+Fish Swarm
 Nutzwald
 Timber plantation
 Oelbohrinsel
 Oil rig
 Oelfeld
-Small_Oil_Field
+Small oilfield
 Oelkraftwerk
-Oil Power Plant by haru.
+Oil power plant
 osushiya
 Sushi restaurant
 Papierfabrik
 Paper mill
+Pharmaceutics
+Pharmacetics plant
+Refinery
+Oil refinery
+Small_Rice_Field
+Rice farm
 Sushiya
 Sushi restaurant
+Windkraftwerk
+Wind power plant
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Buecher
 Books
+fish
+Fish
 Holz
 Wood
+None
+nothing
 Oel
 Oil
 Papier
 Paper
+Passagiere
+passengers
 Post
 Mail
 PrintersInk
 Printers ink
+#___________________________________menu_text___________________________________
+#___________________________________menu_text___________________________________
+MONORAILTOOLS
+Shinkansen Tools
+#__________________________________pedestrian___________________________________
+#__________________________________pedestrian___________________________________
+Couple
+A Couple
+Cyclist
+Biker
+pedestrian_1
+Pedestrian
+pedestrian_2
+Pedestrian
+pedestrian_3
+Pedestrian
+pedestrian_4
+Pedestrian
+pedestrian_child
+child
+pedestrian_dog
+dog
+Woman
+woman
+#_________________________________program_text__________________________________
+#_________________________________program_text__________________________________
+Build monorail depot
+Builds a Shinkansen depot.
+clf_chk_monorail
+Shinkansen
+hlf_chk_monorailstop
+Shinkansen
+monorail
+Shinkansen
+monorail vehicle
+Shinkansen cars
+remove monorails
+Remove Shinkansen tracks
+#___________________________________roadsign____________________________________
+#___________________________________roadsign____________________________________
+choose_point
+Choose free stop
+ChooseSignals
+Start of platform search
+Endofchoosetrack
+End of platform search
+LongBlockSignals
+Long Block Signal
+Minimum80
+minimum speed 80km/h
+NoEntry
+No entry
+preSignals
+Pre-Signals (for two blocks)
+RailClose
+Rail Close
+shinkansen_choose_signals
+Signal start of platform search
+shinkansen_exclude_from_choose
+End of platform choose area
+shinkansen_long_block_signals
+Long block signal
+shinkansen_presignals
+two block signals
+shinkansen_rail_close
+No entry
+shinkansen_signals
+signal
+Signals
+Signal
+traffic_light
+Traffic lights
+#_____________________________________tree______________________________________
+#_____________________________________tree______________________________________
+tree1
+Linden tree (Tilia)\n
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
+PowerTunnel
+underground transmission line
+shinkansen_tunnel
+Shinkansen tunnel
+wa-contrete-tunnel-track
+modern tunnel
+wa-stone-tunnel-road
+Road tunnel (bricks)
+wa-stone-tunnel-track
+Rail tunnel (bricks)
+wa-stone-tunnel-water
+Channel tunnel
+wa-tunnel-road
+modern road tunnel
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
-Buchtransporter
-Serj/H-Trans goods van
+Book_Trike
+Parcel delivery trike
+Bretterwagen
+VT Vienna Planks car
+Carelia
+Fish trawler Carelia
+CoolingContainer
+Cooling container car
+CoolingWaggon
+Cooled boxcar
+EnCo_Container_Ship
+Container ship
+EnCo_Oil_Ship
+Oil carrier
+EnCo_Paper_Ship
+EnCo Paper Ship
+EnCo_Wood_Ship
+EnCo Wood Ship
+Erzanhaenger
+H-Trans Ore Trailer
+Erztransporter
+Kirayami Bulk Goods Truck
+Holzanhaenger
+H-Trans Log Trailer
 Holztransporter
-H-Trans Wood truck
+H-Trans Log Truck
 Holzwagen
 H-Trans Wood stake car
-Horsebookscariage
-Horse Books Carriage
-Horsepassengerscariage
-Horse Passengers Carriage
-Horsewoodcariage
-Horse Wood Carriage
 jinriki
 Riksha
+logs
+Logs
+Mailcontainerwagon
+mail container car
+OceanArrow
+Ocean arrow
+Oelanhaenger
+Oil trailer
+Oilbarge
+Oil barge
+OldOil
+old oil car
+PonyPost
+mounted mailmen
+PostBike
+Mailmen with bike
+PostVan
+Mail van
+Steamer
+Steamboat
+T21_bus
+Empire T-21 Bus
+Tanklastzug
+H-trans Tanker Truck
+Trike
+Motorized delivery tricycle
+Tugboat
+SimCo Tugboat
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road
@@ -240,7 +680,43 @@ concrete_sleeper_track
 Concrete sleepers railroad track
 dirt_road
 Dirt road
+elevated_shinkansen_rail
+elevated Shinkansen track
+elv_asphalt_road
+elevated Highway
 gavel_road
 Gavel road
+green_fence
+fence
+green_fence2
+double fence
+Kanal
+Canal
+Powerline
+high power transmission line
+river
+Navigable River
+river2
+Stream
+runway_modern
+Runway
+sand_track
+Wooden Sleeper Rails (Laid in Sand)
+shinkansen_track
+Shinkansen track
+suburb_road
+suburb road
+taxiway
+Taxiway
 wooden_sleeper_track
 Wooden sleepers railroad track
+#__________________________________way-object___________________________________
+#__________________________________way-object___________________________________
+Pylon
+city power distribution
+road_arcade
+Pedestrian zone
+shinkanesen_overhead
+overhead lines
+SlowOverheadpower
+Overhead Lines

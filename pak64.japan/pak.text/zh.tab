@@ -1,226 +1,218 @@
-################################################################################
+§################################################################################
 #                                                                              #
 #                Simutrans Scenario Specific Translation File                  #
 #                             Scenario: pak64.japan                            #
-#                             Language: fr Francais                            #
-#                             Encoding: ISO-8859-1                             #
-#                            Font : Prop-Latin1.bdf                            #
+#                            Language: zh T. Chinese                           #
+#                                Encoding: UTF-8                               #
+#                           Font : wenquanyi_9pt.bdf                           #
 #                           Date Created: 20.04 2014                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - An_dz                                   #
 #                   note: Verified where all texts are shown                   #
-#                                  - Christophe                                #
-#                                    note:                                     #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
 #                                  - Flemmbrav                                 #
 #                                    note:                                     #
 #                                    - FrankP                                  #
 #                                    note:                                     #
-#                         Roman Schw�rer - Gotthardlok                         #
+#                                Hao Wu - HaoWu                                #
 #                                    note:                                     #
+#                              Huanchao Zhu - HuanZ                            #
+#                                    note:                                     #
+#                                     - Jun                                    #
+#                                    note:                                     #
+#                               Alan - LondonBVE                               #
+#           note: Hope to translate at least 50% by end of November.           #
 #                                     - PTM                                    #
 #                                    note:                                     #
-#                           Sava Bogdanets - Sava2004                          #
+#                          Anson Leung - ansonscleung                          #
 #                                    note:                                     #
-#                          Jean Beaudet - cagliostro_2                         #
+#                           Issac Chau - chautakhuen                           #
 #                                    note:                                     #
-#                                  - coincoin42                                #
+#                                   - jasonzha                                 #
 #                                    note:                                     #
-#                        Lorenz Van Damme - gforcetheone                       #
+#                                    - jn4481                                  #
 #                                    note:                                     #
-#                                    - gwalch                                  #
+#                                   - knightly                                 #
 #                                    note:                                     #
-#                                - jounior-fuchs                               #
-#                                    note:                                     #
-#                            Luc Mallet - luc.mallet                           #
-#                                    note:                                     #
-#                                     - mEGa                                   #
-#                            note: French translator                           #
-#                          Christophe Manaud - manaud                          #
-#                                    note:                                     #
-#                           Maxime Cheminel - maxime                           #
+#                                苗一莘 - mys_721tx                               #
 #                                    note:                                     #
 #                                    - prissi                                  #
+#                                    note:                                     #
+#                                   - shinexus                                 #
 #                                    note:                                     #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
 #____________________________________bridge_____________________________________
 ClassicRail
-Pont ferroviaire en b�ton
+傳統鐵路橋
 PowerBridge
-Pont � haute tension
+電力橋
 Schiffhebewerk
-Pont fluviale
+船隻起重機
 SteelRail
-Pont ferroviaire en acier
+鋼鐵鐵路橋 (高速)
 ViaductRail
-viaduc ferroviaire
+磚石高架橋
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 01_CITY
-Mairie
+鄉公所
 02_CITY
-Mairie
+鎮公所
 1headquarter
-Si�ge de votre entreprise!
+總部
 2headquarter
-Si�ge de votre entreprise!
+總部
 3headquarter
-Si�ge de votre entreprise!
+總部
 AirDepot
-Hangar
-AirStop
-Passerelle d'embarquement
+1900年式機庫
 AirTerminal477
-Terminal d'a�roport (1950)
+大型客運樓
 BigPostOffice
-Grand Bureau De Poste
+大型郵局
 BigTerminal477
-Grand Terminal
+現代機場客運樓
 BusStop
-Arr�t de bus
+與建巴士站/電車站
 CarDepot
-D�p�t pour v�hicules routiers
+道路車廠
 CarStop
-Zone de chargement
+裝卸區
 ChannelStop
-Port fluvial
+運河碼頭
 FreightTrainStop
-Quai � marchandise
-IND_01_03
-Grand R�servoir De Gaz\n
-leftShipStop
-Grue Hautes-Charges
-ModernAirTerminal477
-Terminal A�rien Moderne
-PlainAirStop
-Arr�t Pour Avions
+貨運車站
 PostOffice
-Bureau de poste
-PostStop
-Bo�te aux lettres
+與建郵局
 ShipDepot
-chantier naval
+造船廠
 TrainDepot
-D�p�t de train
+列車車廠
 TrainStop
-quai couvert
+與建鐵路車站
 TramDepot
-D�pot de Trams
-Viewtower
-Les japonnais aiment ce\ngenre de tour; elles sont de\nv�ritable atraction\ntouristique. Vous pouvez en\nvoir plus de 150 au Japon.\n
+輕鐵車廠
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
-Ambulance
-FordT
-Ford Mod�le T
+救護車
 green_car
-Voiture verte
+綠色私家車
+orange_bus
+橙色巴士
+Pickup
+私家車
+yellow_car
+黃色私家車
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
-ChemicalPlant
-Usine chimique
 CHEMIST
-Pharmacie
+藥房
 Druckerei
-Imprimerie
+印刷廠
 fish_pond
-Pisciculture
+魚塘
 fish_swarm
-Banc de poisson
+漁排
 Nutzwald
-Exploitation foresti�re
+森林
 Oelbohrinsel
-Plate-forme p�troli�re
+鑽油台
 Oelfeld
-Puits de p�trole
+油井
+Oelkraftwerk
+發電廠 (燃油)
 Papierfabrik
-Papeterie
+造紙廠
 Pharmaceutics
-Pharmaceutique
-Sushiya
-Restaurant � Sushi
+藥廠
 Windkraftwerk
-Eolienne
+風力發電站
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Buecher
-Livres
+書本
 Chemicals
-Solvants
+化學品
 fish
-Poisson
+魚
 Gasoline
-Carburant
+汽油
 Holz
-Bois
+木
 Medicine
-Medecine
+藥物
 None
-aucun
+沒有
 Oel
-P�trole
+石油
+Papier
+紙張
 Passagiere
-Passagers
+乘客
 Post
-Message
+郵件
 PrintersInk
-Imprimerie
+印表機油墨
+#__________________________________pedestrian___________________________________
+#__________________________________pedestrian___________________________________
+pedestrian_1
+行人
+pedestrian_2
+行人
+pedestrian_4
+行人
+pedestrian_child
+小童
+Woman
+女人
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 choose_point
-balise de choix
+方向選擇標誌
 ChooseSignals
-Signal de choix de quai
+月台選擇信號
 Minimum80
-Vitesse minimale 80 km/h
+車速限制(>80kph)
 NoEntry
-Rue unisens
+單向禁止進入
+preSignals
+前置訊號
+RailClose
+鐵路終止標誌
 Signals
-signaux
+訊號
 traffic_light
-feux tricolores
-#____________________________________vehicle____________________________________
-#____________________________________vehicle____________________________________
-Bretterwagen
-Wagon � planches VT Vienna
-Erzanhaenger
-Remorque � minerai de fer
-Erztransporter
-Camion � minerai de fer H-Trans
-Holzanhaenger
-Remorque � bois JET
-Holztransporter
-Camion � bois H-Trans
-Holzwagen
-Wagon � rondins H-Trans
-Oelanhaenger
-Remorque � p�trole
-Tanklastzug
-Camion-citerne � p�trole H-Trans
+交通燈
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road
-Route goudronn�e
+瀝青路
 city_road
-Rue de la ville
+城市道路
 cobblestone_road
-route pav�e
+石鋪路
 concrete_sleeper_track
-voie de chemin de fer (traverses en b�ton)
+混凝土枕木路軌
 dirt_road
-chemin de terre
+泥路
 gavel_road
-route en terre battue
-Kanal
-canal
+碎石路
 Powerline
-ligne haute tension
+電纜
 runway_modern
-piste
+現代跑道
+sand_track
+砂基路軌
+taxiway
+滑行道
 wooden_sleeper_track
-voie de chemin de fer � traverses en bois
+枕木路軌
+#__________________________________way-object___________________________________
+#__________________________________way-object___________________________________
+SlowOverheadpower
+低速行駛高架電纜
