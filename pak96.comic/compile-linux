@@ -30,6 +30,7 @@ if [ -e "makeobj" ]; then
 	echo "Compiling city and lanscape..."
 	./makeobj pak96 ./compiled/ ./city-and-landscape/buildings/com/
 	./makeobj pak96 ./compiled/ ./city-and-landscape/buildings/cur/
+	./makeobj pak96 ./compiled/ ./city-and-landscape/buildings/mon/
 	./makeobj pak96 ./compiled/ ./city-and-landscape/buildings/res/
 	./makeobj pak96 ./compiled/ ./city-and-landscape/rivers/
 
