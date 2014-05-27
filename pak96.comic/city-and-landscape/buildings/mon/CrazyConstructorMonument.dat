@@ -1,12 +1,12 @@
-Obj=building
+obj=building
+type=mon
 name=CrazyConstructorMonument
 copyright=VaclavMacurek
-type=mon
+#build_time=10000
 intro_year=2000
 intro_month=1
-build_time=10000
-level=50
 chance=75
+level=50
 animation_time=1500
 dims=1,1,1
 # letter A
