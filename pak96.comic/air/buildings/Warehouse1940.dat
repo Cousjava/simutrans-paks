@@ -7,6 +7,7 @@ noinfo=1
 enables_pax=0
 enables_post=1
 enables_ware=1
+allow_underground=0
 level=4
 intro_year=1940
 intro_month=3

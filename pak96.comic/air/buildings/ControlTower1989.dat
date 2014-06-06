@@ -7,9 +7,12 @@ noinfo=1
 enables_pax=1
 enables_post=1
 enables_ware=0
+allow_underground=0
 level=10
 intro_year=1989
 intro_month=9
+#experimental
+is_control_tower=1
 #two view animated
 dims=1,1,2
 cursor=ControlTower1989.0.5

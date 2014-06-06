@@ -7,9 +7,12 @@ noinfo=1
 enables_pax=1
 enables_post=1
 enables_ware=1
+allow_underground=0
 level=4
 intro_year=1970
 intro_month=2
+#experimental
+is_control_tower=1
 dims=3,1,4
 cursor=FullTerminal1970.1.5
 icon=> FullTerminal1970.0.5
