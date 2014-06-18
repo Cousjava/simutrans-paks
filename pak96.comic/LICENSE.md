@@ -1,4 +1,4 @@
-_This is the main License of **this repository**_, check EXCEPTION.txt in each folder for a list of files under another License in the respective folder.
+_This is the main License of **this repository**_, check EXCEPTIONS.md for a list of files under another License in this respository.
 
 The copyright holder for each content is indicated in .dat and/or .png files. If not indicated in the .png it's the same copyright holder in .dat file.
 
