@@ -1,0 +1,5666 @@
+################################################################################
+#                                                                              #
+#                Simutrans Scenario Specific Translation File                  #
+#                              Scenario: pak128.cz                             #
+#                             Language: cz Cestina                             #
+#                             Encoding: ISO-8859-2                             #
+#                            Font : prop-latin2.fnt                            #
+#                           Date Created: 20.04 2014                           #
+#                                                                              #
+#                                   authors:                                   #
+#                                    - An_dz                                   #
+#                   note: Verified where all texts are shown                   #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
+#                                  - Flemmbrav                                 #
+#                                    note:                                     #
+#                                    - FrankP                                  #
+#                                    note:                                     #
+#                                    - JOHNY                                   #
+#                                    note:                                     #
+#                                     - PTM                                    #
+#                                    note:                                     #
+#                        Václav Macùrek - VaclavMacurek                        #
+#                                    note:                                     #
+#                                   - hernajs                                  #
+#                                    note:                                     #
+#                              Honza Kobel - jk271                             #
+#                                    note:                                     #
+#                           Jiri Svoboda - jxsvoboda                           #
+#                                    note:                                     #
+#                              Tomá¹ Kube¹ - napik                             #
+#                                    note:                                     #
+#                                    - prissi                                  #
+#                                    note:                                     #
+#                            Oliver Mayer - rakishly                           #
+#                                    note:                                     #
+#                         Tomá¹ Vrbický - vrbicky_tomas                        #
+#                     note: Don´thurry up! Death is faster.                    #
+#                            Vladimír Slávik - vsys                            #
+#                                    note:                                     #
+#                                                                              #
+################################################################################
+#____________________________________bridge_____________________________________
+#____________________________________bridge_____________________________________
+ClassicRail
+Plochý betonový most (Nabe)
+ClassicRoad
+Betonový silnièní most
+Concrete_Road_Bridge
+Dálnièní most
+Plate_Girder_Bridge
+Ocelový viadukt
+PowerBridge
+Most vedení VN
+road_015_bridge
+Silnièní most
+road_030_bridge
+Døevìný silnièní most
+road_035_bridge
+Silnièní most
+road_050_bridge
+Silnièní most
+road_080_bridge
+Silnièní most
+road_090_bridge
+Silnièní most
+road_110_bridge
+Silnièní most
+road_130_bridge
+Dálnièní most
+RVg_Concrete_Rail_Bridge
+Klenutý ocelový most (RVg)
+SteelRail
+Ocelový ¾eleznièní most
+SteelRail2
+Uzavøený ¾eleznièní most
+SteelRoad1
+Ocelový silnièní most
+SteelRoad2
+Tubusový silnièní most
+u_truss_bridge
+Visutá tra» (most)
+viadukt_120
+®eleznièní most
+water_bridge
+Prùplavový most
+Wooden_Rail
+Døevìný most
+#___________________________________building____________________________________
+#___________________________________building____________________________________
+01_CITY
+Radnice
+01_CITY_1
+Radnice
+02_CITY
+Radnice
+02_CITY_1
+Radnice
+03_CITY
+Radnice
+03_CITY_1
+Radnice
+04_CITY
+Radnice
+04_CITY_1
+Radnice
+05_CITY
+Radnice
+05_CITY_1
+Radnice
+1920_AirDepot
+Základní hangár
+1930AirDepot
+Døevìný hangár
+1940AirDepot
+Plechový Hangár
+1950AirDepot
+Zdìný hangár
+1990AirDepot
+Moderní Hangár
+ABBYS_0
+Opatství\n\nToto opatství je zajímavé\nstudnami ve vì¾ích o nich¾\nse tvrdí, ¾e jsou bezedné.\nJe neuvìøitelné, jaké\nmno¾ství lidí chce vidìt\ntyto magické studny. Mince\nti¹e padající na molitan v\nhloubce padesáti metrù\npomohly ekonomice\nopatství natolik, ¾e mohlo\nbýt zrekonstruováno z ruin\ndo stavu, který vidíte.\n\n
+Airport1920_AirportBlg
+Odbavovací hala
+Airport1930PostOffice
+Letecká po¹ta
+Airport1990_Big_AirportBlg
+Leti¹tní Terminál
+Airport1990_Entrance_AirportBlg
+Vstupní brána
+Airport1990_Gates_AirportBlg
+Prùchod
+Airport1990_PostOffice
+Letecká po¹ta
+Airport1990_Small_AirportBlg
+Moderní Èekárna
+Airport1990_Warehouse
+Budova nákladní dopravy (CARGO)
+AirStop_AirportBlg
+Stojánka
+Almuthof_StationBlg
+Vesnická stanice
+Asfaltova nakladaci rampa leva
+Asfaltová nakládací rampa levá
+Asfaltova nakladaci rampa prava
+Asfaltová nakládací rampa pravá
+Asfaltove kryte nastupiste leve
+Asfaltové kryté nástupi¹tì levé
+Asfaltove kryte nastupiste prave
+Asfaltové kryté nástupi¹tì pravé
+Asfaltove kryte nastupiste se sluzebnim prejezdem leve
+Asfaltové kryté nástupi¹tì se slu¾ebním pøejezdem levé
+Asfaltove kryte nastupiste se sluzebnim prejezdem prave
+Asfaltové kryté nástupi¹tì se slu¾ebním pøejezdem pravé
+Asfaltove male nastupiste leve
+Asfaltové malé nástupi¹tì levé
+Asfaltove male nastupiste prave
+Asfaltové malé nástupi¹tì pravé
+Asfaltove nastupiste leve
+Asfaltové nástupi¹tì levé
+Asfaltove nastupiste prave
+Asfaltové nástupi¹tì pravé
+Asfaltove nastupiste se sluzebnim prejezdem leve
+Asfaltové nástupi¹tì se slu¾ebním pøejezdem levé
+Asfaltove nastupiste se sluzebnim prejezdem prave
+Asfaltové nástupi¹tì se slu¾ebním pøejezdem pravé
+Avila_Big_StationBlg
+Velká nádra¾ní hala
+Avila_Small_StationBlg
+Malá nádra¾ní hala
+Avila_Warehouse_StationBlg
+Sklad
+big_classic_bus_stop
+Velká zastávka
+big_modern_bus_stop
+Velká moderní zastávka
+BigTerminal1930_AirportBlg_S
+Velká leti¹tní hala
+BigTerminal1950_AirportBlg_S
+Velká odbavovací hala
+Bulk_Dock
+Pøístav na sypké materiály
+Bulk_StationBlg
+Sklad sypkých hmot
+bus_terminus
+Autobusový terminál
+canal_ChannelStop
+Pøístavi¹tì na prùplavu
+canal_ware_stop
+Pøístavi¹tì na prùplavu (nákladní)
+Car_StationBlg
+Parkovi¹tì
+CarDepot
+Gará¾e
+CarStop
+Nakládací rampa
+CASTLE_0
+Starý hrad\n\nStavba byla u¾ívaná jako hrad\nkrále Napíka. Vìt¹ina byla\nznièena bìhem velké války,\nav¹ak byla v 19.století\nopravena a pøebudována.\nNyní poskytuje k vidìní\nslavnou kolekci starých\nbrnìní a meèù.\n\n
+Chodovska_tvrz
+Chodovská tvrz\n\nStavba je nejvýznaènìj¹ím\nhistorickým objektem\npanelového Ji¾ního mìsta na\nPraze 4. Vznikla na pøelomu\n13. a 14. století. Pùvodnì\nbyla obehnaná vodním\npøíkopem, ten byl pøi\nrekonstrukci v 17.století\nzasypán. Nyní je vyu¾ívána\njako kulturní centrum.\n\n
+CHURCH_00
+Gotická katedrála\n\nTato stará gotická katedrála\nje nyní atraktivnìj¹í ne¾\nkdy døíve. Je to èasté místo\nveøejných výstav a nikoliv\nprostøedí pro uctívání. Zdá\nse, ¾e to je pro církev\nlep¹í, proto¾e zisk z turistù\nje mnohem vy¹¹í, ne¾\ndesátek vybraný z\nklasických bohoslu¾eb.\nJeliko¾ se turisté nemohou\ndostat ke kostelu vlastním\nvozem, do¾adují se dopravního\nspojení.\n\n
+CHURCH_01
+Kostelík\n\nTento malý zapomenutý kostel\nje stále krásné pøátelské\nmísto pro setkávání s\npøáteli, povídání a hledání\nnìèeho vy¹¹ího, ne¾ je\npozemský majetek.\n\n
+CHURCH_02
+Rù¾ový kostel\n\nTento malebný kostel proslavil\n¹ílený mnich, který v roce\n1654 natøel celý objekt na\nrù¾ovo. Rù¾ová barva\nèasem vybledla a smyla se,\nale jméno zùstalo. Jistý\nèlovìk dostal nápad barvu\nobnovit, ale narazil na\npamátkový úøad, který to\nzamítl.\n\n
+CHURCH_03
+Kostel\n\nZnámý kostel, který pøitahuje lidi\ndíky pøíjemnému okolí a\nzajímavým obrazùm.\nZajímavostí je, ¾e je\npostaven na základech,\nkteré jsou více ne¾ 1000 let\nstaré.\n\n
+CHURCH_04
+Synagoga\n\nAèkoliv tento chrám vypadá\nponìkud arabsky, je to ve\nskuteènosti synagoga.\n
+CHURCH_05
+Sv. Michael\n\nTento architektonický skvost\npochází z konce\ndevatenáctého století. Je\npozoruhodný kovovými\nkrovy, které projektoval\nAlexandr Gustav Eiffel.\n\n
+CHURCH_06
+Kostel\n\nTypický kostel, jaký najdete v\nmen¹ích mìstech a na\nvenkovì. Z vì¾e se zároveò\nvyhla¹uje po¾ární poplach;\nv døívìj¹ích dobách v¹ak\nzvony hlásily tøeba i blí¾ící\nse vojska.\n\n
+CIRCUS_0
+Cirkus Humberto.\n\nTento cirkus dosáhl takové\npopularity, ¾e u¾ nemusí\njezdit po svìtì za diváky,\nale diváci jezdí za ním.\nPrávì v tomto mìstì se\ncirkusáci rozhodli\nnaposledy rozvinout své\n¹apitó. Sami si pak koupili\npohodlné domy v okolí a\njejich maringotky teï slou¾í\njako penzion pro pøespolní\ndiváky. Hlavní atrakcí cirkusu je\nslon Jumbo, který kecne na\nzadek poka¾dé, kdy¾ zazvoní\nzvon. Tak si dejte pozor kde\nstojíte, kdy¾ na kostelní vì¾i\nbudou odbíjet celou.\n\n
+CIVILIAN_RADAR
+Observatoø\n\nMo¾ná se vám to zdá\nneuvìøitelné, ale tohle je\nnormální hvìzdárna. Tedy\nradiohvìzdárna...\n
+classic_mailbox
+Po¹tovní schránka
+ClosedTrainStop
+Zastøe¹ené nástupi¹tì
+CoalTrainStop
+Pøekladi¹tì uhlí
+Container1TrainStop
+Pøekladi¹tì kontejnerù
+Container2TrainStop
+Moderní pøekladi¹tì kontejnerù
+Control_StationBlg
+Nádra¾ní velín
+CoveredTrainStop
+Kryté nástupi¹tì
+Crate_Goods_Dock
+Kontejnerový pøístav
+cs_depicko
+Depo
+cs_kostelik
+Kostel
+cs_skladistko_leve
+Skladi¹tì s nakládací rampou levé
+cs_skladistko_prave
+Skladi¹tì s nakládací rampou pravé
+CS_StationBuilding_mala_stanice_se_skladistem
+Malá nádra¾ní budova
+cs_sypane_nastupiste
+Sypané nástupi¹tì
+CSStationBuilding
+Nádra¾ní budova (malá)
+CSStationBuilding_16/H
+Nádra¾ní budova
+CunnersdorfStopBlg
+Vesnická nádra¾ní budova
+CUR_01_128_JH
+Atomium bylo vystavìno\njako památka, ale\nnesetkalo se s valným\núspìchem. Proto bylo\npøestavìno na luxusní\nrestauraci. Stoly nahoøe\nnabízí opravdu krásný\nvýhled, a tudí¾ je nutno\nprovádìt rezervaci dva\ntýdny pøedem.\n\n
+ELEMENTARY_SCHOOL_1
+Základní ¹kola\n\nToto je místo, kde dìti\ndostanou své první\nvzdìlání. Matematika,\njazyky, dìjepis, vìdy, to\njsou pøedmìty, které\nnejsou pøíli¹ oblíbené. Mladí\nstudenti radìji malují nebo\nzpívají. Od té doby, co\nnemohou mladí lidé øídit\nauta, je tøeba do ¹koly\ndopravovat velké mno¾ství\nstudentù. Ale dejte si pozor,\nluxusní autobusy nejsou pro\nmístní dopravu ideální.\n\n
+ELEMENTARY_SCHOOL_2
+Základní ¹kola\n\nZajímavostí této Základní ¹koly je to,\n¾e zaèíná vyuèování v\ndevìt hodin a konèí ji¾ v\npoledne. Druhou neobvyklou\nvìcí je to, ¾e se tam dìti\nuèí i o víkendu. Díky tomu\nje oblíbená u øady rodièù,\nmohou se tak dìtí zbavit i o\nvíkendu a díky tomu si u¾ít\nèas neru¹eného klidu a\npohody.\n\n
+Firestation
+Toto je mìstská po¾ární\nstanice. Jsou v ní\nzaparkována po¾ární auta,\nsanitka a bydlí v ní hasièi.\nSanitka je zde doèasnì,\njednou se pøesune, a¾ si\nnajde vlastní budovu.\n\n
+Fluid_StationBlg
+Zásobník na kapaliny
+FORT_FUN
+Rodeo\n\nZábavné rodeo mìsteèko. Bylo\npùvodnì postaveno pro\nnatáèení filmu "Sedm\nzpáteèních", o\ndvojnásobném pøepadení\nvlaku na Divokém Západì.\n\n
+FreightTrainStop
+Nákladové nádra¾í
+FUTURISTIC_TOWER_0
+Vì¾\n\nTato vì¾ nabízí krásný výhled\ndo krajiny, kterou je\nobklopena. Vy¹¹í patro také\nukrývá malý bar, tak¾e si\nmù¾ete dát nìco k pití ke\nzvý¹ení po¾itku z výhledu.\nAèkoliv ceny zde nejsou\nnízké, atrakce nikdy\nnepostrádá náv¹tìvníky.\n\n
+Gas_StationBlg
+Zásobník plynu
+Goods_StationBlg
+Sklad
+GRASS_STADIUM
+Malý stadion\n\nTento travnatý stadion je\nvýborné místo pro bìhání a\nhraní sportù, jako je fotbal.\nJe mo¾né v klidu sledovat\nsvé pøátele pøi èinnosti z\nlavièky pod stromem.\n\n
+GREEN_HOUSE
+Skleník\n\nTento skleník byl vyu¾íván jako\nobchod. Ale pøed èasem\njeho vlastník pøi¹el na to,\n¾e lidé sem pøicházejí bez\nzjevného zájmu nìco si\nkoupit. A tak zmìnil dùm na\nzimní tropickou zahradu.\nNyní je v nìm spousta\nvzácných kvìtin a dùm je\ndobøe znám po celém svìtì.\n\n
+HIGH_SCHOOL_1
+Støední ¹kola \n\n toto je\nmísto, kde se mladým lidem\ndostane dal¹í vzdìlání.\nAèkoli oficiálnì jsou\nvyuèovány pouze vìdy,\nvìt¹ina studentù vyu¾ívá\ndal¹í kurzy, které se na\n¹kole poøádají. Pøedev¹ím\nkurz Sociálních a\nmezilidských vztahù.\n\n
+HOUSE_RUINS_0
+Ruina\n\nToto kdysi bývala radnice\nmìsta, které u¾ neexistuje.\nHistorikové sem rádi chodí\nvzpomínat na minulost a\nturisté se chodí koukat na\npøedstavení pod stromem.\n\n
+HQ1
+Tady odsuï øídí¹ svoji firmu, projektuje¹ tady tratì a zadává¹ nákupy vozidel. A¾ si vydìlá¹ víc bude¹ si moci dovolit lep¹í sídlo.
+HQ2
+Øídící støedisko Simutrans\nTato budova ukrývá ve svých zdech obrovské øídící centrum, ze kterého se øídí v¹e od východu a západu slunce a¾ po zpìv ptákù.\nNe, ve skuteènosti je toto obyèejná budova plná obyèejných kanceláøí a je¹tì obyèejnìj¹ích úøedníkù... a nebo ne?
+HZS
+Sídlo hasièského záchranného sboru
+JUSTICE
+Mìstský soud. Právníci se\ntrousí ven a zase dovnitø.\n\n
+klaster_na_Slovanech
+Klá¹ter Na slovanech
+KostelHermankovice
+Kostel V¹ech svatých v Heømánkovicích
+Lighthouse_0
+Maják\n\nJi¾ od dávných dob ukazuje\ntento maják bezpeènou\ncestu lodím míøícím do\npøístavu. Pøístav sice ji¾\ndávno zanikl, ale maják\nstojí stále. Dnes ji¾\nnenaviguje lodì, stala se z\nnìj vyhledávaná turistická\natrakce.\n\n
+Lighthouse_1
+Maják\n\nTento maják byl postaven, aby\nnavigoval lodì a\nupozoròoval na nebezpeèné\nútesy, které jsou ukryty\ntìsnì pod hladinou moøe.\n\n\n
+Long_Goods_Dock
+Nákladní pøístav
+LuftPost1950_AirportBlg
+Budova letecké po¹tovní spoleènosti
+MANOR_0
+Zámeèek\n\nTento oblíbený renesanèní\nzámeèek byl døíve velice\nzajímavý. Dnes je to domov\núspì¹ných obchodníkù (tj.\nNapíka). Ale velká èást\nsídla je zde otevøena jako\nexpozice pro veøejnost. K\nvidìní jsou obrazy z\nhistorie a jiné vìci. Aèkoliv\nse to zdá nudné, výstava\nje dnes velice zajímavá.\nZámeèek je ka¾dý den plný\nturistù.\n\n
+MARKET_PLACE_0
+Tr¾i¹tì\n\nNa mìstském tr¾i¹ti si\nmù¾ete koupit mnoho\nzbyteèností a výjimeènì i\nu¾iteèných vìcí, obdivovat\nse starým øemeslùm,\nposedìt s pøáteli u\nsvaøeného vína, no zkrátka\nstrávit docela pøíjemné\nodpoledne. Pravidelnì se\nzde také poøádají koncerty\na rùzné dal¹í masové akce.\nPøí¹tí týden tu bude dokonce\npøedvolební meeting UDS, ji¾ teï\njsou v¹echny plochy polepené\nplakáty se zelenou koèkou.\n\n
+medium_classic_bus_stop
+Autobusová zastávka
+medium_early_bus_stop
+Stará autobusová zastávka
+medium_modern_bus_stop
+Moderní zastávka
+MILITARY_RADAR
+Radar\n\nVojenský objekt, VSTUP ZAKÁZÁN.\nJdìte pryè! Øekl jsem jdìte\npryè! Já to myslel\nVÁ®NÌ!!!!!!!!! OKAM®ITÌ\nZAVØETE TOTO OKNO A\nODSCROLUJTE JINAM\n!!!!!!!!!!!!!!!!!\n\n
+Modern_Warehouse
+Moderní skladi¹tì
+ModernPostOffice
+Moderní po¹ta
+ModernTrainStop
+Moderní vlakové nádra¾í
+MT_HOTEL_0
+Hotel\n\nToto je velmi slavný hotel.\nPokoje jsou velmi drahé,\nale ka¾dý pøímo umírá po\ntom, zùstat zde na víkend\nnebo si alespoò dát jídlo v\nhotelové restauraci.\n\n
+MUSEUM_0
+Toto byl pùvodnì hrádek,\npøestavìný posléze na\nzámeèek a naposledy na\nmìstské technické muzeum.\nNáv¹tìvníci se zde mohou\nobdivovat modelùm prvních\nletadel, lodí, parních\nlokomotiv a dozvìdìt se\nspoustu dal¹ích\nzajímavostí ze svìta vìdy\na techniky. Pravidelnì se\nzde také poøádají\npøedná¹ky a besedy.\n\n
+NadrazniBudova
+Nádra¾ní budova
+OBSERVATORY
+V¹eobecnì známá\nhvìzdárna Ondrákov, na\nmnoho hvìzdných objevù\nse pøi¹lo právì tady. Vìdci\nv noci sledují oblohu (pøes\nden si dávají dvacet).\nTuristi, kteøí pøijdou\nnebudou zkrátka. Je tu\nvzdìlávací výstavka a\npoøádá se tu mnoho\nzajímavých pøedná¹ek, jak\npro odbornou spoleènost\ntak pro laické publikum. Nikdo\nnepøijde zkrátka a tak jsou sály\nstále plné. \n\n
+Old_gate
+Mìstská brána\n\n\n
+OLD_HOUSE_0
+Starý dùm\n\nTato skupina starých\nrenesanèních domù byla\nnedávno zmìnìna na\nmuzeum architektury.\nProhlídka nabízí mnoho\nobrazù z minulosti budov.\nVýstava je zajímavá a\nsnadná k porozumìní a je\nka¾dý den hojnì\nnav¹tìvovaná.\n\n
+OpenTrainStop
+Peron
+Pagoda01
+Pagoda\n\nChrám Ètyø vìtrù. V sousedství\nse nachází láznì na léèbu\nza¾ívacích obtí¾í.\n\n
+PARK_0
+Park\n\nToto je krásný a oblíbený park,\nkde si mohou unavení lidé\nsednout na lavièky, nebo\nle¾et na trávì a relaxovat.\nMístní lidé jej nedají za\n¾ádnou cenu.\n\n
+parking_(catchemnt_area_ext)1
+Parkovi¹tì
+parking_(catchemnt_area_ext)2
+Parkovi¹tì
+parking_(catchemnt_area_ext)3
+Parkovi¹tì
+Post_Dock
+Pøístav s po¹tou
+posta
+Po¹ta
+PostOffice
+Po¹ta
+PostOffice1920_AirportBlg
+Letecká Po¹ta
+Radar3
+Radar
+RADIO_TOWER_0
+Toto je domov místní\nChit-Chat FM rádio stanice.\nPomìrnì hodnì lidí se sem\nchce dostat, proto¾e jim\nslíbili být hostem ve\nvysílání ka¾dý den mezi\n13:00 a 14:30.\n\n
+rmax_clock_tower
+Hodinová vì¾\n\nNavzdory její podobì s mýtickou\nfabulónskou vì¾í není tato\nbudova pøíli¹ letitá. I tak\nmá ale vìk na to, aby ji\nmísto dnes módních rádiem\nøízených èasových\nzákladen pohánìlo solidní\nmosazné soustrojí.\n\n
+rmax_courthouse
+Palác\ntento palác byl od nepamìti\nmajetkem rodu Ermaxù. Pøed\nnìkolika lety byl Ermaxùm v\nsouladu s Hansovými\ndekrety zabaven a od té\ndoby v nìm sídlí muzeum\nhistorie Simutrans. Rod\nErmaxù se ale nechce\nsvého majetku vzdát a o\npalác se neustále soudí.\n\n
+rmax_icarus
+Raketodrom\n\nTento raketodrom patøí firmì\nIcarus, svìtoznámé díky\ntomu, ¾e jako jedna z\nprvních v komerèním\nsektoru zvládla techniku\nvypou¹tìní satelitù. Starty\nraket jsou pro turisty\nvelkým lákadlem.\n\n
+rmax_mosque
+Omarova me¹ita.\n\nDøíve\npravoslavný kostel Ilji\nMuromce. Pøesto¾e budova\nzmìnila svého majitele i\nvyznání, zahradník v\nèerném rouchu s dlouhým\nvousem zùstal. Je to jediná\nosoba na svìtì zapsaná v\nhistorických památkách\nUNESCO. Rozhodnì tak\nvypadá.\n\n
+ROCK_0
+Patrickova skála láká hodnì\ngeologù, kteøí jsou\nfascinováni tímto\nprastarým vulkánem.\n\n
+rotunda_na_Ripu128
+Rotunda svatého Jiøí na Øípu\n\nRotunda svatého Jiøí na\nvrcholu hory Øíp je významná\ncírkevní i kulturní památka,\njde o románskou rotundu,\nkterá patøí mezi nejstar¹í\ndochované stavby v Èeské\nrepublice.\n\n
+rotunda_Znojmo128
+Rotunda svaté Kateøiny ve Znojmì\n\nNárodní kulturní památka\nRotunda svaté Kateøiny stojí\nv areálu pøemyslovského hradu\nve Znojmì. Je jednou z mnoha\nrotund postavených v raném\nstøedovìku na území Moravy\na Èech, od ostatních se\nli¹í zachovanými nástìnnými\nmalbami z roku 1134. Tyto\nmalby jsou výjimeèné v celém\nrománském umìní Evropy svým\nzamìøením na ideologii státu.\n\n
+roura
+Ropovod
+roura_sikma
+Ropovod ve svahu\n
+RUIN_0
+Hrad\n\nPùvodnì zde stál gotický hrad.\nNicménì jeho majitel si na\nzaèátku 20. století\nuvìdomil, ¾e takový hrad\nmu ji¾ mnoho penìz\nnepøinese, a tak jej\npøestavìl na støedovìký\nzábavný a nauèný park. Od\nté doby se dveøe nezavøou,\nproudy lidí chodí obdivovat\n¹ermíøské souboje a\nvýstavy rùzných zajímavých\nvìcièek. Nejvyhlá¹enìj¹í atrakcí\nje ale pravá støedovìká muèírna\n- za tuèný poplatek a podepsání\nzávazku o tom, ¾e se vzdáváte\nmo¾nosti majitele ¾alovat za\njakoukoliv újmu se mù¾ete\nnechat natáhnout na skøipec,\nzavøít do ocelové panny, hodit\ndo hladomorny nebo si nechat\ndrtit ruce. Muèírna ale vlastnì\nnebyla tak populární v¾dy. Její\npopularita vzrostla tehdy, kdy¾\nmajitel nabídl za pøíplatek tajnì\nobjednat muèení pro svého\npartnera a to vèetnì stylového\nodvleèení v rukou biøicù. Rodinný\nvýlet, tak mù¾e nabrat neèekaný\nspád. Hned vedle muèírny je pro\njistotu man¾elská poradna\nslavného doktora Radima\nTkanièky.\n\n
+RUIN_1
+Ruina\n\nToto je zøícenina slavného\nhradu. Hodnì kapitol\nhistorie bylo napsáno právì\nzde. Z tohoto dùvodu je\ntoto místo skuteèným\nmagnetem pro turisty z\ncelého svìta. Ka¾dý je\ndychtivý jej vidìt.\nZøícenina je je¹tì k tomu\npomìrnì romantická, nebo\nne?\n\n
+Russian_Cathedral
+Pravoslavný kostel\n\n
+Secession_Chapel
+Secesní kaple\n\n
+sh_oasis_seasons
+Oáza\n\nJedno z mála míst v pou¹ti, kde\nse dá najít voda a tudí¾ i\nbujnìj¹í vegetace. Kdysi\nse zde zastavovaly\nkaravany na nebezpeèné\ncestì pustinou, dnes je\nnavzdory jisté om¹elosti\nodpoèinek pod palmami a\nfotografie s velbloudem\nstále vyhledávaným\nturistickým zá¾itkem.\n\n
+ShipDepot
+Dok
+ShipStop
+Osobní pøístav
+small_classic_bus_stop
+Primitivní zastávka
+small_early_bus_stop
+Jednoduchá zastávka
+SMALL_MANOR
+Sídlo Lorda Aquaka\n\n©lechtic se stal slavným nejen\ndíky svému jménu, které se\nstalo základem pro\npobavení mnoha generací\n(mluvil tu nìkdo o\nkachnách?), ale také pro\nsvé sídlo: lord Aquak se\nnavzdory svému jménu\npanicky bál vody, proto\nnechal postavit první dvì\npatra vodotìsná. \nZdej¹í kopec je také slavný tím,\n¾e se na nìm v dvanáctém\nstoletí zachránily tisíce obyvatel\nmìsta v údolí pøed povodní.\nMístní ten podivný dùm proto\nberou jako talisman pro ¹tìstí.\n\n
+st_benedict_church
+Chrám Svatého Benedikta.\nByl postaven za císaøe\nDiokleciána v byzantském\nslohu a je jednou z\nnejstar¹ích dochovaných\npamátek Simusvìta. Andìl\nna nejvy¹¹í vì¾i má\npohnutou historii. Je ze\nskla a mnohokrát v historii\nèelil nepøízni poèasí i\nválkám, pøesto dodnes na\nSlunci záøí vnitøním svìtlem\nneporu¹en. Legenda praví, ¾e je\nv nìm uchováno èisté srdce\nSpasitele. \n\n
+ST_PETER
+Svatý Petr\n\nPozdnì románský kostel\npostavený okolo r. 1220, s\nkøí¾ovou lodí zdobenou\nfreskami z poloviny 13.\nstoletí. V prosklené rakvi je\nulo¾eno mumifikované tìlo\nkrálovského správce Petra\nBoka, které pøetrvalo po\nsedm staletí a¾ do dne¹ní\ndoby beze zmìny. Podle\nlegendy byl Petr Bok tak\n¹tìdrým mecená¹em kostela,\nproto¾e byl hnán strachem o své\nzdraví. Za to byl po smrti\n"odmìnìn" skuteènì\nneznièitelným tìlem. \n\n
+stepanka
+Rozhledna\n\nRozhlednu ©tìpánka najdeme v Jizerských horách. 
+SUSHI_HOSPITAL
+Su¹i-Nemocnice\n\ntato\nnemocnice vznikla jako\npracovní místo pro vìt¹inu\nèínské populace ve mìstì,\ns výjimkou èinnosti\nrestaurací. Z tohoto dùvodu\nmù¾e nabídnout rychlou,\nlevnou a kvalifikovanìj¹í\nlékaøskou péèi, a tak ji mají\nrádi lidé, kteøí si nemohou\ndovolit luxusní nemocnice a\nnechtìjí nav¹tívit kliniky\nnízké kvality. Neposkytuje mnoho\nparkovacích míst. Ka¾dý, kdo\nnení pøivezen a odvezen\nsanitkou, musí pou¾ít veøejnou\ndopravu.\n\n
+SvataMarketa
+Kostel\n\nKostel Svaté Markéty
+Terminal1930_AirportBlg
+Malá leti¹tní hala
+Terminal1950_AirportBlg_S
+Malá leti¹tní hala
+Tower1920_AirportBlg
+Základní leti¹tní vì¾
+Tower1930_AirportBlg
+Malá øídící vì¾
+Tower1950_AirportBlg
+Øídící vì¾
+Tower1990_AirportBlg
+Moderní leti¹tní vì¾
+TrainDepot
+Vlakové depo
+TrainStop
+Nádra¾í
+TramDepot
+Tramvajové depo
+TRIUMPH
+Vítìzný oblouk\n\nOblouk vítìzství byl vystavìn\nslavným králem Napikem na\npøipomínku velikosti jeho\narmád. Dnes u¾ v bránì\nnezní okované boty, ale\n¹tìbetání turistù, kteøí se\npozastavují nad ohromující\narchitekturou dávných dob,\nkdy v tomto mìstì pùsobil\nslavný architekt M.H.Z.\nGeorg.\n\n
+TV_TOWER_0
+Vysílaè\n\nTelevizní vysílaè spoleènosti BBQ.\nNahoøe je nainstalována\nwebkamera, která právì\npøená¹í vá¹ udivený oblièej\ndo studia - usmívejte se!\nTøeba vás vyberou do\nreality show Malá sestra,\nkde se z úèastníkù stávají\no¹etøovatelé v domovì\ndùchodcù.\n\n
+TV_TOWER_1
+Televizní vysílaè\n\nTato vì¾ si ve své dobì\ntroufla pokoøit svou vý¹kou\ni ty nejvìt¹í budovy na\nsvìtì. O prvenství ji\npøipravil po pìti letech\nnìjaký jiný vysílaè kdesi v\nTramtárii. Co ov¹em zùstalo\nzachováno je výraznì lep¹í\ntelevizní signál pro\nobyvatele nìkolika stovek\nètvereèních kilometrù okolo.\n\n
+uzk_vytopna
+Úzkokolejné depo
+Very_Big_Terminal
+Gigantická odbavovací hala (3x3)
+VictorianStation
+Stanice ve viktoriánském stylu
+VillageTrainStop
+Vesnické nástupi¹tì
+vodni_hrad_Svihov
+Vodní Hrad ©vihov
+WHEEL
+Ruské kolo\n\nV¹em je dobøe známá - hlavnì\nstar¹í generaci, která\nchodila do zábavných\nparkù. Dnes je to spí¹\nvyhlídkové místo pro dìti,\naby se podívaly kde v\nparku co stojí.\n\n
+Windmill
+Vìtrný mlýn\n\nNìkdo se chodí dívat na vìtrný\nmlýn, proto¾e se mu líbí\nelegance, se kterou se ve\nvánku otáèí jeho lopatky;\nnìkdo zase proto¾e se mu\nchce na procházku a nemá\nv okolí lep¹í cíl. No a nìkteøí\nvýtr¾níci chodí k vìtrnému\nmlýnu, aby si po nìm\nvyzkou¹eli hodit kamenem.\n\n
+WOODEN_CHURCH
+Døevìný kostel\n\nTento kosltel byl postavený\nlidmi, kteøí mají rádi výzvy,\nstojí bez pou¾ití jediného\nhøebíèku.\n\n
+#____________________________________citycar____________________________________
+#____________________________________citycar____________________________________
+ambulance_0
+Stará sanitka
+ambulance_1
+Vyslou¾ilá vojenská sanitka
+ms_foord_gallaxie_brown
+Ford Galaxy hnìdé barvy
+ms_foord_gallaxie_white
+Ford Galaxy bílé barvy
+ms_megane_blue
+Renault Megane modré barvy
+ms_megane_green
+Renault Megane zelené barvy
+ms_mustang_blue
+Ford Mustang modré barvy
+ms_mustang_green
+Ford Mustang zelené barvy
+ms_mustang_red
+Ford Mustang èervené barvy
+ms_scenic_green
+Renault Scenic zelené barvy
+RVg_dumptruck_1
+Uzavøený právì umytý popeláøský vùz
+RVg_dumptruck_2
+Uzavøený posprejovaný popeláøský vùz
+school_bus_0
+©kolní autobus
+VS_T-813-cammo
+Tatra 813 v vojenském zbarvení
+#__________________________________dummy_info___________________________________
+#__________________________________dummy_info___________________________________
+factory_bakery_details
+<title>Pekárna</title>\nHmmm... koblí¾ky
+factory_brewery_details
+<title>Pivovar</title>\nCo je¹tì chce¹ vìdìt? V¾dy» jsi Èech!
+factory_cannery_details
+<title>Konzervárna</title>\nZde zakonzervují v¹e. Maso, ovoce, zelenina, nic není problém...
+factory_chicken_farm_details
+<title>Drùbe¾árna</title>\nSlepice! V¹ude samé slepice! Ko-ko-dáák!
+factory_cow_farm_details
+Kravín.\nZde se chovají krávy a to jak na maso, tak na mléko. Nic víc snad není tøeba dodávat.
+factory_dairy_details
+Mlékárna\ntovárna, ve které se zpracovává mléko na velké mno¾ství produktù tvarohem poèínaje a rùznì ochucenými mléky pro dìti konèe.
+factory_Druckerei_details
+Tiskárna\nPøivezte dostateèné mno¾ství papíru a inkoustu a mile rádi ti vytisknou tvou oblíbenou kní¾ku. A» ¾ije Ferda Mravenec!
+factory_Glass_factory_details
+<title>Sklárna - detaily</title>\n<h1>Sklárna</h1>\nV této továrnì se taví písek a vyrábí se z nìj sklo. Ze skla poté vyrábí spoustu u¾iteèných i neu¾iteèných pøedmìtù.\nNejvìt¹í zakázkou poslední doby je výroba lahví pro místní pivovar.
+factory_grain_farm_details
+<title>Více o p¹enicích</title>\n<h1>Více o p¹enicích</h1>\n<p>Archeologické nálezy dokládají pìstování p¹enice jednozrnky na území Íránu ji¾ 6 000 let pø. n. l. Hlavními obilnicemi svìta jsou USA a území SNS, døíve jí byl napø. Egypt a Sumer.</p>\n<p>P¹enice poskytují zrno, které se pou¾ívá jako potravina, krmivo a jako surovina. Zpracovávají se také stébla (sláma) a otruby (semenné slupky a mouka). Výhodou p¹enice, tak jako u jiných obilovin je pomìrnì jednoduchá skladovatelnost a pomìrnì dlouhá trvanlivost. P¹enice mají vysokou vý¾ivnou hodnotu. V Evropì jsou základní potravináøskou surovinou pro výrobu peèiva, tìstovin a rozmanitých pokrmù.</p>\n<p>Prùmyslovì se vyu¾ívá jako surovina k výrobì ¹krobu, lihu nebo piva.</p>
+factory_grain_mill_details
+<title>Mlýn - detaily</title>\n<h1>Mlýn</h1>\nZde se z obilí mele mouka. A to dokonce na ètyøi druhy: hrubá, polohrubá, jemná a 00. Né, pardon, to je záchod...
+factory_Nutzwald_details
+<title>Lesy - detaily</title>\n<h1>Lesy</h1>\n<p>Lesnictví poskytuje døevo - jednu z nejdùle¾itìj¹ích surovin a zároveò energetický zdroj. Døevo je dále zpracováváno døevaøským a papírenským prùmyslem na velmi cenìné produkty.</p>
+factory_Oelbohrinsel_details
+<title>Ropná plo¹ina</title>\n<h1>Ropa a ropné plo¹iny</h1>\n<p>21. století ¾ízní po ropì. Ka¾dých 10 let se spotøeba zdvojnásobí. Ropné plo¹iny tì¾í tuto surovinu v mìlkých ¹elfových moøích (hloubka do 200m). Plo¹iny jsou ve skuteènosti obrovské, ale málokdo si to uvìdomuje, vìt¹ina je toti¾ ukryta pod hladinou. </p>\n<p>Nejvìt¹í plo¹ina jaká byla kdy postavena, je norský Statfjord B. Vá¾í 800.000 tun a celková vý¹ka je 192m.</p>
+factory_Oelfeld_details
+<title>Ropné vrty</title>\n<h1>Ropa a ropné vrty</h1>\n<p>Ropa se pøed zaèátkem 20. století jako pøírodní materiál pou¾ívala na nátìry a jako mazadlo. Slou¾ila i jako topivo. Dùle¾itost jako strategická surovina získala a¾ jako surovina pro výrobu paliv s vynálezem spalovacích motorù a rozmachem automobilismu.</p>\n<p>Ropa je tekutina, smìs mnoha rùzných uhlovodíkù. Nikdo pøesnì neví jak ropná lo¾iska vlastnì vznikla, velmi pravdìpodobnì to bylo podobné vzniku uhlí - organické zbytky, vysoké tlaky a absence kyslíku. Nalézají se v hloubkách stovek metrù a v lo¾iscích se ropa obvykle vyskytuje pod tlakem spoleènì se zemním plynem, který usnadòuje tì¾bu podobným zpùsobem jako plyn v plechovce spreje.</p>
+factory_Raffinerie_details
+<title>Rafinerie - Detaily</title>\n<h1>Rafinerie</h1>\n<p>V tìchto obrovských továrnách se z ropy slo¾itým procesem postupnì získává benzín, olej, Rama, asfalt a podobné produkty.</p>
+factory_recycling_factory_details
+<title>Tøídírna odpadu - detaily</title>\n<h1>Tøídírna odpadu</h1><p>V této továrnì se z odpadu vybírají druhotné suroviny - sklo, papír, kovy a plasty. Automatizace není mo¾ná, v¹echno se musí tøídit ruènì, ale jsou lidi, kteøí rad¹i pracují zde ne¾ aby ¾ebrali na ulici. Zbylý odpad po vytøídìní se há¾e do tajné èerné díry ve sklepì. Bohu¾el pøi tom u¾ do¹lo k nìkolika o¹klivým úrazùm a záhadným zmizením inspektorù bezpeènosti práce.</p>
+factory_Saegewerk_details
+<title>Pila - detaily</title>\n<h1>Pila</h1>\n<p>V¹echno døevo, které se vytì¾í v lesích se veze sem. Zde podle pøání zákazníka naøe¾ou dlouhé klády na desky, trámy a dal¹í ...</p>
+factory_Sandquarry_details
+<title>Pískovna - detaily</title>\n<h1>Pískovna</h1>\n<p>V pískovnì se tì¾í, jak jinak, písek. Ten poté vozí do skláren, kde jej pøetaví na sklo, nebo jej prodávají na stavby, kde se pøidává do betonù a omítek.</p>
+factory_sheep_farm_details
+<title>Ovèín - detaily</title>\n<h1>Ovèín</h1>\n
+factory_supermarket_details
+<title>Supermarket</title>\n<h1>Supermarkety</h1>\n<p>První supermarkety se zaèaly v USA objevovat ji¾ v padesátých letech na¹eho století, vznikly jako reakce na nákupní horeèku, která zachvátila Spojené státy po hubených váleèných letech.</p>\n<p>První supermarkety byly v Èeské republice postaveny v roce 1991 (firmy Delvita a Mana, dnes Albert), s prvním hypermarketem pøi¹lo Tesco a¾ o ¹est let pozdìji.</p>\n<p>Dnes nakupují v super- a hypermarketech více ne¾ 2/3 èechù.</p>
+factory_TANKE1_details
+<title>O èerpacích stanicích</title>\n<h1>O èerpacích stanicích</h1>\n<p>V raných dobách automobilu si majitelé aut kupovali benzín v koloniálech a servisech. Ale u¾ v roce 1905 se objevuje první benzínová pumpa. Od roku 1910 se v Americe objevují první zastøe¹ené pumpy, od tøicátých let zaèínají nabízet i dal¹í slu¾by jako opravy èi mapy.</p>
+factory_waste_disposal_details
+<title>O skládkách odpadu</title>\n<h1>O skládkách odpadu</h1>\n<p>ve støedovìku se odpadky bì¾nì vyhazovaly z oken na ulici, èím¾ se extrémnì zhor¹ovalo ¾ivotní prostøedí ve mìstech.</p>\n<p>S pøíchodem "civilizace" se zaèaly odpadky odkládat na místa k tomu urèená a odtud je mì¹tí zamìstnanci svá¾ely na velké hromady za mìstem - skádky.</p>\n<p>Podobného principu se ti èistotnìj¹í z nás dr¾í dodnes: odpadky vyhodíme do kontejneru, který poté popeláøi vysypou na skládku daleko za mìstem.</p>
+factory_wind_kraftwerk_details
+<title>O vìtrných elektrárnách</title>\n<h1>O vìtrných elektrárnách</h1>\n<p>Vìtrné elektrárny se v poslední dobì zaèínají èím dál více vyu¾ívat jako ekologický zdroj obnovitelné energie.</p>\n<p>V podstatì nejde o nic jiného, ne¾ o obrovský generátor pøipojený k je¹tì vìt¹í vrtuli. To celé je poté postaveno na vysokém sloupu, èím¾ je dosa¾eno toho, ¾e je vrtule vysoko nad terénem, kde je velká rychlost proudìní vzduchu. Bohu¾el jsou díky tomu vidìl i z hodnì velké vzdálenosti.</p>
+#____________________________________factory____________________________________
+#____________________________________factory____________________________________
+autoshop3
+Autosalon
+bakery
+Pekárna
+brewery
+Pivovar
+cannery
+Konzervárna
+car_assembly_plant
+Automobilka
+car_dealer
+Autosalon
+Cementmill
+Cementárna
+chicken_farm
+Drùbe¾árna
+classical_goods_factory
+Továrna
+Concretefactory
+Betonárka
+cornfield
+Kukuøièné pole
+cotton_farm_w_fields
+Bavlníková plantá¾
+cotton_field
+Bavlníkové pole
+cow_farm
+Kravín
+dairy
+Mlékárna
+Druckerei
+Tiskárna
+electronics_factory
+Továrna na elektroniku
+Erzbergwerk
+Dùl na ¾eleznou rudu
+ethanol_plant
+Kvasný závod
+fish_pond
+Chovný rybník
+fish_swarm
+Sádky
+food_processing_plant
+Potravináøský závod
+Glass_factory
+Sklárna
+grain_farm_w_fields
+Zemìdìlské dru¾stvo
+grain_mill
+Mlýn
+Kohlekraftwerk
+Uhelná elektrárna
+Materialswholesale
+Stavebniny
+modern_fuel_station
+Èerpací stanice
+Moebelfabrik
+Truhlárna
+Moebelhaus
+Prodejna domácích potøeb
+Nutzwald
+Prùmyslový les 
+Oelbohrinsel
+Ropná plo¹ina
+Oelfeld
+Ropné pole
+oilkraftwerk
+Elektrárna na mazut
+old_powerplant_kraftwerk
+Tepelná elektrárna
+open_coal_mine
+Povrchový uhelný dùl
+Papierfabrik
+Papírna
+publisher
+Nakladatelství
+Raffinerie
+Rafinerie
+recycling_factory
+Tøídírna odpadu
+Saegewerk
+Pila
+Sandquarry
+Pískovna
+shaft_coal_mine
+Uhelný dùl
+sheep_farm
+Ovèín
+shopping_mall
+Obchodní centrum
+steel_mill
+Slévárna
+Stonequarry
+Kamenolom
+supermarket
+Supermarket
+TANKE1
+Èerpací stanice
+textile_factory
+Odìvní závody
+waste_disposal
+Sbìrna odpadù
+waste_incinerator_kraftwerk
+Spalovna odpadù
+wind_kraftwerk
+Vìtrná elektrárna
+#_____________________________________good______________________________________
+#_____________________________________good______________________________________
+Autos
+Auta
+beer
+Pivo
+Bretter
+Prkna
+Bucher
+Knihy
+canned_food
+Konzervy
+Chemicals
+Chemikálie
+Concrete
+Beton
+corn
+Kukuøice
+cotton
+Bavlna
+Eisenerz
+®elezná ruda
+electronics
+Elektronika
+Ethanol
+Etanol
+fertilizer
+Hnojivo
+fish
+Ryby
+flour
+Mouka
+food
+Jídlo
+Gasoline
+Benzín
+glass
+Sklo
+goods_
+Zbo¾í
+grain
+Obilí
+Holz
+Døevo
+Kohle
+Uhlí
+meat
+Maso
+milk
+Mléko
+Moebel
+Nábytek
+Oel
+Ropa
+Papier
+Papír
+Passagiere
+Cestující
+Plastik
+Plasty
+Post
+Po¹ta
+Sand
+Písek
+Stahl
+Ocel\n
+Stone
+Kámen
+textile
+Textil
+waste
+Odpadky
+wool
+Vlna
+#___________________________________roadsign____________________________________
+#___________________________________roadsign____________________________________
+airport_oneway
+Jednosmìrná znaèka pro ranveje
+autobahn_classic_entrance
+Vjezd na dálnici
+autobahn_classic_exit
+Konec dánice
+autobahn_modern_entrance
+Vjezd na dálnici
+autobahn_modern_exit
+Konec dánice
+choose_point
+Znaèka vyber pøí¹tí zastávku
+choose_point_Zn
+Znaèka vyber pøí¹tí zastávku
+choosesign_digital_jp
+Znaèka vyber pøí¹tí zastávku
+ChooseSignals
+Návìstí volby koleje (standardní typ)
+Classic_LongSignals_right
+Návìstí dlouhého bloku (klasický typ)
+Classic_preSignals_right
+Pøednávìstidlo (klasický typ)
+Classic_Signals_right
+Návìstí (klasický typ)
+csr_mechanic_choosesignal_1
+Návìstí volby koleje (mechanické ÈSR)
+csr_mechanic_choosesignal_2
+Návìstí volby koleje (mechanické ÈSR)
+csr_mechanic_endofchoosesignal
+Konec výbìru koleje (mechanické ÈSR)
+csr_mechanic_longblocksignal
+Mechanické návìstí dlouhého bloku
+csr_mechanic_onewaysignal
+Jednosmìrné návìstí (mechanické ÈSR)
+csr_mechanic_presignal
+Mechanické pøednávìstidlo
+csr_mechanic_presignal_2
+Mechanické pøednávìstidlo
+csr_mechanic_signal
+Návìstí (ÈSR mechanické)
+csr_sssr_choosesignal
+Návìstidlo volby koleje
+csr_sssr_endofchoosesignal
+Návìstidlo konce výbìru koleje
+csr_sssr_longblocksignal
+Návìstí dlouhého bloku
+csr_sssr_onewaysignal
+Jednosmìrné návìstí
+csr_sssr_presignal
+Pøednávìstidlo
+csr_sssr_signal
+Návìstí
+Customs
+Celnice
+Early_ChooseSignals_right
+Návìstí výbìru perónu (raný typ)
+Early_LongSignals_right
+Návìstí dlouhého bloku (raný typ)
+Early_preSignals_right
+Pøednávìstidlo (raný typ)
+Early_Signals_right
+Návìstí (raný typ)
+Endofchooseroad
+Zákaz výbìru zastávky
+Endofchooseroad_Zn
+Zákaz výbìru zastávky
+EndOfChooseSignals
+Návìstí konce volby perónu
+Minimum100
+Minimální rychlost 100 km/h
+Minimum130
+Minimální rychlost 130 km/h
+Minimum160
+Minimální rychlost 160 km/h
+Minimum190
+Minimální rychlost 190 km/h
+Minimum30
+Minimální rychlost 30 km/h
+Minimum30_Zn
+Minimální rychlost 30 km/h
+Minimum50
+Minimální rychlost 50 km/h
+Minimum50_Zn
+Minimální rychlost 50 km/h
+Minimum80
+Minimální rychlost 80 km/h
+Minimum80_Zn
+Minimální rychlost 80 km/h
+Modern_ChooseSignals_right
+Návìstí výbìru perónu (moderní typ)
+Modern_EndOfChooseSignals_right
+Návìstí konce výbìru perónu (moderní typ)
+Modern_LongSignals_right
+Návìstí dlouhého bloku (moderní typ)
+Modern_OneWaySignals_right
+Jednosmìrné návìstí (moderní typ)
+Modern_preSignals_right
+Pøednávìstidlo (moderní typ)
+Modern_Signals_right
+Návìstí (moderní typ)
+Narrow_ChooseSignals_right
+Návìstí výbìru perónu
+Narrow_EndOfChooseSignals_right
+Návìstí konce výbìru peronu
+Narrow_EndOfChooseSignals_small
+Návìstí konce volby perónu (malé)
+Narrow_LongSignals_right
+Návìstí dlouhého bloku
+Narrow_OneWaySignals_right
+Jednosmìrné návìstí
+Narrow_preSignals_choose
+Pøednávìstidlo
+Narrow_preSignals_right
+Pøednávìstí pro úzkokolejku
+Narrow_Signals_right
+Návìstí
+Narrowgate
+®eleznièní vrata (úzkokolejka)
+NoEntry
+Jednosmìrka
+NoEntry_Zn
+Jednosmìrka
+OneWay
+Jednosmìrka
+OneWay_Zn
+Jednosmìrka
+OneWaySignals
+Jednosmìrné návì¹tí
+policajt
+policista
+preSignals
+Pøednávìstidla (standardní typ)
+privroad
+Soukromá cesta
+privroad_Zn
+Soukromá cesta
+Railgate
+®eleznièní vrata (vlak)
+RisingBollards
+Výsuvné sloupky
+RoadClosed
+Uzávìra
+RoadClosed_Zn
+Uzávìra
+RoadGate
+Závora
+Roundabout
+Kruhový objezd
+Roundabout_Zn
+Kruhový objezd
+Signals
+Návìstí (standardní typ)
+TollGate
+Mýtnice
+traffic_light
+Semafor
+Tram_ChooseSignals_right
+Návìstí výbìru perónu (tramvajové)
+Tram_EndOfChooseSignals_right
+Návìstí konce výbìru perónu (tramvajové)
+Tram_LongSignals_right
+Návìstí dlouhého bloku (tramvajové)
+Tram_OneWaySignals_right
+Jednosmìrné návìstí (tramvajové)
+Tram_preSignals_right
+Pøednávìstidlo (tramvaj)
+Tram_Signals_right
+Návìstí tra»ového bloku (tramvaj)
+Tramgate
+®eleznièní vrata (tramvaj)
+ZollGate
+Celnice
+#_____________________________________tree______________________________________
+#_____________________________________tree______________________________________
+palm010
+palma
+palm011
+palma
+tree020
+Bøíza
+tree021
+Bøíza
+tree022
+Jabloò
+tree023
+Strom
+tree024
+Strom
+tree025
+Strom
+tree030
+Strom
+tree031
+Javor
+tree032
+Strom
+tree040
+Hru¹eò
+tree041
+Strom
+tree042
+Strom
+tree050
+Strom
+tree051
+Topol
+tree052
+Topol
+tree060
+Strom
+tree061
+Strom
+tree062
+Strom
+tree063
+Strom
+tree070
+Strom
+tree071
+Strom
+tree072
+Strom
+tree080
+Osika
+tree081
+Strom
+tree082
+Bøíza
+tree083
+Douglaska
+tree090
+Javor
+tree091
+Modøín
+tree100
+Smrk sivý
+tree110
+Smrk pichlavý
+tree120
+Jedle
+tree121
+Smrk
+tree122
+Smrk
+tree130
+Strom
+tree131
+Strom
+tree132
+Strom
+tree133
+Horský smrk
+tree140
+Smrk
+#____________________________________tunnel_____________________________________
+#____________________________________tunnel_____________________________________
+cs_tunnel
+®eleznièní tunel
+RailTunnel
+®eleznièní tunel
+road_015_tunnel
+Silnièní tunel
+road_050_tunnel
+Silnièní tunel
+road_080_tunnel
+Silnièní tunel
+road_090_tunnel
+Silnièní tunel
+road_110_tunnel
+Silnièní tunel
+road_130_tunnel
+Dálnièní tunel
+#____________________________________vehicle____________________________________
+#____________________________________vehicle____________________________________
+Arriva_223
+Arriva 223 Alex "Herkules"
+Arriva_ABvmz_39-95
+Arriva ABvmz 39-95 Alex (1. a 2. tøída)
+Arriva_Avmz_19-94
+Arriva Avmz 19-94 Alex (1. tøída)
+Arriva_Bm_22-90
+Arriva Bm 22-90 Alex (2. tøída)
+Arriva_Bm_22-90_cyklo-1
+Arriva Bm 22-90 Alex (2. tøída s pøepravou jízdních kol) 1/2
+Arriva_Bm_22-90_cyklo-2
+Arriva Bm 22-90 Alex (2. tøída s pøepravou jízdních kol) 2/2
+Arriva_Bnd_22-54-1
+Arriva Bnd 22-54 Alex (2. tøída s pøepravou jízdních kol) 1/
+Arriva_Bnd_22-54-2
+Arriva Bnd 22-54 Alex (2. tøída s pøepravou jízdních kol) 1/
+Arriva_Bnd_31-33-1
+Arriva Bnd 31-33 Alex (2. tøída s pøepravou jízdních kol) 1/
+Arriva_Bnd_31-33-2
+Arriva Bnd 31-33 Alex (2. tøída s pøepravou jízdních kol) 2/
+Arriva_Bomz_20-95
+Arriva Bomz 20-95 Alex (2. tøída)
+Arriva_Bomz_21-95
+Arriva Bomz 21-95 Alex (2. tøída)
+Arriva_Bomz_21-95_cyklo-1
+Arriva Bomz 21-95 Alex (2. tøída s pøepravou jízdních kol) 1
+Arriva_Bomz_21-95_cyklo-2
+Arriva Bomz 21-95 Alex (2. tøída s pøepravou jízdních kol) 2
+Arriva_BR_85-92
+Arriva BR 85-92 Alex (2. tøída/barový vùz)
+Arriva_DBpz_26-75
+Arriva DBpz 26-75 Alex (2.tøída)
+Arriva_DBpz_26-75_cyklo-1
+Arriva DBpz 26-75 Alex (2. tøída s pøepravou jízdních kol) 1
+Arriva_DBpz_26-75_cyklo-2
+Arriva DBpz 26-75 Alex (2. tøída s pøepravou jízdních kol) 2
+autobusovy_naves
+Autobusový návìs Karosa NO 80
+bbo_1080
+BBO 1080 (elektrická lokomotiva ~15kV/16,7Hz)
+bbo_1100-1_a
+BBO 1100-1 (pøední díl - tøíèlánková elektrická lokomotiva ~
+bbo_1100-1_b
+BBO 1100-1 (støední díl - tøíèlánková elektrická lokomotiva 
+bbo_1100-1_c
+BBO 1100-1 (zadní díl - tøíèlánková elektrická lokomotiva ~1
+bbo_1870_gruen
+BBO 1870 (elektrická lokomotiva ~15kV/16,7Hz)
+BD_I.
+BEB I. "Kladno" (parní lokomotiva)
+CD_014
+ÈD 014 "Regionova trio" (vlo¾ený vùz - 2. tøída)
+CD_020
+ÈD Btx / 020 (2. tøída)
+CD_021-1
+ÈD Btx / 021 (2. tøída s pøepravou jízdních kol) 1/2
+CD_021-2
+ÈD Btx / 021 (2. tøída s pøepravou jízdních kol) 2/2
+CD_022-1
+ÈD BDdtx / 022 (2. tøída/slu¾ební s pøepravou jízdních kol) 
+CD_022-2
+ÈD BDdtx / 022 (2. tøída/slu¾ební s pøepravou jízdních kol) 
+CD_043
+ÈD Btn753 / 043 (2. tøída)
+CD_050
+ÈD Bmx / 050 (2. tøída)
+CD_050_balkan-1
+ÈD Bmx765 balkán (2. tøída s pøepravou jízdních kol) 1/2
+CD_050_balkan-2
+ÈD Bmx765 balkán (2. tøída s pøepravou jízdních kol) 2/2
+CD_050_cyklo-1
+ÈD Bmx cyklo / 050 (2. tøída s pøepravou jízdních kol) 1/2
+CD_050_cyklo-2
+CD Bmx cyklo / 050 (2. tøída s pøepravou jízdních kol) 2/2
+CD_051
+ÈD 051 "®abotlam" (vlo¾ený vùz)
+CD_051_(balkan)
+ÈD 051 "®abotlam" balkán (vlo¾ený vùz)
+CD_052
+ÈD 052 "Lochneska" (vlo¾eny vùz)
+CD_052_(balkan)
+ÈD 052 "Lochneska" balkán (vlo¾eny vùz)
+CD_053
+ÈD Btn / 053 (2. tøída)
+CD_054
+ÈD Bn / 054 (2. tøída)
+CD_054_2-1
+ÈD Bdtn / 054.2 (2. tøída s pøepravou jízdních kol) 1/2
+CD_054_2-2
+ÈD Bdtn / 054.2 (2. tøída s pøepravou jízdních kol) 2/2
+CD_056-1
+ÈD Bdt754 / 056 (2. tøída s pøepravou jízdních kol) 1/2
+CD_056-2
+ÈD Bdt754 / 056 (2. tøída s pøepravou jízdních kol) 2/2
+CD_070_modry
+ÈD 070 "Kraken" modrý (vlo¾ený vùz - 2. tøída)
+CD_070_zeleny
+ÈD 070 "Kraken" zelený (vlo¾ený vùz - 2. tøída)
+CD_081
+ÈD 081-Ampz 1. tøída "Pendolino" (vlo¾ený vùz)
+CD_082
+ÈD 082-Bmpz 2. tøída "Pendolino" (vlo¾ený vùz)
+CD_084
+ÈD 084-Bmpz 2. tøída "Pendolino" (vlo¾ený vùz)
+CD_100_Kapesni_Bobina
+ÈD 100 "Kapesní Bobina" (elektrická lokomotiva =1,5kV)
+CD_110_Zehlicka
+ÈD 110 "®ehlièka" (elektrická lokomotiva =3kV)
+CD_111_Tyristorka
+ÈD 111 "Tyristorka" (elektrická lokomotiva =3kV)
+CD_111_Tyristorka_(balkan)
+ÈD 111 "Tyristorka" balkán (elektrická lokomotiva =3kV)
+CD_113_Zehlicka
+ÈD 113 "®ehlièka" (elektrická lokomotiva =1,5kV)
+CD_121_Kostitras
+ÈD 121 "Kostitøas" (elektrická lokomotiva =3kV)
+CD_122_Uhelka
+ÈD 122 "Uhelka" (elektrická lokomotiva =3kV)
+CD_123_Trojka
+ÈD 123 "Trojka" (elektrická lokomotiva =3kV)
+CD_124
+ÈD 124 (elektrická lokomotiva =3kV)
+CD_130_Hrbata
+ÈD 130 "Hrbatá" (elektrická lokomotiva =3kV)
+CD_140_Bobina
+ÈD 140 "Bobina" (elektrická lokomotiva =3kV)
+CD_141_Bobina
+ÈD 141 "Bobina" (elektrická lokomotiva =3kV)
+CD_150_Banan
+ÈD 150 "Banán" (elektrická lokomotiva =3kV)
+CD_150.2_Banan
+ÈD 150.2 "Banán" (elektrická lokomotiva =3kV)
+CD_150.2_Banan_(balkan)
+ÈD 150.2 "Banán" balkán (elektrická lokomotiva =3kV)
+CD_151_Krysa
+ÈD 151 "Krysa" (elektrická lokomotiva =3kV)
+CD_151_Krysa_(balkan)
+ÈD 151 "Krysa" balkán (elektrická lokomotiva =3kV)
+CD_162_Rychly_Pershing
+ÈD 162 "Rychlý Pershing" (elektrická lokomotiva =3kV)
+CD_162_Rychly_Pershing_(balkan)
+ÈD 162 "Rychlý Pershing" balkán (elektrická lokomotiva =3kV)
+CD_163_Pershing
+ÈD 163 "Pershing" (elektrická lokomotiva =3kV)
+CD_163_Pershing_(balkan)
+ÈD 163 "Pershing" balkán (elektrická lokomotiva =3kV)
+CD_180_Sestikolak
+ÈD 180 "©estikolák" (elektrická lokomotiva =3kV)
+CD_181_Sestikolak
+ÈD 181 "©estikolák" (elektrická lokomotiva =3kV)
+CD_182_Sestikolak
+ÈD 182 "©estikolák" (elektrická lokomotiva =3kV)
+CD_210_Jezevec
+ÈD 210 "Jezevec" (elektrická lokomotiva ~25kV/50Hz)
+CD_230_Laminatka
+ÈD 230 "Laminátka" (elektrická lokomotiva ~25kV/50Hz)
+CD_240_Laminatka
+ÈD 240 "Laminátka" (elektrická lokomotiva ~25kV/50Hz)
+CD_242_Plechac
+ÈD 242 "Plecháè" (elektrická lokomotiva ~25kV/50Hz)
+CD_242_Plechac_(balkan)
+ÈD 242 "Plecháè" balkán (elektrická lokomotiva ~25kV/50Hz)
+CD_263_Princezna
+ÈD 263 "Princezna" (elektrická lokomotiva ~25kV/50Hz)
+CD_340_Modra_Laminatka
+ÈD 340 "Modrá Laminátka" (elektrická dvousystémová lokomotiv
+CD_362_Rychle_Eso
+ÈD 362 "Rychlé Eso" (elektrická dvousystémová lokomotiva =3k
+CD_362_Rychle_Eso_(balkan)
+ÈD 362 "Rychlé Eso" balkán (elektrická dvousystémová lokomot
+CD_363_Eso
+ÈD 363 "Eso" (elektrická dvousystémová lokomotiva =3kV + ~25
+CD_363_Eso_(balkan)
+ÈD 363 "Eso" balkán (elektrická dvousystémová lokomotiva =3k
+CD_371_Bastard
+ÈD 371 "Bastard" (elektrická dvousystémová lokomotiva =3kV +
+CD_371_Bastard_(balkan)
+ÈD 371 "Bastard" balkán (elektrická dvousystémová lokomotiva
+CD_372_Bastard
+ÈD 372 "Bastard" (elektrická dvousystémová lokomotiva =3kV +
+CD_380_Messerschmitt
+ÈD 380 "Zázrak" (elektrická vícesystémová lokomotiva =3kV + 
+CD_380_Messerschmitt_(balkan)
+ÈD 380 "Zázrak" balkan (elektrická vícesystémová lokomotiva 
+CD_440
+ÈD 440 "Regio Panther" (pøední elektrický vùz =3kV)
+CD_441
+ÈD 441 "Regio Panther" (zadní elektrický vùz =3kV)
+CD_442
+ÈD 442 "Regio Panther" (vlo¾ený elektrický vùz =3kV)
+CD_451_2
+ÈD 451 "®abotlam" (zadní elektrický vùz =3kV)
+CD_451_2_(balkan)
+ÈD 451 "®abotlam" balkán (zadní elektrický vùz =3kV)
+CD_451_Zabotlam
+ÈD 451 "®abotlam" (pøední elektrický vùz =3kV)
+CD_451_Zabotlam_(balkan)
+ÈD 451 "®abotlam" balkán (pøední elektrický vùz =3kV)
+CD_452_2
+ÈD 452 "Lochneska" (zadní elektrický vùz =3kV)
+CD_452_2_(balkan)
+ÈD 452 "Lochneska" balkán (zadní elektrický vùz =3kV)
+CD_452_Lochneska
+ÈD 452 "Lochneska" (pøední elektrický vùz =3kV)
+CD_452_Lochneska_(balkan)
+ÈD 452 "Lochneska" balkán (pøední elektrický vùz =3kV)
+CD_470_modry_predni-1
+ÈD 470 "Kraken" modrý (pøední elektrický vùz - 2. tøída se z
+CD_470_modry_predni-2
+ÈD 470 "Kraken" modrý (pøední elektrický vùz - 2. tøída se z
+CD_470_modry_zadni-1
+ÈD 470 "Kraken" modrý (zadní elektrický vùz - 2. tøída se za
+CD_470_modry_zadni-2
+ÈD 470 "Kraken" modrý (zadní elektrický vùz - 2. tøída se za
+CD_470_zeleny_predni-1
+ÈD 470 "Kraken" zelený (pøední elektrický vùz - 2. tøída se 
+CD_470_zeleny_predni-2
+ÈD 470 "Kraken" zelený (pøední elektrický vùz - 2. tøída se 
+CD_470_zeleny_zadni-1
+ÈD 470 "Kraken" zelený (zadní elektrický vùz - 2. tøída se z
+CD_470_zeleny_zadni-2
+ÈD 470 "Kraken" zelený (zadní elektrický vùz - 2. tøída se z
+CD_471_Esus_I.
+ÈD 471 "Ledovec" (elektrický vùz =3kV)
+CD_471_Esus_I._071
+ÈD 071 "Ledovec" (vlo¾ený vùz)
+CD_471_Esus_I._971
+ÈD 971 "Ledovec" (øídící vùz)
+CD_471_Esus_II.
+ÈD 471 "City Elephant" (elektrický vùz =3kV)
+CD_471_Esus_II._(balkan)
+ÈD 471 "E¹us" balkán (elektrický vùz =3kV)
+CD_471_Esus_II._071
+ÈD 071 "City Elephant" (vlo¾ený vùz)
+CD_471_Esus_II._071_(balkan)
+ÈD 071 "E¹us" (vlo¾ený vùz)
+CD_471_Esus_II._971
+ÈD 971 "City Elephant" (øídící vùz)
+CD_471_Esus_II._971_(balkan)
+ÈD 971 "E¹us" (øídící vùz)
+CD_640
+ÈD 640 "Regio Panther" (pøední vícesystémový elektrický vùz 
+CD_641
+ÈD 641 "Regio Panther" (zadní vícesystémový elektrický vùz =
+CD_642
+ÈD 642 "Regio Panther" (vlo¾ený vícesystémový elektrický vùz
+CD_650
+ÈD 650 "Regio Panther" (pøední vícesystémový elektrický vùz 
+CD_650_promo
+ÈD 650 "Regioshuttle" automat. spøáhlo - propagaèní akce (mo
+CD_651
+ÈD 651 "Regio Panther" (zadní vícesystémový elektrický vùz =
+CD_681
+ÈD 681-Ampz 1. tøída "Pendolino" (pøední vicesystemový elekt
+CD_682
+ÈD 682-Bmpz 2. tøída "Pendolino (zadní vícesystémový elektri
+CD_683
+ÈD 683-BRmpz 2.tøída/barový vùz "Pendolino" (vlo¾ený vícesys
+CD_684
+ÈD 684-Bmpz 2. tøída "Pendolino (vlo¾ený vícesystémový elekt
+CD_708_Mala_krava
+ÈD 708 "Malá Kráva" (motorová lokomotiva)
+CD_709
+ÈD 709 (motorová lokomotiva)
+CD_714_Velka_krava__
+ÈD 714 "Velká kráva" (motorová lokomotiva)
+CD_715_Rakusanka
+ÈD 715 "Raku¹anka" (motorová lokomotiva)
+CD_720_Hektor
+ÈD 720 "Hektor" (motorová lokomotiva)
+CD_721_Velky_Hektor
+ÈD 721 "Velký Hektor" (motorová lokomotiva)
+CD_731_Spagetka
+ÈD 731 "©pagetka" (motorová lokomotiva)
+CD_735_Pielstick
+ÈD 735 "Pielstick" (motorová lokomotiva)
+CD_736_Papouch
+ÈD 736 "Papouch" (motorová lokomotiva)
+CD_740_Bangaldeska
+ÈD 740 "Bangladé¹ka" (motorová lokomotiva)
+CD_742_Kocour__
+ÈD 742 "Kocour" (motorová lokomotiva)
+CD_743_Tranzistor
+ÈD 743 "Tranzistor" (motorová lokomotiva)
+CD_749_Zamracena
+ÈD 749 "Zamraèená" (motorová lokomotiva)
+CD_750_Brejlovec
+ÈD 750 "Brejlovec" (motorová lokomotiva)
+CD_751_Bardotka
+ÈD 751 "Bardotka" (motorová lokomotiva)
+CD_752_Berta
+ÈD 752 "Berta" (motorová lokomotiva)
+CD_752_Brejlovec
+ÈD 752 "Brejlovec" (motorová lokomotiva)
+CD_753_Brejlovec
+ÈD 753 "Brejlovec" (motorová lokomotiva)
+CD_754_Brejlovec
+ÈD 754 "Brejlovec" (motorová lokomotiva)
+CD_755_Brejlovec
+ÈD 755 "Brejlovec" (motorová lokomotiva)
+CD_799_Adela
+ÈD 799 "Adéla" (motorová lokomotiva)
+CD_809
+ÈD 809 (motorový vùz - 2. tøída, samoobsluha)
+CD_809_balkan
+ÈD 809 balkán (motorový vùz - 2. tøída, samoobsluha)
+CD_810
+ÈD 810 (motorový vùz - 2. tøída)
+CD_810_balkan
+ÈD 810 balkán (motorový vùz - 2. tøída)
+CD_810_modry
+ÈD 810 modrý (motorový vùz - 2. tøída)
+CD_811_balkan-1
+ÈD 811 balkán (pøední motorový vùz - 2. tøída)
+CD_811_balkan-2
+ÈD 811 balkán (zadní motorový vùz - 2. tøída)
+CD_811-1
+ÈD 811 (pøední motorový vùz - 2. tøída)
+CD_811-2
+ÈD 811 (zadní motorový vùz - 2. tøída)
+CD_812-1
+ÈD 812 "Esmeralda" (motorový vùz - 2. tøída)
+CD_812-2
+ÈD 812 "Esmeralda" (zadní motorový vùz - 2. tøída)
+CD_814-1
+ÈD 814 "Regionova trio" (motorový vùz pøední - 2. tøída)
+CD_814-2
+ÈD 814 "Regionova" (motorový vùz zadní - 2. tøída)
+CD_820
+ÈD 820 "Singrovka" (motorový vùz - 2. tøída)
+CD_820-1
+ÈD 820 "Singrovka" (motorový vùz - 2. tøída/slu¾ební) 1/2
+CD_820-2
+ÈD 820 "Singrovka" (motorový vùz - 2. tøída/slu¾ební) 2/2
+CD_831-1
+ÈD 831 "Loïák" (motorový vùz - 2. tøída/slu¾ební) 1/2
+CD_831-2
+ÈD 831 "Loïák" (motorový vùz - 2. tøída/slu¾ební) 2/2
+CD_840
+ÈD 840 "Regioshuttle" Liberec (motorový vùz - 2. tøída)
+CD_840_cyklo-1
+ÈD 840 "Regioshuttle" Liberec (motorový vùz - 2. tøída s pøe
+CD_840_cyklo-2
+ÈD 840 "Regioshuttle" Liberec (motorový vùz - 2. tøída s pøe
+CD_841
+ÈD 841 "Regioshuttle" Vysoèina (motorový vùz - 2. tøída)
+CD_841_cyklo-1
+ÈD 841 "Regioshuttle" Vysoèina (motorový vùz - 2. tøída s pø
+CD_841_cyklo-2
+ÈD 841 "Regioshuttle" Vysoèina (motorový vùz - 2. tøída s pø
+CD_842
+ÈD 842 "Kvatro" (motorový vùz - 2. tøída)
+CD_842_balkan
+ÈD 842 "Kvatro - reko" balkán (motorový vùz - 2. tøída)
+CD_842_balkan-1
+ÈD 842 "Kvatro - reko" balkán (motorový vùz - 2. tøída/slu¾e
+CD_842_balkan-2
+ÈD 842 "Kvatro - reko" balkán (motorový vùz - 2. tøída/slu¾e
+CD_842-1
+ÈD 842 "Kvatro" (motorový vùz - 2. tøída/slu¾ební) 1/2
+CD_842-2
+ÈD 842 "Kvatro" (motorový vùz - 2. tøída/slu¾ební) 2/2
+CD_843
+ÈD 843 "Rakev" (motorový vùz - 2. tøída)
+CD_843_balkan
+ÈD 843 "Rakev" balkán (motorový vùz - 2. tøída)
+CD_843_balkan-1
+ÈD 843 "Rakev" balkán (motorový vùz - 2. tøída/slu¾ební) 1/2
+CD_843_balkan-2
+ÈD 843 "Rakev" balkán (motorový vùz - 2. tøída/slu¾ební) 2/2
+CD_843-1
+ÈD 843 "Rakev" (motorový vùz - 2. tøída/slu¾ební) 1/2
+CD_843-2
+ÈD 843 "Rakev" (motorový vùz - 2. tøída/slu¾ební) 2/2
+cd_844
+ÈD 844 "RegioShark" (motorová jednotka - pøední díl - 2. tøí
+cd_844_2
+ÈD 844 "RegioShark" (motorová jednotka - zadní díl - 1. a 2.
+CD_850
+ÈD 850 "Krokodýl" (motorový vùz - 2. tøída)
+CD_850_otoc
+ÈD 850 "Krokodýl" (zadní motorovy vùz - 2. tøída)
+CD_850_otoc-1
+ÈD 850 "Krokodýl" (zadní motorový vùz - 2. tøída/slu¾ební) 1
+CD_850_otoc-2
+ÈD 850 "Krokodýl" (zadní motorový vùz - 2. tøída/slu¾ební) 2
+CD_850-1
+ÈD 850 "Krokodýl" (motorový vùz - 2. tøída/slu¾ební) 1/2
+CD_850-2
+ÈD 850 "Krokodýl" (motorový vùz - 2. tøída/slu¾ební) 2/2
+CD_851
+ÈD 851 "Krokodýl" (motorový vùz - 2. tøída)
+CD_851_balkan
+ÈD 851 balkán "Krokodýl" (motorový vùz - 2. tøída)
+CD_851_balkan_otoc
+ÈD 851 balkán "Krokodýl" (zadní motorový vùz - 2. tøída)
+CD_851_balkan_otoc-1
+ÈD 851 balkán "Krokodýl" (zadní motorový vùz - 2. tøída/slu¾
+CD_851_balkan_otoc-2
+ÈD 851 balkán "Krokodýl" (zadní motorový vùz - 2. tøída/slu¾
+CD_851_balkan-1
+ÈD 851 balkán "Krokodýl" (motorový vùz - 2. tøída/slu¾ební) 
+CD_851_balkan-2
+ÈD 851 balkán "Krokodýl" (motorový vùz - 2. tøída/slu¾ební) 
+CD_851_otoc
+ÈD 851 "Krokodýl" (zadní motorový vùz - 2. tøída)
+CD_851_otoc-1
+ÈD 851 "Krokodýl" (zadní motorový vùz - 2. tøída/slu¾ební) 1
+CD_851_otoc-2
+ÈD 851 "Krokodýl" (zadní motorový vùz - 2. tøída/slu¾ební) 2
+CD_851-1
+ÈD 851 "Krokodýl" (motorovy vùz - 2. tøída/sluzební) 1/2
+CD_851-2
+ÈD 851 "Krokodýl" (motorový vùz - 2. tøída/slu¾ebni) 2/2
+CD_854
+ÈD 854 "Hydra" (motorový vùz - 2. tøída)
+CD_854_balkan
+ÈD 854 "Hydra" balkán (motorový vùz - 2. tøída)
+CD_854_balkan-1
+ÈD 854 "Hydra" balkán (motorový vùz - 2. tøída/slu¾ební) 1/2
+CD_854_balkan-2
+ÈD 854 "Hydra" balkán (motorový vùz - 2. tøída/slu¾ební) 2/2
+CD_854_balkan-otoc
+ÈD 854 "Hydra" balkán (zadní motorový vùz - 2. tøída)
+CD_854_balkan-otoc-1
+ÈD 854 "Hydra" balkán (zadní motorový vùz - 2. tøída/slu¾ebn
+CD_854_balkan-otoc-2
+ÈD 854 "Hydra" balkán (zadní motorový vùz - 2. tøída/slu¾ebn
+CD_854-1
+ÈD 854 "Hydra" (motorový vùz - 2. tøída/slu¾ební) 1/2
+CD_854-2
+ÈD 854 "Hydra" (motorový vùz - 2. tøída/slu¾ební) 2/2
+CD_854-otoc
+ÈD 854 "Hydra" (zadní motorový vùz - 2. tøída)
+CD_854-otoc-1
+ÈD 854 "Hydra" (zadní motorový vùz - 2. tøída/slu¾ební) 1/2
+CD_854-otoc-2
+ÈD 854 "Hydra" (zadní motorový vùz - 2. tøída/slu¾ební) 2/2
+CD_912-1
+ÈD Bfbdtax / 912 "Kasandra" (pøední øídící vùz - 2. tøída)
+CD_912-2
+ÈD Bfbdtax / 912 "Kasandra" (øídící vùz - 2. tøída)
+CD_914
+ÈD 914 "Regionova" (øídící vùz - 2. tøída)
+CD_943
+ÈD Bftn / 943 (øídící vùz - 2. tøída)
+CD_943-otoc
+ÈD Bftn / 943 (pøední øídící vùz - 2. tøída)
+CD_954
+ÈD Bfbrdtn / 954 (øídící vùz - 2. tøída)
+CD_954_2
+ÈD ABfbrdtn / 954.2 (øídící vùz - 1. a 2. tøída)
+CD_954_2_balkan
+ÈD ABfbrdtn795 / 954.2 balkán (øídící vùz - 1. a 2. tøída)
+CD_954_2_balkan-1
+ÈD ABfbrdtn795 / 954.2 balkán (øídící vùz - 1. a 2. tøída s 
+CD_954_2_balkan-2
+ÈD ABfbrdtn795 / 954.2 balkán (øídící vùz - 1. a 2. tøída s 
+CD_954_2_balkan-otoc
+ÈD ABfbrdtn795 / 954.2 balkán (pøední øídící vùz - 1. a 2. t
+CD_954_2_balkan-otoc-1
+ÈD ABfbrdtn795 / 954.2 balkán (pøední øídící vùz - 1. a 2. t
+CD_954_2_balkan-otoc-2
+ÈD ABfbrdtn795 / 954.2 balkán (pøední øídící vùz - 1. a 2. t
+CD_954_2-1
+ÈD ABfbrdtn / 954.2 (øídící vùz - 1. a 2. tøída s pøepravou 
+CD_954_2-2
+ÈD ABfbrdtn / 954.2 (øídící vùz - 1. a 2. tøída s pøepravou 
+CD_954_2-otoc
+ÈD ABfbrdtn / 954.2 (pøední øídící vùz - 1. a 2. tøída)
+CD_954_2-otoc-1
+ÈD ABfbrdtn / 954.2 (pøední øídící vùz - 1. a 2. tøída s pøe
+CD_954_2-otoc-2
+ÈD ABfbrdtn / 954.2 (pøední øídící vùz - 1. a 2. tøída s pøe
+CD_954_balkan
+ÈD Bfbrdtn794 / 954 balkán (øídící vùz - 2. tøída)
+CD_954_balkan-1
+ÈD Bfbrdtn794 / 954 balkán (øídící vùz - 2. tøída s pøepravo
+CD_954_balkan-2
+ÈD Bfbrdtn794 / 954 balkán (øídící vùz - 2. tøída s pøepravo
+CD_954_balkan-otoc
+ÈD Bfbrdtn794 / 954 balkán (pøední øídící vùz - 2. tøída)
+CD_954_balkan-otoc-1
+ÈD Bfbrdtn794 / 954 balkán (pøední øídící vùz - 2. tøída s p
+CD_954_balkan-otoc-2
+ÈD Bfbrdtn794 / 954 balkán (pøední øídící vùz - 2. tøída s p
+CD_954-1
+ÈD Bfbrdtn / 954 (øídící vùz - 2. tøída s pøepravou jízdních
+CD_954-2
+ÈD Bfbrdtn / 954 (øídící vùz - 2. tøída s pøepravou jízdních
+CD_954-otoc
+ÈD Bfbrdtn / 954 (pøední øídící vùz - 2. tøída)
+CD_954-otoc-1
+ÈD Bfbrdtn / 954 (pøední øídící vùz - 2. tøída s pøepravou j
+CD_954-otoc-2
+ÈD Bfbrdtn / 954 (pøední øídící vùz - 2. tøída s pøepravou j
+CD_A
+ÈD A (1. tøída)
+CD_A_balkan
+ÈD A149 balkán  (1. tøída)
+CD_AB
+ÈD AB (1. a 2. tøída)
+CD_AB_balkan
+ÈD AB349 balkán (1. a 2. tøída)
+CD_Aee
+ÈD Aee (1. tøída)
+CD_Aee142
+ÈD Aee142 ING (1. tøída)
+CD_Aee142_balkan
+ÈD Aee142 balkán (1. tøída)
+CD_Aee147
+ÈD Aee147 (1. tøída)
+CD_Aee152_balkan
+ÈD Aee152 balkán (1. tøída)
+CD_Ampz
+ÈD Ampz (1. tøída)
+CD_Ampz_balkan
+ÈD Ampz balkán (1. tøída)
+CD_Apee
+ÈD Apee (1. tøída)
+CD_Apee141
+ÈD Apee141 ING (1. tøída)
+CD_Apee141_balkan
+ÈD Apee141 balkán (1. tøída)
+CD_ARmpee61_balkan
+ÈD ARmpee832 balkán (1.tøída/barový vùz)
+CD_B
+ÈD B (2. tøída)
+CD_B_balkan
+ÈD B249 balkán (2. tøída)
+CD_Bc
+ÈD Bc (lehatkový vùz 2. tøída)
+CD_Bc833
+ÈD Bc833 (lehátkový vùz 2. tøída)
+CD_Bc833_balkan
+ÈD Bc833 balkán (lehatkový vùz 2. tøída)
+CD_Bc842_balkan
+ÈD Bc842 balkán (lehatkový vùz 2. tøída)
+CD_BDbmsee_balkan-1
+ÈD BDbmsee balkán (slu¾ební/2. tøída) 1/2
+CD_BDbmsee_balkan-2
+CD BDbmsee balkán (slu¾ební/2. tøída) 2/2
+CD_BDbmsee-1
+ÈD BDbmsee (slu¾ební/2. tøída) 1/2
+CD_BDbmsee-2
+ÈD BDbmsee (slu¾ební/2. tøída) 2/2
+CD_Bdmpee
+ÈD Bdmpee (2. tøída)
+CD_Bdmpee_cyklo-1
+ÈD Bdmpee (2. tøída s pøepravou jízdních kol) 1/2
+CD_Bdmpee_cyklo-2
+ÈD Bdmpee (2. tøída s pøepravou jízdních kol) 2/2
+CD_Bdmpee253_balkan
+ÈD Bdmpee253 balkán (2. tøída)
+CD_Bdmpee253_cyklo_balkan-1
+ÈD Bdmpee253 balkán (2. tøída s pøepravou jízdních kol) 1/2
+CD_Bdmpee253_cyklo_balkan-2
+ÈD Bdmpee253 balkán (2. tøída s pøepravou jízdních kol) 2/2
+CD_Bdmtee
+ÈD Bdmtee (2. tøída)
+CD_Bdmtee_balkan
+ÈD Bdmtee281 balkán (2. tøída)
+CD_Bdmtee_cyklo-1
+ÈD Bdmtee (2. tøída s pøepravou jízdních kol) 1/2
+CD_Bdmtee_cyklo-2
+ÈD Bdmtee (2. tøída s pøepravou jízdních kol) 2/2
+CD_Bdmtee263
+ÈD Bdmtee263 (2. tøída)
+CD_Bdmtee263_balkan
+ÈD Bdmtee263 balkán (2. tøída)
+CD_Bdmtee263_cyklo_balkan-1
+ÈD Bdmtee263 balkán (2. tøída s pøepravou jízdních kol) 1/2
+CD_Bdmtee263_cyklo_balkan-2
+ÈD Bdmtee263 balkán (2. tøída s pøepravou jízdních kol) 2/2
+CD_Bdmtee263_cyklo-1
+ÈD Bdmtee263 (2. tøída s pøepravou jízdních kol) 1/2
+CD_Bdmtee263_cyklo-2
+ÈD Bdmtee263 (2. tøída s pøepravou jízdních kol) 2/2
+CD_Bdmtee281_cyklo_balkan-1
+ÈD Bdmtee281 balkán (2. tøída s pøepravou jízdních kol) 1/2
+CD_Bdmtee281_cyklo_balkan-2
+ÈD Bdmtee281 balkán (2. tøída s pøepravou jízdních kol) 2/2
+CD_Bdmteeo294_balkan
+ÈD Bdmteeo294 balkán (2. tøída)
+CD_BDs_balkan-1
+ÈD BDs450 balkán (slu¾ební/2. tøída) 1/2
+CD_BDs_balkan-2
+ÈD BDs450 balkán (slu¾ební/2. tøída) 2/2
+CD_BDs-1
+ÈD BDs (slu¾ební/2. tøída) 1/2
+CD_BDs-2
+ÈD BDs (slu¾ební/2. tøída) 2/2
+CD_BDsee454-1
+ÈD BDsee454 (slu¾ební/2. tøída) 1/2
+CD_BDsee454-2
+ÈD BDsee454 (slu¾ební/2. tøída) 2/2
+CD_Bdt-1
+ÈD Bdt (2. tøída s pøepravou jízdních kol) 1/2
+CD_Bdt-2
+ÈD Bdt (2. tøída s pøepravou jízdních kol) 2/2
+CD_Bdt279_balkan-1
+ÈD Bdt279 balkán (2. tøída s pøepravou jízdních kol) 1/2
+CD_Bdt279_balkan-2
+ÈD Bdt279 balkán (2. tøída s pøepravou jízdních kol) 2/2
+CD_Bdtax_015-1
+ÈD Bdtax / 015 (2. tøída + pøeprava jízdních kol) 1/2
+CD_Bdtax_015-2
+ÈD Bdtax / 015 (2. tøída + pøeprava jízdních kol) 2/2
+CD_BDtax-1
+ÈD BDtax / 012 (2. tøída se slu¾ebním oddílem) 1/2
+CD_BDtax-2
+ÈD BDtax / 012 (2. tøída se slu¾ebním oddílem) 2/2
+CD_BDtax782_balkan-1
+ÈD BDtax782 / 012 balkán (2. tøída se slu¾ebním oddílem) 1/2
+CD_BDtax782_balkan-2
+ÈD BDtax782 / 012 balkán (2. tøída se slu¾ebním oddílem) 2/2
+CD_BDtax783-1
+ÈD BDtax783 / 016 (vlo¾ený vùz - 2. tøída/slu¾ební) 1/2
+CD_BDtax783-2
+ÈD BDtax783 / 016 (vlo¾ený vùz - 2. tøída/slu¾ební) 2/2
+CD_Bdtax785_balkan-1
+ÈD Bdtax785 / 015 balkán (2. tøída + pøeprava jízdních kol) 
+CD_Bdtax785_balkan-2
+ÈD Bdtax785 / 015 balkán (2. tøída + pøeprava jízdních kol) 
+CD_Bdtn756_balkan-1
+ÈD Bdtn756 balkan (2. tøída s pøepravou jízdních kol) 1/2
+CD_Bdtn756_balkan-2
+ÈD Bdtn756 balkan (2. tøída s pøepravou jízdních kol) 2/2
+CD_Bee
+ÈD Bee (2. tøída)
+CD_Bee240
+ÈD Bee240 ING (2. tøída)
+CD_Bee240_balkan
+ÈD Bee240 balkán (2. tøída)
+CD_Bee246
+ÈD Bee246 (2. tøída)
+CD_Bee272_balkan
+ÈD Bee272 balkán (2. tøída)
+CD_Beer
+ÈD Beer (2. tøída)
+CD_Bftn791_balkan
+ÈD Bftn791 balkán (øídící vùz - 2. tøída)
+CD_Bftn791_balkan-otoc
+ÈD Bftn791 balkán (pøední øídící vùz - 2. tøída)
+CD_Bmee
+ÈD Bmee (2. tøída)
+CD_Bmee_balkan
+ÈD Bmee balkán (2. tøída)
+CD_Bmpz_balkan
+ÈD Bmpz balkán (2. tøída)
+CD_Bmto
+ÈD Bmto (2. tøída)
+CD_Bmz
+ÈD Bmz (2. tøída)
+CD_Bmz_balkan
+ÈD Bmz balkán (2. tøída)
+CD_Bp
+ÈD Bp (2. tøída)
+CD_Bp_cyklo-1
+ÈD Bp cyklo (2. tøída s pøepravou jízdních kol) 1/2
+CD_Bp_cyklo-2
+ÈD Bp cyklo (2. tøída s pøepravou jízdních kol) 2/2
+CD_Bp282_balkan
+ÈD Bp282 balkán (2. tøída)
+CD_Bp282_cyklo_balkan-1
+ÈD Bp282 cyklo balkán (2. tøída s pøepravou jízdních kol) 1/
+CD_Bp282_cyklo_balkan-2
+ÈD Bp282 cyklo balkán (2. tøída s pøepravou jízdních kol) 2/
+CD_Bpee
+ÈD Bpee (2. tøída)
+CD_Bpee239
+ÈD Bpee239 ING (2. tøída)
+CD_Bpee239_balkan
+ÈD Bpee239 balkán (2. tøída)
+CD_BRm
+ÈD BRm (2. tøída/barový vùz)
+CD_Bt
+ÈD Bt (2. tøída)
+CD_Bt278_balkan
+ÈD Bt278 balkán (2. tøída)
+CD_Btax
+ÈD Btax / 010 (2. tøída)
+CD_Btax_modry
+ÈD Btax / 010 modrý (2. tøída)
+CD_Btax_modry-1
+ÈD Btax / 010 modrý (2. tøída se zavazadlovým oddílem) 1/2
+CD_Btax_modry-2
+ÈD Btax / 010 modrý (2. tøída se zavazadlovým oddílem) 2/2
+CD_Btax_zeleny-1
+ÈD Btax781 / 011 zelený (vlo¾ený vùz - 2. tøída/slu¾ební) 1/
+CD_Btax_zeleny-2
+ÈD Btax781 / 011 zelený (vlo¾ený vùz - 2. tøída/slu¾ební) 2/
+CD_Btax_zeleny-3
+ÈD Btax781 / 011 zelený (vlo¾ený vùz - 2. tøída/slu¾ební) 1/
+CD_Btax_zeleny-4
+ÈD Btax781 / 011 zelený (vlo¾ený vùz - 2. tøída/slu¾ební) 2/
+CD_Btax-1
+ÈD Btax / 010 (2. tøída se zavazadlovým oddílem) 1/2
+CD_Btax-2
+ÈD Btax / 010 (2. tøída se zavazadlovým oddílem) 2/2
+CD_Btax780_balkan
+ÈD Btax780 / 010 balkán (2. tøída)
+CD_Btax780_balkan-1
+ÈD Btax780 / 010 balkán (2. tøída se zavazadlovým oddílem) 1
+CD_Btax780_balkan-2
+ÈD Btax780 / 010 balkán (2. tøída se zavazadlovým oddílem) 2
+CD_Btax781_balkan-1
+ÈD Btax781 / 011 balkán (vlo¾ený vùz - 2. tøída se zavazadlo
+CD_Btax781_balkan-2
+ÈD Btax781 / 011 balkán (vlo¾eny vùz - 2. tøída se zavazadlo
+CD_Btax781_balkan-3
+ÈD Btax781 / 011 balkán (koncový pøípojný vùz - 2. tøída se 
+CD_Btax781_balkan-4
+ÈD Btax781 / 011 balkán (koncový pøípojný vùz - 2. tøída se 
+CD_Btax781-1
+ÈD Btax781 / 011 (vlo¾ený vùz - 2. tøída se zavazadlovým odd
+CD_Btax781-10
+ÈD Btax781 / 011 (koncový pøípojný vùz - 2. tøída se zavazad
+CD_Btax781-2
+ÈD Btax781 / 011 (vlo¾ený vùz - 2. tøída se zavazadlovým odd
+CD_Btax781-3
+ÈD Btax781 / 011 (zadní vlo¾ený vùz - 2. tøída se zavazadlov
+CD_Btax781-4
+ÈD Btax781 / 011 (zadní vlo¾ený vùz - 2. tøída se zavazadlov
+CD_Btax781-5
+ÈD Btax781 / 011 (vlo¾ený vùz - 2. tøída se zavazadlovým odd
+CD_Btax781-6
+ÈD Btax781 / 011 (vlo¾ený vùz - 2. tøída se zavazadlovým odd
+CD_Btax781-7
+ÈD Btax781 / 011 (vlo¾ený vùz - 2. tøída se zavazadlovým odd
+CD_Btax781-8
+ÈD Btax781 / 011 (vlo¾ený vùz - 2. tøída se zavazadlovým odd
+CD_Btax781-9
+ÈD Btax781 / 011 (koncový pøípojný vùz - 2. tøída se zavazad
+CD_Btn753_balkan
+ÈD Btn753 balkán (2. tøída)
+CD_Bvt-1
+ÈD Bvt (2. tøída s pøepravou jízdních kol) 1/2
+CD_Bvt-2
+ÈD Bvt (2. tøída s pøepravou jízdních kol) 2/2
+CD_Cargo_122_Uhelka
+ÈD Cargo 122 "Uhelka" (elektrická lokomotiva =3kV)
+CD_Cargo_123_Trojka
+ÈD Cargo 123 "Trojka" (elektrická lokomotiva =3kV)
+CD_Cargo_130_Hrbata
+ÈD Cargo 130 "Hrbatá" (elektrická lokomotiva =3kV)
+CD_Cargo_210_Jezevec
+ÈD Cargo 210 "Jezevec" (elektrická lokomotiva ~25kV/50Hz)
+CD_Cargo_240_Laminatka
+ÈD Cargo 240 "Laminátka" (elektrická lokomotiva ~25kV/50Hz)
+CD_Cargo_363_Eso
+ÈD Cargo 363 "Eso" (elektrická dvousystémová lokomotiva =3kV
+CD_Cargo_372_Bastard
+ÈD Cargo 372 "Bastard" (elektrická dvousystémová lokomotiva 
+CD_Cargo_742_Kocour__
+ÈD Cargo 742 "Kocour"
+CD_Cargo_749_Zamracena
+ÈD Cargo 749 "Zamraèená" (motorová lokomotiva)
+CD_Cargo_752_Berta
+ÈD Cargo 752 "Berta" (motorová lokomotiva)
+CD_Cargo_753_Brejlovec_
+ÈD Cargo 753 "Brejlovec" (motorová lokomotiva)
+CD_Ddax
+ÈD Ddax / 013 (pøeprava jízdních kol)
+CD_Dmsz_balkan
+ÈD Dmsz balkán (slu¾ební)
+CD_Ds
+ÈD Ds (slu¾ební vùz)
+CD_Ds952_balkan
+ÈD Ds952 balkán (slu¾ební vùz)
+CD_Ds953
+ÈD Ds953 (slu¾ební vùz)
+CD_Ds953_balkan
+ÈD Ds953 balkán (slu¾ební vùz)
+CD_Eas
+ÈD Eas (sypké zbozí)
+CD_Eas_drevo
+ÈD Eas (døevo)
+CD_Eas_drevo_dvojice
+ÈD Eas dvojice vozù (døevo)
+CD_Eas_dvojice
+ÈD Eas dvojice vozù (sypké zbo¾í)
+CD_Eas-u
+ÈD Eas-u (sypké zbo¾í)
+CD_Eas-u_dvojice
+ÈD Eas-u dvojice vozù (sypké zbo¾í)
+CD_Es
+ÈD Es (sypké zbo¾í)
+CD_Es_drevo
+ÈD Es (døevo)
+CD_Es_drevo_dvojice
+ÈD Es dvojice vozù (døevo)
+CD_Es_dvojice
+ÈD Es dvojice vozù (sypké zbo¾í)
+CD_Gbkkqss
+ÈD Gbkkqss (po¹tovní vùz)
+CD_Postw
+ÈD Postw (po¹tovní vùz)
+CD_Tams_beton
+ÈD Tams (beton)
+CD_Tams_ocel
+ÈD Tams (ocel)
+CD_WLAB
+ÈD WLAB (lù¾kový vùz)
+CD_WLABee
+ÈD WLABee (lù¾kový vùz)
+CD_WLABmee
+ÈD WLABmee (lù¾kový vùz)
+CD_WLABmz
+ÈD WLABmz (lu¾kový vùz)
+CD_WR
+ÈD WR (jídelní vùz)
+CD_WRm
+ÈD WRm (jídelní vùz)
+CD_WRmee
+ÈD WRmee (jídelní vùz)
+CD_WRmz
+ÈD WRmz (jídelní vùz)
+CD_WRmz_balkan
+ÈD WRmz balkán (jídelní vùz)
+CDC_Eas
+ÈD Cargo Eas (sypké zbo¾í)
+CDC_Eas_drevo
+ÈD Cargo Eas (døevo)
+CDC_Eas_drevo_dvojice
+ÈD Cargo Eas dvojice vozù (døevo)
+CDC_Eas_dvojice
+ÈD Cargo Eas dvojice vozù (sypké zbo¾í)
+CDC_Eas-u
+ÈD Cargo Eas-u (sypké zbo¾í)
+CDC_Eas-u_dvojice
+ÈD Cargo Eas-u dvojice vozù (sypké zbo¾í)
+CDC_Es
+ÈD Cargo Es (sypké zbo¾í)
+CDC_Es_drevo
+ÈD Cargo Es (døevo)
+CDC_Es_drevo_dvojice
+ÈD Cargo Es dvojice vozù (døevo)
+CDC_Es_dvojice
+ÈD Cargo Es dvojice vozù (sypké zbo¾í)
+CDC_St_Talbot
+ÈD Cargo St Talbot (sypké zbo¾í)
+CDC_Zkks_mleko
+ÈD Cargo Zkks (mléko)
+CKD_Vetra
+Trolejbus ÈKD Vektra
+CSD_051
+ÈSD 051 "®abotlam" (vlo¾ený vùz)
+CSD_052
+ÈSD 052 "Lochneska" (vlo¾eny vùz)
+CSD_233_0
+ÈSD 233.0 (parní lokomotiva)
+CSD_275.0_Nohata
+ÈSD 275.0 "Nohatá" (parní lokomotiva)
+CSD_300.0_Kafemlejnek
+ÈSD 300.0 "Kafemlejnek" (parní lokomotiva)
+CSD_309_4
+ÈSD 309.4 (tendr)
+CSD_310.0_Kafemlejnek
+ÈSD 310.0 "Kafemlejnek" (parní lokomotiva)
+CSD_333_0
+ÈSD 333.0 "Prachárny" (parní lokomotiva)
+CSD_354.1_Vsudybylka
+ÈSD 354.1 "V¹udybylka" (parní lokomotiva)
+CSD_354.1_Vsudybylka_otoc
+ÈSD 351.1 "V¹udybylka" (parní lokomotiva, otoèená)
+CSD_386.0
+ÈSD 386.0 (parní lokomotiva)
+CSD_386.0_Proudnicova_lokomotiva
+ÈSD 386.0 "Proudnicová lokomotiva" (parní lokomotiva)
+CSD_387.0_Mikado
+ÈSD 387.0 "Mikado" (parní lokomotiva)
+CSD_422.0_Malej_Bejcek
+ÈSD 422.0 "Malej Bejèek" (parní lokomotiva)
+CSD_422.0_Malej_Bejcek_otoc
+ÈSD 422.0 "Malej Bejèek" (parní lokomotiva, otoèená)
+CSD_423.0_Velkej_Bejcek
+ÈSD 423.0 "Velkej Bejèek" (parní lokomotiva)
+CSD_423.0_Velkej_Bejcek_otoc
+ÈSD 423.0 "Velkej Bejèek" (parní lokomotiva, otoèená)
+CSD_451_2
+ÈSD 451 "®abotlam" (zadní elektrický vùz =3kV)
+CSD_451_Zabotlam
+ÈSD 451 "®abotlam" (pøední elektrický vùz =3kV)
+CSD_452_2
+ÈSD 452 "Lochneska" (zadní elektrický vùz =3kV)
+CSD_452_Lochneska
+ÈSD 452 "Lochneska" (pøední elektrický vùz =3kV)
+CSD_464.0_Usata
+ÈSD 464.0 "U¹atá" (parní lokomotiva)
+CSD_464.1_Usata
+ÈSD 464.1 "U¹atá" (parní lokomotiva)
+CSD_464.2_Rosnicka
+ÈSD 464.2 "Rosnièka" (parní lokomotiva)
+CSD_464.2_Rosnicka_otoc
+ÈSD 464.2 "Rosnièka" (parní lokomotiva, otoèená)
+CSD_475.1_Slechticna
+ÈSD 475.1 "©lechtièna" (parní lokomotiva)
+CSD_476.0_Inzenyrska_Lokomotiva
+ÈSD 476.0 "Rudý ïábel" (parní lokomotiva)
+CSD_477.0_Papousek
+ÈSD 477.0 "Papou¹ek" (parní lokomotiva)
+CSD_477.0_Papousek_otoc
+ÈSD 477.0 "Papou¹ek" (parní lokomotiva, otoèená)
+CSD_486.0_Zeleny_Anton
+ÈSD 486.0 "Zelený Anton" (parní lokomotiva)
+CSD_498.0_Albatros
+ÈSD 498.0 "Albatros nulka" (parní lokomotiva)
+CSD_498.1_Albatros
+ÈSD 498.1 "Albatros jednièka" (parní lokomotiva)
+CSD_516.0
+ÈSD 516.0 (tendr)
+CSD_517_0
+ÈSD 517.0 (tendr)
+CSD_523_0
+kkStB 180 (parní lokomotiva)
+CSD_524_0
+ÈSD 524.0 (parní lokomotiva)
+CSD_524_2
+ÈSD 524.2 (parní lokomotiva)
+CSD_524.1
+ÈSD 524.1 "Pìtsetètyøiadvacítka" (parní lokomotiva)
+CSD_524.1_otoc
+ÈSD 524.1 "Pìtsetètyøiadvacítka" (parní lokomotiva, otoèena)
+CSD_526.0
+ÈSD 526.0 (tendr)
+CSD_534.0_Kremak
+ÈSD 534.0 "Kremák" (parní lokomotiva)
+CSD_534.0_Kremak_(pozdni)
+ÈSD 534.0 "Kremák" (parní lokomotiva-pozdní verze)
+CSD_555.0_Nemka
+ÈSD 555.0 "Nìmka" (parní lokomotiva)
+CSD_555.1
+ÈSD 555.1 (parní lokomotiva)
+CSD_556.0_Stokr
+ÈSD 556.0 "©tokr" (parní lokomotiva)
+CSD_621.0
+ÈSD 621.0 (tendr)
+CSD_636.0_Mamut
+ÈSD 636.0 "Mamut" (parní lokomotiva)
+CSD_818.0
+ÈSD 818.0 (tendr)
+CSD_923.0
+CSD 923.0 (tendr)
+CSD_923.0_proudnicovy
+ÈSD 923.0 (proudnicový tendr)
+CSD_930.0
+ÈSD 930.0 (tendr)
+CSD_930.2
+ÈSD 930.2 (tendr)
+CSD_932.3
+ÈSD 932.0 (tendr)
+CSD_935.0
+ÈSD 935.0 (tendr)
+CSD_935.2
+ÈSD 935.2 (tendr-èerný)
+CSD_935.2_modry
+ÈSD 935.2 (tendr-modrý)
+CSD_Aa
+ÈSD Aa (1. tøída)
+CSD_Aa_1120
+ÈSD Aa 1120 (1. tøída)
+CSD_Aa_1160
+ÈSD Aa 1160 (1. tøída)
+CSD_Aa150
+ÈSD Aa150 (1. tøída)
+CSD_Aalm-d_prototyp
+ÈSD Aalm-d prototyp (1. tøída)
+CSD_Aam
+ÈSD Aam (1. tøída)
+CSD_ABa
+ÈSD ABa (1. a 2. tøída)
+CSD_ABa_2150
+ÈSD ABa 2150 (1. a 2. tøída)
+CSD_Ae_Be_R_II
+ÈSD Ae Rybak II/Be (1. tøída)
+CSD_Ai_2-2000
+ÈSD Ai 2-2000 (1. tøída)
+CSD_Amee
+ÈSD Amee (1. tøída)
+CSD_Ba
+ÈSD Ba (2. tøída)
+CSD_Ba_3400
+ÈSD Ba 3400 (2. tøída)
+CSD_Ba_4-5070
+ÈSD Ba 4-5070 (2. tøída)
+CSD_Ba250
+ÈSD Ba250 (2. tøída)
+CSD_Bac
+ÈSD Bac (lehátkový vùz 2. tøída)
+CSD_Bac_4900
+ÈSD Bac 4900 (lehatkový vùz)
+CSD_Bai
+ÈSD Bai (2. tøída)
+CSD_Bai_4-3690
+ÈSD Bai 4-3690 (2. tøída)
+CSD_Baim
+ÈSD Baim (2. tøída)
+CSD_Balm-d
+ÈSD Balm-d (2. tøída)
+CSD_Balm-d_prototyp
+ÈSD Balm-d prototyp (2. tøída)
+CSD_Balm-k
+ÈSD Balm-k (2. tøída)
+CSD_Bam
+ÈSD Bam (2. tøída)
+CSD_Bam_49
+ÈSD Bam Tatra 49 (2. tøída)
+CSD_Bam-e_(N_488.0)_(vlozeny_vuz_-_2._trida)
+ÈSD Bam-e (N 488.0) (vlo¾ený vùz - 2. tøída)
+CSD_Bap
+ÈSD Bap (2. tøída)
+CSD_BCa_2-8000
+ÈSD BCa 2-8000 (2. a 3. tøída)
+CSD_BCi_2-75
+ÈSD BCi 2-7587 (2. a 3. tøída)
+CSD_BCi_2-76
+ÈSD BCi 2-7621 (2. a 3. tøída)
+CSD_BCi_2-7653
+ÈSD BCi 2-7653 (2. a 3. tøída)
+CSD_BDa-1
+ÈSD BDa (slu¾ební/2. tøída) 1/2
+CSD_BDa-2
+ÈSD BDa (slu¾ební/2. tøída) 2/2
+CSD_BDFlm_5_35-1
+ÈSD BDFlm 5,3 35 (2. tøída/po¹tovní) 1/2
+CSD_BDFlm_5_35-2
+ÈSD BDFlm 5,3 35 (2. tøída/po¹tovní) 2/2
+CSD_BDFlm_5_40-1
+ÈSD BDFlm 5,3 40 (2. tøída/po¹tovní) 1/2
+CSD_BDFlm_5_40-2
+ÈSD BDFlm 5,3 40 (2. tøída/po¹tovní) 2/2
+CSD_BDFlm_6_36-1
+ÈSD BDFlm 6,5 36 (2. tøída/po¹tovní) 1/2
+CSD_BDFlm_6_36-2
+ÈSD BDFlm 6,5 36 (2. tøída/po¹tovní) 2/2
+CSD_BDlm_5_36-1
+ÈSD BDlm 5,3 36 (2. tøída/slu¾ební) 1/2
+CSD_BDlm_5_36-2
+ÈSD BDlm 5,3 36 (2. tøída/slu¾ební) 2/2
+CSD_BDlm_5_40-1
+ÈSD BDlm 5,3 40 (2. tøída/slu¾ební) 1/2
+CSD_BDlm_5_40-2
+ÈSD BDlm 5,3 40 (2. tøída/slu¾ební) 2/2
+CSD_BDlm_6_35-1
+ÈSD BDlm 6,5 35 (2. tøída/slu¾ební) 1/2
+CSD_BDlm_6_35-2
+ÈSD BDlm 6,5 35 (2. tøída/slu¾ebné) 2/2
+CSD_BDlm_6_50-1
+ÈSD BDlm 50 (2. tøída/slu¾ební) 1/2
+CSD_BDlm_6_50-2
+ÈSD BDlm 50 (2. tøída/slu¾ební) 2/2
+CSD_BDlm_6_56-1
+ÈSD BDlm 56 (2. tøída/slu¾ební) 1/2
+CSD_BDlm_6_56-2
+ÈSD BDlm 56 (2. tøída/slu¾ební) 2/2
+CSD_BDmee-1
+ÈSD BDmee (slu¾ební/2. tøída) 1/2
+CSD_BDmee-2
+ÈSD BDmee (slu¾ební/2. tøída) 2/2
+CSD_Be_1-4050
+ÈSD Be 1-4050 (2. tøída)
+CSD_Be_3-8400
+ÈSD Be 3-8400 (2. tøída)
+CSD_Be_Ce_R_II
+ÈSD Be Rybák II/Ce (2. tøída)
+CSD_Be_R_I
+ÈSD Be Rybák I (2. tøída)
+CSD_Be_R_II
+ÈSD Be Rybák II (2. tøída)
+CSD_BFalm-1
+ÈSD BFalm (2. tøída/slu¾ební) 1/2
+CSD_BFalm-2
+ÈSD BFalm (2. tøída/slu¾ební) 2/2
+CSD_Bg
+ÈSD Bg (2. tøída)
+CSD_Bi_2-2000
+ÈSD Bi 2-2000 (2. tøída)
+CSD_Bi_2-2655
+ÈSD Bi 2-2655 (2. tøída)
+CSD_Bi_3-9200
+ÈSD Bi 3-9200 (2. tøída)
+CSD_Bi_Ci_R_I
+ÈSD Bi Rybák I/Ci (2. tøída)
+CSD_Blm
+ÈSD Blm (2. tøída)
+CSD_Blm_5_35
+ÈSD Blm 5,3 35 (3. tøída)
+CSD_Blm_6_48
+ÈSD Blm 48 (2. tøída)
+CSD_Blm_6_53
+ÈSD Blm 53 (2. tøída)
+CSD_Blm_6_54
+ÈSD Blm 54 (2. tøída)
+CSD_Blm-1
+ÈSD Blm (2. tøída se zavazadlovým oddílem) 1/2
+CSD_Blm-2
+ÈSD Blm (2. tøída se zavazadlovým oddílem) 2/2
+CSD_Bmee
+ÈSD Bmee (2. tøída)
+CSD_Bp_2-1-1
+ÈSD Bp II. (pøední vùz - 2. tøída/slu¾ební) 1/2
+CSD_Bp_2-1-2
+ÈSD Bp II. (pøední vùz - 2. tøída/slu¾ební) 2/2
+CSD_Bp_2-2
+ÈSD Bp II. (vlo¾ený pøední vùz - 2. tøída)
+CSD_Bp_2-3
+ÈSD Bp II. (vlo¾eny zadní vùz - 2. tøída)
+CSD_Bp_2-4
+ÈSD Bp II. (zadní vùz - 2. tøída)
+CSD_Bp-1
+ÈSD Bp (pøední vùz - 2. tøída)
+CSD_Bp-2
+ÈSD Bp (vlo¾ený pøední vùz - 2. tøída)
+CSD_Bp-3
+ÈSD Bp (vlo¾ený zadní vùz - 2. tøída)
+CSD_Bp-4
+ÈSD Bp (zadní vùz - 2. tøída)
+CSD_BRa_550
+ÈSD BRa 550 (2. tøída/bufetový vùz)
+CSD_BRam
+ÈSD BRam (2. tøída / jídelní vùz)
+CSD_BRcm
+ÈSD BRcm (lehátkový/barový vùz)
+CSD_Bymme
+ÈSD Bymme (2. tøída)
+CSD_Bymme_cyklo-1
+ÈSD Bymme (2. tøída s pøepravou jízdních kol) 1/2
+CSD_Bymme_cyklo-2
+ÈSD Bymme (2. tøída s pøepravou jízdních kol) 2/2
+CSD_Ca_4-5070
+ÈSD Ca 4-5070 (3. tøída)
+CSD_Ca_4-5201
+ÈSD Ca 4-5201 (3. tøída)
+CSD_Cai_4-3550
+ÈSD Cai 4-3550 (3. tøída)
+CSD_Calm_39
+ÈSD Calm Tatra 39 (3. tøída)
+CSD_Calm_49
+ÈSD Calm Tatra 49 (3. tøída)
+CSD_CDa_4-9380-1
+ÈSD CDa 4-9380 (3. tøída/slu¾ební) 1/2
+CSD_CDa_4-9380-2
+ÈSD CDa 4-9380 (3. tøída/slu¾ební) 2/2
+CSD_CDFlm_34-1
+ÈSD CDFlm 34 (3. tøída/po¹tovní) 1/2
+CSD_CDFlm_34-2
+ÈSD CDFlm 34 (3. tøída/po¹tovní) 2/2
+CSD_CDFlm_5_35-1
+ÈSD CDFlm 5,3 35 (3. tøída/po¹tovní) 1/2
+CSD_CDFlm_5_35-2
+ÈSD CDFlm 5,3 35 (3. tøída/po¹tovní) 2/2
+CSD_CDFlm_5_40-1
+ÈSD CDFlm 5,3 40 (3. tøída/po¹tovní) 1/2
+CSD_CDFlm_5_40-2
+ÈSD CDFlm 5,3 40 (3. tøída/po¹tovní) 2/2
+CSD_CDFlm_6_36-1
+ÈSD CDFlm 6,5 36 (2. tøída/po¹tovní) 1/2
+CSD_CDFlm_6_36-2
+ÈSD CDFlm 6,5 36 (3. tøída/po¹tovní) 2/2
+CSD_CDl_4-9400-1
+ÈSD CDl 4-9400 (slu¾ební/3. tøída) 1/2
+CSD_CDl_4-9400-2
+ÈSD CDl 4-9400 (slu¾ební/3. tøída) 2/2
+CSD_CDl_4-9402-1
+ÈSD CDl 4-9402 (slu¾ební/3. tøída) 1/2
+CSD_CDl_4-9402-2
+ÈSD CDl 4-9402 (slu¾ební/3. tøída) 2/2
+CSD_CDlm_34-1
+ÈSD CDlm 34 (3. tøída/slu¾ební) 1/2
+CSD_CDlm_34-2
+ÈSD CDlm 34 (3. tøída/slu¾ební) 2/2
+CSD_CDlm_5_36-1
+ÈSD CDlm 5,3 36 (3. tøída/slu¾ební) 1/2
+CSD_CDlm_5_36-2
+ÈSD CDlm 5,3 36 (3. tøída/slu¾ební) 2/2
+CSD_CDlm_5_40-1
+ÈSD CDlm 5,3 40 (3. tøída/slu¾ební) 1/2
+CSD_CDlm_5_40-2
+ÈSD CDlm 5,3 40 (3. tøída/slu¾ební) 2/2
+CSD_CDlm_6_35-1
+ÈSD CDlm 6,5 35 (3. tøída/slu¾ební) 1/2
+CSD_CDlm_6_35-2
+ÈSD CDlm 6,5 35 (3. tøída/slu¾ební) 2/2
+CSD_CDlm_6_50-1
+ÈSD CDlm 50 (3. tøída/slu¾ební) 1/2
+CSD_CDlm_6_50-2
+ÈSD CDlm 50 (3. tøída/slu¾ební) 2/2
+CSD_CDv-1
+ÈSD CDv (3. tøída/slu¾ební) 1/2
+CSD_CDv-2
+ÈSD CDv (3. tøída/slu¾ební) 2/2
+CSD_Ce_3-8400
+ÈSD Ce 3-8400 (3. tøída)
+CSD_Ce_R_I
+ÈSD Ce Rybák I (3. tøída)
+CSD_Ce_R_II
+ÈSD Ce Rybák II (3. tøída)
+CSD_Ci_3-9200
+ÈSD Ci 3-9200 (3. tøída)
+CSD_Ci_4-15
+ÈSD Ci 4-1543 (3. tøída)
+CSD_Ci_4-17
+ÈSD Ci 4-1707 (3. tøída)
+CSD_Ci_4-18
+ÈSD Ci 4-1808 (3. tøída)
+CSD_Ci_4-20
+ÈSD Ci 4-2034 (3. tøída)
+CSD_Ci_R_I
+CSD Ci Rybák I (3. tøída)
+CSD_Cl_4-6000
+ÈSD Cl 4-6000 (3. tøída)
+CSD_Cl_4-6006
+ÈSD Cl 4-6006 (3. tøída)
+CSD_Clm_32
+ÈSD Clm 32 (3. tøída)
+CSD_Clm_34
+ÈSD Clm 34 (3. tøída)
+CSD_Clm_5_35
+ÈSD Clm 5,3 35 (3. tøída)
+CSD_Clm_6_35
+ÈSD Clm 6,5 35 (3. tøída)
+CSD_Clm_6_48
+ÈSD Clm 48 (3. tøída)
+CSD_Clm_6_53
+ÈSD Clm 53 (3. tøída)
+CSD_D_6-1832
+ÈSD D 6-1832 (slu¾ební vùz)
+CSD_Da_6-5010
+ÈSD Da 6-5010 (slu¾ební vùz)
+CSD_Da_7100
+ÈSD Da 7100 (slu¾ební)
+CSD_Da_7161
+ÈSD Da 7161 (slu¾ební)
+CSD_Dd_6-4240
+ÈSD Dd 6-4240 (slu¾ební vùz)
+CSD_Ddo_6-4900
+ÈSD Ddo 6-4900 (slu¾ební vùz)
+CSD_Dsa
+ÈSD Dsa (slu¾ební vùz)
+CSD_Dsd_6-4510
+ÈSD Dsd 6-4510 (slu¾ební vùz)
+CSD_Dsd_R_I
+ÈSD Dsd Rybák I (slu¾ební vùz)
+CSD_Dsd_R_II
+ÈSD Dsd Rybák II (slu¾ební vùz)
+CSD_E_422.0_Kapesni_Bobina
+ÈSD E 422.0 "Kapesní Bobina" (elektrická lokomotiva =1,5kV)
+CSD_E_424.0
+ÈSD E 424.0 (elektrická lokomotiva =1,5kV)
+CSD_E_426.0_Zehlicka
+ÈSD E 426.0 "®ehlicka" (elektrická lokomotiva =1,5kV)
+CSD_E_458.0_Zehlicka
+ÈSD E 458.0 "®ehlièka" (elektrická lokomotiva =3kV)
+CSD_E_458.1_Tyristorka
+ÈSD E 458.1 "Tyristorka" (elektrická lokomotiva =3kV)
+CSD_E_467.0
+ÈSD E 467.0 (elektrická lokomotiva =1,5kV)
+CSD_E_469.1_Kostitras
+ÈSD E 469.1 "Kostitøas" (elektrická lokomotiva =3kV)
+CSD_E_469.2_Uhelka
+ÈSD E 469.2 "Uhelka" (elektrická lokomotiva =3kV)
+CSD_E_469.3
+ÈSD E 469.3 (elektrická lokomotiva =3kV)
+CSD_E_469.3_Trojka
+ÈSD E 469.3 "Trojka" (elektrická lokomotiva =3kV)
+CSD_E_469.5_Stare_Dvojce_1
+ÈSD E 469.5 "Dvojièka" (elektrická lokomotiva =3kV) 1
+CSD_E_469.5_Stare_Dvojce_2
+ÈSD E 469.5 "Dvojièka (elektrická lokomotiva =3kV) 2
+CSD_E_479.0_Hrbata
+ÈSD E 479.0 "Hrbatá" (elektrická lokomotiva =3kV)
+CSD_E_479.1_Dvojce_1
+ÈSD E 479.1 "Dvojèe" (elektrická lokomotiva =3kV) 1
+CSD_E_479.1_Dvojce_2
+ÈSD E 479.1 "Dvojèe" (elektrická lokomotiva =3kV) 2
+CSD_E_499.0_Bobina
+ÈSD E 499.0 "Bobina" (elektrická lokomotiva =3kV)
+CSD_E_499.1_Bobina
+ÈSD E 499.1 "Bobina" (elektrická lokomotiva =3kV)
+CSD_E_499.2_Banan
+ÈSD E 499.2 "Banán" (elektrická lokomotiva =3kV)
+CSD_E_499.3_Pershing
+ÈSD E 499.3 "Pershing" (elektrická lokomotiva =3kV)
+CSD_E_669.0_Sestikolak
+ÈSD E 669.0 "©estikolák" (elektrická lokomotiva =3kV)
+CSD_E_669.1_Sestikolak
+ÈSD E 669.1 "©estikolák" (elektrická lokomotiva =3kV)
+CSD_E_669.2_Sestikolak
+ÈSD E 669.2 "©estikolák" (elektrická lokomotiva =3kV)
+CSD_E_669.3_Sestikolak
+ÈSD E 669.3 "Rakana" (elektrická lokomotiva =3kV)
+CSD_Eas
+ÈSD Eas (sypké zbo¾í)
+CSD_Eas_drevo
+ÈSD Eas (døevo)
+CSD_Eas_drevo_dvojice
+ÈSD Eas dvojice vozù (døevo)
+CSD_Eas_dvojice
+ÈSD Eas dvojice vozù (sypké zbo¾í)
+CSD_EM_475.1_Zabotlam
+ÈSD EM 475.1 "®abotlam" (pøední elektrický vùz =3kV)
+CSD_EM_475.1_zadni
+ÈSD EM 475.1 "®abotlam" (zadní elektrický vùz =3kV)
+CSD_EM_475.2_Lochneska
+ÈSD EM 475.2 "Lochneska" (pøední elektrický vùz =3kV)
+CSD_EM_475.2_zadni
+ÈSD EM 475.2 "Lochneska" (zadní elektrický vùz =3kV)
+CSD_EM_488.0_Tornado_(elektricky_vuz_-_2._trida/sluzebni)_1/2
+ÈSD EM 488.0 Tornado (pøední elektrický vùz - 2. tøída/slu¾e
+CSD_EM_488.0_Tornado_(elektricky_vuz_-_2._trida/sluzebni)_2/2
+ÈSD EM 488.0 Tornado (pøední elektrický vùz - 2. tøída/slu¾e
+CSD_EM_488.0_Tornado_(zadni_elektricky_vuz_-_2._trida/sluzebni)_1/2
+ÈSD EM 488.0 Tornado (zadní elektrický vùz - 2. tøída/slu¾eb
+CSD_EM_488.0_Tornado_(zadni_elektricky_vuz_-_2._trida/sluzebni)_2/2
+ÈSD EM 488.0_Tornado_(zadní elektrický vùz - 2. tøída/slu¾eb
+CSD_Es
+ÈSD Es (sypké zbo¾í)
+CSD_ES_499.0_Gorila
+ÈSD ES 499.0 "Gorila" (elektrická dvousystémová lokomotiva =
+CSD_ES_499.1_Eso
+ÈSD ES 499.1 "Eso" (elektrická dvousystémová lokomotiva =3kV
+CSD_ES_499.2_Bastard
+ÈSD ES 499.2 "Bastard" (elektrická dvousystémová lokomotiva 
+CSD_Es_drevo
+ÈSD Es (døevo)
+CSD_Es_drevo_dvojice
+ÈSD Es dvojice vozù (døevo)
+CSD_Es_dvojice
+ÈSD Es dvojice vozù (sypké zbo¾í)
+CSD_F_R_I
+ÈSD F Rybák I (po¹tovní vùz)
+CSD_F_R_II
+ÈSD F Rybák II (po¹tovní vùz)
+CSD_Fa
+ÈSD Fa (po¹tovní vùz)
+CSD_Gbkkqs
+ÈSD Gbkkqs (po¹tovní vùz)
+CSD_Gp_Prazdroj
+ÈSD Gp Prazdroj (chladicí vùz na pivo)
+CSD_L
+ÈSD L (chladicí vùz na maso)
+CSD_Laz
+ÈSD Laz (mra¾ené potraviny)
+CSD_Lm
+ÈSD Lm (chladicí vùz na maso)
+CSD_Lp
+ÈSD Lp (chladicí vùz na pivo)
+CSD_Lp_Budvar
+ÈSD Lp Budvar (chladicí vùz na pivo)
+CSD_Lp_Ferdinand
+ÈSD Lp Ferdinand (chladicí vùz na pivo)
+CSD_Lp_Prazdroj
+ÈSD Lp Prazdroj (chladicí vùz na pivo)
+CSD_M_120.0_Autobus
+ÈSD M 120.0 "Autobus"
+CSD_M_295.0a_Hargita
+ÈSD M 295.0 "Hargita" (pøední vùz motorové jednotky)
+CSD_M_295.0b_Hargita
+ÈSD M 295.0 "Hargita" (zadní vùz motorové jednotky)
+CSD_M_295.0c
+ÈSD M 295.0 "Hargita" (støední vùz motorové jednotky)
+CSD_M120_2
+ÈSD M120.2 (motorový vùz - 3. tøída)
+CSD_M120_3
+ÈSD M120.3 "Malý vì¾ák" (motorový vùz - 3. tøída)
+CSD_M120_4
+ÈSD M120.4 "Vì¾ák" (motorový vùz - 3. tøída)
+CSD_M120_5-1
+ÈSD M120.5 (motorový vùz - 3. tøída s pøepravou zavazadel) 1
+CSD_M120_5-2
+ÈSD M120.5 (motorový vùz - 3. tøída s pøepravou zavazadel) 2
+CSD_M122_0
+ÈSD M122.0 (motorový vùz - 3. tøída)
+CSD_M124_0-1
+ÈSD M124.0 "Komárek" (parní motorový vùz - 2. a 3. tøída s p
+CSD_M124_0-2
+ÈSD M124.0 "Komárek" (parní motorový vùz - 2. a 3. tøída s p
+CSD_M130_1_1
+ÈSD M130.1 I. (motorový vùz - 3. tøída)
+CSD_M130_1_2
+ÈSD M130.1 II. (motorový vùz - 3. tøída)
+CSD_M130_2
+ÈSD M130.2 "Rychlý vì¾ák" (motorový vùz - 3. tøída)
+CSD_M130_4
+ÈSD M130.4 (motorový vùz - 3. tøída)
+CSD_M131_1
+ÈSD M131.1 "Hurvínek" (motorový vùz - 3. tøída)
+CSD_M131_1_2tr
+ÈSD M131.1 "Hurvínek" (motorový vùz - 2. tøída)
+CSD_M132_0
+ÈSD M132.0 (motorový vùz - 3. tøída)
+CSD_M134_0_posta
+ÈSD M134.0 (motorový vùz - pøeprava zavazadel)
+CSD_M134_0_zbozi
+ÈSD M134.0 (motorový vùz - kusové zbo¾í)
+CSD_M140_1
+ÈSD M140.1 "Raketa" (motorový vùz - pøeprava novin)
+CSD_M152_0
+ÈSD M152.0 (motorový vùz - 2. tøída)
+CSD_M210_0
+ÈSD M210.0 (motorový vùz - 3. tøída)
+CSD_M232_1
+ÈSD M232.1 (motorový vùz - 3. tøída)
+CSD_M232_1_cerveny
+ÈSD M232.1 èervený (motorový vùz - 3. tøída)
+CSD_M240_0
+ÈSD M240.0 "Singrovka" (motorový vùz - 2. tøída)
+CSD_M240_0-1
+ÈSD M240.0 "Singrovka" (motorový vùz - 2. tøída/slu¾ební) 1/
+CSD_M240_0-2
+ÈSD M240.0 "Singrovka" (motorový vùz - 2. tøída/slu¾ební) 2/
+CSD_M242_0
+ÈSD M242.0 (motorový vùz - 3. tøída)
+CSD_M242_0_cerveny
+ÈSD M242.0 èervený (motorový vùz - 3. tøída)
+CSD_M260_0-1
+ÈSD M260.0 "Støíbrný ¹íp" (motorový vùz - 3. tøída/slu¾ební)
+CSD_M260_0-2
+ÈSD M260.0 "Støíbrný ¹íp" (motorový vùz - 3. tøída/slu¾ební)
+CSD_M262_0-1
+ÈSD M262.0 "Ponorka" (motorový vùz - 2. tøída/slu¾ební) 1/2
+CSD_M262_0-2
+ÈSD M262.0 "Ponorka" (motorový vùz - 2. tøída/slu¾ební) 2/2
+CSD_M262_1-1
+ÈSD M262.1 "Loïák" (motorový vùz - 2. tøída/slu¾ební) 1/2
+CSD_M262_1-2
+ÈSD M262.1 "Loïák" (motorový vùz - 2. tøída/slu¾ební) 2/2
+CSD_M283_1_prototyp
+ÈSD M283.1 prototyp "Krokodýl" (motorový vùz - 2. tøída)
+CSD_M283_1_prototyp_otoc
+ÈSD M283.1 prototyp "Krokodýl" (zadní motorový vùz - 2. tøíd
+CSD_M283_1_prototyp_otoc-1
+ÈSD M283.1 prototyp "Krokodýl" (zadní motorový vùz - 2. tøíd
+CSD_M283_1_prototyp_otoc-2
+ÈSD M283.1 prototyp "Krokodýl" (zadní motorový vùz - 2. tøíd
+CSD_M283_1_prototyp-1
+CSD M283.1 prototyp "Krokodýl" (motorový vùz - 2. tøída/slu¾
+CSD_M283_1_prototyp-2
+ÈSD M283.1 prototyp "Krokodýl" (motorový vùz - 2. tøída/slu¾
+CSD_M284_1-1
+ÈSD M284.1 (motorový vùz - 3. tøída/slu¾ební) 1/2
+CSD_M284_1-2
+ÈSD M284.1 (motorový vùz - 3. tøída/slu¾ební) 2/2
+CSD_M286_0
+ÈSD M286.0 "Krokodýl" (motorový vùz - 2. tøída)
+CSD_M286_0_otoc
+ÈSD M286.0 "Krokodýl" (zadní motorový vùz - 2. tøída)
+CSD_M286_0_otoc-1
+ÈSD M286.0 "Krokodýl" (zadní motorový vùz - 2. tøída/slu¾ebn
+CSD_M286_0_otoc-2
+ÈSD M286.0 "Krokodýl" (zadní motorový vùz - 2. tøída/slu¾ebn
+CSD_M286_0-1
+ÈSD M286.0 "Krokodýl" (motorový vùz - 2. tøída/slu¾ební) 1/2
+CSD_M286_0-2
+ÈSD M286.0 "Krokodýl" (motorový vùz - 2. tøída/slu¾ební) 2/2
+CSD_M286_1
+ÈSD M286.1 "Krokodýl" (motorový vùz - 2. tøída)
+CSD_M286_1_otoc
+ÈSD M286.1 "Krokodýl" (zadní motorový vùz - 2. tøída)
+CSD_M286_1_otoc-1
+ÈSD M286.1 "Krokodýl" (zadní motorový vùz - 2. tøída/slu¾ebn
+CSD_M286_1_otoc-2
+ÈSD M286.1 "Krokodýl" (zadní motorový vùz - 2. tøída/slu¾ebn
+CSD_M286_1-1
+ÈSD M286.1 "Krokodýl" (motorový vùz - 2. tøída/slu¾ební) 1/2
+CSD_M286_1-2
+ÈSD M286.1 "Krokodýl" (motorový vùz - 2. tøída/slu¾ební) 2/2
+CSD_M290_0
+ÈSD M290.0 "Slovenská Strela" (motorový vùz - 2. tøída)
+CSD_M296_1
+ÈSD M296.1 "Hydra" (motorový vùz - 2. tøída)
+CSD_M296_1-1
+ÈSD M296.1 "Hydra" (motorový vùz - 2. tøída/slu¾ební) 1/2
+CSD_M296_1-2
+ÈSD M296.1 "Hydra" (motorový vùz - 2. tøída/slu¾ební) 2/2
+CSD_M296_1-otoc
+ÈSD M296.1 "Hydra" (zadní motorový vùz - 2. tøída)
+CSD_M296_1-otoc-1
+ÈSD M296.1 "Hydra" (zadní motorový vùz - 2. tøída/slu¾ební) 
+CSD_M296_1-otoc-2
+ÈSD M296.1 "Hydra" (zadní motorový vùz - 2. tøída/slu¾ební) 
+CSD_M296_2
+ÈSD M296.2 "Hydra" (motorový vùz - 2. tøída)
+CSD_M296_2-1
+ÈSD M475.0 "Chrochtadlo" (motorovy vùz - 2. tøída/slu¾ební) 
+CSD_M296_2-2
+ÈSD M296.2 "Hydra" (motorovy vùz - 2. tøída/slu¾ební) 2/2
+CSD_M296_2-otoc
+ÈSD M296.2 "Hydra" (zadní motorový vùz - 2. tøída)
+CSD_M296_2-otoc-1
+ÈSD M296.2 "Hydra" (zadní motorový vùz - 2. tøída/slu¾ební) 
+CSD_M296_2-otoc-2
+ÈSD M296.2 "Hydra" (zadní motorový vùz - 2. tøída/slu¾ební) 
+CSD_M475_0
+ÈSD M475.0 "Chrochtadlo" (motorový vùz - 2. tøída)
+CSD_M475_0-1
+ÈSD M475.0 "Chrochtadlo" (motorový vùz - 2. tøída/slu¾ební) 
+CSD_M475_0-2
+ÈSD M475.0 "Chrochtadlo" (motorový vùz - 2. tøída/slu¾ební) 
+CSD_N_475.1
+ÈSD N 475.1 "®abotlam" (vlo¾ený vùz)
+CSD_N_475.2
+ÈSD N 475.2 "Lochneska" (vlo¾ený vùz)
+CSD_N_488.0_(vlozeny_vuz_-_2._trida)
+ÈSD N 488.0 (vlo¾ený vùz - 2. tøída)
+CSD_R
+ÈSD R (ropné produkty)
+CSD_R_(tendr)
+ÈSD R (kotlový vùz s topným olejem)
+CSD_R_mleko
+ÈSD R (mléko)
+CSD_Rt_mleko
+ÈSD Rt (mléko)
+CSD_S_479.0
+ÈSD S 479.0 (elektrická lokomotiva ~25kV/50Hz)
+CSD_S_489.0_Laminatka
+ÈSD S 489.0 "Laminátka" (elektrická lokomotiva ~25kV/50Hz)
+CSD_S_499.0_Laminatka
+ÈSD S 499.0 "Laminátka" (elektrická lokomotiva ~25kV/50Hz)
+CSD_S_499.02_Plechac
+ÈSD S 499.02 "Plecháè" (elektrická lokomotiva ~25kV/50Hz)
+CSD_S_499.2_Princezna
+ÈSD S 499.2 "Princezna" (elektrická lokomotiva ~25kV/50Hz)
+CSD_S_699.0_Velka_Laminatka
+ÈSD S 699.0 "Velká Laminátka" (elektrická lokomotiva ~25kV/5
+csd_S458_0
+ÈSD S458.0 (elektrická lokomotiva ~25kV/50Hz)
+CSD_SM_488.0_Tornado_(elektricky_vuz_-_2._trida/sluzebni)_1/2
+ÈSD SM 488.0 Tornado (pøední elektrický vùz - 2. tøída/slu¾e
+CSD_SM_488.0_Tornado_(elektricky_vuz_-_2._trida/sluzebni)_2/2
+ÈSD SM 488.0 Tornado (pøední elektrický vùz - 2. tøída/slu¾e
+CSD_SM_488.0_Tornado_(zadni_elektricky_vuz_-_2._trida/sluzebni)_1/2
+ÈSD SM 488.0 Tornado (zadní elektrický vùz - 2. tøída/slu¾eb
+CSD_SM_488.0_Tornado_(zadni_elektricky_vuz_-_2._trida/sluzebni)_2/2
+ÈSD SM 488.0 Tornado (zadní elektrický vùz - 2. tøída/slu¾eb
+CSD_St_Talbot
+ÈSD St Talbot (sypké zbo¾í)
+CSD_T_426.0_Rakusanka
+ÈSD T 426.0 "Raku¹anka" (motorová lokomotiva)
+CSD_T_435.0_Hektor
+ÈSD T 435.0 "Hektor" (motorová lokomotiva)
+CSD_T_448.0_Bangaldeska
+ÈSD T 448.0 "Bangladé¹ka" (motorová lokomotiva)
+CSD_T_458.1_Velky_Hektor
+ÈSD T 458.1 "Velký Hektor" (motorová lokomotiva)
+CSD_T_466.0_Pielstick
+ÈSD T 466.0 "Pielstick" (motorová lokomotiva)
+CSD_T_466.2_Kocour__
+ÈSD T 466.2 "Kocour" (motorová lokomotiva)
+CSD_T_478.1_Bardotka
+ÈSD T 478.1 "Bardotka" (motorová lokomotiva)
+CSD_T_478.1_Brejlovec
+ÈSD T 478.1 "Brejlovec" (motorová lokomotiva)
+CSD_T_478.2_Berta
+ÈSD T 478.2 "Berta" (motorová lokomotiva)
+CSD_T_478.2_Brejlovec
+ÈSD T 478.2 "Brejlovec" (motorová lokomotiva)
+CSD_T_478.3_Brejlovec
+ÈSD T 478.3 "Brejlovec" (motorová lokomotiva)
+CSD_T_499.0_Kyklop
+ÈSD T 499.0 "Kyklop" (motorová lokomotiva)
+CSD_T_678.0_Pomeranc
+ÈSD T 678.0 "Pomeranè" (motorová lokomotiva)
+CSD_T_679.0_Pomeranc
+ÈSD T 679.0 "Pomeranè" (motorová lokomotiva)
+CSD_T_679.1_Sergej
+ÈSD T 679.1 "Sergej" (motorová lokomotiva)
+CSD_T_679.2_Ragulin
+ÈSD T 679.2 "Ragulin" (motorová lokomotiva)
+CSD_T_698.0_Kokakola_1
+ÈSD T 698.0 "Kokakola" (motorová lokomotiva) 1
+CSD_T_698.0_Kokakola_2
+ÈSD T 698.0 "Kokakola" (motorová lokomotiva) 2
+CSD_T324_0
+ÈSD T324.0 prototyp (dieselová posunovací lokomotiva)
+CSD_T334_0_cervena
+ÈSD T334.0 "Rosnièka" èervená (dieselová posunovací lokomoti
+CSD_T334_0_zelena
+ÈSD T334.0 "Rosnièka" zelená (dieselová posunovací lokomotiv
+CSD_T334_0_zelena_svetla
+ÈSD T334.0 "Rosnièka" zelená svìtlá (dieselová posunovací lo
+csd_t669_0
+ÈSD T669.0 "Èmelák" (dieselová lokomotiva)
+csd_t669_0_otoc
+ÈSD T669.0 "Èmelák" otoèená (dieselová lokomotiva)
+csd_t669_001
+ÈSD T669.001 "Èmelák" prototyp (dieselová lokomotiva)
+CSD_TL659.001_Turbinka
+ÈSD TL 659.001 "Turbínka" (turbínová lokomotiva)
+CSD_TL659.002_Turbinka
+ÈSD TL 659.002 "Turbínka" (turbínová lokomotiva)
+CSD_Ut
+ÈSD Ut (sypké zbo¾í)
+CSD_Ut_drevo
+ÈSD Ut (døevo)
+CSD_Uz
+ÈSD Uz (cement)
+CSD_Vssa
+ÈSD Vssa (sypké zbo¾í)
+CSD_Vssa_dvojice
+ÈSD Vssa dvojice vozù (sypké zbo¾í)
+CSD_Vte
+ÈSD Vte (sypké zbo¾í)
+CSD_Vte_drevo
+ÈSD Vte (døevo)
+CSD_Vte_drevo_dvojice
+ÈSD Vte dvojice vozù (døevo)
+CSD_Vte_dvojice
+ÈSD Vte dvojice vozù (sypké zbo¾í)
+CSD_Vtr
+ÈSD Vtr (sypké zbo¾í)
+CSD_Vtr_drevo
+ÈSD Vtr (døevo)
+CSD_Vtr_drevo_dvojice
+ÈSD Vtr dvojice vozù (døevo)
+CSD_Vtr_dvojice
+ÈSD Vtr dvojice vozù (sypké zbo¾é)
+CSD_Vu
+ÈSD Vu (sypké zbo¾í)
+CSD_Vut
+ÈSD Vut (sypké zbo¾í)
+CSD_Vut_drevo
+ÈSD Vut (døevo)
+CSD_Wa
+ÈSD Wa (sypké zbo¾í)
+CSD_Wa_dvojice
+ÈSD Wa dvojice vozù (sypké zbo¾í)
+CSD_WLA_120
+ÈSD WLA 120 (lù¾kový vùz, 1. tøída)
+CSD_WLAB
+ÈSD WLAB (lù¾kový vùz)
+CSD_WLB_300
+ÈSD WLB 300 (lù¾kový vùz, 2. tøída)
+CSD_WR
+ÈSD WR (jídelní vùz)
+CSD_WR_400
+ÈSD WR 400 (jídelní vùz)
+CSD_WRab
+ÈSD WRab (jídelní vùz)
+CSD_Z
+ÈSD Z (kusové zbo¾í)
+CSD_Z_cement
+ÈSD Z (cement)
+CSD_Z_dvojice
+ÈSD Z dvojice vozù (kusové zbo¾í)
+CSD_Z_lidi
+ÈSD Z (pøeprava osob)
+CSD_Z_obili
+ÈSD Z (obiloviny)
+CSD_Z_obili_dvojice
+ÈSD Z dvojice vozù (obiloviny)
+CSD_Z1
+ÈSD Z 1 (kusové zbo¾í)
+CSD_Z1_lidi
+ÈSD Z 1 (pøeprava osob)
+CSD_Z1_obili
+ÈSD Z 1 (obiloviny)
+CSD_Zav
+ÈSD Zav (kusové zbo¾í)
+CSD_Zav_obili
+ÈSD Zav (lehké zbo¾í)
+CSD_Ztr
+ÈSD Ztr (kusové zbo¾í)
+CSD_Ztr_dvojice
+ÈSD Ztr dvojice vozù (kusové zbo¾í)
+CSD_Ztr_obili
+ÈSD Ztr (obiloviny)
+CSD_Ztr_obili_dvojice
+ÈSD Ztr dvojice vozù (obiloviny)
+CSD_ZZdv-1
+ÈSD ZZdv (spì¹inová jednotka - pøední èást)
+CSD_ZZdv-2
+ÈSD ZZdv (spì¹inová jednotka - zadní èást)
+CSD_Zzv
+ÈSD Zzv (cement)
+CSD_Zzv_dvojice
+ÈSD Zzv dvojice vozù (cement)
+db_038
+DB 038 (parní osobní lokomotiva)
+db_038_otoc
+DB 038 otoèená (parní osobní lokomotiva)
+DB_103
+DB 103 (elektrická expresní lokomotiva ~15kV/16,7Hz)
+DB_110
+DB 110 modrá (elektrická lokomotiva ~15kV/16,7Hz)
+DB_110_TEE_blue
+DB 110 TEE modrá (elektrická lokomotiva ~15kV/16,7Hz)
+DB_111_blue
+DB 111 oceánova modrá (elektrická lokomotiva ~15kV/16,7Hz)
+DB_111_Lufthansa
+DB 111 Lufthansa (elektrická lokomotiva ~15kV/16,7Hz)
+DB_111_orientrot
+DB 111 orientální èervená (elektrická lokomotiva ~15kV/16,7H
+DB_111_red
+DB 111 èervená (elektrická lokomotiva ~15kV/16,7Hz)
+DB_111_S-Bahn
+DB 111 S-Bahn (elektrická lokomotiva ~15kV/16,7Hz)
+DB_112_TEE_blue
+DB 112 TEE modrá (elektrická lokomotiva ~15kV/16,7Hz)
+DB_112_TEE_red
+DB 112 TEE èervená (elektrická lokomotiva ~15kV/16,7Hz)
+DB_113_orientrot
+DB 113 orientální èervená (elektrická lokomotiva ~15kV/16,7H
+DB_113_red
+DB 113 èervená (elektrická lokomotiva ~15kV/16,7Hz)
+DB_113_TEE_red
+DB 113 TEE èervená (elektrická lokomotiva ~15kV/16,7Hz)
+DB_116
+DB 116 (elektrická lokomotiva ~15kV/16,7Hz)
+DB_132
+DB 132 (elektrická lokomotiva ~15kV/16,7Hz)
+DB_140
+DB 140 zelená (elektrická lokomotiva ~15kV/16,7Hz)
+DB_140_blue
+DB 140 oceanová modrá (elektrická lokomotiva ~15kV/16,7Hz)
+DB_140_orientrot
+DB 140 orientální èervená (elektrická lokomotiva ~15kV/16,7H
+DB_140_red
+DB 140 èervená (elektrická lokomotiva ~15kV/16,7Hz)
+DB_141
+DB 141 modrá (elektrická lokomotiva ~15kV/16,7Hz)
+DB_141_blue
+DB 141 oceánová modrá (elektrická lokomotiva ~15kV/16,7Hz)
+DB_141_green
+DB 141 zelená (elektrická lokomotiva ~15kV/16,7Hz)
+DB_141_orientrot
+DB 141 orientální èervená (elektrická lokomotiva ~15kV/16,7H
+DB_141_red
+DB 141 èervená (elektrická lokomotiva ~15kV/16,7Hz)
+DB_141_S-Bahn
+DB 141 S-Bahn (elektrická lokomotiva ~15kV/16,7Hz)
+DB_141_wendezug
+DB 141 kyvadlový vlak Karlsruhe (elektrická lokomotiva ~15kV
+DB_141_wendezug_otoc
+DB 141 kyvadlový vlak Karlsruhe (zadní elektrická lokomotiva
+DB_150
+DB 150 zelená (elektrická lokomotiva ~15kV/16,7Hz)
+DB_150_blue
+DB 150 oceánová modrá (elektrická lokomotiva ~15kV/16,7Hz)
+DB_150_orientrot
+DB 150 orientální èervená (elektrická lokomotiva ~15kV/16,7H
+DB_150_red
+DB 150 èervená (elektrická lokomotiva ~15kV/16,7Hz)
+DB_151
+DB 151 zelená (elektrická lokomotiva ~15kV/16,7Hz)
+DB_151_blue
+DB 151 oceánová modrá (elektrická lokomotiva ~15kV/16,7Hz)
+DB_151_orientrot
+DB 151 orientální èervená (elektrická lokomotiva ~15kV/16,7H
+DB_151_railion
+DB 151 Railion (elektrická lokomotiva ~15kV/16,7Hz)
+DB_151_red
+DB 151 èervená (elektrická lokomotiva ~15kV/16,7Hz)
+DB_169_002
+DB 169.002 "Pauline" (elektrická lokomotiva ~15kV/16,7Hz)
+DB_169_003
+DB 169.003 "Hermine" (elektrická lokomotiva ~15kV/16,7Hz)
+DB_181_2
+DB 181.2 zelená (elektrická dvousystémová lokomotiva ~15kV/1
+DB_181_2_blue
+DB 181.2 oceánová modrá (elektrická dvousystémová lokomotiva
+DB_181_2_orientrot
+DB 181.2 orientální èervená (elektrická dvousystémová lokomo
+DB_181_2_red
+DB 181.2 èervená (elektrická dvousystémová lokomotiva ~15kV/
+db_2'2't21,5
+DB 2´2´ T 21,5 (tendr)
+db_2'2't21,5_otoc
+DB 2´2´ T 21,5 otoèená (tendr)
+db_2'2't30
+DB 2´2´ T 30 (tendr)
+db_2'2't30_otoc
+DB 2´2´ T 30 otoèená (tendr)
+db_210
+DB 210 (dieselová lokomotiva)
+db_211
+DB 211 (dieselová lokomotiva)
+db_212
+DB 212 (dieselová lokomotiva)
+db_220
+DB 220 (dieselová lokomotiva)
+db_220_bb
+DB 220 oceanova modrá (dieselová lokomotiva)
+db_221
+DB 221 (dieselová lokomotiva)
+db_221_bb
+DB 221 oceánová modrá (dieselová lokomotiva)
+db_230
+DB 230 (dieselová lokomotiva)
+db_236
+DB 236 (dieselová lokomotiva)
+db_270
+DB 270 (dieselová lokomotiva)
+db_290
+DB 290 (dieselová lokomotiva)
+db_38
+DB 38 (parní osobní lokomotiva)
+db_38_otoc
+DB 38 otoèená (parní osobní lokomotiva)
+DB_627_0_blue
+DB 627.0 oceánová modrá (motorový vùz - 2. tøída)
+DB_627_0_blue_as
+DB 627.0 oceánová modrá automat. spøáhlo (motorový vùz - 2. 
+DB_627_0_cyklo_blue_as-1
+DB 627.0 oceánová modrá automat. spøáhlo (motorový vùz - 2. 
+DB_627_0_cyklo_blue_as-2
+DB 627.0 oceánová modrá automat. spøáhlo (motorový vùz - 2. 
+DB_627_0_cyklo_blue-1
+DB 627.0 oceánová modrá (motorový vùz - 2. tøída s pøepravou
+DB_627_0_cyklo_blue-2
+DB 627.0 oceánová modrá (motorový vùz - 2. tøída s pøepravou
+DB_627_0_cyklo_red-1
+DB 627.0 èervená (motorový vùz - 2. tøída s pøepravou jízdní
+DB_627_0_cyklo_red-2
+DB 627.0 èervená (motorový vùz - 2. tøída s pøepravou jízdní
+DB_627_0_red
+DB 627.0 èervená (motorový vùz - 2. tøída)
+DB_627_1_blue
+DB 627.1 oceánová modrá (motorový vùz - 2. tøída)
+DB_627_1_cyklo_blue-1
+DB 627.1 oceánová modrá (motorový vùz - 2. tøída s pøepravou
+DB_627_1_cyklo_blue-2
+DB 627.1 oceánová modrá (motorový vùz - 2. tøída s pøepravou
+DB_627_1_cyklo_red-1
+DB 627.1 èervená (motorový vùz - 2. tøída s pøepravou jízdní
+DB_627_1_cyklo_red-2
+DB 627.1 èervená (motorový vùz - 2. tøída s pøepravou jízdní
+DB_627_1_red
+DB 627.1 èervená (motorový vùz - 2. tøída)
+DB_628_0_blue
+DB 628.0 oceánová modrá (pøední motorový vùz - 2. tøída)
+DB_628_0_blue_as
+DB 628.0 oceánová modrá automat. spøáhlo (pøední motorový vù
+DB_628_0_blue_as_otoc
+DB 628.0 oceánová modrá automat. spøáhlo (zadní motorový vùz
+DB_628_0_blue_otoc
+DB 628.0 oceánová modrá (zadní motorový vùz - 2. tøída)
+DB_628_0_cyklo_blue_as_otoc-1
+DB 628.0 oceánová modrá automat. spøáhlo (zadní motorový vùz
+DB_628_0_cyklo_blue_as_otoc-2
+DB 628.0 oceánová modrá automat. spøáhlo (zadní motorový vùz
+DB_628_0_cyklo_blue-1
+DB 628.0 oceánová modrá (pøední motorový vùz - 2. tøída s pø
+DB_628_0_cyklo_blue-2
+DB 628.0 oceánová modrá (pøední motorový vùz - 2. tøída s pø
+DB_628_0_mint
+DB 628.0 mentolová (pøední motorový vùz - 2. tøída)
+DB_628_0_mint_otoc
+DB 628.0 mentolová (zadní motorový vùz - 2. tøída)
+DB_628_2_cyklo_mint-1
+DB 628.2 mentolová (pøední motorový vùz - 2. tøída s pøeprav
+DB_628_2_cyklo_mint-2
+DB 628.2 mentolová (pøední motorový vùz - 2. tøída s pøeprav
+DB_628_2_cyklo_red-1
+DB 628.2 èervená (zadní motorový vùz - 2. tøída s pøepravou 
+DB_628_2_cyklo_red-2
+DB 628.2 èervená (zadní motorový vùz - 2. tøída s pøepravou 
+DB_628_2_mint
+DB 628.2 mentolová (zadní motorový vùz - 2. tøída)
+DB_628_2_red
+DB 628.2 èervená (pøední motorový vùz - 2. tøída)
+DB_628_4_cyklo_mint-1
+DB 628.4 mentolova (zadní motorový vùz - 2. tøída s pøepravo
+DB_628_4_cyklo_mint-2
+DB 628.4 mentolová (zadní motorový vùz - 2. tøída s pøepravo
+DB_628_4_cyklo_red-1
+DB 628.4 èervená (pøední motorový vùz - 2. tøída s pøepravou
+DB_628_4_cyklo_red-2
+DB 628.4 èervená (pøední motorový vùz - 2. tøída s pøepravou
+DB_628_4_mint
+DB 628.4 mentolová (pøední motorový vùz - 2. tøída)
+DB_628_4_red
+DB 628.4 èervená (zadní motorový vùz - 2. tøída)
+DB_628_9_cyklo_red-1
+DB 628.9 èervená (zadní motorový vùz - 2. tøída s pøepravou 
+DB_628_9_cyklo_red-2
+DB 628.9 èervená (zadní motorový vùz - 2. tøída s pøepravou 
+DB_628_9_red
+DB 628.9 èervená (pøední motorový vùz - 2. tøída)
+DB_629_cyklo_red-1
+DB 629 èervená (pøední motorový vùz - 1. a 2. tøída s pøepra
+DB_629_cyklo_red-2
+DB 629 èervená (pøední motorový vùz - 1. a 2. tøída s pøepra
+DB_629_red
+DB 629 èervená (zadní motorový vùz - 1. a 2. tøída)
+DB_650
+DB 650 "Regioshuttle" (motorový vùz - 2. tøída)
+DB_650_as
+DB 650 "Regioshuttle" automat. spøáhlo (motorový vùz - 2. tø
+DB_650_as-1
+DB 650 "Regioshuttle" automat. spøáhlo (motorový vùz - 2. tø
+DB_650_as-2
+DB 650 "Regioshuttle" automat. spøáhlo (motorový vùz - 2. tø
+DB_650-1
+DB 650 "Regioshuttle" (motorový vùz - 2. tøída s pøepravou j
+DB_650-2
+DB 650 "Regioshuttle" (motorový vùz - 2. tøída s pøepravou j
+DB_928_2_cyklo_mint-1
+DB 928.2 mentolová (zadní øídící vùz - 1. a 2. tøída s pøepr
+DB_928_2_cyklo_mint-2
+DB 928.2 mentolová (zadní øídící vùz - 1. a 2. tøída s pøepr
+DB_928_2_cyklo_red-1
+DB 928.2 èervená (pøední øídící vùz - 1. a 2. tøída s pøepra
+DB_928_2_cyklo_red-2
+DB 928.2 èervená (pøední øídící vùz - 1. a 2. tøída s pøepra
+DB_928_2_mint
+DB 928.2 mentolová (pøední øídící vùz - 1. a 2. tøída)
+DB_928_2_red
+DB 928.2 èervená (zadní øídící vùz - 1. a 2. tøída)
+DB_928_4_cyklo_mint-1
+DB 928.4 mentolová (pøední øídící vùz - 1. a 2. tøída s pøep
+DB_928_4_cyklo_mint-2
+DB 928.4 mentolová (pøední øídící vùz - 1. a 2. tøída s pøep
+DB_928_4_cyklo_red-1
+DB 928.4 èervená (zadní øídící vùz - 1. a 2. tøída s pøeprav
+DB_928_4_cyklo_red-2
+DB 928.4 èervená (zadní øídící vùz - 1. a 2. tøída s pøeprav
+DB_928_4_mint
+DB 928.4 mentolová (zadní øídící vùz - 1. a 2. tøída)
+DB_928_4_red
+DB 928.4 èervená (pøední øídící vùz - 1. a 2. tøída)
+db_a4um
+DB A4um (1. tøída)
+DB_A4um-54
+DB A4um-54 (1. tøída)
+DB_A4um-61
+DB A4um-61 (1. tøída)
+DB_A4ymb-54
+DB A4ymb-54 (1. tøída)
+db_ab3yg
+DB AB3yg (1. tøída)
+DB_AB4nb-58
+DB AB4nb-58 (1. a 2. tøída)
+DB_AB4nb-59_silber-blau
+DB AB4nb-59 støíbrná s modrým rámem (1. a 2. tøída)
+DB_AB4nb-59_silber-schwarz
+DB AB4nb-59 støíbrná s èerným rámem (1. a 2. tøída)
+DB_AB4um-55
+DB AB4um-55 (1. a 2. tøída)
+DB_AB4um-63
+DB AB4um-63 (1. a 2. tøída)
+DB_AB4ym-51
+DB AB4ym-51 (1. a 2. tøída)
+DB_ABdb_406_1_mint-1
+DB ABdb406.1 mentolová (1. a 2. tøída s pøepravou jízdních k
+DB_ABdb_406_1_mint-2
+DB ABdb406.1 mentolová (1. a 2. tøída s pøepravou jízdních k
+DB_ABdb_406_1_red-1
+DB ABdb406.1 èervená (1. a 2. tøída s pøepravou jízdních kol
+DB_ABdb_406_1_red-2
+DB ABdb406.1 èervená (1. a 2. tøída s pøepravou jízdních kol
+DB_ABi_29
+DB ABi 29 (1. a 2. tøída)
+DB_ABi_29_rot
+DB ABi 29 èervená (1. a 2. tøída)
+DB_ABm_225_160_blue
+DB ABm225 oceánová modrá kotouè. brzdy (1. a 2. tøída)
+DB_ABm_225_blue
+DB ABm225 oceánová modrá (1. a 2. tøída)
+DB_ABm_225_pop_orange
+DB ABm225 pop-oran¾ová (1. a 2. tøída)
+DB_ABn_417_mint
+DB ABn417 mentolová (1. a 2. tøída)
+DB_ABn_417_red
+DB ABn417 èervená (1. a 2. tøída)
+DB_ABn_703_blue
+DB ABn703 oceánová modrá (1. a 2. tøída)
+DB_ABnr_704_silber-blau
+DB ABnr704 støíbrná s modrým rámem (1. a 2. tøída)
+DB_ABnrz_708
+DB ABnrz708 kyvadlový vlak Karlsruhe (1. a 2. tøída)
+DB_ABnrzb_400_citybahn
+DB ABnrzb400 City Bahn (1. a 2. tøída)
+DB_ABom_222_mint
+DB ABom222 mentolová (1. a 2. tøída)
+DB_ABom_222_red
+DB ABom222 èervená (1. a 2. tøída)
+DB_ABomz_229_1_fernblau
+DB ABomz229.1 InterRegio (1. a 2. tøída)
+DB_ABvmz_227_blue
+DB ABvmz227 oceánová modrá (1. a 2. tøída)
+DB_ABvmz_227_orientrot
+DB ABvmz227 orientální èervená (1. a 2. tøída)
+DB_ABvmz_227_pop_orange
+DB ABvmz227 pop-oran¾ová (1. a 2. tøída)
+DB_ABy_407_mint
+DB ABy407 mentolová (1. a 2. tøída)
+DB_ABy_407_red
+DB ABy407 èervená (1. a 2. tøída)
+DB_AByl_411_blue
+DB AByl411 oceánová modrá (1. a 2. tøída)
+DB_AD4um-63_TEE_blue-1
+DB AD4um-63 TEE modrá (vyhlídkový vùz 1. tøída se zavazadlov
+DB_AD4um-63_TEE_blue-2
+DB AD4um-63 TEE modrá (vyhlídkový vùz 1. tøída se zavazadlov
+DB_AD4um-63_TEE_red-1
+DB AD4um-63 TEE èervená (vyhlídkový vùz 1. tøída se zavazadl
+DB_AD4um-63_TEE_red-2
+DB AD4um-63 TEE èervená (vyhlídkový vùz 1. tøída se zavazadl
+db_admh
+DB ADmh (1. tøída)
+DB_Ai_29
+DB Ai 29 (1. tøída)
+DB_Aimz_261_7
+DB Aimz261.7 ICE albino (1. tøída)
+DB_Aimz_261_7_fernblau
+DB Aimz261.7 InterRegio (1. tøída)
+DB_Aimz_261_7_red
+DB Aimz261.7 èervená (1. tøída)
+DB_Am_201_1_mint
+DB Am201.1 mentolova (1. tøída)
+DB_Am_201_1_red
+DB Am201.1 èervená (1. tøída)
+DB_Am_203_1_blue
+DB Am203.1 oceánová modrá mag. brzdy (1. tøída)
+DB_Am_203_160_blue
+DB Am203 oceánová modrá kotouè. brzdy (1. tøída)
+DB_Am_203_blue
+DB Am203 oceánová modrá (1. tøída)
+DB_Am_203_pop_orange
+DB Am203 pop-oran¾ová (1. tøída)
+DB_Ap4um-63_TEE_blue
+DB Ap4um-63 TEE modrá (1. tøída)
+DB_Ap4um-63_TEE_red
+DB Ap4um-63 TEE èervená (1. tøída)
+DB_Apmz_117_orientrot
+DB Apmz117 orientální èervená (1. tøída)
+DB_Apmz_117_rot-weiss
+DB Apmz117 èervená (1. tøída)
+DB_Apmz_119_5
+DB Apmz119.5 ICE albino (1. tøída)
+DB_Apmz_121_orientrot
+DB Apmz121 orientální èervená (1. tøída)
+DB_Apmz_121_rot-weiss
+DB Apmz121 èervená (1. tøída)
+DB_Apmz_123_orientrot
+DB Apmz123 orientální èervená (1. tøída)
+DB_Apmz_123_rot-beige
+DB Apmz123 TEE èervená (1. tøída)
+DB_Apmz_123_rot-weiss
+DB Apmz123 èervená (1. tøída)
+DB_Apmz_125
+DB Apmz125 ICE albino (1. tøída)
+DB_Apmz_127
+DB Apmz127 ICE albino (1. tøída)
+DB_Apmz_857_5_BWE
+DB Apmz857.5 Berlin-Warszawa expres (1. tøída)
+DB_Apumz_121_rot-beige-schwarz
+DB Apumz121 TEE èervená (1. tøída)
+DB_Apumz_122_rot-beige-schwarz
+DB Apumz121 TEE èervená (1. tøída)
+DB_AR4um-54_kakadu
+DB AR4um-54 kakadu (1. tøída/barový vùz
+DB_AR4um-65_kakadu
+DB AR4um-65 kakadu (1. tøída/barový vùz)
+DB_AR4um-65_TEE_red
+DB AR4um-65 TEE èervená (1. tøída/barovy vùz)
+DB_ARDmh_105_rot-beige-schwarz-1
+DB ARDmh105 TEE èervená (1. tøída/barový vùz se zavazadlovým
+DB_ARDmh_105_rot-beige-schwarz-2
+DB ARDmh105 TEE èervená (1. tøída/barový vùz se zavazadlovým
+DB_ARkimbz_262_2
+DB ARkimbz262.2 ICE albino (1. tøída/barový vùz)
+DB_ARkimbz_262_2_fernblau
+DB ARkimbz262.2 InterRegio (1. tøída/barový vùz)
+DB_ARkimbz_262_2_rot-weiss
+DB ARkimbz262.2 èervená (1. tøída/barový vùz)
+DB_ARmh_217_BWE
+DB ARmh217 Berlín-Warszawa expres (1. tøída/barový vùz)
+DB_ARmh_217_orientrot
+DB ARmh217 orientální èervená (1. tøída/barový vùz)
+DB_ARmh_217_rot-weiss
+DB ARmh217 èervená (1. tøída/barový vùz)
+DB_ARmz_211_kakadu
+DB ARmz211 kakadu (1. tøída/elektrický barový vùz)
+DB_ARmz_211_orientrot
+DB ARmz211 orientální èervená (1. tøída/elektrický barový vù
+DB_ARmz_211_rot-beige-schwarz
+DB ARmz211 TEE èervená (1. tøída/elektrický barový vùz)
+DB_ARmz_211_rot-weiss
+DB ARmz211 èervená (1. tøída/elektrický barový vùz)
+DB_ARmz_218_orientrot
+DB ARmz218 orientální èervená (1. tøída/barový vùz)
+DB_ARmz_218_rot-beige
+DB ARmz218 TEE èervená (1. tøída/barový vùz)
+DB_ARmz_218_rot-weiss
+DB ARmz218 èervená (1. tøída/barový vùz)
+DB_Av4um-63_TEE_blue
+DB Av4um-63 TEE modrá (1. tøída)
+DB_Av4um-63_TEE_red
+DB Av4um-63 TEE èervená (1. tøída)
+DB_Avmz_106_Lufthansa
+DB Avmz106 Lufthansa (1. tøída)
+DB_Avmz_106_Lufthansa_gep-1
+DB Avmz106 Lufthansa (1. tøída s pøepravou zavazadel) 1/2
+DB_Avmz_106_Lufthansa_gep-2
+DB Avmz106 Lufthansa (1. tøída s pøepravou zavazadel) 2/2
+DB_Avmz_107_fernblau
+DB Avmz107 InterRegio (1. tøída)
+DB_Avmz_107_orientrot
+DB Avmz107 orientální èervená (1. tøída)
+DB_Avmz_107_rot-weiss
+DB Avmz107 èervená (1. tøída)
+DB_Avmz_108_1
+DB Avmz108.1 ICE albino (1. tøída)
+DB_Avmz_109
+DB Avmz109 ICE albino (1. tøída)
+DB_Avmz_111_1_orientrot
+DB Avmz111.1 orientální èervená (1. tøída)
+DB_Avmz_111_1_rot-weiss
+DB Avmz111.1 èervená (1. tøída)
+DB_Avmz_111_5_BWE
+DB Avmz111.5 Berlín-Warszawa expres (1. tøída)
+DB_Avmz_206_Lufthansa
+DB Avmz206 Lufthansa (1. tøída)
+DB_Avmz_206_Lufthansa_gep-1
+DB Avmz206 Lufthansa (1. tøída s pøepravou zavazadel) 1/2
+DB_Avmz_206_Lufthansa_gep-2
+DB Avmz206 Lufthansa (1. tøída s pøepravou zavazadel) 2/2
+DB_Avmz_207_orientrot
+DB Avmz207 orientální èervená (1. tøída)
+DB_Avmz_207_rot-weiss
+DB Avmz207 èervená (1. tøída)
+DB_Avumz_111_1_rot-beige-schwarz
+DB Avumz111.1 TEE èervená (1. tøída)
+DB_Avumz_207_rot-beige-schwarz
+DB Avumz207 TEE èervená (1. tøída)
+DB_Ayl_401_blue
+DB Ayl401 oceánová modrá (1. tøída)
+db_b3yg
+DB B3yg (2. tøída)
+DB_B4nb-59_silber-blau
+DB B4nb-59 støíbrná s modrým rámem (2. tøída)
+DB_B4nb-59_silber-schwarz
+DB B4nb-59 støíbrná s èerným rámem (2. tøída)
+DB_B4um-54
+DB B4um-54 (2. tøída)
+DB_B4um-63
+DB B4um-63 (2. tøída)
+DB_B4ymb-51
+DB B4ymb-51 (2. tøída)
+DB_B4ymf-51
+DB B4ymf-51 (zadní øídící vùz - 2. tøída)
+DB_B4ymf-51_otoc
+DB B4ymf-51 (pøední øídící vùz - 2. tøída)
+DB_Bbd_499_mint-1
+DB Bdb499 mentolová (2. tøída s pøepravou jízdních kol) 1/2
+DB_Bbd_499_mint-2
+DB Bdb499 mentolová (2. tøída s pøepravou jízdních kol) 2/2
+DB_Bbd_499_red-1
+DB Bdb499 èervená (2. tøída s pøepravou jízdních kol) 1/2
+DB_Bbd_499_red-2
+DB Bdb499 èervená (2. tøída s pøepravou jízdních kol) 2/2
+DB_Bcm_243_blue
+DB Bcm243 oceánová modrá (lehátkový vùz - 2. tøída)
+db_bd3yg-1
+DB BD3yg (2. tøída s pøepravou zavazadel) 1/2
+db_bd3yg-2
+DB BD3yg (2. tøída s pøepravou zavazadel) 2/2
+db_bd3ygef_otoc-1
+DB BD3ygef (zadní øídící vùz - 2. tøída s pøepravou zavazade
+db_bd3ygef_otoc-2
+DB BD3ygef (zadní øídící vùz - 2. tøída s pøepravou zavazade
+db_bd3ygef-1
+DB BD3ygef (pøední øídící vùz - 2. tøída s pøepravou zavazad
+db_bd3ygef-2
+DB BD3ygef (pøední øídící vùz - 2. tøída s pøepravou zavazad
+DB_BD4nf-59_silber-blau_otoc-1
+DB BD4nf-59 støíbrná s modrým rámem (pøední øídící vùz - 2. 
+DB_BD4nf-59_silber-blau_otoc-2
+DB BD4nf-59 støíbrná s modrým rámem (pøední øídící vùz - 2. 
+DB_BD4nf-59_silber-blau-1
+DB BD4nf-59 stribrna s modrym ramem (zadní øídící vùz - 2. t
+DB_BD4nf-59_silber-blau-2
+DB BD4nf-59 støíbrná s modrým rámem (zadní øídící vùz - 2. t
+DB_BD4nf-59_silber-schwarz_otoc-1
+DB BD4nf-59 støíbrná s èerným rámem (pøední øídící vùz - 2. 
+DB_BD4nf-59_silber-schwarz_otoc-2
+DB BD4nf-59 støíbrná s èerným rámem (pøední øídící vùz - 2. 
+DB_BD4nf-59_silber-schwarz-1
+DB BD4nf-59 støíbrná s èerným rámem (zadní øídící vùz - 2. t
+DB_BD4nf-59_silber-schwarz-2
+DB BD4nf-59 støíbrná s èerným rámem (zadní øídící vùz - 2. t
+DB_BD4um-59-1
+DB BD4um-59 (2. tøída se zavazadlovým oddílem) 1/2
+DB_BD4um-59-2
+DB BD4um-59 (2. tøída se zavazadlovým oddílem) 2/2
+DB_BD4ymf-51_otoc-1
+DB BD4ymf-51 (pøední øídící vùz - 2. tøída se zavazadlovým o
+DB_BD4ymf-51_otoc-2
+DB BD4ymf-51 (pøední øídící vùz - 2. tøída se zavazadlovým o
+DB_BD4ymf-51-1
+DB BD4ymf-51 (zadní øídící vùz - 2. tøída se zavazadlovým od
+DB_BD4ymf-51-2
+DB BD4ymf-51 (zadní øídící vùz - 2. tøída se zavazadlovým od
+DB_BDms_273_160_blue-1
+DB BDms273 oceánová modrá kotouè. brzdy (2. tøída se zavazad
+DB_BDms_273_160_blue-2
+DB BDms273 oceánová modrá kotouè. brzdy (2. tøída se zavazad
+DB_BDms_273_blue-1
+DB BDms273 oceánová modrá (2. tøída se zavazadlovým oddílem)
+DB_BDms_273_blue-2
+DB BDms273 oceánová modrá (2. tøída se zavazadlovým oddílem)
+DB_BDms_273_orientrot-1
+DB BDms273 orientální èervená (2. tøída se zavazadlovým oddí
+DB_BDms_273_orientrot-2
+DB BDms273 orientální èervená (2. tøída se zavazadlovým oddí
+DB_BDnf_466_mint_otoc-1
+DB BDnf466 mentolová (pøední øídící vùz - 2. tøída se zavaza
+DB_BDnf_466_mint_otoc-2
+DB BDnf466 mentolová (pøední øídící vùz - 2. tøída se zavaza
+DB_BDnf_466_mint-1
+DB BDnf466 mentolová (zadní øídící vùz - 2. tøída se zavazad
+DB_BDnf_466_mint-2
+DB BDnf466 mentolová (zadní øídící vùz - 2. tøída se zavazad
+DB_BDnf_735_silber-blau_otoc-1
+DB BDnf735 støíbrná/oceánová modrá (pøední øídící vùz - 2. t
+DB_BDnf_735_silber-blau_otoc-2
+DB BDnf735 støíbrná/oceánová modrá (pøední øídící vùz - 2. t
+DB_BDnf_735_silber-blau-1
+DB BDnf735 støíbrná/oceánová modrá (zadní øídící vùz - 2. tø
+DB_BDnf_735_silber-blau-2
+DB BDnf735 støíbrná/oceánová modrá (zadní øídící vùz - 2. tø
+DB_BDnf_738_blue_otoc-1
+DB BDnf738 oceánová modrá (pøední øídící vùz - 2. tøída se z
+DB_BDnf_738_blue_otoc-2
+DB BDnf738 oceánová modrá (pøední øídící vùz - 2. tøída se z
+DB_BDnf_738_blue-1
+DB BDnf738 oceánová modrá (zadní øídící vùz - 2. tøída se za
+DB_BDnf_738_blue-2
+DB BDnf738 oceánová modrá (zadní øídící vùz - 2. tøída se za
+DB_BDnrzf_460_citybahn_otoc-1
+DB BDnrzf460 City Bahn (pøední øídící vùz - 2. tøída se zava
+DB_BDnrzf_460_citybahn_otoc-2
+DB BDnrzf460 City Bahn (pøední øídící vùz - 2. tøída se zava
+DB_BDnrzf_460_citybahn-1
+DB BDnrzf460 City Bahn (zadní øídící vùz - 2. tøída se zavaz
+DB_BDnrzf_460_citybahn-2
+DB BDnrzf460 City Bahn (zadní øídící vùz - 2. tøída se zavaz
+DB_BDnrzf_463_red_otoc-1
+DB BDnrzf463 èervená (pøední øídící vùz - 2. tøída se zavaza
+DB_BDnrzf_463_red_otoc-2
+DB BDnrzf463 èervená (pøední øídící vùz - 2. tøída se zavaza
+DB_BDnrzf_463_red-1
+DB BDnrzf463 èervená (zadní øídící vùz - 2. tøída se zavazad
+DB_BDnrzf_463_red-2
+DB BDnrzf463 èervená (zadní øídící vùz - 2. tøída se zavazad
+DB_BDnrzf_477_mint_otoc-1
+DB BDnrzf477 mentolová (pøední øídící vùz - 2. tøída se zava
+DB_BDnrzf_477_mint_otoc-2
+DB BDnrzf477 mentolová (pøední øídící vùz - 2. tøída se zava
+DB_BDnrzf_477_mint-1
+DB BDnrzf477 mentolová (zadní øídící vùz - 2. tøída se zavaz
+DB_BDnrzf_477_mint-2
+DB BDnrzf477 mentolová (zadní øídící vùz - 2. tøída se zavaz
+DB_BDnrzf_477_red_otoc-1
+DB BDnrzf477 èervená (pøední øídící vùz - 2. tøída se zavaza
+DB_BDnrzf_477_red_otoc-2
+DB BDnrzf477 èervená (pøední øídící vùz - 2. tøída se zavaza
+DB_BDnrzf_477_red-1
+DB BDnrzf477 èervená (zadní øídící vùz - 2. tøída se zavazad
+DB_BDnrzf_477_red-2
+DB BDnrzf477 èervená (zadní øídící vùz - 2. tøída se zavazad
+DB_BDnrzf_740_2_otoc-1
+DB BDnrzf740.2 kyvadlový vlak Karlsruhe (pøední øídící vùz -
+DB_BDnrzf_740_2_otoc-2
+DB BDnrzf740.2 kyvadlový vlak Karlsruhe (pøední øídící vùz -
+DB_BDnrzf_740_2-1
+DB BDnrzf740.2 kyvadlový vlak Karlsruhe (zadní øídící vùz - 
+DB_BDnrzf_740_2-2
+DB BDnrzf740.2 kyvadlový vlak Karlsruhe (zadní øídící vùz - 
+DB_BDnrzf_740_orange-silber-blau_otoc-1
+DB BDnrzf740 støíbrná/oran¾ová (pøední øídící vùz - 2. tøída
+DB_BDnrzf_740_orange-silber-blau_otoc-2
+DB BDnrzf740 støíbrná/oran¾ová (pøední øídící vùz - 2. tøída
+DB_BDnrzf_740_orange-silber-blau-1
+DB BDnrzf740 støíbrná/oran¾ová (zadní øídící vùz - 2. tøída 
+DB_BDnrzf_740_orange-silber-blau-2
+DB BDnrzf740 støíbrná/oran¾ová (zadní øídící vùz - 2. tøída 
+DB_BDnzf_479_mint_otoc-1
+DB BDnzf479 mentolová (pøední øídící vùz - 2. tøída se zavaz
+DB_BDnzf_479_mint_otoc-2
+DB BDnzf479 mentolová (pøední øídící vùz - 2. tøída se zavaz
+DB_BDnzf_479_mint-1
+DB BDnzf479 mentolová (zadní øídící vùz - 2. tøída se zavaza
+DB_BDnzf_479_mint-2
+DB BDnzf479 mentolová (zadní øídící vùz - 2. tøída se zavaza
+DB_BDnzf_479_red_otoc-1
+DB BDnzf479 èervená (pøední øídící vùz - 2. tøída se zavazad
+DB_BDnzf_479_red_otoc-2
+DB BDnzf479 èervená (pøední øídící vùz - 2. tøída se zavazad
+DB_BDnzf_479_red-1
+DB BDnzf479 èervená (zadní øídící vùz - 2. tøída se zavazadl
+DB_BDnzf_479_red-2
+DB BDnzf479 èervená (zadní øídící vùz - 2. tøída se zavazadl
+DB_BDomsb_274_1_rot-weiss-1
+DB BDomsb 274.1 èervená (2. tøída se zavazadlovým oddílem) 1
+DB_BDomsb_274_1_rot-weiss-2
+DB BDomsb 274.1 èervená (2. tøída se zavazadlovým oddílem) 2
+DB_BDymf_456_blue_otoc-1
+DB BDymf456 oceánová modrá (pøední øídící vùz - 2. tøída se 
+DB_BDymf_456_blue_otoc-2
+DB BDymf456 oceánová modrá (pøední øídící vùz - 2. tøída se 
+DB_BDymf_456_blue-1
+DB BDymf456 oceánová modrá (zadní øídící vùz - 2. tøída se z
+DB_BDymf_456_blue-2
+DB BDymf456 oceánová modrá (zadní øídící vùz - 2. tøída se z
+DB_Bi_21
+DB Bi 21 (2. tøída)
+DB_Bi_21a
+DB Bi 21a (2. tøída)
+DB_Bi_21b
+DB Bi 21b (2. tøída)
+DB_Bi_27
+DB Bi 27 (2. tøída)
+DB_Bi_27_rot
+DB Bi 27 èervená (2. tøída)
+DB_Bi_28
+DB Bi 28 (2. tøída)
+DB_Bi_28_rot
+DB Bi 28 èervená (2. tøída)
+DB_Bidmz_268_fernblau-1
+DB Bimdz268 InterRegio (2. tøída s pøepravou jízdních kol) 1
+DB_Bidmz_268_fernblau-2
+DB Bimdz268 InterRegio (2. tøída s pøepravou jízdních kol) 2
+DB_Bidmz_268_red-1
+DB Bimdz268 èervená (2. tøída s pøepravou jízdních kol) 1/2
+DB_Bidmz_268_red-2
+DB Bimdz268 èervená (2. tøída s pøepravou jízdních kol) 2/2
+DB_Bidmz_268-1
+DB Bimdz268 ICE albino (2. tøída s pøepravou jízdních kol) 1
+DB_Bidmz_268-2
+DB Bimdz268 ICE albino (2. tøída s pøepravou jízdních kol) 2
+DB_Bif_27_rot
+DB Bif 27 èervená (pøední øídící vùz - 2. tøída)
+DB_Bif_27_rot_otoc
+DB Bif 27 èervená (zadní øídící vùz - 2. tøída)
+DB_Bif_28
+DB Bif 28 (pøední øídící vùz - 2. tøída)
+DB_Bif_28_otoc
+DB Bif 28 (zadní øídící vùz - 2. tøída)
+DB_Bimdz_267_red-1
+DB Bimdz267 èervená (2. tøída s pøepravou jízdních kol) 1/2
+DB_Bimdz_267_red-2
+DB Bimdz267 èervená (2. tøída s pøepravou jízdních kol) 2/2
+DB_Bimdz_267-1
+DB Bimdz267 ICE albino (2. tøída s pøepravou jízdních kol) 1
+DB_Bimdz_267-2
+DB Bimdz267 ICE albino (2. tøída s pøepravou jízdních kol) 2
+DB_Bimz_259
+DB Bimz259 ICE albino (2. tøída)
+DB_Bimz_259_red
+DB Bimz259 èervená (2. tøída)
+DB_Bimz_264_7
+DB Bimz264.7 ICE albino (2. tøída)
+DB_Bimz_264_7_fernblau
+DB Bimz264.7 InterRegio (2. tøída)
+DB_Bimz_264_7_red
+DB Bimz264.7 èervená (2. tøída)
+DB_Bm_234_blue
+DB Bm234 oceánová modrá (2. tøída)
+DB_Bm_234_pop_blue
+DB Bm234 pop-modrá (2. tøída)
+DB_Bm_234_pop_green
+DB Bm234 pop-zelená (2. tøída)
+DB_Bm_235
+DB Bm235 ICE albino (2. tøída)
+DB_Bm_235_blue
+DB Bm235 oceánová modrá mag. brzdy  (2. tøída)
+DB_Bm_235_orientrot
+DB Bm235 orientální èervená (2. tøída)
+DB_Bm_235_rot-weiss
+DB Bm235 èervená (2. tøída)
+DB_Bn_448_mint
+DB Bn448 mentolová (2. tøída)
+DB_Bn_448_red
+DB Bn448 èervená (2. tøída)
+DB_Bn_719_mint_versuch
+DB Bn719 mentolová zku¹ební nátìr (2. tøída)
+DB_Bn_719_orange_versuch
+DB Bn719 oran¾ová zku¹ební nátìr (2. tøída)
+DB_Bnb_719_blue
+DB Bnb719 oceánová modrá (2. tøída)
+DB_Bndzf_481_mint_otoc-1
+DB Bndzf481 mentolová (pøední øídící vùz - 2. tøída s pøepra
+DB_Bndzf_481_mint_otoc-2
+DB Bndzf481 mentolová (pøední øídící vùz - 2. tøída s pøepra
+DB_Bndzf_481_mint-1
+DB Bndzf481 mentolová (zadní øídící vùz - 2. tøída s pøeprav
+DB_Bndzf_481_mint-2
+DB Bndzf481 mentolová (zadní øídící vùz - 2. tøída s pøeprav
+DB_Bndzf_481_red_otoc-1
+DB Bndzf481 èervená (zadní øídící vùz - 2. tøída s pøepravou
+DB_Bndzf_481_red_otoc-2
+DB Bndzf481 èervená (zadní øídící vùz - 2. tøída s pøepravou
+DB_Bndzf_481_red-1
+DB Bndzf481 èervená (zadní øídící vùz - 2. tøída s pøepravou
+DB_Bndzf_481_red-2
+DB Bndzf481 èervená (zadní øídící vùz - 2. tøída s pøepravou
+DB_Bnr_725_silber-blau
+DB Bnr725 støíbrná s modrým rámem (2. tøída)
+DB_Bnrd_451_mint-1
+DB Bnrd451 mentolová (2. tøída s pøepravou jízdních kol) 1/2
+DB_Bnrd_451_mint-2
+DB Bnrd451 mentolová (2. tøída s pøepravou jízdních kol) 2/2
+DB_Bnrd_451_red-1
+DB Bnrd451 èervená (2. tøída s pøepravou jízdních kol) 1/2
+DB_Bnrd_451_red-2
+DB Bnrd451 èervená (2. tøída s pøepravou jízdních kol) 2/2
+DB_Bnrkz_493_mint
+DB Bnrkz493 mentolová (2. tøída/barovy vùz)
+DB_Bnrz_430_citybahn
+DB Bnrz430 City Bahn (2. tøída)
+DB_Bnrz_725
+DB Bnrz725 kyvadlový vlak Karlsruhe (2. tøída)
+DB_Bnrz_729
+DB Bnrz729 kyvadlový vlak Karlsruhe (2. tøída)
+DB_Bnrzf_734
+DB Bnrzf734 kyvadlový vlak Karlsruhe (zadní øídící vùz - 2. 
+DB_Bnrzf_734_otoc
+DB Bnrzf734 kyvadlový vlak Karlsruhe (pøední øídící vùz - 2.
+DB_Bom_280_1_mint
+DB Bom280.1 mentolová (2. tøída)
+DB_Bom_280_1_red
+DB Bom280.1 èervená (2. tøída)
+DB_Bomdz_239_rot-weiss-1
+DB Bomdz239 èervená (2. tøída s pøepravou jízdních kol) 1/2
+DB_Bomdz_239_rot-weiss-2
+DB Bomdz239 èervená (2. tøída s pøepravou jízdních kol) 2/2
+DB_Bomz_236
+DB Bomz236 ICE albino (2. tøída)
+DB_Bomz_236_orientrot
+DB Bomz236 orientální èervená (2. tøída)
+DB_Bomz_236_rot-weiss
+DB Bomz236 èervená (2. tøída)
+DB_Bpmdz_293-1
+DB Bpmdz293 ICE albino (2. tøída s pøepravou jízdních kol) 1
+DB_Bpmdz_293-2
+DB Bpmdz293 ICE albino (2. tøída s pøepravou jízdních kol) 2
+DB_Bpmz_291_2_blue
+DB Bpmz291.2 oceánová modrá (2. tøída)
+DB_Bpmz_291_2_orientrot
+DB Bpmz291.2 orientální èervená (2. tøída)
+DB_Bpmz_291_2_rot-weiss
+DB Bpmz291.2 èervená (2. tøída)
+DB_Bpmz_293_fernblau
+DB Bpmz293 InterRegio (2. tøída)
+DB_Bpmz_293_orientrot
+DB Bpmz293 orientální èervená (2. tøída)
+DB_Bpmz_293_rot-weiss
+DB Bpmz293 èervená (2. tøída)
+DB_Bpmz_294
+DB Bpmz294 ICE albino (2. tøída)
+DB_Bpmz_295
+DB Bpmz295 ICE albino (2. tøída)
+DB_Bpmz_296_Lufthansa
+DB Bpmz296 Lufthansa (1. tøída)
+DB_Bpmz_296_Lufthansa_gep-1
+DB Bpmz296 Lufthansa (1. tøída s pøepravou zavazadel) 1/2
+DB_Bpmz_296_Lufthansa_gep-2
+DB Bpmz296 Lufthansa (1. tøída s pøepravou zavazadel) 2/2
+DB_BR4ymb-51
+DB BR4ymb-51 (2. tøída/barový vùz)
+DB_BR4ymb-51_kakadu
+DB BR4ymb-51 kakadu (2. tøída/barový vùz)
+DB_BRbu4um-61_kakadu
+DB BRbu4um-61 kakadu (2. tøída/barový vùz)
+DB_Bvmsz_186
+DB Bvmsz186 ICE albino (2. tøída)
+DB_Bvmz_185_fernblau
+DB Bvmz185 InterRegio (2. tøída)
+DB_Bvmz_185_orientrot
+DB Bvmz185 orientální èervená (2. tøída)
+DB_Bvmz_185_rot-weiss
+DB Bvmz185 èervená (2. tøída)
+DB_Bvmz_237_blue
+DB Bvmz237 oceánová modrá (2. tøída)
+DB_Bvmz_237_pop_blue
+DB Bvmz237 pop-modrá (2. tøída)
+DB_Bybdzf_482_1_mint_otoc-1
+DB Bybdzf482.1 mentolová (pøední øídící vùz - 2. tøída s pøe
+DB_Bybdzf_482_1_mint_otoc-2
+DB Bybdzf482.1 mentolová (pøední øídící vùz - 2. tøída s pøe
+DB_Bybdzf_482_1_mint-1
+DB Bybdzf482.1 mentolová (zadní øídící vùz - 2. tøída s pøep
+DB_Bybdzf_482_1_mint-2
+DB Bybdzf482.1 mentolová (zadní øídící vùz - 2. tøída s pøep
+DB_Bybdzf_482_1_red_otoc-1
+DB Bybdzf482.1 èervená (pøední øídící vùz - 2. tøída s pøepr
+DB_Bybdzf_482_1_red_otoc-2
+DB Bybdzf482.1 èervená (pøední øídící vùz - 2. tøída s pøepr
+DB_Bybdzf_482_1_red-1
+DB Bybdzf482.1 èervená (zadní øídící vùz - 2. tøída s pøepra
+DB_Bybdzf_482_1_red-2
+DB Bybdzf482.1 èervená (zadní øídící vùz - 2. tøída s pøepra
+DB_Bydz_439_red-1
+DB Bydz439 èervená (2. tøída s pøepravou jízdních kol) 1/2
+DB_Bydz_439_red-2
+DB Bydz439 èervená (2. tøída s pøepravou jízdních kol) 2/2
+DB_Byl_421_blue
+DB Byl421 oceánová modrá (2. tøída)
+DB_Byl_423_blue
+DB Byl423 oceánová modrá (2. tøída)
+DB_Bylf_436_blue
+DB Bylf436 oceánová modrá (zadní øídící vùz - 2. tøída)
+DB_Bylf_436_blue_otoc
+DB Bylf436 oceánová modrá (pøední øídící vùz - 2. tøída)
+DB_Byu_438_1_mint
+DB Byu438.1 mentolová (2. tøída)
+DB_Byu_438_1_red
+DB Byu438.1 èervená (2. tøída)
+DB_D4um-60
+DB D4um-60 (zavazadlový vùz)
+DB_DABbuzf_777_mint
+DB DABbuzf777 mentolová (zadní øídící vùz - 1. a 2. tøída)
+DB_DABbuzf_777_mint_otoc
+DB DABbuzf777 mentolová (pøední øídící vùz - 1. a 2. tøída)
+DB_DABgbuzf_760_mint
+DB DABgbuzf760 mentolová (zadní øídící vùz - 1. a 2. tøída)
+DB_DABgbuzf_760_mint_otoc
+DB DABgbuzf760 mentolová (pøední øídící vùz - 1. a 2. tøída)
+DB_DABz_755_mint
+DB DABz755 mentolova (1. a 2. tøída)
+DB_DBuz_747_mint
+DB DBuz747 mentolová (2. tøída)
+DB_DBz_750_mint
+DB DBz750 mentolová (2. tøída)
+DB_Dduu_498_mint
+DB Dduu498 mentolová (zavazadlový vùz)
+DB_Dduu_498_red
+DB Dduu498 èervená (zavazadlový vùz)
+DB_Di_23
+DB Di 23 (zavazadlový vùz)
+DB_Di_29
+DB Di 29 (zavazadlový vùz)
+DB_Dms_902_1_blue
+DB Dms902.1 oceánová modrá (zavazadlový vùz)
+DB_Dms_902_pop_green
+DB Dms902 pop-zelená (zavazadlový vùz)
+DB_e16
+DB E16 (elektrická lokomotiva ~15kV/16,7Hz)
+DB_e32
+DB E32 (elektrická lokomotiva ~15kV/16,7Hz)
+DB_e69_002
+DB E69.002 "Pauline" (elektrická lokomotiva ~15kV/16,7Hz)
+DB_e69_003
+DB E69.003 "Hermine" (elektrická lokomotiva ~15kV/16,7Hz)
+DB_Pwif_52_rot
+DB Pwif 52 èervený (pøední øídící vùz - zavazadla)
+DB_Pwif_52_rot_otoc
+DB Pwif 52 èervený (zadní øídící vùz - zavazadla)
+db_v100
+DB V100 (dieselová lokomotiva)
+db_v100_006
+DB V100.006 (dieselová lokomotiva)
+db_v100_1
+DB V100.1 (dieselová lokomotiva)
+db_v100_2
+DB V100.2 (dieselová lokomotiva)
+db_v100_prototyp
+DB V100 prototyp (dieselová lokomotiva)
+db_v20
+DB V20 (dieselová lokomotiva)
+db_v200
+DB V200 (dieselová lokomotiva)
+db_v200_1
+DB V200.1 (dieselová lokomotiva)
+db_v200_prototyp
+DB V200 prototyp (dieselová lokomotiva)
+db_v300
+DB V300 (dieselová lokomotiva)
+db_v36
+DB V36 (dieselová lokomotiva)
+db_v90
+DB V90 (dieselová lokomotiva)
+db_v90_prototyp
+DB V90 prototyp (dieselová lokomotiva)
+DB_WR4um-63_TEE_blue
+DB WR4um-63 TEE modrá (jídelní vùz)
+DB_WR4um-63_TEE_red
+DB WR4um-63 TEE èervená (jídelní vùz)
+DB_WR4um-64_red
+DB WR4um-64 èervená (jídelní vùz)
+DB_WR4um-64_TEE_red
+DB WR4um-64 TEE èervená (jídelní vùz)
+DB_WRbumz_139_blue
+DB WRbumz139 oceánová modrá (elektrický jídelní vùz)
+DB_WRbumz_139_rot-beige
+DB WRbumz139 TEE èervená (elektrický jídelní vùz)
+DB_WRm_130_1
+DB WRm 130.1 Mitropa (jídelní vùz)
+DB_WRm_130_1_orientrot
+DB WRm 130.1 orientální èervená  (jídelní vùz)
+DB_WRm_130_1_rot-weiss
+DB WRm 130.1 èervená  (jídelní vùz)
+DB_WRmh_132_blue
+DB WRmh132 oceánová modrá (jídelní vùz)
+DB_WRmh_132_orientrot
+DB WRmz132 orientální èervená (jídelní vùz)
+DB_WRmh_132_pop_red
+DB WRmh132 pop-èervená (jídelní vùz)
+DB_WRmh_132_rot-weiss
+DB WRmz132 èervená (jídelní vùz)
+DB_WRmz_133
+DB WRmz133 ICE albino (jídelní vùz)
+DB_WRmz_133_rot-weiss
+DB WRmz133 èervená (jídelní vùz)
+DB_WRmz_135_blue
+DB WRmz135 oceánová modrá (elektrický jídelní vùz)
+DB_WRmz_135_orientrot
+DB WRmz135 orientální èervená (elektrický jídelní vùz)
+DB_WRmz_135_rot-beige-schwarz
+DB WRmz135 TEE èervená (elektrický jídelní vùz)
+DB_WRmz_135_rot-weiss
+DB WRmz135 èervená (elektrický jídelní vùz)
+DB_WRmz_137
+DB WRmz137 ICE albino (elektrický jídelní vùz)
+DB_WRmz_137_orientrot
+DB WRmz137 orientální èervená (elektrický jídelní vùz)
+DB_WRmz_137_rot-weiss
+DB WRmz137 èervená (elektrický jídelní vùz)
+DBC_Eas
+DB Cargo Eas (sypké zbo¾í)
+DBC_Eas_dvojice
+DB Cargo Eas dvojice vozù (sypké zbo¾í)
+DBC_Es
+DB Cargo Es (sypké zbo¾í)
+DBC_Es_dvojice
+DB Cargo Es dvojice vozù (sypké zbo¾í)
+DBC_Fcc_Talbot
+DB Cargo Fcc Talbot (sypké zbo¾í)
+dr_118_0_alt
+DR 118.0 (dieselová lokomotiva)
+dr_118_2
+DR 118.2 (dieselová lokomotiva)
+dr_118_2_alt
+DR 118.2 (dieselová lokomotiva)
+dr_118_neu
+DR 118 (dieselová lokomotiva)
+DR_120
+DR 120 "Sergej" (dieselová nákladní lokomotiva)
+DR_130
+DR 130 "Ragulin" (dieselová nákladní lokomotiva)
+DR_2_2_T21_5
+DR 2´2´ T 21,5 (tendr)
+DR_2_2_T21_5_otoc
+DR 2´2´ T 21,5 otoèená (tendr)
+dr_211_rot
+DR 211 (elektrická lokomotiva ~15kV/16,7Hz)
+dr_250
+DR 250 (elektrická lokomotiva ~15kV/16,7Hz)
+dr_250_001
+DR 250.001 (elektrická lokomotiva ~15kV/16,7Hz)
+dr_251
+DR 251 (elektrická lokomotiva ~25kV/50Hz)
+DR_38
+DR 38 (osobní parní lokomotiva)
+DR_38_otoc
+DR 38 otoèená (osobní parní lokomotiva)
+DR_A4ge
+DR A4ge modernizovaný vagon (1. tøída kupé)
+DR_AB4ge
+DR AB4ge modernizovaný vagon (1. a 2. tøída kupé)
+DR_ABge_3845
+DR ABge 38-45 modernizovaný vagon (1. a 2. tøída kupé)
+DR_ABi_29_2
+DR ABi 29 Donnerbuchse (1. a 2. tøída velkoprostor)
+DR_ABme_3043
+DR ABme 30-43 (1. a 2. tøída kupé)
+DR_ABme_3085
+DR ABme 30-85 (1. a 2. tøída kupé)
+DR_Age_1745
+DR Age 17-45 modernizovaný vagon (1. tøída kupé)
+DR_Ai_29_2
+DR Ai 29 Donnerbuchse (1. tøída velkoprostor)
+DR_Ame_1043
+DR Ame 10-43 (1. tøída kupé)
+DR_Ame_1043_ie
+DR Ame 10-43 Interexpress (1. tøída kupé)
+DR_Ame_1043_se
+DR Ame 10-43 Stadteexpress (1. tøída kupé)
+DR_Ame_1085
+DR Ame 10-85 (1. tøída kupé)
+DR_Amy_1070_ie
+DR Amy 10-70 Interexpress (1. tøída velkoprostor)
+DR_Amz_1095_fernblau
+DR Amz 10-95 InterRegio (1. tøída kupé)
+DR_B3g-57
+DR B3g-57 reko vagon (2. tøída velkoprostor)
+DR_B3gtr-57-1
+DR B3gtr-57 reko vagon (2. tøída velkoprostor s pøepravou za
+DR_B3gtr-57-2
+DR B3gtr-57 reko vagon (2. tøída velkoprostor s pøepravou za
+DR_B4ge
+DR B4ge modernizovaný vagon (2. tøída kupé)
+DR_B4gre
+DR B4gre modernizovaný vagon (2. tøída kupé/barový vùz)
+DR_B4gwl-64
+DR B4gwl-64 reko vagon (2. tøída velkoprostor)
+DR_Baage_2415
+DR Baage 24-15 reko vagon (2. tøída velkoprostor)
+DR_Bage_2315
+DR Bage 23-15 reko vagon (2. tøída velkoprostor)
+DR_Bagtre_2315-1
+DR Bagtre 23-15 reko vagon (2. tøída velkoprostor s pøepravo
+DR_Bagtre_2315-2
+DR Bagtre 23-15 reko vagon (2. tøída velkoprostor s pøepravo
+DR_BCi_21
+DR BCi 21 Donnerbuchse (2. a 3. tøída velkoprostor)
+DR_BCi_29
+DR BCi 29 Donnerbuchse (2. a 3. tøída velkoprostor)
+DR_Bcm_5080
+DR Bcm 50-80 (lehátkový vùz 2. tøída)
+DR_BDghwse_8215_dg-1
+DR BDghwse 82-15 tmavì zelený reko vagon (slu¾ební/2. tøída 
+DR_BDghwse_8215_dg-2
+DR BDghwse 82-15 tmavì zelený reko vagon (slu¾ební/2. tøída 
+DR_BDghwse_8215-1
+DR BDghwse 82-15 reko vagon (slu¾ební/2. tøída velkoprostor)
+DR_BDghwse_8215-2
+DR BDghwse 82-15 reko vagon (slu¾ební/2. tøída velkoprostor)
+DR_BDmsb_8280-1
+DR BDmsb 82-80 (slu¾ební/2. tøída kupé) 1/2
+DR_BDmsb_8280-2
+DR BDmsb 82-80 (slu¾ební/2. tøída kupé) 2/2
+DR_BDwsb_8213-1
+DR BDwsb 82-13 reko vagon (slu¾ební/2. tøída kupé) 1/2
+DR_BDwsb_8213-2
+DR BDwsb 82-13 reko vagon (slu¾ební/2. tøída kupé) 2/2
+DR_Bg-57
+DR Bg-57 reko vagon (2. tøída velkoprostor)
+DR_Bge_2945
+DR Bge 29-45 modernizovaný vagon (2. tøída kupé)
+DR_Bghwe_2815
+DR Bghwe 28-15 reko vagon (2. tøída velkoprostor)
+DR_Bi_21
+DR Bi 21 Donnerbuchse (2. tøída velkoprostor)
+DR_Bi_27_2
+DR Bi 27 Donnerbuchse (2. tøída velkoprostor)
+DR_Bi_28_2
+DR Bi 28 Donnerbuchse (2. tøída velkoprostor)
+DR_Bi_28_2_rot
+DR Bi 28 Donnerbuchse èervenokrémová (2. tøída velkoprostor)
+DR_Bi_29
+DR Bi 29 Donnerbuchse (2. tøída velkoprostor)
+DR_Bimdz_8495_fernblau-1
+DR Bimdz 84-95 InterRegio (2. tøída kombinovaný interier s p
+DR_Bimdz_8495_fernblau-2
+DR Bimdz 84-95 InterRegio (2. tøída kombinovaný interier s p
+DR_Bimz_2295_fernblau
+DR Bimz 22-95 InterRegio (2. tøída kombinovaný interier)
+DR_Bme_2150
+DR Bme 21-50 (2. tøída kupé)
+DR_Bme_2150_ie
+DR Bme 21-50 Interexpress (2. tøída kupé)
+DR_Bme_2150_se
+DR Bme 21-50 Stadteexpress (2. tøída kupé)
+DR_Bme_2185
+DR Bme 21-85 (2. tøída kupé)
+DR_Bme_2185_se
+DR Bme 21-85 Stadteexpress (2. tøída kupé)
+DR_Bmh_2140
+DR Bmh 21-40 (2. tøída velkoprostor)
+DR_Bmh_2140_se
+DR Bmh 21-40 Stadteexpress (2. tøída velkoprostor)
+DR_Bmhe_2111
+DR Bmhe 21-11 (2. tøída velkoprostor)
+DR_Bmk_8545
+DR Bmk 85-45 (2. tøída kupé/barový vùz)
+DR_Bmy_2070_ie
+DR Bmy 20-70 Interexpress (2. tøída velkoprostor)
+DR_Bmz_2190_fernblau
+DR Bmz 21-90 InterRegio (2. tøída kupé)
+DR_BRge_8545
+DR BRge 85-45 modernizovaný vagon (2. tøída kupé/barový vùz)
+DR_Ci_21
+DR Ci 21 Donnerbuchse (3. tøída velkoprostor)
+DR_Ci_27
+DR Ci 27 Donnerbuchse (3. tøída velkoprostor)
+DR_Ci_28
+DR Ci 28 Donnerbuchse (3. tøída velkoprostor)
+DR_D4ge
+DR D4ge modernizovaný vagon (slu¾ební vùz)
+DR_Daa_9326
+DR Daa 93-26 (slu¾ební vùz)
+DR_Dage_9315
+DR Dage 93-15 reko vagon (slu¾ební vùz)
+DR_DB_13-1-1
+DR DB 13 patrová jednotka (pøední vùz - 2. tøída velkoprosto
+DR_DB_13-1-2
+DR DB 13 patrová jednotka (pøední vùz - 2. tøída velkoprosto
+DR_DB_13-2
+DR DB 13 patrová jednotka (vlo¾ený vùz - 2. tøída velkoprost
+DR_DB_13-3
+DR DB 13 patrová jednotka (vlo¾ený vùz - 2. tøída velkoprost
+DR_DB_13-4-1
+DR DB 13 patrová jednotka (zadní vùz - 2. tøída velkoprostor
+DR_DB_13-4-2
+DR DB 13 patrová jednotka (zadní vùz - 2. tøída velkoprostor
+DR_DBmqe_2513_dg
+DR DBmqe 25-13 tmavì zelená (zadní øídící patrový vùz - 2. t
+DR_DBmqe_2513_dg_otoc
+DR DBmqe 25-13 tmavì zelená (pøední øídící patrový vùz - 2. 
+DR_DBmqe_2513_o
+DR DBmqe 25-13 okrová (zadní øídící patrový vùz - 2. tøída v
+DR_DBmqe_2513_o_otoc
+DR DBmqe 25-13 okrová (pøední øídící patrový vùz - 2. tøída 
+DR_DBmqee_2503_Berlin
+DR DBmqee 25-03 Berlin (zadní øídící patrový vùz - 2. tøída 
+DR_DBmqee_2503_Berlin_otoc
+DR DBmqee 25-03 Berlin (pøední øídící patrový vùz - 2. tøída
+DR_DBmu_2513_001_prototyp
+DR DBmu 25-13 001 prototyp (patrový vùz - 2. tøída velkopros
+DR_DBmu_2513_002_prototyp
+DR DBmu 25-13 002 prototyp (patrový vùz - 2. tøída velkopros
+DR_DBmu_2513_mint
+DR DBmu 25-13 mentolová (patrový vùz - 2. tøída velkoprostor
+DR_DBmue_2513_dg
+DR DBmue 25-13 tmavì zelená (patrový vùz - 2. tøída velkopro
+DR_DBmue_2513_o
+DR DBmue 25-13 okrová (patrový vùz - 2. tøída velkoprostor)
+DR_DBmuz_2504_Berlin
+DR DBmue 25-04 Berlin (patrový vùz - 2. tøída velkoprostor)
+DR_DBvqe_blau_otoc-1-1
+DR DBvqe patrová jednotka modrá (pøední vùz - 2. tøída velko
+DR_DBvqe_blau_otoc-1-2
+DR DBvqe patrová jednotka modrá (pøední vùz - 2. tøída velko
+DR_DBvqe_blau_otoc-2
+DR DBvqe patrová jednotka modrá (vlo¾ený vùz - 2. tøída velk
+DR_DBvqe_blau_otoc-3
+DR DBvqe patrová jednotka modrá (vlo¾ený vùz - 2. tøída velk
+DR_DBvqe_blau_otoc-4-1
+DR DBvqe patrová jednotka modrá (zadní øídící vùz - 2. tøída
+DR_DBvqe_blau_otoc-4-2
+DR DBvqe patrová jednotka modrá (zadní øídící vùz - 2. tøída
+DR_DBvqe_blau-1-1
+DR DBvqe patrová jednotka modrá (pøední øídící vùz - 2. tøíd
+DR_DBvqe_blau-1-2
+DR DBvqe patrová jednotka modrá (pøední øídící vùz - 2. tøíd
+DR_DBvqe_blau-2
+DR DBvqe patrová jednotka modrá (vlo¾ený vùz - 2. tøída velk
+DR_DBvqe_blau-3
+DR DBvqe patrová jednotka modrá (vlo¾ený vùz - 2. tøída velk
+DR_DBvqe_blau-4-1
+DR DBvqe patrová jednotka modrá (zadní vùz - 2. tøída velkop
+DR_DBvqe_blau-4-2
+DR DBvqe patrová jednotka modrá (zadní vùz - 2. tøída velkop
+DR_DBvqe_otoc-1-1
+DR DBvqe patrová jednotka (pøední vùz - 2. tøída velkoprosto
+DR_DBvqe_otoc-1-2
+DR DBvqe patrová jednotka (pøední vùz - 2. tøída velkoprosto
+DR_DBvqe_otoc-2
+DR DBvqe patrová jednotka (vlo¾ený vùz - 2. tøída velkoprost
+DR_DBvqe_otoc-3
+DR DBvqe patrová jednotka (vlo¾ený vùz - 2. tøída velkoprost
+DR_DBvqe_otoc-4-1
+DR DBvqe patrová jednotka (zadní øídící vùz - 2. tøída velko
+DR_DBvqe_otoc-4-2
+DR DBvqe patrová jednotka (zadní øídící vùz - 2. tøída velko
+DR_DBvqe-1-1
+DR DBvqe patrová jednotka (pøední øídící vùz - 2. tøída velk
+DR_DBvqe-1-2
+DR DBvqe patrová jednotka (pøední øídící vùz - 2. tøída velk
+DR_DBvqe-2
+DR DBvqe patrová jednotka (vlo¾ený vùz - 2. tøída velkoprost
+DR_DBvqe-3
+DR DBvqe patrová jednotka (vlo¾ený vùz - 2. tøída velkoprost
+DR_DBvqe-4-1
+DR DBvqe patrová jednotka (zadní vùz - 2. tøída velkoprostor
+DR_DBvqe-4-2
+DR DBvqe patrová jednotka (zadní vùz - 2. tøída velkoprostor
+DR_DBvue-1-1
+DR DBvue patrová jednotka (pøední vùz - 2. tøída velkoprosto
+DR_DBvue-1-2
+DR DBvue patrová jednotka (pøední vùz - 2. tøída velkoprosto
+DR_DBvue-2
+DR DBvue patrová jednotka (vlo¾ený vùz - 2. tøída velkoprost
+DR_DBvue-3
+DR DBvue patrová jednotka (vlo¾ený vùz - 2. tøída velkoprost
+DR_DBvue-4-1
+DR DBvue patrová jednotka (zadní vùz - 2. tøída velkoprostor
+DR_DBvue-4-2
+DR DBvue patrová jednotka (zadní vùz - 2. tøída velkoprostor
+DR_DGB_12-1
+DR DGB 12 patrová jednotka (pøední vùz - 2. tøída velkoprost
+DR_DGB_12-2
+DR DGB 12 patrová jednotka (spojovací èlánek)
+DR_DGB_12-3
+DR DGB 12 patrová jednotka (vlo¾ený vùz - 2. tøída velkopros
+DR_DGB_12-4
+DR DGB 12 patrová jednotka (spojovací èlánek)
+DR_DGB_12-5
+DR DGB 12 patrová jednotka (vlo¾ený vùz - 2. tøída velkopros
+DR_DGB_12-6
+DR DGB 12 patrová jednotka (spojovací èlánek)
+DR_DGB_12-7
+DR DGB 12 patrová jednotka (vlo¾eny vùz - 2. tøída velkopros
+DR_DGB_12-8
+DR DGB 12 patrová jednotka (spojovací èlánek)
+DR_DGB_12-9
+DR DGB 12 patrová jednotka (zadní vùz - 2. tøída velkoprosto
+DR_DGBge_bs-1
+DR DGBge patrová jednotka hnìdá støecha (pøední vùz - 2. tøí
+DR_DGBge_bs-2
+DR DGBge patrová jednotka hnìdá støecha (spojovací èlánek)
+DR_DGBge_bs-3
+DR DGBge patrova jednotka hnìdá støecha (vlo¾ený vùz - 2. tø
+DR_DGBge_bs-4
+DR DGBge patrová jednotka hnìdá støecha (spojovací èlánek)
+DR_DGBge_bs-5
+DR DGBge patrová jednotka hnìdá støecha (vlo¾ený vùz - 2. tø
+DR_DGBge_bs-6
+DR DGBge patrová jednotka hnìdá støecha (spojovací èlánek)
+DR_DGBge_bs-7
+DR DGBge patrová jednotka hnìdá støecha (vlo¾ený vùz - 2. tø
+DR_DGBge_bs-8
+DR DGBge patrová jednotka hnìdá støecha (spojovací èlánek)
+DR_DGBge_bs-9
+DR DGBge patrová jednotka hnìdá støecha (zadní vùz - 2. tøíd
+DR_DGBge-1
+DR DGBge patrová jednotka (pøední vùz - 2. tøída velkoprosto
+DR_DGBge-2
+DR DGBge patrová jednotka (spojovací èlánek)
+DR_DGBge-3
+DR DGBge patrová jednotka (vlo¾ený vùz - 2. tøída velkoprost
+DR_DGBge-4
+DR DGBge patrová jednotka (spojovací èlánek)
+DR_DGBge-5
+DR DGBge patrová jednotka (vlo¾ený vùz - 2. tøída velkoprost
+DR_DGBge-6
+DR DGBge patrová jednotka (spojovací èlánek)
+DR_DGBge-7
+DR DGBge patrová jednotka (vlo¾ený vùz - 2. tøída velkoprost
+DR_DGBge-8
+DR DGBge patrová jednotka (spojovací èlánek)
+DR_DGBge-9
+DR DGBge patrová jednotka (zadní vùz - 2. tøída velkoprostor
+DR_DGBgqe_bs_otoc-1
+DR DGBgqe patrová jednotka hnìdá støecha (pøední vùz - 2. tø
+DR_DGBgqe_bs_otoc-2
+DR DGBgqe patrová jednotka hnìdá støecha (spojovací èlánek)
+DR_DGBgqe_bs_otoc-3
+DR DGBgqe patrová jednotka hnìdá støecha (vlo¾ený vùz - 2. t
+DR_DGBgqe_bs_otoc-4
+DR DGBgqe patrová jednotka hnìdá støecha (spojovací èlánek)
+DR_DGBgqe_bs_otoc-5
+DR DGBgqe patrová jednotka hnìdá støecha (vlo¾ený vùz - 2. t
+DR_DGBgqe_bs_otoc-6
+DR DGBgqe patrová jednotka hnìdá støecha (spojovací èlánek)
+DR_DGBgqe_bs_otoc-7
+DR DGBgqe patrová jednotka hnìdá støecha (vlo¾ený vùz - 2. t
+DR_DGBgqe_bs_otoc-8
+DR DGBgqe patrová jednotka hnìdá støecha (spojovací èlánek)
+DR_DGBgqe_bs_otoc-9
+DR DGBgqe patrová jednotka hnìdá støecha (zadní øídící vùz -
+DR_DGBgqe_bs-1
+DR DGBgqe patrová jednotka hnìdá støecha (pøední øídící vùz 
+DR_DGBgqe_bs-2
+DR DGBgqe patrová jednotka hnìdá støecha (spojovací èlánek)
+DR_DGBgqe_bs-3
+DR DGBgqe patrová jednotka hnìdá støecha (vlo¾ený vùz - 2. t
+DR_DGBgqe_bs-4
+DR DGBgqe patrová jednotka hnìdá støecha (spojovací èlánek)
+DR_DGBgqe_bs-5
+DR DGBgqe patrová jednotka hnìdá støecha (vlo¾ený vùz - 2. t
+DR_DGBgqe_bs-6
+DR DGBgqe patrová jednotka hnìdá støecha (spojovací èlánek)
+DR_DGBgqe_bs-7
+DR DGBgqe patrová jednotka hnìdá støecha (vlo¾ený vùz - 2. t
+DR_DGBgqe_bs-8
+DR DGBgqe patrová jednotka hnìdá støecha (spojovací èlánek)
+DR_DGBgqe_bs-9
+DR DGBgqe patrová jednotka hnìdá støecha (zadní vùz - 2. tøí
+DR_DGBgqe_otoc-1
+DR DGBgqe patrová jednotka (pøední vùz - 2. tøída velkoprost
+DR_DGBgqe_otoc-2
+DR DGBgqe patrová jednotka (spojovací èlánek)
+DR_DGBgqe_otoc-3
+DR DGBgqe patrová jednotka (vlo¾ený vùz - 2. tøída velkopros
+DR_DGBgqe_otoc-4
+DR DGBgqe patrová jednotka (spojovací èlánek)
+DR_DGBgqe_otoc-5
+DR DGBgqe patrová jednotka (vlo¾ený vùz - 2. tøída velkopros
+DR_DGBgqe_otoc-6
+DR DGBgqe patrová jednotka (spojovací èlánek)
+DR_DGBgqe_otoc-7
+DR DGBgqe patrová jednotka (vlo¾ený vùz - 2. tøída velkopros
+DR_DGBgqe_otoc-8
+DR DGBgqe patrová jednotka (spojovací èlánek)
+DR_DGBgqe_otoc-9
+DR DGBgqe patrová jednotka (zadní øídící vùz - 2. tøída velk
+DR_DGBgqe-1
+DR DGBgqe patrová jednotka (pøední øídící vùz - 2. tøída vel
+DR_DGBgqe-2
+DR DGBgqe patrová jednotka (spojovací èlánek)
+DR_DGBgqe-3
+DR DGBgqe patrová jednotka (vlo¾ený vùz - 2. tøída velkopros
+DR_DGBgqe-4
+DR DGBgqe patrová jednotka (spojovací èlánek)
+DR_DGBgqe-5
+DR DGBgqe patrová jednotka (vlo¾ený vùz - 2. tøída velkopros
+DR_DGBgqe-6
+DR DGBgqe patrová jednotka (spojovací èlánek)
+DR_DGBgqe-7
+DR DGBgqe patrová jednotka (vlo¾ený vùz - 2. tøída velkopros
+DR_DGBgqe-8
+DR DGBgqe patrová jednotka (spojovací èlánek)
+DR_DGBgqe-9
+DR DGBgqe patrová jednotka (zadní vùz - 2. tøída velkoprosto
+DR_DGR_3
+DR DGR 3 (barový vùz k patrové jednotce DR DGB 12)
+DR_Dgse_9545
+DR Dgse 95-45 modernizovaný vagon (slu¾ební vùz)
+DR_DPw_4g
+DR DPw 4g (zavazadlový vùz k patrové jednotce DR DGB 12)
+dr_gbkkqss
+DR Gbkkqss (zavazadlový vùz)
+DR_Post3-cl12_8
+DR Post3-cl12,8 reko vagon (po¹tovní vùz)
+DR_Post4-bll20_8
+DR Post4-bll20,8 modernizovaný vagon (po¹tovní vùz)
+DR_Post4-bll21_1
+DR Post4-bll21,1 modernizovaný vagon (po¹tovní vùz)
+DR_Posta
+DR Posta reko vagon (po¹tovní vùz)
+DR_Pw3ge
+DR Pw3ge reko vagon (slu¾ební vùz)
+DR_Pwgs-56
+DR Pwgs-56 (slu¾ební vùz)
+DR_Pwi_23
+DR Pwi 23 (zavazadlový vùz)
+DR_Pwi_23_2
+DR Pwi 23 (zavazadlový vùz)
+DR_Pwi_29
+DR Pwi 29 (zavazadlový vùz)
+DR_Pwi_29_2
+DR Pwi 29 (zavazadlový vùz)
+DR_Pwi_29_2_rot
+DR Pwi 29 èervený (zavazadlový vùz)
+dr_v180
+DR V180 (dieselová lokomotiva)
+dr_v180_2
+DR V180.2 (dieselová lokomotiva)
+DR_Wgr_8715
+DR Wgr 87-15 reko vagon (jídelní vùz)
+DR_WRge_8845
+DR WRge 88-45 reko vagon (jídelní vùz)
+DR_WRge_8845_6f
+DR WRge 88-45 reko vagon (jídelní vùz - 6 oken)
+DR_WRge_8845_se
+DR WRge 88-45 reko vagon Stadteexpress (jídelní vùz)
+DR_WRme_8870
+DR WRme 88-70 (jídelní vùz)
+DRG_2_2_T21_5
+DRG 2´2´ T 21,5 (tendr)
+DRG_2_2_T21_5_otoc
+DRG 2´2´ T 21,5 otoèená (tendr)
+DRG_38_10-40
+DRG 38.10-40 (osobní parní lokomotiva)
+DRG_38_10-40_otoc
+DRG 38.10-40 otoèená (osobní parní lokomotiva)
+DRG_BCi_21
+DRG BCi 21 (2. a 3. tøída velkoprostor)
+DRG_BCi_29
+DRG BCi 29 (2. a 3. tøída velkoprostor)
+DRG_BDi_21
+DRG BDi 21 (2. a 4. tøída velkoprostor)
+DRG_Bi_21
+DRG Bi 21 (2. tøída velkoprostor)
+DRG_Bi_29
+DRG Bi 29 (2. tøída velkoprostor)
+DRG_Ci_21
+DRG Ci 21 (3. tøída velkoprostor)
+DRG_Ci_28
+DRG Ci 28 (3. tøída velkoprostor)
+DRG_Di_21
+DRG Di 21 (4. tøída velkoprostor)
+DRG_Di_27
+DRG Di 27 (4. tøída velkoprostor)
+DRG_Pwi_23
+DRG Pwi 23 (zavazadlový vùz)
+DRG_Pwi_29
+DRG Pwi 29 (zavazadlový vùz)
+EPPK_Ob_Prazdroj
+EPPK Ob Prazdroj (chladicí vùz na pivo)
+GW_010
+GW 010 (2. tøída)
+GW_010-1
+GW 010 (2. tøída se zavazadlovým oddílem) 1/2
+GW_010-2
+GW 010 (2. tøída se zavazadlovým oddílem) 2/2
+GW_813p
+GW 813 (pøední motorový vùz - 2. tøída)
+GW_813z_cyklo-1
+GW 813 (zadní motorový vùz - 2. tøída se zavazadlovým oddíle
+GW_813z_cyklo-2
+GW 813 (zadní motorový vùz - 2. tøída se zavazadlovým oddíle
+GW_913p_cyklo-1
+GW 913 (pøední øídící vùz - 2. tøída s pøepravou jízdních ko
+GW_913p_cyklo-2
+GW 913 (pøední øídící vùz - 2. tøída s pøepravou jízdních ko
+GW_913z
+GW 913 (zadní øídící vùz - 2. tøída)
+Ikarus_260_BKV
+Autobus Ikarus 206 BKV
+ikarus_e91
+Mìstský autobus Ikarus E91
+Irisbus_Citelis_12_M
+Mìstský autobus Karosa/Irisbus Citelis 12M
+Irisbus_Citelis_18_M
+Mìstský autobus Karosa/Irisbus Citelis 18M
+Irisbus_Citelis_18_M_zadek
+Karosa/Irisbus 18M zadní èást
+irisbus_citybus_18m
+Mìstský autobus Irisbus Citybus 18M
+irisbus_citybus_18m_b
+Mìstský autobus Irisbus Citybus 18M (zadní èást)
+irisbus_crossway_le_12,8
+Autobus Irisbus Crossway 12,8
+irisbus_crossway_le_12,8_b
+úlo¾ný prostor Irisbus Crossway 12,8
+Jelcz_043_cabrio
+Vyhlídkový autobus Jelcz 043 Cabrio
+Jelcz_P_01
+Autobusový vlek Jelcz P 01
+Karosa_B_731
+Mìstský autobus Karosa B 731
+Karosa_B_741_
+Mìstský autobus Karosa B 741
+Karosa_B_741__zadek
+Karosa B 741 zadní èást
+Karosa_B_931
+Mìstský autobus Karosa B 931
+Karosa_B_941
+Mìstský autobus Karosa B 941
+Karosa_B_941_zadek
+Karosa B 941 zadní èást
+Karosa_B961[1]
+Kloubový mìstský autobus Karosa B 961
+Karosa_B961[2]
+Karosa B 961 (zadní èást)
+Karosa_C_734
+Linkový autobus Karosa C 734
+Karosa_C_744
+Linkový autobus Karosa C 744
+Karosa_C_744_zadek
+Karosa C 744 zadní èást
+Karosa_C_934
+Linkový autobus Karosa C 934
+Karosa_C_943
+Linkový autobus Karosa C 943
+Karosa_C_943_zadek
+Karosa C 943 zadní èást
+Karosa_Citybus_12_M
+Mìstský autobus Karosa Citybus 12M
+Karosa_Citybus_18_M
+Mìstský autobus Karosa Citybus 18M
+Karosa_Citybus_18_M_zadek
+Karosa Citybus 18M zadní èást
+Karosa_Crossway_10,6
+Linkový autobus Karosa/Iveco Crossway 10,6
+Karosa_Crossway_12,8
+Linkový autobus Karosa/Iveco Crossway 12,6
+Karosa_LC_735
+Dálkový autobus Karosa LC 735
+Karosa_SD_11
+Dálkový autobus Karosa/©koda SD 11
+Karosa_SL_11
+Linkový autobus Karosa/©koda SL 11
+Karosa_SM_11
+Mìstský autobus Karosa/©koda SM 11
+kkStB_ABeg_4-600
+kkStB ABeg 4-600 (1. a 2. tøída)
+kkStB_ABi_5-098
+kkStB ABi 5-098 (1. a 2. tøída)
+kkStB_BCi_2-75
+kkStB BCi 2-7587 (2. a 3. tøída)
+kkStB_BCi_2-76
+kkStB BCi 2-7621 (2. a 3. tøída)
+kkStB_BCi_2-7653
+kkStB BCi 2-7653 (2. a 3. tøída)
+kkStB_Ceg_27-006
+kkStB Ceg 27-006 (3. tøída)
+kkStB_Ci_4-15
+kkStB Ci 4-1543 (3. tøída)
+kkStB_Ci_4-18
+kkStB Ci 4-1808 (3. tøída)
+kkStB_Ci_4-20
+kkStB Ci 29-546 (3. tøída)
+kkStB_D
+kkStB D (slu¾ební vùz)
+kkStB_Ded
+kkStB Ded (slu¾ební vùz)
+kkStB_G
+kkStB G (kusové zbo¾í)
+kkStB_G_obili
+kkStB G (obiloviny)
+kkStB_G10
+kkStB G 10 (kusové zbo¾í)
+kkStB_Ga
+kkStB Ga (kusové zbo¾í)
+kkStB_Ga_obili
+kkStB Ga (lehké zbo¾í)
+kkStB_Gb_3_Gambrinus
+kkStB Gb Gambrinus (tøíosý chladicí vùz na pivo)
+kkStB_Gb_3_Prazdroj
+kkStB Gb Prazdroj (tøíosý chladicí vùz na pivo)
+kkStB_Gb_Budvar
+kkStB Gb Budvar (chladicí vùz na pivo)
+kkStB_Gb_Litovel
+kkStB Gb Litovel (chladicí vùz na pivo)
+kkStB_Gb_Prazdroj
+kkStB Gb Prazdroj (chladicí vùz na pivo)
+kkStB_Gb_Staropramen
+kkStB Gb Staropramen (chladicí vùz na pivo)
+kkStB_Gfn
+kkStB Gfn (chladicí vùz na maso)
+Laurin_125_autobus
+Lehký mìstský autobus Laurin a Klement (©koda) 125
+Laurin_125_benzin
+Lehký náklaïák Laurin a Klement (©koda) 125 (sudy s benzínem
+Laurin_125_beton
+Lehký náklaïák Laurin a Klement (©koda) 125 (betonové skru¾e
+Laurin_125_cement
+Lehký náklaïák Laurin a Klement (©koda) 125 (pytlovaný cemen
+Laurin_125_drevo
+Lehký náklaïák Laurin a Klement (©koda) 125 (valník s døevìn
+Laurin_125_maso
+Lehký náklaïák Laurin a Klement (©koda) 125 (øeznická dodávk
+Laurin_125_mleko
+Lehký náklaïák Laurin a Klement (©koda) 125 (mlékárenská dod
+Laurin_125_obili
+Lehký náklaïák Laurin a Klement (©koda) 125 (obilniny)
+Laurin_125_ocel
+Lehký náklaïák Laurin a Klement (©koda) 125 (ocelové díly)
+Laurin_125_sypke_zbozi
+Lehký náklaïák Laurin a Klement (©koda) 125 (uhlí)
+Laurin_125_zbozi
+Lehký náklaïák Laurin a Klement (©koda) 125 (paletované zbo¾
+Laurin_505_benzin
+Lehký náklaïák ©koda model 505 (sudy s benzínem)
+Laurin_505_beton
+Lehký náklaïák ©koda model 505 (betonové skru¾e)
+Laurin_505_cement
+Lehký náklaïák ©koda model 505 (pytlovaný cement)
+Laurin_505_drevo
+Lehký náklaïák ©koda model 505 (døevìné latì)
+Laurin_505_maso
+Lehký náklaïák ©koda model 505 (øeznický vùz)
+Laurin_505_mleko
+Lehký náklaïák ©koda model 505 (mlékaøský vùz)
+Laurin_505_obili
+Lehký náklaïák ©koda model 505 (obiloviny)
+Laurin_505_ocel
+Lehký náklaïák ©koda model 505 (ocelové díly)
+Laurin_505_sypke_zbozi
+Lehký náklaïák ©koda model 505 (uhlí)
+Laurin_505_zbozi
+Lehký náklaïák ©koda model 505 (paletované zbo¾í)
+Laurin_a_Klement_model_545_(autobus)
+Mìstský autobus Laurin a Klement model 545
+Liaz_110.010_mleko
+Náklaïák Liaz 110.010 (cisterna na mléko)
+Liaz_110.010_ropa
+Náklaïák Liaz 110.010 (cisterna na ropné produkty)
+Liaz_110.073_beton
+Náklaïák Liaz 110.073 (valník s betonovými skru¾emi)
+Liaz_110.073_cement
+Náklaïák Liaz 110.073 (valník na pøepravu paletovaného cemen
+Liaz_110.073_zbozi
+Náklaïák Liaz 110.073 (valník na pøepravu paletovaného zbo¾í
+liaz_110.581
+Tahaè Liaz 110.581
+Liaz_111.800_drevo
+Tahaè Liaz 111.800 (manipulaèní ruka, pøevoz døeva)
+Liaz_150.261_uhli
+Náklaïák Liaz 151.261 (sklápìè, sypké zbo¾í)
+Liaz_151.261_obili
+Náklaïák Liaz 151.261 (sklápìè, zemìdìlské produkty)
+Liaz_18.29_SB_agro
+Náklaïák Liaz 18.29 SB (sklápìè, zemìdìlské produkty)
+Liaz_18.29_SB_uhli
+Náklaïák Liaz 18.29 SB (sklápìè, sypké zbo¾í)
+liaz_18.29_TB_HR
+Tahaè Liaz 18.29 TB HR (tahaè s manipulaèní rukou, døevo)
+liaz_18.33_PB_beton
+Náklaïák Liaz 18.33 PB (valník, betonové skru¾e)
+liaz_18.33_PB_cement
+Náklaïák Liaz 18.33 PB (valník, paletovaný cement)
+liaz_18.33_PB_zbozi
+Náklaïák Liaz 18.33 PB (valník, paletované zbo¾í)
+liaz_18.33_TBV
+Tahaè Liaz 18.33 TBV
+Liaz_18.33_XB_ADR_ropa
+Náklaïák Liaz 18.33 XB ADR (cisterna na ropné produkty)
+Liaz_18.33_XB_mleko
+Náklaïák Liaz 18.33 XB (cisterna na mléko)
+Liaz_19.40_Skoda_Xena
+Tahaè ©koda Xena (Liaz 19.40)
+Liaz_250.261_uhli
+Náklaïák Liaz 251.261 (sklápìè, sypké zbo¾í)
+Liaz_251.261_obili
+Náklaïák Liaz 251.261 (sklápìè, zemedìlské produkty)
+MAV_Ap_1905
+MAV Ap 19-05 (1. tøída)
+MAV_BDh_8127-1
+MAV BDh 81-27 (2. tøída/slu¾ební) 1/2
+MAV_BDh_8127-2
+MAV BDh 81-27 (2. tøída/slu¾ební) 2/2
+MAV_BDt_8227_otoc-1
+MAV BDt 82-27 (zadní øídící vùz - 2. tøída/slu¾ební) 1/2
+MAV_BDt_8227_otoc-2
+MAV BDt 82-27 (zadní øídící vùz - 2. tøída/slu¾ební) 2/2
+MAV_BDt_8227_z_otoc-1
+MAV BDt 82-27 zelený (zadní øídící vùz - 2. tøída/slu¾ebni) 
+MAV_BDt_8227_z_otoc-2
+MAV BDt 82-27 zelený (zadní øídící vùz - 2. tøída/slu¾ební) 
+MAV_BDt_8227_z-1
+MAV BDt 82-27 zelený (pøední øídící vùz - 2. tøída/slu¾ební)
+MAV_BDt_8227_z-2
+MAV BDt 82-27 zelený (pøední øídící vùz - 2. tøída/slu¾ební)
+MAV_BDt_8227-1
+MAV BDt 82-27 (pøední øídící vùz - 2. tøída/slu¾ební) 1/2
+MAV_BDt_8227-2
+MAV BDt 82-27 (pøední øídící vùz - 2. tøída/slu¾ební) 2/2
+MAV_BDzx_8328-1
+MAV BDzx 83-28 (pøípojný vùz - 2. tøída/slu¾ební) 1/2
+MAV_BDzx_8328-2
+MAV BDzx 83-28 (pøípojný vùz - 2. tøída/slu¾ební) 2/2
+MAV_Bh_2026_z
+MAV Bh 20-26 zelený (2. tøída)
+MAV_Bhv_2007
+MAV Bhv 20-07 (2. tøída)
+MAV_Bhv_2027
+MAV Bhv 20-27 (2. tøída)
+MAV_By_2017
+MAV By 20-17 (2. tøída)
+MAV_By_2017_z
+MAV By 20-17 zelený (2. tøída)
+MAV_Bzmot_5429
+MAV Bzmot 54-29 (motorový vùz - 2. tøída)
+MAV_Bzmot_5429_zp
+MAV Bzmot 54-29 ¾lutý pruh (motorový vùz - 2. tøída)
+MAV_Bzx_2428
+MAV Bzx 24-28 (pøípojný vùz - 2. tøída)
+MAV_Bzx_2428_zp
+MAV Bzx 24-28 ¾lutý pruh (pøípojný vùz - 2. tøída)
+MAV_M41
+MAV M41 (motorová lokomotiva)
+MAV_M41_h
+MAV M41 tovární nátìr (motorová lokomotiva)
+MAV_M61
+MAV M61 "Nohabka" (motorová lokomotiva)
+MAV_M61_h
+MAV M61 tovární nátìr "Nohabka" (motorová lokomotiva)
+MAV_M62
+MAV M62 "Sergej" (dieselová nákladní lokomotiva)
+MAV_Start_ABmz_3091
+MAV Start ABmz 30-91 (1. a 2. tøída)
+MAV_Start_AByee_3155
+MAV Start AByee 31-55 (1. a 2. tøída)
+MAV_Start_Amz_1991
+MAV Start Amz 19-91 (1. tøída)
+MAV_Start_Apmz_1091
+MAV Start Apmz 10-91 (1. tøída)
+MAV_Start_Bcmz_5091
+MAV Start Bcmz 50-91 (lehátkový vùz - 2. tøída)
+MAV_Start_BDh_8127-1
+MAV Start BDh 81-27 (2. tøída/slu¾ební) 1/2
+MAV_Start_BDh_8127-2
+MAV Start BDh 81-27 (2. tøída/slu¾ební) 2/2
+MAV_Start_BDt_8005_otoc-1
+MAV Start BDt 80-05 (zadní øídící vùz - 2. tøída/slu¾ební) 1
+MAV_Start_BDt_8005_otoc-2
+MAV Start BDt 80-05 (zadní øídící vùz - 2. tøída/slu¾ební) 2
+MAV_Start_BDt_8005-1
+MAV Start BDt 80-05 (pøední øídící vùz - 2. tøída/slu¾ební) 
+MAV_Start_BDt_8005-2
+MAV Start BDt 80-05 (pøední øídící vùz - 2. tøída/slu¾ební) 
+MAV_Start_BDt_8207_otoc-1
+MAV Start BDt 82-07 (zadní øídící vùz - 2. tøída/slu¾ební) 1
+MAV_Start_BDt_8207_otoc-2
+MAV Start BDt 82-07 (zadní øídící vùz - 2. tøída/slu¾ební) 2
+MAV_Start_BDt_8207-1
+MAV Start BDt 82-07 (pøední øídící vùz - 2. tøída/slu¾ební) 
+MAV_Start_BDt_8207-2
+MAV Start BDt 82-07 (pøední øídící vùz - 2. tøída/slu¾ební) 
+MAV_Start_BDzx_8328-1
+MAV Start BDzx 83-28 (pøípojný vùz - 2. tøída/slu¾ební) 1/2
+MAV_Start_BDzx_8328-2
+MAV Start BDzx 83-28 (pøípojný vùz - 2. tøída/slu¾ební) 2/2
+MAV_Start_Bhv_2005
+MAV Start Bhv 20-05 (2. tøída)
+MAV_Start_Bhv_2007
+MAV Start Bhv 20-07 (2. tøída)
+MAV_Start_Bmz_2191
+MAV Start Bmz 21-91 (2. tøída)
+MAV_Start_Bp_2905
+MAV Start Bp 29-05 (2. tøída)
+MAV_Start_Bpmz_2091
+MAV Start Bpmz 20-91 (2. tøída)
+MAV_Start_Btzx_8028_IP
+MAV Start Btzx 80-28 "InterPici" (zadni øídící vùz - 2. tøíd
+MAV_Start_Btzx_8028_IP_p
+MAV Start Btzx 80-28 "InterPici" (pøední øídící vùz - 2. tøí
+MAV_Start_By_2017
+MAV Start By 20-17 (2. tøída)
+MAV_Start_Bybdtee_8055_otoc-1
+MAV Start Bybdtee 80-55 (zadní øídící vùz - 2. tøída s pøepr
+MAV_Start_Bybdtee_8055_otoc-2
+MAV Start Bybdtee 80-55 (zadní øídící vùz - 2. tøída s pøepr
+MAV_Start_Bybdtee_8055-1
+MAV Start Bybdtee 80-55 (pøední øídící vùz - 2. tøída s pøep
+MAV_Start_Bybdtee_8055-2
+MAV Start Bybdtee 80-55 (pøední øídící vùz - 2. tøída s pøep
+MAV_Start_Bydee_8455-1
+MAV Start Bydee 84-55 (2. tøída s pøepravou jízdních kol) 1/
+MAV_Start_Bydee_8455-2
+MAV Start Bydee 84-55 (2. tøída s pøepravou jízdních kol) 2/
+MAV_Start_Byee_2155
+MAV Start Byee 21-55 (2. tøída)
+MAV_Start_Bzmot_5429
+MAV Start Bzmot 54-29 (motorový vùz - 2. tøída)
+MAV_Start_Bzmot_5429_IP
+MAV Start Bzmot 54-29 "InterPici" (motorový vùz - 2. tøída)
+MAV_Start_Bzx_2428
+MAV Start Bzx 24-28 (pøípojný vùz - 2. tøída)
+MAV_Start_Dms_9591
+MAV Start Dms 95-91 (slu¾ební vùz)
+MAV_Start_WLABmz_7191
+MAV Start WLABmz 71-91 (lù¾kový vùz - 1. a 2. tøída)
+MAV_Start_WRmz_8891
+MAV Start WRmz 88-91 (jídelní vùz)
+MAV_V43_1
+MAV V43.1 (elektrická lokomotiva ~25kV/50Hz)
+MAV_V43_1_h
+MAV V43.1 tovární nátìr (elektrická lokomotiva ~25kV/50Hz)
+MAV_V43_1_s
+MAV V43.1 ¹edý (elektrická lokomotiva ~25kV/50Hz)
+MAV_V43_2
+MAV V43.2 (elektrická lokomotiva ~25kV/50Hz)
+MAV_V43_3
+MAV V43.3 (elektrická lokomotiva ~25kV/50Hz)
+MAV_V63_0
+MAV V63.0 (elektrická lokomotiva ~25kV/50Hz)
+MAV_V63_0_h
+MAV V63.0 tovární nátìr (elektrická lokomotiva ~25kV/50Hz)
+MAV_V63_1
+MAV V63.1 (elektrická lokomotiva ~25kV/50Hz)
+Mercedes_Benz_Actros
+Tahaè Mercedes Benz Actros (¾lutý)
+nhkg_t669_2501
+NHKG T669.2501 prototyp (dieselová lokomotiva)
+nhkg_t669_2501_2
+NHKG T669.2501 prototyp pozdej¹í provedení (dieselová lokomo
+OBB_1010_green
+ÖBB 1010 zelený (elektrická lokomotiva ~15kV/16,7Hz)
+OBB_1010_orange
+ÖBB 1010 oran¾ový (elektrická lokomotiva ~15kV/16,7Hz)
+OBB_1014_CAT
+ÖBB 1014 "City Airport Train" (elektrická dvousystémová loko
+OBB_1014_RCA
+ÖBB 1014 "Rail Cargo Austria" (elektrická dvousystémová loko
+OBB_1014_red
+ÖBB 1014 èervený (elektrická dvousystémová lokomotiva ~15kV/
+obb_1018_blut_rot
+ÖBB 1018 èervená (elektrická lokomotiva ~15kV/16,7Hz)
+obb_1018_gruen
+ÖBB 1018 zelená (elektrická lokomotiva ~15kV/16,7Hz)
+OBB_1040_green
+ÖBB 1040 zelený (elektrická lokomotiva ~15kV/16,7Hz)
+OBB_1040_orange
+ÖBB 1040 oran¾ový (elektrická lokomotiva ~15kV/16,7Hz)
+OBB_1041_green
+ÖBB 1041 zelený (elektrická lokomotiva ~15kV/16,7Hz)
+OBB_1041_orange
+ÖBB 1041 oran¾ový (elektrická lokomotiva ~15kV/16,7Hz)
+OBB_1042_5_orange
+ÖBB 1042.5 oran¾ový (elektrická lokomotiva ~15kV/16,7Hz)
+OBB_1042_5_red
+ÖBB 1042.5 èervený (elektrická lokomotiva ~15kV/16,7Hz)
+OBB_1042_green
+ÖBB 1042 zelený (elektrická lokomotiva ~15kV/16,7Hz)
+OBB_1042_orange
+ÖBB 1042 oran¾ový (elektrická lokomotiva ~15kV/16,7Hz)
+OBB_1042_red
+ÖBB 1042 èervený (elektrická lokomotiva ~15kV/16,7Hz)
+OBB_1044_501
+ÖBB 1044.501 (testovací vysokorychlostní elektrická lokomoti
+OBB_1044_orange
+ÖBB 1044 oran¾ový (elektrická lokomotiva ~15kV/16,7Hz)
+OBB_1044_red
+ÖBB 1044 èervený (elektrická lokomotiva ~15kV/16,7Hz)
+obb_1080_br
+ÖBB 1080 hnìdá (elektrická lokomotiva ~15kV/16,7Hz)
+obb_1080_gr_1
+ÖBB 1080 zelená (elektrická lokomotiva ~15kV/16,7Hz)
+OBB_1114_red
+ÖBB 1114 èervený (elektrická dvousystémová lokomotiva ~15kV/
+obb_1118_blut_rot
+ÖBB 1118 èervená (elektrická lokomotiva ~15kV/16,7Hz)
+OBB_1142_5_orange
+ÖBB 1142.5 oran¾ový (elektrická lokomotiva ~15kV/16,7Hz)
+OBB_1142_5_red
+ÖBB 1142.5 èervený (elektrická lokomotiva ~15kV/16,7Hz)
+OBB_1144_red
+ÖBB 1144 èervený (elektrická lokomotiva ~15kV/16,7Hz)
+obb_1189_02_a
+ÖBB 1189 oran¾ová (pøední díl - tøíèlánková elektrická lokom
+obb_1189_02_b
+ÖBB 1189 oran¾ová (støední díl - tøíèlánková elektrická loko
+obb_1189_02_c
+ÖBB 1189 oran¾ová (zadní díl - tøíèlánková elektrická lokomo
+obb_1189_gruen_a
+ÖBB 1189 zelená (pøední díl - tøíèlánková elektrická lokomot
+obb_1189_gruen_b
+ÖBB 1189 zelená (støední díl - tøíèlánková elektrická lokomo
+obb_1189_gruen_c
+ÖBB 1189 zelená (zadní díl - tøíèlánková elektrická lokomoti
+OBB_2016
+ÖBB 2016 "Hercules" (motorová lokomotiva)
+OBB_4020
+ÖBB 4020 (elektrická jednotka ~15kV/16,7Hz - hnací vùz 2. tø
+OBB_4020_r
+ÖBB 4020 èervený (elektrická jednotka ~15kV/16,7Hz - hnací v
+OBB_5047
+ÖBB 5047 (motorový vùz - 2. tøída)
+OBB_5047_r1
+ÖBB 5047 èervený (motorový vùz - 2. tøída)
+OBB_5047_r2
+ÖBB 5047 èervený II. (motorový vùz - 2. tøída)
+OBB_5147-1
+ÖBB 5147 (pøední motorový vùz - 2. tøída)
+OBB_5147-2
+ÖBB 5147 (zadní motorový vùz - 2. tøída)
+OBB_5247
+ÖBB 5247 (vlo¾ený motorový vùz - 2. tøída)
+OBB_6020
+ÖBB 6020 (elektrická jednotka ~15kV/16,7Hz - øídící vùz 2. t
+OBB_6020_r
+ÖBB 6020 èervený (elektrická jednotka ~15kV/16,7Hz - øídící 
+OBB_7020
+ÖBB 7020 (elektrická jednotka ~15kV/16,7Hz - vlo¾ený vùz 2. 
+OBB_7020_r
+ÖBB 7020 èervený (elektrická jednotka ~15kV/16,7Hz - vlo¾ený
+OBB_ABmpz_3975
+ÖBB ABmpz 39-75 (1. a 2. tøída)
+OBB_ABmpz_3975_spar
+ÖBB ABmpz 39-75 Spar (1. a 2. tøída)
+OBB_ABmpz-l_3937
+ÖBB ABmpz-l 39-37 "City Shuttle" (1. a 2. tøída)
+OBB_ABmz_3070_dark
+ÖBB ABmz 30-70 tmavì ¹edý (1. a 2. tøída)
+OBB_ABmz_3070_light
+ÖBB ABmz 30-70 svìtle ¹edý (1. a 2. tøída)
+OBB_ABmz_3070_orange
+ÖBB ABmz 30-70 oran¾ový (1. a 2. tøída)
+OBB_ABmz_3090_light
+ÖBB ABmz 30-90 svìtle ¹edý (1. a 2. tøída)
+OBB_ABp_3735
+ÖBB ABp 37-35 "Schlieren" (1. a 2. tøída)
+OBB_ABpo_3735
+ÖBB ABpo 37-35 "Schlieren" (1. a 2. tøída)
+OBB_Ampz_1891_light
+ÖBB Ampz 18-91 svìtle ¹edý (1. tøída)
+OBB_Ampz_1975
+ÖBB Ampz 19-75 (1. tøída)
+OBB_Ampz_1975_spar
+ÖBB Ampz 19-75 Spar (1. tøída)
+OBB_Amz
+ÖBB Amz
+OBB_Amz_160
+ÖBB Amz (1. tøída) (160)
+OBB_Amz_1970_orange
+ÖBB Amz 19-70 oran¾ový (1. tøída)
+OBB_Amz_1971_orange
+ÖBB Amz 19-71 oran¾ový (1. tøída)
+OBB_Ap_1735
+ÖBB Ap 17-35 "Schlieren" (1. tøída)
+OBB_Apo_1735
+ÖBB Apo 17-35 "Schlieren" (1. tøída)
+OBB_BDmpsz_8275_spar-1
+ÖBB BDmpsz 82-75 Spar (2. tøída/slu¾ební) 1/2
+OBB_BDmpsz_8275_spar-2
+ÖBB BDmpsz 82-75 Spar (2. tøída/slu¾ební) 2/2
+OBB_BDmpsz_8275-1
+ÖBB BDmpsz 82-75 (2. tøída/slu¾ební) 1/2
+OBB_BDmpsz_8275-2
+ÖBB BDmpsz 82-75 (2. tøída/slu¾ební) 2/2
+OBB_BDmsz_8270_dark-1
+ÖBB BDmsz 82-70 tmavì ¹edý (2. tøída/slu¾ební) 1/2
+OBB_BDmsz_8270_dark-2
+ÖBB BDmsz 82-70 tmavì ¹edý (2. tøída/slu¾ební) 2/2
+OBB_BDmsz_8270_orange-1
+ÖBB BDmsz 82-70 oran¾ový (2. tøída/slu¾ební) 1/2
+OBB_BDmsz_8270_orange-2
+ÖBB BDmsz 82-70 oran¾ový (2. tøída/slu¾ební) 2/2
+OBB_BDp_8235_spar-1
+ÖBB BDp 82-35 Spar "Schlieren" (2. tøída/slu¾ební) 1/2
+OBB_BDp_8235_spar-2
+ÖBB BDp 82-35 Spar "Schlieren" (2. tøída/slu¾ební) 2/2
+OBB_BDp_8235-1
+ÖBB BDp 82-35 "Schlieren" (2. tøída/slu¾ební) 1/2
+OBB_BDp_8235-2
+ÖBB BDp 82-35 "Schlieren" (2. tøída/slu¾ební) 2/2
+OBB_BDpo_8235-1
+ÖBB BDpo 82-35 "Schlieren" (2. tøída/slu¾ební) 1/2
+OBB_BDpo_8235-2
+ÖBB BDpo 82-35 "Schlieren" (2. tøída/slu¾ební) 2/2
+OBB_Bmpz
+ÖBB Bmpz (2. tøída)
+OBB_Bmpz_2075
+ÖBB Bmpz 20-75 (2. tøída)
+OBB_Bmpz_2075_spar
+ÖBB Bmpz 20-75 Spar (2. tøída)
+OBB_Bmpz-dl_2633
+ÖBB Bmpz-dl 26-33 "City Shuttle" (2. tøída)
+OBB_Bmpz-dl_2633_CAT
+ÖBB Bmpz-dl 26-33 "City Airport Train" (2. tøída)
+OBB_Bmpz-ds_8033
+ÖBB Bmpz-ds 80-33 "City Shuttle" (pøední øídící vùz - 2. tøí
+OBB_Bmpz-ds_8033_CAT
+ÖBB Bmpz-ds 80-33 "City Airport Train" (pøední øídící vùz - 
+OBB_Bmpz-ds_8033_CAT_otoc
+ÖBB Bmpz-ds 80-33 "City Airport Train" (zadní øídící vùz - 2
+OBB_Bmpz-ds_8033_otoc
+ÖBB Bmpz-ds 80-33 "City Shuttle" (zadní øídící vùz - 2. tøíd
+OBB_Bmpz-l_2173
+ÖBB Bmpz-l 21-73 "City Shuttle" (2. tøída)
+OBB_Bmpz-s_8073_otoc-1
+ÖBB Bmpz-s 80-73 "City Shuttle" (zadní øídící vùz - 2. tøída
+OBB_Bmpz-s_8073_otoc-2
+ÖBB Bmpz-s 80-73 "City Shuttle" (zadní øídící vùz - 2. tøída
+OBB_Bmpz-s_8073-1
+ÖBB Bmpz-s 80-73 "City Shuttle" (pøední øídící vùz - 2. tøíd
+OBB_Bmpz-s_8073-2
+ÖBB Bmpz-s 80-73 "City Shuttle" (pøední øídící vùz - 2. tøíd
+OBB_Bmz
+ÖBB Bmz (2. tøída)
+OBB_Bmz_160
+ÖBB Bmz 160 (2. tøída kupé)
+OBB_Bmz_2170_dark
+ÖBB Bmz 21-70 tmavì ¹edý (2. tøída)
+OBB_Bmz_2170_orange
+ÖBB Bmz 21-70 oran¾ový (2. tøída)
+OBB_Bmz_2171_orange
+ÖBB Bmz 21-71 oran¾ový (2. tøída)
+OBB_Bp_2833_spar
+ÖBB Bp 28-33 Spar "Schlieren" (2. tøída)
+OBB_Bp_2935
+ÖBB Bp 29-35 "Schlieren" (2. tøída)
+OBB_Bp_2935_spar
+ÖBB Bp 29-35 Spar "Schlieren" (2. tøída)
+OBB_Bpo_2935
+ÖBB Bpo 29-35 "Schlieren" (2. tøída)
+OBB_BRmpz_8575
+ÖBB BRmpz 85-75 (2. tøída/barový vùz)
+OBB_Dmsz_9570_dark
+ÖBB Dmsz 95-70 tmavì ¹edý (slu¾ební vùz)
+OBB_Dmsz_9570_light
+ÖBB Dmsz 95-70 svìtle ¹edý (slu¾ební vùz)
+OBB_Dmsz_9570_orange
+ÖBB Dmsz 95-70 oran¾ový (slu¾ební vùz)
+OBB_Gabkqss-x
+ÖBB Gabkqss-x (zavazadlový vùz pro pøepravu jízdních kol)
+OBB_Gabkqss-x_r
+ÖBB Gabkqss-x èervený (zavazadlový vùz pro pøepravu jízdních
+OBB_Gbkkss-vx
+ÖBB Gbkkss-vx (zavazadlový vùz pro pøepravu jízdních kol)
+OBB_Postm_0033
+ÖBB Postm 00-33 (po¹tovní vùz)
+OBB_Postm_0033_dark
+ÖBB Postm 00-33 tmavì ¹edý (po¹tovní vùz)
+OBB_Postmz_0030
+ÖBB Postmz 00-30 (po¹tovní vùz)
+OBB_Postmz_0030_dark
+ÖBB Postmz 00-30 tmavì ¹edý (po¹tovní vùz)
+obb_setra_s431dt
+Mezimìstský autobus Setra S 431 DT
+OBB_WRmz_8870_dark
+ÖBB WRmz 88-70 tmavì ¹edý (jídelní vùz)
+OBB_WRmz_8870_orange
+ÖBB WRmz 88-70 oran¾ový (jídelní vùz)
+OBB_WRmz_8890_dark
+ÖBB WRmz 88-90 tmavì ¹edý (jídelní vùz)
+OBB_WRmz_8890_light
+ÖBB WRmz 88-90 svìtle ¹edý (jídelní vùz)
+OZVD_Ci_R_I
+OZVD Ci Rybák I (3. tøída)
+podval_P-32_auta
+Støední podvalník Transporta P-32 (auta)
+podval_P-32_beton
+Støední podvalník Transporta P-32 (beton)
+podval_P-32_ocel
+Støední podvalník Transporta P-32 (ocel)
+podval_P-50_auta
+Tì¾ký podvalník Transporta P-50 (auta)
+podval_P-50_beton
+Tì¾ký podvalník Transporta P-50 (beton)
+podval_P-50_ocel
+Tì¾ký podvalník Transporta P-50 (ocel)
+Praga_N_benzin
+Praga N (sudy s benzínem)
+Praga_N_beton
+Praga N (betonové skru¾e)
+Praga_N_cement
+Praga N (pøeprava cementu)
+Praga_N_drevo
+Praga N (la»ky)
+Praga_N_maso
+Praga N (øeznický vùz)
+Praga_N_mleko
+Praga N (mlékaøský vùz)
+Praga_N_obili
+Praga N (zemìdìlské produkty)
+Praga_N_ocel
+Praga N (vùz na ocel)
+Praga_N_sypke_zbozi
+Praga N (sypké zbo¾í)
+Praga_N_zbozi
+Praga N (paletované zbo¾í)
+Praga_NO
+Mìstský autobus Praga NO
+Praga_RN_autobus
+Mìstský autobus Praga RN "Erena"
+Praga_RN_autobus_CSD
+Linkový autobus Praga RN "Erena" (ÈSD)
+Praga_RN_benzin
+Lehký náklaïák Praga RN "Erena" (sudy s benzínem)
+Praga_RN_beton
+Lehký náklaïák Praga RN "Erena" (betonové skru¾e)
+Praga_RN_cement
+Lehký náklaïák Praga RN "Erena" (pytlovaný cement)
+Praga_RN_drevo
+Lehký náklaïák Praga RN "Erena" (døevo)
+Praga_RN_maso
+Lehký náklaïák Praga RN "Erena" (øeznický vùz)
+Praga_RN_mleko
+Lehký náklaïák Praga RN "Erena" (mléko)
+Praga_RN_obili
+Lehký náklaïák Praga RN "Erena" (obilí)
+Praga_RN_ocel
+Lehký náklaïák Praga RN "Erena" (ocelové díly)
+Praga_RN_sypke_zbozi
+Lehký náklaïák Praga RN "Erena" (uhlí)
+Praga_RN_zbozi
+Lehký náklaïák Praga RN "Erena" (paletované zbo¾í)
+Praga_S5T_benzin
+Náklaïák Praga S5T (sudy s benzínem)
+Praga_S5T_maso
+Náklaïák Praga S5T (øeznický vùz)
+Praga_S5T_mleko
+Náklaïák Praga S5T (mlékárenský vùz)
+Praga_S5T_obili
+Náklaïák Praga S5T (obilniny)
+Praga_S5T_sypke_zbozi
+Náklaïák Praga S5T (uhlí)
+Praga_S5T_zbozi
+Náklaïák Praga S5T (paletované zbo¾í)
+Praga_TN
+Mìstský autobus Praga TN
+Praga_TO
+Mìstský autobus Praga TO
+Praga_TO_II
+Mìstský autoubus Praga TO (modernizovaný)
+Praga_TOT
+Trolejbus Praga TOT
+Praga_v3s_benzin
+Lehký náklaïák Praga V3S (sudy s benzínem)
+Praga_v3s_beton
+Lehký náklaïák Praga V3S (betonové skru¾e)
+Praga_v3s_cement
+Lehký náklaïák Praga V3S (pytlovaný cement)
+Praga_v3s_drevo
+Lehký náklaïák Praga V3S (oplenový lesovùz, døevo)
+Praga_v3s_obili
+Lehký náklaïák Praga V3S (obilí)
+Praga_v3s_ocel
+Lehký náklaïák Praga V3S (ocelové díly)
+Praga_v3s_sypke_zbozi
+Lehký náklaïák Praga V3S (uhlí)
+Praga_v3s_zbozi
+Lehký náklaïák Praga V3S (paletované zbo¾í)
+Praga_VT6
+Mìstský autobus Praga VT6
+RBG_650_oberpfalzbahn
+RBG 650 "Regioshuttle" Oberfalzbahn (motorový vùz - 2. tøída
+RBG_650_oberpfalzbahn-1
+RBG 650 "Regioshuttle" Oberfalzbahn (motorový vùz - 2. tøída
+RBG_650_oberpfalzbahn-2
+RBG 650 "Regioshuttle" Oberfalzbahn (motorový vùz - 2. tøída
+RBG_650_waldbahn
+RBG 650 "Regioshuttle" Waldbahn (motorový vùz - 2. tøída)
+RBG_650_waldbahn_gy
+RBG 650 "Regioshuttle" Waldbahn zeleno¾lutý (motorový vùz - 
+RBG_650_waldbahn_gy-1
+RBG 650 "Regioshuttle" Waldbahn zeleno¾lutý (motorový vùz - 
+RBG_650_waldbahn_gy-2
+RBG 650 "Regioshuttle" Waldbahn zeleno¾lutý (motorový vùz - 
+RBG_650_waldbahn-1
+RBG 650 "Regioshuttle" Waldbahn (motorový vùz - 2. tøída s p
+RBG_650_waldbahn-2
+RBG 650 "Regioshuttle" Waldbahn (motorový vùz - 2. tøída s p
+renault_magnum
+Tahaè Renault Magnum
+RJ_070
+RegioJet 070 (vlo¾ený vùz - 2. tøída)
+RJ_162
+RegioJet 162 (elektrická lokomotiva =3kV)
+RJ_721_151
+RegioJet 721.151 (motorová lokomotiva)
+RJ_970_predni-1
+RegiolJet 970 (pøední øídící vùz - 1. tøída s bufetovym a za
+RJ_970_predni-2
+RegiolJet 970 (pøední øídící vùz - 1. tøída s bufetovým a za
+RJ_970_zadni-1
+RegioJet 970 (øídící vùz - 1. tøída s bufetovým a zavazadlov
+RJ_970_zadni-2
+RegioJet 970 (øídící vùz - 1. tøída s bufetovým a zavazadlov
+RJ_ABmz_3090
+RegioJet ABmz 30-90 (2. tøída)
+RJ_Ampz_1891
+RegioJet Ampz 18-91 (2. tøída)
+skoda_1_tr
+Trolejbus ©koda 1Tr
+skoda_10_tr
+Kloubový Trolejbus ©koda 10Tr
+skoda_10_tr_zadek
+©koda 10Tr zadní èást
+Skoda_109E_Messerschmitt
+©koda 109E "Messerschmitt" (elektrická vícesystémová lokomot
+skoda_11_tr
+Trolejbus ©koda 11Tr
+skoda_12_tr
+Trolejbus ©koda 12Tr
+skoda_13_tr
+Trolejbus ©koda 13Tr
+skoda_14_tr
+Trolejbus ©koda 14Tr
+skoda_15_tr
+Kloubový trolejbus ©koda 15Tr
+skoda_15_tr_zadek
+©koda 15 Tr zadní èást
+skoda_16_tr
+Trolejbus ©koda 16Tr
+skoda_17_tr
+Trolejbus ©koda 17Tr
+skoda_18_tr
+Kloubový trolejbus ©koda 18Tr
+skoda_18_tr_zadek
+©koda 18Tr zadní èást
+skoda_19_tr
+Kloubový trolejbus ©koda 19Tr
+skoda_19_tr_stred
+©koda 19Tr støední èást
+skoda_19_tr_zadek
+©koda 19Tr zadní èást
+skoda_2_tr
+Trolejbus ©koda 2Tr
+skoda_20_tr
+Kloubový trolejbus ©koda 20Tr
+skoda_20_tr_stred
+©koda 20Tr støední èást
+skoda_20_tr_zadek
+©koda 20Tr zadní èást
+skoda_21_ab
+Mìstský autobus ©koda 21AB
+skoda_21_tr
+Trolejbus ©koda 21TrACI
+skoda_22_tr
+Kloubový trolejbus ©koda 22Tr
+skoda_22_tr_zadek
+©koda 22Tr zadní èást
+skoda_23_tr
+Kloubový trolejbus ©koda 23Tr
+skoda_23_tr_stred
+©koda 23Tr støední èást
+skoda_23_tr_zadek
+©koda 23Tr zadní èást
+skoda_24_tr
+Trolejbus ©koda 24Tr
+skoda_25_tr
+Kloubový trolejbus ©koda 25Tr
+skoda_25_tr_zadek
+©koda 25Tr zadní èást
+skoda_26_tr
+Trolejbus ©koda/Solaris 26Tr
+skoda_27_tr
+Kloubový trolejbus ©koda/Solaris 27Tr
+skoda_27_tr_zadek
+©koda 27Tr zadní èást
+skoda_28_tr
+Trolejbus ©koda/Solaris 28Tr
+skoda_3_tr
+Trolejbus ©koda 3Tr
+skoda_30_tr
+Trolejbus ©koda/Sor 30Tr
+skoda_31_tr
+Kloubový trolejbus ©koda/Sor 31Tr
+skoda_31_tr_zadek
+©koda/Sor 31Tr zadní èást
+skoda_4_tr
+Trolejbus ©koda 4Tr
+skoda_5_tr
+Trolejbus ©koda 5Tr
+skoda_6_tr
+Trolejbus ©koda 6Tr
+skoda_7_tr
+Trolejbus ©koda 7Tr
+Skoda_706_benzin
+Náklaïák ©koda 706 (sudy s benzínem)
+Skoda_706_beton
+Náklaïák ©koda 706 (betonové skru¾e)
+Skoda_706_cement
+Náklaïák ©koda 706 (pytlovaný cement)
+Skoda_706_drevo
+Náklaïák ©koda 706 (døevo)
+Skoda_706_maso
+Náklaïák ©koda 706 (øeznický vùz)
+Skoda_706_mleko
+Náklaïák ©koda 706 (mléko)
+skoda_706_MTS
+Náklaïák ©koda 706 MTS (sklápìè)
+skoda_706_MTS_Agro
+Náklaïák ©koda 706 MT (sklápìè pro zemìdìlství)
+skoda_706_MTS_cisterna_na_mleko
+Náklaïák ©koda 706 MT (cisterna na mléko)
+skoda_706_MTS_cisterna_na_ropu
+Náklaïák ©koda 706 MT (cisterna na ropné produkty)
+skoda_706_MTS_valnik_s_plachtou
+Náklaïák ©koda 706 MT (valník s plachtou na paletované zbo¾í
+skoda_706_MTTN
+Tahaè ©koda 706 MTTN
+Skoda_706_obili
+Náklaïák ©koda 706 (obilí)
+Skoda_706_ocel
+Náklaïák ©koda 706 (ocelové díly)
+Skoda_706_R_benzin
+Náklaïák ©koda 706 R "Barèa"(sudy s benzínem)
+Skoda_706_R_beton
+Náklaïák ©koda 706 R "Barèa"(betonové skru¾e)
+Skoda_706_R_cement
+Náklaïák ©koda 706 R "Barèa"(pytlovaný cement)
+Skoda_706_R_drevo
+Náklaïák ©koda 706 R "Barèa"(døevo)
+Skoda_706_R_maso
+Náklaïák ©koda 706 R "Barèa"(øeznický vùz)
+Skoda_706_R_mleko
+Náklaïák ©koda 706 R "Barèa"(mléko)
+Skoda_706_R_obili
+Náklaïák ©koda 706 R "Barèa"(obilí)
+Skoda_706_R_ocel
+Náklaïák ©koda 706 R "Barèa"(ocelové díly)
+Skoda_706_R_sypke_zbozi
+Náklaïák ©koda 706 R "Barèa"(uhlí)
+Skoda_706_R_zbozi
+Náklaïák ©koda 706 R "Barèa"(paletované zbo¾í)
+skoda_706_RO_linkovy
+Linkový autobus ©koda 706 RO
+skoda_706_RO_mestsky
+Mìstský autobus ©koda 706 RO
+skoda_706_RT
+Náklaïák ©koda 706 RT (sklápìè)
+skoda_706_RT_Agro
+Náklaïák ©koda 706 RT (valník pro zemedìlství)
+skoda_706_RT_cisterna_na_mleko
+Náklaïák ©koda 706 RT (cisterna na mléko)
+skoda_706_RT_cisterna_na_ropu
+Náklaïák ©koda 706 RT (cisterna na ropné produkty)
+skoda_706_RT_valnik_s_plachtou
+Náklaïák ©koda 706 RT (valník s plachtou na paletované zbo¾í
+skoda_706_RTO
+Linkový autobus ©koda 706 RTO
+skoda_706_RTO_K
+Kloubový autobus ©koda 706 RTO K
+skoda_706_RTO_K__zadek
+Autobus ©koda 706 RTO K (zadní èást)
+skoda_706_RTO_LUX
+Dálkový autobus ©koda 706 RTO
+skoda_706_RTO_MEZ
+Mìstský autobus ©koda 706 RTO
+skoda_706_RTO_mrazak
+Nákladní automobil ©koda 706 RTO (mrazírenský vùz)
+skoda_706_RTO_stehovak
+Nákladní automobil ©koda 706 RTO (stìhovací vùz)
+skoda_706_RTTN
+Tahaè ©koda 706 RTTN
+Skoda_706_sypke_zbozi
+Náklaïák ©koda 706 (uhlí)
+Skoda_706_zbozi
+Náklaïák ©koda 706 (paletované zbo¾í)
+skoda_8_tr
+Trolejbus ©koda 8Tr
+skoda_9_tr
+Trolejbus ©koda 9Tr
+Skoda_model_505_(autobus)
+Mìstský autobus ©koda model 505
+Skoda_model_506N_(autobus-polotrambus)
+Mìstský autobus ©koda 506N polotrambusová karoserie
+Skoda_model_506N_(autobus-trambus)
+Mìstský autobus ©koda 506N trambusová karoserie
+Skoda_model_506N_(autobus)
+Mìstský autobus ©koda 506N
+Skoda_model_656_(autobus)
+Mìstský autobus ©koda model 656
+Skoda_model_656D_(autobus)
+Mìstský autobus ©koda model 656D
+Skoda_model_656D_II_(autobus)
+Mìstský autobus ©koda 656D (modernizovaný)
+skoda_sanos_115_tr
+Trolejbus ©koda/Sanos 115Tr
+skoda_sanos_200_tr
+Kloubový trolejbus ©koda/Sanos 200Tr
+skoda_sanos_200_tr_zadek
+©koda/Sanos 200Tr zadní èást
+Skoda_Sentinel_benzin
+Parní nákladní automobil ©koda Sentinel (sudy s benzínem)
+Skoda_Sentinel_beton
+Parní nákladní automobil ©koda Sentinel (betonové skru¾e)
+Skoda_Sentinel_cement
+Parní nákladní automobil ©koda Sentinel (pytlovaný cement)
+Skoda_Sentinel_drevo
+Parní nákladní automobil ©koda Sentinel (døevìné latì)
+Skoda_Sentinel_maso
+Parní nákladní automobil ©koda Sentinel (øeznický vùz)
+Skoda_Sentinel_mleko
+Parní nákladní automobil ©koda Sentinel (mlékaøsky vùz)
+Skoda_Sentinel_obili
+Parní nákladní automobil ©koda Sentinel (obilniny)
+Skoda_Sentinel_ocel
+Parní nákladní automobil ©koda Sentinel (ocelové díly)
+Skoda_Sentinel_sypke_zbozi
+Parní nákladní automobil ©koda Sentinel (uhlí)
+Skoda_Sentinel_zbozi
+Parní nákladní automobil ©koda Sentinel (paletované zbo¾í)
+Skrin_na_lyze
+Autobusová skøíò na ly¾e
+solaris_trollino_12
+Trolejbus Solaris Trollino 12M
+Solaris_Trollino_15
+Trolejbus Solaris Trollino 15M
+Solaris_Trollino_18
+Kloubový trolejbus Solaris Trollino 18M
+Solaris_Trollino_18_zadek
+Solaris Trollino 18M zadní èást
+Solaris_Urbino_10
+Mìstský autobus Solaris Urbino 10M
+Solaris_Urbino_12
+Mìstský autobus Solaris Urbino 12M
+Solaris_Urbino_15
+Mìstský autobus Solaris Urbino 15M
+Solaris_Urbino_18
+Mìstský autobus Solaris Urbino 18M
+Solaris_Urbino_18_zadek
+Solaris Urbino 18M zadní èást
+SOR_B_7.5
+Autobus Sor B 7,5
+SOR_B_9.5
+Autobus Sor B 9,5
+SOR_B_9.5_PMDP
+Autobus Sor B 9,5 (PMDP)
+SOR_BN_10.5
+Autobus Sor BN 10,5
+SOR_BN_12
+Autobus Sor BN 12
+SOR_BN_8.5
+Autobus Sor BN 8,5
+SOR_BN_9.5
+Autobus Sor BN 9,5
+SOR_C_10.5
+Autobus Sor C 10,5
+SOR_C_12
+Autobus Sor C 12
+SOR_C_7.5
+Autobus Sor C 7,5
+SOR_C_9.5
+Autobus Sor C 9,5
+SOR_CN_10.5
+Autobus Sor CN 10,5
+SOR_CN_12
+Autobus Sor CN 12
+SOR_CN_13.5
+Autobus Sor CN 13,5
+SOR_CN_8.5
+Autobus Sor CN 8,5
+SOR_CN_9.5
+Autobus Sor CN 9,5
+sor_ebn_10,5
+Autobus Sor EBN 10,5 (elektrický autobus)
+SOR_NB_12
+Mìstský autobus Sor NB 12
+sor_nb_12_city
+Autobus Sor NB 12 City
+StEG_Ci_4-17
+StEG Ci 4-1707 (3. tøída)
+T_211.0
+ÈSD T211.0 (dieselová posunovací lokomotiva)
+TATRA_111_(beton)
+Tì¾ký náklaïák Tatra 111 (valník s betonovými skru¾emi)
+TATRA_111_(drevo)
+Tì¾ký náklaïák Tatra 111 (pøepravník døeva s klanicemi)
+TATRA_111_(obili)
+Tì¾ký náklaïák Tatra 111 (valník na pøevoz obilí)
+TATRA_111_(Preprava_cementu)
+Tì¾ký náklaïák Tatra 111 (pøepravník cementu)
+TATRA_111_(sypke_zbozi)
+Tì¾ký náklaïák Tatra 111 (valník na sypké zbo¾í)
+TATRA_111_(zbozi)
+Tì¾ký náklaïák Tatra 111 (valník na paletované zbo¾í)
+TATRA_138_(cisterna_na_mleko)
+Tì¾ký náklaïák Tatra 138 (cisterna na mléko)
+TATRA_138_(cisterna_na_ropu)
+Tì¾ký náklaïák Tatra 138 (cisterna na ropné produkty)
+TATRA_138_(Drevarska_nastavba)
+Tì¾ký náklaïák Tatra 138 (døevaøská nástavba)
+TATRA_138_(Preprava_cementu)
+Tì¾ký náklaïák Tatra 138 (pøeprava cementu)
+TATRA_138_(Prepravnik_betonovych_panelu)
+Tì¾ký náklaïák Tatra 138 (pøepravník betonových panelù)
+TATRA_138_(Prepravnik_ocelovych_profilu)
+Tì¾ký náklaïák Tatra 138 (pøepravník ocelových profilù)
+TATRA_138_(Valnik_s_plachtou)
+Tì¾ký náklaïák Tatra 138 (valník s plachtou na paletované zb
+TATRA_138_S1_(jednostranny_sklapec,_sypke_zbozi)
+Tì¾ký náklaïák Tatra 138 S1 (jednostranný sklápìè)
+TATRA_138_S3_(tristranny_sklapec,_obili)
+Tì¾ký náklaïák Tatra 138 S3 (tøístranný sklápìè pro zemìdìls
+TATRA_138_S3_(tristranny_sklapec,_sypke_zbozi)
+Tì¾ký náklaïák Tatra 138 S3 (tøístranný sklápìè)
+TATRA_141
+Tì¾ký tahaè Tatra 141
+TATRA_147_DC_(dampr)
+Tì¾ký náklaïák Tatra 147 DC (tì¾ký sklápìè)
+TATRA_148_(cisterna_na_mleko)
+Tì¾ký náklaïák Tatra 148 (cisterna na mléko)
+TATRA_148_(cisterna_na_ropu)
+Tì¾ký náklaïák Tatra 148 (cisterna na ropné produkty)
+TATRA_148_(Drevarska_nastavba)
+Tì¾ký náklaïák Tatra 148 (døevaøská nástavba)
+TATRA_148_(Preprava_cementu)
+Tì¾ký náklaïák Tatra 148 (pøepravník cementu)
+TATRA_148_(Prepravnik_betonovych_panelu)
+Tì¾ký náklaïák Tatra 148 (pøepravník betonových panelù)
+TATRA_148_(Prepravnik_ocelovych_profilu)
+Tì¾ký náklaïák Tatra 148 (pøepravník ocelových profilù)
+TATRA_148_(Valnik_s_plachtou)
+Tì¾ký náklaïák Tatra 148 (valník s plachtou na paletované zb
+TATRA_148_S1_(jednostranny_sklapec,_sypke_zbozi)
+Tì¾ký náklaïák Tatra 148 S1 (jednostranný sklápìè)
+TATRA_148_S3_(tristranny_sklapec,_obili)
+Tì¾ký náklaïák Tatra 148 S3 (tøístranný sklápìè pro zemìdìls
+TATRA_148_S3_(tristranny_sklapec,_sypke_zbozi)
+Tì¾ký náklaïák Tatra 148 S3 (tøístranný sklápìè)
+TATRA_148_TP
+Tìzký tahaè Tatra 148 TP
+TATRA_163_Jamal
+Tì¾ký náklaïák Tatra 163 Jamal
+Tatra_23_benzin
+Náklaïák Tatra 23 (sudy s benzínem)
+Tatra_23_beton
+Náklaïák Tatra 23 (betonové skru¾e)
+Tatra_23_cement
+Náklaïák Tatra 23 (pytlovaný cement)
+Tatra_23_drevo
+Náklaïák Tatra 23 (lesovùz)
+Tatra_23_maso
+Náklaïák Tatra 23 (øeznický vùz)
+Tatra_23_mleko
+Náklaïák Tatra 23 (mlékárenský vùz)
+Tatra_23_obili
+Náklaïák Tatra 23 (obilniny)
+Tatra_23_ocel
+Náklaïák Tatra 23 (ocelové díly)
+Tatra_23_sypke_zbozi
+Náklaïák Tatra 23 (uhlí)
+Tatra_23_zbozi
+Náklaïák Tatra 23 (paletové zbo¾í)
+Tatra_24_benzin
+Náklaïák Tatra 24 (sudy s benzínem)
+Tatra_24_beton
+Náklaïák Tatra 24 (betonové skru¾e)
+Tatra_24_cement
+Náklaïák Tatra 24 (pytlovaný cement)
+Tatra_24_drevo
+Náklaïák Tatra 24 (lesovùz)
+Tatra_24_maso
+Náklaïák Tatra 24 (øeznický vùz)
+Tatra_24_mleko
+Náklaïák Tatra 24 (mlékárenský vùz)
+Tatra_24_obili
+Náklaïák Tatra 24 (obilný vùz)
+Tatra_24_ocel
+Náklaïák Tatra 24 (ocelové díly)
+Tatra_24_sypke_zbozi
+Náklaïák Tatra 24 (uhlí)
+Tatra_24_zbozi
+Náklaïák Tatra 24 (stìhovací skøíò)
+Tatra_24-58_benzin
+Náklaïák Tatra 24/58 (sudy s benzínem)
+Tatra_24-58_beton
+Náklaïák Tatra 24/58 (betonové skru¾e)
+Tatra_24-58_cement
+Náklaïák Tatra 24/58 (pytlovaný cement)
+Tatra_24-58_drevo
+Náklaïák Tatra 24/58 (lesovùz)
+Tatra_24-58_maso
+Náklaïák Tatra 24/58 (øeznický vùz)
+Tatra_24-58_mleko
+Náklaïák Tatra 24/58 (mlékárenský vùz)
+Tatra_24-58_obili
+Náklaïák Tatra 24/58 (obilný vùz)
+Tatra_24-58_ocel
+Náklaïák Tatra 24/58 (ocelové díly)
+Tatra_24-58_sypke_zbozi
+Náklaïák Tatra 24/58 (uhlí)
+Tatra_24-58_zbozi
+Náklaïák Tatra 24/58 (stìhovací skøín)
+Tatra_24-67_benzin
+Náklaïák Tatra 24/67 (sudy s benzínem)
+Tatra_24-67_beton
+Náklaïák Tatra 24/67 (betonové skru¾e)
+Tatra_24-67_cement
+Náklaïák Tatra 24/67 (pytlovaný cement)
+Tatra_24-67_drevo
+Náklaïák Tatra 24/67 (lesovùz)
+Tatra_24-67_maso
+Náklaïák Tatra 24/67 (øeznický vùz)
+Tatra_24-67_mleko
+Náklaïák Tatra 24/67 (mlékárenský vùz)
+Tatra_24-67_obili
+Náklaïák Tatra 24/67 (obilný vùz)
+Tatra_24-67_ocel
+Náklaïák Tatra 24/67 (ocelové díly)
+Tatra_24-67_sypke_zbozi
+Náklaïák Tatra 24/67 (uhlí)
+Tatra_24-67_zbozi
+Náklaïák Tatra 24/67 (stìhovací skøíò)
+TATRA_400_T
+Trolejbus Tatra 400 T
+TATRA_401_T
+Trolejbus Tatra 401 T
+TATRA_500_HB
+Horský bus Tatra 500 HB
+TATRA_813_8x8_Kolos_(beton)
+Tì¾ký náklaïák Tatra 813 8x8 Kolos (betonové potrubí)
+TATRA_813_8x8_Kolos_(obili)
+Tì¾ký náklaïák Tatra 813 8x8 Kolos (zemìdìlský náklaïák)
+TATRA_813_8x8_Kolos_(pytlovany_cement)
+Tì¾ký náklaïák Tatra 813 8x8 Kolos (pytlovaný cement)
+TATRA_813_8x8_Kolos_(zbozi)
+Tì¾ký náklaïák Tatra 813 8x8 Kolos (paletované zbo¾í)
+TATRA_813_S1_8x8
+Tì¾ký náklaïák Tatra 813 8x8 S1 (jednostranný sklápìè)
+TATRA_813_TP_6x6
+Tì¾ký tahaè Tatra 813 TP 6x6
+TATRA_815_(manipulacni_ruka,_beton)
+Tì¾ký náklaïák Tatra 815 6x6 valník s manipulaèní rukou (bet
+TATRA_815_(manipulacni_ruka,_pytlovany_cement)
+Tì¾ký náklaïák Tatra 815 (valník s manipulaèní rukou na pytl
+TATRA_815_260N51
+Tahaè Tatra 815 260N51
+TATRA_815_Agro_S
+Tì¾ký náklaïák Tatra 815 6x6 Agro S (zemìdìlská nástavba)
+TATRA_815_AM369_(autodomichavac)
+Tì¾ký náklaïák Tatra 815 6x6 AM369 (automíchaèka betonu)
+TATRA_815_Bus
+Horský bus Tatra 815
+TATRA_815_CA-18_(cisterna)
+Tì¾ký náklaïák Tatra 815 6x6 CA-18 (aumobilová cisterna-ropn
+TATRA_815_Lesovuz
+Tì¾ký náklaïák Tatra 815 6x6 Lesovùz (pøeprava døeva)
+TATRA_815_Multilift_8x8+kontejner_na_zbozi
+Tì¾ký náklaïák Tatra 815 Multilift 8x8 (kontejner na paletov
+TATRA_815_S1
+Tì¾ký náklaïák Tatra 815 S1 (jednostranný sklápìè)
+TATRA_815_S3
+Tì¾ký náklaïák Tatra 815 S3 (tøístranný sklápìè)
+TATRA_815_Terrno_8x8_S1
+Tì¾ký náklaïák Tatra 815 8x8 Terrno S1 (jednostranný sklápìè
+TATRA_815_Terrno_AM_7_FHC_6x6_(autodomichavac)
+Tì¾ký náklaïák Tatra 815 Terrno 6x6 Am 7 FHC (automíchaèka b
+TATRA_815_Terrno_AM_9_FHC_8x8_(autodomichavac)
+Tì¾ký náklaïák Tatra 815 Terrno 8x8 AM 9 FHC (automíchaèka b
+TATRA_815_Terrno_S3_6x6
+Tì¾ký náklaïák Tatra 815 6x6 Terrno S3 (tøístranný sklápìè)
+TATRA_815_TP_6x6
+Tì¾ký tahaè Tatra 815 TP 6x6
+TATRA_86_T
+Trolejbus Tatra 86 T
+Tatra_Typ_R_beton
+Nesselsdorfer Wagenbau-Fabriks-Gesellschaft Typ R (beton)
+Tatra_Typ_R_cement
+Nesselsdorfer Wagenbau-Fabriks-Gesellschaft Typ R (balený ce
+Tatra_Typ_R_drevo
+Nesselsdorfer Wagenbau-Fabriks-Gesellschaft Typ R (palivové 
+Tatra_Typ_R_maso
+Nesselsdorfer Wagenbau-Fabriks-Gesellschaft Typ R (øeznický 
+Tatra_Typ_R_mleko
+Nesselsdorfer Wagenbau-Fabriks-Gesellschaft Typ R (mlékárens
+Tatra_Typ_R_obili
+Nesselsdorfer Wagenbau-Fabriks-Gesellschaft Typ R (senný vùz
+Tatra_Typ_R_ocel
+Nesselsdorfer Wagenbau-Fabriks-Gesellschaft Typ R (ocelové s
+Tatra_Typ_R_palety
+Nesselsdorfer Wagenbau-Fabriks-Gesellschaft Typ R (paletové 
+Tatra_Typ_R_ropa
+Nesselsdorfer Wagenbau-Fabriks-Gesellschaft Typ R (petrolej)
+Tatra_Typ_R_sypke
+Nesselsdorfer Wagenbau-Fabriks-Gesellschaft Typ R (uhlí)
+Viamont_010_r
+Viamont 010 (pøední øídící vùz - 2. tøída)
+Viamont_010_v
+Viamont 010 (2. tøída)
+Viamont_010-1
+Viamont 010 (pøední øídící vùz - 2. tøída s pøepravou jízdní
+Viamont_010-2
+Viamont 010 (pøedni øídící vùz - 2. tøída s pøepravou jízdní
+Viamont_010-3
+Viamont 010 (2. tøída se zavazadlovým oddílem) 1/2
+Viamont_010-4
+Viamont 010 (2. tøída se zavazadlovým oddílem) 2/2
+Viamont_810
+Viamont 810 (motorový vùz - 2. tøída)
+Viamont_Es
+Viamont Es (sypké zbo¾í)
+Viamont_Es_drevo
+Viamont Es (døevo)
+Viamont_Es_drevo_dvojice
+Viamont Es dvojice vozù (døevo)
+Viamont_Es_dvojice
+Viamont Es dvojice vozù (sypké zbo¾í)
+vlek_drevo
+Vlek na pøevoz døeva
+ZD_010
+®eleznice Desná 010 (2. tøída)
+ZD_010-1
+®eleznice Desná 010 (2. tøída se zavazadlovym oddílem) 1/2
+ZD_010-2
+®eleznice Desná 010 (2. tøída se zavazadlovým oddílem) 2/2
+ZD_810
+®eleznice Desná 810 (motorový vùz - 2. tøída)
+ZD_814_5
+®eleznice Desná 814.5 "Desná" (motorový vùz - 2. tøída)
+ZD_914_5
+®eleznice Desná 914.5 "Desná" (øídící vùz - 2. tøída)
+ZSR_011
+®SR 011 (2. tøída)
+ZSR_011_orange
+®SR 011 (2. tøída)
+ZSR_011_orange-1
+®SR 011 (2. tøída se zavazadlovým oddílem) 1/2
+ZSR_011_orange-2
+®SR 011 (2. tøída se zavazadlovým oddílem) 2/2
+ZSR_011-1
+®SR 011 (2. tøída se zavazadlovým oddílem) 1/2
+ZSR_011-2
+®SR 011 (2. tøída se zavazadlovým oddílem) 2/2
+ZSR_050
+®SR 050 (2. tøída)
+ZSR_110_Zehlicka
+®SR 110 "®ehlièka" (elektrická lokomotiva =3kV)
+ZSR_125_Stvoricka_1
+®SR 125 "Stvoøická" (elektrická lokomotiva =3kV) 1
+ZSR_125_Stvoricka_2
+®SR 125 "Stvoøická" (elektrická lokomotiva =3kV) 2
+ZSR_131_Dvojicka_1
+®SR 131 "Dvojièka" (elektrická lokomotiva =3kV) 1
+ZSR_131_Dvojicka_2
+®SR 131 "Dvojièka" (elektrická lokomotiva =3kV) 2
+ZSR_140_Bobina
+®SR 140 "Bobina" (elektrická lokomotiva =3kV)
+ZSR_162_Persing
+®SR 162 "Pershing" (elektrická lokomotiva =3kV)
+ZSR_163_Persing
+®SR 163 "Pershing" (elektrická lokomotiva =3kV)
+ZSR_182_Rakana
+®SR 182 "Rakana" (elektrická lokomotiva =3kV)
+ZSR_183_Sestkolak
+®SR 183 "©estkolák" (elektrická lokomotiva =3kV)\n\n
+ZSR_210_Jezevec
+®SR 210 "Jezevec" (elektrická lokomotiva ~25kV/50Hz)
+ZSR_240_Laminatka
+®SR 240 "Laminátka" (elektrická lokomotiva ~25kV/50Hz)
+ZSR_263_Princezna
+®SR 263 "Princezna" (elektrická lokomotiva ~25kV/50Hz)
+ZSR_350_Gorila
+®SR 350 "Gorila" (elektrická dvousystémová lokomotiva =3kV +
+ZSR_362_Persing
+®SR 362 "Persing" (elektrická dvousystémová lokomotiva =3kV 
+ZSR_363_Persing
+®SR 363 "Persing" (elektrická dvousystémová lokomotiva =3kV 
+ZSR_810
+®SR 810 (motorový vùz - 2. tøída)
+ZSR_811
+®SR 811 (motorový vùz - 2. tøída)
+ZSR_812_lux
+®SR 812 lux (motorový vùz - 2. tøída)
+ZSR_812-1
+®SR 812 (motorový vùz - 2. tøída s pøepravou jízdních kol) 1
+ZSR_812-2
+®SR 812 (motorový vùz - 2. tøída s pøepravou jízdních kol) 2
+ZSR_850
+®SR 850 "Krokodýl" (motorový vùz - 2. tøída)
+ZSR_850_otoc
+®SR 850 "Krokodýl" (zadní motorový vùz - 2. tøída)
+ZSR_850_otoc-1
+®SR 850 "Krokodýl" (zadní motorový vùz - 2. tøída/slu¾ební) 
+ZSR_850_otoc-2
+®SR 850 "Krokodýl" (zadní motorový vùz - 2. tøída/slu¾ební) 
+ZSR_850-1
+®SR 850 "Krokodýl" (motorový vùz - 2. tøída/slu¾ební) 1/2
+ZSR_850-2
+®SR 850 "Krokodýl" (motorový vùz - 2. tøída/slu¾ební) 2/2
+ZSR_912
+®SR 912 (pøední øídící vùz - 2. tøída)
+ZSR_A
+®SR A (1. tøída)
+ZSR_AB
+®SR AB (1. a 2. tøída)
+ZSR_Apee_IC
+®SR Apee InterCity (1. tøída)
+ZSR_B
+®SR B (2. tøída)
+ZSR_Bc
+®SR Bc (lehátkový vùz 2. tøída)
+ZSR_BDs_regio-1
+®SR BDs regio (slu¾ební/2. tøída) 1/2
+ZSR_BDs_regio-2
+®SR BDs regio (slu¾ební/2. tøída) 2/2
+ZSR_BDs-1
+®SR BDs (slu¾ební/2. tøída) 1/2
+ZSR_BDs-2
+®SR BDs (slu¾ební/2. tøída) 2/2
+ZSR_BDshmee-1
+®SR BDshmee (slu¾ební/2. tøída) 1/2
+ZSR_BDshmee-2
+®SR BDshmee (slu¾ební/2. tøída) 2/2
+ZSR_Bdtmee
+®SR Bdtmee (2. tøída)
+ZSR_Bdtmee_cyklo-1
+®SR Bdtmee (2. tøída s pøepravou jízdních kol) 1/2
+ZSR_Bdtmee_cyklo-2
+®SR Bdtmee (2. tøída s pøepravou jízdních kol) 2/2
+ZSR_Bmee
+®SR Bmee (2. tøída)
+ZSR_Bpee_IC
+®SR Bpee InterCity (2. tøída)
+ZSR_Bt
+®SR Bt (2. tøída)
+ZSR_Ds
+®SR Ds (slu¾ební vùz)
+ZSSK_011_Blonski
+ZSSK 011 Blonski (2. tøída)
+ZSSK_011_Blonski-1
+ZSSK 011 Blonski (2. tøída se zavazadlovým oddílem) 1/2
+ZSSK_011_Blonski-2
+ZSSK 011 Blonski (2. tøída se zavazadlovým oddílem) 2/2
+ZSSK_011_red
+ZSSK 011 (2. tøída)
+ZSSK_011_red-1
+ZSSK 011 (2. tøída se zavazadlovým oddílem) 1/2
+ZSSK_011_red-2
+ZSSK 011 (2. tøída se zavazadlovým oddílem) 2/2
+ZSSK_012_Blonski-1
+ZSSK 012 Blonski (2. tøída s pøepravou jízdních kol) 1/2
+ZSSK_012_Blonski-2
+ZSSK 012 Blonski (2. tøída s pøepravou jízdních kol) 2/2
+ZSSK_071
+ZSSK 071 "Jáno¹ík" (vlo¾ený vùz)
+ZSSK_110_Zehlicka
+ZSSK 110 "®ehlièka" (elektrická lokomotiva =3kV)
+ZSSK_125_Stvoricka_1
+ZSSK 125 "Stvoøická" (elektrická lokomotiva =3kV) 1
+ZSSK_125_Stvoricka_2
+ZSSK 125 "Stvoøická" (elektrická lokomotiva =3kV) 2
+ZSSK_131_Dvojicka_1
+ZSSK 131 "Dvojièka" (elektrická lokomotiva =3kV) 1
+ZSSK_131_Dvojicka_2
+ZSSK 131 "Dvojièka" (elektrická lokomotiva =3kV) 2
+ZSSK_140_Bobina
+ZSSK 140 "Bobina" (elektrická lokomotiva =3kV)
+ZSSK_162_Persing
+ZSSK 162 "Pershing" (elektrická lokomotiva =3kV)
+ZSSK_163_Persing
+ZSSK 163 "Pershing" (elektrická lokomotiva =3kV)
+ZSSK_182_Rakana
+ZSSK 182 "Rakana" (elektrická lokomotiva =3kV)
+ZSSK_183_Sestkolak
+ZSSK 183 "©estkolák" (elektrická lokomotiva =3kV)
+ZSSK_210_Jezevec
+ZSSK 210 "Jezevec" (elektrická lokomotiva ~25kV/50Hz)
+ZSSK_240_Laminatka
+ZSSK 240 "Laminátka" (elektrická lokomotiva ~25kV/50Hz)
+ZSSK_263_Princezna
+ZSSK 263 "Princezna" (elektrická lokomotiva ~25kV/50Hz)
+ZSSK_350_Gorila
+ZSSK 350 "Gorila" (elektrická dvousystémová lokomotiva =3kV 
+ZSSK_362_Persing
+ZSSK 362 "Persing" (elektrická dvousystémová lokomotiva =3kV
+ZSSK_363_Persing
+ZSSK 363 "Persing" (elektrická dvousystémová lokomotiva =3kV
+ZSSK_381_Messerschmitt
+ZSSK 381 (elektrická vícesystémova lokomotiva =3kV + ~25kV/5
+ZSSK_671
+ZSSK 671 "Jáno¹ík" (elektrická vícesystémová jednotka =3kV +
+ZSSK_810_Blonski
+ZSSK 810 Blonski (motorový vùz - 2. tøída)
+ZSSK_811_Blonski
+ZSSK 811 Blonski (motorový vùz - 2. tøída)
+ZSSK_812_Blonski-1
+ZSSK 812 Blonski (motorový vùz - 2. tøída s pøepravou jízdní
+ZSSK_812_Blonski-2
+ZSSK 812 Blonski (motorový vùz - 2. tøída s pøepravou jízdní
+ZSSK_812-1
+ZSSK 812 (motorový vùz - 2. tøída s pøepravou jízdních kol) 
+ZSSK_812-2
+ZSSK 812 (motorový vùz - 2. tøída s pøepravou jízdních kol) 
+ZSSK_813-1
+ZSSK 813 Bageta (zadní motorový vùz - 2. tøída s pøepravou j
+ZSSK_813-2
+ZSSK 813 Bageta (zadní motorový vùz - 2. tøída s pøepravou j
+ZSSK_912_Blonski
+ZSSK 912 Blonski (pøední øídící vùz - 2. tøída)
+ZSSK_913
+ZSSK 913 Bageta (pøední øídící vùz - 2. tøída)
+ZSSK_971
+ZSSK 971 "Jáno¹ík" (øídící vùz)
+ZSSK_A
+ZSSK A (1. tøída)
+ZSSK_A_Blonski
+ZSSK A Blonski (1. tøída)
+ZSSK_AB
+ZSSK AB (1. a 2. tøída)
+ZSSK_AB_Blonski
+ZSSK AB Blonski (1. a 2. tøída)
+ZSSK_B
+ZSSK B (2. tøída)
+ZSSK_B_Blonski
+ZSSK B Blonski (2. tøída)
+ZSSK_Bc
+ZSSK Bc (lehátkový vùz 2. tøída)
+ZSSK_Bc_Blonski
+ZSSK Bc Blonski (lehátkový vùz 2. tøída)
+ZSSK_Bcee_Blonski
+ZSSK Bcee Blonski (lehátkový vùz 2. tøída)
+ZSSK_Bdgtmee_Blonski
+ZSSK Bdgtmee Blonski (2. tøída)
+ZSSK_Bdgtmee_cyklo_Blonski-1
+ZSSK Bdgtmee Blonski (2. tøída s pøepravou jízdních kol) 1/2
+ZSSK_Bdgtmee_cyklo_Blonski-2
+ZSSK Bdgtmee Blonski (2. tøída s pøepravou jízdních kol) 2/2
+ZSSK_BDs_Blonski-1
+ZSSK BDs Blonski (slu¾ební/2. tøída) 1/2
+ZSSK_BDs_Blonski-2
+ZSSK BDs Blonski (slu¾ební/2. tøída) 2/2
+ZSSK_BDs_regio-1
+ZSSK BDs regio (slu¾ební/2. tøída) 1/2
+ZSSK_BDs_regio-2
+ZSSK BDs regio (slu¾ební/2. tøída) 2/2
+ZSSK_BDs-1
+ZSSK BDs (slu¾ební/2. tøída) 1/2
+ZSSK_BDs-2
+ZSSK BDs (slu¾ební/2. tøída) 2/2
+ZSSK_BDshmee_Blonski-1
+ZSSK BDshmee Blonski (slu¾ební/2. tøída) 1/2
+ZSSK_BDshmee_Blonski-2
+ZSSK BDshmee Blonski (slu¾ební/2. tøída) 2/2
+ZSSK_BDshmee-1
+ZSSK BDshmee (slu¾ební/2. tøída) 1/2
+ZSSK_BDshmee-2
+ZSSK BDshmee (slu¾ební/2. tøída) 2/2
+ZSSK_Bdtmee
+ZSSK Bdtmee (2. tøída)
+ZSSK_Bdtmee_Blonski
+ZSSK Bdtmee Blonski (2. tøída)
+ZSSK_Bdtmee_cyklo_Blonski-1
+ZSSK Bdtmee Blonski (2. tøída s pøepravou jízdních kol) 1/2
+ZSSK_Bdtmee_cyklo_Blonski-2
+ZSSK Bdtmee Blonski (2. tøída s pøepravou jízdních kol) 2/2
+ZSSK_Bdtmee_cyklo-1
+ZSSK Bdtmee (2. tøída s pøepravou jízdních kol) 1/2
+ZSSK_Bdtmee_cyklo-2
+ZSSK Bdtmee (2. tøída s pøepravou jízdních kol) 2/2
+ZSSK_Bmee
+ZSSK Bmee (2. tøída)
+ZSSK_Bmeer_Blonski
+ZSSK Bmeer Blonski (2. tøída)
+ZSSK_Bt
+ZSSK Bt (2. tøída)
+ZSSK_Bt_Blonski
+ZSSK Bt Blonski (2. tøída)
+ZSSK_Ds
+ZSSK Ds (slu¾ební vùz)
+ZSSK_Ds_Blonski
+ZSSK Ds Blonski (slu¾ební vùz)
+ZSSK_Tms_beton
+ZSSK Tms (beton)
+ZSSK_Tms_ocel
+ZSSK Tms (ocel)
+#______________________________________way______________________________________
+#______________________________________way______________________________________
+air_movement_area
+Pojí¾dìcí plocha
+air_movement_area_old
+Dlá¾dìná pojí¾dìcí plocha
+concrete_sleeper_track
+Tra» s betonovými pra¾ci
+concrete_tram_track
+Tramvajový pás
+cs_narrow_gauge_track_30
+Úzkokolejná tra»
+cs_narrow_gauge_track_50
+Úzkokolejná tra»
+High_quality_track
+Tra» vysoké kvality
+low_quality_track
+Tra» nízké kvality
+Powerline
+Vedení vysokého napìtí
+Rillenschienen
+Tramvajová tra»
+river_00
+Splavná øeka
+river_01
+Splavná øeka
+river_02
+Splavná øeka
+river_03
+Øeka
+river_04
+Øíèka
+road_015
+Dlá¾dìná cesta
+road_030
+Blátivá polní cesta
+road_035
+©tìrková cesta
+road_050
+Asfaltová ulice
+road_080
+Asfaltová silnice
+road_090
+Asfaltová silnice
+road_110
+Silnice pro motorová vozidla
+road_130
+Dálnice
+runway_modern
+Pøistávací dráha
+steel_sleeper_track
+Vysokrychlostní koridor
+trat_130
+Tra» pro koridor
+trat_45
+Tra» pro lokální provoz
+trat_85
+Tra» pro nákladní provoz
+Trat_pro_koridor
+Tra» pro koridor
+Trat_pro_lokalni_provoz
+Tra» pro lokální provoz
+Trat_pro_nakladni_provoz
+Tra» pro nákladní provoz
+vlecka_30
+®eleznièní vleèka
+vlecka_35
+®eleznièní vleèka s pra¾ci
+water_road
+Prùplav
+wooden_sleeper_track
+Tra» s døevìnými pra¾ci
+Zeleznicni_vlecka
+®eleznièní vleèka
+Zeleznicni_vlecka_s_prazci
+®eleznièní vleèka s pra¾ci
+#__________________________________way-object___________________________________
+#__________________________________way-object___________________________________
+High_Speed_Catenary
+Vysokorychlostní trolej
+old_catenary
+Stará trolej
+standard_catenary
+Standardní trolej
+Third_Rail_Electrification
+Elektrifikace tøetí kolejí
+Tram_Electrification
+Tramvajová trolej
+TrolleyBus_Electrification
+Trolejbusová trolej

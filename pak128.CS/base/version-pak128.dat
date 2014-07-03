@@ -1,0 +1,6 @@
+Obj=ground
+Name=Outside
+Image[0][0]=tile.1.1
+
+copyright=Pak128.CS 0.3.0
+# copyright entry is shown when loading pakset above progress bar and should say what is pak/version
