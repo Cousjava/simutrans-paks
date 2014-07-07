@@ -1,0 +1,15 @@
+Obj=building
+name=posta
+copyright=TommPa9, Vladki
+
+#intro_year=1950
+type=extension
+enables_post=1
+level=10
+
+Dims=1,1,1
+BackImage[0][0][0][0][0][0]=posta.0.0
+BackImage[0][0][0][0][0][1]=posta.0.3
+Cursor=posta.0.1
+Icon=> posta.0.2
+

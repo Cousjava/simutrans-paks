@@ -181,6 +181,9 @@ echo Compiling Tram tools
 cd ..\tram_tracks
 ..\..\makeobj.exe pak128 ../../simutrans/pak128.CS/way.tram_track.all.pak ./ >>..\..\err.txt
 
+cd ..\tram_signals
+..\..\makeobj.exe pak128 ../../simutrans/pak128.CS/tram_signals.all.pak ./ >>..\..\err.txt
+
 echo Compiling Water Tools
 
 cd ..\water_all

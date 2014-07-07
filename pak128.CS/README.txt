@@ -21,6 +21,10 @@ When reusing the material from this set, observe the terms of used license. Addi
 The license implicitly assumed for all graphical material is "Artistic license 2.0", unless specified otherwise individually. For license details, please see the accompanying file "LICENSE.txt". Configuration, text and script files are in public domain, unless specified otherwise.
 
 
+Sources and material
+--------------------
+You find some sources of our creation under "sources" folder. You find some unfinished creation under "material" folder, you can finish it.
+
 Alternative forms of graphics
 -----------------------------
 
