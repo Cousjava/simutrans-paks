@@ -1,0 +1,15 @@
+obj=building
+name=rotunda_Znojmo128
+copyright=jk271
+intro_year=1034
+build_time=1000
+Type=cur
+Chance=10
+level=50
+needs_ground=1
+climates=temperate
+Dims=1,1,4
+BackImage[0][0][0][0][0][0]=rotunda_Znojmo_128.0.0
+BackImage[1][0][0][0][0][0]=rotunda_Znojmo_128.1.0
+BackImage[2][0][0][0][0][0]=rotunda_Znojmo_128.1.1
+BackImage[3][0][0][0][0][0]=rotunda_Znojmo_128.0.1

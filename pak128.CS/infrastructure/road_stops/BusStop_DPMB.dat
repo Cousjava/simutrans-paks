@@ -1,0 +1,70 @@
+obj=building
+name=DPMB_MHD
+copyright=Vladki
+type=stop
+waytype=road
+level=1
+dims=1,1,8
+enables_pax=1
+intro_year=1976
+retire_month=10
+retire_year=1997
+icon=> BusStop_DPMB.0.5
+cursor=BusStop_DPMB.0.4
+# Single
+FrontImage[6][0][0][0][0]=BusStop_DPMB.0.0
+BackImage[6][0][0][0][0]=BusStop_DPMB.0.1
+BackImage[7][0][0][0][0]=BusStop_DPMB.0.2
+FrontImage[7][0][0][0][0]=BusStop_DPMB.0.3
+# Middle
+FrontImage[0][0][0][0][0]=BusStop_DPMB.1.0
+BackImage[0][0][0][0][0]=BusStop_DPMB.1.1
+BackImage[1][0][0][0][0]=BusStop_DPMB.1.2
+FrontImage[1][0][0][0][0]=BusStop_DPMB.1.3
+# South End
+FrontImage[2][0][0][0][0]=BusStop_DPMB.2.0
+BackImage[2][0][0][0][0]=BusStop_DPMB.2.1
+# West End
+BackImage[5][0][0][0][0]=BusStop_DPMB.2.2
+FrontImage[5][0][0][0][0]=BusStop_DPMB.2.3
+# North End
+FrontImage[4][0][0][0][0]=BusStop_DPMB.3.0
+BackImage[4][0][0][0][0]=BusStop_DPMB.3.1
+# East End
+BackImage[3][0][0][0][0]=BusStop_DPMB.3.2
+FrontImage[3][0][0][0][0]=BusStop_DPMB.3.3
+------------------------
+obj=building
+name=DPMB_MHD_Zn
+copyright=Vladki
+type=stop
+waytype=road
+level=1
+dims=1,1,8
+enables_pax=1
+intro_month=10
+intro_year=1997
+icon=> BusStop_DPMB_Zn.0.5
+cursor=BusStop_DPMB_Zn.0.4
+# Single
+FrontImage[6][0][0][0][0]=BusStop_DPMB_Zn.0.0
+BackImage[6][0][0][0][0]=BusStop_DPMB_Zn.0.1
+BackImage[7][0][0][0][0]=BusStop_DPMB_Zn.0.2
+FrontImage[7][0][0][0][0]=BusStop_DPMB_Zn.0.3
+# Middle
+FrontImage[0][0][0][0][0]=BusStop_DPMB_Zn.1.0
+BackImage[0][0][0][0][0]=BusStop_DPMB_Zn.1.1
+BackImage[1][0][0][0][0]=BusStop_DPMB_Zn.1.2
+FrontImage[1][0][0][0][0]=BusStop_DPMB_Zn.1.3
+# South End
+FrontImage[2][0][0][0][0]=BusStop_DPMB_Zn.2.0
+BackImage[2][0][0][0][0]=BusStop_DPMB_Zn.2.1
+# West End
+BackImage[5][0][0][0][0]=BusStop_DPMB_Zn.2.2
+FrontImage[5][0][0][0][0]=BusStop_DPMB_Zn.2.3
+# North End
+FrontImage[4][0][0][0][0]=BusStop_DPMB_Zn.3.0
+BackImage[4][0][0][0][0]=BusStop_DPMB_Zn.3.1
+# East End
+BackImage[3][0][0][0][0]=BusStop_DPMB_Zn.3.2
+FrontImage[3][0][0][0][0]=BusStop_DPMB_Zn.3.3

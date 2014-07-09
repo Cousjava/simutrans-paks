@@ -6,9 +6,10 @@ Compilation
 
 Currently these build systems are available:
 * pakmak.py
+* Makefile
 * Windows batch file
 
-The first wants makeobj on path, the other one next to script file. Other requirements are, obviously, the backends: Python for pakmak and Windows for the batch file.
+The first wants makeobj on path, the other two next to script file. Other requirements are, obviously, the backends: Python for pakmak, GNU make for Makefile and Windows for the batch file.
 
 Result of compilation should be a directory "simutrans/pak128.CS", ready to be used.
 

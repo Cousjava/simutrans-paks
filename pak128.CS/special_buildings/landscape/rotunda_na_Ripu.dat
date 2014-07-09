@@ -1,0 +1,13 @@
+obj=building
+name=rotunda_na_Ripu128
+copyright=jk271
+intro_year=1126
+Type=cur
+level=100
+needs_ground=1
+climates=temperate
+Dims=1,1,4
+BackImage[0][0][0][0][0][0]=rotunda_na_Ripu_128.0.0
+BackImage[1][0][0][0][0][0]=rotunda_na_Ripu_128.1.0
+BackImage[2][0][0][0][0][0]=rotunda_na_Ripu_128.1.1
+BackImage[3][0][0][0][0][0]=rotunda_na_Ripu_128.0.1 
