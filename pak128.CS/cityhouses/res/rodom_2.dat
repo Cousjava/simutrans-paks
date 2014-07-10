@@ -1,0 +1,12 @@
+obj=building
+name=rodom_2
+copyright=VTPsim
+type=res
+Passengers=4
+Post=1
+level=5
+chance=200
+intro_year=1965
+retire_year=1993
+backimage[0][0][0][0][0]=rodom_2.1.0
+
