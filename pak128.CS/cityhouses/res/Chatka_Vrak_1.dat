@@ -1,0 +1,12 @@
+Obj=building
+name=Chatka_Z_Vraku
+copyright=TommPa9
+intro_year=1965
+intro_month=1
+retire_year=2020
+retire_month=10
+level=4   
+needs_ground=1
+type=res
+Dims=1,1,1
+BackImage[0][0][0][0][0]=Chatka_Vrak_1.0.0

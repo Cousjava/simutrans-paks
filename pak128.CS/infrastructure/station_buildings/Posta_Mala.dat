@@ -1,0 +1,15 @@
+Obj=building
+name=Posta_Mala
+copyright=TommPa9, Vladki
+
+#intro_year=1950
+type=extension
+enables_post=1
+level=10
+
+Dims=1,1,1
+BackImage[0][0][0][0][0][0]=Posta_Mala.0.0
+BackImage[0][0][0][0][0][1]=Posta_Mala.0.3
+Cursor=Posta_Mala.0.1
+Icon=> Posta_Mala.0.2
+

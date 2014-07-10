@@ -1,0 +1,10 @@
+Obj=building
+name=Domek_7
+copyright=TommPa9
+intro_year=1999
+intro_month=1
+level=9    
+needs_ground=1
+type=res
+Dims=1,1,1
+BackImage[0][0][0][0][0]=Domek_7.0.0

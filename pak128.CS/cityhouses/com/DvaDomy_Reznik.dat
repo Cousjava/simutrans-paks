@@ -1,0 +1,12 @@
+Obj=building
+name=DvaDomy_Reznik
+copyright=TommPa9
+intro_year=1910
+intro_month=4
+retire_year=1962
+retire_month=6
+level=27 
+needs_ground=1
+type=com
+Dims=1,1,1
+BackImage[0][0][0][0][0]=DvaDomy_Reznik.0.0

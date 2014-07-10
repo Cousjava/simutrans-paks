@@ -1,4 +1,4 @@
-                  # Makefile based on the pak64 Makefile. Thank you prissi et al!
+# Makefile based on the pak64 Makefile. Thank you prissi et al!
 # Makefile for pak128-britain standard and experimental
 # 2010-06 sdog
 # 2010-06 neroden
@@ -130,65 +130,65 @@ tar: $(DESTFILE).tbz2
 zip: $(DESTFILE).zip
 
 $(DESTFILE).tbz2: $(PAKDIR)
-        @echo "===> TAR $@"
-        @tar cjf $@ $(DESTDIR)
+	@echo "===> TAR $@"
+	@tar cjf $@ $(DESTDIR)
 
 $(DESTFILE).zip: $(PAKDIR)
-        @echo "===> ZIP $@"
-        @zip -rq $@ $(DESTDIR)
+	@echo "===> ZIP $@"
+	@zip -rq $@ $(DESTDIR)
 
 copy:
-        @echo "===> COPY"
-        @mkdir -p $(PAKDIR)
-        @cp -prt $(PAKDIR) $(CPFILES)
+	@echo "===> COPY"
+	@mkdir -p $(PAKDIR)
+	@cp -prt $(PAKDIR) $(CPFILES)
 
 $(DIRS64):
-        @echo "===> PAK64 $@"
-        @mkdir -p $(PAKDIR)
-        $(MAKEOBJ) quiet PAK $(PAKDIR)/base.gui64.pak $@/ > /dev/null
-        #$(MAKEOBJ) quiet PAK $(PAKDIR)/$(call make_name,$@) $@/ > /dev/null
+	@echo "===> PAK64 $@"
+	@mkdir -p $(PAKDIR)
+	$(MAKEOBJ) quiet PAK $(PAKDIR)/base.gui64.pak $@/ > /dev/null
+	#$(MAKEOBJ) quiet PAK $(PAKDIR)/$(call make_name,$@) $@/ > /dev/null
 
 $(DIRS128):
-        @echo "===> PAK128 $@"
-        @mkdir -p $(PAKDIR)
-        @$(MAKEOBJ) PAK128 $(PAKDIR)/$(call make_name,$@) $@/ > /dev/null
+	@echo "===> PAK128 $@"
+	@mkdir -p $(PAKDIR)
+	@$(MAKEOBJ) PAK128 $(PAKDIR)/$(call make_name,$@) $@/ > /dev/null
 
 $(DIRS160):
-        @echo "===> PAK160 $@"
-        @mkdir -p $(PAKDIR)
-        @$(MAKEOBJ) quiet PAK160 $(PAKDIR)/$(call make_name,$@) $@/ > /dev/null
+	@echo "===> PAK160 $@"
+	@mkdir -p $(PAKDIR)
+	@$(MAKEOBJ) quiet PAK160 $(PAKDIR)/$(call make_name,$@) $@/ > /dev/null
 
 $(DIRS176):
-        @echo "===> PAK176 $@"
-        @mkdir -p $(PAKDIR)
-        @$(MAKEOBJ) quiet PAK176 $(PAKDIR)/$(call make_name,$@) $@/ > /dev/null
+	@echo "===> PAK176 $@"
+	@mkdir -p $(PAKDIR)
+	@$(MAKEOBJ) quiet PAK176 $(PAKDIR)/$(call make_name,$@) $@/ > /dev/null
 
 $(DIRS250):
-        @echo "===> PAK250 $@"
-        @mkdir -p $(PAKDIR)
-        @$(MAKEOBJ) quiet PAK250 $(PAKDIR)/$(call make_name,$@) $@/ > /dev/null
+	@echo "===> PAK250 $@"
+	@mkdir -p $(PAKDIR)
+	@$(MAKEOBJ) quiet PAK250 $(PAKDIR)/$(call make_name,$@) $@/ > /dev/null
 
 #$(DIRGROUNDS):
-#       @echo "===> ground.Outside.pak"
-#       @mkdir -p $(PAKDIR)
-#       @$(MAKEOBJ) quiet PAK128 $(PAKDIR)/$(call make_name,$@) $@/ > /dev/null
-#       @$(MAKEOBJ) quiet PAK128 temp.pak $@/ > /dev/null
-#       @$(MAKEOBJ) quiet EXTRACT temp.pak > /dev/null
-#       @rm temp.pak
-#       @mv ground.Outside.pak $(PAKDIR)/
-#       @$(MAKEOBJ) quiet MERGE $(PAKDIR)/$(call make_name,$@) *.pak > /dev/null
-#       @rm *.pak
+#	@echo "===> ground.Outside.pak"
+#	@mkdir -p $(PAKDIR)
+#	@$(MAKEOBJ) quiet PAK128 $(PAKDIR)/$(call make_name,$@) $@/ > /dev/null
+#	@$(MAKEOBJ) quiet PAK128 temp.pak $@/ > /dev/null
+#	@$(MAKEOBJ) quiet EXTRACT temp.pak > /dev/null
+#	@rm temp.pak
+#	@mv ground.Outside.pak $(PAKDIR)/
+#	@$(MAKEOBJ) quiet MERGE $(PAKDIR)/$(call make_name,$@) *.pak > /dev/null
+#	@rm *.pak
 
 $(DIRLOGO):
-        @echo "===> logo & misc gui"
-        @mkdir -p $(PAKDIR)
-        @$(MAKEOBJ) quiet PAK128 tmp.pak $@/ > /dev/null
-        @$(MAKEOBJ) quiet EXTRACT tmp.pak > /dev/null
-        @rm tmp.pak
-        @mv symbol.BigLogo.pak $(PAKDIR)/
-        @$(MAKEOBJ) quiet MERGE $(PAKDIR)/base.gui128.pak *.pak > /dev/null
-        @rm *.pak
+	@echo "===> logo & misc gui"
+	@mkdir -p $(PAKDIR)
+	@$(MAKEOBJ) quiet PAK128 tmp.pak $@/ > /dev/null
+	@$(MAKEOBJ) quiet EXTRACT tmp.pak > /dev/null
+	@rm tmp.pak
+	@mv symbol.BigLogo.pak $(PAKDIR)/
+	@$(MAKEOBJ) quiet MERGE $(PAKDIR)/base.gui128.pak *.pak > /dev/null
+	@rm *.pak
 
 clean:
-        @echo "===> CLEAN"
-        @rm -fr $(PAKDIR) $(DESTFILE).tbz2 $(DESTFILE).zip 
+	@echo "===> CLEAN"
+	@rm -fr $(PAKDIR) $(DESTFILE).tbz2 $(DESTFILE).zip 

@@ -14,7 +14,7 @@ Icon=> EndChooseTrain.0.5
 Cursor=EndChooseTrain.0.4
 --------------------
 obj=roadsign
-name=Railgate
+name=RailGate
 copyright=Vladki
 waytype=track
 cost=5000

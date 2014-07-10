@@ -1,5 +1,5 @@
 Obj=factory
-name=samoska
+name=Samoska
 copyright=TommPa9, Vladki
 
 Location=City
@@ -29,6 +29,6 @@ InputSupplier[1]=0
 InputFactor[1]=30
 
 Dims=1,1,1
-BackImage[0][0][0][0][0][0]=samoska.0.0
-BackImage[0][0][0][0][0][1]=samoska.0.1
+BackImage[0][0][0][0][0][0]=Samoska.0.0
+BackImage[0][0][0][0][0][1]=Samoska.0.1
 

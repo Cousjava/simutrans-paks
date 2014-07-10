@@ -1,6 +1,6 @@
 obj=roadsign
 copyright=Lubak91, Vladki
-name=Modern_Signals_station
+name=AZD_Signals_Station
 waytype=track
 cost=2000
 is_signal=1
@@ -18,7 +18,7 @@ Cursor=TripleGreen.0.4,0,9
 -----------------------------
 obj=roadsign
 copyright=Lubak91, Vladki
-name=Modern_preSignals_station
+name=AZD_PreSignals_Station
 waytype=track
 cost=2000
 is_presignal=1
@@ -40,7 +40,7 @@ Cursor=LongYellow.0.4,0,9
 -----------------------------
 obj=roadsign
 copyright=Lubak91, Vladki
-Name=Modern_preSignals_choose
+Name=AZD_PreSignals_Choose
 waytype=track
 cost=2000
 is_presignal=1
@@ -62,7 +62,7 @@ Cursor=DoubleYellow.0.4,0,9
 -----------------------------
 obj=roadsign
 copyright=Lubak91, Vladki
-Name=Modern_preSignals_long
+Name=AZD_PreSignals_Long
 waytype=track
 cost=2000
 is_presignal=1

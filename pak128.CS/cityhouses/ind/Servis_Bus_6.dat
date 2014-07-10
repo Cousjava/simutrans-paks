@@ -1,0 +1,12 @@
+Obj=building
+name=Servis_Bus_6
+copyright=TommPa9
+intro_year=1961
+intro_month=1
+retire_year=1979
+retire_month=10
+level=28   
+needs_ground=1
+type=ind
+Dims=1,1,1
+BackImage[0][0][0][0][0]=Servis_Bus_6.0.0

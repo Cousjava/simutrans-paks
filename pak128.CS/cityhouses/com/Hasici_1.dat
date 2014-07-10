@@ -1,0 +1,10 @@
+Obj=building
+name=Hasici_1
+copyright=TommPa9
+intro_year=1995
+intro_month=4
+level=25   
+needs_ground=1
+type=com
+Dims=1,1,1
+BackImage[0][0][0][0][0]=Hasici_1.0.0

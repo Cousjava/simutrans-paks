@@ -1,0 +1,14 @@
+Obj=building
+Name=Chodovska_Tvrz
+Copyright=BeatleJoe, Vladki
+Type=cur
+Passengers=45
+intro_year=1300
+build_time=1300
+climates=temperate
+chance=10
+dims=2,2,1
+BackImage[0][0][0][0][0][0]=Chodovska_Tvrz.0.0
+BackImage[0][0][1][0][0][0]=Chodovska_Tvrz.0.1
+BackImage[0][1][0][0][0][0]=Chodovska_Tvrz.1.0
+BackImage[0][1][1][0][0][0]=Chodovska_Tvrz.1.1

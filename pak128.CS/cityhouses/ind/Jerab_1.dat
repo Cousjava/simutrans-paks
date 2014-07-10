@@ -1,0 +1,11 @@
+Obj=building
+name=Jerab_1
+copyright=TommPa9
+intro_year=1958
+intro_month=1
+level=28
+needs_ground=1
+type=ind
+Dims=1,1,1
+BackImage[0][0][0][0][0]=Jerab_1.0.0
+BackImage[0][0][0][1][0]=Jerab_1.1.0

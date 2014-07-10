@@ -1,0 +1,13 @@
+Obj=building
+name=Bytovka_12Pater_Z
+copyright=TommPa9
+intro_year=1992
+intro_month=4   
+level=50 
+needs_ground=1
+type=res
+Dims=1,1,2
+BackImage[0][0][0][0][0]=Bytovka_12Pater_Z.0.0
+BackImage[0][0][0][1][0]=Bytovka_12Pater_Z.1.0
+BackImage[1][0][0][0][0]=Bytovka_12Pater_Z.0.1
+BackImage[1][0][0][1][0]=Bytovka_12Pater_Z.1.1

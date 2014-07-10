@@ -1,0 +1,12 @@
+Obj=building
+name=DvaDomy_Kvetinarstvi
+copyright=TommPa9
+intro_year=1915
+intro_month=4
+retire_year=1980
+retire_month=6
+level=28 
+needs_ground=1
+type=com
+Dims=1,1,1
+BackImage[0][0][0][0][0]=DvaDomy_Kvetinarstvi.0.0

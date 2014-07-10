@@ -1,0 +1,12 @@
+Obj=building
+name=Domek_10
+copyright=TommPa9
+intro_year=1955
+intro_month=1
+retire_year=1999
+retire_month=10
+level=6    
+needs_ground=1
+type=res
+Dims=1,1,1
+BackImage[0][0][0][0][0]=Domek_10.0.0

@@ -1,5 +1,5 @@
 obj=roadsign
-name=Tram_EndOfChooseSignals_right
+name=Tram_EndOfChooseSignals_Right
 copyright=Vladki
 waytype=track
 cost=500
@@ -14,7 +14,7 @@ Icon=> EndChooseTram.0.5
 Cursor=EndChooseTram.0.4
 --------------------
 obj=roadsign
-name=Tramgate
+name=TramGate
 copyright=Vladki
 waytype=track
 cost=5000
@@ -29,7 +29,7 @@ Icon=> TramGate.0.4
 Cursor=TramGate.0.5
 --------------------
 obj=roadsign
-name=Tram_Signals_right
+name=Tram_Signals_Right
 copyright=Vladki
 waytype=track
 cost=1000
@@ -47,7 +47,7 @@ Icon=> SignalTram.0.5
 Cursor=SignalTram.0.4
 --------------------
 obj=roadsign
-name=Tram_OneWaySignals_right
+name=Tram_OneWaySignals_Right
 copyright=Vladki
 waytype=track
 cost=500
@@ -62,7 +62,7 @@ Icon=> RailCloseTram.0.5
 Cursor=RailCloseTram.0.4
 --------------------
 obj=roadsign
-name=Tram_preSignals_right
+name=Tram_preSignals_Right
 copyright=Vladki
 waytype=track
 cost=1000
@@ -84,7 +84,7 @@ Icon=> PreSignalTram.0.5
 Cursor=PreSignalTram.0.4
 --------------------
 obj=roadsign
-name=Tram_LongSignals_right
+name=Tram_LongSignals_Right
 copyright=Vladki
 waytype=track
 cost=1000

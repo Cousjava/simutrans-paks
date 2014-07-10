@@ -1,0 +1,10 @@
+Obj=building
+name=Staveniste_3
+copyright=TommPa9
+intro_year=1995
+intro_month=4
+level=10   
+needs_ground=1
+type=ind
+Dims=1,1,1
+BackImage[0][0][0][0][0]=Staveniste_3.0.0

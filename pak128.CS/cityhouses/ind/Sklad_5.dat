@@ -1,0 +1,10 @@
+Obj=building
+name=Sklad_5
+copyright=TommPa9
+intro_year=1978
+intro_month=1
+level=26
+needs_ground=1
+type=ind
+Dims=1,1,1
+BackImage[0][0][0][0][0]=Sklad_5.0.0

@@ -1,0 +1,12 @@
+Obj=building
+name=DvaDomy_Hospoda
+copyright=TommPa9
+intro_year=1895
+intro_month=4
+retire_year=1970
+retire_month=6
+level=25  
+needs_ground=1
+type=com
+Dims=1,1,1
+BackImage[0][0][0][0][0]=DvaDomy_Hospoda.0.0

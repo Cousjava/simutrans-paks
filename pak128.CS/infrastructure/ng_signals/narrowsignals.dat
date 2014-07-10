@@ -1,5 +1,5 @@
 obj=roadsign
-name=Narrow_EndOfChooseSignals_right
+name=Narrow_EndOfChooseSignals_Right
 copyright=Vladki
 waytype=narrowgauge_track
 cost=500
@@ -14,7 +14,7 @@ Icon=> Oznacnik.0.5
 Cursor=Oznacnik.0.4
 --------------------
 obj=roadsign
-name=Narrow_EndOfChooseSignals_small
+name=Narrow_EndOfChooseSignals_Small
 copyright=Vladki
 waytype=narrowgauge_track
 cost=500
@@ -29,7 +29,7 @@ Icon=> Izolacek.0.5
 Cursor=Izolacek.0.4
 --------------------
 obj=roadsign
-name=Narrowgate
+name=NarrowGate
 copyright=Vladki
 waytype=narrowgauge_track
 cost=5000
@@ -44,7 +44,7 @@ Icon=> NarrowGate.0.4
 Cursor=NarrowGate.0.5
 --------------------
 obj=roadsign
-name=Narrow_Signals_right
+name=Narrow_Signals_Right
 copyright=Vladki
 waytype=narrowgauge_track
 cost=500
@@ -62,7 +62,7 @@ Icon=> ZastavkaCerna.0.5
 Cursor=ZastavkaCerna.0.4
 --------------------
 obj=roadsign
-name=Narrow_OneWaySignals_right
+name=Narrow_OneWaySignals_Right
 copyright=Vladki
 waytype=narrowgauge_track
 cost=500
@@ -77,7 +77,7 @@ Icon=> RailClose.0.5
 Cursor=RailClose.0.4
 --------------------
 obj=roadsign
-name=Narrow_preSignals_right
+name=Narrow_PreSignals_Right
 copyright=Vladki
 waytype=narrowgauge_track
 cost=500
@@ -99,7 +99,7 @@ Icon=> PredZastavka.0.5
 Cursor=PredZastavka.0.4
 --------------------
 obj=roadsign
-name=Narrow_preSignals_choose
+name=Narrow_PreSignals_Choose
 copyright=Vladki
 waytype=narrowgauge_track
 cost=500
@@ -121,7 +121,7 @@ Icon=> Krizek.0.5
 Cursor=Krizek.0.4
 --------------------
 obj=roadsign
-name=Narrow_LongSignals_right
+name=Narrow_LongSignals_Right
 copyright=Vladki
 waytype=narrowgauge_track
 cost=500

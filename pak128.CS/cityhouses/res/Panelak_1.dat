@@ -1,0 +1,15 @@
+Obj=building
+name=Panelak_1
+copyright=TommPa9
+intro_year=1970
+intro_month=8
+retire_year=1995
+retire_month=6
+level=30  
+needs_ground=1
+type=res
+Dims=1,1,2
+BackImage[0][0][0][0][0]=Panelak_1.0.0
+BackImage[0][0][0][1][0]=Panelak_1.1.0
+BackImage[1][0][0][0][0]=Panelak_1.0.1
+BackImage[1][0][0][1][0]=Panelak_1.1.1

@@ -1,0 +1,12 @@
+Obj=building
+name=Dum_S_Pavlaci
+copyright=TommPa9
+intro_year=1850
+intro_month=4
+retire_year=1959
+retire_month=6
+level=26  
+needs_ground=1
+type=res
+Dims=1,1,1
+BackImage[0][0][0][0][0]=Pavlacak.0.0

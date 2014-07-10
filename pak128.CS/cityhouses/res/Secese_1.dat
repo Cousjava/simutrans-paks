@@ -1,0 +1,12 @@
+Obj=building
+name=Secese_1
+copyright=TommPa9
+intro_year=1895
+intro_month=1
+retire_year=1955
+retire_month=10
+level=29   
+needs_ground=1
+type=res
+Dims=1,1,1
+BackImage[0][0][0][0][0]=Secese_1.0.0

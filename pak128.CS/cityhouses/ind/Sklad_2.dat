@@ -1,0 +1,12 @@
+Obj=building
+name=Sklad_2
+copyright=TommPa9
+intro_year=1924
+intro_month=1
+retire_year=1940
+retire_month=10
+level=20
+needs_ground=1
+type=ind
+Dims=1,1,1
+BackImage[0][0][0][0][0]=Sklad_2.0.0

@@ -1,0 +1,9 @@
+Obj=building
+name=Sklad_1
+copyright=TommPa9
+intro_year=1800
+level=18
+needs_ground=1
+type=ind
+Dims=1,1,1
+BackImage[0][0][0][0][0]=Sklad_1.0.0

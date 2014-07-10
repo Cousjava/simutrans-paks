@@ -1,0 +1,10 @@
+Obj=building
+name=Domek_6
+copyright=TommPa9
+intro_year=1995
+intro_month=1
+level=8    
+needs_ground=6
+type=res
+Dims=1,1,1
+BackImage[0][0][0][0][0]=Domek_6.0.0
