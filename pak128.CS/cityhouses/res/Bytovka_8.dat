@@ -1,0 +1,14 @@
+obj=building
+name=Bytovka_8
+copyright=VTPsim
+type=res
+level=30
+chance=400
+intro_year=1950
+retire_year=1990
+climates=rocky,tundra,temperate,mediterran,arctic,tropic
+dims=1,1,2
+needs_ground=1
+BackImage[0][0][0][0][0][0]=Bytovka_8.1.0
+BackImage[1][0][0][0][0][0]=Bytovka_8.1.1
+ 

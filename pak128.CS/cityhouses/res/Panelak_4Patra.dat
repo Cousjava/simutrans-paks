@@ -1,5 +1,5 @@
 Obj=building
-name=Bytovka_4Patra
+name=Panelak_4Patra
 copyright=TommPa9
 intro_year=1971
 intro_month=4
@@ -9,5 +9,5 @@ level=26
 needs_ground=1
 type=res
 Dims=1,1,2
-BackImage[0][0][0][0][0]=Bytovka_4Patra.0.0
-BackImage[1][0][0][0][0]=Bytovka_4Patra.0.1
+BackImage[0][0][0][0][0]=Panelak_4Patra.0.0
+BackImage[1][0][0][0][0]=Panelak_4Patra.0.1
