@@ -89,9 +89,11 @@ INFRASTRUCTURE128 += road_bridges
 INFRASTRUCTURE128 += road_signs
 INFRASTRUCTURE128 += road_stops
 INFRASTRUCTURE128 += road_tunnels
+INFRASTRUCTURE128 += road_lights
 INFRASTRUCTURE128 += roads
 INFRASTRUCTURE128 += station_buildings
 INFRASTRUCTURE128 += tram_signals
+INFRASTRUCTURE128 += tram_stops
 INFRASTRUCTURE128 += tram_tracks
 INFRASTRUCTURE128 += water_all
 

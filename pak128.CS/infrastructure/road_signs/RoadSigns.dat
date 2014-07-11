@@ -487,7 +487,7 @@ Icon=> ZollGate.0.4
 Cursor=ZollGate.0.5
 --------------------
 obj=roadsign
-copyright=Napik
+copyright=VTPsim
 name=Traffic_Light
 cost=5000
 min_speed=0

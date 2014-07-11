@@ -168,6 +168,9 @@ cd ..\road_stops
 cd ..\road_tunnels
 ..\..\makeobj.exe pak128 ../../simutrans/pak128.CS/way.road_tunnels.all.pak ./ >>..\..\err.txt
 
+cd ..\road_lights
+..\..\makeobj.exe pak128 ../../simutrans/pak128.CS/way.road_lights.all.pak ./ >>..\..\err.txt
+
 cd ..\roads
 ..\..\makeobj.exe pak128 ../../simutrans/pak128.CS/way.road.all.pak ./ >>..\..\err.txt
 
@@ -180,6 +183,9 @@ echo Compiling Tram tools
 
 cd ..\tram_tracks
 ..\..\makeobj.exe pak128 ../../simutrans/pak128.CS/way.tram_track.all.pak ./ >>..\..\err.txt
+
+cd ..\tram_stops
+..\..\makeobj.exe pak128 ../../simutrans/pak128.CS/building.tram_stop.all.pak ./ >>..\..\err.txt
 
 cd ..\tram_signals
 ..\..\makeobj.exe pak128 ../../simutrans/pak128.CS/tram_signals.all.pak ./ >>..\..\err.txt
