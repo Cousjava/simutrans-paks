@@ -1,0 +1,8 @@
+obj=good
+name=fish
+catg=1
+metric=head
+value=750
+speed_bonus=50
+weight_per_unit=5
+mapColor=96
