@@ -1,103 +1,104 @@
-Akmenë
+Â§
+AkmenÄ—
 Alytus
-Anykğèiai
+AnykÅ¡Äiai
 Ariogala
-Baltoji Vokë
-Birğtonas
-Birşai
+Baltoji VokÄ—
+BirÅ¡tonas
+BirÅ¾ai
 Daugai
 Druskininkai
-Dûkğtas
+DÅ«kÅ¡tas
 Dusetos
-Eiğiğkës
-Elektrënai
-Eşerëlis
-Gargşdai
+EiÅ¡iÅ¡kÄ—s
+ElektrÄ—nai
+EÅ¾erÄ—lis
+GargÅ¾dai
 Garliava
-Gelgaudiğkis
-Grigiğkës
+GelgaudiÅ¡kis
+GrigiÅ¡kÄ—s
 Ignalina
 Jieznas
 Jonava
-Joniğkëlis
-Joniğkis
+JoniÅ¡kÄ—lis
+JoniÅ¡kis
 Jurbarkas
-Kaiğiadorys
+KaiÅ¡iadorys
 Kalvarija
 Kaunas
 Kavarskas
-Kazlø Rûda
-Këdainiai
-Kelmë
+KazlÅ³ RÅ«da
+KÄ—dainiai
+KelmÄ—
 Kybartai
-Klaipëda
+KlaipÄ—da
 Kretinga
 Kudirkos Naumiestis
-Kupiğkis
-Kurğënai
+KupiÅ¡kis
+KurÅ¡Ä—nai
 Lazdijai
 Lentvaris
 Linkuva
-Marijampolë
-Maşeikiai
-Molëtai
-Naujoji Akmenë
-Nemenèinë
+MarijampolÄ—
+MaÅ¾eikiai
+MolÄ—tai
+Naujoji AkmenÄ—
+NemenÄinÄ—
 Neringa
 Obeliai
-Pabradë
-Pagëgiai
+PabradÄ—
+PagÄ—giai
 Pakruojis
 Palanga
-Pandëlys
-Panemunë
-Panevëşys
+PandÄ—lys
+PanemunÄ—
+PanevÄ—Å¾ys
 Pasvalys
-Plungë
-Priekulë
+PlungÄ—
+PriekulÄ—
 Prienai
-Radviliğkis
+RadviliÅ¡kis
 Ramygala
 Raseiniai
 Rietavas
-Rokiğkis
-Rûdiğkës
+RokiÅ¡kis
+RÅ«diÅ¡kÄ—s
 Salantai
 Seda
 Simnas
-Skaudvilë
+SkaudvilÄ—
 Skuodas
 Smalininkai
-Subaèius
-Ğakiai
-Ğalèininkai
-Ğeduva
-Ğiauliai
-Ğilalë
-Ğilutë
-Ğirvintos
-Ğvenèionëliai
-Ğvenèionys
-Tauragë
-Telğiai
-Tytuvënai
+SubaÄius
+Å akiai
+Å alÄininkai
+Å eduva
+Å iauliai
+Å ilalÄ—
+Å ilutÄ—
+Å irvintos
+Å venÄionÄ—liai
+Å venÄionys
+TauragÄ—
+TelÅ¡iai
+TytuvÄ—nai
 Trakai
-Troğkûnai
-Ukmergë
+TroÅ¡kÅ«nai
+UkmergÄ—
 Utena
-Uşventis
+UÅ¾ventis
 Vabalninkas
-Varëna
+VarÄ—na
 Varniai
 Veisiejai
 Venta
-Viekğniai
+ViekÅ¡niai
 Vievis
-Vilkaviğkis
+VilkaviÅ¡kis
 Vilkija
 Vilnius
 Virbalis
 Visaginas
 Zarasai
-Şagarë
-Şieşmariai
+Å½agarÄ—
+Å½ieÅ¾mariai

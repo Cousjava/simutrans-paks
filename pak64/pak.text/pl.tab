@@ -5,7 +5,7 @@
 #                              Language: pl Polski                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 20.04 2014                           #
+#                           Date Created: 15.11 2014                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - An_dz                                   #
@@ -89,11 +89,15 @@ Ko¶ció³ pw. ¶w. £ukasza\n\nMa³a, ale rozwijaj±ca siê parafia, przyci±gaj±ca nowy
 1930AirDepot
 Hangar (1930)
 1headquarter
-Siedziba twojej korporacji.
+Siedziba twojej korporacji
 2headquarter
-Siedziba wielkiej korporacji\n
+Siedziba twojej wielkiej korporacji\n
 3headquarter
-Siedziba miêdzynarodowej korporacji
+Siedziba twojej miêdzynarodowej korporacji
+4headquarter
+Siedziba twojej korporacji
+5headquarter
+Siedziba twojej korporacji
 A1_ALTE_KIRCHE
 S³ynny stary ko¶ció³.\nWszyscy powinni zobaczyæ\nten wspania³y budynek z\nczasów króla ¦wieczka.\n
 A2_SCHLOSS1
@@ -134,6 +138,8 @@ CarDepot
 Zajezdnia pojazdów drogowych
 CarStop
 Stacja za³adunkowa
+CattlePorch
+Zagroda na byd³o
 ChannelStop
 Nadbrze¿e
 COM_00_02
