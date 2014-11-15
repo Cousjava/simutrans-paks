@@ -5,7 +5,7 @@
 #                           Language: cn Sim. Chinese                          #
 #                                Encoding: UTF-8                               #
 #                           Font : wenquanyi_9pt.bdf                           #
-#                           Date Created: 20.04 2014                           #
+#                           Date Created: 15.11 2014                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - An_dz                                   #
@@ -30,6 +30,8 @@
 #                                    note:                                     #
 #                          Anson Leung - ansonscleung                          #
 #                                    note:                                     #
+#                                    - chwdy                                   #
+#                                    note: 2                                   #
 #                                   - jasonzha                                 #
 #                                    note:                                     #
 #                                   - knightly                                 #
@@ -82,6 +84,8 @@ CarStop
 运送区
 ChannelStop
 运河码头
+MonorailGround
+单轨铁路基座
 PostOffice
 与建邮局
 ShipDepot

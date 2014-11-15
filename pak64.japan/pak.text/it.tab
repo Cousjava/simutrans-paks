@@ -1,10 +1,10 @@
-§################################################################################
+################################################################################
 #                                                                              #
 #                Simutrans Scenario Specific Translation File                  #
 #                             Scenario: pak64.japan                            #
-#                            Language: zh T. Chinese                           #
-#                                Encoding: UTF-8                               #
-#                           Font : wenquanyi_9pt.bdf                           #
+#                             Language: it Italiano                            #
+#                             Encoding: ISO-8859-1                             #
+#                            Font : Prop-Latin1.bdf                            #
 #                           Date Created: 15.11 2014                           #
 #                                                                              #
 #                                   authors:                                   #
@@ -12,209 +12,289 @@
 #                   note: Verified where all texts are shown                   #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
+#                                   - Fabio85                                  #
+#                                    note:                                     #
 #                                  - Flemmbrav                                 #
 #                                    note:                                     #
 #                                    - FrankP                                  #
 #                                    note:                                     #
-#                                Hao Wu - HaoWu                                #
-#                                    note:                                     #
-#                              Huanchao Zhu - HuanZ                            #
-#                                    note:                                     #
-#                                     - Jun                                    #
-#                                    note:                                     #
-#                               Alan - LondonBVE                               #
-#           note: Hope to translate at least 50% by end of November.           #
 #                                     - PTM                                    #
 #                                    note:                                     #
-#                          Anson Leung - ansonscleung                          #
+#                                    - milko                                   #
 #                                    note:                                     #
-#                           Issac Chau - chautakhuen                           #
+#                                   - notorius                                 #
 #                                    note:                                     #
-#                                   - jasonzha                                 #
-#                                    note:                                     #
-#                                    - jn4481                                  #
-#                                    note:                                     #
-#                                   - knightly                                 #
-#                                    note:                                     #
-#                                苗一莘 - mys_721tx                               #
+#                               ottavio - ottavio                              #
 #                                    note:                                     #
 #                                    - prissi                                  #
 #                                    note:                                     #
-#                                   - shinexus                                 #
+#                                Marco - rabanne                               #
 #                                    note:                                     #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
 #____________________________________bridge_____________________________________
 ClassicRail
-傳統鐵路橋
+Rotaia su ponte in cemento
 PowerBridge
-電力橋
+Traliccio per la corrente elettrica
 Schiffhebewerk
-船隻起重機
+Montacarichi per navi
 SteelRail
-鋼鐵鐵路橋 (高速)
+Rotaia su ponte di travi di acciaio
 ViaductRail
-磚石高架橋
+Viadotto in mattoni di pietra
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 01_CITY
-鄉公所
+Municipio
 02_CITY
-鎮公所
+Municipio
 1headquarter
-總部
+La tua sede aziendale!
 2headquarter
-總部
+La tua sede aziendale!
 3headquarter
-總部
+La tua sede aziendale!
 AirDepot
-1900年式機庫
+Deposito aerei del 1900
+AirStop
+Ponte d'imbarco
 AirTerminal477
-大型客運樓
+Terminal (1950)
 BigPostOffice
-大型郵局
+Grande ufficio postale
 BigTerminal477
-現代機場客運樓
+Moderno terminal grande
 BusStop
-與建巴士站/電車站
+Fermata autobus
 CarDepot
-道路車廠
+Deposito per veicoli stradali
 CarStop
-裝卸區
+Area carico merci
 ChannelStop
-運河碼頭
+Banchina
+FreightShipStop
+Scalo merci
 FreightTrainStop
-貨運車站
+Stazione di carico merci
+IND_00_05
+Serbatoio acqua\n\nQuesto serbatoio contiene\nl'acqua potabile per quest'area\ndella citt�.\n\n
+leftShipStop
+Gru grande carico
+LeuchtturmShipStop
+Porto con faro
+ModernAirTerminal477
+Terminal moderno
 MonorailGround
-單軌鐵路基座
+Fondazione monorotaia
+PlainAirStop
+Piazzola aerei
 PostOffice
-與建郵局
+Ufficio postale
+PostStop
+Cassetta delle lettere
+rampShipStop
+Scalo navale
+rightShipStop
+Banchina con molo
 ShipDepot
-造船廠
+Deposito navi
+TowerMoistboy
+Torre di controllo
 TrainDepot
-列車車廠
+Deposito treni
 TrainStop
-與建鐵路車站
+Stazione
 TramDepot
-輕鐵車廠
+Deposito tram
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
-救護車
+Ambulanza
+FordT
+Ford Modello T
 green_car
-綠色私家車
+auto verde
+Motorrad
+Moto
 orange_bus
-橙色巴士
-Pickup
-私家車
+SimCo Bus
+Roadster
+Rag-top Roadster
 yellow_car
-黃色私家車
+Macchina gialla
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
+ChemicalPlant
+Impianto chimico
 CHEMIST
-藥房
+Laboratorio chimico
 Druckerei
-印刷廠
+Tipografia
 fish_pond
-魚塘
+Laghetto con pesci
 fish_swarm
-漁排
+Branco di pesci
+Geokraftwerk
+Centrale geotermica
 Nutzwald
-森林
+Bosco
 Oelbohrinsel
-鑽油台
+Piattaforma petrolifera
 Oelfeld
-油井
+Pozzo di petrolio
 Oelkraftwerk
-發電廠 (燃油)
+Centrale elettrica a petrolio
 Papierfabrik
-造紙廠
+Cartiera
 Pharmaceutics
-藥廠
+Industria farmaceutica
 Windkraftwerk
-風力發電站
+Centrale elettrica eolica
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Buecher
-書本
+Libri
 Chemicals
-化學品
+Prodotti chimici
 fish
-魚
+Pesce
 Gasoline
-汽油
+Benzina
 Holz
-木
+Legname
 Medicine
-藥物
+Medicinali
 None
-沒有
+nessuno
 Oel
-石油
+Petrolio
 Papier
-紙張
+Carta
 Passagiere
-乘客
+Passeggeri
 Post
-郵件
+Posta
 PrintersInk
-印表機油墨
+Inchiostro
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
+Couple
+Una coppia
+Cyclist
+Motociclista
 pedestrian_1
-行人
+Pedoni
 pedestrian_2
-行人
+Pedoni
+pedestrian_3
+Pedoni
 pedestrian_4
-行人
+Pedoni
 pedestrian_child
-小童
+Ragazzi
+pedestrian_dog
+Cane
 Woman
-女人
+Donna
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 choose_point
-方向選擇標誌
+Punto di scelta
 ChooseSignals
-月台選擇信號
+Segnali di Scelta
+Endofchoosetrack
+Fine della ricerca del tracciato
+LongBlockSignals
+Segnale long block
 Minimum80
-車速限制(>80kph)
+Velocit� minima 80km/h
 NoEntry
-單向禁止進入
+Segnale divieto d'accesso
 preSignals
-前置訊號
+Presegnali (per 2 blocchi)
 RailClose
-鐵路終止標誌
+Chiudi tratto ferroviario
 Signals
-訊號
+Segnale ferroviario
 traffic_light
-交通燈
+Semaforo
+#____________________________________vehicle____________________________________
+#____________________________________vehicle____________________________________
+Book_Trike
+Triciclo consegna pacchi
+Bretterwagen
+VT Vienna vagone per tavole di legno
+EnCo_Container_Ship
+Nave porta-container
+EnCo_Oil_Ship
+Petroliera
+EnCo_Paper_Ship
+Nave per carta
+EnCo_Wood_Ship
+Nave per legname
+Erzanhaenger
+H-Trans rimorchio per ferro
+Erztransporter
+H-Trans camion per ferro
+Holzanhaenger
+JET rimorchio per legname
+Holztransporter
+H-Trans camion per legname
+Holzwagen
+H-Trans vagone per legname
+logs
+Ceppi
+Mailcontainerwagon
+MSP vagone postale
+Oelanhaenger
+H-Trans rimorchio cisterna per petrolio
+Oilbarge
+Empire nave cisterna
+OldOil
+Kahan vagone cisterna
+Steamer
+Nave a vapore
+T21_bus
+Empire T-21 Bus
+Tanklastzug
+H-Trans camion cisterna per petrolio
+Trike
+Triciclo a motore
+Tugboat
+SimCo Rimorchiatore
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road
-瀝青路
+Strada asfaltata
 city_road
-城市道路
+Strada urbana
 cobblestone_road
-石鋪路
+Strada lastricata
 concrete_sleeper_track
-混凝土枕木路軌
+Linea ferroviaria con traversine in cemento
 dirt_road
-泥路
+Strada sterrata
 gavel_road
-碎石路
+Sentiero inghiaiato
+Kanal
+Canale
 Powerline
-電纜
+Linea alta tensione
+river
+Fiume navigabile
+river2
+Ruscello
 runway_modern
-現代跑道
+Pista d'atterraggio
 sand_track
-砂基路軌
+Ferrovia con traversine in legno (su sabbia)
 taxiway
-滑行道
+Pista rullaggio
 wooden_sleeper_track
-枕木路軌
+Linea ferroviaria con traversine di legno
 #__________________________________way-object___________________________________
 #__________________________________way-object___________________________________
 SlowOverheadpower
-低速行駛高架電纜
+Linee aeree

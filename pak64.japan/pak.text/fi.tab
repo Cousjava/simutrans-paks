@@ -5,7 +5,7 @@
 #                              Language: fi Suomi                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 20.04 2014                           #
+#                           Date Created: 15.11 2014                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - An_dz                                   #
@@ -204,10 +204,6 @@ pedestrian_dog
 koira
 Woman
 Nainen
-#_________________________________program_text__________________________________
-#_________________________________program_text__________________________________
-monorail
-Monorail-rata
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 choose_point

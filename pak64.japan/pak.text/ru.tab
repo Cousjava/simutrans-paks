@@ -2,219 +2,153 @@
 #                                                                              #
 #                Simutrans Scenario Specific Translation File                  #
 #                             Scenario: pak64.japan                            #
-#                            Language: zh T. Chinese                           #
+#                             Language: ru Russian                             #
 #                                Encoding: UTF-8                               #
-#                           Font : wenquanyi_9pt.bdf                           #
+#                                Font : cyr.bdf                                #
 #                           Date Created: 15.11 2014                           #
 #                                                                              #
 #                                   authors:                                   #
+#                       Semichenkov Alexander - AleksRevo                      #
+#                                    note:                                     #
 #                                    - An_dz                                   #
 #                   note: Verified where all texts are shown                   #
+#                          Timothy Khalatzky - Arhimed                         #
+#                                    note:                                     #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
 #                                  - Flemmbrav                                 #
 #                                    note:                                     #
 #                                    - FrankP                                  #
 #                                    note:                                     #
-#                                Hao Wu - HaoWu                                #
+#                                   - Kozinsky                                 #
 #                                    note:                                     #
-#                              Huanchao Zhu - HuanZ                            #
+#                                     - MaxK                                   #
 #                                    note:                                     #
-#                                     - Jun                                    #
-#                                    note:                                     #
-#                               Alan - LondonBVE                               #
-#           note: Hope to translate at least 50% by end of November.           #
 #                                     - PTM                                    #
 #                                    note:                                     #
-#                          Anson Leung - ansonscleung                          #
+#                         Mikhail Pestrechikhin - Pestr                        #
 #                                    note:                                     #
-#                           Issac Chau - chautakhuen                           #
+#                           Sava Bogdanets - Sava2004                          #
 #                                    note:                                     #
-#                                   - jasonzha                                 #
-#                                    note:                                     #
-#                                    - jn4481                                  #
-#                                    note:                                     #
-#                                   - knightly                                 #
-#                                    note:                                     #
-#                                苗一莘 - mys_721tx                               #
+#                                    - SkyAn                                   #
 #                                    note:                                     #
 #                                    - prissi                                  #
 #                                    note:                                     #
-#                                   - shinexus                                 #
+#                                   - sagaudi                                  #
 #                                    note:                                     #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
 #____________________________________bridge_____________________________________
 ClassicRail
-傳統鐵路橋
-PowerBridge
-電力橋
-Schiffhebewerk
-船隻起重機
+Бетонный ж/д мост
 SteelRail
-鋼鐵鐵路橋 (高速)
-ViaductRail
-磚石高架橋
+Ж/д мост со стальными балками
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 01_CITY
-鄉公所
+Мэрия
 02_CITY
-鎮公所
-1headquarter
-總部
-2headquarter
-總部
-3headquarter
-總部
-AirDepot
-1900年式機庫
-AirTerminal477
-大型客運樓
-BigPostOffice
-大型郵局
-BigTerminal477
-現代機場客運樓
+Мэрия
 BusStop
-與建巴士站/電車站
+остановка
 CarDepot
-道路車廠
+Гараж
 CarStop
-裝卸區
-ChannelStop
-運河碼頭
-FreightTrainStop
-貨運車站
-MonorailGround
-單軌鐵路基座
-PostOffice
-與建郵局
-ShipDepot
-造船廠
-TrainDepot
-列車車廠
+Погрузочная площадка
 TrainStop
-與建鐵路車站
-TramDepot
-輕鐵車廠
-#____________________________________citycar____________________________________
-#____________________________________citycar____________________________________
-Ambulanz
-救護車
-green_car
-綠色私家車
-orange_bus
-橙色巴士
-Pickup
-私家車
-yellow_car
-黃色私家車
+Станция
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 CHEMIST
-藥房
+Химик
 Druckerei
-印刷廠
+Типография
 fish_pond
-魚塘
+Рыбоводческое хозяйство
 fish_swarm
-漁排
+Fish swarm
 Nutzwald
-森林
+Высадка леса
 Oelbohrinsel
-鑽油台
+Нефтяная вышка
 Oelfeld
-油井
-Oelkraftwerk
-發電廠 (燃油)
+Нефтяной промысел
 Papierfabrik
-造紙廠
+Бумажный завод
 Pharmaceutics
-藥廠
+Фармацевтика
 Windkraftwerk
-風力發電站
+Ветряная электростанция
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Buecher
-書本
+Книги
 Chemicals
-化學品
+Химикаты
 fish
-魚
+Рыба
 Gasoline
-汽油
+Бензин
 Holz
-木
+Древесина
 Medicine
-藥物
-None
-沒有
+Медикаменты
 Oel
-石油
+Нефть
 Papier
-紙張
+Бумага
 Passagiere
-乘客
+Пассажиров
 Post
-郵件
+Почта
 PrintersInk
-印表機油墨
-#__________________________________pedestrian___________________________________
-#__________________________________pedestrian___________________________________
-pedestrian_1
-行人
-pedestrian_2
-行人
-pedestrian_4
-行人
-pedestrian_child
-小童
-Woman
-女人
+Чернила
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 choose_point
-方向選擇標誌
-ChooseSignals
-月台選擇信號
+Указатель
 Minimum80
-車速限制(>80kph)
+Минимальная скорость 80
 NoEntry
-單向禁止進入
-preSignals
-前置訊號
-RailClose
-鐵路終止標誌
-Signals
-訊號
+Въезд запрещён
 traffic_light
-交通燈
+Светофор
+#____________________________________vehicle____________________________________
+#____________________________________vehicle____________________________________
+Bretterwagen
+Грузовой вагон VT Vienna (доски)
+Erzanhaenger
+Прицеп H-Trans
+Erztransporter
+H-Trans Truck MK2
+Holzanhaenger
+Прицеп JET (древесина)
+Holztransporter
+Грузовик H-Trans (древесина)
+Holzwagen
+грузовой вагон H-Trans (древесина)
+Oelanhaenger
+Прицеп-нефтецистерна H-Trans
+Tanklastzug
+Нефтецистерна H-Trans
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road
-瀝青路
+Асфальтированная дорога
 city_road
-城市道路
+Городская дорога
 cobblestone_road
-石鋪路
+Булыжная мостовая
 concrete_sleeper_track
-混凝土枕木路軌
+Рельсы с бетонными шпалами
 dirt_road
-泥路
+Грунтовка
 gavel_road
-碎石路
+Gavel дорога
 Powerline
-電纜
+ВЛЭП
 runway_modern
-現代跑道
-sand_track
-砂基路軌
-taxiway
-滑行道
+Современная полоса
 wooden_sleeper_track
-枕木路軌
-#__________________________________way-object___________________________________
-#__________________________________way-object___________________________________
-SlowOverheadpower
-低速行駛高架電纜
+Рельсы с деревянными шпалами

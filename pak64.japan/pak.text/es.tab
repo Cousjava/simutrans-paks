@@ -5,7 +5,7 @@
 #                             Language: es Espanol                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 20.04 2014                           #
+#                           Date Created: 15.11 2014                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - An_dz                                   #
@@ -82,6 +82,8 @@ FreightTrainStop
 Estación para mercancías
 IND_00_05
 Depósito de agua\nHasta la última gota del excente de la ciudad está guardado aquí,\npor eso no dejan subir a nadie.\nSeguro que más de uno metería los pies..\n
+IND_01_03
+Depósito de gas grande\n\nDepósito esférico para el\nalmacenamiento de gas\nnatural.\n\n
 leftShipStop
 Grúa de gran tonelaje
 LeuchtturmShipStop

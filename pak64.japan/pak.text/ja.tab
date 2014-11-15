@@ -5,7 +5,7 @@
 #                             Language: ja Japanese                            #
 #                                Encoding: UTF-8                               #
 #                               Font : m+10r.bdf                               #
-#                           Date Created: 20.04 2014                           #
+#                           Date Created: 15.11 2014                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - An_dz                                   #
@@ -78,6 +78,8 @@ BigPostOffice
 中央郵便局
 BigTerminal477
 大規模空港ターミナル
+Bus_Stop_with_Roof
+屋根付きのバス停
 BusStop
 バス停\n
 CarDepot
@@ -121,7 +123,7 @@ IND_30_13
 IND_31_03
 この半円柱状の建物はヴァ\nリマ株式会社の工場で、発\n電所用のボイラーとパイプ\n類の製造・組み立てを行っ\nている。しかしこの事業は\n需要が不安定なため、トン\nネル用の部品を作ったり、\nトラムやバスの修理も行っ\nている。また埋め込み式ガ\nーデンライトのフレームを\n造ることも珍しくない。今\n日は何を作っているのか、\n確認してみたいところだ。\n
 Kasan
-火山\n\n\n火口から毒ガスが出るし、爆発もある。だから、下のある露天風呂へ行きましょう。
+火山\n\n\n火口から有毒ガスが出るし、爆発もある。だから、麓にある露天風呂へ行きましょう。
 leftShipStop
 港セット(クレーン)
 LeuchtturmShipStop
@@ -140,6 +142,8 @@ Monument_for_Hajo
 記念碑\n\nこの記念碑は７年の歳月を\nかけてこのゲームを創造し\nたHansjörg　Malthaner氏\nに捧げられています。神様であってもこのよ\nうな偉業をなすにはより多くの時間を要する\nでしょう。\n
 Observatory_(by_MHz)
 観測所\n
+OldPostOffice
+古い郵便局
 PlainAirStop
 駐機場
 PostOffice

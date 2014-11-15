@@ -1,0 +1,66 @@
+################################################################################
+#                                                                              #
+#                Simutrans Scenario Specific Translation File                  #
+#                             Scenario: pak64.japan                            #
+#                             Language: cz Cestina                             #
+#                             Encoding: ISO-8859-2                             #
+#                            Font : prop-latin2.fnt                            #
+#                           Date Created: 15.11 2014                           #
+#                                                                              #
+#                                   authors:                                   #
+#                                    - An_dz                                   #
+#                   note: Verified where all texts are shown                   #
+#                                    - Dwachs                                  #
+#                                    note:                                     #
+#                                  - Flemmbrav                                 #
+#                                    note:                                     #
+#                                    - FrankP                                  #
+#                                    note:                                     #
+#                                    - JOHNY                                   #
+#                                    note:                                     #
+#                                     - PTM                                    #
+#                                    note:                                     #
+#                        Václav Macùrek - VaclavMacurek                        #
+#                                    note:                                     #
+#                             René Fiala - Xeotroid                            #
+#                                    note:                                     #
+#                                   - hernajs                                  #
+#                                    note:                                     #
+#                              Honza Kobel - jk271                             #
+#                                    note:                                     #
+#                           Jiri Svoboda - jxsvoboda                           #
+#                                    note:                                     #
+#                              Tomá¹ Kube¹ - napik                             #
+#                                    note:                                     #
+#                                    - prissi                                  #
+#                                    note:                                     #
+#                            Oliver Mayer - rakishly                           #
+#                                    note:                                     #
+#                         Tomá¹ Vrbický - vrbicky_tomas                        #
+#                     note: Don´thurry up! Death is faster.                    #
+#                            Vladimír Slávik - vsys                            #
+#                                    note:                                     #
+#                                                                              #
+################################################################################
+#_____________________________________good______________________________________
+#_____________________________________good______________________________________
+Buecher
+Knihy
+Chemicals
+Chemikálie
+fish
+Ryby
+Holz
+Døevo
+Medicine
+Léky
+None
+Nic
+Papier
+Papír
+Passagiere
+Cestující
+Post
+Po¹ta
+PrintersInk
+Tisk. inkoust
