@@ -11,7 +11,7 @@ Mail_demand=1
 Mail_boost=100
 Passenger_demand=1
 Passenger_boost=100
-OutputGood[0]=Len
+OutputGood[0]=good_len
 OutputCapacity[0]=50
 MapColor=215
 Dims=2,2,4
@@ -19,7 +19,7 @@ needs_ground=1
 max_fields=80
 min_fields=5
 production_per_field=1
-fields=Len
+fields=oves
 
 # north summer
 BackImage[0][0][0][0][0][0]=-
