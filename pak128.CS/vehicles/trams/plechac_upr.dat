@@ -11,6 +11,7 @@ weight=8
 power=52
 gear=100
 RunningCost=12
+fixed_cost=31
 intro_year=1908
 intro_month=2
 retire_year=1925

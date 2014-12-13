@@ -11,6 +11,7 @@ weight=50
 length=13
 cost=2171000
 runningcost=29
+fixed_cost=371
 intro_year=2012
 intro_month=1
 smoke=-1

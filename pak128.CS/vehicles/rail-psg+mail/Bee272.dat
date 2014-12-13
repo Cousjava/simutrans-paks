@@ -11,6 +11,7 @@ weight=39
 length=12
 cost=1450200
 runningcost=16
+fixed_cost=143
 intro_year=2012
 intro_month=1
 retire_year=2026
