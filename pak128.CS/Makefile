@@ -26,7 +26,7 @@ DESTFILE ?= $(PAKNAME)
 NAMEPREFIX ?=
 NAMESUFFIX ?=
 
-CPFILES ?= pak128.CS.prototype/*
+CPFILES := pak128.CS.prototype
 
 DIRS64 :=
 DIRS64 += base/misc_GUI_64
@@ -141,8 +141,11 @@ $(DESTFILE).zip: $(PAKDIR)
 
 copy:
 	@echo "===> COPY"
-	@mkdir -p $(PAKDIR)
-	@cp -prt $(PAKDIR) $(CPFILES)
+	@mkdir -p $(PAKDIR) $(PAKDIR)/config $(PAKDIR)/sound $(PAKDIR)/doc $(PAKDIR)/scenario $(PAKDIR)/sound $(PAKDIR)/text
+	@cp -pt $(PAKDIR) $(CPFILES)/compat.tab
+	@cp -pt $(PAKDIR)/config $(CPFILES)/config/*
+	@cp -pt $(PAKDIR)/sound $(CPFILES)/sound/*
+	@cp -pt $(PAKDIR)/text $(CPFILES)/text/*
 
 $(DIRS64):
 	@echo "===> PAK64 $@"
