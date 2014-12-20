@@ -17,10 +17,10 @@
 CONFIG ?= config.default
 -include $(CONFIG)
 
-MAKEOBJ ?= ./makeobj
+MAKEOBJ ?= makeobj
 PAKNAME ?= pak128.CS
 DESTDIR ?= .
-PAKDIR ?= $(DESTDIR)/$(PAKNAME)
+PAKDIR  ?= $(DESTDIR)/$(PAKNAME)
 DESTFILE ?= $(PAKNAME)
 
 NAMEPREFIX ?=
@@ -31,7 +31,6 @@ CPFILES := pak128.CS.prototype
 DIRS64 :=
 DIRS64 += base/misc_GUI_64
 
-#DIRS128VEHICLES := airplanes
 DIRS128VEHICLES += ng-cargo
 DIRS128VEHICLES += ng-engines
 DIRS128VEHICLES += ng-psg+mail
@@ -57,7 +56,6 @@ DIRS128 += citycars
 DIRS128 += landscape/grounds
 DIRS128 += landscape/trees
 DIRS128 += landscape/groundobj_static
-DIRS128 += base
 DIRS128 += base/pedestrians
 DIRS128 += base/smokes
 
@@ -66,7 +64,6 @@ INFRASTRUCTURE128 += airport_buildings_towers
 INFRASTRUCTURE128 += airport_depots
 INFRASTRUCTURE128 += airport_ways_items
 INFRASTRUCTURE128 += catenary_all
-#INFRASTRUCTURE128 += crossings_all
 INFRASTRUCTURE128 += road_rail_crossings
 INFRASTRUCTURE128 += road_ng_crossings
 INFRASTRUCTURE128 += road_water_crossings
@@ -79,7 +76,6 @@ INFRASTRUCTURE128 += ng_signals
 INFRASTRUCTURE128 += ng_stations
 INFRASTRUCTURE128 += ng_tracks
 INFRASTRUCTURE128 += ng_tunnels
-#INFRASTRUCTURE128 += powerlines
 INFRASTRUCTURE128 += rail_bridges
 INFRASTRUCTURE128 += rail_signals
 INFRASTRUCTURE128 += rail_stations
@@ -100,20 +96,19 @@ INFRASTRUCTURE128 += water_all
 DIRS128 += $(addprefix infrastructure/,$(INFRASTRUCTURE128))
 
 #these will get special treatment below
-#DIRGROUNDS:= landscape/grounds
+DIRGROUNDS:= base
 DIRLOGO := base/misc_GUI
 
-
 #other sizes for boats etc
-DIRS160 := infrastructure/powerlines
 DIRS160 := landscape/rivers
 
 DIRS176 := vehicles/airplanes
+DIRS176 += infrastructure/powerlines
 
 DIRS250 := vehicles/ships-cargo
 DIRS250 += vehicles/ships-ferries
 
-DIRS := $(DIRS64) $(DIRS128) $(DIRS176) $(DIRS250) $(DIRLOGO) $(DIRGROUNDS)
+DIRS := $(DIRS64) $(DIRS128) $(DIRS160) $(DIRS176) $(DIRS250) $(DIRLOGO) $(DIRGROUNDS)
 
 #generating filenames
 #with this function the filenames are assembled, by removing the dir, adding prefix
@@ -139,6 +134,7 @@ $(DESTFILE).zip: $(PAKDIR)
 	@echo "===> ZIP $@"
 	@zip -rq $@ $(DESTDIR)
 
+# Recursive copy cannot be used as it would copy .svn files too!
 copy:
 	@echo "===> COPY"
 	@mkdir -p $(PAKDIR) $(PAKDIR)/config $(PAKDIR)/sound $(PAKDIR)/doc $(PAKDIR)/scenario $(PAKDIR)/sound $(PAKDIR)/text
@@ -150,8 +146,7 @@ copy:
 $(DIRS64):
 	@echo "===> PAK64 $@"
 	@mkdir -p $(PAKDIR)
-	$(MAKEOBJ) quiet PAK $(PAKDIR)/base.gui64.pak $@/ > /dev/null
-	#$(MAKEOBJ) quiet PAK $(PAKDIR)/$(call make_name,$@) $@/ > /dev/null
+	@$(MAKEOBJ) quiet PAK $(PAKDIR)/base.gui64.pak $@/ > /dev/null
 
 $(DIRS128):
 	@echo "===> PAK128 $@"
@@ -173,16 +168,11 @@ $(DIRS250):
 	@mkdir -p $(PAKDIR)
 	@$(MAKEOBJ) quiet PAK250 $(PAKDIR)/$(call make_name,$@) $@/ > /dev/null
 
-#$(DIRGROUNDS):
-#	@echo "===> ground.Outside.pak"
-#	@mkdir -p $(PAKDIR)
-#	@$(MAKEOBJ) quiet PAK128 $(PAKDIR)/$(call make_name,$@) $@/ > /dev/null
-#	@$(MAKEOBJ) quiet PAK128 temp.pak $@/ > /dev/null
-#	@$(MAKEOBJ) quiet EXTRACT temp.pak > /dev/null
-#	@rm temp.pak
-#	@mv ground.Outside.pak $(PAKDIR)/
-#	@$(MAKEOBJ) quiet MERGE $(PAKDIR)/$(call make_name,$@) *.pak > /dev/null
-#	@rm *.pak
+$(DIRGROUNDS):
+	@echo "===> ground.Outside.pak"
+	@mkdir -p $(PAKDIR)
+
+	@$(MAKEOBJ) quiet PAK128 $(PAKDIR)/ground.Outside.pak $@/ > /dev/null
 
 $(DIRLOGO):
 	@echo "===> logo & misc gui"
@@ -196,4 +186,5 @@ $(DIRLOGO):
 
 clean:
 	@echo "===> CLEAN"
-	@rm -fr $(PAKDIR) $(DESTFILE).tbz2 $(DESTFILE).zip 
+	@rm -fr $(PAKDIR) $(DESTFILE).tbz2 $(DESTFILE).zip
+
