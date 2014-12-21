@@ -5,7 +5,7 @@
 #                             Language: cz Cestina                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 20.04 2014                           #
+#                           Date Created: 22.12 2014                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - An_dz                                   #
@@ -21,6 +21,8 @@
 #                                     - PTM                                    #
 #                                    note:                                     #
 #                        Václav Macùrek - VaclavMacurek                        #
+#                                    note:                                     #
+#                             René Fiala - Xeotroid                            #
 #                                    note:                                     #
 #                                   - hernajs                                  #
 #                                    note:                                     #
@@ -1760,6 +1762,22 @@ CD_Eas-u
 ÈD Eas-u (sypké zbo¾í)
 CD_Eas-u_dvojice
 ÈD Eas-u dvojice vozù (sypké zbo¾í)
+CD_Elektricka_Jednotka_Radu_460_Pred.(Nater_1)
+ÈD 460 (EM 488.0) pøední (nátìr 1)
+CD_Elektricka_Jednotka_Radu_460_Pred.(Nater_2)
+ÈD 460 (EM 488.0) pøední (nátìr 2)
+CD_Elektricka_Jednotka_Radu_460_vagon_2.trieda(Nater_1)
+ÈD 063 (N488) vagon 2. tøída (nátìr 1)
+CD_Elektricka_Jednotka_Radu_460_vagon_2.trieda(Nater_2)
+ÈD 063 (N488) vagon 2. tøída (nátìr 2)
+CD_Elektricka_Jednotka_Radu_460_vagon_3.trieda(Nater_1)
+ÈD 063 (N 488) vagon (nátìr 1)
+CD_Elektricka_Jednotka_Radu_460_vagon_3.trieda(Nater_2)
+ÈD 063 (N 488) vagon (nátìr 2)
+CD_Elektricka_Jednotka_Radu_460_Zad.(Nater_1)
+ÈD 460 (EM488) zadní (nátìr 1)
+CD_Elektricka_Jednotka_Radu_460_Zad.(Nater_2)
+ÈD 460 (EM 488) zadní (nátìr 2)
 CD_Es
 ÈD Es (sypké zbo¾í)
 CD_Es_drevo
@@ -2274,6 +2292,22 @@ CSD_Eas_drevo_dvojice
 ÈSD Eas dvojice vozù (døevo)
 CSD_Eas_dvojice
 ÈSD Eas dvojice vozù (sypké zbo¾í)
+CSD_Elektricka_Jednotka_Radu_460_Pred.
+ÈSD 460 (EM 488) pøední
+CSD_Elektricka_Jednotka_Radu_460_Pred.(Nater_2)
+ÈSD 460 (EM 488) pøední (nátìr 2)
+CSD_Elektricka_Jednotka_Radu_460_vagon_2.trieda
+ÈSD 063 (N 488) vagon 2. tøída
+CSD_Elektricka_Jednotka_Radu_460_vagon_2.trieda(Nater_2)
+ÈSD 063 (N 488) vagon 2. tøída (nátìr 2)
+CSD_Elektricka_Jednotka_Radu_460_vagon_3.trieda
+ÈSD 460 (EM 488) vagon
+CSD_Elektricka_Jednotka_Radu_460_vagon_3.trieda(Nater_2)
+ÈSD (EM 488) vagon (nátìr 2)
+CSD_Elektricka_Jednotka_Radu_460_Zad.
+ÈSD 460 (EM 488) zadní
+CSD_Elektricka_Jednotka_Radu_460_Zad.(Nater_2)
+ÈSD 460 (EM 488) zadní
 CSD_EM_475.1_Zabotlam
 ÈSD EM 475.1 "®abotlam" (pøední elektrický vùz =3kV)
 CSD_EM_475.1_zadni
@@ -5570,6 +5604,30 @@ ZSSK_Ds
 ZSSK Ds (slu¾ební vùz)
 ZSSK_Ds_Blonski
 ZSSK Ds Blonski (slu¾ební vùz)
+ZSSK_Elektricka_Jednotka_Radu_460_Pred.(Nater_1)
+®SSK 460 (EM 488) pøední (nátìr 1)
+ZSSK_Elektricka_Jednotka_Radu_460_Pred.(Nater_2)
+®SSK 460 (EM 488) pøední (nátìr 2)
+ZSSK_Elektricka_Jednotka_Radu_460_Pred.(Nater_3)
+®SSK 460 (EM 488) pøední (nátìr 3)
+ZSSK_Elektricka_Jednotka_Radu_460_vagon_2.trieda(Nater_1)
+®SSK 063 (N 488) vagon 2. tøída (nátìr 1)
+ZSSK_Elektricka_Jednotka_Radu_460_vagon_2.trieda(Nater_2)
+®SSK 063 (N 488) vagon 2. tøída (nátìr 2)
+ZSSK_Elektricka_Jednotka_Radu_460_vagon_2.trieda(Nater_3)
+®SSK 063 (N 488) vagon 2. tøída (nátìr 3)
+ZSSK_Elektricka_Jednotka_Radu_460_vagon_3.trieda(Nater_1)
+®SSK 063 (N 488) vagon 3. tøída (nátìr 1)
+ZSSK_Elektricka_Jednotka_Radu_460_vagon_3.trieda(Nater_2)
+®SSK 063 (N 488) vagon 3. tøída (nátìr 2)
+ZSSK_Elektricka_Jednotka_Radu_460_vagon_3.trieda(Nater_3)
+®SSK 063 (N 488) vagon 3. tøída (nátìr 3)
+ZSSK_Elektricka_Jednotka_Radu_460_Zad.(Nater_1)
+®SSK 460 (EM 488) zadní (nátìr 1)
+ZSSK_Elektricka_Jednotka_Radu_460_Zad.(Nater_2)
+®SSK 063 (EM 488) zadní (nátìr 2)
+ZSSK_Elektricka_Jednotka_Radu_460_Zad.(Nater_3)
+®SSK 460 (EM 488) zadní (nátìr 3)
 ZSSK_Tms_beton
 ZSSK Tms (beton)
 ZSSK_Tms_ocel

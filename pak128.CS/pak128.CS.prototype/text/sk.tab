@@ -5,7 +5,7 @@
 #                            Language: sk Slovencina                           #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                            Date Created: 3.07 2014                           #
+#                           Date Created: 22.12 2014                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - An_dz                                   #
@@ -574,6 +574,22 @@ CD_954-otoc-1
 ÈD Bfbrdtn / 954 (predný riadiací vozeò - 2. trieda s prepra
 CD_954-otoc-2
 ÈD Bfbrdtn / 954 (predný riadiací vozeò - 2. trieda s prepra
+CD_Elektricka_Jednotka_Radu_460_Pred.(Nater_1)
+ÈD Elektrická Jednotka Radu 460 predný (Náter 1)
+CD_Elektricka_Jednotka_Radu_460_Pred.(Nater_2)
+ÈD Elektrická Jednotka Radu 460 predný (Náter 2)
+CD_Elektricka_Jednotka_Radu_460_vagon_2.trieda(Nater_1)
+ÈD Elektrická Jednotka Radu 460 vagón 2. trieda (náter 1)
+CD_Elektricka_Jednotka_Radu_460_vagon_2.trieda(Nater_2)
+ÈD Elektrická Jednotka Radu 460 vagón 2. trieda (náter 2)
+CD_Elektricka_Jednotka_Radu_460_vagon_3.trieda(Nater_1)
+ÈD Elektrická Jednotka Radu 460 vagón 3. trieda (náter 1)
+CD_Elektricka_Jednotka_Radu_460_vagon_3.trieda(Nater_2)
+ÈD Elektrická Jednotka Radu 460 vagón 3. trieda (náter 2)
+CD_Elektricka_Jednotka_Radu_460_Zad.(Nater_1)
+ÈD Elektrická Jednotka Radu 460 zadný (náter 1)
+CD_Elektricka_Jednotka_Radu_460_Zad.(Nater_2)
+ÈD Elektrická Jednotka Radu 460 zadný (náter 2)
 CSD_Aalm-d_prototyp
 ÈSD Aalm-d prototyp (1. trieda)
 CSD_Balm-d
@@ -586,6 +602,22 @@ CSD_BFalm-1
 ÈSD BFalm (2. trieda/slu¾obný) 1/2
 CSD_BFalm-2
 ÈSD BFalm (2. trieda/slu¾obný) 2/2
+CSD_Elektricka_Jednotka_Radu_460_Pred.
+ÈSD Elektrická Jednotka Radu 460 predný
+CSD_Elektricka_Jednotka_Radu_460_Pred.(Nater_2)
+ÈSD Elektrická Jednotka Radu 460 predný (náter 2)
+CSD_Elektricka_Jednotka_Radu_460_vagon_2.trieda
+ÈSD Elektrická Jednotka Radu 460 vagón 2. trieda
+CSD_Elektricka_Jednotka_Radu_460_vagon_2.trieda(Nater_2)
+ÈSD Elektrická Jednotka Radu 460 vagón 2. trieda (náter 2)
+CSD_Elektricka_Jednotka_Radu_460_vagon_3.trieda
+ÈSD Elektrická Jednotka Radu 460 vagón 3. trieda
+CSD_Elektricka_Jednotka_Radu_460_vagon_3.trieda(Nater_2)
+ÈSD Elektrická Jednotka Radu 460 vagón 3. trieda (náter 2)
+CSD_Elektricka_Jednotka_Radu_460_Zad.
+ÈSD Elektrická Jednotka Radu 460 zadný
+CSD_Elektricka_Jednotka_Radu_460_Zad.(Nater_2)
+ÈSD Elektrická Jednotka Radu 460 zadný (náter 2)
 CSD_M240_0
 ÈSD M240.0 "Singrovka" (motorový vozeò - 2. trieda)
 CSD_M240_0-1
@@ -1014,3 +1046,27 @@ ZSR_850-1
 ®SR 850 "Krokodíl" (motorový vozeò - 2. trieda/slu¾obný) 1/2
 ZSR_850-2
 ®SR 850 "Krokodíl" (motorový vozeò - 2. trieda/slu¾obný) 2/2
+ZSSK_Elektricka_Jednotka_Radu_460_Pred.(Nater_1)
+®SSK Elektrická Jednotka Radu 460 predný (náter 1)
+ZSSK_Elektricka_Jednotka_Radu_460_Pred.(Nater_2)
+®SSK Elektrická Jednotka Radu 460 predný (náter 2)
+ZSSK_Elektricka_Jednotka_Radu_460_Pred.(Nater_3)
+®SSK Elektrická Jednotka Radu 460 predný (náter 3)
+ZSSK_Elektricka_Jednotka_Radu_460_vagon_2.trieda(Nater_1)
+®SSK Elektrická Jednotka Radu 460 vagón 2. trieda (náter 1)
+ZSSK_Elektricka_Jednotka_Radu_460_vagon_2.trieda(Nater_2)
+®SSK Elektrická Jednotka Radu 460 vagón 2. trieda (náter 2)
+ZSSK_Elektricka_Jednotka_Radu_460_vagon_2.trieda(Nater_3)
+®SSK Elektrická Jednotka Radu 460 vagón 2. trieda (náter 3)
+ZSSK_Elektricka_Jednotka_Radu_460_vagon_3.trieda(Nater_1)
+®SSK Elektrická Jednotka Radu 460 vagón 3. trieda (náter 1)
+ZSSK_Elektricka_Jednotka_Radu_460_vagon_3.trieda(Nater_2)
+®SSK Elektrická Jednotka Radu 460 vagón 3. trieda (náter 2)
+ZSSK_Elektricka_Jednotka_Radu_460_vagon_3.trieda(Nater_3)
+®SSK Elektrická Jednotka Radu 460 vagón 3. trieda (náter 3)
+ZSSK_Elektricka_Jednotka_Radu_460_Zad.(Nater_1)
+®SSK Elektrická Jednotka Radu 460 zadný (náter 1)
+ZSSK_Elektricka_Jednotka_Radu_460_Zad.(Nater_2)
+®SSK Elektrická Jednotka Radu 460 zadný (náter 2)
+ZSSK_Elektricka_Jednotka_Radu_460_Zad.(Nater_3)
+®SSK Elektrická Jednotka Radu 460 zadný (náter 3)
