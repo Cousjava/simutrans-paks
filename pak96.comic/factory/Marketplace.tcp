@@ -1,0 +1,180 @@
+{
+    "comment": "This is a TileCutter Project file (JSON formatted). You may edit it by hand if you are careful.", 
+    "data": {
+        "dat": {
+            "dat_lump": "obj=factory\nname=Marketplace\ncopyright=VaclavMacurek\nrange=50\nInputGood[0]=rabbit\nInputCapacity[0]=10\nInputFactor[0]=15\nInputSupplier[0]=0\nInputGood[1]=fish\nInputCapacity[1]=10\nInputFactor[1]=15\nInputSupplier[1]=0\nInputGood[2]=Gemuese\nInputFactor[2]=10\nInputSupplier[2]=0\npax_level=1\nmail_boost=110\npassenger_boost=2000\nelectricity_boost=100\nelectricity_amount=10\nlocation=City\ndistributionWeight=50\n#intro_year=1920\nintro_year=1950\nmapColor=89\nclimates=temperate,tundra,rocky"
+        }, 
+        "dims": {
+            "directions": 1, 
+            "frames": 1, 
+            "frontimage": 0, 
+            "paksize": 96, 
+            "winter": 1, 
+            "x": 2, 
+            "y": 2, 
+            "z": 1
+        }, 
+        "files": {
+            "datfile_location": "Marketplace.dat", 
+            "datfile_write": true, 
+            "pakfile_location": "", 
+            "pngfile_location": "Marketplace.png"
+        }, 
+        "images": [
+            [
+                [
+                    [
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\Trziste_96\\Marketplace-uncut.png"
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\Trziste_96\\Marketplace-uncut.png"
+                        }
+                    ]
+                ], 
+                [
+                    [
+                        {
+                            "offset": [
+                                192, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\Trziste_96\\Marketplace-uncut.png"
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\Trziste_96\\Marketplace-uncut.png"
+                        }
+                    ]
+                ]
+            ], 
+            [
+                [
+                    [
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\Trziste_96\\Marketplace-uncut.png"
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\Trziste_96\\Marketplace-uncut.png"
+                        }
+                    ]
+                ], 
+                [
+                    [
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\Trziste_96\\Marketplace-uncut.png"
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\Trziste_96\\Marketplace-uncut.png"
+                        }
+                    ]
+                ]
+            ], 
+            [
+                [
+                    [
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\Trziste_96\\Marketplace-uncut.png"
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\Trziste_96\\Marketplace-uncut.png"
+                        }
+                    ]
+                ], 
+                [
+                    [
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\Trziste_96\\Marketplace-uncut.png"
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\Trziste_96\\Marketplace-uncut.png"
+                        }
+                    ]
+                ]
+            ], 
+            [
+                [
+                    [
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\Trziste_96\\Marketplace-uncut.png"
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\Trziste_96\\Marketplace-uncut.png"
+                        }
+                    ]
+                ], 
+                [
+                    [
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\Trziste_96\\Marketplace-uncut.png"
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\Trziste_96\\Marketplace-uncut.png"
+                        }
+                    ]
+                ]
+            ]
+        ]
+    }, 
+    "type": "TCP_JSON", 
+    "version": "0.6.1"
+}
