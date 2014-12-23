@@ -1,0 +1,41 @@
+# dlazdena cesta - kocici hlavy
+obj=way
+name=silnice_dlazdena_kocici_hlavy
+waytype=road
+copyright=JK271
+cost=15000
+maintenance=140
+topspeed=50
+max_weight=100
+axle_load=5
+# zatim jedina dostupna silnice v pak128.CS, tak musi by dostupna vzdy
+#intro_year=
+#intro_month=
+#retire_year=
+#retire_month=
+icon=> silnice_dlazdena_kocici_hlavy.0.6
+cursor=silnice_dlazdena_kocici_hlavy.0.7,0,-16
+#summer - leto
+image[-][0]=silnice_dlazdena_kocici_hlavy.1.0
+image[N][0]=silnice_dlazdena_kocici_hlavy.1.1
+image[S][0]=silnice_dlazdena_kocici_hlavy.1.2
+image[E][0]=silnice_dlazdena_kocici_hlavy.1.3
+image[W][0]=silnice_dlazdena_kocici_hlavy.1.4
+image[NS][0]=silnice_dlazdena_kocici_hlavy.1.5
+image[EW][0]=silnice_dlazdena_kocici_hlavy.1.6
+image[NSEW][0]=silnice_dlazdena_kocici_hlavy.1.7
+image[NSW][0]=silnice_dlazdena_kocici_hlavy.2.0
+image[NEW][0]=silnice_dlazdena_kocici_hlavy.2.1
+image[NSE][0]=silnice_dlazdena_kocici_hlavy.2.2
+image[SEW][0]=silnice_dlazdena_kocici_hlavy.2.3
+image[NE][0]=silnice_dlazdena_kocici_hlavy.2.4
+image[SE][0]=silnice_dlazdena_kocici_hlavy.2.5
+image[SW][0]=silnice_dlazdena_kocici_hlavy.2.6
+image[NW][0]=silnice_dlazdena_kocici_hlavy.2.7
+diagonal[NE][0]=silnice_dlazdena_kocici_hlavy.2.4
+diagonal[SE][0]=silnice_dlazdena_kocici_hlavy.2.5
+diagonal[SW][0]=silnice_dlazdena_kocici_hlavy.2.6
+imageUp[3][0]=silnice_dlazdena_kocici_hlavy.3.4
+imageUp[6][0]=silnice_dlazdena_kocici_hlavy.3.5
+imageUp[9][0]=silnice_dlazdena_kocici_hlavy.3.6
+imageUp[12][0]=silnice_dlazdena_kocici_hlavy.3.7
