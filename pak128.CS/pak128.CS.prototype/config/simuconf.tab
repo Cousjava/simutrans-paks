@@ -49,7 +49,7 @@ factory_worker_minimum_towns = 1
 factory_worker_maximum_towns = 4
 
 # if enabled (default = 0 off) stops may have different capacities for passengers, mail, and freight
-seperate_halt_capacities = 0
+seperate_halt_capacities = 1
 
 # three modes (default = 0)
 # 0: distance since last stop
@@ -161,7 +161,7 @@ beginner_price_factor = 1500
 
 # Aize of catchment area of a station
 # Default 2, older game size was 3
-station_coverage = 2
+station_coverage = 3
 
 # Passengers and goods will change vehicles at most "max_transfer"
 # times to reach their destination.
@@ -266,9 +266,9 @@ starting_month = 1
 # Default is 18. For example, 21 will make the month 2^3=8 times longer in real time.
 # Production and maintainance cost will be adjusted accordingly.
 #
-# pak128 uses only 2 times longer months... should be way enough for normal games.
+# pak128.CS uses only 4 times longer months... should be way enough for normal games.
 #
-bits_per_month = 19
+bits_per_month = 20
 
 
 ################################  display stuff  ###############################
