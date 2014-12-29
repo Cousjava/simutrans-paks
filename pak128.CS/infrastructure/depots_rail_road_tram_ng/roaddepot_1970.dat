@@ -4,7 +4,6 @@ copyright=VTPsim
 type=depot
 waytype=road
 intro_year=1970
-# uncomment if any other depot becomes available
 retire_year=2000
 Dims=1,1,4
 NoInfo=1
