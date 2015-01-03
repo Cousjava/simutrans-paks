@@ -1,0 +1,41 @@
+# koleje s kolejnicemi T na drevenych prazcich
+# 50kg/bm
+# vyrabeno od roku 1929 do 1970
+# max 25t na napravu (D4/120km/h; E5/80km/h)
+# max rychlost 120km/h (limit kolejnice);
+# nekde tvrdi, ze az 150 km/h
+# limit dany prazci neznamy
+obj=way
+name=rail_track_T_wooden_speepers
+copyright=JK271
+waytype=track
+cost=32000
+maintenance=200
+topspeed=120
+#max_weight=150
+axle_load=25
+intro_year=1929
+retire_year=1970
+icon=> rail_track_T.0.6
+cursor=rail_track_T.0.7,0,-16
+# summer images
+image[-][0]=rail_track_T.1.0
+image[N][0]=rail_track_T.1.1
+image[S][0]=rail_track_T.1.2
+image[E][0]=rail_track_T.1.3
+image[W][0]=rail_track_T.1.4
+image[NS][0]=rail_track_T.1.5
+image[EW][0]=rail_track_T.1.6
+image[NSEW][0]=rail_track_T.1.7
+image[NSW][0]=rail_track_T.2.0
+image[NEW][0]=rail_track_T.2.1
+image[NSE][0]=rail_track_T.2.2
+image[SEW][0]=rail_track_T.2.3
+image[NE][0]=rail_track_T.2.4
+image[SE][0]=rail_track_T.2.5
+image[NW][0]=rail_track_T.2.6
+image[SW][0]=rail_track_T.2.7
+imageUp[3][0]=rail_track_T.3.0
+imageUp[6][0]=rail_track_T.3.1
+imageUp[9][0]=rail_track_T.3.2
+imageUp[12][0]=rail_track_T.3.3
