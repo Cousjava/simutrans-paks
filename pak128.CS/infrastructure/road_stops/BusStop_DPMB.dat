@@ -9,6 +9,9 @@ enables_pax=1
 #intro_year=1976
 retire_month=10
 retire_year=1997
+capacity=32
+maintenance=1800
+cost=40000
 icon=> BusStop_DPMB.0.5
 cursor=BusStop_DPMB.0.4
 # Single

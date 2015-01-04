@@ -7,6 +7,9 @@ level=1
 dims=1,1,8
 enables_ware=1
 #intro_year=1976
+capacity=32
+maintenance=1800
+cost=40000
 icon=> BusStop_Cargo.1.5
 cursor=BusStop_Cargo.1.4
 # Single
