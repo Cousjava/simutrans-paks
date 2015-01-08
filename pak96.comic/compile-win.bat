@@ -48,6 +48,11 @@ makeobj.exe pak96 ./compiled/ ./maglev/ways/tunnels/
 
 echo.
 echo -------------------------------------------------------
+echo Compiling monorails...
+makeobj.exe pak96 ./compiled/ ./monorail/buildings/
+
+echo.
+echo -------------------------------------------------------
 echo Compiling others...
 makeobj.exe pak96 ./compiled/ ./other/powerlines/
 makeobj.exe pak96 ./compiled/ ./other/powerlines/bridges/
@@ -61,6 +66,11 @@ makeobj.exe pak96 ./compiled/ ./rail/signs/
 makeobj.exe pak96 ./compiled/ ./rail/vehicles/
 makeobj.exe pak96 ./compiled/ ./rail/wayobjs/
 makeobj.exe pak96 ./compiled/ ./rail/ways/bridges/
+
+echo.
+echo -------------------------------------------------------
+echo Compiling narrowgauge railroad...
+makeobj.exe pak96 ./compiled/ ./rail-narrow/buildings/
 
 echo.
 echo -------------------------------------------------------
