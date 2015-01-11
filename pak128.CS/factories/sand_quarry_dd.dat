@@ -9,7 +9,7 @@ name=sand_quarry_dd
 copyright=DanteDarkstar
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 
 Productivity=170
 Range=80

@@ -3,14 +3,14 @@ name=fish_pond
 copyright=Napik
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 
 #needed productivity in tones  : 100 (1/2 train / month)
 #size                          : 4x3 = 12
 #average productivity per tile : 8
 
-Productivity=50
-Range=100
+Productivity=25
+Range=50
 
 Electricity_amount=0
 Electricity_boost=0

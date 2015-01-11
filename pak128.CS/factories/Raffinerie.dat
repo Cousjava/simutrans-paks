@@ -35,7 +35,7 @@ OutputCapacity[2]=300
 OutputFactor[2]=25
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 MapColor=58
 Dims=3,3
 

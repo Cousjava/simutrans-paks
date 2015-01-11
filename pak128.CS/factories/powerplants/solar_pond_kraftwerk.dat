@@ -1,10 +1,10 @@
 Obj=factory
-name=Solar Pond_kraftwerk
+name=Solar_Pond_kraftwerk
 copyright=vilvoh
 
 Location=Land
 chance=100
-Distributionweight=1
+Distributionweight=5
 Productivity=70
 Range=20
 electricity_proportion=2

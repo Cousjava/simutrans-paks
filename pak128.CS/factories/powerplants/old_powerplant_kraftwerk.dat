@@ -6,7 +6,7 @@ copyright=Raven
 # size                          : 3x3 = 9
 # required productivity with cf.: 630
 
-DistributionWeight=2
+DistributionWeight=20
 Location=Land
 
 Productivity=600

@@ -3,9 +3,9 @@ name=publisher
 copyright=Raven
 
 Location=City
-DistributionWeight=1
+DistributionWeight=20
 
-Productivity=250
+Productivity=125
 Range=0
 
 Electricity_amount=0

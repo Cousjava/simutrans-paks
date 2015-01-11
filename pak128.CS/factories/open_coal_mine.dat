@@ -3,7 +3,7 @@ name=open_coal_mine
 copyright=Rmax500
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 
 #needed productivity in tones  : 105t (0.5 trains / month)
 #size                          : 3x3 = 9

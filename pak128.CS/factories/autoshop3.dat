@@ -3,10 +3,10 @@ name=autoshop3
 copyright=Joker
 
 Location=City
-DistributionWeight=1
+DistributionWeight=20
 
-Productivity=100
-Range=50
+Productivity=50
+Range=25
 
 Electricity_amount=0
 Electricity_boost=0

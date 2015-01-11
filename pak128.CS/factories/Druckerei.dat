@@ -3,7 +3,7 @@ name=Druckerei
 copyright=Patrick
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 
 # needed productivity in tones  : 570 (4 trains / month)
 # size                          : 2x2 = 4

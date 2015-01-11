@@ -4,7 +4,7 @@ copyright=Rmax500
 # used to be: Stahlwerk
 
 Location=City
-DistributionWeight=1
+DistributionWeight=10
 
 # needed productivity in tones  : 400t (2 trains / month)
 # average productivity per tile : 22

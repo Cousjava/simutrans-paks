@@ -7,7 +7,7 @@ Location=Land
 #size                          : 1x3 = 3
 #average productivity per tile : 83
 
-DistributionWeight=1
+DistributionWeight=10
 Productivity=520
 Range=40
 

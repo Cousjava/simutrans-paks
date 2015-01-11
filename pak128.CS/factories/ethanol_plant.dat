@@ -3,9 +3,9 @@ Name=ethanol_plant
 Copyright=Rmax500
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 
-Productivity=440
+Productivity=220
 Range=200
 
 Electricity_amount=50

@@ -3,7 +3,7 @@ name=Concretefactory
 copyright=MHz
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 
 # needed productivity in tones  : 470t (16 waggons per month)
 # size                          : 2x2 = 4

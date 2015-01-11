@@ -2,7 +2,7 @@ Obj=factory
 name=wind_kraftwerk
 Location=Land
 
-DistributionWeight=1
+DistributionWeight=5
 Productivity=15
 Range=15
 pax_level=0

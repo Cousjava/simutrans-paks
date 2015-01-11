@@ -3,7 +3,7 @@ name=car_assembly_plant
 copyright=Joker
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 
 # needed productivity in tones  : 220cars (4 trains / month)
 # size                          : 3x3 = 9

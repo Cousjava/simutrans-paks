@@ -7,7 +7,7 @@ copyright=MHz
 #size                          : 2x2 = 4
 #average productivity per tile : ?
 
-DistributionWeight=1
+DistributionWeight=10
 Productivity=180
 Range=300
 

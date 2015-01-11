@@ -3,14 +3,14 @@ name=shopping_mall
 Copyright=Napik & Patrick & James Starr
 
 Location=City
-DistributionWeight=2
+DistributionWeight=40
 
 # needed productivity in tones  : 400
 # size                          : 4x4 = 16
 # average productivity per tile : 12,2
 
-Productivity=250
-Range=100
+Productivity=125
+Range=50
 #intro_year=1950
 
 Electricity_amount=0

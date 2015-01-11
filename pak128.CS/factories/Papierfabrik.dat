@@ -3,7 +3,7 @@ name=Papierfabrik
 copyright=MHz
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 
 #needed productivity in tones  : 330t (2 trains / month)
 #size                          : 2x2 = 4

@@ -3,14 +3,14 @@ name=dairy
 copyright=BlackBox
 
 Location=City
-DistributionWeight=1
+DistributionWeight=10
 
 # needed productivity in tones  : 250 (1,2 train / month)
 # size                          : 2x2 = 4
 # average productivity per tile : 44
 
-Productivity=200
-Range=100
+Productivity=100
+Range=50
 
 Electricity_amount=5
 Electricity_boost=1000

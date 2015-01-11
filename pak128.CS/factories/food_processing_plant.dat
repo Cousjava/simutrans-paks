@@ -3,14 +3,14 @@ name=food_processing_plant
 copyright=James Starr
 
 Location=Land
-DistributionWeight=2
+DistributionWeight=20
 
 # needed productivity in tones  : 700 (5 trains / month)
 # size                          : 2x2 = 4
 # average productivity per tile : 88
 
-Productivity=600
-Range=200
+Productivity=300
+Range=100
 
 Electricity_amount=100
 Electricity_boost=1000

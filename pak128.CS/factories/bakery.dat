@@ -3,14 +3,14 @@ name=bakery
 copyright=Patrick
 
 Location=City
-DistributionWeight=1
+DistributionWeight=10
 
 # needed productivity in tones  : 700 (5 trains / month)
 # size                          : 3x3 = 9
 # average productivity per tile : 39
 
-Productivity=640
-Range=200
+Productivity=320
+Range=100
 
 Electricity_amount=10
 Electricity_boost=1000

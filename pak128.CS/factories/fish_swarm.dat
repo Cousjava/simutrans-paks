@@ -3,7 +3,7 @@ name=fish_swarm
 copyright=Patrick
 
 Location=Water
-DistributionWeight=2
+DistributionWeight=20
 
 # needed productivity in tones  : 170 (? ship / month)
 # size                          : 3x2 = 6

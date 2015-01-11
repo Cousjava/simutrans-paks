@@ -4,7 +4,7 @@ Location=Land
 
 copyright=Raven
 
-DistributionWeight=1
+DistributionWeight=10
 MapColor=176
 
 OutputGood[0]=Kohle

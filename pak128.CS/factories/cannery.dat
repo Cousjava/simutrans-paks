@@ -3,15 +3,15 @@ name=cannery
 copyright=Patrick
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 Intro_year=1940
 
 # needed productivity in tones  : 200 (3 trains / month)
 # size                          : 3x3 = 9
 # average productivity per tile : 11
 
-Productivity=160
-Range=80
+Productivity=80
+Range=40
 
 Electricity_amount=50
 Electricity_boost=1000

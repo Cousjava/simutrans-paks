@@ -3,7 +3,7 @@ name=waste_incinerator_kraftwerk
 copyright=MHz
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 
 # average rate:            100
 # total consumption:       300t

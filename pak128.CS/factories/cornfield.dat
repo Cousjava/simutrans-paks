@@ -3,7 +3,7 @@ Name=cornfield
 Copyright=Rmax500
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 intro_year=2000
 
 Productivity=175

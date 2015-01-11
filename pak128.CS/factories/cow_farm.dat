@@ -4,14 +4,14 @@ copyright=BlackBox
 # proper translation Cattle Yard
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 
 # needed productivity in tones  : 140 (1 train / month)
 # size                          : 5x5 = 25
 # average productivity per tile : 3
 
-Productivity=100
-Range=80
+Productivity=50
+Range=40
 
 Electricity_amount=5
 Electricity_boost=100

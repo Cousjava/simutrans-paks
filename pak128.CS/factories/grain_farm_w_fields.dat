@@ -3,15 +3,15 @@ name=grain_farm_w_fields
 copyright=Raven
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 
 #needed productivity in tones  : 280 (1 train / month)
 #size                          : 6x6 = 36
 #average productivity per tile : 4
 
 
-Productivity=180
-Range=80
+Productivity=90
+Range=40
 
 Electricity_amount=0
 Electricity_boost=0

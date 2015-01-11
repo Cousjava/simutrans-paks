@@ -3,7 +3,7 @@ name=old_fish_cannery
 copyright=Zeno
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 
 Productivity=120
 Range=60

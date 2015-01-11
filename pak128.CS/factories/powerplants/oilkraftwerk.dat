@@ -3,10 +3,13 @@ name=oilkraftwerk
 copyright=Patrick
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 
 Productivity=600
 Range=400
+
+intro_year=2020
+intro_month=1
 
 Smoke=industry_smoke
 SmokeTile=0,0

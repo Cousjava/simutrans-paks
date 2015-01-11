@@ -3,14 +3,14 @@ name=sheep_farm
 copyright=Patrick & Napik
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 
 # needed productivity in tones  : 330 (1 trains / month)
 # size                          : 3x3 = 9
 # average productivity per tile : 18
 
-Productivity=270
-Range=120
+Productivity=135
+Range=60
 
 Electricity_amount=0
 Electricity_boost=0

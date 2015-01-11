@@ -4,7 +4,7 @@ name=Glass_factory
 copyright=Patrick
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 
 #needed productivity in tones  : 125t (0.75 train per month)
 #size                          : 2x2 = 4

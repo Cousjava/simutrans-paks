@@ -3,7 +3,7 @@ name=Cementmill
 copyright=Flor Wauters & Napik
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 
 # needed productivity in tones  : 105t (1.5 train per month)
 # size                          : 2x2 = 4

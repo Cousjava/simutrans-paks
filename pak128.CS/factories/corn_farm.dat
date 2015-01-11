@@ -4,10 +4,10 @@ name=Corn_Farm
 copyright=Sarlock
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 
-Productivity=100
-Range=200
+Productivity=50
+Range=100
 
 Electricity_boost=0
 Electricity_amount=0

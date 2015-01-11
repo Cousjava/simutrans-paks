@@ -3,14 +3,14 @@ name=chicken_farm
 copyright=Patrick & Napik
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 
 # needed productivity in tones  : 140 (1 train / month)
 # size                          : 3x3 = 9
 # average productivity per tile : 8
 
-Productivity=100
-Range=80
+Productivity=50
+Range=40
 
 Electricity_amount=5
 Electricity_boost=300

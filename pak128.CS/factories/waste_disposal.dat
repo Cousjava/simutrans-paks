@@ -4,7 +4,7 @@ name=waste_disposal
 copyright=MHz
 
 Location=City
-DistributionWeight=3
+DistributionWeight=30
 
 Productivity=75
 Range=50

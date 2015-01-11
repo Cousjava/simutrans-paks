@@ -3,14 +3,14 @@ name=brewery
 copyright=James Starr
 
 Location=City
-DistributionWeight=1
+DistributionWeight=10
 
 # needed productivity in tones  : 560 (3 trains / month)
 # size                          : 4x4 = 16
 # average productivity per tile : 17,5
 
-Productivity=500
-Range=120
+Productivity=250
+Range=60
 
 Electricity_amount=10
 Electricity_boost=1000

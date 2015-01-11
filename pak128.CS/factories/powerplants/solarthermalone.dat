@@ -5,7 +5,7 @@ copyright=vilvoh
 Location=Land
 
 chance=1
-Distributionweight=1
+Distributionweight=5
 
 Productivity=15
 Range=10

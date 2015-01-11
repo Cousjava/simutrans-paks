@@ -3,10 +3,10 @@ name=TANKE2
 Copyright=Asterix909
 
 Location=City
-DistributionWeight=4
+DistributionWeight=80
 
-Productivity=100
-Range=50
+Productivity=50
+Range=25
 
 intro_year=1960
 

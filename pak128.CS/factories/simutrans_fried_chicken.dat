@@ -3,9 +3,9 @@ name=Simutrans_Fried_Chicken
 Location=City
 copyright=Sarlock
 
-DistributionWeight=4
-Productivity=30
-Range=20
+DistributionWeight=40
+Productivity=15
+Range=10
 
 Electricity_amount=0
 Electricity_boost=0
@@ -20,7 +20,6 @@ InputSupplier[0]=0
 
 MapColor=140
 
-Passengers=25
 intro_year=1978
 chance=100
 dims=1,2,4

@@ -3,7 +3,7 @@ name=Erzbergwerk
 copyright=Napik
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 
 # needed productivity in tones  : 840t (4 trains / month)
 # size                          : 5x5 = 25

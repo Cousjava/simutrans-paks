@@ -3,7 +3,7 @@ name=ForestPlantation
 copyright=Fabio Gonella
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 
 climates=tropic,mediterran,temperate,tundra
 MapColor=87
@@ -28,7 +28,7 @@ fields=forestplantation_field
 max_fields=80
 min_fields=10
 production_per_field=1
-probability to spawn=75
+probability_to_spawn=75
 
 BackImage[0][0][0][0][0][0]=forestplantation.0.0
 BackImage[0][0][1][0][0][0]=forestplantation.0.1

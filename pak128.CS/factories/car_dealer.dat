@@ -3,14 +3,14 @@ name=car_dealer
 copyright=Joker
 
 Location=City
-DistributionWeight=1
+DistributionWeight=20
 
 # needed productivity in tones  : 110cars (2 trains / month)
 # size                          : 3x3 = 9
 # average productivity per tile : 12
 
-Productivity=100
-Range=20
+Productivity=50
+Range=10
 
 Electricity_amount=0
 Electricity_boost=0

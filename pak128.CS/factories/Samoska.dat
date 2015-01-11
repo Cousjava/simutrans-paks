@@ -3,11 +3,11 @@ name=Samoska
 copyright=TommPa9, Vladki
 
 Location=City
-DistributionWeight=10
+DistributionWeight=200
 MapColor=101
 
-Productivity=50
-Range=50
+Productivity=25
+Range=25
 #intro_year=1950
 #climates=temperate
 

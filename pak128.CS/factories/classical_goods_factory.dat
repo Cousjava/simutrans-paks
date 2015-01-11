@@ -3,14 +3,14 @@ name=classical_goods_factory
 copyright=Rmax500
 
 Location=Land
-DistributionWeight=1
+DistributionWeight=10
 
 # needed productivity in tones  : 400 crates (3 trains / month)
 # size                          : 2x2 = 4
 # average productivity per tile : 50
 
-Productivity=320
-Range=180
+Productivity=160
+Range=90
 
 Electricity_amount=260
 Electricity_boost=1000
