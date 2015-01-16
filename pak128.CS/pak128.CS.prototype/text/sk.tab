@@ -5,7 +5,7 @@
 #                            Language: sk Slovencina                           #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 22.12 2014                           #
+#                           Date Created: 16.01 2015                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - An_dz                                   #
@@ -452,6 +452,8 @@ RailTunnel
 ¾eleznièný tunel
 #____________________________________vehicle____________________________________
 #____________________________________vehicle____________________________________
+CD_014
+ÈD 014
 CD_020
 ÈD Btx / 020 (2. trieda)
 CD_021-1
@@ -690,6 +692,10 @@ CSD_M475_0-1
 ÈSD M475.0 "Chrochtadlo" (motorový vozeò - 2. trieda/slu¾obn
 CSD_M475_0-2
 ÈSD M475.0 "Chrochtadlo" (motorový vozeò - 2. trieda/slu¾obn
+Ikarus_435p
+Ikarus 435 (pøedný)
+Ikarus_435z
+Ikarus 435 (zadný)
 MAV_Ap_1905
 MAV Ap 19-05 (1. trieda)
 MAV_BDh_8127-1
@@ -1032,6 +1038,20 @@ OBB_WRmz_8890_dark
 ÖBB WRmz 88-90 tmavo ¹edý (restauraèný vozeò)
 OBB_WRmz_8890_light
 ÖBB WRmz 88-90 svetlo ¹edý (restauraèný vozeò)
+Skoda_15Tr_Pred
+©koda 15Tr (predný)
+Skoda_15Tr_Zad
+©koda 15Tr (zadný)
+Skoda_22Tr_Pred
+©koda 22Tr (predný)
+Skoda_22Tr_Zad
+©koda 22Tr (zadný)
+Skoda_30Tr
+©koda 30Tr
+Skoda_31Tr_Pred
+©koda 31Tr (predný)
+Skoda_31Tr_Zad
+©koda 31Tr (zadný)
 ZSR_050
 ®SR 050 (2. trieda)
 ZSR_850

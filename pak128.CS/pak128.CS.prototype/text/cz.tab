@@ -5,7 +5,7 @@
 #                             Language: cz Cestina                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 22.12 2014                           #
+#                           Date Created: 16.01 2015                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - An_dz                                   #
@@ -4114,6 +4114,10 @@ GW_913z
 GW 913 (zadní øídící vùz - 2. tøída)
 Ikarus_260_BKV
 Autobus Ikarus 206 BKV
+Ikarus_435p
+Ikarus 435 (pøední)
+Ikarus_435z
+Ikarus 435 (zadní)
 ikarus_e91
 Mìstský autobus Ikarus E91
 Irisbus_Citelis_12_M
@@ -4852,6 +4856,10 @@ skoda_15_tr
 Kloubový trolejbus ©koda 15Tr
 skoda_15_tr_zadek
 ©koda 15 Tr zadní èást
+Skoda_15Tr_Pred
+©koda 15Tr (pøední)
+Skoda_15Tr_Zad
+©koda 15Tr (zadní)
 skoda_16_tr
 Trolejbus ©koda 16Tr
 skoda_17_tr
@@ -4882,6 +4890,10 @@ skoda_22_tr
 Kloubový trolejbus ©koda 22Tr
 skoda_22_tr_zadek
 ©koda 22Tr zadní èást
+Skoda_22Tr_Pred
+©koda 22Tr (pøední)
+Skoda_22Tr_Zad
+©koda 22Tr (zadní)
 skoda_23_tr
 Kloubový trolejbus ©koda 23Tr
 skoda_23_tr_stred
@@ -4906,10 +4918,16 @@ skoda_3_tr
 Trolejbus ©koda 3Tr
 skoda_30_tr
 Trolejbus ©koda/Sor 30Tr
+Skoda_30Tr
+©koda 30Tr
 skoda_31_tr
 Kloubový trolejbus ©koda/Sor 31Tr
 skoda_31_tr_zadek
 ©koda/Sor 31Tr zadní èást
+Skoda_31Tr_Pred
+©koda 31Tr (pøední)
+Skoda_31Tr_Zad
+©koda 31Tr (zadní)
 skoda_4_tr
 Trolejbus ©koda 4Tr
 skoda_5_tr
