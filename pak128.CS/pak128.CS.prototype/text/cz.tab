@@ -5,7 +5,7 @@
 #                             Language: cz Cestina                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                           Date Created: 16.01 2015                           #
+#                           Date Created: 17.01 2015                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - An_dz                                   #
@@ -4114,6 +4114,8 @@ GW_913z
 GW 913 (zadní øídící vùz - 2. tøída)
 Ikarus_260_BKV
 Autobus Ikarus 206 BKV
+Ikarus_396
+Ikarus 396
 Ikarus_435p
 Ikarus 435 (pøední)
 Ikarus_435z
