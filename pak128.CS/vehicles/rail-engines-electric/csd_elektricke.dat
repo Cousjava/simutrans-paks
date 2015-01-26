@@ -255,6 +255,7 @@ waytype=track
 engine_type=Electric
 power=400
 copyright=TommPa9
+# length=7 ??
 length=8
 gear=150
 
