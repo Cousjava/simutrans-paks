@@ -1,3 +1,6 @@
+# DB and DR diesel engines
+
+# DR 130 - DB 230
 obj=vehicle
 cost=4131300
 speed=100
@@ -24,3 +27,32 @@ emptyimage[e]=db_232.0.4
 emptyimage[se]=db_232.0.5
 emptyimage[s]=db_232.0.6
 emptyimage[sw]=db_232.0.7
+
+-----------------------------------
+# sergej
+obj=vehicle
+cost=4069800
+speed=100
+weight=116
+runningcost=365
+name=DR_120
+intro_year=1965
+intro_month=1
+retire_year=1995
+retire_month=11
+waytype=track
+engine_type=diesel
+smoke=Diesel_black
+power=1470
+copyright=TommPa9
+length=8
+gear=139
+
+emptyimage[w]=dr_120.0.0
+emptyimage[nw]=dr_120.0.1
+emptyimage[n]=dr_120.0.2
+emptyimage[ne]=dr_120.0.3
+emptyimage[e]=dr_120.0.4
+emptyimage[se]=dr_120.0.5
+emptyimage[s]=dr_120.0.6
+emptyimage[sw]=dr_120.0.7
