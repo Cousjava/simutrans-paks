@@ -260,23 +260,23 @@ constraint[prev][3]=CD_471_Esus_III._471
 constraint[prev][4]=CD_471_Esus_II._971_(balkan)
 
 
-emptyimage[w]=471c_z.0.0
-emptyimage[nw]=471c_z.0.1
-emptyimage[n]=471c_z.0.2
-emptyimage[ne]=471c_z.0.3
-emptyimage[e]=471c_z.0.4
-emptyimage[se]=471c_z.0.5
-emptyimage[s]=471c_z.0.6
-emptyimage[sw]=471c_z.0.7
+emptyimage[w]=cd_471c_z.0.0
+emptyimage[nw]=cd_471c_z.0.1
+emptyimage[n]=cd_471c_z.0.2
+emptyimage[ne]=cd_471c_z.0.3
+emptyimage[e]=cd_471c_z.0.4
+emptyimage[se]=cd_471c_z.0.5
+emptyimage[s]=cd_471c_z.0.6
+emptyimage[sw]=cd_471c_z.0.7
 
-freightimage[w]=471c.0.0
-freightimage[nw]=471c.0.1
-freightimage[n]=471c.0.2
-freightimage[ne]=471c.0.3
-freightimage[e]=471c.0.4
-freightimage[se]=471c.0.5
-freightimage[s]=471c.0.6
-freightimage[sw]=471c.0.7
+freightimage[w]=cd_471c.0.0
+freightimage[nw]=cd_471c.0.1
+freightimage[n]=cd_471c.0.2
+freightimage[ne]=cd_471c.0.3
+freightimage[e]=cd_471c.0.4
+freightimage[se]=cd_471c.0.5
+freightimage[s]=cd_471c.0.6
+freightimage[sw]=cd_471c.0.7
 -----------------------------
 obj=vehicle
 cost=18384000
@@ -297,23 +297,23 @@ constraint[prev][1]=CD_471_Esus_III.
 constraint[next][0]=CD_471_Esus_III._071
 constraint[next][1]=CD_471_Esus_III._471
 
-emptyimage[w]=471c_z.1.0
-emptyimage[nw]=471c_z.1.1
-emptyimage[n]=471c_z.1.2
-emptyimage[ne]=471c_z.1.3
-emptyimage[e]=471c_z.1.4
-emptyimage[se]=471c_z.1.5
-emptyimage[s]=471c_z.1.6
-emptyimage[sw]=471c_z.1.7
+emptyimage[w]=cd_471c_z.1.0
+emptyimage[nw]=cd_471c_z.1.1
+emptyimage[n]=cd_471c_z.1.2
+emptyimage[ne]=cd_471c_z.1.3
+emptyimage[e]=cd_471c_z.1.4
+emptyimage[se]=cd_471c_z.1.5
+emptyimage[s]=cd_471c_z.1.6
+emptyimage[sw]=cd_471c_z.1.7
 
-freightimage[w]=471c.1.0
-freightimage[nw]=471c.1.1
-freightimage[n]=471c.1.2
-freightimage[ne]=471c.1.3
-freightimage[e]=471c.1.4
-freightimage[se]=471c.1.5
-freightimage[s]=471c.1.6
-freightimage[sw]=471c.1.7
+freightimage[w]=cd_471c.1.0
+freightimage[nw]=cd_471c.1.1
+freightimage[n]=cd_471c.1.2
+freightimage[ne]=cd_471c.1.3
+freightimage[e]=cd_471c.1.4
+freightimage[se]=cd_471c.1.5
+freightimage[s]=cd_471c.1.6
+freightimage[sw]=cd_471c.1.7
 ---------------------------
 obj=vehicle
 cost=18384000
@@ -341,23 +341,23 @@ constraint[next][4]=CD_471_Esus_III.
 
 
 
-emptyimage[w]=471c_z.2.0
-emptyimage[nw]=471c_z.2.1
-emptyimage[n]=471c_z.2.2
-emptyimage[ne]=471c_z.2.3
-emptyimage[e]=471c_z.2.4
-emptyimage[se]=471c_z.2.5
-emptyimage[s]=471c_z.2.6
-emptyimage[sw]=471c_z.2.7
+emptyimage[w]=cd_471c_z.2.0
+emptyimage[nw]=cd_471c_z.2.1
+emptyimage[n]=cd_471c_z.2.2
+emptyimage[ne]=cd_471c_z.2.3
+emptyimage[e]=cd_471c_z.2.4
+emptyimage[se]=cd_471c_z.2.5
+emptyimage[s]=cd_471c_z.2.6
+emptyimage[sw]=cd_471c_z.2.7
 
-freightimage[w]=471c.2.0
-freightimage[nw]=471c.2.1
-freightimage[n]=471c.2.2
-freightimage[ne]=471c.2.3
-freightimage[e]=471c.2.4
-freightimage[se]=471c.2.5
-freightimage[s]=471c.2.6
-freightimage[sw]=471c.2.7
+freightimage[w]=cd_471c.2.0
+freightimage[nw]=cd_471c.2.1
+freightimage[n]=cd_471c.2.2
+freightimage[ne]=cd_471c.2.3
+freightimage[e]=cd_471c.2.4
+freightimage[se]=cd_471c.2.5
+freightimage[s]=cd_471c.2.6
+freightimage[sw]=cd_471c.2.7
 ----------------------------------------
 obj=vehicle
 cost=18384000
