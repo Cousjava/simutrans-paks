@@ -41,6 +41,7 @@ DIRS128VEHICLES += rail-engines-steam
 DIRS128VEHICLES += rail-psg+mail
 DIRS128VEHICLES += road-cargo
 DIRS128VEHICLES += road-psg+mail
+DIRS128VEHICLES += road-trolleybus
 DIRS128VEHICLES += trams
 
 DIRS128 := $(addprefix vehicles/,$(DIRS128VEHICLES))
