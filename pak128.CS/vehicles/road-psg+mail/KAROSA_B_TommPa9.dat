@@ -87,18 +87,23 @@ emptyimage[e]=skoda.12.5
 emptyimage[se]=skoda.12.6
 emptyimage[s]=skoda.12.7
 emptyimage[sw]=skoda.12.8
+
 ----------------------------------
+
 obj=vehicle
 cost=567432
 payload=94
 speed=78
 weight=10
 runningcost=24
+fixed_cost=120
 name=Karosa_B_931
 intro_year=1995
 intro_month=1
-retire_year=1999
-retire_month=6
+# retire_year=1999 ?? ktery z udaju je spravne ??
+# retire_month=6
+retire_year=2007
+retire_month=1
 smoke=Diesel
 waytype=road
 freight=Passagiere
@@ -117,7 +122,9 @@ emptyimage[e]=skoda_11.2.5
 emptyimage[se]=skoda_11.2.6
 emptyimage[s]=skoda_11.2.7
 emptyimage[sw]=skoda_11.2.8
-----------------------------------
+
+-----------------------------------
+
 obj=vehicle
 cost=568570
 payload=94
@@ -209,12 +216,18 @@ emptyimage[s]=skoda_11.2.7
 emptyimage[sw]=skoda_11.2.8
 ----------------------------------
 obj=vehicle
+# cost=650000 ??
 cost=400000
 payload=108
 speed=75
 weight=8
+# runningcost=35 ??
 runningcost=20
 name=Karosa_B_941
+# intro_year=1996 ??
+# intro_month=1
+# retire_year=2001
+# retire_month=1
 intro_year=1997
 intro_month=1
 retire_year=1999
@@ -235,12 +248,20 @@ emptyimage[s]=skoda_11.4.7
 emptyimage[sw]=skoda_11.4.8
 ----------------------------------
 obj=vehicle
+# cost=283954 ??
+# cost=150000
 cost=284297
 payload=52
 speed=75
 weight=6
+# runningcost=15 ??
 runningcost=10
+fixed_cost=29
 name=Karosa_B_941_zadek
+# intro_year=1996 ???
+# intro_month=1
+# retire_year=2001
+# retire_month=1
 intro_year=1997
 intro_month=1
 retire_year=1999
