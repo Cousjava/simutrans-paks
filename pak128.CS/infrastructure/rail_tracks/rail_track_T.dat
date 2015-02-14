@@ -7,7 +7,7 @@
 # limit dany prazci neznamy
 obj=way
 name=rail_track_T_wooden_speepers
-copyright=JK271
+copyright=JK271+VTPsim
 waytype=track
 cost=32000
 maintenance=200
