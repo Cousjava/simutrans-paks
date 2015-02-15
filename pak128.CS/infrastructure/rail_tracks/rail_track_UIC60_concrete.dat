@@ -1,0 +1,40 @@
+# koleje s kolejnicemi UIC60 na betonovych prazcich
+# 60kg/bm
+# vyrabeno od 50. let 20 stoleti, u nas po 1989
+# max 25t na napravu 
+# max rychlost ?300km/h? (limit kolejnice);
+# limit dany prazci neznamy
+obj=way
+name=rail_track_UIC60_concrete_speepers
+copyright=JK271
+waytype=track
+cost=38400
+maintenance=200
+topspeed=200
+max_weight=150
+axle_load=25
+# na zapade jiz mnohem drive
+intro_year=1990
+icon=> rail_track_UIC60_concrete.0.6
+cursor=rail_track_UIC60_concrete.0.7,0,-16
+# summer images
+image[-][0]=rail_track_UIC60_concrete.1.0
+image[N][0]=rail_track_UIC60_concrete.1.1
+image[S][0]=rail_track_UIC60_concrete.1.2
+image[E][0]=rail_track_UIC60_concrete.1.3
+image[W][0]=rail_track_UIC60_concrete.1.4
+image[NS][0]=rail_track_UIC60_concrete.1.5
+image[EW][0]=rail_track_UIC60_concrete.1.6
+image[NSEW][0]=rail_track_UIC60_concrete.1.7
+image[NSW][0]=rail_track_UIC60_concrete.2.0
+image[NEW][0]=rail_track_UIC60_concrete.2.1
+image[NSE][0]=rail_track_UIC60_concrete.2.2
+image[SEW][0]=rail_track_UIC60_concrete.2.3
+image[NE][0]=rail_track_UIC60_concrete.2.4
+image[SE][0]=rail_track_UIC60_concrete.2.5
+image[NW][0]=rail_track_UIC60_concrete.2.6
+image[SW][0]=rail_track_UIC60_concrete.2.7
+imageUp[3][0]=rail_track_UIC60_concrete.3.0
+imageUp[6][0]=rail_track_UIC60_concrete.3.1
+imageUp[9][0]=rail_track_UIC60_concrete.3.2
+imageUp[12][0]=rail_track_UIC60_concrete.3.3
