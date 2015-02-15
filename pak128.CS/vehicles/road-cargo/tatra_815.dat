@@ -707,6 +707,7 @@ obj=vehicle
 
 -------------------------------------
 
+obj=vehicle
 cost=2458937
 speed=120
 weight=18
