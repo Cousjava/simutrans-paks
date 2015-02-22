@@ -1,9 +1,9 @@
 obj=vehicle
-cost=217892
+cost=238946
 payload=70
 speed=68
 weight=8
-runningcost=11
+runningcost=32
 fixed_cost=48
 name=skoda_706_RO_linkovy
 intro_year=1947
@@ -31,11 +31,11 @@ emptyimage[s]=RO.0.7
 emptyimage[sw]=RO.0.8
 ----------------------------------
 obj=vehicle
-cost=181150
+cost=223075
 payload=79
 speed=51
 weight=9
-runningcost=8
+runningcost=20
 fixed_cost=26
 name=skoda_706_RO_mestsky
 intro_year=1947
