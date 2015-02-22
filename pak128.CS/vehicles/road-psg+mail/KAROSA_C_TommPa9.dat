@@ -124,10 +124,12 @@ emptyimage[sw]=skoda.13.8
 ----------------------------------
 obj=vehicle
 # cost=771125 ???
+# cost=380000 ??
 cost=771898
 payload=61
 speed=106
 weight=10
+# runningcost=30
 runningcost=32
 name=Karosa_C_934
 smoke=Diesel

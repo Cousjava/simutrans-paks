@@ -91,10 +91,12 @@ emptyimage[sw]=skoda.12.8
 ----------------------------------
 
 obj=vehicle
+# cost=380000 ??
 cost=567432
 payload=94
 speed=78
 weight=10
+# runningcost=30
 runningcost=24
 fixed_cost=120
 name=Karosa_B_931
