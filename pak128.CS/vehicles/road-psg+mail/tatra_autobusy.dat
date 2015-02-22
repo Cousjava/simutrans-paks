@@ -1,9 +1,9 @@
 obj=vehicle
-cost=152008
+cost=206004
 payload=60
 speed=75
 weight=7
-runningcost=14
+runningcost=23
 fixed_cost=67
 name=TATRA_500_HB
 intro_year=1950
@@ -29,11 +29,11 @@ emptyimage[s]=hb500.0.7
 emptyimage[sw]=hb500.0.8
 -----------------------------------
 obj=vehicle
-cost=682948
+cost=816474
 payload=45
 speed=90
 weight=12
-runningcost=35
+runningcost=38
 fixed_cost=69
 name=TATRA_815_Bus
 intro_year=1983
