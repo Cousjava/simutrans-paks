@@ -1,0 +1,180 @@
+{
+    "comment": "This is a TileCutter Project file (JSON formatted). You may edit it by hand if you are careful.", 
+    "data": {
+        "dat": {
+            "dat_lump": "obj=factory\nname=Mall\ncopyright=VaclavMacurek\nproductivity=100\nrange=20\nInputGood[0]=clothes\nInputCapacity[0]=75\nInputFactor[0]=100\nInputSupplier[0]=0\nInputGood[1]=Buecher\nInputCapacity[1]=50\nInputFactor[1]=25\nInputSupplier[1]=0\nInputGood[2]=Hygiene-Artikel\nInputCapacity[2]=100\nInputFactor[2]=100\nInputSupplier[2]=0\nInputGood[3]=Kosmetik\nInputCapacity[3]=25\nInputFactor[3]=20\nInputSupplier[3]=0\nInputGood[4]=Unterhaltungselektronik\nInputCapacity[4]=100\nInputFactor[4]=50\nInputSupplier[4]=0\nInputGood[5]=Limonaden\nInputCapacity[5]=100\nInputFactor[5]=100\nInputSupplier[5]=0\nInputGood[6]=Gemuese\nInputCapacity[6]=150\nInputFactor[6]=100\nInputSupplier[6]=0\nInputGood[7]=fish\nInputCapacity[7]=150\nInputFactor[7]=25\nInputSupplier[7]=0\npax_level=20\nmail_boost=500\npassenger_boost=5000\nelectricity_boost=2500\nelectricity_amount=100\nlocation=City\ndistributionWeight=50\nintro_year=2000\nmapColor=91\nclimates=mediterran,temperate,tundra,rocky"
+        }, 
+        "dims": {
+            "directions": 4, 
+            "frames": 1, 
+            "frontimage": 0, 
+            "paksize": 96, 
+            "winter": 1, 
+            "x": 6, 
+            "y": 6, 
+            "z": 1
+        }, 
+        "files": {
+            "datfile_location": "Mall.dat", 
+            "datfile_write": true, 
+            "pakfile_location": "", 
+            "pngfile_location": "Mall_96.png"
+        }, 
+        "images": [
+            [
+                [
+                    [
+                        {
+                            "offset": [
+                                1152, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\ObchodniCentrum_96\\Mall_96-uncut.png"
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\ObchodniCentrum_96\\Mall_96-uncut.png"
+                        }
+                    ]
+                ], 
+                [
+                    [
+                        {
+                            "offset": [
+                                1152, 
+                                576
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\ObchodniCentrum_96\\Mall_96-uncut.png"
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\ObchodniCentrum_96\\Mall_96-uncut.png"
+                        }
+                    ]
+                ]
+            ], 
+            [
+                [
+                    [
+                        {
+                            "offset": [
+                                576, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\ObchodniCentrum_96\\Mall_96-uncut.png"
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\ObchodniCentrum_96\\Mall_96-uncut.png"
+                        }
+                    ]
+                ], 
+                [
+                    [
+                        {
+                            "offset": [
+                                576, 
+                                576
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\ObchodniCentrum_96\\Mall_96-uncut.png"
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\ObchodniCentrum_96\\Mall_96-uncut.png"
+                        }
+                    ]
+                ]
+            ], 
+            [
+                [
+                    [
+                        {
+                            "offset": [
+                                1728, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\ObchodniCentrum_96\\Mall_96-uncut.png"
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\ObchodniCentrum_96\\Mall_96-uncut.png"
+                        }
+                    ]
+                ], 
+                [
+                    [
+                        {
+                            "offset": [
+                                1728, 
+                                576
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\ObchodniCentrum_96\\Mall_96-uncut.png"
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\ObchodniCentrum_96\\Mall_96-uncut.png"
+                        }
+                    ]
+                ]
+            ], 
+            [
+                [
+                    [
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\ObchodniCentrum_96\\Mall_96-uncut.png"
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\ObchodniCentrum_96\\Mall_96-uncut.png"
+                        }
+                    ]
+                ], 
+                [
+                    [
+                        {
+                            "offset": [
+                                0, 
+                                576
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\ObchodniCentrum_96\\Mall_96-uncut.png"
+                        }, 
+                        {
+                            "offset": [
+                                0, 
+                                0
+                            ], 
+                            "path": "E:\\VENCA\\Simutrans\\ObchodniCentrum_96\\Mall_96-uncut.png"
+                        }
+                    ]
+                ]
+            ]
+        ]
+    }, 
+    "type": "TCP_JSON", 
+    "version": "0.6.1"
+}
