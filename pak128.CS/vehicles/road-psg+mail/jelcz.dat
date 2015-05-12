@@ -43,7 +43,6 @@ cost=160000
 payload=43
 speed=75
 weight=4
-good=Passagiere
 runningcost=8
 name=Jelcz_P_01
 intro_year=1956

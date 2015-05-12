@@ -2,7 +2,7 @@
 
 obj=vehicle
 name=obb_setra_s431dt
-type=diesel
+engine_type=diesel
 power=370
 gear=67
 Copyright=Lubak91

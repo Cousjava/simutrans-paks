@@ -35,8 +35,9 @@ cost=500
 is_signal=1
 intro_year = 1850
 intro_month = 1
-retire_year = 1940
+retire_year = 1970
 retire_month = 1
+offset_left=11
 # RED
 Image[0]=signals_2.1.0
 Image[1]=signals_2.1.2
@@ -59,8 +60,9 @@ cost=1000
 is_presignal=1
 intro_year = 1850
 intro_month = 1
-retire_year = 1940
+retire_year = 1970
 retire_month = 1
+offset_left=11
 # RED
 Image[0]=signals_2.3.0
 Image[1]=signals_2.3.2
@@ -89,8 +91,9 @@ is_signal=1
 is_longblocksignal=1
 intro_year = 1850
 intro_month = 1
-retire_year = 1940
+retire_year = 1970
 retire_month = 1
+offset_left=11
 # RED
 Image[0]=signals_2.6.0
 Image[1]=signals_2.6.2
@@ -114,8 +117,9 @@ is_signal=1
 free_route=1
 intro_year = 1850
 intro_month = 1
-retire_year = 1940
+retire_year = 1970
 retire_month = 1
+offset_left=11
 # RED
 Image[0]=signals_2.8.0
 Image[1]=signals_2.8.2
