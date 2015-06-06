@@ -98,7 +98,7 @@ echo Compilation Complete!
 echo =====================
 echo.
 
-goto :end
+goto end
 
 :abort
 echo ERROR: makeobj not found on root folder.
