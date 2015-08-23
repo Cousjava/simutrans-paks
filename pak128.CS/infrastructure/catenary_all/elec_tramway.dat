@@ -7,8 +7,6 @@ intro_year=1890
 retire_year=1960
 waytype=tram_track
 own_waytype=electrified_track
-system_type=7
-# restrict to trams
 copyright=VTPsim
 
 cursor=elec_tramway_plain[1]_1890.2.5
@@ -81,8 +79,6 @@ intro_year=1890
 retire_year=1960
 waytype=tram_track
 own_waytype=electrified_track
-system_type=7
-# restrict to trams
 copyright=VTPsim
 
 cursor=elec_tramway_plain[2]_1890.2.5
@@ -155,8 +151,6 @@ intro_year=1960
 retire_year=1980
 waytype=tram_track
 own_waytype=electrified_track
-system_type=7
-# restrict to trams
 copyright=VTPsim
 
 cursor=elec_tramway_plain[1]_1960.2.5
@@ -228,8 +222,6 @@ topspeed=100
 intro_year=1960
 waytype=tram_track
 own_waytype=electrified_track
-system_type=7
-# restrict to trams
 copyright=VTPsim
 
 cursor=elec_tramway_plain[2]_1960.2.5
@@ -302,8 +294,6 @@ intro_year=1980
 retire_year=2000
 waytype=tram_track
 own_waytype=electrified_track
-system_type=7
-# restrict to trams
 copyright=VTPsim
 
 cursor=elec_tramway_plain[1]_1980.2.5
@@ -375,8 +365,6 @@ topspeed=70
 intro_year=2000
 waytype=tram_track
 own_waytype=electrified_track
-system_type=7
-# restrict to trams
 copyright=VTPsim
 
 cursor=elec_tramway_plain[1]_2000.2.5
