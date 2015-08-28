@@ -1,0 +1,11 @@
+obj=building
+name=rodom_10
+copyright=VTPsim
+type=res
+level=4
+chance=402
+intro_year=1960
+retire_year=1993
+needs_ground=1
+backimage[0][0][0][0][0]=rodom_10.0.0
+

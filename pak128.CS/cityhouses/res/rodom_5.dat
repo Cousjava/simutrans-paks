@@ -3,9 +3,9 @@ name=rodom_5
 copyright=VTPsim
 type=res
 level=5
-chance=300
-intro_year=1970
-retire_year=1990
+chance=400
+intro_year=1960
+retire_year=1993
 needs_ground=1
-backimage[0][0][0][0][0]=rodom_5.1.0
+backimage[0][0][0][0][0]=rodom_5.0.0
 

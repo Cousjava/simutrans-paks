@@ -2,9 +2,9 @@ obj=building
 name=rodom_2
 copyright=VTPsim
 type=res
-level=5
-chance=200
-intro_year=1965
+level=7
+chance=400
+intro_year=1960
 retire_year=1993
-backimage[0][0][0][0][0]=rodom_2.1.0
+backimage[0][0][0][0][0]=rodom_2.0.0
 

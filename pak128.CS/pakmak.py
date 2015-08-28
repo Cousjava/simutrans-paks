@@ -1,4 +1,4 @@
-#! /usr/bin/python
+﻿#! /usr/bin/python
 #  -*- coding: utf-8 -*-
 #
 #  Vladimír Slávik 2008-2011
@@ -157,7 +157,7 @@ class Entry :
 			"REM" : [],
 		}
 		self.workdir = ""
-		self.data["OPTIONS"]["cmd"] = "makeobj"
+		self.data["OPTIONS"]["cmd"] = "Makeobj"
 		if parent != None :
 			self.inherit(parent)
 		if type(dir) == type("") :
@@ -301,7 +301,7 @@ try :
 	import subprocess
 	use_subprocess = True
 except :
-	print("Could not load module 'subprocess' - detection of makeobj errors does not work!")
+	print("Could not load module 'subprocess' - detection of Makeobj errors does not work!")
 	use_subprocess = False
 
 if os.path.exists(os.path.join(here, CONFIG_FILE_NAME)):
