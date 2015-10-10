@@ -21,6 +21,7 @@ has_snow[0]=1
 #intro_year=1920
 intro_year=1950
 mapColor=87
+needs_ground=1
 climates=mediterran,temperate,tundra
 dims=2,2,1
 BackImage[0][0][0][0][0][0]=FlaxFarm.0.0
