@@ -18,7 +18,7 @@
             "datfile_location": "DepartmentStore.dat", 
             "datfile_write": true, 
             "pakfile_location": "", 
-            "pngfile_location": "DepartmentStore_96.png"
+            "pngfile_location": "DepartmentStore.png"
         }, 
         "images": [
             [
@@ -29,14 +29,14 @@
                                 576, 
                                 0
                             ], 
-                            "path": "E:\\VENCA\\Simutrans\\ObchodniDum_96\\DepartmentStore_96-uncut.png"
+                            "path": "DepartmentStore-uncut.png"
                         }, 
                         {
                             "offset": [
                                 0, 
                                 0
                             ], 
-                            "path": "E:\\VENCA\\Simutrans\\ObchodniDum_96\\DepartmentStore_96-uncut.png"
+                            "path": "DepartmentStore-uncut.png"
                         }
                     ]
                 ], 
@@ -47,14 +47,14 @@
                                 576, 
                                 288
                             ], 
-                            "path": "E:\\VENCA\\Simutrans\\ObchodniDum_96\\DepartmentStore_96-uncut.png"
+                            "path": "DepartmentStore-uncut.png"
                         }, 
                         {
                             "offset": [
                                 0, 
                                 0
                             ], 
-                            "path": "E:\\VENCA\\Simutrans\\ObchodniDum_96\\DepartmentStore_96-uncut.png"
+                            "path": "DepartmentStore-uncut.png"
                         }
                     ]
                 ]
@@ -67,14 +67,14 @@
                                 864, 
                                 0
                             ], 
-                            "path": "E:\\VENCA\\Simutrans\\ObchodniDum_96\\DepartmentStore_96-uncut.png"
+                            "path": "DepartmentStore-uncut.png"
                         }, 
                         {
                             "offset": [
                                 0, 
                                 0
                             ], 
-                            "path": "E:\\VENCA\\Simutrans\\ObchodniDum_96\\DepartmentStore_96-uncut.png"
+                            "path": "DepartmentStore-uncut.png"
                         }
                     ]
                 ], 
@@ -85,14 +85,14 @@
                                 864, 
                                 288
                             ], 
-                            "path": "E:\\VENCA\\Simutrans\\ObchodniDum_96\\DepartmentStore_96-uncut.png"
+                            "path": "DepartmentStore-uncut.png"
                         }, 
                         {
                             "offset": [
                                 0, 
                                 0
                             ], 
-                            "path": "E:\\VENCA\\Simutrans\\ObchodniDum_96\\DepartmentStore_96-uncut.png"
+                            "path": "DepartmentStore-uncut.png"
                         }
                     ]
                 ]
@@ -105,14 +105,14 @@
                                 0, 
                                 0
                             ], 
-                            "path": "E:\\VENCA\\Simutrans\\ObchodniDum_96\\DepartmentStore_96-uncut.png"
+                            "path": "DepartmentStore-uncut.png"
                         }, 
                         {
                             "offset": [
                                 0, 
                                 0
                             ], 
-                            "path": "E:\\VENCA\\Simutrans\\ObchodniDum_96\\DepartmentStore_96-uncut.png"
+                            "path": "DepartmentStore-uncut.png"
                         }
                     ]
                 ], 
@@ -123,14 +123,14 @@
                                 0, 
                                 288
                             ], 
-                            "path": "E:\\VENCA\\Simutrans\\ObchodniDum_96\\DepartmentStore_96-uncut.png"
+                            "path": "DepartmentStore-uncut.png"
                         }, 
                         {
                             "offset": [
                                 0, 
                                 0
                             ], 
-                            "path": "E:\\VENCA\\Simutrans\\ObchodniDum_96\\DepartmentStore_96-uncut.png"
+                            "path": "DepartmentStore-uncut.png"
                         }
                     ]
                 ]
@@ -143,14 +143,14 @@
                                 288, 
                                 0
                             ], 
-                            "path": "E:\\VENCA\\Simutrans\\ObchodniDum_96\\DepartmentStore_96-uncut.png"
+                            "path": "DepartmentStore-uncut.png"
                         }, 
                         {
                             "offset": [
                                 0, 
                                 0
                             ], 
-                            "path": "E:\\VENCA\\Simutrans\\ObchodniDum_96\\DepartmentStore_96-uncut.png"
+                            "path": "DepartmentStore-uncut.png"
                         }
                     ]
                 ], 
@@ -161,14 +161,14 @@
                                 288, 
                                 288
                             ], 
-                            "path": "E:\\VENCA\\Simutrans\\ObchodniDum_96\\DepartmentStore_96-uncut.png"
+                            "path": "DepartmentStore-uncut.png"
                         }, 
                         {
                             "offset": [
                                 0, 
                                 0
                             ], 
-                            "path": "E:\\VENCA\\Simutrans\\ObchodniDum_96\\DepartmentStore_96-uncut.png"
+                            "path": "DepartmentStore-uncut.png"
                         }
                     ]
                 ]
