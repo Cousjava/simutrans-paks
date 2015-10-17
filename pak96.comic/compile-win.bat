@@ -28,6 +28,7 @@ makeobj.exe pak96 ./compiled/ ./city-and-landscape/buildings/com/
 makeobj.exe pak96 ./compiled/ ./city-and-landscape/buildings/cur/
 makeobj.exe pak96 ./compiled/ ./city-and-landscape/buildings/mon/
 makeobj.exe pak96 ./compiled/ ./city-and-landscape/buildings/res/
+makeobj.exe pak96 ./compiled/ ./city-and-landscape/ground/
 makeobj.exe pak96 ./compiled/ ./city-and-landscape/rivers/
 
 echo.

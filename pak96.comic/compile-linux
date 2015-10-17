@@ -32,6 +32,7 @@ if [ -e "makeobj" ]; then
     ./makeobj pak96 ./compiled/ ./city-and-landscape/buildings/cur/
     ./makeobj pak96 ./compiled/ ./city-and-landscape/buildings/mon/
     ./makeobj pak96 ./compiled/ ./city-and-landscape/buildings/res/
+    ./makeobj pak96 ./compiled/ ./city-and-landscape/ground/
     ./makeobj pak96 ./compiled/ ./city-and-landscape/rivers/
 
     echo
