@@ -1,6 +1,6 @@
 obj=factory
 name=ClothingFactory
-copyright=VaclavMacurek
+copyright=VaclavMacurek & An_dz
 productivity=60
 range=30
 InputGood[0]=linen

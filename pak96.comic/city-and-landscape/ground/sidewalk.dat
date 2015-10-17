@@ -1,5 +1,6 @@
 obj=misc
 name=Sidewalk
+copyright=An_dz
 Image[0]=sidewalk.0.0
 Image[1]=sidewalk.1.0
 Image[2]=sidewalk.0,0

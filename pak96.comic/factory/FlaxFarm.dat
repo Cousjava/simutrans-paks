@@ -1,6 +1,6 @@
 obj=factory
 name=FlaxFarm
-copyright=VaclavMacurek
+copyright=VaclavMacurek & An_dz
 productivity=38
 range=50
 OutputGood[0]=linen
