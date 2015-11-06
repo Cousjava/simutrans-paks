@@ -3,7 +3,6 @@ cost=1056200
 payload=95
 speed=80
 weight=20
-good=Passagiere
 runningcost=22
 name=ZD_810
 intro_year=2004

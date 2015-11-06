@@ -3,7 +3,6 @@ cost=1022800
 payload=95
 speed=80
 weight=20
-good=Passagiere
 runningcost=23
 name=ZSR_810
 intro_year=1996

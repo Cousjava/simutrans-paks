@@ -3,7 +3,6 @@ cost=1209000
 payload=94
 speed=80
 weight=24
-good=Passagiere
 runningcost=32
 name=ZSR_811
 intro_year=1996

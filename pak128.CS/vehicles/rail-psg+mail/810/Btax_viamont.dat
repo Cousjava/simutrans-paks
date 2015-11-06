@@ -4,7 +4,6 @@ cost=803200
 payload=104
 speed=80
 weight=15
-good=Passagiere
 runningcost=9
 name=Viamont_010-3
 intro_year=2009

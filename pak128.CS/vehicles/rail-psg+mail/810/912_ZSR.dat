@@ -3,7 +3,6 @@ cost=1176800
 payload=102
 speed=80
 weight=16
-good=Passagiere
 runningcost=4
 name=ZSR_912
 intro_year=1996

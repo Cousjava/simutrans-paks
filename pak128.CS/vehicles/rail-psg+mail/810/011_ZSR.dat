@@ -4,7 +4,6 @@ cost=805800
 payload=104
 speed=80
 weight=15
-good=Passagiere
 runningcost=10
 name=ZSR_011-1
 intro_year=1996
