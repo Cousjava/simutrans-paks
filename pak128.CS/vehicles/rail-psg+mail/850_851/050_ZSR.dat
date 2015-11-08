@@ -5,7 +5,6 @@ cost=1580800
 payload=134
 speed=120
 weight=32
-good=Passagiere
 runningcost=15
 name=ZSR_050
 intro_year=1996
