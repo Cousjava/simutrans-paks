@@ -23,13 +23,13 @@ copyright=TommPa9
 Constraint[Prev][0]=none
 Constraint[Next][0]=none
 
-emptyimage[w]=skoda.1.1
-emptyimage[nw]=skoda.1.2
-emptyimage[n]=skoda.1.3
-emptyimage[ne]=skoda.1.4
-emptyimage[e]=skoda.1.5
-emptyimage[se]=skoda.1.6
-emptyimage[s]=skoda.1.7
-emptyimage[sw]=skoda.1.8
+emptyimage[w]=busy_TommPa9_1.1.1
+emptyimage[nw]=busy_TommPa9_1.1.2
+emptyimage[n]=busy_TommPa9_1.1.3
+emptyimage[ne]=busy_TommPa9_1.1.4
+emptyimage[e]=busy_TommPa9_1.1.5
+emptyimage[se]=busy_TommPa9_1.1.6
+emptyimage[s]=busy_TommPa9_1.1.7
+emptyimage[sw]=busy_TommPa9_1.1.8
 
 ----------------------------------

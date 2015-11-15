@@ -21,14 +21,14 @@ gear=54
 Constraint[Prev][0]=none
 Constraint[Next][0]=none
 
-emptyimage[w]=skoda.9.1
-emptyimage[nw]=skoda.9.2
-emptyimage[n]=skoda.9.3
-emptyimage[ne]=skoda.9.4
-emptyimage[e]=skoda.9.5
-emptyimage[se]=skoda.9.6
-emptyimage[s]=skoda.9.7
-emptyimage[sw]=skoda.9.8
+emptyimage[w]=busy_TommPa9_1.9.1
+emptyimage[nw]=busy_TommPa9_1.9.2
+emptyimage[n]=busy_TommPa9_1.9.3
+emptyimage[ne]=busy_TommPa9_1.9.4
+emptyimage[e]=busy_TommPa9_1.9.5
+emptyimage[se]=busy_TommPa9_1.9.6
+emptyimage[s]=busy_TommPa9_1.9.7
+emptyimage[sw]=busy_TommPa9_1.9.8
 -----------------------------------
 obj=vehicle
 # cost=650000 ??
@@ -48,14 +48,14 @@ copyright=TommPa9
 Constraint[Prev][0]=none
 Constraint[Next][0]=Irisbus_Citelis_18_M_zadek
 
-emptyimage[w]=skoda.10.1
-emptyimage[nw]=skoda.10.2
-emptyimage[n]=skoda.10.3
-emptyimage[ne]=skoda.10.4
-emptyimage[e]=skoda.10.5
-emptyimage[se]=skoda.10.6
-emptyimage[s]=skoda.10.7
-emptyimage[sw]=skoda.10.8
+emptyimage[w]=busy_TommPa9_1.10.1
+emptyimage[nw]=busy_TommPa9_1.10.2
+emptyimage[n]=busy_TommPa9_1.10.3
+emptyimage[ne]=busy_TommPa9_1.10.4
+emptyimage[e]=busy_TommPa9_1.10.5
+emptyimage[se]=busy_TommPa9_1.10.6
+emptyimage[s]=busy_TommPa9_1.10.7
+emptyimage[sw]=busy_TommPa9_1.10.8
 ----------------------------------
 obj=vehicle
 # cost=150000
@@ -79,12 +79,12 @@ gear=62
 Constraint[Prev][0]=Irisbus_Citelis_18_M
 Constraint[Next][0]=none
 
-emptyimage[w]=skoda.11.1
-emptyimage[nw]=skoda.11.2
-emptyimage[n]=skoda.11.3
-emptyimage[ne]=skoda.11.4
-emptyimage[e]=skoda.11.5
-emptyimage[se]=skoda.11.6
-emptyimage[s]=skoda.11.7
-emptyimage[sw]=skoda.11.8
+emptyimage[w]=busy_TommPa9_1.11.1
+emptyimage[nw]=busy_TommPa9_1.11.2
+emptyimage[n]=busy_TommPa9_1.11.3
+emptyimage[ne]=busy_TommPa9_1.11.4
+emptyimage[e]=busy_TommPa9_1.11.5
+emptyimage[se]=busy_TommPa9_1.11.6
+emptyimage[s]=busy_TommPa9_1.11.7
+emptyimage[sw]=busy_TommPa9_1.11.8
 -------------------------------------------

@@ -49,14 +49,14 @@ copyright=TommPa9
 Constraint[Prev][0]=none
 Constraint[Next][0]=none
 
-emptyimage[w]=skoda.2.1
-emptyimage[nw]=skoda.2.2
-emptyimage[n]=skoda.2.3
-emptyimage[ne]=skoda.2.4
-emptyimage[e]=skoda.2.5
-emptyimage[se]=skoda.2.6
-emptyimage[s]=skoda.2.7
-emptyimage[sw]=skoda.2.8
+emptyimage[w]=busy_TommPa9_1.2.1
+emptyimage[nw]=busy_TommPa9_1.2.2
+emptyimage[n]=busy_TommPa9_1.2.3
+emptyimage[ne]=busy_TommPa9_1.2.4
+emptyimage[e]=busy_TommPa9_1.2.5
+emptyimage[se]=busy_TommPa9_1.2.6
+emptyimage[s]=busy_TommPa9_1.2.7
+emptyimage[sw]=busy_TommPa9_1.2.8
 
 -----------------------------------
 
@@ -83,14 +83,14 @@ gear=53
 Constraint[Prev][0]=none
 Constraint[Next][0]=none
 
-emptyimage[w]=skoda.3.1
-emptyimage[nw]=skoda.3.2
-emptyimage[n]=skoda.3.3
-emptyimage[ne]=skoda.3.4
-emptyimage[e]=skoda.3.5
-emptyimage[se]=skoda.3.6
-emptyimage[s]=skoda.3.7
-emptyimage[sw]=skoda.3.8
+emptyimage[w]=busy_TommPa9_1.3.1
+emptyimage[nw]=busy_TommPa9_1.3.2
+emptyimage[n]=busy_TommPa9_1.3.3
+emptyimage[ne]=busy_TommPa9_1.3.4
+emptyimage[e]=busy_TommPa9_1.3.5
+emptyimage[se]=busy_TommPa9_1.3.6
+emptyimage[s]=busy_TommPa9_1.3.7
+emptyimage[sw]=busy_TommPa9_1.3.8
 
 --------------------------------
 
@@ -117,14 +117,14 @@ copyright=TommPa9
 Constraint[Prev][0]=none
 Constraint[Next][0]=none
 
-emptyimage[w]=skoda.4.1
-emptyimage[nw]=skoda.4.2
-emptyimage[n]=skoda.4.3
-emptyimage[ne]=skoda.4.4
-emptyimage[e]=skoda.4.5
-emptyimage[se]=skoda.4.6
-emptyimage[s]=skoda.4.7
-emptyimage[sw]=skoda.4.8
+emptyimage[w]=busy_TommPa9_1.4.1
+emptyimage[nw]=busy_TommPa9_1.4.2
+emptyimage[n]=busy_TommPa9_1.4.3
+emptyimage[ne]=busy_TommPa9_1.4.4
+emptyimage[e]=busy_TommPa9_1.4.5
+emptyimage[se]=busy_TommPa9_1.4.6
+emptyimage[s]=busy_TommPa9_1.4.7
+emptyimage[sw]=busy_TommPa9_1.4.8
 
 ---------------------------------
 
@@ -148,14 +148,14 @@ copyright=TommPa9
 Constraint[Prev][0]=none
 Constraint[Next][0]=Solaris_Urbino_18_zadek
 
-emptyimage[w]=skoda.7.1
-emptyimage[nw]=skoda.7.2
-emptyimage[n]=skoda.7.3
-emptyimage[ne]=skoda.7.4
-emptyimage[e]=skoda.7.5
-emptyimage[se]=skoda.7.6
-emptyimage[s]=skoda.7.7
-emptyimage[sw]=skoda.7.8
+emptyimage[w]=busy_TommPa9_1.7.1
+emptyimage[nw]=busy_TommPa9_1.7.2
+emptyimage[n]=busy_TommPa9_1.7.3
+emptyimage[ne]=busy_TommPa9_1.7.4
+emptyimage[e]=busy_TommPa9_1.7.5
+emptyimage[se]=busy_TommPa9_1.7.6
+emptyimage[s]=busy_TommPa9_1.7.7
+emptyimage[sw]=busy_TommPa9_1.7.8
 
 ----------------------------------
 
@@ -183,13 +183,13 @@ copyright=TommPa9
 Constraint[Prev][0]=Solaris_Urbino_18
 Constraint[Next][0]=none
 
-emptyimage[w]=skoda.8.1
-emptyimage[nw]=skoda.8.2
-emptyimage[n]=skoda.8.3
-emptyimage[ne]=skoda.8.4
-emptyimage[e]=skoda.8.5
-emptyimage[se]=skoda.8.6
-emptyimage[s]=skoda.8.7
-emptyimage[sw]=skoda.8.8
+emptyimage[w]=busy_TommPa9_1.8.1
+emptyimage[nw]=busy_TommPa9_1.8.2
+emptyimage[n]=busy_TommPa9_1.8.3
+emptyimage[ne]=busy_TommPa9_1.8.4
+emptyimage[e]=busy_TommPa9_1.8.5
+emptyimage[se]=busy_TommPa9_1.8.6
+emptyimage[s]=busy_TommPa9_1.8.7
+emptyimage[sw]=busy_TommPa9_1.8.8
 
 -----------------------------------

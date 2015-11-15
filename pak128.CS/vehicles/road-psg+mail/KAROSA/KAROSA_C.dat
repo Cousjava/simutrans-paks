@@ -17,14 +17,14 @@ copyright=TommPa9
 Constraint[Prev][0]=none
 Constraint[Next][0]=Karosa_C_744_zadek
 
-emptyimage[w]=skoda.16.1
-emptyimage[nw]=skoda.16.2
-emptyimage[n]=skoda.16.3
-emptyimage[ne]=skoda.16.4
-emptyimage[e]=skoda.16.5
-emptyimage[se]=skoda.16.6
-emptyimage[s]=skoda.16.7
-emptyimage[sw]=skoda.16.8
+emptyimage[w]=busy_TommPa9_1.16.1
+emptyimage[nw]=busy_TommPa9_1.16.2
+emptyimage[n]=busy_TommPa9_1.16.3
+emptyimage[ne]=busy_TommPa9_1.16.4
+emptyimage[e]=busy_TommPa9_1.16.5
+emptyimage[se]=busy_TommPa9_1.16.6
+emptyimage[s]=busy_TommPa9_1.16.7
+emptyimage[sw]=busy_TommPa9_1.16.8
 
 ----------------------------------
 
@@ -49,14 +49,14 @@ gear=65
 copyright=TommPa9
 Constraint[Prev][0]=Karosa_C_744
 Constraint[Next][0]=none
-emptyimage[w]=skoda.17.1
-emptyimage[nw]=skoda.17.2
-emptyimage[n]=skoda.17.3
-emptyimage[ne]=skoda.17.4
-emptyimage[e]=skoda.17.5
-emptyimage[se]=skoda.17.6
-emptyimage[s]=skoda.17.7
-emptyimage[sw]=skoda.17.8
+emptyimage[w]=busy_TommPa9_1.17.1
+emptyimage[nw]=busy_TommPa9_1.17.2
+emptyimage[n]=busy_TommPa9_1.17.3
+emptyimage[ne]=busy_TommPa9_1.17.4
+emptyimage[e]=busy_TommPa9_1.17.5
+emptyimage[se]=busy_TommPa9_1.17.6
+emptyimage[s]=busy_TommPa9_1.17.7
+emptyimage[sw]=busy_TommPa9_1.17.8
 
 -----------------------------
 
@@ -78,14 +78,14 @@ copyright=TommPa9
 Constraint[Prev][0]=none
 Constraint[Next][0]=Karosa_C_943_zadek
 
-emptyimage[w]=skoda_11.6.1
-emptyimage[nw]=skoda_11.6.2
-emptyimage[n]=skoda_11.6.3
-emptyimage[ne]=skoda_11.6.4
-emptyimage[e]=skoda_11.6.5
-emptyimage[se]=skoda_11.6.6
-emptyimage[s]=skoda_11.6.7
-emptyimage[sw]=skoda_11.6.8
+emptyimage[w]=busy_TommPa9_2.6.1
+emptyimage[nw]=busy_TommPa9_2.6.2
+emptyimage[n]=busy_TommPa9_2.6.3
+emptyimage[ne]=busy_TommPa9_2.6.4
+emptyimage[e]=busy_TommPa9_2.6.5
+emptyimage[se]=busy_TommPa9_2.6.6
+emptyimage[s]=busy_TommPa9_2.6.7
+emptyimage[sw]=busy_TommPa9_2.6.8
 
 ----------------------------------
 
@@ -111,13 +111,13 @@ copyright=TommPa9
 Constraint[Prev][0]=Karosa_C_943
 Constraint[Next][0]=none
 
-emptyimage[w]=skoda_11.7.1
-emptyimage[nw]=skoda_11.7.2
-emptyimage[n]=skoda_11.7.3
-emptyimage[ne]=skoda_11.7.4
-emptyimage[e]=skoda_11.7.5
-emptyimage[se]=skoda_11.7.6
-emptyimage[s]=skoda_11.7.7
-emptyimage[sw]=skoda_11.7.8
+emptyimage[w]=busy_TommPa9_2.7.1
+emptyimage[nw]=busy_TommPa9_2.7.2
+emptyimage[n]=busy_TommPa9_2.7.3
+emptyimage[ne]=busy_TommPa9_2.7.4
+emptyimage[e]=busy_TommPa9_2.7.5
+emptyimage[se]=busy_TommPa9_2.7.6
+emptyimage[s]=busy_TommPa9_2.7.7
+emptyimage[sw]=busy_TommPa9_2.7.8
 
 ---------------------------------------
