@@ -1,0 +1,153 @@
+obj=citycar
+speed=135
+name=Renault Trafic (Cerveny)
+intro_year=2001
+retire_year=2020
+DistributionWeight=2
+copyright=P4T SK1LL3R
+
+image[ne]=Renault Trafic c.0.1
+image[sw]=Renault Trafic c.0.0
+image[se]=Renault Trafic c.0.2
+image[nw]=Renault Trafic c.0.3
+image[s]=Renault Trafic c.0.4
+image[e]=Renault Trafic c.0.5
+image[w]=Renault Trafic c.0.6
+image[n]=Renault Trafic c.0.7
+----------------------------------------------
+obj=citycar
+speed=135
+name=Renault Trafic (modry)
+intro_year=2001
+retire_year=2020
+DistributionWeight=1
+copyright=P4T SK1LL3R
+
+image[ne]=Renault Trafic m.0.1
+image[sw]=Renault Trafic m.0.0
+image[se]=Renault Trafic m.0.2
+image[nw]=Renault Trafic m.0.3
+image[s]=Renault Trafic m.0.4
+image[e]=Renault Trafic m.0.5
+image[w]=Renault Trafic m.0.6
+image[n]=Renault Trafic m.0.7
+----------------------------------------------
+obj=citycar
+speed=135
+name=Renault Trafic (biely)
+intro_year=2001
+retire_year=2020
+DistributionWeight=2
+copyright=P4T SK1LL3R
+
+image[ne]=Renault Trafic b.0.1
+image[sw]=Renault Trafic b.0.0
+image[se]=Renault Trafic b.0.2
+image[nw]=Renault Trafic b.0.3
+image[s]=Renault Trafic b.0.4
+image[e]=Renault Trafic b.0.5
+image[w]=Renault Trafic b.0.6
+image[n]=Renault Trafic b.0.7
+----------------------------------------------
+obj=citycar
+speed=210
+name=Mercedes G500 (Biely)
+intro_year=2010
+retire_year=2030
+DistributionWeight=2
+copyright=P4T SK1LL3R
+
+image[ne]=Mercedces G500biely.0.1
+image[sw]=Mercedces G500biely.0.0
+image[se]=Mercedces G500biely.0.2
+image[nw]=Mercedces G500biely.0.3
+image[s]=Mercedces G500biely.0.4
+image[e]=Mercedces G500biely.0.5
+image[w]=Mercedces G500biely.0.6
+image[n]=Mercedces G500biely.0.7
+----------------------------------------------
+obj=citycar
+speed=210
+name=Mercedes G500 (cierny)
+intro_year=2010
+retire_year=2030
+DistributionWeight=2
+copyright=P4T SK1LL3R
+
+image[ne]=Mercedces G500cierny.0.1
+image[sw]=Mercedces G500cierny.0.0
+image[se]=Mercedces G500cierny.0.2
+image[nw]=Mercedces G500cierny.0.3
+image[s]=Mercedces G500cierny.0.4
+image[e]=Mercedces G500cierny.0.5
+image[w]=Mercedces G500cierny.0.6
+image[n]=Mercedces G500cierny.0.7
+----------------------------------------------
+obj=citycar
+speed=210
+name=Mercedes G500 (Hnedy)
+intro_year=2010
+retire_year=2030
+DistributionWeight=1
+copyright=P4T SK1LL3R
+
+image[ne]=Mercedces G500hnedy.0.1
+image[sw]=Mercedces G500hnedy.0.0
+image[se]=Mercedces G500hnedy.0.2
+image[nw]=Mercedces G500hnedy.0.3
+image[s]=Mercedces G500hnedy.0.4
+image[e]=Mercedces G500hnedy.0.5
+image[w]=Mercedces G500hnedy.0.6
+image[n]=Mercedces G500hnedy.0.7
+----------------------------------------------
+obj=citycar
+speed=130
+name=Skoda 120L (zelena)
+intro_year=1976
+retire_year=1987
+DistributionWeight=2
+copyright=P4T SK1LL3R
+
+image[ne]=Skoda 120Lzelena.0.0
+image[sw]=Skoda 120Lzelena.0.1
+image[se]=Skoda 120Lzelena.0.2
+image[nw]=Skoda 120Lzelena.0.3
+image[s]=Skoda 120Lzelena.0.4
+image[e]=Skoda 120Lzelena.0.5
+image[w]=Skoda 120Lzelena.0.6
+image[n]=Skoda 120Lzelena.0.7
+----------------------------------------------
+obj=citycar
+speed=130
+name=Skoda 120L (modra)
+intro_year=1976
+retire_year=1987
+DistributionWeight=2
+copyright=P4T SK1LL3R
+
+image[ne]=Skoda 120Lmodra.0.0
+image[sw]=Skoda 120Lmodra.0.1
+image[se]=Skoda 120Lmodra.0.2
+image[nw]=Skoda 120Lmodra.0.3
+image[s]=Skoda 120Lmodra.0.4
+image[e]=Skoda 120Lmodra.0.5
+image[w]=Skoda 120Lmodra.0.6
+image[n]=Skoda 120Lmodra.0.7
+----------------------------------------------
+obj=citycar
+speed=130
+name=Skoda 120L (telova)
+intro_year=1976
+retire_year=1987
+DistributionWeight=2
+copyright=P4T SK1LL3R
+
+image[ne]=Skoda 120Ltelova.0.0
+image[sw]=Skoda 120Ltelova.0.1
+image[se]=Skoda 120Ltelova.0.2
+image[nw]=Skoda 120Ltelova.0.3
+image[s]=Skoda 120Ltelova.0.4
+image[e]=Skoda 120Ltelova.0.5
+image[w]=Skoda 120Ltelova.0.6
+image[n]=Skoda 120Ltelova.0.7
+----------------------------------------------
