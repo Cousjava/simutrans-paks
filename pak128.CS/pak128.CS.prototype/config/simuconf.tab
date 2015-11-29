@@ -213,6 +213,13 @@ allow_buying_obsolete_vehicles = 1
 # The loss is given in 1/1000th, i.e 300 means the remaining value will be 70%.
 used_vehicle_reduction = 150
 
+# if a convoy runs on a way that belongs to another player, toll may
+# be charged. The number given is the percentage of the running cost
+# of the convoy or the way cost (include electrification if needed).
+# (default 0)
+toll_runningcost_percentage = 1
+toll_waycost_percentage = 1
+
 # Maintenance costs of buildings
 maintenance_building = 1800
 
@@ -249,6 +256,8 @@ cost_multiply_remove_haus = 1000
 cost_transformer=2500
 cost_maintain_transformer=100
 
+# if set, no lakes will be created at all
+no_lakes = 0
 
 #################################  time settings  ##############################
 
