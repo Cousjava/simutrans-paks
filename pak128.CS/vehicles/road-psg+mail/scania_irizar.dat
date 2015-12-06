@@ -4,6 +4,7 @@ payload=63
 speed=120
 weight=15
 runningcost=56
+fixed_cost=430
 name=Scania_Irizar_15M
 intro_year=2007
 intro_month=11

@@ -4,6 +4,7 @@ payload=60
 speed=100
 weight=16
 runningcost=31
+fixed_cost=198
 name=SOLARIS_URBINO_8.9_LE
 intro_year=2008
 intro_month=1

@@ -4,6 +4,7 @@ payload=96
 speed=100
 weight=11
 runningcost=26
+fixed_cost=166
 name=Mercedes-Benz_Conecto_C
 intro_year=2000
 intro_month=12

@@ -4,6 +4,7 @@ payload=63
 speed=80
 weight=7
 runningcost=18
+fixed_cost=92
 name=SOR_BN_8.5
 intro_year=2010
 intro_month=1

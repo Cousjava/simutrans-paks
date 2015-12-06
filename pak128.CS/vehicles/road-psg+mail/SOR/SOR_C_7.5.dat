@@ -4,6 +4,7 @@ payload=44
 speed=80
 weight=6
 runningcost=13
+fixed_cost=67
 name=SOR_C_7.5
 intro_year=1993
 intro_month=12

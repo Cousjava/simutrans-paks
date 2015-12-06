@@ -4,6 +4,7 @@ payload=70
 speed=78
 weight=9
 runningcost=22
+fixed_cost=110
 name=skoda_706_RTO
 smoke=Diesel
 #intro_year=1956

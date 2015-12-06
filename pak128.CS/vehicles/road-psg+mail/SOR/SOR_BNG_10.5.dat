@@ -4,6 +4,7 @@ payload=90
 speed=100
 weight=9
 runningcost=17
+fixed_cost=109
 name=SOR_BNG_10.5
 intro_year=2012
 intro_month=1

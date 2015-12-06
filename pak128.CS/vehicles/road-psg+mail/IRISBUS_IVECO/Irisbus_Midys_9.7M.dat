@@ -4,6 +4,7 @@ payload=39
 speed=100
 weight=9
 runningcost=31
+fixed_cost=198
 name=Irisbus_Midys_9.7M
 intro_year=2004
 intro_month=1

@@ -4,6 +4,7 @@ payload=46
 speed=100
 weight=8
 runningcost=30
+fixed_cost=192
 name=SOR_LC_10.5
 intro_year=2011
 intro_month=1

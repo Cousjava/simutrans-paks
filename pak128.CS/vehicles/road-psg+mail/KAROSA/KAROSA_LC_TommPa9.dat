@@ -4,6 +4,7 @@ payload=44
 speed=100
 weight=12
 runningcost=30
+fixed_cost=192
 name=Karosa_LC_736
 intro_year=1984
 intro_month=1

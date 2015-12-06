@@ -4,6 +4,7 @@ payload=53
 speed=100
 weight=13
 runningcost=47
+fixed_cost=301
 name=IVECO_Magelys_PRO_12.2M
 intro_year=2014
 intro_month=9

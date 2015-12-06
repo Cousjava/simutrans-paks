@@ -4,6 +4,7 @@ payload=95
 speed=100
 weight=11
 runningcost=33
+fixed_cost=211
 name=MAN_Lion's_City
 intro_year=2005
 intro_month=1
