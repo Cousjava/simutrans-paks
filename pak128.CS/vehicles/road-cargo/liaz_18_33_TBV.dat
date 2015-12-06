@@ -4,6 +4,7 @@ cost=665000
 speed=114
 weight=7
 runningcost=51
+fixed_cost=372
 gear=63
 name=liaz_18.33_TBV
 intro_year=1991

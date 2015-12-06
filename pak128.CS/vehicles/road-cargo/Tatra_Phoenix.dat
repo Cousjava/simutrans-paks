@@ -1,9 +1,11 @@
+# @spotreba=50l
 obj=vehicle
 cost=3500000
 speed=95
 power=375
 weight=18
 runningcost=108
+fixed_cost=657
 name=Tatra_Phoenix 
 intro_year=2011
 intro_month=11

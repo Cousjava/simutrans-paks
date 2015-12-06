@@ -3,6 +3,7 @@ cost=329104
 speed=80
 weight=7
 runningcost=25
+fixed_cost=128
 gear=70
 name=skoda_706_MTTN
 intro_year=1966

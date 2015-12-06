@@ -3,6 +3,7 @@ cost=1022820
 speed=121
 weight=8
 runningcost=69
+fixed_cost=534
 gear=60
 name=Liaz_19.40_Skoda_Xena
 intro_year=1996

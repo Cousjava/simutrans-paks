@@ -4,6 +4,7 @@ cost=2601094
 speed=130
 weight=16
 runningcost=88
+fixed_cost=732
 gear=60
 name=DAF_XF_Euro6_
 intro_year=2013

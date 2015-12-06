@@ -4,6 +4,7 @@ payload=12
 speed=90
 weight=8
 runningcost=135
+fixed_cost=778
 gear=56
 name=Liaz_110.010_mleko
 intro_month=1

@@ -4,6 +4,7 @@ payload=12
 speed=90
 weight=8
 runningcost=135
+fixed_cost=778
 name=Liaz_151.261_obili
 intro_month=1
 intro_year=1974

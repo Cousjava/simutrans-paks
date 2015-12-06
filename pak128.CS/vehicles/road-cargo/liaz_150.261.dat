@@ -4,6 +4,7 @@ payload=7
 speed=90
 weight=7
 runningcost=135
+fixed_cost=778
 gear=54
 name=Liaz_150.261_uhli
 intro_month=1

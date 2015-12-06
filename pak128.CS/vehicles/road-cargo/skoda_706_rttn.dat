@@ -4,6 +4,7 @@ cost=327765
 speed=80
 weight=7
 runningcost=25
+fixed_cost=25
 gear=70
 name=skoda_706_RTTN
 intro_year=1958

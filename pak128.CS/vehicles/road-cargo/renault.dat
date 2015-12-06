@@ -4,6 +4,7 @@ cost=4160996
 speed=130
 weight=19
 runningcost=118
+fixed_cost=982
 gear=68
 name=renault_magnum
 intro_year=1998

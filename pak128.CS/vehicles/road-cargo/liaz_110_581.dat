@@ -4,6 +4,7 @@ cost=566785
 speed=98
 weight=7
 runningcost=44
+fixed_cost=276
 gear=63
 name=liaz_110.581
 intro_year=1974
