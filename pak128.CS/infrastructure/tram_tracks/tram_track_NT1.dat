@@ -1,0 +1,40 @@
+# žlábkové kolejnice NT1
+# v Praze, od poloviny 60. let do současnosti
+# 65.07kg/bm
+# @zdroj=http://www.trz.cz/pdf/Kolejnice_2010.pdf,slide 8 (hmotnost,tvar kolejnice)
+obj=way
+name=tram_track_NT1_no_sleepers
+copyright=JK271
+waytype=track
+system_type=7
+cost=41645
+maintenance=200
+# overit max.rychlost
+topspeed=120
+max_weight=150
+axle_load=20
+intro_year=1965
+retire_year=2050
+icon=> tram_track_S49_no_sleepers.0.6
+cursor=tram_track_S49_no_sleepers.0.7,0,-16
+image[-][0]   =tram_track_S49_no_sleepers.1.0
+image[N][0]   =tram_track_S49_no_sleepers.1.1
+image[S][0]   =tram_track_S49_no_sleepers.1.2
+image[E][0]   =tram_track_S49_no_sleepers.1.3
+image[W][0]   =tram_track_S49_no_sleepers.1.4
+image[NS][0]  =tram_track_S49_no_sleepers.1.5
+image[EW][0]  =tram_track_S49_no_sleepers.1.6
+image[NSEW][0]=tram_track_S49_no_sleepers.1.7
+image[NSW][0] =tram_track_S49_no_sleepers.2.0
+image[NEW][0] =tram_track_S49_no_sleepers.2.1
+image[NSE][0] =tram_track_S49_no_sleepers.2.2
+image[SEW][0] =tram_track_S49_no_sleepers.2.3
+image[NE][0]  =tram_track_S49_no_sleepers.2.4
+image[SE][0]  =tram_track_S49_no_sleepers.2.5
+image[NW][0]  =tram_track_S49_no_sleepers.2.6
+image[SW][0]  =tram_track_S49_no_sleepers.2.7
+imageUp[3][0] =tram_track_S49_no_sleepers.3.0
+imageUp[6][0] =tram_track_S49_no_sleepers.3.1
+imageUp[9][0] =tram_track_S49_no_sleepers.3.2
+imageUp[12][0]=tram_track_S49_no_sleepers.3.3
+--------------------
