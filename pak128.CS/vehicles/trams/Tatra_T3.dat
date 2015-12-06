@@ -11,7 +11,8 @@ weight=16
 power=160
 gear=130
 length=11
-RunningCost=24
+runningCost=24
+fixed_cost=100
 intro_year=1961
 retire_year=2011
 

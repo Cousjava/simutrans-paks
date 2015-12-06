@@ -4,6 +4,7 @@ payload=115
 speed=65
 weight=20
 runningcost=26
+fixed_cost=108
 name=Tatra_T6A5
 intro_year=1991
 intro_month=1

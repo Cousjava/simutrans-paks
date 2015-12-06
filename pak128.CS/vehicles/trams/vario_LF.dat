@@ -4,6 +4,7 @@ payload=116
 speed=65
 weight=21
 runningcost=14
+fixed_cost=58
 name=vario_LF
 intro_year=2005
 intro_month=1

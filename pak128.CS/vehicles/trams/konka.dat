@@ -37,6 +37,8 @@ emptyimage[se]=kun_konka.0.5
 emptyimage[s]=kun_konka.0.6
 emptyimage[sw]=kun_konka.0.7
 ------------------------------
+# @cena=1450K(1913)
+# cena je za pár tažných koní
 obj=vehicle
 cost=7000
 speed=15

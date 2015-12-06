@@ -4,6 +4,7 @@ payload=95
 speed=60
 weight=16
 runningcost=14
+fixed_cost=54
 name=Tatra_T1
 intro_year=1952
 intro_month=1
