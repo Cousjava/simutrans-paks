@@ -59,6 +59,7 @@ DIRS128VEHICLES += road-psg+mail/IRISBUS_IVECO
 DIRS128VEHICLES += road-psg+mail/KAROSA
 DIRS128VEHICLES += road-psg+mail/LaK
 DIRS128VEHICLES += road-psg+mail/MERCEDES-BENZ
+DIRS128VEHICLES += road-psg+mail/MAN
 DIRS128VEHICLES += road-psg+mail/PRAGA
 DIRS128VEHICLES += road-psg+mail/SKODA
 DIRS128VEHICLES += road-psg+mail/SOR
