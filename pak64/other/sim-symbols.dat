@@ -116,3 +116,11 @@ Image[6]=-
 Image[7]=-
 Image[8]=-
 --
+Obj=symbol
+name=CompassIso
+copyright=FrankP
+Image[0]=> compass-frank.0.0
+Image[1]=> compass-frank.0.1
+Image[2]=> compass-frank.0.2
+Image[3]=> compass-frank.0.3
+--
