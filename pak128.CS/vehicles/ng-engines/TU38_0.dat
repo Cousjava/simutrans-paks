@@ -3,6 +3,7 @@ cost=12800
 speed=25
 weight=24
 runningcost=4
+fixed_cost=6
 name=CSD_TU38
 intro_year=2005
 waytype=narrowgauge_track
