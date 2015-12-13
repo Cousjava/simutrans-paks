@@ -11,6 +11,7 @@ power=22400
 weight=2850
 cost=354182400
 runningcost=6250
+fixed_cost=11200
 intro_year=2007
 intro_month=1
 sound=1

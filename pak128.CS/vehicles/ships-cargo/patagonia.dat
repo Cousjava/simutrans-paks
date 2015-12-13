@@ -11,6 +11,7 @@ power=9500
 weight=840
 cost=10221400
 runningcost=1405
+fixed_cost=3147
 intro_year=1951
 intro_month=1
 retire_year=1986

@@ -10,6 +10,7 @@ power=0
 weight=90
 cost=782042
 runningcost=286
+fixed_cost=458
 intro_year=1942
 intro_month=11
 constraint[next][0]=MHz-C11C_Bulk_Barge

@@ -11,6 +11,7 @@ power=1200
 weight=280
 cost=3784800
 runningcost=521
+fixed_cost=1500
 intro_year=1964
 intro_month=12
 sound=ship-horn_b.wav

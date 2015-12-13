@@ -11,6 +11,7 @@ power=6000
 weight=1320
 cost=14913000
 runningcost=1604
+fixed_cost=2258
 intro_year=1958
 intro_month=1
 

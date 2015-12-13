@@ -10,6 +10,7 @@ power=0
 weight=90
 cost=825111
 runningcost=353
+fixed_cost=542
 intro_year=1955
 intro_month=11
 constraint[next][0]=MHz-C11C_Wood_Barge

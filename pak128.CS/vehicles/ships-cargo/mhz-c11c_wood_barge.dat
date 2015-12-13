@@ -11,6 +11,7 @@ gear=100
 weight=122
 cost=2213732
 runningcost=706
+fixed_cost=1084
 intro_year=1955
 intro_month=11
 constraint[next][0]=none
