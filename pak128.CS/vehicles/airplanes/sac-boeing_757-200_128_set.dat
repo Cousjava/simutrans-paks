@@ -14,6 +14,7 @@ weight=59
 gear=80
 cost=66137920
 runningcost=661
+fixed_cost=17979
 intro_year=1983
 intro_month=1
 retire_year=2011

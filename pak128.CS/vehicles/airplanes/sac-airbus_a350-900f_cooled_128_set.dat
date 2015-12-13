@@ -14,6 +14,7 @@ weight=103
 gear=80
 cost=110071000
 runningcost=1153
+fixed_cost=33317
 intro_year=2017
 intro_month=1
 sound=5

@@ -13,6 +13,7 @@ weight=32
 gear=75
 cost=41673180
 runningcost=445
+fixed_cost=1193
 intro_year=1971
 intro_month=5
 sound=5

@@ -14,6 +14,7 @@ weight=110
 gear=80
 cost=94589260
 runningcost=667
+fixed_cost=18591
 intro_year=2009
 intro_month=10
 sound=5
