@@ -3,6 +3,7 @@ cost=1033500
 speed=30
 weight=53
 runningcost=342
+fixed_cost=657
 name=BD_I.
 intro_year=1855
 retire_year=1928

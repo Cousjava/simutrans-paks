@@ -3,6 +3,7 @@ cost=2500200
 speed=60
 weight=107
 runningcost=487
+fixed_cost=1870
 name=CSD_636.0_Mamut
 intro_year=1914
 retire_year=1947
