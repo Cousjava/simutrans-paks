@@ -3,6 +3,7 @@ cost=2900100
 speed=100
 weight=77
 runningcost=299
+fixed_cost=1914
 name=OKD_Doprava_753_Brejlovec
 intro_year=2004
 retire_year=2027

@@ -4,6 +4,7 @@ cost=4069800
 speed=100
 weight=116
 runningcost=365
+fixed_cost=2336
 name=MAV_M62
 intro_year=1965
 intro_month=1
