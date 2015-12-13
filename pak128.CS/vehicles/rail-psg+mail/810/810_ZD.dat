@@ -4,6 +4,7 @@ payload=95
 speed=80
 weight=20
 runningcost=22
+fixed_cost=113
 name=ZD_810
 intro_year=2004
 intro_month=4

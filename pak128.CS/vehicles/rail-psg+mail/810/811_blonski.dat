@@ -4,6 +4,7 @@ payload=94
 speed=80
 weight=24
 runningcost=31
+fixed_cost=159
 name=ZSSK_811_Blonski
 intro_year=2007
 intro_month=3

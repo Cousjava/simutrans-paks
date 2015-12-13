@@ -5,6 +5,7 @@ payload=81
 speed=80
 weight=20
 runningcost=28
+fixed_cost=143
 name=ZSR_812_lux
 intro_year=2004
 intro_month=2

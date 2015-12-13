@@ -4,6 +4,7 @@ payload=124
 speed=100
 weight=46
 runningcost=83
+fixed_cost=531
 name=CD_842_balkan
 intro_year=2011
 intro_month=9

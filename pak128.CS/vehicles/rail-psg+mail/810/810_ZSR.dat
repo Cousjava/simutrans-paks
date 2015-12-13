@@ -4,6 +4,7 @@ payload=95
 speed=80
 weight=20
 runningcost=23
+fixed_cost=118
 name=ZSR_810
 intro_year=1996
 intro_month=2

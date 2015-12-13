@@ -5,6 +5,7 @@ payload=95
 speed=80
 weight=20
 runningcost=21
+fixed_cost=102
 name=GW_810
 intro_year=2012
 intro_month=6

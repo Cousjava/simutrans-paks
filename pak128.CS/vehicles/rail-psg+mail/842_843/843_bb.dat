@@ -5,6 +5,7 @@ payload=105
 speed=110
 weight=56
 runningcost=97
+fixed_cost=683
 name=CD_843
 intro_year=1996
 intro_month=3

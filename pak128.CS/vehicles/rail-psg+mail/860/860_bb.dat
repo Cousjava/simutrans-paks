@@ -4,6 +4,7 @@ payload=104
 speed=100
 weight=56
 runningcost=75
+fixed_cost=480
 name=CSD_M475_0
 intro_year=1974
 intro_month=4

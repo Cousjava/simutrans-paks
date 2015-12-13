@@ -5,6 +5,7 @@ payload=95
 speed=80
 weight=20
 runningcost=22
+fixed_cost=113
 name=Viamont_810
 intro_year=2005
 intro_month=2

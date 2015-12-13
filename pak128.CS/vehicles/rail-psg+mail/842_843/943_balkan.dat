@@ -4,6 +4,7 @@ payload=101
 speed=120
 weight=28
 runningcost=9
+fixed_cost=69
 name=CD_Bftn791_balkan
 intro_year=2009
 intro_month=12

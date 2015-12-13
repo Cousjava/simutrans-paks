@@ -5,6 +5,7 @@ payload=105
 speed=110
 weight=56
 runningcost=96
+fixed_cost=676
 name=CD_843_balkan
 intro_year=2009
 intro_month=10

@@ -4,6 +4,7 @@ payload=102
 speed=80
 weight=16
 runningcost=3
+fixed_cost=15
 name=ZSSK_912_Blonski
 intro_year=2008
 intro_month=11

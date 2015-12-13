@@ -4,6 +4,7 @@ payload=94
 speed=80
 weight=24
 runningcost=32
+fixed_cost=164
 name=ZSR_811
 intro_year=1996
 intro_month=5

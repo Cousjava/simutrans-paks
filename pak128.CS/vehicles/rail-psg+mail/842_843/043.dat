@@ -4,6 +4,7 @@ payload=114
 speed=120
 weight=27
 runningcost=13
+fixed_cost=100
 name=CD_043
 intro_year=1996
 intro_month=7

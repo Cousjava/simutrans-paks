@@ -4,6 +4,7 @@ payload=73
 speed=80
 weight=20
 runningcost=16
+fixed_cost=82
 name=CD_811-1
 intro_year=1997
 intro_month=2
@@ -43,6 +44,7 @@ payload=73
 speed=80
 weight=20
 runningcost=12
+fixed_cost=61
 name=CD_811-2
 intro_year=1997
 intro_month=2
@@ -86,6 +88,7 @@ payload=73
 speed=80
 weight=20
 runningcost=15
+fixed_cost=77
 name=CD_811_balkan-1
 intro_year=2010
 intro_month=9
@@ -125,6 +128,7 @@ payload=73
 speed=80
 weight=20
 runningcost=11
+fixed_cost=56
 name=CD_811_balkan-2
 intro_year=2010
 intro_month=9
@@ -166,6 +170,7 @@ payload=104
 speed=80
 weight=15
 runningcost=9
+fixed_cost=46
 name=CD_Btax781-1
 intro_year=1997
 intro_month=2
@@ -200,6 +205,7 @@ payload=14
 speed=80
 weight=0
 runningcost=0
+fixed_cost=0
 name=CD_Btax781-2
 intro_year=1997
 intro_month=2
@@ -238,6 +244,7 @@ payload=104
 speed=80
 weight=15
 runningcost=9
+fixed_cost=46
 name=CD_Btax781-3
 intro_year=1997
 intro_month=2
@@ -272,6 +279,7 @@ payload=14
 speed=80
 weight=0
 runningcost=0
+fixed_cost=0
 name=CD_Btax781-4
 intro_year=1997
 intro_month=2
@@ -308,6 +316,7 @@ payload=89
 speed=80
 weight=15
 runningcost=8
+fixed_cost=41
 name=CD_BDtax783-1
 intro_year=1997
 intro_month=2
@@ -342,6 +351,7 @@ payload=23
 speed=80
 weight=0
 runningcost=0
+fixed_cost=0
 name=CD_BDtax783-2
 intro_year=1997
 intro_month=2
@@ -371,30 +381,13 @@ Constraint[Prev][0]=CD_BDtax783-1
 Constraint[Next][0]=CD_Btax781-3
 -------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 obj=vehicle
 cost=840600
 payload=104
 speed=80
 weight=15
 runningcost=9
+fixed_cost=46
 name=CD_Btax781-5
 intro_year=2003
 intro_month=6
@@ -429,6 +422,7 @@ payload=14
 speed=80
 weight=0
 runningcost=0
+fixed_cost=0
 name=CD_Btax781-6
 intro_year=2003
 intro_month=6
@@ -463,6 +457,7 @@ payload=104
 speed=80
 weight=15
 runningcost=9
+fixed_cost=46
 name=CD_Btax781-7
 intro_year=2003
 intro_month=6
@@ -497,6 +492,7 @@ payload=14
 speed=80
 weight=0
 runningcost=0
+fixed_cost=0
 name=CD_Btax781-8
 intro_year=2003
 intro_month=6
@@ -533,6 +529,7 @@ payload=104
 speed=80
 weight=15
 runningcost=9
+fixed_cost=46
 name=CD_Btax781-9
 intro_year=1997
 intro_month=2
@@ -567,6 +564,7 @@ payload=14
 speed=80
 weight=0
 runningcost=0
+fixed_cost=0
 name=CD_Btax781-10
 intro_year=1997
 intro_month=2
@@ -602,6 +600,7 @@ payload=104
 speed=80
 weight=15
 runningcost=7
+fixed_cost=36
 name=CD_Btax781_balkan-1
 intro_year=2010
 intro_month=9
@@ -636,6 +635,7 @@ payload=14
 speed=80
 weight=0
 runningcost=0
+fixed_cost=0
 name=CD_Btax781_balkan-2
 intro_year=2010
 intro_month=9
@@ -672,6 +672,7 @@ payload=104
 speed=80
 weight=15
 runningcost=7
+fixed_cost=36
 name=CD_Btax781_balkan-3
 intro_year=2010
 intro_month=9
@@ -706,6 +707,7 @@ payload=14
 speed=80
 weight=0
 runningcost=0
+fixed_cost=0
 name=CD_Btax781_balkan-4
 intro_year=2010
 intro_month=9

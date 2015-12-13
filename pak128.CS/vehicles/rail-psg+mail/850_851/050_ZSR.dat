@@ -6,6 +6,7 @@ payload=134
 speed=120
 weight=32
 runningcost=15
+fixed_cost=115
 name=ZSR_050
 intro_year=1996
 intro_month=1

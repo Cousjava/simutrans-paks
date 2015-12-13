@@ -4,6 +4,7 @@ payload=102
 speed=80
 weight=16
 runningcost=4
+fixed_cost=20
 name=ZSR_912
 intro_year=1996
 intro_month=12

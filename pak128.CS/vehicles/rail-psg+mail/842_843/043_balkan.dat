@@ -4,6 +4,7 @@ payload=114
 speed=120
 weight=27
 runningcost=11
+fixed_cost=84
 name=CD_Btn753_balkan
 intro_year=2009
 intro_month=10

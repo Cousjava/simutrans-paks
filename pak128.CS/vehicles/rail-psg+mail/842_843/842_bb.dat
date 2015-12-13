@@ -4,6 +4,7 @@ payload=124
 speed=100
 weight=46
 runningcost=77
+fixed_cost=493
 name=CD_842
 intro_year=1993
 intro_month=5
