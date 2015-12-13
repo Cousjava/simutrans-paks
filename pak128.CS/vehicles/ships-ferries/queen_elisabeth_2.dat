@@ -11,6 +11,7 @@ power=13300
 weight=1375
 cost=81681573
 runningcost=3889
+fixed_cost=13191
 intro_year=1965
 intro_month=7
 sound=1

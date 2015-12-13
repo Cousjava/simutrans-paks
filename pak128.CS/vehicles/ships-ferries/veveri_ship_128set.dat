@@ -15,7 +15,7 @@ weight=35
 
 cost=150000
 runningcost=95
-
+fixed_cost=122
 intro_year=1961
 intro_month=8
 

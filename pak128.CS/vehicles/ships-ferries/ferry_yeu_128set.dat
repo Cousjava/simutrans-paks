@@ -10,6 +10,7 @@ power=2400
 weight=70
 cost=800000
 runningcost=350
+fixed_cost=829
 intro_year=2000
 intro_month=5
 constraint[next][0]=none
