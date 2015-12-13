@@ -3,6 +3,7 @@ cost=3143100
 speed=100
 weight=85
 runningcost=220
+fixed_cost=1408
 name=Viamont_130_Hrbata
 intro_year=2004
 retire_year=2047
