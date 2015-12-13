@@ -2,7 +2,7 @@ Obj=factory
 name=electronics_factory_new
 Copyright=Fabio Gonella
 
-Location=Land
+Location=City
 DistributionWeight=10
 intro_year=1960
 

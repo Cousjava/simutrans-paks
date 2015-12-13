@@ -1700,8 +1700,8 @@ classical_goods_factory
 Goods factory
 Concretefactory
 Concrete mixer
-cornfield
-Corn Field
+Corn_Farm
+Corn Farm
 cotton_farm_w_fields
 Cotton plantation
 cow_farm
@@ -1713,13 +1713,15 @@ Printing works
 electronics_factory_new
 Electronics factory
 Erzbergwerk
-Iron ore mine
+Open iron ore mine
 ethanol_plant
 Ethanol Plant
 fish_pond
 Fish pond
 fish_swarm
 Fishery
+flax_farm
+Flax Farm
 food_processing_plant
 Food factory
 ForestPlantation
@@ -1753,7 +1755,7 @@ Fish cannery
 old_powerplant_kraftwerk
 Coal power station
 open_coal_mine
-Open Coal Mine
+Open coal Mine
 Papierfabrik
 Paper mill
 publisher
@@ -1766,8 +1768,8 @@ sand_quarry_dd
 Sand quarry
 shaft_coal_mine
 Coal mine
-shaft_coal_mine_small
-Small coal mine shaft
+shaft_ore_mine
+Iron ore mine
 sheep_farm
 Sheep farm
 shopping_mall
@@ -1838,6 +1840,8 @@ fertilizer
 Fertilizer
 fish
 Fish
+flax
+Flax
 flour
 Flour
 food

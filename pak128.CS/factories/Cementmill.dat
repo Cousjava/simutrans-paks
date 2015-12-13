@@ -2,7 +2,7 @@ Obj=factory
 name=Cementmill
 copyright=Flor Wauters & Napik
 
-Location=Land
+Location=City
 DistributionWeight=10
 
 # needed productivity in tones  : 105t (1.5 train per month)

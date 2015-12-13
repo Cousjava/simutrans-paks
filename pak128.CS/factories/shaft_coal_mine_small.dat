@@ -1,5 +1,5 @@
 Obj=factory
-name=shaft_coal_mine_small
+name=shaft_ore_mine
 Location=Land
 
 copyright=Raven
@@ -7,7 +7,7 @@ copyright=Raven
 DistributionWeight=10
 MapColor=176
 
-OutputGood[0]=Kohle
+OutputGood[0]=Eisenerz
 OutputCapacity[0]=300
 
 Productivity=40
@@ -26,7 +26,7 @@ Needs_Ground=1
 # all climates...
 
 intro_year=1700
-retire_year=1940
+# build forever, right now is the only all-climate ore producer
 
 BackImage[0][0][0][0][0]=shaft_coal_mine_small.2.1
 # first tile is virtual - one pixel

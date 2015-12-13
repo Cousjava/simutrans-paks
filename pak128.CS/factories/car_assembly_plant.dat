@@ -2,7 +2,7 @@ Obj=factory
 name=car_assembly_plant
 copyright=Joker
 
-Location=Land
+Location=City
 DistributionWeight=10
 
 # needed productivity in tones  : 220cars (4 trains / month)

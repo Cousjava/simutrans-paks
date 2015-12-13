@@ -9,7 +9,6 @@ Distributionweight=5
 
 Productivity=15
 Range=10
-electricity_proportion=2
 electricity_amount=5
 
 MapColor=134
@@ -22,7 +21,7 @@ level=1
 
 animation_time=2000
 needs_ground=1
-climates=tundra,rocky,temperate,mediterran,desert,tropic
+climates=mediterran,desert,tropic
 has_snow=0
 Dims=3,3,1
 

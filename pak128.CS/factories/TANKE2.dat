@@ -9,6 +9,8 @@ Productivity=50
 Range=25
 
 intro_year=1960
+retire_year=2000
+upgrade[0]=modern_fuel_station
 
 Electricity_amount=0
 Electricity_boost=0

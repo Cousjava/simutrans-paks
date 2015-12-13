@@ -2,7 +2,7 @@ Obj=factory
 name=Saegewerk
 copyright=MHz
 
-Location=Land
+Location=City
 DistributionWeight=10
 
 #needed productivity in tones  : 180 (1 train / month)

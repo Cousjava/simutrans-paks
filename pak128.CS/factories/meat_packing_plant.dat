@@ -1,7 +1,7 @@
 Obj=factory
 name=meat_packing_plant
 copyright=Zeno
-Location=Land
+Location=City
 
 DistributionWeight=10
 Productivity=120
@@ -29,6 +29,7 @@ OutputCapacity[0]=800
 
 intro_year=1880
 retire_year=1940
+upgrade[0]=cannery
 
 MapColor=222
 

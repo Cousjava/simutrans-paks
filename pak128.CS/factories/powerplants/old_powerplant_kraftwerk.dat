@@ -7,7 +7,7 @@ copyright=Raven
 # required productivity with cf.: 630
 
 DistributionWeight=20
-Location=Land
+Location=City
 
 Productivity=600
 Range=40
@@ -37,7 +37,6 @@ MapColor=131
 
 Dims=3,3
 needs_ground=1
-climates=mediterran,temperate,tundra,rocky
 
 BackImage[0][0][0][0][0]=old_powerplant_kraftwerk.2.4
 # first tile is virtual - one pixel

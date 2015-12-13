@@ -2,7 +2,7 @@ Obj=factory
 name=Druckerei
 copyright=Patrick
 
-Location=Land
+Location=City
 DistributionWeight=10
 
 # needed productivity in tones  : 570 (4 trains / month)

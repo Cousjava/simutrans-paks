@@ -2,7 +2,7 @@ Obj=factory
 name=classical_goods_factory
 copyright=Rmax500
 
-Location=Land
+Location=City
 DistributionWeight=10
 
 # needed productivity in tones  : 400 crates (3 trains / month)

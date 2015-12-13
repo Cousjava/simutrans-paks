@@ -230,6 +230,8 @@ Windmill
 Veterný mlyn\n\nNiekto sa chodí dpozera» na veterný\nmlyn, preto¾e sa mu páèi\nelegancia, s ktorou sa vo\nvetre otáèajú jeho lopatky;\nniekto zase proto, ¾e sa mu\nchce ís» na prechádzku a nemá\nv okolí lep¹í cieµ. No a niektorí\nvýtr¾níci chodia k veternému\nmlynu, aby si po òom\nvyskú¹ali hodi» kameòom.\n\n
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
+autoshop3
+Autosalón
 bakery
 Pekáreò
 brewery
@@ -248,7 +250,7 @@ classical_goods_factory
 Továreò
 Concretefactory
 Betonárka
-cornfield
+Corn_Farm
 Kukurièné pole
 cotton_farm_w_fields
 Bavlníková plantá¾
@@ -260,16 +262,18 @@ dairy
 Mliekáreò
 Druckerei
 Tlaèiareò
-electronics_factory
+electronics_factory_new
 Elektrotechnický závod
 Erzbergwerk
-®eleznorudná baòa
+Povrchová ¾eleznorudná baòa
 ethanol_plant
-Liehovar
+Liehovar (biolieh)
 fish_pond
 Rybník
 fish_swarm
-Ryby
+Ryby (morské)
+flax_farm
+Pole µanu
 food_processing_plant
 Potravinársky závod
 Glass_factory
@@ -280,7 +284,7 @@ grain_mill
 Mlyn
 Kohlekraftwerk
 Uhoµná elektráreò
-Materialswholesale
+MaterialsWholesales
 Stavebniny
 modern_fuel_station
 Moderná èerpacia stanica
@@ -288,7 +292,7 @@ Moebelfabrik
 Nábytkáreò
 Moebelhaus
 Obchod s nábytkom
-Nutzwald
+ForestPlantation
 Lesný závod
 Oelbohrinsel
 Ropná plo¹ina
@@ -296,16 +300,24 @@ Oelfeld
 Ropné pole
 oilkraftwerk
 Mazutová elektráreò
+old_powerplant_kraftwerk
+Tepelná elektráreò
 open_coal_mine
 Povrchová baòa
 Papierfabrik
 Papiereò
+publisher
+Vydavateµstvo
 Raffinerie
 Rafinéria
 Saegewerk
 Píla
-Sandquarry
+sand_quarry_dd
 Pieskovcový lom
+shaft_coal_mine
+Uhoµná baòa
+shaft_ore_mine
+®eleznorudná baòa
 sheep_farm
 Sala¹
 shopping_mall
@@ -317,7 +329,9 @@ Kameòolom
 supermarket
 Supermarket
 TANKE1
-Pumpa
+Benzínová pumpa
+TANKE2
+Benzínová pumpa
 textile_factory
 Textilka
 waste_disposal
@@ -326,8 +340,26 @@ waste_incinerator_kraftwerk
 Spalovòa
 wind_kraftwerk
 Veterná elektráreò
+meat_packing_plant
+Konzerváreò (mäso)
+old_fish_cannery
+Konzerváreò (ryby)
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
+CATEGORY_01
+kusový tovar
+CATEGORY_02
+sypký tovar
+CATEGORY_03
+tekuté chemikálie
+CATEGORY_04
+chladený tovar
+CATEGORY_05
+tekuté potraviny
+CATEGORY_06
+dlhý tovar
+CATEGORY_07
+sypké potraviny
 Autos
 automobily
 beer
@@ -353,7 +385,7 @@ Eisenerz
 electronics
 elektronika
 Ethanol
-lieh
+biolieh
 fertilizer
 hnojivo
 fish
@@ -402,6 +434,38 @@ waste
 odpad
 wool
 vlna
+dairy_products
+mlieène výrobky
+bread
+chlieb a peèivo
+potatoes
+zemiaky
+sugar
+cukor
+flax
+µan
+soft_drinks
+nealko nápoje
+sugar_beet
+cukrová repa
+livestock
+dobytok
+malt
+slad
+hops
+chmeµ
+fruit
+ovocie
+vegetables
+zelenina
+clay
+Íl
+bricks
+tehly
+china
+porcelán
+barley
+jaèmeò
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 tree020

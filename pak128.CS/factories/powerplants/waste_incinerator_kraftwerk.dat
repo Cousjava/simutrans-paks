@@ -2,7 +2,7 @@ Obj=factory
 name=waste_incinerator_kraftwerk
 copyright=MHz
 
-Location=Land
+Location=City
 DistributionWeight=10
 
 # average rate:            100

@@ -2,7 +2,7 @@ Obj=factory
 name=cannery
 copyright=Patrick
 
-Location=Land
+Location=City
 DistributionWeight=10
 Intro_year=1940
 

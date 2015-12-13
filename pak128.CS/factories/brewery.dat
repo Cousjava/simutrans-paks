@@ -20,7 +20,7 @@ Passenger_demand=60
 Passenger_boost=500
 
 # total grain input 280
-InputGood[0]=grain
+InputGood[0]=barley
 InputFactor[0]=50
 InputCapacity[0]=2800
 InputSupplier[0]=0

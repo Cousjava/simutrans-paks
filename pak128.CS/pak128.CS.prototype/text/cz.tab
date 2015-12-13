@@ -540,7 +540,7 @@ classical_goods_factory
 Továrna
 Concretefactory
 Betonárka
-cornfield
+Corn_Farm
 Kukuøièné pole
 cotton_farm_w_fields
 Bavlníková plantá¾
@@ -552,27 +552,29 @@ dairy
 Mlékárna
 Druckerei
 Tiskárna
-electronics_factory
+electronics_factory_new
 Továrna na elektroniku
 Erzbergwerk
-Dùl na ¾eleznou rudu
+Povrchový dùl na ¾eleznou rudu
 ethanol_plant
-Kvasný závod
+Závod na biolíh
 fish_pond
 Chovný rybník
 fish_swarm
-Sádky
+Hejno moøských ryb
+flax_farm
+Pole lnu
 food_processing_plant
 Potravináøský závod
 Glass_factory
 Sklárna
 grain_farm_w_fields
-Zemìdìlské dru¾stvo
+P¹enièné pole
 grain_mill
 Mlýn
 Kohlekraftwerk
 Uhelná elektrárna
-Materialswholesale
+MaterialsWholesales
 Stavebniny
 modern_fuel_station
 Èerpací stanice
@@ -580,7 +582,7 @@ Moebelfabrik
 Truhlárna
 Moebelhaus
 Prodejna domácích potøeb
-Nutzwald
+ForestPlantation
 Prùmyslový les 
 Oelbohrinsel
 Ropná plo¹ina
@@ -602,10 +604,12 @@ recycling_factory
 Tøídírna odpadu
 Saegewerk
 Pila
-Sandquarry
+sand_quarry_dd
 Pískovna
 shaft_coal_mine
 Uhelný dùl
+shaft_ore_mine
+Dùl na ¾eleznou rudu
 sheep_farm
 Ovèín
 shopping_mall
@@ -618,6 +622,8 @@ supermarket
 Supermarket
 TANKE1
 Èerpací stanice
+TANKE2
+Èerpací stanice
 textile_factory
 Odìvní závody
 waste_disposal
@@ -626,8 +632,26 @@ waste_incinerator_kraftwerk
 Spalovna odpadù
 wind_kraftwerk
 Vìtrná elektrárna
+meat_packing_plant
+Konzervárna (maso)
+old_fish_cannery
+Konzervárna (ryby)
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
+CATEGORY_01
+kusové zbo¾í
+CATEGORY_02
+sypké zbo¾í
+CATEGORY_03
+tekuté chemikálie
+CATEGORY_04
+chlazené zbo¾í
+CATEGORY_05
+tekuté potraviny
+CATEGORY_06
+dlouhé zbo¾í
+CATEGORY_07
+sypké potraviny
 Autos
 Auta
 beer
@@ -651,7 +675,7 @@ Eisenerz
 electronics
 Elektronika
 Ethanol
-Etanol
+Biolíh
 fertilizer
 Hnojivo
 fish
@@ -667,7 +691,7 @@ Sklo
 goods_
 Zbo¾í
 grain
-Obilí
+P¹enice
 Holz
 Døevo
 Kohle
@@ -700,6 +724,38 @@ waste
 Odpadky
 wool
 Vlna
+dairy_products
+Mléèné výrobky
+bread
+Chléb a peèivo
+potatoes
+Brambory
+sugar
+Cukr
+flax
+Len
+soft_drinks
+Nealko nápoje
+sugar_beet
+Cukrová øepa
+livestock
+Dobytek
+malt
+Slad
+hops
+Chmel
+fruit
+Ovoce
+vegetables
+Zelenina
+clay
+Jíl
+bricks
+Cihly
+china
+Porcelán
+barley
+Jeèmen
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 airport_oneway

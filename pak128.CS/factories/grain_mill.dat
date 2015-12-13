@@ -1,7 +1,7 @@
 Obj=factory
 name=grain_mill
 copyright=Patrick
-Location=Land
+Location=City
 
 #needed productivity in tones  : 500 (4 trains / month)
 #size                          : 1x3 = 3

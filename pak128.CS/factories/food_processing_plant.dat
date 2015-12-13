@@ -2,7 +2,7 @@ Obj=factory
 name=food_processing_plant
 copyright=James Starr
 
-Location=Land
+Location=City
 DistributionWeight=20
 
 # needed productivity in tones  : 700 (5 trains / month)

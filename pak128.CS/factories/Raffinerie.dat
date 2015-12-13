@@ -34,7 +34,7 @@ OutputGood[2]=Chemicals
 OutputCapacity[2]=300
 OutputFactor[2]=25
 
-Location=Land
+Location=City
 DistributionWeight=10
 MapColor=58
 Dims=3,3

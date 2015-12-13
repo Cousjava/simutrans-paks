@@ -1,5 +1,5 @@
 Obj=factory
-name=Pole_lnu
+name=flax_farm
 copyright=VTPsim+Václav
 Location=Land
 DistributionWeight=10
@@ -11,15 +11,16 @@ Mail_demand=1
 Mail_boost=100
 Passenger_demand=1
 Passenger_boost=100
-OutputGood[0]=good_len
+OutputGood[0]=flax
 OutputCapacity[0]=50
 MapColor=215
 Dims=2,2,4
 needs_ground=1
 max_fields=80
 min_fields=5
+climates=mediterran,temperate,tundra
 production_per_field=1
-fields=oves
+fields=flax_field
 
 # north summer
 BackImage[0][0][0][0][0][0]=-
@@ -68,3 +69,14 @@ BackImage[1][0][0][0][0][1]=Pole_lnu.4.0
 BackImage[1][0][1][0][0][1]=Pole_lnu.5.3
 BackImage[1][1][0][0][0][1]=-
 BackImage[1][1][1][0][0][1]=Pole_lnu.6.3
+
+-----------------------
+obj=field
+name=flax_field
+copyright=VTPsim+Václav
+Image[0]=Pole_lnu.3.1
+Image[1]=Pole_lnu.3.2
+Image[2]=Pole_lnu.3.3
+Image[3]=Pole_lnu.3.0
+Image[4]=Pole_lnu.3.4
+

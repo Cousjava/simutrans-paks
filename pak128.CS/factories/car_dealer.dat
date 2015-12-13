@@ -5,6 +5,8 @@ copyright=Joker
 Location=City
 DistributionWeight=20
 
+intro_year=1990
+
 # needed productivity in tones  : 110cars (2 trains / month)
 # size                          : 3x3 = 9
 # average productivity per tile : 12

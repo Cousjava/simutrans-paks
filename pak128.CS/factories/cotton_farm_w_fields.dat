@@ -25,7 +25,7 @@ OutputCapacity[0]=800
 
 MapColor=215
 Dims=2,2,4
-climates=mediterran,temperate
+climates=mediterran,tropic
 needs_ground=1
 
 max_fields=80

@@ -8,7 +8,6 @@ Distributionweight=40
 
 Productivity=150
 Range=25
-electricity_proportion=2
 electricity_amount=40
 
 MapColor=134
@@ -25,7 +24,7 @@ SmokeOffset=0,-36
 SmokeSpeed=10
 
 needs_ground=1
-climates=temperate,tundra,rocky,arctic
+climates=tundra,rocky,arctic
 dims=3,3,2
 
 BackImage[0][0][0][0][0][0]=geothermal_powerplant_kraftwerk.1.0

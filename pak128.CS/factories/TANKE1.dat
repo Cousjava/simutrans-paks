@@ -8,7 +8,8 @@ DistributionWeight=80
 Productivity=50
 Range=25
 
-retire_year=2000
+retire_year=1960
+upgrade[0]=TANKE2
 
 Electricity_amount=0
 Electricity_boost=0

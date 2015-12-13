@@ -5,6 +5,9 @@ copyright=Joker
 Location=City
 DistributionWeight=20
 
+retire_year=1990
+upgrade[0]=car_dealer
+
 Productivity=50
 Range=25
 
