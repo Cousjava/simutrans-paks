@@ -4,6 +4,7 @@ payload=75
 speed=50
 weight=10
 runningcost=7
+fixed_cost=22
 name=CKD_Vetra
 intro_year=1948
 intro_month=1

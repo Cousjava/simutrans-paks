@@ -4,6 +4,7 @@ payload=80
 speed=50
 weight=10
 runningcost=8
+fixed_cost=26
 name=Praga_TOT
 intro_year=1936
 intro_month=1
