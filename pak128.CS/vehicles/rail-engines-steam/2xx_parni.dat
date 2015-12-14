@@ -17,14 +17,14 @@ gear=101
 constraint[next][0]=CSD_309_4
 constraint[next][1]=CSD_309_1
 
-emptyimage[w]=233.0.0
-emptyimage[nw]=233.0.1
-emptyimage[n]=233.0.2
-emptyimage[ne]=233.0.3
-emptyimage[e]=233.0.4
-emptyimage[se]=233.0.5
-emptyimage[s]=233.0.6
-emptyimage[sw]=233.0.7
+emptyimage[w]=233.0.0,0,4
+emptyimage[nw]=233.0.1,0,4
+emptyimage[n]=233.0.2,0,4
+emptyimage[ne]=233.0.3,0,4
+emptyimage[e]=233.0.4,0,4
+emptyimage[se]=233.0.5,0,4
+emptyimage[s]=233.0.6,0,4
+emptyimage[sw]=233.0.7,0,4
 ---------------------------
 obj=vehicle
 cost=2070300
@@ -44,12 +44,12 @@ length=6
 gear=90
 constraint[next][0]=CSD_516.0
 
-emptyimage[w]=275_0_nohata.0.0
-emptyimage[nw]=275_0_nohata.0.1
-emptyimage[n]=275_0_nohata.0.2
-emptyimage[ne]=275_0_nohata.0.3
-emptyimage[e]=275_0_nohata.0.4
-emptyimage[se]=275_0_nohata.0.5
-emptyimage[s]=275_0_nohata.0.6
-emptyimage[sw]=275_0_nohata.0.7
+emptyimage[w]=275_0_nohata.0.0,0,4
+emptyimage[nw]=275_0_nohata.0.1,0,4
+emptyimage[n]=275_0_nohata.0.2,0,4
+emptyimage[ne]=275_0_nohata.0.3,0,4
+emptyimage[e]=275_0_nohata.0.4,0,4
+emptyimage[se]=275_0_nohata.0.5,0,4
+emptyimage[s]=275_0_nohata.0.6,0,4
+emptyimage[sw]=275_0_nohata.0.7,0,4
 -----------------------------------
