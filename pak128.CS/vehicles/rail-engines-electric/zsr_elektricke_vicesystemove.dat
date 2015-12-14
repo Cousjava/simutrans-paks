@@ -14,14 +14,14 @@ copyright=TommPa9
 length=8
 gear=155
 
-emptyimage[w]=zsr_363.0.0
-emptyimage[nw]=zsr_363.0.1
-emptyimage[n]=zsr_363.0.2
-emptyimage[ne]=zsr_363.0.3
-emptyimage[e]=zsr_363.0.4
-emptyimage[se]=zsr_363.0.5
-emptyimage[s]=zsr_363.0.6
-emptyimage[sw]=zsr_363.0.7
+emptyimage[w]=zsr_363.0.0,0,4
+emptyimage[nw]=zsr_363.0.1,0,4
+emptyimage[n]=zsr_363.0.2,0,4
+emptyimage[ne]=zsr_363.0.3,0,4
+emptyimage[e]=zsr_363.0.4,0,4
+emptyimage[se]=zsr_363.0.5,0,4
+emptyimage[s]=zsr_363.0.6,0,4
+emptyimage[sw]=zsr_363.0.7,0,4
 ------------------------------
 obj=vehicle
 cost=4251600
@@ -39,14 +39,14 @@ copyright=TommPa9
 length=8
 gear=155
 
-emptyimage[w]=zsr_362.0.0
-emptyimage[nw]=zsr_362.0.1
-emptyimage[n]=zsr_362.0.2
-emptyimage[ne]=zsr_362.0.3
-emptyimage[e]=zsr_362.0.4
-emptyimage[se]=zsr_362.0.5
-emptyimage[s]=zsr_362.0.6
-emptyimage[sw]=zsr_362.0.7
+emptyimage[w]=zsr_362.0.0,0,4
+emptyimage[nw]=zsr_362.0.1,0,4
+emptyimage[n]=zsr_362.0.2,0,4
+emptyimage[ne]=zsr_362.0.3,0,4
+emptyimage[e]=zsr_362.0.4,0,4
+emptyimage[se]=zsr_362.0.5,0,4
+emptyimage[s]=zsr_362.0.6,0,4
+emptyimage[sw]=zsr_362.0.7,0,4
 -------------------------------------
 obj=vehicle
 cost=4816500
@@ -64,12 +64,12 @@ copyright=TommPa9
 length=8
 gear=160
 
-emptyimage[w]=csd_350.0.0
-emptyimage[nw]=csd_350.0.1
-emptyimage[n]=csd_350.0.2
-emptyimage[ne]=csd_350.0.3
-emptyimage[e]=csd_350.0.4
-emptyimage[se]=csd_350.0.5
-emptyimage[s]=csd_350.0.6
-emptyimage[sw]=csd_350.0.7
+emptyimage[w]=csd_350.0.0,0,4
+emptyimage[nw]=csd_350.0.1,0,4
+emptyimage[n]=csd_350.0.2,0,4
+emptyimage[ne]=csd_350.0.3,0,4
+emptyimage[e]=csd_350.0.4,0,4
+emptyimage[se]=csd_350.0.5,0,4
+emptyimage[s]=csd_350.0.6,0,4
+emptyimage[sw]=csd_350.0.7,0,4
 -------------------------------------------

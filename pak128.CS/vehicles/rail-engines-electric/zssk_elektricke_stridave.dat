@@ -15,14 +15,14 @@ copyright=TommPa9
 length=8
 gear=150
 
-emptyimage[w]=zssk_210.0.0
-emptyimage[nw]=zssk_210.0.1
-emptyimage[n]=zssk_210.0.2
-emptyimage[ne]=zssk_210.0.3
-emptyimage[e]=zssk_210.0.4
-emptyimage[se]=zssk_210.0.5
-emptyimage[s]=zssk_210.0.6
-emptyimage[sw]=zssk_210.0.7
+emptyimage[w]=zssk_210.0.0,0,4
+emptyimage[nw]=zssk_210.0.1,0,4
+emptyimage[n]=zssk_210.0.2,0,4
+emptyimage[ne]=zssk_210.0.3,0,4
+emptyimage[e]=zssk_210.0.4,0,4
+emptyimage[se]=zssk_210.0.5,0,4
+emptyimage[s]=zssk_210.0.6,0,4
+emptyimage[sw]=zssk_210.0.7,0,4
 -------------------------------------------
 obj=vehicle
 cost=3650400
@@ -39,14 +39,14 @@ copyright=TommPa9
 length=8
 gear=150
 
-emptyimage[w]=zssk_240_laminatka.0.0
-emptyimage[nw]=zssk_240_laminatka.0.1
-emptyimage[n]=zssk_240_laminatka.0.2
-emptyimage[ne]=zssk_240_laminatka.0.3
-emptyimage[e]=zssk_240_laminatka.0.4
-emptyimage[se]=zssk_240_laminatka.0.5
-emptyimage[s]=zssk_240_laminatka.0.6
-emptyimage[sw]=zssk_240_laminatka.0.7
+emptyimage[w]=zssk_240_laminatka.0.0,0,4
+emptyimage[nw]=zssk_240_laminatka.0.1,0,4
+emptyimage[n]=zssk_240_laminatka.0.2,0,4
+emptyimage[ne]=zssk_240_laminatka.0.3,0,4
+emptyimage[e]=zssk_240_laminatka.0.4,0,4
+emptyimage[se]=zssk_240_laminatka.0.5,0,4
+emptyimage[s]=zssk_240_laminatka.0.6,0,4
+emptyimage[sw]=zssk_240_laminatka.0.7,0,4
 
 -------------------------------
 
@@ -65,12 +65,12 @@ copyright=TommPa9
 length=8
 gear=155
 
-emptyimage[w]=zssk_263.0.0
-emptyimage[nw]=zssk_263.0.1
-emptyimage[n]=zssk_263.0.2
-emptyimage[ne]=zssk_263.0.3
-emptyimage[e]=zssk_263.0.4
-emptyimage[se]=zssk_263.0.5
-emptyimage[s]=zssk_263.0.6
-emptyimage[sw]=zssk_263.0.7
+emptyimage[w]=zssk_263.0.0,0,4
+emptyimage[nw]=zssk_263.0.1,0,4
+emptyimage[n]=zssk_263.0.2,0,4
+emptyimage[ne]=zssk_263.0.3,0,4
+emptyimage[e]=zssk_263.0.4,0,4
+emptyimage[se]=zssk_263.0.5,0,4
+emptyimage[s]=zssk_263.0.6,0,4
+emptyimage[sw]=zssk_263.0.7,0,4
 ------------------------------------

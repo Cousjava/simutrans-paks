@@ -17,14 +17,14 @@ gear=150
 freight=Post
 payload=18
 
-emptyimage[w]=cd_100.0.0
-emptyimage[nw]=cd_100.0.1
-emptyimage[n]=cd_100.0.2
-emptyimage[ne]=cd_100.0.3
-emptyimage[e]=cd_100.0.4
-emptyimage[se]=cd_100.0.5
-emptyimage[s]=cd_100.0.6
-emptyimage[sw]=cd_100.0.7
+emptyimage[w]=cd_100.0.0,0,4
+emptyimage[nw]=cd_100.0.1,0,4
+emptyimage[n]=cd_100.0.2,0,4
+emptyimage[ne]=cd_100.0.3,0,4
+emptyimage[e]=cd_100.0.4,0,4
+emptyimage[se]=cd_100.0.5,0,4
+emptyimage[s]=cd_100.0.6,0,4
+emptyimage[sw]=cd_100.0.7,0,4
 
 ------------------------
 obj=vehicle
@@ -44,14 +44,14 @@ copyright=TommPa9
 length=8
 gear=150
 
-emptyimage[w]=cd_110_jezevec.0.0
-emptyimage[nw]=cd_110_jezevec.0.1
-emptyimage[n]=cd_110_jezevec.0.2
-emptyimage[ne]=cd_110_jezevec.0.3
-emptyimage[e]=cd_110_jezevec.0.4
-emptyimage[se]=cd_110_jezevec.0.5
-emptyimage[s]=cd_110_jezevec.0.6
-emptyimage[sw]=cd_110_jezevec.0.7
+emptyimage[w]=cd_110_jezevec.0.0,0,4
+emptyimage[nw]=cd_110_jezevec.0.1,0,4
+emptyimage[n]=cd_110_jezevec.0.2,0,4
+emptyimage[ne]=cd_110_jezevec.0.3,0,4
+emptyimage[e]=cd_110_jezevec.0.4,0,4
+emptyimage[se]=cd_110_jezevec.0.5,0,4
+emptyimage[s]=cd_110_jezevec.0.6,0,4
+emptyimage[sw]=cd_110_jezevec.0.7,0,4
 
 ------------------------------------------
 
@@ -72,14 +72,14 @@ copyright=TommPa9
 length=8
 gear=150
 
-emptyimage[w]=cd_111.0.0
-emptyimage[nw]=cd_111.0.1
-emptyimage[n]=cd_111.0.2
-emptyimage[ne]=cd_111.0.3
-emptyimage[e]=cd_111.0.4
-emptyimage[se]=cd_111.0.5
-emptyimage[s]=cd_111.0.6
-emptyimage[sw]=cd_111.0.7
+emptyimage[w]=cd_111.0.0,0,4
+emptyimage[nw]=cd_111.0.1,0,4
+emptyimage[n]=cd_111.0.2,0,4
+emptyimage[ne]=cd_111.0.3,0,4
+emptyimage[e]=cd_111.0.4,0,4
+emptyimage[se]=cd_111.0.5,0,4
+emptyimage[s]=cd_111.0.6,0,4
+emptyimage[sw]=cd_111.0.7,0,4
 
 -------------------------------------
 
@@ -99,14 +99,14 @@ copyright=TommPa9
 length=8
 gear=150
 
-emptyimage[w]=cd_111_balkan.0.0
-emptyimage[nw]=cd_111_balkan.0.1
-emptyimage[n]=cd_111_balkan.0.2
-emptyimage[ne]=cd_111_balkan.0.3
-emptyimage[e]=cd_111_balkan.0.4
-emptyimage[se]=cd_111_balkan.0.5
-emptyimage[s]=cd_111_balkan.0.6
-emptyimage[sw]=cd_111_balkan.0.7
+emptyimage[w]=cd_111_balkan.0.0,0,4
+emptyimage[nw]=cd_111_balkan.0.1,0,4
+emptyimage[n]=cd_111_balkan.0.2,0,4
+emptyimage[ne]=cd_111_balkan.0.3,0,4
+emptyimage[e]=cd_111_balkan.0.4,0,4
+emptyimage[se]=cd_111_balkan.0.5,0,4
+emptyimage[s]=cd_111_balkan.0.6,0,4
+emptyimage[sw]=cd_111_balkan.0.7,0,4
 
 -------------------------------------
 
@@ -127,14 +127,14 @@ copyright=TommPa9
 length=8
 gear=150
 
-emptyimage[w]=cd_110.0.0
-emptyimage[nw]=cd_110.0.1
-emptyimage[n]=cd_110.0.2
-emptyimage[ne]=cd_110.0.3
-emptyimage[e]=cd_110.0.4
-emptyimage[se]=cd_110.0.5
-emptyimage[s]=cd_110.0.6
-emptyimage[sw]=cd_110.0.7
+emptyimage[w]=cd_110.0.0,0,4
+emptyimage[nw]=cd_110.0.1,0,4
+emptyimage[n]=cd_110.0.2,0,4
+emptyimage[ne]=cd_110.0.3,0,4
+emptyimage[e]=cd_110.0.4,0,4
+emptyimage[se]=cd_110.0.5,0,4
+emptyimage[s]=cd_110.0.6,0,4
+emptyimage[sw]=cd_110.0.7,0,4
 
 -----------------------------------
 obj=vehicle
@@ -153,14 +153,14 @@ copyright=TommPa9
 length=8
 gear=150
 
-emptyimage[w]=cd_121.0.0
-emptyimage[nw]=cd_121.0.1
-emptyimage[n]=cd_121.0.2
-emptyimage[ne]=cd_121.0.3
-emptyimage[e]=cd_121.0.4
-emptyimage[se]=cd_121.0.5
-emptyimage[s]=cd_121.0.6
-emptyimage[sw]=cd_121.0.7
+emptyimage[w]=cd_121.0.0,0,4
+emptyimage[nw]=cd_121.0.1,0,4
+emptyimage[n]=cd_121.0.2,0,4
+emptyimage[ne]=cd_121.0.3,0,4
+emptyimage[e]=cd_121.0.4,0,4
+emptyimage[se]=cd_121.0.5,0,4
+emptyimage[s]=cd_121.0.6,0,4
+emptyimage[sw]=cd_121.0.7,0,4
 ----------------------------------------------------
 obj=vehicle
 cost=2886300
@@ -178,14 +178,14 @@ copyright=TommPa9
 length=8
 gear=150
 
-emptyimage[w]=cd_122.0.0
-emptyimage[nw]=cd_122.0.1
-emptyimage[n]=cd_122.0.2
-emptyimage[ne]=cd_122.0.3
-emptyimage[e]=cd_122.0.4
-emptyimage[se]=cd_122.0.5
-emptyimage[s]=cd_122.0.6
-emptyimage[sw]=cd_122.0.7
+emptyimage[w]=cd_122.0.0,0,4
+emptyimage[nw]=cd_122.0.1,0,4
+emptyimage[n]=cd_122.0.2,0,4
+emptyimage[ne]=cd_122.0.3,0,4
+emptyimage[e]=cd_122.0.4,0,4
+emptyimage[se]=cd_122.0.5,0,4
+emptyimage[s]=cd_122.0.6,0,4
+emptyimage[sw]=cd_122.0.7,0,4
 
 --------------------------------------------------------
 obj=vehicle
@@ -204,14 +204,14 @@ copyright=TommPa9
 length=8
 gear=150
 
-emptyimage[w]=cd_123.0.0
-emptyimage[nw]=cd_123.0.1
-emptyimage[n]=cd_123.0.2
-emptyimage[ne]=cd_123.0.3
-emptyimage[e]=cd_123.0.4
-emptyimage[se]=cd_123.0.5
-emptyimage[s]=cd_123.0.6
-emptyimage[sw]=cd_123.0.7
+emptyimage[w]=cd_123.0.0,0,4
+emptyimage[nw]=cd_123.0.1,0,4
+emptyimage[n]=cd_123.0.2,0,4
+emptyimage[ne]=cd_123.0.3,0,4
+emptyimage[e]=cd_123.0.4,0,4
+emptyimage[se]=cd_123.0.5,0,4
+emptyimage[s]=cd_123.0.6,0,4
+emptyimage[sw]=cd_123.0.7,0,4
 ---------------------------------
 
 obj=vehicle
@@ -230,14 +230,14 @@ copyright=TommPa9
 length=8
 gear=150
 
-emptyimage[w]=cd_124.0.0
-emptyimage[nw]=cd_124.0.1
-emptyimage[n]=cd_124.0.2
-emptyimage[ne]=cd_124.0.3
-emptyimage[e]=cd_124.0.4
-emptyimage[se]=cd_124.0.5
-emptyimage[s]=cd_124.0.6
-emptyimage[sw]=cd_124.0.7
+emptyimage[w]=cd_124.0.0,0,4
+emptyimage[nw]=cd_124.0.1,0,4
+emptyimage[n]=cd_124.0.2,0,4
+emptyimage[ne]=cd_124.0.3,0,4
+emptyimage[e]=cd_124.0.4,0,4
+emptyimage[se]=cd_124.0.5,0,4
+emptyimage[s]=cd_124.0.6,0,4
+emptyimage[sw]=cd_124.0.7,0,4
 
 ------------------------------------------
 obj=vehicle
@@ -256,14 +256,14 @@ copyright=TommPa9
 length=8
 gear=150
 
-emptyimage[w]=cd_130.0.0
-emptyimage[nw]=cd_130.0.1
-emptyimage[n]=cd_130.0.2
-emptyimage[ne]=cd_130.0.3
-emptyimage[e]=cd_130.0.4
-emptyimage[se]=cd_130.0.5
-emptyimage[s]=cd_130.0.6
-emptyimage[sw]=cd_130.0.7
+emptyimage[w]=cd_130.0.0,0,4
+emptyimage[nw]=cd_130.0.1,0,4
+emptyimage[n]=cd_130.0.2,0,4
+emptyimage[ne]=cd_130.0.3,0,4
+emptyimage[e]=cd_130.0.4,0,4
+emptyimage[se]=cd_130.0.5,0,4
+emptyimage[s]=cd_130.0.6,0,4
+emptyimage[sw]=cd_130.0.7,0,4
 ----------------------------------------------
 obj=vehicle
 cost=3537900
@@ -281,14 +281,14 @@ copyright=TommPa9
 length=8
 gear=155
 
-emptyimage[w]=cd_140.0.0
-emptyimage[nw]=cd_140.0.1
-emptyimage[n]=cd_140.0.2
-emptyimage[ne]=cd_140.0.3
-emptyimage[e]=cd_140.0.4
-emptyimage[se]=cd_140.0.5
-emptyimage[s]=cd_140.0.6
-emptyimage[sw]=cd_140.0.7
+emptyimage[w]=cd_140.0.0,0,4
+emptyimage[nw]=cd_140.0.1,0,4
+emptyimage[n]=cd_140.0.2,0,4
+emptyimage[ne]=cd_140.0.3,0,4
+emptyimage[e]=cd_140.0.4,0,4
+emptyimage[se]=cd_140.0.5,0,4
+emptyimage[s]=cd_140.0.6,0,4
+emptyimage[sw]=cd_140.0.7,0,4
 -------------------------------------
 obj=vehicle
 cost=3611700
@@ -306,14 +306,14 @@ copyright=TommPa9
 length=8
 gear=155
 
-emptyimage[w]=cd_141.0.0
-emptyimage[nw]=cd_141.0.1
-emptyimage[n]=cd_141.0.2
-emptyimage[ne]=cd_141.0.3
-emptyimage[e]=cd_141.0.4
-emptyimage[se]=cd_141.0.5
-emptyimage[s]=cd_141.0.6
-emptyimage[sw]=cd_141.0.7
+emptyimage[w]=cd_141.0.0,0,4
+emptyimage[nw]=cd_141.0.1,0,4
+emptyimage[n]=cd_141.0.2,0,4
+emptyimage[ne]=cd_141.0.3,0,4
+emptyimage[e]=cd_141.0.4,0,4
+emptyimage[se]=cd_141.0.5,0,4
+emptyimage[s]=cd_141.0.6,0,4
+emptyimage[sw]=cd_141.0.7,0,4
 ------------------------------------
 obj=vehicle
 cost=3545400
@@ -331,14 +331,14 @@ copyright=TommPa9
 length=8
 gear=160
 
-emptyimage[w]=cd_151.0.0
-emptyimage[nw]=cd_151.0.1
-emptyimage[n]=cd_151.0.2
-emptyimage[ne]=cd_151.0.3
-emptyimage[e]=cd_151.0.4
-emptyimage[se]=cd_151.0.5
-emptyimage[s]=cd_151.0.6
-emptyimage[sw]=cd_151.0.7
+emptyimage[w]=cd_151.0.0,0,4
+emptyimage[nw]=cd_151.0.1,0,4
+emptyimage[n]=cd_151.0.2,0,4
+emptyimage[ne]=cd_151.0.3,0,4
+emptyimage[e]=cd_151.0.4,0,4
+emptyimage[se]=cd_151.0.5,0,4
+emptyimage[s]=cd_151.0.6,0,4
+emptyimage[sw]=cd_151.0.7,0,4
 
 ------------------------------------------------
 
@@ -359,14 +359,14 @@ copyright=TommPa9
 length=8
 gear=160
 
-emptyimage[w]=cd_150_balkan.0.0
-emptyimage[nw]=cd_150_balkan.0.1
-emptyimage[n]=cd_150_balkan.0.2
-emptyimage[ne]=cd_150_balkan.0.3
-emptyimage[e]=cd_150_balkan.0.4
-emptyimage[se]=cd_150_balkan.0.5
-emptyimage[s]=cd_150_balkan.0.6
-emptyimage[sw]=cd_150_balkan.0.7
+emptyimage[w]=cd_150_balkan.0.0,0,4
+emptyimage[nw]=cd_150_balkan.0.1,0,4
+emptyimage[n]=cd_150_balkan.0.2,0,4
+emptyimage[ne]=cd_150_balkan.0.3,0,4
+emptyimage[e]=cd_150_balkan.0.4,0,4
+emptyimage[se]=cd_150_balkan.0.5,0,4
+emptyimage[s]=cd_150_balkan.0.6,0,4
+emptyimage[sw]=cd_150_balkan.0.7,0,4
 
 --------------------------------------------
 
@@ -386,14 +386,14 @@ copyright=TommPa9
 length=8
 gear=160
 
-emptyimage[w]=cd_151.0.0
-emptyimage[nw]=cd_151.0.1
-emptyimage[n]=cd_151.0.2
-emptyimage[ne]=cd_151.0.3
-emptyimage[e]=cd_151.0.4
-emptyimage[se]=cd_151.0.5
-emptyimage[s]=cd_151.0.6
-emptyimage[sw]=cd_151.0.7
+emptyimage[w]=cd_151.0.0,0,4
+emptyimage[nw]=cd_151.0.1,0,4
+emptyimage[n]=cd_151.0.2,0,4
+emptyimage[ne]=cd_151.0.3,0,4
+emptyimage[e]=cd_151.0.4,0,4
+emptyimage[se]=cd_151.0.5,0,4
+emptyimage[s]=cd_151.0.6,0,4
+emptyimage[sw]=cd_151.0.7,0,4
 
 ---------------------------------
 
@@ -411,14 +411,14 @@ power=4000
 copyright=TommPa9
 length=8
 gear=160
-emptyimage[w]=cd_150_2_balkan.0.0
-emptyimage[nw]=cd_150_2_balkan.0.1
-emptyimage[n]=cd_150_2_balkan.0.2
-emptyimage[ne]=cd_150_2_balkan.0.3
-emptyimage[e]=cd_150_2_balkan.0.4
-emptyimage[se]=cd_150_2_balkan.0.5
-emptyimage[s]=cd_150_2_balkan.0.6
-emptyimage[sw]=cd_150_2_balkan.0.7
+emptyimage[w]=cd_150_2_balkan.0.0,0,4
+emptyimage[nw]=cd_150_2_balkan.0.1,0,4
+emptyimage[n]=cd_150_2_balkan.0.2,0,4
+emptyimage[ne]=cd_150_2_balkan.0.3,0,4
+emptyimage[e]=cd_150_2_balkan.0.4,0,4
+emptyimage[se]=cd_150_2_balkan.0.5,0,4
+emptyimage[s]=cd_150_2_balkan.0.6,0,4
+emptyimage[sw]=cd_150_2_balkan.0.7,0,4
 
 --------------------------------------------
 
@@ -438,14 +438,14 @@ copyright=TommPa9
 length=8
 gear=160
 
-emptyimage[w]=cd_151.0.0
-emptyimage[nw]=cd_151.0.1
-emptyimage[n]=cd_151.0.2
-emptyimage[ne]=cd_151.0.3
-emptyimage[e]=cd_151.0.4
-emptyimage[se]=cd_151.0.5
-emptyimage[s]=cd_151.0.6
-emptyimage[sw]=cd_151.0.7
+emptyimage[w]=cd_151.0.0,0,4
+emptyimage[nw]=cd_151.0.1,0,4
+emptyimage[n]=cd_151.0.2,0,4
+emptyimage[ne]=cd_151.0.3,0,4
+emptyimage[e]=cd_151.0.4,0,4
+emptyimage[se]=cd_151.0.5,0,4
+emptyimage[s]=cd_151.0.6,0,4
+emptyimage[sw]=cd_151.0.7,0,4
 
 ----------------------------------------
 
@@ -465,14 +465,14 @@ copyright=TommPa9
 length=8
 gear=160
 
-emptyimage[w]=cd_151_balkan.0.0
-emptyimage[nw]=cd_151_balkan.0.1
-emptyimage[n]=cd_151_balkan.0.2
-emptyimage[ne]=cd_151_balkan.0.3
-emptyimage[e]=cd_151_balkan.0.4
-emptyimage[se]=cd_151_balkan.0.5
-emptyimage[s]=cd_151_balkan.0.6
-emptyimage[sw]=cd_151_balkan.0.7
+emptyimage[w]=cd_151_balkan.0.0,0,4
+emptyimage[nw]=cd_151_balkan.0.1,0,4
+emptyimage[n]=cd_151_balkan.0.2,0,4
+emptyimage[ne]=cd_151_balkan.0.3,0,4
+emptyimage[e]=cd_151_balkan.0.4,0,4
+emptyimage[se]=cd_151_balkan.0.5,0,4
+emptyimage[s]=cd_151_balkan.0.6,0,4
+emptyimage[sw]=cd_151_balkan.0.7,0,4
 
 ----------------------------
 
@@ -492,14 +492,14 @@ copyright=TommPa9
 length=8
 gear=155
 
-emptyimage[w]=cd_162.0.0
-emptyimage[nw]=cd_162.0.1
-emptyimage[n]=cd_162.0.2
-emptyimage[ne]=cd_162.0.3
-emptyimage[e]=cd_162.0.4
-emptyimage[se]=cd_162.0.5
-emptyimage[s]=cd_162.0.6
-emptyimage[sw]=cd_162.0.7
+emptyimage[w]=cd_162.0.0,0,4
+emptyimage[nw]=cd_162.0.1,0,4
+emptyimage[n]=cd_162.0.2,0,4
+emptyimage[ne]=cd_162.0.3,0,4
+emptyimage[e]=cd_162.0.4,0,4
+emptyimage[se]=cd_162.0.5,0,4
+emptyimage[s]=cd_162.0.6,0,4
+emptyimage[sw]=cd_162.0.7,0,4
 
 ----------------------------------
 
@@ -519,14 +519,14 @@ copyright=TommPa9
 length=8
 gear=155
 
-emptyimage[w]=cd_162_balkan.0.0
-emptyimage[nw]=cd_162_balkan.0.1
-emptyimage[n]=cd_162_balkan.0.2
-emptyimage[ne]=cd_162_balkan.0.3
-emptyimage[e]=cd_162_balkan.0.4
-emptyimage[se]=cd_162_balkan.0.5
-emptyimage[s]=cd_162_balkan.0.6
-emptyimage[sw]=cd_162_balkan.0.7
+emptyimage[w]=cd_162_balkan.0.0,0,4
+emptyimage[nw]=cd_162_balkan.0.1,0,4
+emptyimage[n]=cd_162_balkan.0.2,0,4
+emptyimage[ne]=cd_162_balkan.0.3,0,4
+emptyimage[e]=cd_162_balkan.0.4,0,4
+emptyimage[se]=cd_162_balkan.0.5,0,4
+emptyimage[s]=cd_162_balkan.0.6,0,4
+emptyimage[sw]=cd_162_balkan.0.7,0,4
 
 ------------------------------------------
 
@@ -546,14 +546,14 @@ copyright=TommPa9
 length=8
 gear=155
 
-emptyimage[w]=cd_163.0.0
-emptyimage[nw]=cd_163.0.1
-emptyimage[n]=cd_163.0.2
-emptyimage[ne]=cd_163.0.3
-emptyimage[e]=cd_163.0.4
-emptyimage[se]=cd_163.0.5
-emptyimage[s]=cd_163.0.6
-emptyimage[sw]=cd_163.0.7
+emptyimage[w]=cd_163.0.0,0,4
+emptyimage[nw]=cd_163.0.1,0,4
+emptyimage[n]=cd_163.0.2,0,4
+emptyimage[ne]=cd_163.0.3,0,4
+emptyimage[e]=cd_163.0.4,0,4
+emptyimage[se]=cd_163.0.5,0,4
+emptyimage[s]=cd_163.0.6,0,4
+emptyimage[sw]=cd_163.0.7,0,4
 
 -------------------------------------
 
@@ -573,14 +573,14 @@ copyright=TommPa9
 length=8
 gear=155
 
-emptyimage[w]=cd_163_balkan.0.0
-emptyimage[nw]=cd_163_balkan.0.1
-emptyimage[n]=cd_163_balkan.0.2
-emptyimage[ne]=cd_163_balkan.0.3
-emptyimage[e]=cd_163_balkan.0.4
-emptyimage[se]=cd_163_balkan.0.5
-emptyimage[s]=cd_163_balkan.0.6
-emptyimage[sw]=cd_163_balkan.0.7
+emptyimage[w]=cd_163_balkan.0.0,0,4
+emptyimage[nw]=cd_163_balkan.0.1,0,4
+emptyimage[n]=cd_163_balkan.0.2,0,4
+emptyimage[ne]=cd_163_balkan.0.3,0,4
+emptyimage[e]=cd_163_balkan.0.4,0,4
+emptyimage[se]=cd_163_balkan.0.5,0,4
+emptyimage[s]=cd_163_balkan.0.6,0,4
+emptyimage[sw]=cd_163_balkan.0.7,0,4
 
 ------------------------------------------
 
@@ -600,14 +600,14 @@ copyright=TommPa9
 length=9
 gear=150
 
-emptyimage[w]=cd_180.0.0
-emptyimage[nw]=cd_180.0.1
-emptyimage[n]=cd_180.0.2
-emptyimage[ne]=cd_180.0.3
-emptyimage[e]=cd_180.0.4
-emptyimage[se]=cd_180.0.5
-emptyimage[s]=cd_180.0.6
-emptyimage[sw]=cd_180.0.7
+emptyimage[w]=cd_180.0.0,0,4
+emptyimage[nw]=cd_180.0.1,0,4
+emptyimage[n]=cd_180.0.2,0,4
+emptyimage[ne]=cd_180.0.3,0,4
+emptyimage[e]=cd_180.0.4,0,4
+emptyimage[se]=cd_180.0.5,0,4
+emptyimage[s]=cd_180.0.6,0,4
+emptyimage[sw]=cd_180.0.7,0,4
 -----------------------------------------------
 obj=vehicle
 cost=3936300
@@ -625,14 +625,14 @@ copyright=TommPa9
 length=9
 gear=150
 
-emptyimage[w]=cd_181.0.0
-emptyimage[nw]=cd_181.0.1
-emptyimage[n]=cd_181.0.2
-emptyimage[ne]=cd_181.0.3
-emptyimage[e]=cd_181.0.4
-emptyimage[se]=cd_181.0.5
-emptyimage[s]=cd_181.0.6
-emptyimage[sw]=cd_181.0.7
+emptyimage[w]=cd_181.0.0,0,4
+emptyimage[nw]=cd_181.0.1,0,4
+emptyimage[n]=cd_181.0.2,0,4
+emptyimage[ne]=cd_181.0.3,0,4
+emptyimage[e]=cd_181.0.4,0,4
+emptyimage[se]=cd_181.0.5,0,4
+emptyimage[s]=cd_181.0.6,0,4
+emptyimage[sw]=cd_181.0.7,0,4
 -------------------------------------------
 
 obj=vehicle
@@ -651,13 +651,13 @@ copyright=TommPa9
 length=9
 gear=150
 
-emptyimage[w]=cd_181.0.0
-emptyimage[nw]=cd_181.0.1
-emptyimage[n]=cd_181.0.2
-emptyimage[ne]=cd_181.0.3
-emptyimage[e]=cd_181.0.4
-emptyimage[se]=cd_181.0.5
-emptyimage[s]=cd_181.0.6
-emptyimage[sw]=cd_181.0.7
+emptyimage[w]=cd_181.0.0,0,4
+emptyimage[nw]=cd_181.0.1,0,4
+emptyimage[n]=cd_181.0.2,0,4
+emptyimage[ne]=cd_181.0.3,0,4
+emptyimage[e]=cd_181.0.4,0,4
+emptyimage[se]=cd_181.0.5,0,4
+emptyimage[s]=cd_181.0.6,0,4
+emptyimage[sw]=cd_181.0.7,0,4
 
 -------------------------------------------

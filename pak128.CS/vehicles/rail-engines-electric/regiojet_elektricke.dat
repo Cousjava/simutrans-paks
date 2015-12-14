@@ -16,14 +16,14 @@ copyright=TommPa9
 length=8
 gear=155
 
-emptyimage[w]=rj_162.0.0
-emptyimage[nw]=rj_162.0.1
-emptyimage[n]=rj_162.0.2
-emptyimage[ne]=rj_162.0.3
-emptyimage[e]=rj_162.0.4
-emptyimage[se]=rj_162.0.5
-emptyimage[s]=rj_162.0.6
-emptyimage[sw]=rj_162.0.7
+emptyimage[w]=rj_162.0.0,0,4
+emptyimage[nw]=rj_162.0.1,0,4
+emptyimage[n]=rj_162.0.2,0,4
+emptyimage[ne]=rj_162.0.3,0,4
+emptyimage[e]=rj_162.0.4,0,4
+emptyimage[se]=rj_162.0.5,0,4
+emptyimage[s]=rj_162.0.6,0,4
+emptyimage[sw]=rj_162.0.7,0,4
 
 ----------------------------------------
 
@@ -43,11 +43,11 @@ copyright=TommPa9
 length=8
 gear=155
 
-emptyimage[w]=rj_163.0.0
-emptyimage[nw]=rj_163.0.1
-emptyimage[n]=rj_163.0.2
-emptyimage[ne]=rj_163.0.3
-emptyimage[e]=rj_163.0.4
-emptyimage[se]=rj_163.0.5
-emptyimage[s]=rj_163.0.6
-emptyimage[sw]=rj_163.0.7
+emptyimage[w]=rj_163.0.0,0,4
+emptyimage[nw]=rj_163.0.1,0,4
+emptyimage[n]=rj_163.0.2,0,4
+emptyimage[ne]=rj_163.0.3,0,4
+emptyimage[e]=rj_163.0.4,0,4
+emptyimage[se]=rj_163.0.5,0,4
+emptyimage[s]=rj_163.0.6,0,4
+emptyimage[sw]=rj_163.0.7,0,4
