@@ -20,14 +20,14 @@ copyright=TommPa9
 length=10
 gear=130
 
-emptyimage[w]=db_232.0.0
-emptyimage[nw]=db_232.0.1
-emptyimage[n]=db_232.0.2
-emptyimage[ne]=db_232.0.3
-emptyimage[e]=db_232.0.4
-emptyimage[se]=db_232.0.5
-emptyimage[s]=db_232.0.6
-emptyimage[sw]=db_232.0.7
+emptyimage[w]=db_232.0.0,0,4
+emptyimage[nw]=db_232.0.1,0,4
+emptyimage[n]=db_232.0.2,0,4
+emptyimage[ne]=db_232.0.3,0,4
+emptyimage[e]=db_232.0.4,0,4
+emptyimage[se]=db_232.0.5,0,4
+emptyimage[s]=db_232.0.6,0,4
+emptyimage[sw]=db_232.0.7,0,4
 
 -----------------------------------
 # sergej
@@ -50,11 +50,11 @@ copyright=TommPa9
 length=8
 gear=139
 
-emptyimage[w]=dr_120.0.0
-emptyimage[nw]=dr_120.0.1
-emptyimage[n]=dr_120.0.2
-emptyimage[ne]=dr_120.0.3
-emptyimage[e]=dr_120.0.4
-emptyimage[se]=dr_120.0.5
-emptyimage[s]=dr_120.0.6
-emptyimage[sw]=dr_120.0.7
+emptyimage[w]=dr_120.0.0,0,4
+emptyimage[nw]=dr_120.0.1,0,4
+emptyimage[n]=dr_120.0.2,0,4
+emptyimage[ne]=dr_120.0.3,0,4
+emptyimage[e]=dr_120.0.4,0,4
+emptyimage[se]=dr_120.0.5,0,4
+emptyimage[s]=dr_120.0.6,0,4
+emptyimage[sw]=dr_120.0.7,0,4

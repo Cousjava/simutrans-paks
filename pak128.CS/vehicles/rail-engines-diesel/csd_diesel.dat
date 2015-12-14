@@ -15,14 +15,14 @@ copyright=TommPa9
 length=8
 gear=130
 
-emptyimage[w]=csd_T478_40.0.0
-emptyimage[nw]=csd_T478_40.0.1
-emptyimage[n]=csd_T478_40.0.2
-emptyimage[ne]=csd_T478_40.0.3
-emptyimage[e]=csd_T478_40.0.4
-emptyimage[se]=csd_T478_40.0.5
-emptyimage[s]=csd_T478_40.0.6
-emptyimage[sw]=csd_T478_40.0.7
+emptyimage[w]=csd_T478_40.0.0,0,4
+emptyimage[nw]=csd_T478_40.0.1,0,4
+emptyimage[n]=csd_T478_40.0.2,0,4
+emptyimage[ne]=csd_T478_40.0.3,0,4
+emptyimage[e]=csd_T478_40.0.4,0,4
+emptyimage[se]=csd_T478_40.0.5,0,4
+emptyimage[s]=csd_T478_40.0.6,0,4
+emptyimage[sw]=csd_T478_40.0.7,0,4
 
 -----------------------------------
 
@@ -43,14 +43,14 @@ copyright=TommPa9
 length=8
 gear=130
 
-emptyimage[w]=csd_T478_4.0.0
-emptyimage[nw]=csd_T478_4.0.1
-emptyimage[n]=csd_T478_4.0.2
-emptyimage[ne]=csd_T478_4.0.3
-emptyimage[e]=csd_T478_4.0.4
-emptyimage[se]=csd_T478_4.0.5
-emptyimage[s]=csd_T478_4.0.6
-emptyimage[sw]=csd_T478_4.0.7
+emptyimage[w]=csd_T478_4.0.0,0,4
+emptyimage[nw]=csd_T478_4.0.1,0,4
+emptyimage[n]=csd_T478_4.0.2,0,4
+emptyimage[ne]=csd_T478_4.0.3,0,4
+emptyimage[e]=csd_T478_4.0.4,0,4
+emptyimage[se]=csd_T478_4.0.5,0,4
+emptyimage[s]=csd_T478_4.0.6,0,4
+emptyimage[sw]=csd_T478_4.0.7,0,4
 
 -------------------------------------
 obj=vehicle
@@ -70,14 +70,14 @@ copyright=TommPa9
 length=8
 gear=130
 
-emptyimage[w]=csd_T478_4.0.0
-emptyimage[nw]=csd_T478_4.0.1
-emptyimage[n]=csd_T478_4.0.2
-emptyimage[ne]=csd_T478_4.0.3
-emptyimage[e]=csd_T478_4.0.4
-emptyimage[se]=csd_T478_4.0.5
-emptyimage[s]=csd_T478_4.0.6
-emptyimage[sw]=csd_T478_4.0.7
+emptyimage[w]=csd_T478_4.0.0,0,4
+emptyimage[nw]=csd_T478_4.0.1,0,4
+emptyimage[n]=csd_T478_4.0.2,0,4
+emptyimage[ne]=csd_T478_4.0.3,0,4
+emptyimage[e]=csd_T478_4.0.4,0,4
+emptyimage[se]=csd_T478_4.0.5,0,4
+emptyimage[s]=csd_T478_4.0.6,0,4
+emptyimage[sw]=csd_T478_4.0.7,0,4
 
 -----------------------------------
 
@@ -98,14 +98,14 @@ copyright=TommPa9
 length=8
 gear=130
 
-emptyimage[w]=csd_751_zamracena.0.0
-emptyimage[nw]=csd_751_zamracena.0.1
-emptyimage[n]=csd_751_zamracena.0.2
-emptyimage[ne]=csd_751_zamracena.0.3
-emptyimage[e]=csd_751_zamracena.0.4
-emptyimage[se]=csd_751_zamracena.0.5
-emptyimage[s]=csd_751_zamracena.0.6
-emptyimage[sw]=csd_751_zamracena.0.7
+emptyimage[w]=csd_751_zamracena.0.0,0,4
+emptyimage[nw]=csd_751_zamracena.0.1,0,4
+emptyimage[n]=csd_751_zamracena.0.2,0,4
+emptyimage[ne]=csd_751_zamracena.0.3,0,4
+emptyimage[e]=csd_751_zamracena.0.4,0,4
+emptyimage[se]=csd_751_zamracena.0.5,0,4
+emptyimage[s]=csd_751_zamracena.0.6,0,4
+emptyimage[sw]=csd_751_zamracena.0.7,0,4
 
 -----------------------------------
 
@@ -125,14 +125,14 @@ power=1100
 copyright=TommPa9
 length=8
 gear=130
-emptyimage[w]=csd_749_zamracena1.0.0
-emptyimage[nw]=csd_749_zamracena1.0.1
-emptyimage[n]=csd_749_zamracena1.0.2
-emptyimage[ne]=csd_749_zamracena1.0.3
-emptyimage[e]=csd_749_zamracena1.0.4
-emptyimage[se]=csd_749_zamracena1.0.5
-emptyimage[s]=csd_749_zamracena1.0.6
-emptyimage[sw]=csd_749_zamracena1.0.7
+emptyimage[w]=csd_749_zamracena1.0.0,0,4
+emptyimage[nw]=csd_749_zamracena1.0.1,0,4
+emptyimage[n]=csd_749_zamracena1.0.2,0,4
+emptyimage[ne]=csd_749_zamracena1.0.3,0,4
+emptyimage[e]=csd_749_zamracena1.0.4,0,4
+emptyimage[se]=csd_749_zamracena1.0.5,0,4
+emptyimage[s]=csd_749_zamracena1.0.6,0,4
+emptyimage[sw]=csd_749_zamracena1.0.7,0,4
 ------------------------------------
 
 obj=vehicle
@@ -154,14 +154,14 @@ copyright=TommPa9
 length=8
 gear=139
 
-emptyimage[w]=csd_781_sergej.0.0
-emptyimage[nw]=csd_781_sergej.0.1
-emptyimage[n]=csd_781_sergej.0.2
-emptyimage[ne]=csd_781_sergej.0.3
-emptyimage[e]=csd_781_sergej.0.4
-emptyimage[se]=csd_781_sergej.0.5
-emptyimage[s]=csd_781_sergej.0.6
-emptyimage[sw]=csd_781_sergej.0.7
+emptyimage[w]=csd_781_sergej.0.0,0,4
+emptyimage[nw]=csd_781_sergej.0.1,0,4
+emptyimage[n]=csd_781_sergej.0.2,0,4
+emptyimage[ne]=csd_781_sergej.0.3,0,4
+emptyimage[e]=csd_781_sergej.0.4,0,4
+emptyimage[se]=csd_781_sergej.0.5,0,4
+emptyimage[s]=csd_781_sergej.0.6,0,4
+emptyimage[sw]=csd_781_sergej.0.7,0,4
 
 -----------------------------------------------
 obj=vehicle
@@ -181,14 +181,14 @@ copyright=TommPa9
 length=8
 gear=130
 
-emptyimage[w]=csd_759_Kyklop.0.0
-emptyimage[nw]=csd_759_Kyklop.0.1
-emptyimage[n]=csd_759_Kyklop.0.2
-emptyimage[ne]=csd_759_Kyklop.0.3
-emptyimage[e]=csd_759_Kyklop.0.4
-emptyimage[se]=csd_759_Kyklop.0.5
-emptyimage[s]=csd_759_Kyklop.0.6
-emptyimage[sw]=csd_759_Kyklop.0.7
+emptyimage[w]=csd_759_Kyklop.0.0,0,4
+emptyimage[nw]=csd_759_Kyklop.0.1,0,4
+emptyimage[n]=csd_759_Kyklop.0.2,0,4
+emptyimage[ne]=csd_759_Kyklop.0.3,0,4
+emptyimage[e]=csd_759_Kyklop.0.4,0,4
+emptyimage[se]=csd_759_Kyklop.0.5,0,4
+emptyimage[s]=csd_759_Kyklop.0.6,0,4
+emptyimage[sw]=csd_759_Kyklop.0.7,0,4
 
 -----------------------------------
 
@@ -209,14 +209,14 @@ copyright=TommPa9
 length=8
 gear=135
 
-emptyimage[w]=csd_770.0.0
-emptyimage[nw]=csd_770.0.1
-emptyimage[n]=csd_770.0.2
-emptyimage[ne]=csd_770.0.3
-emptyimage[e]=csd_770.0.4
-emptyimage[se]=csd_770.0.5
-emptyimage[s]=csd_770.0.6
-emptyimage[sw]=csd_770.0.7
+emptyimage[w]=csd_770.0.0,0,4
+emptyimage[nw]=csd_770.0.1,0,4
+emptyimage[n]=csd_770.0.2,0,4
+emptyimage[ne]=csd_770.0.3,0,4
+emptyimage[e]=csd_770.0.4,0,4
+emptyimage[se]=csd_770.0.5,0,4
+emptyimage[s]=csd_770.0.6,0,4
+emptyimage[sw]=csd_770.0.7,0,4
 
 ----------------------------------------------------
 obj=vehicle
@@ -236,14 +236,14 @@ copyright=TommPa9
 length=7
 gear=130
 
-emptyimage[w]=csd_742.0.0
-emptyimage[nw]=csd_742.0.1
-emptyimage[n]=csd_742.0.2
-emptyimage[ne]=csd_742.0.3
-emptyimage[e]=csd_742.0.4
-emptyimage[se]=csd_742.0.5
-emptyimage[s]=csd_742.0.6
-emptyimage[sw]=csd_742.0.7
+emptyimage[w]=csd_742.0.0,0,4
+emptyimage[nw]=csd_742.0.1,0,4
+emptyimage[n]=csd_742.0.2,0,4
+emptyimage[ne]=csd_742.0.3,0,4
+emptyimage[e]=csd_742.0.4,0,4
+emptyimage[se]=csd_742.0.5,0,4
+emptyimage[s]=csd_742.0.6,0,4
+emptyimage[sw]=csd_742.0.7,0,4
 
 -----------------------------------
 
@@ -264,14 +264,14 @@ copyright=TommPa9
 length=7
 gear=130
 
-emptyimage[w]=csd_735.0.0
-emptyimage[nw]=csd_735.0.1
-emptyimage[n]=csd_735.0.2
-emptyimage[ne]=csd_735.0.3
-emptyimage[e]=csd_735.0.4
-emptyimage[se]=csd_735.0.5
-emptyimage[s]=csd_735.0.6
-emptyimage[sw]=csd_735.0.7
+emptyimage[w]=csd_735.0.0,0,4
+emptyimage[nw]=csd_735.0.1,0,4
+emptyimage[n]=csd_735.0.2,0,4
+emptyimage[ne]=csd_735.0.3,0,4
+emptyimage[e]=csd_735.0.4,0,4
+emptyimage[se]=csd_735.0.5,0,4
+emptyimage[s]=csd_735.0.6,0,4
+emptyimage[sw]=csd_735.0.7,0,4
 
 ------------------------------------------
 obj=vehicle
@@ -291,14 +291,14 @@ copyright=TommPa9
 length=8
 gear=130
 
-emptyimage[w]=csd_775_pomeranc.0.0
-emptyimage[nw]=csd_775_pomeranc.0.1
-emptyimage[n]=csd_775_pomeranc.0.2
-emptyimage[ne]=csd_775_pomeranc.0.3
-emptyimage[e]=csd_775_pomeranc.0.4
-emptyimage[se]=csd_775_pomeranc.0.5
-emptyimage[s]=csd_775_pomeranc.0.6
-emptyimage[sw]=csd_775_pomeranc.0.7
+emptyimage[w]=csd_775_pomeranc.0.0,0,4
+emptyimage[nw]=csd_775_pomeranc.0.1,0,4
+emptyimage[n]=csd_775_pomeranc.0.2,0,4
+emptyimage[ne]=csd_775_pomeranc.0.3,0,4
+emptyimage[e]=csd_775_pomeranc.0.4,0,4
+emptyimage[se]=csd_775_pomeranc.0.5,0,4
+emptyimage[s]=csd_775_pomeranc.0.6,0,4
+emptyimage[sw]=csd_775_pomeranc.0.7,0,4
 ------------------------------------------
 obj=vehicle
 cost=3917700
@@ -318,14 +318,14 @@ length=8
 gear=130
 constraint[next][0]=CSD_T_698.0_Kokakola_2
 
-emptyimage[w]=csd_T698_cocacola.0.0
-emptyimage[nw]=csd_T698_cocacola.0.1
-emptyimage[n]=csd_T698_cocacola.0.2
-emptyimage[ne]=csd_T698_cocacola.0.3
-emptyimage[e]=csd_T698_cocacola.0.4
-emptyimage[se]=csd_T698_cocacola.0.5
-emptyimage[s]=csd_T698_cocacola.0.6
-emptyimage[sw]=csd_T698_cocacola.0.7
+emptyimage[w]=csd_T698_cocacola.0.0,0,4
+emptyimage[nw]=csd_T698_cocacola.0.1,0,4
+emptyimage[n]=csd_T698_cocacola.0.2,0,4
+emptyimage[ne]=csd_T698_cocacola.0.3,0,4
+emptyimage[e]=csd_T698_cocacola.0.4,0,4
+emptyimage[se]=csd_T698_cocacola.0.5,0,4
+emptyimage[s]=csd_T698_cocacola.0.6,0,4
+emptyimage[sw]=csd_T698_cocacola.0.7,0,4
 ------------------------------------------
 obj=vehicle
 cost=3917700
@@ -344,14 +344,14 @@ copyright=TommPa9
 length=8
 gear=130
 constraint[prev][0]=CSD_T_698.0_Kokakola_1
-emptyimage[w]=csd_T698_cocacola.1.0
-emptyimage[nw]=csd_T698_cocacola.1.1
-emptyimage[n]=csd_T698_cocacola.1.2
-emptyimage[ne]=csd_T698_cocacola.1.3
-emptyimage[e]=csd_T698_cocacola.1.4
-emptyimage[se]=csd_T698_cocacola.1.5
-emptyimage[s]=csd_T698_cocacola.1.6
-emptyimage[sw]=csd_T698_cocacola.1.7
+emptyimage[w]=csd_T698_cocacola.1.0,0,4
+emptyimage[nw]=csd_T698_cocacola.1.1,0,4
+emptyimage[n]=csd_T698_cocacola.1.2,0,4
+emptyimage[ne]=csd_T698_cocacola.1.3,0,4
+emptyimage[e]=csd_T698_cocacola.1.4,0,4
+emptyimage[se]=csd_T698_cocacola.1.5,0,4
+emptyimage[s]=csd_T698_cocacola.1.6,0,4
+emptyimage[sw]=csd_T698_cocacola.1.7,0,4
 
 ---------------------------------------
 
@@ -372,14 +372,14 @@ copyright=TommPa9
 length=8
 gear=130
 
-emptyimage[w]=csd_776_pomeranc1.0.0
-emptyimage[nw]=csd_776_pomeranc1.0.1
-emptyimage[n]=csd_776_pomeranc1.0.2
-emptyimage[ne]=csd_776_pomeranc1.0.3
-emptyimage[e]=csd_776_pomeranc1.0.4
-emptyimage[se]=csd_776_pomeranc1.0.5
-emptyimage[s]=csd_776_pomeranc1.0.6
-emptyimage[sw]=csd_776_pomeranc1.0.7
+emptyimage[w]=csd_776_pomeranc1.0.0,0,4
+emptyimage[nw]=csd_776_pomeranc1.0.1,0,4
+emptyimage[n]=csd_776_pomeranc1.0.2,0,4
+emptyimage[ne]=csd_776_pomeranc1.0.3,0,4
+emptyimage[e]=csd_776_pomeranc1.0.4,0,4
+emptyimage[se]=csd_776_pomeranc1.0.5,0,4
+emptyimage[s]=csd_776_pomeranc1.0.6,0,4
+emptyimage[sw]=csd_776_pomeranc1.0.7,0,4
 ---------------------------------------
 obj=vehicle
 cost=4131300
@@ -400,14 +400,14 @@ copyright=TommPa9
 length=10
 gear=130
 
-emptyimage[w]=csd_T679_2_ragulin.0.0
-emptyimage[nw]=csd_T679_2_ragulin.0.1
-emptyimage[n]=csd_T679_2_ragulin.0.2
-emptyimage[ne]=csd_T679_2_ragulin.0.3
-emptyimage[e]=csd_T679_2_ragulin.0.4
-emptyimage[se]=csd_T679_2_ragulin.0.5
-emptyimage[s]=csd_T679_2_ragulin.0.6
-emptyimage[sw]=csd_T679_2_ragulin.0.7
+emptyimage[w]=csd_T679_2_ragulin.0.0,0,4
+emptyimage[nw]=csd_T679_2_ragulin.0.1,0,4
+emptyimage[n]=csd_T679_2_ragulin.0.2,0,4
+emptyimage[ne]=csd_T679_2_ragulin.0.3,0,4
+emptyimage[e]=csd_T679_2_ragulin.0.4,0,4
+emptyimage[se]=csd_T679_2_ragulin.0.5,0,4
+emptyimage[s]=csd_T679_2_ragulin.0.6,0,4
+emptyimage[sw]=csd_T679_2_ragulin.0.7,0,4
 ------------------------------
 obj=vehicle
 cost=5231400
@@ -429,14 +429,14 @@ length=10
 gear=130
 constraint[next][0]=CSD_R_(tendr)
 
-emptyimage[w]=csd_TL659_turbinka1.0.0
-emptyimage[nw]=csd_TL659_turbinka1.0.1
-emptyimage[n]=csd_TL659_turbinka1.0.2
-emptyimage[ne]=csd_TL659_turbinka1.0.3
-emptyimage[e]=csd_TL659_turbinka1.0.4
-emptyimage[se]=csd_TL659_turbinka1.0.5
-emptyimage[s]=csd_TL659_turbinka1.0.6
-emptyimage[sw]=csd_TL659_turbinka1.0.7
+emptyimage[w]=csd_TL659_turbinka1.0.0,0,4
+emptyimage[nw]=csd_TL659_turbinka1.0.1,0,4
+emptyimage[n]=csd_TL659_turbinka1.0.2,0,4
+emptyimage[ne]=csd_TL659_turbinka1.0.3,0,4
+emptyimage[e]=csd_TL659_turbinka1.0.4,0,4
+emptyimage[se]=csd_TL659_turbinka1.0.5,0,4
+emptyimage[s]=csd_TL659_turbinka1.0.6,0,4
+emptyimage[sw]=csd_TL659_turbinka1.0.7,0,4
 ----------------------------------------------
 
 obj=vehicle
@@ -459,14 +459,14 @@ length=10
 gear=130
 constraint[next][0]=CSD_R_(tendr)
 
-emptyimage[w]=csd_TL659_turbinka2.0.0
-emptyimage[nw]=csd_TL659_turbinka2.0.1
-emptyimage[n]=csd_TL659_turbinka2.0.2
-emptyimage[ne]=csd_TL659_turbinka2.0.3
-emptyimage[e]=csd_TL659_turbinka2.0.4
-emptyimage[se]=csd_TL659_turbinka2.0.5
-emptyimage[s]=csd_TL659_turbinka2.0.6
-emptyimage[sw]=csd_TL659_turbinka2.0.7
+emptyimage[w]=csd_TL659_turbinka2.0.0,0,4
+emptyimage[nw]=csd_TL659_turbinka2.0.1,0,4
+emptyimage[n]=csd_TL659_turbinka2.0.2,0,4
+emptyimage[ne]=csd_TL659_turbinka2.0.3,0,4
+emptyimage[e]=csd_TL659_turbinka2.0.4,0,4
+emptyimage[se]=csd_TL659_turbinka2.0.5,0,4
+emptyimage[s]=csd_TL659_turbinka2.0.6,0,4
+emptyimage[sw]=csd_TL659_turbinka2.0.7,0,4
 
 ----------------------------------------
 obj=vehicle
@@ -488,14 +488,14 @@ length=4
 constraint[prev][0]=CSD_TL659.001_Turbinka
 constraint[prev][1]=CSD_TL659.002_Turbinka
 
-emptyimage[w]=csd_R.0.0
-emptyimage[nw]=csd_R.0.1
-emptyimage[n]=csd_R.0.2
-emptyimage[ne]=csd_R.0.3
-emptyimage[e]=csd_R.0.4
-emptyimage[se]=csd_R.0.5
-emptyimage[s]=csd_R.0.6
-emptyimage[sw]=csd_R.0.7
+emptyimage[w]=csd_R.0.0,0,4
+emptyimage[nw]=csd_R.0.1,0,4
+emptyimage[n]=csd_R.0.2,0,4
+emptyimage[ne]=csd_R.0.3,0,4
+emptyimage[e]=csd_R.0.4,0,4
+emptyimage[se]=csd_R.0.5,0,4
+emptyimage[s]=csd_R.0.6,0,4
+emptyimage[sw]=csd_R.0.7,0,4
 obj=vehicle
 cost=2103900
 speed=70
@@ -513,14 +513,14 @@ copyright=TommPa9
 length=7
 gear=130
 
-emptyimage[w]=csd_740.0.0
-emptyimage[nw]=csd_740.0.1
-emptyimage[n]=csd_740.0.2
-emptyimage[ne]=csd_740.0.3
-emptyimage[e]=csd_740.0.4
-emptyimage[se]=csd_740.0.5
-emptyimage[s]=csd_740.0.6
-emptyimage[sw]=csd_740.0.7
+emptyimage[w]=csd_740.0.0,0,4
+emptyimage[nw]=csd_740.0.1,0,4
+emptyimage[n]=csd_740.0.2,0,4
+emptyimage[ne]=csd_740.0.3,0,4
+emptyimage[e]=csd_740.0.4,0,4
+emptyimage[se]=csd_740.0.5,0,4
+emptyimage[s]=csd_740.0.6,0,4
+emptyimage[sw]=csd_740.0.7,0,4
 ----------------------------
 obj=vehicle
 cost=1667400
@@ -539,14 +539,14 @@ copyright=TommPa9
 length=6
 gear=130
 
-emptyimage[w]=csd_720.0.0
-emptyimage[nw]=csd_720.0.1
-emptyimage[n]=csd_720.0.2
-emptyimage[ne]=csd_720.0.3
-emptyimage[e]=csd_720.0.4
-emptyimage[se]=csd_720.0.5
-emptyimage[s]=csd_720.0.6
-emptyimage[sw]=csd_720.0.7
+emptyimage[w]=csd_720.0.0,0,4
+emptyimage[nw]=csd_720.0.1,0,4
+emptyimage[n]=csd_720.0.2,0,4
+emptyimage[ne]=csd_720.0.3,0,4
+emptyimage[e]=csd_720.0.4,0,4
+emptyimage[se]=csd_720.0.5,0,4
+emptyimage[s]=csd_720.0.6,0,4
+emptyimage[sw]=csd_720.0.7,0,4
 ----------------------------
 
 obj=vehicle
@@ -566,14 +566,14 @@ copyright=TommPa9
 length=7
 gear=130
 
-emptyimage[w]=csd_721.0.0
-emptyimage[nw]=csd_721.0.1
-emptyimage[n]=csd_721.0.2
-emptyimage[ne]=csd_721.0.3
-emptyimage[e]=csd_721.0.4
-emptyimage[se]=csd_721.0.5
-emptyimage[s]=csd_721.0.6
-emptyimage[sw]=csd_721.0.7
+emptyimage[w]=csd_721.0.0,0,4
+emptyimage[nw]=csd_721.0.1,0,4
+emptyimage[n]=csd_721.0.2,0,4
+emptyimage[ne]=csd_721.0.3,0,4
+emptyimage[e]=csd_721.0.4,0,4
+emptyimage[se]=csd_721.0.5,0,4
+emptyimage[s]=csd_721.0.6,0,4
+emptyimage[sw]=csd_721.0.7,0,4
 
 ----------------------------
 obj=vehicle
@@ -593,11 +593,11 @@ copyright=TommPa9
 length=6
 gear=130
 
-emptyimage[w]=csd_715.0.0
-emptyimage[nw]=csd_715.0.1
-emptyimage[n]=csd_715.0.2
-emptyimage[ne]=csd_715.0.3
-emptyimage[e]=csd_715.0.4
-emptyimage[se]=csd_715.0.5
-emptyimage[s]=csd_715.0.6
-emptyimage[sw]=csd_715.0.7
+emptyimage[w]=csd_715.0.0,0,4
+emptyimage[nw]=csd_715.0.1,0,4
+emptyimage[n]=csd_715.0.2,0,4
+emptyimage[ne]=csd_715.0.3,0,4
+emptyimage[e]=csd_715.0.4,0,4
+emptyimage[se]=csd_715.0.5,0,4
+emptyimage[s]=csd_715.0.6,0,4
+emptyimage[sw]=csd_715.0.7,0,4

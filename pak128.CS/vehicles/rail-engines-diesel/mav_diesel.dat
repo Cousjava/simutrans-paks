@@ -18,12 +18,12 @@ copyright=TommPa9
 length=8
 gear=139
 
-emptyimage[w]=mav_62_sergej.0.0
-emptyimage[nw]=mav_62_sergej.0.1
-emptyimage[n]=mav_62_sergej.0.2
-emptyimage[ne]=mav_62_sergej.0.3
-emptyimage[e]=mav_62_sergej.0.4
-emptyimage[se]=mav_62_sergej.0.5
-emptyimage[s]=mav_62_sergej.0.6
-emptyimage[sw]=mav_62_sergej.0.7
+emptyimage[w]=mav_62_sergej.0.0,0,4
+emptyimage[nw]=mav_62_sergej.0.1,0,4
+emptyimage[n]=mav_62_sergej.0.2,0,4
+emptyimage[ne]=mav_62_sergej.0.3,0,4
+emptyimage[e]=mav_62_sergej.0.4,0,4
+emptyimage[se]=mav_62_sergej.0.5,0,4
+emptyimage[s]=mav_62_sergej.0.6,0,4
+emptyimage[sw]=mav_62_sergej.0.7,0,4
 ------------------------------------

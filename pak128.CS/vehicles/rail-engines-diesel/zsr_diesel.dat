@@ -15,12 +15,12 @@ copyright=TommPa9
 length=8
 gear=130
 
-emptyimage[w]=zsr_750.0.0
-emptyimage[nw]=zsr_750.0.1
-emptyimage[n]=zsr_750.0.2
-emptyimage[ne]=zsr_750.0.3
-emptyimage[e]=zsr_750.0.4
-emptyimage[se]=zsr_750.0.5
-emptyimage[s]=zsr_750.0.6
-emptyimage[sw]=zsr_750.0.7
+emptyimage[w]=zsr_750.0.0,0,4
+emptyimage[nw]=zsr_750.0.1,0,4
+emptyimage[n]=zsr_750.0.2,0,4
+emptyimage[ne]=zsr_750.0.3,0,4
+emptyimage[e]=zsr_750.0.4,0,4
+emptyimage[se]=zsr_750.0.5,0,4
+emptyimage[s]=zsr_750.0.6,0,4
+emptyimage[sw]=zsr_750.0.7,0,4
 ------------------------------------

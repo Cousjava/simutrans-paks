@@ -16,12 +16,12 @@ copyright=TommPa9
 length=8
 gear=130
 
-emptyimage[w]=unipetroldoprava_753.0.0
-emptyimage[nw]=unipetroldoprava_753.0.1
-emptyimage[n]=unipetroldoprava_753.0.2
-emptyimage[ne]=unipetroldoprava_753.0.3
-emptyimage[e]=unipetroldoprava_753.0.4
-emptyimage[se]=unipetroldoprava_753.0.5
-emptyimage[s]=unipetroldoprava_753.0.6
-emptyimage[sw]=unipetroldoprava_753.0.7
+emptyimage[w]=unipetroldoprava_753.0.0,0,4
+emptyimage[nw]=unipetroldoprava_753.0.1,0,4
+emptyimage[n]=unipetroldoprava_753.0.2,0,4
+emptyimage[ne]=unipetroldoprava_753.0.3,0,4
+emptyimage[e]=unipetroldoprava_753.0.4,0,4
+emptyimage[se]=unipetroldoprava_753.0.5,0,4
+emptyimage[s]=unipetroldoprava_753.0.6,0,4
+emptyimage[sw]=unipetroldoprava_753.0.7,0,4
 ---------------------------------------------

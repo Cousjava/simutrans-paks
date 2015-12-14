@@ -14,12 +14,12 @@ copyright=TommPa9
 length=8
 gear=130
 
-emptyimage[w]=zssk_750_blonski.0.0
-emptyimage[nw]=zssk_750_blonski.0.1
-emptyimage[n]=zssk_750_blonski.0.2
-emptyimage[ne]=zssk_750_blonski.0.3
-emptyimage[e]=zssk_750_blonski.0.4
-emptyimage[se]=zssk_750_blonski.0.5
-emptyimage[s]=zssk_750_blonski.0.6
-emptyimage[sw]=zssk_750_blonski.0.7
+emptyimage[w]=zssk_750_blonski.0.0,0,4
+emptyimage[nw]=zssk_750_blonski.0.1,0,4
+emptyimage[n]=zssk_750_blonski.0.2,0,4
+emptyimage[ne]=zssk_750_blonski.0.3,0,4
+emptyimage[e]=zssk_750_blonski.0.4,0,4
+emptyimage[se]=zssk_750_blonski.0.5,0,4
+emptyimage[s]=zssk_750_blonski.0.6,0,4
+emptyimage[sw]=zssk_750_blonski.0.7,0,4
 

@@ -16,12 +16,12 @@ copyright=TommPa9
 length=8
 gear=130
 
-emptyimage[w]=viamont_753.0.0
-emptyimage[nw]=viamont_753.0.1
-emptyimage[n]=viamont_753.0.2
-emptyimage[ne]=viamont_753.0.3
-emptyimage[e]=viamont_753.0.4
-emptyimage[se]=viamont_753.0.5
-emptyimage[s]=viamont_753.0.6
-emptyimage[sw]=viamont_753.0.7
+emptyimage[w]=viamont_753.0.0,0,4
+emptyimage[nw]=viamont_753.0.1,0,4
+emptyimage[n]=viamont_753.0.2,0,4
+emptyimage[ne]=viamont_753.0.3,0,4
+emptyimage[e]=viamont_753.0.4,0,4
+emptyimage[se]=viamont_753.0.5,0,4
+emptyimage[s]=viamont_753.0.6,0,4
+emptyimage[sw]=viamont_753.0.7,0,4
 ----------------------------------------------
