@@ -7,7 +7,7 @@ copyright=Raven
 # required productivity with cf.: 630
 
 DistributionWeight=20
-Location=City
+Location=Land
 
 Productivity=600
 Range=40

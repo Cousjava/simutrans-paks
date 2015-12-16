@@ -2,7 +2,7 @@ Obj=factory
 name=oilkraftwerk
 copyright=Patrick
 
-Location=City
+Location=Land
 DistributionWeight=10
 
 Productivity=600
