@@ -30,23 +30,23 @@ constraint[prev][7]=CD_451_2_(balkan)
 constraint[prev][8]=none
 
 
-emptyimage[w]=csd_451_z.0.0
-emptyimage[nw]=csd_451_z.0.1
-emptyimage[n]=csd_451_z.0.2
-emptyimage[ne]=csd_451_z.0.3
-emptyimage[e]=csd_451_z.0.4
-emptyimage[se]=csd_451_z.0.5
-emptyimage[s]=csd_451_z.0.6
-emptyimage[sw]=csd_451_z.0.7
+emptyimage[w]=csd_451_z.0.0,0,4
+emptyimage[nw]=csd_451_z.0.1,0,4
+emptyimage[n]=csd_451_z.0.2,0,4
+emptyimage[ne]=csd_451_z.0.3,0,4
+emptyimage[e]=csd_451_z.0.4,0,4
+emptyimage[se]=csd_451_z.0.5,0,4
+emptyimage[s]=csd_451_z.0.6,0,4
+emptyimage[sw]=csd_451_z.0.7,0,4
 
-freightimage[w]=csd_451.0.0
-freightimage[nw]=csd_451.0.1
-freightimage[n]=csd_451.0.2
-freightimage[ne]=csd_451.0.3
-freightimage[e]=csd_451.0.4
-freightimage[se]=csd_451.0.5
-freightimage[s]=csd_451.0.6
-freightimage[sw]=csd_451.0.7
+freightimage[w]=csd_451.0.0,0,4
+freightimage[nw]=csd_451.0.1,0,4
+freightimage[n]=csd_451.0.2,0,4
+freightimage[ne]=csd_451.0.3,0,4
+freightimage[e]=csd_451.0.4,0,4
+freightimage[se]=csd_451.0.5,0,4
+freightimage[s]=csd_451.0.6,0,4
+freightimage[sw]=csd_451.0.7,0,4
 
 -----------------------------
 
@@ -70,23 +70,23 @@ constraint[prev][0]=CSD_EM_475.1_Zabotlam
 constraint[next][0]=CSD_N_475.1
 constraint[next][1]=CSD_EM_475.1_zadni
 
-emptyimage[w]=csd_451_z.1.0
-emptyimage[nw]=csd_451_z.1.1
-emptyimage[n]=csd_451_z.1.2
-emptyimage[ne]=csd_451_z.1.3
-emptyimage[e]=csd_451_z.1.4
-emptyimage[se]=csd_451_z.1.5
-emptyimage[s]=csd_451_z.1.6
-emptyimage[sw]=csd_451_z.1.7
+emptyimage[w]=csd_451_z.1.0,0,4
+emptyimage[nw]=csd_451_z.1.1,0,4
+emptyimage[n]=csd_451_z.1.2,0,4
+emptyimage[ne]=csd_451_z.1.3,0,4
+emptyimage[e]=csd_451_z.1.4,0,4
+emptyimage[se]=csd_451_z.1.5,0,4
+emptyimage[s]=csd_451_z.1.6,0,4
+emptyimage[sw]=csd_451_z.1.7,0,4
 
-freightimage[w]=csd_451.1.0
-freightimage[nw]=csd_451.1.1
-freightimage[n]=csd_451.1.2
-freightimage[ne]=csd_451.1.3
-freightimage[e]=csd_451.1.4
-freightimage[se]=csd_451.1.5
-freightimage[s]=csd_451.1.6
-freightimage[sw]=csd_451.1.7
+freightimage[w]=csd_451.1.0,0,4
+freightimage[nw]=csd_451.1.1,0,4
+freightimage[n]=csd_451.1.2,0,4
+freightimage[ne]=csd_451.1.3,0,4
+freightimage[e]=csd_451.1.4,0,4
+freightimage[se]=csd_451.1.5,0,4
+freightimage[s]=csd_451.1.6,0,4
+freightimage[sw]=csd_451.1.7,0,4
 
 ---------------------------
 
@@ -119,23 +119,23 @@ constraint[next][6]=CD_452_Lochneska_(balkan)
 constraint[next][7]=CD_451_Zabotlam_(balkan)
 constraint[next][8]=none
 
-emptyimage[w]=csd_451_z.2.0
-emptyimage[nw]=csd_451_z.2.1
-emptyimage[n]=csd_451_z.2.2
-emptyimage[ne]=csd_451_z.2.3
-emptyimage[e]=csd_451_z.2.4
-emptyimage[se]=csd_451_z.2.5
-emptyimage[s]=csd_451_z.2.6
-emptyimage[sw]=csd_451_z.2.7
+emptyimage[w]=csd_451_z.2.0,0,4
+emptyimage[nw]=csd_451_z.2.1,0,4
+emptyimage[n]=csd_451_z.2.2,0,4
+emptyimage[ne]=csd_451_z.2.3,0,4
+emptyimage[e]=csd_451_z.2.4,0,4
+emptyimage[se]=csd_451_z.2.5,0,4
+emptyimage[s]=csd_451_z.2.6,0,4
+emptyimage[sw]=csd_451_z.2.7,0,4
 
-freightimage[w]=csd_451.2.0
-freightimage[nw]=csd_451.2.1
-freightimage[n]=csd_451.2.2
-freightimage[ne]=csd_451.2.3
-freightimage[e]=csd_451.2.4
-freightimage[se]=csd_451.2.5
-freightimage[s]=csd_451.2.6
-freightimage[sw]=csd_451.2.7
+freightimage[w]=csd_451.2.0,0,4
+freightimage[nw]=csd_451.2.1,0,4
+freightimage[n]=csd_451.2.2,0,4
+freightimage[ne]=csd_451.2.3,0,4
+freightimage[e]=csd_451.2.4,0,4
+freightimage[se]=csd_451.2.5,0,4
+freightimage[s]=csd_451.2.6,0,4
+freightimage[sw]=csd_451.2.7,0,4
 
 ---------------------------------------------------
 
@@ -169,23 +169,23 @@ constraint[prev][6]=CD_452_2_(balkan)
 constraint[prev][7]=CD_451_2_(balkan)
 constraint[prev][8]=none
 
-emptyimage[w]=csd_451_z.0.0
-emptyimage[nw]=csd_451_z.0.1
-emptyimage[n]=csd_451_z.0.2
-emptyimage[ne]=csd_451_z.0.3
-emptyimage[e]=csd_451_z.0.4
-emptyimage[se]=csd_451_z.0.5
-emptyimage[s]=csd_451_z.0.6
-emptyimage[sw]=csd_451_z.0.7
+emptyimage[w]=csd_451_z.0.0,0,4
+emptyimage[nw]=csd_451_z.0.1,0,4
+emptyimage[n]=csd_451_z.0.2,0,4
+emptyimage[ne]=csd_451_z.0.3,0,4
+emptyimage[e]=csd_451_z.0.4,0,4
+emptyimage[se]=csd_451_z.0.5,0,4
+emptyimage[s]=csd_451_z.0.6,0,4
+emptyimage[sw]=csd_451_z.0.7,0,4
 
-freightimage[w]=csd_451.0.0
-freightimage[nw]=csd_451.0.1
-freightimage[n]=csd_451.0.2
-freightimage[ne]=csd_451.0.3
-freightimage[e]=csd_451.0.4
-freightimage[se]=csd_451.0.5
-freightimage[s]=csd_451.0.6
-freightimage[sw]=csd_451.0.7
+freightimage[w]=csd_451.0.0,0,4
+freightimage[nw]=csd_451.0.1,0,4
+freightimage[n]=csd_451.0.2,0,4
+freightimage[ne]=csd_451.0.3,0,4
+freightimage[e]=csd_451.0.4,0,4
+freightimage[se]=csd_451.0.5,0,4
+freightimage[s]=csd_451.0.6,0,4
+freightimage[sw]=csd_451.0.7,0,4
 
 -----------------------------
 
@@ -209,23 +209,23 @@ constraint[prev][0]=CSD_EM_475.2_Lochneska
 constraint[next][0]=CSD_N_475.2
 constraint[next][1]=CSD_EM_475.2_zadni
 
-emptyimage[w]=csd_451_z.1.0
-emptyimage[nw]=csd_451_z.1.1
-emptyimage[n]=csd_451_z.1.2
-emptyimage[ne]=csd_451_z.1.3
-emptyimage[e]=csd_451_z.1.4
-emptyimage[se]=csd_451_z.1.5
-emptyimage[s]=csd_451_z.1.6
-emptyimage[sw]=csd_451_z.1.7
+emptyimage[w]=csd_451_z.1.0,0,4
+emptyimage[nw]=csd_451_z.1.1,0,4
+emptyimage[n]=csd_451_z.1.2,0,4
+emptyimage[ne]=csd_451_z.1.3,0,4
+emptyimage[e]=csd_451_z.1.4,0,4
+emptyimage[se]=csd_451_z.1.5,0,4
+emptyimage[s]=csd_451_z.1.6,0,4
+emptyimage[sw]=csd_451_z.1.7,0,4
 
-freightimage[w]=csd_451.1.0
-freightimage[nw]=csd_451.1.1
-freightimage[n]=csd_451.1.2
-freightimage[ne]=csd_451.1.3
-freightimage[e]=csd_451.1.4
-freightimage[se]=csd_451.1.5
-freightimage[s]=csd_451.1.6
-freightimage[sw]=csd_451.1.7
+freightimage[w]=csd_451.1.0,0,4
+freightimage[nw]=csd_451.1.1,0,4
+freightimage[n]=csd_451.1.2,0,4
+freightimage[ne]=csd_451.1.3,0,4
+freightimage[e]=csd_451.1.4,0,4
+freightimage[se]=csd_451.1.5,0,4
+freightimage[s]=csd_451.1.6,0,4
+freightimage[sw]=csd_451.1.7,0,4
 
 ---------------------------
 
@@ -258,23 +258,23 @@ constraint[next][6]=CD_452_Lochneska_(balkan)
 constraint[next][7]=CD_451_Zabotlam_(balkan)
 constraint[next][8]=none
 
-emptyimage[w]=csd_451_z.2.0
-emptyimage[nw]=csd_451_z.2.1
-emptyimage[n]=csd_451_z.2.2
-emptyimage[ne]=csd_451_z.2.3
-emptyimage[e]=csd_451_z.2.4
-emptyimage[se]=csd_451_z.2.5
-emptyimage[s]=csd_451_z.2.6
-emptyimage[sw]=csd_451_z.2.7
+emptyimage[w]=csd_451_z.2.0,0,4
+emptyimage[nw]=csd_451_z.2.1,0,4
+emptyimage[n]=csd_451_z.2.2,0,4
+emptyimage[ne]=csd_451_z.2.3,0,4
+emptyimage[e]=csd_451_z.2.4,0,4
+emptyimage[se]=csd_451_z.2.5,0,4
+emptyimage[s]=csd_451_z.2.6,0,4
+emptyimage[sw]=csd_451_z.2.7,0,4
 
-freightimage[w]=csd_451.2.0
-freightimage[nw]=csd_451.2.1
-freightimage[n]=csd_451.2.2
-freightimage[ne]=csd_451.2.3
-freightimage[e]=csd_451.2.4
-freightimage[se]=csd_451.2.5
-freightimage[s]=csd_451.2.6
-freightimage[sw]=csd_451.2.7
+freightimage[w]=csd_451.2.0,0,4
+freightimage[nw]=csd_451.2.1,0,4
+freightimage[n]=csd_451.2.2,0,4
+freightimage[ne]=csd_451.2.3,0,4
+freightimage[e]=csd_451.2.4,0,4
+freightimage[se]=csd_451.2.5,0,4
+freightimage[s]=csd_451.2.6,0,4
+freightimage[sw]=csd_451.2.7,0,4
 
 -----------------------------
 
@@ -309,23 +309,23 @@ constraint[prev][7]=CD_451_2_(balkan)
 constraint[prev][8]=none
 
 
-emptyimage[w]=csd_452_bz.0.0
-emptyimage[nw]=csd_452_bz.0.1
-emptyimage[n]=csd_452_bz.0.2
-emptyimage[ne]=csd_452_bz.0.3
-emptyimage[e]=csd_452_bz.0.4
-emptyimage[se]=csd_452_bz.0.5
-emptyimage[s]=csd_452_bz.0.6
-emptyimage[sw]=csd_452_bz.0.7
+emptyimage[w]=csd_452_bz.0.0,0,4
+emptyimage[nw]=csd_452_bz.0.1,0,4
+emptyimage[n]=csd_452_bz.0.2,0,4
+emptyimage[ne]=csd_452_bz.0.3,0,4
+emptyimage[e]=csd_452_bz.0.4,0,4
+emptyimage[se]=csd_452_bz.0.5,0,4
+emptyimage[s]=csd_452_bz.0.6,0,4
+emptyimage[sw]=csd_452_bz.0.7,0,4
 
-freightimage[w]=csd_452_b.0.0
-freightimage[nw]=csd_452_b.0.1
-freightimage[n]=csd_452_b.0.2
-freightimage[ne]=csd_452_b.0.3
-freightimage[e]=csd_452_b.0.4
-freightimage[se]=csd_452_b.0.5
-freightimage[s]=csd_452_b.0.6
-freightimage[sw]=csd_452_b.0.7
+freightimage[w]=csd_452_b.0.0,0,4
+freightimage[nw]=csd_452_b.0.1,0,4
+freightimage[n]=csd_452_b.0.2,0,4
+freightimage[ne]=csd_452_b.0.3,0,4
+freightimage[e]=csd_452_b.0.4,0,4
+freightimage[se]=csd_452_b.0.5,0,4
+freightimage[s]=csd_452_b.0.6,0,4
+freightimage[sw]=csd_452_b.0.7,0,4
 
 -----------------------------
 
@@ -348,23 +348,23 @@ constraint[prev][1]=CSD_051
 constraint[prev][0]=CSD_451_Zabotlam
 constraint[next][0]=CSD_051
 constraint[next][1]=CSD_451_2
-emptyimage[w]=csd_452_bz.1.0
-emptyimage[nw]=csd_452_bz.1.1
-emptyimage[n]=csd_452_bz.1.2
-emptyimage[ne]=csd_452_bz.1.3
-emptyimage[e]=csd_452_bz.1.4
-emptyimage[se]=csd_452_bz.1.5
-emptyimage[s]=csd_452_bz.1.6
-emptyimage[sw]=csd_452_bz.1.7
+emptyimage[w]=csd_452_bz.1.0,0,4
+emptyimage[nw]=csd_452_bz.1.1,0,4
+emptyimage[n]=csd_452_bz.1.2,0,4
+emptyimage[ne]=csd_452_bz.1.3,0,4
+emptyimage[e]=csd_452_bz.1.4,0,4
+emptyimage[se]=csd_452_bz.1.5,0,4
+emptyimage[s]=csd_452_bz.1.6,0,4
+emptyimage[sw]=csd_452_bz.1.7,0,4
 
-freightimage[w]=csd_452_b.1.0
-freightimage[nw]=csd_452_b.1.1
-freightimage[n]=csd_452_b.1.2
-freightimage[ne]=csd_452_b.1.3
-freightimage[e]=csd_452_b.1.4
-freightimage[se]=csd_452_b.1.5
-freightimage[s]=csd_452_b.1.6
-freightimage[sw]=csd_452_b.1.7
+freightimage[w]=csd_452_b.1.0,0,4
+freightimage[nw]=csd_452_b.1.1,0,4
+freightimage[n]=csd_452_b.1.2,0,4
+freightimage[ne]=csd_452_b.1.3,0,4
+freightimage[e]=csd_452_b.1.4,0,4
+freightimage[se]=csd_452_b.1.5,0,4
+freightimage[s]=csd_452_b.1.6,0,4
+freightimage[sw]=csd_452_b.1.7,0,4
 
 ---------------------------
 
@@ -397,23 +397,23 @@ constraint[next][6]=CD_452_Lochneska_(balkan)
 constraint[next][7]=CD_451_Zabotlam_(balkan)
 constraint[next][8]=none
 
-emptyimage[w]=csd_452_bz.2.0
-emptyimage[nw]=csd_452_bz.2.1
-emptyimage[n]=csd_452_bz.2.2
-emptyimage[ne]=csd_452_bz.2.3
-emptyimage[e]=csd_452_bz.2.4
-emptyimage[se]=csd_452_bz.2.5
-emptyimage[s]=csd_452_bz.2.6
-emptyimage[sw]=csd_452_bz.2.7
+emptyimage[w]=csd_452_bz.2.0,0,4
+emptyimage[nw]=csd_452_bz.2.1,0,4
+emptyimage[n]=csd_452_bz.2.2,0,4
+emptyimage[ne]=csd_452_bz.2.3,0,4
+emptyimage[e]=csd_452_bz.2.4,0,4
+emptyimage[se]=csd_452_bz.2.5,0,4
+emptyimage[s]=csd_452_bz.2.6,0,4
+emptyimage[sw]=csd_452_bz.2.7,0,4
 
-freightimage[w]=csd_452_b.2.0
-freightimage[nw]=csd_452_b.2.1
-freightimage[n]=csd_452_b.2.2
-freightimage[ne]=csd_452_b.2.3
-freightimage[e]=csd_452_b.2.4
-freightimage[se]=csd_452_b.2.5
-freightimage[s]=csd_452_b.2.6
-freightimage[sw]=csd_452_b.2.7
+freightimage[w]=csd_452_b.2.0,0,4
+freightimage[nw]=csd_452_b.2.1,0,4
+freightimage[n]=csd_452_b.2.2,0,4
+freightimage[ne]=csd_452_b.2.3,0,4
+freightimage[e]=csd_452_b.2.4,0,4
+freightimage[se]=csd_452_b.2.5,0,4
+freightimage[s]=csd_452_b.2.6,0,4
+freightimage[sw]=csd_452_b.2.7,0,4
 
 ---------------------------------------------------
 
@@ -448,23 +448,23 @@ constraint[prev][7]=CD_451_2_(balkan)
 constraint[prev][8]=none
 
 
-emptyimage[w]=csd_452_bz.0.0
-emptyimage[nw]=csd_452_bz.0.1
-emptyimage[n]=csd_452_bz.0.2
-emptyimage[ne]=csd_452_bz.0.3
-emptyimage[e]=csd_452_bz.0.4
-emptyimage[se]=csd_452_bz.0.5
-emptyimage[s]=csd_452_bz.0.6
-emptyimage[sw]=csd_452_bz.0.7
+emptyimage[w]=csd_452_bz.0.0,0,4
+emptyimage[nw]=csd_452_bz.0.1,0,4
+emptyimage[n]=csd_452_bz.0.2,0,4
+emptyimage[ne]=csd_452_bz.0.3,0,4
+emptyimage[e]=csd_452_bz.0.4,0,4
+emptyimage[se]=csd_452_bz.0.5,0,4
+emptyimage[s]=csd_452_bz.0.6,0,4
+emptyimage[sw]=csd_452_bz.0.7,0,4
 
-freightimage[w]=csd_452_b.0.0
-freightimage[nw]=csd_452_b.0.1
-freightimage[n]=csd_452_b.0.2
-freightimage[ne]=csd_452_b.0.3
-freightimage[e]=csd_452_b.0.4
-freightimage[se]=csd_452_b.0.5
-freightimage[s]=csd_452_b.0.6
-freightimage[sw]=csd_452_b.0.7
+freightimage[w]=csd_452_b.0.0,0,4
+freightimage[nw]=csd_452_b.0.1,0,4
+freightimage[n]=csd_452_b.0.2,0,4
+freightimage[ne]=csd_452_b.0.3,0,4
+freightimage[e]=csd_452_b.0.4,0,4
+freightimage[se]=csd_452_b.0.5,0,4
+freightimage[s]=csd_452_b.0.6,0,4
+freightimage[sw]=csd_452_b.0.7,0,4
 
 -----------------------------
 
@@ -488,23 +488,23 @@ constraint[prev][0]=CSD_452_Lochneska
 constraint[next][0]=CSD_052
 constraint[next][1]=CSD_452_2
 
-emptyimage[w]=csd_452_bz.1.0
-emptyimage[nw]=csd_452_bz.1.1
-emptyimage[n]=csd_452_bz.1.2
-emptyimage[ne]=csd_452_bz.1.3
-emptyimage[e]=csd_452_bz.1.4
-emptyimage[se]=csd_452_bz.1.5
-emptyimage[s]=csd_452_bz.1.6
-emptyimage[sw]=csd_452_bz.1.7
+emptyimage[w]=csd_452_bz.1.0,0,4
+emptyimage[nw]=csd_452_bz.1.1,0,4
+emptyimage[n]=csd_452_bz.1.2,0,4
+emptyimage[ne]=csd_452_bz.1.3,0,4
+emptyimage[e]=csd_452_bz.1.4,0,4
+emptyimage[se]=csd_452_bz.1.5,0,4
+emptyimage[s]=csd_452_bz.1.6,0,4
+emptyimage[sw]=csd_452_bz.1.7,0,4
 
-freightimage[w]=csd_452_b.1.0
-freightimage[nw]=csd_452_b.1.1
-freightimage[n]=csd_452_b.1.2
-freightimage[ne]=csd_452_b.1.3
-freightimage[e]=csd_452_b.1.4
-freightimage[se]=csd_452_b.1.5
-freightimage[s]=csd_452_b.1.6
-freightimage[sw]=csd_452_b.1.7
+freightimage[w]=csd_452_b.1.0,0,4
+freightimage[nw]=csd_452_b.1.1,0,4
+freightimage[n]=csd_452_b.1.2,0,4
+freightimage[ne]=csd_452_b.1.3,0,4
+freightimage[e]=csd_452_b.1.4,0,4
+freightimage[se]=csd_452_b.1.5,0,4
+freightimage[s]=csd_452_b.1.6,0,4
+freightimage[sw]=csd_452_b.1.7,0,4
 
 ---------------------------
 
@@ -537,22 +537,22 @@ constraint[next][6]=CD_452_Lochneska_(balkan)
 constraint[next][7]=CD_451_Zabotlam_(balkan)
 constraint[next][8]=none
 
-emptyimage[w]=csd_452_bz.2.0
-emptyimage[nw]=csd_452_bz.2.1
-emptyimage[n]=csd_452_bz.2.2
-emptyimage[ne]=csd_452_bz.2.3
-emptyimage[e]=csd_452_bz.2.4
-emptyimage[se]=csd_452_bz.2.5
-emptyimage[s]=csd_452_bz.2.6
-emptyimage[sw]=csd_452_bz.2.7
+emptyimage[w]=csd_452_bz.2.0,0,4
+emptyimage[nw]=csd_452_bz.2.1,0,4
+emptyimage[n]=csd_452_bz.2.2,0,4
+emptyimage[ne]=csd_452_bz.2.3,0,4
+emptyimage[e]=csd_452_bz.2.4,0,4
+emptyimage[se]=csd_452_bz.2.5,0,4
+emptyimage[s]=csd_452_bz.2.6,0,4
+emptyimage[sw]=csd_452_bz.2.7,0,4
 
-freightimage[w]=csd_452_b.2.0
-freightimage[nw]=csd_452_b.2.1
-freightimage[n]=csd_452_b.2.2
-freightimage[ne]=csd_452_b.2.3
-freightimage[e]=csd_452_b.2.4
-freightimage[se]=csd_452_b.2.5
-freightimage[s]=csd_452_b.2.6
-freightimage[sw]=csd_452_b.2.7
+freightimage[w]=csd_452_b.2.0,0,4
+freightimage[nw]=csd_452_b.2.1,0,4
+freightimage[n]=csd_452_b.2.2,0,4
+freightimage[ne]=csd_452_b.2.3,0,4
+freightimage[e]=csd_452_b.2.4,0,4
+freightimage[se]=csd_452_b.2.5,0,4
+freightimage[s]=csd_452_b.2.6,0,4
+freightimage[sw]=csd_452_b.2.7,0,4
 
 -------------------------------------------
