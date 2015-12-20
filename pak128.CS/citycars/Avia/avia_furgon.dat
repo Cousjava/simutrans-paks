@@ -1,7 +1,7 @@
 # Avia A21 furgon VB
 obj=citycar
 Name=Avia_A21_Furgon_VB
-DistributionWeight=8
+DistributionWeight=80
 copyright=TommPa9
 speed=90
 intro_year=1975

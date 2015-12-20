@@ -1,7 +1,7 @@
 # LADA 1600 NIVA VB
 obj=citycar
 Name=LADA_1600_NIVA_VB
-DistributionWeight=8
+DistributionWeight=80
 copyright=TommPa9
 speed=138
 intro_year=1976

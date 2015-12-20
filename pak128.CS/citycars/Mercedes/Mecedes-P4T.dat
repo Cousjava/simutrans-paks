@@ -3,7 +3,7 @@ speed=210
 name=Mercedes_G500_biely
 intro_year=2010
 retire_year=2030
-DistributionWeight=2
+DistributionWeight=20
 copyright=P4T SK1LL3R
 
 image[ne]=Mercedes_G500_biely.0.1
@@ -20,7 +20,7 @@ speed=210
 name=Mercedes_G500_cierny
 intro_year=2010
 retire_year=2030
-DistributionWeight=2
+DistributionWeight=20
 copyright=P4T SK1LL3R
 
 image[ne]=Mercedes_G500_cierny.0.1
@@ -37,7 +37,7 @@ speed=210
 name=Mercedes_G500_hnedy
 intro_year=2010
 retire_year=2030
-DistributionWeight=1
+DistributionWeight=10
 copyright=P4T SK1LL3R
 
 image[ne]=Mercedes_G500_hnedy.0.1

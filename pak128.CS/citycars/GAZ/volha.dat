@@ -1,7 +1,7 @@
 # GAZ 24 Volha Taxi
 obj=citycar
 Name=GAZ_24_Volha_Taxi
-DistributionWeight=8
+DistributionWeight=80
 copyright=TommPa9
 speed=145
 intro_year=1968
@@ -18,7 +18,7 @@ Image[sw]=GAZ_24_Volha_taxi.0.8
 # GAZ 24 Volha black
 obj=citycar
 Name=GAZ_24_Volha_black
-DistributionWeight=8
+DistributionWeight=80
 copyright=TommPa9
 speed=145
 intro_year=1968
@@ -35,7 +35,7 @@ Image[sw]=GAZ_24_Volha_black.0.8
 # GAZ 24 Volha blue
 obj=citycar
 Name=GAZ_24_Volha_blue
-DistributionWeight=8
+DistributionWeight=80
 copyright=TommPa9
 speed=145
 intro_year=1968
@@ -52,7 +52,7 @@ Image[sw]=GAZ_24_Volha_blue.0.8
 # GAZ 24 Volha VB
 obj=citycar
 Name=GAZ_24_Volha_VB
-DistributionWeight=8
+DistributionWeight=80
 copyright=TommPa9
 speed=145
 intro_year=1968
@@ -69,7 +69,7 @@ Image[sw]=GAZ_24_Volha_VB.0.8
 # GAZ 24 Volha white
 obj=citycar
 Name=GAZ_24_Volha_white
-DistributionWeight=8
+DistributionWeight=80
 copyright=TommPa9
 speed=145
 intro_year=1968
@@ -86,7 +86,7 @@ Image[sw]=GAZ_24_Volha_white.0.8
 # GAZ 21 Volha SNB
 obj=citycar
 Name=GAZ_21_Volha SNB
-DistributionWeight=8
+DistributionWeight=80
 copyright=TommPa9
 speed=95
 intro_year=1956

@@ -1,7 +1,7 @@
 # TATRA 148 CAS 32 VB
 obj=citycar
 Name=TATRA_148_CAS_32_VB
-DistributionWeight=8
+DistributionWeight=80
 copyright=TommPa9
 speed=80
 intro_year=1980

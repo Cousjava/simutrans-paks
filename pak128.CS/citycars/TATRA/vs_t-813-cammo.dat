@@ -1,7 +1,7 @@
 Obj=citycar
 Name=VS_T-813-cammo
 copyright=Vladimir Slavik & Napik
-DistributionWeight=1
+DistributionWeight=10
 intro_year=1960
 intro_month=1
 retire_year=1990

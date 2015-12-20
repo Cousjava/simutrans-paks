@@ -1,7 +1,7 @@
 # ROBUR 2500 FR3-M SNB
 obj=citycar
 Name=ROBUR_2500_FR3-M_SNB
-DistributionWeight=8
+DistributionWeight=80
 copyright=TommPa9
 speed=80
 intro_year=1961

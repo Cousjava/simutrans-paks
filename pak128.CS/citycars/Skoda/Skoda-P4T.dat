@@ -3,7 +3,7 @@ speed=130
 name=Skoda_120L_zelena
 intro_year=1976
 retire_year=1987
-DistributionWeight=2
+DistributionWeight=20
 copyright=P4T SK1LL3R
 
 image[ne]=Skoda_120L_zelena.0.0
@@ -20,7 +20,7 @@ speed=130
 name=Skoda_120L_modra
 intro_year=1976
 retire_year=1987
-DistributionWeight=2
+DistributionWeight=20
 copyright=P4T SK1LL3R
 
 image[ne]=Skoda_120L_modra.0.0
@@ -37,7 +37,7 @@ speed=130
 name=Skoda_120L_telova
 intro_year=1976
 retire_year=1987
-DistributionWeight=2
+DistributionWeight=20
 copyright=P4T SK1LL3R
 
 image[ne]=Skoda_120L_telova.0.0

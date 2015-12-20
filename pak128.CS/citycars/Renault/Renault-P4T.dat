@@ -3,7 +3,7 @@ speed=135
 name=Renault_Trafic_cerveny
 intro_year=2001
 retire_year=2020
-DistributionWeight=2
+DistributionWeight=20
 copyright=P4T SK1LL3R
 
 image[ne]=Renault_Trafic_c.0.1
@@ -20,7 +20,7 @@ speed=135
 name=Renault_Trafic_modry
 intro_year=2001
 retire_year=2020
-DistributionWeight=1
+DistributionWeight=10
 copyright=P4T SK1LL3R
 
 image[ne]=Renault_Trafic_m.0.1
@@ -37,7 +37,7 @@ speed=135
 name=Renault_Trafic_biely
 intro_year=2001
 retire_year=2020
-DistributionWeight=2
+DistributionWeight=20
 copyright=P4T SK1LL3R
 
 image[ne]=Renault_Trafic_b.0.1
