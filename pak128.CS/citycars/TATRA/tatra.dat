@@ -1,0 +1,15 @@
+# TATRA 148 CAS 32 VB
+obj=citycar
+Name=TATRA_148_CAS_32_VB
+DistributionWeight=8
+speed=80
+intro_year=1980
+retire_year=1990
+Image[w]=Tatra_148_CAS_32_VB.0.1
+Image[nw]=Tatra_148_CAS_32_VB.0.2
+Image[n]=Tatra_148_CAS_32_VB.0.3
+Image[ne]=Tatra_148_CAS_32_VB.0.4
+Image[e]=Tatra_148_CAS_32_VB.0.5
+Image[se]=Tatra_148_CAS_32_VB.0.6
+Image[s]=Tatra_148_CAS_32_VB.0.7
+Image[sw]=Tatra_148_CAS_32_VB.0.8

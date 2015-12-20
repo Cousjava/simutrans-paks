@@ -1,0 +1,16 @@
+# Avia A21 furgon VB
+obj=citycar
+Name=Avia_A21_Furgon_VB
+DistributionWeight=8
+speed=90
+intro_year=1975
+retire_year=1990
+Image[w]=Avia_21_Furgon_VB.0.1
+Image[nw]=Avia_21_Furgon_VB.0.2
+Image[n]=Avia_21_Furgon_VB.0.3
+Image[ne]=Avia_21_Furgon_VB.0.4
+Image[e]=Avia_21_Furgon_VB.0.5
+Image[se]=Avia_21_Furgon_VB.0.6
+Image[s]=Avia_21_Furgon_VB.0.7
+Image[sw]=Avia_21_Furgon_VB.0.8
+--------------------------

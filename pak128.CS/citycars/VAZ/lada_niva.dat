@@ -1,0 +1,16 @@
+# LADA 1600 NIVA VB
+obj=citycar
+Name=LADA_1600_NIVA_VB
+DistributionWeight=8
+speed=138
+intro_year=1976
+retire_year=1990
+Image[w]=Lada_1600_Niva_VB.0.1
+Image[nw]=Lada_1600_Niva_VB.0.2
+Image[n]=Lada_1600_Niva_VB.0.3
+Image[ne]=Lada_1600_Niva_VB.0.4
+Image[e]=Lada_1600_Niva_VB.0.5
+Image[se]=Lada_1600_Niva_VB.0.6
+Image[s]=Lada_1600_Niva_VB.0.7
+Image[sw]=Lada_1600_Niva_VB.0.8
+--------------------------

@@ -1,0 +1,33 @@
+# VAZ 2102 Zigulik red
+obj=citycar
+Name=VAZ_2102_Zigulik_red
+DistributionWeight=8
+speed=110
+intro_year=1974
+retire_year=1981
+Image[w]=VAZ_2102_Zigulik_red.0.1
+Image[nw]=VAZ_2102_Zigulik_red.0.2
+Image[n]=VAZ_2102_Zigulik_red.0.3
+Image[ne]=VAZ_2102_Zigulik_red.0.4
+Image[e]=VAZ_2102_Zigulik_red.0.5
+Image[se]=VAZ_2102_Zigulik_red.0.6
+Image[s]=VAZ_2102_Zigulik_red.0.7
+Image[sw]=VAZ_2102_Zigulik_red.0.8
+--------------------------
+# VAZ 2102 Zigulik VB
+obj=citycar
+Name=VAZ_2102_Zigulik_VB
+DistributionWeight=8
+speed=110
+intro_year=1974
+retire_year=1981
+Image[w]=VAZ_2102_Zigulik_VB.0.1
+Image[nw]=VAZ_2102_Zigulik_VB.0.2
+Image[n]=VAZ_2102_Zigulik_VB.0.3
+Image[ne]=VAZ_2102_Zigulik_VB.0.4
+Image[e]=VAZ_2102_Zigulik_VB.0.5
+Image[se]=VAZ_2102_Zigulik_VB.0.6
+Image[s]=VAZ_2102_Zigulik_VB.0.7
+Image[sw]=VAZ_2102_Zigulik_VB.0.8
+--------------------------
+

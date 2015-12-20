@@ -1,0 +1,32 @@
+# SKODA 1202 SNB
+obj=citycar
+Name=SKODA_1202_SNB
+DistributionWeight=8
+speed=110
+intro_year=1961
+retire_year=1973
+Image[w]=Skoda_1202_SNB.0.1
+Image[nw]=Skoda_1202_SNB.0.2
+Image[n]=Skoda_1202_SNB.0.3
+Image[ne]=Skoda_1202_SNB.0.4
+Image[e]=Skoda_1202_SNB.0.5
+Image[se]=Skoda_1202_SNB.0.6
+Image[s]=Skoda_1202_SNB.0.7
+Image[sw]=Skoda_1202_SNB.0.8
+--------------------------
+# SKODA 1202 sanita
+obj=citycar
+Name=SKODA_1202_sanita
+DistributionWeight=8
+speed=110
+intro_year=1961
+retire_year=1973
+Image[w]=Skoda_1202_sanita.0.1
+Image[nw]=Skoda_1202_sanita.0.2
+Image[n]=Skoda_1202_sanita.0.3
+Image[ne]=Skoda_1202_sanita.0.4
+Image[e]=Skoda_1202_sanita.0.5
+Image[se]=Skoda_1202_sanita.0.6
+Image[s]=Skoda_1202_sanita.0.7
+Image[sw]=Skoda_1202_sanita.0.8
+--------------------------

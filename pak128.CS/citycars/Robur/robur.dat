@@ -1,0 +1,16 @@
+# ROBUR 2500 FR3-M SNB
+obj=citycar
+Name=ROBUR_2500_FR3-M_SNB
+DistributionWeight=8
+speed=80
+intro_year=1961
+retire_year=1973
+Image[w]=Robur_2500_FR3-M_SNB.0.1
+Image[nw]=Robur_2500_FR3-M_SNB.0.2
+Image[n]=Robur_2500_FR3-M_SNB.0.3
+Image[ne]=Robur_2500_FR3-M_SNB.0.4
+Image[e]=Robur_2500_FR3-M_SNB.0.5
+Image[se]=Robur_2500_FR3-M_SNB.0.6
+Image[s]=Robur_2500_FR3-M_SNB.0.7
+Image[sw]=Robur_2500_FR3-M_SNB.0.8
+--------------------------
