@@ -2,6 +2,7 @@
 obj=citycar
 Name=LADA_1600_NIVA_VB
 DistributionWeight=8
+copyright=TommPa9
 speed=138
 intro_year=1976
 retire_year=1990

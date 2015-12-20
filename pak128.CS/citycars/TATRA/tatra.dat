@@ -2,6 +2,7 @@
 obj=citycar
 Name=TATRA_148_CAS_32_VB
 DistributionWeight=8
+copyright=TommPa9
 speed=80
 intro_year=1980
 retire_year=1990

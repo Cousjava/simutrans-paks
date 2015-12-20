@@ -2,6 +2,7 @@
 obj=citycar
 Name=Avia_A21_Furgon_VB
 DistributionWeight=8
+copyright=TommPa9
 speed=90
 intro_year=1975
 retire_year=1990

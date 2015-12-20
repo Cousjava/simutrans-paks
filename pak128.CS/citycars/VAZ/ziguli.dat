@@ -2,6 +2,7 @@
 obj=citycar
 Name=VAZ_2102_Zigulik_red
 DistributionWeight=8
+copyright=TommPa9
 speed=110
 intro_year=1974
 retire_year=1981
@@ -18,6 +19,7 @@ Image[sw]=VAZ_2102_Zigulik_red.0.8
 obj=citycar
 Name=VAZ_2102_Zigulik_VB
 DistributionWeight=8
+copyright=TommPa9
 speed=110
 intro_year=1974
 retire_year=1981

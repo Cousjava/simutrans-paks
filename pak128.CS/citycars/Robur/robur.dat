@@ -2,6 +2,7 @@
 obj=citycar
 Name=ROBUR_2500_FR3-M_SNB
 DistributionWeight=8
+copyright=TommPa9
 speed=80
 intro_year=1961
 retire_year=1973

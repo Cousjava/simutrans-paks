@@ -2,6 +2,7 @@
 obj=citycar
 Name=SKODA_1202_SNB
 DistributionWeight=8
+copyright=TommPa9
 speed=110
 intro_year=1961
 retire_year=1973
@@ -18,6 +19,7 @@ Image[sw]=Skoda_1202_SNB.0.8
 obj=citycar
 Name=SKODA_1202_sanita
 DistributionWeight=8
+copyright=TommPa9
 speed=110
 intro_year=1961
 retire_year=1973
