@@ -1,0 +1,18 @@
+# SKODA 656
+# painted by TommPa9, .dat file by jk271
+obj=citycar
+Name=SKODA_656
+DistributionWeight=10
+copyright=TommPa9
+speed=40
+intro_year=1934
+retire_year=1937
+Image[w]=Skoda_656.0.1
+Image[nw]=Skoda_656.0.2
+Image[n]=Skoda_656.0.3
+Image[ne]=Skoda_656.0.4
+Image[e]=Skoda_656.0.5
+Image[se]=Skoda_656.0.6
+Image[s]=Skoda_656.0.7
+Image[sw]=Skoda_656.0.8
+--------------------------

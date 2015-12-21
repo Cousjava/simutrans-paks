@@ -80,6 +80,7 @@ DIRS128 += special_buildings/townhalls
 DIRS128 += citycars
 DIRS128 += citycars/Avia
 DIRS128 += citycars/GAZ
+DIRS128 += citycars/Liaz
 DIRS128 += citycars/Mercedes
 DIRS128 += citycars/Renault
 DIRS128 += citycars/Robur

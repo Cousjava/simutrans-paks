@@ -1,0 +1,21 @@
+# SKODA 30 (traktor)
+# author: TommPa9
+# soubor .dat a pozicovani: jk271
+obj=citycar
+Name=Liaz_Dakar
+DistributionWeight=40
+copyright=TommPa9
+speed=150
+# instro_year ?
+intro_year=2007
+# retire_year ?
+retire_year=2017
+Image[w]=liaz_dakar.0.1
+Image[nw]=liaz_dakar.0.2
+Image[n]=liaz_dakar.0.3
+Image[ne]=liaz_dakar.0.4
+Image[e]=liaz_dakar.0.5
+Image[se]=liaz_dakar.0.6
+Image[s]=liaz_dakar.0.7
+Image[sw]=liaz_dakar.0.8
+--------------------------

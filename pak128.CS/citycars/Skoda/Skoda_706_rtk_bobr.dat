@@ -1,0 +1,20 @@
+# SKODA 706 RTK Bobr
+# painted by TommPa9, .dat file by jk271
+obj=citycar
+Name=SKODA_706_RTK_Bobr
+DistributionWeight=80
+copyright=TommPa9
+speed=55
+# intro_year=??
+intro_year=1958
+# retire_year=??
+retire_year=1985
+Image[w]=Skoda_706_rtk_bobr.0.1
+Image[nw]=Skoda_706_rtk_bobr.0.2
+Image[n]=Skoda_706_rtk_bobr.0.3
+Image[ne]=Skoda_706_rtk_bobr.0.4
+Image[e]=Skoda_706_rtk_bobr.0.5
+Image[se]=Skoda_706_rtk_bobr.0.6
+Image[s]=Skoda_706_rtk_bobr.0.7
+Image[sw]=Skoda_706_rtk_bobr.0.8
+--------------------------

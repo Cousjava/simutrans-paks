@@ -1,0 +1,20 @@
+# SKODA 30 (traktor)
+# author: TommPa9
+# soubor .dat a pozicovani: jk271
+obj=citycar
+Name=SKODA_30
+DistributionWeight=80
+copyright=TommPa9
+speed=20
+intro_year=1946
+# retire_year ?
+retire_year=1951
+Image[w]=Skoda_30.0.1
+Image[nw]=Skoda_30.0.2
+Image[n]=Skoda_30.0.3
+Image[ne]=Skoda_30.0.4
+Image[e]=Skoda_30.0.5
+Image[se]=Skoda_30.0.6
+Image[s]=Skoda_30.0.7
+Image[sw]=Skoda_30.0.8
+--------------------------
