@@ -1,0 +1,18 @@
+# Iveco Eurocargo
+# nakreslil: TommPa9
+# .dat file a pozicovani: jk271
+obj=citycar
+Name=Iveco_Eurocargo
+DistributionWeight=80
+copyright=TommPa9
+speed=90
+intro_year=1991
+Image[w]=Iveco_Eurocargo.0.1
+Image[nw]=Iveco_Eurocargo.0.2
+Image[n]=Iveco_Eurocargo.0.3
+Image[ne]=Iveco_Eurocargo.0.4
+Image[e]=Iveco_Eurocargo.0.5
+Image[se]=Iveco_Eurocargo.0.6
+Image[s]=Iveco_Eurocargo.0.7
+Image[sw]=Iveco_Eurocargo.0.8
+--------------------------

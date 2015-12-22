@@ -1,0 +1,20 @@
+# UNC 060
+# author: TommPa9
+# soubor .dat a pozicovani: jk271
+obj=citycar
+Name=UNC_060
+DistributionWeight=10
+copyright=TommPa9
+speed=20
+intro_year=1981
+retire_year=1992
+Image[w]=unc_060.0.1
+Image[nw]=unc_060.0.2
+Image[n]=unc_060.0.3
+Image[ne]=unc_060.0.4
+Image[e]=unc_060.0.5
+Image[se]=unc_060.0.6
+Image[s]=unc_060.0.7
+Image[sw]=unc_060.0.8
+--------------------------
+

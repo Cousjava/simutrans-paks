@@ -1,0 +1,19 @@
+--------------------------
+# Ford Transit (Ceska Posta)
+# author: TommPa9
+# soubor .dat a pozicovani: jk271
+obj=citycar
+Name=Ford_Transit_CP
+DistributionWeight=80
+copyright=TommPa9
+speed=150
+intro_year=2011
+Image[w]=Ford_Transit_CP.0.1
+Image[nw]=Ford_Transit_CP.0.2
+Image[n]=Ford_Transit_CP.0.3
+Image[ne]=Ford_Transit_CP.0.4
+Image[e]=Ford_Transit_CP.0.5
+Image[se]=Ford_Transit_CP.0.6
+Image[s]=Ford_Transit_CP.0.7
+Image[sw]=Ford_Transit_CP.0.8
+--------------------------
