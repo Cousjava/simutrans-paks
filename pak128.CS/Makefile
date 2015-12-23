@@ -54,6 +54,7 @@ DIRS128VEHICLES += rail-psg+mail/842_843
 DIRS128VEHICLES += rail-psg+mail/850_851
 DIRS128VEHICLES += rail-psg+mail/860
 DIRS128VEHICLES += road-cargo
+DIRS128VEHICLES += road-cargo/LaK
 DIRS128VEHICLES += road-psg+mail
 DIRS128VEHICLES += road-psg+mail/IRISBUS_IVECO
 DIRS128VEHICLES += road-psg+mail/KAROSA
