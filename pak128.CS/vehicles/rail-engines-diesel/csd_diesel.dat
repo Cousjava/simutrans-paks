@@ -496,6 +496,7 @@ emptyimage[e]=csd_R.0.4,0,4
 emptyimage[se]=csd_R.0.5,0,4
 emptyimage[s]=csd_R.0.6,0,4
 emptyimage[sw]=csd_R.0.7,0,4
+----------------------------
 obj=vehicle
 cost=2103900
 speed=70
