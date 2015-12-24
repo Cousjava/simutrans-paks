@@ -1,0 +1,16 @@
+Obj=building
+Name=tramdepot_2000
+copyright=VTPsim
+type=depot
+waytype=tram_track
+intro_year=2000
+Dims=1,1,4
+NoInfo=1
+icon=> tramdepot_2000.1.2
+cursor=tramdepot_2000.1.3
+FrontImage[0][0][0][0][0][0]=tramdepot_2000.0.0
+BackImage[0][0][0][0][0][0]=tramdepot_2000.1.0
+FrontImage[1][0][0][0][0][0]=tramdepot_2000.0.1
+BackImage[1][0][0][0][0][0]=tramdepot_2000.1.1
+FrontImage[2][0][0][0][0][0]=tramdepot_2000.0.2
+FrontImage[3][0][0][0][0][0]=tramdepot_2000.0.3
