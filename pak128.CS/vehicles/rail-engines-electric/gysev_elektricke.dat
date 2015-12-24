@@ -1,0 +1,26 @@
+# utf-8
+# GySEV - maďarská železniční společnost
+-------------------------------------
+obj=vehicle
+cost=6534000
+speed=230
+weight=86
+runningcost=289
+name=gysev_1047
+intro_year=2000
+retire_year=2050
+waytype=track
+engine_type=Electric
+power=6400
+copyright=lubak91/TommPa9
+length=10
+gear=160
+emptyimage[w]=gysev_1047.0.0,0,4
+emptyimage[nw]=gysev_1047.0.1,0,4
+emptyimage[n]=gysev_1047.0.2,0,4
+emptyimage[ne]=gysev_1047.0.3,0,4
+emptyimage[e]=gysev_1047.0.4,0,4
+emptyimage[se]=gysev_1047.0.5,0,4
+emptyimage[s]=gysev_1047.0.6,0,4
+emptyimage[sw]=gysev_1047.0.7,0,4
+-----------------------------------
