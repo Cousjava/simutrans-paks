@@ -8,12 +8,20 @@ copyright=Vladimir Slavik
 # 5 images, of which one is snow (if specified in factory file)
 # hence year is divided into four parts, each of three months
 
-Image[0]=fields_agriculture.2.1
-Image[1]=fields_agriculture.2.2
-Image[2]=fields_agriculture.2.3
-Image[3]=fields_agriculture.2.0
+Image[0]=fields_agriculture.2.0
+Image[1]=fields_agriculture.2.0
+Image[2]=fields_agriculture.2.0
+Image[3]=fields_agriculture.2.1
+Image[4]=fields_agriculture.2.1
+Image[5]=fields_agriculture.2.2
+Image[6]=fields_agriculture.2.2
+Image[7]=fields_agriculture.2.3
+Image[8]=fields_agriculture.2.3
+Image[9]=fields_agriculture.2.0
+Image[10]=fields_agriculture.2.0
+Image[11]=fields_agriculture.2.0
 # last image is for snow
-Image[4]=fields_agriculture.0.0
+Image[12]=fields_agriculture.0.0
 
 ----------------------------------
 
