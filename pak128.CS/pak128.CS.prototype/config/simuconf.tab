@@ -256,6 +256,21 @@ cost_multiply_remove_haus = 1000
 cost_transformer=2500
 cost_maintain_transformer=100
 
+
+###################################other stuff##################################
+#
+# also pak dependent
+#
+
+# minimum distance between two townhalls
+#minimum_city_distance = 16
+
+# Minimum distance of a city attraction to other special buildings
+#special_building_distance = 3
+
+# Minimum clearance under bridges is 1 or 2 levels? (default = conversion factor)
+way_height_clearance = 2
+
 # if set, no lakes will be created at all
 no_lakes = 0
 
