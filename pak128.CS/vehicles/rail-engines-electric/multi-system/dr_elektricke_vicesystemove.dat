@@ -1,0 +1,27 @@
+-------------------------------
+# 15kV 16 2/3 Hz, 3kV =
+obj=vehicle
+cost=3728400
+speed=120
+weight=87
+runningcost=271
+fixed_cost=2081
+name=DR_230
+intro_year=1991
+retire_year=1996
+waytype=track
+engine_type=Electric
+power=3080
+copyright=TommPa9
+length=8
+gear=155
+
+emptyimage[w]=db_180.0.0,0,4
+emptyimage[nw]=db_180.0.1,0,4
+emptyimage[n]=db_180.0.2,0,4
+emptyimage[ne]=db_180.0.3,0,4
+emptyimage[e]=db_180.0.4,0,4
+emptyimage[se]=db_180.0.5,0,4
+emptyimage[s]=db_180.0.6,0,4
+emptyimage[sw]=db_180.0.7,0,4
+-------------------------

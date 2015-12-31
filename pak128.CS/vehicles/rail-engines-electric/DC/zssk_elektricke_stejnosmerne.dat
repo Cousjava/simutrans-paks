@@ -175,14 +175,14 @@ copyright=TommPa9
 length=8
 gear=155
 
-emptyimage[w]=zssk_363.0.0,0,4
-emptyimage[nw]=zssk_363.0.1,0,4
-emptyimage[n]=zssk_363.0.2,0,4
-emptyimage[ne]=zssk_363.0.3,0,4
-emptyimage[e]=zssk_363.0.4,0,4
-emptyimage[se]=zssk_363.0.5,0,4
-emptyimage[s]=zssk_363.0.6,0,4
-emptyimage[sw]=zssk_363.0.7,0,4
+emptyimage[w]=../multi-system/zssk_363.0.0,0,4
+emptyimage[nw]=../multi-system/zssk_363.0.1,0,4
+emptyimage[n]=../multi-system/zssk_363.0.2,0,4
+emptyimage[ne]=../multi-system/zssk_363.0.3,0,4
+emptyimage[e]=../multi-system/zssk_363.0.4,0,4
+emptyimage[se]=../multi-system/zssk_363.0.5,0,4
+emptyimage[s]=../multi-system/zssk_363.0.6,0,4
+emptyimage[sw]=../multi-system/zssk_363.0.7,0,4
 
 ----------------------------------
 obj=vehicle
@@ -200,14 +200,14 @@ copyright=TommPa9
 length=8
 gear=155
 
-emptyimage[w]=zssk_363.0.0,0,4
-emptyimage[nw]=zssk_363.0.1,0,4
-emptyimage[n]=zssk_363.0.2,0,4
-emptyimage[ne]=zssk_363.0.3,0,4
-emptyimage[e]=zssk_363.0.4,0,4
-emptyimage[se]=zssk_363.0.5,0,4
-emptyimage[s]=zssk_363.0.6,0,4
-emptyimage[sw]=zssk_363.0.7,0,4
+emptyimage[w]=../multi-system/zssk_363.0.0,0,4
+emptyimage[nw]=../multi-system/zssk_363.0.1,0,4
+emptyimage[n]=../multi-system/zssk_363.0.2,0,4
+emptyimage[ne]=../multi-system/zssk_363.0.3,0,4
+emptyimage[e]=../multi-system/zssk_363.0.4,0,4
+emptyimage[se]=../multi-system/zssk_363.0.5,0,4
+emptyimage[s]=../multi-system/zssk_363.0.6,0,4
+emptyimage[sw]=../multi-system/zssk_363.0.7,0,4
 
 -------------------------------------
 obj=vehicle

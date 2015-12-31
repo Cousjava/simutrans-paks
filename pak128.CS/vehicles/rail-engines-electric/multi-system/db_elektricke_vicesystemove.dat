@@ -1,0 +1,27 @@
+-------------------------
+# 15kV 16 2/3 Hz, 3kV =
+obj=vehicle
+cost=3728400
+speed=120
+weight=87
+runningcost=271
+fixed_cost=2081
+name=DB_180
+intro_year=1995
+retire_year=2023
+waytype=track
+engine_type=Electric
+power=3080
+copyright=TommPa9
+length=8
+gear=155
+
+emptyimage[w]=db_371_201.0.0,0,4
+emptyimage[nw]=db_371_201.0.1,0,4
+emptyimage[n]=db_371_201.0.2,0,4
+emptyimage[ne]=db_371_201.0.3,0,4
+emptyimage[e]=db_371_201.0.4,0,4
+emptyimage[se]=db_371_201.0.5,0,4
+emptyimage[s]=db_371_201.0.6,0,4
+emptyimage[sw]=db_371_201.0.7,0,4
+-------------------------
