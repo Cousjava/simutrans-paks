@@ -1,0 +1,24 @@
+# ES64U4
+obj=vehicle
+name=awt_183
+copyright=Lubak91
+intro_year=2013
+intro_month=12
+runningcost=259
+fixed_cost=3812
+cost=9599900
+weight=87
+waytype=track
+length=10
+engine_type=electric
+power=6400
+gear=134
+speed=230
+EmptyImage[w]=awt_183.0.0,0,4
+EmptyImage[nw]=awt_183.0.1,0,4
+EmptyImage[n]=awt_183.0.2,0,4
+EmptyImage[ne]=awt_183.0.3,0,4
+EmptyImage[e]=awt_183.0.4,0,4
+EmptyImage[se]=awt_183.0.5,0,4
+EmptyImage[s]=awt_183.0.6,0,4
+EmptyImage[sw]=awt_183.0.7,0,4

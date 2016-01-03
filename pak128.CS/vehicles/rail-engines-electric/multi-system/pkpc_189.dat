@@ -1,0 +1,24 @@
+# ES64F4
+# 25kV 50Hz, 15kV 16.7Hz, 3kV =, 1.5kV =
+obj=vehicle
+name=pkpc_189
+copyright=Lubak91
+intro_year=2012
+runningcost=210
+fixed_cost=1882
+cost=5989900
+weight=87
+waytype=track
+length=10
+engine_type=electric
+power=6400
+gear=162
+speed=140
+EmptyImage[w]=pkpc_189.0.0,0,4
+EmptyImage[nw]=pkpc_189.0.1,0,4
+EmptyImage[n]=pkpc_189.0.2,0,4
+EmptyImage[ne]=pkpc_189.0.3,0,4
+EmptyImage[e]=pkpc_189.0.4,0,4
+EmptyImage[se]=pkpc_189.0.5,0,4
+EmptyImage[s]=pkpc_189.0.6,0,4
+EmptyImage[sw]=pkpc_189.0.7,0,4
