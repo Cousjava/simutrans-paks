@@ -1,0 +1,25 @@
+# ZSR 710
+obj=vehicle
+name=ZSR_710
+copyright=Lubak91
+intro_year=1993
+retire_year=2002
+runningcost=20
+fixed_cost=77
+cost=1326900
+weight=40,5
+waytype=track
+length=4,5
+engine_type=diesel
+smoke=Diesel_small
+power=302
+gear=130
+speed=60
+EmptyImage[w]=zsr_710_zelena.0.0,0,4
+EmptyImage[nw]=zsr_710_zelena.0.1,0,4
+EmptyImage[n]=zsr_710_zelena.0.2,0,4
+EmptyImage[ne]=zsr_710_zelena.0.3,0,4
+EmptyImage[e]=zsr_710_zelena.0.4,0,4
+EmptyImage[se]=zsr_710_zelena.0.5,0,4
+EmptyImage[s]=zsr_710_zelena.0.6,0,4
+EmptyImage[sw]=zsr_710_zelena.0.7,0,4

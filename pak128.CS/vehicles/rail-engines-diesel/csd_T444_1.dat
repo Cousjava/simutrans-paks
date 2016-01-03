@@ -1,0 +1,26 @@
+# ČSD_T444.1
+obj=vehicle
+name=CSD_T444_1
+copyright=Lubak91
+intro_year=1964
+retire_year=2000
+runningcost=129
+fixed_cost=578
+cost=1289000
+weight=56
+waytype=track
+length=7
+engine_type=diesel
+smoke=Diesel
+power=515
+gear=135
+speed=70
+sound=7
+EmptyImage[w]=csd_T444_1.0.0,0,4
+EmptyImage[nw]=csd_T444_1.0.1,0,4
+EmptyImage[n]=csd_T444_1.0.2,0,4
+EmptyImage[ne]=csd_T444_1.0.3,0,4
+EmptyImage[e]=csd_T444_1.0.4,0,4
+EmptyImage[se]=csd_T444_1.0.5,0,4
+EmptyImage[s]=csd_T444_1.0.6,0,4
+EmptyImage[sw]=csd_T444_1.0.7,0,4

@@ -1,0 +1,24 @@
+# CD 704 004-1 (Najbrt)
+obj=vehicle
+name=CD_704_004-1_Najbrt
+copyright=Lubak91
+intro_year=2009
+runningcost=20
+fixed_cost=77
+cost=500000
+weight=29
+waytype=track
+length=4
+engine_type=diesel
+smoke=Diesel_small
+power=250
+gear=130
+speed=60
+EmptyImage[w]=cd_704_Najbrt.0.0,0,4
+EmptyImage[nw]=cd_704_Najbrt.0.1,0,4
+EmptyImage[n]=cd_704_Najbrt.0.2,0,4
+EmptyImage[ne]=cd_704_Najbrt.0.3,0,4
+EmptyImage[e]=cd_704_Najbrt.0.4,0,4
+EmptyImage[se]=cd_704_Najbrt.0.5,0,4
+EmptyImage[s]=cd_704_Najbrt.0.6,0,4
+EmptyImage[sw]=cd_704_Najbrt.0.7,0,4

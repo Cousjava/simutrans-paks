@@ -1,0 +1,25 @@
+# VIAMONT 704 401-9 (dálkové ovládání)
+obj=vehicle
+name=VIAMONT_704_401-9_dalkove_ovladani
+copyright=Lubak91
+intro_year=2000
+runningcost=15
+fixed_cost=58
+cost=450000
+weight=34
+waytype=track
+length=4
+engine_type=diesel
+smoke=Diesel_small
+power=220
+gear=130
+speed=60
+Constraint[next][0]=none
+EmptyImage[w]=via_704_401b.0.0,0,4
+EmptyImage[nw]=via_704_401b.0.1,0,4
+EmptyImage[n]=via_704_401b.0.2,0,4
+EmptyImage[ne]=via_704_401b.0.3,0,4
+EmptyImage[e]=via_704_401b.0.4,0,4
+EmptyImage[se]=via_704_401b.0.5,0,4
+EmptyImage[s]=via_704_401b.0.6,0,4
+EmptyImage[sw]=via_704_401b.0.7,0,4
