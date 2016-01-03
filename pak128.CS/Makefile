@@ -38,6 +38,7 @@ DIRS128VEHICLES += rail-cargo
 DIRS128VEHICLES += rail-cargo/tank-cars
 DIRS128VEHICLES += rail-cargo/specialni
 DIRS128VEHICLES += rail-engines-diesel
+DIRS128VEHICLES += rail-engines-electric/battery
 DIRS128VEHICLES += rail-engines-electric/AC
 DIRS128VEHICLES += rail-engines-electric/DC
 DIRS128VEHICLES += rail-engines-electric/multi-system
