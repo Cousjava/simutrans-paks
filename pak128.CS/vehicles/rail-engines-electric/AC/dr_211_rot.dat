@@ -1,0 +1,25 @@
+# @info=https://de.wikipedia.org/wiki/DR-Baureihe_E_11
+# 15kV 16.7Hz
+obj=vehicle
+name=dr_211_rot
+copyright=Lubak91
+intro_year=1972
+retire_year=1992
+runningcost=142
+fixed_cost=1091
+cost=4369900
+weight=82
+waytype=track
+length=8
+engine_type=electric
+power=2920
+gear=134
+speed=120
+EmptyImage[w]=dr_211_rot.0.0,0,4
+EmptyImage[nw]=dr_211_rot.0.1,0,4
+EmptyImage[n]=dr_211_rot.0.2,0,4
+EmptyImage[ne]=dr_211_rot.0.3,0,4
+EmptyImage[e]=dr_211_rot.0.4,0,4
+EmptyImage[se]=dr_211_rot.0.5,0,4
+EmptyImage[s]=dr_211_rot.0.6,0,4
+EmptyImage[sw]=dr_211_rot.0.7,0,4

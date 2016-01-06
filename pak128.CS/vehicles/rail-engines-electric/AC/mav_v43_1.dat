@@ -1,0 +1,25 @@
+# @info=https://cs.wikipedia.org/wiki/M%C3%81V_%C5%99ada_V43
+# 25kV 50Hz
+obj=vehicle
+name=mav_v43_1
+copyright=Lubak91
+intro_year=1975
+retire_year=2015
+runningcost=173
+fixed_cost=1661
+cost=4259900
+weight=80
+waytype=track
+length=7
+engine_type=electric
+power=2290
+gear=150
+speed=130
+EmptyImage[w]=mav_v43_1.0.0,0,4
+EmptyImage[nw]=mav_v43_1.0.1,0,4
+EmptyImage[n]=mav_v43_1.0.2,0,4
+EmptyImage[ne]=mav_v43_1.0.3,0,4
+EmptyImage[e]=mav_v43_1.0.4,0,4
+EmptyImage[se]=mav_v43_1.0.5,0,4
+EmptyImage[s]=mav_v43_1.0.6,0,4
+EmptyImage[sw]=mav_v43_1.0.7,0,4

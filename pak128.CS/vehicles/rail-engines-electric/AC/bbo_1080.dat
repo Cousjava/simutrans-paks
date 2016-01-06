@@ -1,0 +1,31 @@
+# @info=https://de.wikipedia.org/wiki/BB%C3%96_1080
+# 15kV 16.7Hz
+---------------------------
+
+obj=vehicle
+name=bbo_1080
+copyright=Lubak91
+intro_year=1924
+retire_year=1947
+intro_month=3
+retire_month=8
+runningcost=112
+fixed_cost=358
+cost=3924900
+weight=77
+waytype=track
+length=7
+engine_type=electric
+power=1040
+gear=163
+speed=50
+EmptyImage[w]=bbo_1080.0.0,0,5
+EmptyImage[nw]=bbo_1080.0.1,0,5
+EmptyImage[n]=bbo_1080.0.2,0,5
+EmptyImage[ne]=bbo_1080.0.3,0,5
+EmptyImage[e]=bbo_1080.0.4,0,5
+EmptyImage[se]=bbo_1080.0.5,0,5
+EmptyImage[s]=bbo_1080.0.6,0,5
+EmptyImage[sw]=bbo_1080.0.7,0,5
+
+---------------------------

@@ -1,4 +1,6 @@
 # utf-8
+# ES64U2
+# @info=https://cs.wikipedia.org/wiki/Siemens_ES64U2
 # GySEV - maďarská železniční společnost
 -------------------------------------
 obj=vehicle
@@ -12,7 +14,7 @@ retire_year=2050
 waytype=track
 engine_type=Electric
 power=6400
-copyright=lubak91/TommPa9
+copyright=Lubak91/TommPa9
 length=10
 gear=160
 emptyimage[w]=gysev_1047.0.0,0,4
