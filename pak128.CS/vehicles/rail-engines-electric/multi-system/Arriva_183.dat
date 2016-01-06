@@ -1,0 +1,26 @@
+# ES64U4-G
+# @link=https://de.wikipedia.org/wiki/Siemens_ES64U4
+# 15kV 16.7Hz, 25kV 50Hz, 3kV =
+obj=vehicle
+name=Arriva_183
+copyright=Lubak91
+intro_year=2007
+intro_month=12
+runningcost=289
+fixed_cost=4254
+cost=20148400
+weight=87
+waytype=track
+length=10
+engine_type=electric
+power=6400
+gear=130
+speed=230
+EmptyImage[w]=alex_183.0.0,0,4
+EmptyImage[nw]=alex_183.0.1,0,4
+EmptyImage[n]=alex_183.0.2,0,4
+EmptyImage[ne]=alex_183.0.3,0,4
+EmptyImage[e]=alex_183.0.4,0,4
+EmptyImage[se]=alex_183.0.5,0,4
+EmptyImage[s]=alex_183.0.6,0,4
+EmptyImage[sw]=alex_183.0.7,0,4
