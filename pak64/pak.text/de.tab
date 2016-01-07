@@ -5,7 +5,7 @@
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 20.04 2014                           #
+#                            Date Created: 6.01 2016                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Alexander Brose - AlexB                           #
@@ -257,7 +257,7 @@ Die riesigen Wärmetauscher\ndeuten es an: Unter dem Dach\nist die Sauna zur Moti
 COM_02_19
 Sportwissenschaftliche\nFakultät. Der grosse Hörsaal ist\nzuoberst im Gebäude\nuntergebracht. Einen Lift gibt\nes natürlich nicht; und immer\nwieder wundern sich\nGastdozenten, warum junge\nSportstudenten, die gerade vom\nAusdauertraining kommen, sich\nüber den Architekten auslassen.\n
 COM_03_14
-Die neusten Trends der Saison\nbei D&B. Ausgesuchte Farben\npassen sich dan der variablen\nInnenbeleuchtung sofort an\nden letzten Trend in Paris an.\nNur erschrecken sie nicht,\nwenn sie die Kleidung beim\nVerlassen dann zum ersten Mal bei\nTageslicht sehen.\n
+Die neusten Trends der Saison\nbei D&B. Ausgesuchte Farben\npassen sich dank der variablen\nInnenbeleuchtung sofort an\nden letzten Trend in Paris an.\nNur erschrecken sie nicht,\nwenn sie die Kleidung beim\nVerlassen dann zum ersten Mal bei\nTageslicht sehen.\n
 COM_03_15
 Hier saß die erste Nationale\nVermögenstrust. Im Zuge der\nGlobalisierung und des WWWs\nbräuchte der Hauptsitz nicht\nmehr einzuschüchtern; aber\nder alte Stahlbeton war\ntatsächlich für 1000 Jahre\ngegossen.\n
 COM_03_17
@@ -528,6 +528,8 @@ RES_11_13
 Hilfe die Ausländer kommen: Wo heute das Holländische Viertel die Touristen anlockt (auch wenn nicht mehr viel steht) war vor zwei Jahrunderten das Armenghetto der Stadt. Allerdings besteht wenig Hoffnung, das die Banlieue einst ähnlich geadelt wird.
 RES_11_14
 Der berühmte Kurfürst zur Zuckerschnecke ließ anno 1695 sein Geburthaus auf den letzte Stand bringen. Heute noch kann man das berühmte Backwerk völlig überteuert im Museumsladen erwerben.
+RES_12_03
+Der Architekt dieser Villa hatte von seinem Bauherrn eine angeschwemmte, vergilbte Postkarte von Neuschwanstein als Vorlage bekommen. Doch nach zwei Türmchen war das Baumaterial alle.
 Residenz
 Schloss der zu Schnatterichs\n\nwurde mehrfach renoviert. Das\njetzige Aussehen stammt von\neinem Restaurierungsversuch\naus der Romantik, weshalb es\nimmer noch eine gefragte\nFilmkulisse ist.\n
 rightShipStop

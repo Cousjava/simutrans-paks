@@ -5,7 +5,7 @@
 #                            Language: pt Portugues                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 20.04 2014                           #
+#                            Date Created: 6.01 2016                           #
 #                                                                              #
 #                                   authors:                                   #
 #                               Adilson - Adilson                              #
@@ -22,7 +22,13 @@
 #                                    note:                                     #
 #                                 - IgorEliezer                                #
 #                                    note:                                     #
+#                 Julio Cesar Miranda Rodrigues - JulioCesarBR                 #
+#           note: Member who helps translate in Portuguese language!           #
+#                               - Nerd Subversive                              #
+#                                    note:                                     #
 #                                     - PTM                                    #
+#                                    note:                                     #
+#                                   - Randonn                                  #
 #                                    note:                                     #
 #                  Richard Gatinho Ruas Ramos - RichardGatinho                 #
 #                                    note:                                     #
@@ -238,6 +244,8 @@ COM_11_11
 Bulevard de lojas.\n\n
 COM_11_12
 Loja de pratarias antigas.\n\n
+COM_12_04
+O parque para a ninfa do mar sagrado chama seu nome devido às multidões; No entanto, muito poucos caminhantes descobriram a rara Nynphenstrauch no canto de trás.
 Control_StationBlg
 Cabina de controle ferroviário
 DenkDirk
@@ -448,6 +456,8 @@ RES_01_16
 Bloco de residências operárias\n\nInício do século XX, construiu-se muitas destas residências para as famílias dos operários das fábricas. As moradias eram bem apertadas. Aos domingos, a rua era totalmente tomada pelas crianças e os adultos ficam na calçada conversando, já que dentro não tinha muito espaço.
 RES_01_17
 Edifício inglês do século XIX\n\nEste edifício abriga uma comunidade de imigrantes singular. Aqui moram uma viúva de um antigo magnata da siderurgia, um limpador de chaminés aposentado que mais tosse que fala, um capitão da marinha um tanto meio maluco e um banqueiro com 7 crianças, sendo este último mais perigoso que o capitão.
+RES_01_18
+O velho Sr. Huber, porque ainda há, para ouvir não mais s\ngut; o zelador que ih\sempre e sempre p\nversucht explicar que\não Nman o totalmente automático\nLift com pequeno Kurbe\nganz deve virar para cima \nstöhnt regularmente "Meu Deus\nWalter"\n
 RES_01_21
 Torre "Branco de Medo"\n\nAqui houve um síndico que tinha medo de altura e não subia o prédio de forma alguma. Um dia os moradores se revoltaram: ou ele subia ou deixaria o cargo. Ele subiu, mas ficou branco de tando medo. E os moradores pintaram o prédio de branco em homenagem à bravura do síndico.
 RES_01_22
@@ -474,10 +484,22 @@ RES_10_05
 Casa de madeira do século XIV\n\nUma casa de madeira original renovada e modernizada com bonito jardim. Em qualquer caso, o proprietário terá retorno do seu investimento.
 RES_10_08
 Casa de madeira com quintal\n\nUma casa ampla e confortável, ideal para famílias grandes com cão ou gato. Há espaço para todos.
+RES_10_10
+Casas residenciais\n\nO estaleiro gostaria de cortar a grama.
+RES_10_11
+A macieira no pequeno jardim é bem fertilizados - uma vez que ainda esperam a reinvenção de encanamento. No entanto, é falta de luz para uma rica colheita.
+RES_10_12
+A impressora de idade.\n Uma vez que os livros foram impressos aqui, hoje há um museu de impressão.
+RES_10_13
+A maioria das casas são todos telhado\ny loft. Como mas para proteger o\n forte nevasca eles foram ao longo do ano! Não\n nada melhor do que passar a tarde no sótão, quente\ny com uma boa xícara de chocolate chips.\n
+RES_10_14
+Casas residenciais\n\nQuando você pensa em um monte de neve, ele sai com o primeiro andar. Isso elimina o trabalho de limpeza.
+RES_10_15
+Este pequeno prédio de apartamentos n\é o lar de dois\n famílias. Eles se dão\n bem. \n\n
 RES_11_01
 Casinha com poço\n\nEssa casa é bem antiga, é do tempo em que ainda não havia fornecimento de água potável. A água era tirada do poço que fica no quintal da casa.
 RES_11_02
-Casa bangalô\n\nEssa casa lembra a arquitetura do bangalô indiano. Elas são baixas, de um andar só, geralmente com grande varanda coberta.
+Casa bangalô\n\n Essa casa lembra a arquitetura do bangalô indiano. Elas são baixas, de um andar só, geralmente com grande varanda coberta.
 RES_11_03
 Uma casa rústica\n\nO senhor que mora nesta casa é dono de uma velha olaria no campo. Quando ele quis construí-la, ele pediu ao arquiteto que a projetasse utilizando-se dos materiais de sua olaria; o arquiteto concordou. E não é por menos, os tijolos conservam a casa quente no inverno e a isola dos barulhos da rua.
 RES_11_08

@@ -5,7 +5,7 @@
 #                             Language: en English                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 20.04 2014                           #
+#                           Date Created: 24.11 2015                           #
 #                                                                              #
 #                                   authors:                                   #
 #                            Alexander Brose - AlexB                           #
@@ -47,6 +47,8 @@
 #                             Marcus Haupt - Marcus                            #
 #note: if I´m not available by email to proximity.de try mail@marcus-haupt.de (#
 #                                     - MaxK                                   #
+#                                    note:                                     #
+#                               - Nerd Subversive                              #
 #                                    note:                                     #
 #                                   - Nico192                                  #
 #                                    note:                                     #
@@ -503,7 +505,7 @@ The stones on this house\nare really made of plastic.\nIf you cannot afford real
 RES_11_14
 This is the home of the\nfamous football player\nJackson Stonewall. When\nhe is not on his way to a\ngame, he can be found in\nthe back yard throwing a\nfootball with his sons. In\nhis first year of\nprofessional football,\nStonewall had an average\nof 6 touchdowns per game.\nOnly his pharmacist knows\nhow he was able to do so well.\n
 RES_12_03
-This house uses a unique\nmodular design that is\neasily expandable. If more\nroom is needed you can\njust airlift a new room and\nslip it over the center\nsupport. If the demand for\nspace should lessen, you\ncan even sell off a few\nrooms.\n
+This house uses a unique modular design that is easily expandable. If more room is needed you can just airlift a new room and slip it over the center support. If the demand for space should lessen, you can even sell off a few rooms\n
 Residenz
 Residence\n\nThis place is used by the\nlocal Yoga Guru to teach\nmeditation and inner peace.\nThere are lots of things\ncalled Bongs here.\n
 rightShipStop
@@ -648,6 +650,8 @@ Moebelfabrik
 Furniture Factory
 Moebelhaus
 Home Market
+Muellkraftwerk
+Garbage Power Plant
 Nutzwald
 Timber Plantation
 Oelbohrinsel
@@ -1220,6 +1224,8 @@ Ju52
 RvG Ju-52
 JumboCruiser
 SimCo Jumbo Cruiser
+JumboCruiserBack1
+Jumbo Cruiser (Rear)
 JumboJet
 RvG 747D
 kkStB_tender

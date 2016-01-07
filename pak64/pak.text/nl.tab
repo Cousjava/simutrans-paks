@@ -5,7 +5,7 @@
 #                            Language: nl Nederlands                           #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 20.04 2014                           #
+#                            Date Created: 6.01 2016                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - An_dz                                   #
@@ -658,10 +658,14 @@ Abro Br250
 H-Trans Br218
 2Ellok
 H-Trans Tigress I
+2Garrat
+RvG Garratt (middeldeel)
 3Ben185
 Abro Br185
 3Diesellokomotive
 H-Trans Br365
+3Garrat
+RvG Garratt (eind)
 707
 Boeing 707
 A3-5
@@ -824,6 +828,8 @@ JNR_C11
 JNR C11 (2-6-4T)
 JR_9600
 JR 9600
+JumboCruiserBack1
+Jumbo Cruiser (eind)
 JumboJet
 Boeing 747 "Jumbo Jet"
 Kohleanhaenger
