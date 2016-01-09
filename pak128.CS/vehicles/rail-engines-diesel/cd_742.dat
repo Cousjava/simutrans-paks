@@ -1,7 +1,7 @@
 -------------------------
 
 obj=vehicle
-name=cd_742
+name=cd_742_red_front
 copyright=Lubak91
 intro_year=1993
 retire_year=2013
@@ -17,8 +17,8 @@ smoke=Diesel
 power=883
 gear=140
 speed=90
-Constraint[Next][1]=cd_742_gr
-Constraint[Next][2]=cd_742_b
+Constraint[Next][0]=cd_742_green_back
+Constraint[Next][1]=cd_742_red_back
 EmptyImage[w]=cd_742.0.0,0,4
 EmptyImage[nw]=cd_742.0.1,0,4
 EmptyImage[n]=cd_742.0.2,0,4
@@ -31,7 +31,7 @@ EmptyImage[sw]=cd_742.0.7,0,4
 -------------------------
 
 obj=vehicle
-name=cd_742_b
+name=cd_742_red_back
 copyright=Lubak91
 intro_year=1993
 retire_year=2013
@@ -47,8 +47,8 @@ smoke=Diesel
 power=883
 gear=140
 speed=90
-Constraint[Prev][0]=cd_742_gr_b
-Constraint[Prev][1]=cd_742
+Constraint[Prev][0]=cd_742_green_front
+Constraint[Prev][1]=cd_742_red_front
 EmptyImage[w]=cd_742_b.0.0,0,4
 EmptyImage[nw]=cd_742_b.0.1,0,4
 EmptyImage[n]=cd_742_b.0.2,0,4
@@ -61,7 +61,7 @@ EmptyImage[sw]=cd_742_b.0.7,0,4
 -------------------------
 
 obj=vehicle
-name=cd_742_gr
+name=cd_742_green_back
 copyright=Lubak91
 intro_year=1993
 retire_year=2007
@@ -77,8 +77,8 @@ smoke=Diesel
 power=883
 gear=140
 speed=90
-Constraint[Prev][0]=cd_742
-Constraint[Prev][1]=cd_742_gr_b
+Constraint[Prev][0]=cd_742_red_front
+Constraint[Prev][1]=cd_742_green_front
 EmptyImage[w]=cd_742_gr.0.0,0,4
 EmptyImage[nw]=cd_742_gr.0.1,0,4
 EmptyImage[n]=cd_742_gr.0.2,0,4
@@ -91,7 +91,7 @@ EmptyImage[sw]=cd_742_gr.0.7,0,4
 ----------------------------
 
 obj=vehicle
-name=cd_742_gr_b
+name=cd_742_green_front
 copyright=Lubak91
 intro_year=1993
 retire_year=2007
@@ -107,8 +107,8 @@ smoke=Diesel
 power=883
 gear=140
 speed=90
-Constraint[Next][1]=cd_742_b
-Constraint[Next][2]=cd_742_gr
+Constraint[Next][0]=cd_742_red_back
+Constraint[Next][1]=cd_742_green_back
 EmptyImage[w]=cd_742_gr_b.0.0,0,4
 EmptyImage[nw]=cd_742_gr_b.0.1,0,4
 EmptyImage[n]=cd_742_gr_b.0.2,0,4
