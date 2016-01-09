@@ -37,6 +37,7 @@ DIRS128VEHICLES += ng-psg+mail
 DIRS128VEHICLES += rail-cargo
 DIRS128VEHICLES += rail-cargo/tank-cars
 DIRS128VEHICLES += rail-cargo/specialni
+DIRS128VEHICLES += rail-cargo/vysypne
 DIRS128VEHICLES += rail-engines-diesel
 DIRS128VEHICLES += rail-engines-electric/battery
 DIRS128VEHICLES += rail-engines-electric/AC

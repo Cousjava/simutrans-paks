@@ -1,0 +1,27 @@
+# duslo - sk
+---------------------------
+
+obj=vehicle
+name=duslo_tdns
+Copyright=Lubak91
+waytype=track
+freight=Kohle
+payload=30
+speed=120
+cost=789900
+weight=15
+length=5
+RunningCost=15
+fixed_cost=115
+intro_year=2005
+
+emptyimage[w]=duslo_tdns.0.0,0,4
+emptyimage[nw]=duslo_tdns.0.1,0,4
+emptyimage[n]=duslo_tdns.0.2,0,4
+emptyimage[ne]=duslo_tdns.0.3,0,4
+emptyimage[e]=duslo_tdns.0.4,0,4
+emptyimage[se]=duslo_tdns.0.5,0,4
+emptyimage[s]=duslo_tdns.0.6,0,4
+emptyimage[sw]=duslo_tdns.0.7,0,4
+
+---------------------------
