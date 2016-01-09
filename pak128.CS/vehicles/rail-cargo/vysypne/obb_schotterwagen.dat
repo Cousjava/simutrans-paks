@@ -11,7 +11,7 @@ cost=789900
 weight=15
 length=5
 RunningCost=15
-fixedd_cost=115
+fixed_cost=115
 intro_year=2005
 
 freightimagetype[0]=Stone

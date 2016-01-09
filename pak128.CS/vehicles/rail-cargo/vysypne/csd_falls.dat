@@ -98,7 +98,7 @@ cost=1595200
 weight=54
 length=14
 RunningCost=48
-fiexd_cost=307
+fixed_cost=307
 intro_year=1982
 retire_year=1993
 

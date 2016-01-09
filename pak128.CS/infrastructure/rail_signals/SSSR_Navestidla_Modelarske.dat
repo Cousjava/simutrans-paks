@@ -157,6 +157,7 @@ Name=SSSR_PreSignal_Station_Dwarf
 waytype=track
 cost=1000
 is_presignal=1
+max_speed=40
 intro_year=1954
 intro_month=6
 #retire_year=1962
