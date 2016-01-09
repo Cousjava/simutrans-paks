@@ -38,6 +38,7 @@ DIRS128VEHICLES += rail-cargo
 DIRS128VEHICLES += rail-cargo/tank-cars
 DIRS128VEHICLES += rail-cargo/chladici
 DIRS128VEHICLES += rail-cargo/kryte
+DIRS128VEHICLES += rail-cargo/nizkostenne
 DIRS128VEHICLES += rail-cargo/specialni
 DIRS128VEHICLES += rail-cargo/vysypne
 DIRS128VEHICLES += rail-engines-diesel
