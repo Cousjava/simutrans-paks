@@ -14,6 +14,11 @@
 tile_height = 8
 height_conversion_factor = 2
 
+#################################saving settings################################
+
+# autosave every x months (0=off)
+autosave = 3
+
 #############################  passenger stuff  ############################
 
 # town growth multiplier factors (electricity is not used at the moment)
@@ -195,7 +200,7 @@ factory_spacing = 20
 electric_promille = 330
 
 # With this switch on (default), overcrowded factories will not recieve goods any more.
-just_in_time = 1
+just_in_time = 2
 
 
 #################################  money stuff  ################################
