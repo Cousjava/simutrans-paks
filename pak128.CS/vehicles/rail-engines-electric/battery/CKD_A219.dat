@@ -1,0 +1,29 @@
+# ČKD A219 0001 
+# utf-8
+--------------------
+
+obj=vehicle
+name=CKD_A219_0001 
+copyright=Lubak91
+intro_year=1993
+retire_year=2002
+runningcost=15
+fixed_cost=58
+cost=450000
+weight=41
+waytype=track
+length=4
+engine_type=battery
+power=165
+gear=150
+speed=60
+EmptyImage[w]=CKD_A219.0.0,0,3
+EmptyImage[nw]=CKD_A219.0.1,0,3
+EmptyImage[n]=CKD_A219.0.2,0,3
+EmptyImage[ne]=CKD_A219.0.3,0,3
+EmptyImage[e]=CKD_A219.0.4,0,3
+EmptyImage[se]=CKD_A219.0.5,0,3
+EmptyImage[s]=CKD_A219.0.6,0,3
+EmptyImage[sw]=CKD_A219.0.7,0,3
+
+--------------------
