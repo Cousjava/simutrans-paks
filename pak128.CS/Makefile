@@ -79,6 +79,7 @@ DIRS128VEHICLES += trams
 DIRS128 := $(addprefix vehicles/,$(DIRS128VEHICLES))
 
 DIRS128 += factories 
+DIRS128 += factories/goods
 DIRS128 += factories/powerplants
 DIRS128 += cityhouses/com
 DIRS128 += cityhouses/ind
