@@ -545,6 +545,14 @@ value=70
 speed_bonus=5
 weight_per_unit=1000
 -----------------------
+obj=good
+name=woodchips
+catg=7
+metric=m3
+weight_per_unit=250
+value=120
+speed_bonus=5
+-----------------------
 #
 #
 #===============================================================================
