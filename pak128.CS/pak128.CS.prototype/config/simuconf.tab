@@ -258,8 +258,8 @@ cost_multiply_found_industry = 500000
 cost_remove_tree = 40
 cost_multiply_remove_haus = 1000
 #cost_multiply_remove_field=5000
-cost_transformer=2500
-cost_maintain_transformer=100
+cost_transformer=3000
+cost_maintain_transformer=90
 
 
 ###################################other stuff##################################
