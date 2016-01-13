@@ -446,6 +446,9 @@ emptyimage[se]=trolejbusy.14.6
 emptyimage[s]=trolejbusy.14.7
 emptyimage[sw]=trolejbusy.14.8
 ---------------------------
+# @info=https://cs.wikipedia.org/wiki/%C5%A0koda_15Tr
+# @info=https://en.wikipedia.org/wiki/%C5%A0koda_15Tr
+# @info=https://imhd.sk/bb/popis-typu-vozidla/166/Skoda-15-Tr
 obj=vehicle
 cost=300000
 payload=79
@@ -503,10 +506,11 @@ emptyimage[se]=trolejbusy.16.6
 emptyimage[s]=trolejbusy.16.7
 emptyimage[sw]=trolejbusy.16.8
 ---------------------------
+# prototyp ?
 obj=vehicle
 cost=1570000
 speed=65
-weight=16
+weight=15
 runningcost=74
 fixed_cost=308
 name=Skoda_15Tr_Pred
@@ -533,12 +537,12 @@ emptyimage[n]=Skoda_15Tr_pred.0.7
 obj=vehicle
 cost=1030000
 speed=65
-weight=10
+weight=11
 runningcost=43
 fixed_cost=179
 name=Skoda_15Tr_Zad
 engine_type=Electric
-power=200
+power=140
 intro_year=1983
 retire_year=2016
 waytype=road
@@ -893,6 +897,7 @@ emptyimage[se]=trolejbusy.27.6
 emptyimage[s]=trolejbusy.27.7
 emptyimage[sw]=trolejbusy.27.8
 ---------------------------
+# @info=https://cs.wikipedia.org/wiki/%C5%A0koda_22Tr
 obj=vehicle
 cost=300000
 payload=79
