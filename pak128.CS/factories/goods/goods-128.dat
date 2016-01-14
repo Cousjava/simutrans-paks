@@ -50,6 +50,15 @@ catg=0
 value=0
 weight_per_unit=1
 -----------------------
+#########################
+### catg=2 BULK GOODS ###
+#########################
+# sypke zbozi prumyslove - uhli, ruda, kameni, pisek, hnojivo, smeti
+# nektere zemedelske produkty - brambory, repa
+# vozidla - otevrene vagony, samovysypne, valniky, sklapecky
+# hnojivo je vyjimka - kryty vysypny, ale jiny nez pro obili
+# speed bonus nizky
+#########################
 obj=good
 name=Kohle
 copyright=none
@@ -112,6 +121,42 @@ speed_bonus=0
 weight_per_unit=1000
 -----------------------
 obj=good
+name=clay
+metric=tonnen
+catg=2
+value=70
+speed_bonus=0
+weight_per_unit=1000
+-----------------------
+obj=good
+name=potatoes
+copyright=none
+metric=tonnen
+catg=2
+value=76
+speed_bonus=3
+weight_per_unit=1000
+-----------------------
+obj=good
+name=sugar_beet
+copyright=none
+metric=tonnen
+catg=2
+value=76
+speed_bonus=3
+weight_per_unit=1000
+-----------------------
+##########################
+### catg=1 PIECE GOODS ###
+##########################
+# kusove zbozi - krabice, palety, pytle, kontejnery - prumyslove zbozi,
+# trvanlive potraviny i nektere zemedelske produkty (vlna, bavlna, chmel)
+# vozidla - kryte vagony, kryte nakladaky, plosinove vozy pro kontajnery
+# pivo - v ruznych casech se vozilo ruzne - catg=4 (chlazene), catg=1 (kusove),
+# catg=5 (chlazene cisterny - tanky)
+# speed bonus ruzny - podle trvanlivosti zbozi
+##########################
+obj=good
 name=goods_
 copyright=none
 metric=paletten
@@ -120,6 +165,16 @@ value=90
 #value=38
 speed_bonus=15
 weight_per_unit=250
+-----------------------
+obj=good
+name=Papier
+copyright=none
+metric=tonnen
+catg=1
+value=60
+#value=24
+speed_bonus=5
+weight_per_unit=1000
 -----------------------
 obj=good
 name=Bucher
@@ -152,6 +207,35 @@ speed_bonus=15
 weight_per_unit=300
 -----------------------
 obj=good
+name=cotton
+copyright=none
+metric=sack
+catg=1
+value=80
+#value=36
+speed_bonus=0
+weight_per_unit=200
+-----------------------
+obj=good
+name=wool
+copyright=none
+metric=sack
+catg=1
+value=90
+#value=36
+speed_bonus=2
+weight_per_unit=250
+-----------------------
+obj=good
+name=flax
+copyright=none
+metric=sack
+catg=1
+value=76
+speed_bonus=3
+weight_per_unit=350
+-----------------------
+obj=good
 name=textile
 copyright=none
 metric=paletten
@@ -182,6 +266,16 @@ speed_bonus=3
 weight_per_unit=1000
 -----------------------
 obj=good
+name=bread
+copyright=none
+metric=paletten
+catg=1
+value=100
+#value=58
+speed_bonus=18
+weight_per_unit=300
+-----------------------
+obj=good
 name=glass
 copyright=none
 metric=paletten
@@ -190,6 +284,15 @@ value=90
 #value=43
 speed_bonus=2
 weight_per_unit=1300
+-----------------------
+obj=good
+name=hops
+copyright=none
+metric=sack
+catg=1
+value=90
+speed_bonus=3
+weight_per_unit=100
 -----------------------
 obj=good
 name=beer
@@ -202,6 +305,56 @@ speed_bonus=8
 weight_per_unit=800
 -----------------------
 obj=good
+name=sugar
+copyright=none
+metric=paletten
+catg=1
+value=76
+speed_bonus=3
+weight_per_unit=350
+-----------------------
+obj=good
+name=soft_drinks
+copyright=none
+metric=paletten
+catg=1
+value=76
+speed_bonus=3
+weight_per_unit=350
+-----------------------
+obj=good
+name=fruit
+metric=paletten
+catg=1
+value=90
+speed_bonus=10
+weight_per_unit=800
+-----------------------
+obj=good
+name=vegetables
+metric=paletten
+catg=1
+value=90
+speed_bonus=15
+weight_per_unit=800
+-----------------------
+obj=good
+name=bricks
+metric=paletten
+catg=1
+value=70
+speed_bonus=3
+weight_per_unit=800
+-----------------------
+obj=good
+name=china
+metric=paletten
+catg=1
+value=70
+speed_bonus=3
+weight_per_unit=450
+-----------------------
+obj=good
 name=Plastik
 copyright=none
 metric=tonnen
@@ -211,6 +364,14 @@ value=80
 speed_bonus=4
 weight_per_unit=1000
 -----------------------
+#########################
+### catg=6 LONG GOODS ###
+#########################
+# Dlouhe zbozi - drevo (kulatina, prkna)
+# vozidla - plosinove, klanicove, opleny, nakladaky s rukou
+# navrhuji zaradit sem i ocel a beton (zatim jako samostatne druhy)
+# speed bonus nizky
+#########################
 obj=good
 name=Stahl
 copyright=none
@@ -241,6 +402,13 @@ value=80
 speed_bonus=2
 weight_per_unit=1000
 -----------------------
+##############################
+### catg=3 FLUID CHEMICALS ###
+##############################
+# tekute chemikalie, ropa, ropne produkty, zkapalnene plyny
+# vozidla - cisterny
+# speed bonus nizky
+##############################
 obj=good
 name=Oel
 copyright=none
@@ -282,6 +450,15 @@ value=80
 speed_bonus=8
 weight_per_unit=700
 -----------------------
+############################
+### catg=0 SPECIAL CARGO ###
+############################
+# specialni zbozi - kazde vyzaduje svoje vlastni vozidlo
+# - auta
+# - beton, ocel (mozny presun do catg=6)
+# - cement (mozna casem vlastni kategorie spolu s vapnem)
+# - dobytek (pro jednoduchost nerozliseny - kravy, ovce,...)
+##############################
 obj=good
 name=Autos
 copyright=none
@@ -292,16 +469,6 @@ value=340
 #value=140
 speed_bonus=15
 weight_per_unit=1800
------------------------
-obj=good
-name=Papier
-copyright=none
-metric=tonnen
-catg=1
-value=60
-#value=24
-speed_bonus=5
-weight_per_unit=1000
 -----------------------
 obj=good
 name=Cement
@@ -323,6 +490,23 @@ value=160
 speed_bonus=10
 weight_per_unit=1000
 -----------------------
+obj=good
+name=livestock
+copyright=none
+metric=
+catg=0
+value=70
+speed_bonus=2
+weight_per_unit=100
+-----------------------
+###########################
+### catg=4 COOLED GOODS ###
+###########################
+# chlazene zbozi - maso, ryby, masne a mlecne vyrobky
+# vozidla - chladirenske vozy, chladici kontajnery
+# moznost zaradit sem pivo - hezke chladirenske vozy s logy
+# speed bonus vysoky
+###########################
 obj=good
 name=meat
 copyright=none
@@ -354,6 +538,23 @@ speed_bonus=18
 weight_per_unit=300
 -----------------------
 obj=good
+name=dairy_products
+copyright=none
+metric=paletten
+catg=4
+value=140
+#value=40
+speed_bonus=15
+weight_per_unit=800
+-----------------------
+#########################
+### catg=5 FLUID FOOD ###
+#########################
+# tekute (chlazene) potraviny - mleko, prip. tankove pivo?
+# vozidla - chlazene cisterny
+# speed bonus vysoky
+###########################
+obj=good
 name=milk
 copyright=none
 metric=m3
@@ -363,26 +564,19 @@ value=100
 speed_bonus=15
 weight_per_unit=1000
 -----------------------
-obj=good
-name=cotton
-copyright=none
-metric=sack
-catg=1
-value=80
-#value=36
-speed_bonus=0
-weight_per_unit=200
------------------------
-obj=good
-name=wool
-copyright=none
-metric=sack
-catg=1
-value=90
-#value=36
-speed_bonus=2
-weight_per_unit=250
------------------------
+######################################
+### catg=7 BULK FOOD (LIGHT GOODS) ###
+######################################
+# zemedelske produkty sypke - obili, slad
+# vozidla - vysypne kryte
+# driv sem patrily i vlna, bavlna - presunuto do catg=1
+# chmel, len, zelenina, ovoce, a pod taky do catg=1
+# brambory, repa - zablacene - do catg=2
+# piliny? no to by mozna mely taky byt catg=2
+# je to pouzito pro kontajnerove vozy Lgs, Sggrss, Sgnss
+# cukr? - lze vozit ve velkem catg=7 (Tpps) i baleny catg=1
+# speed bonus stredni
+###########################
 obj=good
 name=grain
 copyright=none
@@ -402,81 +596,7 @@ value=80
 #value=29
 speed_bonus=3
 weight_per_unit=1000
---------------------------------------------------------------------------------
-obj=good
-name=dairy_products
-copyright=none
-metric=paletten
-catg=4
-value=140
-#value=40
-speed_bonus=15
-weight_per_unit=800
 -----------------------
-obj=good
-name=bread
-copyright=none
-metric=paletten
-catg=1
-value=100
-#value=58
-speed_bonus=18
-weight_per_unit=300
---------------------------------------------------------------------------------
-obj=good
-name=potatoes
-copyright=none
-metric=tonnen
-catg=2
-value=76
-speed_bonus=3
-weight_per_unit=1000
---------------------------------------------------------------------------------
-obj=good
-name=sugar
-copyright=none
-metric=paletten
-catg=1
-value=76
-speed_bonus=3
-weight_per_unit=350
---------------------------------------------------------------------------------
-obj=good
-name=flax
-copyright=none
-metric=sack
-catg=1
-value=76
-speed_bonus=3
-weight_per_unit=350
---------------------------------------------------------------------------------
-obj=good
-name=soft_drinks
-copyright=none
-metric=paletten
-catg=1
-value=76
-speed_bonus=3
-weight_per_unit=350
---------------------------------------------------------------------------------
-obj=good
-name=sugar_beet
-copyright=none
-metric=tonnen
-catg=2
-value=76
-speed_bonus=3
-weight_per_unit=1000
---------------------------------------------------------------------------------
-obj=good
-name=livestock
-copyright=none
-metric=
-catg=0
-value=70
-speed_bonus=2
-weight_per_unit=100
---------------------------------------------------------------------------------
 obj=good
 name=malt
 copyright=none
@@ -485,55 +605,6 @@ catg=7
 value=90
 speed_bonus=3
 weight_per_unit=1000
---------------------------------------------------------------------------------
-obj=good
-name=hops
-copyright=none
-metric=sack
-catg=1
-value=90
-speed_bonus=3
-weight_per_unit=100
---------------------------------------------------------------------------------
-obj=good
-name=fruit
-metric=paletten
-catg=1
-value=90
-speed_bonus=10
-weight_per_unit=800
------------------------
-obj=good
-name=vegetables
-metric=paletten
-catg=1
-value=90
-speed_bonus=15
-weight_per_unit=800
------------------------
-obj=good
-name=clay
-metric=tonnen
-catg=2
-value=70
-speed_bonus=0
-weight_per_unit=1000
------------------------
-obj=good
-name=bricks
-metric=paletten
-catg=1
-value=70
-speed_bonus=3
-weight_per_unit=800
------------------------
-obj=good
-name=china
-metric=paletten
-catg=1
-value=70
-speed_bonus=3
-weight_per_unit=450
 -----------------------
 obj=good
 name=barley

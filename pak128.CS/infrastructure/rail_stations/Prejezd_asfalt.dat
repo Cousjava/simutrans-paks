@@ -7,7 +7,7 @@ Level=2
 Dims=1,1,16
 NoInfo=1
 enables_post=1 
-intro_year = 1839
+intro_year = 1825
 icon=> Stanice_4.0.6
 cursor=Stanice_4.1.6
 

@@ -3,11 +3,11 @@ Name=Asfaltove_kryte_nastupiste
 copyright=Sim, Vladki
 type=stop
 waytype=track
-Level=4
+Level=3
 Dims=1,1,16
 NoInfo=1
 enables_pax=1
-intro_year = 1920
+intro_year = 1825
 icon=> Stanice_5.0.6
 cursor=Stanice_5.1.6
 # SUMMER
