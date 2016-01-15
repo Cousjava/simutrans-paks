@@ -1,0 +1,28 @@
+Obj=building
+Name=CS_StationBuilding_caslav_nadrazni_budova
+copyright=Lubak91
+type=extension
+waytype=track
+type=station
+enables_pax=1
+enables_post=1
+intro_year=1910
+# must be 1*2
+# 1_1 is the land sqare
+Dims=3,1,4
+Level=8
+needs_ground=1
+icon=> nadrazni_budova_caslav.3.0
+cursor=nadrazni_budova_caslav.3.1
+BackImage[2][0][0][0][0][0]=nadrazni_budova_caslav.0.0
+BackImage[2][0][1][0][0][0]=nadrazni_budova_caslav.0.1
+BackImage[2][0][2][0][0][0]=nadrazni_budova_caslav.0.2
+BackImage[3][0][0][0][0][0]=nadrazni_budova_caslav.0.3
+BackImage[3][1][0][0][0][0]=nadrazni_budova_caslav.1.0
+BackImage[3][2][0][0][0][0]=nadrazni_budova_caslav.1.1
+BackImage[0][0][0][0][0][0]=nadrazni_budova_caslav.1.2
+BackImage[0][0][1][0][0][0]=nadrazni_budova_caslav.1.3
+BackImage[0][0][2][0][0][0]=nadrazni_budova_caslav.2.0
+BackImage[1][0][0][0][0][0]=nadrazni_budova_caslav.2.1
+BackImage[1][1][0][0][0][0]=nadrazni_budova_caslav.2.2
+BackImage[1][2][0][0][0][0]=nadrazni_budova_caslav.2.3
