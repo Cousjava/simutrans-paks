@@ -31,6 +31,7 @@ freightimage[e]=Btax_viamont_ridici.0.4,0,4
 freightimage[se]=Btax_viamont_ridici.0.5,0,4
 freightimage[s]=Btax_viamont_ridici.0.6,0,4
 freightimage[sw]=Btax_viamont_ridici.0.7,0,4
+Constraint[Prev][0]=-
 Constraint[Next][0]=Viamont_010-2
 -------------------------------
 obj=vehicle
@@ -66,4 +67,7 @@ freightimage[se]=Btax_viamont_ridici.2.5,0,4
 freightimage[s]=Btax_viamont_ridici.2.6,0,4
 freightimage[sw]=Btax_viamont_ridici.2.7,0,4
 Constraint[Prev][0]=Viamont_010-1
+Constraint[Next][0]=Viamont_010-3
+Constraint[Next][1]=Viamont_010_v
+Constraint[Next][2]=VIAMONT_704_401-9_dalkove_ovladani
 -------------------------------

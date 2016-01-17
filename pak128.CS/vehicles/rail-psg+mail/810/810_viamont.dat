@@ -35,4 +35,12 @@ freightimage[e]=810_viamont.0.4,0,4
 freightimage[se]=810_viamont.0.5,0,4
 freightimage[s]=810_viamont.0.6,0,4
 freightimage[sw]=810_viamont.0.7,0,4
+Constraint[Prev][0]=-
+Constraint[Prev][1]=Viamont_810
+Constraint[Prev][2]=Viamont_010-4
+Constraint[Prev][3]=Viamont_010_v
+Constraint[Next][0]=Viamont_010-3
+Constraint[Next][1]=Viamont_010_v
+Constraint[Next][2]=Viamont_810
+Constraint[Next][3]=-
 -------------------------------

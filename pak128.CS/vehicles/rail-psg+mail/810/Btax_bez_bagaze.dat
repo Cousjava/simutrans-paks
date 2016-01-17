@@ -346,6 +346,16 @@ freightimage[e]=Btax_viamont_bez_baglu.0.4,0,4
 freightimage[se]=Btax_viamont_bez_baglu.0.5,0,4
 freightimage[s]=Btax_viamont_bez_baglu.0.6,0,4
 freightimage[sw]=Btax_viamont_bez_baglu.0.7,0,4
+Constraint[Prev][0]=Viamont_010_v
+Constraint[Prev][1]=Viamont_010_r
+Constraint[Prev][2]=Viamont_810
+Constraint[Prev][3]=Viamont_010-4
+Constraint[Prev][4]=Viamont_010-2
+Constraint[Next][0]=Viamont_010_v
+Constraint[Next][1]=Viamont_010-3
+Constraint[Next][2]=Viamont_810
+Constraint[Next][3]=VIAMONT_704_401-9_dalkove_ovladani
+Constraint[Next][4]=-
 
 -------------------------------
 obj=vehicle
@@ -380,5 +390,9 @@ freightimage[e]=Btax_viamont_ridici_bez_baglu.0.4,0,4
 freightimage[se]=Btax_viamont_ridici_bez_baglu.0.5,0,4
 freightimage[s]=Btax_viamont_ridici_bez_baglu.0.6,0,4
 freightimage[sw]=Btax_viamont_ridici_bez_baglu.0.7,0,4
+Constraint[Prev][0]=-
+Constraint[Next][0]=Viamont_010_v
+Constraint[Next][1]=Viamont_010-3
+Constraint[Next][2]=VIAMONT_704_401-9_dalkove_ovladani
 
 -------------------------------
