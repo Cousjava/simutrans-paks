@@ -341,7 +341,6 @@ toolbar[0][33]=simple_tool[19],,),+
 toolbar[0][34]=simple_tool[19],,(,-
 toolbar[0][35]=simple_tool[15],,
 toolbar[0][36]=dialog_tool[28]
-toolbar[0][37]=simple_tool[0],,^p,
 
 # slope tools
 toolbar[1][0]=general_tool[2]
@@ -482,6 +481,8 @@ toolbar[9][20]=general_tool[39],36,,4
 toolbar[9][21]=general_tool[39],37,,5
 toolbar[9][22]=general_tool[39],38,,6
 toolbar[9][23]=general_tool[39],39,,7
+# second pause
+toolbar[9][24]=simple_tool[0],,^p,
 
 # list tools
 toolbar[10][0]=dialog_tool[14]
