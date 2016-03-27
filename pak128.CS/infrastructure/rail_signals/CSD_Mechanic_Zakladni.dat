@@ -1,0 +1,359 @@
+# Mechanicka navestidla pouzivana u CSD
+# Vzor pravdepodobne zhruba z roku 1911 (Ing. Rank)
+# http://www.smpd.cz/olympia/navestidla.html
+#
+# Pro drivejsi obdobi se mi nepodarilo najit spolehlive informace,
+# casove udaje z ruznych zdroju si casto odporuji.
+#
+# 1870 - Hradlovy uzaver - Carl Frischen
+# 1891 - ElektroCSD/mechanicke zarizeni Rank 5007
+# 
+# Predpisy pouzivane u CSD jsou pry vicemene stejne jako kkSTB 1898
+# Na http://vlaky.bestsite.cz/zeleznice/vyvoj-navestidel-csd-cast-i-1918-1939-2-1.htm
+# lze najit predpisy z roku 1913.
+#
+# Prvni trat s hradly - Wien - Bratislave 1883
+# Predvesti 1883 nebo az 1906, pridavne rameno nekde kolem 1938-1939
+# Smerova soustava 1887, ale dvouramenna navestidla pry uz od 1880
+# Velka zmena predpisu podle M.M.Webera 1872
+#
+# Mno, takze prozatim davam intro vseho na 1870. 
+# Ukonceni na 1970 - kdy se objevuje dnesni model svetelnych.
+# Takze to mame kulatych 100 let.
+#
+# Vzdy se to muze upravit pokud najdeme nejaka upresneni.
+# Vypada to ze u nas se pouzival od zacatku horni kvadrant (volno je sikmo nahoru)
+# Rameno v dolnim kvadrantu znamenalo pomalu (bud trvale, nebo jako vystraha v casovem intervalu)
+#
+# Jednoznacne milniky jsou:
+#
+# 1. 11. 1939 - zmena barev: vystraha zluta, volno zelena (drive vystraha zelena, volno bila)
+# dale kulate predvesti nemeckeho vzoru, uzavery koleje, nemecka zarizeni Einheit
+#
+# 1954 - zruseni smerove soustavy (3-ramenna), rozlisena predvest s [+] a [X]
+# dale zlute rameno na vjezdovem navestidle, privolavaci navest
+#
+# Kulate predvesti davam ve hre az od 1954, s novymi upozornovadly.
+# Mohly by byt uz od 1939, ale s [X] a cernobilymi pruhy.
+# Druhy duvod je aby byl mozny jednoznacny upgrade v experimental.
+# Nemecke modely jsou oznaceny jako _DR_ misto _CSD_.
+# Treba nekdo nekdy udela i nemecka hlavni navestidla.
+# Pripadne starsi modely by pak byly _kkStB_ ;)
+#
+# Long signal je 3-ramenny, od 1954 jednoramenny s upozornovadlem.
+# 1-ramenny model by mohl byt po celou dobu (1870-1970)
+# 3-ramenny pak jenom od zavedeni smerove soustavy - 1887 do 1954
+#
+# Mame k dispozici obrazek pro 2-ramenne vjezdove s privolavackou.
+# Zatim nevidim pouziti, mozna pro experimental - call_on
+# Nebo nechat zlute rameno pro experimental - 3-state.
+
+
+
+#################
+#### Signal #####
+#################
+Obj=roadsign
+copyright=Lubak91
+Name=Mechanic_CSD_Signal_white
+waytype=track
+cost=2000
+is_signal=1
+normal_danger=1
+# Jednoramenne, bile svetlo
+intro_year=1870
+retire_year=1939
+retire_month=11
+offset_left=10
+Image[0]=CSD/mechanic_1.0.0
+Image[1]=CSD/mechanic_1.0.1
+Image[2]=CSD/mechanic_1.0.2
+Image[3]=CSD/mechanic_1.0.3
+Image[4]=CSD/mechanic_1.1.0
+Image[5]=CSD/mechanic_1.1.1
+Image[6]=CSD/mechanic_1.1.2
+Image[7]=CSD/mechanic_1.1.3
+Icon=> CSD/mechanic_1.0.4
+Cursor=CSD/mechanic_1.1.4
+-----------------------------
+Obj=roadsign
+copyright=Lubak91
+Name=Mechanic_CSD_Signal_green
+waytype=track
+cost=2000
+is_signal=1
+normal_danger=1
+# Jednoramenne, zelene svetlo
+intro_year=1939
+intro_month=11
+retire_year=1970
+offset_left=10
+Image[0]=CSD/mechanic_2.0.0
+Image[1]=CSD/mechanic_2.0.1
+Image[2]=CSD/mechanic_2.0.2
+Image[3]=CSD/mechanic_2.0.3
+Image[4]=CSD/mechanic_2.1.0
+Image[5]=CSD/mechanic_2.1.1
+Image[6]=CSD/mechanic_2.1.2
+Image[7]=CSD/mechanic_2.1.3
+Icon=> CSD/mechanic_2.0.4
+Cursor=CSD/mechanic_2.1.4
+-----------------------------
+
+####################
+#### PreSignal #####
+####################
+Obj=roadsign
+copyright=Lubak91
+Name=Mechanic_CSD_PreSignal_green
+waytype=track
+cost=1000
+is_presignal=1
+# Uporornovadlo [X], ctercovy terc zeleny
+intro_year=1870
+retire_year=1939
+retire_month=11
+offset_left=10
+Image[0]=CSD/mechanic_1.6.0
+Image[1]=CSD/mechanic_1.6.1
+Image[2]=CSD/mechanic_1.6.2
+Image[3]=CSD/mechanic_1.6.3
+Image[4]=CSD/mechanic_1.7.0
+Image[5]=CSD/mechanic_1.7.1
+Image[6]=CSD/mechanic_1.7.2
+Image[7]=CSD/mechanic_1.7.3
+Image[8]=CSD/mechanic_1.6.0
+Image[9]=CSD/mechanic_1.6.1
+Image[10]=CSD/mechanic_1.6.2
+Image[11]=CSD/mechanic_1.6.3
+Icon=> CSD/mechanic_1.6.4
+Cursor=CSD/mechanic_1.7.4
+-----------------------------
+Obj=roadsign
+copyright=Lubak91
+Name=Mechanic_CSD_PreSignal_yellow
+waytype=track
+cost=1000
+is_presignal=1
+# Uporornovadlo [X], ctercovy terc zluty
+intro_year=1939
+intro_month=11
+retire_year=1954
+retire_month=6
+offset_left=10
+Image[0]=CSD/mechanic_2.6.0
+Image[1]=CSD/mechanic_2.6.1
+Image[2]=CSD/mechanic_2.6.2
+Image[3]=CSD/mechanic_2.6.3
+Image[4]=CSD/mechanic_2.7.0
+Image[5]=CSD/mechanic_2.7.1
+Image[6]=CSD/mechanic_2.7.2
+Image[7]=CSD/mechanic_2.7.3
+Image[8]=CSD/mechanic_2.6.0
+Image[9]=CSD/mechanic_2.6.1
+Image[10]=CSD/mechanic_2.6.2
+Image[11]=CSD/mechanic_2.6.3
+Icon=> CSD/mechanic_2.6.4
+Cursor=CSD/mechanic_2.7.4
+-----------------------------
+Obj=roadsign
+copyright=Lubak91
+Name=Mechanic_DR_PreSignal_yellow
+waytype=track
+cost=1000
+is_presignal=1
+# Upozornovadlo [+], kruhovy terc zluty
+intro_year=1954
+intro_month=6
+retire_year=1970
+offset_left=10
+Image[0]=CSD/mechanic_3.6.0
+Image[1]=CSD/mechanic_3.6.1
+Image[2]=CSD/mechanic_3.6.2
+Image[3]=CSD/mechanic_3.6.3
+Image[4]=CSD/mechanic_3.7.0
+Image[5]=CSD/mechanic_3.7.1
+Image[6]=CSD/mechanic_3.7.2
+Image[7]=CSD/mechanic_3.7.3
+Image[8]=CSD/mechanic_3.6.0
+Image[9]=CSD/mechanic_3.6.1
+Image[10]=CSD/mechanic_3.6.2
+Image[11]=CSD/mechanic_3.6.3
+Icon=> CSD/mechanic_3.6.4
+Cursor=CSD/mechanic_3.7.4
+-----------------------------
+
+#####################
+#### LongSignal #####
+#####################
+Obj=roadsign
+copyright=Lubak91
+Name=Mechanic_CSD_LongSignal_white_3arm
+waytype=track
+cost=4000
+is_signal=1
+is_longblocksignal=1
+# Trojramenne, bila svetla
+intro_year=1870
+retire_year=1939
+retire_month=11
+offset_left=10
+Image[0]=CSD/mechanic_1.4.0
+Image[1]=CSD/mechanic_1.4.1
+Image[2]=CSD/mechanic_1.4.2
+Image[3]=CSD/mechanic_1.4.3
+Image[4]=CSD/mechanic_1.5.0
+Image[5]=CSD/mechanic_1.5.1
+Image[6]=CSD/mechanic_1.5.2
+Image[7]=CSD/mechanic_1.5.3
+Icon=> CSD/mechanic_1.4.4
+Cursor=CSD/mechanic_1.5.4
+-----------------------------
+Obj=roadsign
+copyright=Lubak91
+Name=Mechanic_CSD_LongSignal_green_3arm
+waytype=track
+cost=4000
+is_signal=1
+is_longblocksignal=1
+# Trojramenne, zelena svetla
+intro_year=1939
+intro_month=11
+retire_year=1954
+retire_month=6
+offset_left=10
+Image[0]=CSD/mechanic_2.4.0
+Image[1]=CSD/mechanic_2.4.1
+Image[2]=CSD/mechanic_2.4.2
+Image[3]=CSD/mechanic_2.4.3
+Image[4]=CSD/mechanic_2.5.0
+Image[5]=CSD/mechanic_2.5.1
+Image[6]=CSD/mechanic_2.5.2
+Image[7]=CSD/mechanic_2.5.3
+Icon=> CSD/mechanic_2.4.4
+Cursor=CSD/mechanic_2.5.4
+-----------------------------
+Obj=roadsign
+copyright=Lubak91
+Name=Mechanic_CSD_LongSignal_green
+waytype=track
+cost=4000
+is_signal=1
+is_longblocksignal=1
+# Jednoramenne, zelena svetla, upozornovadlo [/]
+intro_year=1954
+intro_month=6
+retire_year=1970
+offset_left=10
+Image[0]=CSD/mechanic_3.4.0
+Image[1]=CSD/mechanic_3.4.1
+Image[2]=CSD/mechanic_3.4.2
+Image[3]=CSD/mechanic_3.4.3
+Image[4]=CSD/mechanic_3.5.0
+Image[5]=CSD/mechanic_3.5.1
+Image[6]=CSD/mechanic_3.5.2
+Image[7]=CSD/mechanic_3.5.3
+Icon=> CSD/mechanic_3.4.4
+Cursor=CSD/mechanic_3.5.4
+-----------------------------
+
+#######################
+#### ChooseSignal #####
+#######################
+Obj=roadsign
+copyright=Lubak91
+Name=Mechanic_CSD_ChooseSignal_white
+waytype=track
+cost=4000
+is_signal=1
+free_route=1
+normal_danger=1
+has_selective_choose=1
+# Dvouramenne, bila svetla
+intro_year=1870
+retire_year=1939
+retire_month=11
+offset_left=10
+Image[0]=CSD/mechanic_1.2.0
+Image[1]=CSD/mechanic_1.2.1
+Image[2]=CSD/mechanic_1.2.2
+Image[3]=CSD/mechanic_1.2.3
+Image[4]=CSD/mechanic_1.3.0
+Image[5]=CSD/mechanic_1.3.1
+Image[6]=CSD/mechanic_1.3.2
+Image[7]=CSD/mechanic_1.3.3
+Image[8]=CSD/mechanic_1.11.0
+Image[9]=CSD/mechanic_1.11.1
+Image[10]=CSD/mechanic_1.11.2
+Image[11]=CSD/mechanic_1.11.3
+Icon=> CSD/mechanic_1.2.4
+Cursor=CSD/mechanic_1.3.4
+-----------------------------
+Obj=roadsign
+copyright=Lubak91
+Name=Mechanic_CSD_ChooseSignal_green
+waytype=track
+cost=4000
+is_signal=1
+free_route=1
+normal_danger=1
+has_selective_choose=1
+# Dvouramenne, zelena svetla
+intro_year=1939
+intro_month=11
+retire_year=1954
+retire_month=6
+offset_left=10
+Image[0]=CSD/mechanic_2.2.0
+Image[1]=CSD/mechanic_2.2.1
+Image[2]=CSD/mechanic_2.2.2
+Image[3]=CSD/mechanic_2.2.3
+Image[4]=CSD/mechanic_2.3.0
+Image[5]=CSD/mechanic_2.3.1
+Image[6]=CSD/mechanic_2.3.2
+Image[7]=CSD/mechanic_2.3.3
+Image[8]=CSD/mechanic_2.11.0
+Image[9]=CSD/mechanic_2.11.1
+Image[10]=CSD/mechanic_2.11.2
+Image[11]=CSD/mechanic_2.11.3
+Icon=> CSD/mechanic_2.2.4
+Cursor=CSD/mechanic_2.3.4
+-----------------------------
+Obj=roadsign
+copyright=Lubak91
+Name=Mechanic_CSD_ChooseSignal_yellow
+waytype=track
+cost=4000
+is_signal=1
+aspects=3
+free_route=1
+normal_danger=1
+has_selective_choose=1
+# Dvouramenne, zluta svetla, zlute rameno
+intro_year=1954
+intro_month=6
+retire_year=1970
+offset_left=10
+Image[0]=CSD/mechanic_3.2.0
+Image[1]=CSD/mechanic_3.2.1
+Image[2]=CSD/mechanic_3.2.2
+Image[3]=CSD/mechanic_3.2.3
+Image[4]=CSD/mechanic_3.3.0
+Image[5]=CSD/mechanic_3.3.1
+Image[6]=CSD/mechanic_3.3.2
+Image[7]=CSD/mechanic_3.3.3
+Image[8]=CSD/mechanic_3.3.0
+Image[9]=CSD/mechanic_3.3.1
+Image[10]=CSD/mechanic_3.3.2
+Image[11]=CSD/mechanic_3.3.3
+Image[12]=CSD/mechanic_3.11.0
+Image[13]=CSD/mechanic_3.11.1
+Image[14]=CSD/mechanic_3.11.2
+Image[15]=CSD/mechanic_3.11.3
+Image[12]=CSD/mechanic_3.12.0
+Image[13]=CSD/mechanic_3.12.1
+Image[14]=CSD/mechanic_3.12.2
+Image[15]=CSD/mechanic_3.12.3
+Icon=> CSD/mechanic_3.2.4
+Cursor=CSD/mechanic_3.3.4
+-----------------------------
