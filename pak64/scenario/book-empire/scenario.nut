@@ -7,31 +7,33 @@ scenario.version = "0.1"
 
 function get_rule_text(pl)
 {
-	return "No rules. Only pressure to win."
+	return ttext("No rules. Only pressure to win.")
 }
 
 function get_goal_text(pl)
 {
-	return @"Supply the book shop at (20,50). <br><br>
-	The scenario is won if book shop starts selling."
+	return ttext("Supply the book shop at (20,50). <br><br>The scenario is won if book shop starts selling.")
 }
 
 function get_info_text(pl)
 {
-	return @"Your transport company is engaged to help the people of Leipzig to get something to read in dark winter nights."
+	return ttext("Your transport company is engaged to help the people of Leipzig to get something to read in dark winter nights.")
 }
 
 function get_result_text(pl)
 {
 	local con = get_book_consumption()
 
-	local text = "The bookshop sold " + con + " books."
-	if ( con > 0 )
-		text = "<it>Congratulation!</it><br> <br> You won the scenario!"
-	else
-		text = "Leipzig people are still bored of your transportation service."
+	local text = ttext("The bookshop sold {book} books.")
+	text.book = con
 
-	return text
+	local text2 = ""
+	if ( con > 0 )
+		text2 = ttext("<it>Congratulation!</it><br> <br> You won the scenario!")
+	else
+		text2 = ttext("Leipzig people are still bored of your transportation service.")
+
+	return text + "<br> <br>" + text2
 }
 
 // accessor to the book statistics
