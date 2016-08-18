@@ -49,7 +49,6 @@
 # Nebo nechat zlute rameno pro experimental - 3-state.
 
 
-
 #################
 #### Signal #####
 #################
@@ -59,12 +58,15 @@ Name=Mechanic_CSD_Signal_white
 waytype=track
 cost=2000
 is_signal=1
+max_speed=120
 normal_danger=1
+#working_method=absolute_block
 # Jednoramenne, bile svetlo
 intro_year=1870
 retire_year=1939
 retire_month=11
 offset_left=10
+upgrade_group=1
 Image[0]=CSD/mechanic_1.0.0
 Image[1]=CSD/mechanic_1.0.1
 Image[2]=CSD/mechanic_1.0.2
@@ -82,12 +84,15 @@ Name=Mechanic_CSD_Signal_green
 waytype=track
 cost=2000
 is_signal=1
+max_speed=120
 normal_danger=1
+#working_method=absolute_block
 # Jednoramenne, zelene svetlo
 intro_year=1939
 intro_month=11
 retire_year=1970
 offset_left=10
+upgrade_group=1
 Image[0]=CSD/mechanic_2.0.0
 Image[1]=CSD/mechanic_2.0.1
 Image[2]=CSD/mechanic_2.0.2
@@ -109,11 +114,14 @@ Name=Mechanic_CSD_PreSignal_green
 waytype=track
 cost=1000
 is_presignal=1
+max_speed=120
+#working_method=absolute_block
 # Uporornovadlo [X], ctercovy terc zeleny
 intro_year=1870
 retire_year=1939
 retire_month=11
 offset_left=10
+upgrade_group=2
 Image[0]=CSD/mechanic_1.6.0
 Image[1]=CSD/mechanic_1.6.1
 Image[2]=CSD/mechanic_1.6.2
@@ -135,12 +143,15 @@ Name=Mechanic_CSD_PreSignal_yellow
 waytype=track
 cost=1000
 is_presignal=1
+max_speed=120
+#working_method=absolute_block
 # Uporornovadlo [X], ctercovy terc zluty
 intro_year=1939
 intro_month=11
 retire_year=1954
 retire_month=6
 offset_left=10
+upgrade_group=2
 Image[0]=CSD/mechanic_2.6.0
 Image[1]=CSD/mechanic_2.6.1
 Image[2]=CSD/mechanic_2.6.2
@@ -162,11 +173,14 @@ Name=Mechanic_DR_PreSignal_yellow
 waytype=track
 cost=1000
 is_presignal=1
+max_speed=120
+#working_method=absolute_block
 # Upozornovadlo [+], kruhovy terc zluty
 intro_year=1954
 intro_month=6
 retire_year=1970
 offset_left=10
+upgrade_group=2
 Image[0]=CSD/mechanic_3.6.0
 Image[1]=CSD/mechanic_3.6.1
 Image[2]=CSD/mechanic_3.6.2
@@ -193,11 +207,13 @@ waytype=track
 cost=4000
 is_signal=1
 is_longblocksignal=1
+max_speed=120
 # Trojramenne, bila svetla
 intro_year=1870
 retire_year=1939
 retire_month=11
 offset_left=10
+upgrade_group=3
 Image[0]=CSD/mechanic_1.4.0
 Image[1]=CSD/mechanic_1.4.1
 Image[2]=CSD/mechanic_1.4.2
@@ -216,12 +232,14 @@ waytype=track
 cost=4000
 is_signal=1
 is_longblocksignal=1
+max_speed=120
 # Trojramenne, zelena svetla
 intro_year=1939
 intro_month=11
 retire_year=1954
 retire_month=6
 offset_left=10
+upgrade_group=3
 Image[0]=CSD/mechanic_2.4.0
 Image[1]=CSD/mechanic_2.4.1
 Image[2]=CSD/mechanic_2.4.2
@@ -240,11 +258,13 @@ waytype=track
 cost=4000
 is_signal=1
 is_longblocksignal=1
+max_speed=120
 # Jednoramenne, zelena svetla, upozornovadlo [/]
 intro_year=1954
 intro_month=6
 retire_year=1970
 offset_left=10
+upgrade_group=3
 Image[0]=CSD/mechanic_3.4.0
 Image[1]=CSD/mechanic_3.4.1
 Image[2]=CSD/mechanic_3.4.2
@@ -267,13 +287,16 @@ waytype=track
 cost=4000
 is_signal=1
 free_route=1
+max_speed=120
 normal_danger=1
 has_selective_choose=1
+#working_method=absolute_block
 # Dvouramenne, bila svetla
 intro_year=1870
 retire_year=1939
 retire_month=11
 offset_left=10
+upgrade_group=4
 Image[0]=CSD/mechanic_1.2.0
 Image[1]=CSD/mechanic_1.2.1
 Image[2]=CSD/mechanic_1.2.2
@@ -296,14 +319,17 @@ waytype=track
 cost=4000
 is_signal=1
 free_route=1
+max_speed=120
 normal_danger=1
 has_selective_choose=1
+#working_method=absolute_block
 # Dvouramenne, zelena svetla
 intro_year=1939
 intro_month=11
 retire_year=1954
 retire_month=6
 offset_left=10
+upgrade_group=4
 Image[0]=CSD/mechanic_2.2.0
 Image[1]=CSD/mechanic_2.2.1
 Image[2]=CSD/mechanic_2.2.2
@@ -325,15 +351,19 @@ Name=Mechanic_CSD_ChooseSignal_yellow
 waytype=track
 cost=4000
 is_signal=1
+#is_presignal=1
 aspects=3
 free_route=1
+max_speed=120
 normal_danger=1
 has_selective_choose=1
+#working_method=absolute_block
 # Dvouramenne, zluta svetla, zlute rameno
 intro_year=1954
 intro_month=6
 retire_year=1970
 offset_left=10
+upgrade_group=4
 Image[0]=CSD/mechanic_3.2.0
 Image[1]=CSD/mechanic_3.2.1
 Image[2]=CSD/mechanic_3.2.2

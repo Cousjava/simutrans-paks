@@ -9,10 +9,14 @@ waytype=track
 cost=2000
 is_signal=1
 max_speed=30
+permissive=1
+has_call_on=1
 normal_danger=1
+#working_method=drive_by_sight
 intro_year=1870
 retire_year=1970
 offset_left=10
+upgrade_group=5
 Image[0]=CSD/mechanic_1.8.0
 Image[1]=CSD/mechanic_1.8.1
 Image[2]=CSD/mechanic_1.8.2
@@ -21,6 +25,10 @@ Image[4]=CSD/mechanic_1.9.0
 Image[5]=CSD/mechanic_1.9.1
 Image[6]=CSD/mechanic_1.9.2
 Image[7]=CSD/mechanic_1.9.3
+Image[8]=CSD/mechanic_1.9.0
+Image[9]=CSD/mechanic_1.9.1
+Image[10]=CSD/mechanic_1.9.2
+Image[11]=CSD/mechanic_1.9.3
 Icon=> CSD/mechanic_1.8.4
 Cursor=CSD/mechanic_1.9.4
 -----------------------------
@@ -34,12 +42,15 @@ Name=Mechanic_CSD_PreSignal_yellow_3aspect
 waytype=track
 cost=1000
 is_presignal=1
+max_speed=120
+#working_method=absolute_block
 # Uporornovadlo [X], ctercovy terc zluty
 intro_year=1939
 intro_month=11
 retire_year=1954
 retire_month=6
 offset_left=10
+upgrade_group=6
 Image[0]=CSD/mechanic_2.8.0
 Image[1]=CSD/mechanic_2.8.1
 Image[2]=CSD/mechanic_2.8.2
@@ -61,11 +72,14 @@ Name=Mechanic_DR_PreSignal_yellow_3aspect
 waytype=track
 cost=1000
 is_presignal=1
+max_speed=120
+#working_method=absolute_block
 # Upozornovadlo [X], kruhovy terc zluty
 intro_year=1954
 intro_month=6
 retire_year=1970
 offset_left=10
+upgrade_group=6
 Image[0]=CSD/mechanic_3.8.0
 Image[1]=CSD/mechanic_3.8.1
 Image[2]=CSD/mechanic_3.8.2
@@ -91,11 +105,14 @@ Name=Mechanic_DR_PreSignal_Station
 waytype=track
 cost=1000
 is_presignal=1
+max_speed=120
+#working_method=absolute_block
 # Uzavera koleje
 intro_year=1939
 intro_month=11
 retire_year=1970
 offset_left=10
+upgrade_group=7
 Image[0]=CSD/mechanic_3.0.0
 Image[1]=CSD/mechanic_3.0.1
 Image[2]=CSD/mechanic_3.0.2
@@ -115,22 +132,23 @@ Cursor=CSD/mechanic_3.1.4
 ############################
 #### EndOfChooseSignal #####
 ############################
-obj=roadsign
-copyright=Lubak91
-Name=Mechanic_DR_EndOfChooseSignal
-waytype=track
-cost=500
-end_of_choose=1
-# Neplatna uzavera koleje
-intro_year=1939
-intro_month=11
-retire_year=1970
-offset_left=10
-Image[0]=CSD/mechanic_1.10.0
-Image[1]=CSD/mechanic_1.10.1
-Image[2]=CSD/mechanic_1.10.2
-Image[3]=CSD/mechanic_1.10.3
-Icon=> CSD/mechanic_1.10.4
-Cursor=CSD/mechanic_1.11.4
------------------------------
+#obj=roadsign
+#copyright=Lubak91
+#Name=Mechanic_DR_EndOfChooseSignal
+#waytype=track
+#cost=500
+#end_of_choose=1
+#max_speed=120
+## Neplatna uzavera koleje
+#intro_year=1939
+#intro_month=11
+#retire_year=1970
+#offset_left=10
+#Image[0]=CSD/mechanic_1.10.0
+#Image[1]=CSD/mechanic_1.10.1
+#Image[2]=CSD/mechanic_1.10.2
+#Image[3]=CSD/mechanic_1.10.3
+#Icon=> CSD/mechanic_1.10.4
+#Cursor=CSD/mechanic_1.11.4
+#-----------------------------
 

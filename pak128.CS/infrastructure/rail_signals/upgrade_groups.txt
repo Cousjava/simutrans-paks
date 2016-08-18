@@ -1,0 +1,62 @@
+
+# Upgrade groups podle pak.Britain - chtel jsem puvodne pouzit ale nakonec sem to vzdal
+#
+# 1: Two aspect stop, track circuit block
+# 2: Two aspect distant, track circuit block
+# 3: Three aspect plain 		(absolute)	
+# 4: Four aspect plain			(absolute)
+# 5: Two aspect junction, track circuit block
+# 6: Three aspect junction		(choose)
+# 7: Four aspect junction		(choose)
+# 8: Stop signal, absolute block	(mechanicke oddilove jednoramenne)
+# 9: Distant signal, absolute block	(mechanicka dvojznakova predvest)
+# 10: Junction signal, absolute block	(mechanicke vjezdove dvouramenne)
+# 11: Token block signal		(mechanicke odjezdove trojramenne)
+# 12: Combined signal, absolute block	(rezerva pro odliseni vjezdoveho se zlutym ramenem)
+# 13: Permissive signal, absolute block	(mechanicka trojznakova predvest)
+# 14: Stop signal, time interval
+# 15: Junction signal, time interval
+# 16: Two aspect permissive signal, track circuit block
+# 17: Minimum speed sign, 60km/h	(3-aspect permissive - autoblok)
+# 18: Minimum speed sign, 100km/h	(4-aspect permissive - autoblok)
+# 19: Minimum speed sign, 121km/h
+# 20: Intermediate block stop signal
+# 21: Intermediate block distant signal
+
+Mechanicke Zakladni:
+1: Mechanic_*_Signal_*
+2: Mechanic_*_PreSignal_*
+3: Mechanic_*_LongSignal_*
+4: Mechanic_*_ChooseSignal_*
+
+Mechanicke Modelarske:
+5: Mechanic_*_Signal_Shunting
+6: Mechanic_*_PreSignal_*_3aspect
+7: Mechanic_*_PreSignal_*_Station (uzavera koleje)
+8: Mechanic_*_ChooseSignal_*_3aspect (rezerva)
+
+Svetelne Zakladni:
+11: *_Signal
+12: *_PreSignal
+13: *_LongSignal
+14: *_ChooseSignal
+
+Svetelne Modelarske:
+15: *_Signal_Shunting
+16: *_PreSignal_3aspect
+17: *_PreSignal_Station (vlozene)
+18: *_PreSignal_Repeater
+19: *_PreSignal_Lastblock
+20: *_PreSignal_Shunting
+21: *_LongSignal_Siding
+
+Svetelne Experimental:
+31: *_3aspect_absolute
+32: *_3aspect_permissive
+33: *_3aspect_long
+34: *_3aspect_choose
+41: *_4aspect_absolute
+42: *_4aspect_permissive
+43: *_4aspect_long
+44: *_4aspect_choose
+
