@@ -7,6 +7,7 @@ noinfo=1
 copyright=Shunter
 Level=1
 intro_year=1955
+is_control_tower=1
 
 needs_ground=1
 animation_time=100

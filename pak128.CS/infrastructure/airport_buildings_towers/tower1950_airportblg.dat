@@ -5,6 +5,7 @@ copyright=MHz
 
 type=extension
 waytype=air
+is_control_tower=1
 
 Dims=1,1,1
 NoInfo=1

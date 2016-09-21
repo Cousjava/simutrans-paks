@@ -3,6 +3,7 @@ Obj=building
 Name=Tower1920_AirportBlg
 copyright=MHz
 type=extension
+is_control_tower=1
 waytype=air
 #one view
 Dims=1,1,1
