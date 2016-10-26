@@ -6,7 +6,7 @@
 # nekde tvrdi, ze az 150 km/h
 # limit dany prazci neznamy
 obj=way
-name=rail_track_T_wooden_speepers
+name=rail_track_T_wooden_sleepers
 copyright=JK271+VTPsim
 waytype=track
 cost=32000

@@ -4,7 +4,7 @@
 # max 22,5t na napravu (C4/90, D4/50)
 # max rychlost 90km/h (limit kolejnice); limit dany prazci neznamy
 obj=way
-name=rail_track_A_wooden_speepers
+name=rail_track_A_wooden_sleepers
 copyright=JK271+VTPsim
 waytype=track
 cost=32000

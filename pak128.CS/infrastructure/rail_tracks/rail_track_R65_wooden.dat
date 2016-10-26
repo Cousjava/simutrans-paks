@@ -4,7 +4,7 @@
 # max rychlost 200km/h (limit kolejnice); limit dany prazci neznamy
 # 65kg/m
 obj=way
-name=rail_track_R65_wooden_speepers
+name=rail_track_R65_wooden_sleepers
 copyright=JK271+VTPsim
 waytype=track
 cost=41600

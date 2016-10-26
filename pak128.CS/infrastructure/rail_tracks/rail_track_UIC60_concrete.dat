@@ -5,7 +5,7 @@
 # max rychlost ?300km/h? (limit kolejnice);
 # limit dany prazci neznamy
 obj=way
-name=rail_track_UIC60_concrete_speepers
+name=rail_track_UIC60_concrete_sleepers
 copyright=JK271
 waytype=track
 cost=38400

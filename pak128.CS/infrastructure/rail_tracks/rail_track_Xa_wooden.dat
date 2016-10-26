@@ -6,7 +6,7 @@
 # zdroj: http://public.rfx.cz/Lienert/V%FDpo%E8et%20nam%E1h%E1n%ED.pdf, slide 13
 # max rychlost 60km/h (limit kolejnice); limit dany prazci neznamy
 obj=way
-name=rail_track_Xa_wooden_speepers
+name=rail_track_Xa_wooden_sleepers
 copyright=JK271+VTPsim
 waytype=track
 cost=22816
