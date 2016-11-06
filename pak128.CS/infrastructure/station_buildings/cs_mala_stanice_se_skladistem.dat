@@ -1,0 +1,24 @@
+Obj=building
+Name=CS_StationBuilding_mala_stanice_se_skladistem
+copyright=Lubak91
+type=extension
+waytype=narrowgauge_track
+type=station
+enables_pax=1
+enables_post=1
+intro_year=1880
+# must be 1*2
+# 1_1 is the land sqare
+Dims=2,1,4
+Level=7
+needs_ground=1
+icon=> cs_mala_stanice_se_skladistem.3.0
+cursor=cs_mala_stanice_se_skladistem.2.2
+BackImage[3][0][0][0][0][0]=cs_mala_stanice_se_skladistem.0.0
+BackImage[3][1][0][0][0][0]=cs_mala_stanice_se_skladistem.0.1
+BackImage[2][0][0][0][0][0]=cs_mala_stanice_se_skladistem.0.2
+BackImage[2][0][1][0][0][0]=cs_mala_stanice_se_skladistem.1.0
+BackImage[1][0][0][0][0][0]=cs_mala_stanice_se_skladistem.1.1
+BackImage[1][1][0][0][0][0]=cs_mala_stanice_se_skladistem.1.2
+BackImage[0][0][0][0][0][0]=cs_mala_stanice_se_skladistem.2.0
+BackImage[0][0][1][0][0][0]=cs_mala_stanice_se_skladistem.2.1
