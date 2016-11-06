@@ -1,0 +1,19 @@
+Obj=building
+Name=uzk_vytopna
+copyright=Lubak91
+type=depot
+waytype=narrowgauge_track
+# must be 1*1
+Dims=1,1,4
+NoInfo=1
+intro_year = 1880
+icon=> uzk_vytopna.1.2
+cursor=uzk_vytopna.1.3
+FrontImage[0][0][0][0][0][0]=uzk_vytopna.1.1
+FrontImage[1][0][0][0][0][0]=uzk_vytopna.1.0
+FrontImage[2][0][0][0][0][0]=uzk_vytopna.0.3
+FrontImage[3][0][0][0][0][0]=uzk_vytopna.0.2
+BackImage[0][0][0][0][0][0]=uzk_vytopna.0.1
+BackImage[1][0][0][0][0][0]=uzk_vytopna.0.0
+#BackImage[2][0][0][0][0][0]=uzk_vytopna.1.3
+#BackImage[3][0][0][0][0][0]=uzk_vytopna.1.2
