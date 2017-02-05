@@ -23,3 +23,6 @@ sound[11]=jackhammer.wav
 sound[10]=boing.wav
 # - tool selection
 sound[9]=click.wav
+
+# factory sounds
+sound[16]=tree-cutting.wav
