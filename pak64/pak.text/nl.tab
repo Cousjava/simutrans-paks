@@ -5,7 +5,7 @@
 #                            Language: nl Nederlands                           #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 6.01 2016                           #
+#                           Date Created: 11.02 2017                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - An_dz                                   #
@@ -18,17 +18,11 @@
 #                                    note:                                     #
 #                                    - FrankP                                  #
 #                                    note:                                     #
-#                            Nathan Samson - Nathan                            #
+#                                 Daniel - NNW                                 #
 #                                    note:                                     #
 #                                     - PTM                                    #
 #                                    note:                                     #
-#                        Lorenz Van Damme - gforcetheone                       #
-#                                    note:                                     #
-#                             Mark Knoester - mark                             #
-#                                    note:                                     #
-#                          Michel Vorenhout - michelv                          #
-#                                    note:                                     #
-#                             P. Hamming - phamming                            #
+#                                   - Tjoeker                                  #
 #                                    note:                                     #
 #                                    - prissi                                  #
 #                                    note:                                     #
@@ -54,6 +48,8 @@ ModernRoad
 Autobrug (voorgespannen beton)
 MonorailRamp
 monorail koppelstuk
+PowerBridge
+Hoogspanningsleiding
 Schiffhebewerk
 Scheepslift
 SteelRail
@@ -88,6 +84,8 @@ Stadhuis\n\noud stadhuis\n
 \nStadhuis\n
 04_CITY_C
 \nStadhuis\n
+10_WOHN
+Sint Lucas kerk
 1930AirDepot
 Eenvoudige Hangar uit 1930
 1headquarter
@@ -95,6 +93,10 @@ Uw hoofdkantoor!
 2headquarter
 Groot hoofdkantoor
 3headquarter
+Uw internationale hoofdkantoor!
+4headquarter
+Uw internationale hoofdkantoor!
+5headquarter
 Uw internationale hoofdkantoor!
 A1_ALTE_KIRCHE
 Oude kerk\n\nEen beroemde oude kerk.\nIedereen moet deze een keer\ngezien hebben. \n\n\n\n
@@ -134,6 +136,10 @@ Car_StationBlg
 auto opslag
 CarDepot
 Depot voor straatvoertuigen
+CarStop
+Laadstation
+CattlePorch
+Weide
 ChannelStop
 laad- en losplaats
 COM_00_14
@@ -162,6 +168,8 @@ COM_10_05
 Historische arbeiderswoning\nmet grote kruidentuin\n\n
 Control_StationBlg
 Traffic control
+DenkDirk
+Monument voor Dirk Burkholz\n\n Hij heeft het Duitstalige forum opgericht in 2004, dat hij onderhouden heeft tot 2010 toen hij op 26 jarige leeftijd plots overleed.
 DenkFlor
 Flor Wauters Monument\n\nDit monument is opgedragen aan\nFlor 'WF Ultd.' Wauters, de\nberoemde ingenieur die vele\n(vracht)auto's ontworpen\nheeft. Hij is ook bekend van\nde vele ontwerpen van fabrieken.\n\n
 DenkHajo
@@ -196,6 +204,8 @@ GCG1TrainStop
 Linker helft van een groot perron met overkapping
 GCG2TrainStop
 Rechter helft van perron met overkapping
+GCGTrainStop
+Groot perron met overkapping
 Goods_StationBlg
 Pakhuis
 Gymnasium
@@ -222,6 +232,8 @@ LeuchtturmShipStop
 Pier met vuurtoren
 Lighthouse
 Vuurtoren\n\n
+LongBusStop
+Bushalte
 MainTerminal1930
 Hoofd terminal gebouw (1930)
 MHzSmallStation
@@ -301,7 +313,7 @@ Windmolen\n\n
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
-Ambulance
+Ziekenwagen
 FordT
 T-Ford
 green_car
@@ -312,16 +324,22 @@ orange_bus
 Oranje bus
 Pickup
 Open Bestelwagen
+Roadster
+Cadillac Roadster
 yellow_car
 gele auto
 #__________________________________dummy_info___________________________________
 #__________________________________dummy_info___________________________________
+Geokraftwerk_details
+<title>Geothermische centrale</title>\n\n\nDeze centrale wekt elektriciteit op uit energie die in de aardkorst opgeslagen zit.
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
 Raffinaderij (Benzine)
 3Raffinerie
 Raffinaderij (B+KS)
+Aufwindkraftwerk
+Zonnetoren
 Autohaus
 Auto dealer
 Autohersteller
@@ -356,6 +374,8 @@ fish_swarm
 School van vissen
 food_processing_plant
 Voedingsmiddelenfabriek
+Geokraftwerk
+Geothermische centrale
 grain_farm
 Graanboerderij
 grain_mill
@@ -376,6 +396,8 @@ Moebelfabrik
 Meubelfabriek
 Moebelhaus
 Meubelzaak
+Muellkraftwerk
+Vuilverbrandercentrale
 Nutzwald
 Productiebos
 Oelbohrinsel
@@ -394,12 +416,16 @@ Pharmaceutics
 Pharmaceutische industrie
 Raffinerie
 Raffinaderij
+Rinnenkraftwerk
+Parabolische zonnetoren
 Saegewerk
 Houtzagerij
 SaegewerkMHz
 Houtzagerij MHz
 Sandquarry
 Zandgroeve
+scrap_yard
+Containerpark
 Stahlwerk
 Staalfabriek
 Stonequarry
@@ -408,6 +434,10 @@ supermarket
 Supermarkt
 TANKE
 Benzinestation
+thermisches_Solarkraftwerk
+Zonnetoren
+Turmkraftwerk
+Zonnetoren
 Windkraftwerk
 Windturbine
 #_____________________________________good______________________________________
@@ -462,20 +492,26 @@ Passagiere
 Passagiers
 Plastik
 plastic
+Post
+post
 PrintersInk
 Drukkerij inkt
 Sand
 zand
 Stahl
-Staal
+staal
 Stone
-Steen
+steen
 waste
 afval
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
 bushes
 Struiken
+deco_rock
+Rots
+deco_rock_2
+Rots
 flowers
 Bloemen
 gemsen
@@ -494,12 +530,20 @@ See1
 Meer met watervogels
 See2
 Meer
+See3
+Meer
 See4
 Begroeid meer
 sheeps
 Schapen
+#___________________________________menu_text___________________________________
+#___________________________________menu_text___________________________________
+MONORAILTOOLS
+Maglev
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
+Couple
+Voetgangers
 Cyclist
 fietser
 pedestrian_1
@@ -513,7 +557,7 @@ Voetganger
 pedestrian_child
 kind
 pedestrian_dog
-hond
+voetganger met hond
 Woman
 vrouw
 #_________________________________program_text__________________________________
@@ -521,7 +565,7 @@ vrouw
 CATEGORY_01
 stukgoederen
 CATEGORY_02
-Bulk goederen
+bulk goederen
 CATEGORY_03
 Olie/Benzine
 CATEGORY_04
@@ -529,9 +573,11 @@ gekoelde waren
 CATEGORY_05
 vloeibaar voedsel
 CATEGORY_06
-Lange goederen
+lange goederen
 CATEGORY_07
-Poeder/pillen
+poeder/pillen
+rolls
+rollen
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 choose_point
@@ -542,12 +588,22 @@ ChooseSignalsMonorail
 Keuze seinen
 Endofchoosetrack
 Einde keuzesein
+LongBlockSignals
+Long Block signaal
+Minimum80
+Minimale snelheid 80km/u
+NoAirEntry
+Eenrichtingsbord
 NoEntry
 Eenrichtingsbord
 preSignals
 Seinen voor twee blocks
 preSignalsMonorail
 Seinen voor twee blocks
+RailClose
+Geen doorgang
+Railgate
+Spoorafsluiting
 Roadgate
 Slagboom
 Signals
@@ -566,6 +622,8 @@ Ahorn-Gruppe
 Esdoorns\n
 Birke-1
 Berk\n
+Buche-1
+Eik
 Busch_2
 Struik
 Kiefer_1
@@ -578,6 +636,8 @@ Kiefer_4
 Den\n
 Kiefer_5
 Den\n
+Latschenkiefer
+Bergpijnboom
 Palmtree1
 Palmboom\n
 Palmtree2
@@ -590,6 +650,8 @@ Palmtree5
 Hoge palmboom\n
 Palmtree6
 Korte palmboom\n
+Palmtree7
+Hoge palmboom
 Pappel-1
 Populier\n
 Pappel-2
@@ -618,8 +680,24 @@ Tree5
 Jeneverbes
 Tree6
 Spar\n
+tropictree1
+Tropische boom
+tropictree2
+Tropische boom
+tropictree3
+Tropische boom
+tropictree4
+Tropische boom
+tropictree5
+Tropische boom
+tropictree6
+Tropische boom
 tropictree7
 Zeeden
+tropictree8
+Tropische boom
+tropictree9
+Tropische boom
 Willow
 Wilg\n
 #____________________________________tunnel_____________________________________
@@ -674,12 +752,18 @@ A3-5_tender
 Tender voor SBB A 3/5
 A380
 Airbus A380
+AdlerPersonenwagen
+Adler rijtuig
+Autotrailer
+Oplegger voor auto's
 Autotransportanhaenger
 H-Trans Auto oplegger
 Autotransporter
 H-Trans Autotransport
 Autotransportwagen
 Canonball Autotransporter
+BB1280
+BB 1280
 Be5-7
 BLS Be 5/7
 Blimp
@@ -704,6 +788,8 @@ Bulkcarriage
 Bulkgoederen wagon
 Bus
 H-Trans Bus
+CarFlat
+Rijtuig voor auto's
 Cargosprinter-Front
 Cargosprinter
 Cargosprinter-Mittel
@@ -712,22 +798,38 @@ Cargosprinter-Steuer
 Cargosprinter duwmachine
 Cementtrailer
 Oplegger voor cement
+Class86
+BR Klasse 86
+CombinoShort(T)
+GT-4S "Combino"
+CombinoShortA(Mc)
+GT-4S "Combino" A
+CombinoShortB(Mc)
+GT-4S "Combino" B
+CombinoShortE(T)
+GT-4S "Combino"
+Comet
+De Havilland 'Comet'
 Concept1Front
 Concept 1
 Concept1Mail
-Concept 1 post wagen
+Concept 1 postrijtuig
 Concept1Pass
-Concept 1 passagierswagon
+Concept 1 rijtuig
 Concept1Rear
-Concept 1 achterstel
+Concept 1 staartrijtuig
 Concept2Front
 Concept 2
 Concept2Mail
-Concept 2 post wagen
+Concept 2 postrijtuig
 Concept2Pass
-Concept 2 passagierswagon
+Concept 2 rijtuig
+Concept2Rear
+Concept 2 staartrijtuig
 Cooling_Waggon
 Voedselwagon met koeling
+DC-3
+Douglas DC-3
 Deponielaster
 Afvalwagen
 Doubledeck_city_bus
@@ -792,8 +894,12 @@ H-Trans-Tiger-Mail-Car
 H-Trans Tigress post wagon
 H-Trans-Tigress-II-Front
 H-Trans Tigress-II
+Hadley-Page-V1500
+Hadley-Page V1500
 Heavy_ore_truck
 Zware vrachtwagen voor erts
+HJMAvia
+Avia Flat-nose Semi
 Holzanhaenger
 JET Hout oplegger
 Holztrailer
@@ -828,6 +934,18 @@ JNR_C11
 JNR C11 (2-6-4T)
 JR_9600
 JR 9600
+JRE-Mp233
+JRE Mp233
+JRE-Mpp233
+JRE Mp233
+JRE-T233
+JRE T233
+JRE-T233cb
+JRE T233 rijtuig
+JRE-Tcf233
+JRE T233 staartrijtuig
+Ju52
+Junkers Ju-52
 JumboCruiserBack1
 Jumbo Cruiser (eind)
 JumboJet
@@ -844,12 +962,24 @@ Kunststofftransporter
 H-Trans Kunststof vrachtwagen
 Lockhead_Tristar
 Lockheed Tristar
+Lockheed10-Electra
+Lockheed 10 Electra
+Lowa
+T-26A
+Lowa_Anhaenger
+T-26B
+MailExpress
+Postvliegtuig
 Moebelschiff
 RX Meubelschip
 Moebelwagen
 VT Vienna Meubel wagon
 NeuOelwagen
 Olie wagon (80t)
+NS1000
+NS 1000
+NS1600
+NS 1600
 Oelanhaenger
 H-Trans Olietank oplegger
 Oelwagen
@@ -870,6 +1000,8 @@ Passagierwagen
 H-Trans Passagierswagon
 Pferdebahn
 Paardentram
+Pferdebahnwagen
+Paardentram rijtuig
 Postschiff
 RX Postschip
 Posttransporter
@@ -912,6 +1044,8 @@ SuperConstellation
 Super Constellation
 T13
 Bernhard T13
+T21_bus
+Ford T-21
 T24
 Bernhard T24
 Tanklastzug
@@ -942,8 +1076,14 @@ Tugboat
 Sleepboot
 VolvoFH12
 Volvo FH12 trekker
+X2000back
+X-2000 staartrijtuig
+X2000car
+X-2000 rijtuig
+X2000front
+X-2000
 XMail
-X prototype mailwagon
+X prototype postrijtuig
 XTest
 X prototype passagierstrein
 #______________________________________way______________________________________
@@ -964,12 +1104,22 @@ gavel_road
 Gravelweg
 Kanal
 Kanaal
+MaglevTrack
+Maglev
+MaglevTrackElevated
+Maglev viaduct
 mip_cobblestone_road
 Klinkerstraat
+monorail
+Monorail
 Powerline
 Hoogspanningsleiding
 Rillenschienen
 tramrails
+river
+Rivier (bevaarbaar)
+river2
+Rivier (niet bevaarbaar)
 runway_grass
 Startbaan (gras)
 runway_modern

@@ -5,94 +5,56 @@
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 6.01 2016                           #
+#                           Date Created: 11.02 2017                           #
 #                                                                              #
 #                                   authors:                                   #
-#                            Alexander Brose - AlexB                           #
+#                                    - prissi                                  #
+#                                    note:                                     #
+#                               Sven Osada - sojo                              #
+#                         note: maintainer pak96.comic                         #
+#                            Oliver Mayer - rakishly                           #
+#                                    note:                                     #
+#                                 - transporter                                #
 #                                    note:                                     #
 #                                    - An_dz                                   #
 #                   note: Verified where all texts are shown                   #
-#                         Klaus Thenmayer - Bitfreezer                         #
-#                                    note:                                     #
-#                                  - Christian                                 #
-#                                    note:                                     #
-#                                   - Combuijs                                 #
-#                                    note:                                     #
-#                                    - Cruzer                                  #
-#                 note: Ex-Entwickler und Gründer pak192.comic                 #
-#                             Dirk W. - DirrrtyDirk                            #
-#                                    note:                                     #
-#                                    - Dwachs                                  #
-#                                    note:                                     #
-#                                   - Eps-Omo                                  #
-#                                    note:                                     #
-#                                  - Flemmbrav                                 #
-#                                    note:                                     #
-#                                   - Florian                                  #
+#                                   - Tjoeker                                  #
 #                                    note:                                     #
 #                                    - FrankP                                  #
 #                                    note:                                     #
-#                                    - GerdW                                   #
+#                                - jounior-fuchs                               #
 #                                    note:                                     #
-#                         Roman Schwörer - Gotthardlok                         #
+#                         Alexandre Raymond - alekcxjo                         #
 #                                    note:                                     #
-#                           Hansjörg Malthaner - Hajo                          #
+#                           Michael Olbricht - whoami                          #
 #                                    note:                                     #
-#                              Jaroslaw - Jaroslaw                             #
+#                                   - Eps-Omo                                  #
 #                                    note:                                     #
-#                                   - Leartin                                  #
-#                                    note:                                     #
-#                                   - Lemuria                                  #
-#                                    note:                                     #
-#                             Marcus Haupt - Marcus                            #
-#note: if I´m not available by email to proximity.de try mail@marcus-haupt.de (#
-#                                     - MaxK                                   #
+#                                   - Combuijs                                 #
 #                                    note:                                     #
 #                        Constantin Grabowski - Moistboy                       #
 #                                    note:                                     #
 #                                 Daniel - NNW                                 #
 #                                    note:                                     #
-#                                   - Nico192                                  #
+#                              Jaroslaw - Jaroslaw                             #
 #                                    note:                                     #
-#                                     - PTM                                    #
-#                                    note:                                     #
-#                                    - Paco_m                                  #
-#                                    note:                                     #
-#                                   - Xelofino                                 #
-#                                    note:                                     #
-#                          Alexander Huber - alexhuber                         #
-#                                    note:                                     #
-#                                 compo - compo                                #
-#                                    note:                                     #
-#                               Florian - floppy                               #
+#                                    - Dwachs                                  #
 #                                    note:                                     #
 #                                   - gebeine                                  #
 #                        note: maintainer PAK128.german                        #
-#                            Jonas Bushart - jonasbb                           #
+#                          Alexander Huber - alexhuber                         #
 #                                    note:                                     #
-#                                - jounior-fuchs                               #
+#                                   - Leartin                                  #
 #                                    note:                                     #
-#                            Hendrik - missingpiece                            #
+#                                     - PTM                                    #
 #                                    note:                                     #
-#                              Markus Rex - msrex                              #
+#                                     - MaxK                                   #
 #                                    note:                                     #
-#                                    - petter                                  #
+#                                    - Cruzer                                  #
+#                 note: Ex-Entwickler und Gründer pak192.comic                 #
+#                                   - Nico192                                  #
 #                                    note:                                     #
-#                                    - prissi                                  #
-#                                    note:                                     #
-#                            Oliver Mayer - rakishly                           #
-#                                    note:                                     #
-#                                     - sdog                                   #
-#                                    note:                                     #
-#                                    - smu42                                   #
-#                                    note:                                     #
-#                               Sven Osada - sojo                              #
-#                         note: maintainer pak96.comic                         #
-#                                 - transporter                                #
-#                                    note:                                     #
-#                           Werner Brandt - wernieman                          #
-#                             note: Nightly creator                            #
-#                           Michael Olbricht - whoami                          #
+#                                  - Flemmbrav                                 #
 #                                    note:                                     #
 #                                                                              #
 ################################################################################
@@ -293,7 +255,7 @@ Der Park zur heiligen Meernynphe zieht wegen seinem Names die Besuchermassen an;
 Control_StationBlg
 Stellwerk
 DenkDirk
-Dirk Burkholz Denkmal\n\nDirk Burgholz gründete das Deutsche Forum 2004 und administrierte es bis zu seinem plötzlichen Tod 2010.
+Dirk Burkholz Denkmal\n\nDirk Burkholz gründete das Deutsche Forum 2004 und administrierte es bis zu seinem plötzlichen Tod 2010 mit 26 Jahren.
 DenkFlor
 Flor-Wauters-Denkmal\n\nDieses Denkmal ist Flor 'WF Ultd.'\nWauters, dem berühmten\nIngenieur,  der so viele\ngrossartige Straßen- und\nSchienenfahrzeuge\ngeschaffen hat, gewidmet. Er ist\nebenfalls bekannt, viele tadellos\nlaufende Fabriken entworfen zu\nhaben.\n
 DenkHajo
@@ -857,7 +819,7 @@ rolls
 choose_point
 Stoppwähler
 ChooseSignals
-Auswahlsignale
+Bahnsteigauswahlsignal
 ChooseSignalsMonorail
 Auswahlsignale
 Endofchoosetrack

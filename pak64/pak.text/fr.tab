@@ -5,30 +5,24 @@
 #                             Language: fr Francais                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 6.01 2016                           #
+#                           Date Created: 11.02 2017                           #
 #                                                                              #
 #                                   authors:                                   #
 #                                    - An_dz                                   #
 #                   note: Verified where all texts are shown                   #
-#                                  - Christophe                                #
-#                                    note:                                     #
 #                                    - Dwachs                                  #
 #                                    note:                                     #
 #                                  - Flemmbrav                                 #
 #                                    note:                                     #
 #                                    - FrankP                                  #
 #                                    note:                                     #
-#                         Roman Schwörer - Gotthardlok                         #
+#                                 Daniel - NNW                                 #
 #                                    note:                                     #
 #                                     - PTM                                    #
 #                                    note:                                     #
-#                           Sava Bogdanets - Sava2004                          #
+#                                   - Tjoeker                                  #
 #                                    note:                                     #
-#                          Jean Beaudet - cagliostro_2                         #
-#                                    note:                                     #
-#                                  - coincoin42                                #
-#                                    note:                                     #
-#                        Lorenz Van Damme - gforcetheone                       #
+#                         Alexandre Raymond - alekcxjo                         #
 #                                    note:                                     #
 #                                    - gwalch                                  #
 #                                    note:                                     #
@@ -38,10 +32,6 @@
 #                                    note:                                     #
 #                                     - mEGa                                   #
 #                            note: French translator                           #
-#                          Christophe Manaud - manaud                          #
-#                                    note:                                     #
-#                           Maxime Cheminel - maxime                           #
-#                                    note:                                     #
 #                                    - prissi                                  #
 #                                    note:                                     #
 #                                                                              #
@@ -170,6 +160,8 @@ COM_01_10
 La clinique locale. La\nfaçade a été changée par\nune nouvelle plus joyeuse\npour remonter le moral des\npatients, spécialement\nceux en visite chez le\ndentiste. Ne gardez pas de\ndent contre eux!\n
 Control_StationBlg
 Service du contrôle
+DenkDirk
+Monument Dirk\n\nCe monument est dédié à Dirk Burkholz qui fonda et a pris soin du forum allemande jusqu'à sa mort 2010 à l'âge de 26 ans.
 DenkFlor
 Monument\n\nCe monument est dédié à\nFlor 'WF Ultd.' Wauters, le\ncélèbre ingénieur qui créa\ntant de véhicules\nferroviaires et routiers. Il\nest aussi connu pour avoir\nréalisé de belles usines.\n
 DenkHajo

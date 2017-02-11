@@ -5,130 +5,70 @@
 #                             Language: en English                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                           Date Created: 24.11 2015                           #
+#                           Date Created: 24.11 2016                           #
 #                                                                              #
 #                                   authors:                                   #
-#                            Alexander Brose - AlexB                           #
+#                                    - prissi                                  #
+#                                    note:                                     #
+#                               Sven Osada - sojo                              #
+#                         note: maintainer pak96.comic                         #
+#                            James P. Hood - TheHood                           #
+#                                    note:                                     #
+#                                 - transporter                                #
 #                                    note:                                     #
 #                                    - An_dz                                   #
 #                   note: Verified where all texts are shown                   #
-#                         Klaus Thenmayer - Bitfreezer                         #
+#                             Simon Small - SimonS                             #
 #                                    note:                                     #
-#                                  - Christian                                 #
-#                                    note:                                     #
-#                            Colin W Anetts - Colin                            #
-#                                    note:                                     #
-#                            Colin Teubner - ColinT                            #
-#                                    note:                                     #
-#                                   - Combuijs                                 #
-#                                    note:                                     #
-#                                    - Cruzer                                  #
-#                 note: Ex-Entwickler und Gründer pak192.comic                 #
-#                             Dirk W. - DirrrtyDirk                            #
-#                                    note:                                     #
-#                                    - Dwachs                                  #
-#                                    note:                                     #
-#                                  - Flemmbrav                                 #
+#                                   - Tjoeker                                  #
 #                                    note:                                     #
 #                                    - FrankP                                  #
 #                                    note:                                     #
-#                                    - GerdW                                   #
-#                                    note:                                     #
-#                         Roman Schwörer - Gotthardlok                         #
-#                                    note:                                     #
-#                           Hansjörg Malthaner - Hajo                          #
-#                                    note:                                     #
-#                                 - IgorEliezer                                #
-#                                    note:                                     #
-#                              Jaroslaw - Jaroslaw                             #
-#                                    note:                                     #
-#                                   - Leartin                                  #
-#                                    note:                                     #
-#                             Marcus Haupt - Marcus                            #
-#note: if I´m not available by email to proximity.de try mail@marcus-haupt.de (#
-#                                     - MaxK                                   #
-#                                    note:                                     #
-#                               - Nerd Subversive                              #
-#                                    note:                                     #
-#                                   - Nico192                                  #
-#                                    note:                                     #
-#                                 - Nicole_Chen                                #
-#                                    note:                                     #
-#                                     - PTM                                    #
-#                                    note:                                     #
-#                                    - Paco_m                                  #
-#                                    note:                                     #
-#                           Sava Bogdanets - Sava2004                          #
-#                                    note:                                     #
-#                             Simon Small - SimonS                             #
-#                                    note:                                     #
-#                          Susanna Björverud - Susanna                         #
-#                                    note:                                     #
-#                            James P. Hood - TheHood                           #
-#                                    note:                                     #
-#                                   - Timothy                                  #
-#                                    note:                                     #
-#                       Venkatesh Parthasarathy - Venkat                       #
-#                                    note:                                     #
-#                                   - Xelofino                                 #
+#                                - jounior-fuchs                               #
 #                                    note:                                     #
 #                          Albert Ruiz - albert.yuste                          #
 #                           note: Albert Ruiz - Zeno                           #
-#                            Carl Baker - carlbaker                            #
+#                         Alexandre Raymond - alekcxjo                         #
+#                                    note:                                     #
+#                           Michael Olbricht - whoami                          #
+#                                    note:                                     #
+#                                   - Combuijs                                 #
+#                                    note:                                     #
+#                                 Daniel - NNW                                 #
+#                                    note:                                     #
+#                              Jaroslaw - Jaroslaw                             #
+#                                    note:                                     #
+#                                    - Dwachs                                  #
 #                                    note:                                     #
 #                                  - enternald                                 #
 #     note: Need more lt translators. Eiti ? http://simutrans-germany.com/     #
-#                               Florian - floppy                               #
-#                                    note:                                     #
 #                                   - gebeine                                  #
 #                        note: maintainer PAK128.german                        #
-#                        Lorenz Van Damme - gforcetheone                       #
+#                                 - IgorEliezer                                #
 #                                    note:                                     #
 #                          James E. Petts - jamespetts                         #
 #  note: Maintainer for Simutrans-Experimental. Also works on Pak128.Britain.  #
-#                            Jonas Bushart - jonasbb                           #
+#                                   - Leartin                                  #
 #                                    note:                                     #
-#                                - jounior-fuchs                               #
+#                                     - PTM                                    #
 #                                    note:                                     #
-#                                   - knightly                                 #
+#                                     - MaxK                                   #
 #                                    note:                                     #
-#                             Mark Knoester - mark                             #
-#                                    note:                                     #
-#                          Michel Vorenhout - michelv                          #
-#                                    note:                                     #
-#                              Markus Rex - msrex                              #
-#                                    note:                                     #
+#                                    - Cruzer                                  #
+#                 note: Ex-Entwickler und Gründer pak192.comic                 #
 #                              Tomá? Kube? - napik                             #
 #                                    note:                                     #
 #                                   - neroden                                  #
 #                               note: Programmer                               #
-#                                    - petter                                  #
+#                                   - Nico192                                  #
 #                                    note:                                     #
-#                             P. Hamming - phamming                            #
+#                                  - Flemmbrav                                 #
 #                                    note:                                     #
-#                                    - prissi                                  #
-#                                    note:                                     #
-#                                     - sdog                                   #
-#                                    note:                                     #
-#                                   - shinexus                                 #
-#                                    note:                                     #
-#                           Lincoln Sayger - skreyola                          #
-#                                    note:                                     #
-#                                    - smu42                                   #
-#                                    note:                                     #
-#                               Sven Osada - sojo                              #
-#                         note: maintainer pak96.comic                         #
-#                                 - transporter                                #
-#                                    note:                                     #
-#                              Jon - viewofheaven                              #
-#                                    note:                                     #
-#                              Xavier Paz - vilvoh                             #
-#                                    note:                                     #
-#                         Tomá? Vrbický - vrbicky_tomas                        #
-#                     note: Don´thurry up! Death is faster.                    #
 #                            Vladimír Slávik - vsys                            #
 #                                    note:                                     #
-#                           Michael Olbricht - whoami                          #
+#                                   - Timothy                                  #
+#                                    note:                                     #
+#                              Xavier Paz - vilvoh                             #
 #                                    note:                                     #
 #                                                                              #
 ################################################################################
@@ -634,6 +574,8 @@ fish_swarm
 Fish Swarm
 food_processing_plant
 Food Processing Plant
+Geokraftwerk
+Geothermal Power Station
 grain_farm
 Grain farm
 grain_mill
@@ -823,7 +765,7 @@ rolls
 choose_point
 Choose Point
 ChooseSignals
-Choose Signals
+Platform Choose Signals
 ChooseSignalsMonorail
 Choose Signals
 Endofchoosetrack

@@ -5,11 +5,9 @@
 #                             Language: ru Russian                             #
 #                                Encoding: UTF-8                               #
 #                                Font : cyr.bdf                                #
-#                            Date Created: 6.01 2016                           #
+#                           Date Created: 11.02 2017                           #
 #                                                                              #
 #                                   authors:                                   #
-#                       Semichenkov Alexander - AleksRevo                      #
-#                                    note:                                     #
 #                                    - An_dz                                   #
 #                   note: Verified where all texts are shown                   #
 #                          Timothy Khalatzky - Arhimed                         #
@@ -24,19 +22,17 @@
 #                                    note:                                     #
 #                                     - MaxK                                   #
 #                                    note:                                     #
+#                                 Daniel - NNW                                 #
+#                                    note:                                     #
 #                                     - PTM                                    #
 #                                    note:                                     #
 #                         Mikhail Pestrechikhin - Pestr                        #
-#                                    note:                                     #
-#                           Sava Bogdanets - Sava2004                          #
-#                                    note:                                     #
-#                                    - SkyAn                                   #
 #                                    note:                                     #
 #                            Woratiklis - Woratiklis                           #
 #                                    note:                                     #
 #                                    - prissi                                  #
 #                                    note:                                     #
-#                                   - sagaudi                                  #
+#                                Stepan - stepan                               #
 #                                    note:                                     #
 #                                                                              #
 ################################################################################
@@ -118,6 +114,10 @@ Windmill
 #____________________________________factory____________________________________
 2Raffinerie
 Перерабатывающий завод (Бензин)
+3Raffinerie
+Нефтеперерабатывающий завод
+Aufwindkraftwerk
+Тепличная электростанция
 Autohaus
 Автомагазин
 Autohersteller
@@ -132,6 +132,8 @@ cannery
 Консервная фабрика
 Cementmill
 Цементный завод
+ChemicalPlant
+Химический завод
 CHEMIST
 Химик
 Concretefactory
@@ -150,36 +152,58 @@ fish_swarm
 Fish swarm
 food_processing_plant
 Пищевой комбинат
+Geokraftwerk
+Геотермальная электростанция
 grain_farm
 Зерноферма
 grain_mill
 Мельница
+grain_windmill
+Ветряная мельница
+Incinerator
+Мусоросжигательная печь
 Kohlegrube
 Угольная шахта
 Kohlekraftwerk
 Угольная электростанция
+Marketplace
+Рыночная площадь
 Materialswholesale
 Оптовая база материалов
 Moebelfabrik
 Мебельная фабрика
 Moebelhaus
 Мебельный магазин
+Muellkraftwerk
+Мусоросжигательная электростанция
 Nutzwald
 Высадка леса
 Oelbohrinsel
 Нефтяная вышка
 Oelfeld
 Нефтяной промысел
+Oelkraftwerk
+Мазутная электростанция
+Oelpumpe
+Нефтяная вышка
+old_farm
+Ферма
 Papierfabrik
 Бумажный завод
 Pharmaceutics
 Фармацевтика
 Raffinerie
 Перерабатывающий завод (Пластик)
+Rinnenkraftwerk
+Солнечная электростанция
 Saegewerk
 Лесопилка
+SaegewerkMHz
+Мастерская Кузьмича
 Sandquarry
 Песчаный карьер
+scrap_yard
+Свалка
 Stahlwerk
 Железный карьер
 Stonequarry
@@ -188,6 +212,10 @@ supermarket
 Супермаркет
 TANKE
 Автозаправочная станция
+thermisches_Solarkraftwerk
+Солнечная электростанция
+Turmkraftwerk
+Солнечная электростанция
 Windkraftwerk
 Ветряная электростанция
 #_____________________________________good______________________________________
