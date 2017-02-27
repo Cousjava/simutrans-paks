@@ -1,4 +1,3 @@
-#Min tiles for takeoff: 6
 obj=vehicle
 waytype=air
 name=Beechcraft-King-Air-200-Pax
@@ -14,6 +13,8 @@ intro_year=1964
 intro_month=9
 engine_type=diesel
 weight=3.3
+#experimental
+minimum_runway_length=6
 Constraint[Next][0]=none
 Constraint[Prev][0]=none
 EmptyImage[E]=Beechcraft-King-Air-200-Pax.0.4
@@ -40,6 +41,8 @@ intro_year=1964
 intro_month=9
 engine_type=diesel
 weight=3.3
+#experimental
+minimum_runway_length=6
 Constraint[Next][0]=none
 Constraint[Prev][0]=none
 EmptyImage[E]=Beechcraft-King-Air-200-Cargo.0.4
@@ -66,6 +69,8 @@ intro_year=1964
 intro_month=9
 engine_type=diesel
 weight=3.3
+#experimental
+minimum_runway_length=6
 Constraint[Next][0]=none
 Constraint[Prev][0]=none
 EmptyImage[E]=Beechcraft-King-Air-200-Post.0.4

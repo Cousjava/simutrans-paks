@@ -1,4 +1,3 @@
-#Min tiles for takeoff: 6
 obj=vehicle
 waytype=air
 name=Mooney_Bravo_M20M-Cargo
@@ -16,6 +15,8 @@ intro_month=5
 #retire_month=12
 engine_type=diesel
 weight=1
+#experimental
+minimum_runway_length=6
 Constraint[Next][0]=none
 Constraint[Prev][0]=none
 EmptyImage[E]=Mooney_Bravo_M20M-Cargo.0.4
@@ -44,6 +45,8 @@ intro_month=5
 #retire_month=12
 engine_type=diesel
 weight=1
+#experimental
+minimum_runway_length=6
 Constraint[Next][0]=none
 Constraint[Prev][0]=none
 EmptyImage[E]=Mooney_Bravo_M20M-Post.0.4
@@ -72,6 +75,8 @@ intro_month=5
 #retire_month=12
 engine_type=diesel
 weight=1
+#experimental
+minimum_runway_length=6
 Constraint[Next][0]=none
 Constraint[Prev][0]=none
 EmptyImage[E]=Mooney_Bravo_M20M-Pass.0.4

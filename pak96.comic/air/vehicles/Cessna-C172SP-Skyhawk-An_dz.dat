@@ -1,4 +1,3 @@
-#Min tiles for takeoff: 6
 obj=vehicle
 waytype=air
 name=CessnaC172SPSkyhawk-Pax
@@ -14,6 +13,8 @@ intro_year=1955
 intro_month=11
 engine_type=diesel
 weight=1
+#experimental
+minimum_runway_length=6
 Constraint[Prev][0]=none
 Constraint[Next][0]=none
 EmptyImage[W]=Cessna-C172SP-Skyhawk-Pax-An_dz.0.0
@@ -40,6 +41,8 @@ intro_year=1955
 intro_month=11
 engine_type=diesel
 weight=1
+#experimental
+minimum_runway_length=6
 Constraint[Prev][0]=none
 Constraint[Next][0]=none
 EmptyImage[W]=Cessna-C172SP-Skyhawk-Post-An_dz.0.0

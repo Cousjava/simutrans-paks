@@ -1,4 +1,3 @@
-#Min tiles for takeoff: 8
 obj=vehicle
 waytype=air
 name=Airbus_A320-200
@@ -14,6 +13,8 @@ intro_year=1987
 intro_month=2
 engine_type=diesel
 weight=42
+#experimental
+minimum_runway_length=8
 Constraint[Next][0]=none
 Constraint[Prev][0]=none
 EmptyImage[E]=Airbus_A320-200.0.2
