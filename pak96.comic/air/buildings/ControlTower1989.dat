@@ -8,7 +8,7 @@ enables_pax=1
 enables_post=1
 enables_ware=0
 allow_underground=0
-level=10
+passengers=10
 intro_year=1989
 intro_month=9
 #experimental
