@@ -332,3 +332,16 @@ citycar_level = 5
 # default is ten years 10*12=120
 default_citycar_life = 120
 
+################################# extended stuff #############################
+
+# This is the distance in meters at which train drivers can see signals ahead.
+# Trains have to brake in time for signals which might be at danger, so this
+# distance affects train speed.  # visible for 12 s at speed 120 km/h
+sighting_distance_meters = 400
+
+# This is the maximum speed at which rail (including narrow gauge, monorail and maglev)
+# vehicles may travel in the drive by sight working method. 0 = as fast as they can
+# stop in time with no other limit. Note that this does not apply to trams.
+max_speed_drive_by_sight_kmh = 30
+
+
