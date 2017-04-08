@@ -2,7 +2,7 @@ Obj=citycar
 Name=police_bike_0
 copyright=Napik
 # from photos?
-DistributionWeight=2
+DistributionWeight=0
 intro_year=1965
 intro_month=1
 retire_year=2500
