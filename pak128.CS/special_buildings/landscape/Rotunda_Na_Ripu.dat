@@ -1,11 +1,14 @@
 obj=building
 name=Rotunda_Na_Ripu
 copyright=jk271
-intro_year=1126
 Type=cur
-level=100
+level=96
+intro_year=1126
+#intro_month=0
 needs_ground=1
-climates=temperate
+build_time=0
+#chance=10
+#climates=temperate
 Dims=1,1,4
 BackImage[0][0][0][0][0][0]=Rotunda_Na_Ripu.0.0
 BackImage[1][0][0][0][0][0]=Rotunda_Na_Ripu.1.0

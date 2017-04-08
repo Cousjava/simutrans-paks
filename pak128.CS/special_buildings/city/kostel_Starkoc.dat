@@ -1,15 +1,14 @@
-# Starkoč, okres Kutná Hora
 Obj=building
-# drive Name=cs_kostelik
 Name=kostel_Starkoc
 Copyright=Lubak91
-# small modifications by jk271
 Type=cur
 Level=64
 Intro_year=1738
-Chance=100
+#intro_month=0
 needs_ground=1
-Climates=temperate
+build_time=3000
+#Chance=10
+#Climates=temperate
 dims=3,3,4
 BackImage[0][0][0][0][0][0]=kostel_Starkoc.0.0
 BackImage[0][0][1][0][0][0]=kostel_Starkoc.0.1
@@ -47,3 +46,6 @@ BackImage[3][1][2][0][0][0]=kostel_Starkoc.5.2
 BackImage[3][2][0][0][0][0]=kostel_Starkoc.5.3
 BackImage[3][2][1][0][0][0]=kostel_Starkoc.5.4
 BackImage[3][2][2][0][0][0]=kostel_Starkoc.5.5
+# Starkoč, okres Kutná Hora
+# drive Name=cs_kostelik
+# small modifications by jk271
