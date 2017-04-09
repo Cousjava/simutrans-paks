@@ -3,19 +3,7 @@ name=elec_standard_single_L
 cost=30000
 maintenance=400
 topspeed=200
-# http://www.vlaky.net/zeleznice/spravy/5989-Stejnosmerna-nebo-stridava/
-# Elektrifikace 1.5kV= Tabor - Bechyne: 20.6.1903, puvodne 2x700V. 1938 rekonstrukce na 1.5kV.
-# Elektrifikace 1.5kV= Rybnik - Lipno: 17.12.1911, puvodne 1280V. 1955 rekonstrukce na 1.5kV.
 intro_year=1903
-# Elektrifikace 3kV= Zilina - Spisska Nova Ves: prvni jizda E499.0: 29.8.1953, regulerni provoz 1955
-# http://www.prototypy.cz/?rada=140
-#intro_year=1953
-# Elektrifikace 25kV~ 50Hz Plzen - Horazdovice: prvni jizda S497.0: 18.10.1961, regulerni provoz 1963
-# http://www.prototypy.cz/?rada=S479.0
-#intro_year=1961
-# Elektrifikace 15kV~ 16.7Hz Arlbergbahn, Rakousko: 1924, lokomotiva BBÖ 1080 (10.5.1924)
-# https://de.wikipedia.org/wiki/BB%C3%96_1080
-#intro_year=1924
 waytype=track
 own_waytype=electrified_track
 copyright=VTPsim
