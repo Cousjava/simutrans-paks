@@ -1,18 +1,31 @@
 obj=vehicle
+# http://www.osoblazsko.com/vozidla/lokomotivy-szd/u57-001
+# vyrobeno 6 ks za cenu 11 298 468 Kcs
 cost=12800
 speed=30
 weight=30
 runningcost=4
 fixed_cost=8
 name=U_57_0
-intro_year=2009
+# provoz v jugoslavii
+intro_year=1949
+retire_year=1976
+# provoz v osoblaze
+#intro_year=2009 
 waytype=narrowgauge_track
 copyright=TommPa9
 length=4
 engine_type=steam
 smoke=Steam2
+# TommPa9
 power=330
 gear=133
+# Sim
+#power=150
+#gear=130
+# Vladki (extended)
+tractive_effort=90
+axles=5
 constraint[next][0]=306_0
 
 emptyimage[w]=U57.0.0
@@ -31,10 +44,15 @@ weight=22
 runningcost=4
 fixed_cost=8
 name=306_0
-intro_year=2009
+# provoz v jugoslavii
+intro_year=1949
+retire_year=1976
+# provoz v osoblaze
+#intro_year=2009 
 waytype=narrowgauge_track
 copyright=TommPa9
 length=2
+axles=3
 constraint[prev][0]=U_57_0
 
 emptyimage[w]=U57.1.0
