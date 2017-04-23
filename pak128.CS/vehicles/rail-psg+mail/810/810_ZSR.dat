@@ -14,12 +14,16 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
-bidirectional=1
-can_lead_from_rear=1
 engine_type=diesel
 power=155
 smoke=Diesel_black
 gear=105
+
+# extended
+axles=2
+bidirectional=1
+can_lead_from_rear=1
+
 emptyimage[w]=810_ZSR_zhasnuty.0.0,0,4
 emptyimage[nw]=810_ZSR_zhasnuty.0.1,0,4
 emptyimage[n]=810_ZSR_zhasnuty.0.2,0,4

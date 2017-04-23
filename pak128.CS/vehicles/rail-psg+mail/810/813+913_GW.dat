@@ -15,11 +15,15 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
-bidirectional=1
 engine_type=diesel
 power=257
 smoke=Diesel
 gear=105
+
+# extended
+axles=2
+bidirectional=1
+
 emptyimage[w]=813p_GW.1.0,0,4
 emptyimage[nw]=813p_GW.1.1,0,4
 emptyimage[n]=813p_GW.1.2,0,4
@@ -54,8 +58,12 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
+
+# extended
+axles=2
 bidirectional=1
 can_lead_from_rear=1
+
 emptyimage[w]=913z_GW.1.0,0,4
 emptyimage[nw]=913z_GW.1.1,0,4
 emptyimage[n]=913z_GW.1.2,0,4

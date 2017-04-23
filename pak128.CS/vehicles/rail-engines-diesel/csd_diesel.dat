@@ -15,6 +15,10 @@ copyright=TommPa9
 length=8
 gear=130
 
+# extended
+axles=4
+bidirectional=1
+
 emptyimage[w]=csd_T478_40.0.0,0,4
 emptyimage[nw]=csd_T478_40.0.1,0,4
 emptyimage[n]=csd_T478_40.0.2,0,4
@@ -43,6 +47,10 @@ copyright=TommPa9
 length=8
 gear=130
 
+# extended
+axles=4
+bidirectional=1
+
 emptyimage[w]=csd_T478_4.0.0,0,4
 emptyimage[nw]=csd_T478_4.0.1,0,4
 emptyimage[n]=csd_T478_4.0.2,0,4
@@ -69,6 +77,10 @@ power=1460
 copyright=TommPa9
 length=8
 gear=130
+
+# extended
+axles=4
+bidirectional=1
 
 emptyimage[w]=csd_T478_4.0.0,0,4
 emptyimage[nw]=csd_T478_4.0.1,0,4
@@ -98,6 +110,10 @@ copyright=TommPa9
 length=8
 gear=130
 
+# extended
+axles=4
+bidirectional=1
+
 emptyimage[w]=csd_751_zamracena.0.0,0,4
 emptyimage[nw]=csd_751_zamracena.0.1,0,4
 emptyimage[n]=csd_751_zamracena.0.2,0,4
@@ -125,6 +141,11 @@ power=1100
 copyright=TommPa9
 length=8
 gear=130
+
+# extended
+axles=4
+bidirectional=1
+
 emptyimage[w]=csd_749_zamracena1.0.0,0,4
 emptyimage[nw]=csd_749_zamracena1.0.1,0,4
 emptyimage[n]=csd_749_zamracena1.0.2,0,4
@@ -154,6 +175,10 @@ copyright=TommPa9
 length=8
 gear=139
 
+# extended
+axles=6
+bidirectional=1
+
 emptyimage[w]=csd_781_sergej.0.0,0,4
 emptyimage[nw]=csd_781_sergej.0.1,0,4
 emptyimage[n]=csd_781_sergej.0.2,0,4
@@ -180,6 +205,10 @@ power=1771
 copyright=TommPa9
 length=8
 gear=130
+
+# extended
+axles=4
+bidirectional=1
 
 emptyimage[w]=csd_759_Kyklop.0.0,0,4
 emptyimage[nw]=csd_759_Kyklop.0.1,0,4
@@ -209,6 +238,10 @@ copyright=TommPa9
 length=8
 gear=135
 
+# extended
+axles=6
+bidirectional=1
+
 emptyimage[w]=csd_770.0.0,0,4
 emptyimage[nw]=csd_770.0.1,0,4
 emptyimage[n]=csd_770.0.2,0,4
@@ -235,6 +268,10 @@ power=880
 copyright=TommPa9
 length=7
 gear=130
+
+# extended
+axles=4
+bidirectional=1
 
 emptyimage[w]=csd_742.0.0,0,4
 emptyimage[nw]=csd_742.0.1,0,4
@@ -264,6 +301,10 @@ copyright=TommPa9
 length=7
 gear=130
 
+# extended
+axles=4
+bidirectional=1
+
 emptyimage[w]=csd_735.0.0,0,4
 emptyimage[nw]=csd_735.0.1,0,4
 emptyimage[n]=csd_735.0.2,0,4
@@ -291,6 +332,10 @@ copyright=TommPa9
 length=8
 gear=130
 
+# extended
+axles=6
+bidirectional=1
+
 emptyimage[w]=csd_775_pomeranc.0.0,0,4
 emptyimage[nw]=csd_775_pomeranc.0.1,0,4
 emptyimage[n]=csd_775_pomeranc.0.2,0,4
@@ -316,7 +361,10 @@ power=1470
 copyright=TommPa9
 length=8
 gear=130
-constraint[next][0]=CSD_T_698.0_Kokakola_2
+
+# extended
+axles=6
+bidirectional=1
 
 emptyimage[w]=csd_T698_cocacola.0.0,0,4
 emptyimage[nw]=csd_T698_cocacola.0.1,0,4
@@ -326,6 +374,8 @@ emptyimage[e]=csd_T698_cocacola.0.4,0,4
 emptyimage[se]=csd_T698_cocacola.0.5,0,4
 emptyimage[s]=csd_T698_cocacola.0.6,0,4
 emptyimage[sw]=csd_T698_cocacola.0.7,0,4
+
+constraint[next][0]=CSD_T_698.0_Kokakola_2
 ------------------------------------------
 obj=vehicle
 cost=3917700
@@ -343,7 +393,11 @@ power=1470
 copyright=TommPa9
 length=8
 gear=130
-constraint[prev][0]=CSD_T_698.0_Kokakola_1
+
+# extended
+axles=6
+bidirectional=1
+
 emptyimage[w]=csd_T698_cocacola.1.0,0,4
 emptyimage[nw]=csd_T698_cocacola.1.1,0,4
 emptyimage[n]=csd_T698_cocacola.1.2,0,4
@@ -353,6 +407,7 @@ emptyimage[se]=csd_T698_cocacola.1.5,0,4
 emptyimage[s]=csd_T698_cocacola.1.6,0,4
 emptyimage[sw]=csd_T698_cocacola.1.7,0,4
 
+constraint[prev][0]=CSD_T_698.0_Kokakola_1
 ---------------------------------------
 
 obj=vehicle
@@ -371,6 +426,10 @@ power=1470
 copyright=TommPa9
 length=8
 gear=130
+
+# extended
+axles=6
+bidirectional=1
 
 emptyimage[w]=csd_776_pomeranc1.0.0,0,4
 emptyimage[nw]=csd_776_pomeranc1.0.1,0,4
@@ -400,6 +459,10 @@ copyright=TommPa9
 length=10
 gear=130
 
+# extended
+axles=6
+bidirectional=1
+
 emptyimage[w]=csd_T679_2_ragulin.0.0,0,4
 emptyimage[nw]=csd_T679_2_ragulin.0.1,0,4
 emptyimage[n]=csd_T679_2_ragulin.0.2,0,4
@@ -421,13 +484,16 @@ intro_month=2
 retire_year=1959
 retire_month=5
 waytype=track
-engine_type=diesel
+engine_type=turbine
 smoke=Diesel_black
 power=2400
 copyright=TommPa9
 length=10
 gear=130
-constraint[next][0]=CSD_R_(tendr)
+
+# extended
+axles=6
+bidirectional=1
 
 emptyimage[w]=csd_TL659_turbinka1.0.0,0,4
 emptyimage[nw]=csd_TL659_turbinka1.0.1,0,4
@@ -437,6 +503,8 @@ emptyimage[e]=csd_TL659_turbinka1.0.4,0,4
 emptyimage[se]=csd_TL659_turbinka1.0.5,0,4
 emptyimage[s]=csd_TL659_turbinka1.0.6,0,4
 emptyimage[sw]=csd_TL659_turbinka1.0.7,0,4
+
+constraint[next][0]=CSD_R_(tendr)
 ----------------------------------------------
 
 obj=vehicle
@@ -451,13 +519,16 @@ intro_month=3
 retire_year=1966
 retire_month=5
 waytype=track
-engine_type=diesel
+engine_type=turbine
 smoke=Diesel_black
 power=2400
 copyright=TommPa9
 length=10
 gear=130
-constraint[next][0]=CSD_R_(tendr)
+
+# extended
+axles=6
+bidirectional=1
 
 emptyimage[w]=csd_TL659_turbinka2.0.0,0,4
 emptyimage[nw]=csd_TL659_turbinka2.0.1,0,4
@@ -468,6 +539,7 @@ emptyimage[se]=csd_TL659_turbinka2.0.5,0,4
 emptyimage[s]=csd_TL659_turbinka2.0.6,0,4
 emptyimage[sw]=csd_TL659_turbinka2.0.7,0,4
 
+constraint[next][0]=CSD_R_(tendr)
 ----------------------------------------
 obj=vehicle
 cost=1427700
@@ -484,9 +556,9 @@ waytype=track
 copyright=raven/Sim
 length=4
 
-
-constraint[prev][0]=CSD_TL659.001_Turbinka
-constraint[prev][1]=CSD_TL659.002_Turbinka
+# extended
+axles=2
+bidirectional=1
 
 emptyimage[w]=csd_R.0.0,0,4
 emptyimage[nw]=csd_R.0.1,0,4
@@ -496,6 +568,9 @@ emptyimage[e]=csd_R.0.4,0,4
 emptyimage[se]=csd_R.0.5,0,4
 emptyimage[s]=csd_R.0.6,0,4
 emptyimage[sw]=csd_R.0.7,0,4
+
+constraint[prev][0]=CSD_TL659.001_Turbinka
+constraint[prev][1]=CSD_TL659.002_Turbinka
 ----------------------------
 obj=vehicle
 cost=2103900
@@ -513,6 +588,10 @@ power=883
 copyright=TommPa9
 length=7
 gear=130
+
+# extended
+axles=4
+bidirectional=1
 
 emptyimage[w]=csd_740.0.0,0,4
 emptyimage[nw]=csd_740.0.1,0,4
@@ -539,6 +618,10 @@ power=551
 copyright=TommPa9
 length=6
 gear=130
+
+# extended
+axles=4
+bidirectional=1
 
 emptyimage[w]=csd_720.0.0,0,4
 emptyimage[nw]=csd_720.0.1,0,4
@@ -567,6 +650,10 @@ copyright=TommPa9
 length=7
 gear=130
 
+# extended
+axles=4
+bidirectional=1
+
 emptyimage[w]=csd_721.0.0,0,4
 emptyimage[nw]=csd_721.0.1,0,4
 emptyimage[n]=csd_721.0.2,0,4
@@ -593,6 +680,10 @@ power=806
 copyright=TommPa9
 length=6
 gear=130
+
+# extended
+axles=4
+bidirectional=1
 
 emptyimage[w]=csd_715.0.0,0,4
 emptyimage[nw]=csd_715.0.1,0,4

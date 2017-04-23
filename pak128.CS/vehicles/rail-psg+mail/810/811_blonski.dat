@@ -14,12 +14,16 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
-bidirectional=1
-can_lead_from_rear=1
 engine_type=diesel
 power=238
 smoke=Diesel_black
 gear=130
+
+# extended
+axles=2
+bidirectional=1
+can_lead_from_rear=1
+
 emptyimage[w]=811_blonski_zhasnuty.0.0,0,4
 emptyimage[nw]=811_blonski_zhasnuty.0.1,0,4
 emptyimage[n]=811_blonski_zhasnuty.0.2,0,4

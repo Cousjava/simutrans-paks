@@ -14,11 +14,15 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
-bidirectional=1
 engine_type=diesel
 power=155
 smoke=Diesel_black
 gear=108
+
+# extended
+axles=2
+bidirectional=1
+
 emptyimage[w]=811_predni_zhasnuty.0.0,0,4
 emptyimage[nw]=811_predni_zhasnuty.0.1,0,4
 emptyimage[n]=811_predni_zhasnuty.0.2,0,4
@@ -55,12 +59,16 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
-bidirectional=1
-can_lead_from_rear=1
 engine_type=diesel
 power=155
 smoke=Diesel_black
 gear=108
+
+# extended
+axles=2
+bidirectional=1
+can_lead_from_rear=1
+
 emptyimage[w]=811_zadni_zhasnuty.0.0,0,4
 emptyimage[nw]=811_zadni_zhasnuty.0.1,0,4
 emptyimage[n]=811_zadni_zhasnuty.0.2,0,4
@@ -81,10 +89,6 @@ Constraint[Prev][0]=CD_Btax781-4
 Constraint[Prev][1]=CD_Btax781-2
 Constraint[Next][0]=none
 -------------------------------
-
-
-
-
 obj=vehicle
 cost=1090000
 payload=73
@@ -101,11 +105,15 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
-bidirectional=1
 engine_type=diesel
 power=155
 smoke=Diesel_black
 gear=108
+
+# extended
+axles=2
+bidirectional=1
+
 emptyimage[w]=811_balkan_predni_zhasnuty.0.0,0,4
 emptyimage[nw]=811_balkan_predni_zhasnuty.0.1,0,4
 emptyimage[n]=811_balkan_predni_zhasnuty.0.2,0,4
@@ -142,12 +150,16 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
-bidirectional=1
-can_lead_from_rear=1
 engine_type=diesel
 power=155
 smoke=Diesel_black
 gear=108
+
+# extended
+axles=2
+bidirectional=1
+can_lead_from_rear=1
+
 emptyimage[w]=811_balkan_zadni_zhasnuty.0.0,0,4
 emptyimage[nw]=811_balkan_zadni_zhasnuty.0.1,0,4
 emptyimage[n]=811_balkan_zadni_zhasnuty.0.2,0,4
@@ -167,9 +179,6 @@ freightimage[sw]=811_balkan_zadni.0.7,0,4
 Constraint[Prev][0]=CD_Btax781_balkan-2
 Constraint[Next][0]=none
 -------------------------------
-
-
-
 obj=vehicle
 cost=840600
 payload=104
@@ -186,7 +195,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=0
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=Btax-011.1.0,0,4
 emptyimage[nw]=Btax-011.1.1,0,4
 emptyimage[n]=Btax-011.1.2,0,4
@@ -222,7 +235,11 @@ waytype=track
 freight=Post
 copyright=Sim
 length=7
+
+# extended
+axles=1
 bidirectional=1
+
 emptyimage[w]=Btax-011.3.0,0,4
 emptyimage[nw]=Btax-011.3.1,0,4
 emptyimage[n]=Btax-011.3.2,0,4
@@ -243,9 +260,6 @@ Constraint[Prev][0]=CD_Btax781-1
 Constraint[Next][0]=CD_BDtax783-1
 Constraint[Next][1]=CD_811-2
 -------------------------------
-
-
-
 obj=vehicle
 cost=840600
 payload=104
@@ -262,7 +276,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=0
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=Btax-011.1.0,0,4
 emptyimage[nw]=Btax-011.1.1,0,4
 emptyimage[n]=Btax-011.1.2,0,4
@@ -298,7 +316,11 @@ waytype=track
 freight=Post
 copyright=Sim
 length=7
+
+# extended
+axles=1
 bidirectional=1
+
 emptyimage[w]=Btax-011.3.0,0,4
 emptyimage[nw]=Btax-011.3.1,0,4
 emptyimage[n]=Btax-011.3.2,0,4
@@ -318,8 +340,6 @@ freightimage[sw]=Btax-011.2.7,0,4
 Constraint[Prev][0]=CD_Btax781-3
 Constraint[Next][0]=CD_811-2
 -------------------------------
-
-
 obj=vehicle
 cost=826600
 payload=89
@@ -336,7 +356,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=0
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=BDtax-016.1.0,0,4
 emptyimage[nw]=BDtax-016.1.1,0,4
 emptyimage[n]=BDtax-016.1.2,0,4
@@ -372,7 +396,11 @@ waytype=track
 freight=Post
 copyright=Sim
 length=7
+
+# extended
+axles=1
 bidirectional=1
+
 emptyimage[w]=BDtax-016.3.0,0,4
 emptyimage[nw]=BDtax-016.3.1,0,4
 emptyimage[n]=BDtax-016.3.2,0,4
@@ -392,7 +420,6 @@ freightimage[sw]=BDtax-016.2.7,0,4
 Constraint[Prev][0]=CD_BDtax783-1
 Constraint[Next][0]=CD_Btax781-3
 -------------------------------
-
 obj=vehicle
 cost=840600
 payload=104
@@ -409,7 +436,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=0
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=Btax-011.1.0,0,4
 emptyimage[nw]=Btax-011.1.1,0,4
 emptyimage[n]=Btax-011.1.2,0,4
@@ -445,7 +476,11 @@ waytype=track
 freight=Post
 copyright=Sim
 length=7
+
+# extended
+axles=1
 bidirectional=1
+
 emptyimage[w]=Btax-011.3.0,0,4
 emptyimage[nw]=Btax-011.3.1,0,4
 emptyimage[n]=Btax-011.3.2,0,4
@@ -481,7 +516,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=0
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=Btax-011.1.0,0,4
 emptyimage[nw]=Btax-011.1.1,0,4
 emptyimage[n]=Btax-011.1.2,0,4
@@ -517,7 +556,11 @@ waytype=track
 freight=Post
 copyright=Sim
 length=7
+
+# extended
+axles=1
 bidirectional=1
+
 emptyimage[w]=Btax-011.3.0,0,4
 emptyimage[nw]=Btax-011.3.1,0,4
 emptyimage[n]=Btax-011.3.2,0,4
@@ -555,7 +598,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=0
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=Btax-011_zadni.1.0,0,4
 emptyimage[nw]=Btax-011_zadni.1.1,0,4
 emptyimage[n]=Btax-011_zadni.1.2,0,4
@@ -591,7 +638,11 @@ waytype=track
 freight=Post
 copyright=Sim
 length=7
+
+# extended
+axles=1
 bidirectional=1
+
 emptyimage[w]=Btax-011_zadni.3.0,0,4
 emptyimage[nw]=Btax-011_zadni.3.1,0,4
 emptyimage[n]=Btax-011_zadni.3.2,0,4
@@ -628,7 +679,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=0
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=011_balkan.1.0,0,4
 emptyimage[nw]=011_balkan.1.1,0,4
 emptyimage[n]=011_balkan.1.2,0,4
@@ -664,7 +719,11 @@ waytype=track
 freight=Post
 copyright=Sim
 length=7
+
+# extended
+axles=1
 bidirectional=1
+
 emptyimage[w]=011_balkan.3.0,0,4
 emptyimage[nw]=011_balkan.3.1,0,4
 emptyimage[n]=011_balkan.3.2,0,4
@@ -702,7 +761,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=0
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=011_balkan_zadni.1.0,0,4
 emptyimage[nw]=011_balkan_zadni.1.1,0,4
 emptyimage[n]=011_balkan_zadni.1.2,0,4
@@ -738,7 +801,11 @@ waytype=track
 freight=Post
 copyright=Sim
 length=7
+
+# extended
+axles=1
 bidirectional=1
+
 emptyimage[w]=011_balkan_zadni.3.0,0,4
 emptyimage[nw]=011_balkan_zadni.3.1,0,4
 emptyimage[n]=011_balkan_zadni.3.2,0,4

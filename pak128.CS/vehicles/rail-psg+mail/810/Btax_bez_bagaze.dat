@@ -15,7 +15,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=Btax_CSD_bez_baglu.1.0,0,4
 emptyimage[nw]=Btax_CSD_bez_baglu.1.1,0,4
 emptyimage[n]=Btax_CSD_bez_baglu.1.2,0,4
@@ -51,7 +55,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=Btax_bez_baglu.1.0,0,4
 emptyimage[nw]=Btax_bez_baglu.1.1,0,4
 emptyimage[n]=Btax_bez_baglu.1.2,0,4
@@ -87,7 +95,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=Btax_modry_bez_baglu.1.0,0,4
 emptyimage[nw]=Btax_modry_bez_baglu.1.1,0,4
 emptyimage[n]=Btax_modry_bez_baglu.1.2,0,4
@@ -123,7 +135,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=010_balkan_bez_baglu.1.0,0,4
 emptyimage[nw]=010_balkan_bez_baglu.1.1,0,4
 emptyimage[n]=010_balkan_bez_baglu.1.2,0,4
@@ -158,7 +174,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=010_ZD_bez_baglu.1.0,0,4
 emptyimage[nw]=010_ZD_bez_baglu.1.1,0,4
 emptyimage[n]=010_ZD_bez_baglu.1.2,0,4
@@ -194,7 +214,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=011_ZSR_bez_baglu.1.0,0,4
 emptyimage[nw]=011_ZSR_bez_baglu.1.1,0,4
 emptyimage[n]=011_ZSR_bez_baglu.1.2,0,4
@@ -230,7 +254,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=011_ZSR_811_bez_baglu.1.0,0,4
 emptyimage[nw]=011_ZSR_811_bez_baglu.1.1,0,4
 emptyimage[n]=011_ZSR_811_bez_baglu.1.2,0,4
@@ -266,7 +294,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=011_ZSSK_812_bez_baglu.1.0,0,4
 emptyimage[nw]=011_ZSSK_812_bez_baglu.1.1,0,4
 emptyimage[n]=011_ZSSK_812_bez_baglu.1.2,0,4
@@ -302,7 +334,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=011_blonski_bez_baglu.1.0,0,4
 emptyimage[nw]=011_blonski_bez_baglu.1.1,0,4
 emptyimage[n]=011_blonski_bez_baglu.1.2,0,4
@@ -339,7 +375,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=Btax_viamont_bez_baglu.1.0,0,4
 emptyimage[nw]=Btax_viamont_bez_baglu.1.1,0,4
 emptyimage[n]=Btax_viamont_bez_baglu.1.2,0,4
@@ -374,7 +414,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=Btax_viamont_ridici_bez_baglu.1.0,0,4
 emptyimage[nw]=Btax_viamont_ridici_bez_baglu.1.1,0,4
 emptyimage[n]=Btax_viamont_ridici_bez_baglu.1.2,0,4

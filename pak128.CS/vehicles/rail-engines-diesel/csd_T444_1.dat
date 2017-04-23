@@ -16,6 +16,11 @@ power=515
 gear=135
 speed=70
 sound=7
+
+# extended
+axles=4
+bidirectional=1
+
 EmptyImage[w]=csd_T444_1.0.0,0,4
 EmptyImage[nw]=csd_T444_1.0.1,0,4
 EmptyImage[n]=csd_T444_1.0.2,0,4

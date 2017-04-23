@@ -14,6 +14,9 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
+
+# extended
+axles=2
 bidirectional=1
 
 emptyimage[w]=cd914p_zhasnuty.0.0,0,4
@@ -52,7 +55,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=0
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=cd914p_cyklo.1.0,0,4
 emptyimage[nw]=cd914p_cyklo.1.1,0,4
 emptyimage[n]=cd914p_cyklo.1.2,0,4
@@ -69,6 +76,7 @@ freightimage[e]=cd914p_cyklo.0.4,0,4
 freightimage[se]=cd914p_cyklo.0.5,0,4
 freightimage[s]=cd914p_cyklo.0.6,0,4
 freightimage[sw]=cd914p_cyklo.0.7,0,4
+
 Constraint[Next][0]=CD_914_cyklo-2
 ------------------------------
 
@@ -88,7 +96,11 @@ waytype=track
 freight=Post
 copyright=Sim
 length=7
+
+# extended
+axles=1
 bidirectional=1
+
 emptyimage[w]=cd914p_cyklo.3.0,0,4
 emptyimage[nw]=cd914p_cyklo.3.1,0,4
 emptyimage[n]=cd914p_cyklo.3.2,0,4
@@ -105,6 +117,7 @@ freightimage[e]=cd914p_cyklo.2.4,0,4
 freightimage[se]=cd914p_cyklo.2.5,0,4
 freightimage[s]=cd914p_cyklo.2.6,0,4
 freightimage[sw]=cd914p_cyklo.2.7,0,4
+
 Constraint[Prev][0]=CD_914_cyklo-1
 Constraint[Next][0]=CD_814-2
 ----------------------------------------
@@ -125,6 +138,8 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
+# extended
+axles=2
 bidirectional=1
 
 emptyimage[w]=cd014s_zhasnuty.0.0,0,4
@@ -146,8 +161,6 @@ freightimage[sw]=cd014s.0.7,0,4
 
 Constraint[Prev][0]=CD_814-1
 Constraint[Next][0]=CD_814-2
-
-
 ----------------------------------------
 
 obj=vehicle
@@ -166,7 +179,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=0
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=cd014s_cyklo.1.0,0,4
 emptyimage[nw]=cd014s_cyklo.1.1,0,4
 emptyimage[n]=cd014s_cyklo.1.2,0,4
@@ -183,6 +200,7 @@ freightimage[e]=cd014s_cyklo.0.4,0,4
 freightimage[se]=cd014s_cyklo.0.5,0,4
 freightimage[s]=cd014s_cyklo.0.6,0,4
 freightimage[sw]=cd014s_cyklo.0.7,0,4
+
 Constraint[Next][0]=CD_014_cyklo-2
 Constraint[Prev][0]=CD_814-1
 ------------------------------
@@ -203,7 +221,11 @@ waytype=track
 freight=Post
 copyright=Sim
 length=7
+
+# extended
+axles=1
 bidirectional=1
+
 emptyimage[w]=cd014s_cyklo.3.0,0,4
 emptyimage[nw]=cd014s_cyklo.3.1,0,4
 emptyimage[n]=cd014s_cyklo.3.2,0,4
@@ -220,15 +242,10 @@ freightimage[e]=cd014s_cyklo.2.4,0,4
 freightimage[se]=cd014s_cyklo.2.5,0,4
 freightimage[s]=cd014s_cyklo.2.6,0,4
 freightimage[sw]=cd014s_cyklo.2.7,0,4
+
 Constraint[Prev][0]=CD_014_cyklo-1
 Constraint[Next][0]=CD_814-2
-
-
 ----------------------------------------
-
-
-
-
 
 obj=vehicle
 cost=1317400
@@ -250,6 +267,9 @@ engine_type=diesel
 power=242
 smoke=Diesel
 gear=105
+
+# extended
+axles=2
 bidirectional=1
 
 emptyimage[w]=cd814p_zhasnuty.0.0,0,4
@@ -272,6 +292,7 @@ freightimage[sw]=cd814p.0.7,0,4
 Constraint[Next][0]=CD_014
 Constraint[Next][1]=CD_014_cyklo-1
 ----------------------------------------
+
 obj=vehicle
 cost=1317800
 payload=92
@@ -292,6 +313,9 @@ engine_type=diesel
 power=242
 smoke=Diesel
 gear=105
+
+# extended
+axles=2
 bidirectional=1
 can_lead_from_rear=1
 

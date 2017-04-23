@@ -14,11 +14,15 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
-bidirectional=1
 engine_type=diesel
 power=242
 smoke=Diesel_black
 gear=105
+
+# extended
+axles=2
+bidirectional=1
+
 emptyimage[w]=812_zhasnuty.0.0,0,4
 emptyimage[nw]=812_zhasnuty.0.1,0,4
 emptyimage[n]=812_zhasnuty.0.2,0,4
@@ -56,12 +60,16 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
-bidirectional=1
-can_lead_from_rear=1
 engine_type=diesel
 power=242
 smoke=Diesel_black
 gear=105
+
+# extended
+axles=2
+bidirectional=1
+can_lead_from_rear=1
+
 emptyimage[w]=812_zadni_zhasnuty.0.0,0,4
 emptyimage[nw]=812_zadni_zhasnuty.0.1,0,4
 emptyimage[n]=812_zadni_zhasnuty.0.2,0,4
@@ -98,7 +106,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=912_predni_zhasnuty.0.0,0,4
 emptyimage[nw]=912_predni_zhasnuty.0.1,0,4
 emptyimage[n]=912_predni_zhasnuty.0.2,0,4
@@ -135,8 +147,12 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
+
+# extended
+axles=2
 bidirectional=1
 can_lead_from_rear=1
+
 emptyimage[w]=912_zhasnuty.0.0,0,4
 emptyimage[nw]=912_zhasnuty.0.1,0,4
 emptyimage[n]=912_zhasnuty.0.2,0,4

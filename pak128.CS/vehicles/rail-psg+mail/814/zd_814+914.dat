@@ -18,6 +18,9 @@ engine_type=diesel
 power=242
 smoke=Diesel
 gear=105
+
+# extended
+axles=2
 bidirectional=1
 
 emptyimage[w]=zd814p_zhasnuty.0.0,0,4
@@ -41,7 +44,6 @@ Constraint[Next][0]=ZD_914_5
 Constraint[Next][1]=ZD_914_5_cyklo-1
 ----------------------------------------
 
-
 obj=vehicle
 cost=978600
 payload=97
@@ -58,6 +60,9 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=7
+
+# extended
+axles=2
 bidirectional=1
 can_lead_from_rear=1
 
@@ -79,7 +84,6 @@ freightimage[s]=zd914z.0.6,0,4
 freightimage[sw]=zd914z.0.7,0,4
 
 Constraint[Prev][0]=ZD_814_5
-
 ----------------------------------------
 
 obj=vehicle
@@ -98,7 +102,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=0
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=zd914z_cyklo.1.0,0,4
 emptyimage[nw]=zd914z_cyklo.1.1,0,4
 emptyimage[n]=zd914z_cyklo.1.2,0,4
@@ -115,6 +123,7 @@ freightimage[e]=zd914z_cyklo.0.4,0,4
 freightimage[se]=zd914z_cyklo.0.5,0,4
 freightimage[s]=zd914z_cyklo.0.6,0,4
 freightimage[sw]=zd914z_cyklo.0.7,0,4
+
 Constraint[Next][0]=ZD_914_5_cyklo-2
 Constraint[Prev][0]=ZD_814_5
 ------------------------------
@@ -135,8 +144,12 @@ waytype=track
 freight=Post
 copyright=Sim
 length=7
+
+# extended
+axles=1
 bidirectional=1
 can_lead_from_rear=1
+
 emptyimage[w]=zd914z_cyklo.3.0,0,4
 emptyimage[nw]=zd914z_cyklo.3.1,0,4
 emptyimage[n]=zd914z_cyklo.3.2,0,4
@@ -153,4 +166,5 @@ freightimage[e]=zd914z_cyklo.2.4,0,4
 freightimage[se]=zd914z_cyklo.2.5,0,4
 freightimage[s]=zd914z_cyklo.2.6,0,4
 freightimage[sw]=zd914z_cyklo.2.7,0,4
+
 Constraint[Prev][0]=ZD_914_5_cyklo-1

@@ -15,6 +15,11 @@ power=82
 smoke=Diesel_small
 gear=010
 speed=30
+
+# extended
+axles=2
+bidirectional=1
+
 emptyimage[w]=csd_t200p.0.0,0,4
 emptyimage[nw]=csd_t200p.0.1,0,4
 emptyimage[n]=csd_t200p.0.2,0,4

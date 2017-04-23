@@ -15,7 +15,11 @@ waytype=track
 freight=Passagiere
 copyright=Sim
 length=0
+
+# extended
+axles=2
 bidirectional=1
+
 emptyimage[w]=Btax_viamont_ridici.1.0,0,4
 emptyimage[nw]=Btax_viamont_ridici.1.1,0,4
 emptyimage[n]=Btax_viamont_ridici.1.2,0,4
@@ -51,7 +55,11 @@ waytype=track
 freight=Post
 copyright=Sim
 length=7
+
+# extended
+axles=1
 bidirectional=1
+
 emptyimage[w]=Btax_viamont_ridici.3.0,0,4
 emptyimage[nw]=Btax_viamont_ridici.3.1,0,4
 emptyimage[n]=Btax_viamont_ridici.3.2,0,4
