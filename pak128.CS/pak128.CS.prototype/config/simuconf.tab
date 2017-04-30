@@ -344,4 +344,13 @@ sighting_distance_meters = 400
 # stop in time with no other limit. Note that this does not apply to trams.
 max_speed_drive_by_sight_kmh = 30
 
+# This setting allows the way in which weight limits are enforced to be customised.
+# The meanings of each setting are as follows:
+# 0: weight limits are ignored entirely. 
+# 1: then vehicles can travel over roads, rails, tunnels and bridges for which they are too heavy, but only at greatly reduced speed. 
+# 2: Vehicles cannot travel over ways for which they are overweight at all. 
+# 3: Vehciles cannot travel over ways for which they are more than 10% overweight at all, and will travel on ways for which they are up to 10% overweight at a greatly reduced speed.
+# To revert to the behaviour of Simutrans-Standard, set enforce_weight_limits=0
+enforce_weight_limits=1
+
 
