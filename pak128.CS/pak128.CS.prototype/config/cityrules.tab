@@ -47,6 +47,9 @@ ind_near_ind = 8
 ind_near_com = 0
 ind_near_res = -8
 
+# explicit clustering of buildings
+# http://forum.simutrans.com/index.php?topic=12042.0
+cluster_factor = 10
 
 #
 # now the actual building rules. They can be up to 7x7.
