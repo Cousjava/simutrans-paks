@@ -256,12 +256,17 @@ intro_year=1951
 retire_year=1983
 waytype=track
 engine_type=steam
-power=1617
+power=1618
 copyright=TommPa9
 smoke=Steam2
 length=7
-gear=123
+#gear=123
 constraint[next][0]=CSD_935.2
+
+# extended
+axles=6
+bidirectional=0
+tractive_effort=220
 
 emptyimage[w]=556_0_stokr.0.0,0,4
 emptyimage[nw]=556_0_stokr.0.1,0,4

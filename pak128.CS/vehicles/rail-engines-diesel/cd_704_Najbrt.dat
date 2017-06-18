@@ -14,6 +14,11 @@ smoke=Diesel_small
 power=250
 gear=130
 speed=60
+
+# extended
+axles=2
+bidirectional=1
+
 EmptyImage[w]=cd_704_Najbrt.0.0,0,4
 EmptyImage[nw]=cd_704_Najbrt.0.1,0,4
 EmptyImage[n]=cd_704_Najbrt.0.2,0,4
