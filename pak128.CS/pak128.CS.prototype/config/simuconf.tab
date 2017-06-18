@@ -183,6 +183,17 @@ station_coverage = 3
 #
 max_transfers = 7
 
+# Convoy length is conigurable defaults are:
+#   max_rail_convoi_length = 24
+#   max_road_convoi_length = 4
+#   max_ship_convoi_length = 4
+#   max_air_convoi_length = 1
+# Maximum is 255 (unsigned int) but due to a bug probably only 127 (signed int)
+
+# Rekordni tezkotonazni vlak z 20.12.1958 mel 121 ctyrnapravovych vozu +
+# + 3 lokomotivy 566.0, delka > 1500 m, hmotnost 8156 nebo 8272 t
+# Dle clanku v CD pro Vas z Brezna 2017
+max_rail_convoi_length = 127
 
 ################################  industry stuff  ###############################
 
@@ -210,13 +221,6 @@ just_in_time = 2
 # startingmoney[i]=year,money(in 1/10 credits),interpolate (1) or step(0)
 starting_money[0]=1908,50000000,1
 starting_money[1]=2030,150000000,1
-
-# Allow buying obsolete vehicles (=1) in depot.
-allow_buying_obsolete_vehicles = 1
-
-# Vehicles can lose a part of their value, when they are once used.
-# The loss is given in 1/1000th, i.e 300 means the remaining value will be 70%.
-used_vehicle_reduction = 150
 
 # if a convoy runs on a way that belongs to another player, toll may
 # be charged. The number given is the percentage of the running cost
@@ -334,15 +338,101 @@ default_citycar_life = 120
 
 ################################# extended stuff #############################
 
-# This is the distance in meters at which train drivers can see signals ahead.
-# Trains have to brake in time for signals which might be at danger, so this
-# distance affects train speed.  # visible for 12 s at speed 120 km/h
-sighting_distance_meters = 400
+################################ Vehicle settings ##############################
 
-# This is the maximum speed at which rail (including narrow gauge, monorail and maglev)
-# vehicles may travel in the drive by sight working method. 0 = as fast as they can
-# stop in time with no other limit. Note that this does not apply to trams.
-max_speed_drive_by_sight_kmh = 30
+# These settings determine how vehicles take corners, for each individual type of way.  They
+# only apply to vehicles that use fixed ways (road, rail, monorail, etc.), and not aircraft or
+# ships. Note that these settings have changed substantially from versions earlier than 11.
+# 
+# corner_force_divider_[way type]: The maximum force as a proportion of G (gravitational force)
+# that it is permissible for vehicles of this way type to experience when taking a corner. This
+# number is expressed as a divider: e.g., a value of 10 is 1/10th of G, or 0.1G. The higher this
+# number, the slower that vehicles have to travel in corners. 
+#
+# The explanation for this formula can be found here:
+# https://books.google.co.uk/books?id=NbYqQSQcE2MC&pg=PA30&lpg=PA30&dq=curve+radius+speed+limit+formula+rail&source=bl&ots=mbfC3lCnX4&sig=qClyuNSarnvL-zgOj4HlTVgYOr8&hl=en&sa=X&ei=sBGwVOSGHMyBU4mHgNAC&ved=0CCYQ6AEwATgK#v=onepage&q=curve%20radius%20speed%20limit%20formula%20rail&f=false
+# The value of 10 (i.e., 0.1G) is accurate for rail for modern practice in the UK. Road appears
+# to work well at 5 (0.2G), but the value is an estimate. Superelevation is not accounted for.
+# Tilting trains are defined for the individual vehicles.
+#
+# curve_friction_factor_[way type]: The number of times extra friction that applies as a vehicle 
+# corners. 
+#
+# tilting_min_radius_effect: The minimum radius of a corner (in meters, calibrated according
+# to the meters_per_tile setting) at which a tilting train can traverse a corner faster than
+# a non-tilting train. 
+#
+# Podle:
+# http://martin_vondracek.sweb.cz/CD_koridory.html
+# https://cs.wikipedia.org/wiki/Pr%C5%AFjezd_obloukem
+# Je u nas povolene nevykompenzovane odstredive zrychleni 0.65 m/s^2 (G/15 = 0.654)
+# V klopene zatacce (prevyseni 150 mm), cca 1.65 (G/6 = 1.635)
+# Pendolino muze je o 30% rychleji uz od polomeru 300 m
+#
+# treni v zatacce dle http://www.vagony.cz/vagony/energie.html
+# vedlejsi trate 500 / (R-30) [N/kN]
+# hlavni trate 650 / (R-55) [N/kN]
+# Zatim nechavam nenastavene
+
+corner_force_divider_road=5
+corner_force_divider_track=15
+corner_force_divider_tram=8
+corner_force_divider_monorail=10
+corner_force_divider_maglev=10
+corner_force_divider_narrowgauge=10
+
+curve_friction_factor_road=0
+curve_friction_factor_track=0
+curve_friction_factor_tram=2
+curve_friction_factor_monorail=0
+curve_friction_factor_maglev=0
+curve_friction_factor_narrowgauge=0
+
+tilting_min_radius_effect=300
+
+# These settings determine how long that it takes a train-type convoy to turn
+# around when it reaches the end of the line. They do not apply to road vehicles
+# or aircraft.
+#
+# "unit_reverse_time" refers to trains/convoys, such as multiple units, that have
+# a cab at each and, and can be driven in reverse without any re-arrangement of 
+# the order of the vehicles. These will generally take the least time to reverse.
+#
+# "hauled_reverse_time" refers to trains/convoys that cannot be driven from the
+# rear, so the locomotive at the front has to run around the train and attach
+# to the rear, but where that locomotive can itself be driven in either direction,
+# so that it does not need to turn around.
+#
+# "turntable_reverse_time" refers to trains/convoys that, as for the above category,
+# cannot be driven from the rear, but that also require their locomotive to be turned
+# around to face the other direction (such as steam locomotives with tenders) at the
+# end of the journey. These will genearlly take the most time to reverse.
+#
+# All times are in game seconds. In previous versions, these were specified in internal
+# milliseconds by "unit_reverse_time" (etc.) without "_seconds", but these values
+# had to be adjusted manually to match the meters per tile setting. The old keywords
+# "(unit_reverse_time)" etc. still work, but are overridden by the "..._seconds" version
+# where they are present. 
+
+unit_reverse_time_seconds=60
+hauled_reverse_time_seconds=120
+turntable_reverse_time_seconds=360
+
+# This setting allows the power of all vehicles to be adjusted at once. It is a
+# percentage figure. Thus, if, for example, a vehicle has a power rating of 1,200kw
+# and the global_power_factor_percent is set to 200, it will behave in game as if
+# it had a power rating of 2,400kw. This setting is applied *in addition to* the
+# "gear" setting, such that, if a vehicle had a power rating of 1,200kw, a gear of
+# 2.0 and the global_power_factor_percent was set to 200, the vehicle would behave
+# as if it had a total power of 4,800kw. 
+#
+# The force factor percent has the same effect for tractive effort. 
+#
+# The default is 100 (but should be set to 50% for Standard paksets
+# in the case of the power factor only).
+
+global_power_factor_percent=100
+global_force_factor_percent=100
 
 # This setting allows the way in which weight limits are enforced to be customised.
 # The meanings of each setting are as follows:
@@ -350,7 +440,57 @@ max_speed_drive_by_sight_kmh = 30
 # 1: then vehicles can travel over roads, rails, tunnels and bridges for which they are too heavy, but only at greatly reduced speed. 
 # 2: Vehicles cannot travel over ways for which they are overweight at all. 
 # 3: Vehciles cannot travel over ways for which they are more than 10% overweight at all, and will travel on ways for which they are up to 10% overweight at a greatly reduced speed.
+#
 # To revert to the behaviour of Simutrans-Standard, set enforce_weight_limits=0
+
 enforce_weight_limits=1
+
+# This setting controls whether players are permitted to buy vehicles after their
+# retirement date. The default, allow_buying_obsolete_vehicles=1, allows players
+# to buy old vehicles by clicking a "Show obsolete" button in the depot / replacer
+# window. This button is not shown if this is set to 0.
+
+allow_buying_obsolete_vehicles=1
+
+# This allows for a "driving it off the lot" drop in value.
+# This is not on by default, even in Extended.
+# vehicle can loose a part of their value, when they are once used
+# the loss is given in 1/1000th, i.e 300 mean the value will be 70%
+
+used_vehicle_reduction=150
+
+# This is the distance in meters at which train drivers can see signals ahead.
+# Trains have to brake in time for signals which might be at danger, so this
+# distance affects train speed. 
+# 12 sekund pri 120 km/h = 400 m, vyssi rychlost vyzaduje navestni opakovac (cab signal)
+
+sighting_distance_meters = 400
+
+# This is the maximum speed in km/h at which rail (including narrow gauge, monorail and maglev)
+# vehicles may travel in the drive by sight working method. 0 = as fast as they can
+# stop within their sighting distance with no other limit.
+
+max_speed_drive_by_sight_kmh = 30
+
+# Corners of greater than 45 degrees have their radius calculated. However, because of 
+# the rigid tile system in Simutrans, this produces unrealistic results when applied
+# to corners of 45 degrees. A value is thus specified here. This affects the speed
+# at which vehicles can take pairs of directionally correcting 45 degree corners
+# (i.e. not a pair of 45 degree corners which between them add up to 90 degrees,
+# which can be calculated more easily and are dealt with by a separate system). 
+#
+# If this is set to 0, pairs of self-correcting 45 degree corners are treated
+#  as being straight.
+# 
+# For any other value, this serves as a minimum assumed radius for any given pair
+# of self-correcting 45 degree corners. A calculated value will be used to work
+# out what the radius of the self-correcting corners should be, but, because of 
+# the rigid tile system in Simutrans, it is not possible to make gentle corners,
+# so set this as a minimum to allow for this. 
+#
+#assumed_curve_radius_45_degrees = 760	# 80 km/h
+#assumed_curve_radius_45_degrees = 500	# 65 km/h
+#assumed_curve_radius_45_degrees = 300	# 50 km/h
+#assumed_curve_radius_45_degrees = 190	# 40 km/h
 
 
