@@ -1,0 +1,28 @@
+Kategorie navestidel a stavedel (signalbox), v zavorkach prislusne upgrade groups
+
+Mechanicke:
+2 - oddilove + predvest			[1,2]
+3 - odjezdove (long/token)		[3]
+4 - vjezdove (choose) + predvest	[4,6]
+5 - seradovaci				[5]
+7 - uzavera koleje			[7]
+
+Svetelne:
+12 - oddilove + predvest + OPr		[11,12,18]
+13 - odjezdove + OPr			[13,   18]
+14 - vjezdove + Pr + OPr		[14,16,18]
+15 - seradovaci + OSe			[15,   20]
+17 - vlozene				[17]
+22 - automaticke hradlo (intermediate)	[22]
+23 - 3 znakove abs + long + choose	[31,33,34]
+24 - 4 znakove abs + long + choose	[41,43,44]
+0  - 3/4 znakovy autoblok (permissive)	[32,42,19]
+
+Svetelna navestidla: track circuit + cab signalling - neomezena vzdalenost, neni potreba videt projizdejici vlak
+Dosah signalboxu: 10-20 km (obyc nadrazni stavedlo), 100-200 km (centralni rizeni Prerov/Praha)
+
+Mechanika: absolute block, dosah signalboxu: 1500 m (dratovody)
+- hlavni navestidlo - 500 m (stavedlo u kazdeho zhlavi) - je potreba videt projizdejici vlak
+- predvest + 3-ramenny vjezd - 1500 m (zhlavi + 1 km)
+
+Strazni domek - jen signal a presignal. (hradlo s predvesti), mechanicke i svetelne - 2,12

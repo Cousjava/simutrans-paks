@@ -7,6 +7,11 @@
 #
 # 1870 - Hradlovy uzaver - Carl Frischen
 # 1891 - ElektroCSD/mechanicke zarizeni Rank 5007
+# 1911 - dvouramenna navestidla vzor 5041
+# 1954 (????) - 4-znakove (zlute rameno) vzor 5220
+# 1955 (leto) - vylepseny prototyp v Adamove, vzor 5272
+# 1956 (leto) - 5-znakove (prujezd odbockou 2xzelena) navrh 5292
+# 1959 (prosinec) - osvedceni ze 5272 je OK, ale dalsi mechaniky se stavet nebudou
 # 
 # Predpisy pouzivane u CSD jsou pry vicemene stejne jako kkSTB 1898
 # Na http://vlaky.bestsite.cz/zeleznice/vyvoj-navestidel-csd-cast-i-1918-1939-2-1.htm
@@ -19,7 +24,7 @@
 #
 # Mno, takze prozatim davam intro vseho na 1870. 
 # Ukonceni na 1970 - kdy se objevuje dnesni model svetelnych.
-# Takze to mame kulatych 100 let.
+# Takze to mame kulatych 100 let. I kdyz presnejsi by asi bylo 1883-1960, resp 1911-1960
 #
 # Vzdy se to muze upravit pokud najdeme nejaka upresneni.
 # Vypada to ze u nas se pouzival od zacatku horni kvadrant (volno je sikmo nahoru)
@@ -60,13 +65,16 @@ cost=2000
 is_signal=1
 max_speed=120
 normal_danger=1
-#working_method=absolute_block
+working_method=absolute_block
 # Jednoramenne, bile svetlo
 intro_year=1870
 retire_year=1939
 retire_month=11
 offset_left=10
 upgrade_group=1
+signal_groups=2
+allow_underground=0
+max_distance_to_signalbox=500
 Image[0]=CSD/mechanic_1.0.0
 Image[1]=CSD/mechanic_1.0.1
 Image[2]=CSD/mechanic_1.0.2
@@ -86,13 +94,17 @@ cost=2000
 is_signal=1
 max_speed=120
 normal_danger=1
-#working_method=absolute_block
+working_method=absolute_block
 # Jednoramenne, zelene svetlo
 intro_year=1939
 intro_month=11
 retire_year=1970
 offset_left=10
 upgrade_group=1
+signal_groups=2
+allow_underground=0
+signal_upgrade_cost=20
+max_distance_to_signalbox=500
 Image[0]=CSD/mechanic_2.0.0
 Image[1]=CSD/mechanic_2.0.1
 Image[2]=CSD/mechanic_2.0.2
@@ -115,13 +127,16 @@ waytype=track
 cost=1000
 is_presignal=1
 max_speed=120
-#working_method=absolute_block
+working_method=absolute_block
 # Uporornovadlo [X], ctercovy terc zeleny
 intro_year=1870
 retire_year=1939
 retire_month=11
 offset_left=10
 upgrade_group=2
+signal_groups=2
+allow_underground=0
+max_distance_to_signalbox=1500
 Image[0]=CSD/mechanic_1.6.0
 Image[1]=CSD/mechanic_1.6.1
 Image[2]=CSD/mechanic_1.6.2
@@ -144,7 +159,7 @@ waytype=track
 cost=1000
 is_presignal=1
 max_speed=120
-#working_method=absolute_block
+working_method=absolute_block
 # Uporornovadlo [X], ctercovy terc zluty
 intro_year=1939
 intro_month=11
@@ -152,6 +167,10 @@ retire_year=1954
 retire_month=6
 offset_left=10
 upgrade_group=2
+signal_groups=2
+allow_underground=0
+signal_upgrade_cost=40
+max_distance_to_signalbox=1500
 Image[0]=CSD/mechanic_2.6.0
 Image[1]=CSD/mechanic_2.6.1
 Image[2]=CSD/mechanic_2.6.2
@@ -174,13 +193,16 @@ waytype=track
 cost=1000
 is_presignal=1
 max_speed=120
-#working_method=absolute_block
+working_method=absolute_block
 # Upozornovadlo [+], kruhovy terc zluty
 intro_year=1954
 intro_month=6
 retire_year=1970
 offset_left=10
 upgrade_group=2
+signal_groups=2
+allow_underground=0
+max_distance_to_signalbox=1500
 Image[0]=CSD/mechanic_3.6.0
 Image[1]=CSD/mechanic_3.6.1
 Image[2]=CSD/mechanic_3.6.2
@@ -206,14 +228,19 @@ Name=Mechanic_CSD_LongSignal_white_3arm
 waytype=track
 cost=4000
 is_signal=1
-is_longblocksignal=1
+#is_longblocksignal=1
 max_speed=120
+normal_danger=1
+working_method=token_block
 # Trojramenne, bila svetla
 intro_year=1870
 retire_year=1939
 retire_month=11
 offset_left=10
 upgrade_group=3
+signal_groups=3
+allow_underground=0
+max_distance_to_signalbox=500
 Image[0]=CSD/mechanic_1.4.0
 Image[1]=CSD/mechanic_1.4.1
 Image[2]=CSD/mechanic_1.4.2
@@ -231,8 +258,10 @@ Name=Mechanic_CSD_LongSignal_green_3arm
 waytype=track
 cost=4000
 is_signal=1
-is_longblocksignal=1
+#is_longblocksignal=1
 max_speed=120
+normal_danger=1
+working_method=token_block
 # Trojramenne, zelena svetla
 intro_year=1939
 intro_month=11
@@ -240,6 +269,10 @@ retire_year=1954
 retire_month=6
 offset_left=10
 upgrade_group=3
+signal_groups=3
+allow_underground=0
+signal_upgrade_cost=40
+max_distance_to_signalbox=500
 Image[0]=CSD/mechanic_2.4.0
 Image[1]=CSD/mechanic_2.4.1
 Image[2]=CSD/mechanic_2.4.2
@@ -257,14 +290,20 @@ Name=Mechanic_CSD_LongSignal_green
 waytype=track
 cost=4000
 is_signal=1
-is_longblocksignal=1
+#is_longblocksignal=1
 max_speed=120
+normal_danger=1
+working_method=token_block
 # Jednoramenne, zelena svetla, upozornovadlo [/]
 intro_year=1954
 intro_month=6
 retire_year=1970
 offset_left=10
 upgrade_group=3
+signal_groups=3
+allow_underground=0
+signal_upgrade_cost=40
+max_distance_to_signalbox=500
 Image[0]=CSD/mechanic_3.4.0
 Image[1]=CSD/mechanic_3.4.1
 Image[2]=CSD/mechanic_3.4.2
@@ -290,13 +329,16 @@ free_route=1
 max_speed=120
 normal_danger=1
 has_selective_choose=1
-#working_method=absolute_block
+working_method=absolute_block
 # Dvouramenne, bila svetla
 intro_year=1870
 retire_year=1939
 retire_month=11
 offset_left=10
 upgrade_group=4
+signal_groups=4
+allow_underground=0
+max_distance_to_signalbox=500
 Image[0]=CSD/mechanic_1.2.0
 Image[1]=CSD/mechanic_1.2.1
 Image[2]=CSD/mechanic_1.2.2
@@ -322,7 +364,7 @@ free_route=1
 max_speed=120
 normal_danger=1
 has_selective_choose=1
-#working_method=absolute_block
+working_method=absolute_block
 # Dvouramenne, zelena svetla
 intro_year=1939
 intro_month=11
@@ -330,6 +372,10 @@ retire_year=1954
 retire_month=6
 offset_left=10
 upgrade_group=4
+signal_groups=4
+allow_underground=0
+signal_upgrade_cost=40
+max_distance_to_signalbox=500
 Image[0]=CSD/mechanic_2.2.0
 Image[1]=CSD/mechanic_2.2.1
 Image[2]=CSD/mechanic_2.2.2
@@ -351,19 +397,22 @@ Name=Mechanic_CSD_ChooseSignal_yellow
 waytype=track
 cost=4000
 is_signal=1
-#is_presignal=1
+is_presignal=1
 aspects=3
 free_route=1
 max_speed=120
 normal_danger=1
 has_selective_choose=1
-#working_method=absolute_block
+working_method=absolute_block
 # Dvouramenne, zluta svetla, zlute rameno
 intro_year=1954
 intro_month=6
 retire_year=1970
 offset_left=10
 upgrade_group=4
+signal_groups=4
+allow_underground=0
+max_distance_to_signalbox=1500
 Image[0]=CSD/mechanic_3.2.0
 Image[1]=CSD/mechanic_3.2.1
 Image[2]=CSD/mechanic_3.2.2

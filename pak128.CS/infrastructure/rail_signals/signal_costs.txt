@@ -1,0 +1,40 @@
+Poznamky jak nastavit ceny navestidel, zatim jen velmi hryby nastin, neimplementovano.
+Videl bych to na 3 kategorie:
+
+1 - mechanicka navestidla (absolute block/track circuit - hradlo, poloautoblok)
+2 - svetelna 2-znakova (absolute block/track circuit - poloautoblok, automaticke hradlo)
+3 - svetelna 3/4-znakova (track circuit/cab signalling - autoblok, LVZ)
+
+cost (porizovaci cena): 
+
+bohuzel netusim co je levnejsi postavit jestli mechanicke nebo
+svetelne. Spis se priklanim k tomu, ze je drazsi mechanicke kvulo mnozstvi
+mechanickych soucastek. Na druhou stranu navestidla autobloku by mela
+byt drazsi nez poloautoblok - kvuli kolejovym obvodum, a automatice v
+budce nedaleko navestidla (nepotrebuji signalbox)
+
+predvesti obecne drazsi - delsi vedeni (mech. i ele)
+vjezdove mirne drazsi - vic ramen, svetel, slozitejsi logika
+v signalboxu.
+
+maintenance (udrzba): vyrazne drazsi pro mechanicka
+navestidla - kazdy den doplnovat petrolejky, serizovat,
+zatimco u svetelneho staci jednou za rok umyt cocky a
+vymenit zarovky. Mirne drazsi pro autoblok - kolejove obvody
+zerou proud.
+
+upgrade_cost: prechod na nove modely
+
+rok 1939 naklady minimalni pro mechanicka navestidla - jen
+vymena barevnych skel, zmena nateru predvesti
+
+rok 1954 trochu vyssi naklady pro mechanicka navestidla -
+zmena terce u predvesti, odstraneni ramen z 3-ramennych,
+celkovy upgrade u vjezdovych (zustal jen spodek stozaru).
+
+rok 1962 prechod SSSR-AZD65 - vzhledem k podobnosti, by se
+mohlo pojmout jen jako predratovani a prehozeni barevnych
+sklicek, upravy nateru, podobne jako v 1939
+
+prechod na AZD70 - komplet novy navestidla, zustava jen
+signalni elektricke vedeni.

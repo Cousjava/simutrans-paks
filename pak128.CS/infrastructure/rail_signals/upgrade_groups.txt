@@ -49,10 +49,11 @@ Svetelne Modelarske:
 19: *_PreSignal_Lastblock
 20: *_PreSignal_Shunting
 21: *_LongSignal_Siding
+22: *_Signal_Permissive (Automaticke hradlo)
 
 Svetelne Experimental:
 31: *_3aspect_absolute
-32: *_3aspect_permissive
+32: *_3aspect_permissive (Autoblok)
 33: *_3aspect_long
 34: *_3aspect_choose
 41: *_4aspect_absolute
