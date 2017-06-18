@@ -23,6 +23,8 @@ DESTDIR ?= .
 PAKDIR  ?= $(DESTDIR)/$(PAKNAME)
 DESTFILE ?= $(PAKNAME)
 
+EXTENDED := $(shell makeobj capabilities 2>&1 > /dev/null |grep Extended)
+
 NAMEPREFIX ?=
 NAMESUFFIX ?=
 
@@ -31,6 +33,37 @@ CPFILES := pak128.CS.prototype
 DIRS64 :=
 DIRS64 += base/misc_GUI_64
 
+DIRS128 :=
+DIRS128 += factories 
+DIRS128 += factories/goods
+DIRS128 += factories/powerplants
+DIRS128 += cityhouses/com
+DIRS128 += cityhouses/ind
+DIRS128 += cityhouses/res
+DIRS128 += special_buildings/city
+DIRS128 += special_buildings/landscape
+DIRS128 += special_buildings/monuments
+DIRS128 += special_buildings/townhalls
+DIRS128 += citycars
+DIRS128 += citycars/Avia
+DIRS128 += citycars/GAZ
+DIRS128 += citycars/Ford
+DIRS128 += citycars/Iveco
+DIRS128 += citycars/Liaz
+DIRS128 += citycars/Mercedes
+DIRS128 += citycars/Renault
+DIRS128 += citycars/ruzne
+DIRS128 += citycars/Robur
+DIRS128 += citycars/Skoda
+DIRS128 += citycars/TATRA
+DIRS128 += citycars/VAZ
+DIRS128 += landscape/grounds
+DIRS128 += landscape/trees
+DIRS128 += landscape/groundobj_static
+DIRS128 += base/pedestrians
+DIRS128 += base/smokes
+
+DIRS128VEHICLES :=
 DIRS128VEHICLES += ng-cargo
 DIRS128VEHICLES += ng-engines
 DIRS128VEHICLES += ng-psg+mail
@@ -107,36 +140,7 @@ DIRS128VEHICLES += road-psg+mail/SOR
 DIRS128VEHICLES += road-trolleybus
 DIRS128VEHICLES += trams
 
-DIRS128 := $(addprefix vehicles/,$(DIRS128VEHICLES))
-
-DIRS128 += factories 
-DIRS128 += factories/goods
-DIRS128 += factories/powerplants
-DIRS128 += cityhouses/com
-DIRS128 += cityhouses/ind
-DIRS128 += cityhouses/res
-DIRS128 += special_buildings/city
-DIRS128 += special_buildings/landscape
-DIRS128 += special_buildings/monuments
-DIRS128 += special_buildings/townhalls
-DIRS128 += citycars
-DIRS128 += citycars/Avia
-DIRS128 += citycars/GAZ
-DIRS128 += citycars/Ford
-DIRS128 += citycars/Iveco
-DIRS128 += citycars/Liaz
-DIRS128 += citycars/Mercedes
-DIRS128 += citycars/Renault
-DIRS128 += citycars/ruzne
-DIRS128 += citycars/Robur
-DIRS128 += citycars/Skoda
-DIRS128 += citycars/TATRA
-DIRS128 += citycars/VAZ
-DIRS128 += landscape/grounds
-DIRS128 += landscape/trees
-DIRS128 += landscape/groundobj_static
-DIRS128 += base/pedestrians
-DIRS128 += base/smokes
+DIRS128 += $(addprefix vehicles/,$(DIRS128VEHICLES))
 
 INFRASTRUCTURE128 :=
 INFRASTRUCTURE128 += airport_buildings_towers
@@ -171,6 +175,10 @@ INFRASTRUCTURE128 += tram_signals
 INFRASTRUCTURE128 += tram_stops
 INFRASTRUCTURE128 += tram_tracks
 INFRASTRUCTURE128 += water_all
+
+ifdef EXTENDED
+	INFRASTRUCTURE128 += signalboxes
+endif
 
 DIRS128 += $(addprefix infrastructure/,$(INFRASTRUCTURE128))
 

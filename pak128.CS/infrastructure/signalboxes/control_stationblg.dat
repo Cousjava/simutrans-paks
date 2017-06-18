@@ -1,0 +1,23 @@
+Obj=building
+type=signalbox
+Name=Control_StationBlg
+copyright=MHz
+intro_year = 1954
+#retire_year = 2006 # Centralni rizeni
+level=5
+#cost=10000000
+#maintenance=100000
+#employment_capacity=10
+signal_groups=12,13,14,15,17,22,23,24
+allow_underground=0
+radius=15000
+population_and_visitor_demand_capacity=0
+mail_demand=0
+capacity=64
+needs_ground=1
+Dims=1,1,1
+
+backImage[0][0][0][0][0]=control_stationblg.1.0
+
+icon=> control_stationblg.1.1
+cursor=control_stationblg.1.2

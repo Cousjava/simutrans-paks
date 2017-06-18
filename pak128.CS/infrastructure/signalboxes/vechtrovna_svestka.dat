@@ -1,0 +1,26 @@
+Obj=building
+type=signalbox
+Name=vechtrovna_svestka
+copyright=Lubak91
+intro_year=1825
+retire_year=1954
+level=1
+cost=2500000
+maintenance=50000
+employment_capacity=1
+signal_groups=2,12
+allow_underground=0
+radius=1500
+population_and_visitor_demand_capacity=1
+mail_demand=1
+capacity=4
+needs_ground=1
+Dims=1,1,4
+
+BackImage[0][0][0][0][0][0]=vechtrovna_svestka.0.0
+BackImage[1][0][0][0][0][0]=vechtrovna_svestka.0.3
+BackImage[2][0][0][0][0][0]=vechtrovna_svestka.0.2
+BackImage[3][0][0][0][0][0]=vechtrovna_svestka.0.1
+
+Icon=> vechtrovna_svestka.0.5
+Cursor=vechtrovna_svestka.0.4
