@@ -1,0 +1,31 @@
+#-------------------------------------------------------------------------------
+#   Aircraft of Fuji Dream Airlines Co.
+#    Regional jet Embraer170/175
+#-------------------------------------------------------------------------------
+obj=vehicle
+name=FDA_01 Embraer170
+copyright=grun
+intro_year=2009
+intro_month=2
+waytype=air
+engine_type=diesel
+freight=Passagiere
+payload=76
+speed=852
+gear=80
+cost=3890000
+weight=21
+power=13600
+RunningCost=480
+sound=5
+Constraint[prev][0]=None
+Constraint[next][0]=None
+EmptyImage[S]=planes-grun.0.0
+EmptyImage[E]=planes-grun.0.1
+EmptyImage[SE]=planes-grun.0.2
+EmptyImage[SW]=planes-grun.0.3
+EmptyImage[N]=planes-grun.0.4
+EmptyImage[W]=planes-grun.0.5
+EmptyImage[NW]=planes-grun.0.6
+EmptyImage[NE]=planes-grun.0.7
+--

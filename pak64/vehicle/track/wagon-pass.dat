@@ -145,7 +145,7 @@ payload=64
 speed=450
 cost=300000
 weight=24
-RunningCost=500
+RunningCost=780
 sound=-1
 intro_year = 2019
 intro_month = 8
@@ -153,4 +153,24 @@ EmptyImage[S]=veh-passenger2.6.0
 EmptyImage[W]=veh-passenger2.6.1
 EmptyImage[SE]=veh-passenger2.6.2
 EmptyImage[SW]=veh-passenger2.6.3
+--
+# JNR 3rd Grade Coach OHA35
+# 1301 cars are manufactured from 1939 to 1949, and this coach is the typical Japanese old model coach.
+obj=vehicle
+name=JR-OHA35
+copyright=Nabe
+waytype=track
+freight=Passagiere
+payload=84
+speed=110
+cost=200000
+weight=35
+RunningCost=410
+intro_year=1939
+intro_month=01
+retire_year=1986
+EmptyImage[S]=veh-passenger2.8.0
+EmptyImage[W]=veh-passenger2.8.1
+EmptyImage[SE]=veh-passenger2.8.2
+EmptyImage[SW]=veh-passenger2.8.3
 --
