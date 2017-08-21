@@ -364,7 +364,7 @@ gear=130
 
 # extended
 axles=6
-bidirectional=1
+bidirectional=0
 
 emptyimage[w]=csd_T698_cocacola.0.0,0,4
 emptyimage[nw]=csd_T698_cocacola.0.1,0,4
@@ -396,7 +396,8 @@ gear=130
 
 # extended
 axles=6
-bidirectional=1
+bidirectional=0
+can_lead_from_rear=1
 
 emptyimage[w]=csd_T698_cocacola.1.0,0,4
 emptyimage[nw]=csd_T698_cocacola.1.1,0,4

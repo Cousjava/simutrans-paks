@@ -356,6 +356,9 @@ waytype=track
 copyright=TommPa9
 length=5
 
+# extended
+axles=5
+bidirectional=0
 
 constraint[prev][0]=CSD_556.0_Stokr
 
