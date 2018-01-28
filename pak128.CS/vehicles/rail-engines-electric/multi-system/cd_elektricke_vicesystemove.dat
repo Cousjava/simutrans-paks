@@ -15,6 +15,13 @@ copyright=TommPa9
 length=8
 gear=155
 
+# extended
+axles=4
+bidirectional=1
+tractive_effort=255	# maximalni tazna sila
+available_only_as_upgrade=1
+upgrade_price=813500
+
 emptyimage[w]=cd_340_modra_laminatka.0.0,0,4
 emptyimage[nw]=cd_340_modra_laminatka.0.1,0,4
 emptyimage[n]=cd_340_modra_laminatka.0.2,0,4
