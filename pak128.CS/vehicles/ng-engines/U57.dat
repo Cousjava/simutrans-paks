@@ -1,9 +1,15 @@
 obj=vehicle
 # http://www.osoblazsko.com/vozidla/lokomotivy-szd/u57-001
 # vyrobeno 6 ks za cenu 11 298 468 Kcs
+# delka 12940 mm (vcetne tendru)
+# hmotnost ve sluzbe 51.5 t (asi vcetne tendru)
+# http://www.club760.at/html/html/Skodat.htm
+# Hmotnost ve sluzbe 35 t (asi bez tendru)
+# Vykon nikde neuvadeji
+# Tendr voda: 6 m^3, uhli: 6 m^3 (4 t)
 cost=12800
 speed=30
-weight=30
+weight=35
 runningcost=4
 fixed_cost=8
 name=U_57_0
@@ -24,8 +30,9 @@ gear=133
 #power=150
 #gear=130
 # Vladki (extended)
-tractive_effort=90
 axles=5
+bidirectional=0
+tractive_effort=90
 constraint[next][0]=306_0
 
 emptyimage[w]=U57.0.0
@@ -40,7 +47,7 @@ emptyimage[sw]=U57.0.7
 obj=vehicle
 cost=12800
 speed=30
-weight=22
+weight=17
 runningcost=4
 fixed_cost=8
 name=306_0
@@ -52,7 +59,10 @@ retire_year=1976
 waytype=narrowgauge_track
 copyright=TommPa9
 length=2
+
+# extended
 axles=3
+bidirectional=0
 constraint[prev][0]=U_57_0
 
 emptyimage[w]=U57.1.0

@@ -7,8 +7,8 @@ weight=87
 runningcost=297
 fixed_cost=2281
 name=CD_Cargo_363_Eso
-intro_year=2008
-retire_year=2048
+#intro_year=2008	# Vznik CD Cargo
+intro_year=2010		# Zmena nateru
 waytype=track
 engine_type=Electric
 power=3480
@@ -26,20 +26,26 @@ emptyimage[s]=cdc_363.0.6,0,4
 emptyimage[sw]=cdc_363.0.7,0,4
 -------------------------------------------
 obj=vehicle
-cost=4773300
+cost=3728400
 speed=120
-weight=87
+weight=84
 runningcost=216
 fixed_cost=1659
 name=CD_Cargo_372_Bastard
-intro_year=2008
-retire_year=2048
+#intro_year=2008	# Vznik CD Cargo
+intro_year=2010		# Zmena nateru
 waytype=track
 engine_type=Electric
 power=3080
 copyright=TommPa9
 length=8
 gear=155
+
+# extended
+axles=4
+bidirectional=1
+tractive_effort=275	# maximalni tazna sila
+#tractive_effort=140	# trvala tazna sila
 
 emptyimage[w]=cdc_372.0.0,0,4
 emptyimage[nw]=cdc_372.0.1,0,4

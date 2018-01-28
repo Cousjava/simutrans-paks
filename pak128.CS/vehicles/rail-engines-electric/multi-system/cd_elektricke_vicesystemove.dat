@@ -33,7 +33,7 @@ weight=87
 runningcost=265
 fixed_cost=2374
 name=CD_362_Rychle_Eso
-intro_year=1992
+intro_year=1993
 retire_year=2032
 waytype=track
 engine_type=Electric
@@ -137,18 +137,27 @@ emptyimage[sw]=cd_363_eso_balkan.0.7,0,4
 obj=vehicle
 cost=4773300
 speed=160
-weight=87
+weight=84
 runningcost=216
 fixed_cost=2212
 name=CD_371_Bastard
-intro_year=1991
-retire_year=2031
+intro_year=1994		# prvni upgrade
+#retire_year=2000	# posledni upgrade
+retire_year=2009	# Zmena nateru
 waytype=track
 engine_type=Electric
 power=3080
 copyright=TommPa9
 length=8
 gear=160
+
+# extended
+axles=4
+bidirectional=1
+tractive_effort=205	# maximalni tazna sila
+#tractive_effort=102	# trvala tazna sila
+available_only_as_upgrade=1
+upgrade_price=1044900
 
 emptyimage[w]=cd_371.0.0,0,4
 emptyimage[nw]=cd_371.0.1,0,4
@@ -164,11 +173,10 @@ emptyimage[sw]=cd_371.0.7,0,4
 obj=vehicle
 cost=4773300
 speed=160
-weight=87
+weight=84
 runningcost=216
 fixed_cost=2212
 name=CD_371_Bastard_(balkan)
-intro_month=12
 intro_year=2010
 waytype=track
 engine_type=Electric
@@ -176,6 +184,14 @@ power=3080
 copyright=TommPa9
 length=8
 gear=160
+
+# extended
+axles=4
+bidirectional=1
+tractive_effort=205	# maximalni tazna sila
+#tractive_effort=102	# trvala tazna sila
+available_only_as_upgrade=1
+upgrade_price=1044900
 
 emptyimage[w]=cd_371_balkan.0.0,0,4
 emptyimage[nw]=cd_371_balkan.0.1,0,4
@@ -191,18 +207,27 @@ emptyimage[sw]=cd_371_balkan.0.7,0,4
 obj=vehicle
 cost=3728400
 speed=120
-weight=87
+weight=84
 runningcost=271
 fixed_cost=2081
 name=CD_372_Bastard
 intro_year=1993
-retire_year=2015
+#retire_year=2007	# Prevedeno k CD Cargo
+retire_year=2009	# Zmena nateru
 waytype=track
 engine_type=Electric
 power=3080
 copyright=TommPa9
 length=8
 gear=155
+
+# extended
+axles=4
+bidirectional=1
+tractive_effort=275	# maximalni tazna sila
+#tractive_effort=140	# trvala tazna sila
+upgrade[0]=CD_371_Bastard
+upgrade[1]=CD_371_Bastard_(balkan)
 
 emptyimage[w]=cd_372.0.0,0,4
 emptyimage[nw]=cd_372.0.1,0,4

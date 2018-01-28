@@ -4,18 +4,28 @@
 obj=vehicle
 cost=3728400
 speed=120
-weight=87
+weight=84
 runningcost=271
 fixed_cost=2081
 name=DR_230
-intro_year=1991
-retire_year=1996
+intro_year=1988		# Prototyp
+#intro_year=1990	# Seriova vyroba
+#retire_year=1991	# Konec vyroby
+#retire_year=1991	# Precislovani DR -> DB
+retire_year=1993	# Sjednoceni DR + DB = DBAG
+#retire_year=1996	# Zmena nateru? Nektere zustaly v puvodnim nateru dodnes
 waytype=track
 engine_type=Electric
 power=3080
 copyright=TommPa9
 length=8
 gear=155
+
+# extended
+axles=4
+bidirectional=1
+tractive_effort=275	# maximalni tazna sila
+#tractive_effort=140	# trvala tazna sila
 
 emptyimage[w]=db_180.0.0,0,4
 emptyimage[nw]=db_180.0.1,0,4
