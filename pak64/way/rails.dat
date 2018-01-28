@@ -733,7 +733,7 @@ FrontImageUp[9]=highspeed-catenary.2.3
 FrontImageUp[12]=highspeed-catenary.2.2
 # back images
 # no back images ...
-BackImage[-]=
+BackImage[-]=-
 BackDiagonal[NE]=-
 BackImageUp[3]=-
 --------------------

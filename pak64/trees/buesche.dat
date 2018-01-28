@@ -2,7 +2,7 @@
 # Busch 1
 #
 Obj=tree
-Name=Busch_2
+Name=Busch_1
 DistributionWeight=100
 climates=mediterran,temperate,tundra,rocky
 seasons=1
