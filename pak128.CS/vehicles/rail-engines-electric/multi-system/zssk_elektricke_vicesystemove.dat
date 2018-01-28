@@ -84,6 +84,14 @@ power=6400
 copyright=TommPa9
 length=9
 gear=160
+
+# extended
+axles=4
+bidirectional=1
+tractive_effort=274	# max
+#tractive_effort=213	# trvala
+#brake_force=226	# EDB
+
 emptyimage[w]=zssk_380.0.0,0,4
 emptyimage[nw]=zssk_380.0.1,0,4
 emptyimage[n]=zssk_380.0.2,0,4
@@ -92,3 +100,4 @@ emptyimage[e]=zssk_380.0.4,0,4
 emptyimage[se]=zssk_380.0.5,0,4
 emptyimage[s]=zssk_380.0.6,0,4
 emptyimage[sw]=zssk_380.0.7,0,4
+
