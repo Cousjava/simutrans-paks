@@ -13,6 +13,11 @@ copyright=TommPa9
 length=8
 gear=160
 
+# extended
+axles=4
+bidirectional=1
+tractive_effort=210	# maximalni tazna sila
+
 emptyimage[w]=zssk_350.0.0,0,4
 emptyimage[nw]=zssk_350.0.1,0,4
 emptyimage[n]=zssk_350.0.2,0,4
@@ -71,7 +76,7 @@ emptyimage[s]=zssk_363.0.6,0,4
 emptyimage[sw]=zssk_363.0.7,0,4
 ------------------------------
 obj=vehicle
-cost=5882400
+cost=5882400	# 4250000 EUR
 speed=160
 weight=88
 runningcost=318
