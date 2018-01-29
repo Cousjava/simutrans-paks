@@ -40,7 +40,14 @@ engine_type=Electric
 power=3480
 copyright=TommPa9
 length=8
-gear=155
+gear=133
+
+# extended
+axles=4
+bidirectional=1
+tractive_effort=258	# maximalni tazna sila
+available_only_as_upgrade=1
+upgrade_price=525600
 
 emptyimage[w]=zssk_363.0.0,0,4
 emptyimage[nw]=zssk_363.0.1,0,4
@@ -65,6 +72,13 @@ power=3480
 copyright=TommPa9
 length=8
 gear=155
+
+# extended
+axles=4
+bidirectional=1
+tractive_effort=300	# maximalni tazna sila
+#tractive_effort=176	# trvala tazna sila
+upgrade[0]=ZSSK_362_Persing
 
 emptyimage[w]=zssk_363.0.0,0,4
 emptyimage[nw]=zssk_363.0.1,0,4
@@ -96,6 +110,7 @@ bidirectional=1
 tractive_effort=274	# max
 #tractive_effort=213	# trvala
 #brake_force=226	# EDB
+# push-pull se soupravou 051/951 (uz z vyroby)
 
 emptyimage[w]=zssk_380.0.0,0,4
 emptyimage[nw]=zssk_380.0.1,0,4

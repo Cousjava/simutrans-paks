@@ -5,7 +5,7 @@ weight=84
 runningcost=271
 fixed_cost=2081
 name=CSD_ES_499.2_Bastard
-intro_year=1988
+intro_year=1988		# seriova vyroba 1990-1991
 retire_year=1992
 waytype=track
 engine_type=Electric
@@ -32,13 +32,13 @@ emptyimage[s]=csd_372.0.6,0,4
 emptyimage[sw]=csd_372.0.7,0,4
 --------------------------------
 obj=vehicle
-cost=3726000
+cost=3726000		# 8 900 000 Kcs
 speed=120
 weight=87
 runningcost=297
 fixed_cost=2281
 name=CSD_ES_499.1_Eso
-intro_year=1980
+intro_year=1980		# seriova vyroba 1984-1990
 retire_year=1992
 waytype=track
 engine_type=Electric
@@ -46,6 +46,16 @@ power=3480
 copyright=TommPa9
 length=8
 gear=155
+
+# extended
+axles=4
+bidirectional=1
+tractive_effort=300	# maximalni tazna sila
+#tractive_effort=176	# trvala tazna sila
+upgrade[0]=CD_362_Rychle_Eso
+upgrade[1]=CD_362_Rychle_Eso_(balkan)
+upgrade[2]=ZSR_362_Persing
+upgrade[3]=ZSSK_362_Persing
 
 emptyimage[w]=csd_363_eso.0.0,0,4
 emptyimage[nw]=csd_363_eso.0.1,0,4
@@ -57,7 +67,7 @@ emptyimage[s]=csd_363_eso.0.6,0,4
 emptyimage[sw]=csd_363_eso.0.7,0,4
 ------------------------------
 obj=vehicle
-cost=4816500	# 6454000 Kcs
+cost=4816500		# 6 454 000 Kcs
 speed=160
 weight=88
 runningcost=265

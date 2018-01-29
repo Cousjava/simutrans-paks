@@ -14,6 +14,14 @@ copyright=TommPa9
 length=8
 gear=155
 
+# extended
+axles=4
+bidirectional=1
+tractive_effort=300	# maximalni tazna sila
+#tractive_effort=176	# trvala tazna sila
+upgrade[0]=ZSR_362_Persing
+upgrade[1]=ZSSK_362_Persing
+
 emptyimage[w]=zsr_363.0.0,0,4
 emptyimage[nw]=zsr_363.0.1,0,4
 emptyimage[n]=zsr_363.0.2,0,4
@@ -37,7 +45,14 @@ engine_type=Electric
 power=3480
 copyright=TommPa9
 length=8
-gear=155
+gear=133
+
+# extended
+axles=4
+bidirectional=1
+tractive_effort=258	# maximalni tazna sila
+available_only_as_upgrade=1
+upgrade_price=525600
 
 emptyimage[w]=zsr_362.0.0,0,4
 emptyimage[nw]=zsr_362.0.1,0,4
