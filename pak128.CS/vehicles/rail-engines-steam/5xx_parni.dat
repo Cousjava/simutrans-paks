@@ -246,7 +246,7 @@ emptyimage[sw]=555_1.0.7,0,4
 
 
 obj=vehicle
-cost=2961600		# 902675 Kcs
+cost=2961600		# 902 675 Kcs vcetne tendru
 speed=80
 weight=99
 runningcost=491
