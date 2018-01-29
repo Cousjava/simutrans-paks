@@ -246,27 +246,30 @@ emptyimage[sw]=555_1.0.7,0,4
 
 
 obj=vehicle
-cost=2961600
+cost=2961600		# 902675 Kcs
 speed=80
 weight=99
 runningcost=491
 fixed_cost=2514
 name=CSD_556.0_Stokr
 intro_year=1951
-retire_year=1983
+#retire_year=1958	# vyroba
+retire_year=1981	# provoz
 waytype=track
 engine_type=steam
-power=1618
+power=1472		# trvaly vykon
+#power=1618		# max vykon 2200 koni
 copyright=TommPa9
 smoke=Steam2
 length=7
-#gear=123
-constraint[next][0]=CSD_935.2
+gear=123
+constraint[next][0]=CSD_935.2	# vyroba az od 1952
+#constraint[next][1]=CSD_930.2	# nahradni do 1952
 
 # extended
 axles=6
 bidirectional=0
-tractive_effort=220
+tractive_effort=220	# max
 
 emptyimage[w]=556_0_stokr.0.0,0,4
 emptyimage[nw]=556_0_stokr.0.1,0,4

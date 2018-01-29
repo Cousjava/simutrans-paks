@@ -252,6 +252,7 @@ length=5
 
 constraint[prev][0]=CSD_555.0_Nemka
 constraint[prev][1]=CSD_555.1
+#constraint[prev][2]=CSD_556.0_Stokr
 
 emptyimage[w]=555.1.0,0,4
 emptyimage[nw]=555.1.1,0,4
@@ -345,13 +346,13 @@ emptyimage[sw]=498_albatros0.1.7,0,4
 ---------------------------------------------
 obj=vehicle
 cost=2853600
-speed=80
-weight=63
+speed=120
+weight=80
 runningcost=72
 fixed_cost=323
 name=CSD_935.2
-intro_year=1951
-retire_year=1983
+intro_year=1951	# ve skutecnosti az od 1952
+retire_year=1981
 waytype=track
 copyright=TommPa9
 length=5
@@ -361,6 +362,7 @@ axles=5
 bidirectional=0
 
 constraint[prev][0]=CSD_556.0_Stokr
+constraint[prev][1]=CSD_498.1_Albatros
 
 emptyimage[w]=556_0_stokr.1.0,0,4
 emptyimage[nw]=556_0_stokr.1.1,0,4
@@ -373,20 +375,24 @@ emptyimage[sw]=556_0_stokr.1.7,0,4
 
 -----------------------------------
 obj=vehicle
-cost=2851800
+cost=2853600
 speed=120
-weight=63
+weight=80
 runningcost=72
-fixed_cost=553
+fixed_cost=323
 name=CSD_935.2_modry
-intro_year=1946
+intro_year=1951
 retire_year=1981
 waytype=track
 copyright=TommPa9
 length=5
 
+# extended
+axles=5
+bidirectional=0
 
 constraint[prev][0]=CSD_498.1_Albatros
+constraint[prev][1]=CSD_556.0_Stokr
 
 emptyimage[w]=498_albatros.1.0,0,4
 emptyimage[nw]=498_albatros.1.1,0,4
