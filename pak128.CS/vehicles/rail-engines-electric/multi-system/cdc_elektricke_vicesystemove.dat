@@ -16,6 +16,12 @@ copyright=TommPa9
 length=8
 gear=155
 
+# extended
+axles=4
+bidirectional=1
+tractive_effort=300	# maximalni tazna sila
+#tractive_effort=176	# trvala tazna sila
+
 emptyimage[w]=cdc_363.0.0,0,4
 emptyimage[nw]=cdc_363.0.1,0,4
 emptyimage[n]=cdc_363.0.2,0,4
@@ -25,6 +31,40 @@ emptyimage[se]=cdc_363.0.5,0,4
 emptyimage[s]=cdc_363.0.6,0,4
 emptyimage[sw]=cdc_363.0.7,0,4
 -------------------------------------------
+
+obj=vehicle
+cost=3726000
+speed=120
+weight=88
+runningcost=297
+fixed_cost=2281
+name=CD_Cargo_363.5_Eso
+intro_year=2010		# upgrade 2010-2013
+waytype=track
+engine_type=Electric
+power=3700
+copyright=TommPa9
+length=8
+gear=155
+
+# extended
+axles=4
+bidirectional=1
+tractive_effort=300	# maximalni tazna sila
+#tractive_effort=185	# trvala tazna sila
+available_only_as_upgrade=1	# Upgrade ze 163 (pridani 25 kV~, modernizace)
+upgrade_price=1525600
+
+emptyimage[w]=cdc_363.0.0,0,4
+emptyimage[nw]=cdc_363.0.1,0,4
+emptyimage[n]=cdc_363.0.2,0,4
+emptyimage[ne]=cdc_363.0.3,0,4
+emptyimage[e]=cdc_363.0.4,0,4
+emptyimage[se]=cdc_363.0.5,0,4
+emptyimage[s]=cdc_363.0.6,0,4
+emptyimage[sw]=cdc_363.0.7,0,4
+-------------------------------------------
+
 obj=vehicle
 cost=3728400
 speed=120

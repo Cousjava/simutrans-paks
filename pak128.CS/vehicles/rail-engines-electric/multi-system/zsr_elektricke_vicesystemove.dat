@@ -51,7 +51,7 @@ gear=133
 axles=4
 bidirectional=1
 tractive_effort=258	# maximalni tazna sila
-available_only_as_upgrade=1
+available_only_as_upgrade=1	# vymena podvozku se 162
 upgrade_price=525600
 
 emptyimage[w]=zsr_362.0.0,0,4

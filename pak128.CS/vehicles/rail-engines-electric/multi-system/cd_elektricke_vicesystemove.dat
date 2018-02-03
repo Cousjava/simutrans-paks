@@ -19,7 +19,7 @@ gear=155
 axles=4
 bidirectional=1
 tractive_effort=255	# maximalni tazna sila
-available_only_as_upgrade=1
+available_only_as_upgrade=1	# upgrade z 240 (pridani 15 kV~ 16.7 Hz, modernizace)
 upgrade_price=813500
 
 emptyimage[w]=cd_340_modra_laminatka.0.0,0,4
@@ -53,7 +53,7 @@ gear=133
 axles=4
 bidirectional=1
 tractive_effort=258	# maximalni tazna sila
-available_only_as_upgrade=1
+available_only_as_upgrade=1	# upgrade z 363 (vymena podvozku se 162)
 upgrade_price=525600
 
 emptyimage[w]=cd_362_eso2.0.0,0,4
@@ -87,7 +87,7 @@ gear=133
 axles=4
 bidirectional=1
 tractive_effort=258	# maximalni tazna sila
-available_only_as_upgrade=1
+available_only_as_upgrade=1	# upgrade z 363 (vymena podvozku se 162)
 upgrade_price=525600
 # dalsi upgrade na push-pull se soupravou Bdmtee (Honeckerova pomsta) + Bfhpvee (Sysel/961) od r. 2011
 
@@ -193,7 +193,7 @@ axles=4
 bidirectional=1
 tractive_effort=205	# maximalni tazna sila
 #tractive_effort=102	# trvala tazna sila
-available_only_as_upgrade=1
+available_only_as_upgrade=1	# upgrade z 372 (zmena prevodu)
 upgrade_price=1044900
 
 emptyimage[w]=cd_371.0.0,0,4
@@ -227,7 +227,7 @@ axles=4
 bidirectional=1
 tractive_effort=205	# maximalni tazna sila
 #tractive_effort=102	# trvala tazna sila
-available_only_as_upgrade=1
+available_only_as_upgrade=1	# upgrade z 372 (zmena prevodu)
 upgrade_price=1044900
 
 emptyimage[w]=cd_371_balkan.0.0,0,4
