@@ -9,7 +9,7 @@ fixed_cost=2081
 name=DB_180
 #intro_year=1992	# Precislovani DR -> DB
 intro_year=1994		# Sjednoceni DR + DB = DBAG
-#intro_year=1995	# Zmena nateru? Objevuje se nejpozdeji rok 2002
+#intro_year=1996	# Zmena nateru? Objevuje se nejpozdeji rok 2002
 retire_year=2014	# Prodej TSS Cargo, zbytek srot, muzeum
 waytype=track
 engine_type=Electric
