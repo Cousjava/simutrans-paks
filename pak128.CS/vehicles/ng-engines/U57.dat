@@ -5,6 +5,7 @@ obj=vehicle
 # hmotnost ve sluzbe 51.5 t (asi vcetne tendru)
 # http://www.club760.at/html/html/Skodat.htm
 # Hmotnost ve sluzbe 35 t (asi bez tendru)
+# Na fotce je 31.5 t (http://www.prazsketramvaje.cz/view.php?cisloclanku=2012011502)
 # Vykon nikde neuvadeji
 # Tendr voda: 6 m^3, uhli: 6 m^3 (4 t)
 cost=12800
@@ -29,8 +30,10 @@ gear=133
 # Sim
 #power=150
 #gear=130
+
 # Vladki (extended)
 axles=5
+axle_load=17		# podle rady lokomotivy
 bidirectional=0
 tractive_effort=90
 constraint[next][0]=306_0

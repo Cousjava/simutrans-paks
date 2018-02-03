@@ -1,3 +1,5 @@
+utf-8
+
 AC
 *	lokomotivy na střídavý proud
 	*	25kV~ 50Hz	(CS, HU)
@@ -18,4 +20,21 @@ multi-system
 	*	25kV~ 50Hz + 15kV~ 16.7Hz	 (340)
 	
 
-utf-8
+Kryšpínovo značení: 1925 - 1987 (ES 499.3)
+UIC značení od 1.1.1988 - dodnes    (363)
+
+Rozdělení ČSD na ČD+ŽSR: 1.1.1993
+
+Rozdělení ČD na ČD + SŽDC: 1.1.2003
+Rozdělení ČD na ČD + ČD Cargo: 1.12.2007
+Nátěr Najbrt od 25.11.2008 (pro jednoduchost 2009)
+
+Rozdělení ŽSR na ŽSR a ZSSK: 1.1.2002
+Rozdělení ŽSSK na ZSSK + ZSSK Cargo: 1.1.2005
+Nátěr Blonski od 11.3.2006 (pro jednoduchost 2006)
+
+Unifik nátěry ČSD:
+1.1.1977: Celé jednobarevné
+25.1.1982: Přidán 30cm žlutý pruh na čelo
+1.1.1988: 60cm žlutý pruh kolem dokola (spolu s novým značením)
+
