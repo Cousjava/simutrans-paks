@@ -56,8 +56,8 @@ tractive_effort=300	# maximalni tazna sila
 #tractive_effort=176	# trvala tazna sila
 upgrade[0]=CD_362_Rychle_Eso
 upgrade[1]=CD_362_Rychle_Eso_(balkan)
-upgrade[2]=ZSR_362_Persing
-upgrade[3]=ZSSK_362_Persing
+upgrade[2]=ZSR_362_Pershing
+upgrade[3]=ZSSK_362_Pershing
 
 emptyimage[w]=csd_363_eso.0.0,0,4
 emptyimage[nw]=csd_363_eso.0.1,0,4

@@ -263,8 +263,9 @@ copyright=TommPa9
 smoke=Steam2
 length=7
 gear=123
-constraint[next][0]=CSD_935.2	# vyroba az od 1952
-#constraint[next][1]=CSD_930.2	# nahradni do 1952
+constraint[next][0]=CSD_935.2
+#constraint[next][1]=CSD_930.2
+# vyroba 935.2 az od 1952 do te doby se jako nahradni pouzival 930.2
 
 # extended
 axles=6
