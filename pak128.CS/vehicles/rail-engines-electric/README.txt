@@ -38,3 +38,8 @@ Unifik nátěry ČSD:
 25.1.1982: Přidán 30cm žlutý pruh na čelo
 1.1.1988: 60cm žlutý pruh kolem dokola (spolu s novým značením)
 
+Natery 350:
+csd_350_v2.png - 1974, 1991, 2015 (prototypový šedý nátěr, opakovaně se vracel)
+csd_350_v3.png - 1974 (ČSD polomáčená)
+csd_350.png - asi 1993 (ŽSR)
+zssk_350.png - 2006 (ZSSK Blonski)
