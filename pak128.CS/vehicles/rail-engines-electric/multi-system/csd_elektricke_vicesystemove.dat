@@ -23,14 +23,14 @@ tractive_effort=275	# maximalni tazna sila
 upgrade[0]=CD_371_Bastard
 upgrade[1]=CD_371_Bastard_(balkan)
 
-emptyimage[w]=csd_372.0.0,0,4
-emptyimage[nw]=csd_372.0.1,0,4
-emptyimage[n]=csd_372.0.2,0,4
-emptyimage[ne]=csd_372.0.3,0,4
-emptyimage[e]=csd_372.0.4,0,4
-emptyimage[se]=csd_372.0.5,0,4
-emptyimage[s]=csd_372.0.6,0,4
-emptyimage[sw]=csd_372.0.7,0,4
+emptyimage[w]=csd_372_v2.0.0,0,4
+emptyimage[nw]=csd_372_v2.0.1,0,4
+emptyimage[n]=csd_372_v2.0.2,0,4
+emptyimage[ne]=csd_372_v2.0.3,0,4
+emptyimage[e]=csd_372_v2.0.4,0,4
+emptyimage[se]=csd_372_v2.0.5,0,4
+emptyimage[s]=csd_372_v2.0.6,0,4
+emptyimage[sw]=csd_372_v2.0.7,0,4
 --------------------------------
 obj=vehicle
 cost=3726000		# 8 900 000 Kcs
