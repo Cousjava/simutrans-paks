@@ -2,7 +2,7 @@ Obj=building
 name=Posta_Mala
 copyright=TommPa9, Vladki
 
-#intro_year=1950
+intro_year=1950
 type=extension
 enables_post=1
 level=10

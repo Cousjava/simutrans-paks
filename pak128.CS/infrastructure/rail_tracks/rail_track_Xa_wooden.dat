@@ -14,8 +14,8 @@ maintenance=200
 topspeed=60
 max_weight=150
 axle_load=18
-# odhad
-intro_year=1889
+intro_year=1827		# zatim nemame starsi modely
+#intro_year=1889	# odhad
 retire_year=1929
 icon=> rail_track_Xa_wooden.0.6
 cursor=rail_track_Xa_wooden.0.7,0,-16
