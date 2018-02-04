@@ -55,14 +55,14 @@ tractive_effort=300	# maximalni tazna sila
 available_only_as_upgrade=1	# Upgrade ze 163 (pridani 25 kV~, modernizace)
 upgrade_price=1525600
 
-emptyimage[w]=cdc_363.0.0,0,4
-emptyimage[nw]=cdc_363.0.1,0,4
-emptyimage[n]=cdc_363.0.2,0,4
-emptyimage[ne]=cdc_363.0.3,0,4
-emptyimage[e]=cdc_363.0.4,0,4
-emptyimage[se]=cdc_363.0.5,0,4
-emptyimage[s]=cdc_363.0.6,0,4
-emptyimage[sw]=cdc_363.0.7,0,4
+emptyimage[w]=cdc_363_5.0.0,0,4
+emptyimage[nw]=cdc_363_5.0.1,0,4
+emptyimage[n]=cdc_363_5.0.2,0,4
+emptyimage[ne]=cdc_363_5.0.3,0,4
+emptyimage[e]=cdc_363_5.0.4,0,4
+emptyimage[se]=cdc_363_5.0.5,0,4
+emptyimage[s]=cdc_363_5.0.6,0,4
+emptyimage[sw]=cdc_363_5.0.7,0,4
 -------------------------------------------
 
 obj=vehicle
