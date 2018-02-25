@@ -351,7 +351,13 @@ weight=80
 runningcost=72
 fixed_cost=323
 name=CSD_935.2
-intro_year=1951	# ve skutecnosti az od 1952
+intro_month=2		# prvni kus lokomotivy: 7. února 1951
+intro_year=1951
+#intro_month=6		# tendry ve vyrobe az od roku 1952	
+#intro_year=1952
+#retire_month=6		# posledni kus: 21. května 1958
+#retire_year=1958
+retire_month=4		# posledni jizda: 1. dubna 1981
 retire_year=1981
 waytype=track
 copyright=TommPa9
@@ -362,7 +368,7 @@ axles=5
 bidirectional=0
 
 constraint[prev][0]=CSD_556.0_Stokr
-constraint[prev][1]=CSD_498.1_Albatros
+#constraint[prev][1]=CSD_498.1_Albatros
 
 emptyimage[w]=556_0_stokr.1.0,0,4
 emptyimage[nw]=556_0_stokr.1.1,0,4
@@ -392,7 +398,7 @@ axles=5
 bidirectional=0
 
 constraint[prev][0]=CSD_498.1_Albatros
-constraint[prev][1]=CSD_556.0_Stokr
+#constraint[prev][1]=CSD_556.0_Stokr
 
 emptyimage[w]=498_albatros.1.0,0,4
 emptyimage[nw]=498_albatros.1.1,0,4

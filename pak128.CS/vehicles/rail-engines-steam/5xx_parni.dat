@@ -246,15 +246,18 @@ emptyimage[sw]=555_1.0.7,0,4
 
 
 obj=vehicle
-cost=2961600		# 902 675 Kcs vcetne tendru
+cost=2961600		# 902 675 Kčs včetně tendru
 speed=80
-weight=99
+weight=99		# Hmotnost ve službě
 runningcost=491
 fixed_cost=2514
 name=CSD_556.0_Stokr
+intro_month=2		# prvni kus: 7. února 1951
 intro_year=1951
-#retire_year=1958	# vyroba
-retire_year=1981	# provoz
+#retire_month=6		# posledni kus: 21. května 1958
+#retire_year=1958
+retire_month=4		# posledni jizda: 1. dubna 1981
+retire_year=1981
 waytype=track
 engine_type=steam
 power=1472		# trvaly vykon
