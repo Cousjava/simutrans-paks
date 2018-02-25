@@ -33,7 +33,7 @@ gear=133
 
 # Vladki (extended)
 axles=5
-axle_load=17		# podle rady lokomotivy
+axle_load=7		# podle rady lokomotivy
 bidirectional=0
 tractive_effort=90
 constraint[next][0]=306_0
