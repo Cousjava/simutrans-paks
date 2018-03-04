@@ -135,22 +135,31 @@ emptyimage[s]=354_1.1.6,0,4
 emptyimage[sw]=354_1.1.7,0,4
 -----------------------------------
 obj=vehicle
-cost=3646800
-speed=110
+cost=3646800		# 1 500 000 Kčs + tendr 414 000 Kčs
+speed=110		# prvni serie 100 km/h, 4. a 5. serie 120 km/h
 weight=93
 runningcost=413
 fixed_cost=2908
 name=CSD_387.0_Mikado
-intro_year=1926
-retire_year=1974
+intro_month=6
+intro_year=1926		# prvni dodany kus 27. 5. 1926
+#retire_month=1
+#retire_year=1938	# posledni dodavka 15. 12. 1937
+retire_year=1974	# vyrazeni z provozu
 waytype=track
 engine_type=steam
-power=1435
+power=1546		# trvaly vykon
 copyright=TommPa9
 smoke=Steam2
 length=7
 gear=114
 constraint[next][0]=CSD_923.0
+# dodavane byly tendry 923.0, 930.0 a 930.1
+# tendry 930.0 byly rekonstrukce z tendru 923.1
+
+axles=6
+axle_load=17		# podle rady lokomotivy
+bidirectional=0
 
 emptyimage[w]=387.0.0,0,4
 emptyimage[nw]=387.0.1,0,4
