@@ -135,22 +135,30 @@ emptyimage[s]=524_1.1.6,0,4
 emptyimage[sw]=524_1.1.7,0,4
 ---------------------------------------------------
 obj=vehicle
-cost=2071200
+cost=2071200	# 1 600 000 Kcs (bez tendru). Tendr 818 za 169 800 Kcs, v roce 1938 cena 1 209 580 Kcs
 speed=60
 weight=83
 runningcost=432
 fixed_cost=1659
 name=CSD_534.0_Kremak
-intro_year=1924
-retire_year=1982
+intro_year=1923 # Vyroba s prestavkami: 1922-26, 30-31, 37-38, 42, 46-47
+retire_year=1974
 waytype=track
 engine_type=steam
-power=1029
+power=1029	# 1400 koni
 copyright=TommPa9
 smoke=Steam2
 length=6
 gear=108
-constraint[next][0]=CSD_621.0
+constraint[next][0]=CSD_621.0	# do vyrobniho cisla 113
+#constraint[next][1]=CSD_818.0	# od vyrobniho cisla 114
+# Podle http://lokomotivy.webzdarma.cz/534_0b.htm, tendry 621.0 (1-67), 516.0 (68-77) a 818.0 (78 a dal), 727.0 (vyjimka)
+
+# extended
+axles=6
+axle_load=14
+bidirectional=0
+# Na rovině utáhly zátěž 1400 t rychlostí 58 km/h a na stoupání 15 ‰ 600t rychlostí 25 km/h
 
 emptyimage[w]=534_0.0.0,0,4
 emptyimage[nw]=534_0.0.1,0,4
@@ -168,16 +176,23 @@ weight=83
 runningcost=435
 fixed_cost=1670
 name=CSD_534.0_Kremak_(pozdni)
-intro_year=1938
-retire_year=1982
+#intro_year=1938 # Vizualni zmeny - parni dom pisecnik uz u valecne serie z r. 1942
+intro_year=1946 # prvni povalecna 22. prosince 1945, 534.0301 a vyse
+retire_year=1983
 waytype=track
 engine_type=steam
-power=1029
+power=1323	# 1800 koni
 copyright=TommPa9
 smoke=Steam2
 length=6
 gear=109
-constraint[next][0]=CSD_818.0
+constraint[next][0]=CSD_818.0	# do vyrobniho cisla 322, dalsi pak mely tendry 935.1
+#constraint[next][1]=CSD_935.1
+
+# extended
+axles=6
+axle_load=14
+bidirectional=0
 
 emptyimage[w]=534_0_5.0.0,0,4
 emptyimage[nw]=534_0_5.0.1,0,4

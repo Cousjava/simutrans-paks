@@ -1,3 +1,8 @@
+# Prehled, ktere loko s kterymi tendry:
+# http://parniloko.wz.cz/web/tendry/lokoten/lokoten.html
+# http://www.ld-trutnov.cz/vozidla/prehledy-vozidel/tendry/
+
+
 --------------------------------------------------
 obj=vehicle
 cost=1010400
@@ -147,6 +152,10 @@ length=4
 
 constraint[prev][0]=CSD_534.0_Kremak
 
+# extended
+axles=4
+bidirectional=0
+
 emptyimage[w]=534_0.1.0,0,4
 emptyimage[nw]=534_0.1.1,0,4
 emptyimage[n]=534_0.1.2,0,4
@@ -171,6 +180,10 @@ length=4
 
 
 constraint[prev][0]=CSD_534.0_Kremak_(pozdni)
+
+# extended
+axles=3
+bidirectional=0
 
 emptyimage[w]=534_0_5.1.0,0,4
 emptyimage[nw]=534_0_5.1.1,0,4
@@ -198,6 +211,10 @@ length=5
 
 constraint[prev][0]=CSD_387.0_Mikado
 constraint[prev][1]=CSD_386.0
+
+# extended
+axles=4
+bidirectional=0
 
 emptyimage[w]=387.1.0,0,4
 emptyimage[nw]=387.1.1,0,4
