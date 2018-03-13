@@ -3,6 +3,7 @@ Name=tramdepot_1869
 copyright=VTPsim
 type=depot
 waytype=tram_track
+intro_month=8
 intro_year=1869
 retire_year=1930
 Dims=1,1,4

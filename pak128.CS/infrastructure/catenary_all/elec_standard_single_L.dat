@@ -3,6 +3,7 @@ name=elec_standard_single_L
 cost=30000
 maintenance=400
 topspeed=200
+intro_month=6
 intro_year=1903
 waytype=track
 own_waytype=electrified_track

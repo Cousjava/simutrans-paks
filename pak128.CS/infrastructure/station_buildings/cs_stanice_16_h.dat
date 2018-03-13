@@ -1,3 +1,4 @@
+# https://www.k-report.net/budova-16h/
 Obj=building
 Name=CSStationBuilding_16_H
 copyright=Lubak91
@@ -5,6 +6,7 @@ type=extension
 waytype=track
 enables_pax=1
 intro_year=1892
+#retire_year=1915
 # must be 1*2
 # 1_1 is the land sqare
 Dims=1,1,4

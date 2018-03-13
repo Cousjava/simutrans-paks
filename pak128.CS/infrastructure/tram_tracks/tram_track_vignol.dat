@@ -10,7 +10,8 @@ maintenance=100
 topspeed=30
 max_weight=20
 axle_load=10
-# pocatek parni tramvaje v Brne
+# pocatek parni tramvaje v Brne 31. 5. 1884
+intro_month=6
 intro_year=1884
 retire_year=1925
 icon=> tram_track_S49_no_sleepers.0.6

@@ -6,7 +6,8 @@ waytype=track
 type=station
 enables_pax=1
 enables_post=1
-intro_year=1910
+intro_year=1869 # postavena trat HavlBrod - Kolin
+# intro_year=1910 # Puvodni nastaveni od Lubaka
 # must be 1*2
 # 1_1 is the land sqare
 Dims=3,1,4

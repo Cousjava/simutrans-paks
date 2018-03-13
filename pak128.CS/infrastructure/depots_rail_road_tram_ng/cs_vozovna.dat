@@ -6,7 +6,7 @@ waytype=road
 # must be 1*1
 Dims=1,1,4
 NoInfo=1
-intro_year = 1800
+intro_year = 1700
 retire_year = 1850
 icon=> cs_vozovna.1.2
 cursor=cs_vozovna.1.3

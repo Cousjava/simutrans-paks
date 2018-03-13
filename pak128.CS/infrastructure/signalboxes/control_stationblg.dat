@@ -2,6 +2,7 @@ Obj=building
 type=signalbox
 Name=Control_StationBlg
 copyright=MHz
+intro_month = 6
 intro_year = 1954
 #retire_year = 2006 # Centralni rizeni
 level=5
