@@ -41,7 +41,7 @@
 # Kulate predvesti davam ve hre az od 1954, s novymi upozornovadly.
 # Mohly by byt uz od 1939, ale s [X] a cernobilymi pruhy.
 # Druhy duvod je aby byl mozny jednoznacny upgrade v experimental.
-# Nemecke modely jsou oznaceny jako _DR_ misto _CSD_.
+# Nemecke modely jsou oznaceny jako _DRB_ misto _CSD_.
 # Treba nekdo nekdy udela i nemecka hlavni navestidla.
 # Pripadne starsi modely by pak byly _kkStB_ ;)
 #
@@ -188,7 +188,7 @@ Cursor=../CSD/mechanic_2.7.4
 -----------------------------
 Obj=roadsign
 copyright=Lubak91
-Name=Mechanic_DR_PreSignal_yellow
+Name=Mechanic_DRB_PreSignal_yellow
 waytype=track
 cost=1000
 is_presignal=1
@@ -390,7 +390,7 @@ waytype=track
 cost=4000
 is_signal=1
 free_route=1
-max_speed=120
+#max_speed=120
 #normal_danger=1
 #has_selective_choose=1
 #working_method=absolute_block

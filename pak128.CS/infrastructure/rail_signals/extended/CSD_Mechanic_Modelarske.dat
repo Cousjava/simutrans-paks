@@ -70,7 +70,7 @@ Cursor=../CSD/mechanic_2.9.4
 -----------------------------
 Obj=roadsign
 copyright=Lubak91
-Name=Mechanic_DR_PreSignal_yellow_3aspect
+Name=Mechanic_DRB_PreSignal_yellow_3aspect
 waytype=track
 cost=1000
 is_presignal=1
@@ -106,7 +106,7 @@ Cursor=../CSD/mechanic_3.9.4
 ############################
 Obj=roadsign
 copyright=Lubak91
-Name=Mechanic_DR_PreSignal_Station
+Name=Mechanic_DRB_PreSignal_Station
 waytype=track
 cost=1000
 is_signal=1
@@ -139,7 +139,7 @@ Cursor=../CSD/mechanic_3.1.4
 ############################
 #obj=roadsign
 #copyright=Lubak91
-#Name=Mechanic_DR_EndOfChooseSignal
+#Name=Mechanic_DRB_EndOfChooseSignal
 #waytype=track
 #cost=500
 #end_of_choose=1
