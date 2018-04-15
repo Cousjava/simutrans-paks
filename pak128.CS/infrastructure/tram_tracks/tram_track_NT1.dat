@@ -9,12 +9,10 @@ waytype=track
 system_type=7
 cost=41645
 maintenance=200
-# overit max.rychlost
-topspeed=120
-max_weight=150
-axle_load=20
+topspeed=50	# Predpisy z r. 1960
+axle_load=10	# 4-napravove Tatry 16-18 t, >100 cestujicich
 intro_year=1965
-retire_year=2050
+#retire_year=2050
 icon=> tram_track_S49_no_sleepers.0.6
 cursor=tram_track_S49_no_sleepers.0.7,0,-16
 image[-][0]   =tram_track_S49_no_sleepers.1.0

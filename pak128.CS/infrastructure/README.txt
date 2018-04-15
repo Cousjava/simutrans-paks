@@ -2,6 +2,8 @@ Hodně zajímavostí na:
 https://www.rail.sk/skhist/zaujim.htm
 https://www.mdc.sk/aktuality/30/
 https://www.vlaky.net/
+http://public.rfx.cz/Lienert/Kolejnice.pdf
+http://www.sabdigital.com/expozicemhd/
 
 Železnice:
 ~~~~~~~~~~
@@ -56,7 +58,12 @@ koněspřežky: tyhle bych nepovažoval za úzkokolejky
   - http://www.novinky.sered.sk/clanky/2016-11-22-vznik-zeleznice-v-uhorsku-a-prva-konska-a-parna-zeleznica-v-seredi
 
 parní:
-KFNB: Vídeň (1837) - Břeclav, Brno (1839) - Přerov, Olomouc (1841) - Lipník (1842)
+KFNB: Viden - Bochnia
+vznik firmy 1.3.1836, privilegium 4.3.1836, VH 25.4.1836, prvni usek v listopadu 1837
+Vídeň (6.1.1838), Břeclav (6.6.1839), Brno (7.7.1839), Přerov (1.9.1841), Olomouc (17.10.1841), Lipník (15.8.1842)
+Pokracovani od kvetna 1844, Bohumin (1.5.1847), Chalupki (1.9.1848), Osvetim (1.3.1856)
+
+
 StEG: Olomouc - Praha (1845) - Drážďany (1851), Brno - Č. Třebová (1849)
 StEG: (Vídeň -) Marchegg - Bratislava (1848) - Budapest (1850)
 
@@ -115,6 +122,36 @@ Telegraf (morse?): Brno-Blansko 1861
 zubačky:
 Tanvald - Kořenov: 1902 (od 1980 let adhezni provoz), max 40 km/h, max 58 ‰, 20 km/h dolu
 Brezno - Tisovec: 1896 (od 1965 adhezni osobní doprava - singrovky), max 50 ‰, 12 km/h os, 8 km/h nakladni
+
+O kolejich: http://www.szdc.cz/o-nas/zeleznice-cr/historie-zeleznice.html
+- prvni parni zeleznice 4 t/napravu, dvhouhlave kolejnice Ib, 47 kg/m, bezne pouziti jeste v 1924, v katalogu v 1940
+- necitelny sken vyklresu koleji z rakouska uherska: http://www.szdc.cz/obrazky/zeleznice-cr/historie/bezna-kolej/obr.7.jpg
+- je tam hodne o kolejich a prazcich, ale nejsou tam hodnoty
+
+Zajimave hodnoty zde: http://public.rfx.cz/Lienert/V%FDpo%E8et%20nam%E1h%E1n%ED.pdf
+Tridy zatizeni v tunach na napravu: A=16, B=18, C=20, D=22.5, E=25
+UIC 60; NP 4; R 65	D4 / 200, E5 / 100
+S 49; T			D4 / 120, E5 / 80
+A; S 45; S 49 DR	C4 / 90, D4 / 50
+Xa			A / 60, B2 / 40
+
+Upevneni: http://projekt150.ha-vel.cz/node/81
+- pruzne upevneni 50 let
+- klasika 25 let
+
+Ruzne info: http://public.rfx.cz/Lienert 
+- bukove 25-40, dubove 20-60 let
+- o kolejich, prazcich,....
+
+Prazce: https://www.fd.cvut.cz/personal/tyfal/str/predmety/ikod-pr/ikod04.pdf
+- drevene: snadna vyroba, slozitejsi montaz, nizsi zivotnost, nizsi odolnost proti posunuti, nedostatek dreva
+- beton: delsi zivotnost (40 let ???), lepsi stabilita (pro bezstyk.), od r. 1950
+- B03 + S49: 120 km/h, 22.5 t; nebo 160 km/h, 18 t 
+- B91S/1 + UIC60, nebo B91S/2 + S49: 160 km/h, 25 t; 220 km/h, 22.5 t; 300 km/h, 18 t
+
+- pro simutrans bych videl: cost drevo < beton, maintenance drevo > beton
+- pro extended: wear_capacity drevo < beton; Xa < A < T,S49 < R65,UIC60
+
 
 Narrow Gauge:
 ~~~~~~~~~~~~~

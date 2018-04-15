@@ -5,12 +5,12 @@ waytype=track
 system_type=7
 cost=32000
 maintenance=200
-# overit max.rychlost
+# na betonovych prazcich B03, 120 km/h, 22.5 t/axle
+# v podstate nemusi byt v tram tracks
 topspeed=120
-max_weight=150
-axle_load=25
+axle_load=22
 intro_year=1970
-retire_year=2050
+#retire_year=2050
 icon=> tram_track_S49_no_sleepers.0.6
 cursor=tram_track_S49_no_sleepers.0.7,0,-16
 image[-][0]=tram_track_S49_no_sleepers.1.0

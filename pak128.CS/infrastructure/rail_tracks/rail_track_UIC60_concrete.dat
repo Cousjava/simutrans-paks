@@ -1,20 +1,24 @@
 # koleje s kolejnicemi UIC60 na betonovych prazcich
-# 60kg/bm
+# 60kg/bm, pouziti na koridorove trate, nahrazuje R65
 # vyrabeno od 50. let 20 stoleti, u nas po 1989
 # max 25t na napravu 
-# max rychlost ?300km/h? (limit kolejnice);
-# limit dany prazci neznamy
+# max rychlost ?300km/h? (limit kolejnice); ale pri nizsi zatezi
+# https://www.fd.cvut.cz/personal/tyfal/str/predmety/ikod-pr/ikod04.pdf
+# betonove prazce B91S/1 160 km/h, 25 t; 220 km/h, 22.5 t; 300 km/h, 18 t
+# http://public.rfx.cz/Lienert/V%FDpo%E8et%20nam%E1h%E1n%ED.pdf
+# D4 / 200, E5 / 100 --- a ted si vyber...
 obj=way
 name=rail_track_UIC60_concrete_sleepers
 copyright=JK271
 waytype=track
-cost=38400
-maintenance=200
-topspeed=200
-max_weight=150
-axle_load=25
+cost=42400
+maintenance=150
+topspeed=160	# 220	# 300
+axle_load=25	# 22	# 18
 # na zapade jiz mnohem drive
-intro_year=1990
+# u nas prvni usek 160 km/h 2.8.1993 (Úvaly - Poříčany)
+# dle wikipedie se pouzivaji uz od 1991
+intro_year=1991
 icon=> rail_track_UIC60_concrete.0.6
 cursor=rail_track_UIC60_concrete.0.7,0,-16
 #SUMMER

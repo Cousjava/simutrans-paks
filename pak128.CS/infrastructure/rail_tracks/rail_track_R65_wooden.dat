@@ -1,5 +1,5 @@
 # koleje s kolejnicemi R65 na drevenych prazcich
-# vyrabeno od roku 1963 do ?
+# vyrabeno od roku 1963 do ?, od 1991 nahrazeno UIC 60
 # max 25t na napravu (D4/200, E5/100)
 # max rychlost 200km/h (limit kolejnice); limit dany prazci neznamy
 # 65kg/m
@@ -9,11 +9,10 @@ copyright=JK271+VTPsim
 waytype=track
 cost=41600
 maintenance=200
-topspeed=150
-max_weight=150
+topspeed=120
 axle_load=25
 intro_year=1963
-retire_year=1985
+retire_year=1991
 icon=> rail_track_R65_wooden.0.6
 cursor=rail_track_R65_wooden.0.7,0,-16
 #SUMMER

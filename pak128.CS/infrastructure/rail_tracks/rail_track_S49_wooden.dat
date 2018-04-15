@@ -1,8 +1,9 @@
 # koleje s kolejnicemi S49 (49E1)
 # vyrabeno od roku 1970, nahrada za T
+# dnes uz se drevene prazce skoro nepouzivaji
 # max 25t na napravu (D4/120; E5/80)
 # max rychlost 120km/h (limit kolejnice);
-# limit dany prazci neznamy
+# limit dany drevenymi prazci neznamy
 # 50kg/m
 obj=way
 name=rail_track_S49_wooden_sleepers
@@ -11,11 +12,10 @@ waytype=track
 cost=32000
 maintenance=200
 # overit max.rychlost
-topspeed=120
-max_weight=150
-axle_load=25
+topspeed=120	# 80
+axle_load=22	# 25
 intro_year=1970
-retire_year=1985
+retire_year=1991
 icon=> rail_track_S49_wooden.0.6
 cursor=rail_track_S49_wooden.0.7,0,-16
 #SUMMER

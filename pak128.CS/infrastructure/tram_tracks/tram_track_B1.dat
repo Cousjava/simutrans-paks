@@ -1,9 +1,10 @@
 # žlábkové kolejnice B1
-# ukládají se do betonových panelů
+# ukládají se do betonových panelů (BKV)
 # dodnes vyráběné
 # 60.23kg/bm
-# @zdroj=http://prazsketramvaje.cz/view.php?cisloclanku=2010031701
+# @zdroj=http://prazsketramvaje.cz/view.php?cisloclanku=2006041296
 # @zdroj=http://www.trz.cz/pdf/kolejnice_2010.pdf, slide 8
+# mene pracne, bezudrzbove, ale drahe, hlucne, horsi vydrz nez NT1, premalovat s panely
 obj=way
 name=tram_track_B1_no_sleepers
 copyright=JK271
@@ -11,13 +12,10 @@ waytype=track
 system_type=7
 cost=38547
 maintenance=200
-# overit max.rychlost
-topspeed=50
-max_weight=150
-axle_load=20
-# ??
-intro_year=1965
-retire_year=2050
+topspeed=60	# Predpisy z r. 1976
+axle_load=10	# Moderni tramvaje by se mely vejit
+intro_year=1977
+retire_year=1997	# Konec cca v 90 letech, dnes jen vyjimecne - mosty
 icon=> tram_track_S49_no_sleepers.0.6
 cursor=tram_track_S49_no_sleepers.0.7,0,-16
 image[-][0]   =tram_track_S49_no_sleepers.1.0

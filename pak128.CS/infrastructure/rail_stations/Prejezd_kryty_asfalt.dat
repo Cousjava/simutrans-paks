@@ -7,7 +7,8 @@ Level=3
 Dims=1,1,16
 NoInfo=1
 enables_post=1 
-intro_year = 1825
+intro_year = 1824
+intro_month = 9
 icon=> Stanice_6.0.6
 cursor=Stanice_6.1.6
 # SUMMER

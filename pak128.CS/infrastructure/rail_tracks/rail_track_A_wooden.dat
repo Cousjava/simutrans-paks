@@ -1,19 +1,21 @@
 # koleje s kolejnicemi A na drevenych prazcich
 # 44kg/bm
-# vyrabeno od roku 1903 do ? ( = nìkdy po 1940)
+# vyrabeno od roku 1903 do ? ( = nekdy po 1940)
+# podle http://www.szdc.cz/obrazky/zeleznice-cr/historie/bezna-kolej/obr.7.jpg uz od 1866
 # max 22,5t na napravu (C4/90, D4/50)
 # max rychlost 90km/h (limit kolejnice); limit dany prazci neznamy
+# podle xxx 100 km/h, 20 kN (? wtf ?)
 obj=way
 name=rail_track_A_wooden_sleepers
 copyright=JK271+VTPsim
 waytype=track
-cost=32000
+cost=28000
 maintenance=200
-topspeed=90
-max_weight=150
-axle_load=23
-intro_year=1903
-retire_year=1950
+topspeed=90	# 50
+axle_load=20	# 22
+intro_year=1903	
+#intro_year=1866
+retire_year=1963
 icon=> rail_track_A_wooden.0.6
 cursor=rail_track_A_wooden.0.7,0,-16
 #SUMMER

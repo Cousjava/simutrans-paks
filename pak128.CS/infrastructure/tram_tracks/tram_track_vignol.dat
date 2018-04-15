@@ -7,9 +7,8 @@ waytype=track
 system_type=7
 cost=32000
 maintenance=100
-topspeed=30
-max_weight=20
-axle_load=10
+topspeed=15	# Predpisy z r. 1905
+axle_load=10	# Caroline 20 t / 3 napravy
 # pocatek parni tramvaje v Brne 31. 5. 1884
 intro_month=6
 intro_year=1884

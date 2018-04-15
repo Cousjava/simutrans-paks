@@ -1,20 +1,22 @@
 # koleje s kolejnicemi T na drevenych prazcich
 # 50kg/bm
-# vyrabeno od roku 1929 do 1970
+# vyrabeno od roku 1929 do 1970, nekde pisou az 1930
+# Mozna sladit s intro Mikada 387.0 (cerven 1926)
+# ale to pry ze zacatku nemohlo jezdit na plny pecky
 # max 25t na napravu (D4/120km/h; E5/80km/h)
 # max rychlost 120km/h (limit kolejnice);
 # nekde tvrdi, ze az 150 km/h
 # limit dany prazci neznamy
+# podle xxx 150 km/h, 25 kN (? wtf ?)
 obj=way
 name=rail_track_T_wooden_sleepers
 copyright=JK271+VTPsim
 waytype=track
 cost=32000
 maintenance=200
-topspeed=120
-max_weight=150
-axle_load=25
-intro_year=1929
+topspeed=120	# 80
+axle_load=22	# 25
+intro_year=1930
 retire_year=1970
 icon=> rail_track_T_wooden.0.6
 cursor=rail_track_T_wooden.0.7,0,-16

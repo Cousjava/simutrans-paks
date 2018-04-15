@@ -1,4 +1,4 @@
-# bezžlábková kolejnice NP5
+# žlábková kolejnice NP3 a podobna bezžlábková kolejnice NP5
 # v Praze, od poloviny 20. let do poloviny 60. let do současnosti
 # 
 # @zdroj=http://prazsketramvaje.cz/view.php?cisloclanku=2010031701
@@ -10,10 +10,8 @@ waytype=track
 system_type=7
 cost=41645
 maintenance=200
-# overit max.rychlost
-topspeed=60
-max_weight=150
-axle_load=20
+topspeed=35	# Predpisy z r. 1935
+axle_load=10	# Dvounapravove tramvaje cca 12-13 t + 50-70 osob
 intro_year=1925
 retire_year=1965
 icon=> tram_track_S49_no_sleepers.0.6
