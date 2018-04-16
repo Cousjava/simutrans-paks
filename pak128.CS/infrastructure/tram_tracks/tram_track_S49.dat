@@ -6,9 +6,9 @@ system_type=7
 cost=32000
 maintenance=200
 # na betonovych prazcich B03, 120 km/h, 22.5 t/axle
-# v podstate nemusi byt v tram tracks
-topspeed=120
-axle_load=22
+# bezzlabkova kolej s pridrznici - pro vlecky
+topspeed=30
+axle_load=25
 intro_year=1970
 #retire_year=2050
 icon=> tram_track_S49_no_sleepers.0.6
