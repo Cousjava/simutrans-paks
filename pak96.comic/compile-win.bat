@@ -16,82 +16,73 @@ if exist .\compiled\ (del .\compiled\*.pak) else (md compiled)
 echo.
 echo -------------------------------------------------------
 echo Compiling air transport...
-makeobj.exe pak96 ./compiled/ ./air/buildings/
-makeobj.exe pak96 ./compiled/ ./air/signs/
-makeobj.exe pak96 ./compiled/ ./air/vehicles/
-makeobj.exe pak96 ./compiled/ ./air/ways/
+echo -------------------------------------------------------
+for /f "delims=" %%d in ('dir air /ad /b') do (makeobj pak96 ./compiled/ ./air/%%d/)
 
 echo.
 echo -------------------------------------------------------
 echo Compiling city and lanscape...
-makeobj.exe pak96 ./compiled/ ./city-and-landscape/buildings/com/
-makeobj.exe pak96 ./compiled/ ./city-and-landscape/buildings/cur/
-makeobj.exe pak96 ./compiled/ ./city-and-landscape/buildings/mon/
-makeobj.exe pak96 ./compiled/ ./city-and-landscape/buildings/res/
-makeobj.exe pak96 ./compiled/ ./city-and-landscape/ground/
-makeobj.exe pak96 ./compiled/ ./city-and-landscape/rivers/
+echo -------------------------------------------------------
+for /f "delims=" %%d in ('dir city-and-landscape /ad /b') do (makeobj pak96 ./compiled/ ./city-and-landscape/%%d/)
+for /f "delims=" %%d in ('dir city-and-landscape\buildings /ad /b') do (makeobj pak96 ./compiled/ ./city-and-landscape/buildings/%%d/)
 
 echo.
 echo -------------------------------------------------------
 echo Compiling factories...
-makeobj.exe pak96 ./compiled/ ./factory/
+echo -------------------------------------------------------
+makeobj pak96 ./compiled/ ./factory/
 
 echo.
 echo -------------------------------------------------------
 echo Compiling maglevs...
-makeobj.exe pak96 ./compiled/ ./maglev/buildings/
-makeobj.exe pak96 ./compiled/ ./maglev/signs/
-makeobj.exe pak96 ./compiled/ ./maglev/vehicles/
-makeobj.exe pak96 ./compiled/ ./maglev/ways/
-makeobj.exe pak96 ./compiled/ ./maglev/ways/bridges/
-makeobj.exe pak96 ./compiled/ ./maglev/ways/elevated/
-makeobj.exe pak96 ./compiled/ ./maglev/ways/tunnels/
+echo -------------------------------------------------------
+for /f "delims=" %%d in ('dir maglev /ad /b') do (makeobj pak96 ./compiled/ ./maglev/%%d/)
+for /f "delims=" %%d in ('dir maglev\ways /ad /b') do (makeobj pak96 ./compiled/ ./maglev/ways/%%d/)
 
 echo.
 echo -------------------------------------------------------
 echo Compiling monorails...
-makeobj.exe pak96 ./compiled/ ./monorail/buildings/
+echo -------------------------------------------------------
+for /f "delims=" %%d in ('dir monorail /ad /b') do (makeobj pak96 ./compiled/ ./monorail/%%d/)
 
 echo.
 echo -------------------------------------------------------
 echo Compiling others...
-makeobj.exe pak96 ./compiled/ ./other/powerlines/
-makeobj.exe pak96 ./compiled/ ./other/powerlines/bridges/
-makeobj.exe pak96 ./compiled/ ./other/powerlines/tunnels/
+echo -------------------------------------------------------
+for /f "delims=" %%d in ('dir other /ad /b') do (makeobj pak96 ./compiled/ ./other/%%d/)
+for /f "delims=" %%d in ('dir other\powerlines /ad /b') do (makeobj pak96 ./compiled/ ./other/powerlines/%%d/)
 
 echo.
 echo -------------------------------------------------------
 echo Compiling railroad...
-makeobj.exe pak96 ./compiled/ ./rail/buildings/
-makeobj.exe pak96 ./compiled/ ./rail/signs/
-makeobj.exe pak96 ./compiled/ ./rail/vehicles/
-makeobj.exe pak96 ./compiled/ ./rail/wayobjs/
-makeobj.exe pak96 ./compiled/ ./rail/ways/bridges/
+echo -------------------------------------------------------
+for /f "delims=" %%d in ('dir rail /ad /b') do (makeobj pak96 ./compiled/ ./rail/%%d/)
+for /f "delims=" %%d in ('dir rail\ways /ad /b') do (makeobj pak96 ./compiled/ ./rail/ways/%%d/)
 
 echo.
 echo -------------------------------------------------------
 echo Compiling narrowgauge railroad...
-makeobj.exe pak96 ./compiled/ ./rail-narrow/buildings/
+echo -------------------------------------------------------
+for /f "delims=" %%d in ('dir rail-narrow /ad /b') do (makeobj pak96 ./compiled/ ./rail-narrow/%%d/)
 
 echo.
 echo -------------------------------------------------------
 echo Compiling road transport...
-makeobj.exe pak96 ./compiled/ ./road/vehicles/
+echo -------------------------------------------------------
+for /f "delims=" %%d in ('dir road /ad /b') do (makeobj pak96 ./compiled/ ./road/%%d/)
 
 echo.
 echo -------------------------------------------------------
 echo Compiling trams...
-makeobj.exe pak96 ./compiled/ ./tram/vehicles/
-makeobj.exe pak96 ./compiled/ ./tram/wayobjs/
+echo -------------------------------------------------------
+for /f "delims=" %%d in ('dir tram /ad /b') do (makeobj pak96 ./compiled/ ./tram/%%d/)
 
 echo.
 echo -------------------------------------------------------
 echo Compiling naval transport...
-makeobj.exe pak96 ./compiled/ ./water/buildings/
-makeobj.exe pak96 ./compiled/ ./water/vehicles/
-makeobj.exe pak96 ./compiled/ ./water/ways/
-makeobj.exe pak96 ./compiled/ ./water/ways/bridges/
-makeobj.exe pak96 ./compiled/ ./water/ways/tunnels/
+echo -------------------------------------------------------
+for /f "delims=" %%d in ('dir water /ad /b') do (makeobj pak96 ./compiled/ ./water/%%d/)
+for /f "delims=" %%d in ('dir water\ways /ad /b') do (makeobj pak96 ./compiled/ ./water/ways/%%d/)
 
 echo.
 echo =====================
