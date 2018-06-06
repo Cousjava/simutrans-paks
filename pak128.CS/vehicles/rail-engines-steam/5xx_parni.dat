@@ -205,22 +205,39 @@ emptyimage[sw]=534_0_5.0.7,0,4
 -----------------------------------
 
 obj=vehicle
-cost=2622600
+cost=2622600		# Mela by byt vyrazne levnejsi nez 555.1 (DRB 50), kvuli valecnym usporam, i na provoz a udrzbu, 150000 říšských marek (1 marka = 10 korun)
 speed=80
-weight=85
+weight=84		# 84,3
 runningcost=422
 fixed_cost=2161
-name=CSD_555.0_Nemka
-intro_year=1942
-retire_year=1968
+name=CSD_555.0_Nemka	# DRB rada 52 Kriegslokomotive
+intro_month=9		# Prvni vyrobeny kus v Nemecku 12. 9. 1942
+intro_year=1942		# U protektoratnich drah az od 1.1.1943
+#retire_year=1950	# produkce pokračovala i po válce až do počátku 50. let
+retire_month=6
+retire_year=1973	# Poslední uhelná 555.0259 byla zrušena 15.5.1973 v České Lípě.
 waytype=track
 engine_type=steam
-power=1216
+#power=1216		# http://parniloko.wz.cz/web/loko/rady/500/5550/5550b.html
+power=1192		# Indikovany vykon 1620 koní (wikipedia)
 copyright=TommPa9
 smoke=Steam2
 length=7
 gear=110
-constraint[next][0]=CSD_930.2
+constraint[next][0]=CSD_930.2	# Puvodni tednry z Floridsdorfu i rekonstrukce z 932.1
+#constraint[next][1]=CSD_932.1	# Puvodni tendry Vanderbildt
+#constraint[next][2]=CSD_926.1	# Puvodni tendry od rady 50 
+#upgrade[0]=CSD_555.3_Mazutka	# rekonstrukce od 25. září 1963 do konce roku 1964, tendry 930.3, 86.6 tun, 16 t/napravu, vykon o 20-25% vic (1450 kW), vetsinou bez usmernovacich plechu
+				# poslední byla vyřazena v roce 1972 ve Zdicích					(wikipedia)
+				# Poslední dojezdila kralupská 555.3096, která vyhasla dne 17.11.1970.		(http://parniloko.wz.cz/web/loko/rady/500/5550/5550b.html)
+				# administrativně byly jako poslední vyřazeny 555.3011 a 3261 dne 10.8.1973.	(http://parniloko.wz.cz/web/loko/rady/500/5550/5550b.html)
+
+# extended
+axles=6
+axle_load=15		# podle rady lokomotivy
+bidirectional=1		# Mohla jezdit tendrem napred naplno
+#tractive_effort=???	# max
+# Na vodorovné trati utáhla vlak o hmotnosti 635 t rychlostí 80 km/h, na stoupání 1% 565 t rychlostí 40 km/h a na 2% 475 t rychlostí 25 km/h. 
 
 emptyimage[w]=555.0.0,0,4
 emptyimage[nw]=555.0.1,0,4
@@ -231,23 +248,32 @@ emptyimage[se]=555.0.5,0,4
 emptyimage[s]=555.0.6,0,4
 emptyimage[sw]=555.0.7,0,4
 -----------------------------------
+
 obj=vehicle
 cost=2671500
 speed=80
 weight=87
 runningcost=422
 fixed_cost=2161
-name=CSD_555.1
+name=CSD_555.1		# DRB rada 50
+intro_month=4
 intro_year=1939
-retire_year=1971
+#retire_year=1960	# konec vyroby	1959
+retire_year=1972	# vyrazeni cca	1971
 waytype=track
 engine_type=steam
-power=1195
+power=1195		# indikovany vykon 1625 koni
 copyright=TommPa9
 smoke=Steam2
 length=7
 gear=110
-constraint[next][0]=CSD_930.2
+constraint[next][0]=CSD_930.2	# Sravne ma byt 926.1
+
+# extended
+axles=6
+axle_load=15		# podle rady lokomotivy
+bidirectional=1		# Mohla jezdit tendrem napred naplno
+#tractive_effort=???	# max
 
 emptyimage[w]=555_1.0.0,0,4
 emptyimage[nw]=555_1.0.1,0,4
@@ -258,7 +284,6 @@ emptyimage[se]=555_1.0.5,0,4
 emptyimage[s]=555_1.0.6,0,4
 emptyimage[sw]=555_1.0.7,0,4
 ---------------------------------
-
 
 obj=vehicle
 cost=2961600		# 902 675 Kčs včetně tendru
@@ -282,7 +307,7 @@ smoke=Steam2
 length=7
 gear=123
 constraint[next][0]=CSD_935.2
-#constraint[next][1]=CSD_930.2
+constraint[next][1]=CSD_930.2
 # vyroba 935.2 az od 1952 do te doby se jako nahradni pouzival 930.2
 
 # extended

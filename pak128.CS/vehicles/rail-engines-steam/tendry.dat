@@ -269,7 +269,7 @@ length=5
 
 constraint[prev][0]=CSD_555.0_Nemka
 constraint[prev][1]=CSD_555.1
-#constraint[prev][2]=CSD_556.0_Stokr
+constraint[prev][2]=CSD_556.0_Stokr
 
 emptyimage[w]=555.1.0,0,4
 emptyimage[nw]=555.1.1,0,4
