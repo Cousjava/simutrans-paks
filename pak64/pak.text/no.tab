@@ -9,17 +9,8 @@
 #                              Language: no Norsk                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 5.01 2018                           #
+#                           Date Created: 12.06 2018                           #
 #                                                                              #
-#                                   authors:                                   #
-#                                    - An_dz                                   #
-#                   note: Verified where all texts are shown                   #
-#                                    - Dwachs                                  #
-#                                  - Flemmbrav                                 #
-#                                    - FrankP                                  #
-#                                 Daniel - NNW                                 #
-#                                     - PTM                                    #
-#                                    - prissi                                  #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -50,12 +41,12 @@ Bulk_StationBlg
 Bulk Vare Stasjon Byggning
 BusStop
 Buss stop
-Car_StationBlg
-Bil Stasjon Byggning
 CarDepot
 Bil Depo
 CarStop
 Innlastings bukt
+Car_StationBlg
+Bil Stasjon Byggning
 Control_StationBlg
 Stasjon Kontroll Bygning
 Fluid_StationBlg
@@ -66,16 +57,16 @@ Autohaus
 Bil selger
 Autohersteller
 Assmebly anlegg
+Cementmill
+Sement mølle
+Concretefactory
+Sement mixer
 bakery
 Bakeri
 brewery
 Bryggeri
 cannery
 Hermatikkfabrikk
-Cementmill
-Sement mølle
-Concretefactory
-Sement mixer
 cow_farm
 Kyr gårdsplass
 fish_pond
@@ -88,14 +79,10 @@ Matfabrikk
 #_____________________________________good______________________________________
 Autos
 biler
-beer
-øl
 Bretter
 planker
 Buecher
 bøker
-canned_food
-Kunnet Mat
 Cement
 Sement
 Chemicals
@@ -104,12 +91,6 @@ Concrete
 betong
 Eisenerz
 jernmalm
-fish
-fisk
-flour
-mel
-food
-mat
 Gasoline
 bensin
 Holz
@@ -138,6 +119,16 @@ Stahl
 stål
 Stone
 stein
+beer
+øl
+canned_food
+Kunnet Mat
+fish
+fisk
+flour
+mel
+food
+mat
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
 choose_point

@@ -9,17 +9,8 @@
 #                              Language: ro Romana                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                            Date Created: 5.01 2018                           #
+#                           Date Created: 12.06 2018                           #
 #                                                                              #
-#                                   authors:                                   #
-#                                    - An_dz                                   #
-#                   note: Verified where all texts are shown                   #
-#                                    - Dwachs                                  #
-#                                  - Flemmbrav                                 #
-#                                    - FrankP                                  #
-#                                 Daniel - NNW                                 #
-#                                     - PTM                                    #
-#                                    - prissi                                  #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -136,12 +127,6 @@ Theatre
 Teatru
 Windmill
 Moarã de vânt
-#__________________________________dummy_info___________________________________
-#__________________________________dummy_info___________________________________
-factory_Kohlegrube_details
-<title>Descriere minã de cãrbune<\title><h1>Minã de cãrnune<\h1><p>Cãrbunele este materialul prim care este folosit în fabricarea oþelului ºi sticlei.<\p>
-factory_Nutzwald_details
-<title>Descriere pepinierã<\title><h1>Pepinierã<\h1><p>Se cresc puieþi care la maturitate sunt tãiaþi, dar dupã fiecare copac tãiat se planteazã altu.<\p>
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -150,38 +135,18 @@ Autohaus
 Salon auto
 Autohersteller
 Uzinã de automobile
-bakery
-Brutãrie
-brewery
-Fabricã de înbuteliat
 Buchgrosshandel
 Depozit en-gros cãrþi
-cannery
-Fabricã de conserve
-Cementmill
-Uzinã ciment
 CHEMIST
 Fabricã de chimicale
+Cementmill
+Uzinã ciment
 Concretefactory
 Uzinã beton
-cow_farm
-Fermã de vaci
-dairy
-Lãptãrie
 Druckerei
 Tipografie
 Erzbergwerk
 Minã minereu de fier
-fish_pond
-Heleºteu
-fish_swarm
-Roi de peºti
-food_processing_plant
-Fabricã de alimente
-grain_farm
-Câmpie de grâne
-grain_mill
-Moarã
 Kohlegrube
 Minã cãrbune
 Kohlekraftwerk
@@ -212,22 +177,44 @@ Stahlwerk
 Uzinã metalurgicã
 Stonequarry
 Minã piatrã
-supermarket
-Supermarket
 TANKE
 Benzinãrie
+bakery
+Brutãrie
+brewery
+Fabricã de înbuteliat
+cannery
+Fabricã de conserve
+cow_farm
+Fermã de vaci
+dairy
+Lãptãrie
+fish_pond
+Heleºteu
+fish_swarm
+Roi de peºti
+food_processing_plant
+Fabricã de alimente
+grain_farm
+Câmpie de grâne
+grain_mill
+Moarã
+supermarket
+Supermarket
+#_________________________________factory_info__________________________________
+#_________________________________factory_info__________________________________
+factory_Kohlegrube_details
+<title>Descriere minã de cãrbune<\title><h1>Minã de cãrnune<\h1><p>Cãrbunele este materialul prim care este folosit în fabricarea oþelului ºi sticlei.<\p>
+factory_Nutzwald_details
+<title>Descriere pepinierã<\title><h1>Pepinierã<\h1><p>Se cresc puieþi care la maturitate sunt tãiaþi, dar dupã fiecare copac tãiat se planteazã altu.<\p>
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
 automobile
-beer
-bere
 Bretter
 scândurã
 Buecher
 cãrþi
-canned_food
-conserve
 Cement
 ciment
 Chemicals
@@ -236,26 +223,14 @@ Concrete
 beton
 Eisenerz
 fier
-fish
-peºte
-flour
-fãinã
-food
-alimente
 Gasoline
 carburant
-grain
-grâne
 Holz
 bustean
 Kohle
 cãrbune
-meat
-carne
 Medicine
 Medicamente
-milk
-lapte
 Moebel
 mobilã
 None
@@ -276,6 +251,22 @@ Stahl
 oþel
 Stone
 piatrã
+beer
+bere
+canned_food
+conserve
+fish
+peºte
+flour
+fãinã
+food
+alimente
+grain
+grâne
+meat
+carne
+milk
+lapte
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Latschenkiefer
@@ -354,6 +345,8 @@ H-Trans-Tigress-II-Back
 Automotor H-Trans Tigress II (spate)
 H-Trans-Tigress-II-Front
 Automotor H-Trans Tigress II (front)
+HVPosttransporter
+Maºinã ot. transport poºtã
 Holzanhaenger
 Remorcã pt. transport buºteni
 Holztransporter
@@ -370,8 +363,6 @@ Horses
 Cai
 Horsewoodcariage
 Cãruþã pt. transport busteni
-HVPosttransporter
-Maºinã ot. transport poºtã
 Kohleanhaenger
 Remorcã pt. transport cãrbune
 Kohletransporter
@@ -428,14 +419,14 @@ Stoneanhaenger
 Remorcã pt. transport piatrã
 Stonetransporter
 Maºinã pt. transport piatrã
-Tanklastzug
-Maºinã pt. transport carburanþi
 TPBeiwagen
 Vagon transport persoane tip TPI VT98
 TPPassagierwagen
 Vagon transport persoane
 TPSchienenbus
 Locomotiva TPI VT98
+Tanklastzug
+Maºinã pt. transport carburanþi
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 asphalt_road

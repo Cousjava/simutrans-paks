@@ -9,20 +9,8 @@
 #                              Language: ko Korean                             #
 #                                Encoding: UTF-8                               #
 #                                Font : cyr.bdf                                #
-#                            Date Created: 5.01 2018                           #
+#                           Date Created: 12.06 2018                           #
 #                                                                              #
-#                                   authors:                                   #
-#                                    - An_dz                                   #
-#                   note: Verified where all texts are shown                   #
-#                                    - Dwachs                                  #
-#                                  - Flemmbrav                                 #
-#                                    - FrankP                                  #
-#                               J. H. Lee - JHLee                              #
-#                                 Daniel - NNW                                 #
-#                                     - PTM                                    #
-#                             Olbarn Soebl - olbarn                            #
-#                                     - pika                                   #
-#                                    - prissi                                  #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -31,12 +19,8 @@ ClassicRail
 콘크리트 철도 교량
 ClassicRoad
 콘크리트 도로 교량
-koka_Bridge_single
-고가 철도
 MaglevBridge
 자기부상철도 교량
-mlm_concrete_bridge
-콘크리트 모노레일 교량
 ModernRoad
 현대식 도로 교량 (프리스트레스드[PS] 콘크리트)
 MonorailRamp
@@ -47,12 +31,16 @@ Schiffhebewerk
 선박승강장치
 SteelRail
 철골구조 철도 교량
-tb_classic_road
-콘크리트 도로 교량
 ViaductRail
 벽돌 고가교
 WoodenRoad
 목재 도로 교량
+koka_Bridge_single
+고가 철도
+mlm_concrete_bridge
+콘크리트 모노레일 교량
+tb_classic_road
+콘크리트 도로 교량
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 00_01_CITY
@@ -105,12 +93,12 @@ A6_DOME
 오래된 대성당\n\n거의 천년동안 존재하는\n이 도시의 심장.\n
 AirDepot
 격납고 (1900년)
-AirportShed1930
-항공우편 보관소 (1901년)
 AirStop
 탑승구
 AirTerminal477
 공항 터미널 (1950년)
+AirportShed1930
+항공우편 보관소 (1901년)
 Avila_Big_StationBlg
 대형역 건물
 Avila_Small_StationBlg
@@ -125,16 +113,6 @@ Bulk_StationBlg
 석탄 취급역
 BusStop
 버스 정류장
-Car_StationBlg
-차량 선적 주차장
-CarDepot
-도로 차량용 차고지
-CarStop
-화물 하역장
-CattlePorch
-소 목장
-ChannelStop
-부두
 COM_00_01
 작은 가게\n\n저렴한 가격과 친절한 서비스가 이 작은 가게의 주차장을 가득차게 만드는 이유입니다.
 COM_00_02
@@ -191,6 +169,16 @@ COM_03_19
 텔레비전 스튜디오\n\n여러 개의 스튜디오가 안에 있다.
 COM_03_20
 12층 오피스 건물\n건물 안에는 많은 회사들이 입주해 있다. 건물 관리자는 거의 거기에 없지만, 모든 것을 원활하게 운영합니다.
+CarDepot
+도로 차량용 차고지
+CarStop
+화물 하역장
+Car_StationBlg
+차량 선적 주차장
+CattlePorch
+소 목장
+ChannelStop
+부두
 Control_StationBlg
 철도 제어 센터
 DenkDirk
@@ -223,14 +211,14 @@ FreightShipStop
 부두
 FreightTrainStop
 화물역
-Gas_StationBlg
-가스 탱크
 GCG1TrainStop
 대형역 홀 왼편
 GCG2TrainStop
 대형역 홀 오른편
 GCGTrainStop
 철도역 홀
+Gas_StationBlg
+가스 탱크
 Goods_StationBlg
 창고
 Gymnasium
@@ -241,18 +229,16 @@ IND_00_01
 이 창고는 제품... 또는 스파이 스릴러 영화를 보관하고 있습니다.
 LargeShipStop
 대형 크레인 부두
-leftShipStop
-대형 화물 크레인
 LeuchtturmShipStop
 등대 선착장
 Lighthouse
 등대\n\n한때 해안에서 가장 밝았지만, 요즘은 기지국으로 활용하고, 관광객에게 엽서를 판매하기 위해 보존되었습니다.
 LongBusStop
 긴 버스 정류장
-MainTerminal1930
-메인 터미널 건물 (1930년)
 MHzSmallStation
 철도역 역사
+MainTerminal1930
+메인 터미널 건물 (1930년)
 ModernAirTerminal477
 현대식 공항 터미널
 MonorailDepot
@@ -263,6 +249,12 @@ MonorailGround
 모노레일 차량기지 토대
 OldTownhall
 오래된 시청\n\n이 건물은 예전에 시청으로 사용했습니다. 지금은 박물관과 커피숍으로 사용되고 있습니다.
+PSFreightTrainStop
+화물 철도역
+PSHall1TrainStop
+신문 가판대가 있는 철도역 홀
+PSHall2TrainStop
+철도역 홀
 Patricks_Rock
 성 패트릭의 돌\n\n
 PlainAirStop
@@ -271,24 +263,16 @@ PostOffice
 우체국
 PostStop
 우체통
-PSFreightTrainStop
-화물 철도역
-PSHall1TrainStop
-신문 가판대가 있는 철도역 홀
-PSHall2TrainStop
-철도역 홀
-rampShipStop
-보트 선착장
-Raven_Kirche
-St. Meinrad 교회\n\n전설에 따르면 은자 St. Meinrad는 2 마리의 까마귀와 함께 지냈다고 전해진다.\n그가 살해당했을 때, 두 까마귀는 살인자들을 따라가서 범인을 밝혔다.\n오늘날, 그의 오두막은 Einsiedeln 수도원으로 사용되고 있다.
 RES_00_01
 이 작은 집은 평범해보입니다. 하지만 이 건물은 Simutrans 우주의 중심에 있습니다. 이 집은 Simutrans에서 처음으로 건설된 건물입니다.
-Residenz
-주택\n\n이 주택은 요가와\n명상을 가르치는 지역의 요가 전문가가\n머뭅니다.\n이곳에는 Bong이라고 불리는\n많은 것들이 있습니다.\n
-rightShipStop
-잔교가 있는 항구
 RUIN_0
 중세의 성\n\n이 성은 폐허가\n되었지만 성의 일부분이\n재건되었습니다.\n그리고 지금은 성 전체가\n박물관이 되었습니다.\n이곳의 경치는\n환상적이며, 이 경치를 보려면\n많은 계단만 올라가야 합니다.\n
+Raven_Kirche
+St. Meinrad 교회\n\n전설에 따르면 은자 St. Meinrad는 2 마리의 까마귀와 함께 지냈다고 전해진다.\n그가 살해당했을 때, 두 까마귀는 살인자들을 따라가서 범인을 밝혔다.\n오늘날, 그의 오두막은 Einsiedeln 수도원으로 사용되고 있다.
+Residenz
+주택\n\n이 주택은 요가와\n명상을 가르치는 지역의 요가 전문가가\n머뭅니다.\n이곳에는 Bong이라고 불리는\n많은 것들이 있습니다.\n
+STADIUM2
+대형 경기장\n\n국제 행사들이\n여기에서 개최됩니다.\n\n
 SandStationMHz
 승강장 없는 정거장
 ShipDepot
@@ -297,8 +281,6 @@ ShipDepotEW
 조선소
 ShipStop
 항구
-STADIUM2
-대형 경기장\n\n국제 행사들이\n여기에서 개최됩니다.\n\n
 Tennis_Court
 테니스 코트\n\n근처 주민들은 끊임없는 고통이 들리지 않고, 밖에 나가 앉을 수 있는 겨울철을 기다립니다.
 Terminal1930
@@ -325,38 +307,30 @@ Vorplatz
 철도역 앞마당
 Windmill
 역사적인 풍차\n\n편력기사(돈키호테)가 공격한 괴물.
+leftShipStop
+대형 화물 크레인
+rampShipStop
+보트 선착장
+rightShipStop
+잔교가 있는 항구
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
 구급차
 FordT
 포드 모델 T
-green_car
-녹색 승용차
 Motorrad
 오토바이
-orange_bus
-SimCo 버스
 Pickup
 작은 트럭
 Roadster
 지붕있는 로드스터
+green_car
+녹색 승용차
+orange_bus
+SimCo 버스
 yellow_car
 노란색 승용차
-#__________________________________dummy_info___________________________________
-#__________________________________dummy_info___________________________________
-factory_bakery_details
-빵집
-factory_brewery_details
-양조장
-factory_cannery_details
-통조림 공장
-factory_Cementmill_details
-시멘트 공장
-factory_Sandquarry_details
-모래 채석장
-factory_Stonequarry_details
-채석장
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -369,44 +343,22 @@ Autohaus
 자동차 대리점
 Autohersteller
 자동차 공장
-bakery
-빵공장
-brewery
-양조장
 Buchgrosshandel
 서점
-cannery
-통조림 공장
+CHEMIST
+약국
 Cementmill
 시멘트 공장
 ChemicalPlant
 화학 플랜트
-CHEMIST
-약국
 Concretefactory
 콘크리트 공장
-cow_farm
-소 목장
-dairy
-유제품 공장
 Druckerei
 인쇄소
 Erzbergwerk
 철광석 광산
-fish_pond
-낚시터
-fish_swarm
-어장
-food_processing_plant
-식품가공 공장
 Geokraftwerk
 지열 발전소
-grain_farm
-곡물 농장
-grain_mill
-제분소
-grain_windmill
-풍차 제분소
 Incinerator
 소각장
 Kohlegrube
@@ -433,8 +385,6 @@ Oelkraftwerk
 석유 발전소
 Oelpumpe
 석유 펌프
-old_farm
-농장
 Papierfabrik
 제지공장
 Pharmaceutics
@@ -449,34 +399,68 @@ SaegewerkMHz
 목수 작업장
 Sandquarry
 모래 채석장
-scrap_yard
-쓰래기장
 Stahlwerk
 제철소
 Stonequarry
 채석장
-supermarket
-슈퍼마켓
 TANKE
 주유소
-thermisches_Solarkraftwerk
-태양열발전소
 Turmkraftwerk
 탑이 있는 태양열발전소
 Windkraftwerk
 풍력발전소
+bakery
+빵공장
+brewery
+양조장
+cannery
+통조림 공장
+cow_farm
+소 목장
+dairy
+유제품 공장
+fish_pond
+낚시터
+fish_swarm
+어장
+food_processing_plant
+식품가공 공장
+grain_farm
+곡물 농장
+grain_mill
+제분소
+grain_windmill
+풍차 제분소
+old_farm
+농장
+scrap_yard
+쓰래기장
+supermarket
+슈퍼마켓
+thermisches_Solarkraftwerk
+태양열발전소
+#_________________________________factory_info__________________________________
+#_________________________________factory_info__________________________________
+factory_Cementmill_details
+시멘트 공장
+factory_Sandquarry_details
+모래 채석장
+factory_Stonequarry_details
+채석장
+factory_bakery_details
+빵집
+factory_brewery_details
+양조장
+factory_cannery_details
+통조림 공장
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
 자동차
-beer
-맥주
 Bretter
 나무판자
 Buecher
 책
-canned_food
-통조림
 Cement
 시멘트
 Chemicals
@@ -485,26 +469,14 @@ Concrete
 콘크리트
 Eisenerz
 철광석
-fish
-물고기
-flour
-밀가루
-food
-즉석식품
 Gasoline
 휘발유
-grain
-곡물
 Holz
 목재
 Kohle
 석탄
-meat
-육류
 Medicine
 약
-milk
-우유
 Moebel
 가구
 None
@@ -527,10 +499,38 @@ Stahl
 강철
 Stone
 석재
+beer
+맥주
+canned_food
+통조림
+fish
+물고기
+flour
+밀가루
+food
+즉석식품
+grain
+곡물
+meat
+육류
+milk
+우유
 waste
 쓰레기
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
+Hochsitz1
+사슴 서식지
+Hochsitz2
+사슴 서식지
+See1
+오리가 사는 호수
+See2
+호수
+See3
+호수
+See4
+호수
 bushes
 덤불
 deco_rock
@@ -543,22 +543,10 @@ gemsen
 알프스산양
 gooses
 거위
-Hochsitz1
-사슴 서식지
-Hochsitz2
-사슴 서식지
 moles
 두더쥐
 rocks
 돌
-See1
-오리가 사는 호수
-See2
-호수
-See3
-호수
-See4
-호수
 sheeps
 양
 #___________________________________menu_text___________________________________
@@ -571,6 +559,8 @@ Couple
 커플
 Cyclist
 자전거운전자
+Woman
+여성
 pedestrian_1
 보행자
 pedestrian_2
@@ -583,8 +573,6 @@ pedestrian_child
 어린이
 pedestrian_dog
 개
-Woman
-여성
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -605,8 +593,6 @@ rolls
 롤
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
-choose_point
-정차 분류 표지
 ChooseSignals
 경로 선택 신호기
 ChooseSignalsMonorail
@@ -621,10 +607,6 @@ NoAirEntry
 "진입금지" 유도로 표지
 NoEntry
 진입 금지 표지
-preSignals
-사전 신호기 (2 폐색 구간)
-preSignalsMonorail
-사전 신호기 (2 폐색 구간)
 RailClose
 진입 금지 표지
 Railgate
@@ -635,6 +617,12 @@ Signals
 철도 신호기
 SignalsMonorail
 신호기
+choose_point
+정차 분류 표지
+preSignals
+사전 신호기 (2 폐색 구간)
+preSignalsMonorail
+사전 신호기 (2 폐색 구간)
 traffic_light
 도로 신호등
 #_____________________________________tree______________________________________
@@ -705,6 +693,8 @@ Tree5
 향나무\n
 Tree6
 전나무\n
+Willow
+버드나무\n
 tropictree1
 열대나무\n
 tropictree2
@@ -723,8 +713,6 @@ tropictree8
 열대나무\n
 tropictree9
 열대나무\n
-Willow
-버드나무\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel
@@ -793,20 +781,8 @@ BB1280
 프랑스 국유철도 BB1280 전기 기관차
 BB200
 프랑스 국유철도 BB200
-Be5-7
-BLS Be 5/7 전기 기관차
-Blimp
-비행선
-Book_Trike
-책 운송 트럭
-Boxcar
-유개차
 BR01
 독일국철 BR01 증기 기관차
-Br118DR
-동독철도(BR) BR118
-Br234
-독일철도 Br 234
 BR38
 독일국철 BR38 증기 기관차
 BR38-Tender
@@ -815,22 +791,34 @@ BR39
 독일국철 BR39
 BR45
 독일국철 BR45
+BR85
+독일국철 Br86\n\n
+BRV36
+독일국철 BRV36 디젤 기관차
+Be5-7
+BLS Be 5/7 전기 기관차
+Blimp
+비행선
+Book_Trike
+책 운송 트럭
+Boxcar
+유개차
+Br118DR
+동독철도(BR) BR118
+Br234
+독일철도 Br 234
 Br614back
 독일국철 BR614 (후방)
 Br614car
 독일국철 BR614 (중간)
 Br614front
 독일국철 BR614
-BR85
-독일국철 Br86\n\n
 Bretteranhaenger
 WF Ultd. 목재 트레일러
 Brettertransporter
 WF Ultd. 목재 운반 트럭
 Bretterwagen
 VT 목재 평판화차
-BRV36
-독일국철 BRV36 디젤 기관차
 Buchanhaenger
 책 화물차
 Buchtrailer
@@ -849,6 +837,8 @@ Bulkcarriage
 마차용 화물차
 Bus
 H-Trans 버스
+CC7100
+프랑스 국유철도 CC7100
 CarFlat
 자동차 수송차
 Cargosprinter-Front
@@ -857,8 +847,6 @@ Cargosprinter-Mittel
 Cargosprinter 화차
 Cargosprinter-Steuer
 Cargosprinter (후방)
-CC7100
-프랑스 국유철도 CC7100
 Cementtrailer
 시멘트 트레일러
 Class86
@@ -897,18 +885,18 @@ Cooling_Truck
 냉장탑차
 Cooling_Waggon
 냉장화차
-DaimlerStoll
-Daimler Stoll 버스
 DC-3
 더글러스 DC-3
+DaimlerStoll
+Daimler Stoll 버스
 Deponielaster
 쓰레기 수거 트럭
 Deponielaster2
 쓰레기 수거 트럭
-Doubledeck_city_bus
-2층 버스
 DoubleDecker
 2층 객차
+Doubledeck_city_bus
+2층 버스
 E44
 독일국철 BrE44
 Eb3-5
@@ -979,12 +967,14 @@ H-Trans-Tigress-II-Back
 H-Trans Tigress II (후방)
 H-Trans-Tigress-II-Front
 H-Trans Tigress II (전방)
+HJMAvia
+Avia 세미트럭
+HVPosttransporter
+DIBU / H-Trans 우편 배달차
 Hadley-Page-V1500
 Handley Page V/1500
 Heavy_ore_truck
 대형 덤프 트럭
-HJMAvia
-Avia 세미트럭
 Hochbordwagen
 무개화차 (18t)
 Holzanhaenger
@@ -1009,8 +999,6 @@ Horsewoodcariage
 목재 마차
 Hunslet
 Hunslet 증기 기관차
-HVPosttransporter
-DIBU / H-Trans 우편 배달차
 ICE_TD-back
 독일국철 ICE-TD (후미)
 ICE_TD-car
@@ -1021,10 +1009,6 @@ IL-76
 일류신 IL-76 
 JNR_C11
 일본국철 C11
-JR_9600
-일본국철 9600
-JR_9600_tender
-일본국철 9600 탄수차
 JRE-Mp233
 동일본 여객철도 E233 객차
 JRE-Mpp233
@@ -1035,6 +1019,10 @@ JRE-T233cb
 동일본 여객철도 E233 (선두)
 JRE-Tcf233
 동일본 여객철도 E233 (후미)
+JR_9600
+일본국철 9600
+JR_9600_tender
+일본국철 9600 탄수차
 Ju52
 융커스 Ju 52
 JumboCruiser
@@ -1045,12 +1033,6 @@ JumboCruiserBack2
 대형 크루저 버스 객차
 JumboJet
 보잉 747
-kkStB_tender
-왕립 오스트리아 제국 국영 철도(kkStB) 탄수차
-kkStB110
-왕립 오스트리아 제국 국영 철도(kkStB) 110형 증기 기관차
-kkStB91
-왕립 오스트리아 제국 국영 철도(kkStB) 91형 증기 기관차
 Kohleanhaenger
 H-Trans 벌크 트레일러
 Kohletransporter
@@ -1069,18 +1051,16 @@ Lockhead_Tristar
 록히드 L-1011 트라이스타
 Lockheed10-Electra
 록히드 모델 10 Electra
-logs
-나무 뗏목
 Lowa
 T-26
 Lowa_Anhaenger
 T-26 객차
 Mack_Truck_01
 TMC 세미트럭
-Mailcontainerwagon
-우편차
 MailExpress
 우편 화물기
+Mailcontainerwagon
+우편차
 Mailtrailer
 우편 트레일러
 Mailwagon
@@ -1095,12 +1075,12 @@ Moebelwagen
 VT Vienna 가구 화물차
 Muellschiff
 쓰레기 운반선
-NeuOelwagen
-유조차
 NS1000
 NS 1000
 NS1600
 NS-1600
+NeuOelwagen
+유조차
 Oelanhaenger
 H-Trans 유조 탱크 트레일러
 Oelwagen
@@ -1109,8 +1089,6 @@ Oilbarge
 유류 바지선
 Oiltrailer
 석유 트레일러
-old_open_car
-구식 무개화차
 OldOil
 유조차
 Ox2
@@ -1143,26 +1121,22 @@ PrPostwagen
 SingCo 구식 우편차
 RenaultTH5
 르노 TH5 세미 트레일러
-Sandanhaenger
-WF Ultd. 벌크 트레일러
-Sandtransporter
-WF Ultd. 덤프 트럭
-schooner
-스쿠너
-Schooner_Bark
-바컨틴
 SD40-2-back
 EMD SD40-2 디젤 기관차 (후미)
 SD40-2-front
 EMD SD40-2 디젤 기관차 (선두)
-Serj-Mini
-대형택시
-setra_S10
-Setra S10 버스
-SlowFerry
-H-Trans 여객선
 SMPoiltruck
 SMP 탱크로리
+Sandanhaenger
+WF Ultd. 벌크 트레일러
+Sandtransporter
+WF Ultd. 덤프 트럭
+Schooner_Bark
+바컨틴
+Serj-Mini
+대형택시
+SlowFerry
+H-Trans 여객선
 Stahlanhaenger
 H-Trans 철강 트레일러
 Stahltransporter
@@ -1185,18 +1159,10 @@ T21_bus
 Empire T-21 버스
 T24
 T-24 동차
-Tanklastzug
-H-Trans 탱크로리
-Tatra-T4
-Tatra T-4 동차
-Tatra-T4_Wagon
-Tatra T-4 객차
 TB13
 T-13 객차
 TB24
 T-24 객차
-teaclipper
-쾌속 범선 Clipper
 TIRsteel
 세미트레일러
 TPBeiwagen
@@ -1205,6 +1171,12 @@ TPPassagierwagen
 TPI Lopomo 2층객차
 TPSchienenbus
 VT98 레일버스
+Tanklastzug
+H-Trans 탱크로리
+Tatra-T4
+Tatra T-4 동차
+Tatra-T4_Wagon
+Tatra T-4 객차
 Tram_GT6_Ende
 GT-6 후방 전기동차
 Tram_GT6_Kopf
@@ -1219,8 +1191,6 @@ Viggen
 소형 여객선
 VolvoFH12
 볼보 FH12
-wastewagon
-폐기물 무개화차
 X2000back
 스웨덴국철 X2000 후방 기관차
 X2000car
@@ -1233,8 +1203,36 @@ XTest
 Kirayami X-1
 Zeppelin
 제플린 비행선
+kkStB110
+왕립 오스트리아 제국 국영 철도(kkStB) 110형 증기 기관차
+kkStB91
+왕립 오스트리아 제국 국영 철도(kkStB) 91형 증기 기관차
+kkStB_tender
+왕립 오스트리아 제국 국영 철도(kkStB) 탄수차
+logs
+나무 뗏목
+old_open_car
+구식 무개화차
+schooner
+스쿠너
+setra_S10
+Setra S10 버스
+teaclipper
+쾌속 범선 Clipper
+wastewagon
+폐기물 무개화차
 #______________________________________way______________________________________
 #______________________________________way______________________________________
+Kanal
+운하
+MaglevTrack
+자기부상철도 선로
+MaglevTrackElevated
+고가 자기부상철도 선로
+Powerline
+송전선
+Rillenschienen
+경전철 선로
 asphalt_road
 아스팔트 도로
 city_road
@@ -1249,20 +1247,10 @@ elevated_monorail
 고가 모노레일 선로
 gavel_road
 자갈 도로
-Kanal
-운하
-MaglevTrack
-자기부상철도 선로
-MaglevTrackElevated
-고가 자기부상철도 선로
 mip_cobblestone_road
 MIP 자갈 도로
 monorail
 모노레일 선로
-Powerline
-송전선
-Rillenschienen
-경전철 선로
 river
 항해 가능한 강
 river2

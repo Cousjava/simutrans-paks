@@ -6,22 +6,11 @@
 #                                                                              #
 #                Simutrans Scenario Specific Translation File                  #
 #                                Scenario: pak64                               #
-#                            Language: ce C-English                            #
+#                          Language: ce Simple English                         #
 #                                Encoding: ASCII                               #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 5.01 2018                           #
+#                           Date Created: 12.06 2018                           #
 #                                                                              #
-#                                   authors:                                   #
-#                                    - An_dz                                   #
-#                   note: Verified where all texts are shown                   #
-#                                    - Dwachs                                  #
-#                                  - Flemmbrav                                 #
-#                                    - FrankP                                  #
-#                                 Daniel - NNW                                 #
-#                                     - PTM                                    #
-#                                   - neroden                                  #
-#                               note: Programmer                               #
-#                                    - prissi                                  #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -30,12 +19,8 @@ ClassicRail
 Concrete Railroad Bridge
 ClassicRoad
 Concrete Road Bridge
-koka_Bridge_single
-Elevated Railroad Track
 MaglevBridge
 Maglev Bridge
-mlm_concrete_bridge
-Concrete Monorail Bridge
 ModernRoad
 Modern Road Bridge
 MonorailRamp
@@ -48,6 +33,10 @@ ViaductRail
 Brick and Stone Viaduct Railroad Bridge
 WoodenRoad
 Wooden Road Bridge
+koka_Bridge_single
+Elevated Railroad Track
+mlm_concrete_bridge
+Concrete Monorail Bridge
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 00_01_CITY
@@ -94,12 +83,12 @@ A6_DOME
 Old Cathedral.  The very\nheart of this city for nearly\none thousand years.\n
 AirDepot
 Airplane Hangar
-AirportShed1930
-1930s-style Airport Shed
 AirStop
 Jetway
 AirTerminal477
 1970s-style Terminal Building
+AirportShed1930
+1930s-style Airport Shed
 Avila_Big_StationBlg
 Large Station Building
 Avila_Small_StationBlg
@@ -114,14 +103,6 @@ Bulk_StationBlg
 Coal Station
 BusStop
 Bus Stop\n
-Car_StationBlg
-Car Park
-CarDepot
-Garage for road vehicles.
-CarStop
-Truck Loading Bay
-ChannelStop
-Wharf
 COM_00_01
 Small Shop\n
 COM_00_02
@@ -184,6 +165,14 @@ COM_10_10
 Tall A-Frame House\n
 COM_10_11
 Townhouse Block\n
+CarDepot
+Garage for road vehicles.
+CarStop
+Truck Loading Bay
+Car_StationBlg
+Car Park
+ChannelStop
+Wharf
 Control_StationBlg
 Signal Control Tower
 DenkFlor
@@ -212,12 +201,12 @@ Fluid_StationBlg
 Oil Storage Tank
 FreightTrainStop
 Freight Station
-Gas_StationBlg
-Gas Storage Tank
 GCG1TrainStop
 Large Station Hall (Left)
 GCG2TrainStop
 Large Station Hall (Right)
+Gas_StationBlg
+Gas Storage Tank
 Goods_StationBlg
 Large Warehouse
 Gymnasium
@@ -260,14 +249,12 @@ IND_01_10
 Tools Factory\n
 LargeShipStop
 Large Dock with Crane
-leftShipStop
-Left Dock Section
 LeuchtturmShipStop
 Right Dock Section (Jetty)
-MainTerminal1930
-1930s-style Main Terminal Building
 MHzSmallStation
 Small Station Building
+MainTerminal1930
+1930s-style Main Terminal Building
 ModernAirTerminal477
 Modern Terminal Building
 MonorailDepot
@@ -278,6 +265,12 @@ MonorailGround
 Monorail Building Support
 OldTownhall
 Town Meeting Centre\n
+PSFreightTrainStop
+Platform
+PSHall1TrainStop
+Small Station Hall with News Stand
+PSHall2TrainStop
+Small Station Hall
 Patricks_Rock
 A geologic formation that\ninspires many artists.\n
 PlainAirStop
@@ -286,16 +279,6 @@ PostOffice
 Post Office
 PostStop
 Postbox
-PSFreightTrainStop
-Platform
-PSHall1TrainStop
-Small Station Hall with News Stand
-PSHall2TrainStop
-Small Station Hall
-rampShipStop
-Ramp for Docks
-Raven_Kirche
-Church of St.Meinrad. \nAccording to legend, the\nhermit St. Meinrad was\naccompanied by two\nravens.  When he was\nmurdered, the two ravens\nwere convicted. Today, the\nplace of his hut  is the\nEinsiedeln Monastery.\n
 RES_00_06
 A Little Fountain. Even if it\nis not as great as the one\nin Geneva, it delights\npeople walking around,\nespecially in the\nsummertime.\n
 RES_00_07
@@ -334,12 +317,14 @@ RES_02_16
 Luxury Apartments with a\nPenthouse.\n
 RES_10_04
 Old-style Country Home.\n
-Residenz
-Large Residence\n\nThis building is used to\nhouse students of the\nuniversity, if they cannot\nafford to live on their own.\n
-rightShipStop
-Left Dock Section (Jetty)
 RUIN_0
 Some very old ruins from\nthe age before now.\n
+Raven_Kirche
+Church of St.Meinrad. \nAccording to legend, the\nhermit St. Meinrad was\naccompanied by two\nravens.  When he was\nmurdered, the two ravens\nwere convicted. Today, the\nplace of his hut  is the\nEinsiedeln Monastery.\n
+Residenz
+Large Residence\n\nThis building is used to\nhouse students of the\nuniversity, if they cannot\nafford to live on their own.\n
+STADIUM2
+Big Stadium.  All of the\ninternational events are\nhosted here.\n
 SandStationMHz
 Station without Platform
 ShipDepot
@@ -348,8 +333,6 @@ ShipDepotEW
 Shipyard\n
 ShipStop
 Small Dock
-STADIUM2
-Big Stadium.  All of the\ninternational events are\nhosted here.\n
 Tennis_Court
 Tennis Court\n
 Terminal1930
@@ -376,22 +359,28 @@ Vorplatz
 Station Promenade
 Windmill
 Historic Windmill\n
+leftShipStop
+Left Dock Section
+rampShipStop
+Ramp for Docks
+rightShipStop
+Left Dock Section (Jetty)
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
 Ambulance
 FordT
 Ford Model T
-green_car
-Green Family Sedan
 Motorrad
 TR:Motorrad
-orange_bus
-School Bus
 Pickup
 Pickup Truck
 Roadster
 Convertible
+green_car
+Green Family Sedan
+orange_bus
+School Bus
 yellow_car
 Yellow Family Sedan
 #____________________________________factory____________________________________
@@ -406,12 +395,12 @@ Autohersteller
 Car Factory
 Buchgrosshandel
 Book Wholesaler
+CHEMIST
+Apothecary
 Cementmill
 Cement Mill
 ChemicalPlant
 Chemical Plant
-CHEMIST
-Apothecary
 Concretefactory
 Concrete Mix Factory
 Druckerei
@@ -448,8 +437,6 @@ Saegewerk
 Sawmill
 Sandquarry
 Sand Quarry
-scrap_yard
-Scrapyard
 Stahlwerk
 Iron Foundry
 Stonequarry
@@ -458,6 +445,8 @@ TANKE
 Gas Station
 Windkraftwerk
 Windmill Power Station
+scrap_yard
+Scrapyard
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
@@ -514,18 +503,18 @@ CATEGORY_02
 bulk goods
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
-choose_point
-Automated Loading Bay Selection Sign
 ChooseSignals
 Track Reservation Signals
 Minimum80
 "Minimum Speed 80 km/h" Sign.
 NoEntry
 "Wrong Way" Sign.
-preSignals
-Two-Block Signals
 Signals
 Rail Signal
+choose_point
+Automated Loading Bay Selection Sign
+preSignals
+Two-Block Signals
 traffic_light
 Traffic Light
 #_____________________________________tree______________________________________
@@ -608,12 +597,6 @@ Autotransportwagen
 Bennhardt Automobile Car
 BB1280
 Kahan 1280
-Be5-7
-Autocar Falcon
-Book_Trike
-Kirayami Small Box Truck
-Boxcar
-MJHN Box Car
 BR01
 Kahan Locomotive
 BR38
@@ -626,14 +609,20 @@ BR45
 Kahan 45
 BR85
 Kahan 86
+BRV36
+Colin Train 4000
+Be5-7
+Autocar Falcon
+Book_Trike
+Kirayami Small Box Truck
+Boxcar
+MJHN Box Car
 Bretteranhaenger
 Ikarus Model K Trailer
 Brettertransporter
 Ikarus Model K (Wood)
 Bretterwagen
 Haltbar Lumber Car
-BRV36
-Colin Train 4000
 Buchanhaenger
 Rama 14
 Buchtrailer
@@ -734,6 +723,8 @@ H-Trans-Tigress-II-Back
 Colin Train 6350 "Tiger" (Rear)
 H-Trans-Tigress-II-Front
 Colin Train 6350 "Tiger" (Front)
+HVPosttransporter
+Autocar Advancer
 Hadley-Page-V1500
 Hadley/Page Aerospace V1500
 Heavy_ore_truck
@@ -760,8 +751,6 @@ Horses
 Rama Horses Plus+
 Horsewoodcariage
 Rama 17 (Wood)
-HVPosttransporter
-Autocar Advancer
 ICE_TD-back
 Bennhardt TD (back)
 ICE_TD-car
@@ -780,12 +769,6 @@ Ju52
 Junkers Ju-52/3m
 JumboJet
 Boeing 747-400
-kkStB_tender
-MJHN "Dampf" Tender
-kkStB110
-MJHN "Chyuki"
-kkStB91
-MJHN "Dampf"
 Kohleanhaenger
 Kirayami Coal Trailer
 Kohletransporter
@@ -800,8 +783,6 @@ Lockhead_Tristar
 Lockheed L-1011 TriStar
 Lockheed10-Electra
 Lockheed L-188 Electra
-logs
-Log Barge
 Lowa
 Bennhardt T-26 (Front)
 Lowa_Anhaenger
@@ -822,8 +803,6 @@ Oilbarge
 Oil Barge
 Oiltrailer
 Rama 21 (Oil)
-old_open_car
-Autocar Open Car
 OldOil
 Kahan Oil Car
 Papieranhaenger
@@ -850,16 +829,14 @@ PrPostwagen
 Autocar Mail Car
 RenaultTH5
 Colin Truck 191
-Sandanhaenger
-Autocar Excellent Trailer
-Sandtransporter
-Autocar Excellent
-schooner
-Nova Scotia Schooner
 SD40-2-back
 Haltbar 1042 (back)
 SD40-2-front
 Haltbar 1042 (front)
+Sandanhaenger
+Autocar Excellent Trailer
+Sandtransporter
+Autocar Excellent
 SlowFerry
 Ikarus SlowFerry
 Stahlanhaenger
@@ -882,24 +859,22 @@ T13
 Bennhardt T-13 (Front)
 T24
 Bennhardt T-24 (Front)
-Tanklastzug
-Autocar Tanker
-Tatra-T4
-Bennhardt T-28 "Tatra" (Front)
-Tatra-T4_Wagon
-Bennhardt T-28 "Tatra" (Wagon)
 TB13
 Bennhardt T-13 (Wagon)
 TB24
 Bennhardt T-24 (Wagon)
-teaclipper
-Clipper
 TPBeiwagen
 Colin Train 5200 (Rear)
 TPPassagierwagen
 Bennhardt Passenger Car
 TPSchienenbus
 Colin Train 5200 (Front)
+Tanklastzug
+Autocar Tanker
+Tatra-T4
+Bennhardt T-28 "Tatra" (Front)
+Tatra-T4_Wagon
+Bennhardt T-28 "Tatra" (Wagon)
 Tram_GT6_Ende
 Autocar GT-6 (Rear)
 Tram_GT6_Kopf
@@ -910,8 +885,30 @@ XMail
 Kirayami Fuel Cell Prototype (Mail)
 XTest
 Kirayami Fuel Cell Prototype (Passengers)
+kkStB110
+MJHN "Chyuki"
+kkStB91
+MJHN "Dampf"
+kkStB_tender
+MJHN "Dampf" Tender
+logs
+Log Barge
+old_open_car
+Autocar Open Car
+schooner
+Nova Scotia Schooner
+teaclipper
+Clipper
 #______________________________________way______________________________________
 #______________________________________way______________________________________
+Kanal
+Canal
+MaglevTrack
+Maglev Track
+MaglevTrackElevated
+Elevated Maglev Track
+Rillenschienen
+Tram Track
 asphalt_road
 Asphalt Road
 city_road
@@ -926,18 +923,10 @@ elevated_monorail
 Elevated Monorail
 gavel_road
 Gravel Road
-Kanal
-Canal
-MaglevTrack
-Maglev Track
-MaglevTrackElevated
-Elevated Maglev Track
 mip_cobblestone_road
 MIP Cobblestone Road
 monorail
 Monorail Track
-Rillenschienen
-Tram Track
 runway_grass
 Grass Runway
 runway_modern

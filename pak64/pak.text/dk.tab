@@ -9,17 +9,8 @@
 #                              Language: dk Dansk                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 5.01 2018                           #
+#                           Date Created: 12.06 2018                           #
 #                                                                              #
-#                                   authors:                                   #
-#                                    - An_dz                                   #
-#                   note: Verified where all texts are shown                   #
-#                                    - Dwachs                                  #
-#                                  - Flemmbrav                                 #
-#                                    - FrankP                                  #
-#                                 Daniel - NNW                                 #
-#                                     - PTM                                    #
-#                                    - prissi                                  #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -58,10 +49,10 @@ Avila_Warehouse_StationBlg
 Lagerhals Stations Bygning
 Bulk_StationBlg
 Massegods Stations Bygning
-Car_StationBlg
-Bil Stations Bygning
 CarDepot
 Bil Garage
+Car_StationBlg
+Bil Stations Bygning
 DenkFlor
 Dette monument tilegnes Flor\n'WF Ultd.' Wauters, den\nberømte ingeniør som skabte så\nmange glimrende køretøjer. Han\ner ligeledes kendt for at have\ndesignet mange velfungerende\nfabrikker.\n
 DenkOwen
@@ -86,8 +77,6 @@ Theatre
 Teater. Ethvert besøg er en\nkulturel berigelse.\n
 Windmill
 Mølle\n\n
-#__________________________________dummy_info___________________________________
-#__________________________________dummy_info___________________________________
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -96,18 +85,12 @@ Autohaus
 Bilforhandler
 Autohersteller
 Bilfabrik
-bakery
-Bageri
-brewery
-Bryggeri
 Buchgrosshandel
 Boghandel
-cannery
-Konservesfabrik
-Cementmill
-Cementfabrik
 CHEMIST
 Apotek (af Seth)
+Cementmill
+Cementfabrik
 Concretefactory
 Betonfabrik
 Druckerei
@@ -146,18 +129,22 @@ Stonequarry
 Stenbrud
 TANKE
 Benzinstation
+bakery
+Bageri
+brewery
+Bryggeri
+cannery
+Konservesfabrik
+#_________________________________factory_info__________________________________
+#_________________________________factory_info__________________________________
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
 biler
-beer
-øl
 Bretter
 brædder
 Buecher
 bøger
-canned_food
-Dåsemad
 Cement
 cement
 Chemicals
@@ -194,6 +181,10 @@ Stahl
 stål
 Stone
 sten
+beer
+øl
+canned_food
+Dåsemad
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -268,6 +259,8 @@ H-Trans-Tigress-II-Back
 H-Trans-Tigress-II bag
 H-Trans-Tigress-II-Front
 H-Trans-Tigress-II front
+HVPosttransporter
+DIBU/H-Trans Postbil
 Holzanhaenger
 JET Tømmeranhænger
 Holztransporter
@@ -284,8 +277,6 @@ Horses
 Hestespand
 Horsewoodcariage
 Hest - Tømmervogn
-HVPosttransporter
-DIBU/H-Trans Postbil
 JNR_C11
 JNR C11 (2-6-4T)
 Kohleanhaenger
@@ -338,14 +329,14 @@ Stoneanhaenger
 WF Ultd. Stenanhænger
 Stonetransporter
 WF Ultd. Stentransport
-Tanklastzug
-H-Trans Olietankbil
 TPBeiwagen
 TPI VT98 Passagervogn
 TPPassagierwagen
 TPI Passagervogn
 TPSchienenbus
 TPI VT98 (dmu)
+Tanklastzug
+H-Trans Olietankbil
 #______________________________________way______________________________________
 #______________________________________way______________________________________
 cobblestone_road

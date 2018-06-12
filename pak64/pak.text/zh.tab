@@ -9,20 +9,8 @@
 #                            Language: zh T. Chinese                           #
 #                                Encoding: UTF-8                               #
 #                           Font : wenquanyi_9pt.bdf                           #
-#                            Date Created: 5.01 2018                           #
+#                           Date Created: 12.06 2018                           #
 #                                                                              #
-#                                   authors:                                   #
-#                                    - An_dz                                   #
-#                   note: Verified where all texts are shown                   #
-#                                    - Dwachs                                  #
-#                                     - E24                                    #
-#                                  - Flemmbrav                                 #
-#                                    - FrankP                                  #
-#                                Hao Wu - HaoWu                                #
-#                              Huanchao Zhu - HuanZ                            #
-#                                 Daniel - NNW                                 #
-#                                     - PTM                                    #
-#                                    - prissi                                  #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -31,12 +19,8 @@ ClassicRail
 傳統鐵路橋
 ClassicRoad
 傳統道路橋
-koka_Bridge_single
-高架鐵路
 MaglevBridge
 磁浮軌道橋
-mlm_concrete_bridge
-混凝土單軌軌道橋
 ModernRoad
 現代式道路橋(鋼筋混凝土)
 MonorailRamp
@@ -47,12 +31,16 @@ Schiffhebewerk
 船隻起重機
 SteelRail
 鋼鐵鐵路橋 (高速)
-tb_classic_road
-道路混凝土橋
 ViaductRail
 磚石高架橋
 WoodenRoad
 道路木橋
+koka_Bridge_single
+高架鐵路
+mlm_concrete_bridge
+混凝土單軌軌道橋
+tb_classic_road
+道路混凝土橋
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 00_01_CITY
@@ -87,10 +75,10 @@ WoodenRoad
 總部
 AirDepot
 1900年式機庫
-AirportShed1930
-早期機場郵局
 AirTerminal477
 大型客運樓
+AirportShed1930
+早期機場郵局
 Avila_Big_StationBlg
 大型客運樓
 Avila_Small_StationBlg
@@ -105,12 +93,12 @@ Bulk_StationBlg
 散貨轉運站
 BusStop
 與建巴士站/電車站
-Car_StationBlg
-車輛裝卸區
 CarDepot
 道路車廠
 CarStop
 裝卸區
+Car_StationBlg
+車輛裝卸區
 ChannelStop
 運河碼頭
 Control_StationBlg
@@ -163,12 +151,12 @@ Windmill
 #____________________________________citycar____________________________________
 Ambulanz
 救護車
+Pickup
+私家車
 green_car
 綠色私家車
 orange_bus
 橙色巴士
-Pickup
-私家車
 yellow_car
 黃色私家車
 #____________________________________factory____________________________________
@@ -179,38 +167,18 @@ Autohaus
 車行
 Autohersteller
 汽車製造廠
-bakery
-麵包店
-brewery
-釀酒廠
 Buchgrosshandel
 書店
-cannery
-罐頭廠
-Cementmill
-水泥廠
 CHEMIST
 藥房
+Cementmill
+水泥廠
 Concretefactory
 混凝土廠
-cow_farm
-牧牛場
-dairy
-奶品場
 Druckerei
 印刷廠
 Erzbergwerk
 鐵礦
-fish_pond
-魚塘
-fish_swarm
-漁排
-food_processing_plant
-食物加工廠
-grain_farm
-穀田
-grain_mill
-麵粉廠
 Kohlegrube
 煤礦
 Kohlekraftwerk
@@ -243,24 +211,40 @@ Stahlwerk
 煉鋼廠
 Stonequarry
 石礦
-supermarket
-超級市場
 TANKE
 油站
 Windkraftwerk
 風力發電站
+bakery
+麵包店
+brewery
+釀酒廠
+cannery
+罐頭廠
+cow_farm
+牧牛場
+dairy
+奶品場
+fish_pond
+魚塘
+fish_swarm
+漁排
+food_processing_plant
+食物加工廠
+grain_farm
+穀田
+grain_mill
+麵粉廠
+supermarket
+超級市場
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
 汽車
-beer
-啤酒
 Bretter
 木板
 Buecher
 書本
-canned_food
-罐頭食物
 Cement
 水泥
 Chemicals
@@ -269,26 +253,14 @@ Concrete
 混凝土
 Eisenerz
 鐵
-fish
-魚
-flour
-麵粉
-food
-食物
 Gasoline
 汽油
-grain
-穀物
 Holz
 木
 Kohle
 煤
-meat
-肉類
 Medicine
 藥物
-milk
-牛奶
 Moebel
 家具
 None
@@ -311,8 +283,26 @@ Stahl
 鋼
 Stone
 石
+beer
+啤酒
+canned_food
+罐頭食物
+fish
+魚
+flour
+麵粉
+food
+食物
+grain
+穀物
+meat
+肉類
+milk
+牛奶
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
+Woman
+女人
 pedestrian_1
 行人
 pedestrian_2
@@ -321,8 +311,6 @@ pedestrian_4
 行人
 pedestrian_child
 小童
-Woman
-女人
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -335,8 +323,6 @@ CATEGORY_04
 冷凍貨物
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
-choose_point
-方向選擇標誌
 ChooseSignals
 月台選擇信號
 ChooseSignalsMonorail
@@ -347,16 +333,18 @@ NoAirEntry
 單向禁止升降
 NoEntry
 單向禁止進入
-preSignals
-前置訊號
-preSignalsMonorail
-單軌前置訊號
 RailClose
 鐵路終止標誌
 Signals
 訊號
 SignalsMonorail
 單軌列車信號
+choose_point
+方向選擇標誌
+preSignals
+前置訊號
+preSignalsMonorail
+單軌前置訊號
 traffic_light
 交通燈
 #____________________________________tunnel_____________________________________
@@ -373,14 +361,20 @@ Bus
 H-Trans巴士
 Doubledeck_city_bus
 雙層市區巴士
-schooner
-雙桅縱帆帆船
 SD40-2-back
 SD40-2 後部
 SD40-2-front
 SD40-2
+schooner
+雙桅縱帆帆船
 #______________________________________way______________________________________
 #______________________________________way______________________________________
+MaglevTrack
+磁浮列車路軌
+MaglevTrackElevated
+架空磁浮列車路軌
+Powerline
+電纜
 asphalt_road
 瀝青路
 city_road
@@ -395,16 +389,10 @@ elevated_monorail
 架空單軌鐵路路軌
 gavel_road
 碎石路
-MaglevTrack
-磁浮列車路軌
-MaglevTrackElevated
-架空磁浮列車路軌
 mip_cobblestone_road
 石鋪路(MIP)
 monorail
 單軌軌道
-Powerline
-電纜
 runway_grass
 泥地跑道
 runway_modern

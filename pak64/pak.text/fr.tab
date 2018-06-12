@@ -9,25 +9,8 @@
 #                             Language: fr Francais                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 5.01 2018                           #
+#                           Date Created: 12.06 2018                           #
 #                                                                              #
-#                                   authors:                                   #
-#                                    - An_dz                                   #
-#                   note: Verified where all texts are shown                   #
-#                                  - Barbarita                                 #
-#                                    - Dwachs                                  #
-#                                  - Flemmbrav                                 #
-#                                    - FrankP                                  #
-#                                 Daniel - NNW                                 #
-#                                     - PTM                                    #
-#                                   - Tjoeker                                  #
-#                         Alexandre Raymond - alekcxjo                         #
-#                                    - gwalch                                  #
-#                                - jounior-fuchs                               #
-#                            Luc Mallet - luc.mallet                           #
-#                                     - mEGa                                   #
-#                            note: French translator                           #
-#                                    - prissi                                  #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -36,12 +19,8 @@ ClassicRail
 Pont ferroviaire en béton
 ClassicRoad
 Pont routier en béton
-koka_Bridge_single
-voie surélevée
 MaglevBridge
 Pont Maglev
-mlm_concrete_bridge
-Pont pour monorail en béton
 ModernRoad
 Pont à piliers
 MonorailRamp
@@ -52,12 +31,16 @@ Schiffhebewerk
 Pont fluviale
 SteelRail
 Pont ferroviaire en acier
-tb_classic_road
-Pont en béton
 ViaductRail
 viaduc ferroviaire
 WoodenRoad
 Pont routier en bois
+koka_Bridge_single
+voie surélevée
+mlm_concrete_bridge
+Pont pour monorail en béton
+tb_classic_road
+Pont en béton
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 00_01_CITY
@@ -122,14 +105,6 @@ Bulk_StationBlg
 Aire de stockage (en vrac)
 BusStop
 Arrêt de bus
-Car_StationBlg
-parc de stationnement
-CarDepot
-Dépôt pour véhicules routiers
-CarStop
-Zone de chargement
-ChannelStop
-Port fluvial
 COM_00_02
 Station service.\n\nAttention, les prix y sont\nexorbitants!\n
 COM_00_03
@@ -152,6 +127,14 @@ COM_01_01
 Aire de départ et d'arrivée de\nmontgolfières. Le site est\nfréquenté par de nombreux\npoliticiens, c'est pourquoi il\nn'y a pas de bonbonne \nde gaz.\n
 COM_01_10
 La clinique locale. La\nfaçade a été changée par\nune nouvelle plus joyeuse\npour remonter le moral des\npatients, spécialement\nceux en visite chez le\ndentiste. Ne gardez pas de\ndent contre eux!\n
+CarDepot
+Dépôt pour véhicules routiers
+CarStop
+Zone de chargement
+Car_StationBlg
+parc de stationnement
+ChannelStop
+Port fluvial
 Control_StationBlg
 Service du contrôle
 DenkDirk
@@ -196,8 +179,6 @@ IND_01_10
 Fabrique D'Outils\n
 LargeShipStop
 Port (grands quais)
-leftShipStop
-Grue Hautes-Charges
 Lighthouse
 Phare\n\nConstruit en 1900, et le feu etait visible à 40 miles nautiques. Mais aujourdhui il y a seulement une petit boutique vendu cartes postales. Et le vue magnifique!
 ModernAirTerminal477
@@ -206,20 +187,18 @@ MonorailDepot
 Dépôt De Monorail
 OldTownhall
 Vieil Hôtel De Ville\n\nVieil Hôtel De Ville\n\nLes hîvers s'etait froid, alors il manque du fenêtre. Une fois ils même essaient à l'emporter la lumière avec de sac dans la bâtiment.
-PlainAirStop
-Arrêt Pour Avions
-PostOffice
-Bureau de poste
-PostStop
-Boîte aux lettres
 PSFreightTrainStop
 Quai de marchandise
 PSHall1TrainStop
 Quai avec comptoir à journaux
 PSHall2TrainStop
 Quai
-Raven_Kirche
-Église St-Meinrad\n\nL'ermite St-Meinrad a été\naccompagné par deux\ncorbeaux selon la légende.\nQuand il fut assassiné, les\ncorbeaux suivirent les\nmeurtriers et les ont\ncondamnés. À l'endroit de son\nermitage se trouve\naujourd'hui le couvent\nEinsiedeln.\n
+PlainAirStop
+Arrêt Pour Avions
+PostOffice
+Bureau de poste
+PostStop
+Boîte aux lettres
 RES_00_06
 Un petit jet d'eau. Même s'il\nn'est pas aussi grand que\ncelui à Genève, il fait du\nplaisir aux gens qui se\npromènent autour de lui,\nspécialement en été.\n
 RES_00_07
@@ -228,18 +207,20 @@ RES_00_09
 Petit parc avec un étang à\ncanard\n
 RES_01_01
 Maison préfabriquée\nmoderne avec une grande\nchambre pour les enfants\nau grenier\n
-Residenz
-Résidence\n\nCet endroit est utilisé par le\nGourou de la place pour\nenseigner la méditation et\nla paix intérieure. Certaines\nde ses techniques sont\ntrès discutables et font l'objet\nd'enquêtes des autorités de la\nplace.\n
 RUIN_0
 Château médiéval\n\nCe château tombait en\nruine mais une partie a été\nreconstruite. C'est devenu\nun musée aujourd'hui. La\nvue du haut de la tour est\nmagnifique, mais il y a\nbeaucoup d'escalier et la\nsolidité laisse à désirer.  \n
+Raven_Kirche
+Église St-Meinrad\n\nL'ermite St-Meinrad a été\naccompagné par deux\ncorbeaux selon la légende.\nQuand il fut assassiné, les\ncorbeaux suivirent les\nmeurtriers et les ont\ncondamnés. À l'endroit de son\nermitage se trouve\naujourd'hui le couvent\nEinsiedeln.\n
+Residenz
+Résidence\n\nCet endroit est utilisé par le\nGourou de la place pour\nenseigner la méditation et\nla paix intérieure. Certaines\nde ses techniques sont\ntrès discutables et font l'objet\nd'enquêtes des autorités de la\nplace.\n
+STADIUM2
+Stade\n\nLe stade est lieu de\nnombreux événements\nsportifs très excitants.\n
 SandStationMHz
 Arrêt sans quai
 ShipDepot
 chantier naval
 ShipStop
 Port de voyageurs 
-STADIUM2
-Stade\n\nLe stade est lieu de\nnombreux événements\nsportifs très excitants.\n
 Tennis_Court
 Terrain de tennis\n\nUne fois, la champion de la cité jouait ici. Mais le son n'a pas changé.
 TrainDepot
@@ -254,6 +235,8 @@ TramDepot
 Dépot de Trams
 Windmill
 Moulin à vent\n\n
+leftShipStop
+Grue Hautes-Charges
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
@@ -262,8 +245,6 @@ FordT
 Ford Modèle T
 green_car
 Voiture verte
-#__________________________________dummy_info___________________________________
-#__________________________________dummy_info___________________________________
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -274,40 +255,20 @@ Autohaus
 Concessionnaire auto
 Autohersteller
 Usine de voitures
-bakery
-Boulangerie
-brewery
-Brasserie
 Buchgrosshandel
 Grossiste en livres
-cannery
-Conserverie
+CHEMIST
+Pharmacie
 Cementmill
 Cimenterie
 ChemicalPlant
 Usine chimique
-CHEMIST
-Pharmacie
 Concretefactory
 Fabrique de béton
-cow_farm
-Ferme d'élevage
-dairy
-Laiterie
 Druckerei
 Imprimerie
 Erzbergwerk
 Mine de fer
-fish_pond
-Pisciculture
-fish_swarm
-Banc de poisson
-food_processing_plant
-Usine agroalimentaire
-grain_farm
-Ferme de culture
-grain_mill
-Meunerie
 Incinerator
 Incinérateur
 Kohlegrube
@@ -340,30 +301,48 @@ SaegewerkMHz
 Vieille scierie
 Sandquarry
 Carrière de sable
-scrap_yard
-Déchêterie
 Stahlwerk
 Aciérie
 Stonequarry
 Carrière de pierre
-supermarket
-Supermarché
 TANKE
 Station-service
 Windkraftwerk
 Eolienne
+bakery
+Boulangerie
+brewery
+Brasserie
+cannery
+Conserverie
+cow_farm
+Ferme d'élevage
+dairy
+Laiterie
+fish_pond
+Pisciculture
+fish_swarm
+Banc de poisson
+food_processing_plant
+Usine agroalimentaire
+grain_farm
+Ferme de culture
+grain_mill
+Meunerie
+scrap_yard
+Déchêterie
+supermarket
+Supermarché
+#_________________________________factory_info__________________________________
+#_________________________________factory_info__________________________________
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
 Voitures
-beer
-Bière
 Bretter
 Planches
 Buecher
 Livres
-canned_food
-Conserves
 Cement
 Ciment
 Chemicals
@@ -372,26 +351,14 @@ Concrete
 Béton
 Eisenerz
 Minerai
-fish
-Poisson
-flour
-Farine
-food
-Plats cuisinés
 Gasoline
 Carburant
-grain
-Céréales
 Holz
 Bois
 Kohle
 Charbon
-meat
-Viande
 Medicine
 Medecine
-milk
-Lait
 Moebel
 Meuble
 None
@@ -412,6 +379,22 @@ Stahl
 Acier
 Stone
 Pierre
+beer
+Bière
+canned_food
+Conserves
+fish
+Poisson
+flour
+Farine
+food
+Plats cuisinés
+grain
+Céréales
+meat
+Viande
+milk
+Lait
 waste
 Déchet
 #_________________________________program_text__________________________________
@@ -434,8 +417,6 @@ rolls
 Rouleaux
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
-choose_point
-balise de choix
 ChooseSignals
 Signal de choix de quai
 Minimum80
@@ -444,6 +425,8 @@ NoEntry
 Rue unisens
 Signals
 signaux
+choose_point
+balise de choix
 traffic_light
 feux tricolores
 #_____________________________________tree______________________________________
@@ -536,6 +519,8 @@ H-Trans-Tiger-Mail-Car
 H-Trans Tigress wagon postal
 H-Trans-Tigress-II-Front
 Tigress II (motrice avant)
+HVPosttransporter
+Fourgon postal VELO/H-Trans
 Heavy_ore_truck
 camion à minerai
 Hochbordwagen
@@ -560,8 +545,6 @@ Horses
 Chevaux
 Horsewoodcariage
 Charrette à bois
-HVPosttransporter
-Fourgon postal VELO/H-Trans
 ICE_TD-front
 ICE-TD
 Kohleanhaenger
@@ -614,18 +597,24 @@ Stoneanhaenger
 Remorque à pierre
 Stonetransporter
 WF Ultd. camion de pierres
-Tanklastzug
-Camion-citerne à pétrole H-Trans
 TPBeiwagen
 Wagon passagers TPI VT98
 TPPassagierwagen
 Wagon passagers TPI
 TPSchienenbus
 TPI VT98 (diesel)
+Tanklastzug
+Camion-citerne à pétrole H-Trans
 Zeppelin
 Dirigeable
 #______________________________________way______________________________________
 #______________________________________way______________________________________
+Kanal
+canal
+Powerline
+ligne haute tension
+Rillenschienen
+rail de tramway
 asphalt_road
 Route goudronnée
 city_road
@@ -638,14 +627,8 @@ dirt_road
 chemin de terre
 gavel_road
 route en terre battue
-Kanal
-canal
 mip_cobblestone_road
 Route pavée
-Powerline
-ligne haute tension
-Rillenschienen
-rail de tramway
 runway_modern
 piste
 steel_sleeper_track

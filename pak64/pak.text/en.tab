@@ -9,52 +9,8 @@
 #                             Language: en English                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 5.01 2018                           #
+#                           Date Created: 12.06 2018                           #
 #                                                                              #
-#                                   authors:                                   #
-#                                    - prissi                                  #
-#                               Sven Osada - sojo                              #
-#                         note: maintainer pak96.comic                         #
-#                            James P. Hood - TheHood                           #
-#                                 - transporter                                #
-#                                    - An_dz                                   #
-#                   note: Verified where all texts are shown                   #
-#                             Simon Small - SimonS                             #
-#                                   - Tjoeker                                  #
-#                                    - TurfIt                                  #
-#                                  - Ampersand                                 #
-#                                    - Makie                                   #
-#                                  - Barbarita                                 #
-#                                    - FrankP                                  #
-#                                - jounior-fuchs                               #
-#                          Albert Ruiz - albert.yuste                          #
-#                           note: Albert Ruiz - Zeno                           #
-#                         Alexandre Raymond - alekcxjo                         #
-#                           Michael Olbricht - whoami                          #
-#                                   - Combuijs                                 #
-#                                 Daniel - NNW                                 #
-#                              Jaroslaw - Jaroslaw                             #
-#                                    - Dwachs                                  #
-#                                  - enternald                                 #
-#     note: Need more lt translators. Eiti ? http://simutrans-germany.com/     #
-#                                   - gebeine                                  #
-#                        note: maintainer PAK128.german                        #
-#                                 - IgorEliezer                                #
-#                          James E. Petts - jamespetts                         #
-#  note: Maintainer for Simutrans-Experimental. Also works on Pak128.Britain.  #
-#                                   - Leartin                                  #
-#                                     - PTM                                    #
-#                                     - MaxK                                   #
-#                                    - Cruzer                                  #
-#                 note: Ex-Entwickler und Gründer pak192.comic                 #
-#                              Tomá? Kube? - napik                             #
-#                                   - neroden                                  #
-#                               note: Programmer                               #
-#                                   - Nico192                                  #
-#                                  - Flemmbrav                                 #
-#                            Vladimír Slávik - vsys                            #
-#                                   - Timothy                                  #
-#                              Xavier Paz - vilvoh                             #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -63,12 +19,8 @@ ClassicRail
 Concrete Rail Bridge
 ClassicRoad
 Concrete Road Bridge
-koka_Bridge_single
-elevated track
 MaglevBridge
 Maglev Bridge
-mlm_concrete_bridge
-concrete monorail bridge
 ModernRoad
 Modern Road Bridge (prestressed concrete)
 MonorailRamp
@@ -79,12 +31,16 @@ Schiffhebewerk
 Ship Hoist
 SteelRail
 Steel girder rail bridge
-tb_classic_road
-Concrete road bridge
 ViaductRail
 brick viaduct
 WoodenRoad
 wooden road bridge
+koka_Bridge_single
+elevated track
+mlm_concrete_bridge
+concrete monorail bridge
+tb_classic_road
+Concrete road bridge
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 00_01_CITY
@@ -137,12 +93,12 @@ A6_DOME
 Old cathedral\n\nThe very heart of this city\nfor nearly thousand years.\n
 AirDepot
 Air depot of 1900
-AirportShed1930
-Airport shed for mail (1901)
 AirStop
 Jetway
 AirTerminal477
 Airport Terminal (1950)
+AirportShed1930
+Airport shed for mail (1901)
 Avila_Big_StationBlg
 big station building
 Avila_Small_StationBlg
@@ -157,14 +113,6 @@ Bulk_StationBlg
 Bulk goods station
 BusStop
 Bus stop
-Car_StationBlg
-car shipment
-CarDepot
-Depot for road vehicles
-CarStop
-Freight yard
-ChannelStop
-Wharf
 COM_00_01
 Small Shop\n\nThe low prices and friendly service at this small shop keep the parking lot full most of the time.
 COM_00_02
@@ -241,6 +189,14 @@ COM_11_12
 Spice Shop\nThis is a shop that carries spices from faraway places. The atmosphere in the shop is worth the visit, even if you don't find a spice you like.
 COM_12_04
 The Mermaid parc attracts thousands of visitors every year - albeit for the wrong reasons. Almost nobody happens to find the small maremate bush in the back corner. (Some people say the spelling error was deliberately introduced by the restaurant owner next to its entrance.)
+CarDepot
+Depot for road vehicles
+CarStop
+Freight yard
+Car_StationBlg
+car shipment
+ChannelStop
+Wharf
 Control_StationBlg
 railway control centre
 DenkDirk
@@ -273,12 +229,12 @@ FreightShipStop
 Quay
 FreightTrainStop
 Freight station
-Gas_StationBlg
-gas tank
 GCG1TrainStop
 big station hall left
 GCG2TrainStop
 big station hall right
+Gas_StationBlg
+gas tank
 Goods_StationBlg
 Warehouse
 Gymnasium
@@ -323,18 +279,16 @@ KingsbridgeMonastry
 Monastry\n\nMysterious voices are heard in the morning - or are those rather from the poor guys in the cold showers?
 LargeShipStop
 Dock with Large Crane
-leftShipStop
-Heavy duty crane
 LeuchtturmShipStop
 Lighthouse Ship Stop
 Lighthouse
 Lighthouse\n\nOnce the brightest on the shore, but nowadays only preserved to serve as a cell base station and to sell postcards to tourists.
 LongBusStop
 Long Bus Stop
-MainTerminal1930
-Main terminal building (1930)
 MHzSmallStation
 Station building
+MainTerminal1930
+Main terminal building (1930)
 ModernAirTerminal477
 Modern air terminal
 MonorailDepot
@@ -345,6 +299,12 @@ MonorailGround
 Monorail Depot Foundation
 OldTownhall
 Historic Hall\n\nThis building used to house the city officials' offices. Now, it houses a museum and coffee shop.
+PSFreightTrainStop
+Freight station
+PSHall1TrainStop
+station hall with news stand
+PSHall2TrainStop
+station hall
 Patricks_Rock
 Patrick's Rock\n\nClimbing it is only for the fearless. Unfortunately the same goes for the scalding hot spring at its bottom.)
 PlainAirStop
@@ -353,16 +313,6 @@ PostOffice
 post office
 PostStop
 Postbox
-PSFreightTrainStop
-Freight station
-PSHall1TrainStop
-station hall with news stand
-PSHall2TrainStop
-station hall
-rampShipStop
-Boat Ramp
-Raven_Kirche
-Church St. Meinrad\n\nThe hermit St. Meinrad has\nbeen accompanied by two\nravens according to the\nlegend. When he has been\nmurdered, the two ravens\nfollowed the murderers and\nconvicted them. Today,\nat the place of his hut \nthe \nmonastery Einsiedeln is located.\n
 RES_00_01
 This small house may not look like much out of the ordinary: But it is right at the center of the Simutrans universe. It was the first buildings erected in Simutrans.
 RES_00_02
@@ -431,12 +381,14 @@ RES_11_14
 This is the home of the\nfamous football player\nJackson Stonewall. When\nhe is not on his way to a\ngame, he can be found in\nthe back yard throwing a\nfootball with his sons. In\nhis first year of\nprofessional football,\nStonewall had an average\nof 6 touchdowns per game.\nOnly his pharmacist knows\nhow he was able to do so well.\n
 RES_12_03
 This house uses a unique modular design that is easily expandable. If more room is needed you can just airlift a new room and slip it over the center support. If the demand for space should lessen, you can even sell off a few rooms\n
-Residenz
-Residence\n\nThis place is used by the\nlocal Yoga Guru to teach\nmeditation and inner peace.\nThere are lots of things\ncalled Bongs here.\n
-rightShipStop
-Quay with pier
 RUIN_0
 Medieval castle\n\nThis castle was becoming a\nruin, but parts of it have\nbeen reconstructed, and\nthe whole complex is a\nmuseum now.\nThe view over the landscape\nis fantastic, you just have to\nclimb lots of stairs to see it.\n
+Raven_Kirche
+Church St. Meinrad\n\nThe hermit St. Meinrad has\nbeen accompanied by two\nravens according to the\nlegend. When he has been\nmurdered, the two ravens\nfollowed the murderers and\nconvicted them. Today,\nat the place of his hut \nthe \nmonastery Einsiedeln is located.\n
+Residenz
+Residence\n\nThis place is used by the\nlocal Yoga Guru to teach\nmeditation and inner peace.\nThere are lots of things\ncalled Bongs here.\n
+STADIUM2
+Big stadium\n\nhosting all the international\nevents here.\n
 SandStationMHz
 Stop without platform
 ShipDepot
@@ -445,8 +397,6 @@ ShipDepotEW
 Shipyard
 ShipStop
 Seaport
-STADIUM2
-Big stadium\n\nhosting all the international\nevents here.\n
 Tennis_Court
 Tennis court\n\nThe neighbours long for winter, when they can sit outside again without hearing the constant pangs.
 Terminal1930
@@ -473,50 +423,28 @@ Vorplatz
 Forecourt
 Windmill
 Historic Windmill\n\nAttracts tilting knights errant.
+leftShipStop
+Heavy duty crane
+rampShipStop
+Boat Ramp
+rightShipStop
+Quay with pier
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
 Ambulance
 FordT
 Ford Model T
-green_car
-green car
 Motorrad
 Motor bike
-orange_bus
-SimCo Bus
 Roadster
 Rag-top Roadster
+green_car
+green car
+orange_bus
+SimCo Bus
 yellow_car
 Yellow car
-#__________________________________dummy_info___________________________________
-#__________________________________dummy_info___________________________________
-factory_Buchgrosshandel_details
-<title>Bookshop Details</title><h1>Bookshop</h1><p>This bookshop has everything that can be printed. From a 271 volume encyclopedia over the yellow pages for the internet to the manga corner (there, even the labels are written backwards...) </p>
-factory_Concretefactory_details
-<title>Concrete factory details</title><h1>Concrete factory</h1><p>Autoclaved Aerated concrete (AAC) is produced in this factory. The small pores that reduce weight and increase insulation originate from aluminum powder, which reacts with the water. AAC was invented in the 1920ies.</p>
-factory_fish_pond_details
-<title>Fish Pond Details</title>\n<h1>Fish Ponds</h1>\n<p>Pond is a body of water where even its deepest areas are reached by sunlight or where a human can walk across the entire body of water without being underneath. In some dialects of English, pond normally refers to small artificially created bodies of water.</p>\n<p>In medieval times in Europe, it was typical for many monasteries, castles, etc. (small, partly self-sufficient communities) to have fish ponds. These are still common in the East Asia (notably Japan), where koi carp may be kept.</p>\n<p>This pond is now used for breeding fish which can be later caught, transported, and processed to food. Swimming in it is forbidden.</p>\n<p>Pond works as extensive aquaculture based on local photosynthetical production, meaning that fish are not being fed by artificial food.</p>\n<p>Limiting for fish growth here is the available food supply by natural sources, commonly zooplankton feeding on pelagic algae or benthic animals, such as certain crustaceans and mollusks. Tilapia species filter feed directly on phytoplankton, which makes higher production possible. The photosynthetical production can be increased by fertilizing the pond water with artificial fertilizer mixtures, such as potash, phosphorus, nitrogen and micro elements. Because most fishes are carnivorous, they occupy a higher place in the trophic chain and therefore only a tiny fraction of primary photosynthetical production (typically 1%) will be converted into harvestable fish.</p>\n<p>As a result, without additional feeding the fish harvest will not exceed 200 kilograms of fish per hectare per year, equivalent to 1% of the gross photosynthetic production.</p>\n<p>In order to tap all available food sources in the pond, the aquaculturist will choose fish species which occupy different places in the pond ecosystem, e.g., a filter algae feeder such as tilapia, a benthic feeder such as carp or catfish and a zooplankton feeder (various carps) or submerged weeds feeder such as grass carp.</p>
-factory_Kohlegrube_details
-<title>About Coalmines</title><h1>Coalmines</h1><p>In coal mines the miners dig for coal. This is hard labour, but the coal is needed for such important industreis like iron foundries and power plants.<p>\n
-factory_Materialswholesale_details
-<title>DIY superstore details</title><h1>Do-It-Yourself Superstore</h1><p>All sorts of building materials are obtainable at this site. You should be able to finish a house at least structurally complete, without having to receive from another supplier than this DIY superstore.</p>\n
-factory_Moebelfabrik_details
-<title>Furniture factory details</title><h1>Furniture factory</h1><p>Alas even furniture became a mass product following short-lived trends. Only a few pieces made in this factory were ever touched by a real cabinet maker. And if they did, then only because a machine failed.</p>
-factory_Nutzwald_details
-<title>About timber plantations</title><h1>Timber plantations</h1><p>In the woods grows the most important renewable material and energy source, which is appropriated by forestry and transformed to high-quality brands by wood and paper industry.</p>
-factory_Oelbohrinsel_details
-<title>About oil rigs</title><h1>Oil rigs</h1><p>Second half of 20th century brought hunger for oil - consumption doubled every decade. Apart from land resources, sea offered also some oil deposits, although hard to reach.<br><br>Oil rigs are structures built to exploit these resources located in shelf areas (depth 0 to 200 meters). They are HUGE, but no one actually realizes it - most of the building is hidden under water surface. And also expensive to maintain. Columns that hold the platform are usually hollow and they also function as reservoir for oil.</p><p>The biggest oil rig in the world, Statfjord B, was built by Norway. Its weight is roughly 800,000 tonnes and height about 192 m. With tower the height increases by another 80 meters.</p>
-factory_Oelfeld_details
-<title>About Oilfields</title><h1>Oilfields</h1><p>Oil is a raw material which was used for paints, lubricants and also as a fuel for heating before the turn of 19th/20th century. Then it gained great importance with boom of combustion engine and automobiles.</p><p>Oil is a liquid consisting of numerous hydrocarbons. It is unclear how exactly the oil deposits came into being, probably it was a process similar to creating coal deposits but with some extra conditions - under high pressure & without oxygen. They are within depth of up to hundreds of meters. Oil is there usually found together with gas under high pressure, what eases pumping it to the surface.</p>
-factory_Raffinerie_details
-<title>Detalhes da Refinaria</title><h1>Processamento do petróleo</h1><p>Nesta planta industrial, o petróleo cru é refinado e processado originando vários produtos derivados como gasolina, óleo diesel, base para asfalto, querosene e gás liquefeito. É comum que este tipo de instalações tenha um complexo sistema de tubulações para transportar os fluidos e gases de uma unidade de processamento à outra.</p>
-factory_Rinnenkraftwerk_details
-<title>Parabolic Solar Power Plant Details</title><h1>Parabolic Solar Power Plant</h1><p>Sunlight is focused on a tube of oil using parabolic mirrors that follow the sun. The oil heats up to at least 300°C and goes through a heat exchanger to produce steam, which moves a turbine. Nine such power stations were built in California, but then a special tax was levied on solar electricity. At 384MW, they are by far the most powerful solar power stations.</p>
-factory_Stahlwerk_details
-<title>About Iron foundries</title><h1>Iron foundries (Steel mills)</h1><p>These industries convert iron ore into iron or steel. This is done by heating ore (and recycled iron scrap) up in blast furnaces - huge cylindric structures that can withstand the immense heat of about 2000°C. The ore inside melts quickly and separates into a pool of liquid iron and slag floating on top of it.</p><p>The iron is further processed in converters so as to reduce the carbon volume; the lower it is, the higher quality steel you get. Such processes need lots of energy, usually gained by burning mountains of coal.</p>
-factory_Windkraftwerk_details
-<title>Wind Power Station Details</title><h1>Wind energy</h1><p>The first wind power station was actully built in Scotland 1885 by Prof. James Blyth from Strathclyde. Aparently it was not a great success, comapring with water power and thus the idea went on the back burner for the next 60 year but for Denmark. The first modern type was built 1957 in Germany (2 blades) and Denmark (3 blades). However, the big breakthrough came after the oil crisis and the next after govermetns began to subsidize reneable energies.</p>\n
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -529,44 +457,22 @@ Autohaus
 Car shop
 Autohersteller
 Car factory
-bakery
-Bakery
-brewery
-Brewery
 Buchgrosshandel
 Book shop
-cannery
-Cannery
+CHEMIST
+Pharmacy
 Cementmill
 Cement Mill
 ChemicalPlant
 Chemical Plant
-CHEMIST
-Pharmacy
 Concretefactory
 Concrete Mix Factory
-cow_farm
-Cattle Farm
-dairy
-Dairy
 Druckerei
 Printing works
 Erzbergwerk
 Iron Ore Mine
-fish_pond
-Fish Pond
-fish_swarm
-Fish Swarm
-food_processing_plant
-Food Processing Plant
 Geokraftwerk
 Geothermal Power Station
-grain_farm
-Grain farm
-grain_mill
-Grain mill
-grain_windmill
-Wind mill
 Kohlegrube
 Coal mine
 Kohlekraftwerk
@@ -589,8 +495,6 @@ Oelkraftwerk
 Oil Power Plant
 Oelpumpe
 Oil Pump
-old_farm
-Farm
 Papierfabrik
 Paper mill
 Pharmaceutics
@@ -605,54 +509,90 @@ SaegewerkMHz
 Sawyer's Workshop
 Sandquarry
 Sand Quarry
-scrap_yard
-Scrapyard
 Stahlwerk
 Steel mill
 Stonequarry
 Quarry
-supermarket
-Supermarket
 TANKE
 Gas station
-thermisches_Solarkraftwerk
-Concentrated Thermal Solar Power Plant
 Turmkraftwerk
 Tower Solar Power Plant
 Windkraftwerk
 Wind power plant
+bakery
+Bakery
+brewery
+Brewery
+cannery
+Cannery
+cow_farm
+Cattle Farm
+dairy
+Dairy
+fish_pond
+Fish Pond
+fish_swarm
+Fish Swarm
+food_processing_plant
+Food Processing Plant
+grain_farm
+Grain farm
+grain_mill
+Grain mill
+grain_windmill
+Wind mill
+old_farm
+Farm
+scrap_yard
+Scrapyard
+supermarket
+Supermarket
+thermisches_Solarkraftwerk
+Concentrated Thermal Solar Power Plant
+#_________________________________factory_info__________________________________
+#_________________________________factory_info__________________________________
+factory_Buchgrosshandel_details
+<title>Bookshop Details</title><h1>Bookshop</h1><p>This bookshop has everything that can be printed. From a 271 volume encyclopedia over the yellow pages for the internet to the manga corner (there, even the labels are written backwards...) </p>
+factory_Concretefactory_details
+<title>Concrete factory details</title><h1>Concrete factory</h1><p>Autoclaved Aerated concrete (AAC) is produced in this factory. The small pores that reduce weight and increase insulation originate from aluminum powder, which reacts with the water. AAC was invented in the 1920ies.</p>
+factory_Kohlegrube_details
+<title>About Coalmines</title><h1>Coalmines</h1><p>In coal mines the miners dig for coal. This is hard labour, but the coal is needed for such important industreis like iron foundries and power plants.<p>\n
+factory_Materialswholesale_details
+<title>DIY superstore details</title><h1>Do-It-Yourself Superstore</h1><p>All sorts of building materials are obtainable at this site. You should be able to finish a house at least structurally complete, without having to receive from another supplier than this DIY superstore.</p>\n
+factory_Moebelfabrik_details
+<title>Furniture factory details</title><h1>Furniture factory</h1><p>Alas even furniture became a mass product following short-lived trends. Only a few pieces made in this factory were ever touched by a real cabinet maker. And if they did, then only because a machine failed.</p>
+factory_Nutzwald_details
+<title>About timber plantations</title><h1>Timber plantations</h1><p>In the woods grows the most important renewable material and energy source, which is appropriated by forestry and transformed to high-quality brands by wood and paper industry.</p>
+factory_Oelbohrinsel_details
+<title>About oil rigs</title><h1>Oil rigs</h1><p>Second half of 20th century brought hunger for oil - consumption doubled every decade. Apart from land resources, sea offered also some oil deposits, although hard to reach.<br><br>Oil rigs are structures built to exploit these resources located in shelf areas (depth 0 to 200 meters). They are HUGE, but no one actually realizes it - most of the building is hidden under water surface. And also expensive to maintain. Columns that hold the platform are usually hollow and they also function as reservoir for oil.</p><p>The biggest oil rig in the world, Statfjord B, was built by Norway. Its weight is roughly 800,000 tonnes and height about 192 m. With tower the height increases by another 80 meters.</p>
+factory_Oelfeld_details
+<title>About Oilfields</title><h1>Oilfields</h1><p>Oil is a raw material which was used for paints, lubricants and also as a fuel for heating before the turn of 19th/20th century. Then it gained great importance with boom of combustion engine and automobiles.</p><p>Oil is a liquid consisting of numerous hydrocarbons. It is unclear how exactly the oil deposits came into being, probably it was a process similar to creating coal deposits but with some extra conditions - under high pressure & without oxygen. They are within depth of up to hundreds of meters. Oil is there usually found together with gas under high pressure, what eases pumping it to the surface.</p>
+factory_Raffinerie_details
+<title>Detalhes da Refinaria</title><h1>Processamento do petróleo</h1><p>Nesta planta industrial, o petróleo cru é refinado e processado originando vários produtos derivados como gasolina, óleo diesel, base para asfalto, querosene e gás liquefeito. É comum que este tipo de instalações tenha um complexo sistema de tubulações para transportar os fluidos e gases de uma unidade de processamento à outra.</p>
+factory_Rinnenkraftwerk_details
+<title>Parabolic Solar Power Plant Details</title><h1>Parabolic Solar Power Plant</h1><p>Sunlight is focused on a tube of oil using parabolic mirrors that follow the sun. The oil heats up to at least 300°C and goes through a heat exchanger to produce steam, which moves a turbine. Nine such power stations were built in California, but then a special tax was levied on solar electricity. At 384MW, they are by far the most powerful solar power stations.</p>
+factory_Stahlwerk_details
+<title>About Iron foundries</title><h1>Iron foundries (Steel mills)</h1><p>These industries convert iron ore into iron or steel. This is done by heating ore (and recycled iron scrap) up in blast furnaces - huge cylindric structures that can withstand the immense heat of about 2000°C. The ore inside melts quickly and separates into a pool of liquid iron and slag floating on top of it.</p><p>The iron is further processed in converters so as to reduce the carbon volume; the lower it is, the higher quality steel you get. Such processes need lots of energy, usually gained by burning mountains of coal.</p>
+factory_Windkraftwerk_details
+<title>Wind Power Station Details</title><h1>Wind energy</h1><p>The first wind power station was actully built in Scotland 1885 by Prof. James Blyth from Strathclyde. Aparently it was not a great success, comapring with water power and thus the idea went on the back burner for the next 60 year but for Denmark. The first modern type was built 1957 in Germany (2 blades) and Denmark (3 blades). However, the big breakthrough came after the oil crisis and the next after govermetns began to subsidize reneable energies.</p>\n
+factory_fish_pond_details
+<title>Fish Pond Details</title>\n<h1>Fish Ponds</h1>\n<p>Pond is a body of water where even its deepest areas are reached by sunlight or where a human can walk across the entire body of water without being underneath. In some dialects of English, pond normally refers to small artificially created bodies of water.</p>\n<p>In medieval times in Europe, it was typical for many monasteries, castles, etc. (small, partly self-sufficient communities) to have fish ponds. These are still common in the East Asia (notably Japan), where koi carp may be kept.</p>\n<p>This pond is now used for breeding fish which can be later caught, transported, and processed to food. Swimming in it is forbidden.</p>\n<p>Pond works as extensive aquaculture based on local photosynthetical production, meaning that fish are not being fed by artificial food.</p>\n<p>Limiting for fish growth here is the available food supply by natural sources, commonly zooplankton feeding on pelagic algae or benthic animals, such as certain crustaceans and mollusks. Tilapia species filter feed directly on phytoplankton, which makes higher production possible. The photosynthetical production can be increased by fertilizing the pond water with artificial fertilizer mixtures, such as potash, phosphorus, nitrogen and micro elements. Because most fishes are carnivorous, they occupy a higher place in the trophic chain and therefore only a tiny fraction of primary photosynthetical production (typically 1%) will be converted into harvestable fish.</p>\n<p>As a result, without additional feeding the fish harvest will not exceed 200 kilograms of fish per hectare per year, equivalent to 1% of the gross photosynthetic production.</p>\n<p>In order to tap all available food sources in the pond, the aquaculturist will choose fish species which occupy different places in the pond ecosystem, e.g., a filter algae feeder such as tilapia, a benthic feeder such as carp or catfish and a zooplankton feeder (various carps) or submerged weeds feeder such as grass carp.</p>
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
 Cars
-beer
-Beer
 Bretter
 Planks
 Buecher
 Books
-canned_food
-Canned Food
 Concrete
 AAC stones
 Eisenerz
 Iron ore
-fish
-Fish
-flour
-Flour
-food
-Convenience food
-grain
-Grain
 Holz
 Wood
 Kohle
 Coal
-meat
-Meat
-milk
-Milk
 Moebel
 Furniture
 None
@@ -671,10 +611,38 @@ PrintersInk
 Printers ink
 Stahl
 Steel
+beer
+Beer
+canned_food
+Canned Food
+fish
+Fish
+flour
+Flour
+food
+Convenience food
+grain
+Grain
+meat
+Meat
+milk
+Milk
 waste
 Waste
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
+Hochsitz1
+Deer Stand
+Hochsitz2
+Deer Stand
+See1
+Lake with Waterfowl
+See2
+Lake
+See3
+Lake
+See4
+Lake
 bushes
 Bushes
 deco_rock
@@ -685,22 +653,10 @@ gemsen
 Chamois
 gooses
 Geese
-Hochsitz1
-Deer Stand
-Hochsitz2
-Deer Stand
 moles
 Moles
 rocks
 Rocks
-See1
-Lake with Waterfowl
-See2
-Lake
-See3
-Lake
-See4
-Lake
 sheeps
 Sheep
 #___________________________________menu_text___________________________________
@@ -713,6 +669,8 @@ Couple
 A Couple
 Cyclist
 Biker
+Woman
+woman
 pedestrian_1
 Pedestrian
 pedestrian_2
@@ -725,8 +683,6 @@ pedestrian_child
 child
 pedestrian_dog
 dog
-Woman
-woman
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -747,8 +703,6 @@ rolls
  rolls
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
-choose_point
-Choose Point
 ChooseSignals
 Platform Choose Signals
 ChooseSignalsMonorail
@@ -763,10 +717,6 @@ NoAirEntry
 "No Entry" Taxiway Sign
 NoEntry
 no entry
-preSignals
-Pre-Signals (for two blocks)
-preSignalsMonorail
-Pre-Signals (for two blocks)
 RailClose
 Rail Close
 Railgate
@@ -777,6 +727,12 @@ Signals
 Rail Signal
 SignalsMonorail
 Signals
+choose_point
+Choose Point
+preSignals
+Pre-Signals (for two blocks)
+preSignalsMonorail
+Pre-Signals (for two blocks)
 traffic_light
 Traffic lights
 #_____________________________________tree______________________________________
@@ -915,20 +871,8 @@ BB1280
 JaCo BB1280 
 BB200
 Empire BB200
-Be5-7
-Empire Be 5/7
-Blimp
-MHz Blimp
-Book_Trike
-Parcel delivery trike
-Boxcar
-MJHN Box Car
 BR01
 SingCo Br01 4-6-2
-Br118DR
-Sojo Group Br118
-Br234
-Brose BR234
 BR38
 SingCo BR 38 2-6-0
 BR38-Tender
@@ -937,22 +881,34 @@ BR39
 SingCo BR39 2-8-2
 BR45
 SingCo BR45 2-10-2
+BR85
+SingCo BR86 2-8-2
+BRV36
+Colin BRV36
+Be5-7
+Empire Be 5/7
+Blimp
+MHz Blimp
+Book_Trike
+Parcel delivery trike
+Boxcar
+MJHN Box Car
+Br118DR
+Sojo Group Br118
+Br234
+Brose BR234
 Br614back
 BR614 Passenger Train (rear)
 Br614car
 BR614 Passenger Car
 Br614front
 BR614 Passenger Train
-BR85
-SingCo BR86 2-8-2
 Bretteranhaenger
 WF Ultd. Planks trailer
 Brettertransporter
 WF Ultd. Planks truck
 Bretterwagen
 VT Vienna Planks car
-BRV36
-Colin BRV36
 Buchanhaenger
 Serj/H-Trans Book trailer
 Buchtrailer
@@ -971,6 +927,8 @@ Bulkcarriage
 Bulk Goods Carriage
 Bus
 H-Trans Bus
+CC7100
+ACTrain CC7100
 CarFlat
 Automobile Flatcar
 Cargosprinter-Front
@@ -979,8 +937,6 @@ Cargosprinter-Mittel
 Cargosprinter freight car
 Cargosprinter-Steuer
 Cargosprinter (Rear Unit)
-CC7100
-ACTrain CC7100
 Cementtrailer
 Cement Trailer
 Class86
@@ -1019,18 +975,18 @@ Cooling_Truck
 Serj Cooling Truck
 Cooling_Waggon
 Food cooling wagon
-DaimlerStoll
-RvG Stoll Bus
 DC-3
 RvG MC-3
+DaimlerStoll
+RvG Stoll Bus
 Deponielaster
 Waste Truck
 Deponielaster2
 Double-bin Waste Truck
-Doubledeck_city_bus
-Double-decker Bus
 DoubleDecker
 Double-decker Passenger Car
+Doubledeck_city_bus
+Double-decker Bus
 E44
 Empire E44
 Eb3-5
@@ -1101,12 +1057,14 @@ H-Trans-Tigress-II-Back
 H-Trans Tigress II (rear)
 H-Trans-Tigress-II-Front
 H-Trans Tigress II
+HJMAvia
+HJM Avia Flat-nose Semi
+HVPosttransporter
+Eagle HVP Mail Truck
 Hadley-Page-V1500
 RvG V1500 Goose
 Heavy_ore_truck
 H1750 Heavy Dump Truck
-HJMAvia
-HJM Avia Flat-nose Semi
 Hochbordwagen
 RvG Hopper Car
 Holzanhaenger
@@ -1131,8 +1089,6 @@ Horsewoodcariage
 Stake Wagon
 Hunslet
 MHz Hunslet 0-4-0T
-HVPosttransporter
-Eagle HVP Mail Truck
 ICE_TD-back
 RvG TD (back)
 ICE_TD-car
@@ -1155,12 +1111,6 @@ JumboCruiserBack1
 Jumbo Cruiser (Rear)
 JumboJet
 RvG 747D
-kkStB_tender
-WEC kkStB Tender
-kkStB110
-WEC kkStB110 2-4-0
-kkStB91
-WEC kkStB91 0-6-0
 Klappdeckelwagen
 MHz Pellet Car Mk. I
 Kohleanhaenger
@@ -1181,18 +1131,16 @@ Lockhead_Tristar
 MHz Airframes M-1011 TriStar
 Lockheed10-Electra
 MHz Airframes S-188 Electra
-logs
-Logs
 Lowa
 T-26
 Lowa_Anhaenger
 T-26 (car)
 Mack_Truck_01
 TMC Long-nose Semi
-Mailcontainerwagon
-MSP Mail Car
 MailExpress
 MHz Airframes Red Mail
+Mailcontainerwagon
+MSP Mail Car
 Mailwagon
 Empire "Alto" Mail Car
 Milk_Truck
@@ -1205,12 +1153,12 @@ Moebelwagen
 DMC Furniture car
 Muellschiff
 MHz Waste Scow
-NeuOelwagen
-Empire Tanker
 NS1000
 P-Rail NS-1000
 NS1600
 P-Rail NS-1600
+NeuOelwagen
+Empire Tanker
 Oelanhaenger
 H-Trans Tanker Trailer
 Oelwagen
@@ -1219,8 +1167,6 @@ Oilbarge
 Empire Tanker Barge
 Oiltrailer
 SimCo Tanker Trailer
-old_open_car
-SimCo Bulk Gondola
 OldOil
 Kahan Tanker Car
 Ox2
@@ -1251,24 +1197,20 @@ PrPostwagen
 SingCo Mail Car
 RenaultTH5
 Colin TH5 Flat-nose Semi
-Sandanhaenger
-SMP Bulk Trailer
-Sandtransporter
-SMP Bulk Truck
-schooner
-Novia Scotia Schooner
-Schooner_Bark
-Schooner Barque
 SD40-2-back
 SD40 Double (rear)
 SD40-2-front
 SD40
-setra_S10
-Setra S10 bus
-SlowFerry
-H-Trans Ferry Boat
 SMPoiltruck
 SMP Tanker Truck
+Sandanhaenger
+SMP Bulk Trailer
+Sandtransporter
+SMP Bulk Truck
+Schooner_Bark
+Schooner Barque
+SlowFerry
+H-Trans Ferry Boat
 Stahlanhaenger
 H-Trans Steel Trailer
 Stahltransporter
@@ -1291,24 +1233,22 @@ T21_bus
 Empire T-21 Bus
 T24
 T-24
-Tanklastzug
-H-trans Tanker Truck
-Tatra-T4
-Tatra T-4
-Tatra-T4_Wagon
-Tatra T-4 (car)
 TB13
 T-13 (car)
 TB24
 T-24 (car)
-teaclipper
-Freight Clipper
 TPBeiwagen
 Abro TP-5200 (rear)
 TPPassagierwagen
 Empire-Osaka Passenger Car
 TPSchienenbus
 Abro TP-5200
+Tanklastzug
+H-trans Tanker Truck
+Tatra-T4
+Tatra T-4
+Tatra-T4_Wagon
+Tatra T-4 (car)
 Tram_GT6_Ende
 Autocar GT-6 (rear)
 Tram_GT6_Kopf
@@ -1321,8 +1261,6 @@ Ucy
 MHz Pellet Car Mk. III
 VolvoFH12
 Ikarus FH12 Flat-nose Semi
-wastewagon
-SimCo Waste Car
 X2000back
 X2000 Rear
 X2000car
@@ -1335,8 +1273,34 @@ XTest
 Kirayami X-1
 Zeppelin
 RvG Zeppelin
+kkStB110
+WEC kkStB110 2-4-0
+kkStB91
+WEC kkStB91 0-6-0
+kkStB_tender
+WEC kkStB Tender
+logs
+Logs
+old_open_car
+SimCo Bulk Gondola
+schooner
+Novia Scotia Schooner
+setra_S10
+Setra S10 bus
+teaclipper
+Freight Clipper
+wastewagon
+SimCo Waste Car
 #______________________________________way______________________________________
 #______________________________________way______________________________________
+Kanal
+Canal
+MaglevTrack
+Maglev Track
+MaglevTrackElevated
+Elevated Maglev Track
+Rillenschienen
+Light Rails
 asphalt_road
 Asphalt Road
 city_road
@@ -1351,18 +1315,10 @@ elevated_monorail
 Elevated Monorail Track
 gavel_road
 Gravel Road
-Kanal
-Canal
-MaglevTrack
-Maglev Track
-MaglevTrackElevated
-Elevated Maglev Track
 mip_cobblestone_road
 MIP Cobblestone Road
 monorail
 Monorail Track
-Rillenschienen
-Light Rails
 river
 Navigable River
 river2

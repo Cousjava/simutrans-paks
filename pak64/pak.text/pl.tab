@@ -9,20 +9,8 @@
 #                              Language: pl Polski                             #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                            Date Created: 5.01 2018                           #
+#                           Date Created: 12.06 2018                           #
 #                                                                              #
-#                                   authors:                                   #
-#                                    - An_dz                                   #
-#                   note: Verified where all texts are shown                   #
-#                       Bartlomiej Weclewski - BarthVader                      #
-#                                    - Dwachs                                  #
-#                                     - Emil                                   #
-#                                  - Flemmbrav                                 #
-#                                    - FrankP                                  #
-#                              Jaroslaw - Jaroslaw                             #
-#                                 Daniel - NNW                                 #
-#                                     - PTM                                    #
-#                                    - prissi                                  #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -31,12 +19,8 @@ ClassicRail
 Betonowy most kolejowy
 ClassicRoad
 Betonowy most drogowy
-koka_Bridge_single
-Wiadukt kolejowy
 MaglevBridge
 Most Maglev
-mlm_concrete_bridge
-Betonowy most kolei jednoszynowej
 ModernRoad
 Nowoczesny most (sprê¿ony beton)
 MonorailRamp
@@ -47,12 +31,16 @@ Schiffhebewerk
 ¦luza
 SteelRail
 Stalowy most kolejowy
-tb_classic_road
-Most ¿elbetonowy
 ViaductRail
 Kamienny wiadukt
 WoodenRoad
 Most drewniany
+koka_Bridge_single
+Wiadukt kolejowy
+mlm_concrete_bridge
+Betonowy most kolei jednoszynowej
+tb_classic_road
+Most ¿elbetonowy
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 00_01_CITY
@@ -105,12 +93,12 @@ A6_DOME
 Katedra\n\nW ka¿dym znacz±cym\nmie¶cie znajduje siê\nkatedra. Ale nie wszêdzie\nmo¿na w niej zobaczyæ taki\ncudowny obraz, jak tu,\ndlatego w³a¶nie ta katedra\njest taka du¿a i przyci±ga tak\nwielkie rzesze pielgrzymów.\n
 AirDepot
 Hangar (1900)
-AirportShed1930
-Poczta lotnicza (1901)
 AirStop
 Rêkaw
 AirTerminal477
 Terminal (1950)
+AirportShed1930
+Poczta lotnicza (1901)
 Avila_Big_StationBlg
 Budynek stacji (du¿y)
 Avila_Small_StationBlg
@@ -125,16 +113,6 @@ Bulk_StationBlg
 Sk³ad materia³ów sypkich
 BusStop
 Przystanek autobusowy
-Car_StationBlg
-Parking
-CarDepot
-Zajezdnia pojazdów drogowych
-CarStop
-Stacja za³adunkowa
-CattlePorch
-Zagroda na byd³o
-ChannelStop
-Nadbrze¿e
 COM_00_02
 Niezrzeszona stacja paliw\n\nStacja paliw nie nale¿±ca do\n¿adnego koncernu (nawet\ndo twojego). Sprzedaj± tam\nchrzczon± bajurê, wiêc nie\nwarto jej niszczyæ - nie\nstanowi dla ciebie\nkonkurencji.\n
 COM_00_03
@@ -187,6 +165,16 @@ COM_10_11
 Domy kupców\n\nLudzie, którzy mieszkaj± w tych\ndomach, to kupcy z dziada\npradziada. Parter zajmuj±\nich sklepy, na piêtrze\nznajduj± siê pokoje\nmieszkalne, a poddasza pe³ni±\nrolê magazynów.\n
 COM_10_12
 Zajazd\n\nMo¿esz tu przenocowaæ. Pokoje\ns± utrzymane w starym\nstylu, gdyby nie ¶wie¿o\npobielone ¶ciany, to\nmog³oby siê wydawaæ, ¿e\nnic tu nie zmieniono od setek\nlat. Oczywi¶cie nocleg w takim\nhistorycznym miejscu jest\nbardzo drogi, choæ warunki nie\ns± komfortowe.\n
+CarDepot
+Zajezdnia pojazdów drogowych
+CarStop
+Stacja za³adunkowa
+Car_StationBlg
+Parking
+CattlePorch
+Zagroda na byd³o
+ChannelStop
+Nadbrze¿e
 Control_StationBlg
 Dyspozytornia
 DenkFlor
@@ -215,12 +203,12 @@ Fluid_StationBlg
 Zbiornik ropy/benzyny
 FreightTrainStop
 Stacja towarowa
-Gas_StationBlg
-Zbiornik gazu
 GCG1TrainStop
 Du¿y dworzec (lewy tor)
 GCG2TrainStop
 Du¿y dworzec (prawy tor)
+Gas_StationBlg
+Zbiornik gazu
 Goods_StationBlg
 Magazyny
 Gymnasium
@@ -241,34 +229,36 @@ LeuchtturmShipStop
 Latarnia morska
 Lighthouse
 Latarnia morska\n\n
-MainTerminal1930
-Terminal (1930)
 MHzSmallStation
 Budynek stacyjny I
+MainTerminal1930
+Terminal (1930)
 ModernAirTerminal477
 Nowoczesny terminal
 MonorailDepot
 Zajezdnia
 OldTownhall
 Stary ratusz\n\n
-Patricks_Rock
-£ysa góra\n\nLegenda g³osi, ¿e kiedy¶ raz do\nroku odbywa³ siê na tej\ngórze zlot czarownic. Dzi¶\nnie ma tu ich wcale, lub\nskutecznie ukrywaj± siê w\nt³umie turystów, licznie\nodwiedzaj±cych to miejsce.\n
-PostOffice
-Poczta
-PostStop
-Skrzynka pocztowa
 PSFreightTrainStop
 Peron towarowy
 PSHall1TrainStop
 Dworzec kolejowy
 PSHall2TrainStop
 Dworzec kolejowy I
-Raven_Kirche
-Ko¶ció³ ¶w. Krzysztofa\n\n¦wiêty Krzysztof jest uwa¿any\nza opiekuna podró¿nych,\npielgrzymów, kierowców\nprzewodników, flisaków,\nmarynarzy, wo¼niców,\n¿eglarzy, biegaczy i tragarzy.\nNic dziwnego, ¿e w tym\nko¶ciele zawsze jest mnóstwo\nludzi. Na pewno spotkasz tu\nrównie¿ pracowników Twoich\nlinii.\n
+Patricks_Rock
+£ysa góra\n\nLegenda g³osi, ¿e kiedy¶ raz do\nroku odbywa³ siê na tej\ngórze zlot czarownic. Dzi¶\nnie ma tu ich wcale, lub\nskutecznie ukrywaj± siê w\nt³umie turystów, licznie\nodwiedzaj±cych to miejsce.\n
+PostOffice
+Poczta
+PostStop
+Skrzynka pocztowa
 RES_00_08
 Dom z gara¿em\n\nPierwotnie gara¿ tego domku by³ w\npiwnicy, ale jego w³a¶ciciel\npewnego dnia kupi³ sobie\ndu¿y wóz kempingowy i\nzapragn±³ trzymaæ go w\ngara¿u. Wybudowa³ wiêc nowy\ngara¿ obok domu zas³aniaj±c\nsiê nim przy okazji od\nw¶cibskich s±siadów.\n
+Raven_Kirche
+Ko¶ció³ ¶w. Krzysztofa\n\n¦wiêty Krzysztof jest uwa¿any\nza opiekuna podró¿nych,\npielgrzymów, kierowców\nprzewodników, flisaków,\nmarynarzy, wo¼niców,\n¿eglarzy, biegaczy i tragarzy.\nNic dziwnego, ¿e w tym\nko¶ciele zawsze jest mnóstwo\nludzi. Na pewno spotkasz tu\nrównie¿ pracowników Twoich\nlinii.\n
 Residenz
 Rezydencja Burmistrza\n\nBurmistrz tego miasta jest ju¿\nwystarczaj±co bogaty, aby\nwystawiæ sobie ten ma³y\nreprezentacyjny pa³acyk i\nw nim mieszkaæ oraz\nprzyjmowaæ licznych go¶ci z\nca³ego ¶wiata.\n
+STADIUM2
+Du¿y stadion\n\nTutaj odbywaj± siê wszystkie\nwa¿ne i du¿e imprezy\nwidowiskowe. Równie¿ te o\nrandze miêdzynarodowej.\n
 SandStationMHz
 Peron tymczasowy
 ShipDepot
@@ -277,8 +267,6 @@ ShipDepotEW
 Stocznia
 ShipStop
 Doki pasa¿erskie
-STADIUM2
-Du¿y stadion\n\nTutaj odbywaj± siê wszystkie\nwa¿ne i du¿e imprezy\nwidowiskowe. Równie¿ te o\nrandze miêdzynarodowej.\n
 Terminal1930
 Terminal pasa¿erski (1930)
 Tower1930
@@ -305,18 +293,14 @@ Ambulanz
 Ambulans
 FordT
 Ford T
-green_car
-Zielony sedan
 Motorrad
 Motocykl
+green_car
+Zielony sedan
 orange_bus
 Gimbus
 yellow_car
 ¯ó³ty sedan
-#__________________________________dummy_info___________________________________
-#__________________________________dummy_info___________________________________
-factory_cannery_details
-<title>Fabryki konserw</title>\n<h1>Fabryki konserw</h1>\n<p>Produkty konserwowane w puszkach wprowadzi³ Anglik, Peter Durand. Jego pomys³ kupi³a firma Dinkin, Hall and Gamble. W 1811 za³o¿y³a ona zak³ady puszkuj±ce ¿ywno¶æ i od 1830 puszkowan± ¿ywno¶æ mo¿na by³o zakupiæ w londyñskich sklepach.</p>\n<p>W tej fabryce specjalizuj± siê w przetworach miêsnych (mielonki, konserwy turystyczne, pasztety) oraz rybnych (paprykarze, ¶ledzie w oleju i pomidorach, tuñczyk w oleju lub sosie w³asnym)</p>\n
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -329,44 +313,22 @@ Autohaus
 Salon samochodowy
 Autohersteller
 Fabryka samochodów
-bakery
-Piekarnia
-brewery
-Browar
 Buchgrosshandel
 Ksiêgarnia
-cannery
-Fabryka konserw
+CHEMIST
+Apteka
 Cementmill
 Cementownia
 ChemicalPlant
 Zak³ady przemys³u chemicznego
-CHEMIST
-Apteka
 Concretefactory
 Betoniarnia
-cow_farm
-Hodowla byd³a
-dairy
-Mleczarnia
 Druckerei
 Drukarnia
 Erzbergwerk
 Kopalnia ¿elaza
-fish_pond
-Stawy hodowlane
-fish_swarm
-£awica ryb
-food_processing_plant
-Przetwórnia ¿ywno¶ci
 Geokraftwerk
 Elektrownia geotermalna
-grain_farm
-Gospodarstwo rolne
-grain_mill
-M³yny zbo¿owe
-grain_windmill
-M³yny zbo¿owe
 Incinerator
 Spalarnia ¶mieci
 Kohlegrube
@@ -393,8 +355,6 @@ Oelkraftwerk
 Elektrownia naftowa
 Oelpumpe
 Kiwon
-old_farm
-Farma
 Papierfabrik
 Zak³ady papiernicze
 Pharmaceutics
@@ -409,60 +369,72 @@ SaegewerkMHz
 Tartak
 Sandquarry
 Piaskownia
-scrap_yard
-Wysypisko ¶mieci
 Stahlwerk
 Huta ¿elaza
 Stonequarry
 Kamienio³om
-supermarket
-Supermarket
 TANKE
 Stacja benzynowa
-thermisches_Solarkraftwerk
-Elektrownia s³oneczna
 Turmkraftwerk
 Elektrownia s³oneczna
 Windkraftwerk
 Elektrownia wiatrowa
+bakery
+Piekarnia
+brewery
+Browar
+cannery
+Fabryka konserw
+cow_farm
+Hodowla byd³a
+dairy
+Mleczarnia
+fish_pond
+Stawy hodowlane
+fish_swarm
+£awica ryb
+food_processing_plant
+Przetwórnia ¿ywno¶ci
+grain_farm
+Gospodarstwo rolne
+grain_mill
+M³yny zbo¿owe
+grain_windmill
+M³yny zbo¿owe
+old_farm
+Farma
+scrap_yard
+Wysypisko ¶mieci
+supermarket
+Supermarket
+thermisches_Solarkraftwerk
+Elektrownia s³oneczna
+#_________________________________factory_info__________________________________
+#_________________________________factory_info__________________________________
+factory_cannery_details
+<title>Fabryki konserw</title>\n<h1>Fabryki konserw</h1>\n<p>Produkty konserwowane w puszkach wprowadzi³ Anglik, Peter Durand. Jego pomys³ kupi³a firma Dinkin, Hall and Gamble. W 1811 za³o¿y³a ona zak³ady puszkuj±ce ¿ywno¶æ i od 1830 puszkowan± ¿ywno¶æ mo¿na by³o zakupiæ w londyñskich sklepach.</p>\n<p>W tej fabryce specjalizuj± siê w przetworach miêsnych (mielonki, konserwy turystyczne, pasztety) oraz rybnych (paprykarze, ¶ledzie w oleju i pomidorach, tuñczyk w oleju lub sosie w³asnym)</p>\n
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
 Samochody
-beer
-Piwo
 Bretter
 Deski
 Buecher
 Ksi±¿ki
-canned_food
-Konserwy
 Chemicals
 Chemikalia
 Concrete
 Beton
 Eisenerz
 Ruda ¿elaza
-fish
-Ryby
-flour
-M±ka
-food
-¯ywno¶æ
 Gasoline
 Benzyna
-grain
-Zbo¿e
 Holz
 Drewno
 Kohle
 Wêgiel
-meat
-Miêso
 Medicine
 Lekarstwa
-milk
-Mleko
 Moebel
 Meble
 None
@@ -481,10 +453,38 @@ Stahl
 Stal
 Stone
 Kamieñ
+beer
+Piwo
+canned_food
+Konserwy
+fish
+Ryby
+flour
+M±ka
+food
+¯ywno¶æ
+grain
+Zbo¿e
+meat
+Miêso
+milk
+Mleko
 waste
 ¦mieci
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
+Hochsitz1
+Budka my¶liwska
+Hochsitz2
+Budka my¶liwska
+See1
+Jezioro
+See2
+Jezioro
+See3
+Jezioro
+See4
+Jezioro
 bushes
 Krzaki
 deco_rock
@@ -497,22 +497,10 @@ gemsen
 Kozice
 gooses
 Gêsi
-Hochsitz1
-Budka my¶liwska
-Hochsitz2
-Budka my¶liwska
 moles
 Kretowiska
 rocks
 Ska³y
-See1
-Jezioro
-See2
-Jezioro
-See3
-Jezioro
-See4
-Jezioro
 sheeps
 Owce
 #__________________________________pedestrian___________________________________
@@ -521,6 +509,8 @@ Couple
 Zakochani\n\nZakochani s± w¶ród nas, jak ¶piewa³a Helena Majdaniec... Podgl±danie ich raczej nie jest zbyt kulturalne, wiêc lepiej zaj±æ siê czym¶ innym, np. wybudowaæ jak±¶ liniê.
 Cyclist
 Rowerzysta\n\nLech Janerka "jedzie na rowerze do byle gdzie". Ten osobnik zapewne te¿, bo gdyby wiedzia³ gdzie jechaæ, skorzysta³by z komunikacji publicznej.
+Woman
+Kobieta
 pedestrian_1
 Pan Tomek\n\nPan Tomkek w³a¶nie przyjecha³. Za kilka dni bêdzie wraca³, s±dz±c po minie wybierze te same linie, bo wygl±da na zadowolonego.
 pedestrian_2
@@ -533,8 +523,6 @@ pedestrian_child
 Matka z dzieckiem\n\nZbyt du¿y t³ok jest w autobusach, wiêc ta pani woli chodziæ bezpiecznie ni¿ nara¿aæ dziecko na uduszenie w przepchanym busie.
 pedestrian_dog
 Cz³owiek z psem\n\nNie masz z kim chodziæ na spacery? Kup sobie psa.
-Woman
-Kobieta
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -555,8 +543,6 @@ rolls
 rolki
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
-choose_point
-Drogowskaz
 ChooseSignals
 Semafor wyboru peronu
 ChooseSignalsMonorail
@@ -571,10 +557,6 @@ NoAirEntry
 Zakaz wjazdu (pas startowy)
 NoEntry
 Zakaz wjazdu
-preSignals
-Pre-sygna³
-preSignalsMonorail
-Pre-sygna³
 RailClose
 Zakaz wjazdu
 Railgate
@@ -585,6 +567,12 @@ Signals
 Semafor
 SignalsMonorail
 Semafor
+choose_point
+Drogowskaz
+preSignals
+Pre-sygna³
+preSignalsMonorail
+Pre-sygna³
 traffic_light
 Sygnalizacja ¶wietlna
 #_____________________________________tree______________________________________
@@ -701,12 +689,6 @@ Autotransportwagen
 TPI (przewóz samochodów)
 BB1280
 BB1280 (krokodyl)
-Be5-7
-Lokomotywa Be 5/7
-Blimp
-Sterowiec
-Boxcar
-Wagon towarowy
 BR01
 Lokomotywa BR 01
 BR38
@@ -719,14 +701,20 @@ BR45
 Lokomotywa BR 45
 BR85
 Lokomotywa BR 86
+BRV36
+Lokomotywa BRV36
+Be5-7
+Lokomotywa Be 5/7
+Blimp
+Sterowiec
+Boxcar
+Wagon towarowy
 Bretteranhaenger
 Przyczepa WF Ultd. (deski)
 Brettertransporter
 Ciê¿arówka WF Ultd. (deski)
 Bretterwagen
 VT Vienna (deski)
-BRV36
-Lokomotywa BRV36
 Buchanhaenger
 Przyczepa Serj/H-Trans (ksi±¿ki)
 Buchtrailer
@@ -795,6 +783,8 @@ H-Trans-Tigress-II-Back
 Lokomotywa koñcowa Tigress II
 H-Trans-Tigress-II-Front
 Lokomotywa Tigress II
+HVPosttransporter
+Pocztowóz DIBU
 Heavy_ore_truck
 Wozid³o Belaz
 Hochbordwagen
@@ -821,8 +811,6 @@ Horsewoodcariage
 Wóz konny (drewno)
 Hunslet
 Lokomotywa manewrowa Hunslet
-HVPosttransporter
-Pocztowóz DIBU
 ICE_TD-back
 Lokomotywa koñcowa ICE-TD
 ICE_TD-car
@@ -841,12 +829,6 @@ Ju52
 Samolot pasa¿erski Ju52
 JumboJet
 Boeing 747 "Jumbo Jet"
-kkStB_tender
-Tender parowozów kkStB
-kkStB110
-Lokomotywa kkStB110
-kkStB91
-Lokomotywa kkStB91
 Kohleanhaenger
 H-Trans (wêgiel)
 Kohletransporter
@@ -857,8 +839,6 @@ Kunststofanhaenger
 Przyczepa H-Trans (plastik)
 Kunststofftransporter
 H-Trans (plastik)
-logs
-barka
 Lowa
 Tramwaj Lowa
 Lowa_Anhaenger
@@ -883,8 +863,6 @@ Oilbarge
 barka
 Oiltrailer
 Naczepa (ropa/benzyna)
-old_open_car
-wagon wêglarka
 OldOil
 Cysterna (18t)
 Ox2
@@ -915,20 +893,18 @@ PrPostwagen
 Wagon pocztowy
 RenaultTH5
 Renault TH5
-Sandanhaenger
-Pryczepa WF Ultd. (piasek)
-Sandtransporter
-Ciê¿arówka WF Ultd.
-schooner
-¯aglowiec Dar Pomorza
 SD40-2-back
 Lokomotywa koñcowa SD40-2
 SD40-2-front
 Lokomotywa SD40-2
-SlowFerry
-H-Trans Passenger Ferry
 SMPoiltruck
 Cysterna Star 20
+Sandanhaenger
+Pryczepa WF Ultd. (piasek)
+Sandtransporter
+Ciê¿arówka WF Ultd.
+SlowFerry
+H-Trans Passenger Ferry
 Stahlanhaenger
 Przyczepa H-Trans (stal)
 Stahltransporter
@@ -947,12 +923,6 @@ T13
 Tramwaj T13
 T24
 Tramwaj T24
-Tanklastzug
-Cysterna H-Trans (ropa/benzyna)
-Tatra-T4
-Tatra T4
-Tatra-T4_Wagon
-Tatra T4 (doczepa)
 TB13
 Doczepa TB13
 TB24
@@ -963,6 +933,12 @@ TPPassagierwagen
 TPI wagon pasa¿erski
 TPSchienenbus
 TPI VT98 (dmu)
+Tanklastzug
+Cysterna H-Trans (ropa/benzyna)
+Tatra-T4
+Tatra T4
+Tatra-T4_Wagon
+Tatra T4 (doczepa)
 Tram_GT6_Ende
 Düwag GT6 (koñcówka)
 Tram_GT6_Kopf
@@ -977,8 +953,30 @@ XTest
 Wagon pasa¿erski
 Zeppelin
 Sterowiec Zeppelin
+kkStB110
+Lokomotywa kkStB110
+kkStB91
+Lokomotywa kkStB91
+kkStB_tender
+Tender parowozów kkStB
+logs
+barka
+old_open_car
+wagon wêglarka
+schooner
+¯aglowiec Dar Pomorza
 #______________________________________way______________________________________
 #______________________________________way______________________________________
+Kanal
+Kana³
+MaglevTrack
+Tory Maglev
+MaglevTrackElevated
+Podwy¿szone tory kolei Maglev
+Powerline
+Linia wysokiego napiêcia
+Rillenschienen
+Tory tramwajowe
 asphalt_road
 Droga asfaltowa
 city_road
@@ -993,20 +991,10 @@ elevated_monorail
 Podwy¿szona kolej jednoszynowa
 gavel_road
 Droga szutrowa
-Kanal
-Kana³
-MaglevTrack
-Tory Maglev
-MaglevTrackElevated
-Podwy¿szone tory kolei Maglev
 mip_cobblestone_road
 Droga brukowana MIP
 monorail
 Tor kolei jednoszynowej
-Powerline
-Linia wysokiego napiêcia
-Rillenschienen
-Tory tramwajowe
 river
 Rzeka
 river2

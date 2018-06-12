@@ -9,18 +9,8 @@
 #                             Language: hr Hrvatski                            #
 #                             Encoding: ISO-8859-2                             #
 #                            Font : prop-latin2.fnt                            #
-#                            Date Created: 5.01 2018                           #
+#                           Date Created: 12.06 2018                           #
 #                                                                              #
-#                                   authors:                                   #
-#                                    - An_dz                                   #
-#                   note: Verified where all texts are shown                   #
-#                                    - Dwachs                                  #
-#                                  - Flemmbrav                                 #
-#                                    - FrankP                                  #
-#                                 Daniel - NNW                                 #
-#                                   - Nico192                                  #
-#                                     - PTM                                    #
-#                                    - prissi                                  #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -29,12 +19,8 @@ ClassicRail
 Betonski zeljeznicki most
 ClassicRoad
 Betonski Cestovni Most
-koka_Bridge_single
-uzdignuta tracnica
 MaglevBridge
 Maglev Most
-mlm_concrete_bridge
-betonski monorail most
 ModernRoad
 Moderni Cestovni Most (prednapregnut beton)
 MonorailRamp
@@ -45,12 +31,16 @@ Schiffhebewerk
 Brodska Dizalica
 SteelRail
 Celicni nosivi zelejeznicki most
-tb_classic_road
-Betonski cestovni most
 ViaductRail
 vijadukt od kamene opeke
 WoodenRoad
 Drveni cestovni most
+koka_Bridge_single
+uzdignuta tracnica
+mlm_concrete_bridge
+betonski monorail most
+tb_classic_road
+Betonski cestovni most
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 00_01_CITY
@@ -99,12 +89,6 @@ Bulk_StationBlg
 Zgrada Stanice Rasutog Tereta
 BusStop
 Autobusno stajaliste
-Car_StationBlg
-Stanicno Parkiraliste
-CarDepot
-Garaza
-CarStop
-Zaljev Punjenja
 COM_00_10
 Kuca je poplocena crvenim\nciglicama.\n\n
 COM_00_22
@@ -117,6 +101,12 @@ COM_01_21
 Bok ureda\n\n
 COM_02_13
 Stanarska Zgrada\n\n
+CarDepot
+Garaza
+CarStop
+Zaljev Punjenja
+Car_StationBlg
+Stanicno Parkiraliste
 Control_StationBlg
 Zgrada Kontrole Stanice
 Fluid_StationBlg
@@ -159,34 +149,14 @@ Motorrad
 Motor
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
-bakery
-Pekara
-brewery
-Pivovara
-cannery
-Tvornica konzervi
 Cementmill
 Cementni Mlin
 Concretefactory
 Cementni mikser
-cow_farm
-Stocno dvoriste
-dairy
-Mljekara
 Druckerei
 Tiskara
 Erzbergwerk
 Rudnik zeljezne rude
-fish_pond
-Jezerce s ribom
-fish_swarm
-Ribnjak
-food_processing_plant
-Tvornica hrane
-grain_farm
-Farma zitarica
-grain_mill
-Mlin zitarica
 Kohlekraftwerk
 Ugljena elektrana
 Materialswholesale
@@ -211,18 +181,34 @@ Sandquarry
 Kamenolom Pijeska
 Stonequarry
 Kamenolom
+bakery
+Pekara
+brewery
+Pivovara
+cannery
+Tvornica konzervi
+cow_farm
+Stocno dvoriste
+dairy
+Mljekara
+fish_pond
+Jezerce s ribom
+fish_swarm
+Ribnjak
+food_processing_plant
+Tvornica hrane
+grain_farm
+Farma zitarica
+grain_mill
+Mlin zitarica
 supermarket
 Trgovacki centar
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
 automobili
-beer
-pivo
 Bretter
 trupci
-canned_food
-konzervirana hrana
 Cement
 cement
 Chemicals
@@ -231,24 +217,12 @@ Concrete
 beton
 Eisenerz
 zeljezna ruda
-fish
-riba
-flour
-brasno
-food
-hrana
 Gasoline
 benzin
-grain
-zitratice
 Holz
 drvo
 Kohle
 ugljen
-meat
-meso
-milk
-mlijeko
 Moebel
 Pokustvo
 None
@@ -269,6 +243,22 @@ Stahl
 celik
 Stone
 kamen
+beer
+pivo
+canned_food
+konzervirana hrana
+fish
+riba
+flour
+brasno
+food
+hrana
+grain
+zitratice
+meat
+meso
+milk
+mlijeko
 waste
 smece
 #_________________________________program_text__________________________________
@@ -289,18 +279,18 @@ CATEGORY_07
 proizvod farme
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
-choose_point
-Znak odabira cilja
 ChooseSignals
 Signal Odabira Platforme (standardni tip)
 Minimum80
 Minimalni brzinski limit 80
 NoEntry
 Jednosmjerni znak
-preSignals
-Predsignal (standardni tip)
 Signals
 Signal (standardni tip)
+choose_point
+Znak odabira cilja
+preSignals
+Predsignal (standardni tip)
 traffic_light
 Prometno svjetlo
 #____________________________________tunnel_____________________________________
@@ -319,6 +309,10 @@ Postwagen
 Cannonball Postanski Vagon
 #______________________________________way______________________________________
 #______________________________________way______________________________________
+Powerline
+Dalekovod
+Rillenschienen
+Tramvajske tracnice
 asphalt_road
 Asfaltna Ulica
 city_road
@@ -331,10 +325,6 @@ dirt_road
 Prasnjava cesta
 monorail
 Monorail
-Powerline
-Dalekovod
-Rillenschienen
-Tramvajske tracnice
 runway_modern
 Moderna poletno/sletna staza
 steel_sleeper_track

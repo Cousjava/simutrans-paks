@@ -9,23 +9,8 @@
 #                             Language: ru Russian                             #
 #                                Encoding: UTF-8                               #
 #                                Font : cyr.bdf                                #
-#                            Date Created: 5.01 2018                           #
+#                           Date Created: 12.06 2018                           #
 #                                                                              #
-#                                   authors:                                   #
-#                                    - An_dz                                   #
-#                   note: Verified where all texts are shown                   #
-#                          Timothy Khalatzky - Arhimed                         #
-#                                    - Dwachs                                  #
-#                                  - Flemmbrav                                 #
-#                                    - FrankP                                  #
-#                               Evgen - Kozinsky                               #
-#                                     - MaxK                                   #
-#                                 Daniel - NNW                                 #
-#                                     - PTM                                    #
-#                         Mikhail Pestrechikhin - Pestr                        #
-#                            Woratiklis - Woratiklis                           #
-#                                    - prissi                                  #
-#                                Stepan - stepan                               #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -70,12 +55,12 @@ Bulk_StationBlg
 Станция сыпучих грузов
 BusStop
 остановка
-Car_StationBlg
-Здание автостоянки
 CarDepot
 Гараж
 CarStop
 Погрузочная площадка
+Car_StationBlg
+Здание автостоянки
 Control_StationBlg
 Станционная контора
 DenkFlor
@@ -100,6 +85,8 @@ STADIUM2
 Большой стадион   -\nместо для большого \nколичества волнующих \nспортивных событий!   Он\nвмещает 25 000.\n
 TrainStop
 Станция
+TramDepot
+Трамвайное депо
 Windmill
 Ветряная мельница\n\n
 #____________________________________factory____________________________________
@@ -114,44 +101,22 @@ Autohaus
 Автомагазин
 Autohersteller
 Автозавод
-bakery
-Пекарня
-brewery
-Пивоваренный завод
 Buchgrosshandel
 Книжный оптовик
-cannery
-Консервная фабрика
+CHEMIST
+Химик
 Cementmill
 Цементный завод
 ChemicalPlant
 Химический завод
-CHEMIST
-Химик
 Concretefactory
 Бетонный завод
-cow_farm
-Животноводческая ферма
-dairy
-Маслобойня
 Druckerei
 Типография
 Erzbergwerk
 Железодобывающая шахта
-fish_pond
-Рыбоводческое хозяйство
-fish_swarm
-Fish swarm
-food_processing_plant
-Пищевой комбинат
 Geokraftwerk
 Геотермальная электростанция
-grain_farm
-Зерноферма
-grain_mill
-Мельница
-grain_windmill
-Ветряная мельница
 Incinerator
 Мусоросжигательная печь
 Kohlegrube
@@ -178,8 +143,6 @@ Oelkraftwerk
 Мазутная электростанция
 Oelpumpe
 Нефтяная вышка
-old_farm
-Ферма
 Papierfabrik
 Бумажный завод
 Pharmaceutics
@@ -194,34 +157,54 @@ SaegewerkMHz
 Мастерская Кузьмича
 Sandquarry
 Песчаный карьер
-scrap_yard
-Свалка
 Stahlwerk
 Железный карьер
 Stonequarry
 Каменный карьер
-supermarket
-Супермаркет
 TANKE
 Автозаправочная станция
-thermisches_Solarkraftwerk
-Солнечная электростанция
 Turmkraftwerk
 Солнечная электростанция
 Windkraftwerk
 Ветряная электростанция
+bakery
+Пекарня
+brewery
+Пивоваренный завод
+cannery
+Консервная фабрика
+cow_farm
+Животноводческая ферма
+dairy
+Маслобойня
+fish_pond
+Рыбоводческое хозяйство
+fish_swarm
+Fish swarm
+food_processing_plant
+Пищевой комбинат
+grain_farm
+Зерноферма
+grain_mill
+Мельница
+grain_windmill
+Ветряная мельница
+old_farm
+Ферма
+scrap_yard
+Свалка
+supermarket
+Супермаркет
+thermisches_Solarkraftwerk
+Солнечная электростанция
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
 Автомобили
-beer
-Пиво
 Bretter
 Доски
 Buecher
 Книги
-canned_food
-Консервы
 Cement
 Цемент
 Chemicals
@@ -230,26 +213,14 @@ Concrete
 Бетон
 Eisenerz
 Железная руда
-fish
-Рыба
-flour
-Мука
-food
-Пища
 Gasoline
 Бензин
-grain
-зерно
 Holz
 Древесина
 Kohle
 Уголь
-meat
-Мясо
 Medicine
 Медикаменты
-milk
-Молоко
 Moebel
 Мебель
 Oel
@@ -270,6 +241,22 @@ Stahl
 Сталь
 Stone
 Камень
+beer
+Пиво
+canned_food
+Консервы
+fish
+Рыба
+flour
+Мука
+food
+Пища
+grain
+зерно
+meat
+Мясо
+milk
+Молоко
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -286,12 +273,12 @@ CATEGORY_06
 длинномерные товары
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
-choose_point
-Указатель
 Minimum80
 Минимальная скорость 80
 NoEntry
 Въезд запрещён
+choose_point
+Указатель
 traffic_light
 Светофор
 #_____________________________________tree______________________________________
@@ -362,6 +349,8 @@ H-Trans-Tiger-Car
 Автобус H-Trans Tigress
 H-Trans-Tiger-Mail-Car
 Почтовая машина H-Trans Tigress
+HVPosttransporter
+Почтовый фургон DIBU/H-Trans
 Holzanhaenger
 Прицеп JET (древесина)
 Holztransporter
@@ -378,8 +367,6 @@ Horses
 Лошади
 Horsewoodcariage
 Лошадиная повозка для дерева
-HVPosttransporter
-Почтовый фургон DIBU/H-Trans
 Kohleanhaenger
 Прицеп H-Trans MK2 (уголь)
 Kohletransporter
@@ -430,16 +417,20 @@ Stoneanhaenger
 Прицеп WF Ultd. (камни)
 Stonetransporter
 грузовик WF Ultd. MK2 (камни)
-Tanklastzug
-Нефтецистерна H-Trans
 TPBeiwagen
 Пассажирский вагон TPI VT98
 TPPassagierwagen
 Пассажирский вагон TPI
 TPSchienenbus
 TPI VT98 (дизель)
+Tanklastzug
+Нефтецистерна H-Trans
 #______________________________________way______________________________________
 #______________________________________way______________________________________
+Powerline
+ВЛЭП
+Rillenschienen
+Трамвайные пути
 asphalt_road
 Асфальтированная дорога
 city_road
@@ -454,10 +445,6 @@ gavel_road
 Gavel дорога
 mip_cobblestone_road
 MIP булыжная мостовая
-Powerline
-ВЛЭП
-Rillenschienen
-Трамвайные пути
 runway_modern
 Современная полоса
 steel_sleeper_track

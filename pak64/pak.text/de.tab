@@ -9,38 +9,8 @@
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 5.01 2018                           #
+#                           Date Created: 12.06 2018                           #
 #                                                                              #
-#                                   authors:                                   #
-#                                    - prissi                                  #
-#                               Sven Osada - sojo                              #
-#                         note: maintainer pak96.comic                         #
-#                            Oliver Mayer - rakishly                           #
-#                                 - transporter                                #
-#                                    - An_dz                                   #
-#                   note: Verified where all texts are shown                   #
-#                                   - Tjoeker                                  #
-#                                    - Makie                                   #
-#                                    - FrankP                                  #
-#                                - jounior-fuchs                               #
-#                         Alexandre Raymond - alekcxjo                         #
-#                           Michael Olbricht - whoami                          #
-#                                   - Eps-Omo                                  #
-#                                   - Combuijs                                 #
-#                        Constantin Grabowski - Moistboy                       #
-#                                 Daniel - NNW                                 #
-#                              Jaroslaw - Jaroslaw                             #
-#                                    - Dwachs                                  #
-#                                   - gebeine                                  #
-#                        note: maintainer PAK128.german                        #
-#                          Alexander Huber - alexhuber                         #
-#                                   - Leartin                                  #
-#                                     - PTM                                    #
-#                                     - MaxK                                   #
-#                                    - Cruzer                                  #
-#                 note: Ex-Entwickler und Gründer pak192.comic                 #
-#                                   - Nico192                                  #
-#                                  - Flemmbrav                                 #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -49,12 +19,8 @@ ClassicRail
 Eisenbahnbrücke (Beton)
 ClassicRoad
 Straßenbrücke (Beton)
-koka_Bridge_single
-aufgeständerte Strecke
 MaglevBridge
 Magnetschwebebahn-Brücke
-mlm_concrete_bridge
-Monorailbrücke
 ModernRoad
 Moderne Spannbetonbrücke
 MonorailRamp
@@ -65,12 +31,16 @@ Schiffhebewerk
 Schiffshebewerk
 SteelRail
 Eisenbahnbrücke (Stahl)
-tb_classic_road
-Betonträgerbrücke
 ViaductRail
 Backsteinviadukt
 WoodenRoad
 Straßenbrücke aus Holz
+koka_Bridge_single
+aufgeständerte Strecke
+mlm_concrete_bridge
+Monorailbrücke
+tb_classic_road
+Betonträgerbrücke
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 00_01_CITY
@@ -119,12 +89,12 @@ A6_DOME
 Kathedrale\n\nDiese gotische Kathedrale\nbeherrscht seit fast einem\nJahrtausend das Stadtbild.\n
 AirDepot
 Hangar von 1900
-AirportShed1930
-Luftpost-Zwischenlager (von 1901)
 AirStop
 Gangway
 AirTerminal477
 50er-Jahre Terminal
+AirportShed1930
+Luftpost-Zwischenlager (von 1901)
 Avila_Big_StationBlg
 Großes Bahnhofsgebäude
 Avila_Small_StationBlg
@@ -139,16 +109,6 @@ Bulk_StationBlg
 Bekohlungsanlage
 BusStop
 Bushaltestelle
-Car_StationBlg
-PKW-Verladeplatz
-CarDepot
-Depot für Straßenfahrzeuge
-CarStop
-Frachthof
-CattlePorch
-Tierpferch
-ChannelStop
-Binnenhafen
 COM_00_01
 Kleiner Kiosk\n\n\nHier gibt es jede Menge billigen Krimskrams, ohne den niemand leben kann.\nEhrlich!\nWenn der Betreiber nicht gerade Pause macht oder im Schrebergarten ist, dann hat der Laden 24 Stunden am Tag geöffnet.
 COM_00_02
@@ -237,6 +197,16 @@ COM_10_12
 Zwei Pferde stehen vor der\nSchmiede. Auch sie wollen\nbeschlagen werden, aber\nbekannt ist Schmied Ambros\nvor allem für seine kunstvollen\nGeländer.\n
 COM_12_04
 Der Park zur heiligen Meernynphe zieht wegen seinem Names die Besuchermassen an; die wenigsten Spaziergänger entdecken jedoch den seltenen Nynphenstrauch in der hinteren Ecke.
+CarDepot
+Depot für Straßenfahrzeuge
+CarStop
+Frachthof
+Car_StationBlg
+PKW-Verladeplatz
+CattlePorch
+Tierpferch
+ChannelStop
+Binnenhafen
 Control_StationBlg
 Stellwerk
 DenkDirk
@@ -269,14 +239,14 @@ FreightShipStop
 Frachthafen
 FreightTrainStop
 Güterbahnhof
-Gas_StationBlg
-Gasbehälter
 GCG1TrainStop
 große Halle (linke Hälfte)
 GCG2TrainStop
 große Halle (rechte Hälfte)
 GCGTrainStop
 Große Halle
+Gas_StationBlg
+Gasbehälter
 Goods_StationBlg
 Lagerhalle
 Gymnasium
@@ -349,18 +319,16 @@ KingsbridgeMonastry
 Kloster\n\nin dem kürzlich in der alten Bibliothek eine alte Handschrift "Simutrans necesse est" über den Ursprung des Transportwesens auftauchte.
 LargeShipStop
 großer Frachtkran
-leftShipStop
-Schwerlastkran
 LeuchtturmShipStop
 Überseekai mit Leuchtturm
 Lighthouse
 Leuchtturm\n\nEinst der hellste Leuchtturm an\ndieser Küste. Doch seit die\nSchiffe per Radar-Autopilot\ndurch die Weltmeere\nrauschen, ist er heute nur\nnoch eine Touristenattraktion.\n
 LongBusStop
 Doppelhaltestelle
-MainTerminal1930
-Terminal-Haupthalle (1930)
 MHzSmallStation
 Bahnhofsgebäude
+MainTerminal1930
+Terminal-Haupthalle (1930)
 ModernAirTerminal477
 Modernes Gate
 MonorailDepot
@@ -371,6 +339,12 @@ MonorailGround
 Einschienenbahn Depot Fundament
 OldTownhall
 Altes Rathaus\n\nals noch jeder Bürger in der\nStadt eine Stimme hatte. (Der\nschlecht beleuchtete\nDachraum soll der Anlass für\ndie Schildbürger gewesen\nhaben, die Licht in Säcken\nhineinbringen wollten.)\n
+PSFreightTrainStop
+Güterbahnhof
+PSHall1TrainStop
+Bahnhofshalle mit Kiosk
+PSHall2TrainStop
+Bahnhofshalle
 Patricks_Rock
 Basaltschlot\n\nVor vielen Millionen Jahren ist\nder Vulkan erloschen, seine\nLava im Berg erstarrt. Nebst\ngeologisch interessierten\nLeuten kommen viele\nAusflügler und Wanderer zum\nFelsen, denn die heißen Quellen an\nseinem Fuss sind berühmt für ihre Heilkraft.\nAuf den Felsen selbst darf man allerdings\nnur noch mit einer\nSonderbewilligung klettern.\n
 PlainAirStop
@@ -379,16 +353,6 @@ PostOffice
 Postamt
 PostStop
 Postkasten
-PSFreightTrainStop
-Güterbahnhof
-PSHall1TrainStop
-Bahnhofshalle mit Kiosk
-PSHall2TrainStop
-Bahnhofshalle
-rampShipStop
-Wasserrampe
-Raven_Kirche
-Kirche St. Meinrad\n\nDer Hl. Meinrad, ein Einsiedler,\nwurde der Legende nach von\nzwei Raben begleitet; als er\nden Märtyrertod starb,\nfolgten die Raben den\nMördern, was zu deren\nÜberführung führte. Am Ort seiner\nWaldhütte steht heute das\nKloster Einsiedeln.\n
 RES_00_01
 Ein kleines Haus mit Garten und Blumenbeeten.\nEs mag nicht außergewöhnlich aussehen, aber es ist doch das Zentrum des Simutrans-Universums: War es doch das erste Haus in dieser Welt überhaupt.
 RES_00_02
@@ -456,7 +420,7 @@ Am Anfang wollte jeder hin,\nheute leider fast jeder weg\nin die Vorstadt, die s
 RES_01_23
 Die Form soll von einer Wette\nstammen: Der Geschäftsleiter\nder Firma Volkeroth Hochbau\nverlor hier eine Million, weil\nder Bauplan mit seiner Initiale\ndurchging. Da aber bis zur\nFertigstellung eh der Etat\ndreifach überzogen wurde, war\ner danach deutlich reicher als\nvorher.\n
 RES_02_01
-Zu zugig kann es in solche\nHütten kaum sein: Wichtig ist\nder Schatten und der fest\nleicht erhobene Fussboden\ngegen allerhand Getier.\n
+Zu zugig kann es in solchen Hütten kaum sein: Wichtig ist der Schatten und der feste, leicht erhobene Fußboden gegen allerhand Getier.
 RES_02_07
 Hier geht der Geist von Kapitän Tibiros um, dem berühmten Entdecker des gleichnamigen Riff (welches sein Leben beendete). Der Versuch eines Maklers, mittels zweier Bäume das Grundstück attraktiver zu machen, trägt dabei viel zu der düsteren Atmosphäre bei.
 RES_02_16
@@ -477,12 +441,14 @@ RES_11_14
 Der berühmte Kurfürst zur Zuckerschnecke ließ anno 1695 sein Geburthaus auf den letzte Stand bringen. Heute noch kann man das berühmte Backwerk völlig überteuert im Museumsladen erwerben.
 RES_12_03
 Der Architekt dieser Villa hatte von seinem Bauherrn eine angeschwemmte, vergilbte Postkarte von Neuschwanstein als Vorlage bekommen. Doch nach zwei Türmchen war das Baumaterial alle.
-Residenz
-Schloss der zu Schnatterichs\n\nwurde mehrfach renoviert. Das\njetzige Aussehen stammt von\neinem Restaurierungsversuch\naus der Romantik, weshalb es\nimmer noch eine gefragte\nFilmkulisse ist.\n
-rightShipStop
-Frachtkai mit Landebrücke
 RUIN_0
 Ruinen\n\nDie Herren dieser großartigen\nBurg waren im 30jährigen\nKrieg mit den Falschen\nverbündet. Dennoch lässt sich\nimmer noch ihre einstige\nMacht erahnen.\n
+Raven_Kirche
+Kirche St. Meinrad\n\nDer Hl. Meinrad, ein Einsiedler,\nwurde der Legende nach von\nzwei Raben begleitet; als er\nden Märtyrertod starb,\nfolgten die Raben den\nMördern, was zu deren\nÜberführung führte. Am Ort seiner\nWaldhütte steht heute das\nKloster Einsiedeln.\n
+Residenz
+Schloss der zu Schnatterichs\n\nwurde mehrfach renoviert. Das\njetzige Aussehen stammt von\neinem Restaurierungsversuch\naus der Romantik, weshalb es\nimmer noch eine gefragte\nFilmkulisse ist.\n
+STADIUM2
+Großes Stadion\n\nHier finden all die großen\ninternationalen Ereignisse statt.\n
 SandStationMHz
 Halt ohne Bahnsteig
 ShipDepot
@@ -491,8 +457,6 @@ ShipDepotEW
 Schiffsdepot
 ShipStop
 Hafen
-STADIUM2
-Großes Stadion\n\nHier finden all die großen\ninternationalen Ereignisse statt.\n
 Tennis_Court
 Tennisplätze\n\nDie Anwohner sehnen den Winter herbei, um endlich draußen zu sitzen.
 Terminal1930
@@ -519,24 +483,114 @@ Vorplatz
 Bahnhofsvorplatz
 Windmill
 Windmühle\n\n
+leftShipStop
+Schwerlastkran
+rampShipStop
+Wasserrampe
+rightShipStop
+Frachtkai mit Landebrücke
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
 Ambulanzfahrzeug
 FordT
 Ford Modell T
-green_car
-grünes Auto
 Motorrad
 Moped
-orange_bus
-VW-Bus
 Pickup
 Kleinlaster
+Roadster
+Sport-Cabriolet
+green_car
+grünes Auto
+orange_bus
+VW-Bus
 yellow_car
 gelbes Auto
-#__________________________________dummy_info___________________________________
-#__________________________________dummy_info___________________________________
+#____________________________________factory____________________________________
+#____________________________________factory____________________________________
+2Raffinerie
+Raffinerie (Benzin)
+3Raffinerie
+Raffinerie (B+KSt)
+Buchgrosshandel
+Buchhändler
+CHEMIST
+Apotheke
+Cementmill
+Zementfabrik
+ChemicalPlant
+Chemiewerk
+Concretefactory
+Gasbetonwerk
+Incinerator
+Müllverbrennungsanlage
+Marketplace
+Marktplatz
+Materialswholesale
+Baumarkt
+Moebelfabrik
+Möbelfabrik
+Moebelhaus
+Möbelhaus
+Muellkraftwerk
+Müllkraftwerk
+Oelbohrinsel
+Ölbohrinsel
+Oelfeld
+Ölfeld
+Oelkraftwerk
+Ölkraftwerk
+Oelpumpe
+Pferdekopf-Ölpumpe
+Pharmaceutics
+Pharmahersteller
+Raffinerie
+Raffinerie (Kunstst.)
+Rinnenkraftwerk
+Parabolrinnenkraftwerk
+Saegewerk
+Sägewerk
+SaegewerkMHz
+altes Sägewerk
+Sandquarry
+Sandgrube
+Stonequarry
+Steinbruch
+TANKE
+Tankstelle
+bakery
+Großbäckerei
+brewery
+Brauerei
+cannery
+Dosenabfüller
+cow_farm
+Kuhställe
+dairy
+Milchverarbeiter
+fish_pond
+Fischteich
+fish_swarm
+Fischschwarm
+food_processing_plant
+Fertiggerichtehersteller
+grain_farm
+Getreidehof
+grain_mill
+Getreidemühle
+grain_windmill
+Windmühle
+old_farm
+Alter Bauernhof
+scrap_yard
+Müllhof
+supermarket
+Supermarkt
+thermisches_Solarkraftwerk
+thermisches Solarkraftwerk
+#_________________________________factory_info__________________________________
+#_________________________________factory_info__________________________________
 factory_Aufwindkraftwerk_details
 <title>Aufwindkraftwerk Details</title><h1>Aufwindkraftwerk Details</h1>\n<p>Ein Windkraftwerk einmal anders, den Wind erzeugen wir uns hier selbst: Unter einer Folie wird die Luft erwärmt und steigt auf, hin zum zentralen Turm. Dort ist dann eine Turbine, die durch den Aufwind angetrieben wird. Gleichzeitig hat man unter der Folie ein Treibhaus, wo man, je nach Gegend, auch noch Ackerbau betreiben könnte.\n</p>
 factory_Autohaus_details
@@ -551,10 +605,6 @@ factory_Concretefactory_details
 <title>Gasbetonwerk Details</title><h1>Gasbetonwerk</h1><p>Diese Fabrik stellt aus Kalk, Wasser, Sand und ein ganz bisschen Aluminium Gasbeton (jetzt Porenbeton) her. Die Poren kommen durch die Entstehung von Wasserstoff, wenn das Aluminiumpulver mit dem Wasser reagiert.</p><p>Gasbeton ist sehr leicht, isoliert gut und ist ein sehr vielseitig verwendeter Rohstoff. Erfunden wurde er in den 20er Jahren des 20. Jahrhunderts.</p>\n
 factory_Erzbergwerk_details
 <title>Erzbergwerk Details</title><h1>Erzbergwerk</h1>\n<p>Neben Salz zählt Eisen zu den ältesten bergbaulich gewonnenen \nProdukten. 8. - 15. Jh v.Chr. Eisenzeit (Kelten).\nVortrieb und Erzabbau waren bis ins 17. Jh reine Handarbeit. Um \ndas Gestein mürbe zu machen, brannte man große Holzstöße ab \n(Feuersetzarbeit). Heutzutage wird aber wegen dem einfacheren Zugang einfach der Berg darüber abgetragen, so auch in diesem Erzbergwerk im Tagebau.</p><p>Die ergiebigsten Eisenerzlager befinden sich in geologisch alten Gesteinsschichten; sie entstanden, als die ersten Photosynthesealgen die Meere mit Sauerstoff anreicherten und das im Meer gelöste Eisen sich als Rost auf den Stränden und auf dem Meeresgrund absetzte.</p>
-factory_fish_pond_details
-<title>Fischzucht Details</title> Bei einigen Fischarten, vor allem Lachsen, lohnt sich ein Zuchtbetrieb.
-factory_fish_swarm_details
-<title>Fischgrund Details</title> Reiche Fischgründe galten lange Zeit als unerschöpfliche Nahrungsquelle, doch manche gelten heute als überfischt. In den grossen Schleppnetzen der industriellen Fischerei verfangen sich auch immer wieder geschützte Tiere.
 factory_Kohlegrube_details
 <title>Kohlegrube Details</title><h1>Kohlegrube</h1><p>In der Kohlegrube fördern die Bergleute in schwerer Arbeit wertvolle Kohle. Kohle wird von Kraftwerken, Stahlwerken und anderen Industrien benötigt.</p>
 factory_Kohlekraftwerk_details
@@ -581,10 +631,10 @@ factory_Raffinerie_details
 <title>Raffinerie Details</title><h1>Raffinerie </h1><p>In einer Raffinerie werden die Rohölbestandteile getrennt. Leichte Bestandteile werden zu Benzin, schwerere zu Heizöl, Dieselkraftstoff, Schmierstoffen und dergleichen. Die Nachfrage nach Benzin ist jedoch relativ größer, als das Erdöl leichte Bestandteile enthält; durch Cracken (lange Molekülketten werden in kurze aufgebrochen) kann dieses Missverhältnis korrigiert werden.</p>
 factory_Rinnenkraftwerk_details
 <title>Solarrinnenkraftwerk Details</title><h1>Solarrinnenkraftwerk </h1><p>Das Sonnenlicht wird über Parabolspiegel auf eine Röhre mit einem Öl fokussiert. Das Öl erhitzt sich auf 300°C und mehr und kann so Dampf erzeugen, der widerum eine Turbine antreibt. Neun solche Kraftwerke wurden in Kalifornien gebaut, bis eine Extrasteuer auf Solarstrom erhoben wurde. Sie sind mit 384MW die bei weitem größten Solarkraftwerke.</p>\n
-factory_Saegewerk_details
-<title>Sägewerk Details</title><h1>Sägewerk</h1><p>Baumstämme werden auf die vom Abnehmer gewünschte Grösse zugeschnitten. Ein ringförmig angelegtes Holzlager kann darüber hinaus die Lärmbelastung für die Nachbarschaft verringern; bis Holz zu Brettern verarbeitet werden kann, muss es nach dem geschlagen werden noch einige Jahre trocknen.</p>
 factory_SaegewerkMHz_details
 <title>Sägewerk Details</title><h1>Sägewerk</h1><p>Baumstämme werden auf die vom Abnehmer gewünschte Größe zugeschnitten. Diese alte Sägewerk arbeitet noch sehr umweltfreundlich mit Wasserkraft und sollte so auch die nächsten hundert Jahre überstehen.</p>\n
+factory_Saegewerk_details
+<title>Sägewerk Details</title><h1>Sägewerk</h1><p>Baumstämme werden auf die vom Abnehmer gewünschte Grösse zugeschnitten. Ein ringförmig angelegtes Holzlager kann darüber hinaus die Lärmbelastung für die Nachbarschaft verringern; bis Holz zu Brettern verarbeitet werden kann, muss es nach dem geschlagen werden noch einige Jahre trocknen.</p>
 factory_Sandquarry_details
 <title>Sandgrube Details</title><h1>Sandgrube</h1><p>Hier wird Sand abgebaut. Sand findet im Straßenbau, in der Glasherstellung, in Betonwerken und weiteren Industrien verwendung.</p>
 factory_Stahlwerk_details
@@ -593,124 +643,30 @@ factory_Stonequarry_details
 <title>Steinbruch Details</title><h1>Steinbruch</h1><p>Was in einem Steinbruch gemacht wird, ist eigentlich klar: Steine werden aus dem kompakten Fels gebrochen, heute meist mit Hilfe von Sprengladungen. Das Bild zeigt einen Steinbruch, der sich in die Tiefe frisst, in Berggegenden werden Steinbrüche oft in eine bestehende Felswand vorgetrieben.</p><p>Wenn es Kalk ist, dann kann man ihn entweder brennen oder als Marmor verkaufen. Aber nur die wenigsten Lagerstätten haben die dazu nötige Marmorierung. Da Kalk versteinerten Schalen und Muscheln besteht, findet man oft Fossilien in Kalksteinbrüchen.</p>
 factory_TANKE_details
 <title>Tankstelle Details</title><h1>Tankstelle</h1><p>Ein aussterbendes Tankstellenmodell: kein Geschäft ist zu sehen. Hier gibt es wirklich nur Benzin und Diesel.</p>
-factory_thermisches_Solarkraftwerk_details
-<title>Solarturmkraftwerk Details</title><h1>Solarturmkraftwerk</h1><p>Bei einem Solarturmkraftwerk werfen viele verstellbare Spiegel das Sonnenlicht auf eine kleine Stelle. Diese wird dann sehr heiß - bis zu 1000°C - und kann dann wie ein ganz normaler Dampfkessel Wasser erhitzen und über eine Dampfturbine einen Generator antreiben.</p>
 factory_Turmkraftwerk_details
 <title>Solarturmkraftwerk Details</title><h1>Solarturmkraftwerk</h1><p>Bei einem Solarturmkraftwerk werfen viele verstellbare Spiegel das Sonnenlicht auf eine kleine Stelle. Diese wird dann sehr heiß - bis zu 1000°C - und kann dann wie ein ganz normaler Dampfkessel Wasser erhitzen und über eine Dampfturbine einen Generator antreiben.</p>
 factory_Windkraftwerk_details
 <title>Windkraftanlage Details</title><h1>Windkraftanlage</h1><p>Strom aus Windenergie ist umweltfreundlich und von allen sogenannten neuen erneuerbaren Energien die mit Abstand günstigste Stromproduktionsart. In windreichen Küstenländern kann sie namhaft zur Stromproduktion beitragen.</p><p>Die erste moderne Windkraftanlage wurde 1957 in Deutschland gebaut; die größten Verdienste, um die Entwicklung von Windkraft, hat aber Dänemark.</p><p>Wie schon früher spaltet sie die Bevölkerung: Die einen finden sie eine Landschaftsverschandelung und die anderen begrüßen den Fortschritt. Warscheinlich muss man nur 100 Jahre warten und sie sind wieder romatisch wie eine Bockwindmühle ...</p>
-#____________________________________factory____________________________________
-#____________________________________factory____________________________________
-2Raffinerie
-Raffinerie (Benzin)
-3Raffinerie
-Raffinerie (B+KSt)
-bakery
-Großbäckerei
-brewery
-Brauerei
-Buchgrosshandel
-Buchhändler
-cannery
-Dosenabfüller
-Cementmill
-Zementfabrik
-ChemicalPlant
-Chemiewerk
-CHEMIST
-Apotheke
-Concretefactory
-Gasbetonwerk
-cow_farm
-Kuhställe
-dairy
-Milchverarbeiter
-fish_pond
-Fischteich
-fish_swarm
-Fischschwarm
-food_processing_plant
-Fertiggerichtehersteller
-grain_farm
-Getreidehof
-grain_mill
-Getreidemühle
-grain_windmill
-Windmühle
-Incinerator
-Müllverbrennungsanlage
-Marketplace
-Marktplatz
-Materialswholesale
-Baumarkt
-Moebelfabrik
-Möbelfabrik
-Moebelhaus
-Möbelhaus
-Muellkraftwerk
-Müllkraftwerk
-Oelbohrinsel
-Ölbohrinsel
-Oelfeld
-Ölfeld
-Oelkraftwerk
-Ölkraftwerk
-Oelpumpe
-Pferdekopf-Ölpumpe
-old_farm
-Alter Bauernhof
-Pharmaceutics
-Pharmahersteller
-Raffinerie
-Raffinerie (Kunstst.)
-Rinnenkraftwerk
-Parabolrinnenkraftwerk
-Saegewerk
-Sägewerk
-SaegewerkMHz
-altes Sägewerk
-Sandquarry
-Sandgrube
-scrap_yard
-Müllhof
-Stonequarry
-Steinbruch
-supermarket
-Supermarkt
-TANKE
-Tankstelle
-thermisches_Solarkraftwerk
-thermisches Solarkraftwerk
+factory_fish_pond_details
+<title>Fischzucht Details</title> Bei einigen Fischarten, vor allem Lachsen, lohnt sich ein Zuchtbetrieb.
+factory_fish_swarm_details
+<title>Fischgrund Details</title> Reiche Fischgründe galten lange Zeit als unerschöpfliche Nahrungsquelle, doch manche gelten heute als überfischt. In den grossen Schleppnetzen der industriellen Fischerei verfangen sich auch immer wieder geschützte Tiere.
+factory_thermisches_Solarkraftwerk_details
+<title>Solarturmkraftwerk Details</title><h1>Solarturmkraftwerk</h1><p>Bei einem Solarturmkraftwerk werfen viele verstellbare Spiegel das Sonnenlicht auf eine kleine Stelle. Diese wird dann sehr heiß - bis zu 1000°C - und kann dann wie ein ganz normaler Dampfkessel Wasser erhitzen und über eine Dampfturbine einen Generator antreiben.</p>
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
-beer
-Bier
 Buecher
 Bücher
-canned_food
-Dosen
 Cement
 Zement
 Chemicals
 Chemikalien
 Concrete
 Gasbetonsteine
-fish
-Fische
-flour
-Mehl
-food
-Fertiggerichte
 Gasoline
 Benzin
-grain
-Getreide
-meat
-Fleisch
 Medicine
 Medikamente
-milk
-Milch
 Moebel
 Möbel
 None
@@ -723,10 +679,38 @@ PrintersInk
 Druckfarben
 Stone
 Stein
+beer
+Bier
+canned_food
+Dosen
+fish
+Fische
+flour
+Mehl
+food
+Fertiggerichte
+grain
+Getreide
+meat
+Fleisch
+milk
+Milch
 waste
 Müll
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
+Hochsitz1
+Hochsitz
+Hochsitz2
+Hochsitz
+See1
+See
+See2
+See
+See3
+Teich
+See4
+Teich
 bushes
 Büsche
 deco_rock
@@ -739,22 +723,10 @@ gemsen
 Gemsen
 gooses
 Gänse
-Hochsitz1
-Hochsitz
-Hochsitz2
-Hochsitz
 moles
 Maulwurfshügel
 rocks
 Steine
-See1
-See
-See2
-See
-See3
-Teich
-See4
-Teich
 sheeps
 Schafherde
 #___________________________________menu_text___________________________________
@@ -767,6 +739,8 @@ Couple
 Paar (oder Pärchen)
 Cyclist
 Radfahrer
+Woman
+Frau
 pedestrian_1
 Fußgänger
 pedestrian_2
@@ -779,8 +753,6 @@ pedestrian_child
 Kind
 pedestrian_dog
 Hund
-Woman
-Frau
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -801,8 +773,6 @@ rolls
  Rollen
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
-choose_point
-Stoppwähler
 ChooseSignals
 Bahnsteigauswahlsignal
 ChooseSignalsMonorail
@@ -817,10 +787,6 @@ NoAirEntry
 Rollbahnsperre (für eine Richtung)
 NoEntry
 Einfahrt verboten
-preSignals
-Zwei-Block-Signal
-preSignalsMonorail
-Zwei-Block-Signal
 RailClose
 Gleissperre
 Railgate
@@ -831,6 +797,12 @@ Signals
 Signale
 SignalsMonorail
 Signale
+choose_point
+Stoppwähler
+preSignals
+Zwei-Block-Signal
+preSignalsMonorail
+Zwei-Block-Signal
 traffic_light
 Ampeln
 #_____________________________________tree______________________________________
@@ -967,20 +939,8 @@ BB1280
 SNCF BB 1280
 BB200
 SNCF BB 200
-Be5-7
-BLS Be 5/7
-Blimp
-Prallluftschiff
-Book_Trike
-Dreirädriger Lieferwagen
-Boxcar
-Stückgutwagen
 BR01
 DB Br 01
-Br118DR
-DR Br 118
-Br234
-DB Br 234
 BR38
 DB Br 38 (Pr. P8)
 BR38-Tender
@@ -989,22 +949,34 @@ BR39
 DB Br 39
 BR45
 DB Br 45
+BR85
+DB Br 86
+BRV36
+DB Br V36
+Be5-7
+BLS Be 5/7
+Blimp
+Prallluftschiff
+Book_Trike
+Dreirädriger Lieferwagen
+Boxcar
+Stückgutwagen
+Br118DR
+DR Br 118
+Br234
+DB Br 234
 Br614back
 DB Br 614 (Ende)
 Br614car
 DB Br 614 (Mitte)
 Br614front
 DB Br 614
-BR85
-DB Br 86
 Bretteranhaenger
 WF Ultd. Bretteranhänger
 Brettertransporter
 WF Ultd. Brettertransporter
 Bretterwagen
 VT Wien Rungenwagen Bretter
-BRV36
-DB Br V36
 Buchanhaenger
 Anhänger für Bücher (Serj)
 Buchtrailer
@@ -1023,6 +995,8 @@ Bulkcarriage
 Schüttgut-Pferdewagen
 Bus
 H-Trans Bus
+CC7100
+SNCF CC 7100
 CarFlat
 Flachwagen für Autos
 Cargosprinter-Front
@@ -1031,8 +1005,6 @@ Cargosprinter-Mittel
 Cargosprinter Mittelwagon
 Cargosprinter-Steuer
 Cargosprinter Steuerwagen
-CC7100
-SNCF CC 7100
 Cementtrailer
 Zementauflieger
 Class86
@@ -1075,10 +1047,10 @@ Deponielaster
 Müllwagen
 Deponielaster2
 Müllwagen
-Doubledeck_city_bus
-Doppeldeckerbus
 DoubleDecker
 Doppelstock-Wagen
+Doubledeck_city_bus
+Doppeldeckerbus
 E44
 DB Br E44
 Eb3-5
@@ -1147,12 +1119,14 @@ H-Trans-Tigress-II-Back
 H-Trans Tigress-II hinterer Triebkopf
 H-Trans-Tigress-II-Front
 H-Trans Tigress-II
+HJMAvia
+Avia Zugmaschine
+HVPosttransporter
+DIBU/H-Trans Posttransporter
 Hadley-Page-V1500
 Hadley-Page V1500
 Heavy_ore_truck
 Muldenkipper
-HJMAvia
-Avia Zugmaschine
 Hochbordwagen
 Kohlewaggon (18t)
 Holzanhaenger
@@ -1175,8 +1149,6 @@ Horses
 Pferdegespann
 Horsewoodcariage
 Pferdekarren für Holz
-HVPosttransporter
-DIBU/H-Trans Posttransporter
 ICE_TD-back
 ICE-TD Steuerwagen (hinten)
 ICE_TD-car
@@ -1187,10 +1159,6 @@ IL-76
 Ilyushin 76
 JNR_C11
 JNR C11
-JR_9600
-JR 9600
-JR_9600_tender
-JR9600 Tender
 JRE-Mp233
 JRE Mp233 Motorwagen
 JRE-Mpp233
@@ -1201,6 +1169,10 @@ JRE-T233cb
 JRE T233 Kopf
 JRE-Tcf233
 JRE T233 Ende
+JR_9600
+JR 9600
+JR_9600_tender
+JR9600 Tender
 Ju52
 Junker 52
 JumboCruiser
@@ -1211,12 +1183,6 @@ JumboCruiserBack2
 Jumbo Cruiser Fernbus (Postanhänger)
 JumboJet
 Boeing 747 "Jumbo Jet"
-kkStB_tender
-kukStB Tender
-kkStB110
-kukStB B110
-kkStB91
-kukStB. B91
 Kohleanhaenger
 H-Trans Anhänger
 Kohletransporter
@@ -1235,18 +1201,16 @@ Lockhead_Tristar
 Lockheed Tristar
 Lockheed10-Electra
 Lockheed 10 Electra
-logs
-Holzfloß
 Lowa
 Lowa Tram
 Lowa_Anhaenger
 Lowa Anhänger
 Mack_Truck_01
 Mack Zugmaschine
-Mailcontainerwagon
-Postcontainerwaggon
 MailExpress
 Postflugzeug
+Mailcontainerwagon
+Postcontainerwaggon
 Mailtrailer
 Postauflieger
 Mailwagon
@@ -1261,12 +1225,12 @@ Moebelwagen
 VT Wien leichter Güterwagen
 Muellschiff
 Müllschiff
-NeuOelwagen
-Großkesselwagen
 NS1000
 NS 1000
 NS1600
 NS 1600
+NeuOelwagen
+Großkesselwagen
 Oelanhaenger
 H-Trans Tankanhänger (Öl)
 Oelwagen
@@ -1275,8 +1239,6 @@ Oilbarge
 Ölbarke
 Oiltrailer
 Tankauflieger
-old_open_car
-Adler Schüttgutwagen
 OldOil
 Tankwagen
 Ox2
@@ -1309,26 +1271,22 @@ PrPostwagen
 Preuß. Post-/Gepäckwagen
 RenaultTH5
 Renault TH5 Sattelschlepper
-Sandanhaenger
-WF Ultd. Sandanhänger
-Sandtransporter
-WF Ultd. Kipper
-schooner
-Neuschottland Schoner
-Schooner_Bark
-Schoonerbark
 SD40-2-back
 SD40-2 (zweite Lok)
 SD40-2-front
 SD40-2
-Serj-Mini
-Sammeltaxi
-setra_S10
-Setra S10
-SlowFerry
-H-Trans Passagierfähre
 SMPoiltruck
 SMP Tankwagen
+Sandanhaenger
+WF Ultd. Sandanhänger
+Sandtransporter
+WF Ultd. Kipper
+Schooner_Bark
+Schoonerbark
+Serj-Mini
+Sammeltaxi
+SlowFerry
+H-Trans Passagierfähre
 Stahlanhaenger
 H-Trans Stahltransportanhänger
 Stahltransporter
@@ -1347,18 +1305,10 @@ SuperConstellation
 Super Constellation
 T21_bus
 Ford T21
-Tanklastzug
-H-Trans Tanklastzug
-Tatra-T4
-Tatra T4
-Tatra-T4_Wagon
-Tatra-T4 Waggon
 TB13
 T13 Beiwagen
 TB24
 T24 Beiwagen
-teaclipper
-Teeclipper für Stückgut
 TIRpaper
 Papierauflieger
 TIRsteel
@@ -1369,6 +1319,12 @@ TPPassagierwagen
 TPI Lopomo Passagierwagen
 TPSchienenbus
 VT98 Schienenbus
+Tanklastzug
+H-Trans Tanklastzug
+Tatra-T4
+Tatra T4
+Tatra-T4_Wagon
+Tatra-T4 Waggon
 Tram_GT6_Ende
 Straßenbahn GT6 (Abschlußwagen)
 Tram_GT6_Kopf
@@ -1387,8 +1343,6 @@ VolvoFH12
 Volvo FH12 Sattelschlepper
 Wastecarriage
 Lumpensammler
-wastewagon
-offener Müllwaggon
 X2000back
 X-2000 hinten
 X2000car
@@ -1399,8 +1353,32 @@ XMail
 Kirayami X-1 Postwagen
 XTest
 Kirayami X-1
+kkStB110
+kukStB B110
+kkStB91
+kukStB. B91
+kkStB_tender
+kukStB Tender
+logs
+Holzfloß
+old_open_car
+Adler Schüttgutwagen
+schooner
+Neuschottland Schoner
+setra_S10
+Setra S10
+teaclipper
+Teeclipper für Stückgut
+wastewagon
+offener Müllwaggon
 #______________________________________way______________________________________
 #______________________________________way______________________________________
+MaglevTrack
+Magnetschwebebahn-Trasse
+MaglevTrackElevated
+Magnetschwebebahn auf Stelzen
+Powerline
+Übertragungsleitung
 asphalt_road
 Asphaltierte Straße
 city_road
@@ -1415,16 +1393,10 @@ elevated_monorail
 erhöhte Einschienenbahn
 gavel_road
 Schotterstraße
-MaglevTrack
-Magnetschwebebahn-Trasse
-MaglevTrackElevated
-Magnetschwebebahn auf Stelzen
 mip_cobblestone_road
 MIP Pflasterstraße
 monorail
 Magnetschwebebahn
-Powerline
-Übertragungsleitung
 river
 Fluss
 river2

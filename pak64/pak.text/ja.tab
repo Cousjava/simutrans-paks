@@ -9,23 +9,8 @@
 #                             Language: ja Japanese                            #
 #                                Encoding: UTF-8                               #
 #                               Font : m+10r.bdf                               #
-#                            Date Created: 5.01 2018                           #
+#                           Date Created: 12.06 2018                           #
 #                                                                              #
-#                                   authors:                                   #
-#                                    - An_dz                                   #
-#                   note: Verified where all texts are shown                   #
-#                                    - Dwachs                                  #
-#                                  - Flemmbrav                                 #
-#                                    - FrankP                                  #
-#                                    - Hamo73                                  #
-#                                 Daniel - NNW                                 #
-#                                     - PTM                                    #
-#                                    - Tajia                                   #
-#                                   - paintree                                 #
-#                                    - prissi                                  #
-#                                  - teamhimeH                                 #
-#                          SHISHIDO Yoshihiro - yoshi                          #
-#                                 z9999 - z9999                                #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -34,12 +19,8 @@ ClassicRail
 コンクリートの鉄道橋
 ClassicRoad
 コンクリートの道路橋
-koka_Bridge_single
-高架橋(単線用)
 MaglevBridge
 リニア軌道 橋梁部
-mlm_concrete_bridge
-リニア コンクリート橋
 ModernRoad
 近代型道路橋
 MonorailRamp
@@ -50,12 +31,16 @@ Schiffhebewerk
 運河エレベーター
 SteelRail
 鋼鉄の鉄道橋
-tb_classic_road
-コンクリート道路橋
 ViaductRail
 煉瓦アーチ橋
 WoodenRoad
 木製道路橋
+koka_Bridge_single
+高架橋(単線用)
+mlm_concrete_bridge
+リニア コンクリート橋
+tb_classic_road
+コンクリート道路橋
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 00_01_CITY
@@ -108,12 +93,12 @@ A6_DOME
 古い大聖堂\n\n過去千年に渡ってこの都市\nの中心でした。\n
 AirDepot
 格納庫
-AirportShed1930
-30年代空港郵便局
 AirStop
 駐機場
 AirTerminal477
 空港ターミナル
+AirportShed1930
+30年代空港郵便局
 Avila_Big_StationBlg
 大型駅ビル
 Avila_Small_StationBlg
@@ -128,16 +113,6 @@ Bulk_StationBlg
 ばら荷積み降し設備
 BusStop
 バス停
-Car_StationBlg
-駅駐車場
-CarDepot
-車庫
-CarStop
-トラックヤード
-CattlePorch
-牧場
-ChannelStop
-運河港
 COM_00_01
 小さな店\nこの店では生活に欠かせない小物を取り扱っています。誠意を込めた品揃えと価格のおかげで駐車場はいつも車でいっぱいです。
 COM_00_02
@@ -232,6 +207,16 @@ COM_11_12
 香辛料店\n\nここでは遠くの地から輸入した香辛料を扱っています。もしあなた好みのものが見つからなくても、雰囲気を味わうために行く価値は十分あります。
 COM_12_04
 マーメイド・パークは、誤解により毎年多くの観光客を呼び寄せている。ほんのわずかな注意深い人間だけが、希少植物「マーメイト」を見つけこの公園の本当の意味を理解する。噂では、地元の観光協会が客寄せのためにあえて誤植を放置しているという。
+CarDepot
+車庫
+CarStop
+トラックヤード
+Car_StationBlg
+駅駐車場
+CattlePorch
+牧場
+ChannelStop
+運河港
 Control_StationBlg
 信号取扱所
 DenkDirk
@@ -264,14 +249,14 @@ FreightShipStop
 港セット
 FreightTrainStop
 貨物駅
-Gas_StationBlg
-駅のガスタンク
 GCG1TrainStop
 欧風複線駅(画面左用)
 GCG2TrainStop
 欧風複線駅(画面右用)
 GCGTrainStop
 欧風旅客駅　複線用
+Gas_StationBlg
+駅のガスタンク
 Goods_StationBlg
 駅倉庫
 Gymnasium
@@ -344,18 +329,16 @@ KingsbridgeMonastry
 最近、和尚は蔵の古文書に\n『只無途卵雛』という一節が\nあるのを見つけたとか、\n見つけていないとか。\n
 LargeShipStop
 港セット(貨物)
-leftShipStop
-港セット(クレーン)
 LeuchtturmShipStop
 港セット(灯台)
 Lighthouse
 灯台\n\n100年前に立った、光達距離は19海里
 LongBusStop
 ベンチ付きのバス停
-MainTerminal1930
-30年代大型ターミナル
 MHzSmallStation
 小さな駅舎
+MainTerminal1930
+30年代大型ターミナル
 ModernAirTerminal477
 現代風空港ターミナル
 MonorailDepot
@@ -366,6 +349,12 @@ MonorailGround
 モノレール地上部
 OldTownhall
 前世紀の役場\n\n冬に寒かったため、窓があまりない。
+PSFreightTrainStop
+貨物駅
+PSHall1TrainStop
+欧風旅客駅　新聞スタンド付
+PSHall2TrainStop
+欧風旅客駅
 Patricks_Rock
 玄武岩の噴煙口\n\n数百万年の時を経て、爆発\nを繰り返した火山はその活\n動を終え、溶岩は山腹で凝\n固しました。山の上では空\n気がとても澄み、水が冷え\nて清涼であるため、地質学\nに興味をもつ人々だけでな\nく、登山や散策を楽しむ人\n人も惹きつけます。\n岩の上に登ることができま\nすが、そのためには特別な\n許可が必要です。\n
 PlainAirStop
@@ -374,16 +363,6 @@ PostOffice
 郵便局
 PostStop
 郵便ポスト
-PSFreightTrainStop
-貨物駅
-PSHall1TrainStop
-欧風旅客駅　新聞スタンド付
-PSHall2TrainStop
-欧風旅客駅
-rampShipStop
-港セット(斜面)
-Raven_Kirche
-聖マインラート教会\n\n隠者聖マインラートは二羽\nのワタリガラスに伴われて\n伝説となりました。彼が殺\n害されたとき、二羽のワタ\nリガラスは殺人者たちの付\nいて回り、彼らに有罪を宣\n告しました。今日、彼の小\n屋があった場所はアインジ\nーデルン修道院となってい\nます。\n
 RES_00_01
 この小さな家は、とても規格外には見えないかもしれません。\nしかし、これこそSimutrans世界の中心であり、\n初めて建てられた建物の1つなのです。\n
 RES_00_02
@@ -512,12 +491,14 @@ RES_12_12
 ニューオリンズ様式の家\n亜熱帯に近いニューオリンズでは、深い軒のある家を建て暑さをしのいだという。
 RES_12_15
 工場労働者の家\n農村部から都市に移住してきた最初の工場労働者のために建てられた。世帯の間の壁は非常に薄かったので、生活音は筒抜けでした。
-Residenz
-司教宮殿\n\n
-rightShipStop
-港セット(大きい埠頭)
 RUIN_0
 中世の古城\n\nこの城は打ち捨てられ荒廃\nしていましたが、その一部\nは再建され、現在は歴史博\n物館となっています。塔の\n上から見る景観は素晴らし\nいものですが、それを見る\nためにはたくさんの階段を\n上らなければなりません。\n
+Raven_Kirche
+聖マインラート教会\n\n隠者聖マインラートは二羽\nのワタリガラスに伴われて\n伝説となりました。彼が殺\n害されたとき、二羽のワタ\nリガラスは殺人者たちの付\nいて回り、彼らに有罪を宣\n告しました。今日、彼の小\n屋があった場所はアインジ\nーデルン修道院となってい\nます。\n
+Residenz
+司教宮殿\n\n
+STADIUM2
+大型スタジアム\n\nあらゆる国際イベントが開\n催されます\n
 SandStationMHz
 旅客駅(プラットホームなし)
 ShipDepot
@@ -526,8 +507,6 @@ ShipDepotEW
 港(東西用)
 ShipStop
 港
-STADIUM2
-大型スタジアム\n\nあらゆる国際イベントが開\n催されます\n
 Tennis_Court
 テニスコート\n\n
 Terminal1930
@@ -554,22 +533,28 @@ Vorplatz
 高架駅基部
 Windmill
 風車\n\n
+leftShipStop
+港セット(クレーン)
+rampShipStop
+港セット(斜面)
+rightShipStop
+港セット(大きい埠頭)
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
 救急車
 FordT
 T型フォード
-green_car
-緑の乗用車
 Motorrad
 オートバイ
-orange_bus
-オレンジバス
 Pickup
 トヨタ ハイラックス・ピックアップ
 Roadster
 ジャガー ロードスター
+green_car
+緑の乗用車
+orange_bus
+オレンジバス
 yellow_car
 黄色い車
 #____________________________________factory____________________________________
@@ -584,44 +569,22 @@ Autohaus
 カーショップ
 Autohersteller
 自動車工場
-bakery
-パン屋
-brewery
-醸造所
 Buchgrosshandel
 書店
-cannery
-缶詰工場
+CHEMIST
+薬局
 Cementmill
 セメント工場
 ChemicalPlant
 化学工場
-CHEMIST
-薬局
 Concretefactory
 コンクリート工場
-cow_farm
-牛牧場
-dairy
-酪農場
 Druckerei
 印刷工場
 Erzbergwerk
 鉄鉱石鉱山
-fish_pond
-水産養殖場
-fish_swarm
-漁場
-food_processing_plant
-食品工場
 Geokraftwerk
 地熱発電所
-grain_farm
-穀物畑
-grain_mill
-製粉所
-grain_windmill
-風車製粉場
 Incinerator
 清掃工場
 Kohlegrube
@@ -648,8 +611,6 @@ Oelkraftwerk
 火力発電所
 Oelpumpe
 採油ポンプ
-old_farm
-穀物畑
 Papierfabrik
 製紙工場
 Pharmaceutics
@@ -664,34 +625,54 @@ SaegewerkMHz
 製材所
 Sandquarry
 砂採取場
-scrap_yard
-ゴミ集積場
 Stahlwerk
 製鉄所
 Stonequarry
 採石場
-supermarket
-スーパーマーケット
 TANKE
 ガソリンスタンド
-thermisches_Solarkraftwerk
-太陽熱発電所
 Turmkraftwerk
 太陽熱発電所(タワー式)
 Windkraftwerk
 風力発電所
+bakery
+パン屋
+brewery
+醸造所
+cannery
+缶詰工場
+cow_farm
+牛牧場
+dairy
+酪農場
+fish_pond
+水産養殖場
+fish_swarm
+漁場
+food_processing_plant
+食品工場
+grain_farm
+穀物畑
+grain_mill
+製粉所
+grain_windmill
+風車製粉場
+old_farm
+穀物畑
+scrap_yard
+ゴミ集積場
+supermarket
+スーパーマーケット
+thermisches_Solarkraftwerk
+太陽熱発電所
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
 自動車
-beer
-ビール
 Bretter
 板材
 Buecher
 書籍
-canned_food
-缶詰
 Cement
 セメント
 Chemicals
@@ -700,26 +681,14 @@ Concrete
 ALCパネル
 Eisenerz
 鉄鉱石
-fish
-魚肉
-flour
-小麦粉
-food
-食品
 Gasoline
 ガソリン
-grain
-穀物
 Holz
 木材
 Kohle
 石炭
-meat
-肉
 Medicine
 薬
-milk
-ミルク
 Moebel
 家具
 None
@@ -742,10 +711,38 @@ Stahl
 鉄鋼
 Stone
 石
+beer
+ビール
+canned_food
+缶詰
+fish
+魚肉
+flour
+小麦粉
+food
+食品
+grain
+穀物
+meat
+肉
+milk
+ミルク
 waste
 ゴミ
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
+Hochsitz1
+鹿撃ち小屋
+Hochsitz2
+鹿撃ち小屋
+See1
+水鳥のいる池
+See2
+鴨のいる湖
+See3
+沼
+See4
+沼
 bushes
 やぶ
 deco_rock
@@ -758,22 +755,10 @@ gemsen
 シャモアの群れ\n
 gooses
 雁\n
-Hochsitz1
-鹿撃ち小屋
-Hochsitz2
-鹿撃ち小屋
 moles
 モグラのもこもこ
 rocks
 岩
-See1
-水鳥のいる池
-See2
-鴨のいる湖
-See3
-沼
-See4
-沼
 sheeps
 市街地に現れると\nとっても迷惑な羊さんたち\n
 #___________________________________menu_text___________________________________
@@ -786,6 +771,8 @@ Couple
 カップル
 Cyclist
 自転車
+Woman
+女性
 pedestrian_1
 歩行者
 pedestrian_2
@@ -798,8 +785,6 @@ pedestrian_child
 こども
 pedestrian_dog
 犬の散歩
-Woman
-女性
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -820,8 +805,6 @@ rolls
 ロール
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
-choose_point
-停車振分標識
 ChooseSignals
 入線振分信号
 ChooseSignalsMonorail
@@ -836,10 +819,6 @@ NoAirEntry
 進入禁止標識
 NoEntry
 進入禁止
-preSignals
-プレシグナル
-preSignalsMonorail
-プレシグナル
 RailClose
 進入禁止標識
 Railgate
@@ -850,6 +829,12 @@ Signals
 信号機
 SignalsMonorail
 信号機
+choose_point
+停車振分標識
+preSignals
+プレシグナル
+preSignalsMonorail
+プレシグナル
 traffic_light
 道路信号
 #_____________________________________tree______________________________________
@@ -920,6 +905,8 @@ Tree5
 セイヨウネズ\n
 Tree6
 モミの木\n
+Willow
+柳\n
 tropictree1
 ユーカリの木\n
 tropictree2
@@ -938,8 +925,6 @@ tropictree8
 フタバガキ（ラワン）\n
 tropictree9
 ブラジルナッツ\n
-Willow
-柳\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel
@@ -1008,14 +993,6 @@ BB1280
 BB1280 電気機関車
 BB200
 BB200 電気機関車
-Be5-7
-スイスBLS Be 5/7 電気機関車
-Blimp
-飛行船
-Book_Trike
-書籍運搬トラック
-Boxcar
-有蓋車
 BR01
 ドイツ国鉄 BR01 テンダー機関車
 BR38
@@ -1026,22 +1003,30 @@ BR39
 DRG BR39 テンダ式機関車
 BR45
 DRG BR45 テンダ式機関車
+BR85
+DRG BR86 タンク式機関車
+BRV36
+BRV36 ディーゼル機関車
+Be5-7
+スイスBLS Be 5/7 電気機関車
+Blimp
+飛行船
+Book_Trike
+書籍運搬トラック
+Boxcar
+有蓋車
 Br614back
 ドイツ連邦鉄道 BR614(後尾車)
 Br614car
 ドイツ連邦鉄道 BR614(中間車)
 Br614front
 ドイツ連邦鉄道 BR614
-BR85
-DRG BR86 タンク式機関車
 Bretteranhaenger
 WF Ultd. 板材トレーラー
 Brettertransporter
 WF Ultd. 板材輸送トラック
 Bretterwagen
 VT板材用無蓋貨車
-BRV36
-BRV36 ディーゼル機関車
 Buchanhaenger
 Serj/H-Trans 書籍トレーラー
 Buchtrailer
@@ -1102,18 +1087,18 @@ Cooling_Truck
 冷蔵トラック
 Cooling_Waggon
 冷蔵貨車
-DaimlerStoll
-ダイムラー・ストール
 DC-3
 ダグラスDC-3
+DaimlerStoll
+ダイムラー・ストール
 Deponielaster
 清掃車
 Deponielaster2
 清掃車
-Doubledeck_city_bus
-二階建て市内バス
 DoubleDecker
 ２階建て客車
+Doubledeck_city_bus
+二階建て市内バス
 E44
 DB E44
 Eb3-5
@@ -1178,6 +1163,8 @@ H-Trans-Tigress-II-Back
 H-Trans Tigress II 後部機関車
 H-Trans-Tigress-II-Front
 H-Trans Tigress II 機関車
+HVPosttransporter
+DIBU/H-Trans 郵便バン
 Hadley-Page-V1500
 ハンドレページ V/1500
 Heavy_ore_truck
@@ -1206,8 +1193,6 @@ Horsewoodcariage
 馬車用 木材カート
 Hunslet
 Hunslet 蒸気機関車
-HVPosttransporter
-DIBU/H-Trans 郵便バン
 ICE_TD-back
 ドイツ鉄道 ICE-TD (後尾車)
 ICE_TD-car
@@ -1218,10 +1203,6 @@ IL-76
 イリューシン Il-76
 JNR_C11
 国鉄 C11
-JR_9600
-国鉄 9600
-JR_9600_tender
-国鉄 9600用炭水車
 JRE-Mp233
 JR東日本E233系電車(モーター車パンタグラフ単一)
 JRE-Mpp233
@@ -1230,6 +1211,10 @@ JRE-T233
 JR東日本E233系電車(付随車)
 JRE-T233cb
 JR東日本E233系電車(運転台)
+JR_9600
+国鉄 9600
+JR_9600_tender
+国鉄 9600用炭水車
 Ju52
 ユンカース Ju52
 JumboCruiser
@@ -1240,12 +1225,6 @@ JumboCruiserBack2
 大型クルーザーバス（後・郵便車）
 JumboJet
 ボーイング747ジャンボジェット
-kkStB_tender
-墺国鉄 炭水車
-kkStB110
-墺国鉄 110型 蒸気機関車
-kkStB91
-墺国鉄 91型 蒸気機関車
 Kohleanhaenger
 H-Trans トレーラー MK2
 Kohletransporter
@@ -1260,16 +1239,14 @@ Lockhead_Tristar
 ロッキード トライスター
 Lockheed10-Electra
 ロッキード・モデル10・エレクトラ
-logs
-木材筏
 Lowa_Anhaenger
 Lowa (付随車)
 Mack_Truck_01
 マック・トラック
-Mailcontainerwagon
-郵便コンテナ貨車
 MailExpress
 郵便飛行機
+Mailcontainerwagon
+郵便コンテナ貨車
 Mailwagon
 郵便貨車
 Milk_Truck
@@ -1290,8 +1267,6 @@ Oilbarge
 オイルバージ
 Oiltrailer
 石油トレーラー
-old_open_car
-旧式無蓋貨車
 OldOil
 タンク車
 Ox2
@@ -1324,20 +1299,18 @@ PrPostwagen
 旧型郵便車
 RenaultTH5
 ルノー TH5 トラクタ
-Sandanhaenger
-WF Ultd. ばら荷トレーラー
-Sandtransporter
-WF Ultd. ダンプトラック
-schooner
-帆船
 SD40-2-back
 米EMD SD40-2 ディーゼル機関車(後向き)
 SD40-2-front
 米EMD SD40-2 ディーゼル機関車
-SlowFerry
-H-Trans 旅客フェリー
 SMPoiltruck
 タンクローリー
+Sandanhaenger
+WF Ultd. ばら荷トレーラー
+Sandtransporter
+WF Ultd. ダンプトラック
+SlowFerry
+H-Trans 旅客フェリー
 Stahlanhaenger
 H-Trans 鉄鋼トレーラー
 Stahltransporter
@@ -1358,20 +1331,18 @@ T13
 T13型路面電車
 T24
 T24型路面電車
-Tanklastzug
-H-Trans タンクローリー
-Tatra-T4
-タトラ T4型路面電車
-Tatra-T4_Wagon
-タトラ T4型路面電車（付随車）
-teaclipper
-快速帆船 ティークリッパー
 TPBeiwagen
 TPI VS98
 TPPassagierwagen
 TPI Lopomo 客車
 TPSchienenbus
 TPI VT98
+Tanklastzug
+H-Trans タンクローリー
+Tatra-T4
+タトラ T4型路面電車
+Tatra-T4_Wagon
+タトラ T4型路面電車（付随車）
 Tram_GT6_Ende
 デューヴァク GT6型路面電車（後）
 Tram_GT6_Kopf
@@ -1384,8 +1355,6 @@ Ucy
 粉体貨車
 VolvoFH12
 ボルボ FH12
-wastewagon
-廃棄物運搬用無蓋車
 X2000back
 スウェーデン国鉄 X2000 後部
 X2000car
@@ -1394,8 +1363,34 @@ X2000front
 スウェーデン国鉄 X2000 先頭部
 Zeppelin
 ツェッペリン飛行船
+kkStB110
+墺国鉄 110型 蒸気機関車
+kkStB91
+墺国鉄 91型 蒸気機関車
+kkStB_tender
+墺国鉄 炭水車
+logs
+木材筏
+old_open_car
+旧式無蓋貨車
+schooner
+帆船
+teaclipper
+快速帆船 ティークリッパー
+wastewagon
+廃棄物運搬用無蓋車
 #______________________________________way______________________________________
 #______________________________________way______________________________________
+Kanal
+運河
+MaglevTrack
+リニア軌道
+MaglevTrackElevated
+リニア軌道 高架部
+Powerline
+送電線
+Rillenschienen
+路面軌道
 asphalt_road
 アスファルトの道路
 city_road
@@ -1410,20 +1405,10 @@ elevated_monorail
 高架式モノレール
 gavel_road
 砂利道
-Kanal
-運河
-MaglevTrack
-リニア軌道
-MaglevTrackElevated
-リニア軌道 高架部
 mip_cobblestone_road
 石畳の道路
 monorail
 モノレール軌道
-Powerline
-送電線
-Rillenschienen
-路面軌道
 river
 可航河川
 river2

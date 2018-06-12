@@ -9,22 +9,8 @@
 #                           Language: cn Sim. Chinese                          #
 #                                Encoding: UTF-8                               #
 #                           Font : wenquanyi_9pt.bdf                           #
-#                            Date Created: 5.01 2018                           #
+#                           Date Created: 12.06 2018                           #
 #                                                                              #
-#                                   authors:                                   #
-#                                    - An_dz                                   #
-#                   note: Verified where all texts are shown                   #
-#                                    - Dwachs                                  #
-#                                     - E24                                    #
-#                                  - Flemmbrav                                 #
-#                                    - FrankP                                  #
-#                                Hao Wu - HaoWu                                #
-#                              Huanchao Zhu - HuanZ                            #
-#                                 Daniel - NNW                                 #
-#                                     - PTM                                    #
-#                                    - chwdy                                   #
-#                                    note: 2                                   #
-#                                    - prissi                                  #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -33,12 +19,8 @@ ClassicRail
 传统铁路桥
 ClassicRoad
 传统道路桥
-koka_Bridge_single
-高架铁路
 MaglevBridge
 磁浮轨道桥
-mlm_concrete_bridge
-混凝土单轨轨道桥
 ModernRoad
 现代式道路桥(钢筋混凝土)
 MonorailRamp
@@ -47,12 +29,16 @@ Schiffhebewerk
 船只起重机
 SteelRail
 钢铁铁路桥 (高速)
-tb_classic_road
-道路混凝土桥
 ViaductRail
 砖石高架桥
 WoodenRoad
 道路木桥
+koka_Bridge_single
+高架铁路
+mlm_concrete_bridge
+混凝土单轨轨道桥
+tb_classic_road
+道路混凝土桥
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 01_CITY
@@ -73,10 +59,10 @@ WoodenRoad
 总部
 AirDepot
 1900年式机库
-AirportShed1930
-早期机场邮局
 AirTerminal477
 大型客运楼
+AirportShed1930
+早期机场邮局
 Avila_Big_StationBlg
 巨型搭客楼
 Avila_Small_StationBlg
@@ -91,12 +77,12 @@ Bulk_StationBlg
 散货转运站
 BusStop
 与建巴士站/电车站
-Car_StationBlg
-车辆装卸区
 CarDepot
 道路车厂
 CarStop
 运送区
+Car_StationBlg
+车辆装卸区
 ChannelStop
 运河码头
 Control_StationBlg
@@ -149,12 +135,12 @@ Windmill
 #____________________________________citycar____________________________________
 Ambulanz
 救护车
+Pickup
+私家车
 green_car
 绿色私家车
 orange_bus
 橙色巴士
-Pickup
-私家车
 yellow_car
 黄色私家车
 #____________________________________factory____________________________________
@@ -165,38 +151,18 @@ Autohaus
 车行
 Autohersteller
 汽车制造厂
-bakery
-面包店
-brewery
-酿造厂
 Buchgrosshandel
 书店
-cannery
-罐头厂
-Cementmill
-水泥厂
 CHEMIST
 药房
+Cementmill
+水泥厂
 Concretefactory
 混凝土厂
-cow_farm
-养牛场
-dairy
-牛奶场
 Druckerei
 印刷厂
 Erzbergwerk
 铁矿
-fish_pond
-鱼池
-fish_swarm
-鱼群
-food_processing_plant
-食物工厂
-grain_farm
-米田
-grain_mill
-麦加工场
 Kohlegrube
 煤矿
 Kohlekraftwerk
@@ -233,18 +199,34 @@ TANKE
 油站
 Windkraftwerk
 风力发电站
+bakery
+面包店
+brewery
+酿造厂
+cannery
+罐头厂
+cow_farm
+养牛场
+dairy
+牛奶场
+fish_pond
+鱼池
+fish_swarm
+鱼群
+food_processing_plant
+食物工厂
+grain_farm
+米田
+grain_mill
+麦加工场
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
 汽车
-beer
-啤酒
 Bretter
 木板
 Buecher
 书本
-canned_food
-罐装食品
 Cement
 水泥
 Chemicals
@@ -253,26 +235,14 @@ Concrete
 混凝土
 Eisenerz
 铁
-fish
-鱼肉
-flour
-面粉
-food
-食物
 Gasoline
 汽油
-grain
-谷物
 Holz
 木
 Kohle
 煤
-meat
-肉类
 Medicine
 药物
-milk
-牛奶
 Moebel
 家具
 None
@@ -291,6 +261,22 @@ Stahl
 钢
 Stone
 石
+beer
+啤酒
+canned_food
+罐装食品
+fish
+鱼肉
+flour
+面粉
+food
+食物
+grain
+谷物
+meat
+肉类
+milk
+牛奶
 waste
 废物
 #__________________________________pedestrian___________________________________
@@ -309,8 +295,6 @@ CATEGORY_04
 冷冻货物
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
-choose_point
-方向选择标志
 ChooseSignals
 月台选择信号
 ChooseSignalsMonorail
@@ -321,16 +305,18 @@ NoAirEntry
 单向禁止升降
 NoEntry
 单向禁止进入
-preSignals
-前置讯号
-preSignalsMonorail
-单轨前置讯号
 RailClose
 铁路终止标志
 Signals
 讯号
 SignalsMonorail
 单轨列车信号
+choose_point
+方向选择标志
+preSignals
+前置讯号
+preSignalsMonorail
+单轨前置讯号
 traffic_light
 交通灯
 #____________________________________tunnel_____________________________________
@@ -347,14 +333,20 @@ Bus
 H-Trans巴士
 Doubledeck_city_bus
 双层市区巴士
-schooner
-双桅纵帆帆船
 SD40-2-back
 SD40-2 后部
 SD40-2-front
 SD40-2
+schooner
+双桅纵帆帆船
 #______________________________________way______________________________________
 #______________________________________way______________________________________
+MaglevTrack
+磁浮列车路轨
+MaglevTrackElevated
+架空磁浮列车路轨
+Powerline
+电缆
 asphalt_road
 沥青路
 city_road
@@ -369,16 +361,10 @@ elevated_monorail
 架空单轨铁路路轨
 gavel_road
 碎石路
-MaglevTrack
-磁浮列车路轨
-MaglevTrackElevated
-架空磁浮列车路轨
 mip_cobblestone_road
 石铺路(MIP)
 monorail
 单轨轨道
-Powerline
-电缆
 runway_grass
 泥地跑道
 runway_modern

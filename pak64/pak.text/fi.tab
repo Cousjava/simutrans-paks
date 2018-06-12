@@ -9,17 +9,8 @@
 #                              Language: fi Suomi                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 5.01 2018                           #
+#                           Date Created: 12.06 2018                           #
 #                                                                              #
-#                                   authors:                                   #
-#                                    - An_dz                                   #
-#                   note: Verified where all texts are shown                   #
-#                                    - Dwachs                                  #
-#                                  - Flemmbrav                                 #
-#                                    - FrankP                                  #
-#                                 Daniel - NNW                                 #
-#                                     - PTM                                    #
-#                                    - prissi                                  #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -28,12 +19,8 @@ ClassicRail
 Betoninen rautatiesilta
 ClassicRoad
 Betoninen maantiesilta
-koka_Bridge_single
-Korotettu rata
 MaglevBridge
 Maglev-silta
-mlm_concrete_bridge
-Betoninen Monorail-silta
 ModernRoad
 Moderni betonisilta
 MonorailRamp
@@ -44,12 +31,16 @@ Schiffhebewerk
 Laivanosturi
 SteelRail
 Teräksinen rautatiesilta
-tb_classic_road
-Betoninen maantiesilta
 ViaductRail
 Kivinen rautatiesilta
 WoodenRoad
 Puinen maantiesilta
+koka_Bridge_single
+Korotettu rata
+mlm_concrete_bridge
+Betoninen Monorail-silta
+tb_classic_road
+Betoninen maantiesilta
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 00_01_CITY
@@ -98,12 +89,12 @@ A6_DOME
 Tämä kaunis vanha  kirkko on\ntodellinen nähtävyys.\n
 AirDepot
 Hangaari
-AirportShed1930
-Postiterminaali
 AirStop
 Lastaussilta
 AirTerminal477
 Lentoterminaali
+AirportShed1930
+Postiterminaali
 Avila_Big_StationBlg
 Suuri asema rakennus
 Avila_Small_StationBlg
@@ -118,14 +109,6 @@ Bulk_StationBlg
 Hiilivarasto
 BusStop
 Bussi pysäkki
-Car_StationBlg
-Autoparkki
-CarDepot
-Autotalli
-CarStop
-Lastaus asema
-ChannelStop
-Kanavalaituri
 COM_00_01
 Pieni kauppa\n
 COM_00_02
@@ -188,6 +171,14 @@ COM_10_10
 Alppitalo\n
 COM_10_11
 Paritalo\n
+CarDepot
+Autotalli
+CarStop
+Lastaus asema
+Car_StationBlg
+Autoparkki
+ChannelStop
+Kanavalaituri
 Control_StationBlg
 Valvontatorni
 DenkFlor
@@ -218,12 +209,12 @@ FreightShipStop
 Rahtilaituri
 FreightTrainStop
 Tavara-asema
-Gas_StationBlg
-kaasusäiliö
 GCG1TrainStop
 Suuri asemahalli (vasen)
 GCG2TrainStop
 suuri asemahalli (oikea)
+Gas_StationBlg
+kaasusäiliö
 Goods_StationBlg
 Varasto
 Gymnasium
@@ -276,16 +267,14 @@ IND_02_09
 Kaasusäiliö\n
 LargeShipStop
 Suuri rahtinosturi
-leftShipStop
-Raskas nosturi
 LeuchtturmShipStop
 Majakka
 Lighthouse
 Majakka\n\n
-MainTerminal1930
-Aseman sisäänkäynti
 MHzSmallStation
 Asemarakennus
+MainTerminal1930
+Aseman sisäänkäynti
 ModernAirTerminal477
 Modermi lentoterminaali
 MonorailDepot
@@ -296,6 +285,12 @@ MonorailGround
 Monorail-perustus
 OldTownhall
 Vanha kaupungintalo\n\n
+PSFreightTrainStop
+Tavara-asema
+PSHall1TrainStop
+Asemahalli lehtikoneella
+PSHall2TrainStop
+Asemahalli
 Patricks_Rock
 Patrickin kallio\n\n
 PlainAirStop
@@ -304,16 +299,6 @@ PostOffice
 Postitoimisto
 PostStop
 Postilaatikko
-PSFreightTrainStop
-Tavara-asema
-PSHall1TrainStop
-Asemahalli lehtikoneella
-PSHall2TrainStop
-Asemahalli
-rampShipStop
-Ramppi
-Raven_Kirche
-Pyhän Meinradin kirkko\n\nErakko Meinrad eli kahden variksen\nkanssa. Hänet murhattiin, ja\nlegendan mukaan varikset\nseurasivat murhaajia ja toivat\nnämä oikeuden eteen.\nNykyään kyseisellä paikalla\nsijaitsee Einsiedelnin luostari.\n
 RES_00_06
 Pieni suihkulähde\n
 RES_00_07
@@ -368,12 +353,14 @@ RES_02_20
 Viiden tähden hotelli\n
 RES_11_01
 Pieni talo\n
-Residenz
-Residenssi\n\nPaikallinen joogaguru tapasi opettaa\nmeditointia ja sisäistä rauhaa\ntäällä. \n
-rightShipStop
-Laituri
 RUIN_0
 Keskiaikainen linna\n\nTämä linna raunioitui 400 vuotta\nsitten, mutta osa siitä on\nuudelleen rakennettu, ja se\ntoimii nykyään museona.\nNäkymät ovat fantastisia,\nmutta ne nähdäkseen täytyy\nkiivetä aivan liian monta porrasta.\n
+Raven_Kirche
+Pyhän Meinradin kirkko\n\nErakko Meinrad eli kahden variksen\nkanssa. Hänet murhattiin, ja\nlegendan mukaan varikset\nseurasivat murhaajia ja toivat\nnämä oikeuden eteen.\nNykyään kyseisellä paikalla\nsijaitsee Einsiedelnin luostari.\n
+Residenz
+Residenssi\n\nPaikallinen joogaguru tapasi opettaa\nmeditointia ja sisäistä rauhaa\ntäällä. \n
+STADIUM2
+Iso stadion\n\n
 SandStationMHz
 Hiekkapohjainen asema
 ShipDepot
@@ -382,8 +369,6 @@ ShipDepotEW
 Telakka
 ShipStop
 Satama
-STADIUM2
-Iso stadion\n\n
 Tennis_Court
 Tenniskenttä\n\n
 Terminal1930
@@ -410,22 +395,28 @@ Vorplatz
 Asemapiha
 Windmill
 Tuulimylly\n\n
+leftShipStop
+Raskas nosturi
+rampShipStop
+Ramppi
+rightShipStop
+Laituri
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
 Ambulanssi
 FordT
 T-ford
-green_car
-Vihreä auto
 Motorrad
 Moottoripyörä
-orange_bus
-Oranssi pakettiauto
 Pickup
 Lava-auto
 Roadster
 Vanha auto
+green_car
+Vihreä auto
+orange_bus
+Oranssi pakettiauto
 yellow_car
 Keltainen auto
 #____________________________________factory____________________________________
@@ -440,44 +431,22 @@ Autohaus
 Autokauppa
 Autohersteller
 Autotehdas
-bakery
-Leipomo
-brewery
-Panimo
 Buchgrosshandel
 Kirjatukku
-cannery
-Ruokapakkaamo
+CHEMIST
+Apteekki
 Cementmill
 Sementtimylly
 ChemicalPlant
 Kemikaalitehdas
-CHEMIST
-Apteekki
 Concretefactory
 Kevytbetonitehdas
-cow_farm
-Karjatila
-dairy
-Meijeri
 Druckerei
 Kirjapaino
 Erzbergwerk
 Rautakaivos
-fish_pond
-Kalalampi
-fish_swarm
-Kalaparvi
-food_processing_plant
-Ruuanjalostuslaitos
 Geokraftwerk
 Maalämpövoimala
-grain_farm
-Maatila
-grain_mill
-Mylly
-grain_windmill
-Tuulimylly
 Incinerator
 Jätteenpolttolaitos
 Kohlegrube
@@ -504,8 +473,6 @@ Oelkraftwerk
 Öljyvoimala
 Oelpumpe
 Öljypumppu
-old_farm
-Maatila
 Papierfabrik
 Paperitehdas
 Pharmaceutics
@@ -520,34 +487,54 @@ SaegewerkMHz
 Saha
 Sandquarry
 Hiekkalouhos
-scrap_yard
-Romuttamo
 Stahlwerk
 Rautavalimo
 Stonequarry
 Kivilouhos
-supermarket
-Supermarketti
 TANKE
 Huoltoasema
-thermisches_Solarkraftwerk
-Aurinkovoimala
 Turmkraftwerk
 Aurinkolämpövoimala
 Windkraftwerk
 Tuulivoimala
+bakery
+Leipomo
+brewery
+Panimo
+cannery
+Ruokapakkaamo
+cow_farm
+Karjatila
+dairy
+Meijeri
+fish_pond
+Kalalampi
+fish_swarm
+Kalaparvi
+food_processing_plant
+Ruuanjalostuslaitos
+grain_farm
+Maatila
+grain_mill
+Mylly
+grain_windmill
+Tuulimylly
+old_farm
+Maatila
+scrap_yard
+Romuttamo
+supermarket
+Supermarketti
+thermisches_Solarkraftwerk
+Aurinkovoimala
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
 autoa
-beer
-olutta
 Bretter
 lautoja
 Buecher
 kirjoja
-canned_food
-säilykkeitä
 Cement
 sementtiä
 Chemicals
@@ -556,26 +543,14 @@ Concrete
 kevytbetonia
 Eisenerz
 rautamalmia
-fish
-kalaa
-flour
-jauhoja
-food
-ruokaa
 Gasoline
 bensiiniä
-grain
-viljaa
 Holz
 tukkeja
 Kohle
 hiiltä
-meat
-lihaa
 Medicine
 lääkkeitä
-milk
-maitoa
 Moebel
 huonekaluja
 None
@@ -598,6 +573,22 @@ Stahl
 terästä
 Stone
 kiveä
+beer
+olutta
+canned_food
+säilykkeitä
+fish
+kalaa
+flour
+jauhoja
+food
+ruokaa
+grain
+viljaa
+meat
+lihaa
+milk
+maitoa
 waste
 jätettä
 #__________________________________ground_obj___________________________________
@@ -610,6 +601,8 @@ Couple
 Pariskunta
 Cyclist
 Pyöräilijä
+Woman
+Nainen
 pedestrian_1
 Jalankulkija
 pedestrian_2
@@ -622,8 +615,6 @@ pedestrian_child
 lapsi
 pedestrian_dog
 koira
-Woman
-Nainen
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -644,8 +635,6 @@ rolls
 rullaa
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
-choose_point
-Asemanvalintapiste
 ChooseSignals
 Valintaosoittimet
 ChooseSignalsMonorail
@@ -654,16 +643,18 @@ Minimum80
 Vähimmäisnopeus 80 km/h
 NoEntry
 Pääsy kielletty
-preSignals
-Esiosoittimet
-preSignalsMonorail
-Esiosoittimet
 RailClose
 Radan pääte
 Signals
 Ratailmaisimet
 SignalsMonorail
 Monorail-osoittimet
+choose_point
+Asemanvalintapiste
+preSignals
+Esiosoittimet
+preSignalsMonorail
+Esiosoittimet
 traffic_light
 Liikennevalot
 #_____________________________________tree______________________________________
@@ -868,10 +859,10 @@ Cooling_Waggon
 Kylmävaunu
 DC-3
 Douglass DC-3
-Doubledeck_city_bus
-Kaksikerroksinen turistibussi
 DoubleDecker
 Kaksikerroksinen bussi
+Doubledeck_city_bus
+Kaksikerroksinen turistibussi
 E44
 E44 -veturi
 Eb3-5
@@ -930,6 +921,8 @@ H-Trans-Tigress-II-Back
 H-Trans Tigress II Taka (sähkö)
 H-Trans-Tigress-II-Front
 H-Trans Tigress II Etu (sähkö)
+HVPosttransporter
+DIBU/H-Trans postiauto
 Hadley-Page-V1500
 Hadley Page V1500
 Heavy_ore_truck
@@ -956,8 +949,6 @@ Horses
 Hevoset
 Horsewoodcariage
 Puukärryt
-HVPosttransporter
-DIBU/H-Trans postiauto
 ICE_TD-back
 ICE TD taka
 ICE_TD-car
@@ -970,12 +961,6 @@ JNR_C11
 JNR C11 (2-6-4T)
 JumboJet
 Boeing 747 "Jumbo Jet"
-kkStB_tender
-St-B hiilivaunu
-kkStB110
-St-B höyryveturi
-kkStB91
-St-B höyryveturi
 Kohleanhaenger
 Hiiliperävaunu
 Kohletransporter
@@ -990,8 +975,6 @@ Lockhead_Tristar
 Lockheed Tristar
 Lockheed10-Electra
 Lockheed Electra\n
-logs
-tukkeja
 Lowa
 Lowa-raitiovaunu
 Lowa_Anhaenger
@@ -1016,8 +999,6 @@ Oilbarge
 Öljyproomu
 Oiltrailer
 Öljysäiliövaunu
-old_open_car
-Vanha hiilivaunu
 OldOil
 Vanha öljyvaunu
 Papieranhaenger
@@ -1046,8 +1027,6 @@ Sandanhaenger
 Hiekkaperävaunu
 Sandtransporter
 WF Ultd. Hiekkarekka
-schooner
-Kuunari
 SlowFerry
 H-Trans matkustajalautta
 Stahlanhaenger
@@ -1066,20 +1045,18 @@ Stonetransporter
 WF Ultd. MK2 Kivirekka
 SuperConstellation
 Super Constellation
-Tanklastzug
-H-Trans öljysäiliöauto
-Tatra-T4
-TATRA-T4 raitiovaunuveturi
-Tatra-T4_Wagon
-TATRA-T4 matkustajavaunu
-teaclipper
-Purjealus
 TPBeiwagen
 TPI VT98 matkustajavaunu
 TPPassagierwagen
 TPI matkustajavaunu
 TPSchienenbus
 TPI VT98 (dmu)
+Tanklastzug
+H-Trans öljysäiliöauto
+Tatra-T4
+TATRA-T4 raitiovaunuveturi
+Tatra-T4_Wagon
+TATRA-T4 matkustajavaunu
 Tram_GT6_Kopf
 GT6 raitiovaunu
 Trike
@@ -1094,8 +1071,32 @@ XTest
 Xtestiveturi
 Zeppelin
 Zeppelin-ilmalaiva
+kkStB110
+St-B höyryveturi
+kkStB91
+St-B höyryveturi
+kkStB_tender
+St-B hiilivaunu
+logs
+tukkeja
+old_open_car
+Vanha hiilivaunu
+schooner
+Kuunari
+teaclipper
+Purjealus
 #______________________________________way______________________________________
 #______________________________________way______________________________________
+Kanal
+Kanava
+MaglevTrack
+Maglev-rata
+MaglevTrackElevated
+Korotettu Maglev-rata
+Powerline
+Voimalinja
+Rillenschienen
+Raitiovaunurata
 asphalt_road
 Asfalttitie
 city_road
@@ -1110,20 +1111,10 @@ elevated_monorail
 Korotettu Monorail-rata
 gavel_road
 Öljysoratie
-Kanal
-Kanava
-MaglevTrack
-Maglev-rata
-MaglevTrackElevated
-Korotettu Maglev-rata
 mip_cobblestone_road
 Kivitie
 monorail
 Monorail-rata
-Powerline
-Voimalinja
-Rillenschienen
-Raitiovaunurata
 river
 Kulkukelpoinen joki
 river2

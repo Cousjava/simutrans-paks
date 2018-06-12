@@ -9,17 +9,8 @@
 #                              Language: et Eesti                              #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 5.01 2018                           #
+#                           Date Created: 12.06 2018                           #
 #                                                                              #
-#                                   authors:                                   #
-#                                    - An_dz                                   #
-#                   note: Verified where all texts are shown                   #
-#                                    - Dwachs                                  #
-#                                  - Flemmbrav                                 #
-#                                    - FrankP                                  #
-#                                 Daniel - NNW                                 #
-#                                     - PTM                                    #
-#                                    - prissi                                  #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -28,18 +19,18 @@ ClassicRail
 betoonraudteesild
 ClassicRoad
 betoonsild
-koka_Bridge_single
-tõstetud raudtee
 MaglevBridge
 magnetraudtee sild
-mlm_concrete_bridge
-betoonist monoraudteesild
 ModernRoad
 Moodne sild
 ViaductRail
 Kiviviadukt
 WoodenRoad
 Puusild
+koka_Bridge_single
+tõstetud raudtee
+mlm_concrete_bridge
+betoonist monoraudteesild
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 00_01_CITY
@@ -86,12 +77,12 @@ A6_DOME
 Vana katedraal\n\nselle linna keskus juba umbes\ntuhat aastat.\n
 AirDepot
 Angaar aastast 1900
-AirportShed1930
-Lennujaama kirjakuur (1901)
 AirStop
 lennukisild
 AirTerminal477
 Lennujaama terminal (1950)
+AirportShed1930
+Lennujaama kirjakuur (1901)
 Avila_Big_StationBlg
 Suur jaamahoone
 Avila_Small_StationBlg
@@ -102,14 +93,6 @@ Bulk_StationBlg
 söejaam
 BusStop
 bussipeatus
-Car_StationBlg
-autoparkla
-CarDepot
-garaa?
-CarStop
-parkla
-ChannelStop
-kai
 COM_00_01
 Väike pood\n
 COM_00_05
@@ -126,22 +109,28 @@ COM_01_09
 Vana kino\n
 COM_01_17
 Keskmine büroohoone\n
+CarDepot
+garaa?
+CarStop
+parkla
+Car_StationBlg
+autoparkla
+ChannelStop
+kai
 MHzSmallStation
 Jaamaehitis (MHz-ilt)
 ModernAirTerminal477
 Moodne lennujaamaterminal
 OldTownhall
 Vana linnahall\n
-PostOffice
-Postkontor
 PSFreightTrainStop
 perroon
 PSHall1TrainStop
 Jaamahall putkaga
 PSHall2TrainStop
 Jaama hall
-Raven_Kirche
-St. Meinradi kirik\n\nEremiit püha Meinrad oli\nsaadetud kahe kaarna\npoolt. Kui ta mõrvati, kaks\nkaarnat jälitasid mõrvareid\nja mõistsid nad süüdi. Täna\non tema onni kohal Einsiedelni\nklooster.\n
+PostOffice
+Postkontor
 RES_00_06
 Väike purskkaev. Kuigi see\nei ole nii suur kui Genevas,\nsee rõõmustab inimesi kes\nselle ümber käivad, eriti\nsuvel.\n
 RES_00_07
@@ -174,6 +163,8 @@ RES_01_12
 Kortermaja\n
 RES_02_16
 Lukskorterid varikatusega\n
+Raven_Kirche
+St. Meinradi kirik\n\nEremiit püha Meinrad oli\nsaadetud kahe kaarna\npoolt. Kui ta mõrvati, kaks\nkaarnat jälitasid mõrvareid\nja mõistsid nad süüdi. Täna\non tema onni kohal Einsiedelni\nklooster.\n
 Residenz
 Residents. Seda kohta\nkasutab kohalik joogaguru,\nkes õpetab mediteerimist ja\nsisemist rahu. Seal on palju\nBonge, mis iganes need ka\nei ole.\n
 Tennis_Court
@@ -206,20 +197,14 @@ Autohaus
 Autopood
 Autohersteller
 Autotehas
-bakery
-Pagar
-brewery
-Õlletehas
 Buchgrosshandel
 Raamatupood
-cannery
-konservitsehh
+CHEMIST
+apteek
 Cementmill
 tsemenditehas
 ChemicalPlant
 kemikaalitehas
-CHEMIST
-apteek
 Moebelfabrik
 Mööblitehas
 Moebelhaus
@@ -238,6 +223,12 @@ Raffinerie
 Plastmassirafineermiskoda
 Windkraftwerk
 Tuuleelektrijaam
+bakery
+Pagar
+brewery
+Õlletehas
+cannery
+konservitsehh
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
@@ -270,10 +261,10 @@ Minimum80
 Väikseim kiirus 80 km/h
 NoEntry
 sissepääs keelatud
-preSignals
-Signaal
 RailClose
 Raudteesulg
+preSignals
+Signaal
 traffic_light
 Valgusfoor
 #_____________________________________tree______________________________________
@@ -390,19 +381,19 @@ Zeppelin
 Tsepeliin
 #______________________________________way______________________________________
 #______________________________________way______________________________________
+MaglevTrack
+magnetraudtee
+MaglevTrackElevated
+tõstetud magnetraudtee
+Powerline
+Elektriliin
 asphalt_road
 Asfalttee
 city_road
 linna tee
 cobblestone_road
 munakivitee
-MaglevTrack
-magnetraudtee
-MaglevTrackElevated
-tõstetud magnetraudtee
 mip_cobblestone_road
 MIP munakivisillutusega tee
-Powerline
-Elektriliin
 wooden_sleeper_track
 Puuliipritega raudtee

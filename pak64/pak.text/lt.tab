@@ -9,19 +9,8 @@
 #                            Language: lt Lithuanian                           #
 #                                Encoding: UTF-8                               #
 #                                Font : cyr.bdf                                #
-#                            Date Created: 5.01 2018                           #
+#                           Date Created: 12.06 2018                           #
 #                                                                              #
-#                                   authors:                                   #
-#                                    - An_dz                                   #
-#                   note: Verified where all texts are shown                   #
-#                                    - Dwachs                                  #
-#                                  - Flemmbrav                                 #
-#                                    - FrankP                                  #
-#                                 Daniel - NNW                                 #
-#                                     - PTM                                    #
-#                                  - enternald                                 #
-#     note: Need more lt translators. Eiti į http://simutrans-germany.com/     #
-#                                    - prissi                                  #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -30,12 +19,8 @@ ClassicRail
 Betoninis tiltas
 ClassicRoad
 Betoninis tiltas
-koka_Bridge_single
-pakelti bėgiai
 MaglevBridge
 Magnetinis tiltas
-mlm_concrete_bridge
-Vienbėgio traukinio tiltas
 ModernRoad
 Šiuolaikinis kelias
 MonorailRamp
@@ -46,12 +31,16 @@ Schiffhebewerk
 Šliuzas
 SteelRail
 Plieno sijų tiltas
-tb_classic_road
-Betoninis viadukas
 ViaductRail
 Akmeninis geležiankelio viadukas
 WoodenRoad
 Medinis tiltas
+koka_Bridge_single
+pakelti bėgiai
+mlm_concrete_bridge
+Vienbėgio traukinio tiltas
+tb_classic_road
+Betoninis viadukas
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 00_01_CITY
@@ -88,12 +77,12 @@ Būstinė
 Tarptautinė būstinė
 AirDepot
 Angaras (1900 m)
-AirportShed1930
-Pasto pašiūrė (1900)
 AirStop
 įėjimo tiltelis.
 AirTerminal477
 orouosto terminalas (1950)
+AirportShed1930
+Pasto pašiūrė (1900)
 Avila_Big_StationBlg
 didelis stoties pastatas
 Avila_Small_StationBlg
@@ -108,16 +97,16 @@ Bulk_StationBlg
 anglies stotis
 BusStop
 Autobuso stotelė
-Car_StationBlg
-mašinų aikštelė
+COM_00_01
+Maža parduotuvė\n\nPigios ir ekologiškos prekės verčia lankytojus niekados nepalikti šios parduotuvės tuščios
 CarDepot
 Garažas
 CarStop
 Krovinių aikštelė
+Car_StationBlg
+mašinų aikštelė
 ChannelStop
 Prieplauka
-COM_00_01
-Maža parduotuvė\n\nPigios ir ekologiškos prekės verčia lankytojus niekados nepalikti šios parduotuvės tuščios
 Control_StationBlg
 geležinkelio dispečiarinė
 Eingang
@@ -128,18 +117,18 @@ FreightShipStop
 Prieplauka
 FreightTrainStop
 Krovinių platforma
-Gas_StationBlg
-Dujų balionai
 GCG1TrainStop
 Stoties halė (kairė)
 GCG2TrainStop
 Stoties halė (dešinė)
+Gas_StationBlg
+Dujų balionai
 Goods_StationBlg
 Sandėlis
 Gymnasium
 Gimanazija\n\n
-rampShipStop
-Rampa
+STADIUM2
+Didelis stadionas\n\nČia vyksta tarptautinio \nmąsto renginiai.\n\n
 SandStationMHz
 Stotelė be platformos
 ShipDepot
@@ -148,8 +137,6 @@ ShipDepotEW
 Dokas
 ShipStop
 Uostas
-STADIUM2
-Didelis stadionas\n\nČia vyksta tarptautinio \nmąsto renginiai.\n\n
 Tennis_Court
 Teniso kortai\n\n
 Terminal1930
@@ -176,22 +163,24 @@ Vorplatz
 Pavėsinė
 Windmill
 Istorinis malūnas\n\nPritraukia visokio plauko riterius aktorius.
+rampShipStop
+Rampa
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
 Greitoji
 FordT
 Ford T(GAZ T)
-green_car
-Žalia Siera
 Motorrad
 Mopedas
-orange_bus
-Mikriukas
 Pickup
 Pikapas
 Roadster
 Senas kabrioletas
+green_car
+Žalia Siera
+orange_bus
+Mikriukas
 yellow_car
 Geltonoji mašina
 #____________________________________factory____________________________________
@@ -206,42 +195,20 @@ Autohaus
 Auto parduotuvė
 Autohersteller
 Auto gamykla
-bakery
-Kepykla
-brewery
-Alaus darykla
 Buchgrosshandel
 Knygynas
-cannery
-Konservų fabrikas
+CHEMIST
+Farmacijos įmonė
 Cementmill
 Cemento gamykla
 ChemicalPlant
 Chemijos gamykla
-CHEMIST
-Farmacijos įmonė
 Concretefactory
 Betono maišytuvas
-cow_farm
-Galvijų ūkis
-dairy
-Pieninė
 Druckerei
 Spaustuvė
 Erzbergwerk
 Geležies kasykla
-fish_pond
-Tvenkinys
-fish_swarm
-Žuvų tuntas
-food_processing_plant
-Maisto gamykla
-grain_farm
-Grudų Ūkis
-grain_mill
-Malūnas
-grain_windmill
-Vejo malūnas
 Incinerator
 Šiukšlynas
 Kohlegrube
@@ -268,8 +235,6 @@ Oelkraftwerk
 Mazutu kurenama jegainė
 Oelpumpe
 Naftos siurblys
-old_farm
-Ūkis
 Papierfabrik
 Popieriaus gamykla
 Pharmaceutics
@@ -284,34 +249,54 @@ SaegewerkMHz
 Staliaus dirbtuvės
 Sandquarry
 Smėlio karjeras
-scrap_yard
-Metalo laužas
 Stahlwerk
 Plieno liejykla
 Stonequarry
 Akmenų skaldykla
-supermarket
-Prekybos centras
 TANKE
 Degalinė
-thermisches_Solarkraftwerk
-Saulės jegainė
 Turmkraftwerk
 Saulės terminė jegainė
 Windkraftwerk
 Vėjo jegainė
+bakery
+Kepykla
+brewery
+Alaus darykla
+cannery
+Konservų fabrikas
+cow_farm
+Galvijų ūkis
+dairy
+Pieninė
+fish_pond
+Tvenkinys
+fish_swarm
+Žuvų tuntas
+food_processing_plant
+Maisto gamykla
+grain_farm
+Grudų Ūkis
+grain_mill
+Malūnas
+grain_windmill
+Vejo malūnas
+old_farm
+Ūkis
+scrap_yard
+Metalo laužas
+supermarket
+Prekybos centras
+thermisches_Solarkraftwerk
+Saulės jegainė
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
 Mašinos
-beer
-Alus
 Bretter
 Lentos
 Buecher
 Knygos
-canned_food
-Konservai
 Cement
 Cementas
 Chemicals
@@ -320,26 +305,14 @@ Concrete
 Betonas
 Eisenerz
 Geležies rūda
-fish
-Žuvis
-flour
-Miltai
-food
-Maistas
 Gasoline
 Kuras
-grain
-Grūdai
 Holz
 Mediena
 Kohle
 Anglis
-meat
-Mėsa
 Medicine
 Vaistai
-milk
-Pienas
 Moebel
 Baldai
 None
@@ -362,10 +335,38 @@ Stahl
 Plienas
 Stone
 Akmuo
+beer
+Alus
+canned_food
+Konservai
+fish
+Žuvis
+flour
+Miltai
+food
+Maistas
+grain
+Grūdai
+meat
+Mėsa
+milk
+Pienas
 waste
 Šiukšlės
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
+Hochsitz1
+Medžiotojų bokštelis
+Hochsitz2
+Girininkų bokštelis
+See1
+Gulbių ežeras
+See2
+Ežeras
+See3
+Ežeras
+See4
+Ežeras
 bushes
 Krūmai
 deco_rock
@@ -376,20 +377,8 @@ gemsen
 Ožiai
 gooses
 Žąsis
-Hochsitz1
-Medžiotojų bokštelis
-Hochsitz2
-Girininkų bokštelis
 rocks
 Akmenys
-See1
-Gulbių ežeras
-See2
-Ežeras
-See3
-Ežeras
-See4
-Ežeras
 sheeps
 Avys
 #__________________________________pedestrian___________________________________
@@ -398,6 +387,8 @@ Couple
 Porelė
 Cyclist
 Dviratininkas
+Woman
+moteris
 pedestrian_1
 Pėstysis
 pedestrian_2
@@ -410,8 +401,6 @@ pedestrian_child
 Vaikas
 pedestrian_dog
 šuo
-Woman
-moteris
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -432,8 +421,6 @@ rolls
  ritiniai
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
-choose_point
-Rinkis kelią
 ChooseSignals
 Pasirinkimo signalai
 ChooseSignalsMonorail
@@ -448,16 +435,18 @@ NoAirEntry
 "Nėra kelio" ženklas
 NoEntry
 nėra kelio
-preSignals
-Pre-signalai (dviems blokams)
-preSignalsMonorail
-Pre-signalai (dviems blokams)
 RailClose
 Bėgis uždarytas
 Signals
 Geležinkelio signalas
 SignalsMonorail
 Signalai
+choose_point
+Rinkis kelią
+preSignals
+Pre-signalai (dviems blokams)
+preSignalsMonorail
+Pre-signalai (dviems blokams)
 traffic_light
 Šviesoforai
 #_____________________________________tree______________________________________
@@ -588,20 +577,8 @@ BB1280
 JaCo BB1280 
 BB200
 Empire BB200
-Be5-7
-BLS Be 5/7
-Blimp
-Diržablis
-Book_Trike
-Parcel'io siuntinių triratis
-Boxcar
-MJHN Prekių vagonas
 BR01
 SingCo BR01 4-6-2
-Br118DR
-Sojo Group BR118DR
-Br234
-Brose BR234
 BR38
 BR 38
 BR38-Tender
@@ -610,22 +587,34 @@ BR39
 SingCo BR289 2-8-2
 BR45
 SingCo BR45 2-10-2
+BR85
+SingCo BR86 2-8-2
+BRV36
+Colin BRV36
+Be5-7
+BLS Be 5/7
+Blimp
+Diržablis
+Book_Trike
+Parcel'io siuntinių triratis
+Boxcar
+MJHN Prekių vagonas
+Br118DR
+Sojo Group BR118DR
+Br234
+Brose BR234
 Br614back
 BR614 Keleivinis tr. (galas)
 Br614car
 BR614 keleivinis vagonas
 Br614front
 BR614 Keleivinis traukinys
-BR85
-SingCo BR86 2-8-2
 Bretteranhaenger
 WF Ultd. lentų priekaba
 Brettertransporter
 WF Ultd. Lentų sunkvežimas
 Bretterwagen
 VT Vienna lentų vagonas
-BRV36
-Colin BRV36
 Buchanhaenger
 Serj/H-Trans knygų priekaba
 Buchtrailer
@@ -644,6 +633,8 @@ Bulkcarriage
 Vežimas
 Bus
 H-Trans autobusas
+CC7100
+ACTrain CC7100
 CarFlat
 Automobilių vagonas
 Cargosprinter-Front
@@ -652,8 +643,6 @@ Cargosprinter-Mittel
 Cargosprinter vagonas
 Cargosprinter-Steuer
 Cargosprinter (galas)
-CC7100
-ACTrain CC7100
 Cementtrailer
 Cemento puspriekabė
 Class86
@@ -692,18 +681,18 @@ Cooling_Truck
 Sunkvežimis šaldytuvas
 Cooling_Waggon
 Šaldymo vagonas
-DaimlerStoll
-Daimler & Co Autobusas
 DC-3
 MHz Douglas DC-3
+DaimlerStoll
+Daimler & Co Autobusas
 Deponielaster
 Šiukšliavežis
 Deponielaster2
 Dvikaušis šiukšlių savivartis
-Doubledeck_city_bus
-Dviaukštis autobusas
 DoubleDecker
 Dviaukštis keleivinis vagonas
+Doubledeck_city_bus
+Dviaukštis autobusas
 E44
 Empire E44
 Eb3-5
@@ -774,12 +763,14 @@ H-Trans-Tigress-II-Back
 H-Trans Tigress II (galas)
 H-Trans-Tigress-II-Front
 H-Trans Tigress II
+HJMAvia
+HJM Avia
+HVPosttransporter
+HVP pašto sunkvežimis
 Hadley-Page-V1500
 RavenCo Hadley-Page V1500 Goose
 Heavy_ore_truck
 H1750 Sunkusis savivartis
-HJMAvia
-HJM Avia
 Hochbordwagen
 Ravenco atviras vagonas
 Holzanhaenger
@@ -802,8 +793,6 @@ Horses
 Arklių ketvertas
 Horsewoodcariage
 Rastų vežimas
-HVPosttransporter
-HVP pašto sunkvežimis
 ICE_TD-back
 Bennhardt ICE-TD (galas)
 ICE_TD-car
@@ -822,12 +811,6 @@ Ju52
 RavAir Ju-52 Juliet
 JumboJet
 RavAir BN-747D "Jumbo"
-kkStB_tender
-WEC kkStB tenderis
-kkStB110
-WEC kkStB110 2-4-0
-kkStB91
-WEC kkStB91 0-6-0
 Klappdeckelwagen
 MHz Granulių vagonas Mk. I
 Kohleanhaenger
@@ -848,18 +831,16 @@ Lockhead_Tristar
 MHz Lockhead M-1011 TriStar
 Lockheed10-Electra
 Simlock Lockheed S-188 Electra
-logs
-Rąstai
 Lowa
 BennHardt T-26
 Lowa_Anhaenger
 BennHardt T-26 (vagonas)
 Mack_Truck_01
 TMC Mack sunkvežimis
-Mailcontainerwagon
-MSP pašto vagonas
 MailExpress
 Empire Pašto kurjeris
+Mailcontainerwagon
+MSP pašto vagonas
 Mailwagon
 Empire "Alto" pašto vagonas
 Milk_Truck
@@ -872,12 +853,12 @@ Moebelwagen
 DMC prekinis vagonas
 Muellschiff
 MHz šiukšlių barža
-NeuOelwagen
-Empire tankeris
 NS1000
 P-Rail NS-1000
 NS1600
 P-Rail NS-1600
+NeuOelwagen
+Empire tankeris
 Oelanhaenger
 H-Trans naftovežis
 Oelwagen
@@ -886,8 +867,6 @@ Oilbarge
 Empire naftos barža
 Oiltrailer
 SimCo naftos puspriekabė
-old_open_car
-SimCo senas atviras vagonas
 OldOil
 Kahan tankeris vagonas
 Ox2
@@ -918,24 +897,20 @@ PrPostwagen
 SingCo pašto vagonas
 RenaultTH5
 Colin Renault TH5
-Sandanhaenger
-SMP savivartė priekaba
-Sandtransporter
-SMP sąvivartis
-schooner
-Novia Scotia škuna
-Schooner_Bark
-Barkas
 SD40-2-back
 SD40 Double (galas)
 SD40-2-front
 SD40
-setra_S10
-Setra S10 autobusas
-SlowFerry
-H-Trans keltas
 SMPoiltruck
 SMP benzovežis
+Sandanhaenger
+SMP savivartė priekaba
+Sandtransporter
+SMP sąvivartis
+Schooner_Bark
+Barkas
+SlowFerry
+H-Trans keltas
 Stahlanhaenger
 H-Trans plieno pervežimo priekaba
 Stahltransporter
@@ -958,24 +933,22 @@ T21_bus
 Empire T-21 autobusas
 T24
 RK Ltd. T-24
-Tanklastzug
-H-trans Benzovežis
-Tatra-T4
-Tatra T-4
-Tatra-T4_Wagon
-Tatra T-4 (vagonas)
 TB13
 Bernhardt T-13 (vagonas)
 TB24
 RK Ltd. T-24 (vagonas)
-teaclipper
-Kliperis
 TPBeiwagen
 Brose TP-5200 (galas)
 TPPassagierwagen
 Empire-Osaka keleivinis vagonas
 TPSchienenbus
 Brose TP-5200
+Tanklastzug
+H-trans Benzovežis
+Tatra-T4
+Tatra T-4
+Tatra-T4_Wagon
+Tatra T-4 (vagonas)
 Tram_GT6_Ende
 Autocar GT-6 (galas)
 Tram_GT6_Kopf
@@ -1004,8 +977,34 @@ XTest
 Kirayami X-1
 Zeppelin
 Diržablis
+kkStB110
+WEC kkStB110 2-4-0
+kkStB91
+WEC kkStB91 0-6-0
+kkStB_tender
+WEC kkStB tenderis
+logs
+Rąstai
+old_open_car
+SimCo senas atviras vagonas
+schooner
+Novia Scotia škuna
+setra_S10
+Setra S10 autobusas
+teaclipper
+Kliperis
 #______________________________________way______________________________________
 #______________________________________way______________________________________
+Kanal
+Kanalas
+MaglevTrack
+Magnetinės levitacijos bėgiai
+MaglevTrackElevated
+Pakelti magnetiniai bėgiai
+Powerline
+Elektros linija
+Rillenschienen
+Lengvieji bėgiai
 asphalt_road
 Asfalto kelias
 city_road
@@ -1020,20 +1019,10 @@ elevated_monorail
 Pakeltas vienbėgis geležinkelis
 gavel_road
 Žvyrkelis
-Kanal
-Kanalas
-MaglevTrack
-Magnetinės levitacijos bėgiai
-MaglevTrackElevated
-Pakelti magnetiniai bėgiai
 mip_cobblestone_road
 Tašytų akmenų dangos kelias
 monorail
 Vienbėgis
-Powerline
-Elektros linija
-Rillenschienen
-Lengvieji bėgiai
 river
 Perplaukiama upė
 river2

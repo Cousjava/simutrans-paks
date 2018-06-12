@@ -9,20 +9,8 @@
 #                              Language: ca Catala                             #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 5.01 2018                           #
+#                           Date Created: 12.06 2018                           #
 #                                                                              #
-#                                   authors:                                   #
-#                                    - An_dz                                   #
-#                   note: Verified where all texts are shown                   #
-#                                    - Dwachs                                  #
-#                                  - Flemmbrav                                 #
-#                                    - FrankP                                  #
-#                                    - JoanM                                   #
-#                                 Daniel - NNW                                 #
-#                                     - PTM                                    #
-#                          Albert Ruiz - albert.yuste                          #
-#                           note: Albert Ruiz - Zeno                           #
-#                                    - prissi                                  #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -31,12 +19,12 @@ ClassicRail
 Via elevada
 ClassicRoad
 Carretera elevada
-koka_Bridge_single
-Via elevada
 PowerBridge
 Línia d'alta tensió
 SteelRail
 Estructura elevada
+koka_Bridge_single
+Via elevada
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 01_CITY
@@ -55,8 +43,6 @@ A6_DOME
 Aquesta preciosa  catedral\nantiga  és una gran  atracció.\n
 LargeShipStop
 Grúa pesada de càrrega
-leftShipStop
-Grúa de gran capacitat
 LeuchtturmShipStop
 Port amb far
 Lighthouse
@@ -67,14 +53,16 @@ PSHall1TrainStop
 Vestíbul d'estació amb oficina d'informació
 PSHall2TrainStop
 Vestíbul d'estació
-rampShipStop
-Rampa de càrrega per a vaixells
-Raven_Kirche
-Església de St. Meinrad\n\nL'ermita de St. Meinrad\nestà custodiada per dos enormes corbs\n segons la llegenda. Quan \nMeinrad va ser assassinat,\nels dos corbs van perseguir \nals assassins i els van\ncondemnar per tota la\neternitat. En l'actualitat, el\nlloc està ocupat pel\nmonastir d'Einsideln.\n\n
 RES_00_01
 Aquesta casa no sembla fora del normal però és al centre de l'univers Simutrans. Va ser un dels primers edificis construits a Simutrans.
 RES_00_02
 Des que la primera bombolla econòmica va explotar, aquest director general ara viu a la casa d'estiueig. Afortunadament la va comprar originalment en nom del seu gos.
+Raven_Kirche
+Església de St. Meinrad\n\nL'ermita de St. Meinrad\nestà custodiada per dos enormes corbs\n segons la llegenda. Quan \nMeinrad va ser assassinat,\nels dos corbs van perseguir \nals assassins i els van\ncondemnar per tota la\neternitat. En l'actualitat, el\nlloc està ocupat pel\nmonastir d'Einsideln.\n\n
+leftShipStop
+Grúa de gran capacitat
+rampShipStop
+Rampa de càrrega per a vaixells
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 Autohaus
@@ -83,10 +71,10 @@ Autohersteller
 Fàbrica cotxes
 Buchgrosshandel
 Majorista de llibres
-Cementmill
-Fàbrica de ciment
 CHEMIST
 Farmàcia (per Seth)
+Cementmill
+Fàbrica de ciment
 Concretefactory
 Fábrica de formigó
 Druckerei
@@ -159,14 +147,14 @@ Pedra
 #___________________________________roadsign____________________________________
 LongBlockSignals
 Senyals de bloqueig de tram llarg
-preSignals
-Presenyals (ambdos sentits)
-preSignalsMonorail
-Pre-senyals (ambdós sentits)
 RailClose
 Via morta
 Railgate
 Barrera que exclou un altre jugador
+preSignals
+Presenyals (ambdos sentits)
+preSignalsMonorail
+Pre-senyals (ambdós sentits)
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Latschenkiefer
@@ -221,14 +209,14 @@ Erzwagen
 Vagó per a ferro
 FastFerry
 Ferry ràpid
+HVPosttransporter
+Camió correu DIBU/H-Trans
 Holzanhaenger
 JET remolc per a fusta
 Holztransporter
 Camió per a fusta H-trans
 Holzwagen
 Vagó per a troncs de fusta
-HVPosttransporter
-Camió correu DIBU/H-Trans
 Kohletransporter
 Camió per a carbó H-trans
 Kohlewagen
@@ -245,8 +233,6 @@ Lockhead_Tristar
 Fuselatges MHz M-1011 TriStar
 Lockheed10-Electra
 Fuselatges MHz S-188 Electra
-logs
-Balises
 Moebelwagen
 VT Vienna Vagó per a mobles
 Oelanhaenger
@@ -279,17 +265,19 @@ Stahlwagen
 Vagó per a acer
 Staubkesselwagen
 Vagó per a plàstics
-Tanklastzug
-Camió cisterna
 TPBeiwagen
 Cotxe addicional per a TPI VT98
 TPPassagierwagen
 TPI Vagó passatgers
 TPSchienenbus
 TPI VT98 (dièsel)
+Tanklastzug
+Camió cisterna
+logs
+Balises
 #______________________________________way______________________________________
 #______________________________________way______________________________________
-city_road
-Carrer
 Powerline
 Xarxa elèctrica
+city_road
+Carrer

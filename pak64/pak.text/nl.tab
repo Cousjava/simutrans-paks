@@ -9,21 +9,8 @@
 #                            Language: nl Nederlands                           #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 5.01 2018                           #
+#                           Date Created: 12.06 2018                           #
 #                                                                              #
-#                                   authors:                                   #
-#                                    - An_dz                                   #
-#                   note: Verified where all texts are shown                   #
-#                                   - Combuijs                                 #
-#                                    - Dwachs                                  #
-#                                  - Flemmbrav                                 #
-#                                    - FrankP                                  #
-#                                 Daniel - NNW                                 #
-#                                     - PTM                                    #
-#                                   - Tjoeker                                  #
-#                                    - prissi                                  #
-#                           Michael Olbricht - whoami                          #
-#                            Wim Vreeswijk - wipi35                            #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -32,12 +19,8 @@ ClassicRail
 Spoorbrug (beton)
 ClassicRoad
 Autobrug (beton)
-koka_Bridge_single
-verhoogde spoorbaan
 MaglevBridge
 Maglev/monorail brug
-mlm_concrete_bridge
-betonnen monorail brug
 ModernRoad
 Autobrug (voorgespannen beton)
 MonorailRamp
@@ -48,12 +31,16 @@ Schiffhebewerk
 Scheepslift
 SteelRail
 Stalen spoorbrug
-tb_classic_road
-Betonnen brug
 ViaductRail
 Bakstenen viaduct
 WoodenRoad
 houten autobrug
+koka_Bridge_single
+verhoogde spoorbaan
+mlm_concrete_bridge
+betonnen monorail brug
+tb_classic_road
+Betonnen brug
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 00_01_CITY
@@ -106,12 +93,12 @@ A6_DOME
 St. Willem kathedraal\n\nDeze prachtige oude kathedraal\nis een ware attractie.\n\n
 AirDepot
 Hangar van 1900
-AirportShed1930
-Loods voor post (1901)
 AirStop
 Pier
 AirTerminal477
 Luchthaventerminal (1950)
+AirportShed1930
+Loods voor post (1901)
 Avila_Big_StationBlg
 Grote passagiershal
 Avila_Small_StationBlg
@@ -126,16 +113,6 @@ Bulk_StationBlg
 bulkgoederen station
 BusStop
 Bushalte
-Car_StationBlg
-auto opslag
-CarDepot
-Depot voor straatvoertuigen
-CarStop
-Laadstation
-CattlePorch
-Weide
-ChannelStop
-laad- en losplaats
 COM_00_14
 Illegale wietplantage in een\noude fabriekshal.\n\n
 COM_01_01
@@ -160,6 +137,16 @@ COM_10_02
 Landschapsarchitect MHz\nheeft dit prachtige park\nspeciaal voor de Simutrans\npopulatie ontworpen.\n\n
 COM_10_05
 Historische arbeiderswoning\nmet grote kruidentuin\n\n
+CarDepot
+Depot voor straatvoertuigen
+CarStop
+Laadstation
+Car_StationBlg
+auto opslag
+CattlePorch
+Weide
+ChannelStop
+laad- en losplaats
 Control_StationBlg
 Traffic control
 DenkDirk
@@ -192,14 +179,14 @@ FreightShipStop
 Goederenhaven
 FreightTrainStop
 Vrachtstation
-Gas_StationBlg
-Gastank
 GCG1TrainStop
 Linker helft van een groot perron met overkapping
 GCG2TrainStop
 Rechter helft van perron met overkapping
 GCGTrainStop
 Groot perron met overkapping
+Gas_StationBlg
+Gastank
 Goods_StationBlg
 Pakhuis
 Gymnasium
@@ -220,18 +207,16 @@ IND_01_13
 Zwarte fabriek\n\nDoor een ongeluk met een\nexploderende ketel vol met een\nzwarte smurrie is deze fabriek\nvoor altijd zwart.\n\n
 LargeShipStop
 Grote vrachtpier
-leftShipStop
-Linker haven gedeelte
 LeuchtturmShipStop
 Pier met vuurtoren
 Lighthouse
 Vuurtoren\n\n
 LongBusStop
 Bushalte
-MainTerminal1930
-Hoofd terminal gebouw (1930)
 MHzSmallStation
 Klein stationsgebouw
+MainTerminal1930
+Hoofd terminal gebouw (1930)
 ModernAirTerminal477
 Modern terminal gebouw
 MonorailDepot
@@ -242,6 +227,12 @@ MonorailGround
 Monorail bodem
 OldTownhall
 voormalig stadhuis\n\n
+PSFreightTrainStop
+Vrachtstation
+PSHall1TrainStop
+Stationshal met kiosk
+PSHall2TrainStop
+Stationshal
 Patricks_Rock
 Vulkaangebergte\n\n\nNa miljoenen jaren actief te\nzijn geweest is deze vulkaan\nal eeuwen in rust en is een\ntoeristische attractie van de\neerste orde. Voor geologen\nen dagjesmensen een favoriete\nbestemming vanwege het\ntypische lava-landschap gevormd\ndoor de vele uitbarstingen in het\nverleden.\n\n
 PlainAirStop
@@ -250,24 +241,16 @@ PostOffice
 Postkantoor
 PostStop
 Brievenbus
-PSFreightTrainStop
-Vrachtstation
-PSHall1TrainStop
-Stationshal met kiosk
-PSHall2TrainStop
-Stationshal
-rampShipStop
-Aanlegsteiger met helling
-Raven_Kirche
-St. Meinrad kerk\n\n
 RES_01_01
 Modern prefab huis met grote\nzolderkamer.\nIdeaal voor de kleine.\n
-Residenz
-Residentie\n\nHier kun je door middel van\nmeditatie weer helemaal tot\njezelf komen.\n\n
-rightShipStop
-Kaai met pier
 RUIN_0
 Middelseeuwse ruïne\n\n Dit was eens een groot en\nmooi kasteel voordat het in\n1400 geheel afbrandde. Aan\nde fundamenten kun je nog\nongeveer zien hoe groot het\nkasteel geweest moet zijn.\n
+Raven_Kirche
+St. Meinrad kerk\n\n
+Residenz
+Residentie\n\nHier kun je door middel van\nmeditatie weer helemaal tot\njezelf komen.\n\n
+STADIUM2
+Groot stadion\n\n Alle grote internationale\nwedstrijden vinden hier\nplaats.\n
 SandStationMHz
 Eenvoudig station
 ShipDepot
@@ -276,8 +259,6 @@ ShipDepotEW
 Scheepswerf (OW)
 ShipStop
 Haven
-STADIUM2
-Groot stadion\n\n Alle grote internationale\nwedstrijden vinden hier\nplaats.\n
 Tennis_Court
 Tennisbanen\n\n
 Terminal1930
@@ -304,28 +285,30 @@ Vorplatz
 Stationsplein
 Windmill
 Windmolen\n\n
+leftShipStop
+Linker haven gedeelte
+rampShipStop
+Aanlegsteiger met helling
+rightShipStop
+Kaai met pier
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
 Ziekenwagen
 FordT
 T-Ford
-green_car
-groene auto
 Motorrad
 Motorfiets
-orange_bus
-Oranje bus
 Pickup
 Open Bestelwagen
 Roadster
 Cadillac Roadster
+green_car
+groene auto
+orange_bus
+Oranje bus
 yellow_car
 gele auto
-#__________________________________dummy_info___________________________________
-#__________________________________dummy_info___________________________________
-Geokraftwerk_details
-<title>Geothermische centrale</title>\n\n\nDeze centrale wekt elektriciteit op uit energie die in de aardkorst opgeslagen zit.
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -338,44 +321,22 @@ Autohaus
 Auto dealer
 Autohersteller
 Autofabriek
-bakery
-Bakkerij
-brewery
-Brouwerij
 Buchgrosshandel
 Boekhandel
-cannery
-Conservenfabriek
+CHEMIST
+Drogist (door Seth)
 Cementmill
 Cementfabriek
 ChemicalPlant
 Chemische fabriek
-CHEMIST
-Drogist (door Seth)
 Concretefactory
 Betonfabriek
-cow_farm
-Veehouderij
-dairy
-Melkfabriek
 Druckerei
 Drukkerij
 Erzbergwerk
 IJzererts mijn
-fish_pond
-Visvijver
-fish_swarm
-School van vissen
-food_processing_plant
-Voedingsmiddelenfabriek
 Geokraftwerk
 Geothermische centrale
-grain_farm
-Graanboerderij
-grain_mill
-Graanmolen
-grain_windmill
-Windmolen (graan)
 Incinerator
 Vuilverbrander
 Kohlegrube
@@ -402,8 +363,6 @@ Oelkraftwerk
 Oliecentrale
 Oelpumpe
 Ja-knikker
-old_farm
-Graanboerderij
 Papierfabrik
 Papierfabriek
 Pharmaceutics
@@ -418,34 +377,58 @@ SaegewerkMHz
 Houtzagerij MHz
 Sandquarry
 Zandgroeve
-scrap_yard
-Containerpark
 Stahlwerk
 Staalfabriek
 Stonequarry
 Steengroeve
-supermarket
-Supermarkt
 TANKE
 Benzinestation
-thermisches_Solarkraftwerk
-Zonnetoren
 Turmkraftwerk
 Zonnetoren
 Windkraftwerk
 Windturbine
+bakery
+Bakkerij
+brewery
+Brouwerij
+cannery
+Conservenfabriek
+cow_farm
+Veehouderij
+dairy
+Melkfabriek
+fish_pond
+Visvijver
+fish_swarm
+School van vissen
+food_processing_plant
+Voedingsmiddelenfabriek
+grain_farm
+Graanboerderij
+grain_mill
+Graanmolen
+grain_windmill
+Windmolen (graan)
+old_farm
+Graanboerderij
+scrap_yard
+Containerpark
+supermarket
+Supermarkt
+thermisches_Solarkraftwerk
+Zonnetoren
+#_________________________________factory_info__________________________________
+#_________________________________factory_info__________________________________
+Geokraftwerk_details
+<title>Geothermische centrale</title>\n\n\nDeze centrale wekt elektriciteit op uit energie die in de aardkorst opgeslagen zit.
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
 auto's
-beer
-bier
 Bretter
 planken
 Buecher
 Boeken
-canned_food
-conserven
 Cement
 cement
 Chemicals
@@ -454,26 +437,14 @@ Concrete
 beton
 Eisenerz
 ijzererts
-fish
-vis
-flour
-meel
-food
-voedsel
 Gasoline
 benzine
-grain
-graan
 Holz
 hout
 Kohle
 kolen
-meat
-vlees
 Medicine
 Medicamenten
-milk
-melk
 Moebel
 meubels
 None
@@ -496,10 +467,38 @@ Stahl
 staal
 Stone
 steen
+beer
+bier
+canned_food
+conserven
+fish
+vis
+flour
+meel
+food
+voedsel
+grain
+graan
+meat
+vlees
+milk
+melk
 waste
 afval
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
+Hochsitz1
+Uitkijktoren
+Hochsitz2
+Uitkijktoren
+See1
+Meer met watervogels
+See2
+Meer
+See3
+Meer
+See4
+Begroeid meer
 bushes
 Struiken
 deco_rock
@@ -512,22 +511,10 @@ gemsen
 Gemsen
 gooses
 ganzen
-Hochsitz1
-Uitkijktoren
-Hochsitz2
-Uitkijktoren
 moles
 Mollen
 rocks
 Stenen
-See1
-Meer met watervogels
-See2
-Meer
-See3
-Meer
-See4
-Begroeid meer
 sheeps
 Schapen
 #___________________________________menu_text___________________________________
@@ -540,6 +527,8 @@ Couple
 Voetgangers
 Cyclist
 fietser
+Woman
+vrouw
 pedestrian_1
 Voetganger
 pedestrian_2
@@ -552,8 +541,6 @@ pedestrian_child
 kind
 pedestrian_dog
 voetganger met hond
-Woman
-vrouw
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -574,8 +561,6 @@ rolls
 rollen
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
-choose_point
-richtingskeuze borden
 ChooseSignals
 Keuze seinen
 ChooseSignalsMonorail
@@ -590,10 +575,6 @@ NoAirEntry
 Eenrichtingsbord
 NoEntry
 Eenrichtingsbord
-preSignals
-Seinen voor twee blocks
-preSignalsMonorail
-Seinen voor twee blocks
 RailClose
 Geen doorgang
 Railgate
@@ -604,6 +585,12 @@ Signals
 Seinen
 SignalsMonorail
 Seinen
+choose_point
+richtingskeuze borden
+preSignals
+Seinen voor twee blocks
+preSignalsMonorail
+Seinen voor twee blocks
 traffic_light
 Stoplicht
 #_____________________________________tree______________________________________
@@ -674,6 +661,8 @@ Tree5
 Jeneverbes
 Tree6
 Spar\n
+Willow
+Wilg\n
 tropictree1
 Tropische boom
 tropictree2
@@ -692,8 +681,6 @@ tropictree8
 Tropische boom
 tropictree9
 Tropische boom
-Willow
-Wilg\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel
@@ -826,9 +813,9 @@ DC-3
 Douglas DC-3
 Deponielaster
 Afvalwagen
-Doubledeck_city_bus
-Dubbeldekker
 DoubleDecker
+Dubbeldekker
+Doubledeck_city_bus
 Dubbeldekker
 E44
 E44 Locomotief
@@ -888,12 +875,14 @@ H-Trans-Tiger-Mail-Car
 H-Trans Tigress post wagon
 H-Trans-Tigress-II-Front
 H-Trans Tigress-II
+HJMAvia
+Avia Flat-nose Semi
+HVPosttransporter
+DIBU/H-Trans Post wagen
 Hadley-Page-V1500
 Hadley-Page V1500
 Heavy_ore_truck
 Zware vrachtwagen voor erts
-HJMAvia
-Avia Flat-nose Semi
 Holzanhaenger
 JET Hout oplegger
 Holztrailer
@@ -914,8 +903,6 @@ Horses
 Paarden
 Horsewoodcariage
 Paarden Hout kar
-HVPosttransporter
-DIBU/H-Trans Post wagen
 ICE_TD-back
 ICE-TD wagon (achter)
 ICE_TD-car
@@ -926,8 +913,6 @@ IL-76
 IL-76 Postvliegtuig
 JNR_C11
 JNR C11 (2-6-4T)
-JR_9600
-JR 9600
 JRE-Mp233
 JRE Mp233
 JRE-Mpp233
@@ -938,6 +923,8 @@ JRE-T233cb
 JRE T233 rijtuig
 JRE-Tcf233
 JRE T233 staartrijtuig
+JR_9600
+JR 9600
 Ju52
 Junkers Ju-52
 JumboCruiserBack1
@@ -968,12 +955,12 @@ Moebelschiff
 RX Meubelschip
 Moebelwagen
 VT Vienna Meubel wagon
-NeuOelwagen
-Olie wagon (80t)
 NS1000
 NS 1000
 NS1600
 NS 1600
+NeuOelwagen
+Olie wagon (80t)
 Oelanhaenger
 H-Trans Olietank oplegger
 Oelwagen
@@ -1008,16 +995,14 @@ PrPostwagen
 Post wagon I
 RenaultTH5
 Renault TH5 trekker
-Sandanhaenger
-WF Ultd. zand aanhanger
-Sandtransporter
-WF Ultd. Zand vrachtwagen
-schooner
-Schoener
 SD40-2-back
 SD40-2 achterstel
 SD40-2-front
 SD40-2
+Sandanhaenger
+WF Ultd. zand aanhanger
+Sandtransporter
+WF Ultd. Zand vrachtwagen
 SlowFerry
 H-Trans Passagiers schip
 Stahlanhaenger
@@ -1042,24 +1027,22 @@ T21_bus
 Ford T-21
 T24
 Bernhard T24
-Tanklastzug
-H-Trans Olie tankwagen
-Tatra-T4
-Tatra T4
-Tatra-T4_Wagon
-Tatra T4 wagon
 TB13
 Bernhard TB13
 TB24
 Bernhard TB24
-teaclipper
-Theeklipper
 TPBeiwagen
 TPI VT98 Passagierswagon
 TPPassagierwagen
 TPI Lopomo Passagierswagon
 TPSchienenbus
 TPI VT98 (diesel)
+Tanklastzug
+H-Trans Olie tankwagen
+Tatra-T4
+Tatra T4
+Tatra-T4_Wagon
+Tatra T4 wagon
 Tram_GT6_Ende
 Tram GT6 eindstel
 Tram_GT6_Kopf
@@ -1080,8 +1063,22 @@ XMail
 X prototype postrijtuig
 XTest
 X prototype passagierstrein
+schooner
+Schoener
+teaclipper
+Theeklipper
 #______________________________________way______________________________________
 #______________________________________way______________________________________
+Kanal
+Kanaal
+MaglevTrack
+Maglev
+MaglevTrackElevated
+Maglev viaduct
+Powerline
+Hoogspanningsleiding
+Rillenschienen
+tramrails
 asphalt_road
 Asfaltweg
 city_road
@@ -1096,20 +1093,10 @@ elevated_monorail
 Verhoogde monorail
 gavel_road
 Gravelweg
-Kanal
-Kanaal
-MaglevTrack
-Maglev
-MaglevTrackElevated
-Maglev viaduct
 mip_cobblestone_road
 Klinkerstraat
 monorail
 Monorail
-Powerline
-Hoogspanningsleiding
-Rillenschienen
-tramrails
 river
 Rivier (bevaarbaar)
 river2

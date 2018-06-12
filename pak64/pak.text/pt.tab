@@ -9,22 +9,8 @@
 #                            Language: pt Portugues                            #
 #                             Encoding: ISO-8859-1                             #
 #                            Font : Prop-Latin1.bdf                            #
-#                            Date Created: 5.01 2018                           #
+#                           Date Created: 12.06 2018                           #
 #                                                                              #
-#                                   authors:                                   #
-#                                    - An_dz                                   #
-#                   note: Verified where all texts are shown                   #
-#                                    - Dwachs                                  #
-#                                  - Flemmbrav                                 #
-#                                    - FrankP                                  #
-#                                 - IgorEliezer                                #
-#                 Julio Cesar Miranda Rodrigues - JulioCesarBR                 #
-#           note: Member who helps translate in Portuguese language!           #
-#                                 Daniel - NNW                                 #
-#                                     - PTM                                    #
-#                                   - Randonn                                  #
-#                                    - prissi                                  #
-#                              Xavier Paz - vilvoh                             #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -33,12 +19,8 @@ ClassicRail
 Ponte ferroviária de concreto
 ClassicRoad
 Ponte rodoviária de concreto
-koka_Bridge_single
-Trilho elevado
 MaglevBridge
 Ponte para monotrilho / Transição de monotrilho em superfície para elevado
-mlm_concrete_bridge
-Ponte de monotrilho de concreto
 ModernRoad
 Ponte de concreto protendido
 MonorailRamp
@@ -49,12 +31,16 @@ Schiffhebewerk
 Canal elevado
 SteelRail
 Ponte ferroviária de aço
-tb_classic_road
-Ponte rodoviária com iluminação
 ViaductRail
 Viaduto de pedra
 WoodenRoad
 Ponte rodoviária de madeira
+koka_Bridge_single
+Trilho elevado
+mlm_concrete_bridge
+Ponte de monotrilho de concreto
+tb_classic_road
+Ponte rodoviária com iluminação
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 00_01_CITY
@@ -107,12 +93,12 @@ A6_DOME
 Velha Catedral\n\nÉ o mesmo coração desta\ncidade durante quase mil\nanos.\n\n
 AirDepot
 Hangar de 1900
-AirportShed1930
-Depósito aeroportuário para correios de 1901
 AirStop
 Ponte de embarque
 AirTerminal477
 Terminal aeroportuário de 1950
+AirportShed1930
+Depósito aeroportuário para correios de 1901
 Avila_Big_StationBlg
 Grande prédio de estação ferroviária
 Avila_Small_StationBlg
@@ -127,16 +113,6 @@ Bulk_StationBlg
 Depósito de carvão
 BusStop
 Parada de ônibus
-Car_StationBlg
-Pátio de carros
-CarDepot
-Garagem
-CarStop
-Baia de carga
-CattlePorch
-Curral de gado
-ChannelStop
-Cais de canal
 COM_00_01
 Loja pequena\n\nOs baixos preços e o atendimento amigável nesta pequena loja mantém o estacianamento lotado na maior parte do tempo.
 COM_00_02
@@ -231,6 +207,16 @@ COM_11_12
 Loja de pratarias antigas.\n\n
 COM_12_04
 O parque para a ninfa do mar sagrado chama seu nome devido às multidões; No entanto, muito poucos caminhantes descobriram a rara Nynphenstrauch no canto de trás.
+CarDepot
+Garagem
+CarStop
+Baia de carga
+Car_StationBlg
+Pátio de carros
+CattlePorch
+Curral de gado
+ChannelStop
+Cais de canal
 Control_StationBlg
 Cabina de controle ferroviário
 DenkDirk
@@ -263,14 +249,14 @@ FreightShipStop
 Cais
 FreightTrainStop
 Plataforma para cargas
-Gas_StationBlg
-Tanque de combustíveis
 GCG1TrainStop
 Grande saguão de estação, lado esquerdo
 GCG2TrainStop
 Grande saguão de estação, lado direito
 GCGTrainStop
 Grande saguão de estação, lado esquerdo
+Gas_StationBlg
+Tanque de combustíveis
 Goods_StationBlg
 Armazém
 Gymnasium
@@ -343,18 +329,16 @@ KingsbridgeMonastry
 Monastério\n\nTodas as manhãs, são ouvidas vozes misteriosas vindas desse montastério... ou são apenas os pobres noviços tomando banho frio logo após acordar?
 LargeShipStop
 Molhe com guindaste
-leftShipStop
-Cais com molhe e guindaste
 LeuchtturmShipStop
 Cais com molhe e farol
 Lighthouse
 Farol de navegação\n\n
 LongBusStop
 Parada de ônibus descoberta
-MainTerminal1930
-Terminal aéreo de 1930, prédio principal
 MHzSmallStation
 Pequeno prédio da estação ferroviária
+MainTerminal1930
+Terminal aéreo de 1930, prédio principal
 ModernAirTerminal477
 Moderno terminal aeroportuário
 MonorailDepot
@@ -365,6 +349,12 @@ MonorailGround
 Suporte para monotrilho
 OldTownhall
 Antiga prefeitura\n\nEste prédio abrigava os antigos escritórios da prefeitura. Hoje abriga um museu e uma cafeteria.
+PSFreightTrainStop
+Plataforma para cargas
+PSHall1TrainStop
+Estação envidraçada com banca de jornais
+PSHall2TrainStop
+Estação envidraçada
 Patricks_Rock
 Monte Patrick\n\n
 PlainAirStop
@@ -373,16 +363,6 @@ PostOffice
 Agência dos Correios
 PostStop
 Parada de correio
-PSFreightTrainStop
-Plataforma para cargas
-PSHall1TrainStop
-Estação envidraçada com banca de jornais
-PSHall2TrainStop
-Estação envidraçada
-rampShipStop
-Rampa de acesso à doca
-Raven_Kirche
-Igreja de St. Meinrad\n\nDe acordo com a lenda, o\nermitão St. Meinrad era\nacompanhado por dois\ncorvos. Quando ele foi\nassassinado, os dois\ncorvos seguiram os\nassassinos e assim serviram\ncomo prova da culpa deles.\nHoje, no lugar da cabana dele\nestá o monastério Einsiedeln.\n\n
 RES_00_01
 A casa número um\n\nEsta casa pequena pode parecer nada fora do normal: mas ela está bem no centro do universo do Simutrans. Foi o primeiro edifício erigido no Simutrans.
 RES_00_02
@@ -495,12 +475,14 @@ RES_11_14
 Sobradões em estilo clássico\n\nQuem passa na frente destas moradas sente-se como se estivesse na época do Renascimento na Itália. As fachadas lembram aquelas construções clássicas da antiga Grécia e de Roma. Cuidado para não se empolgar e começar a cantar como os artistas dos teatros da Antiguidade.
 RES_12_15
 Bloco de sobrados geminados\n\nFora construído como moradia dos que migraram do campo para serem operários das primeiras fábricas que vieram a ser instalar na cidade. As moradias são pequenas e ficam uma do lado da outra, parede com parede. À noite, dá para um morador ouvir o ronco do outro.
-Residenz
-Residência universitária\n\nEste edifício está sendo\nusado para abrigar\nestudantes da\nuniversidade, se não\ntiverem condições de viver por conta própria.
-rightShipStop
-Cais com molhe
 RUIN_0
 Castelo Medieval\n\nEste castelo estava se\ntornando uma ruína, mas\npartes de dele foram\nreconstruídas, e o\ncomplexo inteiro é agora um\nmuseu. A visão em cima da\npaisagem é fantástica, você só\ntem que escalar muitas\nescadarias para ver isto.\n\n
+Raven_Kirche
+Igreja de St. Meinrad\n\nDe acordo com a lenda, o\nermitão St. Meinrad era\nacompanhado por dois\ncorvos. Quando ele foi\nassassinado, os dois\ncorvos seguiram os\nassassinos e assim serviram\ncomo prova da culpa deles.\nHoje, no lugar da cabana dele\nestá o monastério Einsiedeln.\n\n
+Residenz
+Residência universitária\n\nEste edifício está sendo\nusado para abrigar\nestudantes da\nuniversidade, se não\ntiverem condições de viver por conta própria.
+STADIUM2
+Estádio de Futebol\n\n
 SandStationMHz
 Estação sem plataforma
 ShipDepot
@@ -509,8 +491,6 @@ ShipDepotEW
 Estaleiro (L-O)
 ShipStop
 Pier
-STADIUM2
-Estádio de Futebol\n\n
 Tennis_Court
 Quadra de tênis\n\n
 Terminal1930
@@ -537,26 +517,140 @@ Vorplatz
 Esplanada
 Windmill
 Moinho de vento\n\nEsta construção atrai cavaleiros errantes malucos.
+leftShipStop
+Cais com molhe e guindaste
+rampShipStop
+Rampa de acesso à doca
+rightShipStop
+Cais com molhe
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
 Ambulância
 FordT
 Ford T
-green_car
-Carro verde
 Motorrad
 Bicicleta motorizada
-orange_bus
-Ônibus laranja
 Pickup
 Caminhonete picape
 Roadster
 Estradeiro conversível
+green_car
+Carro verde
+orange_bus
+Ônibus laranja
 yellow_car
 Carro amarelo
-#__________________________________dummy_info___________________________________
-#__________________________________dummy_info___________________________________
+#____________________________________factory____________________________________
+#____________________________________factory____________________________________
+2Raffinerie
+Refinaria (gasolina)
+3Raffinerie
+Refinaria (Gás+Plást.)
+Aufwindkraftwerk
+Usina termo-solar por ascendência
+Autohaus
+Loja de automóveis
+Autohersteller
+Fábrica de automóveis
+Buchgrosshandel
+Livraria
+CHEMIST
+Farmácia
+Cementmill
+Fábrica de cimento
+ChemicalPlant
+Indústria química
+Concretefactory
+Concreteira
+Druckerei
+Editora
+Erzbergwerk
+Mina de ferro
+Geokraftwerk
+Usina de geoenergia
+Incinerator
+Incinerador
+Kohlegrube
+Mina de carvão
+Kohlekraftwerk
+Usina termoelétrica
+Marketplace
+Mercado
+Materialswholesale
+Depósito de materiais
+Moebelfabrik
+Fábrica de móveis
+Moebelhaus
+Loja de móveis
+Muellkraftwerk
+Usina elétrica de biomassa
+Nutzwald
+Floresta
+Oelbohrinsel
+Plataforma de petróleo
+Oelfeld
+Campo de petróleo
+Oelkraftwerk
+Usina diesel-elétrica
+Oelpumpe
+Poço de petróleo
+Papierfabrik
+Fábrica de papel
+Pharmaceutics
+Indústria farmacêutica
+Raffinerie
+Refinaria
+Rinnenkraftwerk
+Usina solar cilindro-parabólica
+Saegewerk
+Serraria
+SaegewerkMHz
+Antiga serraria
+Sandquarry
+Mina de areia
+Stahlwerk
+Siderúrgica
+Stonequarry
+Pedreira
+TANKE
+Posto de gasolina
+Turmkraftwerk
+Torre solar
+Windkraftwerk
+Usina eólio-elétrica
+bakery
+Padaria
+brewery
+Cervejaria
+cannery
+Enlatadora
+cow_farm
+Fazenda de gado bovino
+dairy
+Laticínio
+fish_pond
+Pesqueiro
+fish_swarm
+Fazenda marinha
+food_processing_plant
+Fábrica de alimentos
+grain_farm
+Fazenda de grãos
+grain_mill
+Moinho
+grain_windmill
+Moinho de vento
+old_farm
+Fazenda
+scrap_yard
+Depósito de lixo
+supermarket
+Supermercado
+thermisches_Solarkraftwerk
+Usina termo-solar
+#_________________________________factory_info__________________________________
+#_________________________________factory_info__________________________________
 factory_2Raffinerie_details
 <title>Detalhes da Refinaria (gasolina)</title><h1>Refinamento do petróleo</h1><p>Nesta unidade de processamento industrial é onde o óleo cru é tratado e refinado para obter produtos derivados como o diesel, a gasolina, entre outros. As instalações têm uma intrincada e complexa rede de tubos e dutos que transportam os fluidos de uma unidade de processamento à outra.<br><br>\nO processo de refinamento do óleo cru para obter combustíveis inclui várias fases: aquecimento, decantação por fervura, e destilacção para obter cada um dos vários componentes distintos do petróleo.</p>
 factory_3Raffinerie_details
@@ -589,126 +683,14 @@ factory_TANKE_details
 <title>Detalhes de posto de gasolina</title><p>Um posto de gasolina agonizante: nenhum negócio visível. Então de onde todos os carros estão adquirindo o seu combustível...?</p>
 factory_Windkraftwerk_details
 <title>Sobre as Usina eólio-elétrica</title><h1>Usina eólio-elétrica</h1><p>A primeira Usina eólio-elétrica foi construída de fato na Escócia, 1885, pelo Prof. James Blyth, de Strathclyde. Aparentemente não foi um grande sucesso, comparando-se com a energia a vapor e assim a idéia foi deixada de lado pelos próximos 60 anos, exceto para a Dinamarca. O primeiro tipo moderno foi construído em 1957 na Alemanha (2 lâminas) e na Dinamarca (3 lâminas). Porém, a grande inovação veio após da crise do petróleo e depois que governos começarem a subsidiar energias de renováveis.</p>
-#____________________________________factory____________________________________
-#____________________________________factory____________________________________
-2Raffinerie
-Refinaria (gasolina)
-3Raffinerie
-Refinaria (Gás+Plást.)
-Aufwindkraftwerk
-Usina termo-solar por ascendência
-Autohaus
-Loja de automóveis
-Autohersteller
-Fábrica de automóveis
-bakery
-Padaria
-brewery
-Cervejaria
-Buchgrosshandel
-Livraria
-cannery
-Enlatadora
-Cementmill
-Fábrica de cimento
-ChemicalPlant
-Indústria química
-CHEMIST
-Farmácia
-Concretefactory
-Concreteira
-cow_farm
-Fazenda de gado bovino
-dairy
-Laticínio
-Druckerei
-Editora
-Erzbergwerk
-Mina de ferro
-fish_pond
-Pesqueiro
-fish_swarm
-Fazenda marinha
-food_processing_plant
-Fábrica de alimentos
-Geokraftwerk
-Usina de geoenergia
-grain_farm
-Fazenda de grãos
-grain_mill
-Moinho
-grain_windmill
-Moinho de vento
-Incinerator
-Incinerador
-Kohlegrube
-Mina de carvão
-Kohlekraftwerk
-Usina termoelétrica
-Marketplace
-Mercado
-Materialswholesale
-Depósito de materiais
-Moebelfabrik
-Fábrica de móveis
-Moebelhaus
-Loja de móveis
-Muellkraftwerk
-Usina elétrica de biomassa
-Nutzwald
-Floresta
-Oelbohrinsel
-Plataforma de petróleo
-Oelfeld
-Campo de petróleo
-Oelkraftwerk
-Usina diesel-elétrica
-Oelpumpe
-Poço de petróleo
-old_farm
-Fazenda
-Papierfabrik
-Fábrica de papel
-Pharmaceutics
-Indústria farmacêutica
-Raffinerie
-Refinaria
-Rinnenkraftwerk
-Usina solar cilindro-parabólica
-Saegewerk
-Serraria
-SaegewerkMHz
-Antiga serraria
-Sandquarry
-Mina de areia
-scrap_yard
-Depósito de lixo
-Stahlwerk
-Siderúrgica
-Stonequarry
-Pedreira
-supermarket
-Supermercado
-TANKE
-Posto de gasolina
-thermisches_Solarkraftwerk
-Usina termo-solar
-Turmkraftwerk
-Torre solar
-Windkraftwerk
-Usina eólio-elétrica
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
 Automóveis
-beer
-Cerveja
 Bretter
 Tábuas
 Buecher
 Livros
-canned_food
-Enlatados
 Cement
 Cimento
 Chemicals
@@ -717,26 +699,14 @@ Concrete
 Concreto
 Eisenerz
 Ferro
-fish
-Peixe
-flour
-Farinha
-food
-Comida
 Gasoline
 Gasolina
-grain
-Grãos
 Holz
 Madeira
 Kohle
 Carvão
-meat
-Carne
 Medicine
 Medicamentos
-milk
-Leite
 Moebel
 Móveis
 None
@@ -759,10 +729,38 @@ Stahl
 Aço
 Stone
 Pedra
+beer
+Cerveja
+canned_food
+Enlatados
+fish
+Peixe
+flour
+Farinha
+food
+Comida
+grain
+Grãos
+meat
+Carne
+milk
+Leite
 waste
 Lixo
 #__________________________________ground_obj___________________________________
 #__________________________________ground_obj___________________________________
+Hochsitz1
+Vigia
+Hochsitz2
+Vigia
+See1
+Lagoa
+See2
+Lagoa
+See3
+Brejo
+See4
+Brejo
 bushes
 Arbustos
 deco_rock
@@ -773,22 +771,10 @@ gemsen
 Cabras montesas
 gooses
 Gansos
-Hochsitz1
-Vigia
-Hochsitz2
-Vigia
 moles
 Toupeiras
 rocks
 Pedras
-See1
-Lagoa
-See2
-Lagoa
-See3
-Brejo
-See4
-Brejo
 sheeps
 Ovelhas
 #___________________________________menu_text___________________________________
@@ -801,6 +787,8 @@ Couple
 Casal
 Cyclist
 Ciclista
+Woman
+Mulher
 pedestrian_1
 Pedestre
 pedestrian_2
@@ -813,8 +801,6 @@ pedestrian_child
 Criança
 pedestrian_dog
 Pedestre passeando com um cão
-Woman
-Mulher
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -835,8 +821,6 @@ rolls
  rolos
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
-choose_point
-Direcionador rodoviário para vaga livre
 ChooseSignals
 Direcionador ferroviário para vaga livre
 ChooseSignalsMonorail
@@ -851,10 +835,6 @@ NoAirEntry
 Sentido único
 NoEntry
 Sentido único
-preSignals
-Pré-semáforo ferroviário (para duas seções)
-preSignalsMonorail
-Pré-semáforo de Monotrilho (para duas seções)
 RailClose
 Sentido único
 Railgate
@@ -865,6 +845,12 @@ Signals
 Semáforo ferrovário
 SignalsMonorail
 Semáforo de monotrilho
+choose_point
+Direcionador rodoviário para vaga livre
+preSignals
+Pré-semáforo ferroviário (para duas seções)
+preSignalsMonorail
+Pré-semáforo de Monotrilho (para duas seções)
 traffic_light
 Semáforo
 #_____________________________________tree______________________________________
@@ -935,6 +921,8 @@ Tree5
 Eucalipto\n
 Tree6
 Abeto\n
+Willow
+Chorão\n
 tropictree1
 Eucalipto\n
 tropictree2
@@ -953,8 +941,6 @@ tropictree8
 Figueira\n
 tropictree9
 Castanheira do Pará\n
-Willow
-Chorão\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel
@@ -1021,20 +1007,8 @@ BB1280
 Locomotiva BB1280
 BB200
 Locomotiva BB200
-Be5-7
-BLS Be 5/7
-Blimp
-Zepelim
-Book_Trike
-Triciclo para livros
-Boxcar
-Vagão fechado
 BR01
 Locomotiva BR 01
-Br118DR
-BR 118 DR
-Br234
-Locomotiva Br234
 BR38
 BR 38
 BR38-Tender
@@ -1043,22 +1017,34 @@ BR39
 BR 39
 BR45
 BR 45
+BR85
+BR 86
+BRV36
+BRV 36
+Be5-7
+BLS Be 5/7
+Blimp
+Zepelim
+Book_Trike
+Triciclo para livros
+Boxcar
+Vagão fechado
+Br118DR
+BR 118 DR
+Br234
+Locomotiva Br234
 Br614back
 Br614, traseira
 Br614car
 Br614, vagão
 Br614front
 Br614, dianteira
-BR85
-BR 86
 Bretteranhaenger
 Reboque para tábuas
 Brettertransporter
 WF Ultd. Caminhão para tábuas
 Bretterwagen
 Vagão para tábuas VT Vienna
-BRV36
-BRV 36
 Buchanhaenger
 Reboque-baú
 Buchtrailer
@@ -1077,6 +1063,8 @@ Bulkcarriage
 Carroça para graúdos
 Bus
 Ônibus H-trans
+CC7100
+Locomotiva CC7100
 CarFlat
 Vagão plataforma para carros
 Cargosprinter-Front
@@ -1085,8 +1073,6 @@ Cargosprinter-Mittel
 Vagão para gráfica
 Cargosprinter-Steuer
 Locomotiva para gráfica, trazeira
-CC7100
-Locomotiva CC7100
 Cementtrailer
 Reboque para cimento
 Class86
@@ -1127,10 +1113,10 @@ Deponielaster
 Caminhão de lixo
 Deponielaster2
 Caminhão de lixo duplo
-Doubledeck_city_bus
-Ônibus urbano duplex
 DoubleDecker
 Transporte com dois andares
+Doubledeck_city_bus
+Ônibus urbano duplex
 E44
 Locomotiva E44
 Eb3-5
@@ -1201,12 +1187,14 @@ H-Trans-Tigress-II-Back
 H-Trans Tigresa-II, traseira
 H-Trans-Tigress-II-Front
 H-Trans Tigresa-II, dianteira
+HJMAvia
+Caminhão HJMAvia
+HVPosttransporter
+Caminhão postal DIBU/H-Trans
 Hadley-Page-V1500
 Hadley Page V1500
 Heavy_ore_truck
 Caminhão de minério pesado
-HJMAvia
-Caminhão HJMAvia
 Hochbordwagen
 Velho vagão graneleiro
 Holzanhaenger
@@ -1231,8 +1219,6 @@ Horsewoodcariage
 Carroça para toras
 Hunslet
 Locomotiva Hunslet
-HVPosttransporter
-Caminhão postal DIBU/H-Trans
 ICE_TD-back
 ICE-TD, traseira
 ICE_TD-car
@@ -1251,12 +1237,6 @@ Ju52
 Avião Ju52
 JumboJet
 Boeing 747 "Jumbo Jet"
-kkStB_tender
-Alimentadora kkStB
-kkStB110
-Locomotiva kkStB110
-kkStB91
-Locomotiva kkStB91
 Klappdeckelwagen
 Vagão fechado para plásticos
 Kohleanhaenger
@@ -1277,18 +1257,16 @@ Lockhead_Tristar
 Lockheed Tristar
 Lockheed10-Electra
 Lockheed 10 "Electra"
-logs
-Barcaça para madeira
 Lowa
 Bonde Lowa
 Lowa_Anhaenger
 Bonde Lowa, reboque
 Mack_Truck_01
 Caminhão Mack 01
-Mailcontainerwagon
-Vagão contentor postal
 MailExpress
 Avião postal "Express"
+Mailcontainerwagon
+Vagão contentor postal
 Mailwagon
 Vagão de correio
 Milk_Truck
@@ -1301,12 +1279,12 @@ Moebelwagen
 Vagão para móveis VT Vienna
 Muellschiff
 Navio para lixo
-NeuOelwagen
-Vagão petroleiro (80t)
 NS1000
 NS-1000
 NS1600
 NS-1600
+NeuOelwagen
+Vagão petroleiro (80t)
 Oelanhaenger
 Reboque petroleiro H-trans
 Oelwagen
@@ -1315,8 +1293,6 @@ Oilbarge
 Barcaça para petróleo 
 Oiltrailer
 Semi-reboque para petróleo 
-old_open_car
-Vagão gôndola (1837)
 OldOil
 Vagão tanque (18t)
 Ox2
@@ -1349,24 +1325,20 @@ PrPostwagen
 Pequeno vagão postal
 RenaultTH5
 Renault TH5
-Sandanhaenger
-Reboque para granéis WF Ultd
-Sandtransporter
-WF Utld. Caminhão 1
-schooner
-Schooner
-Schooner_Bark
-Barco escuna
 SD40-2-back
 SD40-2, traseira
 SD40-2-front
 SD40-2, dianteira
-setra_S10
-Ônibus Setra S10
-SlowFerry
-Barca convencional H-trans
 SMPoiltruck
 Caminhão-tanque SMP
+Sandanhaenger
+Reboque para granéis WF Ultd
+Sandtransporter
+WF Utld. Caminhão 1
+Schooner_Bark
+Barco escuna
+SlowFerry
+Barca convencional H-trans
 Stahlanhaenger
 Reboque para aço
 Stahltransporter
@@ -1389,24 +1361,22 @@ T21_bus
 Ônibus T21
 T24
 Bonde T24
-Tanklastzug
-Caminhão-tanque H-trans
-Tatra-T4
-Tatra T4, dianteira
-Tatra-T4_Wagon
-Tatra-T4, vagão
 TB13
 Bonde T13, reboque
 TB24
 Bonde T24, reboque
-teaclipper
-Nau Clipper
 TPBeiwagen
 Carro para TPI VT98
 TPPassagierwagen
 Carro TPI
 TPSchienenbus
 TPI VT98
+Tanklastzug
+Caminhão-tanque H-trans
+Tatra-T4
+Tatra T4, dianteira
+Tatra-T4_Wagon
+Tatra-T4, vagão
 Tram_GT6_Ende
 Bonde GT6 traseira
 Tram_GT6_Kopf
@@ -1425,8 +1395,6 @@ VolvoFH12
 Volvo FH12
 Wastecarriage
 Reboque para lixo
-wastewagon
-Vagão para lixo
 X2000back
 X2000, traseira
 X2000car
@@ -1435,8 +1403,36 @@ X2000front
 X2000, dianteira
 Zeppelin
 Zepelim
+kkStB110
+Locomotiva kkStB110
+kkStB91
+Locomotiva kkStB91
+kkStB_tender
+Alimentadora kkStB
+logs
+Barcaça para madeira
+old_open_car
+Vagão gôndola (1837)
+schooner
+Schooner
+setra_S10
+Ônibus Setra S10
+teaclipper
+Nau Clipper
+wastewagon
+Vagão para lixo
 #______________________________________way______________________________________
 #______________________________________way______________________________________
+Kanal
+Canal
+MaglevTrack
+Trilho de Maglev
+MaglevTrackElevated
+Trilho elevado de Maglev
+Powerline
+Linha de transmissão
+Rillenschienen
+Trilho de bonde
 asphalt_road
 Rodovia asfaltada
 city_road
@@ -1451,20 +1447,10 @@ elevated_monorail
 Monotrilho elevado
 gavel_road
 Estrada de cascalho
-Kanal
-Canal
-MaglevTrack
-Trilho de Maglev
-MaglevTrackElevated
-Trilho elevado de Maglev
 mip_cobblestone_road
 Via de paralelepípedo
 monorail
 Trilho de monotrilho
-Powerline
-Linha de transmissão
-Rillenschienen
-Trilho de bonde
 river
 Rio
 river2

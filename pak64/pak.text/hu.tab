@@ -9,20 +9,8 @@
 #                              Language: hu Magyar                             #
 #                                Encoding: UTF-8                               #
 #                                Font : cyr.bdf                                #
-#                            Date Created: 5.01 2018                           #
+#                           Date Created: 12.06 2018                           #
 #                                                                              #
-#                                   authors:                                   #
-#                                    - An_dz                                   #
-#                   note: Verified where all texts are shown                   #
-#                                    - Dwachs                                  #
-#                                  - Flemmbrav                                 #
-#                                    - FrankP                                  #
-#                                    - HDomos                                  #
-#                                   - LeitnerI                                 #
-#                                 Daniel - NNW                                 #
-#                                     - PTM                                    #
-#                                    - gyeben                                  #
-#                                    - prissi                                  #
 #                                                                              #
 ################################################################################
 #____________________________________bridge_____________________________________
@@ -31,12 +19,8 @@ ClassicRail
 Beton vasúti híd
 ClassicRoad
 Beton közúti híd
-koka_Bridge_single
-Viadukt
 MaglevBridge
 Mágnesvasúti híd
-mlm_concrete_bridge
-Beton nyeregvasút híd
 ModernRoad
 Modern közúti híd
 MonorailRamp
@@ -47,12 +31,16 @@ Schiffhebewerk
 Hajó darú
 SteelRail
 Acél vasúti híd
-tb_classic_road
-Beton közúti híd
 ViaductRail
 Kõ viadukt
 WoodenRoad
 Gerenda viadukt
+koka_Bridge_single
+Viadukt
+mlm_concrete_bridge
+Beton nyeregvasút híd
+tb_classic_road
+Beton közúti híd
 #___________________________________building____________________________________
 #___________________________________building____________________________________
 00_01_CITY
@@ -103,12 +91,12 @@ A6_DOME
 Régi katedrális.\n\n
 AirDepot
 Hangár
-AirportShed1930
-Reptéri postaépület (1901)
 AirStop
 Repülõ dokkoló
 AirTerminal477
 Reptéri fogadócsarnok (1950)
+AirportShed1930
+Reptéri postaépület (1901)
 Avila_Big_StationBlg
 Nagy váróterem építése
 Avila_Small_StationBlg
@@ -123,18 +111,18 @@ Bulk_StationBlg
 Nyersanyag tároló
 BusStop
 Buszmegálló
-Car_StationBlg
-Parkoló építése
-CarDepot
-Kocsi depó
-CarStop
-Kocsi megálló
-ChannelStop
-Csatorna megálló
 COM_00_01
 Kisbolt\n\nEnnek a kisboltnak az alacsony árai és a barátságos kiszolgálása biztosítja, hogy a parkoló szinte mindig tele van.
 COM_02_16
 Irodaház.\n\nNem túl modern és az irodák \nis kicsik az épületben.\n
+CarDepot
+Kocsi depó
+CarStop
+Kocsi megálló
+Car_StationBlg
+Parkoló építése
+ChannelStop
+Csatorna megálló
 Control_StationBlg
 Vezérlõtorony építése
 DenkFlor
@@ -165,12 +153,12 @@ FreightShipStop
 Teherhajó megálló
 FreightTrainStop
 Tehervonat megálló
-Gas_StationBlg
-Üzemanyag tároló
 GCG1TrainStop
 Vasúti félfedett megálló (bal)
 GCG2TrainStop
 Vasúti félfedett megálló (jobb)
+Gas_StationBlg
+Üzemanyag tároló
 Goods_StationBlg
 Általános tároló
 Gymnasium
@@ -179,18 +167,16 @@ IND_01_01
 Ingyenes parkoló. \nSok ember itt \nhagyja a régi \nautóját.\n\n
 LargeShipStop
 Óriáskikötõ
-leftShipStop
-Rakodó daru
 LeuchtturmShipStop
 Világítótornyos kikötõ
 Lighthouse
 Világítótorony.\n\n
 LongBusStop
 Hosszú buszmegálló
-MainTerminal1930
-Fõ várócsarnok (1930)
 MHzSmallStation
 Kis megálló
+MainTerminal1930
+Fõ várócsarnok (1930)
 ModernAirTerminal477
 Modern légi terminál
 MonorailDepot
@@ -201,6 +187,12 @@ MonorailGround
 Nyeregvasút talaj
 OldTownhall
 Régi városháza.\n\n
+PSFreightTrainStop
+Teher pályaudvar
+PSHall1TrainStop
+Pályaudvar kis bodéval
+PSHall2TrainStop
+Nagy pályaudvar
 Patricks_Rock
 Patrick Sziklája.\n\n
 PlainAirStop
@@ -209,22 +201,14 @@ PostOffice
 Posta
 PostStop
 Posta megálló
-PSFreightTrainStop
-Teher pályaudvar
-PSHall1TrainStop
-Pályaudvar kis bodéval
-PSHall2TrainStop
-Nagy pályaudvar
-rampShipStop
-lejtõs rakpart
+RUIN_0
+Középkori rom\n\n
 Raven_Kirche
 Raven temploma.\n\n
 Residenz
 Rezidencia.\n\nYoga Guru ezen a helyen\ntanítja \na meditációt és a belsõ \nbékéhez vezetõ utat.\n\n
-rightShipStop
-Rakpart hullámtörõvel
-RUIN_0
-Középkori rom\n\n
+STADIUM2
+Rögbipálya\n\n
 SandStationMHz
 Homoktározó
 ShipDepot
@@ -233,8 +217,6 @@ ShipDepotEW
 Hajó depó (Kelet-Nyugat)
 ShipStop
 Kikötõ
-STADIUM2
-Rögbipálya\n\n
 Tennis_Court
 Tennis aréna.\n\n
 Terminal1930
@@ -261,28 +243,30 @@ Vorplatz
 Elõtér
 Windmill
 Szélmalom\n\n
+leftShipStop
+Rakodó daru
+rampShipStop
+lejtõs rakpart
+rightShipStop
+Rakpart hullámtörõvel
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Ambulanz
 Mentõautó
 FordT
 Ford T-modell
-green_car
-Zöld autó
 Motorrad
 Motor
-orange_bus
-VW Caraván
 Pickup
 Nissan B2500 Pickup
 Roadster
 Boyld roadster
+green_car
+Zöld autó
+orange_bus
+VW Caraván
 yellow_car
 Trabant 601
-#__________________________________dummy_info___________________________________
-#__________________________________dummy_info___________________________________
-factory_fish_pond_details
-<title>Halastó, halnevelő leírása</title><h1>Halastó</h1><p>Természetes és mesterséges tavak ahol halakat tenyésztenek.</p><p>A középkori Európában az erődöknél, kolostoroknál és a kastélyoknál is elterjedt volt, ahol a többnyire önellátó kolóniák éltek. Mostanában inkább kelet Ázsiában népszerű (főként Japánban), ahol a koi pontyot lehet tartani.</p><p>Ezekben a tavakban nevelik a halakat, majd lehalásszák, aztán szállítják, végül pedig feldolgozzák élelmiszerré. Az ilyen tavakban tilos úszni.</p><p>Ezek a telepek fejlett agrárkultúrával rendelkeznek főleg a fotoszintetizáció terén, mivel a halakat nem csak mesterséges táplálékkal etetik.</p><p>\n
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 2Raffinerie
@@ -293,42 +277,20 @@ Autohaus
 Autó szalon
 Autohersteller
 Autógyár
-bakery
-Pékség
-brewery
-Palackozó üzem
 Buchgrosshandel
 Könyvkereskedés
-cannery
-Konzervgyár
+CHEMIST
+Patika
 Cementmill
 Cementgyár
 ChemicalPlant
 Vegyiüzem
-CHEMIST
-Patika
 Concretefactory
 Betonkeverõ üzem
-cow_farm
-Tehén farm
-dairy
-Tejcsarnok
 Druckerei
 Nyomda
 Erzbergwerk
 Vasércbánya
-fish_pond
-Halastó
-fish_swarm
-Halraj
-food_processing_plant
-Élelmiszer üzem
-grain_farm
-Gabona mező
-grain_mill
-Malom
-grain_windmill
-Szélmalom
 Kohlegrube
 Szénbánya
 Kohlekraftwerk
@@ -365,24 +327,46 @@ Stahlwerk
 Acélkohó
 Stonequarry
 Kõbánya
-supermarket
-Szupermarket
 TANKE
 Benzinkút
 Windkraftwerk
 Szélerõmû
+bakery
+Pékség
+brewery
+Palackozó üzem
+cannery
+Konzervgyár
+cow_farm
+Tehén farm
+dairy
+Tejcsarnok
+fish_pond
+Halastó
+fish_swarm
+Halraj
+food_processing_plant
+Élelmiszer üzem
+grain_farm
+Gabona mező
+grain_mill
+Malom
+grain_windmill
+Szélmalom
+supermarket
+Szupermarket
+#_________________________________factory_info__________________________________
+#_________________________________factory_info__________________________________
+factory_fish_pond_details
+<title>Halastó, halnevelő leírása</title><h1>Halastó</h1><p>Természetes és mesterséges tavak ahol halakat tenyésztenek.</p><p>A középkori Európában az erődöknél, kolostoroknál és a kastélyoknál is elterjedt volt, ahol a többnyire önellátó kolóniák éltek. Mostanában inkább kelet Ázsiában népszerű (főként Japánban), ahol a koi pontyot lehet tartani.</p><p>Ezekben a tavakban nevelik a halakat, majd lehalásszák, aztán szállítják, végül pedig feldolgozzák élelmiszerré. Az ilyen tavakban tilos úszni.</p><p>Ezek a telepek fejlett agrárkultúrával rendelkeznek főleg a fotoszintetizáció terén, mivel a halakat nem csak mesterséges táplálékkal etetik.</p><p>\n
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Autos
 autók
-beer
-sör
 Bretter
 deszka
 Buecher
 könyvek
-canned_food
-konzerv
 Cement
 cement
 Chemicals
@@ -391,26 +375,14 @@ Concrete
 beton
 Eisenerz
 vasérc
-fish
-hal
-flour
-liszt
-food
-élelem
 Gasoline
 üzemanyag
-grain
-gabona
 Holz
 rönk
 Kohle
 szén
-meat
-hús
 Medicine
 gyógyszerek
-milk
-tej
 Moebel
 bútor
 None
@@ -433,6 +405,22 @@ Stahl
 acél
 Stone
 kõ
+beer
+sör
+canned_food
+konzerv
+fish
+hal
+flour
+liszt
+food
+élelem
+grain
+gabona
+meat
+hús
+milk
+tej
 waste
 szemét
 #__________________________________ground_obj___________________________________
@@ -449,6 +437,8 @@ Couple
 Pár
 Cyclist
 Kerékpáros
+Woman
+Nõ
 pedestrian_1
 Gyalogos
 pedestrian_2
@@ -461,8 +451,6 @@ pedestrian_child
 Gyerek
 pedestrian_dog
 Kutya
-Woman
-Nõ
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01
@@ -483,8 +471,6 @@ rolls
 tekercs
 #___________________________________roadsign____________________________________
 #___________________________________roadsign____________________________________
-choose_point
-Útválsztó tábla
 ChooseSignals
 Szemafor
 ChooseSignalsMonorail
@@ -499,16 +485,18 @@ NoAirEntry
 Behajtani tilos!
 NoEntry
 Nem bejárat
-preSignals
-Elõ forgalmi jelzõ
-preSignalsMonorail
-Nyeregvasút elõjelzõ szemafor
 RailClose
 Vágányzár
 Signals
 Forgalmi jelzõk
 SignalsMonorail
 Nyeregvasút szemafor
+choose_point
+Útválsztó tábla
+preSignals
+Elõ forgalmi jelzõ
+preSignalsMonorail
+Nyeregvasút elõjelzõ szemafor
 traffic_light
 Forgalmi fényjelzõ
 #_____________________________________tree______________________________________
@@ -575,6 +563,8 @@ Tree5
 Somfa\n
 Tree6
 Vörös fenyõ\n
+Willow
+Fûzfa\n
 tropictree1
 Trópusi fa.\n
 tropictree2
@@ -593,8 +583,6 @@ tropictree8
 Trópusi fa.\n
 tropictree9
 Trópusi fa.\n
-Willow
-Fûzfa\n
 #____________________________________tunnel_____________________________________
 #____________________________________tunnel_____________________________________
 FastRailTunnel
@@ -661,18 +649,8 @@ Autotransportwagen
 Autószállító vagon
 BB1280
 SNCF BB 1280 elektromos mozdony
-Be5-7
-Be5-7 mozdony
-Blimp
-Léghajó
-Book_Trike
-Könyvszállító teherautó
-Boxcar
-Könyvszállító vagon
 BR01
 Baureihe BR-01 gõzmozdony
-Br234
-BR-234 mozdony
 BR38
 Baureihe BR-38 gõzmozdony
 BR38-Tender
@@ -681,22 +659,32 @@ BR39
 Baureihe BR-39 gõzmozdony
 BR45
 Baureihe BR-45 gõzmozdony
+BR85
+Baureihe BR-86 gõzmozdony
+BRV36
+Baureihe V36/236 dízelmozdony
+Be5-7
+Be5-7 mozdony
+Blimp
+Léghajó
+Book_Trike
+Könyvszállító teherautó
+Boxcar
+Könyvszállító vagon
+Br234
+BR-234 mozdony
 Br614back
 BR-614 motorvonat (hátsó)
 Br614car
 BR-614 motorvonat (közép)
 Br614front
 BR-614 motorvonat (elsõ)
-BR85
-Baureihe BR-86 gõzmozdony
 Bretteranhaenger
 Faáruszállító-B utánfutó
 Brettertransporter
 Faáruszállító-B kocsi
 Bretterwagen
 Faáruszállító-B vagon
-BRV36
-Baureihe V36/236 dízelmozdony
 Buchanhaenger
 Serj/H-Trans könyvszállító utánfutó
 Buchtrailer
@@ -819,12 +807,14 @@ H-Trans-Tigress-II-Back
 H-Trans-Tigress II motorvonat (hátsó)
 H-Trans-Tigress-II-Front
 H-Trans-Tigress II motorvonat (elsõ)
+HJMAvia
+Avia kamion
+HVPosttransporter
+Postakocsi-B
 Hadley-Page-V1500
 RVg Hadley-Page V1500
 Heavy_ore_truck
 Nyersanyagszállító-A kocsi
-HJMAvia
-Avia kamion
 Hochbordwagen
 Nyersanyagszállító vagon
 Holzanhaenger
@@ -849,8 +839,6 @@ Horsewoodcariage
 Faáruszállító-A omnibusz
 Hunslet
 Hunslet Beddgelert 0-6-4T
-HVPosttransporter
-Postakocsi-B
 ICE_TD-back
 DBAG Baureihe 605 (ICE TD) (hátsó)
 ICE_TD-car
@@ -869,12 +857,6 @@ Ju52
 RVg Ju-52 utasszállító
 JumboJet
 Boeing JumboJet repülõgép
-kkStB_tender
-StB szerkocsi (StB 91, 110-hez)
-kkStB110
-StB 110 gõzmozdony
-kkStB91
-StB 91 gõzmozdony
 Klappdeckelwagen
 Mûanyagszállító kocsi
 Kohleanhaenger
@@ -895,8 +877,6 @@ Lockhead_Tristar
 Tristar repülõgép
 Lockheed10-Electra
 Lockhead-Martin L-10 "Elektra" postaszállító
-logs
-Faárúszállító uszály
 Lowa
 LOWA ET-54 villamos
 Lowa_Anhaenger
@@ -919,8 +899,6 @@ Oilbarge
 Olajszármazékszállító uszály
 Oiltrailer
 Olajszármazékszállító-B utánfutó
-old_open_car
-Szénszállító vagon (1837/5)
 OldOil
 Olajszármazék-szállító-A vagon
 Ox2
@@ -951,22 +929,18 @@ PrPostwagen
 Pr postavagon
 RenaultTH5
 Renault kamionfülke
-Sandanhaenger
-Nyersanyagszállító-C utánfutó
-Sandtransporter
-Nyersanyagszállító-F kocsi
-schooner
-Szkúner vitorláshajó
 SD40-2-back
 EMD SD40-2 dízelmozdony (hátsó)
 SD40-2-front
 EMD SD40-2 dízelmozdony (elsõ)
-setra_S10
-S-10 busz
-SlowFerry
-Személyszállító komp
 SMPoiltruck
 Scania MP tartálykocsi
+Sandanhaenger
+Nyersanyagszállító-C utánfutó
+Sandtransporter
+Nyersanyagszállító-F kocsi
+SlowFerry
+Személyszállító komp
 Stahlanhaenger
 Acélszállító utánfutó
 Stahltransporter
@@ -989,24 +963,22 @@ T21_bus
 T-21 busz
 T24
 TB24 villamos
-Tanklastzug
-Olajszármazékszállító kocsi
-Tatra-T4
-Tatra T4 villamos
-Tatra-T4_Wagon
-Tatra T4 villamoskocsi
 TB13
 TB13 villamoskocsi
 TB24
 TB24 villamoskocsi
-teaclipper
-Darabárúszállító klipper
 TPBeiwagen
 VT98 személyszállító motorvagon (hátsó)
 TPPassagierwagen
 TP személyszállító vagon
 TPSchienenbus
 VT98 személyszállító motorvonat (elsõ)
+Tanklastzug
+Olajszármazékszállító kocsi
+Tatra-T4
+Tatra T4 villamos
+Tatra-T4_Wagon
+Tatra T4 villamoskocsi
 Tram_GT6_Ende
 Düwag GT6 villamos (hátsó)
 Tram_GT6_Kopf
@@ -1033,8 +1005,34 @@ XMail
 X-Test egysínû postavagon
 XTest
 X-Test egysínû személyszállító
+kkStB110
+StB 110 gõzmozdony
+kkStB91
+StB 91 gõzmozdony
+kkStB_tender
+StB szerkocsi (StB 91, 110-hez)
+logs
+Faárúszállító uszály
+old_open_car
+Szénszállító vagon (1837/5)
+schooner
+Szkúner vitorláshajó
+setra_S10
+S-10 busz
+teaclipper
+Darabárúszállító klipper
 #______________________________________way______________________________________
 #______________________________________way______________________________________
+Kanal
+Csatorna
+MaglevTrack
+Maglev sín
+MaglevTrackElevated
+Megemelt Maglev sín
+Powerline
+Villamos vezeték
+Rillenschienen
+Villamos vágány
 asphalt_road
 Aszfaltos út
 city_road
@@ -1049,20 +1047,10 @@ elevated_monorail
 Emelt nyeregvasút sín
 gavel_road
 Kavicsos út
-Kanal
-Csatorna
-MaglevTrack
-Maglev sín
-MaglevTrackElevated
-Megemelt Maglev sín
 mip_cobblestone_road
 MIP kockaköves út
 monorail
 Nyeregvasút sín
-Powerline
-Villamos vezeték
-Rillenschienen
-Villamos vágány
 river
 Hajózható folyó
 river2
