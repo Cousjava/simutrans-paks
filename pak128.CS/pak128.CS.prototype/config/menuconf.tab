@@ -69,6 +69,9 @@ icon_height = 32
 # WKZ_CITYROAD =          36
 # WKZ_CHANGE_WATER_HEIGHT=38
 # WKZ_SET_CLIMATE =	  39
+# Standard
+# TOOL_ROTATE_BUILDING =  40
+# Extended
 # TOOL_BUILD_SIGNALBOX =  40
 # TOOL_REASSIGN_SIGNAL =  41
 #
@@ -113,6 +116,7 @@ general_tool[33]=18,1,11,
 general_tool[34]=,,11,
 general_tool[35]=16,13,11,K
 # cityroad (36) not set up here
+general_tool[40]=20,11,11,@
 general_tool[41]=19,6,11,\
 
 # SECOND SECTION: simple tools
@@ -163,7 +167,7 @@ simple_tool[0]=0,p
 simple_tool[1]=1,W
 simple_tool[2]=2,c
 simple_tool[3]=3,
-simple_tool[4]=4,z
+simple_tool[4]=4,^Z
 simple_tool[5]=5,P
 simple_tool[6]=6,
 # simple tool 7 needs a parameter
@@ -221,6 +225,7 @@ simple_tool[34]=,O
 # WKZ_CLIMATES =         26
 # WKZ_SETTINGS =         27
 # WKZ_GAMEINFO_NETWORK = 28
+# WKZ_THEMES =           29
 #
 dialog_tool[0]=0,?
 dialog_tool[1]=1,Q
@@ -310,12 +315,12 @@ toolbar[0][2]=general_tool[0]
 toolbar[0][3]=toolbar[1],0,,SLOPETOOLS,slopetools.txt
 toolbar[0][4]=toolbar[2],1,,RAILTOOLS,railtools.txt
 toolbar[0][5]=toolbar[3],2,,MONORAILTOOLS,monorailtools.txt
-toolbar[0][6]=toolbar[4],28,,MAGLEVTOOLS,maglevtools.txt
+toolbar[0][6]=toolbar[4],28,,MAGLEVTOOLS,monorailtools.txt
 toolbar[0][7]=toolbar[5],3,,TRAMTOOLS,tramtools.txt
 toolbar[0][8]=toolbar[6],4,,ROADTOOLS,roadtools.txt
 toolbar[0][9]=toolbar[7],5,,SHIPTOOLS,shiptools.txt
 toolbar[0][10]=toolbar[8],6,,AIRTOOLS,airtools.txt
-toolbar[0][11]=toolbar[9],31,,NGTOOLS,special.txt
+toolbar[0][11]=toolbar[9],31,,NGTOOLS,railtools.txt
 toolbar[0][12]=toolbar[10],7,,SPECIALTOOLS,special.txt
 toolbar[0][13]=general_tool[1]
 toolbar[0][14]=-
@@ -348,6 +353,8 @@ toolbar[0][37]=simple_tool[16]
 # network mode button
 toolbar[0][38]=-
 toolbar[0][39]=dialog_tool[28]
+# last used toolbar (without icon yet)
+toolbar[0][40]=toolbar[LAST_USED],24,z,Last used tools,
 
 # slope tools
 toolbar[1][0]=general_tool[2]
@@ -496,7 +503,8 @@ toolbar[10][11]=general_tool[14],,l,128
 toolbar[10][12]=general_tool[35]
 toolbar[10][13]=simple_tool[5]
 toolbar[10][14]=dialog_tool[6]
-toolbar[10][15]=general_tool[41]
+toolbar[10][15]=general_tool[40]
+toolbar[10][16]=general_tool[41]
 
 # editor tools
 toolbar[11][0]=general_tool[10],22,,+100

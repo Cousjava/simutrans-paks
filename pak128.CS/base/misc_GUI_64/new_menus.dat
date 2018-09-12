@@ -24,6 +24,7 @@ Image[16]=> menu_buttons.0.7
 Image[17]=> menu_buttons.1.5
 Image[18]=> menu_buttons.7.14
 Image[19]=> menu_buttons.1.7
+Image[20]=> menu_buttons.3.5
 --
 Obj=menu
 name=SimpleTools
