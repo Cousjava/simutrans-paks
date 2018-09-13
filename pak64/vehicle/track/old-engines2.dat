@@ -110,7 +110,7 @@ EmptyImage[W]=old-engines2.3.6
 EmptyImage[SW]=old-engines2.3.7
 --
 obj=vehicle
-name=General
+name=The General
 copyright=2B - Raven/Bega
 waytype=track
 speed=60

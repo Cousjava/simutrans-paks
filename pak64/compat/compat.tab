@@ -1,4 +1,4 @@
-# This file enables laoding of vehicles from a different set or to remove some vehicles
+# This file enables loading of vehicles from a different set or to remove some vehicles
 # If something during loading is not found, it will be looked up here, and retried
 #-------------------------------------
 # changed names for 64 pak
@@ -34,6 +34,8 @@ Tram GT6 Ende
 Tram_GT6_Ende
 BR45-Tender
 EinheitsTender
+General
+The General
 #
 #
 RES_11_15

@@ -134,9 +134,10 @@ intro_year = 1922
 intro_month = 4
 retire_year = 1971
 Constraint[Prev][0]=BR01
-Constraint[Prev][1]=BR38
-Constraint[Prev][2]=BR39
-Constraint[Prev][3]=BR45
+Constraint[Prev][1]=BR39
+Constraint[Prev][2]=BR45
+# since colors mismatch
+#Constraint[Prev][3]=BR38
 EmptyImage[S]=BR39-SK.1.0
 EmptyImage[E]=BR39-SK.1.1
 EmptyImage[SE]=BR39-SK.1.2
