@@ -289,7 +289,7 @@ BackImage[0][1][1][0][0]=dairy.1.0
 Obj=factory
 name=grain_mill
 copyright=PatrickN
-Location=Land
+Location=River
 DistributionWeight=66
 Productivity=80
 Range=95
@@ -413,7 +413,7 @@ BackImage[0][1][1][0][0]=food_processing.0.0
 --------------------------------------
 Obj=factory
 name=cannery
-Location=Land
+Location=Shore
 DistributionWeight=1
 Productivity=170
 Range=77
