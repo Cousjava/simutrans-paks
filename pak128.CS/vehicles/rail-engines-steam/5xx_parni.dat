@@ -150,8 +150,10 @@ copyright=TommPa9
 smoke=Steam2
 length=6
 gear=108
-constraint[next][0]=CSD_621.0	# do vyrobniho cisla 113
-#constraint[next][1]=CSD_818.0	# od vyrobniho cisla 114
+constraint[next][0]=CSD_621.0
+# do vyrobniho cisla 113
+#constraint[next][1]=CSD_818.0
+# od vyrobniho cisla 114
 # Podle http://lokomotivy.webzdarma.cz/534_0b.htm, tendry 621.0 (1-67), 516.0 (68-77) a 818.0 (78 a dal), 727.0 (vyjimka)
 
 # extended
@@ -186,7 +188,8 @@ copyright=TommPa9
 smoke=Steam2
 length=6
 gear=109
-constraint[next][0]=CSD_818.0	# do vyrobniho cisla 322, dalsi pak mely tendry 935.1
+constraint[next][0]=CSD_818.0
+# do vyrobniho cisla 322, dalsi pak mely tendry 935.1
 #constraint[next][1]=CSD_935.1
 
 # extended
@@ -204,13 +207,14 @@ emptyimage[s]=534_0_5.0.6,0,4
 emptyimage[sw]=534_0_5.0.7,0,4
 -----------------------------------
 
+# DRB rada 52 Kriegslokomotive
 obj=vehicle
 cost=2622600		# Mela by byt vyrazne levnejsi nez 555.1 (DRB 50), kvuli valecnym usporam, i na provoz a udrzbu, 150000 říšských marek (1 marka = 10 korun)
 speed=80
 weight=84		# 84,3
 runningcost=422
 fixed_cost=2161
-name=CSD_555.0_Nemka	# DRB rada 52 Kriegslokomotive
+name=CSD_555.0_Nemka
 intro_month=9		# Prvni vyrobeny kus v Nemecku 12. 9. 1942
 intro_year=1942		# U protektoratnich drah az od 1.1.1943
 #retire_year=1950	# produkce pokračovala i po válce až do počátku 50. let
@@ -224,13 +228,18 @@ copyright=TommPa9
 smoke=Steam2
 length=7
 gear=110
-constraint[next][0]=CSD_930.2	# Puvodni tednry z Floridsdorfu i rekonstrukce z 932.1
-#constraint[next][1]=CSD_932.1	# Puvodni tendry Vanderbildt
-#constraint[next][2]=CSD_926.1	# Puvodni tendry od rady 50 
-#upgrade[0]=CSD_555.3_Mazutka	# rekonstrukce od 25. září 1963 do konce roku 1964, tendry 930.3, 86.6 tun, 16 t/napravu, vykon o 20-25% vic (1450 kW), vetsinou bez usmernovacich plechu
-				# poslední byla vyřazena v roce 1972 ve Zdicích					(wikipedia)
-				# Poslední dojezdila kralupská 555.3096, která vyhasla dne 17.11.1970.		(http://parniloko.wz.cz/web/loko/rady/500/5550/5550b.html)
-				# administrativně byly jako poslední vyřazeny 555.3011 a 3261 dne 10.8.1973.	(http://parniloko.wz.cz/web/loko/rady/500/5550/5550b.html)
+constraint[next][0]=CSD_930.2
+# Puvodni tednry z Floridsdorfu i rekonstrukce z 932.1
+#constraint[next][1]=CSD_932.1
+# Puvodni tendry Vanderbildt
+#constraint[next][2]=CSD_926.1
+# Puvodni tendry od rady 50 
+
+#upgrade[0]=CSD_555.3_Mazutka
+# rekonstrukce od 25. září 1963 do konce roku 1964, tendry 930.3, 86.6 tun, 16 t/napravu, vykon o 20-25% vic (1450 kW), vetsinou bez usmernovacich plechu
+# poslední byla vyřazena v roce 1972 ve Zdicích					(wikipedia)
+# Poslední dojezdila kralupská 555.3096, která vyhasla dne 17.11.1970.		(http://parniloko.wz.cz/web/loko/rady/500/5550/5550b.html)
+# administrativně byly jako poslední vyřazeny 555.3011 a 3261 dne 10.8.1973.	(http://parniloko.wz.cz/web/loko/rady/500/5550/5550b.html)
 
 # extended
 axles=6
@@ -249,13 +258,14 @@ emptyimage[s]=555.0.6,0,4
 emptyimage[sw]=555.0.7,0,4
 -----------------------------------
 
+# DRB rada 50
 obj=vehicle
 cost=2671500
 speed=80
 weight=87
 runningcost=422
 fixed_cost=2161
-name=CSD_555.1		# DRB rada 50
+name=CSD_555.1
 intro_month=4
 intro_year=1939
 #retire_year=1960	# konec vyroby	1959
@@ -267,7 +277,8 @@ copyright=TommPa9
 smoke=Steam2
 length=7
 gear=110
-constraint[next][0]=CSD_930.2	# Sravne ma byt 926.1
+constraint[next][0]=CSD_930.2
+# Spravne ma byt 926.1
 
 # extended
 axles=6
