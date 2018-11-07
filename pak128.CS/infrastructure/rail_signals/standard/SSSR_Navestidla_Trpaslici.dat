@@ -43,7 +43,6 @@ copyright=Lubak91, Vladki
 Name=SSSR_LongSignal_Dwarf
 waytype=track
 cost=4000
-is_signal=1
 is_longblocksignal=1
 #max_speed=60
 #normal_danger=1

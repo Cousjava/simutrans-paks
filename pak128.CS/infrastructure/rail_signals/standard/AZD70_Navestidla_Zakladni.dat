@@ -56,7 +56,6 @@ copyright=Lubak91, Vladki
 name=AZD70_LongSignal
 waytype=track
 cost=4000
-is_signal=1
 is_longblocksignal=1
 #max_speed=120
 #normal_danger=1

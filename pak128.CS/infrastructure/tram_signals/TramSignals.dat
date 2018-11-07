@@ -93,7 +93,6 @@ name=Tram_LongSignal
 copyright=Vladki
 waytype=track
 cost=4000
-is_signal=1
 is_longblocksignal=1
 intro_year=1967
 offset_left=7

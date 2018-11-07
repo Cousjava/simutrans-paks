@@ -65,7 +65,6 @@ copyright=Lubak91, Vladki
 Name=SSSR_LongSignal
 waytype=track
 cost=4000
-is_signal=1
 is_longblocksignal=1
 #max_speed=120
 #normal_danger=1
