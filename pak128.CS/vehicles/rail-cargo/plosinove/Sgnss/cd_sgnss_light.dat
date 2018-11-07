@@ -1,7 +1,7 @@
 ------------------------------------------
 
 obj=vehicle
-name=cdc_sgnss_light
+name=cd_sgnss_light
 Copyright=Lubak91
 waytype=track
 freight=woodchips
@@ -12,8 +12,9 @@ weight=20
 length=10
 RunningCost=15
 fixed_cost=115
-intro_month=12
-intro_year=2007
+intro_year=2005
+retire_month=11
+retire_year=2007
 
 emptyimage[w]=cdc_sgnss_empty.0.0,0,4
 emptyimage[nw]=cdc_sgnss_empty.0.1,0,4
@@ -24,13 +25,13 @@ emptyimage[se]=cdc_sgnss_empty.0.5,0,4
 emptyimage[s]=cdc_sgnss_empty.0.6,0,4
 emptyimage[sw]=cdc_sgnss_empty.0.7,0,4
 
-freightimage[w]=cdc_sgnss_light_b.0.0,0,4
-freightimage[nw]=cdc_sgnss_light_b.0.1,0,4
-freightimage[n]=cdc_sgnss_light_b.0.2,0,4
-freightimage[ne]=cdc_sgnss_light_b.0.3,0,4
-freightimage[e]=cdc_sgnss_light_b.0.4,0,4
-freightimage[se]=cdc_sgnss_light_b.0.5,0,4
-freightimage[s]=cdc_sgnss_light_b.0.6,0,4
-freightimage[sw]=cdc_sgnss_light_b.0.7,0,4
+freightimage[w]=cdc_sgnss_light_a.0.0,0,4
+freightimage[nw]=cdc_sgnss_light_a.0.1,0,4
+freightimage[n]=cdc_sgnss_light_a.0.2,0,4
+freightimage[ne]=cdc_sgnss_light_a.0.3,0,4
+freightimage[e]=cdc_sgnss_light_a.0.4,0,4
+freightimage[se]=cdc_sgnss_light_a.0.5,0,4
+freightimage[s]=cdc_sgnss_light_a.0.6,0,4
+freightimage[sw]=cdc_sgnss_light_a.0.7,0,4
 
 ------------------------------------------

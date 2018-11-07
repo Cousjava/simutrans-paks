@@ -12,8 +12,10 @@ weight=15
 length=8
 RunningCost=10
 fixed_cost=77
-intro_year=2007
-intro_month=12
+intro_year=2005
+intro_month=5
+retire_year=2007
+retire_month=11
 Constraint[Next][0]=cd_sggmrss_b
 
 freightimagetype[0]=Plastik
