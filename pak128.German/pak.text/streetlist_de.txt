@@ -1,0 +1,332 @@
+﻿%1$s Abraham-Lincoln-Allee %2$s
+%1$s Abraham-Lincoln-Str. %2$s
+%1$s Ahornstraße %2$s
+%1$s Ahornweg %2$s
+%1$s Aindorferstraße %2$s
+%1$s Albert-Einstein-Allee %2$s
+%1$s Albert-Einstein-Straße %2$s
+%1$s Albert-Schweitzer-Allee %2$s
+%1$s Albert-Schweitzer-Straße %2$s
+%1$s Alice-Keppler Str. %2$s
+%1$s Allacherstraße %2$s
+%1$s Althofener Str. %2$s
+%1$s Am Alten Acker %2$s
+%1$s Am Graben %2$s
+%1$s Am Hügel %2$s
+%1$s Am Kornfeld %2$s
+%1$s Am Torhaus %2$s
+%1$s Am Turm %2$s
+%1$s Amselstraße %2$s
+%1$s Ander Bibliothek %2$s
+%1$s Anton-Fehr-Straße %2$s
+%1$s Apfelweg %2$s
+%1$s Armbrustgasse %2$s
+%1$s Asimovweg %2$s
+%1$s Asterngasse %2$s
+%1$s Asternweg %2$s
+%1$s Auenstraße %2$s
+%1$s Auer-von-Welsbach-Str. %2$s
+%1$s Aufeldgasse %2$s
+%1$s Bahngasse %2$s
+%1$s Bahnhofstr. %2$s
+%1$s Baumstraße %2$s
+%1$s Bedrich-Smetana-Allee %2$s
+%1$s Beethovenstraße %2$s
+%1$s Begonienweg %2$s
+%1$s Benjamin-Franklin-Allee %2$s
+%1$s Bergsonstraße %2$s
+%1$s Berliner Str. %2$s
+%1$s Bernau Str. %2$s
+%1$s Birnbaumweg %2$s
+%1$s Bismarckgasse %2$s
+%1$s Bogenstraße %2$s
+%1$s Brauhausgasse %2$s
+%1$s Braviler Str. %2$s
+%1$s Bronzegasse %2$s
+%1$s Bronzeweg %2$s
+%1$s Buchenlandstr. %2$s
+%1$s Buchenweg %2$s
+%1$s Buchsweg %2$s
+%1$s Burggasse %2$s
+%1$s Carl-Benz-Straße %2$s
+%1$s Carl-Bosch-Weg %2$s
+%1$s Charles-Darwin-Allee %2$s
+%1$s Charles-Darwin-Gasse %2$s
+%1$s Charlottenburggasse %2$s
+%1$s Danaeweg %2$s
+%1$s Dänenweg %2$s
+%1$s Daunengasse %2$s
+%1$s Dom Gasse %2$s
+%1$s Donaugasse %2$s
+%1$s Drau Gasse %2$s
+%1$s Draustr. %2$s
+%1$s Efeuweg %2$s
+%1$s Eggenfelder Str. %2$s
+%1$s Eisenstraße %2$s
+%1$s Eisgasse %2$s
+%1$s Emil-Erlenmayer-Str. %2$s
+%1$s Entenstraße %2$s
+%1$s Enzianweg %2$s
+%1$s Eschenstraße %2$s
+%1$s Europastr. %2$s
+%1$s Eversbuschstraße %2$s
+%1$s Falkensteiner-Str. %2$s
+%1$s Falkenstraße %2$s
+%1$s Falkenweg %2$s
+%1$s Fein-Weg %2$s
+%1$s Feldkirchner Str. %2$s
+%1$s Fichtenstraße %2$s
+%1$s Finkenstraße %2$s
+%1$s Flachsweg %2$s
+%1$s Florence-Nightingale-Allee %2$s
+%1$s Florian-Groeger-Str. %2$s
+%1$s Florientinerstraße %2$s
+%1$s Flussgasse %2$s
+%1$s Frankfurter Str. %2$s
+%1$s Gabelsbergerstr. %2$s
+%1$s Geranienweg %2$s
+%1$s Geröllgasse %2$s
+%1$s Gerstenfelderstr. %2$s
+%1$s Gerstenstraße %2$s
+%1$s Gerstenweg %2$s
+%1$s Glangasse %2$s
+%1$s Glashüttenstr. %2$s
+%1$s Goethestraße %2$s
+%1$s Goldgasse %2$s
+%1$s Goldstraße %2$s
+%1$s Gottlieb-Daimler-Allee %2$s
+%1$s Gottlieb-Daimler-Str. %2$s
+%1$s Gravensteiner-Platz %2$s
+%1$s Grazer Gasse %2$s
+%1$s Gutenbergstr. %2$s
+%1$s Hauptstraße %2$s
+%1$s Hellebardenstraße %2$s
+%1$s Helmgasse %2$s
+%1$s Herman-Amschütz-Str. %2$s
+%1$s Hirschstr. %2$s
+%1$s Hochschildstraße %2$s
+%1$s Holzgasse %2$s
+%1$s Holzweg %2$s
+%1$s Humusweg %2$s
+%1$s Iridiumgasse %2$s
+%1$s Isarstraße %2$s
+%1$s Italienerstr. %2$s
+%1$s James-Watt-Allee %2$s
+%1$s Juliagasse %2$s
+%1$s Julius-Albert-Str. %2$s
+%1$s Julius-Meindl-Straße %2$s
+%1$s Juliusstraße %2$s
+%1$s Jupiterweg %2$s
+%1$s Kaiser-Franz-Gasse %2$s
+%1$s Kaiweg %2$s
+%1$s Kanalstraße %2$s
+%1$s Kappellenstr. %2$s
+%1$s Karl-Marx-Ring %2$s
+%1$s Karl-Marx-Str. %2$s
+%1$s Karl-von-Drais-Allee %2$s
+%1$s Karnburger-Str. %2$s
+%1$s Kastanienstr. %2$s
+%1$s Keltenweg %2$s
+%1$s Kennedystr. %2$s
+%1$s Kirchensteig %2$s
+%1$s Kirschallee %2$s
+%1$s Klostergasse %2$s
+%1$s Klosterstr. %2$s
+%1$s Knöterichweg %2$s
+%1$s Köln Weg %2$s
+%1$s Kölnhofallee %2$s
+%1$s Königinnenstr. %2$s
+%1$s Königsweg %2$s
+%1$s Konrad-Adenauer-Str. %2$s
+%1$s Konrad-Beyerle-Straße %2$s
+%1$s Kopernikusgasse %2$s
+%1$s Kopernikusstr. %2$s
+%1$s Kornstr. %2$s
+%1$s Kugelweg %2$s
+%1$s Kupferplatz %2$s
+%1$s Kupferstraße %2$s
+%1$s Kürschnerweg %2$s
+%1$s Lagerhausstr. %2$s
+%1$s Lagerstr. %2$s
+%1$s Lamiastr. %2$s
+%1$s Lanzenstraße %2$s
+%1$s Lärchengasse %2$s
+%1$s Lärchenstraße %2$s
+%1$s Lärchenweg %2$s
+%1$s Larissastr. %2$s
+%1$s Lastenstraße %2$s
+%1$s Laubgasse %2$s
+%1$s Lederergasse %2$s
+%1$s Lehmweg %2$s
+%1$s Lemurias Schmiede %2$s
+%1$s Leopoldstraße %2$s
+%1$s Lerchenstraße %2$s
+%1$s Lerchenstraße %2$s
+%1$s Libellenstr. %2$s
+%1$s Lilienthalstraße %2$s
+%1$s Lindenstraße %2$s
+%1$s Lindwurmstr. %2$s
+%1$s Linus-Torvalds-Platz %2$s
+%1$s Linux Weg %2$s
+%1$s Lotstraße %2$s
+%1$s Lotusgasse %2$s
+%1$s Louis-Pasteur-Ring %2$s
+%1$s Louis-Pasteur-Straße %2$s
+%1$s Ludwig-Wagner-Str. %2$s
+%1$s Magellanstr. %2$s
+%1$s Mahagoniweg %2$s
+%1$s Mahatma-Ghandi-Weg %2$s
+%1$s Maiglöckchenweg %2$s
+%1$s Maingasse %2$s
+%1$s Mainzer-Straße %2$s
+%1$s Maisstr. %2$s
+%1$s Malergasse %2$s
+%1$s Malerweg %2$s
+%1$s Mandelgasse %2$s
+%1$s Marbachweg %2$s
+%1$s Maria-Gailerweg %2$s
+%1$s Mariannenweg %2$s
+%1$s Marillenweg %2$s
+%1$s Marktstr. %2$s
+%1$s Marsstr. %2$s
+%1$s Marthastr. %2$s
+%1$s Martin-Luther-Str. %2$s
+%1$s Max-Ghiese-Allee %2$s
+%1$s Max-Plank-Allee %2$s
+%1$s Merkurstr. %2$s
+%1$s Michelstadtgaße %2$s
+%1$s Milchstraße %2$s
+%1$s Moosgasse %2$s
+%1$s Mozartstraße %2$s
+%1$s Münchnerstr. %2$s
+%1$s Nelestr. %2$s
+%1$s Nelkengasse %2$s
+%1$s Nelkenweg %2$s
+%1$s Nickelgasse %2$s
+%1$s Nickelstraße %2$s
+%1$s Normannengasse %2$s
+%1$s Oberonstraße %2$s
+%1$s Oleanderweg %2$s
+%1$s Opheliaweg %2$s
+%1$s Orangenweg %2$s
+%1$s Orchideenstr. %2$s
+%1$s Oskarstr. %2$s
+%1$s Ossiacher Str. %2$s
+%1$s Ossiacher Zeile %2$s
+%1$s Pappelnstraße %2$s
+%1$s Pappelnweg %2$s
+%1$s Patrizierstraße %2$s
+%1$s Paul-Heyse-Straße %2$s
+%1$s Paulstr. %2$s
+%1$s Pestalozzistr. %2$s
+%1$s Pfirsichstraße %2$s
+%1$s Pflaumenstraße %2$s
+%1$s Phloxgasse %2$s
+%1$s Piusweg %2$s
+%1$s Platingasse %2$s
+%1$s Platinstraße %2$s
+%1$s Platinweg %2$s
+%1$s Plieningerstraße %2$s
+%1$s Polarstr. %2$s
+%1$s Preussenweg %2$s
+%1$s Prinzenweg %2$s
+%1$s Quecksilberstr. %2$s
+%1$s Rabengasse %2$s
+%1$s Ramaganiweg %2$s
+%1$s Raupenweg %2$s
+%1$s Regenturmstr. %2$s
+%1$s Residenzstr. %2$s
+%1$s Robert-Oppenheimer-Ring %2$s
+%1$s Roggengasse %2$s
+%1$s Roggenstr. %2$s
+%1$s Römerstr. %2$s
+%1$s Römerstraße %2$s
+%1$s Rooseveltstr. %2$s
+%1$s Rosengasse %2$s
+%1$s Rosentaler Str. %2$s
+%1$s Rosenweg %2$s
+%1$s Rottaler Straße %2$s
+%1$s Salzburgerstr. %2$s
+%1$s Sattlerstraße %2$s
+%1$s Saumweberstraße %2$s
+%1$s Schildgasse %2$s
+%1$s Schildstraße %2$s
+%1$s Schlachthofstr. %2$s
+%1$s Schlehbuschgasse %2$s
+%1$s Schlehbuschstraße %2$s
+%1$s Schleissheimer Str. %2$s
+%1$s Schleusenstr. %2$s
+%1$s Schmiedegasse %2$s
+%1$s Schotterstraße %2$s
+%1$s Schreinergasse %2$s
+%1$s Schwanengasse %2$s
+%1$s Schwanseestraße %2$s
+%1$s Schwertstraße %2$s
+%1$s Seebacherallee %2$s
+%1$s Shakespearstr. %2$s
+%1$s Silberplatz %2$s
+%1$s Silberweg %2$s
+%1$s Siriusallee %2$s
+%1$s Siriusstr. %2$s
+%1$s Sonnengasse %2$s
+%1$s Sonnenstr. %2$s
+%1$s Sonnwendgasse %2$s
+%1$s Sonnwendstr. %2$s
+%1$s Spitalgasse %2$s
+%1$s St.Rupprechter Str. %2$s
+%1$s St.Veiter-Str. %2$s
+%1$s Stahlhammerweg %2$s
+%1$s Stahlstraße %2$s
+%1$s Stahlweg %2$s
+%1$s Starenweg %2$s
+%1$s Steintraße %2$s
+%1$s Taliagasse %2$s
+%1$s Tannenstraße %2$s
+%1$s Taubenstraße %2$s
+%1$s Teichstraße %2$s
+%1$s The-Transporter-Lände %2$s
+%1$s Thomas-Edison-Str. %2$s
+%1$s Tiberiusstr. %2$s
+%1$s Tigrisstr. %2$s
+%1$s Tirolerstraße %2$s
+%1$s Titan Gasse %2$s
+%1$s Tonstraße %2$s
+%1$s Torhausgasse %2$s
+%1$s Triglavstr. %2$s
+%1$s Tulpenstr. %2$s
+%1$s Tulpenstraße %2$s
+%1$s Turnerstr. %2$s
+%1$s Uferweg %2$s
+%1$s Ulrichstraße %2$s
+%1$s Untere Lände %2$s
+%1$s Unterer Weg %2$s
+%1$s Uranusgasse %2$s
+%1$s Uranusstr. %2$s
+%1$s Vassacherstr. %2$s
+%1$s Veilchenstr. %2$s
+%1$s Veilchenweg %2$s
+%1$s Verdistraße %2$s
+%1$s Villacher Str. %2$s
+%1$s Voelkermarkter Str. %2$s
+%1$s Volta-Allee %2$s
+%1$s Wagnerstraße %2$s
+%1$s Waidmansdorfer Str. %2$s
+%1$s Waldweg %2$s
+%1$s Walnussgasse %2$s
+%1$s Wassergasse %2$s
+%1$s Wayerstr. %2$s
+%1$s Weidenstraße %2$s
+%1$s Weidenweg %2$s
+%1$s Weiherstr. %2$s
+%1$s Weizengasse %2$s
+%1$s Weizenstraße %2$s
+%1$s Werner-von-Braun-Ring %2$s
+%1$s Wiener Gasse %2$s
+%1$s Wienerstr. %2$s
+%1$s William-McKinley-Straße %2$s
+%1$s Wimitz Gasse %2$s
+%1$s Wittelsbachergasse %2$s
+%1$s Wittelsbacherstr. %2$s
+%1$s Wurmitzer Str. %2$s
+%1$s Wurmstr. %2$s
+%1$s Züricher Platz %2$s

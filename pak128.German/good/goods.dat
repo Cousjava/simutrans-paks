@@ -1,0 +1,975 @@
+#
+# Goods.dat fuer PAK128.german
+------------------------------------------------------
+#
+# Author: Hj. Malthaner
+# Update: 13-Feb-15 Daniel Martin=>Alle Preise neu kalkuliert
+# Update: $Date: 2018-08-05 21:28:01 +0200 (So, 05. Aug 2018) $ - $Author: NNW $ => "Makies Äenderungen aus GIT uebertragen"
+#
+# categories:
+# 0 = Sonderfracht
+# 1 = Stueckgut
+# 2 = Schuettgut
+# 3 = Mineraloele
+# 4 = Kuehlwaren
+# 5 = fluessige Lebensmittel
+# 6 = Nutzholz
+# 7 = landwirtschaftliche Gueter
+# 8 = Siloware
+
+# Gesamtanzahl: 66 Waren in 9 Kategorien
+#**************************
+# catg 0 Standard
+#**************************
+#
+# Personen 63
+#
+obj=good
+name=Passagiere
+metric= 
+weight_per_unit=75
+catg=0
+value=30
+#=0,1
+speed_bonus=0
+MapColor=215
+-----------------------
+#
+# Post 64
+#
+obj=good
+name=Post
+metric= Sack
+weight_per_unit=50
+catg=0
+value=30
+#=0,10
+speed_bonus=0
+MapColor=96
+--------------------
+#
+# ohne Gut 65
+#
+obj=good
+name=None
+metric=  
+weight_per_unit=0
+catg=0
+value=0
+#speed_bonus=0
+MapColor=000000
+-----------------------
+
+
+#**************************
+# catg 0 Gueter
+#**************************
+#
+# Autos 1
+#
+obj=good
+name=Autos
+metric=  
+weight_per_unit=1260
+catg=0
+value=180
+#=0,6
+speed_bonus=0
+MapColor=121
+-----------------------
+#
+# Beton 2
+#
+obj=good
+name=Beton
+metric= Tonnen
+weight_per_unit=1000
+catg=0
+value=60
+#=0,2
+speed_bonus=0
+MapColor=217
+-----------------------
+#
+# Stahl 3
+#
+obj=good
+name=Stahl
+metric= Tonnen
+weight_per_unit=1000
+catg=0
+value=90
+#=0,3
+speed_bonus=0
+MapColor=150
+-----------------------
+
+# Schiffssektionen 4
+#
+obj=good
+name=Schiffssektionen
+metric= 
+weight_per_unit=65535
+catg=0
+value=720
+#=50
+speed_bonus=0
+MapColor=96
+-----------------------
+
+# Schiffe 5
+#
+#obj=good
+#name=Schiffe
+#metric= 
+#weight_per_unit=65535
+#catg=0
+#value=750
+#=250
+#speed_bonus=0
+#MapColor=96
+-----------------------
+
+#
+# Vieh 6
+#
+obj=good
+name=Vieh
+metric= Stck.
+weight_per_unit=850
+catg=0
+value=60
+#=0,2
+speed_bonus=0
+MapColor=118
+------------------------- 
+
+
+#**************************
+# catg 1 Stueckgut
+#**************************
+#
+# Backwaren 7
+#
+obj=good
+name=Backwaren
+metric= Paletten
+weight_per_unit=400
+catg=1
+value=90
+#=0,2
+speed_bonus=0
+MapColor=155
+-----------------------
+
+# Bier in Flaschen 8
+#
+obj=good
+name=Bier
+metric= Paletten
+weight_per_unit=700
+catg=1
+value=90
+#=0,3
+speed_bonus=0
+MapColor=28
+-----------------------
+#
+# Beton als Stückgut 9
+#
+obj=good
+name=Betonfertigteile
+metric= Paletten
+weight_per_unit=800
+catg=1
+value=90
+#=0,3
+speed_bonus=0
+MapColor=217
+-----------------------
+
+#
+# Buecher 10
+#
+obj=good
+name=Buecher
+metric= Paletten
+weight_per_unit=450
+catg=1
+value=90
+#=0,3
+speed_bonus=0
+MapColor=223
+-----------------------
+
+# Chemikalien 11
+#
+obj=good
+name=Chemikalien
+metric= Paletten
+weight_per_unit=650
+catg=1
+value=75
+#=0,25
+speed_bonus=0
+MapColor=79
+-----------------------
+#
+# Computer 12
+#
+obj=good
+name=Computer
+metric= Paletten
+weight_per_unit=350
+catg=1
+value=150
+#=0,5
+speed_bonus=0
+MapColor=125
+--------------------
+#
+# Dosen-Essen 13
+#
+obj=good
+name=Dosenessen
+metric= Paletten
+weight_per_unit=500
+catg=1
+value=90
+#=0,3
+speed_bonus=0
+MapColor=48
+----------------------- 
+#
+# Maschinen 14
+#
+obj=good
+name=Maschinen
+metric= Paletten
+weight_per_unit=650
+catg=1
+value=150
+#=0,5
+speed_bonus=0
+MapColor=96
+-----------------------
+#
+# Druckfarben 15
+#
+obj=good
+name=Farben
+metric= Paletten
+weight_per_unit=650
+catg=1
+value=75
+#=0,3
+speed_bonus=0
+MapColor=38
+-----------------------
+#
+# Lackfarbe 16
+#
+#obj=good
+#name=Lackfarbe
+#metric= Paletten
+#weight_per_unit=650
+#catg=1
+#value=75
+#=0,25
+#speed_bonus=0
+#MapColor=122
+-----------------------
+
+#
+# Eier 17
+#
+obj=good
+name=Eier
+metric= Paletten
+weight_per_unit=450
+catg=1
+value=60
+#=0,2
+speed_bonus=0
+MapColor=215
+-----------------------
+#
+# Flaschen 68
+#
+obj=good
+name=Flaschen
+metric= Paletten
+weight_per_unit=450
+catg=1
+value=66
+#=0,22
+speed_bonus=0
+MapColor=29
+-------------------------
+#
+# Glas 18
+#
+obj=good
+name=Glas
+metric= Paletten
+weight_per_unit=1000
+catg=1
+value=60
+#=0,2
+speed_bonus=0
+MapColor=87
+-----------------------
+#
+# Kameras 19
+#
+obj=good
+name=Kameras
+metric= Paletten
+weight_per_unit=1000
+catg=1
+value=150
+#=0,5
+speed_bonus=0
+MapColor=80
+----------------------
+#
+# Marzipan 20
+#
+obj=good
+name=Marzipan
+metric= Paletten
+weight_per_unit=400
+catg=1
+value=150
+#=0,5
+speed_bonus=0
+MapColor=90
+--------------------
+#
+# Medikamente 21
+#
+obj=good
+name=Medikamente
+metric= Paletten
+weight_per_unit=280
+catg=1
+value=120
+#=0,4
+speed_bonus=0
+MapColor=75
+-----------------------
+#
+# Mehl 22
+#
+obj=good
+name=Mehl
+metric= Paletten
+weight_per_unit=650
+catg=1
+value=75
+#=0,25
+speed_bonus=0
+MapColor=214
+----------------------- 
+#
+# Moebel 23
+#
+obj=good
+name=Moebel
+metric= Paletten
+weight_per_unit=360
+catg=1
+value=120
+#=0,4
+speed_bonus=0
+MapColor=188
+-----------------------
+#
+# Papier 24
+#
+obj=good
+name=Papier
+metric= Paletten
+weight_per_unit=700
+catg=1
+value=60
+#=0,2
+speed_bonus=0
+MapColor=223
+-----------------------
+#
+# Kunststoffe 25
+#
+obj=good
+name=Plastik
+metric= Paletten
+weight_per_unit=700
+catg=1
+value=60
+#=0,2
+speed_bonus=0
+MapColor=192
+-----------------------
+#
+# Silizium 26
+#
+obj=good
+name=Silizium
+metric= Paletten
+weight_per_unit=800
+catg=1
+value=120
+#=0,4
+speed_bonus=0
+MapColor=77
+--------------------
+
+#
+# Textilien 27
+#
+obj=good
+name=Textilien
+metric= Paletten
+weight_per_unit=150
+catg=1
+value=60
+#=0,3
+speed_bonus=0
+MapColor=110
+-----------------------
+#
+# Wafer 28
+#
+obj=good
+name=Wafer
+metric= Paletten
+weight_per_unit=800
+catg=1
+value=210
+#=0,7
+speed_bonus=0
+MapColor=126
+----------------------
+#
+# Wein  29
+#
+obj=good
+name=Wein
+metric= Paletten
+weight_per_unit=700
+catg=1
+value=60
+#=0,2
+speed_bonus=0
+MapColor=130
+-----------------------
+#
+# Schafswolle 30
+#
+obj=good
+name=Wolle
+metric= Paletten
+weight_per_unit=150
+catg=1
+value=60
+#=0,2
+speed_bonus=0
+MapColor=135
+-----------------------
+#
+# Zement 31
+#
+obj=good
+name=Zement
+metric= Paletten
+weight_per_unit=750
+catg=1
+value=60
+#=0,2
+speed_bonus=0
+MapColor=208
+-------------------------
+#
+# Zucker 32
+#
+obj=good
+name=Zucker
+metric= Paletten
+weight_per_unit=850
+catg=1
+value=60
+#=0,2
+speed_bonus=0
+MapColor=213
+-------------------------
+#
+# Obst 65
+#
+obj=good
+name=Obst
+metric= Paletten
+weight_per_unit=150
+catg=1
+value=60
+#=0,2
+speed_bonus=0
+MapColor=142
+-------------------------
+#
+# Suedfruechte 66
+#
+obj=good
+name=Suedfruechte
+metric= Paletten
+weight_per_unit=150
+catg=1
+value=60
+#=0,2
+speed_bonus=0
+MapColor=194
+-------------------------
+#
+# Verpackungsmittel 67
+#
+obj=good
+name=Verpackungsmittel
+metric= Paletten
+weight_per_unit=450
+catg=1
+value=66
+#=0,22
+speed_bonus=0
+MapColor=29
+-------------------------
+#**************************
+# catg 2 - Schuettgut
+#**************************
+#
+# Eisenerz 33
+#
+obj=good
+name=Eisenerz
+metric= Tonnen
+weight_per_unit=1000
+catg=2
+value=60
+#=0,2
+speed_bonus=0
+MapColor=15
+-----------------------
+#
+# technische Salze
+#
+obj=good
+name=Salze
+metric= Tonnen
+weight_per_unit=1000
+catg=2
+value=36
+#=0,1
+speed_bonus=0
+MapColor=1
+---------------------
+#
+# Kohle 34
+#
+obj=good
+name=Kohle
+metric= Tonnen
+weight_per_unit=1000
+catg=2
+value=36
+#=0,1
+speed_bonus=0
+MapColor=8
+-----------------------
+#
+# Koks 35
+#
+obj=good
+name=Koks
+metric= Tonnen
+weight_per_unit=850
+catg=2
+value=45
+#=0,15
+speed_bonus=0
+MapColor=10
+-----------------------
+#
+# Abfall/Muell 36
+#
+Obj=good
+name=Abfall
+metric= Tonnen
+weight_per_unit=1000
+catg=2
+value=36
+#=0,1
+speed_bonus=0
+MapColor=88
+--------------------
+#
+# Sand 37
+#
+obj=good
+name=Sand
+metric= Tonnen
+weight_per_unit=1000
+catg=2
+value=36
+#=0,1
+speed_bonus=0
+MapColor=86
+-----------------------
+#
+# Schrott 38
+#
+Obj=good
+name=Schrott
+metric= Tonnen
+weight_per_unit=1000
+catg=2
+value=45
+#=0,15
+speed_bonus=0
+MapColor=212
+--------------------
+#
+# Steine 39
+#
+obj=good
+name=Steine
+metric= Tonnen
+weight_per_unit=1000
+catg=2
+value=36
+#=0,1
+speed_bonus=0
+MapColor=82
+-----------------------
+#
+# Zuckerrueben 40
+#
+obj=good
+name=Zuckerrueben
+metric= Tonnen
+weight_per_unit=1000
+catg=2
+value=45
+#=0,1
+speed_bonus=0
+MapColor=207
+-----------------------
+
+#**************************
+# catg 3 - Mineraloele
+#**************************
+#
+# Benzin 41
+#
+obj=good
+name=Benzin
+metric= m3
+weight_per_unit=750
+catg=3
+value=120
+#=0,4
+speed_bonus=0
+MapColor=174
+-----------------------
+#
+# Diesel 42
+#
+obj=good
+name=Diesel
+metric= m3
+weight_per_unit=830
+catg=3
+value=120
+#=0,4
+speed_bonus=0
+MapColor=175
+-----------------------
+#
+# Heizoel 43
+#
+obj=good
+name=Heizoel
+metric= m3
+weight_per_unit=830
+catg=3
+value=120
+#=0,4
+speed_bonus=0
+MapColor=174
+-------------------------- 
+#
+# Oel 44
+#
+obj=good
+name=Oel
+metric= m3
+weight_per_unit=850
+catg=3
+value=45
+#=0,15
+speed_bonus=0
+MapColor=31
+-----------------------
+
+#**************************
+# catg 4 - Kühlwaren
+#**************************
+#
+# Fertiggerichte 45
+#
+obj=good
+name=Fertiggerichte
+metric= Paletten
+weight_per_unit=480
+catg=4
+value=90
+#=0,3
+speed_bonus=0
+MapColor=53
+-----------------------
+#
+# Fisch 46
+#
+obj=good
+name=Fisch
+metric= Paletten
+weight_per_unit=600
+catg=4
+value=60
+#=0,2
+speed_bonus=0
+MapColor=6
+-----------------------
+#
+# Fleisch 47
+#
+obj=good
+name=Fleisch
+metric= Paletten
+weight_per_unit=400
+catg=4
+value=90
+#=0,3
+speed_bonus=0
+MapColor=116
+-----------------------
+#
+# Gefluegel 48
+#
+obj=good
+name=Gefluegel
+metric= Paletten
+weight_per_unit=480
+catg=4
+value=90
+#=0,3
+speed_bonus=0
+MapColor=4
+----------------------- 
+#
+# Tiefkuehlkost 49
+#
+obj=good
+name=Tiefkuehlkost
+metric= Paletten
+weight_per_unit=210
+catg=4
+value=120
+#=0,4
+speed_bonus=0
+MapColor=55
+----------------------- 
+#
+# Tiefkuehlkost 50
+#
+obj=good
+name=Molkereiprodukte
+metric= Paletten
+weight_per_unit=440
+catg=4
+value=90
+#=0,4
+speed_bonus=0
+MapColor=55
+----------------------- 
+
+
+
+#**************************
+# catg 5 - Fluessige Lebensmittel
+#**************************
+#
+# Milch 51
+#
+obj=good
+name=Milch
+metric= m3
+weight_per_unit=1030
+catg=5
+value=45
+#=0,15
+speed_bonus=0
+MapColor=50
+----------------------- 
+
+#**************************
+# catg 6 - Holz
+#**************************
+#
+# Bretter 52
+#
+obj=good
+name=Bretter
+metric= fm
+weight_per_unit=550
+catg=6
+value=75
+#=0,25
+speed_bonus=0
+MapColor=69
+-----------------------
+#
+# Nutzholz 53
+#
+obj=good
+name=Holz
+metric= fm
+weight_per_unit=520
+catg=6
+value=36
+#=0,1
+speed_bonus=0
+MapColor=66
+-----------------------
+#**************************
+# catg 7 - Landw. Gueter
+#**************************
+#
+# Flachs 54
+#
+obj=good
+name=Flachs
+metric= Tonnen
+weight_per_unit=500
+catg=7
+value=45
+#=0,15
+speed_bonus=0
+MapColor=136
+-----------------------
+#
+#
+# Gerste 55
+
+obj=good
+name=Gerste
+metric= Tonnen
+weight_per_unit=680
+catg=7
+value=36
+#=0,1
+speed_bonus=0
+MapColor=47
+----------------------- 
+#
+# Hopfen 56
+
+obj=good
+name=Hopfen
+metric= Tonnen
+weight_per_unit=500
+catg=7
+value=60
+#=0,2
+speed_bonus=0
+MapColor=166
+----------------------- 
+#
+# Mandeln 57
+#
+obj=good
+name=Mandeln
+catg=7
+metric= Sack
+weight_per_unit=40
+value=60
+speed_bonus=0
+MapColor=230
+----------------------
+#
+# Trauben 58
+#
+obj=good
+name=Trauben
+metric= Tonnen
+weight_per_unit=1000
+catg=7
+value=60
+#=0,2
+speed_bonus=0
+MapColor=75
+----------------------- 
+#
+# Weizen 59
+#
+obj=good
+name=Weizen
+metric= Tonnen
+weight_per_unit=680
+catg=7
+value=36
+#=0,1
+speed_bonus=0
+MapColor=140
+----------------------- 
+
+#**************************
+# catg 8 - Siloware 
+#          (nicht Verpacktes)
+#**************************
+#
+# Kunststoffgranulat 60
+#
+obj=good
+name=Kunststoffgranulat
+metric= m3
+weight_per_unit=260
+catg=8
+value=75
+#=0,25
+speed_bonus=0
+MapColor=151
+----------------------- 
+#
+# Zement (unverpackt) 61
+#
+obj=good
+name=Zement_lose
+metric= m3
+weight_per_unit=1100
+catg=8
+value=60
+#=0,2
+speed_bonus=0
+MapColor=208
+----------------------- 
+#
+# Tierfutter 62
+#
+obj=good
+name=Tierfutter
+metric= m3
+weight_per_unit=850
+catg=8
+value=60
+#=0,2
+speed_bonus=0
+MapColor=87
+#----------------------- 
