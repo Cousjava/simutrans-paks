@@ -1,0 +1,37 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MercedesBenz_Atego_Kuehltransport
+copyright=RedRabbit
+intro_year=1998
+intro_month=1
+cost=4190000
+runningcost=70
+waytype=road
+speed=80
+power=125
+weight=7.0
+freight=Fleisch
+payload=13
+length=7
+smoke=Diesel
+constraint[prev][0]=none
+constraint[next][0]=Anhaenger_12t_Stueckgut
+constraint[next][1]=Anhaenger_12t_Landwirtschaft
+constraint[next][2]=Anhaenger_12t_Kuehltransport
+constraint[next][3]=Anhaenger_12t_Schuettgut
+constraint[next][4]=Anhaenger_12t_Milchtransport
+constraint[next][5]=none
+EmptyImage[S]=RR_MB_Atego_Kuehlwaren.0.1
+EmptyImage[N]=RR_MB_Atego_Kuehlwaren.0.2
+EmptyImage[E]=RR_MB_Atego_Kuehlwaren.0.3
+EmptyImage[W]=RR_MB_Atego_Kuehlwaren.0.4
+EmptyImage[SE]=RR_MB_Atego_Kuehlwaren.0.5
+EmptyImage[NW]=RR_MB_Atego_Kuehlwaren.0.6
+EmptyImage[NE]=RR_MB_Atego_Kuehlwaren.0.7
+EmptyImage[SW]=RR_MB_Atego_Kuehlwaren.0.8
+----------------------------------------------------

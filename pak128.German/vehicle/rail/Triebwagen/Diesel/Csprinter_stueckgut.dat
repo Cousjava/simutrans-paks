@@ -1,0 +1,881 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 06-08-2017
+---------------------------------
+obj=vehicle
+name=Cargosprinter_FW_Stueckgut
+copyright=pumuckl999
+intro_year=1996
+intro_month=1
+cost=22970000
+runningcost=259
+waytype=track
+freight=Buecher
+engine_type=diesel
+power=530
+gear=250
+payload=45
+speed=120
+weight=41
+length=12
+constraint[next][0]=Cargosprinter_MW_Stueckgut
+EmptyImage[S]=Csprinter_stgut.0.0
+EmptyImage[E]=Csprinter_stgut.0.1
+EmptyImage[SE]=Csprinter_stgut.0.2
+EmptyImage[SW]=Csprinter_stgut.0.3
+EmptyImage[N]=Csprinter_stgut.0.4
+EmptyImage[W]=Csprinter_stgut.0.5
+EmptyImage[NW]=Csprinter_stgut.0.6
+EmptyImage[NE]=Csprinter_stgut.0.7
+# gruen
+# Buecher
+FreightImagetype[0]=Buecher
+FreightImage[0][S]=Csprinter_stgut.1.0
+FreightImage[0][E]=Csprinter_stgut.1.1
+FreightImage[0][SE]=Csprinter_stgut.1.2
+FreightImage[0][SW]=Csprinter_stgut.1.3
+FreightImage[0][N]=Csprinter_stgut.1.4
+FreightImage[0][W]=Csprinter_stgut.1.5
+FreightImage[0][NW]=Csprinter_stgut.1.6
+FreightImage[0][NE]=Csprinter_stgut.1.7
+# Kameras
+FreightImagetype[1]=Kameras
+FreightImage[1][S]=Csprinter_stgut.1.0
+FreightImage[1][E]=Csprinter_stgut.1.1
+FreightImage[1][SE]=Csprinter_stgut.1.2
+FreightImage[1][SW]=Csprinter_stgut.1.3
+FreightImage[1][N]=Csprinter_stgut.1.4
+FreightImage[1][W]=Csprinter_stgut.1.5
+FreightImage[1][NW]=Csprinter_stgut.1.6
+FreightImage[1][NE]=Csprinter_stgut.1.7
+# Papier
+FreightImagetype[2]=Papier
+FreightImage[2][S]=Csprinter_stgut.1.0
+FreightImage[2][E]=Csprinter_stgut.1.1
+FreightImage[2][SE]=Csprinter_stgut.1.2
+FreightImage[2][SW]=Csprinter_stgut.1.3
+FreightImage[2][N]=Csprinter_stgut.1.4
+FreightImage[2][W]=Csprinter_stgut.1.5
+FreightImage[2][NW]=Csprinter_stgut.1.6
+FreightImage[2][NE]=Csprinter_stgut.1.7
+# Textilien
+FreightImagetype[3]=Textilien
+FreightImage[3][S]=Csprinter_stgut.1.0
+FreightImage[3][E]=Csprinter_stgut.1.1
+FreightImage[3][SE]=Csprinter_stgut.1.2
+FreightImage[3][SW]=Csprinter_stgut.1.3
+FreightImage[3][N]=Csprinter_stgut.1.4
+FreightImage[3][W]=Csprinter_stgut.1.5
+FreightImage[3][NW]=Csprinter_stgut.1.6
+FreightImage[3][NE]=Csprinter_stgut.1.7
+# Wafer
+FreightImagetype[4]=Wafer
+FreightImage[4][S]=Csprinter_stgut.1.0
+FreightImage[4][E]=Csprinter_stgut.1.1
+FreightImage[4][SE]=Csprinter_stgut.1.2
+FreightImage[4][SW]=Csprinter_stgut.1.3
+FreightImage[4][N]=Csprinter_stgut.1.4
+FreightImage[4][W]=Csprinter_stgut.1.5
+FreightImage[4][NW]=Csprinter_stgut.1.6
+FreightImage[4][NE]=Csprinter_stgut.1.7
+# hellblau
+# Chemikalien 
+FreightImagetype[5]=Chemikalien
+FreightImage[5][S]=Csprinter_stgut.2.0
+FreightImage[5][E]=Csprinter_stgut.2.1
+FreightImage[5][SE]=Csprinter_stgut.2.2
+FreightImage[5][SW]=Csprinter_stgut.2.3
+FreightImage[5][N]=Csprinter_stgut.2.4
+FreightImage[5][W]=Csprinter_stgut.2.5
+FreightImage[5][NW]=Csprinter_stgut.2.6
+FreightImage[5][NE]=Csprinter_stgut.2.7
+# Medikamente 
+FreightImagetype[6]=Medikamente
+FreightImage[6][S]=Csprinter_stgut.2.0
+FreightImage[6][E]=Csprinter_stgut.2.1
+FreightImage[6][SE]=Csprinter_stgut.2.2
+FreightImage[6][SW]=Csprinter_stgut.2.3
+FreightImage[6][N]=Csprinter_stgut.2.4
+FreightImage[6][W]=Csprinter_stgut.2.5
+FreightImage[6][NW]=Csprinter_stgut.2.6
+FreightImage[6][NE]=Csprinter_stgut.2.7
+# rostbraun
+# Farben
+FreightImagetype[7]=Farben
+FreightImage[7][S]=Csprinter_stgut.3.0
+FreightImage[7][E]=Csprinter_stgut.3.1
+FreightImage[7][SE]=Csprinter_stgut.3.2
+FreightImage[7][SW]=Csprinter_stgut.3.3
+FreightImage[7][N]=Csprinter_stgut.3.4
+FreightImage[7][W]=Csprinter_stgut.3.5
+FreightImage[7][NW]=Csprinter_stgut.3.6
+FreightImage[7][NE]=Csprinter_stgut.3.7
+# Plastik
+FreightImagetype[8]=Plastik
+FreightImage[8][S]=Csprinter_stgut.3.0
+FreightImage[8][E]=Csprinter_stgut.3.1
+FreightImage[8][SE]=Csprinter_stgut.3.2
+FreightImage[8][SW]=Csprinter_stgut.3.3
+FreightImage[8][N]=Csprinter_stgut.3.4
+FreightImage[8][W]=Csprinter_stgut.3.5
+FreightImage[8][NW]=Csprinter_stgut.3.6
+FreightImage[8][NE]=Csprinter_stgut.3.7
+# blau
+# Maschinen
+FreightImagetype[9]=Maschinen
+FreightImage[9][S]=Csprinter_stgut.4.0
+FreightImage[9][E]=Csprinter_stgut.4.1
+FreightImage[9][SE]=Csprinter_stgut.4.2
+FreightImage[9][SW]=Csprinter_stgut.4.3
+FreightImage[9][N]=Csprinter_stgut.4.4
+FreightImage[9][W]=Csprinter_stgut.4.5
+FreightImage[9][NW]=Csprinter_stgut.4.6
+FreightImage[9][NE]=Csprinter_stgut.4.7
+# Computer
+FreightImagetype[10]=Computer
+FreightImage[10][S]=Csprinter_stgut.4.0
+FreightImage[10][E]=Csprinter_stgut.4.1
+FreightImage[10][SE]=Csprinter_stgut.4.2
+FreightImage[10][SW]=Csprinter_stgut.4.3
+FreightImage[10][N]=Csprinter_stgut.4.4
+FreightImage[10][W]=Csprinter_stgut.4.5
+FreightImage[10][NW]=Csprinter_stgut.4.6
+FreightImage[10][NE]=Csprinter_stgut.4.7
+# gelb
+# Backwaren
+FreightImagetype[11]=Backwaren
+FreightImage[11][S]=Csprinter_stgut.5.0
+FreightImage[11][E]=Csprinter_stgut.5.1
+FreightImage[11][SE]=Csprinter_stgut.5.2
+FreightImage[11][SW]=Csprinter_stgut.5.3
+FreightImage[11][N]=Csprinter_stgut.5.4
+FreightImage[11][W]=Csprinter_stgut.5.5
+FreightImage[11][NW]=Csprinter_stgut.5.6
+FreightImage[11][NE]=Csprinter_stgut.5.7
+# Bier
+FreightImagetype[12]=Bier
+FreightImage[12][S]=Csprinter_stgut.5.0
+FreightImage[12][E]=Csprinter_stgut.5.1
+FreightImage[12][SE]=Csprinter_stgut.5.2
+FreightImage[12][SW]=Csprinter_stgut.5.3
+FreightImage[12][N]=Csprinter_stgut.5.4
+FreightImage[12][W]=Csprinter_stgut.5.5
+FreightImage[12][NW]=Csprinter_stgut.5.6
+FreightImage[12][NE]=Csprinter_stgut.5.7
+# Konserven
+FreightImagetype[13]=Dosenessen
+FreightImage[13][S]=Csprinter_stgut.5.0
+FreightImage[13][E]=Csprinter_stgut.5.1
+FreightImage[13][SE]=Csprinter_stgut.5.2
+FreightImage[13][SW]=Csprinter_stgut.5.3
+FreightImage[13][N]=Csprinter_stgut.5.4
+FreightImage[13][W]=Csprinter_stgut.5.5
+FreightImage[13][NW]=Csprinter_stgut.5.6
+FreightImage[13][NE]=Csprinter_stgut.5.7
+# Eier
+FreightImagetype[14]=Eier
+FreightImage[14][S]=Csprinter_stgut.5.0
+FreightImage[14][E]=Csprinter_stgut.5.1
+FreightImage[14][SE]=Csprinter_stgut.5.2
+FreightImage[14][SW]=Csprinter_stgut.5.3
+FreightImage[14][N]=Csprinter_stgut.5.4
+FreightImage[14][W]=Csprinter_stgut.5.5
+FreightImage[14][NW]=Csprinter_stgut.5.6
+FreightImage[14][NE]=Csprinter_stgut.5.7
+# Marzipan
+FreightImagetype[15]=Marzipan
+FreightImage[15][S]=Csprinter_stgut.5.0
+FreightImage[15][E]=Csprinter_stgut.5.1
+FreightImage[15][SE]=Csprinter_stgut.5.2
+FreightImage[15][SW]=Csprinter_stgut.5.3
+FreightImage[15][N]=Csprinter_stgut.5.4
+FreightImage[15][W]=Csprinter_stgut.5.5
+FreightImage[15][NW]=Csprinter_stgut.5.6
+FreightImage[15][NE]=Csprinter_stgut.5.7
+# Mehl
+FreightImagetype[16]=Mehl
+FreightImage[16][S]=Csprinter_stgut.5.0
+FreightImage[16][E]=Csprinter_stgut.5.1
+FreightImage[16][SE]=Csprinter_stgut.5.2
+FreightImage[16][SW]=Csprinter_stgut.5.3
+FreightImage[16][N]=Csprinter_stgut.5.4
+FreightImage[16][W]=Csprinter_stgut.5.5
+FreightImage[16][NW]=Csprinter_stgut.5.6
+FreightImage[16][NE]=Csprinter_stgut.5.7
+# Obst
+FreightImagetype[17]=Obst
+FreightImage[17][S]=Csprinter_stgut.5.0
+FreightImage[17][E]=Csprinter_stgut.5.1
+FreightImage[17][SE]=Csprinter_stgut.5.2
+FreightImage[17][SW]=Csprinter_stgut.5.3
+FreightImage[17][N]=Csprinter_stgut.5.4
+FreightImage[17][W]=Csprinter_stgut.5.5
+FreightImage[17][NW]=Csprinter_stgut.5.6
+FreightImage[17][NE]=Csprinter_stgut.5.7
+# Suedfruechte
+FreightImagetype[18]=Suedfruechte
+FreightImage[18][S]=Csprinter_stgut.5.0
+FreightImage[18][E]=Csprinter_stgut.5.1
+FreightImage[18][SE]=Csprinter_stgut.5.2
+FreightImage[18][SW]=Csprinter_stgut.5.3
+FreightImage[18][N]=Csprinter_stgut.5.4
+FreightImage[18][W]=Csprinter_stgut.5.5
+FreightImage[18][NW]=Csprinter_stgut.5.6
+FreightImage[18][NE]=Csprinter_stgut.5.7
+# Wein
+FreightImagetype[19]=Wein
+FreightImage[19][S]=Csprinter_stgut.5.0
+FreightImage[19][E]=Csprinter_stgut.5.1
+FreightImage[19][SE]=Csprinter_stgut.5.2
+FreightImage[19][SW]=Csprinter_stgut.5.3
+FreightImage[19][N]=Csprinter_stgut.5.4
+FreightImage[19][W]=Csprinter_stgut.5.5
+FreightImage[19][NW]=Csprinter_stgut.5.6
+FreightImage[19][NE]=Csprinter_stgut.5.7
+# Wolle
+FreightImagetype[20]=Wolle
+FreightImage[20][S]=Csprinter_stgut.5.0
+FreightImage[20][E]=Csprinter_stgut.5.1
+FreightImage[20][SE]=Csprinter_stgut.5.2
+FreightImage[20][SW]=Csprinter_stgut.5.3
+FreightImage[20][N]=Csprinter_stgut.5.4
+FreightImage[20][W]=Csprinter_stgut.5.5
+FreightImage[20][NW]=Csprinter_stgut.5.6
+FreightImage[20][NE]=Csprinter_stgut.5.7
+# Zucker
+FreightImagetype[21]=Zucker
+FreightImage[21][S]=Csprinter_stgut.5.0
+FreightImage[21][E]=Csprinter_stgut.5.1
+FreightImage[21][SE]=Csprinter_stgut.5.2
+FreightImage[21][SW]=Csprinter_stgut.5.3
+FreightImage[21][N]=Csprinter_stgut.5.4
+FreightImage[21][W]=Csprinter_stgut.5.5
+FreightImage[21][NW]=Csprinter_stgut.5.6
+FreightImage[21][NE]=Csprinter_stgut.5.7
+# lila
+# Betonfertigteile
+FreightImagetype[22]=Betonfertigteile
+FreightImage[22][S]=Csprinter_stgut.6.0
+FreightImage[22][E]=Csprinter_stgut.6.1
+FreightImage[22][SE]=Csprinter_stgut.6.2
+FreightImage[22][SW]=Csprinter_stgut.6.3
+FreightImage[22][N]=Csprinter_stgut.6.4
+FreightImage[22][W]=Csprinter_stgut.6.5
+FreightImage[22][NW]=Csprinter_stgut.6.6
+FreightImage[22][NE]=Csprinter_stgut.6.7
+# Glas
+FreightImagetype[23]=Glas
+FreightImage[23][S]=Csprinter_stgut.6.0
+FreightImage[23][E]=Csprinter_stgut.6.1
+FreightImage[23][SE]=Csprinter_stgut.6.2
+FreightImage[23][SW]=Csprinter_stgut.6.3
+FreightImage[23][N]=Csprinter_stgut.6.4
+FreightImage[23][W]=Csprinter_stgut.6.5
+FreightImage[23][NW]=Csprinter_stgut.6.6
+FreightImage[23][NE]=Csprinter_stgut.6.7
+# Moebel
+FreightImagetype[24]=Moebel
+FreightImage[24][S]=Csprinter_stgut.6.0
+FreightImage[24][E]=Csprinter_stgut.6.1
+FreightImage[24][SE]=Csprinter_stgut.6.2
+FreightImage[24][SW]=Csprinter_stgut.6.3
+FreightImage[24][N]=Csprinter_stgut.6.4
+FreightImage[24][W]=Csprinter_stgut.6.5
+FreightImage[24][NW]=Csprinter_stgut.6.6
+FreightImage[24][NE]=Csprinter_stgut.6.7
+# Zement
+FreightImagetype[25]=Zement
+FreightImage[25][S]=Csprinter_stgut.6.0
+FreightImage[25][E]=Csprinter_stgut.6.1
+FreightImage[25][SE]=Csprinter_stgut.6.2
+FreightImage[25][SW]=Csprinter_stgut.6.3
+FreightImage[25][N]=Csprinter_stgut.6.4
+FreightImage[25][W]=Csprinter_stgut.6.5
+FreightImage[25][NW]=Csprinter_stgut.6.6
+FreightImage[25][NE]=Csprinter_stgut.6.7
+---------------------------------------
+obj=vehicle
+name=Cargosprinter_MW_Stueckgut
+copyright=pumuckl999
+intro_year=1996
+intro_month=1
+cost=16320000
+runningcost=231
+waytype=track
+freight=Buecher
+payload=45
+speed=120
+weight=12
+length=10
+constraint[prev][0]=Cargosprinter_FW_Stueckgut
+constraint[prev][1]=Cargosprinter_MW_Stueckgut
+constraint[next][0]=Cargosprinter_MW_Stueckgut
+constraint[next][1]=Cargosprinter_EW_Stueckgut
+EmptyImage[S]=Csprinter_Wagen_stgut.0.0
+EmptyImage[E]=Csprinter_Wagen_stgut.0.1
+EmptyImage[SE]=Csprinter_Wagen_stgut.0.2
+EmptyImage[SW]=Csprinter_Wagen_stgut.0.3
+EmptyImage[N]=Csprinter_Wagen_stgut.0.4
+EmptyImage[W]=Csprinter_Wagen_stgut.0.5
+EmptyImage[NW]=Csprinter_Wagen_stgut.0.6
+EmptyImage[NE]=Csprinter_Wagen_stgut.0.7
+# gruen
+# Buecher
+FreightImagetype[0]=Buecher
+FreightImage[0][S]=Csprinter_Wagen_stgut.1.0
+FreightImage[0][E]=Csprinter_Wagen_stgut.1.1
+FreightImage[0][SE]=Csprinter_Wagen_stgut.1.2
+FreightImage[0][SW]=Csprinter_Wagen_stgut.1.3
+FreightImage[0][N]=Csprinter_Wagen_stgut.1.4
+FreightImage[0][W]=Csprinter_Wagen_stgut.1.5
+FreightImage[0][NW]=Csprinter_Wagen_stgut.1.6
+FreightImage[0][NE]=Csprinter_Wagen_stgut.1.7
+# Kameras
+FreightImagetype[1]=Kameras
+FreightImage[1][S]=Csprinter_Wagen_stgut.1.0
+FreightImage[1][E]=Csprinter_Wagen_stgut.1.1
+FreightImage[1][SE]=Csprinter_Wagen_stgut.1.2
+FreightImage[1][SW]=Csprinter_Wagen_stgut.1.3
+FreightImage[1][N]=Csprinter_Wagen_stgut.1.4
+FreightImage[1][W]=Csprinter_Wagen_stgut.1.5
+FreightImage[1][NW]=Csprinter_Wagen_stgut.1.6
+FreightImage[1][NE]=Csprinter_Wagen_stgut.1.7
+# Papier
+FreightImagetype[2]=Papier
+FreightImage[2][S]=Csprinter_Wagen_stgut.1.0
+FreightImage[2][E]=Csprinter_Wagen_stgut.1.1
+FreightImage[2][SE]=Csprinter_Wagen_stgut.1.2
+FreightImage[2][SW]=Csprinter_Wagen_stgut.1.3
+FreightImage[2][N]=Csprinter_Wagen_stgut.1.4
+FreightImage[2][W]=Csprinter_Wagen_stgut.1.5
+FreightImage[2][NW]=Csprinter_Wagen_stgut.1.6
+FreightImage[2][NE]=Csprinter_Wagen_stgut.1.7
+# Textilien
+FreightImagetype[3]=Textilien
+FreightImage[3][S]=Csprinter_Wagen_stgut.1.0
+FreightImage[3][E]=Csprinter_Wagen_stgut.1.1
+FreightImage[3][SE]=Csprinter_Wagen_stgut.1.2
+FreightImage[3][SW]=Csprinter_Wagen_stgut.1.3
+FreightImage[3][N]=Csprinter_Wagen_stgut.1.4
+FreightImage[3][W]=Csprinter_Wagen_stgut.1.5
+FreightImage[3][NW]=Csprinter_Wagen_stgut.1.6
+FreightImage[3][NE]=Csprinter_Wagen_stgut.1.7
+# Wafer
+FreightImagetype[4]=Wafer
+FreightImage[4][S]=Csprinter_Wagen_stgut.1.0
+FreightImage[4][E]=Csprinter_Wagen_stgut.1.1
+FreightImage[4][SE]=Csprinter_Wagen_stgut.1.2
+FreightImage[4][SW]=Csprinter_Wagen_stgut.1.3
+FreightImage[4][N]=Csprinter_Wagen_stgut.1.4
+FreightImage[4][W]=Csprinter_Wagen_stgut.1.5
+FreightImage[4][NW]=Csprinter_Wagen_stgut.1.6
+FreightImage[4][NE]=Csprinter_Wagen_stgut.1.7
+# hellblau
+# Chemikalien 
+FreightImagetype[5]=Chemikalien
+FreightImage[5][S]=Csprinter_Wagen_stgut.2.0
+FreightImage[5][E]=Csprinter_Wagen_stgut.2.1
+FreightImage[5][SE]=Csprinter_Wagen_stgut.2.2
+FreightImage[5][SW]=Csprinter_Wagen_stgut.2.3
+FreightImage[5][N]=Csprinter_Wagen_stgut.2.4
+FreightImage[5][W]=Csprinter_Wagen_stgut.2.5
+FreightImage[5][NW]=Csprinter_Wagen_stgut.2.6
+FreightImage[5][NE]=Csprinter_Wagen_stgut.2.7
+# Medikamente 
+FreightImagetype[6]=Medikamente
+FreightImage[6][S]=Csprinter_Wagen_stgut.2.0
+FreightImage[6][E]=Csprinter_Wagen_stgut.2.1
+FreightImage[6][SE]=Csprinter_Wagen_stgut.2.2
+FreightImage[6][SW]=Csprinter_Wagen_stgut.2.3
+FreightImage[6][N]=Csprinter_Wagen_stgut.2.4
+FreightImage[6][W]=Csprinter_Wagen_stgut.2.5
+FreightImage[6][NW]=Csprinter_Wagen_stgut.2.6
+FreightImage[6][NE]=Csprinter_Wagen_stgut.2.7
+# rostbraun
+# Farbe
+FreightImagetype[7]=Farbe
+FreightImage[7][S]=Csprinter_Wagen_stgut.3.0
+FreightImage[7][E]=Csprinter_Wagen_stgut.3.1
+FreightImage[7][SE]=Csprinter_Wagen_stgut.3.2
+FreightImage[7][SW]=Csprinter_Wagen_stgut.3.3
+FreightImage[7][N]=Csprinter_Wagen_stgut.3.4
+FreightImage[7][W]=Csprinter_Wagen_stgut.3.5
+FreightImage[7][NW]=Csprinter_Wagen_stgut.3.6
+FreightImage[7][NE]=Csprinter_Wagen_stgut.3.7
+# Plastik
+FreightImagetype[8]=Plastik
+FreightImage[8][S]=Csprinter_Wagen_stgut.3.0
+FreightImage[8][E]=Csprinter_Wagen_stgut.3.1
+FreightImage[8][SE]=Csprinter_Wagen_stgut.3.2
+FreightImage[8][SW]=Csprinter_Wagen_stgut.3.3
+FreightImage[8][N]=Csprinter_Wagen_stgut.3.4
+FreightImage[8][W]=Csprinter_Wagen_stgut.3.5
+FreightImage[8][NW]=Csprinter_Wagen_stgut.3.6
+FreightImage[8][NE]=Csprinter_Wagen_stgut.3.7
+# blau
+# Maschinen
+FreightImagetype[9]=Maschinen
+FreightImage[9][S]=Csprinter_Wagen_stgut.4.0
+FreightImage[9][E]=Csprinter_Wagen_stgut.4.1
+FreightImage[9][SE]=Csprinter_Wagen_stgut.4.2
+FreightImage[9][SW]=Csprinter_Wagen_stgut.4.3
+FreightImage[9][N]=Csprinter_Wagen_stgut.4.4
+FreightImage[9][W]=Csprinter_Wagen_stgut.4.5
+FreightImage[9][NW]=Csprinter_Wagen_stgut.4.6
+FreightImage[9][NE]=Csprinter_Wagen_stgut.4.7
+# Computer
+FreightImagetype[10]=Computer
+FreightImage[10][S]=Csprinter_Wagen_stgut.4.0
+FreightImage[10][E]=Csprinter_Wagen_stgut.4.1
+FreightImage[10][SE]=Csprinter_Wagen_stgut.4.2
+FreightImage[10][SW]=Csprinter_Wagen_stgut.4.3
+FreightImage[10][N]=Csprinter_Wagen_stgut.4.4
+FreightImage[10][W]=Csprinter_Wagen_stgut.4.5
+FreightImage[10][NW]=Csprinter_Wagen_stgut.4.6
+FreightImage[10][NE]=Csprinter_Wagen_stgut.4.7
+# gelb
+# Backwaren
+FreightImagetype[11]=Backwaren
+FreightImage[11][S]=Csprinter_Wagen_stgut.5.0
+FreightImage[11][E]=Csprinter_Wagen_stgut.5.1
+FreightImage[11][SE]=Csprinter_Wagen_stgut.5.2
+FreightImage[11][SW]=Csprinter_Wagen_stgut.5.3
+FreightImage[11][N]=Csprinter_Wagen_stgut.5.4
+FreightImage[11][W]=Csprinter_Wagen_stgut.5.5
+FreightImage[11][NW]=Csprinter_Wagen_stgut.5.6
+FreightImage[11][NE]=Csprinter_Wagen_stgut.5.7
+# Bier
+FreightImagetype[12]=Bier
+FreightImage[12][S]=Csprinter_Wagen_stgut.5.0
+FreightImage[12][E]=Csprinter_Wagen_stgut.5.1
+FreightImage[12][SE]=Csprinter_Wagen_stgut.5.2
+FreightImage[12][SW]=Csprinter_Wagen_stgut.5.3
+FreightImage[12][N]=Csprinter_Wagen_stgut.5.4
+FreightImage[12][W]=Csprinter_Wagen_stgut.5.5
+FreightImage[12][NW]=Csprinter_Wagen_stgut.5.6
+FreightImage[12][NE]=Csprinter_Wagen_stgut.5.7
+# Konserven
+FreightImagetype[13]=Dosenessen
+FreightImage[13][S]=Csprinter_Wagen_stgut.5.0
+FreightImage[13][E]=Csprinter_Wagen_stgut.5.1
+FreightImage[13][SE]=Csprinter_Wagen_stgut.5.2
+FreightImage[13][SW]=Csprinter_Wagen_stgut.5.3
+FreightImage[13][N]=Csprinter_Wagen_stgut.5.4
+FreightImage[13][W]=Csprinter_Wagen_stgut.5.5
+FreightImage[13][NW]=Csprinter_Wagen_stgut.5.6
+FreightImage[13][NE]=Csprinter_Wagen_stgut.5.7
+# Eier
+FreightImagetype[14]=Eier
+FreightImage[14][S]=Csprinter_Wagen_stgut.5.0
+FreightImage[14][E]=Csprinter_Wagen_stgut.5.1
+FreightImage[14][SE]=Csprinter_Wagen_stgut.5.2
+FreightImage[14][SW]=Csprinter_Wagen_stgut.5.3
+FreightImage[14][N]=Csprinter_Wagen_stgut.5.4
+FreightImage[14][W]=Csprinter_Wagen_stgut.5.5
+FreightImage[14][NW]=Csprinter_Wagen_stgut.5.6
+FreightImage[14][NE]=Csprinter_Wagen_stgut.5.7
+# Marzipan
+FreightImagetype[15]=Marzipan
+FreightImage[15][S]=Csprinter_Wagen_stgut.5.0
+FreightImage[15][E]=Csprinter_Wagen_stgut.5.1
+FreightImage[15][SE]=Csprinter_Wagen_stgut.5.2
+FreightImage[15][SW]=Csprinter_Wagen_stgut.5.3
+FreightImage[15][N]=Csprinter_Wagen_stgut.5.4
+FreightImage[15][W]=Csprinter_Wagen_stgut.5.5
+FreightImage[15][NW]=Csprinter_Wagen_stgut.5.6
+FreightImage[15][NE]=Csprinter_Wagen_stgut.5.7
+# Mehl
+FreightImagetype[16]=Mehl
+FreightImage[16][S]=Csprinter_Wagen_stgut.5.0
+FreightImage[16][E]=Csprinter_Wagen_stgut.5.1
+FreightImage[16][SE]=Csprinter_Wagen_stgut.5.2
+FreightImage[16][SW]=Csprinter_Wagen_stgut.5.3
+FreightImage[16][N]=Csprinter_Wagen_stgut.5.4
+FreightImage[16][W]=Csprinter_Wagen_stgut.5.5
+FreightImage[16][NW]=Csprinter_Wagen_stgut.5.6
+FreightImage[16][NE]=Csprinter_Wagen_stgut.5.7
+# Obst
+FreightImagetype[17]=Obst
+FreightImage[17][S]=Csprinter_Wagen_stgut.5.0
+FreightImage[17][E]=Csprinter_Wagen_stgut.5.1
+FreightImage[17][SE]=Csprinter_Wagen_stgut.5.2
+FreightImage[17][SW]=Csprinter_Wagen_stgut.5.3
+FreightImage[17][N]=Csprinter_Wagen_stgut.5.4
+FreightImage[17][W]=Csprinter_Wagen_stgut.5.5
+FreightImage[17][NW]=Csprinter_Wagen_stgut.5.6
+FreightImage[17][NE]=Csprinter_Wagen_stgut.5.7
+# Suedfruechte
+FreightImagetype[18]=Suedfruechte
+FreightImage[18][S]=Csprinter_Wagen_stgut.5.0
+FreightImage[18][E]=Csprinter_Wagen_stgut.5.1
+FreightImage[18][SE]=Csprinter_Wagen_stgut.5.2
+FreightImage[18][SW]=Csprinter_Wagen_stgut.5.3
+FreightImage[18][N]=Csprinter_Wagen_stgut.5.4
+FreightImage[18][W]=Csprinter_Wagen_stgut.5.5
+FreightImage[18][NW]=Csprinter_Wagen_stgut.5.6
+FreightImage[18][NE]=Csprinter_Wagen_stgut.5.7
+# Wein
+FreightImagetype[19]=Wein
+FreightImage[19][S]=Csprinter_Wagen_stgut.5.0
+FreightImage[19][E]=Csprinter_Wagen_stgut.5.1
+FreightImage[19][SE]=Csprinter_Wagen_stgut.5.2
+FreightImage[19][SW]=Csprinter_Wagen_stgut.5.3
+FreightImage[19][N]=Csprinter_Wagen_stgut.5.4
+FreightImage[19][W]=Csprinter_Wagen_stgut.5.5
+FreightImage[19][NW]=Csprinter_Wagen_stgut.5.6
+FreightImage[19][NE]=Csprinter_Wagen_stgut.5.7
+# Wolle
+FreightImagetype[20]=Wolle
+FreightImage[20][S]=Csprinter_Wagen_stgut.5.0
+FreightImage[20][E]=Csprinter_Wagen_stgut.5.1
+FreightImage[20][SE]=Csprinter_Wagen_stgut.5.2
+FreightImage[20][SW]=Csprinter_Wagen_stgut.5.3
+FreightImage[20][N]=Csprinter_Wagen_stgut.5.4
+FreightImage[20][W]=Csprinter_Wagen_stgut.5.5
+FreightImage[20][NW]=Csprinter_Wagen_stgut.5.6
+FreightImage[20][NE]=Csprinter_Wagen_stgut.5.7
+# Zucker
+FreightImagetype[21]=Zucker
+FreightImage[21][S]=Csprinter_Wagen_stgut.5.0
+FreightImage[21][E]=Csprinter_Wagen_stgut.5.1
+FreightImage[21][SE]=Csprinter_Wagen_stgut.5.2
+FreightImage[21][SW]=Csprinter_Wagen_stgut.5.3
+FreightImage[21][N]=Csprinter_Wagen_stgut.5.4
+FreightImage[21][W]=Csprinter_Wagen_stgut.5.5
+FreightImage[21][NW]=Csprinter_Wagen_stgut.5.6
+FreightImage[21][NE]=Csprinter_Wagen_stgut.5.7
+# lila
+# Betonfertigteile
+FreightImagetype[22]=Betonfertigteile
+FreightImage[22][S]=Csprinter_Wagen_stgut.6.0
+FreightImage[22][E]=Csprinter_Wagen_stgut.6.1
+FreightImage[22][SE]=Csprinter_Wagen_stgut.6.2
+FreightImage[22][SW]=Csprinter_Wagen_stgut.6.3
+FreightImage[22][N]=Csprinter_Wagen_stgut.6.4
+FreightImage[22][W]=Csprinter_Wagen_stgut.6.5
+FreightImage[22][NW]=Csprinter_Wagen_stgut.6.6
+FreightImage[22][NE]=Csprinter_Wagen_stgut.6.7
+# Glas
+FreightImagetype[23]=Glas
+FreightImage[23][S]=Csprinter_Wagen_stgut.6.0
+FreightImage[23][E]=Csprinter_Wagen_stgut.6.1
+FreightImage[23][SE]=Csprinter_Wagen_stgut.6.2
+FreightImage[23][SW]=Csprinter_Wagen_stgut.6.3
+FreightImage[23][N]=Csprinter_Wagen_stgut.6.4
+FreightImage[23][W]=Csprinter_Wagen_stgut.6.5
+FreightImage[23][NW]=Csprinter_Wagen_stgut.6.6
+FreightImage[23][NE]=Csprinter_Wagen_stgut.6.7
+# Moebel
+FreightImagetype[24]=Moebel
+FreightImage[24][S]=Csprinter_Wagen_stgut.6.0
+FreightImage[24][E]=Csprinter_Wagen_stgut.6.1
+FreightImage[24][SE]=Csprinter_Wagen_stgut.6.2
+FreightImage[24][SW]=Csprinter_Wagen_stgut.6.3
+FreightImage[24][N]=Csprinter_Wagen_stgut.6.4
+FreightImage[24][W]=Csprinter_Wagen_stgut.6.5
+FreightImage[24][NW]=Csprinter_Wagen_stgut.6.6
+FreightImage[24][NE]=Csprinter_Wagen_stgut.6.7
+# Zement
+FreightImagetype[25]=Zement
+FreightImage[25][S]=Csprinter_Wagen_stgut.6.0
+FreightImage[25][E]=Csprinter_Wagen_stgut.6.1
+FreightImage[25][SE]=Csprinter_Wagen_stgut.6.2
+FreightImage[25][SW]=Csprinter_Wagen_stgut.6.3
+FreightImage[25][N]=Csprinter_Wagen_stgut.6.4
+FreightImage[25][W]=Csprinter_Wagen_stgut.6.5
+FreightImage[25][NW]=Csprinter_Wagen_stgut.6.6
+FreightImage[25][NE]=Csprinter_Wagen_stgut.6.7
+---------------------------------------
+obj=vehicle
+name=Cargosprinter_EW_Stueckgut
+copyright=pumuckl999
+intro_year=1996
+intro_month=1
+cost=22970000
+runningcost=259
+waytype=track
+freight=Buecher
+engine_type=diesel
+power=530
+gear=250
+payload=45
+speed=120
+weight=41
+length=12
+constraint[prev][0]=Cargosprinter_MW_Stueckgut
+EmptyImage[S]=Csprinter_stgut.0.4,8,-4
+EmptyImage[E]=Csprinter_stgut.0.5,-4,-2
+EmptyImage[SE]=Csprinter_stgut.0.6,0,-1
+EmptyImage[SW]=Csprinter_stgut.0.7,10,0
+EmptyImage[N]=Csprinter_stgut.0.0,-11,6
+EmptyImage[W]=Csprinter_stgut.0.1,6,3
+EmptyImage[NW]=Csprinter_stgut.0.2,0,6
+EmptyImage[NE]=Csprinter_stgut.0.3,-10,0
+# gruen
+# Buecher
+FreightImagetype[0]=Buecher
+FreightImage[0][S]=Csprinter_stgut.1.4,8,-4
+FreightImage[0][E]=Csprinter_stgut.1.5,-4,-2
+FreightImage[0][SE]=Csprinter_stgut.1.6,0,-1
+FreightImage[0][SW]=Csprinter_stgut.1.7,10,0
+FreightImage[0][N]=Csprinter_stgut.1.0,-11,6
+FreightImage[0][W]=Csprinter_stgut.1.1,6,3
+FreightImage[0][NW]=Csprinter_stgut.1.2,0,6
+FreightImage[0][NE]=Csprinter_stgut.1.3,-10,0
+# Kameras
+FreightImagetype[1]=Kameras
+FreightImage[1][S]=Csprinter_stgut.1.4,8,-4
+FreightImage[1][E]=Csprinter_stgut.1.5,-4,-2
+FreightImage[1][SE]=Csprinter_stgut.1.6,0,-1
+FreightImage[1][SW]=Csprinter_stgut.1.7,10,0
+FreightImage[1][N]=Csprinter_stgut.1.0,-11,6
+FreightImage[1][W]=Csprinter_stgut.1.1,6,3
+FreightImage[1][NW]=Csprinter_stgut.1.2,0,6
+FreightImage[1][NE]=Csprinter_stgut.1.3,-10,0
+# Papier
+FreightImagetype[2]=Papier
+FreightImage[2][S]=Csprinter_stgut.1.4,8,-4
+FreightImage[2][E]=Csprinter_stgut.1.5,-4,-2
+FreightImage[2][SE]=Csprinter_stgut.1.6,0,-1
+FreightImage[2][SW]=Csprinter_stgut.1.7,10,0
+FreightImage[2][N]=Csprinter_stgut.1.0,-11,6
+FreightImage[2][W]=Csprinter_stgut.1.1,6,3
+FreightImage[2][NW]=Csprinter_stgut.1.2,0,6
+FreightImage[2][NE]=Csprinter_stgut.1.3,-10,0
+# Textilien
+FreightImagetype[3]=Textilien
+FreightImage[3][S]=Csprinter_stgut.1.4,8,-4
+FreightImage[3][E]=Csprinter_stgut.1.5,-4,-2
+FreightImage[3][SE]=Csprinter_stgut.1.6,0,-1
+FreightImage[3][SW]=Csprinter_stgut.1.7,10,0
+FreightImage[3][N]=Csprinter_stgut.1.0,-11,6
+FreightImage[3][W]=Csprinter_stgut.1.1,6,3
+FreightImage[3][NW]=Csprinter_stgut.1.2,0,6
+FreightImage[3][NE]=Csprinter_stgut.1.3,-10,0
+# Wafer
+FreightImagetype[4]=Wafer
+FreightImage[4][S]=Csprinter_stgut.1.4,8,-4
+FreightImage[4][E]=Csprinter_stgut.1.5,-4,-2
+FreightImage[4][SE]=Csprinter_stgut.1.6,0,-1
+FreightImage[4][SW]=Csprinter_stgut.1.7,10,0
+FreightImage[4][N]=Csprinter_stgut.1.0,-11,6
+FreightImage[4][W]=Csprinter_stgut.1.1,6,3
+FreightImage[4][NW]=Csprinter_stgut.1.2,0,6
+FreightImage[4][NE]=Csprinter_stgut.1.3,-10,0
+# hellblau
+# Chemikalien 
+FreightImagetype[5]=Chemikalien
+FreightImage[5][S]=Csprinter_stgut.2.4,8,-4
+FreightImage[5][E]=Csprinter_stgut.2.5,-4,-2
+FreightImage[5][SE]=Csprinter_stgut.2.6,0,-1
+FreightImage[5][SW]=Csprinter_stgut.2.7,10,0
+FreightImage[5][N]=Csprinter_stgut.2.0,-11,6
+FreightImage[5][W]=Csprinter_stgut.2.1,6,3
+FreightImage[5][NW]=Csprinter_stgut.2.2,0,6
+FreightImage[5][NE]=Csprinter_stgut.2.3,-10,0
+# Medikamente 
+FreightImagetype[6]=Medikamente
+FreightImage[6][S]=Csprinter_stgut.2.4,8,-4
+FreightImage[6][E]=Csprinter_stgut.2.5,-4,-2
+FreightImage[6][SE]=Csprinter_stgut.2.6,0,-1
+FreightImage[6][SW]=Csprinter_stgut.2.7,10,0
+FreightImage[6][N]=Csprinter_stgut.2.0,-11,6
+FreightImage[6][W]=Csprinter_stgut.2.1,6,3
+FreightImage[6][NW]=Csprinter_stgut.2.2,0,6
+FreightImage[6][NE]=Csprinter_stgut.2.3,-10,0
+# rostbraun
+# Farbe
+FreightImagetype[7]=Farbe
+FreightImage[7][S]=Csprinter_stgut.3.4,8,-4
+FreightImage[7][E]=Csprinter_stgut.3.5,-4,-2
+FreightImage[7][SE]=Csprinter_stgut.3.6,0,-1
+FreightImage[7][SW]=Csprinter_stgut.3.7,10,0
+FreightImage[7][N]=Csprinter_stgut.3.0,-11,6
+FreightImage[7][W]=Csprinter_stgut.3.1,6,3
+FreightImage[7][NW]=Csprinter_stgut.3.2,0,6
+FreightImage[7][NE]=Csprinter_stgut.3.3,-10,0
+# Plastik
+FreightImagetype[8]=Plastik
+FreightImage[8][S]=Csprinter_stgut.3.4,8,-4
+FreightImage[8][E]=Csprinter_stgut.3.5,-4,-2
+FreightImage[8][SE]=Csprinter_stgut.3.6,0,-1
+FreightImage[8][SW]=Csprinter_stgut.3.7,10,0
+FreightImage[8][N]=Csprinter_stgut.3.0,-11,6
+FreightImage[8][W]=Csprinter_stgut.3.1,6,3
+FreightImage[8][NW]=Csprinter_stgut.3.2,0,6
+FreightImage[8][NE]=Csprinter_stgut.3.3,-10,0
+# blau
+# Maschinen
+FreightImagetype[9]=Maschinen
+FreightImage[9][S]=Csprinter_stgut.4.4,8,-4
+FreightImage[9][E]=Csprinter_stgut.4.5,-4,-2
+FreightImage[9][SE]=Csprinter_stgut.4.6,0,-1
+FreightImage[9][SW]=Csprinter_stgut.4.7,10,0
+FreightImage[9][N]=Csprinter_stgut.4.0,-11,6
+FreightImage[9][W]=Csprinter_stgut.4.1,6,3
+FreightImage[9][NW]=Csprinter_stgut.4.2,0,6
+FreightImage[9][NE]=Csprinter_stgut.4.3,-10,0
+# Computer
+FreightImagetype[10]=Computer
+FreightImage[10][S]=Csprinter_stgut.4.4,8,-4
+FreightImage[10][E]=Csprinter_stgut.4.5,-4,-2
+FreightImage[10][SE]=Csprinter_stgut.4.6,0,-1
+FreightImage[10][SW]=Csprinter_stgut.4.7,10,0
+FreightImage[10][N]=Csprinter_stgut.4.0,-11,6
+FreightImage[10][W]=Csprinter_stgut.4.1,6,3
+FreightImage[10][NW]=Csprinter_stgut.4.2,0,6
+FreightImage[10][NE]=Csprinter_stgut.4.3,-10,0
+# gelb
+# Backwaren
+FreightImagetype[11]=Backwaren
+FreightImage[11][S]=Csprinter_stgut.5.4,8,-4
+FreightImage[11][E]=Csprinter_stgut.5.5,-4,-2
+FreightImage[11][SE]=Csprinter_stgut.5.6,0,-1
+FreightImage[11][SW]=Csprinter_stgut.5.7,10,0
+FreightImage[11][N]=Csprinter_stgut.5.0,-11,6
+FreightImage[11][W]=Csprinter_stgut.5.1,6,3
+FreightImage[11][NW]=Csprinter_stgut.5.2,0,6
+FreightImage[11][NE]=Csprinter_stgut.5.3,-10,0
+# Bier
+FreightImagetype[12]=Bier
+FreightImage[12][S]=Csprinter_stgut.5.4,8,-4
+FreightImage[12][E]=Csprinter_stgut.5.5,-4,-2
+FreightImage[12][SE]=Csprinter_stgut.5.6,0,-1
+FreightImage[12][SW]=Csprinter_stgut.5.7,10,0
+FreightImage[12][N]=Csprinter_stgut.5.0,-11,6
+FreightImage[12][W]=Csprinter_stgut.5.1,6,3
+FreightImage[12][NW]=Csprinter_stgut.5.2,0,6
+FreightImage[12][NE]=Csprinter_stgut.5.3,-10,0
+# Dosenessen
+FreightImagetype[13]=Dosenessen
+FreightImage[13][S]=Csprinter_stgut.5.4,8,-4
+FreightImage[13][E]=Csprinter_stgut.5.5,-4,-2
+FreightImage[13][SE]=Csprinter_stgut.5.6,0,-1
+FreightImage[13][SW]=Csprinter_stgut.5.7,10,0
+FreightImage[13][N]=Csprinter_stgut.5.0,-11,6
+FreightImage[13][W]=Csprinter_stgut.5.1,6,3
+FreightImage[13][NW]=Csprinter_stgut.5.2,0,6
+FreightImage[13][NE]=Csprinter_stgut.5.3,-10,0
+# Eier
+FreightImagetype[14]=Eier
+FreightImage[14][S]=Csprinter_stgut.5.4,8,-4
+FreightImage[14][E]=Csprinter_stgut.5.5,-4,-2
+FreightImage[14][SE]=Csprinter_stgut.5.6,0,-1
+FreightImage[14][SW]=Csprinter_stgut.5.7,10,0
+FreightImage[14][N]=Csprinter_stgut.5.0,-11,6
+FreightImage[14][W]=Csprinter_stgut.5.1,6,3
+FreightImage[14][NW]=Csprinter_stgut.5.2,0,6
+FreightImage[14][NE]=Csprinter_stgut.5.3,-10,0
+# Marzipan
+FreightImagetype[15]=Marzipan
+FreightImage[15][S]=Csprinter_stgut.5.4,8,-4
+FreightImage[15][E]=Csprinter_stgut.5.5,-4,-2
+FreightImage[15][SE]=Csprinter_stgut.5.6,0,-1
+FreightImage[15][SW]=Csprinter_stgut.5.7,10,0
+FreightImage[15][N]=Csprinter_stgut.5.0,-11,6
+FreightImage[15][W]=Csprinter_stgut.5.1,6,3
+FreightImage[15][NW]=Csprinter_stgut.5.2,0,6
+FreightImage[15][NE]=Csprinter_stgut.5.3,-10,0
+# Mehl
+FreightImagetype[16]=Mehl
+FreightImage[16][S]=Csprinter_stgut.5.4,8,-4
+FreightImage[16][E]=Csprinter_stgut.5.5,-4,-2
+FreightImage[16][SE]=Csprinter_stgut.5.6,0,-1
+FreightImage[16][SW]=Csprinter_stgut.5.7,10,0
+FreightImage[16][N]=Csprinter_stgut.5.0,-11,6
+FreightImage[16][W]=Csprinter_stgut.5.1,6,3
+FreightImage[16][NW]=Csprinter_stgut.5.2,0,6
+FreightImage[16][NE]=Csprinter_stgut.5.3,-10,0
+# Obst
+FreightImagetype[17]=Obst
+FreightImage[17][S]=Csprinter_stgut.5.4,8,-4
+FreightImage[17][E]=Csprinter_stgut.5.5,-4,-2
+FreightImage[17][SE]=Csprinter_stgut.5.6,0,-1
+FreightImage[17][SW]=Csprinter_stgut.5.7,10,0
+FreightImage[17][N]=Csprinter_stgut.5.0,-11,6
+FreightImage[17][W]=Csprinter_stgut.5.1,6,3
+FreightImage[17][NW]=Csprinter_stgut.5.2,0,6
+FreightImage[17][NE]=Csprinter_stgut.5.3,-10,0
+# Suedfruechte
+FreightImagetype[18]=Suedfruechte
+FreightImage[18][S]=Csprinter_stgut.5.4,8,-4
+FreightImage[18][E]=Csprinter_stgut.5.5,-4,-2
+FreightImage[18][SE]=Csprinter_stgut.5.6,0,-1
+FreightImage[18][SW]=Csprinter_stgut.5.7,10,0
+FreightImage[18][N]=Csprinter_stgut.5.0,-11,6
+FreightImage[18][W]=Csprinter_stgut.5.1,6,3
+FreightImage[18][NW]=Csprinter_stgut.5.2,0,6
+FreightImage[18][NE]=Csprinter_stgut.5.3,-10,0
+# Wein
+FreightImagetype[19]=Wein
+FreightImage[19][S]=Csprinter_stgut.5.4,8,-4
+FreightImage[19][E]=Csprinter_stgut.5.5,-4,-2
+FreightImage[19][SE]=Csprinter_stgut.5.6,0,-1
+FreightImage[19][SW]=Csprinter_stgut.5.7,10,0
+FreightImage[19][N]=Csprinter_stgut.5.0,-11,6
+FreightImage[19][W]=Csprinter_stgut.5.1,6,3
+FreightImage[19][NW]=Csprinter_stgut.5.2,0,6
+FreightImage[19][NE]=Csprinter_stgut.5.3,-10,0
+# Wolle
+FreightImagetype[19]=Wolle
+FreightImage[19][S]=Csprinter_stgut.5.4,8,-4
+FreightImage[19][E]=Csprinter_stgut.5.5,-4,-2
+FreightImage[19][SE]=Csprinter_stgut.5.6,0,-1
+FreightImage[19][SW]=Csprinter_stgut.5.7,10,0
+FreightImage[19][N]=Csprinter_stgut.5.0,-11,6
+FreightImage[19][W]=Csprinter_stgut.5.1,6,3
+FreightImage[19][NW]=Csprinter_stgut.5.2,0,6
+FreightImage[19][NE]=Csprinter_stgut.5.3,-10,0
+# Zucker
+FreightImagetype[20]=Zucker
+FreightImage[20][S]=Csprinter_stgut.5.4,8,-4
+FreightImage[20][E]=Csprinter_stgut.5.5,-4,-2
+FreightImage[20][SE]=Csprinter_stgut.5.6,0,-1
+FreightImage[20][SW]=Csprinter_stgut.5.7,10,0
+FreightImage[20][N]=Csprinter_stgut.5.0,-11,6
+FreightImage[20][W]=Csprinter_stgut.5.1,6,3
+FreightImage[20][NW]=Csprinter_stgut.5.2,0,6
+FreightImage[20][NE]=Csprinter_stgut.5.3,-10,0
+# lila
+# Betonfertigteile
+FreightImagetype[21]=Betonfertigteile
+FreightImage[21][S]=Csprinter_stgut.6.4,8,-4
+FreightImage[21][E]=Csprinter_stgut.6.5,-4,-2
+FreightImage[21][SE]=Csprinter_stgut.6.6,0,-1
+FreightImage[21][SW]=Csprinter_stgut.6.7,10,0
+FreightImage[21][N]=Csprinter_stgut.6.0,-11,6
+FreightImage[21][W]=Csprinter_stgut.6.1,6,3
+FreightImage[21][NW]=Csprinter_stgut.6.2,0,6
+FreightImage[21][NE]=Csprinter_stgut.6.3,-10,0
+# Glas
+FreightImagetype[22]=Glas
+FreightImage[22][S]=Csprinter_stgut.6.4,8,-4
+FreightImage[22][E]=Csprinter_stgut.6.5,-4,-2
+FreightImage[22][SE]=Csprinter_stgut.6.6,0,-1
+FreightImage[22][SW]=Csprinter_stgut.6.7,10,0
+FreightImage[22][N]=Csprinter_stgut.6.0,-11,6
+FreightImage[22][W]=Csprinter_stgut.6.1,6,3
+FreightImage[22][NW]=Csprinter_stgut.6.2,0,6
+FreightImage[22][NE]=Csprinter_stgut.6.3,-10,0
+# Moebel
+FreightImagetype[23]=Moebel
+FreightImage[23][S]=Csprinter_stgut.6.4,8,-4
+FreightImage[23][E]=Csprinter_stgut.6.5,-4,-2
+FreightImage[23][SE]=Csprinter_stgut.6.6,0,-1
+FreightImage[23][SW]=Csprinter_stgut.6.7,10,0
+FreightImage[23][N]=Csprinter_stgut.6.0,-11,6
+FreightImage[23][W]=Csprinter_stgut.6.1,6,3
+FreightImage[23][NW]=Csprinter_stgut.6.2,0,6
+FreightImage[23][NE]=Csprinter_stgut.6.3,-10,0
+# Zement
+FreightImagetype[24]=Zement
+FreightImage[24][S]=Csprinter_stgut.6.4,8,-4
+FreightImage[24][E]=Csprinter_stgut.6.5,-4,-2
+FreightImage[24][SE]=Csprinter_stgut.6.6,0,-1
+FreightImage[24][SW]=Csprinter_stgut.6.7,10,0
+FreightImage[24][N]=Csprinter_stgut.6.0,-11,6
+FreightImage[24][W]=Csprinter_stgut.6.1,6,3
+FreightImage[24][NW]=Csprinter_stgut.6.2,0,6
+FreightImage[24][NE]=Csprinter_stgut.6.3,-10,0
+---------------------------------------

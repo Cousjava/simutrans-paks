@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
+---------------------------------
+obj=vehicle
+name=E44
+copyright=TonyBzt & The Transporter
+intro_year=1932
+intro_month=9
+retire_year=1991
+retire_month=6
+cost=20580000
+runningcost=248
+waytype=electrified_track
+power=2200
+gear=300
+speed=90
+weight=78
+length=11
+sound=-1
+EmptyImage[S]=E44.0.0
+EmptyImage[E]=E44.0.1
+EmptyImage[SE]=E44.0.2
+EmptyImage[SW]=E44.0.3
+EmptyImage[N]=E44.0.4
+EmptyImage[W]=E44.0.5
+EmptyImage[NW]=E44.0.6
+EmptyImage[NE]=E44.0.7
+-----------------------------

@@ -1,0 +1,45 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu: 06-01-2018
+---------------------------------
+obj=vehicle
+name=DS_Concordia_Vieh
+copyright=pumuckl999
+intro_year=1827
+intro_month=5
+retire_year=1840
+retire_month=12
+cost=2805000
+runningcost=311
+waytype=water
+freight=Vieh
+engine_type=steam
+power=70
+speed=15
+gear=800
+weight=240
+payload=60
+length=16
+sound=boat-horn.wav
+smoke=Steam_ship
+constraint[prev][0]=none
+constraint[next][0]=Tankschleppkahn_Geheimrat_von_Lavale
+constraint[next][1]=Holzschleppkahn_fluessige_Lebensmittel
+constraint[next][2]=Holzschleppkahn_Holz
+constraint[next][3]=Holzschleppkahn_landwirtschaftliche_Gueter
+constraint[next][4]=Holzschleppkahn_Schuettgut
+constraint[next][5]=Holzschleppkahn_Stahl
+constraint[next][6]=Holzschleppkahn_Stueckgut
+constraint[next][7]=Holzschleppkahn_Vieh
+constraint[next][8]=Holzschleppkahn_Siloware
+constraint[next][9]=none
+EmptyImage[W]=Concordia_schwarz.0.0,-70,-32
+EmptyImage[NW]=Concordia_schwarz.0.1,-63,-20
+EmptyImage[N]=Concordia_schwarz.0.2,-50,-22
+EmptyImage[NE]=Concordia_schwarz.0.3,-62,-20
+EmptyImage[E]=Concordia_schwarz.0.4,-59,-16
+EmptyImage[SE]=Concordia_schwarz.0.5,-68,-13
+EmptyImage[S]=Concordia_schwarz.0.6,-68,-24
+EmptyImage[SW]=Concordia_schwarz.0.7,-64,-28
+-------------------------------------------------------

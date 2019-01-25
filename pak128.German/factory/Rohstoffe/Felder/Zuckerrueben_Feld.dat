@@ -1,0 +1,16 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	Letzte Bearbeitung:
+#    14-09-2015 The Transporter
+# --------------------------------
+obj=field
+name=Zuckerrueben_Feld
+copyright=pumuckl999
+Image[0]=Zuckerrueben_Feld.0.0
+Image[1]=Zuckerrueben_Feld.0.0
+Image[2]=Zuckerrueben_Feld.0.1
+Image[3]=Zuckerrueben_Feld.0.1
+Image[4]=Zuckerrueben_Feld.0.2
+---------------------------------

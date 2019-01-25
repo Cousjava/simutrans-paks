@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Convair CV340_Post
+copyright=Pumuckl999
+intro_year=1954
+intro_month=1
+retire_year=1968
+retire_month=12
+waytype=air
+cost=60324000
+runningcost=168
+freight=Post
+payload=44
+engine_type=diesel
+power=3580
+gear=32
+speed=457
+weight=13
+length=3
+sound=planelow.wav
+smoke=Diesel
+EmptyImage[S]=Convair CV340_post.0.6
+EmptyImage[N]=Convair CV340_post.0.2
+EmptyImage[E]=Convair CV340_post.0.4
+EmptyImage[W]=Convair CV340_post.0.0
+EmptyImage[SW]=Convair CV340_post.0.7
+EmptyImage[SE]=Convair CV340_post.0.5
+EmptyImage[NW]=Convair CV340_post.0.1
+EmptyImage[NE]=Convair CV340_post.0.3,-9,0
+---------------------------------------------

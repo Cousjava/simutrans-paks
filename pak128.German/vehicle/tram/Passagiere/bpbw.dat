@@ -1,0 +1,41 @@
+#	PAK128.german
+#	Vehicle
+obj=vehicle
+name=Berliner Pferdebahnwagen
+copyright=pumuckl999
+intro_year=1865
+intro_month=6
+retire_year=1880
+retire_month=1
+waytype=tram_track
+cost=582500
+runningcost=63
+freight=Passagiere
+payload=25
+speed=15
+weight=2
+length=4
+#sound=
+#smoke=
+constraint[prev][0]=Pferd
+constraint[prev][1]=none
+constraint[next][0]=none
+constraint[next][1]=none
+EmptyImage[S]=bpbw.0.6
+EmptyImage[N]=bpbw.0.2
+EmptyImage[E]=bpbw.0.4
+EmptyImage[W]=bpbw.0.0
+EmptyImage[SW]=bpbw.0.7
+EmptyImage[SE]=bpbw.0.5
+EmptyImage[NW]=bpbw.0.1
+EmptyImage[NE]=bpbw.0.3
+#freightImageType[0]=
+#freightimage[0][S]=
+#freightimage[0][N]=
+#freightimage[0][E]=
+#freightimage[0][W]=
+#freightimage[0][SW]=
+#freightimage[0][SE]=
+#freightimage[0][NE]=
+#freightimage[0][NW]=
+#_EO_

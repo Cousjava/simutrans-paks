@@ -1,0 +1,27 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 19-11-2017
+---------------------------------
+obj=vehicle
+name=Schiebewandwagen_Habbiins352
+copyright=pumuckl999
+intro_year=2008
+intro_month=1
+cost=19174000
+runningcost=318
+waytype=track
+freight=Plastik
+payload=63
+speed=100
+length=13
+weight=27.4
+EmptyImage[S]=Habbiins352.0.0
+EmptyImage[E]=Habbiins352.0.1
+EmptyImage[SE]=Habbiins352.0.2
+EmptyImage[SW]=Habbiins352.0.3
+EmptyImage[N]=Habbiins352.0.4
+EmptyImage[W]=Habbiins352.0.5
+EmptyImage[NW]=Habbiins352.0.6
+EmptyImage[NE]=Habbiins352.0.7
+-----------------------------------

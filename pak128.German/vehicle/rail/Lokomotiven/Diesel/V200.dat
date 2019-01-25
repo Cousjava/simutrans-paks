@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
+---------------------------------
+obj=vehicle
+name=V200
+copyright=TonyBzt
+intro_year=1953
+intro_month=1
+retire_year=1985
+retire_month=12
+cost=23392000
+runningcost=250
+waytype=track
+engine_type=diesel
+smoke=Diesel
+speed=140
+weight=74
+power=1618
+gear=300
+length=12
+sound=2
+EmptyImage[S]=V200.0.0
+EmptyImage[E]=V200.0.1
+EmptyImage[SE]=V200.0.2
+EmptyImage[SW]=V200.0.3
+EmptyImage[N]=V200.0.4
+EmptyImage[W]=V200.0.5
+EmptyImage[NW]=V200.0.6
+EmptyImage[NE]=V200.0.7
+---------------------------

@@ -1,0 +1,62 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 04-2011
+#	Letzte Bearbeitung:
+#    09-2011
+#    $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ $Author: NNW $
+# --------------------------------
+obj=factory
+name=AVL_E-Laden_NIC
+copyright=Lemuria
+pax_level=30
+intro_year=1990
+intro_month=1
+retire_year=2033
+retire_month=12
+location=City
+DistributionWeight=64
+Productivity=50
+InputGood[0]=Maschinen
+InputCapacity[0]=800
+InputFactor[3]=100
+InputSupplier[0]=0
+InputGood[1]=Computer
+InputCapacity[1]=400
+InputFactor[1]=50
+InputSupplier[1]=1
+InputGood[2]=Farben
+InputCapacity[2]=200
+InputFactor[2]=20
+InputSupplier[2]=0
+InputGood[3]=Kameras
+InputCapacity[3]=400
+InputFactor[3]=50
+InputSupplier[3]=0
+InputGood[4]=Papier
+InputCapacity[4]=200
+InputFactor[4]=20
+electricity_amount=10
+passenger_boost=2000
+mail_boost=500
+climates=tundra
+mapcolor=132
+needs_ground=1
+dims=2,2,4
+BackImage[0][0][0][0][0][0]=AVL_E-Laden.0.0
+BackImage[0][0][1][0][0][0]=AVL_E-Laden.0.1
+BackImage[0][1][0][0][0][0]=AVL_E-Laden.0.2
+BackImage[0][1][1][0][0][0]=AVL_E-Laden.0.3
+BackImage[1][0][0][0][0][0]=AVL_E-Laden.1.0
+BackImage[1][0][1][0][0][0]=AVL_E-Laden.1.1
+BackImage[1][1][0][0][0][0]=AVL_E-Laden.1.2
+BackImage[1][1][1][0][0][0]=AVL_E-Laden.1.3
+BackImage[2][0][0][0][0][0]=AVL_E-Laden.2.0
+BackImage[2][0][1][0][0][0]=AVL_E-Laden.2.1
+BackImage[2][1][0][0][0][0]=AVL_E-Laden.2.2
+BackImage[2][1][1][0][0][0]=AVL_E-Laden.2.3
+BackImage[3][0][0][0][0][0]=AVL_E-Laden.3.0
+BackImage[3][0][1][0][0][0]=AVL_E-Laden.3.1
+BackImage[3][1][0][0][0][0]=AVL_E-Laden.3.2
+BackImage[3][1][1][0][0][0]=AVL_E-Laden.3.3
+----------------------------------------------

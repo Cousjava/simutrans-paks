@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MAN_NL_323_Kunterbunt
+copyright=RedRabbit
+intro_year=2005
+intro_month=1
+cost=11272720
+runningcost=325
+waytype=road
+freight=Passagiere
+payload=128
+engine_type=diesel
+power=310
+speed=50
+weight=12.272
+length=13
+sound=1
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[W]=MAN_NL323KB.2.1
+EmptyImage[NW]=MAN_NL323KB.2.2
+EmptyImage[N]=MAN_NL323KB.2.3
+EmptyImage[NE]=MAN_NL323KB.2.4,-20
+EmptyImage[E]=MAN_NL323KB.2.5,-32,-16
+EmptyImage[SE]=MAN_NL323KB.2.6
+EmptyImage[S]=MAN_NL323KB.2.7
+EmptyImage[SW]=MAN_NL323KB.2.8,20
+-------------------------------------------

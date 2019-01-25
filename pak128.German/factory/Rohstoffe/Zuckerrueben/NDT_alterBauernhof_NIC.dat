@@ -1,0 +1,42 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	Letzte Bearbeitung: 03-03-2017 NNW
+# --------------------------------
+Obj=factory
+Name=NDT_alterBauernhof_NIC
+copyright=pumuckl999
+pax_level=5
+intro_year=1800
+intro_month=1
+location=land
+DistributionWeight=1
+Productivity=150
+OutputGood[0]=Zuckerrueben
+OutputCapacity[0]=600
+OutputFactor[0]=100
+min_fields=2
+max_fields=6
+probability_to_spawn=5000
+fields[0]=Zuckerrueben_Feld
+production_per_field[0]=20
+storage_capacity[0]=10
+has_snow[0]=1
+expand_probability=5000
+expand_minimum=5
+expand_range=25
+expand_times=2
+electricity_amount=0
+climates=tropic, desert, mediterran
+MapColor=207
+dims=1,1,4
+BackImage[0][0][0][0][0][0]=NDT_alter_Bauernhof.0.0
+BackImage[1][0][0][0][0][0]=NDT_alter_Bauernhof.0.1
+BackImage[2][0][0][0][0][0]=NDT_alter_Bauernhof.0.2
+BackImage[3][0][0][0][0][0]=NDT_alter_Bauernhof.0.3
+BackImage[0][0][0][0][0][1]=NDT_alter_Bauernhof.1.0
+BackImage[1][0][0][0][0][1]=NDT_alter_Bauernhof.1.1
+BackImage[2][0][0][0][0][1]=NDT_alter_Bauernhof.1.2
+BackImage[3][0][0][0][0][1]=NDT_alter_Bauernhof.1.3
+------------------------------------------------------

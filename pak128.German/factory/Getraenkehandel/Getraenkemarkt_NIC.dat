@@ -1,0 +1,40 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 06-2010
+#	Letzte Bearbeitung:
+#   $Date: 2018-06-23 09:15:30 +0200 (Sa, 23. Jun 2018) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+name=Getraenkemarkt_NIC
+copyright=TonyBzt
+pax_level=20
+intro_year=1930
+intro_month=1
+retire_year=2033
+retire_month=12
+Location=City
+DistributionWeight=10
+Productivity=25
+Range=5
+InputGood[0]=Bier
+InputCapacity[0]=400
+InputGood[1]=Wein
+InputCapacity[1]=200
+InputFactor[1]=45
+electricity_amount=1
+passenger_boost=1000
+mail_boost=500
+MapColor=132
+climates=desert, tropic, mediterran, temperate, tundra, rocky
+needs_ground=1
+Dims=2,2,2
+BackImage[0][0][0][0][0][0]=Getraenkehandel.0.3
+BackImage[0][0][1][0][0][0]=Getraenkehandel.0.2
+BackImage[0][1][0][0][0][0]=Getraenkehandel.0.1
+BackImage[0][1][1][0][0][0]=Getraenkehandel.0.0
+BackImage[1][0][0][0][0][0]=Getraenkehandel.1.3
+BackImage[1][0][1][0][0][0]=Getraenkehandel.1.2
+BackImage[1][1][0][0][0][0]=Getraenkehandel.1.1
+BackImage[1][1][1][0][0][0]=Getraenkehandel.1.0
+---------------------------------------------------

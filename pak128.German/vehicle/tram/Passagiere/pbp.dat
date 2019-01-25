@@ -1,0 +1,44 @@
+#	PAK128.german
+#	Vehicle
+obj=vehicle
+name=Pferd
+copyright=pumuckl999
+intro_year=1800
+intro_month=1
+retire_year=2999
+retire_month=12
+waytype=tram_track
+cost=7000
+runningcost=2
+engine_type=bio
+power=1
+gear=1000
+speed=15
+weight=0.55
+#length=
+#sound=
+#smoke=
+constraint[prev][0]=none
+constraint[prev][1]=none
+constraint[next][0]=Goerlitzer Pferdebahnwagen
+constraint[next][1]=Doebelner Pferdebahnwagen
+constraint[next][2]=Berliner Pferdebahnwagen
+#constraint[next][1]=none
+EmptyImage[S]=pbp.0.6
+EmptyImage[N]=pbp.0.2
+EmptyImage[E]=pbp.0.4
+EmptyImage[W]=pbp.0.0
+EmptyImage[SW]=pbp.0.7
+EmptyImage[SE]=pbp.0.5
+EmptyImage[NW]=pbp.0.1
+EmptyImage[NE]=pbp.0.3
+#freightImageType[0]=
+#freightimage[0][S]=
+#freightimage[0][N]=
+#freightimage[0][E]=
+#freightimage[0][W]=
+#freightimage[0][SW]=
+#freightimage[0][SE]=
+#freightimage[0][NE]=
+#freightimage[0][NW]=
+#_EO_

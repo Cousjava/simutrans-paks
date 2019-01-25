@@ -1,0 +1,38 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 15-04-2017
+---------------------------------
+obj=vehicle
+name=TW121a_Baden
+copyright=pumuckl999
+intro_year=1914
+intro_month=1
+retire_year=1953
+retire_month=12
+cost=4134000
+runningcost=115
+waytype=track
+freight=Passagiere
+payload=40
+speed=60
+weight=18
+sound=3
+smoke=Steam
+engine_type=steam
+power=59
+gear=95
+length=8
+constraint[prev][0]=TW121a_Baden
+constraint[prev][1]=none
+constraint[next][0]=TW121a_Baden
+constraint[next][1]=none
+EmptyImage[S]=dampftw_121a_baden.0.0
+EmptyImage[E]=dampftw_121a_baden.0.1
+EmptyImage[SE]=dampftw_121a_baden.0.2
+EmptyImage[SW]=dampftw_121a_baden.0.3
+EmptyImage[N]=dampftw_121a_baden.0.4
+EmptyImage[W]=dampftw_121a_baden.0.5
+EmptyImage[NW]=dampftw_121a_baden.0.6
+EmptyImage[NE]=dampftw_121a_baden.0.7
+---------------------------------

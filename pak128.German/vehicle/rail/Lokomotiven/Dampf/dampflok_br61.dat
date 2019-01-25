@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 05-04-2017
+---------------------------------
+obj=vehicle
+name=BR61
+copyright=pumuckl999
+intro_year=1935
+intro_month=1
+retire_year=1952
+retire_month=12
+cost=19945000
+runningcost=378
+waytype=track
+speed=175
+weight=129
+sound=3
+smoke=Steam
+engine_type=steam
+power=1066
+gear=290
+length=11
+constraint[prev][0]=none
+EmptyImage[S]=dampflok_br61.0.0
+EmptyImage[E]=dampflok_br61.0.1
+EmptyImage[SE]=dampflok_br61.0.2
+EmptyImage[SW]=dampflok_br61.0.3
+EmptyImage[N]=dampflok_br61.0.4
+EmptyImage[W]=dampflok_br61.0.5
+EmptyImage[NW]=dampflok_br61.0.6
+EmptyImage[NE]=dampflok_br61.0.7
+---------------------------------

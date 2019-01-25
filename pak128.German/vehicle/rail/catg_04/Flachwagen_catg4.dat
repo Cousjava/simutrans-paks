@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Flachwagen_2
+copyright=TonyBzt
+intro_year=1971
+intro_month=9
+cost=6720000
+runningcost=108
+waytype=track
+freight=Fleisch
+payload=20
+speed=110
+weight=12
+length=9
+EmptyImage[S]=Flachwagen.0.0
+EmptyImage[E]=Flachwagen.0.1
+EmptyImage[SE]=Flachwagen.0.2
+EmptyImage[SW]=Flachwagen.0.3
+EmptyImage[N]=Flachwagen.0.4
+EmptyImage[W]=Flachwagen.0.5
+EmptyImage[NW]=Flachwagen.0.6
+EmptyImage[NE]=Flachwagen.0.7
+FreightImage[S]=Flachwagen.6.0
+FreightImage[E]=Flachwagen.6.1
+FreightImage[SE]=Flachwagen.6.2
+FreightImage[SW]=Flachwagen.6.3
+FreightImage[N]=Flachwagen.6.4
+FreightImage[W]=Flachwagen.6.5
+FreightImage[NW]=Flachwagen.6.6
+FreightImage[NE]=Flachwagen.6.7
+-----------------------------------

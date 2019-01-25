@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Straße
+#   Neu:
+#   Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Pferdegespann
+copyright=RedRabbit
+intro_year=1800
+intro_month=1
+retire_year=1955
+retire_month=12
+cost=15600
+runningcost=3
+waytype=road
+engine_type=Bio
+speed=18
+weight=1.2
+power=2
+gear=560
+length=2
+Constraint[Prev][0]=none
+Constraint[Next][0]=Postkutsche
+Constraint[Next][1]=Kutsche
+EmptyImage[S]=RR_Pferdegespann.0.1,-4,2
+EmptyImage[N]=RR_Pferdegespann.0.2
+EmptyImage[E]=RR_Pferdegespann.0.3,3,3
+EmptyImage[W]=RR_Pferdegespann.0.4,-3
+EmptyImage[SE]=RR_Pferdegespann.0.5,0,4
+EmptyImage[NW]=RR_Pferdegespann.0.6
+EmptyImage[NE]=RR_Pferdegespann.0.7,6
+EmptyImage[SW]=RR_Pferdegespann.0.8,-6
+-----------------------------------------

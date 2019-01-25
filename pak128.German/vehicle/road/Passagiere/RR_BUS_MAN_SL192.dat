@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MAN_SL192
+copyright=RedRabbit
+intro_year=1969
+intro_month=1
+retire_year=1986
+retire_month=12
+cost=5965000
+runningcost=177
+waytype=road
+freight=Passagiere
+payload=68
+engine_type=diesel 
+speed=50
+weight=16
+power=141
+smoke=Diesel
+sound=1
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=RR_BUS_MAN_SL192.0.1
+EmptyImage[N]=RR_BUS_MAN_SL192.0.2
+EmptyImage[E]=RR_BUS_MAN_SL192.0.3
+EmptyImage[W]=RR_BUS_MAN_SL192.0.4
+EmptyImage[SE]=RR_BUS_MAN_SL192.0.5
+EmptyImage[NW]=RR_BUS_MAN_SL192.0.6
+EmptyImage[NE]=RR_BUS_MAN_SL192.0.7
+EmptyImage[SW]=RR_BUS_MAN_SL192.0.8
+------------------------------------------

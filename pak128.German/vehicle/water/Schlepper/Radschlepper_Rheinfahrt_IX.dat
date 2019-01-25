@@ -1,0 +1,53 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Radschlepper_Rheinfahrt_IX
+copyright=Pumuckl999
+intro_year=1900
+intro_month=1
+retire_year=1925
+retire_month=12
+cost=2720000
+runningcost=48
+waytype=water
+engine_type=steam
+smoke=Steam_ship
+power=1600
+speed=17
+gear=1200
+weight=500
+length=17
+sound=boat-horn.wav
+constraint[prev][0]=none
+constraint[next][0]=Holzschleppkahn_fluessige_Lebensmittel
+constraint[next][1]=Holzschleppkahn_Holz
+constraint[next][2]=Holzschleppkahn_landwirtschaftliche_Gueter
+constraint[next][3]=Holzschleppkahn_Schuettgut
+constraint[next][4]=Holzschleppkahn_Stahl
+constraint[next][5]=Holzschleppkahn_Stueckgut
+constraint[next][6]=Holzschleppkahn_Vieh
+constraint[next][7]=Tankschleppkahn_Geheimrat_von_Lavale
+constraint[next][8]=Tankschleppkahn_Wilde_Hilde
+constraint[next][9]=Holzschleppkahn_Siloware
+constraint[next][10]=Schute_No.9_Stueckgut
+constraint[next][11]=Schute_No.9_fluessige_Lebensmittel
+constraint[next][12]=Schute_No.9_Holz
+constraint[next][13]=Schute_No.9_landwirtschaftl._Gueter
+constraint[next][14]=Schute_No.9_Schuettgut
+constraint[next][15]=Schute_No.9_Stahl
+constraint[next][16]=Schute_No.9_Vieh
+constraint[next][17]=Schute_No.9_Siloware
+constraint[next][18]=none
+EmptyImage[W]=Radschlepper_Rheinfahrt_IX.0.1,-44,-4
+EmptyImage[NW]=Radschlepper_Rheinfahrt_IX.0.2,-16,4
+EmptyImage[N]=Radschlepper_Rheinfahrt_IX.0.3,-24,0
+EmptyImage[NE]=Radschlepper_Rheinfahrt_IX.0.4,-12,8
+EmptyImage[E]=Radschlepper_Rheinfahrt_IX.0.5,4,-4
+EmptyImage[SE]=Radschlepper_Rheinfahrt_IX.0.6,4,0
+EmptyImage[S]=Radschlepper_Rheinfahrt_IX.0.7,8,8
+EmptyImage[SW]=Radschlepper_Rheinfahrt_IX.0.8,4,4
+------------------------------------------------------

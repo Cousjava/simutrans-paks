@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MagirusIveco_T_Mineraloeltransport
+copyright=RedRabbit
+intro_year=1977
+intro_month=1
+retire_year=1991
+retire_month=12
+cost=4034000
+runningcost=57
+waytype=road
+speed=80
+power=243
+weight=11
+freight=Oel
+payload=11
+length=7
+smoke=Diesel
+constraint[prev][0]=none
+EmptyImage[S]=RR_MAG_T_Oel.0.1
+EmptyImage[N]=RR_MAG_T_Oel.0.2
+EmptyImage[E]=RR_MAG_T_Oel.0.3
+EmptyImage[W]=RR_MAG_T_Oel.0.4
+EmptyImage[SE]=RR_MAG_T_Oel.0.5
+EmptyImage[NW]=RR_MAG_T_Oel.0.6
+EmptyImage[NE]=RR_MAG_T_Oel.0.7
+EmptyImage[SW]=RR_MAG_T_Oel.0.8
+--------------------------------------

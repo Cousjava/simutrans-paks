@@ -1,0 +1,41 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+---------------------------------
+obj=vehicle
+name=BR44
+copyright=TonyBzt
+intro_year=1926
+intro_month=1
+retire_year=1977
+retire_month=12
+cost=12100000
+runningcost=161
+waytype=track
+engine_type=steam
+freight=None
+smoke=Steam
+speed=80
+gear=600
+weight=86
+length=10
+power=1405
+sound=steam.wav
+Constraint[Prev][0]=KabTender
+Constraint[Prev][1]=Wannentender
+Constraint[Prev][2]=T34Tender
+Constraint[Prev][3]=none
+Constraint[Next][0]=KabTender
+Constraint[Next][1]=Wannentender
+Constraint[Next][2]=T34Tender
+Constraint[Next][3]=none
+EmptyImage[S]=BR44.0.0
+EmptyImage[E]=BR44.0.1
+EmptyImage[SE]=BR44.0.2
+EmptyImage[SW]=BR44.0.3
+EmptyImage[N]=BR44.0.4
+EmptyImage[W]=BR44.0.5
+EmptyImage[NW]=BR44.0.6
+EmptyImage[NE]=BR44.0.7
+----------------------------

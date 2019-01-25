@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 21-11-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=E91_3
+copyright=pumuckl999
+intro_year=1915
+intro_month=1
+retire_year=1943
+retire_month=12
+cost=7442000
+runningcost=144
+waytype=electrified_track
+freight=Post
+payload=30
+speed=50
+weight=101.7
+power=835
+gear=160
+length=10
+sound=-1
+EmptyImage[S]=elok_e91_3.0.0
+EmptyImage[E]=elok_e91_3.0.1
+EmptyImage[SE]=elok_e91_3.0.2
+EmptyImage[SW]=elok_e91_3.0.3
+EmptyImage[N]=elok_e91_3.0.4
+EmptyImage[W]=elok_e91_3.0.5
+EmptyImage[NW]=elok_e91_3.0.6
+EmptyImage[NE]=elok_e91_3.0.7
+-----------------------------

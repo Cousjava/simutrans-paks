@@ -1,0 +1,38 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu:2008
+#	Letzte Bearbeitung: $Date$ - $Author$ 
+---------------------------------
+obj=vehicle
+name=Offs59b_1958
+copyright=TonyBzt
+intro_year=1958
+intro_month=1
+cost=7450000
+runningcost=133
+waytype=track
+freight=Autos
+payload=8
+weight=25
+speed=100
+length=8
+sound=-1
+Constraint[Prev][0]=Offs59a_1958
+EmptyImage[S]=Offs59-PAK.2.0
+EmptyImage[W]=Offs59-PAK.2.1
+EmptyImage[SW]=Offs59-PAK.2.3
+EmptyImage[SE]=Offs59-PAK.2.2
+EmptyImage[N]=Offs59-PAK.2.4
+EmptyImage[E]=Offs59-PAK.2.5
+EmptyImage[NE]=Offs59-PAK.2.7
+EmptyImage[NW]=Offs59-PAK.2.6
+FreightImage[S]=Offs59-PAK.3.0
+FreightImage[W]=Offs59-PAK.3.5
+FreightImage[SW]=Offs59-PAK.3.3
+FreightImage[SE]=Offs59-PAK.3.2
+FreightImage[N]=Offs59-PAK.3.4
+FreightImage[E]=Offs59-PAK.3.1
+FreightImage[NE]=Offs59-PAK.3.7
+FreightImage[NW]=Offs59-PAK.3.6
+----------------------------------

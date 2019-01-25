@@ -1,0 +1,29 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 27-05-2017
+#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
+---------------------------------
+obj=vehicle
+name=DR BR112
+copyright=pumuckl999
+intro_year=1990
+intro_month=1
+cost=64820000
+runningcost=344
+waytype=electrified_track
+speed=160
+weight=82
+power=4000
+gear=325
+length=10
+sound=-1
+EmptyImage[S]=BR112.0.0
+EmptyImage[E]=BR112.0.1
+EmptyImage[SE]=BR112.0.2
+EmptyImage[SW]=BR112.0.3
+EmptyImage[N]=BR112.0.4
+EmptyImage[W]=BR112.0.5
+EmptyImage[NW]=BR112.0.6
+EmptyImage[NE]=BR112.0.7
+-----------------------------

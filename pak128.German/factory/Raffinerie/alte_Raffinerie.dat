@@ -1,0 +1,86 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 09-02-2017
+# --------------------------------
+Obj=factory
+name=alte Raffinerie
+Copyright=pumuckl999
+pax_level=9
+intro_year=1905
+intro_month=1
+retire_year=1960
+retire_month=1
+Location=Land
+DistributionWeight=1
+Productivity=50
+InputGood[0]=Oel
+InputSupplier[0]=0
+InputCapacity[0]=800
+OutputGood[0]=Benzin
+OutputFactor[0]=75
+OutputCapacity[0]=200
+electricity_amount=42
+passenger_boost=1000
+mail_boost=500
+climates=desert, tropic, mediterran, temperate, tundra
+MapColor=175
+Dims=2,2,4
+BackImage[0][0][0][0][0][0]=arg.0.0
+BackImage[0][0][0][1][0][0]=arg.0.1
+BackImage[0][0][1][0][0][0]=arg.0.2
+BackImage[0][0][1][1][0][0]=arg.0.3
+BackImage[0][1][0][0][0][0]=arg.0.4
+BackImage[0][1][0][1][0][0]=arg.0.5
+BackImage[0][1][1][0][0][0]=arg.0.6
+BackImage[0][0][0][0][0][1]=arg.0.7
+BackImage[0][0][0][1][0][1]=arg.1.0
+BackImage[0][0][1][0][0][1]=arg.1.1
+BackImage[0][0][1][1][0][1]=arg.1.2
+BackImage[0][1][0][0][0][1]=arg.1.3
+BackImage[0][1][0][1][0][1]=arg.1.4
+BackImage[0][1][1][0][0][1]=arg.1.5
+BackImage[1][0][0][0][0][0]=arg.1.6
+BackImage[1][0][0][1][0][0]=arg.1.7
+BackImage[1][0][1][0][0][0]=arg.2.0
+BackImage[1][0][1][1][0][0]=arg.2.1
+BackImage[1][1][0][0][0][0]=arg.2.2
+BackImage[1][1][0][1][0][0]=arg.2.3
+BackImage[1][1][1][0][0][0]=arg.2.4
+BackImage[1][0][0][0][0][1]=arg.2.5
+BackImage[1][0][0][1][0][1]=arg.2.6
+BackImage[1][0][1][0][0][1]=arg.2.7
+BackImage[1][0][1][1][0][1]=arg.3.0
+BackImage[1][1][0][0][0][1]=arg.3.1
+BackImage[1][1][0][1][0][1]=arg.3.2
+BackImage[1][1][1][0][0][1]=arg.3.3
+BackImage[2][0][0][0][0][0]=arg.3.4
+BackImage[2][0][0][1][0][0]=arg.3.5
+BackImage[2][0][1][0][0][0]=arg.3.6
+BackImage[2][0][1][1][0][0]=arg.3.7
+BackImage[2][1][0][0][0][0]=arg.4.0
+BackImage[2][1][0][1][0][0]=arg.4.1
+BackImage[2][1][1][0][0][0]=arg.4.2
+BackImage[2][0][0][0][0][1]=arg.4.3
+BackImage[2][0][0][1][0][1]=arg.4.4
+BackImage[2][0][1][0][0][1]=arg.4.5
+BackImage[2][0][1][1][0][1]=arg.4.6
+BackImage[2][1][0][0][0][1]=arg.4.7
+BackImage[2][1][0][1][0][1]=arg.5.0
+BackImage[2][1][1][0][0][1]=arg.5.1
+BackImage[3][0][0][0][0][0]=arg.5.2
+BackImage[3][0][0][1][0][0]=arg.5.3
+BackImage[3][0][1][0][0][0]=arg.5.4
+BackImage[3][0][1][1][0][0]=arg.5.5
+BackImage[3][1][0][0][0][0]=arg.5.6
+BackImage[3][1][0][1][0][0]=arg.5.7
+BackImage[3][1][1][0][0][0]=arg.6.0
+BackImage[3][0][0][0][0][1]=arg.6.1
+BackImage[3][0][0][1][0][1]=arg.6.2
+BackImage[3][0][1][0][0][1]=arg.6.3
+BackImage[3][0][1][1][0][1]=arg.6.4
+BackImage[3][1][0][0][0][1]=arg.6.5
+BackImage[3][1][0][1][0][1]=arg.6.6
+BackImage[3][1][1][0][0][1]=arg.6.7
+
+---------------------------------------------- 

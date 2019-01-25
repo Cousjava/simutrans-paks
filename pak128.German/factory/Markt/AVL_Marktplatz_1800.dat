@@ -1,0 +1,74 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 11-2011
+#	Letzte Bearbeitung:
+#   $Date: 2017-04-29 18:44:52 +0200 (Sa, 29. Apr 2017) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+name=AVL_Marktplatz_1800
+copyright=Lemuria
+pax_level=21
+intro_year=1800
+intro_month=1
+retire_year=1949
+retire_month=1
+Location=City
+DistributionWeight=127
+Productivity=10
+Range=2
+InputGood[0]=Backwaren
+InputCapacity[0]=800
+InputSupplier[0]=1
+InputGood[1]=Bier
+InputCapacity[1]=800
+InputSupplier[1]=1
+InputGood[2]=Eier
+InputCapacity[2]=800
+InputSupplier[2]=1
+InputGood[3]=Suedfruechte
+InputCapacity[3]=400
+InputFactor[4]=50
+InputSupplier[3]=1
+InputGood[4]=Milch
+InputCapacity[4]=800
+InputSupplier[4]=1
+InputGood[5]=Textilien
+InputCapacity[5]=400
+InputFactor[5]=20
+InputSupplier[5]=1
+InputGood[6]=Obst
+InputCapacity[6]=800
+InputSupplier[6]=1
+InputGood[7]=Wolle
+InputCapacity[7]=400
+InputFactor[7]=30
+electricity_amount=1
+passenger_boost=2000
+mail_boost=500
+expand_probability=40
+# Warscheinlichkeit für expand 10000 oder mehr = 100% (100=1%)
+# nach test makie 100 = nach 2 jahren, 50 = nach 4 Jahre, 10 = keine mehr 
+expand_minimum=1
+expand_range=1
+expand_times=40
+climates=tundra, rocky
+MapColor=132
+Dims=2,2,4
+BackImage[0][0][0][0][0][0]=AVL_Marktplatz.0.0
+BackImage[0][1][0][0][0][0]=AVL_Marktplatz.1.0
+BackImage[0][0][1][0][0][0]=AVL_Marktplatz.0.1
+BackImage[0][1][1][0][0][0]=AVL_Marktplatz.1.1
+BackImage[1][0][0][0][0][0]=AVL_Marktplatz.0.2
+BackImage[1][1][0][0][0][0]=AVL_Marktplatz.1.2
+BackImage[1][0][1][0][0][0]=AVL_Marktplatz.0.3
+BackImage[1][1][1][0][0][0]=AVL_Marktplatz.1.3
+BackImage[2][0][0][0][0][0]=AVL_Marktplatz.0.4
+BackImage[2][1][0][0][0][0]=AVL_Marktplatz.1.4
+BackImage[2][0][1][0][0][0]=AVL_Marktplatz.0.5
+BackImage[2][1][1][0][0][0]=AVL_Marktplatz.1.5
+BackImage[3][0][0][0][0][0]=AVL_Marktplatz.0.6
+BackImage[3][1][0][0][0][0]=AVL_Marktplatz.1.6
+BackImage[3][0][1][0][0][0]=AVL_Marktplatz.0.7
+BackImage[3][1][1][0][0][0]=AVL_Marktplatz.1.7
+-------------------------------------------------

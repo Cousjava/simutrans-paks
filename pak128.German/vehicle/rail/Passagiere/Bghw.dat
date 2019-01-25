@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 30-05-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Rekowagen Bghw
+copyright=pumuckl999
+intro_year=1967
+intro_month=1
+retire_year=1995
+retire_month=12
+cost=12180000
+runningcost=181
+waytype=track
+freight=Passagiere
+payload=66
+speed=120
+weight=30
+length=11
+EmptyImage[S]=Bghw.0.0
+EmptyImage[E]=Bghw.0.1
+EmptyImage[SE]=Bghw.0.2
+EmptyImage[SW]=Bghw.0.3
+EmptyImage[N]=Bghw.0.4
+EmptyImage[W]=Bghw.0.5
+EmptyImage[NW]=Bghw.0.6
+EmptyImage[NE]=Bghw.0.7
+--------------------------------

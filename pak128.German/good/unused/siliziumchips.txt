@@ -1,0 +1,12 @@
+﻿#
+# SiliziumChips
+#
+obj=good
+name=Siliziumchips
+metric= Paletten
+weight_per_unit=800
+catg=1
+value=315
+#=1,05
+speed_bonus=0
+--------------------

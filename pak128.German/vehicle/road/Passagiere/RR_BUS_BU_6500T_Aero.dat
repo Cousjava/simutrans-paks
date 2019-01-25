@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Buessing_6500T_Aero
+copyright=RedRabbit
+intro_year=1955
+intro_month=1
+retire_year=1965
+retire_month=12
+cost=8160000
+runningcost=257
+waytype=road
+freight=Passagiere
+payload=100
+engine_type=diesel 
+speed=50
+weight=11
+power=110
+sound=1
+length=11
+smoke=Diesel
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=RR_BUS_BU_6500T_Aero.0.1
+EmptyImage[N]=RR_BUS_BU_6500T_Aero.0.2
+EmptyImage[E]=RR_BUS_BU_6500T_Aero.0.3
+EmptyImage[W]=RR_BUS_BU_6500T_Aero.0.4
+EmptyImage[SE]=RR_BUS_BU_6500T_Aero.0.5
+EmptyImage[NW]=RR_BUS_BU_6500T_Aero.0.6
+EmptyImage[NE]=RR_BUS_BU_6500T_Aero.0.7
+EmptyImage[SW]=RR_BUS_BU_6500T_Aero.0.8
+----------------------------------------------

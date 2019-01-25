@@ -1,0 +1,293 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 02-05-2017
+---------------------------------
+obj=vehicle
+name=lgns583_Stueckgut
+copyright=pumuckl999
+intro_year=2004
+intro_month=1
+cost=14520000
+runningcost=242
+waytype=track
+freight=Buecher
+payload=48
+speed=100
+weight=12
+length=8
+EmptyImage[S]=lgns583.0.0
+EmptyImage[E]=lgns583.0.1
+EmptyImage[SE]=lgns583.0.2
+EmptyImage[SW]=lgns583.0.3
+EmptyImage[N]=lgns583.0.4
+EmptyImage[W]=lgns583.0.5
+EmptyImage[NW]=lgns583.0.6
+EmptyImage[NE]=lgns583.0.7
+# gruen
+# Buecher
+FreightImagetype[0]=Buecher
+FreightImage[0][S]=lgns583.1.0
+FreightImage[0][E]=lgns583.1.1
+FreightImage[0][SE]=lgns583.1.2
+FreightImage[0][SW]=lgns583.1.3
+FreightImage[0][N]=lgns583.1.4
+FreightImage[0][W]=lgns583.1.5
+FreightImage[0][NW]=lgns583.1.6
+FreightImage[0][NE]=lgns583.1.7
+# Kameras
+FreightImagetype[1]=Kameras
+FreightImage[1][S]=lgns583.1.0
+FreightImage[1][E]=lgns583.1.1
+FreightImage[1][SE]=lgns583.1.2
+FreightImage[1][SW]=lgns583.1.3
+FreightImage[1][N]=lgns583.1.4
+FreightImage[1][W]=lgns583.1.5
+FreightImage[1][NW]=lgns583.1.6
+FreightImage[1][NE]=lgns583.1.7
+# Papier
+FreightImagetype[2]=Papier
+FreightImage[2][S]=lgns583.1.0
+FreightImage[2][E]=lgns583.1.1
+FreightImage[2][SE]=lgns583.1.2
+FreightImage[2][SW]=lgns583.1.3
+FreightImage[2][N]=lgns583.1.4
+FreightImage[2][W]=lgns583.1.5
+FreightImage[2][NW]=lgns583.1.6
+FreightImage[2][NE]=lgns583.1.7
+# Textilien
+FreightImagetype[3]=Textilien
+FreightImage[3][S]=lgns583.1.0
+FreightImage[3][E]=lgns583.1.1
+FreightImage[3][SE]=lgns583.1.2
+FreightImage[3][SW]=lgns583.1.3
+FreightImage[3][N]=lgns583.1.4
+FreightImage[3][W]=lgns583.1.5
+FreightImage[3][NW]=lgns583.1.6
+FreightImage[3][NE]=lgns583.1.7
+# Wafer
+FreightImagetype[4]=Wafer
+FreightImage[4][S]=lgns583.1.0
+FreightImage[4][E]=lgns583.1.1
+FreightImage[4][SE]=lgns583.1.2
+FreightImage[4][SW]=lgns583.1.3
+FreightImage[4][N]=lgns583.1.4
+FreightImage[4][W]=lgns583.1.5
+FreightImage[4][NW]=lgns583.1.6
+FreightImage[4][NE]=lgns583.1.7
+# hellblau
+# Chemikalien
+FreightImagetype[5]=Chemikalien
+FreightImage[5][S]=lgns583.2.0
+FreightImage[5][E]=lgns583.2.1
+FreightImage[5][SE]=lgns583.2.2
+FreightImage[5][SW]=lgns583.2.3
+FreightImage[5][N]=lgns583.2.4
+FreightImage[5][W]=lgns583.2.5
+FreightImage[5][NW]=lgns583.2.6
+FreightImage[5][NE]=lgns583.2.7
+# Medikamente
+FreightImagetype[6]=Medikamente
+FreightImage[6][S]=lgns583.2.0
+FreightImage[6][E]=lgns583.2.1
+FreightImage[6][SE]=lgns583.2.2
+FreightImage[6][SW]=lgns583.2.3
+FreightImage[6][N]=lgns583.2.4
+FreightImage[6][W]=lgns583.2.5
+FreightImage[6][NW]=lgns583.2.6
+FreightImage[6][NE]=lgns583.2.7
+# rostbraun
+# Farben
+FreightImagetype[7]=Farben
+FreightImage[7][S]=lgns583.3.0
+FreightImage[7][E]=lgns583.3.1
+FreightImage[7][SE]=lgns583.3.2
+FreightImage[7][SW]=lgns583.3.3
+FreightImage[7][N]=lgns583.3.4
+FreightImage[7][W]=lgns583.3.5
+FreightImage[7][NW]=lgns583.3.6
+FreightImage[7][NE]=lgns583.3.7
+# Plastik
+FreightImagetype[8]=Plastik
+FreightImage[8][S]=lgns583.3.0
+FreightImage[8][E]=lgns583.3.1
+FreightImage[8][SE]=lgns583.3.2
+FreightImage[8][SW]=lgns583.3.3
+FreightImage[8][N]=lgns583.3.4
+FreightImage[8][W]=lgns583.3.5
+FreightImage[8][NW]=lgns583.3.6
+FreightImage[8][NE]=lgns583.3.7
+# blau
+# Maschinen
+FreightImagetype[9]=Maschinen
+FreightImage[9][S]=lgns583.4.0
+FreightImage[9][E]=lgns583.4.1
+FreightImage[9][SE]=lgns583.4.2
+FreightImage[9][SW]=lgns583.4.3
+FreightImage[9][N]=lgns583.4.4
+FreightImage[9][W]=lgns583.4.5
+FreightImage[9][NW]=lgns583.4.6
+FreightImage[9][NE]=lgns583.4.7
+# Computer
+FreightImagetype[10]=Computer
+FreightImage[10][S]=lgns583.4.0
+FreightImage[10][E]=lgns583.4.1
+FreightImage[10][SE]=lgns583.4.2
+FreightImage[10][SW]=lgns583.4.3
+FreightImage[10][N]=lgns583.4.4
+FreightImage[10][W]=lgns583.4.5
+FreightImage[10][NW]=lgns583.4.6
+FreightImage[10][NE]=lgns583.4.7
+# gelb
+# Backwaren
+FreightImagetype[11]=Backwaren
+FreightImage[11][S]=lgns583.7.0
+FreightImage[11][E]=lgns583.7.1
+FreightImage[11][SE]=lgns583.7.2
+FreightImage[11][SW]=lgns583.7.3
+FreightImage[11][N]=lgns583.7.4
+FreightImage[11][W]=lgns583.7.5
+FreightImage[11][NW]=lgns583.7.6
+FreightImage[11][NE]=lgns583.7.7
+# Bier
+FreightImagetype[12]=Bier
+FreightImage[12][S]=lgns583.7.0
+FreightImage[12][E]=lgns583.7.1
+FreightImage[12][SE]=lgns583.7.2
+FreightImage[12][SW]=lgns583.7.3
+FreightImage[12][N]=lgns583.7.4
+FreightImage[12][W]=lgns583.7.5
+FreightImage[12][NW]=lgns583.7.6
+FreightImage[12][NE]=lgns583.7.7
+# Dosenessen
+FreightImagetype[13]=Dosenessen
+FreightImage[13][S]=lgns583.7.0
+FreightImage[13][E]=lgns583.7.1
+FreightImage[13][SE]=lgns583.7.2
+FreightImage[13][SW]=lgns583.7.3
+FreightImage[13][N]=lgns583.7.4
+FreightImage[13][W]=lgns583.7.5
+FreightImage[13][NW]=lgns583.7.6
+FreightImage[13][NE]=lgns583.7.7
+# Eier
+FreightImagetype[14]=Eier
+FreightImage[14][S]=lgns583.7.0
+FreightImage[14][E]=lgns583.7.1
+FreightImage[14][SE]=lgns583.7.2
+FreightImage[14][SW]=lgns583.7.3
+FreightImage[14][N]=lgns583.7.4
+FreightImage[14][W]=lgns583.7.5
+FreightImage[14][NW]=lgns583.7.6
+FreightImage[14][NE]=lgns583.7.7
+# Marzipan
+FreightImagetype[15]=Marzipan
+FreightImage[15][S]=lgns583.7.0
+FreightImage[15][E]=lgns583.7.1
+FreightImage[15][SE]=lgns583.7.2
+FreightImage[15][SW]=lgns583.7.3
+FreightImage[15][N]=lgns583.7.4
+FreightImage[15][W]=lgns583.7.5
+FreightImage[15][NW]=lgns583.7.6
+FreightImage[15][NE]=lgns583.7.7
+# Mehl
+FreightImagetype[16]=Mehl
+FreightImage[16][S]=lgns583.7.0
+FreightImage[16][E]=lgns583.7.1
+FreightImage[16][SE]=lgns583.7.2
+FreightImage[16][SW]=lgns583.7.3
+FreightImage[16][N]=lgns583.7.4
+FreightImage[16][W]=lgns583.7.5
+FreightImage[16][NW]=lgns583.7.6
+FreightImage[16][NE]=lgns583.7.7
+# Obst
+FreightImagetype[17]=Obst
+FreightImage[17][S]=lgns583.7.0
+FreightImage[17][E]=lgns583.7.1
+FreightImage[17][SE]=lgns583.7.2
+FreightImage[17][SW]=lgns583.7.3
+FreightImage[17][N]=lgns583.7.4
+FreightImage[17][W]=lgns583.7.5
+FreightImage[17][NW]=lgns583.7.6
+FreightImage[17][NE]=lgns583.7.7
+# Suedfruechte
+FreightImagetype[18]=Suedfruechte
+FreightImage[18][S]=lgns583.7.0
+FreightImage[18][E]=lgns583.7.1
+FreightImage[18][SE]=lgns583.7.2
+FreightImage[18][SW]=lgns583.7.3
+FreightImage[18][N]=lgns583.7.4
+FreightImage[18][W]=lgns583.7.5
+FreightImage[18][NW]=lgns583.7.6
+FreightImage[18][NE]=lgns583.7.7
+# Wein
+FreightImagetype[19]=Wein
+FreightImage[19][S]=lgns583.7.0
+FreightImage[19][E]=lgns583.7.1
+FreightImage[19][SE]=lgns583.7.2
+FreightImage[19][SW]=lgns583.7.3
+FreightImage[19][N]=lgns583.7.4
+FreightImage[19][W]=lgns583.7.5
+FreightImage[19][NW]=lgns583.7.6
+FreightImage[19][NE]=lgns583.7.7
+# Wolle
+FreightImagetype[20]=Wolle
+FreightImage[20][S]=lgns583.7.0
+FreightImage[20][E]=lgns583.7.1
+FreightImage[20][SE]=lgns583.7.2
+FreightImage[20][SW]=lgns583.7.3
+FreightImage[20][N]=lgns583.7.4
+FreightImage[20][W]=lgns583.7.5
+FreightImage[20][NW]=lgns583.7.6
+FreightImage[20][NE]=lgns583.7.7
+# Zucker
+FreightImagetype[21]=Zucker
+FreightImage[21][S]=lgns583.7.0
+FreightImage[21][E]=lgns583.7.1
+FreightImage[21][SE]=lgns583.7.2
+FreightImage[21][SW]=lgns583.7.3
+FreightImage[21][N]=lgns583.7.4
+FreightImage[21][W]=lgns583.7.5
+FreightImage[21][NW]=lgns583.7.6
+FreightImage[21][NE]=lgns583.7.7
+# lila
+# Betonfertigteile
+FreightImagetype[22]=Betonfertigteile
+FreightImage[22][S]=lgns583.8.0
+FreightImage[22][E]=lgns583.8.1
+FreightImage[22][SE]=lgns583.8.2
+FreightImage[22][SW]=lgns583.8.3
+FreightImage[22][N]=lgns583.8.4
+FreightImage[22][W]=lgns583.8.5
+FreightImage[22][NW]=lgns583.8.6
+FreightImage[22][NE]=lgns583.8.7
+# Glas
+FreightImagetype[23]=Glas
+FreightImage[23][S]=lgns583.8.0
+FreightImage[23][E]=lgns583.8.1
+FreightImage[23][SE]=lgns583.8.2
+FreightImage[23][SW]=lgns583.8.3
+FreightImage[23][N]=lgns583.8.4
+FreightImage[23][W]=lgns583.8.5
+FreightImage[23][NW]=lgns583.8.6
+FreightImage[23][NE]=lgns583.8.7
+# Moebel
+FreightImagetype[24]=Moebel
+FreightImage[24][S]=lgns583.8.0
+FreightImage[24][E]=lgns583.8.1
+FreightImage[24][SE]=lgns583.8.2
+FreightImage[24][SW]=lgns583.8.3
+FreightImage[24][N]=lgns583.8.4
+FreightImage[24][W]=lgns583.8.5
+FreightImage[24][NW]=lgns583.8.6
+FreightImage[24][NE]=lgns583.8.7
+# Zement
+FreightImagetype[25]=Zement
+FreightImage[25][S]=lgns583.8.0
+FreightImage[25][E]=lgns583.8.1
+FreightImage[25][SE]=lgns583.8.2
+FreightImage[25][SW]=lgns583.8.3
+FreightImage[25][N]=lgns583.8.4
+FreightImage[25][W]=lgns583.8.5
+FreightImage[25][NW]=lgns583.8.6
+FreightImage[25][NE]=lgns583.8.7
+---------------------------------------

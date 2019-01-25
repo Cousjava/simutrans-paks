@@ -1,0 +1,100 @@
+body {margin: 10px auto;
+	font-family: sans-serif;
+	color: #333333;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	}
+.start {max-width: 60em;}
+#logo {width:400px;
+		height:400px;
+		margin-left:2%;}
+header,nav,main {border-radius: 0.5em 0.5em;
+	border: 1px solid #0080C0;
+	padding: 10px;
+	margin: 10px;
+}
+article {padding:5px;
+		border-top:1px solid #808040;
+		border-bottom:1px solid #808040;
+		line-height:1.3em;}
+footer {border-radius: 0.2em;
+		border:1px solid #0080C0;
+		padding:10px;
+		margin:5px;
+		grid-column: 1 / span 2;
+}
+a {text-decoration:none;
+	color:darkgreen;
+#	letter-spacing:0.1em;
+	}
+.sprach_link {color:#3D3063;
+				font-size:0.8em;
+				background-color:#D9D8C4;
+				padding:2px;
+				border:1px solid gainsboro;
+				border-radius:0.3em;}
+h1 {color:#FFFFFF;
+	background-color:#FF8000;
+	padding:5px;
+	margin-left:4px;
+	border:1px solid #FF9C6C;
+	border-radius:0.4em;
+	width:20%;}
+h2 {color:#005E00;
+	background-color:#FFFF80;
+	border:1px solid #E6E600;
+	border-radius:0.5em;
+	width:30%;
+	text-align:center;
+	}
+h5 {color:#0070A6;
+		width:20%;
+		text-shadow:0.1em 0.1em #E9E9E9;
+		}
+table {width:60%;
+		}
+th,td {color:#808040;
+	border:1px solid #76763A;
+	border-collapse: separate;
+	border-spacing: 2px;
+	padding:0.2em;}
+li {list-style-type:circle;
+	margin-top:0.25em;
+	margin-bottom:0.25em;
+	}
+.zahl {list-style-type:decimal;}
+#gfs {color:darkblue;
+	text-shadow:0.1em 0.1em 2px rgb(128,128,255);
+	}
+.webseite {padding-top:4px;
+			padding-bottom:4px;
+			}
+.uws {color:rgb(177,0,0);
+#	text-transform:uppercase;
+	}
+.wir {font-size:small;
+	letter-spacing:0.5em;
+	text-shadow:0.1em 0.1em 2px grey;
+	}
+.fett {font-weight:bold;}
+dt{color:darkred;
+	text-shadow:0.1em 0.1em #ECD9D9;
+	}
+dd {padding-top:0.25em;
+	padding-bottom:0.25em;
+	}
+.vers {color:#008A23;}
+.tips {font-weight:bold;}
+.hinweis {color:#76763A;
+		font-style:italic;
+		}
+.hws {color:#0070A6;
+		font-style:italic;
+text-shadow:0.1em 0.1em #E9E9E9;
+}
+#datum {color:grey;
+		font-size:small;
+		}
+.addendum {color:#FF0000;
+			font-size:0.9em;}

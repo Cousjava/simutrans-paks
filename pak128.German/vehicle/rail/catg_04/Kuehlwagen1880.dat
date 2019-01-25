@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 04-09-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Kuehlwagen1880
+copyright=pumuckl999
+intro_year=1880
+intro_month=1
+retire_year=1915
+retire_month=12
+cost=1530000
+runningcost=53
+waytype=track
+freight=Fleisch
+payload=8
+speed=60
+weight=9
+length=6
+EmptyImage[S]=Kuehlwagen1880.0.0
+EmptyImage[E]=Kuehlwagen1880.0.1
+EmptyImage[SE]=Kuehlwagen1880.0.2
+EmptyImage[SW]=Kuehlwagen1880.0.3
+EmptyImage[N]=Kuehlwagen1880.0.4
+EmptyImage[W]=Kuehlwagen1880.0.5
+EmptyImage[NW]=Kuehlwagen1880.0.6
+EmptyImage[NE]=Kuehlwagen1880.0.7
+--------------------------------------

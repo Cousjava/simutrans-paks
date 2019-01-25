@@ -1,0 +1,37 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Stahlwagen1
+copyright=TonyBzt
+intro_year=1910
+intro_month=1
+cost=4487500
+runningcost=122
+waytype=track
+freight=Stahl
+payload=15
+speed=65
+weight=10
+length=9
+EmptyImage[S]=Stahlwagen.0.0
+EmptyImage[E]=Stahlwagen.0.1
+EmptyImage[SE]=Stahlwagen.0.2
+EmptyImage[SW]=Stahlwagen.0.3
+EmptyImage[N]=Stahlwagen.0.4
+EmptyImage[W]=Stahlwagen.0.5
+EmptyImage[NW]=Stahlwagen.0.6
+EmptyImage[NE]=Stahlwagen.0.7
+FreightImagetype[0]=Stahl
+FreightImage[0][S]=Stahlwagen.3.0
+FreightImage[0][E]=Stahlwagen.3.1
+FreightImage[0][SE]=Stahlwagen.3.2
+FreightImage[0][SW]=Stahlwagen.3.3
+FreightImage[0][N]=Stahlwagen.3.4
+FreightImage[0][W]=Stahlwagen.3.5
+FreightImage[0][NW]=Stahlwagen.3.6
+FreightImage[0][NE]=Stahlwagen.3.7
+---------------------------------------

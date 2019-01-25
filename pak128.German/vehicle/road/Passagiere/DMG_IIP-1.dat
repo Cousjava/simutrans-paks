@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 01-02-2018
+---------------------------------
+obj=vehicle
+name=DMG_II_P-1
+copyright=pumuckl999
+intro_year=1905
+intro_month=5
+retire_year=1930
+retire_month=12
+cost=559400
+runningcost=43
+waytype=road
+speed=18
+power=23
+weight=5.9
+freight=Passagiere
+payload=17
+smoke=Diesel_small
+sound=engine-start-diesel_d.wav
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[S]=DMG_IIP-1.0.0
+EmptyImage[N]=DMG_IIP-1.0.1
+EmptyImage[E]=DMG_IIP-1.0.2
+EmptyImage[W]=DMG_IIP-1.0.3
+EmptyImage[SE]=DMG_IIP-1.0.4
+EmptyImage[NW]=DMG_IIP-1.0.5
+EmptyImage[NE]=DMG_IIP-1.0.6
+EmptyImage[SW]=DMG_IIP-1.0.7
+-------------------------------------------

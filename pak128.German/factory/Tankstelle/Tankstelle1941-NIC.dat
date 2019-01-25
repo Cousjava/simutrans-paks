@@ -1,0 +1,36 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	Letzte Bearbeitung:
+#   $Date: 2017-03-03 15:00:23 +0100 (Fr, 03. Mrz 2017) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+name=Tankstelle1941_NIC
+copyright=TonyBzt
+pax_level=25
+intro_year=1941
+intro_month=1
+retire_year=1990
+retire_month=1
+Location=City
+DistributionWeight=20
+Productivity=50
+InputGood[0]=Benzin
+InputCapacity[0]=200
+InputSupplier[0]=0
+passenger_boost=1000
+mail_boost=500
+electricity_amount=5
+climates=desert, tropic, mediterran, temperate, rocky
+MapColor=175
+Dims=2,2,2
+BackImage[0][0][0][0][0]=Tankstelle.0.0
+BackImage[0][0][1][0][0]=Tankstelle.0.1
+BackImage[0][1][0][0][0]=Tankstelle.1.0
+BackImage[0][1][1][0][0]=Tankstelle.1.1
+BackImage[1][0][0][0][0]=Tankstelle.0.2
+BackImage[1][0][1][0][0]=Tankstelle.0.3
+BackImage[1][1][0][0][0]=Tankstelle.1.2
+BackImage[1][1][1][0][0]=Tankstelle.1.3
+------------------------------------------

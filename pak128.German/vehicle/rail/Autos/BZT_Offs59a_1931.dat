@@ -1,0 +1,40 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu:2008
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Offs59a_1931
+copyright=TonyBzt
+intro_year=1931
+intro_month=5
+retire_year=1965
+retire_month=5
+cost=3060000
+runningcost=73
+waytype=track
+freight=Autos
+payload=4
+weight=18
+speed=80
+length=8
+sound=-1
+Constraint[Next][0]=Offs59b_1931
+EmptyImage[S]=Offs59-PAK.0.0
+EmptyImage[W]=Offs59-PAK.0.1
+EmptyImage[SW]=Offs59-PAK.0.3
+EmptyImage[SE]=Offs59-PAK.0.2
+EmptyImage[N]=Offs59-PAK.0.4
+EmptyImage[E]=Offs59-PAK.0.5
+EmptyImage[NE]=Offs59-PAK.0.7
+EmptyImage[NW]=Offs59-PAK.0.6
+FreightImage[S]=Offs59-PAK.1.0
+FreightImage[W]=Offs59-PAK.1.5
+FreightImage[SW]=Offs59-PAK.1.3
+FreightImage[SE]=Offs59-PAK.1.2
+FreightImage[N]=Offs59-PAK.1.4
+FreightImage[E]=Offs59-PAK.1.1
+FreightImage[NE]=Offs59-PAK.1.7
+FreightImage[NW]=Offs59-PAK.1.6
+--------------------------------------

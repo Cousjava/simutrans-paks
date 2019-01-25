@@ -1,0 +1,37 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 05-09-2017
+#    Geaendert: 18-10-2018 pumuckl999
+---------------------------------
+obj=vehicle
+name=Schienenbus_Bauart_Henschel
+copyright=pumuckl999
+intro_year=1933
+intro_month=2
+retire_year=1945
+retire_month=12
+cost=5463000
+runningcost=128
+waytype=track
+engine_type=diesel
+smoke=Diesel
+freight=Passagiere
+payload=46
+speed=70
+weight=11.5
+power=74
+gear=80
+sound=-1
+length=8
+Constraint[Prev][0]=none
+#Constraint[Next][0]=none
+EmptyImage[S]=Sbus_Bauart_Henschel.0.0
+EmptyImage[E]=Sbus_Bauart_Henschel.0.1
+EmptyImage[SE]=Sbus_Bauart_Henschel.0.2
+EmptyImage[SW]=Sbus_Bauart_Henschel.0.3
+EmptyImage[N]=Sbus_Bauart_Henschel.0.4
+EmptyImage[W]=Sbus_Bauart_Henschel.0.5
+EmptyImage[NW]=Sbus_Bauart_Henschel.0.6
+EmptyImage[NE]=Sbus_Bauart_Henschel.0.7
+-----------------------------

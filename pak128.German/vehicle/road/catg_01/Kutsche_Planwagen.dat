@@ -1,0 +1,35 @@
+#--------------------------------
+#     PAK128.german
+#     Vehicle
+#     02-2017
+#--------------------------------
+obj=vehicle
+name=Kutsche_Planwagen
+copyright=RedRabbit
+intro_year=1800
+intro_month=1
+retire_year=1955
+retire_month=6
+waytype=road
+cost=280000
+runningcost=27
+freight=Bier
+payload=5
+speed=18
+weight=1
+length=6
+sound=-1
+constraint[prev][0]=Zugpferde_1
+constraint[prev][1]=Zugpferde_2
+constraint[prev][2]=Zugpferde_4
+Constraint[Prev][3]=BZT_Traktor-gruen
+constraint[next][0]=none
+EmptyImage[W]=Kutschen_OhneLadungsgrafik.2.1
+EmptyImage[NW]=Kutschen_OhneLadungsgrafik.2.2
+EmptyImage[N]=Kutschen_OhneLadungsgrafik.2.3
+EmptyImage[NE]=Kutschen_OhneLadungsgrafik.2.4,-20
+EmptyImage[E]=Kutschen_OhneLadungsgrafik.2.5,-32,-16
+EmptyImage[SE]=Kutschen_OhneLadungsgrafik.2.6
+EmptyImage[S]=Kutschen_OhneLadungsgrafik.2.7
+EmptyImage[SW]=Kutschen_OhneLadungsgrafik.2.8,20
+------------------------------------------------------

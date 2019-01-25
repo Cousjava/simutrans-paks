@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 03-02-2018
+---------------------------------
+obj=vehicle
+name=MB_N56_Tank
+copyright=pumuckl999
+intro_year=1927
+intro_month=1
+retire_year=1945
+retire_month=12
+cost=794250
+runningcost=24
+waytype=road
+speed=45
+power=44
+weight=9
+freight=Benzin
+payload=5
+length=8
+smoke=Diesel_small
+sound=engine-start-diesel_d.wav
+constraint[prev][0]=none
+constraint[next][0]=MB_N56_Anhaenger_Tank
+constraint[next][1]=none
+EmptyImage[S]=MB_N56Tank.0.0
+EmptyImage[N]=MB_N56Tank.0.1
+EmptyImage[E]=MB_N56Tank.0.2
+EmptyImage[W]=MB_N56Tank.0.3
+EmptyImage[SE]=MB_N56Tank.0.4,4,0
+EmptyImage[NW]=MB_N56Tank.0.5,-2,0
+EmptyImage[NE]=MB_N56Tank.0.6
+EmptyImage[SW]=MB_N56Tank.0.7
+-------------------------------------------

@@ -1,0 +1,39 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 07-08-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Kfz-Transportwagen1979
+copyright=pumuckl999
+intro_year=1979
+intro_month=1
+retire_year=1995
+retire_month=6
+cost=3840000
+runningcost=67
+waytype=track
+freight=Autos
+payload=4
+weight=24
+speed=100
+length=15
+sound=-1
+EmptyImage[S]=KFZtransport1979.0.0
+EmptyImage[E]=KFZtransport1979.0.1
+EmptyImage[SE]=KFZtransport1979.0.2
+EmptyImage[SW]=KFZtransport1979.0.3,6,0
+EmptyImage[N]=KFZtransport1979.0.4
+EmptyImage[W]=KFZtransport1979.0.5
+EmptyImage[NW]=KFZtransport1979.0.6
+EmptyImage[NE]=KFZtransport1979.0.7,-8,0
+FreightImage[S]=KFZtransport1979.1.0
+FreightImage[E]=KFZtransport1979.1.1
+FreightImage[SE]=KFZtransport1979.1.2
+FreightImage[SW]=KFZtransport1979.1.3,6,0
+FreightImage[N]=KFZtransport1979.1.4
+FreightImage[W]=KFZtransport1979.1.5
+FreightImage[NW]=KFZtransport1979.1.6
+FreightImage[NE]=KFZtransport1979.1.7,-8,0
+--------------------------------------

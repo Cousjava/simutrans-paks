@@ -1,0 +1,44 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MAN_16320_F_Stahltransporter_1
+copyright=RedRabbit
+intro_year=1967
+intro_month=1
+retire_year=1986
+retire_month=12
+cost=7354000
+runningcost=121
+waytype=road
+freight=Stahl
+engine_type=diesel
+power=320
+speed=80
+weight=11.4
+payload=13
+length=8
+sound=1
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[W]=MAN_16320_F_pritsche.0.1
+EmptyImage[NW]=MAN_16320_F_pritsche.0.2
+EmptyImage[N]=MAN_16320_F_pritsche.0.3
+EmptyImage[NE]=MAN_16320_F_pritsche.0.4
+EmptyImage[E]=MAN_16320_F_pritsche.0.5
+EmptyImage[SE]=MAN_16320_F_pritsche.0.6
+EmptyImage[S]=MAN_16320_F_pritsche.0.7
+EmptyImage[SW]=MAN_16320_F_pritsche.0.8
+FreightImage[W]=MAN_16320_F_pritsche.2.1
+FreightImage[NW]=MAN_16320_F_pritsche.2.2
+FreightImage[N]=MAN_16320_F_pritsche.2.3
+FreightImage[NE]=MAN_16320_F_pritsche.2.4
+FreightImage[E]=MAN_16320_F_pritsche.2.5
+FreightImage[SE]=MAN_16320_F_pritsche.2.6
+FreightImage[S]=MAN_16320_F_pritsche.2.7
+FreightImage[SW]=MAN_16320_F_pritsche.2.8
+---------------------------------------------------
+

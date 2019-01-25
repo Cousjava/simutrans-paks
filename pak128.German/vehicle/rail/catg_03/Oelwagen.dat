@@ -1,0 +1,29 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Oelwagen
+copyright=TonyBzt
+intro_year=1929
+intro_month=1
+cost=9292500
+runningcost=185
+waytype=track
+freight=Oel
+payload=45
+weight=18
+speed=90
+length=10
+sound=-1
+EmptyImage[S]=Oelwagen.0.0
+EmptyImage[E]=Oelwagen.0.1
+EmptyImage[SE]=Oelwagen.0.2
+EmptyImage[SW]=Oelwagen.0.3
+EmptyImage[N]=Oelwagen.0.4
+EmptyImage[W]=Oelwagen.0.5
+EmptyImage[NW]=Oelwagen.0.6
+EmptyImage[NE]=Oelwagen.0.7
+--------------------------------

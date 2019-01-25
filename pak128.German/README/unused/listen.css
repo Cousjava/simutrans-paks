@@ -1,0 +1,167 @@
+body {font-family:sans-serif;
+      font-size:1.0em;
+      line-height:1.2em;
+      }
+a {text-decoration:none;
+	font-style:italic;
+	font-variant: small-caps;}
+h2 {font-weight:100;
+	font-family:serif;
+margin-left:10%;
+	color:#556B2f;
+	background-color:#fafad2;
+	padding:8px;
+	width:300px;
+	border-top:solid #8fbc8f;
+	border-right:solid #bdb76b;
+	border-left:solid #8fbc8f;
+	border-bottom:solid #bdb76b;
+	border-radius:0.7em;
+	text-align:center;}
+h3 {color:#556B2f;
+	font-weight:lighter;
+	text-align:center;
+	padding:8px;}
+h4 {margin-left:12px;
+	padding:8px;
+	border-left:solid 1px #b22222;
+	border-bottom:solid 1px #b22222;
+	width:500px;
+	color:#8b0000;}
+a {color:#000000;
+		text-align:center;}
+.frontlink {text-decoration:underline;
+			color:#556B2f;
+			font-style:italic;
+			}
+.sublink {color:#556B2f;
+		font-stretch:expanded;
+		font-family:serif;
+		padding:3px;
+		}
+.tabelle {border:solid 1px #ffffff;
+	width:90%;
+	margin-left:10%;
+	font-size:0.9em;}
+#fabrikbox {width:800px;
+			margin:6px auto;
+			border-left:1px solid gainsboro;
+			border-right:1px solid gainsboro;}
+#navbox {width:600px;
+			margin:200px auto;}
+  nav ul {
+     padding: 0.8em;
+    }
+  nav li {
+    color: #b22222; 
+    padding: 0.2em;}
+  nav a {
+    text-decoration: none; 
+    font-weight: bold;
+    color: #b22222;}
+  nav a:focus,
+  nav a:hover,
+  nav a:active {    
+    color:#b22222; 
+    text-decoration:underline;
+  }
+.navigation {position:absolute;
+			left:25px;
+			top:100px;
+			width:300px;
+			border:solid 1px #bbbbbb;
+			border-radius:1em;}
+.inhalt {position:absolute;
+		left:400px;
+		top:100px;}
+th {padding:4px 2px;
+		border:solid 1px #d3d3d3;}
+td {padding:4px 6px;
+border-top:solid 1px #d3d3d3;
+border-bottom:solid 1px #d3d3d3;}
+.objekt {color:#2f4f4f;
+		font-weight:bold;}
+.fracht {color:#5f9ea0;
+		text-align:center;
+		background-color:#fffafa;
+		border:solid 1px #5f9ea0;}
+.frachtlink {color:#5f9ea0;
+		text-align:center;
+		background-color:#fffafa;}
+.fablinks {background-color:white;
+		border-bottom:dotted #6495ed;
+		width:150px;}
+.fablinks:focus,
+.fablinks:hover ,
+.fablinks:active {border-bottom:dotted #a52a2a;}
+
+.katg {color:Darkred;
+		text-align:center;}
+.menge {color:#2e8b57;
+		text-align:center;
+		background-color:#fffafa;
+		border:solid 1px #2e8b57;}
+.kosten {color:#800000;
+		background-color:#fff5ee;
+		text-align:right;
+		border:solid 1px #800000;}
+.datum {color:#fffaf0;
+		background-color:#8fbc8f;
+		text-align:center;
+		font-stretch:expanded;
+		font-weight:bolder;}
+.metrik {color:#696969;
+		background-color:#ffefd5;
+		text-align:center;
+		font-weight:bold;}
+.gewicht {color:#2f4f4f;
+		background-color:#f5f5dc;
+		text-align:right;}
+.fuss {border:solid 1px #800000;
+		color:#800000;
+		font-size:small;}
+.fabs {margin:4px auto;
+	padding:6px 4px;
+	background-color:#dcdcdc;
+	border-top:solid 1px #cccccc;
+	border-left:solid 1px #cccccc;
+	border-right:solid 1px #eeeeee;
+	border-bottom:solid 1px #eeeeee;
+	border-radius:0.1em 0.9em;
+	list-style-type:square;
+	}
+li {padding-left:6px;
+		padding-top:3px;
+		margin-bottom:5px;
+		border:solid 1px #f5fffa;}
+.name {color:#6a5acd;
+		font-weight:bold;
+		border:solid 1px #f5fffa;
+		background-color:#f5fffa;}
+.jahr {color:#2e8b57;
+	font-style:italic;}
+.ort {color:#5f9ea0;
+	font-family:serif;}
+.roh {color:#8b0000;
+	background-color:#fdf5e6;}
+.produkt {background-color:#f5fffa;
+		color:black;}
+.fabname {color:#7f0202;
+		text-align:center;
+		font-stretch:expanded;
+		font-weight:bold;
+		background-color:#f2d3a4;}
+.waren {vertical-align:top;
+		color:Darkgreen;}
+.bauzeit {font-weight:bold;
+			color:#144491;
+			text-decoration:underline;
+			background-color:#ede3da;}
+.prate {color:#4c2600;
+		font-weight:bold;
+		text-transform:uppercase;
+		border:none;}
+.mc {color:#4c2600;
+		font-weight:bold;
+		text-transform:uppercase;
+		border-bottom:solid 1px;}

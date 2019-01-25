@@ -1,0 +1,46 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Stahldampfer_Duenung
+copyright=Pumuckl999
+intro_year=1920
+intro_month=1
+retire_year=1950
+retire_month=12
+waytype=water
+cost=384000
+runningcost=5
+engine_type=steam
+power=240
+gear=1200
+speed=16
+weight=50
+length=12
+sound=boat-horn.wav
+smoke=Steam_ship
+constraint[prev][0]=none
+constraint[next][0]=Tankschleppkahn_Wilde_Hilde
+constraint[next][1]=Tankschleppkahn_Geheimrat_von_Lavale
+constraint[next][2]=Tankschleppkahn_Schluckspecht
+constraint[next][3]=Schute_No.9_Stueckgut
+constraint[next][4]=Schute_No.9_fluessige_Lebensmittel
+constraint[next][5]=Schute_No.9_Holz
+constraint[next][6]=Schute_No.9_landwirtschaftl._Gueter
+constraint[next][7]=Schute_No.9_Schuettgut
+constraint[next][8]=Schute_No.9_Stahl
+constraint[next][9]=Schute_No.9_Vieh
+constraint[next][10]=Schute_No.9_Siloware
+constraint[next][11]=none
+EmptyImage[S]=Schlepper_Duenung.0.7,8,8
+EmptyImage[N]=Schlepper_Duenung.0.3,-24,2
+EmptyImage[E]=Schlepper_Duenung.0.5,4,-4
+EmptyImage[W]=Schlepper_Duenung.0.1,-44,-4
+EmptyImage[SW]=Schlepper_Duenung.0.8,4,4
+EmptyImage[SE]=Schlepper_Duenung.0.6,4,0
+EmptyImage[NW]=Schlepper_Duenung.0.2,-16,4
+EmptyImage[NE]=Schlepper_Duenung.0.4,-12,10
+---------------------------------------------

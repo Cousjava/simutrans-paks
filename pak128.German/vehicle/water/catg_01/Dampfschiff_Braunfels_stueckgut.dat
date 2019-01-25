@@ -1,0 +1,45 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Dampfschiff_Braunfels_Stueckgut
+copyright=Pumuckl999
+intro_year=1871
+intro_month=1
+retire_year=1920
+retire_month=12
+waytype=water
+cost=10080000
+runningcost=877
+freight=Buecher
+payload=150
+engine_type=steam
+power=1100
+gear=1200
+speed=18
+weight=3000
+length=17
+sound=boat-horn.wav
+smoke=Steam_ship
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[S]=Dampfschiff_Braunfels_os.0.7,4,0
+EmptyImage[N]=Dampfschiff_Braunfels_os.0.3,-24,0
+EmptyImage[E]=Dampfschiff_Braunfels_os.0.5,-32,-24
+EmptyImage[W]=Dampfschiff_Braunfels_os.0.1,-44,0
+EmptyImage[SW]=Dampfschiff_Braunfels_os.0.8,-8,-4
+EmptyImage[SE]=Dampfschiff_Braunfels_os.0.6,4,-28
+EmptyImage[NW]=Dampfschiff_Braunfels_os.0.2,-36,4
+EmptyImage[NE]=Dampfschiff_Braunfels_os.0.4,-48,-12
+freightimage[S]=Dampfschiff_Braunfels_os.1.7,4,0
+freightimage[N]=Dampfschiff_Braunfels_os.1.3,-24,0
+freightimage[E]=Dampfschiff_Braunfels_os.1.5,-32,-24
+freightimage[W]=Dampfschiff_Braunfels_os.1.1,-44,0
+freightimage[SW]=Dampfschiff_Braunfels_os.1.8,-8,-4
+freightimage[SE]=Dampfschiff_Braunfels_os.1.6,4,-28
+freightimage[NW]=Dampfschiff_Braunfels_os.1.2,-36,4
+freightimage[NE]=Dampfschiff_Braunfels_os.1.4,-48,-12
+----------------------------------------------------------

@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Magirus_Saturn150D_Tiertransporter
+copyright=RedRabbit
+intro_year=1950
+#intro_year=1956
+intro_month=1
+retire_year=1970
+retire_month=12
+cost=3001000
+runningcost=62
+waytype=road
+speed=71
+power=110
+weight=9
+freight=Vieh
+payload=10
+length=8
+smoke=Diesel
+constraint[prev][0]=none
+EmptyImage[S]=RR_MAG_Jupiter_Vieh.0.1
+EmptyImage[N]=RR_MAG_Jupiter_Vieh.0.2
+EmptyImage[E]=RR_MAG_Jupiter_Vieh.0.3
+EmptyImage[W]=RR_MAG_Jupiter_Vieh.0.4
+EmptyImage[SE]=RR_MAG_Jupiter_Vieh.0.5
+EmptyImage[NW]=RR_MAG_Jupiter_Vieh.0.6
+EmptyImage[NE]=RR_MAG_Jupiter_Vieh.0.7
+EmptyImage[SW]=RR_MAG_Jupiter_Vieh.0.8
+-----------------------------------------------

@@ -1,0 +1,63 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	Letzte Bearbeitung:
+#   $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+name=AVL_Getreidehof_alt
+copyright=RedRabbit
+pax_level=11
+intro_year=1800
+intro_month=1
+retire_year=1975
+retire_month=12
+Location=land
+DistributionWeight=10
+Productivity=100
+OutputGood[0]=Gerste
+OutputCapacity[0]=400
+OutputFactor[0]=100
+OutputGood[1]=Weizen
+OutputCapacity[1]=400
+OutputFactor[1]=100
+OutputGood[2]=Flachs
+OutputCapacity[2]=400
+OutputFactor[2]=70
+max_fields=15
+min_fields=0
+probability_to_spawn=8000
+fields[0]=getreidefeld_1
+storage_capacity[0]=100
+production_per_field[0]=30
+spawn_weight[0]=8
+has_snow[0]=1
+fields[1]=getreidefeld_2
+storage_capacity[1]=100
+production_per_field[1]=35
+spawn_weight[1]=62
+has_snow[1]=1
+fields[2]=flachsfeld_1
+storage_capacity[2]=100
+production_per_field[2]=35
+spawn_weight[2]=15
+has_snow[2]=1
+fields[3]=flachsfeld_2
+storage_capacity[3]=100
+production_per_field[3]=35
+spawn_weight[3]=15
+has_snow[3]=1
+electricity_amount=1
+climates=tundra
+MapColor=47
+Dims=1,2,4
+BackImage[0][0][0][0][0][0]=AVL_Getreidehof_alt.0.0
+BackImage[0][1][0][0][0][0]=AVL_Getreidehof_alt.1.0
+BackImage[1][0][0][0][0][0]=AVL_Getreidehof_alt.0.2
+BackImage[1][0][1][0][0][0]=AVL_Getreidehof_alt.0.3
+BackImage[2][0][0][0][0][0]=AVL_Getreidehof_alt.0.4
+BackImage[2][1][0][0][0][0]=AVL_Getreidehof_alt.1.4
+BackImage[3][0][0][0][0][0]=AVL_Getreidehof_alt.0.6
+BackImage[3][0][1][0][0][0]=AVL_Getreidehof_alt.0.7
+------------------------------------------------------

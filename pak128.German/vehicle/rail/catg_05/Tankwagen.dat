@@ -1,0 +1,29 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Tankwagen
+copyright=TonyBzt/ The Transporter
+intro_year=1926
+intro_month=3
+cost=10305000
+runningcost=190
+waytype=track
+freight=Milch
+payload=45
+weight=18
+speed=100
+length=10
+sound=-1
+EmptyImage[S]=Tankwagen.0.0
+EmptyImage[E]=Tankwagen.0.1
+EmptyImage[SE]=Tankwagen.0.2
+EmptyImage[SW]=Tankwagen.0.3
+EmptyImage[N]=Tankwagen.0.4
+EmptyImage[W]=Tankwagen.0.5
+EmptyImage[NW]=Tankwagen.0.6
+EmptyImage[NE]=Tankwagen.0.7
+--------------------------------

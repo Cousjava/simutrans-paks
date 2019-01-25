@@ -1,0 +1,46 @@
+#	PAK128.german
+#	Vehicle
+obj=vehicle
+name=Triebwagen T24
+copyright=pumuckl999
+intro_year=1924
+intro_month=1
+retire_year=1967
+retire_month=10
+waytype=tram_track
+cost=3145000
+runningcost=153
+freight=Passagiere
+payload=59
+engine_type=electric
+power=120
+gear=80
+speed=30
+weight=13
+length=9
+#sound=
+#smoke=
+constraint[prev][0]=Triebwagen T24
+constraint[prev][1]=Beiwagen T24
+constraint[prev][2]=none
+constraint[next][0]=Triebwagen T24
+constraint[next][1]=Beiwagen T24
+constraint[next][2]=none
+EmptyImage[S]=t24.0.6
+EmptyImage[N]=t24.0.2
+EmptyImage[E]=t24.0.4
+EmptyImage[W]=t24.0.0
+EmptyImage[SW]=t24.0.7
+EmptyImage[SE]=t24.0.5
+EmptyImage[NW]=t24.0.1
+EmptyImage[NE]=t24.0.3
+#freightImageType[0]=
+#freightimage[0][S]=
+#freightimage[0][N]=
+#freightimage[0][E]=
+#freightimage[0][W]=
+#freightimage[0][SW]=
+#freightimage[0][SE]=
+#freightimage[0][NE]=
+#freightimage[0][NW]=
+#_EO_

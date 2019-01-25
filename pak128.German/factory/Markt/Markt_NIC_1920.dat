@@ -1,0 +1,112 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 22-04-2015
+#	Letzte Bearbeitung:
+#   $Date: 2017-04-29 18:44:52 +0200 (Sa, 29. Apr 2017) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+name=Markt_NIC_1920
+copyright=Pumuckl999
+pax_level=32
+intro_year=1920
+intro_month=1
+retire_year=1960
+retire_month=1
+Location=City
+DistributionWeight=127
+Productivity=25
+Range=5
+InputGood[0]=Backwaren
+InputCapacity[0]=300
+InputSupplier[0]=1
+InputGood[1]=Bier
+InputCapacity[1]=300
+InputSupplier[1]=1
+InputGood[2]=Eier
+InputCapacity[2]=300
+InputSupplier[2]=1
+InputGood[3]=Suedfruechte
+InputCapacity[3]=150
+InputFactor[3]=50
+InputSupplier[3]=1
+InputGood[4]=Milch
+InputCapacity[4]=300
+InputSupplier[4]=1
+InputGood[5]=Textilien
+InputCapacity[5]=150
+InputFactor[5]=40
+InputSupplier[5]=1
+InputGood[6]=Obst
+InputCapacity[6]=300
+InputSupplier[6]=1
+electricity_amount=3
+passenger_boost=2000
+mail_boost=500
+expand_probability=40
+# Warscheinlichkeit für expand 10000 oder mehr = 100% (100=1%)
+# nach test makie 100 = nach 2 jahren, 50 = nach 4 Jahre, 10 = keine mehr 
+expand_minimum=1
+expand_range=5
+expand_times=5
+# Produktion wird um =+ expand_minumum + random( expand_range ) erhöht.
+MapColor=132
+climates=desert, tropic, mediterran
+dims=2,2,4
+BackImage[0][0][0][0][0][0]=Markt.0.0
+BackImage[0][0][0][1][0][0]=Markt.0.1
+BackImage[0][0][1][0][0][0]=Markt.0.2
+BackImage[0][0][1][1][0][0]=Markt.0.3
+BackImage[0][1][0][0][0][0]=Markt.0.4
+BackImage[0][1][0][1][0][0]=Markt.0.5
+BackImage[0][1][1][0][0][0]=Markt.0.6
+BackImage[0][0][0][0][0][1]=Markt.0.7
+BackImage[0][0][0][1][0][1]=Markt.1.0
+BackImage[0][0][1][0][0][1]=Markt.1.1
+BackImage[0][0][1][1][0][1]=Markt.1.2
+BackImage[0][1][0][0][0][1]=Markt.1.3
+BackImage[0][1][0][1][0][1]=Markt.1.4
+BackImage[0][1][1][0][0][1]=Markt.1.5
+BackImage[1][0][0][0][0][0]=Markt.1.6
+BackImage[1][0][0][1][0][0]=Markt.1.7
+BackImage[1][0][1][0][0][0]=Markt.2.0
+BackImage[1][0][1][1][0][0]=Markt.2.1
+BackImage[1][1][0][0][0][0]=Markt.2.2
+BackImage[1][1][0][1][0][0]=Markt.2.3
+BackImage[1][1][1][0][0][0]=Markt.2.4
+BackImage[1][0][0][0][0][1]=Markt.2.5
+BackImage[1][0][0][1][0][1]=Markt.2.6
+BackImage[1][0][1][0][0][1]=Markt.2.7
+BackImage[1][0][1][1][0][1]=Markt.3.0
+BackImage[1][1][0][0][0][1]=Markt.3.1
+BackImage[1][1][0][1][0][1]=Markt.3.2
+BackImage[1][1][1][0][0][1]=Markt.3.3
+BackImage[2][0][0][0][0][0]=Markt.3.4
+BackImage[2][0][0][1][0][0]=Markt.3.5
+BackImage[2][0][1][0][0][0]=Markt.3.6
+BackImage[2][0][1][1][0][0]=Markt.3.7
+BackImage[2][1][0][0][0][0]=Markt.4.0
+BackImage[2][1][0][1][0][0]=Markt.4.1
+BackImage[2][1][1][0][0][0]=Markt.4.2
+BackImage[2][0][0][0][0][1]=Markt.4.3
+BackImage[2][0][0][1][0][1]=Markt.4.4
+BackImage[2][0][1][0][0][1]=Markt.4.5
+BackImage[2][0][1][1][0][1]=Markt.4.6
+BackImage[2][1][0][0][0][1]=Markt.4.7
+BackImage[2][1][0][1][0][1]=Markt.5.0
+BackImage[2][1][1][0][0][1]=Markt.5.1
+BackImage[3][0][0][0][0][0]=Markt.5.2
+BackImage[3][0][0][1][0][0]=Markt.5.3
+BackImage[3][0][1][0][0][0]=Markt.5.4
+BackImage[3][0][1][1][0][0]=Markt.5.5
+BackImage[3][1][0][0][0][0]=Markt.5.6
+BackImage[3][1][0][1][0][0]=Markt.5.7
+BackImage[3][1][1][0][0][0]=Markt.6.0
+BackImage[3][0][0][0][0][1]=Markt.6.1
+BackImage[3][0][0][1][0][1]=Markt.6.2
+BackImage[3][0][1][0][0][1]=Markt.6.3
+BackImage[3][0][1][1][0][1]=Markt.6.4
+BackImage[3][1][0][0][0][1]=Markt.6.5
+BackImage[3][1][0][1][0][1]=Markt.6.6
+BackImage[3][1][1][0][0][1]=Markt.6.7
+-----------------------------------------

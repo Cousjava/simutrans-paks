@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 04-09-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Bahnpostwagen_r-a24-2
+copyright=pumuckl999
+intro_year=1969
+intro_month=1
+retire_year=1992
+retire_month=9
+cost=16500000
+runningcost=240
+waytype=track
+freight=Post
+payload=90
+speed=120
+weight=30
+length=13
+sound=-1
+EmptyImage[S]=Bpw_r-a242.0.0
+EmptyImage[E]=Bpw_r-a242.0.1
+EmptyImage[SE]=Bpw_r-a242.0.2
+EmptyImage[SW]=Bpw_r-a242.0.3
+EmptyImage[N]=Bpw_r-a242.0.4
+EmptyImage[W]=Bpw_r-a242.0.5
+EmptyImage[NW]=Bpw_r-a242.0.6
+EmptyImage[NE]=Bpw_r-a242.0.7
+-------------------------------------------

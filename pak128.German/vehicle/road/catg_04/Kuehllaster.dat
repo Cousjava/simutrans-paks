@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 2008
+#	Letzte Bearbeitung
+#    01-2013: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Kuehllaster
+intro_year=1956
+intro_month=1
+cost=2610000
+runningcost=51
+waytype=road
+engine_type=diesel 
+freight=Fleisch
+payload=8
+speed=80
+weight=5
+power=80
+length=9
+smoke=Diesel
+sound=1
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=Kuehllaster.0.0
+EmptyImage[N]=Kuehllaster.0.1
+EmptyImage[E]=Kuehllaster.0.2
+EmptyImage[W]=Kuehllaster.0.3
+EmptyImage[SE]=Kuehllaster.0.4
+EmptyImage[NW]=Kuehllaster.0.5
+EmptyImage[NE]=Kuehllaster.0.6
+EmptyImage[SW]=Kuehllaster.0.7
+--------------------------------------

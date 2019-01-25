@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+#   Letzte Bearbeitung: $Date$ - $Author$: $Date: 2017-09-30 19:15:51 +0200 (Sa, 30. Sep 2017) $ - $Author: NNW $
+---------------------------------
+obj=vehicle
+name=Iljuschin_Il14G_Fracht_Vieh
+copyright=Pumuckl999
+intro_year=1955
+intro_month=1
+retire_year=1967
+retire_month=12
+waytype=air
+cost=37260000
+runningcost=123
+freight=Vieh
+payload=18
+engine_type=diesel
+power=2794
+gear=29
+speed=345
+weight=13
+length=3
+sound=6
+smoke=Diesel
+EmptyImage[W]=Iljuschin_Il14G_Fracht.4.1
+EmptyImage[NW]=Iljuschin_Il14G_Fracht.4.2
+EmptyImage[N]=Iljuschin_Il14G_Fracht.4.3
+EmptyImage[NE]=Iljuschin_Il14G_Fracht.4.4
+EmptyImage[E]=Iljuschin_Il14G_Fracht.4.5
+EmptyImage[SE]=Iljuschin_Il14G_Fracht.4.6
+EmptyImage[S]=Iljuschin_Il14G_Fracht.4.7
+EmptyImage[SW]=Iljuschin_Il14G_Fracht.4.8
+---------------------------------------------

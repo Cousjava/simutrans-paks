@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+---------------------------------
+obj=vehicle
+name=Fokker_FIII
+copyright=Pumuckl999
+waytype=air
+freight=Passagiere
+engine_type=diesel
+power=184
+speed=160
+gear=10
+weight=2.2
+payload=5
+intro_year=1921
+intro_month=1
+retire_year=1925
+retire_month=12
+length=1
+cost=2400000
+runningcost=17
+sound=smalloldplanes.wav
+smoke=Diesel
+EmptyImage[W]=Fokker_FIII.0.0
+EmptyImage[NW]=Fokker_FIII.0.1
+EmptyImage[N]=Fokker_FIII.0.2
+EmptyImage[NE]=Fokker_FIII.0.3
+EmptyImage[E]=Fokker_FIII.0.4
+EmptyImage[SE]=Fokker_FIII.0.5
+EmptyImage[S]=Fokker_FIII.0.6
+EmptyImage[SW]=Fokker_FIII.0.7
+---------------------------------

@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Kuehlwagen1910-liquid
+copyright=TonyBzt
+intro_year=1910
+intro_month=1
+retire_year=1926
+retire_month=12
+cost=1123750
+runningcost=36
+length=7
+waytype=track
+freight=Milch
+payload=7
+speed=65
+weight=10
+EmptyImage[S]=G10.0.0
+EmptyImage[E]=G10.0.1
+EmptyImage[SE]=G10.0.2
+EmptyImage[SW]=G10.0.3
+EmptyImage[N]=G10.0.4
+EmptyImage[W]=G10.0.5
+EmptyImage[NW]=G10.0.6
+EmptyImage[NE]=G10.0.7
+----------------------------

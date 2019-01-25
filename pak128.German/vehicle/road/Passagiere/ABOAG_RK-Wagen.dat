@@ -1,0 +1,41 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 19-10-2018
+---------------------------------
+obj=vehicle
+name=ABOAG_RK
+copyright=pumuckl999
+intro_year=1916
+intro_month=5
+retire_year=1928
+retire_month=12
+cost=2222800
+runningcost=127
+waytype=road
+speed=28
+power=26
+weight=5
+freight=Passagiere
+payload=50
+smoke=Diesel_small
+sound=engine-start-diesel_d.wav
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[S]=ABOAG_RK-Wagen.0.0
+EmptyImage[N]=ABOAG_RK-Wagen.0.1
+EmptyImage[E]=ABOAG_RK-Wagen.0.2
+EmptyImage[W]=ABOAG_RK-Wagen.0.3
+EmptyImage[SE]=ABOAG_RK-Wagen.0.4
+EmptyImage[NW]=ABOAG_RK-Wagen.0.5
+EmptyImage[NE]=ABOAG_RK-Wagen.0.6
+EmptyImage[SW]=ABOAG_RK-Wagen.0.7
+FreightImage[S]=ABOAG_RK-Wagen.1.0
+FreightImage[N]=ABOAG_RK-Wagen.1.1
+FreightImage[E]=ABOAG_RK-Wagen.1.2
+FreightImage[W]=ABOAG_RK-Wagen.1.3
+FreightImage[SE]=ABOAG_RK-Wagen.1.4
+FreightImage[NW]=ABOAG_RK-Wagen.1.5
+FreightImage[NE]=ABOAG_RK-Wagen.1.6
+FreightImage[SW]=ABOAG_RK-Wagen.1.7
+-------------------------------------------

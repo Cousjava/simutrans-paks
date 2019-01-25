@@ -1,0 +1,58 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu: 13-06-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Schute_ALR7_Siloware
+copyright=pumuckl999
+# intro_year=1950
+intro_year=1955
+intro_month=1
+retire_year=1988
+retire_month=12
+cost=18750000
+runningcost=1252
+waytype=water
+freight=Tierfutter
+speed=25
+weight=80
+payload=250
+length=14
+sound=-1
+constraint[prev][0]=Motorschlepper_Priel
+constraint[prev][1]=Schute_ALR7_Stueckgut
+constraint[prev][2]=Schute_ALR7_Schuettgut
+constraint[prev][3]=Schute_ALR7_fluessige_Lebensmittel
+constraint[prev][4]=Schute_ALR7_Holz
+constraint[prev][5]=Schute_ALR7_landwirtschaftl._Gueter
+constraint[prev][6]=Schute_ALR7_Siloware
+constraint[prev][7]=Schute_ALR7_Stahl
+constraint[prev][8]=Schute_ALR7_Vieh
+constraint[next][0]=Schute_ALR7_Stueckgut
+constraint[next][1]=Schute_ALR7_Schuettgut
+constraint[next][2]=Schute_ALR7_fluessige_Lebensmittel
+constraint[next][3]=Schute_ALR7_Holz
+constraint[next][4]=Schute_ALR7_landwirtschaftl._Gueter
+constraint[next][5]=Schute_ALR7_Siloware
+constraint[next][6]=Schute_ALR7_Stahl
+constraint[next][7]=Schute_ALR7_Vieh
+constraint[next][8]=none
+EmptyImage[W]=Schute_ALR7_Silo.0.1,-41,-4
+EmptyImage[NW]=Schute_ALR7_Silo.0.2,-16,7
+EmptyImage[N]=Schute_ALR7_Silo.0.3,-29,3
+EmptyImage[NE]=Schute_ALR7_Silo.0.4,-12,10
+EmptyImage[E]=Schute_ALR7_Silo.0.5,-1,-3
+EmptyImage[SE]=Schute_ALR7_Silo.0.6,4,0
+EmptyImage[S]=Schute_ALR7_Silo.0.7,16,3
+EmptyImage[SW]=Schute_ALR7_Silo.0.8,4,4
+FreightImage[W]=Schute_ALR7_Silo.1.1,-41,-4
+FreightImage[NW]=Schute_ALR7_Silo.1.2,-16,7
+FreightImage[N]=Schute_ALR7_Silo.1.3,-29,3
+FreightImage[NE]=Schute_ALR7_Silo.1.4,-12,10
+FreightImage[E]=Schute_ALR7_Silo.1.5,-1,-3
+FreightImage[SE]=Schute_ALR7_Silo.1.6,4,0
+FreightImage[S]=Schute_ALR7_Silo.1.7,16,3
+FreightImage[SW]=Schute_ALR7_Silo.1.8,4,4
+--------------------------------------------------------

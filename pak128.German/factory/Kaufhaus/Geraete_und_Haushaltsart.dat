@@ -1,0 +1,45 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 26-05-2018
+# --------------------------------
+Obj=factory
+name=Geraete_und_Haushaltsartikel
+copyright=pumuckl999
+pax_level=20
+intro_year=1800
+intro_month=1
+retire_year=1990
+retire_month=1
+Location=city
+DistributionWeight=127
+Productivity=10
+InputGood[0]=Maschinen
+InputCapacity[0]=400
+InputSupplier[0]=1
+InputGood[1]=Moebel
+InputCapacity[1]=400
+InputSupplier[1]=1
+electricity_amount=2
+passenger_boost=3000
+mail_boost=500
+MapColor=132
+climates=desert, tropic, tundra, mediterran, temperate, rocky
+dims=2,1,4
+BackImage[0][0][0][0][0][0]=Geraete_und_Haushaltsart.0.0
+BackImage[0][0][1][0][0][0]=Geraete_und_Haushaltsart.0.1
+BackImage[0][0][0][0][0][1]=Geraete_und_Haushaltsart.0.2
+BackImage[0][0][1][0][0][1]=Geraete_und_Haushaltsart.0.3
+BackImage[1][0][0][0][0][0]=Geraete_und_Haushaltsart.1.0
+BackImage[1][1][0][0][0][0]=Geraete_und_Haushaltsart.1.1
+BackImage[1][0][0][0][0][1]=Geraete_und_Haushaltsart.1.2
+BackImage[1][1][0][0][0][1]=Geraete_und_Haushaltsart.1.3
+BackImage[2][0][0][0][0][0]=Geraete_und_Haushaltsart.2.0
+BackImage[2][0][1][0][0][0]=Geraete_und_Haushaltsart.2.1
+BackImage[2][0][0][0][0][1]=Geraete_und_Haushaltsart.2.2
+BackImage[2][0][1][0][0][1]=Geraete_und_Haushaltsart.2.3
+BackImage[3][0][0][0][0][0]=Geraete_und_Haushaltsart.3.0
+BackImage[3][1][0][0][0][0]=Geraete_und_Haushaltsart.3.1
+BackImage[3][0][0][0][0][1]=Geraete_und_Haushaltsart.3.2
+BackImage[3][1][0][0][0][1]=Geraete_und_Haushaltsart.3.3
+---------------------------------------------

@@ -1,0 +1,44 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Binnenfrachter_Minna_Stueckgut
+copyright=pumuckl999
+intro_year=1919
+intro_month=1
+retire_year=2009
+retire_month=12
+waytype=water
+cost=5622500
+runningcost=706
+freight=Buecher
+payload=140
+engine_type=diesel
+power=125
+gear=1200
+speed=13
+weight=400
+length=14
+sound=-1
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[S]=Binnenfrachter_Minna_stueckgut.0.7,4,-4
+EmptyImage[N]=Binnenfrachter_Minna_stueckgut.0.3,-28,-4
+EmptyImage[E]=Binnenfrachter_Minna_stueckgut.0.5,-28,-32
+EmptyImage[W]=Binnenfrachter_Minna_stueckgut.0.1,-40,-8
+EmptyImage[SW]=Binnenfrachter_Minna_stueckgut.0.8,0,-8
+EmptyImage[SE]=Binnenfrachter_Minna_stueckgut.0.6,4,-28
+EmptyImage[NW]=Binnenfrachter_Minna_stueckgut.0.2,-32,0
+EmptyImage[NE]=Binnenfrachter_Minna_stueckgut.0.4,-52,-12
+freightimage[S]=Binnenfrachter_Minna_stueckgut.1.7,4,-4
+freightimage[N]=Binnenfrachter_Minna_stueckgut.1.3,-28,-4
+freightimage[E]=Binnenfrachter_Minna_stueckgut.1.5,-28,-32
+freightimage[W]=Binnenfrachter_Minna_stueckgut.1.1,-40,-8
+freightimage[SW]=Binnenfrachter_Minna_stueckgut.1.8,0,-8
+freightimage[SE]=Binnenfrachter_Minna_stueckgut.1.6,4,-28
+freightimage[NW]=Binnenfrachter_Minna_stueckgut.1.2,-32,0
+freightimage[NE]=Binnenfrachter_Minna_stueckgut.1.4,-52,-12
+--------------------------------------------------------------

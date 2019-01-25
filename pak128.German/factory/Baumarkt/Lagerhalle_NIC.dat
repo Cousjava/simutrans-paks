@@ -1,0 +1,43 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu:
+#	Letzte Bearbeitung:
+#   $Date$ - $Author$
+# --------------------------------
+Obj=factory
+name=Lagerhalle_NIC
+copyright=TonyBzt
+pax_level=10
+intro_year=1930
+intro_month=1
+Location=City
+DistributionWeight=20
+Productivity=30
+InputGood[0]=Betonfertigteile
+InputCapacity[0]=360
+InputSupplier[0]=0
+InputGood[1]=Farben
+InputCapacity[1]=360
+InputSupplier[1]=0
+InputGood[2]=Bretter
+InputSupplier[2]=0
+InputCapacity[2]=360
+InputGood[3]=Zement
+InputCapacity[3]=360
+InputSupplier[3]=0
+passenger_boost=1000
+mail_boost=500
+climates=desert, tropic, mediterran, temperate
+MapColor=132
+needs_ground=1
+Dims=2,2,2
+BackImage[0][0][0][0][0][0]=Lagerhalle.0.0
+BackImage[0][0][1][0][0][0]=Lagerhalle.0.1
+BackImage[0][1][0][0][0][0]=Lagerhalle.1.0
+BackImage[0][1][1][0][0][0]=Lagerhalle.1.1
+BackImage[1][0][0][0][0][0]=Lagerhalle.0.2
+BackImage[1][0][1][0][0][0]=Lagerhalle.0.3
+BackImage[1][1][0][0][0][0]=Lagerhalle.1.2
+BackImage[1][1][1][0][0][0]=Lagerhalle.1.3
+---------------------------------------------

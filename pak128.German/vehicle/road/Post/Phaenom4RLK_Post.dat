@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 29-01-2018
+---------------------------------
+obj=vehicle
+name=Phaenomen_4RL-K_Post
+copyright=pumuckl999
+intro_year=1930
+intro_month=1
+retire_year=1939
+retire_month=12
+cost=1078500
+runningcost=41
+waytype=road
+speed=45
+power=12
+weight=1.2
+freight=Post
+payload=15
+smoke=Diesel_small
+sound=engine-start-diesel_d.wav
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[S]=Phaenom4RLK_Post.0.0
+EmptyImage[N]=Phaenom4RLK_Post.0.1
+EmptyImage[E]=Phaenom4RLK_Post.0.2
+EmptyImage[W]=Phaenom4RLK_Post.0.3
+EmptyImage[SE]=Phaenom4RLK_Post.0.4
+EmptyImage[NW]=Phaenom4RLK_Post.0.5
+EmptyImage[NE]=Phaenom4RLK_Post.0.6
+EmptyImage[SW]=Phaenom4RLK_Post.0.7
+-------------------------------------------

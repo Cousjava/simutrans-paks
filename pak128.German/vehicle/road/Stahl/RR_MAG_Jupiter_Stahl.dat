@@ -1,0 +1,41 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Magirus_Saturn150D_Stahltransporter
+copyright=RedRabbit
+intro_year=1956
+intro_month=1
+retire_year=1970
+retire_month=12
+cost=5014500
+runningcost=108
+waytype=road
+speed=71
+power=110
+weight=8
+freight=Stahl
+payload=13
+length=8
+smoke=Diesel
+constraint[prev][0]=none
+EmptyImage[S]=RR_MAG_Jupiter_Stahl.0.1
+EmptyImage[N]=RR_MAG_Jupiter_Stahl.0.2
+EmptyImage[E]=RR_MAG_Jupiter_Stahl.0.3
+EmptyImage[W]=RR_MAG_Jupiter_Stahl.0.4
+EmptyImage[SE]=RR_MAG_Jupiter_Stahl.0.5
+EmptyImage[NW]=RR_MAG_Jupiter_Stahl.0.6
+EmptyImage[NE]=RR_MAG_Jupiter_Stahl.0.7
+EmptyImage[SW]=RR_MAG_Jupiter_Stahl.0.8
+FreightImage[S]=RR_MAG_Jupiter_Stahl.1.1
+FreightImage[N]=RR_MAG_Jupiter_Stahl.1.2
+FreightImage[E]=RR_MAG_Jupiter_Stahl.1.3
+FreightImage[W]=RR_MAG_Jupiter_Stahl.1.4
+FreightImage[SE]=RR_MAG_Jupiter_Stahl.1.5
+FreightImage[NW]=RR_MAG_Jupiter_Stahl.1.6
+FreightImage[NE]=RR_MAG_Jupiter_Stahl.1.7
+FreightImage[SW]=RR_MAG_Jupiter_Stahl.1.8
+---------------------------------------------------

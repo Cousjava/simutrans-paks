@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Staubwagen
+copyright=TonyBzt & The Transporter
+intro_year=1955
+intro_month=1
+cost=7410000
+runningcost=133
+waytype=track
+freight=Zement_lose
+payload=24
+speed=100
+weight=21
+speed=100
+length=6
+sound=-1
+EmptyImage[S]=Staubkesselwagen.0.0
+EmptyImage[E]=Staubkesselwagen.0.1
+EmptyImage[SE]=Staubkesselwagen.0.2
+EmptyImage[SW]=Staubkesselwagen.0.3
+EmptyImage[N]=Staubkesselwagen.0.4
+EmptyImage[W]=Staubkesselwagen.0.5
+EmptyImage[NW]=Staubkesselwagen.0.6
+EmptyImage[NE]=Staubkesselwagen.0.7
+----------------------------------------

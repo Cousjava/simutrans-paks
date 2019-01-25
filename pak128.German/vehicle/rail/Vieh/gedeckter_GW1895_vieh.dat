@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 07-08-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=gedeckter_Gueterwagen1895_Vieh
+copyright=pumuckl999
+intro_year=1895
+intro_month=1
+retire_year=1925
+retire_month=1
+cost=2250000
+runningcost=70
+waytype=track
+freight=Vieh
+payload=12
+speed=60
+weight=9
+length=6
+EmptyImage[S]=gedeckter_GW1895.0.0
+EmptyImage[E]=gedeckter_GW1895.0.1
+EmptyImage[SE]=gedeckter_GW1895.0.2
+EmptyImage[SW]=gedeckter_GW1895.0.3
+EmptyImage[N]=gedeckter_GW1895.0.4
+EmptyImage[W]=gedeckter_GW1895.0.5
+EmptyImage[NW]=gedeckter_GW1895.0.6
+EmptyImage[NE]=gedeckter_GW1895.0.7
+--------------------------------------

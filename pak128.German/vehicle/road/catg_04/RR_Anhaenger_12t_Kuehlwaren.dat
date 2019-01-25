@@ -1,0 +1,28 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu:
+---------------------------------
+obj=vehicle
+name=Anhaenger_12t_Kuehltransport
+copyright=RedRabbit
+intro_year=1988
+intro_month=1
+cost=2928000
+runningcost=63
+waytype=road
+speed=80
+weight=4.8
+freight=Fleisch
+payload=12
+length=7
+constraint[next][0]=none
+EmptyImage[S]=RR_Anhaenger_12t_Kuehlwaren.0.1
+EmptyImage[N]=RR_Anhaenger_12t_Kuehlwaren.0.2
+EmptyImage[E]=RR_Anhaenger_12t_Kuehlwaren.0.3
+EmptyImage[W]=RR_Anhaenger_12t_Kuehlwaren.0.4
+EmptyImage[SE]=RR_Anhaenger_12t_Kuehlwaren.0.5
+EmptyImage[NW]=RR_Anhaenger_12t_Kuehlwaren.0.6
+EmptyImage[NE]=RR_Anhaenger_12t_Kuehlwaren.0.7
+EmptyImage[SW]=RR_Anhaenger_12t_Kuehlwaren.0.8
+-----------------------------------------------------

@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 27-07-2017
+#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
+---------------------------------
+obj=vehicle
+name=Vossloh-G400B
+waytype=track
+copyright=pumuckl999
+intro_year=2003
+intro_month=1
+cost=3130000
+runningcost=11
+freight=None
+engine_type=diesel 
+smoke=Diesel
+speed=70
+gear=175
+weight=40
+power=390
+length=6
+sound=diesel.wav
+EmptyImage[S]=VG400B.0.0
+EmptyImage[E]=VG400B.0.1
+EmptyImage[SE]=VG400B.0.2
+EmptyImage[SW]=VG400B.0.3
+EmptyImage[N]=VG400B.0.4
+EmptyImage[W]=VG400B.0.5
+EmptyImage[NW]=VG400B.0.6
+EmptyImage[NE]=VG400B.0.7
+-----------------------------

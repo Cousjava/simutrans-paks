@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 01-09-2017
+#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
+---------------------------------
+obj=vehicle
+name=BR101_Metropolitan
+copyright=pumuckl999
+intro_year=1999
+intro_month=1
+cost=141640000
+runningcost=609
+waytype=electrified_track
+speed=220
+weight=84
+power=6400
+gear=350
+length=11
+sound=-1
+constraint[prev][0]=none
+constraint[next][0]=Metropolitan_Mittelwagen
+EmptyImage[S]=BR101M.0.0
+EmptyImage[E]=BR101M.0.1
+EmptyImage[SE]=BR101M.0.2
+EmptyImage[SW]=BR101M.0.3
+EmptyImage[N]=BR101M.0.4
+EmptyImage[W]=BR101M.0.5
+EmptyImage[NW]=BR101M.0.6
+EmptyImage[NE]=BR101M.0.7
+-----------------------------

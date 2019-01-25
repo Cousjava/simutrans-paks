@@ -1,0 +1,48 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 05-08-2017
+#	Letzte Bearbeitung: 25-10-2018 pumuckl999
+---------------------------------
+obj=vehicle
+name=Kesselwagen_BLME42P
+copyright=pumuckl999
+intro_year=1918
+intro_month=1
+retire_year=1955
+retire_month=8
+cost=3540000
+runningcost=85
+waytype=track
+freight=Milch
+payload=19
+speed=80
+weight=12
+length=7
+EmptyImage[S]=KW_BLME42P.0.0
+EmptyImage[E]=KW_BLME42P.0.1
+EmptyImage[SE]=KW_BLME42P.0.2
+EmptyImage[SW]=KW_BLME42P.0.3
+EmptyImage[N]=KW_BLME42P.0.4
+EmptyImage[W]=KW_BLME42P.0.5
+EmptyImage[NW]=KW_BLME42P.0.6
+EmptyImage[NE]=KW_BLME42P.0.7
+FreightImagetype[0]=Milch
+FreightImage[0][S]=KW_BLME42P.1.0
+FreightImage[0][E]=KW_BLME42P.1.1
+FreightImage[0][SE]=KW_BLME42P.1.2
+FreightImage[0][SW]=KW_BLME42P.1.3
+FreightImage[0][N]=KW_BLME42P.1.4
+FreightImage[0][W]=KW_BLME42P.1.5
+FreightImage[0][NW]=KW_BLME42P.1.6
+FreightImage[0][NE]=KW_BLME42P.1.7
+#FreightImagetype[1]=Wein
+#FreightImage[1][S]=KW_BLME42P.2.0
+#FreightImage[1][E]=KW_BLME42P.2.1
+#FreightImage[1][SE]=KW_BLME42P.2.2
+#FreightImage[1][SW]=KW_BLME42P.2.3
+#FreightImage[1][N]=KW_BLME42P.2.4
+#FreightImage[1][W]=KW_BLME42P.2.5
+#FreightImage[1][NW]=KW_BLME42P.2.6
+#FreightImage[1][NE]=KW_BLME42P.2.7
+---------------------------------

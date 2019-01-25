@@ -1,0 +1,37 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Getreidewagen
+copyright=TonyBzt
+intro_year=1960
+intro_month=1
+cost=5530000
+runningcost=99
+waytype=track
+freight=Weizen
+payload=30
+weight=13
+speed=100
+length=9
+sound=-1
+EmptyImage[S]=Getreidewagen.0.0
+EmptyImage[E]=Getreidewagen.0.1
+EmptyImage[SE]=Getreidewagen.0.2
+EmptyImage[SW]=Getreidewagen.0.3
+EmptyImage[N]=Getreidewagen.0.4
+EmptyImage[W]=Getreidewagen.0.5
+EmptyImage[NW]=Getreidewagen.0.6
+EmptyImage[NE]=Getreidewagen.0.7
+FreightImage[S]=Getreidewagen.1.0
+FreightImage[E]=Getreidewagen.1.1
+FreightImage[SE]=Getreidewagen.1.2
+FreightImage[SW]=Getreidewagen.1.3
+FreightImage[N]=Getreidewagen.1.4
+FreightImage[W]=Getreidewagen.1.5
+FreightImage[NW]=Getreidewagen.1.6
+FreightImage[NE]=Getreidewagen.1.7
+---------------------------------------

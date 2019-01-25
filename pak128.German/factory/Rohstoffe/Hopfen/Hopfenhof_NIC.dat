@@ -1,0 +1,36 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	Letzte Bearbeitung:
+#	03-03-2017 NNW
+# --------------------------------
+Obj=factory
+name=Hopfenhof_NIC
+copyright=Lemuria
+pax_level=12
+intro_year=1800
+intro_month=1
+Location=Land
+DistributionWeight=10
+Productivity=25
+max_fields=26
+min_fields=0
+probability_to_spawn=8000
+production_per_field[0]=10
+fields[0]=hopfen_1
+OutputGood[0]=Hopfen
+OutputCapacity[0]=100
+electricity_amount=1
+MapColor=166
+climates=temperate, tundra
+dims=2,1,4
+BackImage[0][0][0][0][0][0]=Hopfenhof.0.0
+BackImage[0][0][1][0][0][0]=Hopfenhof.0.1
+BackImage[1][0][0][0][0][0]=Hopfenhof.0.2
+BackImage[1][1][0][0][0][0]=Hopfenhof.1.0
+BackImage[2][0][0][0][0][0]=Hopfenhof.1.1
+BackImage[2][0][1][0][0][0]=Hopfenhof.1.2
+BackImage[3][0][0][0][0][0]=Hopfenhof.2.0
+BackImage[3][1][0][0][0][0]=Hopfenhof.2.1
+--------------------------------------------

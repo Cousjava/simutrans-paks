@@ -1,0 +1,42 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 01-2011 
+#	Letzte Bearbeitung:
+#	$LastChangedDate: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+name=ALP_Moebelhaus_NIC
+copyright=Lemuria
+pax_level=14
+intro_year=1987
+intro_month=1
+Location=City
+DistributionWeight=127
+Productivity=50
+InputGood[0]=Moebel
+InputCapacity[0]=400
+InputSupplier[0]=0
+electricity_amount=1
+passenger_boost=2000
+mail_boost=500
+climates=rocky
+MapColor=188
+Dims=2,2,4
+BackImage[0][0][0][0][0][0]=ALP_Moebelhaus.0.0
+BackImage[0][0][1][0][0][0]=ALP_Moebelhaus.0.1
+BackImage[0][1][0][0][0][0]=ALP_Moebelhaus.1.0
+BackImage[0][1][1][0][0][0]=ALP_Moebelhaus.1.1
+BackImage[1][0][0][0][0][0]=ALP_Moebelhaus.2.0
+BackImage[1][0][1][0][0][0]=ALP_Moebelhaus.2.1
+BackImage[1][1][0][0][0][0]=ALP_Moebelhaus.3.0
+BackImage[1][1][1][0][0][0]=ALP_Moebelhaus.3.1
+BackImage[2][0][0][0][0][0]=ALP_Moebelhaus.4.0
+BackImage[2][0][1][0][0][0]=ALP_Moebelhaus.4.1
+BackImage[2][1][0][0][0][0]=ALP_Moebelhaus.5.0
+BackImage[2][1][1][0][0][0]=ALP_Moebelhaus.5.1
+BackImage[3][0][0][0][0][0]=ALP_Moebelhaus.6.0
+BackImage[3][0][1][0][0][0]=ALP_Moebelhaus.6.1
+BackImage[3][1][0][0][0][0]=ALP_Moebelhaus.7.0
+BackImage[3][1][1][0][0][0]=ALP_Moebelhaus.7.1
+------------------------------------------------------

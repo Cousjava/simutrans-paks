@@ -1,0 +1,32 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 09-2011
+#	Letzte Bearbeitung:
+#	$Date: 2017-04-29 18:44:52 +0200 (Sa, 29. Apr 2017) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+name=ALP_Buchladen_NIC
+copyright=Lemuria
+pax_level=35
+intro_year=1835
+intro_month=1
+Location=City
+DistributionWeight=127
+Productivity=10
+Range=2
+InputGood[0]=Buecher
+InputCapacity[0]=1200
+InputSupplier[0]=0
+electricity_amount=1
+passenger_boost=3000
+mail_boost=500
+MapColor=223
+needs_ground=1
+climates=rocky
+Dims=1,1,4
+BackImage[0][0][0][0][0]=ALP_Buchladen.0.0
+BackImage[1][0][0][0][0]=ALP_Buchladen.0.1
+BackImage[2][0][0][0][0]=ALP_Buchladen.0.2
+BackImage[3][0][0][0][0]=ALP_Buchladen.0.3
+--------------------------------------------

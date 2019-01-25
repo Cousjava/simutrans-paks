@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu:
+---------------------------------
+obj=vehicle
+name=Unimog_406
+copyright=RedRabbit
+intro_year=1962
+intro_month=3
+retire_year=1988
+retire_month=5
+cost=440800
+runningcost=7
+waytype=road
+speed=79
+power=52
+weight=3
+length=5
+smoke=Diesel
+constraint[prev][0]=none
+constraint[next][0]=Anhaenger_Unimog_Landwirt
+constraint[next][1]=none
+EmptyImage[S]=RR_MB_Unimog406.0.1
+EmptyImage[N]=RR_MB_Unimog406.0.2
+EmptyImage[E]=RR_MB_Unimog406.0.3
+EmptyImage[W]=RR_MB_Unimog406.0.4
+EmptyImage[SE]=RR_MB_Unimog406.0.5
+EmptyImage[NW]=RR_MB_Unimog406.0.6
+EmptyImage[NE]=RR_MB_Unimog406.0.7
+EmptyImage[SW]=RR_MB_Unimog406.0.8
+-----------------------------------------

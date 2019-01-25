@@ -1,0 +1,36 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 06-2010
+#	Letzte Bearbeitung:
+#   $Date: 2017-03-03 15:00:23 +0100 (Fr, 03. Mrz 2017) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+name=ALP_Apotheke_NIC
+copyright=Lemuria
+pax_level=20
+intro_year=1906
+intro_month=1
+Location=City
+DistributionWeight=127
+Productivity=5
+Range=4
+InputGood[0]=Medikamente
+InputCapacity[0]=120
+InputFactor[0]=100
+InputSupplier[0]=0
+InputGood[1]=Benzin
+InputCapacity[1]=60
+InputFactor[1]=10
+InputSupplier[1]=0
+electricity_amount=1
+Passenger_boost=1000
+Mail_boost=500
+climates=rocky
+MapColor=75
+Dims=1,1,4
+BackImage[0][0][0][0][0][0]=ALP_Apotheke.0.0
+BackImage[1][0][0][0][0][0]=ALP_Apotheke.0.1
+BackImage[2][0][0][0][0][0]=ALP_Apotheke.0.2
+BackImage[3][0][0][0][0][0]=ALP_Apotheke.0.3
+-----------------------------------------------

@@ -1,0 +1,12 @@
+﻿#
+# Nicht abgefuelltes Bier
+#
+#obj=good
+#name=beer
+#metric= m3
+#weight_per_unit=910
+#catg=5
+#value=96
+#=0,32
+#speed_bonus=0
+#-----------------------

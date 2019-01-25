@@ -1,0 +1,37 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+---------------------------------
+obj=vehicle
+name=BR01_DRG
+copyright=MadMike/TonyBzt
+intro_year=1925
+intro_month=2
+retire_year=1982
+retire_month=12
+cost=22514000
+runningcost=352
+waytype=track
+engine_type=steam
+freight=None
+smoke=Steam
+length=10
+speed=130
+gear=240
+weight=109
+power=1648
+sound=3
+Constraint[Prev][0]=BR01Tender
+Constraint[Prev][1]=none
+Constraint[Next][0]=BR01Tender
+Constraint[Next][1]=none
+EmptyImage[S]=BR01.0.0
+EmptyImage[E]=BR01.0.1
+EmptyImage[SE]=BR01.0.2
+EmptyImage[SW]=BR01.0.3
+EmptyImage[N]=BR01.0.4
+EmptyImage[W]=BR01.0.5
+EmptyImage[NW]=BR01.0.6
+EmptyImage[NE]=BR01.0.7
+------------------------------

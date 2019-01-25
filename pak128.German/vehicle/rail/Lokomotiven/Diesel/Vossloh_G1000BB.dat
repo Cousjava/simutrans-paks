@@ -1,0 +1,29 @@
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 14-07-2018
+#	Letzte Bearbeitung: $Date$ - $Author$
+----------------------------------
+obj=vehicle
+name=Vossloh_G_1000BB
+copyright=pumuckl999
+intro_year=2002
+intro_month=8
+cost=11800000
+RunningCost=47
+waytype=track
+engine_type=diesel
+power=1100
+gear=260
+speed=100
+weight=80
+length=9
+sound=diesel.wav
+EmptyImage[S]=Vossloh_G1000BB.0.0
+EmptyImage[E]=Vossloh_G1000BB.0.1
+EmptyImage[SE]=Vossloh_G1000BB.0.2
+EmptyImage[SW]=Vossloh_G1000BB.0.3
+EmptyImage[N]=Vossloh_G1000BB.0.4
+EmptyImage[W]=Vossloh_G1000BB.0.5
+EmptyImage[NW]=Vossloh_G1000BB.0.6
+EmptyImage[NE]=Vossloh_G1000BB.0.7
+-----------------------------

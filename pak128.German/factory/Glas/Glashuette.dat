@@ -1,0 +1,70 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	Letzte Bearbeitung:
+# --------------------------------
+Obj=factory
+Name=Glasfabrik
+copyright=pumuckl999
+DistributionWeight=64
+Productivity=100
+pax_level=20
+intro_year=1896
+intro_month=1
+retire_year=2005
+retire_month=1
+location=city
+InputGood[0]=Sand
+InputCapacity[0]=800
+InputSupplier[0]=1
+InputFactor[0]=100
+InputGood[1]=Kohle
+InputCapacity[1]=800
+InputSupplier[1]=1
+InputFactor[1]=150
+OutputGood[0]=Glas
+OutputCapacity[0]=200
+OutputFactor[1]=25
+OutputGood[1]=Flaschen
+OutputCapacity[1]=400
+OutputFactor[1]=75
+MapColor=119
+climates=mediterran
+electricity_amount=15
+passenger_boost=1000
+mail_boost=500
+dims=2,2,4
+BackImage[0][0][0][0][0][0]=Glashuette.0.0
+BackImage[0][0][1][0][0][0]=Glashuette.0.1
+BackImage[0][1][0][0][0][0]=Glashuette.0.2
+BackImage[0][1][1][0][0][0]=Glashuette.0.3
+BackImage[0][0][0][0][0][1]=Glashuette.0.4
+BackImage[0][0][1][0][0][1]=Glashuette.0.5
+BackImage[0][1][0][0][0][1]=Glashuette.1.0
+BackImage[0][1][1][0][0][1]=Glashuette.1.1
+BackImage[1][0][0][0][0][0]=Glashuette.1.2
+BackImage[1][0][1][0][0][0]=Glashuette.1.3
+BackImage[1][1][0][0][0][0]=Glashuette.1.4
+BackImage[1][1][1][0][0][0]=Glashuette.1.5
+BackImage[1][0][0][0][0][1]=Glashuette.2.0
+BackImage[1][0][1][0][0][1]=Glashuette.2.1
+BackImage[1][1][0][0][0][1]=Glashuette.2.2
+BackImage[1][1][1][0][0][1]=Glashuette.2.3
+BackImage[2][0][0][0][0][0]=Glashuette.2.4
+BackImage[2][0][1][0][0][0]=Glashuette.2.5
+BackImage[2][1][0][0][0][0]=Glashuette.3.0
+BackImage[2][1][1][0][0][0]=Glashuette.3.1
+BackImage[2][0][0][0][0][1]=Glashuette.3.2
+BackImage[2][0][1][0][0][1]=Glashuette.3.3
+BackImage[2][1][0][0][0][1]=Glashuette.3.4
+BackImage[2][1][1][0][0][1]=Glashuette.3.5
+BackImage[3][0][0][0][0][0]=Glashuette.4.0
+BackImage[3][0][1][0][0][0]=Glashuette.4.1
+BackImage[3][1][0][0][0][0]=Glashuette.4.2
+BackImage[3][1][1][0][0][0]=Glashuette.4.3
+BackImage[3][0][0][0][0][1]=Glashuette.4.4
+BackImage[3][0][1][0][0][1]=Glashuette.4.5
+BackImage[3][1][0][0][0][1]=Glashuette.5.0
+BackImage[3][1][1][0][0][1]=Glashuette.5.1
+----------------------------------------------

@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Boeing_B707
+copyright=Pumuckl999
+intro_year=1960
+intro_month=1
+retire_year=1984
+retire_month=12
+waytype=air
+cost=397824000
+runningcost=779
+freight=Passagiere
+payload=148
+engine_type=diesel
+power=13500
+gear=150
+speed=896
+weight=67
+length=5
+sound=5
+EmptyImage[W]=Boeing_B707.0.0
+EmptyImage[NW]=Boeing_B707.0.1
+EmptyImage[N]=Boeing_B707.0.2,-5,0
+EmptyImage[NE]=Boeing_B707.0.3,-22,0
+EmptyImage[E]=Boeing_B707.0.4,-1,0
+EmptyImage[SE]=Boeing_B707.0.5
+EmptyImage[S]=Boeing_B707.0.6
+EmptyImage[SW]=Boeing_B707.0.7
+----------------------------------

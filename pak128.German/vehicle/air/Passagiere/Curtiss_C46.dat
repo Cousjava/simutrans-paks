@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Curtiss_C46
+copyright=Pumuckl999
+intro_year=1941
+intro_month=7
+retire_year=1945
+retire_month=12
+waytype=air
+cost=46980000
+runningcost=169
+freight=Passagiere
+payload=36
+engine_type=diesel
+power=4260
+gear=35
+speed=435
+weight=23
+length=3
+sound=6
+smoke=Diesel
+EmptyImage[W]=Curtiss_C46.0.0
+EmptyImage[NW]=Curtiss_C46.0.1
+EmptyImage[N]=Curtiss_C46.0.2
+EmptyImage[NE]=Curtiss_C46.0.3
+EmptyImage[E]=Curtiss_C46.0.4
+EmptyImage[SE]=Curtiss_C46.0.5
+EmptyImage[S]=Curtiss_C46.0.6
+EmptyImage[SW]=Curtiss_C46.0.7
+---------------------------------

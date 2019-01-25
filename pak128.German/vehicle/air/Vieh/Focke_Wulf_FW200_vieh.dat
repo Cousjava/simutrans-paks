@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Focke-Wulf_FW200_Vieh
+copyright=Pumuckl999
+intro_year=1937
+intro_month=1
+retire_year=1945
+retire_month=12
+waytype=air
+cost=36480000
+runningcost=144
+freight=Vieh
+payload=16
+engine_type=diesel
+power=4000
+gear=40
+speed=380
+weight=14
+length=3
+sound=planelow.wav
+smoke=Diesel
+EmptyImage[W]=Focke_Wulf_FW200_Fracht.4.1
+EmptyImage[NW]=Focke_Wulf_FW200_Fracht.4.2
+EmptyImage[N]=Focke_Wulf_FW200_Fracht.4.3
+EmptyImage[NE]=Focke_Wulf_FW200_Fracht.4.4
+EmptyImage[E]=Focke_Wulf_FW200_Fracht.4.5
+EmptyImage[SE]=Focke_Wulf_FW200_Fracht.4.6
+EmptyImage[S]=Focke_Wulf_FW200_Fracht.4.7
+EmptyImage[SW]=Focke_Wulf_FW200_Fracht.4.8
+---------------------------------------------

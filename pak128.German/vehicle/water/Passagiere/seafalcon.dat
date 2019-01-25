@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$ 
+
+---------------------------------
+obj=vehicle
+name=Bodeneffektfahrzeug Seafalcon
+copyright=pumuckl999
+intro_year=2010
+intro_month=1
+waytype=water
+cost=5325000
+runningcost=31
+freight=Passagiere
+payload=7
+engine_type=diesel
+power=250
+speed=150
+gear=11
+weight=2
+length=1
+sound=-1
+smoke=Diesel
+EmptyImage[W]=seafalcon.0.0,-16,8
+EmptyImage[NW]=seafalcon.0.1,-36,16
+EmptyImage[N]=seafalcon.0.2,-60,4
+EmptyImage[NE]=seafalcon.0.3,-84,-12
+EmptyImage[E]=seafalcon.0.4,-64,-48
+EmptyImage[SE]=seafalcon.0.5,4,-48
+EmptyImage[S]=seafalcon.0.6,32,-16
+EmptyImage[SW]=seafalcon.0.7,32,-8
+--------------------------------

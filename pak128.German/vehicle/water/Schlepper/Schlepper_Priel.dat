@@ -1,0 +1,45 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Motorschlepper_Priel
+copyright=Pumuckl999
+intro_year=1950
+intro_month=1
+retire_year=1988
+retire_month=12
+waytype=water
+cost=800000
+runningcost=8
+engine_type=diesel
+power=400
+gear=1200
+speed=20
+weight=60
+length=12
+sound=boat-horn.wav
+smoke=Diesel
+constraint[prev][0]=none
+constraint[next][0]=Tankschleppkahn_Wilde_Hilde
+constraint[next][1]=Tankschleppkahn_Schluckspecht
+constraint[next][2]=Schute_ALR7_Stueckgut
+constraint[next][3]=Schute_ALR7_fluessige_Lebensmittel
+constraint[next][4]=Schute_ALR7_Holz
+constraint[next][5]=Schute_ALR7_landwirtschaftl._Gueter
+constraint[next][6]=Schute_ALR7_Schuettgut
+constraint[next][7]=Schute_ALR7_Stahl
+constraint[next][8]=Schute_ALR7_Vieh
+constraint[next][9]=Schute_ALR7_Siloware
+constraint[next][10]=none
+EmptyImage[S]=Schlepper_Priel.0.7,8,8
+EmptyImage[N]=Schlepper_Priel.0.3,-24,2
+EmptyImage[E]=Schlepper_Priel.0.5,4,0
+EmptyImage[W]=Schlepper_Priel.0.1,-44,-4
+EmptyImage[SW]=Schlepper_Priel.0.8,4,4
+EmptyImage[SE]=Schlepper_Priel.0.6,4,0
+EmptyImage[NW]=Schlepper_Priel.0.2,-16,4
+EmptyImage[NE]=Schlepper_Priel.0.4,-12,10
+------------------------------------------

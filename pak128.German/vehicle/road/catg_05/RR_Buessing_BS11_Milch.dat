@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Buessing_BS11_Kuehlwaren2
+copyright=RedRabbit
+intro_year=1967
+intro_month=1
+retire_year=1973
+retire_month=12
+cost=1932000
+runningcost=32
+waytype=road
+freight=Milch
+payload=6
+speed=80
+weight=6
+power=99
+length=7
+smoke=Diesel
+constraint[prev][0]=none
+EmptyImage[S]=RR_Buessing_BS11_Milch.0.1
+EmptyImage[N]=RR_Buessing_BS11_Milch.0.2
+EmptyImage[E]=RR_Buessing_BS11_Milch.0.3
+EmptyImage[W]=RR_Buessing_BS11_Milch.0.4
+EmptyImage[SE]=RR_Buessing_BS11_Milch.0.5
+EmptyImage[NW]=RR_Buessing_BS11_Milch.0.6
+EmptyImage[NE]=RR_Buessing_BS11_Milch.0.7
+EmptyImage[SW]=RR_Buessing_BS11_Milch.0.8
+------------------------------------------------

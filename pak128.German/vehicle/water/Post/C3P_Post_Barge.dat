@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MHz-C3P_Post_Barge
+copyright=MHz
+intro_year=1972
+intro_month=4
+cost=13761000
+runningcost=636
+waytype=water
+engine_type=diesel
+freight=Post
+payload=250
+speed=33
+power=420
+gear=110
+weight=85
+smoke=Diesel
+sound=boat-horn.wav
+constraint[next][0]=none
+constraint[prev][0]=none
+emptyimage[w]=ship_pass-post_01.14.1
+emptyimage[nw]=ship_pass-post_01.14.2
+emptyimage[n]=ship_pass-post_01.14.3
+emptyimage[ne]=ship_pass-post_01.14.4
+emptyimage[e]=ship_pass-post_01.14.5
+emptyimage[se]=ship_pass-post_01.14.6
+emptyimage[s]=ship_pass-post_01.14.7
+emptyimage[sw]=ship_pass-post_01.14.8
+-----------------------------------------

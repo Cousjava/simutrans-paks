@@ -1,0 +1,36 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 20-2011
+#	Letzte Bearbeitung:
+#	$date$ - $Author: NNW $
+# --------------------------------
+Obj=factory
+name=AVL_Buchladen_NIC
+copyright=Lemuria
+pax_level=20
+intro_year=1973
+intro_month=1
+Location=City
+DistributionWeight=30
+Productivity=10
+Range=2
+InputGood[0]=Buecher
+InputCapacity[0]=240
+InputSupplier[0]=0
+electricity_amount=1
+passenger_boost=3000
+mail_boost=500
+climates=tundra
+MapColor=223
+needs_ground=1
+dims=2,1,4
+BackImage[0][0][0][0][0][0]=AVL_Buchladen.0.0
+BackImage[0][0][1][0][0][0]=AVL_Buchladen.0.1
+BackImage[1][0][0][0][0][0]=AVL_Buchladen.0.2
+BackImage[1][1][0][0][0][0]=AVL_Buchladen.1.0
+BackImage[2][0][0][0][0][0]=AVL_Buchladen.1.1
+BackImage[2][0][1][0][0][0]=AVL_Buchladen.1.2
+BackImage[3][0][0][0][0][0]=AVL_Buchladen.2.0
+BackImage[3][1][0][0][0][0]=AVL_Buchladen.2.1
+------------------------------------------------

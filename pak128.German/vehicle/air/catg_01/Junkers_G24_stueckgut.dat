@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+---------------------------------
+obj=vehicle
+name=Junkers_G24_Stueckgut
+copyright=Pumuckl999
+intro_year=1925
+intro_month=1
+retire_year=1935
+retire_month=12
+waytype=air
+cost=5910000
+runningcost=35
+freight=Buecher
+payload=5
+engine_type=diesel
+power=684
+gear=17
+speed=197
+weight=6
+length=2
+sound=planelow.wav
+smoke=Diesel
+EmptyImage[W]=Junkers_G24_Fracht.2.1
+EmptyImage[NW]=Junkers_G24_Fracht.2.2
+EmptyImage[N]=Junkers_G24_Fracht.2.3
+EmptyImage[NE]=Junkers_G24_Fracht.2.4
+EmptyImage[E]=Junkers_G24_Fracht.2.5
+EmptyImage[SE]=Junkers_G24_Fracht.2.6
+EmptyImage[S]=Junkers_G24_Fracht.2.7
+EmptyImage[SW]=Junkers_G24_Fracht.2.8
+----------------------------------------

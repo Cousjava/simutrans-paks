@@ -1,0 +1,45 @@
+#--------------------------------
+#     PAK128.german
+#     Vehicle
+#     24-08-2018
+#	Letzte Bearbeitung:
+#--------------------------------
+obj=vehicle
+name=Kutschen_Stahl
+copyright=RedRabbit
+intro_year=1800
+retire_year=1955
+retire_month=10
+waytype=road
+cost=248000
+runningcost=25
+freight=Stahl
+payload=3
+speed=18
+weight=0.5
+length=6
+constraint[prev][0]=Zugpferde_1
+constraint[prev][1]=Zugpferde_2
+constraint[prev][2]=Zugpferde_4
+Constraint[Prev][3]=BZT_Traktor-gruen
+constraint[next][0]=none
+
+EmptyImage[W]=Kutschen_Stahl.0.1
+EmptyImage[NW]=Kutschen_Stahl.0.2
+EmptyImage[N]=Kutschen_Stahl.0.3
+EmptyImage[NE]=Kutschen_Stahl.0.4,-20
+EmptyImage[E]=Kutschen_Stahl.0.5,-32,-16
+EmptyImage[SE]=Kutschen_Stahl.0.6
+EmptyImage[S]=Kutschen_Stahl.0.7
+EmptyImage[SW]=Kutschen_Stahl.0.8,20
+
+FreightImagetype[0]=Stahl
+FreightImage[0][W]=Kutschen_Stahl.1.1
+FreightImage[0][NW]=Kutschen_Stahl.1.2
+FreightImage[0][N]=Kutschen_Stahl.1.3
+FreightImage[0][NE]=Kutschen_Stahl.1.4,-20
+FreightImage[0][E]=Kutschen_Stahl.1.5,-32,-16
+FreightImage[0][SE]=Kutschen_Stahl.1.6
+FreightImage[0][S]=Kutschen_Stahl.1.7
+FreightImage[0][SW]=Kutschen_Stahl.1.8,20
+--------------------------------------------

@@ -1,0 +1,67 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	Letzte Bearbeitung:
+#   $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+Name=NDTZuckerfabrik_NIC
+copyright=pumuckl999
+pax_level=20
+intro_year=1800
+intro_month=1
+location=City
+DistributionWeight=1
+Productivity=50
+InputGood[0]=Zuckerrueben
+InputCapacity[0]=2000
+InputSupplier[0]=3
+InputFactor[0]=100
+OutputGood[0]=Zucker
+OutputCapacity[0]=300
+OutputFactor[0]=100
+electricity_amount=75
+climates=mediterran, tropic, desert
+expand_probability=5000
+expand_minimum=25
+expand_range=100
+expand_times=2
+electricity_boost=1000
+passenger_boost=1000
+mail_boost=500
+MapColor=214
+dims=1,2,4
+BackImage[0][0][0][0][0][0]=NDT_alte_Zuckerfabrik.0.0
+BackImage[0][0][0][1][0][0]=NDT_alte_Zuckerfabrik.0.1
+BackImage[0][1][0][0][0][0]=NDT_alte_Zuckerfabrik.0.2
+BackImage[0][1][0][1][0][0]=NDT_alte_Zuckerfabrik.0.3
+BackImage[0][0][0][0][0][1]=NDT_alte_Zuckerfabrik.0.4
+BackImage[0][0][0][1][0][1]=NDT_alte_Zuckerfabrik.0.5
+BackImage[0][1][0][0][0][1]=NDT_alte_Zuckerfabrik.1.0
+BackImage[0][1][0][1][0][1]=NDT_alte_Zuckerfabrik.1.1
+BackImage[1][0][0][0][0][0]=NDT_alte_Zuckerfabrik.1.2
+BackImage[1][0][0][1][0][0]=NDT_alte_Zuckerfabrik.1.3
+BackImage[1][0][1][0][0][0]=NDT_alte_Zuckerfabrik.1.4
+BackImage[1][0][1][1][0][0]=NDT_alte_Zuckerfabrik.1.5
+BackImage[1][0][0][0][0][1]=NDT_alte_Zuckerfabrik.2.0
+BackImage[1][0][0][1][0][1]=NDT_alte_Zuckerfabrik.2.1
+BackImage[1][0][1][0][0][1]=NDT_alte_Zuckerfabrik.2.2
+BackImage[1][0][1][1][0][1]=NDT_alte_Zuckerfabrik.2.3
+BackImage[2][0][0][0][0][0]=NDT_alte_Zuckerfabrik.2.4
+BackImage[2][0][0][1][0][0]=NDT_alte_Zuckerfabrik.2.5
+BackImage[2][1][0][0][0][0]=NDT_alte_Zuckerfabrik.3.0
+BackImage[2][1][0][1][0][0]=NDT_alte_Zuckerfabrik.3.1
+BackImage[2][0][0][0][0][1]=NDT_alte_Zuckerfabrik.3.2
+BackImage[2][0][0][1][0][1]=NDT_alte_Zuckerfabrik.3.3
+BackImage[2][1][0][0][0][1]=NDT_alte_Zuckerfabrik.3.4
+BackImage[2][1][0][1][0][1]=NDT_alte_Zuckerfabrik.3.5
+BackImage[3][0][0][0][0][0]=NDT_alte_Zuckerfabrik.4.0
+BackImage[3][0][0][1][0][0]=NDT_alte_Zuckerfabrik.4.1
+BackImage[3][0][1][0][0][0]=NDT_alte_Zuckerfabrik.4.2
+BackImage[3][0][1][1][0][0]=NDT_alte_Zuckerfabrik.4.3
+BackImage[3][0][0][0][0][1]=NDT_alte_Zuckerfabrik.4.4
+BackImage[3][0][0][1][0][1]=NDT_alte_Zuckerfabrik.4.5
+BackImage[3][0][1][0][0][1]=NDT_alte_Zuckerfabrik.5.0
+BackImage[3][0][1][1][0][1]=NDT_alte_Zuckerfabrik.5.1
+--------------------------------------------------------

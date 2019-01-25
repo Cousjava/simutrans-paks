@@ -1,0 +1,27 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 20-11-2017
+---------------------------------
+obj=vehicle
+name=Schiebewandwagen_Hbbills311
+copyright=pumuckl999
+intro_year=2000
+intro_month=1
+cost=13380000
+runningcost=224
+waytype=track
+freight=Plastik
+payload=44
+speed=100
+length=10
+weight=18
+EmptyImage[S]=Hbbills311.0.0
+EmptyImage[E]=Hbbills311.0.1
+EmptyImage[SE]=Hbbills311.0.2
+EmptyImage[SW]=Hbbills311.0.3
+EmptyImage[N]=Hbbills311.0.4
+EmptyImage[W]=Hbbills311.0.5
+EmptyImage[NW]=Hbbills311.0.6
+EmptyImage[NE]=Hbbills311.0.7
+-----------------------------------

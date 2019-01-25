@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 26-07-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Alstom_H3_Diesel
+waytype=track
+copyright=pumuckl999
+intro_year=2014
+intro_month=9
+cost=7670000
+runningcost=24
+freight=None
+engine_type=diesel 
+smoke=Diesel
+speed=100
+gear=250
+weight=67
+power=700
+length=8
+sound=diesel.wav
+EmptyImage[S]=Alstom_H3.0.0
+EmptyImage[E]=Alstom_H3.0.1
+EmptyImage[SE]=Alstom_H3.0.2
+EmptyImage[SW]=Alstom_H3.0.3
+EmptyImage[N]=Alstom_H3.0.4
+EmptyImage[W]=Alstom_H3.0.5
+EmptyImage[NW]=Alstom_H3.0.6
+EmptyImage[NE]=Alstom_H3.0.7
+-----------------------------

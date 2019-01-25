@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 16-10-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Preussischer_ET531
+copyright=pumuckl999
+intro_year=1916
+intro_month=1
+retire_year=1930
+retire_month=12
+cost=12397000
+runningcost=385
+waytype=track
+freight=Passagiere
+engine_type=electric
+power=242
+gear=125
+payload=145
+speed=50
+length=9
+weight=31.2
+EmptyImage[S]=ET531.0.0
+EmptyImage[E]=ET531.0.1
+EmptyImage[SE]=ET531.0.2
+EmptyImage[SW]=ET531.0.3
+EmptyImage[N]=ET531.0.4
+EmptyImage[W]=ET531.0.5
+EmptyImage[NW]=ET531.0.6
+EmptyImage[NE]=ET531.0.7
+-----------------------------------

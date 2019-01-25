@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=DaimlerBenz_LP322_Kuehlwaren
+copyright=RedRabbit
+intro_year=1959
+intro_month=1
+retire_year=1965
+retire_month=12
+cost=2734800
+runningcost=54
+waytype=road
+freight=Fleisch
+engine_type=diesel
+power=80
+speed=77
+weight=3.98
+payload=9
+length=7
+sound=1
+constraint[prev][0] = none
+EmptyImage[W]=mb_lp322.1.1
+EmptyImage[NW]=mb_lp322.1.2
+EmptyImage[N]=mb_lp322.1.3
+EmptyImage[NE]=mb_lp322.1.4
+EmptyImage[E]=mb_lp322.1.5
+EmptyImage[SE]=mb_lp322.1.6
+EmptyImage[S]=mb_lp322.1.7
+EmptyImage[SW]=mb_lp322.1.8
+----------------------------------------

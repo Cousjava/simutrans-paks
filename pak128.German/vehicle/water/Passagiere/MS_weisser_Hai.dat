@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MS weisser Hai
+copyright=pumuckl999
+intro_year=1925
+intro_month=1
+retire_year=1955
+retire_month=12
+waytype=water
+cost=10890000
+runningcost=661
+freight=Passagiere
+payload=250
+engine_type=diesel
+power=1200
+gear=1200
+speed=22
+weight=250
+length=7
+sound=-1
+smoke=Diesel
+EmptyImage[W]=MS_weisser_Hai.0.0,-28,0
+EmptyImage[NW]=MS_weisser_Hai.0.1,-32,16
+EmptyImage[N]=MS_weisser_Hai.0.2,-44,4
+EmptyImage[NE]=MS_weisser_Hai.0.3,-64,-8
+EmptyImage[E]=MS_weisser_Hai.0.4,-52,-36
+EmptyImage[SE]=MS_weisser_Hai.0.5,8,-36
+EmptyImage[S]=MS_weisser_Hai.0.6,12,-8
+EmptyImage[SW]=MS_weisser_Hai.0.7,8,-4
+------------------------------------

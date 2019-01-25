@@ -1,0 +1,103 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu:27-12-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+# --------------------------------
+Obj=factory
+name=Markthalle_1891
+copyright=pumuckl999
+intro_year=1891
+intro_month=12
+retire_year=1970
+retire_month=1
+Location=City
+DistributionWeight=80
+Productivity=25
+Range=5
+InputGood[0]=Eier
+InputCapacity[0]=400
+InputSupplier[0]=1
+InputGood[1]=Milch
+InputCapacity[1]=400
+InputSupplier[1]=1
+InputGood[2]=Textilien
+InputCapacity[2]=100
+InputFactor[2]=20
+InputSupplier[2]=1
+InputGood[3]=Obst
+InputCapacity[3]=400
+InputSupplier[3]=1
+InputGood[4]=Fisch
+InputCapacity[4]=100
+InputFactor[4]=20
+InputSupplier[4]=1
+InputGood[5]=Bier
+InputCapacity[5]=200
+InputFactor[5]=50
+InputSupplier[5]=1
+InputGood[6]=Fleisch
+InputCapacity[6]=400
+InputFactor[6]=65
+electricity_amount=3
+passenger_boost=2000
+mail_boost=500
+expand_probability=40
+# Warscheinlichkeit für expand 10000 oder mehr = 100% (100=1%)
+# nach test makie 100 = nach 2 jahren, 50 = nach 4 Jahre, 10 = keine mehr 
+expand_minimum=1
+expand_range=1
+expand_times=30
+# Produktion wird um =+ expand_minumum + random( expand_range ) erhöht.
+MapColor=132
+needs_ground=0
+dims=2,3,4
+BackImage[0][0][0][0][0][0]=Markthalle.0.0
+BackImage[0][0][1][0][0][0]=Markthalle.0.1
+BackImage[0][1][0][0][0][0]=Markthalle.0.2
+BackImage[0][1][1][0][0][0]=Markthalle.0.3
+BackImage[0][2][0][0][0][0]=Markthalle.0.4
+BackImage[0][2][1][0][0][0]=Markthalle.0.5
+BackImage[0][0][0][0][0][1]=Markthalle.0.6
+BackImage[0][0][1][0][0][1]=Markthalle.1.0
+BackImage[0][1][0][0][0][1]=Markthalle.1.1
+BackImage[0][1][1][0][0][1]=Markthalle.1.2
+BackImage[0][2][0][0][0][1]=Markthalle.1.3
+BackImage[0][2][1][0][0][1]=Markthalle.1.4
+BackImage[1][0][0][0][0][0]=Markthalle.1.5
+BackImage[1][0][1][0][0][0]=Markthalle.1.6
+BackImage[1][0][2][0][0][0]=Markthalle.2.0
+BackImage[1][1][0][0][0][0]=Markthalle.2.1
+BackImage[1][1][1][0][0][0]=Markthalle.2.2
+BackImage[1][1][2][0][0][0]=Markthalle.2.3
+BackImage[1][0][0][0][0][1]=Markthalle.2.4
+BackImage[1][0][1][0][0][1]=Markthalle.2.5
+BackImage[1][0][2][0][0][1]=Markthalle.2.6
+BackImage[1][1][0][0][0][1]=Markthalle.3.0
+BackImage[1][1][1][0][0][1]=Markthalle.3.1
+BackImage[1][1][2][0][0][1]=Markthalle.3.2
+BackImage[2][0][0][0][0][0]=Markthalle.3.3
+BackImage[2][0][1][0][0][0]=Markthalle.3.4
+BackImage[2][1][0][0][0][0]=Markthalle.3.5
+BackImage[2][1][1][0][0][0]=Markthalle.3.6
+BackImage[2][2][0][0][0][0]=Markthalle.4.0
+BackImage[2][2][1][0][0][0]=Markthalle.4.1
+BackImage[2][0][0][0][0][1]=Markthalle.4.2
+BackImage[2][0][1][0][0][1]=Markthalle.4.3
+BackImage[2][1][0][0][0][1]=Markthalle.4.4
+BackImage[2][1][1][0][0][1]=Markthalle.4.5
+BackImage[2][2][0][0][0][1]=Markthalle.4.6
+BackImage[2][2][1][0][0][1]=Markthalle.5.0
+BackImage[3][0][0][0][0][0]=Markthalle.5.1
+BackImage[3][0][1][0][0][0]=Markthalle.5.2
+BackImage[3][0][2][0][0][0]=Markthalle.5.3
+BackImage[3][1][0][0][0][0]=Markthalle.5.4
+BackImage[3][1][1][0][0][0]=Markthalle.5.5
+BackImage[3][1][2][0][0][0]=Markthalle.5.6
+BackImage[3][0][0][0][0][1]=Markthalle.6.0
+BackImage[3][0][1][0][0][1]=Markthalle.6.1
+BackImage[3][0][2][0][0][1]=Markthalle.6.2
+BackImage[3][1][0][0][0][1]=Markthalle.6.3
+BackImage[3][1][1][0][0][1]=Markthalle.6.4
+BackImage[3][1][2][0][0][1]=Markthalle.6.5
+---------------------------------------------

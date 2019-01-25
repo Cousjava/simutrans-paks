@@ -1,0 +1,56 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 06-2012
+#	Letzte Bearbeitung:
+#   $Date: 2017-03-03 15:00:23 +0100 (Fr, 03. Mrz 2017) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+name=Minimarkt_NIC
+copyright=Lemuria
+intro_year=1957
+intro_month=1
+Location=City
+DistributionWeight=10
+Productivity=25
+Range=5
+InputGood[0]=Backwaren
+InputCapacity[0]=100
+InputSupplier[0]=1
+InputGood[1]=Bier
+InputCapacity[1]=100
+InputSupplier[1]=1
+InputGood[2]=Fertiggerichte
+InputCapacity[2]=50
+InputFactor[2]=40
+InputSupplier[2]=1
+InputGood[3]=Tiefkuehlkost
+InputCapacity[3]=50
+InputFactor[3]=40
+InputSupplier[3]=1
+InputGood[4]=Dosenessen
+InputCapacity[4]=50
+InputFactor[6]=40
+InputSupplier[4]=1
+InputGood[5]=Milch
+InputCapacity[5]=100
+InputSupplier[5]=1
+InputGood[6]=Textilien
+InputCapacity[6]=50
+InputFactor[6]=20
+InputSupplier[6]=1
+InputGood[7]=Wein
+InputCapacity[7]=100
+InputSupplier[7]=1
+electricity_amount=2
+passenger_boost=2000
+mail_boost=500
+MapColor=132
+needs_ground=1
+climates=desert, tropic, mediterran, temperate, tundra
+Dims=1,1,4
+BackImage[0][0][0][0][0]=Minimarkt.0.0
+BackImage[1][0][0][0][0]=Minimarkt.0.2
+BackImage[2][0][0][0][0]=Minimarkt.0.3
+BackImage[3][0][0][0][0]=Minimarkt.0.1
+-----------------------------------------

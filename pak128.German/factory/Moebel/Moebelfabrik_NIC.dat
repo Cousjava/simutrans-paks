@@ -1,0 +1,43 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	Letzte Bearbeitung:
+#   $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+name=Moebelfabrik_NIC
+copyright=TonyBzt
+pax_level=55
+intro_year=1909
+intro_month=1
+retire_year=1990
+retire_month=1
+Location=land
+DistributionWeight=10
+Productivity=100
+InputGood[0]=Bretter
+InputCapacity[0]=1200
+InputSupplier[0]=0
+InputFactor[0]=100
+InputGood[1]=Farben
+InputCapacity[1]=400
+InputFactor[1]=15
+InputSupplier[1]=0
+OutputGood[0]=Moebel
+OutputCapacity[0]=400
+electricity_amount=25
+passenger_boost=1000
+mail_boost=500
+climates=tundra, rocky
+MapColor=122
+Dims=2,2,2
+BackImage[0][0][0][0][0]=Moebelfabrik.0.0
+BackImage[0][0][1][0][0]=Moebelfabrik.0.1
+BackImage[0][1][0][0][0]=Moebelfabrik.1.0
+BackImage[0][1][1][0][0]=Moebelfabrik.1.1
+BackImage[1][0][0][0][0]=Moebelfabrik.0.2
+BackImage[1][0][1][0][0]=Moebelfabrik.0.3
+BackImage[1][1][0][0][0]=Moebelfabrik.1.2
+BackImage[1][1][1][0][0]=Moebelfabrik.1.3
+---------------------------------------------

@@ -1,0 +1,32 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	Letzte Bearbeitung:
+#   $Date: 2017-03-03 15:00:23 +0100 (Fr, 03. Mrz 2017) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+name=AVL_Apotheke_NIC
+copyright=Lemuria
+pax_level=20
+intro_year=1911
+intro_month=1
+Location=City
+DistributionWeight=64
+Productivity=10
+Range=3
+InputGood[0]=Medikamente
+InputCapacity[0]=160
+InputFactor[0]=100
+InputSupplier[0]=0
+electricity_amount=1
+Passenger_boost=1000
+Mail_boost=500
+climates=tundra
+MapColor=75
+dims=1,1,4
+BackImage[0][0][0][0][0][0]=AVL_Apotheke.0.0
+BackImage[1][0][0][0][0][0]=AVL_Apotheke.0.1
+BackImage[2][0][0][0][0][0]=AVL_Apotheke.1.0
+BackImage[3][0][0][0][0][0]=AVL_Apotheke.1.1
+-----------------------------------------------

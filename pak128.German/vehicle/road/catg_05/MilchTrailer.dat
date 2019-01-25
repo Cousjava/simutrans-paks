@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 2008
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=BZT_LKW_Milch_Trailer
+copyright=TonyBzt
+intro_year=1959
+intro_month=1
+retire_year=1966
+retire_month=12
+cost=1340000
+runningcost=34
+waytype=road
+freight=Milch
+payload=7
+speed=80
+weight=8
+Constraint[Prev][0]=BZT_LKW_Milch
+Constraint[Prev][1]=BZT_LKW_Milch-alt
+Constraint[Prev][2]=none
+EmptyImage[S]=MilchTrailer.0.0
+EmptyImage[N]=MilchTrailer.0.1
+EmptyImage[E]=MilchTrailer.0.2
+EmptyImage[W]=MilchTrailer.0.3
+EmptyImage[SE]=MilchTrailer.0.4
+EmptyImage[NW]=MilchTrailer.0.5
+EmptyImage[NE]=MilchTrailer.0.6
+EmptyImage[SW]=MilchTrailer.0.7
+------------------------------------

@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 30-04-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Rungenwagen KS446
+copyright=pumuckl999
+intro_year=1969
+intro_month=1
+cost=12280000
+runningcost=210
+waytype=track
+freight=Stahl
+payload=27
+speed=100
+weight=13
+length=8
+EmptyImage[S]=ks446.0.0
+EmptyImage[E]=ks446.0.1
+EmptyImage[SE]=ks446.0.2
+EmptyImage[SW]=ks446.0.3
+EmptyImage[N]=ks446.0.4
+EmptyImage[W]=ks446.0.5
+EmptyImage[NW]=ks446.0.6
+EmptyImage[NE]=ks446.0.7
+FreightImage[S]=ks446.1.0
+FreightImage[E]=ks446.1.1
+FreightImage[SE]=ks446.1.2
+FreightImage[SW]=ks446.1.3
+FreightImage[N]=ks446.1.4
+FreightImage[W]=ks446.1.5
+FreightImage[NW]=ks446.1.6
+FreightImage[NE]=ks446.1.7
+--------------------------------------

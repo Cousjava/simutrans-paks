@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 
+#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
+---------------------------------
+obj=vehicle
+name=V188_DB_Version
+copyright=Lemuria
+intro_year=1951
+intro_Month=7
+retire_year=1969
+retire_Month=11
+cost=13620000
+runningcost=135
+waytype=track
+engine_type=diesel
+speed=75
+weight=150
+power=1616
+gear=300
+length=12
+sound=diesel.wav
+EmptyImage[S]=V188rot.0.0
+EmptyImage[E]=V188rot.0.1
+EmptyImage[SE]=V188rot.0.2
+EmptyImage[SW]=V188rot.0.3
+EmptyImage[N]=V188rot.0.4
+EmptyImage[W]=V188rot.0.5
+EmptyImage[NW]=V188rot.0.6
+EmptyImage[NE]=V188rot.0.7
+-------------------------------

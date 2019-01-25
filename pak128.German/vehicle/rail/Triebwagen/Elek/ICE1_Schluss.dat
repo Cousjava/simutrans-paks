@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 08-2010
+#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
+---------------------------------
+obj=vehicle
+name=ICE1_Schluss
+copyright=Lemuria
+intro_year=1991
+intro_month=6
+cost=120800000
+runningcost=644
+waytype=track
+engine_type=electric
+freight=Passagiere
+length=11
+payload=0
+speed=250
+power=4800
+gear=135
+weight=80
+smoke=-1
+constraint[next][0]=ICE1_Kopf
+constraint[next][1]=none
+constraint[prev][0]=ICE1_Waggon
+emptyimage[n]=ICE1_Schluss.0.1
+emptyimage[w]=ICE1_Schluss.0.2
+emptyimage[nw]=ICE1_Schluss.0.3
+emptyimage[ne]=ICE1_Schluss.0.4
+emptyimage[s]=ICE1_Schluss.0.5
+emptyimage[e]=ICE1_Schluss.0.6
+emptyimage[se]=ICE1_Schluss.0.7
+emptyimage[sw]=ICE1_Schluss.0.8
+-------------------------------------

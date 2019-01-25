@@ -1,0 +1,29 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 19-10-2017
+---------------------------------
+obj=vehicle
+name=Drehgestell-Flachwagen_Rils653_Stueckgut
+copyright=pumuckl999
+intro_year=1990
+intro_month=1
+retire_year=2004
+retire_month=12
+cost=16452000
+runningcost=274
+waytype=track
+freight=Plastik
+payload=54
+speed=100
+length=11
+weight=25.2
+EmptyImage[S]=Rils653.0.0
+EmptyImage[E]=Rils653.0.1
+EmptyImage[SE]=Rils653.0.2
+EmptyImage[SW]=Rils653.0.3
+EmptyImage[N]=Rils653.0.4
+EmptyImage[W]=Rils653.0.5
+EmptyImage[NW]=Rils653.0.6
+EmptyImage[NE]=Rils653.0.7
+-----------------------------------

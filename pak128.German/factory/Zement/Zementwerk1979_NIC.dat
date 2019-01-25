@@ -1,0 +1,57 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 2008
+#	Letzte Bearbeitung:
+#   03-03-1017 NNW
+# --------------------------------
+Obj=factory
+name=Zementwerk1979_NIC
+copyright=DiDi2004
+pax_level=10
+intro_year=1979
+intro_month=1
+retire_year=2300
+retire_month=12
+Location=Land
+DistributionWeight=120
+Productivity=200
+InputGood[0]=Steine
+InputCapacity[0]=400
+InputFactor[0]=50
+InputSupplier[0]=0
+InputGood[1]=Sand
+InputCapacity[1]=800
+InputFactor[1]=90
+InputSupplier[1]=0
+InputGood[2]=Kohle
+InputCapacity[2]=400
+InputFactor[2]=20
+InputGood[3]=Abfall
+InputCapacity[3]=400
+InputFactor[3]=30
+InputSupplier[3]=10
+InputGood[4]=Verpackungsmittel
+Inputfactor[4]=15
+InputCapacity[4]=400
+OutputGood[0]=Zement
+OutputCapacity[0]=400
+OutputGood[1]=Zement_lose
+OutputCapacity[1]=400
+electricity_amount=40
+pax_level=10
+passenger_boost=1000
+mail_boost=500
+climates=desert, tropic, mediterran, temperate, rocky
+MapColor=208
+needs_ground=1
+Dims=2,2,2
+BackImage[0][0][0][0][0]=Zementwerk1962.0.0
+BackImage[0][0][1][0][0]=Zementwerk1962.0.1
+BackImage[0][1][0][0][0]=Zementwerk1962.1.0
+BackImage[0][1][1][0][0]=Zementwerk1962.1.1
+BackImage[1][0][0][0][0]=Zementwerk1962.0.2
+BackImage[1][0][1][0][0]=Zementwerk1962.0.3
+BackImage[1][1][0][0][0]=Zementwerk1962.1.2
+BackImage[1][1][1][0][0]=Zementwerk1962.1.3
+------------------------------------------

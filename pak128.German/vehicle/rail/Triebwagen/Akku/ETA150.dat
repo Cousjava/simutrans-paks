@@ -1,0 +1,63 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 01-06-2017
+#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
+---------------------------------
+obj=vehicle
+name=Akkutriebwagen ETA150
+copyright=pumuckl999
+intro_year=1954
+intro_month=1
+retire_year=1995
+retire_month=12
+cost=14020000
+runningcost=221
+waytype=track
+freight=Passagiere
+engine_type=battery
+power=300
+gear=200
+payload=70
+speed=100
+length=13
+weight=52
+constraint[prev][0]=none
+EmptyImage[S]=ETA150.0.0
+EmptyImage[E]=ETA150.0.1
+EmptyImage[SE]=ETA150.0.2
+EmptyImage[SW]=ETA150.0.3
+EmptyImage[N]=ETA150.0.4
+EmptyImage[W]=ETA150.0.5
+EmptyImage[NW]=ETA150.0.6
+EmptyImage[NE]=ETA150.0.7
+-----------------------------------
+obj=vehicle
+name=Beiwagen ESA150
+copyright=pumuckl999
+intro_year=1954
+intro_month=1
+retire_year=1995
+retire_month=12
+cost=13900000
+runningcost=243
+waytype=track
+freight=Passagiere
+engine_type=battery
+payload=90
+speed=100
+length=13
+weight=40
+constraint[prev][0]=Akkutriebwagen ETA150
+constraint[prev][1]=Beiwagen ESA150
+EmptyImage[S]=ETA150.0.0
+EmptyImage[E]=ETA150.0.1
+EmptyImage[SE]=ETA150.0.2
+EmptyImage[SW]=ETA150.0.3
+EmptyImage[N]=ETA150.0.4
+EmptyImage[W]=ETA150.0.5
+EmptyImage[NW]=ETA150.0.6
+EmptyImage[NE]=ETA150.0.7
+-----------------------------------
+
+

@@ -1,0 +1,78 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 06.02.2017
+#	Letzte Bearbeitung:
+#   $Date: 2017-03-03 15:00:23 +0100 (Fr, 03. Mär 2017) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+Name=Forellenhof Markusmuehle
+copyright=pumuckl999
+pax_level=5
+intro_year=1985
+intro_month=1
+Location=land
+DistributionWeight=1
+Productivity=180
+OutputGood[0]=Fisch
+OutputCapacity[0]=150
+max_fields=6
+min_fields=0
+fields[0]=fhmm_feld
+probability_to_spawn=8000
+production_per_field[0]=15
+storage_capacity[0]=10
+spawn_weight[0]=25
+has_snow[0]=1
+electricity_amount=6
+climates=tundra, desert, tropic, mediterran, temperate, rocky
+MapColor=6
+animation_time=700
+Dims=1,2,4
+#Sommer
+#ani1
+BackImage[0][0][0][0][0][0]=fhmm_sommer01.0.0
+BackImage[0][1][0][0][0][0]=fhmm_sommer01.0.1
+BackImage[1][0][0][0][0][0]=fhmm_sommer01.0.2
+BackImage[1][0][1][0][0][0]=fhmm_sommer01.1.0
+BackImage[2][0][0][0][0][0]=fhmm_sommer01.1.1
+BackImage[2][1][0][0][0][0]=fhmm_sommer01.1.2
+BackImage[3][0][0][0][0][0]=fhmm_sommer01.2.0
+BackImage[3][0][1][0][0][0]=fhmm_sommer01.2.1
+#ani2
+BackImage[0][0][0][0][1][0]=fhmm_sommer02.0.0
+BackImage[0][1][0][0][1][0]=fhmm_sommer02.0.1
+BackImage[1][0][0][0][1][0]=fhmm_sommer02.0.2
+BackImage[1][0][1][0][1][0]=fhmm_sommer02.1.0
+BackImage[2][0][0][0][1][0]=fhmm_sommer02.1.1
+BackImage[2][1][0][0][1][0]=fhmm_sommer02.1.2
+BackImage[3][0][0][0][1][0]=fhmm_sommer02.2.0
+BackImage[3][0][1][0][1][0]=fhmm_sommer02.2.1
+#ani3
+BackImage[0][0][0][0][2][0]=fhmm_sommer03.0.0
+BackImage[0][1][0][0][2][0]=fhmm_sommer03.0.1
+BackImage[1][0][0][0][2][0]=fhmm_sommer03.0.2
+BackImage[1][0][1][0][2][0]=fhmm_sommer03.1.0
+BackImage[2][0][0][0][2][0]=fhmm_sommer03.1.1
+BackImage[2][1][0][0][2][0]=fhmm_sommer03.1.2
+BackImage[3][0][0][0][2][0]=fhmm_sommer03.2.0
+BackImage[3][0][1][0][2][0]=fhmm_sommer03.2.1
+#ani4
+BackImage[0][0][0][0][3][0]=fhmm_sommer04.0.0
+BackImage[0][1][0][0][3][0]=fhmm_sommer04.0.1
+BackImage[1][0][0][0][3][0]=fhmm_sommer04.0.2
+BackImage[1][0][1][0][3][0]=fhmm_sommer04.1.0
+BackImage[2][0][0][0][3][0]=fhmm_sommer04.1.1
+BackImage[2][1][0][0][3][0]=fhmm_sommer04.1.2
+BackImage[3][0][0][0][3][0]=fhmm_sommer04.2.0
+BackImage[3][0][1][0][3][0]=fhmm_sommer04.2.1
+#Winter
+BackImage[0][0][0][0][0][1]=fhmm_winter.0.0
+BackImage[0][1][0][0][0][1]=fhmm_winter.0.1
+BackImage[1][0][0][0][0][1]=fhmm_winter.0.2
+BackImage[1][0][1][0][0][1]=fhmm_winter.1.0
+BackImage[2][0][0][0][0][1]=fhmm_winter.1.1
+BackImage[2][1][0][0][0][1]=fhmm_winter.1.2
+BackImage[3][0][0][0][0][1]=fhmm_winter.2.0
+BackImage[3][0][1][0][0][1]=fhmm_winter.2.1
+#_EO_

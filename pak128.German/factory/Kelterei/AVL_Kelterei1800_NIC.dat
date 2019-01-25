@@ -1,0 +1,41 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	Letzte Bearbeitung:
+#   $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
+# --------------------------------
+obj=factory
+name=AVL_Kelterei1800_NIC
+copyright=RedRabbit
+intro_year=1800
+intro_month=1
+level=12
+location=land
+DistributionWeight=127
+Productivity=100
+InputGood[0]=Trauben
+InputCapacity[0]=4000
+InputFactor[0]=100
+InputSupplier[0]=0
+InputGood[1]=Flaschen
+Inputfactor[1]=25
+InputCapacity[1]=1000
+OutputGood[0]=Wein
+OutputCapacity[0]=400
+electricity_amount=1
+passenger_boost=1000
+mail_boost=500
+climates=tundra
+mapcolor=130
+needs_ground=1
+dims=1,2,4
+BackImage[0][0][0][0][0][0]=AVL_Kelterei_1800.0.0
+BackImage[0][1][0][0][0][0]=AVL_Kelterei_1800.1.0
+BackImage[3][0][0][0][0][0]=AVL_Kelterei_1800.0.1
+BackImage[3][0][1][0][0][0]=AVL_Kelterei_1800.1.1
+BackImage[2][0][0][0][0][0]=AVL_Kelterei_1800.0.2
+BackImage[2][1][0][0][0][0]=AVL_Kelterei_1800.1.2
+BackImage[1][0][0][0][0][0]=AVL_Kelterei_1800.0.3
+BackImage[1][0][1][0][0][0]=AVL_Kelterei_1800.1.3
+---------------------------------------------------- 

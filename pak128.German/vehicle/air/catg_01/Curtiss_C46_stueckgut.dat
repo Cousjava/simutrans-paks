@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Curtiss_C46_Lufthansa_Stueckgut
+copyright=Pumuckl999
+intro_year=1945
+intro_month=1
+retire_year=1965
+retire_month=12
+waytype=air
+cost=60030000
+runningcost=190
+freight=Buecher
+payload=23
+engine_type=diesel
+power=4260
+gear=35
+speed=435
+weight=23
+length=3
+sound=6
+smoke=Diesel
+EmptyImage[W]=Curtiss_C46_Fracht.2.1
+EmptyImage[NW]=Curtiss_C46_Fracht.2.2
+EmptyImage[N]=Curtiss_C46_Fracht.2.3
+EmptyImage[NE]=Curtiss_C46_Fracht.2.4
+EmptyImage[E]=Curtiss_C46_Fracht.2.5
+EmptyImage[SE]=Curtiss_C46_Fracht.2.6
+EmptyImage[S]=Curtiss_C46_Fracht.2.7
+EmptyImage[SW]=Curtiss_C46_Fracht.2.8
+-----------------------------------------

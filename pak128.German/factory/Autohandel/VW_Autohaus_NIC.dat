@@ -1,0 +1,37 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 2008
+#	Letzte Bearbeitung:
+#   $Date: 2017-04-09 09:56:45 +0200 (So, 09. Apr 2017) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+name=VWAutohaus_NIC
+Copyright=DIDI2004/TonyBzt
+pax_level=20
+intro_year=1952
+intro_month=1
+retire_year=2400
+retire_month=12
+Location=City
+DistributionWeight=10
+Productivity=10
+Range=3
+InputGood[0]=Autos
+InputCapacity[0]=40
+InputSupplier[0]=0
+passenger_boost=1000
+mail_boost=500
+electricity_amount=2
+MapColor=121
+climates=desert, tropic, mediterran, temperate, rocky
+Dims=2,2,2
+BackImage[0][0][0][0][0]=VW_Autohaus.0.0
+BackImage[0][0][1][0][0]=VW_Autohaus.0.1
+BackImage[0][1][0][0][0]=VW_Autohaus.1.0
+BackImage[0][1][1][0][0]=VW_Autohaus.1.1
+BackImage[1][0][0][0][0]=VW_Autohaus.0.2
+BackImage[1][0][1][0][0]=VW_Autohaus.0.3
+BackImage[1][1][0][0][0]=VW_Autohaus.1.2
+BackImage[1][1][1][0][0]=VW_Autohaus.1.3
+-------------------------------------------

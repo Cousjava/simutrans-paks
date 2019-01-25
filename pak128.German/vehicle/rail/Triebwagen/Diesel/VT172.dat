@@ -1,0 +1,63 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 31-05-2017
+#	Letzte Bearbeitung: 18-10-2018
+---------------------------------
+obj=vehicle
+name=Ferkeltaxe VT172
+copyright=pumuckl999
+intro_year=1962
+intro_month=1
+retire_year=2004
+retire_month=12
+cost=8638000
+runningcost=152
+waytype=track
+freight=Passagiere
+engine_type=diesel
+power=132
+gear=200
+payload=54
+speed=90
+length=10
+weight=16
+constraint[prev][0]=none
+EmptyImage[S]=VT172.0.0
+EmptyImage[E]=VT172.0.1
+EmptyImage[SE]=VT172.0.2
+EmptyImage[SW]=VT172.0.3
+EmptyImage[N]=VT172.0.4
+EmptyImage[W]=VT172.0.5
+EmptyImage[NW]=VT172.0.6
+EmptyImage[NE]=VT172.0.7
+-----------------------------------
+obj=vehicle
+name=Ferkeltaxe VB172
+copyright=pumuckl999
+intro_year=1962
+intro_month=1
+retire_year=2004
+retire_month=12
+cost=7450000
+runningcost=143
+waytype=track
+freight=Passagiere
+engine_type=diesel
+payload=54
+speed=90
+length=10
+weight=16
+constraint[prev][0]=Ferkeltaxe VT172
+constraint[prev][1]=Ferkeltaxe VB172
+EmptyImage[S]=VT172.0.0
+EmptyImage[E]=VT172.0.1
+EmptyImage[SE]=VT172.0.2
+EmptyImage[SW]=VT172.0.3
+EmptyImage[N]=VT172.0.4
+EmptyImage[W]=VT172.0.5
+EmptyImage[NW]=VT172.0.6
+EmptyImage[NE]=VT172.0.7
+-----------------------------------
+
+

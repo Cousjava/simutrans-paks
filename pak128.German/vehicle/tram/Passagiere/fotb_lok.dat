@@ -1,0 +1,46 @@
+#	PAK128.german
+#	Vehicle
+obj=vehicle
+name=Frankfurt Offenbacher Trambahn Triebwagen
+copyright=pumuckl999
+intro_year=1884
+intro_month=2
+retire_year=1906
+retire_month=10
+waytype=tram_track
+cost=782000
+runningcost=61
+freight=Passagiere
+payload=24
+engine_type=electric
+power=11
+gear=200
+speed=20
+weight=4
+length=7
+#sound=
+#smoke=
+constraint[prev][0]=Frankfurt Offenbacher Trambahn Triebwagen
+constraint[prev][1]=Frankfurt Offenbacher Trambahn Beiwagen
+constraint[prev][2]=none
+constraint[next][0]=Frankfurt Offenbacher Trambahn Triebwagen
+constraint[next][1]=Frankfurt Offenbacher Trambahn Beiwagen
+constraint[next][2]=none
+EmptyImage[S]=fotb.0.6
+EmptyImage[N]=fotb.0.2
+EmptyImage[E]=fotb.0.4
+EmptyImage[W]=fotb.0.0
+EmptyImage[SW]=fotb.0.7
+EmptyImage[SE]=fotb.0.5
+EmptyImage[NW]=fotb.0.1
+EmptyImage[NE]=fotb.0.3
+#freightImageType[0]=
+#freightimage[0][S]=
+#freightimage[0][N]=
+#freightimage[0][E]=
+#freightimage[0][W]=
+#freightimage[0][SW]=
+#freightimage[0][SE]=
+#freightimage[0][NE]=
+#freightimage[0][NW]=
+#_EO_

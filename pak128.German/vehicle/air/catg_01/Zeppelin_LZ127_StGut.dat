@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:28-01-2018
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=LZ127_Graf_Zeppelin_Stueckgut
+copyright=Pumuckl999
+intro_year=1928
+intro_month=9
+retire_year=1937
+retire_month=7
+waytype=air
+cost=8280000
+runningcost=71
+freight=Buecher
+payload=12
+engine_type=diesel
+power=2096
+gear=15
+speed=115
+weight=60
+length=7
+sound=6
+EmptyImage[W]=Zeppelin_LZ127_StGut.0.0,-47,-23
+EmptyImage[NW]=Zeppelin_LZ127_StGut.0.1,-62,-9
+EmptyImage[N]=Zeppelin_LZ127_StGut.0.2,-81,-26
+EmptyImage[NE]=Zeppelin_LZ127_StGut.0.3,-112,-11
+EmptyImage[E]=Zeppelin_LZ127_StGut.0.4,-77,-40
+EmptyImage[SE]=Zeppelin_LZ127_StGut.0.5,-62,-16
+EmptyImage[S]=Zeppelin_LZ127_StGut.0.6,-87,-3
+EmptyImage[SW]=Zeppelin_LZ127_StGut.0.7,-15,-12
+------------------------------------------------

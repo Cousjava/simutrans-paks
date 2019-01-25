@@ -1,0 +1,44 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 05-02-2018
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Vomag8LR_Stahl
+copyright=pumuckl999
+intro_year=1935
+intro_month=1
+retire_year=1963
+retire_month=12
+cost=2680000
+runningcost=77
+waytype=road
+speed=50
+power=111
+weight=10
+freight=Stahl
+payload=9
+length=8
+smoke=Diesel_small
+sound=engine-start-diesel_d.wav
+constraint[prev][0]=none
+constraint[next][0]=Vomag8LR_Anhaenger_Stahl
+constraint[next][1]=none
+EmptyImage[S]=Vomag8LR_Stahl.0.0
+EmptyImage[N]=Vomag8LR_Stahl.0.1
+EmptyImage[E]=Vomag8LR_Stahl.0.2
+EmptyImage[W]=Vomag8LR_Stahl.0.3
+EmptyImage[SE]=Vomag8LR_Stahl.0.4,4,0
+EmptyImage[NW]=Vomag8LR_Stahl.0.5,-2,0
+EmptyImage[NE]=Vomag8LR_Stahl.0.6
+EmptyImage[SW]=Vomag8LR_Stahl.0.7
+FreightImage[S]=Vomag8LR_Stahl.1.0
+FreightImage[N]=Vomag8LR_Stahl.1.1
+FreightImage[E]=Vomag8LR_Stahl.1.2
+FreightImage[W]=Vomag8LR_Stahl.1.3
+FreightImage[SE]=Vomag8LR_Stahl.1.4,4,0
+FreightImage[NW]=Vomag8LR_Stahl.1.5,-2,0
+FreightImage[NE]=Vomag8LR_Stahl.1.6
+FreightImage[SW]=Vomag8LR_Stahl.1.7
+-------------------------------------------

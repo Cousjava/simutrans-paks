@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+---------------------------------
+obj=vehicle
+name=AdlerTender
+copyright=TonyBzt
+intro_year=1835
+intro_month=1
+retire_year=1905
+retire_month=6
+cost=50000
+runningcost=13
+waytype=track
+freight=None
+weight=5
+speed=50
+length=6
+sound=-1
+Constraint[Prev][0]=Adler
+EmptyImage[S]=AdlerTender.0.0
+EmptyImage[E]=AdlerTender.0.1
+EmptyImage[SE]=AdlerTender.0.2
+EmptyImage[SW]=AdlerTender.0.3
+EmptyImage[N]=AdlerTender.0.4
+EmptyImage[W]=AdlerTender.0.5
+EmptyImage[NW]=AdlerTender.0.6
+EmptyImage[NE]=AdlerTender.0.7
+--------------------------------------

@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MAN_LionsCity_DD
+copyright=RedRabbit
+intro_year=2005
+intro_month=1
+cost=12547720
+runningcost=368
+waytype=road
+freight=Passagiere
+payload=145
+engine_type=diesel
+power=310
+speed=50
+weight=12.272
+length=10
+sound=1
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[W]=MAN_LC.0.1
+EmptyImage[NW]=MAN_LC.0.2
+EmptyImage[N]=MAN_LC.0.3
+EmptyImage[NE]=MAN_LC.0.4,-20
+EmptyImage[E]=MAN_LC.0.5,-32,-16
+EmptyImage[SE]=MAN_LC.0.6
+EmptyImage[S]=MAN_LC.0.7
+EmptyImage[SW]=MAN_LC.0.8,20
+--------------------------------------

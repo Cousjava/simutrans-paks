@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 18-04-2017
+---------------------------------
+obj=vehicle
+name=Dampftriebwagen Bauart Thomas
+copyright=pumuckl999
+intro_year=1879
+intro_month=1
+retire_year=1910
+retire_month=12
+cost=5396000
+runningcost=214
+waytype=track
+freight=Passagiere
+payload=80
+speed=40
+weight=30
+sound=3
+smoke=Steam
+engine_type=steam
+power=74
+gear=95
+length=8
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[S]=dampftw_thomas.0.0
+EmptyImage[E]=dampftw_thomas.0.1
+EmptyImage[SE]=dampftw_thomas.0.2
+EmptyImage[SW]=dampftw_thomas.0.3
+EmptyImage[N]=dampftw_thomas.0.4
+EmptyImage[W]=dampftw_thomas.0.5
+EmptyImage[NW]=dampftw_thomas.0.6
+EmptyImage[NE]=dampftw_thomas.0.7
+---------------------------------

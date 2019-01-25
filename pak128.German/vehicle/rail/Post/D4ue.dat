@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=BZT_PrPostwagen
+copyright=TonyBzt
+intro_year=1909
+intro_month=5
+retire_year=1960
+retire_month=12
+cost=7720000
+runningcost=156
+waytype=track
+length=11
+freight=Post
+payload=50
+weight=22
+speed=100
+sound=-1
+EmptyImage[S]=PrAbteilwagen.2.0
+EmptyImage[E]=PrAbteilwagen.2.1
+EmptyImage[SE]=PrAbteilwagen.2.2
+EmptyImage[SW]=PrAbteilwagen.2.3
+EmptyImage[N]=PrAbteilwagen.2.4
+EmptyImage[W]=PrAbteilwagen.2.5
+EmptyImage[NW]=PrAbteilwagen.2.6
+EmptyImage[NE]=PrAbteilwagen.2.7
+-----------------------------------------

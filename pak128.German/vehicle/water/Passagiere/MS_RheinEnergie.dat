@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MS RheinEnergie
+copyright=pumuckl999
+intro_year=2004
+intro_month=1
+waytype=water
+cost=83040000
+runningcost=4144
+freight=Passagiere
+payload=1650
+engine_type=diesel
+power=1200
+gear=1200
+speed=32
+weight=1213
+length=9
+sound=-1
+smoke=Diesel
+EmptyImage[W]=MS_RheinEnergie.0.0,-36,0
+EmptyImage[NW]=MS_RheinEnergie.0.1,-36,0
+EmptyImage[N]=MS_RheinEnergie.0.2,-20,-4
+EmptyImage[NE]=MS_RheinEnergie.0.3,-32,0
+EmptyImage[E]=MS_RheinEnergie.0.4,-28,-20
+EmptyImage[SE]=MS_RheinEnergie.0.5,0,-24
+EmptyImage[S]=MS_RheinEnergie.0.6,0,-4
+EmptyImage[SW]=MS_RheinEnergie.0.7,-4,0
+-------------------------------------

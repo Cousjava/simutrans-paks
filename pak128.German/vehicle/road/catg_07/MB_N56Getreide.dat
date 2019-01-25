@@ -1,0 +1,44 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 02-02-2018
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MB_N56_Getreide
+copyright=pumuckl999
+intro_year=1927
+intro_month=1
+retire_year=1945
+retire_month=12
+cost=683000
+runningcost=20
+waytype=road
+speed=45
+power=44
+weight=8
+freight=Gerste
+payload=5
+length=8
+smoke=Diesel_small
+sound=engine-start-diesel_d.wav
+constraint[prev][0]=none
+constraint[next][0]=MB_N56_Anhaenger_Getreide
+constraint[next][1]=none
+EmptyImage[S]=MB_N56Getreide.0.0
+EmptyImage[N]=MB_N56Getreide.0.1
+EmptyImage[E]=MB_N56Getreide.0.2
+EmptyImage[W]=MB_N56Getreide.0.3
+EmptyImage[SE]=MB_N56Getreide.0.4,4,0
+EmptyImage[NW]=MB_N56Getreide.0.5,-2,0
+EmptyImage[NE]=MB_N56Getreide.0.6
+EmptyImage[SW]=MB_N56Getreide.0.7
+FreightImage[S]=MB_N56Getreide.1.0
+FreightImage[N]=MB_N56Getreide.1.1
+FreightImage[E]=MB_N56Getreide.1.2
+FreightImage[W]=MB_N56Getreide.1.3
+FreightImage[SE]=MB_N56Getreide.1.4,4,0
+FreightImage[NW]=MB_N56Getreide.1.5,-2,0
+FreightImage[NE]=MB_N56Getreide.1.6
+FreightImage[SW]=MB_N56Getreide.1.7
+-------------------------------------------

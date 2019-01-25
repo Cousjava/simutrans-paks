@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Junkers_Ju90
+copyright=Pumuckl999
+intro_year=1937
+intro_month=8
+retire_year=1945
+retire_month=5
+waytype=air
+cost=31500000
+runningcost=125
+freight=Passagiere
+payload=30
+engine_type=diesel
+power=3320
+gear=32
+speed=350
+weight=15.8
+length=4
+sound=bigoldplanes.wav
+smoke=Diesel
+EmptyImage[W]=Junkers_Ju90.0.0
+EmptyImage[NW]=Junkers_Ju90.0.1
+EmptyImage[N]=Junkers_Ju90.0.2
+EmptyImage[NE]=Junkers_Ju90.0.3,0,-7
+EmptyImage[E]=Junkers_Ju90.0.4
+EmptyImage[SE]=Junkers_Ju90.0.5
+EmptyImage[S]=Junkers_Ju90.0.6
+EmptyImage[SW]=Junkers_Ju90.0.7
+-----------------------------------

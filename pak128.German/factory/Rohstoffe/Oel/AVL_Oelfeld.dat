@@ -1,0 +1,72 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 07-2011
+#	Letzte Bearbeitung:
+#   $Date: 2017-03-03 15:00:23 +0100 (Fr, 03. Mär 2017) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+name=AVL_Oelfeld
+copyright=TonyBzt
+pax_level=5
+intro_year=1990
+intro_month=1
+Location=Land
+DistributionWeight=1
+Productivity=300
+OutputGood[0]=Oel
+OutputCapacity[0]=500
+electricity_amount=35
+climates=tundra
+MapColor=31
+needs_ground=1
+Dims=2,2,1
+BackImage[0][0][0][0][0][0]=Oelfeld.0.0
+BackImage[0][0][1][0][0][0]=Oelfeld.0.1
+BackImage[0][1][0][0][0][0]=Oelfeld.1.0
+BackImage[0][1][1][0][0][0]=Oelfeld.1.1
+BackImage[0][0][0][0][1][0]=Oelfeld.0.2
+BackImage[0][0][1][0][1][0]=Oelfeld.0.3
+BackImage[0][1][0][0][1][0]=Oelfeld.1.2
+BackImage[0][1][1][0][1][0]=Oelfeld.1.3
+BackImage[0][0][0][0][2][0]=Oelfeld.0.4
+BackImage[0][0][1][0][2][0]=Oelfeld.0.5
+BackImage[0][1][0][0][2][0]=Oelfeld.1.4
+BackImage[0][1][1][0][2][0]=Oelfeld.1.5
+BackImage[0][0][0][0][3][0]=Oelfeld.0.6
+BackImage[0][0][1][0][3][0]=Oelfeld.0.7
+BackImage[0][1][0][0][3][0]=Oelfeld.1.6
+BackImage[0][1][1][0][3][0]=Oelfeld.1.7
+BackImage[0][0][0][0][4][0]=Oelfeld.0.8
+BackImage[0][0][1][0][4][0]=Oelfeld.0.9
+BackImage[0][1][0][0][4][0]=Oelfeld.1.8
+BackImage[0][1][1][0][4][0]=Oelfeld.1.9
+BackImage[0][0][0][0][5][0]=Oelfeld.0.10
+BackImage[0][0][1][0][5][0]=Oelfeld.0.11
+BackImage[0][1][0][0][5][0]=Oelfeld.1.10
+BackImage[0][1][1][0][5][0]=Oelfeld.1.11
+BackImage[0][0][0][0][6][0]=Oelfeld.0.12
+BackImage[0][0][1][0][6][0]=Oelfeld.0.13
+BackImage[0][1][0][0][6][0]=Oelfeld.1.12
+BackImage[0][1][1][0][6][0]=Oelfeld.1.13
+BackImage[0][0][0][0][7][0]=Oelfeld.0.14
+BackImage[0][0][1][0][7][0]=Oelfeld.0.15
+BackImage[0][1][0][0][7][0]=Oelfeld.1.14
+BackImage[0][1][1][0][7][0]=Oelfeld.1.15
+BackImage[0][0][0][0][8][0]=Oelfeld.0.16
+BackImage[0][0][1][0][8][0]=Oelfeld.0.17
+BackImage[0][1][0][0][8][0]=Oelfeld.1.6
+BackImage[0][1][1][0][8][0]=Oelfeld.1.17
+BackImage[0][0][0][0][9][0]=Oelfeld.0.18
+BackImage[0][0][1][0][9][0]=Oelfeld.0.19
+BackImage[0][1][0][0][9][0]=Oelfeld.1.18
+BackImage[0][1][1][0][9][0]=Oelfeld.1.19
+BackImage[0][0][0][0][10][0]=Oelfeld.0.20
+BackImage[0][0][1][0][10][0]=Oelfeld.0.21
+BackImage[0][1][0][0][10][0]=Oelfeld.1.20
+BackImage[0][1][1][0][10][0]=Oelfeld.1.21
+BackImage[0][0][0][0][11][0]=Oelfeld.0.22
+BackImage[0][0][1][0][11][0]=Oelfeld.0.23
+BackImage[0][1][0][0][11][0]=Oelfeld.1.22
+BackImage[0][1][1][0][11][0]=Oelfeld.1.23
+---------------------------------------------

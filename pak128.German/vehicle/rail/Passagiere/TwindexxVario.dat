@@ -1,0 +1,53 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 06-09-2018
+#	Letzte Bearbeitung:
+---------------------------------
+obj=vehicle
+name=TwindexxVario_Mittelwagen
+copyright=pumuckl999
+intro_year=2015
+intro_month=12
+cost=71300000
+runningcost=744
+waytype=track
+freight=Passagiere
+payload=295
+speed=160
+weight=50
+length=13
+sound=-1
+EmptyImage[S]=TwindexxVario.0.0
+EmptyImage[E]=TwindexxVario.0.1
+EmptyImage[SE]=TwindexxVario.0.2
+EmptyImage[SW]=TwindexxVario.0.3
+EmptyImage[N]=TwindexxVario.0.4
+EmptyImage[W]=TwindexxVario.0.5
+EmptyImage[NW]=TwindexxVario.0.6
+EmptyImage[NE]=TwindexxVario.0.7
+-------------------------------------------
+obj=vehicle
+name=TwindexxVario_Steuerwagen
+copyright=pumuckl999
+intro_year=2015
+intro_month=12
+cost=51700000
+runningcost=540
+waytype=track
+freight=Passagiere
+payload=213
+speed=160
+weight=58
+length=13
+sound=-1
+constraint[prev][0]=TwindexxVario_Mittelwagen
+EmptyImage[S]=TwindexxVario.1.0
+EmptyImage[E]=TwindexxVario.1.1
+EmptyImage[SE]=TwindexxVario.1.2
+EmptyImage[SW]=TwindexxVario.1.3
+EmptyImage[N]=TwindexxVario.1.4
+EmptyImage[W]=TwindexxVario.1.5
+EmptyImage[NW]=TwindexxVario.1.6
+EmptyImage[NE]=TwindexxVario.1.7
+-------------------------------------------

@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 04-09-2018
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=bayrischer_Posti_Bay61
+copyright=pumuckl999
+intro_year=1861
+intro_month=1
+retire_year=1912
+retire_month=12
+cost=2331000
+runningcost=78
+waytype=track
+freight=Post
+length=6
+payload=25
+weight=8.1
+speed=60
+sound=-1
+EmptyImage[S]=bayrischerPostiBay61.0.0
+EmptyImage[E]=bayrischerPostiBay61.0.1
+EmptyImage[SE]=bayrischerPostiBay61.0.2
+EmptyImage[SW]=bayrischerPostiBay61.0.3
+EmptyImage[N]=bayrischerPostiBay61.0.4
+EmptyImage[W]=bayrischerPostiBay61.0.5
+EmptyImage[NW]=bayrischerPostiBay61.0.6
+EmptyImage[NE]=bayrischerPostiBay61.0.7

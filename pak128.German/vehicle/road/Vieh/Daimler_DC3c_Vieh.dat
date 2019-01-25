@@ -1,0 +1,42 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 05-02-2018
+---------------------------------
+obj=vehicle
+name=Daimler_DC_3c_Vieh
+copyright=pumuckl999
+intro_year=1915
+intro_month=1
+retire_year=1935
+retire_month=12
+cost=351800
+runningcost=17
+waytype=road
+speed=28
+power=26
+weight=2.7
+freight=Vieh
+payload=3
+length=6
+smoke=Diesel_small
+sound=engine-start-diesel_d.wav
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[S]=Daimler_DC3c_Vieh.0.0
+EmptyImage[N]=Daimler_DC3c_Vieh.0.1
+EmptyImage[E]=Daimler_DC3c_Vieh.0.2
+EmptyImage[W]=Daimler_DC3c_Vieh.0.3
+EmptyImage[SE]=Daimler_DC3c_Vieh.0.4,4,0
+EmptyImage[NW]=Daimler_DC3c_Vieh.0.5,-2,0
+EmptyImage[NE]=Daimler_DC3c_Vieh.0.6
+EmptyImage[SW]=Daimler_DC3c_Vieh.0.7
+FreightImage[S]=Daimler_DC3c_Vieh.1.0
+FreightImage[N]=Daimler_DC3c_Vieh.1.1
+FreightImage[E]=Daimler_DC3c_Vieh.1.2
+FreightImage[W]=Daimler_DC3c_Vieh.1.3
+FreightImage[SE]=Daimler_DC3c_Vieh.1.4,4,0
+FreightImage[NW]=Daimler_DC3c_Vieh.1.5,-2,0
+FreightImage[NE]=Daimler_DC3c_Vieh.1.6
+FreightImage[SW]=Daimler_DC3c_Vieh.1.7
+-------------------------------------------

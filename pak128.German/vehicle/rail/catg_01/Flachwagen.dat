@@ -1,0 +1,68 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$ 
+---------------------------------
+obj=vehicle
+name=Flachwagen_catg_01
+copyright=TonyBzt
+intro_year=1942
+intro_month=1
+cost=6120000
+runningcost=114
+waytype=track
+freight=Buecher
+payload=20
+speed=100
+weight=12
+length=9
+EmptyImage[S]=Flachwagen.0.0
+EmptyImage[E]=Flachwagen.0.1
+EmptyImage[SE]=Flachwagen.0.2
+EmptyImage[SW]=Flachwagen.0.3
+EmptyImage[N]=Flachwagen.0.4
+EmptyImage[W]=Flachwagen.0.5
+EmptyImage[NW]=Flachwagen.0.6
+EmptyImage[NE]=Flachwagen.0.7
+# Buecher
+FreightImagetype[0]=Buecher
+FreightImage[0][S]=Flachwagen.1.0
+FreightImage[0][E]=Flachwagen.1.1
+FreightImage[0][SE]=Flachwagen.1.2
+FreightImage[0][SW]=Flachwagen.1.3
+FreightImage[0][N]=Flachwagen.1.4
+FreightImage[0][W]=Flachwagen.1.5
+FreightImage[0][NW]=Flachwagen.1.6
+FreightImage[0][NE]=Flachwagen.1.7
+# Chemikalien 
+FreightImagetype[1]=Chemikalien
+FreightImage[1][S]=Flachwagen.1.0
+FreightImage[1][E]=Flachwagen.1.1
+FreightImage[1][SE]=Flachwagen.1.2
+FreightImage[1][SW]=Flachwagen.1.3
+FreightImage[1][N]=Flachwagen.1.4
+FreightImage[1][W]=Flachwagen.1.5
+FreightImage[1][NW]=Flachwagen.1.6
+FreightImage[1][NE]=Flachwagen.1.7
+# Farben
+FreightImagetype[2]=Farben
+FreightImage[2][S]=Flachwagen.1.0
+FreightImage[2][E]=Flachwagen.1.1
+FreightImage[2][SE]=Flachwagen.1.2
+FreightImage[2][SW]=Flachwagen.1.3
+FreightImage[2][N]=Flachwagen.1.4
+FreightImage[2][W]=Flachwagen.1.5
+FreightImage[2][NW]=Flachwagen.1.6
+FreightImage[2][NE]=Flachwagen.1.7
+# Maschinen
+FreightImagetype[3]=Maschinen
+FreightImage[3][S]=Flachwagen.2.0
+FreightImage[3][E]=Flachwagen.2.1
+FreightImage[3][SE]=Flachwagen.2.2
+FreightImage[3][SW]=Flachwagen.2.3
+FreightImage[3][N]=Flachwagen.2.4
+FreightImage[3][W]=Flachwagen.2.5
+FreightImage[3][NW]=Flachwagen.2.6
+FreightImage[3][NE]=Flachwagen.2.7
+---------------------------------------

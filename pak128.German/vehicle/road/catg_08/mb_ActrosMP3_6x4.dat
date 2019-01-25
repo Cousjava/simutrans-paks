@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date - $Author$
+---------------------------------
+obj=vehicle
+name=MB_ActrosMP3_Silo
+copyright=RedRabbit
+intro_year=2008
+intro_month=1
+retire_year=2016
+retire_month=12
+cost=5397500
+runningcost=68
+waytype=road
+freight=Zement_lose
+engine_type=diesel
+power=300
+speed=80
+weight=11.75
+payload=12
+length=9
+sound=1
+constraint[prev][0]=none
+constraint[next][0]=anhaenger_1990_16t_Silo
+constraint[next][1]=none
+EmptyImage[W]=mb_ActrosMP3_6x4.1.1
+EmptyImage[NW]=mb_ActrosMP3_6x4.1.2
+EmptyImage[N]=mb_ActrosMP3_6x4.1.3
+EmptyImage[NE]=mb_ActrosMP3_6x4.1.4
+EmptyImage[E]=mb_ActrosMP3_6x4.1.5
+EmptyImage[SE]=mb_ActrosMP3_6x4.1.6
+EmptyImage[S]=mb_ActrosMP3_6x4.1.7
+EmptyImage[SW]=mb_ActrosMP3_6x4.1.8
+----------------------------------------------

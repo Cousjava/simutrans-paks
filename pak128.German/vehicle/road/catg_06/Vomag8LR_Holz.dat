@@ -1,0 +1,54 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 04-02-2018
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Vomag8LR_Holz
+copyright=pumuckl999
+intro_year=1935
+intro_month=1
+retire_year=1963
+retire_month=12
+cost=1465000
+runningcost=36
+waytype=road
+speed=50
+power=111
+weight=10
+freight=Holz
+payload=9
+length=8
+smoke=Diesel_small
+sound=engine-start-diesel_d.wav
+constraint[prev][0]=none
+constraint[next][0]=Vomag8LR_Anhaenger_Holz
+constraint[next][1]=none
+EmptyImage[S]=Vomag8LR_Holz.0.0
+EmptyImage[N]=Vomag8LR_Holz.0.1
+EmptyImage[E]=Vomag8LR_Holz.0.2
+EmptyImage[W]=Vomag8LR_Holz.0.3
+EmptyImage[SE]=Vomag8LR_Holz.0.4,4,0
+EmptyImage[NW]=Vomag8LR_Holz.0.5,-2,0
+EmptyImage[NE]=Vomag8LR_Holz.0.6
+EmptyImage[SW]=Vomag8LR_Holz.0.7
+FreightImagetype[0]=Holz
+FreightImage[0][S]=Vomag8LR_Holz.1.0
+FreightImage[0][N]=Vomag8LR_Holz.1.1
+FreightImage[0][E]=Vomag8LR_Holz.1.2
+FreightImage[0][W]=Vomag8LR_Holz.1.3
+FreightImage[0][SE]=Vomag8LR_Holz.1.4,4,0
+FreightImage[0][NW]=Vomag8LR_Holz.1.5,-2,0
+FreightImage[0][NE]=Vomag8LR_Holz.1.6
+FreightImage[0][SW]=Vomag8LR_Holz.1.7
+FreightImagetype[1]=Bretter
+FreightImage[1][S]=Vomag8LR_Holz.2.0
+FreightImage[1][N]=Vomag8LR_Holz.2.1
+FreightImage[1][E]=Vomag8LR_Holz.2.2
+FreightImage[1][W]=Vomag8LR_Holz.2.3
+FreightImage[1][SE]=Vomag8LR_Holz.2.4,4,0
+FreightImage[1][NW]=Vomag8LR_Holz.2.5,-2,0
+FreightImage[1][NE]=Vomag8LR_Holz.2.6
+FreightImage[1][SW]=Vomag8LR_Holz.2.7
+-------------------------------------------

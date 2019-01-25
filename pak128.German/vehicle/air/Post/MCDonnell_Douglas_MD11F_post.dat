@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=McDonnell_Douglas_MD11F_Post
+copyright=Pumuckl999
+intro_year=1990
+intro_month=12
+retire_year=2001
+retire_month=02
+waytype=air
+cost=801000000
+runningcost=1232
+freight=Post
+payload=300
+engine_type=diesel
+power=30000
+gear=150
+speed=890
+weight=126
+length=6
+sound=5
+EmptyImage[W]=MCDonnell_Douglas_MD11F.0.1
+EmptyImage[NW]=MCDonnell_Douglas_MD11F.0.2
+EmptyImage[N]=MCDonnell_Douglas_MD11F.0.3,-13,0
+EmptyImage[NE]=MCDonnell_Douglas_MD11F.0.4,-34,0
+EmptyImage[E]=MCDonnell_Douglas_MD11F.0.5,-8,0
+EmptyImage[SE]=MCDonnell_Douglas_MD11F.0.6
+EmptyImage[S]=MCDonnell_Douglas_MD11F.0.7
+EmptyImage[SW]=MCDonnell_Douglas_MD11F.0.8
+------------------------------------------------

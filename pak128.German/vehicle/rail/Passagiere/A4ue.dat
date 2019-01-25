@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=BZT_A4ue-35
+copyright=TonyBzt
+intro_year=1935
+intro_month=1
+retire_year=1974
+retire_month=12
+cost=22790000
+runningcost=301
+waytype=track
+freight=Passagiere
+payload=100
+speed=150
+weight=29
+length=12
+EmptyImage[S]=A4ue.0.0
+EmptyImage[E]=A4ue.0.1
+EmptyImage[SE]=A4ue.0.2
+EmptyImage[SW]=A4ue.0.3
+EmptyImage[N]=A4ue.0.4
+EmptyImage[W]=A4ue.0.5
+EmptyImage[NW]=A4ue.0.6
+EmptyImage[NE]=A4ue.0.7
+------------------------------

@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu:
+---------------------------------
+obj=vehicle
+name=Lemurias Hochzeitskutsche
+copyright=pumuckl999
+intro_year=1900
+intro_month=1
+retire_year=2014
+retire_month=12
+cost=92500
+runningcost=5
+waytype=road
+freight=Passagiere
+payload=2
+speed=15
+gear=100
+power=5
+weight=4
+engine_type=Bio
+constraint[prev][0]=none
+constraint[prev][1]=none
+constraint[next][0]=none
+constraint[next][1]=none
+EmptyImage[S]=hklemuria.0.0
+EmptyImage[N]=hklemuria.0.1
+EmptyImage[E]=hklemuria.0.2
+EmptyImage[W]=hklemuria.0.3
+EmptyImage[SE]=hklemuria.0.4
+EmptyImage[NW]=hklemuria.0.5
+EmptyImage[NE]=hklemuria.0.6
+EmptyImage[SW]=hklemuria.0.7
+----------------------------------

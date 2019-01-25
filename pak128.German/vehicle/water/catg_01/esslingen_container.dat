@@ -1,0 +1,42 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Frachter_Esslingen_Stueckgutfrachter
+copyright=pumuckl999
+intro_year=1920
+intro_month=1
+cost=32912000
+runningcost=1932
+waytype=water
+freight=Buecher
+engine_type=diesel
+power=4100
+speed=22
+gear=1200
+weight=600
+payload=362
+length=7
+sound=-1
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[W]=esslingen_container.0.1,-44,-4
+EmptyImage[NW]=esslingen_container.0.2,-16,0
+EmptyImage[N]=esslingen_container.0.3,-28,4
+EmptyImage[NE]=esslingen_container.0.4,-4,4
+EmptyImage[E]=esslingen_container.0.5,0,-12
+EmptyImage[SE]=esslingen_container.0.6,8,4
+EmptyImage[S]=esslingen_container.0.7,12,12
+EmptyImage[SW]=esslingen_container.0.8,-2,8
+FreightImage[W]=esslingen_container.1.1,-44,-4
+FreightImage[NW]=esslingen_container.1.2,-16,0
+FreightImage[N]=esslingen_container.1.3,-28,4
+FreightImage[NE]=esslingen_container.1.4,-4,4
+FreightImage[E]=esslingen_container.1.5,0,-12
+FreightImage[SE]=esslingen_container.1.6,8,4
+FreightImage[S]=esslingen_container.1.7,12,12
+FreightImage[SW]=esslingen_container.1.8,-2,8
+---------------------------------------------------

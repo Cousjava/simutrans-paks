@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=BZT_ABi
+copyright=TonyBzt
+intro_year=1924
+intro_month=1
+retire_year=1958
+retire_month=4
+cost=4640000
+runningcost=96
+waytype=track
+freight=Passagiere
+payload=30
+speed=100
+weight=14
+length=8
+EmptyImage[S]=DB_ABi.0.0
+EmptyImage[E]=DB_ABi.0.1
+EmptyImage[SE]=DB_ABi.0.2
+EmptyImage[SW]=DB_ABi.0.3
+EmptyImage[N]=DB_ABi.0.4
+EmptyImage[W]=DB_ABi.0.5
+EmptyImage[NW]=DB_ABi.0.6
+EmptyImage[NE]=DB_ABi.0.7
+--------------------------------

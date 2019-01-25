@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 31-05-2017
+#	Letzte Bearbeitung: $Date$ - $Author$: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
+---------------------------------
+obj=vehicle
+name=VT10
+copyright=pumuckl999
+intro_year=1930
+intro_month=1
+retire_year=1962
+retire_month=12
+cost=6430000
+runningcost=132
+waytype=track
+engine_type=diesel
+freight=Plastik
+payload=20
+speed=80
+weight=39
+power=155
+gear=250
+length=12
+sound=-1
+EmptyImage[S]=VT10.0.0
+EmptyImage[E]=VT10.0.1
+EmptyImage[SE]=VT10.0.2
+EmptyImage[SW]=VT10.0.3
+EmptyImage[N]=VT10.0.4
+EmptyImage[W]=VT10.0.5
+EmptyImage[NW]=VT10.0.6
+EmptyImage[NE]=VT10.0.7
+-----------------------------

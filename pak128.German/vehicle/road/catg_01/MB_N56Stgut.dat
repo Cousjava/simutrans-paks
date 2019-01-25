@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 02-02-2018
+---------------------------------
+obj=vehicle
+name=MB_N56_Stgut
+copyright=pumuckl999
+intro_year=1927
+intro_month=1
+retire_year=1945
+retire_month=12
+cost=953000
+runningcost=30
+waytype=road
+speed=45
+power=44
+weight=8
+freight=Plastik
+payload=5
+length=8
+smoke=Diesel_small
+sound=engine-start-diesel_d.wav
+constraint[prev][0]=none
+constraint[next][0]=MB_N56_Anhaenger_Stgut
+constraint[next][1]=none
+EmptyImage[S]=MB_N56Stueckgut.0.0
+EmptyImage[N]=MB_N56Stueckgut.0.1
+EmptyImage[E]=MB_N56Stueckgut.0.2
+EmptyImage[W]=MB_N56Stueckgut.0.3
+EmptyImage[SE]=MB_N56Stueckgut.0.4,4,0
+EmptyImage[NW]=MB_N56Stueckgut.0.5,-2,0
+EmptyImage[NE]=MB_N56Stueckgut.0.6
+EmptyImage[SW]=MB_N56Stueckgut.0.7
+-------------------------------------------

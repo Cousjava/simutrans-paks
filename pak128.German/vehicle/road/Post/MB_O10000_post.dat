@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MB_O10000_Post
+copyright=RedRabbit
+intro_year=1938
+intro_month=1
+retire_year=1950
+retire_month=6
+cost=8147500
+runningcost=201
+waytype=road
+freight=Post
+payload=75
+engine_type=diesel
+power=110
+speed=65
+weight=12
+length=12
+sound=1
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[W]=MB_O10000_Post.0.1
+EmptyImage[NW]=MB_O10000_Post.0.2
+EmptyImage[N]=MB_O10000_Post.0.3
+EmptyImage[NE]=MB_O10000_Post.0.4,-20
+EmptyImage[E]=MB_O10000_Post.0.5,-32,-16
+EmptyImage[SE]=MB_O10000_Post.0.6
+EmptyImage[S]=MB_O10000_Post.0.7
+EmptyImage[SW]=MB_O10000_Post.0.8,20
+----------------------------------------------
+

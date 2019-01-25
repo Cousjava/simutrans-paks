@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MS Stolzenfels
+copyright=pumuckl999
+intro_year=1979
+intro_month=1
+retire_year=2004
+retire_month=12
+waytype=water
+cost=42120000
+runningcost=2524
+freight=Passagiere
+payload=1000
+engine_type=diesel
+power=1200
+gear=1200
+speed=26
+weight=668
+length=7
+sound=-1
+smoke=Diesel
+EmptyImage[W]=MS_Stolzenfels.0.0,-44,-4
+EmptyImage[NW]=MS_Stolzenfels.0.1,-32,0
+EmptyImage[N]=MS_Stolzenfels.0.2,-32,0
+EmptyImage[NE]=MS_Stolzenfels.0.3,-36,-8
+EmptyImage[E]=MS_Stolzenfels.0.4,-36,-24
+EmptyImage[SE]=MS_Stolzenfels.0.5,4,-24
+EmptyImage[S]=MS_Stolzenfels.0.6,0,0
+EmptyImage[SW]=MS_Stolzenfels.0.7,0,0
+--------------------------------------

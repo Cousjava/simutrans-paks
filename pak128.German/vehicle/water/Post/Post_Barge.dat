@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Post_Barge
+copyright=MHz
+intro_year=1928
+intro_month=12
+retire_year=1972
+retire_month=4
+cost=11220000
+runningcost=569
+waytype=water
+engine_type=diesel
+freight=Post
+payload=220
+speed=30
+power=440
+gear=140
+weight=87
+smoke=Diesel
+sound=boat-horn.wav
+constraint[next][0]=none
+constraint[prev][0]=none
+emptyimage[w]=ship_pass-post_01.13.1
+emptyimage[nw]=ship_pass-post_01.13.2
+emptyimage[n]=ship_pass-post_01.13.3
+emptyimage[ne]=ship_pass-post_01.13.4
+emptyimage[e]=ship_pass-post_01.13.5
+emptyimage[se]=ship_pass-post_01.13.6
+emptyimage[s]=ship_pass-post_01.13.7
+emptyimage[sw]=ship_pass-post_01.13.8
+------------------------------------------

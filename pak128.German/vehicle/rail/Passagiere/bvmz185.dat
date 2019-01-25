@@ -1,0 +1,28 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 22-04-2017
+#    Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Bvmz_185
+copyright=pumuckl999
+intro_year=1987
+intro_month=1
+cost=24450000
+runningcost=229
+waytype=track
+freight=Passagiere
+payload=80
+speed=200
+weight=45
+length=14
+EmptyImage[S]=bvmz185.0.0
+EmptyImage[E]=bvmz185.0.1
+EmptyImage[SE]=bvmz185.0.2
+EmptyImage[SW]=bvmz185.0.3
+EmptyImage[N]=bvmz185.0.4
+EmptyImage[W]=bvmz185.0.5
+EmptyImage[NW]=bvmz185.0.6
+EmptyImage[NE]=bvmz185.0.7
+--------------------------------

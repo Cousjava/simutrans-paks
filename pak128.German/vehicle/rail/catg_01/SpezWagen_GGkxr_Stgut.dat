@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 05-09-2017
+---------------------------------
+obj=vehicle
+name=Spezialwagen_GGkxr_Stueckgut
+copyright=pumuckl999
+intro_year=1957
+intro_month=1
+retire_year=1970
+retire_month=12
+cost=6140000
+runningcost=119
+waytype=track
+freight=Plastik
+payload=22
+weight=20
+speed=90
+length=8
+sound=-1
+EmptyImage[S]=SpezWagen_GGkxr.0.0
+EmptyImage[E]=SpezWagen_GGkxr.0.1
+EmptyImage[SE]=SpezWagen_GGkxr.0.2
+EmptyImage[SW]=SpezWagen_GGkxr.0.3
+EmptyImage[N]=SpezWagen_GGkxr.0.4
+EmptyImage[W]=SpezWagen_GGkxr.0.5
+EmptyImage[NW]=SpezWagen_GGkxr.0.6
+EmptyImage[NE]=SpezWagen_GGkxr.0.7
+-----------------------------------

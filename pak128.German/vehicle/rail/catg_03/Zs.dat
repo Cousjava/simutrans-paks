@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 16-05-2017
+#	Letzte Bearbeitung: 25-10-2018 pumuckl999
+---------------------------------
+obj=vehicle
+name=Kesselwagen Zs
+copyright=pumuckl999
+intro_year=1961
+intro_month=1
+retire_year=2012
+retire_month=12
+cost=6870000
+runningcost=121
+waytype=track
+freight=Oel
+payload=30
+weight=12
+speed=100
+length=7
+sound=-1
+EmptyImage[S]=Zs.0.0
+EmptyImage[E]=Zs.0.1
+EmptyImage[SE]=Zs.0.2
+EmptyImage[SW]=Zs.0.3
+EmptyImage[N]=Zs.0.4
+EmptyImage[W]=Zs.0.5
+EmptyImage[NW]=Zs.0.6
+EmptyImage[NE]=Zs.0.7
+--------------------------------

@@ -1,0 +1,40 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 2008
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=BZT_Culemeyer2
+copyright=TonyBzt
+intro_year=1937
+intro_month=1
+retire_year=1961
+retire_month=12
+cost=865000
+runningcost=46
+waytype=road
+freight=Sand
+payload=15
+weight=19
+speed=25
+sound=-1
+Constraint[Prev][0]=BZT_Kaelble-1931
+constraint[next][0]=none
+EmptyImage[S]=Culemeyer.0.0
+EmptyImage[N]=Culemeyer.0.1
+EmptyImage[E]=Culemeyer.0.2
+EmptyImage[W]=Culemeyer.0.3
+EmptyImage[SE]=Culemeyer.0.4
+EmptyImage[NW]=Culemeyer.0.5
+EmptyImage[NE]=Culemeyer.0.6
+EmptyImage[SW]=Culemeyer.0.7
+FreightImage[S]=Culemeyer.1.0
+FreightImage[N]=Culemeyer.1.1
+FreightImage[E]=Culemeyer.1.2
+FreightImage[W]=Culemeyer.1.3
+FreightImage[SE]=Culemeyer.1.4
+FreightImage[NW]=Culemeyer.1.5
+FreightImage[NE]=Culemeyer.1.6
+FreightImage[SW]=Culemeyer.1.7
+------------------------------------

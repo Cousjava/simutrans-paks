@@ -1,0 +1,75 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	05-03-2016 NNW
+#	Update:
+#	03-03-2017 NNW
+# --------------------------------
+Obj=factory
+Name=Obstbauer
+copyright=NNW
+pax_level=5
+intro_year=1930
+intro_month=1
+location=land
+DistributionWeight=1
+Productivity=150
+OutputGood[0]=Obst
+OutputCapacity[0]=800
+OutputFactor[0]=100
+min_fields=4
+max_fields=10
+probability_to_spawn=5000
+fields[0]=Obstbaumfeld
+production_per_field[0]=20
+storage_capacity[0]=10
+has_snow[0]=1
+fields[0]=Obstbaumfeld
+production_per_field[0]=20
+storage_capacity[0]=10
+has_snow[0]=1
+fields[1]=Weinfelder2
+production_per_field[1]=10
+storage_capacity[1]=10
+has_snow[1]=1
+expand_probability=400
+expand_minimum=5
+expand_times=2
+electricity_amount=0
+climates=tropic, tundra, desert, mediterran
+needs_ground=1
+MapColor=142
+dims=2,2,4
+BackImage[0][0][0][0][0][0]=Obstbauer.0.0
+BackImage[0][0][1][0][0][0]=Obstbauer.0.1
+BackImage[0][1][0][0][0][0]=Obstbauer.0.2
+BackImage[0][1][1][0][0][0]=Obstbauer.0.3
+BackImage[0][0][0][0][0][1]=Obstbauer.0.4
+BackImage[0][0][1][0][0][1]=Obstbauer.0.5
+BackImage[0][1][0][0][0][1]=Obstbauer.1.0
+BackImage[0][1][1][0][0][1]=Obstbauer.1.1
+BackImage[1][0][0][0][0][0]=Obstbauer.1.2
+BackImage[1][0][1][0][0][0]=Obstbauer.1.3
+BackImage[1][1][0][0][0][0]=Obstbauer.1.4
+BackImage[1][1][1][0][0][0]=Obstbauer.1.5
+BackImage[1][0][0][0][0][1]=Obstbauer.2.0
+BackImage[1][0][1][0][0][1]=Obstbauer.2.1
+BackImage[1][1][0][0][0][1]=Obstbauer.2.2
+BackImage[1][1][1][0][0][1]=Obstbauer.2.3
+BackImage[2][0][0][0][0][0]=Obstbauer.2.4
+BackImage[2][0][1][0][0][0]=Obstbauer.2.5
+BackImage[2][1][0][0][0][0]=Obstbauer.3.0
+BackImage[2][1][1][0][0][0]=Obstbauer.3.1
+BackImage[2][0][0][0][0][1]=Obstbauer.3.2
+BackImage[2][0][1][0][0][1]=Obstbauer.3.3
+BackImage[2][1][0][0][0][1]=Obstbauer.3.4
+BackImage[2][1][1][0][0][1]=Obstbauer.3.5
+BackImage[3][0][0][0][0][0]=Obstbauer.4.0
+BackImage[3][0][1][0][0][0]=Obstbauer.4.1
+BackImage[3][1][0][0][0][0]=Obstbauer.4.2
+BackImage[3][1][1][0][0][0]=Obstbauer.4.3
+BackImage[3][0][0][0][0][1]=Obstbauer.4.4
+BackImage[3][0][1][0][0][1]=Obstbauer.4.5
+BackImage[3][1][0][0][0][1]=Obstbauer.5.0
+BackImage[3][1][1][0][0][1]=Obstbauer.5.1

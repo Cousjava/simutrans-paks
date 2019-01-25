@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 2008
+---------------------------------
+obj=vehicle
+name=MHz_LKW_Mercedes
+copyright=MHz
+intro_year=1941
+intro_month=6
+retire_year=1953
+retire_month=12
+cost=1370000
+runningcost=32
+waytype=road
+freight=Buecher
+payload=5
+engine_type=diesel
+smoke=Diesel
+speed=60
+weight=5
+power=70
+Constraint[Prev][0]=none
+EmptyImage[S]=Mercedes.0.0
+EmptyImage[N]=Mercedes.0.1
+EmptyImage[E]=Mercedes.0.2
+EmptyImage[W]=Mercedes.0.3
+EmptyImage[SE]=Mercedes.0.4
+EmptyImage[NW]=Mercedes.0.5
+EmptyImage[NE]=Mercedes.0.6
+EmptyImage[SW]=Mercedes.0.7
+-----------------------------------

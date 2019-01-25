@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu:06-08-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Staubgutwagen_Uacs
+copyright=pumuckl999
+# intro_year=1954
+intro_year=1956
+intro_month=1
+retire_year=1999
+retire_month=6
+cost=17040000
+runningcost=294
+waytype=track
+freight=Zement_lose
+payload=56
+weight=24
+speed=100
+length=8
+sound=-1
+EmptyImage[S]=Staubgut_Uacs.0.0
+EmptyImage[E]=Staubgut_Uacs.0.1
+EmptyImage[SE]=Staubgut_Uacs.0.2
+EmptyImage[SW]=Staubgut_Uacs.0.3
+EmptyImage[N]=Staubgut_Uacs.0.4
+EmptyImage[W]=Staubgut_Uacs.0.5
+EmptyImage[NW]=Staubgut_Uacs.0.6
+EmptyImage[NE]=Staubgut_Uacs.0.7
+---------------------------------

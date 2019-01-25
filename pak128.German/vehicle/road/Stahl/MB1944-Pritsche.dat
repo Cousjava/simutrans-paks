@@ -1,0 +1,44 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 2008
+# Opel Blitz ab 1937 bzw. der Nachbau von
+# Mercedes Benz L701 mit Kriegsführerhaus aus Holz
+---------------------------------
+obj=vehicle
+name=CoilsLaster
+copyright=TonyBzt
+intro_year=1944
+intro_month=1
+retire_year=1955
+retire_month=12
+cost=1537000
+runningcost=33
+waytype=road
+engine_type=diesel
+freight=Stahl
+payload=3
+speed=80
+weight=2.5
+power=54
+smoke=Diesel
+sound=1
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=MB1944-Pritsche.0.0
+EmptyImage[N]=MB1944-Pritsche.0.1
+EmptyImage[E]=MB1944-Pritsche.0.2
+EmptyImage[W]=MB1944-Pritsche.0.3
+EmptyImage[SE]=MB1944-Pritsche.0.4
+EmptyImage[NW]=MB1944-Pritsche.0.5
+EmptyImage[NE]=MB1944-Pritsche.0.6
+EmptyImage[SW]=MB1944-Pritsche.0.7
+FreightImage[S]=MB1944-Pritsche.1.0
+FreightImage[N]=MB1944-Pritsche.1.1
+FreightImage[E]=MB1944-Pritsche.1.2
+FreightImage[W]=MB1944-Pritsche.1.3
+FreightImage[SE]=MB1944-Pritsche.1.4
+FreightImage[NW]=MB1944-Pritsche.1.5
+FreightImage[NE]=MB1944-Pritsche.1.6
+FreightImage[SW]=MB1944-Pritsche.1.7
+------------------------------------------

@@ -1,0 +1,41 @@
+#	PAK128.german
+#	Vehicle
+obj=vehicle
+name=Doebelner Pferdebahnwagen
+copyright=pumuckl999
+intro_year=1892
+intro_month=7
+retire_year=1926
+retire_month=12
+waytype=tram_track
+cost=817500
+runningcost=88
+freight=Passagiere
+payload=35
+speed=15
+weight=3
+length=6
+#sound=
+#smoke=
+constraint[prev][0]=Pferd
+constraint[prev][1]=none
+constraint[next][0]=none
+constraint[next][1]=none
+EmptyImage[S]=pbd.0.6
+EmptyImage[N]=pbd.0.2
+EmptyImage[E]=pbd.0.4
+EmptyImage[W]=pbd.0.0
+EmptyImage[SW]=pbd.0.7
+EmptyImage[SE]=pbd.0.5
+EmptyImage[NW]=pbd.0.1
+EmptyImage[NE]=pbd.0.3
+#freightImageType[0]=
+#freightimage[0][S]=
+#freightimage[0][N]=
+#freightimage[0][E]=
+#freightimage[0][W]=
+#freightimage[0][SW]=
+#freightimage[0][SE]=
+#freightimage[0][NE]=
+#freightimage[0][NW]=
+#_EO_

@@ -1,0 +1,29 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+---------------------------------
+obj=vehicle
+name=P8Tender
+copyright=Tony Baerenz
+intro_year=1906
+intro_month=1
+retire_year=1924
+retire_month=12
+cost=350000
+runningcost=40
+waytype=track
+speed=100
+weight=35
+length=7
+Constraint[Prev][0]=P8
+Constraint[Prev][1]=none
+EmptyImage[S]=P8_Tender.0.0
+EmptyImage[E]=P8_Tender.0.1
+EmptyImage[SE]=P8_Tender.0.2
+EmptyImage[SW]=P8_Tender.0.3
+EmptyImage[N]=P8_Tender.0.4
+EmptyImage[W]=P8_Tender.0.5
+EmptyImage[NW]=P8_Tender.0.6
+EmptyImage[NE]=P8_Tender.0.7
+---------------------------------

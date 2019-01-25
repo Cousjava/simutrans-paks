@@ -1,0 +1,29 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Bananenwagen
+copyright=TonyBzt
+intro_year=1920
+intro_month=1
+cost=2350000
+runningcost=61
+waytype=track
+freight=Weizen
+payload=15
+weight=19
+speed=80
+length=8
+sound=-1
+EmptyImage[S]=Bananenwagen.0.0
+EmptyImage[E]=Bananenwagen.0.1
+EmptyImage[SE]=Bananenwagen.0.2
+EmptyImage[SW]=Bananenwagen.0.3
+EmptyImage[N]=Bananenwagen.0.4
+EmptyImage[W]=Bananenwagen.0.5
+EmptyImage[NW]=Bananenwagen.0.6
+EmptyImage[NE]=Bananenwagen.0.7
+-----------------------------------

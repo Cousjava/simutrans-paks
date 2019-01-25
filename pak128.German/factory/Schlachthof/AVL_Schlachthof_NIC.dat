@@ -1,0 +1,61 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+# --------------------------------
+Obj=factory
+name=AVL_Schlachthof_NIC
+copyright=RedRabbit
+pax_level=32
+intro_year=1982
+intro_month=1
+Location=City
+DistributionWeight=1
+Productivity=160
+InputGood[0]=Vieh
+InputCapacity[0]=640
+InputSupplier[0]=3
+InputGood[1]=Verpackungsmittel
+Inputfactor[1]=20
+InputCapacity[1]=320
+OutputGood[0]=Fleisch
+OutputCapacity[0]=640
+electricity_amount=20
+passenger_boost=1000
+mail_boost=500
+climates=tundra
+MapColor=182
+dims=4,2,4
+BackImage[0][0][0][0][0][0]=AVL_Schlachthof.0.0
+BackImage[0][0][1][0][0][0]=AVL_Schlachthof.0.1
+BackImage[0][0][2][0][0][0]=AVL_Schlachthof.0.2
+BackImage[0][0][3][0][0][0]=AVL_Schlachthof.0.3
+BackImage[0][1][0][0][0][0]=AVL_Schlachthof.0.4
+BackImage[0][1][1][0][0][0]=AVL_Schlachthof.0.5
+BackImage[0][1][2][0][0][0]=AVL_Schlachthof.1.0
+BackImage[0][1][3][0][0][0]=AVL_Schlachthof.1.1
+BackImage[1][0][0][0][0][0]=AVL_Schlachthof.1.2
+BackImage[1][0][1][0][0][0]=AVL_Schlachthof.1.3
+BackImage[1][1][0][0][0][0]=AVL_Schlachthof.1.4
+BackImage[1][1][1][0][0][0]=AVL_Schlachthof.1.5
+BackImage[1][2][0][0][0][0]=AVL_Schlachthof.2.0
+BackImage[1][2][1][0][0][0]=AVL_Schlachthof.2.1
+BackImage[1][3][0][0][0][0]=AVL_Schlachthof.2.2
+BackImage[1][3][1][0][0][0]=AVL_Schlachthof.2.3
+BackImage[2][0][0][0][0][0]=AVL_Schlachthof.2.4
+BackImage[2][0][1][0][0][0]=AVL_Schlachthof.2.5
+BackImage[2][0][2][0][0][0]=AVL_Schlachthof.3.0
+BackImage[2][0][3][0][0][0]=AVL_Schlachthof.3.1
+BackImage[2][1][0][0][0][0]=AVL_Schlachthof.3.2
+BackImage[2][1][1][0][0][0]=AVL_Schlachthof.3.3
+BackImage[2][1][2][0][0][0]=AVL_Schlachthof.3.4
+BackImage[2][1][3][0][0][0]=AVL_Schlachthof.3.5
+BackImage[3][0][0][0][0][0]=AVL_Schlachthof.4.0
+BackImage[3][0][1][0][0][0]=AVL_Schlachthof.4.1
+BackImage[3][1][0][0][0][0]=AVL_Schlachthof.4.2
+BackImage[3][1][1][0][0][0]=AVL_Schlachthof.4.3
+BackImage[3][2][0][0][0][0]=AVL_Schlachthof.4.4
+BackImage[3][2][1][0][0][0]=AVL_Schlachthof.4.5
+BackImage[3][3][0][0][0][0]=AVL_Schlachthof.5.0
+BackImage[3][3][1][0][0][0]=AVL_Schlachthof.5.1
+----------------------------------------------------

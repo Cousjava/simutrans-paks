@@ -1,0 +1,50 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	Letzte Bearbeitung:
+#   $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+name=ALP_Viehhof_NIC
+copyright=RedRabbit
+intro_year=1800
+intro_month=1
+Location=Land
+DistributionWeight=127
+Productivity=25
+max_fields=20
+min_fields=1
+OutputGood[0]=Vieh
+OutputCapacity[0]=100
+OutputGood[1]=Milch
+OutputCapacity[1]=100
+OutputGood[2]=Eier
+OutputCapacity[2]=100
+probability_to_spawn=50
+fields[0]=Weide_Kuh_braun
+storage_capacity[0]=100
+production_per_field[0]=25
+spawn_weight[0]=50
+has_snow[0]=1
+fields[1]=Weide_Kuh_lila
+storage_capacity[1]=100
+production_per_field[1]=25
+spawn_weight[1]=5
+has_snow[1]=1
+passenger_boost=1000
+mail_boost=500
+electricity_amount=1
+climates=rocky
+MapColor=118
+needs_ground=1
+dims=2,1,4
+BackImage[0][0][0][0][0][0]=ALP_Viehhof.0.0
+BackImage[0][0][1][0][0][0]=ALP_Viehhof.0.1
+BackImage[1][0][0][0][0][0]=ALP_Viehhof.0.2
+BackImage[1][1][0][0][0][0]=ALP_Viehhof.1.0
+BackImage[2][0][0][0][0][0]=ALP_Viehhof.1.1
+BackImage[2][0][1][0][0][0]=ALP_Viehhof.1.2
+BackImage[3][0][0][0][0][0]=ALP_Viehhof.2.0
+BackImage[3][1][0][0][0][0]=ALP_Viehhof.2.1
+----------------------------------------------

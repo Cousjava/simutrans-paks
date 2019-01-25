@@ -1,0 +1,28 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu:
+---------------------------------
+obj=vehicle
+name=Anhaenger_18t_Mineraloeltransport
+copyright=RedRabbit
+intro_year=1986
+intro_month=1
+cost=2405000
+runningcost=52
+waytype=road
+speed=80
+weight=6.5
+freight=Oel
+payload=13
+length=7
+constraint[next][0]=none
+EmptyImage[S]=RR_Anhaenger_18t_Oel.0.1
+EmptyImage[N]=RR_Anhaenger_18t_Oel.0.2
+EmptyImage[E]=RR_Anhaenger_18t_Oel.0.3
+EmptyImage[W]=RR_Anhaenger_18t_Oel.0.4
+EmptyImage[SE]=RR_Anhaenger_18t_Oel.0.5
+EmptyImage[NW]=RR_Anhaenger_18t_Oel.0.6
+EmptyImage[NE]=RR_Anhaenger_18t_Oel.0.7
+EmptyImage[SW]=RR_Anhaenger_18t_Oel.0.8
+--------------------------------------------

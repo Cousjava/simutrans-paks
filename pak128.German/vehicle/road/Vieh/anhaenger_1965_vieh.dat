@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=anhaenger_1965_16t_Vieh
+copyright=RedRabbit
+intro_year=1965
+intro_month=1
+retire_year=1986
+retire_month=12
+cost=2459000
+runningcost=54
+waytype=road
+freight=Vieh
+speed=80
+weight=5.9
+payload=10
+length=7
+constraint[next][0]=none
+EmptyImage[W]=anhaenger_1965.3.1
+EmptyImage[NW]=anhaenger_1965.3.2
+EmptyImage[N]=anhaenger_1965.3.3
+EmptyImage[NE]=anhaenger_1965.3.4
+EmptyImage[E]=anhaenger_1965.3.5
+EmptyImage[SE]=anhaenger_1965.3.6
+EmptyImage[S]=anhaenger_1965.3.7
+EmptyImage[SW]=anhaenger_1965.3.8
+----------------------------------------------

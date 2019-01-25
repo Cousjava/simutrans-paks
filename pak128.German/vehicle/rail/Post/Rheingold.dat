@@ -1,0 +1,56 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=BZT_Rheingold_1_Pack1
+copyright=TonyBzt
+intro_year=1928
+intro_month=1
+retire_year=1940
+retire_month=12
+cost=14910000
+runningcost=240
+waytype=track
+freight=Post
+payload=60
+speed=160
+# speed=140 eigentlich ist 140 richtig, aber für die S2/6 und die BR 05 brauchen wir auch Wägen
+weight=51
+length=10
+EmptyImage[S]=Rheingold.2.0
+EmptyImage[E]=Rheingold.2.1
+EmptyImage[SE]=Rheingold.2.2
+EmptyImage[SW]=Rheingold.2.3
+EmptyImage[N]=Rheingold.2.4
+EmptyImage[W]=Rheingold.2.5
+EmptyImage[NW]=Rheingold.2.6
+EmptyImage[NE]=Rheingold.2.7
+-----------------------------------
+obj=vehicle
+name=BZT_Rheingold_1_Pack2
+copyright=TonyBzt
+intro_year=1928
+intro_month=1
+retire_year=1940
+retire_month=12
+cost=14910000
+runningcost=240
+waytype=track
+freight=Post
+payload=60
+speed=160
+# speed=140 eigentlich ist 140 richtig, aber für die S2/6 und die BR 05 brauchen wir auch Wägen
+weight=51
+length=10
+EmptyImage[S]=Rheingold.3.0
+EmptyImage[E]=Rheingold.3.1
+EmptyImage[SE]=Rheingold.3.2
+EmptyImage[SW]=Rheingold.3.3
+EmptyImage[N]=Rheingold.3.4
+EmptyImage[W]=Rheingold.3.5
+EmptyImage[NW]=Rheingold.3.6
+EmptyImage[NE]=Rheingold.3.7
+---------------------------------

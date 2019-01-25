@@ -1,0 +1,46 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Flachwagen_Holz
+copyright=TonyBzt
+intro_year=1942
+intro_month=1
+cost=4620000
+runningcost=89
+waytype=track
+freight=Bretter
+payload=25
+speed=100
+weight=12
+length=9
+EmptyImage[S]=Flachwagen.0.0
+EmptyImage[E]=Flachwagen.0.1
+EmptyImage[SE]=Flachwagen.0.2
+EmptyImage[SW]=Flachwagen.0.3
+EmptyImage[N]=Flachwagen.0.4
+EmptyImage[W]=Flachwagen.0.5
+EmptyImage[NW]=Flachwagen.0.6
+EmptyImage[NE]=Flachwagen.0.7
+FreightImagetype[0]=Holz
+FreightImage[0][S]=Flachwagen.7.0
+FreightImage[0][E]=Flachwagen.7.1
+FreightImage[0][SE]=Flachwagen.7.2
+FreightImage[0][SW]=Flachwagen.7.3
+FreightImage[0][N]=Flachwagen.7.4
+FreightImage[0][W]=Flachwagen.7.5
+FreightImage[0][NW]=Flachwagen.7.6
+FreightImage[0][NE]=Flachwagen.7.7
+FreightImagetype[1]=Bretter
+FreightImage[1][S]=Flachwagen.4.0
+FreightImage[1][E]=Flachwagen.4.1
+FreightImage[1][SE]=Flachwagen.4.2
+FreightImage[1][SW]=Flachwagen.4.3
+FreightImage[1][N]=Flachwagen.4.4
+FreightImage[1][W]=Flachwagen.4.5
+FreightImage[1][NW]=Flachwagen.4.6
+FreightImage[1][NE]=Flachwagen.4.7
+---------------------------------------

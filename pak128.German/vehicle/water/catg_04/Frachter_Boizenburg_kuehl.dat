@@ -1,0 +1,44 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Frachter_Typ_Boizenburg_Kuehlwaren
+copyright=Pumuckl999
+intro_year=1962
+intro_month=1
+retire_year=2011
+retire_month=12
+waytype=water
+cost=8563500
+runningcost=905
+freight=Fleisch
+payload=180
+engine_type=diesel
+power=309
+gear=1200
+speed=15
+weight=400
+length=17
+sound=-1
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[S]=Frachter_Boizenburg_kuehl.0.7,4,0
+EmptyImage[N]=Frachter_Boizenburg_kuehl.0.3,-24,0
+EmptyImage[E]=Frachter_Boizenburg_kuehl.0.5,-36,-28
+EmptyImage[W]=Frachter_Boizenburg_kuehl.0.1,-40,0
+EmptyImage[SW]=Frachter_Boizenburg_kuehl.0.8,0,-8
+EmptyImage[SE]=Frachter_Boizenburg_kuehl.0.6,8,-32
+EmptyImage[NW]=Frachter_Boizenburg_kuehl.0.2,-36,4
+EmptyImage[NE]=Frachter_Boizenburg_kuehl.0.4,-48,-12
+freightimage[S]=Frachter_Boizenburg_kuehl.1.7,4,0
+freightimage[N]=Frachter_Boizenburg_kuehl.1.3,-24,0
+freightimage[E]=Frachter_Boizenburg_kuehl.1.5,-36,-28
+freightimage[W]=Frachter_Boizenburg_kuehl.1.1,-40,0
+freightimage[SW]=Frachter_Boizenburg_kuehl.1.8,0,-8
+freightimage[SE]=Frachter_Boizenburg_kuehl.1.6,8,-32
+freightimage[NW]=Frachter_Boizenburg_kuehl.1.2,-36,4
+freightimage[NE]=Frachter_Boizenburg_kuehl.1.4,-48,-12
+---------------------------------------------------------

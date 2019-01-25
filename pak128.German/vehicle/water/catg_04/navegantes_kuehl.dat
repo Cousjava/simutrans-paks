@@ -1,0 +1,42 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Kuehl_Containerschiff MSC Navegantes
+Copyright=pumuckl999
+intro_year=1997
+intro_month=1
+cost=927180000
+runningcost=28956
+waytype=water
+freight=Fleisch
+engine_type=diesel
+power=41040
+gear=1200
+speed=45
+length=17
+weight=53000
+payload=5500
+Sound=boat-horn.wav
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[W]=navegantes_empty.0.0,-56,-16
+EmptyImage[NW]=navegantes_empty.0.1,-28,-8
+EmptyImage[N]=navegantes_empty.0.2,-20,5
+EmptyImage[NE]=navegantes_empty.0.3,-16,0
+EmptyImage[E]=navegantes_empty.0.4,-36,-8
+EmptyImage[SE]=navegantes_empty.0.5,8,0
+EmptyImage[S]=navegantes_empty.0.6,-4,24
+EmptyImage[SW]=navegantes_empty.0.7,-4,0
+FreightImage[W]=navegantes_kuehl.0.0,-56,-16
+FreightImage[NW]=navegantes_kuehl.0.1,-28,-8
+FreightImage[N]=navegantes_kuehl.0.2,-20,5
+FreightImage[NE]=navegantes_kuehl.0.3,-16,0
+FreightImage[E]=navegantes_kuehl.0.4,-36,-8
+FreightImage[SE]=navegantes_kuehl.0.5,8,0
+FreightImage[S]=navegantes_kuehl.0.6,-4,24
+FreightImage[SW]=navegantes_kuehl.0.7,-4,0
+------------------------------------------------

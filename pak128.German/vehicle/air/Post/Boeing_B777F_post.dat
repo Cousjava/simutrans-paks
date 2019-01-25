@@ -1,0 +1,40 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Boeing_B777F_Post
+copyright=Pumuckl999
+intro_year=2005
+intro_month=1
+waytype=air
+cost=873600000
+runningcost=1162
+freight=Post
+payload=325
+engine_type=diesel
+power=32000
+gear=150
+speed=896
+weight=144
+length=6
+sound=5
+EmptyImage[W]=Boeing_B777F.0.1
+EmptyImage[NW]=Boeing_B777F.0.2
+EmptyImage[N]=Boeing_B777F.0.3,-18,0
+EmptyImage[NE]=Boeing_B777F.0.4,-37,0
+EmptyImage[E]=Boeing_B777F.0.5,-12,0
+EmptyImage[SE]=Boeing_B777F.0.6
+EmptyImage[S]=Boeing_B777F.0.7
+EmptyImage[SW]=Boeing_B777F.0.8
+FreightImage[W]=Boeing_B777F.0.1
+FreightImage[NW]=Boeing_B777F.0.2
+FreightImage[N]=Boeing_B777F.0.3,-18,0
+FreightImage[NE]=Boeing_B777F.0.4,-37,0
+FreightImage[E]=Boeing_B777F.0.5,-12,0
+FreightImage[SE]=Boeing_B777F.0.6
+FreightImage[S]=Boeing_B777F.0.7
+FreightImage[SW]=Boeing_B777F.0.8
+--------------------------------------

@@ -1,0 +1,67 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 13-03-2017 pumuckl999
+# --------------------------------
+Obj=factory
+Name=alte_Werft
+copyright=pumuckl999
+pax_level=50
+enables_pax=1
+enables_post=1
+intro_year=1800
+intro_month=1
+retire_year=1869
+retire_month=12
+location=water
+needs_ground=1
+DistributionWeight=1
+Productivity=50
+Range=5
+InputGood[0]=Bretter
+InputCapacity[0]=2000
+InputSupplier[0]=1
+InputGood[1]=Textilien
+InputFactor[1]=120
+InputCapacity[1]=2000
+InputSupplier[1]=1
+InputGood[2]=Stahl
+InputFactor[2]=20
+InputCapacity[2]=500
+InputSupplier[2]=1
+Electricity_amount=0
+Electricity_boost=0
+passenger_boost=1000
+mail_boost=500
+#expand_probability=1000
+#expand_minimum=1
+#expand_range=2
+#expand_times=1
+MapColor=97
+climates=desert
+dims=2,3,4
+BackImage[0][0][0][0][0][0]=alt_werft.0.0
+BackImage[0][0][1][0][0][0]=alt_werft.0.1
+BackImage[0][1][0][0][0][0]=alt_werft.0.2
+BackImage[0][1][1][0][0][0]=alt_werft.0.3
+BackImage[0][2][0][0][0][0]=alt_werft.0.4
+BackImage[0][2][1][0][0][0]=alt_werft.1.0
+BackImage[1][0][0][0][0][0]=alt_werft.1.1
+BackImage[1][0][1][0][0][0]=alt_werft.1.2
+BackImage[1][0][2][0][0][0]=alt_werft.1.3
+BackImage[1][1][0][0][0][0]=alt_werft.1.4
+BackImage[1][1][1][0][0][0]=alt_werft.2.0
+BackImage[1][1][2][0][0][0]=alt_werft.2.1
+BackImage[2][0][0][0][0][0]=alt_werft.2.2
+BackImage[2][0][1][0][0][0]=alt_werft.2.3
+BackImage[2][1][0][0][0][0]=alt_werft.2.4
+BackImage[2][1][1][0][0][0]=alt_werft.3.0
+BackImage[2][2][0][0][0][0]=alt_werft.3.1
+BackImage[2][2][1][0][0][0]=alt_werft.3.2
+BackImage[3][0][0][0][0][0]=alt_werft.3.3
+BackImage[3][0][1][0][0][0]=alt_werft.3.4
+BackImage[3][0][2][0][0][0]=alt_werft.4.0
+BackImage[3][1][0][0][0][0]=alt_werft.4.1
+BackImage[3][1][1][0][0][0]=alt_werft.4.2
+BackImage[3][1][2][0][0][0]=alt_werft.4.3
+------------------------------------------

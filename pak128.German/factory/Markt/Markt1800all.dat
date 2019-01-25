@@ -1,0 +1,92 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 10-10-2017
+# --------------------------------
+Obj=factory
+name=Markt_AK
+copyright=Pumuckl999
+pax_level=10
+intro_year=1800
+intro_month=1
+retire_year=1920
+retire_month=1
+Location=City
+DistributionWeight=127
+Productivity=10
+Range=2
+InputGood[0]=Backwaren
+InputCapacity[0]=800
+InputSupplier[0]=1
+InputGood[1]=Bier
+InputCapacity[1]=800
+InputSupplier[1]=1
+InputGood[2]=Eier
+InputCapacity[2]=800
+InputSupplier[2]=1
+InputGood[3]=Trauben
+InputCapacity[3]=800
+InputSupplier[3]=1
+InputGood[4]=Milch
+InputCapacity[4]=800
+InputSupplier[4]=1
+InputGood[5]=Textilien
+InputCapacity[5]=400
+InputFactor[5]=40
+InputSupplier[5]=1
+InputGood[6]=Obst
+InputCapacity[6]=800
+InputSupplier[6]=1
+InputGood[7]=Fleisch
+InputCapacity[7]=200
+InputFactor[7]=20
+InputSupplier[7]=1
+InputGood[8]=Fisch
+InputCapacity[8]=200
+InputFactor[8]=20
+electricity_amount=3
+passenger_boost=2000
+mail_boost=500
+expand_probability=40
+# Warscheinlichkeit für expand 10000 oder mehr = 100% (100=1%)
+# nach test makie 100 = nach 2 jahren, 50 = nach 4 Jahre, 10 = keine mehr 
+expand_minimum=1
+expand_range=1
+expand_times=40
+# Produktion wird um =+ expand_minumum + random( expand_range ) erhöht.
+MapColor=132
+climates=desert, tropic, mediterran, temperate, tundra, rocky
+dims=2,2,4
+BackImage[0][0][0][0][0][0]=Markt1800all.0.0
+BackImage[0][0][1][0][0][0]=Markt1800all.0.1
+BackImage[0][1][0][0][0][0]=Markt1800all.0.2
+BackImage[0][1][1][0][0][0]=Markt1800all.0.3
+BackImage[0][0][0][0][0][1]=Markt1800all.0.4
+BackImage[0][0][1][0][0][1]=Markt1800all.0.5
+BackImage[0][1][0][0][0][1]=Markt1800all.1.0
+BackImage[0][1][1][0][0][1]=Markt1800all.1.1
+BackImage[1][0][0][0][0][0]=Markt1800all.1.2
+BackImage[1][0][1][0][0][0]=Markt1800all.1.3
+BackImage[1][1][0][0][0][0]=Markt1800all.1.4
+BackImage[1][1][1][0][0][0]=Markt1800all.1.5
+BackImage[1][0][0][0][0][1]=Markt1800all.2.0
+BackImage[1][0][1][0][0][1]=Markt1800all.2.1
+BackImage[1][1][0][0][0][1]=Markt1800all.2.2
+BackImage[1][1][1][0][0][1]=Markt1800all.2.3
+BackImage[2][0][0][0][0][0]=Markt1800all.2.4
+BackImage[2][0][1][0][0][0]=Markt1800all.2.5
+BackImage[2][1][0][0][0][0]=Markt1800all.3.0
+BackImage[2][1][1][0][0][0]=Markt1800all.3.1
+BackImage[2][0][0][0][0][1]=Markt1800all.3.2
+BackImage[2][0][1][0][0][1]=Markt1800all.3.3
+BackImage[2][1][0][0][0][1]=Markt1800all.3.4
+BackImage[2][1][1][0][0][1]=Markt1800all.3.5
+BackImage[3][0][0][0][0][0]=Markt1800all.4.0
+BackImage[3][0][1][0][0][0]=Markt1800all.4.1
+BackImage[3][1][0][0][0][0]=Markt1800all.4.2
+BackImage[3][1][1][0][0][0]=Markt1800all.4.3
+BackImage[3][0][0][0][0][1]=Markt1800all.4.4
+BackImage[3][0][1][0][0][1]=Markt1800all.4.5
+BackImage[3][1][0][0][0][1]=Markt1800all.5.0
+BackImage[3][1][1][0][0][1]=Markt1800all.5.1
+-----------------------------------------

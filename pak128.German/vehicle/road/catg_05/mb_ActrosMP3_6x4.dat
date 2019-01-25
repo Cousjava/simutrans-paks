@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MB_ActrosMP3_fl_Lebensmittel
+copyright=RedRabbit
+intro_year=2008
+intro_month=1
+retire_year=2016
+retire_month=12
+cost=4668300
+runningcost=53
+waytype=road
+freight=Milch
+engine_type=diesel
+power=300
+speed=80
+weight=10.83
+payload=12
+length=9
+sound=1
+constraint[prev][0]=none
+constraint[next][0]=anhaenger_1990_16t_fl_Lebensmittel
+constraint[next][1]=none
+EmptyImage[W]=mb_ActrosMP3_6x4.3.1
+EmptyImage[NW]=mb_ActrosMP3_6x4.3.2
+EmptyImage[N]=mb_ActrosMP3_6x4.3.3
+EmptyImage[NE]=mb_ActrosMP3_6x4.3.4
+EmptyImage[E]=mb_ActrosMP3_6x4.3.5
+EmptyImage[SE]=mb_ActrosMP3_6x4.3.6
+EmptyImage[S]=mb_ActrosMP3_6x4.3.7
+EmptyImage[SW]=mb_ActrosMP3_6x4.3.8
+-----------------------------------------------

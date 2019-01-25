@@ -1,0 +1,54 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 13-09-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=D-Zug-Wagen_C4ue-26_3.Kl.
+copyright=pumuckl999
+intro_year=1927
+intro_month=1
+retire_year=1975
+retire_month=12
+cost=17240000
+runningcost=264
+waytype=track
+freight=Passagiere
+payload=80
+speed=140
+weight=44
+length=12
+EmptyImage[S]=DZWagen_C4ue-26.0.0
+EmptyImage[E]=DZWagen_C4ue-26.0.1
+EmptyImage[SE]=DZWagen_C4ue-26.0.2
+EmptyImage[SW]=DZWagen_C4ue-26.0.3
+EmptyImage[N]=DZWagen_C4ue-26.0.4
+EmptyImage[W]=DZWagen_C4ue-26.0.5
+EmptyImage[NW]=DZWagen_C4ue-26.0.6
+EmptyImage[NE]=DZWagen_C4ue-26.0.7
+--------------------------------
+obj=vehicle
+name=D-Zug-Wagen_C4ue-26_1.u.2.Kl.
+copyright=pumuckl999
+intro_year=1927
+intro_month=1
+retire_year=1975
+retire_month=12
+cost=9710000
+runningcost=177
+waytype=track
+freight=Passagiere
+payload=44
+speed=140
+weight=47
+length=12
+EmptyImage[S]=DZWagen_C4ue-26.0.0
+EmptyImage[E]=DZWagen_C4ue-26.0.1
+EmptyImage[SE]=DZWagen_C4ue-26.0.2
+EmptyImage[SW]=DZWagen_C4ue-26.0.3
+EmptyImage[N]=DZWagen_C4ue-26.0.4
+EmptyImage[W]=DZWagen_C4ue-26.0.5
+EmptyImage[NW]=DZWagen_C4ue-26.0.6
+EmptyImage[NE]=DZWagen_C4ue-26.0.7
+--------------------------------

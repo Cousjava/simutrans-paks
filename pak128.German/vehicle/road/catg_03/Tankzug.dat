@@ -1,0 +1,37 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 2008
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Gasoline1950
+copyright=TonyBzt
+intro_year=1951
+intro_month=1
+retire_year=1977
+retire_month=11
+cost=3180000
+runningcost=56
+waytype=road
+freight=Benzin
+engine_type=diesel 
+payload=10
+speed=80
+weight=10
+power=160
+gear=50
+Length=6
+smoke=Diesel
+sound=1
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=Tankzug.0.0
+EmptyImage[N]=Tankzug.0.1
+EmptyImage[E]=Tankzug.0.2
+EmptyImage[W]=Tankzug.0.3
+EmptyImage[SE]=Tankzug.0.4
+EmptyImage[NW]=Tankzug.0.5
+EmptyImage[NE]=Tankzug.0.6
+EmptyImage[SW]=Tankzug.0.7
+---------------------------------

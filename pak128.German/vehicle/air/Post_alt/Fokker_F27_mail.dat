@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+#	Letzte Bearbeitung 
+#    11-10-2015 The Transporter
+---------------------------------
+obj=vehicle
+name=MHz-Fokker_F27_mail
+copyright=MHz
+intro_year=1958
+intro_month=6
+retire_year=1972
+retire_month=11
+cost=86100000
+runningcost=231
+waytype=air
+engine_type=diesel
+freight=Post
+payload=70
+speed=410
+power=4150
+gear=45
+weight=21
+smoke=-1
+sound=engine-start-diesel-1.wav
+emptyimage[w]=air_pass-post_01.0.1
+emptyimage[nw]=air_pass-post_01.0.2
+emptyimage[n]=air_pass-post_01.0.3
+emptyimage[ne]=air_pass-post_01.0.4
+emptyimage[e]=air_pass-post_01.0.5
+emptyimage[se]=air_pass-post_01.0.6
+emptyimage[s]=air_pass-post_01.0.7
+emptyimage[sw]=air_pass-post_01.0.8
+---------------------------------------

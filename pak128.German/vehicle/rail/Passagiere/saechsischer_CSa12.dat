@@ -1,0 +1,29 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 03-09-2018
+---------------------------------
+obj=vehicle
+name=saechsischer_C_Sa_12
+copyright=pumuckl999
+intro_year=1912
+intro_month=8
+retire_year=1969
+retire_month=12
+cost=4240000
+RunningCost=123
+waytype=track
+freight=Passagiere
+payload=45
+speed=60
+weight=19
+length=7
+EmptyImage[S]=saechsischer_CSa12.0.0
+EmptyImage[E]=saechsischer_CSa12.0.1
+EmptyImage[SE]=saechsischer_CSa12.0.2
+EmptyImage[SW]=saechsischer_CSa12.0.3
+EmptyImage[N]=saechsischer_CSa12.0.4
+EmptyImage[W]=saechsischer_CSa12.0.5
+EmptyImage[NW]=saechsischer_CSa12.0.6
+EmptyImage[NE]=saechsischer_CSa12.0.7
+--------------------------------

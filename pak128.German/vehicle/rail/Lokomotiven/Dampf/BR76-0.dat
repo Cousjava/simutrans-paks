@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+---------------------------------
+obj=vehicle
+name=BR76-0
+copyright=TonyBzt
+intro_year=1909
+intro_month=3
+retire_year=1964
+retire_month=12
+cost=6710000
+runningcost=140
+waytype=track
+engine_type=steam
+smoke=Steam_2
+speed=100
+weight=76
+length=7
+power=595
+gear=220
+sound=3
+Constraint[Prev][0]=none
+EmptyImage[S]=BR76-0.0.0
+EmptyImage[E]=BR76-0.0.1
+EmptyImage[SE]=BR76-0.0.2
+EmptyImage[SW]=BR76-0.0.3
+EmptyImage[N]=BR76-0.0.4
+EmptyImage[W]=BR76-0.0.5
+EmptyImage[NW]=BR76-0.0.6
+EmptyImage[NE]=BR76-0.0.7
+----------------------------------

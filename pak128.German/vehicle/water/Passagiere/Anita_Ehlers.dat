@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:01-08-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MS_Anita_Ehlers
+copyright=pumuckl999
+intro_year=2000
+intro_month=1
+waytype=water
+cost=1863000
+runningcost=181
+freight=Passagiere
+payload=72
+engine_type=diesel
+power=162
+gear=1200
+speed=15
+weight=60
+length=7
+sound=-1
+smoke=Diesel_black
+EmptyImage[W]=Anita_Ehlers.0.0,-64,-32
+EmptyImage[NW]=Anita_Ehlers.0.1,-64,-32
+EmptyImage[N]=Anita_Ehlers.0.2,-64,-32
+EmptyImage[NE]=Anita_Ehlers.0.3,-64,-32
+EmptyImage[E]=Anita_Ehlers.0.4,-64,-32
+EmptyImage[SE]=Anita_Ehlers.0.5,-64,-32
+EmptyImage[S]=Anita_Ehlers.0.6,-64,-32
+EmptyImage[SW]=Anita_Ehlers.0.7,-64,-32
+--------------------------------

@@ -1,0 +1,45 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu: 06-01-2018
+---------------------------------
+obj=vehicle
+name=DS_Stadt_Mainz_Vieh
+copyright=pumuckl999
+intro_year=1830
+intro_month=10
+retire_year=1878
+retire_month=12
+cost=2934400
+runningcost=287
+waytype=water
+freight=Vieh
+engine_type=steam
+power=184
+speed=16
+gear=600
+weight=135
+payload=55
+length=16
+sound=boat-horn.wav
+smoke=Steam_ship
+constraint[prev][0]=none
+constraint[next][0]=Tankschleppkahn_Geheimrat_von_Lavale
+constraint[next][1]=Holzschleppkahn_fluessige_Lebensmittel
+constraint[next][2]=Holzschleppkahn_Holz
+constraint[next][3]=Holzschleppkahn_landwirtschaftliche_Gueter
+constraint[next][4]=Holzschleppkahn_Schuettgut
+constraint[next][5]=Holzschleppkahn_Stahl
+constraint[next][6]=Holzschleppkahn_Stueckgut
+constraint[next][7]=Holzschleppkahn_Vieh
+constraint[next][8]=Holzschleppkahn_Siloware
+constraint[next][9]=none
+EmptyImage[W]=Stadt_Mainz_gruen.0.0,-70,-32
+EmptyImage[NW]=Stadt_Mainz_gruen.0.1,-63,-20
+EmptyImage[N]=Stadt_Mainz_gruen.0.2,-50,-22
+EmptyImage[NE]=Stadt_Mainz_gruen.0.3,-62,-20
+EmptyImage[E]=Stadt_Mainz_gruen.0.4,-59,-16
+EmptyImage[SE]=Stadt_Mainz_gruen.0.5,-68,-13
+EmptyImage[S]=Stadt_Mainz_gruen.0.6,-68,-24
+EmptyImage[SW]=Stadt_Mainz_gruen.0.7,-64,-28
+-------------------------------------------------------

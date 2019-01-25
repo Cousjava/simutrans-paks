@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 21-04-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Vicinalbahn-Wagen BCL
+copyright=pumuckl999
+intro_year=1880
+intro_month=1
+retire_year=1922
+retire_month=12
+cost=3540000
+runningcost=108
+waytype=track
+freight=Passagiere
+length=6
+payload=38
+weight=12
+speed=60
+sound=-1
+EmptyImage[S]=CL1880.0.0
+EmptyImage[E]=CL1880.0.1
+EmptyImage[SE]=CL1880.0.2
+EmptyImage[SW]=CL1880.0.3
+EmptyImage[N]=CL1880.0.4
+EmptyImage[W]=CL1880.0.5
+EmptyImage[NW]=CL1880.0.6
+EmptyImage[NE]=CL1880.0.7

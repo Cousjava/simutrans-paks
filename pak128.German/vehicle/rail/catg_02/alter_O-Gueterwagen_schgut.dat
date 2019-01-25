@@ -1,0 +1,38 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 14-06-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=offener Gueterwagen 1850 Schuettgut
+copyright=pumuckl999
+intro_year=1850
+intro_month=1
+retire_year=1905
+retire_month=12
+cost=534000
+runningcost=28
+waytype=track
+freight=Kohle
+payload=7
+speed=40
+weight=3
+length=5
+EmptyImage[S]=alter_O-Gueterwagen_schgut.0.0
+EmptyImage[E]=alter_O-Gueterwagen_schgut.0.1
+EmptyImage[SE]=alter_O-Gueterwagen_schgut.0.2
+EmptyImage[SW]=alter_O-Gueterwagen_schgut.0.3
+EmptyImage[N]=alter_O-Gueterwagen_schgut.0.4
+EmptyImage[W]=alter_O-Gueterwagen_schgut.0.5
+EmptyImage[NW]=alter_O-Gueterwagen_schgut.0.6
+EmptyImage[NE]=alter_O-Gueterwagen_schgut.0.7
+FreightImage[S]=alter_O-Gueterwagen_schgut.1.0
+FreightImage[E]=alter_O-Gueterwagen_schgut.1.1
+FreightImage[SE]=alter_O-Gueterwagen_schgut.1.2
+FreightImage[SW]=alter_O-Gueterwagen_schgut.1.3
+FreightImage[N]=alter_O-Gueterwagen_schgut.1.4
+FreightImage[W]=alter_O-Gueterwagen_schgut.1.5
+FreightImage[NW]=alter_O-Gueterwagen_schgut.1.6
+FreightImage[NE]=alter_O-Gueterwagen_schgut.1.7
+--------------------------------------

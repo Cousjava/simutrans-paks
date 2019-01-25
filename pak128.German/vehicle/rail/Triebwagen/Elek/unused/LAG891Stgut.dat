@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 20-10-2017
+---------------------------------
+obj=vehicle
+name=LAG_Nr891-ET194_Stueckgut
+copyright=pumuckl999
+intro_year=1922
+intro_month=1
+retire_year=1954
+retire_month=12
+cost=1450000
+runningcost=46
+waytype=track
+freight=Plastik
+engine_type=electric
+power=82
+gear=125
+payload=8
+speed=40
+length=5
+weight=16.2
+EmptyImage[S]=LAG891.0.0
+EmptyImage[E]=LAG891.0.1
+EmptyImage[SE]=LAG891.0.2
+EmptyImage[SW]=LAG891.0.3
+EmptyImage[N]=LAG891.0.4
+EmptyImage[W]=LAG891.0.5
+EmptyImage[NW]=LAG891.0.6
+EmptyImage[NE]=LAG891.0.7
+-----------------------------------

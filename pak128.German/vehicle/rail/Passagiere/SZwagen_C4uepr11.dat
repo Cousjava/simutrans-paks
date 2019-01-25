@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 04-09-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Schnellzugwagen_3.Kl._C4uepr11
+copyright=pumuckl999
+intro_year=1911
+intro_month=1
+retire_year=1955
+retire_month=12
+cost=12665000
+runningcost=230
+waytype=track
+freight=Passagiere
+length=12
+payload=68
+weight=42.5
+speed=120
+sound=-1
+EmptyImage[S]=SZwagen_C4uepr11.0.0
+EmptyImage[E]=SZwagen_C4uepr11.0.1
+EmptyImage[SE]=SZwagen_C4uepr11.0.2
+EmptyImage[SW]=SZwagen_C4uepr11.0.3
+EmptyImage[N]=SZwagen_C4uepr11.0.4
+EmptyImage[W]=SZwagen_C4uepr11.0.5
+EmptyImage[NW]=SZwagen_C4uepr11.0.6
+EmptyImage[NE]=SZwagen_C4uepr11.0.7
+---------------------------------

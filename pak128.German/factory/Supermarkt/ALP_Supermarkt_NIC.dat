@@ -1,0 +1,55 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	Letzte Bearbeitung:
+#   $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
+# --------------------------------
+obj=factory
+name=ALP_Supermarkt_NIC
+copyright=Lemuria
+level=19
+intro_year=1958
+intro_month=1
+retire_year=2000
+retire_month=1
+location=City
+DistributionWeight=127
+Productivity=25
+InputGood[0]=Backwaren
+InputCapacity[0]=100
+InputSupplier[0]=1
+InputGood[1]=Bier
+InputCapacity[1]=100
+InputSupplier[1]=1
+InputGood[2]=Fertiggerichte
+InputCapacity[2]=100
+InputSupplier[2]=1
+InputGood[3]=Tiefkuehlkost
+InputCapacity[3]=100
+InputSupplier[3]=1
+InputGood[4]=Dosenessen
+InputCapacity[4]=100
+InputSupplier[4]=1
+InputGood[5]=Fleisch
+InputCapacity[5]=100
+InputSupplier[5]=1
+InputGood[6]=Wein
+InputCapacity[6]=100
+InputSupplier[6]=1
+climates=rocky
+MapColor=132
+needs_ground=1
+electricity_amount=3
+passenger_boost=2000
+mail_boost=500
+dims=2,1,4
+BackImage[0][0][0][0][0][0]=ALP_Supermarkt.0.0
+BackImage[0][0][1][0][0][0]=ALP_Supermarkt.0.1
+BackImage[1][0][0][0][0][0]=ALP_Supermarkt.1.0
+BackImage[1][1][0][0][0][0]=ALP_Supermarkt.2.0
+BackImage[2][0][0][0][0][0]=ALP_Supermarkt.3.0
+BackImage[2][0][1][0][0][0]=ALP_Supermarkt.3.1
+BackImage[3][0][0][0][0][0]=ALP_Supermarkt.4.0
+BackImage[3][1][0][0][0][0]=ALP_Supermarkt.5.0
+-------------------------------------------------- 

@@ -1,0 +1,50 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 08-08-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Schneepflug_BA_Meiningen_DB
+waytype=track
+copyright=pumuckl999
+intro_year=1968
+intro_month=9
+cost=540000
+runningcost=15
+freight=None
+speed=100
+weight=54
+length=8
+constraint[prev][0]=none
+EmptyImage[S]=Schneepflug_Meiningen.0.0
+EmptyImage[E]=Schneepflug_Meiningen.0.1
+EmptyImage[SE]=Schneepflug_Meiningen.0.2
+EmptyImage[SW]=Schneepflug_Meiningen.0.3
+EmptyImage[N]=Schneepflug_Meiningen.0.4
+EmptyImage[W]=Schneepflug_Meiningen.0.5
+EmptyImage[NW]=Schneepflug_Meiningen.0.6
+EmptyImage[NE]=Schneepflug_Meiningen.0.7
+-----------------------------
+obj=vehicle
+name=Schneepflug_BA_Meiningen_DR
+waytype=track
+copyright=pumuckl999
+intro_year=1968
+intro_month=9
+cost=540000
+runningcost=5
+freight=None
+speed=50
+weight=54
+length=8
+constraint[prev][0]=none
+EmptyImage[S]=Schneepflug_Meiningen.1.0
+EmptyImage[E]=Schneepflug_Meiningen.1.1
+EmptyImage[SE]=Schneepflug_Meiningen.1.2
+EmptyImage[SW]=Schneepflug_Meiningen.1.3
+EmptyImage[N]=Schneepflug_Meiningen.1.4
+EmptyImage[W]=Schneepflug_Meiningen.1.5
+EmptyImage[NW]=Schneepflug_Meiningen.1.6
+EmptyImage[NE]=Schneepflug_Meiningen.1.7
+-----------------------------

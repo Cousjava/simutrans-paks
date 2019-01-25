@@ -1,0 +1,62 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 12-2012
+#	Letzte Bearbeitung:
+#   $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+name=Betonwerk
+copyright=RedRabbit
+pax_level=10
+intro_year=1970
+intro_month=1
+Location=Land
+DistributionWeight=10
+Productivity=100
+InputGood[0]=Steine
+InputCapacity[0]=400
+InputFactor[0]=100
+InputGood[1]=Sand
+InputCapacity[1]=400
+InputFactor[1]=80
+InputGood[2]=Zement_lose
+InputCapacity[2]=200
+InputFactor[2]=50
+OutputGood[0]=Betonfertigteile
+OutputCapacity[0]=400
+electricity_amount=20
+passenger_boost=1000
+mail_boost=500
+MapColor=217
+climates=desert, tropic, mediterran, temperate
+dims=2,2,4
+BackImage[0][0][0][0][0][0]=Betonwerk.0.0
+BackImage[0][0][0][1][0][0]=Betonwerk.0.1
+BackImage[0][0][1][0][0][0]=Betonwerk.0.2
+BackImage[0][0][1][1][0][0]=Betonwerk.0.3
+BackImage[0][1][0][0][0][0]=Betonwerk.0.4
+BackImage[0][1][0][1][0][0]=Betonwerk.0.5
+BackImage[0][1][1][0][0][0]=Betonwerk.1.0
+BackImage[1][0][0][0][0][0]=Betonwerk.1.1
+BackImage[1][0][0][1][0][0]=Betonwerk.1.2
+BackImage[1][0][1][0][0][0]=Betonwerk.1.3
+BackImage[1][0][1][1][0][0]=Betonwerk.1.4
+BackImage[1][1][0][0][0][0]=Betonwerk.1.5
+BackImage[1][1][0][1][0][0]=Betonwerk.2.0
+BackImage[1][1][1][0][0][0]=Betonwerk.2.1
+BackImage[2][0][0][0][0][0]=Betonwerk.2.2
+BackImage[2][0][0][1][0][0]=Betonwerk.2.3
+BackImage[2][0][1][0][0][0]=Betonwerk.2.4
+BackImage[2][0][1][1][0][0]=Betonwerk.2.5
+BackImage[2][1][0][0][0][0]=Betonwerk.3.0
+BackImage[2][1][0][1][0][0]=Betonwerk.3.1
+BackImage[2][1][1][0][0][0]=Betonwerk.3.2
+BackImage[3][0][0][0][0][0]=Betonwerk.3.3
+BackImage[3][0][0][1][0][0]=Betonwerk.3.4
+BackImage[3][0][1][0][0][0]=Betonwerk.3.5
+BackImage[3][0][1][1][0][0]=Betonwerk.4.0
+BackImage[3][1][0][0][0][0]=Betonwerk.4.1
+BackImage[3][1][0][1][0][0]=Betonwerk.4.2
+BackImage[3][1][1][0][0][0]=Betonwerk.4.3
+--------------------------------------------

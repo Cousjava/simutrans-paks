@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
+---------------------------------
+obj=vehicle
+name=DB240
+copyright=TonyBzt
+intro_year=1989
+intro_month=1
+cost=43640000
+runningcost=251
+waytype=track
+freight=None
+engine_type=diesel
+smoke=Diesel
+speed=160
+gear=325
+weight=124
+power=2650
+sound=2
+length=12
+EmptyImage[S]=DB240.0.0
+EmptyImage[E]=DB240.0.1
+EmptyImage[SE]=DB240.0.2
+EmptyImage[SW]=DB240.0.3
+EmptyImage[N]=DB240.0.4
+EmptyImage[W]=DB240.0.5
+EmptyImage[NW]=DB240.0.6
+EmptyImage[NE]=DB240.0.7
+-----------------------------

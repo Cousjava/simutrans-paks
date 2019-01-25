@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 05-09-2017
+#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
+obj=vehicle
+name=E94.5
+copyright=pumuckl999
+intro_year=1970
+intro_month=1
+retire_year=1991
+retire_month=12
+cost=48010000
+runningcost=352
+waytype=electrified_track
+power=4680
+gear=320
+speed=100
+weight=121
+length=11
+sound=-1
+EmptyImage[S]=elok_e945.0.0
+EmptyImage[E]=elok_e945.0.1
+EmptyImage[SE]=elok_e945.0.2
+EmptyImage[SW]=elok_e945.0.3
+EmptyImage[N]=elok_e945.0.4
+EmptyImage[W]=elok_e945.0.5
+EmptyImage[NW]=elok_e945.0.6
+EmptyImage[NE]=elok_e945.0.7
+-----------------------------

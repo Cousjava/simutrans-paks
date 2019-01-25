@@ -1,0 +1,60 @@
+#	PAK128.german
+#	Vehicle
+#	Neu:	01.05.2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+obj=vehicle
+name=Barkasse Altona
+copyright=pumuckl999
+intro_year=1926
+intro_month=1
+waytype=water
+cost=900000
+runningcost=54
+freight=Passagiere
+payload=20
+engine_type=diesel
+power=200
+gear=400
+speed=18
+weight=20
+length=8
+sound=boat-horn.wav
+smoke=Diesel
+constraint[prev][0]=none
+constraint[next][0]=Barkasse Post
+constraint[next][1]=none
+EmptyImage[W]=barkasse_altona.0.0,-28,8
+EmptyImage[NW]=barkasse_altona.0.1,-20,12
+EmptyImage[N]=barkasse_altona.0.2,-48,4
+EmptyImage[NE]=barkasse_altona.0.3,-32,8
+EmptyImage[E]=barkasse_altona.0.4,-8,-12
+EmptyImage[SE]=barkasse_altona.0.5,8,-4
+EmptyImage[S]=barkasse_altona.0.6,20,4
+EmptyImage[SW]=barkasse_altona.0.7,12,8
+------------------
+obj=vehicle
+name=Barkasse Post
+copyright=pumuckl999
+intro_year=1926
+intro_month=1
+cost=405000
+runningcost=38
+waytype=water
+freight=Post
+length=0
+payload=15
+weight=5
+speed=18
+sound=-1
+constraint[prev][0]=Barkasse Altona
+constraint[prev][1]=Hafenbarkasse Hafendockter
+constraint[next][0]=none
+EmptyImage[W]=barkasse_altona.0.8,-70,-45
+EmptyImage[NW]=barkasse_altona.0.8,-61,-46
+EmptyImage[N]=barkasse_altona.0.8,-64,-48
+EmptyImage[NE]=barkasse_altona.0.8,-57,-34
+EmptyImage[E]=barkasse_altona.0.8,-46,-30
+EmptyImage[SE]=barkasse_altona.0.8,-58,-27
+EmptyImage[S]=barkasse_altona.0.8,-75,-32
+EmptyImage[SW]=barkasse_altona.0.8,-80,-39
+#_EO_

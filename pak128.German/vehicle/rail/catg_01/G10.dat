@@ -1,0 +1,56 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$ 
+---------------------------------
+obj=vehicle
+name=G10
+copyright=TonyBzt
+intro_year=1910
+intro_month=1
+retire_year=1926
+retire_month=10
+cost=1855000
+runningcost=55
+waytype=track
+freight=Papier
+payload=9
+weight=10
+speed=65
+length=6
+sound=-1
+EmptyImage[S]=G10.0.0
+EmptyImage[E]=G10.0.1
+EmptyImage[SE]=G10.0.2
+EmptyImage[SW]=G10.0.3
+EmptyImage[N]=G10.0.4
+EmptyImage[W]=G10.0.5
+EmptyImage[NW]=G10.0.6
+EmptyImage[NE]=G10.0.7
+--------------------------
+obj=vehicle
+name=BZT_G10-Brh
+copyright=TonyBzt
+intro_year=1910
+intro_month=1
+retire_year=1926
+retire_month=10
+cost=1855000
+runningcost=55
+waytype=track
+freight=Papier
+payload=9
+weight=10
+speed=65
+length=6
+sound=-1
+EmptyImage[S]=G10.1.0
+EmptyImage[E]=G10.1.1
+EmptyImage[SE]=G10.1.2
+EmptyImage[SW]=G10.1.3
+EmptyImage[N]=G10.1.4
+EmptyImage[W]=G10.1.5
+EmptyImage[NW]=G10.1.6
+EmptyImage[NE]=G10.1.7
+---------------------------

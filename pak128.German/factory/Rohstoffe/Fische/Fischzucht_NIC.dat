@@ -1,0 +1,41 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	Letzte Bearbeitung:
+#   $Date: 2017-03-03 15:00:23 +0100 (Fr, 03. Mär 2017) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+name=Fischzucht_NIC
+copyright=RedRabbit
+pax_level=5
+intro_year=1891
+intro_month=1
+retire_year=1985
+retire_month=1
+Location=land
+DistributionWeight=1
+Productivity=180
+OutputGood[0]=Fisch
+OutputCapacity[0]=150
+max_fields=6
+min_fields=0
+fields[0]=fischteich_1
+probability_to_spawn=8000
+production_per_field[0]=15
+storage_capacity[0]=10
+spawn_weight[0]=25
+has_snow[0]=1
+electricity_amount=6
+climates=tundra, desert, tropic, mediterran, temperate, rocky
+MapColor=6
+Dims=2,1,4
+BackImage[0][0][0][0][0][0]=AVL_Fischzucht.0.0
+BackImage[0][0][1][0][0][0]=AVL_Fischzucht.0.1
+BackImage[1][0][0][0][0][0]=AVL_Fischzucht.0.2
+BackImage[1][1][0][0][0][0]=AVL_Fischzucht.1.2
+BackImage[2][0][0][0][0][0]=AVL_Fischzucht.0.4
+BackImage[2][0][1][0][0][0]=AVL_Fischzucht.0.5
+BackImage[3][0][0][0][0][0]=AVL_Fischzucht.0.6
+BackImage[3][1][0][0][0][0]=AVL_Fischzucht.1.6
+------------------------------------------------------

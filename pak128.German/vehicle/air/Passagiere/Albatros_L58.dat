@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+---------------------------------
+obj=vehicle
+name=Albatros_L58
+copyright=Pumuckl999
+waytype=air
+freight=Passagiere
+engine_type=diesel
+power=265
+speed=140
+gear=10
+weight=2.2
+payload=6
+intro_year=1924
+intro_month=1
+retire_year=1928
+retire_month=12
+length=1
+cost=2520000
+runningcost=19
+sound=smalloldplanes.wav
+smoke=Diesel
+EmptyImage[W]=Albatros_L58.0.0
+EmptyImage[NW]=Albatros_L58.0.1
+EmptyImage[N]=Albatros_L58.0.2
+EmptyImage[NE]=Albatros_L58.0.3
+EmptyImage[E]=Albatros_L58.0.4
+EmptyImage[SE]=Albatros_L58.0.5
+EmptyImage[S]=Albatros_L58.0.6
+EmptyImage[SW]=Albatros_L58.0.7
+-----------------------------------

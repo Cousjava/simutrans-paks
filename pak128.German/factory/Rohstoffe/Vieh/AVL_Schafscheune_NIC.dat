@@ -1,0 +1,39 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	Letzte Bearbeitung:
+#   $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+name=AVL_Schafsscheune_NIC
+copyright=RedRabbit
+pax_level=1
+intro_year=1800
+intro_month=1
+Location=land
+DistributionWeight=127
+Productivity=100
+OutputGood[0]=Wolle
+OutputCapacity[0]=100
+max_fields=6
+min_fields=1
+probability_to_spawn=50
+fields[0]=schafweide_1
+storage_capacity[0]=40
+production_per_field[0]=30
+spawn_weight[0]=50
+has_snow[0]=1
+electricity_amount=1
+climates=tundra
+MapColor=135
+Dims=1,1,4
+BackImage[0][0][0][0][0][0]=AVL_Schafscheune.0.0
+BackImage[0][0][0][0][0][1]=AVL_Schafscheune.1.0
+BackImage[1][0][0][0][0][0]=AVL_Schafscheune.0.1
+BackImage[1][0][0][0][0][1]=AVL_Schafscheune.1.1
+BackImage[2][0][0][0][0][0]=AVL_Schafscheune.0.2
+BackImage[2][0][0][0][0][1]=AVL_Schafscheune.1.2
+BackImage[3][0][0][0][0][0]=AVL_Schafscheune.0.3
+BackImage[3][0][0][0][0][1]=AVL_Schafscheune.1.3
+---------------------------------------------------

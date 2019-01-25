@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+---------------------------------
+obj=vehicle
+name=MHz-McDonnell-Douglas_DC3
+copyright=MHz
+intro_year=1935
+intro_month=12
+retire_year=1971
+retire_month=5
+cost=26304000
+runningcost=103
+waytype=air
+engine_type=diesel
+freight=Passagiere
+payload=32
+speed=274
+power=1790
+gear=25
+weight=12
+smoke=-1
+sound=smalloldplanes.wav
+emptyimage[w]=air_pass-post_01.5.1
+emptyimage[nw]=air_pass-post_01.5.2
+emptyimage[n]=air_pass-post_01.5.3
+emptyimage[ne]=air_pass-post_01.5.4
+emptyimage[e]=air_pass-post_01.5.5
+emptyimage[se]=air_pass-post_01.5.6
+emptyimage[s]=air_pass-post_01.5.7
+emptyimage[sw]=air_pass-post_01.5.8
+----------------------------------------

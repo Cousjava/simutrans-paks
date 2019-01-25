@@ -1,0 +1,15 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	01 Maerz 2016 NNW
+# --------------------------------
+obj=field
+name=Obstbaumfeld
+copyright=pumuckl999
+Image[0]=Obstbaumfeld.0.0
+Image[1]=Obstbaumfeld.0.0
+Image[2]=Obstbaumfeld.0.1
+Image[3]=Obstbaumfeld.0.1
+Image[4]=Obstbaumfeld.0.2
+---------------------------------

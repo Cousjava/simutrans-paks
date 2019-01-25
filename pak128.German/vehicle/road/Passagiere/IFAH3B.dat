@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 07.02.2018
+---------------------------------
+obj=vehicle
+name=IFA_H3B
+copyright=pumuckl999
+intro_year=1952
+intro_month=1
+retire_year=1972
+retire_month=12
+cost=3094000
+runningcost=80
+waytype=road
+freight=Passagiere
+payload=30
+engine_type=diesel 
+speed=60
+weight=4
+power=59
+smoke=Diesel
+sound=1
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=IFAH3B.0.0
+EmptyImage[N]=IFAH3B.0.1
+EmptyImage[E]=IFAH3B.0.2
+EmptyImage[W]=IFAH3B.0.3
+EmptyImage[SE]=IFAH3B.0.4
+EmptyImage[NW]=IFAH3B.0.5
+EmptyImage[NE]=IFAH3B.0.6
+EmptyImage[SW]=IFAH3B.0.7
+----------------------------------------

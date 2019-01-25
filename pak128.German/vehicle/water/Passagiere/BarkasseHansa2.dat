@@ -1,0 +1,33 @@
+#	PAK128.german
+#	Vehicle
+obj=vehicle
+name=Barkasse_HansaII
+copyright=pumuckl999
+intro_year=1918
+intro_month=1
+#retire_year=
+#retire_month=
+waytype=water
+cost=1463700
+runningcost=129
+freight=Passagiere
+payload=51
+engine_type=diesel
+power=96
+gear=400
+speed=17
+weight=40
+length=9
+sound=boat-horn.wav
+smoke=Diesel
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[W]=BarkasseHansa2.0.0,-64,-26
+EmptyImage[NW]=BarkasseHansa2.0.1,-64,-26
+EmptyImage[N]=BarkasseHansa2.0.2,-64,-26
+EmptyImage[NE]=BarkasseHansa2.0.3,-64,-26
+EmptyImage[E]=BarkasseHansa2.0.4,-64,-26
+EmptyImage[SE]=BarkasseHansa2.0.5,-64,-26
+EmptyImage[S]=BarkasseHansa2.0.6,-64,-26
+EmptyImage[SW]=BarkasseHansa2.0.7,-64,-26
+------------------

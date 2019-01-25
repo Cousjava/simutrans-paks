@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=RVg-Sail_Passanger_Ship_0
+copyright=Raven
+intro_year=1833
+intro_month=12
+retire_year=1901
+retire_month=5
+cost=8304000
+runningcost=571
+waytype=water
+engine_type=sail
+freight=Passagiere
+payload=212
+speed=24
+power=280
+gear=250
+weight=287
+smoke=-1
+sound=train-horn-steam-0.wav
+constraint[next][0]=none
+constraint[prev][0]=none
+emptyimage[w]=ship_pass-post_01.1.1,20,-10
+emptyimage[nw]=ship_pass-post_01.1.2
+emptyimage[n]=ship_pass-post_01.1.3,4,-4
+emptyimage[ne]=ship_pass-post_01.1.4
+emptyimage[e]=ship_pass-post_01.1.5,-62,-19
+emptyimage[se]=ship_pass-post_01.1.6
+emptyimage[s]=ship_pass-post_01.1.7,43,-44
+emptyimage[sw]=ship_pass-post_01.1.8
+-----------------------------------------------

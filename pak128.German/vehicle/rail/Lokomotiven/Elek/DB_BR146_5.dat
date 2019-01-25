@@ -1,0 +1,29 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 06-09-2018
+#	Letzte Bearbeitung:
+---------------------------------
+obj=vehicle
+name=BR146_5
+copyright=pumuckl999
+intro_year=2015
+intro_month=12
+cost=90450000
+runningcost=278
+waytype=electrified_track
+speed=160
+weight=85
+power=5600
+gear=350
+length=11
+sound=-1
+EmptyImage[S]=DB_BR146_5.0.0
+EmptyImage[E]=DB_BR146_5.0.1
+EmptyImage[SE]=DB_BR146_5.0.2
+EmptyImage[SW]=DB_BR146_5.0.3
+EmptyImage[N]=DB_BR146_5.0.4
+EmptyImage[W]=DB_BR146_5.0.5
+EmptyImage[NW]=DB_BR146_5.0.6
+EmptyImage[NE]=DB_BR146_5.0.7
+-----------------------------

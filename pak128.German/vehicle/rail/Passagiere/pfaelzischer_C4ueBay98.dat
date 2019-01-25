@@ -1,0 +1,29 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 02-09-2018
+---------------------------------
+obj=vehicle
+name=pfaelzischer_C4ueBay98
+copyright=pumuckl999
+intro_year=1898
+intro_month=1
+retire_year=1935
+retire_month=12
+cost=10000000
+RunningCost=209
+waytype=track
+freight=Passagiere
+payload=64
+speed=100
+weight=40
+length=11
+EmptyImage[S]=pfaelzischer_C4ueBay98.0.0
+EmptyImage[E]=pfaelzischer_C4ueBay98.0.1
+EmptyImage[SE]=pfaelzischer_C4ueBay98.0.2
+EmptyImage[SW]=pfaelzischer_C4ueBay98.0.3
+EmptyImage[N]=pfaelzischer_C4ueBay98.0.4
+EmptyImage[W]=pfaelzischer_C4ueBay98.0.5
+EmptyImage[NW]=pfaelzischer_C4ueBay98.0.6
+EmptyImage[NE]=pfaelzischer_C4ueBay98.0.7
+--------------------------------

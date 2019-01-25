@@ -1,0 +1,29 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 13-05-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Gedeckter Schuettgutwagen Tanoos-y898
+copyright=pumuckl999
+intro_year=2004
+intro_month=1
+cost=14496000
+runningcost=201
+waytype=track
+freight=Gerste
+payload=66
+weight=24
+speed=120
+length=9
+sound=-1
+EmptyImage[S]=Tanoos-y898.0.0
+EmptyImage[E]=Tanoos-y898.0.1
+EmptyImage[SE]=Tanoos-y898.0.2
+EmptyImage[SW]=Tanoos-y898.0.3
+EmptyImage[N]=Tanoos-y898.0.4
+EmptyImage[W]=Tanoos-y898.0.5
+EmptyImage[NW]=Tanoos-y898.0.6
+EmptyImage[NE]=Tanoos-y898.0.7
+--------------------------------------------

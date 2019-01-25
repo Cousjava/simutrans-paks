@@ -1,0 +1,51 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Magirus_Saturn150D_Holztransporter
+copyright=RedRabbit
+intro_year=1956
+intro_month=1
+retire_year=1970
+retire_month=12
+cost=2488000
+runningcost=50
+waytype=road
+speed=70
+power=110
+weight=8
+freight=Holz
+payload=13
+length=8
+smoke=Diesel
+constraint[prev][0]=none
+EmptyImage[S]=RR_MAG_Jupiter_Holz.0.1
+EmptyImage[N]=RR_MAG_Jupiter_Holz.0.2
+EmptyImage[E]=RR_MAG_Jupiter_Holz.0.3
+EmptyImage[W]=RR_MAG_Jupiter_Holz.0.4
+EmptyImage[SE]=RR_MAG_Jupiter_Holz.0.5
+EmptyImage[NW]=RR_MAG_Jupiter_Holz.0.6
+EmptyImage[NE]=RR_MAG_Jupiter_Holz.0.7
+EmptyImage[SW]=RR_MAG_Jupiter_Holz.0.8
+FreightImagetype[0]=Bretter
+FreightImage[0][S]=RR_MAG_Jupiter_Holz.1.1
+FreightImage[0][N]=RR_MAG_Jupiter_Holz.1.2
+FreightImage[0][E]=RR_MAG_Jupiter_Holz.1.3
+FreightImage[0][W]=RR_MAG_Jupiter_Holz.1.4
+FreightImage[0][SE]=RR_MAG_Jupiter_Holz.1.5
+FreightImage[0][NW]=RR_MAG_Jupiter_Holz.1.6
+FreightImage[0][NE]=RR_MAG_Jupiter_Holz.1.7
+FreightImage[0][SW]=RR_MAG_Jupiter_Holz.1.8
+FreightImagetype[1]=Holz
+FreightImage[1][S]=RR_MAG_Jupiter_Holz.2.1
+FreightImage[1][N]=RR_MAG_Jupiter_Holz.2.2
+FreightImage[1][E]=RR_MAG_Jupiter_Holz.2.3
+FreightImage[1][W]=RR_MAG_Jupiter_Holz.2.4
+FreightImage[1][SE]=RR_MAG_Jupiter_Holz.2.5
+FreightImage[1][NW]=RR_MAG_Jupiter_Holz.2.6
+FreightImage[1][NE]=RR_MAG_Jupiter_Holz.2.7
+FreightImage[1][SW]=RR_MAG_Jupiter_Holz.2.8
+--------------------------------------------------

@@ -1,0 +1,43 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	Letzte Bearbeitung:
+#    14-09-2015 The Transporter
+# --------------------------------
+Obj=field
+name=Weide_Kuh_braun
+copyright=RedRabbit
+Image[0]=Weide_Kuh.0.1
+Image[1]=Weide_Kuh.0.1
+Image[2]=Weide_Kuh.0.1
+Image[3]=Weide_Kuh.0.1
+Image[4]=Weide_Kuh.0.2
+--------------------------
+Obj=field
+name=Weide_Kuh_schwarzweis
+copyright=RedRabbit
+Image[0]=Weide_Kuh.1.1
+Image[1]=Weide_Kuh.1.1
+Image[2]=Weide_Kuh.1.1
+Image[3]=Weide_Kuh.1.1
+Image[4]=Weide_Kuh.0.2
+--------------------------
+Obj=field
+name=Weide_Kuh_lila
+copyright=RedRabbit
+Image[0]=Weide_Kuh.2.1
+Image[1]=Weide_Kuh.2.1
+Image[2]=Weide_Kuh.2.1
+Image[3]=Weide_Kuh.2.1
+Image[4]=Weide_Kuh.0.2
+-------------------------
+Obj=field
+name=Weide_Kuh_braunweis
+copyright=RedRabbit
+Image[0]=Weide_Kuh.1.2
+Image[1]=Weide_Kuh.1.2
+Image[2]=Weide_Kuh.1.2
+Image[3]=Weide_Kuh.1.2
+Image[4]=Weide_Kuh.0.2
+-------------------------

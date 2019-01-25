@@ -1,0 +1,46 @@
+#	PAK128.german
+#	Vehicle
+obj=vehicle
+name=Grosser Hecht Triebwagen
+copyright=pumuckl999
+intro_year=1929
+intro_month=12
+retire_year=1973
+retire_month=1
+waytype=tram_track
+cost=13405000
+runningcost=305
+freight=Passagiere
+payload=111
+engine_type=electric
+power=220
+gear=100
+speed=70
+weight=21
+length=11
+#sound=
+#smoke=
+constraint[prev][0]=Grosser Hecht Triebwagen
+constraint[prev][1]=Grosser Hecht Beiwagen
+constraint[prev][2]=none
+constraint[next][0]=Grosser Hecht Triebwagen
+constraint[next][1]=Grosser Hecht Beiwagen
+constraint[next][2]=none
+EmptyImage[S]=ghd.0.6
+EmptyImage[N]=ghd.0.2
+EmptyImage[E]=ghd.0.4
+EmptyImage[W]=ghd.0.0
+EmptyImage[SW]=ghd.0.7
+EmptyImage[SE]=ghd.0.5
+EmptyImage[NW]=ghd.0.1
+EmptyImage[NE]=ghd.0.3
+#freightImageType[0]=
+#freightimage[0][S]=
+#freightimage[0][N]=
+#freightimage[0][E]=
+#freightimage[0][W]=
+#freightimage[0][SW]=
+#freightimage[0][SE]=
+#freightimage[0][NE]=
+#freightimage[0][NW]=
+#_EO_

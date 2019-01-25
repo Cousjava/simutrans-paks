@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 
+#	Letzte Bearbeitung:
+---------------------------------
+obj=vehicle
+name=DR_Reisezugwagen_Altenberg
+copyright=Lemuria
+intro_year=1935
+intro_month=6
+retire_year=1968
+retire_month=7
+cost=11060000
+runningcost=181
+waytype=track
+freight=Passagiere
+payload=60
+speed=120
+weight=26
+length=9
+EmptyImage[S]=DR_altenberg.0.0
+EmptyImage[E]=DR_altenberg.0.1
+EmptyImage[SE]=DR_altenberg.0.2
+EmptyImage[SW]=DR_altenberg.0.3
+EmptyImage[N]=DR_altenberg.0.4
+EmptyImage[W]=DR_altenberg.0.5
+EmptyImage[NW]=DR_altenberg.0.6
+EmptyImage[NE]=DR_altenberg.0.7
+------------------------------------

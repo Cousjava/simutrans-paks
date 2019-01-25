@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 01-09-2018
+#	Letzte Bearbeitung:
+---------------------------------
+obj=vehicle
+name=pr_Abteilwagen_ABC4_Pr01
+copyright=pumuckl999
+intro_year=1901
+intro_month=7
+retire_year=1958
+retire_month=11
+cost=6770000
+runningcost=153
+waytype=track
+freight=Passagiere
+payload=48
+speed=90
+weight=29
+length=11
+EmptyImage[S]=prAbteilwagenABC4Pr01.0.0
+EmptyImage[E]=prAbteilwagenABC4Pr01.0.1
+EmptyImage[SE]=prAbteilwagenABC4Pr01.0.2
+EmptyImage[SW]=prAbteilwagenABC4Pr01.0.3
+EmptyImage[N]=prAbteilwagenABC4Pr01.0.4
+EmptyImage[W]=prAbteilwagenABC4Pr01.0.5
+EmptyImage[NW]=prAbteilwagenABC4Pr01.0.6
+EmptyImage[NE]=prAbteilwagenABC4Pr01.0.7
+--------------------------------

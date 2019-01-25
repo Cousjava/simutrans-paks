@@ -1,0 +1,17 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 07-03-2017 pumuckl999
+# --------------------------------
+obj=field
+name=alt_obstbauer_felder_gross
+copyright=pumuckl999
+Image[0]=alt_obstbauer_felder.0.0
+Image[1]=alt_obstbauer_felder.0.1
+---------------------------------
+obj=field
+name=alt_obstbauer_felder_klein
+copyright=pumuckl999
+Image[0]=alt_obstbauer_felder.1.0
+Image[1]=alt_obstbauer_felder.1.1
+---------------------------------

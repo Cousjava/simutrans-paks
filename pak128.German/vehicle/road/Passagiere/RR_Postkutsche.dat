@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#   Neu:
+#   Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Kutsche
+copyright=RedRabbit
+intro_year=1800
+intro_month=1
+retire_year=1955
+retire_month=12
+cost=172000
+runningcost=18
+waytype=road
+speed=18
+freight=Passagiere
+payload=6
+weight=1
+Constraint[Prev][0]=Pferdegespann
+Constraint[Next][0]=none
+EmptyImage[S]=RR_Postkutsche.0.1
+EmptyImage[N]=RR_Postkutsche.0.2
+EmptyImage[E]=RR_Postkutsche.0.3
+EmptyImage[W]=RR_Postkutsche.0.4
+EmptyImage[SE]=RR_Postkutsche.0.5
+EmptyImage[NW]=RR_Postkutsche.0.6
+EmptyImage[NE]=RR_Postkutsche.0.7
+EmptyImage[SW]=RR_Postkutsche.0.8
+------------------------------------------

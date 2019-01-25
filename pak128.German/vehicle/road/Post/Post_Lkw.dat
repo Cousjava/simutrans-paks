@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 2008
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=RVg_Post_Truck_1
+copyright=Raven
+intro_year=1957
+intro_month=11
+retire_year=1980
+retire_month=9
+cost=3596500
+runningcost=83
+waytype=road
+engine_type=diesel
+freight=Post
+payload=30
+speed=65
+power=91
+gear=75
+weight=8
+smoke=Diesel_small
+sound=engine-start-diesel_d.wav
+constraint[next][0]=none
+constraint[prev][0]=none
+emptyimage[w]=Post_Lkw.14.1
+emptyimage[nw]=Post_Lkw.14.2
+emptyimage[n]=Post_Lkw.14.3
+emptyimage[ne]=Post_Lkw.14.4
+emptyimage[e]=Post_Lkw.14.5
+emptyimage[se]=Post_Lkw.14.6
+emptyimage[s]=Post_Lkw.14.7
+emptyimage[sw]=Post_Lkw.14.8
+----------------------------------

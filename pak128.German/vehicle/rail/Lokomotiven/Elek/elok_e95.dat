@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 28-05-2017
+#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
+---------------------------------
+obj=vehicle
+name=E95
+copyright=pumuckl999
+intro_year=1927
+intro_month=1
+retire_year=1969
+retire_month=12
+cost=18306000
+runningcost=226
+waytype=electrified_track
+speed=70
+weight=138
+power=2418
+gear=300
+length=12
+sound=-1
+EmptyImage[S]=elok_e95.0.0
+EmptyImage[E]=elok_e95.0.1
+EmptyImage[SE]=elok_e95.0.2
+EmptyImage[SW]=elok_e95.0.3
+EmptyImage[N]=elok_e95.0.4
+EmptyImage[W]=elok_e95.0.5
+EmptyImage[NW]=elok_e95.0.6
+EmptyImage[NE]=elok_e95.0.7
+-----------------------------

@@ -1,0 +1,29 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	Letzte Bearbeitung:
+#    06-2011
+#   $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+name=Schrotthandel_NIC
+copyright=Didi2004/TonyBzt
+pax_level=10
+intro_year=1891
+intro_month=1
+Location=City
+DistributionWeight=1
+Productivity=50
+OutputGood[0]=Schrott
+OutputCapacity[0]=200
+electricity_amount=5
+passenger_boost=1000
+climates=desert, tropic, mediterran, temperate, tundra, rocky
+MapColor=212
+dims=1,1,4
+BackImage[0][0][0][0][0]=Schrotthandel.0.1
+BackImage[1][0][0][0][0]=Schrotthandel.0.0
+BackImage[2][0][0][0][0]=Schrotthandel.0.3
+BackImage[3][0][0][0][0]=Schrotthandel.0.2
+----------------------------------------------

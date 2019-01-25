@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 29-08-2018
+---------------------------------
+obj=vehicle
+name=Badische_IVh
+copyright=pumuckl999
+intro_year=1918
+intro_month=2
+retire_year=1978
+retire_month=10
+cost=23622000
+RunningCost=403
+engine_type=steam
+smoke=Steam
+waytype=track
+speed=140
+gear=340
+weight=97
+power=1618
+sound=3
+length=10
+Constraint[Next][0]=BR01Tender
+EmptyImage[S]=badischeIVh.0.0
+EmptyImage[E]=badischeIVh.0.1
+EmptyImage[SE]=badischeIVh.0.2
+EmptyImage[SW]=badischeIVh.0.3
+EmptyImage[N]=badischeIVh.0.4
+EmptyImage[W]=badischeIVh.0.5
+EmptyImage[NW]=badischeIVh.0.6
+EmptyImage[NE]=badischeIVh.0.7
+----------------------------------

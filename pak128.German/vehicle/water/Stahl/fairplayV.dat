@@ -1,0 +1,50 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Schlepper Fairplay V
+Copyright=pumuckl999
+intro_year=1980
+intro_month=1
+cost=1682100
+runningcost=66
+waytype=water
+freight=Schiffssektionen
+engine_type=diesel
+power=441
+gear=1000
+speed=21
+weight=180
+length=5
+payload=1
+Sound=boat-horn.wav
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+#EmptyImage[W]=fairplayV_freight.0.0,-64,12
+#EmptyImage[NW]=fairplayV_freight.0.1,-36,-4
+#EmptyImage[N]=fairplayV_freight.0.2,-12,8
+#EmptyImage[NE]=fairplayV_freight.0.3,-32,0
+#EmptyImage[E]=fairplayV_freight.0.4,-44,-16
+#EmptyImage[SE]=fairplayV_freight.0.5,4,-12
+#EmptyImage[S]=fairplayV_freight.0.6,-4,20
+#EmptyImage[SW]=fairplayV_freight.0.7
+EmptyImage[W]=fairplayV_empty.0.0,-24,14
+EmptyImage[NW]=fairplayV_empty.0.1,-37,-1
+EmptyImage[N]=fairplayV_empty.0.2,-50,10
+EmptyImage[NE]=fairplayV_empty.0.3,-69,-10
+EmptyImage[E]=fairplayV_empty.0.4,-62,-42
+EmptyImage[SE]=fairplayV_empty.0.5,7,-37
+EmptyImage[S]=fairplayV_empty.0.6,25,-5
+EmptyImage[SW]=fairplayV_empty.0.7,16,-3
+FreightImage[W]=fairplayV_freight.0.0,-48,-1
+FreightImage[NW]=fairplayV_freight.0.1,-37,-18
+FreightImage[N]=fairplayV_freight.0.2,-21,-2
+FreightImage[NE]=fairplayV_freight.0.3,-24,-10
+FreightImage[E]=fairplayV_freight.0.4,-39,-32
+FreightImage[SE]=fairplayV_freight.0.5,7,-13
+FreightImage[S]=fairplayV_freight.0.6,-7,10
+FreightImage[SW]=fairplayV_freight.0.7,-32,-6
+--------------------------------------------

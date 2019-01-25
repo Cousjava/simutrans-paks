@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Buessing_NAG_D2
+copyright=RedRabbit
+intro_year=1925
+intro_month=1
+retire_year=1940
+retire_month=12
+cost=5085000
+runningcost=162
+waytype=road
+freight=Passagiere
+payload=61
+engine_type=diesel 
+speed=50
+weight=7
+power=88
+sound=1
+smoke=Diesel
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=RR_Bus_BU_D2.0.1
+EmptyImage[N]=RR_Bus_BU_D2.0.2
+EmptyImage[E]=RR_Bus_BU_D2.0.3
+EmptyImage[W]=RR_Bus_BU_D2.0.4
+EmptyImage[SE]=RR_Bus_BU_D2.0.5
+EmptyImage[NW]=RR_Bus_BU_D2.0.6
+EmptyImage[NE]=RR_Bus_BU_D2.0.7
+EmptyImage[SW]=RR_Bus_BU_D2.0.8
+--------------------------------------

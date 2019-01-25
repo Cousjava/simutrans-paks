@@ -1,0 +1,48 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 10-08-2017
+#	Letzte Bearbeitung: 25-10-2018 pumuckl999
+---------------------------------
+obj=vehicle
+name=Langholzwagen_RhEB1840
+copyright=pumuckl999
+intro_year=1840
+intro_month=1
+retire_year=1901
+retire_month=1
+cost=904000
+runningcost=44
+waytype=track
+freight=Holz
+payload=12
+speed=40
+weight=4
+length=5
+EmptyImage[S]=Langholzwagen_1840.0.0
+EmptyImage[E]=Langholzwagen_1840.0.1
+EmptyImage[SE]=Langholzwagen_1840.0.2
+EmptyImage[SW]=Langholzwagen_1840.0.3
+EmptyImage[N]=Langholzwagen_1840.0.4
+EmptyImage[W]=Langholzwagen_1840.0.5
+EmptyImage[NW]=Langholzwagen_1840.0.6
+EmptyImage[NE]=Langholzwagen_1840.0.7
+FreightImagetype[0]=Holz
+FreightImage[0][S]=Langholzwagen_1840.1.0
+FreightImage[0][E]=Langholzwagen_1840.1.1
+FreightImage[0][SE]=Langholzwagen_1840.1.2
+FreightImage[0][SW]=Langholzwagen_1840.1.3
+FreightImage[0][N]=Langholzwagen_1840.1.4
+FreightImage[0][W]=Langholzwagen_1840.1.5
+FreightImage[0][NW]=Langholzwagen_1840.1.6
+FreightImage[0][NE]=Langholzwagen_1840.1.7
+FreightImagetype[1]=Bretter
+FreightImage[1][S]=Langholzwagen_1840.2.0
+FreightImage[1][E]=Langholzwagen_1840.2.1
+FreightImage[1][SE]=Langholzwagen_1840.2.2
+FreightImage[1][SW]=Langholzwagen_1840.2.3
+FreightImage[1][N]=Langholzwagen_1840.2.4
+FreightImage[1][W]=Langholzwagen_1840.2.5
+FreightImage[1][NW]=Langholzwagen_1840.2.6
+FreightImage[1][NE]=Langholzwagen_1840.2.7
+-----------------------------------------

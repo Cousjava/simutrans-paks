@@ -1,0 +1,37 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 09-2010
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=FLIRT_Waggon2
+copyright=Lemuria
+intro_year=1991
+intro_month=8
+cost=15890000
+runningcost=175
+waytype=track
+engine_type=electric
+freight=Passagiere
+length=11
+payload=65
+speed=160
+power=0
+weight=29
+smoke=-1
+sound=-1
+constraint[next][0]=FLIRT_Waggon2
+constraint[next][1]=FLIRT_Schluss
+constraint[prev][0]=FLIRT_Kopf
+constraint[prev][1]=FLIRT_Waggon1
+constraint[prev][2]=FLIRT_Waggon2
+emptyimage[s]=FLIRT_Waggon2.0.1
+emptyimage[e]=FLIRT_Waggon2.0.2
+emptyimage[se]=FLIRT_Waggon2.0.3
+emptyimage[sw]=FLIRT_Waggon2.0.4
+emptyimage[n]=FLIRT_Waggon2.0.5
+emptyimage[w]=FLIRT_Waggon2.0.6
+emptyimage[nw]=FLIRT_Waggon2.0.7
+emptyimage[ne]=FLIRT_Waggon2.0.8
+--------------------------------------

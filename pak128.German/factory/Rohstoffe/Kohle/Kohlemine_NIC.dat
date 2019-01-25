@@ -1,0 +1,34 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+# --------------------------------
+Obj=factory
+name=Kohlemine_NIC
+copyright=Raven
+pax_level=100
+intro_year=1800
+intro_month=1
+retire_year=1950
+retire_month=1
+Location=land
+DistributionWeight=1
+Productivity=200
+OutputGood[0]=Kohle
+OutputCapacity[0]=300
+OutputFactor[0]=200
+electricity_amount=45
+passenger_boost=1000
+mail_boost=500
+climates=tropic, mediterran,tundra,desert
+MapColor=8
+Needs_Ground=1
+dims=2,2,1
+BackImage[0][0][0][0][0][0]=Kohlemine.0.0
+BackImage[0][0][0][1][0][0]=Kohlemine.0.1
+BackImage[0][0][1][0][0][0]=Kohlemine.0.2
+BackImage[0][0][1][1][0][0]=Kohlemine.1.0
+BackImage[0][1][0][0][0][0]=Kohlemine.1.1
+BackImage[0][1][0][1][0][0]=Kohlemine.1.2
+BackImage[0][1][1][0][0][0]=Kohlemine.2.0
+--------------------------------------------

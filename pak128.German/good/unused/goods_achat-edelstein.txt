@@ -1,0 +1,13 @@
+#
+# Achat Edelstein
+#
+# obj=good
+# name=Achat-Edelstein
+# mapcolor=182
+# metric=Paletten
+# catg=1
+# value=225
+# #0,75
+# speed_bonus=0
+# weight_per_unit=1000 
+# ------------------------

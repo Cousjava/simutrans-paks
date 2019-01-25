@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+---------------------------------
+obj=vehicle
+name=BR84
+copyright=Michael Barthels/TonyBzt
+intro_year=1935
+intro_month=1
+retire_year=1968
+retire_month=12
+cost=9900000
+runningcost=129
+waytype=track
+speed=80
+weight=134
+sound=3
+smoke=Steam
+engine_type=steam
+power=1070
+gear=225
+length=10
+EmptyImage[S]=BR84.0.0
+EmptyImage[E]=BR84.0.1
+EmptyImage[SE]=BR84.0.2
+EmptyImage[SW]=BR84.0.3
+EmptyImage[N]=BR84.0.4
+EmptyImage[W]=BR84.0.5
+EmptyImage[NW]=BR84.0.6
+EmptyImage[NE]=BR84.0.7
+-----------------------------

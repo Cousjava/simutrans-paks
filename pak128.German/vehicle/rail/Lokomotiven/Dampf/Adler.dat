@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+---------------------------------
+obj=vehicle
+name=Adler
+copyright=TonyBzt
+intro_year=1835
+intro_month=1
+retire_year=1905
+retire_month=6
+cost=250000
+runningcost=18
+engine_type=steam
+smoke=Steam
+waytype=track
+speed=50
+gear=230
+weight=10
+power=30
+sound=3
+length=6
+Constraint[Prev][0]=none
+Constraint[Next][0]=AdlerTender
+EmptyImage[S]=Adler.0.0
+EmptyImage[E]=Adler.0.1
+EmptyImage[SE]=Adler.0.2
+EmptyImage[SW]=Adler.0.3
+EmptyImage[N]=Adler.0.4
+EmptyImage[W]=Adler.0.5
+EmptyImage[NW]=Adler.0.6
+EmptyImage[NE]=Adler.0.7
+----------------------------------

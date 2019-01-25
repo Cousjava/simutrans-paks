@@ -1,0 +1,45 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 07-03-2017
+# --------------------------------
+Obj=factory
+Name=alter_Obstbauer
+copyright=pumuckl999
+pax_level=3
+intro_year=1800
+intro_month=1
+retire_year=1930
+retire_month=1
+location=land
+DistributionWeight=1
+Productivity=60
+OutputGood[0]=Obst
+OutputCapacity[0]=250
+OutputFactor[0]=100
+min_fields=2
+max_fields=6
+probability_to_spawn=1000
+fields[0]=alt_obstbauer_felder_gross
+production_per_field[0]=7
+storage_capacity[0]=5
+has_snow[0]=1
+fields[1]=alt_obstbauer_felder_klein
+production_per_field[1]=5
+storage_capacity[1]=5
+has_snow[1]=1
+expand_probability=400
+expand_minimum=5
+expand_times=2
+electricity_amount=0
+climates=tropic, tundra, desert, mediterran
+MapColor=142
+dims=1,1,4
+BackImage[0][0][0][0][0][0]=alt_obstbauer.0.0
+BackImage[0][0][0][0][0][1]=alt_obstbauer.1.0
+BackImage[1][0][0][0][0][0]=alt_obstbauer.0.1
+BackImage[1][0][0][0][0][1]=alt_obstbauer.1.1
+BackImage[2][0][0][0][0][0]=alt_obstbauer.0.2
+BackImage[2][0][0][0][0][1]=alt_obstbauer.1.2
+BackImage[3][0][0][0][0][0]=alt_obstbauer.0.3
+BackImage[3][0][0][0][0][1]=alt_obstbauer.1.3

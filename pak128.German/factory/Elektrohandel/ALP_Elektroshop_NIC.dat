@@ -1,0 +1,55 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 04-2011
+#	Letzte Bearbeitung:
+#    09-2011
+#    $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ $Author: NNW $
+# --------------------------------
+obj=factory
+name=ALP_Elektroshop_NIC
+copyright=Lemuria
+level=19
+pax_level=30
+intro_year=1980
+intro_month=1
+retire_year=2033
+retire_month=12
+location=City
+DistributionWeight=127
+Productivity=50
+InputGood[0]=Maschinen
+InputCapacity[0]=800
+InputFactor[3]=100
+InputSupplier[0]=0
+InputGood[1]=Computer
+InputCapacity[1]=400
+InputFactor[1]=50
+InputSupplier[1]=1
+InputGood[2]=Farben
+InputCapacity[2]=200
+InputFactor[2]=20
+InputSupplier[2]=0
+InputGood[3]=Kameras
+InputCapacity[3]=400
+InputFactor[3]=50
+InputSupplier[3]=1
+InputGood[4]=Papier
+InputCapacity[4]=200
+InputFactor[4]=20
+electricity_amount=10
+passenger_boost=2000
+mail_boost=500
+climates=rocky
+mapcolor=132
+needs_ground=1
+dims=2,1,4
+BackImage[0][0][0][0][0][0]=ALP_Elektroshop.0.0
+BackImage[0][0][1][0][0][0]=ALP_Elektroshop.0.1
+BackImage[1][0][0][0][0][0]=ALP_Elektroshop.0.2
+BackImage[1][1][0][0][0][0]=ALP_Elektroshop.1.0
+BackImage[2][0][0][0][0][0]=ALP_Elektroshop.1.1
+BackImage[2][0][1][0][0][0]=ALP_Elektroshop.1.2
+BackImage[3][0][0][0][0][0]=ALP_Elektroshop.2.0
+BackImage[3][1][0][0][0][0]=ALP_Elektroshop.2.1
+---------------------------------------------------

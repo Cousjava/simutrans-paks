@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Monorail
+#	Neu:
+#	Letzte Bearbeitung 
+#   27.02.2018 NNW
+---------------------------------
+obj=vehicle
+name=yoshi_wup03
+copyright=yoshi
+intro_year=1972
+intro_month=11
+cost=10800000
+runningcost=229
+waytype=monorail_track
+engine_type=battery
+freight=Passagiere
+payload=88
+speed=75
+power=100
+gear=150
+weight=15
+length=6
+smoke=-1
+sound=-1
+constraint[next][0]=none
+constraint[prev][0]=yoshi_wup02
+emptyimage[w]=yoshi_wup03.1.0
+emptyimage[nw]=yoshi_wup03.1.1
+emptyimage[n]=yoshi_wup03.1.2
+emptyimage[ne]=yoshi_wup03.1.3
+emptyimage[e]=yoshi_wup03.1.4
+emptyimage[se]=yoshi_wup03.1.5
+emptyimage[s]=yoshi_wup03.1.6
+emptyimage[sw]=yoshi_wup03.1.7
+---------------------------------

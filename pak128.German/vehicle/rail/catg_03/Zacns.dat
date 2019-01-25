@@ -1,0 +1,28 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 16-05-2017
+---------------------------------
+obj=vehicle
+name=Kesselwagen Zacns
+copyright=pumuckl999
+intro_year=2003
+intro_month=1
+cost=21615000
+runningcost=360
+waytype=track
+freight=Oel
+payload=95
+weight=24
+speed=100
+length=9
+sound=-1
+EmptyImage[S]=Zacns.0.0
+EmptyImage[E]=Zacns.0.1
+EmptyImage[SE]=Zacns.0.2
+EmptyImage[SW]=Zacns.0.3
+EmptyImage[N]=Zacns.0.4
+EmptyImage[W]=Zacns.0.5
+EmptyImage[NW]=Zacns.0.6
+EmptyImage[NE]=Zacns.0.7
+--------------------------------

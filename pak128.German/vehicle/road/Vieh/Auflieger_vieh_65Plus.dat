@@ -1,0 +1,44 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu:
+---------------------------------
+obj=vehicle
+name=Auflieger_Vieh_alt
+copyright=RedRabbit
+intro_year=1933
+intro_month=1
+retire_year=1985
+retire_month=12
+cost=3872000
+runningcost=98
+waytype=road
+freight=Vieh
+speed=70
+weight=9.2
+payload=18
+length=7
+constraint[prev][0]=DaimlerBenz_LPS1620_Sattelzugmaschine
+constraint[prev][1]=DaimlerBenz_LPS2220_Sattelzugmaschine
+constraint[prev][2]=MagirusIveco_T_Zugmaschine
+constraint[prev][3]=Iveco_Stralis_Zugmaschiene
+constraint[prev][4]=DAF_95XF_Zugmaschiene
+constraint[prev][5]=MAN_F90_Zugmaschiene
+constraint[prev][6]=MAN_TGA_Zugmaschiene
+constraint[prev][7]=MercedesBenz_Actros_MP3_Zugmaschiene
+constraint[prev][8]=MercedesBenz_SK_Zugmaschiene_Dachschlafkabine
+constraint[prev][9]=MercedesBenz_SK_Zugmaschiene
+constraint[prev][10]=Magirus_Jupiter200D_Zugmaschine
+constraint[prev][11]=MB_LZ6000
+constraint[prev][12]=MB_LZ8000
+Constraint[next][0]=none
+EmptyImage[W]=Auflieger_65Plus.3.1,11,9
+EmptyImage[NW]=Auflieger_65Plus.3.2,1,19
+EmptyImage[N]=Auflieger_65Plus.3.3,-12,9
+EmptyImage[NE]=Auflieger_65Plus.3.4,-17,2
+EmptyImage[E]=Auflieger_65Plus.3.5,-6,-2
+EmptyImage[SE]=Auflieger_65Plus.3.6,-1,22
+EmptyImage[S]=Auflieger_65Plus.3.7,-24,16
+EmptyImage[SW]=Auflieger_65Plus.3.8,17,1
+-------------------------------------------------
+

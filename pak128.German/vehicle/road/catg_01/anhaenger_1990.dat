@@ -1,0 +1,28 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu:
+---------------------------------
+obj=vehicle
+name=anhaenger_1990_16t_Stueckgut
+copyright=RedRabbit
+intro_year=1986
+intro_month=1
+cost=3416000
+runningcost=73
+waytype=road
+freight=Buecher
+payload=14
+speed=80
+weight=5.6
+length=7
+constraint[next][0]=none
+EmptyImage[W]=anhaenger_1990.1.1
+EmptyImage[NW]=anhaenger_1990.1.2
+EmptyImage[N]=anhaenger_1990.1.3
+EmptyImage[NE]=anhaenger_1990.1.4
+EmptyImage[E]=anhaenger_1990.1.5
+EmptyImage[SE]=anhaenger_1990.1.6
+EmptyImage[S]=anhaenger_1990.1.7
+EmptyImage[SW]=anhaenger_1990.1.8
+------------------------------------------

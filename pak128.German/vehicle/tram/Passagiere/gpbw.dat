@@ -1,0 +1,41 @@
+#	PAK128.german
+#	Vehicle
+obj=vehicle
+name=Goerlitzer Pferdebahnwagen
+copyright=pumuckl999
+intro_year=1882
+intro_month=5
+retire_year=1896
+retire_month=10
+waytype=tram_track
+cost=695000
+runningcost=75
+freight=Passagiere
+payload=30
+speed=15
+weight=2
+length=4
+#sound=
+#smoke=
+constraint[prev][0]=Pferd
+constraint[prev][1]=none
+constraint[next][0]=none
+constraint[next][1]=none
+EmptyImage[S]=gpbw.0.6
+EmptyImage[N]=gpbw.0.2
+EmptyImage[E]=gpbw.0.4
+EmptyImage[W]=gpbw.0.0
+EmptyImage[SW]=gpbw.0.7
+EmptyImage[SE]=gpbw.0.5
+EmptyImage[NW]=gpbw.0.1
+EmptyImage[NE]=gpbw.0.3
+#freightImageType[0]=
+#freightimage[0][S]=
+#freightimage[0][N]=
+#freightimage[0][E]=
+#freightimage[0][W]=
+#freightimage[0][SW]=
+#freightimage[0][SE]=
+#freightimage[0][NE]=
+#freightimage[0][NW]=
+#_EO_

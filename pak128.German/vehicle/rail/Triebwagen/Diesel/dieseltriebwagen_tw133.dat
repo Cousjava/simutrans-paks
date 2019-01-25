@@ -1,0 +1,45 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 16-04-2017
+#    Geaendert: 18-10-2018
+-----------------------
+obj=vehicle
+name=VT133
+copyright=pumuckl999
+intro_year=1932
+intro_month=1
+retire_year=1970
+retire_month=12
+cost=3805200
+runningcost=112
+waytype=track
+engine_type=diesel
+smoke=Diesel
+freight=Passagiere
+payload=42
+speed=56
+weight=7
+power=37
+gear=100
+sound=-1
+length=7
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=dieseltriebwagen_tw133.0.0
+EmptyImage[E]=dieseltriebwagen_tw133.0.1
+EmptyImage[SE]=dieseltriebwagen_tw133.0.2
+EmptyImage[SW]=dieseltriebwagen_tw133.0.3
+EmptyImage[N]=dieseltriebwagen_tw133.0.4
+EmptyImage[W]=dieseltriebwagen_tw133.0.5
+EmptyImage[NW]=dieseltriebwagen_tw133.0.6
+EmptyImage[NE]=dieseltriebwagen_tw133.0.7
+FreightImage[S]=dieseltriebwagen_tw133.1.0
+FreightImage[E]=dieseltriebwagen_tw133.1.1
+FreightImage[SE]=dieseltriebwagen_tw133.1.2
+FreightImage[SW]=dieseltriebwagen_tw133.1.3
+FreightImage[N]=dieseltriebwagen_tw133.1.4
+FreightImage[W]=dieseltriebwagen_tw133.1.5
+FreightImage[NW]=dieseltriebwagen_tw133.1.6
+FreightImage[NE]=dieseltriebwagen_tw133.1.7
+-----------------------------

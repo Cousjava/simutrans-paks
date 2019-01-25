@@ -1,0 +1,44 @@
+#	PAK128.german
+#	Vehicle
+obj=vehicle
+name=Faehre KoenigswinterIII
+copyright=pumuckl999
+intro_year=1960
+intro_month=1
+retire_year=1997
+retire_month=12
+waytype=water
+cost=41548000
+runningcost=4009
+freight=Passagiere
+payload=1600
+engine_type=diesel
+power=440
+gear=1200
+speed=17
+weight=400
+length=14
+sound=-1
+#smoke=
+constraint[prev][0]=none
+constraint[prev][1]=none
+constraint[next][0]=none
+constraint[next][1]=none
+EmptyImage[S]=fkwIII_passagiere.0.6,0,-10
+EmptyImage[N]=fkwIII_passagiere.0.2,-2,-2
+EmptyImage[E]=fkwIII_passagiere.0.4,-42,-21
+EmptyImage[W]=fkwIII_passagiere.0.0
+EmptyImage[SW]=fkwIII_passagiere.0.7,-6,-12
+EmptyImage[SE]=fkwIII_passagiere.0.5,-3,-35
+EmptyImage[NW]=fkwIII_passagiere.0.1,-22,0
+EmptyImage[NE]=fkwIII_passagiere.0.3,-42,-15
+#freightImageType[0]=
+#freightimage[0][S]=
+#freightimage[0][N]=
+#freightimage[0][E]=
+#freightimage[0][W]=
+#freightimage[0][SW]=
+#freightimage[0][SE]=
+#freightimage[0][NW]=
+#freightimage[0][NE]=
+#_EO_

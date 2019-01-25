@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 07.02.2018
+---------------------------------
+obj=vehicle
+name=Ikarus_620
+copyright=pumuckl999
+intro_year=1958
+intro_month=1
+retire_year=1989
+retire_month=12
+cost=9106600
+runningcost=187
+waytype=road
+freight=Passagiere
+payload=70
+engine_type=diesel 
+speed=78
+weight=8.2
+power=107
+smoke=Diesel
+sound=1
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=Ikarus620.0.0
+EmptyImage[N]=Ikarus620.0.1
+EmptyImage[E]=Ikarus620.0.2
+EmptyImage[W]=Ikarus620.0.3
+EmptyImage[SE]=Ikarus620.0.4
+EmptyImage[NW]=Ikarus620.0.5
+EmptyImage[NE]=Ikarus620.0.6
+EmptyImage[SW]=Ikarus620.0.7
+----------------------------------------

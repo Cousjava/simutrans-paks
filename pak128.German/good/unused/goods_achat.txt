@@ -1,0 +1,12 @@
+#
+# Achat
+#
+# obj=good
+# name=Achat
+# metric=Tonnen
+# catg=2
+# value=210
+# #=0,7
+# speed_bonus=0
+# weight_per_unit=1000
+#-----------------------

@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Kuehlwagen-alt
+copyright=TonyBzt
+intro_year=1925
+intro_month=12
+retire_year=1960
+retire_month=12
+cost=3070000
+runningcost=74
+waytype=track
+freight=Fleisch
+payload=12
+weight=19
+speed=80
+length=8
+sound=-1
+EmptyImage[S]=Kuehlwagen_alt.0.0
+EmptyImage[E]=Kuehlwagen_alt.0.1
+EmptyImage[SE]=Kuehlwagen_alt.0.2
+EmptyImage[SW]=Kuehlwagen_alt.0.3
+EmptyImage[N]=Kuehlwagen_alt.0.4
+EmptyImage[W]=Kuehlwagen_alt.0.5
+EmptyImage[NW]=Kuehlwagen_alt.0.6
+EmptyImage[NE]=Kuehlwagen_alt.0.7
+-------------------------------------

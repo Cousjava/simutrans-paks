@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 31-07-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Saechsischer_Bahnpostwagen_1860
+copyright=pumuckl999
+intro_year=1860
+intro_month=1
+retire_year=1910
+retire_month=12
+cost=2370000
+runningcost=80
+waytype=track
+length=9
+freight=Post
+payload=25
+weight=12
+speed=60
+sound=-1
+EmptyImage[S]=Saechsischer_Bpw1860.0.0
+EmptyImage[E]=Saechsischer_Bpw1860.0.1
+EmptyImage[SE]=Saechsischer_Bpw1860.0.2
+EmptyImage[SW]=Saechsischer_Bpw1860.0.3
+EmptyImage[N]=Saechsischer_Bpw1860.0.4
+EmptyImage[W]=Saechsischer_Bpw1860.0.5
+EmptyImage[NW]=Saechsischer_Bpw1860.0.6
+EmptyImage[NE]=Saechsischer_Bpw1860.0.7
+-----------------------------------------

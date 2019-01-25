@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 26-07-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Alstom_H3_Akku
+waytype=track
+copyright=pumuckl999
+intro_year=2014
+intro_month=9
+cost=4270000
+runningcost=11
+freight=None
+engine_type=battery
+smoke=none
+speed=60
+gear=190
+weight=67
+power=600
+length=8
+sound=diesel.wav
+EmptyImage[S]=Alstom_H3.1.0
+EmptyImage[E]=Alstom_H3.1.1
+EmptyImage[SE]=Alstom_H3.1.2
+EmptyImage[SW]=Alstom_H3.1.3
+EmptyImage[N]=Alstom_H3.1.4
+EmptyImage[W]=Alstom_H3.1.5
+EmptyImage[NW]=Alstom_H3.1.6
+EmptyImage[NE]=Alstom_H3.1.7
+-----------------------------

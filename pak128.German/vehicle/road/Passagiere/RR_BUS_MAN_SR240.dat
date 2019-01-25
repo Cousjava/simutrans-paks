@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MAN_SR240
+copyright=RedRabbit
+intro_year=1975
+intro_month=1
+retire_year=1986
+retire_month=12
+cost=8790000
+runningcost=132
+waytype=road
+freight=Passagiere
+payload=46
+speed=100
+weight=12
+power=177
+sound=1
+length=11
+smoke=Diesel
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=RR_BUS_MAN_SR240.0.1
+EmptyImage[N]=RR_BUS_MAN_SR240.0.2
+EmptyImage[E]=RR_BUS_MAN_SR240.0.3
+EmptyImage[W]=RR_BUS_MAN_SR240.0.4
+EmptyImage[SE]=RR_BUS_MAN_SR240.0.5
+EmptyImage[NW]=RR_BUS_MAN_SR240.0.6
+EmptyImage[NE]=RR_BUS_MAN_SR240.0.7
+EmptyImage[SW]=RR_BUS_MAN_SR240.0.8
+--------------------------------------

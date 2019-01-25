@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+#    Geändert: 03-09-2018, pumuckl999
+---------------------------------
+obj=vehicle
+name=BR01Tender
+copyright=TonyBzt
+intro_year=1918
+intro_month=2
+retire_year=1982
+retire_month=12
+cost=300000
+runningcost=62
+waytype=track
+freight=None
+speed=140
+weight=30
+length=6
+sound=-1
+length=7
+Constraint[Prev][0]=BR01_DRG
+Constraint[Prev][1]=Badische_IVh
+Constraint[Prev][2]=none
+EmptyImage[S]=BR01_Tender.0.0
+EmptyImage[E]=BR01_Tender.0.1
+EmptyImage[SE]=BR01_Tender.0.2
+EmptyImage[SW]=BR01_Tender.0.3
+EmptyImage[N]=BR01_Tender.0.4
+EmptyImage[W]=BR01_Tender.0.5
+EmptyImage[NW]=BR01_Tender.0.6
+EmptyImage[NE]=BR01_Tender.0.7
+----------------------------------

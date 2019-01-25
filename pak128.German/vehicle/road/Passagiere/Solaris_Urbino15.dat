@@ -1,0 +1,43 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 12-2014
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Solaris_Urbino15
+copyright=RedRabbit
+intro_year=1998
+intro_month=1
+retire_year=2014
+retire_month=6
+waytype=road
+cost=8406000
+runningcost=242
+freight=Passagiere
+payload=95
+engine_type=diesel
+power=228
+speed=50
+weight=14.1
+length=14
+sound=-1
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[W]=Solaris_Urbino15.2.1
+EmptyImage[NW]=Solaris_Urbino15.2.2
+EmptyImage[N]=Solaris_Urbino15.2.3
+EmptyImage[NE]=Solaris_Urbino15.2.4,-20
+EmptyImage[E]=Solaris_Urbino15.2.5,-32,-16
+EmptyImage[SE]=Solaris_Urbino15.2.6
+EmptyImage[S]=Solaris_Urbino15.2.7
+EmptyImage[SW]=Solaris_Urbino15.2.8,20
+FreightImage[W]=Solaris_Urbino15.3.1
+FreightImage[NW]=Solaris_Urbino15.3.2
+FreightImage[N]=Solaris_Urbino15.3.3
+FreightImage[NE]=Solaris_Urbino15.3.4,-20
+FreightImage[E]=Solaris_Urbino15.3.5,-32,-16
+FreightImage[SE]=Solaris_Urbino15.3.6
+FreightImage[S]=Solaris_Urbino15.3.7
+FreightImage[SW]=Solaris_Urbino15.3.8,20
+-------------------------------------------------

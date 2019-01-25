@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 2008
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MS_sprinter_mail
+#copyright=
+intro_year=1980
+intro_month=1
+cost=7032000
+runningcost=93
+waytype=road
+engine_type=diesel
+freight=Post
+payload=30
+speed=110
+power=182
+gear=100
+weight=8
+sound=engine-start-diesel_d.wav
+constraint[next][0]=none
+constraint[prev][0]=none
+emptyimage[w]=Postsprinter.15.1
+emptyimage[nw]=Postsprinter.15.2
+emptyimage[n]=Postsprinter.15.3
+emptyimage[ne]=Postsprinter.15.4
+emptyimage[e]=Postsprinter.15.5
+emptyimage[se]=Postsprinter.15.6
+emptyimage[s]=Postsprinter.15.7
+emptyimage[sw]=Postsprinter.15.8
+----------------------------------------

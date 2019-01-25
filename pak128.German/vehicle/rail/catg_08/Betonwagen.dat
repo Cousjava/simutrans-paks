@@ -1,0 +1,29 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu:2008
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Betonwagen
+copyright=TonyBzt
+intro_year=1958
+intro_month=1
+cost=14640000
+runningcost=218
+waytype=track
+freight=Zement_lose
+payload=40
+weight=24
+speed=120
+length=8
+sound=-1
+EmptyImage[S]=Betonwagen.0.0
+EmptyImage[W]=Betonwagen.0.1
+EmptyImage[SE]=Betonwagen.0.2
+EmptyImage[SW]=Betonwagen.0.3
+EmptyImage[N]=Betonwagen.0.4
+EmptyImage[E]=Betonwagen.0.5
+EmptyImage[NW]=Betonwagen.0.6
+EmptyImage[NE]=Betonwagen.0.7
+---------------------------------

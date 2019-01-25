@@ -1,0 +1,36 @@
+#	PAK128.german
+#	Vehicle
+#	Neu: 07.07.2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+obj=vehicle
+name=Hafenbarkasse Hafendockter
+copyright=pumuckl999
+intro_year=1929
+intro_month=1
+retire_year=1983
+retire_month=12
+waytype=water
+cost=863600
+runningcost=64
+freight=Passagiere
+payload=25
+engine_type=diesel
+power=133
+gear=400
+speed=17
+weight=36
+length=9
+sound=boat-horn.wav
+smoke=Diesel
+constraint[prev][0]=none
+constraint[next][0]=Barkasse Post
+constraint[next][1]=none
+EmptyImage[W]=HaBa_hafendockter.0.0,-32,4
+EmptyImage[NW]=HaBa_hafendockter.0.1,-16,8
+EmptyImage[N]=HaBa_hafendockter.0.2,-40,4
+EmptyImage[NE]=HaBa_hafendockter.0.3,-20,4
+EmptyImage[E]=HaBa_hafendockter.0.4,-4,-8
+EmptyImage[SE]=HaBa_hafendockter.0.5,4,0
+EmptyImage[S]=HaBa_hafendockter.0.6,12,8
+EmptyImage[SW]=HaBa_hafendockter.0.7,8,8
+------------------

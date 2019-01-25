@@ -1,0 +1,46 @@
+#	PAK128.german
+#	Vehicle
+obj=vehicle
+name=Tatra B3D
+copyright=pumuckl999
+intro_year=1964
+intro_month=1
+retire_year=2015
+retire_month=12
+waytype=tram_track
+cost=10370000
+runningcost=314
+freight=Passagiere
+payload=124
+engine_type=electric
+speed=55
+weight=14
+length=12
+#sound=
+#smoke=
+Constraint[Prev][0]=Tatra T3D
+Constraint[Prev][1]=Tatra T3D2
+Constraint[Prev][2]=Tatra B3D
+Constraint[Prev][3]=none
+Constraint[Next][0]=Tatra T3D
+Constraint[Next][1]=Tatra T3D2
+Constraint[Next][2]=Tatra B3D
+Constraint[Next][3]=none
+EmptyImage[S]=tt3d_bw.0.6
+EmptyImage[N]=tt3d_bw.0.2
+EmptyImage[E]=tt3d_bw.0.4
+EmptyImage[W]=tt3d_bw.0.0
+EmptyImage[SW]=tt3d_bw.0.7
+EmptyImage[SE]=tt3d_bw.0.5
+EmptyImage[NW]=tt3d_bw.0.1
+EmptyImage[NE]=tt3d_bw.0.3
+#freightImageType[0]=
+#freightimage[0][S]=
+#freightimage[0][N]=
+#freightimage[0][E]=
+#freightimage[0][W]=
+#freightimage[0][SW]=
+#freightimage[0][SE]=
+#freightimage[0][NE]=
+#freightimage[0][NW]=
+#_EO_

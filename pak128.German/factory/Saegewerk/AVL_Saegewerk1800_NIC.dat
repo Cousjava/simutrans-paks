@@ -1,0 +1,40 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	Letzte Bearbeitung:
+#	$Date: 2017-04-09 09:56:45 +0200 (So, 09. Apr 2017) $ - $Author: NNW $
+# --------------------------------
+obj=factory
+name=AVL_Saegewerk1800_NIC
+copyright=RedRabbit
+level=9
+intro_year=1800
+intro_month=1
+retire_year=1970
+retire_month=1
+location=land
+DistributionWeight=64
+Productivity=50
+InputGood[0]=Holz
+InputCapacity[0]=2000
+InputFactor[0]=100
+InputSupplier[0]=2
+OutputGood[0]=Bretter
+OutputCapacity[0]=200
+electricity_amount=10
+passenger_boost=1000
+mail_boost=500
+climates=tundra
+mapcolor=69
+needs_ground=1
+dims=1,2,4
+BackImage[0][0][0][0][0][0]=AVL_Saegewerk_1800.0.0
+BackImage[0][1][0][0][0][0]=AVL_Saegewerk_1800.1.0
+BackImage[3][0][0][0][0][0]=AVL_Saegewerk_1800.0.1
+BackImage[3][0][1][0][0][0]=AVL_Saegewerk_1800.1.1
+BackImage[2][0][0][0][0][0]=AVL_Saegewerk_1800.0.2
+BackImage[2][1][0][0][0][0]=AVL_Saegewerk_1800.1.2
+BackImage[1][0][0][0][0][0]=AVL_Saegewerk_1800.0.3
+BackImage[1][0][1][0][0][0]=AVL_Saegewerk_1800.1.3
+------------------------------------------------------ 

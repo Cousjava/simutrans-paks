@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
+---------------------------------
+obj=vehicle
+name=V100
+waytype=track
+copyright=TonyBzt
+intro_year=1958
+intro_month=1
+retire_year=2006
+retire_month=12
+cost=7901000
+runningcost=77
+freight=None
+engine_type=diesel 
+smoke=Diesel
+speed=90
+gear=225
+weight=62
+power=809
+length=8
+sound=diesel.wav
+EmptyImage[S]=V100.0.0
+EmptyImage[E]=V100.0.1
+EmptyImage[SE]=V100.0.2
+EmptyImage[SW]=V100.0.3
+EmptyImage[N]=V100.0.4
+EmptyImage[W]=V100.0.5
+EmptyImage[NW]=V100.0.6
+EmptyImage[NE]=V100.0.7
+-----------------------------

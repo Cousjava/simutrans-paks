@@ -1,0 +1,73 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 03-05-2015
+#	Letzte Bearbeitung:
+#   $Date: 2017-03-03 15:00:23 +0100 (Fr, 03. Mär 2017) $ - $Author: NNW $
+# --------------------------------
+obj=factory
+name=Holzsammelstelle1800_NIC
+copyright=RedRabbit
+level=3
+intro_year=1800
+intro_month=1
+retire_year=1950
+retire_month=12
+location=land
+climates=tropic,mediterran,temperate,tundra,rocky
+DistributionWeight=10
+Productivity=155
+OutputGood[0]=Holz
+OutputCapacity[0]=125
+max_fields=10
+min_fields=5
+probability_to_spawn=15
+fields[0]=Holzsammelstelle_Feld1
+has_snow[0]=1
+spawn_weight[0]=15
+production_per_field[0]=4
+storage_capacity[0]=50
+fields[1]=Holzsammelstelle_Feld2
+has_snow[1]=1
+spawn_weight[1]=15
+production_per_field[1]=8
+storage_capacity[1]=50
+fields[2]=Holzsammelstelle_Feld3
+has_snow[2]=1
+spawn_weight[2]=30
+production_per_field[2]=8
+storage_capacity[2]=50
+fields[3]=Holzsammelstelle_Feld4
+has_snow[3]=1 
+spawn_weight[3]=30
+production_per_field[3]=8
+storage_capacity[3]=50
+electricity_amount=0
+MapColor=66
+needs_ground=1
+Dims=1,2,4
+backimage[0][0][0][0][0][0]=Holzsammelstelle_Gesamt.0.2
+backimage[0][0][0][1][0][0]=Holzsammelstelle_Gesamt.0.3
+backimage[0][1][0][0][0][0]=Holzsammelstelle_Gesamt.0.1
+backimage[1][0][0][0][0][0]=Holzsammelstelle_Gesamt.1.1
+backimage[1][0][0][1][0][0]=Holzsammelstelle_Gesamt.1.3
+backimage[1][0][1][0][0][0]=Holzsammelstelle_Gesamt.1.2
+backimage[2][0][0][0][0][0]=Holzsammelstelle_Gesamt.2.2
+backimage[2][1][0][1][0][0]=Holzsammelstelle_Gesamt.2.3
+backimage[2][1][0][0][0][0]=Holzsammelstelle_Gesamt.2.1
+backimage[3][0][0][0][0][0]=Holzsammelstelle_Gesamt.3.1
+backimage[3][0][1][1][0][0]=Holzsammelstelle_Gesamt.3.3
+backimage[3][0][1][0][0][0]=Holzsammelstelle_Gesamt.3.2
+backimage[0][0][0][0][0][1]=Holzsammelstelle_Gesamt.0.5
+backimage[0][0][0][1][0][1]=Holzsammelstelle_Gesamt.0.6
+backimage[0][1][0][0][0][1]=Holzsammelstelle_Gesamt.0.4
+backimage[1][0][0][0][0][1]=Holzsammelstelle_Gesamt.1.4
+backimage[1][0][0][1][0][1]=Holzsammelstelle_Gesamt.1.6
+backimage[1][0][1][0][0][1]=Holzsammelstelle_Gesamt.1.5
+backimage[2][0][0][0][0][1]=Holzsammelstelle_Gesamt.2.5
+backimage[2][1][0][1][0][1]=Holzsammelstelle_Gesamt.2.6
+backimage[2][1][0][0][0][1]=Holzsammelstelle_Gesamt.2.4
+backimage[3][0][0][0][0][1]=Holzsammelstelle_Gesamt.3.4
+backimage[3][0][1][1][0][1]=Holzsammelstelle_Gesamt.3.6
+backimage[3][0][1][0][0][1]=Holzsammelstelle_Gesamt.3.5
+------------------------------------------------------------

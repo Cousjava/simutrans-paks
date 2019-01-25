@@ -1,0 +1,35 @@
+#--------------------------------
+#     PAK128.german
+#     Vehicle
+#     11-2016
+#--------------------------------
+obj=vehicle
+name=Kutsche_Milchwagen
+copyright=pumuckl999
+intro_year=1800
+intro_month=1
+retire_year=1950
+retire_month=5
+waytype=road
+cost=170000
+runningcost=18
+freight=Milch
+payload=4
+speed=18
+weight=0.8
+length=6
+sound=-1
+constraint[prev][0]=Zugpferde_1
+constraint[prev][1]=Zugpferde_2
+constraint[prev][2]=Zugpferde_4
+Constraint[Prev][3]=BZT_Traktor-gruen
+constraint[next][0]=none
+EmptyImage[S]=Pferdekutsche_fll.0.0
+EmptyImage[N]=Pferdekutsche_fll.0.1,16,-8
+EmptyImage[E]=Pferdekutsche_fll.0.2
+EmptyImage[W]=Pferdekutsche_fll.0.3,-6,-6
+EmptyImage[SE]=Pferdekutsche_fll.0.4,4,-5
+EmptyImage[NW]=Pferdekutsche_fll.0.5,-2,-20
+EmptyImage[NE]=Pferdekutsche_fll.0.6,14,0
+EmptyImage[SW]=Pferdekutsche_fll.0.7,-14,0
+------------------------------------------------------

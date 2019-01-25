@@ -1,0 +1,39 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	Letzte Bearbeitung:
+#   $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
+# --------------------------------
+obj=factory
+name=AVL_Tankstelle_NIC
+copyright=Lemuria
+pax_level=9
+intro_year=1982
+intro_month=1
+Location=City
+DistributionWeight=64
+Productivity=50
+InputGood[0]=Benzin
+InputCapacity[0]=200
+InputSupplier[0]=0
+InputGood[1]=Diesel
+InputCapacity[1]=200
+InputSupplier[1]=0
+# kommen die Leute mit dem Bus zum Benzin kaufen?
+passenger_boost=0000
+mail_boost=500
+electricity_amount=10
+climates=tundra
+mapcolor=175
+needs_ground=1
+dims=2,1,4
+BackImage[0][0][0][0][0][0]=AVL_Tankstelle.0.0
+BackImage[0][0][1][0][0][0]=AVL_Tankstelle.0.1
+BackImage[1][0][0][0][0][0]=AVL_Tankstelle.0.2
+BackImage[1][1][0][0][0][0]=AVL_Tankstelle.1.0
+BackImage[2][0][0][0][0][0]=AVL_Tankstelle.1.1
+BackImage[2][0][1][0][0][0]=AVL_Tankstelle.1.2
+BackImage[3][0][0][0][0][0]=AVL_Tankstelle.2.0
+BackImage[3][1][0][0][0][0]=AVL_Tankstelle.2.1
+-------------------------------------------------

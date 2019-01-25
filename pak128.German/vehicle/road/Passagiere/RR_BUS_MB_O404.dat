@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MercedesBenz_O404
+copyright=RedRabbit
+intro_year=1992
+intro_month=1
+retire_year=1999
+retire_month=12
+cost=9900000
+runningcost=141
+waytype=road
+freight=Passagiere
+payload=51
+engine_type=diesel 
+speed=100
+weight=12
+power=213
+sound=1
+length=11
+smoke=Diesel
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=RR_BUS_MB_O404.0.1
+EmptyImage[N]=RR_BUS_MB_O404.0.2
+EmptyImage[E]=RR_BUS_MB_O404.0.3
+EmptyImage[W]=RR_BUS_MB_O404.0.4
+EmptyImage[SE]=RR_BUS_MB_O404.0.5
+EmptyImage[NW]=RR_BUS_MB_O404.0.6
+EmptyImage[NE]=RR_BUS_MB_O404.0.7
+EmptyImage[SW]=RR_BUS_MB_O404.0.8
+--------------------------------------

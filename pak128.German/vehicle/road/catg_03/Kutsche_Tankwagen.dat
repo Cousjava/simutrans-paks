@@ -1,0 +1,37 @@
+#--------------------------------
+#     PAK128.german
+#     Vehicle
+#     11-2016
+#	Letzte Bearbeitung: $Date$ - $Author$
+#--------------------------------
+
+obj=vehicle
+name=Kutsche_Tankwagen
+copyright=RedRabbit
+intro_year=1859
+intro_month=1
+retire_year=1950
+retire_month=5
+waytype=road
+cost=170000
+runningcost=16
+freight=Oel
+payload=4
+speed=18
+weight=0.8
+length=6
+sound=-1
+constraint[prev][0]=Zugpferde_1
+constraint[prev][1]=Zugpferde_2
+constraint[prev][2]=Zugpferde_4
+Constraint[Prev][3]=BZT_Traktor-gruen
+constraint[next][0]=none
+EmptyImage[W]=Kutschen_OhneLadungsgrafik.5.1
+EmptyImage[NW]=Kutschen_OhneLadungsgrafik.5.2
+EmptyImage[N]=Kutschen_OhneLadungsgrafik.5.3
+EmptyImage[NE]=Kutschen_OhneLadungsgrafik.5.4,-20
+EmptyImage[E]=Kutschen_OhneLadungsgrafik.5.5,-32,-16
+EmptyImage[SE]=Kutschen_OhneLadungsgrafik.5.6
+EmptyImage[S]=Kutschen_OhneLadungsgrafik.5.7
+EmptyImage[SW]=Kutschen_OhneLadungsgrafik.5.8,20
+------------------------------------------------------

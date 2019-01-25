@@ -1,0 +1,46 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 18-10-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Drehgestell-Flachwagen Rnoos644
+copyright=pumuckl999
+intro_year=2008
+intro_month=1
+cost=8535000
+runningcost=140
+waytype=track
+freight=Holz
+payload=46
+speed=100
+weight=25.5
+length=12
+EmptyImage[S]=Rnoos644.0.0
+EmptyImage[E]=Rnoos644.0.1
+EmptyImage[SE]=Rnoos644.0.2
+EmptyImage[SW]=Rnoos644.0.3
+EmptyImage[N]=Rnoos644.0.4
+EmptyImage[W]=Rnoos644.0.5
+EmptyImage[NW]=Rnoos644.0.6
+EmptyImage[NE]=Rnoos644.0.7
+FreightImagetype[0]=Bretter
+FreightImage[0][S]=Rnoos644.1.0
+FreightImage[0][E]=Rnoos644.1.1
+FreightImage[0][SE]=Rnoos644.1.2
+FreightImage[0][SW]=Rnoos644.1.3
+FreightImage[0][N]=Rnoos644.1.4
+FreightImage[0][W]=Rnoos644.1.5
+FreightImage[0][NW]=Rnoos644.1.6
+FreightImage[0][NE]=Rnoos644.1.7
+FreightImagetype[1]=Holz
+FreightImage[1][S]=Rnoos644.2.0
+FreightImage[1][E]=Rnoos644.2.1
+FreightImage[1][SE]=Rnoos644.2.2
+FreightImage[1][SW]=Rnoos644.2.3
+FreightImage[1][N]=Rnoos644.2.4
+FreightImage[1][W]=Rnoos644.2.5
+FreightImage[1][NW]=Rnoos644.2.6
+FreightImage[1][NE]=Rnoos644.2.7
+-----------------------------------------

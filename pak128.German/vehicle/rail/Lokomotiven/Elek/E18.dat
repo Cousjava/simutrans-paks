@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+#	Letzte Bearbeitung:$Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
+---------------------------------
+obj=vehicle
+name=E18
+copyright=TonyBzt
+intro_year=1935
+intro_month=5
+retire_year=1984
+retire_month=7
+cost=46680000
+runningcost=595
+waytype=electrified_track
+power=3040
+gear=300
+speed=150
+weight=108
+length=11
+EmptyImage[S]=E18.0.0
+EmptyImage[E]=E18.0.1
+EmptyImage[SE]=E18.0.2
+EmptyImage[SW]=E18.0.3
+EmptyImage[N]=E18.0.4
+EmptyImage[W]=E18.0.5
+EmptyImage[NW]=E18.0.6
+EmptyImage[NE]=E18.0.7
+-----------------------------

@@ -1,0 +1,43 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=DaimlerBenz_LP1620_Stahltransporter_2
+copyright=RedRabbit
+intro_year=1966
+intro_month=1
+retire_year=1975
+retire_month=12
+cost=4596000
+runningcost=81
+waytype=road
+freight=Stahl
+engine_type=diesel
+power=160
+speed=80
+weight=7.6
+payload=9
+length=8
+sound=1
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[W]=mb_lp1620_pritsche.0.1
+EmptyImage[NW]=mb_lp1620_pritsche.0.2
+EmptyImage[N]=mb_lp1620_pritsche.0.3
+EmptyImage[NE]=mb_lp1620_pritsche.0.4
+EmptyImage[E]=mb_lp1620_pritsche.0.5
+EmptyImage[SE]=mb_lp1620_pritsche.0.6
+EmptyImage[S]=mb_lp1620_pritsche.0.7
+EmptyImage[SW]=mb_lp1620_pritsche.0.8
+FreightImage[W]=mb_lp1620_pritsche.3.1
+FreightImage[NW]=mb_lp1620_pritsche.3.2
+FreightImage[N]=mb_lp1620_pritsche.3.3
+FreightImage[NE]=mb_lp1620_pritsche.3.4
+FreightImage[E]=mb_lp1620_pritsche.3.5
+FreightImage[SE]=mb_lp1620_pritsche.3.6
+FreightImage[S]=mb_lp1620_pritsche.3.7
+FreightImage[SW]=mb_lp1620_pritsche.3.8
+-------------------------------------------------

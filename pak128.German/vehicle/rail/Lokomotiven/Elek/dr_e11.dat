@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+#	Letzte Bearbeitung:$Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
+---------------------------------
+obj=vehicle
+name=DR_E11
+copyright=Lemuria
+intro_year=1961
+intro_Month=4
+retire_year=1998
+retire_Month=5
+cost=35630000
+runningcost=309
+waytype=electrified_track
+speed=120
+weight=83
+power=2900
+gear=250
+length=9
+EmptyImage[S]=DR_E11.0.0
+EmptyImage[E]=DR_E11.0.1
+EmptyImage[SE]=DR_E11.0.2
+EmptyImage[SW]=DR_E11.0.3
+EmptyImage[N]=DR_E11.0.4
+EmptyImage[W]=DR_E11.0.5
+EmptyImage[NW]=DR_E11.0.6
+EmptyImage[NE]=DR_E11.0.7
+-------------------------------

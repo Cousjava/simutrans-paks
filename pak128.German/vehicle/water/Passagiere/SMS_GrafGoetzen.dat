@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu: 26-06-2018
+---------------------------------
+obj=vehicle
+name=Graf_Goetzen
+copyright=pumuckl999
+intro_year=1915
+intro_month=2
+#retire_year=
+#retire_month=
+cost=18736000
+RunningCost=1528
+waytype=water
+freight=Passagiere
+engine_type=steam
+power=368
+speed=20
+gear=1200
+weight=800
+payload=600
+length=9
+sound=boat-horn.wav
+smoke=Steam_ship
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[W]=SMS_GrafGoetzen.0.0,-58,-11
+EmptyImage[NW]=SMS_GrafGoetzen.0.1,-63,-9
+EmptyImage[N]=SMS_GrafGoetzen.0.2,-69,-11
+EmptyImage[NE]=SMS_GrafGoetzen.0.3,-68,-16
+EmptyImage[E]=SMS_GrafGoetzen.0.4,-59,-16
+EmptyImage[SE]=SMS_GrafGoetzen.0.5,-60,-13
+EmptyImage[S]=SMS_GrafGoetzen.0.6,-61,-8
+EmptyImage[SW]=SMS_GrafGoetzen.0.7,-54,-18
+-------------------------------------------------------

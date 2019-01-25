@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 19-05-2017
+#	Letzte Bearbeitung: 18-10-2018
+---------------------------------
+obj=vehicle
+name=Postwaggon Post3-cl12,8
+copyright=pumuckl999
+intro_year=1961
+intro_month=1
+retire_year=1994
+retire_month=12
+cost=6910000
+runningcost=133
+waytype=track
+length=10
+freight=Post
+payload=50
+weight=16
+speed=90
+sound=-1
+EmptyImage[S]=Post3-cl128.0.0
+EmptyImage[E]=Post3-cl128.0.1
+EmptyImage[SE]=Post3-cl128.0.2
+EmptyImage[SW]=Post3-cl128.0.3
+EmptyImage[N]=Post3-cl128.0.4
+EmptyImage[W]=Post3-cl128.0.5
+EmptyImage[NW]=Post3-cl128.0.6
+EmptyImage[NE]=Post3-cl128.0.7
+-----------------------------------------

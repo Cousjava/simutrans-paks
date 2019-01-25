@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+---------------------------------
+obj=vehicle
+name=Fokker_F.III_Post
+copyright=Pumuckl999
+intro_year=1921
+intro_month=1
+retire_year=1936
+retire_month=12
+waytype=air
+cost=2025000
+runningcost=16
+freight=Post
+payload=5
+engine_type=diesel
+power=180
+gear=10
+speed=135
+weight=2
+length=1
+sound=planelow.wav
+smoke=Diesel
+EmptyImage[W]=Fokker_FIII_Fracht.1.1
+EmptyImage[NW]=Fokker_FIII_Fracht.1.2
+EmptyImage[N]=Fokker_FIII_Fracht.1.3
+EmptyImage[NE]=Fokker_FIII_Fracht.1.4
+EmptyImage[E]=Fokker_FIII_Fracht.1.5
+EmptyImage[SE]=Fokker_FIII_Fracht.1.6
+EmptyImage[S]=Fokker_FIII_Fracht.1.7
+EmptyImage[SW]=Fokker_FIII_Fracht.1.8
+-----------------------------------------

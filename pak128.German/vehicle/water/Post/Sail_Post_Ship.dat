@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Sail_Post_Ship_0
+copyright=Marcel
+intro_year=1748
+intro_month=5
+retire_year=1935
+retire_month=12
+cost=5516000
+runningcost=372
+waytype=water
+engine_type=sail
+freight=Post
+payload=110
+speed=28
+power=320
+gear=250
+weight=288
+smoke=-1
+sound=-1
+constraint[next][0]=none
+constraint[prev][0]=none
+emptyimage[w]=ship_pass-post_01.15.1
+emptyimage[nw]=ship_pass-post_01.15.2
+emptyimage[n]=ship_pass-post_01.15.3
+emptyimage[ne]=ship_pass-post_01.15.4
+emptyimage[e]=ship_pass-post_01.15.5
+emptyimage[se]=ship_pass-post_01.15.6
+emptyimage[s]=ship_pass-post_01.15.7
+emptyimage[sw]=ship_pass-post_01.15.8
+------------------------------------------

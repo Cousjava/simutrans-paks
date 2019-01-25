@@ -1,0 +1,37 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Flachwagen_Stahl
+copyright=TonyBzt
+intro_year=1942
+intro_month=1
+cost=8220000
+runningcost=161
+waytype=track
+freight=Stahl
+payload=20
+speed=90
+weight=12
+length=9
+EmptyImage[S]=Flachwagen.0.0
+EmptyImage[E]=Flachwagen.0.1
+EmptyImage[SE]=Flachwagen.0.2
+EmptyImage[SW]=Flachwagen.0.3
+EmptyImage[N]=Flachwagen.0.4
+EmptyImage[W]=Flachwagen.0.5
+EmptyImage[NW]=Flachwagen.0.6
+EmptyImage[NE]=Flachwagen.0.7
+FreightImagetype[0]=Stahl
+FreightImage[0][S]=Flachwagen.3.0
+FreightImage[0][E]=Flachwagen.3.1
+FreightImage[0][SE]=Flachwagen.3.2
+FreightImage[0][SW]=Flachwagen.3.3
+FreightImage[0][N]=Flachwagen.3.4
+FreightImage[0][W]=Flachwagen.3.5
+FreightImage[0][NW]=Flachwagen.3.6
+FreightImage[0][NE]=Flachwagen.3.7
+--------------------------------------

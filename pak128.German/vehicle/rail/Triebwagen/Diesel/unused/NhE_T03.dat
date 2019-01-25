@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 15-10-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=NeuhaldenslebenerEisenbahn_T03
+waytype=track
+copyright=pumuckl999
+intro_year=1932
+intro_month=5
+retire_year=1965
+retire_month=12
+cost=5773000
+runningcost=136
+freight=Post
+payload=45
+engine_type=diesel 
+smoke=Diesel
+speed=60
+gear=180
+weight=31.3
+power=235
+length=8
+sound=diesel.wav
+EmptyImage[S]=NhE_T03.0.0
+EmptyImage[E]=NhE_T03.0.1
+EmptyImage[SE]=NhE_T03.0.2
+EmptyImage[SW]=NhE_T03.0.3
+EmptyImage[N]=NhE_T03.0.4
+EmptyImage[W]=NhE_T03.0.5
+EmptyImage[NW]=NhE_T03.0.6
+EmptyImage[NE]=NhE_T03.0.7
+-----------------------------

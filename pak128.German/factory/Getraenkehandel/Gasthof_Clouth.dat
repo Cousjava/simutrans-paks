@@ -1,0 +1,79 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 30-12-2017
+# --------------------------------
+Obj=factory
+name=Gasthof_1800
+copyright=pumuckl999
+pax_level=10
+intro_year=1800
+intro_month=1
+Location=City
+DistributionWeight=127
+Productivity=10
+Range=2
+InputGood[0]=Bier
+InputCapacity[0]=400
+InputFactor[0]=100
+InputGood[1]=Wein
+InputCapacity[1]=200
+InputFactor[1]=50
+InputGood[2]=Fisch
+InputCapacity[2]=200
+InputFactor[2]=30
+InputGood[3]=Fleisch
+InputCapacity[3]=400
+InputFactor[3]=70
+InputGood[4]=Obst
+InputCapacity[4]=200
+InputFactor[4]=50
+InputGood[5]=Backwaren
+InputCapacity[5]=400
+electricity_amount=3
+passenger_boost=2000
+mail_boost=500
+expand_probability=40
+# Warscheinlichkeit für expand 10000 oder mehr = 100% (100=1%)
+# nach test makie 100 = nach 2 jahren, 50 = nach 4 Jahre, 10 = keine mehr 
+expand_minimum=1
+expand_range=1
+expand_times=40
+# Produktion wird um =+ expand_minumum + random( expand_range ) erhöht.
+MapColor=132
+climates=mediterran, temperate, tundra, rocky
+needs_ground=0
+dims=2,2,4
+BackImage[0][0][0][0][0][0]=Gasthof_Clouth.0.0
+BackImage[0][0][1][0][0][0]=Gasthof_Clouth.0.1
+BackImage[0][1][0][0][0][0]=Gasthof_Clouth.0.2
+BackImage[0][1][1][0][0][0]=Gasthof_Clouth.0.3
+BackImage[0][0][0][0][0][1]=Gasthof_Clouth.0.4
+BackImage[0][0][1][0][0][1]=Gasthof_Clouth.0.5
+BackImage[0][1][0][0][0][1]=Gasthof_Clouth.1.0
+BackImage[0][1][1][0][0][1]=Gasthof_Clouth.1.1
+BackImage[1][0][0][0][0][0]=Gasthof_Clouth.1.2
+BackImage[1][0][1][0][0][0]=Gasthof_Clouth.1.3
+BackImage[1][1][0][0][0][0]=Gasthof_Clouth.1.4
+BackImage[1][1][1][0][0][0]=Gasthof_Clouth.1.5
+BackImage[1][0][0][0][0][1]=Gasthof_Clouth.2.0
+BackImage[1][0][1][0][0][1]=Gasthof_Clouth.2.1
+BackImage[1][1][0][0][0][1]=Gasthof_Clouth.2.2
+BackImage[1][1][1][0][0][1]=Gasthof_Clouth.2.3
+BackImage[2][0][0][0][0][0]=Gasthof_Clouth.2.4
+BackImage[2][0][1][0][0][0]=Gasthof_Clouth.2.5
+BackImage[2][1][0][0][0][0]=Gasthof_Clouth.3.0
+BackImage[2][1][1][0][0][0]=Gasthof_Clouth.3.1
+BackImage[2][0][0][0][0][1]=Gasthof_Clouth.3.2
+BackImage[2][0][1][0][0][1]=Gasthof_Clouth.3.3
+BackImage[2][1][0][0][0][1]=Gasthof_Clouth.3.4
+BackImage[2][1][1][0][0][1]=Gasthof_Clouth.3.5
+BackImage[3][0][0][0][0][0]=Gasthof_Clouth.4.0
+BackImage[3][0][1][0][0][0]=Gasthof_Clouth.4.1
+BackImage[3][1][0][0][0][0]=Gasthof_Clouth.4.2
+BackImage[3][1][1][0][0][0]=Gasthof_Clouth.4.3
+BackImage[3][0][0][0][0][1]=Gasthof_Clouth.4.4
+BackImage[3][0][1][0][0][1]=Gasthof_Clouth.4.5
+BackImage[3][1][0][0][0][1]=Gasthof_Clouth.5.0
+BackImage[3][1][1][0][0][1]=Gasthof_Clouth.5.1
+---------------------------------------------------

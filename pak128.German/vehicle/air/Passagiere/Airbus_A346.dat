@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Airbus_A340-600
+copyright=pumuckl999
+intro_year=2002
+intro_month=1
+retire_year=2032
+retire_month=12
+waytype=air
+cost=817020000
+runningcost=1195
+freight=Passagiere
+payload=306
+engine_type=diesel
+power=36000
+gear=150
+speed=890
+weight=178
+length=7
+sound=5
+EmptyImage[W]=Airbus_A346.0.0
+EmptyImage[NW]=Airbus_A346.0.1
+EmptyImage[N]=Airbus_A346.0.2,-32,0
+EmptyImage[NE]=Airbus_A346.0.3,-56,0
+EmptyImage[E]=Airbus_A346.0.4,-27,0
+EmptyImage[SE]=Airbus_A346.0.5
+EmptyImage[S]=Airbus_A346.0.6
+EmptyImage[SW]=Airbus_A346.0.7
+---------------------------------

@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=DaimlerBenz_LP1620_Kuehlwaren
+copyright=RedRabbit
+intro_year=1966
+intro_month=1
+retire_year=1975
+retire_month=12
+cost=5006000
+runningcost=85
+waytype=road
+freight=Fleisch
+engine_type=diesel
+power=160
+speed=85
+weight=7.6
+payload=14
+length=8
+sound=1
+constraint[prev][0]=none
+constraint[next][0]=anhaenger_1965_16t_Kuehlwaren
+constraint[next][1]=none
+EmptyImage[W]=mb_lp1620.2.1
+EmptyImage[NW]=mb_lp1620.2.2
+EmptyImage[N]=mb_lp1620.2.3
+EmptyImage[NE]=mb_lp1620.2.4
+EmptyImage[E]=mb_lp1620.2.5
+EmptyImage[SE]=mb_lp1620.2.6
+EmptyImage[S]=mb_lp1620.2.7
+EmptyImage[SW]=mb_lp1620.2.8
+---------------------------------------------

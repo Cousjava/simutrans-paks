@@ -1,0 +1,43 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 15-02-2017
+#	Letzte Bearbeitung: $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+Name=sueddt_alte_baeckerei
+copyright=pumuckl999
+pax_level=5
+intro_year=1800
+intro_month=1
+retire_year=1950
+retire_month=1
+location=City
+DistributionWeight=1
+Productivity=30
+InputGood[0]=Mehl
+InputCapacity[0]=1200
+InputFactor[0]=100
+InputGood[1]=Zucker
+InputCapacity[1]=300
+InputFactor[1]=25
+InputGood[2]=Eier
+InputCapacity[2]=1200
+InputFactor[2]=80
+OutputGood[0]=Backwaren
+OutputCapacity[0]=120
+passenger_boost=1000
+mail_boost=500
+electricity_amount=20
+MapColor=155
+climates=rocky, tundra
+dims=1,1,4
+BackImage[0][0][0][0][0][0]=sueddt_alte_baeckerei.0.2
+BackImage[1][0][0][0][0][0]=sueddt_alte_baeckerei.0.1
+BackImage[2][0][0][0][0][0]=sueddt_alte_baeckerei.0.0
+BackImage[3][0][0][0][0][0]=sueddt_alte_baeckerei.0.3
+BackImage[0][0][0][0][0][1]=sueddt_alte_baeckerei.1.2
+BackImage[1][0][0][0][0][1]=sueddt_alte_baeckerei.1.1
+BackImage[2][0][0][0][0][1]=sueddt_alte_baeckerei.1.0
+BackImage[3][0][0][0][0][1]=sueddt_alte_baeckerei.1.3
+------------------------------------------------

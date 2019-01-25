@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 02-04-2017
+#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
+---------------------------------
+obj=vehicle
+name=E52
+copyright=pumuckl999
+intro_year=1924
+intro_month=1
+retire_year=1973
+retire_month=12
+cost=16340000
+runningcost=236
+waytype=electrified_track
+power=1660
+gear=200
+speed=90
+weight=140
+length=10
+sound=-1
+EmptyImage[S]=elok_e52.0.0
+EmptyImage[E]=elok_e52.0.1
+EmptyImage[SE]=elok_e52.0.2
+EmptyImage[SW]=elok_e52.0.3
+EmptyImage[N]=elok_e52.0.4
+EmptyImage[W]=elok_e52.0.5
+EmptyImage[NW]=elok_e52.0.6
+EmptyImage[NE]=elok_e52.0.7
+-----------------------------

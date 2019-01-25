@@ -1,0 +1,43 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MB_O10000_Reisebus_rot
+copyright=RedRabbit
+intro_year=1938
+intro_month=1
+retire_year=1950
+retire_month=6
+cost=5710000
+runningcost=138
+waytype=road
+freight=Passagiere
+payload=50
+engine_type=diesel
+power=110
+speed=65
+weight=12
+length=12
+sound=1
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[W]=MB_O10000.2.1
+EmptyImage[NW]=MB_O10000.2.2
+EmptyImage[N]=MB_O10000.2.3
+EmptyImage[NE]=MB_O10000.2.4,-20
+EmptyImage[E]=MB_O10000.2.5,-32,-16
+EmptyImage[SE]=MB_O10000.2.6
+EmptyImage[S]=MB_O10000.2.7
+EmptyImage[SW]=MB_O10000.2.8,20
+FreightImage[W]=MB_O10000.3.1
+FreightImage[NW]=MB_O10000.3.2
+FreightImage[N]=MB_O10000.3.3
+FreightImage[NE]=MB_O10000.3.4,-20
+FreightImage[E]=MB_O10000.3.5,-32,-16
+FreightImage[SE]=MB_O10000.3.6
+FreightImage[S]=MB_O10000.3.7
+FreightImage[SW]=MB_O10000.3.8,20
+---------------------------------------------

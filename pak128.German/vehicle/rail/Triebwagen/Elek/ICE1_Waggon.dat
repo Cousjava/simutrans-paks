@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 08-2010
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=ICE1_Waggon
+copyright=Lemuria
+intro_year=1991
+intro_month=6
+cost=25040000
+runningcost=196
+waytype=track
+engine_type=electric
+freight=Passagiere
+length=13
+payload=66
+speed=250
+power=0
+weight=29
+smoke=-1
+sound=-1
+constraint[next][0]=ICE1_Waggon
+constraint[next][1]=ICE1_Bistro
+constraint[next][2]=ICE1_Schluss
+emptyimage[s]=ICE1_Waggon.0.1
+emptyimage[e]=ICE1_Waggon.0.2
+emptyimage[se]=ICE1_Waggon.0.3
+emptyimage[sw]=ICE1_Waggon.0.4
+emptyimage[n]=ICE1_Waggon.0.5
+emptyimage[w]=ICE1_Waggon.0.6
+emptyimage[nw]=ICE1_Waggon.0.7
+emptyimage[ne]=ICE1_Waggon.0.8
+--------------------------------------

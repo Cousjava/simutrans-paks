@@ -1,0 +1,44 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung
+#    22-10-2015 The Transporter
+---------------------------------
+obj=vehicle
+name=Henschel_HS22TL_Stahltransporter_2
+copyright=RedRabbit
+intro_year=1963
+intro_month=1
+retire_year=1967
+retire_month=12
+cost=6665000
+runningcost=117
+waytype=road
+freight=Stahl
+engine_type=diesel
+power=240
+speed=80
+weight=6.5
+payload=13.75
+length=8
+sound=1
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[W]=Henschel_HS22TL_Pritsche.0.1
+EmptyImage[NW]=Henschel_HS22TL_Pritsche.0.2
+EmptyImage[N]=Henschel_HS22TL_Pritsche.0.3
+EmptyImage[NE]=Henschel_HS22TL_Pritsche.0.4
+EmptyImage[E]=Henschel_HS22TL_Pritsche.0.5
+EmptyImage[SE]=Henschel_HS22TL_Pritsche.0.6
+EmptyImage[S]=Henschel_HS22TL_Pritsche.0.7
+EmptyImage[SW]=Henschel_HS22TL_Pritsche.0.8
+FreightImage[W]=Henschel_HS22TL_Pritsche.3.1
+FreightImage[NW]=Henschel_HS22TL_Pritsche.3.2
+FreightImage[N]=Henschel_HS22TL_Pritsche.3.3
+FreightImage[NE]=Henschel_HS22TL_Pritsche.3.4
+FreightImage[E]=Henschel_HS22TL_Pritsche.3.5
+FreightImage[SE]=Henschel_HS22TL_Pritsche.3.6
+FreightImage[S]=Henschel_HS22TL_Pritsche.3.7
+FreightImage[SW]=Henschel_HS22TL_Pritsche.3.8
+----------------------------------------------------------

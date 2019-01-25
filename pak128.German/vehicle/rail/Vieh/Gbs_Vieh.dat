@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 19-05-2017
+#	Letzte Bearbeitung: 25-10-2018 pumuckl999
+---------------------------------
+obj=vehicle
+name=Geschlossener Gueterwagen Gbs252 Vieh
+copyright=pumuckl999
+intro_year=1965
+intro_month=1
+retire_year=2000
+retire_month=12
+cost=4330000
+runningcost=78
+waytype=track
+freight=Vieh
+payload=14
+speed=100
+weight=13
+length=9
+EmptyImage[S]=Gbs_Vieh.0.0
+EmptyImage[E]=Gbs_Vieh.0.1
+EmptyImage[SE]=Gbs_Vieh.0.2
+EmptyImage[SW]=Gbs_Vieh.0.3
+EmptyImage[N]=Gbs_Vieh.0.4
+EmptyImage[W]=Gbs_Vieh.0.5
+EmptyImage[NW]=Gbs_Vieh.0.6
+EmptyImage[NE]=Gbs_Vieh.0.7
+--------------------------------------

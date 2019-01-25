@@ -1,0 +1,39 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	Letzte Bearbeitung:
+#    14-09-2015 The Transporter
+# --------------------------------
+obj=field
+name=Holzsammelstelle_Feld1
+copyright=RedRabbit
+Image[0]=Holzsammelstelle_Felder.0.1
+Image[1]=Holzsammelstelle_Felder.0.2
+----------------------------------------
+obj=field
+name=Holzsammelstelle_Feld2
+copyright=RedRabbit
+Image[0]=Holzsammelstelle_Felder.1.1
+Image[1]=Holzsammelstelle_Felder.1.2
+----------------------------------------
+obj=field
+name=Holzsammelstelle_Feld3
+copyright=RedRabbit
+Image[0]=Holzsammelstelle_Felder.2.1
+Image[1]=Holzsammelstelle_Felder.2.2
+---------------------------------------
+obj=field
+name=Holzsammelstelle_Feld4
+copyright=RedRabbit
+Image[0]=Holzsammelstelle_Felder.3.1
+Image[1]=Holzsammelstelle_Felder.3.2
+---------------------------------------
+obj=field
+name=Holzsammelstelle_Feld5
+copyright=RedRabbit
+Image[0]=Holzsammelstelle_Felder.3.1
+Image[1]=Holzsammelstelle_Felder.4.1
+Image[2]=Holzsammelstelle_Felder.4.2
+Image[3]=Holzsammelstelle_Felder.3.2
+---------------------------------------

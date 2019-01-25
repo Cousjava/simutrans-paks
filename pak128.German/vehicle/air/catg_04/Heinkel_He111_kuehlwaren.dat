@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+---------------------------------
+obj=vehicle
+name=Heinkel_He111B_Kuehlwaren
+copyright=Pumuckl999
+intro_year=1936
+intro_month=1
+retire_year=1945
+retire_month=12
+waytype=air
+cost=15360000
+runningcost=63
+freight=Fleisch
+payload=8
+engine_type=diesel
+power=1500
+gear=27
+speed=320
+weight=7
+length=2
+sound=planelow.wav
+smoke=Diesel
+EmptyImage[W]=Heinkel_He111_Fracht.4.1
+EmptyImage[NW]=Heinkel_He111_Fracht.4.2
+EmptyImage[N]=Heinkel_He111_Fracht.4.3
+EmptyImage[NE]=Heinkel_He111_Fracht.4.4
+EmptyImage[E]=Heinkel_He111_Fracht.4.5
+EmptyImage[SE]=Heinkel_He111_Fracht.4.6
+EmptyImage[S]=Heinkel_He111_Fracht.4.7
+EmptyImage[SW]=Heinkel_He111_Fracht.4.8
+------------------------------------------

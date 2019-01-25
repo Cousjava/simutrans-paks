@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu:19-11-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Staubkesselwagen_KKd49
+copyright=pumuckl999
+# intro_year=1953
+intro_year=1955
+intro_month=1
+retire_year=1970
+retire_month=6
+cost=9900000
+runningcost=190
+waytype=track
+freight=Zement_lose
+payload=36
+weight=18
+speed=90
+length=8
+sound=-1
+EmptyImage[S]=KKd49.0.0
+EmptyImage[E]=KKd49.0.1
+EmptyImage[SE]=KKd49.0.2
+EmptyImage[SW]=KKd49.0.3
+EmptyImage[N]=KKd49.0.4
+EmptyImage[W]=KKd49.0.5
+EmptyImage[NW]=KKd49.0.6
+EmptyImage[NE]=KKd49.0.7
+---------------------------------

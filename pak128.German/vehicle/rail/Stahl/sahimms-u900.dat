@@ -1,0 +1,28 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 28-04-2017
+#    Letzte Bearbeitung: 25-10-2018 pumuckl999
+---------------------------------
+obj=vehicle
+name=Teleskophaubenwagen Sahimms-u 900
+copyright=pumuckl999
+intro_year=1984
+intro_month=1
+cost=39030000
+runningcost=651
+waytype=track
+freight=Stahl
+payload=86
+speed=100
+weight=33
+length=9
+EmptyImage[S]=sahimms-u900.0.0
+EmptyImage[E]=sahimms-u900.0.1
+EmptyImage[SE]=sahimms-u900.0.2
+EmptyImage[SW]=sahimms-u900.0.3
+EmptyImage[N]=sahimms-u900.0.4
+EmptyImage[W]=sahimms-u900.0.5
+EmptyImage[NW]=sahimms-u900.0.6
+EmptyImage[NE]=sahimms-u900.0.7
+--------------------------------------

@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=TS-MHZ_Schoner
+copyright=timeshock/MHz
+intro_year=1720
+intro_month=1
+retire_year=1833
+retire_month=12
+cost=2310000
+runningcost=199
+waytype=water
+engine_type=sail
+freight=Passagiere
+payload=60
+speed=22
+power=150
+gear=250
+weight=200
+smoke=-1
+sound=-1
+constraint[next][0]=none
+constraint[prev][0]=none
+emptyimage[w]=ship_pass-post_01.0.1,20,-10
+emptyimage[nw]=ship_pass-post_01.0.2
+emptyimage[n]=ship_pass-post_01.0.3,4,-4
+emptyimage[ne]=ship_pass-post_01.0.4
+emptyimage[e]=ship_pass-post_01.0.5,62,-19
+emptyimage[se]=ship_pass-post_01.0.6
+emptyimage[s]=ship_pass-post_01.0.7,43,-44
+emptyimage[sw]=ship_pass-post_01.0.8
+-----------------------------------------------

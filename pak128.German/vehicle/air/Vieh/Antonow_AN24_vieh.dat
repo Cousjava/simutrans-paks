@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Antonow_AN24_Vieh
+copyright=Pumuckl999
+intro_year=1966
+intro_month=1
+retire_year=1975
+retire_month=12
+waytype=air
+cost=67500000
+runningcost=174
+freight=Vieh
+payload=25
+engine_type=diesel
+power=3754
+gear=34
+speed=450
+weight=13
+length=3
+sound=6
+smoke=Diesel
+EmptyImage[W]=Antonow_AN24_Fracht.4.1
+EmptyImage[NW]=Antonow_AN24_Fracht.4.2
+EmptyImage[N]=Antonow_AN24_Fracht.4.3
+EmptyImage[NE]=Antonow_AN24_Fracht.4.4
+EmptyImage[E]=Antonow_AN24_Fracht.4.5
+EmptyImage[SE]=Antonow_AN24_Fracht.4.6
+EmptyImage[S]=Antonow_AN24_Fracht.4.7
+EmptyImage[SW]=Antonow_AN24_Fracht.4.8
+------------------------------------------

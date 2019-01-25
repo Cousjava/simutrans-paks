@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Iljuschin_Il-14P
+copyright=Pumuckl999
+intro_year=1950
+intro_month=9
+retire_year=1967
+retire_month=12
+waytype=air
+cost=28860000
+runningcost=104
+freight=Passagiere
+payload=26
+engine_type=diesel
+power=2794
+gear=29
+speed=370
+weight=12
+length=3
+sound=smalloldplanes.wav
+smoke=Diesel
+EmptyImage[W]=Iljuschin_Il14P.0.0
+EmptyImage[NW]=Iljuschin_Il14P.0.1
+EmptyImage[N]=Iljuschin_Il14P.0.2
+EmptyImage[NE]=Iljuschin_Il14P.0.3
+EmptyImage[E]=Iljuschin_Il14P.0.4
+EmptyImage[SE]=Iljuschin_Il14P.0.5
+EmptyImage[S]=Iljuschin_Il14P.0.6
+EmptyImage[SW]=Iljuschin_Il14P.0.7
+-------------------------------------

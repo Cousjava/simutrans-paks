@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Henschel_HS22TL_Tankwagen
+copyright=RedRabbit
+intro_year=1963
+intro_month=1
+retire_year=1967
+retire_month=12
+cost=3785000
+runningcost=57
+waytype=road
+freight=Oel
+engine_type=diesel
+power=240
+speed=80
+weight=6.5
+payload=10
+length=9
+sound=1
+constraint[prev][0]=none
+EmptyImage[W]=Henschel_HS22TL.2.1
+EmptyImage[NW]=Henschel_HS22TL.2.2
+EmptyImage[N]=Henschel_HS22TL.2.3
+EmptyImage[NE]=Henschel_HS22TL.2.4,-20
+EmptyImage[E]=Henschel_HS22TL.2.5,-32,-16
+EmptyImage[SE]=Henschel_HS22TL.2.6
+EmptyImage[S]=Henschel_HS22TL.2.7
+EmptyImage[SW]=Henschel_HS22TL.2.8,20
+--------------------------------------------

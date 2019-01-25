@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=YB70_1.Kl._Schnellzugwagen
+copyright=Lemuria
+intro_year=1971
+intro_month=1
+retire_year=1995
+retire_month=12
+cost=18290000
+runningcost=264
+waytype=track
+freight=Passagiere
+payload=100
+speed=120
+weight=29
+length=13
+EmptyImage[S]=DR_Y_B_70_o.0.0
+EmptyImage[E]=DR_Y_B_70_o.0.1
+EmptyImage[SE]=DR_Y_B_70_o.0.2
+EmptyImage[SW]=DR_Y_B_70_o.0.3
+EmptyImage[N]=DR_Y_B_70_o.0.4
+EmptyImage[W]=DR_Y_B_70_o.0.5
+EmptyImage[NW]=DR_Y_B_70_o.0.6
+EmptyImage[NE]=DR_Y_B_70_o.0.7
+-----------------------------------

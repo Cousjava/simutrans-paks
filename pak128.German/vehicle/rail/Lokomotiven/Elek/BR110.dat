@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
+---------------------------------
+obj=vehicle
+name=BR110-blau
+copyright=TonyBzt
+intro_year=1956
+intro_month=3
+cost=52650000
+runningcost=489
+waytype=electrified_track
+freight=None
+speed=140
+weight=85
+power=3700
+gear=300
+length=11
+sound=-1
+EmptyImage[S]=BR110.0.0
+EmptyImage[E]=BR110.0.1
+EmptyImage[SE]=BR110.0.2
+EmptyImage[SW]=BR110.0.3
+EmptyImage[N]=BR110.0.4
+EmptyImage[W]=BR110.0.5
+EmptyImage[NW]=BR110.0.6
+EmptyImage[NE]=BR110.0.7
+-----------------------------

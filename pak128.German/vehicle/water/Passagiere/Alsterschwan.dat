@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:02-08-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MS_Alsterschwan
+copyright=pumuckl999
+intro_year=2006
+intro_month=1
+waytype=water
+cost=2898000
+runningcost=250
+freight=Passagiere
+payload=100
+engine_type=diesel
+power=110
+gear=1200
+speed=18
+weight=65
+length=7
+sound=-1
+smoke=Diesel_black
+EmptyImage[W]=Alsterschwan.0.0,-64,-32
+EmptyImage[NW]=Alsterschwan.0.1,-64,-32
+EmptyImage[N]=Alsterschwan.0.2,-64,-32
+EmptyImage[NE]=Alsterschwan.0.3,-64,-32
+EmptyImage[E]=Alsterschwan.0.4,-64,-32
+EmptyImage[SE]=Alsterschwan.0.5,-64,-32
+EmptyImage[S]=Alsterschwan.0.6,-64,-32
+EmptyImage[SW]=Alsterschwan.0.7,-64,-32
+--------------------------------

@@ -1,0 +1,50 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	Letzte Bearbeitung:
+#   $Date: 2018-08-05 12:46:07 +0200 (So, 05. Aug 2018) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+name=Maschinenfabrik_NIC
+copyright=TonyBzt
+pax_level=50
+intro_year=1909
+intro_month=1
+retire_year=1997
+retire_month=1
+Location=City
+DistributionWeight=30
+Productivity=100
+InputGood[0]=Stahl
+InputCapacity[0]=1200
+InputFactor[0]=100
+InputGood[1]=Bretter
+InputCapacity[1]=400
+InputFactor[1]=25
+InputGood[2]=Verpackungsmittel
+InputCapacity[2]=400
+InputFactor[2]=15
+OutputGood[0]=Maschinen
+OutputCapacity[0]=400
+electricity_amount=80
+passenger_boost=1000
+mail_boost=500
+climates=desert, tropic, mediterran, temperate, tundra, rocky
+MapColor=96
+Dims=3,3,1
+BackImage[0][0][0][0][0]=Maschinenfabrik.0.0
+BackImage[0][0][1][0][0]=Maschinenfabrik.0.1
+BackImage[0][0][2][0][0]=Maschinenfabrik.0.2
+BackImage[0][1][0][0][0]=Maschinenfabrik.1.0
+BackImage[0][1][1][0][0]=Maschinenfabrik.1.1
+BackImage[0][1][2][0][0]=Maschinenfabrik.1.2
+BackImage[0][2][0][0][0]=Maschinenfabrik.2.0
+BackImage[0][2][1][0][0]=Maschinenfabrik.2.1
+BackImage[0][2][2][0][0]=Maschinenfabrik.2.2
+BackImage[0][0][0][1][0]=Maschinenfabrik.3.0
+BackImage[0][0][1][1][0]=Maschinenfabrik.3.1
+BackImage[0][0][2][1][0]=Maschinenfabrik.3.2
+BackImage[0][1][0][1][0]=Maschinenfabrik.4.0
+BackImage[0][2][0][1][0]=Maschinenfabrik.5.0
+------------------------------------------------

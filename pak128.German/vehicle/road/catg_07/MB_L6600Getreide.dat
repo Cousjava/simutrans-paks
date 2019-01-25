@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 06-02-2018
+---------------------------------
+obj=vehicle
+name=MB_L6600_Getreide
+copyright=pumuckl999
+intro_year=1950
+intro_month=1
+retire_year=1979
+retire_month=12
+cost=1817000
+runningcost=35
+waytype=road
+speed=70
+power=107
+weight=6
+freight=Gerste
+payload=8
+length=8
+smoke=Diesel_small
+sound=engine-start-diesel_d.wav
+constraint[prev][0]=none
+constraint[next][0]=MB_L6600_Getreide_Anhaenger
+constraint[next][1]=none
+EmptyImage[S]=MB_L6600Getreide.0.0
+EmptyImage[N]=MB_L6600Getreide.0.1
+EmptyImage[E]=MB_L6600Getreide.0.2
+EmptyImage[W]=MB_L6600Getreide.0.3
+EmptyImage[SE]=MB_L6600Getreide.0.4
+EmptyImage[NW]=MB_L6600Getreide.0.5
+EmptyImage[NE]=MB_L6600Getreide.0.6
+EmptyImage[SW]=MB_L6600Getreide.0.7
+-------------------------------------------

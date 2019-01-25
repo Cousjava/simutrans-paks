@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MAN_13280_F_Post
+copyright=RedRabbit
+intro_year=1967
+intro_month=1
+retire_year=1986
+retire_month=12
+cost=12514000
+runningcost=233
+waytype=road
+freight=Post
+engine_type=diesel
+power=280
+speed=80
+weight=7.4
+payload=85
+length=8
+sound=1
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[W]=MAN_13275_F.2.1
+EmptyImage[NW]=MAN_13275_F.2.2
+EmptyImage[N]=MAN_13275_F.2.3
+EmptyImage[NE]=MAN_13275_F.2.4,-20
+EmptyImage[E]=MAN_13275_F.2.5,-32,-16
+EmptyImage[SE]=MAN_13275_F.2.6
+EmptyImage[S]=MAN_13275_F.2.7
+EmptyImage[SW]=MAN_13275_F.2.8,20
+--------------------------------------------

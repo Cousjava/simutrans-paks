@@ -1,0 +1,29 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 20-11-2017
+#	Letzte Bearbeitung: 25-10-2018 pumuckl999
+---------------------------------
+obj=vehicle
+name=Bahndienstwagen_262
+copyright=pumuckl999
+intro_year=1960
+intro_month=1
+cost=16421000
+runningcost=281
+waytype=track
+freight=Oel
+payload=72
+weight=22.1
+speed=100
+length=7
+sound=-1
+EmptyImage[S]=BDW262.0.0
+EmptyImage[E]=BDW262.0.1
+EmptyImage[SE]=BDW262.0.2
+EmptyImage[SW]=BDW262.0.3
+EmptyImage[N]=BDW262.0.4
+EmptyImage[W]=BDW262.0.5
+EmptyImage[NW]=BDW262.0.6
+EmptyImage[NE]=BDW262.0.7
+--------------------------------

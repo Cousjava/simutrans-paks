@@ -1,0 +1,37 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 28-08-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Schienenzeppelin
+waytype=track
+copyright=pumuckl999
+intro_year=1930
+intro_month=1
+retire_year=1939
+retire_month=12
+cost=24143000
+runningcost=325
+freight=Passagiere
+payload=40
+engine_type=diesel 
+smoke=Diesel
+speed=230
+gear=300
+weight=20
+power=441
+length=15
+sound=diesel.wav
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[S]=Szeppelin.0.0,7,0
+EmptyImage[E]=Szeppelin.0.1,-3,0
+EmptyImage[SE]=Szeppelin.0.2
+EmptyImage[SW]=Szeppelin.0.3,8,0
+EmptyImage[N]=Szeppelin.0.4
+EmptyImage[W]=Szeppelin.0.5
+EmptyImage[NW]=Szeppelin.0.6
+EmptyImage[NE]=Szeppelin.0.7,-10,0
+-----------------------------

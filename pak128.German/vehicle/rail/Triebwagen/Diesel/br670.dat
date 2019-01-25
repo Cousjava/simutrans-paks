@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 
+#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
+---------------------------------
+obj=vehicle
+name=BR670_DSPZ
+copyright=pumuckl999
+intro_year=1996
+intro_month=1
+cost=19342500
+runningcost=290
+waytype=track
+freight=Passagiere
+payload=110
+speed=100
+gear=100
+power=250
+weight=34.25
+engine_type=diesel
+smoke=Diesel_small
+sound=2
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[S]=br670.0.4,10,-5
+EmptyImage[E]=br670.0.5,-10,-5
+EmptyImage[SE]=br670.0.6,0,-16
+EmptyImage[SW]=br670.0.7,22,0
+EmptyImage[N]=br670.0.0,-12,6
+EmptyImage[W]=br670.0.1,10,5
+EmptyImage[NW]=br670.0.2,0,16
+EmptyImage[NE]=br670.0.3,-22,0
+------------------------------------

@@ -1,0 +1,54 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 20-11-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=gedeckter_Gueterwagen_GGhs_Bromberg_lwGueter
+copyright=pumuckl999
+intro_year=1944
+intro_month=1
+retire_year=1971
+retire_month=12
+cost=6535000
+runningcost=122
+waytype=track
+freight=Gerste
+payload=35
+speed=100
+weight=23.5
+length=10
+EmptyImage[S]=GGhs_Bromberg.0.0
+EmptyImage[E]=GGhs_Bromberg.0.1
+EmptyImage[SE]=GGhs_Bromberg.0.2
+EmptyImage[SW]=GGhs_Bromberg.0.3
+EmptyImage[N]=GGhs_Bromberg.0.4
+EmptyImage[W]=GGhs_Bromberg.0.5
+EmptyImage[NW]=GGhs_Bromberg.0.6
+EmptyImage[NE]=GGhs_Bromberg.0.7
+--------------------------------------
+obj=vehicle
+name=gedeckter_Gueterwagen_GGhs_Bromberg_Stueckgut
+copyright=pumuckl999
+intro_year=1944
+intro_month=1
+retire_year=1971
+retire_month=12
+cost=9235000
+runningcost=167
+waytype=track
+freight=Plastik
+payload=30
+speed=100
+weight=23.5
+length=10
+EmptyImage[S]=GGhs_Bromberg.0.0
+EmptyImage[E]=GGhs_Bromberg.0.1
+EmptyImage[SE]=GGhs_Bromberg.0.2
+EmptyImage[SW]=GGhs_Bromberg.0.3
+EmptyImage[N]=GGhs_Bromberg.0.4
+EmptyImage[W]=GGhs_Bromberg.0.5
+EmptyImage[NW]=GGhs_Bromberg.0.6
+EmptyImage[NE]=GGhs_Bromberg.0.7
+--------------------------------------

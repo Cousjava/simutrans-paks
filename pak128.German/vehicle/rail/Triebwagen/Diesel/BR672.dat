@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 31-7-2017
+#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
+---------------------------------
+obj=vehicle
+name=DWA_LVTS-BR672
+copyright=pumuckl999
+intro_year=1998
+intro_month=1
+cost=11970000
+runningcost=164
+freight=Passagiere
+power=265
+gear=225
+payload=60
+speed=100
+length=10
+weight=32
+waytype=track
+engine_type=diesel
+constraint[prev][0]=DWA_LVTS-BR672
+constraint[prev][1]=none
+constraint[next][0]=DWA_LVTS-BR672
+constraint[next][1]=none
+EmptyImage[S]=BR672.0.0
+EmptyImage[E]=BR672.0.1
+EmptyImage[SE]=BR672.0.2
+EmptyImage[SW]=BR672.0.3
+EmptyImage[N]=BR672.0.4
+EmptyImage[W]=BR672.0.5
+EmptyImage[NW]=BR672.0.6
+EmptyImage[NE]=BR672.0.7
+--------------------------------

@@ -1,0 +1,42 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+#	Letzte Bearbeitung:$Date: 2017-11-21 15:36:50 +0100 (Di, 21. Nov 2017) $ - $Author: gebeine $
+---------------------------------
+obj=vehicle
+name=BR50
+copyright=TonyBzt
+intro_year=1939
+intro_month=1
+retire_year=1987
+retire_month=12
+cost=10430000
+runningcost=122
+waytype=track
+engine_type=steam
+freight=None
+smoke=Steam
+speed=80
+gear=500
+weight=87
+length=10
+power=1195
+sound=3
+Constraint[Prev][0]=KabTender
+Constraint[Prev][1]=Wannentender
+Constraint[Prev][2]=T34Tender
+Constraint[Prev][3]=none
+Constraint[Next][0]=KabTender
+Constraint[Next][1]=Wannentender
+Constraint[Next][2]=T34Tender
+Constraint[Next][3]=none
+EmptyImage[S]=BR50.0.0
+EmptyImage[E]=BR50.0.1
+EmptyImage[SE]=BR50.0.2
+EmptyImage[SW]=BR50.0.3
+EmptyImage[N]=BR50.0.4
+EmptyImage[W]=BR50.0.5
+EmptyImage[NW]=BR50.0.6
+EmptyImage[NE]=BR50.0.7
+-------------------------------

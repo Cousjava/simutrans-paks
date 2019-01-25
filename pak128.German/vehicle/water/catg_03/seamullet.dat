@@ -1,0 +1,42 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Oeltanker Seamullet
+Copyright=pumuckl999
+intro_year=2001
+intro_month=1
+cost=42252000
+runningcost=1249
+waytype=water
+freight=Oel
+engine_type=diesel
+power=8340
+gear=1200
+speed=28
+weight=8400
+payload=300
+length=9
+Sound=boat-horn.wav
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[W]=seamullet_empty.0.0,-48,0
+EmptyImage[NW]=seamullet_empty.0.1,-36,-4
+EmptyImage[N]=seamullet_empty.0.2,-28,4
+EmptyImage[NE]=seamullet_empty.0.3,-42,-4
+EmptyImage[E]=seamullet_empty.0.4,-36,-20
+EmptyImage[SE]=seamullet_empty.0.5,8,-20
+EmptyImage[S]=seamullet_empty.0.6,8,0
+EmptyImage[SW]=seamullet_empty.0.7
+FreightImage[W]=seamullet_freight.0.0,-48,0
+FreightImage[NW]=seamullet_freight.0.1,-36,-4
+FreightImage[N]=seamullet_freight.0.2,-28,4
+FreightImage[NE]=seamullet_freight.0.3,-42,-4
+FreightImage[E]=seamullet_freight.0.4,-36,-20
+FreightImage[SE]=seamullet_freight.0.5,8,-20
+FreightImage[S]=seamullet_freight.0.6,8,0
+FreightImage[SW]=seamullet_freight.0.7
+-------------------------------------------------

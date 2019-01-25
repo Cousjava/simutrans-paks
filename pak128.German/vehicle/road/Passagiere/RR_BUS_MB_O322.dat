@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MercedesBenz_O322
+copyright=RedRabbit
+intro_year=1960
+intro_month=1
+retire_year=1969
+retire_month=12
+cost=4510000
+runningcost=140
+waytype=road
+freight=Passagiere
+payload=54
+engine_type=diesel 
+speed=50
+weight=6
+power=80
+smoke=Diesel
+sound=1
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=RR_BUS_MB_O322.0.1
+EmptyImage[N]=RR_BUS_MB_O322.0.2
+EmptyImage[E]=RR_BUS_MB_O322.0.3
+EmptyImage[W]=RR_BUS_MB_O322.0.4
+EmptyImage[SE]=RR_BUS_MB_O322.0.5
+EmptyImage[NW]=RR_BUS_MB_O322.0.6
+EmptyImage[NE]=RR_BUS_MB_O322.0.7
+EmptyImage[SW]=RR_BUS_MB_O322.0.8
+------------------------------------------

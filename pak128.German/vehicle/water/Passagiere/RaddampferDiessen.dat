@@ -1,0 +1,44 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu: 16-08-2018
+---------------------------------
+obj=vehicle
+name=Raddampfer_Diessen
+copyright=pumuckl999
+intro_year=1908
+intro_month=8
+#retire_year=
+#retire_month=
+cost=15548000
+RunningCost=1033
+waytype=water
+freight=Passagiere
+engine_type=steam
+power=760
+speed=23
+gear=1200
+weight=300
+payload=400
+length=8
+sound=boat-horn.wav
+smoke=Steam_ship
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[W]=RaddampferDiessen.0.0,-58,-11
+EmptyImage[NW]=RaddampferDiessen.0.1,-63,-9
+EmptyImage[N]=RaddampferDiessen.0.2,-69,-11
+EmptyImage[NE]=RaddampferDiessen.0.3,-68,-16
+EmptyImage[E]=RaddampferDiessen.0.4,-59,-16
+EmptyImage[SE]=RaddampferDiessen.0.5,-60,-13
+EmptyImage[S]=RaddampferDiessen.0.6,-61,-8
+EmptyImage[SW]=RaddampferDiessen.0.7,-54,-18
+freightimage[W]=RaddampferDiessen.1.0,-58,-11
+freightimage[NW]=RaddampferDiessen.1.1,-63,-9
+freightimage[N]=RaddampferDiessen.1.2,-69,-11
+freightimage[NE]=RaddampferDiessen.1.3,-68,-16
+freightimage[E]=RaddampferDiessen.1.4,-59,-16
+freightimage[SE]=RaddampferDiessen.1.5,-60,-13
+freightimage[S]=RaddampferDiessen.1.6,-61,-8
+freightimage[SW]=RaddampferDiessen.1.7,-54,-18
+-------------------------------------------------------

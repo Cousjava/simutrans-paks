@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu:
+---------------------------------
+obj=vehicle
+name=Anhaenger_18t_Stueck
+copyright=RedRabbit
+intro_year=1986
+intro_month=1
+retire_year=2050
+retire_month=12
+cost=2930000
+runningcost=63
+waytype=road
+speed=80
+weight=5
+freight=Buecher
+payload=12
+length=7
+constraint[prev][0]=MAN_M90_Milchtransport
+constraint[prev][1]=MAN_M90_Stueckgut
+constraint[prev][2]=MAN_M90_Kuehlwaren
+constraint[prev][3]=MAN_F90_Landwirtschaft
+constraint[prev][4]=MAN_F90_Tiertransport
+constraint[prev][5]=MAN_F90_Silotransport
+constraint[prev][6]=MAN_F90_ISO_Container
+EmptyImage[S]=RR_Anhaenger_18t_Stueck.0.1
+EmptyImage[N]=RR_Anhaenger_18t_Stueck.0.2
+EmptyImage[E]=RR_Anhaenger_18t_Stueck.0.3
+EmptyImage[W]=RR_Anhaenger_18t_Stueck.0.4
+EmptyImage[SE]=RR_Anhaenger_18t_Stueck.0.5
+EmptyImage[NW]=RR_Anhaenger_18t_Stueck.0.6
+EmptyImage[NE]=RR_Anhaenger_18t_Stueck.0.7
+EmptyImage[SW]=RR_Anhaenger_18t_Stueck.0.8
+--------------------------------------------------

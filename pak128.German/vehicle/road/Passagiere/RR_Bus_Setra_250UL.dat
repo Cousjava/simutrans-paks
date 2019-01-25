@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Setra_250UL
+copyright=RedRabbit
+intro_year=1983
+intro_month=1
+retire_year=1995
+retire_month=12
+cost=9840000
+runningcost=147
+waytype=road
+freight=Passagiere
+payload=53
+engine_type=diesel 
+speed=100
+weight=12
+power=177
+smoke=Diesel
+sound=1
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=RR_Bus_Setra_250UL.0.1
+EmptyImage[N]=RR_Bus_Setra_250UL.0.2
+EmptyImage[E]=RR_Bus_Setra_250UL.0.3
+EmptyImage[W]=RR_Bus_Setra_250UL.0.4
+EmptyImage[SE]=RR_Bus_Setra_250UL.0.5
+EmptyImage[NW]=RR_Bus_Setra_250UL.0.6
+EmptyImage[NE]=RR_Bus_Setra_250UL.0.7
+EmptyImage[SW]=RR_Bus_Setra_250UL.0.8
+-----------------------------------------------

@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 09-2010
+#	Letzte Bearbeitung: $Date$ - $Author$:
+---------------------------------
+obj=vehicle
+name=FLIRT_Schluss
+copyright=Lemuria
+intro_year=1991
+intro_month=8
+cost=35060000
+runningcost=260
+waytype=track
+engine_type=electric
+freight=Passagiere
+length=13
+payload=58
+speed=160
+power=1300
+gear=100
+weight=34
+smoke=-1
+constraint[next][0]=FLIRT_Kopf
+constraint[next][1]=none
+emptyimage[n]=FLIRT_Schluss.0.1
+emptyimage[w]=FLIRT_Schluss.0.2
+emptyimage[nw]=FLIRT_Schluss.0.3
+emptyimage[ne]=FLIRT_Schluss.0.4
+emptyimage[s]=FLIRT_Schluss.0.5
+emptyimage[e]=FLIRT_Schluss.0.6
+emptyimage[se]=FLIRT_Schluss.0.7
+emptyimage[sw]=FLIRT_Schluss.0.8
+---------------------------------------

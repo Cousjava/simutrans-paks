@@ -1,0 +1,43 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	Letzte Bearbeitung:
+#   $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+name=AVL_Viehhof1940_NIC
+copyright=RedRabbit
+pax_level=11
+intro_year=1940
+intro_month=1
+retire_year=2999
+retire_month=12
+Location=land
+DistributionWeight=64
+Productivity=100
+OutputGood[0]=Vieh
+OutputCapacity[0]=400
+OutputGood[1]=Milch
+OutputCapacity[1]=400
+max_fields=6
+min_fields=1
+probability_to_spawn=4000
+fields[0]=Weide_Kuh_braun
+storage_capacity[0]=60
+production_per_field[0]=15
+spawn_weight[0]=50
+has_snow[0]=1
+climates=tundra, rocky
+electricity_amount=1
+MapColor=118
+Dims=1,2,4
+BackImage[0][0][0][0][0][0]=AVL_Viehhof1940.0.0
+BackImage[0][1][0][0][0][0]=AVL_Viehhof1940.1.0
+BackImage[1][0][0][0][0][0]=AVL_Viehhof1940.0.2
+BackImage[1][0][1][0][0][0]=AVL_Viehhof1940.0.3
+BackImage[2][0][0][0][0][0]=AVL_Viehhof1940.0.4
+BackImage[2][1][0][0][0][0]=AVL_Viehhof1940.1.4
+BackImage[3][0][0][0][0][0]=AVL_Viehhof1940.0.6
+BackImage[3][0][1][0][0][0]=AVL_Viehhof1940.0.7
+------------------------------------------------------

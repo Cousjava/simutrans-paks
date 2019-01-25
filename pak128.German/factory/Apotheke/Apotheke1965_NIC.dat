@@ -1,0 +1,32 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 07-2010
+#	Letzte Bearbeitung:
+#	$Date: 2017-03-03 15:00:23 +0100 (Fr, 03. Mrz 2017) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+name=Apotheke1965_NIC
+Copyright=Lemuria
+pax_level=20
+intro_year=1965
+intro_month=1
+location=city
+DistributionWeight=1
+Productivity=20
+Range=5
+InputGood[0]=Medikamente
+InputCapacity[0]=80
+InputFactor[0]=100
+InputSupplier[0]=0
+electricity_amount=1
+Passenger_boost=1000
+Mail_boost=500
+MapColor=75
+climates=desert, tropic, mediterran, temperate, tundra
+dims=1,1,4
+BackImage[0][0][0][0][0][0]=Apotheke_1965.0.0
+BackImage[1][0][0][0][0][0]=Apotheke_1965.0.1
+BackImage[2][0][0][0][0][0]=Apotheke_1965.0.2
+BackImage[3][0][0][0][0][0]=Apotheke_1965.0.3
+-----------------------------------------------------

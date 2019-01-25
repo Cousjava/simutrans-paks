@@ -1,0 +1,29 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 27-05-2017
+#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
+---------------------------------
+obj=vehicle
+name=DB BR143
+copyright=pumuckl999
+intro_year=1982
+intro_month=1
+cost=42820000
+runningcost=262
+waytype=electrified_track
+speed=120
+weight=82
+power=3500
+gear=325
+length=10
+sound=-1
+EmptyImage[S]=BR143.0.0
+EmptyImage[E]=BR143.0.1
+EmptyImage[SE]=BR143.0.2
+EmptyImage[SW]=BR143.0.3
+EmptyImage[N]=BR143.0.4
+EmptyImage[W]=BR143.0.5
+EmptyImage[NW]=BR143.0.6
+EmptyImage[NE]=BR143.0.7
+-----------------------------

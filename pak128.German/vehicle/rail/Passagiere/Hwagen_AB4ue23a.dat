@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 10-08-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Hechtwagen_AB4ue23a
+copyright=pumuckl999
+intro_year=1923
+intro_month=1
+retire_year=1964
+retire_month=12
+cost=8517000
+runningcost=161
+waytype=track
+freight=Passagiere
+payload=45
+speed=120
+weight=41.7
+length=12
+EmptyImage[S]=Hwagen_AB4ue23a.0.0
+EmptyImage[E]=Hwagen_AB4ue23a.0.1
+EmptyImage[SE]=Hwagen_AB4ue23a.0.2
+EmptyImage[SW]=Hwagen_AB4ue23a.0.3
+EmptyImage[N]=Hwagen_AB4ue23a.0.4
+EmptyImage[W]=Hwagen_AB4ue23a.0.5
+EmptyImage[NW]=Hwagen_AB4ue23a.0.6
+EmptyImage[NE]=Hwagen_AB4ue23a.0.7
+--------------------------------

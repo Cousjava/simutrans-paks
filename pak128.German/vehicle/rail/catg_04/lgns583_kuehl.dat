@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 02-05-2017
+---------------------------------
+obj=vehicle
+name=lgns583_Kuehlwaren
+copyright=pumuckl999
+intro_year=2004
+intro_month=1
+cost=14520000
+runningcost=242
+waytype=track
+freight=Fleisch
+payload=48
+speed=100
+weight=12
+length=8
+EmptyImage[S]=lgns583.0.0
+EmptyImage[E]=lgns583.0.1
+EmptyImage[SE]=lgns583.0.2
+EmptyImage[SW]=lgns583.0.3
+EmptyImage[N]=lgns583.0.4
+EmptyImage[W]=lgns583.0.5
+EmptyImage[NW]=lgns583.0.6
+EmptyImage[NE]=lgns583.0.7
+FreightImage[S]=lgns583.5.0
+FreightImage[E]=lgns583.5.1
+FreightImage[SE]=lgns583.5.2
+FreightImage[SW]=lgns583.5.3
+FreightImage[N]=lgns583.5.4
+FreightImage[W]=lgns583.5.5
+FreightImage[NW]=lgns583.5.6
+FreightImage[NE]=lgns583.5.7
+-----------------------------------

@@ -1,0 +1,44 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Faehre_KoenigswinterIII_Vieh
+copyright=Pumuckl999
+intro_year=1960
+intro_month=1
+retire_year=1997
+retire_month=12
+waytype=water
+cost=6358000
+runningcost=558
+freight=Vieh
+payload=110
+engine_type=diesel
+power=440
+gear=1200
+speed=17
+weight=300
+length=14
+sound=-1
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[S]=Faehre_KoenigswinterIII_Vieh.0.7,8,0
+EmptyImage[N]=Faehre_KoenigswinterIII_Vieh.0.3,-32,0
+EmptyImage[E]=Faehre_KoenigswinterIII_Vieh.0.5,-40,-24
+EmptyImage[W]=Faehre_KoenigswinterIII_Vieh.0.1,-40,0
+EmptyImage[SW]=Faehre_KoenigswinterIII_Vieh.0.8,-8,-4
+EmptyImage[SE]=Faehre_KoenigswinterIII_Vieh.0.6,8,-32
+EmptyImage[NW]=Faehre_KoenigswinterIII_Vieh.0.2,-36,8
+EmptyImage[NE]=Faehre_KoenigswinterIII_Vieh.0.4,-48,-12
+freightimage[S]=Faehre_KoenigswinterIII_Vieh.1.7,8,0
+freightimage[N]=Faehre_KoenigswinterIII_Vieh.1.3,-32,0
+freightimage[E]=Faehre_KoenigswinterIII_Vieh.1.5,-40,-24
+freightimage[W]=Faehre_KoenigswinterIII_Vieh.1.1,-40,0
+freightimage[SW]=Faehre_KoenigswinterIII_Vieh.1.8,-8,-4
+freightimage[SE]=Faehre_KoenigswinterIII_Vieh.1.6,8,-32
+freightimage[NW]=Faehre_KoenigswinterIII_Vieh.1.2,-36,8
+freightimage[NE]=Faehre_KoenigswinterIII_Vieh.1.4,-48,-12
+------------------------------------------------------------

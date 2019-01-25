@@ -1,0 +1,41 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 05-02-2018
+---------------------------------
+obj=vehicle
+name=Vomag8LR_Anhaenger_Stahl
+copyright=pumuckl999
+intro_year=1935
+intro_month=1
+retire_year=1963
+retire_month=12
+cost=2065000
+runningcost=72
+waytype=road
+speed=50
+weight=4
+freight=Stahl
+payload=9
+length=7
+constraint[prev][0]=Vomag8LR_Stahl
+constraint[prev][1]=none
+constraint[next][0]=Vomag8LR_Anhaenger_Stahl
+constraint[next][1]=none
+EmptyImage[S]=Vomag8LRAnhaenger_Stahl.0.0
+EmptyImage[N]=Vomag8LRAnhaenger_Stahl.0.1
+EmptyImage[E]=Vomag8LRAnhaenger_Stahl.0.2
+EmptyImage[W]=Vomag8LRAnhaenger_Stahl.0.3
+EmptyImage[SE]=Vomag8LRAnhaenger_Stahl.0.4,4,0
+EmptyImage[NW]=Vomag8LRAnhaenger_Stahl.0.5,-2,0
+EmptyImage[NE]=Vomag8LRAnhaenger_Stahl.0.6
+EmptyImage[SW]=Vomag8LRAnhaenger_Stahl.0.7
+FreightImage[S]=Vomag8LRAnhaenger_Stahl.1.0
+FreightImage[N]=Vomag8LRAnhaenger_Stahl.1.1
+FreightImage[E]=Vomag8LRAnhaenger_Stahl.1.2
+FreightImage[W]=Vomag8LRAnhaenger_Stahl.1.3
+FreightImage[SE]=Vomag8LRAnhaenger_Stahl.1.4,4,0
+FreightImage[NW]=Vomag8LRAnhaenger_Stahl.1.5,-2,0
+FreightImage[NE]=Vomag8LRAnhaenger_Stahl.1.6
+FreightImage[SW]=Vomag8LRAnhaenger_Stahl.1.7
+-------------------------------------------

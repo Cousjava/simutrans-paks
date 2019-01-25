@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 30-7-2017
+#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
+---------------------------------
+obj=vehicle
+name=Stadler_Regio-Shuttle_RS1
+copyright=pumuckl999
+intro_year=1996
+intro_month=1
+cost=36460000
+runningcost=447
+freight=Passagiere
+power=530
+gear=225
+payload=165
+speed=120
+length=14
+weight=40
+waytype=track
+engine_type=diesel
+constraint[prev][0]=Stadler_Regio-Shuttle_RS1
+constraint[prev][1]=none
+constraint[next][0]=Stadler_Regio-Shuttle_RS1
+constraint[next][1]=none
+EmptyImage[S]=Stadler_RS1.0.0
+EmptyImage[E]=Stadler_RS1.0.1
+EmptyImage[SE]=Stadler_RS1.0.2
+EmptyImage[SW]=Stadler_RS1.0.3,8,0
+EmptyImage[N]=Stadler_RS1.0.4
+EmptyImage[W]=Stadler_RS1.0.5
+EmptyImage[NW]=Stadler_RS1.0.6
+EmptyImage[NE]=Stadler_RS1.0.7,-8,0
+--------------------------------

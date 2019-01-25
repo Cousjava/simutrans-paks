@@ -1,0 +1,28 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 28-04-2017
+#	Letzte Bearbeitung: 25-10-2018 pumuckl999
+---------------------------------
+obj=vehicle
+name=Schiebeplanenwagen Shimmns-ttu 722
+copyright=pumuckl999
+intro_year=2002
+intro_month=1
+cost=30830000
+runningcost=514
+waytype=track
+freight=Stahl
+payload=68
+speed=100
+weight=23
+length=8
+EmptyImage[S]=Shimmns-ttu_722.0.0
+EmptyImage[E]=Shimmns-ttu_722.0.1
+EmptyImage[SE]=Shimmns-ttu_722.0.2
+EmptyImage[SW]=Shimmns-ttu_722.0.3
+EmptyImage[N]=Shimmns-ttu_722.0.4
+EmptyImage[W]=Shimmns-ttu_722.0.5
+EmptyImage[NW]=Shimmns-ttu_722.0.6
+EmptyImage[NE]=Shimmns-ttu_722.0.7
+--------------------------------------

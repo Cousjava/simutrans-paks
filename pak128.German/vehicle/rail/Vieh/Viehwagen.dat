@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Viehwagen
+copyright=TonyBzt
+intro_year=1910
+intro_month=1
+retire_year=1977
+retire_month=4
+cost=3480000
+runningcost=86
+length=8
+waytype=track
+freight=Vieh
+payload=14
+speed=80
+weight=12
+EmptyImage[S]=Viehwagen.0.0
+EmptyImage[W]=Viehwagen.0.1
+EmptyImage[SE]=Viehwagen.0.2
+EmptyImage[SW]=Viehwagen.0.3
+EmptyImage[N]=Viehwagen.0.4
+EmptyImage[E]=Viehwagen.0.5
+EmptyImage[NW]=Viehwagen.0.6
+EmptyImage[NE]=Viehwagen.0.7
+----------------------------------

@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=G20
+copyright=TonyBzt
+intro_year=1924
+intro_month=5
+retire_year=1953
+retire_month=5
+cost=3000000
+runningcost=73
+waytype=track
+freight=Papier
+payload=12
+weight=12
+speed=80
+length=9
+sound=-1
+EmptyImage[S]=G20.0.0
+EmptyImage[E]=G20.0.1
+EmptyImage[SE]=G20.0.2
+EmptyImage[SW]=G20.0.3
+EmptyImage[N]=G20.0.4
+EmptyImage[W]=G20.0.5
+EmptyImage[NW]=G20.0.6
+EmptyImage[NE]=G20.0.7
+----------------------------

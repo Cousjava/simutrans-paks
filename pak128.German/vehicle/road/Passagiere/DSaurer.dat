@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 2008
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Saurerbus
+copyright=Didi2004/TonyBzt
+intro_year=1930
+intro_month=1
+retire_year=1951
+retire_month=12
+cost=6030000
+runningcost=140
+engine_type=diesel 
+waytype=road
+freight=Passagiere
+payload=50
+speed=70
+weight=8
+power=100
+smoke=Diesel
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=DSaurer.0.0
+EmptyImage[N]=DSaurer.0.1
+EmptyImage[E]=DSaurer.0.2
+EmptyImage[W]=DSaurer.0.3
+EmptyImage[SE]=DSaurer.0.4
+EmptyImage[NW]=DSaurer.0.5
+EmptyImage[NE]=DSaurer.0.6
+EmptyImage[SW]=DSaurer.0.7
+----------------------------------

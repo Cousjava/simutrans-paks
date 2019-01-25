@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MAN_SD200
+copyright=RedRabbit
+intro_year=1973
+intro_month=1
+retire_year=1985
+retire_month=12
+cost=7745000
+runningcost=236
+waytype=road
+freight=Passagiere
+payload=92
+engine_type=diesel 
+speed=50
+weight=11
+power=147
+sound=1
+length=11
+smoke=Diesel
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=RR_BUS_MAN_SD200.0.1
+EmptyImage[N]=RR_BUS_MAN_SD200.0.2
+EmptyImage[E]=RR_BUS_MAN_SD200.0.3
+EmptyImage[W]=RR_BUS_MAN_SD200.0.4
+EmptyImage[SE]=RR_BUS_MAN_SD200.0.5
+EmptyImage[NW]=RR_BUS_MAN_SD200.0.6
+EmptyImage[NE]=RR_BUS_MAN_SD200.0.7
+EmptyImage[SW]=RR_BUS_MAN_SD200.0.8
+-------------------------------------------

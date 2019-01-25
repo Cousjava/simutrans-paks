@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 05-09-2018
+---------------------------------
+obj=vehicle
+name=Bayrische_PtL2-2
+copyright=pumuckl999
+intro_year=1908
+intro_month=1
+retire_year=1963
+retire_month=6
+cost=1002000
+RunningCost=18
+engine_type=steam
+smoke=Steam
+waytype=track
+speed=50
+gear=200
+weight=22.7
+power=155
+sound=3
+length=5
+EmptyImage[S]=bayrischePtL2-2.0.0
+EmptyImage[E]=bayrischePtL2-2.0.1
+EmptyImage[SE]=bayrischePtL2-2.0.2
+EmptyImage[SW]=bayrischePtL2-2.0.3
+EmptyImage[N]=bayrischePtL2-2.0.4
+EmptyImage[W]=bayrischePtL2-2.0.5
+EmptyImage[NW]=bayrischePtL2-2.0.6
+EmptyImage[NE]=bayrischePtL2-2.0.7
+----------------------------------

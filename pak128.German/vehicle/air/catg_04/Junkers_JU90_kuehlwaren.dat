@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Junkers_Ju90_Kuehlwaren
+copyright=Pumuckl999
+intro_year=1937
+intro_month=1
+retire_year=1945
+retire_month=12
+waytype=air
+cost=86400000
+runningcost=271
+freight=Fleisch
+payload=45
+engine_type=diesel
+power=3320
+gear=32
+speed=320
+weight=23
+length=4
+sound=planelow.wav
+smoke=Diesel
+EmptyImage[W]=Junkers_JU90_Fracht.5.1
+EmptyImage[NW]=Junkers_JU90_Fracht.5.2
+EmptyImage[N]=Junkers_JU90_Fracht.5.3
+EmptyImage[NE]=Junkers_JU90_Fracht.5.4
+EmptyImage[E]=Junkers_JU90_Fracht.5.5
+EmptyImage[SE]=Junkers_JU90_Fracht.5.6
+EmptyImage[S]=Junkers_JU90_Fracht.5.7
+EmptyImage[SW]=Junkers_JU90_Fracht.5.8
+-----------------------------------------

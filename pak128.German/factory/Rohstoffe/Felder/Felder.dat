@@ -1,0 +1,112 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+#	Letzte Bearbeitung:
+#    06-2012
+#    14-09-2015 The Transporter
+# --------------------------------
+
+Obj=field
+name=fischteich_1
+copyright=RedRabbit
+Image[0]=Fischzucht.0.1
+Image[1]=Fischzucht.0.2
+Image[2]=Fischzucht.0.2
+Image[3]=Fischzucht.0.2
+Image[4]=Fischzucht.0.1
+---------------------------------------
+
+# Herbstfeld noch nicht abgeerntet
+Obj=field
+name=flachsfeld_1
+copyright=RedRabbit
+Image[0]=Flachsfelder.0.1
+Image[1]=Flachsfelder.0.2
+Image[2]=Flachsfelder.0.3
+Image[3]=Flachsfelder.0.4
+Image[4]=Flachsfelder.0.6
+---------------------------------------
+
+# Herbstfeld abgeerntet
+Obj=field
+name=flachsfeld_2
+copyright=RedRabbit
+Image[0]=Flachsfelder.0.1
+Image[1]=Flachsfelder.0.2
+Image[2]=Flachsfelder.0.3
+Image[3]=Flachsfelder.0.5
+Image[4]=Flachsfelder.0.6
+---------------------------------------
+
+# Feldscheune
+Obj=field
+name=getreidefeld_1
+copyright=RedRabbit
+Image[0]=Getreidefelder.2.1
+Image[1]=Getreidefelder.2.2
+Image[2]=Getreidefelder.2.3
+Image[3]=Getreidefelder.2.4
+Image[4]=Getreidefelder.2.5
+---------------------------------------
+
+# Herbstfeld mit Hocken
+Obj=field
+name=getreidefeld_2
+copyright=RedRabbit
+Image[0]=Getreidefelder.0.1
+Image[1]=Getreidefelder.0.2
+Image[2]=Getreidefelder.0.3
+Image[3]=Getreidefelder.0.4
+Image[4]=Getreidefelder.0.5
+---------------------------------------
+
+# Herbstfeld mit Rollen
+Obj=field
+name=getreidefeld_3
+copyright=RedRabbit
+Image[0]=Getreidefelder.0.1
+Image[1]=Getreidefelder.0.2
+Image[2]=Getreidefelder.0.3
+Image[3]=Getreidefelder.1.4
+Image[4]=Getreidefelder.0.5
+---------------------------------------
+# Hopfenfeld
+Obj=field
+name=hopfen_1
+copyright=Lemuria
+Image[0]=Hopfenfeld.0.0
+Image[1]=Hopfenfeld.0.0
+Image[2]=Hopfenfeld.0.0
+Image[3]=Hopfenfeld.0.0
+Image[4]=Hopfenfeld.0.0
+---------------------------------------
+
+Obj=field
+name=schafweide_1
+copyright=RedRabbit
+Image[0]=Schafweide.0.2
+Image[1]=Schafweide.0.1
+Image[2]=Schafweide.0.1
+Image[3]=Schafweide.0.1
+Image[4]=Schafweide.0.2
+---------------------------------------
+
+Obj=field
+name=Weinfelder
+copyright=RedRabbit
+Image[0]=Weinfelder.0.0
+Image[1]=Weinfelder.0.1
+Image[2]=Weinfelder.0.2
+Image[3]=Weinfelder.0.3
+Image[4]=Weinfelder.0.4
+---------------------------------------
+Obj=field
+name=Weinfelder2
+copyright=Pumuckl999
+Image[0]=Weinfelder2.0.0
+Image[1]=Weinfelder2.1.0
+Image[2]=Weinfelder2.2.0
+Image[3]=Weinfelder2.3.0
+Image[4]=Weinfelder2.4.0
+---------------------------------------

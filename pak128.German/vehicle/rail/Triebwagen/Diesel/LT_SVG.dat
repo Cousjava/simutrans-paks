@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 17-10-2017
+---------------------------------
+obj=vehicle
+name=Leichttriebwagen_SVG
+copyright=pumuckl999
+intro_year=1952
+intro_month=1
+retire_year=1970
+retire_month=12
+cost=5724000
+runningcost=223
+waytype=track
+freight=Passagiere
+engine_type=diesel
+power=81
+gear=100
+payload=88
+speed=40
+length=9
+weight=12
+constraint[prev][0]=none
+EmptyImage[S]=LT_SVG.0.0
+EmptyImage[E]=LT_SVG.0.1
+EmptyImage[SE]=LT_SVG.0.2
+EmptyImage[SW]=LT_SVG.0.3
+EmptyImage[N]=LT_SVG.0.4
+EmptyImage[W]=LT_SVG.0.5
+EmptyImage[NW]=LT_SVG.0.6
+EmptyImage[NE]=LT_SVG.0.7
+-----------------------------------

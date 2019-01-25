@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=DaimlerBenz_LP322_Stueckgut
+copyright=RedRabbit
+intro_year=1959
+intro_month=1
+retire_year=1965
+retire_month=12
+cost=2742000
+runningcost=54
+waytype=road
+freight=Buecher
+engine_type=diesel
+power=80
+speed=77
+weight=4.7
+payload=9
+length=8
+constraint[prev][0] = none
+EmptyImage[W]=mb_lp322.0.1
+EmptyImage[NW]=mb_lp322.0.2
+EmptyImage[N]=mb_lp322.0.3
+EmptyImage[NE]=mb_lp322.0.4
+EmptyImage[E]=mb_lp322.0.5
+EmptyImage[SE]=mb_lp322.0.6
+EmptyImage[S]=mb_lp322.0.7
+EmptyImage[SW]=mb_lp322.0.8
+-----------------------------------

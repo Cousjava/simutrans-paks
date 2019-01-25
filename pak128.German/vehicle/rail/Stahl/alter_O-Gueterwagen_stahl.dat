@@ -1,0 +1,38 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 14-06-2017
+#	Letzte Bearbeitung: 25-10-2018 pumuckl999
+---------------------------------
+obj=vehicle
+name=offener Gueterwagen 1835 Stahl
+copyright=pumuckl999
+intro_year=1835
+intro_month=1
+retire_year=1910
+retire_month=12
+cost=1300000
+runningcost=60
+waytype=track
+freight=Stahl
+payload=7
+speed=40
+weight=4
+length=6
+EmptyImage[S]=alter_O-Gueterwagen_stahl.0.0
+EmptyImage[E]=alter_O-Gueterwagen_stahl.0.1
+EmptyImage[SE]=alter_O-Gueterwagen_stahl.0.2
+EmptyImage[SW]=alter_O-Gueterwagen_stahl.0.3
+EmptyImage[N]=alter_O-Gueterwagen_stahl.0.4
+EmptyImage[W]=alter_O-Gueterwagen_stahl.0.5
+EmptyImage[NW]=alter_O-Gueterwagen_stahl.0.6
+EmptyImage[NE]=alter_O-Gueterwagen_stahl.0.7
+FreightImage[S]=alter_O-Gueterwagen_stahl.1.0
+FreightImage[E]=alter_O-Gueterwagen_stahl.1.1
+FreightImage[SE]=alter_O-Gueterwagen_stahl.1.2
+FreightImage[SW]=alter_O-Gueterwagen_stahl.1.3
+FreightImage[N]=alter_O-Gueterwagen_stahl.1.4
+FreightImage[W]=alter_O-Gueterwagen_stahl.1.5
+FreightImage[NW]=alter_O-Gueterwagen_stahl.1.6
+FreightImage[NE]=alter_O-Gueterwagen_stahl.1.7
+--------------------------------------

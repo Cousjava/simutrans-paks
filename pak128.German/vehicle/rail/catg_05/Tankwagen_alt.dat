@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Tankwagen_alt
+copyright=TonyBzt/ The Transporter
+intro_year=1910
+intro_month=1
+retire_year=1928
+retire_month=8
+cost=2782500
+runningcost=79
+waytype=track
+freight=Milch
+payload=18
+speed=65
+weight=15
+length=9
+EmptyImage[S]=Tankwagen_alt.0.0
+EmptyImage[E]=Tankwagen_alt.0.1
+EmptyImage[SE]=Tankwagen_alt.0.2
+EmptyImage[SW]=Tankwagen_alt.0.3
+EmptyImage[N]=Tankwagen_alt.0.4
+EmptyImage[W]=Tankwagen_alt.0.5
+EmptyImage[NW]=Tankwagen_alt.0.6
+EmptyImage[NE]=Tankwagen_alt.0.7
+---------------------------------

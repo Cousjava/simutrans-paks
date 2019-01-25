@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Antonow_An24
+copyright=Pumuckl999
+intro_year=1963
+intro_month=9
+retire_year=1978
+retire_month=12
+waytype=air
+cost=67500000
+runningcost=177
+freight=Passagiere
+payload=50
+engine_type=diesel
+power=3754
+gear=34
+speed=450
+weight=13.3
+length=3
+sound=6
+smoke=Diesel
+EmptyImage[W]=Antonow_AN24.0.0
+EmptyImage[NW]=Antonow_AN24.0.1
+EmptyImage[N]=Antonow_AN24.0.2
+EmptyImage[NE]=Antonow_AN24.0.3
+EmptyImage[E]=Antonow_AN24.0.4
+EmptyImage[SE]=Antonow_AN24.0.5
+EmptyImage[S]=Antonow_AN24.0.6
+EmptyImage[SW]=Antonow_AN24.0.7
+-----------------------------------

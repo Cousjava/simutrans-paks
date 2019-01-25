@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=DaimlerBenz_LP1620_Vieh
+copyright=RedRabbit
+intro_year=1966
+intro_month=1
+retire_year=1975
+retire_month=12
+cost=3276000
+runningcost=54
+waytype=road
+freight=Vieh
+engine_type=diesel
+power=160
+speed=80
+weight=7.6
+payload=8
+length=8
+sound=1
+constraint[prev][0]=none
+constraint[next][0]=anhaenger_1965_16t_Vieh
+constraint[next][1]=none
+EmptyImage[W]=mb_lp1620.3.1
+EmptyImage[NW]=mb_lp1620.3.2
+EmptyImage[N]=mb_lp1620.3.3
+EmptyImage[NE]=mb_lp1620.3.4
+EmptyImage[E]=mb_lp1620.3.5
+EmptyImage[SE]=mb_lp1620.3.6
+EmptyImage[S]=mb_lp1620.3.7
+EmptyImage[SW]=mb_lp1620.3.8
+-----------------------------------------

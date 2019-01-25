@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Silberlinge_silbern
+copyright=Lemuria
+intro_year=1959
+intro_month=4
+retire_year=1990
+retire_month=5
+cost=18290000
+runningcost=269
+waytype=track
+freight=Passagiere
+payload=100
+speed=120
+weight=29
+length=13
+EmptyImage[S]=Silberlinge_silbern.0.1
+EmptyImage[E]=Silberlinge_silbern.0.2
+EmptyImage[SE]=Silberlinge_silbern.0.3
+EmptyImage[SW]=Silberlinge_silbern.0.4
+EmptyImage[N]=Silberlinge_silbern.0.5
+EmptyImage[W]=Silberlinge_silbern.0.6
+EmptyImage[NW]=Silberlinge_silbern.0.7
+EmptyImage[NE]=Silberlinge_silbern.0.8
+-------------------------------------------

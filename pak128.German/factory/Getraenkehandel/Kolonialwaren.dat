@@ -1,0 +1,63 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 13-08-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+# --------------------------------
+Obj=factory
+name=Gastwirtschaft_mit_Laden
+copyright=pumuckl999
+pax_level=20
+intro_year=1892
+intro_month=1
+retire_year=1980
+retire_month=12
+Location=City
+DistributionWeight=127
+Productivity=20
+Range=4
+InputGood[0]=Bier
+InputCapacity[0]=320
+InputFactor[0]=100
+InputGood[1]=Wein
+InputCapacity[1]=160
+InputFactor[1]=50
+InputGood[2]=Papier
+InputCapacity[2]=80
+InputFactor[2]=25
+InputGood[3]=Marzipan
+InputCapacity[3]=80
+InputFactor[3]=10
+InputGood[4]=Fertiggerichte
+InputCapacity[4]=80
+InputFactor[4]=20
+InputGood[5]=Dosenessen
+InputCapacity[5]=80
+InputFactor[5]=20
+InputGood[6]=Suedfruechte
+InputCapacity[6]=160
+InputFactor[6]=50
+electricity_amount=1
+passenger_boost=1000
+mail_boost=500
+MapColor=132
+climates=desert, tropic, mediterran, temperate, tundra, rocky
+needs_ground=1
+dims=1,2,4
+BackImage[0][0][0][0][0][0]=Kolonialwaren.0.0
+BackImage[0][1][0][0][0][0]=Kolonialwaren.0.1
+BackImage[0][0][0][0][0][1]=Kolonialwaren.0.2
+BackImage[0][1][0][0][0][1]=Kolonialwaren.0.3
+BackImage[3][0][0][0][0][0]=Kolonialwaren.1.0
+BackImage[3][0][1][0][0][0]=Kolonialwaren.1.1
+BackImage[3][0][0][0][0][1]=Kolonialwaren.1.2
+BackImage[3][0][1][0][0][1]=Kolonialwaren.1.3
+BackImage[2][0][0][0][0][0]=Kolonialwaren.2.0
+BackImage[2][1][0][0][0][0]=Kolonialwaren.2.1
+BackImage[2][0][0][0][0][1]=Kolonialwaren.2.2
+BackImage[2][1][0][0][0][1]=Kolonialwaren.2.3
+BackImage[1][0][0][0][0][0]=Kolonialwaren.3.0
+BackImage[1][0][1][0][0][0]=Kolonialwaren.3.1
+BackImage[1][0][0][0][0][1]=Kolonialwaren.3.2
+BackImage[1][0][1][0][0][1]=Kolonialwaren.3.3
+---------------------------------------------------

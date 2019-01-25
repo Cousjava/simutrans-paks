@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn Pr. G8 Br 55_16-22
+#    Neu: 2008
+---------------------------------
+obj=vehicle
+name=G8
+copyright=TonyBzt
+intro_year=1902
+intro_month=1
+retire_year=1969
+retire_month=12
+cost=5039500
+runningcost=79
+waytype=track
+speed=55
+weight=59
+sound=3
+smoke=Steam_2
+engine_type=steam
+power=809
+gear=400
+length=8
+constraint[next][0]=PrG8Tender
+constraint[next][1]=none
+EmptyImage[S]=PrG8.0.0
+EmptyImage[E]=PrG8.0.1
+EmptyImage[SE]=PrG8.0.2
+EmptyImage[SW]=PrG8.0.3
+EmptyImage[N]=PrG8.0.4
+EmptyImage[W]=PrG8.0.5
+EmptyImage[NW]=PrG8.0.6
+EmptyImage[NE]=PrG8.0.7
+-----------------------------

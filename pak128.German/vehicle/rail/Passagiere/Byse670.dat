@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=BZT_Eilzugwagen
+copyright=TonyBzt
+intro_year=1925
+intro_month=1
+retire_year=1975
+retire_month=12
+cost=6780000
+runningcost=132
+waytype=track
+freight=Passagiere
+length=10
+payload=44
+weight=18
+speed=100
+EmptyImage[S]=Byse670.0.0
+EmptyImage[E]=Byse670.0.1
+EmptyImage[SE]=Byse670.0.2
+EmptyImage[SW]=Byse670.0.3
+EmptyImage[N]=Byse670.0.4
+EmptyImage[W]=Byse670.0.5
+EmptyImage[NW]=Byse670.0.6
+EmptyImage[NE]=Byse670.0.7
+--------------------------------

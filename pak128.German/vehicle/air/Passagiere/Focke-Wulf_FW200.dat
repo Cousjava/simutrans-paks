@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Focke-Wulf_FW200
+copyright=Pumuckl999
+intro_year=1937
+intro_month=3
+retire_year=1945
+retire_month=5
+cost=26520000
+runningcost=121
+waytype=air
+freight=Passagiere
+payload=26
+engine_type=diesel
+power=4000
+gear=40
+speed=340
+weight=17
+length=3
+sound=bigoldplanes.wav
+smoke=Diesel
+EmptyImage[W]=Focke-Wulf_FW200.0.0
+EmptyImage[NW]=Focke-Wulf_FW200.0.1
+EmptyImage[N]=Focke-Wulf_FW200.0.2
+EmptyImage[NE]=Focke-Wulf_FW200.0.3
+EmptyImage[E]=Focke-Wulf_FW200.0.4
+EmptyImage[SE]=Focke-Wulf_FW200.0.5
+EmptyImage[S]=Focke-Wulf_FW200.0.6
+EmptyImage[SW]=Focke-Wulf_FW200.0.7
+--------------------------------------

@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+#    22-02-2018 pumuckl999
+---------------------------------
+obj=vehicle
+name=MercedesBenz_Atego_Post
+copyright=RedRabbit
+intro_year=1998
+intro_month=1
+cost=13068000
+runningcost=255
+waytype=road
+speed=80
+power=125
+weight=6.8
+freight=Post
+payload=100
+length=7
+smoke=Diesel
+constraint[prev][0]=none
+constraint[next][0]=Anhaenger_12t_Post
+constraint[next][1]=Anhaenger_18t_Post
+constraint[next][2]=none
+EmptyImage[S]=RR_MB_Atego_Post.0.1
+EmptyImage[N]=RR_MB_Atego_Post.0.2
+EmptyImage[E]=RR_MB_Atego_Post.0.3
+EmptyImage[W]=RR_MB_Atego_Post.0.4
+EmptyImage[SE]=RR_MB_Atego_Post.0.5
+EmptyImage[NW]=RR_MB_Atego_Post.0.6
+EmptyImage[NE]=RR_MB_Atego_Post.0.7
+EmptyImage[SW]=RR_MB_Atego_Post.0.8
+-------------------------------------------

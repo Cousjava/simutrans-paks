@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 30-08-2018
+---------------------------------
+obj=vehicle
+name=Saechsische_IIIb_T
+copyright=pumuckl999
+intro_year=1875
+intro_month=1
+retire_year=1929
+retire_month=6
+cost=1310000
+RunningCost=32
+engine_type=steam
+smoke=Steam
+waytype=track
+speed=50
+gear=250
+weight=39
+power=184
+sound=3
+length=7
+EmptyImage[S]=SaechsischeIIIbT.0.0
+EmptyImage[E]=SaechsischeIIIbT.0.1
+EmptyImage[SE]=SaechsischeIIIbT.0.2
+EmptyImage[SW]=SaechsischeIIIbT.0.3
+EmptyImage[N]=SaechsischeIIIbT.0.4
+EmptyImage[W]=SaechsischeIIIbT.0.5
+EmptyImage[NW]=SaechsischeIIIbT.0.6
+EmptyImage[NE]=SaechsischeIIIbT.0.7
+----------------------------------

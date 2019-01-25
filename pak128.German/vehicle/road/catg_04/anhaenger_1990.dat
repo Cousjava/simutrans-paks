@@ -1,0 +1,28 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu:
+---------------------------------
+obj=vehicle
+name=Anhaenger_1990_16t_Kuehlwaren
+copyright=RedRabbit
+intro_year=1986
+intro_month=1
+cost=3483000
+runningcost=74
+waytype=road
+freight=Fleisch
+payload=14
+speed=80
+weight=12.3
+length=7
+constraint[next][0]=none
+EmptyImage[W]=anhaenger_1990.2.1
+EmptyImage[NW]=anhaenger_1990.2.2
+EmptyImage[N]=anhaenger_1990.2.3
+EmptyImage[NE]=anhaenger_1990.2.4
+EmptyImage[E]=anhaenger_1990.2.5
+EmptyImage[SE]=anhaenger_1990.2.6
+EmptyImage[S]=anhaenger_1990.2.7
+EmptyImage[SW]=anhaenger_1990.2.8
+-----------------------------------------

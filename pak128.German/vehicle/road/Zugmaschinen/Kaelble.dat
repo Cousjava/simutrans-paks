@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 2008
+---------------------------------
+obj=vehicle
+name=BZT_Kaelble-1931
+copyright=TonyBzt
+intro_year=1937
+intro_month=1
+retire_year=1965
+retire_month=12
+cost=442000
+runningcost=5
+waytype=road
+speed=40
+weight=15
+power=73
+gear=180
+engine_type=diesel
+smoke=Diesel
+sound=1
+Constraint[Prev][0]=none
+EmptyImage[S]=Kaelble.0.0
+EmptyImage[N]=Kaelble.0.1
+EmptyImage[E]=Kaelble.0.2
+EmptyImage[W]=Kaelble.0.3
+EmptyImage[SE]=Kaelble.0.4
+EmptyImage[NW]=Kaelble.0.5
+EmptyImage[NE]=Kaelble.0.6
+EmptyImage[SW]=Kaelble.0.7
+--------------------------------

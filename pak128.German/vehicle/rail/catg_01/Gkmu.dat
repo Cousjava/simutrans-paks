@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$ 
+---------------------------------
+obj=vehicle
+name=Gkmu
+copyright=TonyBzt
+intro_year=1950
+intro_month=1
+retire_year=1979
+retire_month=9
+cost=3630000
+runningcost=74
+waytype=track
+freight=Papier
+payload=13
+weight=12
+speed=90
+length=9
+sound=-1
+EmptyImage[S]=Gkmu.0.0,0,4
+EmptyImage[E]=Gkmu.0.1,0,4
+EmptyImage[SE]=Gkmu.0.2,0,4
+EmptyImage[SW]=Gkmu.0.3,0,4
+EmptyImage[N]=Gkmu.0.4,0,4
+EmptyImage[W]=Gkmu.0.5,0,4
+EmptyImage[NW]=Gkmu.0.6,0,4
+EmptyImage[NE]=Gkmu.0.7,0,4
+-------------------------------

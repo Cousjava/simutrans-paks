@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MHz-McDonnell-Douglas_DC10
+copyright=MHz
+intro_year=1971
+intro_month=3
+retire_year=1990
+retire_month=8
+cost=702180000
+runningcost=1154
+waytype=air
+engine_type=diesel
+freight=Passagiere
+payload=282
+speed=830
+power=19200
+gear=150
+weight=121
+smoke=-1
+sound=smalloldplanes.wav
+emptyimage[w]=air_pass-post_01.1.1
+emptyimage[nw]=air_pass-post_01.1.2
+emptyimage[n]=air_pass-post_01.1.3
+emptyimage[ne]=air_pass-post_01.1.4
+emptyimage[e]=air_pass-post_01.1.5
+emptyimage[se]=air_pass-post_01.1.6
+emptyimage[s]=air_pass-post_01.1.7
+emptyimage[sw]=air_pass-post_01.1.8
+---------------------------------------

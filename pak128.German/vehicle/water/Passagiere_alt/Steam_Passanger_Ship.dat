@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=RVg-Steam_Passanger_Ship_0
+copyright=Raven
+intro_year=1901
+intro_month=5
+retire_year=1935
+retire_month=5
+cost=13416000
+runningcost=809
+waytype=water
+engine_type=steam
+freight=Passagiere
+payload=310
+speed=26
+power=510
+gear=200
+weight=345
+smoke=Steam_ship
+sound=train-horn-steam-0.wav
+constraint[next][0]=none
+constraint[prev][0]=none
+emptyimage[w]=ship_pass-post_01.2.1,20,-10
+emptyimage[nw]=ship_pass-post_01.2.2
+emptyimage[n]=ship_pass-post_01.2.3,4,4
+emptyimage[ne]=ship_pass-post_01.2.4
+emptyimage[e]=ship_pass-post_01.2.5,-62,-19
+emptyimage[se]=ship_pass-post_01.2.6
+emptyimage[s]=ship_pass-post_01.2.7,43,-44
+emptyimage[sw]=ship_pass-post_01.2.8
+---------------------------------------------

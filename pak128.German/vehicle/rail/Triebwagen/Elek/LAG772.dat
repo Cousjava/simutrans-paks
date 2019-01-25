@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 20-10-2017
+---------------------------------
+obj=vehicle
+name=LAG_Nr772-ET185
+copyright=pumuckl999
+intro_year=1905
+intro_month=5
+retire_year=1962
+retire_month=12
+cost=3247000
+runningcost=119
+waytype=track
+freight=Passagiere
+payload=44
+engine_type=electric
+speed=40
+gear=125
+weight=24.7
+power=90
+length=9
+sound=diesel.wav
+EmptyImage[S]=LAG772.0.0
+EmptyImage[E]=LAG772.0.1
+EmptyImage[SE]=LAG772.0.2
+EmptyImage[SW]=LAG772.0.3
+EmptyImage[N]=LAG772.0.4
+EmptyImage[W]=LAG772.0.5
+EmptyImage[NW]=LAG772.0.6
+EmptyImage[NE]=LAG772.0.7
+-----------------------------

@@ -1,0 +1,44 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 12-2014
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MB_Citaro_G_1gen_Heck
+copyright=RedRabbit
+intro_year=1999
+intro_month=1
+retire_year=2015
+retire_month=6
+waytype=road
+cost=4944000
+runningcost=130
+freight=Passagiere
+payload=50
+engine_type=diesel
+power=220
+gear=55
+speed=50
+weight=9.4
+length=7
+loading_time=2365
+constraint[prev][0]=MB_Citaro_G_1gen_Front
+constraint[next][0]=none
+EmptyImage[W]=MB_Citaro_1GenGH.8.1
+EmptyImage[NW]=MB_Citaro_1GenGH.8.2,0,-7
+EmptyImage[N]=MB_Citaro_1GenGH.8.3
+EmptyImage[NE]=MB_Citaro_1GenGH.8.4,-4,0
+EmptyImage[E]=MB_Citaro_1GenGH.8.5,-32,-16
+EmptyImage[SE]=MB_Citaro_1GenGH.8.6,0,7
+EmptyImage[S]=MB_Citaro_1GenGH.8.7
+EmptyImage[SW]=MB_Citaro_1GenGH.8.8,4,0
+FreightImage[W]=MB_Citaro_1GenGH.9.1
+FreightImage[NW]=MB_Citaro_1GenGH.9.2,0,-7
+FreightImage[N]=MB_Citaro_1GenGH.9.3
+FreightImage[NE]=MB_Citaro_1GenGH.9.4,-4,0
+FreightImage[E]=MB_Citaro_1GenGH.9.5,-32,-16
+FreightImage[SE]=MB_Citaro_1GenGH.9.6,0,7
+FreightImage[S]=MB_Citaro_1GenGH.9.7
+FreightImage[SW]=MB_Citaro_1GenGH.9.8,4,0
+----------------------------------------------------

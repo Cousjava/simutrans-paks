@@ -1,0 +1,12 @@
+#
+# Silbererz
+#
+# obj=good
+# name=Silbererz
+# metric=Tonnen
+# catg=2
+# value=114
+# #=0,38
+# speed_bonus=0
+# weight_per_unit=1000
+# -----------------------

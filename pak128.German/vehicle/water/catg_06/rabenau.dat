@@ -1,0 +1,42 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Holzfrachter Rabenau
+Copyright=pumuckl999
+intro_year=1979
+intro_month=1
+cost=24600700
+runningcost=792
+waytype=water
+freight=Holz
+engine_type=diesel
+power=4487
+gear=1000
+weight=4500
+speed=29
+payload=222
+length=7
+Sound=boat-horn.wav
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[W]=rabenau_empty.0.0,-44,4
+EmptyImage[NW]=rabenau_empty.0.1,-36,0
+EmptyImage[N]=rabenau_empty.0.2,-32,5
+EmptyImage[NE]=rabenau_empty.0.3,-52,-8
+EmptyImage[E]=rabenau_empty.0.4,-40,-24
+EmptyImage[SE]=rabenau_empty.0.5,8,-16
+EmptyImage[S]=rabenau_empty.0.6,8,4
+EmptyImage[SW]=rabenau_empty.0.7,-4,-4
+FreightImage[W]=rabenau_freight.0.0,-44,4
+FreightImage[NW]=rabenau_freight.0.1,-36,0
+FreightImage[N]=rabenau_freight.0.2,-32,5
+FreightImage[NE]=rabenau_freight.0.3,-52,-8
+FreightImage[E]=rabenau_freight.0.4,-40,-24
+FreightImage[SE]=rabenau_freight.0.5,8,-16
+FreightImage[S]=rabenau_freight.0.6,8,4
+FreightImage[SW]=rabenau_freight.0.7,-4,-4
+---------------------------------------------

@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Air
+#	Neu:
+---------------------------------
+obj=vehicle
+name=Boeing_B247
+copyright=Pumuckl999
+intro_year=1933
+intro_month=2
+retire_year=1937
+retire_month=12
+waytype=air
+cost=10500000
+runningcost=49
+freight=Passagiere
+payload=10
+engine_type=diesel
+power=1060
+gear=20
+speed=350
+weight=5.9
+length=2
+sound=smalloldplanes.wav
+smoke=Diesel
+EmptyImage[W]=Boeing_B247.0.0
+EmptyImage[NW]=Boeing_B247.0.1
+EmptyImage[N]=Boeing_B247.0.2
+EmptyImage[NE]=Boeing_B247.0.3
+EmptyImage[E]=Boeing_B247.0.4
+EmptyImage[SE]=Boeing_B247.0.5
+EmptyImage[S]=Boeing_B247.0.6
+EmptyImage[SW]=Boeing_B247.0.7
+----------------------------------

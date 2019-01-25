@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 05-02-2018
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Vomag8LR_Stueckgut
+copyright=pumuckl999
+intro_year=1935
+intro_month=1
+retire_year=1963
+retire_month=12
+cost=2005000
+runningcost=54
+waytype=road
+speed=50
+power=111
+weight=10
+freight=Plastik
+payload=9
+length=8
+smoke=Diesel_small
+sound=engine-start-diesel_d.wav
+constraint[prev][0]=none
+constraint[next][0]=Vomag8LR_Anhaenger_Stueckgut
+constraint[next][1]=none
+EmptyImage[S]=Vomag8LR_Stgut.0.0
+EmptyImage[N]=Vomag8LR_Stgut.0.1
+EmptyImage[E]=Vomag8LR_Stgut.0.2
+EmptyImage[W]=Vomag8LR_Stgut.0.3
+EmptyImage[SE]=Vomag8LR_Stgut.0.4,4,0
+EmptyImage[NW]=Vomag8LR_Stgut.0.5,-2,0
+EmptyImage[NE]=Vomag8LR_Stgut.0.6
+EmptyImage[SW]=Vomag8LR_Stgut.0.7
+-------------------------------------------

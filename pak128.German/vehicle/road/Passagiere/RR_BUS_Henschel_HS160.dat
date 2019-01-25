@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Henschel_HS160_Typ_448
+copyright=RedRabbit
+intro_year=1955
+intro_month=1
+retire_year=1963
+retire_month=12
+cost=5160000
+runningcost=157
+waytype=road
+freight=Passagiere
+payload=60
+engine_type=diesel 
+speed=50
+weight=8
+power=116
+smoke=Diesel
+sound=1
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=RR_BUS_Henschel_HS160.0.1
+EmptyImage[N]=RR_BUS_Henschel_HS160.0.2
+EmptyImage[E]=RR_BUS_Henschel_HS160.0.3
+EmptyImage[W]=RR_BUS_Henschel_HS160.0.4
+EmptyImage[SE]=RR_BUS_Henschel_HS160.0.5
+EmptyImage[NW]=RR_BUS_Henschel_HS160.0.6
+EmptyImage[NE]=RR_BUS_Henschel_HS160.0.7
+EmptyImage[SW]=RR_BUS_Henschel_HS160.0.8
+------------------------------------------------

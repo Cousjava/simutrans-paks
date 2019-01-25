@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=anhaenger_1965_16t_Stueckgut_Koffer
+copyright=RedRabbit
+intro_year=1965
+intro_month=1
+retire_year=1986
+retire_month=12
+cost=2941000
+runningcost=64
+waytype=road
+freight=Buecher
+speed=80
+weight=6.1
+payload=12
+length=7
+constraint[next][0]=none
+EmptyImage[W]=anhaenger_1965.2.1
+EmptyImage[NW]=anhaenger_1965.2.2
+EmptyImage[N]=anhaenger_1965.2.3
+EmptyImage[NE]=anhaenger_1965.2.4
+EmptyImage[E]=anhaenger_1965.2.5
+EmptyImage[SE]=anhaenger_1965.2.6
+EmptyImage[S]=anhaenger_1965.2.7
+EmptyImage[SW]=anhaenger_1965.2.8
+-------------------------------------------

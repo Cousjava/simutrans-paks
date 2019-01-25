@@ -1,0 +1,40 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+---------------------------------
+obj=vehicle
+name=BR38
+copyright=TonyBzt
+intro_year=1925
+intro_month=1
+retire_year=1974
+retire_month=12
+cost=9390000
+runningcost=145
+waytype=track
+speed=100
+weight=71
+sound=3
+smoke=Steam
+engine_type=steam
+power=868
+gear=240
+length=9
+Constraint[Prev][0]=KabTender
+Constraint[Prev][1]=Wannentender
+Constraint[Prev][2]=T34Tender
+Constraint[Prev][3]=none
+Constraint[Next][0]=KabTender
+Constraint[Next][1]=Wannentender
+Constraint[Next][2]=T34Tender
+Constraint[Next][3]=none
+EmptyImage[S]=BR38.0.0
+EmptyImage[E]=BR38.0.1
+EmptyImage[SE]=BR38.0.2
+EmptyImage[SW]=BR38.0.3
+EmptyImage[N]=BR38.0.4
+EmptyImage[W]=BR38.0.5
+EmptyImage[NW]=BR38.0.6
+EmptyImage[NE]=BR38.0.7
+------------------------------

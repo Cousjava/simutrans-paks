@@ -1,0 +1,12 @@
+﻿#
+# Schlacke
+#
+Obj=good
+name=Schlacke
+metric= Tonnen
+weight_per_unit=1000
+catg=2
+value=94
+#=0,31
+speed_bonus=0
+--------------------

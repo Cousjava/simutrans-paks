@@ -1,0 +1,28 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+---------------------------------
+obj=vehicle
+name=PrG8Tender
+copyright=TonyBzt
+intro_year=1902
+intro_month=1
+retire_year=1969
+retire_month=12
+cost=200000
+runningcost=10
+waytype=track
+speed=55
+weight=20
+length=6
+Constraint[Prev][0]=G8
+EmptyImage[S]=PrG8_Tender.0.0
+EmptyImage[E]=PrG8_Tender.0.1
+EmptyImage[SE]=PrG8_Tender.0.2
+EmptyImage[SW]=PrG8_Tender.0.3
+EmptyImage[N]=PrG8_Tender.0.4
+EmptyImage[W]=PrG8_Tender.0.5
+EmptyImage[NW]=PrG8_Tender.0.6
+EmptyImage[NE]=PrG8_Tender.0.7
+-----------------------------------

@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
+---------------------------------
+obj=vehicle
+name=E150-gruen
+copyright=TonyBzt
+intro_year=1957
+intro_month=10
+cost=65260000
+runningcost=567
+waytype=electrified_track
+freight=None
+speed=100
+weight=126
+power=6400
+gear=400
+length=12
+sound=-1
+EmptyImage[S]=E150.0.0
+EmptyImage[E]=E150.0.1
+EmptyImage[SE]=E150.0.2
+EmptyImage[SW]=E150.0.3
+EmptyImage[N]=E150.0.4
+EmptyImage[W]=E150.0.5
+EmptyImage[NW]=E150.0.6
+EmptyImage[NE]=E150.0.7
+----------------------------

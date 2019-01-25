@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=DaimlerBenz_LP333_Kuehlwaren
+copyright=RedRabbit
+intro_year=1957
+intro_month=1
+retire_year=1960
+retire_month=12
+cost=4328800
+runningcost=76
+waytype=road
+freight=Fleisch
+engine_type=diesel
+power=147
+speed=84
+weight=7
+payload=12
+length=8
+sound=1
+constraint[prev][0] = none
+EmptyImage[W]=mb_lp333.1.1
+EmptyImage[NW]=mb_lp333.1.2
+EmptyImage[N]=mb_lp333.1.3
+EmptyImage[NE]=mb_lp333.1.4
+EmptyImage[E]=mb_lp333.1.5
+EmptyImage[SE]=mb_lp333.1.6
+EmptyImage[S]=mb_lp333.1.7
+EmptyImage[SW]=mb_lp333.1.8
+----------------------------------------

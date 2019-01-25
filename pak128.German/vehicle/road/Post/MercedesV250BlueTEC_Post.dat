@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 11-06-2018
+---------------------------------
+obj=vehicle
+name=Mercedes_Benz_V250_BlueTEC_Post
+copyright=pumuckl999
+intro_year=2014
+intro_month=5
+#retire_year=
+#retire_month=
+cost=6613000
+runningcost=43
+waytype=road
+speed=206
+power=140
+gear=125
+weight=2.1
+freight=Post
+engine_type=diesel
+payload=12
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[S]=MercedesV250BlueTEC_Post.0.0
+EmptyImage[N]=MercedesV250BlueTEC_Post.0.1
+EmptyImage[E]=MercedesV250BlueTEC_Post.0.2
+EmptyImage[W]=MercedesV250BlueTEC_Post.0.3
+EmptyImage[SE]=MercedesV250BlueTEC_Post.0.4
+EmptyImage[NW]=MercedesV250BlueTEC_Post.0.5
+EmptyImage[NE]=MercedesV250BlueTEC_Post.0.6
+EmptyImage[SW]=MercedesV250BlueTEC_Post.0.7
+-------------------------------------------

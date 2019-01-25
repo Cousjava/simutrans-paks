@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MS Koblenz
+copyright=pumuckl999
+intro_year=1955
+intro_month=1
+retire_year=1975
+retire_month=12
+waytype=water
+cost=20880000
+runningcost=1290
+freight=Passagiere
+payload=500
+engine_type=diesel
+power=1200
+gear=1200
+speed=24
+weight=1100
+length=7
+sound=-1
+smoke=Diesel_black
+EmptyImage[W]=MS_Koblenz.0.0,-40,0
+EmptyImage[NW]=MS_Koblenz.0.1,-36,0
+EmptyImage[N]=MS_Koblenz.0.2,-32,0
+EmptyImage[NE]=MS_Koblenz.0.3,-44,-4
+EmptyImage[E]=MS_Koblenz.0.4,-40,-36
+EmptyImage[SE]=MS_Koblenz.0.5,4,-32
+EmptyImage[S]=MS_Koblenz.0.6,4,-4
+EmptyImage[SW]=MS_Koblenz.0.7,-4,0
+--------------------------------

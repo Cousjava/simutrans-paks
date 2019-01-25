@@ -1,0 +1,29 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 02-09-2018
+---------------------------------
+obj=vehicle
+name=pfaelzischer_ABueBay97b
+copyright=pumuckl999
+intro_year=1897
+intro_month=1
+retire_year=1930
+retire_month=12
+cost=6100000
+RunningCost=145
+waytype=track
+freight=Passagiere
+payload=38
+speed=100
+weight=40
+length=11
+EmptyImage[S]=ABueBay97b.0.0
+EmptyImage[E]=ABueBay97b.0.1
+EmptyImage[SE]=ABueBay97b.0.2
+EmptyImage[SW]=ABueBay97b.0.3
+EmptyImage[N]=ABueBay97b.0.4
+EmptyImage[W]=ABueBay97b.0.5
+EmptyImage[NW]=ABueBay97b.0.6
+EmptyImage[NE]=ABueBay97b.0.7
+--------------------------------

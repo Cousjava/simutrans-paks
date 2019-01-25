@@ -1,0 +1,43 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 
+---------------------------------
+obj=vehicle
+name=Auflieger_38t_Mineraloel
+copyright=RedRabbit
+intro_year=1956
+intro_month=1
+retire_year=1991
+retire_month=12
+cost=4220000
+runningcost=93
+waytype=road
+speed=80
+weight=8
+freight=Oel
+payload=23
+length=7
+constraint[prev][0]=DaimlerBenz_LPS1620_Sattelzugmaschine
+constraint[prev][1]=DaimlerBenz_LPS2220_Sattelzugmaschine
+constraint[prev][2]=MagirusIveco_T_Zugmaschine
+constraint[prev][3]=Iveco_Stralis_Zugmaschiene
+constraint[prev][4]=DAF_95XF_Zugmaschiene
+constraint[prev][5]=MAN_F90_Zugmaschiene
+constraint[prev][6]=MAN_TGA_Zugmaschiene
+constraint[prev][7]=MercedesBenz_Actros_MP3_Zugmaschiene
+constraint[prev][8]=MercedesBenz_SK_Zugmaschiene_Dachschlafkabine
+constraint[prev][9]=MercedesBenz_SK_Zugmaschiene
+constraint[prev][10]=Magirus_Jupiter200D_Zugmaschine
+constraint[prev][11]=MB_LZ6000
+constraint[prev][12]=MB_LZ8000
+Constraint[next][0]=none
+EmptyImage[S]=RR_Auflieger_38t_Mineraloel.0.1,-11,8
+EmptyImage[N]=RR_Auflieger_38t_Mineraloel.0.2,1,2
+EmptyImage[E]=RR_Auflieger_38t_Mineraloel.0.3,18,9
+EmptyImage[W]=RR_Auflieger_38t_Mineraloel.0.4,13,8
+EmptyImage[SE]=RR_Auflieger_38t_Mineraloel.0.5,4,9
+EmptyImage[NW]=RR_Auflieger_38t_Mineraloel.0.6,-2,4
+EmptyImage[NE]=RR_Auflieger_38t_Mineraloel.0.7,-2,0
+EmptyImage[SW]=RR_Auflieger_38t_Mineraloel.0.8,4,2
+---------------------------------------------------

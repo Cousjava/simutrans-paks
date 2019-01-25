@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 11-06-2018
+---------------------------------
+obj=vehicle
+name=Benz3K2_Oel
+copyright=pumuckl999
+intro_year=1916
+intro_month=1
+retire_year=1954
+retire_month=12
+cost=273200
+runningcost=13
+waytype=road
+speed=24
+power=33
+weight=3.2
+freight=Benzin
+payload=3
+length=7
+smoke=Diesel_small
+sound=engine-start-diesel_d.wav
+Constraint[Prev][0]=none
+constraint[next][0]=none
+EmptyImage[S]=Benz3K2oel.0.0
+EmptyImage[N]=Benz3K2oel.0.1
+EmptyImage[E]=Benz3K2oel.0.2
+EmptyImage[W]=Benz3K2oel.0.3
+EmptyImage[SE]=Benz3K2oel.0.4
+EmptyImage[NW]=Benz3K2oel.0.5
+EmptyImage[NE]=Benz3K2oel.0.6
+EmptyImage[SW]=Benz3K2oel.0.7
+-------------------------------------------

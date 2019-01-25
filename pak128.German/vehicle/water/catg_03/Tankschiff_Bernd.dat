@@ -1,0 +1,46 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu:
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Tank-KueMo_Bernd
+copyright=Pumuckl999
+intro_year=1967
+intro_month=1
+retire_year=2004
+retire_month=12
+waytype=water
+cost=9249200
+runningcost=757
+freight=Oel
+payload=200
+engine_type=diesel
+power=368
+gear=500
+speed=19
+weight=500
+length=8
+sound=boat-horn.wav
+smoke=-1
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[S]=Tankschiff_Bernd.0.7,4,-4
+EmptyImage[N]=Tankschiff_Bernd.0.3,-24,0
+EmptyImage[E]=Tankschiff_Bernd.0.5,-36,-24
+EmptyImage[W]=Tankschiff_Bernd.0.1,-42,0
+EmptyImage[SW]=Tankschiff_Bernd.0.8,-6,-4
+EmptyImage[SE]=Tankschiff_Bernd.0.6,8,-32
+EmptyImage[NW]=Tankschiff_Bernd.0.2,-32,8
+EmptyImage[NE]=Tankschiff_Bernd.0.4,-52,-8
+freightImageType[0]=Oel
+freightimage[0][S]=Tankschiff_Bernd.1.7,4,-4
+freightimage[0][N]=Tankschiff_Bernd.1.3,-24,0
+freightimage[0][E]=Tankschiff_Bernd.1.5,-36,-24
+freightimage[0][W]=Tankschiff_Bernd.1.1,-42,0
+freightimage[0][SW]=Tankschiff_Bernd.1.8,-6,-4
+freightimage[0][SE]=Tankschiff_Bernd.1.6,8,-32
+freightimage[0][NW]=Tankschiff_Bernd.1.2,-32,8
+freightimage[0][NE]=Tankschiff_Bernd.1.4,-52,-8
+-----------------------------------------------------

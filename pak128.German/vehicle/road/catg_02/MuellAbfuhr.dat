@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 2008
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MuellAbfuhr-alt
+copyright=TonyBzt
+intro_year=1976
+intro_month=1
+cost=1002000
+runningcost=19
+waytype=road
+engine_type=diesel 
+freight=Abfall
+payload=5
+speed=60
+weight=6
+power=67
+smoke=Diesel
+sound=1
+Constraint[Prev][0]=none
+Constraint[next][0]=none
+EmptyImage[S]=MuellAbfuhr.0.0
+EmptyImage[N]=MuellAbfuhr.0.1
+EmptyImage[E]=MuellAbfuhr.0.2
+EmptyImage[W]=MuellAbfuhr.0.3
+EmptyImage[SE]=MuellAbfuhr.0.4
+EmptyImage[NW]=MuellAbfuhr.0.5
+EmptyImage[NE]=MuellAbfuhr.0.6
+EmptyImage[SW]=MuellAbfuhr.0.7
+-----------------------------------
