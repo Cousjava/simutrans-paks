@@ -614,7 +614,6 @@ copyright=EF-85
 name=LongBlockSignals
 draw_as_ding=1
 waytype=track
-is_signal=1
 is_longblocksignal=1
 Image[0]=64JpRailSignal.2.0
 Image[1]=64JpRailSignal.2.1

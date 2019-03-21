@@ -306,7 +306,6 @@ obj=roadsign
 copyright=EF-85
 name=shinkansen_long_block_signals
 waytype=monorail_track
-is_signal=1
 is_longblocksignal=1
 intro_year=1964
 intro_month = 6
