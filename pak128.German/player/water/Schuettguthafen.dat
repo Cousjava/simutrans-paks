@@ -1,0 +1,28 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 
+#    Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=Schuettguthafen
+copyright=Pumuckl999
+type=habour
+enables_ware=1
+Capacity=144
+cost=288000
+maintenance=144
+intro_year=1895
+intro_month=1
+dims=1,2,4
+icon=> Schuettguthafen.0.3
+cursor=Schuettguthafen.1.3
+BackImage[0][0][0][0][0][0]=Schuettguthafen.1.1
+BackImage[0][1][0][0][0][0]=Schuettguthafen.1.2
+BackImage[1][0][0][0][0][0]=Schuettguthafen.2.0
+BackImage[1][0][1][0][0][0]=Schuettguthafen.2.1
+BackImage[2][0][0][0][0][0]=Schuettguthafen.0.0
+BackImage[2][1][0][0][0][0]=Schuettguthafen.0.1
+BackImage[3][0][0][0][0][0]=Schuettguthafen.0.2
+BackImage[3][0][1][0][0][0]=Schuettguthafen.1.0
+--------------------------------------------------

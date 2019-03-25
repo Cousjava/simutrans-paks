@@ -1,0 +1,55 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Stadt
+#	Neu:03-2014
+#	Letzte Bearbeitung:
+#    04-09-2015 The Transporter
+# --------------------------------
+Obj=building
+Name=Holstentor
+copyright=pumuckl999
+Type=cur
+chance=25
+intro_year=1800
+# intro_year=1585
+intro_month=1
+retire_year=1950
+retire_month=12
+needs_ground=1
+build_time=12000
+climates=tropic
+Passengers=40
+dims=2,1,4
+BackImage[0][0][0][0][0][0]=Holstentor.0.0
+BackImage[0][0][0][1][0][0]=Holstentor.0.1
+BackImage[0][0][1][0][0][0]=Holstentor.0.2
+BackImage[0][0][1][1][0][0]=Holstentor.0.3
+BackImage[0][0][0][0][0][1]=Holstentor.0.4
+BackImage[0][0][0][1][0][1]=Holstentor.0.5
+BackImage[0][0][1][0][0][1]=Holstentor.1.0
+BackImage[0][0][1][1][0][1]=Holstentor.1.1
+BackImage[1][0][0][0][0][0]=Holstentor.1.2
+BackImage[1][0][0][1][0][0]=Holstentor.1.3
+BackImage[1][1][0][0][0][0]=Holstentor.1.4
+BackImage[1][1][0][1][0][0]=Holstentor.1.5
+BackImage[1][0][0][0][0][1]=Holstentor.2.0
+BackImage[1][0][0][1][0][1]=Holstentor.2.1
+BackImage[1][1][0][0][0][1]=Holstentor.2.2
+BackImage[1][1][0][1][0][1]=Holstentor.2.3
+BackImage[2][0][0][0][0][0]=Holstentor.2.4
+BackImage[2][0][0][1][0][0]=Holstentor.2.5
+BackImage[2][0][1][0][0][0]=Holstentor.3.0
+BackImage[2][0][1][1][0][0]=Holstentor.3.1
+BackImage[2][0][0][0][0][1]=Holstentor.3.2
+BackImage[2][0][0][1][0][1]=Holstentor.3.3
+BackImage[2][0][1][0][0][1]=Holstentor.3.4
+BackImage[2][0][1][1][0][1]=Holstentor.3.5
+BackImage[3][0][0][0][0][0]=Holstentor.4.0
+BackImage[3][0][0][1][0][0]=Holstentor.4.1
+BackImage[3][1][0][0][0][0]=Holstentor.4.2
+BackImage[3][1][0][1][0][0]=Holstentor.4.3
+BackImage[3][0][0][0][0][1]=Holstentor.4.4
+BackImage[3][0][0][1][0][1]=Holstentor.4.5
+BackImage[3][1][0][0][0][1]=Holstentor.5.0
+BackImage[3][1][0][1][0][1]=Holstentor.5.1
+---------------------------------------------

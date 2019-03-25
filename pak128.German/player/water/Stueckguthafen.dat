@@ -1,0 +1,36 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 
+#    Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=Stueckguthafen
+copyright=Pumuckl999
+type=habour
+enables_ware=1
+Capacity=112
+cost=224000
+maintenance=112
+intro_year=1895
+intro_month=1
+dims=1,2,4
+icon=> Stueckguthafen.0.4
+cursor=Stueckguthafen.1.4
+BackImage[2][0][0][0][0][0]=Stueckguthafen.0.0,-2,2
+BackImage[2][0][0][1][0][0]=Stueckguthafen.0.1,-2,2
+BackImage[2][1][0][0][0][0]=Stueckguthafen.0.2,-2,2
+BackImage[2][1][0][1][0][0]=Stueckguthafen.0.3,-2,2
+BackImage[3][0][0][0][0][0]=Stueckguthafen.1.0,-12,-12
+BackImage[3][0][0][1][0][0]=Stueckguthafen.1.1,-12,-12
+BackImage[3][0][1][0][0][0]=Stueckguthafen.1.2,-12,-12
+BackImage[3][0][1][1][0][0]=Stueckguthafen.1.3,-12,-12
+BackImage[0][0][0][0][0][0]=Stueckguthafen.2.0
+BackImage[0][0][0][1][0][0]=Stueckguthafen.2.1
+BackImage[0][1][0][0][0][0]=Stueckguthafen.2.2
+BackImage[0][1][0][1][0][0]=Stueckguthafen.2.3
+BackImage[1][0][0][0][0][0]=Stueckguthafen.3.0,22,22
+BackImage[1][0][0][1][0][0]=Stueckguthafen.3.1,22,22
+BackImage[1][0][1][0][0][0]=Stueckguthafen.3.2,22,22
+BackImage[1][0][1][1][0][0]=Stueckguthafen.3.3,22,22
+------------------------------------------------

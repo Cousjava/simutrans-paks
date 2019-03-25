@@ -1,0 +1,17 @@
+Obj=building
+Name=Rapsoil Rostock Tanks
+copyright=pumuckl999
+Type=ind
+level=4
+intro_year=2006
+chance=90
+climates=mediterran, tropic, desert
+dims=1,1,4
+BackImage[0][0][0][0][0][0]=roro_tanks_sommer.0.0
+BackImage[1][0][0][0][0][0]=roro_tanks_sommer.0.1
+BackImage[2][0][0][0][0][0]=roro_tanks_sommer.0.2
+BackImage[3][0][0][0][0][0]=roro_tanks_sommer.0.3
+BackImage[0][0][0][0][0][1]=roro_tanks_winter.0.0
+BackImage[1][0][0][0][0][1]=roro_tanks_winter.0.1
+BackImage[2][0][0][0][0][1]=roro_tanks_winter.0.2
+BackImage[3][0][0][0][0][1]=roro_tanks_winter.0.3

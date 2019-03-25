@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="iso-8859-2"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Translation Export</title>
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+<link href="include/style.css" type="text/css" rel="StyleSheet" />
+</head>
+
+<body>
+
+
+<h1>Translation Export</h1>
+
+
+<div align="center">
+<table class="tableback">
+<tr>
+<td>
+<p class="justified">
+This module will be used for two different purposes; one will be the output of
+Simutrans usable translation files and second will be the text listing, object
+listing, and reservation task handling.</p>
+</td>
+</tr>
+</table>
+</div>
+
+<h2>Translation File Output</h2>
+
+
+<div align="center">
+<table class="tableback" width="600px">
+<tr>
+<td>
+<p class="justified">
+The translation file output will generate output exactly as described in:
+<a href="translation_file.htm">Translation File Definition</a> document. The
+user will have a choice to print output on the screen or create it as
+downloadable file. In this case, the file will be generated in the /tmp
+directory on the server and user will be given a link to this file. The file
+name will be &lt;language_id&gt;.tab.</p>
+</td>
+</tr>
+</table>
+</div>
+
+
+<h2>Translation Text Listing &amp; Reservation</h2>
+
+<div align="center">
+<table class="tableback" width="600px">
+<tr>
+<td>
+<p class="justified">
+This module will be used for viewing object lists and for making reservations of
+texts for offline translation. Page should offer choice of version, and language
+and multiple check boxes and drop-down lists, each of them will specify
+different condition. Relation between all conditions will be AND. (Checkboxes
+and drop down lists will be: obj (object type), no-text, text older than x,
+reservation, display first y entries only.) User will select conditions and then
+execute a query. Program will output a list of object names satisfying the
+conditions. For each object name status of its description text will be given:
+does not exist, exit (date), author (user_id), reservation, reserved by (user_id)
+and checkbox where user can select the text for reservation. The buttons for
+checking all check boxes (or check only not reserved) should be provided. Below
+the list, there will be a text input field for reservation date, default value
+will be &lt;current&gt; + 7, maximum value will be &lt;current&gt; + 21, and minimum
+&lt;current&gt;. After clicking the &#8220;reserve these!&#8221; button, reservation will be made
+and user will be taken to reservation list page (described below).</p>
+</td>
+</tr>
+</table>
+</div>
+
+
+<h2>Reserved Text Output</h2>
+
+
+<div align="center">
+<table class="tableback" width="600px">
+<tr>
+<td>
+<p class="justified">
+This module should provide output for off-line translation. User should select
+which language and which version he wants; choose if he wants to get all his
+reservations or only those newer or older than specific date, if he wants to get
+current texts and current suggestions, and if he wants to get texts in
+additional language. SimuTranslator should output list of all object names for
+reserved texts for current version and language, and their current texts,
+current suggestion or the text for same object and version but different
+language if user selected it.</p>
+</td>
+</tr>
+</table>
+</div>
+
+
+<p>
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+</p>
+
+<div style="text-align: center">
+<hr width="90%" />
+<p class="ending">
+<br />
+
+<b>SimuTranslator:</b> &copy;2004-2005 <a href="team.htm">SimuTranslator Team</a><br />
+<b>Documentation:</b> &copy;2004-2005 <a href="http://www.tomaskubes.net">Tom&aacute;&scaron; Kube&scaron;</a><br />
+<a href="index.htm">SimuTranslator documentation home</a>
+<br />&nbsp;
+</p>
+<hr width="90%" />
+</div>
+
+
+</body>
+</html>

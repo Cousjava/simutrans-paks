@@ -1,0 +1,50 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Land
+#	Neu:07-10-2018
+# --------------------------------
+Obj=building
+Name=Schifffahrtsmuseum_Kiel
+copyright=pumuckl999
+type=cur
+level=31
+chance=50
+intro_year=1910
+intro_month=1
+needs_ground=0
+build_time=60000
+climates=desert,tropic
+dims=2,2,4
+BackImage[0][0][0][0][0][0]=SchifffahrtsmuseumKiel.0.0
+BackImage[0][0][1][0][0][0]=SchifffahrtsmuseumKiel.0.1
+BackImage[0][1][0][0][0][0]=SchifffahrtsmuseumKiel.0.2
+BackImage[0][1][1][0][0][0]=SchifffahrtsmuseumKiel.0.3
+BackImage[0][0][0][0][0][1]=SchifffahrtsmuseumKiel.0.4
+BackImage[0][0][1][0][0][1]=SchifffahrtsmuseumKiel.0.5
+BackImage[0][1][0][0][0][1]=SchifffahrtsmuseumKiel.1.0
+BackImage[0][1][1][0][0][1]=SchifffahrtsmuseumKiel.1.1
+BackImage[1][0][0][0][0][0]=SchifffahrtsmuseumKiel.1.2
+BackImage[1][0][1][0][0][0]=SchifffahrtsmuseumKiel.1.3
+BackImage[1][1][0][0][0][0]=SchifffahrtsmuseumKiel.1.4
+BackImage[1][1][1][0][0][0]=SchifffahrtsmuseumKiel.1.5
+BackImage[1][0][0][0][0][1]=SchifffahrtsmuseumKiel.2.0
+BackImage[1][0][1][0][0][1]=SchifffahrtsmuseumKiel.2.1
+BackImage[1][1][0][0][0][1]=SchifffahrtsmuseumKiel.2.2
+BackImage[1][1][1][0][0][1]=SchifffahrtsmuseumKiel.2.3
+BackImage[2][0][0][0][0][0]=SchifffahrtsmuseumKiel.2.4
+BackImage[2][0][1][0][0][0]=SchifffahrtsmuseumKiel.2.5
+BackImage[2][1][0][0][0][0]=SchifffahrtsmuseumKiel.3.0
+BackImage[2][1][1][0][0][0]=SchifffahrtsmuseumKiel.3.1
+BackImage[2][0][0][0][0][1]=SchifffahrtsmuseumKiel.3.2
+BackImage[2][0][1][0][0][1]=SchifffahrtsmuseumKiel.3.3
+BackImage[2][1][0][0][0][1]=SchifffahrtsmuseumKiel.3.4
+BackImage[2][1][1][0][0][1]=SchifffahrtsmuseumKiel.3.5
+BackImage[3][0][0][0][0][0]=SchifffahrtsmuseumKiel.4.0
+BackImage[3][0][1][0][0][0]=SchifffahrtsmuseumKiel.4.1
+BackImage[3][1][0][0][0][0]=SchifffahrtsmuseumKiel.4.2
+BackImage[3][1][1][0][0][0]=SchifffahrtsmuseumKiel.4.3
+BackImage[3][0][0][0][0][1]=SchifffahrtsmuseumKiel.4.4
+BackImage[3][0][1][0][0][1]=SchifffahrtsmuseumKiel.4.5
+BackImage[3][1][0][0][0][1]=SchifffahrtsmuseumKiel.5.0
+BackImage[3][1][1][0][0][1]=SchifffahrtsmuseumKiel.5.1
+----------------------------------------------------------

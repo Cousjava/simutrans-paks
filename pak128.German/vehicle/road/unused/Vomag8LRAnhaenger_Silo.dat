@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 04-02-2018
+---------------------------------
+obj=vehicle
+name=Vomag8LR_Anhaenger_Siloware
+copyright=pumuckl999
+intro_year=1935
+intro_month=1
+retire_year=1963
+retire_month=12
+cost=1390000
+runningcost=50
+waytype=road
+speed=50
+weight=4
+freight=Tierfutter
+payload=9
+length=7
+constraint[prev][0]=Vomag8LR_Siloware
+constraint[prev][1]=none
+constraint[next][0]=Vomag8LR_Anhaenger_Siloware
+constraint[next][1]=none
+EmptyImage[S]=Vomag8LRAnhaenger_Silo.0.0
+EmptyImage[N]=Vomag8LRAnhaenger_Silo.0.1
+EmptyImage[E]=Vomag8LRAnhaenger_Silo.0.2
+EmptyImage[W]=Vomag8LRAnhaenger_Silo.0.3
+EmptyImage[SE]=Vomag8LRAnhaenger_Silo.0.4,4,0
+EmptyImage[NW]=Vomag8LRAnhaenger_Silo.0.5,-2,0
+EmptyImage[NE]=Vomag8LRAnhaenger_Silo.0.6
+EmptyImage[SW]=Vomag8LRAnhaenger_Silo.0.7
+-------------------------------------------

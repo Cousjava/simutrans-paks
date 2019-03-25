@@ -1,0 +1,33 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#---------------------------------
+obj=building
+name=EG Hochbahn - nur auf Gleis
+copyright=pumuckl999, The Transporter
+type=stop
+waytype=track
+level=3
+cost=192000
+maintenance=24
+enables_ware=1
+enables_pax=1
+intro_year=1912
+intro_month=1
+allow_underground=0
+Dims=1,1,2
+icon=> EG_Hochbahn.2.3
+cursor=EG_Hochbahn.2.2
+Backimage[0][0][0][0][0][0]=EG_Hochbahn.0.0,-11,6
+Backimage[0][0][0][1][0][0]=EG_Hochbahn.0.1,-11,6
+Backimage[0][0][0][0][0][1]=EG_Hochbahn.0.2,-11,6
+Backimage[0][0][0][1][0][1]=EG_Hochbahn.0.3,-11,6
+Backimage[1][0][0][0][0][0]=EG_Hochbahn.1.0,11,6
+Backimage[1][0][0][1][0][0]=EG_Hochbahn.1.1,11,6
+Backimage[1][0][0][0][0][1]=EG_Hochbahn.1.2,11,6
+Backimage[1][0][0][1][0][1]=EG_Hochbahn.1.3,11,6
+Frontimage[0][0][0][0][0][0]=EG_Hochbahn.2.1,-11,6
+Frontimage[1][0][0][0][0][0]=EG_Hochbahn.2.0,11,6
+Frontimage[0][0][0][0][0][1]=EG_Hochbahn.2.1,-11,6
+Frontimage[1][0][0][0][0][1]=EG_Hochbahn.2.0,11,6
+--------------------------------------------------

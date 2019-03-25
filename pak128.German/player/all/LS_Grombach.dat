@@ -1,0 +1,30 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 17-11-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=Lagerschuppen_Grombach
+copyright=pumuckl999
+type=extension
+enables_ware=1
+enables_pax=1
+NoInfo=1
+Level=4
+cost=256000
+maintenance=32
+intro_year=1800
+intro_month=1
+Dims=1,1,4
+cursor=LS_Grombach.0.0
+icon=> LS_Grombach.2.0
+BackImage[0][0][0][0][0][0]=LS_Grombach.0.2
+BackImage[1][0][0][0][0][0]=LS_Grombach.0.1
+BackImage[2][0][0][0][0][0]=LS_Grombach.0.0
+BackImage[3][0][0][0][0][0]=LS_Grombach.0.3
+BackImage[0][0][0][0][0][1]=LS_Grombach.1.2
+BackImage[1][0][0][0][0][1]=LS_Grombach.1.1
+BackImage[2][0][0][0][0][1]=LS_Grombach.1.0
+BackImage[3][0][0][0][0][1]=LS_Grombach.1.3
+-------------------------------------------------

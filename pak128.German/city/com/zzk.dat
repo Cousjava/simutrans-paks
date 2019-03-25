@@ -1,0 +1,16 @@
+Obj=building
+Name=Zirkuszelt Koeln
+copyright=pumuckl999
+Type=com
+level=0
+intro_year=1995
+climates=mediterran, tropic, desert, temperate, tundra, rocky
+dims=1,1,4
+BackImage[0][0][0][0][0][0]=zzk.0.0
+BackImage[1][0][0][0][0][0]=zzk.0.1
+BackImage[2][0][0][0][0][0]=zzk.0.2
+BackImage[3][0][0][0][0][0]=zzk.0.3
+BackImage[0][0][0][0][0][1]=zzk.1.0
+BackImage[1][0][0][0][0][1]=zzk.1.1
+BackImage[2][0][0][0][0][1]=zzk.1.2
+BackImage[3][0][0][0][0][1]=zzk.1.3

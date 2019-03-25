@@ -1,0 +1,28 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 
+#    Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=Holzhafen
+copyright=Pumuckl999
+type=habour
+enables_ware=1
+Capacity=64
+cost=288000
+maintenance=144
+intro_year=1895
+intro_month=1
+dims=1,2,4
+icon=> Holzhafen.0.3
+cursor=Holzhafen.1.3
+BackImage[0][0][0][0][0][0]=Holzhafen.1.1
+BackImage[0][1][0][0][0][0]=Holzhafen.1.2
+BackImage[1][0][0][0][0][0]=Holzhafen.2.0
+BackImage[1][0][1][0][0][0]=Holzhafen.2.1
+BackImage[2][0][0][0][0][0]=Holzhafen.0.0
+BackImage[2][1][0][0][0][0]=Holzhafen.0.1
+BackImage[3][0][0][0][0][0]=Holzhafen.0.2
+BackImage[3][0][1][0][0][0]=Holzhafen.1.0
+-------------------------------------------

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="iso-8859-2"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>System Architecture</title>
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+<link href="include/style.css" type="text/css" rel="StyleSheet" />
+</head>
+
+<body>
+
+
+<h1>
+    System Architecture</h1>
+
+
+<h2>
+    Architecture Outline</h2>
+
+
+<div align="center">
+<table class="tableback" width="600px">
+<tr>
+<td>
+<ul>
+    <li><b>Specification</b><br />
+    System will be implemented as a client - server based web application.
+    Clients will be standard web browsers and server will be set of dynamic
+    scripts communicating with a database. Communication between clients and
+    server will run on standard http protocol, displayed pages will be coded in
+    html language.</li>
+
+    <li><b>Scripting</b><br />
+    PHP language will be used for scripts. Detailed information about its
+    version and configuration can be found on <a href="platform.htm">platform
+    description page</a>.</li>
+
+    <li><b>Database</b><br />
+    MySQL will be used as a database application. Communication will be done
+    through common routines of PHP and SQL language. Detailed information about
+    database can be found on <a href="db.htm">database description page</a>.</li>
+
+    <li><b>Server Concept</b><br />
+    Server will be implemented as a set of independent modules. The modules
+    should not communicate directly with each other. Each module will carry out
+    specific operation communicating with the user and the database, leaving the
+    database in consistent state. After finishing the task user will be returned
+    back to the main page where he will be able to choose next task and use
+    other module.</li>
+
+    <li><b>Authorization</b><br />
+    Authorization of user will be done through user login. Session will be
+    created and maintained until user logs of. Information about the session and
+    thus the user will be only information which will be passed between modules.
+    This task will be done by unified page header (for details, see page
+    description), which will handle the session, user identification as well as
+    some security functions.</li>
+
+
+
+</ul>
+</td>
+</tr>
+</table>
+</div>
+
+    <h2>Module Hierarchy</h2>
+
+    <p>&nbsp;</p>
+
+    <center>
+    <img border="0" src="images/hierarchy.gif" width="700" height="268">
+    </center>
+
+    <p>&nbsp;</p>
+    <h2><a name="directories">&nbsp;</a>Server Directory Structure</h2>
+<div align="center">
+<table class="tableback" width="600px">
+<tr>
+<td>
+<p class="MsoNormal" style="text-align: left"><span lang="EN-US">Assume that the
+directory &#8220;/&#8221; is the www entry point of the server. Then:</span></p>
+<p class="MsoNormal" style="text-align: left">
+<span lang="EN-US" style="font-family: Courier New">/index.htm</span><span lang="EN-US"><font face="Courier New">&nbsp;</font>will
+be the entry page (containing links)</span><span lang="EN-US" style="font-family: Courier New"><br>
+/images/</span><span lang="EN-US"><font face="Courier New">&nbsp;&nbsp;&nbsp;</font>will hold
+images and data files used by supplementary pages</span><span lang="EN-US" style="font-family: Courier New"><br>
+/data/</span><span lang="EN-US"><font face="Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>will hold
+extracted thumbnails of object images</span><span lang="EN-US" style="font-family: Courier New"><br>
+/doc/</span><span lang="EN-US"><font face="Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>will be the
+place for complete project documentation</span><span lang="EN-US" style="font-family: Courier New"><br>
+/help/</span><span lang="EN-US"><font face="Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>will
+contain the user&#8217;s manual</span><span lang="EN-US" style="font-family: Courier New"><br>
+/script/</span><span lang="EN-US"><font face="Courier New">&nbsp;&nbsp;&nbsp;</font>will hold
+all the .php files</span><span lang="EN-US" style="font-family: Courier New"><br>
+/script/images/</span><span lang="EN-US">&nbsp;&nbsp; will hold images used by
+scripts</span><span lang="EN-US" style="font-family: Courier New"><br>
+/script/include/</span><span lang="EN-US">&nbsp;will contain used template files and
+files with common headers</span><span lang="EN-US" style="font-family: Courier New"><br>
+/tmp/</span><span lang="EN-US"><font face="Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>directory
+for temporary files</span></p>
+<p>Directory listing should be forbidden from security reasons by default in all directories.</p>
+
+
+
+    <p>&nbsp;</p>
+
+    <h2>Use Cases</h2>
+
+    <p class="center">Please go to use cases page.</p>
+
+    <p>&nbsp;</p>
+
+    <h2>Deployment Scheme</h2>
+
+    <center>
+    <img border="0" src="images/deployment.gif" width="600" height="390">
+    </center>
+
+
+    <p class="center">Notation: UML</p>
+
+    <p>
+    Both web and database servers may or may not run on single machine.<br />
+    Reference implementation has both servers on one machine.</p>
+
+</td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>

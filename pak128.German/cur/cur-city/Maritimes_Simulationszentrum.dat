@@ -1,0 +1,51 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Stadt
+#	Neu:11-2014
+#	Letzte Bearbeitung:
+#    04-09-2015 The Transporter
+# --------------------------------
+Obj=building
+Name=Maritimes_Simulationszentrum
+copyright=pumuckl999
+Type=cur
+level=21
+chance=100
+intro_year=1999
+build_time=14000
+climates=mediterran
+needs_ground=1
+dims=2,2,4
+BackImage[0][0][0][0][0][0]=Maritimes_Simulationszentrum.3.0
+BackImage[0][0][1][0][0][0]=Maritimes_Simulationszentrum.3.1
+BackImage[0][1][0][0][0][0]=Maritimes_Simulationszentrum.4.0
+BackImage[0][1][1][0][0][0]=Maritimes_Simulationszentrum.4.1
+BackImage[1][0][0][0][0][0]=Maritimes_Simulationszentrum.3.2
+BackImage[1][0][1][0][0][0]=Maritimes_Simulationszentrum.3.3
+BackImage[1][1][0][0][0][0]=Maritimes_Simulationszentrum.4.2
+BackImage[1][1][1][0][0][0]=Maritimes_Simulationszentrum.4.3
+BackImage[2][0][0][0][0][0]=Maritimes_Simulationszentrum.3.4
+BackImage[2][0][1][0][0][0]=Maritimes_Simulationszentrum.3.5
+BackImage[2][1][0][0][0][0]=Maritimes_Simulationszentrum.4.4
+BackImage[2][1][1][0][0][0]=Maritimes_Simulationszentrum.4.5
+BackImage[3][0][0][0][0][0]=Maritimes_Simulationszentrum.3.6
+BackImage[3][0][1][0][0][0]=Maritimes_Simulationszentrum.3.7
+BackImage[3][1][0][0][0][0]=Maritimes_Simulationszentrum.4.6
+BackImage[3][1][1][0][0][0]=Maritimes_Simulationszentrum.4.7
+BackImage[0][0][0][0][0][1]=Maritimes_Simulationszentrum.7.0
+BackImage[0][0][1][0][0][1]=Maritimes_Simulationszentrum.7.1
+BackImage[0][1][0][0][0][1]=Maritimes_Simulationszentrum.8.0
+BackImage[0][1][1][0][0][1]=Maritimes_Simulationszentrum.8.1
+BackImage[1][0][0][0][0][1]=Maritimes_Simulationszentrum.7.2
+BackImage[1][0][1][0][0][1]=Maritimes_Simulationszentrum.7.3
+BackImage[1][1][0][0][0][1]=Maritimes_Simulationszentrum.8.2
+BackImage[1][1][1][0][0][1]=Maritimes_Simulationszentrum.8.3
+BackImage[2][0][0][0][0][1]=Maritimes_Simulationszentrum.7.4
+BackImage[2][0][1][0][0][1]=Maritimes_Simulationszentrum.7.5
+BackImage[2][1][0][0][0][1]=Maritimes_Simulationszentrum.8.4
+BackImage[2][1][1][0][0][1]=Maritimes_Simulationszentrum.8.5
+BackImage[3][0][0][0][0][1]=Maritimes_Simulationszentrum.7.6
+BackImage[3][0][1][0][0][1]=Maritimes_Simulationszentrum.7.7
+BackImage[3][1][0][0][0][1]=Maritimes_Simulationszentrum.8.6
+BackImage[3][1][1][0][0][1]=Maritimes_Simulationszentrum.8.7
+--------------------------------------------------------------

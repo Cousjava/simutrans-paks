@@ -1,0 +1,25 @@
+#---------------------------------
+#	PAK128.german
+#	Ground Object
+#    Neu: 12-2014
+#    letzte Bearbeitung:
+#    03-09-2015 The Transporter
+#---------------------------------
+obj=ground_obj
+name=Segelboot
+copyright=pumuckl999
+DistributionWeight=2
+cost=10000
+seasons=1
+climates=water
+speed=5
+waytype=water
+Image[W][0]=segelboot.0.0
+Image[NW][0]=segelboot.0.1
+Image[N][0]=segelboot.0.2
+Image[NE][0]=segelboot.0.3
+Image[E][0]=segelboot.0.4
+Image[SE][0]=segelboot.0.5
+Image[S][0]=segelboot.0.6
+Image[SW][0]=segelboot.0.7
+----------------------------

@@ -1,0 +1,22 @@
+#	PAK128.german
+#	Buildings-curiousity
+
+obj=building
+name=Hasenfurz
+copyright=pumuckl999
+type=cur
+level=3
+intro_year=1850
+intro_month=1
+#retire_year=1933
+#retire_month=
+needs_ground=1
+#noinfo=1
+#noconstruction=1
+#build_time=
+#location=city#wert ist eigentlich nur bei factorys erlaubt!
+#passengers=level/2 oder 10 #level/value oder value
+climates=desert, mediterran, temperate, tundra
+dims=1,1,1
+BackImage[0][0][0][0][0][0]=hasenf.0.0
+

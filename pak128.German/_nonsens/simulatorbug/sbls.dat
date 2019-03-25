@@ -1,0 +1,44 @@
+#	PAK128.german
+#	Vehicle
+obj=vehicle
+name=seltsames Luftschiff
+copyright=pumuckl999
+intro_year=1850
+intro_month=1
+#retire_year=2015
+#retire_month=12
+waytype=air
+cost=1000000
+runningcost=100
+freight=Passagiere
+payload=30
+engine_type=steam
+power=500
+gear=130
+speed=200
+weight=5
+length=4
+sound=3
+#smoke=Steam_ship
+constraint[prev][0]=none
+constraint[prev][1]=none
+constraint[next][0]=none
+constraint[next][1]=none
+EmptyImage[S]=sbls.0.6
+EmptyImage[N]=sbls.0.2,-10,0
+EmptyImage[E]=sbls.0.4,-6,0
+EmptyImage[W]=sbls.0.0
+EmptyImage[SW]=sbls.0.7
+EmptyImage[SE]=sbls.0.5
+EmptyImage[NW]=sbls.0.1
+EmptyImage[NE]=sbls.0.3,-26,0
+#freightImageType[0]=
+#freightimage[0][S]=
+#freightimage[0][N]=
+#freightimage[0][E]=
+#freightimage[0][W]=
+#freightimage[0][SW]=
+#freightimage[0][SE]=
+#freightimage[0][NE]=
+#freightimage[0][NW]=
+#_EO_

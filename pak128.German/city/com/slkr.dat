@@ -1,0 +1,17 @@
+Obj=building
+Name=Schule Luetten-Klein
+copyright=pumuckl999
+Type=com
+level=13
+intro_year=1969
+chance=90
+climates=mediterran, tropic, desert
+dims=1,1,4
+BackImage[0][0][0][0][0][0]=slkr_sommer.0.0
+BackImage[1][0][0][0][0][0]=slkr_sommer.0.1
+BackImage[2][0][0][0][0][0]=slkr_sommer.0.2
+BackImage[3][0][0][0][0][0]=slkr_sommer.0.3
+BackImage[0][0][0][0][0][1]=slkr_winter.0.0
+BackImage[1][0][0][0][0][1]=slkr_winter.0.1
+BackImage[2][0][0][0][0][1]=slkr_winter.0.2
+BackImage[3][0][0][0][0][1]=slkr_winter.0.3

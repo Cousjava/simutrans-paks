@@ -1,0 +1,29 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 25-12-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=alter_Anleger_Passagiere-Post
+copyright=Pumuckl999
+type=habour
+enables_pax=1
+enables_post=1
+Level=1
+cost=64000
+maintenance=8
+intro_year=1720
+intro_month=1
+dims=1,2,4
+icon=> anleger_altPP.2.2
+cursor=anleger_altPP.0.0
+BackImage[2][0][0][0][0][0]=anleger_altPP.0.0
+BackImage[2][1][0][0][0][0]=anleger_altPP.0.1
+BackImage[3][0][0][0][0][0]=anleger_altPP.0.2
+BackImage[3][0][1][0][0][0]=anleger_altPP.1.0
+BackImage[0][0][0][0][0][0]=anleger_altPP.1.1
+BackImage[0][1][0][0][0][0]=anleger_altPP.1.2
+BackImage[1][0][0][0][0][0]=anleger_altPP.2.0
+BackImage[1][0][1][0][0][0]=anleger_altPP.2.1
+----------------------------------------------------------

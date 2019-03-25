@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Gleise
+#	Neu:31-10-2017
+#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+---------------------------------
+obj=tunnel
+name=Eisenbahntunnel_40
+waytype=track
+copyright=The Transporter, pumuckl999
+intro_year=1839
+intro_month=1
+cost=70000
+maintenance=70
+topspeed=40
+icon=> ETunnel40.2.0
+cursor=ETunnel40.0.0
+BackImage[N][0]=ETunnel40.0.0
+FrontImage[N][0]=ETunnel40.1.0
+BackImage[W][0]=ETunnel40.0.3
+FrontImage[W][0]=ETunnel40.1.3
+BackImage[S][0]=ETunnel40.0.2
+FrontImage[S][0]=ETunnel40.1.2
+BackImage[E][0]=ETunnel40.0.1
+FrontImage[E][0]=ETunnel40.1.1
+#Wintergrafiken
+BackImage[N][1]=ETunnel40.0.4
+FrontImage[N][1]=ETunnel40.1.4
+BackImage[W][1]=ETunnel40.0.7
+FrontImage[W][1]=ETunnel40.1.7
+BackImage[S][1]=ETunnel40.0.6
+FrontImage[S][1]=ETunnel40.1.6
+BackImage[E][1]=ETunnel40.0.5
+FrontImage[E][1]=ETunnel40.1.5

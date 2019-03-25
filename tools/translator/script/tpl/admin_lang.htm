@@ -1,0 +1,110 @@
+<!--(if:value_message)-->
+  <HR>
+  <!--(list:messages)-->
+  <!--(item)-->
+    <!--(message)--><br />
+  <!--(enditem)-->
+  <!--(endlist)-->
+<!--(endif)-->
+
+<!--(if:formlang)-->
+  <HR>
+  <h2><!--(gui_subtitle2)--></h2>
+  
+  <form enctype="multipart/form-data" action="admin.php" method="POST">
+    <input type="hidden" name="action" value="language">
+    <input type="hidden" name="mode" value="<!--(value_mode)-->">
+    <input type="hidden" name="language_id" value="<!--(value_lang)-->">
+    <table align="center" cellpadding="3" cellspacing="0" >
+      <tr class="bg_trans">
+        <td> <b><!--(gui_lang)-->:</b> </td>
+        <td> <!--(value_lang)--> </td>
+        <td> <!--(if:newlang)--><input type="text" name="new_language_id" value="" size=20><!--(endif)--> </td>
+     </tr>
+
+      <tr class="bg_grey">
+        <td> <b><!--(gui_lang2)-->:</b> </td>
+        <td> <!--(value_langcode2)--> </td>
+        <td> <input type="text" name="language_code2" value="<!--(value_langcode2)-->" size=20> </td>
+     </tr>
+
+      <tr class="bg_trans">
+        <td> <b><!--(gui_langname)-->:</b> </td>
+        <td> <!--(value_langname)--> </td>
+        <td> <input type="text" name="language_name" value="<!--(value_langname)-->" size="20"> </td>
+      </tr>
+
+      <tr class="bg_grey">
+        <td> <b><!--(gui_font1)-->:</b> </td>
+        <td> <!--(value_font1)--> </td>
+        <td> <input type="text" name="lang_font1" value="<!--(value_font1)-->"> </td>
+      </tr>
+
+      <!--tr>
+        <td> <b><!--(gui_font2)- ->:</b> </td>
+        <td> <!--(value_font2)- -> </td>
+        <td> <input type="text" name="lang_font2" value="<!--(value_font2)- ->"> </td>
+      </tr-->
+
+      <tr class="bg_trans">
+        <td> <b><!--(gui_codepage)-->:</b> </td>
+        <td> <!--(value_codepage)--> </td>
+        <td>
+          <select name="lang_coding">
+            <!--(list:codepages)-->
+            <!--(item)-->
+              <option <!--(value_select)--> ><!--(value_opt_codepage)--></option>
+            <!--(enditem)-->
+            <!--(endlist)-->
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding-top:2em;"> <!--(if:gui_submit_delete)--><input type="submit" name="submit" value="<!--(gui_submit_delete)-->"><!--(endif)--> </td>
+        <td>  </td>
+        <td style="padding-top:2em;"> <input type="submit" name="submit" value="<!--(gui_submit_save)-->"> </td>
+      </tr>
+    </table>
+  </form>
+<!--(endif)-->
+
+<!--(value_error)-->
+
+<!--(if:listlang)-->
+<HR>
+<!-- language list -->
+  <a name='lang'></a>
+  <h2><!--(gui_subtitle)--></h2>
+
+  <a href="admin.php?action=language&mode=add" ><!--(gui_create_lang)--></a>
+
+  <table class="top" cellpadding="5" cellspacing="0" border="1">
+
+    <tr class="adm_table_head">
+      <th>&nbsp;</td>
+      <th><!--(gui_lang)--></th>
+      <th><!--(gui_lang2)--></th>
+      <th><!--(gui_langname)--></th>
+      <th><!--(gui_font1)--></th>
+      <!--th><!--(gui_font2)- -></th-->
+      <th><!--(gui_codepage)--></th>
+    </tr>
+    <!--(list:languages)-->
+    <!--(item)-->
+      <tr class="<!--(line_css)-->">
+        <td><!--(value_nr)--></td>
+        <td><!--(value_language_id)--></td>
+        <td><!--(value_language_code2)--></td>
+        <td>
+          <!--(value_language_name)--><br /><hr>
+          <nobr><!--(value_language_manage)--></nobr>
+        </td>
+        <td><!--(value_font1)--></td>
+        <!--td><!--(value_font2)- -></td-->
+        <td><!--(value_codepage)--></td>
+      </tr>
+    <!--(enditem)-->
+    <!--(endlist)-->
+
+  </table>

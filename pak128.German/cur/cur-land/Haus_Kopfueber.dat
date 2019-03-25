@@ -1,0 +1,27 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Land
+#	Neu:01-2014
+#	Letzte Bearbeitung:
+#    04-09-2015 The Transporter
+# --------------------------------
+Obj=building
+Name=Haus_Kopfueber
+copyright=pumuckl999
+Type=cur
+level=31
+chance=60
+intro_year=2010
+needs_ground=0
+build_time=15000
+climates=mediterran, tropic, desert
+dims=1,1,4
+BackImage[0][0][0][0][0][0]=Haus_Kopfueber.0.0
+BackImage[1][0][0][0][0][0]=Haus_Kopfueber.0.1
+BackImage[2][0][0][0][0][0]=Haus_Kopfueber.0.2
+BackImage[3][0][0][0][0][0]=Haus_Kopfueber.0.3
+BackImage[0][0][0][0][0][1]=Haus_Kopfueber-winter.0.0
+BackImage[1][0][0][0][0][1]=Haus_Kopfueber-winter.0.1
+BackImage[2][0][0][0][0][1]=Haus_Kopfueber-winter.0.2
+BackImage[3][0][0][0][0][1]=Haus_Kopfueber-winter.0.3
+---------------------------------------------------------

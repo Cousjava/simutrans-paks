@@ -1,0 +1,17 @@
+Obj=building
+Name=Schliemanngedenkstaette Neubukow
+copyright=pumuckl999
+Type=res
+climates=mediterran, tropic, desert
+level=2
+intro_year=1800
+chance=95
+dims=1,1,4
+BackImage[0][0][0][0][0][0]=smgsnb.0.0
+BackImage[1][0][0][0][0][0]=smgsnb.0.1
+BackImage[2][0][0][0][0][0]=smgsnb.0.2
+BackImage[3][0][0][0][0][0]=smgsnb.0.3
+BackImage[0][0][0][0][0][1]=smgsnb.1.0
+BackImage[1][0][0][0][0][1]=smgsnb.1.1
+BackImage[2][0][0][0][0][1]=smgsnb.1.2
+BackImage[3][0][0][0][0][1]=smgsnb.1.3

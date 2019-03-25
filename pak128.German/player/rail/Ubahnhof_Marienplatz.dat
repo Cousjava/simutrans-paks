@@ -1,0 +1,56 @@
+#-------------------------------
+#	PAK128.german
+#	Players Building
+#    Neu:   21-10-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+#-------------------------------
+Obj=building
+Name=U-Bahnhof_Marienplatz
+copyright=pumuckl999
+intro_year=1971
+intro_month=1
+waytype=track
+type=stop
+Level=5
+cost=384000
+maintenance=40
+type=extension
+enables_pax=1
+Dims=1,1,8
+icon=> Ubahnhof_Marienplatz.6.0
+cursor=Ubahnhof_Marienplatz.0.2
+#BackImage[8][0][0][0][0][0]=Ubahnhof_Marienplatz.1.1
+#BackImage[9][0][0][0][0][0]=Ubahnhof_Marienplatz.0.2
+#BackImage[10][0][0][0][0][0]=Ubahnhof_Marienplatz.2.1
+#BackImage[11][0][0][0][0][0]=Ubahnhof_Marienplatz.2.2
+#BackImage[12][0][0][0][0][0]=Ubahnhof_Marienplatz.0.1
+#BackImage[13][0][0][0][0][0]=Ubahnhof_Marienplatz.0.5
+#BackImage[14][0][0][0][0][0]=Ubahnhof_Marienplatz.0.6
+#BackImage[15][0][0][0][0][0]=Ubahnhof_Marienplatz.0.7
+BackImage[0][0][0][0][0][0]=Ubahnhof_Marienplatz.1.1
+BackImage[1][0][0][0][0][0]=Ubahnhof_Marienplatz.1.2
+BackImage[2][0][0][0][0][0]=Ubahnhof_Marienplatz.2.1
+BackImage[3][0][0][0][0][0]=Ubahnhof_Marienplatz.2.2
+BackImage[4][0][0][0][0][0]=Ubahnhof_Marienplatz.0.1
+BackImage[5][0][0][0][0][0]=Ubahnhof_Marienplatz.0.2
+BackImage[6][0][0][0][0][0]=Ubahnhof_Marienplatz.0.1
+BackImage[7][0][0][0][0][0]=Ubahnhof_Marienplatz.0.2
+
+#FrontImage[8][0][0][0][0][0]=Ubahnhof_Marienplatz.4.0
+#FrontImage[9][0][0][0][0][0]=Ubahnhof_Marienplatz.4.1
+#FrontImage[10][0][0][0][0][0]=Ubahnhof_Marienplatz.4.2
+#FrontImage[11][0][0][0][0][0]=Ubahnhof_Marienplatz.4.3
+#FrontImage[12][0][0][0][0][0]=Ubahnhof_Marienplatz.4.4
+#FrontImage[13][0][0][0][0][0]=Ubahnhof_Marienplatz.4.5
+#FrontImage[14][0][0][0][0][0]=Ubahnhof_Marienplatz.4.6
+#FrontImage[15][0][0][0][0][0]=Ubahnhof_Marienplatz.4.7
+FrontImage[0][0][0][0][0][0]=Ubahnhof_Marienplatz.4.1
+FrontImage[1][0][0][0][0][0]=Ubahnhof_Marienplatz.4.2
+FrontImage[2][0][0][0][0][0]=Ubahnhof_Marienplatz.5.1
+FrontImage[3][0][0][0][0][0]=Ubahnhof_Marienplatz.5.2
+FrontImage[4][0][0][0][0][0]=Ubahnhof_Marienplatz.3.1
+FrontImage[5][0][0][0][0][0]=Ubahnhof_Marienplatz.3.2
+FrontImage[6][0][0][0][0][0]=Ubahnhof_Marienplatz.3.1
+FrontImage[7][0][0][0][0][0]=Ubahnhof_Marienplatz.3.2
+
+-----------------------------------------------

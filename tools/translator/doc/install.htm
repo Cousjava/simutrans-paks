@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="iso-8859-2"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Installation Guide</title>
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+<link href="include/style.css" type="text/css" rel="StyleSheet" />
+</head>
+
+<body>
+
+
+<h1>Installation Guide</h1>
+
+
+<div align="center">
+<table class="tableback">
+<tr>
+<td>
+<h2>Client</h2>
+<p class="justified">Any web browser can be used as a SimuTranslator client. Download for example
+<a href="http://www.mozilla.org/products/firefox/">FireFox Browser</a> (install it using instructions provided) and log into the primary
+SimuTranslator server: <a href="http://www.translator.simutrans.com">
+www.translator.simutrans.com</a> . </p>
+<h2>Server</h2>
+<p class="justified">If you want to translate Simutrans, you do not need to install own
+SimuTranslator server. You can use primary installation on: <a href="http://www.translator.simutrans.com">
+www.translator.simutrans.com</a> . Follow instructions there to get an access.</p>
+<p>If you wish to use SimuTranslator for your own purposes and thus you need
+your own server, <b>please follow these steps</b>:</p>
+<ol>
+  <li><b>Get the files</b><br>
+  Download <a href="files/install.zip">server scripts</a>. This package contains all scripts you will need to
+  run SimuTranslator server.</li>
+  <li><b>Set-up your server</b><br>
+  Set your machine so that it meets requirements stated in
+  <a href="platform.htm">platform
+  specification</a>. Reported configuration is close to minimal one, so you need to
+  enable at least those PHP functions.</li>
+  <li><b>Create directory structure<br>
+  </b>Create directories on your server machine in a www root for SimuTranslator as
+  described in the <a href="architecture.htm#directories">server directory structure</a>. Do not forget to set proper access
+  rights and disable directory browsing to reduce security risks.</li>
+  <li><b>Setup MySQL database<br>
+  </b>Run database creation script provided in the <a href="files/install.zip">install package</a> and create the SimuTranslator
+  database. Enable only localhost access (or access from the machine running PHP
+  server if different).</li>
+  <li><b>Create database accounts<br>
+  </b>Create database accounts as described in <a href="files/db_access.txt">account specification</a>.</li>
+  <li><b>Check link consistency<br>
+  </b>Some links in the scripts have hard-coded base
+  <a href="http://www.translator.simutrans.com">www.translator.simutrans.com</a>.
+  Search your scripts for this keyword and replace it by your new base address.
+  You might wish to keep the links to the documentation, if you are not planning
+  to use own documentation. You may also wish to replace the references to the
+  help by your name and address.</li>
+  <li><b>Log for the first time<br>
+  </b>Use default access login: &quot;root&quot;, password: &quot;root&quot;, to access SimuTranslator
+  for the first time!</li>
+  <li><b>Setup user accounts<br>
+  </b>Follow the instructions from user manual and setup user accounts you need. It
+  is strongly recommended that you either disable root account or change its
+  password to prevent security risks.</li>
+  <li><b>Finished!<br>
+  </b>Congratulation! Your SimuTranslator server is now ready to be used. You can
+  send users their
+  access information and import object specifications and start translating.</li>
+</ol>
+<p>In case of any questions, please contact
+<a href="mailto:t_kubes@yahoo.com?subject=SimuTranslator">Tomáš Kubeš</a>.</td>
+</tr>
+</table>
+</div>
+
+<p>
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+</p>
+
+<div style="text-align: center">
+<hr width="90%" />
+<p class="ending">
+<br />
+
+<b>SimuTranslator:</b> &copy;2004-2005 <a href="team.htm">SimuTranslator Team</a><br />
+<b>Documentation:</b> &copy;2004-2005 <a href="http://www.tomaskubes.net">Tom&aacute;&scaron; Kube&scaron;</a><br />
+<a href="index.htm">SimuTranslator documentation home</a>
+<br />&nbsp;
+</p>
+<hr width="90%" />
+</div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+Single token sample :<br>
+First Name : [<!--(token:first_name)-->]<br>
+Last Name : [<!--(token:last_name)-->]<br>
+Same thing, without the 'token' keyword :<br>
+First Name : [<!--(first_name)-->]<br>
+Last Name : [<!--(last_name)-->]<br>
+(Notice that the same value of a token can be used several time without
+any problem)
+<hr>
+List sample :
+<br>
+<!--(list:my_list)-->
+Tokens are not supported inside a list "block" :
+ [<!--(token:token_dans_liste)-->].
+<br>
+If the list is defined but empty the following block will not be used :
+<!--(ifempty)-->
+<br>Empty block. No token allowed inside.<br>
+<!--(endifempty)-->
+<br>
+If the list is not empty the following block will be used :
+<br>
+<!--(ifnotempty)-->
+<br>Not empty block inside a list.
+<br>
+<table border="1">
+<!--(endifnotempty)-->
+
+<!--(item)-->
+<tr>
+  <td>Column 1 of line :<!--(tok1)--></td>
+  <td>Column 2 of line :<!--(tok2)--></td>
+</tr>
+<!--(enditem)-->
+
+<!--(ifnotempty)-->
+</table>
+<!--(endifnotempty)-->
+
+<!--(endlist)-->
+
+<hr>
+Condition 'if'/'ifnot' sample : 
+<!--(if:condition_1)-->
+<br>First condition is ok !<br>
+Tokens (like [<!--(inside_condition)-->]) are supported inside a condition block
+<!--(endif)-->
+<!--(ifnot:condition_1)-->
+<br>First condition is not ok !
+<!--(endifnot)-->
+<!--(ifnot:condition_2)-->
+<br>Condition 2 is ok !
+<!--(endifnot)-->
+<!--(if:condition_3)-->
+<br>Condition 3 is present !<br>
+Condition 3 value : (<!--(condition_3)-->)
+<!--(endif)-->
+<!--(include:footer)-->
+

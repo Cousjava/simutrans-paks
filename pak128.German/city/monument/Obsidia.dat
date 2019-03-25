@@ -1,0 +1,25 @@
+# -------------------------------
+#	PAK128.german
+#	Denkmal
+#	Neu:12-2014
+#	Letzte Bearbeitung:
+#    04-09-2015 The Transporter
+# --------------------------------
+Obj=building
+name=Obsidia
+copyright=Pumuckl999
+type=mon
+level=40
+chance=25
+intro_year=1800
+Dims=1,1,4
+BackImage[0][0][0][0][0][0]=Obsidia.1.0
+BackImage[1][0][0][0][0][0]=Obsidia.1.1
+BackImage[2][0][0][0][0][0]=Obsidia.1.2
+BackImage[3][0][0][0][0][0]=Obsidia.1.3
+BackImage[0][0][0][0][0][1]=Obsidia.2.0
+BackImage[1][0][0][0][0][1]=Obsidia.2.1
+BackImage[2][0][0][0][0][1]=Obsidia.2.2
+BackImage[3][0][0][0][0][1]=Obsidia.2.3
+------------------------------------------
+

@@ -1,0 +1,86 @@
+#	PAK128.german
+#	Buildings-Factory
+#Basis Informationen
+obj=factory
+name=Die_etwas_andere_Fleischfabrik
+copyright=pumuckl999
+level=5
+intro_year=1905
+intro_month=1
+#retire_year=1933
+#retire_month=12
+location=land
+DistributionWeight=50
+#produktion
+productivity=300
+range=100
+inputgood[0]=Touristen
+inputfactor[0]=30
+inputsupplier[0]=1
+inputcapacity[0]=500
+outputgood[0]=Fleisch
+outputfactor[0]=50
+outputcapacity[0]=100
+#produktions steigerung
+#expand_probability=
+#expand_minimum=
+#expand_range=
+#expand_times=
+electricity_boost=1000
+#passenger_demand=65535
+#mail_demand=
+#passenger_boost=
+#mail_boost=
+#fields
+#min_fields=10#erlaubter minimumwert
+#max_fields=36#erlaubter maximumwert
+#probability_to_spawn=10#entspricht 1%
+#fields[0]=
+#production_per_field[0]=5
+#storage_capacity[0]=100
+#spawn_weight[0]=25
+#has_snow[0]=
+#sonstiges
+electricity_amount=50
+#Smoke=
+#SmokeTile=
+#SmokeOffset=12,12#Position X, Position Y max 100!
+#SmokeSpeed=
+#needs_ground=
+mapcolor=119
+climates=mediterran, temperate, tundra, rocky
+dims=2,4,4
+#grafik
+BackImage[0][0][0][0][0][0]=deaff.0.0
+BackImage[0][0][1][0][0][0]=deaff.0.1
+BackImage[0][1][0][0][0][0]=deaff.0.2
+BackImage[0][1][1][0][0][0]=deaff.0.3
+BackImage[0][2][0][0][0][0]=deaff.0.4
+BackImage[0][2][1][0][0][0]=deaff.0.5
+BackImage[0][3][0][0][0][0]=deaff.1.0
+BackImage[0][3][1][0][0][0]=deaff.1.1
+BackImage[1][0][0][0][0][0]=deaff.1.2
+BackImage[1][0][1][0][0][0]=deaff.1.3
+BackImage[1][0][2][0][0][0]=deaff.1.4
+BackImage[1][0][3][0][0][0]=deaff.1.5
+BackImage[1][1][0][0][0][0]=deaff.2.0
+BackImage[1][1][1][0][0][0]=deaff.2.1
+BackImage[1][1][2][0][0][0]=deaff.2.2
+BackImage[1][1][3][0][0][0]=deaff.2.3
+BackImage[2][0][0][0][0][0]=deaff.2.4
+BackImage[2][0][1][0][0][0]=deaff.2.5
+BackImage[2][1][0][0][0][0]=deaff.3.0
+BackImage[2][1][1][0][0][0]=deaff.3.1
+BackImage[2][2][0][0][0][0]=deaff.3.2
+BackImage[2][2][1][0][0][0]=deaff.3.3
+BackImage[2][3][0][0][0][0]=deaff.3.4
+BackImage[2][3][1][0][0][0]=deaff.3.5
+BackImage[3][0][0][0][0][0]=deaff.4.0
+BackImage[3][0][1][0][0][0]=deaff.4.1
+BackImage[3][0][2][0][0][0]=deaff.4.2
+BackImage[3][0][3][0][0][0]=deaff.4.3
+BackImage[3][1][0][0][0][0]=deaff.4.4
+BackImage[3][1][1][0][0][0]=deaff.4.5
+BackImage[3][1][2][0][0][0]=deaff.5.0
+BackImage[3][1][3][0][0][0]=deaff.5.1
+#_EO_

@@ -1,0 +1,29 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 18-11-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=Lagerschuppen_Hannover
+copyright=pumuckl999
+type=extension
+enables_ware=1
+NoInfo=1
+Level=6
+cost=384000
+maintenance=48
+intro_year=1800
+intro_month=1
+Dims=1,1,4
+cursor=LS_Hannover.0.0
+icon=> LS_Hannover.2.0
+BackImage[0][0][0][0][0][0]=LS_Hannover.0.2
+BackImage[1][0][0][0][0][0]=LS_Hannover.0.1
+BackImage[2][0][0][0][0][0]=LS_Hannover.0.0
+BackImage[3][0][0][0][0][0]=LS_Hannover.0.3
+BackImage[0][0][0][0][0][1]=LS_Hannover.1.2
+BackImage[1][0][0][0][0][1]=LS_Hannover.1.1
+BackImage[2][0][0][0][0][1]=LS_Hannover.1.0
+BackImage[3][0][0][0][0][1]=LS_Hannover.1.3
+-------------------------------------------------

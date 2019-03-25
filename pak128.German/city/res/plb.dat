@@ -1,0 +1,17 @@
+Obj=building
+Name=Pons
+copyright=pumuckl999
+Type=res
+level=4
+intro_year=1510
+chance=90
+climates=mediterran, tropic, desert
+dims=1,1,4
+BackImage[0][0][0][0][0][0]=plb_sommer.0.0
+BackImage[1][0][0][0][0][0]=plb_sommer.0.1
+BackImage[2][0][0][0][0][0]=plb_sommer.0.2
+BackImage[3][0][0][0][0][0]=plb_sommer.0.3
+BackImage[0][0][0][0][0][1]=plb_winter.0.0
+BackImage[1][0][0][0][0][1]=plb_winter.0.1
+BackImage[2][0][0][0][0][1]=plb_winter.0.2
+BackImage[3][0][0][0][0][1]=plb_winter.0.3

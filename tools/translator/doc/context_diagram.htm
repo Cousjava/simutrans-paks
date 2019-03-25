@@ -1,0 +1,123 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<link href="include/style.css" type="text/css" rel="StyleSheet" />
+<title>Context Diagram</title>
+</head>
+
+<body>
+
+<h1>Context Diagram</h1>
+<p>&nbsp;</p>
+<p class="center"><img border="0" src="images/context_diagram.png" width="500px" height="500px"></p>
+<p>&nbsp;</p>
+
+<div align="center">
+<table class="tableback" width="600px">
+<tr>
+<td>
+
+<h2><span lang="EN-US">A - Unknown User</span></h2>
+<p class="MsoNormal"><span lang="EN-US">(Any user entering the pages without
+logging in)</span></p>
+<p class="Otazka" style="text-align: left"><span lang="EN-US"><b>1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Select
+object (choosing object name and version)</b><br>
+Object name, object type, dummy object image, current description in all
+languages and current suggestions in all languages</span></p>
+<p class="Otazka" style="text-align: left"><span lang="EN-US"><b>2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Input
+suggestion (suggestion text and language)</b><br>
+Confirmation that suggestion was saved</span></p>
+<p class="Otazka" style="text-align: left"><span lang="EN-US"><b>3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Asking
+for list of objects (with specified criteria)</b><br>
+List of objects</span></p>
+<p class="Otazka" style="text-align: left"><span lang="EN-US"><b>4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Asking
+for translation file (for given language and version)</b><br>
+Translation file</span></p>
+<h2><span lang="EN-US">B - Translator</span></h2>
+<p class="MsoNormal"><span lang="EN-US">(Can do all things like A., Logged in
+user that must have a relation translate to at least one language)</span></p>
+<p class="Otazka" style="text-align: left"><span lang="EN-US"><b>5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Selecting object (choosing object name and version and language)</b><br>
+Object name and all know attributes, preview image if any, translation in all
+languages translator translates, suggestion in all languages translator
+translates</span></p>
+<p class="Otazka" style="text-align: left"><span lang="EN-US"><b>6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Promoting suggestion to translation</b><br>
+Confirmation (suggestion entry will be nulled)</span></p>
+<p class="Otazka" style="text-align: left"><span lang="EN-US"><b>7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Submitting translation</b><br>
+Confirmation - transfer to next page, or stay on current page, depending on
+preferences</span></p>
+<p class="Otazka" style="text-align: left"><span lang="EN-US"><b>8 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Submitting all translations</b><br>
+Confirmation</span></p>
+<p class="Otazka" style="text-align: left"><span lang="EN-US"><b>9 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Reserving current translation texts</b><br>
+Confirmation, list of objects names for all newly reserved translation texts,
+list of all suggestions and existing translations in preferred languages for
+objects whose texts were reserved</span></p>
+<p class="Otazka" style="text-align: left"><span lang="EN-US"><b>10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Printing list of all reserved texts</b><br>
+(Response as in 9)</span></p>
+<p class="Otazka" style="text-align: left"><span lang="EN-US"><b>11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Uploading translated texts</b><br>
+Confirmation or page asking for conflict resolution</span></p>
+<p class="Otazka" style="text-align: left"><span lang="EN-US"><b>12 &nbsp;&nbsp;&nbsp;&nbsp;
+Removing reservation for given texts</b><br>
+Confirmation</span></p>
+<h2><span lang="EN-US">C - Administrator</span></h2>
+<p class="MsoNormal"><span lang="EN-US">(Can do all things as A and as B if he
+also has the relation translate to at least one language.)</span></p>
+<p class="Otazka" style="text-align: left"><span lang="EN-US"><b>13 &nbsp;&nbsp;&nbsp;&nbsp; Add
+user</b><br>
+Screen prompting for all information.</span></p>
+<p class="Otazka" style="text-align: left"><span lang="EN-US"><b>14 &nbsp;&nbsp;&nbsp;&nbsp;
+Inputting user information<br>
+</b>Confirmation or request for inputting valid data</span></p>
+<p class="Otazka" style="text-align: left"><span lang="EN-US"><b>15 &nbsp;&nbsp;&nbsp;&nbsp; Change
+of user information<br>
+</b>Confirmation</span></p>
+<p class="Otazka" style="text-align: left"><span lang="EN-US"><b>16 &nbsp;&nbsp;&nbsp;&nbsp; User
+deletion<br>
+</b>Confirmation (setting user state to removed)</span></p>
+<h2><span lang="EN-US">D - Version Maintainer</span></h2>
+<p class="MsoNormal"><span lang="EN-US">(Any administrator who has the relation
+<b>maintains</b> to any version.)</span></p>
+<p class="Otazka" style="text-align: left"><span lang="EN-US"><b>17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add new
+objects (submitting object dat files and images)<br>
+</b>Confirmation (existing objects will be overwritten without prompting)</span></p>
+<p class="Otazka" style="text-align: left"><span lang="EN-US"><b>18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Remove
+object<br>
+</b>Confirmation (cascade on delete -&gt; remove all translation texts related to
+given object and reservations)</span></td>
+</tr>
+</table>
+</div>
+
+<p>
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+</p>
+
+<div style="text-align: center">
+<hr width="90%" />
+<p class="ending">
+<br />
+
+<b>SimuTranslator:</b> &copy;2004-2005 <a href="team.htm">SimuTranslator Team</a><br />
+<b>Documentation:</b> &copy;2004-2005 <a href="http://www.tomaskubes.net">Tom&aacute;&scaron; Kube&scaron;</a><br />
+<a href="index.htm">SimuTranslator documentation home</a>
+<br />&nbsp;
+</p>
+<hr width="90%" />
+</div>
+
+</body>
+
+</html>

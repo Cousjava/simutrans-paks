@@ -1,0 +1,29 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 18-09-2018
+#    letzte Bearbeitung:
+#---------------------------------
+Obj=building
+Name=Stellwerk_Oranienburg
+copyright=pumuckl999
+intro_year=1987
+waytype=track
+Level=4
+cost=256000
+maintenance=32
+type=extension
+enables_pax=1
+enables_ware=1
+Dims=1,1,4
+cursor=Stellwerk_Oburg.0.0
+icon=> Stellwerk_Oburg.2.0
+BackImage[0][0][0][0][0][0]=Stellwerk_Oburg.0.0
+BackImage[1][0][0][0][0][0]=Stellwerk_Oburg.0.3
+BackImage[2][0][0][0][0][0]=Stellwerk_Oburg.0.2
+BackImage[3][0][0][0][0][0]=Stellwerk_Oburg.0.1
+BackImage[0][0][0][0][0][1]=Stellwerk_Oburg.1.0
+BackImage[1][0][0][0][0][1]=Stellwerk_Oburg.1.3
+BackImage[2][0][0][0][0][1]=Stellwerk_Oburg.1.2
+BackImage[3][0][0][0][0][1]=Stellwerk_Oburg.1.1
+-----------------------------------------------------

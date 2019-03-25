@@ -1,0 +1,50 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Land
+#	Neu:19-09-2018
+# --------------------------------
+Obj=building
+Name=Zeiss-Planetarium_Jena
+copyright=pumuckl999
+type=cur
+level=21
+chance=50
+intro_year=1926
+intro_month=7
+needs_ground=0
+build_time=50000
+climates=desert,tropic,mediterran,temperate,tundra
+dims=2,2,4
+BackImage[0][0][0][0][0][0]=ZeissPlanetarium.0.0
+BackImage[0][0][1][0][0][0]=ZeissPlanetarium.0.1
+BackImage[0][1][0][0][0][0]=ZeissPlanetarium.0.2
+BackImage[0][1][1][0][0][0]=ZeissPlanetarium.0.3
+BackImage[0][0][0][0][0][1]=ZeissPlanetarium.0.4
+BackImage[0][0][1][0][0][1]=ZeissPlanetarium.0.5
+BackImage[0][1][0][0][0][1]=ZeissPlanetarium.1.0
+BackImage[0][1][1][0][0][1]=ZeissPlanetarium.1.1
+BackImage[1][0][0][0][0][0]=ZeissPlanetarium.1.2
+BackImage[1][0][1][0][0][0]=ZeissPlanetarium.1.3
+BackImage[1][1][0][0][0][0]=ZeissPlanetarium.1.4
+BackImage[1][1][1][0][0][0]=ZeissPlanetarium.1.5
+BackImage[1][0][0][0][0][1]=ZeissPlanetarium.2.0
+BackImage[1][0][1][0][0][1]=ZeissPlanetarium.2.1
+BackImage[1][1][0][0][0][1]=ZeissPlanetarium.2.2
+BackImage[1][1][1][0][0][1]=ZeissPlanetarium.2.3
+BackImage[2][0][0][0][0][0]=ZeissPlanetarium.2.4
+BackImage[2][0][1][0][0][0]=ZeissPlanetarium.2.5
+BackImage[2][1][0][0][0][0]=ZeissPlanetarium.3.0
+BackImage[2][1][1][0][0][0]=ZeissPlanetarium.3.1
+BackImage[2][0][0][0][0][1]=ZeissPlanetarium.3.2
+BackImage[2][0][1][0][0][1]=ZeissPlanetarium.3.3
+BackImage[2][1][0][0][0][1]=ZeissPlanetarium.3.4
+BackImage[2][1][1][0][0][1]=ZeissPlanetarium.3.5
+BackImage[3][0][0][0][0][0]=ZeissPlanetarium.4.0
+BackImage[3][0][1][0][0][0]=ZeissPlanetarium.4.1
+BackImage[3][1][0][0][0][0]=ZeissPlanetarium.4.2
+BackImage[3][1][1][0][0][0]=ZeissPlanetarium.4.3
+BackImage[3][0][0][0][0][1]=ZeissPlanetarium.4.4
+BackImage[3][0][1][0][0][1]=ZeissPlanetarium.4.5
+BackImage[3][1][0][0][0][1]=ZeissPlanetarium.5.0
+BackImage[3][1][1][0][0][1]=ZeissPlanetarium.5.1
+----------------------------------------------------------

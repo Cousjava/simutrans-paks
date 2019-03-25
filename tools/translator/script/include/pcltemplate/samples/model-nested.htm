@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>PclTemplate - Template Sample File - <!--(page_name)--></title>
+  </head>
+  <body>
+    Hello <!--(user_name)--> !
+    <br>
+    Nested if condition inside a loop
+    <br>
+    <!--(list:users)-->
+    <table border="1">
+      <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+      </tr>
+      <!--(item)-->
+      <!--(ifnot:reverse)-->
+      <tr>
+        <td><!--(first_name)--></td>
+        <td><!--(last_name)--></td>
+      </tr>
+      <!--(endifnot)-->
+      <!--(if:reverse)-->
+      <tr>
+        <td><!--(last_name)--></td>
+        <td><!--(first_name)--></td>
+      </tr>
+      <!--(endif)-->
+      <!--(enditem)-->
+    </table>
+    <!--(endlist)-->
+    <br>Nested inside if :<br>
+    <!--(if:do_list)-->
+    New table for <!--(table_name)--> :
+    <br>
+    <!--(list:users2)-->
+    <table border="1">
+      <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+      </tr>
+      <!--(item)-->
+      <tr>
+        <td><!--(first_name)--></td>
+        <td><!--(last_name)--></td>
+      </tr>
+      <!--(enditem)-->
+    </table>
+    <!--(endlist)-->
+    <!--(endif)-->
+</body>
+</html>

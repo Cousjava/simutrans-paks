@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="iso-8859-2"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Database Description</title>
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+<link href="include/style.css" type="text/css" rel="StyleSheet" />
+</head>
+
+<body>
+
+
+<h1>
+    System Analysis</h1>
+
+
+<h2>
+    Database Schema</h2>
+
+
+<p class="center">
+    (Chen Notation)
+    <br />
+
+
+    <img border="0" src="images/database.png" width="916" height="441">
+   </p>
+
+
+<h2>
+    SQL Code</h2>
+
+
+<p class="center">
+    <a href="files/database.sql">Download</a><br />
+    View it because it contains exact naming (which differes from schema little bit due to prefixes and so on).</p>
+
+
+<h2>
+    Database Description</h2>
+
+
+<div align="center">
+<center>
+<table class="tableback">
+<tr>
+<td>
+<ul>
+    <li><b>Expected cardinalities of tables in project life time:</b><br />
+    Version: units<br>
+    Objects: units of thousands<br>
+    Property: tens of thousands<br>
+    Translation: tens of thousands<br>
+    Language: tens<br>
+    User: tens to hundreds</li>
+
+    <li><b>Access conflict resolution:</b><br />
+    Resolution of conflicts is left on the database engine. From the nature of
+    the problem flows, that conflicts should be rare, because in most cases
+    users want to avoid of parallel work on same data object. Some objects can
+    be modified by one user only, so conflict should not occur. If some user
+    intentionally causes a conflict database engine should resolve it by
+    serialization of the access.</li>
+
+    <li><b>Database access and consistency:</b><br />
+    Users should not have a direct access to the database, all operations should
+    be carried out by SimuTranslator systems. Modules should allow only such
+    operations, which would lead to consistent state of the database.</li>
+
+    <li><b>Accounts:</b><br />
+    SimuTranslator will log to database using accounts appropriate for given
+    user type. Accounts for user types will have their rights restricted to
+    necessary operations only. (<a href="files/db_access.txt">download account
+    descriptions</a>) Access to the database will be only permitted from local
+    machine, no scripts running on other machines should be able to connect to
+    database.</li>
+
+    <li><b>Data dictionary:</b><br />
+    Data dictionary is described on <a href="dictionary.htm">data dictionary page</a>.</li>
+
+
+
+</ul>
+</td>
+</tr>
+</table>
+</center>
+</div>
+
+
+ <p>
+&nbsp;<br />&nbsp; &nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+</p>
+
+<div style="text-align: center">
+<hr width="90%" />
+<p class="ending">
+<br />
+
+<b>SimuTranslator:</b> &copy;2004-2005 <a href="team.htm">SimuTranslator Team</a><br />
+<b>Documentation:</b> &copy;2004-2005 <a href="http://www.tomaskubes.net">Tom&aacute;&scaron; Kube&scaron;</a><br />
+<a href="index.htm">SimuTranslator documentation home</a>
+<br />&nbsp;
+</p>
+<hr width="90%" />
+</div>
+
+
+</body>
+</html>

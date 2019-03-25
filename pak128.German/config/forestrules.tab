@@ -1,0 +1,41 @@
+# forrestconf.tab
+#
+# Forrest configuration for Simutrans
+#
+# author: Tomas Kubes
+# date:   ???
+# update: ??? Hj. Malthaner
+# Adjustment for PAK128.german: 12-2011 michelstadt
+#
+#  Forest related values Tomas Kubes
+#  please be careful in changing them, I spent lot of time finding optimals.
+############################################################################
+
+#  those values have impact on no. of spwaned trees -> memory consumption
+#
+# Number of trees on square 2 - minimal usable, 3 good, 4 very nice looking
+max_no_of_trees_on_square = 3
+
+# Base forest size - minimal size of forest - map independent
+forest_base_size = 34
+
+# Map size divisor - smaller it is the larger are individual forests
+forest_map_size_divisor = 32
+
+# Forest count divisor - smaller it is, the more forests are generated
+forest_count_divisor = 36
+
+# Determins how dense are spare trees going to be planted (works inversly)
+forest_inverse_spare_tree_density = 600
+
+# Forest boundary sharpenss: 0 - perfectly sharp boundaries, 20 - very blurred
+# Waldgrenze sharpenss: 0 - vollkommen scharfe Grenzen, 20 - sehr trübe
+forest_boundary_blur = 20
+
+# climate with trees entirely (1: water, 2:desert, 4:tropic, 8:mediterran, 16:temperate, 32:tundra, 64:rocky, 128:arctic)
+# zero (default) means no climate with at least one tree per tile
+tree_climates = 0
+
+# climates with no trees at all (desert and arctic at the moment)
+no_tree_climates = 0
+ 

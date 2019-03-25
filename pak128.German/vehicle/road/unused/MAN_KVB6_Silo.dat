@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 31-01-2018
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=MAN_KVB-6_Siloware
+copyright=pumuckl999
+intro_year=1927
+intro_month=1
+retire_year=1950
+retire_month=12
+cost=777000
+runningcost=29
+waytype=road
+speed=30
+power=89
+weight=6
+freight=Tierfutter
+payload=5
+length=6
+smoke=Diesel_small
+sound=engine-start-diesel_d.wav
+constraint[prev][0]=none
+constraint[next][0]=MAN_KVB-6Anhaenger_Siloware
+constraint[next][1]=none
+EmptyImage[S]=MAN_KVB6_Kessel.2.0
+EmptyImage[N]=MAN_KVB6_Kessel.2.1
+EmptyImage[E]=MAN_KVB6_Kessel.2.2
+EmptyImage[W]=MAN_KVB6_Kessel.2.3
+EmptyImage[SE]=MAN_KVB6_Kessel.2.4,4,0
+EmptyImage[NW]=MAN_KVB6_Kessel.2.5,-2,0
+EmptyImage[NE]=MAN_KVB6_Kessel.2.6
+EmptyImage[SW]=MAN_KVB6_Kessel.2.7
+-------------------------------------------

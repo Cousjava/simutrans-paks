@@ -1,0 +1,42 @@
+--------------------------------
+#	PAK128.german
+#	Rollwege
+#	Neu:06-2015
+#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+---------------------------------
+Obj=way
+name=Zeppelin-Landebahn
+copyright=pumuckl999
+waytype=air
+system_type=1
+intro_year=1910
+intro_month=1
+retire_year=1940
+retire_month=12
+cost=20000
+maintenance=80
+topspeed=95
+max_weight=300
+cursor=Landebahn_Gras.1.4
+icon=> Landebahn_Gras.0.4
+Image[-]=Landebahn_Gras.0.0
+Image[N]=Landebahn_Gras.1.0
+Image[S]=Landebahn_Gras.1.1
+Image[E]=Landebahn_Gras.1.2
+Image[W]=Landebahn_Gras.1.3
+Image[NS]=Landebahn_Gras.0.1
+Image[EW]=Landebahn_Gras.0.2
+Image[NSE]=Landebahn_Gras.2.0
+Image[NSW]=Landebahn_Gras.2.1
+Image[NEW]=Landebahn_Gras.2.2
+Image[SEW]=Landebahn_Gras.2.3
+Image[NSEW]=Landebahn_Gras.0.3
+Image[NE]=Landebahn_Gras.3.0
+Image[SE]=Landebahn_Gras.3.1
+Image[NW]=Landebahn_Gras.3.2
+Image[SW]=Landebahn_Gras.3.3
+Diagonal[NE]=Landebahn_Gras.3.0
+Diagonal[SE]=Landebahn_Gras.3.1
+Diagonal[NW]=Landebahn_Gras.3.2
+Diagonal[SW]=Landebahn_Gras.3.3
+------------------------------------

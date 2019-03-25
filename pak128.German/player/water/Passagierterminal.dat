@@ -1,0 +1,28 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 
+#    Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=Passagierterminal
+copyright=Pumuckl999
+type=habour
+enables_pax=1
+Capacity=128
+cost=128000
+maintenance=36
+intro_year=1895
+intro_month=1
+dims=1,2,4
+icon=> Passagierterminal.0.3
+cursor=Passagierterminal.1.3
+BackImage[0][0][0][0][0][0]=Passagierterminal.0.0
+BackImage[0][1][0][0][0][0]=Passagierterminal.0.1
+BackImage[1][0][0][0][0][0]=Passagierterminal.0.2
+BackImage[1][0][1][0][0][0]=Passagierterminal.1.0
+FrontImage[2][0][0][0][0][0]=Passagierterminal.1.1
+BackImage[2][1][0][0][0][0]=Passagierterminal.1.2
+FrontImage[3][0][0][0][0][0]=Passagierterminal.2.0,12,-6
+FrontImage[3][0][1][0][0][0]=Passagierterminal.2.1,12,-6
+----------------------------------------------------------

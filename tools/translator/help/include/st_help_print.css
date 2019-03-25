@@ -1,0 +1,32 @@
+@charset "iso-8859-2";
+
+/* special stlye addons for screen*/
+body
+{
+    font-family: serif;
+    font-size:   90%;
+    text-align:  justify;
+
+    /*no images or centering for background*/
+    /*image is on the same palce as a css*/
+    /*background-image: url("bckg.jpg");*/
+    /*background-color: #E9E9E9;*/
+    /*width:  800px;*/
+
+    margin: 1em;
+
+}
+
+
+/* do not display these items*/
+div#header
+{
+    margin:  0em;
+    display: none;
+}
+
+div#footer
+{
+    margin:  0em;
+    display: none;
+}

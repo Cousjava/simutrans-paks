@@ -1,0 +1,76 @@
+<!--(if:value_message)-->
+  <HR>
+  <!--(list:messages)-->
+  <!--(item)-->
+    <!--(message)--><br />
+  <!--(enditem)-->
+  <!--(endlist)-->
+<!--(endif)-->
+
+<!--(if:form_license)-->
+<HR>
+<h2><!--(gui_subtitle)--></h2>
+
+<form enctype="multipart/form-data" action="admin.php" method="POST">
+ <input type="hidden" name="action" value="license">
+ <input type="hidden" name="mode" value="<!--(value_mode)-->">
+ <input type="hidden" name="flicense_id" value="<!--(value_licenseid)-->">
+ <table align="center" cellpadding="3" cellspacing="0" >
+  <tr class="bg_trans">
+   <td width="150"> <b><!--(gui_licenseid)-->:</b> </td>
+   <td width="100"> <!--(value_licenseid)--> </td>
+   <td> </td>
+  </tr>
+
+  <tr class="bg_grey">
+   <td> <b><!--(gui_license_name)-->:</b> </td>
+   <td> <!--(value_license_name)--> </td>
+   <td> <input type="text" name="flicense_name" value="<!--(value_license_name)-->" size=50> </td>
+  </tr>
+
+  <tr class="bg_trans">
+   <td> <b><!--(gui_license_link)-->:</b> </td>
+   <td> <!--(value_license_link)--> </td>
+   <td> <input type="text" name="flicense_link" value="<!--(value_license_link)-->" size=50> </td>
+  </tr>
+
+  <tr>
+   <td>  </td>
+   <td style="padding-top: 2em;"> <!--(if:delete_button)--><input type="submit" value="<!--(gui_del_button)-->"><!--(endif)--> </td>
+   <td style="padding-top: 2em;"> <input type="submit" value="<!--(gui_action_button)-->"> </td>
+  </tr>
+ </table>
+</form>
+<!--(endif)-->   
+
+
+<!--(value_error)-->
+
+<!--(if:listlicenses)--> 
+<HR>
+<!-- licenses list -->
+<h2><!--(gui_subtitle)--></h2>
+
+<center><a href="?action=license&mode=add"><!--(gui_new_licenses)--></a></center>
+<br />
+
+<table class="top" cellpadding="5" cellspacing="0" border="1" >
+
+  <tr class="adm_table_head"> 
+    <th><!--(gui_licenseid)--></th> 
+    <th><!--(gui_license_name)--></th> 
+    <th><!--(gui_license_link)--></th> 
+  </tr>
+
+  <!--(list:lineslicenses)-->
+  <!--(item)-->
+    <tr class="<!--(line_css)-->"> 
+        <td><!--(value_licenseid)--></a></td>
+        <td><a href="admin.php?action=license&id=<!--(value_licenseid)-->"><!--(value_license_name)--></a></td>
+        <td><a href="<!--(value_license_link)-->" target="_blank"><!--(value_license_link)--></a></td>
+    </tr>
+  <!--(enditem)-->
+  <!--(endlist)-->  
+
+</table>   
+<!--(endif)-->

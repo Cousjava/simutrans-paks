@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+        <title>SimuTranslator Help - Text Types</title>
+        <meta name="Description" content="SimuTranslator Help - Text Types; How to translate different texts in Simutrans." />
+        <meta name="Keywords" content="SimuTranslator, Manual, Help, Text Types, Translate" />
+        <meta name="Author" content="Tomáš Kubeš" />
+
+	<!-- for all -->
+	<link href="include/st_help.css" type="text/css" rel="StyleSheet"/>
+
+	<link href="include/st_help_disp.css" type="text/css" rel="StyleSheet" media="screen"/>
+	<link href="include/st_help_print.css" type="text/css" rel="StyleSheet" media="print"/>
+</head>
+
+
+
+<body>
+
+<!-- ======================= Logo and navigation bar ======================= -->
+<div id="header">
+
+    <a href="http://translator.simutrans.com/help/" title="SimuTranslator Help Home">
+	<img src="include/logo_help_sm.png" alt="SimuTranslator Help Home" width="210" height="40" id="logo" />
+    </a>
+
+
+    <div id="links">
+        <ul id="navigation">
+            <li><a href="index.htm" title="SimuTranslator Help Home">Main Menu</a></li>
+            <li><a href="browse_texts.htm" title="Help to find certain text">Browse Texts</a></li>
+            <li><a href="edit_texts.htm" title="Help with editation of texts">Edit Texts</a></li>
+            <li><a href="download_texts.htm" title="Help for text downloader">Download Texts</a></li>
+            <li><a href="upload_texts.htm" title="Help with text uploading">Upload Texts</a></li>
+            <li><a href="object_guide.htm" title="Help to find certain object">Object Guide</a></li>
+            <li><a href="object_management.htm" title="Sub menu for set maintainers">Manage Objects</a></li>
+            <li><a href="preferences.htm" title="Help with customization">Preferences</a></li>
+            <li><a href="administration.htm" title="Help for administrators">Administration</a></li>
+            <li><a href="contacts.htm" title="Ask developers">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="hr_bar">
+	<hr />
+    </div>
+
+</div>
+
+
+
+
+<!-- ============================== Help Text ============================== -->
+<div id="main_text" class="bckg_buildings1">
+
+
+
+
+<h1>Text Types</h1>
+
+
+
+<p>This page describes how various text types should be translated.</p>
+
+
+<h2>Names of Objects</h2>
+<h4><a id="bridge">bridge</a>, <a id="building">player building</a>, <a id="crossing">crossing</a>, <a id="factory">factory</a>, <a id="good">good</a>, <a id="ground">ground</a>, <a id="menu">menu</a>, <a id="misc">misc</a>, <a id="roadsign">roadsign</a>, <a id="tunnel">tunnel</a>, <a id="vehicle">vehicle</a>, <a id="way">way</a></h4>
+<p>This is a name of some object in the game. It should be translated as precisely as it is possible to match the master text. The text should not be very long as it must fit some window in most cases.</p>
+<p>Special for vehicles: it is advisable that the first car of the multiple car unit will be named by the general name of the unit itself. This name will be inherited by whole convoy and it is better to have convoy named NGV - PSE2 than NGV - PSE2 (head). Vehicle name should be shorter than 40 characters if possible.</p>
+<p>These names must be single line only! Simutrans will crash otherwise.</p>
+
+<h2>Unnamed Game Objects</h2>
+<h4><a id="cursor">cursor</a>, <a id="smoke">smoke</a>, <a id="symbol">symbol</a></h4>
+<p>These objects appear in the game, but user is not able to retrieve their name by any mean, so it is not necessary to translate them. They appear in SimuTranslator because whole image set can be loaded, they might become invisible to translators in the future.</p>
+
+
+<h2>Factory Info</h2>
+<h4><a id="dummy_info">dummy_info</a> (factory info)</h4>
+<p>This is a text which appears when player clicks on a details button in the factory info window. It should be something like an encyclopedia entry for a given factory: descriptive, informative and educative (something like an entry in Civilopedia for example).</p>
+<p>These texts use a specific "micro" version of html. Elements: &lt;title&gt;&lt;/title&gt;, &lt;h1&gt;&lt;/h1&gt;, &lt;p&gt;&lt;/p&gt;, &lt;br&gt;, &lt;em&gt;&lt;/em&gt;, &lt;strong&gt;&lt;/strong&gt; can be used (&lt;a&gt; in the case when a reference to other help text is needed). I think, while the formating tags really check only the first letter, so no spaces.</p>
+<p>Recommended structure for the article is: title element, h1 element and then arbitrary number of paragraph elemets. Please do not insert any new lines to this type of text!</p>
+
+
+<p>
+<strong>Example</strong><br />
+<em>
+&lt;title&gt;Fish Pond Details&lt;/title&gt;<br />&lt;h1&gt;Fish Ponds&lt;/h1&gt;<br />&lt;p&gt;Pond is a body of water where even its deepest areas are reached by sunlight or where a human can walk across the entire body of water without being underneath. In some dialects of English, pond normally refers to small artificially created bodies of water.&lt;/p&gt;<br />&lt;p&gt;In medieval times in Europe, it was typical for many monasteries, castles, etc. (small, partly self-sufficient communities) to have fish ponds. These are still common in the East Asia (notably Japan), where koi carp may be kept.&lt;/p&gt;<br />&lt;p&gt;This pond is now used for breeding fish which can be later caught, transported, and processed to food. Swimming in it is forbidden.&lt;/p&gt;<br />&lt;p&gt;Pond works as extensive aquaculture based on local photosynthetical production, meanig that fish are not being fed by artificial food.&lt;/p&gt;<br />&lt;p&gt;Limiting for fish growth here is the available food supply by natural sources, commonly zooplankton feeding on pelagic algae or benthic animals, such as certain crustaceans and mollusks. Tilapia species filter feed directly on phytoplankton, which makes higher production possible. The photosynthetical production can be increased by fertilizing the pond water with artificial fertilizer mixtures, such as potash, phosphorus, nitrogen and micro elements. Because most fishes are carnivorous, they occupy a higher place in the trophic chain and therefore only a tiny fraction of primary photosynthetical production (typically 1%) will be converted into harvestable fish.&lt;/p&gt;<br />&lt;p&gt;As a result, without additional feeding the fish harvest will not exceed 200 kilograms of fish per hectare per year, equivalent to 1% of the gross photosynthetic production.&lt;/p&gt;<br />&lt;p&gt;In order to tap all available food sources in the pond, the aquaculturist will choose fish species which occupy different places in the pond ecosystem, e.g., a filter algae feeder such as tilapia, a benthic feeder such as carp or catfish and a zooplankton feeder (various carps) or submerged weeds feeder such as grass carp.&lt;/p&gt;
+</em>
+<p>
+
+<h2>City/Curiosity Objects</h2>
+<h4><a id="building_com"></a><a id="building_ind"></a><a id="building_res">city building</a>, <a id="building_mon"></a><a id="building_cur">curiosity building</a>, <a id="citycar">citycar</a>, <a id="pedestrian">pedestrian</a>, <a id="tree">tree</a></h4>
+
+<p><img class="right" src="images/text_box.png" width="238" height="213" alt="Building description box" />These texts appear when a player clicks on some city object, for example city building. The texts should be long and witty describing daily troubles and pleasures in the life of simuthaners (Simutrans citizens). The idea is that the texts should take a player closer to the life of the Simutrans world and entertain him/her a bit.</p>
+<p>I mean descriptions like: "<i>This is six story apartment building</i>," is worthless, obviously the player can see how the building looks like! On other hand this description from Jerome Heretic: "<i>This abbey is well known because of its deep wells in both towers. According to the legend these wells are bottomless. It is incredible how many people want to come here and see the magic wells. Coins, silently dropping onto foam 50 meters below, boosted the abbey's budget so much that the monks have been able to have the ruins restored to their present state.</i>" is wonderful. It is nicely related to the building and with a little bit of humor describes some secrets ordinary being should not know. When writing these texts, please abstain from a humor which might be controversial or offensive to some groups.</p>
+<p>Since it may not be possible to translate the witty texts to all languages properly, it is perfectly fine if you make a completely new story for your language, instead of trying to translate the text precisly loosing all the meaning and fun. These texts should enrich the game and entertain the player and it is not important that they are same in all languages.</p>
+<p>Attractions (special buildings) should contain the attraction name on the first line and then 2 new lines, for example: <em>Church\n\ndescription</em> (you can use either \n or press enter, but not both!), otherwise new building built messages would look odd.</p>
+
+<h2>Program String</h2>
+<h4><a id="program_text">program_text</a></h4>
+<p>This is a piece of program string. It is important that these strings get translated precisely and that the positions and form of special characters will not be altered. <strong>Note: German translation is sometimes ahead of English translation for this type of texts.</strong></p>
+
+
+
+
+
+
+</div>
+<!-- =============================== Footer =============================== -->
+<div id="footer">
+
+    <div class="hr_bar">
+	<hr />
+    </div>
+
+    <div id="footer_text">
+        <p class="footer_p">
+            SimuTranslator: &copy;2004-2006 <a href="http://translator.simutrans.com/doc/team.htm">SimuTranslator Team</a><br />
+            Documentation: &copy;2004-2006 <a href="http://www.tomaskubes.net">Tom&aacute;&scaron; Kube&scaron;</a><br />
+            <a href="http://translator.simutrans.com/help/">SimuTranslator Help Home</a><br />
+            <a href="http://translator.simutrans.com">SimuTranslator</a><br />
+        </p>
+
+        <p class="footer_p">
+            <a href="http://validator.w3.org/check?uri=referer"><img
+            src="include/valid-xhtml10.png" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+        </p>
+    </div>
+
+    <hr />
+</div>
+
+
+</body>
+</html>

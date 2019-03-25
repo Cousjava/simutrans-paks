@@ -1,0 +1,29 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#---------------------------------
+obj=building
+name=Hackescher_Bahnhof
+copyright=pumuckl999
+type=stop
+waytype=track
+level=2
+cost=128000
+maintenance=16
+enables_pax=1
+enables_post=0
+intro_year=1882
+intro_month=1
+allow_underground=0
+dims=1,1,2
+icon=> Bhf_Hackescher.2.0
+cursor=Bhf_Hackescher.0.0
+Backimage[0][0][0][0][0][0]=Bhf_Hackescher.0.0
+Frontimage[0][0][0][0][0][0]=Bhf_Hackescher.1.0
+Backimage[1][0][0][0][0][0]=Bhf_Hackescher.0.1
+Frontimage[1][0][0][0][0][0]=Bhf_Hackescher.1.1
+Backimage[0][0][0][0][0][1]=Bhf_Hackescher.0.2
+Frontimage[0][0][0][0][0][1]=Bhf_Hackescher.1.2
+Backimage[1][0][0][0][0][1]=Bhf_Hackescher.0.3
+Frontimage[1][0][0][0][0][1]=Bhf_Hackescher.1.3
+--------------------------------------------------

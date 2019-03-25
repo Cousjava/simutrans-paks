@@ -1,0 +1,48 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Land
+#	Neu:22-12-2017
+# --------------------------------
+obj=building
+name=Weihnachtsmannkatapult
+copyright=Pumuckl999
+type=cur
+level=100
+chance=25
+intro_year=1800
+intro_month=1
+needs_ground=0
+build_time=0
+animation_time=25
+climates=desert, tropic, mediterran, temperate, tundra, rocky
+dims=1,1,1
+BackImage[0][0][0][0][0][0]=wkatapult.0.0
+BackImage[0][0][0][0][1][0]=wkatapult.0.1
+BackImage[0][0][0][0][2][0]=wkatapult.0.2
+BackImage[0][0][0][0][3][0]=wkatapult.0.3
+BackImage[0][0][0][0][4][0]=wkatapult.0.2
+BackImage[0][0][0][0][5][0]=wkatapult.0.1
+BackImage[0][0][0][0][6][0]=wkatapult.0.0
+BackImage[0][0][0][0][0][1]=wkatapult.1.0
+BackImage[0][0][0][0][1][1]=wkatapult.1.1
+BackImage[0][0][0][0][2][1]=wkatapult.1.2
+BackImage[0][0][0][0][3][1]=wkatapult.1.3
+BackImage[0][0][0][0][4][1]=wkatapult.1.2
+BackImage[0][0][0][0][5][1]=wkatapult.1.1
+BackImage[0][0][0][0][6][1]=wkatapult.1.0
+
+FrontImage[0][0][0][0][0][0]=wkatapult.0.4,13,-48
+FrontImage[0][0][0][0][1][0]=wkatapult.0.4,13,-44
+FrontImage[0][0][0][0][2][0]=wkatapult.0.4,8,-52
+FrontImage[0][0][0][0][3][0]=wkatapult.0.4,3,-57
+FrontImage[0][0][0][0][4][0]=wkatapult.0.4,-47,-7
+FrontImage[0][0][0][0][5][0]=wkatapult.0.4,-97,43
+FrontImage[0][0][0][0][6][0]=wkatapult.0.4,-147,93
+FrontImage[0][0][0][0][0][1]=wkatapult.0.4,13,-48
+FrontImage[0][0][0][0][1][1]=wkatapult.0.4,13,-44
+FrontImage[0][0][0][0][2][1]=wkatapult.0.4,8,-52
+FrontImage[0][0][0][0][3][1]=wkatapult.0.4,3,-57
+FrontImage[0][0][0][0][4][1]=wkatapult.0.4,-47,-7
+FrontImage[0][0][0][0][5][1]=wkatapult.0.4,-97,43
+FrontImage[0][0][0][0][6][1]=wkatapult.0.4,-147,93
+-----------------------------------------------------------

@@ -1,0 +1,17 @@
+Obj=building
+Name=Jenischhaus Hamburg Othmarschen
+copyright=pumuckl999
+Type=com
+level=16
+intro_year=1834
+chance=95
+climates=mediterran, tropic, desert
+dims=1,1,4
+BackImage[0][0][0][0][0][0]=jhomhh_sommer.0.0
+BackImage[1][0][0][0][0][0]=jhomhh_sommer.0.1
+BackImage[2][0][0][0][0][0]=jhomhh_sommer.0.2
+BackImage[3][0][0][0][0][0]=jhomhh_sommer.0.3
+BackImage[0][0][0][0][0][1]=jhomhh_winter.0.0
+BackImage[1][0][0][0][0][1]=jhomhh_winter.0.1
+BackImage[2][0][0][0][0][1]=jhomhh_winter.0.2
+BackImage[3][0][0][0][0][1]=jhomhh_winter.0.3

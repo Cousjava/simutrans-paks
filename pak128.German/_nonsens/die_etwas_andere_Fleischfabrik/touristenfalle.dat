@@ -1,0 +1,58 @@
+#	PAK128.german
+#	Buildings-Factory
+#Basis Informationen
+obj=factory
+name=Touristenfalle
+copyright=pumuckl999
+level=10
+intro_year=1905
+intro_month=1
+#retire_year=1933
+#retire_month=12
+location=city
+DistributionWeight=50
+#produktion
+productivity=100
+range=100
+#inputgood[0]=
+#inputfactor[0]=
+#inputsupplier[0]=
+#inputcapacity[0]=
+outputgood[0]=Touristen
+outputfactor[0]=50
+outputcapacity[0]=100
+#produktions steigerung
+#expand_probability=
+#expand_minimum=
+#expand_range=
+#expand_times=
+electricity_boost=1000
+#passenger_demand=65535
+#mail_demand=
+#passenger_boost=
+#mail_boost=
+#fields
+#min_fields=10#erlaubter minimumwert
+#max_fields=36#erlaubter maximumwert
+#probability_to_spawn=10#entspricht 1%
+#fields[0]=
+#production_per_field[0]=5
+#storage_capacity[0]=100
+#spawn_weight[0]=25
+#has_snow[0]=
+#sonstiges
+electricity_amount=50
+#Smoke=
+#SmokeTile=
+#SmokeOffset=12,12#Position X, Position Y max 100!
+#SmokeSpeed=
+#needs_ground=
+mapcolor=119
+climates=mediterran, temperate, tundra, rocky
+dims=1,1,4
+#grafik
+BackImage[0][0][0][0][0][0]=tcfthh_sommer.0.0
+BackImage[1][0][0][0][0][0]=tcfthh_sommer.0.1
+BackImage[2][0][0][0][0][0]=tcfthh_sommer.0.2
+BackImage[3][0][0][0][0][0]=tcfthh_sommer.0.3
+#_EO_

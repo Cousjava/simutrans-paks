@@ -1,0 +1,42 @@
+--------------------------------
+#	PAK128.german
+#	Rollwege
+#	Neu:06-2015
+#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+---------------------------------
+Obj=way
+name=Zeppelin-Rollfeld
+copyright=pumuckl999
+waytype=air
+system_type=0
+intro_year=1910
+intro_month=1
+retire_year=1940
+retire_month=12
+cost=20000
+maintenance=60
+topspeed=60
+max_weight=300
+cursor=Rollweg_Gras.1.4
+icon=> Rollweg_Gras.0.4
+Image[-]=Rollweg_Gras.0.0
+Image[N]=Rollweg_Gras.1.0
+Image[S]=Rollweg_Gras.1.1
+Image[E]=Rollweg_Gras.1.2
+Image[W]=Rollweg_Gras.1.3
+Image[NS]=Rollweg_Gras.0.1
+Image[EW]=Rollweg_Gras.0.2
+Image[NSE]=Rollweg_Gras.2.0
+Image[NSW]=Rollweg_Gras.2.1
+Image[NEW]=Rollweg_Gras.2.2
+Image[SEW]=Rollweg_Gras.2.3
+Image[NSEW]=Rollweg_Gras.0.3
+Image[NE]=Rollweg_Gras.3.0
+Image[SE]=Rollweg_Gras.3.1
+Image[NW]=Rollweg_Gras.3.2
+Image[SW]=Rollweg_Gras.3.3
+Diagonal[NE]=Rollweg_Gras.3.0
+Diagonal[SE]=Rollweg_Gras.3.1
+Diagonal[NW]=Rollweg_Gras.3.2
+Diagonal[SW]=Rollweg_Gras.3.3
+---------------------------------

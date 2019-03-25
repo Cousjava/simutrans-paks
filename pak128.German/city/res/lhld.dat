@@ -1,0 +1,17 @@
+Obj=building
+Name=Loewinghus Luedersdorf
+copyright=pumuckl999
+Type=res
+climates=mediterran, tropic, desert
+level=1
+intro_year=1816
+chance=95
+dims=1,1,4
+BackImage[0][0][0][0][0][0]=lhld.0.0
+BackImage[1][0][0][0][0][0]=lhld.0.1
+BackImage[2][0][0][0][0][0]=lhld.0.2
+BackImage[3][0][0][0][0][0]=lhld.0.3
+BackImage[0][0][0][0][0][1]=lhld.1.0
+BackImage[1][0][0][0][0][1]=lhld.1.1
+BackImage[2][0][0][0][0][1]=lhld.1.2
+BackImage[3][0][0][0][0][1]=lhld.1.3

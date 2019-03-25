@@ -1,0 +1,28 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 01-08-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=Frachthafen_1900
+copyright=Pumuckl999
+type=habour
+enables_ware=1
+Capacity=128
+cost=128000
+maintenance=36
+intro_year=1900
+intro_month=1
+dims=1,2,4
+icon=> Frachthafen_klein.3.0
+cursor=Frachthafen_klein.3.1
+BackImage[2][0][0][0][0][0]=Frachthafen_klein.0.0
+BackImage[2][1][0][0][0][0]=Frachthafen_klein.0.1
+BackImage[1][0][0][0][0][0]=Frachthafen_klein.0.2
+BackImage[1][0][1][0][0][0]=Frachthafen_klein.1.0
+BackImage[0][0][0][0][0][0]=Frachthafen_klein.1.1
+BackImage[0][1][0][0][0][0]=Frachthafen_klein.1.2
+BackImage[3][0][0][0][0][0]=Frachthafen_klein.2.0
+BackImage[3][0][1][0][0][0]=Frachthafen_klein.2.1
+----------------------------------------------------------

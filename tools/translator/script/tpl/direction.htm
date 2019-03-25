@@ -1,0 +1,188 @@
+<!--(if:value_message)-->
+  <p class="red">
+  <!--(list:messages)-->
+  <!--(item)-->
+    <!--(message)--><br />
+  <!--(enditem)-->
+  <!--(endlist)-->
+  </p>
+  <HR>
+<!--(endif)-->
+
+<h1 class="pagename"><!--(page_title)--></h1>
+
+  <p><!--(value_link_1)--> - <!--(value_link_2)--></p>
+  
+  <form enctype="multipart/form-data" id="obj_s" action="?" method="post">
+
+<p><b><!--(token:field_titel)-->:</b><br /></p>
+
+<!--(if:select_box_version)-->
+  <select name="version" onchange="document.getElementById('obj_s').submit();">
+  <!--(list:box_entry)-->
+      <!--(item)-->
+     	<option value="<!--(token:opt_value)-->" <!--(token:opt_select)-->><!--(token:opt_name)--></option>
+	<!--(enditem)-->
+  <!--(endlist)-->  
+  </select>
+<!--(endif)-->
+
+&nbsp;
+
+<!--(if:select_box_obj)-->
+  <select name="obj_auw" onchange="document.getElementById('obj_s').submit();">
+  <!--(list:box_entry)-->
+      <!--(item)-->
+     	<option value="<!--(token:opt_value)-->" <!--(token:opt_select)-->><!--(token:opt_name)--></option>
+	<!--(enditem)-->
+  <!--(endlist)-->  
+  </select>
+<!--(endif)-->
+
+&nbsp;
+
+<!--(if:select_box_sub_obj)-->
+  <select name="obj_sub" onchange="document.getElementById('obj_s').submit();">
+  <!--(list:box_entry)-->
+      <!--(item)-->
+     	<option value="<!--(token:opt_value)-->" <!--(token:opt_select)-->><!--(token:opt_name)--></option>
+	<!--(enditem)-->
+  <!--(endlist)-->  
+  </select>
+<!--(endif)-->
+
+&nbsp;
+
+<input type="submit" name="obj_s" value="<!--(submit)-->" /></p>
+    
+<!--(if:select_language)-->
+  <select name="language" onchange="document.getElementById('obj_s').submit();">
+  <!--(list:box_entry)-->
+      <!--(item)-->
+     	<option value="<!--(token:opt_value)-->" <!--(token:opt_select)-->><!--(token:opt_name)--></option>
+	<!--(enditem)-->
+  <!--(endlist)-->  
+  </select>
+<!--(endif)-->
+
+&nbsp;
+
+<!--(if:select_box_translate)-->
+  <select name="translate" onchange="document.getElementById('obj_s').submit();">
+  <!--(list:box_entry)-->
+      <!--(item)-->
+     	<option value="<!--(token:opt_value)-->" <!--(token:opt_select)-->><!--(token:opt_name)--></option>
+	<!--(enditem)-->
+  <!--(endlist)-->  
+  </select>
+<!--(endif)-->
+
+
+    <div class="searchfield"><!--(titel_search_object)--><br /> <input type="text" size="60" max_lenhth="255" name="searchstring"  value="<!--(value_search_object)-->" /></div>
+    <div class="searchfield"><!--(titel_trans_object)--><br /> <input type="text" size="60" max_lenhth="255" name="searchstring2" value="<!--(value_trans_object)-->" /></div>
+
+    <br />
+    <input type="submit" name="txt_s" value="<!--(button_submit)-->" />
+   
+<!--(if:set_head)-->
+  <div class="table_titel"><b><!--(bez_set)-->: <!--(value_set)--></b> 
+    <!--(if:count)-->
+      (<!--(obj_count)-->)
+    <!--(endif)-->
+    <!--(if:line_edit)-->
+       <a href='line_edit.php' target='_blank'><button type="button" class="btn btn-info"><!--(link_text)--></button></a>
+    <!--(endif)-->
+  </div>
+<!--(endif)-->
+
+<!--(if:value_obj_table)-->
+  <!--(list:objects)--><!--(item)-->
+    <div class='object_subtitel'><b><!--(value_object_subtitle)--></b> <!--(value_object_count)--></div>
+    <table width='100%'>
+      <!--(list:rows)--><!--(item)-->
+      <tr>
+        <!--(list:cols)--><!--(item)-->
+        <td width='25%' class="<!--(style)-->"> 
+          <div class="flex-container_1">
+          <div class="flex_1"><!--(value_col)--></div> 
+          <!--(if:setadmin)-->
+            <div class="flex_2">
+               <a href='obj_edit.php?obj_id=<!--(object_id)-->' target='_blank' class="edit_icon" title="<!--(edit)-->">&#9997;</a-->
+               <a href='obj_delete.php?obj_id=<!--(object_id)-->' target='_blank' class="delete_icon" title="<!--(delete)-->">&#10007;</a>
+              <!--(value_dialog)-->
+            </div>
+          <!--(endif)-->
+          </div>
+        </td>
+        <!--(enditem)--><!--(endlist)-->
+      </tr>
+      <!--(enditem)--><!--(endlist)-->  
+    </table>
+    <p class='red'><!--(value_no_objects)--></p>
+  <!--(enditem)--><!--(endlist)-->
+<!--(endif)-->
+
+<!--(if:res_table)-->
+  <table width="100%" cellspacing="0" border="0">
+
+  <!--(list:line)-->
+  <!--(item)-->
+    <tr class="<!--(style)-->">
+      <td align="left" colspan="2"><a href="edit.php?obj_id=<!--(obj_id)-->&amp;index=<!--(obj_inx)--><!--(if:edit_lang)-->&amp;lang=<!--(browser_lang)-->#<!--(text_lang)-->
+          <!--(endif)-->
+          " target="_blank"><!--(obj_name)--></a>
+          <!--(if:setadmin)-->
+             <b class="admin_icons">
+              <a href='obj_edit.php?obj_id=<!--(object_id)-->' target='_blank' class="edit_icon" title="<!--(edit)-->">&#9997;</a>
+              <a href='obj_delete.php?obj_id=<!--(object_id)-->' target='_blank' class="delete_icon" title="<!--(delete)-->">&#10007;</a>
+            </b>
+          <!--(endif)-->      
+      </td> 
+      <td align="left">
+     <!--(if:status)-->
+          <FONT class="<!--(style_trans)-->"><!--(bez_trans)--></FONT>
+          <!--(if:detail)-->
+           - <FONT class="translate"><!--(bez_detail)--></FONT>
+          <!--(endif)-->
+      <!--(endif)-->
+      </td>
+      <td align="left"><!--(obj_type)--></td><td></td>
+      </tr>
+    <!--(list:lang_line)-->
+    <!--(item)-->
+      <!--(if:show_txt)-->
+        <tr class="show_text <!--(style)-->">
+        <td style="width:16px" <!--(style_langid)-->><!--(text_lang)--></td>
+        <td align="left" colspan="2">
+        <!--(if:txt_bez)-->
+          <FONT class="translate"><!--(bez_trans)--></FONT><br>
+        <!--(endif)-->
+        <!--(obj_text)--></td><td></td><td></td>
+        </tr>
+      <!--(endif)-->
+      <!--(if:take_sug)-->
+        <tr class="show_text <!--(style)-->"><td></td>
+        <td><FONT class="translate"><!--(bez_trans)--></FONT><br><!--(value_Trans)--></td>
+        <td><FONT class="suggestion"><!--(bez_sug)--></FONT><br><!--(value_sug)--></td>
+        <td>
+        <!--(if:checkbox)-->
+          <input type="checkbox" name="object_<!--(obj_id)-->" /></input>
+        <!--(endif)-->
+        </td>
+        <td <!--(style_langid)-->><!--(text_lang)--></td>
+       </tr>
+      <!--(endif)-->
+    <!--(enditem)-->
+    <!--(endlist)-->
+  <!--(enditem)-->
+  <!--(endlist)-->
+
+  </table>
+  <!--(if:value_suggest_button)-->
+  <br />
+  <input id="ebut_accept_<!--(lang_id)-->" type="submit" name="sugaccept" value="<!--(bez_accept)-->" /> 
+  <input id="ebut_delete_<!--(lang_id)-->" type="submit" name="sugdelete" value="<!--(bez_delete)-->" style="margin-left:15px;" />
+  <!--(endif)-->
+<!--(endif)-->
+
+</form>

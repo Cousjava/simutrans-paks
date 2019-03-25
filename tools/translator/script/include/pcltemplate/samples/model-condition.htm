@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>PclTemplate - Template Sample File - <!--(page_name)--></title>
+  </head>
+  <body>
+    Hello <!--(user_name)--> !
+    <br>
+    <!--(if:web_site)-->
+    His web site is : <!--(web_site)-->
+    <!--(endif)-->
+    <br>
+    <!--(if:email_block)-->
+    His email is : <a href="mailto:<!--(email)-->"><!--(email)--></a>
+   (alternative is <!--(alternate)-->)
+    <!--(endif)-->
+    <br>
+    <!--(ifnot:not_here)-->
+    Nothing to add !
+    <!--(endifnot)-->
+</body>
+</html>

@@ -1,0 +1,17 @@
+Obj=building
+Name=Waschhaus Petzow
+copyright=pumuckl999
+Type=ind
+climates=mediterran, tropic, desert
+level=1
+intro_year=1888
+chance=95
+dims=1,1,4
+BackImage[0][0][0][0][0][0]=whp.0.0
+BackImage[1][0][0][0][0][0]=whp.0.1
+BackImage[2][0][0][0][0][0]=whp.0.2
+BackImage[3][0][0][0][0][0]=whp.0.3
+BackImage[0][0][0][0][0][1]=whp.1.0
+BackImage[1][0][0][0][0][1]=whp.1.1
+BackImage[2][0][0][0][0][1]=whp.1.2
+BackImage[3][0][0][0][0][1]=whp.1.3

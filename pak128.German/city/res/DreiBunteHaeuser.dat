@@ -1,0 +1,29 @@
+#	PAK128.german
+
+#	Citybuildings residental
+#       neu:  15-07-2018
+#---------------------------------------
+Obj=building
+Name=Fischerbruch_3Haeuser
+copyright=pumuckl999
+Type=res
+intro_year=1880
+intro_month=7
+retire_year=1940
+retire_month=1
+climates=desert, tropic, mediterran, temperate, tundra, rocky
+level=3
+chance=40
+
+needs_ground=
+0
+dims=1,1,4
+BackImage[2][0][0][0][0][0]=DreiBunteHaeuser.0.0
+BackImage[1][0][0][0][0][0]=DreiBunteHaeuser.0.1
+BackImage[0][0][0][0][0][0]=DreiBunteHaeuser.0.2
+BackImage[3][0][0][0][0][0]=DreiBunteHaeuser.0.3
+BackImage[2][0][0][0][0][1]=DreiBunteHaeuser.1.0
+BackImage[1][0][0][0][0][1]=DreiBunteHaeuser.1.1
+BackImage[0][0][0][0][0][1]=DreiBunteHaeuser.1.2
+BackImage[3][0][0][0][0][1]=DreiBunteHaeuser.1.3
+#---------------------------------------

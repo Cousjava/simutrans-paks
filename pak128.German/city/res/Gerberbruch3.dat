@@ -1,0 +1,29 @@
+#	PAK128.german
+
+#	Citybuildings residental
+#       neu:  22-07-2018
+#---------------------------------------
+Obj=building
+Name=Gerberbruch_3
+copyright=pumuckl999
+Type=res
+intro_year=1700
+intro_month=7
+retire_year=1830
+retire_month=1
+climates=desert, tropic, mediterran, temperate, tundra, rocky
+level=4
+chance=40
+
+needs_ground=
+0
+dims=1,1,4
+BackImage[2][0][0][0][0][0]=Gerberbruch3.0.0
+BackImage[1][0][0][0][0][0]=Gerberbruch3.0.1
+BackImage[0][0][0][0][0][0]=Gerberbruch3.0.2
+BackImage[3][0][0][0][0][0]=Gerberbruch3.0.3
+BackImage[2][0][0][0][0][1]=Gerberbruch3.1.0
+BackImage[1][0][0][0][0][1]=Gerberbruch3.1.1
+BackImage[0][0][0][0][0][1]=Gerberbruch3.1.2
+BackImage[3][0][0][0][0][1]=Gerberbruch3.1.3
+#---------------------------------------

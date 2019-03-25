@@ -1,0 +1,21 @@
+#	PAK128.german
+#	Citycars
+#       neu: 16-09-2018
+#---------------------------------
+obj=citycar
+name=citybike_Yamaha_Tenere
+DistributionWeight=4
+speed=80
+intro_year=2008
+intro_month=6
+#retire_year=1982
+#retire_month=12
+Image[S]=citybike_yamaha_tenere.0.0
+Image[N]=citybike_yamaha_tenere.0.1
+Image[E]=citybike_yamaha_tenere.0.2
+Image[W]=citybike_yamaha_tenere.0.3
+Image[SE]=citybike_yamaha_tenere.0.4
+Image[NW]=citybike_yamaha_tenere.0.5
+Image[NE]=citybike_yamaha_tenere.0.6
+Image[SW]=citybike_yamaha_tenere.0.7
+--------------------------------------------

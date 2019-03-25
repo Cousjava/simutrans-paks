@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Strassen
+#	Neu:25-12-2017
+-------------------------
+obj=tunnel
+name=Kanaltunnel
+copyright=The Transporter, pumuckl999
+waytype=water
+intro_year=1810
+intro_month=1
+cost=600000
+maintenance=1200
+topspeed=35
+icon=> Schiffstunnel.4.0
+cursor=Schiffstunnel.0.0,0,-16
+FrontImage[N][0]=Schiffstunnel.2.0
+BackImage[N][0]=Schiffstunnel.0.0
+FrontImage[S][0]=Schiffstunnel.2.2
+BackImage[S][0]=Schiffstunnel.0.2
+FrontImage[E][0]=Schiffstunnel.2.1
+BackImage[E][0]=Schiffstunnel.0.1
+FrontImage[W][0]=Schiffstunnel.2.3
+BackImage[W][0]=Schiffstunnel.0.3
+FrontImage[N][1]=Schiffstunnel.3.0
+BackImage[N][1]=Schiffstunnel.1.0
+FrontImage[S][1]=Schiffstunnel.3.2
+BackImage[S][1]=Schiffstunnel.1.2
+FrontImage[E][1]=Schiffstunnel.3.1
+BackImage[E][1]=Schiffstunnel.1.1
+FrontImage[W][1]=Schiffstunnel.3.3
+BackImage[W][1]=Schiffstunnel.1.3

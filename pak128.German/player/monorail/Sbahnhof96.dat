@@ -1,0 +1,29 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 25-07-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=Schwebebahnhof96
+copyright=pumuckl999
+type=stop
+waytype=monorail_track
+enables_pax=1
+level=3
+cost=8
+maintenance=24
+intro_year=1901
+intro_month=3
+Dims=1,1,2
+icon=> Sbahnhof96.0.4
+cursor=Sbahnhof96.0.0
+BackImage[0][0][0][0][0][0]=Sbahnhof96.0.0,-12,12
+FrontImage[0][0][0][0][0][0]=Sbahnhof96.1.0,-12,12
+BackImage[1][0][0][0][0][0]=Sbahnhof96.0.1,12,12
+FrontImage[1][0][0][0][0][0]=Sbahnhof96.1.1,12,12
+BackImage[0][0][0][0][0][1]=Sbahnhof96.0.2,-12,12
+FrontImage[0][0][0][0][0][1]=Sbahnhof96.1.2,-12,12
+BackImage[1][0][0][0][0][1]=Sbahnhof96.0.3,12,12
+FrontImage[1][0][0][0][0][1]=Sbahnhof96.1.3,12,12
+---------------------------------------------------

@@ -1,0 +1,17 @@
+Obj=building
+Name=Gasanstalt Neukalen
+copyright=pumuckl999
+Type=ind
+level=2
+intro_year=1905
+chance=95
+climates=mediterran, tropic, desert
+dims=1,1,4
+BackImage[0][0][0][0][0][0]=gank_sommer.0.0
+BackImage[1][0][0][0][0][0]=gank_sommer.0.1
+BackImage[2][0][0][0][0][0]=gank_sommer.0.2
+BackImage[3][0][0][0][0][0]=gank_sommer.0.3
+BackImage[0][0][0][0][0][1]=gank_winter.0.0
+BackImage[1][0][0][0][0][1]=gank_winter.0.1
+BackImage[2][0][0][0][0][1]=gank_winter.0.2
+BackImage[3][0][0][0][0][1]=gank_winter.0.3

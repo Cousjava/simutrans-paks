@@ -1,0 +1,16 @@
+Obj=building
+Name=Tankstelle_Siegen_Niederschelden
+copyright=pumuckl999
+Type=ind
+level=0
+intro_year=1951
+climates=mediterran, tropic, desert, temperate, tundra, rocky
+dims=1,1,4
+BackImage[0][0][0][0][0][0]=tssns.0.0
+BackImage[1][0][0][0][0][0]=tssns.0.1
+BackImage[2][0][0][0][0][0]=tssns.0.2
+BackImage[3][0][0][0][0][0]=tssns.0.3
+BackImage[0][0][0][0][0][1]=tssns.1.0
+BackImage[1][0][0][0][0][1]=tssns.1.1
+BackImage[2][0][0][0][0][1]=tssns.1.2
+BackImage[3][0][0][0][0][1]=tssns.1.3

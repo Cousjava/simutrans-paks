@@ -1,0 +1,17 @@
+Obj=building
+Name=Parkplatz01 Gerade
+copyright=pumuckl999
+Type=com
+level=1
+intro_year=1960
+chance=90
+climates=mediterran, tropic, desert
+dims=1,1,4
+BackImage[0][0][0][0][0][0]=ppl01_gerade.0.0
+BackImage[1][0][0][0][0][0]=ppl01_gerade.0.1
+BackImage[2][0][0][0][0][0]=ppl01_gerade.0.2
+BackImage[3][0][0][0][0][0]=ppl01_gerade.0.3
+BackImage[0][0][0][0][0][1]=ppl01_gerade.1.0
+BackImage[1][0][0][0][0][1]=ppl01_gerade.1.1
+BackImage[2][0][0][0][0][1]=ppl01_gerade.1.2
+BackImage[3][0][0][0][0][1]=ppl01_gerade.1.3

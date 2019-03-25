@@ -1,0 +1,9 @@
+Obj=ground_obj
+Name=Noch ein Bonbon
+copyright=pumuckl999
+cost=10000
+DistributionWeight=7
+seasons=1
+climates=mediterran, tropic, desert, temperate, tundra, rocky
+trees_on_top=1
+Image[0][0]=bonbon_e.png

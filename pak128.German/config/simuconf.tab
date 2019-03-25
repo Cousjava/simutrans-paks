@@ -1,0 +1,294 @@
+--------------------------------------------------------------------------------
+#
+#	simuconf.tab for PAK128.german
+#	Letzte Bearbeitung: 12-2011
+#
+--------------------------------------------------------------------------------
+
+# simuconf.tab
+#
+# Low-Level values and constants
+#
+# This file can be found in many places:
+#
+# simutrans/config/simuconf.tab
+# ~/simutrans/simuconf.tab (in the user directory, if singleuser_install != 0 or not present, first only pak-file path will be read)
+# simutrans/pakfilefolder/config/simuconf.tab
+# ~/simutrans/simuconf.tab (read a second time, s.a.)
+#
+
+################################road settings###################################
+
+# (=1) drive on the left side of the road
+drive_left = 0
+
+# Type of city roads - must be available as PAK file.
+# Cityroad with timeline: city_road[number]=name,intro-year,retire-year
+# .. number = 0..9 - up to ten different city_roads possible
+# .. name = name of an existing pak file
+city_road[0] = city_road
+city_road[1] = Kopfsteinpflasterstrasse,1800,1916
+
+# Type of intercity roads - must be available as PAK file.
+# Intercityroad with timeline: intercity_road[number]=name,intro-year,retire-year
+# .. number = 0..9 - up to ten different intercity_roads possible
+# .. name = name of an existing pak file
+intercity_road[0] = asphalt_road_100
+intercity_road[1] = dirt_road,1800,1849
+intercity_road[2] = Kopfsteinpflasterstrasse,1850,1916
+intercity_road[3] = asphalt_road_100,1917,2999
+
+# Max. length of intitial intercity road connections
+# If you want to speed up map creation, lower this value
+# If you want more initial intercity roads, raise this value
+# 8000 seems to be a good compromise between speed and road number
+#
+# T. Kubes: 128x128 can use more roads to save player some money.
+#
+intercity_road_length = 10000
+
+# way builder internal weights (straight track is 4)
+# a higher weight make it more unlikely
+# make the curves negative, and the waybuilder will build strange tracks ...
+way_straight = 1
+way_curve = 2
+way_double_curve = 6
+way_90_curve = 15
+way_slope = 10
+way_tunnel = 8
+way_max_bridge_len = 15
+way_leave_road = 25
+
+# rivers:
+# The highest number is the smallest. A river with max_speed==0 is not navigavable by ships.
+river_type[0] = river_00
+river_type[1] = river_01
+river_type[2] = river_02
+river_type[3] = river_03
+river_type[4] = river_04
+
+
+##################################forest stuff#################################
+max_no_of_trees_on_square = 3
+
+# Base forest size - minimal size of forest - map independent
+forest_base_size = 34
+
+# Map size divisor - smaller it is the larger are individual forests
+forest_map_size_divisor = 32
+
+# Forest count divisor - smaller it is, the more forests are generated
+forest_count_divisor = 36
+
+# Determins how dense are spare trees going to be planted (works inversly)
+forest_inverse_spare_tree_density = 600
+
+# Forest boundary sharpenss: 0 - perfectly sharp boundaries, 20 - very blurred
+# Waldgrenze sharpenss: 0 - vollkommen scharfe Grenzen, 20 - sehr trübe
+forest_boundary_blur = 20
+
+# climate with trees entirely (1: water, 2:desert, 4:tropic, 8:mediterran, 16:temperate, 32:tundra, 64:rocky, 128:arctic)
+# zero (default) means no climate with at least one tree per tile
+tree_climates = 0
+
+# climates with no trees at all (desert and arctic at the moment)
+no_tree_climates = 0
+ 
+
+#####################################gameplay###################################
+
+# passenger generation (default is 16) Smaller values means less passengers
+passenger_factor=16
+
+# in beginner mode, all good revenuses are multiplied by a factor (default 1500=1.5)
+beginner_price_factor = 1500
+
+# use beginner mode for new maps (can be switched anyway on the new map dialog)
+first_beginner = 0
+
+# size of catchment area of a station (default 2)
+# older game size was 3
+# savegames with another catch area will be unloadable - comment michelstadt:
+# Seems not to be the case as far as I observed.
+station_coverage = 3
+
+# how height is a tile in z-direction (default 16, TTD 8)
+# THIS WILL BE ONLY USED, WHEN THIS FILE IS IN THE pakxyz/config!
+# tile_height = 8
+
+# Passengers and goods will change vehicles at most "max_transfer"
+# times to reach their destination.
+#
+# It seems that in good networks, the number of transfers is below
+# 5. I think 6 is a good compromise that allows complex networks but
+# cuts off the more extreme cases
+#
+# You can set this lower to save a little bit of CPU time, but at some
+# point this measn you'll get less passengers to transport
+#
+# T. Kubes: I would say 8 for now, but this definitely should be difficulty
+# dependent setting.
+#
+max_transfers = 7
+
+###############################passenger stuff##############################
+# also pak dependent
+
+# how much local destinations are prefered over time
+# 1 means almost local passengers/mail only, 10000 spreads them over the map
+# You can have up to ten entries, first is the year, next is the factor.
+# The increase between the year will increase first slow then fast towards
+# the final years
+locality_factor[0]=1800,1
+locality_factor[1]=1835,10
+locality_factor[2]=1900,50
+locality_factor[3]=1925,100
+locality_factor[4]=1950,400
+locality_factor[5]=1980,600
+locality_factor[6]=1990,800
+locality_factor[7]=2000,1600
+
+avoid_overcrowding = 0
+no_routing_over_overcrowded = 0
+
+##################################industry stuff#################################
+
+# allow all possible supplier to connect to your factories?
+# This will also affect savegames!
+# best to leave it in default position (only on for simuTTD).
+crossconnect_factories = 1
+
+# how big is the chance for cross-connections in percent (new in 99.10)
+# (100% will give nearly the same results as crossconnect_factories=1)
+# crossconnect_factories_percentage = 60
+
+# ???
+factory_spacing = 20
+
+# with this switch on (default), overcrowded factories will not recieve goods any more
+just_in_time = 1
+
+
+###################################money stuff##################################
+
+# Starting money of the player. Given in Credit cents (1/100 Cr)
+starting_money = 400000000
+
+# Maintenance costs of buildings
+maintenance_building = 1
+
+# first stops: the actual cost is (cost*level*width*height)
+cost_multiply_dock = 1
+cost_multiply_station = 1
+#stop is cheap bu on other hand max level is 4
+cost_multiply_roadstop = 1
+cost_multiply_airterminal = 1
+#used for all extra buildings
+cost_multiply_post = 1
+#cost_multiply_headquarter=10000
+
+# cost for depots
+cost_depot_rail = 1
+cost_depot_road = 1
+cost_depot_ship = 1
+# other way related stuff
+cost_signal = 1
+cost_tunnel = 1
+cost_third_rail = 1
+
+# other construction/destruction stuff
+cost_alter_land = 1250
+cost_set_slope = 1500
+#cost_found_city=5000000
+cost_multiply_found_industry = 1
+cost_remove_tree = 40
+cost_multiply_remove_haus = 1
+
+# powerlines
+cost_transformer = 1000
+cost_maintain_transformer = 1
+
+
+###################################time settings################################
+
+# Enforce vehicle introduction dates?
+# 0 = all vehicles available from start of the game
+# 1 = use introduction dates
+# 2 = (default) use settings during game creation
+#
+# use_timeline = 2
+
+# Starting year of the game:
+# Setting it below 1930 is not recommended!
+# You will have problems with missing vehicles, do not complain if you do so!
+# Setting it above 2040 will render game bit boring - no new vehicles.
+starting_year = 1920
+
+# Starting month of the game for people who want to start in summer (default 1=January)
+starting_month = 1
+
+# Should month be shown in date?
+#(0=no, 1=yes, 2>=show day in japan format=2, us format=3, german=4)
+# This is most useful, if you use longer months than the default length (see below)
+#
+show_month = 4
+
+# Global time multiplier (will be save with new games)
+# 2^bits_per_month = duration of a game month in microseconds real time
+# default is 18. For example, 21 will make the month 2^3=8 times longer in real time
+# production and maintainance cost will be adjusted accordingly.
+#
+#128x128 use only 2 times longer months... should be way enough for normal games.
+#
+bits_per_month = 20
+
+###################################misc. stuff##################################
+
+# how long is a diagonal (512: faktor 2=1024/512, old way, 724: sqrt(2)=1024/724
+# THIS WILL BE ONLY USED, WHEN THIS FILE IS IN THE pakxyz/config!
+diagonal_multiplier = 936
+
+
+# After how many months a citycar breaks (and will be forever gone) ...
+# one day at current settings: 260s
+citycar_life = 120
+
+# Do you want to have random pedestrians in town? Look nice but needs some
+# CPU time to process them. (1=on, 0=off)
+# Impact on frame time: ~10% (16 cities on a new standard map)
+random_pedestrians = 1
+
+# there are some other grounds (like rocky, lakes etc. )
+# which could be added to the map (default 10)
+# probability is every 10*4 tile will get something
+random_grounds_probability = 10
+
+# Show infos also on bare ground?
+# (1=on, 0=off)
+ground_info = 1
+
+# Shows the "delete" Buttons in loading und save Dialog
+# 1=on, 0 =off
+show_delete_buttons = 1
+
+# if defined, the default tool will try to calculate straight ways (like OpenTTD)
+straight_way_without_control = 1
+
+# do not show the button to add an inverted schedule for rail based convoys
+# (1=hide, 0=show anyway)
+hide_rail_return_ticket = 0
+
+# Should stations get numbered names? (1=yes, 0=no)
+numbered_stations = 0
+
+# If and where to display a compass
+# 0=off (default for main screen)
+# 1=top, 2=vertical centre, 3=bottom, 4=left, 8=horizontal centre, 12=right
+# default for minimap is 1+12=13
+compass_screen_position = 1
+compass_map_position = 1
+
+
+
+
+

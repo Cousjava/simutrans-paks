@@ -1,0 +1,11 @@
+#	PAK128.german
+#	Goods
+obj=good
+name=Touristen
+mapcolor=119
+metric=Stueck
+catg=15
+value=50
+#speed_bonus=
+weight_per_unit=75
+#_EO_

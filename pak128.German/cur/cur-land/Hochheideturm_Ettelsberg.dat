@@ -1,0 +1,73 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Land
+#	Neu:07-01-2018
+# --------------------------------
+Obj=building
+Name=Hochheideturm
+copyright=pumuckl999
+Type=cur
+chance=25
+intro_year=2002
+intro_month=9
+build_time=0
+Passengers=25
+climates=mediterran, rocky, temperate
+dims=2,2,4
+BackImage[0][0][0][0][0][0]=Hochheideturm_Ettelsberg.0.0
+BackImage[0][0][0][1][0][0]=Hochheideturm_Ettelsberg.0.1
+BackImage[0][0][1][0][0][0]=Hochheideturm_Ettelsberg.0.2
+BackImage[0][0][1][1][0][0]=Hochheideturm_Ettelsberg.0.3
+BackImage[0][1][0][0][0][0]=Hochheideturm_Ettelsberg.0.4
+BackImage[0][1][0][1][0][0]=Hochheideturm_Ettelsberg.0.5
+BackImage[0][1][1][0][0][0]=Hochheideturm_Ettelsberg.0.6
+BackImage[0][0][0][0][0][1]=Hochheideturm_Ettelsberg.0.7
+BackImage[0][0][0][1][0][1]=Hochheideturm_Ettelsberg.1.0
+BackImage[0][0][1][0][0][1]=Hochheideturm_Ettelsberg.1.1
+BackImage[0][0][1][1][0][1]=Hochheideturm_Ettelsberg.1.2
+BackImage[0][1][0][0][0][1]=Hochheideturm_Ettelsberg.1.3
+BackImage[0][1][0][1][0][1]=Hochheideturm_Ettelsberg.1.4
+BackImage[0][1][1][0][0][1]=Hochheideturm_Ettelsberg.1.5
+BackImage[1][0][0][0][0][0]=Hochheideturm_Ettelsberg.1.6
+BackImage[1][0][0][1][0][0]=Hochheideturm_Ettelsberg.1.7
+BackImage[1][0][1][0][0][0]=Hochheideturm_Ettelsberg.2.0
+BackImage[1][0][1][1][0][0]=Hochheideturm_Ettelsberg.2.1
+BackImage[1][1][0][0][0][0]=Hochheideturm_Ettelsberg.2.2
+BackImage[1][1][0][1][0][0]=Hochheideturm_Ettelsberg.2.3
+BackImage[1][1][1][0][0][0]=Hochheideturm_Ettelsberg.2.4
+BackImage[1][0][0][0][0][1]=Hochheideturm_Ettelsberg.2.5
+BackImage[1][0][0][1][0][1]=Hochheideturm_Ettelsberg.2.6
+BackImage[1][0][1][0][0][1]=Hochheideturm_Ettelsberg.2.7
+BackImage[1][0][1][1][0][1]=Hochheideturm_Ettelsberg.3.0
+BackImage[1][1][0][0][0][1]=Hochheideturm_Ettelsberg.3.1
+BackImage[1][1][0][1][0][1]=Hochheideturm_Ettelsberg.3.2
+BackImage[1][1][1][0][0][1]=Hochheideturm_Ettelsberg.3.3
+BackImage[2][0][0][0][0][0]=Hochheideturm_Ettelsberg.3.4
+BackImage[2][0][0][1][0][0]=Hochheideturm_Ettelsberg.3.5
+BackImage[2][0][1][0][0][0]=Hochheideturm_Ettelsberg.3.6
+BackImage[2][0][1][1][0][0]=Hochheideturm_Ettelsberg.3.7
+BackImage[2][1][0][0][0][0]=Hochheideturm_Ettelsberg.4.0
+BackImage[2][1][0][1][0][0]=Hochheideturm_Ettelsberg.4.1
+BackImage[2][1][1][0][0][0]=Hochheideturm_Ettelsberg.4.2
+BackImage[2][0][0][0][0][1]=Hochheideturm_Ettelsberg.4.3
+BackImage[2][0][0][1][0][1]=Hochheideturm_Ettelsberg.4.4
+BackImage[2][0][1][0][0][1]=Hochheideturm_Ettelsberg.4.5
+BackImage[2][0][1][1][0][1]=Hochheideturm_Ettelsberg.4.6
+BackImage[2][1][0][0][0][1]=Hochheideturm_Ettelsberg.4.7
+BackImage[2][1][0][1][0][1]=Hochheideturm_Ettelsberg.5.0
+BackImage[2][1][1][0][0][1]=Hochheideturm_Ettelsberg.5.1
+BackImage[3][0][0][0][0][0]=Hochheideturm_Ettelsberg.5.2
+BackImage[3][0][0][1][0][0]=Hochheideturm_Ettelsberg.5.3
+BackImage[3][0][1][0][0][0]=Hochheideturm_Ettelsberg.5.4
+BackImage[3][0][1][1][0][0]=Hochheideturm_Ettelsberg.5.5
+BackImage[3][1][0][0][0][0]=Hochheideturm_Ettelsberg.5.6
+BackImage[3][1][0][1][0][0]=Hochheideturm_Ettelsberg.5.7
+BackImage[3][1][1][0][0][0]=Hochheideturm_Ettelsberg.6.0
+BackImage[3][0][0][0][0][1]=Hochheideturm_Ettelsberg.6.1
+BackImage[3][0][0][1][0][1]=Hochheideturm_Ettelsberg.6.2
+BackImage[3][0][1][0][0][1]=Hochheideturm_Ettelsberg.6.3
+BackImage[3][0][1][1][0][1]=Hochheideturm_Ettelsberg.6.4
+BackImage[3][1][0][0][0][1]=Hochheideturm_Ettelsberg.6.5
+BackImage[3][1][0][1][0][1]=Hochheideturm_Ettelsberg.6.6
+BackImage[3][1][1][0][0][1]=Hochheideturm_Ettelsberg.6.7
+----------------------------------------------------------

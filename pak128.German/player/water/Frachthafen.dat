@@ -1,0 +1,28 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 
+#    Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=Frachthafen
+copyright=Pumuckl999
+type=habour
+enables_ware=1
+Capacity=144
+cost=288000
+maintenance=144
+intro_year=1895
+intro_month=1
+dims=1,2,4
+icon=> Frachthafen.0.3
+cursor=Frachthafen.1.3
+BackImage[0][0][0][0][0][0]=Frachthafen.0.0
+BackImage[0][1][0][0][0][0]=Frachthafen.0.1
+BackImage[1][0][0][0][0][0]=Frachthafen.0.2
+BackImage[1][0][1][0][0][0]=Frachthafen.1.0
+FrontImage[2][0][0][0][0][0]=Frachthafen.1.1
+BackImage[2][1][0][0][0][0]=Frachthafen.1.2
+FrontImage[3][0][0][0][0][0]=Frachthafen.2.0,12,-6
+FrontImage[3][0][1][0][0][0]=Frachthafen.2.1,12,-6
+----------------------------------------------------

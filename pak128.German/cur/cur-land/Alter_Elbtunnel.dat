@@ -1,0 +1,51 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Land
+#	Neu:02-2014
+#	Letzte Bearbeitung:
+#    04-09-2015 The Transporter
+# --------------------------------
+Obj=building
+Name=Alter_Elbtunnel
+copyright=pumuckl999
+Type=cur
+chance=25
+intro_year=1911
+needs_ground=0
+build_time=0
+Passengers=30
+climates=water,desert
+dims=2,2,4
+BackImage[0][0][0][0][0][0]=Alter_Elbtunnel.0.0
+BackImage[0][0][1][0][0][0]=Alter_Elbtunnel.0.1
+BackImage[0][1][0][0][0][0]=Alter_Elbtunnel.0.2
+BackImage[0][1][1][0][0][0]=Alter_Elbtunnel.0.3
+BackImage[0][0][0][0][0][1]=Alter_Elbtunnel.0.4
+BackImage[0][0][1][0][0][1]=Alter_Elbtunnel.0.5
+BackImage[0][1][0][0][0][1]=Alter_Elbtunnel.1.0
+BackImage[0][1][1][0][0][1]=Alter_Elbtunnel.1.1
+BackImage[1][0][0][0][0][0]=Alter_Elbtunnel.1.2
+BackImage[1][0][1][0][0][0]=Alter_Elbtunnel.1.3
+BackImage[1][1][0][0][0][0]=Alter_Elbtunnel.1.4
+BackImage[1][1][1][0][0][0]=Alter_Elbtunnel.1.5
+BackImage[1][0][0][0][0][1]=Alter_Elbtunnel.2.0
+BackImage[1][0][1][0][0][1]=Alter_Elbtunnel.2.1
+BackImage[1][1][0][0][0][1]=Alter_Elbtunnel.2.2
+BackImage[1][1][1][0][0][1]=Alter_Elbtunnel.2.3
+BackImage[2][0][0][0][0][0]=Alter_Elbtunnel.2.4
+BackImage[2][0][1][0][0][0]=Alter_Elbtunnel.2.5
+BackImage[2][1][0][0][0][0]=Alter_Elbtunnel.3.0
+BackImage[2][1][1][0][0][0]=Alter_Elbtunnel.3.1
+BackImage[2][0][0][0][0][1]=Alter_Elbtunnel.3.2
+BackImage[2][0][1][0][0][1]=Alter_Elbtunnel.3.3
+BackImage[2][1][0][0][0][1]=Alter_Elbtunnel.3.4
+BackImage[2][1][1][0][0][1]=Alter_Elbtunnel.3.5
+BackImage[3][0][0][0][0][0]=Alter_Elbtunnel.4.0
+BackImage[3][0][1][0][0][0]=Alter_Elbtunnel.4.1
+BackImage[3][1][0][0][0][0]=Alter_Elbtunnel.4.2
+BackImage[3][1][1][0][0][0]=Alter_Elbtunnel.4.3
+BackImage[3][0][0][0][0][1]=Alter_Elbtunnel.4.4
+BackImage[3][0][1][0][0][1]=Alter_Elbtunnel.4.5
+BackImage[3][1][0][0][0][1]=Alter_Elbtunnel.5.0
+BackImage[3][1][1][0][0][1]=Alter_Elbtunnel.5.1
+--------------------------------------------------

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="iso-8859-2"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Administration Module</title>
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+<link href="include/style.css" type="text/css" rel="StyleSheet" />
+</head>
+
+<body>
+
+
+<h1>Administration Module</h1>
+
+
+<div align="center">
+<table class="tableback">
+<tr>
+<td>
+<p class="justified">
+This module will be used to edit the data in the language, version, and user
+tables. It will consist of three couples of pages - one couple for every table.
+The first page in each couple will allow user to select desired operation on the
+table - add record or modify existing record (all existing records will be
+selectable by dropdown list - primary key will be displayed). The second page
+from each couple will contain fields allowing to edit all the attributes of the
+record in the table. If the page will be called with request to add new one, all
+fields will be empty, if the page will be called with an option to modify
+existing record, the fields will contain current values and user will be able to
+modify them. Pressing save will insert or update the table.
+</p>
+<p class="justified">
+If the set of values of filed is restricted (for example foreign keys), the
+values should be selectable using drop down lists. User modification page will
+also allow the modification of the relation translates (add relation to given
+language, remove relation to given language).
+</p>
+<p class="justified">
+Any logged translator will be able to modify own user data except own state, own
+role, and relation translates. Any logged administrator will be able to modify
+own user data and the user data of any translator, and the language data for the
+language he translates. Logged administrator will be able to modify the data of
+the version which he maintains.
+</p>
+</td>
+</tr>
+</table>
+</div>
+
+<p>
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+</p>
+
+<div style="text-align: center">
+<hr width="90%" />
+<p class="ending">
+<br />
+
+<b>SimuTranslator:</b> &copy;2004-2005 <a href="team.htm">SimuTranslator Team</a><br />
+<b>Documentation:</b> &copy;2004-2005 <a href="http://www.tomaskubes.net">Tom&aacute;&scaron; Kube&scaron;</a><br />
+<a href="index.htm">SimuTranslator documentation home</a>
+<br />&nbsp;
+</p>
+<hr width="90%" />
+</div>
+
+
+
+</body>
+</html>

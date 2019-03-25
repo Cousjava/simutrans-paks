@@ -1,0 +1,17 @@
+Obj=building
+Name=Fussgaengerunterfuehrung Solingen
+copyright=pumuckl999
+Type=res
+climates=mediterran, tropic, desert
+level=0
+intro_year=1928
+climates=mediterran, tropic, desert, temperate, tundra, rocky
+dims=1,1,4
+BackImage[0][0][0][0][0][0]=fgus.0.0
+BackImage[1][0][0][0][0][0]=fgus.0.1
+BackImage[2][0][0][0][0][0]=fgus.0.2
+BackImage[3][0][0][0][0][0]=fgus.0.3
+BackImage[0][0][0][0][0][1]=fgus.1.0
+BackImage[1][0][0][0][0][1]=fgus.1.1
+BackImage[2][0][0][0][0][1]=fgus.1.2
+BackImage[3][0][0][0][0][1]=fgus.1.3

@@ -1,0 +1,32 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 06-2015
+#    Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+obj=building
+name=Empfangsgebaeude_Boeblingen
+copyright=pumuckl999
+type=extension
+waytype=air
+level=3
+cost=192000
+maintenance=24
+enables_pax=1
+enables_post=1
+intro_year=1925
+intro_month=1
+allow_underground=0
+climates=desert, tropic, mediterran, temperate, tundra, rocky
+dims=1,1,4
+cursor=Empfangsgebaeude_Boeblingen.0.0
+icon=> Empfangsgebaeude_Boeblingen.2.0
+BackImage[0][0][0][0][0][0]=Empfangsgebaeude_Boeblingen.0.0
+BackImage[1][0][0][0][0][0]=Empfangsgebaeude_Boeblingen.0.1
+BackImage[2][0][0][0][0][0]=Empfangsgebaeude_Boeblingen.0.2
+BackImage[3][0][0][0][0][0]=Empfangsgebaeude_Boeblingen.0.3
+BackImage[0][0][0][0][0][1]=Empfangsgebaeude_Boeblingen.1.0
+BackImage[1][0][0][0][0][1]=Empfangsgebaeude_Boeblingen.1.1
+BackImage[2][0][0][0][0][1]=Empfangsgebaeude_Boeblingen.1.2
+BackImage[3][0][0][0][0][1]=Empfangsgebaeude_Boeblingen.1.3
+--------------------------------------------------------------

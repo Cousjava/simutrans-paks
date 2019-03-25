@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+---------------------------------
+obj=vehicle
+name=Schoner_Fische
+copyright=timeshock/MHz
+intro_year=1800
+intro_month=1
+retire_year=1830
+retire_month=12
+cost=1734400
+runningcost=165
+waytype=water
+freight=Fleisch
+engine_type=sail
+power=184
+speed=16
+gear=600
+weight=135
+payload=30
+length=16
+smoke=-1
+sound=-1
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[W]=Schoner_Fische.0.0,-70,-32
+EmptyImage[NW]=Schoner_Fische.0.1,-63,-20
+EmptyImage[N]=Schoner_Fische.0.2,-50,-22
+EmptyImage[NE]=Schoner_Fische.0.3,-62,-20
+EmptyImage[E]=Schoner_Fische.0.4,-59,-16
+EmptyImage[SE]=Schoner_Fische.0.5,-68,-13
+EmptyImage[S]=Schoner_Fische.0.6,-68,-24
+EmptyImage[SW]=Schoner_Fische.0.7,-64,-28
+-------------------------------------------------------

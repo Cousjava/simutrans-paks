@@ -1,0 +1,24 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Land
+#	Neu:28-01-2018
+# --------------------------------
+Obj=building
+Name=Aussichtsturm_Soonwald
+copyright=pumuckl999
+Type=cur
+chance=22
+level=41
+intro_year=1893
+build_time=0
+climates=mediterran
+dims=1,1,4
+BackImage[0][0][0][0][0][0]=Aturm_Soonwald.0.0
+BackImage[3][0][0][0][0][0]=Aturm_Soonwald.0.1
+BackImage[2][0][0][0][0][0]=Aturm_Soonwald.0.2
+BackImage[1][0][0][0][0][0]=Aturm_Soonwald.0.3
+BackImage[0][0][0][0][0][1]=Aturm_Soonwald.1.0
+BackImage[3][0][0][0][0][1]=Aturm_Soonwald.1.1
+BackImage[2][0][0][0][0][1]=Aturm_Soonwald.1.2
+BackImage[1][0][0][0][0][1]=Aturm_Soonwald.1.3
+----------------------------------------------------------

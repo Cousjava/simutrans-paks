@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Strassen
+#	Neu:26-08-2017
+#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+-------------------------
+obj=tunnel
+name=Strassentunnel40
+copyright=The Transporter, pumuckl999
+waytype=road
+intro_year=1800
+intro_month=1
+retire_year=1915
+retire_month=12
+cost=60000
+maintenance=20
+topspeed=40
+icon=> Strassentunnelv40.3.0
+cursor=Strassentunnelv40.0.0,0,-16
+FrontImage[N][0]=Strassentunnelv40.2.0
+BackImage[N][0]=Strassentunnelv40.0.0
+FrontImage[S][0]=Strassentunnelv40.0.2
+BackImage[S][0]=Strassentunnelv40.0.2
+FrontImage[E][0]=Strassentunnelv40.0.1
+BackImage[E][0]=Strassentunnelv40.0.1
+FrontImage[W][0]=Strassentunnelv40.2.1
+BackImage[W][0]=Strassentunnelv40.0.3
+FrontImage[N][1]=Strassentunnelv40.2.2
+BackImage[N][1]=Strassentunnelv40.1.0
+FrontImage[S][1]=Strassentunnelv40.1.2
+BackImage[S][1]=Strassentunnelv40.1.2
+FrontImage[E][1]=Strassentunnelv40.1.1
+BackImage[E][1]=Strassentunnelv40.1.1
+FrontImage[W][1]=Strassentunnelv40.2.3
+BackImage[W][1]=Strassentunnelv40.1.3

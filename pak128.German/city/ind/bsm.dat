@@ -1,0 +1,16 @@
+Obj=building
+Name=Baracke_Seemoos
+copyright=pumuckl999
+Type=ind
+level=1
+intro_year=1914
+climates=mediterran, tropic, desert, temperate, tundra, rocky
+dims=1,1,4
+BackImage[0][0][0][0][0][0]=bsm.0.0
+BackImage[1][0][0][0][0][0]=bsm.0.1
+BackImage[2][0][0][0][0][0]=bsm.0.2
+BackImage[3][0][0][0][0][0]=bsm.0.3
+BackImage[0][0][0][0][0][1]=bsm.1.0
+BackImage[1][0][0][0][0][1]=bsm.1.1
+BackImage[2][0][0][0][0][1]=bsm.1.2
+BackImage[3][0][0][0][0][1]=bsm.1.3

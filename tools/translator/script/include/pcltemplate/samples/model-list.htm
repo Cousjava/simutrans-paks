@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>PclTemplate - Template Sample File - <!--(page_name)--></title>
+  </head>
+  <body>
+    Hello <!--(user_name)--> !
+    <br>
+    <!--(list:users)-->
+    <table border="1">
+      <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+      </tr>
+      <!--(item)-->
+      <tr>
+        <td><!--(first_name)--></td>
+        <td><!--(last_name)--></td>
+      </tr>
+      <!--(enditem)-->
+    </table>
+    <!--(endlist)-->
+</body>
+</html>

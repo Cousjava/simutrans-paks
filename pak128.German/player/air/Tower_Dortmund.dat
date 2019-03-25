@@ -1,0 +1,31 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 06-2015
+#    Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+obj=building
+name=Tower_Dortmund
+copyright=pumuckl999
+type=extension
+level=2
+cost=128000
+maintenance=16
+enables_pax=1
+intro_year=1960
+intro_month=1
+waytype=air
+allow_underground=0
+climates=desert, tropic, mediterran, temperate, tundra, rocky
+dims=1,1,4
+cursor=Tower_Dortmund.0.0
+icon=> Tower_Dortmund.2.0
+BackImage[0][0][0][0][0][0]=Tower_Dortmund.0.0
+BackImage[1][0][0][0][0][0]=Tower_Dortmund.0.1
+BackImage[2][0][0][0][0][0]=Tower_Dortmund.0.2
+BackImage[3][0][0][0][0][0]=Tower_Dortmund.0.3
+BackImage[0][0][0][0][0][1]=Tower_Dortmund.1.0
+BackImage[1][0][0][0][0][1]=Tower_Dortmund.1.1
+BackImage[2][0][0][0][0][1]=Tower_Dortmund.1.2
+BackImage[3][0][0][0][0][1]=Tower_Dortmund.1.3
+--------------------------------------

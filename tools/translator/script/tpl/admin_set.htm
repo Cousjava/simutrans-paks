@@ -1,0 +1,172 @@
+<h1 class="pagename"><!--(page_title)--></h1>
+
+<form enctype="multipart/form-data" action="main.php?page=admin_set" method="POST">
+
+ <input type="hidden" name="action" value="version">
+ <input type="hidden" name="mode" value="edit">
+ <input type="hidden" name="version_id" value="4">
+ <table align="center" cellpadding="3" cellspacing="0" width="60%">
+  <tr class="bg_trans">
+   <td width="160"> <b><!--(bez_setid)-->:</b> </td>
+   <td width="200"> <!--(value_setid)--> </td>
+   <td>  </td>
+  </tr>
+
+  <tr class="bg_grey">
+   <td> <b><!--(bez_setname)-->:</b> </td>
+   <td width="100"> <!--(value_ver_name)--> </td>
+   <td> 
+      <input type="text" name="ver_name" value="<!--(value_ver_name)-->" size="20"  style="<!--(display_name)-->"> 
+   
+   </td>
+  </tr>
+
+  <tr class="bg_trans">
+   <td> <b><!--(bez_setstatus)-->:</b> </td>
+   <td> <!--(value_setstatus)--> </td>
+   <td> 
+    <select name="setstatus" style="display:block;">
+      <option value="0" <!--(value_disabled_yes)--> ><!--(disabled)--> </option>
+      <option value="1" <!--(value_enabled_yes)--> ><!--(enabled)--> </option>
+    </select>
+   </td>
+
+  </tr>
+
+  <tr class="bg_grey">
+   <td> <b><!--(bez_setsize)-->:</b> </td>
+   <td> <!--(value_setsize)--> </td>
+   <td> 
+    <select name="tile_size" style="<!--(display_size)-->">
+      <!--(list:setsize)-->
+      <!--(item)-->
+        <option value="<!--(value_setsize)-->" <!--(select_size)--> ><!--(value_setsize)--> </option>
+      <!--(enditem)-->
+      <!--(endlist)-->  
+    </select>
+   </td>
+
+  </tr>
+
+  <tr class="bg_trans">
+   <td> <b><!--(bez_maintainter)-->:</b> </td>
+   <td style="white-space:nowrap;"> <!--(value_maintainter)--> </td>
+   <td>  
+    <select name="set_maintainer" style="<!--(display_maintainter)-->">
+      <!--(list:maintainter)-->
+      <!--(item)-->
+        <option value="<!--(value_maintainter)-->" <!--(select_m)--> ><!--(name_maintainter)--> </option>
+      <!--(enditem)-->
+      <!--(endlist)-->  
+    </select>
+   </td>
+  </tr>
+
+  <tr class="bg_grey">
+   <td> <b><!--(bez_comaintainter)-->:</b> </td>
+
+   <td style="white-space:nowrap;"> <!--(value_maintainter2)--> </td>
+   <td>
+    <select name="set_maintainer2" style="<!--(display_comaintainter2)-->">
+      <option value='none'><!--(value_none)--> </option>
+      <!--(list:comaintainter)-->
+      <!--(item)-->
+        <option value="<!--(value_maintainter)-->" <!--(select_m1)--> ><!--(name_maintainter)--> </option>
+      <!--(enditem)-->
+      <!--(endlist)-->  
+    </select>
+   </td>
+
+  </tr>
+
+  <tr class="bg_trans">
+   <td> <b><!--(bez_comaintainter)-->:</b> </td>
+   <td style="white-space:nowrap;"> <!--(value_maintainter3)--> </td>
+   <td>
+    <select name="set_maintainer3" style="<!--(display_comaintainter3)-->">
+      <option value='none'><!--(value_none)--> </option>
+      <!--(list:comaintainter)-->
+      <!--(item)-->
+        <option value="<!--(value_maintainter)-->" <!--(select_m2)--> ><!--(name_maintainter)--> </option>
+      <!--(enditem)-->
+      <!--(endlist)-->  
+    </select>
+   </td>
+  </tr>
+
+  <tr class="bg_grey">
+   <td> <b><!--(bez_show_images)-->:</b> </td>
+   <td> <!--(value_images)--> </td>
+   <td> 
+    <select name="showimages" style="display:block;">
+      <option value="0" > </option>
+      <option value="1" <!--(select_all)--> ><!--(value_image_all)--> </option>
+      <option value="2" <!--(select_registered)--> ><!--(value_image_registered)--> </option>
+      <option value="3" <!--(select_dev)--> ><!--(value_image_dev)--> </option>
+    </select>
+   </td>
+
+  </tr>
+  <tr class="bg_trans">
+   <td> <b><!--(bez_opensource)-->:</b> </td>
+   <td> <!--(value_opensource)--> </td>
+   <td> 
+    <select name="opensource" style="<!--(display_opensource)-->">
+      <option value="0" <!--(value_opensource_no)--> ><!--(no)--> </option>
+      <option value="1" <!--(value_opensource_yes)--> ><!--(yes)--> </option>
+    </select>
+    <input type="text" name="opensource_link" value="<!--(value_opensource_link)-->" size="40" style="<!--(display_opensource)-->">
+    <a href="http://<!--(value_opensource_link)-->" target="_blank" ><!--(value_opensource_link)--></a>
+   </td>
+
+  </tr>
+
+  <tr class="bg_grey">
+   <td> <b><!--(bez_lizenz)-->:</b> </td>
+   <td> <a href="<!--(value_license_link)-->" target="_blank"><!--(value_license_name)--></a> </td>
+   <td>
+    <select name="license" style="<!--(display_license)-->">
+      <option value='none'><!--(value_none)--> </option>
+      <!--(list:license_list)-->
+      <!--(item)-->
+        <option value="<!--(license_id)-->" <!--(select)--> ><!--(license_name)--> </option>
+      <!--(enditem)-->
+      <!--(endlist)-->  
+    </select>
+   </td>
+
+  </tr>
+
+  <tr class="bg_trans">
+   <td> <b><!--(bez_homepage)-->:</b> </td>
+   <td style="white-space:nowrap;"> 
+    <!--(if:value_homepage)-->
+      <a href="http://<!--(value_homepage)-->" target="_blank"><!--(value_homepage)--></a>
+    <!--(endif)-->
+   </td>
+   <td><input type="text" name="homepage" value="<!--(value_homepage)-->" size="40" style="display:block;"> </td>
+
+  </tr>
+
+  <tr class="bg_grey">
+   <td> <b><!--(bez_disabled_lang)-->:</b> </td>
+   <td colspan="2" align="left">
+      <div class="flex_option">
+      <!--(list:langlist)-->
+      <!--(item)-->
+        <div <!--(if:lang_checked)-->style="color:black;"<!--(endif)--> ><input type="checkbox" name="translates_<!--(lang_id)-->" <!--(lang_checked)--> ><b><!--(lang_id)--></b> (<!--(lang_name)-->)</div>
+      <!--(enditem)-->
+      <!--(endlist)-->  
+      </div>
+   </td>
+
+  </tr>
+
+  <tr>
+   <td colspan="3" class="center" ><br /> <input type="submit" name="submit" value="<!--(submit_button)-->"> </td>
+  </tr>
+ </table>
+  <input type="hidden" name="version_id" value="<!--(value_setid)-->">
+  <input type="hidden" name="mode" value="submit">
+
+</form>

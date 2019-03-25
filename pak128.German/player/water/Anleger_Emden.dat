@@ -1,0 +1,28 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 31-07-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=Anleger_1903
+copyright=Pumuckl999
+type=habour
+enables_pax=1
+Level=4
+cost=256000
+maintenance=32
+intro_year=1903
+intro_month=1
+dims=1,2,4
+icon=> Anleger_Emden.3.0
+cursor=Anleger_Emden.3.1
+BackImage[2][0][0][0][0][0]=Anleger_Emden.0.0
+BackImage[2][1][0][0][0][0]=Anleger_Emden.0.1
+BackImage[3][0][0][0][0][0]=Anleger_Emden.0.2
+BackImage[3][0][1][0][0][0]=Anleger_Emden.1.0
+BackImage[0][0][0][0][0][0]=Anleger_Emden.1.1
+BackImage[0][1][0][0][0][0]=Anleger_Emden.1.2
+BackImage[1][0][0][0][0][0]=Anleger_Emden.2.0
+BackImage[1][0][1][0][0][0]=Anleger_Emden.2.1
+----------------------------------------------------------

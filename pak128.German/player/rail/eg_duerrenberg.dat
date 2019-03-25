@@ -1,0 +1,54 @@
+#-------------------------------
+#	PAK128.german
+#	Players Building
+#    Neu:   27-04-2017
+#	Letzte Bearbeitung: $Date$ - $Author$
+#-------------------------------
+Obj=building
+Name=Empfangsgebaeude_Duerrenberg
+copyright=pumuckl999
+intro_year=1856
+intro_month=1
+waytype=track
+Level=2
+cost=128000
+maintenance=16
+type=extension
+enables_pax=1
+enables_post=1
+icon=> eg_duerrenbergt.5.4
+cursor=eg_duerrenbergt.5.5
+dims=2,1,4
+BackImage[0][0][0][0][0][0]=eg_duerrenbergt.4.0
+BackImage[0][0][0][1][0][0]=eg_duerrenbergt.4.1
+BackImage[0][0][1][0][0][0]=eg_duerrenbergt.4.2
+BackImage[0][0][1][1][0][0]=eg_duerrenbergt.4.3
+BackImage[0][0][0][0][0][1]=eg_duerrenbergt.4.4
+BackImage[0][0][0][1][0][1]=eg_duerrenbergt.4.5
+BackImage[0][0][1][0][0][1]=eg_duerrenbergt.5.0
+BackImage[0][0][1][1][0][1]=eg_duerrenbergt.5.1
+BackImage[1][0][0][0][0][0]=eg_duerrenbergt.0.0
+BackImage[1][0][0][1][0][0]=eg_duerrenbergt.0.1
+BackImage[1][1][0][0][0][0]=eg_duerrenbergt.0.2
+BackImage[1][1][0][1][0][0]=eg_duerrenbergt.0.3
+BackImage[1][0][0][0][0][1]=eg_duerrenbergt.0.4
+BackImage[1][0][0][1][0][1]=eg_duerrenbergt.0.5
+BackImage[1][1][0][0][0][1]=eg_duerrenbergt.1.0
+BackImage[1][1][0][1][0][1]=eg_duerrenbergt.1.1
+BackImage[2][0][0][0][0][0]=eg_duerrenbergt.1.2
+BackImage[2][0][0][1][0][0]=eg_duerrenbergt.1.3
+BackImage[2][0][1][0][0][0]=eg_duerrenbergt.1.4
+BackImage[2][0][1][1][0][0]=eg_duerrenbergt.1.5
+BackImage[2][0][0][0][0][1]=eg_duerrenbergt.2.0
+BackImage[2][0][0][1][0][1]=eg_duerrenbergt.2.1
+BackImage[2][0][1][0][0][1]=eg_duerrenbergt.2.2
+BackImage[2][0][1][1][0][1]=eg_duerrenbergt.2.3
+BackImage[3][0][0][0][0][0]=eg_duerrenbergt.2.4
+BackImage[3][0][0][1][0][0]=eg_duerrenbergt.2.5
+BackImage[3][1][0][0][0][0]=eg_duerrenbergt.3.0
+BackImage[3][1][0][1][0][0]=eg_duerrenbergt.3.1
+BackImage[3][0][0][0][0][1]=eg_duerrenbergt.3.2
+BackImage[3][0][0][1][0][1]=eg_duerrenbergt.3.3
+BackImage[3][1][0][0][0][1]=eg_duerrenbergt.3.4
+BackImage[3][1][0][1][0][1]=eg_duerrenbergt.3.5
+------------------------------------------------

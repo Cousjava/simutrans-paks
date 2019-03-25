@@ -1,0 +1,75 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Land
+#	Neu:12-2013
+#	Letzte Bearbeitung:
+#    04-09-2015 The Transporter
+# --------------------------------
+Obj=building
+Name=Leuchtturm_Warnemuende
+copyright=pumuckl999
+Type=cur
+chance=100
+intro_year=1898
+needs_ground=1
+build_time=0
+Passengers=30
+climates=water, desert
+dims=2,2,4
+BackImage[0][0][0][0][0][0]=Leuchtturm_Warnemuende.0.0
+BackImage[0][0][0][1][0][0]=Leuchtturm_Warnemuende.0.1
+BackImage[0][0][1][0][0][0]=Leuchtturm_Warnemuende.0.2
+BackImage[0][0][1][1][0][0]=Leuchtturm_Warnemuende.0.3
+BackImage[0][1][0][0][0][0]=Leuchtturm_Warnemuende.0.4
+BackImage[0][1][0][1][0][0]=Leuchtturm_Warnemuende.0.5
+BackImage[0][1][1][0][0][0]=Leuchtturm_Warnemuende.0.6
+BackImage[0][0][0][0][0][1]=Leuchtturm_Warnemuende.0.7
+BackImage[0][0][0][1][0][1]=Leuchtturm_Warnemuende.1.0
+BackImage[0][0][1][0][0][1]=Leuchtturm_Warnemuende.1.1
+BackImage[0][0][1][1][0][1]=Leuchtturm_Warnemuende.1.2
+BackImage[0][1][0][0][0][1]=Leuchtturm_Warnemuende.1.3
+BackImage[0][1][0][1][0][1]=Leuchtturm_Warnemuende.1.4
+BackImage[0][1][1][0][0][1]=Leuchtturm_Warnemuende.1.5
+BackImage[1][0][0][0][0][0]=Leuchtturm_Warnemuende.1.6
+BackImage[1][0][0][1][0][0]=Leuchtturm_Warnemuende.1.7
+BackImage[1][0][1][0][0][0]=Leuchtturm_Warnemuende.2.0
+BackImage[1][0][1][1][0][0]=Leuchtturm_Warnemuende.2.1
+BackImage[1][1][0][0][0][0]=Leuchtturm_Warnemuende.2.2
+BackImage[1][1][0][1][0][0]=Leuchtturm_Warnemuende.2.3
+BackImage[1][1][1][0][0][0]=Leuchtturm_Warnemuende.2.4
+BackImage[1][0][0][0][0][1]=Leuchtturm_Warnemuende.2.5
+BackImage[1][0][0][1][0][1]=Leuchtturm_Warnemuende.2.6
+BackImage[1][0][1][0][0][1]=Leuchtturm_Warnemuende.2.7
+BackImage[1][0][1][1][0][1]=Leuchtturm_Warnemuende.3.0
+BackImage[1][1][0][0][0][1]=Leuchtturm_Warnemuende.3.1
+BackImage[1][1][0][1][0][1]=Leuchtturm_Warnemuende.3.2
+BackImage[1][1][1][0][0][1]=Leuchtturm_Warnemuende.3.3
+BackImage[2][0][0][0][0][0]=Leuchtturm_Warnemuende.3.4
+BackImage[2][0][0][1][0][0]=Leuchtturm_Warnemuende.3.5
+BackImage[2][0][1][0][0][0]=Leuchtturm_Warnemuende.3.6
+BackImage[2][0][1][1][0][0]=Leuchtturm_Warnemuende.3.7
+BackImage[2][1][0][0][0][0]=Leuchtturm_Warnemuende.4.0
+BackImage[2][1][0][1][0][0]=Leuchtturm_Warnemuende.4.1
+BackImage[2][1][1][0][0][0]=Leuchtturm_Warnemuende.4.2
+BackImage[2][0][0][0][0][1]=Leuchtturm_Warnemuende.4.3
+BackImage[2][0][0][1][0][1]=Leuchtturm_Warnemuende.4.4
+BackImage[2][0][1][0][0][1]=Leuchtturm_Warnemuende.4.5
+BackImage[2][0][1][1][0][1]=Leuchtturm_Warnemuende.4.6
+BackImage[2][1][0][0][0][1]=Leuchtturm_Warnemuende.4.7
+BackImage[2][1][0][1][0][1]=Leuchtturm_Warnemuende.5.0
+BackImage[2][1][1][0][0][1]=Leuchtturm_Warnemuende.5.1
+BackImage[3][0][0][0][0][0]=Leuchtturm_Warnemuende.5.2
+BackImage[3][0][0][1][0][0]=Leuchtturm_Warnemuende.5.3
+BackImage[3][0][1][0][0][0]=Leuchtturm_Warnemuende.5.4
+BackImage[3][0][1][1][0][0]=Leuchtturm_Warnemuende.5.5
+BackImage[3][1][0][0][0][0]=Leuchtturm_Warnemuende.5.6
+BackImage[3][1][0][1][0][0]=Leuchtturm_Warnemuende.5.7
+BackImage[3][1][1][0][0][0]=Leuchtturm_Warnemuende.6.0
+BackImage[3][0][0][0][0][1]=Leuchtturm_Warnemuende.6.1
+BackImage[3][0][0][1][0][1]=Leuchtturm_Warnemuende.6.2
+BackImage[3][0][1][0][0][1]=Leuchtturm_Warnemuende.6.3
+BackImage[3][0][1][1][0][1]=Leuchtturm_Warnemuende.6.4
+BackImage[3][1][0][0][0][1]=Leuchtturm_Warnemuende.6.5
+BackImage[3][1][0][1][0][1]=Leuchtturm_Warnemuende.6.6
+BackImage[3][1][1][0][0][1]=Leuchtturm_Warnemuende.6.7
+----------------------------------------------------------
