@@ -1,0 +1,58 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Stadt
+#	Neu:12-2011
+# --------------------------------
+Obj=building
+Name=AVL_Kirche
+copyright=lemuria
+Type=cur
+level=25
+Chance=40
+intro_year=1800
+intro_month=1
+needs_ground=1
+build_time=600
+climates=tundra
+dims=3,2,4
+BackImage[1][0][0][0][0][0]=AVL_Kirche.0.0
+BackImage[1][0][0][1][0][0]=AVL_Kirche.0.1
+BackImage[1][0][1][0][0][0]=AVL_Kirche.0.2
+BackImage[1][0][1][1][0][0]=AVL_Kirche.0.3
+BackImage[1][1][0][0][0][0]=AVL_Kirche.1.0
+BackImage[1][1][0][1][0][0]=AVL_Kirche.1.1
+BackImage[1][1][1][0][0][0]=AVL_Kirche.1.2
+BackImage[1][2][0][0][0][0]=AVL_Kirche.1.3
+BackImage[1][2][0][1][0][0]=AVL_Kirche.2.0
+BackImage[1][2][1][0][0][0]=AVL_Kirche.2.1
+BackImage[2][0][0][0][0][0]=AVL_Kirche.0.4
+BackImage[2][0][0][1][0][0]=AVL_Kirche.0.5
+BackImage[2][0][1][0][0][0]=AVL_Kirche.0.6
+BackImage[2][0][1][1][0][0]=AVL_Kirche.0.7
+BackImage[2][0][2][0][0][0]=AVL_Kirche.1.4
+BackImage[2][0][2][1][0][0]=AVL_Kirche.1.5
+BackImage[2][1][0][0][0][0]=AVL_Kirche.1.6
+BackImage[2][1][0][1][0][0]=AVL_Kirche.1.7
+BackImage[2][1][1][0][0][0]=AVL_Kirche.2.4
+BackImage[2][1][2][0][0][0]=AVL_Kirche.2.5
+BackImage[3][0][0][0][0][0]=AVL_Kirche.0.8
+BackImage[3][0][0][1][0][0]=AVL_Kirche.0.9
+BackImage[3][0][1][0][0][0]=AVL_Kirche.0.10
+BackImage[3][0][1][1][0][0]=AVL_Kirche.0.11
+BackImage[3][1][0][0][0][0]=AVL_Kirche.1.8
+BackImage[3][1][0][1][0][0]=AVL_Kirche.1.9
+BackImage[3][1][1][0][0][0]=AVL_Kirche.1.10
+BackImage[3][2][0][0][0][0]=AVL_Kirche.1.11
+BackImage[3][2][0][1][0][0]=AVL_Kirche.2.8
+BackImage[3][2][1][0][0][0]=AVL_Kirche.2.9
+BackImage[0][0][0][0][0][0]=AVL_Kirche.0.12
+BackImage[0][0][0][1][0][0]=AVL_Kirche.0.13
+BackImage[0][0][1][0][0][0]=AVL_Kirche.0.14
+BackImage[0][0][1][1][0][0]=AVL_Kirche.0.15
+BackImage[0][0][2][0][0][0]=AVL_Kirche.1.12
+BackImage[0][0][2][1][0][0]=AVL_Kirche.1.13
+BackImage[0][1][0][0][0][0]=AVL_Kirche.1.14
+BackImage[0][1][0][1][0][0]=AVL_Kirche.1.15
+BackImage[0][1][1][0][0][0]=AVL_Kirche.2.12
+BackImage[0][1][2][0][0][0]=AVL_Kirche.2.13
+----------------------------------------------

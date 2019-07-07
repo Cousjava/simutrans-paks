@@ -1,0 +1,26 @@
+# -------------------------------
+#	PAK128.german
+#	Denkmal
+#	Neu:07-2012
+#	Letzte Bearbeitung:
+#    04-09-2015 The Transporter
+# --------------------------------
+Obj=building
+Name=AVL_Jubilaeumssaeule
+Copyright=RedRabbit
+Type=mon
+level=15
+Chance=50
+intro_year=1846
+retire_year=1924
+climates=tundra
+Dims=1,1,4
+BackImage[0][0][0][0][0][0]=AVL_Jubilaeumssaeule.2.0
+BackImage[0][0][0][1][0][0]=AVL_Jubilaeumssaeule.1.0
+BackImage[1][0][0][0][0][0]=AVL_Jubilaeumssaeule.2.1
+BackImage[1][0][0][1][0][0]=AVL_Jubilaeumssaeule.1.1
+BackImage[2][0][0][0][0][0]=AVL_Jubilaeumssaeule.2.2
+BackImage[2][0][0][1][0][0]=AVL_Jubilaeumssaeule.1.2
+BackImage[3][0][0][0][0][0]=AVL_Jubilaeumssaeule.2.3
+BackImage[3][0][0][1][0][0]=AVL_Jubilaeumssaeule.1.3
+---------------------------------------------------------

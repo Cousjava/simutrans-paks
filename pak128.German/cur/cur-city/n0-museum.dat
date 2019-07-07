@@ -1,0 +1,21 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Stadt
+#	Neu:
+#	Letzte Bearbeitung:
+#    04-09-2015 The Transporter
+# --------------------------------
+Obj=building
+Name=MUSEUM_0
+copyright=MHz
+Type=cur
+Chance=25
+build_time=24000
+Passengers=40
+climates=desert,tropic,mediterran,temperate
+Dims=2,2
+BackImage[0][0][0][0][0][0]=n0-museum.0.1
+BackImage[0][1][0][0][0][0]=n0-museum.0.0
+BackImage[0][0][1][0][0][0]=n0-museum.1.1
+BackImage[0][1][1][0][0][0]=n0-museum.1.0
+--------------------------------------------

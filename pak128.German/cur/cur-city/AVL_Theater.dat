@@ -1,0 +1,73 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Stadt
+#	Neu:
+#	Letzte Bearbeitung:
+#    04-09-2015 The Transporter
+# --------------------------------
+Obj=building
+Name=AVL_Theater
+copyright=Lemuria
+Type=cur
+level=25
+Chance=25
+intro_year=1800
+intro_month=1
+#retire_year=1923
+needs_ground=1
+build_time=18000
+climates=tundra
+dims=4,2,4
+BackImage[0][0][0][0][0][0]=AVL_Theater.0.0
+BackImage[0][0][0][1][0][0]=AVL_Theater.0.1
+BackImage[0][0][1][0][0][0]=AVL_Theater.0.2
+BackImage[0][0][1][1][0][0]=AVL_Theater.0.3
+BackImage[0][0][2][0][0][0]=AVL_Theater.0.4
+BackImage[0][0][2][1][0][0]=AVL_Theater.0.5
+BackImage[0][0][3][0][0][0]=AVL_Theater.0.6
+BackImage[0][0][3][1][0][0]=AVL_Theater.0.7
+BackImage[0][1][0][0][0][0]=AVL_Theater.1.0
+BackImage[0][1][0][1][0][0]=AVL_Theater.1.1
+BackImage[0][1][1][0][0][0]=AVL_Theater.1.2
+BackImage[0][1][2][0][0][0]=AVL_Theater.1.3
+BackImage[0][1][3][0][0][0]=AVL_Theater.1.4
+BackImage[1][0][0][0][0][0]=AVL_Theater.1.5
+BackImage[1][0][0][1][0][0]=AVL_Theater.1.6
+BackImage[1][0][1][0][0][0]=AVL_Theater.1.7
+BackImage[1][0][1][1][0][0]=AVL_Theater.2.0
+BackImage[1][1][0][0][0][0]=AVL_Theater.2.1
+BackImage[1][1][0][1][0][0]=AVL_Theater.2.2
+BackImage[1][1][1][0][0][0]=AVL_Theater.2.3
+BackImage[1][2][0][0][0][0]=AVL_Theater.2.4
+BackImage[1][2][0][1][0][0]=AVL_Theater.2.5
+BackImage[1][2][1][0][0][0]=AVL_Theater.2.6
+BackImage[1][3][0][0][0][0]=AVL_Theater.2.7
+BackImage[1][3][0][1][0][0]=AVL_Theater.3.0
+BackImage[1][3][1][0][0][0]=AVL_Theater.3.1
+BackImage[2][0][0][0][0][0]=AVL_Theater.3.2
+BackImage[2][0][0][1][0][0]=AVL_Theater.3.3
+BackImage[2][0][1][0][0][0]=AVL_Theater.3.4
+BackImage[2][0][1][1][0][0]=AVL_Theater.3.5
+BackImage[2][0][2][0][0][0]=AVL_Theater.3.6
+BackImage[2][0][2][1][0][0]=AVL_Theater.3.7
+BackImage[2][0][3][0][0][0]=AVL_Theater.4.0
+BackImage[2][0][3][1][0][0]=AVL_Theater.4.1
+BackImage[2][1][0][0][0][0]=AVL_Theater.4.2
+BackImage[2][1][0][1][0][0]=AVL_Theater.4.3
+BackImage[2][1][1][0][0][0]=AVL_Theater.4.4
+BackImage[2][1][2][0][0][0]=AVL_Theater.4.5
+BackImage[2][1][3][0][0][0]=AVL_Theater.4.6
+BackImage[3][0][0][0][0][0]=AVL_Theater.4.7
+BackImage[3][0][0][1][0][0]=AVL_Theater.5.0
+BackImage[3][0][1][0][0][0]=AVL_Theater.5.1
+BackImage[3][0][1][1][0][0]=AVL_Theater.5.2
+BackImage[3][1][0][0][0][0]=AVL_Theater.5.3
+BackImage[3][1][0][1][0][0]=AVL_Theater.5.4
+BackImage[3][1][1][0][0][0]=AVL_Theater.5.5
+BackImage[3][2][0][0][0][0]=AVL_Theater.5.6
+BackImage[3][2][0][1][0][0]=AVL_Theater.5.7
+BackImage[3][2][1][0][0][0]=AVL_Theater.6.0
+BackImage[3][3][0][0][0][0]=AVL_Theater.6.1
+BackImage[3][3][0][1][0][0]=AVL_Theater.6.2
+BackImage[3][3][1][0][0][0]=AVL_Theater.6.3
+-----------------------------------------------

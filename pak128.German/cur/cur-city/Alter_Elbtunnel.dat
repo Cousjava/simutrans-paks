@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Sehenswuerdigkeiten_Land
 #	Neu:02-2014
-#	Letzte Bearbeitung:
-#    04-09-2015 The Transporter
 # --------------------------------
 Obj=building
 Name=Alter_Elbtunnel
@@ -12,7 +10,7 @@ Type=cur
 chance=25
 intro_year=1911
 needs_ground=0
-build_time=0
+build_time=2000
 Passengers=30
 climates=water,desert
 dims=2,2,4

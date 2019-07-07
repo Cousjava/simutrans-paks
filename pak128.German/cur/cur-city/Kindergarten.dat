@@ -1,0 +1,38 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Stadt
+#	Neu:
+#	Letzte Bearbeitung:
+#    04-09-2015 The Transporter
+# --------------------------------
+Obj=building
+copyright=Lemuria
+Name=Kindergarten
+Type=cur
+level=10
+chance=100
+intro_year=1958
+intro_month=1
+retire_year=1985
+retire_month=12
+build_time=800
+climates=temperate, tundra, rocky
+needs_ground=1
+Dims=2,2,4
+BackImage[0][0][0][0][0][0]=Kindergarten.2.4
+BackImage[0][0][1][0][0][0]=Kindergarten.2.3
+BackImage[0][1][0][0][0][0]=Kindergarten.2.2
+BackImage[0][1][1][0][0][0]=Kindergarten.2.1
+BackImage[1][0][0][0][0][0]=Kindergarten.0.4
+BackImage[1][0][1][0][0][0]=Kindergarten.0.3
+BackImage[1][1][0][0][0][0]=Kindergarten.0.2
+BackImage[1][1][1][0][0][0]=Kindergarten.0.1
+BackImage[2][0][0][0][0][0]=Kindergarten.4.4
+BackImage[2][0][1][0][0][0]=Kindergarten.4.3
+BackImage[2][1][0][0][0][0]=Kindergarten.4.2
+BackImage[2][1][1][0][0][0]=Kindergarten.4.1
+BackImage[3][0][0][0][0][0]=Kindergarten.6.4
+BackImage[3][0][1][0][0][0]=Kindergarten.6.3
+BackImage[3][1][0][0][0][0]=Kindergarten.6.2
+BackImage[3][1][1][0][0][0]=Kindergarten.6.1
+-----------------------------------------------

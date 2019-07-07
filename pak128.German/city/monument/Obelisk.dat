@@ -1,0 +1,20 @@
+# -------------------------------
+#	PAK128.german
+#	Denkmal
+#	Neu:12-2010
+#	Letzte Bearbeitung:
+#    04-09-2015 The Transporter
+# --------------------------------
+Obj=building
+name=Obelisk
+copyright=TonyBzt
+type=mon
+level=20
+chance=25
+intro_year=1816
+retire_year=1931
+climates=desert, tropic, mediterran, temperate, tundra, rocky
+needs_ground=1
+Dims=1,1,1
+BackImage[0][0][0][0][0][0]=Obelisk.0.0
+-------------------------------------------

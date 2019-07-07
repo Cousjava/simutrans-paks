@@ -1,0 +1,36 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Stadt
+#	Neu:
+#	Letzte Bearbeitung:
+#    04-09-2015 The Transporter
+# --------------------------------
+Obj=building
+Name=Mitteldeutsche_Dorfkirche
+copyright=lemuria
+Type=cur
+level=20
+Chance=40
+intro_year=1800
+intro_month=1
+#retire_year=1923
+build_time=100
+climates=mediterran, temperate, tundra,
+dims=1,2,4
+BackImage[0][0][0][0][0][0]=Md_Dorfkirche.0.0,0,1
+BackImage[0][0][0][1][0][0]=Md_Dorfkirche.0.1,0,1
+BackImage[0][1][0][0][0][0]=Md_Dorfkirche.0.2,0,1
+BackImage[0][1][0][1][0][0]=Md_Dorfkirche.0.3,0,1
+BackImage[1][0][0][0][0][0]=Md_Dorfkirche.1.0,0,1
+BackImage[1][0][0][1][0][0]=Md_Dorfkirche.1.1,0,1
+BackImage[1][0][1][0][0][0]=Md_Dorfkirche.1.2,0,1
+BackImage[1][0][1][1][0][0]=Md_Dorfkirche.1.3,0,1
+BackImage[2][0][0][0][0][0]=Md_Dorfkirche.2.0,0,1
+BackImage[2][0][0][1][0][0]=Md_Dorfkirche.2.1,0,1
+BackImage[2][1][0][0][0][0]=Md_Dorfkirche.2.2,0,1
+BackImage[2][1][0][1][0][0]=Md_Dorfkirche.2.3,0,1
+BackImage[3][0][0][0][0][0]=Md_Dorfkirche.3.0,0,1
+BackImage[3][0][0][1][0][0]=Md_Dorfkirche.3.1,0,1
+BackImage[3][0][1][0][0][0]=Md_Dorfkirche.3.2,0,1
+BackImage[3][0][1][1][0][0]=Md_Dorfkirche.3.3,0,1
+----------------------------------------------------

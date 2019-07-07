@@ -1,0 +1,44 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Stadt
+#	Neu:07-2010
+#	Letzte Bearbeitung:
+#    04-09-2015 The Transporter
+# --------------------------------
+Obj=building
+name=Frankenstadion
+copyright=Lemuria
+Type=cur
+level=15
+chance=30
+intro_year=2003
+needs_ground=1
+build_time=7000
+climates=tropic, mediterran, temperate, tundra
+dims=3,2,4
+BackImage[0][0][0][0][0][0]=Frankenstadion.3.3
+BackImage[0][1][0][0][0][0]=Frankenstadion.4.3
+BackImage[0][0][1][0][0][0]=Frankenstadion.3.2
+BackImage[0][1][1][0][0][0]=Frankenstadion.4.2
+BackImage[0][0][2][0][0][0]=Frankenstadion.3.1
+BackImage[0][1][2][0][0][0]=Frankenstadion.4.1
+BackImage[1][0][0][0][0][0]=Frankenstadion.0.3
+BackImage[1][0][1][0][0][0]=Frankenstadion.1.3
+BackImage[1][1][0][0][0][0]=Frankenstadion.0.2
+BackImage[1][1][1][0][0][0]=Frankenstadion.1.2
+BackImage[1][2][0][0][0][0]=Frankenstadion.0.1
+BackImage[1][2][0][1][0][0]=Frankenstadion.2.0
+BackImage[1][2][1][0][0][0]=Frankenstadion.1.1
+BackImage[2][0][0][0][0][0]=Frankenstadion.3.3
+BackImage[2][1][0][0][0][0]=Frankenstadion.4.3
+BackImage[2][0][1][0][0][0]=Frankenstadion.3.2
+BackImage[2][1][1][0][0][0]=Frankenstadion.4.2
+BackImage[2][0][2][0][0][0]=Frankenstadion.3.1
+BackImage[2][1][2][0][0][0]=Frankenstadion.4.1
+BackImage[3][0][0][0][0][0]=Frankenstadion.0.3
+BackImage[3][0][1][0][0][0]=Frankenstadion.1.3
+BackImage[3][1][0][0][0][0]=Frankenstadion.0.2
+BackImage[3][1][1][0][0][0]=Frankenstadion.1.2
+BackImage[3][2][0][0][0][0]=Frankenstadion.0.1
+BackImage[3][2][1][0][0][0]=Frankenstadion.1.1
+-------------------------------------------------

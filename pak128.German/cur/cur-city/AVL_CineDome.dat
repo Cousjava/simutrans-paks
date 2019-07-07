@@ -1,0 +1,62 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Stadt
+#	Neu:01-2015
+#	Letzte Bearbeitung:
+#    05-2015
+#    04-09-2015 The Transporter
+# --------------------------------
+obj=building
+name=AVL_CineDome
+copyright=Lemuria
+type=cur
+level=19
+chance=100
+intro_year=1992
+intro_month=4
+retire_year=2999
+needs_ground=1
+build_time=10500
+climates=tundra
+dims=2,3,4
+BackImage[0][0][0][0][0][0]=AVL_CineDome.0.0
+BackImage[0][0][0][1][0][0]=AVL_CineDome.0.1
+BackImage[0][0][1][0][0][0]=AVL_CineDome.0.2
+BackImage[0][0][1][1][0][0]=AVL_CineDome.0.3
+BackImage[0][1][0][0][0][0]=AVL_CineDome.0.4
+BackImage[0][1][0][1][0][0]=AVL_CineDome.0.5
+BackImage[0][1][1][0][0][0]=AVL_CineDome.0.6
+BackImage[0][2][0][0][0][0]=AVL_CineDome.1.0
+BackImage[0][2][0][1][0][0]=AVL_CineDome.1.1
+BackImage[0][2][1][0][0][0]=AVL_CineDome.1.2
+BackImage[1][0][0][0][0][0]=AVL_CineDome.1.3
+BackImage[1][0][0][1][0][0]=AVL_CineDome.1.4
+BackImage[1][0][1][0][0][0]=AVL_CineDome.1.5
+BackImage[1][0][1][1][0][0]=AVL_CineDome.1.6
+BackImage[1][0][2][0][0][0]=AVL_CineDome.2.0
+BackImage[1][0][2][1][0][0]=AVL_CineDome.2.1
+BackImage[1][1][0][0][0][0]=AVL_CineDome.2.2
+BackImage[1][1][0][1][0][0]=AVL_CineDome.2.3
+BackImage[1][1][1][0][0][0]=AVL_CineDome.2.4
+BackImage[1][1][2][0][0][0]=AVL_CineDome.2.5
+BackImage[2][0][0][0][0][0]=AVL_CineDome.2.6
+BackImage[2][0][0][1][0][0]=AVL_CineDome.3.0
+BackImage[2][0][1][0][0][0]=AVL_CineDome.3.1
+BackImage[2][0][1][1][0][0]=AVL_CineDome.3.2
+BackImage[2][1][0][0][0][0]=AVL_CineDome.3.3
+BackImage[2][1][0][1][0][0]=AVL_CineDome.3.4
+BackImage[2][1][1][0][0][0]=AVL_CineDome.3.5
+BackImage[2][2][0][0][0][0]=AVL_CineDome.3.6
+BackImage[2][2][0][1][0][0]=AVL_CineDome.4.0
+BackImage[2][2][1][0][0][0]=AVL_CineDome.4.1
+BackImage[3][0][0][0][0][0]=AVL_CineDome.4.2
+BackImage[3][0][0][1][0][0]=AVL_CineDome.4.3
+BackImage[3][0][1][0][0][0]=AVL_CineDome.4.4
+BackImage[3][0][1][1][0][0]=AVL_CineDome.4.5
+BackImage[3][0][2][0][0][0]=AVL_CineDome.4.6
+BackImage[3][0][2][1][0][0]=AVL_CineDome.5.0
+BackImage[3][1][0][0][0][0]=AVL_CineDome.5.1
+BackImage[3][1][0][1][0][0]=AVL_CineDome.5.2
+BackImage[3][1][1][0][0][0]=AVL_CineDome.5.3
+BackImage[3][1][2][0][0][0]=AVL_CineDome.5.4
+-------------------------------------------------

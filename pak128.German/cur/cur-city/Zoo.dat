@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Sehenswuerdigkeiten_Stadt
 #	Neu:22-04-2015
-#	Letzte Bearbeitung:
-#    04-09-2015 The Transporter
 # --------------------------------
 Obj=building
 name=Zoo
@@ -12,7 +10,7 @@ Type=cur
 level=30
 chance=50
 intro_year=1900
-build_time=1500
+build_time=1600
 climates=tropic, mediterran, temperate
 dims=2,2,4
 BackImage[0][0][0][0][0][0]=Zoo.0.0

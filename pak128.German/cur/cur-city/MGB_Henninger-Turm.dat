@@ -1,0 +1,60 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Stadt
+#	Neu:03-2015
+#	Letzte Bearbeitung:
+#    04-09-2015 The Transporter
+# --------------------------------
+obj=building
+name=MGB_Henninger-Turm
+copyright=Lemuria
+type=cur
+level=37
+chance=100
+intro_year=1961
+retire_year=2013
+needs_ground=1
+build_time=13000
+climates=temperate
+dims=2,2,4
+BackImage[0][0][0][0][0][0]=MGB_Henninger-Turm.0.0
+BackImage[0][0][0][1][0][0]=MGB_Henninger-Turm.0.1
+BackImage[0][0][0][2][0][0]=MGB_Henninger-Turm.0.2
+BackImage[0][0][1][0][0][0]=MGB_Henninger-Turm.0.3
+BackImage[0][0][1][1][0][0]=MGB_Henninger-Turm.0.4
+BackImage[0][0][1][2][0][0]=MGB_Henninger-Turm.0.5
+BackImage[0][1][0][0][0][0]=MGB_Henninger-Turm.0.6
+BackImage[0][1][0][1][0][0]=MGB_Henninger-Turm.1.0
+BackImage[0][1][0][2][0][0]=MGB_Henninger-Turm.1.1
+BackImage[0][1][1][0][0][0]=MGB_Henninger-Turm.1.2
+BackImage[1][0][0][0][0][0]=MGB_Henninger-Turm.1.3
+BackImage[1][0][0][1][0][0]=MGB_Henninger-Turm.1.4
+BackImage[1][0][0][2][0][0]=MGB_Henninger-Turm.1.5
+BackImage[1][0][1][0][0][0]=MGB_Henninger-Turm.1.6
+BackImage[1][0][1][1][0][0]=MGB_Henninger-Turm.2.0
+BackImage[1][0][1][2][0][0]=MGB_Henninger-Turm.2.1
+BackImage[1][1][0][0][0][0]=MGB_Henninger-Turm.2.2
+BackImage[1][1][0][1][0][0]=MGB_Henninger-Turm.2.3
+BackImage[1][1][0][2][0][0]=MGB_Henninger-Turm.2.4
+BackImage[1][1][1][0][0][0]=MGB_Henninger-Turm.2.5
+BackImage[2][0][0][0][0][0]=MGB_Henninger-Turm.2.6
+BackImage[2][0][0][1][0][0]=MGB_Henninger-Turm.3.0
+BackImage[2][0][0][2][0][0]=MGB_Henninger-Turm.3.1
+BackImage[2][0][1][0][0][0]=MGB_Henninger-Turm.3.2
+BackImage[2][0][1][1][0][0]=MGB_Henninger-Turm.3.3
+BackImage[2][0][1][2][0][0]=MGB_Henninger-Turm.3.4
+BackImage[2][1][0][0][0][0]=MGB_Henninger-Turm.3.5
+BackImage[2][1][0][1][0][0]=MGB_Henninger-Turm.3.6
+BackImage[2][1][0][2][0][0]=MGB_Henninger-Turm.4.0
+BackImage[2][1][1][0][0][0]=MGB_Henninger-Turm.4.1
+BackImage[3][0][0][0][0][0]=MGB_Henninger-Turm.4.2
+BackImage[3][0][0][1][0][0]=MGB_Henninger-Turm.4.3
+BackImage[3][0][0][2][0][0]=MGB_Henninger-Turm.4.4
+BackImage[3][0][1][0][0][0]=MGB_Henninger-Turm.4.5
+BackImage[3][0][1][1][0][0]=MGB_Henninger-Turm.4.6
+BackImage[3][0][1][2][0][0]=MGB_Henninger-Turm.5.0
+BackImage[3][1][0][0][0][0]=MGB_Henninger-Turm.5.1
+BackImage[3][1][0][1][0][0]=MGB_Henninger-Turm.5.2
+BackImage[3][1][0][2][0][0]=MGB_Henninger-Turm.5.3
+BackImage[3][1][1][0][0][0]=MGB_Henninger-Turm.5.4
+-----------------------------------------------------

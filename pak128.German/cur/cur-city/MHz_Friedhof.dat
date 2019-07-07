@@ -1,0 +1,19 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Stadt
+#	Neu:
+# --------------------------------
+Obj=building
+Name=Friedhof
+copyright=MHz
+Type=cur
+level=18
+chance=45
+build_time=1600
+climates=desert,tropic,mediterran,temperate,tundra
+Dims=2,2
+BackImage[0][0][0][0][0]=MHz_Friedhof.0.0
+BackImage[0][0][1][0][0]=MHz_Friedhof.0.1
+BackImage[0][1][0][0][0]=MHz_Friedhof.1.0
+BackImage[0][1][1][0][0]=MHz_Friedhof.1.1
+----------------------------------------------

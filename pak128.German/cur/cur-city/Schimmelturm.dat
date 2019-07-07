@@ -1,0 +1,25 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Stadt
+#	Neu:11-2011
+#	Letzte Bearbeitung:
+#    04-09-2015 The Transporter
+# --------------------------------
+Obj=building
+Name=Schimmelturm
+Copyright=TonyBzt
+Type=cur
+Chance=50
+Passengers=50
+intro_year=1800
+# intro_year=1460
+retire_year=1922
+build_time=10000
+climates=tundra
+BackImage[0][0][0][2][0][0]=Schimmelturm.0.0
+BackImage[0][0][0][1][0][0]=Schimmelturm.1.0
+BackImage[0][0][0][0][0][0]=Schimmelturm.2.0
+BackImage[0][0][0][2][0][1]=Schimmelturm.0.0
+BackImage[0][0][0][1][0][1]=Schimmelturm.1.0
+BackImage[0][0][0][0][0][1]=Schimmelturm.2.0
+-----------------------------------------------

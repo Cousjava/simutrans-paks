@@ -1,0 +1,43 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Stadt
+#	Neu:07-2010
+#	Letzte Bearbeitung:
+#    04-09-2015 The Transporter
+# --------------------------------
+Obj=building
+name=Zentralstadion
+copyright=Lemuria
+Type=cur
+level=15
+chance=30
+intro_year=2004
+needs_ground=1
+build_time=14000
+climates=desert, tropic, mediterran, temperate, tundra
+dims=3,2,4
+BackImage[0][0][0][0][0][0]=zentralstadion.3.3
+BackImage[0][1][0][0][0][0]=zentralstadion.4.3
+BackImage[0][0][1][0][0][0]=zentralstadion.3.2
+BackImage[0][1][1][0][0][0]=zentralstadion.4.2
+BackImage[0][0][2][0][0][0]=zentralstadion.3.1
+BackImage[0][1][2][0][0][0]=zentralstadion.4.1
+BackImage[1][0][0][0][0][0]=zentralstadion.0.3
+BackImage[1][0][1][0][0][0]=zentralstadion.1.3
+BackImage[1][1][0][0][0][0]=zentralstadion.0.2
+BackImage[1][1][1][0][0][0]=zentralstadion.1.2
+BackImage[1][2][0][0][0][0]=zentralstadion.0.1
+BackImage[1][2][1][0][0][0]=zentralstadion.1.1
+BackImage[2][0][0][0][0][0]=zentralstadion.3.3
+BackImage[2][1][0][0][0][0]=zentralstadion.4.3
+BackImage[2][0][1][0][0][0]=zentralstadion.3.2
+BackImage[2][1][1][0][0][0]=zentralstadion.4.2
+BackImage[2][0][2][0][0][0]=zentralstadion.3.1
+BackImage[2][1][2][0][0][0]=zentralstadion.4.1
+BackImage[3][0][0][0][0][0]=zentralstadion.0.3
+BackImage[3][0][1][0][0][0]=zentralstadion.1.3
+BackImage[3][1][0][0][0][0]=zentralstadion.0.2
+BackImage[3][1][1][0][0][0]=zentralstadion.1.2
+BackImage[3][2][0][0][0][0]=zentralstadion.0.1
+BackImage[3][2][1][0][0][0]=zentralstadion.1.1
+--------------------------------------------------

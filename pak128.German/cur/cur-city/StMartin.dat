@@ -1,0 +1,23 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Stadt
+#	Neu:11-2011
+# --------------------------------
+Obj=building
+name=BZT_StMartin
+copyright=TonyBzt
+type=cur
+level=15
+chance=40
+intro_year=1800
+# intro_year=1700
+retire_year=1934
+build_time=600
+climates=temperate
+Dims=2,2,1
+BackImage[0][0][0][0][0][0]=StMartin.1.4
+BackImage[0][0][0][1][0][0]=StMartin.0.4
+BackImage[0][1][0][0][0][0]=StMartin.1.2
+BackImage[0][0][1][0][0][0]=StMartin.1.3
+BackImage[0][1][1][0][0][0]=StMartin.1.1
+-------------------------------------------

@@ -1,20 +1,18 @@
 # -------------------------------
 #	PAK128.german
 #	Sehenswuerdigkeiten_Stadt
-#	Neu: 04-09-2015 The Transporter
-#	Letzte Bearbeitung:
-#       10-04-2016 michelstadt   
+#	Neu: 04-09-2015 
 # --------------------------------
 Obj=building
 name=Mittelalterliche_Kirche
 copyright=Pumuckl999
 type=cur
 level=15
-chance=40
+chance=60
 intro_year=1800
 # intro_year=1650
 intro_month=1
-build_time=150
+build_time=1600
 climates=desert,tropic,mediterran
 dims=3,3,4
 BackImage[2][0][0][0][0][0]=Mittelalt_Kirche.0.0

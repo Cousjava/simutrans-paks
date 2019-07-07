@@ -1,0 +1,66 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Stadt
+#	Neu:24-03-2016
+# --------------------------------
+obj=building
+name=Matthaeuskirche_Pforzheim
+copyright=RedRabbit
+type=cur
+level=5
+intro_year=1952
+intro_month=2
+chance=50
+build_time=600
+climates=tropic,mediterran,temperate,tundra
+dims=2,2,4
+#Ansicht1#
+backimage[0][0][0][0][0][0]=Matthaeuskirche_Pforzheim.1.0
+backimage[0][1][0][0][0][0]=Matthaeuskirche_Pforzheim.1.1
+backimage[0][0][1][0][0][0]=Matthaeuskirche_Pforzheim.1.2
+backimage[0][1][1][0][0][0]=Matthaeuskirche_Pforzheim.1.3
+#Hoehe
+backimage[0][0][0][1][0][0]=Matthaeuskirche_Pforzheim.1.4
+#Ansicht2#
+backimage[1][0][0][0][0][0]=Matthaeuskirche_Pforzheim.2.0
+backimage[1][1][0][0][0][0]=Matthaeuskirche_Pforzheim.2.1
+backimage[1][0][1][0][0][0]=Matthaeuskirche_Pforzheim.2.2
+backimage[1][1][1][0][0][0]=Matthaeuskirche_Pforzheim.2.3
+#Hoehe
+backimage[1][1][0][1][0][0]=Matthaeuskirche_Pforzheim.2.4
+#Ansicht3#
+backimage[2][0][0][0][0][0]=Matthaeuskirche_Pforzheim.3.0
+backimage[2][1][0][0][0][0]=Matthaeuskirche_Pforzheim.3.1
+backimage[2][0][1][0][0][0]=Matthaeuskirche_Pforzheim.3.2
+backimage[2][1][1][0][0][0]=Matthaeuskirche_Pforzheim.3.3
+#Ansicht4#
+backimage[3][0][0][0][0][0]=Matthaeuskirche_Pforzheim.4.0
+backimage[3][1][0][0][0][0]=Matthaeuskirche_Pforzheim.4.1
+backimage[3][0][1][0][0][0]=Matthaeuskirche_Pforzheim.4.2
+backimage[3][1][1][0][0][0]=Matthaeuskirche_Pforzheim.4.3
+########WinterGrafiken########
+#Ansicht1#
+backimage[0][0][0][0][0][1]=Matthaeuskirche_Pforzheim.1.5
+backimage[0][1][0][0][0][1]=Matthaeuskirche_Pforzheim.1.6
+backimage[0][0][1][0][0][1]=Matthaeuskirche_Pforzheim.1.7
+backimage[0][1][1][0][0][1]=Matthaeuskirche_Pforzheim.1.8
+#Hoehe
+backimage[0][0][0][1][0][1]=Matthaeuskirche_Pforzheim.1.9
+#Ansicht2#
+backimage[1][0][0][0][0][1]=Matthaeuskirche_Pforzheim.2.5
+backimage[1][1][0][0][0][1]=Matthaeuskirche_Pforzheim.2.6
+backimage[1][0][1][0][0][1]=Matthaeuskirche_Pforzheim.2.7
+backimage[1][1][1][0][0][1]=Matthaeuskirche_Pforzheim.2.8
+#Hoehe
+backimage[1][1][0][1][0][1]=Matthaeuskirche_Pforzheim.2.9
+#Ansicht3#
+backimage[2][0][0][0][0][1]=Matthaeuskirche_Pforzheim.3.5
+backimage[2][1][0][0][0][1]=Matthaeuskirche_Pforzheim.3.6
+backimage[2][0][1][0][0][1]=Matthaeuskirche_Pforzheim.3.7
+backimage[2][1][1][0][0][1]=Matthaeuskirche_Pforzheim.3.8
+#Ansicht4#
+backimage[3][0][0][0][0][1]=Matthaeuskirche_Pforzheim.4.5
+backimage[3][1][0][0][0][1]=Matthaeuskirche_Pforzheim.4.6
+backimage[3][0][1][0][0][1]=Matthaeuskirche_Pforzheim.4.7
+backimage[3][1][1][0][0][1]=Matthaeuskirche_Pforzheim.4.8
+---------------------------------------------------------

@@ -1,0 +1,38 @@
+# -------------------------------
+#	PAK128.german
+#	Sehenswuerdigkeiten_Stadt
+#	Neu:
+#	Letzte Bearbeitung:
+#    04-09-2015 The Transporter
+# --------------------------------
+Obj=building
+copyright=Lemuria
+Name=Grundschule
+Type=cur
+level=18
+chance=60
+intro_year=1919
+retire_year=1932
+needs_ground=1
+build_time=1000
+climates=temperate, tundra
+Dims=3,1,4
+BackImage[0][0][0][1][0][0]=Grundschule.0.4
+BackImage[0][0][0][0][0][0]=Grundschule.1.4
+BackImage[0][0][1][1][0][0]=Grundschule.0.5
+BackImage[0][0][1][0][0][0]=Grundschule.1.5
+BackImage[0][0][2][0][0][0]=Grundschule.1.6
+BackImage[1][0][0][0][0][0]=Grundschule.1.3
+BackImage[1][1][0][1][0][0]=Grundschule.0.2
+BackImage[1][1][0][0][0][0]=Grundschule.1.2
+BackImage[1][2][0][0][0][0]=Grundschule.1.1
+BackImage[2][0][0][0][0][0]=Grundschule.4.4
+BackImage[2][0][1][1][0][0]=Grundschule.3.5
+BackImage[2][0][1][0][0][0]=Grundschule.4.5
+BackImage[2][0][2][0][0][0]=Grundschule.4.6
+BackImage[3][0][0][1][0][0]=Grundschule.3.3
+BackImage[3][0][0][0][0][0]=Grundschule.4.3
+BackImage[3][1][0][1][0][0]=Grundschule.3.2
+BackImage[3][1][0][0][0][0]=Grundschule.4.2
+BackImage[3][2][0][0][0][0]=Grundschule.4.1
+------------------------------------------------

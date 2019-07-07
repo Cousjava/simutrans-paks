@@ -1,0 +1,25 @@
+# -------------------------------
+#	PAK128.german
+#	Denkmal
+#	Neu:15-01-2019
+#	Letzte Bearbeitung:
+#
+# --------------------------------
+Obj=building
+name=BergerDenkmal_Witten
+copyright=Pumuckl999
+type=mon
+level=55
+chance=25
+intro_year=1904
+intro_month=8
+Dims=1,1,4
+BackImage[0][0][0][0][0][0]=Berger-Denkmal_Witten.0.0
+BackImage[1][0][0][0][0][0]=Berger-Denkmal_Witten.0.1
+BackImage[2][0][0][0][0][0]=Berger-Denkmal_Witten.0.2
+BackImage[3][0][0][0][0][0]=Berger-Denkmal_Witten.0.3
+BackImage[0][0][0][0][0][1]=Berger-Denkmal_Witten.1.0
+BackImage[1][0][0][0][0][1]=Berger-Denkmal_Witten.1.1
+BackImage[2][0][0][0][0][1]=Berger-Denkmal_Witten.1.2
+BackImage[3][0][0][0][0][1]=Berger-Denkmal_Witten.1.3
+--------------------------------------------------
