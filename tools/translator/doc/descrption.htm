@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="iso-8859-2"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>SimuTranslator Documentation Root</title>
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+<link href="include/style.css" type="text/css" rel="StyleSheet" />
+</head>
+
+<body>
+
+
+<h1>
+    System Description
+</h1>
+
+<p class="center">
+<a href="files/oc_en.pdf">Download PDF version. </a>
+</p>
+
+<div align="center">
+<table class="tableback">
+<tr>
+<td>
+<p class="MsoNormal" style="text-align: justify"><span lang="EN-US">
+SimuTranslator will be web based application (referred as application or
+SimuTranslator later on in this text), which should support Simutrans
+translators by providing them comfortable user interface for creation of
+translations for the program objects and Simutrans developers by providing them
+with simple means for management of the translations.</span></p>
+<p class="MsoNormal" style="text-align: justify"><span lang="EN-US">The
+SimuTranslator should read the definitions of all existing Simutrans scenario
+specific objects along with their properties and sample images and store them in
+its own database. This operation will be available for administrators only and
+possible object entries already existing in the application database will be
+overwritten by new ones without asking.</span></p>
+<p class="MsoNormal" style="text-align: justify"><span lang="EN-US">The
+application should be able to read exiting translation files (*.tab files) and
+store their content (translation of object names) in own database. Each object
+name will have one unique translation for each language and scenario. If the
+file, containing the translation entries for the objects which already have
+existing translation in application database is loaded, application should offer
+multiple means for resolving the conflicts, namely: replace all entries by new
+ones, replace all old entries which were not modified after certain date,
+replace all entries modified by this author, and display all conflicting entries
+and manually select which version of translation to preserve while allowing
+manual modification (to allow author merging of both versions). Application will
+also remove possible breaks (\n) while loading the file.</span></p>
+<p class="MsoNormal" style="text-align: justify"><span lang="EN-US">In the
+translation interface, the application should be able to display all objects one
+by one with their properties, sample image, possible reservation (with the name
+of its holder), existing translations in other languages, translation suggestion
+for this language, and the text input box for inputting the translation. Images
+and complete object information should not be displayed to translators who have
+not agreed with image set copyright policies. Translator should be able to
+choose which information he wants to see in this window in preferences. He
+should be also able to choose which object he wants to see: all, only
+untranslated, only specified category.</span></p>
+<p class="MsoNormal" style="text-align: justify"><span lang="EN-US">Translators
+should be able to reserve some object names or object name groups for future
+offline translation and get the list of these objects. Import of new translation
+entries will be solved by .tab file import facilities.</span></p>
+<p class="MsoNormal" style="text-align: justify"><span lang="EN-US">
+SimuTranslator will be able to output translation files for Simutrans,
+respecting all formatting requirements and including file description head. It
+should also be able to output lists of untranslated entries.</span></p>
+<p class="MsoNormal" style="text-align: justify"><span lang="EN-US">Application
+will recognize three user groups: object administrators who shall be able to
+import objects, mange objects, create new languages, manage other users, and
+have access to all translations; translators will be associated with some
+translations (eventually scenarios) and will have full access to those
+translations; guest will be random visitors, they will be able to view only
+basic object data and translations, but they will be only able to modify
+translation suggestions.</span></p>
+<p class="MsoNormal" style="text-align: justify"><span lang="EN-US">Unlimited
+number of object scenarios and languages should be supported. Application
+interface will be in English.</span></td>
+</tr>
+</table>
+</div>
+<p>
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+</p>
+
+<div style="text-align: center">
+<hr width="90%" />
+<p class="ending">
+<br />
+
+<b>SimuTranslator:</b> &copy;2004-2005 <a href="team.htm">SimuTranslator Team</a><br />
+<b>Documentation:</b> &copy;2004-2005 <a href="http://www.tomaskubes.net">Tom&aacute;&scaron; Kube&scaron;</a><br />
+<a href="index.htm">SimuTranslator documentation home</a>
+<br />&nbsp;
+</p>
+<hr width="90%" />
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+#	PAK128.german
+#	Tree
+#	Neu: 29.07.2018 NNW
+#	Letzte Bearbeitung: $Date: 2018-07-28 13:20:27 +0200 (Sa, 28. Jul 2018) $ - $Author: NNW $
+#ersetzt Strubelkopf_Alm von MHZ
+
+obj=tree
+name=Strubbelkopf_MHz_Alm
+Copyright=NNW
+seasons=4
+DistributionWeight=21
+climates=tropic,mediterran,temperate,tundra
+Image[0][0]=ahorn.0.0,0,-22
+Image[1][0]=ahorn.0.1,0,-22
+Image[2][0]=ahorn.0.2,0,-22
+Image[3][0]=ahorn.0.3,0,-22
+Image[4][0]=ahorn.0.4,0,-22
+Image[0][1]=ahorn.1.0,0,-22
+Image[1][1]=ahorn.1.1,0,-22
+Image[2][1]=ahorn.1.2,0,-22
+Image[3][1]=ahorn.1.3,0,-22
+Image[4][1]=ahorn.1.4,0,-22
+Image[0][2]=ahorn.2.0,0,-22
+Image[1][2]=ahorn.2.1,0,-22
+Image[2][2]=ahorn.2.2,0,-22
+Image[3][2]=ahorn.2.3,0,-22
+Image[4][2]=ahorn.2.4,0,-22
+Image[0][3]=ahorn.3.0,0,-22
+Image[1][3]=ahorn.3.1,0,-22
+Image[2][3]=ahorn.3.2,0,-22
+Image[3][3]=ahorn.3.3,0,-22
+Image[4][3]=ahorn.3.4,0,-22
+--------------------------------------
+#_EOF__

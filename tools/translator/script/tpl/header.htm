@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- tpl header file -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title><!--(page_name)--></title>
+    <!--meta http-equiv="Content-Language" content="en-us" /-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="noindex,nofollow">
+    <link href="css/style.css" type="text/css" rel="StyleSheet" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> 
+
+  <script language="javascript" type="text/javascript">
+ <!--
+    function refreshlang(seite) {
+
+  var language = document.getElementById("language_field").value;
+
+        location.href = '?lang=' + language; 
+    }
+ //-->
+ </script>
+ <script type="text/javascript" src="js/TableSort.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+<!-- General page header: Begin--> 
+
+<div id="header">
+
+    <div id="top_buttons" class="top_button">
+      <a href="<!--(Link_Dsgvo)-->" ><!--(Bez_Dsgvo)--></a>
+    </div>
+
+    <select name="language_field" id="language_field" onChange="javascript:refreshlang('<!--(page)-->')">
+    <!--(list:languages)-->
+    <!--(item)-->
+      <option value="<!--(lang_id)-->" <!--(select)--> ><!--(lang_name)--></option>
+    <!--(enditem)-->
+    <!--(endlist)-->  
+     </select>
+
+<noscript>
+  <ul id="sprachlinks">
+       for ( $x = 0; $x < count($langar); $x++ ) {
+    <!--(list:languages2)-->
+    <!--(item)-->
+        <li <!--(select)-->>&nbsp;<a href="?lang=<!--(lang_id)-->" title="<!--(language_titel)-->" target="_top"><!--(lang_name)--></a>&nbsp;</li>
+    <!--(enditem)-->
+    <!--(endlist)-->  
+  </ul>
+</noscript>
+
+<div style="font-size:0.8em;"><!--(language_date)--></div>
+
+  <hr />
+    <div id="nav_bar">
+        <div style="width:230px;">
+        <a href="../">
+            <img id="logo" src="img/logo_sm.png" alt="SimuTranslator logo" width="200" height="30" title="SimuTranslator" />
+        </a>
+        </div>
+
+      <div id="links">
+        <div id="links_inner" class="head_buttons buttons">
+              
+          <!--(list:linklist)-->
+          <!--(item)-->
+            <div><a href="<!--(link_file)-->"><nobr><!--(link_name)--></nobr></a></div>
+          <!--(enditem)-->
+          <!--(endlist)-->  
+
+        </div>
+
+      </div>
+
+      <div id="header_bar">
+        <hr />
+      </div>
+
+    </div>
+
+<!-- General page header: End-->
+
+<div id="content">
+

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="iso-8859-2"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Object Management</title>
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+<link href="include/style.css" type="text/css" rel="StyleSheet" />
+</head>
+
+<body>
+
+
+<h1>Object Management</h1>
+
+
+<h2>Object Import Module Specification</h2>
+
+
+<div align="center">
+<table class="tableback">
+<tr>
+<td>
+<p class="justified">
+This module will be accessible to administrators only. It will read the zip file
+containing the .dat files and their images, parse the dat files, load their
+content into database, search for proper images, crop preview images from them
+and store them into proper folder on the server. First defined image tile will
+be used for preview. The tile size will be stored in the database as an
+attribute of a version.<br>
+First screen will ask user for version for which object will be loaded, and path
+to the zip file. Then the file will be loaded, dats parsed and basic information
+(found errors) will be printed and user will be asked for the confirmation.<br>
+If user confirms the import, data will be imported, overwriting the existing
+without asking.</p>
+</td>
+</tr>
+</table>
+</div>
+
+
+<h2>Dat File Parsing</h2>
+
+
+<div align="center">
+<table class="tableback" width="600px">
+<tr>
+<td>
+<p class="justified">
+
+
+Please refer to object specification for the file structure description. For
+each object, all its attributes will be parsed and stored into the database. The
+image definition lines will be stored in the img_desc attribute, other
+attributes will be stored as proper entries in the Properties table. The name of
+newly created preview image for each object will be stored as image attribute of
+the object. All preview images will be saved in /images folder on the server.
+The image name will be by default concatenation of Version_Id and Obj_Name
+attributes of each object.</p>
+</td>
+</tr>
+</table>
+</div>
+
+
+<p>
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+</p>
+
+<div style="text-align: center">
+<hr width="90%" />
+<p class="ending">
+<br />
+
+<b>SimuTranslator:</b> &copy;2004-2005 <a href="team.htm">SimuTranslator Team</a><br />
+<b>Documentation:</b> &copy;2004-2005 <a href="http://www.tomaskubes.net">Tom&aacute;&scaron; Kube&scaron;</a><br />
+<a href="index.htm">SimuTranslator documentation home</a>
+<br />&nbsp;
+</p>
+<hr width="90%" />
+</div>
+
+</body>
+</html>

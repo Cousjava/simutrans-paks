@@ -9,7 +9,7 @@
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                             Font: Prop-Latin1.bdf                            #
-#                           Date Created: 12.02 2019                           #
+#                           Date Created: 30.06 2019                           #
 #                                                                              #
 ################################################################################
 #____________________________bridge - monorail_track____________________________
@@ -44,6 +44,8 @@ Stahlbogen-Straßenbrücke
 #________________________________bridge - track_________________________________
 alte_Stahlbruecke
 alte Stahlbrücke
+Bahnbruecke_120Kmh
+Bahnbrücke 120 km/h
 Bahnbruecke_210Kmh
 Bahnbrücke 210 km/h
 Bahnbruecke_40Kmh
@@ -58,24 +60,20 @@ water_bridge
 Kanalbrücke
 #___________________________________building____________________________________
 #___________________________________building____________________________________
-COM_ALL_1990_A_00
-Juwelier\nFunkelndes und Geschmeide für die Gattin oder Geliebte.
-IND_ALL_1983_A_02
-Baustelle - Hier entsteht ein neuer Industriebetrieb.
-IND_ALP_1801_B_01
-Innerstädtische Weide für das liebe Meckervieh.
 MonorailGround
 Monorail-Haltestelle
-Rathaus_Groetzingen_01_CITY
-Rathaus Grötzingen
 #________________________________building - com_________________________________
 #________________________________building - com_________________________________
 COM_ALL_1800_A_01
 Leeres Grundstück\n\nGewerbewidmung
+COM_ALL_1800_A_08
+Schweinfurt Am Graben 30 gelb
 COM_ALL_1920_A_01
 Leeres Grundstück\n\nGewerbewidmung
 COM_ALL_1925_A_09
 Leeres Gebäude
+COM_ALL_1937_A_12
+Haus der Wissenschaften Braunschweig
 COM_ALL_1950_Baustelle_Animation_02
 Hier wird hart gearbeitet, aber im Winter ruht die Baustelle.
 COM_ALL_1951_A_02
@@ -84,20 +82,84 @@ COM_ALL_1952_A_03
 Öffentlicher Parkplatz - Die Parkgebühren sind günstig und auf der Litfaßsäule prangt die neueste Werbung.
 COM_ALL_1953_A_04
 Parkplatz - Die Imbissbude serviert die leckersten Bratwürste der ganzen Stadt. Besucher von Nah und Fern kommen deshalb zu einem Imbiss hier her.
+COM_ALL_1953_A_16
+Gerling-Haus Köln
 COM_ALL_1955_A_05
 Garagen zu vermieten
+COM_ALL_1960_A_43
+Neue Mainzer Str 1 Fankfurt am Main klein
+COM_ALL_1960_A_45
+Neue Mainzer Str 1 Fankfurt am Main
+COM_ALL_1960_A_47
+Neue Mainzer Str 1 Fankfurt am Main groß
 COM_ALL_1962_B_04
 Parkplatz - Die Imbissbude serviert die leckersten Bratwürste der ganzen Stadt. Besucher von Nah und Fern kommen deshalb zu einem Imbiss hier her.
+COM_ALL_1963_A_20
+NarvaTurm Berlin
+COM_ALL_1970_A_34
+Bonifazius-Turm in Mainz
+COM_ALL_1970_A_48
+Jentower in Jena
 COM_ALL_1970_B_00
 Zeltplatz
+COM_ALL_1973_A_14
+Kölnische Straße 4x Kassel 
+COM_ALL_1980_A_36
+DLF Funkhaus Köln
+COM_ALL_1980_A_48
+Funkhaus am Raderberggürtel in Köln
 COM_ALL_1980_Baustelle_Animation_02
 Hier entsteht ein neues Gewerbegebäude
 COM_ALL_1984_A_02
 Baustelle
+COM_ALL_1990_A_01
+Juwelier Golddreher\nFunkelndes und Geschmeide für die Gattin oder Geliebte. Das aus der Jahrhundertwende stammende Haus wurde 1990 aufwendig renoviert.
 COM_ALL_1990_A_03
 Toilettenhaus in Neumuenster
 COM_ALL_1990_A_07
 Zirkuszelt Koeln
+COM_ALL_1990_A_26
+Holiday Inn in Hamburg
+COM_ALL_1990_A_38
+Victoria-Turm in Düsseldorf
+COM_ALL_1990_A_44
+TrepTower Berlin
+COM_ALL_1997_A_48
+Commerzbank Tower \n\nBis 2003 war der 1997 vollendete Commerzbank Tower in Frankfurt/Main das höchste Hochhaus Deutschlands.
+COM_ALL_1998_A_18
+TwinTower Berlin 
+COM_ALL_2000_A_22
+Mediatower Düsseldorf
+COM_ALL_2000_A_24
+Finanz-Informatik-Hochhaus\nTheodor-Heuss-Allee 90 in Frankfurt
+COM_ALL_2000_A_30
+Münchner Tor
+COM_ALL_2000_A_32
+Main-Tower          \n\nBefindet sich in Frankfurt am Main und ist - für die dortigen Verhältnisse - "nur" 200 Meter hoch.
+COM_ALL_2000_A_40
+Westhafen Tower in Frankfurt am Main
+COM_ALL_2000_A_42
+Citytower Offenbach
+COM_ALL_2000_A_46
+Business Tower Nürnberg
+COM_ALL_2001_A_38
+KölnTurm            \n\nSteht in irgendeiner Großstadt am Rhein und stellt dort seit 2001 das höchste Bürogebäude der Stadt dar.
+COM_ALL_2005_A_10
+Kunstmuseum Stuttgart
+COM_ALL_2010_A_10
+Bürohaus Ziethenstrasse Gütersloh klein
+COM_ALL_2010_A_12
+Bürohaus Ziethenstrasse Gütersloh
+COM_ALL_2010_A_14
+Bürohaus Ziethenstrasse Gütersloh groß
+COM_ALL_2010_A_28
+Sign! Düsseldorf
+COM_ALL_2010_A_32
+Westfalentower Dortmund
+COM_ALL_Werbetafel_04
+Werbetafel\n Immer mehr wollen mit Blinken und Flackern Aufmerksamkeit erregen, aber je mehr es blinkt und flackert um so mehr sind die Leute genervt. 
+COM_ALP_1800_A_06
+Miller Am Markt Memmingen rot
 COM_ALP_1801_A_02
 Garage für landwirtschaftliches Gerät
 COM_ALP_1801_A_04
@@ -128,6 +190,8 @@ COM_ALP_1989_B_24
 Die TRIMM Fitnessstudios stehen für gute und fachlich kompetente Beratung. Vom Schmetterling bis zur Heißwasser Sauna ist alles vorhanden um seinen Körper zu stählen. 
 COM_ALP_1989_C_24
 Im Alpencenter haben sich vor allem Rechtsanwälte und Makler eingemietet. Ganz oben sitzt ein Startup, das mit Venture Kapital irgendwas in Software macht
+COM_AVL_1800_A_06
+Miller Am Markt Memmingen weiß
 COM_AVL_1902_A_20
 Zweigstelle der SIMBANK.
 COM_AVL_1904_A_10
@@ -138,6 +202,12 @@ COM_AVL_1911_A_14
 Das Juwelier und Schmuckgeschäft "Golden Glanz" führt die edelsten und feinsten Geschmeide in der gesamten Region.
 COM_AVL_1921_A_11
 Der eingetragene Meisterbetrieb Pinselschwung mbH, ist bekannt für seine günstigen und sauberen Innenraum & Fassadenanstriche.
+COM_AVL_1950_A_12
+Plaerrerhochhaus Nürnberg klein
+COM_AVL_1950_A_14
+Plaerrerhochhaus Nürnberg
+COM_AVL_1960_A_24
+Hotel Arosa Essen rot
 COM_AVL_1962_A_04
 Die Lemuria Offsetdruckerei fertigt vom Flyer bis zum Wandplakat alles was der Auftraggeber seiner Kundschaft mitteilen möchte.
 COM_AVL_1967_A_16
@@ -180,6 +250,8 @@ COM_AVL_2004_B_12
 Die UTRANS-Handelsgesellschaft beschäftigt sich mit Termingeschäften aller Art.
 COM_AVL_2007_B_10
 Niederlassung der Strans-Kreditanstalt.
+COM_MGB_1800_A_08
+Schweinfurt Am Graben 30
 COM_MGB_1800_A_10
 Handelszentrum - Hier residiert ein Agrarberatungsinstitut, das dem Landwirtschaftsministerium beratend zur Seite steht.
 COM_MGB_1800_A_12
@@ -214,8 +286,12 @@ COM_MGB_1951_A_04
 Eine Tankstelle im typischen 1950er-Jahre Stil.
 COM_MGB_1953_A_25
 Das Hotel & Kongresszentrum  "Michelstadt" ist die erste Adresse am Platz, wenn es um betriebliche Veranstaltungen und Tagungen aller Art geht.
+COM_MGB_1954_A_14
+Fachwerkhaus Weinschenke
 COM_MGB_1954_A_18
 D 20 Club & Disco. Nirgendwo gibt es heißere Girls und Coolere Drinks.
+COM_MGB_1960_A_24
+Hotel Arosa Essen weiß
 COM_MGB_1971_A_10
 Computerfirma - RR-IT Technics - Sales & Service
 COM_MGB_1971_A_38
@@ -292,6 +368,12 @@ COM_NDT_2004_A_10
 The White Cube - Wohnhaus mit Restaurant & Cafe im EG.
 COM_NDT_2005_A_18
 Nachdem das Rundsilo von 1931 seine Funktion verloren hatte, hielt dort ein Restaurant/Bistro Einzug.
+COM_NDT_2010_A_12
+Bürohaus Neuer Wall HH klein
+COM_NDT_2010_A_14
+Bürohaus Neuer Wall HH
+COM_NDT_Telekom_Hochhaus_Bielefeld_39
+Telekom Hochhaus Bielefeld
 COM_ODL_1800_A_02
 Kirche
 COM_ODL_1800_A_04
@@ -310,10 +392,18 @@ COM_ODL_1880_A_07
 Kindertagesstädte
 COM_ODL_1902_A_06
 Seniorenheim - Sonnenhügel. Betreutes Wohnen in der Gemeinschaft von Freunden.
+COM_ODL_1920_A_40
+Albin Müller Turm
+COM_ODL_1930_A_05
+Ballonhalle Tauche
 COM_ODL_1950_AB_10
 Wohn- und Geschäftsgebäude
 COM_ODL_1950_AB_16
 Bezirks Postamt.
+COM_ODL_1970_A_25
+Taunusanlage 11a
+COM_ODL_1970_A_30
+Taunusanlage 11
 COM_ODL_1972_A_12
 Eines der zahlreichen Verwaltungsgebäude in der Stadt.
 COM_ODL_1973_A_28
@@ -328,6 +418,8 @@ COM_ODL_1990_A_02
 Baugrube
 COM_ODL_1999_A_10
 EMSO Privatklinik - Klinik für Orthopädie und Sportmedizin. Hier wurden schon Spitzensportler wieder auf die Beine gestellt.  
+COM_ODL_alte_Post_Berlin_02
+alte Post in Berlin\n ehemals Palais Wartenberg, erbaut 1704 abgerissen 1889
 #________________________________building - cur_________________________________
 #________________________________building - cur_________________________________
 ALP_Tivoli
@@ -452,6 +544,8 @@ Realschule
 Montessori-Realschule
 Rieckhuus_Hamburg-Curslack
 Rieckhuus           \n\nDas Rieck-Haus in Hamburg-Curslack ist ein Freilichtmuseum, das die bäuerliche Lebensweise vor der Industrialisierung darstellen will.
+Ruhmeshalle_mit_Bavaria
+Ruhmeshalle mit Bavaria\n\n steht in München, von König Ludwigs I im Jahr 1853 erbaut, steht über der Theresienwiese auf der das Oktoberfest stattfindet.
 Ruine_Wernerkapelle
 Ruine                \n\nDie 1426 fertiggestellte Wernerkapelle bei Bacharach am Rhein war viele Jahrhunderte hindurch ein Wallfahrtsort. 1689 wurde sie teilweise zerstört und im 19. Jahrhundert als romantische Ruine wiederentdeckt.
 Schleifmuehle_Schwerin
@@ -534,12 +628,6 @@ alter_Bahnhof_Sonneberg
 alter Bahnhof Sonneberg
 BahnhofLauingen
 Bahnhofsgebäude Lauingen
-Bahnsteig_Ampersand
-beidseitiger Bahnsteig
-Bahnsteig_Ampersand2
-beidseitiger Bahnsteig
-Bahnsteig_Doppelgleis
-beidseitiger Bahnsteig
 BZT_Kohlenbansen-ext
 Kohlenbansenerweiterung
 Containerbruecke_1966
@@ -562,8 +650,6 @@ Frachthalle_Gera
 Frachthalle Gera
 GrosserTank
 Mineralöltank groß
-Gueterbahnhof_klein
-Güterbahnsteig, klein
 Gueterhalle
 Lagerhalle
 Kohlenbansen
@@ -594,8 +680,6 @@ Lotsenhaus_Hamburg
 Lotsenhaus Hamburg
 Lotsenstation_Warnemuende
 Lotsenstation Warnemünde
-Nebenstrecken-Bahnhof
-Nebenstreckenbahnhof
 Parkplatz
 Park- & Ride-Parkplatz
 Portalkran_Holz_1985
@@ -612,8 +696,6 @@ Schuettgutverladung_1
 Schüttgutverladung mit Bagger
 Schuettgutverladung_2
 Schüttgutverladung
-SiloBhf
-Bahnhof mit Silo
 Stellwerk_Nuernberg
 Stellwerk Nürnberg
 Stellwerk_Oranienburg
@@ -624,8 +706,6 @@ Tower_Dortmund
 Tower Dortmund
 Tower_Fuhlsbuettel
 Tower Fuhlsbüttel
-U-Bahnhof_Marienplatz
-U-Bahnhof Marienplatz
 VictorianStation
 viktorianisches Bahnhofsgebäude
 Wasserturm_BW_Heidelberg
@@ -662,6 +742,22 @@ HQ-7
 #________________________________building - ind_________________________________
 IND_ALL_1800_A_01
 Eingezäunte Schafweide - Im Winter stehen die Tierchen natürlich in einer kuschlig warmen Scheune.
+IND_ALL_1800_A_05
+Forchheim Marktplatz 14
+IND_ALL_1802_A_01
+Kleingarten grünes Glück
+IND_ALL_1802_B_01
+Kleingarten hoch hinaus
+IND_ALL_1803_A_02
+Kleingarten frische Luft
+IND_ALL_1803_B_02
+Kleingarten in der rot 
+IND_ALL_1910_A_09
+Maschinenhaus Metallwerk Coburg
+IND_ALL_1984_A_02
+Baustelle - Hier entsteht ein neuer Industriebetrieb.
+IND_ALL_Gerberei_06
+Gerberei
 IND_ALP_1800_A_01
 Holzlager - Hier können alle Besitzer eines Kachelofens günstig Feuerholz einkaufen.
 IND_ALP_1800_A_02
@@ -670,6 +766,12 @@ IND_ALP_1800_A_04
 Steinmetz - Hier wird die Langlebigkeit in Stein gemeisselt, vom Grabstein bis zur edlen Küchenarbeitsplatte.
 IND_ALP_1800_A_05
 Viehstall & Scheune - Wer in der unmittelbaren Nachbarschaft wohnt, sollte die Landluft lieben...
+IND_ALP_1800_A_08
+Weißbleiche Augsburg
+IND_ALP_1800_B_01
+Innerstädtische Weide für das liebe Meckervieh.
+IND_ALP_1800_C_01
+Strohscheune
 IND_ALP_1801_B_04
 Die Imkerei, der Familie Goldwabe produziert schon seit Ewigkeiten den leckersten Honig weit und breit.
 IND_ALP_1801_C_04
@@ -696,18 +798,28 @@ IND_ALP_1988_A_24
 Gasthof und Hotel Bauer. Wo die familäre Atmosphäre Zuhause ist.
 IND_ALP_1989_A_24
 Eines der zahlreichen Wellness- und Spa-Ressorts der Helio Hotelkette.
+IND_AVL_1800_A_01
+Johann Hasenclever Remscheid Tyrol
 IND_AVL_1800_A_06
 In dieser Tischlerei werden nach Kundenwunsch von der einfachen Bank bis zum aufwendig gestalteten Kleiderschrank, Möbelstücke nach Maß gefertigt.
 IND_AVL_1825_A_10
 Alte Metallgießerei - Hier wird aus Erz Eisen gewonnen.
+IND_AVL_1900_A_06
+Hochbehälter Burgberg Erlangen
+IND_AVL_1910_A_10
+Kesselhaus Karlsruhe
 IND_AVL_1914_A_02
 Baracke Seemoos, die ehemalige Konstruktionsbaracke von Claude Dornier.
 IND_AVL_1920_A_18
 Örtliches Druckereigebäude der SIM Newspaper GmbH
 IND_AVL_1921_A_14
 Hier produziert die AVL WOLL KG Garne und Fäden für die Textilindustrie.
+IND_AVL_1930_A_25
+Stadtlagerhaus Regensburg
 IND_AVL_1950_A_03
 Glaserei - Der Betrieb von Meister Feinschliff wird schon seit 3 Generationen vom Vater auf den Sohn übertragen.
+IND_AVL_1950_A_30
+Gasometer Hoesch Dortmund
 IND_AVL_1951_A_05
 Niederlassung der GL Techfluids AGSchmierstoffe und Hydraulik-Öle aller Art.
 IND_AVL_1956_A_04
@@ -720,16 +832,28 @@ IND_AVL_1987_A_10
 Die Spedition Starnberger transportiert Güter aller Art, zu einem fairen Preis vom hohen Norden bis in den warmen Süden.
 IND_AVL_1988_A_18
 Lagersilo der Oberanger Storage KG
+IND_AVL_2000_A_30
+MVA Weisweiler
+IND_MGB_1800_A_01
+Johann Hasenclever Remscheid Tyrol
 IND_MGB_1800_A_03
 Hier bieten mehrere Kunsthandwerksbetriebe ihre Dienste unter einem Dach an.
+IND_MGB_1800_A_05
+Forchheim Marktplatz 14 rot
 IND_MGB_1800_A_10
 Kunst & GoldschmiedeHier werden Edelmetalle aller Art an den Mann bzw. Frau gebracht. Vom teuren Armband bis zur verzierten Türklinke.
 IND_MGB_1870_A_04
 Bauschlosserei mit eigenem Schmelzofen. Der Besitzer hat sich dazu entschlossen den Metallschrott lieber selbst zu recyclen, statt sich vom örtlichen Schrottplatz übers Ohr hauen zu lassen.
 IND_MGB_1874_A_03
 Gewerbehaus - Hier bieten mehrere Kunsthandwerksbetriebe ihre Dienste unter einem Dach an.
+IND_MGB_1880_A_07
+Lager Cellulosefabrik Phrix Hattersheim
 IND_MGB_1894_A_10
 Kunst & GoldschmiedeHier werden Edelmetalle aller Art an den Mann bzw. Frau gebracht. Vom teuren Armband bis zur verzierten Türklinke.
+IND_MGB_1900_A_05
+Shedhalle Poessneck
+IND_MGB_1910_A_09
+Maschinenhaus Metallwerk Coburg
 IND_MGB_1920_A_06
 Hier stellt die T-Tec GmbH Zahnräder und Getriebe für zahlreiche Autohersteller her.
 IND_MGB_1922_A_10
@@ -756,6 +880,8 @@ IND_MGB_1987_B_04
 Verzinkerei der KT & SIM Metalgroup.
 IND_MGB_1997_A_03
 Werkstatt & Autohaus - Egal ob sportlicher Flitzer oder braver Familienvan, hier findet jeder das zu ihm passende Fahrzeug.
+IND_MGB_2000_A_30
+MVA Weisweiler
 IND_NDT_1800_A_01
 Scheune für Landwirtschaftliche Produkte und Geräte. Der Besitzer wollte unbedingt mal etwas "ausgefallenes" um sich von seinen Nachbarn abzuheben.
 IND_NDT_1830_A_06
@@ -774,6 +900,8 @@ IND_NDT_1925_A_16
 Walzenmühle Flensburg
 IND_NDT_1952_A_18
 Silo der Kelloggs AG
+IND_NDT_1960_A_13
+Getreidespeicher Potsdam Rehbrücke grau
 IND_NDT_1966_A_07
 Lagerhaus - Hier kann jedermann seinen Krimskrams, gegen ein geringes Entgelt, zwischenlagern.
 IND_NDT_1969_A_08
@@ -786,8 +914,12 @@ IND_ODL_1800_A_02
 Kleiner ostdeutscher Bauernhof.
 IND_ODL_1800_A_04
 Scheune
+IND_ODL_1800_A_05
+Molkenhaus Bärwinkel 
 IND_ODL_1805_A_02
 Kleines Silo
+IND_ODL_1830_A_08
+Maschinenhaus Lustgarten
 IND_ODL_1832_A_10
 Lagerhaus.
 IND_ODL_1836_A_11
@@ -800,6 +932,8 @@ IND_ODL_1870_A_04
 Ehemalige Schmiede, jetzt Museum
 IND_ODL_1872_A_08
 Alte Porzellanfabrik
+IND_ODL_1920_A_35
+Uhrenturm Wittenberge
 IND_ODL_1923_A_26
 Iduna Ltd - Optische Messgeräte
 IND_ODL_1924_A_24
@@ -810,6 +944,10 @@ IND_ODL_1928_A_28
 Altdeutsches Wohn- und Geschäftsgebäude.
 IND_ODL_1931_A_18
 Gasreservoir der Stadtwerke
+IND_ODL_1960_A_13
+Getreidespeicher Potsdam Rehbrücke
+IND_ODL_1970_A_42
+Fernheizkraftwerk
 IND_ODL_1973_A_18
 Fernheizkraftwerk
 IND_ODL_1974_A_08
@@ -832,22 +970,42 @@ Obelisk
 Obelisk (Attraktion)
 Obsidia
 Konzertbühne
+Roter_Turm
+Roter Turm
 Team_128_german
 Team PAK128.german
 #________________________________building - res_________________________________
 #________________________________building - res_________________________________
+RES_ALL_1700_Gerberbruch_3_04
+Gerberbruch 3 in Rostock
 RES_ALL_1800_A_01
 Ein kleines Einfamiliehaus\n aus der Zeit um die Jahrhundertwende
 RES_ALL_1800_A_02
 Schrebergarten - Ein Gartenhäuschen mit Veranda
+RES_ALL_1800_A_03
+Wohnstallhaus Beuren
+RES_ALL_1800_A_09
+Haus Groß (blau) in Göllheim Hauptstraße 68
 RES_ALL_1800_B_01
 Kleines Wohnhaus
 RES_ALL_1801_B_01
 Kleines Holzwohnhaus.
+RES_ALL_1802_A_01
+Wohnen im Grünen mit Garten
+RES_ALL_1802_B_01
+Gartenhochhaus\n Auch keine Leute haben gelegentlich Hochhäuser in ihrem Garten stehen.
+RES_ALL_1803_A_01
+Grüne Frische
+RES_ALL_1803_B_01
+Gartenhaus\n Es ist rot, es ist klein, es ist mein und mein Bett passt auch hinein. 
 RES_ALL_1870_A_05
 Ubahn Alex Eingang
+RES_ALL_1880_Fischerbruch_3Haeuser_03
+Fischerbruch 3
 RES_ALL_1952_B_09
 Kleiner Wohnblock für Familien mit schmalen Geldbeutel
+RES_ALL_1972_A_09
+Fußgängertunnel Lewishamstraße
 RES_ALL_1972_A_12
 Mehrfamilienhaus der SI-Immogrund
 RES_ALL_Schrebergarten_a_01
@@ -892,6 +1050,12 @@ RES_ALP_1950_A_15
 Heim für betreutes Wohnen der AgeCare Ltd.
 RES_ALP_1960_A_04
 Alpenländisches Mehrfamilienhaus mit zwei Aufgängen der Lemuria Immo & Treuhand AG.
+RES_ALP_1960_A_37
+Welsweg 7 Stuttgart klein
+RES_ALP_1960_A_39
+Welsweg 7 Stuttgart
+RES_ALP_1960_A_41
+Welsweg 7 Stuttgart groß
 RES_ALP_1980_A_12
 Wohnhaus im Stil des Alpenvorlands, mit einem Pelletslagerraum auf der Rückseite, da die Heizung vor kurzem auf diesen umweltfreundlichen Brennstoff umgestellt wurde.
 RES_ALP_1980_A_20
@@ -912,6 +1076,8 @@ RES_ALP_1990_B_20
 Schlichter Wohnblock mit überwiegend Singleapartments.
 RES_AVL_1800_A_03
 Geräumiges Bauernhaus mit Geräteschuppen.
+RES_AVL_1800_A_09
+Haus Groß in Göllheim Hauptstraße 68
 RES_AVL_1800_B_02
 Schrebergarten - Ein Gartenhäuschen und Beete mit saftigem Frischgemüse.
 RES_AVL_1800_B_04
@@ -1070,6 +1236,10 @@ RES_MGB_1970_A_11
 Wohnhaus einer Akademikerfamilie. Der "Herr Professor" hat außerdem das Dachgeschoss zu seinem persönlichem Studierzimmer auserkoren.
 RES_MGB_1970_A_24
 Eine wenig inspirierte Architektur, das der unregelmäßige Grundriss kaum verbessert.
+RES_MGB_1970_A_38
+Hochhaus HeiligeGarten Straße Dortmund klein
+RES_MGB_1970_A_40
+Hochhaus HeiligeGarten Straße Dortmund
 RES_MGB_1972_B_30
 Wohnblock in Hexagon Form 
 RES_MGB_1974_A_42
@@ -1122,6 +1292,8 @@ RES_MGB_2008_A_08
 Kleiner, 3-geschossiger Wohnblock der Lemuria Immo-Verwaltungsgesellschaft.
 RES_MGB_2013_A_48
 Wohn- und Bürogebäude
+RES_NDT_1800_A_03
+Güstrow Armesünderturm
 RES_NDT_1800_A_12
 Bauernhof
 RES_NDT_1925_A_06
@@ -1162,6 +1334,10 @@ RES_NDT_1979_A_38
 Eines der diversen Wohngebäude, die man so oder in ähnlicher Form in fast jeder Stadt findet.
 RES_NDT_1980_A_02
 Einfamiliehaus der mittleren Preisklasse mit Wintergarten.
+RES_NDT_1980_A_06
+Auf der Huder in Rostock klein
+RES_NDT_1980_A_07
+Auf der Huder in Rostock
 RES_NDT_1980_A_12
 Haus "BiQ" gehörte vorher dem Magistrat und wurde in derem Auftrag von Olaf P. Muck entworfen.
 RES_NDT_1980_A_32
@@ -1184,6 +1360,10 @@ RES_NDT_1987_B_11
 Wohnblock der Lemuria Wohn- und Siedlungsbau GmbH.
 RES_NDT_1988_B_10
 Einfamilienhaus mit Garten & Terrasse.
+RES_NDT_2010_A_09
+Wilhelmshaven Bismarckstr. 33
+RES_NDT_2010_A_10
+Wilhelmshaven Bismarckstr. 33 hell
 RES_ODL_1450_A_04
 Altdeutsches Wohngebäude.
 RES_ODL_1450_A_05
@@ -1226,6 +1406,22 @@ RES_ODL_1957_B_05
 Parkplatz
 RES_ODL_1960_A_09
 Wohnblock der PuMu Sozialwohnungsbau GmbH.
+RES_ODL_1960_A_36
+Waldsassenerstr. 11 Berlin sehr klein
+RES_ODL_1960_A_37
+WHH GT 18 Ost klein\n Ein standardisiertes Wohnhochhaus in Großtafelbauweise des Wohnungsbaukombinat Berlin 
+RES_ODL_1960_A_38
+Waldsassener Straße. 11 Berlin grün
+RES_ODL_1960_A_39
+WHH GT 18 Ost\n Ein standardisiertes Wohnhochhaus in Großtafelbauweise des Wohnungsbaukombinat Berlin 
+RES_ODL_1960_A_40
+Waldsassener Straße. 11 Berlin groß
+RES_ODL_1960_B_36
+WHH GT 18 klein\n Ein standardisiertes Wohnhochhaus in Großtafelbauweise des Wohnungsbaukombinat Berlin 
+RES_ODL_1960_B_38
+WHH GT 18 \n Ein standardisiertes Wohnhochhaus in Großtafelbauweise des Wohnungsbaukombinat Berlin 
+RES_ODL_1960_B_40
+WHH GT 18 groß\n Ein standardisiertes Wohnhochhaus in Großtafelbauweise des Wohnungsbaukombinat Berlin 
 RES_ODL_1965_B_15
 Zeittypisches Wohngebäude, das auch im Westen hätte errichtet werden können.
 RES_ODL_1967_B_12
@@ -1272,6 +1468,12 @@ BahnhofHochbahn
 Hochbahn-Bahnhof
 BahnhofHochbahn2
 Hochbahn-Bahnhof
+Bahnsteig_Ampersand
+beidseitiger Bahnsteig
+Bahnsteig_Ampersand2
+beidseitiger Bahnsteig
+Bahnsteig_Doppelgleis
+beidseitiger Bahnsteig
 Bahnsteig_mit_Glasdach
 Bahnsteig mit Glasdach
 Bahnsteig_mit_Glasdach_NO
@@ -1296,6 +1498,8 @@ Dammtor-Bhf
 Bahnhofshalle
 EG Hochbahn - nur auf Gleis
 Hochbahn-Halt
+Gueterbahnhof_klein
+Güterbahnsteig, klein
 Hackescher_Bahnhof
 Hackescher Bahnhof
 ISO_Verladung
@@ -1318,6 +1522,8 @@ Monorail_Bahnhof
 Schwebebahnstation
 Monorail_Bahnhof_hoch
 Schwebebahnstation hoch
+Nebenstrecken-Bahnhof
+Nebenstreckenbahnhof
 Plattform
 Güterbahnsteig
 PlattformPers
@@ -1350,10 +1556,14 @@ Schwebebahnhof96
 kleiner Schwebebahnbahnhof
 Silo_Ladeplatz
 Silo-Ladeplatz
+SiloBhf
+Bahnhof mit Silo
 small_early_bus_stop
 einfache Haltestelle (frühe Version)
 Suspended_Monorail_Bahnhof_Modern
 erhöhte Station
+U-Bahnhof_Marienplatz
+U-Bahnhof Marienplatz
 Ueberdachter_Bushalt_1932
 überdachtes Wartehäuschen 1932
 Ueberdachter_Bushalt_1957
@@ -1363,17 +1573,17 @@ Ueberdachter_Bushalt_1993
 #________________________________building - tow_________________________________
 #________________________________building - tow_________________________________
 ODL_Rath_Stralsund_00
-Ostdt. Rathaus
+Rathaus Stralsund Ostdt.
 ODL_Rath_Stralsund_08
-Rathaus (Stralsund)
+Rathaus (Stralsund) Level 17
 ODL_Rath_Stralsund_11
-Rathaus (Stralsund)
+Rathaus (Stralsund) Level 22
 ODL_Rath_Stralsund_16
-Rathaus (Stralsund)
+Rathaus (Stralsund) Level 32
 ODL_Rath_Stralsund_23
-Ostdt. Rathaus (Stralsund)
+Rathaus (Stralsund) Level 38
 ODL_Rathaus_Grimmen
-Ostdt. Rathaus
+Rathaus Grimmen (Ostdt.) 
 Rathaus_Alp_alt
 altes Alpenrathaus
 Rathaus_Alp_gross
@@ -1389,33 +1599,39 @@ süddt. kleines Rathaus
 Rathaus_AVL_modern_gross
 süddt. Großstadtrathaus
 Rathaus_Grimma_00
-Rathaus
+Rathaus Grimma Level 12
 Rathaus_Grimma_04
-Rathaus
+Rathaus Grimma Level 20
 Rathaus_Grimma_10
-Rathaus
+Rathaus Grimma Level 30
 Rathaus_Grimma_13
-Rathaus
+Rathaus Grimma Level 42
 Rathaus_Groetzingen
 Rathaus Grötzingen
 Rathaus_Hennigsdorf_01
-Rathaus (modern)
+Rathaus Hennigsdorf Level 14
 Rathaus_Hennigsdorf_04
-Rathaus (modern)
+Rathaus Hennigsdorf Level 20
 Rathaus_Hennigsdorf_09
-Rathaus (modern)
+Rathaus Hennigsdorf Level 26
+Rathaus_Hennigsdorf_17
+Rathaus Hennigsdorf Level 32
 Rathaus_Hennigsdorf_26
-Rathaus (modern)
+Rathaus Hennigsdorf Level 35
 Rathaus_Lauingen1
-Rathaus (Michelstadt)
+Rathaus Lauingen
 Rathaus_Michelstadt
-Mittelgebirgsrathaus
+Rathaus Michelstadt
 Rathaus_Recklinghausen
-Großes Mittelgebirgsrathaus
+Rathaus Recklinghausen Level 58
 Rathaus_Wieslet
 Rathaus Wieslet
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
+citycar_Audi_A4grau
+Audi A4 grau
+citycar_Audi_A4gruen
+Audi A4 grün
 Epoche1CityCar1
 Pferdekutsche(Fracht)
 Epoche1CityCar2
@@ -1497,8 +1713,12 @@ Tankstelle (alpin, 1950)
 factory_ALP_Tankstelle_NIC_details
 <title>SEMI - Tankstelle</title><p>Außer Diesel und Benzin verkauft dieser Shop noch Autozubehör und -Pflegeartikel</p>
 ALP_Viehhof_NIC
-Viehhof (alpin)
+veraltet nicht benutzen
 factory_ALP_Viehhof_NIC_details
+<title>Viehhof (alpin)</title><p>Dieser Viehhof mit seinen Eier legenden Kühen dient nur der Kompatibilität zu alten gespeicherten Spielständen. Nicht neu bauen.</p>
+ALP_Viehhof_NIC_2
+Viehhof (alpin)
+factory_ALP_Viehhof_NIC_2_details
 <title>Viehhof Untermoser</title><p>Familie Untermoser ist Viehzüchter in der vierten Generation.</p>
 alte Raffinerie
 Raffenerie (1905)
@@ -1506,6 +1726,8 @@ factory_alte Raffinerie_details
 <title>Alte Raffenerie</title><p>Eine Erdölraffinerie gewinnt aus dem Rohstoff Erdöl durch Destillation, Fraktion und Extraktion unter Verwendung von Druck und Vakuum Treibstoffe, Schmieröle, Asphalt sowie diverse Kunstoffausgangsprodukte.</p>
 alte_Kfz-Fabrik
 Kfz-Fabrik
+factory_alte_Kfz-Fabrik_details
+<title>Lemuria AG</title><p>Die Lemuria AG produziert formschöne Sportwagen, Cabriolets und brave Familienschaukeln.</p>
 alte_Lebensmittelfabrik
 Lebensmittelfabrik
 factory_alte_Lebensmittelfabrik_details
@@ -1658,10 +1880,22 @@ BaeckereiGadebusch_NIC
 Bäckerei (Norddt., 1920)
 factory_BaeckereiGadebusch_NIC_details
 <title>Großbäckerei</title><p>Jetzt hält die industrielle Produktion Einzug in das Backgewerbe. Hier werden von früh bis spät in großen Stückzahlen Brötchen, Gebäck und leckere Brote für das ganze Land hergestellt.</p>
-Bauernhof_NIC
-Viehhof (1953)
-factory_Bauernhof_NIC_details
-<title>Farm</title><p>Yes, its a farm.</p>
+Bauernhof_All1800
+Hühnerhof (1800)
+factory_Bauernhof_All1800_details
+<title>Hühnerhof (1800)</title><p>Kleinbauern nannte man früher Häusler. Häusler hatten nicht genug Grund um davon leben zu können. Die eine Möglichkeit war als Tagelöhner bei den Bauern der Umgebung zu arbeiten. Was schlecht bezahlt und gering geschätzt wurde. Oder höherwertige Güter herzustellen, als Handwerker, oder Heimarbeiter. Dieser hier verkauft kaum Gerste, er verfüttert sie lieber an seine Hühner und kann deren Eier zu einem höheren Preis verkaufen, als es beim Getreide möglich wäre.<br><strong> Wenn er die Eier gut verkaufen kann wird er weitere Felder dazu Pachten und die Produktion stark erhöhen.</strong></p><p> Einzig jeden Tag Hühnerfleisch mit Brei, der Bauer, seine Frau und die Kinder können die zähen, knochigen alten Gigerl nicht mehr sehen. Aber es hilft nichts, es ist das einzige Essen das sie haben.</p><p> Die Grafik zeigt ein typisches oberbayerisches armer Leute Haus.</p>
+Bauernhof_MGB
+Getreidehof (Norddt./Ostdt.)
+factory_Bauernhof_MGB_details
+<title>Typisch norddeutscher Fachwerkhof</title><p>Das Getreide wird hier noch mit der Sense gemäht,  zu Garben gebunden und zu traditionellen Heumanderl aufgestellt. In anderen Regionen auch Dieme genannt. Der Grund für diese seit vorgeschichtlicher Zeit tradierte Vorgehensweise: völlig trockenes Getreide lässt sich zwar noch mit einem Mähdrescher ernten aber nicht mit der Sense mähen. Erstens ist das Stroh dann hart wie Holz, zweitens fallen beim Schlag die Körner aus den Ähren. Noch leicht grünen Stängel lassen sich dagegen leicht mähen und beim trocknen im Heumanderl werden die Ären nicht mehr vom Wind bewegt, damit fallen die Körner nicht vorzeitig aus. Auch die Gefahr dass Sturm oder Regen das Getreide flach legt, ist damit gebannt. Auf den Boden gedrückte Halme lassen sich ebenfalls schwer mähen und trocken nicht mehr gut. Landwirte sprechen dann von Lagerung oder Lagergetreide. Damit ist nicht die Aufbewahrung gemeint, sondern das liegen der Halme. Noch grüne Halme können, wenn sie vom Wind nieder gedrückt wurden, wieder aufstehen. Die Pflanze verändert dazu in den Knoten das Wachstum so, dass es wie ein Gelenk wirkt. Gelbe oder trockene Halme sind dazu nicht mehr in der Lage.</p>
+Bauernhof_MGB1850
+Obstbauer Bayersoyen (1850)
+factory_Bauernhof_MGB1850_details
+<title>Bauernhof nähe Bad Bayersoyen</title><p>Wurde leicht renovierungsbedürftig anbgeboten. Deshalb noch im Originalzustand. </p>
+Bauernhof_Ost1870
+Zuckerrübenbauer (1870)
+factory_Bauernhof_Ost1870_details
+<title>Ostdeutscher Gutshof</title><p>Hier gibt es süße Sachen, wer Obst nicht mag der darf Zuckerrüben essen und in heutiger Zeit als Gast die Ferien hier verbringen.</p>
 Bauernhof_Tierfutter
 Tierfutterproduzent (Norddt.)
 Baumarkt_NIC
@@ -1710,10 +1944,14 @@ Chemiewerk1975_NIC
 Chemiewerk (1975)
 factory_Chemiewerk1975_NIC_details
 <title>Modernes Petrochemisches Werk</title><p>Dieses Chemiewerk produziert Chemiekalien für die Pharmazeutik, sowie Lack und Farben für die Möbelindustrie und Buchdruckerei.</p>
+Computerhersteller_1965
+Computerhersteller (1965)
+factory_Computerhersteller_1965_details
+<title>Computerhersteller Siemens Legoland</title><p>Die Entwicklungsabteilung von Siemens wird in München Legoland genannt. Das kommt zum einen von der Architektur der Gebäude, ist zum anderen die Fantasie der Leute, über die Arbeit der Entwickler dort. Nach dem die KFZ Fabrik von Lemuria nicht mehr so recht ins PAK passen wollte, sie war dafür zu klein und unscheinbar, kam mir die Assoziation mit Legoland. Mein Gedächtnis hat mir zwar einen Streich gespielt, es gibt in Legoland keine grün Bedachten Gebäude, die sind blau, rot oder gelb und sie sind höher. Trotzdem es wäre schade um die schöne Grafik von Lemuria und es passt recht gut, als früher Computerhersteller. Siemens hat leider den Microprozessor Zug verpasst und damit auch den PC verschlafen.</p>
 Computerhersteller1980
-Computerhersteller
+Computerhersteller (1980)
 factory_Computerhersteller1980_details
-<title>Computerhersteller</title><p>Die Simutel Corp. produziert Desktopsysteme, Server und Steuerschränke. Der Simutel Corp. ist es 1980 als erstem Hersteller gelungen PCs, also Personal Computer, herzustellen die sich der Kleinbetrieb und der Computer-Hobbyist auch für zu Hause leisten konnte. Computern öffneten sich damit ganz neue Anwendungsmöglichkeiten abseits der EDV in Großbetrieben. Multimedia war plötzlich in aller Munde, auch wenn viele gar nicht wussten, was das bedeutet.</p>
+<title>Computerhersteller (1980)</title><p>Die Simutel Corp. produziert Desktopsysteme, Server und Steuerschränke. Der Simutel Corp. ist es 1980 als erstem Hersteller gelungen PCs, also Personal Computer, herzustellen die sich der Kleinbetrieb und der Computer-Hobbyist auch für zu Hause leisten konnte. Computern öffneten sich damit ganz neue Anwendungsmöglichkeiten abseits der EDV in Großbetrieben. Multimedia war plötzlich in aller Munde, auch wenn viele gar nicht wussten, was das bedeutet.</p>
 Computerhersteller1990
 Computerhersteller (1990)
 factory_Computerhersteller1990_details
@@ -1730,6 +1968,10 @@ Discounter_NDL_ODL_1990
 Discounter SIMSTARR NORD (1990)
 factory_Discounter_NDL_ODL_1990_details
 <title>Discounter</title><p>Günstige Lebensmittel und mehr</p>
+Discounter_Pascal2012
+Discounter Pascal (2012)
+factory_Discounter_Pascal2012_details
+<title>Tedox Offenbach</title><p>Ein Wunsch vom fleißigen Simutrans Spieler Pascal</p>
 Druckerei_NIC
 Druckerei (1886)
 factory_Druckerei_NIC_details
@@ -1838,10 +2080,6 @@ Kaufhaus_NIC
 Warenhaus
 factory_Kaufhaus_NIC_details
 <title>Großes norddeutsches Warenhaus</title><p>Ein Warenhaus ist ein Einzel- bzw. Großhandelsgeschäft, das im Gegensatz zum "Kaufhaus" Waren aller Art auf meist mehreren Stockwerken zum Verkauf anbietet.</p>
-KFZ_Fabrik_NIC
-Kfz-Fabrik (1961)
-factory_KFZ_Fabrik_NIC_details
-<title>Lemuria AG</title><p>Die Lemuria AG produziert formschöne Sportwagen, Cabriolets und brave Familienschaukeln.</p>
 Kfz_Fabrik1961
 Kfz-Fabrik (1961)
 Kiesgrube
@@ -1983,7 +2221,7 @@ Marzipanfabrik (Norddt.)
 factory_NDT_alte_Marzipanfabrik_details
 <title>Marzipanfabrik</title><p>Marzipan ist eine Süßware, die aus gemahlenen Mandeln und Zucker hergestellt wird. Die ersten deutschen Marzipanfabriken gründeten sich an den Hafenstädten, weil Mandeln seinerzeit nur in geringen Mengen aus so genannten Kolonien durch Schiffsimporte nach Europa gelangen konnten.</p>
 NDT_alterBauernhof_NIC
-Bauernhof (Norddt.)
+Zuckerrübenbauer (1800)
 factory_NDT_alterBauernhof_NIC_details
 <title>Norddeutscher Bauernhof</title><p>Hier werden Zuckerrüben angebaut.</p>
 NDT_Importeur
@@ -2052,6 +2290,8 @@ factory_Sandgrube_details
 <title>Sandgrube</title><p>Sand für die Zementherstellung</p>
 Sandgrube_1800
 Sandgrube
+factory_Sandgrube_1800_details
+<title>Sandgrube Dirschenberg</title><p>Sand gibt es an vielen stellen, zum Beispiel auch in der Wüste. Aber guter Sand, zum Mauern, oder für standfesten Beton, ist selten. Der Sand der Wüste ist beispielsweise vom Wind rund und glatt geschliffen und eignet sich deshalb nicht zum errichten von Bauwerken. Die Körner können sich nicht mehr ineinander verhaken und bieten einem Bindemittel wie Zement keine Haftflächen. Guter Sand zum bauen, wurde von reißenden Flüssen aus hartem Gestein gebrochen und ist frei von Erde.   </p>
 Schlachthaus_1800
 Schlachthaus
 factory_Schlachthaus_1800_details
@@ -2118,6 +2358,10 @@ Textilfabrik_1800
 Textilfabrik
 factory_Textilfabrik_1800_details
 <title>Textilfabrik</title><p>In der Textilfabrik werden Kleidungsstücke für jedermann sowie Mode für die Dame von Welt hergestellt. Dabei wird sowohl Wolle als auch Leinen verwendet.</p>
+TierfutterFabrik_alt
+Tierfutter Fabrik (1953)
+factory_TierfutterFabrik_alt_details
+<title>Tierfutter Fabrik</title><p>Die Familie Pell verkauft Kraftfutter für Hühner. Dazu wird Gerste genau abgestimmt auf die Bedürfnisse der Tiere, mit Eiweiß, Ölen und Mineralien gemischt, gemahlen und zu Würstchen gepresst. Die Handhabung von Pellets ist einfach in Verkauf, Transport, Lagerung, Portionierung und Verteilung an die Tiere. Da weitgehend Staubfrei, kann auf Verpackung verzichtet werden und es in Silos gelagert und transportiert werden. Die Geschäfte der Familie Pell gehen inzwischen so gut, dass sie Landwirtschaft und Hühnerzucht aufgegeben haben und sich ausschließlich der Produktion von Pellets widmen. </p>
 TierfutterFabrik_NIC
 Tierfutterfabrik (1984)
 factory_TierfutterFabrik_NIC_details
@@ -2134,10 +2378,26 @@ Verpackungsmittelfabrik_1909
 Verpackungshersteller
 factory_Verpackungsmittelfabrik_1909_details
 <title>VerPAK GmbH</title><p>Die Firma VerPaK hat sich auf die Produktion und den Vertrieb von Dosen aus Stahl sowie Kisten und Fässern aus Holz spezialisiert. Daneben stellt sie Kartonage und reißfeste Tüten her. Da die Papierfabriken keinen Zellstoff von geeigneter Qualität liefern können, sieht man sich gezwungen, diesen im Nebengebäude aus den Holzresten der Fassproduktion selbst herzustellen. Die Anwohner klagen über den Dreck, der von dieser Fabrik ausgeht. Überall fliegen Faserbüschel aus der Zellstofffertigung herum. </p>
+Versandhandel_1886
+Versandhandel 1886
+factory_Versandhandel_1886_details
+<title>Versandhandel Mey & Edlich</title><p>in Leibzig ist der älteste und noch aktive Versandhandel. Beim Versandhandel gehen die Kunden zum Kaufen nicht auf den Markt, sondern wählen in Zeitungsanzeigen oder in Katalogen ihre gewünschte Produkte. Diese bestellen sie per Brief und bekommen die Ware dann per Paketpost geliefert. Deshalb ist ein Versandhandel auf ein gut funktionierendes Postwesen angewiesen. Die Briefe mit den Bestellungen müssen zuverlässig an der Fabrik angeliefert werden. Genauso zuverlässig müssen die Pakete ausgeliefert werden. Auch hier im Spiel funktioniert der Versandhandel nur bei einer guten Postanbindung. Kleidung, Schreibwaren und kleine Maschinen sind für den Versandhandel bestens geeignet, da sie in Pakten gut versendet werden können. Sie sind nicht verderblich, leicht und hochwertig.</p>
+Verwaltung_Muenchen_1965
+Verwaltung (1965)
+factory_Verwaltung_Muenchen_1965_details
+<title>Münchner Städtisches Hochhaus an der Blumenstraße</title><p>Das Haus ist zwar schon von 1929, aber wir brauchen einen Endverbraucher für Computer ab 1965, da wir ab 1965 eine Computerfabrik im Spiel haben. 1965 kosten Computer so viel wie ein Haus. Daher kann sich kein Simbürger privat einen Computer leisten, aber für den Staat, große Firmen und Stadtverwaltungen kann sich ein solch teurer Computer lohnen. Deshalb stellen immer mehr Stadtverwaltungen auf EDV um. Ab 1980 werden dann erste kleine Computer in Warenhäuser angeboten. </p>
 Viehhof_NIC
-Viehhof (1919)
+veraltet nicht benutzen
 factory_Viehhof_NIC_details
+<title>Viehhof (1919)</title><p>Dieser Viehhof mit seinen Eier legenden Kühen dient nur der Kompatibilität zu alten gespeicherten Spielständen. Nicht neu bauen.</p>
+Viehhof_NIC_2
+Viehhof (1919)
+factory_Viehhof_NIC_2_details
 <title>Norddeutscher Bauernhof</title><p>Flaches Land, grüne, saftige Wiesen und viel Regen und Wind - das kann nur ein norddeutscher Viehhof sein.</p>
+Viehhof_Nord1800
+Viehhof Norddeutschland (1800)
+factory_Viehhof_Nord1800_details
+<title>Gutshaus Benckendorf</title><p>Hier werden Rinder gezüchtet und mit den Hinterlassenschaften Zuckerrüben gedüngt. Die ausgepressten Rüben sind dann wieder kalorienreiches Futter für die Rinder. Die Biomasse geht also im Kreis, neudeutsch Recycling, übrig bleiben Zucker und Rindviecher.</p>
 VWAutohaus_NIC
 Autohaus (1952)
 factory_VWAutohaus_NIC_details
@@ -2341,25 +2601,41 @@ Privatstraße
 #_______________________________roadsign - track________________________________
 #_______________________________roadsign - track________________________________
 Auswahl_Ende_Schild
-Auswahlendeschild
+Auswahlendeschild\nBeendet die Wirkung der Auswahlsignale für dieses Gleis.
+Auswahlsignal_hv
+Auswahlsignal\nPlatziere dieses Signal vor einem Bahnhof mit mehreren Gleisen und der Zug wird zu einem freien Bahnsteig geleitet. Mit dem "Auswahl Ende Schild" kann ein Bahnsteige von der Auswahl ausgenommen werden. 
+Auswahlsignal_Ks
+Auswahlsignal Ks\nPlatziere dieses Signal vor einem Bahnhof mit mehreren Gleisen und der Zug wird zu einem freien Bahnsteig geleitet. Mit dem "Auswahl Ende Schild" kann ein Bahnsteige von der Auswahl ausgenommen werden. 
 ChooseSignal
-Auswahlsignal
+Auswahlsignal\nPlatziere dieses Signal vor einem Bahnhof mit mehreren Gleisen und der Zug wird zu einem freien Bahnsteig geleitet. Mit dem "Auswahl Ende Schild" kann ein Bahnsteige von der Auswahl ausgenommen werden. 
 Richtungssignal_frei
 Richtungssignal freie Fahrt
 Richtungssignal_stop
 Richtungssignal Halt
-Signal
-Standardlichtsignal
+Signal_hv
+Standardlichtsignal\nDie Lichtsignale des H/V-Systems entstanden durch Weglassen der Flügel der Formsignale. Die Lichter entsprechen in Bedeutung, Farbe und Position den der Flügelsignalen. H/V Lichtsignale wurden in der BRD gebaut, die DDR baute Signale des Hi-Systems
+Signal_Ks
+Standardlichtsignal Ks\n Standartsignal System Ks.\n Ks steht für Kombinationssignal und bedeutet es gibt keine separaten Vorsignale mehr. Die Vor- und/oder Hauptsignalfunktion sind in einem Signalschirm vereinen. Sie ersetzen in Deutschland seit 1994 nach und nach im Rahmen von Stellwerksneubauten die alten H/V-Licht- und Formsignale, und die Hl-Signale der ehemaligen DDR. 
 Signals
-Formsignal
+Formsignal\nEinfaches Signal ohne Sonderfunktionen. Für normale Blockstellen.
 Streckensignal (Longblock)
-Langblocklichtsignal
-Streckensignal modern (Longblock)
-Langblocklichtsignal
-Vorsignal (Zweiblocksignal)
-Vorsignal (2-Block)
+Langblockformsignal\nReseviert ohne Beachtung von Haltestellen bis zum nächsten echten Signal. Das eignet sich für längere eingleisige Strecken mit mehren Haltestellen. 
+Streckensignal_hv_longblock
+Langblocklichtsignal\nReseviert ohne Beachtung von Haltestellen bis zum nächsten echten Signal. Das eignet sich für längere eingleisige Strecken mit mehren Haltestellen. 
+Streckensignal_hv_priority
+Streckensignal Vorrang\nDieses Signal reserviert über mehrere Vorrangsignale hinweg so viele Streckenabschnitte wie möglich. Es wird bis zu einer Haltestelle oder einem normalen Signal reserviert. Damit ist es möglich Ausweichgleise zu bauen. Die Hauptstrecke erhält Vorrangsignale, das Ausweichgleis erhält eine Haltestelle oder ein normales Signal. Fährt nun ein langsamer Zug auf die Ausweiche, kann sich der nachfolgende schnelle Zug die Hauptstrecke an der Ausweichstelle vorbei reservieren und der langsame Zug muss warten bis der schnelle Zug vorbei ist. Das Signal zeigt in der Raute unten das Signal "Fahrzeit kürzen" an.
+Streckensignal_Ks_longblock
+Langblocklichtsignal Ks\nReseviert ohne Beachtung von Haltestellen bis zum nächsten echten Signal. Das eignet sich für längere eingleisige Strecken mit mehren Haltestellen.
+Streckensignal_Ks_priority
+Streckensignal Vorrang Ks\nDieses Signal reserviert über mehrere Vorrangsignale hinweg so viele Streckenabschnitte wie möglich. Es wird bis zu einer Haltestelle oder einem normalen Signal reserviert. Damit ist es möglich Ausweichgleise zu bauen. Die Hauptstrecke erhält Vorrangsignale, das Ausweichgleis erhält eine Haltestelle oder ein normales Signal. Fährt nun ein langsamer Zug auf die Ausweiche, kann sich der nachfolgende schnelle Zug die Hauptstrecke an der Ausweichstelle vorbei reservieren und der langsame Zug muss warten bis der schnelle Zug vorbei ist. Das Signal hat die Form des Ks-Systems und zeigt in der Raute unten das Signal "Fahrzeit kürzen" an.
+Streckensignal_priority
+Streckensignal Vorrang\nDieses Signal reserviert über mehrere Vorrangsignale hinweg so viele Streckenabschnitte wie möglich. Es wird bis zu einer Haltestelle oder einem normalen Signal reserviert. Damit ist es möglich Ausweichgleise zu bauen. Die Hauptstrecke erhält Vorrangsignale, das Ausweichgleis erhält eine Haltestelle oder ein normales Signal. Fährt nun ein langsamer Zug auf die Ausweiche, kann sich der nachfolgende schnelle Zug die Hauptstrecke an der Ausweichstelle vorbei reservieren und der langsame Zug muss warten bis der schnelle Zug vorbei ist.
 Vorsignal_alt
-altes Vorsignal
+Vorsignal (2-Block) als Formsignal\nBei der echten Eisenbahn steht das Vorsignal in Bremswegabstand zum Hauptsignal und zeigt die Stellung des Hauptsignals an. Damit der Lokführer rechtzeitig bremsen kann und so sicher vor dem Hauptsignal zu stehen kommt.\nHier in Simutrans wirkt das Signal anders als in Realität. Der Zug bleibt bereits am Vorsignal stehen und wartet dort bis das Hauptsignal grün zeigt, also der Block hinter dem Hauptsignal frei ist. Es wird deshalb auch als 2-Blocksignal bezeichnet. Es können mehrere Vorsignale vor einem Hauptsignal stehen, das Signal bezieht sich immer auf das im Fahrweg nächste Hauptsignal.\nMit diesem Signal können Blockaden an Kreuzungen verhindert werden. Dazu wird je ein Hauptsignal an den von der Kreuzung weg führenden Gleisen gestellt. Der Block dahinter sollte einen maximal langen Zug aufnehmen können. Dazu je ein Vorsignal an die in die Kreuzung mündenden Gleise.
+Vorsignal_hv
+Vorsignal (2-Block) als Lichtsignal\nBei der echten Eisenbahn steht das Vorsignal in Bremswegabstand zum Hauptsignal und zeigt die Stellung des Hauptsignals an. Damit der Lokführer rechtzeitig bremsen kann und so sicher vor dem Hauptsignal zu stehen kommt.\nHier in Simutrans wirkt das Signal anders als in Realität. Der Zug bleibt bereits am Vorsignal stehen und wartet dort bis das Hauptsignal grün zeigt, also der Block hinter dem Hauptsignal frei ist. Es wird deshalb auch als 2-Blocksignal bezeichnet. Es können mehrere Vorsignale vor einem Hauptsignal stehen, das Signal bezieht sich immer auf das im Fahrweg nächste Hauptsignal.\nMit diesem Signal können Blockaden an Kreuzungen verhindert werden. Dazu wird je ein Hauptsignal an den von der Kreuzung weg führenden Gleisen gestellt. Der Block dahinter sollte einen maximal langen Zug aufnehmen können. Dazu je ein Vorsignal an die in die Kreuzung mündenden Gleise.
+Vorsignal_Ks
+Vorsignal (2-Block) Ks\nBei der echten Eisenbahn steht das Vorsignal in Bremswegabstand zum Hauptsignal und zeigt die Stellung des Hauptsignals an. Damit der Lokführer rechtzeitig bremsen kann und so sicher vor dem Hauptsignal zu stehen kommt. Ks bedeutet es ist ein System-Ks Kombinationssignal wie es seit 1994 gebaut wird.\nHier in Simutrans wirkt das Signal anders als in Realität. Der Zug bleibt bereits am Vorsignal stehen und wartet dort bis das Hauptsignal grün zeigt. Es können mehrere Vorsignale vor einem Hauptsignal stehen.\nMit diesem Signal kann der Halt eines Zugs in der Kreuzungen verhindert werden. Dieser könnte sonst querende Züge blockieren. Dazu wird je ein Hauptsignal an den von der Kreuzung weg führenden Gleisen gestellt. Der Block dahinter sollte einen maximal langen Zug aufnehmen können. Dazu je ein Vorsignal an die in die Kreuzung mündenden Gleise.
 #____________________________________symbol_____________________________________
 #____________________________________symbol_____________________________________
 Electricity
@@ -2476,6 +2752,8 @@ alter Eisenbahntunnel
 Eisenbahntunnel (90 km/h)
 einfacher_EisenbahnTunnel
 Eisenbahntunnel (160 km/h)
+Eisenbahntunnel_120
+Eisenbahntunnel 120 km/h
 Eisenbahntunnel_40
 früher Eisenbahntunnel
 Eisenbahntunnel_60
@@ -2488,6 +2766,10 @@ Eisenbahntunnel (modern)
 #________________________________tunnel - water_________________________________
 Kanaltunnel
 Kanal-Tunnel
+#____________________________________vehicle____________________________________
+#____________________________________vehicle____________________________________
+Versuchstriebwagen_Siemens_und_Halske
+Versuchstriebwagen Siemens und Halske
 #_________________________________vehicle - air_________________________________
 #_________________________________vehicle - air_________________________________
 Airbus_A300-600
@@ -2666,6 +2948,8 @@ Tupolev_TU134_Vieh
 Tupolev TU134 Vieh
 #__________________________vehicle - electrified_track__________________________
 #__________________________vehicle - electrified_track__________________________
+ADtranz_EL2000
+ADtranz EL2000
 BR101_Metropolitan
 BR 101 Metropolitan
 BR103
@@ -2704,12 +2988,16 @@ E151-gruen
 E 151 grün
 E18
 E 18
+E32
+E 32
 E36
 E 36
 E44
 E 44
 E52
 E 52
+E60
+DR E60
 E71
 E 71
 E91_3
@@ -2722,6 +3010,10 @@ E95
 E 95
 ET25A
 DRG Triebwagen ET 25 - A-Wagen
+LEW_EL2
+LEW EL2
+Preussische_EG_507
+preussische EG 507
 #___________________________vehicle - monorail_track____________________________
 #___________________________vehicle - monorail_track____________________________
 yoshi_wup01
@@ -3610,6 +3902,8 @@ Cargosprinter_MW_Stueckgut
 Cargosprinter für Stückgut - Mittelwagen
 City_Nightline_Schlafwagen
 Schlafwagen City Nightline
+Containertragwagen_Sgss-y703
+Containertragwagen Sgss-y 703
 D-Zug-Wagen_C4ue-26_1.u.2.Kl.
 D-Zug Wagen C4ü-26 1./2. Klasse
 D-Zug-Wagen_C4ue-26_3.Kl.
@@ -3642,6 +3936,8 @@ DR_Speisewagen_Bautzen
 DR Speisewagen Typ Bautzen
 DR_V100
 DR V 100
+DR118
+DR 118
 DR713
 Triebwagen DR-713
 DR714
@@ -3694,6 +3990,8 @@ ETA177_hinten
 ETA 177 - Schluss
 ETA177_vorn
 ETA 177 - Kopf
+Faals151
+Schüttgutwagen Faals151 
 Ferkeltaxe VB172
 VB 172 "Ferkeltaxe"
 Ferkeltaxe VT172
@@ -3764,6 +4062,10 @@ GTW_Mittelwagen
 GTW-Mittelwagen
 Hechtwagen_AB4ue23a
 Hechtwagen AB4ü 23a
+Henschel_DHG500C
+Henschel DHG500C
+Henschel_DHG700C
+Henschel DHG700C
 Henschel-Wegmann-Zug_Gepaeckwagen
 Henschel-Wegmann-Zug - Gepäckwagen
 Henschel-Wegmann-Zug_Mittelwagen
@@ -3960,6 +4262,8 @@ Schuettgutwagen Facns133
 Schüttgutwagen Facns 133
 Schuettgutwagen Fc(s)090
 Schüttgutwagen Fc(s) 90
+Selbstendlade-TW_Fr.-Krupp_AG
+Selbstendlade-TW_Fr.-Krupp AG
 Silberlinge_orange
 Nahverkehrszugwagen ("Silberlinge") orange
 Silberlinge_silbern
@@ -4296,6 +4600,8 @@ Holzschleppkahn_Vieh
 Holzschleppkahn für Viehtransporte
 Kuehl_Containerschiff MSC Navegantes
 Kühl-Containerschiff MSC Navigantes
+Loreley_IV
+Autofähre Loreley IV
 Main-Kettenschlepper_K.B.K.S._No._V
 Main-Kettenschlepper K.B.K.S. No. V
 Massengutfrachter Fritz
@@ -4430,6 +4736,8 @@ altes_Gleis40
 frühes Gleis
 altes_Gleis60
 frühes verbessertes Gleis
+Gleis_120
+Gleis 120 km/h
 Hochbahn160
 Hochbahn 160 km/h
 Hochbahn210

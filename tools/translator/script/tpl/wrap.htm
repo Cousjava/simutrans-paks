@@ -1,0 +1,63 @@
+<!--(if:value_message)-->
+  <p class="red">
+  <!--(list:messages)-->
+  <!--(item)-->
+    <!--(message)--><br />
+  <!--(enditem)-->
+  <!--(endlist)-->
+  </p>
+  <HR>
+<!--(endif)-->
+
+<h1 class="pagename"><!--(page_title)--></h1>
+
+<form id="id_main" method="post" action="main.php?page=wrap#download">
+
+<p><b><!--(token:lang_form_9)-->:</b><br />
+<!--(if:select_language)-->
+  <select name="language" onchange="document.getElementById('obj_s').submit();">
+  <!--(list:box_entry)-->
+      <!--(item)-->
+     	<option value="<!--(token:opt_value)-->" <!--(token:opt_select)-->><!--(token:opt_name)--></option>
+	<!--(enditem)-->
+  <!--(endlist)-->  
+  </select>
+<!--(endif)-->
+</p>
+
+<p><b><!--(token:version_form_6)-->:</b><br />
+<!--(if:select_box_version)-->
+  <select name="version" onchange="document.getElementById('obj_s').submit();">
+  <!--(list:box_entry)-->
+      <!--(item)-->
+     	<option value="<!--(token:opt_value)-->" <!--(token:opt_select)-->><!--(token:opt_name)--></option>
+	<!--(enditem)-->
+  <!--(endlist)-->  
+  </select>
+<!--(endif)-->
+</p>
+
+  <p><b><!--(lang_form_11)-->:</b><br />
+  <input type="radio" name="choice" value="file" checked="checked" />
+    <label for=\"file\"><!--(lang_form_12)--></label><br />
+  <input type="radio" name="choice" value="suggestion" />
+    <label for="sugestion"><!--(lang_form_16)--></label><br />
+  <input type="radio" name="choice" value="screen" />
+    <label for="screen"><!--(lang_form_13)--></label><br />
+  <!--(if:lang_form_14)-->
+        <input type="radio" name="choice" value="all" />
+          <label for="screen"><!--(lang_form_14)--></label><br />
+  <!--(endif)-->
+  <!--(if:lang_form_15)-->
+        <input type="radio" name="choice" value="save" />
+          <label for="save"><!--(lang_form_15)--></label><br />
+  <!--(endif)-->
+    </p>
+  
+    <p>
+  <input type="submit" name="submit" value="<!--(submit_export)-->" />
+    </p>
+
+</form>
+
+

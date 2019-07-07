@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="iso-8859-2"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Security Procedures</title>
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+<link href="include/style.css" type="text/css" rel="StyleSheet" />
+</head>
+
+<body>
+
+
+<h1>
+    Security Procedures</h1>
+
+
+<div align="center">
+<table class="tableback">
+<tr>
+<td>
+<p class="justified">
+Passwords will not be stored directly in database. Only their MD5 signature will
+be stored. Each time user will try to log in, MD5 will be computed from his
+password and compared with the value in the database. This way, potential leak of
+database backup will not compromise user passwords.</p>
+<p><b>There will be user levels:</b> unknown (lowest), tr1, admin (highest) </p>
+<p class="justified">Database login will depend on user type. Page header will  establish
+the database connection using an account for given user type (db_unknown, db_tr1,
+db_admin - <a href="files/db_access.txt">account specifications</a>). Each user type will have a
+dedicated account with rights restricted
+to those which are needed to perform actions for given user type. For example,
+unknown user will have db_unknown account allowing only selects over database,
+updates or inserts to translations table and nothing
+more. </p>
+<p class="justified">Before calling the header, each page should set value $s_user_level, the
+minimal user level required to access this page. Header will check if current
+logged user has level equal or higher and continue with page display or redirect
+user back to main.php if user level is incorrect. If value will not be not set,
+unknown will be used as default.<p class="justified">Installed server modules
+will be restricted only to those which are needed to run SimuTranslator to
+prevent attacks through buggy modules.</td>
+</tr>
+</table>
+</div>
+
+<p>
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+</p>
+
+<div style="text-align: center">
+<hr width="90%" />
+<p class="ending">
+<br />
+
+<b>SimuTranslator:</b> &copy;2004-2005 <a href="team.htm">SimuTranslator Team</a><br />
+<b>Documentation:</b> &copy;2004-2005 <a href="http://www.tomaskubes.net">Tom&aacute;&scaron; Kube&scaron;</a><br />
+<a href="index.htm">SimuTranslator documentation home</a>
+<br />&nbsp;
+</p>
+<hr width="90%" />
+</div>
+
+</body>
+</html>

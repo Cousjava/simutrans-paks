@@ -1,0 +1,39 @@
+--------------------------------
+#	PAK128.german
+#	Bäume
+#	Neu:12.08.2018
+---------------------------------
+Obj=tree
+Name=Kiefer
+Copyright=NNW
+seasons=2
+DistributionWeight=23
+climates=desert,tropic,mediterran
+Image[0][0]=kiefer.0.0,0,-15
+Image[1][0]=kiefer.0.1,0,-15
+Image[2][0]=kiefer.0.2,0,-15
+Image[3][0]=kiefer.0.3,0,-15
+Image[4][0]=kiefer.0.4,0,-15
+Image[0][1]=kiefer.1.0,0,-15
+Image[1][1]=kiefer.1.1,0,-15
+Image[2][1]=kiefer.1.2,0,-15
+Image[3][1]=kiefer.1.3,0,-15
+Image[4][1]=kiefer.1.4,0,-15
+---------------------------------
+Obj=tree
+Name=Kiefer_Alm
+Copyright=NNW
+seasons=2
+DistributionWeight=50
+climates=temperate,tundra,rocky
+Image[0][0]=kiefer.0.0,0,-15
+Image[1][0]=kiefer.0.1,0,-15
+Image[2][0]=kiefer.0.2,0,-15
+Image[3][0]=kiefer.0.3,0,-15
+Image[4][0]=kiefer.0.4,0,-15
+Image[0][1]=kiefer.1.0,0,-15
+Image[1][1]=kiefer.1.1,0,-15
+Image[2][1]=kiefer.1.2,0,-15
+Image[3][1]=kiefer.1.3,0,-15
+Image[4][1]=kiefer.1.4,0,-15
+---------------------------------

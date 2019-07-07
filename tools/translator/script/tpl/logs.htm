@@ -1,0 +1,56 @@
+<!--(if:value_message)-->
+  <p class="red">
+  <!--(list:messages)-->
+  <!--(item)-->
+    <!--(message)--><br />
+  <!--(enditem)-->
+  <!--(endlist)-->
+  </p>
+  <HR>
+<!--(endif)-->
+
+<h1 class="pagename"><!--(page_title)--></h1>
+
+<form enctype="multipart/form-data" id="obj_s" action="?" method="post">
+
+<b><!--(token:field_titel)-->:</b><br />
+
+<!--(if:select_box_version)-->
+  <select name="version" onchange="document.getElementById('obj_s').submit();">
+  <!--(list:box_entry)-->
+      <!--(item)-->
+     	<option value="<!--(token:opt_value)-->" <!--(token:opt_select)-->><!--(token:opt_name)--></option>
+	<!--(enditem)-->
+  <!--(endlist)-->  
+  </select>
+<!--(endif)-->
+
+<input type="submit" name="obj_s" value="<!--(submit)-->" /></p>
+
+<br>
+
+<!--(if:log_table)-->
+  <hr>
+  <h2><!--(version_name)--></h2>
+  <a href="<!--(file)-->" target="_blank">set_<!--(version)-->.log</a><br>
+  <b><!--(count)--><br></b>
+  <br>
+  <table width="100%" align="center" cellspacing="5">
+  <tr><th>&nbsp</th><th><!--(date)--></th><th><!--(user_name)--></th><th><!--(obj_typ)--></th>
+  <th><!--(obj_name)--></th><th><!--(lang)--></th><th>&nbsp</th></tr>
+  <!--(list:line)-->
+    <!--(item)-->
+      <tr><td><b><!--(nr)--></b></td>
+      <td><!--(date)--></td>
+      <td><!--(user_name)--></td>
+      <td><!--(obj_typ)--></td>
+      <td><!--(obj_name)--></td>
+      <td><!--(lang)--></td>
+      <td><!--(action)--></td></tr>
+    <!--(enditem)-->
+  <!--(endlist)-->
+  </table>
+<!--(endif)-->
+
+
+</form>

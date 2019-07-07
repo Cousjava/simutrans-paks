@@ -1,0 +1,27 @@
+Obj=program_text
+Name=desert
+Note=Klimazone "Desert ist Küste"
+---------------------
+Obj=program_text
+Name=tropic
+Note=Klimazone "tropic ist Norddt. Tiefland"
+---------------------
+Obj=program_text
+Name=mediterran
+Note=Klimazone "mediterran ist Ostdeutschland"
+---------------------
+Obj=program_text
+Name=temperate
+Note=Klimazone "temperate ist Mittelgebirge"
+---------------------
+Obj=program_text
+Name=tundra
+Note=Klimazone "tundra ist Alpenvorland"
+---------------------
+Obj=program_text
+Name=rocky
+Note=Klimazone "rocky ist Alpines Klima"
+---------------------
+Obj=program_text
+Name=arctic
+Note=Klimazone "arctic ist Gletscherzone"

@@ -1,0 +1,44 @@
+<h1 class="pagename"><!--(page_title)--></h1>
+
+<div>
+
+<!--(if:submit_ok)-->
+	<p><font color="Green">
+		<!--(submit_ok)-->
+	</font></p>
+<!--(endif)-->
+
+<!--(if:err_message)-->
+	<p><font color="Red">
+	<!--(err_message)-->
+	</font></p>
+<!--(endif)-->
+
+<!-- display notice: for a response you have to wait 2 or 3 days -->
+<!--(wait_for_response)-->
+<form name="Mitteilung" action="?lang=<!--(lang)-->&page=contact" method="post">
+
+<!--(if:lm)-->
+    <input type="hidden" name="lm" value="1" />
+    <input type="hidden" name="mlang" value="<!--(value_lm_lang)-->" />
+    <input type="hidden" name="mset" value="<!--(value_lm_set)-->" />
+<!--(endif)-->
+
+<table align="center">
+<tr><td><!--(bez_sender_name)-->: </td><td><input type="text" id="Absender_name" name="Absender_name" size="50" value="<!--(sender_name)-->"></td></tr>
+<tr><td><!--(bez_sender_mail)-->: </td><td><input type="text" id="Absender_mail" name="Absender_mail" size="22" value="<!--(sender_adress)-->">@<input type="text" id="Absender_domain" name="Absender_domain" size="20" value="<!--(sender_domain)-->"></td></tr>
+</table> 
+
+<p>
+<textarea name="textarea" rows="10" cols="60" wrap="virtual"><!--(textarea)--></textarea>
+<p>
+<input type="submit" name="send" value="<!--(button_send)-->">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="reset" value="<!--(button_reset)-->">
+</p>
+
+</form>
+</div>
+
+<!--(include:info_box)-->
+

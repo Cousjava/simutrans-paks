@@ -1,0 +1,38 @@
+--------------------------------
+#	PAK128.german
+#	Bäume
+#	Neu:	04.08.2018 NNW
+#	Letzte Bearbeitung: $Date: 2018-08-11 12:40:25 +0200 (Sa, 11. Aug 2018) $ - $Author: nnw $
+#	Ersetzt den Hochbreit_Shunter von Mhz
+---------------------------------
+Obj=tree
+Name=Hochbreit_Shunter
+Copyright=NNW
+seasons=5
+DistributionWeight=77
+climates=tropic,mediterran,temperate
+Image[0][0]=trauerweide.0.0
+Image[1][0]=trauerweide.0.1
+Image[2][0]=trauerweide.0.2
+Image[3][0]=trauerweide.0.3
+Image[4][0]=trauerweide.0.4
+Image[0][1]=trauerweide.1.0
+Image[1][1]=trauerweide.1.1
+Image[2][1]=trauerweide.1.2
+Image[3][1]=trauerweide.1.3
+Image[4][1]=trauerweide.1.4
+Image[0][2]=trauerweide.2.0
+Image[1][2]=trauerweide.2.1
+Image[2][2]=trauerweide.2.2
+Image[3][2]=trauerweide.2.3
+Image[4][2]=trauerweide.2.4
+Image[0][3]=trauerweide.3.0
+Image[1][3]=trauerweide.3.1
+Image[2][3]=trauerweide.3.2
+Image[3][3]=trauerweide.3.3
+Image[4][3]=trauerweide.3.4
+Image[0][4]=trauerweide.4.0
+Image[1][4]=trauerweide.4.1
+Image[2][4]=trauerweide.4.2
+Image[3][4]=trauerweide.4.3
+Image[4][4]=trauerweide.4.4

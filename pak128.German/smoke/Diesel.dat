@@ -1,0 +1,13 @@
+--------------------------------
+#	PAK128.german
+#	Rauch
+#	Neu:01-2011
+---------------------------------
+Obj=smoke
+Name=smoke_diesel
+Image[0]=misc-smoke-128.0.0
+Image[1]=misc-smoke-128.0.1
+Image[2]=misc-smoke-128.0.2
+Image[3]=misc-smoke-128.0.3
+Image[4]=misc-smoke-128.0.4
+----------------------

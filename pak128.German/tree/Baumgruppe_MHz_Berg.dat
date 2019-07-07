@@ -1,0 +1,39 @@
+--------------------------------
+#	PAK128.german
+#	Bäume
+#	Neu:01-2011
+#	Letzte Bearbeitung 
+#    10-08-2015 The Transporter
+---------------------------------
+Obj=tree
+Name=Baumgruppe_MHz_Berg
+copyright=MHz
+seasons=5
+DistributionWeight=30
+climates=tundra
+Image[0][0]=Baumgruppe_MHz.0.1,0,-13
+Image[1][0]=Baumgruppe_MHz.0.2,0,-16
+Image[2][0]=Baumgruppe_MHz.0.3,0,-4
+Image[3][0]=Baumgruppe_MHz.0.4,0,-28
+Image[4][0]=Baumgruppe_MHz.0.5,0,-24
+Image[0][1]=Baumgruppe_MHz.1.1,0,-12
+Image[1][1]=Baumgruppe_MHz.1.2,0,-16
+Image[2][1]=Baumgruppe_MHz.1.3,0,-14
+Image[3][1]=Baumgruppe_MHz.1.4,0,-29
+Image[4][1]=Baumgruppe_MHz.1.5,0,-23
+Image[0][2]=Baumgruppe_Mhz1.4.3,0,-24
+Image[1][2]=Baumgruppe_Mhz1.4.3,0,-24
+Image[2][2]=Baumgruppe_Mhz1.4.3,0,-24
+Image[3][2]=Baumgruppe_Mhz1.4.3,0,-24
+Image[4][2]=Baumgruppe_Mhz1.4.3,0,-24
+Image[0][3]=Baumgruppe_MHz.3.1,0,-13
+Image[1][3]=Baumgruppe_MHz.3.2,0,-16
+Image[2][3]=Baumgruppe_MHz.3.3,0,-15
+Image[3][3]=Baumgruppe_MHz.3.4,0,-28
+Image[4][3]=Baumgruppe_MHz.3.5,0,-24
+Image[0][4]=Baumgruppe_MHz.2.1,0,-14
+Image[1][4]=Baumgruppe_MHz.2.2,0,-14
+Image[2][4]=Baumgruppe_MHz.2.3,0,-14
+Image[3][4]=Baumgruppe_MHz.2.4,0,-27
+Image[4][4]=Baumgruppe_MHz.2.5,0,-24
+---------------------------------------

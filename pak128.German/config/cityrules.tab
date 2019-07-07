@@ -16,10 +16,10 @@ minimum_city_distance = 48
 
 # if the area covered by buldings is less than this, the city borders will not increase => more compact cities,
 # not fading out along a single street (default: 25) 
-minimum_building_density = 1
+minimum_building_density = 20
 
 # chance for renovation versus new building (bigger number => less sprawling)
-renovation_percentage = 9
+renovation_percentage = 2
 
 #
 # relative affinities for certain building types which can lead to clustering of certain building types

@@ -1,0 +1,24 @@
+--------------------------------
+#	PAK128.german
+#	Bäume
+#	Neu:01-2011
+#	Letzte Bearbeitung 
+#    10-08-2015 The Transporter
+---------------------------------
+Obj=tree
+Name=Tanne_klein
+Copyright=TonyBZT
+seasons=2
+DistributionWeight=28
+climates=temperate,mediterran,tundra
+Image[0][0]=Tanne3.0.0,0,-11
+Image[1][0]=Tanne3.0.1,0,-12
+Image[2][0]=Tanne3.0.2,0,-13
+Image[3][0]=Tanne3.0.3,0,-11
+Image[4][0]=Tanne3.0.4,0,-12
+Image[0][1]=Tanne3.4.0,0,-10
+Image[1][1]=Tanne3.4.1,0,-11
+Image[2][1]=Tanne3.4.2,0,-12
+Image[3][1]=Tanne3.4.3,0,-12
+Image[4][1]=Tanne3.4.4,0,-12
+----------------------------------

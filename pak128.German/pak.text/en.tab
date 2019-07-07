@@ -9,7 +9,7 @@
 #                             Language: en English                             #
 #                             Encoding: ISO-8859-1                             #
 #                             Font: Prop-Latin1.bdf                            #
-#                           Date Created: 28.01 2019                           #
+#                           Date Created: 30.06 2019                           #
 #                                                                              #
 ################################################################################
 #____________________________bridge - monorail_track____________________________
@@ -54,24 +54,8 @@ water_bridge
 Canalbridge
 #___________________________________building____________________________________
 #___________________________________building____________________________________
-COM_ALL_1990_A_00
-Juweler\nSparkling and jewelry for the wive or beloved.
-COM_alte_Post_Berlin_02
-"Alte Post" (Berlin)
-COM_Telekom_Hochhaus_Bielefeld_39
-Telekom Tower (Bielefeld)
-COM_Werbetafel_04
-Advertising Panel
-IND_ALL_1983_A_02
-Building Lot.A new industrial plant will built here. 
-IND_ALP_1801_B_01
-Urban Pasture for the luv cattle. 
 MonorailGround
 Monorail-track
-Rathaus_Groetzingen_01_CITY
-Townhall
-Rathaus_Wieslet_01_CITY
-Townhall
 #________________________________building - com_________________________________
 #________________________________building - com_________________________________
 COM_ALL_1800_A_01
@@ -98,6 +82,20 @@ COM_ALL_1980_Baustelle_Animation_02
 Building lot 
 COM_ALL_1984_A_02
 Construction plant. 
+COM_ALL_1990_A_01
+Juweler\nSparkling and jewelry for the wive or beloved.
+COM_ALL_1990_A_44
+TrepTower Berlin
+COM_ALL_1997_A_48
+Commerbank Tower\n\nFrankfurt/Main
+COM_ALL_2000_A_32
+Main-Tower          \n\nIs in Frankfurt am Main and only 200 meters high.
+COM_ALL_2001_A_38
+KölnTurm            \n\nStands in a city on the Rhine and since 2001 represents the highest office building in the city.
+COM_ALL_2005_A_10
+Art Museum Stuttgart
+COM_ALL_Werbetafel_04
+Advertising Panel
 COM_ALP_1801_A_02
 Garage for agriculture Utility. 
 COM_ALP_1801_A_04
@@ -292,6 +290,8 @@ COM_NDT_2004_A_10
 The White Cube ? Appartmentbuilding with Restaurant & Cafe in the Mainfloor. 
 COM_NDT_2005_A_18
 After the round silo has lost its function in 1931, a restaurant / bistro moves in. 
+COM_NDT_Telekom_Hochhaus_Bielefeld_39
+Telekom Tower (Bielefeld)
 COM_ODL_1800_A_02
 Church 
 COM_ODL_1800_A_04
@@ -328,6 +328,8 @@ COM_ODL_1990_A_02
 Building pit 
 COM_ODL_1999_A_10
 EMSO Private clinic - Department of Orthopaedics and Sports Medicine. Here were already top athletes bounce back on the feets. 
+COM_ODL_alte_Post_Berlin_02
+"Alte Post" (Berlin)
 #________________________________building - cur_________________________________
 #________________________________building - cur_________________________________
 ALP_Tivoli
@@ -514,12 +516,6 @@ alter_Bahnhof_Sonneberg
 Old Station (Sonneberg)
 BahnhofLauingen
 Trainstation Lauingen
-Bahnsteig_Ampersand
-Platform (both-sided)
-Bahnsteig_Ampersand2
-Platform (both-sided)
-Bahnsteig_Doppelgleis
-Platform - double track
 Bretterverladung
 Plank-Shipping
 BZT_Kohlenbansen-ext
@@ -544,8 +540,6 @@ Frachthalle_Gera
 Freightterminal (Gera)
 GrosserTank
 Oiltank
-Gueterbahnhof_klein
-Cargo-Station
 Gueterhalle
 Warehouse
 Holzverladung
@@ -578,8 +572,6 @@ Lotsenhaus_Hamburg
 Pilothouse Hamburg
 Lotsenstation_Warnemuende
 Pilotstation Warnemünde
-Nebenstrecken-Bahnhof
-Branchline-Station
 Parkplatz
 Park- & Ride-Parkinglot
 Portalkran_Holz_1985
@@ -598,8 +590,6 @@ Schuettgutverladung_1
 Bulk-Dock with Excavator
 Schuettgutverladung_2
 Bulk-Dock
-SiloBhf
-Station with Silo
 Stahlverladung
 Steel-shipping
 Stellwerk1
@@ -608,12 +598,8 @@ Tower_Dortmund
 Tower (Dortmund)
 Tower_Fuhlsbuettel
 Tower (Fuhlsbüttel)
-U-Bahnhof_Marienplatz
-Underground-Station (Marienplatz)
 VictorianStation
 Victorian Station
-Wasserkran
-Watercrane
 Wasserturm_BW_Heidelberg
 Watertower Heidelberg
 Zeppelin-Ankermast_Staaken
@@ -652,6 +638,8 @@ HQ(7)
 #________________________________building - ind_________________________________
 IND_ALL_1800_A_01
 Fenced Sheep Pasture - In winter, the animals are naturally in a warm and cozy barn. 
+IND_ALL_1984_A_02
+Building Lot.A new industrial plant will built here. 
 IND_ALL_Gerberei_06
 Tannery
 IND_ALP_1800_A_01
@@ -662,6 +650,8 @@ IND_ALP_1800_A_04
 Mason - Here, will the longevity set in stone. From the grave stone to the prestigious kitchen countertop. 
 IND_ALP_1800_A_05
 Who live in the immediate vicinity, should love country air.... 
+IND_ALP_1800_B_01
+Urban Pasture for the luv cattle. 
 IND_ALP_1801_B_04
 The Beekeeping of the Goldwabe family produces the tastiest honey far and wide. 
 IND_ALP_1801_C_04
@@ -832,8 +822,6 @@ Team 128.german
 #________________________________building - res_________________________________
 RES_ALL_1700_Gerberbruch_3_04
 Residential Building
-RES_ALL_1733_Wohnstallhaus_Beuren_00
-Wohnstallhaus-Beuren
 RES_ALL_1800_A_01
 A small House\n from the century turn with pale Facade 
 RES_ALL_1800_A_02
@@ -1270,6 +1258,12 @@ BahnhofHochbahn
 Elevated Station
 BahnhofHochbahn2
 Elevated Station
+Bahnsteig_Ampersand
+Platform (both-sided)
+Bahnsteig_Ampersand2
+Platform (both-sided)
+Bahnsteig_Doppelgleis
+Platform - double track
 Bahnsteig_mit_Glasdach
 Platform with Glassroof
 Bahnsteig_mit_Glasdach_NO
@@ -1294,6 +1288,8 @@ Dammtor-Bhf
 Station-hall
 EG Hochbahn - nur auf Gleis
 Elevated Stop
+Gueterbahnhof_klein
+Cargo-Station
 ISO_Verladung
 Container-dock
 LKW_Laderampe_1
@@ -1314,6 +1310,8 @@ Monorail_Bahnhof
 Monorailstation
 Monorail_Bahnhof_hoch
 Monorail Station-Elevated
+Nebenstrecken-Bahnhof
+Branchline-Station
 Plattform
 Cargoplatform
 PlattformPers
@@ -1348,68 +1346,78 @@ Schwebebahnhof96
 Small Monorailstation
 Silo_Ladeplatz
 Silo-Loading-dock
+SiloBhf
+Station with Silo
 small_early_bus_stop
 Simple stop
 Suspended_Monorail_Bahnhof_Modern
 Monorailstation
+U-Bahnhof_Marienplatz
+Underground-Station (Marienplatz)
 Ueberdachter_Bushalt_1932
 Roofed Busstop 1932
 Ueberdachter_Bushalt_1957
 Roofed Busstop 1957
 Ueberdachter_Bushalt_1993
 Roofed Busstop 1993
+Wasserkran
+Watercrane
 #________________________________building - tow_________________________________
 #________________________________building - tow_________________________________
 ODL_Rath_Stralsund_00
-Ostdt. Rathaus
+Townhall Stralsund level 14
 ODL_Rath_Stralsund_08
-Rathaus (Stralsund)
+Townhall Stralsund level 17
 ODL_Rath_Stralsund_11
-Rathaus (Stralsund)
+Townhall Stralsund level 22
 ODL_Rath_Stralsund_16
-Rathaus (Stralsund)
+Townhall Stralsund level 32
 ODL_Rath_Stralsund_23
-Ostdt. Rathaus (Stralsund)
+Townhall Stralsund level 38
 ODL_Rathaus_Grimmen
-Ostdt. Rathaus
+Townhall Grimmen level 12
 Rathaus_Alp_alt
-altes Alpenrathaus
+Townhall Mountain level 3
 Rathaus_Alp_gross
-Großes Alpenrathaus
+Townhall Mountain level 58
 Rathaus_Alp_klein
-Kleines Alpenrathaus
+Townhall Mountain level 5
 Rathaus_Alp_mittel
-Alpenrathaus
+Townhall Mountain level 25
 Rathaus_AVL_alt_gross
-süddt. altes Rathaus
+Townhall old level 58
 Rathaus_AVL_alt_klein
-süddt. kleines Rathaus
+Townhall old level 20
 Rathaus_AVL_modern_gross
-süddt. Großstadtrathaus
+Townhall modern level 50
 Rathaus_Grimma_00
-Rathaus
+Townhall Grimma level 12
 Rathaus_Grimma_04
-Rathaus
+Townhall Grimma level 20
 Rathaus_Grimma_10
-Rathaus
+Townhall Grimma level 30
 Rathaus_Grimma_13
-Rathaus
+Townhall Grimma level 42
+Rathaus_Groetzingen
+Townhall Grötzingen
 Rathaus_Hennigsdorf_01
-Rathaus (modern)
+Townhall Hennigsdorf level 14
 Rathaus_Hennigsdorf_04
-Rathaus (modern)
+Townhall Hennigsdorf level 20
 Rathaus_Hennigsdorf_09
-Rathaus (modern)
+Townhall Hennigsdorf level 26
 Rathaus_Hennigsdorf_17
-Rathaus (modern)
+Townhall Hennigsdorf level 32
 Rathaus_Hennigsdorf_26
-Rathaus (modern)
+Townhall Hennigsdorf level 35
 Rathaus_Lauingen1
-Rathaus Lauingen
+Townhall Lauingen
 Rathaus_Michelstadt
-Mittelgebirgsrathaus
+Townhall Michelstadt
 Rathaus_Recklinghausen
-Großes Mittelgebirgsrathaus
+Townhall Recklinghausen level 58
+Rathaus_Wieslet
+Townhall Wieslet
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
 Epoche1CityCar1
@@ -1457,15 +1465,21 @@ Gas station (alpine, 1950)
 factory_ALP_Tankstelle_NIC_details
 <title>SEMI Gas Station</title><p>This shop sells beside diesel and petrol, car accessories and -care products.</p>
 ALP_Viehhof_NIC
-Cattleyard (alpine)
+outdated do not use
 factory_ALP_Viehhof_NIC_details
+<title>Cattleyard (alpine)</title><p>This cattle farm with its eggs laying cows serves only the compatibility to old save games. Do not build new.</p>
+ALP_Viehhof_NIC_2
+Cattleyard (alpine)
+factory_ALP_Viehhof_NIC_2_details
 <title>Stock yard Untermoser</title><p>The family Untermoser is a cattle breeder in the 4th generation.</p>
 alte Raffinerie
-Raffinerie (1905)
+Refinery (1905)
 factory_alte Raffinerie_details
 <title>Petroleum Refinery</title><p>A petroleum refinery extract's from the raw material petroleum by distillation, fraction and extraction, using pressure and vacuum, fuels, lubricating oils, asphalt as well as various plastic starting products.</p>
 alte_Kfz-Fabrik
-Kfz-Fabrik (1905)
+Car Fab (1905)
+factory_alte_Kfz-Fabrik_details
+<title>Lemuria AG</title><p>The Lemuria Corp produces elegant sportscars, Cabrios and good Family Cars.</p>
 alte_Lebensmittelfabrik
 Foodfabrik (1892)
 factory_alte_Lebensmittelfabrik_details
@@ -1616,10 +1630,6 @@ BaeckereiGadebusch_NIC
 Bakery (Northgerm. 1920]
 factory_BaeckereiGadebusch_NIC_details
 <title>Industrial bakery</title><p>Here were made bread rolls, pastries and delicious breads from early morning until late.</p>
-Bauernhof_NIC
-Bauernhof
-factory_Bauernhof_NIC_details
-<title>Farmyard</title><p>A farm with stable. So that dear cattle does not freeze when it rains or snows.</p>
 Bauernhof_Tierfutter
 Tierfutterproduzent (Norddt.
 Baumarkt_NIC
@@ -1784,12 +1794,8 @@ Kaufhaus_NIC
 Mall
 factory_Kaufhaus_NIC_details
 <title>Large north-german Warehouse</title><p>A department store is a single or wholesale shop that, in contrast to the "Simple Shop", Goods of all kind on mostly several floors for sale offers.</p>
-KFZ_Fabrik_NIC
-Car Fab
-factory_KFZ_Fabrik_NIC_details
-<title>Lemuria AG</title><p>The Lemuria Corp produces elegant sportscars, Cabrios and good Family Cars.</p>
 Kfz_Fabrik1961
-Car-Fab (1961)
+Car Fab (1961)
 Kiesgrube
 Quarry (1993)
 factory_Kiesgrube_details
@@ -1973,7 +1979,7 @@ Pharmaceutical Factory
 factory_Pharmawerk_NIC_details
 <title>LEM-Pharmacy Plant</title><p>Here will medicines and supplementary preparations produced.</p>
 Raffinerie_NIC
-Raffinery (1961)
+Refinery (1961)
 factory_Raffinerie_NIC_details
 <title>LEM-Petro Ltd.</title><p>A petroleum refinery extract's from the raw material petroleum by distillation, fraction and extraction, using pressure and vacuum, fuels, lubricating oils, asphalt as well as various plastic starting products.</p>
 Saegewerk_NIC
@@ -2062,10 +2068,18 @@ Verpackungshersteller
 Package Factory
 Verpackungsmittelfabrik_1909
 Packaging Supplies Factory
+Versandhandel_1886
+Mail order company 1886
+factory_Versandhandel_1886_details
+<title> Mail order company Mey & Edlich </title> <p> in Leibzig is the oldest and still active mail-order business. When it comes to mail order, customers do not go to the market to buy, but choose their desired products in newspaper advertisements or in catalogs. They order this by letter and then get the goods delivered by parcel post. Therefore, a mail order depended on a well-functioning postal system. The letters with the orders must be reliably delivered to the factory. As well as the packages are delivered. Also here in the game, the mail order works only with a good post connection. Clothing, stationery and small machines are ideal for the mail order, as they can be sent well in packages. They are not perishable, light and of high quality. </p>
 Viehhof_NIC
-Cattlehof (1919)
+outdated do not use
 factory_Viehhof_NIC_details
-<title>Stockyard Graimelmeyer</title><p>A southgerman stockyard.</p>
+<title>Cattlehof (1919)</title><p>This cattle farm with its eggs laying cows serves only the compatibility to old save games. Do not build new.</p>
+Viehhof_NIC_2
+Cattlehof (1919)
+factory_Viehhof_NIC_2_details
+<title>Farmyard</title><p>A farm with stable. So that dear cattle does not freeze when it rains or snows.</p>
 VWAutohaus_NIC
 VW-Autohaus
 factory_VWAutohaus_NIC_details
@@ -2376,7 +2390,7 @@ Privatroad
 #_______________________________roadsign - track________________________________
 Auswahl_Ende_Schild
 End of Choose
-Auswahlsignal
+Auswahlsignal_hv
 Choose Signal
 ChooseSignal
 Choose Signal
@@ -2384,18 +2398,18 @@ Richtungssignal_frei
 Direction signal free
 Richtungssignal_stop
 Direction signal stop
-Signal
+Signal_hv
 Standardsignal
 Signals
 Formsignal
 Streckensignal (Longblock)
-Longblock Lightsignal
-Streckensignal modern (Longblock)
+Longblock form signal
+Streckensignal_hv_longblock
 Longblocksignal
-Vorsignal (Zweiblocksignal)
-Presignal (2-Block)
 Vorsignal_alt
 Old Presignal
+Vorsignal_hv
+Presignal (2-Block)
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Baumgruppe_MHz

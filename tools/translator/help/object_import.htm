@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+        <title>SimuTranslator Help - Object Management - Object Import</title>
+        <meta name="Description" content="SimuTranslator Help - Object Management - Object Import" />
+        <meta name="Keywords" content="SimuTranslator, Manual, Help, User Guide" />
+        <meta name="Author" content="Tomáš Kubeš" />
+
+	<!-- for all -->
+	<link href="include/st_help.css" type="text/css" rel="StyleSheet"/>
+
+	<link href="include/st_help_disp.css" type="text/css" rel="StyleSheet" media="screen"/>
+	<link href="include/st_help_print.css" type="text/css" rel="StyleSheet" media="print"/>
+    </head>
+
+
+<body>
+
+
+
+
+<!-- ======================= Logo and navigation bar ======================= -->
+<div id="header">
+
+    <a href="http://translator.simutrans.com/help/" title="SimuTranslator Help Home">
+	<img src="include/logo_help_sm.png" alt="SimuTranslator Help Home" width="210" height="40" id="logo" />
+    </a>
+
+
+    <div id="links">
+        <ul id="navigation">
+            <li><a href="index.htm" title="SimuTranslator Help Home">Main Menu</a></li>
+            <li><a href="browse_texts.htm" title="Help to find certain text">Browse Texts</a></li>
+            <li><a href="edit_texts.htm" title="Help with editation of texts">Edit Texts</a></li>
+            <li><a href="download_texts.htm" title="Help for text downloader">Download Texts</a></li>
+            <li><a href="upload_texts.htm" title="Help with text uploading">Upload Texts</a></li>
+            <li><a href="object_guide.htm" title="Help to find certain object">Object Guide</a></li>
+            <li><a href="object_management.htm" title="Sub menu for set maintainers">Manage Objects</a></li>
+            <li><a href="preferences.htm" title="Help with customization">Preferences</a></li>
+            <li><a href="administration.htm" title="Help for administrators">Administration</a></li>
+            <li><a href="contacts.htm" title="Ask developers">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="hr_bar">
+	<hr />
+    </div>
+
+</div>
+
+
+
+
+<!-- ============================== Help Text ============================== -->
+<div id="main_text" class="bckg_buildings5">
+
+
+    <h1>Object Import</h1>
+
+    <p>
+    Uploads new objects to the set. There is no undo.
+    Please be very careful when selecting target set.
+    <strong>Mistake can damage lot of data and can be hard to undo.</strong>
+    </p>
+
+    <p>
+    If you upload new object of the same name and type to the set,
+    old object is replaces by new upload.
+    If more object of the same name are uploaded at once, result is undefined (one object will prevail).
+    If you need to import Simutrans program base texts, please read <a href="object_import_bt.htm">additional information</a>.
+    </p>
+
+    <h3>Field Description</h3>
+
+    <ul class="wide">
+
+        <li><strong>Upload Type</strong> -  This field determines if images shall be uploaded or not.
+        Image upload is extremely slow. If you have made only small changes to object properties,
+        it makes no point to re-upload complete set of objects with images.
+        In this case, you will upload only dat files and choose <em>Dat Only</em>
+         - all existing images in the database will not be touched and they will be reconnected with newly uploaded objects of same name.
+        </li>
+
+        <li><strong>Comment Mode</strong> - This switch lets you to select the verbosity of object parser.
+        In the verbose mode object reader displays all properties of read objects.
+        This can be useful when you have some uncertainties about the corretnes of dat files and need to check if the upload was correct.
+        <br />
+        Quite mode displays only the list of objects imported. This option is only very slightly faster.
+        </li>
+    </ul>
+
+
+    <h3>Input File Specification</h3>
+
+    <p>
+    Inputfile: zipped(!) set of dat files and images. Zip archive will be searched and all found files ending with .dat will be analyzed.
+    Be careful if you have backup files in your archive - while MakeObj analyzes only the single directory,
+    SimuTranslator will process all found dat files - even those in subdirectories.
+    </p>
+
+    <p>
+    Translator is running on Linux machine, so file search is in general case sensitive.
+    Therefore it is advisable to create your dat files so that the image references respect
+    the case of image file paths. There is a workaround implemented for the case insensitive image file search
+    if normal search fails, this however applies to the image file names only, not to the preceding directories.
+    </p>
+
+
+    <h3>Upload Process</h3>
+
+    <p>(state from: 10-Feb-2006)</p>
+
+    <p>
+    All objects definitions are read from dat files (including images - depending on the options) and stored into the database.
+    By default old object is completely removed before new object is stored. Removal does not affect stored texts!
+    </p>
+
+    <p>
+    All attribute names are lowercased and trimmed from both sides during the import process.
+    </p>
+
+
+    <p>
+    Case of all attribute values is preserved, they are trimmed as well,
+    excluding one case - when reading attribute type "name" for object type (obj attribute) "program_text",
+    the name is not trimmed and treated as is (including extra spaces on both ends).
+    Trimming is done when the dat file is read, so the attribute obj must be read (stored in the file) before the attribute name to ensure this behavior.
+    </p>
+
+    <p>
+    If you need to import Simutrans program base texts, please read <a href="object_import_bt.htm">additional information</a>.
+    </p>
+
+    <p>
+    &nbsp;
+    </p>
+
+
+
+
+</div>
+<!-- =============================== Footer =============================== -->
+<div id="footer">
+
+    <div class="hr_bar">
+	<hr />
+    </div>
+
+    <div id="footer_text">
+        <p class="footer_p">
+            SimuTranslator: &copy;2004-2006 <a href="http://translator.simutrans.com/doc/team.htm">SimuTranslator Team</a><br />
+            Documentation: &copy;2004-2006 <a href="http://www.tomaskubes.net">Tom&aacute;&scaron; Kube&scaron;</a><br />
+            <a href="http://translator.simutrans.com/help/">SimuTranslator Help Home</a><br />
+            <a href="http://translator.simutrans.com">SimuTranslator</a><br />
+        </p>
+
+        <p class="footer_p">
+            <a href="http://validator.w3.org/check?uri=referer"><img
+            src="include/valid-xhtml10.png" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+        </p>
+    </div>
+
+    <hr />
+</div>
+
+
+</body>
+</html>

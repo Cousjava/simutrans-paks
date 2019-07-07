@@ -1,0 +1,220 @@
+obj=menu_text
+Name=AIRTOOLS
+Note=Flughafenbauwerkzeuge
+---------------------
+obj=menu_text
+Name=EDITTOOLS
+Note=Karteneditor
+---------------------
+obj=menu_text
+Name=LISTTOOLS
+Note=Listenverwaltung
+---------------------
+obj=menu_text
+Name=MAGLEVTOOLS
+Note=Magnetbahnbauwerkzeuge
+---------------------
+obj=menu_text
+Name=MONORAILTOOLS
+Note=Schwebebahnwerkzeuge
+---------------------
+obj=menu_text
+Name=NARROWGAUGETOOLS
+Note=Schmalspurbahnbauwerkzeug
+---------------------
+obj=menu_text
+Name=RAILTOOLS
+Note=Eisenbahnbauwerkzeuge
+---------------------
+obj=menu_text
+Name=ROADTOOLS
+Note=Straßenbauwerkzeuge
+---------------------
+obj=menu_text
+Name=SHIPTOOLS
+Note=Kanäle, Häfen und Werften
+---------------------
+obj=menu_text
+Name=SLOPETOOLS
+Note=Geländebauwerkzeuge
+---------------------
+obj=menu_text
+Name=SPECIALTOOLS
+Note=Spezialbauwerkzeuge
+---------------------
+obj=menu_text
+Name=TRAMTOOLS
+Note=Straßenbahnbauwerkzeuge
+---------------------
+obj=menu_text
+Name=UNDERGROUND
+Note=Untergrundbauwerkzeuge
+---------------------
+obj=program_text
+Name=CATEGORY_01
+Note=Stückgut
+---------------------
+obj=program_text
+Name=CATEGORY_02
+Note=Schüttgut
+---------------------
+obj=program_text
+Name=CATEGORY_03
+Note=Mineralöl
+---------------------
+obj=program_text
+Name=CATEGORY_04
+Note=Kühlwaren
+---------------------
+obj=program_text
+Name=CATEGORY_05
+Note=flüssige Lebensm.
+---------------------
+obj=program_text
+Name=CATEGORY_06
+Note=Nutzholz
+---------------------
+obj=program_text
+Name=CATEGORY_07
+Note=landw. Güter
+---------------------
+obj=program_text
+Name=CATEGORY_08
+Note=Siloware (lose)
+---------------------
+obj=program_text
+Name=CATEGORY_09
+Note=Unused
+---------------------
+obj=program_text
+Name=CATEGORY_10
+Note=Unused
+---------------------
+obj=program_text
+Name=Tonnen
+Note=t was ist jetzt richtig "Tonnen" ohne Blank vorne
+---------------------
+obj=program_text
+Name= Tonnen
+Note=t was ist jetzt richtig " Tonnen" mit Blank vorne
+---------------------
+obj=menu_text
+Name=Build air depot
+Note=Flughafenhangar
+---------------------
+obj=menu_text
+Name=build HQ
+Note=Firmensitz
+---------------------
+obj=menu_text
+Name=Build land consumer
+Note=Auf dem Land wird eine neue Industriekette gebaut
+---------------------
+obj=menu_text
+Name=Build maglev depot
+Note=Schwebebahndepot
+---------------------
+obj=menu_text
+Name=Build monorail depot
+Note=Schwebebahndepot
+---------------------
+obj=menu_text
+Name=Build narrowgauge depot
+Note=Schmalspurbahndepot
+---------------------
+obj=menu_text
+Name=Build powerline
+Note=Überlandleitung
+---------------------
+obj=menu_text
+Name=Build presignals
+Note=Zwei-Block-Signal
+---------------------
+obj=menu_text
+Name=Build road depot
+Note=Bus- und LKW-Depot
+---------------------
+obj=menu_text
+Name=Build ship depot
+Note=Schiffsdepot
+---------------------
+obj=menu_text
+Name=Build signals
+Note=Signale
+---------------------
+obj=menu_text
+Name=Build train depot
+Note=Bahndepot
+---------------------
+obj=menu_text
+Name=Build tram depot
+Note=Straßenbahndepot
+---------------------
+obj=menu_text
+Name=Build truck depot
+Note=Bus- und LKW-Depot
+---------------------
+obj=program_text
+Name=Schiffe
+Note=Ships	
+---------------------
+obj=program_text
+Name=fm
+Note=scm	
+---------------------
+obj=program_text
+Name=Paletten
+Note=Paletts	
+---------------------
+obj=program_text
+Name=Sack
+Note=Pouches	
+---------------------
+obj=program_text
+Name=Stck.
+Note=pcs.	
+---------------------
+obj=program_text
+Name=Tram_Electrification
+Note=Catenary	
+---------------------
+obj=program_text
+Name=preSignals
+Note=Presignal (Two blocks)	
+---------------------
+obj=program_text
+Name=End of ChooseSignal
+Note=End-of-Choose-Signal	
+---------------------
+obj=program_text
+Name=land stop
+Note=Landstation	
+---------------------
+obj=program_text
+Name=TrolleyBus_Electrification
+Note=Catenary for O-Bus	
+---------------------
+obj=program_text
+Name=ShipStop
+Note=Pier	
+---------------------
+obj=program_text
+Name=Long_Goods_Dock
+Note=Timber-pier	
+---------------------
+obj=program_text
+Name=Crate_Goods_Dock
+Note=Piece Good Dock
+---------------------
+obj=program_text
+Name=Make way or stop public (will join with neighbours), %i times maintainance
+Note=Erzeugen/verbinden mit öffentlichem Stop
+---------------------
+obj=program_text
+Name=upgrade HQ
+Note=Firmensitz modernisieren
+---------------------
+obj=program_text
+Name=\nBauzeit von
+Note=\nIm Spiel gebaut ab
+---------------------

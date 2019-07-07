@@ -1,0 +1,23 @@
+st_dbadmin (Privileges: SELECT, INSERT, UPDATE, DELETE, CREATE, REFERENCES,
+INDEX, LOCK TABLES)
+
+        PHP $dbh=mysql_connect ("localhost", "st_dbadmin", "<PASSWORD
+HERE>") or die ('I cannot connect to the database because: ' .
+mysql_error());
+        mysql_select_db ("st_translator");
+
+
+st_dbtr1 (Privileges: INSERT, UPDATE, REFERENCES, INDEX, CREATE TEMPORARY
+TABLES)
+
+        PHP $dbh=mysql_connect ("localhost", "st_dbtr1", "<PASSWORD HERE>")
+or die ('I cannot connect to the database because: ' . mysql_error());
+        mysql_select_db ("st_translator");
+
+
+st_dbunknown (Privileges: SELECT, INSERT, UPDATE, REFERENCES, INDEX)
+
+        PHP $dbh=mysql_connect ("localhost", "st_dbunknown", "<PASSWORD
+HERE>") or die ('I cannot connect to the database because: ' .
+mysql_error());
+        mysql_select_db ("st_translator");

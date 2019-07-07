@@ -1,0 +1,26 @@
+--------------------------------
+#	PAK128.german
+#	Bäume
+#	Neu:06-2014
+#	Letzte Bearbeitung 
+#    10-08-2015 The Transporter
+---------------------------------
+obj=tree
+name=Fichte1_gross
+copyright=RedRabbit
+seasons=2
+DistributionWeight=30
+climates=temperate,tundra
+image[0][0]=Fichte1_gross.0.1,0,-80
+image[1][0]=Fichte1_gross.1.1,0,-96
+image[2][0]=Fichte1_gross.2.1,0,-96
+image[3][0]=Fichte1_gross.3.1,18,-72
+image[4][0]=Fichte1_gross.4.1,0,-96
+image[0][1]=Fichte1_gross.0.2,0,-80
+image[1][1]=Fichte1_gross.1.2,0,-96
+image[2][1]=Fichte1_gross.2.2,0,-96
+image[3][1]=Fichte1_gross.3.2,18,-72
+image[4][1]=Fichte1_gross.4.2,0,-96
+--------------------------------------
+
+

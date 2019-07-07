@@ -1,0 +1,118 @@
+
+    <dialog id="edit<!--(id)-->" class="dialog_edit">
+        <form method="post" action="<!--(formlink)-->?obj_id=<!--(object_id)-->">         
+        <table id="tab_attr" border="1" align="center" width="90%" cellspacing="0" >
+          <tr class="tab_attr_head">
+            <th width="20%"><!--(gui_th1)--></th>
+            <th width="40%"><!--(gui_th2)--></th>
+            <th width="40%"><!--(gui_th3)--></th>
+          </tr>
+          <!--(list:object_data)-->
+          <!--(item)-->
+            <tr class="<!--(line_css)-->">
+              <td><nobr><!--(value_pname)--></nobr></td>
+              <td><!--(value_pvalue)--></td>
+              <td align="left">
+              <!--(if:input_field)-->
+                <input type="text" value="<!--(value_pvalue)-->" name="<!--(input_name)-->" size="<!--(size)-->" maxlength="255" />
+              <!--(endif)-->
+              <!--(if:text_field)-->
+                <textarea id="note_text" name="<!--(textfield_name)-->" cols="<!--(cols)-->" rows="<!--(rows)-->"><!--(value_textfield)--></textarea>
+              <!--(endif)-->
+             <!--(if:select_field)-->
+                <select name="<!--(select_name)-->">
+        
+                <!--(list:list_options)-->
+                <!--(item)-->
+                  <option value="<!--(opt_value)-->" <!--(opt_select)-->><!--(opt_name)--></option>
+                <!--(enditem)-->
+                <!--(endlist)-->  
+
+                </select>
+              <!--(endif)-->
+              </td>
+             </tr>
+          <!--(enditem)-->
+          <!--(endlist)-->
+        </table>
+        <p><p/>
+        <div width="95%" align="center">    
+        
+        <!--(if:prop_table_left)-->
+        <table id="tab_attr" border="1" width="45%" cellspacing="0" <!--(show_property)--> style="margin-left:3%;float:left;">
+          <tr class="tab_attr_head">
+            <th width="130"><!--(gui_th1)--></th>
+            <th><!--(gui_th2)--></th>
+            <th ><!--(gui_th3)--></th>
+          </tr>
+          <!--(list:parameter_data)-->
+          <!--(item)-->
+            <tr class="<!--(line_css)-->">
+              <td><nobr><!--(value_pname)--></nobr></td>
+              <td><!--(value_pvalue)--></td>
+              <td align="left" >
+              <!--(if:input_field)-->
+                <input type="text" value="<!--(value_pvalue)-->" name="<!--(input_name)-->" size="<!--(size)-->" maxlength="255">
+              <!--(endif)-->
+              <!--(if:select_field)-->
+                <select name='<!--(select_name)-->'>
+        
+                <!--(list:list_options)-->
+                <!--(item)-->
+                  <option value="<!--(opt_value)-->" <!--(opt_select)-->><!--(opt_name)--></option>
+                <!--(enditem)-->
+                <!--(endlist)-->  
+
+                </select>
+              <!--(endif)-->
+              </td>
+             </tr>
+          <!--(enditem)-->
+          <!--(endlist)-->
+        </table>
+        <!--(endif)-->
+        
+        <!--(if:prop_table_right)-->
+        <table id="tab_attr" border="1" width="45%" cellspacing="0" <!--(show_property)--> style="margin-left:52%;">
+          <tr class="tab_attr_head">
+            <th width="130"><!--(gui_th1)--></th>
+            <th><!--(gui_th2)--></th>
+            <th ><!--(gui_th3)--></th>
+          </tr>
+          <!--(list:parameter_data)-->
+          <!--(item)-->
+            <tr class="<!--(line_css)-->">
+              <td><nobr><!--(value_pname)--></nobr></td>
+              <td><!--(value_pvalue)--></td>
+              <td align="left" >
+              <!--(if:input_field)-->
+                <input type="text" value="<!--(value_pvalue)-->" name="<!--(input_name)-->" size="<!--(size)-->" maxlength="255">
+              <!--(endif)-->
+              <!--(if:select_field)-->
+                <select name='<!--(select_name)-->'>
+        
+                <!--(list:list_options)-->
+                <!--(item)-->
+                  <option value="<!--(opt_value)-->" <!--(opt_select)-->><!--(opt_name)--></option>
+                <!--(enditem)-->
+                <!--(endlist)-->  
+
+                </select>
+              <!--(endif)-->
+              </td>
+             </tr>
+          <!--(enditem)-->
+          <!--(endlist)-->
+        </table>
+        <!--(endif)-->
+        
+        </div>
+        <p>
+        <input type="hidden" name="obj_id" value="<!--(object_id)-->" />
+        <input type="hidden" name="index" value="<!--(value_index)-->"/>
+        <input type="submit" name="save_object" value="<!--(bez_save_object)-->" />
+        </p>
+        </form>
+        
+      <div id="close" title="<!--(bez_close)-->" class="close_dialog"><a href="#" title="<!--(bez_close)-->" alt="<!--(bez_close)-->">&#10060;</a></div>
+    </dialog>

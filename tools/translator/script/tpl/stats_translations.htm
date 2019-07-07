@@ -1,0 +1,110 @@
+<h1 class="pagename"><!--(page_title)--></h1>
+
+<div class="page">
+
+  <form enctype="multipart/form-data" action="?" method="post">      
+
+    <!--(include:form_fields_language)-->
+
+    <p>
+      <b><!--(gui_setselect)-->:</b><br />
+        <select name="set1">
+          <!--(list:set1)-->
+          <!--(item)-->
+            <option value="<!--(opt_value)-->" <!--(opt_select)-->><!--(opt_name)--> </option> 
+          <!--(enditem)-->
+          <!--(endlist)-->
+        </select>&nbsp;
+        <select name="set2"> 
+          <!--(list:set2)-->
+          <!--(item)-->
+            <option value="<!--(opt_value)-->" <!--(opt_select)-->><!--(opt_name)--> </option> 
+          <!--(enditem)-->
+          <!--(endlist)-->  
+        </select>&nbsp;
+        <select name="set3">
+          <!--(list:set3)-->
+          <!--(item)-->
+            <option value="<!--(opt_value)-->" <!--(opt_select)-->><!--(opt_name)--> </option> 
+          <!--(enditem)-->
+          <!--(endlist)-->  
+        </select>&nbsp;
+        <select name="set4">
+          <!--(list:set4)-->
+          <!--(item)-->
+            <option value="<!--(opt_value)-->" <!--(opt_select)-->><!--(opt_name)--> </option> 
+          <!--(enditem)-->
+          <!--(endlist)-->  
+        </select>
+
+      <p><input type="submit" name="list" value="<!--(gui_submit)-->" /></p>
+    </p>
+
+  </form>
+
+  <p>
+    <font class="stats-50"><!--(gui_translateinfo)--> < 50%</font> -|- 
+    <font class="stats95"><!--(gui_translateinfo)--> > 95%</font> -|- 
+    <font class="stats100"><!--(gui_translateinfo)--> = 100%</font>
+    <br />* = <!--(gui_translateinfo2)-->
+  </p>
+
+  <table class="classic translate_stats" style="display:<!--(listtable)-->" align="center" cellpadding="2" cellspacing="0">
+    <tr>
+    <th class="type"><!--(gui_table_head_language)--></th>
+
+    <!--(list:table_head_sets)-->
+    <!--(item)-->
+        <th class="type">
+        <!--(setname)--> <br /> <!--(gui_objets)-->: <!--(obj_count)-->
+        </th>
+    <!--(enditem)-->
+    <!--(endlist)-->  
+
+    <th class="type">
+    <nobr><!--(gui_table_head_total)--> <!--(gui_table_head_obj)-->:</nobr> <br /> <!--(total_obj_count)-->
+    </th>
+
+    <th class="type"><!--(gui_table_head_translators)--></th>
+    </tr>
+
+    <tr>
+    <td class='classic'> &nbsp; </td>
+    <!--(list:table_head2_sets)-->
+    <!--(item)-->
+      <td class='classic'><nobr><!--(gui_table_head2)--></nobr></td>
+    <!--(enditem)-->
+    <!--(endlist)-->  
+    <td class='classic'><nobr><!--(gui_table_head2)--></nobr></td>
+    <td class='classic'> &nbsp; </td>
+    </tr>
+
+    
+    <!--(list:tablerow_language)-->
+    <!--(item)-->
+      <tr>
+      <td class="<!--(style)-->"><!--(language)--></td>
+        <!--(list:tablerow_sets)-->
+        <!--(item)-->
+          <td class="<!--(style)--> <!--(fontcolor)-->"><!--(fielditem)--></td>
+        <!--(enditem)-->
+        <!--(endlist)-->  
+      <td class="<!--(style)--> <!--(fontcolor)-->"><!--(total)--></td>
+      <td class="<!--(style)--> <!--(fontcolor)-->"><!--(translators)--></td>
+      </tr>
+    <!--(enditem)-->
+    <!--(endlist)-->  
+
+
+  </table>
+
+  <h3 class='center'><!--(full_stats)--></h3>
+
+  <!--(include:info_box)-->
+
+  <div class='submenu'>
+    <h3 class='center'><a href='<!--(submenu1_link)-->'><!--(submenu1)--></a></h3>
+    <h3 class='center'><a href='<!--(submenu2_link)-->'><!--(submenu2)--></a></h3>
+  </div>
+
+</div>

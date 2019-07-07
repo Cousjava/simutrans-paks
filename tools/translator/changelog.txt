@@ -1,0 +1,774 @@
+20-Aug-2018 Makie :
+
+    *CHG: show image edit page 
+       
+19-Aug-2018 Frank Penz :
+
+    *CHG: page 'user preferences' to tpl support 
+       
+16-Aug-2018 Frank Penz :
+
+    *ADD: page for create text object 
+       
+10-Aug-2018 Frank Penz :
+
+    *CHG: sub select by all objects include parameter waytype in 'Object Guide' ( directions.php )
+       
+09-Aug-2018 Frank Penz :
+
+    *CHG: dialog window for edit object data ( page edit.php - edit translate )
+    *FIX: disabled languages for sets    
+
+03-Mar-2018 Frank Penz :
+
+    *CHG: overlay img window for help images   
+
+24-Feb-2018 Frank Penz :
+
+    *ADD: more compact view for edit page for short texts 
+    *CHG: rename dummy_info to factory_info   
+    
+30-Jan-2018 Makie
+   *FIX: edit index in search-result lost by update
+   *CHG: import get tile size out of _pakmak.tab
+   *CHG: import ignores dir that contains file statsignore.conf
+
+28-Jan-2018 Frank Penz :
+
+    *ADD: second language code with 2 letters for languages code 3 letters
+    *CHG: remove user list from export tab files
+
+23-Jan-2018 Makie
+    *CHG: TextImport now translatable
+    *CHG: write logs and rss by Import only if something changes
+
+16-Dez-2017 Frank Penz :
+
+    *CHG: mysql to mysqli
+    *CHG: page 'admin' to tpl support
+    *CHG: page 'admin licenses' to tpl support 
+    *CHG: formatting tables licenses
+    *ADD: html export for Simutrans extended help files
+    *FIX: object delete for co-maintainter not work 
+
+16-Dez-2017 Makie :
+
+    *CHG: optimize object import
+    *CHG: better search 
+    *ADD: compat.tab and translate files respected by object import
+
+25-Okt-2017 Frank Penz :
+
+    *ADD: language sort for registered users
+    *CHG: formatting object attributes Edit Page
+    *CHG: page 'admin versions' to tpl support 
+    *CHG: formatting tables admin pages versions, languages and users
+
+02-Mai-2017 Frank Penz :
+
+    *FIX: errors in statistics_vehicles.php ( show copyright )
+
+02-Mai-2016 Frank Penz :
+
+    *ADD: support translate scenarios
+
+20-Mar-2016 Frank Penz :
+
+    *CHG: image import skipping pngs size bigger to 1622016 px²
+
+07-Feb-2016 Frank Penz :
+
+    *ADD: help files export for Simutrans Experimental
+
+13-Nov-2015 Frank Penz :
+
+    *FIX: error in page directions.php 
+  
+xx-Oct-2015 Frank Penz :
+
+    *CHG: code to PHP 5.6.x
+
+31-Mar-2015 Frank Penz :
+
+    *FIX: not save pass by add users
+
+20-Apr-2014 Frank Penz :
+
+    *FIX: show images
+    *CHG: save images in db
+    *CHG: format page setcompare  
+
+11-Apr-2014 Frank Penz :
+
+    *FIX: error show vehicle statistics
+    *ADD: language Ukrainian
+
+14-Aug-2013 Frank Penz :
+
+    *FIX: db import error for images
+
+31-Jul-2013 Frank Penz :
+
+    *ADD: language Hungarian
+
+01-Mar-2013 Frank Penz :
+
+    *FIX: deleting language also of the translation tables of sets 
+    *ADD: new object type "webpage"
+    *FIX: admin users wrong log message "... - ... - ... - change user language"
+    *FIX: admin users wrong log message add/delete language from user
+
+09-Feb-2013 Frank Penz :
+
+    *FIX: create RSS news
+
+01-Dez-2012 Frank Penz :
+
+    *FIX: empthy entries list untranslatet objects
+    *FIX: accept/delete suggestion page 'Edit Translation for Object' ( edit.php )
+
+12-Okt-2011 Frank Penz :
+
+    *ADD: language French
+
+13-Mar-2011 Frank Penz :
+
+    *FIX: user admin page, set new password
+
+19-Nov-2010 Frank Penz :
+
+    *FIX: not save suggestion, if the translate text was empty
+    *ADD: page 'Manage languages'; users require email for select ( full support )
+
+18-Nov-2010 Frank Penz :
+
+    *ADD: log file for changed admin user
+    *ADD: navigations links page 'admin users'
+
+13-Nov-2010 Frank Penz :
+
+    *ADD: page 'Manage languages'; users require email for select ( not full support )
+    *ADD: db table 'lang_maintaint' for manage languages
+
+11-Nov-2010 Frank Penz :
+
+    *CHG: page 'admin users' to tpl support
+    *CHG: page 'admin users' to translate support
+
+06-Nov-2010 Frank Penz :
+
+    *FIX: translator text export
+    *CHG: page 'admin languages' to tpl support
+    *CHG: page 'admin languages' to translate support
+
+04-Nov-2010 Frank Penz :
+
+    *FIX: user admin page, set diferent sets for users
+
+03-Nov-2010 Frank Penz :
+
+    *CHG: page 'Vehicle Statistic' to tpl support
+
+03-Oct-2010 Frank Penz :
+
+    *CHG: page 'Translations Statistic' different show stats for unnecessary_text/dummy_info 
+    *CHG: page 'Translations Statistic' to tpl support
+
+29-Jul-2010 Frank Penz :
+
+    *ADD: waytype schiene_tram
+
+25-Jul-2010 Frank Penz :
+
+    *ADD: new table licenses
+    *ADD: new page for administration licenses
+
+19-Jun-2010 Jonas Bushart :
+
+    *ADD: info to contact page
+
+    Frank Penz :
+    *ADD: new field to table 'versions' ( `open_source` tinyint(1) NOT NULL default '0' )
+    *ADD: page 'Preferences Set' for user with role pakadmin ( not full support )
+
+18-Jun-2010 Frank Penz :
+
+    *ADD: show scaled grafics page 'Edit Translation for Object'
+    *FIX: show buildings 1x1 high 1 correct page 'Edit Translation for Object'
+
+27-Mai-2010 Frank Penz :
+
+    *FIX: role 'painter' have access to page 'Object browser'
+    *ADD: new objct type unnecessary_text
+    *CHG: page 'Translations Statistic' different show stats for unnecessary_text 
+    *ADD: numbers in language list, admin language page
+
+24-Mai-2010 Frank Penz :
+
+    *ADD: show setid page 'Set-info' 
+
+04-Mai-2010 Frank Penz :
+
+    *FIX: sql error by post language settings
+    *ADD: translator language hr - Croatian 
+
+05-Apr-2010 Frank Penz :
+
+    *FIX: show set/version in 'Object Browser' and 'Object Edit'
+
+20-Mar-20010 Frank Penz :
+
+    *ADD: pcl-template support
+    *CHG: pages to pcl-template: contact, header, footer, wrap, setinfo, statistics_menu, login, main 
+    *REM: script/: contact.php, statistics_menu.php, setinfo.php, wrap.php, logout.php
+    *     removed files open to script/main.php?page=[xyz]
+    *ADD: tpl-template cache for better performance
+    *REM: script/include/dialogs.inc.php
+
+05-Mar-2010 Frank Penz :
+
+    *CHG: remove rm, delete files in php ( general.php function verzeichnis_del($verz) )
+
+02-Mar-2010 Frank Penz :
+
+    *FIX: file errors translator-, onlinedat- and tilecutter-export.php
+    *ADD: note for pclzip support in footer
+
+01-Mar-2010 :
+
+  Jonas Bushart
+    *FIX: error set-id by object import 
+  Frank Penz
+    *FIX: test to file exists in wrong folders by export all language pack for set
+    *FIX: delete saved help file by edited
+
+27-Feb-2010 Frank Penz :
+
+    *CHG: zip support from www.phpconcept.net/pclzip/
+    *FIX: php errors 
+
+21-Feb-2010 Frank Penz :
+
+    *FIX: errors help file export
+    *FIX: clear tmp directory 
+
+18-Feb-2010 Frank Penz :
+
+    *ADD: disable to sugesstions for all sets
+    *FIX: Division by zero in page 'Set Info' by 0 objects in set
+    *FIX: $_SESSION['maintainter'] is null and not array ( obj_index.php )
+
+02-Feb-2010 Frank Penz :
+
+    *FIX: fallback to english by missing translations file for language by RSS-Feeds
+
+30-Jan-2010 Frank Penz :
+
+    *FIX: download link zip translator export
+    *ADD: export for set TileCutter ( tilecutter_export.php )
+
+15-Jan-2010 Frank Penz :
+
+    *CHG: reformat site header
+
+06-Jan-2010 Frank Penz :
+
+    *FIX: object import : ' in comments from dats
+
+01-Jan-2010 Frank Penz :
+
+    *CHG: format for dummy_text page setcompare
+    *ADD: export help files to html pages
+
+29-Dez-2009 Frank Penz :
+
+    *FIX: sql error by set compare text
+    *FIX: error create new folder for new language help files
+
+26-Dez-2009 Frank Penz :
+
+    *FIX: error by login Opera 10.x
+    *FIX: create new language objects in translations tables by add language
+    *ADD: language Korean
+
+10-Dez-2009 Frank Penz :
+
+    *FIX: create zip file for complete export
+    *FIX: delete all objects from a set ( page Object Purge )
+
+26-Nov-2009 Frank Penz :
+
+    *FIX: added many line breaks to text end by export
+    
+20-Nov-2009 Frank Penz :
+
+    *ADD: info page for set
+    *FIX: opject import
+    *FIX: translate file export
+    
+18-Nov-2009 Frank Penz :
+
+    *ADD: 2. and 3. maintainter for a set
+    
+14-Nov-2009 Frank Penz :
+
+    *ADD: page 'Texts compare' ( setcompare.php ); show untranslated objects and translations from other sets
+    *ADD: link 'Texts compare' in header menu
+    *ADD: link 'Texts compare' in main page
+
+07-Nov-2009 Frank Penz :
+
+    *FIX: page admin users : modify users not fornd record
+    *CHG: page admin version : user field list users to role 'admin' or 'pakadmin'
+    *CHG: disabled link 'Browse Texts' in header menu
+    *CHG: add accept/delete suggestions in 'Object Guide'
+    *FIX: update rss feeds
+
+20-Oct-2009 Frank Penz :
+
+    *FIX: format 100.0% in translations statistic table
+    *ADD: select suggestions in 'Object Guide'
+
+19-Oct-2009 Frank Penz :
+
+    *ADD: delete object select by 'Pruge Objects' ( obj_purge.php )
+    *ADD: language link to edit page
+    *ADD: show status from object texts in 'Object Guide - object list' ( directions.php )
+
+17-Oct-2009 Frank Penz :
+
+    *ADD: rss-feed for suggestions, sugesstions accept and new objects
+    *ADD: translator language cn - Simplified Chinese 
+    *ADD: translator language zh - Traditional Chinese
+    *CHG: update translator language files
+
+14-Oct-2009 Frank Penz :
+
+    *ADD: log item by import object
+
+23-Aug-2009 Frank Penz :
+
+    *FIX: accept suggestions for not translated languages ( page 'Texts with Suggestion' )
+    *FIX: import images with offsets
+
+18-Aug-2009 Frank Penz :
+
+    *CHG: disabled 'Edit Texts' in navigation
+    *CHG: navigation 'Object Guide' -> 'Search Objects & Texts'
+
+12-Aug-2009 Frank Penz :
+
+    *CHG: show images by bridges - icon, cursor, backimage[ns] and backimage[ew]
+
+09-Aug-2009 Frank Penz :
+
+    *ADD: grafics for help files - page 'Edit Texts'
+
+08-Aug-2009 Frank Penz :
+
+    *ADD: color for translations statistic - page 'Translation Statistics'
+    *ADD: search for translated text - page 'Object Guide' 
+
+03-Aug-2009 Frank Penz :
+
+    *FIX: waytype narrowgauge -> narrowgauge_track
+
+04-Jul-2009 Frank Penz :
+
+    *FIX: edit objects, not correct saved in db
+    *ADD: installer_export.php for export text from set 'Installer for Windows' ( InnoSetup )
+
+22-Jun-2009 Frank Penz :
+
+    *FIX: language/font note export Sim-Experimental tab file
+
+19-Jun-2009 Frank Penz :
+
+    *ADD: set language Turkish ( tr )
+
+30-Mai-2009 Frank Penz : 
+
+    *FIX: show minutes by language files
+    *ADD: select 'all sets' by show suggestions
+
+03-Mai-2009 Frank Penz :
+
+    *ADD: set language Greek ( gr )
+    *CHG: sort languages selections fields to language name
+    *CHG: translator_export.php for export set Translator 
+    *ADD: translator language gr - greek
+
+23-Apr-2009 Frank Penz :
+
+    *ADD: links to translations rules and text formatting
+
+18-Apr-2009 Frank Penz :
+                        
+    *ADD: enabled/disabled sets for users
+    *ADD: show sets and languages from users in user administration
+    *CHG: translator_export.php for export set Translator 
+
+09-Apr-2009 Frank Penz :
+    
+    *CHG: save the ip by suggestion - for blocked spammer
+
+23-Mar-2009 Frank Penz :
+    
+    *CHG: translator_export.php for export set Translator 
+    *ADD: translator language sv - Swedish
+
+19-Mar-2009 Frank Penz :
+
+    *CHG: select/show all languages suggestions - page 'Display Texts With Suggestion'
+
+13-Mar-2009 Frank Penz :
+
+    *CHG: table objects field copyright char 15 to 30
+    *CHG: show not translated texts ( not_translated.php ) for guest users
+
+06-Mar-2009 Frank Penz :
+
+    *FIX: minor errors in css
+    *ADD: translator_export.php for export set Translator
+    *ADD: link list to top on page Manage Objects and sub pages
+    *CHG: export: if obj-name == obj-text then not write to tab file
+    *CHG: translator_export.php for export set Translator 
+    *ADD: translator language cz - Czech
+    *ADD: translator language pt - Portuguese
+
+01-Mar-2009 Frank Penz :
+
+    *CHG: show images, image > 96x96 then resize to 96x96 for show in page
+    *CHG: images moved from db to file system 
+    *FIX: delete images by delete objects
+
+    *CHG: show all images by object details ( obj_browser.php, obj_edit.php )
+    *ADD: sql optimizing database tables
+    
+25-Feb-2009 Frank Penz :
+
+    *FIX: list untranslated objects ( lister.php )
+  for performance
+    *CHG: changed database table indizies
+
+19-Feb-2009 Frank Penz :
+
+    *CHG: suggestion list page ( lister.php )
+
+18-Feb-2009 Frank Penz :
+
+    *FIX: error in vehicle statistic waytype track
+    *CHG: disable search in page 'Edit Texts' ( edit.php )
+    *ADD: new search in page 'Object Guide' ( directions.php )
+
+17-Feb-2009 Frank Penz :
+
+    *CHG: 'translate' to 'translate upload' by upload text in log 
+  for performance
+    *CHG: split table translations, one table to set ( translations_* )
+    *CHG: changes some SQL queries from mysql_query to mysql_unbuffered_query
+
+06-Feb-2009 Frank Penz :
+
+    *FIX: SQL error ( typo )
+    *ADD: button 'Delete suggestion' page Edit Texts ( edit.php )
+    *ADD: different message for log ( translate, suggestion, suggestion accept, suggestion delete ) ( edit.php )
+
+01-Feb-2009 Frank Penz :
+
+    *FIX: save note ( obj_edit.php, edit.php )
+
+31-Jan-2009 Frank Penz :
+
+    *CHG: sort logfiles desc date
+    *ADD: disabled languages for sets, maintainter can editable
+
+19-Jan-2009 Frank Penz :
+
+    *ADD: page Logfiles, link on page Manage Objects for admins and pakadmins
+    *FIX: maintainter from set can editable by disabled set 
+    *ADD: log for upload texts translate
+
+18-Jan-2009 Frank Penz :
+
+    *CHG: field Note for all simple texts ( *_text, dummy_info, help_file )
+    *ADD: display format text for help_file and dummy_info in page Edit texts
+    *CHG: help files move to seperate set
+    *ADD: export help files
+
+13-Jan-2009 Frank Penz :
+
+    *ADD: log for translate objects ( for each set its own file )
+
+11-Jan-2009 Frank Penz :
+
+    *CHG: page Translation Statistics ( select language and select 4 sets for statistics )
+    *ADD: translator language de - German
+
+08-Jan-2009 Frank Penz :
+
+    *ADD: multi language support ( not admin pages, manage pages and page footer )
+    *ADD: translator language es - Spanish
+
+07-Jan-2009 Frank Penz :
+
+    *CHD: disabled CVS import
+    *ADD: Contact form
+
+05-Jan-2009 Frank Penz :
+    
+    *ADD: Buttons Next/Prev page Object Guide ( more 500 objects in section )
+    *ADD: help files 
+    *FIX: import object tunnel
+    *ADD: page Object Edit; chanched object data and object propertys
+
+10-Dec-2008 Frank Penz :
+
+    *ADD: enabled and disabled sets for translating, setting the maintainter from set ( page Manage Objects )
+    *CHG: page Not Translated Texts links open in new window
+
+03-Dec-2008 Frank Penz :
+
+    *ADD: in game help files
+
+20-Nov-2008 Frank Penz :
+
+    *CHG: page Object Guide changed to select fields for set and objects
+    *CHG: page Object Guide links open in new window
+    *ADD: note for base texts in page Edit Texts
+    *CHG: save the generated tab files on file system ( caching ); delete by changed translated for language
+
+24-Oct-2008 Frank Penz :
+
+    *ADD: User Reference Language to user preferences
+    *ADD: show last login and last translated from users in user administration
+    *ADD: show stats translated from users in user administration
+    *CHG: page Edit Texts show not translate languages for loged user
+
+12-Oct-2008 Frank Penz :
+
+    * install SimuTranslator to server simutrans-germany.com
+    *CHG: save password encrypt
+    *CHG: table coding to UTF-8
+    *ADD: numeric objectid for objects
+    *CHG: object purge del all from set ( objects and translates ) for correct translated statistics
+
+17-Dec-2006  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *FIX: CSV update now updates copyrights.
+    *FIX: CSV update page typos
+    *FIX: CSV update properly sets value to 0 (was ignored before).
+
+
+07-Sep-2006  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *CHG: p_value is now 100 varchar to acomodate climate string.
+    *FIX: Updated line breaker which caused problems when too long words contained line break in between.
+
+    *ADD: Added translation statistic.
+    *FIX: Line breaker no longer appends \n to non-city building objects
+
+
+29-Jul-2006  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *ADD: Text editor now displays the author of translation text and copyright holder for current object.
+
+
+14-Jul-2006  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *ADD: Object CVS updater is fully functional. You can use comma separated values files to upadte properties of existing objects (help in manual).
+    *FIX: Fixed few tiny problems in the object exporter.
+
+
+12-Jul-2006  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *FIX: Made huge internal clean-up of the text exporter code, found and fixed last encoding problems.
+    *ADD: New option for the text exporter - export all texts for one set. I hope you like it Prissi.
+    *CHG: Some changes to tmp file handling for object exporter (unified with text exporter).
+
+
+10-Jul-2006  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *CHG: Goto button now accepts also parts of the object name (powerful with type specification).
+
+
+04-Jul-2006  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *ADD: Vehicle lister is working.
+    *ADD: Object exporter now correctly separates sheets in dat files.
+
+
+03-Jul-2006  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *FIX: Exported zips no longer contain full path.
+    *FIX: Unlogged users cannot display images through image page.
+    *ADD: Modification time for objects.
+    *CHG: Object note can have any length (ok, limited to 16 000 chars)
+    *CHG: Copyright information can have 45 characters (was 15)
+    *CHG: Images now use name, type, vid key.
+    *ADD: Vehicle exporter now allows choice of different orderings.
+    *FIX: Vehicles without intro_year will be eported if name ordering is selected.
+    *ADD: Objects have modification time stamp, this time is exported to the image sheets as well.
+
+
+02-Jul-2006  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *ADD: Added decorative art to main menu and login page.
+    *ADD: Added clean temp page and setup clean temp cron job.
+    *ADD: Object exporter now wroks as itneded for city buildings and vehicles.
+    *ADD: Started to work on vehicle lists in statistics menu.
+
+
+01-Jul-2006  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *FIX: Fixed header positioning (works in IE and FF!).
+    *FIX: Welcome screen is now perfectly centered in both dimensions (works in IE and FF!).
+    *FIX: Corrected typo in main menu.
+    *ADD: Linked this change log.
+    *FIX: Greatly improved readability of main css style.
+    *FIX: Converted footer to the css styled manner.
+    *CHG: Reordered top menu.
+    *CHG: Improved layout of all menus (main, browse, object).
+    *ADD: Added statistics page, added speed bonus statistics.
+
+
+27-Jun-2006  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *ADD: Added new tool to list texts with suggestion easily.
+    *FIX: Header is now CSS positioned.
+    *FIX: CSS sheets now validate.
+    *fix: Document type for all pages is XHTML 1.0 Transitional
+
+
+08-Jun-2006  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *FIX: Fixed layout of goto button to work correctly in small windows and Opera.
+
+
+06-Jun-2006  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *ADD: Prepared ground for Slecet texts with suggestions lister.
+    *FIX: Fixed problems when promoting suggestions with special characters.
+
+
+17-Mar-2006  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *FIX: Improved layout of an object importer slightly.
+    *ADD: Added an option to import dat files only (without touching images).
+    *FIX: Did few minor updates to the object importer.
+
+
+12-Mar-2006  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *FIX: Allmost all pages now successfully pass the xhtml validity check.
+    *ADD: Finally created basic about page.
+
+
+14-Feb-2006  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *ADD: Added a page which calls lister with specified criteria - to display not translated texts.
+    *ADD: Adjuted lister page slightly to work with new page.
+    *ADD: Browse texts menu so that users chan choose between lister and the new shortcut.
+    *ADD: Improved error reporting of text uploader slightly.
+
+
+13-Feb-2006  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *FIX: Finally tracked and fixed bug prohibiting upload of new texts sometimes.
+    *FIX: Improved error reporting for text uploader slightly.
+
+
+12-Feb-2006  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *ADD: Object uploading now has verbose mode switch.
+    *FIX: Object upload page should be xhtml compatible (dangerous characters are escaped).
+    *FIX: Object uplading now correctly preserves the spaces for program_text objects, but the space is still removed by DBengine.
+    *FIX: Directions page now provides correct URL's to all objects listed (use urlencode($old_name) and &amp; in addresses).
+    *FIX: Text edit page should now correctly handle all types of object names and texts and be xhtml compatible (all dangerous characters should be escaped everywhere).
+    *FIX: Text upload page should always preserve spaces and be xhtml compatible (+ cleared the code a bit).
+    *FIX: Text output page now correctly escapes html entities when in screen dispaly mode.
+    *ADD: Object importer error handling and reporting improved.
+
+
+10-Feb-2006  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *FIX: When trying to import more objects with same name but different obj, resulting error is not fatal (but state is still undifined, will disappear when transition to new primary index is complete).
+    *ADD: Object loader now correctly discards everything after first space in image path (just like makeobj does).
+    *ADD: Object loader sucessfully loads also strange object names and slashes all loaded values (but is still ASCII only!).
+    *ADD: Text uploader now sucessfully works with the change above, also slashing should be now consistent when uploading from text area.
+    *ADD: Several error messages were improved.
+    *ADD: Object purge page is now working, use with care!
+
+
+26-Jan-2006  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *FIX: UTF-8 encoded language files will properly start with § at the begining.
+
+
+08-Jan-2006  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *ADD: When importing factory, factory details dummy object is created as well. When deleting factory, it is deleted as well.
+    *FIX: Typos in some source code comments were fixed.
+    *FIX: Made lister to work again (stil on 128x128 only).
+
+
+06-Jan-2006  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *FIX: Finally added multibyte safe line trim for batch text upload, converted some other functions to MB as well.
+
+
+03-Dec-2005  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *ADD: Added support for case insensitive image search.
+    *FIX: Fixed some problems in object import module (security checks).
+    *ADD: Added new deafult version to import module list (dummy, to prevent error uploads).
+    *FIX: Fixed the behavior of next and prev buttons in regard to versions.
+
+
+01-Dec-2005  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *ADD: Created a Object Guide page - a page containing links to selected objects, to ease the navigation.
+    *CHG: Goto in text editor is now finally case insensitive.
+    *CHG: Updated main menu and header menu.
+
+22-Nov-2005  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *ADD: Finished implementation of new object importer. Works well, pak128 was imported.
+    *CHG: 4 images of each object are now displayed, if it is a building they are above each other.
+    *FIX: Tuned some db functions and polished some parts of the code.
+
+
+19-Nov-2005  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *ADD: Added help texts to some admin screens (object import, text import).
+    *FIX: Fixed text importer remove line breaks option functionality. (finally)
+
+18-Nov-2005  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *CHG: Updated header to check wheather the user has rights to display requested page. (did also some other minor tweaks)
+    *ADD: Added access rights information to every page.
+    *FIX: Unified header calls to require_once() so there will be no possibility to baypass the user level check.
+
+
+16-Nov-2005  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *ADD: Updated database structure - added Image table and few colums that will be used in the future
+
+
+02-Nov-2005  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *FIX: Fixed the Wrapper querry so that always only the texts corresponding to the existing objects in the set are displayed.
+    *FIX: Fixed reference checking in the text import (was omitting a version check).
+    *CHG: Adjusted layout of text import report for better readability.
+
+
+24-Oct-2005  Tomas Kubes <t_kubes@yahoo.com>:
+
+    *FIX: Restored correct English texts (were broken), backup was one day old.
+    *ADD: Added set identifiers to title, next and prev buttons in Editor.
+    *CHG: Tweaked the layout of translation edit boxes in Editor reducing the waste of space.
+    *FIX: Reduced the number of validation errors in Editor page from 67 to 24.
+    *FIX: Tweaked some parts of the code, making it more readable.
+    *CHG: Got rid of the graphical buttons in the Editor, replacing them by normal buttons.
+    *FIX: Nex and Prev buttons in Editor now keep the order. By default objects are sorted by the set and then by name. This will be user selectable in future.
+    *ADD: Now the English text is always dispalyed, if the translator does not translate English, the edit box is hidden. This is "master text". In future, master language will be selectable.

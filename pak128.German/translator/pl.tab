@@ -9,7 +9,7 @@
 #                              Language: pl Polski                             #
 #                             Encoding: ISO-8859-2                             #
 #                             Font: prop-latin2.fnt                            #
-#                            Date Created: 7.02 2019                           #
+#                           Date Created: 31.05 2019                           #
 #                                                                              #
 ################################################################################
 #____________________________bridge - monorail_track____________________________
@@ -97,6 +97,8 @@ Alpejski supermarket
 ALP_Tankstelle_NIC
 Alpejska stacja benzynowa
 ALP_Viehhof_NIC
+przestarza³e nie u¿ywaæ
+ALP_Viehhof_NIC_2
 Alpejska ferma byd³a
 alte Raffinerie
 Rafineria (1905)
@@ -192,8 +194,6 @@ AVL_Zementwerk1960_NIC
 Po³udniowoniemiecka fabryka cementu
 BaeckereiGadebusch_NIC
 Pó³nocnoniemiecka piekarnia
-Bauernhof_NIC
-Ferma byd³a
 Bauernhof_Tierfutter
 Manufaktura karmy dla zwierz±t
 Baumarkt_NIC
@@ -352,8 +352,6 @@ Kaufhaus_1912
 Dom towarowy
 Kaufhaus_NIC
 Dom towarowy
-KFZ_Fabrik_NIC
-Fabryka samochodów
 Kfz_Fabrik1961
 Fabryka samochodów (1961)
 Kiesgrube
@@ -511,6 +509,8 @@ Fabryka opakowañ
 Verpackungsmittelfabrik_1909
 Fabryka opakowañ
 Viehhof_NIC
+przestarza³e nie u¿ywaæ
+Viehhof_NIC_2
 Ferma mieszana
 VWAutohaus_NIC
 Fabryka samochodów VW

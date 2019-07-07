@@ -1,0 +1,39 @@
+--------------------------------
+#	PAK128.german
+#	Bäume
+#	Neu:01-2011
+#	Letzte Bearbeitung 
+#    10-08-2015 The Transporter
+---------------------------------
+Obj=tree
+Name=Tanne_immergruen_Shunter_Alpen
+Copyright=MHz
+seasons=5
+DistributionWeight=127
+climates=tundra, rocky
+Image[0][0]=Tanne_immergruen_Shunter.0.1,0,-24
+Image[1][0]=Tanne_immergruen_Shunter.0.2,0,-23
+Image[2][0]=Tanne_immergruen_Shunter.0.3,0,-23
+Image[3][0]=Tanne_immergruen_Shunter.0.4,0,-24
+Image[4][0]=Tanne_immergruen_Shunter.0.5,0,-19
+Image[0][1]=Tanne_immergruen_Shunter.1.1,0,-24
+Image[1][1]=Tanne_immergruen_Shunter.1.2,0,-23
+Image[2][1]=Tanne_immergruen_Shunter.1.3,0,-23
+Image[3][1]=Tanne_immergruen_Shunter.1.4,0,-24
+Image[4][1]=Tanne_immergruen_Shunter.1.5,0,-19
+Image[0][2]=Tanne_immergruen_Shunter.4.1,0,-24
+Image[1][2]=Tanne_immergruen_Shunter.4.2,0,-23
+Image[2][2]=Tanne_immergruen_Shunter.4.3,0,-23
+Image[3][2]=Tanne_immergruen_Shunter.4.4,0,-24
+Image[4][2]=Tanne_immergruen_Shunter.4.5,0,-19
+Image[0][3]=Tanne_immergruen_Shunter.3.1,0,-24
+Image[1][3]=Tanne_immergruen_Shunter.3.2,0,-23
+Image[2][3]=Tanne_immergruen_Shunter.3.3,0,-23
+Image[3][3]=Tanne_immergruen_Shunter.3.4,0,-24
+Image[4][3]=Tanne_immergruen_Shunter.3.5,0,-19
+Image[0][4]=Tanne_immergruen_Shunter.2.1,0,-24
+Image[1][4]=Tanne_immergruen_Shunter.2.2,0,-23
+Image[2][4]=Tanne_immergruen_Shunter.2.3,0,-23
+Image[3][4]=Tanne_immergruen_Shunter.2.4,0,-24
+Image[4][4]=Tanne_immergruen_Shunter.2.5,0,-19
+-------------------------------------------------

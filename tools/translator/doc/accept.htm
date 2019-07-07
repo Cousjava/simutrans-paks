@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="iso-8859-2"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Acceptation Test</title>
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+<link href="include/style.css" type="text/css" rel="StyleSheet" />
+</head>
+
+<body>
+
+
+<h1>Acceptation Test</h1>
+
+
+<div align="center">
+<table class="tableback">
+<tr>
+<td>
+<p class="justified">This document describes a product acceptation test. It is
+more detailed version of the document that is an
+<a href="files/akceptace_cz.pdf">attachment 2</a> of the project contract - the
+document is in Czech.</p>
+
+<h2>Conditions</h2>
+<h3>Environment</h3>
+<p class="justified">The acceptation test should be run on primary installation
+of SimuTranslator server available at
+<a href="http://www.translator.simutrans.com">www.translator.simutrans.com</a>.
+If that will not be possible for any reason, SimuTranslator server will be
+installed according to the <a href="install.htm">installation guide</a> on some
+other available machine meeting <a href="platform.htm">platform requirements</a>.</p>
+<h3>Input Data</h3>
+<p class="justified">Simutrans object definitions for 128x128 are not freeware
+and completely accessible. Only subset of freely available object definitions
+will be used. The files can be accessed here: <a href="files/general0.zip">
+general objects</a>, <a href="files/res0.zip">some residental houses</a>,
+<a href="files/rail_units.zip">rail units</a>. Used game text files can be found
+in text file package.</p>
+<h3>Starting User</h3>
+<p class="justified">Login described in installation guide will be used - login:
+root, password: root (on any
+machine).</p>
+<h3>Severity Level</h3>
+<p class="justified">Problems detected during the testing can have two severity
+levels. If action has no reactions defined, than inability to execute the action
+as described is assumed to have severity: failure.</p>
+<ul>
+<li>
+<b>Failure</b><br>Fatal: application cannot pass acceptation test.</li>
+<li>
+<b>Skip</b><br>Low: application can pass the test and run almost properly.
+Detected errors will be reported to developers and corrected in future during
+runtime.
+</li>
+</ul>
+<h2>Documentation</h2>
+<p class="justified">Any required documentation can be found in documentation
+section of SimuTranslator. Action descriptions from <a href="help.htm">user's
+guide</a> will be used as a reference for actions described in next section.</p>
+<p class="justified">Protocol will be created either in electronic or paper form
+and sent back to SimuTranslator team.</p>
+<h2>Action Definitions</h2>
+<ol>
+ <li>
+ <b>Start Client</b><br>
+ Go to <a href="http://translator.simutrans.com/">http://translator.simutrans.com</a>
+ or different address if different server is used.</li>
+
+ <li>
+ <b>Login</b><br>
+ Log into the SimuTranslator as root.
+ </li>
+
+  <li>
+<b>User Creation</b><br>
+1 User with role admin will be created<br>
+1 User with role tr1 will be created</li>
+
+  <li>
+<b>Log as newly created user</b><br>
+Login as a user created with role admin</li>
+
+  <li>
+<b>Add Version</b><br>
+Go to administration - versions, and create new version. If input data above
+should be used, version tile size must be 128. (Maintainer should be currently
+logged user.)</li>
+
+  <li>
+<b>Add Languages</b><br>
+Go to administration - languages and add 2 languages: čeština - id: cz, coding:
+ISO 8859-2, English - id: en, coding: ASCII.</li>
+
+  <li>
+<b>Load Definitions</b><br>
+Go to object management screen, choose object import and try to import files
+named in condition section.<br>
+
+<i>Reactions:</i><ul>
+<li>Everything is ok.</li>
+<li>Bad file format - data files are in incorrect format, data are only partially
+loaded - severity: skip.</li>
+
+<li>Problem, nothing is loaded - severity: failure.</li>
+</ul>
+
+</li>
+
+<li>
+<b>Test Loaded Data</b><br>
+Go to Object Management - Object Browser and compare content of the database
+with the dat files.<i><br>
+Reactions:</i><ul>
+<li>
+Everything is ok.</li>
+
+<li>
+Problem - data loaded improperly, severity depends on the type of difference.
+Incorrect object names - severity: failure; missing images or missing attributes -
+severity: skip.</li>
+
+<li>
+Problem - nothing is loaded - severity: failure.</li>
+
+</ul>
+</li>
+
+
+<li>
+<b>Load Translation Files</b><br>
+If data were loaded properly, go to Upload Texts, get the cz.tab and en.tab
+files. Load those files for given language and version you created.<br>
+
+<i>Reactions:</i><ul>
+<li>Everything us ok - text files loaded.</li>
+<li>Text files were loaded, but there was no conflict resolution phase, or the
+text for non-existing objects were loaded - severity: skip.</li>
+
+<li>Problem, nothing is loaded - severity: failure.</li>
+</ul>
+
+</li>
+
+
+<li>
+<b>Load Existing Translations</b><br>
+Try to load one of the files again. Watch the program behavior. Go to main menu
+- preferences - change the value in config2. Repeat the action.<i><br>
+Reactions:</i><ul>
+<li>Everything is ok.</li>
+<li>Data loaded without asking - severity: skip.</li>
+</ul>
+</li>
+
+
+<li>
+<b>Edit Translations 1</b><br>
+Go to Edit Texts, try to list between translations and modify some of them.<i><br>
+Reactions:</i><ul>
+<li>Everything is ok.</li>
+<li>Nothing is saved - severity: failure.</li>
+</ul>
+</li>
+
+
+<li>
+<b>Edit Translations 2</b><br>
+Logout, login as the second user you have created. Repeat step 11.</li>
+
+
+<li>
+<b>Reserve Translations</b><br>
+Go to Reserve Texts, try to reserve some texts, try to delete reservation from
+for some texts, try to modify reservation date.<i><br>
+Reactions:</i><ul>
+<li>Everything is ok.</li>
+<li>Translations are not reserved - severity: failure.</li>
+
+<li>Listing does not behave properly (incorrect buttons, does not obey config3
+attribute) - severity: skip.</li>
+</ul>
+</li>
+
+
+<li>
+<b>Output Reserved Translations</b><br>
+Try to output translations you have reserved. Try to output them in both
+languages.<br>
+<i>Reactions:</i><ul>
+<li>Everything is ok.</li>
+<li>Wrong translations are reported - severity: failure.</li>
+</ul>
+</li>
+
+
+<li>
+<b>Enter as Unknown User, Edit Suggestions</b><br>
+Logout from SimuTranslator, enter as unlogged user. Go to Edit Text and save
+some suggestions.<i><br>
+Reactions:</i><ul>
+<li>Everything is ok.</li>
+<li>Suggestions not saved - severity: failure.</li>
+</ul>
+</li>
+
+
+<li>
+<b>Promote Suggestions 1</b><br>
+Login again as admin, go to Edit Texts and try to accept (promote) suggestions
+you have entered. Suggestion should become a translation.<i><br>
+Reactions:</i><ul>
+<li>Everything is ok.</li>
+<li>Suggestion is not promoted - severity: failure.</li>
+
+<li>Suggestion is promoted, but it is not removed from suggestion field -
+severity: skip.</li>
+</ul>
+</li>
+
+
+<li>
+<b>Promote Suggestions 2</b><br>
+Repeat the step 16. for user of class tr1.</li>
+
+
+<li>
+<b>Output Translation File</b><br>
+Download Texts - download file for newly created version, languages: cz, en.
+Compare the files with the .tab <a href="translation_file.htm">file definition</a>.
+If possible download and install the application Simutrans (128.simutrans.com),
+replace the files in directory pak128\text\ by newly downloaded files, run
+Simutrans and check if files are displayed correctly.<br>
+How to check translation for goods objects: run the game, exit welcome screen by
+click, select language - &quot;česky&quot; or &quot;English&quot;, click load saved game, click
+cancel. Now you are in game screen. Press &quot;shift+G&quot; to invoke goods list. Check
+if the texts here match the texts in SimuTranslator.<br>
+<i>Reactions:</i><ul>
+<li>
+Everything ok.</li>
+
+<li>
+Text not displayed at all - severity: failure.</li>
+
+<li>
+Text displayed improperly, wrong characters - severity: failure.</li>
+
+</ul>
+
+
+</li>
+
+
+</ol>
+<p class="center">
+&nbsp;<br />&nbsp;
+&nbsp;<br />
+In case of any questions, please contact
+<a href="mailto:t_kubes@yahoo.com?subject=SimuTranslator">Tomáš Kubeš</a>.</td>
+</tr>
+</table>
+</div>
+
+
+
+<p>
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+&nbsp;<br />&nbsp;
+</p>
+
+<div style="text-align: center">
+<hr width="90%" />
+<p class="ending">
+<br />
+
+<b>SimuTranslator:</b> &copy;2004-2005 <a href="team.htm">SimuTranslator Team</a><br />
+<b>Documentation:</b> &copy;2004-2005 <a href="http://www.tomaskubes.net">Tom&aacute;&scaron; Kube&scaron;</a><br />
+<a href="index.htm">SimuTranslator documentation home</a>
+<br />&nbsp;
+</p>
+<hr width="90%" />
+</div>
+
+</body>
+</html>

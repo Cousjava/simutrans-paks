@@ -1,0 +1,99 @@
+<!--(if:value_message)-->
+  <HR>
+  <!--(list:messages)-->
+  <!--(item)-->
+    <!--(message)--><br />
+  <!--(enditem)-->
+  <!--(endlist)-->
+<!--(endif)-->
+
+<HR> 
+<a name='versions'></a>
+<!--(if:form_add_version)-->
+<h1 class="pagename"><!--(page_title2)--></h1> 
+
+<form enctype="multipart/form-data" action="admin.php" method="POST">
+ <input type="hidden" name="action" value="version">
+ <input type="hidden" name="mode" value="<!--(value_mode)-->">
+ <input type="hidden" name="version_id" value="<!--(form_setid)-->">
+ <table align="center" cellpadding="3" cellspacing="0">
+  <tr class="classic_grey">
+   <td> <b><!--(bez_setid)-->:</b> </td>
+   <td width="100"> <!--(value_setid)--><!--(input_setid)--> </td> 
+  </tr>
+
+  <tr class="classic">
+   <td> <b><!--(bez_ver_name)-->:</b> </td>
+   <td> <input type="text" name="ver_name" value="<!--(value_ver_name)-->" size=20> </td>
+  </tr>
+
+  <tr class="classic_grey">
+   <td> <b><!--(bez_setsize)-->:</b> </td>
+   <td>
+    <select name="tile_size" style="<!--(display_size)-->">
+      <!--(list:setsize)-->
+      <!--(item)-->
+        <option value="<!--(value_setsize)-->" <!--(select_size)--> ><!--(value_setsize)--> </option>
+      <!--(enditem)-->
+      <!--(endlist)-->  
+    </select>
+   </td>
+  </tr>
+
+  <tr>
+   <td> <input type="submit" value="<!--(submit_button)-->"> </td>
+   <td>  </td>
+  </tr>
+ </table>
+</form>
+ 
+<!--br />
+<a href="main.php?lang=de&page=admin_set&set=<!--(value_setid)- ->" ><!--(bez_setpreferences)- -></a-->
+<!--(endif)-->
+
+<!--(if:list_version)-->
+<h1 class="pagename"><!--(page_title)--></h1>
+
+<center><a href="?action=version&mode=add"><!--(bez_new_set)--></a></center>
+<br />
+
+<table class="top" cellpadding="5" cellspacing="0" border="1" >
+
+  <tr class="adm_table_head"> 
+    <th><!--(bez_setid)--></th> 
+    <th><!--(bez_set_name)--></th> 
+    <th><!--(bez_setsize)--></th> 
+    <th><!--(bez_maintainter)--></th> 
+    <th><!--(bez_comaintainter2)--></th> 
+    <th><!--(bez_comaintainter3)--></th> 
+    <th><!--(bez_comaintainter4)--></th> 
+    <th><!--(bez_comaintainter5)--></th> 
+    <th><!--(bez_comaintainter6)--></th> 
+  </tr>
+
+  <!--(list:tbl_lines)-->
+  <!--(item)-->
+    <tr class="<!--(line_css)-->"> 
+        <td><a href="main.php?page=admin_set&set=<!--(value_setid)-->" target="_blank"><!--(value_setid)--></a></td>
+        <td><a href="main.php?page=admin_set&set=<!--(value_setid)-->" target="_blank"><!--(value_set_name)--></a></td>
+        <td><!--(value_setsize)--></td>
+        <td><!--(value_maintainter)--></td>
+        <td><!--(value_maintainter2)--></td>
+        <td><!--(value_maintainter3)--></td>
+        <td><!--(value_maintainter4)--></td>
+        <td><!--(value_maintainter5)--></td>
+        <td><!--(value_maintainter6)--></td>
+    </tr>
+  <!--(enditem)-->
+  <!--(endlist)-->  
+
+</table>   
+<!--(endif)-->
+
+
+
+
+
+
+
+

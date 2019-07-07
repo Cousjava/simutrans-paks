@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+        <title>SimuTranslator Help - Object Management - Object Import - Base Texts</title>
+        <meta name="Description" content="SimuTranslator Help - Object Management - Object Import; How to transform base texts for import." />
+        <meta name="Keywords" content="SimuTranslator, Manual, Help, User Guide, Base, Text, Import" />
+        <meta name="Author" content="Tomáš Kubeš" />
+
+	<!-- for all -->
+	<link href="include/st_help.css" type="text/css" rel="StyleSheet"/>
+
+	<link href="include/st_help_disp.css" type="text/css" rel="StyleSheet" media="screen"/>
+	<link href="include/st_help_print.css" type="text/css" rel="StyleSheet" media="print"/>
+    </head>
+
+
+<body>
+
+
+
+
+<!-- ======================= Logo and navigation bar ======================= -->
+<div id="header">
+
+    <a href="http://translator.simutrans.com/help/" title="SimuTranslator Help Home">
+	<img src="include/logo_help_sm.png" alt="SimuTranslator Help Home" width="210" height="40" id="logo" />
+    </a>
+
+
+    <div id="links">
+        <ul id="navigation">
+            <li><a href="index.htm" title="SimuTranslator Help Home">Main Menu</a></li>
+            <li><a href="browse_texts.htm" title="Help to find certain text">Browse Texts</a></li>
+            <li><a href="edit_texts.htm" title="Help with editation of texts">Edit Texts</a></li>
+            <li><a href="download_texts.htm" title="Help for text downloader">Download Texts</a></li>
+            <li><a href="upload_texts.htm" title="Help with text uploading">Upload Texts</a></li>
+            <li><a href="object_guide.htm" title="Help to find certain object">Object Guide</a></li>
+            <li><a href="object_management.htm" title="Sub menu for set maintainers">Manage Objects</a></li>
+            <li><a href="preferences.htm" title="Help with customization">Preferences</a></li>
+            <li><a href="administration.htm" title="Help for administrators">Administration</a></li>
+            <li><a href="contacts.htm" title="Ask developers">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="hr_bar">
+	<hr />
+    </div>
+
+</div>
+
+
+
+
+<!-- ============================== Help Text ============================== -->
+<div id="main_text" class="bckg_buildings4">
+
+
+    <h1>Object Import - Base Texts</h1>
+
+    <p>
+    Everything in SimuTranslator is considered object, so Simutrans program
+    texts need object stubs created from program strings. Here is a simple
+    script which can convert Simutrans language tab file to the object stubs used by SimuTranslator.
+    </p>
+
+    <p>
+    This operation needs to be done only if you have many new program strings to import, or if SimuTranslator database was corrupted for some reason.
+    </p>
+
+    <h2>Tab to Dat Conversion Script</h2>
+
+    <p>
+    This is simple script for creating "stub objects" used by SimuTranslator from a Simutrans translation file. This script shall not be used for any other set than "Base Texts".
+    </p>
+
+    <p>
+    <a href="files/tab-obj.py">Download the script</a>.
+    </p>
+
+    <h3>Parameters</h3>
+
+    <h4>Language</h4>
+
+    <p>
+    Python; any version > 2.0.
+    </p>
+
+    <h4>Input</h4>
+    <p>
+    Normal Simutrans base translation file.
+    </p>
+
+    <h4>Output</h4>
+    <p>
+    Datfile usable by SimuTranslator to generate stub objects (translation texts are not used).
+    </p>
+
+    <h4>Use</h4>
+    <p>
+    tab-obj.py input_file output_file
+    </p>
+
+
+    <h3>Operation</h3>
+
+    <p>
+    Script skips all comment lines (starting with #). Script skips first three (non-comment) lines of the file - this should be language name, and font definition. If you have older language file with 2 font definitions it is important to remove the second one.
+    </p>
+
+    <p>
+    Script has no parity check, so it is important that the tab file contains no errors in the sync - ie. no missing line. You can check if the stub object file is correct by looking at the names - all should be program strings only. Note: since translation texts do not satisfy the criteria for object names, it is highly probable that wrong file will cause errors when importing to SimuTranslator.
+    </p>
+
+    <p>
+    Script preserves all extra spaces at the beginning, inside, and at the end of the program strings, but since the used version of MYSQL database engine trims the trailing spaces for VARCHAR data type, it is not possible to use such strings for object stubs (this does NOT apply for the import of the translation texts, all spaces are preserved there).
+    </p>
+
+    <p>
+    Once you have the stub objects, you can import them to SimuTranslator using the object import in manage objects menu. Remember to zip it before, SimuTranslator expects zipped file.
+    </p>
+
+    <p>
+    When object upload is finished, you can use the tab file to upload the translation texts if needed.
+    Be careful, it is important that you remove the language name from the base translation files,
+    otherwise you will encounter "out-of-sync" problem during text import.
+    </p>
+
+
+    <p>
+
+    </p>
+
+
+
+
+
+</div>
+<!-- =============================== Footer =============================== -->
+<div id="footer">
+
+    <div class="hr_bar">
+	<hr />
+    </div>
+
+    <div id="footer_text">
+        <p class="footer_p">
+            SimuTranslator: &copy;2004-2006 <a href="http://translator.simutrans.com/doc/team.htm">SimuTranslator Team</a><br />
+            Documentation: &copy;2004-2006 <a href="http://www.tomaskubes.net">Tom&aacute;&scaron; Kube&scaron;</a><br />
+            <a href="http://translator.simutrans.com/help/">SimuTranslator Help Home</a><br />
+            <a href="http://translator.simutrans.com">SimuTranslator</a><br />
+        </p>
+
+        <p class="footer_p">
+            <a href="http://validator.w3.org/check?uri=referer"><img
+            src="include/valid-xhtml10.png" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+        </p>
+    </div>
+
+    <hr />
+</div>
+
+
+</body>
+</html>

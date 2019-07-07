@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>PclTemplate - Template Sample File - <!--(page_name)--></title>
+  </head>
+  <body>
+    Hello <!--(user_name)--> !
+    <br>
+    Nested if condition inside a loop
+    <br>
+    <!--(list:users)-->
+    <table border="1">
+      <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+      </tr>
+      <!--(item)-->
+      <!--(ifnot:reverse)-->
+      <tr>
+        <td><!--(first_name)--></td>
+        <td><!--(last_name)--></td>
+      </tr>
+      <!--(endifnot)-->
+      <!--(if:reverse)-->
+      <tr>
+        <td><!--(last_name)--></td>
+        <td><!--(first_name)--></td>
+      </tr>
+      <!--(endif)-->
+      <!--(enditem)-->
+    </table>
+    <!--(endlist)-->
+</body>
+</html>

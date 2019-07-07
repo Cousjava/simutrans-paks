@@ -1,0 +1,15 @@
+
+Letzter Autor / Contibutor: makie 2017 bis 2019
+Jeder kann und darf mit meinem Teil machen zu was er lustig ist.
+
+von 2008 bis 2018 verwaltet und erweitert von Frank Penz.
+Zitat aus einem E-Mail vom 06.11.2017
+"Von mir aus kannst Du auch alles OpenSource machen und auf SourceForge hochladen, wenn Du Dir davon was versprichst. "
+Genau das was makie am 25.03.2019 auch getan hat.
+
+Ursprünglich entwickelt von Tomas Kubes 2005-2006
+Zu Lizenz und Urheberrecht siehe hier im Ordner /doc in dem die Ursprüngliche Dokumentation steht.
+Diese Dokumentation ist sein Anbeginn seit 2005 öffentlich im Internet zugänglich.
+Da steht alles mögliche, unter anderem auch der Original Source-Code, aber zu Lizenz und Urheberrecht steht da nichts.
+
+Welcher Teil von Wem ist, kann leider außer den Urhebern niemand auseinander dröseln.

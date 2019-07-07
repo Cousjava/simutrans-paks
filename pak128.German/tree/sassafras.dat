@@ -1,0 +1,38 @@
+--------------------------------
+#	PAK128.german
+#	Bäume
+#	Neu:	23.07.2018 NNW
+#	Letzte Bearbeitung: $Date$ - $Author$
+#	Ersetzt den Locker_Shunter von Mhz
+---------------------------------
+Obj=tree
+Name=Locker_Shunter
+Copyright=NNW
+seasons=5
+DistributionWeight=127
+climates=tropic,mediterran,temperate,tundra
+Image[0][0]=sassafras.0.0,0,-24
+Image[1][0]=sassafras.0.1,0,-24
+Image[2][0]=sassafras.0.2,0,-24
+Image[3][0]=sassafras.0.3,0,-24
+Image[4][0]=sassafras.0.4,0,-24
+Image[0][1]=sassafras.1.0,0,-24
+Image[1][1]=sassafras.1.1,0,-24
+Image[2][1]=sassafras.1.2,0,-24
+Image[3][1]=sassafras.1.3,0,-24
+Image[4][1]=sassafras.1.4,0,-24
+Image[0][2]=sassafras.2.0,0,-24
+Image[1][2]=sassafras.2.1,0,-24
+Image[2][2]=sassafras.2.2,0,-24
+Image[3][2]=sassafras.2.3,0,-24
+Image[4][2]=sassafras.2.4,0,-24
+Image[0][3]=sassafras.3.0,0,-24
+Image[1][3]=sassafras.3.1,0,-24
+Image[2][3]=sassafras.3.2,0,-24
+Image[3][3]=sassafras.3.3,0,-24
+Image[4][3]=sassafras.3.4,0,-24
+Image[0][4]=sassafras.4.0,0,-24
+Image[1][4]=sassafras.4.1,0,-24
+Image[2][4]=sassafras.4.2,0,-24
+Image[3][4]=sassafras.4.3,0,-24
+Image[4][4]=sassafras.4.4,0,-24

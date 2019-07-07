@@ -1,7 +1,7 @@
 #
 #	PAK128.german
 #	Kompatibilitaetsliste
-#       Letzte Bearbeitung 01-2016 michelstadt
+#       Letzte Bearbeitung 05-2019 makie
 #
 # This file enables laoding of vehicles from a different set or to remove some
 # vehicles.
@@ -44,7 +44,13 @@ Rathaus_Wieslet
 Michelstadt_CITY
 Rathaus_Michelstadt
 koeln_turm
+COM_ALL_2001_A_38
 Koeln_turm
+COM_ALL_2001_A_38
+MGB_Commerzbanktower
+COM_ALL_1997_A_48
+MGB-Main-Tower
+COM_ALL_2000_A_32
 #--------------------------------------
 #--------------------------------------
 # factories
@@ -67,6 +73,10 @@ Weizenfeld
 AVL_Getreidehof_alt
 Nutzwald_NIC
 Holzsammelstelle1800_NIC
+Bauernhof_NIC
+Viehhof_NIC
+KFZ_Fabrik_NIC
+alte_Kfz-Fabrik
 #--------------------------------------
 # signals
 #--------------------------------------
@@ -74,6 +84,20 @@ Auswahlende-Signal
 Auswahl_Ende_Schild
 End of ChooseSignal
 Auswahl_Ende_Schild
+Signal
+Signal_hv
+Vorsignal (Zweiblocksignal)
+Vorsignal_hv
+Auswahlsignal
+Auswahlsignal_hv
+Streckensignal modern (Longblock)
+Streckensignal_hv_longblock
+Streckensignal_modern_priority
+Streckensignal_hv_priority
+# beachte das blank bei 
+# Streckensignal_priority hier am ende
+Streckensignal_priority 
+Streckensignal_priority
 #--------------------------------------
 # vehicles rail
 #--------------------------------------
@@ -242,7 +266,7 @@ COM_Telekom_Hochhaus_Bielefeld_39
 Werbetafel
 COM_Werbetafel_04
 alte_Post_Berlin
-COM_alte_Post_Berlin_02
+COM_ODL_alte_Post_Berlin_02
 IND_ALP_1801_B_01
 IND_ALP_1800_B_01
 IND_ALP_1800_A_01
@@ -288,4 +312,6 @@ RES_ALP_1960_A_04
 RES_MGB_1983_A_14
 RES_MGB_1983_B_14
 Wohnstallhaus_Beuren
+RES_ALL_1800_A_03
 RES_ALL_1733_Wohnstallhaus_Beuren_00
+RES_ALL_1800_A_03

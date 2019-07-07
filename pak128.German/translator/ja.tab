@@ -9,7 +9,7 @@
 #                             Language: ja Japanese                            #
 #                                Encoding: UTF-8                               #
 #                                Font: m+10r.bdf                               #
-#                           Date Created: 28.01 2019                           #
+#                           Date Created: 31.05 2019                           #
 #                                                                              #
 ################################################################################
 #________________________________bridge - power_________________________________
@@ -104,16 +104,12 @@ Krakow_am_See
 クラコウ アム シー駅舎[2x1]
 PostOffice1920_AirportBlg
 エアメール取扱所(1920)
-SiloBhf
-貨物駅
 Stahlverladung
 鉄鋼貨物駅
 Stellwerk1
 信号所
 VictorianStation
 ビクトリア様式の駅舎[2x1]
-Wasserkran
-給水施設
 #_______________________________building - habour_______________________________
 #_______________________________building - habour_______________________________
 Post_Dock
@@ -154,10 +150,14 @@ PlattformPers3
 旅客プラットホーム
 SandBahnsteig
 未舗装の貨物プラットホーム
+SiloBhf
+貨物駅
 small_early_bus_stop
 初期小型停留所
 Suspended_Monorail_Bahnhof_Modern
 懸垂式モノレール現代風駅
+Wasserkran
+給水施設
 #________________________________building - tow_________________________________
 #________________________________building - tow_________________________________
 Rathaus_Alp_alt
