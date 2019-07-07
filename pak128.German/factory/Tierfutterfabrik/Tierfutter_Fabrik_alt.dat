@@ -1,0 +1,38 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 
+# --------------------------------
+Obj=factory
+name=TierfutterFabrik_alt
+copyright=Rainer Bluhm/TonyBzt
+pax_level=1
+intro_year=1953
+intro_month=1
+retire_year=1983
+retire_month=12
+Location=land
+DistributionWeight=1
+Productivity=100
+InputGood[0]=Gerste
+InputCapacity[0]=800
+InputSupplier[0]=0
+InputFactor[0]=100
+OutputGood[0]=Tierfutter
+OutputCapacity[0]=400
+electricity_amount=35
+passenger_boost=1000
+mail_boost=500
+climates=desert, tropic, mediterran, temperate
+MapColor=118
+needs_ground=1
+Dims=2,2,1
+BackImage[0][0][0][0][0][0]=Tierfutter_Fabrik_alt.0.0
+BackImage[0][0][1][0][0][0]=Tierfutter_Fabrik_alt.0.1
+BackImage[0][1][0][0][0][0]=Tierfutter_Fabrik_alt.1.0
+BackImage[0][1][1][0][0][0]=Tierfutter_Fabrik_alt.1.1
+BackImage[0][0][0][0][0][1]=Tierfutter_Fabrik_alt.0.0
+BackImage[0][0][1][0][0][1]=Tierfutter_Fabrik_alt.0.1
+BackImage[0][1][0][0][0][1]=Tierfutter_Fabrik_alt.1.0
+BackImage[0][1][1][0][0][1]=Tierfutter_Fabrik_alt.1.1
+--------------------------------------------

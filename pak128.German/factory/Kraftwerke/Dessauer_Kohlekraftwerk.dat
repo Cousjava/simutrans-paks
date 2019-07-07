@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Industrie
 #	Neu: 02-2015
-#	Letzte Bearbeitung: $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
 # --------------------------------
 Obj=factory
 Name=Dessauer_Kohlekraftwerk
@@ -19,10 +18,10 @@ InputFactor[0]=30
 InputSupplier[0]=3
 passenger_boost=1000
 mail_boost=500
-expand_probability=1000
-expand_minimum=100
-expand_range=200
-expand_times=2
+expand_probability=50
+expand_minimum=1
+expand_range=10
+expand_times=20
 climates=mediterran
 MapColor=119
 dims=2,2,4

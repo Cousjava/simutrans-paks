@@ -88,7 +88,11 @@ cd ..\Textilfabrik
 cd ..\Tierfutterfabrik                                             
 & "$repo\makeobj.exe" "PAK128" "$repo/simutrans/PAK128.german/" "./" >>$repo\LOG\factory.log 2>>$repo\LOG\error_factory.log
 cd ..\Verpackungsmittel                                            
-& "$repo\makeobj.exe" "PAK128" "$repo/simutrans/PAK128.german/" "./" >>$repo\LOG\factory.log 2>>$repo\LOG\error_rohstoffe.log
+& "$repo\makeobj.exe" "PAK128" "$repo/simutrans/PAK128.german/" "./" >>$repo\LOG\factory.log 2>>$repo\LOG\error_factory.log
+cd ..\Versandhandel                                            
+& "$repo\makeobj.exe" "PAK128" "$repo/simutrans/PAK128.german/" "./" >>$repo\LOG\factory.log 2>>$repo\LOG\error_factory.log
+cd ..\Verwaltung                                           
+& "$repo\makeobj.exe" "PAK128" "$repo/simutrans/PAK128.german/" "./" >>$repo\LOG\factory.log 2>>$repo\LOG\error_factory.log
 cd ..\Werft                                                        
 & "$repo\makeobj.exe" "PAK128" "$repo/simutrans/PAK128.german/" "./" >>$repo\LOG\factory.log 2>>$repo\LOG\error_factory.log
 cd ..\Zement                                                       

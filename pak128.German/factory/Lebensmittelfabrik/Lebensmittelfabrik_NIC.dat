@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Industrie
 #	Neu: 06-2010
-#	Letzte Bearbeitung:
-#   $Date: 2017-04-09 09:56:45 +0200 (So, 09. Apr 2017) $ - $Author: NNW $
 # --------------------------------
 Obj=factory
 name=Lebensmittelfabrik_NIC
@@ -16,7 +14,6 @@ intro_month=1
 Location=City
 DistributionWeight=1
 Productivity=100
-pax_level=21
 InputGood[0]=Fleisch
 InputCapacity[0]=800
 InputGood[1]=Fisch

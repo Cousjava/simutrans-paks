@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Industrie
 #	Neu: 22-04-2015
-#	Letzte Bearbeitung:
-#   $Date: 2017-04-29 18:44:52 +0200 (Sa, 29. Apr 2017) $ - $Author: NNW $
 # --------------------------------
 Obj=factory
 name=Markt_NIC_1920
@@ -11,7 +9,7 @@ copyright=Pumuckl999
 pax_level=32
 intro_year=1920
 intro_month=1
-retire_year=1960
+retire_year=1995
 retire_month=1
 Location=City
 DistributionWeight=127

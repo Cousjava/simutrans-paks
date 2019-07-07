@@ -1,0 +1,11 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 28-04-2019 pumuckl999
+# --------------------------------
+obj=field
+name=Feld_Huehnerhof
+copyright=pumuckl999
+Image[0]=Huehnerhof_Feld.0.0
+Image[1]=Huehnerhof_Feld.0.1
+---------------------------------

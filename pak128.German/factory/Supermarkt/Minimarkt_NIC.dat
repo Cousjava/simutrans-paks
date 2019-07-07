@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Industrie
 #	Neu: 06-2012
-#	Letzte Bearbeitung:
-#   $Date: 2017-03-03 15:00:23 +0100 (Fr, 03. Mrz 2017) $ - $Author: NNW $
 # --------------------------------
 Obj=factory
 name=Minimarkt_NIC
@@ -30,7 +28,7 @@ InputFactor[3]=40
 InputSupplier[3]=1
 InputGood[4]=Dosenessen
 InputCapacity[4]=50
-InputFactor[6]=40
+InputFactor[4]=40
 InputSupplier[4]=1
 InputGood[5]=Milch
 InputCapacity[5]=100

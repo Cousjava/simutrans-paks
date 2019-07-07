@@ -1,0 +1,62 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu:
+#	Letzte Bearbeitung:
+#   $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
+# --------------------------------
+Obj=factory
+name=AVL_Baumarkt_NIC
+copyright=Lemuria
+pax_level=32
+intro_year=1970
+intro_month=1
+Location=City
+DistributionWeight=127
+Productivity=60
+InputGood[0]=Betonfertigteile
+InputCapacity[0]=240
+InputSupplier[0]=0
+InputGood[1]=Farben
+InputCapacity[1]=240
+InputSupplier[1]=0
+InputGood[2]=Maschinen
+InputSupplier[2]=0
+InputCapacity[2]=240
+InputGood[3]=Zement
+InputCapacity[3]=60
+InputSupplier[3]=0
+InputGood[4]=Bretter
+InputCapacity[4]=40
+InputSupplier[4]=0
+passenger_boost=1000
+mail_boost=500
+electricity_amount=1
+climates=rocky,tundra
+MapColor=132
+dims=2,3,4
+BackImage[0][0][0][0][0][0]=AVL_Baumarkt.0.0
+BackImage[0][0][1][0][0][0]=AVL_Baumarkt.0.1
+BackImage[0][1][0][0][0][0]=AVL_Baumarkt.0.2
+BackImage[0][1][1][0][0][0]=AVL_Baumarkt.0.3
+BackImage[0][2][0][0][0][0]=AVL_Baumarkt.0.4
+BackImage[0][2][1][0][0][0]=AVL_Baumarkt.1.0
+BackImage[1][0][0][0][0][0]=AVL_Baumarkt.1.1
+BackImage[1][0][1][0][0][0]=AVL_Baumarkt.1.2
+BackImage[1][0][2][0][0][0]=AVL_Baumarkt.1.3
+BackImage[1][1][0][0][0][0]=AVL_Baumarkt.1.4
+BackImage[1][1][1][0][0][0]=AVL_Baumarkt.2.0
+BackImage[1][1][2][0][0][0]=AVL_Baumarkt.2.1
+BackImage[2][0][0][0][0][0]=AVL_Baumarkt.2.2
+BackImage[2][0][1][0][0][0]=AVL_Baumarkt.2.3
+BackImage[2][1][0][0][0][0]=AVL_Baumarkt.2.4
+BackImage[2][1][1][0][0][0]=AVL_Baumarkt.3.0
+BackImage[2][2][0][0][0][0]=AVL_Baumarkt.3.1
+BackImage[2][2][1][0][0][0]=AVL_Baumarkt.3.2
+BackImage[3][0][0][0][0][0]=AVL_Baumarkt.3.3
+BackImage[3][0][1][0][0][0]=AVL_Baumarkt.3.4
+BackImage[3][0][2][0][0][0]=AVL_Baumarkt.4.0
+BackImage[3][1][0][0][0][0]=AVL_Baumarkt.4.1
+BackImage[3][1][1][0][0][0]=AVL_Baumarkt.4.2
+BackImage[3][1][2][0][0][0]=AVL_Baumarkt.4.3
+-----------------------------------------------

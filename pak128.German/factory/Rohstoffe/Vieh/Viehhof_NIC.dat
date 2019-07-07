@@ -1,20 +1,18 @@
 # -------------------------------
 #	PAK128.german
 #	Industrie
-#	Neu: 
-#	Letzte Bearbeitung:
-#   $Date: 2017-04-04 22:08:08 +0200 (Di, 04. Apr 2017) $ - $Author: gebeine $
+#	Kompatabilitätsversion
 # --------------------------------
 Obj=factory
 name=Viehhof_NIC
 copyright=Pumuckl999
-pax_level=1
+pax_level=15
 intro_year=1819
 intro_month=4
-retire_year=1970
-retire_month=1
+#retire_year=1970
+#retire_month=1
 Location=Land
-DistributionWeight=1
+DistributionWeight=0
 Productivity=80
 OutputGood[0]=Vieh
 OutputCapacity[0]=320
@@ -22,7 +20,16 @@ OutputGood[1]=Milch
 OutputCapacity[1]=320
 OutputGood[2]=Eier
 OutputCapacity[2]=320
+max_fields=20
+min_fields=1
+probability_to_spawn=20
+fields[0]=Weide_Kuh_braunweis
+storage_capacity[0]=60
+production_per_field[0]=15
+has_snow[0]=1
 electricity_amount=1
+passenger_boost=1000
+mail_boost=500
 climates=desert, tropic, mediterran, temperate
 MapColor=118
 needs_ground=1

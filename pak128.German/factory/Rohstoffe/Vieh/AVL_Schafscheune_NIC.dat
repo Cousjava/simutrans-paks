@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Industrie
 #	Neu: 
-#	Letzte Bearbeitung:
-#   $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
 # --------------------------------
 Obj=factory
 name=AVL_Schafsscheune_NIC
@@ -16,13 +14,12 @@ DistributionWeight=127
 Productivity=100
 OutputGood[0]=Wolle
 OutputCapacity[0]=100
-max_fields=6
+max_fields=20
 min_fields=1
-probability_to_spawn=50
+probability_to_spawn=10
 fields[0]=schafweide_1
 storage_capacity[0]=40
 production_per_field[0]=30
-spawn_weight[0]=50
 has_snow[0]=1
 electricity_amount=1
 climates=tundra

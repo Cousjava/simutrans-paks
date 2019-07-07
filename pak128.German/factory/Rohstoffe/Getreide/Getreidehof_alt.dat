@@ -2,18 +2,17 @@
 #	PAK128.german
 #	Industrie
 #	Neu: 04-2015
-#	Letzte Bearbeitung:
-#   $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
 # --------------------------------
 obj=factory
 name=Getreidehof_alt
 copyright=pumuckl999
+pax_level=11
 intro_year=1800
 intro_month=1
-retire_year=1975
+retire_year=1980
 Location=land
 DistributionWeight=10
-Productivity=100
+Productivity=25
 OutputGood[0]=Gerste
 OutputCapacity[0]=400
 OutputFactor[0]=100
@@ -23,30 +22,32 @@ OutputFactor[1]=100
 OutputGood[2]=Flachs
 OutputCapacity[2]=400
 OutputFactor[2]=70
-max_fields=15
+max_fields=35
 min_fields=0
-probability_to_spawn=8000
+probability_to_spawn=15
 fields[0]=getreidefeld_1
-storage_capacity[0]=100
+storage_capacity[0]=120
 production_per_field[0]=30
-spawn_weight[0]=8
+spawn_weight[0]=1
 has_snow[0]=1
 fields[1]=getreidefeld_2
-storage_capacity[1]=100
-production_per_field[1]=35
-spawn_weight[1]=62
+storage_capacity[1]=160
+production_per_field[1]=40
+spawn_weight[1]=10
 has_snow[1]=1
 fields[2]=flachsfeld_1
-storage_capacity[2]=100
-production_per_field[2]=35
-spawn_weight[2]=15
+storage_capacity[2]=160
+production_per_field[2]=40
+spawn_weight[2]=4
 has_snow[2]=1
 fields[3]=flachsfeld_2
-storage_capacity[3]=100
-production_per_field[3]=35
-spawn_weight[3]=15
+storage_capacity[3]=160
+production_per_field[3]=40
+spawn_weight[3]=6
 has_snow[3]=1
 electricity_amount=1
+passenger_boost=1000
+mail_boost=500
 MapColor=47
 climates=desert, tropic, mediterran, temperate, rocky
 dims=1,2,4

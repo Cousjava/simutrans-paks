@@ -1,0 +1,70 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 23-04-2019
+# --------------------------------
+Obj=factory
+name=Bauernhof_All1800
+copyright=Pumuckl999
+pax_level=5
+intro_year=1800
+intro_month=1
+#retire_year=
+#retire_month=
+Location=Land
+DistributionWeight=1
+Productivity=20
+OutputGood[0]=Eier
+OutputCapacity[0]=80
+OutputGood[1]=Gerste
+OutputFactor[1]=30
+OutputCapacity[1]=80
+min_fields=2
+max_fields=35
+probability_to_spawn=10
+fields[0]=Feld_Huehnerhof
+storage_capacity[0]=80
+production_per_field[0]=20
+has_snow[0]=1
+fields[1]=getreidefeld_2
+storage_capacity[1]=80
+production_per_field[1]=20
+has_snow[1]=1
+electricity_amount=1
+climates=desert, tropic, mediterran, temperate, tundra, rocky
+MapColor=118
+needs_ground=1
+dims=2,2,4
+BackImage[0][0][0][0][0][0]=Bauernhof_EierGerste.0.0
+BackImage[0][0][1][0][0][0]=Bauernhof_EierGerste.0.1
+BackImage[0][1][0][0][0][0]=Bauernhof_EierGerste.0.2
+BackImage[0][1][1][0][0][0]=Bauernhof_EierGerste.0.3
+BackImage[0][0][0][0][0][1]=Bauernhof_EierGerste.0.4
+BackImage[0][0][1][0][0][1]=Bauernhof_EierGerste.0.5
+BackImage[0][1][0][0][0][1]=Bauernhof_EierGerste.1.0
+BackImage[0][1][1][0][0][1]=Bauernhof_EierGerste.1.1
+BackImage[1][0][0][0][0][0]=Bauernhof_EierGerste.1.2
+BackImage[1][0][1][0][0][0]=Bauernhof_EierGerste.1.3
+BackImage[1][1][0][0][0][0]=Bauernhof_EierGerste.1.4
+BackImage[1][1][1][0][0][0]=Bauernhof_EierGerste.1.5
+BackImage[1][0][0][0][0][1]=Bauernhof_EierGerste.2.0
+BackImage[1][0][1][0][0][1]=Bauernhof_EierGerste.2.1
+BackImage[1][1][0][0][0][1]=Bauernhof_EierGerste.2.2
+BackImage[1][1][1][0][0][1]=Bauernhof_EierGerste.2.3
+BackImage[2][0][0][0][0][0]=Bauernhof_EierGerste.2.4
+BackImage[2][0][1][0][0][0]=Bauernhof_EierGerste.2.5
+BackImage[2][1][0][0][0][0]=Bauernhof_EierGerste.3.0
+BackImage[2][1][1][0][0][0]=Bauernhof_EierGerste.3.1
+BackImage[2][0][0][0][0][1]=Bauernhof_EierGerste.3.2
+BackImage[2][0][1][0][0][1]=Bauernhof_EierGerste.3.3
+BackImage[2][1][0][0][0][1]=Bauernhof_EierGerste.3.4
+BackImage[2][1][1][0][0][1]=Bauernhof_EierGerste.3.5
+BackImage[3][0][0][0][0][0]=Bauernhof_EierGerste.4.0
+BackImage[3][0][1][0][0][0]=Bauernhof_EierGerste.4.1
+BackImage[3][1][0][0][0][0]=Bauernhof_EierGerste.4.2
+BackImage[3][1][1][0][0][0]=Bauernhof_EierGerste.4.3
+BackImage[3][0][0][0][0][1]=Bauernhof_EierGerste.4.4
+BackImage[3][0][1][0][0][1]=Bauernhof_EierGerste.4.5
+BackImage[3][1][0][0][0][1]=Bauernhof_EierGerste.5.0
+BackImage[3][1][1][0][0][1]=Bauernhof_EierGerste.5.1
+--------------------------------------------

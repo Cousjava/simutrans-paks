@@ -2,9 +2,6 @@
 #	PAK128.german
 #	Industrie
 #	Neu: 
-#	Letzte Bearbeitung:
-#   03-03-2017 NNW
-#   05-04-2017 pumuckl999
 # --------------------------------
 Obj=factory
 Name=Schwimmdock
@@ -15,7 +12,7 @@ enables_post=1
 intro_year=1980
 intro_month=1
 location=water
-DistributionWeight=68
+DistributionWeight=8
 Productivity=2
 Range=1
 InputGood[0]=Schiffssektionen
@@ -26,10 +23,10 @@ Electricity_amount=0
 Electricity_boost=0
 passenger_boost=1000
 mail_boost=500
-expand_probability=1000
+expand_probability=40
 expand_minimum=1
-expand_range=2
-expand_times=1
+expand_range=1
+expand_times=5
 MapColor=97
 climates=desert
 dims=2,4,4

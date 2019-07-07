@@ -2,9 +2,6 @@
 #	PAK128.german
 #	Industrie
 #	Neu: 04-2011
-#	Letzte Bearbeitung:
-#    09-2011
-#    $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ $Author: NNW $
 # --------------------------------
 obj=factory
 name=ALP_Elektroshop_NIC
@@ -20,7 +17,7 @@ DistributionWeight=127
 Productivity=50
 InputGood[0]=Maschinen
 InputCapacity[0]=800
-InputFactor[3]=100
+InputFactor[0]=100
 InputSupplier[0]=0
 InputGood[1]=Computer
 InputCapacity[1]=400

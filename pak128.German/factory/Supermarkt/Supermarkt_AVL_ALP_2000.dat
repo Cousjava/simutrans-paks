@@ -1,8 +1,6 @@
 #	PAK128.german
 #	Buildings - factory
 #       Erstellt 01-2015
-#       Geaendert
-#	$Date$ - $Author$
 ----------------------------------------------------------------
 obj=factory
 name=Supermarkt_AVL_ALP_2000
@@ -11,7 +9,7 @@ level=30
 intro_year=2000
 retire_year=2999
 location=city
-DistributionWeight=10
+DistributionWeight=100
 Productivity=50
 InputGood[0]=Backwaren
 InputCapacity[0]=200

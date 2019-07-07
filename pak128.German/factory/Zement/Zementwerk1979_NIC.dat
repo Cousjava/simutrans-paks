@@ -2,13 +2,10 @@
 #	PAK128.german
 #	Industrie
 #	Neu: 2008
-#	Letzte Bearbeitung:
-#   03-03-1017 NNW
 # --------------------------------
 Obj=factory
 name=Zementwerk1979_NIC
 copyright=DiDi2004
-pax_level=10
 intro_year=1979
 intro_month=1
 retire_year=2300

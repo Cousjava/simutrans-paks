@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Industrie
 #	Neu: 01-2011 
-#	Letzte Bearbeitung:
-#	$Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
 # --------------------------------
 Obj=factory
 name=AVL_Muehle1983_NIC
@@ -17,8 +15,6 @@ Productivity=200
 InputGood[0]=Weizen
 InputCapacity[0]=800
 InputSupplier[0]=2
-InputGood[1]=Gerste
-InputCapacity[1]=800
 OutputGood[0]=Mehl
 OutputCapacity[0]=800
 electricity_amount=20

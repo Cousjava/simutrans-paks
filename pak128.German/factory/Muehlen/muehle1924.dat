@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Industrie
 #	Neu: 16-08-2018 
-#	Letzte Bearbeitung:
 # --------------------------------
 Obj=factory
 name=Muehle_1924
@@ -18,9 +17,6 @@ Productivity=100
 InputGood[0]=Weizen
 InputCapacity[0]=1600
 InputSupplier[0]=1
-InputGood[1]=Gerste
-InputCapacity[1]=1600
-InputSupplier[1]=1
 OutputGood[0]=Mehl
 OutputCapacity[0]=400
 electricity_amount=80

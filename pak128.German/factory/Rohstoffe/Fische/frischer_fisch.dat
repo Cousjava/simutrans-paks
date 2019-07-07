@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Industrie
 #	Neu: 06-03-2017
-#	Letzte Bearbeitung:
-#   $Date: 2017-04-08 09:32:38 +0200 (Sa, 08. Apr 2017) $ - $Author: NNW $
 # --------------------------------
 Obj=factory
 name=Frischfisch
@@ -11,7 +9,7 @@ copyright=pumuckl999
 intro_year=1800
 intro_month=1
 Location=water
-DistributionWeight=2
+DistributionWeight=15
 Productivity=50
 Range=150
 OutputGood[0]=Fisch

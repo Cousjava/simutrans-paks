@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Industrie
 #	Neu: 15-07-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 # --------------------------------
 Obj=factory
 name=Brennstoffhandel
@@ -13,7 +12,7 @@ intro_month=1
 retire_year=1990
 retire_month=12
 Location=City
-DistributionWeight=127
+DistributionWeight=100
 Productivity=30
 InputGood[0]=Kohle
 InputCapacity[0]=720

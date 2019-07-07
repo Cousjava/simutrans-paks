@@ -11,8 +11,7 @@ DistributionWeight=127
 Productivity=100
 Range=2
 pax_level=50
-# wir haben erst ab 1980 Computerhersteller und damit Abnehmer
-intro_year=1980 
+intro_year=1965
 intro_month=1
 #retire_year=
 #retire_month=

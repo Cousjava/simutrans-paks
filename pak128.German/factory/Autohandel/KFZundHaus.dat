@@ -27,7 +27,6 @@ InputSupplier[2]=1
 electricity_amount=10
 passenger_boost=2000
 mail_boost=500
-mail_boost=50
 MapColor=132
 climates=desert, tropic, ,tundra, mediterran, temperate, rocky
 dims=2,3,4

@@ -30,7 +30,7 @@ expand_probability=50
 # nach test makie 100 = nach 2 jahren, 50 = nach 4 Jahre, 10 = keine mehr 
 expand_minimum=1
 expand_range=5
-expand_times=10
+expand_times=20
 # Produktion wird um =+ expand_minumum + random( expand_range ) erhöht.
 climates=desert, tropic, mediterran, temperate
 MapColor=182

@@ -2,14 +2,10 @@
 #	PAK128.german
 #	Industrie
 #	Neu: 
-#	Letzte Bearbeitung:
-#    13-09-2015 The Transporter
-#	03-03-1017 NNW
 # --------------------------------
 Obj=factory
 name=Zementwerk1800_NIC
 copyright=Pumuckl999
-pax_level=10
 intro_year=1859
 intro_month=1
 retire_year=1914

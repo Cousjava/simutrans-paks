@@ -1,8 +1,6 @@
 #	PAK128.german
 #	Buildings - factory
 #       Erstellt 01-2015
-#       Geaendert 
-#	05-03-2016 NNW
 ----------------------------------------------------------------
 obj=factory
 name=Discounter_MGB_AVL_ALP_1990
@@ -27,7 +25,7 @@ InputCapacity[3]=400
 InputSupplier[3]=1
 InputGood[4]=Marzipan
 InputCapacity[4]=200
-InputFactor[6]=40
+InputFactor[4]=40
 InputSupplier[4]=1
 InputGood[5]=Milch
 InputCapacity[5]=400

@@ -2,7 +2,6 @@
 #	Industrie
 #	Neu:
 #	 16 April 2016 NNW
-#	Letzte Bearbeitung: $Date$ - $Author$
 #--------------------------------------------
 Obj=factory
 Name=NorddeutscherExporteur_1891
@@ -27,10 +26,6 @@ InputGood[2]=Maschinen
 InputCapacity[2]=800
 InputSupplier[2]=1
 InputFactor[2]=100
-# InputGood[3]=Chemikalien # 12-2018: kein Zulieferer lt. Chronologie
-# InputCapacity[3]=800
-# InputSupplier[3]=1
-InputFactor[3]=100
 InputGood[3]=Obst
 InputCapacity[3]=800
 InputSupplier[3]=1
@@ -39,6 +34,10 @@ InputGood[4]=Wein
 InputCapacity[4]=800
 InputSupplier[4]=1
 InputFactor[4]=100
+# InputGood[5]=Chemikalien # 12-2018: kein Zulieferer lt. Chronologie
+# InputCapacity[5]=800
+# InputSupplier[5]=1
+# InputFactor[5]=100
 MapColor=132
 electricity_amount=1
 passenger_demand=20

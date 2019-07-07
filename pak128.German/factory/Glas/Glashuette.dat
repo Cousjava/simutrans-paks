@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Industrie
 #	Neu: 
-#	Letzte Bearbeitung:
 # --------------------------------
 Obj=factory
 Name=Glasfabrik
@@ -25,7 +24,7 @@ InputSupplier[1]=1
 InputFactor[1]=150
 OutputGood[0]=Glas
 OutputCapacity[0]=200
-OutputFactor[1]=25
+OutputFactor[0]=25
 OutputGood[1]=Flaschen
 OutputCapacity[1]=400
 OutputFactor[1]=75

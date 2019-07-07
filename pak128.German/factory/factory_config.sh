@@ -87,7 +87,11 @@ $repo/makeobj PAK128 $repo/simutrans/PAK128.german/ ./ >> "$repo/LOG/factory.log
 cd ../Tierfutterfabrik
 $repo/makeobj PAK128 $repo/simutrans/PAK128.german/ ./ >> "$repo/LOG/factory.log" 2>> "$repo/LOG/error_factory.log"
 cd ../Verpackungsmittel
-$repo/makeobj PAK128 $repo/simutrans/PAK128.german/ ./ >> "$repo/LOG/factory.log" 2>> "$repo/LOG/error_rohstoffe.log"
+$repo/makeobj PAK128 $repo/simutrans/PAK128.german/ ./ >> "$repo/LOG/factory.log" 2>> "$repo/LOG/error_factory.log"
+cd ../Versandhandel
+$repo/makeobj PAK128 $repo/simutrans/PAK128.german/ ./ >> "$repo/LOG/factory.log" 2>> "$repo/LOG/error_factory.log"
+cd ../Verwaltung
+$repo/makeobj PAK128 $repo/simutrans/PAK128.german/ ./ >> "$repo/LOG/factory.log" 2>> "$repo/LOG/error_factory.log"
 cd ../Werft
 $repo/makeobj PAK128 $repo/simutrans/PAK128.german/ ./ >> "$repo/LOG/factory.log" 2>> "$repo/LOG/error_factory.log"
 cd ../Zement

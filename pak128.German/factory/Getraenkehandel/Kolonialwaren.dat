@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Industrie
 #	Neu: 13-08-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 # --------------------------------
 Obj=factory
 name=Gastwirtschaft_mit_Laden
@@ -13,7 +12,7 @@ intro_month=1
 retire_year=1980
 retire_month=12
 Location=City
-DistributionWeight=127
+DistributionWeight=80
 Productivity=20
 Range=4
 InputGood[0]=Bier

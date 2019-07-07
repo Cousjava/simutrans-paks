@@ -2,10 +2,6 @@
 #	PAK128.german
 #	Industrie
 #	Neu: 
-#	Letzte Bearbeitung:
-#    06-2011
-#    13-09-2015 The Transporter
-# $LastChangedDate: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
 # --------------------------------
 Obj=factory
 name=Verbrennungskraftwerk
@@ -28,7 +24,6 @@ Dims=3,3,1
 BackImage[0][0][0][0][0][0]=Verbrennungskraftwerk.0.0
 BackImage[0][0][1][0][0][0]=Verbrennungskraftwerk.0.1
 BackImage[0][0][2][0][0][0]=Verbrennungskraftwerk.0.2
-BackImage[0][0][0][1][0][0]=Verbrennungskraftwerk.3.0
 BackImage[0][1][0][0][0][0]=Verbrennungskraftwerk.1.0
 BackImage[0][1][1][0][0][0]=Verbrennungskraftwerk.1.1
 BackImage[0][1][2][0][0][0]=Verbrennungskraftwerk.1.2

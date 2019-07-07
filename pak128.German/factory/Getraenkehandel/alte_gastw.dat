@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Industrie
 #	Neu: 16-02-2017
-#	Letzte Bearbeitung: $Author: NNW $ - $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $
-#       19-08-2017 pumuckl999
 # --------------------------------
 Obj=factory
 name=AlteGastwirtschaft
@@ -11,8 +9,8 @@ copyright=pumuckl999
 pax_level=125
 intro_year=1800
 intro_month=1
-retire_year=1940
-retire_month=12
+#retire_year=1940
+#retire_month=12
 Location=City
 DistributionWeight=127
 Productivity=10

@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Industrie
 #	Neu: 03-05-2015
-#	Letzte Bearbeitung:
-#   $Date: 2017-03-03 15:00:23 +0100 (Fr, 03. Mär 2017) $ - $Author: NNW $
 # --------------------------------
 obj=factory
 name=Holzsammelstelle1990_NIC
@@ -11,33 +9,33 @@ copyright=RedRabbit
 level=5
 intro_year=1990
 intro_month=1
-location=land
+location=forest
 climates=tropic,mediterran,temperate,tundra,rocky
 DistributionWeight=1
 Productivity=310
 OutputGood[0]=Holz
 OutputCapacity[0]=500
-max_fields=10
-min_fields=5
-probability_to_spawn=10
+max_fields=30
+min_fields=3
+probability_to_spawn=20
 fields[0]=Holzsammelstelle_Feld1
 has_snow[0]=1
-spawn_weight[0]=15
+spawn_weight[0]=2
 production_per_field[0]=6
 storage_capacity[0]=50
 fields[1]=Holzsammelstelle_Feld2
 has_snow[1]=1
-spawn_weight[1]=15
+spawn_weight[1]=2
 production_per_field[1]=12
 storage_capacity[1]=50
 fields[2]=Holzsammelstelle_Feld3
 has_snow[2]=1
-spawn_weight[2]=30
+spawn_weight[2]=6
 production_per_field[2]=12
 storage_capacity[2]=50
 fields[3]=Holzsammelstelle_Feld4
 has_snow[3]=1 
-spawn_weight[3]=30
+spawn_weight[3]=6
 production_per_field[3]=12
 storage_capacity[3]=50
 electricity_amount=2
