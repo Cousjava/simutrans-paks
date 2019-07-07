@@ -3,10 +3,10 @@
 #	Neu:17-08-2017
 # --------------------------------
 obj=building
-name=Werbetafel
+name=COM_ALL_Werbetafel_04
 copyright=pumuckl999
 type=com
-level=7
+level=4
 chance=30
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 intro_year=1970

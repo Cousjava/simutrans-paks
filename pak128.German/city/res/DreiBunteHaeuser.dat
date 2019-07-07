@@ -4,7 +4,7 @@
 #       neu:  15-07-2018
 #---------------------------------------
 Obj=building
-Name=Fischerbruch_3Haeuser
+Name=RES_ALL_1880_Fischerbruch_3Haeuser_03
 copyright=pumuckl999
 Type=res
 intro_year=1880
@@ -14,9 +14,7 @@ retire_month=1
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 level=3
 chance=40
-
-needs_ground=
-0
+needs_ground=0
 dims=1,1,4
 BackImage[2][0][0][0][0][0]=DreiBunteHaeuser.0.0
 BackImage[1][0][0][0][0][0]=DreiBunteHaeuser.0.1

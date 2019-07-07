@@ -1,22 +1,19 @@
 #	PAK128.german
-
 #	Citybuildings commercial
 #       neu:  12-02-2018
 #---------------------------------------
 Obj=building
-Name=WohnstallhausBeuren
+Name=RES_ALL_1800_A_03
+# Wohnstallhaus_Beuren
 copyright=pumuckl999
 Type=res
-intro_year=1733
+intro_year=1800
+# intro_year=1733
 intro_month=7
-retire_year=1945
-retire_month=1
 climates=mediterran, tropic, desert
-level=0
+level=3
 chance=15
-
-needs_ground=
-0
+needs_ground=0
 dims=1,1,4
 BackImage[2][0][0][0][0][0]=WohnstallhausBeuren.0.0
 BackImage[1][0][0][0][0][0]=WohnstallhausBeuren.0.1

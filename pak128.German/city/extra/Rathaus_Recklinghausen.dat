@@ -1,0 +1,59 @@
+# -------------------------------
+#	PAK128.german
+#	Rathaeuser
+#	Neu:
+#	Letzte Bearbeitung:
+#    12-2012
+#    04-09-2015 The Transporter
+# --------------------------------
+Obj=building
+Name=Rathaus_Recklinghausen
+copyright=Lemuria
+Type=tow
+level=58
+Build_Time=19000
+intro_year=1908
+climates=temperate
+needs_ground=1
+dims=3,2,4
+BackImage[0][0][0][0][0][0]=Rathaus_Recklinghausen.0.0
+BackImage[0][0][0][1][0][0]=Rathaus_Recklinghausen.0.1
+BackImage[0][0][1][0][0][0]=Rathaus_Recklinghausen.0.2
+BackImage[0][0][1][1][0][0]=Rathaus_Recklinghausen.0.3
+BackImage[0][0][2][0][0][0]=Rathaus_Recklinghausen.0.4
+BackImage[0][0][2][1][0][0]=Rathaus_Recklinghausen.0.5
+BackImage[0][1][0][0][0][0]=Rathaus_Recklinghausen.0.6
+BackImage[0][1][0][1][0][0]=Rathaus_Recklinghausen.1.0
+BackImage[0][1][1][0][0][0]=Rathaus_Recklinghausen.1.1
+BackImage[0][1][2][0][0][0]=Rathaus_Recklinghausen.1.2
+BackImage[1][0][0][0][0][0]=Rathaus_Recklinghausen.1.3
+BackImage[1][0][0][1][0][0]=Rathaus_Recklinghausen.1.4
+BackImage[1][0][1][0][0][0]=Rathaus_Recklinghausen.1.5
+BackImage[1][0][1][1][0][0]=Rathaus_Recklinghausen.1.6
+BackImage[1][1][0][0][0][0]=Rathaus_Recklinghausen.2.0
+BackImage[1][1][0][1][0][0]=Rathaus_Recklinghausen.2.1
+BackImage[1][1][1][0][0][0]=Rathaus_Recklinghausen.2.2
+BackImage[1][2][0][0][0][0]=Rathaus_Recklinghausen.2.3
+BackImage[1][2][0][1][0][0]=Rathaus_Recklinghausen.2.4
+BackImage[1][2][1][0][0][0]=Rathaus_Recklinghausen.2.5
+BackImage[2][0][0][0][0][0]=Rathaus_Recklinghausen.2.6
+BackImage[2][0][0][1][0][0]=Rathaus_Recklinghausen.3.0
+BackImage[2][0][1][0][0][0]=Rathaus_Recklinghausen.3.1
+BackImage[2][0][1][1][0][0]=Rathaus_Recklinghausen.3.2
+BackImage[2][0][2][0][0][0]=Rathaus_Recklinghausen.3.3
+BackImage[2][0][2][1][0][0]=Rathaus_Recklinghausen.3.4
+BackImage[2][1][0][0][0][0]=Rathaus_Recklinghausen.3.5
+BackImage[2][1][0][1][0][0]=Rathaus_Recklinghausen.3.6
+BackImage[2][1][1][0][0][0]=Rathaus_Recklinghausen.4.0
+BackImage[2][1][2][0][0][0]=Rathaus_Recklinghausen.4.1
+BackImage[3][0][0][0][0][0]=Rathaus_Recklinghausen.4.2
+BackImage[3][0][0][1][0][0]=Rathaus_Recklinghausen.4.3
+BackImage[3][0][1][0][0][0]=Rathaus_Recklinghausen.4.4
+BackImage[3][0][1][1][0][0]=Rathaus_Recklinghausen.4.5
+BackImage[3][1][0][0][0][0]=Rathaus_Recklinghausen.4.6
+BackImage[3][1][0][1][0][0]=Rathaus_Recklinghausen.5.0
+BackImage[3][1][1][0][0][0]=Rathaus_Recklinghausen.5.1
+BackImage[3][2][0][0][0][0]=Rathaus_Recklinghausen.5.2
+BackImage[3][2][0][1][0][0]=Rathaus_Recklinghausen.5.3
+BackImage[3][2][1][0][0][0]=Rathaus_Recklinghausen.5.4
+---------------------------------------------------------

@@ -1,0 +1,29 @@
+#	PAK128.german
+#	Citybuildings industrial
+#       neu: 14-01-2019
+#--------------------------------------
+obj=building
+name=RES_AVL_1800_A_09
+# Goellheim_Haus_Gross
+copyright=pumuckl999
+type=res
+level=9
+chance=100
+intro_year=1800
+intro_month=1
+retire_year=1930
+retire_month=12
+needs_ground=0
+noinfo=0
+noconstruction=0
+climates=tundra
+dims=1,1,4
+BackImage[0][0][0][0][0][0]=RES_AVL_1800_L09_sommer.0.0
+BackImage[1][0][0][0][0][0]=RES_AVL_1800_L09_sommer.0.1
+BackImage[2][0][0][0][0][0]=RES_AVL_1800_L09_sommer.0.2
+BackImage[3][0][0][0][0][0]=RES_AVL_1800_L09_sommer.0.3
+BackImage[0][0][0][0][0][1]=RES_AVL_1800_L09_winter.0.0
+BackImage[1][0][0][0][0][1]=RES_AVL_1800_L09_winter.0.1
+BackImage[2][0][0][0][0][1]=RES_AVL_1800_L09_winter.0.2
+BackImage[3][0][0][0][0][1]=RES_AVL_1800_L09_winter.0.3
+#_EO_

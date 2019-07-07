@@ -1,0 +1,190 @@
+#------------------------------------------------------------------------------#
+#                                                                              #
+#                      Simutrans dat file res_L17_L32_128.dat                  #
+#                            for set: pak128.german                            #
+#                                                                              #
+# Name's convention:                                                           #
+# second number indicates level                                                #
+# first number indicates timeline:                                             #
+# 00-19 <1871                                                                  #
+# 20-39 1871-1945                                                              #
+# 40-59 1946-1970                                                              #
+# 60-79 >1971                                                                  #
+# Not matching names are supposed to be identical to pak.german which was      #
+# created before pak128.german.                                                #
+#--------------------------------------------------------------------------------
+# Level werden überarbeitet; Ziel u.a.: "Hochhäuser", i.e. soziale Brennpunkte #
+# tauchen eher am Stadtrand auf.					       #
+# Stand 07-2011								       #
+# -------------------------------------------------------------------------------
+
+Name=RES_R21_17
+# identical to pak.german
+copyright=MHz
+Obj=building
+Type=res
+Level=17
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1985
+retire_year=2999
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Süd][Ost/West][Höhe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L17_L32_128.5.1
+BackImage[0][0][0][0][0][1]=RES_L17_L32_128-winter.5.1
+--------------------------------------
+
+Name=RES_R60_17
+copyright=Alexander Brose
+Obj=building
+Type=res
+Level=17
+Chance=20
+climates=desert,tropic, mediterran
+intro_year=1970
+retire_year=2999
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L17_L32_128.5.2
+BackImage[0][0][0][0][0][1]=RES_L17_L32_128-winter.5.2
+BackImage[0][0][0][1][0][0]=RES_L17_L32_128.4.2
+BackImage[0][0][0][1][0][1]=RES_L17_L32_128-winter.4.2
+--------------------------------------
+
+Name=RES_R21_18
+# identical to pak.german
+copyright=MHz
+Obj=building
+Type=res
+Level=18
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1971
+intro_month=1
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Süd][Ost/West][Höhe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L17_L32_128.5.4
+BackImage[0][0][0][0][0][1]=RES_L17_L32_128-winter.5.4
+--------------------------------------
+
+Name=RES_R21_19
+# identical to pak.german
+copyright=MHz
+Obj=building
+Type=res
+Level=19
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1971
+intro_month=1
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Süd][Ost/West][Höhe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L17_L32_128.5.7
+BackImage[0][0][0][0][0][1]=RES_L17_L32_128-winter.5.7
+--------------------------------------
+
+Name=RES_R40_19
+copyright=MHz
+Obj=building
+Type=res
+Level=19
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1962
+retire_year=1974
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L17_L32_128.2.7
+BackImage[0][0][0][0][0][1]=RES_L17_L32_128-winter.2.7
+BackImage[0][0][0][1][0][0]=RES_L17_L32_128.1.7
+BackImage[0][0][0][1][0][1]=RES_L17_L32_128-winter.1.7
+--------------------------------------
+
+Name=RES_R21_20
+# identical to pak.german
+copyright=MHz
+Obj=building
+Type=res
+Level=20
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1971
+intro_month=1
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Süd][Ost/West][Höhe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L17_L32_128.5.10
+BackImage[0][0][0][0][0][1]=RES_L17_L32_128-winter.5.10
+--------------------------------------
+
+
+Name=RES_R21_21
+# identical to pak.german
+copyright=MHz
+Obj=building
+Type=res
+Level=12
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1971
+retire_year=1998
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Süd][Ost/West][Höhe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L17_L32_128.12.1
+BackImage[0][0][0][0][0][1]=RES_L17_L32_128-winter.12.1
+BackImage[0][0][0][1][0][0]=RES_L17_L32_128.11.1
+BackImage[0][0][0][1][0][1]=RES_L17_L32_128-winter.11.1
+--------------------------------------
+
+Name=RES_R21_22
+# identical to pak.german
+copyright=MHz
+Obj=building
+Type=res
+Level=3
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1961
+retire_year=1977
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Süd][Ost/West][Höhe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L17_L32_128.12.4
+BackImage[0][0][0][0][0][1]=RES_L17_L32_128-winter.12.4
+BackImage[0][0][0][1][0][0]=RES_L17_L32_128.11.4
+BackImage[0][0][0][1][0][1]=RES_L17_L32_128-winter.11.4
+--------------------------------------
+
+Name=RES_R21_23
+# identical to pak.german
+copyright=MHz
+Obj=building
+Type=res
+Level=7
+Chance=30
+climates=desert,tropic, mediterran
+intro_year=1963
+retire_year=1978
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Süd][Ost/West][Höhe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L17_L32_128.12.7
+BackImage[0][0][0][0][0][1]=RES_L17_L32_128-winter.12.7
+BackImage[0][0][0][1][0][0]=RES_L17_L32_128.11.7
+BackImage[0][0][0][1][0][1]=RES_L17_L32_128-winter.11.7
+--------------------------------------
+
+Name=RES_R21_24
+# identical to pak.german
+copyright=MHz
+Obj=building
+Type=res
+Level=8
+Chance=50
+climates=desert,tropic, mediterran
+intro_year=1972
+retire_year=1984
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Süd][Ost/West][Höhe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L17_L32_128.12.10
+BackImage[0][0][0][0][0][1]=RES_L17_L32_128-winter.12.10
+BackImage[0][0][0][1][0][0]=RES_L17_L32_128.11.10
+BackImage[0][0][0][1][0][1]=RES_L17_L32_128-winter.11.10
+--------------------------------------

@@ -1,0 +1,619 @@
+#------------------------------------------------------------------------------#
+#                                                                              #
+#                     Simutrans dat file res_L09_L16_128.dat                   #
+#                            for set: pak128.german                            #
+#                                                                              #
+# Name's convention:                                                           #
+# second number indicates level                                                #
+# first number indicates timeline:                                             #
+# 00-19 <1871                                                                  #
+# 20-39 1871-1945                                                              #
+# 40-59 1946-1970                                                              #
+# 60-79 >1971                                                                  #
+# Not matching names are supposed to be identical to pak.german which was      #
+# created before pak128.german.                                                #
+#--------------------------------------------------------------------------------
+
+
+Name=RES_R12_09
+# identical to pak.german
+copyright=MHz
+Obj=building
+Type=res
+Level=9
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1001
+retire_year=1928
+needs_ground=1
+# BackImage[Ausrichtung][Nord/S�d][Ost/West][H�he][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.2.1
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.2.1
+BackImage[0][0][0][1][0][0]=RES_L09_L16_128.1.1
+BackImage[0][0][0][1][0][1]=RES_L09_L16_128-winter.1.1
+--------------------------------------
+
+Name=RES_R20_09
+copyright=MHz
+Obj=building
+Type=res
+Level=9
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1948
+retire_year=2003
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L01_L08_128.5.1
+BackImage[0][0][0][0][0][1]=RES_L01_L08_128-winter.5.1
+--------------------------------------
+
+Name=RES_R21_09
+# identical to pak.german
+copyright=MHz
+Obj=building
+Type=res
+Level=9
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1965
+retire_year=2999
+needs_ground=1
+# BackImage[Ausrichtung][Nord/S�d][Ost/West][H�he][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.11.1
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.11.1
+--------------------------------------
+
+Name=RES_R40_09
+copyright=Alexander Brose
+Obj=building
+Type=res
+Level=9
+Chance=100
+climates=desert,tropic, mediterran  
+intro_year=1954
+retire_year=1969
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.5.1
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.5.1
+--------------------------------------
+
+Name=RES_R41_09
+copyright=Alexander Brose
+Obj=building
+Type=res
+Level=9
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1951
+retire_year=1966
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.8.2
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.8.2
+--------------------------------------
+
+Name=RES_R42_09
+copyright=MHz
+Obj=building
+Type=res
+Level=9
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1964
+retire_year=1985
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.8.3
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.8.3
+--------------------------------------
+
+Name=RES_R00_10
+copyright=MHz
+Obj=building
+Type=res
+Level=10
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1864
+retire_year=1938
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.1.4
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.1.4
+--------------------------------------
+
+Name=RES_R01_10
+copyright=MHz
+Obj=building
+Type=res
+Level=10
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1912
+retire_year=1930
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.1.5
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.1.5
+--------------------------------------
+
+Name=RES_R20_10
+copyright=MHz
+Obj=building
+Type=res
+Level=10
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1931
+retire_year=1953
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.5.4
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.5.4
+--------------------------------------
+
+Name=RES_R21_10
+# identical to pak.german
+copyright=MHz
+Obj=building
+Type=res
+Level=10
+Chance=60
+climates=desert,tropic, mediterran
+intro_year=1960
+intro_month=1
+needs_ground=1
+# BackImage[Ausrichtung][Nord/S�d][Ost/West][H�he][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.11.4
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.11.4
+--------------------------------------
+
+Name=RES_R22_10
+copyright=TonyBzt
+Obj=building
+Type=res
+Level=10
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1916
+retire_year=2999
+needs_ground=1
+dims=1,1,4
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+#Eingang von Norden:
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.6.6
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128-winter.6.6
+#Eingang von Osten:
+BackImage[1][0][0][0][0][0]=RES_L09_L16_128.6.5
+BackImage[1][0][0][0][0][0]=RES_L09_L16_128-winter.6.5
+#Eingang von Süden:
+BackImage[2][0][0][0][0][0]=RES_L09_L16_128.6.4
+BackImage[2][0][0][0][0][0]=RES_L09_L16_128-winter.6.4
+#Eingang von Westen:
+BackImage[3][0][0][0][0][0]=RES_L09_L16_128.6.7
+BackImage[3][0][0][0][0][0]=RES_L09_L16_128-winter.6.7
+-------------------------------------------
+
+Name=RES_R40_10
+copyright=MHz
+Obj=building
+Type=res
+Level=10
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1969
+retire_year=1998
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.8.4
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.8.4
+--------------------------------------
+
+Name=RES_R60_10
+copyright=MHz
+Obj=building
+Type=res
+Level=10
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1971
+retire_year=1992
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.11.5
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.11.5
+--------------------------------------
+
+Name=RES_R00_11
+copyright=MHz
+Obj=building
+Type=res
+Level=11
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1904
+retire_year=1919
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.1.7
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.1.7
+--------------------------------------
+
+Name=RES_R01_11
+copyright=MHz
+Obj=building
+Type=res
+Level=11
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1907
+retire_year=1918
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.1.8
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.1.8
+--------------------------------------
+
+Name=RES_R40_11
+copyright=MHz
+Obj=building
+Type=res
+Level=11
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1949
+retire_year=2999
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.8.7
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.8.7
+--------------------------------------
+
+Name=RES_R60_11
+copyright=MHz
+Obj=building
+Type=res
+Level=11
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=2002
+retire_year=2999
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.11.7
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.11.7
+--------------------------------------
+
+Name=RES_R61_11
+copyright=Hajo
+Obj=building
+Type=res
+Level=11
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1973
+retire_year=2999
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.11.8
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.11.8
+--------------------------------------
+
+Name=RES_R62_11
+copyright=MHz
+Obj=building
+Type=res
+Level=11
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1988
+retire_year=2999
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.11.9
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.11.9
+--------------------------------------
+
+Name=RES_R00_12
+copyright=MHz
+Obj=building
+Type=res
+Level=12
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1899
+retire_year=1919
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.1.10
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.1.10
+--------------------------------------
+
+Name=RES_R01_12
+copyright=MHz
+Obj=building
+Type=res
+Level=12
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1891
+retire_year=1916
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.1.11
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.1.11
+--------------------------------------
+
+Name=RES_R20_12
+copyright=MHz
+Obj=building
+Type=res
+Level=12
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1937
+retire_year=1964
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.5.10
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.5.10
+--------------------------------------
+
+Name=RES_R40_12
+copyright=MHz
+Obj=building
+Type=res
+Level=12
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1966
+retire_year=1986
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.8.10
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.8.10
+--------------------------------------
+
+Name=RES_R60_12
+copyright=MHz
+Obj=building
+Type=res
+Level=12
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1996
+retire_year=2999
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.11.10
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.11.10
+--------------------------------------
+
+Name=RES_R21_13
+# identical to pak.german
+copyright=MHz
+Obj=building
+Type=res
+Level=13
+Chance=60
+climates=desert,tropic, mediterran
+intro_year=1965
+retire_year=2999
+needs_ground=1
+# BackImage[Ausrichtung][Nord/S�d][Ost/West][H�he][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.24.1
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.24.1
+--------------------------------------
+
+Name=RES_R21_14
+# identical to pak.german
+copyright=MHz
+Obj=building
+Type=res
+Level=14
+Chance=60
+climates=desert,tropic, mediterran
+intro_year=1965
+retire_year=2999
+needs_ground=1
+# BackImage[Ausrichtung][Nord/S�d][Ost/West][H�he][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.24.4
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.24.4
+--------------------------------------
+
+Name=RES_R60_14
+copyright=MHz
+Obj=building
+Type=res
+Level=14
+Chance=70
+climates=desert,tropic, mediterran
+intro_year=1988
+retire_year=2999
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.22.4
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.22.4
+--------------------------------------
+
+Name=RES_R61_14
+copyright=MHz
+Obj=building
+Type=res
+Level=14
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1973
+retire_year=2188
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.23.4
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.23.4
+--------------------------------------
+
+Name=RES_R62_14
+copyright=MHz
+Obj=building
+Type=res
+Level=14
+Chance=30
+climates=desert,tropic, mediterran
+intro_year=1987
+retire_year=2502
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.22.6
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.22.6
+--------------------------------------
+
+Name=RES_R63_14
+copyright=MHz
+Obj=building
+Type=res
+Level=14
+Chance=30
+climates=desert,tropic, mediterran
+intro_year=1984
+retire_year=2999
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.23.6
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.23.6
+--------------------------------------
+
+Name=RES_R64_14
+copyright=MHz
+Obj=building
+Type=res
+Level=14
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1987
+retire_year=2999
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.24.5
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.24.5
+--------------------------------------
+
+Name=RES_R65_14
+copyright=MHz
+Obj=building
+Type=res
+Level=14
+Chance=40
+climates=desert,tropic, mediterran
+intro_year=1994
+retire_year=2036
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.24.6
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.24.6
+--------------------------------------
+
+Name=RES_R40_15
+copyright=MHz
+Obj=building
+Type=res
+Level=15
+Chance=80
+climates=desert,tropic, mediterran
+intro_year=1967
+retire_year=2999
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.21.7
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.21.7
+--------------------------------------
+
+Name=RES_R60_15
+copyright=MHz
+Obj=building
+Type=res
+Level=15
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1981
+retire_year=2999
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.24.7
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.24.7
+--------------------------------------
+
+Name=RES_R00_16
+copyright=MHz
+Obj=building
+Type=res
+Level=16
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1664
+retire_year=1931
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.14.10
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.14.10
+--------------------------------------
+
+Name=RES_R20_16
+copyright=MHz
+Obj=building
+Type=res
+Level=16
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1941
+retire_year=1964
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.18.10
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.18.10
+--------------------------------------
+
+Name=RES_R21_16
+copyright=MHz
+Obj=building
+Type=res
+Level=16
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1933
+retire_year=1971
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.18.11
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.18.11
+--------------------------------------
+
+Name=RES_R60_16
+copyright=MHz
+Obj=building
+Type=res
+Level=16
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1971
+retire_year=2999
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.24.10
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.24.10
+--------------------------------------
+
+Name=RES_R61_16
+copyright=MHz
+Obj=building
+Type=res
+Level=16
+Chance=100
+climates=desert,tropic, mediterran
+intro_year=1979
+retire_year=2099
+needs_ground=1
+# BackImage[Ausrichtung][Nord/Sued][Ost/West][Hoehe][Animation][Wintergrafik]
+BackImage[0][0][0][0][0][0]=RES_L09_L16_128.24.11
+BackImage[0][0][0][0][0][1]=RES_L09_L16_128-winter.24.11
+--------------------------------------

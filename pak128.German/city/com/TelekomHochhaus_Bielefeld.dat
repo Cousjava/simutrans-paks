@@ -4,7 +4,7 @@
 #       neu:  24-08-2018
 #---------------------------------------
 Obj=building
-Name=Telekom-Hochhaus_Bielefeld
+Name=COM_NDT_Telekom_Hochhaus_Bielefeld_39
 copyright=pumuckl999
 Type=com
 intro_year=1974
@@ -14,9 +14,7 @@ intro_month=7
 climates=mediterran, tropic, desert
 level=39
 chance=25
-
-needs_ground=
-0
+needs_ground=0
 dims=1,1,4
 BackImage[0][0][0][0][0][0]=TelekomHochhaus_Bielefeld.0.0
 BackImage[0][0][0][1][0][0]=TelekomHochhaus_Bielefeld.0.1

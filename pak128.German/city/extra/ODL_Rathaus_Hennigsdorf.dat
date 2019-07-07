@@ -2,14 +2,12 @@
 #	PAK128.german
 #	Rathaeuser
 #	Neu:
-#	Letzte Bearbeitung:
-#    04-09-2015 The Transporter
 # --------------------------------
 Obj=building
 Name=Rathaus_Hennigsdorf_01
 copyright=Pumuckl999
 Type=tow
-level=14
+level=16
 Build_Time=1200
 intro_year=2004
 climates=desert, tropic, mediterran
@@ -52,7 +50,7 @@ Obj=building
 Name=Rathaus_Hennigsdorf_04
 copyright=Pumuckl999
 Type=tow
-level=20
+level=22
 Build_Time=4000
 intro_year=2004
 climates=desert, tropic, mediterran
@@ -132,7 +130,7 @@ BackImage[1][0][1][1][0][1]=ODL_Rathaus_Hennigsdorf_09-winter.5.3
 BackImage[1][1][0][0][0][1]=ODL_Rathaus_Hennigsdorf_09-winter.4.2
 BackImage[1][1][0][1][0][1]=ODL_Rathaus_Hennigsdorf_09-winter.6.2
 BackImage[1][1][1][0][0][1]=ODL_Rathaus_Hennigsdorf_09-winter.4.3
-BackImage[1][1][1][0][0][1]=ODL_Rathaus_Hennigsdorf_09-winter.6.3
+BackImage[1][1][1][1][0][1]=ODL_Rathaus_Hennigsdorf_09-winter.6.3
 BackImage[2][0][0][0][0][0]=ODL_Rathaus_Hennigsdorf_09.3.4
 BackImage[2][0][0][1][0][0]=ODL_Rathaus_Hennigsdorf_09.5.4
 BackImage[2][0][1][0][0][0]=ODL_Rathaus_Hennigsdorf_09.3.5
@@ -164,13 +162,13 @@ BackImage[3][0][1][1][0][1]=ODL_Rathaus_Hennigsdorf_09-winter.5.7
 BackImage[3][1][0][0][0][1]=ODL_Rathaus_Hennigsdorf_09-winter.4.6
 BackImage[3][1][0][1][0][1]=ODL_Rathaus_Hennigsdorf_09-winter.6.6
 BackImage[3][1][1][0][0][1]=ODL_Rathaus_Hennigsdorf_09-winter.4.7
-BackImage[3][1][1][0][0][1]=ODL_Rathaus_Hennigsdorf_09-winter.6.7
+BackImage[3][1][1][1][0][1]=ODL_Rathaus_Hennigsdorf_09-winter.6.7
 ------------------------------------------------------------
 Obj=building
 Name=Rathaus_Hennigsdorf_17
 copyright=Pumuckl999
 Type=tow
-level=32
+level=44
 Build_Time=17000
 intro_year=2004
 climates=desert, tropic, mediterran
@@ -207,7 +205,7 @@ BackImage[1][0][1][1][0][1]=ODL_Rathaus_Hennigsdorf_17-winter.5.3
 BackImage[1][1][0][0][0][1]=ODL_Rathaus_Hennigsdorf_17-winter.4.2
 BackImage[1][1][0][1][0][1]=ODL_Rathaus_Hennigsdorf_17-winter.6.2
 BackImage[1][1][1][0][0][1]=ODL_Rathaus_Hennigsdorf_17-winter.4.3
-BackImage[1][1][1][0][0][1]=ODL_Rathaus_Hennigsdorf_17-winter.6.3
+BackImage[1][1][1][1][0][1]=ODL_Rathaus_Hennigsdorf_17-winter.6.3
 BackImage[2][0][0][0][0][0]=ODL_Rathaus_Hennigsdorf_17.3.4
 BackImage[2][0][0][1][0][0]=ODL_Rathaus_Hennigsdorf_17.5.4
 BackImage[2][0][1][0][0][0]=ODL_Rathaus_Hennigsdorf_17.3.5
@@ -239,13 +237,13 @@ BackImage[3][0][1][1][0][1]=ODL_Rathaus_Hennigsdorf_17-winter.5.7
 BackImage[3][1][0][0][0][1]=ODL_Rathaus_Hennigsdorf_17-winter.4.6
 BackImage[3][1][0][1][0][1]=ODL_Rathaus_Hennigsdorf_17-winter.6.6
 BackImage[3][1][1][0][0][1]=ODL_Rathaus_Hennigsdorf_17-winter.4.7
-BackImage[3][1][1][0][0][1]=ODL_Rathaus_Hennigsdorf_17-winter.6.7
+BackImage[3][1][1][1][0][1]=ODL_Rathaus_Hennigsdorf_17-winter.6.7
 ------------------------------------------------------------
 Obj=building
 Name=Rathaus_Hennigsdorf_26
 copyright=Pumuckl999
 Type=tow
-level=35
+level=58
 Build_Time=26000
 intro_year=2004
 climates=desert, tropic, mediterran
@@ -282,7 +280,7 @@ BackImage[1][0][1][1][0][1]=ODL_Rathaus_Hennigsdorf_26-winter.5.3
 BackImage[1][1][0][0][0][1]=ODL_Rathaus_Hennigsdorf_26-winter.4.2
 BackImage[1][1][0][1][0][1]=ODL_Rathaus_Hennigsdorf_26-winter.6.2
 BackImage[1][1][1][0][0][1]=ODL_Rathaus_Hennigsdorf_26-winter.4.3
-BackImage[1][1][1][0][0][1]=ODL_Rathaus_Hennigsdorf_26-winter.6.3
+BackImage[1][1][1][1][0][1]=ODL_Rathaus_Hennigsdorf_26-winter.6.3
 BackImage[2][0][0][0][0][0]=ODL_Rathaus_Hennigsdorf_26.3.4
 BackImage[2][0][0][1][0][0]=ODL_Rathaus_Hennigsdorf_26.5.4
 BackImage[2][0][1][0][0][0]=ODL_Rathaus_Hennigsdorf_26.3.5
@@ -314,5 +312,5 @@ BackImage[3][0][1][1][0][1]=ODL_Rathaus_Hennigsdorf_26-winter.5.7
 BackImage[3][1][0][0][0][1]=ODL_Rathaus_Hennigsdorf_26-winter.4.6
 BackImage[3][1][0][1][0][1]=ODL_Rathaus_Hennigsdorf_26-winter.6.6
 BackImage[3][1][1][0][0][1]=ODL_Rathaus_Hennigsdorf_26-winter.4.7
-BackImage[3][1][1][0][0][1]=ODL_Rathaus_Hennigsdorf_26-winter.6.7
+BackImage[3][1][1][1][0][1]=ODL_Rathaus_Hennigsdorf_26-winter.6.7
 --------------------------------------------------------------

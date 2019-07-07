@@ -1,0 +1,33 @@
+# -------------------------------
+#	PAK128.german
+#	Rathaeuser
+#	Neu:
+# --------------------------------
+Obj=building
+name=Rathaus_Lauingen1
+copyright=TonyBzt
+type=tow
+level=20  
+build_time=2000
+chance=100
+intro_year=1800
+needs_ground=1
+climates=tundra
+Dims=2,2,2
+BackImage[0][0][0][0][0][0]=RathausLauingen.0.0
+BackImage[0][0][1][0][0][0]=RathausLauingen.0.1
+BackImage[0][1][0][0][0][0]=RathausLauingen.1.0
+BackImage[0][1][1][0][0][0]=RathausLauingen.1.1
+BackImage[0][0][0][0][0][1]=RathausLauingen.0.2
+BackImage[0][0][1][0][0][1]=RathausLauingen.0.3
+BackImage[0][1][0][0][0][1]=RathausLauingen.1.2
+BackImage[0][1][1][0][0][1]=RathausLauingen.1.3
+BackImage[1][0][0][0][0][0]=RathausLauingen.2.0
+BackImage[1][0][1][0][0][0]=RathausLauingen.2.1
+BackImage[1][1][0][0][0][0]=RathausLauingen.3.0
+BackImage[1][1][1][0][0][0]=RathausLauingen.3.1
+BackImage[1][0][0][0][0][1]=RathausLauingen.2.2
+BackImage[1][0][1][0][0][1]=RathausLauingen.2.3
+BackImage[1][1][0][0][0][1]=RathausLauingen.3.2
+BackImage[1][1][1][0][0][1]=RathausLauingen.3.3
+--------------------------------------------------

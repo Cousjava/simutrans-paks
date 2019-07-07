@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Rathaeuser
 #	Neu:11-2014
-#	Letzte Bearbeitung:
-#    04-09-2015 The Transporter
 # --------------------------------
 Obj=building
 Name=Rathaus_Grimma_00
@@ -12,7 +10,8 @@ Type=tow
 level=12
 Build_Time=0
 intro_year=1800
-climates=desert, tropic
+retire_year=2004
+climates=mediterran
 needs_ground=1
 Dims=2,2,4
 BackImage[0][0][0][0][0][0]=Rathaus_Grimma_00.3.0
@@ -52,10 +51,11 @@ Obj=building
 Name=Rathaus_Grimma_04
 copyright=Pumuckl999
 Type=tow
-level=12
-Build_Time=0
+level=20
+Build_Time=4000
 intro_year=1800
-climates=desert, tropic
+retire_year=2004
+climates=mediterran
 needs_ground=1
 Dims=2,2,4
 BackImage[0][0][0][0][0][0]=Rathaus_Grimma_04.3.0
@@ -95,10 +95,11 @@ Obj=building
 Name=Rathaus_Grimma_10
 copyright=Pumuckl999
 Type=tow
-level=12
-Build_Time=0
+level=25
+Build_Time=8000
 intro_year=1800
-climates=desert, tropic
+retire_year=2004
+climates=mediterran
 needs_ground=1
 Dims=2,2,4
 BackImage[0][0][0][0][0][0]=Rathaus_Grimma_10.3.0
@@ -138,10 +139,11 @@ Obj=building
 Name=Rathaus_Grimma_13
 copyright=Pumuckl999
 Type=tow
-level=12
-Build_Time=0
+level=42
+Build_Time=13000
 intro_year=1800
-climates=desert, tropic
+retire_year=2004
+climates=mediterran
 needs_ground=1
 Dims=2,2,4
 BackImage[0][0][0][0][0][0]=Rathaus_Grimma_13.3.0

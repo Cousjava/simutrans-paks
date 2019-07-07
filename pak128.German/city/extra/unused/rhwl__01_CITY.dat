@@ -1,0 +1,23 @@
+# -------------------------------
+#	PAK128.german
+#	Rathaeuser
+# --------------------------------
+Obj=building
+Name=Rathaus_Wieslet_01_CITY
+copyright=pumuckl999
+Type=tow
+level=3
+build_time=0
+intro_year=1800
+chance=100
+climates=tundra
+needs_ground=0
+dims=1,1,4
+BackImage[0][0][0][0][0][0]=rhwl__01_CITY.0.0
+BackImage[1][0][0][0][0][0]=rhwl__01_CITY.0.1
+BackImage[2][0][0][0][0][0]=rhwl__01_CITY.0.2
+BackImage[3][0][0][0][0][0]=rhwl__01_CITY.0.3
+BackImage[0][0][0][0][0][1]=rhwl__01_CITY.1.0
+BackImage[1][0][0][0][0][1]=rhwl__01_CITY.1.1
+BackImage[2][0][0][0][0][1]=rhwl__01_CITY.1.2
+BackImage[3][0][0][0][0][1]=rhwl__01_CITY.1.3

@@ -1,0 +1,32 @@
+#	PAK128.german
+#	Citybuildings industrial
+#       neu: 11-01-2019
+#--------------------------------------
+obj=building
+name=COM_ALL_2010_A_10
+# Buerohaus_Ziethenstrasse_Guetersloh_klein
+copyright=pumuckl999
+type=com
+level=10
+chance=45
+intro_year=2013
+intro_month=1
+#retire_year=1970
+#retire_month=12
+needs_ground=0
+noinfo=0
+noconstruction=0
+
+climates=desert, tropic, mediterran, temperate, tundra, rocky
+dims=1,1,4
+#sommer
+BackImage[0][0][0][0][0][0]=COM_ALL_2010_L10_sommer.0.0
+BackImage[1][0][0][0][0][0]=COM_ALL_2010_L10_sommer.0.1
+BackImage[2][0][0][0][0][0]=COM_ALL_2010_L10_sommer.0.2
+BackImage[3][0][0][0][0][0]=COM_ALL_2010_L10_sommer.0.3
+#winter
+BackImage[0][0][0][0][0][1]=COM_ALL_2010_L10_winter.0.0
+BackImage[1][0][0][0][0][1]=COM_ALL_2010_L10_winter.0.1
+BackImage[2][0][0][0][0][1]=COM_ALL_2010_L10_winter.0.2
+BackImage[3][0][0][0][0][1]=COM_ALL_2010_L10_winter.0.3
+#_EO_
