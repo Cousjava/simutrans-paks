@@ -9,7 +9,7 @@
 obj=ground_obj
 name=Zugvoegel
 copyright=pumuckl999
-DistributionWeight=1
+DistributionWeight=10
 cost=10000
 seasons=1
 climates=mediterran, tropic, desert, water

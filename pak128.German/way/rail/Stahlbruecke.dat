@@ -1,0 +1,57 @@
+--------------------------------
+#	PAK128.german
+#	Gleise
+#	Neu:12-2011
+#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+---------------------------------
+Obj=bridge
+name=Stahlbruecke
+copyright=The Transporter
+waytype=track
+intro_year=1906
+intro_month=4
+cost=50000
+maintenance=80
+topspeed=160
+max_lenght=20
+pillar_distance=2
+pillar_asymmetric=1
+cursor=Stahlbruecke.2.0
+icon=> Stahlbruecke.2.5
+BackImage[NS]=Stahlbruecke.0.4
+FrontImage[NS]=Stahlbruecke.1.4
+FrontImage2[NS]=Stahlbruecke.4.0
+BackImage[EW]=Stahlbruecke.0.5
+FrontImage[EW]=Stahlbruecke.1.5
+FrontImage2[EW]=Stahlbruecke.4.0
+BackStart[N]=Stahlbruecke.0.0
+FrontStart[N]=Stahlbruecke.1.0
+FrontStart2[N]=Stahlbruecke.4.0
+BackStart[S]=Stahlbruecke.0.2
+FrontStart[S]=Stahlbruecke.1.2
+FrontStart2[S]=Stahlbruecke.4.0
+BackStart[E]=Stahlbruecke.0.1
+FrontStart[E]=Stahlbruecke.1.1
+FrontStart2[E]=Stahlbruecke.4.0
+BackStart[W]=Stahlbruecke.0.3
+FrontStart[W]=Stahlbruecke.1.3
+FrontStart2[W]=Stahlbruecke.4.0
+BackRamp[N]=Stahlbruecke.2.1
+FrontRamp[N]=Stahlbruecke.3.2
+FrontRamp2[N]=Stahlbruecke.4.0
+BackRamp[S]=Stahlbruecke.2.3
+FrontRamp[S]=Stahlbruecke.3.4
+FrontRamp2[S]=Stahlbruecke.4.0
+BackRamp[E]=Stahlbruecke.2.4
+FrontRamp[E]=Stahlbruecke.3.5
+FrontRamp2[E]=Stahlbruecke.4.0
+BackRamp[W]=Stahlbruecke.2.2
+FrontRamp[W]=Stahlbruecke.3.3
+FrontRamp2[W]=Stahlbruecke.4.0
+backPillar[S]=Stahlbruecke.3.0
+FrontPillar[S]=Stahlbruecke.4.0
+FrontPillar2[S]=Stahlbruecke.4.0
+backPillar[W]=Stahlbruecke.3.1
+FrontPillar[W]=Stahlbruecke.4.0
+FrontPillar2[W]=Stahlbruecke.4.0
+--------------------------------

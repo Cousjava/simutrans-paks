@@ -1,0 +1,56 @@
+--------------------------------
+#	PAK128.german
+#	Schwebebahn
+#	Neu:01-2011
+#	Letzte Bearbeitung 
+#    09-08-2015 The Transporter
+---------------------------------
+Obj=bridge
+Name=Schwebebahn_p_bridge
+copyright=yoshi & Fabio Gonella
+waytype=monorail_track
+intro_year=1901
+intro_month=3
+cost=300000
+maintenance=4000
+topspeed=70
+pillar_distance=1
+icon=> schwebebahn_bridge.3.0
+cursor=schwebebahn_bridge.3.1
+BackImage[NS]=schwebebahn_bridge.0.0
+FrontImage[NS]=schwebebahn_bridge.3.2
+FrontImage2[NS]=schwebebahn_bridge.3.2
+BackImage[EW]=schwebebahn_bridge.0.1
+FrontImage[EW]=schwebebahn_bridge.3.2
+FrontImage2[EW]=schwebebahn_bridge.3.2
+BackRamp[N]=schwebebahn_bridge.2.0
+FrontRamp[N]=schwebebahn_bridge.3.2
+FrontRamp2[N]=schwebebahn_bridge.3.2
+BackRamp[S]=schwebebahn_bridge.2.2
+FrontRamp[S]=schwebebahn_bridge.3.2
+FrontRamp2[S]=schwebebahn_bridge.3.1
+BackRamp[E]=schwebebahn_bridge.2.3
+FrontRamp[E]=schwebebahn_bridge.3.2
+FrontRamp2[E]=schwebebahn_bridge.3.2
+BackRamp[W]=schwebebahn_bridge.2.1
+FrontRamp[W]=schwebebahn_bridge.3.2
+FrontRamp2[W]=schwebebahn_bridge.3.2
+BackStart[N]=schwebebahn_bridge.1.2
+FrontStart[N]=schwebebahn_bridge.3.2
+FrontStart2[N]=schwebebahn_bridge.3.2
+BackStart[S]=schwebebahn_bridge.1.0
+FrontStart[S]=schwebebahn_bridge.3.2
+FrontStart2[S]=schwebebahn_bridge.3.2
+BackStart[E]=schwebebahn_bridge.1.1
+FrontStart[E]=schwebebahn_bridge.3.2
+FrontStart2[E]=schwebebahn_bridge.3.2
+BackStart[W]=schwebebahn_bridge.1.3
+FrontStart[W]=schwebebahn_bridge.3.2
+FrontStart2[W]=schwebebahn_bridge.3.2
+backPillar[S]=schwebebahn_bridge.3.2
+FrontPillar[S]=schwebebahn_bridge.3.2
+FrontPillar2[S]=schwebebahn_bridge.3.2
+backPillar[W]=schwebebahn_bridge.3.2
+FrontPillar[W]=schwebebahn_bridge.3.2
+FrontPillar2[W]=schwebebahn_bridge.3.2
+------------------------------------------

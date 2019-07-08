@@ -1,0 +1,10 @@
+#--------------------------------
+#	PAK128.german
+#	ground Outside
+#    letzte Bearbeitung: 
+#--------------------------------
+Obj=ground
+Name=Outside
+copyright=  PAK128.german V 1.2.beta (Rev. 210)
+Image[0][0]=Outside.0.0
+------------------------------

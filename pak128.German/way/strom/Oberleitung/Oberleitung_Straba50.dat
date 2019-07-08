@@ -1,0 +1,68 @@
+--------------------------------
+#	PAK128.german
+#	Oberleitung
+#	Neu:01-2011
+#	Letzte Bearbeitung 
+#    09-08-2015 The Transporter
+---------------------------------
+obj=way-object
+name=Strassenbahn_Oberleitung_alt
+copyright=Timothy Baldock&Gwalch
+waytype=tram_track
+own_waytype=electrified_track
+intro_year=1925
+intro_month=1
+cost=4000
+maintenance=20
+topspeed=50
+cursor=Oberleitung_Straba50.2.5
+icon=> Oberleitung_Straba50.3.5
+frontimage[-]=Oberleitung_Straba50.6.4
+frontimage[N]=Oberleitung_Straba50.6.2
+frontimage[S]=Oberleitung_Straba50.6.0
+frontimage[E]=Oberleitung_Straba50.6.1
+frontimage[W]=Oberleitung_Straba50.6.3
+frontimage[NS]=Oberleitung_Straba50.0.0
+frontimage[EW]=Oberleitung_Straba50.0.1
+frontimage[NSE]=Oberleitung_Straba50.4.1
+frontimage[NSW]=Oberleitung_Straba50.4.0
+frontimage[NEW]=Oberleitung_Straba50.4.3
+frontimage[SEW]=Oberleitung_Straba50.4.2
+frontimage[NSEW]=Oberleitung_Straba50.4.4
+frontimage[NE]=Oberleitung_Straba50.0.3
+frontimage[SW]=Oberleitung_Straba50.0.2
+frontimage[NW]=Oberleitung_Straba50.0.4
+frontimage[SE]=Oberleitung_Straba50.0.5
+frontdiagonal[NE]=-
+frontdiagonal[SE]=-
+frontdiagonal[NW]=-
+frontdiagonal[SW]=-
+frontimageUp[3]=Oberleitung_Straba50.8.2
+frontimageUp[6]=Oberleitung_Straba50.8.3
+frontimageUp[9]=Oberleitung_Straba50.8.1
+frontimageUp[12]=Oberleitung_Straba50.8.0
+backimage[-]=Oberleitung_Straba50.7.4
+backimage[N]=Oberleitung_Straba50.7.2
+backimage[S]=Oberleitung_Straba50.7.0
+backimage[E]=Oberleitung_Straba50.7.1
+backimage[W]=Oberleitung_Straba50.7.3
+backimage[NS]=Oberleitung_Straba50.1.0
+backimage[EW]=Oberleitung_Straba50.1.1
+backimage[NSE]=Oberleitung_Straba50.5.1
+backimage[NSW]=Oberleitung_Straba50.5.0
+backimage[NEW]=Oberleitung_Straba50.5.3
+backimage[SEW]=Oberleitung_Straba50.5.2
+backimage[NSEW]=Oberleitung_Straba50.5.4
+backimage[NE]=Oberleitung_Straba50.1.3
+backimage[SW]=Oberleitung_Straba50.1.2
+backimage[NW]=Oberleitung_Straba50.1.4
+backimage[SE]=Oberleitung_Straba50.1.5
+backdiagonal[NE]=-
+backdiagonal[SE]=-
+backdiagonal[NW]=-
+backdiagonal[SW]=-
+backimageUp[3]=Oberleitung_Straba50.9.2
+backimageUp[6]=Oberleitung_Straba50.9.3
+backimageUp[9]=Oberleitung_Straba50.9.1
+backimageUp[12]=Oberleitung_Straba50.9.0
+------------------------------------------------

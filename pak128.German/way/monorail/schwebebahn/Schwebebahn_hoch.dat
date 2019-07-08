@@ -1,0 +1,44 @@
+--------------------------------
+#	PAK128.german
+#	Schwebebahn
+#	Neu:01-2011
+#	Letzte Bearbeitung 
+#    09-08-2015 The Transporter
+---------------------------------
+obj=way
+name=Suspended_Monorail_Track
+copyright=yoshi
+waytype=monorail_track
+intro_year=1901
+intro_month=3
+system_type=1
+cost=210000
+maintenance=3000
+topspeed=70
+icon=> schwebebahn_hoch.6.2
+cursor=schwebebahn_hoch.6.3
+Image[S]=schwebebahn_hoch.0.0
+Image[W]=schwebebahn_hoch.0.1
+Image[N]=schwebebahn_hoch.0.2
+Image[E]=schwebebahn_hoch.0.3
+Image[SW]=schwebebahn_hoch.1.0
+Image[SE]=schwebebahn_hoch.1.1
+Image[NE]=schwebebahn_hoch.1.2
+Image[NW]=schwebebahn_hoch.1.3
+Image[NS]=schwebebahn_hoch.2.0
+Image[EW]=schwebebahn_hoch.2.1
+Image[NSEW]=schwebebahn_hoch.2.2
+Image[-]=schwebebahn_hoch.2.3
+Image[NEW]=schwebebahn_hoch.3.0
+Image[NSE]=schwebebahn_hoch.3.1
+Image[SEW]=schwebebahn_hoch.3.2
+Image[NSW]=schwebebahn_hoch.3.3
+ImageUP[12]=schwebebahn_hoch.4.0
+ImageUP[9]=schwebebahn_hoch.4.1
+ImageUP[3]=schwebebahn_hoch.4.2
+ImageUP[6]=schwebebahn_hoch.4.3
+Diagonal[SW]=schwebebahn_hoch.5.0
+Diagonal[SE]=schwebebahn_hoch.5.1
+Diagonal[NE]=schwebebahn_hoch.5.2
+Diagonal[NW]=schwebebahn_hoch.5.3
+-------------------------------------

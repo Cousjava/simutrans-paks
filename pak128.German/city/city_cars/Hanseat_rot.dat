@@ -1,0 +1,23 @@
+#---------------------------------
+#	PAK128.german
+#	CityCar
+#    Neu: 
+#    letzte Bearbeitung:
+#    07-2012
+#    04-09-2015 The Transporter
+#---------------------------------
+Obj=citycar
+Name=Hanseat_rot
+DistributionWeight=8
+intro_year=1949
+retire_year=1990
+speed=60
+Image[S]=Hanseat.0.1
+Image[N]=Hanseat.0.2
+Image[E]=Hanseat.0.3
+Image[W]=Hanseat.0.4
+Image[SE]=Hanseat.0.5
+Image[NW]=Hanseat.0.6
+Image[NE]=Hanseat.0.7
+Image[SW]=Hanseat.0.8
+------------------------

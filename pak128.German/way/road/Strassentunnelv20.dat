@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Strassen
+#	Neu:27-08-2017
+#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+-------------------------
+obj=tunnel
+name=Strassentunnel20
+copyright=MiP, pumuckl999
+waytype=road
+intro_year=530
+intro_month=8
+retire_year=1900
+retire_month=2
+cost=50000
+maintenance=10
+topspeed=20
+icon=> Strassentunnelv20.4.0
+cursor=Strassentunnelv20.0.0,0,-16
+FrontImage[N][0]=Strassentunnelv20.2.0
+BackImage[N][0]=Strassentunnelv20.0.0
+FrontImage[S][0]=Strassentunnelv20.2.2
+BackImage[S][0]=Strassentunnelv20.0.2
+FrontImage[E][0]=Strassentunnelv20.2.1
+BackImage[E][0]=Strassentunnelv20.0.1
+FrontImage[W][0]=Strassentunnelv20.2.3
+BackImage[W][0]=Strassentunnelv20.0.3
+FrontImage[N][1]=Strassentunnelv20.3.0
+BackImage[N][1]=Strassentunnelv20.1.0
+FrontImage[S][1]=Strassentunnelv20.3.2
+BackImage[S][1]=Strassentunnelv20.1.2
+FrontImage[E][1]=Strassentunnelv20.3.1
+BackImage[E][1]=Strassentunnelv20.1.1
+FrontImage[W][1]=Strassentunnelv20.3.3
+BackImage[W][1]=Strassentunnelv20.1.3

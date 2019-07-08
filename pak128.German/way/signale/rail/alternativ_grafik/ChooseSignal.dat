@@ -1,0 +1,20 @@
+obj=roadsign
+copyright=TonyBzt
+Name=ChooseSignal
+waytype=track
+intro_year=1835
+cost=2500
+is_signal=1
+free_route=1
+Icon=> ChooseSignal-PAK.2.7
+Cursor=ChooseSignal-PAK.3.7
+# red right, red left, green right, green left
+Image[0]=ChooseSignal-PAK.0.0
+Image[1]=ChooseSignal-PAK.0.1
+Image[2]=ChooseSignal-PAK.0.2
+Image[3]=ChooseSignal-PAK.0.3
+Image[4]=ChooseSignal-PAK.0.4
+Image[5]=ChooseSignal-PAK.0.5
+Image[6]=ChooseSignal-PAK.0.6
+Image[7]=ChooseSignal-PAK.0.7
+--------------------

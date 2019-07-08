@@ -1,0 +1,116 @@
+--------------------------------
+#	PAK128.german
+#	Signale
+#	Neu:01-2013
+---------------------------------
+Obj=roadsign
+Name=Signal
+copyright=The Transporter
+waytype=track
+intro_year=1970
+cost=450
+is_signal=1
+Icon=> Lichtsignale.0.8
+Cursor=Lichtsignale.0.9
+# RED
+Image[0]=Lichtsignale.0.0
+Image[1]=Lichtsignale.0.1
+Image[2]=Lichtsignale.0.2
+Image[3]=Lichtsignale.0.3
+# GREEN
+Image[4]=Lichtsignale.0.4
+Image[5]=Lichtsignale.0.5
+Image[6]=Lichtsignale.0.6
+Image[7]=Lichtsignale.0.7
+---------------------------------------
+Obj=roadsign
+Name=Vorsignal (Zweiblocksignal)
+copyright=The Transporter
+waytype=track
+intro_year=1970
+cost=450
+is_presignal=1
+Icon=> Lichtsignale.1.8
+Cursor=Lichtsignale.1.9
+# RED
+Image[0]=Lichtsignale.1.0
+Image[1]=Lichtsignale.1.1
+Image[2]=Lichtsignale.1.2
+Image[3]=Lichtsignale.1.3
+# GREEN
+Image[4]=Lichtsignale.1.4
+Image[5]=Lichtsignale.1.5
+Image[6]=Lichtsignale.1.6
+Image[7]=Lichtsignale.1.7
+# YELLOW
+Image[8]=Lichtsignale.5.0
+Image[9]=Lichtsignale.5.1
+Image[10]=Lichtsignale.5.2
+Image[11]=Lichtsignale.5.3
+---------------------------------------
+Obj=roadsign
+Name=Auswahlsignal
+copyright=The Transporter
+waytype=track
+intro_year=1970
+cost=450
+is_signal=1
+free_route=1
+Icon=> Lichtsignale.2.8
+Cursor=Lichtsignale.2.9
+# RED
+Image[0]=Lichtsignale.2.0
+Image[1]=Lichtsignale.2.1
+Image[2]=Lichtsignale.2.2
+Image[3]=Lichtsignale.2.3
+# GREEN
+Image[4]=Lichtsignale.2.4
+Image[5]=Lichtsignale.2.5
+Image[6]=Lichtsignale.2.6
+Image[7]=Lichtsignale.2.7
+---------------------------------------
+Obj=roadsign
+Name=Streckensignal modern (Longblock)
+copyright=The Transporter
+waytype=track
+intro_year=1970
+cost=450
+is_longblocksignal=1
+Icon=> Lichtsignale.3.8
+Cursor=Lichtsignale.3.9
+# RED
+Image[0]=Lichtsignale.3.0
+Image[1]=Lichtsignale.3.1
+Image[2]=Lichtsignale.3.2
+Image[3]=Lichtsignale.3.3
+# GREEN
+Image[4]=Lichtsignale.3.4
+Image[5]=Lichtsignale.3.5
+Image[6]=Lichtsignale.3.6
+Image[7]=Lichtsignale.3.7
+---------------------------------------
+Obj=roadsign
+Name=Streckensignal_modern_priority
+copyright=The Transporter
+waytype=track
+intro_year=1970
+cost=450
+is_prioritysignal=1
+Icon=> Lichtsignale.3.8
+Cursor=Lichtsignale.3.9
+# RED
+Image[0]=Lichtsignale.3.0
+Image[1]=Lichtsignale.3.1
+Image[2]=Lichtsignale.3.2
+Image[3]=Lichtsignale.3.3
+# GREEN
+Image[4]=Lichtsignale.3.4
+Image[5]=Lichtsignale.3.5
+Image[6]=Lichtsignale.3.6
+Image[7]=Lichtsignale.3.7
+# YELLOW
+Image[8]=Lichtsignale.5.1
+Image[9]=Lichtsignale.5.2
+Image[10]=Lichtsignale.5.3
+Image[11]=Lichtsignale.5.4
+---------------------------------------

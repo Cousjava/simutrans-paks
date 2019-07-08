@@ -1,0 +1,25 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 
+#    Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=AirStop_2
+Copyright=The Transporter
+type=stop
+waytype=air
+Level=4
+cost=256000
+maintenance=24
+intro_year=1918
+intro_month=1
+NoInfo=1
+Dims=1,1,4
+cursor=Abstellflaeche2.0.4
+icon=> Abstellflaeche2.0.5
+BackImage[0][0][0][0][0]=Abstellflaeche2.0.0
+BackImage[1][0][0][0][0]=Abstellflaeche2.0.3
+BackImage[2][0][0][0][0]=Abstellflaeche2.0.2
+BackImage[3][0][0][0][0]=Abstellflaeche2.0.1
+----------------------------------------------

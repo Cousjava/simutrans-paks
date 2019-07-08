@@ -1,0 +1,21 @@
+--------------------------------
+#	PAK128.german
+#	Signale
+#	Neu:01-2011
+#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ $Author: NNW $
+---------------------------------
+obj=roadsign
+name=Privatstrasse
+copyright=The Transporter
+waytype=road
+intro_year=1900
+intro_month=1
+cost=450
+is_private=1
+cursor=Privatstrasse.0.4
+icon=> Privatstrasse.0.5
+Image[0]=Privatstrasse.0.0
+Image[1]=Privatstrasse.0.2
+Image[2]=Privatstrasse.0.1
+Image[3]=Privatstrasse.0.3
+-------------------------------

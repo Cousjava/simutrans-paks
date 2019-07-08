@@ -1,0 +1,27 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 
+#	Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=1920_AirDepot
+type=depot
+waytype=air
+intro_year=1912
+intro_month=1
+cost=50000
+maintenance=8
+NoInfo=1
+Dims=1,1,4
+icon=> Luftdepot1920.1.0
+cursor=Luftdepot1920.1.1
+FrontImage[0][0][0][0][0]=Luftdepot1920.0.2
+BackImage[0][0][0][0][0]=Luftdepot1920.1.2
+FrontImage[1][0][0][0][0]=Luftdepot1920.0.3
+BackImage[1][0][0][0][0]=Luftdepot1920.1.2
+FrontImage[2][0][0][0][0]=Luftdepot1920.0.0
+BackImage[2][0][0][0][0]=Luftdepot1920.1.2
+FrontImage[3][0][0][0][0]=Luftdepot1920.0.1
+BackImage[3][0][0][0][0]=Luftdepot1920.1.2
+------------------------------------------------

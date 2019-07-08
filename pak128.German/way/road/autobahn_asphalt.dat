@@ -1,0 +1,69 @@
+--------------------------------
+#	PAK128.german
+#	Strassen
+#	Neu:07-2014
+#   Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+---------------------------------
+Obj=way
+Name=Asphalt-Autobahn
+Copyright=The Transporter
+waytype=road
+intro_year=1975
+intro_month=1
+cost=12000
+maintenance=30
+topspeed=200
+icon=> autobahn_asphalt.3.1
+cursor=autobahn_asphalt.3.2
+Image[-][0]=autobahn_asphalt.1.2
+Image[N][0]=autobahn_asphalt.1.5
+Image[S][0]=autobahn_asphalt.2.1
+Image[E][0]=autobahn_asphalt.2.2
+Image[W][0]=autobahn_asphalt.2.0
+Image[NS][0]=autobahn_asphalt.1.0
+Image[EW][0]=autobahn_asphalt.1.1
+Image[NSE][0]=autobahn_asphalt.0.2
+Image[NSW][0]=autobahn_asphalt.0.4
+Image[NEW][0]=autobahn_asphalt.0.1
+Image[SEW][0]=autobahn_asphalt.0.3
+Image[NSEW][0]=autobahn_asphalt.1.2
+Image[NE][0]=autobahn_asphalt.3.0
+Image[SE][0]=autobahn_asphalt.2.3
+Image[NW][0]=autobahn_asphalt.2.4
+Image[SW][0]=autobahn_asphalt.2.5
+Diagonal[NE][0]=autobahn_asphalt.3.0
+Diagonal[SE][0]=autobahn_asphalt.2.3
+Diagonal[NW][0]=autobahn_asphalt.2.4
+Diagonal[SW][0]=autobahn_asphalt.2.5
+ImageUp[3][0]=autobahn_asphalt.1.3
+ImageUp[6][0]=autobahn_asphalt.1.4
+ImageUp[9][0]=autobahn_asphalt.0.0
+ImageUp[12][0]=autobahn_asphalt.0.5
+#Winter
+#Image[-][1]=asphalt_road-128-winter.1.2
+#Image[N][1]=asphalt_road-128-winter.1.5
+#Image[S][1]=asphalt_road-128-winter.2.1
+#Image[E][1]=asphalt_road-128-winter.2.2
+#Image[W][1]=asphalt_road-128-winter.2.0
+#Image[NS][1]=asphalt_road-128-winter.1.0
+#Image[EW][1]=asphalt_road-128-winter.1.1
+#Image[NSE][1]=asphalt_road-128-winter.0.2
+#Image[NSW][1]=asphalt_road-128-winter.0.4
+#Image[NEW][1]=asphalt_road-128-winter.0.1
+#Image[SEW][1]=asphalt_road-128-winter.0.3
+#Image[NSEW][1]=asphalt_road-128-winter.1.2
+#Image[NE][1]=asphalt_road-128-winter.4.3
+#Image[SE][1]=asphalt_road-128-winter.4.0
+#Image[NW][1]=asphalt_road-128-winter.4.1
+#Image[SW][1]=asphalt_road-128-winter.4.2
+#Diagonal[NE][1]=asphalt_road-128-winter.3.0
+#Diagonal[SE][1]=asphalt_road-128-winter.2.3
+#Diagonal[NW][1]=asphalt_road-128-winter.2.4
+#Diagonal[SW][1]=asphalt_road-128-winter.2.5
+#ImageUp[3][1]=asphalt_road-128-winter.1.3
+#ImageUp[6][1]=asphalt_road-128-winter.1.4
+#ImageUp[9][1]=asphalt_road-128-winter.0.0
+#ImageUp[12][1]=asphalt_road-128-winter.0.5
+----------------------------------------------
+
+

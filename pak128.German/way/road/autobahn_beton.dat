@@ -1,0 +1,43 @@
+--------------------------------
+#	PAK128.german
+#	Strassen
+#	Neu:08-2012
+#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+---------------------------------
+Obj=way
+Name=Betonierte Autobahn
+Copyright=The Transporter
+waytype=road
+intro_year=1935
+intro_month=1
+retire_year=1975
+retire_month=1
+cost=10000
+maintenance=25
+topspeed=130
+icon=> autobahn_beton.3.1
+cursor=autobahn_beton.3.2
+Image[-][0]=autobahn_beton.1.2
+Image[N][0]=autobahn_beton.1.5
+Image[S][0]=autobahn_beton.2.1
+Image[E][0]=autobahn_beton.2.2
+Image[W][0]=autobahn_beton.2.0
+Image[NS][0]=autobahn_beton.1.0
+Image[EW][0]=autobahn_beton.1.1
+Image[NSE][0]=autobahn_beton.0.2
+Image[NSW][0]=autobahn_beton.0.4
+Image[NEW][0]=autobahn_beton.0.1
+Image[SEW][0]=autobahn_beton.0.3
+Image[NSEW][0]=autobahn_beton.1.2
+Image[NE][0]=autobahn_beton.4.3
+Image[SE][0]=autobahn_beton.4.0
+Image[NW][0]=autobahn_beton.4.1
+Image[SW][0]=autobahn_beton.4.2
+Diagonal[NE][0]=autobahn_beton.3.0
+Diagonal[SE][0]=autobahn_beton.2.3
+Diagonal[NW][0]=autobahn_beton.2.4
+Diagonal[SW][0]=autobahn_beton.2.5
+ImageUp[3][0]=autobahn_beton.1.3
+ImageUp[6][0]=autobahn_beton.1.4
+ImageUp[9][0]=autobahn_beton.0.0
+ImageUp[12][0]=autobahn_beton.0.5

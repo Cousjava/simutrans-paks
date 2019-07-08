@@ -1,0 +1,22 @@
+#---------------------------------
+#	PAK128.german
+#	CityCar
+#    Neu: 
+#    letzte Bearbeitung:
+#    04-09-2015 The Transporter
+#---------------------------------
+Obj=citycar
+Name=Epoche3CityCar4
+DistributionWeight=4
+intro_year=1970
+#retire_year=1989
+speed=150
+Image[S]=Epoche3CityCar4.0.0
+Image[N]=Epoche3CityCar4.0.1
+Image[E]=Epoche3CityCar4.0.2
+Image[W]=Epoche3CityCar4.0.3
+Image[SE]=Epoche3CityCar4.0.4
+Image[NW]=Epoche3CityCar4.0.5
+Image[NE]=Epoche3CityCar4.0.6
+Image[SW]=Epoche3CityCar4.0.7
+-------------------------------

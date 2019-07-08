@@ -1,0 +1,45 @@
+--------------------------------
+#	PAK128.german
+#	Schwebebahn
+#	Neu:01-2011
+#	Letzte Bearbeitung 
+#    09-08-2015 The Transporter
+---------------------------------
+obj=way
+name=Schwebebahn_p_ground
+copyright=yoshi & Fabio Gonella
+waytype=monorail_track
+system_type=0
+intro_year=1901
+intro_month=3
+cost=150000
+maintenance=3500
+topspeed=120
+draw_as_ding=1
+icon=> schwebebahn_niedrig.6.2
+cursor=schwebebahn_niedrig.6.3
+Image[S]=schwebebahn_niedrig.0.0
+Image[W]=schwebebahn_niedrig.0.1
+Image[N]=schwebebahn_niedrig.0.2
+Image[E]=schwebebahn_niedrig.0.3
+Image[SW]=schwebebahn_niedrig.1.0
+Image[SE]=schwebebahn_niedrig.1.1
+Image[NE]=schwebebahn_niedrig.1.2
+Image[NW]=schwebebahn_niedrig.1.3
+Image[NS]=schwebebahn_niedrig.2.0
+Image[EW]=schwebebahn_niedrig.2.1
+Image[NSEW]=schwebebahn_niedrig.2.2
+Image[-]=schwebebahn_niedrig.2.3
+Image[NEW]=schwebebahn_niedrig.3.0
+Image[NSE]=schwebebahn_niedrig.3.1
+Image[SEW]=schwebebahn_niedrig.3.2
+Image[NSW]=schwebebahn_niedrig.3.3
+ImageUP[12]=schwebebahn_niedrig.4.0
+ImageUP[9]=schwebebahn_niedrig.4.1
+ImageUP[3]=schwebebahn_niedrig.4.2
+ImageUP[6]=schwebebahn_niedrig.4.3
+Diagonal[SW]=schwebebahn_niedrig.5.0
+Diagonal[SE]=schwebebahn_niedrig.5.1
+Diagonal[NE]=schwebebahn_niedrig.5.2
+Diagonal[NW]=schwebebahn_niedrig.5.3
+---------------------------------------

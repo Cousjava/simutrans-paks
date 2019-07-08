@@ -1,0 +1,29 @@
+--------------------------------
+#	PAK128.german
+#	Signale
+#	Neu:01-2013
+---------------------------------
+Obj=roadsign
+Name=Streckensignal (Longblock)
+copyright=The Transporter
+waytype=track
+intro_year=1835
+intro_month=1
+retire_year = 1955
+retire_month = 12
+cost=450
+is_longblocksignal=1
+is_signal=1
+Icon=> Longblocksignal.0.8
+Cursor=Longblocksignal.0.9
+# RED
+Image[0]=Longblocksignal.0.0
+Image[1]=Longblocksignal.0.1
+Image[2]=Longblocksignal.0.2
+Image[3]=Longblocksignal.0.3
+# GREEN
+Image[4]=Longblocksignal.0.4
+Image[5]=Longblocksignal.0.5
+Image[6]=Longblocksignal.0.6
+Image[7]=Longblocksignal.0.7
+----------------------------------

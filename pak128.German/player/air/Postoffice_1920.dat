@@ -1,0 +1,27 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 
+#    Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=PostOffice1920_AirportBlg
+type=extension
+waytype=air
+Level=2
+cost=128000
+maintenance=16
+enables_post=1
+intro_year=1918
+intro_month=1
+#retire_year=1935
+#retire_month=1
+NoInfo=1
+Dims=1,1,2
+icon=> Airport_1920.2.2
+cursor=Airport_1920.2.3
+BackImage[1][0][0][0][0]=Airport_1920.2.1
+#BackImage[1][1][0][0][0]=Airport_1920.0.2
+BackImage[0][0][0][0][0]=Airport_1920.2.0
+#BackImage[0][0][0][0][0]=Airport_1920.0.0
+------------------------------------------------

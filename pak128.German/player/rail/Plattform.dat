@@ -1,0 +1,29 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 
+#    Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=Plattform
+copyright=TonyBzt
+intro_year=1920
+intro_month=1
+type=stop
+Level=6
+cost=384000
+maintenance=48
+waytype=track
+enables_ware=1
+Dims=1,1,2
+icon=> Plattform.0.5
+cursor=Plattform.0.4
+BackImage[0][0][0][0][0][0]=Plattform.0.0
+BackImage[1][0][0][0][0][0]=Plattform.0.1
+FrontImage[0][0][0][0][0][0]=Plattform.0.2
+FrontImage[1][0][0][0][0][0]=Plattform.0.3
+BackImage[0][0][0][0][0][1]=Plattform.1.0
+BackImage[1][0][0][0][0][1]=Plattform.1.1
+FrontImage[0][0][0][0][0][1]=Plattform.1.2
+FrontImage[1][0][0][0][0][1]=Plattform.1.3
+--------------------------------------------

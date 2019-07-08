@@ -1,0 +1,20 @@
+--------------------------------
+#	PAK128.german
+#	Signale
+#	Neu:08-2015
+#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+---------------------------------
+obj=roadsign
+name=Auswahl_Ende_Schild
+copyright=fherb
+waytype=track
+intro_year = 1835
+cost=450
+end_of_choose=1
+Icon=> Auswahl_Ende_Schild.0.5
+Cursor=Auswahl_Ende_Schild.0.4
+Image[0]=Auswahl_Ende_Schild.0.0
+Image[1]=Auswahl_Ende_Schild.0.2
+Image[2]=Auswahl_Ende_Schild.0.1
+Image[3]=Auswahl_Ende_Schild.0.3
+-----------------------------------

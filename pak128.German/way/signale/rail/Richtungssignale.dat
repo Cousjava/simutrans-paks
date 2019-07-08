@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Signale
+#	Neu:12-2013
+#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+---------------------------------
+Obj=roadsign
+Name=Richtungssignal_stop
+copyright=The Transporter - BR84
+waytype=track
+intro_year=1970
+cost=450
+single_way=1
+Icon=> Richtungssignale.0.8
+Cursor=Richtungssignale.0.9
+Image[0]=Richtungssignale.0.0
+Image[1]=Richtungssignale.0.1
+Image[2]=Richtungssignale.0.2
+Image[3]=Richtungssignale.0.3
+------------------------------------
+------------------------------------
+Obj=roadsign
+Name=Richtungssignal_frei
+copyright=The Transporter - BR84
+waytype=track
+intro_year=1970
+cost=450
+single_way=1
+Icon=> Richtungssignale.0.11
+Cursor=Richtungssignale.0.10
+Image[0]=Richtungssignale.0.5
+Image[1]=Richtungssignale.0.4
+Image[2]=Richtungssignale.0.7
+Image[3]=Richtungssignale.0.6
+---------------------------------

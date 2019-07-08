@@ -1,0 +1,23 @@
+#---------------------------------
+#	PAK128.german
+#	CityCar
+#    Neu: 
+#    letzte Bearbeitung:
+#    07-2012
+#    04-09-2015 The Transporter
+#---------------------------------
+Obj=citycar
+Name=Kaefer_schwarz
+DistributionWeight=10
+intro_year=1949
+retire_year=1970
+speed=120
+Image[S]=Kaefer.0.1
+Image[N]=Kaefer.0.2
+Image[E]=Kaefer.0.3
+Image[W]=Kaefer.0.4
+Image[SE]=Kaefer.0.5
+Image[NW]=Kaefer.0.6
+Image[NE]=Kaefer.0.7
+Image[SW]=Kaefer.0.8
+----------------------

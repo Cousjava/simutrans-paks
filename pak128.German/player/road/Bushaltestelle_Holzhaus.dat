@@ -1,0 +1,28 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 
+#    letzte Bearbeitung:
+#    $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+#---------------------------------
+obj=building
+name=Bushaltestelle_Holzhaus
+copyright=Dirk John
+type=stop
+waytype=road
+level=2
+cost=64000
+maintenance=16
+enables_pax=1
+enables_post=0
+enables_ware=0
+intro_year=1850
+intro_month=7
+Dims=1,1,2
+icon=> Bushaltestelle_Holzhaus.2.1
+cursor=Bushaltestelle_Holzhaus.2.0 
+BackImage[0][0][0][0][0][0]=Bushaltestelle_Holzhaus.0.0
+BackImage[1][0][0][0][0][0]=Bushaltestelle_Holzhaus.0.1
+FrontImage[0][0][0][0][0][0]=Bushaltestelle_Holzhaus.1.0
+FrontImage[1][0][0][0][0][0]=Bushaltestelle_Holzhaus.1.1
+----------------------------------------------------------

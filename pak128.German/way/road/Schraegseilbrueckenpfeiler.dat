@@ -1,0 +1,21 @@
+--------------------------------
+#	PAK128.german
+#	Strassen
+#	Neu:07-2013
+#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+---------------------------------
+Obj=roadsign
+Name=Pfeiler_fuer_Schraegseilbruecke
+copyright=The Transporter
+waytype=road
+intro_year=1965
+intro_month=1
+cost=450
+min_speed=1
+Icon=> Schraegseilpfeiler.0.2
+Cursor=Schraegseilpfeiler.0.3
+Image[0]=Schraegseilpfeiler.0.1
+Image[1]=Schraegseilpfeiler.0.0
+Image[2]=Schraegseilpfeiler.1.1
+Image[3]=Schraegseilpfeiler.1.2
+---------------------------------------

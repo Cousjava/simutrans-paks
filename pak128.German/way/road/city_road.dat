@@ -1,0 +1,37 @@
+--------------------------------
+#	PAK128.german
+#	Strassen
+#	Neu:07-2011
+#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+---------------------------------
+Obj=way
+Name=city_road
+copyright=The Transporter
+waytype=road
+intro_year=1912
+intro_month=1
+cost=2000
+maintenance=6
+topspeed=50
+icon=> city_road-128.3.2
+cursor=city_road-128.3.1
+Image[-]=city_road-128.1.2
+Image[N]=city_road-128.1.5
+Image[S]=city_road-128.2.1
+Image[E]=city_road-128.2.2
+Image[W]=city_road-128.2.0
+Image[NS]=city_road-128.1.0
+Image[EW]=city_road-128.1.1
+Image[NSE]=city_road-128.0.2
+Image[NSW]=city_road-128.0.4
+Image[NEW]=city_road-128.0.1
+Image[SEW]=city_road-128.0.3
+Image[NSEW]=city_road-128.1.2
+Image[NE]=city_road-128.3.0
+Image[SE]=city_road-128.2.3
+Image[NW]=city_road-128.2.4
+Image[SW]=city_road-128.2.5
+ImageUp[3]=city_road-128.1.3
+ImageUp[6]=city_road-128.1.4
+ImageUp[9]=city_road-128.0.0
+ImageUp[12]=city_road-128.0.5

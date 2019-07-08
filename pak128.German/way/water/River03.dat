@@ -1,0 +1,61 @@
+--------------------------------
+#	PAK128.german
+#	Fluss
+#	Neu:01-2011
+#	Letzte Bearbeitung 
+#    09-08-2015 The Transporter
+---------------------------------
+Obj=way
+Name=river_03
+copyright=Fabio Gonella
+waytype=water
+system_type=255
+intro_year=1700
+intro_month=1
+cost=5000
+maintenance=0
+topspeed=5
+max_weight=20
+icon=> river.0.6
+cursor=river.7.4,0,-16
+Image[-][0]=river.7.4
+Image[N][0]=river.4.2
+Image[S][0]=river.4.0
+Image[E][0]=river.4.1
+Image[W][0]=river.4.3
+Image[NS][0]=river.5.0
+Image[EW][0]=river.5.1
+Image[NSE][0]=river.5.3
+Image[NSW][0]=river.5.2
+Image[NEW][0]=river.5.4
+Image[SEW][0]=river.6.4
+Image[NSEW][0]=river.7.4
+Image[NE][0]=river.6.0
+Image[SE][0]=river.6.1
+Image[NW][0]=river.6.2
+Image[SW][0]=river.6.3
+ImageUp[3][0]=river.7.2
+ImageUp[6][0]=river.7.3
+ImageUp[9][0]=river.7.1
+ImageUp[12][0]=river.7.0
+Image[-][1]=river.7.4
+Image[N][1]=river.4.7
+Image[S][1]=river.4.5
+Image[E][1]=river.4.6
+Image[W][1]=river.4.8
+Image[NS][1]=river.5.5
+Image[EW][1]=river.5.6
+Image[NSE][1]=river.5.8
+Image[NSW][1]=river.5.7
+Image[NEW][1]=river.5.9
+Image[SEW][1]=river.6.9
+Image[NSEW][1]=river.7.9
+Image[NE][1]=river.6.5
+Image[SE][1]=river.6.6
+Image[NW][1]=river.6.7
+Image[SW][1]=river.6.8
+ImageUp[3][1]=river.7.7
+ImageUp[6][1]=river.7.8
+ImageUp[9][1]=river.7.6
+ImageUp[12][1]=river.7.5
+------------------------------

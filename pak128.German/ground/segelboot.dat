@@ -8,7 +8,7 @@
 obj=ground_obj
 name=Segelboot
 copyright=pumuckl999
-DistributionWeight=2
+DistributionWeight=20
 cost=10000
 seasons=1
 climates=water

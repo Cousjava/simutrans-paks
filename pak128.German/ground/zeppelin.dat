@@ -8,10 +8,10 @@
 obj=ground_obj
 name=Zeppelin
 copyright=pumuckl999
-DistributionWeight=1
+DistributionWeight=5
 cost=10000
 seasons=1
-climates=mediterran, tropic, desert, water
+climates=desert, tropic, mediterran, temperate, tundra, rocky, water
 speed=10
 waytype=air
 Image[W][0]=zeppelin.0.0

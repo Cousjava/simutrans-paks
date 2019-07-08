@@ -1,0 +1,25 @@
+--------------------------------
+#	PAK128.german
+#	Signale
+#	Neu:01-2011
+---------------------------------
+Obj=roadsign
+Name=Signals
+copyright=The Transporter / Makie
+waytype=track
+intro_year=1835
+retire_year = 1955
+retire_month = 12
+cost=450
+is_signal=1
+Icon=> Formsignal.0.8
+Cursor=Formsignal.0.9
+Image[0]=Formsignal.0.0
+Image[1]=Formsignal.0.1
+Image[2]=Formsignal.0.2
+Image[3]=Formsignal.0.3
+Image[4]=Formsignal.0.4
+Image[5]=Formsignal.0.5
+Image[6]=Formsignal.0.6
+Image[7]=Formsignal.0.7
+---------------------------------------

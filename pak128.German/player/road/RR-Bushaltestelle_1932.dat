@@ -1,0 +1,29 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 
+#    letzte Bearbeitung:
+#    $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+#---------------------------------
+Obj=building
+Name=Ueberdachter_Bushalt_1932
+type=stop
+waytype=road
+copyright=RedRabbit
+enables_pax=1
+enables_post=0
+Level=3
+cost=96000
+maintenance=24
+intro_year=1922
+intro_month=4
+retire_year=1960
+retire_month=7
+Dims=1,1,2
+icon=> RR-Bushaltestellen.1.4
+cursor=RR-Bushaltestellen.1.5
+BackImage[0][0][0][0][0]=RR-Bushaltestellen.1.2
+FrontImage[0][0][0][0][0]=RR-Bushaltestellen.1.0
+BackImage[1][0][0][0][0]=RR-Bushaltestellen.1.3
+FrontImage[1][0][0][0][0]=RR-Bushaltestellen.1.1
+---------------------------------------------------------

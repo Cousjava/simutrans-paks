@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Signale
+#	Neu:01-2011
+#	Letzte Bearbeitung $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+---------------------------------
+obj=roadsign
+copyright=yoshi
+Name=choose_signal_monorail
+waytype=monorail_track
+cost=450
+is_signal=1
+free_route=1
+Icon=> Schwebebahn_Auswahlsignal.0.4
+Cursor=Schwebebahn_Auswahlsignal.1.4
+Image[0]=Schwebebahn_Auswahlsignal.0.0
+Image[1]=Schwebebahn_Auswahlsignal.0.1
+Image[2]=Schwebebahn_Auswahlsignal.0.2
+Image[3]=Schwebebahn_Auswahlsignal.0.3
+Image[4]=Schwebebahn_Auswahlsignal.1.0
+Image[5]=Schwebebahn_Auswahlsignal.1.1
+Image[6]=Schwebebahn_Auswahlsignal.1.2
+Image[7]=Schwebebahn_Auswahlsignal.1.3
+Image[8]=Schwebebahn_Auswahlsignal.0.0
+Image[9]=Schwebebahn_Auswahlsignal.0.1
+Image[10]=Schwebebahn_Auswahlsignal.0.2
+Image[11]=Schwebebahn_Auswahlsignal.0.3
+Image[12]=Schwebebahn_Auswahlsignal.1.0
+Image[13]=Schwebebahn_Auswahlsignal.1.1
+Image[14]=Schwebebahn_Auswahlsignal.1.2
+Image[15]=Schwebebahn_Auswahlsignal.1.3
+--------------------------------------------

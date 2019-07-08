@@ -1,0 +1,59 @@
+--------------------------------
+#	PAK128.german
+#	Strassen
+#	Neu:07-2014
+#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+---------------------------------
+Obj=bridge
+name=alte_Strassenbruecke
+copyright=TonyBzt
+waytype=road
+intro_year=1906
+intro_month=1
+retire_year=1670
+retire_month=12
+cost=18000
+maintenance=20
+topspeed=100
+max_lenght=15
+max_height=6
+pillar_distance=2
+pillar_asymmetric=1
+cursor=TT_strassenbruecke.2.0
+icon=> TT_strassenbruecke.2.5
+BackImage[NS]=TT_strassenbruecke.0.4
+FrontImage[NS]=TT_strassenbruecke.1.4
+FrontImage2[NS]=TT_strassenbruecke.3.5
+BackImage[EW]=TT_strassenbruecke.0.5
+FrontImage[EW]=TT_strassenbruecke.1.5
+FrontImage2[EW]=TT_strassenbruecke.3.5
+BackStart[N]=TT_strassenbruecke.0.0
+FrontStart[N]=TT_strassenbruecke.1.0
+FrontStart2[N]=TT_strassenbruecke.3.5
+BackStart[S]=TT_strassenbruecke.0.2
+FrontStart[S]=TT_strassenbruecke.1.2
+FrontStart2[S]=TT_strassenbruecke.3.5
+BackStart[E]=TT_strassenbruecke.0.1
+FrontStart[E]=TT_strassenbruecke.1.1
+FrontStart2[E]=TT_strassenbruecke.3.5
+BackStart[W]=TT_strassenbruecke.0.3
+FrontStart[W]=TT_strassenbruecke.1.3
+FrontStart2[W]=TT_strassenbruecke.3.5
+BackRamp[N]=TT_strassenbruecke.2.1
+FrontRamp[N]=TT_strassenbruecke.3.5
+FrontRamp2[N]=TT_strassenbruecke.3.5
+BackRamp[S]=TT_strassenbruecke.2.3
+FrontRamp[S]=TT_strassenbruecke.3.5
+FrontRamp2[S]=TT_strassenbruecke.3.5
+BackRamp[E]=TT_strassenbruecke.2.4
+FrontRamp[E]=TT_strassenbruecke.3.5
+FrontRamp2[E]=TT_strassenbruecke.3.5
+BackRamp[W]=TT_strassenbruecke.2.2
+FrontRamp[W]=TT_strassenbruecke.3.5
+FrontRamp2[W]=TT_strassenbruecke.3.5
+backPillar[S]=TT_strassenbruecke.3.0
+FrontPillar[S]=TT_strassenbruecke.3.5
+FrontPillar2[S]=TT_strassenbruecke.3.5
+backPillar[W]=TT_strassenbruecke.3.1
+FrontPillar[W]=TT_strassenbruecke.3.5
+FrontPillar2[W]=TT_strassenbruecke.3.5

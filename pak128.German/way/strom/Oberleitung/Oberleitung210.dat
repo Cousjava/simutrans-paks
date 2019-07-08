@@ -1,0 +1,43 @@
+--------------------------------
+#	PAK128.german
+#	Oberleitung
+#	Neu:05-2015
+#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+---------------------------------
+Obj=way-object
+Name=Oberleitung_210
+copyright=The Transporter
+waytype=track
+own_waytype=electrified_track
+intro_year=1970
+intro_month=1
+cost=12500
+maintenance=8
+topspeed=210
+cursor=Oberleitung210.4.4
+icon=> Oberleitung210.4.3
+FrontImage[-]=Oberleitung210.4.0,0,1
+FrontImage[S]=Oberleitung210.2.3
+FrontImage[N]=Oberleitung210.2.1
+FrontImage[W]=Oberleitung210.2.2
+FrontImage[E]=Oberleitung210.2.0
+FrontImage[NS]=Oberleitung210.4.1,0,1
+FrontImage[EW]=Oberleitung210.4.2,0,2
+FrontImage[NSE]=Oberleitung210.0.0
+FrontImage[NSW]=Oberleitung210.0.2
+FrontImage[NEW]=Oberleitung210.0.1
+FrontImage[SEW]=Oberleitung210.0.3
+FrontImage[NSEW]=Oberleitung210.4.0,0,1
+FrontImage[NE]=Oberleitung210.1.1
+FrontImage[SE]=Oberleitung210.1.0
+FrontImage[NW]=Oberleitung210.1.2
+FrontImage[SW]=Oberleitung210.1.3
+FrontDiagonal[NE]=Oberleitung210.1.1
+FrontDiagonal[SE]=Oberleitung210.1.0
+FrontDiagonal[NW]=Oberleitung210.1.2
+FrontDiagonal[SW]=Oberleitung210.1.3
+FrontImageUp[3]=Oberleitung210.3.3
+FrontImageUp[6]=Oberleitung210.3.1
+FrontImageUp[9]=Oberleitung210.3.2
+FrontImageUp[12]=Oberleitung210.3.0
+------------------------------------

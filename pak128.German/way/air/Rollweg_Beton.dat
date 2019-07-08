@@ -1,0 +1,40 @@
+--------------------------------
+#	PAK128.german
+#	Rollwege
+#	Neu:01-2011
+#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+---------------------------------
+Obj=way
+Name=air_movement_area
+copyright=Mhz&Timothy
+waytype=air
+system_type=0
+intro_year=1950
+intro_month=1
+cost=50000
+maintenance=140
+topspeed=60
+max_weight=300
+cursor=Rollweg_Beton.3.5
+icon=> Rollweg_Beton.3.4
+Image[-]=Rollweg_Beton.0.0
+Image[N]=Rollweg_Beton.1.0
+Image[S]=Rollweg_Beton.1.1
+Image[E]=Rollweg_Beton.1.2
+Image[W]=Rollweg_Beton.1.3
+Image[NS]=Rollweg_Beton.0.1
+Image[EW]=Rollweg_Beton.0.2
+Image[NSE]=Rollweg_Beton.2.0
+Image[NSW]=Rollweg_Beton.2.1
+Image[NEW]=Rollweg_Beton.2.2
+Image[SEW]=Rollweg_Beton.2.3
+Image[NSEW]=Rollweg_Beton.0.3
+Image[NE]=Rollweg_Beton.3.0
+Image[SE]=Rollweg_Beton.3.1
+Image[NW]=Rollweg_Beton.3.2
+Image[SW]=Rollweg_Beton.3.3
+Diagonal[NE]=Rollweg_Beton.3.0
+Diagonal[SE]=Rollweg_Beton.3.1
+Diagonal[NW]=Rollweg_Beton.3.2
+Diagonal[SW]=Rollweg_Beton.3.3
+----------------------------------

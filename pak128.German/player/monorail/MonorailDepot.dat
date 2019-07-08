@@ -1,0 +1,24 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 2008
+#    letzte Bearbeitung:
+#    03-09-2015 The Transporter
+#---------------------------------
+Obj=building
+Name=MonorailDepot
+copyright=vilvoh
+type=depot
+waytype=monorail_track
+intro_year=1901
+intro_month=3
+Dims=1,1,4
+icon=> MonorailDepot.0.4
+cursor=MonorailDepot.0.5
+FrontImage[0][0][0][0][0]=MonorailDepot.0.0
+BackImage[0][0][0][0][0]=MonorailDepot.1.0
+FrontImage[1][0][0][0][0]=MonorailDepot.0.1
+BackImage[1][0][0][0][0]=MonorailDepot.1.1
+FrontImage[2][0][0][0][0]=MonorailDepot.0.3
+FrontImage[3][0][0][0][0]=MonorailDepot.0.2
+-------------------------------------------------

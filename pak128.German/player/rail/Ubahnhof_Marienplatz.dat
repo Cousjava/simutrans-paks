@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Players Building
 #    Neu:   21-10-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 #-------------------------------
 Obj=building
 Name=U-Bahnhof_Marienplatz
@@ -14,7 +13,6 @@ type=stop
 Level=5
 cost=384000
 maintenance=40
-type=extension
 enables_pax=1
 Dims=1,1,8
 icon=> Ubahnhof_Marienplatz.6.0

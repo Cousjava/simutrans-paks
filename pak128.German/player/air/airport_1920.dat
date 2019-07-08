@@ -1,0 +1,25 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 
+#   Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=Airport1920_AirportBlg
+type=extension
+waytype=air
+Level=3
+cost=192000
+maintenance=24
+enables_pax=1
+intro_year=1918
+intro_month=1
+NoInfo=1
+Dims=1,1,2
+icon=> Airport_1920.1.2
+cursor=Airport_1920.1.3
+BackImage[1][0][0][0][0]=Airport_1920.1.1
+#BackImage[1][1][0][0][0]=Airport_1920.0.2
+BackImage[0][0][0][0][0]=Airport_1920.1.0
+#BackImage[0][0][0][0][0]=Airport_1920.0.0
+---------------------------------------

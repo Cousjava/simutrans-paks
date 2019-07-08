@@ -1,0 +1,27 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 05-2011
+#    letzte Bearbeitung:
+#    $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+#---------------------------------
+Obj=building
+Name=ALP_Bahnhof_HG
+copyright=Lemuria
+type=extension
+waytype=track
+Level=10
+cost=640000
+maintenance=80
+enables_pax=1
+NoInfo=1
+# intro_year=1954
+climates=rocky
+Dims=1,1,4
+icon=> ALP_Bahnhof_HG.0.4
+cursor=ALP_Bahnhof_HG.0.5
+BackImage[0][0][0][0][0]=ALP_Bahnhof_HG.0.0
+BackImage[1][0][0][0][0]=ALP_Bahnhof_HG.0.1
+FrontImage[2][0][0][0][0]=ALP_Bahnhof_HG.0.2
+FrontImage[3][0][0][0][0]=ALP_Bahnhof_HG.0.3
+----------------------------------------------------------

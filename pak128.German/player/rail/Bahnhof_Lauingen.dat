@@ -1,0 +1,37 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 
+#    letzte Bearbeitung:
+#    $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+#---------------------------------
+Obj=building
+Name=BahnhofLauingen
+copyright=TonyBzt
+type=extension
+waytype=track
+enables_pax=1
+Level=5
+cost=320000
+maintenance=40
+intro_year=1910
+Dims=2,1,4
+icon=> Bahnhof_Lauingen.4.1
+cursor=Bahnhof_Lauingen.4.0
+BackImage[0][0][0][0][0][0]=Bahnhof_Lauingen.0.1
+BackImage[0][0][1][0][0][0]=Bahnhof_Lauingen.0.2
+BackImage[0][0][0][0][0][1]=Bahnhof_Lauingen.2.1
+BackImage[0][0][1][0][0][1]=Bahnhof_Lauingen.2.2
+BackImage[1][0][0][0][0][0]=Bahnhof_Lauingen.0.3
+BackImage[1][1][0][0][0][0]=Bahnhof_Lauingen.1.3
+BackImage[1][0][0][0][0][1]=Bahnhof_Lauingen.2.3
+BackImage[1][1][0][0][0][1]=Bahnhof_Lauingen.3.3
+BackImage[2][0][0][0][0][0]=Bahnhof_Lauingen.1.1
+BackImage[2][0][1][0][0][0]=Bahnhof_Lauingen.1.2
+BackImage[2][0][0][0][0][1]=Bahnhof_Lauingen.3.1
+BackImage[2][0][1][0][0][1]=Bahnhof_Lauingen.3.2
+BackImage[3][0][0][0][0][0]=Bahnhof_Lauingen.0.0
+BackImage[3][1][0][0][0][0]=Bahnhof_Lauingen.1.0
+BackImage[3][0][0][0][0][1]=Bahnhof_Lauingen.2.0
+BackImage[3][1][0][0][0][1]=Bahnhof_Lauingen.3.0
+---------------------------------------------------

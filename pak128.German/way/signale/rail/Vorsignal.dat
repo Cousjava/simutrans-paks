@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Signale
+#	Neu:01-2013
+---------------------------------
+obj=roadsign
+copyright=The Transporter
+Name=Vorsignal_alt
+waytype=track
+intro_year=1835
+intro_month=1
+retire_year = 1955
+retire_month = 12
+cost=450
+is_presignal=1
+Icon=> Vorsignal.2.7
+Cursor=Vorsignal.3.7
+# RED
+Image[0]=Vorsignal.0.0
+Image[1]=Vorsignal.0.1
+Image[2]=Vorsignal.0.2
+Image[3]=Vorsignal.0.3
+# GREEN
+Image[4]=Vorsignal.0.4
+Image[5]=Vorsignal.0.5
+Image[6]=Vorsignal.0.6
+Image[7]=Vorsignal.0.7
+# YELLOW
+Image[8]=Vorsignal.1.4
+Image[9]=Vorsignal.1.5
+Image[10]=Vorsignal.1.6
+Image[11]=Vorsignal.1.7
+--------------------------

@@ -1,0 +1,56 @@
+--------------------------------
+#	PAK128.german
+#	Strassen
+#	Neu:07-2014
+---------------------------------
+Obj=bridge
+name=Moderne_Autobahnbruecke
+copyright=The Transporter
+waytype=road
+intro_year=1970
+intro_month=1
+cost=160000
+maintenance=40
+topspeed=200
+max_lenght=15
+pillar_distance=2
+pillar_asymmetric=1
+cursor=autobahnbruecke_neu.1.3
+icon=> autobahnbruecke_neu.1.2
+BackImage[NS]=autobahnbruecke_neu.1.0
+FrontImage[NS]=autobahnbruecke_neu.2.0
+FrontImage2[NS]=autobahnbruecke_neu.2.0
+BackImage[EW]=autobahnbruecke_neu.1.1
+FrontImage[EW]=autobahnbruecke_neu.2.0
+FrontImage2[EW]=autobahnbruecke_neu.2.0
+BackStart[N]=autobahnbruecke_neu.0.0
+FrontStart[N]=autobahnbruecke_neu.2.0
+FrontStart2[N]=autobahnbruecke_neu.2.0
+BackStart[S]=autobahnbruecke_neu.0.1,0,5
+FrontStart[S]=autobahnbruecke_neu.2.0,0,5
+FrontStart2[S]=autobahnbruecke_neu.2.0,0,5
+BackStart[E]=autobahnbruecke_neu.0.3,0,5
+FrontStart[E]=autobahnbruecke_neu.2.0,0,5
+FrontStart2[E]=autobahnbruecke_neu.2.0,0,5
+BackStart[W]=autobahnbruecke_neu.0.2
+FrontStart[W]=autobahnbruecke_neu.2.0
+FrontStart2[W]=autobahnbruecke_neu.2.0
+BackRamp[N]=autobahnbruecke_neu.3.0
+FrontRamp[N]=autobahnbruecke_neu.2.0
+FrontRamp2[N]=autobahnbruecke_neu.2.0
+BackRamp[S]=autobahnbruecke_neu.3.1
+FrontRamp[S]=autobahnbruecke_neu.2.0
+FrontRamp2[S]=autobahnbruecke_neu.2.0
+BackRamp[E]=autobahnbruecke_neu.3.3
+FrontRamp[E]=autobahnbruecke_neu.2.0
+FrontRamp2[E]=autobahnbruecke_neu.2.0
+BackRamp[W]=autobahnbruecke_neu.3.2
+FrontRamp[W]=autobahnbruecke_neu.2.0
+FrontRamp2[W]=autobahnbruecke_neu.2.0
+backPillar[S]=autobahnbruecke_neu.2.2
+FrontPillar[S]=autobahnbruecke_neu.2.0
+FrontPillar2[S]=autobahnbruecke_neu.2.0
+backPillar[W]=autobahnbruecke_neu.2.3
+FrontPillar[W]=autobahnbruecke_neu.2.0
+FrontPillar2[W]=autobahnbruecke_neu.2.0
+

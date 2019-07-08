@@ -1,0 +1,39 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 
+#    letzte Bearbeitung:
+#    $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+#---------------------------------
+Obj=building
+Name=classic_mailbox
+copyright=Fagonella
+type=stop
+waytype=road
+Level=2
+cost=64000
+maintenance=16
+enables_pax=0
+enables_post=1
+intro_year=1900
+intro_month=1
+Dims=1,1,8
+icon=> PostStop.5.0
+cursor=PostStop.5.1
+BackImage[0][0][0][0][0]=PostStop.1.0
+FrontImage[0][0][0][0][0]=PostStop.1.1
+BackImage[1][0][0][0][0]=PostStop.1.2
+FrontImage[1][0][0][0][0]=PostStop.1.3
+BackImage[2][0][0][0][0]=PostStop.2.0
+FrontImage[2][0][0][0][0]=PostStop.2.1
+BackImage[3][0][0][0][0]=PostStop.2.2
+FrontImage[3][0][0][0][0]=PostStop.2.3
+BackImage[4][0][0][0][0]=PostStop.3.0
+FrontImage[4][0][0][0][0]=PostStop.3.1
+BackImage[5][0][0][0][0]=PostStop.3.2
+FrontImage[5][0][0][0][0]=PostStop.3.3
+BackImage[6][0][0][0][0]=PostStop.4.0
+FrontImage[6][0][0][0][0]=PostStop.4.1
+BackImage[7][0][0][0][0]=PostStop.4.2
+FrontImage[7][0][0][0][0]=PostStop.4.3
+----------------------------------------

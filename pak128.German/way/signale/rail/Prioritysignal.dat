@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Signale
+#	Neu:05-2019
+---------------------------------
+obj=roadsign
+Name=Streckensignal_priority
+copyright=The Transporter
+waytype=track
+intro_year=1835
+intro_month=1
+retire_year = 1955
+retire_month = 12
+cost=450
+is_prioritysignal=1
+Icon=> Prioritysignal.0.8
+Cursor=Prioritysignal.0.9
+# RED
+Image[0]=Prioritysignal.0.0
+Image[1]=Prioritysignal.0.1
+Image[2]=Prioritysignal.0.2
+Image[3]=Prioritysignal.0.3
+# GREEN
+Image[4]=Prioritysignal.1.4
+Image[5]=Prioritysignal.1.5
+Image[6]=Prioritysignal.1.6
+Image[7]=Prioritysignal.1.7
+# YELLOW
+Image[8]=Prioritysignal.0.4
+Image[9]=Prioritysignal.0.5
+Image[10]=Prioritysignal.0.6
+Image[11]=Prioritysignal.0.7
+----------------------------------

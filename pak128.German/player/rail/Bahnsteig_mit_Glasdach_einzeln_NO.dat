@@ -1,0 +1,24 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 05-2015
+#    letzte Bearbeitung:
+#    $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+#---------------------------------
+Obj=building
+Name=Bahnsteig_mit_Glasdach_NO
+copyright=Lemuria+The Transporter
+type=stop
+waytype=track
+enables_pax=1
+Level=4
+cost=256000
+maintenance=32
+intro_year=1975
+intro_month=1
+Dims=1,1,2
+icon=> Bahnsteig_mit_Glasdach.1.1
+cursor=Bahnsteig_mit_Glasdach.0.4
+FrontImage[0][0][0][0][0][0]=Bahnsteig_mit_Glasdach.0.2
+FrontImage[1][0][0][0][0][0]=Bahnsteig_mit_Glasdach.0.3
+----------------------------------------------------------

@@ -1,0 +1,57 @@
+--------------------------------
+#	PAK128.german
+#	Gleise
+#	Neu:12-2014
+#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+---------------------------------
+Obj=bridge
+name=Bahnbruecke_210Kmh
+copyright=The Transporter
+waytype=track
+intro_year=1970
+intro_month=1
+cost=80000
+maintenance=90
+topspeed=210
+max_lenght=15
+pillar_distance=2
+pillar_asymmetric=1
+cursor=Eisenbahnbruecke210.1.3
+icon=> Eisenbahnbruecke210.1.2
+BackImage[NS]=Eisenbahnbruecke210.1.0
+FrontImage[NS]=Eisenbahnbruecke210.2.3
+FrontImage2[NS]=Eisenbahnbruecke210.2.3
+BackImage[EW]=Eisenbahnbruecke210.1.1
+FrontImage[EW]=Eisenbahnbruecke210.2.3
+FrontImage2[EW]=Eisenbahnbruecke210.2.3
+BackStart[N]=Eisenbahnbruecke210.0.0
+FrontStart[N]=Eisenbahnbruecke210.2.3
+FrontStart2[N]=Eisenbahnbruecke210.2.3
+BackStart[S]=Eisenbahnbruecke210.0.1,0,5
+FrontStart[S]=Eisenbahnbruecke210.2.3,0,5
+FrontStart2[S]=Eisenbahnbruecke210.2.3,0,5
+BackStart[E]=Eisenbahnbruecke210.0.3,0,5
+FrontStart[E]=Eisenbahnbruecke210.2.3,0,5
+FrontStart2[E]=Eisenbahnbruecke210.2.3,0,5
+BackStart[W]=Eisenbahnbruecke210.0.2
+FrontStart[W]=Eisenbahnbruecke210.2.3
+FrontStart2[W]=Eisenbahnbruecke210.2.3
+BackRamp[N]=Eisenbahnbruecke210.3.0
+FrontRamp[N]=Eisenbahnbruecke210.2.3
+FrontRamp2[N]=Eisenbahnbruecke210.2.3
+BackRamp[S]=Eisenbahnbruecke210.3.1
+FrontRamp[S]=Eisenbahnbruecke210.2.3
+FrontRamp2[S]=Eisenbahnbruecke210.2.3
+BackRamp[E]=Eisenbahnbruecke210.3.3
+FrontRamp[E]=Eisenbahnbruecke210.2.3
+FrontRamp2[E]=Eisenbahnbruecke210.2.3
+BackRamp[W]=Eisenbahnbruecke210.3.2
+FrontRamp[W]=Eisenbahnbruecke210.2.3
+FrontRamp2[W]=Eisenbahnbruecke210.2.3
+backPillar[S]=Eisenbahnbruecke210.2.0
+FrontPillar[S]=Eisenbahnbruecke210.2.3
+FrontPillar2[S]=Eisenbahnbruecke210.2.3
+backPillar[W]=Eisenbahnbruecke210.2.1
+FrontPillar[W]=Eisenbahnbruecke210.2.3
+FrontPillar2[W]=Eisenbahnbruecke210.2.3
+

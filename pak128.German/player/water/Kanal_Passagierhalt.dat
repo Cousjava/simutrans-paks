@@ -1,0 +1,26 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 
+#    Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=canal_pax_stop
+copyright=Patrick&Fagonella
+type=stop
+waytype=water
+Level=2
+cost=128000
+maintenance=16
+enables_pax=1
+enables_post=1
+intro_year=1876
+intro_month=1
+Dims=1,1,2
+icon=> Kanal.11.4
+cursor=Kanal.12.3
+BackImage[0][0][0][0][0][0]=Kanal.12.0
+FrontImage[0][0][0][0][0][0]=Kanal.11.0
+BackImage[1][0][0][0][0][0]=Kanal.12.1
+FrontImage[1][0][0][0][0][0]=Kanal.11.1
+-------------------------------------------

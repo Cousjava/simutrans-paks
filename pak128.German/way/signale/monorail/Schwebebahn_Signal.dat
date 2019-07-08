@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Signale
+#	Neu:01-2011
+#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+---------------------------------
+obj=roadsign
+copyright=yoshi
+name=Signal_Monorail
+waytype=monorail_track
+cost=450
+is_signal=1
+Icon=> Schwebebahn_Signal.0.4
+Cursor=Schwebebahn_Signal.1.4
+Image[0]=Schwebebahn_Signal.0.0
+Image[1]=Schwebebahn_Signal.0.1
+Image[2]=Schwebebahn_Signal.0.2
+Image[3]=Schwebebahn_Signal.0.3
+Image[4]=Schwebebahn_Signal.1.0
+Image[5]=Schwebebahn_Signal.1.1
+Image[6]=Schwebebahn_Signal.1.2
+Image[7]=Schwebebahn_Signal.1.3
+Image[8]=Schwebebahn_Signal.0.0
+Image[9]=Schwebebahn_Signal.0.1
+Image[10]=Schwebebahn_Signal.0.2
+Image[11]=Schwebebahn_Signal.0.3
+Image[12]=Schwebebahn_Signal.1.0
+Image[13]=Schwebebahn_Signal.1.1
+Image[14]=Schwebebahn_Signal.1.2
+Image[15]=Schwebebahn_Signal.1.3
+------------------------------------

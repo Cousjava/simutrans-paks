@@ -1,0 +1,56 @@
+--------------------------------
+#	PAK128.german
+#	Kanal
+#	Neu:01-2011
+#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+---------------------------------
+Obj=bridge
+name=water_bridge
+copyright=Fagonella
+waytype=water
+intro_year=1876
+intro_month=1
+cost=900000
+maintenance=200
+topspeed=30
+max_lenght=10
+pillar_distance=1
+icon=> Canals.6.4
+cursor=Canals.7.4
+BackImage[NS]=Canals.6.0
+FrontImage[NS]=Canals.6.1
+FrontImage2[NS]=Canals.3.4
+BackImage[EW]=Canals.6.2
+FrontImage[EW]=Canals.6.3
+FrontImage2[EW]=Canals.3.4
+BackStart[N]=Canals.8.0
+FrontStart[N]=Canals.8.1
+FrontStart2[N]=Canals.3.4
+BackStart[S]=Canals.7.0
+FrontStart[S]=Canals.7.1
+FrontStart2[S]=Canals.3.4
+BackStart[E]=Canals.7.2
+FrontStart[E]=Canals.7.3
+FrontStart2[E]=Canals.3.4
+BackStart[W]=Canals.8.2
+FrontStart[W]=Canals.8.3
+FrontStart2[W]=Canals.3.4
+BackRamp[N]=Canals.9.0
+FrontRamp[N]=Canals.9.1
+FrontRamp2[N]=Canals.3.4
+BackRamp[S]=Canals.10.0
+FrontRamp[S]=Canals.10.1
+FrontRamp2[S]=Canals.3.4
+BackRamp[E]=Canals.10.2
+FrontRamp[E]=Canals.10.3
+FrontRamp2[E]=Canals.3.4
+BackRamp[W]=Canals.9.2
+FrontRamp[W]=Canals.9.3
+FrontRamp2[W]=Canals.3.4
+backPillar[S]=Canals.9.4
+FrontPillar[S]=Canals.3.4
+FrontPillar2[S]=Canals.3.4
+backPillar[W]=Canals.10.4
+FrontPillar[W]=Canals.3.4
+FrontPillar2[W]=Canals.3.4
+-----------------------------

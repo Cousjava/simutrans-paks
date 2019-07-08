@@ -1,0 +1,24 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 2008
+#    Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=Monorail_Bahnhof
+copyright=Boomer
+type=stop
+waytype=monorail_track
+cost=8
+maintenance=32
+enables_pax=1
+intro_year=1901
+intro_month=3
+Dims=1,1,2
+icon=> Monorail_Bahnhof.0.4
+cursor=Monorail_Bahnhof.0.5
+#BackImage[0][0][0][0][0]=Monorail_Bahnhof.0.1
+FrontImage[0][0][0][0][0]=Monorail_Bahnhof.0.0
+#BackImage[1][0][0][0][0]=Monorail_Bahnhof.0.3
+FrontImage[1][0][0][0][0]=Monorail_Bahnhof.0.1
+---------------------------------------------------

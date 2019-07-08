@@ -1,0 +1,28 @@
+--------------------------------
+#	PAK128.german
+#	Signale
+#	Neu:01-2013
+---------------------------------
+obj=roadsign
+copyright=The Transporter
+Name=ChooseSignal
+waytype=track
+intro_year=1835
+retire_year = 1955
+retire_month = 12
+cost=450
+is_signal=1
+free_route=1
+Icon=> Auswahlsignal.0.8
+Cursor=Auswahlsignal.0.9
+# RED
+Image[0]=Auswahlsignal.0.0
+Image[1]=Auswahlsignal.0.1
+Image[2]=Auswahlsignal.0.2
+Image[3]=Auswahlsignal.0.3
+# GREEN
+Image[4]=Auswahlsignal.0.4
+Image[5]=Auswahlsignal.0.5
+Image[6]=Auswahlsignal.0.6
+Image[7]=Auswahlsignal.0.7
+----------------------------

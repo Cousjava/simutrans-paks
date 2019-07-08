@@ -1,0 +1,21 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 
+#    letzte Bearbeitung:
+#    $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=GrosserTank
+copyright=TonyBzt
+type=extension
+Level=5
+cost=384000
+maintenance=40
+enables_ware=1
+intro_year=1900
+intro_month=1
+Dims=1,1,1
+icon=> GrosserTank.0.2
+cursor=GrosserTank.0.1
+BackImage[0][0][0][0][0]=GrosserTank.0.0

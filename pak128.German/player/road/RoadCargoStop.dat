@@ -1,0 +1,29 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 
+#    letzte Bearbeitung:
+#    $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+#---------------------------------
+Obj=building
+Name=CarStop
+type=stop
+waytype=road
+Level=4
+cost=128000
+maintenance=32
+enables_ware=1
+intro_year=1887
+intro_month=1
+Dims=1,1,4
+icon=> RoadCargoStop.1.1
+cursor=RoadCargoStop.1.0
+BackImage[0][0][0][0][0]=RoadCargoStop.0.0
+FrontImage[0][0][0][0][0]=RoadCargoStop.0.4
+BackImage[1][0][0][0][0]=RoadCargoStop.0.3
+FrontImage[1][0][0][0][0]=RoadCargoStop.0.7
+BackImage[2][0][0][0][0]=RoadCargoStop.0.1
+FrontImage[2][0][0][0][0]=RoadCargoStop.0.5
+BackImage[3][0][0][0][0]=RoadCargoStop.0.2
+FrontImage[3][0][0][0][0]=RoadCargoStop.0.6
+----------------------------------------------

@@ -1,0 +1,25 @@
+--------------------------------
+#	PAK128.german
+#	Gleise
+#	Neu:08-2014
+#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+---------------------------------
+obj=tunnel
+name=moderner Eisenbahntunnel
+waytype=track
+copyright=The Transporter
+intro_year=1970
+intro_month=1
+cost=130000
+maintenance=140
+topspeed=210
+icon=> eisenbahntunnel_modern.2.0
+cursor=eisenbahntunnel_modern.2.1
+FrontImage[N]=eisenbahntunnel_modern.1.0
+BackImage[N]=eisenbahntunnel_modern.0.0
+#FrontImage[S]=eisenbahntunnel_modern.1.3
+BackImage[S]=eisenbahntunnel_modern.2.3
+#FrontImage[E]=eisenbahntunnel_modern.1.2
+BackImage[E]=eisenbahntunnel_modern.2.2
+FrontImage[W]=eisenbahntunnel_modern.1.1
+BackImage[W]=eisenbahntunnel_modern.0.1

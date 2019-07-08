@@ -1,0 +1,21 @@
+--------------------------------
+#	PAK128.german
+#	Signale
+#	Neu:01-2011
+#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+---------------------------------
+obj=roadsign
+name=airport_oneway
+copyright=shunter
+waytype=air
+cost=450
+min_speed=0
+single_way=1
+free_route=0
+is_private=0
+Icon=> airport_oneway.0.4
+Cursor=airport_oneway.0.5
+Image[0]=airport_oneway.0.1
+Image[1]=airport_oneway.0.0
+Image[2]=airport_oneway.0.3
+Image[3]=airport_oneway.0.2

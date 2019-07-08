@@ -1,0 +1,25 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 
+#    Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=canal_ware_stop
+copyright=Patrick
+type=stop
+waytype=water
+Level=2
+cost=128000
+maintenance=16
+enables_ware=1
+intro_year=1800
+intro_month=1
+Dims=1,1,2
+icon=> Kanal.12.4
+cursor=Kanal.12.2
+BackImage[0][0][0][0][0][0]=Kanal.12.0
+FrontImage[0][0][0][0][0][0]=Kanal.11.2
+BackImage[1][0][0][0][0][0]=Kanal.12.1
+FrontImage[1][0][0][0][0][0]=Kanal.11.3
+-------------------------------------------

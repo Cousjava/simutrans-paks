@@ -1,0 +1,26 @@
+#-------------------------------
+#	PAK128.german
+#	Players Building
+#-------------------------------
+Obj=building
+Name=Wasserkran
+copyright=TonyBzt
+intro_year=1835
+intro_month=1
+retire_year=1975
+retire_month=12
+waytype=track
+type=stop
+Level=4
+cost=256000
+maintenance=32
+enables_pax=1
+enables_ware=1
+Dims=1,1,2
+icon=> Wasserkran.0.5
+cursor=Wasserkran.0.4
+BackImage[0][0][0][0][0][0]=Wasserkran.0.0
+BackImage[1][0][0][0][0][0]=Wasserkran.0.1
+BackImage[0][0][0][0][0][1]=Wasserkran.1.0
+BackImage[1][0][0][0][0][1]=Wasserkran.1.1
+-----------------------------------------------

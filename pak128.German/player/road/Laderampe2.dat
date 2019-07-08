@@ -1,0 +1,22 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 
+#---------------------------------
+Obj=building
+Name=LKW_Laderampe_2
+copyright=TheTransporter
+intro_year=1800
+intro_month=1
+type=stop
+waytype=road
+level=1
+cost=32000
+maintenance=8
+enables_ware=1
+dims=1,1,2
+icon=> Laderampe2.0.3
+cursor=Laderampe2.0.2
+BackImage[0][0][0][0][0]=Laderampe2.0.0
+BackImage[1][0][0][0][0]=Laderampe2.0.1
+-----------------------------------------

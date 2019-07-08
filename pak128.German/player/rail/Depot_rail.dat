@@ -1,0 +1,27 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 05-2011
+#    Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=TrainDepot_1
+copyright=Tony_Bzt
+intro_year=1835
+intro_month=8
+cost=50000
+maintenance=8
+type=depot
+waytype=track
+Dims=1,1,4
+icon=> Depot_rail.1.2
+cursor=Depot_rail.1.3
+FrontImage[0][0][0][0][0][0]=Depot_rail.0.0
+FrontImage[1][0][0][0][0][0]=Depot_rail.0.1
+FrontImage[2][0][0][0][0][0]=Depot_rail.0.2
+FrontImage[3][0][0][0][0][0]=Depot_rail.0.3
+BackImage[0][0][0][0][0][0]=Depot_rail.1.0
+BackImage[1][0][0][0][0][0]=Depot_rail.1.1
+#BackImage[2][0][0][0][0][0]=Depot_rail.1.2
+#BackImage[3][0][0][0][0][0]=Depot_rail.1.3
+-----------------------------------------

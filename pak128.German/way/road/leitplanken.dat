@@ -1,0 +1,67 @@
+--------------------------------
+#	PAK128.german
+#	Strassen
+#	Neu:07-2013
+#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+---------------------------------
+Obj=way-object
+Name=Leitplanken
+Copyright=The Transporter
+waytype=road
+own_waytype=road
+intro_year = 1950
+intro_month=1
+cost=10000
+maintenance=2
+topspeed=200
+icon=> leitplanken.3.1
+cursor=leitplanken.3.2
+BackImage[-]=leitplanken.1.2
+BackImage[N]=leitplanken.1.5
+BackImage[S]=leitplanken.2.1
+BackImage[E]=leitplanken.2.2
+BackImage[W]=leitplanken.2.0
+BackImage[NS]=leitplanken.1.0
+BackImage[EW]=leitplanken.1.1
+BackImage[NSE]=leitplanken.0.2
+BackImage[NSW]=leitplanken.0.4
+BackImage[NEW]=leitplanken.0.1
+BackImage[SEW]=leitplanken.0.3
+BackImage[NSEW]=leitplanken.1.2
+BackImage[NE]=leitplanken.4.3
+BackImage[SE]=leitplanken.4.0
+BackImage[NW]=leitplanken.4.1
+BackImage[SW]=leitplanken.4.2
+BackDiagonal[NE]=leitplanken.3.0
+BackDiagonal[SE]=leitplanken.2.3
+BackDiagonal[NW]=leitplanken.2.4
+BackDiagonal[SW]=leitplanken.2.5
+BackImageUp[3]=leitplanken.1.3
+BackImageUp[6]=leitplanken.1.4
+BackImageUp[9]=leitplanken.0.0
+BackImageUp[12]=leitplanken.0.5
+FrontImage[-]=leitplanken.6.2
+FrontImage[N]=leitplanken.6.5
+FrontImage[S]=leitplanken.7.1
+FrontImage[E]=leitplanken.7.2
+FrontImage[W]=leitplanken.7.0
+FrontImage[NS]=leitplanken.6.0
+FrontImage[EW]=leitplanken.6.1
+FrontImage[NSE]=leitplanken.5.2
+FrontImage[NSW]=leitplanken.5.4
+FrontImage[NEW]=leitplanken.5.1
+FrontImage[SEW]=leitplanken.5.3
+FrontImage[NSEW]=leitplanken.6.2
+FrontImage[NE]=leitplanken.9.3
+FrontImage[SE]=leitplanken.9.0
+FrontImage[NW]=leitplanken.9.1
+FrontImage[SW]=leitplanken.9.2
+FrontDiagonal[NE]=leitplanken.8.0
+FrontDiagonal[SE]=leitplanken.7.3
+FrontDiagonal[NW]=leitplanken.7.4
+FrontDiagonal[SW]=leitplanken.7.5
+FrontImageUp[3]=leitplanken.6.3
+FrontImageUp[6]=leitplanken.6.4
+FrontImageUp[9]=leitplanken.5.0
+FrontImageUp[12]=leitplanken.5.5
+

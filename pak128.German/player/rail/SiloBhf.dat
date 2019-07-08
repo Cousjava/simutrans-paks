@@ -1,0 +1,24 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 05-2015
+#---------------------------------
+Obj=building
+Name=SiloBhf
+copyright=TonyBzt
+intro_year=1910
+type=stop
+Level=9
+cost=576000
+maintenance=72
+waytype=track
+needs_ground=1
+enables_ware=1
+Dims=1,1,2
+icon=> SiloBhf.0.5
+cursor=SiloBhf.0.4
+BackImage[0][0][0][0][0]=SiloBhf.0.0,0,6
+FrontImage[0][0][0][0][0]=SiloBhf.0.2,0,6
+BackImage[1][0][0][0][0]=SiloBhf.0.1,0,6
+FrontImage[1][0][0][0][0]=SiloBhf.0.3,0,6
+-------------------------------------------

@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Signale
+#	Neu:01-2011
+#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+---------------------------------
+obj=roadsign
+name=Ampel
+copyright=The Transporter
+waytype=road
+intro_year=1945
+intro_month=1
+cost=450
+min_speed=0
+single_way=0
+Icon=> Ampel.0.8
+Cursor=Ampel.0.9
+image[0]=Ampel.0.0
+Image[1]=Ampel.0.1
+Image[2]=Ampel.0.2
+Image[3]=Ampel.0.3
+Image[4]=Ampel.0.4
+Image[5]=Ampel.0.5
+Image[6]=Ampel.0.6
+Image[7]=Ampel.0.7
+image[8]=Ampel.1.0
+Image[9]=Ampel.1.1
+Image[10]=Ampel.1.2
+Image[11]=Ampel.1.3
+Image[12]=Ampel.1.4
+Image[13]=Ampel.1.5
+Image[14]=Ampel.1.6
+Image[15]=Ampel.1.7
+-----------------------

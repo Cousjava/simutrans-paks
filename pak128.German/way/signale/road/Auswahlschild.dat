@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Signale
+#	Neu:01-2013
+#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ $Author: NNW $
+---------------------------------
+obj=roadsign
+name=Auswahlschild
+copyright=The Transporter
+waytype=road
+intro_year=1900
+intro_month=1
+cost=450
+free_route=1
+cursor=Auswahlschild.0.4
+icon=> Auswahlschild.0.5
+Image[0]=Auswahlschild.0.0
+Image[1]=Auswahlschild.0.1
+Image[2]=Auswahlschild.0.2
+Image[3]=Auswahlschild.0.3
+------------------------------
+obj=roadsign
+name=AuswahlEndeSchild
+copyright=The Transporter
+waytype=road
+intro_year=1900
+intro_month=1
+cost=450
+end_of_choose=1
+cursor=EndeAuswahlschild.0.4
+icon=> EndeAuswahlschild.0.5
+Image[0]=EndeAuswahlschild.0.0
+Image[1]=EndeAuswahlschild.0.1
+Image[2]=EndeAuswahlschild.0.2
+Image[3]=EndeAuswahlschild.0.3
+------------------------------

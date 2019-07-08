@@ -1,0 +1,19 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 2008
+#    Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=MonorailGround
+copyright=none
+cost=8
+maintenance=8
+# intro_year=1985
+# intro_month=2
+intro_year=1901
+intro_month=3
+Dims=1,1
+NoInfo=1
+BackImage[0][0][0][0][0]=MonorailDepot.0.6
+------------------------------------------------

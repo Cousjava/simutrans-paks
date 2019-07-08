@@ -1,0 +1,45 @@
+--------------------------------
+#	PAK128.german
+#	Oberleitung
+#	Neu:01-2011
+---------------------------------
+Obj=way-object
+Name=Third_Rail_Electrification
+copyright=Timothy Baldock
+waytype=track
+own_waytype=electrified_track
+intro_year=1902
+intro_month=1
+cost=3000
+maintenance=4
+topspeed=80
+cursor=Stromschiene80.1.10
+icon=> Stromschiene80.1.9
+BackImage[-]=Stromschiene80.0.2
+BackImage[N]=Stromschiene80.1.7
+BackImage[S]=Stromschiene80.1.5
+BackImage[E]=Stromschiene80.1.6
+BackImage[W]=Stromschiene80.1.8
+BackImage[NS]=Stromschiene80.0.0
+BackImage[EW]=Stromschiene80.0.1
+BackImage[NSE]=Stromschiene80.1.3
+BackImage[NSW]=Stromschiene80.1.1
+BackImage[NEW]=Stromschiene80.1.2
+BackImage[SEW]=Stromschiene80.1.4
+BackImage[NSEW]=Stromschiene80.1.0
+BackImage[NE]=Stromschiene80.0.4
+BackImage[SW]=Stromschiene80.0.3
+BackImage[NW]=Stromschiene80.0.5
+BackImage[SE]=Stromschiene80.0.6
+BackDiagonal[NE]=Stromschiene80.0.12
+BackDiagonal[SE]=Stromschiene80.1.12
+BackDiagonal[NW]=Stromschiene80.1.11
+BackDiagonal[SW]=Stromschiene80.0.11
+BackImageUp[3]=Stromschiene80.0.9
+BackImageUp[6]=Stromschiene80.0.10
+BackImageUp[9]=Stromschiene80.0.8
+BackImageUp[12]=Stromschiene80.0.7
+FrontImage[-]=-
+FrontDiagonal[NE]=-
+FrontImageUp[3]=-
+-------------------------------------

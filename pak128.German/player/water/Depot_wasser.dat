@@ -1,0 +1,23 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 
+#    Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=ShipDepot
+type=depot
+waytype=water
+level=1
+cost=50000
+maintenance=8
+intro_year=1850
+intro_month=1
+Dims=1,1,2
+icon=> Depot_wasser.0.2
+cursor=Depot_wasser.0.3
+BackImage[0][0][0][0][0][0]=Depot_wasser.0.0
+BackImage[1][0][0][0][0][0]=Depot_wasser.0.1
+BackImage[0][0][0][0][0][1]=Depot_wasser.1.0
+BackImage[1][0][0][0][0][1]=Depot_wasser.1.1
+----------------------------------------------

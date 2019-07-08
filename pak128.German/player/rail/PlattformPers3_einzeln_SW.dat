@@ -1,0 +1,23 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 05-2015
+#    Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=PlattformPers3_SW
+copyright=TonyBzt+TheTransporter
+intro_year=1920
+intro_month=1
+type=stop
+Level=3
+cost=192000
+maintenance=24
+waytype=track
+enables_pax=1
+Dims=1,1,2
+icon=> PlattformPers3.1.4
+cursor=PlattformPers3.0.4
+BackImage[0][0][0][0][0][0]=PlattformPers3.1.0
+BackImage[1][0][0][0][0][0]=PlattformPers3.1.1
+------------------------------------------------

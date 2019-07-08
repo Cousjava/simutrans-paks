@@ -1,0 +1,28 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 
+#    Letzte Bearbeitung: $Date$ - $Author$
+#---------------------------------
+Obj=building
+Name=Post_Dock
+copyright=MHz
+type=habour
+Level=5
+cost=320000
+maintenance=40
+enables_post=1
+intro_year=1821
+intro_month=1
+Dims=1,2,4
+icon=> Postterminal.0.4
+cursor=Postterminal.0.5
+BackImage[0][0][0][0][0]=Postterminal.1.0
+BackImage[0][1][0][0][0]=Postterminal.0.0
+BackImage[3][0][0][0][0]=Postterminal.0.1
+BackImage[3][0][1][0][0]=Postterminal.1.1
+BackImage[2][0][0][0][0]=Postterminal.0.2
+BackImage[2][1][0][0][0]=Postterminal.1.2
+BackImage[1][0][0][0][0]=Postterminal.1.3
+BackImage[1][0][1][0][0]=Postterminal.0.3
+------------------------------------------------

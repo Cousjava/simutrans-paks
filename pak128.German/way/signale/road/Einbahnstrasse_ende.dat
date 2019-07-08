@@ -1,0 +1,24 @@
+--------------------------------
+#	PAK128.german
+#	Signale
+#	Neu:01-2011
+#	Letzte Bearbeitung 
+#    09-08-2015 The Transporter
+#	$Date: 2017-02-08 13:07:18 +0100 (Mi, 08. Feb 2017) $ $Author: NNW $
+---------------------------------
+obj=roadsign
+name=Einbahnstrassenende
+copyright=The Transporter
+waytype=road
+intro_year=1900
+intro_month=1
+cost=490
+single_way=1
+cursor=Einbahnstrasse1.0.4
+icon=> Einbahnstrasse1.0.5
+Image[0]=Einbahnstrasse1.0.0
+Image[1]=Einbahnstrasse1.0.1
+Image[2]=Einbahnstrasse1.0.2
+Image[3]=Einbahnstrasse1.0.3
+---------------------------------
+
