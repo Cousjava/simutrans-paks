@@ -1,0 +1,96 @@
+Obj=building
+Name=BZT_Kohlenbansen
+copyright=TonyBzt/Swier Garst
+type=extension
+waytype=track
+#enables_pax=1
+enables_ware=1
+NoInfo=1
+Level=4
+intro_year=1910
+# Order N,E,S,W
+Dims=1,1,4
+cursor=Kohlenbansen-PAK.0.4
+icon=> Kohlenbansen-PAK.0.5
+animation_time=500
+BackImage[0][0][0][0][0][0]=Kohlenbansen-PAK.0.2
+BackImage[1][0][0][0][0][0]=Kohlenbansen-PAK.0.0
+#BackImage[2][0][0][0][0][0]=Kohlenbansen-PAK.0.1  # falls keine Animation
+BackImage[2][0][0][0][0][0]=Kohlenbansen-anim.0.4
+BackImage[3][0][0][0][0][0]=Kohlenbansen-PAK.0.3
+# Winter
+BackImage[0][0][0][0][0][1]=Kohlenbansen-PAK.1.2
+BackImage[1][0][0][0][0][1]=Kohlenbansen-PAK.1.0
+BackImage[2][0][0][0][0][1]=Kohlenbansen-PAK.1.1
+BackImage[3][0][0][0][0][1]=Kohlenbansen-PAK.1.3
+# Animation
+BackImage[2][0][0][0][1][0]=Kohlenbansen-anim.0.4
+BackImage[2][0][0][0][2][0]=Kohlenbansen-anim.0.5
+BackImage[2][0][0][0][3][0]=Kohlenbansen-anim.0.6
+BackImage[2][0][0][0][4][0]=Kohlenbansen-anim.0.7
+BackImage[2][0][0][0][5][0]=Kohlenbansen-anim.0.8
+BackImage[2][0][0][0][6][0]=Kohlenbansen-anim.0.9
+BackImage[2][0][0][0][7][0]=Kohlenbansen-anim.0.10
+BackImage[2][0][0][0][8][0]=Kohlenbansen-anim.0.11
+BackImage[2][0][0][0][9][0]=Kohlenbansen-anim.0.12
+BackImage[2][0][0][0][10][0]=Kohlenbansen-anim.0.13
+BackImage[2][0][0][0][11][0]=Kohlenbansen-anim.0.14
+BackImage[2][0][0][0][12][0]=Kohlenbansen-anim.0.14
+BackImage[2][0][0][0][13][0]=Kohlenbansen-anim.0.14
+BackImage[2][0][0][0][14][0]=Kohlenbansen-anim.0.13
+BackImage[2][0][0][0][15][0]=Kohlenbansen-anim.0.12
+BackImage[2][0][0][0][16][0]=Kohlenbansen-anim.0.11
+BackImage[2][0][0][0][17][0]=Kohlenbansen-anim.0.10
+BackImage[2][0][0][0][18][0]=Kohlenbansen-anim.0.9
+BackImage[2][0][0][0][19][0]=Kohlenbansen-anim.0.8
+BackImage[2][0][0][0][20][0]=Kohlenbansen-anim.0.7
+BackImage[2][0][0][0][21][0]=Kohlenbansen-anim.0.6
+BackImage[2][0][0][0][22][0]=Kohlenbansen-anim.0.5
+-----------------------------------------------------
+Obj=building
+Name=BZT_Kohlenbansen_road
+copyright=TonyBzt/Swier Garst
+type=extension
+waytype=road
+#enables_pax=1
+enables_ware=1
+NoInfo=1
+Level=4
+intro_year=1910
+# Order N,E,S,W
+Dims=1,1,4
+BackImage[0][0][0][0][0][0]=Kohlenbansen-PAK.0.2
+BackImage[1][0][0][0][0][0]=Kohlenbansen-PAK.0.0
+BackImage[2][0][0][0][0][0]=Kohlenbansen-PAK.0.1
+BackImage[3][0][0][0][0][0]=Kohlenbansen-PAK.0.3
+# Winter
+BackImage[0][0][0][0][0][1]=Kohlenbansen-PAK.1.2
+BackImage[1][0][0][0][0][1]=Kohlenbansen-PAK.1.0
+BackImage[2][0][0][0][0][1]=Kohlenbansen-PAK.1.1
+BackImage[3][0][0][0][0][1]=Kohlenbansen-PAK.1.3
+cursor=Kohlenbansen-PAK.0.4
+icon=> Kohlenbansen-PAK.0.5
+----------------------------------------------------
+Obj=building
+Name=BZT_Kohlenbansen-ext
+copyright=TonyBzt/Swier Garst
+type=extension
+waytype=track
+#enables_pax=1
+enables_ware=1
+NoInfo=1
+Level=4
+intro_year=1910
+# Order N,E,S,W
+Dims=1,1,4
+BackImage[0][0][0][0][0][0]=Kohlenbansen-PAK.2.2
+BackImage[1][0][0][0][0][0]=Kohlenbansen-PAK.2.0
+BackImage[2][0][0][0][0][0]=Kohlenbansen-PAK.2.1
+BackImage[3][0][0][0][0][0]=Kohlenbansen-PAK.2.3
+# Winter
+BackImage[0][0][0][0][0][1]=Kohlenbansen-PAK.3.2
+BackImage[1][0][0][0][0][1]=Kohlenbansen-PAK.3.0
+BackImage[2][0][0][0][0][1]=Kohlenbansen-PAK.3.1
+BackImage[3][0][0][0][0][1]=Kohlenbansen-PAK.3.3
+cursor=Kohlenbansen-PAK.2.4
+icon=> Kohlenbansen-PAK.2.5

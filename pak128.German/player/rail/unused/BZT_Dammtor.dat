@@ -1,0 +1,43 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 05-2011
+#    letzte Bearbeitung:
+#    03-09-2015 The Transporter
+#---------------------------------
+Obj=building
+name=Dammtor-Bhf
+copyright=TonyBzt
+level=10
+NoConstruction=1
+type=stop
+waytype=track
+enables_pax=1
+enables_post=1
+cursor=./Images/dammtor-cursor.0.0
+icon=> ./Images/dammtor-icon.0.0
+Dims=1,1,8
+BackImage[0][0][0][0][0]=./Images/dammtor-mitte.0.0
+FrontImage[0][0][0][0][0]=./Images/dammtor-mitte.0.2
+BackImage[1][0][0][0][0]=./Images/dammtor-mitte.0.1
+FrontImage[1][0][0][0][0]=./Images/dammtor-mitte.0.3
+#BackImage[1][0][0][1][0]=./Images/...
+BackImage[2][0][0][0][0]=./Images/dammtor-seite-back.0.0
+FrontImage[2][0][0][0][0]=./Images/dammtor-seite-fore.0.0
+#BackImage[2][0][0][1][0]=./Images/...
+BackImage[3][0][0][0][0]=./Images/dammtor-seite-back.0.1
+FrontImage[3][0][0][0][0]=./Images/dammtor-seite-fore.0.1
+#BackImage[3][0][0][1][0]=./Images/...
+BackImage[4][0][0][0][0]=./Images/dammtor-seite-back.0.2
+FrontImage[4][0][0][0][0]=./Images/dammtor-seite-fore.0.2
+#BackImage[4][0][0][1][0]=./Images/...
+BackImage[5][0][0][0][0]=./Images/dammtor-seite-back.0.3
+FrontImage[5][0][0][0][0]=./Images/dammtor-seite-fore.0.3
+#BackImage[5][0][0][1][0]=./Images/...
+BackImage[6][0][0][0][0]=./Images/dammtor-mitte.0.0
+FrontImage[6][0][0][0][0]=./Images/dammtor-mitte.0.2
+#BackImage[6][0][0][1][0]=./Images/...
+BackImage[7][0][0][0][0]=./Images/dammtor-mitte.0.1
+FrontImage[7][0][0][0][0]=./Images/dammtor-mitte.0.3
+#BackImage[7][0][0][1][0]=./Images/...
+------------------------------------------------------------

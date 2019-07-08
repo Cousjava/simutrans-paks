@@ -2,11 +2,10 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 2008
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=MS_sprinter_mail
-#copyright=
+copyright=Propermike
 intro_year=1980
 intro_month=1
 cost=7032000
