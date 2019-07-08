@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 26-07-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Alstom_H3_Diesel
@@ -14,7 +13,7 @@ cost=7670000
 runningcost=24
 freight=None
 engine_type=diesel 
-smoke=Diesel
+smoke=smoke_diesel
 speed=100
 gear=250
 weight=67

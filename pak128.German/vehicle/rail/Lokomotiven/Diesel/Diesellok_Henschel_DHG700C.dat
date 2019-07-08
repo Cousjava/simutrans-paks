@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 01-04-2019
+---------------------------------
+obj=vehicle
+name=Henschel_DHG700C
+waytype=track
+copyright=pumuckl999
+intro_year=1963
+intro_month=8
+#retire_year=2015
+#retire_month=4
+cost=3195000
+runningcost=24
+freight=None
+engine_type=diesel 
+smoke=smoke_diesel
+speed=50
+gear=200
+weight=66
+power=507
+length=7
+sound=diesel.wav
+EmptyImage[S]=Diesellok_Henschel_DHG700C.0.0
+EmptyImage[E]=Diesellok_Henschel_DHG700C.0.1
+EmptyImage[SE]=Diesellok_Henschel_DHG700C.0.2
+EmptyImage[SW]=Diesellok_Henschel_DHG700C.0.3
+EmptyImage[N]=Diesellok_Henschel_DHG700C.0.4
+EmptyImage[W]=Diesellok_Henschel_DHG700C.0.5
+EmptyImage[NW]=Diesellok_Henschel_DHG700C.0.6
+EmptyImage[NE]=Diesellok_Henschel_DHG700C.0.7
+-----------------------------

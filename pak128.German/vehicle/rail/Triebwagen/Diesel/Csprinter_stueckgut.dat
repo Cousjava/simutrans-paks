@@ -818,17 +818,7 @@ FreightImage[19][W]=Csprinter_stgut.5.1,6,3
 FreightImage[19][NW]=Csprinter_stgut.5.2,0,6
 FreightImage[19][NE]=Csprinter_stgut.5.3,-10,0
 # Wolle
-FreightImagetype[19]=Wolle
-FreightImage[19][S]=Csprinter_stgut.5.4,8,-4
-FreightImage[19][E]=Csprinter_stgut.5.5,-4,-2
-FreightImage[19][SE]=Csprinter_stgut.5.6,0,-1
-FreightImage[19][SW]=Csprinter_stgut.5.7,10,0
-FreightImage[19][N]=Csprinter_stgut.5.0,-11,6
-FreightImage[19][W]=Csprinter_stgut.5.1,6,3
-FreightImage[19][NW]=Csprinter_stgut.5.2,0,6
-FreightImage[19][NE]=Csprinter_stgut.5.3,-10,0
-# Zucker
-FreightImagetype[20]=Zucker
+FreightImagetype[20]=Wolle
 FreightImage[20][S]=Csprinter_stgut.5.4,8,-4
 FreightImage[20][E]=Csprinter_stgut.5.5,-4,-2
 FreightImage[20][SE]=Csprinter_stgut.5.6,0,-1
@@ -837,19 +827,19 @@ FreightImage[20][N]=Csprinter_stgut.5.0,-11,6
 FreightImage[20][W]=Csprinter_stgut.5.1,6,3
 FreightImage[20][NW]=Csprinter_stgut.5.2,0,6
 FreightImage[20][NE]=Csprinter_stgut.5.3,-10,0
+# Zucker
+FreightImagetype[21]=Zucker
+FreightImage[21][S]=Csprinter_stgut.5.4,8,-4
+FreightImage[21][E]=Csprinter_stgut.5.5,-4,-2
+FreightImage[21][SE]=Csprinter_stgut.5.6,0,-1
+FreightImage[21][SW]=Csprinter_stgut.5.7,10,0
+FreightImage[21][N]=Csprinter_stgut.5.0,-11,6
+FreightImage[21][W]=Csprinter_stgut.5.1,6,3
+FreightImage[21][NW]=Csprinter_stgut.5.2,0,6
+FreightImage[21][NE]=Csprinter_stgut.5.3,-10,0
 # lila
 # Betonfertigteile
-FreightImagetype[21]=Betonfertigteile
-FreightImage[21][S]=Csprinter_stgut.6.4,8,-4
-FreightImage[21][E]=Csprinter_stgut.6.5,-4,-2
-FreightImage[21][SE]=Csprinter_stgut.6.6,0,-1
-FreightImage[21][SW]=Csprinter_stgut.6.7,10,0
-FreightImage[21][N]=Csprinter_stgut.6.0,-11,6
-FreightImage[21][W]=Csprinter_stgut.6.1,6,3
-FreightImage[21][NW]=Csprinter_stgut.6.2,0,6
-FreightImage[21][NE]=Csprinter_stgut.6.3,-10,0
-# Glas
-FreightImagetype[22]=Glas
+FreightImagetype[22]=Betonfertigteile
 FreightImage[22][S]=Csprinter_stgut.6.4,8,-4
 FreightImage[22][E]=Csprinter_stgut.6.5,-4,-2
 FreightImage[22][SE]=Csprinter_stgut.6.6,0,-1
@@ -858,8 +848,8 @@ FreightImage[22][N]=Csprinter_stgut.6.0,-11,6
 FreightImage[22][W]=Csprinter_stgut.6.1,6,3
 FreightImage[22][NW]=Csprinter_stgut.6.2,0,6
 FreightImage[22][NE]=Csprinter_stgut.6.3,-10,0
-# Moebel
-FreightImagetype[23]=Moebel
+# Glas
+FreightImagetype[23]=Glas
 FreightImage[23][S]=Csprinter_stgut.6.4,8,-4
 FreightImage[23][E]=Csprinter_stgut.6.5,-4,-2
 FreightImage[23][SE]=Csprinter_stgut.6.6,0,-1
@@ -868,8 +858,8 @@ FreightImage[23][N]=Csprinter_stgut.6.0,-11,6
 FreightImage[23][W]=Csprinter_stgut.6.1,6,3
 FreightImage[23][NW]=Csprinter_stgut.6.2,0,6
 FreightImage[23][NE]=Csprinter_stgut.6.3,-10,0
-# Zement
-FreightImagetype[24]=Zement
+# Moebel
+FreightImagetype[24]=Moebel
 FreightImage[24][S]=Csprinter_stgut.6.4,8,-4
 FreightImage[24][E]=Csprinter_stgut.6.5,-4,-2
 FreightImage[24][SE]=Csprinter_stgut.6.6,0,-1
@@ -878,4 +868,14 @@ FreightImage[24][N]=Csprinter_stgut.6.0,-11,6
 FreightImage[24][W]=Csprinter_stgut.6.1,6,3
 FreightImage[24][NW]=Csprinter_stgut.6.2,0,6
 FreightImage[24][NE]=Csprinter_stgut.6.3,-10,0
+# Zement
+FreightImagetype[25]=Zement
+FreightImage[25][S]=Csprinter_stgut.6.4,8,-4
+FreightImage[25][E]=Csprinter_stgut.6.5,-4,-2
+FreightImage[25][SE]=Csprinter_stgut.6.6,0,-1
+FreightImage[25][SW]=Csprinter_stgut.6.7,10,0
+FreightImage[25][N]=Csprinter_stgut.6.0,-11,6
+FreightImage[25][W]=Csprinter_stgut.6.1,6,3
+FreightImage[25][NW]=Csprinter_stgut.6.2,0,6
+FreightImage[25][NE]=Csprinter_stgut.6.3,-10,0
 ---------------------------------------

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 2008
-#    Geändert: 03-09-2018, pumuckl999
 ---------------------------------
 obj=vehicle
 name=BR01Tender
@@ -19,7 +18,6 @@ speed=140
 weight=30
 length=6
 sound=-1
-length=7
 Constraint[Prev][0]=BR01_DRG
 Constraint[Prev][1]=Badische_IVh
 Constraint[Prev][2]=none

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 2008
-#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
 ---------------------------------
 obj=vehicle
 name=DB240
@@ -14,7 +13,7 @@ runningcost=251
 waytype=track
 freight=None
 engine_type=diesel
-smoke=Diesel
+smoke=smoke_diesel
 speed=160
 gear=325
 weight=124

@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 25-03-2019
+#	Letzte Bearbeitung:
+---------------------------------
+obj=vehicle
+name=E60
+copyright=pumuckl999
+intro_year=1927
+intro_month=1
+retire_year=1983
+retire_month=12
+cost=5290000
+runningcost=65
+waytype=electrified_track
+speed=55
+weight=72.5
+power=830
+gear=180
+length=8
+sound=-1
+EmptyImage[S]=elok_e60.0.0
+EmptyImage[E]=elok_e60.0.1
+EmptyImage[SE]=elok_e60.0.2
+EmptyImage[SW]=elok_e60.0.3
+EmptyImage[N]=elok_e60.0.4
+EmptyImage[W]=elok_e60.0.5
+EmptyImage[NW]=elok_e60.0.6
+EmptyImage[NE]=elok_e60.0.7
+-----------------------------

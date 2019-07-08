@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 27-03-2019
+---------------------------------
+obj=vehicle
+name=Triebwagen_ET_184_4
+copyright=pumuckl999
+intro_year=1895
+intro_month=1
+retire_year=1959
+retire_month=12
+cost=2322000
+RunningCost=86
+waytype=track
+freight=Passagiere
+engine_type=electric
+power=90
+gear=150
+payload=30
+speed=40
+length=8
+weight=16.2
+EmptyImage[S]=LAG360.0.0
+EmptyImage[E]=LAG360.0.1
+EmptyImage[SE]=LAG360.0.2
+EmptyImage[SW]=LAG360.0.3
+EmptyImage[N]=LAG360.0.4
+EmptyImage[W]=LAG360.0.5
+EmptyImage[NW]=LAG360.0.6
+EmptyImage[NE]=LAG360.0.7
+-----------------------------------

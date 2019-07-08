@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 27-07-2017
-#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
-#    18-10-2018 pumuckl999
 ---------------------------------
 obj=vehicle
 name=Vossloh-G400B
@@ -15,7 +13,7 @@ cost=3130000
 runningcost=11
 freight=None
 engine_type=diesel 
-smoke=Diesel
+smoke=smoke_diesel
 speed=70
 gear=175
 weight=40

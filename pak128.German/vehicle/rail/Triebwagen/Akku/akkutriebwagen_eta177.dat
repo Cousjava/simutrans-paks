@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 15-04-2017
-#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
 ---------------------------------
 obj=vehicle
 name=ETA177_vorn
@@ -15,7 +14,7 @@ cost=7845000
 runningcost=176
 waytype=track
 engine_type=battery
-#smoke=Diesel
+#smoke=smoke_diesel
 freight=Passagiere
 payload=54
 speed=75

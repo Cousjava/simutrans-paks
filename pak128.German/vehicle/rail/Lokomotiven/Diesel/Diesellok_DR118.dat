@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 31-03-2019
+---------------------------------
+obj=vehicle
+name=DR118
+waytype=track
+copyright=pumuckl999
+intro_year=1960
+intro_month=4
+retire_year=2015
+retire_month=4
+cost=18451000
+runningcost=176
+freight=None
+engine_type=diesel 
+smoke=smoke_diesel
+speed=120
+gear=300
+weight=78.7
+power=1472
+length=12
+sound=diesel.wav
+EmptyImage[S]=Diesellok_DR118.0.0
+EmptyImage[E]=Diesellok_DR118.0.1
+EmptyImage[SE]=Diesellok_DR118.0.2
+EmptyImage[SW]=Diesellok_DR118.0.3
+EmptyImage[N]=Diesellok_DR118.0.4
+EmptyImage[W]=Diesellok_DR118.0.5
+EmptyImage[NW]=Diesellok_DR118.0.6
+EmptyImage[NE]=Diesellok_DR118.0.7
+-----------------------------

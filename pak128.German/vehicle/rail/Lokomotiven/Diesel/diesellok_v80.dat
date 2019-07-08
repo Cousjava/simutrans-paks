@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 01-04-2017
-#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
-#    18-10-2018 pumuckl999
 ---------------------------------
 obj=vehicle
 name=V80
@@ -17,7 +15,7 @@ cost=8680000
 runningcost=96
 freight=None
 engine_type=diesel 
-smoke=Diesel
+smoke=smoke_diesel
 speed=100
 gear=230
 weight=58

@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 26-03-2019
+#	Letzte Bearbeitung:
+---------------------------------
+obj=vehicle
+name=E32
+copyright=pumuckl999
+intro_year=1924
+intro_month=1
+retire_year=1972
+retire_month=12
+cost=8323000
+runningcost=115
+waytype=electrified_track
+speed=75
+weight=74.8
+power=1010
+gear=200
+length=9
+sound=-1
+EmptyImage[S]=elok_e32.0.0
+EmptyImage[E]=elok_e32.0.1
+EmptyImage[SE]=elok_e32.0.2
+EmptyImage[SW]=elok_e32.0.3
+EmptyImage[N]=elok_e32.0.4
+EmptyImage[W]=elok_e32.0.5
+EmptyImage[NW]=elok_e32.0.6
+EmptyImage[NE]=elok_e32.0.7
+-----------------------------

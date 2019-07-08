@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 30-03-2019
+#	Letzte Bearbeitung:
+---------------------------------
+obj=vehicle
+name=ADtranz_EL2000
+copyright=pumuckl999
+intro_year=1999
+intro_month=1
+#retire_year=
+#retire_month=
+cost=22680000
+runningcost=92
+waytype=electrified_track
+speed=70
+weight=140
+power=3040
+gear=400
+length=11
+sound=-1
+EmptyImage[S]=EL2000.0.0
+EmptyImage[E]=EL2000.0.1
+EmptyImage[SE]=EL2000.0.2
+EmptyImage[SW]=EL2000.0.3
+EmptyImage[N]=EL2000.0.4
+EmptyImage[W]=EL2000.0.5
+EmptyImage[NW]=EL2000.0.6
+EmptyImage[NE]=EL2000.0.7
+-----------------------------

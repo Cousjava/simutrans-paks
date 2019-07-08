@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 15-10-2017
-#	Letzte Bearbeitung: 18-10-2018 pumuckl999
 ---------------------------------
 obj=vehicle
 name=NeuhaldenslebenerEisenbahn_T03
@@ -17,7 +16,7 @@ runningcost=136
 freight=Post
 payload=45
 engine_type=diesel 
-smoke=Diesel
+smoke=smoke_diesel
 speed=60
 gear=180
 weight=31.3

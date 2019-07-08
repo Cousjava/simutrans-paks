@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=VT75
@@ -15,7 +14,7 @@ cost=5532000
 runningcost=124
 waytype=track
 engine_type=diesel
-smoke=Diesel
+smoke=smoke_diesel
 freight=Passagiere
 payload=42
 speed=70

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$ 
 ---------------------------------
 obj=vehicle
 name=G11-Wagen
@@ -19,7 +18,6 @@ freight=Buecher
 payload=15
 speed=90
 weight=12
-length=9
 EmptyImage[S]=G11.0.0
 EmptyImage[W]=G11.0.1
 EmptyImage[SE]=G11.0.2

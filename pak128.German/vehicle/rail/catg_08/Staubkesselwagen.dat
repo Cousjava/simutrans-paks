@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 2008
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Staubwagen
@@ -16,7 +15,6 @@ freight=Zement_lose
 payload=24
 speed=100
 weight=21
-speed=100
 length=6
 sound=-1
 EmptyImage[S]=Staubkesselwagen.0.0

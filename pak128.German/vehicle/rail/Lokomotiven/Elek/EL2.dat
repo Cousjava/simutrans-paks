@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 29-03-2019
+#	Letzte Bearbeitung:
+---------------------------------
+obj=vehicle
+name=LEW_EL2
+copyright=pumuckl999
+intro_year=1952
+intro_month=1
+#retire_year=
+#retire_month=
+cost=8540000
+runningcost=81
+waytype=electrified_track
+speed=65
+weight=100
+power=1160
+gear=350
+length=10
+sound=-1
+EmptyImage[S]=EL2.0.0
+EmptyImage[E]=EL2.0.1
+EmptyImage[SE]=EL2.0.2
+EmptyImage[SW]=EL2.0.3
+EmptyImage[N]=EL2.0.4
+EmptyImage[W]=EL2.0.5
+EmptyImage[NW]=EL2.0.6
+EmptyImage[NE]=EL2.0.7
+-----------------------------

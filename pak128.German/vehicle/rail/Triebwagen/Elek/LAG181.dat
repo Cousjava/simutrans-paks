@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 27-03-2019
+---------------------------------
+obj=vehicle
+name=Triebwagen_ET_186_11
+copyright=pumuckl999
+intro_year=1904
+intro_month=1
+retire_year=1952
+retire_month=12
+cost=2914000
+RunningCost=110
+waytype=track
+freight=Passagiere
+engine_type=electric
+power=88
+gear=175
+payload=40
+speed=40
+length=8
+weight=16.2
+EmptyImage[S]=LAG181.0.0
+EmptyImage[E]=LAG181.0.1
+EmptyImage[SE]=LAG181.0.2
+EmptyImage[SW]=LAG181.0.3
+EmptyImage[N]=LAG181.0.4
+EmptyImage[W]=LAG181.0.5
+EmptyImage[NW]=LAG181.0.6
+EmptyImage[NE]=LAG181.0.7
+-----------------------------------

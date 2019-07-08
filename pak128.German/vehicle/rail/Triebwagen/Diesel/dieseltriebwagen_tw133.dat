@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 16-04-2017
-#    Geaendert: 18-10-2018
 -----------------------
 obj=vehicle
 name=VT133
@@ -15,7 +14,7 @@ cost=3805200
 runningcost=112
 waytype=track
 engine_type=diesel
-smoke=Diesel
+smoke=smoke_diesel
 freight=Passagiere
 payload=42
 speed=56

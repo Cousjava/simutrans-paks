@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 28-08-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Schienenzeppelin
@@ -17,7 +16,7 @@ runningcost=325
 freight=Passagiere
 payload=40
 engine_type=diesel 
-smoke=Diesel
+smoke=smoke_diesel
 speed=230
 gear=300
 weight=20

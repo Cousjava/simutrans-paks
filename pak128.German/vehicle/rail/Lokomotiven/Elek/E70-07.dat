@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 27-03-2019
+#	Letzte Bearbeitung:
+---------------------------------
+obj=vehicle
+name=Preussische_EG_507
+copyright=pumuckl999
+intro_year=1913
+intro_month=1
+retire_year=1938
+retire_month=12
+cost=3330000
+runningcost=47
+waytype=electrified_track
+speed=50
+weight=68
+power=530
+gear=185
+length=7
+sound=-1
+EmptyImage[S]=E70-07.0.0
+EmptyImage[E]=E70-07.0.1
+EmptyImage[SE]=E70-07.0.2
+EmptyImage[SW]=E70-07.0.3
+EmptyImage[N]=E70-07.0.4
+EmptyImage[W]=E70-07.0.5
+EmptyImage[NW]=E70-07.0.6
+EmptyImage[NE]=E70-07.0.7
+-----------------------------

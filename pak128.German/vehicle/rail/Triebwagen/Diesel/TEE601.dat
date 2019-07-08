@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 
-#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
 ---------------------------------
 obj=vehicle
 name=TEE_Triebwagen_Kopf
@@ -15,7 +14,7 @@ cost=16130000
 runningcost=174
 waytype=track
 engine_type=diesel
-smoke=Diesel
+smoke=smoke_diesel
 freight=Passagiere
 payload=12
 power=810
@@ -76,8 +75,8 @@ retire_month=12
 cost=16130000
 runningcost=174
 waytype=track
-engine_type=Diesel
-smoke=diesel
+engine_type=diesel
+smoke=smoke_diesel
 freight=Passagiere
 payload=12
 power=810
