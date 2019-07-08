@@ -1,0 +1,37 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 2008
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Getreidetrailer
+copyright=TonyBzt
+intro_year=1920
+intro_month=1
+cost=442000
+runningcost=36
+waytype=road
+freight=Weizen
+payload=12
+speed=20
+weight=1
+Constraint[next][0]=Getreidetrailer
+Constraint[next][1]=none
+EmptyImage[S]=Getreidetrailer.1.0
+EmptyImage[N]=Getreidetrailer.1.1
+EmptyImage[E]=Getreidetrailer.1.2
+EmptyImage[W]=Getreidetrailer.1.3
+EmptyImage[SE]=Getreidetrailer.1.4
+EmptyImage[NW]=Getreidetrailer.1.5
+EmptyImage[NE]=Getreidetrailer.1.6
+EmptyImage[SW]=Getreidetrailer.1.7
+FreightImage[S]=Getreidetrailer.2.0
+FreightImage[N]=Getreidetrailer.2.1
+FreightImage[E]=Getreidetrailer.2.2
+FreightImage[W]=Getreidetrailer.2.3
+FreightImage[SE]=Getreidetrailer.2.4
+FreightImage[NW]=Getreidetrailer.2.5
+FreightImage[NE]=Getreidetrailer.2.6
+FreightImage[SW]=Getreidetrailer.2.7
+---------------------------------------------

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=MagirusIveco_T_Holz
@@ -20,7 +19,7 @@ weight=11
 freight=Holz
 payload=13
 length=7
-smoke=Diesel
+smoke=smoke_diesel
 constraint[prev][0]=none
 EmptyImage[S]=RR_MAG_T_Holz.0.1
 EmptyImage[N]=RR_MAG_T_Holz.0.2

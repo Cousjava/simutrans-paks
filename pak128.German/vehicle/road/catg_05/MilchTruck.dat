@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 2008
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=BZT_LKW_Milch
@@ -20,7 +19,7 @@ speed=80
 engine_type=diesel 
 weight=6
 power=82
-smoke=Diesel
+smoke=smoke_diesel
 sound=1
 Constraint[Prev][0]=none
 Constraint[Next][0]=BZT_LKW_Milch_Trailer

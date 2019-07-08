@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Buessing_6500T_Aero
@@ -22,7 +21,7 @@ weight=11
 power=110
 sound=1
 length=11
-smoke=Diesel
+smoke=smoke_diesel
 Constraint[Prev][0]=none
 Constraint[Next][0]=none
 EmptyImage[S]=RR_BUS_BU_6500T_Aero.0.1

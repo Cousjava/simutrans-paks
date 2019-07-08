@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 2008
+---------------------------------
+obj=vehicle
+name=BZT-Betonlaster
+copyright=TonyBzt
+intro_year=1958
+intro_month=1
+cost=5260000
+runningcost=99
+waytype=road
+freight=Beton
+payload=15
+speed=60
+engine_type=diesel
+weight=10
+power=410
+smoke=smoke_diesel
+sound=1
+Constraint[Prev][0]=none
+EmptyImage[S]=BetonLaster.0.0
+EmptyImage[N]=BetonLaster.0.1
+EmptyImage[E]=BetonLaster.0.2
+EmptyImage[W]=BetonLaster.0.3
+EmptyImage[SE]=BetonLaster.0.4
+EmptyImage[NW]=BetonLaster.0.5
+EmptyImage[NE]=BetonLaster.0.6
+EmptyImage[SW]=BetonLaster.0.7
+-----------------------------------

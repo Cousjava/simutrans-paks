@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Curtiss_C46_Lufthansa_Kuehlwaren
@@ -23,7 +22,7 @@ speed=435
 weight=23
 length=3
 sound=6
-smoke=Diesel
+smoke=smoke_diesel
 EmptyImage[W]=Curtiss_C46_Fracht.5.1
 EmptyImage[NW]=Curtiss_C46_Fracht.5.2
 EmptyImage[N]=Curtiss_C46_Fracht.5.3

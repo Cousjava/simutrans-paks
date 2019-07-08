@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Anhaenger_18t_Landwirtschaft
@@ -63,13 +62,13 @@ FreightImage[3][SE]=RR_Anhaenger_18t_Landwirt.5.5
 FreightImage[3][NW]=RR_Anhaenger_18t_Landwirt.5.6
 FreightImage[3][NE]=RR_Anhaenger_18t_Landwirt.5.7
 FreightImage[3][SW]=RR_Anhaenger_18t_Landwirt.5.8
-FreightImagetype[3]=Flachs
-FreightImage[3][S]=RR_Anhaenger_18t_Landwirt.6.1
-FreightImage[3][N]=RR_Anhaenger_18t_Landwirt.6.2
-FreightImage[3][E]=RR_Anhaenger_18t_Landwirt.6.3
-FreightImage[3][W]=RR_Anhaenger_18t_Landwirt.6.4
-FreightImage[3][SE]=RR_Anhaenger_18t_Landwirt.6.5
-FreightImage[3][NW]=RR_Anhaenger_18t_Landwirt.6.6
-FreightImage[3][NE]=RR_Anhaenger_18t_Landwirt.6.7
-FreightImage[3][SW]=RR_Anhaenger_18t_Landwirt.6.8
+FreightImagetype[4]=Flachs
+FreightImage[4][S]=RR_Anhaenger_18t_Landwirt.6.1
+FreightImage[4][N]=RR_Anhaenger_18t_Landwirt.6.2
+FreightImage[4][E]=RR_Anhaenger_18t_Landwirt.6.3
+FreightImage[4][W]=RR_Anhaenger_18t_Landwirt.6.4
+FreightImage[4][SE]=RR_Anhaenger_18t_Landwirt.6.5
+FreightImage[4][NW]=RR_Anhaenger_18t_Landwirt.6.6
+FreightImage[4][NE]=RR_Anhaenger_18t_Landwirt.6.7
+FreightImage[4][SW]=RR_Anhaenger_18t_Landwirt.6.8
 --------------------------------------------------

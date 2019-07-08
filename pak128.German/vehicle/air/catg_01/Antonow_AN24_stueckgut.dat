@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$ 
 ---------------------------------
 obj=vehicle
 name=Antonow_AN24_Stueckgut
@@ -23,7 +22,7 @@ speed=450
 weight=13
 length=3
 sound=6
-smoke=Diesel
+smoke=smoke_diesel
 EmptyImage[W]=Antonow_AN24_Fracht.2.1
 EmptyImage[NW]=Antonow_AN24_Fracht.2.2
 EmptyImage[N]=Antonow_AN24_Fracht.2.3

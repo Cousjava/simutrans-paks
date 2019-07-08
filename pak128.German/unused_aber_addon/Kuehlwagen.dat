@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 2008
+---------------------------------
+obj=vehicle
+name=Cooling_Truck_2
+copyright=S. Kroytor
+intro_year=1920
+intro_month=1
+retire_year=1958
+retire_month=8
+cost=727500
+runningcost=25
+waytype=road
+engine_type=diesel
+freight=Fleisch
+payload=4
+speed=45
+power=35
+gear=60
+weight=3
+smoke=smoke_diesel
+sound=engine-start-diesel_d.wav
+constraint[next][0]=none
+constraint[prev][0]=none
+emptyimage[w]=Kuehlwagen.0.0
+emptyimage[nw]=Kuehlwagen.0.1
+emptyimage[n]=Kuehlwagen.0.2
+emptyimage[ne]=Kuehlwagen.0.3
+emptyimage[e]=Kuehlwagen.0.4
+emptyimage[se]=Kuehlwagen.0.5
+emptyimage[s]=Kuehlwagen.0.6
+emptyimage[sw]=Kuehlwagen.0.7
+------------------------------------

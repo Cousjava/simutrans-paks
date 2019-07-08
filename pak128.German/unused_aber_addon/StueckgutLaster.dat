@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu:
+---------------------------------
+obj=vehicle
+name=StueckgutLaster
+copyright=S. Kroytor
+intro_year=1920
+intro_month=1
+retire_year=1930
+retire_month=8
+cost=727500
+runningcost=25
+waytype=road
+engine_type=diesel
+freight=Mehl
+payload=4
+speed=45
+power=35
+gear=60
+weight=3
+smoke=smoke_diesel
+sound=engine-start-diesel_d.wav
+constraint[next][0]=none
+constraint[prev][0]=none
+emptyimage[w]=StueckgutLaster.0.0
+emptyimage[nw]=StueckgutLaster.0.1
+emptyimage[n]=StueckgutLaster.0.2
+emptyimage[ne]=StueckgutLaster.0.3
+emptyimage[e]=StueckgutLaster.0.4
+emptyimage[se]=StueckgutLaster.0.5
+emptyimage[s]=StueckgutLaster.0.6
+emptyimage[sw]=StueckgutLaster.0.7
+------------------------------------------

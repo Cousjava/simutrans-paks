@@ -1,0 +1,44 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu: 05-04-2019
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Loreley_IV
+copyright=pumuckl999
+intro_year=1905
+intro_month=1
+retire_year=1978
+retire_month=12
+cost=2116500
+runningcost=203
+waytype=water
+freight=Autos
+engine_type=steam
+power=75
+speed=17
+gear=800
+weight=350
+payload=13
+length=8
+sound=-1
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[W]=DS_Loreley_IV.0.0,-24,8
+EmptyImage[NW]=DS_Loreley_IV.0.1,-16,16
+EmptyImage[N]=DS_Loreley_IV.0.2,-48,8
+EmptyImage[NE]=DS_Loreley_IV.0.3,-32,4
+EmptyImage[E]=DS_Loreley_IV.0.4,-8,-8
+EmptyImage[SE]=DS_Loreley_IV.0.5,8,-4
+EmptyImage[S]=DS_Loreley_IV.0.6,24,4
+EmptyImage[SW]=DS_Loreley_IV.0.7,14,8
+FreightImage[W]=DS_Loreley_IV.1.0,-24,8
+FreightImage[NW]=DS_Loreley_IV.1.1,-16,16
+FreightImage[N]=DS_Loreley_IV.1.2,-48,8
+FreightImage[NE]=DS_Loreley_IV.1.3,-32,4
+FreightImage[E]=DS_Loreley_IV.1.4,-8,-8
+FreightImage[SE]=DS_Loreley_IV.1.5,8,-4
+FreightImage[S]=DS_Loreley_IV.1.6,24,4
+FreightImage[SW]=DS_Loreley_IV.1.7,14,8
+-------------------------------------------------------

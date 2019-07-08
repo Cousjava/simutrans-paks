@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 
-#	Letzte Bearbeitung: $Date - $Author$
 ---------------------------------
 obj=vehicle
 name=DAF_95XF_Silotransport
@@ -20,7 +19,7 @@ weight=10.5
 freight=Zement_lose
 payload=10
 length=8
-smoke=Diesel
+smoke=smoke_diesel
 constraint[prev][0]=none
 constraint[next][0]=Anhaenger_18t_Holztransport
 constraint[next][1]=Anhaenger_18t_Milchtransport

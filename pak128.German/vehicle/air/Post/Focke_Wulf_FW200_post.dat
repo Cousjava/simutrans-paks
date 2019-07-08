@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Focke-Wulf_FW200_Post
@@ -23,7 +22,7 @@ speed=380
 weight=14
 length=3
 sound=planelow.wav
-smoke=Diesel
+smoke=smoke_diesel
 EmptyImage[W]=Focke_Wulf_FW200_Fracht.1.1
 EmptyImage[NW]=Focke_Wulf_FW200_Fracht.1.2
 EmptyImage[N]=Focke_Wulf_FW200_Fracht.1.3

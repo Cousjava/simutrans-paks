@@ -1,0 +1,48 @@
+#	PAK128.german
+#	Way
+Obj=way
+name=
+copyright=
+waytype=road track tram_track monorail_track maglev_track water air power
+system_type=#if track=>0 oder 1 oder 7; if monorail_track 0 oder 1; if air 0 oder 1; if water 0 oder 1 oder 255
+intro_year =1800
+intro_month=1
+retire_year=2999
+retire_month=
+cost=
+maintenance=700
+topspeed=60
+max_weight=40
+icon=>
+cursor=
+Image[-]=
+Image[N]=
+Image[S]=
+Image[E]=
+Image[W]=
+Image[NS]=
+Image[EW]=
+Image[NSE]=
+Image[NSW]=
+Image[NEW]=
+Image[SEW]=
+Image[NSEW]= 
+Image[NSE1]=optional bei umschaltenden Weichen hier Pos.1
+Image[NSW1]=
+Image[NEW1]=
+Image[SEW1]=
+Image[NSEW1]=
+Image[NSE2]=optional bei umschaltenden Weichen hier Pos.2
+Image[NSW2]=
+Image[NEW2]=
+Image[SEW2]=
+Image[NSEW2]=
+Image[NE]=
+Image[SE]=
+Image[NW]=
+Image[SW]=
+ImageUp[3]=
+ImageUp[6]=
+ImageUp[9]=
+ImageUp[12]=
+#_EO_

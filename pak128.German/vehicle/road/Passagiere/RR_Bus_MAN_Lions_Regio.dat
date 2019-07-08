@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=MAN_Lions_Regio
@@ -18,7 +17,7 @@ engine_type=diesel
 speed=100
 weight=12
 power=228
-smoke=Diesel
+smoke=smoke_diesel
 sound=1
 Constraint[Prev][0]=none
 Constraint[Next][0]=none

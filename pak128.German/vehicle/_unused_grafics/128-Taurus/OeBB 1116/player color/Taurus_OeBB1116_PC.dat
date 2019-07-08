@@ -1,0 +1,28 @@
+#-------------------------------------------------------------------------------
+#
+#   OeBB1116 (player color)
+#
+#   (cost=simutrans_economy)
+#-------------------------------------------------------------------------------
+obj=vehicle
+name=OeBB_1116"Taurus"(PC)
+Copyright=Haru
+waytype=track
+engine_type=electric
+freight=None
+speed=230
+cost=17140000
+weight=85
+power=6400
+gear=120
+RunningCost=604
+intro_year=2000
+EmptyImage[S]=Taurus_OeBB1116_PC.0.0
+EmptyImage[E]=Taurus_OeBB1116_PC.0.1
+EmptyImage[SE]=Taurus_OeBB1116_PC.0.2
+EmptyImage[SW]=Taurus_OeBB1116_PC.0.3
+EmptyImage[N]=Taurus_OeBB1116_PC.0.4
+EmptyImage[W]=Taurus_OeBB1116_PC.0.5
+EmptyImage[NW]=Taurus_OeBB1116_PC.0.6
+EmptyImage[NE]=Taurus_OeBB1116_PC.0.7
+--------------------------------------------------------------------------------

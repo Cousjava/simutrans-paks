@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 2008
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Steyrbus
@@ -20,7 +19,7 @@ payload=58
 speed=80
 weight=7
 power=100
-smoke=Diesel
+smoke=smoke_diesel
 Constraint[Prev][0]=none
 Constraint[Next][0]=none
 EmptyImage[S]=Bus1935.0.0

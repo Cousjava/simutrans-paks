@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=MAN_M90_Kuehltransport
@@ -20,7 +19,7 @@ weight=7.89
 freight=Fleisch
 payload=16
 length=7
-smoke=Diesel
+smoke=smoke_diesel
 constraint[prev][0]=none
 constraint[next][0]=Anhaenger_18t_Holztransport
 constraint[next][1]=Anhaenger_18t_Milchtransport

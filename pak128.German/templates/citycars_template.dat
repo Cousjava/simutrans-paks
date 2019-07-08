@@ -1,0 +1,19 @@
+#	PAK128.german
+#	Citycars
+obj=citycar
+name=
+DistributionWeight=4
+speed=50
+intro_year=1800
+intro_month=
+retire_year=2999
+retire_month=
+Image[S]=
+Image[N]=
+Image[E]=
+Image[W]=
+Image[SE]=
+Image[NW]=
+Image[NE]=
+Image[SW]=
+#_EO_

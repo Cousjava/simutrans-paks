@@ -1,0 +1,23 @@
+#-------------------------------------------------------------------------------
+#
+#   Bm235
+#
+#   (cost=simutrans_economy)
+#-------------------------------------------------------------------------------
+obj=vehicle
+name=DB_Bm235(OC)
+Copyright=Haru
+waytype=track
+freight=Passagiere
+payload=72
+speed=200
+cost=802000
+weight=45
+RunningCost=14
+intro_year=1979
+intro_month=1
+EmptyImage[S]=Bm235.0.0
+EmptyImage[W]=Bm235.0.1
+EmptyImage[SE]=Bm235.0.2
+EmptyImage[SW]=Bm235.0.3
+--------------------------------------------------------------------------------

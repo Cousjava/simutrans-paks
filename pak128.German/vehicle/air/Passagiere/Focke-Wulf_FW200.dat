@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Focke-Wulf_FW200
@@ -23,7 +22,7 @@ speed=340
 weight=17
 length=3
 sound=bigoldplanes.wav
-smoke=Diesel
+smoke=smoke_diesel
 EmptyImage[W]=Focke-Wulf_FW200.0.0
 EmptyImage[NW]=Focke-Wulf_FW200.0.1
 EmptyImage[N]=Focke-Wulf_FW200.0.2

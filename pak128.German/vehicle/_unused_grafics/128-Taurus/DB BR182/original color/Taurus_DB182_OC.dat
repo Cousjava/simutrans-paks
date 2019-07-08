@@ -1,0 +1,28 @@
+#-------------------------------------------------------------------------------
+#
+#   DB182 (original color)
+#
+#   (cost=simutrans_economy)
+#-------------------------------------------------------------------------------
+obj=vehicle
+name=DB_BR182"Taurus"(OC)
+Copyright=Haru
+waytype=track
+engine_type=electric
+freight=None
+speed=140
+cost=7440000
+weight=85
+power=6400
+gear=120
+RunningCost=432
+intro_year=2001
+EmptyImage[S]=Taurus_DB182_OC.0.0
+EmptyImage[E]=Taurus_DB182_OC.0.1
+EmptyImage[SE]=Taurus_DB182_OC.0.2
+EmptyImage[SW]=Taurus_DB182_OC.0.3
+EmptyImage[N]=Taurus_DB182_OC.0.4
+EmptyImage[W]=Taurus_DB182_OC.0.5
+EmptyImage[NW]=Taurus_DB182_OC.0.6
+EmptyImage[NE]=Taurus_DB182_OC.0.7
+--------------------------------------------------------------------------------

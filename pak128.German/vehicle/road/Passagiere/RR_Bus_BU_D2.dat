@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Buessing_NAG_D2
@@ -21,7 +20,7 @@ speed=50
 weight=7
 power=88
 sound=1
-smoke=Diesel
+smoke=smoke_diesel
 Constraint[Prev][0]=none
 Constraint[Next][0]=none
 EmptyImage[S]=RR_Bus_BU_D2.0.1

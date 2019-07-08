@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 2008
+---------------------------------
+obj=vehicle
+name=KPEV_Tender
+copyright=TonyBzt
+intro_year=1874
+intro_month=1
+retire_year=1924
+retire_month=12
+cost=150000
+runningcost=35
+waytype=track
+freight=None
+weight=15
+speed=90
+length=6
+sound=-1
+Constraint[Prev][0]=KPEV_S1
+Constraint[Prev][1]=none
+EmptyImage[S]=KPEV_S1_Tender.0.0
+EmptyImage[E]=KPEV_S1_Tender.0.1
+EmptyImage[SE]=KPEV_S1_Tender.0.2
+EmptyImage[SW]=KPEV_S1_Tender.0.3
+EmptyImage[N]=KPEV_S1_Tender.0.4
+EmptyImage[W]=KPEV_S1_Tender.0.5
+EmptyImage[NW]=KPEV_S1_Tender.0.6
+EmptyImage[NE]=KPEV_S1_Tender.0.7
+--------------------------------------

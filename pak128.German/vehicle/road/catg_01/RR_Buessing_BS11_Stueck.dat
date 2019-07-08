@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Buessing_BS11_Stueckgut
@@ -20,7 +19,7 @@ speed=80
 weight=6
 power=99
 length=7
-smoke=Diesel
+smoke=smoke_diesel
 constraint[prev][0]=none
 constraint[next][0]=anhaenger_1965_16t_Stueckgut_Koffer
 constraint[next][1]=anhaenger_1965_16t_Stueckgut_Plane

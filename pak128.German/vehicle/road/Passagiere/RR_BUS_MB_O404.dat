@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=MercedesBenz_O404
@@ -22,7 +21,7 @@ weight=12
 power=213
 sound=1
 length=11
-smoke=Diesel
+smoke=smoke_diesel
 Constraint[Prev][0]=none
 Constraint[Next][0]=none
 EmptyImage[S]=RR_BUS_MB_O404.0.1

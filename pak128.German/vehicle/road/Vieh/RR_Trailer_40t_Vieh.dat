@@ -16,7 +16,6 @@ weight=11.6
 freight=Vieh
 payload=22
 length=7
-smoke=Diesel
 constraint[prev][0]=DaimlerBenz_LPS1620_Sattelzugmaschine
 constraint[prev][1]=DaimlerBenz_LPS2220_Sattelzugmaschine
 constraint[prev][2]=MagirusIveco_T_Zugmaschine

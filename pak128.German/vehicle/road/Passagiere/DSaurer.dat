@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 2008
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Saurerbus
@@ -20,7 +19,7 @@ payload=50
 speed=70
 weight=8
 power=100
-smoke=Diesel
+smoke=smoke_diesel
 Constraint[Prev][0]=none
 Constraint[Next][0]=none
 EmptyImage[S]=DSaurer.0.0

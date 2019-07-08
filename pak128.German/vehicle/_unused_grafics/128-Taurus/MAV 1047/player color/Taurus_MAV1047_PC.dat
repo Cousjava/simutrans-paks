@@ -1,0 +1,28 @@
+#-------------------------------------------------------------------------------
+#
+#   MAV1047 (player color)
+#
+#   (cost=simutrans_economy)
+#-------------------------------------------------------------------------------
+obj=vehicle
+name=MAV_1047"Taurus"(PC)
+Copyright=Haru
+waytype=track
+engine_type=electric
+freight=None
+speed=160
+cost=9240000
+weight=85
+power=6400
+gear=120
+RunningCost=471
+intro_year=2002
+EmptyImage[S]=Taurus_MAV1047_PC.0.0
+EmptyImage[E]=Taurus_MAV1047_PC.0.1
+EmptyImage[SE]=Taurus_MAV1047_PC.0.2
+EmptyImage[SW]=Taurus_MAV1047_PC.0.3
+EmptyImage[N]=Taurus_MAV1047_PC.0.4
+EmptyImage[W]=Taurus_MAV1047_PC.0.5
+EmptyImage[NW]=Taurus_MAV1047_PC.0.6
+EmptyImage[NE]=Taurus_MAV1047_PC.0.7
+--------------------------------------------------------------------------------

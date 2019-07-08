@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=MercedesBenz_L2200_Schuettgut
@@ -20,7 +19,7 @@ weight=11
 freight=Kohle
 payload=11
 length=7
-smoke=Diesel
+smoke=smoke_diesel
 constraint[prev][0]=none
 EmptyImage[S]=RR_MB_L2200_Schuettgut.0.1
 EmptyImage[N]=RR_MB_L2200_Schuettgut.0.2

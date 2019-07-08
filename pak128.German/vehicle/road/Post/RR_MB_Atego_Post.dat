@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
-#    22-02-2018 pumuckl999
 ---------------------------------
 obj=vehicle
 name=MercedesBenz_Atego_Post
@@ -19,7 +17,7 @@ weight=6.8
 freight=Post
 payload=100
 length=7
-smoke=Diesel
+smoke=smoke_diesel
 constraint[prev][0]=none
 constraint[next][0]=Anhaenger_12t_Post
 constraint[next][1]=Anhaenger_18t_Post

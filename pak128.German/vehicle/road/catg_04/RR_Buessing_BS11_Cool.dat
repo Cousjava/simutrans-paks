@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Buessing_BS11_Kuehlwaren1
@@ -20,7 +19,7 @@ payload=10
 weight=6
 power=99
 length=7
-smoke=Diesel
+smoke=smoke_diesel
 constraint[prev][0]=none
 EmptyImage[S]=RR_Buessing_BS11_Cool.0.1
 EmptyImage[N]=RR_Buessing_BS11_Cool.0.2

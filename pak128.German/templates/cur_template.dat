@@ -1,0 +1,28 @@
+#	PAK128.german
+#	Buildings-curiousity
+
+obj=building
+name=
+copyright=
+type=cur
+level=
+chance=
+intro_year=
+intro_month=
+retire_year=
+retire_month=
+needs_ground=
+noinfo=1
+noconstruction=1
+build_time=
+climates=desert, tropic, mediterran, temperate, tundra, rocky
+dims=
+BackImage[0][0][0][0][0][0]=
+BackImage[0][0][0][0][0][0]=
+BackImage[0][0][0][0][0][0]=
+BackImage[0][0][0][0][0][0]=
+BackImage[0][0][0][0][0][0]=
+BackImage[0][0][0][0][0][0]=
+BackImage[0][0][0][0][0][0]=
+BackImage[0][0][0][0][0][0]=
+#_EO_

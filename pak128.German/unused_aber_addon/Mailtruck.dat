@@ -1,0 +1,37 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 2008
+#	Letzte Bearbeitung
+#    22-10-2015 The Transporter
+---------------------------------
+obj=vehicle
+name=SK_Mail_Truck_1
+copyright=Patrick
+intro_year=1923
+intro_month=2
+retire_year=1936
+retire_month=11
+cost=2212500
+runningcost=80
+waytype=road
+engine_type=diesel
+freight=Post
+payload=30
+speed=45
+power=35
+gear=65
+weight=3
+smoke=Diesel_small
+sound=engine-start-diesel_d.wav
+constraint[next][0]=none
+constraint[prev][0]=none
+emptyimage[w]=Mailtruck.12.1
+emptyimage[nw]=Mailtruck.12.2
+emptyimage[n]=Mailtruck.12.3
+emptyimage[ne]=Mailtruck.12.4
+emptyimage[e]=Mailtruck.12.5
+emptyimage[se]=Mailtruck.12.6
+emptyimage[s]=Mailtruck.12.7
+emptyimage[sw]=Mailtruck.12.8
+--------------------------------------

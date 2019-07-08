@@ -1,0 +1,18 @@
+#	PAK128.german
+#	Crossing
+obj=crossing
+name=
+copyright=
+waytype[0]=road
+waytype[1]=track
+speed[0]=40
+speed[1]=160
+openimage[ns][0]=
+front_openimage[ns][0]=
+closedimage[ns][0]=
+front_closedimage[ns][0]=
+openimage[ew][0]=
+front_openimage[ew][0]=
+closedimage[ew][0]=
+front_closedimage[ew][0]=
+#_EO_

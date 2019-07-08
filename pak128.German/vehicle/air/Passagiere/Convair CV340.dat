@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Convair_CV340
@@ -23,7 +22,7 @@ speed=457
 weight=13
 length=3
 sound=planelow.wav
-smoke=Diesel
+smoke=smoke_diesel
 EmptyImage[S]=Convair CV340.0.6
 EmptyImage[N]=Convair CV340.0.2
 EmptyImage[E]=Convair CV340.0.4

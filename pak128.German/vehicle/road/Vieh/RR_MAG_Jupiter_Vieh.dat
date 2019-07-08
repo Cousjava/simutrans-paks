@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Magirus_Saturn150D_Tiertransporter
@@ -21,7 +20,7 @@ weight=9
 freight=Vieh
 payload=10
 length=8
-smoke=Diesel
+smoke=smoke_diesel
 constraint[prev][0]=none
 EmptyImage[S]=RR_MAG_Jupiter_Vieh.0.1
 EmptyImage[N]=RR_MAG_Jupiter_Vieh.0.2

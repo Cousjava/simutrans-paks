@@ -1,0 +1,23 @@
+#-------------------------------------------------------------------------------
+#
+#   Apmz121
+#
+#   (cost=simutrans_economy)
+#-------------------------------------------------------------------------------
+obj=vehicle
+name=DB_Apmz121(OC)
+Copyright=Haru
+waytype=track
+freight=Passagiere
+payload=48
+speed=200
+cost=559000
+weight=40
+RunningCost=9
+intro_year=1962
+intro_month=1
+EmptyImage[S]=Apmz121.0.0
+EmptyImage[W]=Apmz121.0.1
+EmptyImage[SE]=Apmz121.0.2
+EmptyImage[SW]=Apmz121.0.3
+--------------------------------------------------------------------------------

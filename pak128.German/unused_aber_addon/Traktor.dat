@@ -1,0 +1,28 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 2008
+---------------------------------
+obj=vehicle
+name=BZT_Traktor-gruen
+copyright=TonyBzt
+intro_year=1920
+cost=60000
+runningcost=1
+waytype=road
+engine_type=diesel 
+smoke=smoke_diesel
+speed=20
+weight=2
+power=20
+length=6
+sound=1
+Constraint[Prev][0]=none
+EmptyImage[S]=Traktor.0.0
+EmptyImage[N]=Traktor.0.1
+EmptyImage[E]=Traktor.0.2
+EmptyImage[W]=Traktor.0.3
+EmptyImage[SE]=Traktor.0.4
+EmptyImage[NW]=Traktor.0.5
+EmptyImage[NE]=Traktor.0.6
+EmptyImage[SW]=Traktor.0.7

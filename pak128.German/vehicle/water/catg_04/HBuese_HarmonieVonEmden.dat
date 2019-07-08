@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu: 06-04-2019
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=HarmonieVonEmden
+copyright=pumuckl999
+intro_year=1800
+intro_month=1
+retire_year=1870
+retire_month=12
+cost=1625000
+runningcost=206
+waytype=water
+freight=Fleisch
+engine_type=sail
+power=50
+speed=13
+gear=500
+weight=100
+payload=40
+length=8
+sound=-1
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[W]=HBuese_HarmonieVonEmden.0.0,-24,8
+EmptyImage[NW]=HBuese_HarmonieVonEmden.0.1,-16,16
+EmptyImage[N]=HBuese_HarmonieVonEmden.0.2,-48,8
+EmptyImage[NE]=HBuese_HarmonieVonEmden.0.3,-32,4
+EmptyImage[E]=HBuese_HarmonieVonEmden.0.4,-8,-8
+EmptyImage[SE]=HBuese_HarmonieVonEmden.0.5,8,-4
+EmptyImage[S]=HBuese_HarmonieVonEmden.0.6,24,4
+EmptyImage[SW]=HBuese_HarmonieVonEmden.0.7,20,8
+-------------------------------------------------------

@@ -1,0 +1,33 @@
+#-------------------------------------------------------------------------------
+#
+#   BR103.1
+#
+#   (cost=simutrans_economy)
+#-------------------------------------------------------------------------------
+obj=vehicle
+name=DB_BR103
+Copyright=Haru
+waytype=electrified_track
+engine_type=electric
+freight=Passagiere
+payload=0
+speed=200
+cost=15080000
+weight=114
+power=7440
+gear=177
+RunningCost=547
+intro_year=1970
+intro_month=5
+#retire_year =2021
+#retire_month =5
+Constraint[Prev][0]=none
+EmptyImage[S]=BR103_1.0.0
+EmptyImage[E]=BR103_1.0.1
+EmptyImage[SE]=BR103_1.0.2
+EmptyImage[SW]=BR103_1.0.3
+EmptyImage[N]=BR103_1.0.4
+EmptyImage[W]=BR103_1.0.5
+EmptyImage[NW]=BR103_1.0.6
+EmptyImage[NE]=BR103_1.0.7
+--------------------------------------------------------------------------------

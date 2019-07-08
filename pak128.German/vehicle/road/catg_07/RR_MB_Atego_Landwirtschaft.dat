@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=MercedesBenz_Atego_Landwirtschaft
@@ -18,7 +17,7 @@ weight=7
 freight=Hopfen
 payload=8
 length=7
-smoke=Diesel
+smoke=smoke_diesel
 constraint[prev][0]=none
 constraint[next][0]=Anhaenger_12t_Stueckgut
 constraint[next][1]=Anhaenger_12t_Landwirtschaft

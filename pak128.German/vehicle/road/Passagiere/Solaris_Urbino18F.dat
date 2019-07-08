@@ -13,7 +13,6 @@ retire_month=6
 waytype=road
 cost=3981000
 runningcost=130
-waytype=road
 freight=Passagiere
 payload=52
 engine_type=diesel

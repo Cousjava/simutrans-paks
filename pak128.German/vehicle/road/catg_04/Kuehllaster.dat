@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 2008
-#	Letzte Bearbeitung
-#    01-2013: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Kuehllaster
@@ -19,7 +17,7 @@ speed=80
 weight=5
 power=80
 length=9
-smoke=Diesel
+smoke=smoke_diesel
 sound=1
 Constraint[Prev][0]=none
 Constraint[Next][0]=none

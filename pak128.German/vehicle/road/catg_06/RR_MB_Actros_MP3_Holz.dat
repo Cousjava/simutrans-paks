@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=MercedesBenz_Actros_MP3_Holztransport
@@ -18,7 +17,7 @@ weight=11
 freight=Holz
 payload=13
 length=8
-smoke=Diesel
+smoke=smoke_diesel
 constraint[prev][0]=none
 constraint[next][0]=Anhaenger_18t_Holztransport
 constraint[next][1]=Anhaenger_18t_Milchtransport

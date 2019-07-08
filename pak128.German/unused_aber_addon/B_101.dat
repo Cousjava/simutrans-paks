@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 2008
+---------------------------------
+obj=vehicle
+name=RVg-B_101
+copyright=Raven
+intro_year=1919
+intro_month=10
+retire_year=1945
+retire_month=10
+cost=2648000
+runningcost=109
+waytype=road
+engine_type=diesel
+freight=Passagiere
+payload=42
+speed=40
+power=22
+gear=60
+weight=4
+sound=-1
+smoke=Diesel_small
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[W]=B_101.0.1
+EmptyImage[NW]=B_101.0.2
+EmptyImage[N]=B_101.0.3
+EmptyImage[NE]=B_101.0.4
+EmptyImage[E]=B_101.0.5
+EmptyImage[SE]=B_101.0.6
+EmptyImage[S]=B_101.0.7
+EmptyImage[SW]=B_101.0.8
+------------------------------

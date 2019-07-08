@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 
-#	Letzte Bearbeitung: $Date - $Author$
 ---------------------------------
 obj=vehicle
 name=MAN_F90_Zementtransporter
@@ -20,7 +19,7 @@ weight=10
 freight=Zement_lose
 payload=12
 length=7
-smoke=Diesel
+smoke=smoke_diesel
 constraint[prev][0]=none
 EmptyImage[S]=RR_MAN_F90_Zement.0.1
 EmptyImage[N]=RR_MAN_F90_Zement.0.2

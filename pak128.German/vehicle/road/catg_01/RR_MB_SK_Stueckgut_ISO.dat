@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=MercedesBenz_SK_ISO_Container
@@ -20,7 +19,7 @@ weight=11.1
 freight=Buecher
 payload=13
 length=8
-smoke=Diesel
+smoke=smoke_diesel
 constraint[prev][0]=none
 constraint[next][0]=Anhaenger_18t_Holztransport
 constraint[next][1]=Anhaenger_18t_Milchtransport

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Heinkel_He111B_Post
@@ -23,7 +22,7 @@ speed=320
 weight=7
 length=2
 sound=planelow.wav
-smoke=Diesel
+smoke=smoke_diesel
 EmptyImage[W]=Heinkel_He111_Fracht.1.1
 EmptyImage[NW]=Heinkel_He111_Fracht.1.2
 EmptyImage[N]=Heinkel_He111_Fracht.1.3

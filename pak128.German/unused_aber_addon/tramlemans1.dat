@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strassenbahn
+#    Übernahme aus pak128: 05-2015
+#	Letzte Bearbeitung 
+#    12-05-2015 The Transporter
+#	Kaufpreis angepasst: 24.05.15 NNW
+#    11-10-2015 The Transporter
+---------------------------------
+obj=vehicle
+name=Citadis302_Le_Mans_1
+copyright=Gwalch
+intro_year=2007
+intro_month=1
+waytype=tram_track
+cost=6485000
+runningcost=118
+freight=Passagiere
+payload=45
+engine_type=electric
+power=240
+gear=100
+speed=70
+weight=8
+length=5
+Constraint[Prev][0]=none
+Constraint[Next][0]=Citadis302_Le_Mans_2
+EmptyImage[S]=tramwaylemans.0.2
+EmptyImage[E]=tramwaylemans.0.0
+EmptyImage[SE]=tramwaylemans.0.1
+EmptyImage[NE]=tramwaylemans.0.3
+EmptyImage[N]=tramwaylemans.0.4
+EmptyImage[W]=tramwaylemans.0.6
+EmptyImage[NW]=tramwaylemans.0.5
+EmptyImage[SW]=tramwaylemans.0.7
+------------------------------------

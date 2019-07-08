@@ -1,0 +1,26 @@
+#-------------------------------------------------------------------------------
+#
+#   WRmz135
+#
+#   (cost=simutrans_economy)
+#-------------------------------------------------------------------------------
+obj=vehicle
+name=DB_WRmz135(OC)
+waytype=track
+freight=Passagiere
+payload=48
+speed=200
+cost=539000
+weight=45
+RunningCost=9
+intro_year=1976
+intro_month=1
+EmptyImage[S]=WRmz135.0.0
+EmptyImage[E]=WRmz135.0.1
+EmptyImage[SE]=WRmz135.0.2
+EmptyImage[SW]=WRmz135.0.3
+EmptyImage[N]=WRmz135.0.4
+EmptyImage[W]=WRmz135.0.5
+EmptyImage[NW]=WRmz135.0.6
+EmptyImage[NE]=WRmz135.0.7
+--------------------------------------------------------------------------------

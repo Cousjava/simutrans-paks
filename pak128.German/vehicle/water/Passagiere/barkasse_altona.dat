@@ -1,7 +1,6 @@
 #	PAK128.german
 #	Vehicle
 #	Neu:	01.05.2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 obj=vehicle
 name=Barkasse Altona
 copyright=pumuckl999
@@ -19,7 +18,7 @@ speed=18
 weight=20
 length=8
 sound=boat-horn.wav
-smoke=Diesel
+smoke=smoke_diesel
 constraint[prev][0]=none
 constraint[next][0]=Barkasse Post
 constraint[next][1]=none
@@ -57,4 +56,3 @@ EmptyImage[E]=barkasse_altona.0.8,-46,-30
 EmptyImage[SE]=barkasse_altona.0.8,-58,-27
 EmptyImage[S]=barkasse_altona.0.8,-75,-32
 EmptyImage[SW]=barkasse_altona.0.8,-80,-39
-#_EO_

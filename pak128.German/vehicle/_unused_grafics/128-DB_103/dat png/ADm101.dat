@@ -1,0 +1,27 @@
+#-------------------------------------------------------------------------------
+#
+#   ADm101.dat
+#
+#   (cost=simutrans_economy)
+#-------------------------------------------------------------------------------
+obj=vehicle
+name=DB_ADm101(OC)
+Copyright=Haru
+waytype=track
+freight=Passagiere
+payload=49
+speed=160
+cost=365000
+weight=45
+RunningCost=7
+intro_year=1962
+intro_month=1
+EmptyImage[S]=ADm101.0.0
+EmptyImage[E]=ADm101.0.1
+EmptyImage[SE]=ADm101.0.2
+EmptyImage[SW]=ADm101.0.3
+EmptyImage[N]=ADm101.0.4
+EmptyImage[W]=ADm101.0.5
+EmptyImage[NW]=ADm101.0.6
+EmptyImage[NE]=ADm101.0.7
+--------------------------------------------------------------------------------

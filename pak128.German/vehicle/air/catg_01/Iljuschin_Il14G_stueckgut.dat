@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu: 
-#	Letzte Bearbeitung: $Date: 2017-09-30 19:15:51 +0200 (Sa, 30. Sep 2017) $ - $Author: NNW $
 ---------------------------------
 obj=vehicle
 name=Iljuschin_Il14G_Fracht_Stueckgut
@@ -23,7 +22,7 @@ speed=345
 weight=13
 length=3
 sound=6
-smoke=Diesel
+smoke=smoke_diesel
 EmptyImage[W]=Iljuschin_Il14G_Fracht.2.1
 EmptyImage[NW]=Iljuschin_Il14G_Fracht.2.2
 EmptyImage[N]=Iljuschin_Il14G_Fracht.2.3

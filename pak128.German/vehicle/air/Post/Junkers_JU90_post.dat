@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Junkers_JU90_Post
@@ -23,7 +22,7 @@ speed=320
 weight=23
 length=4
 sound=planelow.wav
-smoke=Diesel
+smoke=smoke_diesel
 EmptyImage[W]=Junkers_JU90_Fracht.1.1
 EmptyImage[NW]=Junkers_JU90_Fracht.1.2
 EmptyImage[N]=Junkers_JU90_Fracht.1.3

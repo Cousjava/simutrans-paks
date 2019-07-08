@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Iljuschin_Il-14P
@@ -23,7 +22,7 @@ speed=370
 weight=12
 length=3
 sound=smalloldplanes.wav
-smoke=Diesel
+smoke=smoke_diesel
 EmptyImage[W]=Iljuschin_Il14P.0.0
 EmptyImage[NW]=Iljuschin_Il14P.0.1
 EmptyImage[N]=Iljuschin_Il14P.0.2
