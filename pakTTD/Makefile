@@ -6,8 +6,8 @@ MAKEOBJ ?= ./makeobj
 LIGHTMAP ?= ./lightmap
 
 DESTDIR  ?= simutrans
-PAKDIR   ?= $(DESTDIR)/pak
-ADDONDIR ?= $(DESTDIR)/addons/pak
+PAKDIR   ?= $(DESTDIR)/pakTTD
+ADDONDIR ?= $(DESTDIR)/addons/pakTTD
 DESTFILE ?= simupak64
 
 OUTSIDE :=
