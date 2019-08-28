@@ -180,7 +180,7 @@ Image[3][2]=water.2.3
 Image[3][3]=water.3.3
 ---
 # rocks
-obj=groundobj
+obj=ground_obj
 name=rocks
 seasons=2
 distributionweight=200

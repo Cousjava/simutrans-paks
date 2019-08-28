@@ -94,10 +94,10 @@ MapColor=31
 pax_level=10
 pax_level=5
 Dims=1,2,2
-BackImage[0][0][1][0][0]=MeusH-oilwell.0.0
-BackImage[0][0][0][0][0]=MeusH-oilwell.0.1
-BackImage[1][1][0][0][0]=MeusH-oilwell.0.0
-BackImage[1][0][0][0][0]=MeusH-oilwell.0.1
+BackImage[0][1][0][0][0][0]=MeusH-oilwell.0.0
+BackImage[0][0][0][0][0][0]=MeusH-oilwell.0.1
+BackImage[1][0][0][0][0][0]=MeusH-oilwell.0.0
+BackImage[1][0][1][0][0][0]=MeusH-oilwell.0.1
 --------------------
 #Obj=factory
 #name=2Raffinerie

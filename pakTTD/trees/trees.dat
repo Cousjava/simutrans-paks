@@ -24,6 +24,7 @@ Image[4][1]=Pinie.1.4
 Obj=tree
 Name=Ahorn
 Height=1
+Seasons=2
 DistributionWeight=10
 climates=temperate,mediterran
 Image[0][0]=Ahorn.0.0
