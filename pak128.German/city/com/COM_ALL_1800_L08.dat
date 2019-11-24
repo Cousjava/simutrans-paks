@@ -1,7 +1,7 @@
 #	PAK128.german
 #	Citybuildings industrial
 #       neu: 15-01-2019
-#--------------------------------------
+--------------------------------------
 obj=building
 name=COM_ALL_1800_A_08
 # Schweinfurt_AmGraben30Var
@@ -9,14 +9,13 @@ copyright=pumuckl999
 type=com
 level=8
 chance=100
+clusters=1
 intro_year=1800
 intro_month=1
-retire_year=1930
-retire_month=12
+#retire_year=1930
+#retire_month=12
 needs_ground=0
-noinfo=0
-noconstruction=0
-climates=temperate
+climates=temperate, tundra
 dims=1,1,4
 BackImage[0][0][0][0][0][0]=COM_ALL_1800_L08_sommer.0.0
 BackImage[1][0][0][0][0][0]=COM_ALL_1800_L08_sommer.0.1
@@ -26,4 +25,3 @@ BackImage[0][0][0][0][0][1]=COM_ALL_1800_L08_winter.0.0
 BackImage[1][0][0][0][0][1]=COM_ALL_1800_L08_winter.0.1
 BackImage[2][0][0][0][0][1]=COM_ALL_1800_L08_winter.0.2
 BackImage[3][0][0][0][0][1]=COM_ALL_1800_L08_winter.0.3
-#_EO_

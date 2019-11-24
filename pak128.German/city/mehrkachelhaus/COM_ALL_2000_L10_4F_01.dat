@@ -1,7 +1,7 @@
 #	PAK128.german
 #	Citybuildings commercial
 #       neu: 09-06-2019
-#--------------------------------------
+--------------------------------------
 obj=building
 name=COM_ALL_2005_A_10
 # Kunstmuseum Stuttgart
@@ -9,13 +9,12 @@ copyright=pumuckl999
 type=com
 level=10
 chance=20
+clusters=6,12
 intro_year=2005
 intro_month=3
 #retire_year=
 #retire_month=
 needs_ground=0
-noinfo=0
-noconstruction=0
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 dims=2,2,4
 BackImage[0][0][0][0][0][0]=COM_ALL_2000_L10_4F_01.0.0
@@ -74,4 +73,3 @@ BackImage[3][0][1][1][0][1]=COM_ALL_2000_L10_4F_01.6.4
 BackImage[3][1][0][0][0][1]=COM_ALL_2000_L10_4F_01.6.5
 BackImage[3][1][0][1][0][1]=COM_ALL_2000_L10_4F_01.6.6
 BackImage[3][1][1][0][0][1]=COM_ALL_2000_L10_4F_01.6.7
-#_EO_

@@ -100,8 +100,8 @@ electricity_multiplier = 0
 # town growth is size dependent. There are three different sizes (<1000, 1000-10000, >10000)
 # the idea is, that area increase by square but growth is linear
 growthfactor_villages = 400
-growthfactor_cities = 300
-growthfactor_capitals = 200
+growthfactor_cities = 150
+growthfactor_capitals = 50
 
 # passenger generation (default is 16) Smaller values means less passengers
 passenger_factor=16
@@ -296,7 +296,7 @@ ground_info = 1
 
 # Show passenger level of townhalls?
 # (1=on, 0=off)
-townhall_info = 0
+townhall_info = 1
 
 # do not show the button to add an inverted schedule for rail based convoys
 # (1=hide, 0=show anyway)
@@ -315,6 +315,11 @@ only_single_info = 1
 # 1 (default) only no_route and stuck
 # loading and waiting at signals too
 show_vehicle_states = 1
+
+# If a convoi which you are following enters a tunnel, what to do
+# 0=do not change view, 1=switch to underground mode and back, 2=switch to sliced underground mode
+#follow_convoi_underground = 2
+
 
 # show (default) tiles with a halt when editing a schedule
 visualize_schedule = 1
@@ -431,12 +436,12 @@ cost_alter_land=1250
 cost_set_slope=1500
 cost_alter_climate=500
 cost_found_city=5000000
-cost_multiply_found_industry=1
+cost_multiply_found_industry=500000
 cost_remove_tree=40
-cost_multiply_remove_haus=1
-cost_multiply_remove_field=1
+cost_multiply_remove_haus=1000
+cost_multiply_remove_field=100
 cost_transformer=1000
-cost_maintain_transformer=1
+cost_maintain_transformer=10
 
 # how many months of maintainance the make public tool costs
 cost_make_public_months=60
@@ -478,8 +483,9 @@ intercity_road_length = 10000
 # (old, 102.2.2 and before) intercity_road_type = asphalt_road
 intercity_road[0] = asphalt_road_100
 intercity_road[1] = dirt_road,1800,1849
-intercity_road[2] = Kopfsteinpflasterstrasse,1850,1916
-intercity_road[3] = asphalt_road_100,1917,2999
+intercity_road[2] = cobblestone_road_20,1850,1869
+intercity_road[3] = cobblestone_road_40,1870,1916
+intercity_road[4] = asphalt_road_100,1917,2999
 
 # Type of city roads - must be available as PAK file.
 # Cityroad with timeline: city_road[number]=name,intro-year,retire-year
@@ -489,7 +495,9 @@ intercity_road[3] = asphalt_road_100,1917,2999
 # default: asphalt_road
 # (old, 102.2.2 and before) city_road_type = city_road
 city_road[0] = city_road
-city_road[1] = Kopfsteinpflasterstrasse,1800,1916
+city_road[1] = dirt_cityroad,1800,1835
+city_road[2] = cobblestone_road_20,1836,1869
+city_road[3] = cobblestone_road_40,1870,1916
 
 # now river stuff
 # first river type (should be defined in pak dependent file)

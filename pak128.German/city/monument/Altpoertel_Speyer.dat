@@ -1,17 +1,16 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Denkmal
 #	Neu:26-12-2018
-#	Letzte Bearbeitung:
-#
-# --------------------------------
+---------------------------------
 Obj=building
 name=Altpoertel
 copyright=Pumuckl999
 type=mon
 level=25
 chance=25
-intro_year=1250
+#intro_year=1250
+intro_year=1800
 dims=1,1,4
 BackImage[0][0][0][0][0][0]=Altpoertel_Speyer.0.0
 BackImage[0][0][0][1][0][0]=Altpoertel_Speyer.0.1

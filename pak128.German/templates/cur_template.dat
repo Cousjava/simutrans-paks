@@ -12,7 +12,6 @@ intro_month=
 retire_year=
 retire_month=
 needs_ground=
-noinfo=1
 noconstruction=1
 build_time=
 climates=desert, tropic, mediterran, temperate, tundra, rocky
@@ -25,4 +24,3 @@ BackImage[0][0][0][0][0][0]=
 BackImage[0][0][0][0][0][0]=
 BackImage[0][0][0][0][0][0]=
 BackImage[0][0][0][0][0][0]=
-#_EO_

@@ -135,6 +135,7 @@ $LNG_OBJ_IMPORT[28] = 'Choose Upload Type';
 $LNG_OBJ_IMPORT[29] = 'Warning!! duplicate parameters in .dat file:';
 $LNG_OBJ_IMPORT[2] = 'Dat only';
 $LNG_OBJ_IMPORT[30] = 'no file is given';
+$LNG_OBJ_IMPORT[31] = 'mandatory parameter in the .dat file not given';
 $LNG_OBJ_IMPORT[3] = 'Select "Dat only" if you do not want to modify any images.';
 $LNG_OBJ_IMPORT[4] = 'Select a file';
 $LNG_OBJ_IMPORT[5] = 'Select "Dat only" and upload a single Dat file. A single Dat file not compressed to zip.';

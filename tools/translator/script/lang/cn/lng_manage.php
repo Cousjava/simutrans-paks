@@ -135,6 +135,7 @@ $LNG_OBJ_IMPORT[28] = '选择上传格式';
 $LNG_OBJ_IMPORT[29] = 'Warning!! duplicate parameters in .dat file:';
 $LNG_OBJ_IMPORT[2] = '只能输入日期';
 $LNG_OBJ_IMPORT[30] = 'no file is given';
+$LNG_OBJ_IMPORT[31] = 'mandatory parameter in the .dat file not given';
 $LNG_OBJ_IMPORT[3] = '如果不更改任何图片，选择“仅限数据文件”。';
 $LNG_OBJ_IMPORT[4] = '选择文件';
 $LNG_OBJ_IMPORT[5] = '选择“仅限数据文件”，上传单个数据文件。单个数据文件不能被压缩为zip类型。';

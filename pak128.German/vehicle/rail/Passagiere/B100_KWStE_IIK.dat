@@ -1,0 +1,29 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 04-08-2019
+---------------------------------
+obj=vehicle
+name=B100_KWStE_IIKlasse
+copyright=pumuckl999
+intro_year=1845
+intro_month=1
+retire_year=1897
+retire_month=12
+cost=6480000
+RunningCost=176
+waytype=track
+freight=Passagiere
+payload=52
+speed=80
+weight=24
+length=11
+EmptyImage[S]=B100_KWStE_IIK.0.0
+EmptyImage[E]=B100_KWStE_IIK.0.1
+EmptyImage[SE]=B100_KWStE_IIK.0.2
+EmptyImage[SW]=B100_KWStE_IIK.0.3
+EmptyImage[N]=B100_KWStE_IIK.0.4
+EmptyImage[W]=B100_KWStE_IIK.0.5
+EmptyImage[NW]=B100_KWStE_IIK.0.6
+EmptyImage[NE]=B100_KWStE_IIK.0.7
+--------------------------------

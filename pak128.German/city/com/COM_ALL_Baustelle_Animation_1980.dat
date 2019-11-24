@@ -1,11 +1,10 @@
-#---------------------------------------------------------
+---------------------------------------------------------
 #	PAK128.german
 #	Citygebaeude
 #       Erste Version: 04-2016
 #	Letzte Bearbeitung:
 #       15-04-2016 michelstadt
-#---------------------------------------------------------
-
+---------------------------------------------------------
 obj=building
 name=COM_ALL_1980_Baustelle_Animation_02
 copyright=RedRabbit
@@ -13,7 +12,8 @@ type=com
 Dims=1,1,4
 needs_ground=1
 level=2
-chance=30
+chance=50
+clusters=6
 intro_year=1980
 climates=tropic,mediterran,temperate,tundra
 ###GrafikNormal

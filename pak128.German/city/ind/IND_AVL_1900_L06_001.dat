@@ -1,22 +1,20 @@
 #	PAK128.german
 #	Citybuildings industrial
 #       neu: 03-01-2019
-#--------------------------------------
+--------------------------------------
 obj=building
 name=IND_AVL_1900_A_06
 # Hochbehaelter_Burgberg_Erlangen
 copyright=pumuckl999
 type=ind
-
 level=6
 chance=40
+clusters=5
 intro_year=1904
 intro_month=8
 #retire_year=1950
 #retire_month=12
 needs_ground=0
-noinfo=0
-noconstruction=0
 climates=tundra
 dims=1,1,4
 BackImage[2][0][0][0][0][0]=IND_AVL_1900_L06_001.0.0

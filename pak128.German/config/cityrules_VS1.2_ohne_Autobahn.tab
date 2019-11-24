@@ -1,0 +1,262 @@
+###############################################################################
+# cityrules.tab
+# for PAK128.german mit Autobahnen oder Prachtstraßen
+# weitgehend neugeschrieben von makie 01.10.2019
+###############################################################################
+# City building rules (new fashion)
+
+# how far cities should be minimum apart (default 16)
+minimum_city_distance = 48
+
+# if the area covered by buldings is less than this, the city borders will not increase => more compact cities,
+# not fading out along a single street (default: 25) 
+minimum_building_density = 30
+
+# chance for renovation versus new building (bigger number => less sprawling)
+renovation_percentage = 4
+
+
+#
+# relative affinities for certain building types which can lead to clustering of certain building types
+#
+
+# defaults von Simutrans
+#      start, near ind, near com, near res 
+# res (  0,  -8,       0,        8)
+# com (-10,   1,       8,        1)
+# ind (  0,   8,       0,       -8)
+
+# Start von res sehr, hoch damit immer genug Wohnungen entstehen
+# da Wohnungen bei Neubau nicht / 4 sondern nur die Arbeitssuchenden / 4 geteit werden.
+# Das begunstig normal den Neubau von res am Stadtrand und verhindert den Neubau von Indudrie am Rand.
+# Wenn Wohnungssuchende aber negaitv sind dann wirkt der Negativfaktor ohne /4 stärker negativ
+# Das ermöglicht Indudrie am Stadtrand.
+# Der Wert muss hoch genug sein dass Wohnungssuchende Zahl der Stadt negativ ist
+res_start_score = 40
+# Es werden die Felder X & Y von -2 bis +2 bewertet. Das sind maximal 25 Felder, 
+# aber davon sind einige auch Straßen.
+# leere Felder (und Strassen) gehen mit 0 in die Bewertung ein
+res_near_ind = -8 # keine Wohnhäuser in Industriegebiete mischen
+res_near_com = 2  # etwas Einkaufmöglichkeiten sind erwünscht 
+res_near_res = 8  # wo schon was steht mehr davon bauen oder upgraden 
+
+# keine com am Stadtrand also hoher negativer Startwert
+com_start_score = -14
+com_near_ind = 0  # com in alte Industriefelder mischen
+com_near_com = 8  # wir haben auch cluster von com (Einkaufzentren)
+com_near_res = 9 # die Bewohner wollen einkaufen
+# 20 res Felder * 9 = 180 verlangen nach Einkaufmöglichkeiten 
+# ein Wechsel von res nach com bekommt einen Bewertungsabschlag von 100
+# der Wert muss danach noch positiv sein sonst wird nicht gebaut
+# und der Wert muss höher sein für dieses als res für das gleiche Feld
+# also -100 + com_start -20 + (20 res * 9) = 60 
+# zum Vergleich res_start 40 + (near_res=8*20Felder) = 200 ist die res Bewertung
+# es sind also 141 Arbeitslose mehr als Wohnungssuchende notwendig um ein com auf res Grund zu bauen
+
+# Startwert hoch damit am Stadtrand genug Vorsprung vor den bevorrangigten res vorhanden ist.
+ind_start_score = 30
+ind_near_ind = 8
+ind_near_com = -2 # in den Innenstädten stehen com da industrie nicht weiter bauen
+ind_near_res = -4
+
+
+# explicit clustering of buildings
+# http://forum.simutrans.com/index.php?topic=12042.0
+cluster_factor = 15
+
+#
+# now the actual building rules. They can be up to 7x7.
+# allowed sizes are 3x3 5x5 and 7x7!
+#
+
+#
+# Symbols in rules:
+# S = must not be road
+# s = must be road
+# n = must be bare land
+# H = must not be house
+# h = must be house
+# T = not a stop	// added in 88.03.3
+
+# t = is a stop // added in 88.03.
+# U = allowed slope for roads
+
+# u = forbidden slope for roads
+
+# . = anything matches
+# SPACE = next row
+#
+# Each row must have EXACTLY the same number of members!
+#
+ 
+# if random(8 + chance) == 0 wird gebaut
+# daraus ergibt sich
+# -8 = 100%
+# -7 = 50%
+# -6 = 25%
+# -5 = 12,5% Chance
+# -4 = 6,25% Chance
+
+# Haus an einer Strasse neben einem Haus rechts
+house_1 = ..... ..... ..nh. ..ss. .....
+house_1.chance = -8
+
+# Haus an einer Strasse neben einem Haus links
+house_2 = ..... ..... .hn.. .ss.. .....
+house_2.chance = -8
+
+# Haus an Strassenecke gegenüber der Querstrasse links
+house_3 = ..... ..... .Sns. ..ss. ..hs.
+house_3.chance = -8
+
+# Haus an Strassenecke gegenüber der Querstrasse rechts
+house_3 = ..... ..... .snS. .ss.. ..sh.
+house_3.chance = -8
+
+# Lücke zwischen Häusern schließen
+house_4 = ... hnh ...
+house_4.chance = -8
+
+# Haus gegenüber der Straße 
+house_5 = ..... ..... .SnS. .sss. ..h..
+house_5.chance = -8
+
+# Haus schräg links gegenüber der Straße 
+house_5 = ..... ..... .SnS. .sss. .h...
+house_5.chance = -8
+
+# Haus schräg rechts gegenüber der Straße 
+house_5 = ..... ..... .SnS. .sss. ...h.
+house_5.chance = -8
+
+# Haus in mitte 3er Zelle
+house_6 = ..... ..... ..nhs ..h.. ..s..
+house_6.chance = -8
+
+# Haus gegenüber der Autobahn 
+house_7 = ....... ....... ....... ...n... ..sss.. ..sss.. ...h...
+house_7.chance = -8
+
+# Haus ans Kopfende wenn die Straße nicht weiter gebaut werden kann 
+house_8 = ..... ..h.. ..n.. ..s.. .....
+house_8.chance = -8
+# das gleiche wie 8 wenn das Haus etwas weiter weg steht 
+house_9 = ..h.. ..... ..n.. ..s.. .....
+house_9.chance = -8
+
+# Haus in die Ecke der Straße rechts
+house_10 = ... hn. sh.
+house_10.chance = -8
+
+# Haus in die Ecke der Straße links
+house_11 = ... .nh .hs 
+house_11.chance = -8
+
+# Haus in die Mitte eines großen Platz
+house_12 = sss sss sss 
+house_12.chance = -8
+
+# Haus auf ein überflüssiges Stück Strasse
+house_13 = .sss. .s.s. SsssS .s.s. .sss.
+house_13.chance = -8
+
+# Haus auf ein überflüssiges Stück Strasse
+house_13 = ..... .sss. SsssS .s.s. .sss.
+house_13.chance = -8
+
+
+#house_4 = ..... ..... 
+#                ..nhs 
+#                ..s..
+#                .....
+#house_4.chance = -8
+
+#house_5 = SSSSS SSSSS nnnnn sssss .....
+#house_5.chance = 8
+
+
+
+# Strassenende weiterbauen.
+road_1 = ....... ...H... ..SHS.. .SSnSS. ..hsh.. ...s... .......
+road_1.chance = -8
+
+# Strassenende weiterbauen.
+road_2 = ....... ...H... ..SHS.. SSSnSSS .SSsSS. .sssss. .......
+road_2.chance = -8
+
+# Abzweigen oder weiterbauen.
+road_3 = ....... ...H... SSSHSSS SSSnSSS SSSsSSS ....... .......
+road_3.chance = -8
+
+# Verbinden, gerade.
+road_4 = SsS .n. .s.
+road_4.chance = -8
+
+# 2er Zelle bilden.
+road_5 = ....... ....... ....... shhnh.. ...s... ....... .......
+road_5.chance = 80
+
+# 2er Zelle bilden.
+road_6 = ....... ....... ....... ..hnhhs ...s... ....... .......
+road_6.chance = 80
+
+# Ecke schliessen.
+road_7 = ... sn. Ss.
+road_7.chance = -8
+
+# Verbinden, gerade.
+road_8 = ...s... ...H... ...H... SSSnSSS ...s... ....... .......
+road_8.chance = -8
+
+# Verbinden, schräg.
+road_9 = ....s.. ...HH.. ...H... SSSnhSS ...s... ....... .......
+road_9.chance = -8
+
+# Verbinden, schräg.
+road_10 = ..s.... ..HH... ...H... SShnSSS ...s... ....... .......
+road_10.chance = -8
+
+# Verbinden, schräg.
+road_11 = SSs Snh .s.
+road_11.chance = 80
+
+# Verbinden, schräg.
+road_12 = sSS hnS .s.
+road_12.chance = 80
+
+# Strassenende weiterbauen Häuser rechts
+road_13 = ....... ...H... ...H... ...n... ...s... ...sh.. ...sh..
+road_13.chance = -8
+
+# Strassenende weiterbauen Häuser links
+road_14 = ....... ...H... ...H... ...n... ...s... ..hs... ..hs...
+road_14.chance = -8
+
+# 3er Zelle bilden / Abzweig rechts nach 3 Häusern
+road_15 = ..HSSSS ..HSSSS ..sSSSS ..snHHH ..shSS. ..shSS. ..sh...
+road_15.chance = -8
+
+# 3er Zelle bilden / Abzweig links nach 3 Häusern
+road_16 = SSSSH.. SSSSH.. SSSSs.. HHHns.. .SShs.. .SShs.. ...hs..
+road_16.chance = -8
+
+# Abzweig an diagonaler Strasse
+road_17 = SSSHSSS sSSHSSS ssSHSSS .ssnHHH SSssSSS SSSssSS SSS.ssS
+road_17.chance = -8
+
+# Abzweig an diagonaler Strasse rechts weiter bauen
+road_18 = SSHSSS. SSHSSS. sSHSSS. sssnHHH .ssSSS. SSssSSS SS.ssS.
+road_18.chance = -8
+
+# Abzweig an diagonaler Strasse links weiter bauen
+road_19 = SSSHSSS SSSHSSS sSSHSSS ssSnSSS .sssHHH SSssSSS SSSssSS 
+road_19.chance = -8
+
+# Abzweig an diagonaler Strasse rechts weiter bauen
+road_20 = SHSSS.. SHSSS.. SHSSS.. sssnHHH ssSSSS. SssSSS. S.ssSS.
+road_20.chance = -8
+
+# Abzweig an diagonaler Strasse links weiter bauen
+road_21 = SSSHSSS SSSHSSS SSSHSSS sSSnSSS ssSsSSS .sssHHH SSssSSS 
+road_21.chance = -8
+

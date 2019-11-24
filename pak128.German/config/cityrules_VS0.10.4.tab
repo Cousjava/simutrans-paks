@@ -1,0 +1,136 @@
+# cityrules.tab
+#
+# City building rules (new fashion)
+#
+# author: Hj. Malthaner <hansjoerg.malthaner@gmx.de>
+# date:   25-Nov-03
+# update: 22-Aug-04
+# update: 5-Jan-05
+
+# chance for renovation versus new building 
+(bigger number => less sprawling)
+renovation_percentage = 1
+
+# how far cities should be minimum apart (default 16)
+minimum_city_distance = 48
+
+
+# at which number of inhabitants we need a new market?
+industry_increase_every = 5000
+
+#
+# relative affinities for certain building types which can lead to clustering of certain building types
+#
+
+# avoid building next to industry
+res_start_score = -8
+res_near_ind = 1
+res_near_com = 1
+res_near_res = 1
+
+# everywhere is good, next to com best
+com_start_score = -5
+com_near_ind = 5
+com_near_com = 12
+com_near_res = 4
+
+# next to res means expensive filters and no truck after 10 pm => avoid this ...
+ind_start_score = 5
+ind_near_ind = 5
+ind_near_com = 3
+ind_near_res = 3
+
+
+#
+# now the actual building rules. They can be up to 7x7.
+# allowed sizes are 3x3 5x5 and 7x7!
+#
+
+#
+# Symbols in rules:
+# S = must not be road
+# s = must be road
+# n = must be bare land
+# H = must not be house
+# h = must be house
+# U = road may be buildable
+# u = unbuildable for road
+# t = Stop/extension building
+# T = no Stop
+# . = anything matches
+# SPACE = next row
+#
+# Each row must have EXACTLY the same number of members!
+#
+
+#---3x3 felder entstehen----
+
+# Haus am Strassenrand (20%)
+house_1 = ... Hn. sss
+house_1.chance = -2
+
+# Haus am Strassenrand (20%)
+house_2 = ... .nH sss
+house_2.chance = -2
+
+# Haus an der Ecke (10%)
+house_3 = ... .ns .ss
+house_3.chance = 3
+
+# Haus an der Ecke (10%)
+house_4 = ... sn. ss.
+house_4.chance = 3
+
+# Haus an Kreuzung (33%)
+house_5 = ..... ..... .sn.. sss.. .s...
+house_5.chance = -5
+
+# Haus neben Haus an Strasse (immer)
+house_6 = ... hn. sss
+house_6.chance = -7
+
+# Haus neben Haus an Strasse (immer)
+house_7 = ... .nh sss
+house_7.chance = -7
+
+# Haus an Kreuzung mit Haltestelle (50%)
+house_14 = ..... ..... .sn.. sst.. .s... 
+house_14.chance = -6
+
+# Haus an Kreuzung mit Haltestelle (50%)
+house_15 = ..... ..... .tn.. sss.. .s... 
+house_15.chance = -6
+
+
+#Strassenregeln
+# Strassenende weiterbauen(chance 50%).
+road_1 = ... SnS SsS
+road_1.chance = -2
+
+# Abzweig(chance 20%)
+road_2 = ....... ....... ...H... SSSnSSS ..sss.. ....... .......
+road_2.chance = -7
+
+# Krezung (immer).
+road_3 = ....... ....... ...H... SSSnSSS ..sss.. ...s... .......
+road_3.chance = -7
+
+# Verbinden, gerade(immer)
+road_4 = SsS .n. .s.
+road_4.chance = -7
+
+# rechtskurve (12.5%)
+road_5 = ....... ....... ..S.... ..sn... ..sSS.. ..sSS.. ..sSS..
+road_5.chance = -1
+
+# linkskurve (12.5%)
+road_6 = ....... ....... ....S.. ...ns.. ..SSs.. ..SSs.. ..SSs..
+road_6.chance = -1
+
+# Verbindung zweier Straﬂen die 2 Felder auseinander liegen und sich aneinander vorbei bewegen by sojo (100%)
+road_11 = sSS sns SSs
+road_11.chance = -7
+
+# Verbindung zweier Straﬂen die 2 Felder auseinander liegen und sich aneinander vorbei bewegen by sojo (100%)
+road_12 = SSs sns sSS
+road_12.chance = -7

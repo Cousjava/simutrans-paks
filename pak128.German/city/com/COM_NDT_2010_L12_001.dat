@@ -1,7 +1,7 @@
 #	PAK128.german
 #	Citybuildings commercial
 #       neu:  01-01-2019
-#---------------------------------------
+---------------------------------------
 Obj=building
 Name=COM_NDT_2010_A_12
 # Buerohaus_NeuerWallHH_klein
@@ -14,6 +14,7 @@ intro_month=1
 climates=desert, tropic, mediterran
 level=12
 chance=25
+clusters=12
 needs_ground=0
 dims=1,1,4
 BackImage[0][0][0][0][0][0]=COM_NDT_2010_L12_001.0.0
@@ -32,4 +33,4 @@ BackImage[3][0][0][0][0][0]=COM_NDT_2010_L12_001.3.0
 BackImage[3][0][0][1][0][0]=COM_NDT_2010_L12_001.3.1
 BackImage[3][0][0][0][0][1]=COM_NDT_2010_L12_001.3.2
 BackImage[3][0][0][1][0][1]=COM_NDT_2010_L12_001.3.3
-#---------------------------------------
+---------------------------------------

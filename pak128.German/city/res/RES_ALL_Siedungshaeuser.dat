@@ -1,12 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	City-Res-Gebaeude
 #	Neu:04-2012
-#	Letzte Bearbeitung:
-#       02-04-2016 NNW
-#       15-04-2016 michelstadt
-# --------------------------------
-
+--------------------------------
 obj=building
 name=RES_ALL_Siedlungshaus_a_03
 copyright=RedRabbit
@@ -14,9 +10,11 @@ type=res
 Dims=1,1,4
 needs_ground=1
 level=3
+chance=100
+clusters=2,20
 intro_year=1950
-retire_year=1965
-climates=desert,tropic,mediterran,temperate,tundra
+#retire_year=1965
+climates=desert,tropic,temperate,tundra
 ###GrafikNormal
 backimage[0][0][0][0][0][0]=RES_ALL_Siedlungshaeuser.0.0
 backimage[1][0][0][0][0][0]=RES_ALL_Siedlungshaeuser.0.1
@@ -50,9 +48,11 @@ type=res
 Dims=1,1,4
 needs_ground=1
 level=3
+chance=100
+clusters=2,20
 intro_year=1948
-retire_year=1960
-climates=desert,tropic,mediterran,temperate,tundra
+#retire_year=1960
+climates=desert,tropic,temperate,tundra
 ###GrafikNormal
 backimage[0][0][0][0][0][0]=RES_ALL_Siedlungshaeuser.1.0
 backimage[1][0][0][0][0][0]=RES_ALL_Siedlungshaeuser.1.1
@@ -86,9 +86,11 @@ type=res
 Dims=1,1,4
 needs_ground=1
 level=5
+chance=100
+clusters=2,20
 intro_year=1955
-retire_year=1970
-climates=desert,tropic,mediterran,temperate,tundra
+#retire_year=1970
+climates=desert,tropic,temperate,tundra
 ###GrafikNormal
 backimage[0][0][0][0][0][0]=RES_ALL_Siedlungshaeuser.2.0
 backimage[1][0][0][0][0][0]=RES_ALL_Siedlungshaeuser.2.1
@@ -122,9 +124,11 @@ type=res
 Dims=1,1,4
 needs_ground=1
 level=5
+chance=100
+clusters=2,20
 intro_year=1948
-retire_year=1968
-climates=desert,tropic,mediterran,temperate,tundra
+#retire_year=1968
+climates=desert,tropic,temperate,tundra
 ###GrafikNormal
 backimage[0][0][0][0][0][0]=RES_ALL_Siedlungshaeuser.3.0
 backimage[1][0][0][0][0][0]=RES_ALL_Siedlungshaeuser.3.1
@@ -158,9 +162,11 @@ type=res
 Dims=1,1,4
 needs_ground=1
 level=7
+chance=100
+clusters=2,20
 intro_year=1948
-retire_year=1968
-climates=desert,tropic,mediterran,temperate,tundra
+#retire_year=1968
+climates=desert,tropic,temperate,tundra
 ###GrafikNormal
 backimage[0][0][0][0][0][0]=RES_ALL_Siedlungshaeuser.4.0
 backimage[1][0][0][0][0][0]=RES_ALL_Siedlungshaeuser.4.1
@@ -194,9 +200,11 @@ type=res
 Dims=1,1,4
 needs_ground=1
 level=9
+chance=100
+clusters=2,20
 intro_year=1948
-retire_year=1968
-climates=desert,tropic,mediterran,temperate,tundra
+#retire_year=1968
+climates=desert,tropic,temperate,tundra
 ###GrafikNormal
 backimage[0][0][0][0][0][0]=RES_ALL_Siedlungshaeuser.5.0
 backimage[1][0][0][0][0][0]=RES_ALL_Siedlungshaeuser.5.1
@@ -230,9 +238,11 @@ type=res
 Dims=1,1,4
 needs_ground=1
 level=3
+chance=100
 intro_year=1948
-retire_year=1960
-climates=desert,tropic,mediterran,temperate,tundra
+clusters=2,20
+#retire_year=1960
+climates=desert,tropic,temperate,tundra
 ###GrafikNormal
 backimage[0][0][0][0][0][0]=RES_ALL_Siedlungshaeuser.6.0
 backimage[1][0][0][0][0][0]=RES_ALL_Siedlungshaeuser.6.1
@@ -266,9 +276,11 @@ type=res
 Dims=1,1,4
 needs_ground=1
 level=5
+chance=100
+clusters=2,20
 intro_year=1955
-retire_year=1970
-climates=desert,tropic,mediterran,temperate,tundra
+#retire_year=1970
+climates=desert,tropic,temperate,tundra
 ###GrafikNormal
 backimage[0][0][0][0][0][0]=RES_ALL_Siedlungshaeuser.7.0
 backimage[1][0][0][0][0][0]=RES_ALL_Siedlungshaeuser.7.1

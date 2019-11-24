@@ -46,7 +46,7 @@
 
        rsort($data); 
 
-       if ( count($data) < 500 )  $r = count($data);  else  $r = 500; 
+       if ( count($data) < 2000 )  $r = count($data);  else  $r = 2000; 
        for ( $x = 0; $x < $r; $x++ ) 
        {  $data2 = explode("|", $data[$x]);
           if (isset($LNG_LANGUAGE[$data2[4]])) $langw = $LNG_LANGUAGE[$data2[4]];

@@ -1,22 +1,21 @@
 #	PAK128.german
 #	Citybuildings commercial
 #       neu: 18-05-2019
-#--------------------------------------
+--------------------------------------
 obj=building
 name=COM_ALL_1953_A_16
 # Gerling-Haus_Koeln
 copyright=pumuckl999
 type=com
 level=16
-chance=20
+chance=10
+clusters=6
 intro_year=1953
 intro_month=1
 #retire_year=
 #retire_month=
 needs_ground=0
-noinfo=0
-noconstruction=0
-climates=desert, tropic, mediterran, temperate, tundra, rocky
+climates=desert, tropic, mediterran, temperate, tundra
 dims=2,2,4
 BackImage[0][0][0][0][0][0]=COM_ALL_1950_L16_4F_01.0.0
 BackImage[0][0][0][1][0][0]=COM_ALL_1950_L16_4F_01.0.1

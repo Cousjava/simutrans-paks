@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 18-09-2019
+#    Geaendert:
+---------------------------------
+obj=vehicle
+name=Aachener Rail Shuttle
+copyright=pumuckl999
+intro_year=2030
+intro_month=1
+#retire_year=
+#retire_month=
+cost=16500000
+runningcost=208
+waytype=track
+freight=Passagiere
+engine_type=battery
+power=150
+gear=200
+payload=80
+speed=120
+length=9
+weight=30
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[S]=TW_ARS.0.0
+EmptyImage[E]=TW_ARS.0.1
+EmptyImage[SE]=TW_ARS.0.2
+EmptyImage[SW]=TW_ARS.0.3
+EmptyImage[N]=TW_ARS.0.4
+EmptyImage[W]=TW_ARS.0.5
+EmptyImage[NW]=TW_ARS.0.6
+EmptyImage[NE]=TW_ARS.0.7

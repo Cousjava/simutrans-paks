@@ -1,23 +1,20 @@
 #	PAK128.german
-
 #	Citybuildings commercial
 #       neu: 13-05-2019
-#--------------------------------------
+--------------------------------------
 obj=building
-
 name=COM_ALL_2000_A_24
 # Finanz-Informatik-Hochhaus
 copyright=pumuckl999
 type=com
 level=24
 chance=20
+clusters=5,6
 intro_year=2006
 intro_month=1
 #retire_year=
 #retire_month=
 needs_ground=0
-noinfo=0
-noconstruction=0
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 dims=2,2,4
 BackImage[0][0][0][0][0][0]=COM_ALL_2000_L24_4F_01.0.0
@@ -100,4 +97,3 @@ BackImage[3][1][0][0][0][1]=COM_ALL_2000_L24_4F_01.8.4
 BackImage[3][1][0][1][0][1]=COM_ALL_2000_L24_4F_01.8.5
 BackImage[3][1][0][2][0][1]=COM_ALL_2000_L24_4F_01.8.6
 BackImage[3][1][1][0][0][1]=COM_ALL_2000_L24_4F_01.8.7
-#_EO_

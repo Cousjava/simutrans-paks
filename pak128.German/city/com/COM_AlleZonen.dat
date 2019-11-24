@@ -1,22 +1,18 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	City-Com-Gebaeude
 #	Neu:04-2012
-#	Letzte Bearbeitung:
-#    12-2012
-#    10-04-2015 The Transporter
-#    04-09-2015 The Transporter
-#    12-2015 michelstadt
-# --------------------------------
+--------------------------------
 obj=building
 name=COM_ALL_1800_A_01
 copyright=RedRabbit
 type=com
 level=1
 chance=100
+clusters=1,2,5,20,21
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 intro_year=1800
-retire_year=2999
+retire_year=1956
 needs_ground=1 
 dims=1,1,4
 BackImage[0][0][0][0][0][0]=COM_ALL_1800_L01-L10_001.1.1
@@ -28,17 +24,15 @@ BackImage[3][0][0][0][0][0]=COM_ALL_1800_L01-L10_001.1.4
 #BackImage[2][0][0][0][0][0]=COM_ALL_1800_L01-L10_001-winter.1.3
 #BackImage[3][0][0][0][0][0]=COM_ALL_1800_L01-L10_001-winter.1.4
 -----------------------------------------------------------------
-#################################################################
-
-
 obj=building
 name=COM_ALL_1920_A_01
 copyright=RedRabbit
 type=com
 level=1
 chance=100
+clusters=6
 climates=desert, tropic, mediterran, temperate, tundra, rocky
-intro_year=1920
+intro_year=1980
 retire_year=2999
 needs_ground=1 
 dims=1,1,4
@@ -57,6 +51,7 @@ copyright=NNW
 type=com
 level=9
 chance=100
+clusters=6
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 intro_year=1925
 retire_year=2999
@@ -71,18 +66,16 @@ BackImage[1][0][0][0][0][1]=COM_ALL_1920_L01-L10_001-winter.10.2
 BackImage[2][0][0][0][0][1]=COM_ALL_1920_L01-L10_001-winter.10.3
 BackImage[3][0][0][0][0][1]=COM_ALL_1920_L01-L10_001-winter.10.4
 -----------------------------------------------------------------
-#################################################################
-
-
 obj=building
 name=COM_ALL_1951_A_02
 copyright=RedRabbit
 type=com
 level=2
 chance=100
+clusters=10
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 intro_year=1951
-retire_year=1971
+#retire_year=1971
 needs_ground=1 
 dims=1,1,4
 BackImage[0][0][0][0][0][0]=COM_ALL_1950_L01-L10_001.2.1
@@ -100,9 +93,10 @@ copyright=RedRabbit
 type=com
 level=3
 chance=100
+clusters=10
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 intro_year=1952
-retire_year=1978
+#retire_year=1978
 needs_ground=1 
 dims=1,1,4
 BackImage[0][0][0][0][0][0]=COM_ALL_1950_L01-L10_001.3.1
@@ -120,9 +114,10 @@ copyright=RedRabbit
 type=com
 level=4
 chance=100
+clusters=10
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 intro_year=1953
-retire_year=1969
+#retire_year=1969
 needs_ground=1 
 dims=1,1,4
 BackImage[0][0][0][0][0][0]=COM_ALL_1950_L01-L10_001.4.4
@@ -140,6 +135,7 @@ copyright=RedRabbit
 type=com
 level=4
 chance=100
+clusters=1
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 intro_year=1962
 retire_year=2999
@@ -160,9 +156,10 @@ copyright=RedRabbit
 type=com
 level=5
 chance=100
+clusters=2,20
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 intro_year=1956
-retire_year=1976
+#retire_year=1976
 needs_ground=1 
 dims=1,1,4
 BackImage[0][0][0][0][0][0]=COM_ALL_1950_L01-L10_001.5.1
@@ -174,15 +171,13 @@ BackImage[3][0][0][0][0][0]=COM_ALL_1950_L01-L10_001.5.4
 #BackImage[2][0][0][0][0][0]=COM_ALL_1950_L01-L10_001-winter.5.3
 #BackImage[3][0][0][0][0][0]=COM_ALL_1950_L01-L10_001-winter.5.4
 -----------------------------------------------------------------
-#################################################################
-
-
 obj=building
 name=COM_ALL_1984_A_02
 copyright=RedRabbit
 type=com
 level=2
 chance=100
+clusters=6
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 intro_year=1984
 retire_year=2999
@@ -197,19 +192,17 @@ BackImage[3][0][0][0][0][0]=COM_ALL_1970_L01-L10_001.2.4
 #BackImage[2][0][0][0][0][0]=COM_ALL_1970_L01-L10_001-winter.2.3
 #BackImage[3][0][0][0][0][0]=COM_ALL_1970_L01-L10_001-winter.2.4
 -----------------------------------------------------------------
-
 obj=building
 name=COM_ALL_1970_B_00
 copyright=pumuckl999
 type=com
-level=0
-chance=95
+level=1
+chance=100
+clusters=20,21
 intro_year=1850
 intro_month=1
-retire_year=2999
+retire_year=1950
 needs_ground=1
-noinfo=0
-noconstruction=0
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 dims=1,1,4
 BackImage[0][0][0][0][0][0]=COM_ALL_1970_L01-L10_001.1.5
@@ -261,16 +254,14 @@ FrontImage[1][0][0][0][2][1]=COM_ALL_1970_L01-L10_001-winter.2.7,12,15
 FrontImage[2][0][0][0][2][1]=COM_ALL_1970_L01-L10_001-winter.2.7,43,9
 FrontImage[3][0][0][0][2][1]=COM_ALL_1970_L01-L10_001-winter.2.7,30,-7
 ----------------------------------------------------------------------
-######################################################################
-
-
 obj=building
 name=COM_ALL_1990_A_03
+# Toilettenhaus in Neumuenster im Rencks Park gebaut 2009
 copyright=Pumuckl999
 type=com
-level=1
-# level=3
+level=3
 chance=100
+clusters=1
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 intro_year=1995
 retire_year=2999
@@ -285,14 +276,13 @@ BackImage[3][0][0][0][0][0]=COM_ALL_1990_L01-L10_001.3.4
 #BackImage[2][0][0][0][0][0]=COM_ALL_1990_L01-L10_001-winter.3.3
 #BackImage[3][0][0][0][0][0]=COM_ALL_1990_L01-L10_001-winter.3.4
 -----------------------------------------------------------------
-
 obj=building
-name=COM_ALL_1990_A_07
+name=COM_ALL_1990_A_01
 copyright=Pumuckl999
 type=com
-level=1
-# level=7
+level=3
 chance=100
+clusters=20,21
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 intro_year=1995
 retire_year=2999
@@ -307,20 +297,18 @@ BackImage[3][0][0][0][0][0]=COM_ALL_1990_L01-L10_001.7.4
 #BackImage[2][0][0][0][0][0]=COM_ALL_1990_L01-L10_001-winter.7.3
 #BackImage[3][0][0][0][0][0]=COM_ALL_1990_L01-L10_001-winter.7.4
 -----------------------------------------------------------------
-#################################################################
-
 obj=building
-name=COM_ALL_1990_A_01
+name=COM_ALL_1990_A_07
 copyright=pumuckl999
 type=com
-level=1
+level=7
 chance=95
-intro_year=1990
+clusters=1
+intro_year=1890
+# ursprünglich ab 1990 aber passt auch früher deshalb und weil wir in level 7 sonst nichts haben 1890 
 intro_month=1
-retire_year=2002
+#retire_year=2002
 needs_ground=1
-noinfo=0
-noconstruction=0
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 dims=1,1,4
 BackImage[0][0][0][0][0][0]=COM_ALL_1990_A_00.0.0
@@ -332,4 +320,3 @@ BackImage[1][0][0][0][0][1]=COM_ALL_1990_A_00.1.1
 BackImage[2][0][0][0][0][1]=COM_ALL_1990_A_00.1.2
 BackImage[3][0][0][0][0][1]=COM_ALL_1990_A_00.1.3
 -------------------------------------------
-######################################################################

@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 05-2011
-#    letzte Bearbeitung:
-#    $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
 #---------------------------------
 Obj=building
 Name=ALP_Bahnhof_HG
@@ -14,7 +12,7 @@ Level=10
 cost=640000
 maintenance=80
 enables_pax=1
-NoInfo=1
+#NoInfo=1
 # intro_year=1954
 climates=rocky
 Dims=1,1,4

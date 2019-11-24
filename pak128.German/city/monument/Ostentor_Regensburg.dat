@@ -1,17 +1,16 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Denkmal
 #	Neu:26-12-2018
-#	Letzte Bearbeitung:
-#
-# --------------------------------
+--------------------------------
 Obj=building
 name=Ostentor
 copyright=Pumuckl999
 type=mon
 level=50
 chance=25
-intro_year=1284
+#intro_year=1284
+intro_year=1800
 dims=2,1,4
 BackImage[0][0][0][0][0][0]=Ostentor_Regensburg.0.0
 BackImage[0][0][0][1][0][0]=Ostentor_Regensburg.0.1

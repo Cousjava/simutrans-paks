@@ -1,8 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Citybuildings commercial
 #	Neu:03-2015
-# --------------------------------
+--------------------------------
 obj=building
 name=COM_ALL_1997_A_48
 # MGB_Commerzbanktower
@@ -10,10 +10,11 @@ copyright=Lemuria
 type=com
 level=48
 chance=20
+clusters=6
 intro_year=1997
-retire_year=2999
+#retire_year=2999
 needs_ground=1
-climates=desert, tropic, mediterran, temperate, tundra, rocky
+climates=desert, tropic, mediterran, temperate, tundra
 dims=2,2,4
 BackImage[0][0][0][0][0][0]=COM_ALL_1990_L48_4F_01.0.0
 BackImage[0][0][0][1][0][0]=COM_ALL_1990_L48_4F_01.0.1

@@ -2,14 +2,13 @@
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 18-11-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 #---------------------------------
 Obj=building
 Name=Lagerschuppen_Hannover
 copyright=pumuckl999
 type=extension
 enables_ware=1
-NoInfo=1
+#NoInfo=1
 Level=6
 cost=384000
 maintenance=48

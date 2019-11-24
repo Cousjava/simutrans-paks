@@ -1,0 +1,16 @@
+# -------------------------------
+#	PAK128.german
+#	Industrie
+#	Neu: 28-04-2019 pumuckl999
+# --------------------------------
+obj=field
+name=Riesenrad
+copyright=pumuckl999
+Image[0]=Riesenrad.0.0,-16,-32
+Image[1]=Riesenrad.0.1,-16,-32
+---------------------------------------
+obj=field
+name=Schausteller
+copyright=pumuckl999
+Image[0]=Riesenrad.1.0,0,-32
+Image[1]=Riesenrad.1.1,0,-32

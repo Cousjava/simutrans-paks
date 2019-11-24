@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 17-11-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 #---------------------------------
 Obj=building
 Name=Lagerschuppen_Grombach
@@ -10,7 +9,7 @@ copyright=pumuckl999
 type=extension
 enables_ware=1
 enables_pax=1
-NoInfo=1
+#NoInfo=1
 Level=4
 cost=256000
 maintenance=32

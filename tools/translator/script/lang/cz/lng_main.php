@@ -345,6 +345,7 @@ $LNG_STATS_TRANS[9] = 'empty';
 
 $LNG_STATS_VEH = array();
 $LNG_STATS_VEH[0] = 'Vehicle Statistics';
+$LNG_STATS_VEH[10] = 'Cluster';
 $LNG_STATS_VEH[1] = 'Please Select Items to Display';
 $LNG_STATS_VEH[2] = 'Track and electrified_track are considered as one cathegory called track. Vehicles with misspelled way type will be omitted. Misspelled properties (and constraints) will appear in a column others.';
 $LNG_STATS_VEH[3] = "List of All Vehicles for %s from %s Set (%s Items)";
@@ -370,6 +371,7 @@ $LNG_WRAP[19] = 'Generated help files for';
 $LNG_WRAP[1] = 'Vytvořený soubor';
 $LNG_WRAP[20] = 'File exists';
 $LNG_WRAP[21] = 'Files from <b>Scenario</b> sets are to be saved to <b>simutrans/[SET] /scenario/[Scenarioname]</b>. ZIP files are always created because Scenario translations can also contain subdirectories with additional files.';
+$LNG_WRAP[22] = 'For write or changed help files see';
 $LNG_WRAP[2] = 'Vytvoření selhalo!';
 $LNG_WRAP[3] = 'Zde lze stáhnout nejnovější překladové soubory přímo použitelné hrou. Jednoduše vyber tvůj jazyk, způsob výstupu <strong>do souboru</strong> a klikni <strong>Export!</strong>, chvíli počkej a nad vytvořeném odkazu použij pravé tlačítko myši a vyber <strong>Uložit jako</strong>. Vytvořený soubor by měl být uložen v adresáři <nobr><strong>simutrans/(grafická verze)/text</strong></nobr>.';
 $LNG_WRAP[4] = "Položka <b><em>%s</em></b> umožňuje stáhnout archiv s všemi překlady dané verze - bez nutnosti výběru jazyka.";

@@ -1,8 +1,7 @@
 #	PAK128.german
-
 #	Citybuildings commercial
 #       neu:  24-08-2018
-#---------------------------------------
+---------------------------------------
 Obj=building
 Name=COM_NDT_Telekom_Hochhaus_Bielefeld_39
 copyright=pumuckl999
@@ -12,8 +11,9 @@ intro_month=7
 #retire_year=
 #retire_month=
 climates=mediterran, tropic, desert
-level=39
+level=40
 chance=25
+clusters=5,6
 needs_ground=0
 dims=1,1,4
 BackImage[0][0][0][0][0][0]=TelekomHochhaus_Bielefeld.0.0
@@ -40,4 +40,4 @@ BackImage[3][0][0][2][0][0]=TelekomHochhaus_Bielefeld.4.0
 BackImage[3][0][0][0][0][1]=TelekomHochhaus_Bielefeld.4.1
 BackImage[3][0][0][1][0][1]=TelekomHochhaus_Bielefeld.4.2
 BackImage[3][0][0][2][0][1]=TelekomHochhaus_Bielefeld.4.3
-#---------------------------------------
+---------------------------------------

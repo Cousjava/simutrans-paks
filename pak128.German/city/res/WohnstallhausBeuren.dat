@@ -1,7 +1,7 @@
 #	PAK128.german
 #	Citybuildings commercial
 #       neu:  12-02-2018
-#---------------------------------------
+---------------------------------------
 Obj=building
 Name=RES_ALL_1800_A_03
 # Wohnstallhaus_Beuren
@@ -10,9 +10,10 @@ Type=res
 intro_year=1800
 # intro_year=1733
 intro_month=7
-climates=mediterran, tropic, desert
+climates=tundra,mediterran, tropic, desert
 level=3
 chance=15
+clusters=1
 needs_ground=0
 dims=1,1,4
 BackImage[2][0][0][0][0][0]=WohnstallhausBeuren.0.0
@@ -23,4 +24,4 @@ BackImage[2][0][0][0][0][1]=WohnstallhausBeuren.1.0
 BackImage[1][0][0][0][0][1]=WohnstallhausBeuren.1.1
 BackImage[0][0][0][0][0][1]=WohnstallhausBeuren.1.2
 BackImage[3][0][0][0][0][1]=WohnstallhausBeuren.1.3
-#---------------------------------------
+---------------------------------------

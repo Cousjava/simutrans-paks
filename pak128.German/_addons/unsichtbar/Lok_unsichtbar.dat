@@ -1,0 +1,29 @@
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 07-09-2019
+#	Letzte Bearbeitung: $Date$ - $Author$
+----------------------------------
+obj=vehicle
+name=unsichtbare_Lok_fuer_Abstellgleis
+copyright=pumuckl999
+intro_year=1835
+intro_month=1
+cost=0
+RunningCost=0
+waytype=track
+engine_type=diesel
+power=1100
+gear=260
+speed=5
+weight=40
+length=9
+sound=diesel.wav
+EmptyImage[S]=Lok_unsichtbar.0.0
+EmptyImage[E]=Lok_unsichtbar.0.0
+EmptyImage[SE]=Lok_unsichtbar.0.0
+EmptyImage[SW]=Lok_unsichtbar.0.0
+EmptyImage[N]=Lok_unsichtbar.0.0
+EmptyImage[W]=Lok_unsichtbar.0.0
+EmptyImage[NW]=Lok_unsichtbar.0.0
+EmptyImage[NE]=Lok_unsichtbar.0.0
+-----------------------------

@@ -20,7 +20,7 @@ knopf export als csv
 
   //list of all user typs allowed on this page
   //header, no output before this (sends header information)
-  $title = 'Statistics';
+  $title = 'Pak_Info';
   require_once ('tpl_script/header.php');
   include ('./include/select.php');
   include ('./include/obj.php');
@@ -43,12 +43,24 @@ knopf export als csv
   $c_list['pedestrian']  = array ('name','image','intro','retire','distributionweight', 'speed', 'copyright','note','other','comments');
   $c_list['factory']     = array ('name','image','links','intro','retire','location','climates','pax_level', 'productivity','range', 'input', 'output',  'demand','boost', 'expand', 'mapcolor', 'smoke', 'dims',  'other' );
   $c_list['field']       = array ('name','image','intro','retire','copyright','note','other','comments' );
-  $c_list['building']    = array ('name','image','links','type','waytype','climates','location','level', 'intro','retire', 'dims','chance','passengers','enables','copyright','needs_ground' ,'noinfo','note','other','comments');
+  $c_list['building']    = array ('name','image','links','type','waytype','climates','location','level', 'intro','retire', 'dims','chance','passengers','enables','copyright','needs_ground','clusters','dat_file_name','other','comments');
   $c_list['roadsign']    = array ('name','image','waytype','intro','retire','cost','copyright','note','other','comments' );
   $c_list['way']         = array ('name','image','waytype','system_type','topspeed','intro','retire','cost','maintenance','max_weight','copyright','note','other','comments' );
   $c_list['good']        = array ('name','catg','metric','weight_per_unit','value','speed_bonus','mapcolor','note','other','comments' );
   $c_list['rest']        = array ('name','image','type','climates','level','intro','retire', 'dims','copyright','note','other','comments' );
   
+////////////////////////////////////////////////////////////////////////////////
+function read_clusters($vid)
+{ $clu_list = array();
+  $clu_list[0] = 'none';
+  for ( $i = 1; $i < 32; $i++)
+  { $o_n = sprintf('Cluster_%02d',$i);
+    $t = tr_translate_text($vid,$o_n);
+    if ($o_n != $t) $clu_list[$i] = $t;
+  }
+  return $clu_list;
+}
+
 
 ////////////////////////////////////////////////////////////////////////////////
 function read_p_list($obj_auswahl,$col_auswahl)
@@ -170,7 +182,7 @@ function factoryio($p,$io_t,$jv,$jb,$f)
     { if     ($k == 'capacity') $wc = $e;
       if     ($k == 'good')     $wn = $e;
       elseif ($k == 'factor')   $wf = $e;
-      else { $wr .= $wrz.$k.'='.$e; $wrz = ','; }
+      else { $wr .= $wrz.$k.'='.$e; $wrz = ', '; }
     }
     $px='o';
     if (substr($p,0,1) == 'o') $px ='i';
@@ -208,11 +220,11 @@ function c_disp($collect)
 function print_table_line ($property_list,$ob_id)
 {
     GLOBAL $v_att,$st,$x, $obj_tab,$good_tab, $cat_tab,$wfull,$we,$wg,
-           $version_auswahl,$obj_auswahl,$obj_sub_auswahl,$good_auswahl,
-           $in_out,$climate_auswahl,$is_displayed,$kmh,$trv,$trb,$csv_t,$makie_p;
+           $version_auswahl,$obj_auswahl,$obj_sub_auswahl,$good_auswahl,$clu_list,
+           $in_out,$climate_auswahl,$cluster_auswahl,$is_displayed,$kmh,$trv,$trb,$csv_t,$makie_p;
 
     //fetch some object data stored directly with the object
-    $object_properties = db_query2array ("SELECT obj_name, obj_copyright, obj, note, comments  FROM objects WHERE object_id=$ob_id");
+    $object_properties = db_query2array ("SELECT obj_name, obj_copyright, obj, note, comments, dat_file_name, dat_path  FROM objects WHERE object_id=$ob_id");
     $obj_name = $object_properties['obj_name'];
     
     $object_translate   = tr_read($ob_id,$version_auswahl,$st,'t');
@@ -246,21 +258,22 @@ function print_table_line ($property_list,$ob_id)
     if ($obj_auswahl == 'vehicle' and $good_auswahl    != 255) $is_displayed[] = 'freight';
     if ($obj_auswahl == 'vehicle' and $obj_sub_auswahl != 255) $is_displayed[] = 'waytype';
     //copy all properties to an array keyed by property name
-    $intro_month=1; $intro_year=1900; $retire_month=12; $retire_year=2999; $fracht=''; $climates='';
+    $intro_month=1; $intro_year=1900; $retire_month=12; $retire_year=2999; $fracht=''; $climates=''; $clusters = array();
     $enables=''; $expand='';  $demand =''; $dims='1,1'; $fracht_gewicht=0; $gear=100;
     $prod = 10; $range = 10; $boost = ''; $boost_e='1000'; $boost_p=0; $boost_m=0; $engine_type=''; $tender1='';
     $waytype=''; $payload=0; $power=0; $speed=0; $weight=0; $cost=0; $rcost=0; $category='None'; $ertrag=0;
     $in_t = array(); $out_t = array(); 
     while ($row = db_fetch_row($property_q))
     {   $raw_properties[$row[0]] = $row[1];
-        if ($row[0] == 'intro_month')       $intro_month  = $row[1];
-        if ($row[0] == 'intro_year')        $intro_year   = $row[1];
-        if ($row[0] == 'retire_month')      $retire_month = $row[1];
-        if ($row[0] == 'retire_year')       $retire_year  = $row[1];
+        if ($row[0] == 'intro_month'  and $row[1] >= 1    and  $row[1] <=   12) $intro_month  = $row[1];
+        if ($row[0] == 'intro_year'   and $row[1] >= 1500 and  $row[1] <= 2999) $intro_year   = $row[1];
+        if ($row[0] == 'retire_month' and $row[1] >= 1    and  $row[1] <=   12) $retire_month = $row[1];
+        if ($row[0] == 'retire_year'  and $row[1] >= 1500 and  $row[1] <= 2999) $retire_year  = $row[1];
         if ($row[0] == 'waytype')           $waytype      = $row[1];
         if ($row[0] == 'engine_type')       $engine_type  = $row[1];
         if ($row[0] == 'constraint[next][0]') $tender1    = $row[1];
         if ($row[0] == 'climates')          $climates     = $row[1];
+        if ($row[0] == 'clusters')          $clusters     = explode(',',$row[1]);
         if ($row[0] == 'weight')            $weight       = $row[1];
         if ($row[0] == 'dims')              $dims         = $row[1];
         if ($row[0] == 'power')             $power   = intval($row[1]);
@@ -315,6 +328,8 @@ function print_table_line ($property_list,$ob_id)
                                                                  array_column($out_t,'good')))))) return;
     if ($retire_year < $trv or $intro_year > $trb) return;
     if ($climate_auswahl != 255 and strlen($climates) > 3 and strpos($climates,$climate_auswahl) === false)  return;
+    if ($cluster_auswahl != 255 and (($cluster_auswahl > 0 and !in_array($cluster_auswahl,$clusters))
+                                or   ($cluster_auswahl < 1 and count($clusters) > 0)) )  return;
 
     // Maximale Produktion von Fabriken errechnen aus der summe aller boost 
     if (substr($obj_name,-9) == 'kraftwerk') $boost_e = 0;
@@ -375,8 +390,8 @@ function print_table_line ($property_list,$ob_id)
     $makie_rc  = $makie_rcl + $makie_rcs + $makie_rcw + $makie_rcp;
 
     // speichern
-    if (in_array('cost_makie',$property_list) and abs($cost - $makie_c) > 2)   $makie_p .= $obj_name.'>'.'cost='.intval($makie_c)."\n";
-    if (in_array('rc_makie'  ,$property_list) and abs($rcost - $makie_rc) > 2) $makie_p .= $obj_name.'>'.'runningcost='.intval($makie_rc)."\n";
+    if (in_array('cost_makie',$property_list) and abs($cost - $makie_c) > 2)      $makie_p .= $obj_name.'>'.'cost='.intval($makie_c)."\n";
+    if (in_array('rcost_makie'  ,$property_list) and abs($rcost - $makie_rc) > 2) $makie_p .= $obj_name.'>'.'runningcost='.intval($makie_rc)."\n";
 
     // zugkraft berechnen
     $zugkraft = 0; $zieht = 0; $schwelle = 999; $tekz = 1;
@@ -450,9 +465,11 @@ function print_table_line ($property_list,$ob_id)
         $wert  = '';
         if ( isset($raw_properties[$p_name]) ) $wert = $raw_properties[$p_name]; 
         
-        if ($p_name=='copyright') $wert = htmlspecialchars($object_properties['obj_copyright'], ENT_QUOTES, "UTF-8");
-        if ($p_name=='note')      $wert = htmlspecialchars($object_properties['note'], ENT_QUOTES, "UTF-8");
-        if ($p_name=='obj')       $wert = $object_properties['obj'];
+        if ($p_name=='copyright')     $wert = htmlspecialchars($object_properties['obj_copyright'], ENT_QUOTES, "UTF-8");
+        if ($p_name=='note')          $wert = htmlspecialchars($object_properties['note'], ENT_QUOTES, "UTF-8");
+        if ($p_name=='dat_file_name') $wert = htmlspecialchars($object_properties['dat_file_name'], ENT_QUOTES, "UTF-8");
+        if ($p_name=='dat_path')      $wert = htmlspecialchars($object_properties['dat_path'], ENT_QUOTES, "UTF-8");
+        if ($p_name=='obj')           $wert = $object_properties['obj'];
         if ($p_name=='nr')        $wert = $x;
         if ($p_name=='payload')   $wert = $payload;
         if ($p_name=='details' and strlen($obj_details) > 2) $wert = html_format($obj_details);
@@ -476,7 +493,7 @@ function print_table_line ($property_list,$ob_id)
           }
         }
         
-        if ($p_name=='climates')
+       if ($p_name=='climates')
         { $wert = ''; $b = '';
           foreach(explode(',',$climates) as $w)
           { $w = trim($w);
@@ -486,12 +503,22 @@ function print_table_line ($property_list,$ob_id)
             }
           }
         }
-        
+
+        if ($p_name=='clusters' and count($clu_list) > 0)
+        { $wert = ''; $b = '';
+          foreach($clusters as $w)
+          { $n = intval(trim($w));
+            if($n > 0 and isset($clu_list[$n])) $wert .= $b.$clu_list[$n];
+            else $wert .= $b.$w; 
+            $b = '<br>';
+          }
+        }
+       
         if ($p_name=='ertrag'   and $ertrag > 0)       $wert = sprintf('%05.2f',$ertrag * $payload / 100);
         if ($p_name=='gewinn50' and $ertrag > 0)       $wert = sprintf('%05.2f',(($ertrag * $payload)-(2*$makie_rc /*$rcost */))/ 100);
         if ($p_name=='fracht'   and $fracht != '')   { $wert = tr_translate_text($version_auswahl,$fracht);   $is_displayed[] ='freight'; }
         if ($p_name=='category' and $category != '') { $wert = tr_translate_text($version_auswahl,$category); $is_displayed[] ='freight'; }
-        if ($p_name=='weight_full')                    $wert = intval($weight_full);
+        if ($p_name=='weight_full')                    $wert = sprintf('%03.1f',$weight_full);
         if ($p_name=='weight%'  and $payload > 0)      $wert = intval(100 * $weight / $weight_full);
         if ($p_name=='zugkraft' and $power > 0)        $wert = sprintf('%06.2f',$zugkraft);
         if ($p_name=='zieht')
@@ -524,11 +551,11 @@ function print_table_line ($property_list,$ob_id)
         
         if ($p_name=='runningcost') $wert = sprintf('%05.2f',$rcost / 100);
         if ($p_name=='rcostpp' and $payload > 0 ) $wert = $wert.sprintf('%05.4f',$rcost / $payload / 100);
-        if ($p_name=='rc_makie')
+        if ($p_name=='rcost_makie')
         { if (abs($rcost - $makie_rc) > 2) $wert = sprintf('%05.2f',$makie_rc/100);
           else $wert = 'ok';
         } 
-        if ($p_name=='rc_makie_einzeln') $wert = sprintf('%03.1f',$makie_rcs)
+        if ($p_name=='rcost_makie_einzeln') $wert = sprintf('%03.1f',$makie_rcs)
                                             .'+'.sprintf('%03.1f',$makie_rcl)
                                             .'+'.sprintf('%03.1f',$makie_rcw)
                                             .'+'.sprintf('%03.1f',$makie_rcp); 
@@ -675,11 +702,17 @@ function select_col($obj_auswahl,$col_auswahl)
     // load and translate table 
     $climatrans = array();
     foreach ($climat as $e) $climatrans[$e] = tr_translate_text($version_auswahl,$e);
+    $clu_list = read_clusters($version_auswahl);
 
     $obj_auswahl     = select_box_read_obj($version_auswahl);
     $obj_sub_auswahl = select_box_read_sub_obj($version_auswahl,$obj_auswahl); 
     $col_auswahl     = select_box_read_col();
     $climate_auswahl = select_box_read('select_box_climates',$climatrans,255,-1);
+    if ($obj_auswahl == 'building' and count($clu_list) > 0 and 
+            ($obj_sub_auswahl == implode(', ',$building_city) or
+             in_array($obj_sub_auswahl,$building_city)))
+         $cluster_auswahl = select_box_read('select_box_cluster',$clu_list,255,-1);
+    else $cluster_auswahl = 255;
     $good_auswahl    = select_box_read_good();
     $trange          = select_box_read_trange();
 
@@ -724,6 +757,11 @@ function select_col($obj_auswahl,$col_auswahl)
         select_box('select_box_climates',$climatrans,$climate_auswahl,'',-1,$LNG_STATS_VEH[9]);
       } elseif ($obj_auswahl == 'building')
       { select_box('select_box_climates',$climatrans,$climate_auswahl,'',-1,$LNG_STATS_VEH[9]);
+        if (count($clu_list) > 0 and 
+            ($obj_sub_auswahl == implode(', ',$building_city) or
+             in_array($obj_sub_auswahl,$building_city)))
+        { select_box('select_box_cluster',$clu_list,$cluster_auswahl,'',-1,$LNG_STATS_VEH[10]);
+        }
       }
       display_statistics ($col_list);
     }

@@ -1,10 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-#	Letzte Bearbeitung:
-#    03-03-1017 NNW
-# --------------------------------
+---------------------------------
 Obj=factory
 name=Steinbruch_alt
 copyright=RedRabbit
@@ -19,6 +17,8 @@ Productivity=60
 OutputGood[0]=Steine
 OutputCapacity[0]=300
 electricity_amount=15
+passenger_boost=1000
+mail_boost=500
 climates=tundra,rocky
 MapColor=82
 needs_ground=1

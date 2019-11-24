@@ -1,6 +1,5 @@
 #	PAK128.german
 #	Players Building
-#	Letzte Bearbeitung: $Date$ - $Author$
 obj=building
 name=StrabaDepot Naumburg
 copyright=pumuckl999
@@ -11,7 +10,7 @@ intro_month=1
 #retire_month=
 cost=50000
 maintenance=8
-noinfo=1
+#noinfo=1
 noconstruction=1
 waytype=tram_track
 #enables_pax=1

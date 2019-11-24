@@ -2,22 +2,31 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 2008
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=BZT_ABi
+# seltsame Bezeichnung ABi 
+# die Grafik ist aber eindeutig eine 2 Achs Donnerbüchse
+# Das ist ein BCi-28
+# Donnerbüchse hat es in der 1. Klasse nie gegeben, Fahreigenschaften viel zu schlecht
+# der Gelbe Streifen der Grafik deutet aber auf eine 1. Klasse hin 
+# hat die DB kurz vor der Ausmusterung umbenannt (aus B mach A und aus C mach B)
+# gibt es von Fleischmann
+# ich ändere das mal in Ci-28 der wurde 1744 mal gebaut
+# ist auch sinnvoller auf Nebenbahnen weil billiger
+# gelber Streifen ist noch zu entfernen
 copyright=TonyBzt
-intro_year=1924
+intro_year=1928
 intro_month=1
-retire_year=1958
+retire_year=1962
 retire_month=4
-cost=4640000
-runningcost=96
+cost=8030000
+runningcost=163
 waytype=track
 freight=Passagiere
-payload=30
-speed=100
-weight=14
+payload=58
+speed=90
+weight=20
 length=8
 EmptyImage[S]=DB_ABi.0.0
 EmptyImage[E]=DB_ABi.0.1

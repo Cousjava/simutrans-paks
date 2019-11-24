@@ -1,24 +1,22 @@
 #	PAK128.german
 #	Citybuildings industrial
 #       neu: 04-01-2019
-#--------------------------------------
+--------------------------------------
 obj=building
 name=COM_ALL_1960_A_47
 # NeueMainzerStr1_FfaM_gross
 copyright=pumuckl999
 type=com
-level=47
+level=48
 chance=40
+clusters=6
 intro_year=1964
 intro_month=8
 #retire_year=1970
 #retire_month=12
 needs_ground=0
-noinfo=0
-noconstruction=0
-
 animation_time=925
-climates=desert, tropic, mediterran, temperate, tundra, rocky
+climates=desert, tropic, mediterran, temperate, tundra
 dims=1,1,4
 #sommer
 BackImage[0][0][0][0][0][0]=COM_ALL_1960_L47_sommer.2.0
@@ -78,4 +76,3 @@ BackImage[3][0][0][2][0][1]=COM_ALL_1960_L47_winter.0.3
 #FrontImage[3][0][0][0][1][1]=FrontImage_Scheinwerfer.0.1,0,-64
 #FrontImage[3][0][0][0][2][1]=FrontImage_Scheinwerfer.0.1,0,-96
 #FrontImage[3][0][0][0][3][1]=FrontImage_Scheinwerfer.0.1,0,-128
-#_EO_

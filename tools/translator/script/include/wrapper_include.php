@@ -220,11 +220,10 @@ function generate_help_files ($lang_id, $setid, $setpfad, $show )
     if ( !is_dir($setpfad ) )    mkdir($setpfad, 0775); 
     if ( !is_dir($setpfad.$m ) ) mkdir($setpfad.$m, 0775); 
     if ( !is_dir($html_folder) ) mkdir($html_folder, 0775); 
-    copy ($htmlpfad.'index2.html', $html_folder.'/index.html');
-
-    $htext  = "<a href=\"../index.html\" target=\"_top\">Language page</a><br /><br />";
-    $htext .= str_replace(' | ', '<br />', $LANG_NAMEN[$lang_id])."<br /><br />\n";
-
+    unlink ($html_folder.'/general.html'); 
+    
+    $htext  = '';
+ 
     //prefix - § for UTF-8 files
     //UTF "§" C2 A7
     // $prefix = ($target_encoding == "UTF-8")?"\xC2\xA7":"";
@@ -238,7 +237,7 @@ function generate_help_files ($lang_id, $setid, $setpfad, $show )
     { 
       $help_file = $row->obj_name;
       if ($row->tr_text == '')
-      { $htext .= str_replace('.txt', '', $help_file)."<br>\n";
+      { $htext .= str_replace('.txt', '', $help_file)." --- \n";
         continue;
       }
 
@@ -253,35 +252,56 @@ function generate_help_files ($lang_id, $setid, $setpfad, $show )
       fwrite($fp, $prefix .$filetext);
       fclose($fp); 
 
-      $htext .= generate_htmlhelp_files ($html_folder, $row->obj_name,$page_title, $filetext, $target_encoding, $setid);
+      $htext .= generate_htmlhelp_files ($html_folder, $row->obj_name,$page_title, $filetext, $target_encoding, $setid,$lang_id);
    }
    db_free_result($result);
 
-   write_helpindex_files($html_folder,$page_title, $htext  );
+   write_helpindex_files($setid,$lang_id,$html_folder,$page_title, $htext  );
 
 }
 
 // export help files to html files
-function generate_htmlhelp_head($code,$page_title,$imgdata,$htext)
-{ return sprintf('<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+function generate_htmlhelp_head($file,$setid,$lang_id,$code,$page_title,$imgdata,$htext)
+{ global $LANG_NAMEN;
+  if ($file =='index')
+  {   $text22 = tr_translate_text(200,'$LNG_WRAP[22]',$lang_id,'');
+      $text23 = tr_translate_text(200,'$LNG_WRAP[23]',$lang_id,'');
+      $head = $text23.'<p>'.$LANG_NAMEN[$lang_id]." -> Links -> ";
+    $foot = '</p><p>'.$text22.' <a href="https://makie.de/translator/script/directions.php?vers='.
+            $setid.'&lang='.
+            $lang_id.'" target="_blank">SimuTranslator</a></p>';
+  } else
+  { $head = '<h1 class="pagename">'.$page_title."</h1>\n<hr>\n";
+    $foot = '
+<hr>
+
+<object data="index.html" style="width:100%; height:400;"><a href="index.html">Index</a>
+    ';
+  }
+  return sprintf('<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=%s" />
-    <link href="../style_helpfile.css" type="text/css" rel="StyleSheet" />
+    <meta name="keywords" content="Simutrans,Help,Simutrans Help">
+     <link href="../style_helpfile.css" type="text/css" rel="StyleSheet" />
     <title>%s</title>
 </head>
 <body>
 
 %s
+
+%s
+%s
+
 %s
 
 </body>
 </html>'
-   ,$code,$page_title,$imgdata,$htext); 
+   ,$code,$page_title,$head,$imgdata,$htext,$foot); 
 }
 
-function generate_htmlhelp_files ($html_folder, $help_file, $page_title, $htext, $code, $setid)
+function generate_htmlhelp_files ($html_folder, $help_file, $page_title, $htext, $code, $setid,$lang_id)
 {  global   $imagepfad;
 
    // images on page
@@ -304,23 +324,23 @@ function generate_htmlhelp_files ($html_folder, $help_file, $page_title, $htext,
    } 
    
    $htext = str_replace('.txt', '.html', $htext);
-   
-   $output = generate_htmlhelp_head($code,$page_title,$imgdata,html_format($htext));
-
    $name = str_replace('.txt', '', $help_file);
+  
+   $output = generate_htmlhelp_head($name,$setid,$lang_id,$code,$page_title,$imgdata,html_format($htext));
+
    $htmlhelp_file = $name .'.html';
 
    $fp=fopen($html_folder.'/'.$htmlhelp_file,"wb");
    fwrite($fp, $output);
    fclose($fp); 
-   return '<a href="./'.$htmlhelp_file.'" target="content">'.$name."</a><br />\n";
+   return '<a href="./'.$htmlhelp_file.'" target="_top">'.$name."</a> --- \n";
 }
 
-function write_helpindex_files ($html_folder,$page_title, $htext)
+function write_helpindex_files ($setid,$lang_id,$html_folder,$page_title, $htext)
 {
-  $output = generate_htmlhelp_head("utf-8",$page_title,'',$htext);
+  $output = generate_htmlhelp_head("index",$setid,$lang_id,"utf-8",$page_title,'',$htext);
 
-  $filet = $html_folder.'/navi.html';
+  $filet = $html_folder.'/index.html';
 
   //echo $filet."<br />";
   $fp=fopen($filet,"wb");
@@ -328,8 +348,8 @@ function write_helpindex_files ($html_folder,$page_title, $htext)
   fclose($fp); 
 
   if ( !file_exists($html_folder.'/general.html') ) 
-  { //missing general.html then copy navi.html to general.html
-    copy ($html_folder.'/navi.html', $html_folder.'/general.html');
+  { //missing general.html then copy index.html to general.html
+    copy ($html_folder.'/index.html', $html_folder.'/general.html');
   } 
 }
 

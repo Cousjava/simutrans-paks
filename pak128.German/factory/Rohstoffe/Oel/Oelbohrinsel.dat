@@ -1,14 +1,12 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 07-2011
-#	Letzte Bearbeitung:
-#   $Date: 2017-03-03 15:00:23 +0100 (Fr, 03. Mär 2017) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Oelbohrinsel
 copyright=MHz
-pax_level=8
+pax_level=30
 intro_year=1950
 intro_month=1
 Location=Water
@@ -17,6 +15,8 @@ Productivity=500
 OutputGood[0]=Oel
 OutputCapacity[0]=600
 electricity_amount=75
+passenger_boost=1000
+mail_boost=500
 enables_pax=1
 enables_post=1
 climates=desert

@@ -1,19 +1,20 @@
 #	PAK128.german
 #	Citybuildings commercial
 #       neu:  31-12-2018
-#---------------------------------------
+---------------------------------------
 Obj=building
 Name=IND_AVL_1910_A_10
 # Kesslhaus_Karlsruhe
 copyright=pumuckl999
 Type=ind
+climates=tundra
+level=10
+chance=70
+clusters=5
 intro_year=1912
 intro_month=1
 #retire_year=1901
 #retire_month=1
-climates=tundra
-level=10
-chance=25
 needs_ground=0
 dims=1,1,4
 BackImage[0][0][0][0][0][0]=IND_AVL_1910_L10_001.0.0
@@ -32,4 +33,4 @@ BackImage[3][0][0][0][0][0]=IND_AVL_1910_L10_001.3.0
 BackImage[3][0][0][1][0][0]=IND_AVL_1910_L10_001.3.1
 BackImage[3][0][0][0][0][1]=IND_AVL_1910_L10_001.3.2
 BackImage[3][0][0][1][0][1]=IND_AVL_1910_L10_001.3.3
-#---------------------------------------
+---------------------------------------

@@ -1,6 +1,5 @@
 #	PAK128.german
 #	Players Building
-#	Letzte Bearbeitung: $Date$ - $Author$
 obj=building
 name=Saalburgbahn Bad Homburg
 copyright=pumuckl999
@@ -13,7 +12,7 @@ intro_month=1
 retire_year=1971
 retire_month=12
 needs_ground=0
-noinfo=1
+#noinfo=1
 waytype=tram_track
 enables_pax=1
 enables_post=1

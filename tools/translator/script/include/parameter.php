@@ -188,7 +188,7 @@ $object_text[21] = 'web_site';
 //some uninteresting can be skipped
 $object_nodisp = array();
 #$object_nodisp[] = 'crossing';
-$object_nodisp[] = 'smoke';
+#$object_nodisp[] = 'smoke';
 $object_nodisp[] = 'cursor';
 #$object_nodisp[] = 'ground';
 #$object_nodisp[] = 'misc';

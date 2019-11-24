@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Sehenswuerdigkeiten_Stadt
 #	Neu:
-#	Letzte Bearbeitung:
-#    04-09-2015 The Transporter
 # --------------------------------
 Obj=building
 Name=Gym-modern
@@ -11,7 +9,6 @@ Type=cur
 level=32
 chance=80
 intro_year=1962
-retire_year=
 needs_ground=1
 build_time=4000
 climates=desert, tropic, mediterran, temperate, tundra

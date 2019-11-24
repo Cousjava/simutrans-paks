@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 30-01-2018
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=MAN_KVB-6Anhaenger_Getreide
@@ -20,7 +19,9 @@ freight=Gerste
 payload=5
 length=4
 constraint[prev][0]=MAN_KVB-6_Getreide
-constraint[prev][1]=none
+Constraint[prev][1]=BZT_Traktor-gruen
+Constraint[prev][2]=Lanz_Bulldog_FMD
+constraint[prev][3]=MAN_KVB-6Anhaenger_Getreide
 constraint[next][0]=MAN_KVB-6Anhaenger_Getreide
 constraint[next][1]=none
 EmptyImage[S]=MAN_KVB6Anhaenger_Plane.0.0

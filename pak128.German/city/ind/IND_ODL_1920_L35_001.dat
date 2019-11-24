@@ -1,7 +1,7 @@
 #	PAK128.german
 #	Citybuildings commercial
 #       neu:  28-12-2018
-#---------------------------------------
+---------------------------------------
 Obj=building
 Name=IND_ODL_1920_A_35
 # Uhrenturm_Wittenberge
@@ -12,8 +12,9 @@ intro_month=5
 #retire_year=1901
 #retire_month=1
 climates=mediterran,tropic,desert
-level=35
+level=36
 chance=25
+clusters=5
 needs_ground=0
 dims=1,1,4
 BackImage[0][0][0][0][0][0]=IND_ODL_1920_L35_001.0.0
@@ -32,4 +33,4 @@ BackImage[3][0][0][0][0][0]=IND_ODL_1920_L35_001.3.0
 BackImage[3][0][0][1][0][0]=IND_ODL_1920_L35_001.3.1
 BackImage[3][0][0][0][0][1]=IND_ODL_1920_L35_001.3.2
 BackImage[3][0][0][1][0][1]=IND_ODL_1920_L35_001.3.3
-#---------------------------------------
+---------------------------------------

@@ -1,0 +1,29 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 08-08-2019
+---------------------------------
+obj=vehicle
+name=Behelfspersonenwagen_MCi-43
+copyright=pumuckl999
+intro_year=1943
+intro_month=1
+retire_year=1970
+retire_month=12
+cost=8290000
+RunningCost=163
+waytype=track
+freight=Passagiere
+payload=60
+speed=90
+weight=19
+length=8
+EmptyImage[S]=MCi-43.0.0
+EmptyImage[E]=MCi-43.0.1
+EmptyImage[SE]=MCi-43.0.2
+EmptyImage[SW]=MCi-43.0.3
+EmptyImage[N]=MCi-43.0.4
+EmptyImage[W]=MCi-43.0.5
+EmptyImage[NW]=MCi-43.0.6
+EmptyImage[NE]=MCi-43.0.7
+--------------------------------

@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Sehenswuerdigkeiten_Stadt
 #	Neu:
-#	Letzte Bearbeitung:
-#    04-09-2015 The Transporter
 # --------------------------------
 Obj=building
 Name=Realschule
@@ -11,7 +9,6 @@ Type=cur
 level=22
 chance=85
 intro_year=1972
-retire_year=
 build_time=3000
 climates=desert, tropic, mediterran, temperate, tundra
 needs_ground=1

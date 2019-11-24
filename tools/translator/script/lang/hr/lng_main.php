@@ -345,6 +345,7 @@ $LNG_STATS_TRANS[9] = 'prazno';
 
 $LNG_STATS_VEH = array();
 $LNG_STATS_VEH[0] = 'Statistike vozila';
+$LNG_STATS_VEH[10] = 'Cluster';
 $LNG_STATS_VEH[1] = 'Molimo odaberite stavke za prikaz';
 $LNG_STATS_VEH[2] = 'Track i electrified_track se podrazumijevaju kao jedna kategorija naziva track. Vozila sa pogresno napisanim way type ce se izostaviti. Pogresno napisana svojstva (i ogranicenja) ce se pojaviti u koloni others.';
 $LNG_STATS_VEH[3] = "Lista svih vozila od %s do %s Set(%s stavki)";
@@ -370,6 +371,7 @@ $LNG_WRAP[19] = 'Stvorene datoteke pomoci za';
 $LNG_WRAP[1] = 'Stvorena datoteke';
 $LNG_WRAP[20] = 'Datoteka postoji';
 $LNG_WRAP[21] = 'Files from <b>Scenario</b> sets are to be saved to <b>simutrans/[SET] /scenario/[Scenarioname]</b>. ZIP files are always created because Scenario translations can also contain subdirectories with additional files.';
+$LNG_WRAP[22] = 'For write or changed help files see';
 $LNG_WRAP[2] = 'Stvaranje neuspjelo!';
 $LNG_WRAP[3] = 'Ova stranica dozvoljava skidanje najnovijeg prijevoda izvrano uporavljivog za Simutrans igru. Samo odaberite Vas jezik i odaberite Set i metodu izlaza<strong>u datoteku</strong>, kliknite<string>Izvoz!</strong>,pricekajte trenutak,i kliknite<strong>spremi kao</strong> na  stvorenu poveznicu. Stvorena datoteka bi se trebala spremiti u Vas<nobr><strong>simutrans|[set]|text</strong></nobr>direktorij.';
 $LNG_WRAP[4] = "Postavka<b><em>%s</em></b>dozvoljava skidanje zip datoteke sa svim prijevodima zadanim za inacicu. Ne moras koristiti jezik u tom slucaju.";

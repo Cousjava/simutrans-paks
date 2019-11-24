@@ -1,0 +1,55 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 09-10-2019
+---------------------------------
+obj=vehicle
+name=Kesselwagen Zaes
+copyright=pumuckl999
+intro_year=1974
+intro_month=1
+cost=16820000
+runningcost=242
+waytype=track
+freight=Oel
+payload=61.4
+weight=24.2
+speed=120
+length=9
+sound=-1
+EmptyImage[S]=Zaes.0.0
+EmptyImage[E]=Zaes.0.1
+EmptyImage[SE]=Zaes.0.2
+EmptyImage[SW]=Zaes.0.3
+EmptyImage[N]=Zaes.0.4
+EmptyImage[W]=Zaes.0.5
+EmptyImage[NW]=Zaes.0.6
+EmptyImage[NE]=Zaes.0.7
+FreightImagetype[0]=Benzin
+FreightImage[0][S]=Zaes.1.0
+FreightImage[0][E]=Zaes.1.1
+FreightImage[0][SE]=Zaes.1.2
+FreightImage[0][SW]=Zaes.1.3
+FreightImage[0][N]=Zaes.1.4
+FreightImage[0][W]=Zaes.1.5
+FreightImage[0][NW]=Zaes.1.6
+FreightImage[0][NE]=Zaes.1.7
+FreightImagetype[1]=Diesel
+FreightImage[1][S]=Zaes.2.0
+FreightImage[1][E]=Zaes.2.1
+FreightImage[1][SE]=Zaes.2.2
+FreightImage[1][SW]=Zaes.2.3
+FreightImage[1][N]=Zaes.2.4
+FreightImage[1][W]=Zaes.2.5
+FreightImage[1][NW]=Zaes.2.6
+FreightImage[1][NE]=Zaes.2.7
+FreightImagetype[2]=Oel
+FreightImage[2][S]=Zaes.3.0
+FreightImage[2][E]=Zaes.3.1
+FreightImage[2][SE]=Zaes.3.2
+FreightImage[2][SW]=Zaes.3.3
+FreightImage[2][N]=Zaes.3.4
+FreightImage[2][W]=Zaes.3.5
+FreightImage[2][NW]=Zaes.3.6
+FreightImage[2][NE]=Zaes.3.7
+--------------------------------

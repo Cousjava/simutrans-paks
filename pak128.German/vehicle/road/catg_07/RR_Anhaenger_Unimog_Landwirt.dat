@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Anhaenger_Unimog_Landwirt
@@ -23,6 +22,8 @@ constraint[next][0]=Anhaenger_Unimog_Landwirt2
 Constraint[next][1]=none
 constraint[prev][0]=Unimog_406
 constraint[prev][1]=Unimog_401
+Constraint[Prev][2]=BZT_Traktor-gruen
+Constraint[Prev][3]=Lanz_Bulldog_FMD
 EmptyImage[S]=RR_Anhaenger_Unimog_Landwirt.0.1
 EmptyImage[N]=RR_Anhaenger_Unimog_Landwirt.0.2
 EmptyImage[E]=RR_Anhaenger_Unimog_Landwirt.0.3

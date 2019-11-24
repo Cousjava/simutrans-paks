@@ -1,7 +1,7 @@
 #	PAK128.german
 #	Citybuildings commercial
 #       neu: 15-01-2019
-#--------------------------------------
+--------------------------------------
 obj=building
 name=COM_MGB_1960_A_24
 # Hotel_Arosa_Essen
@@ -9,13 +9,12 @@ copyright=pumuckl999
 type=com
 level=24
 chance=100
+clusters=6
 intro_year=1966
 intro_month=1
 #retire_year=
 #retire_month=
 needs_ground=0
-noinfo=0
-noconstruction=0
 climates=temperate
 dims=1,1,4
 BackImage[0][0][0][0][0][0]=COM_MGB_1960_L24.1.0
@@ -34,4 +33,3 @@ BackImage[2][0][0][0][0][1]=COM_MGB_1960_L24.3.2
 BackImage[2][0][0][1][0][1]=COM_MGB_1960_L24.2.2
 BackImage[3][0][0][0][0][1]=COM_MGB_1960_L24.3.3
 BackImage[3][0][0][1][0][1]=COM_MGB_1960_L24.2.3
-#_EO_

@@ -345,6 +345,7 @@ $LNG_STATS_TRANS[9] = 'leer';
 
 $LNG_STATS_VEH = array();
 $LNG_STATS_VEH[0] = 'Fahrzeuge Statistik';
+$LNG_STATS_VEH[10] = 'Cluster';
 $LNG_STATS_VEH[1] = 'Bitte Objekte zum anzeigen auswählen';
 $LNG_STATS_VEH[2] = 'Track (Schiene) und electrified_track (elektrifizierte Schiene) werden als eine Kategorie angezeigt. Diese wird track genannt. Fahrzeuge mit falsch geschriebenen Wegtyp werden weggelassen. Falsch geschriebene Eigenschaften (und Einschränkungen) werden in den Spalten angezeigt.';
 $LNG_STATS_VEH[3] = "Liste der Fahrzeuge für Wegtyp %s des Sets %s (%s Objekte)";
@@ -370,6 +371,7 @@ $LNG_WRAP[19] = 'Generierung der Hilfedateien für';
 $LNG_WRAP[1] = 'Erzeuge Datei';
 $LNG_WRAP[20] = 'Datei vorhanden';
 $LNG_WRAP[21] = 'Dateien von <b>Scenario</b> Sets sind nach <b>simutrans/[SET]/scenario/[Scenarioname]</b> zu speichern. Es werden immer zip-Dateien erstellt, da Scenario-Übersetzungen auch Unterverzeichnisse mit zusätzlichen Dateien enthalten können.';
+$LNG_WRAP[22] = 'Zum schreiben oder ändern der Hilfe Texte geht es hier';
 $LNG_WRAP[2] = 'Problem beim erstellen.';
 $LNG_WRAP[3] = 'Die Seite erlaubt dir die neusten Übersetzungen direkt für das Spiel Simutrans herunterzuladen. Wähle einfach deine Sprache und wähle ein Set und die Ausgabemethode <strong>als Datei</strong>, drücke <strong>Export!</strong>. Warte ein bisschen und drücke <strong>Speichern unter</strong> im erscheinenden Link. Die Datei sollte unter <nobr><strong>simutrans|[set]|text</strong></nobr> gespeichert werden.';
 $LNG_WRAP[4] = "Die Option <b><em>%s</em></b> erlaubt dir eine Zip Datei mit allen Übersetzungen für ein Set herunterzuladen. Du brauchst in diesem Fall keine Sprache auszuwählen.";

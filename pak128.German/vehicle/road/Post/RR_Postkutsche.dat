@@ -18,6 +18,7 @@ freight=Post
 payload=10
 weight=1
 Constraint[Prev][0]=Pferdegespann
+Constraint[Prev][1]=Lanz_Bulldog_FMD
 Constraint[Next][0]=none
 EmptyImage[S]=RR_Postkutsche.0.1
 EmptyImage[N]=RR_Postkutsche.0.2

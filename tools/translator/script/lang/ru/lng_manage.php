@@ -135,6 +135,7 @@ $LNG_OBJ_IMPORT[28] = 'Выберите тип загрузки';
 $LNG_OBJ_IMPORT[29] = 'Warning!! duplicate parameters in .dat file:';
 $LNG_OBJ_IMPORT[2] = 'Только *.dat';
 $LNG_OBJ_IMPORT[30] = 'no file is given';
+$LNG_OBJ_IMPORT[31] = 'mandatory parameter in the .dat file not given';
 $LNG_OBJ_IMPORT[3] = 'Выберите "Только *.dat", если хотите редактировать любое изображение.';
 $LNG_OBJ_IMPORT[4] = 'Выберите файл';
 $LNG_OBJ_IMPORT[5] = 'Выберите "Только *.dat" и загрузите одиночный *.dat файл. Он не будет сжат в *.zip.';

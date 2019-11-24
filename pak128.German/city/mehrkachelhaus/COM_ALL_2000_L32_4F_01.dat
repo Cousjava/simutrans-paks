@@ -1,8 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Citybuildings commercial
 #	Neu:01-2013
-# --------------------------------
+--------------------------------
 Obj=building
 Name=COM_ALL_2000_A_32
 # MGB-Main-Tower
@@ -10,10 +10,11 @@ copyright=Lemuria
 Type=com
 level=32
 chance=20
+clusters=6
 intro_year=2000
-retire_year=2999
+#retire_year=2999
 needs_ground=1
-climates=desert, tropic, mediterran, temperate, tundra, rocky
+climates=desert, tropic, mediterran, temperate, tundra
 Dims=2,2,4
 BackImage[0][0][0][0][0][0]=COM_ALL_2000_L32_4F_01.1.0
 BackImage[0][0][1][0][0][0]=COM_ALL_2000_L32_4F_01.1.1

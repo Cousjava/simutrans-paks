@@ -345,6 +345,7 @@ $LNG_STATS_TRANS[9] = 'empty';
 
 $LNG_STATS_VEH = array();
 $LNG_STATS_VEH[0] = 'Fordonsstatistik';
+$LNG_STATS_VEH[10] = 'Cluster';
 $LNG_STATS_VEH[1] = 'Välj vilka objekt du vill visa.';
 $LNG_STATS_VEH[2] = 'Spår och Elektrifierat spår anses vara en och samma kategori, denna kallas enbart spår. Fordon vars vägtyp är felstavad tas inte med. Egenskaper (och begränsningar) som är felstavade återfinns i kolumnen Övriga.';
 $LNG_STATS_VEH[3] = "Lista över alla fordon av vägtyp %s från gruppen %s (%s poster)";
@@ -370,6 +371,7 @@ $LNG_WRAP[19] = 'Generated help files for';
 $LNG_WRAP[1] = 'Skapade fil';
 $LNG_WRAP[20] = 'File exists';
 $LNG_WRAP[21] = 'Files from <b>Scenario</b> sets are to be saved to <b>simutrans/[SET] /scenario/[Scenarioname]</b>. ZIP files are always created because Scenario translations can also contain subdirectories with additional files.';
+$LNG_WRAP[22] = 'For write or changed help files see';
 $LNG_WRAP[2] = 'Misslyckades med att skapa fil!';
 $LNG_WRAP[3] = 'Med denna sida kan du få tag på den nyaste översättningsfilen i ett format som du direkt kan använda i Simutrans. Välj helt enkelt ditt språk och grupp av översättningar samt utdataformatet <strong>filutskrift</strong>, klicka på <strong>Exportera!</strong>, vänta lite, och klicka på <strong>spara som</strong> i den länk som skapas. Den skapade filen skall sparas i katalogen <nobr><strong>simutrans|[set]|text</strong></nobr>.';
 $LNG_WRAP[4] = "Med alternativet <b><em>%s</em></b> kan du hämta hem en zip-fil med alla översättningsfiler för angiven version. I detta fall behöver du inte välja språk.";

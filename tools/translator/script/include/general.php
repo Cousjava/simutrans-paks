@@ -429,6 +429,16 @@ function html_format($text) {
   $t = str_replace ('<p>', '<div class="htmlhelp">', $t);
   $t = str_replace ('</p>', '</div>', $t);
   
+  if (substr_count(strtolower($t),'<a') - substr_count(strtolower($t),'</a') != 0)
+  { $t = str_replace ('<a', '<font color="red">&lta</font>', $t);
+    $t = str_replace ('</a', '<font color="red">&lta</font>', $t);
+  };
+  if (substr_count(strtolower($t),'<p') - substr_count(strtolower($t),'</p') != 0)
+  { $t = str_replace ('<p', '<font color="red">&ltp</font>', $t);
+    $t = str_replace ('</p', '<font color="red">&ltp</font>', $t);
+  };
+
+  
   $t = '<div id="help_file">'.$t.'</div>';
   
   return $t;

@@ -137,6 +137,8 @@ CREATE TABLE IF NOT EXISTS `objects` (
   `comments` varchar(16000) COLLATE utf8_bin DEFAULT NULL,
   `obj_copyright` varchar(80) COLLATE utf8_bin DEFAULT NULL,
   `note` varchar(2550) CHARACTER SET utf8 NOT NULL DEFAULT '',
+  `dat_file_name` varchar(250) COLLATE utf8_bin NOT NULL DEFAULT '',
+  `dat_path`      varchar(250) COLLATE utf8_bin NOT NULL DEFAULT '',
   PRIMARY KEY (`object_id`)
 ) DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 

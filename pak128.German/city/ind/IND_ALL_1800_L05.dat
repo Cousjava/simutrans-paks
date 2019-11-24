@@ -1,7 +1,7 @@
 #	PAK128.german
 #	Citybuildings industrial
 #       neu: 13-01-2019
-#--------------------------------------
+--------------------------------------
 obj=building
 name=IND_ALL_1800_A_05
 # Forchheim_Marktplatz14Var
@@ -9,13 +9,12 @@ copyright=pumuckl999
 type=ind
 level=5
 chance=100
+clusters=5
 intro_year=1800
 intro_month=1
 #retire_year=1970
 #retire_month=12
 needs_ground=0
-noinfo=0
-noconstruction=0
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 dims=1,1,4
 BackImage[0][0][0][0][0][0]=IND_ALL_1800_L05_sommer.0.0
@@ -26,4 +25,3 @@ BackImage[0][0][0][0][0][1]=IND_ALL_1800_L05_winter.0.0
 BackImage[1][0][0][0][0][1]=IND_ALL_1800_L05_winter.0.1
 BackImage[2][0][0][0][0][1]=IND_ALL_1800_L05_winter.0.2
 BackImage[3][0][0][0][0][1]=IND_ALL_1800_L05_winter.0.3
-#_EO_

@@ -11,7 +11,6 @@ intro_month=
 retire_year=1933
 retire_month=
 needs_ground=
-noinfo=1
 noconstruction=1
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 dims=
@@ -23,4 +22,3 @@ BackImage[0][0][0][0][0][0]=
 BackImage[0][0][0][0][0][0]=
 BackImage[0][0][0][0][0][0]=
 BackImage[0][0][0][0][0][0]=
-#_EO_

@@ -1,10 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-#	Letzte Bearbeitung:
-#   $Date: 2017-03-03 15:00:23 +0100 (Fr, 03. Mrz 2017) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Tankstelle1941_NIC
 copyright=TonyBzt
@@ -19,8 +17,12 @@ Productivity=50
 InputGood[0]=Benzin
 InputCapacity[0]=200
 InputSupplier[0]=0
-passenger_boost=1000
-mail_boost=500
+# kommen die Leute mit dem Bus zum Benzin kaufen?
+# aber Tankstellen haben 24 Stunde auf und verkaufen auch Snacks und Alkohol 
+# wie auch immer wenn dann sollten alle Tankstellen gleich hohen boost haben
+# und wie steht es mit den Mitarbeitern?
+passenger_boost=300
+mail_boost=200
 electricity_amount=5
 climates=desert, tropic, mediterran, temperate, rocky
 MapColor=175

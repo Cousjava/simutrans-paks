@@ -1,0 +1,27 @@
+#---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 07-09-2019
+#    letzte Bearbeitung:
+#---------------------------------
+Obj=building
+Name=unsichtbarer_Bahnhof_fuer_Abstellgleis
+copyright=Pumuckl999
+type=stop
+waytype=track
+level=0
+cost=0
+maintenance=2
+enables_pax=1
+enables_post=0
+intro_year=1835
+intro_month=1
+allow_underground=0
+Dims=1,1,4
+icon=> Bahnhof_unsichtbar.0.2
+cursor=Bahnhof_unsichtbar.0.1
+BackImage[0][0][0][0][0][0]=Bahnhof_unsichtbar.0.0
+BackImage[1][0][0][0][0][0]=Bahnhof_unsichtbar.0.0
+FrontImage[2][0][0][0][0][0]=Bahnhof_unsichtbar.0.0
+FrontImage[3][0][0][0][0][0]=Bahnhof_unsichtbar.0.0
+----------------------------------------------------------

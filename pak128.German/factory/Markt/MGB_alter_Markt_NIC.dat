@@ -1,10 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 12-2015
-#	Letzte Bearbeitung:
-#   $Date: 2018-06-23 09:15:30 +0200 (Sa, 23. Jun 2018) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=MGB_alter_Markt_NIC
 copyright=RedRabbit
@@ -55,6 +53,8 @@ expand_times=40
 climates=temperate
 MapColor=132
 dims=2,2,4
+animation_time=100
+needs_ground = 1
 BackImage[0][0][0][0][0][0]=MGB_alter_Markt.0.0
 BackImage[0][0][1][0][0][0]=MGB_alter_Markt.0.1
 BackImage[0][1][0][0][0][0]=MGB_alter_Markt.0.2
@@ -83,4 +83,68 @@ BackImage[3][0][0][0][0][0]=MGB_alter_Markt.6.0
 BackImage[3][0][1][0][0][0]=MGB_alter_Markt.6.1
 BackImage[3][1][0][0][0][0]=MGB_alter_Markt.6.2
 BackImage[3][1][1][0][0][0]=MGB_alter_Markt.6.3
+BackImage[0][0][0][0][0][1]=MGB_alter_Markt.7.0
+BackImage[0][0][1][0][0][1]=MGB_alter_Markt.7.1
+BackImage[0][1][0][0][0][1]=MGB_alter_Markt.7.2
+BackImage[0][1][1][0][0][1]=MGB_alter_Markt.7.3
+BackImage[0][0][0][0][1][1]=MGB_alter_Markt.8.0
+BackImage[0][0][1][0][1][1]=MGB_alter_Markt.8.1
+BackImage[0][1][0][0][1][1]=MGB_alter_Markt.8.2
+BackImage[0][1][1][0][1][1]=MGB_alter_Markt.8.3
+BackImage[0][0][0][0][2][1]=MGB_alter_Markt.9.0
+BackImage[0][0][1][0][2][1]=MGB_alter_Markt.9.1
+BackImage[0][1][0][0][2][1]=MGB_alter_Markt.9.2
+BackImage[0][1][1][0][2][1]=MGB_alter_Markt.9.3
+BackImage[0][0][0][0][3][1]=MGB_alter_Markt.10.0
+BackImage[0][0][1][0][3][1]=MGB_alter_Markt.10.1
+BackImage[0][1][0][0][3][1]=MGB_alter_Markt.10.2
+BackImage[0][1][1][0][3][1]=MGB_alter_Markt.10.3
+BackImage[1][0][0][0][0][1]=MGB_alter_Markt.7.0
+BackImage[1][0][1][0][0][1]=MGB_alter_Markt.7.1
+BackImage[1][1][0][0][0][1]=MGB_alter_Markt.7.2
+BackImage[1][1][1][0][0][1]=MGB_alter_Markt.7.3
+BackImage[1][0][0][0][1][1]=MGB_alter_Markt.8.0
+BackImage[1][0][1][0][1][1]=MGB_alter_Markt.8.1
+BackImage[1][1][0][0][1][1]=MGB_alter_Markt.8.2
+BackImage[1][1][1][0][1][1]=MGB_alter_Markt.8.3
+BackImage[1][0][0][0][2][1]=MGB_alter_Markt.9.0
+BackImage[1][0][1][0][2][1]=MGB_alter_Markt.9.1
+BackImage[1][1][0][0][2][1]=MGB_alter_Markt.9.2
+BackImage[1][1][1][0][2][1]=MGB_alter_Markt.9.3
+BackImage[1][0][0][0][3][1]=MGB_alter_Markt.10.0
+BackImage[1][0][1][0][3][1]=MGB_alter_Markt.10.1
+BackImage[1][1][0][0][3][1]=MGB_alter_Markt.10.2
+BackImage[1][1][1][0][3][1]=MGB_alter_Markt.10.3
+BackImage[2][0][0][0][0][1]=MGB_alter_Markt.7.0
+BackImage[2][0][1][0][0][1]=MGB_alter_Markt.7.1
+BackImage[2][1][0][0][0][1]=MGB_alter_Markt.7.2
+BackImage[2][1][1][0][0][1]=MGB_alter_Markt.7.3
+BackImage[2][0][0][0][1][1]=MGB_alter_Markt.8.0
+BackImage[2][0][1][0][1][1]=MGB_alter_Markt.8.1
+BackImage[2][1][0][0][1][1]=MGB_alter_Markt.8.2
+BackImage[2][1][1][0][1][1]=MGB_alter_Markt.8.3
+BackImage[2][0][0][0][2][1]=MGB_alter_Markt.9.0
+BackImage[2][0][1][0][2][1]=MGB_alter_Markt.9.1
+BackImage[2][1][0][0][2][1]=MGB_alter_Markt.9.2
+BackImage[2][1][1][0][2][1]=MGB_alter_Markt.9.3
+BackImage[2][0][0][0][3][1]=MGB_alter_Markt.10.0
+BackImage[2][0][1][0][3][1]=MGB_alter_Markt.10.1
+BackImage[2][1][0][0][3][1]=MGB_alter_Markt.10.2
+BackImage[2][1][1][0][3][1]=MGB_alter_Markt.10.3
+BackImage[3][0][0][0][0][1]=MGB_alter_Markt.7.0
+BackImage[3][0][1][0][0][1]=MGB_alter_Markt.7.1
+BackImage[3][1][0][0][0][1]=MGB_alter_Markt.7.2
+BackImage[3][1][1][0][0][1]=MGB_alter_Markt.7.3
+BackImage[3][0][0][0][1][1]=MGB_alter_Markt.8.0
+BackImage[3][0][1][0][1][1]=MGB_alter_Markt.8.1
+BackImage[3][1][0][0][1][1]=MGB_alter_Markt.8.2
+BackImage[3][1][1][0][1][1]=MGB_alter_Markt.8.3
+BackImage[3][0][0][0][2][1]=MGB_alter_Markt.9.0
+BackImage[3][0][1][0][2][1]=MGB_alter_Markt.9.1
+BackImage[3][1][0][0][2][1]=MGB_alter_Markt.9.2
+BackImage[3][1][1][0][2][1]=MGB_alter_Markt.9.3
+BackImage[3][0][0][0][3][1]=MGB_alter_Markt.10.0
+BackImage[3][0][1][0][3][1]=MGB_alter_Markt.10.1
+BackImage[3][1][0][0][3][1]=MGB_alter_Markt.10.2
+BackImage[3][1][1][0][3][1]=MGB_alter_Markt.10.3
 ---------------------------------------------------

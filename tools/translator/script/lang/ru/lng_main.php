@@ -345,6 +345,7 @@ $LNG_STATS_TRANS[9] = 'пусто';
 
 $LNG_STATS_VEH = array();
 $LNG_STATS_VEH[0] = 'Статистика ТС';
+$LNG_STATS_VEH[10] = 'Cluster';
 $LNG_STATS_VEH[1] = 'Пожалуйста, выберите элементы для отображения';
 $LNG_STATS_VEH[2] = '"Путь" и "Электрифицированный путь" принадлежат к одной категории путей. ТС с ошибками типа пути не отображаются. Ошибочные свойства (и ограничения) будут отображены в других колонках.';
 $LNG_STATS_VEH[3] = "Список всех ТС для '%s' из набора '%s' (%s объектов)";
@@ -370,6 +371,7 @@ $LNG_WRAP[19] = 'Генерация фалов помощи для';
 $LNG_WRAP[1] = 'Сгенерированный файл';
 $LNG_WRAP[20] = 'Файл существует';
 $LNG_WRAP[21] = 'Files from <b>Scenario</b> sets are to be saved to <b>simutrans/[SET] /scenario/[Scenarioname]</b>. ZIP files are always created because Scenario translations can also contain subdirectories with additional files.';
+$LNG_WRAP[22] = 'For write or changed help files see';
 $LNG_WRAP[2] = 'Ошибка при создании!';
 $LNG_WRAP[3] = 'На этой странице вы можете получить самый свежий перевод для вашей игры Simutrans. Укажите свой язык, выберите набор и метод вывода <strong>в файл</strong>, нажмите кнопку <strong>Экспорт!</strong>, подождите немного, и нажмите кнопку <strong>Сохранить как</strong> в появившейся ссылке. Созданный файл будет сохранен на ваш компьютер в папку <nobr><strong>simutrans|[set]|text</strong></nobr>.';
 $LNG_WRAP[4] = "Вариант <b><em>%s</em></b> дает вам возможность загрузить *.zip файл, в котором содержатся все переведенные файлы на все языки для указанной версии игры. В этом случае вам не нужно выбирать язык.";

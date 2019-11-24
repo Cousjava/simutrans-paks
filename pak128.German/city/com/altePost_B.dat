@@ -1,8 +1,7 @@
 #	PAK128.german
-
 #	Citybuildings commercial
 #       neu:  29-12-2017
-#---------------------------------------
+---------------------------------------
 Obj=building
 Name=COM_ODL_alte_Post_Berlin_02
 copyright=pumuckl999
@@ -10,11 +9,12 @@ Type=com
 intro_year=1800
 # intro_year=1710
 intro_month=7
-retire_year=1901
+#retire_year=1901
 retire_month=1
 climates=mediterran, tropic, desert
-level=2
+level=6
 chance=15
+clusters=1
 needs_ground=0
 dims=1,1,4
 BackImage[2][0][0][0][0][0]=altePost_B.0.0
@@ -25,4 +25,4 @@ BackImage[2][0][0][0][0][1]=altePost_B.1.0
 BackImage[1][0][0][0][0][1]=altePost_B.1.1
 BackImage[0][0][0][0][0][1]=altePost_B.1.2
 BackImage[3][0][0][0][0][1]=altePost_B.1.3
-#---------------------------------------
+---------------------------------------

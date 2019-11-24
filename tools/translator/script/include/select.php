@@ -20,6 +20,8 @@ function select_box_read_language()
   if (isset($_POST["language"]) 
         and (preg_match("#^[a-z]{2,3}\$#", $_POST["language"]) == 1
          or $_POST["language"]  == '255' ))    $language_auswahl = $_POST["language"];
+  elseif ( isset($_GET['lang']) and $_GET['lang'] != ''
+       and preg_match("#^[a-z]{2,3}\$#", $_GET['lang']) == 1) $language_auswahl = $_GET['lang'];
   if (!isset($language_all[$language_auswahl])) $language_auswahl = "255";
   $_SESSION['language_auswahl'] =  $language_auswahl;
   return $language_auswahl;
@@ -40,6 +42,7 @@ function select_box_read_version()
                                       $_SESSION['obj_typ_tab'], 
                                       $_SESSION['obj_sub_tab_type'],
                                       $_SESSION['obj_sub_tab_waytype'],
+                                      $_SESSION['cluster'],
                                       $_SESSION['search_result_tab'],
                                       $_SESSION['search_result_len']);
   $_SESSION['version_auswahl'] =  $version_auswahl;
@@ -58,7 +61,8 @@ function select_box_read_obj($version_auswahl)
   if (preg_match('#^[a-zA-Z0-9@ \._-]{1,20}$#',$obj_auswahl) != 1) $obj_auswahl = 255;
   if ($oja != $obj_auswahl) unset($_SESSION['col_pos'],
                                   $_SESSION['obj_sub_tab_type'],
-                                  $_SESSION['obj_sub_tab_waytype']);
+                                  $_SESSION['obj_sub_tab_waytype'],
+                                  $_SESSION['cluster']);
   $_SESSION['obj_auswahl'] =  $obj_auswahl;
   return $obj_auswahl;
 }

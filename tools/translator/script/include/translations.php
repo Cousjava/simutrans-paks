@@ -129,20 +129,25 @@ function tr_test_empty($obj_id,$version_id,$language)
   return($empty);
 }
 
-function tr_translate_text($version_id,$name)
-{ global $st;
+function tr_translate_text($version_id,$name,$lng='',$blank='&nbsp')
+{ global $st,$language_all;
+  if ($lng == '') $lng = $st;
+  if (!isset($language_all[$lng]))                        die("tr_translate_text $lng language error");
   $transl = $name; 
   if (!is_numeric($version_id) or $version_id < 0)        die("tr_translate_text version_id error");
   if ($version_id == 255) return $transl;
   $tr_t = 'translations_'.$version_id;
   $q3 = db_query ("SELECT tr_text FROM $tr_t 
                    WHERE object_obj_name='".db_real_escape_string($name).
-                      "' and language_language_id='".$st."'");
+                      "' and language_language_id='".$lng."'");
   $good_t = db_fetch_object($q3);
   if ($good_t and $good_t->tr_text != "")
-  { $t1 = explode('\n',$good_t->tr_text);
-    $t2 = explode("\n",$t1[0]);
-    $transl = str_replace(' ','&nbsp;',$t2[0].' ');
+  { if ($blank == '') $transl = $good_t->tr_text;
+    else
+    { $t1 = explode('\n',$good_t->tr_text);
+      $t2 = explode("\n",$t1[0]);
+      $transl = str_replace(' ','&nbsp;',$t2[0].' ');
+    }
   }
   return $transl;
 }

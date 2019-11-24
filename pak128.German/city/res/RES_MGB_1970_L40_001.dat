@@ -1,7 +1,7 @@
 #	PAK128.german
 #	Citybuildings commercial
 #       neu:  02-01-2019
-#---------------------------------------
+---------------------------------------
 Obj=building
 Name=RES_MGB_1970_A_40
 # Hochhaus_HeiligeGartenStrasseDortmund
@@ -9,11 +9,10 @@ copyright=pumuckl999
 Type=res
 intro_year=1971
 intro_month=1
-#retire_year=1901
-#retire_month=1
 climates=temperate
 level=40
 chance=25
+clusters=6
 needs_ground=0
 dims=1,1,4
 BackImage[0][0][0][0][0][0]=RES_MGB_1970_L40_001.0.0
@@ -40,4 +39,4 @@ BackImage[3][0][0][2][0][0]=RES_MGB_1970_L40_001.4.0
 BackImage[3][0][0][0][0][1]=RES_MGB_1970_L40_001.4.1
 BackImage[3][0][0][1][0][1]=RES_MGB_1970_L40_001.4.2
 BackImage[3][0][0][2][0][1]=RES_MGB_1970_L40_001.4.3
-#---------------------------------------
+---------------------------------------

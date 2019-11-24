@@ -9,7 +9,7 @@
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                             Font: Prop-Latin1.bdf                            #
-#                           Date Created: 30.06 2019                           #
+#                           Date Created: 20.11 2019                           #
 #                                                                              #
 ################################################################################
 #____________________________bridge - monorail_track____________________________
@@ -68,10 +68,16 @@ COM_ALL_1800_A_01
 Leeres Grundstück\n\nGewerbewidmung
 COM_ALL_1800_A_08
 Schweinfurt Am Graben 30 gelb
+COM_ALL_1890_A_06
+Emsturnhalle Rietberg
+COM_ALL_1900_A_02
+Rummel
 COM_ALL_1920_A_01
-Leeres Grundstück\n\nGewerbewidmung
+Leeres Grundstück mit Bautafel\n\nHier möchte eine Venture-Capital-Gesellschaft ein hohes Bürogebäude errichten.
 COM_ALL_1925_A_09
 Leeres Gebäude
+COM_ALL_1930_A_03
+Baustelle Tiefbau
 COM_ALL_1937_A_12
 Haus der Wissenschaften Braunschweig
 COM_ALL_1950_Baustelle_Animation_02
@@ -86,6 +92,8 @@ COM_ALL_1953_A_16
 Gerling-Haus Köln
 COM_ALL_1955_A_05
 Garagen zu vermieten
+COM_ALL_1960_A_08
+Kino International Berlin
 COM_ALL_1960_A_43
 Neue Mainzer Str 1 Fankfurt am Main klein
 COM_ALL_1960_A_45
@@ -96,8 +104,10 @@ COM_ALL_1962_B_04
 Parkplatz - Die Imbissbude serviert die leckersten Bratwürste der ganzen Stadt. Besucher von Nah und Fern kommen deshalb zu einem Imbiss hier her.
 COM_ALL_1963_A_20
 NarvaTurm Berlin
+COM_ALL_1970_A_04
+Zeltplatzkino Markgrafenheide
 COM_ALL_1970_A_34
-Bonifazius-Turm in Mainz
+Bonifazius-Turm in Mainz\n\nGeplant waren zwei Bürotürme nebeneinander am Hauptbahnhof. Dummerweise gibt es zwei Kirchen die dem Heiligen Bonifaz geweiht sind und so hat sich die Baufirma Simutrans Express KG, die die Ausschreibung für den zweiten Turm gewonnen hat, im Stadtteil geirrt. Jetzt steht der zweite Turm am anderen Ende der Stadt, in der Nähe des Ostbahnhofs. 
 COM_ALL_1970_A_48
 Jentower in Jena
 COM_ALL_1970_B_00
@@ -107,21 +117,21 @@ Kölnische Straße 4x Kassel
 COM_ALL_1980_A_36
 DLF Funkhaus Köln
 COM_ALL_1980_A_48
-Funkhaus am Raderberggürtel in Köln
+Funkhaus am Raderberggürtel in Köln\n\nHier arbeiten die Bewohner des Papageienhauses.
 COM_ALL_1980_Baustelle_Animation_02
 Hier entsteht ein neues Gewerbegebäude
 COM_ALL_1984_A_02
 Baustelle
 COM_ALL_1990_A_01
-Juwelier Golddreher\nFunkelndes und Geschmeide für die Gattin oder Geliebte. Das aus der Jahrhundertwende stammende Haus wurde 1990 aufwendig renoviert.
+Zirkus Köln
 COM_ALL_1990_A_03
-Toilettenhaus in Neumuenster
+Toilettenhaus in Neumuenster im Rencks Park
 COM_ALL_1990_A_07
-Zirkuszelt Koeln
+Juwelier Golddreher\nFunkelndes und Geschmeide für die Gattin oder Geliebte. Das aus der Jahrhundertwende stammende Haus wurde 1990 aufwendig renoviert.
 COM_ALL_1990_A_26
-Holiday Inn in Hamburg
+Holiday Inn in Hamburg\n\nDas größte Hotel in Simutransien.
 COM_ALL_1990_A_38
-Victoria-Turm in Düsseldorf
+Victoria-Turm in Düsseldorf\n\nWenn die Mitarbeiter eines Unternehmens rotieren, dann sollte das Bürogebäude rund sein. Zum Glück besitzt das Gebäude einen eingebauten Kompass, so dass trotz aller Eile nie die Orientierung verloren geht und jeder weiß wo Norden ist. 
 COM_ALL_1990_A_44
 TrepTower Berlin
 COM_ALL_1997_A_48
@@ -133,7 +143,7 @@ Mediatower Düsseldorf
 COM_ALL_2000_A_24
 Finanz-Informatik-Hochhaus\nTheodor-Heuss-Allee 90 in Frankfurt
 COM_ALL_2000_A_30
-Münchner Tor
+Münchner Tor\n\nDie Verwaltung der größten Versicherung von Simutransien. Was für ein Kontrast zur Firmenzentrale des Konzerns. Der Name Münchner Tor wurde gewählt, da das Gebäude mit den gegenüberliegenden Highlight Towers in den Augen der Architekten ein Tor für Autbahn bildet, die zwischen den Hochhäusern verläuft. 
 COM_ALL_2000_A_32
 Main-Tower          \n\nBefindet sich in Frankfurt am Main und ist - für die dortigen Verhältnisse - "nur" 200 Meter hoch.
 COM_ALL_2000_A_40
@@ -155,7 +165,7 @@ Bürohaus Ziethenstrasse Gütersloh groß
 COM_ALL_2010_A_28
 Sign! Düsseldorf
 COM_ALL_2010_A_32
-Westfalentower Dortmund
+Westfalentower Dortmund\n\nDie Angestellten sind von der Gestaltung des Arbeitsplatzes nicht angetan und so steht dieser schmucklose und triste Büroturm zu 90% leer. Dem Eigentümer droht die Insolvenz. Ein Käufer wird dringen gesucht.
 COM_ALL_Werbetafel_04
 Werbetafel\n Immer mehr wollen mit Blinken und Flackern Aufmerksamkeit erregen, aber je mehr es blinkt und flackert um so mehr sind die Leute genervt. 
 COM_ALP_1800_A_06
@@ -210,24 +220,8 @@ COM_AVL_1960_A_24
 Hotel Arosa Essen rot
 COM_AVL_1962_A_04
 Die Lemuria Offsetdruckerei fertigt vom Flyer bis zum Wandplakat alles was der Auftraggeber seiner Kundschaft mitteilen möchte.
-COM_AVL_1967_A_16
-Könnte eine Tankstelle sein, ist aber der Eingang zur Einkaufspassage.
-COM_AVL_1967_A_17
-Könnte eine Tankstelle sein, ist aber der Eingang zur Einkaufspassage.
 COM_AVL_1968_A_04
 LUR Meditech - Diese Spezialfirma fertigt medizinisches Gerät mit höchster Präzision.
-COM_AVL_1969_A_24
-Lichtdurchflutete Großraumbüros so macht die Arbeit wieder Spaß!
-COM_AVL_1969_A_30
-Einkaufen und arbeiten in einem modernen Umfeld bietet dieses Gebäude.
-COM_AVL_1969_B_30
-Einkaufen und arbeiten in einem modernen Umfeld bietet dieses Gebäude.
-COM_AVL_1969_C_30
-Einkaufen und arbeiten in einem modernen Umfeld bietet dieses Gebäude.
-COM_AVL_1969_D_30
-Einkaufen und arbeiten in einem modernen Umfeld bietet dieses Gebäude.
-COM_AVL_1969_E_30
-Einkaufen und arbeiten in einem modernen Umfeld bietet dieses Gebäude.
 COM_AVL_1970_A_20
 AVL-Ersatzteilhandel\n\nSie reparieren Ihr Auto selbst? Wir haben das passende Ersatzteil!
 COM_AVL_1971_A_20
@@ -250,6 +244,52 @@ COM_AVL_2004_B_12
 Die UTRANS-Handelsgesellschaft beschäftigt sich mit Termingeschäften aller Art.
 COM_AVL_2007_B_10
 Niederlassung der Strans-Kreditanstalt.
+COM_CLU_1961_A_01
+Grundstück mit Bautafel\n\nDieses Grundstück hat die PuMu Projektentwicklung GmbH sich für ein Einkaufzentrum reserviert. Die Pläne sind zur Genehmigung eingereicht. Die Stadtverwaltung bemängelt, dass das Baugebiet als reines Wohnbaugebiet ausgewiesen wurde und ein Einkaufzentrum deshalb nicht genehmigungsfähig ist.
+COM_CLU_1961_A_02
+Parkplatz für ein Einkaufszentrum.\n\nDer Parkplatz wurde bereits errichtet. Leider fehlt das Einkaufszentrum noch, deshalb möchte auch niemand hier parken.
+COM_CLU_1961_A_03
+Parkplatz für ein Einkaufszentrum.\n\nDer Parkplatz wurde voreilig bereits gebaut. Leider fehlt das Einkaufszentrum noch immer, deshalb möchte nach wie vor niemand hier parken.
+COM_CLU_1962_A_04
+Dieser Parkplatz gehört zum Einkaufzentrum.
+COM_CLU_1962_A_05
+Dieser Parkplatz gehört zum Einkaufzentrum.
+COM_CLU_1963_A_04
+Einkaufszentrum\nEs wurde neu eröffnet. Die umliegenden Bewohner freuen sich sehr über die nahe gelegene neue Einkaufmöglichkeit.
+COM_CLU_1963_A_05
+Einkaufszentrum\n\nDer Eingang zur Einkaufspassage
+COM_CLU_1963_A_06
+Einkaufszentrum
+COM_CLU_1963_A_07
+Einkaufszentrum
+COM_CLU_1964_A_08
+Einkaufszentrum
+COM_CLU_1964_A_09
+Einkaufszentrum
+COM_CLU_1964_A_10
+Einkaufszentrum
+COM_CLU_1964_A_12
+Einkaufszentrum
+COM_CLU_1964_A_14
+Einkaufszentrum
+COM_CLU_1964_A_16
+Könnte eine Tankstelle sein, ist aber der Eingang zur Einkaufspassage.
+COM_CLU_1964_A_18
+Einkaufszentrum
+COM_CLU_1965_A_20
+Einkaufszentrum\n\nTeile der Einkaufspage wurden mit Wohnhäusern überbaut. Das spart Baugrund und bringt weitere Kunden.
+COM_CLU_1965_A_22
+Lichtdurchflutete Großraumbüros so macht die Arbeit wieder Spaß!
+COM_CLU_1965_A_24
+Einkaufen und arbeiten in einem modernen Umfeld bietet dieses Gebäude.
+COM_CLU_1965_A_26
+Einkaufen und arbeiten in einem modernen Umfeld bietet dieses Gebäude.
+COM_CLU_1965_A_28
+Einkaufen und arbeiten in einem modernen Umfeld bietet dieses Gebäude.
+COM_CLU_1965_A_30
+Einkaufen und arbeiten in einem modernen Umfeld bietet dieses Gebäude.
+COM_CLU_1965_A_32
+Einkaufen und arbeiten in einem modernen Umfeld bietet dieses Gebäude.
 COM_MGB_1800_A_08
 Schweinfurt Am Graben 30
 COM_MGB_1800_A_10
@@ -282,6 +322,8 @@ COM_MGB_1920_A_10
 Handwerkerzentrum - Hier haben ein Goldschmied, ein Fassadenreiniger und zwei kleine Serviceunternehmen ihre Zelte aufgeschlagen.
 COM_MGB_1931_A_31
 Außer einigen Apartments, residiert hier noch die Steuerkanzlei Goldland,Hermanns & Julians.
+COM_MGB_1951_A_03
+Eine Tankstelle blau. \n\nAuch in Trabantenstädten möchten die Bewohner Benzin für ihre Autos kaufen. In den modernen Wohnwüsten sind die Einkaufsmöglichkeiten spärlich. 
 COM_MGB_1951_A_04
 Eine Tankstelle im typischen 1950er-Jahre Stil.
 COM_MGB_1953_A_25
@@ -396,24 +438,20 @@ COM_ODL_1920_A_40
 Albin Müller Turm
 COM_ODL_1930_A_05
 Ballonhalle Tauche
-COM_ODL_1950_AB_10
-Wohn- und Geschäftsgebäude
-COM_ODL_1950_AB_16
-Bezirks Postamt.
 COM_ODL_1970_A_25
 Taunusanlage 11a
 COM_ODL_1970_A_30
 Taunusanlage 11
 COM_ODL_1972_A_12
-Eines der zahlreichen Verwaltungsgebäude in der Stadt.
+Theater Putbus
 COM_ODL_1973_A_28
 Eines der diversen Bürotürme, die man so oder in ähnlicher Form in fast jeder Großstadt findet.
 COM_ODL_1974_A_36
 Einer der diversen Hochhäuser, die man so oder in ähnlicher Form in vielen Großstädten findet.
 COM_ODL_1981_A_04
-Bäckerei
+Tivoli Demmin (Filmtheater des Volkes)
 COM_ODL_1986_A_06
-Bäckerei
+Filmtheater des Volkes Demmin
 COM_ODL_1990_A_02
 Baugrube
 COM_ODL_1999_A_10
@@ -500,8 +538,6 @@ Kleine_Dorfkirche
 Dorfkirche
 Klosterruine_Heisterbach
 Ruine                \n\nSchaurig-schön fanden die Menschen des 19. Jahrhunderts die Überreste alter Gemäuer. Vom einstigen Kloster in Heisterbach im rheinischen Siebengebirge blieben nach dem 1809 erfolgten Verkauf an ein französisches Unternehmen nur noch wenige Reste.
-Koeln_turm
-KölnTurm            \n\nSteht in irgendeiner Großstadt am Rhein und stellt dort seit 2001 das höchste Bürogebäude der Stadt dar.
 Kurhaus_Binz
 Kurhaus             \n\nDas Vorbild stellt das Wahrzeichen des Ostseebades Binz auf Rügen dar und ist ein sehr schönes Beispiel für die Badekultur Ende des 19., Anfang des 20. Jahrhunderts.
 Leuchtturm_Friedrichsort
@@ -512,18 +548,16 @@ Maritimes_Simulationszentrum
 Maritimes Simulationszentrum   \n\nDiese Forschungseinrichtung steht in Warnemünde. Dort geht es, anders als bei Simutrans, nur um Schifffahrt.
 Matthaeuskirche_Pforzheim
 Matthäuskirche     \n\nDie Matthäuskirche in Pforzheim ist eine evangelische Kirche und liegt im Stadtteil Arlinger.
+Mauthalle_Nuernberg
+Mauthalle Nürnberg
 Mespelbrunn_Castle
 Schloss Mespelbrunn \n\nDas zwischen Aschaffenburg und Würzburg gelegene Schloss geht auf erste Ursprünge von 1427 zurück und befindet sich bis heute in Privatbesitz.
-MGB_Commerzbanktower
-Commerzbank Tower \n\nBis 2003 war der 1997 vollendete Commerzbank Tower in Frankfurt/Main das höchste Hochhaus Deutschlands.
 MGB_Henninger-Turm
 Henninger-Turm     \n\nNostalgie in Simutrans: Der Henninger-Turm in Frankfurt/Main wurde 1961 als Getreidesilo für die Henninger-Brauerei errichtet und 2013 abgerissen. Aus dem Gebäude ragte ein fassähnlicher Aufsatz, Turmkorb genannt, in dem sich eine Aussichtsplattform und ein Drehrestaurant befanden.
 MGB_Paulskirche
 Paulskirche          \n\nDie Frankfurter Paulskirche, ein 1833 fertiggestellter klassizistischer Rundbau, diente 1848/49 als Sitzungsort der ersten deutschen gewählten Nationalsversammlung. Seit 1948 wurde das Gebäude als Denkmal wiedereröffnet.
 MGB-Arena
 Waldstadion         \n\nFußballstadion von Eintracht Frankfurt
-MGB-Main-Tower
-Main-Tower          \n\nBefindet sich in Frankfurt am Main und ist - für die dortigen Verhältnisse - "nur" 200 Meter hoch.
 MGB-Messeturm
 Messeturm         \n\nBei seiner Fertigstellung war der Messeturm in Frankfurt/Main das höchste Gebäude Europas, wurde aber später von etlichen anderen überflügelt. Wie in der Realität besitzt er immer noch eine im wahren Wortsinn herausragende Größe - auch in unserem Set.
 Mittelalterliche_Kirche
@@ -548,6 +582,8 @@ Ruhmeshalle_mit_Bavaria
 Ruhmeshalle mit Bavaria\n\n steht in München, von König Ludwigs I im Jahr 1853 erbaut, steht über der Theresienwiese auf der das Oktoberfest stattfindet.
 Ruine_Wernerkapelle
 Ruine                \n\nDie 1426 fertiggestellte Wernerkapelle bei Bacharach am Rhein war viele Jahrhunderte hindurch ein Wallfahrtsort. 1689 wurde sie teilweise zerstört und im 19. Jahrhundert als romantische Ruine wiederentdeckt.
+Schifffahrtsmuseum_Kiel
+Schifffahrtsmuseum Kiel
 Schleifmuehle_Schwerin
 Schleifmühle        \n\nWassermühle bei Schwerin, anerkannt als technisches Kulturdenkmal
 Schloss_Arolsen
@@ -741,17 +777,19 @@ HQ-7
 #________________________________building - ind_________________________________
 #________________________________building - ind_________________________________
 IND_ALL_1800_A_01
-Eingezäunte Schafweide - Im Winter stehen die Tierchen natürlich in einer kuschlig warmen Scheune.
+Eingezäunte Schafweide - Im Winter stehen die Tierchen natürlich in einer kuschlig warmen Scheune. Das Gebiet wurde inzwischen von der Stadtverwaltung als Gewerbegebiet ausgewiesen. Man hofft auf reiche Gewerbesteuer Zahlungen.
 IND_ALL_1800_A_05
 Forchheim Marktplatz 14
 IND_ALL_1802_A_01
-Kleingarten grünes Glück
+Dieses Grundstück wurde von einer Chemiefabrik gekauft. Aber so lange die Baugenehmigung aussteht, also bis zum Baubeginn, darf der Landwirt diese Grundstück weiter landwirtschaftlich nutzen. Bauern sind schlaue Leute und wissen um die langwierigen Genehmigungsverfahren und so konnte schon mancher Bauer seinen ehemaligen Acker jahrzehntelang pachtfrei weiter nutzen.  
 IND_ALL_1802_B_01
-Kleingarten hoch hinaus
+Dieses Grundstück wurde von einer Petrochemiefabrik gekauft. Die Umweltverträglichkeitsprüfung macht umfangreiche Vorgaben und so darf der Landwirt diese Grundstück weiter landwirtschaftlich nutzen bis die Angelegenheit vor Gericht geklärt ist. Dem Fabrikbesitzer ist es ganz Recht, wenn das Grundstück in der Zwischenzeit nicht verwahrlost.
 IND_ALL_1803_A_02
-Kleingarten frische Luft
+Ein Stück Ödland. Es wurde vor kurzen von einem Industrie Baron aufgekauft.
 IND_ALL_1803_B_02
 Kleingarten in der rot 
+IND_ALL_1830_06
+Gerberei Schönduft\n\nWir machen aus Tierhaut haltbares Leder in allen Farben. Die Gerberei ist weithin bekannt in Rostok, nicht so sehr wegen ihres Leders, sondern weil je nach Windrichtung, die Leute Atemnot bekommen.
 IND_ALL_1910_A_09
 Maschinenhaus Metallwerk Coburg
 IND_ALL_1984_A_02
@@ -826,6 +864,20 @@ IND_AVL_1956_A_04
 Die Glaserei Starnberger liefert von der Rundumverglasung bis zum Zierfenster alles, was das Bauherrenherz begehrt.
 IND_AVL_1956_A_10
 Modernes Heizhaus.
+IND_AVL_1969_A_20
+Modernes Gebäude der Verwaltung\n\nModerne Industrien bestehen nicht mehr aus rauchenden Kaminen und viel Dreck. Es sind Bürogebäude in denen geplant, entworfen und verwaltet wird.  
+IND_AVL_1969_A_22
+Verwaltungsgebäude der Industrie\n\nDie Anforderungen der modernen Industrien an die Verwaltung sind enorm. Viele Mitarbeiter sind in diesem Bürogebäude beschäftigt.  
+IND_AVL_1969_A_24
+Industriegebäude F&E\n\nDas hier ist die Forschung und Entwicklungsabteilung der Rednix Stahl und Blechbau Gmbh
+IND_AVL_1969_A_26
+Rauch und Söhne KG\n\nHersteller von Elektronischen Steuerungsanlagen. Moderne Industriebetriebe sehen aus wie Büros, von außen und sogar von innen. Nur, es liegt neben viel Papier, auch noch die eine oder andere Platine auf den Tischen. 
+IND_AVL_1969_A_28
+Kleingerätebau Dachs\n\nEin traditionsreiche Unternehmen. Das Firmeneigene Grundstück, früher am Stadtrand gelegen, aber die Stadt ist gewachsen und so ist das Unternehmen heute schön zentral gelegen. Nur das Gebäude selbst war nicht mehr zeitgemäß und so hat man sich beim Neubau am Baustil der befreundeten Unternehmen in der Nachbarschaft orientiert.
+IND_AVL_1969_A_30
+Medizingeräte Zwack GmbH\n\nEin Neubau war notwendig. Man hat es sich die Entscheidung leicht gemacht und den Architekten des Nachbarhauses angeheuert. Nur etwas höher sollte es dann doch sein.
+IND_AVL_1969_A_32
+Messgeräteherstellung Fein\n\nDas Gebäude könnte der Bayrische Rundfunk sein, aber nein, der Architekt Kopyklein hat sich nur inspirieren lassen, auf seiner Bahnfahrt nach München.
 IND_AVL_1980_A_08
 SimFlex Leiterplatten & Kondesatorenfertigung.
 IND_AVL_1987_A_10
@@ -941,9 +993,9 @@ Malzfabrik
 IND_ODL_1926_A_09
 Umspannwerk
 IND_ODL_1928_A_28
-Altdeutsches Wohn- und Geschäftsgebäude.
+Speicher Stadthafen Rostock
 IND_ODL_1931_A_18
-Gasreservoir der Stadtwerke
+Gaswerk Charlottenburg
 IND_ODL_1960_A_13
 Getreidespeicher Potsdam Rehbrücke
 IND_ODL_1970_A_42
@@ -961,11 +1013,13 @@ Zwischenlager der "Power-Oil" Ltd.
 IND_ODL_1992_A_19
 "The Storage House". Lagerräume von 3 x 40 m²
 IND_ODL_2001_A_14
-CSG Cosmetics. Pasten und Cremes zur "Aufhübschung der Fassade".
+Experimentelle Fabrik Mageburg\nCSG Cosmetics. Pasten und Cremes zur "Aufhübschung der Fassade".
 #________________________________building - mon_________________________________
 #________________________________building - mon_________________________________
 AVL_Jubilaeumssaeule
 Jubiläumssäule      \n\nSteht auf dem Stuttgarter Schlossplatz und ist 35 Meter hoch.
+BergerDenkmal_Witten
+Berger Denkmal in Witten
 Obelisk
 Obelisk (Attraktion)
 Obsidia
@@ -977,15 +1031,21 @@ Team PAK128.german
 #________________________________building - res_________________________________
 #________________________________building - res_________________________________
 RES_ALL_1700_Gerberbruch_3_04
-Gerberbruch 3 in Rostock
+Gerberbruch 3 in Rostock\n\nFrüher ein Handelshaus mit Tradition seit 1702. Heute eine gute Wohnadresse, da zentral in der Stadt gelegen. 
 RES_ALL_1800_A_01
-Ein kleines Einfamiliehaus\n aus der Zeit um die Jahrhundertwende
+Grundstück\n hier will jemand sein kleinnes Wohnhaus bauen. Der Zaun ist schon fertig, aber die Baugenehmigung lässt noch auf sich warten. In Zwischenzeit wuchert das Unkraut.
 RES_ALL_1800_A_02
 Schrebergarten - Ein Gartenhäuschen mit Veranda
 RES_ALL_1800_A_03
 Wohnstallhaus Beuren
+RES_ALL_1800_A_06
+Fränkischer Großbauernhof\n\nEigentlich ein Widerspruch in sich, aber dieser Hof ist zufällig nicht der Erbteilung zum Opfer gefallen und so ist das Wohnen und bewirtschaften des Hofs auch heute noch auskömmlich.
+RES_ALL_1800_A_08
+Kleine Wasserstrasse 25-26 Rostock
 RES_ALL_1800_A_09
 Haus Groß (blau) in Göllheim Hauptstraße 68
+RES_ALL_1800_A_10
+An der Viergelindenbrücke 1 Rostock
 RES_ALL_1800_B_01
 Kleines Wohnhaus
 RES_ALL_1801_B_01
@@ -1002,12 +1062,56 @@ RES_ALL_1870_A_05
 Ubahn Alex Eingang
 RES_ALL_1880_Fischerbruch_3Haeuser_03
 Fischerbruch 3
+RES_ALL_1920_A_12
+Föhrich-Hochhaus\n\nStuttgarter Straße 169, Feuerbach. Im Stil des Expressionismus gebaut. Architekt: Stadtbaurat Holstein
+RES_ALL_1950_A_14
+Wohnhochhaus an Havensteinstrasse 14 Berlin
+RES_ALL_1950_A_24
+Max-Kade-Heim Stuttgart
+RES_ALL_1950_Baustelle_Animation_02
+Baustelle Blockmacherring\n\nWir arbeiten hier an der Wohnsiedlung Blockmacherring. Bald können die ersten Wohnungen bezogen werden in dieser Großsiedlung.
 RES_ALL_1952_B_09
 Kleiner Wohnblock für Familien mit schmalen Geldbeutel
+RES_ALL_1959_A_09
+Blockmacherring Fußgängerunterführung\n\nDie Großsiedlung liegt an einer vielbefahrenen Hauptstraße. Damit die Kinder ungefährdet zur Schule gehen können wurde hier eine Fußgängerunterführung gebaut. Auch Leute auf dem Weg zum Einkaufszentrum nutzen gerne diese Unterführung, auch wenn sie schmutzig ist und sich die Abgase in ihr sammeln.
+RES_ALL_1960_A_16
+Bonhoeffer Straße 15 Rostock
+RES_ALL_1960_A_18
+Marienthaler Straße 40 Zwickau
+RES_ALL_1960_A_20
+Celler Str. 26 Braunschweig
+RES_ALL_1960_A_22
+Türlenstr.34 Stuttgart
+RES_ALL_1970_A_30
+Riehler Strasse 200 Köln
+RES_ALL_1970_A_32
+Werder-Hochhaus Magdeburg
+RES_ALL_1970_A_36
+Bonner Straße 211 Köln
+RES_ALL_1970_A_38
+Jessenstrasse 4 in Hamburg\n\nVon außen nicht schön, aber die Wohnungen sind zentral gelegen. Die Stadt versucht den Platz davor aufzuwerten, aber alles Umgestalten und Umbenennen hilft nicht. Die Leute verweilen, bummeln und kaufen lieber anderswo.
+RES_ALL_1970_A_40
+Norikus Nürnberg\n\nAm Wöhrder See gelegen, die ideale Wohnung für Leute die gerne baden.
+RES_ALL_1970_A_42
+Olympia-Tower München
+RES_ALL_1970_A_44
+Wintergartenhochhaus Leipzig
+RES_ALL_1970_A_46
+Mundsburg Hamburg Turm I\n\nUnten ein Einkaufszentrum, darüber wohnen die besten Kunden des Einkaufszentrum. Der Architekt hatte eigentlich geplant, die Wohntürme zu Ensembles zu je drei oder vier Hochhäusern zu gruppieren. Die Stadtplaner halten sich leider selten an diese Vorgaben.
+RES_ALL_1970_A_48
+Herkules Hochhaus Köln\n\nDas Super-Wohnhaus wird vor allem von Mitarbeitern des berühmten Fernsehsenders "Hallo Sim-World" bewohnt. Diese nennen das Haus Papageienhaus. Unklar ist ob sich das auf die Farbe des Hauses oder auf die Tätigkeit der Bewohner bezieht.
+RES_ALL_1970_Baustelle_Animation_02
+Baustelle Platz der Freundschaft\n\nNicht mehr lange und hier steht ein Wohnblock der Großsiedlung "Platz der Freundschaft".
 RES_ALL_1972_A_09
 Fußgängertunnel Lewishamstraße
 RES_ALL_1972_A_12
 Mehrfamilienhaus der SI-Immogrund
+RES_ALL_1980_A_26
+Lietzenburger Strasse 1 Berlin
+RES_ALL_2000_A_28
+Eiswerder Strasse 8 Berlin
+RES_ALL_2010_A_34
+Landmark-Tower Bremen
 RES_ALL_Schrebergarten_a_01
 Schrebergarten-Parzelle (20 Euro Miete)
 RES_ALL_Schrebergarten_b_01
@@ -1040,6 +1144,10 @@ RES_ALP_1800_A_07
 Zum Wohnhaus umgebauter und renovierter Kuhstall.
 RES_ALP_1800_B_04
 Aus Felsstein gebautes Häuschen mit Geräteschuppen und Vorgarten
+RES_ALP_1802_A_01
+Haus von Makie\n\nSehr zur Freude seines vierjährigen Sohns gibt es das Haus von Papa auch im Spiel Simutrans. Er baut es eifrig, ganze Stadtviertel bestehen nur aus diesem Haustyp. Auch Bahnhöfe, Depots und Fahrpläne stellen kein Problem für ihn dar. Damit ist er möglicherweise der jüngste Simutrans Spieler. Das Haus wurde 1903 von einem Schmied gebaut und hat viele Kinder gesehen.
+RES_ALP_1802_B_01
+Haus in Blau\n\nDieses Haus ist Altbau.
 RES_ALP_1902_A_08
 Oberbayrisches Bauernhaus. Das Wohnhaus ist alles, was vom ehemaligen Mayertalerhof übrig geblieben ist.
 RES_ALP_1924_A_11
@@ -1050,12 +1158,6 @@ RES_ALP_1950_A_15
 Heim für betreutes Wohnen der AgeCare Ltd.
 RES_ALP_1960_A_04
 Alpenländisches Mehrfamilienhaus mit zwei Aufgängen der Lemuria Immo & Treuhand AG.
-RES_ALP_1960_A_37
-Welsweg 7 Stuttgart klein
-RES_ALP_1960_A_39
-Welsweg 7 Stuttgart
-RES_ALP_1960_A_41
-Welsweg 7 Stuttgart groß
 RES_ALP_1980_A_12
 Wohnhaus im Stil des Alpenvorlands, mit einem Pelletslagerraum auf der Rückseite, da die Heizung vor kurzem auf diesen umweltfreundlichen Brennstoff umgestellt wurde.
 RES_ALP_1980_A_20
@@ -1074,6 +1176,8 @@ RES_ALP_1989_A_20
 Modernes, familienfreundliches Wohnhaus. Die Wohnungen im EG haben sogar eine kleine Terrasse.
 RES_ALP_1990_B_20
 Schlichter Wohnblock mit überwiegend Singleapartments.
+RES_AVL_1800_A_02
+Gemüse mit Häuschen\n\nOb aus Armut oder Überzeugung, hier versorgt sich jemand mit vielen gesunden Sachen. So wie es ausschaut wohnt er auch hier im kleinen Häuschen. Vielleicht verkauf er auch Gemüse auf dem Markt. Oder ist es gar eine Frau, die hier ihr kleines Reich geschaffen hat?
 RES_AVL_1800_A_03
 Geräumiges Bauernhaus mit Geräteschuppen.
 RES_AVL_1800_A_09
@@ -1084,8 +1188,6 @@ RES_AVL_1800_B_04
 Ehemaliges Bauernhaus mit Reeddach. Der Rest des Hofes fiel leider einer Neuaufteilung des Grundstücks zum Opfer.
 RES_AVL_1803_A_08
 Kleines Bauernhaus. Gebäude wie diese sind häufig im bayrischen Oberland anzutreffen.
-RES_AVL_1823_A_05
-Schwäbisches Reihenhaus (Innenstadt).
 RES_AVL_1860_B_03
 Ehemaliges Gesindehaus aus der Zeit vor der Industrialisierung.
 RES_AVL_1861_A_04
@@ -1096,8 +1198,6 @@ RES_AVL_1864_A_04
 Zum Wohngebäude umgebaute ehemalige Arbeiter-Pension.
 RES_AVL_1864_B_05
 Mehrfamilienhaus aus der Jahrhundertwende mit überdachtem Eingang.
-RES_AVL_1865_A_05
-Schwäbisches Reihenhaus (Innenstadt).
 RES_AVL_1865_A_11
 Wohnhaus einer Akademikerfamilie. Der "Herr Professor" hat außerdem das Dachgeschoss zu seinem persönlichem Studierzimmer auserkoren.
 RES_AVL_1866_A_12
@@ -1112,8 +1212,6 @@ RES_AVL_1870_A_14
 Ein gut situierter Notar ließ sich dieses ehemalige Stadtschlösschen auf die Bedürfnisse seiner Familie samt Personal\numbauen. Der derzeitige Besitzer hat nicht ganz soviel ?Anhang? und deshalb stehen ein Teil der Räume leer.
 RES_AVL_1870_A_18
 In diesem Gebäude aus der Jahrhundertwende ist eine Privatschule für die Kinder wohlhabender Eltern untergebracht.
-RES_AVL_1871_A_05
-Schwäbische Reihenhäuser (Innenstadt).
 RES_AVL_1890_A_16
 Ein gut situierter Geschäftsmann hat diesem ehemaligen Stadtschlösschen viel Pflege angedeihen lassen. Daher ist es auch der Stolz der Bewohner der Siedlung drum herum, hebt doch diese noble Adresse den Gesamtwert des Viertels erheblich.
 RES_AVL_1891_B_18
@@ -1132,12 +1230,6 @@ RES_AVL_1916_A_09
 Mehrparteienhaus der Alpe-Adria Wohnbau GmbH aus der Biedermaierzeit.
 RES_AVL_1923_A_08
 Ein ehemaliges Schulgebäude, das nun 6 günstige Apartments für Single beinhaltet. 
-RES_AVL_1923_A_24
-Wohnblock mit Schuhgeschäft im Parterre.
-RES_AVL_1923_B_24
-2-farbiger Wohnblock mit Ziegeldach. Dieses Haus ist ein typisches Beispiel für den Baustil der 1930er bis 40er Jahre.
-RES_AVL_1923_C_24
-2-farbiger Wohnblock mit Gemüsegeschäft im Parterre.
 RES_AVL_1927_A_05
 Günstiges Mehrfamilienhaus. Derzeit ist die Erdgeschosswohnung zu vermieten.
 RES_AVL_1929_A_04
@@ -1164,6 +1256,12 @@ RES_AVL_1957_A_15
 Zwei gut ausgestattete 3-Zimmer-Wohnungen und ein 5-Zimmer-Luxus-Apartment teilen sich Etagen hinter der grünen Fassade dieses ehemaligen Arbeiterhauses aus dem 18. Jahrhundert.
 RES_AVL_1959_A_04
 Einfamilienhaus im 60er Jahrestil, mit hübschem Vorgarten (unteres Preissegment)
+RES_AVL_1960_A_38
+Welsweg 7 Stuttgart klein
+RES_AVL_1960_A_40
+Welsweg 7 Stuttgart
+RES_AVL_1960_A_42
+Welsweg 7 Stuttgart groß
 RES_AVL_1961_A_09
 Einfaches 2-Familienhaus mit Doppelgarage.
 RES_AVL_1972_A_04
@@ -1198,6 +1296,110 @@ RES_AVL_2005_B_04
 Hübsches Vorstadthaus mit Garten und Doppelgarage.
 RES_AVL_2011_A_10
 Ein Mehrparteienhaus der MHZ Wohn- & Siedlungsgesellschaft. Dieser Haustyp wurde hauptsächlich für Familien mit Kindern konzipiert. Deshalb sind die Wohnungen auch etwas großzügiger geschnitten als ortsüblich.
+RES_CLU_1865_A_05
+Schwäbisches Reihenhaus (Innenstadt).
+RES_CLU_1866_A_06
+Schwäbisches Reihenhaus (Innenstadt).
+RES_CLU_1867_A_07
+Schwäbische Reihenhäuser (Innenstadt).
+RES_CLU_1900_A_10
+Hauptpost am Neuer Markt von Rostock
+RES_CLU_1906_A_16
+Hauptpost am Neuer Markt von Rostock jetzt aufgestockt und in grün
+RES_CLU_1922_C_22
+Wohnblock 1922\n\nIn den 20 Jahren nach dem 1. Weltkrieg herrschte Aufbruchstimmung. Die Avantgarde zeigte sich auch in der neuen Blockbebauung in Berlin.
+RES_CLU_1924_A_24
+Wohnblock mit Schuhgeschäft im Parterre.
+RES_CLU_1924_B_24
+2-farbiger Wohnblock mit Ziegeldach. Dieses Haus ist ein typisches Beispiel für den Baustil der 1930er bis 40er Jahre.
+RES_CLU_1924_C_24
+2-farbiger Wohnblock mit Gemüsegeschäft im Parterre.
+RES_CLU_1957_A_01
+Hier möchte die PuMu Sozialwohnungsbau GmbH einen weiteren Wohnblock für die Wohnsiedlung Blockmacherring errichten. Letzte Genehmigungen fehlen leider noch und so wächst hier außer der Bautafel nur Unkraut.
+RES_CLU_1957_A_02
+Verwildertes Grundstück\nEs liegt schon Müll herum, aber der Baubeginn für die Wohnanlage Blockmacherring verzögert sich weiter.
+RES_CLU_1957_A_03
+Blockmachering 3\n\nDer Wohnblock ist neu errichtet und noch nicht vollständig bezogen. 
+RES_CLU_1957_A_04
+Blockmacherring
+RES_CLU_1957_A_05
+Blockmacherring
+RES_CLU_1957_A_06
+Blockmacherring
+RES_CLU_1957_A_07
+Blockmacherring\n\nEin Wohnblock der PuMu Sozialwohnungsbau GmbH.
+RES_CLU_1957_A_08
+Blockmacherring\n\n Ein mittelgroßer ostdeutscher Plattenbau.
+RES_CLU_1957_A_09
+Blockmacherring
+RES_CLU_1957_A_10
+Blockmacherring
+RES_CLU_1957_A_12
+Blockmacherring
+RES_CLU_1957_A_14
+Blockmacherring
+RES_CLU_1957_A_16
+Blockmacherring
+RES_CLU_1957_A_18
+Blockmacherring
+RES_CLU_1957_A_20
+Blockmacherring
+RES_CLU_1957_A_22
+Blockmacherring
+RES_CLU_1957_A_24
+Blockmacherring
+RES_CLU_1957_A_26
+Blockmacherring
+RES_CLU_1957_A_28
+Blockmacherring
+RES_CLU_1970_A_01
+Verwildertes Grundstück.\nDie PuMu Wohnbaugesellschaft möchte hier eine Großsiedlung errichten. Ein Name ist schon gefunden. Der Stadtrat wünscht sich den Namen "Platz der Freundschaft". Der Erwerb letzter kleiner Grundstücke, innerhalb der für die Großsiedlung vorgesehen  Fläche, breitet noch Schwierigkeiten. 
+RES_CLU_1970_A_02
+Unordentliches Grundstück\nDas geht jetzt schon jahrelang. Außer dem Schild des Projekts "Platz der Freundschaft", hat sich hier noch nichts getan. Die Wohnungssuchenden schauen sehnsüchtig das Bild auf der Tafel an. Es wären keine besonderen Wohnungen, aber es wären bezahlbare moderne Wohnungen, so sie denn gebaut würden.
+RES_CLU_1970_A_03
+Platz der Freundschaft 3\nErste Familien sind in diese neue Hochhaus eingezogen. 
+RES_CLU_1970_A_04
+Platz der Freundschaft
+RES_CLU_1970_A_05
+Platz der Freundschaft
+RES_CLU_1970_A_06
+Platz der Freundschaft
+RES_CLU_1970_A_07
+Platz der Freundschaft
+RES_CLU_1970_A_08
+Platz der Freundschaft
+RES_CLU_1970_A_09
+Platz der Freundschaft
+RES_CLU_1970_A_10
+Platz der Freundschaft
+RES_CLU_1970_A_12
+Platz der Freundschaft
+RES_CLU_1970_A_14
+Platz der Freundschaft
+RES_CLU_1970_A_16
+Platz der Freundschaft
+RES_CLU_1970_A_18
+Platz der Freundschaft
+RES_CLU_1970_A_20
+Platz der Freundschaft
+RES_CLU_1970_A_22
+Platz der Freundschaft
+RES_CLU_1970_A_24
+Platz der Freundschaft
+RES_CLU_1975_A_01
+Leeres Gundstück\nDer Fünf-Jahres-Plan sieht in diesem Gebiet moderne Wohnung in Plattenbauweise vor.
+RES_CLU_1975_A_02
+Der Fünf-Jahres-Plan sieht für dieses Gebiet moderne Wohnung in Plattenbauweise vor. Fertigstellung sollte noch dieses Jahr sein.
+RES_CLU_1975_A_03
+Leeres Gundstück\nHier sollten moderne Wohnung in Plattenbauweise entstehen. Nach Fünf-Jahres-Plan und Statistik sind die Wohnungen schon gebaut.
+RES_CLU_1985_A_01
+Vorratsfläche für den Wohnbau. Durch die Erfolge beim Großsiedlungsbau in des letzten Jahren beflügelt, kaufen Baufirmen am Stadtrand jede verfügbare Fläche auf.
+RES_CLU_1985_A_02
+Vorratsfläche für den Wohnbau. Die Baufirmen kaufen am Stadtrand jede verfügbare Fläche auf. Die Stadtverwaltung kennen aber inzwischen die Schattenseiten der Großsiedlungen mit ihren sozialen Problem und genehmigen nur noch sehr zögernd solche Wohnblocks. Und so wartet diese Grundstück immer noch auf seine Bebauung.
+RES_CLU_1985_A_03
+Vorratsfläche für den Wohnbau. Die Stadtverwaltung lehnt inzwischen die Großsiedlungen ab, wegen der damit verbunden sozialen Problem. Privatleute würden hier gerne ein kleines Häuschen bauen, aber die Baugesellschaft hofft noch immer hier eine weitere Großsiedlung errichten zu können. Und so wartet diese Grundstück weiter auf seine Bebauung.
+RES_CLU_1989_A_04
+Leeres Gundstück\nDer Fünf-Jahres-Plan sah hier Wohnung in Plattenbauweise vor. Aber inzwischen haben wir die Wende und schäbige Platte möchte niemand mehr.
 RES_MGB_1799_A_01
 Der Bauernhof der Oberdorfers wird mittlerweile in 3. Generation geführt
 RES_MGB_1800_A_02
@@ -1215,7 +1417,7 @@ Wohn- und Geschäftshäuser wie diese beiden findet man oft im Schwäbischen und in
 RES_MGB_1914_A_10
 Mitteldeutsches Wohnhaus mit Fachwerkfassade. Diesen Baustil findet man des öfteren in kleinen bis mittelgroßen Ortschaften.
 RES_MGB_1920_A_09
-Baustelle
+Straßenunterführung 
 RES_MGB_1927_A_16
 Wohn- und Geschäftshäuser wie diese beiden findet man noch oft in der Schweiz und im Mittelgebirge..
 RES_MGB_1928_A_02
@@ -1260,6 +1462,8 @@ RES_MGB_1983_A_04
 Heruntergekommener Wohnblock mit Mietern aus sozial eher schwierigen Verhältnissen.
 RES_MGB_1983_A_14
 "Wer nicht wagt, der versinkt in der breiten Masse!"\nDas war vermutlich das Motto des Architekten, der dieses etwas eigenwillig geformte Gebäude konstruierte. So sind die ersten 4 Etagen als "Terrasse" ausgeführt.
+RES_MGB_1983_B_14
+Wohnhaus mit vielen Terrassenwohnungen \n\nTerrassenwohnungen sind beliebt. Was entsteht wenn der Architekt Terrassenwohnungen aufeinander türmt? Es entsteht ein Gebäude in Treppenstufenform.
 RES_MGB_1984_A_05
 Schmuckes Palais der gehobenen Preisklasse.
 RES_MGB_1985_A_04
@@ -1291,7 +1495,7 @@ Modernes Niedrigenergiehaus mit Singlegarage
 RES_MGB_2008_A_08
 Kleiner, 3-geschossiger Wohnblock der Lemuria Immo-Verwaltungsgesellschaft.
 RES_MGB_2013_A_48
-Wohn- und Bürogebäude
+Wohngebäude\n\nDie Bewohner sind stolz dass sie im Gebäude mit dem höchsten Level in ganz Simworld leben. 
 RES_NDT_1800_A_03
 Güstrow Armesünderturm
 RES_NDT_1800_A_12
@@ -1315,7 +1519,7 @@ Wohnblock der Lemuria Wohn- & Siedlungsgesellschaft.
 RES_NDT_1959_A_08
 3-Parteienhaus mit Einzelgaragen.
 RES_NDT_1964_A_42
-Kibek-Hochhaus
+Kibek-Hochhaus\n\nSieht nach Bürohochhaus aus, aber hier wohnen Leute.
 RES_NDT_1966_A_10
 Mehrparteienhaus mit Tiefgarage. Die Wohnungen sind in der mittleren Preisklasse anzusiedeln.
 RES_NDT_1968_B_08
@@ -1396,10 +1600,6 @@ RES_ODL_1952_A_24
 Ostdeutsches Hanse-Handelshaus.
 RES_ODL_1956_B_06
 Wohnblock der PuMu Sozialwohnungsbau GmbH.
-RES_ODL_1957_A_07
-Wohnblock der PuMu Sozialwohnungsbau GmbH.
-RES_ODL_1957_A_08
-Mittelgroßer ostdeutscher Plattenbau.
 RES_ODL_1957_A_10
 Wohnblock mit Eigentumswohnungen
 RES_ODL_1957_B_05
@@ -1408,20 +1608,10 @@ RES_ODL_1960_A_09
 Wohnblock der PuMu Sozialwohnungsbau GmbH.
 RES_ODL_1960_A_36
 Waldsassenerstr. 11 Berlin sehr klein
-RES_ODL_1960_A_37
-WHH GT 18 Ost klein\n Ein standardisiertes Wohnhochhaus in Großtafelbauweise des Wohnungsbaukombinat Berlin 
 RES_ODL_1960_A_38
 Waldsassener Straße. 11 Berlin grün
-RES_ODL_1960_A_39
-WHH GT 18 Ost\n Ein standardisiertes Wohnhochhaus in Großtafelbauweise des Wohnungsbaukombinat Berlin 
 RES_ODL_1960_A_40
 Waldsassener Straße. 11 Berlin groß
-RES_ODL_1960_B_36
-WHH GT 18 klein\n Ein standardisiertes Wohnhochhaus in Großtafelbauweise des Wohnungsbaukombinat Berlin 
-RES_ODL_1960_B_38
-WHH GT 18 \n Ein standardisiertes Wohnhochhaus in Großtafelbauweise des Wohnungsbaukombinat Berlin 
-RES_ODL_1960_B_40
-WHH GT 18 groß\n Ein standardisiertes Wohnhochhaus in Großtafelbauweise des Wohnungsbaukombinat Berlin 
 RES_ODL_1965_B_15
 Zeittypisches Wohngebäude, das auch im Westen hätte errichtet werden können.
 RES_ODL_1967_B_12
@@ -1430,6 +1620,20 @@ RES_ODL_1968_A_19
 Komfortables Apartment Haus.
 RES_ODL_1969_A_04
 Wohnblock der Lemuria Wohn- & Siedlungsgesellschaft.
+RES_ODL_1969_A_09
+WHH GT 18 Ost klein\n\nEin standardisiertes Wohnhochhaus in Großtafelbauweise des Wohnungsbaukombinat Berlin. Das heizen mit Braunkohle fordert seinen Preis. Welche Farbe das Haus auch anfangs hatte, Ruß und Asche nach einiger Zeit sehen alle Häuser gleich aus.  
+RES_ODL_1969_A_10
+WHH GT 18 klein\n\nEin standardisiertes Wohnhochhaus in Großtafelbauweise des Wohnungsbaukombinat Berlin. Das heizen mit Braunkohle fordert seinen Preis. Welche Farbe das Haus auch anfangs hatte, Ruß und Asche nach einiger Zeit sehen alle Häuser gleich aus.  
+RES_ODL_1969_A_12
+WHH GT 18 Ost klein\n\nEin standardisiertes Wohnhochhaus in Großtafelbauweise des Wohnungsbaukombinat Berlin. Welche Farbe das Haus auch anfangs hatte, Ruß und Asche, nach einiger Zeit sehen alle Häuser gleich aus. Und dies, obwohl das Haus an der Fernheizung der Stadt hängt und selbst keine Abgase produziert.   
+RES_ODL_1969_A_14
+WHH GT 18 Ost\n\nEin standardisiertes Wohnhochhaus in Großtafelbauweise des Wohnungsbaukombinat Berlin. Das heizen mit Braunkohle fordert seinen Preis. Welche Farbe das Haus auch anfangs hatte, Ruß und Asche nach einiger Zeit sehen alle Häuser gleich aus.  
+RES_ODL_1969_A_16
+WHH GT 18 Ost\n\nEin standardisiertes Wohnhochhaus in Großtafelbauweise des Wohnungsbaukombinat Berlin. Das heizen mit Braunkohle fordert seinen Preis. Welche Farbe das Haus auch anfangs hatte, Ruß und Asche nach einiger Zeit sehen alle Häuser gleich aus.  
+RES_ODL_1969_A_18
+WHH GT 18 Ost\n\nEin standardisiertes Wohnhochhaus in Großtafelbauweise des Wohnungsbaukombinat Berlin. Das heizen mit Braunkohle fordert seinen Preis. Welche Farbe das Haus auch anfangs hatte, Ruß und Asche nach einiger Zeit sehen alle Häuser gleich aus.  
+RES_ODL_1969_A_20
+WHH GT 18 Ost\n\nEin standardisiertes Wohnhochhaus in Großtafelbauweise des Wohnungsbaukombinat Berlin. Das heizen mit Braunkohle fordert seinen Preis. Welche Farbe das Haus auch anfangs hatte, Ruß und Asche nach einiger Zeit sehen alle Häuser gleich aus.  
 RES_ODL_1970_B_05
 Plattenbau mit farbiger Fassadengestaltung
 RES_ODL_1971_B_07
@@ -1438,16 +1642,28 @@ RES_ODL_1972_A_13
 Ostdeutsches Innenstadthochhaus
 RES_ODL_1975_A_10
 Schmuckloser Wohnblock. Gebäude wie diese sind oft in den Großstädten anzutreffen.
+RES_ODL_1976_A_03
+Ostdeutsches Wohnhaus in Plattenbauweise\n\nWaschbetonfassade architektonisch hochwertig und modern, sagen die Fachleute. 
 RES_ODL_1976_A_04
-Apartmentblock mit überwiegend ausländischen Mietern
+Ostdeutsches Wohnhaus in Plattenbauweise\n\nDie Waschbetonfassade robust, langlebig und beim Gießen der Platten problemlos mit herzustellen. Es wird in die Schalung einfach eine gleichmäßige Lage ausgewählter Kieselsteine gegeben und dann der Beton vorsichtig darauf ausgebreitet. Nach dem anziehen, wenn der Beton noch frisch ist, wird mit viel Wasser und einer Bürste die Oberfläche gewaschen, bis die Kieselsteine sichtbar werden.  
 RES_ODL_1976_A_05
 Ostdeutscher Plattenbau
 RES_ODL_1976_A_14
 Schmuckloser Wohnblock. Gebäude wie diese sind oft in den Großstädten anzutreffen.
-RES_ODL_1977_A_08
-Ostdeutscher Plattenbau
-RES_ODL_1977_A_09
-Rautenförmiger Plattenbau
+RES_ODL_1989_A_09
+Wohnplattenbau der Bauart WHH_GT18_klein\n\nNach der Wende wurde dieses Haus von der Treuhand an eine Börsennotierten Wohnungsgesellschaft verkauft und von dieser und saniert. Das Sichtbeton Grau, die vom Architekten vorgeschlagene Farbe, wurde in der Versammlung der Bewohner einstimmig abgelehnt und sie entschieden sich für grün als Fassadenfarbe. 
+RES_ODL_1989_A_10
+Wohnplattenbau der Bauart WHH GT18 klein\n\nNach der Wende wurde dieses Haus von der Treuhand an eine Börsennotierten Wohnungsgesellschaft verkauft und von dieser und saniert. Die Bewohner dieses Hauses fanden Grün ansprechend und beruhigend. 
+RES_ODL_1989_A_12
+WHH GT 18 klein\n\n Ein standardisiertes Wohnhochhaus in Großtafelbauweise des Wohnungsbaukombinat Berlin. Auch diese Bewohner haben sich nach der Wende für eine Sanierung mit Fassadenfarbe Weiß und Grün entschieden. 
+RES_ODL_1989_A_14
+Wohnplattenbau der Bauart WHH GT18\n\nNach der Wende wurde dieses Haus von der Treuhand an eine Börsennotierten Wohnungsgesellschaft verkauft und von dieser und saniert. Die rote Farbe gefällt den Bewohnern besser, als das Sichtbetongrau voher.
+RES_ODL_1989_A_16
+WHH GT 18 \n Ein standardisiertes Wohnhochhaus in Großtafelbauweise des Wohnungsbaukombinat Berlin 
+RES_ODL_1989_A_18
+Wohnplattenbau der Bauart WHH GT18 groß\n\nNach der Wende wurde dieses Haus von der Treuhand an eine Börsennotierten Wohnungsgesellschaft verkauft und von dieser und saniert. Die Bewohner dieses Hauses haben sich mehrheitlich für die Farbe Blau entschieden.
+RES_ODL_1989_A_20
+WHH GT 18 groß\n\nEin standardisiertes Wohnhochhaus in Großtafelbauweise des Wohnungsbaukombinat Berlin. Nach der Wende wurde es wärmegedämmt und farbenfroh Weiß Blau gestrichen. 
 RES_ODL_1990_B_05
 Wohnblock vom Typ "Plattenbau".
 RES_ODL_1990_B_07
@@ -1464,6 +1680,8 @@ AirStop_AirportBlg
 Parkbucht
 ALP_PlattformPers
 alpiner Bahnsteig überdacht
+animierter_Bushalt
+Bushalt animierte Haltetafel
 BahnhofHochbahn
 Hochbahn-Bahnhof
 BahnhofHochbahn2
@@ -1573,67 +1791,73 @@ Ueberdachter_Bushalt_1993
 #________________________________building - tow_________________________________
 #________________________________building - tow_________________________________
 ODL_Rath_Stralsund_00
-Rathaus Stralsund Ostdt.
+Rathaus\n\nin Stralsund Ostdt.
 ODL_Rath_Stralsund_08
-Rathaus (Stralsund) Level 17
+Rathaus\n\nin Stralsund Level 17
 ODL_Rath_Stralsund_11
-Rathaus (Stralsund) Level 22
+Rathaus\n\nin Stralsund Level 22
 ODL_Rath_Stralsund_16
-Rathaus (Stralsund) Level 32
+Rathaus\n\nin Stralsund Level 32
 ODL_Rath_Stralsund_23
-Rathaus (Stralsund) Level 38
+Rathaus\n\nin Stralsund Level 38
 ODL_Rathaus_Grimmen
-Rathaus Grimmen (Ostdt.) 
+Rathaus\n\nin Grimmen (Ostdt.) 
 Rathaus_Alp_alt
-altes Alpenrathaus
+Rathaus\n\naltes Alpenrathaus
 Rathaus_Alp_gross
-Großes Alpenrathaus
+Rathaus\n\nGroßes Alpenrathaus
 Rathaus_Alp_klein
-Kleines Alpenrathaus
+Rathaus\n\nKleines Alpenrathaus
 Rathaus_Alp_mittel
-Alpenrathaus
+Rathaus\n\nAlpenrathaus
 Rathaus_AVL_alt_gross
-süddt. altes Rathaus
+Rathaus\n\nsüddt. altes Rathaus
 Rathaus_AVL_alt_klein
-süddt. kleines Rathaus
+Rathaus\n\nsüddt. kleines Rathaus
+Rathaus_AVL_klein
+Rathaus\n\nAlpenvorland klein
 Rathaus_AVL_modern_gross
-süddt. Großstadtrathaus
+Rathaus\n\nsüddt. Großstadtrathaus
 Rathaus_Grimma_00
-Rathaus Grimma Level 12
+Rathaus\n\nin Grimma Level 12
 Rathaus_Grimma_04
-Rathaus Grimma Level 20
+Rathaus\n\nin Grimma Level 20
 Rathaus_Grimma_10
-Rathaus Grimma Level 30
+Rathaus\n\nin Grimma Level 30
 Rathaus_Grimma_13
-Rathaus Grimma Level 42
+Rathaus\n\nin Grimma Level 42
 Rathaus_Groetzingen
-Rathaus Grötzingen
+Rathaus\n\nin Grötzingen
 Rathaus_Hennigsdorf_01
-Rathaus Hennigsdorf Level 14
+Rathaus\n\nin Hennigsdorf Level 14
 Rathaus_Hennigsdorf_04
-Rathaus Hennigsdorf Level 20
+Rathaus\n\nin Hennigsdorf Level 20
 Rathaus_Hennigsdorf_09
-Rathaus Hennigsdorf Level 26
+Rathaus\n\nin Hennigsdorf Level 26
 Rathaus_Hennigsdorf_17
-Rathaus Hennigsdorf Level 32
+Rathaus\n\nin Hennigsdorf Level 32
 Rathaus_Hennigsdorf_26
-Rathaus Hennigsdorf Level 35
+Rathaus\n\nin Hennigsdorf Level 35
 Rathaus_Lauingen1
-Rathaus Lauingen
+Rathaus\n\nin Lauingen
 Rathaus_Michelstadt
-Rathaus Michelstadt
+Rathaus\n\nin Michelstadt
 Rathaus_Recklinghausen
-Rathaus Recklinghausen Level 58
+Rathaus\n\nin Recklinghausen Level 58
 Rathaus_Wieslet
-Rathaus Wieslet
+Rathaus\n\nin Wieslet
 #____________________________________citycar____________________________________
 #____________________________________citycar____________________________________
+BICYCLE_RIDER_0
+Fahrradfahrer blau\nEin sogenanntes Sicherheitsfahrrad das ab 1885 gebaut wurde. Es ist sicherer als die zuvor verbreiteten Hochräder. Diese Bauform ist auch heute noch üblich.
+BICYCLE_RIDER_1
+Fahrradfahrer grün\nEin sogenanntes Sicherheitsfahrrad das ab 1885 gebaut wurde. Es ist sicherer als die zuvor verbreiteten Hochräder. Diese Bauform ist auch heute noch üblich.
 citycar_Audi_A4grau
 Audi A4 grau
 citycar_Audi_A4gruen
 Audi A4 grün
 Epoche1CityCar1
-Pferdekutsche(Fracht)
+Pferdekutsche mit Fracht
 Epoche1CityCar2
 Einspähner
 Epoche1CityCar3
@@ -1642,6 +1866,8 @@ Epoche1CityCar4
 Reisekutsche
 Epoche1CityCar6
 BMW-Dixi
+Epoche1CityCar7
+Lanz Bulldog mit Anhänger
 Epoche1CityCar8
 Ford-pickup 1921
 Epoche3CityCar1
@@ -1670,6 +1896,12 @@ Kaefer_Polizei
 VW-Käfer Polizei
 Kaefer_rot
 VW-Käfer (Rot)
+MOTOBIKER_0
+Motorrad grün
+MOTOBIKER_1
+Motorrad gelb
+MOTOBIKER_2
+Motorrad blau
 #___________________________________crossing____________________________________
 #___________________________________crossing____________________________________
 CrossingRoadRail
@@ -1779,7 +2011,7 @@ Autohaus (Süddt., 1982)
 factory_AVL_Autohaus_NIC_details
 <title>Süddeutsches Autohaus</title><p>In diesem Autohaus ist vom flotten Sportwagen bis zur Familienkutsche alles erhältlich, was des Autonarrens Herz begehrt.</p>
 AVL_Baggersee
-Sand-Baggersee (Süddt., 1900)
+Sand-Baggersee
 factory_AVL_Baggersee_details
 <title>Süddeutscher Baggersee</title><p>Brumm brumm,jede Menge Sand und Steine</p>
 AVL_Baumarkt_NIC
@@ -1898,10 +2130,14 @@ factory_Bauernhof_Ost1870_details
 <title>Ostdeutscher Gutshof</title><p>Hier gibt es süße Sachen, wer Obst nicht mag der darf Zuckerrüben essen und in heutiger Zeit als Gast die Ferien hier verbringen.</p>
 Bauernhof_Tierfutter
 Tierfutterproduzent (Norddt.)
+factory_Bauernhof_Tierfutter_details
+<title>Tierfutter Fabrik</title><p>Die Familie Pell verkauft Kraftfutter für Hühner. Dazu wird Gerste genau abgestimmt auf die Bedürfnisse der Tiere, mit Eiweiß, Ölen und Mineralien gemischt, gemahlen und zu Würstchen gepresst. Die Handhabung von Pellets ist einfach in Verkauf, Transport, Lagerung, Portionierung und Verteilung an die Tiere. Da weitgehend Staubfrei, kann auf Verpackung verzichtet werden und es in Silos gelagert und transportiert werden. Ursprünglich stelle die Familie Pell das Kraftfutter nur für die eigenen Hühner her. Nachbarn und Freunde fanden diese Art der Fütterung praktisch und so verkauft die Familie Pell inzwischen ihre gesamte Getreideproduktion in Form von Pellets an Hühnerzüchter im ganzen Land. Die Geschäfte gehen gut, die Nachfrage ist hoch.</p>
 Baumarkt_NIC
 Baumarkt (1965)
 factory_Baumarkt_NIC_details
 <title>Baumarkt</title><p>Dieser Baumarkt führt ein umfangreiches Sortiment an Sanitär-, Elektro- und Baumaterialien für den Häuslebauer und Heimwerker.</p>
+Baustelle_Eisenbahntunnel
+Baustelle Eisenbahntunnel
 Baustoffhandel1800
 Baumaterial- und Brennstoffhandel
 factory_Baustoffhandel1800_details
@@ -2080,6 +2316,10 @@ Kaufhaus_NIC
 Warenhaus
 factory_Kaufhaus_NIC_details
 <title>Großes norddeutsches Warenhaus</title><p>Ein Warenhaus ist ein Einzel- bzw. Großhandelsgeschäft, das im Gegensatz zum "Kaufhaus" Waren aller Art auf meist mehreren Stockwerken zum Verkauf anbietet.</p>
+KFZ_Fabrik_NIC
+KFZ-Fabrik (alt bitte nicht mehr verwenden)
+factory_KFZ_Fabrik_NIC_details
+<title>ausgemusterte Fabrik</title><p>Diese KFZ-Fabrik ist im PAK128.german noch enthalten, damit alte gespeicherte Spielstände ohne Probleme geladen werden können. <br>Diese Fabrik bitte <strong>nicht mehr neu bauen.</strong> </p>
 Kfz_Fabrik1961
 Kfz-Fabrik (1961)
 Kiesgrube
@@ -2155,7 +2395,7 @@ factory_MGB_Erzbergwerk_NIC_details
 MGB_Kokerei_NIC
 Kokerei (Mittelgeb.)
 factory_MGB_Kokerei_NIC_details
-<title>Kokerei</title><p>Öl aus der Kokerei? Ja und nein. Hier im Spiel setzen wir Erdöl und Steinkohlenteer, der beim Kokereiprozess anfällt, gleich, da beide in der chemischen Industrie als Rohstoff dienen, wenn auch nicht zu gleichen Zeit. Das soll helfen, die Komplexität der Lieferketten reduzieren. Im einzelnen. In einer Kokerei wird aus Kohle durch Erhitzen unter Luftabschluss Gas und Koks erzeugt. 1870 gab es bereits über 340 Gaswerke in Deutschland. Man war primär am Gas interessiert. Dieses wurde zum Beleuchten von Straßen und öffentlichen Gebäuden verwendet. Der Koks war Nebenprodukt und wird im Hochofen zur Erzeugung von Roheisen benötigt. Überschüssiger Koks wurde zum Heizen von öffentlichen Gebäuden verwendet. Neben Gas und Koks fällt noch Steinkohlenteer an. Diese zähflüssige, klebrige Masse war anfangs nur schwer zu entsorgen.  Steinkohlenteer besteht aus mehreren Tausend verschiedenen Kohlenwasserstoffen und anderen Verbindungen. Nach der Entdeckung der Teerfarben entwickelten sich große Chemiefabriken und der vormalig klebrige Abfall würde zum begehrten Rohstoff. Heute große Chemiegiganten wie Bayer, Höchst und BASF haben mit der Verwertung von Steinkohlenteer angefangen. Als ab 1960 die Gasversorgung der Städte auf Erdgas umgestellt wurde, fielen auch nur noch geringe Mengen Steinkohlenteer an. Die Chemische Industrie musste deshalb auf Erdöl ausweichen. Heute produzieren die wenigen verbliebenen Kokereien nur noch Koks für Stahlwerke. Das Gas wird entweder auch an die Stahlwerke geliefert, oder selbst zum Beheizen der Koksöfen verbraucht.</p>
+<title>Kokerei</title><p>Öl aus der Kokerei? Ja und nein. Hier im Spiel setzen wir Erdöl und Steinkohlenteer, der beim Kokereiprozess anfällt, gleich, da beide in der chemischen Industrie als Rohstoff dienen, wenn auch nicht zu gleichen Zeit. Das soll helfen, die Komplexität der Lieferketten reduzieren. Im einzelnen. In einer Kokerei wird aus Kohle durch Erhitzen unter Luftabschluss Gas und Koks erzeugt. 1870 gab es bereits über 340 Gaswerke in Deutschland. Man war primär am Gas interessiert. Dieses wurde zum Beleuchten von Straßen und öffentlichen Gebäuden verwendet. Der Koks war Nebenprodukt und wird im Hochofen zur Erzeugung von Roheisen benötigt. Überschüssiger Koks wurde zum Heizen von öffentlichen Gebäuden verwendet. Neben Gas und Koks fällt noch Steinkohlenteer an. Diese zähflüssige, klebrige Masse war anfangs nur schwer zu entsorgen.  Steinkohlenteer besteht aus mehreren Tausend verschiedenen Kohlenwasserstoffen und anderen Verbindungen. Nach der Entdeckung der Teerfarben entwickelten sich große Chemiefabriken und der vormalig klebrige Abfall würde zum begehrten Rohstoff. Heute große Chemiegiganten wie Bayer, Höchst und BASF haben mit der Verwertung von Steinkohlenteer angefangen. Als ab 1960 die Gasversorgung der Städte auf Erdgas umgestellt wurde, fielen auch nur noch geringe Mengen Steinkohlenteer an. Die Chemische Industrie musste deshalb auf Erdöl ausweichen. Heute produzieren die wenigen verbliebenen Kokereien nur noch Koks für Stahlwerke. Das Gas wird entweder auch an die Stahlwerke geliefert, oder selbst zum Beheizen der Koksöfen verbraucht. In die Gasnetze wird heute nur noch ungiftiges Erdgas eingespeist.</p>
 MGB_Schrottplatz_NIC
 Schrottplatz (Mittelgeb., 1960)
 factory_MGB_Schrottplatz_NIC_details
@@ -2173,7 +2413,7 @@ Molkerei (1930)
 factory_Milchfabrik_NIC_details
 <title>Molkerei</title><p>Hier wird Milch pasteurisiert, abgefüllt und dann verkauft.</p>
 Minimarkt_NIC
-Minimarkt (1957)
+Minimarkt
 factory_Minimarkt_NIC_details
 <title>kleiner Minimarkt</title><p>Ein kleiner Supermarkt. Der Besitzer wollte ursprüngliche eine Tankstelle mit angegliedertem Minimarkt eröffnen. Die neu gegründete Umweltschutzbehörde hat ihm das mit Verweis auf ein Wasserschutzgebiet nicht genehmigt. So hat er nur den kleinen Minimarkt errichten können. Die belebte Ausfallstraße bringt auch so genug Laufkundschaft. Der Besitzer ist zufrieden. Mit Tankstelle gingen die Geschäfte besser, aber auch ohne hat er noch keinen Tag die Eröffnung seines Ladens bereut.</p>
 moderne_Glashuette
@@ -2193,17 +2433,17 @@ Importeur (Nord-/Ostdt., 1980)
 factory_moderner_Importeur_details
 <title>Importeur</title><p>Dieses Handelshaus importiert Mandeln, Südfrüchte und Waver vom Ausland.</p>
 Moebelfabrik Pirna
-Möbelfabrik (Ostdt.)
+Möbelfabrik
 factory_Moebelfabrik Pirna_details
 <title>Möbelfabrik</title><p>Die ehemalige Holzindustrie Friedrich Hengst ist ein historisches Gebäude in Pirna. Die Firma wurde 1900 gegründet und war bis ins Jahr 2007 in Betrieb.</p>
 Moebelfabrik_NIC
-Möbelfabrik (Süddt.)
+Möbelmanufaktur
 factory_Moebelfabrik_NIC_details
 <title>Möbelfabrik</title><p>Tische, Stühle, Schränke, Betten, Kommoden, Wäschetruhen Regale, Sofas und noch vieles mehr, was das Wohnen angenehmer macht, produziert die BZT Möbelfabrik.</p>
 Moebeltischlerei
-Möbeltischlerei (1990)
+Möbelschreinerei
 factory_Moebeltischlerei_details
-<title>Möbeltischlerei</title><p>Tische, Stühle, Schränke, Betten, Kommoden, Wäschetruhen, Regale, Sofas und noch vieles mehr, was das Wohnen angenehmer macht, produziert die BZT Möbelfabrik.</p>
+<title>Möbelschreinerei</title><p>Tische, Stühle, Schränke, Betten, Kommoden, Wäschetruhen, Regale, Sofas und noch vieles mehr, was das Wohnen angenehmer macht, produziert die BZT Möbelfabrik.</p>
 Moebeltischlerei_1800
 Möbeltischlerei
 Muehle_1924
@@ -2217,7 +2457,7 @@ Abfall-Sammelstelle
 factory_MuellContainer_details
 <title>Abfall Sammelstelle</title><p>Hier bringen die Haushalte der Umgebung Sperrmüll und Abfälle hin, die nicht mit dem Hausmüll entsorgt werden dürfen.</p>
 NDT_alte_Marzipanfabrik
-Marzipanfabrik (Norddt.)
+Marzipanfabrik
 factory_NDT_alte_Marzipanfabrik_details
 <title>Marzipanfabrik</title><p>Marzipan ist eine Süßware, die aus gemahlenen Mandeln und Zucker hergestellt wird. Die ersten deutschen Marzipanfabriken gründeten sich an den Hafenstädten, weil Mandeln seinerzeit nur in geringen Mengen aus so genannten Kolonien durch Schiffsimporte nach Europa gelangen konnten.</p>
 NDT_alterBauernhof_NIC
@@ -2229,7 +2469,7 @@ Importeur (Norddt./Ostdt.)
 factory_NDT_Importeur_details
 <title>Importeur</title><p>Dieses Handelshaus importiert Mandeln und Südfrüchte.</p>
 NDTZuckerfabrik_NIC
-Zuckerfabrik (Norddt.)
+Zuckerfabrik
 factory_NDTZuckerfabrik_NIC_details
 <title>Sigrana Zucker Comp.</title><p>Bei der Zuckerproduktion wird aus bestimmten Pflanzen mit hohem Zuckergehalt (Zuckerrüben, -rohr) der Zucker extrahiert und in verschiedenen Formen gebrauchsfähig hergestellt.</p>
 Neues_Kohlekraftwerk
@@ -2260,6 +2500,8 @@ Oelfeld
 Ölfeld
 factory_Oelfeld_details
 <title>Ölfeld</title><p>Die technische und medizinische Verwendbarkeit von Erdöl war zwar seit vielen Jahrhunderten bekannt, aber erst im 19. Jahrhundert ermöglichte die technische Entwicklung die industrielle Ausbeutung von "Ölfeldern", wie die unterirdischen Erdöllagern genannt werden.</p>
+factory_Oktoberfest_details
+<title>Das Oktoberfest in München</title><p>Von den Einheimischen "Die Wiesn" genannt, findet im Septembers statt, dauert zwei Wochen und endet am ersten Sonntag im Oktober. Das erste Fest fand im Jahr 1910 anlässlich der Hochzeit des späteren Bayrischen König Ludwig I statt. Seit dieser Zeit wächst das Fest von Jahr zu Jahr.<br>1818 das erste Karusell<br>1869 der Schichtl, es werden Zaubereien und Kuriositäten präsentiert und Besucher mittels Guillotine enthauptet,<br>1880 ein Riesenrad mit 12 Meter aus Holz<br>1894 die Hexenschaukel<br>1898 der Wirt Georg Lang erschleicht sich fünf Budenplätze und errichtete darauf seine "Bierburg", das war der beginn der großen Bierzelte,<br>1906 Toboggan, eine Rutsche, seit 1933 mit einem Förderband für die Fahrgäste,<br>1910 Teufelsrad, wem es gelingt oben zu bleiben gewinnt,<br>1920 Krinoline ein Rundkarussell,<br>1932 Pitts Todeswand, Motoradfahrer an einer hölzernen zylindrischen Steilwand,<br>1979 Riesenrad aus Stahl mit 48 Meter<br> Diese liebevoll gepflegten Attraktionen sind auch heute noch vertreten.</p><p><em> Ein so großes Fest mit Bier und allem anderen zu versorgen, erfordert eine ausgefeilte Logistik. Auch die Besucher möchten zum Fest gefahren werden und anschließend auch wieder zurück. Wird das Fest optimal versorgt, wird es zum größten Volksfest der Welt wachsen. </em></p><p>Für das Oktoberfest brauen die Münchner Brauereien ein spezielles Bier das bis zu 6,4 Volumenprozent Alkohol enthält. So mancher Besucher unterschätzt sowohl den Inhalt der Biergläser, als auch den Alkoholgehalt des Biers. Häufig versuchen diese dann, mit letzter Kraft, das Fest auf dem kürzesten Weg zu verlassen. Dieser führt hinter den Festzelten den Hang eines kleinen Hügels hinauf. Manche scheitern an der kleinen Steigung und bleiben liegen. Die einen schlafen augenblicklich ein, andere erbrechen sich. Die Einheimischen nennen ihn deshalb den Kotzhügel. Leider zieht diese besondere Attraktion zunehmend Schaulustige an, so dass die Polizei in letzter Zeit dort zunehmend nach dem Rechten sehen muss.  </p>
 Papierfabrik_NIC
 Papierfabrik (1950)
 factory_Papierfabrik_NIC_details
@@ -2285,7 +2527,7 @@ Sägewerk (1950)
 factory_Saegewerk_NIC_details
 <title>Ostdeutsches Sägewerk</title><p>Bretter, Latten, Rund- und Edelhölzer für den Profi, Heimwerker und die Industrie</p>
 Sandgrube
-Sandgrube (Süddt., 1919)
+Sandtagebau
 factory_Sandgrube_details
 <title>Sandgrube</title><p>Sand für die Zementherstellung</p>
 Sandgrube_1800
@@ -2370,20 +2612,18 @@ Verbrennungskraftwerk
 Abfallkraftwerk
 factory_Verbrennungskraftwerk_details
 <title>Heizkraftwerk</title><p>Ein Heizkraftwerk erzeugt Wärme für die Warmwasserversorgung, Raumbeheizung und industrielle Prozesse. Nebenbei wird auch noch Strom zur Abdeckung von Spitzenverbrauchszeiten produziert.</p>
-Verpackungshersteller
-Verpackungshersteller (1960)
 factory_Verpackungshersteller_details
 <title>MakiePAK Verpackungsdesign GmbH</title><p>Verpackungsmaterial wird in vielen Fabriken nebenher produziert. Um sich vom Markt abzuheben, hat sich die MakiePAK Verpackungsdesign GmbH auf die Herstellung von speziellen, für hochwertige Marken designten Verpackungen spezialisiert. Schon die Verpackung soll die Hochwertigkeit der Ware vermitteln und dem Käufer damit ein besonderes Kauferlebnis bieten. Die MakiePAK GmbH unterstützt dazu den Kunden schon beim Entwurf der Verpackung und sorgt für die konkurrenzfreie Produktion der Verpackung. Die individuelle Präsentation der Ware hat natürlich ihren Preis. Produziert werden Dosen in nicht normierten Formen und Größen sowie mit Folie beschichtete Pappschachteln in allen Formen und Größen. Eine farbenfrohe Bedruckung von allen Seiten sorgt dafür, dass dem Kunden die Ware von Weitem auffällt.</p>
 Verpackungsmittelfabrik_1909
-Verpackungshersteller
+Verpackungsmittelfabrik
 factory_Verpackungsmittelfabrik_1909_details
 <title>VerPAK GmbH</title><p>Die Firma VerPaK hat sich auf die Produktion und den Vertrieb von Dosen aus Stahl sowie Kisten und Fässern aus Holz spezialisiert. Daneben stellt sie Kartonage und reißfeste Tüten her. Da die Papierfabriken keinen Zellstoff von geeigneter Qualität liefern können, sieht man sich gezwungen, diesen im Nebengebäude aus den Holzresten der Fassproduktion selbst herzustellen. Die Anwohner klagen über den Dreck, der von dieser Fabrik ausgeht. Überall fliegen Faserbüschel aus der Zellstofffertigung herum. </p>
 Versandhandel_1886
-Versandhandel 1886
+Versandhandel
 factory_Versandhandel_1886_details
-<title>Versandhandel Mey & Edlich</title><p>in Leibzig ist der älteste und noch aktive Versandhandel. Beim Versandhandel gehen die Kunden zum Kaufen nicht auf den Markt, sondern wählen in Zeitungsanzeigen oder in Katalogen ihre gewünschte Produkte. Diese bestellen sie per Brief und bekommen die Ware dann per Paketpost geliefert. Deshalb ist ein Versandhandel auf ein gut funktionierendes Postwesen angewiesen. Die Briefe mit den Bestellungen müssen zuverlässig an der Fabrik angeliefert werden. Genauso zuverlässig müssen die Pakete ausgeliefert werden. Auch hier im Spiel funktioniert der Versandhandel nur bei einer guten Postanbindung. Kleidung, Schreibwaren und kleine Maschinen sind für den Versandhandel bestens geeignet, da sie in Pakten gut versendet werden können. Sie sind nicht verderblich, leicht und hochwertig.</p>
+<title>Versandhandel Mey & Edlich seit 1886</title><p>in Leibzig ist der älteste und noch aktive Versandhandel. Beim Versandhandel gehen die Kunden zum Kaufen nicht auf den Markt, sondern wählen in Zeitungsanzeigen oder in Katalogen ihre gewünschte Produkte. Diese bestellen sie per Brief und bekommen die Ware dann per Paketpost geliefert. Deshalb ist ein Versandhandel auf ein gut funktionierendes Postwesen angewiesen. Die Briefe mit den Bestellungen müssen zuverlässig an der Fabrik angeliefert werden. Genauso zuverlässig müssen die Pakete ausgeliefert werden. Auch hier im Spiel funktioniert der Versandhandel nur bei einer guten Postanbindung. Kleidung, Schreibwaren und kleine Maschinen sind für den Versandhandel bestens geeignet, da sie in Pakten gut versendet werden können. Sie sind nicht verderblich, leicht und hochwertig.</p>
 Verwaltung_Muenchen_1965
-Verwaltung (1965)
+Stadtverwaltung
 factory_Verwaltung_Muenchen_1965_details
 <title>Münchner Städtisches Hochhaus an der Blumenstraße</title><p>Das Haus ist zwar schon von 1929, aber wir brauchen einen Endverbraucher für Computer ab 1965, da wir ab 1965 eine Computerfabrik im Spiel haben. 1965 kosten Computer so viel wie ein Haus. Daher kann sich kein Simbürger privat einen Computer leisten, aber für den Staat, große Firmen und Stadtverwaltungen kann sich ein solch teurer Computer lohnen. Deshalb stellen immer mehr Stadtverwaltungen auf EDV um. Ab 1980 werden dann erste kleine Computer in Warenhäuser angeboten. </p>
 Viehhof_NIC
@@ -2417,7 +2657,7 @@ factory_Werft_details
 Werft_1870
 Werft 1870
 factory_Werft_1870_details
-<title>Werft Jacobi, Haniel & Huyssen</title><p>Die Caledonia, der zweite Dampfer auf dem Rhein nach der Defiance, erlitt 1817 in Wesel einen Maschinenschaden. Der Balancier war gebrochen. Der Eigner James Watt jr. ließ sich von Gottlob Jacobi Leiter der St. Antony Hütte einen neuen gießen. Franz Haniel Miteigentümer der St. Antony Hütte konnte so die Dampfmaschine der Caledonia studieren. Die beiden beschlossen die Errichtung einer eigenen Werft für Dampfschiffe in Ruhrort. Nach ersten Wartungsarbeiten an der Concordia ab 1827, konnte 1830 mit der "Stadt Mainz" das erste im Ruhrgebiet gebaute Dampfschiff fertig gestellt werden. 1838 lief mit der "Graf von Paris" das erste Eisenrumpfschiff vom Stapel. Die 1835 mit einer Verbunddampfmaschine ausgerüstete "Kronprinz" benötigete als einziges Dampfschiff beim Binger Loch bei der Bergfahrt keinen Pferdevorspann.</p>
+<title>Werft Jacobi, Haniel & Huyssen</title><p>Die Caledonia, der zweite Dampfer auf dem Rhein nach der Defiance, erlitt 1817 in Wesel einen Maschinenschaden. Der Balancier war gebrochen. Der Eigner James Watt jr. ließ sich von Gottlob Jacobi Leiter der St. Antony Hütte einen neuen gießen. Franz Haniel Miteigentümer der St. Antony Hütte konnte so die Dampfmaschine der Caledonia studieren. Die beiden beschlossen die Errichtung einer eigenen Werft für Dampfschiffe in Ruhrort. Nach ersten Wartungsarbeiten an der Concordia ab 1827, konnte 1830 mit der "Stadt Mainz" das erste im Ruhrgebiet gebaute Dampfschiff fertig gestellt werden. 1838 lief mit der "Graf von Paris" das erste Eisenrumpfschiff vom Stapel. Die 1835 mit einer Verbunddampfmaschine ausgerüstete "Kronprinz" benötigte als einziges Dampfschiff beim Binger Loch bei der Bergfahrt keinen Pferdevorspann.</p>
 Windmuehle_1800
 Mühle (tradit. Windkraft)
 Zementwerk1800_NIC
@@ -2428,14 +2668,10 @@ Zementwerk1914
 Zementwerk (1914)
 factory_Zementwerk1914_details
 <title>Zementwerk Burglengenfeld.</title><p>Aus Kalk und Ton wird hier Zement gebrannt. In dem langen Gebäude wurde erstmals ein Drehofen zum Brennen des Zements benutzt. Heute werden die Drehöfen im Freien errichtet und sind mit ihren langen, schräg liegenden Rohren ein charakteristisches Erkennungsmerkmal für eine Zementfabrik. Bei diesem ersten Drehofen hat man sich offensichtlich noch nicht getraut, ihn Wind und Wetter auszusetzen und deshalb dieses schmucke Gebäude errichtet.</p>
-Zementwerk1962_NIC
-Zementwerk (1962)
-factory_Zementwerk1962_NIC_details
-<title>Zementwerk 1962</title><p>Hier wird aus Sand, Steinen und durch Beigabe von Zusatzstoffen, Hightech-Zement hergestellt. Dieser wird für den Bau der Simutranshäuser und für das Betonwerk gebraucht. Die meisten Kunden holen bei dieser kleinen Zementfabrik ihren Zement mit dem Lkw selbst ab.</p>
 Zementwerk1979_NIC
 Zementwerk (1979)
 factory_Zementwerk1979_NIC_details
-<title>Zementwerk 1962</title><p>Hier wird aus Sand, Steinen und durch Beigabe von Zusatzstoffen, Hightech-Zement hergestellt. Dieser wird für den Bau der Simutranshäuser und für das Betonwerk gebraucht. Die meisten Kunden holen bei dieser kleinen Zementfabrik ihren Zement mit dem Lkw selbst ab. Die gute Abgasreinigung und die hohe Verbrennungstemperatur erlauben es Problemmüll zu verbrennen. Das ist, angesichts des niedrigen Zementpreises, eine willkommene Möglichkeit, die Rentabilität des Werks zu steigern. </p>
+<title>Zementwerk 1979</title><p>Hier wird aus Sand, Steinen und durch Beigabe von Zusatzstoffen, Hightech-Zement hergestellt. Dieser wird für den Bau der Simutranshäuser und für das Betonwerk gebraucht. Die meisten Kunden holen bei dieser kleinen Zementfabrik ihren Zement mit dem Lkw selbst ab. Die gute Abgasreinigung und die hohe Verbrennungstemperatur erlauben es Problemmüll zu verbrennen. Das ist, angesichts des niedrigen Zementpreises, eine willkommene Möglichkeit, die Rentabilität des Werks zu steigern. </p>
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Buecher
@@ -2522,6 +2758,12 @@ TRAMTOOLS
 Straßenbahnbauwerkzeuge
 UNDERGROUND
 Untergrundbauwerkzeuge
+#__________________________________pedestrian___________________________________
+#__________________________________pedestrian___________________________________
+DOG_WALKER_0
+Fussgänger mit Hund\n\n\Die sieht man zu jeder Zeit und bei jedem Wetter überall.
+DOG_WALKER_1
+Fußgänger mit Hund\n\n\Mal sind die Hunde groß mal sind sie klein, die Hinterlassenschaften sind immer fein.
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
  Tonnen
@@ -2550,6 +2792,34 @@ CATEGORY_09
 Unused
 CATEGORY_10
 Unused
+Cluster_01
+Altstadt
+Cluster_02
+Einfamilienhaussiedlung
+Cluster_03
+Geschlossene Bauweise
+Cluster_04
+Hafenanlage
+Cluster_05
+Industrie
+Cluster_06
+Hochhäuser
+Cluster_07
+Einkaufszentrum
+Cluster_08
+Firmenzentrale
+Cluster_09
+Moderne
+Cluster_10
+Blockmacherring
+Cluster_11
+Platz der Freundschaft
+Cluster_12
+Plattenbauten Ostdeutschland
+Cluster_20
+Gartenstadt
+Cluster_21
+Schrebergärten
 desert
 Küste
 Make way or stop public (will join with neighbours), %i times maintainance
@@ -3013,7 +3283,7 @@ DRG Triebwagen ET 25 - A-Wagen
 LEW_EL2
 LEW EL2
 Preussische_EG_507
-preussische EG 507
+Preußische EG 507
 #___________________________vehicle - monorail_track____________________________
 #___________________________vehicle - monorail_track____________________________
 yoshi_wup01
@@ -3342,6 +3612,8 @@ Kutschen_Schuettgut
 Schüttgutwagen (für Pferdegespanne)
 Kutschen_Stahl
 Stahlwagen (für Pferdegespanne)
+Lanz_Bulldog_FMD
+Lanz Bulldog FMD
 Lemurias Hochzeitskutsche
 Hochzeitskutsche
 LKW_Buchtrailer
@@ -3350,6 +3622,10 @@ LKW_Buessing
 Buessing Laster (Stückgut)
 LKW_Kieskipper
 Kieskipper
+lw_Anhaenger1900
+Landwirtsch. Anhänger für Pferde
+lw_Anhaenger1921
+Landwirtsch. Anhänger für Bulldog
 Magirus_Jupiter200D_Zugmaschine
 Magirus Jupiter 200D
 Magirus_Saturn150D_Holztransporter
@@ -3609,7 +3885,7 @@ Müllabfuhr
 Personenanhaenger
 Personenanhänger für Zugmaschinen
 Pferdegespann
-Pferdegespann für Passagier- und Postkutschen
+Pferde für Kutschen
 Phaenomen_4RL-K_Holz
 Phänomen 4RL Holztransporter
 Phaenomen_4RL-K_Kuehlwaren
@@ -3635,7 +3911,7 @@ Solaris Urbino 12
 Solaris_Urbino15
 Solaris Urbino 15
 Solaris_Urbino18_Front
-Solaris Urbino Frontwagen
+Solaris Urbino 18 Frontwagen
 Solaris_Urbino18_Heck
 Solaris Urbino 18 Heck
 StueckgutLaster
@@ -3672,6 +3948,10 @@ Vomag8LR_Stueckgut
 Vomag 8LR Stückgutlaster
 Vomag8LR_Vieh
 Vomag 8LR Viehtransporter
+W50_fluessigeLebensmittel
+Zugmaschine W50 
+W50A_fluessigeLebensmittel
+Tankauflieger für Lebensmittel W50
 Zugpferde_1
 Zugpferd
 Zugpferde_2
@@ -3702,6 +3982,8 @@ Autotransporter_Hcceerrs330C
 geschlossener Autotransporter Hcceerrs 330C
 Autotransporter_Hcceerrs330D
 geschlossener Autotransporter Hcceerrs 330D
+B100_KWStE_IIKlasse
+B100 KWStE II Klasse
 Badische_IVh
 badische IV h
 Bahndienstwagen_262
@@ -3847,7 +4129,7 @@ BZT_3Achser
 BZT_A4ue-35
 DRG Schnellzugwagen 1. Klasse
 BZT_ABi
-Lokalbahnwagen 1./2. Klasse
+Donnerbüchse Ci-28
 BZT_B4ue-35
 DRG Schnellzugwagen 2. Klasse
 BZT_D4ue-36
@@ -4004,6 +4286,8 @@ Flachwagen_Holz
 Flachwagen für Holztransporte
 Flachwagen_Stahl
 Flachwagen für Stahl
+Fleischwagon_MFFE_I_Gmml
+Fleischwagon MFFE I Gmml
 FLIRT_Kopf
 FLIRT - Kopf
 FLIRT_Schluss
@@ -4114,6 +4398,8 @@ Kuehlwagen
 Kühlwagen 4-achsig
 Kuehlwagen-alt
 Kühlwagen
+Kuehlwagen1850
+Kühlwagen 1850
 Kuehlwagen1880
 Kühlwagen
 Kuehlwagen1910
@@ -4140,6 +4426,8 @@ LAG_Nr891-ET194_Vieh
 Lokalb. AG Nr. 891 / ET 194 für Viehtransporte
 Langholzwagen_RhEB1840
 Langholzwagen RhEB
+LEG-Wagon_Nr8
+LEG Wagen Nr. 8
 Leichttriebwagen_SVG
 SVG-Triebwagen
 lgns583_fluessige Lebensmittel
@@ -4168,6 +4456,8 @@ Oelwagen
 Ölwagen 4-achsig
 Oelwagen_alt
 Ölwagen 2-achsig
+Offener Drehgestellwagen Eanos-x059
+Offener Schüttgutwagen Eanos-x059
 offener Gueterwagen 1835 fl.Lebensmittel
 offener Güterwagen für flüssige Lebensmittel
 offener Gueterwagen 1835 Stahl
@@ -4312,6 +4602,10 @@ Tieflader
 Flatbed-Trailer
 Torpedopfannenwagen_8008
 Torpedopfannenwagen 8008
+Triebwagen_ET_184_4
+Triebwagen ET 184-4
+Triebwagen_ET_186_11
+Triebwagen ET 186-11
 Triebwagen_ET89
 Triebwagen ET 89
 TW121a_Baden
@@ -4426,10 +4720,14 @@ NGT6DE_A
 Gelenktriebwagen NGT6DE - Kopf
 NGT6DE_B
 Gelenktriebwagen NGT6DE - Schluss
+O-Triebwagen
+Triebwagen Typ O
 O-Tw-E
 O-Triebwagen - Schluss
 O-Tw-M
 O-Triebwagen - Mitte
+P-Triebwagen
+Triebwagen P
 P-Tw-E
 P-Triebwagen - Schluss
 P-Tw-M
@@ -4550,6 +4848,8 @@ DS_Stadt_Mainz_Stueckgut
 Dampfschiff Stadt Mainz für Stückgut
 DS_Stadt_Mainz_Vieh
 Dampfschiff Stadt Mainz für Viehtransporte
+Faehre KoenigswinterIII
+Fähre Königswinter III
 Faehre_KoenigswinterIII_Autos
 Fähre Königswinter III für Autos
 Faehre_KoenigswinterIII_Vieh
@@ -4584,6 +4884,8 @@ Graf_Goetzen
 Passagierschiff Graf Goetzen
 Hafenbarkasse Hafendockter
 Hafenbarkasse-Hafendockter
+HarmonieVonEmden
+Fischkutter Harmonie Von Emden
 Holzschleppkahn_fluessige_Lebensmittel
 Holzschleppkahn für Lebensmittel
 Holzschleppkahn_Holz
@@ -4710,12 +5012,22 @@ Stromkabel
 #__________________________________way - road___________________________________
 asphalt_road_100
 asphaltierte Straße
+Asphalt-Autobahn
+Asphalt - Autobahn
 Betonierte Autobahn
 Betonautobahn
 city_road
 Stadtstraße
 city_road50
 Stadtstraße (mit Diagonalen)
+cobblestone_road_20
+Kopfsteinpflasterstraße 20 km/h
+cobblestone_road_40
+Kopfsteinpflasterstraße 40 km/h
+cobblestone_road_70
+Kopfsteinpflasterstraße 70 km/h
+dirt_cityroad
+unbefestigte Stadtstraße
 dirt_road
 unbefestigte Straße
 Hochstrasse100
@@ -4724,12 +5036,12 @@ Hochstrasse130
 Hochstraße 130 km/h
 Hochstrasse50
 Hochstraße 50 km/h
-Kopfsteinpflasterstrasse
-Kopfsteinpflasterstraße
-Kopfsteinpflasterstrasse_70
-Kopfsteinpflasterstraße 70 km/h
 #__________________________________way - track__________________________________
 #__________________________________way - track__________________________________
+Abstellgleis_Gueterzug_90kmh
+Abstellgleis Güterzug 90km/h
+Abstellgleis_Personenzug_60kmh
+Abstellgleis Personenzug 60km/h
 altes_Gleis
 altes Gleis
 altes_Gleis40

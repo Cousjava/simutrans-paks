@@ -12,7 +12,6 @@ intro_month=
 retire_year=1933
 retire_month=
 needs_ground=
-noinfo=1
 noconstruction=1
 build_time=
 passengers=level/2 oder 10 #level/value oder value
@@ -26,4 +25,3 @@ BackImage[0][0][0][0][0][0]=
 BackImage[0][0][0][0][0][0]=
 BackImage[0][0][0][0][0][0]=
 BackImage[0][0][0][0][0][0]=
-#_EO_

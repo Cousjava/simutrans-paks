@@ -9,6 +9,8 @@ cd ..\Baeckerei
 & "$repo\makeobj.exe" "PAK128" "$repo/simutrans/PAK128.german/" "./" >>$repo\LOG\factory.log 2>>$repo\LOG\error_factory.log
 cd ..\Baumarkt
 & "$repo\makeobj.exe" "PAK128" "$repo/simutrans/PAK128.german/" "./" >>$repo\LOG\factory.log 2>>$repo\LOG\error_factory.log
+cd ..\Baustellen
+& "$repo\makeobj.exe" "PAK128" "$repo/simutrans/PAK128.german/" "./" >>$repo\LOG\factory.log 2>>$repo\LOG\error_factory.log
 cd ..\Beton
 & "$repo\makeobj.exe" "PAK128" "$repo/simutrans/PAK128.german/" "./" >>$repo\LOG\factory.log 2>>$repo\LOG\error_factory.log
 cd ..\Brauerei
@@ -26,6 +28,9 @@ cd ..\Discounter
 cd ..\Elektrohandel
 & "$repo\makeobj.exe" "PAK128" "$repo/simutrans/PAK128.german/" "./" >>$repo\LOG\factory.log 2>>$repo\LOG\error_factory.log
 cd ..\Getraenkehandel
+cd 160
+& "$repo\makeobj.exe" "PAK160" "$repo/simutrans/PAK128.german/" "./" >>$repo\LOG\factory.log 2>>$repo\LOG\error_factory.log
+cd ..
 & "$repo\makeobj.exe" "PAK128" "$repo/simutrans/PAK128.german/" "./" >>$repo\LOG\factory.log 2>>$repo\LOG\error_factory.log
 cd ..\Glas
 & "$repo\makeobj.exe" "PAK128" "$repo/simutrans/PAK128.german/" "./" >>$repo\LOG\factory.log 2>>$repo\LOG\error_factory.log

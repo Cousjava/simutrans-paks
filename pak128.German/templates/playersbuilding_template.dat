@@ -11,7 +11,6 @@ intro_month=
 retire_year=1933
 retire_month=
 needs_ground=
-noinfo=1
 noconstruction=1
 waytype=road track tram_track monorail_track maglev_track narrowgauge_track air water
 enables_pax=1
@@ -30,4 +29,3 @@ BackImage[0][0][0][0][0][0]=
 BackImage[0][0][0][0][0][0]=
 BackImage[0][0][0][0][0][0]=
 BackImage[0][0][0][0][0][0]=
-#_EO_

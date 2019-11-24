@@ -239,6 +239,13 @@ function double_warning ($obj,$tokens,$old)
   $tokens[0]."=".$tokens[1]."</h3></p>\n";
 }
 
+// give warning, if a nessary paramter in the .dat file not given
+function param_need_warning ($obj,$param)
+{ global $LNG_OBJ_IMPORT;
+  echo "<p class='red'><h3>Object: ".$obj."<br>".
+  $LNG_OBJ_IMPORT[31]." = ".$param."</h3></p>\n";
+}
+
 
 //this function outputs one attribute
 //in case, its value it does not exist, it will create a commentp refixed line
@@ -492,8 +499,8 @@ class simu_object
         //if obj type is program_text use nonstripped version of the name
         if ( in_array($this -> obj, $object_text) )
         {  //now trim the line ending - but nothing else
-           $this-> name = $this -> untrimmed_name;
-        } elseif( $this-> name != $this -> untrimmed_name)
+           $this->name = $this -> untrimmed_name;
+        } elseif( $this->name != $this -> untrimmed_name)
         { printf("<p class='red'><h3>Warning Object %s contain blank at start or end.</h3></p>\n",$this->name);
         }
 
@@ -527,9 +534,32 @@ class simu_object
         
         // collect data for the db field type 
         $this->type = "";
-        if (         $this->obj == 'building') $this->type = $this->attributes ['type'];
-        if (in_array($this->obj,$sub_waytypes)) $this->type = $this->attributes ['waytype'];
-
+        if ($this->obj == 'building') 
+        { if (!isset($this->attributes ['type']) or
+           trim ($this->attributes ['type']) == '') param_need_warning ($obj,'type=');
+          else $this->type = strtolower(trim($this->attributes ['type']));
+          $this->attributes ['type'] = $this->type;
+        }
+        if (in_array($this->obj,$sub_waytypes)) 
+        { if (!isset($this->attributes ['waytype']) or
+           trim ($this->attributes ['waytype']) == '') param_need_warning ($obj,'waytype=');
+          else $this->type = strtolower(trim($this->attributes ['waytype']));
+          $this->attributes ['waytype'] = $this->type;
+        }
+        
+        // test some standart parameter if they have good content
+        $in_j = 1900; $in_m = 1; $ret_j = 2999; $ret_m = 1;
+        if (isset($this->attributes ['intro_year']))   $in_j  = intval($this->attributes ['intro_year']);
+        if (isset($this->attributes ['intro_month']))  $in_m  = intval($this->attributes ['intro_month']);
+        if (isset($this->attributes ['retire_year']))  $ret_j = intval($this->attributes ['retire_year']);
+        if (isset($this->attributes ['retire_month'])) $ret_m = intval($this->attributes ['retire_month']);
+        if ($in_j < 1500  or $in_j > 2999  or
+            $in_m < 1     or $in_m > 12    or
+            $ret_j < 1500 or $ret_j > 2999 or
+            $ret_m < 1    or $ret_m > 12   or
+            $in_j * 12 + $in_m >= $ret_j * 12 + $ret_m)
+          printf("<p class='red'><h3>Warning Object %s intro or retire date not plausible.</h3></p>\n",$this->name);
+          
         //if we got here, everything is ok
         return true;
     }
@@ -548,7 +578,7 @@ class simu_object
         }
         if ($tokens[0] == "name")
         {   if ($this->name != "") double_warning ($tokens[1],$tokens,$this->name);
-            $this-> name = $tokens[1];
+            $this->name = $tokens[1];
             return;
         }
         if ($tokens[0] == "copyright")
@@ -604,12 +634,11 @@ class simu_object
         {
             //trim the comment #
             $line = trim(substr ($line, 1));
-            if (substr_count($line, "-") == strlen ($line) )
-            {
-                //do not save this line
-                return;
-            } 
- //         echo "k+".$line."+k<br>";
+            if (substr_count($line, "-") == strlen ($line) ) return;//do not save this line
+            if (strtolower(substr($line,0,9)) == "backimage" ) return;//do not save this line
+            if (strtolower(substr($line,0,10)) == "frontimage" ) return;//do not save this line
+
+            //         echo "k+".$line."+k<br>";
 
             //add to the end of comments array
             $this->comments[] = $line;
@@ -943,8 +972,9 @@ class simu_object
             //image path is derived from dat path (as in make obj)
             //this is path retrieved from dat file (often contains someting like /../ etc
             $source_image_path = $dat_p . '/' .  $path;
+            $echo_image_path   = str_replace(TMP_DIRECTORY.$this->version_id,'',$source_image_path);
             
-            if (strpos($source_image_path, " ") > 1) echo "blank in Dateiname:".$source_image_path."<br>";
+            if (strpos($source_image_path, " ") > 1) echo "blank in Dateiname:".$echo_image_path."<br>";
 
             //performance tweak
             //open new image only if necessary
@@ -999,7 +1029,7 @@ class simu_object
                 //returns "" on faliure
                 if ($open_image == "")
                 {
-                    echo "<h3>Error when loading the image: $source_image_path , skipping!</h3>\n";
+                    echo "<h3>Error when loading the image: $echo_image_path , skipping!</h3>\n";
 
                     //skip this image and try next time
                     $open_path  = "";
@@ -1067,7 +1097,7 @@ class simu_object
                $upd = true;
              }
            if (array_key_exists($pr_a->p_name, $copy_at))
-             { if ($pr_a->p_value != $copy_at[$pr_a->p_name] or $upd)
+             { if (strcmp($pr_a->p_value,$copy_at[$pr_a->p_name])!=0 or $upd)
                 {  $pr_a->p_value  = $copy_at[$pr_a->p_name];
                    $pr_u = mysqli_prepare($st_dbi, "UPDATE property SET having_obj_name=?, p_value=? WHERE property_id=?");
                    if ($pr_u === false) die("db_error upd ".mysqli_error($st_dbi));
@@ -1115,7 +1145,7 @@ class simu_object
     ////////////////////////////////////////////////////////////////////////////
     //this function is meant to be called from outside
     //by default this function is deleting and recreating images
-    function save_object_to_db ($dat_path,$file_name, $store_n_delete_images, $verbose)
+    function save_object_to_db ($full_dat_path,$file_name, $store_n_delete_images, $verbose)
     {   GLOBAL $st_dbi,$object_nodisp,$sum_prob,$sum_img,$sum_tran,$sum_alles;
         GLOBAL $pr_unmodified, $pr_updated, $pr_deleted, $pr_inserted;
         GLOBAL $tr_unmodified, $tr_updated, $tr_deleted, $tr_inserted;
@@ -1146,8 +1176,10 @@ class simu_object
 
         //set the path to image to db if any will be loaded or to none if no image exists
         //usefull to detect later if image is missing or dummy shall be displayed
-        $image_path = (count($this->images) == 0)?"none":"db";
-
+        $image_path    = (count($this->images) == 0)?"none":"db";
+        $dat_file_name = $file_name;
+        $dat_path      = str_replace(TMP_DIRECTORY.$this->version_id.'/','',$full_dat_path);
+        $dat_path      = str_replace(substr(basename($_FILES['uploadfile']['name']),0,-4).'/','',$dat_path);
 
         //finally insert the object
      
@@ -1157,13 +1189,16 @@ class simu_object
         $result = db_query($sqlobj);
         $objalt = mysqli_fetch_object($result);
         if ($objalt === null) 
-        { $sql_insert_obj = "INSERT INTO objects (obj_name, version_version_id, obj, type, image_path, comments, obj_copyright, mod_date, note)".
+        { $sql_insert_obj = "INSERT INTO objects (obj_name, version_version_id, obj, type, image_path, comments, 
+                                                  obj_copyright, mod_date, note, dat_file_name, dat_path)".
                            " VALUES ('" . db_real_escape_string($this->name)  . "', $this->version_id, '" . $this->obj . "','" . 
                                           db_real_escape_string($this->type) . "','". 
                                           db_real_escape_string($image_path) . "','". 
                                           db_real_escape_string($comments)."', '" .
                                           db_real_escape_string($this->copyright) . "',  NULL, '" .
-                                          db_real_escape_string($this->note ). "')";
+                                          db_real_escape_string($this->note ). "', '" .
+                                          db_real_escape_string($dat_file_name) . "', '". 
+                                          db_real_escape_string($dat_path)."')";
           db_query($sql_insert_obj);
           $this->object_id = mysqli_insert_id($st_dbi);
           if ($this->object_id < 1) die ("<b>SQL error</b> (cannot insert object row): ".mysqli_error($st_dbi)." SQL: ".$sql_insert_obj);
@@ -1180,23 +1215,30 @@ class simu_object
             $image_path      = $objalt->image_path;
             $comments        = $objalt->comments;
             $this->copyright = $objalt->obj_copyright;
+            $dat_file_name   = $objalt->dat_file_name;
+            $dat_path        = $objalt->dat_path;
           }
           if ($objalt->obj                == $this->obj        and
               $objalt->type               == $this->type       and
               $objalt->image_path         == $image_path       and
               $objalt->comments           == $comments         and
               $objalt->obj_copyright      == $this->copyright  and
-              $objalt->note               == $this->note)  { $ob_unm++; }       
+              $objalt->note               == $this->note       and
+              $objalt->dat_file_name      == $dat_file_name)  { $ob_unm++; }       
           else
-          {  $upd_st = mysqli_prepare($st_dbi,"UPDATE objects SET  obj=?, type=?, image_path=?, comments=?, obj_copyright=?, note=? WHERE object_id=?");
+          {  $upd_st = mysqli_prepare($st_dbi,"UPDATE objects SET  obj=?, type=?, image_path=?, comments=?, obj_copyright=?, 
+                                                                   note=?, dat_file_name=?, dat_path=? WHERE object_id=?");
              if ($upd_st === false) die("obj update db_error".mysqli_error($st_dbi));
-             mysqli_stmt_bind_param   ($upd_st,'ssssssi',$this->obj, 
-                                                         $this->type,
-                                                         $image_path, 
-                                                         $comments,
-                                                         $this->copyright, 
-                                                         $this->note,
-                                                         $this->object_id);
+             mysqli_stmt_bind_param   ($upd_st,'ssssssssi',
+                                       $this->obj, 
+                                       $this->type,
+                                       $image_path, 
+                                       $comments,
+                                       $this->copyright, 
+                                       $this->note,
+                                       $dat_file_name,
+                                       $dat_path,
+                                       $this->object_id);
              if (!mysqli_stmt_execute       ($upd_st)) die ("obj update db exe error".mysqli_stmt_error($upd_st));
              $ar= mysqli_stmt_affected_rows ($upd_st);
                   mysqli_stmt_close         ($upd_st);
@@ -1218,7 +1260,7 @@ class simu_object
  
         //save images
         $timestamp_img_save = microtime(true);
-        if ($file_name != '_objectlist.dat' and $store_n_delete_images) $this -> save_images_to_db ($dat_path);
+        if ($file_name != '_objectlist.dat' and $store_n_delete_images) $this -> save_images_to_db ($full_dat_path);
         $sum_img += microtime(true) - $timestamp_img_save;
 
         //do special actions if object has any

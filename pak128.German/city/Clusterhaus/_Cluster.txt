@@ -1,0 +1,9 @@
+ 
+Cluster Häuser sind zwar auch unter res,com,ind zu finden.
+
+Hier sind die Clusterhäuser die eigenständige Ketten bilden und sich nicht mit anderen Häusern mischen sollen.
+
+Jede .dat enthält eine eigenständige Clusterkette die sich von Level 1 bis zum höchten Level zieht. 
+
+Da bei den vielen gleichartigen/gleichen Häuser der Level nicht erkennbar ist, steht der Level als retire_year= +2000 also retire_year=2012 bedeutet Level=12 
+Wenn man mit der Lupe auf das Gebäude klickt bekommt man neben dem Text das retire_year= angezeigt.

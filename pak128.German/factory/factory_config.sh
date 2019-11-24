@@ -8,6 +8,8 @@ cd ../Baeckerei
 $repo/makeobj PAK128 $repo/simutrans/PAK128.german/ ./ >> "$repo/LOG/factory.log" 2>> "$repo/LOG/error_factory.log"
 cd ../Baumarkt
 $repo/makeobj PAK128 $repo/simutrans/PAK128.german/ ./ >> "$repo/LOG/factory.log" 2>> "$repo/LOG/error_factory.log"
+cd ../Baustellen
+$repo/makeobj PAK128 $repo/simutrans/PAK128.german/ ./ >> "$repo/LOG/factory.log" 2>> "$repo/LOG/error_factory.log"
 cd ../Beton
 $repo/makeobj PAK128 $repo/simutrans/PAK128.german/ ./ >> "$repo/LOG/factory.log" 2>> "$repo/LOG/error_factory.log"
 cd ../Brauerei
@@ -26,6 +28,9 @@ cd ../Elektrohandel
 $repo/makeobj PAK128 $repo/simutrans/PAK128.german/ ./ >> "$repo/LOG/factory.log" 2>> "$repo/LOG/error_factory.log"
 cd ../Getraenkehandel
 $repo/makeobj PAK128 $repo/simutrans/PAK128.german/ ./ >> "$repo/LOG/factory.log" 2>> "$repo/LOG/error_factory.log"
+cd 160
+$repo/makeobj PAK160 $repo/simutrans/PAK128.german/ ./ >> "$repo/LOG/factory.log" 2>> "$repo/LOG/error_factory.log"
+cd ..
 cd ../Glas
 $repo/makeobj PAK128 $repo/simutrans/PAK128.german/ ./ >> "$repo/LOG/factory.log" 2>> "$repo/LOG/error_factory.log"
 cd ../ImportExport

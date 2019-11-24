@@ -1,10 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-#	Letzte Bearbeitung:
-#   $Date: 2017-03-03 15:00:23 +0100 (Fr, 03. Mär 2017) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Oelfeld
 copyright=TonyBzt
@@ -17,6 +15,8 @@ Productivity=300
 OutputGood[0]=Oel
 OutputCapacity[0]=500
 electricity_amount=45
+passenger_boost=500
+mail_boost=200
 climates=desert, tropic,mediterran, temperate
 MapColor=31
 needs_ground=1

@@ -88,7 +88,7 @@ retire_year = 1993
 retire_month = 12
 cost=450
 is_longblocksignal=1
-is_signal=1
+#is_signal=1
 Icon=> Lichtsignale_hv.3.8
 Cursor=Lichtsignale_hv.3.9
 # RED

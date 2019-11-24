@@ -251,6 +251,18 @@ window.onload = tablecloth;
 
 &nbsp;
 
+<!--(if:select_box_cluster)-->
+  <select name="cluster" onchange="document.getElementById('obj_s').submit();">
+  <!--(list:box_entry)-->
+      <!--(item)-->
+     	<option value="<!--(token:opt_value)-->" <!--(token:opt_select)-->><!--(token:opt_name)--></option>
+	<!--(enditem)-->
+  <!--(endlist)-->  
+  </select>
+<!--(endif)-->
+
+&nbsp;
+
 <input type="text" style="font-size: 100%%; " size=6 name="trange" value="<!--(trange)-->"/>
 
 &nbsp;

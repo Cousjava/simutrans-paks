@@ -1,22 +1,21 @@
 #	PAK128.german
 #	Citybuildings commercial
 #       neu: 16-05-2019
-#--------------------------------------
+--------------------------------------
 obj=building
 name=COM_ALL_1963_A_20
 # NarvaTurm_Berlin
 copyright=pumuckl999
 type=com
 level=20
-chance=20
+chance=10
+clusters=6
 intro_year=1963
 intro_month=1
 #retire_year=
 #retire_month=
 needs_ground=0
-noinfo=0
-noconstruction=0
-climates=desert, tropic, mediterran, temperate, tundra, rocky
+climates=desert, tropic, mediterran, temperate, tundra
 dims=2,2,4
 BackImage[0][0][0][0][0][0]=COM_ALL_1960_L20_4F_01.0.0
 BackImage[0][0][0][1][0][0]=COM_ALL_1960_L20_4F_01.0.1
@@ -98,4 +97,3 @@ BackImage[3][1][0][0][0][1]=COM_ALL_1960_L20_4F_01.8.4
 BackImage[3][1][0][1][0][1]=COM_ALL_1960_L20_4F_01.8.5
 BackImage[3][1][0][2][0][1]=COM_ALL_1960_L20_4F_01.8.6
 BackImage[3][1][1][0][0][1]=COM_ALL_1960_L20_4F_01.8.7
-#_EO_

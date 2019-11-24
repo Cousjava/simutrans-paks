@@ -1,10 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-#	Letzte Bearbeitung:
-#    12-09-2015 The Transporter
-# --------------------------------
+--------------------------------
 Obj=factory
 Name=Kamerahersteller
 copyright=pumuckl999
@@ -35,6 +33,8 @@ OutputCapacity[0]=800
 MapColor=119
 climates=mediterran
 electricity_amount=20
+passenger_boost=1000
+mail_boost=500
 dims=3,3,4
 BackImage[0][0][0][0][0][0]=Kamerahersteller.0.0
 BackImage[0][0][1][0][0][0]=Kamerahersteller.0.1

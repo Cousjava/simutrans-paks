@@ -345,6 +345,7 @@ $LNG_STATS_TRANS[9] = 'vazio';
 
 $LNG_STATS_VEH = array();
 $LNG_STATS_VEH[0] = 'Estatísticas de Veículos';
+$LNG_STATS_VEH[10] = 'Cluster';
 $LNG_STATS_VEH[1] = 'Por favor selecione os itens para exibir';
 $LNG_STATS_VEH[2] = 'Trilhos e trilhos com eletricidade são considerados a mesma categoria denominada \'track\'. Veículos com tipos de via escrito errado não vão ser exibidos. Essas propriedades escritas erradas vão aparecer junto com propriedades extras na coluna \'others\'.';
 $LNG_STATS_VEH[3] = "Lista de Todos os Veículos para '%s' do Pacote '%s' (%s itens)";
@@ -370,6 +371,7 @@ $LNG_WRAP[19] = 'Arquivos de ajuda gerados para';
 $LNG_WRAP[1] = 'Criar arquivo';
 $LNG_WRAP[20] = 'Arquivo já existe';
 $LNG_WRAP[21] = 'Files from <b>Scenario</b> sets are to be saved to <b>simutrans/[SET] /scenario/[Scenarioname]</b>. ZIP files are always created because Scenario translations can also contain subdirectories with additional files.';
+$LNG_WRAP[22] = 'For write or changed help files see';
 $LNG_WRAP[2] = 'Falha ao criar!';
 $LNG_WRAP[3] = 'Esta página lhe permite obter os mais atualizados arquivos/ficheiros de tradução já utilizáveis para o Simutrans. Apenas selecione seu idioma, escolha o pacote e tipo de saída <strong>para arquivo</strong>, clique <strong>Exportar!</strong>, aguarde um momento e clique com em <strong>salvar como</strong> no link/ligação resultante. O arquivo criado deverá ser salvo no diretório <nobr><strong>simutrans/[pacote]/text</strong></nobr>.';
 $LNG_WRAP[4] = "A opção <b><em>%s </em></b> lhe permite baixar um arquivo/ficheiro zip com todos os arquivos de tradução para dada versão. Você não precisa selecionar o idioma neste caso.";

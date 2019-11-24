@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="Simutrans, Simutrans Translator, Translator, Help, Simutrans Help">
     <title>Simutrans Translator Home</title>
   </head>
   <body>
@@ -45,8 +46,8 @@
       <p>Der Translator kann auch zum verwalten und übersetzen von
         Homepages verwendet werden.</p>
       <p><a href="https://www.pak128-german.de/">www.pak128-german.de</a><br>
-      <a href="data/html/de/index.html">Hilfe zu Simutrans</a><br>
-      <a href="data/htmlex/en/index.html">Hilfe zu Simutrans Extended (derzeit nur in Englisch)</a><br>
+      <a href="data/html/de/general.html">Hilfe zu Simutrans</a><br>
+      <a href="data/htmlex/en/general.html">Hilfe zu Simutrans Extended (derzeit nur in Englisch)</a><br>
       <a href="index.alt.html">Dokumentation zum Translator</a><br>
       </p>
     </div>

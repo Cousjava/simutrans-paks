@@ -1,9 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 22-2-2017
-#	Letzte Bearbeitung: $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 Name=Biomassekraftwerk
 copyright=pumuckl999
@@ -18,6 +17,8 @@ InputCapacity[0]=320
 InputFactor[0]=150
 InputSupplier[0]=1
 MapColor=119
+passenger_boost=1000
+mail_boost=500
 climates=rocky, tundra
 dims=3,2,4
 BackImage[0][0][0][0][0][0]=biokraftwerk.0.0

@@ -1,7 +1,7 @@
 #	PAK128.german
 #	Citybuildings commercial
 #       neu: 11-05-2019
-#--------------------------------------
+--------------------------------------
 obj=building
 name=COM_ALL_2000_A_30
 # MuenchnerTor
@@ -9,14 +9,13 @@ copyright=pumuckl999
 type=com
 level=30
 chance=20
+clusters=5,6,12
 intro_year=2003
 intro_month=1
 #retire_year=
 #retire_month=
 needs_ground=0
-noinfo=0
-noconstruction=0
-climates=desert, tropic, mediterran, temperate, tundra, rocky
+climates=desert, tropic, mediterran, temperate, tundra
 dims=2,2,4
 BackImage[0][0][0][0][0][0]=COM_ALL_2000_L30_4F_01.0.0
 BackImage[0][0][0][1][0][0]=COM_ALL_2000_L30_4F_01.0.1
@@ -122,4 +121,3 @@ BackImage[3][1][0][1][0][1]=COM_ALL_2000_L30_4F_01.9.1
 BackImage[3][1][0][2][0][1]=COM_ALL_2000_L30_4F_01.9.2
 BackImage[3][1][0][3][0][1]=COM_ALL_2000_L30_4F_01.9.3
 BackImage[3][1][1][0][0][1]=COM_ALL_2000_L30_4F_01.9.4
-#_EO_

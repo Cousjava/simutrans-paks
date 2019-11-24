@@ -1,10 +1,8 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 
-#    letzte Bearbeitung:
-#    $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
-#---------------------------------
+---------------------------------
 obj=building
 name=Rostocker Tor
 copyright=pumuckl999
@@ -15,7 +13,8 @@ cost=160000
 maintenance=40
 enables_pax=1
 enables_post=1
-intro_year=1430
+#intro_year=1430
+intro_year=1800
 intro_month=1
 allow_underground=0
 dims=1,1,2

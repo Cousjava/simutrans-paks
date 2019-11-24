@@ -22,6 +22,7 @@ constraint[prev][0]=Zugpferde_1
 constraint[prev][1]=Zugpferde_2
 constraint[prev][2]=Zugpferde_4
 Constraint[Prev][3]=BZT_Traktor-gruen
+Constraint[Prev][4]=Lanz_Bulldog_FMD
 constraint[next][0]=none
 
 EmptyImage[W]=Kutschen_Holz.0.1

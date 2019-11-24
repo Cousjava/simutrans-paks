@@ -1,5 +1,14 @@
 #!/bin/bash
-repo="/home/herruntermoser/Subversion/PAK128German"
+repo="/home/martin/pak128g.neupak"
+if [ ! -d $repo ]
+then
+echo -e "\033[91m Bitte korrekten Pfad zum Arbeitsverzeichnis eintragen!\n"
+fi
+
+if [ ! -x ./makeobj ]
+then
+    echo "Makeobj ist nicht als Ausfuehrbar registrtiert!=>chmod +x ./makeobj"
+fi
 rm -f $repo/LOG/*.log
 echo -e "\033[91m LOG geleert\n"
 rm -f ./simutrans/PAK128.german/*.pak > "$repo/LOG/Pakmaker.log" 2> "$repo/LOG/Error_Pakmaker.log"
@@ -29,9 +38,8 @@ cp *.txt $repo/simutrans/PAK128.german/text >> "$repo/LOG/paktext.log" 2>> "$rep
 cp compat.tab $repo/simutrans/PAK128.german >> "$repo/LOG/paktext.log" 2>> "$repo/LOG/error_paktext.log"
 cp de.tab $repo/simutrans/PAK128.german/text >> "$repo/LOG/paktext.log" 2>> "$repo/LOG/error_paktext.log"
 cp en.tab $repo/simutrans/PAK128.german/text >> "$repo/LOG/paktext.log" 2>> "$repo/LOG/error_paktext.log"
-cd ../translator
-cp ./ja.tab $repo/simutrans/PAK128.german/text >> "$repo/LOG/paktext.log" 2>> "$repo/LOG/error_paktext.log"
-cp ./pl.tab $repo/simutrans/PAK128.german/text >> "$repo/LOG/paktext.log" 2>> "$repo/LOG/error_paktext.log"
+cp ja.tab $repo/simutrans/PAK128.german/text >> "$repo/LOG/paktext.log" 2>> "$repo/LOG/error_paktext.log"
+cp pl.tab $repo/simutrans/PAK128.german/text >> "$repo/LOG/paktext.log" 2>> "$repo/LOG/error_paktext.log"
 cd $repo
 cd ./city
 . ./city_config.sh
@@ -59,8 +67,18 @@ if [ ! -f Outside.png ]; then
 echo -e "\033[1;92m Kopiere Outside.png"
 cp $repo/ground/Outside.png $repo
 fi
-. ./repository_info.sh
+cd ../pak128german
+svn info >$repo/Repository_Info.tab
+cd $repo
 info=$(cat ./Repository_Info.tab | grep -oP 'Revision: \K([0-9]+)')
 sed "s/Rev\. [0-9]*/Rev\. $info/" $repo/ground/Outside.dat > ./Outside.dat
 $repo/makeobj PAK128 simutrans/PAK128.german/ ./ >>"./LOG/Pakmaker.log" 2>> "./LOG/Error_Pakmaker.log"
+echo -e "\033[1;91mPAKMAKER FEHLER\n"
+cd LOG
+grep -R -i "Warning\|Error"
+echo -e "\033[1;92m Aufräumen"
+cd $repo
+rm Outside.png
+rm Outside.dat
+rm Repository_Info.tab
 echo -e "\033[1;91mPakset komplett!\033[0m"

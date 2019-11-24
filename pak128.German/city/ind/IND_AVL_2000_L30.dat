@@ -1,23 +1,20 @@
 #	PAK128.german
 #	Citybuildings industrial
 #       neu: 14-04-2019
-#--------------------------------------
+--------------------------------------
 obj=building
 name=IND_AVL_2000_A_30
 # MVA_Weisweiler_invert
 copyright=pumuckl999
 type=ind
-
 level=30
 chance=100
+clusters=5
 intro_year=2003
 intro_month=1
 #retire_year=
 #retire_month=
 needs_ground=0
-noinfo=0
-noconstruction=0
-
 climates=tundra
 dims=1,1,4
 BackImage[0][0][0][0][0][0]=IND_AVL_2000_L30.1.0
@@ -36,4 +33,4 @@ BackImage[2][0][0][0][0][1]=IND_AVL_2000_L30.3.2
 BackImage[2][0][0][1][0][1]=IND_AVL_2000_L30.2.2
 BackImage[3][0][0][0][0][1]=IND_AVL_2000_L30.3.3
 BackImage[3][0][0][1][0][1]=IND_AVL_2000_L30.2.3
-#_EO_
+

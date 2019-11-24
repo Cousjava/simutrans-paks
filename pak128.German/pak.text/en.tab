@@ -9,7 +9,7 @@
 #                             Language: en English                             #
 #                             Encoding: ISO-8859-1                             #
 #                             Font: Prop-Latin1.bdf                            #
-#                           Date Created: 30.06 2019                           #
+#                           Date Created: 19.11 2019                           #
 #                                                                              #
 ################################################################################
 #____________________________bridge - monorail_track____________________________
@@ -83,6 +83,8 @@ Building lot
 COM_ALL_1984_A_02
 Construction plant. 
 COM_ALL_1990_A_01
+Zirkus Köln
+COM_ALL_1990_A_07
 Juweler\nSparkling and jewelry for the wive or beloved.
 COM_ALL_1990_A_44
 TrepTower Berlin
@@ -138,24 +140,8 @@ COM_AVL_1921_A_11
 LUR Meditech.This special company manufactures medical device with the highest precision. 
 COM_AVL_1962_A_04
 AVL-spare parts dealer - You repair your car yourself? We have the right spare part! 
-COM_AVL_1967_A_16
-Could be a gas station, but is a mall
-COM_AVL_1967_A_17
-Could be a gas station, but is a mall
 COM_AVL_1968_A_04
 Branch of the SU-Bank AG. 
-COM_AVL_1969_A_24
-lighflooted offices. So make working fun.
-COM_AVL_1969_A_30
-Shopping and working i a modern enviroment.
-COM_AVL_1969_B_30
-Shopping and working i a modern enviroment.
-COM_AVL_1969_C_30
-Shopping and working i a modern enviroment.
-COM_AVL_1969_D_30
-Shopping and working i a modern enviroment.
-COM_AVL_1969_E_30
-Shopping and working i a modern enviroment.
 COM_AVL_1970_A_20
 Schmidt & Haberle - Your specialist for professional printing. 
 COM_AVL_1971_A_20
@@ -178,6 +164,20 @@ COM_AVL_2004_B_12
 Local Branch of the STrans-Financial Institution. 
 COM_AVL_2007_B_10
 Subsidiary of the Strans Credit institute. 
+COM_CLU_1964_A_16
+Could be a gas station, but is a mall
+COM_CLU_1965_A_22
+lighflooted offices. So make working fun.
+COM_CLU_1965_A_24
+Shopping and working i a modern enviroment.
+COM_CLU_1965_A_26
+Shopping and working i a modern enviroment.
+COM_CLU_1965_A_28
+Shopping and working i a modern enviroment.
+COM_CLU_1965_A_30
+Shopping and working i a modern enviroment.
+COM_CLU_1965_A_32
+Shopping and working i a modern enviroment.
 COM_MGB_1800_A_10
 Emporium. Here resides an agricultural consulting institute, which advises the Ministry of Agriculture. 
 COM_MGB_1800_A_12
@@ -310,10 +310,6 @@ COM_ODL_1880_A_07
 Preschool. 
 COM_ODL_1902_A_06
 Retirement home - sunny hill. Assisted living in the community of friends. 
-COM_ODL_1950_AB_10
-Living- and Merchant building. 
-COM_ODL_1950_AB_16
-Local Post office. 
 COM_ODL_1972_A_12
 One of the countless City management buildings 
 COM_ODL_1973_A_28
@@ -402,8 +398,6 @@ Kartbahn_Holdorf
 Kartbahn\n\nHoldorf
 Kleine_Dorfkirche
 Kleine Dorfkirche
-Koeln_turm
-Köln-Turm\n\nMittelgebirge
 Kurhaus_Binz
 Kurhaus\n\nBinz auf Rügen
 Leuchtturm_Friedrichsort
@@ -416,16 +410,12 @@ Matthaeuskirche_Pforzheim
 Matthäuskirche\n\nDie Matthäuskirche in Pforzheim ist eine evangelischen Kirche und liegt im Stadtteil Arlinger.
 Mespelbrunn_Castle
 Schloss Mespelbrunn
-MGB_Commerzbanktower
-Commerbank Tower\n\nFrankfurt/Main
 MGB_Henninger-Turm
 Henninger Turm\n\nFrankfurt/Main
 MGB_Paulskirche
 Paulskirche\n\nFrankfurt am Main
 MGB-Arena
 Waldstadion\n\nFrankfurt/Main
-MGB-Main-Tower
-Main-Tower\n\nMittelgebirge\n\n
 MGB-Messeturm
 Messeturm\n\nMittelgebirge
 Mittelalterliche_Kirche
@@ -822,8 +812,6 @@ Team 128.german
 #________________________________building - res_________________________________
 RES_ALL_1700_Gerberbruch_3_04
 Residential Building
-RES_ALL_1800_A_01
-A small House\n from the century turn with pale Facade 
 RES_ALL_1800_A_02
 Allotment - A summer house with veranda. 
 RES_ALL_1800_B_01
@@ -904,8 +892,6 @@ RES_AVL_1800_B_04
 Former farmhouse with a thatched roof. The rest of the court was unfortunately a victim of the property split. 
 RES_AVL_1803_A_08
 Small farm house.Building like these can often be found in the bavarian overland
-RES_AVL_1823_A_05
-Swabian Townhouse (Downtown). 
 RES_AVL_1860_B_03
 Former servants house, from the time before the industrialization.
 RES_AVL_1861_A_04
@@ -916,8 +902,6 @@ RES_AVL_1864_A_04
 For residential buildings converted former workers pension. 
 RES_AVL_1864_B_05
 Multifamily-house with a fore roofed entranced
-RES_AVL_1865_A_05
-Swabian Townhouse (Downtown). 
 RES_AVL_1865_A_11
 "The home of an academician family. the "Professor" has aquired the attic as his personal study room."
 RES_AVL_1866_A_12
@@ -932,8 +916,6 @@ RES_AVL_1870_A_14
 "A rich notary let rebuild this former city palace for himself, his family and Personal staff. The current owner has not quite so much "appendage" and therefore, are some of the rooms empty." 
 RES_AVL_1870_A_18
 In this building from the turn of the century, is a private school for the children of wealthy parents housed. 
-RES_AVL_1871_A_05
-Swabian Townhouse (Downtown). 
 RES_AVL_1890_A_16
 A wealthy businessman has made much care for this former city palace bestowed. Therefore it is also the pride of the residents of the neighbourhood´s around it. 
 RES_AVL_1891_B_18
@@ -952,12 +934,6 @@ RES_AVL_1916_A_09
 Multifamily-House of the Alpe-Adria Housing GesmbH from the Biedermaier era. 
 RES_AVL_1923_A_08
 A former school building that now includes 6 Cheap apartments for singles. 
-RES_AVL_1923_A_24
-Apartment block with Shoe-shop in the Basemnent. 
-RES_AVL_1923_B_24
-2-colored apartment block with tiled roof. This house is a typical example of the architectural style from the 1930s to the 40s. 
-RES_AVL_1923_C_24
-2-colored apartment block with a vegetable shop in the ground floor. 
 RES_AVL_1927_A_05
 Cheap Apartment-House. The First floor dwelling is for rent. 
 RES_AVL_1929_A_04
@@ -1018,6 +994,30 @@ RES_AVL_2005_B_04
 Nice Suburban house with a garden and double garage. 
 RES_AVL_2011_A_10
 A Multi-Family House of the MHZ residential & housing Group. This type of house was primarily designed for families with children. The apartments are also therefore more spacious than customary in place. 
+RES_CLU_1865_A_05
+Swabian Townhouse (Downtown). 
+RES_CLU_1866_A_06
+Swabian Townhouse (Downtown). 
+RES_CLU_1867_A_07
+Swabian Townhouse (Downtown). 
+RES_CLU_1900_A_10
+Living- and Merchant building. 
+RES_CLU_1906_A_16
+Local Post office. 
+RES_CLU_1924_A_24
+Apartment block with Shoe-shop in the Basemnent. 
+RES_CLU_1924_B_24
+2-colored apartment block with tiled roof. This house is a typical example of the architectural style from the 1930s to the 40s. 
+RES_CLU_1924_C_24
+2-colored apartment block with a vegetable shop in the ground floor. 
+RES_CLU_1957_A_07
+Apartment building of the PuMu Low-income-housing 
+RES_CLU_1957_A_08
+Middle size east-german plate building. 
+RES_CLU_1970_A_08
+East-german Platebuilding 
+RES_CLU_1970_A_09
+Rhomboid Platebuilding 
 RES_MGB_1799_A_01
 The farm of family Oberndorfer with now run in the 3rd generation.
 RES_MGB_1800_A_02
@@ -1202,10 +1202,6 @@ RES_ODL_1952_A_24
 East-german Hanse-Tradebuilding. 
 RES_ODL_1956_B_06
 Apartment building of the PuMu Low-income-housing 
-RES_ODL_1957_A_07
-Apartment building of the PuMu Low-income-housing 
-RES_ODL_1957_A_08
-Middle size east-german plate building. 
 RES_ODL_1957_A_10
 Condominium Building 
 RES_ODL_1957_B_05
@@ -1234,10 +1230,6 @@ RES_ODL_1976_A_05
 East-german Platebuilding 
 RES_ODL_1976_A_14
 Simple Apartment-block. Buildings like this are often found in the major cities. 
-RES_ODL_1977_A_08
-East-german Platebuilding 
-RES_ODL_1977_A_09
-Rhomboid Platebuilding 
 RES_ODL_1990_B_05
 Apartmentblock from Type "Stackbuilding". 
 RES_ODL_1990_B_07
@@ -2106,10 +2098,6 @@ Zementwerk1914
 Cement-factory (1914)
 factory_Zementwerk1914_details
 <title>Cement plant Burglengenfeld.</title>From lime and clay here cement is fired. In the long building a rotary kiln was used for the first time to burn the cement.
-Zementwerk1962_NIC
-Zementwerk (1962)
-factory_Zementwerk1962_NIC_details
-<title>Cement-Factory 1962</title><p>From Sand, stones and by adding additives, will become high-tech cement. This is used for the construction of the Simutranshäuser and for the concrete work.</p>
 Zementwerk1979_NIC
 Cement-factory (1979)
 factory_Zementwerk1979_NIC_details
@@ -3373,7 +3361,7 @@ Solaris Urbino 12
 Solaris_Urbino15
 Solaris Urbino 15
 Solaris_Urbino18_Front
-Solaris Urbino (Head)
+Solaris Urbino 18 Head
 Solaris_Urbino18_Heck
 Solaris Urbino 18 Tail
 Steyrbus
@@ -3561,7 +3549,7 @@ BZT_3Achser
 BZT_A4ue-35
 DRG Expresstrain-waggon 1. Class
 BZT_ABi
-Localrail-waggon 1./2. Class
+Thunderbox Ci-28
 BZT_B4ue-35
 DRG Expresstrain-waggon 2. Class
 BZT_D4ue-36
@@ -3909,7 +3897,7 @@ Prussian P8
 P8Tender
 Tender for P8
 PBL Post
-PBL Mail
+Post extension
 Postwagen 2ss-t13
 Postwagon 2SS-t13
 Postwagen 2ss-t15
@@ -4416,6 +4404,14 @@ city_road
 Cityroad
 city_road50
 City-Road (diagonal)
+cobblestone_road_20
+Cobbled Road 20 km/h
+cobblestone_road_40
+Cobbled Road 40 km/h
+cobblestone_road_70
+Cobbled Road 70 km/h
+dirt_cityroad
+dirt city road
 dirt_road
 dirt road
 Hochstrasse100
@@ -4424,10 +4420,6 @@ Hochstrasse130
 Highroad 130 km/h
 Hochstrasse50
 Highway 50 km/h
-Kopfsteinpflasterstrasse
-Cobbled Road
-Kopfsteinpflasterstrasse_70
-Cobbled Road 70 km/h
 #__________________________________way - track__________________________________
 #__________________________________way - track__________________________________
 altes_Gleis

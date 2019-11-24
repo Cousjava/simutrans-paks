@@ -1,7 +1,7 @@
 #	PAK128.german
 #	Citybuildings commercial
 #       neu:  29-12-2018
-#---------------------------------------
+---------------------------------------
 Obj=building
 Name=COM_ODL_1970_A_25
 # Taunusanlage11a
@@ -11,9 +11,10 @@ intro_year=1970
 intro_month=1
 #retire_year=1901
 #retire_month=1
-climates=tundra
-level=25
+climates=tundra,temperate
+level=26
 chance=25
+clusters=6
 needs_ground=0
 dims=1,1,4
 BackImage[0][0][0][0][0][0]=COM_ODL_1970_L25_001.0.0
@@ -40,4 +41,4 @@ BackImage[3][0][0][2][0][0]=COM_ODL_1970_L25_001.4.0
 BackImage[3][0][0][0][0][1]=COM_ODL_1970_L25_001.4.1
 BackImage[3][0][0][1][0][1]=COM_ODL_1970_L25_001.4.2
 BackImage[3][0][0][2][0][1]=COM_ODL_1970_L25_001.4.3
-#---------------------------------------
+---------------------------------------

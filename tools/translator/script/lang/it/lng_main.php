@@ -345,6 +345,7 @@ $LNG_STATS_TRANS[9] = 'vuoto';
 
 $LNG_STATS_VEH = array();
 $LNG_STATS_VEH[0] = 'Statistiche veicoli';
+$LNG_STATS_VEH[10] = 'Cluster';
 $LNG_STATS_VEH[1] = 'Seleziona le voci da visualizzare';
 $LNG_STATS_VEH[2] = 'Strade e strade elettrificate appartengono al medesimo gruppo chiamato "Strade". I veicoli senza tipo di via saranno omessi. I veicoli con proprietà mancanti appariranno nella colonna "Altri".';
 $LNG_STATS_VEH[3] = "Visualizza tutti i veicoli per %s dal set %s (%s voci)";
@@ -370,6 +371,7 @@ $LNG_WRAP[19] = 'Generated help files for';
 $LNG_WRAP[1] = 'File generato';
 $LNG_WRAP[20] = 'File exists';
 $LNG_WRAP[21] = 'Files from <b>Scenario</b> sets are to be saved to <b>simutrans/[SET] /scenario/[Scenarioname]</b>. ZIP files are always created because Scenario translations can also contain subdirectories with additional files.';
+$LNG_WRAP[22] = 'For write or changed help files see';
 $LNG_WRAP[2] = 'Creazione fallita!';
 $LNG_WRAP[3] = 'Questa pagina ti permette di scaricare i file di traduzione, usabili dal tuo Simutrans, più recenti. Seleziona semplicemente la tua lingua, scegli il Set e il tipo di <strong>file</strong> in uscita, poi clicca su <strong>Esporta!</strong>, aspetta un attimo e clicca su <strong>Salva come</strong> nel collegamento risultante. Il file creato dovrà essere salvato nella tua cartella <nobr><strong>simutrans|[set]|text</strong></nobr>.';
 $LNG_WRAP[4] = "L'opzione <b><em>%s</em></b> ti permette di scaricare un file zip con tutti i file di traduzioni per una data versione. In questo caso non hai bisogno di selezionare la lingua.";

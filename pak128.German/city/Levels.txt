@@ -1,0 +1,79 @@
+Clusters=
+es sind Nummern von 1 bis 32 möglich, es sind Mehrfachnennungen möglich also Clusters=1,2,20,21
+1=Altstadt
+2=Einfamilienhaussiedlung
+3=Geschlossene Bauweise
+4=
+5=Industrie
+6=Hochhäuser
+7=Einkaufszentrum
+8=Firmenzentrale
+9=Moderne
+10-19 = Trabantenstädte
+10=Blockmacherring
+11=Platz der Freundschaft
+12=derzeit Trabantenstädte allgemein, also der Rest
+
+20=Gartenstadt
+21=Schrebergärten
+
+Level=
+Um das Cluster System nicht zu sprengen muss in jedem Level zu jeder Zeit etwas vorhanden sein. 
+Zumindest im Cluster 1=Altstadt
+Deshalb sind ab Level 10 die ungeraden Level verboten, also 11,13,15,17,19,21,23, usw.
+ 
+Die Altstadt sollte sich ab 1950 nicht mehr mit anderen wie Gartenstadt, Einfamilienhaus, Moderne überschneiden. Sonst wachsen Altstädte am Stadtrand. 
+ 
+Zitat von Michelstadt: 
+Die Gebäudelevels vergebe ich zunächst nach dem Größeneindruck, also wieviele Stockwerke, wieviel Raum wird eingenommen etc. Das ist nur mäßig objektiv. 
+Erstes Ziel ist idealerweise eine gleichmäßige Abstufung von 1 bis auf 48, das ist die höchste Stufe, die erst ab 1970 erreichbar ist.
+
+Chronologisch sind die Höchststufen folgendermaßen definiert:
+Bis 1869: 16       Blockgebäude ab 06
+1870 bis 1919: 20  Blockgebäude ab 10
+1920 bis 1926: 24  Blockgebäude ab 10
+1927 bis 1949: 36  Blockgebäude ab 14
+1950 bis 1969: 42  Blockgebäude ab 14
+Ab 1970: 48        Blockgebäude ab 14
+
+Schnell wachsende Städte werden bald viele Gebäude mit maximalem Level errichten. Als erste Hürde gegen zu viel Konformität stehen da die chronologischen Höchstwerte, die zumindest bis 1970 immer wieder mal eine Neubauphase ermöglichen.
+
+Chance=
+Achtung: chance=xxx wirkt nur wenn es auch tatsächlich mehr als ein Haus gibt!
+
+
+Gibt es nur ein Haus für den gesuchten Typ (res,com,ind) in der richtigen Klimazone, im gesuchten Level und im Zeitraum passend,
+dann bedeutet chance=1 -> 100% ---> es wird auf jeden Fall genommen. Egal auch welcher Cluster.
+
+Gibt es zwei Häuser Type=, Level=, Climates= gleich und beide passen vom Zeitraum und  in den vorhanden Platz dann bedeutet:
+chance=100 bei beiden bedeutet 50% Chance für jedes
+chance=25 bei beiden bedeutet ebenfalls 50% Chance
+nur dann wirkt sich auch der Clusters Parameter aus
+
+Chance=0 wird nicht genommen, es sei den es ist das einzige passende, dann eben doch.
+Chance=0 kann auch durch den Cluster Faktor entstehen wenn int(chance=xx / cluster_factor) 0 ergibt (geteilt durch cluster_factor wenn Clusters unpassend)
+
+
+Zum retire_year= 
+Das sollte nicht zu scharf gesetzt werden. Wenn es geht, besser ganz weg lassen.
+
+Es ist nicht das Jahr, in dem solche Häuser nicht mehr neu gebaut wurden.
+Sondern eher das Jahr, in dem das letzte Haus diese Typs abgerissen wurde.
+Wenn das Haus heute noch steht dann kein retire_year vergeben.
+
+Erkärung:
+Da Simutrans sehr häufig renoviert, werden Häuser mit abgelaufenen retire_year sehr schnell weggerissen.
+In den deutschen Städten stehen in der Altstadt aber noch viele alte Häuser.
+In Simutrans kann man Gebäude nicht als Denkmal schützen
+
+Simutrans reißt Häuser deren retire_year= abgelaufen ist beim nächsten Update (und der kommt schnell) gnadenlos ab
+und neu gebaut werden sie nicht mehr.
+Deshalb sollte man retire_year= nur setzen wenn das Haus nach diesem Jahr verschwinden soll.
+z.B. weil Häuser mit Strohdeckung dann auch in Realität nicht mehr vorkommen.
+Häuser die in Realität noch stehen sollten kein retire_year= haben.
+Ja sie werden dann auch später noch neu gebaut in Simutrans. Ich hab versucht das auf die Altstadt einzugrenzen.
+Sie werden quasi hier abgerissen wegen Level up und anderswo wieder errichtet. Wechseln also den Standort. Es ist also nicht wie in Wirklichkeit wo ein Haus das Denkmal geschützt ist, bis in alle Ewigkeit stehenbleibt.
+
+Wenn man das retire_year= auf des Jahr setzt an dem das Haus nicht mehr gebaut wurde / werden soll. Dann haben wir in Simutrans keine Altstädte.
+
+Der Text steht auch auf https://www.simutrans-forum.de/mybb/showthread.php?tid=9105

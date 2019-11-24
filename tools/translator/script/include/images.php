@@ -5,7 +5,7 @@
 */
   $img_sel = array();
   $img_sel['bridge']      = array ('backimage[ns][0]', 'backimage[ew][0]');
-  $img_sel['building']    = array ('backimage[0][0][0][0][0][0]');
+  $img_sel['building']    = array ('backimage[0][0][0][0][0][0]','backimage[4][0][0][0][0][0]');
   $img_sel['citycar']     = array ('image[s]','image[sw]');
   $img_sel['crossing']    = array ('openimage[ew][0]','closedimage[ns][0]');
   $img_sel['tree']        = array ('image[0][0]','image[1][0]');
@@ -132,12 +132,12 @@ function display_multicachel($file,$setid,$img_name,$obj_id,$set_tile,$tile_size
   imagesavealpha($im_c, true);
 
   $tab = 'images_'.$setid;
-  $p = strpos ($img_name,'[0][0][0]');
+  $p = strpos ($img_name,']')+1;
   
   for ($i_h=0; $i_h<$d_h; $i_h++)
   { for ($i_b=0; $i_b<$d_b; $i_b++)
     { for ($i_c=0; $i_c<$d_c; $i_c++)
-      { $i = substr($img_name,0,$p).'[0]['.$i_b.']['.$i_c.']['.$i_h.'][0][0]';
+      { $i = substr($img_name,0,$p).'['.$i_b.']['.$i_c.']['.$i_h.'][0][0]';
         do
         { $query = "SELECT offset_x, offset_y, image_data FROM $tab WHERE object_obj_id='$obj_id' AND image_name='$i'";
           $img = db_fetch_array(db_query($query));
@@ -224,12 +224,12 @@ function display_image($setid,$obj_id, $dims, $obj_type, $alt_text='', $re_sizes
 { global $img_sel,$set_title_tab,$LNG_EDIT;
   $setid  = intval($setid);
   $obj_id = intval($obj_id);
-  $alt_text = htmlentities($alt_text, ENT_QUOTES);
   $img_cache = array();
   if (isset($_session['img_in_cache'])) $img_cache = $_session['img_in_cache'];
   $wert ='';
   if (isset($img_sel[$obj_type])) foreach ($img_sel[$obj_type] as $img_name)
-  { if ($alt_text == '') $alt_text = htmlentities($img_name, ENT_QUOTES);
+  { if ($alt_text == '') $a_text = htmlentities($img_name, ENT_QUOTES);
+    else                 $a_text = htmlentities($alt_text, ENT_QUOTES);
     $file = "./tpl_cache/".$setid."_".$obj_id.$img_name.'c';
     if (isset($img_cache[$file])) $img_p = $img_cache[$file];
     elseif ( file_exists($file))
@@ -238,8 +238,8 @@ function display_image($setid,$obj_id, $dims, $obj_type, $alt_text='', $re_sizes
       $img_cache[$file] = $img_p;
     } 
     else 
-    { if ( count($img_sel[$obj_type]) > 1) $img_p = display_one_image($file,$setid,$img_name,$obj_id);
-      else $img_p = not_in_cache($file,$setid,$obj_id,$img_name,$dims);
+    { /*if ( count($img_sel[$obj_type]) > 1) $img_p = display_one_image($file,$setid,$img_name,$obj_id);
+      else */ $img_p = not_in_cache($file,$setid,$obj_id,$img_name,$dims);
       $img_cache[$file] = $img_p;
     }
     $x = $img_p[0];
@@ -252,7 +252,7 @@ function display_image($setid,$obj_id, $dims, $obj_type, $alt_text='', $re_sizes
           $y = intval($y / ($m / $re_sizes));
         }
       } 
-      $wert .= "<img src='".$file."' alt='$alt_text' title='$alt_text'"
+      $wert .= "<img src='".$file."' alt='$a_text' title='$a_text'"
               ." height='$y' width='$x' />\n";
     }
   }

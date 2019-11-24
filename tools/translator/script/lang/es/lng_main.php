@@ -345,6 +345,7 @@ $LNG_STATS_TRANS[9] = 'vacío';
 
 $LNG_STATS_VEH = array();
 $LNG_STATS_VEH[0] = 'Estadísticas de Vehículos';
+$LNG_STATS_VEH[10] = 'Cluster';
 $LNG_STATS_VEH[1] = 'Seleccione los Elementos a Mostrar';
 $LNG_STATS_VEH[2] = 'Vía y electrified_track se consideran como una sola categoría denominada track. Vehículos con tipo de vía mal escrito se omitirán. Propiedades mal escritas (y limitaciones) aparecerán en la columna otros.';
 $LNG_STATS_VEH[3] = "Lista de Todos los Vehículos para %s de %s Set (%s Elementos)";
@@ -370,6 +371,7 @@ $LNG_WRAP[19] = 'Generado ficheros de ayuda para';
 $LNG_WRAP[1] = 'Fichero generado';
 $LNG_WRAP[20] = 'El fichero existe';
 $LNG_WRAP[21] = 'Files from <b>Scenario</b> sets are to be saved to <b>simutrans/[SET] /scenario/[Scenarioname]</b>. ZIP files are always created because Scenario translations can also contain subdirectories with additional files.';
+$LNG_WRAP[22] = 'For write or changed help files see';
 $LNG_WRAP[2] = 'Creation Failed!';
 $LNG_WRAP[3] = 'Esta página te permite obtener los últimos fichero de traducciones utilizables directamente por Simutrans. Simplemente seleccione su idioma, elija la versión (escenario) con la que juega y el método de salida <strong>a fichero</strong>, pulse en <strong>¡Exportar!</strong>, espera, y haga click en <strong>guardar como</strong> en el enlace resultante. El fichero creado debería guardarse en tu directorio de <nobr><strong>simutrans|[set]|texto</strong></nobr>.';
 $LNG_WRAP[4] = 'La opción <em>Pack de Idioma Completo</em> le permite descargar un archivo zip con todas las traducciones para una versión dada. No es necesario seleccionar el idioma en este caso.';

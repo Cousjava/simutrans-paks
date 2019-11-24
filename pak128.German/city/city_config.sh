@@ -61,4 +61,8 @@ cd ../pedestrians
 $repo/makeobj PAK128 $repo/simutrans/PAK128.german/ ./ > "$repo/LOG/pedestrians.log" 2>> "$repo/LOG/error_pedestrians.log"
 cd ../mehrkachelhaus
 $repo/makeobj PAK128 $repo/simutrans/PAK128.german/ ./ > "$repo/LOG/mehrkachelhaus.log" 2>> "$repo/LOG/error_mehrkachelhaus.log"
+cd ../Clusterhaus
+$repo/makeobj PAK128 > "$repo/LOG/Clusterhaus.log" 2>> "$repo/LOG/error_Clusterhaus.log"
+$repo/makeobj MERGE $repo/simutrans/PAK128.german/building.Clusterhaus.pak ./building.*.pak >> "$repo/LOG/Clusterhaus.log" 2>> "$repo/LOG/error_Clusterhaus.log"
+rm ./building.*.pak >> "$repo/LOG/Clusterhaus.log" 2>> "$repo/LOG/error_Clusterhaus.log"
 cd $repo

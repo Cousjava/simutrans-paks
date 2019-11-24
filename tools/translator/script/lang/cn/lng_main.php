@@ -345,6 +345,7 @@ $LNG_STATS_TRANS[9] = '空缺';
 
 $LNG_STATS_VEH = array();
 $LNG_STATS_VEH[0] = '交通工具统计';
+$LNG_STATS_VEH[10] = 'Cluster';
 $LNG_STATS_VEH[1] = '请选择要显示的事物';
 $LNG_STATS_VEH[2] = '轨道交通和电气化轨道交通是轨道交通里的一类。在错误的道路类型下建立交通工具将被拒绝。错误的属性和限制将在另一列显示。';
 $LNG_STATS_VEH[3] = "列出所有%s系列里的%s的所有车辆（%s个）";
@@ -370,6 +371,7 @@ $LNG_WRAP[19] = '新建帮助文档';
 $LNG_WRAP[1] = '已创建的文件';
 $LNG_WRAP[20] = '文件存在';
 $LNG_WRAP[21] = 'Files from <b>Scenario</b> sets are to be saved to <b>simutrans/[SET] /scenario/[Scenarioname]</b>. ZIP files are always created because Scenario translations can also contain subdirectories with additional files.';
+$LNG_WRAP[22] = 'For write or changed help files see';
 $LNG_WRAP[2] = '创建文件失败！';
 $LNG_WRAP[3] = '此页面使用户获得最新的翻译文件，这些文件可以直接在Simutrans中使用。勾选你的语言并且选择系列和输出方法<strong>到文件<strong>，然后点击<strong>导出！</strong>,等待一会然后点击<strong>出现的链接里并且另存为</strong>。新建的文件要存储在你的<nobr><strong>simutrans|[set]|text</strong></nobr>目录。';
 $LNG_WRAP[4] = "选项<b><em>%s</em></b>可以让用户下载针对指定版本下的包含所有翻译文件的压缩文件。此时用户不需要选择语言。";

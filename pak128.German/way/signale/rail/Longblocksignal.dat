@@ -13,7 +13,7 @@ retire_year = 1955
 retire_month = 12
 cost=450
 is_longblocksignal=1
-is_signal=1
+#is_signal=1
 Icon=> Longblocksignal.0.8
 Cursor=Longblocksignal.0.9
 # RED

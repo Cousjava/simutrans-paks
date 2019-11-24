@@ -38,3 +38,7 @@ ALTER TABLE `versions` modify `lng_disabled`       varchar(100) COLLATE utf8_bin
     { echo "ALTER TABLE for Version ".$vs_id.":".$vs_a_name;
  
       db_query("ALTER TABLE images_$vs_id  modify  `image_data` MEDIUMBLOB NULL ;");
+
+      
+ALTER TABLE `objects` ADD `dat_file_name` varchar(250) COLLATE utf8_bin NOT NULL DEFAULT '' ;
+ALTER TABLE `objects` ADD `dat_path`      varchar(250) COLLATE utf8_bin NOT NULL DEFAULT '' ;

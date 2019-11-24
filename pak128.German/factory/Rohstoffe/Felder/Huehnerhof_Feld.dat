@@ -9,3 +9,15 @@ copyright=pumuckl999
 Image[0]=Huehnerhof_Feld.0.0
 Image[1]=Huehnerhof_Feld.0.1
 ---------------------------------
+obj=field
+name=Feld_Huehnerhof2
+copyright=pumuckl999
+Image[0]=Huehnerhof_Feld2.0.0
+Image[1]=Huehnerhof_Feld2.0.1
+---------------------------------
+obj=field
+name=Feld_Huehnerhof3
+copyright=pumuckl999
+Image[0]=Huehnerhof_Feld3.0.0
+Image[1]=Huehnerhof_Feld3.0.1
+---------------------------------

@@ -1,6 +1,5 @@
 #	PAK128.german
 #	Players Building
-#	Letzte Bearbeitung: $Date$ - $Author$
 obj=building
 name=Magdeburg Herrenkrug
 copyright=pumuckl999
@@ -11,7 +10,7 @@ maintenance=16
 intro_year=1886
 intro_month=1
 needs_ground=0
-noinfo=1
+#noinfo=1
 #noconstruction=1
 waytype=tram_track
 enables_pax=1

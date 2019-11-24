@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Strassen
 #	Neu:07-2014
-#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
 ---------------------------------
 Obj=bridge
 name=alte_Strassenbruecke
@@ -10,7 +9,7 @@ copyright=TonyBzt
 waytype=road
 intro_year=1906
 intro_month=1
-retire_year=1670
+retire_year=1970
 retire_month=12
 cost=18000
 maintenance=20

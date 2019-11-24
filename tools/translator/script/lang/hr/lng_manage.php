@@ -135,6 +135,7 @@ $LNG_OBJ_IMPORT[28] = 'Odabrati Tip Stavljanja';
 $LNG_OBJ_IMPORT[29] = 'Warning!! duplicate parameters in .dat file:';
 $LNG_OBJ_IMPORT[2] = 'samo Dat';
 $LNG_OBJ_IMPORT[30] = 'no file is given';
+$LNG_OBJ_IMPORT[31] = 'mandatory parameter in the .dat file not given';
 $LNG_OBJ_IMPORT[3] = 'Odbarati "samo Dat" ako ne zelite pormjeniti nijednu sliku.';
 $LNG_OBJ_IMPORT[4] = 'Odabrati datoteku';
 $LNG_OBJ_IMPORT[5] = 'Odbarati "Samo Dat" i poslati jednu Dat datoteku. Samu Dat datoteku nesazetu u zip.';

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 
-#    Letzte Bearbeitung: $Date$ - $Author$
 #---------------------------------
 Obj=building
 Name=PostOffice1920_AirportBlg
@@ -16,7 +15,7 @@ intro_year=1918
 intro_month=1
 #retire_year=1935
 #retire_month=1
-NoInfo=1
+#NoInfo=1
 Dims=1,1,2
 icon=> Airport_1920.2.2
 cursor=Airport_1920.2.3

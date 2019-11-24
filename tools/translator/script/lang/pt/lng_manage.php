@@ -135,6 +135,7 @@ $LNG_OBJ_IMPORT[28] = 'Método de entrada';
 $LNG_OBJ_IMPORT[29] = 'Warning!! duplicate parameters in .dat file:';
 $LNG_OBJ_IMPORT[2] = 'Apenas dat';
 $LNG_OBJ_IMPORT[30] = 'no file is given';
+$LNG_OBJ_IMPORT[31] = 'mandatory parameter in the .dat file not given';
 $LNG_OBJ_IMPORT[3] = 'Selecione "Apenas dat" se você não quer modificar alguma imagem.';
 $LNG_OBJ_IMPORT[4] = 'Arquivo de entrada';
 $LNG_OBJ_IMPORT[5] = 'Selecione "Apenas dat" e importe um único arquivo Dat (não comprimido em zip).';

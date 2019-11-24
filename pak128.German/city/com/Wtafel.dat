@@ -1,13 +1,14 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Neu:17-08-2017
-# --------------------------------
+--------------------------------
 obj=building
 name=COM_ALL_Werbetafel_04
 copyright=pumuckl999
 type=com
 level=4
-chance=30
+chance=10
+clusters=5
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 intro_year=1970
 needs_ground=0

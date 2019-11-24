@@ -1,18 +1,16 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
-#---------------------------------
+---------------------------------
 Obj=building
 Name=1920_AirDepot
 type=depot
 waytype=air
-intro_year=1912
-intro_month=1
+intro_year=1920
 cost=50000
 maintenance=8
-NoInfo=1
+#NoInfo=1
 Dims=1,1,4
 icon=> Luftdepot1920.1.0
 cursor=Luftdepot1920.1.1

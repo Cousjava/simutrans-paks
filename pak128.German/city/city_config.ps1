@@ -67,11 +67,13 @@ Remove-Item .\*.pak >>$repo\LOG\Pakmaker.log 2>>$repo\LOG\error_Pakmaker.log
 Write-Host "Erstelle Pedestrians" -ForegroundColor Green
 $empty_line
 Set-Location $repo\city\pedestrians
-
 & "$repo\makeobj.exe" "PAK128" "$repo/simutrans/PAK128.german/" "./" >$repo\LOG\pedestrians.log 2>>$repo\LOG\error_pedestrians.log
 Write-Host "Erstelle mehrkachelhaus" -ForegroundColor Green
 $empty_line
-Set-Location $repo\city\mehrkachelhaus
 
+Set-Location $repo\city\mehrkachelhaus
 & "$repo\makeobj.exe" "PAK128" "$repo/simutrans/PAK128.german/" "./" >$repo\LOG\mehrkachelhaus.log 2>>$repo\LOG\error_mehrkachelhaus.log
+
+Set-Location $repo\city\Clusterhaus
+& "$repo\makeobj.exe" "PAK128" "$repo/simutrans/PAK128.german/" "./" >$repo\LOG\Clusterhaus.log 2>>$repo\LOG\error_Clusterhaus.log
 Set-Location $repo

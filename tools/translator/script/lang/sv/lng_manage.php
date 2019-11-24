@@ -135,6 +135,7 @@ $LNG_OBJ_IMPORT[28] = 'Choose Upload Type';
 $LNG_OBJ_IMPORT[29] = 'Warning!! duplicate parameters in .dat file:';
 $LNG_OBJ_IMPORT[2] = 'Dat only';
 $LNG_OBJ_IMPORT[30] = 'no file is given';
+$LNG_OBJ_IMPORT[31] = 'mandatory parameter in the .dat file not given';
 $LNG_OBJ_IMPORT[3] = 'Välj "Enbart Dat" om du inte vill ändra några bilder.';
 $LNG_OBJ_IMPORT[4] = 'Välj en fil';
 $LNG_OBJ_IMPORT[5] = 'Välj "Enbart Dat" och skicka in en enda dat-fil. En enda dat-fil kommer inte att komprimeras till zip.';

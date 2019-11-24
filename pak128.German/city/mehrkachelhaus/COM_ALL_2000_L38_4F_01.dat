@@ -1,8 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Citybuildings commercial
 #	Neu:12-2012
-# --------------------------------
+--------------------------------
 obj=building
 name=COM_ALL_2001_A_38
 # Koeln_turm
@@ -10,12 +10,13 @@ copyright=Lemuria
 type=com
 level=38
 chance=20
+clusters=6
 intro_year=2001
 intro_month=1
-retire_year=2025
+#retire_year=2025
 retire_month=12
 needs_ground=1
-climates=desert, tropic, mediterran, temperate, tundra, rocky
+climates=desert, tropic, mediterran, temperate, tundra
 dims=2,2,4
 BackImage[0][0][0][0][0][0]=COM_ALL_2000_L38_4F_01.0.0
 BackImage[0][0][0][1][0][0]=COM_ALL_2000_L38_4F_01.0.1

@@ -1,23 +1,19 @@
 #	PAK128.german
-
 #	Citybuildings commercial
 #       neu: 01-05-2019
-#--------------------------------------
+--------------------------------------
 obj=building
-
 name=COM_ALL_1970_A_48
 copyright=pumuckl999
 type=com
 level=48
 chance=20
+clusters=6
 intro_year=1972
 intro_month=1
 #retire_year=
 #retire_month=
-needs_ground=0
-noinfo=0
-noconstruction=0
-climates=desert, tropic, mediterran, temperate, tundra, rocky
+climates=desert, tropic, mediterran, temperate, tundra
 dims=2,2,4
 BackImage[0][0][0][0][0][0]=COM_ALL_1970_L48_4F_01.0.0
 BackImage[0][0][0][1][0][0]=COM_ALL_1970_L48_4F_01.0.1
@@ -147,4 +143,4 @@ BackImage[3][1][0][2][0][1]=COM_ALL_1970_L48_4F_01.10.4
 BackImage[3][1][0][3][0][1]=COM_ALL_1970_L48_4F_01.10.5
 BackImage[3][1][0][4][0][1]=COM_ALL_1970_L48_4F_01.10.6
 BackImage[3][1][1][0][0][1]=COM_ALL_1970_L48_4F_01.10.7
-#_EO_
+

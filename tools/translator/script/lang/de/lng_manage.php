@@ -135,6 +135,7 @@ $LNG_OBJ_IMPORT[28] = 'Typ des Imports auswählen';
 $LNG_OBJ_IMPORT[29] = 'Warnung!! doppelte Parameter in .dat Datei:';
 $LNG_OBJ_IMPORT[2] = 'Nur DAT';
 $LNG_OBJ_IMPORT[30] = 'kein File übergeben';
+$LNG_OBJ_IMPORT[31] = 'notwendiger Parameter fehlt';
 $LNG_OBJ_IMPORT[3] = 'Wähle "nur Dat", wenn keine Bilder enthalten sind oder die Bilder nicht geändert werden sollen.';
 $LNG_OBJ_IMPORT[4] = 'Datei auswählen';
 $LNG_OBJ_IMPORT[5] = 'Wähle "nur Dat" und es kann eine einzelne Dat-Datei importiert werden. Einzelne Dat-Dateien müssen nicht komprimiert ( *.zip ) werden und brauchen nicht unbedingt die Dateiendung ".dat".';
