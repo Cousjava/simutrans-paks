@@ -2,14 +2,13 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #   Neu:
-#   Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Kutsche
 copyright=RedRabbit
 intro_year=1800
 intro_month=1
-retire_year=1955
+retire_year=1929
 retire_month=12
 cost=172000
 runningcost=18

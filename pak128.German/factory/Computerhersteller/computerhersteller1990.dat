@@ -1,12 +1,12 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-# --------------------------------
+--------------------------------
 Obj=factory
 Name=Computerhersteller1990
 copyright=pumuckl999
-pax_level=30
+pax_level=200
 intro_year=1990
 intro_month=1
 location=land

@@ -1,9 +1,8 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 12-06-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
-#---------------------------------
+---------------------------------
 Obj=building
 Name=alter_Anleger
 copyright=Pumuckl999
@@ -12,7 +11,7 @@ enables_pax=1
 Level=1
 cost=64000
 maintenance=8
-intro_year=1720
+intro_year=1800
 intro_month=1
 dims=1,2,4
 icon=> anleger_alt.2.2

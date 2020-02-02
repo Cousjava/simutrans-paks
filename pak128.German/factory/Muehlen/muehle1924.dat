@@ -1,12 +1,12 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 16-08-2018 
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Muehle_1924
 copyright=pumuckl999
-pax_level=5
+pax_level=50
 intro_year=1924
 intro_month=1
 retire_year=1983

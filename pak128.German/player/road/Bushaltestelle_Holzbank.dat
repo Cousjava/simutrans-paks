@@ -1,10 +1,9 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 
 #    letzte Bearbeitung:
-#    $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
-#---------------------------------
+---------------------------------
 obj=building
 name=Bushaltestelle_Holzbank
 copyright=Dirk John
@@ -18,8 +17,8 @@ enables_post=1
 enables_ware=0
 intro_year=1820
 intro_month=7
-retire_year=1890
-retire_month=6
+retire_year=1899
+retire_month=12
 Dims=1,1,2
 icon=> Bushaltestelle_Holzbank.2.1
 cursor=Bushaltestelle_Holzbank.2.0 

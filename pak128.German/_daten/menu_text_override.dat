@@ -218,3 +218,11 @@ obj=program_text
 Name=\nBauzeit von
 Note=\nIm Spiel gebaut ab
 ---------------------
+obj=program_text
+Name=Rotate Building
+Note=
+---------------------
+obj=program_text
+Name=merge stop
+Note=
+---------------------

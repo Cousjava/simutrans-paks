@@ -1,19 +1,20 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-#	Letzte Bearbeitung:
-#	03-03-2017 NNW
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Hopfenhof_NIC
 copyright=Lemuria
-pax_level=12
+pax_level=100
 intro_year=1800
 intro_month=1
 Location=Land
 DistributionWeight=10
-Productivity=25
+Productivity=100
+# eigentlich bräuchte es nicht so viele Hopfenbauern da die 
+# Brauereien nicht so viele Hopfen brauchen (nur 3%) 
+# aber Simutrans baut für 100% Verbrauch Fabriken
 OutputGood[0]=Hopfen
 OutputCapacity[0]=40
 max_fields=26

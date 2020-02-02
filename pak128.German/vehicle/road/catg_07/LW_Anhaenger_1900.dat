@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 10-08-2019
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=lw_Anhaenger1900
@@ -11,8 +10,8 @@ intro_year=1800
 intro_month=1
 retire_year=1921
 retire_month=12
-cost=70000
-runningcost=10
+cost=82000
+runningcost=13
 waytype=road
 speed=10
 weight=1
@@ -45,8 +44,8 @@ intro_year=1921
 intro_month=1
 retire_year=1970
 retire_month=12
-cost=70000
-runningcost=10
+cost=82000
+runningcost=12
 waytype=road
 speed=10
 weight=1

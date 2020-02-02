@@ -1,13 +1,13 @@
-#--------------------------------
+--------------------------------
 #     PAK128.german
 #     Vehicle road
 #     02-2017
-#---------------------------------
+---------------------------------
 obj=vehicle
 name=Zugpferde_1
 copyright=RedRabbit
 intro_year=1800
-retire_year=1955
+retire_year=1935
 retire_month=10
 cost=7000
 runningcost=1
@@ -32,7 +32,7 @@ obj=vehicle
 name=Zugpferde_2
 copyright=RedRabbit
 intro_year=1800
-retire_year=1955
+retire_year=1935
 retire_month=10
 cost=15000
 runningcost=2
@@ -57,7 +57,7 @@ obj=vehicle
 name=Zugpferde_4
 copyright=RedRabbit
 intro_year=1800
-retire_year=1955
+retire_year=1935
 retire_month=10
 cost=31200
 runningcost=4

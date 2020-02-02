@@ -2,28 +2,31 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
-name=BZT_D4ue-36
+name=BZT_Pwi
 copyright=TonyBzt
-intro_year=1935
+intro_year=1924
 intro_month=1
-cost=18290000
-runningcost=251
+retire_year=1962
+retire_month=10
+cost=4340000
+runningcost=97
 waytype=track
 freight=Post
-payload=80
-speed=150
+payload=30
+speed=90
 weight=29
-length=12
+length=8
 sound=-1
-EmptyImage[S]=D4ue.0.0
-EmptyImage[E]=D4ue.0.1
-EmptyImage[SE]=D4ue.0.2
-EmptyImage[SW]=D4ue.0.3
-EmptyImage[N]=D4ue.0.4
-EmptyImage[W]=D4ue.0.5
-EmptyImage[NW]=D4ue.0.6
-EmptyImage[NE]=D4ue.0.7
------------------------------
+EmptyImage[S]=DB_Pwi.0.0
+EmptyImage[E]=DB_Pwi.0.1
+EmptyImage[SE]=DB_Pwi.0.2
+EmptyImage[SW]=DB_Pwi.0.3
+EmptyImage[N]=DB_Pwi.0.4
+EmptyImage[W]=DB_Pwi.0.5
+EmptyImage[NW]=DB_Pwi.0.6
+EmptyImage[NE]=DB_Pwi.0.7
+--------------------------------
+
+

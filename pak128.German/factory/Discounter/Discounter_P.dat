@@ -1,8 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu:28-04-2019
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Discounter_Pascal2012
 copyright=pumuckl999
@@ -13,8 +13,8 @@ intro_month=1
 Location=land
 DistributionWeight=20
 Productivity=60
-pax_level=10
-mail_demand=40
+pax_level=300
+mail_demand=120
 InputGood[0]=Papier
 InputCapacity[0]=1600
 InputFactor[0]=10

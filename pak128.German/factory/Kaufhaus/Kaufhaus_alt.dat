@@ -1,8 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 20-08-2017
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Kaufhaus_1912
 copyright=Pumuckl999
@@ -46,8 +46,7 @@ InputSupplier[8]=0
 InputGood[9]=Wein
 InputCapacity[9]=400
 InputSupplier[9]=0
-pax_level=30
-#passenger_demand=10
+pax_level=100
 passenger_boost=2000
 mail_boost=500
 electricity_amount=5

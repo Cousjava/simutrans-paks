@@ -1,32 +1,32 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-# --------------------------------
+--------------------------------
 Obj=factory
 Name=Glasfabrik
 copyright=pumuckl999
 DistributionWeight=64
-Productivity=100
-pax_level=20
+Productivity=200
+pax_level=200
 intro_year=1896
 intro_month=1
 retire_year=2005
 retire_month=1
 location=city
 InputGood[0]=Sand
-InputCapacity[0]=800
+InputCapacity[0]=1600
 InputSupplier[0]=1
 InputFactor[0]=100
 InputGood[1]=Kohle
-InputCapacity[1]=800
+InputCapacity[1]=1600
 InputSupplier[1]=1
 InputFactor[1]=150
 OutputGood[0]=Glas
-OutputCapacity[0]=200
+OutputCapacity[0]=400
 OutputFactor[0]=25
 OutputGood[1]=Flaschen
-OutputCapacity[1]=400
+OutputCapacity[1]=800
 OutputFactor[1]=75
 MapColor=119
 climates=mediterran

@@ -20,6 +20,7 @@ length=7
 constraint[prev][0]=Chiemseebahn Lok
 constraint[prev][1]=Chiemseebahn Wagen 1 und 2 Klasse
 constraint[prev][2]=Chiemseebahn Wagen 2 Klasse
+constraint[prev][3]=Lok_Gueterstrassenbahn
 constraint[next][0]=Chiemseebahn Wagen 1 und 2 Klasse
 constraint[next][1]=Chiemseebahn Wagen 2 Klasse
 constraint[next][2]=none

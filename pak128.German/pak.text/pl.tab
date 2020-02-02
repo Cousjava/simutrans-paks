@@ -9,7 +9,7 @@
 #                              Language: pl Polski                             #
 #                             Encoding: ISO-8859-2                             #
 #                             Font: prop-latin2.fnt                            #
-#                           Date Created: 19.11 2019                           #
+#                            Date Created: 1.02 2020                           #
 #                                                                              #
 ################################################################################
 #____________________________bridge - monorail_track____________________________
@@ -770,7 +770,7 @@ asphalt_road_100
 Droga asfaltowa
 Asphalt-Autobahn
 Autostrada asfaltowa
-Betonierte Autobahn
+Betonierte_Autobahn
 Autostrada betonowa
 city_road
 Droga miejska

@@ -1,8 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu:13-04-2019
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Versandhandel_1886
 copyright=pumuckl999
@@ -13,8 +13,8 @@ retire_month=6
 Location=land
 DistributionWeight=40
 Productivity=60
-pax_level=10
-mail_demand=40
+pax_level=60
+mail_demand=180
 InputGood[0]=Textilien
 InputCapacity[0]=1600
 InputFactor[0]=10

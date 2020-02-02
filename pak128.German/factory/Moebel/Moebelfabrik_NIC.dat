@@ -1,14 +1,12 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-#	Letzte Bearbeitung:
-#   $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Moebelfabrik_NIC
 copyright=TonyBzt
-pax_level=55
+pax_level=200
 intro_year=1909
 intro_month=1
 retire_year=1990

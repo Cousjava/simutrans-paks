@@ -1,10 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 02-2014
-#	Letzte Bearbeitung:
-#   $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 Name=NDT_Importeur
 copyright=pumuckl999
@@ -13,7 +11,7 @@ intro_year=1800
 intro_month=1
 retire_year=1980
 retire_month=2
-location=land
+location=City
 DistributionWeight=1
 Productivity=100
 OutputGood[0]=Mandeln
@@ -23,7 +21,7 @@ OutputGood[1]=Suedfruechte
 OutputCapacity[1]=400
 OutputFactor[1]=100
 MapColor=194
-climates=mediterran, tropic, desert
+climates=tropic, desert
 electricity_amount=3
 passenger_boost=1000
 mail_boost=500

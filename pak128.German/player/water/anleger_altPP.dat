@@ -1,9 +1,8 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 25-12-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
-#---------------------------------
+---------------------------------
 Obj=building
 Name=alter_Anleger_Passagiere-Post
 copyright=Pumuckl999
@@ -13,7 +12,7 @@ enables_post=1
 Level=1
 cost=64000
 maintenance=8
-intro_year=1720
+intro_year=1800
 intro_month=1
 dims=1,2,4
 icon=> anleger_altPP.2.2

@@ -1,10 +1,7 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Menü
-#    Neu:
-#    letzte Bearbeitung:
-#    03-09-2015 The Transporter
-#---------------------------------
+---------------------------------
 Obj=menu
 name=GeneralTools
 Image[0]=> menu_buttons.0.1
@@ -166,6 +163,13 @@ Image[57]=> menu_buttons.4.9
 Image[58]=> menu_buttons.4.10
 Image[59]=> menu_buttons.4.11
 Image[60]=> menu_buttons.4.12
+# Menu Text ohne beta
 Image[61]=> menu_buttons.4.13
+# Menu Text für beta
+Image[62]=> menu_buttons.4.14
+# Haus / Bahnsteig drehen
+Image[63]=> menu_buttons.3.3
+# Halte stellen merge / zusammenlegen
+Image[64]=> menu_buttons.3.4
 
 --

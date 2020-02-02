@@ -1,9 +1,8 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 01-08-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
-#---------------------------------
+---------------------------------
 Obj=building
 Name=Frachthafen_1900
 copyright=Pumuckl999
@@ -12,7 +11,7 @@ enables_ware=1
 Capacity=128
 cost=128000
 maintenance=36
-intro_year=1900
+intro_year=1850
 intro_month=1
 dims=1,2,4
 icon=> Frachthafen_klein.3.0

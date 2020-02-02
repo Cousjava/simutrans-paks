@@ -9,7 +9,7 @@
 #                             Language: ja Japanese                            #
 #                                Encoding: UTF-8                               #
 #                                Font: m+10r.bdf                               #
-#                           Date Created: 19.11 2019                           #
+#                            Date Created: 1.02 2020                           #
 #                                                                              #
 ################################################################################
 #________________________________bridge - power_________________________________
@@ -214,6 +214,8 @@ Diesel
 ディーゼル
 Dosenessen
 缶詰
+Eier
+卵
 Eisenerz
 鉄鉱石
 Farben
@@ -228,14 +230,20 @@ Gefluegel
 包装食品
 Gerste
 大麦
+Glas
+ガラス
 Heizoel
 暖房用オイル
 Holz
 木材
 Hopfen
 ホップ
+Kameras
+カメラ
 Kohle
 石炭
+Mandeln
+アーモンド
 Maschinen
 機械
 Medikamente
@@ -246,6 +254,8 @@ Milch
 牛乳
 Moebel
 家具
+Obst
+果物
 Oel
 原油
 Papier
@@ -278,6 +288,8 @@ Weizen
 小麦
 Zement
 セメント
+Zucker
+砂糖
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
 CATEGORY_01

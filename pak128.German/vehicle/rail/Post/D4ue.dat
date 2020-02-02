@@ -2,30 +2,27 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
-name=BZT_PrPostwagen
+name=BZT_D4ue-36
 copyright=TonyBzt
-intro_year=1909
-intro_month=5
-retire_year=1960
-retire_month=12
-cost=7720000
-runningcost=156
+intro_year=1935
+intro_month=1
+cost=18290000
+runningcost=251
 waytype=track
-length=11
 freight=Post
-payload=50
-weight=22
-speed=100
+payload=80
+speed=150
+weight=29
+length=12
 sound=-1
-EmptyImage[S]=PrAbteilwagen.2.0
-EmptyImage[E]=PrAbteilwagen.2.1
-EmptyImage[SE]=PrAbteilwagen.2.2
-EmptyImage[SW]=PrAbteilwagen.2.3
-EmptyImage[N]=PrAbteilwagen.2.4
-EmptyImage[W]=PrAbteilwagen.2.5
-EmptyImage[NW]=PrAbteilwagen.2.6
-EmptyImage[NE]=PrAbteilwagen.2.7
------------------------------------------
+EmptyImage[S]=D4ue.0.0
+EmptyImage[E]=D4ue.0.1
+EmptyImage[SE]=D4ue.0.2
+EmptyImage[SW]=D4ue.0.3
+EmptyImage[N]=D4ue.0.4
+EmptyImage[W]=D4ue.0.5
+EmptyImage[NW]=D4ue.0.6
+EmptyImage[NE]=D4ue.0.7
+-----------------------------

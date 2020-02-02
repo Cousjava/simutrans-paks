@@ -1,12 +1,12 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 03-06-2018
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Kfz_Fabrik1961
 copyright=pumuckl999
-pax_level=40
+pax_level=120
 intro_year=1961
 intro_month=1
 #retire_year=

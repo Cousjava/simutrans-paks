@@ -1,12 +1,12 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Kohlemine_NIC
 copyright=Raven
-pax_level=100
+pax_level=200
 intro_year=1800
 intro_month=1
 retire_year=1950

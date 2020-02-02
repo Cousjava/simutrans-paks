@@ -22,7 +22,6 @@ power=809
 gear=400
 length=8
 constraint[next][0]=PrG8Tender
-constraint[next][1]=none
 EmptyImage[S]=PrG8.0.0
 EmptyImage[E]=PrG8.0.1
 EmptyImage[SE]=PrG8.0.2

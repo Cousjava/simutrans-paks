@@ -2,14 +2,13 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 14-06-2017
-#	Letzte Bearbeitung: 25-10-2018 pumuckl999
 ---------------------------------
 obj=vehicle
 name=offener Gueterwagen 1835 fl.Lebensmittel
 copyright=pumuckl999
 intro_year=1835
 intro_month=1
-retire_year=1910
+retire_year=1851
 retire_month=12
 cost=660000
 runningcost=34

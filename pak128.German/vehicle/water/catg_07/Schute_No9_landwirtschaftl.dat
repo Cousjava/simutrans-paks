@@ -2,15 +2,13 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
-
 ---------------------------------
 obj=vehicle
 name=Schute_No.9_landwirtschaftl._Gueter
 copyright=pumuckl999
 intro_year=1920
 intro_month=1
-retire_year=1951
+retire_year=1950
 retire_month=12
 cost=9000000
 runningcost=602

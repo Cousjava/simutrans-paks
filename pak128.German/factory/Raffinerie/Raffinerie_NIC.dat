@@ -1,14 +1,12 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 06-2010
-#	Letzte Bearbeitung:
-#	$Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Raffinerie_NIC
 Copyright=Lemuria
-pax_level=18
+pax_level=100
 intro_year=1961
 intro_month=1
 Location=Land

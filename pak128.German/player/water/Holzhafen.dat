@@ -1,9 +1,8 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 
-#    Letzte Bearbeitung: $Date$ - $Author$
-#---------------------------------
+---------------------------------
 Obj=building
 Name=Holzhafen
 copyright=Pumuckl999
@@ -12,7 +11,7 @@ enables_ware=1
 Capacity=64
 cost=288000
 maintenance=144
-intro_year=1895
+intro_year=1950
 intro_month=1
 dims=1,2,4
 icon=> Holzhafen.0.3

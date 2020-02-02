@@ -2,22 +2,22 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 2008
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
+# BC 4 1905 nach Musterblatt Ib 4 ?
 obj=vehicle
 name=BZT_PrAbteilwagen_Brh
 copyright=TonyBzt
-intro_year=1909
+intro_year=1905
 intro_month=5
 retire_year=1960
 retire_month=12
-cost=9250000
-runningcost=183
+cost=9330000
+runningcost=190
 waytype=track
 length=10
 freight=Passagiere
 payload=60
-weight=25
+weight=33
 speed=100
 EmptyImage[S]=PrAbteilwagen.0.0
 EmptyImage[E]=PrAbteilwagen.0.1
@@ -31,17 +31,17 @@ EmptyImage[NE]=PrAbteilwagen.0.7
 obj=vehicle
 name=BZT_PrAbteilwagen
 copyright=TonyBzt
-intro_year=1909
+intro_year=1905
 intro_month=5
 retire_year=1960
 retire_month=12
-cost=9250000
-runningcost=183
+cost=9330000
+runningcost=190
 waytype=track
 length=10
 freight=Passagiere
 payload=60
-weight=25
+weight=33
 speed=100
 EmptyImage[S]=PrAbteilwagen.1.0
 EmptyImage[E]=PrAbteilwagen.1.1

@@ -1,15 +1,14 @@
-#--------------------------------
+--------------------------------
 #     PAK128.german
 #     Vehicle
 #     02-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
-#--------------------------------
+--------------------------------
 
 obj=vehicle
 name=Kutschen_Schuettgut
 copyright=RedRabbit
 intro_year=1800
-retire_year=1955
+retire_year=1949
 retire_month=10
 waytype=road
 cost=168000

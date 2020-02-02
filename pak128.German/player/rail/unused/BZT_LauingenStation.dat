@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 
-#    letzte Bearbeitung:
-#    03-09-2015 The Transporter
 #---------------------------------
 Obj=building
 Name=BahnhofLauingen
@@ -12,7 +10,7 @@ type=extension
 waytype=track
 #extension_building=1
 enables_pax=1
-NoInfo=1
+#NoInfo=1
 Level=4
 intro_year=1910
 # Order N,E,S,W

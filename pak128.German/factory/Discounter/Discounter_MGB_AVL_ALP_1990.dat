@@ -5,7 +5,7 @@
 obj=factory
 name=Discounter_MGB_AVL_ALP_1990
 copyright=RedRabbit
-level=30
+pax_level=200
 intro_year=1990
 retire_year=2022
 location=city

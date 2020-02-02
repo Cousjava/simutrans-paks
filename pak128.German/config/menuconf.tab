@@ -65,6 +65,11 @@ icon_height = 32
 # WKZ_UNDERGROUND_PICK=34
 # WKZ_BUY_HOUSE=35
 # WKZ_CITYROAD=36 // timeline city road
+# WRZ_ERROR_MESSAGE=37
+# WRZ_CHANGE_WATER_HEIGHT=38
+# WRK_SET_CLIMATE=39
+# WRK_ROTATE_BUILDING=40
+# WRK_MERGE_STOP=41
 
 #
 general_tool[0]=0,0,9,a
@@ -151,6 +156,7 @@ general_tool[35]=16,13,11,
 # WKZ_ADD_MESSAGE_TOOL=32 (internal use)
 # WKZ_TOGGLE_RESERVATION=33
 # WKZ_VIEW_OWNER=34
+# WKZ_HIDE_UNDER_CURSOR=35
 #
 simple_tool[0]=0,p
 simple_tool[1]=1,W
@@ -212,8 +218,11 @@ simple_tool[34]=,O
 # WKZ_LIST_LABELS=25
 # WKZ_CLIMATES=26
 # WKZ_SETTINGS=27
-# =28
-#
+# WKZ_GAMEINFO=28
+# WKZ_THEMES=29
+# WKZ_SCENARIO=30
+# WKZ_SCENARIO_INFO=31
+
 dialog_tool[0]=0,?
 dialog_tool[1]=1,Q
 dialog_tool[2]=2,m
@@ -338,7 +347,7 @@ toolbar[0][37]=-,57
 toolbar[0][38]=-,58
 toolbar[0][39]=-,59
 toolbar[0][40]=-,60
-toolbar[0][41]=-,61
+toolbar[0][41]=-,62
 
 # slope tools
 toolbar[1][0]=general_tool[2]
@@ -456,9 +465,11 @@ toolbar[8][8]=general_tool[8]
 toolbar[8][9]=general_tool[6]
 toolbar[8][10]=general_tool[31]
 toolbar[8][11]=general_tool[32]
-toolbar[8][12]=dialog_tool[24]
-toolbar[8][13]=toolbar[11],27,,EDITOR,edittools.txt
-toolbar[8][14]=toolbar[12],55,,EDITTOOLS,edittools.txt 
+toolbar[8][12]=general_tool[40],63
+toolbar[8][13]=general_tool[41],64
+toolbar[8][14]=dialog_tool[24]
+toolbar[8][15]=toolbar[11],27,,EDITOR,edittools.txt
+toolbar[8][16]=toolbar[12],55,,EDITTOOLS,edittools.txt 
  
 
 # underground tools

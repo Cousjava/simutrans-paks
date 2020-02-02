@@ -9,7 +9,7 @@
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                             Font: Prop-Latin1.bdf                            #
-#                           Date Created: 20.11 2019                           #
+#                            Date Created: 1.02 2020                           #
 #                                                                              #
 ################################################################################
 #____________________________bridge - monorail_track____________________________
@@ -516,6 +516,8 @@ FTHamburg
 Funkturm             \n\nHamburg
 Grosse Fontaene Hannover
 Große Fontäne      \n\nKann man in den Herrenhäuser Gärten bei Hannover bewundern. Die Fontäne reicht über 80 Meter hoch.
+Grundschule
+Grundschule\n\nIn dieser Schule werden junge Simuthanier in den verschiedensten Disziplinen unterrichtet, die man im Simu-Leben benötigt. In Deutsch und Englisch werden kreative Übersetzungstexte verfasst. Mathematik befasst sich mit der Balance von Fuhrpark, Liefermengen und Betriebskosten. In Sachkunde werden die verschiedenen Fabriken und ihre Waren durch genommen. Im Physikunterricht dreht sich alles um den Pixel als kleinsten Baustein des Universum, dessen Spaltung so katastrophale Folgen hätte, dass der böse Segmentation Fault die Welt untergehen lassen würde. In Zeichnen werden Linienpläne gemalt, so dass sie möglichst übersichtlich sind. Im Musikunterricht wird leider etwas eintönig immer nur Midi gespielt und in der Sporterziehung wird erlernt, wie man sich als Passant beim gehen um Ecken teleportiert.
 Gym-Kirchl
 Kirchliches Gymnasium
 Gym-modern
@@ -575,7 +577,7 @@ Orangerie            \n\nOrangerien waren einst die Gewächshäuser der Mächtigen,
 Planetarium_Hamburg
 Planetarium          \n\nHamburg
 Realschule
-Montessori-Realschule
+Realschule\n\nIn dieser Schule werden junge Simuthanier in den verschiedensten Disziplinen unterrichtet, die man im Simu-Leben benötigt. In Deutsch und Englisch werden kreative Übersetzungstexte verfasst, Mathematik befasst sich mit der Balance von Fuhrpark und Fabriken, im Physikunterricht dreht sich alles um den Pixel als kleinsten Baustein des Universum, dessen Spaltung so katastrophale Folgen hätte, dass man sie verpixeln müsste, und in der Sporterziehung wird erlernt, wie man sich als Passant beim gehen um Ecken teleportiert.
 Rieckhuus_Hamburg-Curslack
 Rieckhuus           \n\nDas Rieck-Haus in Hamburg-Curslack ist ein Freilichtmuseum, das die bäuerliche Lebensweise vor der Industrialisierung darstellen will.
 Ruhmeshalle_mit_Bavaria
@@ -1114,6 +1116,8 @@ RES_ALL_2010_A_34
 Landmark-Tower Bremen
 RES_ALL_Schrebergarten_a_01
 Schrebergarten-Parzelle (20 Euro Miete)
+RES_ALL_Schrebergarten_a_02
+Ein Schrebergarten. Hier kann sich der müde Bürger von den Strapazen der Arbeitswoche erholen.
 RES_ALL_Schrebergarten_b_01
 Schrebergarten-Parzelle (35 Euro Miete)
 RES_ALL_Schrebergarten_c_01
@@ -1136,18 +1140,32 @@ RES_ALL_Siedlungshaus_c_03
 Ein typisches Siedlungshaus des "Wirtschaftswunders".
 RES_ALL_Siedlungshaus_c_05
 Ein typisches Siedlungshaus des "Wirtschaftswunders".
+RES_ALP_1800_A_01
+Wohnhaus aus dem 18. Jahrhundert - Ockergelbe Fassade
 RES_ALP_1800_A_04
 Stall mit Geräteschuppen und Geflügelhütte
 RES_ALP_1800_A_05
 Zur Künstlerwerkstatt umgebauter Kuhstall mit kleiner Einliegerwohnung.
 RES_ALP_1800_A_07
 Zum Wohnhaus umgebauter und renovierter Kuhstall.
+RES_ALP_1800_B_01
+Wohnhaus aus dem 18.Jahrhundert -Lindgrüne Fassade 
 RES_ALP_1800_B_04
 Aus Felsstein gebautes Häuschen mit Geräteschuppen und Vorgarten
+RES_ALP_1800_C_01
+Zwillingshäuser\n\nWer sich das Grundstück teilt, kann auch mit kleinem Geldbeutel, eine eigenes Häuschen bauen. 
+RES_ALP_1801_A_01
+Kleines Einfamilienhaus mit Garten
+RES_ALP_1801_B_01
+Einfamilienhaus mit gelber Fassade
+RES_ALP_1801_C_01
+Bauernhaus mit kleinem Stall\n\nDas ist das Austragshäuschen eines großen Bauern in Aubing. Der Bauernhof ist längst abgerissen, aber der Austrag steht noch. Das Haus ist älter als die Straße davor, das kennt man am niedrigen Eingang und Erdgeschoss unter Straßenniveau. Um eine für den Autoverkehr geeignete Straße zu schaffen wurde der Dorfbach verrohrt und darüber die Altostrasse gebaut. So steht dieses Haus nun nicht mehr romantisch am Dorfbach sondern an der Hauptstraße.  
 RES_ALP_1802_A_01
 Haus von Makie\n\nSehr zur Freude seines vierjährigen Sohns gibt es das Haus von Papa auch im Spiel Simutrans. Er baut es eifrig, ganze Stadtviertel bestehen nur aus diesem Haustyp. Auch Bahnhöfe, Depots und Fahrpläne stellen kein Problem für ihn dar. Damit ist er möglicherweise der jüngste Simutrans Spieler. Das Haus wurde 1903 von einem Schmied gebaut und hat viele Kinder gesehen.
 RES_ALP_1802_B_01
 Haus in Blau\n\nDieses Haus ist Altbau.
+RES_ALP_1802_C_01
+Verwildertes Baugundstück\n\nXaver Tüchtig hat in seiner Nähe, für seinen Sohn Hans ein Grundstück gekauft. Damit, falls es dieser endlich einmal zu einer Frau bringt, er hier für die junge Familie dann, ein gemütliches Familienheim bauen kann. 
 RES_ALP_1902_A_08
 Oberbayrisches Bauernhaus. Das Wohnhaus ist alles, was vom ehemaligen Mayertalerhof übrig geblieben ist.
 RES_ALP_1924_A_11
@@ -1211,7 +1229,7 @@ Wohnhaus mit Lagerschuppen.
 RES_AVL_1870_A_14
 Ein gut situierter Notar ließ sich dieses ehemalige Stadtschlösschen auf die Bedürfnisse seiner Familie samt Personal\numbauen. Der derzeitige Besitzer hat nicht ganz soviel ?Anhang? und deshalb stehen ein Teil der Räume leer.
 RES_AVL_1870_A_18
-In diesem Gebäude aus der Jahrhundertwende ist eine Privatschule für die Kinder wohlhabender Eltern untergebracht.
+Schule\n\nIn diesem Gebäude aus der Jahrhundertwende ist eine Privatschule für die Kinder wohlhabender Eltern untergebracht.
 RES_AVL_1890_A_16
 Ein gut situierter Geschäftsmann hat diesem ehemaligen Stadtschlösschen viel Pflege angedeihen lassen. Daher ist es auch der Stolz der Bewohner der Siedlung drum herum, hebt doch diese noble Adresse den Gesamtwert des Viertels erheblich.
 RES_AVL_1891_B_18
@@ -1306,6 +1324,8 @@ RES_CLU_1900_A_10
 Hauptpost am Neuer Markt von Rostock
 RES_CLU_1906_A_16
 Hauptpost am Neuer Markt von Rostock jetzt aufgestockt und in grün
+RES_CLU_1922_B_22
+Städtischer Wohnblock aus den 1920er Jahren
 RES_CLU_1922_C_22
 Wohnblock 1922\n\nIn den 20 Jahren nach dem 1. Weltkrieg herrschte Aufbruchstimmung. Die Avantgarde zeigte sich auch in der neuen Blockbebauung in Berlin.
 RES_CLU_1924_A_24
@@ -2499,7 +2519,7 @@ factory_Oelbohrinsel_details
 Oelfeld
 Ölfeld
 factory_Oelfeld_details
-<title>Ölfeld</title><p>Die technische und medizinische Verwendbarkeit von Erdöl war zwar seit vielen Jahrhunderten bekannt, aber erst im 19. Jahrhundert ermöglichte die technische Entwicklung die industrielle Ausbeutung von "Ölfeldern", wie die unterirdischen Erdöllagern genannt werden.</p>
+<title>Ölfeld</title><p>Die technische und medizinische Verwendbarkeit von Erdöl war zwar seit vielen Jahrhunderten bekannt, aber erst im 19. Jahrhundert ermöglichte die technische Entwicklung die industrielle Ausbeutung von "Ölfeldern", wie die unterirdischen Erdöllagern genannt werden. In Deutschland wurde in Wietze schon im Mittelalter Öl gewonnen. 1858 begann dort die industrielle Förderung  mit ersten Erdölbohrung der Welt. 1930 brach Erdöl und Gas in das Kalibergwerk Volkenroda ein. Damit wurde der Zusammenhang von Salzstöcken und Ölvorkommen erkannt. 1931 lieferte Volkenroda ein Viertel der Deutschen Ölförderung.  </p>
 factory_Oktoberfest_details
 <title>Das Oktoberfest in München</title><p>Von den Einheimischen "Die Wiesn" genannt, findet im Septembers statt, dauert zwei Wochen und endet am ersten Sonntag im Oktober. Das erste Fest fand im Jahr 1910 anlässlich der Hochzeit des späteren Bayrischen König Ludwig I statt. Seit dieser Zeit wächst das Fest von Jahr zu Jahr.<br>1818 das erste Karusell<br>1869 der Schichtl, es werden Zaubereien und Kuriositäten präsentiert und Besucher mittels Guillotine enthauptet,<br>1880 ein Riesenrad mit 12 Meter aus Holz<br>1894 die Hexenschaukel<br>1898 der Wirt Georg Lang erschleicht sich fünf Budenplätze und errichtete darauf seine "Bierburg", das war der beginn der großen Bierzelte,<br>1906 Toboggan, eine Rutsche, seit 1933 mit einem Förderband für die Fahrgäste,<br>1910 Teufelsrad, wem es gelingt oben zu bleiben gewinnt,<br>1920 Krinoline ein Rundkarussell,<br>1932 Pitts Todeswand, Motoradfahrer an einer hölzernen zylindrischen Steilwand,<br>1979 Riesenrad aus Stahl mit 48 Meter<br> Diese liebevoll gepflegten Attraktionen sind auch heute noch vertreten.</p><p><em> Ein so großes Fest mit Bier und allem anderen zu versorgen, erfordert eine ausgefeilte Logistik. Auch die Besucher möchten zum Fest gefahren werden und anschließend auch wieder zurück. Wird das Fest optimal versorgt, wird es zum größten Volksfest der Welt wachsen. </em></p><p>Für das Oktoberfest brauen die Münchner Brauereien ein spezielles Bier das bis zu 6,4 Volumenprozent Alkohol enthält. So mancher Besucher unterschätzt sowohl den Inhalt der Biergläser, als auch den Alkoholgehalt des Biers. Häufig versuchen diese dann, mit letzter Kraft, das Fest auf dem kürzesten Weg zu verlassen. Dieser führt hinter den Festzelten den Hang eines kleinen Hügels hinauf. Manche scheitern an der kleinen Steigung und bleiben liegen. Die einen schlafen augenblicklich ein, andere erbrechen sich. Die Einheimischen nennen ihn deshalb den Kotzhügel. Leider zieht diese besondere Attraktion zunehmend Schaulustige an, so dass die Polizei in letzter Zeit dort zunehmend nach dem Rechten sehen muss.  </p>
 Papierfabrik_NIC
@@ -2823,11 +2843,15 @@ Schrebergärten
 desert
 Küste
 Make way or stop public (will join with neighbours), %i times maintainance
-Erzeugen/verbinden mit öffentlichem Stop (%i$ pro Feld und Level)
+Erzeugen/verbinden mit öffentlicher Haltestelle (%i$ pro Feld und Level)
 mediterran
 Ostdeutschland
+merge stop
+Haltestellen zusammenlegen
 rocky
 Alpines Klima
+Rotate Building
+Gebäude drehen
 temperate
 Mittelgebirge
 Tonnen
@@ -4147,11 +4171,11 @@ Stückgutwagen zweiteilig - vorn
 BZT_Leig1b
 Stückgutwagen zweiteilig - hinten
 BZT_PrAbteilwagen
-Preußischer Abteilwagen
+Preußischer Abteilwagen BC 4 
 BZT_PrAbteilwagen_Brh
-Preußischer Abteilwagen mit Bremser
+Preußischer Abteilwagen BC 4 mit Bremser
 BZT_PrPostwagen
-Preußischer Postwagen
+Preußischer Postwagen Pw 4
 BZT_Pwi
 Preußischer Packwagen
 BZT_Rheingold_1_2Kl
@@ -4557,7 +4581,7 @@ Selbstendlade-TW_Fr.-Krupp AG
 Silberlinge_orange
 Nahverkehrszugwagen ("Silberlinge") orange
 Silberlinge_silbern
-Nahverkehrszugwagen ("Silberlinge")
+Nahverkehrszugwagen B4nb-59 ("Silberlinge")
 Spezialwagen_GGkxr_lw.Gueter
 Spezialwagen GGkxr für landw. Güter
 Spezialwagen_GGkxr_Stueckgut
@@ -5014,7 +5038,7 @@ asphalt_road_100
 asphaltierte Straße
 Asphalt-Autobahn
 Asphalt - Autobahn
-Betonierte Autobahn
+Betonierte_Autobahn
 Betonautobahn
 city_road
 Stadtstraße

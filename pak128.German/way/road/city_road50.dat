@@ -7,8 +7,9 @@ Obj=way
 Name=city_road50
 copyright=The Transporter
 waytype=road
-intro_year=1912
+intro_year=1950
 intro_month=1
+# unterbrochene Leit oder Mittel-Linien erst ab 1953
 cost=2000
 maintenance=6
 topspeed=50

@@ -1,12 +1,12 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 11-10-2017 
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Windmuehle_1800
 copyright=pumuckl999
-pax_level=5
+pax_level=15
 intro_year=1800
 intro_month=1
 retire_year=1900

@@ -1,12 +1,12 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 20-2-1017
-# --------------------------------
+--------------------------------
 Obj=factory
 Name=alter_Kamerahersteller
 copyright=pumuckl999
-pax_level=40
+pax_level=200
 intro_year=1912
 intro_month=1
 retire_year=2005

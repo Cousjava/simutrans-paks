@@ -2,7 +2,7 @@
 #	Industrie
 #	Neu:
 #	 16 April 2016 NNW
-#--------------------------------------------
+--------------------------------------------
 Obj=factory
 Name=NorddeutscherExporteur_1891
 copyright=nnw
@@ -40,10 +40,10 @@ InputFactor[4]=100
 # InputFactor[5]=100
 MapColor=132
 electricity_amount=1
-passenger_demand=20
-passenger_boost=500
-mail_boost=1000
-climates=mediterran, tropic, desert
+mail_demand=50
+passenger_boost=1000
+mail_boost=500
+climates=tropic, desert
 dims=3,3,4
 BackImage[0][0][0][0][0][0]=exporteur_1891.0.0
 BackImage[0][0][0][1][0][0]=exporteur_1891.0.1

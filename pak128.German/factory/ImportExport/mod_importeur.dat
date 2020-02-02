@@ -1,15 +1,15 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 18-02-2017
-# --------------------------------
+--------------------------------
 Obj=factory
 Name=moderner_Importeur
 copyright=pumuckl999
 pax_level=15
 intro_year=1980
 intro_month=1
-location=land
+location=City
 DistributionWeight=1
 Productivity=10
 Range=2
@@ -28,7 +28,7 @@ OutputGood[3]=Flachs
 OutputCapacity[3]=800
 OutputFactor[3]=2000
 MapColor=194
-climates=mediterran, tropic, desert
+climates=tropic, desert
 electricity_amount=3
 passenger_boost=1000
 mail_boost=500

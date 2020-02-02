@@ -1,8 +1,8 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 
-#---------------------------------
+---------------------------------
 Obj=building
 Name=Lagerplatz_Steine
 copyright=RedRabbit
@@ -12,7 +12,7 @@ enables_ware=1
 Level=7
 cost=280000
 maintenance=56
-intro_year=1970
+intro_year=1870
 intro_month=1
 Dims=1,1,4
 cursor=Kran_Lagerplatz.5.6

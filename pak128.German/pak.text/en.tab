@@ -9,7 +9,7 @@
 #                             Language: en English                             #
 #                             Encoding: ISO-8859-1                             #
 #                             Font: Prop-Latin1.bdf                            #
-#                           Date Created: 19.11 2019                           #
+#                            Date Created: 1.02 2020                           #
 #                                                                              #
 ################################################################################
 #____________________________bridge - monorail_track____________________________
@@ -826,6 +826,8 @@ RES_ALL_1972_A_12
 Multifamily-House of the SI-Immogrund 
 RES_ALL_Schrebergarten_a_01
 Garden Plot (Rent 20 euros) 
+RES_ALL_Schrebergarten_a_02
+An allotment garden. Here can the tired citizen recover from the strains of the working week.
 RES_ALL_Schrebergarten_b_01
 Garden Plot (Rent 35 euros) 
 RES_ALL_Schrebergarten_c_01
@@ -1786,6 +1788,10 @@ Kaufhaus_NIC
 Mall
 factory_Kaufhaus_NIC_details
 <title>Large north-german Warehouse</title><p>A department store is a single or wholesale shop that, in contrast to the "Simple Shop", Goods of all kind on mostly several floors for sale offers.</p>
+KFZ_Fabrik_NIC
+Car Fab (please do not use this anymore!)
+factory_KFZ_Fabrik_NIC_details
+<title> Discarded factory </title> <p> This car factory is still included in PAK128.german, so old saved games can be loaded without problems. <br> Please do not <strong> rebuilt this factory. </strong> </p>
 Kfz_Fabrik1961
 Car Fab (1961)
 Kiesgrube
@@ -2314,12 +2320,16 @@ Long_Goods_Dock
 Timber-pier
 mediterran
 East-Germany
+merge stop
+Merge stop
 Paletten
 Paletts
 preSignals
 Presignal (Two blocks)
 rocky
 Alpine Climate
+Rotate Building
+Rotate building
 Sack
 Pouches
 Schiffe
@@ -3567,7 +3577,7 @@ Cargowaggon 2-axis (Head)
 BZT_Leig1b
 Cargowaggong dyadic (End)
 BZT_PrAbteilwagen
-Prussian Cabinwaggon
+Prussian Cabinwaggon BC 4
 BZT_PrAbteilwagen_Brh
 Prussian Cabinwaggon with break
 BZT_PrPostwagen
@@ -3965,7 +3975,7 @@ Talbot TALS 966
 Silberlinge_orange
 Localrail-waggon ("Silberlinge") orange
 Silberlinge_silbern
-Localrail-waggon ("Silberlinge")
+Localrail-waggon B4nb-59 ("Silberlinge")
 Spezialwagen_GGkxr_lw.Gueter
 Specialcar Ggkxr-agri goods
 Spezialwagen_GGkxr_Stueckgut
@@ -4398,7 +4408,7 @@ asphalt_road_100
 bitumized Road
 Asphalt-Autobahn
 Asphalt-highway
-Betonierte Autobahn
+Betonierte_Autobahn
 Concrete Highway
 city_road
 Cityroad

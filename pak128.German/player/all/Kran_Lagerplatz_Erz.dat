@@ -1,8 +1,8 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 
-#---------------------------------
+---------------------------------
 Obj=building
 Name=Lagerplatz_Erz
 copyright=RedRabbit
@@ -12,7 +12,7 @@ enables_ware=1
 Level=4
 cost=256000
 maintenance=32
-intro_year=1970
+intro_year=1870
 intro_month=1
 Dims=1,1,4
 cursor=Kran_Lagerplatz.0.6

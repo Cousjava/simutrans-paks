@@ -1,12 +1,12 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 06-2010
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Computerhersteller1980
 copyright=Lemuria
-pax_level=40
+pax_level=200
 intro_year=1980
 intro_month=1
 retire_year=2007

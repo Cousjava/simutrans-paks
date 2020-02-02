@@ -1,16 +1,14 @@
-#--------------------------------
+--------------------------------
 #     PAK128.german
 #     Vehicle
 #     11-2016
-#	Letzte Bearbeitung: $Date$ - $Author$
-#--------------------------------
-
+--------------------------------
 obj=vehicle
 name=Kutsche_Tankwagen
 copyright=RedRabbit
 intro_year=1859
 intro_month=1
-retire_year=1950
+retire_year=1935
 retire_month=5
 waytype=road
 cost=170000

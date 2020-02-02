@@ -1,13 +1,11 @@
 #	PAK128.german
 #	Buildings - factory
 #       Erstellt 01-2015
-#       Geaendert
-#	05-03-2016 NNW 
 ----------------------------------------------------------------
 obj=factory
 name=Discounter_NDL_ODL_1990
 copyright=RedRabbit
-level=30
+pax_level=200
 intro_year=1990
 retire_year=2022
 location=city

@@ -1,10 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-#	Letzte Bearbeitung:
-#   $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Kaufhaus_NIC
 copyright=Pumuckl999
@@ -49,8 +47,7 @@ InputSupplier[9]=0
 InputGood[10]=Wein
 InputCapacity[10]=400
 InputSupplier[10]=0
-pax_level=35
-#passenger_demand=10
+pax_level=200
 passenger_boost=2000
 mail_boost=500
 electricity_amount=5

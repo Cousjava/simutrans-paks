@@ -1,14 +1,10 @@
 #!/bin/bash
-repo="/home/martin/pak128g.neupak"
+repo="/home/herruntermoser/Subversion/PAK128German"
 if [ ! -d $repo ]
 then
 echo -e "\033[91m Bitte korrekten Pfad zum Arbeitsverzeichnis eintragen!\n"
 fi
 
-if [ ! -x ./makeobj ]
-then
-    echo "Makeobj ist nicht als Ausfuehrbar registrtiert!=>chmod +x ./makeobj"
-fi
 rm -f $repo/LOG/*.log
 echo -e "\033[91m LOG geleert\n"
 rm -f ./simutrans/PAK128.german/*.pak > "$repo/LOG/Pakmaker.log" 2> "$repo/LOG/Error_Pakmaker.log"
@@ -67,18 +63,24 @@ if [ ! -f Outside.png ]; then
 echo -e "\033[1;92m Kopiere Outside.png"
 cp $repo/ground/Outside.png $repo
 fi
-cd ../pak128german
-svn info >$repo/Repository_Info.tab
-cd $repo
+. ./repository_info.sh
 info=$(cat ./Repository_Info.tab | grep -oP 'Revision: \K([0-9]+)')
 sed "s/Rev\. [0-9]*/Rev\. $info/" $repo/ground/Outside.dat > ./Outside.dat
 $repo/makeobj PAK128 simutrans/PAK128.german/ ./ >>"./LOG/Pakmaker.log" 2>> "./LOG/Error_Pakmaker.log"
-echo -e "\033[1;91mPAKMAKER FEHLER\n"
+echo -e "\033[1;91mPAKMAKERFEHLER.txt erstellen\n"
 cd LOG
-grep -R -i "Warning\|Error"
+grep -R -i 'Warning\|Error'>>"../PAKMAKERFEHLER.txt"
 echo -e "\033[1;92m Aufräumen"
 cd $repo
 rm Outside.png
 rm Outside.dat
 rm Repository_Info.tab
 echo -e "\033[1;91mPakset komplett!\033[0m"
+while true
+do
+	read -n 1 -p "q zum beenden druecken." q
+	case "$q" in
+		q)	break;;
+		*)	;;
+	esac
+done

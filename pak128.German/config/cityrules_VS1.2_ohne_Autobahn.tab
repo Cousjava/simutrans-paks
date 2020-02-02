@@ -91,11 +91,12 @@ cluster_factor = 15
  
 # if random(8 + chance) == 0 wird gebaut
 # daraus ergibt sich
-# -8 = 100%
-# -7 = 50%
-# -6 = 25%
-# -5 = 12,5% Chance
-# -4 = 6,25% Chance
+# -8 = 100% (auf jeden Fall)
+# -7 = 100% (da random(1) nicht 1 liefert sondern nur 0)
+# -6 = 50%
+# -5 = 25%
+# -4 = 12,5% Chance
+# -3 = 6,25% Chance
 
 # Haus an einer Strasse neben einem Haus rechts
 house_1 = ..... ..... ..nh. ..ss. .....
