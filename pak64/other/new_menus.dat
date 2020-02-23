@@ -20,6 +20,10 @@ Image[12]=> wkz_icons.0.12
 Image[13]=> wkz_icons.0.13
 Image[14]=> wkz_icons.0.14
 Image[15]=> wkz_icons.0.15
+# buy house
+Image[16]=> wkz_icons.3.20
+Image[17]=> wkz_icons.3.21
+Image[18]=> wkz_icons.0.16
 --
 Obj=menu
 name=SimpleTools
@@ -67,6 +71,14 @@ Image[22]=> wkz_icons.2.20
 Image[23]=> wkz_icons.2.21
 Image[24]=> wkz_icons.2.22
 Image[25]=> wkz_icons.2.23
+Image[26]=> wkz_icons.3.14
+# network and scenario
+Image[27]=> wkz_icons.3.14
+Image[28]=> wkz_icons.3.15
+Image[29]=> wkz_icons.1.14
+# depot and vehicle lists
+Image[30]=> wkz_icons.3.16
+Image[31]=> wkz_icons.3.17
 --
 Obj=menu
 name=BarTools
