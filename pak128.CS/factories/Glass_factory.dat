@@ -25,7 +25,8 @@ OutputCapacity[0]=800
 
 Smoke=industry_smoke
 SmokeTile[0]=0,0
-SmokeOffset[0]=8,-56
+SmokeOffset[0]=8,-57
+#SmokeUplift=0
 
 #total coal input (210)
 InputGood[0]=Kohle

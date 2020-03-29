@@ -22,9 +22,8 @@ Passenger_boost=500
 
 Smoke=industry_smoke
 SmokeTile[0]=0,0
-# x - <- -> +
-# from the approximate middle of the 128x128 tile, in 64x64 scale
-SmokeOffset[0]=3,-40
+SmokeOffset[0]=3,-41
+#SmokeUplift=0
 
 InputGood[0]=Eisenerz
 InputCapacity[0]=12000

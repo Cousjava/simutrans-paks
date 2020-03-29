@@ -20,9 +20,10 @@ Passenger_boost=500
 
 Smoke=industry_smoke
 SmokeTile[0]=0,0
-SmokeOffset[0]=-4,-60
+SmokeOffset[0]=-4,-62
 SmokeTile[1]=0,0
-SmokeOffset[1]=4,-60
+SmokeOffset[1]=4,-62
+#SmokeUplift=0
 
 #total input 560t
 InputGood[0]=grain

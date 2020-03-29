@@ -21,7 +21,8 @@ Passenger_boost=800
 
 Smoke=industry_smoke
 SmokeTile[0]=0,2
-SmokeOffset[0]=4,-52
+SmokeOffset[0]=4,-57
+#SmokeUplift=0
 
 # total flour input 500
 InputGood[0]=flour

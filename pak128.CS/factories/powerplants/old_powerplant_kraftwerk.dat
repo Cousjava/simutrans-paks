@@ -24,7 +24,8 @@ Passenger_boost=800
 
 Smoke=industry_smoke
 SmokeTile[0]=0,1
-SmokeOffset[0]=-8,-64
+SmokeOffset[0]=-9,-67
+#SmokeUplift=0
 
 InputGood[0]=Kohle
 InputCapacity[0]=8000
