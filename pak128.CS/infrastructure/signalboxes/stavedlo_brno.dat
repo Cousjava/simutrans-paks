@@ -1,0 +1,33 @@
+# http://www.onemanbrnoblog.cz/stavedlo-cislo-5/
+Obj=building
+type=signalbox
+Name=stavedlo_brno
+copyright=Lubak91
+intro_year=1891
+retire_year=1954
+retire_month=6
+level=1
+cost=5000000
+maintenance=100000
+employment_capacity=3
+signal_groups=2,3,4,5,7,12,13,14,15,17,22,23,24
+allow_underground=0
+radius=1500
+population_and_visitor_demand_capacity=0
+mail_demand=0
+capacity=32
+needs_ground=1
+Dims=1,1,4
+
+BackImage[0][0][0][0][0][0]=stavedlo_brno.1.0
+BackImage[1][0][0][0][0][0]=stavedlo_brno.1.3
+BackImage[2][0][0][0][0][0]=stavedlo_brno.1.2
+BackImage[3][0][0][0][0][0]=stavedlo_brno.1.1
+
+BackImage[0][0][0][0][0][1]=stavedlo_brno_zima.1.0
+BackImage[1][0][0][0][0][1]=stavedlo_brno_zima.1.3
+BackImage[2][0][0][0][0][1]=stavedlo_brno_zima.1.2
+BackImage[3][0][0][0][0][1]=stavedlo_brno_zima.1.1
+
+Icon=> stavedlo_brno.0.2
+Cursor=stavedlo_brno.0.1
