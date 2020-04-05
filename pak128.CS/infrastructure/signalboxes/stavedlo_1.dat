@@ -19,10 +19,10 @@ capacity=8
 needs_ground=1
 Dims=1,1,4
 
-BackImage[0][0][0][0][0][0]=stavedlo_1.1.1
-BackImage[1][0][0][0][0][0]=stavedlo_1.1.0
-BackImage[2][0][0][0][0][0]=stavedlo_1.1.3
-BackImage[3][0][0][0][0][0]=stavedlo_1.1.2
+BackImage[0][0][0][0][0][0]=stavedlo_1.1.1,-28,14
+BackImage[1][0][0][0][0][0]=stavedlo_1.1.0,28,14
+BackImage[2][0][0][0][0][0]=stavedlo_1.1.3,26,-13
+BackImage[3][0][0][0][0][0]=stavedlo_1.1.2,-26,-13
 
 Icon=> stavedlo_1.0.1
 Cursor=stavedlo_1.0.0

@@ -19,15 +19,15 @@ capacity=32
 needs_ground=1
 Dims=1,1,4
 
-BackImage[0][0][0][0][0][0]=stavedlo_brno.1.0
-BackImage[1][0][0][0][0][0]=stavedlo_brno.1.3
-BackImage[2][0][0][0][0][0]=stavedlo_brno.1.2
-BackImage[3][0][0][0][0][0]=stavedlo_brno.1.1
+BackImage[0][0][0][0][0][0]=stavedlo_brno.1.0,-20,10
+BackImage[1][0][0][0][0][0]=stavedlo_brno.1.3,20,10
+BackImage[2][0][0][0][0][0]=stavedlo_brno.1.2,18,-9
+BackImage[3][0][0][0][0][0]=stavedlo_brno.1.1,-18,-9
 
-BackImage[0][0][0][0][0][1]=stavedlo_brno_zima.1.0
-BackImage[1][0][0][0][0][1]=stavedlo_brno_zima.1.3
-BackImage[2][0][0][0][0][1]=stavedlo_brno_zima.1.2
-BackImage[3][0][0][0][0][1]=stavedlo_brno_zima.1.1
+BackImage[0][0][0][0][0][1]=stavedlo_brno_zima.1.0,-20,10
+BackImage[1][0][0][0][0][1]=stavedlo_brno_zima.1.3,20,10
+BackImage[2][0][0][0][0][1]=stavedlo_brno_zima.1.2,18,-9
+BackImage[3][0][0][0][0][1]=stavedlo_brno_zima.1.1,-18,-9
 
 Icon=> stavedlo_brno.0.2
 Cursor=stavedlo_brno.0.1
