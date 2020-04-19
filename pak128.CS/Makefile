@@ -179,8 +179,10 @@ INFRASTRUCTURE128 += water_all
 ifdef EXTENDED
 	INFRASTRUCTURE128 += signalboxes
 	INFRASTRUCTURE128 += rail_signals/extended
+	INFRASTRUCTURE128 += tram_signals/extended
 else
 	INFRASTRUCTURE128 += rail_signals/standard
+	INFRASTRUCTURE128 += tram_signals/standard
 endif
 
 DIRS128 += $(addprefix infrastructure/,$(INFRASTRUCTURE128))
