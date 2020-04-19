@@ -1,6 +1,15 @@
+# Celkovy trvaly vykon 3920 kW (wikipedie), 4000 kw (atlaslokomotiv.net)
+# Celkova max tazna sila 200 kN (oba zdroje)
+# Celkova hmotnost (ve sluzbe) 385 t
+# Usporadani 681-081-683-084-684-082-682
+# 081 je 1. trida; 683 je bufet
+
 obj=vehicle
 cost=18384000
 speed=230
+# rekord 237 km/h (zkusebni jizda)
+# konstrukcni 230 km/h
+# homologace na 200 km/h
 weight=57
 runningcost=60
 fixed_cost=883
@@ -16,6 +25,12 @@ length=13
 gear=190
 freight=Passagiere
 payload=53
+
+# extended
+axles=4
+is_tilting=1
+bidirectional=1
+tractive_effort=50
 
 constraint[prev][1]=none
 constraint[prev][0]=CD_682
@@ -54,6 +69,12 @@ copyright=TommPa9
 length=12
 freight=Passagiere
 payload=52
+
+# extended
+axles=4
+is_tilting=1
+bidirectional=1
+# comfort prvni trida
 
 constraint[prev][0]=CD_681
 constraint[next][0]=CD_683
@@ -95,6 +116,13 @@ gear=190
 freight=Passagiere
 payload=24
 
+# extended
+axles=4
+is_tilting=1
+bidirectional=1
+tractive_effort=50
+catering_level=3
+
 constraint[prev][0]=CD_081
 constraint[next][0]=CD_084
 
@@ -131,6 +159,11 @@ copyright=TommPa9
 length=12
 freight=Passagiere
 payload=46
+
+# extended
+axles=4
+is_tilting=1
+bidirectional=1
 
 constraint[prev][0]=CD_683
 constraint[next][0]=CD_684
@@ -172,6 +205,12 @@ gear=190
 freight=Passagiere
 payload=53
 
+# extended
+axles=4
+is_tilting=1
+bidirectional=1
+tractive_effort=50
+
 constraint[prev][0]=CD_084
 constraint[next][0]=CD_082
 
@@ -208,6 +247,11 @@ copyright=TommPa9
 length=12
 freight=Passagiere
 payload=52
+
+# extended
+axles=4
+is_tilting=1
+bidirectional=1
 
 constraint[prev][0]=CD_684
 constraint[next][0]=CD_682
@@ -248,6 +292,13 @@ length=13
 gear=190
 freight=Passagiere
 payload=53
+
+# extended
+axles=4
+is_tilting=1
+bidirectional=1
+tractive_effort=50
+can_lead_from_rear=1
 
 constraint[prev][0]=CD_082
 constraint[next][0]=CD_681

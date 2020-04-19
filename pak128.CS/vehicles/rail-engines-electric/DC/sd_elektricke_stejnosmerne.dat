@@ -62,10 +62,15 @@ intro_year=1994
 retire_year=2054
 waytype=track
 engine_type=Electric
-power=5220
+power=5220 # trvale
 copyright=TommPa9
 length=9
 gear=150
+
+# extended
+axles=6
+bidirectional=1
+tractive_effort=575 # max
 
 emptyimage[w]=sd_184.0.0,0,4
 emptyimage[nw]=sd_184.0.1,0,4

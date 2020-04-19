@@ -368,6 +368,7 @@ emptyimage[sw]=498_albatros0.0.7,0,4
 obj=vehicle
 cost=4654200
 speed=120
+# rekord 162 km/h
 weight=113
 runningcost=476
 fixed_cost=3356

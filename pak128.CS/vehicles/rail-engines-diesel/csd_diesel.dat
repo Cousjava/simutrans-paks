@@ -192,6 +192,7 @@ emptyimage[sw]=csd_781_sergej.0.7,0,4
 obj=vehicle
 cost=4204200
 speed=140
+# rekord 178 km/h
 weight=86
 runningcost=306
 fixed_cost=2741

@@ -1,4 +1,5 @@
 # ES64U4
+# 4-systemova, 1500=, 3000=, 25 kV~, 15 kV~
 obj=vehicle
 name=awt_183
 copyright=Lubak91
@@ -11,9 +12,16 @@ weight=87
 waytype=track
 length=10
 engine_type=electric
-power=6400
+#power=6400 # max
+power=6000 # trvale
 gear=134
 speed=230
+
+# extended
+axles=4
+bidirectional=1
+tractive_effort=304 # max
+
 EmptyImage[w]=awt_183.0.0,0,4
 EmptyImage[nw]=awt_183.0.1,0,4
 EmptyImage[n]=awt_183.0.2,0,4

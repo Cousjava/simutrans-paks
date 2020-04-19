@@ -1,6 +1,6 @@
 # ES64U4-G
 # @link=https://de.wikipedia.org/wiki/Siemens_ES64U4
-# 15kV 16.7Hz, 25kV 50Hz, 3kV =
+# 15kV 16.7Hz, 25kV 50Hz (variant -G je pouze stridava)
 obj=vehicle
 name=Arriva_183
 copyright=Lubak91
@@ -13,9 +13,16 @@ weight=87
 waytype=track
 length=10
 engine_type=electric
-power=6400
+#power=6400 # hodinovy vykon
+power=6000 # trvaly vyykon
 gear=130
 speed=230
+
+# extended
+axles=4
+bidirectional=1
+tractive_effort=304 # max
+
 EmptyImage[w]=alex_183.0.0,0,4
 EmptyImage[nw]=alex_183.0.1,0,4
 EmptyImage[n]=alex_183.0.2,0,4

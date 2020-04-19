@@ -1,8 +1,10 @@
 # ÖBB (Österreichische Bundesbahnen) - rakouské dráhy
 -------------------------------------
+# ES64U4
 obj=vehicle
 cost=6604500
 speed=230
+# rekord 357 km/h
 weight=87
 runningcost=206
 fixed_cost=3032
@@ -11,10 +13,17 @@ intro_year=2005
 retire_year=2055
 waytype=track
 engine_type=Electric
-power=6000
+#power=6400 # max
+power=6000 # trvale
 copyright=lubak91/TommPa9
 length=10
 gear=160
+
+# extended
+axles=4
+bidirectional=1
+tractive_effort=304 # max
+
 emptyimage[w]=obb_1216.0.0,0,4
 emptyimage[nw]=obb_1216.0.1,0,4
 emptyimage[n]=obb_1216.0.2,0,4
