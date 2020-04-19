@@ -1,0 +1,109 @@
+Mechanicka navestidla pouzivana u CSD
+Vzor pravdepodobne zhruba z roku 1911 (Ing. Rank)
+http://www.smpd.cz/olympia/navestidla.html
+
+Zajimave info v https://www.azd.cz/cs/media/casopis-reporter
+Cislo 2016/1 (1825-1869), /2 (1870-1925), /3 (1926–1951), /4 (1952–2006)
+Je tam i info o prejezdech, to sem nesepisoval.
+
+Pro drivejsi obdobi se mi nepodarilo najit spolehlive informace,
+casove udaje z ruznych zdroju si casto odporuji.
+
+1870 - Hradlovy uzaver - Carl Frischen
+1880 - Zavadeni hradlovych zarizeni v R-U
+1883 - Elektromechanicke zarizeni na severozapadni draze
+1883 - predvesti (zelene), dvouramenne navestidlo (Breitfeld Danek)
+1891 - Elektromechanicke zarizeni Rank 5007
+1894 - Elektrodynamicke zarizeni (v Prerove) 
+http://www.chzk.cz/index.php/muzeum/692-elektrodynamicke-zabezpecovaci-zarizeni-z-veseli-nad-moravou
+1895 - Elektromechanicke zarizeni na KFNB (Breclav - Prerov)
+1904 - Olomouc - prechod od distancich k vjezd + predvest
+1910 - max 6 km/h pro auta na prejezdu
+1911 - dvouramenna navestidla vzor 5041
+1912 - stozarove seradovaci navestidlo
+1926 - prvni svetelne navestidla na CSD
+1926 - elektrifikace Prazskych nadrazi 1500 V=
+1930 - prvni prejezdnik v CSR (bile svetlo pro vlak i auta)
+1953 - autoblok (Poricany - Kolin), LVZ (cab-signal ?)
+1954 (????) - 4-znakove (zlute rameno) vzor 5220
+1955 (leto) - vylepseny prototyp v Adamove, vzor 5272
+1956 (leto) - 5-znakove (prujezd odbockou 2xzelena) navrh 5292
+1959 (prosinec) - osvedceni ze 5272 je OK, ale dalsi mechaniky se stavet nebudou
+1960 - LVZ-Ž (cab-signal)
+1963 - vlakove hradlo ? (bohunovice - stenberk) ? co to je?
+1964 - univerzalni (obousmerny) autoblok (plzen-koterov - stary plzenec) 
+1967 - 4-znakovy autoblok (plzen - cheb), dalkove ovladani 107 km, 211 navestnich bodu, 2- i 1-kolejny
+1985 - opakovaci prejezdnik
+1986 - automaticke hradlo
+2005 - ETCS L2 (poricany - kolin) 
+2006 - Centralni Dispecerske Pracoviste Prerov
+
+Predpisy pouzivane u CSD jsou pry vicemene stejne jako kkSTB 1898
+Na http://vlaky.bestsite.cz/zeleznice/vyvoj-navestidel-csd-cast-i-1918-1939-2-1.htm
+lze najit predpisy z roku 1913.
+
+1842: Anglie – Došlo ke zrušení časové soustavy pro řízení
+sledu vlaků na zatížených tratích. Do roku 1851 byl časový
+interval v Rakousku-Uhersku 30 minut a rychlost pro nákladní vlaky
+23 km/h a pro osobní vlaky 38 km/h. Časová soustava byla nahrazena
+soustavou prostorovou pro sled vlaků. Byla přijata zásada jednoho
+vlaku v oddílu. Časová soustava pak byla zrušena také u německých
+drah v r. 1871 a v Rakousko-Uhersku až 1. 5. 1899
+
+1842: Rakousko-Uhersko – Na trati KFNB/SDF byl 50 sáhů (1 rakouský
+sáh – 1,896 metru) před zhlavím stanice umístěn kolík s praporkem,
+označován jako návěst Orientierung.
+
+1843: Rakousko-Uhersko – Na Severní a Jižní dráze byl vydán první
+soukromý návěstní předpis. Bylo zde celkem 10 návěstí pro denní
+a noční služby. Za stožárová návěstidla sloužily stožáry s
+koši, postavené na obou koncích železničních stanic a u všech
+strážních domků. Jeden koš vytažený na stožár – Volno pro
+vlak jedoucí k začátku trati, dva vytažené koše – Volno pro vlak
+jedoucí ke konci tratě, dolů spuštěné koše – Stůj.
+
+1850: Evropa – Počátek rozšiřování žezlového systému pro
+zabezpečení jízdy na trati.
+
+1864: Rakousko-Uhersko – V železniční stanici Graz bylo postaveno
+první elektricky ovládané vzdálenostní (distanční) návěstidlo.
+
+1868: Rakousko-Uhersko – Na trati Přerov–Ostrava Přívoz zůstala
+v provozu ještě signalizace pomocí návěstních košů
+
+Prvni trat s hradly - Wien - Bratislava 1883
+Predvesti 1883 nebo az 1906, pridavne rameno nekde kolem 1938-1939
+# Smerova soustava 1887, ale dvouramenna navestidla pry uz od 1880
+Velka zmena predpisu podle M.M.Webera 1872
+
+Mno, takze prozatim davam intro vseho na 1870. 
+Ukonceni na 1970 - kdy se objevuje dnesni model svetelnych.
+Takze to mame kulatych 100 let. I kdyz presnejsi by asi bylo 1883-1960, resp 1911-1960
+
+Vzdy se to muze upravit pokud najdeme nejaka upresneni.
+Vypada to ze u nas se pouzival od zacatku horni kvadrant (volno je sikmo nahoru)
+Rameno v dolnim kvadrantu znamenalo pomalu (bud trvale, nebo jako vystraha v casovem intervalu)
+
+Jednoznacne milniky jsou:
+
+1. 11. 1939 - zmena barev: vystraha zluta, volno zelena (drive vystraha zelena, volno bila)
+dale kulate predvesti nemeckeho vzoru, uzavery koleje, nemecka zarizeni Einheit
+
+1954 - zruseni smerove soustavy (3-ramenna), rozlisena predvest s [+] a [X]
+dale zlute rameno na vjezdovem navestidle, privolavaci navest
+#
+Kulate predvesti davam ve hre az od 1954, s novymi upozornovadly.
+Mohly by byt uz od 1939, ale s [X] a cernobilymi pruhy.
+Druhy duvod je aby byl mozny jednoznacny upgrade v experimental.
+Nemecke modely jsou oznaceny jako _DRB_ misto _CSD_.
+Treba nekdo nekdy udela i nemecka hlavni navestidla.
+Pripadne starsi modely by pak byly _kkStB_ ;)
+
+Long signal je 3-ramenny, od 1954 jednoramenny s upozornovadlem.
+1-ramenny model by mohl byt po celou dobu (1870-1970)
+3-ramenny pak jenom od zavedeni smerove soustavy - 1887 do 1954
+
+Mame k dispozici obrazek pro 2-ramenne vjezdove s privolavackou.
+Zatim nevidim pouziti, mozna pro experimental - call_on
+Nebo nechat zlute rameno pro experimental - 3-state.
+
