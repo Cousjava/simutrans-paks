@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Gleise
 #	Neu:08-2011
-#	Letzte Bearbeitung: 14-12-2018 pumuckl999
 ---------------------------------
 Obj=way
 Name=Gleis_120
@@ -10,8 +9,8 @@ Copyright= The Transporter
 waytype=track
 intro_year = 1880
 intro_month = 1
-cost=3500
-maintenance=38
+cost=12000
+maintenance=120
 topspeed=120
 cursor=rail120km.2.1
 icon=> rail120km.2.0

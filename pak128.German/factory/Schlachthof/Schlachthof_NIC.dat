@@ -1,10 +1,9 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
 #	Letzte Bearbeitung:
-#   $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Schlachthof_NIC
 copyright=TonyBzt
@@ -21,7 +20,7 @@ InputCapacity[0]=1280
 InputSupplier[0]=3
 OutputGood[0]=Fleisch
 OutputCapacity[0]=640
-electricity_amount=8
+electricity_amount=80
 passenger_boost=1000
 mail_boost=500
 climates=desert, tropic, mediterran, temperate

@@ -50,6 +50,8 @@ cd ..\Kokerei
 & "$repo\makeobj.exe" "PAK128" "$repo/simutrans/PAK128.german/" "./" >>$repo\LOG\factory.log 2>>$repo\LOG\error_factory.log
 cd ..\Kraftwerke                                                   
 & "$repo\makeobj.exe" "PAK128" "$repo/simutrans/PAK128.german/" "./" >>$repo\LOG\factory.log 2>>$repo\LOG\error_factory.log
+cd ..\Krankenhaus                                                   
+& "$repo\makeobj.exe" "PAK128" "$repo/simutrans/PAK128.german/" "./" >>$repo\LOG\factory.log 2>>$repo\LOG\error_factory.log
 cd ..\Lebensmittelfabrik                                           
 & "$repo\makeobj.exe" "PAK128" "$repo/simutrans/PAK128.german/" "./" >>$repo\LOG\factory.log 2>>$repo\LOG\error_factory.log
 cd ..\Markt                                                        

@@ -77,6 +77,8 @@ Image[26]=> menu_buttons.6.8
 Image[27]=> menu_buttons.5.2
 # menu settings
 Image[28]=> menu_buttons.5.4
+# LIST_VEHICLES
+Image[29]=> menu_buttons.7.7
 --
 Obj=menu
 name=BarTools

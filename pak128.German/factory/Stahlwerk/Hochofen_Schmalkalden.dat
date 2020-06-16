@@ -24,6 +24,7 @@ InputSupplier[1]=2
 InputFactor[1]=80
 OutputGood[0]=Stahl
 OutputCapacity[0]=100
+electricity_amount=10
 passenger_boost=1000
 mail_boost=500
 climates=desert, tropic, mediterran, tundra

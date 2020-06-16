@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Gleise
 #	Neu:16-12-2018
-#	
 ---------------------------------
 obj=tunnel
 name=Eisenbahntunnel_120
@@ -10,8 +9,8 @@ waytype=track
 copyright=The Transporter, pumuckl999
 intro_year=1890
 intro_month=1
-cost=104000
-maintenance=100
+cost=180000
+maintenance=1800
 topspeed=120
 icon=> ETunnel120.2.0
 cursor=ETunnel120.0.0

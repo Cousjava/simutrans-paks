@@ -1,16 +1,14 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 01.09.2018
-# --------------------------------
+--------------------------------
 obj=factory
 name=Verpackungshersteller
 copyright=NNW
 pax_level=5
 intro_year=1960
 intro_month=1
-retire_year=2275
-retire_month=12
 location=city
 DistributionWeight=50
 productivity=200
@@ -32,7 +30,7 @@ InputFactor[3]=25
 OutputGood[0]=Verpackungsmittel
 OutputCapacity[0]=800
 OutputFactor[0]=100
-electricity_amount=30
+electricity_amount=100
 passenger_boost=1000
 mail_boost=500
 mapcolor=29

@@ -1,19 +1,20 @@
+---------------------------------
 #	PAK128.german
-#	Way
-#ELEVATED
+#	Way ELEVATED
+---------------------------------
 obj=way
 name=Hochbahn60
 copyright=The Transporter, pumuckl999
 waytype=track
 system_type=1
 draw_as_ding=1
-cost=4500
-maintenance=30
+cost=60000
+maintenance=600
 topspeed=60
 intro_year=1882
 intro_month=1
-#retire_year=1940
-#retire_month=1
+retire_year=1930
+retire_month=12
 icon=> hochbahn60.0.6
 cursor=hochbahn60.0.7,0,-48
 #SUMMER
@@ -138,4 +139,3 @@ FrontImageUp[3][1]=hochbahn60.16.0,0,32
 FrontImageUp[6][1]=hochbahn60.16.1,0,32
 FrontImageUp[9][1]=hochbahn60.16.2,0,32
 FrontImageUp[12][1]=hochbahn60.16.3,0,32
-#_EO_

@@ -122,11 +122,12 @@ function process_dat_file ($dat_file_name, $target_version_id, $t_size,$tmp_dir)
     $found_count = 0;
 
     //detect if we need to stored images (this funct. will be included to script with post data)
-    $store_images = ($_POST["upload_type"]=="full")?TRUE:FALSE;
+    // dat = only dat stored
+    $store_images = true; // "full" = true = default
+    if (isset($_POST["upload_type"]) and $_POST["upload_type"]=="dat") $store_images = FALSE;
  
-    if ($_POST["mode"] == "verbose") 
-         $vb = true;
-    else $vb = false;
+    $vb = true;  // "verbose" = true = default 
+    if (isset($_POST["mode"]) and $_POST["mode"] == "quiet") $vb = false;
 
     //extracts a directory from the path
     //(used later for iamge referencing)
@@ -157,7 +158,7 @@ function process_dat_file ($dat_file_name, $target_version_id, $t_size,$tmp_dir)
       if (!is_file($dat_file_name)) die ('pgm error');
       $ret_code = 'exec fail';
       $dat_file_exp = $dat_file_name.'.exp';
-      exec('/M11/WWW/makeobj expand '.$dat_file_exp.' '.$dat_file_name,$e_l,$ret_code);
+      exec('/M11/WWW/MAKIE.178/translator/script/include/makeobj_fuer_include expand '.$dat_file_exp.' '.$dat_file_name,$e_l,$ret_code);
       if ($ret_code != 0)
       { echo "Return Code=".$ret_code."<br>\n";
         foreach ( $e_l as $error_line) 
@@ -301,8 +302,10 @@ if ( substr($tmp_file, strlen($tmp_file) - 3) == "zip" ) {
 	include_once ('include/pclzip/pclzip.lib.php');
 
 	$archive = new PclZip($tmp_file);
+    echo "Extracting the zip file...new ok<br>\n";
 
 	$v_list = $archive->extract(PCLZIP_OPT_PATH, $tmp_dir);    
+    echo "Extracting the zip file..extract ok.<br>\n";
 
     if ($v_list == 0)
     {

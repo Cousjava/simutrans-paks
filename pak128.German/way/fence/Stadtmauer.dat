@@ -2,14 +2,13 @@
 #	PAK128.german
 #	Zaun
 #	Neu:08-2014
-#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
 ---------------------------------
 Obj=way
 Name=Stadtmauer
 copyright=pumuckl999
 waytype=track
 system_type=255
-intro_year=1700
+intro_year=1800
 intro_month=1
 cost=10000
 maintenance=20

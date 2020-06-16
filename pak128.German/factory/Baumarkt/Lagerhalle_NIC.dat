@@ -1,10 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu:
-#	Letzte Bearbeitung:
-#   $Date$ - $Author$
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Lagerhalle_NIC
 copyright=TonyBzt
@@ -26,6 +24,7 @@ InputCapacity[2]=360
 InputGood[3]=Zement
 InputCapacity[3]=360
 InputSupplier[3]=0
+electricity_amount=10
 passenger_boost=1000
 mail_boost=500
 climates=desert, tropic, mediterran, temperate

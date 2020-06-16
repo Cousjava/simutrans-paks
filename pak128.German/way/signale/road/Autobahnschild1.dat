@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Signale
 #	Neu:01-2011
-#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
 ---------------------------------
 obj=roadsign
 name=Autobahn_Schild
@@ -11,7 +10,7 @@ waytype=road
 intro_year=1950
 intro_month=1
 cost=450
-min_speed=80
+min_speed=60
 single_way=1
 cursor=Autobahnschild1.0.4
 icon=> Autobahnschild1.0.5

@@ -1,8 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Zementwerk1800_NIC
 copyright=Pumuckl999
@@ -26,7 +26,7 @@ InputCapacity[2]=1200
 InputFactor[2]=50
 OutputGood[0]=Zement
 OutputCapacity[0]=400
-electricity_amount=40
+electricity_amount=10
 passenger_boost=1000
 mail_boost=500
 pax_level=10

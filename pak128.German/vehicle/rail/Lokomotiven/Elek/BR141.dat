@@ -2,13 +2,14 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 2008
-#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
 ---------------------------------
 obj=vehicle
 name=E141-gruen
 copyright=TonyBzt
 intro_year=1956	
 intro_month=4
+retire_year=1987
+retire_Month=5
 cost=29464000
 runningcost=275
 waytype=electrified_track
@@ -31,15 +32,17 @@ EmptyImage[NE]=BR141.0.7
 obj=vehicle
 name=E141-rot
 copyright=TonyBzt
-intro_year=1965	
+intro_year=1987	
 intro_month=4
-cost=45125000
-runningcost=361
+retire_year=2006
+retire_Month=5
+cost=29525000
+runningcost=166
 waytype=electrified_track
 freight=None
 speed=120
 weight=72.5
-power=3700
+power=2400
 gear=300
 length=10
 sound=-1

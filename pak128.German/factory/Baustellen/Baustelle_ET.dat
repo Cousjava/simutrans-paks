@@ -1,8 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 15-07-2017
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Baustelle_Eisenbahntunnel
 copyright=pumuckl999
@@ -12,7 +12,7 @@ intro_month=1
 #retire_year=
 #retire_month=
 Location=Land
-DistributionWeight=100
+DistributionWeight=20
 Productivity=220
 InputGood[0]=Sand
 InputCapacity[0]=1500
@@ -22,7 +22,7 @@ InputGood[1]=Steine
 InputCapacity[1]=500
 InputSupplier[1]=1
 InputFactor[1]=25
-InputGood[2]=Holz
+InputGood[2]=Bretter
 InputCapacity[2]=500
 InputSupplier[2]=1
 InputFactor[2]=50

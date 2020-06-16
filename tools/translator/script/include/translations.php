@@ -24,6 +24,15 @@ beim export werden x0A in \n umgesetzt
 im editor für die Anzeige werden \n in x0A umgesetzt
 im import sollten keine x0A enthalten sein
 
+scenario_textfile
+in der DB sind x0A enthalten, diese werden so im editor ausgegeben
+und wenn sie von der Eingabe kommen wieder gespeichert
+x0A werden in Simutrans werden sie ignoriert, 
+x0A sind nur Kosmetik im Editor und der Datei ???.txt
+mit \n kann Simutrans nichts anfangen, das wird einfach als \n angezeigt
+Zeilenrückläufe in Simutrans <br>
+beim export wird \n nach x0A umgesetzt für die Kosmetik
+
 escaped wird (für die DB) nicht da mit mysqli_prepare geschrieben wird 
 und die DB von x00 bis xFF alles enthalten kann
 
@@ -199,8 +208,8 @@ function tr_update($obj_name,$new_text,$version,$language,$tr_funk,$col_typ,$tr_
           mysqli_stmt_close        ($obj_st);
 
      if ($obj_typ == 'web_site' or $obj_typ == 'help_file' or $col_typ =='l' or  $col_typ == 'h') 
-          $new_text = str_replace("\n", '\n',$new_text); 
-     else $new_text = str_replace("\n", ''  ,$new_text);
+                                              $new_text = str_replace("\n", '\n',$new_text); 
+     elseif ($obj_typ != 'scenario_textfile') $new_text = str_replace("\n", ''  ,$new_text);
      $new_text = str_replace("\r", '',$new_text);
      $new_text = str_replace("\0", '',$new_text);
      if ($trans_obj != $obj_name)   
@@ -215,8 +224,9 @@ function tr_update($obj_name,$new_text,$version,$language,$tr_funk,$col_typ,$tr_
        return (33);
      }
      if ($translation_exists == 0)  return (34);
-     if ($trans_txt ==  $new_text and $tr_funk < 4)  return (12);
+     if ($trans_txt  == $new_text and $tr_funk < 4)  return (12);
      if ($trans_sugg == $new_text and ($tr_funk == 3 or $tr_funk == 4))  return (13);
+     if ($trans_txt  == $new_text and $trans_sugg == "" and $tr_funk == 4)  return (13);
      if ($trans_sugg == "" and $tr_funk == 5)  return (25);
      if ($trans_sugg == "" and $tr_funk == 6)  return (16);
      $ta = str_replace("\n", '',$trans_txt);
@@ -282,7 +292,9 @@ function tr_update_obj_id($obj_name,$version,$obj_id)
    foreach ($language_all as $lang_id => $lang_name) $copy_lang[$lang_id] = $lang_id;
    
    $query="SELECT object_object_id, object_obj_name, object_version_version_id, language_language_id, translation_id ".
-         " FROM ".$tab_set." WHERE object_obj_name='".db_real_escape_string($obj_name)."' AND object_version_version_id=".$version;
+         " FROM ".$tab_set." WHERE object_obj_name COLLATE utf8_nopad_bin ='".db_real_escape_string($obj_name)."' AND object_version_version_id=".$version;
+   // COLLATE utf8_nopad_bin damit er die Objekte mit Blank am Ende von denen ohne Blank unterscheidet
+   // bei utf8_bin werden mit und ohne Bank in einen Topf geworfen
    $result = db_query($query);
    while ($tr_a = mysqli_fetch_row($result))
    { if ($copy_lang[$tr_a[3]] ==  $tr_a[3])

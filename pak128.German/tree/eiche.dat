@@ -1,6 +1,7 @@
+---------------------------------
 #	PAK128.german
 #	Tree
-#	Ersatz fuer TonyBZTs OAK und RedRabbits Eiche1
+---------------------------------
 Obj=tree
 Name=Oak
 Copyright=NNW
@@ -19,7 +20,7 @@ Image[3][1]=eiche.1.3,0,-20
 Image[4][1]=eiche.1.4,0,-20
 ----------------------------
 obj=tree
-name=Eiche1
+name=Eiche_1
 copyright=NNW
 seasons=5
 DistributionWeight=25

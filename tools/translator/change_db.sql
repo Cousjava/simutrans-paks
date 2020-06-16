@@ -42,3 +42,6 @@ ALTER TABLE `versions` modify `lng_disabled`       varchar(100) COLLATE utf8_bin
       
 ALTER TABLE `objects` ADD `dat_file_name` varchar(250) COLLATE utf8_bin NOT NULL DEFAULT '' ;
 ALTER TABLE `objects` ADD `dat_path`      varchar(250) COLLATE utf8_bin NOT NULL DEFAULT '' ;
+
+
+ALTER TABLE `users` modify `config1`       varchar(255) COLLATE utf8_bin NULL DEFAULT NULL;

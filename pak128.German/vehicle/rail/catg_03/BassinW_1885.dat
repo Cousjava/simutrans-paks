@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 22-04-2020
+---------------------------------
+obj=vehicle
+name=Bassinwagen_1885
+copyright=pumuckl999
+intro_year=1885
+intro_month=1
+retire_year=1935
+retire_month=12
+cost=2240000
+runningcost=72
+waytype=track
+freight=Oel
+payload=16
+weight=8
+speed=60
+length=6
+sound=-1
+EmptyImage[S]=BassinW_1885.0.0
+EmptyImage[E]=BassinW_1885.0.1
+EmptyImage[SE]=BassinW_1885.0.2
+EmptyImage[SW]=BassinW_1885.0.3
+EmptyImage[N]=BassinW_1885.0.4
+EmptyImage[W]=BassinW_1885.0.5
+EmptyImage[NW]=BassinW_1885.0.6
+EmptyImage[NE]=BassinW_1885.0.7
+--------------------------------

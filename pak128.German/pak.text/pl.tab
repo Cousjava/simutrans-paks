@@ -9,7 +9,7 @@
 #                              Language: pl Polski                             #
 #                             Encoding: ISO-8859-2                             #
 #                             Font: prop-latin2.fnt                            #
-#                            Date Created: 1.02 2020                           #
+#                           Date Created: 12.06 2020                           #
 #                                                                              #
 ################################################################################
 #____________________________bridge - monorail_track____________________________
@@ -58,6 +58,10 @@ Stalowy wiadukt
 #________________________________bridge - water_________________________________
 water_bridge
 Akwedukt
+#________________________________building - stop________________________________
+#________________________________building - stop________________________________
+Hackescher_Bahnhof
+dworzec Hackescher Markt
 #___________________________________crossing____________________________________
 #___________________________________crossing____________________________________
 CrossingRoadRail
@@ -450,6 +454,8 @@ Oelbohrinsel
 Platforma wiertnicza
 Oelfeld
 Pole naftowe
+factory_Oktoberfest_details
+<title>Oktoberfest w Monachium</title><p>Zwany "Wiesn" przez mieszkañców, odbywa siê we wrze¶niu, trwa dwa tygodnie i koñczy siê w pierwsz± niedzielê pa¼dziernika. Pierwszy festiwal odby³ siê w 1910 roku z okazji ¶lubu przysz³ego bawarskiego króla Ludwika I. Od tego czasu festiwal ro¶nie z roku na rok. <br>1818 pierwsza karuzela<br>1869 Schichtl, prezentowano magiê i ciekawostki a odwiedzaj±cy ¶cinani przez gilotyny,<br>1880 diabelski m³yn o wysoko¶ci 12 metrów z drewna<br>1894 hu¶tawka czarownicy<br>1898 w³a¶ciciel Georg Lang wznosi piêæ stoisk i buduje na nim swój "zamek piwa", który by³ pocz±tkiem du¿ego namiotu piwa<br>1906 zje¿d¿alnia, od 1933 roku z przeno¶nikiem ta¶mowym dla pasa¿erów,<br>1910 Devil's Wheel, komu udaje siê pozostaæ na szczycie zwyciê¿a,<br>1920 Krinoline okr±g³a karuzela <br>1932 ¦ciana ¶mierci Pitta, motocyklista na drewnianej cylindrycznej stromej ¶cianie, <br>1979 Diabelski m³yn ze stali na 48 metrów<br> Te piêknie utrzymane atrakcje s± nadal reprezentowane dzisiaj.</p><p>Na Oktoberfest monachijskie browary warz± specjalne piwo zawieraj±ce do 6,4 procent alkoholu objêto¶ciowo. Niektórzy odwiedzaj±cy nie doceniaj± zarówno zawarto¶ci kieliszków do piwa, jak i zawarto¶ci alkoholu w piwie.  </p>
 Papierfabrik_NIC
 Zak³ady papiernicze
 Papierfabrik1990
@@ -474,6 +480,8 @@ Schrotthandel_NIC
 Z³omowisko
 Schwimmdock
 Dok p³ywaj±cy
+factory_Schwimmdock_details
+Jednostka p³ywaj±ca o konstrukcji pontonowej (najczê¶ciej stalowej), o przekroju w kszta³cie litery "U". przeznaczona do wynoszenia ponad poziom wody innych jednostek. 
 Stahlwerk_NIC
 Huta stali
 Stahlwerk_StAntony-Huette
@@ -508,6 +516,10 @@ Verpackungshersteller
 Fabryka opakowañ
 Verpackungsmittelfabrik_1909
 Fabryka opakowañ
+Verwaltung_Muenchen_1965
+Urz±d Miasta
+factory_Verwaltung_Muenchen_1965_details
+<title>Stare biura ratusza przy Blumenstraße w Monachium</title><p>Budynek stoi od 1929 roku, ale potrzebny by³ koñcowy odbiorca komputerów dopiero od 1965 roku, poniewa¿ fabryka komputerów pojawia siê w grze w 1965 roku. W 1965 roku komputer kosztowa³ tyle, co dom. Dlatego ¿aden Sim-Obywatel nie móg³ sobie pozwoliæ na komputer prywatnie, ale wydatek móg³ byæ op³acalny dla instytucji, du¿ych firm i samorz±dów. Dlatego coraz wiêcej miast przechodzi na elektroniczny obieg dokumentów. Od 1980 roku pierwsze mikrokomputery by³y oferowane w domach towarowych.</p> 
 Viehhof_NIC
 przestarza³e nie u¿ywaæ
 Viehhof_NIC_2
@@ -616,8 +628,6 @@ Passagiere
 Pasa¿erowie
 Post
 Poczta
-Salz
-Sól
 Salze
 Sole
 Sand
@@ -639,7 +649,7 @@ Tkaniny
 Tiefkuehlkost
 Mro¿onki
 Tierfutter
-Karma/Pasza
+Pasza
 Trauben
 Winogrona
 Verpackungsmittel
@@ -710,6 +720,8 @@ Crate_Goods_Dock
 Dok na towary paczkowane
 desert
 wybrze¿e
+Gewinn
+Roczny zysk:
 land stop
 Stacja na l±dzie
 Long_Goods_Dock
@@ -740,6 +752,178 @@ Strza³ki wskazuj±ce kierunek
 #________________________________roadsign - road________________________________
 Ampel
 Sygnalizator
+#__________________________vehicle - electrified_track__________________________
+#__________________________vehicle - electrified_track__________________________
+BR146_5
+BR 146.5
+E91_3
+EG 538 (DR E91.3)
+LEW_EL2
+LEW EL 2
+#________________________________vehicle - track________________________________
+#________________________________vehicle - track________________________________
+B100_KWStE_IIKlasse
+wirtemberski 2kl. B100
+Bahndienstwagen_262
+Cysterna s³u¿bowa typ 262
+Bassinwagen_1885
+Cysterna wannowa
+Bayrische_S2-6_Tender
+Bawarska S 2-6 tender
+bayrischer_BC4ue_Bay_99
+bawarski BC4ü Bay99
+bayrischer_Posti_Bay61
+bawarski Posti Bay61
+Behaelter-Tragwagen_Lbms589_fl.Lebensmittel
+Lbms 589 multi-cysterna
+Behaelter-Tragwagen_Lbms589_Kuehlwaren
+Lbms 589 platforma
+Behaelter-Tragwagen_Lbms589_lw.Gueter
+Lbms 589 platforma
+Behaelter-Tragwagen_Lbms589_Schuettgut
+Lbms 589 platforma
+Behaelter-Tragwagen_Lbms589_Siloware
+Lbms 589 wielozb. sypkie
+Behaelter-Tragwagen_Lbms589_Stueckgut
+Lbms 589 platforma
+Beiwagen_Cid-24
+Cid-24 pasa¿erski
+BR01Tender
+Badeñska IVh - tender (BR01)
+BZT_3Achser
+pasa¿erski 3-os.
+BZT_A4ue-35
+DRG ekspresowy 1-kl. A4ü-35
+BZT_B4ue-35
+DRG ekspresowy 2-kl. B4ü-35
+BZT_G10-Brh
+2-os. kryty Kassel ham.
+BZT_Leig1a
+Lekki kryty 2-cz³. przód
+BZT_Leig1b
+Lekki kryty 2-cz³. ty³
+BZT_PrPostwagen
+Pruski baga¿owy Pw4-Pr04
+BZT_Pwi
+pruski baga¿owy Pwi
+BZT_WR4ue-35
+DRG ekspresowy restauracyjny WR4ü-35
+Dampftriebwagen Bauart Thomas
+szynobus parowy Thomasa
+DR713
+DR 713 silnikowy
+DR714
+DR 714 pasa¿erski
+Flachwagen_catg_01
+Platforma obni¿ona
+G10
+2-os. kryty Kassel
+G20
+2-os. kryty Kassel G20
+gedeckter_Gueterwagen1895_Stueckgut
+Kryty 1895
+Getreidewagen
+Otw. dach p³ody rolne, 4-os.
+Hechtwagen_AB4ue23a
+"Szczupak" AB4ü 23a
+KabTender
+Towarowa BR 50 - tender kabinowy
+Kesselwagen Zacens
+Cysterna 4-os. Zacens
+Kesselwagen Zacns
+Cysterna 4-os. Zacns
+Kesselwagen Zaes
+Cysterna 4-os. Zaes
+Kesselwagen Zs
+Cysterna 2-os. Zs
+LAG_Nr891-ET194_Stueckgut
+LAG No 891 / ET 194 kryty
+LAG_Nr891-ET194_Vieh
+LAG 891 ET 194 bydlêcy
+LEG-Wagon_Nr8
+Ludwigsbahn wagon nr8
+NGT_Post_Ende
+NGT pocztowy ty³
+NGT_Post_Front
+NGT pocztowy przód
+NGT_Post_Mitte
+NGT pocztowy ¶rodek
+Offener Drehgestellwagen Eanos-x059
+Otwarty obrotn. Eanos-x059
+offener Gueterwagen 1835 Stueckgut
+Wêglarka 1835
+P8Tender
+Pruska P8 - tender
+Personenwagen CL Bay 11
+bawarski lokalny CL Bay 11
+pfaelzischer_ABueBay97b
+palatyñski ABü Bay97b
+pfaelzischer_C4ueBay98
+palatyñski ekspresowy C4ü Bay 98
+Postwaggon Post4-a17
+pocztowy Post4ü-a/17
+Postwaggon PwPost4ue-28
+pocztowy PwPost4ü-28
+pr_Abteilwagen_ABC4_Pr01
+pruski przedzia³owy ABC4 Pr01
+preussische_T0
+Pruska T0
+preussischer_PW_fuer_T0_Kl.2_3_4
+pruski 2kl./3kl./4kl.(sk³ad T0)
+preussischer_PW_fuer_T0_Kl.3_4
+pruski 3kl./4kl.(sk³ad T0)
+PrG8Tender
+Pruska G8 - tender
+PwgPr14
+Brankard baga¿owy PwgPr14
+S1_Tender
+Pruska S1 - tender
+Saechsischer_Bahnpostwagen_1860
+Saski pocztowo-baga¿owy
+saechsischer_C_Sa_12
+saski C Sa12 3-kl.
+saechsischer_C4ue_sa07
+saski C4ü Sa 07
+Schnellzugwagen_3.Kl._C4uepr11
+pruski ekspresowy C4ü Pr11 3-kl.
+Selbstentladewagen Tals 966
+Tals 966
+Spirituswagen_1875
+Cysterna destylaty
+Steuerwagen_ES89
+ES 89 sterowniczy
+T34Tender
+DRG BR 38 - tender typ T34
+Triebwagen_ET_184_4
+ET 184-4
+Triebwagen_ET_186_11
+ET 186-11
+Triebwagen_ET89
+ET 89 silnikowy
+Versuchstriebwagen_Siemens_und_Halske
+Szynobus 3-faz. Siemens&Halske
+Wannentender
+Tender beczkowy (BR 38, 44, 50)
+#________________________________vehicle - water________________________________
+#________________________________vehicle - water________________________________
+Faehre_KoenigswinterIII_Autos
+Prom samochodowy Königswinter III
+Loreley_IV
+Prom samochodowy Loreley IV
+Main-Kettenschlepper_K.B.K.S._No._V
+Holownik ³añcuchowy K.B.K.S. nr V
+Motorschlepper_Priel
+Holownik Priel
+Radschlepper_Rheinfahrt_IX
+Bocznoko³owiec Rheinfahrt IX
+Stahldampfer_Duenung
+Holownik parowy Dünung
+Treidel_Pferd1
+koñ holuj±cy
+Treidel_Pferd2
+zaprzêg podwójny
+Treidel_Pferd4
+4-konny zaprzêg
 #___________________________________way - air___________________________________
 #___________________________________way - air___________________________________
 air_movement_area
@@ -794,12 +978,16 @@ Hochstrasse50
 Droga na estakadzie (50 km/h)
 #__________________________________way - track__________________________________
 #__________________________________way - track__________________________________
+Abstellgleis_Gueterzug_90kmh
+Bocznica towarowa (90 km/h)
+Abstellgleis_Personenzug_60kmh
+Bocznica pasa¿erska (60 km/h)
 altes_Gleis
-Tory (90 km/h)
+Stary tor
 altes_Gleis40
-Tory (40 km/h)
+Wczesny tor
 altes_Gleis60
-Tory (60 km/h)
+Wzmocniony wczesny tor
 Fernheizungsrohre
 Rury ciep³ownicze
 Gleis_120
@@ -827,7 +1015,7 @@ Mury miejskie
 Stadtmauer_mit_Eckturm
 Mury miejskie z wie¿±
 Standardgleis
-Zwyk³e tory
+Tory (160 km/h)
 Strassenbahnschiene_30
 Tory tramwajowe (30 km/h)
 Strassenbahnschiene_50

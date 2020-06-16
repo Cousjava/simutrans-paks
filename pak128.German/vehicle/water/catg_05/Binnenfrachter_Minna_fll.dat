@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Binnenfrachter _Minna_fluessige_Lebensmittel
@@ -18,7 +17,7 @@ freight=Milch
 payload=180
 engine_type=diesel
 power=125
-gear=1200
+gear=600
 speed=13
 weight=400
 length=14

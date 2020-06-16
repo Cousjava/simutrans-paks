@@ -1,10 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 20-2011
-#	Letzte Bearbeitung:
-#	$date$ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=AVL_Buchladen_NIC
 copyright=Lemuria
@@ -12,7 +10,7 @@ pax_level=20
 intro_year=1973
 intro_month=1
 Location=City
-DistributionWeight=30
+DistributionWeight=60
 Productivity=10
 Range=2
 InputGood[0]=Buecher

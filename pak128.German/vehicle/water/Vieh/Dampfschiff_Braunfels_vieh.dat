@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Dampfschiff_Braunfels_Vieh
@@ -12,13 +11,13 @@ intro_month=1
 retire_year=1920
 retire_month=12
 waytype=water
-cost=6840000
-runningcost=577
+cost=12240000
+runningcost=1077
 freight=Vieh
-payload=90
+payload=190
 engine_type=steam
 power=1100
-gear=1200
+gear=400
 speed=18
 weight=3000
 length=17

@@ -1,0 +1,154 @@
+-------------------------------
+#	PAK128.german
+#	Industrie Kraftwerk
+#	Neu: 07-03-2020
+--------------------------------
+Obj=factory
+name=Wasserkraftwerk
+# Wasserkraftwerk Schöngeising
+copyright=pumuckl999
+pax_level=5
+intro_year=1880
+# Eigentlich 1892, aber es muss einige Jahre vor dem Heizkraftwerk erscheinen.
+# Der Sinn des Wasserkraftwerks ist weniger Strom zu produzieren, 
+# als eine Eigenart vom Programm Simutrans auszugleichen.
+# Simutrans baut vorrangig Kraftwerke bis der Bedarf aller Fabriken an Strom gedeckt ist.
+# Wenn man eine Karte um 1800 startet, dann exisitieren um 1880 bereits viele Fabriken,
+# die alle Strom brauchen. Simutrans würde mit erscheinen des ersten Kraftwerks (Heizkraftwerk) um 1884,
+# jetzt nur noch Heizkraftwerke bauen bis der Strombedarf aller Fabriken gedeckt ist.
+# Das kann bis nach 1963 dauern, dem erscheinen wirklich leistungfähiger Kraftwerke,
+# was den Zeitraum aus Spielersicht langweilig macht.
+intro_month=1
+retire_year=1895
+retire_month=1
+Location=river
+Distributionweight=4
+Productivity=250
+Range=25
+# electricity_amount=150
+passenger_boost=1000
+mail_boost=500
+MapColor=140
+climates=desert, tropic, mediterran, temperate, tundra, rocky
+dims=3,5,4
+BackImage[0][0][0][0][0][0]=WKW1892.0.0
+BackImage[0][0][1][0][0][0]=WKW1892.0.1
+BackImage[0][0][2][0][0][0]=WKW1892.0.2
+BackImage[0][1][0][0][0][0]=WKW1892.0.3
+BackImage[0][1][1][0][0][0]=WKW1892.0.4
+BackImage[0][1][2][0][0][0]=WKW1892.0.5
+BackImage[0][2][0][0][0][0]=WKW1892.0.6
+BackImage[0][2][1][0][0][0]=WKW1892.0.7
+BackImage[0][2][2][0][0][0]=WKW1892.0.8
+BackImage[0][3][0][0][0][0]=WKW1892.0.9
+BackImage[0][3][1][0][0][0]=WKW1892.0.10
+BackImage[0][3][2][0][0][0]=WKW1892.1.0
+BackImage[0][4][0][0][0][0]=WKW1892.1.1
+BackImage[0][4][1][0][0][0]=WKW1892.1.2
+BackImage[0][4][2][0][0][0]=WKW1892.1.3
+BackImage[0][0][0][0][0][1]=WKW1892.1.4
+BackImage[0][0][1][0][0][1]=WKW1892.1.5
+BackImage[0][0][2][0][0][1]=WKW1892.1.6
+BackImage[0][1][0][0][0][1]=WKW1892.1.7
+BackImage[0][1][1][0][0][1]=WKW1892.1.8
+BackImage[0][1][2][0][0][1]=WKW1892.1.9
+BackImage[0][2][0][0][0][1]=WKW1892.1.10
+BackImage[0][2][1][0][0][1]=WKW1892.2.0
+BackImage[0][2][2][0][0][1]=WKW1892.2.1
+BackImage[0][3][0][0][0][1]=WKW1892.2.2
+BackImage[0][3][1][0][0][1]=WKW1892.2.3
+BackImage[0][3][2][0][0][1]=WKW1892.2.4
+BackImage[0][4][0][0][0][1]=WKW1892.2.5
+BackImage[0][4][1][0][0][1]=WKW1892.2.6
+BackImage[0][4][2][0][0][1]=WKW1892.2.7
+BackImage[1][0][0][0][0][0]=WKW1892.2.8
+BackImage[1][0][1][0][0][0]=WKW1892.2.9
+BackImage[1][0][2][0][0][0]=WKW1892.2.10
+BackImage[1][0][3][0][0][0]=WKW1892.3.0
+BackImage[1][0][4][0][0][0]=WKW1892.3.1
+BackImage[1][1][0][0][0][0]=WKW1892.3.2
+BackImage[1][1][1][0][0][0]=WKW1892.3.3
+BackImage[1][1][2][0][0][0]=WKW1892.3.4
+BackImage[1][1][3][0][0][0]=WKW1892.3.5
+BackImage[1][1][4][0][0][0]=WKW1892.3.6
+BackImage[1][2][0][0][0][0]=WKW1892.3.7
+BackImage[1][2][1][0][0][0]=WKW1892.3.8
+BackImage[1][2][2][0][0][0]=WKW1892.3.9
+BackImage[1][2][3][0][0][0]=WKW1892.3.10
+BackImage[1][2][4][0][0][0]=WKW1892.4.0
+BackImage[1][0][0][0][0][1]=WKW1892.4.1
+BackImage[1][0][1][0][0][1]=WKW1892.4.2
+BackImage[1][0][2][0][0][1]=WKW1892.4.3
+BackImage[1][0][3][0][0][1]=WKW1892.4.4
+BackImage[1][0][4][0][0][1]=WKW1892.4.5
+BackImage[1][1][0][0][0][1]=WKW1892.4.6
+BackImage[1][1][1][0][0][1]=WKW1892.4.7
+BackImage[1][1][2][0][0][1]=WKW1892.4.8
+BackImage[1][1][3][0][0][1]=WKW1892.4.9
+BackImage[1][1][4][0][0][1]=WKW1892.4.10
+BackImage[1][2][0][0][0][1]=WKW1892.5.0
+BackImage[1][2][1][0][0][1]=WKW1892.5.1
+BackImage[1][2][2][0][0][1]=WKW1892.5.2
+BackImage[1][2][3][0][0][1]=WKW1892.5.3
+BackImage[1][2][4][0][0][1]=WKW1892.5.4
+BackImage[2][0][0][0][0][0]=WKW1892.5.5
+BackImage[2][0][1][0][0][0]=WKW1892.5.6
+BackImage[2][0][2][0][0][0]=WKW1892.5.7
+BackImage[2][1][0][0][0][0]=WKW1892.5.8
+BackImage[2][1][1][0][0][0]=WKW1892.5.9
+BackImage[2][1][2][0][0][0]=WKW1892.5.10
+BackImage[2][2][0][0][0][0]=WKW1892.6.0
+BackImage[2][2][1][0][0][0]=WKW1892.6.1
+BackImage[2][2][2][0][0][0]=WKW1892.6.2
+BackImage[2][3][0][0][0][0]=WKW1892.6.3
+BackImage[2][3][1][0][0][0]=WKW1892.6.4
+BackImage[2][3][2][0][0][0]=WKW1892.6.5
+BackImage[2][4][0][0][0][0]=WKW1892.6.6
+BackImage[2][4][1][0][0][0]=WKW1892.6.7
+BackImage[2][4][2][0][0][0]=WKW1892.6.8
+BackImage[2][0][0][0][0][1]=WKW1892.6.9
+BackImage[2][0][1][0][0][1]=WKW1892.6.10
+BackImage[2][0][2][0][0][1]=WKW1892.7.0
+BackImage[2][1][0][0][0][1]=WKW1892.7.1
+BackImage[2][1][1][0][0][1]=WKW1892.7.2
+BackImage[2][1][2][0][0][1]=WKW1892.7.3
+BackImage[2][2][0][0][0][1]=WKW1892.7.4
+BackImage[2][2][1][0][0][1]=WKW1892.7.5
+BackImage[2][2][2][0][0][1]=WKW1892.7.6
+BackImage[2][3][0][0][0][1]=WKW1892.7.7
+BackImage[2][3][1][0][0][1]=WKW1892.7.8
+BackImage[2][3][2][0][0][1]=WKW1892.7.9
+BackImage[2][4][0][0][0][1]=WKW1892.7.10
+BackImage[2][4][1][0][0][1]=WKW1892.8.0
+BackImage[2][4][2][0][0][1]=WKW1892.8.1
+BackImage[3][0][0][0][0][0]=WKW1892.8.2
+BackImage[3][0][1][0][0][0]=WKW1892.8.3
+BackImage[3][0][2][0][0][0]=WKW1892.8.4
+BackImage[3][0][3][0][0][0]=WKW1892.8.5
+BackImage[3][0][4][0][0][0]=WKW1892.8.6
+BackImage[3][1][0][0][0][0]=WKW1892.8.7
+BackImage[3][1][1][0][0][0]=WKW1892.8.8
+BackImage[3][1][2][0][0][0]=WKW1892.8.9
+BackImage[3][1][3][0][0][0]=WKW1892.8.10
+BackImage[3][1][4][0][0][0]=WKW1892.9.0
+BackImage[3][2][0][0][0][0]=WKW1892.9.1
+BackImage[3][2][1][0][0][0]=WKW1892.9.2
+BackImage[3][2][2][0][0][0]=WKW1892.9.3
+BackImage[3][2][3][0][0][0]=WKW1892.9.4
+BackImage[3][2][4][0][0][0]=WKW1892.9.5
+BackImage[3][0][0][0][0][1]=WKW1892.9.6
+BackImage[3][0][1][0][0][1]=WKW1892.9.7
+BackImage[3][0][2][0][0][1]=WKW1892.9.8
+BackImage[3][0][3][0][0][1]=WKW1892.9.9
+BackImage[3][0][4][0][0][1]=WKW1892.9.10
+BackImage[3][1][0][0][0][1]=WKW1892.10.0
+BackImage[3][1][1][0][0][1]=WKW1892.10.1
+BackImage[3][1][2][0][0][1]=WKW1892.10.2
+BackImage[3][1][3][0][0][1]=WKW1892.10.3
+BackImage[3][1][4][0][0][1]=WKW1892.10.4
+BackImage[3][2][0][0][0][1]=WKW1892.10.5
+BackImage[3][2][1][0][0][1]=WKW1892.10.6
+BackImage[3][2][2][0][0][1]=WKW1892.10.7
+BackImage[3][2][3][0][0][1]=WKW1892.10.8
+BackImage[3][2][4][0][0][1]=WKW1892.10.9
+--------------------------------------------

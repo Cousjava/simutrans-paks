@@ -2,17 +2,22 @@
 #	PAK128.german
 #	Strassen
 #	Neu:07-2011
-#	Letzte Bearbeitung
-#   $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
 ---------------------------------
+# unterbrochene Leit oder Mittel-Linien erst ab 1953
+# man sollte eine Version ohne Markierungen  und als Schotterstraße machen
+# ab 1938 dünne weiße gemalte Mittelsteifenmarkierung
+# https://de.wikipedia.org/wiki/Stra%C3%9Fenmarkierung
+# Geteerte oder mit einer teerhaltigen Oberflächenschutzschicht versehene Bundesstraßen 
+# besaßen im Nachkriegsdeutschland noch lange Zeit Ausnahmecharakter
+# https://www.historisches-lexikon-bayerns.de/Lexikon/Stra%C3%9Fen_und_Stra%C3%9Fenverkehr_%2819./20._Jahrhundert%29
 Obj=way
 Name=asphalt_road_100
 copyright=The Transporter
 waytype=road
-intro_year=1930
+intro_year=1953
 intro_month=1
-cost=6000
-maintenance=10
+cost=10000
+maintenance=100
 topspeed=100
 icon=> asphalt_road-128.3.1
 cursor=asphalt_road-128.3.2
@@ -65,5 +70,3 @@ ImageUp[6][1]=asphalt_road-128-winter.1.4
 ImageUp[9][1]=asphalt_road-128-winter.0.0
 ImageUp[12][1]=asphalt_road-128-winter.0.5
 ----------------------------------------------
-
-

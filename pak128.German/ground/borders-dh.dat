@@ -1,0 +1,36 @@
+---------------------------------
+#	PAK128.german
+#	Ground Texture
+#    Neu: 2002
+---------------------------------
+Obj=ground
+Name=Borders
+copyright=prissi
+Image[0][0]=borders-dh.3.0
+Image[1][0]=borders-dh.3.1
+Image[2][0]=borders-dh.3.2
+Image[3][0]=borders-dh.3.3
+Image[4][0]=borders-dh.3.4
+Image[5][0]=borders-dh.3.5
+Image[6][0]=borders-dh.3.6
+Image[7][0]=borders-dh.3.7
+Image[8][0]=borders-dh.3.8
+Image[9][0]=borders-dh.4.0
+Image[10][0]=borders-dh.4.1
+Image[11][0]=borders-dh.4.2
+Image[12][0]=borders-dh.4.3
+Image[13][0]=borders-dh.4.4
+Image[14][0]=borders-dh.4.5
+Image[15][0]=borders-dh.4.6
+Image[16][0]=borders-dh.4.7
+Image[17][0]=borders-dh.4.8
+Image[18][0]=borders-dh.5.0
+Image[19][0]=borders-dh.5.1
+Image[20][0]=borders-dh.5.2
+Image[21][0]=borders-dh.5.3
+Image[22][0]=borders-dh.5.4
+Image[23][0]=borders-dh.5.5
+Image[24][0]=borders-dh.5.6
+Image[25][0]=borders-dh.5.7
+Image[26][0]=borders-dh.5.8
+--------------------

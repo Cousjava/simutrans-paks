@@ -1,5 +1,4 @@
 <?PHP
-require_once("./include/quotes.inc.php");
 
 $minimal_user_level=array('admin','pakadmin');
 $user_type = trim($_SESSION['role']);
@@ -219,7 +218,8 @@ function show_set($setid) {
     $v_att['value_images'] = $LNG_ADMIN[58];
     $v_att['select_dev'] = 'SELECTED';    
   } else {
-    $v_att['value_images'] = "";
+    $v_att['value_images'] = $LNG_ADMIN[58];
+    $v_att['select_dev'] = 'SELECTED';    
   }
   $v_att['value_image_all'] = $LNG_ADMIN[56];    
   $v_att['value_image_registered'] = $LNG_ADMIN[57]." ( tr1, tr2, painter, pakadmin, admin )";    
@@ -245,7 +245,7 @@ function show_set($setid) {
   while ($usr=db_fetch_array($query)) {
     if ( $usr['license_id'] == $row['license'] ) {
       $v_att['value_license_name'] = $usr['license_name'];
-      $v_att['value_license_link'] = quote_smart($usr['license_link']);
+      $v_att['value_license_link'] = db_real_escape_string($usr['license_link']);
     }
     $v_att['license_list'][$x]['license_name'] = ' ';
     if ( $usr['license_id'] == $row['license'] ) {

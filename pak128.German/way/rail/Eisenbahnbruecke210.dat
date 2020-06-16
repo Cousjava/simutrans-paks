@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Gleise
 #	Neu:12-2014
-#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
 ---------------------------------
 Obj=bridge
 name=Bahnbruecke_210Kmh
@@ -10,8 +9,8 @@ copyright=The Transporter
 waytype=track
 intro_year=1970
 intro_month=1
-cost=80000
-maintenance=90
+cost=105000
+maintenance=1050
 topspeed=210
 max_lenght=15
 pillar_distance=2
@@ -54,4 +53,3 @@ FrontPillar2[S]=Eisenbahnbruecke210.2.3
 backPillar[W]=Eisenbahnbruecke210.2.1
 FrontPillar[W]=Eisenbahnbruecke210.2.3
 FrontPillar2[W]=Eisenbahnbruecke210.2.3
-

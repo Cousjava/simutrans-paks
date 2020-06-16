@@ -125,12 +125,6 @@ function gen_translate($lang_id,$box_typ,$col_typ,$c,$f,$htmltxt,$edit_rows,$edi
        
     $tr_text       = $tr[0];
     $suggestion    = $tr[1];
-    $tr_text_label = $tr_text;
-
-    if      ($box_typ == 'R') $iw = 22;
-    else if ($box_typ == 'U') $iw = 22;
-    else                      $iw = 24;
-    if ($tr_text_label == '') $tr_text_label = $LNG_EDIT[$iw]; 
 
     ////////////////////////////////////////////////////////////////////////////
     ////////now display the translation box for the given language//////////////
@@ -145,8 +139,8 @@ function gen_translate($lang_id,$box_typ,$col_typ,$c,$f,$htmltxt,$edit_rows,$edi
     $v_att['lngbox'][$c]['trbox'][$f]['value_heading_1'] = $LNG_EDIT[$iw];
 
     //display current translation text
-    $formattext = text_format($htmltxt,$box_typ,$tr_text,$tr_text_label);
-    $formatsugg = text_format($htmltxt,$box_typ,$suggestion,$suggestion);
+    $formattext = text_format($htmltxt,$box_typ,$tr_text);
+    $formatsugg = text_format($htmltxt,$box_typ,$suggestion);
     if( $htmltxt == 'web' or $htmltxt == 'link' or $current_ob_obj_type == 'help_file')
     { $tr_text    = str_replace ('\n', "\n", $tr_text);
       $suggestion = str_replace ('\n', "\n", $suggestion);
@@ -157,8 +151,11 @@ function gen_translate($lang_id,$box_typ,$col_typ,$c,$f,$htmltxt,$edit_rows,$edi
     if ( $suggestion != '' and $box_typ != 'U' and $box_typ != 'R') 
     { $v_att['lngbox'][$c]['trbox'][$f]['suggestion']['value_heading'] = $LNG_EDIT[14];
       $v_att['lngbox'][$c]['trbox'][$f]['suggestion']['value_text'] = $formatsugg;
-      $v_att['lngbox'][$c]['trbox'][$f]['suggestion']['value_diff'] = diff_string(htmlentities($tr_text,    ENT_QUOTES, "UTF-8"),
-                                                                                  htmlentities($suggestion, ENT_QUOTES, "UTF-8"));
+      if ( $tr_text != '')
+      { $v_att['lngbox'][$c]['trbox'][$f]['suggestion']['diff_heading'] = $LNG_EDIT[36];
+        $v_att['lngbox'][$c]['trbox'][$f]['suggestion']['value_diff'] = diff_string(htmlentities($tr_text,    ENT_QUOTES, "UTF-8"),
+                                                                                    htmlentities($suggestion, ENT_QUOTES, "UTF-8"));
+      }
    }
 
     if ( $box_typ == 'S' ) 
@@ -357,7 +354,7 @@ function gen_all($tr_ok_tab)
          }
          // show not edit languages
          foreach ($language_all as $slk => $sln ) if (!isset($user_lng[$slk]))
-         {                                                  $box_typ = 'N';
+         {                                                  $box_typ = 'S';
            if (in_array($current_ob_version, $maintainter)) $box_typ = 'E';
            if (in_array($slk,$no_translate_lang))           $box_typ = 'D';
            if       ($show_auswahl == 'emp')

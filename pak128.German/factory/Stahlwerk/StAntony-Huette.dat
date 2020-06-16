@@ -1,8 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 25-08-2018
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Stahlwerk_StAntony-Huette
 copyright=pumuckl999
@@ -25,6 +25,7 @@ InputSupplier[1]=2
 InputFactor[1]=80
 OutputGood[0]=Stahl
 OutputCapacity[0]=100
+electricity_amount=12
 passenger_boost=1000
 mail_boost=500
 climates=mediterran, tundra, temperate

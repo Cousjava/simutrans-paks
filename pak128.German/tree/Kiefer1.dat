@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Bäume
 #	Neu:01-2011
-#	Letzte Bearbeitung 
-#    10-08-2015 The Transporter
 ---------------------------------
 obj=tree
 name=Kiefer1
@@ -22,5 +20,21 @@ image[2][1]=Kiefer1.2.2,30,-18
 image[3][1]=Kiefer1.3.2,30,-18
 image[4][1]=Kiefer1.4.2,30,-18
 ------------------------------------
+obj=tree
+name=Kiefer2
+copyright=RedRabbit
+seasons=2
+DistributionWeight=15
+climates=tropic,mediterran,temperate,tundra
+image[0][0]=Kiefer3.0.1,30,-18
+image[1][0]=Kiefer3.1.1,30,-18
+image[2][0]=Kiefer3.2.1,30,-18
+image[3][0]=Kiefer3.3.1,30,-18
+image[4][0]=Kiefer3.4.1,30,-18
+image[0][1]=Kiefer3.0.2,30,-18
+image[1][1]=Kiefer3.1.2,30,-18
+image[2][1]=Kiefer3.2.2,30,-18
+image[3][1]=Kiefer3.3.2,30,-18
+image[4][1]=Kiefer3.4.2,30,-18
 
 

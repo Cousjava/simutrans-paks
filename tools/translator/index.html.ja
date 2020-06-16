@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="Simutrans, Simutrans Translator, Translator, Help, Simutrans Help">
+    <title>Simutrans Translator Home</title>
+  </head>
+  <body>
+    This Page in: 
+    <a href="index.html.de">Deutsch</a> 
+    <a href="index.html.en">english</a>
+    <h1 align="center"><font size="+3">Simutrans</font> </h1>
+    <h2 align="center">Simutrans - Translator</h2>
+    <p align="center">Simutransを翻訳することができます。
+      プログラムそのものだけでなく、グラフィックスパッケージ。 翻訳者自身のテキストでさえ、翻訳することができます。
+      すでに多くの言語が利用可能です。 誰かが仕事をしたいと思っている限り、他の言語を追加することができます。<br>
+      <font size="+1"><a
+          href="script/main.php">Enter</a></font></p>
+    <div align="center"><font size="+1">大規模な翻訳については、登録することをお勧めします。
+        登録ユーザーにはより多くの機能があります。 登録するには、フォーラムで質問して、やりたいことを伝えてください。<br>
+        <a href="https://forum.simutrans.com/">International Simutrans
+          Forum</a><br>
+        <br>
+        <a href="script/index.php">Login</a>&nbsp;</font><br>
+    </div>
+    <h3 align="center"><span id="result_box" class="short_text"
+        lang="ja"><span class="">グラフィックパッケージに関する情報</span></span></h3>
+    <p align="center">翻訳者は、グラフィックスパッケージに関する情報も提供します。 ここではPak128の例を示します。
+      しかし、他のグラフィックパッケージを表示することもできます。 どの情報がテーブルの列に表示されるかは自由に選択できます。<br>
+    </p>
+    <div align="center"><a href="script/pakset_info.php?vers=19&amp;obj_auw=vehicle&amp;obj_sub=road">road vehicles</a><br>
+      <a href="script/pakset_info.php?vers=19&amp;obj_auw=vehicle&amp;obj_sub=track">rail vehicles</a><br>
+      <a href="script/pakset_info.php?vers=19&amp;obj_auw=vehicle&amp;obj_sub=tram_track">trams</a><br>
+      <a href="script/pakset_info.php?vers=19&amp;obj_auw=vehicle&amp;obj_sub=air">Aircrafts</a><br>
+      <a href="script/pakset_info.php?vers=19&amp;obj_auw=vehicle&amp;obj_sub=water">Ships</a><br>
+      <a href="script/pakset_info.php?vers=19&amp;obj_auw=factory">factories</a><br>
+      <br>
+      <h3>Homepage</h3>
+      <p><span id="result_box" class="" lang="ja"><span class="">翻訳者は、ホー
+            ムページの管理や翻訳にも使用できます。</span></span></p>
+      <p><a href="https://www.pak128-german.de/">www.pak128-german.de</a><br>
+      <a href="data/html/ja/general.html">Simutrans のヘルプ</a><br>
+      <a href="data/htmlex/en/general.html">Simutrans Extended を拡張して、英語で表示する</a><br>
+      <a href="index.alt.html">のドキュメント Translator</a><br>
+      </p>
+    </div>
+  </body>
+</html>

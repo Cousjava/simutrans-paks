@@ -393,13 +393,20 @@ function diff_string($alt,$neu)
 }
 
 // html format for help file and factory details
-function text_format($form,$box_typ,$text,$text_label)
-{ if( $form == 'web' && $text != '' )
-  { 
-    $n = htmlentities($text, ENT_QUOTES, "UTF-8");
+function text_format($form,$box_typ,$text)
+{ global $LNG_EDIT;
+  if ( $text == '' )
+  { if      ($box_typ == 'R') $iw = 22;
+    else if ($box_typ == 'U') $iw = 22;
+    else                      $iw = 24;
+    return htmlentities($LNG_EDIT[$iw], ENT_QUOTES, "UTF-8");
+  }
+  if( $form == 'web' )
+  { $n = htmlentities($text, ENT_QUOTES, "UTF-8");
     $n = str_replace ('\n', "<br>\n", $n);
     return $n;
-  } elseif ( $form == 'link' && $text != '' )
+  }
+  elseif ( $form == 'link' )
   { $n = '';
     $l = explode('\n',$text);
     foreach ($l as $link) if ($link != '')
@@ -409,9 +416,15 @@ function text_format($form,$box_typ,$text,$text_label)
       else                      $n .= '<font color="red">'  .$l_e."</font><br>\n";
     }
     return $n;
-  } elseif ( $form == 'html' && $text != '' ) return html_format($text);
-  else return htmlentities($text_label, ENT_QUOTES, "UTF-8");
-
+  }
+  elseif ( $form == 'html' ) return html_format($text);
+  elseif (strlen($text) > 980) // eigentlich 4090 aber wege bug derzeit 980
+  {  $tr_splitt = str_split($text,980);
+     return  htmlentities($tr_splitt[0], ENT_QUOTES, "UTF-8").'<br><font color="red">!! TO LONG !!</font><br>'.
+             htmlentities($tr_splitt[1], ENT_QUOTES, "UTF-8");
+  }
+  return htmlentities($text, ENT_QUOTES, "UTF-8");
+  
 }
 
 // html format for help file and factory details

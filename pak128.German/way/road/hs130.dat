@@ -1,18 +1,21 @@
+---------------------------------
 #	PAK128.german
 #	Way ELEVATED
-#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
+---------------------------------
 obj=way
 name=Hochstrasse130
 waytype=road
 copyright=pumuckl999
 system_type=1
 draw_as_ding=1
-cost=6000
-maintenance=50
-topspeed=130
+cost=80000
+maintenance=800
+topspeed=80
 max_weight=60
-intro_year=1970
+intro_year=1935
 intro_month=1
+retire_year=1969
+retire_month=12
 icon=> hs130.0.6
 cursor=hs130.0.7,-5,-8
 #SUMMER
@@ -113,4 +116,3 @@ FrontImageUp[12][1]=hs130.12.6,0,32
 #FrontImageUp2[6][1]=hs130.12.4,0,32
 #FrontImageUp2[9][1]=hs130.12.5,0,32
 #FrontImageUp2[12][1]=hs130.12.6,0,32
-#_EO_

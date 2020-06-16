@@ -49,6 +49,8 @@ cd ../Kokerei
 $repo/makeobj PAK128 $repo/simutrans/PAK128.german/ ./ >> "$repo/LOG/factory.log" 2>> "$repo/LOG/error_factory.log"
 cd ../Kraftwerke
 $repo/makeobj PAK128 $repo/simutrans/PAK128.german/ ./ >> "$repo/LOG/factory.log" 2>> "$repo/LOG/error_factory.log"
+cd ../Krankenhaus
+$repo/makeobj PAK128 $repo/simutrans/PAK128.german/ ./ >> "$repo/LOG/factory.log" 2>> "$repo/LOG/error_factory.log"
 cd ../Lebensmittelfabrik
 $repo/makeobj PAK128 $repo/simutrans/PAK128.german/ ./ >> "$repo/LOG/factory.log" 2>> "$repo/LOG/error_factory.log"
 cd ../Markt

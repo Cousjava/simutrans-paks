@@ -37,6 +37,7 @@ expand_probability=50
 expand_minimum=1
 expand_range=10
 expand_times=20
+electricity_amount=50
 passenger_boost=1000
 mail_boost=500
 MapColor=125

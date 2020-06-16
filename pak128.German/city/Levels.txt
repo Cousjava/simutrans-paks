@@ -3,7 +3,7 @@ es sind Nummern von 1 bis 32 möglich, es sind Mehrfachnennungen möglich also C
 1=Altstadt
 2=Einfamilienhaussiedlung
 3=Geschlossene Bauweise
-4=
+4=Hafenanlagen
 5=Industrie
 6=Hochhäuser
 7=Einkaufszentrum

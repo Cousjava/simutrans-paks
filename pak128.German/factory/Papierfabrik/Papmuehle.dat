@@ -1,8 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 27-05-2018
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Papiermuehle
 copyright=pumuckl999
@@ -20,7 +20,7 @@ InputSupplier[0]=1
 OutputGood[0]=Papier
 OutputCapacity[0]=120
 OutputFactor[0]=90
-electricity_amount=10
+electricity_amount=3
 passenger_boost=1000
 mail_boost=500
 climates=desert, tropic, mediterran, temperate, tundra, rocky

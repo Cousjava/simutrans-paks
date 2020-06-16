@@ -1,0 +1,32 @@
+# -------------------------------
+#	PAK128.german
+#	Denkmal
+#	Neu:06-05-2020
+#	Letzte Bearbeitung:
+#
+# --------------------------------
+Obj=building
+name=Koenig-Albert-Denkmal_Freital
+copyright=Pumuckl999
+type=mon
+level=60
+chance=25
+intro_year=1904
+dims=1,2,4
+BackImage[0][0][0][0][0][0]=KoenigAlbertDenkmal.0.0
+BackImage[0][1][0][0][0][0]=KoenigAlbertDenkmal.0.1
+BackImage[0][0][0][0][0][1]=KoenigAlbertDenkmal.0.2
+BackImage[0][1][0][0][0][1]=KoenigAlbertDenkmal.0.3
+BackImage[1][0][0][0][0][0]=KoenigAlbertDenkmal.1.0
+BackImage[1][0][1][0][0][0]=KoenigAlbertDenkmal.1.1
+BackImage[1][0][0][0][0][1]=KoenigAlbertDenkmal.1.2
+BackImage[1][0][1][0][0][1]=KoenigAlbertDenkmal.1.3
+BackImage[2][0][0][0][0][0]=KoenigAlbertDenkmal.2.0
+BackImage[2][1][0][0][0][0]=KoenigAlbertDenkmal.2.1
+BackImage[2][0][0][0][0][1]=KoenigAlbertDenkmal.2.2
+BackImage[2][1][0][0][0][1]=KoenigAlbertDenkmal.2.3
+BackImage[3][0][0][0][0][0]=KoenigAlbertDenkmal.3.0
+BackImage[3][0][1][0][0][0]=KoenigAlbertDenkmal.3.1
+BackImage[3][0][0][0][0][1]=KoenigAlbertDenkmal.3.2
+BackImage[3][0][1][0][0][1]=KoenigAlbertDenkmal.3.3
+--------------------------------------------------

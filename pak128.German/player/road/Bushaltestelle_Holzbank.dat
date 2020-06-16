@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 
-#    letzte Bearbeitung:
 ---------------------------------
 obj=building
 name=Bushaltestelle_Holzbank
@@ -15,7 +14,7 @@ maintenance=8
 enables_pax=1
 enables_post=1
 enables_ware=0
-intro_year=1820
+intro_year=1800
 intro_month=7
 retire_year=1899
 retire_month=12

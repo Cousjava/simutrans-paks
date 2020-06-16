@@ -6,7 +6,7 @@
 obj=vehicle
 name=BZT_Traktor-gruen
 copyright=TonyBzt
-intro_year=1920
+intro_year=1960
 cost=60000
 runningcost=1
 waytype=road

@@ -2,15 +2,14 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 03-09-2017
-#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
 ---------------------------------
 obj=vehicle
 name=ICE3_Front
 copyright=pumuckl999
-intro_year=1997
-intro_month=1
+intro_year=2000
+intro_month=3
 cost=67170000
-runningcost=368
+runningcost=350
 freight=Passagiere
 power=1000
 gear=300
@@ -35,10 +34,10 @@ EmptyImage[NE]=ICE3.0.7,-3,0
 obj=vehicle
 name=ICE3_Mitte
 copyright=pumuckl999
-intro_year=1997
-intro_month=1
+intro_year=2000
+intro_month=3
 cost=70140000
-runningcost=383
+runningcost=366
 freight=Passagiere
 power=1000
 gear=300
@@ -64,10 +63,10 @@ EmptyImage[NE]=ICE3.1.7
 obj=vehicle
 name=ICE3_Ende
 copyright=pumuckl999
-intro_year=1997
-intro_month=1
+intro_year=2000
+intro_month=3
 cost=58260000
-runningcost=323
+runningcost=306
 freight=Passagiere
 power=1000
 gear=300

@@ -2,16 +2,15 @@
 #	PAK128.german
 #	Strassen
 #	Neu:26-08-2017
-#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
 -------------------------
 obj=tunnel
 name=Strassentunnel50
 copyright=pumuckl999
 waytype=road
-intro_year=1900
+intro_year=1953
 intro_month=1
-cost=62000
-maintenance=10
+cost=75000
+maintenance=750
 topspeed=50
 icon=> Strassentunnelv50.3.0
 cursor=Strassentunnelv50.0.0,0,-16

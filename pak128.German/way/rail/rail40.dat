@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Gleise
 #	Neu:31-10-2017
-#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
 ---------------------------------
 Obj=way
 Name=altes_Gleis40
@@ -10,8 +9,10 @@ Copyright= The Transporter
 waytype=track
 intro_year=1835
 intro_month=1
-cost=2000
-maintenance=25
+retire_year=1890
+retire_month=12
+cost=4000
+maintenance=40
 topspeed=40
 cursor=rail40km.2.1
 icon=> rail40km.2.0

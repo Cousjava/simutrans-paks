@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 22-06-2020
+#	Letzte Bearbeitung: $Date$ - $Author$
+---------------------------------
+obj=vehicle
+name=Hensel-Fleischwagon_1906
+copyright=pumuckl999
+intro_year=1906
+intro_month=1
+retire_year=1930
+retire_month=12
+cost=1940000
+runningcost=60
+waytype=track
+freight=Fleisch
+payload=10
+speed=60
+weight=14
+length=7
+EmptyImage[S]=Hensel-FTW_1906.0.0
+EmptyImage[E]=Hensel-FTW_1906.0.1
+EmptyImage[SE]=Hensel-FTW_1906.0.2
+EmptyImage[SW]=Hensel-FTW_1906.0.3
+EmptyImage[N]=Hensel-FTW_1906.0.4
+EmptyImage[W]=Hensel-FTW_1906.0.5
+EmptyImage[NW]=Hensel-FTW_1906.0.6
+EmptyImage[NE]=Hensel-FTW_1906.0.7
+--------------------------------------

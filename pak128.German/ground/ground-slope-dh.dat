@@ -1,0 +1,59 @@
+---------------------------------
+#	PAK128.german
+#	Ground Texture
+#    Neu: 2002
+---------------------------------
+Obj=ground
+Name=Basement
+# West
+Image[0][0]=-
+Image[1][0]=ground-slope-dh-brickslope.0.1
+Image[2][0]=ground-slope-dh-brickslope.0.2
+Image[3][0]=ground-slope-dh-brickslope.0.3
+Image[4][0]=ground-slope-dh-brickslope.0.4
+Image[5][0]=ground-slope-dh-brickslope.0.5
+Image[6][0]=ground-slope-dh-brickslope.0.6
+Image[7][0]=ground-slope-dh-brickslope.0.7
+Image[8][0]=ground-slope-dh-brickslope.0.8
+Image[9][0]=ground-slope-dh-brickslope.0.9
+Image[10][0]=ground-slope-dh-brickslope.0.10
+# North
+Image[11][0]=-
+Image[12][0]=ground-slope-dh-brickslope.1.1
+Image[13][0]=ground-slope-dh-brickslope.1.2
+Image[14][0]=ground-slope-dh-brickslope.1.3
+Image[15][0]=ground-slope-dh-brickslope.1.4
+Image[16][0]=ground-slope-dh-brickslope.1.5
+Image[17][0]=ground-slope-dh-brickslope.1.6
+Image[18][0]=ground-slope-dh-brickslope.1.7
+Image[19][0]=ground-slope-dh-brickslope.1.8
+Image[20][0]=ground-slope-dh-brickslope.1.9
+Image[21][0]=ground-slope-dh-brickslope.1.10
+--------------------
+Obj=ground
+Name=Slopes
+# TODO: use earth slopes again!
+# West
+Image[0][0]=-
+Image[1][0]=ground-slope-dh.0.1
+Image[2][0]=ground-slope-dh.0.2
+Image[3][0]=ground-slope-dh.0.3
+Image[4][0]=ground-slope-dh.0.4
+Image[5][0]=ground-slope-dh.0.5
+Image[6][0]=ground-slope-dh.0.6
+Image[7][0]=ground-slope-dh.0.7
+Image[8][0]=ground-slope-dh.0.8
+Image[9][0]=ground-slope-dh.0.9
+Image[10][0]=ground-slope-dh.0.10
+# North
+Image[11][0]=-
+Image[12][0]=ground-slope-dh.1.1
+Image[13][0]=ground-slope-dh.1.2
+Image[14][0]=ground-slope-dh.1.3
+Image[15][0]=ground-slope-dh.1.4
+Image[16][0]=ground-slope-dh.1.5
+Image[17][0]=ground-slope-dh.1.6
+Image[18][0]=ground-slope-dh.1.7
+Image[19][0]=ground-slope-dh.1.8
+Image[20][0]=ground-slope-dh.1.9
+Image[21][0]=ground-slope-dh.1.10

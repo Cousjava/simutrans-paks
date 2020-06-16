@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Rollwege
 #	Neu:06-2015
-#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
 ---------------------------------
 Obj=way
 name=Zeppelin-Landebahn
@@ -13,8 +12,8 @@ intro_year=1910
 intro_month=1
 retire_year=1940
 retire_month=12
-cost=20000
-maintenance=80
+cost=95000
+maintenance=950
 topspeed=95
 max_weight=300
 cursor=Landebahn_Gras.1.4

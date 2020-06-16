@@ -1,8 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 03-08-2017
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Buchhandlung
 copyright=pumuckl999
@@ -10,7 +10,7 @@ pax_level=20
 intro_year=1800
 intro_month=1
 Location=City
-DistributionWeight=10
+DistributionWeight=30
 Productivity=10
 Range=2
 InputGood[0]=Buecher

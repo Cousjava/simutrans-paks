@@ -223,9 +223,8 @@ window.onload = tablecloth;
 	<!--(enditem)-->
   <!--(endlist)-->  
   </select>
-<!--(endif)-->
-
 &nbsp;
+<!--(endif)-->
 
 <!--(if:select_box_good)-->
   <select name="good" onchange="document.getElementById('obj_s').submit();">
@@ -235,9 +234,8 @@ window.onload = tablecloth;
 	<!--(enditem)-->
   <!--(endlist)-->  
   </select>
-<!--(endif)-->
-
 &nbsp;
+<!--(endif)-->
 
 <!--(if:select_box_climates)-->
   <select name="climates" onchange="document.getElementById('obj_s').submit();">
@@ -247,9 +245,8 @@ window.onload = tablecloth;
 	<!--(enditem)-->
   <!--(endlist)-->  
   </select>
-<!--(endif)-->
-
 &nbsp;
+<!--(endif)-->
 
 <!--(if:select_box_cluster)-->
   <select name="cluster" onchange="document.getElementById('obj_s').submit();">
@@ -259,9 +256,19 @@ window.onload = tablecloth;
 	<!--(enditem)-->
   <!--(endlist)-->  
   </select>
+&nbsp;
 <!--(endif)-->
 
+<!--(if:select_box_engine)-->
+  <select name="engine" onchange="document.getElementById('obj_s').submit();">
+  <!--(list:box_entry)-->
+      <!--(item)-->
+     	<option value="<!--(token:opt_value)-->" <!--(token:opt_select)-->><!--(token:opt_name)--></option>
+	<!--(enditem)-->
+  <!--(endlist)-->  
+  </select>
 &nbsp;
+<!--(endif)-->
 
 <input type="text" style="font-size: 100%%; " size=6 name="trange" value="<!--(trange)-->"/>
 

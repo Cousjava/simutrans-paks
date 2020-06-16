@@ -83,6 +83,13 @@ function print_obj_links ($versin_id, $obj_auswahl, $obj_sub_auswahl)
     if ($obj_inx > 1 and  $user != "") $v_att['set_head']['line_edit']['link_text'] = 'diese liste mit line_edit bearbeiten';
 }
 
+function like_escape ($s,$r)
+{ $s = str_replace($r, $r.$r,$s);
+  $s = str_replace('%', $r.'%',$s);
+  $s = str_replace('_', $r.'_',$s);
+  return $s;
+}
+
 
 ////////////////////////////////////////////////////////////////////////////
 //accessible to anyone
@@ -92,9 +99,9 @@ function print_obj_links ($versin_id, $obj_auswahl, $obj_sub_auswahl)
 
   $settab = array();
   $settab['all']          = $LNG_FORM[21];
-  $settab['all text']     = 'alle texte ';
+  $settab['all text']     = $LNG_STATS_TRANS[11];
   $settab['translated']   = $LNG_STATS_TRANS[6];
-  $settab['show_text']    = 'show translatet text';
+  $settab['show_text']    = $LNG_STATS_TRANS[12];
   $settab['untranslated'] = $LNG_STATS_TRANS[1];
   $settab['suggestion']   = $LNG_STATS_TRANS[0];
 
@@ -185,10 +192,11 @@ if ((isset($_POST['txt_s']) and $_POST['txt_s'] == $LNG_FORM[45]) or isset($_GET
   // build text search
   if ( $sr_string2 ) 
   { //  $suche .= "MATCH(t.tr_text) AGAINST('".$sr_string2."')";
-    $suche .= " AND LCASE(t.tr_text) LIKE '%".db_real_escape_string($sr_string2)."%' ";
+    $suche .= " AND ( LCASE(t.tr_text)      LIKE '%".db_real_escape_string(like_escape ($sr_string2,'#'))."%' ESCAPE '#' ";
+    $suche .=    " OR LCASE(t.details_text) LIKE '%".db_real_escape_string(like_escape ($sr_string2,'#'))."%' ESCAPE '#' )";
   }
   if ( $sr_string1 ) 
-  { $suche .= " AND LCASE(o.obj_name) LIKE '%".db_real_escape_string($sr_string1)."%' ";
+  { $suche .= " AND LCASE(o.obj_name) LIKE '%".db_real_escape_string(like_escape ($sr_string1,'#'))."%' ESCAPE '#' ";
   }
 
   // build language search
@@ -226,7 +234,8 @@ if ((isset($_POST['txt_s']) and $_POST['txt_s'] == $LNG_FORM[45]) or isset($_GET
   $obj_tab = array();
   $obj_inx = 0;
   while ($sr=db_fetch_array($search)) 
-  {  $obj_id = $sr['object_id'];
+  {  if ( $trans_auswahl == 'untranslated' and in_array($sr['obj'], $object_no_translate )) continue; 
+     $obj_id = $sr['object_id'];
      if ($old_obj_id != $obj_id)
      { $old_obj_id = $obj_id;
        $l++;
@@ -289,8 +298,13 @@ if ((isset($_POST['txt_s']) and $_POST['txt_s'] == $LNG_FORM[45]) or isset($_GET
            }
          } else
          { if ($k == 't' and $language != 255) 
-           { $v_att['res_table']['line'][$l]['status']['style_trans'] = 'untranslate';
-             $v_att['res_table']['line'][$l]['status']['bez_trans'] = $LNG_STATS_TRANS[1];
+           { if (in_array($sr['obj'], $object_no_translate ))
+             { $v_att['res_table']['line'][$l]['status']['style_trans'] = 'notranslate';
+               $v_att['res_table']['line'][$l]['status']['bez_trans'] = $LNG_STATS_TRANS[13];
+             } else
+             { $v_att['res_table']['line'][$l]['status']['style_trans'] = 'untranslate';
+               $v_att['res_table']['line'][$l]['status']['bez_trans'] = $LNG_STATS_TRANS[1];
+             }
            }
          }
        }

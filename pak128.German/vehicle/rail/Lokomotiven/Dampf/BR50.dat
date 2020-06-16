@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 2008
-#	Letzte Bearbeitung:$Date: 2017-11-21 15:36:50 +0100 (Di, 21. Nov 2017) $ - $Author: gebeine $
 ---------------------------------
 obj=vehicle
 name=BR50
@@ -18,7 +17,7 @@ engine_type=steam
 freight=None
 smoke=Steam
 speed=80
-gear=500
+gear=350
 weight=87
 length=10
 power=1195

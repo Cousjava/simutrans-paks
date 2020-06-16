@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Gleise
 #	Neu:14-10-2017
-#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
 ---------------------------------
 obj=tunnel
 name=Hochgeschwindigkeitstunnel_280
@@ -10,8 +9,8 @@ waytype=track
 copyright=The Transporter, pumuckl999
 intro_year=1985
 intro_month=1
-cost=150000
-maintenance=200
+cost=420000
+maintenance=4200
 topspeed=280
 icon=> ETunnel280.2.0
 cursor=ETunnel280.0.0

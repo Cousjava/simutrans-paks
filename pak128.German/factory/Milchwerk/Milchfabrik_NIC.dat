@@ -1,10 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 09-2010 
-#	Letzte Bearbeitung:
-#	$LastChangedDate: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Milchfabrik_NIC
 copyright=Lemuria
@@ -27,7 +25,7 @@ InputFactor[2]=50
 InputSupplier[2]=2
 OutputGood[0]=Molkereiprodukte
 OutputCapacity[0]=400
-electricity_amount=15
+electricity_amount=75
 passenger_boost=1000
 mail_boost=500
 climates=desert, tropic, mediterran, temperate, tundra, rocky

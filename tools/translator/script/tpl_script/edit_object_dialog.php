@@ -4,7 +4,7 @@ function func_dialog($formlink, $data = '') {
 
   global $LNG_EDIT, $LNG_ADMIN;
   global $current_ob_copyright, $current_ob_name, $current_ob_obj_type, $current_ob_note, $current_ob_id, $current_ob_version, $current_obj_index;
-  global $building_city, $building_player, $building_cur, $way_type, $object_text;
+  global $building_city, $building_player, $building_cur, $way_type;
 
   // ----- Create the template object
   $v_template = new PclTemplate();

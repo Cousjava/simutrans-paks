@@ -1,0 +1,35 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 03-05-2020
+---------------------------------
+obj=vehicle
+name=LO3000_Fluessige_Lebensmittel
+copyright=pumuckl999
+intro_year=1973
+intro_month=1
+retire_year=1990
+retire_month=12
+cost=1014000
+runningcost=18
+waytype=road
+speed=80
+power=55
+gear=100
+weight=3.4
+freight=Milch
+payload=3
+length=4
+smoke=Diesel_small
+sound=engine-start-diesel_d.wav
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[S]=Robur_fll.0.0
+EmptyImage[N]=Robur_fll.0.1
+EmptyImage[E]=Robur_fll.0.2
+EmptyImage[W]=Robur_fll.0.3
+EmptyImage[SE]=Robur_fll.0.4
+EmptyImage[NW]=Robur_fll.0.5
+EmptyImage[NE]=Robur_fll.0.6
+EmptyImage[SW]=Robur_fll.0.7
+-------------------------------------------

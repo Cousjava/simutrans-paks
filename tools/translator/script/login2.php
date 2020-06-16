@@ -71,7 +71,7 @@ if (isset($_POST['username']))
         {    // else read from databases name, password ...
              $info = db_fetch_array($user);
              if ($info['state'] != 'active') Header ("Location: index.php?msg=login_failed_".$givenu."_not_aktiv");
-             elseif ( crypt($_POST['password'], $info['pass_bin']) == $info['pass_bin']) 
+             elseif ( password_verify($_POST['password'], $info['pass_bin']) ) 
              {  // log in
                 login ($info['u_user_id']);
                 Header ("Location: index.php?msg=login_ok_".$givenu);

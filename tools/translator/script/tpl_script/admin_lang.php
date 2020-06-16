@@ -188,11 +188,11 @@ function lang_post () {
   { if ( !isset($_POST['lang_font2'] )) { $_POST['lang_font2'] = ''; }
 
     $sql = sprintf ($sql
-      ,quote_smart($_POST['language_name'])
+      ,db_real_escape_string($_POST['language_name'])
       ,$_POST['lang_font1']
       ,$_POST['lang_font2']
-      ,quote_smart($_POST['lang_coding'])
-      ,quote_smart($_POST['language_code2'])
+      ,db_real_escape_string($_POST['lang_coding'])
+      ,db_real_escape_string($_POST['language_code2'])
       ,$lang);     
     $updatequery = db_query($sql); 
 
@@ -206,7 +206,7 @@ function lang_post () {
       {      
         $tab = 'translations_'.$row->version_version_id; 
         $qy = "INSERT INTO `".$tab."` (`object_object_id`, `object_obj_name`, `object_version_version_id`, `language_language_id`) ".
-          "VALUES ($row->object_id, '".quote_smart($row->obj_name)."', $row->version_version_id, '$lang');";
+          "VALUES ($row->object_id, '".db_real_escape_string($row->obj_name)."', $row->version_version_id, '$lang');";
         db_query($qy);
       }
       db_free_result($result);

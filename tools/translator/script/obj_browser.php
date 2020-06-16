@@ -1,5 +1,6 @@
 <?php
 include ('./include/images.php');
+include ('./include/translations.php');
 include ('./include/select.php');
 include ('./include/obj.php');
 

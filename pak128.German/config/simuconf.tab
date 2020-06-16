@@ -1,9 +1,6 @@
---------------------------------------------------------------------------------
-#
+# --------------------------------------------------------------------------------
 #	simuconf.tab for PAK128.german
-#	Letzte Bearbeitung: 05-2019
-#
---------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------
 
 # simuconf.tab
 #
@@ -19,11 +16,8 @@
 # simutrans/pakfilefolder/config/simuconf.tab (this one)
 # ~/simutrans/simuconf.tab (read a second time, s.a.)
 #
-#################################program stuff##################################
 
-# You can use a system font. BUT you must specify the whole path to it!
-# This can be only set in the user defined simuconf.tab
-#fontname=C:\Windows\fonts\arial.ttf
+#################################routing stuff##################################
 
 # maximum number of position tested during a way search
 # 100000 should be ok even for large maps with ships
@@ -87,6 +81,10 @@ way_tunnel=8
 way_max_bridge_len=15
 way_leaving_road=25
 
+# if defined, the default tool will try to calculate straight ways (like OpenTTD)
+straight_way_without_control = 1
+
+
 ###############################passenger stuff##############################
 # also pak dependent
 
@@ -131,7 +129,7 @@ locality_factor[7]=2000,1600
 # and has not more than factory_worker_maximum_towns added
 # The default settings connect to maximum four cities with 77 tiles radius; or at least to the closest one
 # Setting factory_worker_maximum_towns to zero will not connect factories to towns
-factory_worker_radius = 77
+factory_worker_radius = 327
 factory_worker_minimum_towns = 1
 factory_worker_maximum_towns = 4
 
@@ -166,8 +164,8 @@ min_factory_spacing = 6
 # max distance for connected factories
 # if percentage>0, it will be in percent of the largest map dimension
 # percentage also overrides the absolute value
-max_factory_spacing_percentage = 50
-#max_factory_spacing = 40
+#max_factory_spacing_percentage = 50
+max_factory_spacing = 1000
 
 # allow all possible supplier to connect to your factories?
 # best to leave it in default position. (only on for simuTTD)
@@ -178,7 +176,7 @@ crossconnect_factories = 0
 crossconnect_factories_percentage = 60
 
 # how much is the total electric power available (in relation to total production) in parts per thousand
-electric_promille = 330
+electric_promille = 150
 
 # true if transformers are allowed underground (default)
 allow_underground_transformers = 1
@@ -192,7 +190,7 @@ just_in_time = 1
 # The limit is given in percent of factory storage (0=off)
 # It should be not too low to allow big convoys fully loaded at more than one
 # factory (for medium sized maps 500 seems a reasonable number)
-maximum_intransit_percentage = 0
+maximum_intransit_percentage = 500
 
 # use beginner mode for new maps (can be switched anyway on the new map dialog)
 first_beginner = 0
@@ -207,14 +205,15 @@ factory_enforce_demand = 1
 
 ##################################display stuff#################################
 
+# You can use a system font. BUT you must specify the whole path to it!
+# This can be only set in the user defined simuconf.tab
+#fontname=C:\Windows\fonts\arial.ttf
+
 # if run on a mobile device, setting hide_keyboard=1 will only show the keyboard
 # when there is text to input in a dialog. Other than that textinput will not
 # be possible (no keyboard short cuts).
 # Currently only supported with SDL2
 hide_keyboard = 0
-
-# if defined, the default tool will try to calculate straight ways (like OpenTTD)
-straight_way_without_control = 1
 
 # player color can be fixed for several players or set totally random
 # in the latter case each player will get unique but random coloring
@@ -227,7 +226,7 @@ random_player_colors = 0
 # and there are 0...15 player in the game
 player_color[1] = 1,4
 
-# Should either account (default) or net wealth be shown blow the screen?
+# Should either account (default) or net wealth be shown below the screen?
 player_finance_display_account = 1
 
 # remove companies without convoys after x month (0=off, 6=default)
@@ -236,17 +235,6 @@ remove_dummy_player_months = 6
 # remove password of abandoned companies (without any building activity) after x month (0=off default)
 unprotect_abandoned_player_months = 0
 
-# how long is a diagonal (512: factor 2=1024/512, old way, 724: sqrt(2)=1024/724
-# THIS WILL BE ONLY USED, WHEN THIS FILE IS IN THE pakxyz/config!
-diagonal_multiplier = 936
-
-# new height for old slopes when old single height savegame loaded with double height pak (default 1=single height, 2=double height)
-# THIS WILL BE ONLY USED, WHEN THIS FILE IS IN THE pakxyz/config!
-height_conversion_factor = 1
-
-# how height is a tile in z-direction (default 16, TTD 8)
-# THIS WILL BE ONLY USED, WHEN THIS FILE IS IN THE pakxyz/config!
-tile_height = 16
 
 # (=1) drive on the left side of the road
 drive_left = 0
@@ -277,14 +265,14 @@ water_animation_ms = 250
 
 # Show info windows for private cars and pedestrians?
 # (1=on, 0=off)
-pedes_and_car_info = 0
+pedes_and_car_info = 1
 
 # How much citycars will be generated
 citycar_level = 12
 
 # After how many month a citycar breaks (and will be forever gone) ...
 # default is ten years (at bits_per_month setting of 20)
-default_citycar_life = 120
+default_citycar_life = 60
 
 # Show info on trees?
 # (1=on, 0=off)
@@ -300,7 +288,7 @@ townhall_info = 1
 
 # do not show the button to add an inverted schedule for rail based convoys
 # (1=hide, 0=show anyway)
-hide_rail_return_ticket = 0
+hide_rail_return_ticket = 1
 
 # do not show the buttons to delete old savegames (default)
 # 1=on, 0 =off
@@ -399,7 +387,7 @@ bonus_basefactor = 125
 # be charged. The number given is the percentage of the running cost
 # of the convoy or the way cost (include electrification if needed).
 # (default 0)
-toll_runningcost_percentage = 1
+toll_runningcost_percentage = 3
 toll_waycost_percentage = 5
 
 # Maintenance costs of buildings
@@ -446,10 +434,20 @@ cost_maintain_transformer=10
 # how many months of maintainance the make public tool costs
 cost_make_public_months=60
 
-###################################other stuff##################################
+###################################pak set stuff##################################
 #
-# also pak dependent
-#
+
+# how long is a diagonal (512: factor 2=1024/512, old way, 724: sqrt(2)=1024/724
+# THIS WILL BE ONLY USED, WHEN THIS FILE IS IN THE pakxyz/config!
+diagonal_multiplier = 936
+
+# new height for old slopes when old single height savegame loaded with double height pak (default 1=single height, 2=double height)
+# THIS WILL BE ONLY USED, WHEN THIS FILE IS IN THE pakxyz/config!
+height_conversion_factor = 1
+
+# how height is a tile in z-direction (default 16, TTD 8)
+# THIS WILL BE ONLY USED, WHEN THIS FILE IS IN THE pakxyz/config!
+tile_height = 16
 
 # minimum/maximum allowed height level for the map (too high might cause display errors)
 # Also those number must no be the same
@@ -481,20 +479,25 @@ intercity_road_length = 10000
 #intercity_road[0] = asphalt_road,0,1990
 # default: city_road
 # (old, 102.2.2 and before) intercity_road_type = asphalt_road
-intercity_road[0] = asphalt_road_100
-intercity_road[1] = dirt_road,1800,1849
-intercity_road[2] = cobblestone_road_20,1850,1869
-intercity_road[3] = cobblestone_road_40,1870,1916
-intercity_road[4] = cobblestone_road_70,1917,1934
-intercity_road[5] = Betonierte_Autobahn,1935,1950
-intercity_road[6] = asphalt_road_100,1951,2999
+intercity_road[0] = asphalt_road_100,1953,2999
+intercity_road[1] = Betonierte_Autobahn,1934,1953
+intercity_road[2] = teer_road,1923,1934
+intercity_road[3] = teertraenkmakadam,1910,1923
+intercity_road[4] = schotterpiste,1875,1910
+intercity_road[5] = wiesenrand,1834,1875
+intercity_road[6] = dirt_road,1800,1834
+
+#intercity_road[2] = cobblestone_road_20,1850,1869
+#intercity_road[3] = cobblestone_road_40,1870,1916
+#intercity_road[4] = cobblestone_road_70,1917,1934
+
 
 # Tempolimit ausserorts
 # laut Wiki https://de.wikipedia.org/wiki/Zul%C3%A4ssige_H%C3%B6chstgeschwindigkeit_im_Stra%C3%9Fenverkehr_%28Deutschland%29
-1910 - 1934 = Ländersache -> unterschiedlich
-1939 - 1953  (auch Autobahnen) 80 km/h Pkw 60 km/h Lkw 
-1972 - heute (ausser Autobahnen) 100 km/h Pkw, 80 km/h Lkw, 80 km/h Busse auf Autobahnen 100 km/h
-in den Lücken z.B. 1953 -1972 gab es keine Tempolimits
+# 1910 - 1934 = Ländersache -> unterschiedlich 
+# 1939 - 1953  (auch Autobahnen) 80 km/h Pkw 60 km/h Lkw 
+# 1972 - heute (ausser Autobahnen) 100 km/h Pkw, 80 km/h Lkw, 80 km/h Busse auf Autobahnen 100 km/h
+# in den Lücken z.B. 1953 -1972 gab es keine Tempolimits
 
 # Type of city roads - must be available as PAK file.
 # Cityroad with timeline: city_road[number]=name,intro-year,retire-year
@@ -503,19 +506,22 @@ in den Lücken z.B. 1953 -1972 gab es keine Tempolimits
 #city_road[0] = dirt_road,1920,1940
 # default: asphalt_road
 # (old, 102.2.2 and before) city_road_type = city_road
-city_road[0] = city_road
-city_road[1] = dirt_cityroad,1800,1835
-city_road[2] = cobblestone_road_20,1836,1869
-city_road[3] = cobblestone_road_40,1870,1953
-#noch eine Asphalt Strasse ohne Makierungen ? 
+city_road[0] = city_road,1953,2999
+city_road[1] = teer_road_city,1934,1953
+city_road[2] = teertraenkmakadam_cityroad,1923,1934
+city_road[3] = schotterpiste_cityroad,1875,1923
+city_road[4] = wiesenrand_city,1834,1875
+city_road[5] = dirt_cityroad,1800,1834
+# sandstrasse
 
 # Tempolimit innerorts 
 # laut Wiki https://de.wikipedia.org/wiki/Zul%C3%A4ssige_H%C3%B6chstgeschwindigkeit_im_Stra%C3%9Fenverkehr_%28Deutschland%29
-1910 - 1926 15 km/h
-1927 - 1934 30 km/h
-1939 - 1953 40 km/h
-1957 - heute 50 km/h
-in den Lücken z.B. 1953 -1957 gab es keine Tempolimits
+# 1910 - 1922 15 km/h
+# 1923 - 1934 30 km/h
+# 1939 - 1953 40 km/h
+# 1957 - heute 50 km/h
+# Nach Deutsches Reichsgesetzblatt 1923 Seite 180 innerorts bis 5,5 Tonnen 30 km/h darüber 25 km/h, mit Anhänger 16 km/h
+# in den Lücken z.B. 1953 -1957 gab es keine Tempolimits
 
 
 # now river stuff

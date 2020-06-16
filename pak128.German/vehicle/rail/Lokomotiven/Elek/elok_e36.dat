@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 28-05-2017
-#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
-#       18-10-2018 pumuckl999
 ---------------------------------
 obj=vehicle
 name=E36
@@ -18,7 +16,7 @@ waytype=electrified_track
 speed=80
 weight=79
 power=480
-gear=210
+gear=270
 length=9
 sound=-1
 EmptyImage[S]=elok_e36.0.0

@@ -2,12 +2,11 @@
 #	PAK128.german
 #	Stromleitung
 #	Neu:01-2011
-#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
 ---------------------------------
 Obj=way
 Name=Powerline
 waytype=power
-intro_year=1900
+intro_year=1880
 intro_month=1
 cost=35000
 maintenance=25

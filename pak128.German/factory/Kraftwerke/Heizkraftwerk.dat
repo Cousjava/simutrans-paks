@@ -1,9 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-#	Letzte Bearbeitung: $Date: 2017-09-30 19:15:51 +0200 (Sa, 30. Sep 2017) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Heizkraftwerk
 copyright=TonyBzt
@@ -18,9 +17,11 @@ Productivity=100
 InputGood[0]=Kohle
 InputCapacity[0]=1600
 InputFactor[0]=100
+InputSupplier[0]=1
 InputGood[1]=Oel
 InputCapacity[1]=400
 InputFactor[1]=20
+InputSupplier[1]=1
 InputGood[2]=Koks
 InputCapacity[2]=800
 InputFactor[2]=40

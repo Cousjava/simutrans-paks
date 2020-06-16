@@ -1,10 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-#	Letzte Bearbeitung:
-#   $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=MGBStahlwerkKoks_NIC
 copyright=RedRabbit
@@ -12,7 +10,7 @@ pax_level=30
 intro_year=1960
 intro_month=1
 Location=Land
-DistributionWeight=1
+DistributionWeight=50
 Productivity=200
 InputGood[0]=Eisenerz
 InputCapacity[0]=800
@@ -28,7 +26,7 @@ InputSupplier[2]=20
 InputFactor[2]=100
 OutputGood[0]=Stahl
 OutputCapacity[0]=800
-electricity_amount=150
+electricity_amount=300
 passenger_boost=1000
 mail_boost=500
 climates=temperate

@@ -1,10 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-#	Letzte Bearbeitung:
-#   $Date: 2017-07-20 11:40:28 +0200 (Do, 20. Jul 2017) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Erzbergwerk_NIC
 copyright=Pumuckl999
@@ -16,7 +14,7 @@ DistributionWeight=1
 Productivity=200
 OutputGood[0]=Eisenerz
 OutputCapacity[0]=205
-electricity_amount=55
+electricity_amount=50
 passenger_boost=1000
 climates=desert, tropic, mediterran, tundra
 MapColor=15

@@ -2,20 +2,18 @@
 #	PAK128.german
 #	Strassen
 #	Neu:07-2011
-#	Letzte Bearbeitung 
-#   $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
 ---------------------------------
 Obj=bridge
 name=BZT_Strassenbruecke
 copyright=TonyBzt
 waytype=road
-intro_year=1900
+intro_year=1938
 intro_month=1
-retire_year=1962
+retire_year=1952
 retire_month=2
-cost=17000
-maintenance=25
-topspeed=100
+cost=22500
+maintenance=225
+topspeed=45
 max_lenght=10
 pillar_distance=2
 pillar_asymmetric=1
@@ -57,4 +55,3 @@ FrontPillar2[S]=BZT_Strassenbruecke.3.5
 backPillar[W]=BZT_Strassenbruecke.3.1
 FrontPillar[W]=BZT_Strassenbruecke.3.5
 FrontPillar2[W]=BZT_Strassenbruecke.3.5
-

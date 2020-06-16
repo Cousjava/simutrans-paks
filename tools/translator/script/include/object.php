@@ -1146,7 +1146,7 @@ class simu_object
     //this function is meant to be called from outside
     //by default this function is deleting and recreating images
     function save_object_to_db ($full_dat_path,$file_name, $store_n_delete_images, $verbose)
-    {   GLOBAL $st_dbi,$object_nodisp,$sum_prob,$sum_img,$sum_tran,$sum_alles;
+    {   GLOBAL $st_dbi,$object_no_import,$sum_prob,$sum_img,$sum_tran,$sum_alles;
         GLOBAL $pr_unmodified, $pr_updated, $pr_deleted, $pr_inserted;
         GLOBAL $tr_unmodified, $tr_updated, $tr_deleted, $tr_inserted;
         GLOBAL $im_unmodified, $im_updated, $im_deleted, $im_inserted;
@@ -1158,7 +1158,7 @@ class simu_object
         $ob_upd = 0;
         $ob_ins = 0;
 
-        if ( in_array($this->obj, $object_nodisp)) return(false);
+        if ( in_array($this->obj, $object_no_import)) return(false);
 
         db_query("START TRANSACTION");
         $timestamp_start = microtime(true);
@@ -1184,8 +1184,10 @@ class simu_object
         //finally insert the object
      
 
-        $sqlobj = sprintf ("SELECT * FROM objects WHERE obj_name='%s' AND version_version_id=%d ;",
+        $sqlobj = sprintf ("SELECT * FROM objects WHERE obj_name COLLATE utf8_nopad_bin ='%s'  AND version_version_id=%d ;",
                            db_real_escape_string($this->name) , $this->version_id);
+        // COLLATE utf8_nopad_bin damit er die Objekte mit Blank am Ende von denen ohne Blank unterscheidet
+        // bei utf8_bin werden mit und ohne Bank in einen Topf geworfen
         $result = db_query($sqlobj);
         $objalt = mysqli_fetch_object($result);
         if ($objalt === null) 

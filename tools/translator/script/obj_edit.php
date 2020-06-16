@@ -1,5 +1,6 @@
 <?php
 include ('./include/images.php');
+include ('./include/translations.php');
 include ('./include/select.php');
 include ('./include/obj.php');
 
@@ -107,13 +108,11 @@ function obj_info ($obj_id)
     $tr.=sprintf ( table_field, $row['obj'] );
     $res2 = '';
     if ( in_array($row['obj'], $object_text) ) 
-    { for ( $x = 0; $x < count($object_text); $x++ ) 
-      { if ( $object_text[$x] == $row['obj'] ) $t = "selected='selected'"; 
-        else                                   $t = "";
+    { foreach ($object_text as $ob_text)
+      { if ( $ob_text == $row['obj'] ) $t = "selected='selected'"; 
+        else                           $t = "";
         $res2 .= sprintf ("<option value='%s' %s>%s </option>\n"
-                    ,$object_text[$x]
-                    ,$t
-                    ,$object_text[$x]);
+                    ,$ob_text,$t,$ob_text);
       }
       $tr.=sprintf ( table_form_field2, 'obj', $res2 );
 

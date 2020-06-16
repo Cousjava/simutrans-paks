@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 2008
-#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
 ---------------------------------
 obj=vehicle
 name=V320
@@ -16,7 +15,7 @@ engine_type=diesel
 speed=160
 weight=122
 power=2800
-gear=275
+gear=230
 length=12
 EmptyImage[S]=V320.0.0
 EmptyImage[E]=V320.0.1

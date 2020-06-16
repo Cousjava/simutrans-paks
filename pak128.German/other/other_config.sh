@@ -3,7 +3,7 @@ echo -e "\033[0;95mErstelle Symbols, Cursors, Menu und Misc"
 
 $repo/makeobj PAK ./ ./ > "$repo/LOG/other.log" 2>> "$repo/LOG/error_other.log"
 $repo/makeobj PAK128 ./ ./new_cursor.txt >> "$repo/LOG/other.log" 2>> "$repo/LOG/error_other.log"
-$repo/makeobj PAK128 ./ ./MiscImages.txt >> "$repo/LOG/other.log" 2>> "$repo/LOG/error_other.log"
+$repo/makeobj PAK128 ./ ./128/MiscImages.dat >> "$repo/LOG/other.log" 2>> "$repo/LOG/error_other.log"
 $repo/makeobj PAK128 $repo/simutrans/PAK128.german/ ./Logo-2.txt >> "$repo/LOG/other.log" 2>> "$repo/LOG/error_other.log"
 
 $repo/makeobj MERGE ./symbol.pak ./symbol.*.pak >> "$repo/LOG/other.log" 2>> "$repo/LOG/error_other.log"

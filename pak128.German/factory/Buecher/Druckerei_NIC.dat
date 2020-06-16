@@ -1,10 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 22-04-2015
-#	Letzte Bearbeitung:
-#	$Date: 2017-04-29 18:44:52 +0200 (Sa, 29. Apr 2017) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Druckerei_NIC
 copyright=Pumuckl999
@@ -26,7 +24,7 @@ InputFactor[1]=40
 InputSupplier[1]=0
 OutputGood[0]=Buecher
 OutputCapacity[0]=500
-electricity_amount=25
+electricity_amount=50
 passenger_boost=1000
 mail_boost=500
 MapColor=38

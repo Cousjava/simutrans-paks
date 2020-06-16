@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 07-08-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=gedeckter_Gueterwagen1895_Getreide
@@ -11,12 +10,12 @@ intro_year=1895
 intro_month=1
 retire_year=1925
 retire_month=1
-cost=1386000
-runningcost=46
+cost=1062000
+runningcost=42
 waytype=track
 freight=Weizen
 payload=12
-speed=60
+speed=45
 weight=9
 length=6
 EmptyImage[S]=gedeckter_GW1895_gruen.0.0

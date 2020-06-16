@@ -1,8 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Verbrennungskraftwerk
 copyright=TonyBzt
@@ -10,7 +10,7 @@ pax_level=20
 intro_year=1979
 intro_month=1
 Location=City
-DistributionWeight=1
+DistributionWeight=5
 Productivity=200
 InputGood[0]=Abfall
 InputCapacity[0]=800

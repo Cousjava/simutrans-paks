@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Fluss
 #	Neu:01-2011
-#	Letzte Bearbeitung 
-#    09-08-2015 The Transporter
 ---------------------------------
 Obj=way
 Name=river_04
@@ -12,7 +10,7 @@ waytype=water
 system_type=255
 intro_year=1700
 intro_month=1
-cost=5000
+cost=0
 maintenance=0
 topspeed=0
 max_weight=1

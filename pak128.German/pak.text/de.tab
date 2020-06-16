@@ -9,7 +9,7 @@
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                             Font: Prop-Latin1.bdf                            #
-#                            Date Created: 1.02 2020                           #
+#                           Date Created: 12.06 2020                           #
 #                                                                              #
 ################################################################################
 #____________________________bridge - monorail_track____________________________
@@ -154,8 +154,12 @@ COM_ALL_2000_A_46
 Business Tower Nürnberg
 COM_ALL_2001_A_38
 KölnTurm            \n\nSteht in irgendeiner Großstadt am Rhein und stellt dort seit 2001 das höchste Bürogebäude der Stadt dar.
+COM_ALL_2001_L48_A_01
+Euro-Skulptur\n\nSie könnte Ikone des Mammon heißen.
 COM_ALL_2005_A_10
 Kunstmuseum Stuttgart
+COM_ALL_2007_L48_A_01
+Braune Schnecke\n\n steht in München im Bavariapark vor der Verkehrsabteilung des Deutschen Museums. Sie nimmt ironisch Bezug auf das Verkehrsmuseum und dem Traum von Geschwindigkeit. Sie verkörpert aber auch mit ihrem tragbaren Haus die ewige Sehnsucht nach unbegrenzter Mobilität, bei gleichzeitigem Schutz vor dem Fremden. Das ist es, was das Auto so beliebt macht.
 COM_ALL_2010_A_10
 Bürohaus Ziethenstrasse Gütersloh klein
 COM_ALL_2010_A_12
@@ -576,6 +580,8 @@ Orangerie_Karlsruhe
 Orangerie            \n\nOrangerien waren einst die Gewächshäuser der Mächtigen, wo die damals noch seltenen Früchte gedeihen konnten. Hier der Prachtbau aus Karlsruhe.
 Planetarium_Hamburg
 Planetarium          \n\nHamburg
+Propylaeen
+Propyläen\n\nin München am Königsplatz\n Entsprang der der Begeisterung des Königs für Architektur und dem klassischen Griechenland und wurde von 1854 bis 1862 mit privaten Mitteln von Ludwig I. erbaut. 
 Realschule
 Realschule\n\nIn dieser Schule werden junge Simuthanier in den verschiedensten Disziplinen unterrichtet, die man im Simu-Leben benötigt. In Deutsch und Englisch werden kreative Übersetzungstexte verfasst, Mathematik befasst sich mit der Balance von Fuhrpark und Fabriken, im Physikunterricht dreht sich alles um den Pixel als kleinsten Baustein des Universum, dessen Spaltung so katastrophale Folgen hätte, dass man sie verpixeln müsste, und in der Sporterziehung wird erlernt, wie man sich als Passant beim gehen um Ecken teleportiert.
 Rieckhuus_Hamburg-Curslack
@@ -772,10 +778,14 @@ Stueckguthafen
 Stückguthafen
 #_________________________________building - hq_________________________________
 #_________________________________building - hq_________________________________
-Hauptquartier
-HQ
+Hauptquartier0
+Firmenzentrale aus dem Jahr 1800\n\nSchloss Lichtenberg in Hessen
+Hauptquartier1
+Firmenzentrale aus dem Jahr 1871\n\nHerrenhaus Mallin
+Hauptquartier4
+Firmenzentrale aus dem Jahr 1916\n\nSiemensturm in Berlin-Siemensstadt\nDer Turm des ehemaligen Wernerwerks II (Messgerätewerk) auch Siemensturm genannt, ist ein 70 Meter hoher Uhrenturm. In seinem Inneren befindet sich ein Schornstein für das zentrale Kesselhaus, sowie ein hochgelegener Wasserbehälter zur Prüfung von Flüssigkeitsmessern. Der Turm stand einst in der Mitte des aus sieben Innenhöfen bestehenden Messgerätewerkes. Im Zweiten Weltkrieg wurden große Teile des Messgerätewerkes zerstört, sodass nur noch drei Innenhöfe erhalten geblieben sind und der Turm nun direkt am östlichen Rand des Gebäudes steht.
 Hauptquartier7
-HQ-7
+Firmenzentrale neu gebaut im Jahr 1972\n\nAugsburger Hotelturm
 #________________________________building - ind_________________________________
 #________________________________building - ind_________________________________
 IND_ALL_1800_A_01
@@ -792,10 +802,46 @@ IND_ALL_1803_B_02
 Kleingarten in der rot 
 IND_ALL_1830_06
 Gerberei Schönduft\n\nWir machen aus Tierhaut haltbares Leder in allen Farben. Die Gerberei ist weithin bekannt in Rostok, nicht so sehr wegen ihres Leders, sondern weil je nach Windrichtung, die Leute Atemnot bekommen.
+IND_ALL_1840_L34_A_01
+Waggonfabrik Görlitz
+IND_ALL_1841_L16_A_01
+Tuchfabrik Arzt in Michelstadt
+IND_ALL_1860_L38_A_01
+Neue Actien-Zucker-Raffinerie\n\nin Halle am Thüringer Bahnhof wurde 1862 erbaut und 2006 abgerissen. In Halle regnet es anscheinend nicht, denn der Zucker wurde im freien in einer einfachen Miete gelagert.
+IND_ALL_1863_L18_A_01
+Jutespinnerei in Potsdam
+IND_ALL_1882_L30_A_01
+Hallesche Malzfabrik Reinicke&Co. in Halle
+IND_ALL_1892_L20_A_01
+Alter Wasserturm in Burgdorf (Hannover)\n\nDer heute noch stehende Wasserturm gehörte ursprünglich zur Zuckerfabrik "Lehrter Zucker AG"
+IND_ALL_1897_L14_A_01
+Teppichfabrik M. Protzen & Sohn in Berlin Friedrichshain
+IND_ALL_1900_L36_A_01
+Zigarettenfabrik Yenidze\n\nSieht aus wie eine  Moschee ist aber eine 1909 gebaute Zigarettenfabrik in Dresden. Um 1900 bestand in Dresden die Vorschrift, in der Nähe des Zentrums, kein als solches erkennbares Fabrikgebäude zu errichten. In Anlehnung an die Herkunft es Tabaks, entschied man sich für ein Werbemonument im orientalischen Baustil. Allen Anfeindungen zum Trotz erfüllte das Gebäude seinen Werbezweck: Es war in aller Munde. Den Architekten hat man wegen seiner "Moschee" jedoch aus dem Berufsverband geworfen.
+IND_ALL_1901_L48_A_01
+Heizkraftwerk West\n\n steht in Karlsruhe. Bereits 1901 in Betrieb genommen, wurde es mehrfach umgebaut von Kohle auf Schweröl auf Gas. Früher zur Stromerzeugung gebaut, wird seit 1951 die Abwärme im Fernwärmenetz genutzt, heute liefert es nur noch Spitzenlast.
+IND_ALL_1906_L22_A_01
+AEG Alte Fabrik für Bahnmaterial in Berlin Gesundbrunnen
 IND_ALL_1910_A_09
 Maschinenhaus Metallwerk Coburg
+IND_ALL_1912_L24_A_01
+Getreidesilo Krietsch in Wurzen Dresdnerstr. 38
+IND_ALL_1924_L28_A_01
+Druckfarbenfabrik Gebrüder Hartmann in Ammendorf nähe Halle
+IND_ALL_1927_L32_A_01
+Schubert & Salzer Maschinenfabrik in Chemnitz\n\nDer Turm wird in Chemnitz Wirkturm genannt, weil diese Fabrik mit Wirkmaschinen (für die  Herstellung von Strümpfen) reich geworden ist.
+IND_ALL_1929_L26_A_01
+Wasserturm Borsdorf nähe Leipzig
+IND_ALL_1950_L40_A_01
+Solvay Chemicals\n\nEin Chemieproduzent in Rheinberg\n1904 als Sodafabrik gegründet, aufgrund der riesigen Salzvorkommen im niederrheinischen Borth. Die Produktpalette wurde mittlerweile stark erweitert, wobei der Ausgangsstoff für fast alle Rheinberger Produkte nach wie vor das Salz ist.
+IND_ALL_1974_L46_A_01
+Kraftwerk Meppen-Hüntel\n\nvon 1974 bis 2000 Spitzenlast Kraftwerk, ist es heute ein Freizeitpark.
 IND_ALL_1984_A_02
 Baustelle - Hier entsteht ein neuer Industriebetrieb.
+IND_ALL_1996_L42_A_01
+Heizkraftwerk Berlin-Mitte
+IND_ALL_2005_L44_A_01
+Schapfen Mühle\n\nDas Getreidesilo in Ulm ist mit 116 Meter das zweithöchste Getreidesilo der Welt. Es können rund 8.500 Tonnen Getreide gelagert werden.\nEs könnte auch eine moderne Garvitationsmühle sein: Das Korn wird oben eingefüllt, fällt über 100m tief und zerplatzt dann unten beim Aufprall zu Mehlstaub.
 IND_ALL_Gerberei_06
 Gerberei
 IND_ALP_1800_A_01
@@ -1021,15 +1067,21 @@ Experimentelle Fabrik Mageburg\nCSG Cosmetics. Pasten und Cremes zur "Aufhübschu
 AVL_Jubilaeumssaeule
 Jubiläumssäule      \n\nSteht auf dem Stuttgarter Schlossplatz und ist 35 Meter hoch.
 BergerDenkmal_Witten
-Berger Denkmal in Witten
+Berger Denkmal\n\nSteht in Witten
+Koenig-Albert-Denkmal_Freital
+König-Albert-Denkmal\n\nDas König-Albert-Denkmal steht auf dem Windberg in Freital  bei Dresden. Der Windberg ist Namensgeber der Windbergbahn, der ersten deutschen Gebirgsbahn. 
 Obelisk
 Obelisk (Attraktion)
 Obsidia
 Konzertbühne
+Ostentor
+Ostentor\n\n in Regensburg, gebaut ab 1284 und Teil der Stadtbefestigung.
 Roter_Turm
 Roter Turm
 Team_128_german
 Team PAK128.german
+Weisser_Turm
+Weisser Turm Nürnberg
 #________________________________building - res_________________________________
 #________________________________building - res_________________________________
 RES_ALL_1700_Gerberbruch_3_04
@@ -1040,16 +1092,22 @@ RES_ALL_1800_A_02
 Schrebergarten - Ein Gartenhäuschen mit Veranda
 RES_ALL_1800_A_03
 Wohnstallhaus Beuren
-RES_ALL_1800_A_06
-Fränkischer Großbauernhof\n\nEigentlich ein Widerspruch in sich, aber dieser Hof ist zufällig nicht der Erbteilung zum Opfer gefallen und so ist das Wohnen und bewirtschaften des Hofs auch heute noch auskömmlich.
-RES_ALL_1800_A_08
-Kleine Wasserstrasse 25-26 Rostock
 RES_ALL_1800_A_09
 Haus Groß (blau) in Göllheim Hauptstraße 68
-RES_ALL_1800_A_10
-An der Viergelindenbrücke 1 Rostock
 RES_ALL_1800_B_01
 Kleines Wohnhaus
+RES_ALL_1800_D_01
+Kossätenhaus\n\nin Berlin Alt-Marienfelde 12\nZum ursprünglichen Bestand von 1770 gehört nur die linke Haushälfte, während die rechte Haushälfte Mitte des 19. Jahrhunderts angebaut wurde. Die ursprüngliche Raumaufteilung - mit Schwarzer Küche, Kamin, Keller und Räucherkammer - ist nahezu vollständig erhalten geblieben. Der Grundriss erinnert an die frühen Tagelöhnerkaten. Der ältere Gebäudeteil wird durch einen Mittelflur erschlossen, der durch die in der Hausmitte befindliche Schwarze Küche in einen Vorder- und Hinterflur geteilt wird. Der enge fensterlose Küchenraum besitzt noch den alten, durchgehenden Rauchabzug. Die im Rauchabzug befestigten Haken und Nägel dienten der Vorratshaltung. Der Wohnraum links vom Vorderflur konnte durch einen noch vorhandenen offenen Kamin mit separatem Rauchabzug neben der Schwarzen Küche beheizt werden. Rechts vom Flur lag der unbeheizte Schlafraum. Die Decke des Wohnraums besteht aus den sichtbar belassenen Deckenbalken und dem dazwischen befindlichen Lehmschlag. Einen Deckenputz gibt es nicht. Die linke hintere Hausecke ist unterkellert. Dort befand sich vermutlich ein Grubenstall, der in den Boden eingetieft war, damit sich der Dung ablagern konnte. Es war üblich, den Grubenstall nur zweimal im Jahr, Anfang März und im September nach der Ernte, zu entleeren. Um 1900 wurde eine preußische Kappendecke eingezogen, die den Stall in einen Keller verwandelte. Auf dem Dachboden befindet sich neben dem Rauchabzug eine kleine Räucherkammer, deren Wände aus Rundhölzern und einem Lehm-Stroh-Gemisch bestehen. Von den Hofgebäude hinter dem Wohnhaus ist nur die Scheune erhalten geblieben.
+RES_ALL_1800_D_02
+Fränkischer Großbauernhof\n\nEigentlich ein Widerspruch in sich, aber dieser Hof ist zufällig nicht der Erbteilung zum Opfer gefallen und so ist das Wohnen und bewirtschaften des Hofs auch heute noch auskömmlich.
+RES_ALL_1800_D_04
+Nebenerwerbslandwirtschaft\n\nDer Hof eines fränkischen Holzbildhauers. Er schnitzt Großfiguren und Balkenköpfe. Leider kein sehr einträgliches Geschäft, deshalb muss er sein Essen selbst produzieren. Seine drei Lehrlinge bekommen auch nur Kost und Logis, aber in der Rhön muss man nehmen was man bekommt.  
+RES_ALL_1800_D_06
+Armenviertel\n\nin Hamburg
+RES_ALL_1800_D_08
+Kleine Wasserstrasse 25-26\n\nin Rostock
+RES_ALL_1800_D_09
+An der Viergelindenbrücke 1\n\nin Rostock
 RES_ALL_1801_B_01
 Kleines Holzwohnhaus.
 RES_ALL_1802_A_01
@@ -1060,6 +1118,8 @@ RES_ALL_1803_A_01
 Grüne Frische
 RES_ALL_1803_B_01
 Gartenhaus\n Es ist rot, es ist klein, es ist mein und mein Bett passt auch hinein. 
+RES_ALL_1813_A_10
+Weisser Pavillon\n\nin Bad Doberan
 RES_ALL_1870_A_05
 Ubahn Alex Eingang
 RES_ALL_1880_Fischerbruch_3Haeuser_03
@@ -1084,6 +1144,8 @@ RES_ALL_1960_A_20
 Celler Str. 26 Braunschweig
 RES_ALL_1960_A_22
 Türlenstr.34 Stuttgart
+RES_ALL_1969_A_48
+Alexanderplatz\n\nin Berlin mit der Weltzeituhr
 RES_ALL_1970_A_30
 Riehler Strasse 200 Köln
 RES_ALL_1970_A_32
@@ -1108,6 +1170,8 @@ RES_ALL_1972_A_09
 Fußgängertunnel Lewishamstraße
 RES_ALL_1972_A_12
 Mehrfamilienhaus der SI-Immogrund
+RES_ALL_1974_A_48
+Weisser Pavillon\n\nin Bad Doberan nach der Restaurierung von 1974
 RES_ALL_1980_A_26
 Lietzenburger Strasse 1 Berlin
 RES_ALL_2000_A_28
@@ -1141,7 +1205,9 @@ Ein typisches Siedlungshaus des "Wirtschaftswunders".
 RES_ALL_Siedlungshaus_c_05
 Ein typisches Siedlungshaus des "Wirtschaftswunders".
 RES_ALP_1800_A_01
-Wohnhaus aus dem 18. Jahrhundert - Ockergelbe Fassade
+Wohnhaus aus dem 18. Jahrhundert - Weisse Fassade
+RES_ALP_1800_A_02
+Kleines Mehrfamilienhaus aus dem 18. Jahrhundert
 RES_ALP_1800_A_04
 Stall mit Geräteschuppen und Geflügelhütte
 RES_ALP_1800_A_05
@@ -1165,7 +1231,7 @@ Haus von Makie\n\nSehr zur Freude seines vierjährigen Sohns gibt es das Haus von
 RES_ALP_1802_B_01
 Haus in Blau\n\nDieses Haus ist Altbau.
 RES_ALP_1802_C_01
-Verwildertes Baugundstück\n\nXaver Tüchtig hat in seiner Nähe, für seinen Sohn Hans ein Grundstück gekauft. Damit, falls es dieser endlich einmal zu einer Frau bringt, er hier für die junge Familie dann, ein gemütliches Familienheim bauen kann. 
+Verwildertes Baugundstück\n\nXaver Tüchtig hat in seiner Nähe, für seinen Sohn Hans ein Grundstück gekauft. Damit, falls dieser es endlich einmal zu einer Frau bringt, er hier für die junge Familie dann, ein gemütliches Familienheim bauen kann. 
 RES_ALP_1902_A_08
 Oberbayrisches Bauernhaus. Das Wohnhaus ist alles, was vom ehemaligen Mayertalerhof übrig geblieben ist.
 RES_ALP_1924_A_11
@@ -1872,6 +1938,10 @@ BICYCLE_RIDER_0
 Fahrradfahrer blau\nEin sogenanntes Sicherheitsfahrrad das ab 1885 gebaut wurde. Es ist sicherer als die zuvor verbreiteten Hochräder. Diese Bauform ist auch heute noch üblich.
 BICYCLE_RIDER_1
 Fahrradfahrer grün\nEin sogenanntes Sicherheitsfahrrad das ab 1885 gebaut wurde. Es ist sicherer als die zuvor verbreiteten Hochräder. Diese Bauform ist auch heute noch üblich.
+BICYCLE_RIDER_2
+Fahrradfahrer blau\nEin sogenanntes Sicherheitsfahrrad das ab 1885 gebaut wurde. Es ist sicherer als die zuvor verbreiteten Hochräder. Diese Bauform ist auch heute noch üblich.
+BICYCLE_RIDER_3
+Fahrradfahrer grün\nEin sogenanntes Sicherheitsfahrrad das ab 1885 gebaut wurde. Es ist sicherer als die zuvor verbreiteten Hochräder. Diese Bauform ist auch heute noch üblich.
 citycar_Audi_A4grau
 Audi A4 grau
 citycar_Audi_A4gruen
@@ -1881,7 +1951,7 @@ Pferdekutsche mit Fracht
 Epoche1CityCar2
 Einspähner
 Epoche1CityCar3
-Mercedes Benz 170
+Benz 10/30 PS
 Epoche1CityCar4
 Reisekutsche
 Epoche1CityCar6
@@ -1889,7 +1959,7 @@ BMW-Dixi
 Epoche1CityCar7
 Lanz Bulldog mit Anhänger
 Epoche1CityCar8
-Ford-pickup 1921
+Ford-pickup TT 1921
 Epoche3CityCar1
 Pickup
 Epoche3CityCar10
@@ -1997,7 +2067,7 @@ factory_alte_Werft_details
 AlteGastwirtschaft
 Gastwirtschaft
 factory_AlteGastwirtschaft_details
-<title>Alte Gastwirtschaft</title><p>Wein, Weib und Gesang. Dazu noch gutes Essen. Was will Man(n) mehr?</p>
+<p>Wein, Weib und Gesang. Dazu noch gutes Essen. Was will Man(n) mehr?<br>Vorbild ist die  Gaststätte zum Leuchtturm in Halle, diese wurde 1905 erbaut und 2013 abgerissen. Der Name deutet nicht auf einen Leuchtturm für die Schifffahrt hin, sondern ist ein Reklametrick des Wirts. Ein Licht im Dachaufsatz machte schon von weitem auf das Lokal aufmerksam. </p>
 alter_Kamerahersteller
 Kamerahersteller (1912)
 factory_alter_Kamerahersteller_details
@@ -2009,7 +2079,7 @@ factory_alter_Obstbauer_details
 alter_Schlachthof
 Schlachthof (1892)
 factory_alter_Schlachthof_details
-<title>Mechanisierter alte Schlachthof in Aachen</title><p>Hier wurde erstmalig eine Dampfmaschine zusammen mit einer Kältemaschine von Linde in einem Schlachthof installiert. Seit 1890 kannte man Kältemaschinen in Brauereien. Die Kältemaschine erlaubte das sofortige Kühlen des Fleisches. Die Leistung der Dampfmaschine wurde, neben dem Betrieb der Kältemaschine, auch zur Mechanisierung des Fließbands und Erleichterung der schweren Arbeit eingesetzt. Der Abdampf wurde zu Reinigungszwecken genutzt. Erst ab 1920 mit der Ausbreitung der öffentlichen Stromversorgung konnte auf die wartungsaufwendige Dampfmaschine verzichtet werden. </p>
+<h1>Mechanisierter alte Schlachthof in Aachen</h1><p>Hier wurde erstmalig eine Dampfmaschine zusammen mit einer Kältemaschine von Linde in einem Schlachthof installiert. Seit 1890 kannte man Kältemaschinen in Brauereien. Die Kältemaschine erlaubte das sofortige Kühlen des Fleisches. Die Leistung der Dampfmaschine wurde, neben dem Betrieb der Kältemaschine, auch zur Mechanisierung des Fließbands und Erleichterung der schweren Arbeit eingesetzt. Der Abdampf wurde zu Reinigungszwecken genutzt. Erst ab 1920 mit der Ausbreitung der öffentlichen Stromversorgung konnte auf die wartungsaufwendige Dampfmaschine verzichtet werden. </p>
 altes Kohlekraftwerk
 Kohlekraftwerk (Ostdt., 1908)
 factory_altes Kohlekraftwerk_details
@@ -2135,7 +2205,7 @@ factory_BaeckereiGadebusch_NIC_details
 Bauernhof_All1800
 Hühnerhof (1800)
 factory_Bauernhof_All1800_details
-<title>Hühnerhof (1800)</title><p>Kleinbauern nannte man früher Häusler. Häusler hatten nicht genug Grund um davon leben zu können. Die eine Möglichkeit war als Tagelöhner bei den Bauern der Umgebung zu arbeiten. Was schlecht bezahlt und gering geschätzt wurde. Oder höherwertige Güter herzustellen, als Handwerker, oder Heimarbeiter. Dieser hier verkauft kaum Gerste, er verfüttert sie lieber an seine Hühner und kann deren Eier zu einem höheren Preis verkaufen, als es beim Getreide möglich wäre.<br><strong> Wenn er die Eier gut verkaufen kann wird er weitere Felder dazu Pachten und die Produktion stark erhöhen.</strong></p><p> Einzig jeden Tag Hühnerfleisch mit Brei, der Bauer, seine Frau und die Kinder können die zähen, knochigen alten Gigerl nicht mehr sehen. Aber es hilft nichts, es ist das einzige Essen das sie haben.</p><p> Die Grafik zeigt ein typisches oberbayerisches armer Leute Haus.</p>
+<p>Kleinbauern nannte man früher Häusler. Häusler hatten nicht genug Grund um davon leben zu können. Die eine Möglichkeit war als Tagelöhner bei den Bauern der Umgebung zu arbeiten. Was schlecht bezahlt und gering geschätzt wurde. Oder höherwertige Güter herzustellen, als Handwerker, oder Heimarbeiter. Dieser hier verkauft kaum Gerste, er verfüttert sie lieber an seine Hühner und kann deren Eier zu einem höheren Preis verkaufen, als es beim Getreide möglich wäre.<br><strong> Wenn er die Eier gut verkaufen kann wird er weitere Felder dazu Pachten und die Produktion stark erhöhen.</strong></p><p> Einzig jeden Tag Hühnerfleisch mit Brei, der Bauer, seine Frau und die Kinder können die zähen, knochigen alten Gigerl nicht mehr sehen. Aber es hilft nichts, es ist das einzige Essen das sie haben.</p><p> Die Grafik zeigt ein typisches oberbayerisches armer Leute Haus.</p>
 Bauernhof_MGB
 Getreidehof (Norddt./Ostdt.)
 factory_Bauernhof_MGB_details
@@ -2172,12 +2242,16 @@ factory_Betonwerk_details
 <title>Betonfertigteile Werk</title><p>Tröge, Treppen, Wände, Böden und Bögen aus Fertigbeton</p>
 Betonwerk_1871
 Betonwerk
+factory_Betonwerk_1871_details
+<h1>Betonwarenfabrik Pflumm & Kemmler</h1><p>Sehr früh nach der Wiederentdeckung von Zement, ist man auf die Idee gekommen Formteile zu gießen und als Massenware zu verkaufen. Vom Abwasserrohr über den Blumentopf bis zur Zisterne, aus Beton kann vielfältiges geformt werden. Ob Pflasterstein oder Sickerschacht, ist erst mal die Schalung gebaut, ist es zur Massenproduktion nicht weit.</p>  
 Biokraftwerk
 Biogas-Kraftwerk
+factory_Biokraftwerk_details
+<p>Dieses "Kraftwerk" macht aus Scheiße Energie ;) .</p>
 Biomassekraftwerk
 Biomasse Kraftwerk
 factory_Biomassekraftwerk_details
-<title>Biomassekraftwerk</title><p>Dieses "Kraftwerk" macht aus Scheiße Energie ;) .</p>
+<h1>Biomasse-Kraftwerk-Schilling</h1><p>Es galt als eines der schönsten Biomassekraftwerke Deutschlands. Das Kraftwerk hatte 6,7 MW Leistung, das entspricht 1450 Einfamilienhäusern. Die Brennstoffe des Kraftwerks waren Baumrinde, Pferdemist und Waldhackschnitzel, sowie vermutlich auch die Holzabfälle des Holzwerk Schilling, dem Eigentümer des Kraftwerks. Die Anlage erzeugte auch Fernwärme für den Ort Schwendi und die Fachklinik für Neurologieund in Dietenbronn, sowie für die Holztrocknungsanlage. Nach der Insolvenz wurde die Anlage abgebaut und anderswo verwendet.</p>
 factory_Brennstoffhandel_details
 <title>Brennstoffhandel Untermoser</title><p>Kohle, Holz und Brickets sorgen für ein mollig warmes Heim bei der Kundschaft.</p>
 Buchhandlung
@@ -2187,11 +2261,11 @@ factory_Buchhandlung_details
 Chemiewerk_1886
 Chemiewerk
 factory_Chemiewerk_1886_details
-<title>BASF</title><p>Neben Farben und Chemikalien produziert diese Fabrik auch Pillen, Salben und Hustensäfte, für die kleinen und großen Wehwehchen. 1863 sind eine ganze Reihe heute großer Chemiewerke entstanden, darunter Höchst, Bayer und BASF. Alle haben mit der Produktion von Teerfarben angefangen. Die BASF ist explizit zum Verwerten der Steinkohlenteerreste des Gaswerks von Mannheim gegründet worden. Man handelte bald auch mit Chemikalien aus und für die Produktion. Die Herstellung von Arzneimitteln war dann naheliegend.</p>
+<em>BASF</em><p>Neben Farben und Chemikalien produziert diese Fabrik auch Pillen, Salben und Hustensäfte, für die kleinen und großen Wehwehchen. 1863 sind eine ganze Reihe heute großer Chemiewerke entstanden, darunter Höchst, Bayer und BASF. Alle haben mit der Produktion von Teerfarben angefangen. Die BASF ist explizit zum Verwerten der Steinkohlenteerreste des Gaswerks von Mannheim gegründet worden. Man handelte bald auch mit Chemikalien aus und für die Produktion. Die Herstellung von Arzneimitteln war dann naheliegend.</p>
 Chemiewerk_1920
 Chemiewerk (1920)
 factory_Chemiewerk_1920_details
-<title>Höchst</title><p>Dieses Werk produziert Farben, Chemikalien sowie Arzneimittel. Gegründet 1863 und mit der Produktion von Farben aus Steinkohlenteer groß geworden, wurde 1920 ein neues Firmengebäude errichtet, das dem Firmenlogo nachempfunden ist. Das Logo ist nicht, wie heute üblich, aus der Luft, sondern vom Werkstor aus erkennbar. Verarbeitet werden verschiedene Salze sowie Steinkohlenteer, erst ab 1950 auch Erdöl.</p>
+<em>Höchst</em><p>Dieses Werk produziert Farben, Chemikalien sowie Arzneimittel. Höchst wurde 1863 gegründet und ist mit der Produktion von Farben aus Steinkohlenteer groß geworden. 1920 wurde ein neues Firmengebäude errichtet, das dem Firmenlogo nachempfunden ist. Das Logo ist nicht, wie heute üblich, aus der Luft, sondern vom Werkstor aus erkennbar. Die Grafik zeigt dieses Gebäude. Verarbeitet werden verschiedene Salze sowie Steinkohlenteer, erst ab 1950 auch Erdöl.</p>
 Chemiewerk_NIC
 Chemiewerk (1960)
 factory_Chemiewerk_NIC_details
@@ -2213,9 +2287,9 @@ Computerhersteller (1990)
 factory_Computerhersteller1990_details
 <title>SMI Copy & Clone Corp.</title><p>Die SMI Copy & Clone Corp. ist höchst erfolgreich im Herstellen von kompatiblen Computern. Nach dem sich SMI-kompatible Computer auf breiter Front durchgesetzt haben, bestimmt der Preis entscheidend über den Verkaufserfolg. Die SMI Copy & Clone Corp. produziert rationell in großen Stückzahlen für den internationalen Markt und kann die niedrigen Stückkosten an den Verbraucher weitergeben. Auch für den Anwender ist die Kompatibilität von Vorteil, läuft doch jede Software auf jedem kompatiblen Computer. Damit sind die Zeiten der Herstellerabhängigkeit vorbei. Bedauerlicherweise funktioniert dadurch aber auch jeder Virus auf jedem kompatiblen Computer.</p>
 Dessauer_Kohlekraftwerk
-Kohlekraftwerk (Ostdt., 1995)
+Kohlekraftwerk (Ostdt., 1992)
 factory_Dessauer_Kohlekraftwerk_details
-<title>Kohlekraftwerk (Dessau)</title><p>Das Kohlekraftwerk wandelt mittels thermischer Verbrennung Wärme in elektrische Energie um. Durch aufwändige Filteranlagen wird zudem ein großer Teil der Abgase von umweltschädlichen Partikeln befreit.</p>
+<h1>Kohlekraftwerk Dessau</h1><p>Das Kohlekraftwerk wandelt mittels thermischer Verbrennung Wärme in elektrische Energie um. Durch aufwändige Filteranlagen wird zudem ein großer Teil der Abgase von umweltschädlichen Partikeln befreit.</p>
 Discounter_MGB_AVL_ALP_1990
 Discounter SIMSTARR SÜD (1990)
 factory_Discounter_MGB_AVL_ALP_1990_details
@@ -2257,7 +2331,7 @@ factory_Forellenhof Markusmuehle_details
 Frischfisch
 Fischfanggebiet
 factory_Frischfisch_details
-<title>Fischschwarm</title><p>Blub Blub</p>
+<h1>Fischschwarm</h1><p>Blub Blub Blub<br><br>Die Fischfanggebiete in Simutrans sind eigentlich unlogisch. Je mehr Fische man hier fängt, um so mehr Fische springen aus dem Wasser. Eigentlich sollte ein Gewässer mal leer gefischt sein. Die Ressource verbraucht und erschöpft sein. In Echt bricht ein überfischter Bestand zusammen und dann bleiben die Netze leer. Nicht so hier, hier gibt es Fisch ohne Ende.</p>
 Gasthof_1800
 Gasthof
 factory_Gasthof_1800_details
@@ -2298,10 +2372,8 @@ Grossmuehle_NIC
 Mühle (Ostdt., 1913)
 factory_Grossmuehle_NIC_details
 <title>Großmühle Alberthafen Dresden</title><p>In einer Großmühle werden verschiedene Getreidesorten wie Roggen, Dinkel, Weizen und Gerste zu Mehl verarbeitet. Dieses wird dann entweder an Großabnehmer wie Bäckereien und Nudelhersteller oder auch an den Einzelhandel ausgeliefert.</p>
-Heizkraftwerk
-Fernheizkraftwerk
 factory_Heizkraftwerk_details
-<title>Altes Heizkraftwerk</title><p>Ein HKW ist eine Industrieanlage die aus Kohle oder Öl - Elektrizität und Wärme in einem Kraft-Wärme-Kopplungsprozess erzeugt. 1884 wurde von Emil Rathenau in Berlin in der Markgrafenstraße 44 das erste Kraftwerk zur öffentlichen Stromversorgung errichtet. Es lieferte Gleichstrom und konnte deshalb nur die nächste Umgebung versorgen. Dieser erste wenige Strom wurde fast ausschließlich zur Beleuchtung verwendet. Ab 1896 wurde auch Strom mit einer Spannung von 500V für die erste elektrische Straßenbahn Berlins erzeugt. Mit der Einführung von Wechselstrom konnte der Strom über weite Strecken transportiert werden. Damit konnten die schmutzigen Kraftwerke an den Stadtrand oder in die Nähe der Förderorte für Kohle verlegt werden.  </p>
+<h1>Altes Heizkraftwerk</h1><p>Ein HKW ist eine Industrieanlage die aus Kohle oder Öl - Elektrizität und Wärme in einem Kraft-Wärme-Kopplungsprozess erzeugt. 1884 wurde von Emil Rathenau in Berlin in der Markgrafenstraße 44 das erste Kraftwerk zur öffentlichen Stromversorgung errichtet. Es lieferte Gleichstrom und konnte deshalb nur die nächste Umgebung versorgen. Dieser erste wenige Strom wurde fast ausschließlich zur Beleuchtung verwendet. Ab 1896 wurde auch Strom mit einer Spannung von 500V für die erste elektrische Straßenbahn Berlins erzeugt. Mit der Einführung von Wechselstrom konnte der Strom über weite Strecken transportiert werden. Damit konnten die schmutzigen Kraftwerke an den Stadtrand oder in die Nähe der Förderorte für Kohle verlegt werden.  </p>
 Hochofen_alt
 Stahlwerk
 factory_Hochofen_alt_details
@@ -2350,6 +2422,14 @@ Kieswerk1
 Kieswerk (1950)
 factory_Kieswerk1_details
 <title>Kieswerk</title><p>Steine, Steinchen und Kiesel für die Zementfabrik und den Strassenbau</p>
+Klinik_1912
+Klinik 1912
+factory_Klinik_1912_details
+<p>Krankenhäuser haben einen hohen Verbrauch an Medikamenten, aber auch an Textilien. Von den Betttüchern über Arztkittel zu nur einmal verwendbaren Tüchern und Schutzmasken. Anfang des 20. Jahrhunderts war man noch der Meinung deftige Eiweiß reiches Essen wie Fleisch kräftigt den Körper und stärkt die Abwehrkräfte. <br>Vorbild ist die Klinik in Bedburg-Hau. Diese Klinik ist sehr groß, mit über 100 Häusern. Vorbild für die Grafik ist das Verwaltungsgebäude.</p> 
+Klinik_1927
+Klinik 1927
+factory_Klinik_1927_details
+<p>Ruhig im Wald gelegen ist dies ein Krankenhaus für schwer infektiöse Lungenkranke. Die saubere, kühle und feuchte Luft des Walds soll den Kranken Linderung bringen. Gleichzeitig hat man die Kranken hier gerne abgeschieden von den gesunden Menschen in den Dörfern und Städten, um so die Weiterverbreitung zu vermeiden. Die Mauern der ehemaligen Burg erlauben eine einfach Kontrolle der Leute die das Krankenhaus betreten oder verlassen. Da die nächste Siedlung weit entfernt ist wohnt das meiste Pflegepersonal im Westflügel. So ist sichergestellt, dass ein sich versehentlich infizierter Mitarbeiter keine Epidemie in der Umgebung auslöst. Natürlich schützen sich die Pflegekräfte mit Schutzkleidung und Schutzmasken so gut es geht vor einer Ansteckung. Diese wird vor jedem Betreten eines Krankenzimmers angelegt und nach dem Verlassen sofort vernichtet. Das führt zu einem enormen Verbrauch an diesen Textilien.<br>Vorbild für Grafik ist das Krankenhaus Speyererhof in Heidelberg</p>
 Klosterbrauerei1610_NIC
 Brauerei ("Klosterbrau")
 factory_Klosterbrauerei1610_NIC_details
@@ -2431,7 +2511,7 @@ factory_MGBWeingut_NIC_details
 Milchfabrik_NIC
 Molkerei (1930)
 factory_Milchfabrik_NIC_details
-<title>Molkerei</title><p>Hier wird Milch pasteurisiert, abgefüllt und dann verkauft.</p>
+<p>Hier wird Milch pasteurisiert, abgefüllt und dann verkauft.</p>
 Minimarkt_NIC
 Minimarkt
 factory_Minimarkt_NIC_details
@@ -2507,7 +2587,7 @@ factory_NorddeutscherExporteur_1891_details
 Nordschacht Mettingen
 Kohlenbergwerk (Mettingen, 1950)
 factory_Nordschacht Mettingen_details
-<title>Kohlenmine</title><p>Als Kohlenbergbau wird die Gewinnung von Steinkohle bezeichnet, die im Tage- oder Untertagebau betrieben wird.</p>
+<h1>Nordschacht Mettingen</h1><p>Als Kohlenbergbau wird die Gewinnung von Steinkohle bezeichnet, die im Tage- oder Untertagebau betrieben wird.</p>
 Obstbauer
 Obstbauer (1930)
 factory_Obstbauer_details
@@ -2557,11 +2637,11 @@ factory_Sandgrube_1800_details
 Schlachthaus_1800
 Schlachthaus
 factory_Schlachthaus_1800_details
-<title>Alte Schlachthof von Bamberg</title><p>Ein Schlachthof ist ein Komplex von Gebäuden, die der Gewinnung und Zwischenlagerung von Frischfleisch dienen, um Märkte und Gasthäuser zu versorgen. Der alte Schlachthof in Bamberg wurde neben und zum Teil über dem Fluss Regnitz gebaut. Über Schlitze im Boden ließ man die Schlachtabfälle in den Fluss fallen und hoffte darauf, dass der Fluss sie weg trägt. Eine an sich recht rationelle und hygienische Entsorgung. Nur, der Fluss wird sie anderenorts angespült haben, wo sie dann verfault und gestunken haben. Aufgrund anhaltender hygienischer Missstände und des starken Geruchs kam es zu Protesten gegen den Betrieb. So wurde im Jahr 1904 der alte Schlachthof außer Betrieb genommen </p>
+<h1>Alte Schlachthof von Bamberg</h1><p>Ein Schlachthof ist ein Komplex von Gebäuden, die der Gewinnung und Zwischenlagerung von Frischfleisch dienen, um Märkte und Gasthäuser zu versorgen. Der alte Schlachthof in Bamberg wurde neben und zum Teil über dem Fluss Regnitz gebaut. Über Schlitze im Boden ließ man die Schlachtabfälle in den Fluss fallen und hoffte darauf, dass der Fluss sie weg trägt. Eine an sich recht rationelle und hygienische Entsorgung. Nur, der Fluss wird sie anderenorts angespült haben, wo sie dann verfault und gestunken haben. Aufgrund anhaltender hygienischer Missstände und des starken Geruchs kam es zu Protesten gegen den Betrieb. So wurde im Jahr 1904 der alte Schlachthof außer Betrieb genommen </p>
 Schlachthof_NIC
 Schlachthof (1940)
 factory_Schlachthof_NIC_details
-<title>Schlachthof</title><p>Kühe gehen an einem Ende hinein und Fleisch kommt an dem anderen raus.</p>
+<p>Kühe gehen an einem Ende hinein und Fleisch kommt an dem anderen raus.</p><p>Dieser moderne Schlachthof benötigt keine Kohle.<br>Es wurde bei der Konzeption des neuen Schlachthofs auf eine Dampfmaschine verzichtet und bezieht den Strom ausschließlich aus dem öffentlichen Netz. Die Eigenversorgung der Kältemaschinen mit einer eigenen Dampfmaschine hätte zwar einige Vorteile, wie Ausfallsicherheit und Stromkosten, zumal die Abwärme der Dampfmaschine zum kochen von Würste gut geeignet ist, aber Metzger haben sich als schlechte Maschinisten erwiesen und Dampfmaschinen reagieren sensibel auf grobe Behandlung. Im alten Schlachthof habe die Kosten für Reparaturen den Effizienzgewinn mehr als aufgefressen und so gibt es hier auch keinen Dampfstrahl zum reinigen der Gerätschaften und Räume mehr.</p>
 Schrotthandel_NIC
 Schrottplatz
 factory_Schrotthandel_NIC_details
@@ -2589,9 +2669,9 @@ Steinbruch Hartkoppe (1970)
 factory_SteinbruchHartkoppe_details
 <title>Steinbruch</title><p>Hier wird grober Kies gefördert.</p>
 Steinkohlekraftwerk
-Kohlekraftwerk (1975)
+Kohlekraftwerk (1982)
 factory_Steinkohlekraftwerk_details
-<title>Steinkohlekraftwerk</title><p>Das Kohlekraftwerk wandelt die mittels thermischer Verbrennung gewonnene Wärme in elektrische Energie um. Durch aufwändige Filteranlagen wird zudem ein großer Teil der Abgase von umweltschädlichen Partikeln befreit.</p>
+<h1>Steinkohlekraftwerk Rostock</h1><p>Das Kohlekraftwerk wandelt die mittels thermischer Verbrennung gewonnene Wärme in elektrische Energie um. Durch aufwändige Filteranlagen wird zudem ein großer Teil der Abgase von umweltschädlichen Partikeln befreit. Der Kühlturm (Gesamthöhe 141,5 m) wird gleichzeitig als Schornstein genutzt, die Rauchgase werden dabei oberhalb der Verrieselungsebene in die Dampfschwaden eingeleitet. </p>
 sueddt_alte_baeckerei
 Bäckerei (Süddt.)
 factory_sueddt_alte_baeckerei_details
@@ -2631,7 +2711,7 @@ factory_TierfutterFabrik_NIC_details
 Verbrennungskraftwerk
 Abfallkraftwerk
 factory_Verbrennungskraftwerk_details
-<title>Heizkraftwerk</title><p>Ein Heizkraftwerk erzeugt Wärme für die Warmwasserversorgung, Raumbeheizung und industrielle Prozesse. Nebenbei wird auch noch Strom zur Abdeckung von Spitzenverbrauchszeiten produziert.</p>
+<p>Ein Heizkraftwerk erzeugt Wärme für die Warmwasserversorgung, Raumbeheizung und industrielle Prozesse. Nebenbei wird auch noch Strom zur Abdeckung von Spitzenverbrauchszeiten produziert.</p>
 factory_Verpackungshersteller_details
 <title>MakiePAK Verpackungsdesign GmbH</title><p>Verpackungsmaterial wird in vielen Fabriken nebenher produziert. Um sich vom Markt abzuheben, hat sich die MakiePAK Verpackungsdesign GmbH auf die Herstellung von speziellen, für hochwertige Marken designten Verpackungen spezialisiert. Schon die Verpackung soll die Hochwertigkeit der Ware vermitteln und dem Käufer damit ein besonderes Kauferlebnis bieten. Die MakiePAK GmbH unterstützt dazu den Kunden schon beim Entwurf der Verpackung und sorgt für die konkurrenzfreie Produktion der Verpackung. Die individuelle Präsentation der Ware hat natürlich ihren Preis. Produziert werden Dosen in nicht normierten Formen und Größen sowie mit Folie beschichtete Pappschachteln in allen Formen und Größen. Eine farbenfrohe Bedruckung von allen Seiten sorgt dafür, dass dem Kunden die Ware von Weitem auffällt.</p>
 Verpackungsmittelfabrik_1909
@@ -2641,7 +2721,7 @@ factory_Verpackungsmittelfabrik_1909_details
 Versandhandel_1886
 Versandhandel
 factory_Versandhandel_1886_details
-<title>Versandhandel Mey & Edlich seit 1886</title><p>in Leibzig ist der älteste und noch aktive Versandhandel. Beim Versandhandel gehen die Kunden zum Kaufen nicht auf den Markt, sondern wählen in Zeitungsanzeigen oder in Katalogen ihre gewünschte Produkte. Diese bestellen sie per Brief und bekommen die Ware dann per Paketpost geliefert. Deshalb ist ein Versandhandel auf ein gut funktionierendes Postwesen angewiesen. Die Briefe mit den Bestellungen müssen zuverlässig an der Fabrik angeliefert werden. Genauso zuverlässig müssen die Pakete ausgeliefert werden. Auch hier im Spiel funktioniert der Versandhandel nur bei einer guten Postanbindung. Kleidung, Schreibwaren und kleine Maschinen sind für den Versandhandel bestens geeignet, da sie in Pakten gut versendet werden können. Sie sind nicht verderblich, leicht und hochwertig.</p>
+<title>Versandhandel Mey & Edlich seit 1886</title><p>in Leipzig ist der älteste und noch aktive Versandhandel. Beim Versandhandel gehen die Kunden zum Kaufen nicht auf den Markt, sondern wählen in Zeitungsanzeigen oder in Katalogen ihre gewünschte Produkte. Diese bestellen sie per Brief und bekommen die Ware dann per Paketpost geliefert. Deshalb ist ein Versandhandel auf ein gut funktionierendes Postwesen angewiesen. Die Briefe mit den Bestellungen müssen zuverlässig an der Fabrik angeliefert werden. Genauso zuverlässig müssen die Pakete ausgeliefert werden. Auch hier im Spiel funktioniert der Versandhandel nur bei einer guten Postanbindung. Kleidung, Schreibwaren und kleine Maschinen sind für den Versandhandel bestens geeignet, da sie in Pakten gut versendet werden können. Sie sind nicht verderblich, leicht und hochwertig.</p>
 Verwaltung_Muenchen_1965
 Stadtverwaltung
 factory_Verwaltung_Muenchen_1965_details
@@ -2661,11 +2741,13 @@ factory_Viehhof_Nord1800_details
 VWAutohaus_NIC
 Autohaus (1952)
 factory_VWAutohaus_NIC_details
-<title>VW Autohaus</title><p>Die Verkaufsschlager dieses Autohauses sind natürlich der VW-Bulli und der Käfer. Wem allerdings ein VW-Golf oder Passat lieber ist, dem kann hier auch weitergeholfen werden.</p>
+<p>Die Verkaufsschlager dieses Autohauses sind natürlich der VW-Bulli und der Käfer. Wem allerdings ein VW-Golf oder Passat lieber ist, dem kann hier auch weitergeholfen werden.</p>
 Waferfabrik_1965
 Waferfabrik
 factory_Waferfabrik_1965_details
 <title>Wacker Chemie</title><p>Auf den ersten Blick erkennt man ein beliebiges Chemiewerk. Doch es produziert hochreines Silizium und stellt daraus monokristalline Wafer her. Wafer, so nennt man die Scheiben aus reinem Silizium, auf denen integrierte Schaltungen aufgebaut werden, besser bekannt unter dem Namen ICs oder Chips. Das Herstellen von hochreinem Silizium und das Ziehen von Monokristallen aus einer Schmelze ist sehr energieaufwendig. Wacker in Burghausen kann dafür den Strom seines werkseigenen Wasserkraftwerks nutzen. Auch im Simutranskosmos ist die Fabrik auf eine gute Stromversorgung angewiesen. Nur bei ausreichender Stromversorgung wird diese Frabik genug Wafer für die Computerhersteller liefern. </p>
+factory_Wasserkraftwerk_details
+<h1>Laufwasserkraftwerk Schöngeising</h1><p>Das Laufwasserkraftwerk in Schöngeising wurde 1992 gebaut um Fürstenfeldbruck und die Umgebung mit Strom zu versorgen. Es ist das älteste erhaltene Wasserkraftwerk in Deutschland, das auch heute noch in Betrieb ist. Oskar von Miller hatte bei der Planung nicht nur die Straßenbeleuchtung und Licht für die Haushalte im Sinn. Er sah vor allem die Nützlichkeit von elektrischer Antriebskraft für Handwerk und kleine Fabriken, die sich keine eigene Dampfmaschine leisten konnten. 1893 gab es in Fürstenfeldbruck bereits 16 an das Netz angeschlossene Elektromotoren. Es gab auch mobile Elektromotoren, die dank des flächendeckenden Netz überall in Fürstenfeldbruck eingesetzt werden konnten.  <br><br>In Simutrans erscheint es abweichend davon um 1880, weil es einige Jahre vor dem Heizkraftwerk erscheinen muss. Der Sinn des Wasserkraftwerks ist nicht so sehr Strom zu produzieren, als eine Eigenart vom Programm Simutrans auszugleichen. Simutrans baut vorrangig Kraftwerke bis der Bedarf aller Fabriken an Strom gedeckt ist. Wenn man eine Karte um 1800 startet, dann existieren um 1880 bereits viele Fabriken, welche alle Strom brauchen. Simutrans würde mit erscheinen des ersten Kraftwerks (Heizkraftwerk) um 1884, ab da jetzt nur noch Heizkraftwerke bauen bis der Strombedarf aller Fabriken gedeckt ist. Das kann bis nach 1963 dauern, dem Erscheinungsjahr wirklich leistungsfähiger Kraftwerke, was den Zeitraum aus Spielersicht dann langweilig macht.</p>
 Weinberg_NIC
 Weinberg
 factory_Weinberg_NIC_details
@@ -2842,6 +2924,8 @@ Cluster_21
 Schrebergärten
 desert
 Küste
+Gewinn
+Jahresgewinn
 Make way or stop public (will join with neighbours), %i times maintainance
 Erzeugen/verbinden mit öffentlicher Haltestelle (%i$ pro Feld und Level)
 mediterran
@@ -2939,89 +3023,93 @@ Jahreszeiten
 #_____________________________________tree______________________________________
 #_____________________________________tree______________________________________
 Baumgruppe_MHz
-Baumgruppe (gemalt von MHz)
+Baumgruppe
 Baumgruppe_MHz_Berg
-Baumgruppe (gemalt von MHz)
+Baumgruppe
 Birke_Berg
-Hänge-Birke, lat. Betula pendula (gemalt von NNW)
+Hänge-Birke, lat. Betula pendula
 Birke1
-Moorbirke, lat. Betula pubescens (gemalt von RedRabbit)
+Moorbirke, lat. Betula pubescens
 Birke2
-Moorbirke, lat. Betula pubescens (gemalt von RedRabbit)
+Moorbirke, lat. Betula pubescens
 Buesche
-Büsche (gemalt von NNW)
+Büsche
 BuescheDuenen
-Busch (gemalt von NNW)
+Busch
+Eiche_1
+Esche, lat. Fraxinus excelsior
 Eiche1
-Esche, lat. Fraxinus excelsior (gemalt von NNW)
+Eiche
 Eiche2
-Eiche (gemalt von RedRabbit)
+Eiche
 Erle1
-Erle (gemalt von RedRabbit)
+Erle
 Erle2
-Erle (gemalt von RedRabbit)
+Erle
 Fichte1
-Fichte (gemalt von RedRabbit)
+Fichte
 Fichte1_gross
-große Fichte (gemalt von RedRabbit)
+große Fichte
 Fichte2
-Fichte, lat .Picea abies (gemalt von RedRabbit)
+Fichte, lat .Picea abies
 GrosserBaum_Shunter
-Moor-Birke, lat. Betula pubescens (gemalt von NNW)
+Moor-Birke, lat. Betula pubescens
 GrosserBaum_Shunter_Alm
-Moor-Birke, lat. Betula pubescens (gemalt von NNW)
+Moor-Birke, lat. Betula pubescens
 Hochbreit_Shunter
-Trauerweide, lat. Salix babylonica (gemalt von NNW)
+Trauerweide, lat. Salix babylonica
 Kiefer
-Waldkiefer, lat. Pinus sylvestris (gemalt von NNW)
+Waldkiefer, lat. Pinus sylvestris
 Kiefer_Alm
-Bergkiefer, lat. Pinus mugo (gemalt von NNW)
+Bergkiefer, lat. Pinus mugo
 Kiefer1
-Kiefer (gemalt von RedRabbit)
+Kiefer
 Kiefer1_gross
-große Kiefer (gemalt von RedRabbit)
+große Kiefer
+Kiefer2
+Kiefer
 Kugel-dunkel_MHz
-Traubeneiche, lat. Quercus petraea (gemalt von NNW)
+Traubeneiche, lat. Quercus petraea
 Kugel-hell_MHz
-Stieleiche, lat. Quercus robur (gemalt von NNW)
+Stieleiche, lat. Quercus robur
 Laerche1
-Lärche (gemalt von RedRabbit)
+Lärche
 Laerche2
-Lärche (gemalt von RedRabbit)
+Lärche
 Locker_Shunter
-Rotbuche (gemalt von NNW)
+Rotbuche
 Oak
-Stieleiche, lat. Quercus robur (gemalt von NNW)
+Stieleiche, lat. Quercus robur
 Obst_Shunter
-Kirsche, lat. Cerasus vulgaris (gemalt von NNW)
+Kirsche, lat. Cerasus vulgaris
 Obst_Shunter_Alm
-Sauerkirsche, lat. Prunus cerasus  (gemalt von NNW)
+Sauerkirsche, lat. Prunus cerasus
 ObstAlm_Shunter
-Kirsche, lat. Cerasus vulgaris (gemalt von NNW)
+Kirsche, lat. Cerasus vulgaris
 Strubbelkopf_MHz
-Spitzahorn, lat. Acer platanoides (gemalt von NNW)
+Spitzahorn, lat. Acer platanoides
 Strubbelkopf_MHz_Alm
-Berg-Ahorn, lat. Acer pseudoplatanus (gemalt von NNW)
+Berg-Ahorn, lat. Acer pseudoplatanus
 Tanne_immergruen_Shunter_Alpen
-Tanne (gemalt von MHz)
+Tanne
 Tanne_immergruen_Shunter_Mittelgebirge
-Tanne (gemalt von MHz)
+Tanne
 Tanne_immergruen_Shunter_Norddeutschland
-Tanne (gemalt von MHz)
+Tanne
 Tanne_klein
 kleine Tanne
 Tanne_klein_Berg
 kleine Bergtanne
 Tanne_wechselnd_Shunter
-Tanne (gemalt von MHz)
+Tanne
 Tanne_wechselnd_Shunter_Almhoehe
-Tanne (gemalt von MHz)
+Tanne
 Tanne1
-Tanne (gemalt von MHz)
+Tanne
 Tanne2
-Tanne (gemalt von RedRabbit)
+Tanne
 Tree1
-Schwarzpappel, lat. Populus nigra (gemalt von NNW)
+Schwarzpappel, lat. Populus nigra
 #_________________________________tunnel - road_________________________________
 #_________________________________tunnel - road_________________________________
 Alter Autobahntunnel
@@ -3034,6 +3122,8 @@ road_100_tunnel
 Straßentunnel 100 km/h
 Strassentunnel20
 Straßentunnel 20 km/h
+Strassentunnel30
+Straßentunnel 30 km/h
 Strassentunnel40
 Straßentunnel 40 km/h
 Strassentunnel50
@@ -3060,10 +3150,6 @@ Eisenbahntunnel (modern)
 #________________________________tunnel - water_________________________________
 Kanaltunnel
 Kanal-Tunnel
-#____________________________________vehicle____________________________________
-#____________________________________vehicle____________________________________
-Versuchstriebwagen_Siemens_und_Halske
-Versuchstriebwagen Siemens und Halske
 #_________________________________vehicle - air_________________________________
 #_________________________________vehicle - air_________________________________
 Airbus_A300-600
@@ -3295,7 +3381,7 @@ DR E60
 E71
 E 71
 E91_3
-E-Lok E 91-3
+E-Lok EG 538 (DR E91.3)
 E94
 E 94
 E94.5
@@ -3549,11 +3635,11 @@ Daimler-Benz LP334 Stückgutlaster
 DaimlerBenz_LP334_Vieh
 Daimler-Benz LP334 Viehtransporter
 DaimlerBenz_LP810_Landwirtschaft
-Daimler-Benz L810 landw. Güter
+Daimler-Benz LP810 landw. Güter
 DaimlerBenz_LP810_Schuettgut
-Daimler-Benz L810 Schüttgutlaster
+Daimler-Benz LP810 Schüttgutlaster
 DaimlerBenz_LP810_Stueckgut
-Daimler-Benz L810 Stückgutlaster
+Daimler-Benz LP810 Stückgutlaster
 DaimlerBenz_LPS1620_Sattelzugmaschine
 Daimler-Benz LPS 1620
 DaimlerBenz_LPS2220_Sattelzugmaschine
@@ -3646,6 +3732,12 @@ LKW_Buessing
 Buessing Laster (Stückgut)
 LKW_Kieskipper
 Kieskipper
+LO3000_Bus
+Robur LO 3000 Bus
+LO3000_Schuettgut
+Robur LO 3000 Schüttgutlaster
+LO3000_Stueckgut
+Robur LO 3000 Stückgutlaster
 lw_Anhaenger1900
 Landwirtsch. Anhänger für Pferde
 lw_Anhaenger1921
@@ -4022,6 +4114,8 @@ Bahnpostwagen_r-a24-2
 Bahnpostwagen r-a24-2
 Bananenwagen
 Wagen für landw. Güter 2-achsig
+Bassinwagen_1885
+Bassinwagen 1885
 Baureihe_IK_Ende
 Baureihe IK - Schluss
 Baureihe_IK_Front
@@ -4081,7 +4175,7 @@ Blauer Enzian - Steuerwagen
 BR01_DRG
 DRG BR 01
 BR01Tender
-Tender für BR 01
+Tender für BR 01 & bad. IV h
 BR05
 BR 05
 BR05Tender
@@ -4155,7 +4249,7 @@ DRG Schnellzugwagen 1. Klasse
 BZT_ABi
 Donnerbüchse Ci-28
 BZT_B4ue-35
-DRG Schnellzugwagen 2. Klasse
+DRG Schnellzugwagen 2. Klasse B4ü-35
 BZT_D4ue-36
 DRG Schnellzugwagen Post
 BZT_Eilzugwagen
@@ -4167,25 +4261,25 @@ InterCity-Speisewagen
 BZT_ICWagen
 InterCity-Wagen
 BZT_Leig1a
-Stückgutwagen zweiteilig - vorn
+Leichtgüterzug zweiteilig - vorn
 BZT_Leig1b
-Stückgutwagen zweiteilig - hinten
+Leichtgüterzug zweiteilig - hinten
 BZT_PrAbteilwagen
 Preußischer Abteilwagen BC 4 
 BZT_PrAbteilwagen_Brh
 Preußischer Abteilwagen BC 4 mit Bremser
 BZT_PrPostwagen
-Preußischer Postwagen Pw 4
+Preußischer Postwagen Pw4-Pr04
 BZT_Pwi
-Preußischer Packwagen
+Preußischer Packwagen Pwi 23
 BZT_Rheingold_1_2Kl
 Rheingold 2. Klasse
 BZT_Rheingold_1_Pack1
-Rheingold Packwagen 1
+Rheingold Packwagen SPw4ü-28 1
 BZT_Rheingold_1_Pack2
-Rheingold Packwagen 2
+Rheingold Packwagen SPw4ü-28 2
 BZT_WR4ue-35
-DRG Schnellzugwagen Speisewagen
+DRG Schnellzugwagen Speisewagen WR4ü-35
 C3pr preussische Staatsbahn
 Staatsbahnwagen C3Pr
 Cargosprinter_EW_fl.Lebensmittel
@@ -4321,11 +4415,11 @@ FLIRT - Waggon mit Stromabnehmer
 FLIRT_Waggon2
 FLIRT - Waggon
 G10
-Stückgutwagen 2-achsig
+Stückgutwagen 2-achsig Kassel
 G11-Wagen
 Stückgutwagen 1953
 G20
-Stückgutwagen 1924
+Stückgutwagen 2-achsig Kassel G20
 G3_Tender
 Tender für preuß. G3
 G8
@@ -4380,6 +4474,8 @@ Henschel-Wegmann-Zug_Mittelwagen
 Henschel-Wegmann-Zug - Mittelwagen
 Henschel-Wegmann-Zug_Steuerwagen
 Henschel-Wegmann-Zug - Steuerwagen
+Hensel-Fleischwagon_1906
+Fleischwagon Hensel 1906
 ICE1_Bistro
 ICE1 - Bistro
 ICE1_Kopf
@@ -4405,21 +4501,23 @@ Integral (Bayrische Oberlandbahn) - Kopf
 IntegBOB_LW
 Integral Laufwagen (Bayrische Oberlandbahn)
 KabTender
-Kabinen-Tender
-Kesselwagen Zacens
-Kesselwagen ZA-CENS
-Kesselwagen Zacns
-Kesselwagen ZA-CNS
+Kabinen-Tender (BR 50)
+Kesselwagen Zs
+Kesselwagen Zs für Öl
 Kesselwagen_BLME42P
-Kesselwagen BLME42P
+Kesselwagen BLME42P Milch
 Kfz-Transportwagen1979
 Autotransportwagen
 Klappdeckelwagen_Kmm36
 Klappdeckelwagen Kmm 36
 Kohletrichterwagen_OOt
 Kohletrichterwagen OOt
+Kolonialwagen
+Kolonialwaren Wagen
 Kuehlwagen
 Kühlwagen 4-achsig
+Kuehlwagen_Milch_1850
+Kühlwagen 1950 für Milch
 Kuehlwagen-alt
 Kühlwagen
 Kuehlwagen1850
@@ -4429,7 +4527,7 @@ Kühlwagen
 Kuehlwagen1910
 Kühlwagen 2-achsig
 Kuehlwagen1910-liquid
-Kühlwagen
+Kühlwagen 1910 für Milch
 Laaijrs567_Ende
 DB Laaijrs-567 - hinten
 Laaijrs567_Front
@@ -4470,6 +4568,18 @@ NE81-DB_BR926_VB
 NE81-DB BR 926 VB - hinten
 NeuhaldenslebenerEisenbahn_T03
 T 03 (Neuhaldenslebener Eisenbahn)
+NGT_HST_Ende
+NGT HST Schluss
+NGT_HST_Front
+NGT HST Kopf
+NGT_HST_Mitte
+NGT HST Wagen
+NGT_Post_Ende
+NGT (Post) Schluss
+NGT_Post_Front
+NGT (Post) Kopf
+NGT_Post_Mitte
+NGT (Post) Wagen
 Nuernberg-Fuehrter_1._und_2.Klasse
 1./2.-Klassewagen Nürnberg-Fürth
 Nuernberg-Fuehrter_1.Klasse
@@ -4536,14 +4646,22 @@ Preussische_G3
 preußische G3
 Preussische_S1
 preußische S1
+preussische_T0
+preussische T0
 Preussischer_ET531
 preußischer ET 531
 Preussischer_Langholzwagen1900
 preußischer Langholzwagen
+preussischer_PW_fuer_T0_Kl.2_3_4
+pr. Personenwagen für T0 Kl.2,3,4
+preussischer_PW_fuer_T0_Kl.3_4
+pr. Personenwagen für T0 Kl. 3,4
 PrG8Tender
 Tender für G8
 PwgPr14
 Güterbegleitwagen PwgPr 14
+Rekowagen Baag
+Rekowagen BAAG
 Rheingold_1_1Kl
 Rheingold 1. Klasse
 Rungenwagen
@@ -4553,7 +4671,7 @@ Tender für preuß. S1
 Saechsische_IIIb_T
 sächsische IIIb T
 Saechsischer_Bahnpostwagen_1860
-sächsischer Bahnpostwagen
+sächsischer Bahnpostwagen 1860
 saechsischer_C_Sa_12
 sächsischer 3.-Klasse-Wagen C Sa 12
 saechsischer_C4ue_sa07
@@ -4603,13 +4721,13 @@ Staubkesselwagen kds54
 Steuerwagen_ES89
 ES 89-Steuerwagen
 T34Tender
-Tender T34
+Tender T34 für DRG BR 38
 Talbot_Selbstentlader1896
 Talbot Selbstentlader
 Tankwagen
 Tankwagen 4-achsig
 Tankwagen_alt
-Tankwagen
+Tankwagen für Milch
 Taschenwagen Sdgmns 743Post
 Taschenwagen Sdgmns 743 für Post
 Taschenwagen Sdgmns 743Vieh
@@ -4656,6 +4774,8 @@ VB140
 VB 140
 VB75
 VB 75 Personenwagen
+Versuchstriebwagen_Siemens_und_Halske
+Versuchstriebwagen Siemens und Halske
 Vicinalbahn-Wagen PBL
 Vicinalbahn Wagen PBL
 Viehwagen
@@ -4676,6 +4796,8 @@ VT33
 Triebwagen VT 33
 VT75
 VT 75 Motorwagen
+Wannentender
+Wannentender (für DRG BR 38, 44, 50)
 x-Wagen_ABx791
 x-Wagen ABx 791
 x-Wagen_Bx794
@@ -5035,31 +5157,47 @@ Stromkabel
 #__________________________________way - road___________________________________
 #__________________________________way - road___________________________________
 asphalt_road_100
-asphaltierte Straße
+asphaltierte Straße\n\nFrüher wurde Asphalt bergmännisch gewonnen, gebrochen, mit Sand gemischt, erwärmt und als Straßenbelag fest gewalzt. Da natürliche Asphalt Vorkommen selten sind, musste er von weit her transportiert werden und war dadurch sehr teuer. Heute wird Asphalt aus Bitumen und Sand oder Splitt hergestellt. In Deutschland wurden ab 1870 erste Straßen asphaltiert. Durchgesetzt hat sich Asphalt als Straßenbelag jedoch erst um 1960, als Bitumen in großen Mengen bei der Rohöl Verarbeitung übrig blieb und Teer 1984 wegen seiner Giftigkeit verboten wurde. Mit der Umstellung von Stadtgas (aus Kohle) auf Erdgas bis 1968 und der Aufgabe der meisten Kokereien fällt heute auch kaum mehr Teer an. Die weißen unterbrochene Leit oder Mittel-Linien gibt es erst ab 1953.
 Asphalt-Autobahn
 Asphalt - Autobahn
 Betonierte_Autobahn
 Betonautobahn
 city_road
-Stadtstraße
+Stadtstraße asphaltiert
 city_road50
 Stadtstraße (mit Diagonalen)
 cobblestone_road_20
-Kopfsteinpflasterstraße 20 km/h
+Kopfsteinpflasterstraße 20 km/h\nKopfsteinpflaster\n gepflasterte Straßen gab es schon vor den Römern. In der Römischen Stadt Pompeji sind sogar die Fugen zwischen den Pflastersteinen mit Bitumen ausgegossen. Jedoch ist diese Bauweise sehr Arbeitsaufwendig und damit teuer. Oft wurde nur eine Spur gepflastert. Siehe auch Sommerwege. Städte pflasterten nur die in die Stadt führende Fahrspur, für die schwer beladen Fuhrwerke mit Versorgungsgütern. Heute werden Pflastersteine maschinell auf einheitliche Größe gebrochen. Da härtere Steine sich besser als Straßenbelag eignen, wurden früher die Steine nicht oder nur wenig zu gehauen, sondern wie ein Puzzle so angeordnet, dass möglichst wenige Lücken bleiben. Altes Kopfsteinpflaster erkennt man an den vielfältigen Formen der Steine und deren sorgfältiger Verlegung. Kopfsteinpflaster ist sehr robust und haltbar. Leider allerdings auch holprig und unangenehm zu befahren.
 cobblestone_road_40
 Kopfsteinpflasterstraße 40 km/h
 cobblestone_road_70
 Kopfsteinpflasterstraße 70 km/h
 dirt_cityroad
-unbefestigte Stadtstraße
+Stadtstraße unbefestigt\n\nAuch in der Stadt sind die Leute einfach dort gefahren, wo der Boden einigermaßen tragfähig war. Die Straße war schlicht die Fläche zwischen den Häusern. Bei feuchter Witterung sind die unbefestigten Wege aufgeweicht. Die schmalen Holzräder haben sich in das Erdreich eingeschnitten und so wurden die Schlammlöcher immer grundloser.
 dirt_road
-unbefestigte Straße
+unbefestigte Straße\n\nDie Römer hatten gute Straßen, das technologische Wissen ist aber mit dem Ende des Römischen Reichs verloren gegangen. Es sah sich auch niemand verantwortlich die alten Straßen zu pflegen. Und so sind im Mittelalter die Fußgänger, Reiter und Karren dort gefahren wo der Boden einigermaßen tragfähig war. Wenn überhaupt, wurden Schlaglöcher oder morastige Stellen einfach mit Steinen oder Kies gefüllt. Das fest stampfen überließ man dem Verkehr und hoffte dass das lose aufgeschüttete Material sich schon irgendwann irgendwie verfestigt. Es waren also buchstäblich Schlammwege.
 Hochstrasse100
 Hochstraße 100 km/h
 Hochstrasse130
-Hochstraße 130 km/h
+Hochstraße Betonautobahn
 Hochstrasse50
 Hochstraße 50 km/h
+schotterpiste
+Schotterpiste\n\n1819 erfand der Schotten John Mc Adam einen deutlich verbesserten Aufbau für Straßen. Er beschrieb einen normal dreischichtiger Aufbau des Straßenoberbaus, aus gebrochenen Steinen auf einem gewölbten Untergrund. Auf eine Lage grober gebrochener Steine werden weitere Lagen aus immer feinerem gebrochenen Material gewalzt. Verdichtet wird mit hohem Druck unter Zugabe von reichlich Wasser. Die scharfkantigen Steine verkeilen sich dabei. Die Zwischenräume füllen sich mit feinem Sand. Dadurch entsteht ein Belag der fast so fest und robust ist wie Beton. Die später Makadam genannten Straßen sind gut haltbar und widerstandsfähig. Erst der Autoverkehr führte zu einem ernsthaftes Problem. Der Unterdruck unter schnellfahrenden Fahrzeugen saugt den Staub und feine Sandpartikel aus der Oberfläche, was dazu führte, dass auch die gröberen Partikel ihre Verbindung verlieren und Schlaglöcher entstehen. Außerdem entstanden unangenehme Staubwolken. Feld und Forstwege haben noch heute oft solch eine "Wassergebundene Decke". Deshalb sind diese Wege normal für den motorisierten Verkehr gesperrt. Bauern wissen, wenn sie zu schnell fahren ruinieren sie ihre Straße und das macht dann Arbeit.
+schotterpiste_cityroad
+Stadtstraße geschottert\n\nNatürlich kann man Makadam-Straßen auch in der Stadt bauen. Die spezielle Bauart mit hoch verdichteten gebrochenen Schotter wurde 1819 vom Schotten John Mc Adam erfunden, daher der Name. 
+teer_road
+Teerstraße\n\nNach dem beim tränken von Schotterstraßen mit Teer, die Ränder mangelhaft bleiben. Der überschüssige Teer läuft aufgrund der Wölbung des Unterbaus zum Straßenrand und bildet dort Tränen und Seen. Später wird vom Verkehr der überschüssige Splitt ebenfalls zum Straßenrand gewirbelt, dort vermischt er sich jedoch nur unzureichend mit dem überschüssigen Teer. Es entsteht dort keine tragfähige Deckschicht und so haben mit Teer getränkte Makadam Straßen immer brüchige und ausgefranste Ränder. Was zu den typischen Schlaglöchern am Rand führt. Die Lösung des Problems ist, man mischt Teer und Splitt maschinell und walzt die Mischung fest. Damit hat die Straße exakte Ränder und eine einheitlich dicke Deckschicht. Nachteil von diesem Verfahren: In den Fahrspuren wird die Teer/Splitt Mischung vom Verkehr nach verdichtet und poliert, was diese Art Straßen bei Nässe sehr rutschig macht.
+teer_road_city
+Stadtstraße geteert
+teertraenkmakadam
+Makadam mit Teer getränkt\n\n 1902 löst Ernest Guglielminetti das Staubproblem der Makadam Straßen mit den Autos. Er ließ Makadam Straßen mit heißem dünnflüssigen Teer tränken. Der Teer wurde anschließend mit Splitt abgestreut. Dadurch wurden diese Straße auch widerstandsfähig gegen schnell fahrenden Verkehr. Der überschüssige Splitt wird vom Verkehr zur Seite geschleudert. Das ergibt die charakteristischen Fahrspuren und die helle Farbe an den Rändern. Heute wurde diese Bauweise von Asphaltstraßen verdrängt, weil Teer giftig und deshalb verboten ist. 
+teertraenkmakadam_cityroad
+Stadtstraße Makadam mit Teer getränkt
+wiesenrand
+Sandstraße mit Wiesenrand\n\nVor 1818 mussten sich Gemeinden und Anlieger unentgeltlich um die Straßen in ihrer Nähe kümmern. Dieser Frondienst wurde nur widerwillig geleistet.\nErst ab 1818 kümmerten sich staatlich besoldeten Straßenwärtern um die überregionalen Straßen und finanzierte der Staat Bau und Unterhalt. Zur Reduzierung des Unterhaltsaufwandes wurden 1812 Mindestbreiten für die meist eisernen Radreifen, gestaffelte nach Gewicht, vorgeschrieben.
+wiesenrand_city
+Stadtstraße gesandet\n\nMit etwas Kies oder Sand lassen sich Schlammwege schnell verbessern. Keine Gemeinde wollte sich nachsagen lassen, sie hätten schlampigere Straßen als der Staat.
 #__________________________________way - track__________________________________
 #__________________________________way - track__________________________________
 Abstellgleis_Gueterzug_90kmh
@@ -5090,6 +5228,8 @@ kleiner Park
 Kleiner Park
 Schnellfahrgleis_350
 Schnellfahrtgleis 350 km/h
+Schnellfahrgleis_450
+Schnellfahrtgleis 450 km/h
 Stadtmauer_mit_Eckturm
 Stadtmauer mit Eckturm
 Standardgleis
@@ -5132,6 +5272,8 @@ standard_catenary
 Oberleitung (Standard)
 Stromschiene_beidseitig
 beidseitige Stromschiene
+Stromschleife_450
+Energieübertragung per Induktion
 Third_Rail_Electrification
 einseitige Stromschiene
 #____________________________way-object - tram_track____________________________

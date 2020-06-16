@@ -2,18 +2,17 @@
 #	PAK128.german
 #	Strassen
 #	Neu:26-08-2017
-#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
 -------------------------
 obj=tunnel
 name=Strassentunnel70
 copyright=The Transporter, pumuckl999
 waytype=road
-intro_year=1900
+intro_year=1936
 intro_month=1
 retire_year=1965
 retire_month=1
-cost=80000
-maintenance=30
+cost=105000
+maintenance=1050
 topspeed=70
 icon=> Strassentunnelv70.3.0
 cursor=Strassentunnelv70.0.0,0,-16

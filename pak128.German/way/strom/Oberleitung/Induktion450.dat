@@ -1,0 +1,45 @@
+--------------------------------
+#	PAK128.german
+#	Oberleitung
+#	Neu:24-04-2020
+---------------------------------
+Obj=way-object
+Name=Stromschleife_450
+copyright=Timothy Baldock/pumuckl999
+waytype=track
+own_waytype=electrified_track
+intro_year=2035
+intro_month=1
+cost=22500
+maintenance=13
+topspeed=450
+cursor=Induktion450.1.10
+icon=> Induktion450.1.9
+BackImage[-]=Induktion450.0.2
+BackImage[N]=Induktion450.1.7
+BackImage[S]=Induktion450.1.5
+BackImage[E]=Induktion450.1.6
+BackImage[W]=Induktion450.1.8
+BackImage[NS]=Induktion450.0.0
+BackImage[EW]=Induktion450.0.1
+BackImage[NSE]=Induktion450.1.3
+BackImage[NSW]=Induktion450.1.1
+BackImage[NEW]=Induktion450.1.2
+BackImage[SEW]=Induktion450.1.4
+BackImage[NSEW]=Induktion450.1.0
+BackImage[NE]=Induktion450.0.4
+BackImage[SW]=Induktion450.0.3
+BackImage[NW]=Induktion450.0.5
+BackImage[SE]=Induktion450.0.6
+BackDiagonal[NE]=Induktion450.0.12
+BackDiagonal[SE]=Induktion450.1.12
+BackDiagonal[NW]=Induktion450.1.11
+BackDiagonal[SW]=Induktion450.0.11
+BackImageUp[3]=Induktion450.0.9
+BackImageUp[6]=Induktion450.0.10
+BackImageUp[9]=Induktion450.0.8
+BackImageUp[12]=Induktion450.0.7
+FrontImage[-]=-
+FrontDiagonal[NE]=-
+FrontImageUp[3]=-
+-------------------------------------

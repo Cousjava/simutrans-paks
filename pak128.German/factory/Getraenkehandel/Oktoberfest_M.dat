@@ -1,20 +1,18 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu:31-07-2019
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Oktoberfest
 copyright=pumuckl999
 intro_year=1810
 intro_month=10
-#retire_year=
-#retire_month=
+retire_year=1960
+retire_month=12
 Location=land
-DistributionWeight=50
+DistributionWeight=10
 Productivity=10
-pax_level=40
-mail_demand=10
 
 InputGood[0]=Bier
 InputCapacity[0]=1600
@@ -24,30 +22,37 @@ InputSupplier[0]=3
 InputGood[1]=Backwaren
 InputCapacity[1]=800
 InputFactor[1]=30
+InputSupplier[1]=3
 
 InputGood[2]=Fisch
 InputCapacity[2]=400
 InputFactor[2]=10
+InputSupplier[2]=3
 
 InputGood[3]=Gefluegel
 InputCapacity[3]=400
 InputFactor[3]=20
+InputSupplier[3]=1
 
 InputGood[4]=Vieh
 InputCapacity[4]=400
 InputFactor[4]=10
+InputSupplier[4]=1
 
 InputGood[5]=Fleisch
 InputCapacity[5]=400
 InputFactor[5]=10
+InputSupplier[5]=3
 
 InputGood[6]=Zucker
 InputCapacity[6]=200
 InputFactor[6]=5
+InputSupplier[6]=1
 
 InputGood[7]=Mandeln
 InputCapacity[7]=200
 InputFactor[7]=5
+InputSupplier[7]=1
 
 min_fields=0
 max_fields=84
@@ -120,7 +125,9 @@ production_per_field[10]=2
 has_snow[10]=1
 spawn_weight[10]=2
 
-
+electricity_amount=10
+pax_level=40
+mail_demand=10
 passenger_boost=20000
 mail_boost=1000
 climates=temperate, tundra

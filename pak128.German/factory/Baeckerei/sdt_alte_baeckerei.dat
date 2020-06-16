@@ -1,9 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 15-02-2017
-#	Letzte Bearbeitung: $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 Name=sueddt_alte_baeckerei
 copyright=pumuckl999
@@ -28,7 +27,7 @@ OutputGood[0]=Backwaren
 OutputCapacity[0]=120
 passenger_boost=1000
 mail_boost=500
-electricity_amount=20
+electricity_amount=10
 MapColor=155
 climates=rocky, tundra
 dims=1,1,4

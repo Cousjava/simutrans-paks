@@ -1,26 +1,26 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 02-2015
-#	Letzte Bearbeitung: $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 Name=Steinkohlekraftwerk
 copyright=pumuckl999
 DistributionWeight=5
 pax_level=20
-intro_year=1975
+intro_year=1982
 intro_month=1
-retire_year=1995
+retire_year=2015
 retire_month=12
-Productivity=400
+# wegen Klimakatastrophe sind neue Kohlekraftwerke nicht mehr erwünscht
+Productivity=800
 InputGood[0]=Kohle
-InputCapacity[0]=1600
+InputCapacity[0]=3200
 InputFactor[0]=70
 InputSupplier[0]=3
 passenger_boost=1000
 mail_boost=500
-climates=desert, tropic, mediterran, temperate, tundra, rocky
+climates=tropic, temperate, tundra, rocky
 MapColor=119
 animation_time=200
 dims=3,6,4

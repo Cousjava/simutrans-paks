@@ -1,16 +1,16 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 16-02-2017
-# --------------------------------
+--------------------------------
 Obj=factory
 name=AlteGastwirtschaft
 copyright=pumuckl999
 pax_level=125
 intro_year=1800
 intro_month=1
-#retire_year=1940
-#retire_month=12
+retire_year=1980
+retire_month=12
 Location=City
 DistributionWeight=127
 Productivity=10

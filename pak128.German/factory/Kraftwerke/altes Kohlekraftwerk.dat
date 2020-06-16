@@ -1,21 +1,19 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-#	Letzte Bearbeitung:
-#    13-09-2015 The Transporter
-#	$Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ $Author: NNW $ - Inputfactor auf 200% gedrosselt
-# --------------------------------
+--------------------------------
 Obj=factory
 Name=altes Kohlekraftwerk
 copyright=pumuckl999
-pax_level=20
+pax_level=50
 intro_year=1908
 intro_month=1
-retire_year=1962
+retire_year=1988
 retire_month=12
+# in Ostdeutschland wurden so vergammelte Kraftwerke bis zur Wende betrieben
 location=land
-DistributionWeight=1
+DistributionWeight=5
 Productivity=150
 InputGood[0]=Kohle
 InputCapacity[0]=4800

@@ -11,10 +11,10 @@ intro_year=1950
 intro_month=1
 Location=land
 DistributionWeight=1
-Productivity=400
+Productivity=800
 OutputGood[0]=Kohle
-OutputCapacity[0]=1600
-OutputFactor[0]=200
+OutputCapacity[0]=3200
+OutputFactor[0]=100
 electricity_amount=45
 passenger_boost=1000
 mail_boost=500
@@ -22,7 +22,9 @@ expand_probability=30
 expand_minimum=1
 expand_range=1
 expand_times=100
-climates=tropic, mediterran,tundra,desert
+climates=tropic, temperate,tundra
+# Verglichen mit der Steinkohlenförderung der BRD war der Anteil der DDR nur gering (nicht einmal 3 %).
+# die Kohleförderung in der DDR ist bereits ab 1960 eingegangen und 1967 Beschluss zur Einstellung
 MapColor=8
 Needs_Ground=1
 dims=2,4,4

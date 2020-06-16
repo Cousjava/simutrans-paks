@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 02-04-2017
-#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
 ---------------------------------
 obj=vehicle
 name=E52
@@ -15,7 +14,7 @@ cost=16340000
 runningcost=236
 waytype=electrified_track
 power=1660
-gear=200
+gear=320
 speed=90
 weight=140
 length=10

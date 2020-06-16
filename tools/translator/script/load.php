@@ -11,9 +11,9 @@ if ( !isset($_SESSION['role']) or  !compare_userlevels($u_level, $_SESSION['role
 } 
 
 include_once ('include/pclzip/pclzip.lib.php');
+include ('./include/translations.php');
 include ('./include/select.php');
 include ('./include/obj.php');
-include ("include/translations.php");
 
   // ----- Create the template object
   $v_template = new PclTemplate();

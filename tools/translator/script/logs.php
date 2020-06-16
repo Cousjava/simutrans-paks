@@ -12,6 +12,7 @@
 
   include('./tpl_script/setadmin_links.php');
 
+  include ('./include/translations.php');
   include ('./include/select.php');
 
   // ----- Create the template object

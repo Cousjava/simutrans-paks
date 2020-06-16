@@ -30,6 +30,7 @@ InputFactor[3]=2
 InputGood[4]=Tierfutter
 InputCapacity[4]=800
 InputFactor[4]=1
+electricity_amount=20
 passenger_boost=5000
 mail_boost=5000
 climates=mediterran, temperate, tundra

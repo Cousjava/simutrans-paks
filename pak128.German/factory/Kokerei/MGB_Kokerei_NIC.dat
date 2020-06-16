@@ -6,7 +6,7 @@
 Obj=factory
 name=MGB_Kokerei_NIC
 copyright=RedRabbit
-pax_level=200
+pax_level=100
 intro_year=1870
 intro_month=1
 Location=land
@@ -21,7 +21,7 @@ OutputCapacity[0]=800
 OutputGood[1]=Oel
 OutputFactor[1]=25
 OutputCapacity[1]=800
-electricity_amount=100
+electricity_amount=50
 passenger_boost=1000
 mail_boost=500
 climates=temperate,desert, tropic, mediterran, tundra

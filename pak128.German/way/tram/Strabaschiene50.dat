@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Strassenbahnschienen
 #    Neu: 05-2015
-#    Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
 ----------------------------------
 Obj=way
 Name=Strassenbahnschiene_50
@@ -11,7 +10,7 @@ waytype=track
 system_type=7
 intro_year=1925
 intro_month=1
-cost=20000
+cost=5000
 maintenance=50
 topspeed=50
 max_weight=30
@@ -28,7 +27,7 @@ Image[NSE]=Strabaschiene50.0.2
 Image[NSW]=Strabaschiene50.0.4
 Image[NEW]=Strabaschiene50.0.1
 Image[SEW]=Strabaschiene50.0.3
-Image[NSEW]=Strabaschiene50.1.2 
+Image[NSEW]=Strabaschiene50.1.2
 Image[NE]=Strabaschiene50.3.0
 Image[SE]=Strabaschiene50.2.3
 Image[NW]=Strabaschiene50.2.4

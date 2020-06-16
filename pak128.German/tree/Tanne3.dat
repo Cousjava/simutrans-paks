@@ -2,12 +2,10 @@
 #	PAK128.german
 #	Bäume
 #	Neu:01-2011
-#	Letzte Bearbeitung 
-#    10-08-2015 The Transporter
 ---------------------------------
 Obj=tree
 Name=Tanne_klein_Berg
-Copyright=TonyBZT
+Copyright=RedRabbit
 seasons=2
 DistributionWeight=15
 climates=rocky

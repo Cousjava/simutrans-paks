@@ -1,20 +1,23 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 02-2015
-# --------------------------------
+--------------------------------
 Obj=factory
 Name=Dessauer_Kohlekraftwerk
 copyright=pumuckl999
 pax_level=15
-intro_year=1995
+intro_year=1992
 intro_month=1
+retire_year=2015
+retire_month=12
+# wegen Klimakatastrophe sind neue Kohlekraftwerke nicht mehr erwünscht
 location=land
 DistributionWeight=5
 Productivity=400
 InputGood[0]=Kohle
 InputCapacity[0]=1600
-InputFactor[0]=30
+InputFactor[0]=50
 InputSupplier[0]=3
 passenger_boost=1000
 mail_boost=500
@@ -22,7 +25,7 @@ expand_probability=50
 expand_minimum=1
 expand_range=10
 expand_times=20
-climates=mediterran
+climates=desert, mediterran
 MapColor=119
 dims=2,2,4
 BackImage[0][0][0][0][0][0]=Dessauer_Kohlekraftwerk.0.0

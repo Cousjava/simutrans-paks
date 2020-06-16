@@ -36,12 +36,16 @@ function select_box_read_version()
   { $version_auswahl = intval($_POST['version']);
   } elseif ( isset($_GET['vers']) && ($_GET['vers'] != '') ) 
   { $version_auswahl = intval($_GET['vers']); 
+  } elseif ( isset($_GET['version']) && ($_GET['version'] != '') ) 
+  { $version_auswahl = intval($_GET['version']); 
   }
+
   if (!isset($versions_all[$version_auswahl])) $version_auswahl = 255;
   if ($ava != $version_auswahl) unset($_SESSION['col_pos'],
                                       $_SESSION['obj_typ_tab'], 
                                       $_SESSION['obj_sub_tab_type'],
                                       $_SESSION['obj_sub_tab_waytype'],
+                                      $_SESSION['obj_sub_tab_engine_type'],
                                       $_SESSION['cluster'],
                                       $_SESSION['search_result_tab'],
                                       $_SESSION['search_result_len']);
@@ -62,6 +66,7 @@ function select_box_read_obj($version_auswahl)
   if ($oja != $obj_auswahl) unset($_SESSION['col_pos'],
                                   $_SESSION['obj_sub_tab_type'],
                                   $_SESSION['obj_sub_tab_waytype'],
+                                  $_SESSION['obj_sub_tab_engine_type'],
                                   $_SESSION['cluster']);
   $_SESSION['obj_auswahl'] =  $obj_auswahl;
   return $obj_auswahl;
@@ -71,6 +76,7 @@ function select_box_read_sub_obj($version_auswahl,$obj_auswahl)
 { GLOBAL $sub_waytypes;
   $obj_sub_auswahl = 255;
   if (isset($_SESSION['obj_sub_auswahl'])) $obj_sub_auswahl = $_SESSION['obj_sub_auswahl'];
+  $oja = $obj_sub_auswahl;
   if    (isset($_POST['obj_sub']) and $_POST['obj_sub'] != '') $obj_sub_auswahl = $_POST['obj_sub'];
   elseif ( isset($_GET['obj_sub']) and $_GET['obj_sub'] != '') $obj_sub_auswahl = $_GET['obj_sub'];  
 
@@ -78,6 +84,7 @@ function select_box_read_sub_obj($version_auswahl,$obj_auswahl)
   { if (!in_array($obj_sub_auswahl,load_sub_typ_tab($version_auswahl,$obj_auswahl))) $obj_sub_auswahl = 255; 
   } else                                                                             $obj_sub_auswahl = 255;
   if (preg_match('#^[a-zA-Z0-9@ \,._-]{1,20}$#',$obj_sub_auswahl) != 1)              $obj_sub_auswahl = 255;
+  if ($oja != $obj_sub_auswahl) unset($_SESSION['obj_sub_tab_engine_type']);
   $_SESSION['obj_sub_auswahl'] =  $obj_sub_auswahl;
   return $obj_sub_auswahl;
 }
@@ -170,31 +177,59 @@ function load_obj_typ_tab ($vs_id)
   return $obj_typ_tab;
 }
 
-
-function load_sub_typ_tab($vs_id,$obj_auswahl)
-{  global $LNG_EDIT,$building_city,$building_cur;
-   if ($obj_auswahl == 'building') $w_or_type ='type';
-   else                            $w_or_type ='waytype';
-   $s = 'obj_sub_tab_'.$w_or_type;
-   if (isset($_SESSION[$s])) $sub_typ_tab = $_SESSION[$s];
+function load_sel_tab($vs_id,$obj_auswahl,$sel_typ)
+{  global $LNG_EDIT;
+   $s = 'obj_sub_tab_'.$sel_typ;
+   if (isset($_SESSION[$s])) $sel_tab = $_SESSION[$s];
    else 
-   { $sub_typ_tab = array();
+   { $sel_tab = array();
      $res = db_query ("SELECT DISTINCT p_value  FROM property p JOIN objects o 
                        ON ( o.object_id=p.having_obj_id)
                        WHERE o.version_version_id=$vs_id AND o.obj='".$obj_auswahl."' 
-                       AND p.p_name='".$w_or_type."' ORDER BY p_value ASC;");
-     while ($o_t = db_fetch_object($res)) $sub_typ_tab[] = $o_t->p_value;
+                       AND p.p_name='".$sel_typ."' ORDER BY p_value ASC;");
+     while ($o_t = db_fetch_object($res)) $sel_tab[] = $o_t->p_value;
      //check if empty or not
-     if (count($sub_typ_tab) == 0) $sub_typ_tab[] = $LNG_EDIT[22];
-     if ($obj_auswahl == 'building' and count($sub_typ_tab) > 2) 
-     { $sub_typ_tab[] = implode(', ',$building_city); // com, ind, res, tow
-       $sub_typ_tab[] = implode(', ',$building_cur);  // cur, mon
-     }
-    $_SESSION[$s] = $sub_typ_tab;
+     if (count($sel_tab) == 0) $sel_tab[] = $LNG_EDIT[22];
+    $_SESSION[$s] = $sel_tab;
+   }
+   return $sel_tab;
+}
+
+function load_sub_typ_tab($vs_id,$obj_auswahl)
+{  global $building_city,$building_cur;
+   if ($obj_auswahl == 'building') $w_or_type ='type';
+   else                            $w_or_type ='waytype';
+   $sub_typ_tab = load_sel_tab($vs_id,$obj_auswahl,$w_or_type);
+   if ($obj_auswahl == 'building' and count($sub_typ_tab) > 2) 
+   { $sub_typ_tab[] = implode(', ',$building_city); // com, ind, res, tow
+     $sub_typ_tab[] = implode(', ',$building_cur);  // cur, mon
    }
    return $sub_typ_tab;
 }
 
+function load_engine_tab($vs_id,$obj_auswahl,$obj_sub_auswahl)
+{  global $LNG_STATS_VEH,$LNG_EDIT;
+   $s = 'obj_sub_tab_engine_type';
+   if (isset($_SESSION[$s])) $tab = $_SESSION[$s];
+   else 
+   { $tab = array();
+     $t = '';
+     if ($obj_sub_auswahl != 255) $t = " AND o.type='".$obj_sub_auswahl."' ";
+     $res = db_query ("SELECT DISTINCT p_value  FROM property p JOIN objects o 
+                       ON ( o.object_id=p.having_obj_id)
+                       WHERE o.version_version_id=$vs_id AND o.obj='".$obj_auswahl."' ".$t." 
+                       AND p.p_name='engine_type' ORDER BY p_value ASC;");
+     while ($o_t = db_fetch_object($res)) 
+     { $pv = strtolower($o_t->p_value);
+       if ($o_t->p_value != 'none') $tab[$pv] = tr_translate_text(0,$pv);
+     }
+     //check if empty or not
+    if (count($tab) > 0) $tab['none'] = $LNG_STATS_VEH[12];
+    else                 $tab[255]    = $LNG_EDIT[22];
+    $_SESSION[$s] = $tab;
+   }
+   return $tab;
+}
 
 function subobject_querry(&$join,$obj_type,$obj_sub_auswahl)
 { GLOBAL  $sub_waytypes;

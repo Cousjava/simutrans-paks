@@ -1,0 +1,29 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 23-04-2020
+---------------------------------
+obj=vehicle
+name=Personenwagen CL Bay 11
+copyright=pumuckl999
+intro_year=1911
+intro_month=1
+retire_year=1962
+retire_month=12
+cost=9290000
+RunningCost=208
+waytype=track
+freight=Passagiere
+payload=76
+speed=80
+weight=17
+length=8
+EmptyImage[S]=CL_Bay_11.0.0
+EmptyImage[E]=CL_Bay_11.0.1
+EmptyImage[SE]=CL_Bay_11.0.2
+EmptyImage[SW]=CL_Bay_11.0.3
+EmptyImage[N]=CL_Bay_11.0.4
+EmptyImage[W]=CL_Bay_11.0.5
+EmptyImage[NW]=CL_Bay_11.0.6
+EmptyImage[NE]=CL_Bay_11.0.7
+--------------------------------

@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Gleise
 #	Neu:14-09-2018
-#	Letzte Bearbeitung:
-#       17-12-2018 pumuckl999
 ---------------------------------
 Obj=bridge
 name=Bahnbruecke_60Kmh
@@ -11,8 +9,10 @@ copyright=The Transporter, pumuckl999
 waytype=track
 intro_year=1845
 intro_month=1
-cost=20000
-maintenance=40
+retire_year=1949
+retire_month=12
+cost=30000
+maintenance=300
 topspeed=60
 max_lenght=5
 pillar_distance=0
@@ -93,4 +93,3 @@ FrontPillar2[S][1]=bruecke60.3.3
 backPillar[W][1]=bruecke60.3.1
 FrontPillar[W][1]=bruecke60.3.3
 FrontPillar2[W][1]=bruecke60.3.3
-

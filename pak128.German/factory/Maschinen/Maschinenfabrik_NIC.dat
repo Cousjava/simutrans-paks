@@ -1,10 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-#	Letzte Bearbeitung:
-#   $Date: 2018-08-05 12:46:07 +0200 (So, 05. Aug 2018) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Maschinenfabrik_NIC
 copyright=TonyBzt
@@ -27,7 +25,7 @@ InputCapacity[2]=400
 InputFactor[2]=15
 OutputGood[0]=Maschinen
 OutputCapacity[0]=400
-electricity_amount=80
+electricity_amount=50
 passenger_boost=1000
 mail_boost=500
 climates=desert, tropic, mediterran, temperate, tundra, rocky

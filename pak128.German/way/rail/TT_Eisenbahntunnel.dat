@@ -2,18 +2,16 @@
 #	PAK128.german
 #	Gleise
 #	Neu:08-2011
-#	Letzte Bearbeitung 
-#    $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ -- $Author: NNW $
 ---------------------------------
 Obj=tunnel
 Name=einfacher_EisenbahnTunnel
 waytype=track
 intro_year=1925
 intro_month=1
-#retire_year=1990
-#retire_month=12
-cost=104000
-maintenance=120
+retire_year=1990
+retire_month=12
+cost=240000
+maintenance=2400
 topspeed=160
 icon=> TTtunnel1.3.0
 cursor=TTtunnel1.3.1

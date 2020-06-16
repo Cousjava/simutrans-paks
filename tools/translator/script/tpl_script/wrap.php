@@ -73,7 +73,7 @@ function generate_translation_file_for_language ($choice,$lang_id, $version_id, 
     if ( !is_dir($target_path ) )  mkdir($target_path, 0775); 
     $file_name = $target_path."/".$m.".tab";    
 
-    $res = generate_translation_text ($choice,$lang_id, $version_id, $target_encoding, $font1);
+    $res = generate_translation_text ($choice,$lang_id, $version_id, $target_encoding, $font1,$target_path);
     if ($res != '') 
     { //prefix - § for UTF-8 files UTF "§" C2 A7
       $prefix = ($target_encoding == "UTF-8")?"\xC2\xA7":"";
@@ -161,18 +161,15 @@ function generate_language_pack ($choice,$version_id)
 $lang_id    = select_box_read_language();
 $version_id = select_box_read_version();
 if (isset($_POST["submit"]) or isset($_GET ["choice"])) 
-{  if ($_POST["submit"]==$LNG_FORM[15])
-  { $choice = "unknown";
+{   $choice = "unknown";
     if     (isset($_POST["choice"])) $choice=$_POST["choice"];
     elseif (isset($_GET ["choice"])) $choice=$_GET ["choice"];
 
-    //user input check - 255 = default
-    //set choice to uknown
-    //vid must be set
     if ($version_id == 255) $choice = "unknown";
     //lang type must be set (except for language pack option)
-    if ($lang_id == 255 AND $choice != "all" and $choice != "save") $choice = "unknown";
-    if ($lang_id != 255 and $version_id == TRANSLATOR_SET_ID)      $choice = "unknown";
+    if ($lang_id == 255 AND                  $choice != "all" and $choice != "save") $choice = "unknown";
+    if ($version_id == TRANSLATOR_SET_ID and $choice != "all" and $choice != "save") $choice = "unknown";
+    if ($choice=="file" and $version_id >= 300)                                      $choice = "all";
 
     if ( in_array($lang_id, $lang_fontsfiles['wenquanyi']) ) {
       print_line ("<p>".$LNG_WRAP[5]." <a href='../data/".$lang_fonts['cn']."'>".$lang_fonts['cn']."</a> ( ~".$lang_fonts['cn_byte']." ) ".$LNG_WRAP[6]."</p>");
@@ -184,7 +181,7 @@ if (isset($_POST["submit"]) or isset($_GET ["choice"]))
     if ($choice=="screen")
     {   //generates complete translation file to the variable coded using INTERNAL_ENCODING
         //send it to screen - after proper coding update
-      echo "<pre>" . htmlentities(generate_translation_text ($choice,$lang_id, $version_id, "UTF-8","screen"), ENT_QUOTES, "UTF-8") . "</pre>"."\n";
+      echo "<pre>" . htmlentities(generate_translation_text ($choice,$lang_id, $version_id, "UTF-8","screen",""), ENT_QUOTES, "UTF-8") . "</pre>"."\n";
     } elseif ($choice=="file" or $choice=="suggestion")
     { if ($choice=="suggestion") $pfad = $sugpfad;
       else                       $pfad = $tabpfad;
@@ -195,7 +192,7 @@ if (isset($_POST["submit"]) or isset($_GET ["choice"]))
         if ($file_name != '') print_line ('<h2><a href="'.$file_name.'">'.$LNG_WRAP[9].': '.basename($file_name).'</a></h2>', 1);
       } else
       { //generate file to target location
-        $file_name = generate_translation_file_for_language ($choice,$lang_id, $version_id, $pfad.$version_id."/");
+        $file_name = generate_translation_file_for_language ($choice,$lang_id, $version_id, $pfad.$version_id);
         print_line ('<h2><a href="'.$file_name.'">'.$LNG_WRAP[7].': '.basename($file_name).'</a></h2>', 1);
         info_box ($LNG_WRAP[8]);
       }
@@ -214,8 +211,6 @@ if (isset($_POST["submit"]) or isset($_GET ["choice"]))
 
     print_line ("<h3 class='center'><a href='main.php?lang=".$st."&page=wrap'>".$LNG_MAIN[19]."</a></h3>");
     print_line ("<h3 class='center'><a href='main.php'>".$LNG_MAIN[20]."</a></h3>");
-
-  }
 }
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////no data posted - ask for them///////////////////////////////

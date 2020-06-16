@@ -2,10 +2,6 @@
 # Goods.dat fuer PAK128.german
 ------------------------------------------------------
 #
-# Author: Hj. Malthaner
-# Update: 13-Feb-15 Daniel Martin=>Alle Preise neu kalkuliert
-# Update: $Date: 2018-08-05 21:28:01 +0200 (So, 05. Aug 2018) $ - $Author: NNW $ => "Makies Äenderungen aus GIT uebertragen"
-#
 # categories:
 # 0 = Sonderfracht
 # 1 = Stueckgut
@@ -18,11 +14,14 @@
 # 8 = Siloware
 
 # Gesamtanzahl: 66 Waren in 9 Kategorien
-#**************************
+
+
+
+------------------------------------------------------
 # catg 0 Standard
-#**************************
+------------------------------------------------------
 #
-# Personen 63
+# 63 Personen
 #
 obj=good
 name=Passagiere
@@ -35,7 +34,7 @@ speed_bonus=0
 MapColor=215
 -----------------------
 #
-# Post 64
+# 64 Post
 #
 obj=good
 name=Post
@@ -48,7 +47,7 @@ speed_bonus=0
 MapColor=96
 --------------------
 #
-# ohne Gut 65
+# 65 ohne Gut
 #
 obj=good
 name=None
@@ -61,11 +60,12 @@ MapColor=000000
 -----------------------
 
 
-#**************************
+
+------------------------------------------------------
 # catg 0 Gueter
-#**************************
+------------------------------------------------------
 #
-# Autos 1
+# 01 Autos
 #
 obj=good
 name=Autos
@@ -78,7 +78,7 @@ speed_bonus=0
 MapColor=121
 -----------------------
 #
-# Beton 2
+# 02 Beton
 #
 obj=good
 name=Beton
@@ -91,7 +91,7 @@ speed_bonus=0
 MapColor=217
 -----------------------
 #
-# Stahl 3
+# 03 Stahl
 #
 obj=good
 name=Stahl
@@ -103,8 +103,8 @@ value=90
 speed_bonus=0
 MapColor=150
 -----------------------
-
-# Schiffssektionen 4
+#
+# 04 Schiffssektionen
 #
 obj=good
 name=Schiffssektionen
@@ -116,8 +116,8 @@ value=720
 speed_bonus=0
 MapColor=96
 -----------------------
-
-# Schiffe 5
+#
+# 05 Schiffe
 #
 #obj=good
 #name=Schiffe
@@ -129,9 +129,8 @@ MapColor=96
 #speed_bonus=0
 #MapColor=96
 -----------------------
-
 #
-# Vieh 6
+# 06 Vieh
 #
 obj=good
 name=Vieh
@@ -145,11 +144,11 @@ MapColor=118
 ------------------------- 
 
 
-#**************************
+------------------------------------------------------
 # catg 1 Stueckgut
-#**************************
+------------------------------------------------------
 #
-# Backwaren 7
+# 07 Backwaren
 #
 obj=good
 name=Backwaren
@@ -157,12 +156,12 @@ metric= Paletten
 weight_per_unit=400
 catg=1
 value=90
-#=0,2
+#=0,3
 speed_bonus=0
 MapColor=155
 -----------------------
 
-# Bier in Flaschen 8
+# 08 Bier in Flaschen
 #
 obj=good
 name=Bier
@@ -175,47 +174,46 @@ speed_bonus=0
 MapColor=28
 -----------------------
 #
-# Beton als Stückgut 9
+# 09 Betonteile als Stückgut
 #
 obj=good
 name=Betonfertigteile
 metric= Paletten
-weight_per_unit=800
+weight_per_unit=1000
 catg=1
-value=90
-#=0,3
+value=60
+#=0,2
 speed_bonus=0
 MapColor=217
 -----------------------
-
 #
-# Buecher 10
+# 10 Buecher
 #
 obj=good
 name=Buecher
 metric= Paletten
-weight_per_unit=450
+weight_per_unit=800
 catg=1
-value=90
-#=0,3
+value=120
+#=0,4
 speed_bonus=0
 MapColor=223
 -----------------------
-
-# Chemikalien 11
+#
+# 11 Chemikalien
 #
 obj=good
 name=Chemikalien
 metric= Paletten
 weight_per_unit=650
 catg=1
-value=75
-#=0,25
+value=120
+#=0,4
 speed_bonus=0
 MapColor=79
 -----------------------
 #
-# Computer 12
+# 12 Computer
 #
 obj=good
 name=Computer
@@ -228,7 +226,7 @@ speed_bonus=0
 MapColor=125
 --------------------
 #
-# Dosen-Essen 13
+# 13 Dosen-Essen
 #
 obj=good
 name=Dosenessen
@@ -241,7 +239,7 @@ speed_bonus=0
 MapColor=48
 ----------------------- 
 #
-# Maschinen 14
+# 14 Maschinen
 #
 obj=good
 name=Maschinen
@@ -254,47 +252,46 @@ speed_bonus=0
 MapColor=96
 -----------------------
 #
-# Druckfarben 15
+# 15 Druckfarben
 #
 obj=good
 name=Farben
 metric= Paletten
 weight_per_unit=650
 catg=1
-value=75
+value=90
 #=0,3
 speed_bonus=0
 MapColor=38
 -----------------------
 #
-# Lackfarbe 16
+# 16 Lackfarbe
 #
 #obj=good
 #name=Lackfarbe
 #metric= Paletten
 #weight_per_unit=650
 #catg=1
-#value=75
-#=0,25
+#value=90
+#=0,3
 #speed_bonus=0
 #MapColor=122
 -----------------------
-
 #
-# Eier 17
+# 17 Eier 17
 #
 obj=good
 name=Eier
 metric= Paletten
 weight_per_unit=450
 catg=1
-value=60
-#=0,2
+value=90
+#=0,3
 speed_bonus=0
 MapColor=215
 -----------------------
 #
-# Flaschen 68
+# 68 Flaschen
 #
 obj=good
 name=Flaschen
@@ -307,7 +304,7 @@ speed_bonus=0
 MapColor=29
 -------------------------
 #
-# Glas 18
+# 18 Glas
 #
 obj=good
 name=Glas
@@ -320,7 +317,7 @@ speed_bonus=0
 MapColor=87
 -----------------------
 #
-# Kameras 19
+# 19 Kameras
 #
 obj=good
 name=Kameras
@@ -333,7 +330,7 @@ speed_bonus=0
 MapColor=80
 ----------------------
 #
-# Marzipan 20
+# 20 Marzipan
 #
 obj=good
 name=Marzipan
@@ -346,20 +343,20 @@ speed_bonus=0
 MapColor=90
 --------------------
 #
-# Medikamente 21
+# 21 Medikamente
 #
 obj=good
 name=Medikamente
 metric= Paletten
 weight_per_unit=280
 catg=1
-value=120
-#=0,4
+value=150
+#=0,5
 speed_bonus=0
 MapColor=75
 -----------------------
 #
-# Mehl 22
+# 22 Mehl
 #
 obj=good
 name=Mehl
@@ -372,7 +369,7 @@ speed_bonus=0
 MapColor=214
 ----------------------- 
 #
-# Moebel 23
+# 23 Moebel
 #
 obj=good
 name=Moebel
@@ -385,12 +382,12 @@ speed_bonus=0
 MapColor=188
 -----------------------
 #
-# Papier 24
+# 24 Papier
 #
 obj=good
 name=Papier
 metric= Paletten
-weight_per_unit=700
+weight_per_unit=1000
 catg=1
 value=60
 #=0,2
@@ -398,7 +395,7 @@ speed_bonus=0
 MapColor=223
 -----------------------
 #
-# Kunststoffe 25
+# 25 Kunststoffe
 #
 obj=good
 name=Plastik
@@ -411,7 +408,7 @@ speed_bonus=0
 MapColor=192
 -----------------------
 #
-# Silizium 26
+# 26 Silizium
 #
 obj=good
 name=Silizium
@@ -423,22 +420,21 @@ value=120
 speed_bonus=0
 MapColor=77
 --------------------
-
 #
-# Textilien 27
+# 27 Textilien
 #
 obj=good
 name=Textilien
 metric= Paletten
 weight_per_unit=150
 catg=1
-value=60
+value=90
 #=0,3
 speed_bonus=0
 MapColor=110
 -----------------------
 #
-# Wafer 28
+# 28 Wafer
 #
 obj=good
 name=Wafer
@@ -451,20 +447,20 @@ speed_bonus=0
 MapColor=126
 ----------------------
 #
-# Wein  29
+# 29 Wein
 #
 obj=good
 name=Wein
 metric= Paletten
 weight_per_unit=700
 catg=1
-value=60
-#=0,2
+value=90
+#=0,3
 speed_bonus=0
 MapColor=130
 -----------------------
 #
-# Schafswolle 30
+# 30 Schafswolle
 #
 obj=good
 name=Wolle
@@ -477,12 +473,12 @@ speed_bonus=0
 MapColor=135
 -----------------------
 #
-# Zement 31
+# 31 Zement
 #
 obj=good
 name=Zement
 metric= Paletten
-weight_per_unit=750
+weight_per_unit=1000
 catg=1
 value=60
 #=0,2
@@ -490,46 +486,46 @@ speed_bonus=0
 MapColor=208
 -------------------------
 #
-# Zucker 32
+# 32 Zucker
 #
 obj=good
 name=Zucker
 metric= Paletten
 weight_per_unit=850
 catg=1
-value=60
-#=0,2
+value=90
+#=0,3
 speed_bonus=0
 MapColor=213
 -------------------------
 #
-# Obst 65
+# 65 Obst
 #
 obj=good
 name=Obst
 metric= Paletten
 weight_per_unit=150
 catg=1
-value=60
-#=0,2
+value=120
+#=0,4
 speed_bonus=0
 MapColor=142
 -------------------------
 #
-# Suedfruechte 66
+# 66 Suedfruechte
 #
 obj=good
 name=Suedfruechte
 metric= Paletten
 weight_per_unit=150
 catg=1
-value=60
-#=0,2
+value=120
+#=0,4
 speed_bonus=0
 MapColor=194
 -------------------------
 #
-# Verpackungsmittel 67
+# 67 Verpackungsmittel
 #
 obj=good
 name=Verpackungsmittel
@@ -540,12 +536,14 @@ value=66
 #=0,22
 speed_bonus=0
 MapColor=29
--------------------------
-#**************************
+
+
+
+------------------------------------------------------
 # catg 2 - Schuettgut
-#**************************
+------------------------------------------------------
 #
-# Eisenerz 33
+# 33 Eisenerz
 #
 obj=good
 name=Eisenerz
@@ -558,7 +556,7 @@ speed_bonus=0
 MapColor=15
 -----------------------
 #
-# technische Salze
+# 69 technische Salze
 #
 obj=good
 name=Salze
@@ -571,7 +569,7 @@ speed_bonus=0
 MapColor=1
 ---------------------
 #
-# Kohle 34
+# 34 Kohle
 #
 obj=good
 name=Kohle
@@ -584,7 +582,7 @@ speed_bonus=0
 MapColor=8
 -----------------------
 #
-# Koks 35
+# 35 Koks
 #
 obj=good
 name=Koks
@@ -597,7 +595,7 @@ speed_bonus=0
 MapColor=10
 -----------------------
 #
-# Abfall/Muell 36
+# 36 Abfall/Muell
 #
 Obj=good
 name=Abfall
@@ -610,7 +608,7 @@ speed_bonus=0
 MapColor=88
 --------------------
 #
-# Sand 37
+# 37 Sand
 #
 obj=good
 name=Sand
@@ -623,7 +621,7 @@ speed_bonus=0
 MapColor=86
 -----------------------
 #
-# Schrott 38
+# 38 Schrott
 #
 Obj=good
 name=Schrott
@@ -636,7 +634,7 @@ speed_bonus=0
 MapColor=212
 --------------------
 #
-# Steine 39
+# 39 Steine
 #
 obj=good
 name=Steine
@@ -649,7 +647,7 @@ speed_bonus=0
 MapColor=82
 -----------------------
 #
-# Zuckerrueben 40
+# 40 Zuckerrueben
 #
 obj=good
 name=Zuckerrueben
@@ -662,11 +660,13 @@ speed_bonus=0
 MapColor=207
 -----------------------
 
-#**************************
+
+
+------------------------------------------------------
 # catg 3 - Mineraloele
-#**************************
+------------------------------------------------------
 #
-# Benzin 41
+# 41 Benzin
 #
 obj=good
 name=Benzin
@@ -679,7 +679,7 @@ speed_bonus=0
 MapColor=174
 -----------------------
 #
-# Diesel 42
+# 42 Diesel
 #
 obj=good
 name=Diesel
@@ -692,7 +692,7 @@ speed_bonus=0
 MapColor=175
 -----------------------
 #
-# Heizoel 43
+# 43 Heizoel
 #
 obj=good
 name=Heizoel
@@ -705,7 +705,7 @@ speed_bonus=0
 MapColor=174
 -------------------------- 
 #
-# Oel 44
+# 44 Oel
 #
 obj=good
 name=Oel
@@ -718,24 +718,26 @@ speed_bonus=0
 MapColor=31
 -----------------------
 
-#**************************
+
+
+------------------------------------------------------
 # catg 4 - Kühlwaren
-#**************************
+------------------------------------------------------
 #
-# Fertiggerichte 45
+# 45 Fertiggerichte
 #
 obj=good
 name=Fertiggerichte
 metric= Paletten
 weight_per_unit=480
 catg=4
-value=90
-#=0,3
+value=120
+#=0,4
 speed_bonus=0
 MapColor=53
 -----------------------
 #
-# Fisch 46
+# 46 Fisch
 #
 obj=good
 name=Fisch
@@ -748,7 +750,7 @@ speed_bonus=0
 MapColor=6
 -----------------------
 #
-# Fleisch 47
+# 47 Fleisch
 #
 obj=good
 name=Fleisch
@@ -761,7 +763,7 @@ speed_bonus=0
 MapColor=116
 -----------------------
 #
-# Gefluegel 48
+# 48 Gefluegel
 #
 obj=good
 name=Gefluegel
@@ -774,12 +776,12 @@ speed_bonus=0
 MapColor=4
 ----------------------- 
 #
-# Tiefkuehlkost 49
+# 49 Tiefkuehlkost
 #
 obj=good
 name=Tiefkuehlkost
 metric= Paletten
-weight_per_unit=210
+weight_per_unit=560
 catg=4
 value=120
 #=0,4
@@ -787,14 +789,14 @@ speed_bonus=0
 MapColor=55
 ----------------------- 
 #
-# Tiefkuehlkost 50
+# 50 Molkereiprodukte
 #
 obj=good
 name=Molkereiprodukte
 metric= Paletten
 weight_per_unit=440
 catg=4
-value=90
+value=120
 #=0,4
 speed_bonus=0
 MapColor=55
@@ -802,11 +804,11 @@ MapColor=55
 
 
 
-#**************************
+------------------------------------------------------
 # catg 5 - Fluessige Lebensmittel
-#**************************
+------------------------------------------------------
 #
-# Milch 51
+# 51 Milch
 #
 obj=good
 name=Milch
@@ -819,11 +821,13 @@ speed_bonus=0
 MapColor=50
 ----------------------- 
 
-#**************************
+
+
+------------------------------------------------------
 # catg 6 - Holz
-#**************************
+------------------------------------------------------
 #
-# Bretter 52
+# 52 Bretter
 #
 obj=good
 name=Bretter
@@ -836,7 +840,7 @@ speed_bonus=0
 MapColor=69
 -----------------------
 #
-# Nutzholz 53
+# 53 Nutzholz
 #
 obj=good
 name=Holz
@@ -848,11 +852,14 @@ value=36
 speed_bonus=0
 MapColor=66
 -----------------------
-#**************************
+
+
+
+------------------------------------------------------
 # catg 7 - Landw. Gueter
-#**************************
+------------------------------------------------------
 #
-# Flachs 54
+# 54 Flachs
 #
 obj=good
 name=Flachs
@@ -865,9 +872,8 @@ speed_bonus=0
 MapColor=136
 -----------------------
 #
+# 55 Gerste
 #
-# Gerste 55
-
 obj=good
 name=Gerste
 metric= Tonnen
@@ -879,8 +885,8 @@ speed_bonus=0
 MapColor=47
 ----------------------- 
 #
-# Hopfen 56
-
+# 56 Hopfen
+#
 obj=good
 name=Hopfen
 metric= Tonnen
@@ -892,7 +898,7 @@ speed_bonus=0
 MapColor=166
 ----------------------- 
 #
-# Mandeln 57
+# 57 Mandeln
 #
 obj=good
 name=Mandeln
@@ -904,7 +910,7 @@ speed_bonus=0
 MapColor=230
 ----------------------
 #
-# Trauben 58
+# 58 Trauben
 #
 obj=good
 name=Trauben
@@ -917,7 +923,7 @@ speed_bonus=0
 MapColor=75
 ----------------------- 
 #
-# Weizen 59
+# 59 Weizen
 #
 obj=good
 name=Weizen
@@ -930,12 +936,14 @@ speed_bonus=0
 MapColor=140
 ----------------------- 
 
-#**************************
+
+
+------------------------------------------------------
 # catg 8 - Siloware 
 #          (nicht Verpacktes)
-#**************************
+------------------------------------------------------
 #
-# Kunststoffgranulat 60
+# 60 Kunststoffgranulat
 #
 obj=good
 name=Kunststoffgranulat
@@ -948,7 +956,7 @@ speed_bonus=0
 MapColor=151
 ----------------------- 
 #
-# Zement (unverpackt) 61
+# 61 Zement (unverpackt)
 #
 obj=good
 name=Zement_lose
@@ -961,7 +969,7 @@ speed_bonus=0
 MapColor=208
 ----------------------- 
 #
-# Tierfutter 62
+# 62 Tierfutter
 #
 obj=good
 name=Tierfutter
@@ -972,4 +980,4 @@ value=60
 #=0,2
 speed_bonus=0
 MapColor=87
-#----------------------- 
+----------------------- 

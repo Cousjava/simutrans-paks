@@ -6,15 +6,15 @@ include ("include/translations.php");
 error_reporting(0);
 
 function get_langs() {
-     $verzeichnis = scandir ('./lang/', 1);
+     $verzeichnis = scandir ('./lang/', SCANDIR_SORT_ASCENDING);
      
+     $not_Show = array('.', '..', '.htaccess','index.php');
      $langar = array();
-     for ( $x = 0; $x < count($verzeichnis) - 2; $x++ ) { 
-        if ( $verzeichnis[$x] != "index.php" ) {
-           $langar[$x] = $verzeichnis[$x];
-        }
+     foreach ($verzeichnis as $dirorfile) 
+     { if ( !in_array($dirorfile, $not_Show) ) 
+       { $langar[] = $dirorfile;
+       }
      }
-     sort($langar);
      return $langar;
 }
 
@@ -26,25 +26,18 @@ function format_text($text,$lng_nr)
 
 $langar = get_langs();
 
-  if (!empty($_GET['lang']) ) {
-  $st = $_GET['lang'];
-  $_SESSION['user_lang'] = $st;
-  } elseif ( isset($_SESSION['user_lang']) ) {
-  $st = $_SESSION['user_lang'];
-  } elseif ( isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) ) {
-  if ( in_array(substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2), $langar) ) {
-    $st = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
-  } else {
-    $st = 'en';
-  }
-  $_SESSION['user_lang'] = $st;
-   } else { $st = 'en'; }  
+if     ( isset($_POST['lang']) )                   $st = $_POST['lang'];
+elseif ( isset($_GET['lang']) )                    $st = $_GET['lang'];
+elseif ( isset($_SESSION['user_lang']) )           $st = $_SESSION['user_lang'];
+elseif ( isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) ) $st = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
 
-if ( file_exists('./lang/'.$st.'/lng_main.php') ) {
- include ('./lang/'.$st.'/lng_main.php');        
-} else {
- include ('./lang/en/lng_main.php');        
-}
+// fallback language not set   
+if ( !isset($st) or strlen($st) < 2 or strlen($st) > 3 or !in_array($st,$langar) )  $st = 'en'; 
+// fallback language not exist translate Translator   
+if ( !file_exists('./lang/'.$st.'/lng_main.php') )  $st = 'en'; 
+$_SESSION['user_lang'] = $st;
+
+include ('./lang/'.$st.'/lng_main.php');
 
 include('./include/rss/feedcreator.class.php'); 
 

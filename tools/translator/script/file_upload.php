@@ -11,6 +11,7 @@ if ( !isset($_SESSION['role']) or  !compare_userlevels($u_level, $_SESSION['role
 
 include('./tpl_script/setadmin_links.php');
 
+include ('./include/translations.php');
 include ('./include/select.php');
 
 $phpFileUploadErrors = array(

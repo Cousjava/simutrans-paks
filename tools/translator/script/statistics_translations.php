@@ -7,7 +7,9 @@
 
   //header, no output before this (sends header information)
   $title = 'stats_translation';
-  include_once ('tpl_script/header.php');
+  include ('tpl_script/header.php');
+  include ('./include/translations.php');
+  include ('./include/select.php');
 
     //prints page title
     //called separately in case you have some special requirements
@@ -15,13 +17,13 @@
 ////////////////////////////////////////////////////////////////////////////////
 //globals with constant data - cannot be static in functions - php cannot parse that
 //$sets        = db_fetch_result_as_table ("SELECT DISTINCT `version_id` as 'vid', count(*) as 'obj_count' FROM `versions` JOIN `objects` ON (`version_id` = `version_version_id`) GROUP BY `version_version_id`;");
-if ( !isset($_POST['language']) ) { $lang = 255; } else { $lang = $_POST['language']; }
+$lang = select_box_read_language();
 
 if ( isset($_POST['list']) ) {
-      $set1 = $_POST['set1'];
-      $set2 = $_POST['set2'];
-      $set3 = $_POST['set3'];
-      $set4 = $_POST['set4'];
+      $set1 = intval($_POST['set1']);
+      $set2 = intval($_POST['set2']);
+      $set3 = intval($_POST['set3']);
+      $set4 = intval($_POST['set4']);
         // set choice
         if ( $set1 != 255 ) { 
           $auswahl = "`version_id`=".$set1; } else { $auswahl = ''; }
@@ -51,7 +53,6 @@ if ( isset($_POST['list']) ) {
         if ( $auswahl == '' && $set4 != 255 ) { 
           $auswahl = "`version_version_id`=".$set4; } elseif ( $set4 != 255 ) { $auswahl .= " OR `version_version_id`=".$set4; }
 
-  //$total_unnecessary_count = db_one_field_query ("SELECT count(*) FROM `objects` WHERE $auswahl AND (`obj`='$object_text[15]' OR `obj`='$object_text[10]')");
   $total_count = db_one_field_query ("SELECT count(*) FROM `objects` WHERE $auswahl");
 }
 
@@ -60,15 +61,12 @@ if ( isset($_POST['list']) ) {
 
 function statistics_for_one_set ($language_id, $set_id)
 {
-  Global $object_text;
     $tab = 'translations_'.$set_id;
     $translated_counta = array(0, 0);
     // count all translated objects
     $translated_counta[0] = db_one_field_query ("SELECT count(*) FROM `".$tab."` WHERE `language_language_id`='$language_id' AND `tr_text`<>'';");
     // count translated unnecessary_text/dummy_info objects
-    $translated_counta[1] = db_one_field_query ("SELECT count(*) FROM `objects` o JOIN `".$tab."` p ON (o.obj='$object_text[15]' AND o.object_id=p.object_object_id) WHERE o.version_version_id=".$set_id." AND o.obj='$object_text[15]' AND p.language_language_id='$language_id' AND p.tr_text<>'';" );
-    // count translated dummy_info objects
-    $translated_counta[1] += db_one_field_query ("SELECT count(*) FROM `objects` o JOIN `".$tab."` p ON (o.obj='$object_text[10]' AND o.object_id=p.object_object_id) WHERE o.version_version_id=".$set_id." AND o.obj='$object_text[10]' AND p.language_language_id='$language_id' AND p.tr_text<>'';" );
+    $translated_counta[1] = db_one_field_query ("SELECT count(*) FROM `objects` o JOIN `".$tab."` p ON (o.obj='unnecessary_text' AND o.object_id=p.object_object_id) WHERE o.version_version_id=".$set_id." AND o.obj='unnecessary_text' AND p.language_language_id='$language_id' AND p.tr_text<>'';" );
 
     return $translated_counta;
 }
@@ -77,7 +75,7 @@ function statistics_for_one_set ($language_id, $set_id)
 function statistic_for_one_language ($language_id, $lng_name, $r)
 {
     //information about sets - done only once!
-    global $sets, $total_count, $object_text, $LNG_STATS_TRANS, $v_att;
+    global $sets, $total_count,  $LNG_STATS_TRANS, $v_att,$versions_all;
 
     //counts number of printed lines - for graphical purposes
     //abs total - all translated texts over all languages
@@ -103,9 +101,8 @@ function statistic_for_one_language ($language_id, $lng_name, $r)
         $vid   = $row['vid'];
         $count = $row['obj_count'];
 
-        $unnecessary_count = db_one_field_query ("SELECT count(*) FROM `objects` WHERE `version_version_id`='$vid' AND (`obj`='$object_text[15]' OR `obj`='$object_text[10]');");
-        //$unnecessary_count += db_one_field_query ("SELECT count(*) FROM `objects` WHERE `version_version_id`='$vid' AND `obj`='$object_text[10]';");
-
+        $unnecessary_count = db_one_field_query ("SELECT count(*) FROM `objects` WHERE `version_version_id`='$vid' AND `obj`='unnecessary_text' ");
+ 
         $translated_count = statistics_for_one_set ($language_id, $vid);
         
         $total_translated[0] += $translated_count[0];

@@ -1,8 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-# --------------------------------
+--------------------------------
 Obj=factory
 Name=NDT_alte_Marzipanfabrik
 copyright=pumuckl999
@@ -13,7 +13,7 @@ retire_year=1956
 retire_month=1
 location=City
 DistributionWeight=10
-Productivity=50
+Productivity=60
 InputGood[0]=Zucker
 InputCapacity[0]=1000
 InputSupplier[0]=3
@@ -25,7 +25,7 @@ InputFactor[1]=50
 OutputGood[0]=Marzipan
 OutputCapacity[0]=200
 OutputFactor[0]=100
-electricity_amount=30
+electricity_amount=15
 passenger_boost=1000
 mail_boost=500
 MapColor=90

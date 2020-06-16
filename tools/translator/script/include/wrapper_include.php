@@ -89,7 +89,7 @@ function line_preprocessor ($line,$target_encoding)
 
 
 ////////////////////////////////////////////////////////////////////////////////
-function generate_translation_text ($choice,$lang_id, $version_id, $target_encoding, $font1)
+function generate_translation_text ($choice,$lang_id, $version_id, $target_encoding, $font1,$target_path)
 {
    GLOBAL $tabpfad,$tr_db_name,$tr_name_pattern;   
 
@@ -154,7 +154,7 @@ function generate_translation_text ($choice,$lang_id, $version_id, $target_encod
          }
 
          // not print object name by object scenario_textfile
-         if ( $obj != 'scenario_textfile' ) 
+         if ( $obj != 'scenario_textfile' or $target_path == "" ) 
          {  //print object name
             $res.=str_replace('?',$obj_name,$tr_name_pattern[$k])."\n";
          }
@@ -173,18 +173,18 @@ function generate_translation_text ($choice,$lang_id, $version_id, $target_encod
             }
          }
  
-         // scenario textfile to subfolder
-         if ( $version_id >= 300 and $obj == 'scenario_textfile' ) 
-         {  if ( !is_dir($tabpfad.$version_id."/".$lang_id ) )  mkdir($tabpfad.$version_id."/".$lang_id, 0775); 
+         // scenario textfile to subfolder 
+         if ( $version_id >= 300 and $obj == 'scenario_textfile' and $target_path != "") 
+         {  if ( !is_dir($target_path."/".$lang_id ) )  mkdir($target_path."/".$lang_id, 0775); 
             if ( strpos($obj_name, '#') != false )  
             {  $d = explode( '#', $obj_name);
-               $filename = $tabpfad.$version_id."/".$lang_id."/".$d[0]."/".$d[1];
-               if ( !is_dir($tabpfad.$version_id."/".$lang_id."/".$d[0] ) )  mkdir($tabpfad.$version_id."/".$lang_id."/".$d[0], 0775); 
-            } else  $filename = $tabpfad.$version_id."/".$lang_id."/".$obj_name;
+               $filename = $target_path."/".$lang_id."/".$d[0]."/".$d[1];
+               if ( !is_dir($target_path."/".$lang_id."/".$d[0] ) )  mkdir($target_path."/".$lang_id."/".$d[0], 0775); 
+            } else  $filename = $target_path."/".$lang_id."/".$obj_name;
             // save scenario textfile to lang subfolder
             $prefix = ($target_encoding == "UTF-8")?"\xC2\xA7":"";
             $fp=fopen($filename,"wb");
-            fwrite($fp, $prefix . $tenc);
+            fwrite($fp, $prefix . str_replace('\n',"\n",$tenc));
             fclose($fp); 
          }
 

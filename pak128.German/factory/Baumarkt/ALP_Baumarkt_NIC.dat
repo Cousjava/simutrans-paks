@@ -1,11 +1,9 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 02-2011
 #	Letzte Bearbeitung:
-#    12-09-2015 The Transporter
-#   $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=ALP_Baumarkt_NIC
 copyright=Lemuria
@@ -30,7 +28,7 @@ InputSupplier[3]=0
 InputGood[4]=Bretter
 InputCapacity[4]=300
 InputSupplier[4]=0
-electricity_amount=1
+electricity_amount=25
 passenger_boost=1000
 mail_boost=500
 climates=rocky,tundra

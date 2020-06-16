@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Rollwege
 #	Neu:01-2011
-#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
 ---------------------------------
 Obj=way
 Name=runway_modern
@@ -11,8 +10,8 @@ waytype=air
 system_type=1
 intro_year=1918
 intro_month=1
-cost=100000
-maintenance=200
+cost=1200000
+maintenance=12000
 topspeed=1200
 max_weight=300
 cursor=Landebahn_Asphalt.2.1

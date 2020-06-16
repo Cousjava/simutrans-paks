@@ -1,10 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Es wird mehr als 100 mal soviel Hopfen angefordert wie benotigt, da sich 96kg nicht transportieren lassen ;)
-#	Letzte Bearbeitung:
-#   $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Klosterbrauerei1610_NIC
 copyright=MHz
@@ -26,7 +24,7 @@ OutputGood[0]=Bier
 OutputCapacity[0]=120
 passenger_boost=1000
 Mail_Boost=500
-electricity_amount=15
+electricity_amount=5
 MapColor=28
 climates=desert, tropic, mediterran, temperate, rocky
 needs_ground=1

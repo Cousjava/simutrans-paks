@@ -1,8 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 25-05-2018
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Druckwerkstatt
 copyright=Pumuckl999
@@ -13,7 +13,7 @@ retire_year=1940
 retire_month=1
 Location=City
 DistributionWeight=1
-Productivity=30
+Productivity=32
 Range=10
 InputGood[0]=Papier
 InputCapacity[0]=1200
@@ -21,7 +21,7 @@ InputSupplier[0]=1
 InputFactor[0]=100
 OutputGood[0]=Buecher
 OutputCapacity[0]=120
-electricity_amount=25
+electricity_amount=8
 passenger_boost=1000
 mail_boost=500
 MapColor=38

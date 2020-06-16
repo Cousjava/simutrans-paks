@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Kuehl_Containerschiff MSC Navegantes
@@ -15,7 +14,7 @@ waytype=water
 freight=Fleisch
 engine_type=diesel
 power=41040
-gear=1200
+gear=400
 speed=45
 length=17
 weight=53000

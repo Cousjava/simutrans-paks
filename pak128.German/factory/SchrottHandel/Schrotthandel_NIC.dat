@@ -1,11 +1,9 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
 #	Letzte Bearbeitung:
-#    06-2011
-#   $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Schrotthandel_NIC
 copyright=Didi2004/TonyBzt
@@ -13,7 +11,7 @@ pax_level=10
 intro_year=1891
 intro_month=1
 Location=City
-DistributionWeight=1
+DistributionWeight=100
 Productivity=50
 OutputGood[0]=Schrott
 OutputCapacity[0]=200

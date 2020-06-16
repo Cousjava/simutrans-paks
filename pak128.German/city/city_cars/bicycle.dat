@@ -1,12 +1,51 @@
- 
+#	PAK128.german
+#	Citycars
+#       neu: 09-2019
+---------------------------------
 obj=citycar
 Name=BICYCLE_RIDER_0
 # Sicherheitfahrrad
-DistributionWeight=7
+DistributionWeight=4
 Copyright=Vitus
 intro_year=1885
 intro_month=1
+retire_year=1949
 speed=25
+Image[S]=privat-pedestrians_2-128.4.0
+Image[N]=privat-pedestrians_2-128.4.1
+Image[E]=privat-pedestrians_2-128.4.2
+Image[W]=privat-pedestrians_2-128.4.3
+Image[SE]=privat-pedestrians_2-128.4.4
+Image[NW]=privat-pedestrians_2-128.4.5
+Image[NE]=privat-pedestrians_2-128.4.6
+Image[SW]=privat-pedestrians_2-128.4.7
+----------------------------------------
+obj=citycar
+# Sicherheitfahrrad
+Name=BICYCLE_RIDER_1
+DistributionWeight=4
+Copyright=Vitus
+intro_year=1885
+intro_month=1
+retire_year=1950
+speed=25
+Image[S]=privat-pedestrians_2-128.5.0
+Image[N]=privat-pedestrians_2-128.5.1
+Image[E]=privat-pedestrians_2-128.5.2
+Image[W]=privat-pedestrians_2-128.5.3
+Image[SE]=privat-pedestrians_2-128.5.4
+Image[NW]=privat-pedestrians_2-128.5.5
+Image[NE]=privat-pedestrians_2-128.5.6
+Image[SW]=privat-pedestrians_2-128.5.7
+----------------------------------------
+obj=citycar
+Name=BICYCLE_RIDER_2
+# Sicherheitfahrrad
+DistributionWeight=1
+Copyright=Vitus
+intro_year=1950
+intro_month=1
+speed=30
 Image[S]=privat-pedestrians_2-128.0.0
 Image[N]=privat-pedestrians_2-128.0.1
 Image[E]=privat-pedestrians_2-128.0.2
@@ -18,12 +57,12 @@ Image[SW]=privat-pedestrians_2-128.0.7
 ----------------------------------------
 obj=citycar
 # Sicherheitfahrrad
-Name=BICYCLE_RIDER_1
-DistributionWeight=7
+Name=BICYCLE_RIDER_3
+DistributionWeight=1
 Copyright=Vitus
-intro_year=1885
+intro_year=1950
 intro_month=1
-speed=25
+speed=30
 Image[S]=privat-pedestrians_2-128.1.0
 Image[N]=privat-pedestrians_2-128.1.1
 Image[E]=privat-pedestrians_2-128.1.2

@@ -1,6 +1,6 @@
 <?php
 require_once("./include/parameter.php");
-require_once("./include/quotes.inc.php");
+include ('./include/translations.php');
 include('./include/select.php');
 
     /*
@@ -17,7 +17,7 @@ function other_translate($obj_id, $obj_name, $obj_type, $lang) {
         $sql = sprintf ("SELECT `object_id`,`obj_name`, `version_version_id`, `obj` FROM `objects`".
              "where `object_id`<>%s and `obj_name`='%s';",
               $obj_id, 
-              quote_smart($obj_name)
+              db_real_escape_string($obj_name)
               );
        $query = db_query($sql);
        
@@ -52,7 +52,7 @@ function update_text($update)
    $tab_set = 'translations_'.$version_auswahl;
 //echo "<p>".count($update)."<br />";
           for ( $x = 0; $x < count($update); $x++ ) {
-             $text_update = quote_smart( html_entity_decode($update[$x][2], ENT_QUOTES, "UTF-8") );
+             $text_update = db_real_escape_string( html_entity_decode($update[$x][2], ENT_QUOTES, "UTF-8") );
                $query="UPDATE `".$tab_set."` ".
                "SET `tr_text`='".$text_update."' ".
                "WHERE ".

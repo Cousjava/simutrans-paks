@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Gleise
 #	Neu:12-2011
-#	Letzte Bearbeitung $Date: 2018-05-26 15:05:59 +0200 (Sa, 26. Mai 2018) $ - $Author: gebeine $
 ---------------------------------
 Obj=bridge
 name=alte_Stahlbruecke
@@ -10,8 +9,10 @@ copyright=The Transporter
 waytype=track
 intro_year=1860
 intro_month=1
-cost=30000
-maintenance=60
+retire_year=1979
+retire_month=12
+cost=45000
+maintenance=450
 topspeed=90
 max_lenght=10
 pillar_distance=2

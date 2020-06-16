@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Strassen
 #	Neu:07-2012
-#	Letzte Bearbeitung 
-#    09-08-2015 The Transporter
 ---------------------------------
 obj=tunnel
 name=Alter Autobahntunnel
@@ -13,9 +11,9 @@ intro_year=1935
 intro_month=1
 retire_year=1975
 retire_month=1
-cost=118000
-maintenance=40
-topspeed=130
+cost=120000
+maintenance=1200
+topspeed=80
 icon=> Autobahntunnel_alt.2.0
 cursor=Autobahntunnel_alt.2.1
 FrontImage[N]=Autobahntunnel_alt.1.0

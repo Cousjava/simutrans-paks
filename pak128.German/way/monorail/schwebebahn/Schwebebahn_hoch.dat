@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Schwebebahn
 #	Neu:01-2011
-#	Letzte Bearbeitung 
-#    09-08-2015 The Transporter
 ---------------------------------
 obj=way
 name=Suspended_Monorail_Track
@@ -12,8 +10,8 @@ waytype=monorail_track
 intro_year=1901
 intro_month=3
 system_type=1
-cost=210000
-maintenance=3000
+cost=14000
+maintenance=140
 topspeed=70
 icon=> schwebebahn_hoch.6.2
 cursor=schwebebahn_hoch.6.3

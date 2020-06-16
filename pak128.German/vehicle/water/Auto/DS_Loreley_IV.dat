@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu: 05-04-2019
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Loreley_IV
@@ -18,7 +17,7 @@ freight=Autos
 engine_type=steam
 power=75
 speed=17
-gear=800
+gear=600
 weight=350
 payload=13
 length=8

@@ -2,12 +2,11 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 2008
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Getreidetrailer
 copyright=TonyBzt
-intro_year=1920
+intro_year=1960
 intro_month=1
 cost=442000
 runningcost=36

@@ -226,3 +226,7 @@ obj=program_text
 Name=merge stop
 Note=
 ---------------------
+obj=program_text
+Name=Gewinn
+Note=Das ist Jahresgewinn
+---------------------

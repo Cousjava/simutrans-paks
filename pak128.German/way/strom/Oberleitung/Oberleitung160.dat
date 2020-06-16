@@ -2,13 +2,12 @@
 #	PAK128.german
 #	Oberleitung
 #	Neu:01-2011
-#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
 ---------------------------------
 Obj=way-object
 Name=standard_catenary
 waytype=track
 own_waytype=electrified_track
-intro_year=1905
+intro_year=1930
 intro_month=7
 cost=7500
 maintenance=6

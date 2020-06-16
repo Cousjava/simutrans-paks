@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Gleise
 #	Neu:15-09-2018
-#	Letzte Bearbeitung:
-#       17-12-2018 pumuckl999
 ---------------------------------
 Obj=bridge
 name=Bahnbruecke_40Kmh
@@ -11,10 +9,10 @@ copyright=The Transporter, pumuckl999
 waytype=track
 intro_year=1835
 intro_month=1
-retire_year=1905
-retire_month=7
-cost=13300
-maintenance=32
+retire_year=1859
+retire_month=12
+cost=20000
+maintenance=200
 topspeed=40
 max_lenght=5
 pillar_distance=0

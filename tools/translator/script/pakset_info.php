@@ -21,11 +21,11 @@ knopf export als csv
   //list of all user typs allowed on this page
   //header, no output before this (sends header information)
   $title = 'Pak_Info';
-  require_once ('tpl_script/header.php');
-  include ('./include/select.php');
+  include ('tpl_script/header.php');
   include ('./include/obj.php');
   include ('./include/images.php');
   include ('./include/translations.php');
+  include ('./include/select.php');
 
  
   // ----- Create the template object
@@ -37,17 +37,32 @@ knopf export als csv
   $v_att = array();
 
   $c_list = array();
-  $c_list['bridge']      = array ('name','image','waytype','topspeed','intro','retire', 'cost','maintenance','max_lenght','other','comments' );
-  $c_list['vehicle']     = array ('name','image','links','waytype','category','payload', 'speed','power', 'intro','retire','weight','weight_full','weight%','gear','zugkraft','cost','rcostpp','runningcost', 'rcost%e','note');
-  $c_list['citycar']     = array ('name','image','intro','retire','distributionweight', 'speed', 'copyright','note','other','comments');
-  $c_list['pedestrian']  = array ('name','image','intro','retire','distributionweight', 'speed', 'copyright','note','other','comments');
+  $c_list['bridge']      = array ('name','image','links','waytype','topspeed','intro','retire','maintenance','max_lenght','pillar_asymmetric','pillar_distance','cost','other','comments' );
+  $c_list['vehicle']     = array ('name','image','links','waytype','category','payload', 'speed','power', 'intro','retire','weight','weight_full','weight%','gear','zugkraft','cost', 'runningcost', 'fixed_cost', 'rcost%e');
+  $c_list['citycar']     = array ('name','image','links','intro','retire','distributionweight', 'speed', 'copyright','note','other','comments');
+  $c_list['pedestrian']  = array ('name','image','links','intro','retire','distributionweight', 'speed', 'copyright','note','other','comments');
   $c_list['factory']     = array ('name','image','links','intro','retire','location','climates','pax_level', 'productivity','range', 'input', 'output',  'demand','boost', 'expand', 'mapcolor', 'smoke', 'dims',  'other' );
   $c_list['field']       = array ('name','image','intro','retire','copyright','note','other','comments' );
   $c_list['building']    = array ('name','image','links','type','waytype','climates','location','level', 'intro','retire', 'dims','chance','passengers','enables','copyright','needs_ground','clusters','dat_file_name','other','comments');
-  $c_list['roadsign']    = array ('name','image','waytype','intro','retire','cost','copyright','note','other','comments' );
-  $c_list['way']         = array ('name','image','waytype','system_type','topspeed','intro','retire','cost','maintenance','max_weight','copyright','note','other','comments' );
-  $c_list['good']        = array ('name','catg','metric','weight_per_unit','value','speed_bonus','mapcolor','note','other','comments' );
-  $c_list['rest']        = array ('name','image','type','climates','level','intro','retire', 'dims','copyright','note','other','comments' );
+  $c_list['roadsign']    = array ('name','image','links','waytype','intro','retire','cost','copyright','note','other','comments' );
+  $c_list['way']         = array ('name','image','links','waytype','system_type','topspeed','intro','retire','cost','maintenance', 'max_weight','copyright','note','other','comments' );
+  $c_list['tunnel']      = array ('name','image','links','waytype','topspeed','intro','retire', 'maintenance','max_lenght','cost','other','comments' );
+  $c_list['good']        = array ('name','catg','links','metric','weight_per_unit','value','speed_bonus','mapcolor','note','other','comments' );
+  $c_list['menu']        = array ('name','image','type','copyright','note','other','comments' );
+  $c_list['rest']        = array ('name','image','links','type','climates','level','intro','retire', 'dims','copyright','note','other','comments' );
+  
+  
+$makie_way_multi =array();
+$makie_way_multi['way0'] = 1;
+$makie_way_multi['way1'] = 10;
+$makie_way_multi['bridge0'] = 5;
+$makie_way_multi['tunnel0'] = 15;
+
+// bits_per_month Einstellungen in den paks
+$bits_p_faktor = array();
+$bits_p_faktor['1'] = 4; // pak128.german bits_per_month = 20
+$bits_p_faktor['19'] = 2; // pak128.german bits_per_month = 19
+$bits_p_faktor['20'] = 4; // pak128.german bits_per_month = 20
   
 ////////////////////////////////////////////////////////////////////////////////
 function read_clusters($vid)
@@ -219,8 +234,8 @@ function c_disp($collect)
 
 function print_table_line ($property_list,$ob_id)
 {
-    GLOBAL $v_att,$st,$x, $obj_tab,$good_tab, $cat_tab,$wfull,$we,$wg,
-           $version_auswahl,$obj_auswahl,$obj_sub_auswahl,$good_auswahl,$clu_list,
+    GLOBAL $v_att,$st,$x, $obj_tab,$good_tab, $cat_tab,$wfull,$we,$wg,$sub_waytypes,$makie_way_multi,$bits_p_faktor,
+           $version_auswahl,$obj_auswahl,$obj_sub_auswahl,$good_auswahl,$engine_auswahl,$clu_list,
            $in_out,$climate_auswahl,$cluster_auswahl,$is_displayed,$kmh,$trv,$trb,$csv_t,$makie_p;
 
     //fetch some object data stored directly with the object
@@ -244,9 +259,12 @@ function print_table_line ($property_list,$ob_id)
     $object_translate   = tr_read($ob_id,$version_auswahl,$st,'h');
     $obj_history        = $object_translate[0];
 
-    $pp = strpos($obj_name_translate,'\n\n');
-    if ($obj_auswahl == 'building' and $pp > 0) 
-    { $obj_details = $obj_details.substr($obj_name_translate,$pp+4);
+    $pp = strpos($obj_name_translate,'\n');
+//  if ($obj_auswahl == 'building' and $pp > 0) 
+    if (                               $pp > 0) 
+    { $pph = $pp +2;
+      if (substr($obj_name_translate,$pph,2) == '\n') $pph +=2;
+      $obj_details = $obj_details.substr($obj_name_translate,$pph);
       $obj_name_translate = substr($obj_name_translate,0,$pp);
     }
      //now fetch all other properties for this vehicle
@@ -259,7 +277,8 @@ function print_table_line ($property_list,$ob_id)
     if ($obj_auswahl == 'vehicle' and $obj_sub_auswahl != 255) $is_displayed[] = 'waytype';
     //copy all properties to an array keyed by property name
     $intro_month=1; $intro_year=1900; $retire_month=12; $retire_year=2999; $fracht=''; $climates=''; $clusters = array();
-    $enables=''; $expand='';  $demand =''; $dims='1,1'; $fracht_gewicht=0; $gear=100;
+    $enables=''; $expand='';  $demand =''; $dims='1,1'; $fracht_gewicht=0; $gear=100; 
+    $maintenance = 0; $fcost = 0; $topspeed = 0; $system_type = 0;
     $prod = 10; $range = 10; $boost = ''; $boost_e='1000'; $boost_p=0; $boost_m=0; $engine_type=''; $tender1='';
     $waytype=''; $payload=0; $power=0; $speed=0; $weight=0; $cost=0; $rcost=0; $category='None'; $ertrag=0;
     $in_t = array(); $out_t = array(); 
@@ -269,23 +288,27 @@ function print_table_line ($property_list,$ob_id)
         if ($row[0] == 'intro_year'   and $row[1] >= 1500 and  $row[1] <= 2999) $intro_year   = $row[1];
         if ($row[0] == 'retire_month' and $row[1] >= 1    and  $row[1] <=   12) $retire_month = $row[1];
         if ($row[0] == 'retire_year'  and $row[1] >= 1500 and  $row[1] <= 2999) $retire_year  = $row[1];
-        if ($row[0] == 'waytype')           $waytype      = $row[1];
-        if ($row[0] == 'engine_type')       $engine_type  = $row[1];
+        if ($row[0] == 'waytype')           $waytype      = strtolower($row[1]);
+        if ($row[0] == 'engine_type')       $engine_type  = strtolower($row[1]);
         if ($row[0] == 'constraint[next][0]') $tender1    = $row[1];
         if ($row[0] == 'climates')          $climates     = $row[1];
         if ($row[0] == 'clusters')          $clusters     = explode(',',$row[1]);
         if ($row[0] == 'weight')            $weight       = $row[1];
         if ($row[0] == 'dims')              $dims         = $row[1];
-        if ($row[0] == 'power')             $power   = intval($row[1]);
-        if ($row[0] == 'speed')             $speed   = intval($row[1]);
-        if ($row[0] == 'gear')              $gear    = intval($row[1]);
-        if ($row[0] == 'cost')              $cost    = intval($row[1]);
-        if ($row[0] == 'runningcost')       $rcost   = intval($row[1]);
-        if ($row[0] == 'productivity')      $prod    = intval($row[1]);
-        if ($row[0] == 'range')             $range   = intval($row[1]);
-        if ($row[0] == 'electricity_boost') $boost_e = intval($row[1]);
-        if ($row[0] == 'passenger_boost')   $boost_p = intval($row[1]);
-        if ($row[0] == 'mail_boost')        $boost_m = intval($row[1]);
+        if ($row[0] == 'power')             $power        = intval($row[1]);
+        if ($row[0] == 'speed')             $speed        = intval($row[1]);
+        if ($row[0] == 'gear')              $gear         = intval($row[1]);
+        if ($row[0] == 'cost')              $cost         = intval($row[1]);
+        if ($row[0] == 'runningcost')       $rcost        = intval($row[1]);
+        if ($row[0] == 'fixed_cost')        $fcost        = intval($row[1]);
+        if ($row[0] == 'productivity')      $prod         = intval($row[1]);
+        if ($row[0] == 'range')             $range        = intval($row[1]);
+        if ($row[0] == 'electricity_boost') $boost_e      = intval($row[1]);
+        if ($row[0] == 'passenger_boost')   $boost_p      = intval($row[1]);
+        if ($row[0] == 'mail_boost')        $boost_m      = intval($row[1]);
+        if ($row[0] == 'maintenance')       $maintenance  = intval($row[1]);
+        if ($row[0] == 'topspeed')          $topspeed     = intval($row[1]);
+        if ($row[0] == 'system_type')       $system_type  = intval($row[1]);
         if ($row[0] == 'freight') 
         { $fracht = $row[1];
           if (strtolower($fracht) == 'none') $fracht = '';
@@ -319,8 +342,15 @@ function print_table_line ($property_list,$ob_id)
     db_free_result($property_q);
 
     // check if selected
-    if ($obj_auswahl == 'vehicle' and $good_auswahl != 255 and $good_auswahl != $category ) return;
-    if ($obj_auswahl == 'vehicle' and $wfull > 0 and $power == 0 and $payload > 0) return;
+    if ($obj_auswahl == 'vehicle')
+    { if ($good_auswahl != 255 and $good_auswahl != $category ) return;
+      if ($waytype == 'electrified_track' and $engine_type == '' and $power > 0) $engine_type = 'electric';
+      if ($engine_auswahl == $engine_type) ; // ok
+      elseif ($engine_auswahl == 255)      ; // ok
+      elseif ($engine_auswahl != 'none')   return;
+      elseif ($engine_type != '')          return;
+      if ($wfull > 0 and $power == 0 and $payload > 0) return;
+    }
     if ($obj_auswahl == 'factory' and $good_auswahl != 255 and
        (($in_out == 'i' and !in_array($good_auswahl,array_column($in_t ,'good'))) or
         ($in_out == 'o' and !in_array($good_auswahl,array_column($out_t,'good'))) or
@@ -337,22 +367,38 @@ function print_table_line ($property_list,$ob_id)
     $prod_b = $prod  * 4 * (1 + (($boost_e + $boost_p + $boost_m) / 1000)); 
 
 
-    if (!isset($weight) or $weight == 0) $weight = .1;
+    if ($weight == 0) $weight = .1;
     $weight_full = $weight + ($fracht_gewicht * $payload/ 1000);
+    
+    $bits_per_month_faktor = 4;
+    if (isset($bits_p_faktor[$version_auswahl])) $bits_per_month_faktor = $bits_p_faktor[$version_auswahl];
 
+    // Berechnen Unterhaltskosten Strecke
+    $m_faktor = 1;
+    if (isset($makie_way_multi[$obj_auswahl.$system_type])) $m_faktor = $makie_way_multi[$obj_auswahl.$system_type];
+    if ($waytype == 'monorail_track') $m_faktor = 2;
+    if ($waytype == 'water')          $m_faktor *= 3;
+    
+    $makie_m = $m_faktor * $topspeed;
+        
     // Berechnung der Kaufpreise 
-    $makie_c = ($power * $speed * 100) + ($weight * 10000)+ ($payload * $speed * 150 * $ertrag);
-    /* 150 ist die von einem Fahrzeug mit Geschwindigkeit 1 km/h in einem Jahr gefahrene Entfernung in Kacheln */
-    /* 150 * $speed = vom Fahrzeug in einem Jahr befahrene Anzahl Kacheln */
-    /* $payload * $speed * 150 = Beförderte Menge in einem Jahr */
-    /* $payload * $speed * 150 * $ertrag = der Maximale Ertrag für ein Jahr */
-    /* Wenn man von einer Abschreibung über 10 Jahr ausgeht dann sind die Kosten aus dem Kauf als 10% des Jahres Erlös */
-    /* Dazu kommen noch extra individuelle Kosten für Leistung Geschwindigkeit und Gewicht. Schwere, starke oder schnell Fahrzeuge kosten also mehr. */
-    if ($waytype == 'air')   $makie_c = $payload * $speed * 2 * 150 * $ertrag;
-    /* Da bei Fugzeugen die Leistung nicht genau bestimmt ist oder nicht ermittelbar ist wird hier einfach 20% vom Jahreserlös auf 10 Jahre genommen */
-    if ($waytype == 'water') $makie_c = ($power * $speed * 100) + ($payload * $speed * 150 * $ertrag);
-    /* Bei Schiffen ist im Pak128.german oft nicht der reale payload sonder ein dem Spiel angemessender Payload angegeben, das führt bei Schiffen zu einer Verzerrung vor allem beim Gewicht.. Das Gewicht wird bei Schiffen deshalb weg gelassen */  
-
+    if ($obj_auswahl == 'vehicle')
+    { $makie_c = ($power * $speed * 100) + ($weight * 10000)+ ($payload * $speed * 150 * $ertrag);
+      /* 150 ist die von einem Fahrzeug mit Geschwindigkeit 1 km/h in einem Jahr gefahrene Entfernung in Kacheln */
+      /* 150 * $speed = vom Fahrzeug in einem Jahr befahrene Anzahl Kacheln */
+      /* $payload * $speed * 150 = Beförderte Menge in einem Jahr */
+      /* $payload * $speed * 150 * $ertrag = der Maximale Ertrag für ein Jahr */
+      /* Wenn man von einer Abschreibung über 10 Jahr ausgeht dann sind die Kosten aus dem Kauf als 10% des Jahres Erlös */
+      /* Dazu kommen noch extra individuelle Kosten für Leistung Geschwindigkeit und Gewicht. Schwere, starke oder schnell Fahrzeuge kosten also mehr. */
+      if ($waytype == 'air')   $makie_c = $payload * $speed * 2 * 150 * $ertrag;
+      /* Da bei Fugzeugen die Leistung nicht genau bestimmt ist oder nicht ermittelbar ist wird hier einfach 20% vom Jahreserlös auf 10 Jahre genommen */
+      if ($waytype == 'water') $makie_c = ($power * $speed * 100) + ($payload * $speed * 150 * $ertrag);
+      /* Bei Schiffen ist im Pak128.german oft nicht der reale payload sonder ein dem Spiel angemessender Payload angegeben, das führt bei Schiffen zu einer Verzerrung vor allem beim Gewicht.. Das Gewicht wird bei Schiffen deshalb weg gelassen */  
+    } elseif (in_array($obj_auswahl, $sub_waytypes))
+    { if ($waytype == 'water') $makie_c = $makie_m * 1000;
+      else                     $makie_c = $makie_m * 100;
+    } else $makie_c = 0;
+      
     // Berechnung der Betriebskosten 
     $speed_kor = ($speed * max(30,(2040-$intro_year))) / 100;
     /* Normierte Geschwindigkeit = 100km/h = ein wirklich schnell Reisender */
@@ -379,19 +425,25 @@ function print_table_line ($property_list,$ob_id)
     /* In der Luft sind Geschwindigkeiten bis 800km/h normal. */
     /* 1940 -> 400 km/h entsprechen 100 km/h Normierter Geschwindigkeit */
     /* 1990 -> 800 km/h entsprechen 100 km/h Normierter Geschwindigkeit */
-    $makie_rcs = (($speed_kor * $speed_kor) / 6)  / 150;
-    if ($waytype == 'air') $makie_rcl = ($power * $speed_kor ) / 8000;
+    $makie_rcs = (($speed_kor * $speed_kor) / 5)  / 150;
+    if ($waytype == 'air') $makie_rcl = ($power * $speed_kor * $speed_kor ) / 5000000;
     else                   $makie_rcl = ($power * $speed_kor ) / 1000;
-    /* Treibraddurchmesser: in Meter ⇒ Nur bei Dampflokomotiven angeben an sonsten 1. Räder kleiner 1 m sind Güterzuglokomotiven über 1 m sind Schnellzugsloks ⇒ Preis für Wartung und Betrieb erhöht. Je stärker und schneller die Lok oder Zugmaschine um so mehr Brennstoffverbrauch und Wartungskosten. Die Geschwindigkeit erhöht die Kosten im Quadrat so wie auch der Luftwiderstand quadratisch zu nimmt. */ 
+    if (strpos(strtolower($obj_name),'treidel') !== false) $makie_rcl *= 100;
+    /* Je stärker und schneller die Lok oder Zugmaschine um so mehr Brennstoffverbrauch und Wartungskosten. Die Geschwindigkeit erhöht die Kosten im Quadrat so wie auch der Luftwiderstand quadratisch zu nimmt. */ 
     $makie_rcw = ($weight * $speed_kor * $speed_kor ) / 30000;
     /* Auch Masse wenn beschleunigt wird kostet Brennstoff. Der Verbrauch nimmt ebenfalls quadratisch mit der Geschwindigkeit zu. Tender und Anhänger verursachen hier Kosten schon alleine durch ihr Gewicht. */
-    $makie_rcp = $payload * $ertrag * 25 / 100;
-    /* Für eine gleichmäßige Kostenstrucktur im Spiel, wird für Fracht 25% vom Ertrag als mindest Beriebskosten genommen. Da inbesondere bei Sonderfracht die Rückfahrt meist leer ist, sind 50% vom Ertrag als maximum für die Betriebskosten anzusehen.*/
-    $makie_rc  = $makie_rcl + $makie_rcs + $makie_rcw + $makie_rcp;
+    $makie_rcp = $payload * $ertrag * 15 / 100;
+    /* Für eine gleichmäßige Kostenstrucktur im Spiel, wird für Fracht 15% vom Ertrag als mindest Beriebskosten genommen. Da inbesondere bei Sonderfracht die Rückfahrt meist leer ist, sind 50% vom Ertrag als maximum für die Betriebskosten anzusehen.*/
+    $makie_rc  = $makie_rcs + $makie_rcl + $makie_rcw + $makie_rcp;
 
+    // Berechnen der Fix Kosten
+    $makie_fc = ($payload * $speed * 150 * $ertrag * 1 / (12 * 100)) + $makie_rcs* 100 + $makie_rcl* 100 + $makie_rcw* 100; 
+    
     // speichern
     if (in_array('cost_makie',$property_list) and abs($cost - $makie_c) > 2)      $makie_p .= $obj_name.'>'.'cost='.intval($makie_c)."\n";
     if (in_array('rcost_makie'  ,$property_list) and abs($rcost - $makie_rc) > 2) $makie_p .= $obj_name.'>'.'runningcost='.intval($makie_rc)."\n";
+    if (in_array('fcost_makie'  ,$property_list) and abs($fcost - $makie_fc) > 2) $makie_p .= $obj_name.'>'.'fixed_cost='.intval($makie_fc / $bits_per_month_faktor)."\n"; 
+    if (in_array('maint_makie'  ,$property_list) and abs($maintenance - $makie_m) > 2) $makie_p .= $obj_name.'>'.'maintenance='.intval($makie_m)."\n";
 
     // zugkraft berechnen
     $zugkraft = 0; $zieht = 0; $schwelle = 999; $tekz = 1;
@@ -549,6 +601,12 @@ function print_table_line ($property_list,$ob_id)
         if ($p_name=='max_prod')        $wert = intval($prod_m);
         if ($p_name=='input_makie_cap') $wert = factoryio($p_name,$in_t, $intro_year,$retire_year,$prod_s);
         
+        if ($p_name=='maintenance') $wert = sprintf('%05.2f',$maintenance * $bits_per_month_faktor / 100);
+        if ($p_name=='maint_makie')
+        { if (abs($maintenance - $makie_m) > 2) $wert = sprintf('%05.2f',$makie_m * $bits_per_month_faktor /100);
+          else $wert = 'ok';
+        } 
+
         if ($p_name=='runningcost') $wert = sprintf('%05.2f',$rcost / 100);
         if ($p_name=='rcostpp' and $payload > 0 ) $wert = $wert.sprintf('%05.4f',$rcost / $payload / 100);
         if ($p_name=='rcost_makie')
@@ -559,6 +617,10 @@ function print_table_line ($property_list,$ob_id)
                                             .'+'.sprintf('%03.1f',$makie_rcl)
                                             .'+'.sprintf('%03.1f',$makie_rcw)
                                             .'+'.sprintf('%03.1f',$makie_rcp); 
+        if ($p_name=='fcost_makie')
+        { if (abs($fcost - $makie_fc) > 2) $wert = sprintf('%05.2f',$makie_fc/100);
+          else $wert = 'ok';
+        } 
         if ($p_name=='cost') $wert = format_b($cost);
         if ($p_name=='cost_makie')
         { if ($cost == $makie_c) $wert = '----ok----';
@@ -568,12 +630,14 @@ function print_table_line ($property_list,$ob_id)
         if ($p_name=='costpp' and $payload > 0 ) $wert = $wert.sprintf('%06d',$cost / $payload / 100);
 
         if ($payload > 0 and $speed > 0 and $ertrag > 0)
-        { if ($p_name=='cost%e' ) $wert = intval($cost / ($payload * $speed * 15 * $ertrag));
-          if ($p_name=='rcost%e')  $wert = intval(($rcost    *100) / ($payload * $ertrag));
-          if ($p_name=='rcost%en') $wert = intval(($makie_rc *100) / ($payload * $ertrag));
+        { if ($p_name=='cost%e' )   $wert = intval($cost / ($payload * $speed * 15 * $ertrag));
+          if ($p_name=='fcost%en')  $wert = sprintf('%03.1f',(100*12*$makie_fc / (150*$speed)) / ($payload * $ertrag) );
+          if ($p_name=='rcost%e')   $wert = sprintf('%03.1f',($rcost    *100) / ($payload * $ertrag));
+          if ($p_name=='rcost%en')  $wert = sprintf('%03.1f',($makie_rc *100) / ($payload * $ertrag));
+          if ($p_name=='rfcost%en') $wert = sprintf('%03.1f',($makie_rc *100 + 2*100*12*$makie_fc / (150*$speed)) / ($payload * $ertrag));/*."/".intval(100*($makie_rcl*100 /*+ $makie_rcl*100 + $makie_rcw*100)/($payload * $speed * 150 * $ertrag * 2 / (12 * 100)));*/
         } elseif ($we > 0)
         { if ($p_name=='rcost%e'  and $zieht > 0) $wert = intval(($rcost    * 100) / ($zieht * $we));
-          if ($p_name=='rcost%en' and $zieht > 0) $wert = intval(($makie_rc * 100) / ($zieht * $we));
+       /*   if ($p_name=='rcost%en' and $zieht > 0) $wert = intval(($makie_rc * 100 + (2*100*12*$makie_fc / (150*$speed))) / ($zieht * $we)); */
 
         }
         { // if ($p_name=='rcost%e')  $wert = intval(($rcost    * 100) / 1000);
@@ -713,6 +777,9 @@ function select_col($obj_auswahl,$col_auswahl)
              in_array($obj_sub_auswahl,$building_city)))
          $cluster_auswahl = select_box_read('select_box_cluster',$clu_list,255,-1);
     else $cluster_auswahl = 255;
+    if ($obj_auswahl == 'vehicle')
+    { $engine_auswahl  = select_box_read('select_box_engine',load_engine_tab($version_auswahl,$obj_auswahl,$obj_sub_auswahl),255,-1);
+    } else $engine_auswahl  = 255;
     $good_auswahl    = select_box_read_good();
     $trange          = select_box_read_trange();
 
@@ -745,6 +812,7 @@ function select_col($obj_auswahl,$col_auswahl)
       { $tcat = array();
         foreach($cat_tab as $ctk => $ctv) $tcat[$ctk] = tr_translate_text($version_auswahl,$ctk);
         select_box('select_box_good',$tcat,$good_auswahl,'',-1,$LNG_STATS_VEH[8]);
+        select_box('select_box_engine',load_engine_tab($version_auswahl,$obj_auswahl,$obj_sub_auswahl),$engine_auswahl,'',-1,$LNG_STATS_VEH[11]);
         if ( $obj_sub_auswahl=='track' ) 
         { $v_att['info_box']['filename'] = './tpl/info_box.htm';
           $v_att['info_box']['values']['message_0'] = $LNG_STATS_VEH[2];

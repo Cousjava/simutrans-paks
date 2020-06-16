@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Fluss
 #	Neu:01-2011
-#	Letzte Bearbeitung 
 ---------------------------------
 Obj=way
 Name=river_00
@@ -11,8 +10,8 @@ waytype=water
 system_type=255
 intro_year=1700
 intro_month=1
-cost=5000
-maintenance=0
+cost=54000
+maintenance=54
 topspeed=18
 max_weight=1000
 icon=> river.0.9

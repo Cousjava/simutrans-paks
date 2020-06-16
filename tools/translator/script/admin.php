@@ -2,7 +2,6 @@
 
   $title = 'Administration';
   include_once ('./tpl_script/header.php');
-  require_once('./include/quotes.inc.php');
 
   if (!isset($_SESSION['userId']) ) {
     include_once('./tpl_script/main.php');

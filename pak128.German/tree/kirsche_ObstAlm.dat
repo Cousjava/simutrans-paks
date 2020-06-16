@@ -1,8 +1,8 @@
+--------------------------------
 #	PAK128.german
 #	Tree
 #	Neu: 22.07.2018 NNW
-#	Letzte Bearbeitung: $Date: 2018-11-26 19:07:52 +0100 (Mo, 26. Nov 2018) $ - $Author: michelstadt $
-
+--------------------------------
 obj=tree
 name=ObstAlm_Shunter
 Copyright=NNW
@@ -30,4 +30,3 @@ Image[2][3]=kirsche.3.2,0,-18
 Image[3][3]=kirsche.3.3,0,-18
 Image[4][3]=kirsche.3.4,0,-18
 --------------------------------------
-#_EOF__

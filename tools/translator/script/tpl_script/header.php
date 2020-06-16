@@ -49,25 +49,16 @@ if (isset($_SESSION['maintainter'])) $maintainter = $_SESSION['maintainter'];
 
 $langar = get_langs();
 
-  if (isset($_POST['lang']) ) 
-  { $st = $_POST['lang'];
-    $_SESSION['user_lang'] = $st;
-  } elseif (isset($_GET['lang']) ) 
-  { $st = $_GET['lang'];
-    $_SESSION['user_lang'] = $st;
-  } elseif ( isset($_SESSION['user_lang']) ) 
-  { $st = $_SESSION['user_lang'];
-  } elseif ( isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) ) 
-  { if ( in_array(substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2), $langar) ) 
-    { $st = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
-    } else $st = 'en';
-    $_SESSION['user_lang'] = $st;
-  } 
+if     ( isset($_POST['lang']) )                   $st = $_POST['lang'];
+elseif ( isset($_GET['lang']) )                    $st = $_GET['lang'];
+elseif ( isset($_SESSION['user_lang']) )           $st = $_SESSION['user_lang'];
+elseif ( isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) ) $st = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
 
 // fallback language not set   
 if ( !isset($st) or strlen($st) < 2 or strlen($st) > 3 or !in_array($st,$langar) )  $st = 'en'; 
 // fallback language not exist translate Translator   
-if ( !file_exists('./lang/'.$st.'/lng_main.php') ) { $st = 'en'; }
+if ( !file_exists('./lang/'.$st.'/lng_main.php') )  $st = 'en'; 
+$_SESSION['user_lang'] = $st;
 
 include ('./lang/'.$st.'/lng_main.php');
 include ('./lang/'.$st.'/lng_manage.php');

@@ -171,7 +171,6 @@ $object_text[6] = 'program_text';
 $object_text[7] = 'record_text';
 $object_text[8] = 'ki_text';
 $object_text[9] = 'help_file';
-$object_text[10] = 'dummy_info';
 $object_text[11] = 'tilecutter';
 $object_text[12] = 'translator';
 $object_text[13] = 'win_installer';
@@ -184,17 +183,28 @@ $object_text[19] = 'scenario_textfile';
 $object_text[20] = 'squirrel_text';
 $object_text[21] = 'web_site';
 
-//only display for certain object types
-//some uninteresting can be skipped
-$object_nodisp = array();
-#$object_nodisp[] = 'crossing';
-#$object_nodisp[] = 'smoke';
-$object_nodisp[] = 'cursor';
-#$object_nodisp[] = 'ground';
-#$object_nodisp[] = 'misc';
-$object_nodisp[] = 'symbol';
-#$object_nodisp[] = 'field';
-#$object_nodisp[] = 'menu';
+// import -> some uninteresting can be skipped
+$object_no_import = array();
+#$object_no_import[] = 'crossing';
+#$object_no_import[] = 'smoke';
+$object_no_import[] = 'cursor';
+#$object_no_import[] = 'ground';
+#$object_no_import[] = 'misc';
+$object_no_import[] = 'symbol';
+#$object_no_import[] = 'field';
+#$object_no_import[] = 'menu';
+
+//translate -> some objects need no translation
+$object_no_translate = array();
+$object_no_translate[] = 'crossing';
+$object_no_translate[] = 'smoke';
+$object_no_translate[] = 'cursor';
+$object_no_translate[] = 'ground';
+$object_no_translate[] = 'misc';
+$object_no_translate[] = 'symbol';
+$object_no_translate[] = 'field';
+$object_no_translate[] = 'menu';
+//$object_no_translate[] = 'unnecessary_text';
 
 $building_city = array();
 $building_city[0] = 'res';

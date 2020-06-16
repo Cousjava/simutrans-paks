@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Gleise
 #	Neu:12-2011
-#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
 ---------------------------------
 Obj=way
 Name=Standardgleis
@@ -10,8 +9,10 @@ Copyright=The Transporter
 waytype=track
 intro_year=1906
 intro_month=4
-cost=4400
-maintenance=50
+retire_year=2029
+retire_month=12
+cost=16000
+maintenance=160
 topspeed=160
 cursor=rail160km.2.1
 icon=> rail160km.2.0

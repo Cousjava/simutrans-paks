@@ -66,21 +66,18 @@
       $v_att_page['object_data'][$i]['value_pname'] = $LNG_FORM[48];
       $v_att_page['object_data'][$i]['select_field']['select_name'] = "obj";  
         
-      for ( $x = 0; $x < count($object_text); $x++ ) {   
-        if ( !($object_text[$x] == 'dummy_info' || $object_text[$x] == 'factory_info') ) {   
-          if ( $object_text[$x] == $obj_type ) { 
-            $t = "selected='selected'"; 
-          } else {
-            $t = "";
-          }
-          $v_att_page['object_data'][$i]['select_field']['list_options'][$x]['opt_value'] = $object_text[$x];  
-          $v_att_page['object_data'][$i]['select_field']['list_options'][$x]['opt_name'] = $object_text[$x];  
-          $v_att_page['object_data'][$i]['select_field']['list_options'][$x]['opt_select'] = $t;  
-        }
+      $x = 0;
+      foreach ($object_text as $ob_text)
+      { if ( $ob_text == $obj_type ) $t = "selected='selected'"; 
+        else                         $t = "";
+        $v_att_page['object_data'][$i]['select_field']['list_options'][$x]['opt_value'] = $ob_text;  
+        $v_att_page['object_data'][$i]['select_field']['list_options'][$x]['opt_name']  = $ob_text;  
+        $v_att_page['object_data'][$i]['select_field']['list_options'][$x]['opt_select'] = $t;  
+        $x++;
       }
-      //} 
+
+
       $i++;   
-               
       // note field
       $v_att_page['object_data'][$i]['line_css'] = line_css($i);  
             

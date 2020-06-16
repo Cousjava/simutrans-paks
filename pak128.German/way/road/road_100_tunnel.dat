@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Strassen
 #	Neu:07-2013
-#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
 ---------------------------------
 obj=tunnel
 name=road_100_tunnel
@@ -12,8 +11,8 @@ intro_year=1960
 intro_month=1
 #retire_year=1965
 #retire_month=1
-cost=100000
-maintenance=40
+cost=150000
+maintenance=1500
 topspeed=100
 icon=> road_100_tunnel.0.4
 cursor=road_100_tunnel.1.4

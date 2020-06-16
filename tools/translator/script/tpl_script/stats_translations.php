@@ -10,12 +10,12 @@
 
   $v_att['page_title'] = $page_titel[$title];
 
-  language_selection_menu ($lang, 0,1);
+  select_box("select_language",$language_all,$lang,'',-1,$LNG_FORM[43]);
 
   // gui texts
   $v_att['gui_setselect'] = $LNG_STATS_TRANS[10];
   $v_att['gui_translateinfo'] = $LNG_STATS_TRANS[6];
-  $v_att['gui_translateinfo2'] = $object_text[10].'  / '.$object_text[15];
+  $v_att['gui_translateinfo2'] = 'unnecessary_text';
   $v_att['gui_table_head_language'] = $LNG_MAIN[23];
   $v_att['gui_table_head_translators'] = $LNG_STATS_TRANS[7];
   $v_att['gui_table_head_total'] = $LNG_STATS_TRANS[4];

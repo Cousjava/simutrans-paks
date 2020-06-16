@@ -4,7 +4,15 @@
 
   <form enctype="multipart/form-data" action="?" method="post">      
 
-    <!--(include:form_fields_language)-->
+<!--(if:select_language)-->
+  <select name="language" onchange="document.getElementById('obj_s').submit();">
+  <!--(list:box_entry)-->
+      <!--(item)-->
+     	<option value="<!--(token:opt_value)-->" <!--(token:opt_select)-->><!--(token:opt_name)--></option>
+	<!--(enditem)-->
+  <!--(endlist)-->  
+  </select>
+<!--(endif)-->
 
     <p>
       <b><!--(gui_setselect)-->:</b><br />

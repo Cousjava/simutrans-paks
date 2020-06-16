@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Gleise
 #	Neu:31-10-2017
-#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
 ---------------------------------
 obj=tunnel
 name=Eisenbahntunnel_60
@@ -10,8 +9,10 @@ waytype=track
 copyright=The Transporter, pumuckl999
 intro_year=1855
 intro_month=1
+retire_year=1940
+retire_month=12
 cost=90000
-maintenance=80
+maintenance=900
 topspeed=60
 icon=> ETunnel60.2.0
 cursor=ETunnel60.0.0

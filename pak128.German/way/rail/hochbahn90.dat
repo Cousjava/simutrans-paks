@@ -1,14 +1,16 @@
+---------------------------------
 #	PAK128.german
 #	Way
 #ELEVATED
+---------------------------------
 obj=way
 name=Hochbahn90
 copyright=The Transporter, pumuckl999
 waytype=track
 system_type=1
 draw_as_ding=1
-cost=6000
-maintenance=40
+cost=90000
+maintenance=900
 topspeed=90
 max_weight=120
 intro_year=1912
@@ -139,4 +141,3 @@ FrontImageUp[3][1]=hochbahn90.16.0,0,32
 FrontImageUp[6][1]=hochbahn90.16.1,0,32
 FrontImageUp[9][1]=hochbahn90.16.2,0,32
 FrontImageUp[12][1]=hochbahn90.16.3,0,32
-#_EO_

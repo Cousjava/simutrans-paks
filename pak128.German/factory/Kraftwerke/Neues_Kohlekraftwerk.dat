@@ -1,19 +1,18 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-#	Letzte Bearbeitung: $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Neues_Kohlekraftwerk
 copyright=Alex Brose
 pax_level=18
 intro_year=1963
 intro_month=1
-retire_year=1975
+retire_year=1982
 retire_month=12
 Location=Land
-DistributionWeight=1
+DistributionWeight=5
 Productivity=250
 InputGood[0]=Kohle
 InputCapacity[0]=2000
@@ -26,7 +25,7 @@ SmokeTile=0,1
 SmokeOffset=-5, -97
 #SmokeSpeed=22
 MapColor=133
-climates=desert, tropic, mediterran, temperate, tundra, rocky
+climates=tropic, temperate, tundra, rocky
 Dims=2,2
 BackImage[0][0][0][0][0]=Neues_Kohlekraftwerk.1.1
 BackImage[0][0][0][1][0]=Neues_Kohlekraftwerk.0.1

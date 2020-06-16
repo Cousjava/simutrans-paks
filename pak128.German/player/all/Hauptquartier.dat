@@ -1,19 +1,18 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 
-#    Letzte Bearbeitung: $Date$ - $Author$
-#---------------------------------
+---------------------------------
 Obj=building
 type=hq
-Name=Hauptquartier
+Name=Hauptquartier1
 copyright=pumuckl999
 level=5
 cost=320000
 maintenance=40
-hq_level=0
+hq_level=1
 passengers=10
-intro_year=1890
+intro_year=1871
 intro_month=1
 needs_ground=1
 dims=3,3,4

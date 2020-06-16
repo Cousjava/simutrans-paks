@@ -1,8 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 15-07-2017
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Brennstoffhandel
 copyright=pumuckl999
@@ -29,7 +29,7 @@ InputSupplier[3]=0
 InputFactor[3]=25
 passenger_boost=1000
 mail_boost=500
-electricity_amount=10
+electricity_amount=1
 MapColor=140
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 dims=2,2,4

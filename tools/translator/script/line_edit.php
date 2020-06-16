@@ -9,8 +9,8 @@
   $title = 'line_edit';
   include ('./tpl_script/header.php');
   include ('./include/obj.php');
+  include ('./include/translations.php');
   include ('./include/select.php');
-  include ("./include/translations.php");
 
   // ----- Create the template object
   $v_template = new PclTemplate();
@@ -19,15 +19,15 @@
   // ----- Prepare data
   $v_att = array();
 
-$lang_text_prof = array ("Objekt",
-                         "Referenz",
-                         "Note",
-                         "Text",
-                         "details",
-                         "history",
-                         "links",
-                         "note",
-                         "kommentar");
+$lang_text_prof = array ($LNG_FORM[48], // "Objekt"
+                         $LNG_FORM[53], // "Referenz"
+                         $LNG_EDIT[5],  // "Note",
+                         $LNG_FORM[49], // "Text",
+                         $LNG_EDIT[28], // "details",
+                         $LNG_EDIT[31], // "history",
+                         $LNG_EDIT[30], // "links",
+                         $LNG_EDIT[5],  // "note",
+                         $LNG_FORM[54]); //"kommentar"
  
 $col_tab_l =array('o','r','n');
 $col_tab_r =array('t','d','h','l','n','k');
@@ -48,7 +48,7 @@ function fatal_error($err)
 
   //prints page title
   $v_att['page_title'] = $page_titel[$title];
-
+  if (!isset($_SESSION['edit_lang'])) fatal_error(23);
   $cur_index   = 0;
   if (isset($_GET['index'])  and $_GET['index']!='')  $cur_index   = intval($_GET['index']);
   $v_att['cur_index'] = $cur_index;

@@ -1,8 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 03-01-2018
-# --------------------------------
+--------------------------------
 Obj=factory
 Name=Biokraftwerk
 copyright=pumuckl999
@@ -10,12 +10,11 @@ pax_level=10
 intro_year=2005
 intro_month=8
 location=land
-DistributionWeight=1
-Productivity=150
+DistributionWeight=10
+Productivity=300
 InputGood[0]=Abfall
 InputCapacity[0]=1200
 InputSupplier[0]=3
-InputFactor[0]=200
 passenger_boost=1000
 mail_boost=500
 MapColor=119

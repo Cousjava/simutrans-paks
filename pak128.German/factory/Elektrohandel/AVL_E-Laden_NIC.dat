@@ -1,16 +1,14 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 04-2011
-# --------------------------------
+--------------------------------
 obj=factory
 name=AVL_E-Laden_NIC
 copyright=Lemuria
 pax_level=30
 intro_year=1990
 intro_month=1
-retire_year=2033
-retire_month=12
 location=City
 DistributionWeight=64
 Productivity=50
@@ -33,7 +31,7 @@ InputSupplier[3]=0
 InputGood[4]=Papier
 InputCapacity[4]=200
 InputFactor[4]=20
-electricity_amount=10
+electricity_amount=20
 passenger_boost=2000
 mail_boost=500
 climates=tundra

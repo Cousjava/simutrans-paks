@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Dampfschiff_Braunfels_Stueckgut
@@ -12,13 +11,13 @@ intro_month=1
 retire_year=1920
 retire_month=12
 waytype=water
-cost=10080000
-runningcost=877
+cost=26280000
+runningcost=2377
 freight=Buecher
-payload=150
+payload=450
 engine_type=steam
 power=1100
-gear=1200
+gear=400
 speed=18
 weight=3000
 length=17

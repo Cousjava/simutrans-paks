@@ -2,24 +2,24 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=DaimlerBenz_LP810_Schuettgut
 copyright=RedRabbit
-intro_year=1959
-intro_month=1
-retire_year=1965
+intro_year=1965
+intro_month=12
+retire_year=1984
 retire_month=12
-cost=1205500
-runningcost=22
+cost=1423500
+runningcost=25
 waytype=road
 freight=Kohle
 engine_type=diesel
 power=73
-speed=80
-weight=4.55
-payload=4.2
+gear=90
+speed=85
+weight=3.8
+payload=5
 length=6
 sound=1
 constraint[prev][0]=none

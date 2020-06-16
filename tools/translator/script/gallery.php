@@ -1,6 +1,5 @@
 <?php
 require_once("./include/parameter.php");
-require_once("./include/quotes.inc.php");
 include ('./include/obj.php');
 include ('./include/translations.php');
 include ('./include/select.php');

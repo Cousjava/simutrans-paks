@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Gleise
 #	Neu:17-12-2018
-#	Letzte Bearbeitung:
 ---------------------------------
 Obj=bridge
 name=Bahnbruecke_120Kmh
@@ -10,8 +9,8 @@ copyright=The Transporter, pumuckl999
 waytype=track
 intro_year=1885
 intro_month=1
-cost=40000
-maintenance=70
+cost=60000
+maintenance=600
 topspeed=120
 max_lenght=15
 pillar_distance=5

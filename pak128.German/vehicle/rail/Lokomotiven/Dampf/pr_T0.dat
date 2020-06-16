@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 22-04-2020
+---------------------------------
+obj=vehicle
+name=preussische_T0
+copyright=pumuckl999
+intro_year=1880
+intro_month=1
+retire_year=1900
+retire_month=1
+cost=1952000
+RunningCost=60
+engine_type=steam
+smoke=Steam
+waytype=track
+freight=Post
+payload=15
+speed=60
+gear=180
+weight=18.2
+power=70
+sound=3
+length=6
+EmptyImage[S]=pr_T0.0.0
+EmptyImage[E]=pr_T0.0.1
+EmptyImage[SE]=pr_T0.0.2
+EmptyImage[SW]=pr_T0.0.3
+EmptyImage[N]=pr_T0.0.4
+EmptyImage[W]=pr_T0.0.5
+EmptyImage[NW]=pr_T0.0.6
+EmptyImage[NE]=pr_T0.0.7

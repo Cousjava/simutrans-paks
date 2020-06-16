@@ -9,8 +9,8 @@ copyright=The Transporter
 waytype=road
 intro_year=1970
 intro_month=1
-cost=160000
-maintenance=40
+cost=100000
+maintenance=1000
 topspeed=200
 max_lenght=15
 pillar_distance=2
@@ -53,4 +53,3 @@ FrontPillar2[S]=autobahnbruecke_neu.2.0
 backPillar[W]=autobahnbruecke_neu.2.3
 FrontPillar[W]=autobahnbruecke_neu.2.0
 FrontPillar2[W]=autobahnbruecke_neu.2.0
-

@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Schwebebahn
 #	Neu:01-2011
-#	Letzte Bearbeitung 
-#    09-08-2015 The Transporter
 ---------------------------------
 Obj=bridge
 Name=Schwebebahn_p_bridge
@@ -11,8 +9,8 @@ copyright=yoshi & Fabio Gonella
 waytype=monorail_track
 intro_year=1901
 intro_month=3
-cost=300000
-maintenance=4000
+cost=14000
+maintenance=140
 topspeed=70
 pillar_distance=1
 icon=> schwebebahn_bridge.3.0

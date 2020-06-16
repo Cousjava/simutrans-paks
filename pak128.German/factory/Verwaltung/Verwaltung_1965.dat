@@ -1,8 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu:25-04-2019
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Verwaltung_Muenchen_1965
 copyright=pumuckl999
@@ -11,7 +11,7 @@ intro_month=1
 #retire_year=
 #retire_month=
 Location=city
-DistributionWeight=60
+DistributionWeight=127
 Productivity=40
 pax_level=80
 mail_demand=160

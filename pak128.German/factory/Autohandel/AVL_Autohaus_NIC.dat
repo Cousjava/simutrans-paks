@@ -1,18 +1,14 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 2008
-#	Letzte Bearbeitung:
-#   $Date: 2017-12-15 12:20:12 +0100 (Fr, 15. Dez 2017) $ - $Author: gebeine $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=AVL_Autohaus_NIC
 Copyright=lemuria
 pax_level=20
 intro_year=1982
 intro_month=1
-retire_year=2400
-retire_month=12
 Location=City
 DistributionWeight=127
 Productivity=20

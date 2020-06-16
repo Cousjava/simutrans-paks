@@ -1,20 +1,18 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 2008
-#	Letzte Bearbeitung:
-#   $Date: 2017-04-09 09:56:45 +0200 (So, 09. Apr 2017) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=VWAutohaus_NIC
 Copyright=DIDI2004/TonyBzt
 pax_level=20
 intro_year=1952
 intro_month=1
-retire_year=2400
+retire_year=2000
 retire_month=12
 Location=City
-DistributionWeight=10
+DistributionWeight=60
 Productivity=10
 Range=3
 InputGood[0]=Autos

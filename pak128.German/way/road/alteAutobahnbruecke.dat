@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Strassen
 #	Neu:08-2012
-#	Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
 ---------------------------------
 Obj=bridge
 name=alte_Autobahnbruecke
@@ -12,9 +11,9 @@ intro_year=1935
 intro_month=1
 retire_year=1975
 retire_month=1
-cost=78000
-maintenance=25
-topspeed=130
+cost=40000
+maintenance=400
+topspeed=80
 max_lenght=15
 max_height=6
 pillar_distance=2

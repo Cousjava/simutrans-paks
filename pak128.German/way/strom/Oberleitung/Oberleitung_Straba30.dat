@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Oberleitung
 #	Neu:01-2011
-#	Letzte Bearbeitung 
-#    31-01-2015 Pumuckl999
 ---------------------------------
 obj=way-object
 name=Strassenbahn_Oberleitung_19.Jhd
@@ -12,6 +10,8 @@ waytype=tram_track
 own_waytype=electrified_track
 intro_year=1875
 intro_month=1
+retire_year=1949
+retire_month=12
 cost=2000
 maintenance=10
 topspeed=30

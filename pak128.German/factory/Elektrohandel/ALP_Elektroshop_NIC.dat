@@ -1,8 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 04-2011
-# --------------------------------
+--------------------------------
 obj=factory
 name=ALP_Elektroshop_NIC
 copyright=Lemuria
@@ -10,8 +10,6 @@ level=19
 pax_level=30
 intro_year=1980
 intro_month=1
-retire_year=2033
-retire_month=12
 location=City
 DistributionWeight=127
 Productivity=50

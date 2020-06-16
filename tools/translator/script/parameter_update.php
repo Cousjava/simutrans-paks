@@ -2,8 +2,8 @@
 
 $version_id    = 20;
 $tile_size     = 0;
-$calc_file = '../data/set_'.$version_id.'_calc.txt';
-$dat_dir   = '../pak128german_dev';
+$calc_file = '../kosten.calc';
+$dat_dir   = '../vehicle';
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
@@ -57,9 +57,9 @@ function browsedir ($dir,&$filecount,&$files,$rexp,$tile_size=0)
 //storing the information and other taks....
 //for perfromance tweaks, requires also target version id and the tile size (to save queries)
 function process_dat_file ($dat_file_name, $target_version_id, $t_size)
-{   GLOBAL $LNG_OBJ_IMPORT,$calc_tab,$ob_updated,$ob_unmodified;
+{   GLOBAL $calc_tab,$ob_updated,$ob_unmodified;
 
-    echo "<hr>\n".$LNG_OBJ_IMPORT[14]." <b>".path_html_process($dat_file_name)."</b><br>\n";
+    echo "<hr>\nFile inarbeit <b>".path_html_process($dat_file_name)."</b><br>\n";
 
     //count of object with successful save
     $obj_count = 0;
@@ -117,6 +117,14 @@ function process_dat_file ($dat_file_name, $target_version_id, $t_size)
       }
       if (strlen($z) > 0) $z = $z . "\r\n";
       if ($dl[$i] != $z) { $dl[$i] = $z; $need_update++; }
+      // Paramter einfügen 
+      if (strtolower(substr($dl[$i],0,11))   == 'runningcost')
+      { if (substr($dl[$i+1],0,10) != 'fixed_cost')
+        { $dl[$i-1] .= $dl[$i];
+          $dl[$i] = 'fixed_cost=x'; $i--; 
+        }
+      }
+      // ende Paramter einfügen
     }
     if ($need_update > 0)
     { $fp=fopen($dat_file_name,"wb");
@@ -155,7 +163,7 @@ echo 'lesen Inhaltsverzeichnis <br>';
     browsedir($dat_dir,$file_count,$files,"#.*\\.dat\$#i",$tile_size);
 
     // print_r($files);
-    printf($LNG_OBJ_IMPORT[19]."<br>\n", $file_count);
+    printf("verzeichnis gelesen<br>\n", $file_count);
 	
     foreach ($files as $dat_file_to_process)
     { process_dat_file($dat_file_to_process['filename'], $version_id,$dat_file_to_process['tile_size']);
@@ -163,7 +171,6 @@ echo 'lesen Inhaltsverzeichnis <br>';
     echo "<h2>All .dat done. updated=$ob_updated, unmodified=$ob_unmodified</h2>"; 
 
 
-    echo $LNG_OBJ_IMPORT[20]."<br>\n";
 
 foreach ($calc_tab as $cn => $cw)
 { echo "nicht gefunden: ".$cn."=".$cw."<br>\n";

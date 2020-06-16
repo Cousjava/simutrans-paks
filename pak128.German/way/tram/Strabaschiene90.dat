@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Strassenbahnschienen
 #    Neu: 11-2015
-#    Letzte Bearbeitung: $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
 ----------------------------------
 Obj=way
 Name=Ueberland_Straba_Schiene
@@ -11,8 +10,8 @@ waytype=track
 system_type=7
 intro_year=1925
 intro_month=1
-cost=40000
-maintenance=120
+cost=9000
+maintenance=90
 topspeed=90
 max_weight=30
 icon=> Strabaschiene90.3.1
@@ -28,7 +27,7 @@ Image[NSE]=Strabaschiene90.0.2
 Image[NSW]=Strabaschiene90.0.4
 Image[NEW]=Strabaschiene90.0.1
 Image[SEW]=Strabaschiene90.0.3
-Image[NSEW]=Strabaschiene90.1.2 
+Image[NSEW]=Strabaschiene90.1.2
 Image[NE]=Strabaschiene90.3.0
 Image[SE]=Strabaschiene90.2.3
 Image[NW]=Strabaschiene90.2.4

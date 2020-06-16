@@ -20,6 +20,7 @@
   $img_sel['roadsign']    = array ('image[0]','image[1]','image[2]','image[3]');
   $img_sel['way-object']  = array ('frontimage[ns]','frontimage[sw]');
   $img_sel['way']         = array ('image[ns][0]','image[sw][0]');
+  $img_sel['menu']        = array ('image[0]','image[1]','image[2]','image[3]','image[4]','image[5]','image[6]','image[7]');
 
 ////////////////////////////////////////////////////////////////////////////////
 // check if allowed to show image
