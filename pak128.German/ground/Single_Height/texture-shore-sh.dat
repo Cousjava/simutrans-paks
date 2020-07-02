@@ -1,0 +1,13 @@
+---------------------------------
+#	PAK128.german
+#	Ground Texture
+#    Neu: 2002
+---------------------------------
+# these images define the beach transition
+Obj=ground
+Name=ShoreTrans
+Image[0][0]=texture-shore.0.0
+Image[1][0]=texture-shore.0.1
+Image[2][0]=texture-shore.0.2
+Image[3][0]=texture-shore.0.3
+--------------------

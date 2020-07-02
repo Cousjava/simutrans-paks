@@ -1,0 +1,18 @@
+---------------------------------
+#	PAK128.german
+#	Ground Texture
+#    Neu: 2002
+---------------------------------
+Obj=ground
+Name=Borders
+copyright=prissi
+# backpart (obtained by (hang&1)|((hang&12)>>1)
+Image[0][0]=borders.0.0
+Image[1][0]=borders.0.1
+Image[2][0]=borders.0.2
+Image[3][0]=borders.0.3
+Image[4][0]=borders.1.0
+Image[5][0]=borders.1.1
+Image[6][0]=borders.1.2
+Image[7][0]=borders.1.3
+--------------------
