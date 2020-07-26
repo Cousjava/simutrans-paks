@@ -136,3 +136,18 @@ Image[5]=> compass-map.0.5
 Image[6]=> compass-map.0.6
 Image[7]=> compass-map.0.7
 --
+Obj=symbol
+name=Happy
+copyright=Ranran
+Image[0]=> new-symbols.4.0
+--------------------
+Obj=symbol
+name=Unhappy
+copyright=Ranran
+Image[0]=> new-symbols.4.1
+--------------------
+Obj=symbol
+name=NoRoute
+copyright=Ranran
+Image[0]=> new-symbols.4.3
+--------------------
