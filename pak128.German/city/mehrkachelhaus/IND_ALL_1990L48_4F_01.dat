@@ -1,0 +1,55 @@
+#	PAK128.german
+
+#	Citybuildings commercial
+#       neu: 25-06-2020
+#--------------------------------------
+obj=building
+
+name=IND_ALL_1998_L48_A_01
+#Schlachthof Fürstenfeldbruck-Hasenheide
+copyright=pumuckl999
+type=ind
+level=48
+chance=20
+intro_year=1998
+intro_month=1
+#retire_year=
+#retire_month=
+needs_ground=0
+noinfo=0
+noconstruction=0
+climates=desert, tropic, mediterran, temperate, tundra, rocky
+dims=2,2,4
+BackImage[0][0][0][0][0][0]=IND_ALL_1990L48_4F_01.0.0
+BackImage[0][0][1][0][0][0]=IND_ALL_1990L48_4F_01.0.1
+BackImage[0][1][0][0][0][0]=IND_ALL_1990L48_4F_01.0.2
+BackImage[0][1][1][0][0][0]=IND_ALL_1990L48_4F_01.0.3
+BackImage[0][0][0][0][0][1]=IND_ALL_1990L48_4F_01.0.4
+BackImage[0][0][1][0][0][1]=IND_ALL_1990L48_4F_01.0.5
+BackImage[0][1][0][0][0][1]=IND_ALL_1990L48_4F_01.1.0
+BackImage[0][1][1][0][0][1]=IND_ALL_1990L48_4F_01.1.1
+BackImage[1][0][0][0][0][0]=IND_ALL_1990L48_4F_01.1.2
+BackImage[1][0][1][0][0][0]=IND_ALL_1990L48_4F_01.1.3
+BackImage[1][1][0][0][0][0]=IND_ALL_1990L48_4F_01.1.4
+BackImage[1][1][1][0][0][0]=IND_ALL_1990L48_4F_01.1.5
+BackImage[1][0][0][0][0][1]=IND_ALL_1990L48_4F_01.2.0
+BackImage[1][0][1][0][0][1]=IND_ALL_1990L48_4F_01.2.1
+BackImage[1][1][0][0][0][1]=IND_ALL_1990L48_4F_01.2.2
+BackImage[1][1][1][0][0][1]=IND_ALL_1990L48_4F_01.2.3
+BackImage[2][0][0][0][0][0]=IND_ALL_1990L48_4F_01.2.4
+BackImage[2][0][1][0][0][0]=IND_ALL_1990L48_4F_01.2.5
+BackImage[2][1][0][0][0][0]=IND_ALL_1990L48_4F_01.3.0
+BackImage[2][1][1][0][0][0]=IND_ALL_1990L48_4F_01.3.1
+BackImage[2][0][0][0][0][1]=IND_ALL_1990L48_4F_01.3.2
+BackImage[2][0][1][0][0][1]=IND_ALL_1990L48_4F_01.3.3
+BackImage[2][1][0][0][0][1]=IND_ALL_1990L48_4F_01.3.4
+BackImage[2][1][1][0][0][1]=IND_ALL_1990L48_4F_01.3.5
+BackImage[3][0][0][0][0][0]=IND_ALL_1990L48_4F_01.4.0
+BackImage[3][0][1][0][0][0]=IND_ALL_1990L48_4F_01.4.1
+BackImage[3][1][0][0][0][0]=IND_ALL_1990L48_4F_01.4.2
+BackImage[3][1][1][0][0][0]=IND_ALL_1990L48_4F_01.4.3
+BackImage[3][0][0][0][0][1]=IND_ALL_1990L48_4F_01.4.4
+BackImage[3][0][1][0][0][1]=IND_ALL_1990L48_4F_01.4.5
+BackImage[3][1][0][0][0][1]=IND_ALL_1990L48_4F_01.5.0
+BackImage[3][1][1][0][0][1]=IND_ALL_1990L48_4F_01.5.1
+#_EO_

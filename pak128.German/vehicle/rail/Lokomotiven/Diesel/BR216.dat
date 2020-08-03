@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 25-06-2020
+---------------------------------
+obj=vehicle
+name=DB_BR_216
+waytype=track
+copyright=pumuckl999
+intro_year=1964
+intro_month=2
+retire_year=2004
+retire_month=4
+cost=17567000
+runningcost=160
+fixed_cost=4000
+freight=None
+engine_type=diesel
+smoke=Diesel
+speed=120
+gear=280
+weight=76.7
+power=1400
+length=11
+sound=diesel.wav
+EmptyImage[S]=BR216.0.0
+EmptyImage[E]=BR216.0.1
+EmptyImage[SE]=BR216.0.2
+EmptyImage[SW]=BR216.0.3
+EmptyImage[N]=BR216.0.4
+EmptyImage[W]=BR216.0.5
+EmptyImage[NW]=BR216.0.6
+EmptyImage[NE]=BR216.0.7
+-----------------------------

@@ -1,0 +1,41 @@
+---------------------------------
+#	PAK128.german
+#	Ground Texture
+#    Neu: 2002
+---------------------------------
+# these images define the slope transition
+Obj=ground
+Name=SlopeTrans
+Image[0][0]=SlopeTrans-th.0.0
+Image[1][0]=SlopeTrans-th.0.1
+Image[2][0]=SlopeTrans-th.0.2
+Image[3][0]=SlopeTrans-th.0.3
+Image[4][0]=SlopeTrans-th.1.0
+Image[5][0]=SlopeTrans-th.1.1
+Image[6][0]=SlopeTrans-th.1.2
+Image[7][0]=SlopeTrans-th.1.3
+Image[8][0]=SlopeTrans-th.2.0
+Image[9][0]=SlopeTrans-th.2.1
+Image[10][0]=SlopeTrans-th.2.2
+Image[11][0]=SlopeTrans-th.2.3
+Image[12][0]=SlopeTrans-th.3.0
+Image[13][0]=SlopeTrans-th.3.1
+Image[14][0]=SlopeTrans-th.3.3
+Image[15][0]=SlopeTrans-th.0.4
+Image[16][0]=SlopeTrans-th.1.4
+Image[17][0]=SlopeTrans-th.2.4
+Image[18][0]=SlopeTrans-th.3.4
+Image[19][0]=SlopeTrans-th.0.5
+Image[20][0]=SlopeTrans-th.1.5
+Image[21][0]=SlopeTrans-th.2.5
+Image[22][0]=SlopeTrans-th.3.5
+Image[23][0]=SlopeTrans-th.0.6
+Image[24][0]=SlopeTrans-th.1.6
+Image[25][0]=SlopeTrans-th.2.6
+Image[26][0]=SlopeTrans-th.3.6
+Image[27][0]=SlopeTrans-th.0.7
+Image[28][0]=SlopeTrans-th.1.7
+Image[29][0]=SlopeTrans-th.2.7
+Image[30][0]=SlopeTrans-th.3.7
+Image[31][0]=SlopeTrans-th.0.8
+--------------------

@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 25-06-2020
+---------------------------------
+obj=vehicle
+name=DB_BR_218.0
+waytype=track
+copyright=pumuckl999
+intro_year=1968
+intro_month=2
+#retire_year=2015
+#retire_month=4
+cost=26546000
+runningcost=226
+fixed_cost=5650
+freight=None
+engine_type=diesel
+smoke=Diesel
+speed=140
+gear=315
+weight=80
+power=1839
+length=11
+sound=diesel.wav
+EmptyImage[S]=BR218_rot.0.0
+EmptyImage[E]=BR218_rot.0.1
+EmptyImage[SE]=BR218_rot.0.2
+EmptyImage[SW]=BR218_rot.0.3
+EmptyImage[N]=BR218_rot.0.4
+EmptyImage[W]=BR218_rot.0.5
+EmptyImage[NW]=BR218_rot.0.6
+EmptyImage[NE]=BR218_rot.0.7
+-----------------------------

@@ -1,15 +1,15 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 07-09-2019
-#	Letzte Bearbeitung: $Date$ - $Author$
 ----------------------------------
 obj=vehicle
 name=unsichtbare_Lok_fuer_Abstellgleis
 copyright=pumuckl999
 intro_year=1835
 intro_month=1
-cost=0
-RunningCost=0
+cost=950000
+runningcost=11
+fixed_cost=288
 waytype=track
 engine_type=diesel
 power=1100

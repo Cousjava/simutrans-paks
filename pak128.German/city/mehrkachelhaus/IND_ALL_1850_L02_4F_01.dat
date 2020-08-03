@@ -1,17 +1,16 @@
 #	PAK128.german
-
 #	Citybuildings commercial
 #       neu: 15-06-2020
-#--------------------------------------
+--------------------------------------
 obj=building
-
 name=IND_ALL_1853_L02_A_01
-#Harkortsche Fabrik Hagen
+#Harkortsche Fabrik, in Hagen, Grundstein 1822 
 copyright=pumuckl999
 type=ind
 level=2
 chance=20
-intro_year=1853
+clusters=1,5
+intro_year=1822
 intro_month=1
 #retire_year=
 #retire_month=
