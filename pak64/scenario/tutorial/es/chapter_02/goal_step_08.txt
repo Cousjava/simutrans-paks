@@ -1,0 +1,12 @@
+<br>
+La ciudad <em>{name}</em> necesita que conectes la linea de <em>Autobuses</em> con la linea de <em>Trenes</em> en construcción.<br><br>
+
+En la barra de herramientas seleccione <em>Herramientas especiales de construcción</em> y elija la herramienta <em>Make way or stop public</em><br><br>
+
+<em>Seleccione las paradas:</em><br>
+<em>[1]</em> {st1}.<br>
+<em>[2]</em> {st2}.<br><br>
+
+<st>Se avanza al siguiente capitulo</st> cuando las dos paradas sean publicas.<br><br>
+
+

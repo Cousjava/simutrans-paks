@@ -1,0 +1,5 @@
+<br>
+Se requiere transportar <em>{good2}</em> desde el {f2} hasta la {f3} en la Ciudad de <em>{cy1}</em>.<br><br>
+
+{tx} Construir una estación de mercancías ({tile} azulejos de largo) cerca de {f3}.<br><br>
+

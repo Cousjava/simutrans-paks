@@ -1,0 +1,40 @@
+<br>
+En este primer paso vamos a explicar algunos aspectos básicos sobre el <em>Escenario Tutorial</em>.<br><br>
+
+<h1>Ventanas de Advertencias</h1>
+Estas se usan para dar una advertencia al jugador en caso de hacer algo mal, como usar la herramienta equivocada, los eventos en el escenario que muestran ventanas emergentes son:<br>
+1- <em>Uso de herramientas</em>, cuando se hace clic en el mapa con la herramienta incorrecta.<br>
+2- <em>Enrutar Vehiculos</em>, cuando la ruta o linea del vehiculo es incorrecta.<br>
+3- <em>Arrancar Vehiculos</em>, cuando el tipo de vehiculo requerido es incorrecto.<br><br>
+
+<h1>Marcas y etiquetas</h1>
+Se usan una serie de indicaciones en el terreno para ayudar al jugador a encontrar/ubicar las cosas. Los tres tipos de indicaciones son:<br>
+1- <em>Marcadores de Texto</em>, se usan estos objetos para mostrar un texto guiá y para indicar con "X" los limites para el uso de herramientas.<br>
+2- <em>Marcas en objetos</em>, se usan para darle un resalte 'Rojo' a los objetos donde se debe hacer clic.<br>
+3- <em>Marcas en el terreno<em>, se usa para resaltar objetos y el terreno, también cumple un papel visual a la hora de conectar caminos. <br><br>
+
+<h1>Enlaces o Links</h1>
+En este escenario vas a ver muy comunmente los enlaces a ubicaciones de objetos, al hacer clic sobre uno de ellos te llevaran automáticamente a la ubicación que ellos indican, por ejemplo "{pos}", al hacer clic te llevara directamente a la ciudad <em>{town}</em>. Se usan principalmente para ir a:<br>
+-- Ciudades ({pos1}), Fabricas ({pos2}), Estaciones ({pos3}), etc.<br><br>
+
+<h1>Regresiones de Capítulos/Pasos</h1>
+Esto solo pasara si eliminas un vehículo en circulación, sin importar el capitulo donde estés seras enviado de regreso a corregir el problema.<br><br>
+
+<h1>Enlace para Saltar Pasos</h1>
+Es un tipo de enlace especial que permite ejecutar códigos en el Escenario con solo un clic, usando este atajo puedes ver como se va construyendo todo automáticamente, se puede usar hasta el Capitulo 5.<br><br>
+
+<h1>Mensajes de Escenario</h1>
+Los mensajes de Escenario estan desactivados por defecto, puedes activar de la siguiente manera:<br><br>
+-- En la barra de herramientas seleccione el menu <em>Buzon</em>, en la precione el boton de <em>[Opciones]</em><br>
+-- A continuacion se muestra un lista de los tipos de mensajes, cada uno con 4 casillas de verificacion.<br>
+-- <em>[Control Maestro]</em> este control activa/desactiva por completo el mensaje selecionado.<br>
+-- <em>[Barra de noticias]</em> este control activa/desactiva mensajes en la barra de noticias.<br>
+-- <em>[Ventana Temporal]</em> este control activa/desactiva mensajes en en ventana emergente que desaparece en unos segundos.<br>
+-- <em>[Ventana Alerta]</em> este control activa/desactiva mensajes en en ventana emergente persistente <st>(no recomendado)</st>.<br><br>
+
+<em>Consejo:</em> Para los mensajes de Escenario se recomienda activar solo la <em>[Ventana Temporal]</em>.<br><br>
+
+<st>Nota:</st> El texto en esta ventana siempre tarda unos segundos en actualizarce.<br><br>
+
+<st>Para avanzar al siguiente paso</st>, debes hacer clic en este enlace {link}.<br><br>
+

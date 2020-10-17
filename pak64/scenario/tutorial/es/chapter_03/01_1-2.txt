@@ -1,0 +1,4 @@
+<br>
+Se requiere transportar productos agrícola <em>({good1})</em> desde la {f1} hasta el {f2} para la producción de harina de <em>({good2})</em>.<br><br>
+
+{tx} Use la Herramienta de exploración sobre la {f2} para mostrar los detalles.<br><br>

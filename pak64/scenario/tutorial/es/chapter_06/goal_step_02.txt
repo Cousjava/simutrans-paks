@@ -1,0 +1,16 @@
+<br>
+El servicio publico necesita de tu ayuda para conectar la ciudad {cit1} con la ciudad {cit2} por via aerea.<br><br>
+
+Haga clic en el Hangar {dep1} y compre una aeronave de nombre <em>'{plane}'</em> y configure la ruta de la siguiente manera:<br><br>
+
+
+<em>[1]</em> Selecione la Aero parada {sch1} y configure de esta manera:<br>
+<em>--> [a]</em> Carga minima <em>100%</em><br>
+<em>--> [b]</em> Tiempo de espera <em>1/1</em><br><br>
+
+<em>[2]</em> Selecione la Aero parada {sch2} y precione Arrancar.<br><br>
+
+Se avanza al siguiete paso, cuando el Avion salga del hangar.<br><br>
+
+
+<br>

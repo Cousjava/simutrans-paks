@@ -1,0 +1,16 @@
+<br>
+
+El servicio publico necesita de tu ayuda para conectar la ciudad {cit1} con la ciudad {cit2} por via aerea.<br><br>
+
+<h1>Aeropuerto en construcion</h1><br>
+<em>Pasos:</em><br>
+<em>1-</em> Construya la <em>{w1name}</em> entre {c1_a} y {c1_b}.<br>
+<em>2-</em> Construtya la <em>{w2name}</em> entre {c2_a} y {c2_b}. <br>
+<em>3-</em> Construya la parada aerea en el tramo de pista: {st1}.<br>
+<em>4-</em> Construya la una Terminal de pasajeros en: {st2}.<br>
+<em>5-</em> Construya el Hangar o deposito Aereo (Construya un tramo de pista primero): {dep1}.<br>
+<em>6-</em> Haga publica la parada aerea en: {st1}.<br><br>
+
+Se avanza al siguiete paso, cuando todo este en su lugar.<br><br>
+
+<br>

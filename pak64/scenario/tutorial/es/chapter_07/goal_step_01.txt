@@ -1,0 +1,13 @@
+<br>
+La ciudad {city} necesita diseñar una red de autobuse que permita movilizar pasajeros hacia la estacion de tren: {name}.<br><br>
+
+<em>1-</em> Colocar una parada de autobus en la posision {stop}.<br>
+<em>2-</em> Hacer publca la parada en {stop}. <br>
+<em>3-</em> Ahora es libre de construir una red de autobuses en la ciudad {city}.<br>
+<em>4-</em> Asegurece que todos los autobuses esten conectados a la estacion: {name}.<br><br>
+
+Se avanza al siguiete paso, cuando se transporten mas de <em>{load}</em> pasajeros hacia {name} en un mes.<br><br>
+
+<st>Se han trasportado este mes:</st> <em>{get_load}/{load}</em> 
+
+<br>

@@ -1,0 +1,7 @@
+<br>
+Se requiere transportar hidrocarburos <em>({good1})</em> desde {f1} hasta el {f3} para la producción de <em>({good2})</em>.<br><br>
+
+Coloque el <em>Astillero</em> aquí {dep1}<br><br>
+
+<st>Se avanza al siguiente paso</st> haciendo clic en el <em>Astillero</em> {dep1} usando la herramienta de exploración.<br><br>
+

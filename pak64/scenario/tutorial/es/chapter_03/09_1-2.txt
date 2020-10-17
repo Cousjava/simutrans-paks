@@ -1,0 +1,14 @@
+<br>
+El <em>Servicio Publico</em> necesita que completes la red ferroviaria que recorre las ciudades de:<br>
+<em>{cy2}</em> {co2}, <em>{cy1}</em> {co1}, <em>{cy3}</em> {co3}, <em>{cy4}</em> {co4}, <em>{cy5}</em> {co5}.<br><br>
+
+{tx} Seleccione <em>'{tool2}'</em> desde la barra de herramientas y use los rieles para conectar los dos puntos entre {w1} y {w2}.<br>
+<p>
+Lista de rieles:<br>
+{list}
+</p>
+<em>Consejo:</em> conecte de forma sencilla haciendo click en {w1} y luego en {w2}.<br><br>
+<p>
+<st>Conecte los rieles aqui:</st> {cbor}.
+</p>
+

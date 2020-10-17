@@ -1,0 +1,18 @@
+<br>
+Se requiere transportar <em>{good2}</em> desde el {cmi} hasta la {cba} en la Ciudad de <em>{cy1}</em>.<br><br>
+
+<em>[1]</em> Construya un tramo de rieles entre {w1} y {w2}.<br>
+<em>[2]</em> Coloque la <em>Cochera Ferroviaria</em> en: {way1}.<br>
+<em>[3]</em> Ahora debe comprar una locomotora, presione en la pestaña <em>Locomotoras</em> y seleccione un <em>{loc2}</em>.<br>
+<em>[4]</em> Seleccione <em>{wag}</em> vagones para <em>{good2}</em> <st>(no deben exceder de {tile} Casillas de Estación)</st> y presione <em>Enrutar</em>.<br><br>
+
+En la ventana <em>Enrutar</em> seleccione la estación en el {cmi} y coloque <em>Carga Mín.</em> en <em>100%</em>.<br>
+Ahora seleccione la estación en la {cba} y presione <em>Arrancar</em>.<br><br>
+
+<em>Consejo:</em> Use el filtro para mostrar solo los vehículos para <em>{good2}</em>.<br><br>
+
+Se avanza al siguiente paso cuando el {cba} reciba <em>{t_reach}t</em> de <em>{good2}</em>.<br><br>
+
+<em>Cantidad recibida:</em> <st>{reached}t</st>
+<br><br>
+

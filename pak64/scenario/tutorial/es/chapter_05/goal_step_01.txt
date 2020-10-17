@@ -1,0 +1,16 @@
+<br>
+<h1>Fabricas Electrificadas</h1>
+
+Algunas de las fabricas necesitan energia electrica para mejorar su producion/eficiencia, esto se logra colocando un transformador a cada fabrica/industria para luego conectarlo a una industria generadora de energia electrica.<br>
+No todas las industrias requieren energia electrica, esto se puede comprobar con el pequeño icono en forma de "rayo" que aparece en la ventana de las fabricas, este indica que la misma requiere de energia electrica para mejorar su produccion/eficiencia.<br><br>
+
+<em>En este capitulo vamos a electrificar las siguientes fabricas:</em><br>
+{f1}<br>
+{f2}<br>
+{f3}<br><br>
+
+<em>Tambien debe ser conectada la planta productora de electricidad:</em><br>
+{f4}
+<br><br>
+
+<st>Se avanza al siguiente paso</st> haciendo click en cualquiera de las fabricas de la lista.<br><br>

@@ -1,0 +1,7 @@
+<br>
+<br><br>
+{tx} Coloque los tranformadores en las fabricas:<br><br>
+
+{tran}
+<br>
+<st>Se avanza al siguiente paso</st> cuando las fabricas esten electrificadas.<br><br>

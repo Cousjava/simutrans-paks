@@ -1,0 +1,7 @@
+<br><br>
+
+{tx} En el menu de <em>"Herramientas Especiales de Construccion"</em> sleccione una de los <em>"Edificios de Extencion"</em> para correo y coloque uno en cada una de las siguientes posiciones:<br><br>
+
+{st}<br>
+
+<st>Se avanza al siguiente paso</st> cuando todos los edificios de extencion esten en su lugar.<br><br>

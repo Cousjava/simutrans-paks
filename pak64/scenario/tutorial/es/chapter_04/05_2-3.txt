@@ -1,0 +1,5 @@
+<br>
+Se requiere transportar <em>{good2}</em> desde {f3} hasta la {f4} para el consumidor final.<br><br>
+
+{tx} Construya un <em>Muelle</em> de mercancías en {dock}.<br><br>
+

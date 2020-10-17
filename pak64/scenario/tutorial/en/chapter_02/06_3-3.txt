@@ -1,0 +1,17 @@
+<p>
+Now that the bridge has been repaired, the city <em>{name}</em> needs a line with <em>[3]</em> buses in circulation to move tourism in from the dock under construction {st1}.
+</p>
+<p>
+{tx} Starting the <em>Buses</em>.
+</p>
+<p>
+<em>[1]</em> First buy a bus <em>{bus1}</em>.<br/>
+<em>[2]</em> If the line was created correctly, you can click on the <em>Serves line</em> filter and then select the line <em>"{line}"</em>, then click on the <em>Start</em> button.
+</p>
+<p>
+<em>Buses in circulation:</em> <st>{cir}/3</st>
+</p>
+<p>
+<st>Advances to the next step</st> when all vehicles are in circulation.
+</p>
+

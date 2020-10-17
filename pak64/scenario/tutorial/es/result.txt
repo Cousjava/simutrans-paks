@@ -1,0 +1,4 @@
+The chapter aims to reach {ratio_chapter}% .<br>
+<br>
+The chapter aims to reach {ratio_chapter}% .<br>
+<br>

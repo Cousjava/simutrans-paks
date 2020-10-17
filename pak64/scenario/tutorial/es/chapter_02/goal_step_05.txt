@@ -1,0 +1,7 @@
+<br>
+El puente que conectaba la Ciudad {name} con un pequeño distrito, recientemente fue demolido.<br> 
+La Ciudad {name} necesita que construyas un puente entre {bpos1} y {bpos2} para unirlos nuevamente.<br><br>
+
+Hay dos formas de lograr esto...<br>
+<em>[1] </em> Puedes hacer click izquierdo en cualquiera de las dos laderas.<br>
+<em>[2] </em> Mantenga el click izquierdo presionado y arrastre el puente de una ladera hacia la otra.<br><br>

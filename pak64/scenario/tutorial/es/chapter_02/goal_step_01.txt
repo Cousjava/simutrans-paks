@@ -1,0 +1,10 @@
+<br>
+La ciudad {name} necesita que le construyas una linea de autobuses.<br><br>
+<h1>Las Carreteras:</h1>
+Esta herramienta se puede usar arrastrando el mouse o haciendo clic de un punto a otro, también puede presionar la tecla [Ctrl] para construir caminos rectos. Existen varios tipos de carreteras, estas pueden variar su velocidad máxima desde 30km/h hasta 200km/h. Se cobra el mantenimiento de las carreteras y costo varia dependiendo del tipo de carretera. Es posible también electrificar las carreteras para permitir el paso de vehículos eléctricos.<br><br>
+
+Utilice la <em>Herramienta de Carreteras</em> para conectar los puntos entre  {t1} y {t2} o {t1} y {t3}.<br><br>
+
+<st>Se avanza al siguiente paso</st> cuando la carretera este lista.<br><br>
+
+

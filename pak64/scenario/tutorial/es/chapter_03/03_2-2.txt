@@ -1,0 +1,6 @@
+<br>
+Se requiere transportar productos agrícola <em>({good1})</em> desde la {f1} hasta el {f2} para la producción de harina de <em>({good2})</em>.<br><br>
+
+{tx} Construir una estación de mercancías ({tile} azulejos de largo) cerca de {f1}.<br><br>
+
+<st>Nota:</st> Las estaciones se encuentran en el menu de <em>"Ferrocarriles"</em> ubicado en la barra de herramientas.<br><br>

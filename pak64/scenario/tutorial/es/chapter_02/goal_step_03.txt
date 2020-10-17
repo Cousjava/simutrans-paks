@@ -1,0 +1,12 @@
+<br>
+El siguiente paso es configurar la linea de buses para la Ciudad {name}.<br><br>
+<h1>Las Paradas de Autobús:</h1>
+Para que el autobús pueda cargar pasajeros es necesario que las paradas estén cerca de algún Edificio, Atracción Turística o Fabrica. Las paradas tienen una capacidad de almacenamiento de 32, 64 o mas, en caso de saturarse se le cobrara una penalización. También es posible combinarlas para aumentar su capacidad de carga junto con su cobertura. También se puede extender el tipo de carga usando edificios de extensión o estaciones que acepten distintos tipos de carga.<br><br>
+
+Es necesario construir paradas de autobús en cada uno de los puntos marcados en la ciudad:<br>
+{list}<br><br>
+
+<em>Nota:</em> Las paradas tienen una cobertura de 5x5, por lo tanto es recomendable colocar las paradas a una distancia de 4 baldosa (cuadros).<br><br>
+
+<st>Se avanza al siguiente paso</st> cuando todas las <em>Paradas</em> esté en su lugar.<br><br>
+

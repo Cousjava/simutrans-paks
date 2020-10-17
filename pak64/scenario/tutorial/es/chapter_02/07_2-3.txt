@@ -1,0 +1,5 @@
+<br>
+Ahora que el puente fue reparado, la ciudad <em>{name}</em> necesita una linea de autobús que conecte con La ciudad <em>{name2}</em>.<br><br>
+{tx} Use la <em>Herramienta de Carreteras</em> para conectar los puntos entre {pt1} y {pt2}.<br><br>
+
+<st>Se avanza al siguiente paso</st> cuando el autobús llegue a la nueva parada en <em>{name2}</em>.<br><br>

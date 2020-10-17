@@ -1,0 +1,16 @@
+<br>
+Se requiere transportar productos agrícola <em>({good1})</em> desde la {cfar} hasta el {cmi} para la producción de harina de <em>({good2})</em>.<br><br>
+
+Ahora debe elegir un vehículo adecuado para transportar el trigo hasta el {cmi}.<br>
+<em>[1]</em> Primero elija una locomotora <em>{loc1}</em>.<br>
+<em>[2]</em> Ahora seleccione <em>{wag}</em> vagones para {good1} <st>(no deben exceder de {tile} Casillas de Estación)</st>.<br>
+<em>[3]</em> Presione <em>Enrutar</em> y seleccione la estación de la {cfar} y coloque <em>Carg. Min.</em> en 100%.<br>
+<em>[4]</em> Seleccione la estación en el {cmi} y presione <em>Arrancar</em>.<br><br>
+
+<em>Consejo:</em> Puede usar el <em>Filtro</em> para mostrar solo los vehículos de <em>{good1}s</em>.<br><br>
+
+Se avanza al siguiente paso cuando el {cmi} reciba <em>{t_reach}t</em> de <em>{good1}s</em>.<br><br>
+
+<em>Cantidad recibida:</em> <st>{reached}t</st>
+<br><br>
+

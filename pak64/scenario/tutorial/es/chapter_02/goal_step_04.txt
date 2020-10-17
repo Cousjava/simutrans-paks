@@ -1,0 +1,14 @@
+<br>
+Ahora que las paradas están colocadas, necesitas comprar un <em>Autobús</em> para iniciar el servicio de transporte.<br><br>
+
+<em>[1]</em> Usando la herramienta de <em>Exploración (tecla [a])</em> haga clic en el <em>Deposito de Carretera</em>{pos} y en la ventana del deposito elija el <em>Autobús {bus1}</em>.<br>
+<em>[2]</em> Para configurar la ruta del vehículo, primero debe hacer clic en el boton <em>Enrutar</em>.<br>
+<em>[3]</em> Con la ventana <em>Enrutar</em> abierta, ahora debes seleccionar en orden todas la paradas de la ciudad para añadirlas a la lista:<br>
+{list}<br>
+<em>[4]</em> Después de añadir las 7 paradas, seleccione la parada <em>{stnam}</em> de la lista y configure de la siguiente forma:<br>
+<em>--> [a]</em> La <em>Carga (Mín)</em> al <em>100%</em>.<br>
+<em>--> [b]</em> <em>Esperar (Meses)</em> a <em>1/16</em>.<br>
+<em>[5]</em> Ahora haga clic en el botón <em>Arrancar</em> para que el vehículo salga del deposito.<br><br>
+
+<st>Se avanza al siguiente paso</st> cuando el autobús llegue a la primera parada de la lista.<br><br>
+

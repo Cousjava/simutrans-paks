@@ -1,0 +1,15 @@
+<br>
+Se requiere transportar <em>pasajeros</em> hacia las zonas turisticas{tur}.<br><br>
+
+Use la herramienta de <em>exploración</em> en el <em>Astillero</em> {dep2} y en la pestaña <em>Ferrys</em> compre un <em>{ship}</em> .<br><br>
+
+Ahora presione enrutar y seleccione las paradas:<br>
+{list}
+<p>
+Despues de agregar todas las estaciones, seleccione la estacion <em>{stnam}</em> en la lista y configure de la siguiente manera:<br>
+<em>--> [a]</em> La <em>Carga (Mín)</em> al <em>100%</em>.<br>
+<em>--> [b]</em> <em>Esperar (Meses)</em> a <em>1/1</em>.<br>
+</p>
+Por ultimo presione el botón <em>Arrancar</em>.<br><br>
+<br>
+

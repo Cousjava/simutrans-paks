@@ -1,0 +1,27 @@
+En este capitulo los <em>Barcos</em> son protagonistas y con ellos vamos a transportar mercancías, pasajeros y correo.<br><br>
+<p>
+{scr}
+</p>
+{txtst_01}Paso A</em> - Un Vistazo a las Fabricas</a><br>
+{step_01}
+
+{txtst_02}Paso B</em> - Colocando los Muelles</a><br>
+{step_02}
+
+{txtst_03}Paso C</em> - Colocando Astillero</a><br>
+{step_03}
+
+{txtst_04}Paso D</em> - Conectando a los Proveedores</a><br>
+{step_04}
+
+{txtst_05}Paso E</em> - Conectando al Consumidor</a><br>
+{step_05}
+
+{txtst_06}Paso F</em> - Los Muelles de Pasajeros</a><br>
+{step_06}
+
+{txtst_07}Paso G</em> - Conectando el Turismo</a><br>
+{step_07}
+
+<br>
+

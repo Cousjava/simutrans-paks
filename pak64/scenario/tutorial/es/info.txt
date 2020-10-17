@@ -1,0 +1,17 @@
+<br>
+<h1>Simutrans Tutorial</h1>
+<br>
+En este tutorial, se explican los primeros pasos en la creación de su imperio de transporte en Simutrans. La atención se centra en las acciones necesarias alrededor de las cadenas de transporte en Simutrans.<br>
+<br>
+El tutorial se compone de varias Capitulos cada uno con un numero de Pasos incluidos en orden para completar el capitulo.<br>
+<br>
+Las preocupaciones económicas sólo están cubiertos brevemente en el Tutorial<br>
+<br>
+{list_of_chapters}
+<br>
+Además se puede encontrar ayuda pulsando la tecla "F1" en lo que respecta a las diversas herramientas, funciones, y la lógica de Simutrans. <br>
+<br>
+{first_link}<br>
+<br>
+<st>Nota:</st> En algunos casos puede tardar hasta 15 segundos de realizar las acciones necesarias, antes de que el tutorial se actualizará para el siguiente paso.
+<br>

@@ -1,0 +1,5 @@
+<br>
+Se requiere transportar <em>{good2}</em> desde {f3} hasta la {f4} para el consumidor final.<br><br>
+
+{tx} Usando la herramienta de canal acuático, conecte los puntos entre {w1} y {w2}.<br><br>
+

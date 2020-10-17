@@ -1,0 +1,20 @@
+<br>
+Conectado la ciudad {cit2} con el Aeropuerto {sch2} usando 5 buses.<br><br>
+
+<h1>El Deposito de Carretera</h1><br>
+
+Debes ir la la ubicacion de la ciudad {cit2} y ubicar la posicion {dep3}, luego construya el deposito alli.<br><br>
+
+<h1>Los Autobuses</h1>
+
+Haga clic en el Deposito de carretera {dep3} y seleccione un autobús <em>{bus2}</em> y presione <em>Enrutar</em>.<br><br>
+
+<em>[1]</em> Seleccione todas las paradas en orden:<br>
+{stx}<br>
+<em>[2]</em> Después de añadir las paradas, seleccione la parada <em>{stnam}</em> de la lista y configure de la siguiente forma:<br>
+<em>--> [a]</em> La <em>Carga (Mín)</em> al <em>100%</em>.<br>
+<em>--> [b]</em> <em>Esperar (Meses)</em> a <em>1/16</em>.<br>
+<em>[3]</em> Ahora haga clic en el botón <em>Arrancar</em> para que el vehículo salga del deposito.<br><br>
+
+<st>Se avanza al siguiente paso</st> cuando el autobús slaga del deposito/cochera.<br><br>
+

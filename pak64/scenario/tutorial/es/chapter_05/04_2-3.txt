@@ -1,0 +1,16 @@
+<br><br>
+
+{tx} En el deposito {dep1}, seleccione un camion <em>{veh1}</em> para correo y presione <em>Enrutar</em>.<br><br>
+
+<em>Ahora seleccione las paradas:</em><br>
+<em>[1]</em> {st1}<br>
+<em>--> [a]</em> La <em>Carga (Mín)</em> al <em>100%</em>.<br>
+<em>--> [b]</em> <em>Esperar (Meses)</em> a <em>1/16</em>.<br>
+<em>[2]</em> {st2}<br>
+<em>[3]</em> {st3}<br>
+<em>[4]</em> {st4}<br>
+<em>[5]</em> {st5}<br>
+<em>[6]</em> {st6}<br>
+<em>[7]</em> {st7}<br><br>
+
+<st>Se avanza al siguiente paso</st> cuando todos los edificios de extencion esten en su lugar.<br><br>

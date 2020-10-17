@@ -1,0 +1,12 @@
+<br>
+El <em>Servicio Publico</em> necesita que completes la red ferroviaria que recorre las ciudades de:<br>
+<em>{cy2}</em> {co2}<br>
+<em>{cy1}</em> {co1}<br>
+<em>{cy3}</em> {co3}<br>
+<em>{cy4}</em> {co4}<br><br>
+
+{tx} Use la herramienta <em>Catenary</em> para electrificar todos los rieles.<br><br>
+
+<st>Rieles sin electrificar:</st> {cbor}<br><br>
+
+

@@ -1,0 +1,17 @@
+
+{txtst_01}Paso A</em> - Los buse de la ciudad I</a><br>
+{step_01}
+
+{txtst_02}paso B</em> - Los buse de la ciudad II</a><br>
+{step_02}
+
+{txtst_03}paso C</em> - Los buse de la ciudad III</a><br>
+{step_03}
+
+{txtst_04}paso D</em> - Los buse de la ciudad IV</a><br>
+{step_04}
+
+{txtst_05}Paso E</em> - Final de Escenario</a><br>
+{step_05}
+
+<br>

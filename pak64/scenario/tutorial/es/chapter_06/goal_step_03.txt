@@ -1,0 +1,15 @@
+<br>
+Conectado la ciudad {cit1} con el Aeropuerto {sch1} usando 2 autobuses.<br><br>
+
+Haga clic en el Deposito de carretera {dep2} y seleccione un autobús <em>{bus1}</em> y presione <em>Enrutar</em>.<br><br>
+
+<em>Ahora seleccione las paradas:</em><br>
+<em>[1]</em> Seleccione la parada {stop1} y <st>deje todo como esta</st>.<em><br>
+<em>[2]</em> Seleccione la parada {stop2} y configure de la siguiente forma:<br>
+<em>--> [a]</em> La <em>Carga (Mín)</em> al <em>100%</em>.<br>
+<em>--> [b]</em> <em>Esperar (Meses)</em> a <em>1/16</em>.<br><br>
+
+Use el boton <em>[Copiar]</em> para conseguir los 2 autobuses necesarios.<br><br>
+
+<st>Se avanza al siguiente paso</st> cuando todos los autobuses salgan del deposito/cochera.<br><br>
+

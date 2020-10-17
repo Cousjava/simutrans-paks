@@ -1,0 +1,7 @@
+<br><br>
+
+{tx} En el menu de <em>"Herramientas Especiales de Construccion"</em> use la herramienta de <em>"Cableado de Alto Voltaje"</em> para conectar todas las fabricas a una red electrica proveniente de la {f4}:<br><br>
+
+{tran}<br>
+
+<st>Se avanza al siguiente paso</st> cuando las fabricas esten electrificadas.<br><br>

@@ -1,0 +1,14 @@
+<br>
+La ciudad {name} necesita que le construyas una linea de autobuses.<br>
+<br>
+<h1>Los Depósitos:</h1>
+Solo puede construir un deposito sobre una camino existente y a los bordes de este (callejón sin salida). Desde los depósitos es posible: comprar, vender, enrutar y arrancar los vehículos. También existe una opción que permite usar vehículos eléctricos, pero esta solo se muestra si el camino bajo el deposito está electrificado.<br><br>
+
+Coloque un <em>Deposito de Carretera</em> en {pos}. Estos se consiguen en el menú <em>"Herramientas de carreteras"</em>.<br>
+<br>
+
+Debe usar el <em>Deposito de Carretera</em> para comprar los vehículos que se usaran en tu linea de autobuses.<br><br>
+
+<st>Se avanza al siguiente paso</st> cuando el <em>Deposito de Carretera</em> {pos} esté en su lugar.<br><br>
+
+

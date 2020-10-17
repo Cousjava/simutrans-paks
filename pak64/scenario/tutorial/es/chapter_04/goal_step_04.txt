@@ -1,0 +1,22 @@
+<br>
+Se requiere transportar hidrocarburos <em>({good1})</em> desde {f1} hasta el {f3} para la producción de <em>({good2})</em>.<br><br>
+
+Conectando al proveedor {f1}.<br><br>
+
+Se necesitan {all_cov} barcos para surtir de <em>petroleo</em> a la {f3}.<br><br>
+
+<em>[1]</em> En la ventana del <em>Astillero</em> haga clic en la pestaña <em>Barcos</em>, luego seleccione el <em>{sh}</em>.<br>
+<em>[2]</em> Ahora debe configurar una linea <em>(Sirve en línea)</em>, seleccione <em>Crear línea nueva</em>.<br>
+<em>[3]</em> Seleccione el muelle en {f1} y coloque la <em>Carga Mín.</em> en <em>100%</em><br>
+<em>[4]</em> Seleccione el muelle en {f3} y cierre la ventana <em>Enrutar<em><br>
+<em>[5]</em> Presione el botón <em>Copiar vehículo</em> hasta llegar a {all_cov} convoys/barcos.<br>
+<em>[6]</em> Por ultimo presione el botón <em>Arrancar<em>.<br><br>
+
+<em>Consejo:</em> Presione <em>[Ctrl]</em> + clic en botón <em>[Arrancar]</em> para que todos los vehículos salgan del deposito.<br><br>
+
+<st>Se avanza al siguiente paso</st> cuando la {f3} reciba <em>1000m³</em> de petroleo y todos los barcos estén en circulación.<br><br>
+
+<em>Barcos en circulación:</em> <st>{cir}/{all_cov}</st><br>
+
+
+

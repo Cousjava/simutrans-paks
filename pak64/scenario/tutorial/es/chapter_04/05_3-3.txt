@@ -1,0 +1,19 @@
+<br>
+Se requiere transportar <em>{good2}</em> desde {f3} hasta la {f4} para el consumidor final.<br><br>
+
+{tx} Conectando al consumidor {f4}.<br><br>
+
+Se necesitan {all_cov} barcos para suministrar <em>{good2}</em> a la {f4}.<br><br>
+
+<em>[1]</em> En la ventana del <em>Astillero</em> haga clic en la pestaña <em>Barcos</em>, luego seleccione el <em>{sh}</em>.<br>
+<em>[2]</em> Ahora debe configurar una linea <em>(Sirve en línea)</em>, seleccione <em>Crear línea nueva</em>.<br>
+<em>[3]</em> Seleccione el muelle en {f3} y coloque la <em>Carga Mín.</em> en <em>100%</em><br>
+<em>[4]</em> Seleccione el muelle en {f4} y cierre la ventana <em>Enrutar<em><br>
+<em>[5]</em> Presione el botón <em>Copiar vehículo</em> hasta llegar a {all_cov} convoys/barcos.<br>
+<em>[6]</em> Por ultimo presione el botón <em>Arrancar<em>.<br><br>
+
+<em>Consejo:</em> Presione <em>[Ctrl]</em> + clic en botón <em>[Arrancar]</em> para que todos los vehículos salgan del deposito.<br><br>
+
+<em>Barcos en circulación:</em> <st>{cir}/{all_cov}</st><br>
+
+

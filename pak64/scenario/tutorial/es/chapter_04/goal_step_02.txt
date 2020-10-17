@@ -1,0 +1,8 @@
+<br>
+Se requiere transportar hidrocarburos <em>({good1})</em> desde {f1} hasta el {f3} para la producción de <em>({good2})</em>.<br><br>
+
+Coloque los <em>Muelles</em> de <em>mercancías</em> en las posiciones idicadas:<br>
+{dock}<br><br>
+
+<st>Se avanza al siguiente paso</st> cuando todos los muelles estén listos.<br><br>
+

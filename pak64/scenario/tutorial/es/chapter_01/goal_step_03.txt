@@ -1,0 +1,12 @@
+<br>
+Ahora que ya sabes como moverte por el mapa, el siguiente paso es obtener información de objetos en el mapa.<br><br>
+
+<h1>Herramienta de Exploracion</h1>
+Esta es la herramienta principal del juego, es completamente libre para todos los jugadores y permite mostrar la ventana de informacion sobre cualquier objeto en el mapa. Tambien es seleccionada por defecto, si no lo esta puede ser seleccionada desde la barra de menú (el icono de la lupa) o presionando la tecla "A".<br>
+En la esquina inferior derecha de la pantalla se muestra las coordenadas o posicion (x,y,z) del cursor.<br><br>
+
+Primero haga click en {pos} <em>(la estatua del legendario Issac)</em> usando la herramienta de exploración. Después de hacer click en la estatua, debes cerrar la ventana de información haciendo click en "x" en la parte superior o presione "[Escape]" la ultima ventana abierta o presione "[Backspace]" para cerrar todas las ventanas.<br><br>
+
+Por ultimo use la <em>'{tool1}'</em> en la {buld_name} y cierre la ventan de informacion.<br><br>
+
+<st>Para avanzar<st> al siguente paso haga clic en la {pos} y luego en {buld_name}.<br>

@@ -1,0 +1,4 @@
+<br>
+Se requiere transportar hidrocarburos <em>({good1})</em> desde {f1} hasta el {f3} para la producción de <em>({good2})</em>.<br><br>
+
+{tx} Use la Herramienta de exploración sobre la {f3} para mostrar los detalles.<br><br>

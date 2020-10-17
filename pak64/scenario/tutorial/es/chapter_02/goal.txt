@@ -1,0 +1,26 @@
+La ciudad {name} necesita que le construyas un linea de autobuses<br>
+{scr}<br>
+{txtst_01}Paso A</em> - Construyendo un Tramo de Carretera</a><br>
+{step_01}
+
+{txtst_02}Paso B</em> - Construyendo un Deposito de Carretera</a><br>
+{step_02}
+
+{txtst_03}Paso C</em> - Colocando Paradas de Autobuses</a><br>
+{step_03}
+
+{txtst_04}Paso D</em> - Arrancado el Primer Autobús</a><br>
+{step_04}
+
+{txtst_05}Paso E</em> - Construyendo un Puente</a><br><em>
+{step_05}
+
+{txtst_06}Paso F</em> - Conectando el Muelle en Construccion</a><br>
+{step_06}
+
+{txtst_07}Paso G</em> - Conectando las Ciudades</a><br>
+{step_07}
+
+{txtst_08}Paso H</em> - Creando Paradas Públicas</a><br>
+{step_08}
+<br>

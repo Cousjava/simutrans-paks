@@ -1,0 +1,13 @@
+<br>
+Se recomienda activar las cuadriculas para este tutorial, use la tecla <em>[#]</em>.
+También es muy recomendable ocultar los arboles, entre en la opciones de pantalla o presione la tecla <em>[%]</em>.<br><br>
+
+Puedes hacer <em>zoom</em> usando la rueda del ratón o usando las teclas <em>[Page Up/Page Down Keys]</em>.<br><br>
+
+Puedes <em>moverse</em> atravez de el mapa manteniendo presionado el <em>click derecho/izquierdo</em> del ratón, usando las flechas del teclado o con el teclado numérico.<br><br>
+
+Puedes <em>rotar</em> el mapa presionando <em>"[Shift]+r" o "Mayus [R]"</em>.<br><br>
+
+Practique haciendo zoom+/zoom- y moviéndose atravez del mapa.<br><br>
+
+<st>Para avanzar al siguiente paso</st>, debes <em>rotar</em> el mapa.<br><br>

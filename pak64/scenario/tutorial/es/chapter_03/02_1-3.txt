@@ -1,0 +1,6 @@
+<br>
+Se requiere transportar productos agrícola <em>({good1})</em> desde la {f1} hasta el {f2} para la producción de harina de <em>({good2})</em>.<br><br>
+
+{tx} Usando la herramienta de <em>"Rieles"</em> construya una via de tren que conecte los dos puntos entre {w1} y {w2}.<br><br>
+
+<st>Nota:</st> Los rieles se encuentran en el menu de <em>"Ferrocarriles"</em> ubicado en la barra de herramientas.<br><br>
