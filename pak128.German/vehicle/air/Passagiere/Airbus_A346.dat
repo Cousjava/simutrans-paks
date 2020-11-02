@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Airbus_A340-600
@@ -12,15 +11,16 @@ intro_month=1
 retire_year=2032
 retire_month=12
 waytype=air
-cost=817020000
-runningcost=1195
+cost=1118730000
+runningcost=1001
+fixed_cost=125858
 freight=Passagiere
-payload=306
+payload=419
 engine_type=diesel
-power=36000
-gear=150
+power=199200
+gear=100
 speed=890
-weight=178
+weight=330
 length=7
 sound=5
 EmptyImage[W]=Airbus_A346.0.0

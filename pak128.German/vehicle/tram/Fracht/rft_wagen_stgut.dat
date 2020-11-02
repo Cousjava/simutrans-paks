@@ -9,7 +9,8 @@ retire_year=1996
 retire_month=12
 waytype=tram_track
 cost=2170000
-runningcost=71
+runningcost=43
+fixed_cost=472
 freight=Plastik
 payload=14
 speed=50
@@ -40,4 +41,3 @@ FreightImage[0][E]=rft.3.4
 FreightImage[0][SE]=rft.3.5
 FreightImage[0][S]=rft.3.6
 FreightImage[0][SW]=rft.3.7
-#_EO_

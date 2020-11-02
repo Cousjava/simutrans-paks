@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 15-05-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Drehgestell-Flachwagen Roos-t645
@@ -10,7 +9,8 @@ copyright=pumuckl999
 intro_year=1999
 intro_month=1
 cost=7455000
-runningcost=123
+runningcost=75
+fixed_cost=1591
 waytype=track
 freight=Holz
 payload=40

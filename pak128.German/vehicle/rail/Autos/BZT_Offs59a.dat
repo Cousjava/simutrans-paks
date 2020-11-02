@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu:2008
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Offs59a_1958
@@ -10,7 +9,8 @@ copyright=TonyBzt
 intro_year=1958
 intro_month=1
 cost=7450000
-runningcost=133
+runningcost=86
+fixed_cost=1864
 waytype=track
 freight=Autos
 payload=8

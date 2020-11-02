@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=VT75
@@ -10,8 +10,9 @@ intro_year=1932
 intro_month=1
 retire_year=1962
 retire_month=12
-cost=5532000
-runningcost=124
+cost=5280000
+runningcost=81
+fixed_cost=1380
 waytype=track
 engine_type=diesel
 smoke=smoke_diesel
@@ -19,12 +20,11 @@ freight=Passagiere
 payload=42
 speed=70
 weight=17.7
-power=135
+power=99
 sound=-1
 length=8
-Constraint[Prev][0]=VB75
-Constraint[Prev][1]=VT75
-Constraint[Prev][2]=none
+Constraint[Prev][0]=VT75
+Constraint[Prev][1]=none
 Constraint[Next][0]=VB75
 Constraint[Next][1]=VT75
 Constraint[Next][2]=none
@@ -44,20 +44,19 @@ intro_year=1932
 intro_month=1
 retire_year=1962
 retire_month=12
-cost=4510000
-runningcost=113
+cost=4720000
+runningcost=75
+fixed_cost=1200
 waytype=track
 freight=Passagiere
-payload=42
+payload=44
 speed=70
 weight=10
 length=8
 Constraint[Prev][0]=VB75
 Constraint[Prev][1]=VT75
-Constraint[Prev][2]=none
 Constraint[Next][0]=VB75
-Constraint[Next][1]=VT75
-Constraint[Next][2]=none
+Constraint[Next][1]=none
 EmptyImage[S]=VT75.1.0
 EmptyImage[E]=VT75.1.1
 EmptyImage[SE]=VT75.1.2

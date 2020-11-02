@@ -9,7 +9,8 @@ retire_year=1944
 retire_month=12
 waytype=tram_track
 cost=2212000
-runningcost=176
+runningcost=106
+fixed_cost=476
 freight=Post
 payload=70
 engine_type=electric
@@ -42,4 +43,3 @@ EmptyImage[NE]=atwp.0.3
 #freightimage[0][SE]=
 #freightimage[0][NE]=
 #freightimage[0][NW]=
-#_EO_

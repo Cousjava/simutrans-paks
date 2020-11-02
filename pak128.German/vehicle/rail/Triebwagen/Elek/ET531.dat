@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 16-10-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Preussischer_ET531
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1930
 retire_month=12
 cost=12397000
-runningcost=385
+runningcost=241
+fixed_cost=2868
 waytype=track
 freight=Passagiere
 engine_type=electric

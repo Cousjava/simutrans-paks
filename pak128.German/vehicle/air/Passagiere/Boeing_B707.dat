@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Boeing_B707
@@ -13,14 +12,15 @@ retire_year=1984
 retire_month=12
 waytype=air
 cost=397824000
-runningcost=779
+runningcost=752
+fixed_cost=54713
 freight=Passagiere
 payload=148
 engine_type=diesel
-power=13500
-gear=150
+power=56000
+gear=100
 speed=896
-weight=67
+weight=120
 length=5
 sound=5
 EmptyImage[W]=Boeing_B707.0.0

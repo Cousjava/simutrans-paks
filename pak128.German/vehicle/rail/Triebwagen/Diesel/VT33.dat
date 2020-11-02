@@ -1,23 +1,24 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=VT33
 copyright=TonyBzt
 intro_year=1935
 intro_month=2
-cost=14750000
-runningcost=224
+cost=13002000
+runningcost=157
+fixed_cost=3730
 waytype=track
 engine_type=diesel
 smoke=smoke_diesel
 freight=Passagiere
-payload=52
-speed=120
-weight=47
-power=410
+payload=56
+speed=110
+weight=44
+power=302
 gear=140
 sound=-1
 length=12
@@ -38,16 +39,18 @@ EmptyImage[NE]=VT33.0.7
 -----------------------------
 obj=vehicle
 name=VB140
+# VB140 ist falsch das ist ein VS145-008
 copyright=TonyBzt
 intro_year=1935
 intro_month=2
-cost=9660000
-runningcost=163
+cost=11430000
+runningcost=129
+fixed_cost=3015
 waytype=track
 freight=Passagiere
-payload=52
-speed=120
-weight=30
+payload=68
+speed=110
+weight=21
 length=12
 Constraint[Prev][0]=VB140
 Constraint[Prev][1]=VT33

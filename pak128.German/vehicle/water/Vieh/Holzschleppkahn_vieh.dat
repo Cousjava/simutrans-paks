@@ -1,18 +1,17 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Schiffe
-#    Neu:
-#	Letzte Bearbeitug: 11-08-2017 Makie
 ---------------------------------
 obj=vehicle
 name=Holzschleppkahn_Vieh
 copyright=Pumuckl999
 intro_year=1800
 intro_month=1
-retire_year=1919
-retire_month=12
+retire_year=1920
+retire_month=1
 cost=2250000
-runningcost=157
+runningcost=98
+fixed_cost=678
 waytype=water
 freight=Vieh
 speed=25

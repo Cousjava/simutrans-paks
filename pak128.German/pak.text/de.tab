@@ -9,7 +9,7 @@
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                             Font: Prop-Latin1.bdf                            #
-#                           Date Created: 12.06 2020                           #
+#                           Date Created: 20.10 2020                           #
 #                                                                              #
 ################################################################################
 #____________________________bridge - monorail_track____________________________
@@ -79,7 +79,7 @@ Leeres Gebäude
 COM_ALL_1930_A_03
 Baustelle Tiefbau
 COM_ALL_1937_A_12
-Haus der Wissenschaften Braunschweig
+Haus der Wissenschaften Braunschweig\n\nDie Kuppel beherbergt die Volkssternwarte. Die Architektur nimmt Bezug auf norddeutsche Sakralbauten der Backsteingotik und will NS Ideologie geprägt, monumental wirken. Sie gilt als Beispiel späten Backsteinexpressionismus. Nach dem Krieg wurde die Lehrerausbildung unter dem neuen Namen "Kant-Hochschule" fortgesetzt. Im Volk hieß sie aufgrund der Gebäudeform bald die "Hochkantschule". 
 COM_ALL_1950_Baustelle_Animation_02
 Hier wird hart gearbeitet, aber im Winter ruht die Baustelle.
 COM_ALL_1951_A_02
@@ -100,10 +100,16 @@ COM_ALL_1960_A_45
 Neue Mainzer Str 1 Fankfurt am Main
 COM_ALL_1960_A_47
 Neue Mainzer Str 1 Fankfurt am Main groß
+COM_ALL_1961_A_32
+Kruppstraße 5\n\n in Essen
 COM_ALL_1962_B_04
 Parkplatz - Die Imbissbude serviert die leckersten Bratwürste der ganzen Stadt. Besucher von Nah und Fern kommen deshalb zu einem Imbiss hier her.
 COM_ALL_1963_A_20
 NarvaTurm Berlin
+COM_ALL_1963_A_44
+Bayer-Hochhaus\n\n in Leverkusen
+COM_ALL_1967_A_34
+Postbank-Hochhaus\n\n in Essen
 COM_ALL_1970_A_04
 Zeltplatzkino Markgrafenheide
 COM_ALL_1970_A_34
@@ -112,10 +118,18 @@ COM_ALL_1970_A_48
 Jentower in Jena
 COM_ALL_1970_B_00
 Zeltplatz
+COM_ALL_1972_A_48
+City-Hochhaus Leipzig
 COM_ALL_1973_A_14
 Kölnische Straße 4x Kassel 
+COM_ALL_1973_A_38
+Radisson Blu Hotel\n\n in Hamburg. Das sind gestapelte Bretter, äh gestapelte Betonplatten, Verzeihung es sind gestapelte Betten.
+COM_ALL_1974_A_26
+Ruby Tower\n\n Lyoner Straße 40 in Frankfurt. Der frühere Sitz des Hotelkonzerns Steigenberger, wurde inzwischen zum "Ruby Tower" genannten Wohnhochhaus umgebaut
 COM_ALL_1980_A_36
 DLF Funkhaus Köln
+COM_ALL_1980_A_42
+Steglitzer Kreisel\n\n in Berlin
 COM_ALL_1980_A_48
 Funkhaus am Raderberggürtel in Köln\n\nHier arbeiten die Bewohner des Papageienhauses.
 COM_ALL_1980_Baustelle_Animation_02
@@ -138,6 +152,8 @@ COM_ALL_1997_A_48
 Commerzbank Tower \n\nBis 2003 war der 1997 vollendete Commerzbank Tower in Frankfurt/Main das höchste Hochhaus Deutschlands.
 COM_ALL_1998_A_18
 TwinTower Berlin 
+COM_ALL_1999_A_30
+RellingHaus II\n\n in Essen
 COM_ALL_2000_A_22
 Mediatower Düsseldorf
 COM_ALL_2000_A_24
@@ -154,10 +170,18 @@ COM_ALL_2000_A_46
 Business Tower Nürnberg
 COM_ALL_2001_A_38
 KölnTurm            \n\nSteht in irgendeiner Großstadt am Rhein und stellt dort seit 2001 das höchste Bürogebäude der Stadt dar.
+COM_ALL_2001_A_46
+ARAG-Tower\n\n in Düsseldorf
 COM_ALL_2001_L48_A_01
 Euro-Skulptur\n\nSie könnte Ikone des Mammon heißen.
+COM_ALL_2003_A_28
+Channel Tower\n\n in Hamburg
+COM_ALL_2003_A_40
+IBC Frankfurt
 COM_ALL_2005_A_10
 Kunstmuseum Stuttgart
+COM_ALL_2007_A_36
+SV-Hochhaus\n\n in München. Es kann eine Firma noch so profitabel sein, das Management kann jedes Unternehmen an die Wand fahren. Was macht man dann, wenn man pleite ist? Wenn man sich mit nutzlosen Übernahmen übernommen hat? Wenn man während dem Boom Schulden statt Gewinnrücklagen gebildet hat? Man verkauft die wertvollen Grundstück und Gebäude in teurer zentraler Lage und sagt zur Stadt: entweder dürfen wir auf dieser Wiese am Stadtrand bauen, oder wir gehen pleite. Und so entstand diese Haus auf der grünen Wiese. Man hat es nach Fertigstellung sofort verkauft und zurück gemietet. Das Geld reichte trotzdem nicht, so mussten Finanzinvestoren mit viel Geld her.   
 COM_ALL_2007_L48_A_01
 Braune Schnecke\n\n steht in München im Bavariapark vor der Verkehrsabteilung des Deutschen Museums. Sie nimmt ironisch Bezug auf das Verkehrsmuseum und dem Traum von Geschwindigkeit. Sie verkörpert aber auch mit ihrem tragbaren Haus die ewige Sehnsucht nach unbegrenzter Mobilität, bei gleichzeitigem Schutz vor dem Fremden. Das ist es, was das Auto so beliebt macht.
 COM_ALL_2010_A_10
@@ -189,9 +213,9 @@ In der Eisdiele trifft sich im Sommer die Jugend um die selbst gemachten Eisspez
 COM_ALP_1970_A_04
 Asiatisches Restaurant mit Spezialitäten aus Fernost.
 COM_ALP_1980_A_17
-Bank-Filiale
+Bank-Filiale\n\nNicht so wie in anderen Gegenden, versucht sich die Filiale hier, den lokalen Baugepflogenheiten anzupassen und sich harmonisch in das Dorf zu integrieren.   
 COM_ALP_1980_A_24
-Friseur & Kosmetikstudio
+Eisdiele\n\nWanderer und Bergsteiger bekommen hier eine süße Abkühlung nach der Rückkehr vom anstrengenden Gipfel. Die Lauflage des Ladens ist günstig, hier an der Hauptstraße nahe des Bahnhofs. Nur Regenwetter verdirbt die Laune und das Eis.
 COM_ALP_1981_A_24
 Gesundheitszentrum\n\nIm ersten Stock haben sich ein Orthopäde und ein Heilgymnastiker niedergelassen. Im EG findet man dazu passend ein Orthopädie Fachgeschäft.
 COM_ALP_1982_A_24
@@ -217,11 +241,11 @@ Das Juwelier und Schmuckgeschäft "Golden Glanz" führt die edelsten und feinsten 
 COM_AVL_1921_A_11
 Der eingetragene Meisterbetrieb Pinselschwung mbH, ist bekannt für seine günstigen und sauberen Innenraum & Fassadenanstriche.
 COM_AVL_1950_A_12
-Plaerrerhochhaus Nürnberg klein
+Plaerrerhochhaus Nürnberg klein\n\nVon hier werden die weit verzweigten Netze der Stadtwerke verwaltet. Auch in kleinerer Form stellt dieses Bauwerk die herausragendes Architektur der 1950er Jahre dar. 
 COM_AVL_1950_A_14
-Plaerrerhochhaus Nürnberg
+Plärrerhochhaus Nürnberg\n\nVon hier werden die weit verzweigten Netze der Stadtwerke verwaltet. Als herausragendes architektonisches Bauwerk der 1950er Jahre, steht das Haus seit 1988 unter Denkmalschutz. 
 COM_AVL_1960_A_24
-Hotel Arosa Essen rot
+Hotel Arosa Essen rot\n\nDie Betten sind komfortabel. Die Zimmer sind preiswert. Die Lage ist stadtnah und verkehrsgünstig, das Hotel effizient bietet alles was der Geschäftsmann auf seinen Reisen braucht. Nur die Straßenkreuzung unmittelbar vor der Fassade ist etwas laut. 
 COM_AVL_1962_A_04
 Die Lemuria Offsetdruckerei fertigt vom Flyer bis zum Wandplakat alles was der Auftraggeber seiner Kundschaft mitteilen möchte.
 COM_AVL_1968_A_04
@@ -337,7 +361,7 @@ Fachwerkhaus Weinschenke
 COM_MGB_1954_A_18
 D 20 Club & Disco. Nirgendwo gibt es heißere Girls und Coolere Drinks.
 COM_MGB_1960_A_24
-Hotel Arosa Essen weiß
+Hotel Arosa Essen weiß\n\nDie Betten sind komfortabel. Die Zimmer sind preiswert. Die Lage ist stadtnah und verkehrsgünstig, das Hotel effizient bietet alles was der Geschäftsmann auf seinen Reisen braucht. Nur die Straße unmittelbar vor der Fassade ist etwas laut. Mit dem Auto anreisen sollte man besser nicht, es gibt nur wenige Parkplätze vor dem Hotel und in der Umgebung.
 COM_MGB_1971_A_10
 Computerfirma - RR-IT Technics - Sales & Service
 COM_MGB_1971_A_38
@@ -792,6 +816,8 @@ IND_ALL_1800_A_01
 Eingezäunte Schafweide - Im Winter stehen die Tierchen natürlich in einer kuschlig warmen Scheune. Das Gebiet wurde inzwischen von der Stadtverwaltung als Gewerbegebiet ausgewiesen. Man hofft auf reiche Gewerbesteuer Zahlungen.
 IND_ALL_1800_A_05
 Forchheim Marktplatz 14
+IND_ALL_1800_L00_A_01
+Großbaustelle\n\nHier wurde großzügig geplant. Es soll ein markantes Gebäude entstehen, das dem Stadtteil ein unverwechselbares Gesicht geben soll. Leider wurde die Finanzierung nicht genauso sorgfältig geplant und so stocken seit einiger Zeit die Arbeiten.
 IND_ALL_1802_A_01
 Dieses Grundstück wurde von einer Chemiefabrik gekauft. Aber so lange die Baugenehmigung aussteht, also bis zum Baubeginn, darf der Landwirt diese Grundstück weiter landwirtschaftlich nutzen. Bauern sind schlaue Leute und wissen um die langwierigen Genehmigungsverfahren und so konnte schon mancher Bauer seinen ehemaligen Acker jahrzehntelang pachtfrei weiter nutzen.  
 IND_ALL_1802_B_01
@@ -806,8 +832,14 @@ IND_ALL_1840_L34_A_01
 Waggonfabrik Görlitz
 IND_ALL_1841_L16_A_01
 Tuchfabrik Arzt in Michelstadt
+IND_ALL_1843_L08_A_01
+Dampfmaschinenhaus von Sanssouci \nsteht in Potsdam an der Neustädter Havelbucht. Eine Zweizylinder-Dampfmaschine der Borsigwerke von 1842 pumpt Wasser aus der Havel auf den Ruinenberg. Von dort wird unter anderem die Fontänenanlagen im Park Sanssouci versorgt.
+IND_ALL_1853_L02_A_01
+Harkortsche Fabrik \ninHagen. Die Firma, gegründet 1800, stellt schmiedeeiserne Produkte wie Hieb-, Stich- und Schusswaffen, Brustpanzer, Werkzeuge, Schlösser, Küchengeräte und Wagen her. 1822 wurde erweitert und dieses Gebäude errichtet. Ab 1840 wurden hier auch Achsen und Räder für die Eisenbahn produziert. Ab 1850 spezialisiert auf Brückenteile für Stahlbrücken.
 IND_ALL_1860_L38_A_01
 Neue Actien-Zucker-Raffinerie\n\nin Halle am Thüringer Bahnhof wurde 1862 erbaut und 2006 abgerissen. In Halle regnet es anscheinend nicht, denn der Zucker wurde im freien in einer einfachen Miete gelagert.
+IND_ALL_1862_L48_A_01
+Fabrik Herminghaus\n\nin Wülfrath Hier werden Möbel- und Türschlösser sowie Beschläge herstellte. Wie es so ist, die Firma prosperiert und in der Fertigung muss an- und ausgebaut werden. Um der Nachfrage her zu werden, muss an das Haupthaus eine Erweiterung nach der anderen gebaut werden. Der Architekt wollte eine grandiose Fassade, einem kleinen Schloss ähnlich. Er hatte sich wohl vom Namen der Produkte inspirieren lassen. Aber In der Produktion störten die Fenster und so wurden sie einfach zugemauert. 
 IND_ALL_1863_L18_A_01
 Jutespinnerei in Potsdam
 IND_ALL_1882_L30_A_01
@@ -879,7 +911,7 @@ Wer sich ein Zimmer im Nobelhotel Kristall leisten kann, findet erholsame Ruhe i
 IND_ALP_1981_A_24
 Hotel & Pension Almrose, zu Ihren Diensten.
 IND_ALP_1982_A_24
-Pension Ross. Günstige Zimmer und Essen für den müden Reisenden.
+Pension Ross. Günstige Zimmer und Essen für den müden Reisenden. Die Lage zwischen den Bergen ist herrlich und doch zentral im Dorf.
 IND_ALP_1988_A_24
 Gasthof und Hotel Bauer. Wo die familäre Atmosphäre Zuhause ist.
 IND_ALP_1989_A_24
@@ -1064,10 +1096,14 @@ IND_ODL_2001_A_14
 Experimentelle Fabrik Mageburg\nCSG Cosmetics. Pasten und Cremes zur "Aufhübschung der Fassade".
 #________________________________building - mon_________________________________
 #________________________________building - mon_________________________________
+Altpoertel
+Altpörtel\n\nDas Altpörtel war das westliche Stadttor der Stadt Speyer. Mit einer Höhe von 55 Metern ist es eines der höchsten und bedeutendsten Stadttore Deutschlands. Der untere Teil des Turms wurde zwischen 1230 und 1250 erbaut. Das oberste Turmgeschoss wurde 1514 hinzugefügt. 
 AVL_Jubilaeumssaeule
 Jubiläumssäule      \n\nSteht auf dem Stuttgarter Schlossplatz und ist 35 Meter hoch.
 BergerDenkmal_Witten
 Berger Denkmal\n\nSteht in Witten
+Fuerstengruft
+Fürstengruft
 Koenig-Albert-Denkmal_Freital
 König-Albert-Denkmal\n\nDas König-Albert-Denkmal steht auf dem Windberg in Freital  bei Dresden. Der Windberg ist Namensgeber der Windbergbahn, der ersten deutschen Gebirgsbahn. 
 Obelisk
@@ -1232,6 +1268,8 @@ RES_ALP_1802_B_01
 Haus in Blau\n\nDieses Haus ist Altbau.
 RES_ALP_1802_C_01
 Verwildertes Baugundstück\n\nXaver Tüchtig hat in seiner Nähe, für seinen Sohn Hans ein Grundstück gekauft. Damit, falls dieser es endlich einmal zu einer Frau bringt, er hier für die junge Familie dann, ein gemütliches Familienheim bauen kann. 
+RES_ALP_1803_A_01
+kleine Baustelle\n\nSchaffe schaffe Häusle baue, Schulde zahle und verrecke. Der Bauherr hier hat derzeit offensichtlich einen kleinen finanziellen Engpass.
 RES_ALP_1902_A_08
 Oberbayrisches Bauernhaus. Das Wohnhaus ist alles, was vom ehemaligen Mayertalerhof übrig geblieben ist.
 RES_ALP_1924_A_11
@@ -2043,9 +2081,9 @@ Viehhof (alpin)
 factory_ALP_Viehhof_NIC_2_details
 <title>Viehhof Untermoser</title><p>Familie Untermoser ist Viehzüchter in der vierten Generation.</p>
 alte Raffinerie
-Raffenerie (1905)
+Raffinerie (1905)
 factory_alte Raffinerie_details
-<title>Alte Raffenerie</title><p>Eine Erdölraffinerie gewinnt aus dem Rohstoff Erdöl durch Destillation, Fraktion und Extraktion unter Verwendung von Druck und Vakuum Treibstoffe, Schmieröle, Asphalt sowie diverse Kunstoffausgangsprodukte.</p>
+<title>Alte Raffinerie</title><p>Eine Erdölraffinerie gewinnt aus dem Rohstoff Erdöl durch Destillation, Fraktion und Extraktion unter Verwendung von Druck und Vakuum Treibstoffe, Schmieröle, Asphalt sowie diverse Kunstoffausgangsprodukte.</p>
 alte_Kfz-Fabrik
 Kfz-Fabrik
 factory_alte_Kfz-Fabrik_details
@@ -2571,7 +2609,7 @@ factory_NDT_Importeur_details
 NDTZuckerfabrik_NIC
 Zuckerfabrik
 factory_NDTZuckerfabrik_NIC_details
-<title>Sigrana Zucker Comp.</title><p>Bei der Zuckerproduktion wird aus bestimmten Pflanzen mit hohem Zuckergehalt (Zuckerrüben, -rohr) der Zucker extrahiert und in verschiedenen Formen gebrauchsfähig hergestellt.</p>
+<title>Sigrana Zucker Comp.</title><p>Bei der Zuckerproduktion wird aus Zuckerrüben, die auf einen hohen Zuckergehalt gezüchtet wurden, der Zucker extrahiert und in verschiedenen Formen gebrauchsfähig hergestellt. Die durch die Zuckergewinnung ausgelaugten Rübenschnitzel besitzen immer noch einen hohen Zuckeranteil und enthalten außerdem Eiweiß, weshalb sie als Futtermittel für Wiederkäuer verwendet werden. 1802 wurde mit der Produktion von Zucker aus Zuckerüben begonnen, da durch die Kontinentalsperre Rohrzucker aus den Kolonien nicht mehr verfügbar war.</p>
 Neues_Kohlekraftwerk
 Kohlekraftwerk (1963)
 factory_Neues_Kohlekraftwerk_details
@@ -2613,7 +2651,7 @@ factory_Papierfabrik1990_details
 Papiermuehle
 Papiermühle
 factory_Papiermuehle_details
-Eine Papiermühle ist der Vorläufer zu den heutigen -fabriken.Bei einer Papiermühle werden die Rohstoffe, Hadern und Zellstoff meist durch Wasserkraft mechanisch zerkleinert und verührt. Der enstandene Brei wird dann nach ausreichender Ablagerung mit einem "Hammergeschirr" in Form gepresst
+Eine Papiermühle ist der Vorläufer zu den heutigen Papierfabriken. Bei einer Papiermühle werden die Rohstoffe, Hadern und Zellstoff meist durch Wasserkraft mechanisch zerkleinert und verrührt. Der entstandene Brei wird dann gesiebt und nach ausreichender Ablagerung mit einem "Hammergeschirr" in Form gepresst
 Pharmawerk_NIC
 Pharmawerk (1950)
 factory_Pharmawerk_NIC_details
@@ -2774,6 +2812,12 @@ Zementwerk1979_NIC
 Zementwerk (1979)
 factory_Zementwerk1979_NIC_details
 <title>Zementwerk 1979</title><p>Hier wird aus Sand, Steinen und durch Beigabe von Zusatzstoffen, Hightech-Zement hergestellt. Dieser wird für den Bau der Simutranshäuser und für das Betonwerk gebraucht. Die meisten Kunden holen bei dieser kleinen Zementfabrik ihren Zement mit dem Lkw selbst ab. Die gute Abgasreinigung und die hohe Verbrennungstemperatur erlauben es Problemmüll zu verbrennen. Das ist, angesichts des niedrigen Zementpreises, eine willkommene Möglichkeit, die Rentabilität des Werks zu steigern. </p>
+#_____________________________________field_____________________________________
+#_____________________________________field_____________________________________
+Weinfelder
+Weinfeld
+Weinfelder2
+Weinfeld 2
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Buecher
@@ -2782,8 +2826,6 @@ Dosenessen
 Konserven
 Gefluegel
 Geflügel
-Maschinen
-Haushaltsgeräte
 Moebel
 Möbel
 Oel
@@ -3343,7 +3385,7 @@ BR 111
 BZT_ET25B
 DRG Triebwagen ET 25 - B-Wagen
 BZT_ET25C
-DRG Triebwagen ET 25 - Mittelwagen
+DRG Steuerwagen ES 25 passend zu ET 25
 DB BR143
 DB BR 143
 DR BR112
@@ -3377,7 +3419,7 @@ E 44
 E52
 E 52
 E60
-DR E60
+DRG E60
 E71
 E 71
 E91_3
@@ -3429,7 +3471,7 @@ Tankanhänger für Lebensmittel 12t
 Anhaenger_12t_Post
 Anhänger 12t (Post)
 Anhaenger_12t_Stueckgut
-Stückgutanhänger 12t
+Anhänger 12t (Stückgut)
 Anhaenger_18t_Holztransport
 Anhänger für Holztransporte 18t
 Anhaenger_18t_ISO_Container
@@ -3453,17 +3495,17 @@ Anhänger für Silowaren 18t
 Anhaenger_18t_Stahltransport
 Anhänger für Stahltransporte 18t
 Anhaenger_18t_Stueck
-MAN Stückgutanhänger 18t
+Anhänger 18t Stückgut
 Anhaenger_18t_Tautliner
-Stückgutanhänger 18t
+Anhänger 18t (Stückgut)
 Anhaenger_18t_Tiertransport
 Viehanhänger 18t
 Anhaenger_1960_Kuehlwaren
 Kühlwarenanhänger 16t
 anhaenger_1965_16t_Stueckgut_Koffer
-Stückgutanhänger 16t (Koffertyp)
+Anhänger 16t (Koffertyp)
 anhaenger_1965_16t_Stueckgut_Plane
-Stückgutanhänger 16t mit Plane
+Anhänger 16t mit Plane
 anhaenger_1965_16t_Vieh
 Viehanhänger 16t
 Anhaenger_1990_16t_Holz
@@ -3473,7 +3515,7 @@ Kühlwarenanhänger 16t
 anhaenger_1990_16t_Silo
 Anhänger für Silowaren 16t
 anhaenger_1990_16t_Stueckgut
-Stückgutanhänger 16t
+Anhänger 16t (Stückgut)
 Anhaenger_Unimog_Landwirt
 Unimog-Anhänger (landw. Güter)
 Anhaenger_Unimog_Landwirt2
@@ -3481,7 +3523,7 @@ Unimog-Anhänger (landw. Güter)
 Auflieger_32t_Stueckgut
 Auflieger für Stückgut 32t
 Auflieger_38t_Mineraloel
-Magirus-Iveco Mineralölauflieger
+Auflieger 38t für Mineralöl
 Auflieger_38t_Stahl
 Auflieger für Stahltransporte 38t
 Auflieger_40t_Holztransport_Kran
@@ -3588,8 +3630,6 @@ DaimlerBenz_L6600_Stueckgut
 Daimler-Benz L6600 Stückgutlaster
 DaimlerBenz_LP1213_Post
 Daimler-Benz LP1213 (Post)
-DaimlerBenz_LP1620_Betonteiletransporter
-Daimler-Benz LP1620 Betonteiletransporter
 DaimlerBenz_LP1620_fl_Lebensmittel
 Daimler-Benz LP1620 Lebensmitteltankwagen
 DaimlerBenz_LP1620_Kuehlwaren
@@ -3647,7 +3687,7 @@ Daimler-Benz LPS 2220
 DMG_II_P-1
 Daimler II P-1
 Dosto-Personenanhaenger
-Doppelstock-Personenanhänger f. Zugmaschinen
+Personenanhänger Doppelstock für Zugmaschinen
 Gasoline1920
 Mineralöllaster 1920
 Gasoline1950
@@ -3662,8 +3702,6 @@ Henschel_HS16TL_Post
 Henschel HS 16TL (Post)
 Henschel_HS16TL_Tankwagen
 Henschel HS 16TL Mineralöllaster
-Henschel_HS22TL_Betonteiletransporter
-Henschel HS 22TL Betonteiletransporter
 Henschel_HS22TL_Kuehlwaren
 Henschel HS 22TL Kühlwarentransporter
 Henschel_HS22TL_Pritsche
@@ -3734,6 +3772,12 @@ LKW_Kieskipper
 Kieskipper
 LO3000_Bus
 Robur LO 3000 Bus
+LO3000_Fluessige_Lebensmittel
+Robur LO 3000 Milch
+LO3000_Kuehlware
+Robur LO 3000 Kühlwagen
+LO3000_Post
+Robur LO 3000 Post
 LO3000_Schuettgut
 Robur LO 3000 Schüttgutlaster
 LO3000_Stueckgut
@@ -3761,37 +3805,35 @@ Magirus-Iveco Silotransporter Typ T
 MagirusIveco_T_Zugmaschine
 Magirus-Iveco T
 MAN_13280_F_Post
-MAN 13280 F (Post)
+MAN 13.275 F (Post)
 MAN_13280_F_Stueckgut
-MAN 13280 F Stückgutlaster
-MAN_16320_F_Betonteiletransporter
-MAN 16320 F Betonteiletransporter
+MAN 13.275 F Stückgutlaster
 MAN_16320_F_Kuehlwaren
-MAN 16320 F Kühlwarentransporter
+MAN 16.320 F Kühlwarentransporter
 MAN_16320_F_Pritsche
-MAN 16320 F Stückgut (Pritsche)
+MAN 16.320 F Stückgut (Pritsche)
 MAN_16320_F_Stahltransporter_1
-MAN 16320 F Stahltransporter
+MAN 16.320 F Stahltransporter
 MAN_16320_F_Stahltransporter_2
-MAN 16320 F Stahltransporter
+MAN 16.320 F Stahltransporter
 MAN_16320_F_Stueckgut
-MAN 16320 F Stückgutlaster
+MAN 16.320 F Stückgutlaster
 MAN_19230_DF_Landwirtschaft
-MAN 19230 DF landw. Güter
+MAN 19.230 DF landw. Güter
 MAN_19230_DF_Schuettgut
-MAN 19230 DF Schüttgutlaster
+MAN 19.230 DF Schüttgutlaster
 MAN_19230_DF_Stueckgut
-MAN 19230 DF Stückgutlaster
+MAN 19.230 DF Stückgutlaster
 MAN_19230_DF_Viehtransporter
-MAN 19230 DF Viehtransporter
+MAN 19.230 DF Viehtransporter
 MAN_F90_ISO_Container
-MAN F90 für Stückgutcontainer
+MAN F90 24.362 DF UNL für Stückgutcontainer
 MAN_F90_Landwirtschaft
 MAN F90 landw. Güter
 MAN_F90_Silotransport
 MAN F90 Silotransporter
 MAN_F90_Tiertransport
-MAN Viehtransporter Typ F90
+MAN F90 Viehtransporter
 MAN_F90_Zementtransporter
 MAN F90 Zementtransporter
 MAN_F90_Zugmaschiene
@@ -4160,10 +4202,14 @@ Behaelter-Tragwagen_Lbms589_Siloware
 Behälter-Tragwagen Lbms589 für Siloware
 Behaelter-Tragwagen_Lbms589_Stueckgut
 Behälter-Tragwagen Lbms589 für Stückgut
+Behelfsgepaeckwagen_MPw4yge-50
+Behelfsgepäckwagen MPw4yge-50
+Behelfspersonenwagen_MCi-43
+Behelfspersonenwagen MCi-43
 Beiwagen ESA150
 ESA 150 Beiwagen
 Beiwagen_Cid-24
-Beiwagen CID-24
+Beiwagen Cid-24
 Betonwagen
 Staubkesselwagen
 Blauer_Enzian_Gepaeckwagen
@@ -4171,7 +4217,7 @@ Blauer Enzian - Gepäckwagen
 Blauer_Enzian_Mittelwagen
 Blauer Enzian - Mittelwagen
 Blauer_Enzian_Steuerwagen
-Blauer Enzian - Steuerwagen
+Blauer Enzian - Endwagen (SBC 4ü-35) mit Panorama Endabteil
 BR01_DRG
 DRG BR 01
 BR01Tender
@@ -4211,7 +4257,7 @@ S-Bahn BR 485 - Kopf
 BR485_rot_Ende
 S-Bahn BR 485 rot - Schluss
 BR485_rot_Kopf
-S-Bahn BR 485 rot - Kopf
+S-Bahn BR 485 "Colalook" - Kopf
 BR485_rot_Waggon1
 S-Bahn BR 485 rot - Waggon
 BR485_rot_Waggon2
@@ -4268,6 +4314,8 @@ BZT_PrAbteilwagen
 Preußischer Abteilwagen BC 4 
 BZT_PrAbteilwagen_Brh
 Preußischer Abteilwagen BC 4 mit Bremser
+BZT_PrPost4
+PrPost4
 BZT_PrPostwagen
 Preußischer Postwagen Pw4-Pr04
 BZT_Pwi
@@ -4305,13 +4353,21 @@ Schlafwagen City Nightline
 Containertragwagen_Sgss-y703
 Containertragwagen Sgss-y 703
 D-Zug-Wagen_C4ue-26_1.u.2.Kl.
-D-Zug Wagen C4ü-26 1./2. Klasse
+D-Zug Wagen AB4ü-26 1./2. Klasse
 D-Zug-Wagen_C4ue-26_3.Kl.
 D-Zug Wagen C4ü-26 3. Klasse
+DB_BR_210
+DB 210
+DB_BR_216
+DB 216
+DB_BR_218.0
+DB 218
+DB_BR_218.4
+DB 218.9
 DB_BR628
 DB BR 628 Motorwagen
 DB_BR928
-DB BR 928 Waggon
+DB BR 928 Steuerwagen
 DB240
 DB 240
 Doppelstock_DR_Endwagen
@@ -4339,7 +4395,7 @@ DR V 100
 DR118
 DR 118
 DR713
-Triebwagen DR-713
+Triebwagen DR 713
 DR714
 Triebwagen DR 714
 DR749
@@ -4351,7 +4407,9 @@ Drehgestell-Flachwagen Rnoos 644
 Drehgestell-Flachwagen_Rils653_Stahl
 Drehgestell Flachwgen Rils653 für Stahl
 Drehgestell-Flachwagen_Rils653_Stueckgut
-Drehgestell-Flachwagen Rils653 für Stückgut
+Planenhaubeflachwagen Rils653 für Stückgut
+Durchgangswagen_Ci3_Bay_99
+Durchgangswagen Ci3 Bay 99
 DWA_LVTS-BR672
 Bombardier LVTS-BR 672
 E80_PO
@@ -4375,21 +4433,21 @@ ET 403 - Schluss
 ET403_Front
 ET 403 - Kopf
 ET403_Mittelwagen
-ET 403 - Mittelwagen
+ET 404 - Mittelwagen
 ET403_Speisewagen
-ET 403 - Speisewagen
+ET 404 - Speisewagen
 ET420_Ende
 ET 420 - Schluss
 ET420_Front
 ET 420 - Kopf
 ET420_Mitte
-ET 420 - Wagen
+ET 421 - Wagen
 ET91
 ET 91
 ETA177_hinten
-ETA 177 - Schluss
+AT 3 Bauart Wittfeld - Schluss
 ETA177_vorn
-ETA 177 - Kopf
+AT 3 Bauart Wittfeld - Kopf
 Faals151
 Schüttgutwagen Faals151 
 Ferkeltaxe VB172
@@ -4463,17 +4521,17 @@ Stadler GTW - Schluss
 GTW_Mittelwagen
 GTW-Mittelwagen
 Hechtwagen_AB4ue23a
-Hechtwagen AB4ü 23a
+Hechtwagen AB4ü-23a
 Henschel_DHG500C
 Henschel DHG500C
 Henschel_DHG700C
 Henschel DHG700C
 Henschel-Wegmann-Zug_Gepaeckwagen
-Henschel-Wegmann-Zug - Gepäckwagen
+Henschel-Wegmann-Zug - Endwagen (SWRPwPost 4ü) mit Speise, Post und Gepäckabteil
 Henschel-Wegmann-Zug_Mittelwagen
 Henschel-Wegmann-Zug - Mittelwagen
 Henschel-Wegmann-Zug_Steuerwagen
-Henschel-Wegmann-Zug - Steuerwagen
+Henschel-Wegmann-Zug - Endwagen (SBC 4ü-35) mit Panorama Endabteil
 Hensel-Fleischwagon_1906
 Fleischwagon Hensel 1906
 ICE1_Bistro
@@ -4563,11 +4621,23 @@ Metropolitan - Mittelwagen
 Metropolitan_Steuerwagen
 Metropolitan - Steuerwwagen
 NE81-DB_BR626_VT
-NE81-DB BR 626 VT - vorn
+NE81 (DB BR 626) Triebwagen
 NE81-DB_BR926_VB
-NE81-DB BR 926 VB - hinten
+NE81 (DB BR 926) Steuerwagen
 NeuhaldenslebenerEisenbahn_T03
 T 03 (Neuhaldenslebener Eisenbahn)
+NGT_CARGO_Ende-Kuehlware
+NGT CARGO Ende-Kühlware
+NGT_CARGO_Ende-Stueckgut
+NGT CARGO_Ende-Stückgut
+NGT_CARGO_Front-Kuehlware
+NGT CARGO Front-Kühlware
+NGT_CARGO_Front-Stueckgut
+NGT CARGO Front-Stückgut
+NGT_CARGO_Mitte-Kuehlware
+NGT CARGO Mitte-Kühlware
+NGT_CARGO_Mitte-Stueckgut
+NGT CARGO Mitte-Stückgut
 NGT_HST_Ende
 NGT HST Schluss
 NGT_HST_Front
@@ -4628,10 +4698,8 @@ pfaelzischer_ABueBay97b
 pfälzischer Schnellzugwagen ABü Bay 97b
 pfaelzischer_C4ueBay98
 pfälzischer Schnellzugwagen C4ü Bay 98
-Postwagen 2ss-t13
-Postwaggon 2SS-t13
 Postwagen 2ss-t15
-Postwaggon 2SS-t15
+Postwagen 2ss-t/15
 Postwaggon Post3-cl12,8
 Postwaggon P3-CL 12.8
 Postwaggon Post4-a17
@@ -4660,8 +4728,6 @@ PrG8Tender
 Tender für G8
 PwgPr14
 Güterbegleitwagen PwgPr 14
-Rekowagen Baag
-Rekowagen BAAG
 Rheingold_1_1Kl
 Rheingold 1. Klasse
 Rungenwagen
@@ -4741,7 +4807,7 @@ TEE VT 11.5 Waggon
 Teleskophaubenwagen Sahimms-u 900
 Haubenwagen Sahi MMS-u 900
 Tieflader
-Flatbed-Trailer
+Tiefladewagen
 Torpedopfannenwagen_8008
 Torpedopfannenwagen 8008
 Triebwagen_ET_184_4
@@ -4756,6 +4822,8 @@ TwindexxVario_Mittelwagen
 IC2 Doppelstockwagen TwindexxVario
 TwindexxVario_Steuerwagen
 IC2 Doppelstock-Steuerwagen TwindexxVario
+unsichtbare_Lok_fuer_Abstellgleis
+unsichtbare Lok für Abstellgleis
 V100
 DB V 100
 V188_DB_Version
@@ -4771,9 +4839,9 @@ V 36
 V80
 V 80
 VB140
-VB 140
+Steuerwagen VS 145 für VT33.2
 VB75
-VB 75 Personenwagen
+DR 135 (DB VB 140 032-047) Personenwagen
 Versuchstriebwagen_Siemens_und_Halske
 Versuchstriebwagen Siemens und Halske
 Vicinalbahn-Wagen PBL
@@ -4793,9 +4861,9 @@ VT 10
 VT133
 VT 133
 VT33
-Triebwagen VT 33
+Triebwagen VT 33.2
 VT75
-VT 75 Motorwagen
+DR 135 (DB VT 75) Motorwagen
 Wannentender
 Wannentender (für DRG BR 38, 44, 50)
 x-Wagen_ABx791
@@ -4803,7 +4871,7 @@ x-Wagen ABx 791
 x-Wagen_Bx794
 x-Wagen Bx 794
 x-Wagen_Bxf796
-x-Wagen Bxf 796
+x-Wagen Bxf796 Steuerwagen
 YB70_1.Kl._Schnellzugwagen
 Schnellzugwagen 1. Klasse
 YB70_2.Kl._Schnellzugwagen
@@ -5073,7 +5141,7 @@ Postbarkasse
 Raddampfer_Diessen
 Raddampfer Diessen
 Radschlepper_Rheinfahrt_IX
-Radschlepper Rheinfahrt IX
+Radschlepper Rheinfahrt IX Fendel
 RVg-Sail_Passanger_Ship_0
 Segelschiff
 RVg-Steam_Passanger_Ship_0
@@ -5205,11 +5273,11 @@ Abstellgleis Güterzug 90km/h
 Abstellgleis_Personenzug_60kmh
 Abstellgleis Personenzug 60km/h
 altes_Gleis
-altes Gleis
+Gleis 90 km/h
 altes_Gleis40
-frühes Gleis
+Behelfsgleis ohne Schotter 40 km/h
 altes_Gleis60
-frühes verbessertes Gleis
+frühes Gleis im Schotterbett 60 km/h
 Gleis_120
 Gleis 120 km/h
 Hochbahn160
@@ -5223,13 +5291,13 @@ Hochbahn 90 km/h
 Hochgeschwindigkeit_1
 Schnellfahrtgleis 210 km/h
 Hochgeschwindigkeit_2
-Schnellfahrtgleis 280 km/h
+Schnellfahrtgleis "feste Fahrbahn" 280 km/h
 kleiner Park
 Kleiner Park
 Schnellfahrgleis_350
-Schnellfahrtgleis 350 km/h
+Schnellfahrtgleis "feste Fahrbahn" 350 km/h
 Schnellfahrgleis_450
-Schnellfahrtgleis 450 km/h
+Schnellfahrtgleis "feste Fahrbahn" 450 km/h
 Stadtmauer_mit_Eckturm
 Stadtmauer mit Eckturm
 Standardgleis

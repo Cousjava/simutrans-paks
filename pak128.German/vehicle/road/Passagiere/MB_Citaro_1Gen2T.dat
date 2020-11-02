@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 12-2014
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=MB_Citaro_2Tueren_1gen
@@ -13,7 +12,8 @@ retire_year=2014
 retire_month=6
 waytype=road
 cost=7886000
-runningcost=230
+runningcost=140
+fixed_cost=1536
 freight=Passagiere
 payload=90
 engine_type=diesel
@@ -22,7 +22,7 @@ gear=55
 speed=50
 weight=11.1
 length=12
-loading_time=2435 
+loading_time=2435
 sound=1
 Constraint[Prev][0]=none
 Constraint[Next][0]=none

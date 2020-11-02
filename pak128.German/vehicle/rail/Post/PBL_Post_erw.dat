@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=PBL Post
@@ -11,7 +11,8 @@ intro_month=1
 retire_year=1922
 retire_month=12
 cost=1450000
-runningcost=57
+runningcost=44
+fixed_cost=816
 waytype=track
 freight=Post
 length=0

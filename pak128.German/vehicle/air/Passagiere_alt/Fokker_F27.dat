@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=MHz-Fokker_F27
@@ -12,7 +11,8 @@ intro_month=6
 retire_year=1972
 retire_month=11
 cost=66420000
-runningcost=191
+runningcost=101
+fixed_cost=7424
 waytype=air
 engine_type=diesel
 freight=Passagiere

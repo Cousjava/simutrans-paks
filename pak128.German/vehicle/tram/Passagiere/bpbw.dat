@@ -9,7 +9,8 @@ retire_year=1885
 retire_month=1
 waytype=tram_track
 cost=582500
-runningcost=63
+runningcost=38
+fixed_cost=141
 freight=Passagiere
 payload=25
 speed=15
@@ -38,4 +39,3 @@ EmptyImage[NE]=bpbw.0.3
 #freightimage[0][SE]=
 #freightimage[0][NE]=
 #freightimage[0][NW]=
-#_EO_

@@ -11,7 +11,8 @@ retire_year=1935
 retire_month=10
 waytype=road
 cost=248000
-runningcost=25
+runningcost=16
+fixed_cost=113
 freight=Stahl
 payload=3
 speed=18
@@ -23,7 +24,6 @@ constraint[prev][2]=Zugpferde_4
 Constraint[Prev][3]=BZT_Traktor-gruen
 Constraint[Prev][4]=Lanz_Bulldog_FMD
 constraint[next][0]=none
-
 EmptyImage[W]=Kutschen_Stahl.0.1
 EmptyImage[NW]=Kutschen_Stahl.0.2
 EmptyImage[N]=Kutschen_Stahl.0.3
@@ -32,7 +32,6 @@ EmptyImage[E]=Kutschen_Stahl.0.5,-32,-16
 EmptyImage[SE]=Kutschen_Stahl.0.6
 EmptyImage[S]=Kutschen_Stahl.0.7
 EmptyImage[SW]=Kutschen_Stahl.0.8,20
-
 FreightImagetype[0]=Stahl
 FreightImage[0][W]=Kutschen_Stahl.1.1
 FreightImage[0][NW]=Kutschen_Stahl.1.2

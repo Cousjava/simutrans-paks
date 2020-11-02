@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Massengutfrachter Fritz
@@ -10,7 +9,8 @@ Copyright=pumuckl999
 intro_year=2010
 intro_month=1
 cost=59241000
-runningcost=2594
+runningcost=1595
+fixed_cost=10552
 waytype=water
 freight=Stahl
 engine_type=diesel

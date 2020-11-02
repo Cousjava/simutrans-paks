@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 2008
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=RVg_Post_Truck_1
@@ -12,7 +11,8 @@ intro_month=11
 retire_year=1980
 retire_month=9
 cost=3596500
-runningcost=83
+runningcost=54
+fixed_cost=848
 waytype=road
 engine_type=diesel
 freight=Post

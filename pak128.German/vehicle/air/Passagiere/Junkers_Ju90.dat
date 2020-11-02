@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Junkers_Ju90
@@ -13,7 +12,8 @@ retire_year=1945
 retire_month=5
 waytype=air
 cost=31500000
-runningcost=125
+runningcost=65
+fixed_cost=3793
 freight=Passagiere
 payload=30
 engine_type=diesel

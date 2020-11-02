@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 10-08-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Hechtwagen_AB4ue23a
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1964
 retire_month=12
 cost=8517000
-runningcost=161
+runningcost=121
+fixed_cost=3029
 waytype=track
 freight=Passagiere
 payload=45

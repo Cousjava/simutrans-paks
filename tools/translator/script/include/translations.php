@@ -369,7 +369,7 @@ function tr_parseRow($row,&$object,$encode)
 // if $file_name = "screen" $path contains the text-lines
 // if $file_name contains file_name -> $path contains the real path+file_name 
 function tr_parsetab($file_name,$path,$language,$version,$tr_funk,$compatNo,$compat)
-{  global $LNG_LOAD3,$count_unmodified,$rowNo,$rowWithDataNo,$objectNo;
+{  global $datapfad,$LNG_LOAD3,$count_unmodified,$rowNo,$rowWithDataNo,$objectNo;
     $object = array();
     $not_inserted = array(); //array to collect faild inserts
     $rowsChanged =0;
@@ -430,7 +430,7 @@ function tr_parsetab($file_name,$path,$language,$version,$tr_funk,$compatNo,$com
     { $objectNo++;
       $object[$objectNo]['name'] = basename($file_name);
       $object[$objectNo]['col_typ'] = 't';
-      $object[$objectNo]['descr'] = implode('\n',$datfile_lines);
+      $object[$objectNo]['descr'] = mb_convert_encoding(implode('\n',$datfile_lines),"UTF-8",$encode);
     } 
  
    ///////////////////////////////////////////////////////////////////////////
@@ -505,12 +505,30 @@ function tr_parsetab($file_name,$path,$language,$version,$tr_funk,$compatNo,$com
        
     //now a little help for the translators - collected list of failed inserts
     $h = sprintf("<h3>".$LNG_LOAD3[13] , $version).$language." (" . count($not_inserted) . ")</h3>";
+    $miss_file = '';
     echo_table_start($h,$LNG_LOAD3[6],$LNG_LOAD3[7],$LNG_LOAD3[15]);
     foreach ($not_inserted as $line)
-    { if ($line[2] > 19) echo_table_line ($line[0],$line[1],$LNG_LOAD3[$line[2]]);
+    { if ($line[2] > 19)
+      { echo_table_line ($line[0],$line[1],$LNG_LOAD3[$line[2]]);
+        $miss_obj = "unknown";
+        if ($version >= 300) 
+           { if (substr($file_name,-4) != ".txt") $miss_obj = "scenario_text";
+             else                                 $miss_obj = "scenario_textfile";
+           }
+        $miss_file .= "obj="  . $miss_obj . "\n";
+        $miss_file .= "name=" . $line[0] . "\n";
+        $miss_file .= "note=\n";
+        $miss_file .= "-\n";
+      }
     }  
     echo_table_end();
     db_query("COMMIT");
+    if ($miss_file != '')
+    { $fp=fopen($datapfad.'set_'.$version.'miss_objectlist.'.$language.'.txt',"a+");
+      fwrite($fp, $miss_file);
+      fclose($fp); 
+      echo "missfile geschrieben<br>";
+    }
 }
 
 ?>

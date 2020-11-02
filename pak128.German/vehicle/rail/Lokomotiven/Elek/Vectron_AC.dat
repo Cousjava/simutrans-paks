@@ -11,6 +11,7 @@ intro_year=2010
 intro_month=1
 cost=128860000
 runningcost=398
+fixed_cost=9978
 waytype=electrified_track
 speed=200
 weight=86

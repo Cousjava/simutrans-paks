@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Bananenwagen
@@ -10,7 +9,8 @@ copyright=TonyBzt
 intro_year=1920
 intro_month=1
 cost=2350000
-runningcost=61
+runningcost=45
+fixed_cost=903
 waytype=track
 freight=Weizen
 payload=15

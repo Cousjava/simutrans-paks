@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 26.08.2020
+#	Letzte Bearbeitung:
+---------------------------------
+obj=vehicle
+name=E_17
+copyright=pumuckl999
+intro_year=1928
+intro_month=3
+retire_year=1980
+retire_month=4
+cost=34717000
+runningcost=467
+fixed_cost=11691
+waytype=electrified_track
+power=2800
+gear=250
+speed=120
+weight=111.7
+length=11
+sound=-1
+EmptyImage[S]=E17.0.0
+EmptyImage[E]=E17.0.1
+EmptyImage[SE]=E17.0.2
+EmptyImage[SW]=E17.0.3
+EmptyImage[N]=E17.0.4
+EmptyImage[W]=E17.0.5
+EmptyImage[NW]=E17.0.6
+EmptyImage[NE]=E17.0.7
+-----------------------------

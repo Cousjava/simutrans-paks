@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:02-08-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=MS_Alsterschwan
@@ -11,7 +10,8 @@ intro_year=2006
 intro_month=1
 waytype=water
 cost=2898000
-runningcost=250
+runningcost=150
+fixed_cost=582
 freight=Passagiere
 payload=100
 engine_type=diesel

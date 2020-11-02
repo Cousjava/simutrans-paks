@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 2008
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Kuehlwagen-alt
@@ -12,7 +11,8 @@ intro_month=12
 retire_year=1960
 retire_month=12
 cost=3070000
-runningcost=74
+runningcost=52
+fixed_cost=1016
 waytype=track
 freight=Fleisch
 payload=12

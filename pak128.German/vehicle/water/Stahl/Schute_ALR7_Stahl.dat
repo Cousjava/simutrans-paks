@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Schute_ALR7_Stahl
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1988
 retire_month=12
 cost=28125000
-runningcost=1877
+runningcost=1127
+fixed_cost=5910
 waytype=water
 freight=Stahl
 speed=25

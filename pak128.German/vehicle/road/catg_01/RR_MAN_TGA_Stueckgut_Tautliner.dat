@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=MAN_TGA_Tautliner
@@ -11,7 +11,8 @@ intro_month=1
 retire_year=2008
 retire_month=12
 cost=6175000
-runningcost=86
+runningcost=56
+fixed_cost=1040
 waytype=road
 speed=80
 power=310
@@ -21,24 +22,6 @@ payload=15
 length=8
 smoke=smoke_diesel
 constraint[prev][0]=none
-constraint[next][0]=Anhaenger_18t_Holztransport
-constraint[next][1]=Anhaenger_18t_Milchtransport
-constraint[next][2]=Anhaenger_18t_Mineraloeltransport
-constraint[next][3]=Anhaenger_18t_Stahltransport
-constraint[next][4]=Anhaenger_18t_ISO_Container
-constraint[next][5]=Anhaenger_18t_Tautliner
-constraint[next][6]=Anhaenger_18t_Kuehltransport
-constraint[next][7]=Anhaenger_18t_Post
-constraint[next][8]=Anhaenger_18t_Schuettgut
-constraint[next][9]=Anhaenger_18t_Silotransport
-constraint[next][10]=Anhaenger_18t_Viehtransport
-constraint[next][11]=Anhaenger_18t_Landwirtschaft
-constraint[next][12]=Anhaenger_12t_Stueckgut
-constraint[next][13]=Anhaenger_12t_Landwirtschaft
-constraint[next][14]=Anhaenger_12t_Kuehltransport
-constraint[next][15]=Anhaenger_12t_Schuettgut
-constraint[next][16]=Anhaenger_12t_Milchtransport
-constraint[next][17]=none
 EmptyImage[S]=RR_MAN_TGA_Stueckgut_Tautliner.0.1
 EmptyImage[N]=RR_MAN_TGA_Stueckgut_Tautliner.0.2
 EmptyImage[E]=RR_MAN_TGA_Stueckgut_Tautliner.0.3

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 20-04-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Nuernberg-Fuehrter_1.Klasse
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1889
 retire_month=6
 cost=920000
-runningcost=42
+runningcost=32
+fixed_cost=555
 waytype=track
 freight=Passagiere
 length=5
@@ -37,7 +37,8 @@ intro_month=1
 retire_year=1889
 retire_month=6
 cost=1520000
-runningcost=62
+runningcost=44
+fixed_cost=680
 waytype=track
 freight=Passagiere
 length=5

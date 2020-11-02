@@ -1,0 +1,97 @@
+@charset "iso-8859-2";
+
+/* ===================== SimuTranslator index page style ===================== */
+/*
+    (c)
+    Tomáš Kubeš
+    2006
+
+    last update:
+    30-Jun-2006
+*/
+
+
+h1#welcome
+{
+    padding: 0px;
+    margin-top: 0px;
+}
+
+p.welcome
+{
+    margin: 11px;
+}
+
+/* ========================================================================== */
+/*                           for vertical centering                           */
+body, html
+{
+    margin: 0em;
+    padding: 0em;
+}
+
+
+div#welcome_page
+{
+    height: 100%;
+    width: 100%;
+    margin: 0em;
+    padding: 0em;
+    overflow: hidden;
+
+    /*ie only*/
+    position: relative;
+}
+
+/*stadard compliant browsers*/
+div#welcome_page[id]
+{
+    display: table;
+    position: static;
+}
+
+div#welcome_middle
+{
+     /* for explorer only*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+div#welcome_middle[id]
+{
+    display:        table-cell;
+    vertical-align: middle;
+    position:       static;
+}
+
+
+
+div#welcome_screen_d
+{
+    /*min w 460*/
+    /*min h 360*/
+    width:      550px;
+    height:     400px;
+
+
+    margin:     0px auto;
+    padding:    0px;
+
+
+    background-image: url("train1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    /* for explorer only */
+    position: relative;
+    top: -50%;
+    left: -50%;
+}
+
+div#welcome_screen_d[id]
+{
+    position: static;
+}
+
+

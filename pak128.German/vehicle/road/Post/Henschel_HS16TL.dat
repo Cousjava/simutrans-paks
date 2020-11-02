@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Henschel_HS16TL_Post
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1967
 retire_month=12
 cost=9545000
-runningcost=181
+runningcost=116
+fixed_cost=2111
 waytype=road
 freight=Post
 engine_type=diesel

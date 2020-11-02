@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 17-10-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Laaps565_Front
@@ -10,7 +9,8 @@ copyright=pumuckl999
 intro_year=2006
 intro_month=9
 cost=6436000
-runningcost=106
+runningcost=65
+fixed_cost=1364
 waytype=track
 freight=Holz
 payload=35
@@ -51,7 +51,8 @@ copyright=pumuckl999
 intro_year=2006
 intro_month=9
 cost=6436000
-runningcost=106
+runningcost=65
+fixed_cost=1364
 waytype=track
 freight=Holz
 payload=35

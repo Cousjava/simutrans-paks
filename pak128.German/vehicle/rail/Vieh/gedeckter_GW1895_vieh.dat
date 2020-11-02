@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 07-08-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=gedeckter_Gueterwagen1895_Vieh
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1925
 retire_month=1
 cost=2250000
-runningcost=70
+runningcost=48
+fixed_cost=759
 waytype=track
 freight=Vieh
 payload=12

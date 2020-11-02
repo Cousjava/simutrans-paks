@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=MB_ActrosMP3_Kuehlwaren
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=2016
 retire_month=12
 cost=6834000
-runningcost=98
+runningcost=62
+fixed_cost=1120
 waytype=road
 freight=Fleisch
 engine_type=diesel
@@ -23,8 +23,6 @@ payload=18
 length=9
 sound=1
 constraint[prev][0]=none
-constraint[next][0]=Anhaenger_1990_16t_Kuehlwaren
-constraint[next][1]=none
 EmptyImage[W]=mb_ActrosMP3_6x4.2.1
 EmptyImage[NW]=mb_ActrosMP3_6x4.2.2
 EmptyImage[N]=mb_ActrosMP3_6x4.2.3
@@ -34,4 +32,3 @@ EmptyImage[SE]=mb_ActrosMP3_6x4.2.6
 EmptyImage[S]=mb_ActrosMP3_6x4.2.7
 EmptyImage[SW]=mb_ActrosMP3_6x4.2.8
 ------------------------------------------------
-

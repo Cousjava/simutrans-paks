@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 29-04-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Drehgestell-Flachwagen Sahmms 711
@@ -10,7 +9,8 @@ copyright=pumuckl999
 intro_year=1974
 intro_month=1
 cost=47850000
-runningcost=673
+runningcost=411
+fixed_cost=10281
 waytype=track
 freight=Stahl
 payload=88

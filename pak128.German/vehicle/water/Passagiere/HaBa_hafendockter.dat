@@ -1,7 +1,6 @@
 #	PAK128.german
 #	Vehicle
 #	Neu: 07.07.2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 obj=vehicle
 name=Hafenbarkasse Hafendockter
 copyright=pumuckl999
@@ -11,7 +10,8 @@ retire_year=1983
 retire_month=12
 waytype=water
 cost=863600
-runningcost=64
+runningcost=40
+fixed_cost=218
 freight=Passagiere
 payload=25
 engine_type=diesel

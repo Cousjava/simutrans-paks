@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 22-04-2020
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=preussischer_PW_fuer_T0_Kl.3_4
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1900
 retire_month=12
 cost=5302000
-runningcost=158
+runningcost=101
+fixed_cost=1457
 waytype=track
 freight=Passagiere
 length=6
@@ -37,7 +37,8 @@ intro_month=1
 retire_year=1900
 retire_month=12
 cost=4762000
-runningcost=142
+runningcost=92
+fixed_cost=1345
 waytype=track
 freight=Passagiere
 length=6

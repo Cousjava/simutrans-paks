@@ -9,7 +9,7 @@
 #                              Language: pl Polski                             #
 #                             Encoding: ISO-8859-2                             #
 #                             Font: prop-latin2.fnt                            #
-#                           Date Created: 12.06 2020                           #
+#                           Date Created: 14.09 2020                           #
 #                                                                              #
 ################################################################################
 #____________________________bridge - monorail_track____________________________
@@ -398,6 +398,8 @@ MGB_Erzbergwerk_NIC
 Kopalnia rudy ¿elaza (1900)
 MGB_Kokerei_NIC
 Koksownia
+factory_MGB_Kokerei_NIC_details
+Wêglowodory z koksowni? Tak i nie. W grze zrównujemy ropê naftow± ze smo³ê wêglow±, która powstaje w procesie koksowania, poniewa¿ oba surowce s³u¿± w przemy¶le chemicznym, ale nie w tych samych epokach. Dziêki temu zmniejszona jest ilo¶æ surowców w ³añcuchach dostaw. Mianowicie: w koksowni gaz i koks s± wytwarzane z wêgla przez ogrzewanie bez dostêpu do powietrza. W 1870 r. w Niemczech istnia³o ju¿ ponad 340 elektrowni gazowych. G³ównym obiektem zainteresowa³ by³ gaz. S³u¿y³ do o¶wietlenia ulic i budynków u¿yteczno¶ci publicznej. Koks by³ produktem ubocznym i by³ potrzebny w wielkim piecu do produkcji surówki. Nadmiar koksu by³ wykorzystany do ogrzewania budynków publicznych. Oprócz gazu i koksu produkowana by³a równie¿ smo³a wêglowa. Ta gêsta, lepka masa by³a pocz±tkowo trudna do usuniêcia. Smo³a wêglowa sk³ada siê z kilku tysiêcy ró¿nych wêglowodorów i innych zwi±zków. Po odkryciu farb smo³owych powsta³y du¿e fabryki chemiczne, a niegdy¶ lepkie odpady sta³y siê po¿±danym surowcem. Wielcy giganci chemiczni, tacy jak Bayer, Höchst i BASF, zaczêli u¿ywaæ smo³y wêglowej. Kiedy w 1960 r. gaz miejski zosta³ zast±piony gazem ziemnym, produkowano jedynie niewielkie ilo¶ci smo³y wêglowej. Przemys³ chemiczny musia³ zatem przej¶æ na ropê naftow±. Obecnie kilka pozosta³ych koksowni produkuje tylko koks dla hut. Gaz jest dostarczany do huty lub wykorzystywany do ogrzewania pieców koksowniczych. Obecnie do sieci gazowych doprowadzany jest tylko nietoksyczny gaz ziemny.
 MGB_Schrottplatz_NIC
 Z³omowisko
 MGBStahlwerkKoks_NIC
@@ -754,20 +756,62 @@ Ampel
 Sygnalizator
 #__________________________vehicle - electrified_track__________________________
 #__________________________vehicle - electrified_track__________________________
+BR101_Metropolitan
+DB 101 srebrna MetropolitaN
 BR146_5
 BR 146.5
+BZT_ET25B
+DRG ET 25 ty³ siln.
+BZT_ET25C
+DRG ES 25 pasa¿./ster.
+DR_BR101
+DB 101
+E32
+DRG E32
+E60
+DRG E60
 E91_3
 EG 538 (DR E91.3)
+ET25A
+DRG ET 25 przód siln.
 LEW_EL2
 LEW EL 2
+#________________________________vehicle - road_________________________________
+#________________________________vehicle - road_________________________________
+LO3000_Bus
+Robur LO 3000
+LO3000_Post
+Robur LO 3000
 #________________________________vehicle - track________________________________
 #________________________________vehicle - track________________________________
+Aachener Rail Shuttle
+Aachen Rail Shuttle projekt
+Akkutriebwagen AT1
+Pruski szynobus AT1
+Akkutriebwagen ETA150
+DB ETA 150 silnikowy
 B100_KWStE_IIKlasse
 wirtemberski 2kl. B100
 Bahndienstwagen_262
 Cysterna s³u¿bowa typ 262
+Bahnpostwagen_mr-a26
+pocztowy ekspresowy Post mr-a/26
+Bahnpostwagen_mr-a26_140
+pocztowy Post mr-a/26
+Bahnpostwagen_mr-a26_rot
+pocztowy ekspresowy Post mr-a/26 200km/h
+Bahnpostwagen_r-a24-2
+pocztowy Post r-a/24
 Bassinwagen_1885
 Cysterna wannowa
+Baureihe_IK_Ende
+U-Bahn IK ty³
+Baureihe_IK_Front
+U-Bahn IK przód
+Baureihe_IK_Mitte1
+U-Bahn IK 2.segment
+Baureihe_IK_Mitte2
+U-Bahn IK 3.segment
 Bayrische_S2-6_Tender
 Bawarska S 2-6 tender
 bayrischer_BC4ue_Bay_99
@@ -786,10 +830,52 @@ Behaelter-Tragwagen_Lbms589_Siloware
 Lbms 589 wielozb. sypkie
 Behaelter-Tragwagen_Lbms589_Stueckgut
 Lbms 589 platforma
+Behelfsgepaeckwagen_MPw4yge-50
+pomocniczy baga¿. MPw4yge-50
+Behelfspersonenwagen_MCi-43
+zastêpczy 3-kl. MCi-43
 Beiwagen_Cid-24
 Cid-24 pasa¿erski
+Blauer_Enzian_Gepaeckwagen
+TEE "Niebieska goryczka"
+Blauer_Enzian_Mittelwagen
+TEE "Niebieska goryczka"
+Blauer_Enzian_Steuerwagen
+TEE "Niebieska goryczka" panoram.
 BR01Tender
 Badeñska IVh - tender (BR01)
+BR477_Ende
+S-Bahn BR 477 ty³
+BR477_Kopf
+S-Bahn BR 477 przód
+BR477_Waggon1
+S-Bahn BR 477 2. ¶rodk.
+BR477_Waggon2
+S-Bahn BR 477 3. ¶rodk.
+BR481_Ende
+S-Bahn BR 481 ty³
+BR481_Kopf
+S-Bahn BR 481 przód
+BR481_Waggon1
+S-Bahn BR 482 3.pasa¿.
+BR481_Waggon2
+S-Bahn BR 482 3.pasa¿.
+BR485_Ende
+S-Bahn DR 270 (DB 485) ty³
+BR485_Kopf
+S-Bahn DR 270 (DB 485) przód
+BR485_rot_Kopf
+S-Bahn DR 270 (DB 485) "Colalook" przód
+BR485_Waggon1
+S-Bahn DR 270 (DB 485) pasa¿.
+BR485_Waggon2
+S-Bahn DR 270 (DB 485) pasa¿.
+Bvmmsz_187
+Intercity Bvmmsz187
+Bvmmz_188
+Intercity coach Bvmmz188
+Bvmz_185
+Intercity Bvmz 185
 BZT_3Achser
 pasa¿erski 3-os.
 BZT_A4ue-35
@@ -798,26 +884,90 @@ BZT_B4ue-35
 DRG ekspresowy 2-kl. B4ü-35
 BZT_G10-Brh
 2-os. kryty Kassel ham.
+BZT_ICSpeisewagen
+Intercity restauracyjny
 BZT_Leig1a
 Lekki kryty 2-cz³. przód
 BZT_Leig1b
 Lekki kryty 2-cz³. ty³
+BZT_PrAbteilwagen
+pruski przedzia³owy BC4
+BZT_PrAbteilwagen_Brh
+pruski przedzia³owy BC4 ham.
 BZT_PrPostwagen
 Pruski baga¿owy Pw4-Pr04
 BZT_Pwi
 pruski baga¿owy Pwi
 BZT_WR4ue-35
 DRG ekspresowy restauracyjny WR4ü-35
+Containertragwagen_Sgss-y703
+platforma kontenerowa Sgss-y703
+D-Zug-Wagen_C4ue-26_1.u.2.Kl.
+"Szczupak" AB4ü-26 1/2.kl
+D-Zug-Wagen_C4ue-26_3.Kl.
+"Szczupak" C4ü-26 3.kl
 Dampftriebwagen Bauart Thomas
 szynobus parowy Thomasa
+DB_BR_210
+DB 210
+DB_BR_216
+DB 216
+DB_BR_218.0
+DB 218.0
+DB_BR_218.4
+DB 218.4
+DB_BR628
+DB BR 628 siln.
+DB_BR928
+DB BR 928 ster.
+Doppelstock_LBE_Front
+dwupoziomowy LBE przód
+Doppelstock_LBE_Hinten
+dwupoziomowy LBE ty³
+Doppelstock_Steuerwagen_rot_Ende
+DB piêtrowy ster. ty³
+Doppelstock_Steuerwagen_rot_Kopf
+DB piêtrowy ster. przód
+Doppelstock_Wagen_rot
+DB piêtrowy 751 DB(p)za
+DR118
+DR 118
 DR713
 DR 713 silnikowy
 DR714
 DR 714 pasa¿erski
+DR749
+DR 749
+Drehgestell-Flachwagen_Rils653_Stueckgut
+plandeka Rils 653
+ET165_Ende
+S-Bahn ET 165 ty³
+ET165_Kopf
+S-Bahn ET 165 przód
+ET165_Waggon1
+S-Bahn ET 165 2. ¶rodk.
+ET165_Waggon2
+S-Bahn ET 165 3. ¶rodk.
+ET403_Ende
+ET 403 ty³
+ET403_Front
+ET 403 przód
+ET403_Mittelwagen
+ET 404 ¶rodk.
+ET403_Speisewagen
+ET 404 restauracyjny
+ET420_Ende
+S-Bahn BR 420 ty³(Monachium)
+ET420_Front
+S-Bahn BR 420 przód (Monachium)
+ET420_Mitte
+S-Bahn BR 421 ¶rodk.
 Flachwagen_catg_01
 Platforma obni¿ona
 G10
 2-os. kryty Kassel
+G11-Wagen
+wielkopojemny Gl11
 G20
 2-os. kryty Kassel G20
 gedeckter_Gueterwagen1895_Stueckgut
@@ -826,6 +976,18 @@ Getreidewagen
 Otw. dach p³ody rolne, 4-os.
 Hechtwagen_AB4ue23a
 "Szczupak" AB4ü 23a
+Henschel_DHG500C
+Henschel DHG 500 C
+IntegBOB_Ende
+Integral S5D95 tyl. siln.
+IntegBOB_Gondel1
+Integral S5D95 przód pasa¿.
+IntegBOB_Gondel2
+Integral S5D95 tyl. pasa¿.
+IntegBOB_Kopf
+Integral S5D95 przód siln.
+IntegBOB_LW
+Integral S5D95 centr. siln.
 KabTender
 Towarowa BR 50 - tender kabinowy
 Kesselwagen Zacens
@@ -836,12 +998,32 @@ Kesselwagen Zaes
 Cysterna 4-os. Zaes
 Kesselwagen Zs
 Cysterna 2-os. Zs
+Laakklps608_Ende
+intermodalny Laakklps 608 ty³
+Laakklps608_Front
+intermodalny Laakklps 608 przód
 LAG_Nr891-ET194_Stueckgut
 LAG No 891 / ET 194 kryty
 LAG_Nr891-ET194_Vieh
 LAG 891 ET 194 bydlêcy
 LEG-Wagon_Nr8
 Ludwigsbahn wagon nr8
+Leichttriebwagen_SVG
+szynobus z Sylt
+Metropolitan_Mittelwagen
+MetropolitaN Intercity
+Metropolitan_Steuerwagen
+MetropolitaN ster.
+NE81-DB_BR626_VT
+NE 81 (DB 626) siln.
+NE81-DB_BR926_VB
+NE 81 (DB 926) ster.
+NGT_HST_Ende
+NGT ty³
+NGT_HST_Front
+NGT przód
+NGT_HST_Mitte
+NGT ¶rodk.
 NGT_Post_Ende
 NGT pocztowy ty³
 NGT_Post_Front
@@ -854,12 +1036,18 @@ offener Gueterwagen 1835 Stueckgut
 Wêglarka 1835
 P8Tender
 Pruska P8 - tender
+PBL Post
+przedzia³ pocztowy
 Personenwagen CL Bay 11
 bawarski lokalny CL Bay 11
 pfaelzischer_ABueBay97b
 palatyñski ABü Bay97b
 pfaelzischer_C4ueBay98
 palatyñski ekspresowy C4ü Bay 98
+Postwagen 2ss-t13
+pocztowy 2ss-t/13
+Postwagen 2ss-t15
+pocztowy 2ss-t/15
 Postwaggon Post4-a17
 pocztowy Post4ü-a/17
 Postwaggon PwPost4ue-28
@@ -868,6 +1056,8 @@ pr_Abteilwagen_ABC4_Pr01
 pruski przedzia³owy ABC4 Pr01
 preussische_T0
 Pruska T0
+Preussischer_ET531
+pruski 531 "Berlin"
 preussischer_PW_fuer_T0_Kl.2_3_4
 pruski 2kl./3kl./4kl.(sk³ad T0)
 preussischer_PW_fuer_T0_Kl.3_4
@@ -876,6 +1066,10 @@ PrG8Tender
 Pruska G8 - tender
 PwgPr14
 Brankard baga¿owy PwgPr14
+Rekowagen Baag
+przebudowany Baag
+Rekowagen Bghw
+przebudowany Bghw
 S1_Tender
 Pruska S1 - tender
 Saechsischer_Bahnpostwagen_1860
@@ -884,28 +1078,66 @@ saechsischer_C_Sa_12
 saski C Sa12 3-kl.
 saechsischer_C4ue_sa07
 saski C4ü Sa 07
+Schienenzeppelin
+Zeppelin szynowy
 Schnellzugwagen_3.Kl._C4uepr11
 pruski ekspresowy C4ü Pr11 3-kl.
 Selbstentladewagen Tals 966
 Tals 966
+Silberlinge_orange
+"Srebrzyk" osob. B4nb-59 pom.
+Silberlinge_silbern
+"Srebrzyk" osob. B4nb-59
 Spirituswagen_1875
 Cysterna destylaty
 Steuerwagen_ES89
 ES 89 sterowniczy
 T34Tender
 DRG BR 38 - tender typ T34
+Taschenwagen Sdgmns 743Post
+kieszeniowy Sdgmns 743
+TEE_Triebwagen_Ende
+TEE VT 11.5 tylny siln.
+TEE_Triebwagen_Kopf
+TEE VT 11.5 przedni siln.
+TEE_Waggon
+TEE VT 11.5 pasa¿. ¶rodk.
+Tieflader
+obni¿ona platforma
 Triebwagen_ET_184_4
 ET 184-4
 Triebwagen_ET_186_11
 ET 186-11
 Triebwagen_ET89
 ET 89 silnikowy
+TW121a_Baden
+badeñski 121a
+TwindexxVario_Mittelwagen
+Twindexx Vario ¶rodk.
+TwindexxVario_Steuerwagen
+Twindexx Vario ty³ ster.
+VB140
+VS 145 sterowniczy (do VT 33.2)
+VB75
+DR 135 (DB VB 140 032-047) pasa¿.
 Versuchstriebwagen_Siemens_und_Halske
 Szynobus 3-faz. Siemens&Halske
+VT33
+VT 33.2 silnikowy
+VT75
+DR 135 (DB VT 75) siln.
 Wannentender
 Tender beczkowy (BR 38, 44, 50)
+x-Wagen_ABx791
+iks ABx791
+x-Wagen_Bx794
+iks Bx794
+x-Wagen_Bxf796
+iks ster. Bxf796
 #________________________________vehicle - water________________________________
 #________________________________vehicle - water________________________________
+Faehre KoenigswinterIII
+prom Königswinter III
 Faehre_KoenigswinterIII_Autos
 Prom samochodowy Königswinter III
 Loreley_IV

@@ -70,7 +70,34 @@ On the safe side is who keeps the old package version (renaming a folder before 
 <p>But even if your game has started without complaint, Simutrans may report missing objects. Even more dangerous if you don't get any feedback and think everything is okay because probably one or the other factory requires a raw material or the newly introduced packaging material without the production stops, which you may not notice until several months later.<br>
 If several objects are missing, all you can do is find them based on the one you have last saved the map with and replace them with the new versions.</p>
 </article>
+<h5> Which vehicles do I choose for a route? </h5>
+<article>
+<p> One should always start from the type of goods. Choose a cheap, modern car that is available at this time. Since version 120.4.1 you can sort the depot according to cost / unit. Here in the vehicle database you can also sort vehicles according to "rcost% e". That is the percentage of the costs of the possible revenue. A car found this way may have a low top speed. For freight trains, for example, this will often only be 65 km / h or 90 km / h. Now you can choose a suitable locomotive to match the speed and train length. Using express locomotives in front of freight trains is usually not economically viable. With buses in city traffic you should note that there is a speed limit of 50 km / h in the city. Faster buses are then unnecessarily expensive. <br>
+</p> <p>
+For train formation, you can orientate yourself on the reality at the Bundesbahn:
+The railway has used inexpensive vehicles on less frequented branch lines. These were steam railcars, rail buses, V100 with Silberlinge and BR 628. <br>
+In local transport with many passengers, the Berlin S-Bahn, double-decker coaches or ET420. <br>
+In contrast, prototypes, luxury trains and high-speed trains are normally expensive. The economical operation of Rheingold, Schienenzeppelin, TEE VT11.5, BR103 with InterCity (dining car), ET403, ICE is challenging. <br>
+</p> <p>
+As a rough guide: <br> Local traffic needs a utilization of 30% in both directions in order to run economically. <br> Express trains need a utilization of 50% in both directions. <br> Luxury trains, prototypes, test railcars and technical pioneering efforts need up to 100% utilization. </p>
+</article>
+<h5> Two lane roads? </h5>
+<article>
+<p> At the start of the game and during normal city growth, two-lane roads have been built since version 1.2. These could be boulevards or highways. Unfortunately, these streets are a bit random and are not planned by any city planner. In addition, if there are to be motorways, some reworking is necessary. The cross connections that Simutrans automatically builds must be deleted again and the traffic signs set up accordingly. For me, two-lane trams were the reason to change the configuration file cityrules.tab so that two-lane streets are created. I no longer wanted to tear down rows and rows of houses and weaken the city. Other players start with very small cities and specify the road grid and the two-lane traffic routes from the start. Each player has a different approach. <br>
+Since the highways are a matter of taste, some like them, others don't. There are two versions of the cityrules.tab in the config folder. <br>
+cityrules_VS1.2_mit_Autobahn.tab <br>
+cityrules_VS1.2_ohne_Autobahn.tab <br>
+As the name suggests: with(mit) or without(ohne) highways. By renaming or copying to cityrules.tab you can choose whether two-lane roads are to be built.
+</p>
+</article>
+<h5> Urban growth? <br> Pancakes or high-rise desert? </h5>
+<article>
+<p> In the "cityrules.tab" file in the "config" folder there is a parameter "renovation_percentage = 4" <br>
+"renovation_percentage = 1" and the cities diverge like pancakes, <br>
+"renovation_percentage = 10" the houses rise in level quite quickly and become high-rise buildings. <br>
+The value can also be changed in the GUI under the settings in the toolbox. It is important to save and reload the game after the change.
+</p></article>
 </main>
-<footer><p class="wir">&copy; 25.12.2018 - Team PAK128.german</p></footer>
+<footer><p class="wir">&copy; 21.10.2020 - Team PAK128.german</p></footer>
 </body>
 </html>

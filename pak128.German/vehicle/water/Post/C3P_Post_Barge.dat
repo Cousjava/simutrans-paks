@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=MHz-C3P_Post_Barge
@@ -10,7 +9,8 @@ copyright=MHz
 intro_year=1972
 intro_month=4
 cost=13761000
-runningcost=636
+runningcost=386
+fixed_cost=2866
 waytype=water
 engine_type=diesel
 freight=Post

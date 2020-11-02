@@ -12,6 +12,7 @@ retire_year=1924
 retire_month=12
 cost=150000
 runningcost=35
+fixed_cost=x
 waytype=track
 freight=None
 weight=15

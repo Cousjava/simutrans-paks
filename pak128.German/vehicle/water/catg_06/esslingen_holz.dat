@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Frachter_Esslingen_Holztransporter
@@ -13,7 +12,8 @@ intro_month=1
 #retire_year=2030
 #retire_month=12
 cost=10146000
-runningcost=728
+runningcost=452
+fixed_cost=2599
 waytype=water
 freight=Holz
 engine_type=diesel

@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=DaimlerBenz_LP322_Kuehlwaren
@@ -12,17 +11,20 @@ intro_month=1
 retire_year=1965
 retire_month=12
 cost=2734800
-runningcost=54
+runningcost=37
+fixed_cost=700
 waytype=road
 freight=Fleisch
 engine_type=diesel
 power=80
 speed=77
+# 110PS, Nutzlast 6.8t, Gesamtgewicht 10.5t Anhänger 8t Lastzug 18t
 weight=3.98
 payload=9
 length=7
 sound=1
-constraint[prev][0] = none
+constraint[prev][0]=none
+constraint[next][0]=none
 EmptyImage[W]=mb_lp322.1.1
 EmptyImage[NW]=mb_lp322.1.2
 EmptyImage[N]=mb_lp322.1.3

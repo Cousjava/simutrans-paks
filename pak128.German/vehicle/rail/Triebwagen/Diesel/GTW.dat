@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Stadler_GTW
@@ -10,7 +9,8 @@ copyright=Lemuria
 intro_year=2000
 intro_month=1
 cost=10460000
-runningcost=148
+runningcost=90
+fixed_cost=2252
 waytype=track
 freight=Passagiere
 payload=57
@@ -36,6 +36,7 @@ intro_year=2000
 intro_month=1
 cost=6770000
 runningcost=30
+fixed_cost=769
 waytype=track
 freight=Passagiere
 engine_type=diesel
@@ -62,7 +63,8 @@ copyright=Lemuria
 intro_year=2000
 intro_month=1
 cost=10460000
-runningcost=148
+runningcost=90
+fixed_cost=2252
 waytype=track
 freight=Passagiere
 payload=57
@@ -81,4 +83,3 @@ EmptyImage[W]=GTW_Back.0.6
 EmptyImage[NW]=GTW_Back.0.7
 EmptyImage[NE]=GTW_Back.0.8
 ----------------------------------
-

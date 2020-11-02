@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Frachter_Esslingen_Schuettgut
@@ -10,7 +9,8 @@ copyright=pumuckl999
 intro_year=1920
 intro_month=1
 cost=15960000
-runningcost=1238
+runningcost=758
+fixed_cost=3811
 waytype=water
 freight=Kohle
 engine_type=diesel

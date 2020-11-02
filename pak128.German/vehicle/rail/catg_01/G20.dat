@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=G20
@@ -12,7 +11,8 @@ intro_month=5
 retire_year=1953
 retire_month=5
 cost=3000000
-runningcost=73
+runningcost=50
+fixed_cost=973
 waytype=track
 freight=Papier
 payload=12

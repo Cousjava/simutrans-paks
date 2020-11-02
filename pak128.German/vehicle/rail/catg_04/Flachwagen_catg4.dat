@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 2008
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Flachwagen_2
@@ -10,7 +9,8 @@ copyright=TonyBzt
 intro_year=1971
 intro_month=9
 cost=6720000
-runningcost=108
+runningcost=69
+fixed_cost=1624
 waytype=track
 freight=Fleisch
 payload=20

@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Auflieger_40t_Silotransport
@@ -9,7 +9,8 @@ copyright=RedRabbit
 intro_year=1986
 intro_month=1
 cost=5568000
-runningcost=118
+runningcost=71
+fixed_cost=1219
 waytype=road
 speed=80
 weight=4.8
@@ -30,6 +31,7 @@ constraint[prev][9]=MercedesBenz_SK_Zugmaschiene
 constraint[prev][10]=Magirus_Jupiter200D_Zugmaschine
 constraint[prev][11]=MB_LZ6000
 constraint[prev][12]=MB_LZ8000
+constraint[prev][13]=W50_fluessigeLebensmittel
 Constraint[next][0]=none
 EmptyImage[S]=RR_Trailer_40t_Silo.0.1,-11,8
 EmptyImage[N]=RR_Trailer_40t_Silo.0.2,-9,8

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 12-09-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Torpedopfannenwagen_8008
@@ -10,7 +9,8 @@ copyright=pumuckl999
 intro_year=1970
 intro_month=1
 cost=66736000
-runningcost=1230
+runningcost=750
+fixed_cost=14272
 waytype=track
 freight=Stahl
 payload=160

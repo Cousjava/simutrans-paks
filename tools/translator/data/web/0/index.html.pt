@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//PT">
+<html>
+  <head>
+    <title>Simutrans Home</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="Simutrans, Help, Simutrans Help">
+    <meta name="robots" content="index,follow">
+    <link href="css/style.css" type="text/css" rel="StyleSheet" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> 
+  </head>
+  <body>
+    <img style="margin-left:auto;margin-right: auto;" id="logo" src="img/simutrans.png" alt="SimuTranslator logo" width="50%" height="auto" title="SimuTranslator" />   
+    <hr />
+<div align="center">
+<a href="https://sourceforge.net/projects/simutrans/"><img src="img/sourceforge.png" alt="Spiele download sourceforge" title="Simutrans auf SourceForge" ></a> 
+<a href="https://store.steampowered.com/app/434520/Simutrans"><img src="img/steam_en.png" alt="Spiele auf Steam" title="Simutrans auf Steam" ></a>
+</div>
+<div id='width600train3'>
+<h1 align="center"><font size="+3">Simutrans</font></h1>
+<p>
+    <a href="index.html.en">english</a>
+    <a href="index.html.de">deutsch</a>
+    <a href="index.html.es">español</a>
+</p>
+
+				
+<h2 class="bb_tag">Transporte Qualquer Coisa de Alguma Maneira</h2>
+<p>Simutrans lhe permite transportar desde passageiros e correios a matérias-primas e produtos de consumo por qualquer meio de transporte. Cada pakset oferece um conjunto de veículos terrestres, aéreos e aquáticos para você tocar seu negócio, pode ser caminhões, ônibus, trens, bondes, aviões, navios, maglevs, monotrilhos, não importa, você tem a escolha.<br>
+<br>
+Tudo que você precisa lembrar, é que os cidadãos e produtos do Simutrans simplesmente não entram em seus veículos e vão para qualquer lugar que você mandá-los. Eles têm seus destinos individuais: as pessoas querem ver atrações turísticas, ir às compras, ou visitar os amigos. As cargas também têm destinos - as fábricas têm contratos entre elas e não irão comprar ou vender de outros. Se você não dá a possibilidade deles irem onde querem, eles não irão utilizar seus serviços.
+</p>
+
+<h2 class="bb_tag">Seu Estilo de Jogo</h2>
+Você pode se desafiar em um jogo normal, tentando transformar sua companhia em um negócio próspero e rico. Ou pode apenas relaxar e se divertir jogando sem pressa ou dinheiro, apenas pela satisfação de transportar tudo.<br><br>Aquilo que você transporta afeta o crescimento da cidade. Cada unidade de qualquer coisa que você transporta afeta as cidades próximas as fazendo crescer e prosperar. Às vezes as cidades vão criar novas atrações turísticas e outros lugares de interesse que vão atrair muitos passageiros, ou talvez seus serviços atraiam novas fábricas, lhe dando mais oportunidades de negócio.
+
+<h2 class="bb_tag">O Mapa é Seu</h2>
+O mapa é aonde você joga e nós sabemos disso e não queremos que se sinta restringido. No Simutrans você pode escolher desde mapas super pequenos a mapas enormes, mudar o nível do mar, construir rios e lagos, plantar e cortar árvores, construir parques e cidades, definir os climas locais, construir cadeias de indústrias, modelar o terreno, ou melhor, fazer o mapa seu.
+
+<h2 class="bb_tag">Jogos Multiplayer</h2>
+Você também pode jogar Simutrans com outras pessoas em jogos multiplayer, seja online ou por LAN. Você pode criar um servidor público ou jogar com amigos em um servidor pessoal. Compita e colabore com pessoas ao redor do mundo.
+
+<h2 class="bb_tag">Mod &amp; Comunidade</h2>
+Se você acha que um prédio poderia ser adicionado, ou um novo tipo de rodovia deveria estar disponível, ou quer criar um novo pacote gráfico totalmente diferente, você pode. O Simutrans deixa você criar novos objetos com facilidade, apenas desenhe e defina os parâmetros e você tem um objeto totalmente novo para usar no Simutrans.<br><br>E se você precisa de ajuda, a comunidade pode lhe ajudar. O Simutrans é desenvolvido e apoiado pela comunidade, que como uma só influencia e cria o jogo. É a comunidade que mantém o jogo vivo, e é a comunidade que modifica o jogo.
+
+<h2 class="bb_tag">História</h2>
+Como muitos jogos, Simutrans começou pequeno com o sonho de um homem. Este era Hansjörg Malthaner, também conhecido como Hajo, que criou o Simutrans como um hobby em 1997, para aprender programação orientada a objeto em C++. A partir deste ponto, o Simutrans evoluiu de um simples programa de um homem, para um grande projeto com vida própria e uma comunidade de apoiadores e contribuintes.<br><br>Em 2004 Hansjörg decidiu se retirar do desenvolvimento, e desde então o desenvolvimento ficou nas mãos da comunidade do Simutrans. Cada projeto, ou parte do jogo, tem seu coordenador. Graças aos esforços desta comunidade o desenvolvimento continua.						
+
+</p>
+
+</div>
+</body>
+</html>

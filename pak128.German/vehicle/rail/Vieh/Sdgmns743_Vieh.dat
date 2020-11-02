@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 09-06-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Taschenwagen Sdgmns 743Vieh
@@ -10,7 +9,8 @@ copyright=pumuckl999
 intro_year=1990
 intro_month=1
 cost=12340000
-runningcost=205
+runningcost=126
+fixed_cost=2654
 waytype=track
 freight=Vieh
 payload=40

@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=DaimlerBenz_LP810_Landwirtschaft
@@ -11,7 +11,8 @@ intro_month=12
 retire_year=1984
 retire_month=12
 cost=1423500
-runningcost=25
+runningcost=19
+fixed_cost=424
 waytype=road
 freight=Hopfen
 engine_type=diesel

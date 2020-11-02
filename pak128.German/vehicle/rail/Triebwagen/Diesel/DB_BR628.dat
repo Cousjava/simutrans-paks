@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
+#    Neu:
 #	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
 ---------------------------------
 obj=vehicle
@@ -12,7 +12,8 @@ intro_month=1
 retire_year=1999
 retire_month=12
 cost=19700000
-runningcost=236
+runningcost=157
+fixed_cost=3937
 freight=Passagiere
 power=410
 gear=144
@@ -34,7 +35,6 @@ EmptyImage[W]=DB_BR628.0.6
 EmptyImage[NW]=DB_BR628.0.7
 EmptyImage[NE]=DB_BR628.0.8
 --------------------------------
-
 obj=vehicle
 name=DB_BR928
 copyright=RedRabbit
@@ -43,7 +43,8 @@ intro_month=1
 retire_year=1999
 retire_month=12
 cost=15400000
-runningcost=218
+runningcost=135
+fixed_cost=3387
 freight=Passagiere
 payload=84
 speed=120

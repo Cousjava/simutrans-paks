@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=MS weisser Hai
@@ -13,7 +12,8 @@ retire_year=1955
 retire_month=12
 waytype=water
 cost=10890000
-runningcost=661
+runningcost=411
+fixed_cost=2632
 freight=Passagiere
 payload=250
 engine_type=diesel

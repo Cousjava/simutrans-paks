@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 15-05-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Offener Drehgestellwagen Eanos-x059
@@ -10,7 +9,8 @@ copyright=pumuckl999
 intro_year=2001
 intro_month=1
 cost=11947000
-runningcost=197
+runningcost=120
+fixed_cost=2519
 waytype=track
 freight=Kohle
 payload=65

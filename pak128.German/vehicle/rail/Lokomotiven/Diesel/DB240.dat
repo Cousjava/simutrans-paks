@@ -10,6 +10,7 @@ intro_year=1989
 intro_month=1
 cost=43640000
 runningcost=251
+fixed_cost=6316
 waytype=track
 freight=None
 engine_type=diesel

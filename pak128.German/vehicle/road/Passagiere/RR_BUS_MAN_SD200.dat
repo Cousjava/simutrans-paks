@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=MAN_SD200
@@ -11,11 +11,12 @@ intro_month=1
 retire_year=1985
 retire_month=12
 cost=7745000
-runningcost=236
+runningcost=144
+fixed_cost=1608
 waytype=road
 freight=Passagiere
 payload=92
-engine_type=diesel 
+engine_type=diesel
 speed=50
 weight=11
 power=147

@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=BZT_Rheingold_1_Pack1
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1940
 retire_month=12
 cost=14910000
-runningcost=240
+runningcost=187
+fixed_cost=5435
 waytype=track
 freight=Post
 payload=60
@@ -37,7 +37,8 @@ intro_month=1
 retire_year=1940
 retire_month=12
 cost=14910000
-runningcost=240
+runningcost=187
+fixed_cost=5435
 waytype=track
 freight=Post
 payload=60

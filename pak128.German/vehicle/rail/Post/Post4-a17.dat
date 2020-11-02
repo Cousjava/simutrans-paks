@@ -2,17 +2,17 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 14-10-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Postwaggon Post4-a17
 copyright=pumuckl999
-intro_year=1917
+intro_year=1908
 intro_month=1
 retire_year=1945
 retire_month=12
 cost=10260000
-runningcost=187
+runningcost=146
+fixed_cost=3651
 waytype=track
 length=10
 freight=Post

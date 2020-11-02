@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=MB_LP1620_Holztransporter
@@ -11,13 +10,15 @@ intro_year=1966
 intro_month=1
 retire_year=1975
 retire_month=12
-cost=2508000
-runningcost=38
+cost=2460000
+runningcost=29
+fixed_cost=606
 waytype=road
 freight=Holz
 engine_type=diesel
-power=160
+power=154
 speed=80
+# 210PS, Nutzlast 9t, Gesamtgewicht 16t Anhänger 22t Lastzug 38t
 weight=7.6
 payload=8
 length=8
@@ -50,4 +51,3 @@ FreightImage[1][SE]=mb_lp1620_holz.2.6
 FreightImage[1][S]=mb_lp1620_holz.2.7
 FreightImage[1][SW]=mb_lp1620_holz.2.8,20
 -------------------------------------------------
-

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu:08-2011
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Autos_alt
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1937
 retire_month=11
 cost=1160000
-runningcost=39
+runningcost=28
+fixed_cost=487
 waytype=track
 freight=Autos
 payload=2

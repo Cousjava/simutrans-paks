@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu: 13-06-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Frachter_Esslingen_Siloware
@@ -14,6 +13,7 @@ intro_month=1
 #retire_month=12
 cost=36290000
 runningcost=2604
+fixed_cost=x
 waytype=water
 freight=Tierfutter
 engine_type=diesel

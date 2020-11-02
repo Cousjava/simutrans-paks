@@ -10,6 +10,7 @@ retire_month=12
 waytype=tram_track
 cost=730000
 runningcost=4
+fixed_cost=129
 engine_type=electric
 power=120
 gear=120
@@ -40,4 +41,3 @@ EmptyImage[NE]=rft.0.3
 #freightimage[0][SE]=
 #freightimage[0][NE]=
 #freightimage[0][NW]=
-#_EO_

@@ -12,6 +12,7 @@ retire_year=1988
 retire_month=5
 cost=440800
 runningcost=7
+fixed_cost=216
 waytype=road
 speed=79
 power=52

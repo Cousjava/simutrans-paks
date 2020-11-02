@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 2008
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=BZT_B4ue-35
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1974
 retire_month=12
 cost=22790000
-runningcost=301
+runningcost=207
+fixed_cost=6113
 waytype=track
 freight=Passagiere
 payload=100

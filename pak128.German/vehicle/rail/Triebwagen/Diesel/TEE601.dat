@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=TEE_Triebwagen_Kopf
@@ -11,7 +11,8 @@ intro_month=6
 retire_year=1991
 retire_month=12
 cost=16130000
-runningcost=174
+runningcost=166
+fixed_cost=4303
 waytype=track
 engine_type=diesel
 smoke=smoke_diesel
@@ -34,7 +35,6 @@ EmptyImage[W]=TEE601.0.6
 EmptyImage[NW]=TEE601.0.7
 EmptyImage[NE]=TEE601.0.8
 ---------------------------------
-
 obj=vehicle
 name=TEE_Waggon
 copyright=Lemuria
@@ -43,7 +43,8 @@ intro_month=6
 retire_year=1991
 retire_month=12
 cost=16550000
-runningcost=203
+runningcost=139
+fixed_cost=4325
 waytype=track
 freight=Passagiere
 payload=68
@@ -64,7 +65,6 @@ EmptyImage[W]=TEE601.1.6
 EmptyImage[NW]=TEE601.1.7
 EmptyImage[NE]=TEE601.1.8
 -----------------------------------
-
 obj=vehicle
 name=TEE_Triebwagen_Ende
 copyright=Lemuria
@@ -73,7 +73,8 @@ intro_month=6
 retire_year=1991
 retire_month=12
 cost=16130000
-runningcost=174
+runningcost=166
+fixed_cost=4303
 waytype=track
 engine_type=diesel
 smoke=smoke_diesel

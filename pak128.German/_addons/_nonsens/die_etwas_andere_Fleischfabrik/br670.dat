@@ -10,6 +10,7 @@ power=250
 cost=2500000
 weight=4
 RunningCost=150
+fixed_cost=x
 intro_year=1905
 engine_type=diesel
 smoke=Diesel_small

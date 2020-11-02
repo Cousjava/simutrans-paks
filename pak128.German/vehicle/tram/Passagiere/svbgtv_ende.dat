@@ -1,23 +1,22 @@
+---------------------------------
 #	PAK128.german
 #	Vehicle
+---------------------------------
 obj=vehicle
 name=Stadler_Variobahn_Ende
 copyright=pumuckl999
 intro_year=2007
 intro_month=11
-#retire_year=1978
-#retire_month=12
 waytype=tram_track
 cost=4600000
-runningcost=125
+runningcost=75
+fixed_cost=953
 freight=Passagiere
 payload=50
 engine_type=electric
 speed=60
 weight=10
 length=7
-#sound=
-#smoke=
 constraint[prev][0]=Stadler_Variobahn_Mitte_Gross
 constraint[next][0]=Stadler_Variobahn_Kopf
 constraint[next][1]=none
@@ -29,13 +28,3 @@ EmptyImage[SW]=svbgtv.3.7
 EmptyImage[SE]=svbgtv.3.5
 EmptyImage[NW]=svbgtv.3.1
 EmptyImage[NE]=svbgtv.3.3
-#freightImageType[0]=
-#freightimage[0][S]=
-#freightimage[0][N]=
-#freightimage[0][E]=
-#freightimage[0][W]=
-#freightimage[0][SW]=
-#freightimage[0][SE]=
-#freightimage[0][NE]=
-#freightimage[0][NW]=
-#_EO_

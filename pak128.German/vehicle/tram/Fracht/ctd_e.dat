@@ -9,7 +9,8 @@ retire_year=2016
 retire_month=12
 waytype=tram_track
 cost=3150000
-runningcost=100
+runningcost=60
+fixed_cost=642
 freight=Maschinen
 payload=20
 speed=50
@@ -36,4 +37,3 @@ EmptyImage[NE]=ctd.2.3
 #freightimage[0][SE]=
 #freightimage[0][NE]=
 #freightimage[0][NW]=
-#_EO_

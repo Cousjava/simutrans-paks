@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 13-09-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=offener_Gueterwagen_SSlm25_Holz
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1960
 retire_month=12
 cost=5414000
-runningcost=123
+runningcost=81
+fixed_cost=1501
 waytype=track
 freight=Bretter
 payload=36

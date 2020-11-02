@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=DaimlerBenz_LP1620_Stueckgut
@@ -10,19 +10,19 @@ intro_year=1966
 intro_month=1
 retire_year=1975
 retire_month=12
-cost=4716000
-runningcost=84
+cost=4662000
+runningcost=57
+fixed_cost=1065
 waytype=road
 freight=Buecher
 engine_type=diesel
-power=160
+power=154
 speed=80
-weight=7.6
+# 210PS, Nutzlast 9t, Gesamtgewicht 16t Anhänger 22t Lastzug 38t
+weight=7
 payload=14
 length=8
 constraint[prev][0]=none
-constraint[next][0]=anhaenger_1965_16t_Stueckgut_Plane
-constraint[next][1]=none
 EmptyImage[W]=mb_lp1620.0.1
 EmptyImage[NW]=mb_lp1620.0.2
 EmptyImage[N]=mb_lp1620.0.3

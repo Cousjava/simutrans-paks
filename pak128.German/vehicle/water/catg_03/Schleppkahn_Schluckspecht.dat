@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Tankschleppkahn_Schluckspecht
@@ -13,7 +12,8 @@ retire_year=1965
 retire_month=12
 waytype=water
 cost=6693750
-runningcost=658
+runningcost=395
+fixed_cost=1439
 freight=Oel
 payload=175
 speed=17

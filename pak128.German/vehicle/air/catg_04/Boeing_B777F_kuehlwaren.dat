@@ -2,23 +2,23 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Boeing_B777F_Kuehlwaren
 copyright=Pumuckl999
-intro_year=2005
+intro_year=2008
 intro_month=1
 waytype=air
-cost=967680000
-runningcost=1249
+cost=548352000
+runningcost=557
+fixed_cost=63402
 freight=Fleisch
-payload=180
+payload=102
 engine_type=diesel
-power=32000
-gear=150
+power=197200
+gear=100
 speed=896
-weight=144
+weight=244
 length=6
 sound=5
 EmptyImage[W]=Boeing_B777F.0.1

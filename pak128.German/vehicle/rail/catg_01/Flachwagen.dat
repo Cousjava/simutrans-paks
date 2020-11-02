@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$ 
 ---------------------------------
 obj=vehicle
 name=Flachwagen_catg_01
@@ -10,7 +9,8 @@ copyright=TonyBzt
 intro_year=1942
 intro_month=1
 cost=6120000
-runningcost=114
+runningcost=76
+fixed_cost=1666
 waytype=track
 freight=Buecher
 payload=20
@@ -35,7 +35,7 @@ FreightImage[0][N]=Flachwagen.1.4
 FreightImage[0][W]=Flachwagen.1.5
 FreightImage[0][NW]=Flachwagen.1.6
 FreightImage[0][NE]=Flachwagen.1.7
-# Chemikalien 
+# Chemikalien
 FreightImagetype[1]=Chemikalien
 FreightImage[1][S]=Flachwagen.1.0
 FreightImage[1][E]=Flachwagen.1.1

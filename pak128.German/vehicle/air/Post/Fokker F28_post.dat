@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Fokker_F28_Post
@@ -12,15 +11,16 @@ intro_month=1
 retire_year=1987
 retire_month=12
 waytype=air
-cost=165555000
-runningcost=285
+cost=254700000
+runningcost=278
+fixed_cost=29740
 freight=Post
-payload=65
+payload=100
 engine_type=diesel
-power=4500
-gear=45
+power=17600
+gear=100
 speed=849
-weight=17
+weight=24
 length=4
 sound=boing.wav
 EmptyImage[S]=Fokker F28_post.0.6

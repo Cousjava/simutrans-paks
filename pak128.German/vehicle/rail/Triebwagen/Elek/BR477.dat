@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
+#    Neu:
 #	Letzte Bearbeitung: $Date$ - $Author$:
 ---------------------------------
 obj=vehicle
@@ -12,7 +12,8 @@ intro_month=1
 retire_year=2003
 retire_month=9
 cost=12162000
-runningcost=240
+runningcost=164
+fixed_cost=3127
 waytype=track
 engine_type=electric
 freight=Passagiere
@@ -34,7 +35,6 @@ emptyimage[w]=BR477.0.6
 emptyimage[nw]=BR477.0.7
 emptyimage[ne]=BR477.0.8
 ------------------------------
-
 obj=vehicle
 name=BR477_Waggon1
 copyright=Lemuria
@@ -43,7 +43,8 @@ intro_month=1
 retire_year=2003
 retire_month=9
 cost=10170000
-runningcost=221
+runningcost=143
+fixed_cost=2603
 waytype=track
 engine_type=electric
 freight=Passagiere
@@ -64,7 +65,6 @@ emptyimage[w]=BR477.1.6
 emptyimage[nw]=BR477.1.7
 emptyimage[ne]=BR477.1.8
 ----------------------------------
-
 obj=vehicle
 name=BR477_Waggon2
 copyright=Lemuria
@@ -73,7 +73,8 @@ intro_month=1
 retire_year=2003
 retire_month=9
 cost=10170000
-runningcost=221
+runningcost=143
+fixed_cost=2603
 waytype=track
 engine_type=electric
 freight=Passagiere
@@ -94,7 +95,6 @@ emptyimage[w]=BR477.1.6
 emptyimage[nw]=BR477.1.7
 emptyimage[ne]=BR477.1.8
 ---------------------------------
-
 obj=vehicle
 name=BR477_Ende
 copyright=Lemuria
@@ -103,7 +103,8 @@ intro_month=1
 retire_year=2003
 retire_month=9
 cost=12402000
-runningcost=245
+runningcost=167
+fixed_cost=3177
 waytype=track
 engine_type=electric
 freight=Passagiere

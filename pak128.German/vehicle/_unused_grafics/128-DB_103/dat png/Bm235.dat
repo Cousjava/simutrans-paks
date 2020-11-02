@@ -14,6 +14,7 @@ speed=200
 cost=802000
 weight=45
 RunningCost=14
+fixed_cost=x
 intro_year=1979
 intro_month=1
 EmptyImage[S]=Bm235.0.0

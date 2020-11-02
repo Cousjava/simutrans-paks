@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=TS-MHZ_Schoner
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1833
 retire_month=12
 cost=2310000
-runningcost=199
+runningcost=140
+fixed_cost=1667
 waytype=water
 engine_type=sail
 freight=Passagiere

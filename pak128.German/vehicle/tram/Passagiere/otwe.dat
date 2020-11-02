@@ -9,7 +9,8 @@ retire_year=2008
 retire_month=4
 waytype=tram_track
 cost=7112500
-runningcost=215
+runningcost=130
+fixed_cost=1524
 freight=Passagiere
 payload=85
 engine_type=electric
@@ -38,4 +39,3 @@ EmptyImage[NE]=otw.2.3
 #freightimage[0][SE]=
 #freightimage[0][NE]=
 #freightimage[0][NW]=
-#_EO_

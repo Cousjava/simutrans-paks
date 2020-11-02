@@ -11,7 +11,8 @@ intro_month=1
 retire_year=1902
 retire_month=1
 cost=1220000
-RunningCost=62
+runningcost=67
+fixed_cost=1679
 engine_type=steam
 smoke=Steam
 waytype=track
@@ -39,7 +40,8 @@ intro_month=1
 retire_year=1902
 retire_month=1
 cost=80000
-RunningCost=31
+runningcost=35
+fixed_cost=895
 waytype=track
 freight=None
 weight=8
@@ -56,4 +58,3 @@ EmptyImage[W]=bayrischeA5.1.5
 EmptyImage[NW]=bayrischeA5.1.6
 EmptyImage[NE]=bayrischeA5.1.7
 --------------------------------------
-

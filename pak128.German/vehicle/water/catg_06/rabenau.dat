@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Holzfrachter Rabenau
@@ -10,7 +9,8 @@ Copyright=pumuckl999
 intro_year=1979
 intro_month=1
 cost=24600700
-runningcost=792
+runningcost=526
+fixed_cost=5582
 waytype=water
 freight=Holz
 engine_type=diesel

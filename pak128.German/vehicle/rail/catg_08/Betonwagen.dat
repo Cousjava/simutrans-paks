@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu:2008
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Betonwagen
@@ -10,7 +9,8 @@ copyright=TonyBzt
 intro_year=1958
 intro_month=1
 cost=14640000
-runningcost=218
+runningcost=140
+fixed_cost=3516
 waytype=track
 freight=Zement_lose
 payload=40

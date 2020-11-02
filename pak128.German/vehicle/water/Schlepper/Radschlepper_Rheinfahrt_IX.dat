@@ -2,21 +2,21 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Radschlepper_Rheinfahrt_IX
 copyright=Pumuckl999
 intro_year=1900
 intro_month=1
-retire_year=1925
-retire_month=12
-cost=2720000
-runningcost=48
+retire_year=1945
+retire_month=4
+cost=1999200
+runningcost=38
+fixed_cost=952
 waytype=water
 engine_type=steam
 smoke=Steam_ship
-power=1600
+power=1176
 speed=17
 gear=1200
 weight=500
@@ -45,9 +45,9 @@ constraint[next][18]=none
 EmptyImage[W]=Radschlepper_Rheinfahrt_IX.0.1,-44,-4
 EmptyImage[NW]=Radschlepper_Rheinfahrt_IX.0.2,-16,4
 EmptyImage[N]=Radschlepper_Rheinfahrt_IX.0.3,-24,0
-EmptyImage[NE]=Radschlepper_Rheinfahrt_IX.0.4,-12,8
+EmptyImage[NE]=Radschlepper_Rheinfahrt_IX.0.4,-8,8
 EmptyImage[E]=Radschlepper_Rheinfahrt_IX.0.5,4,-4
 EmptyImage[SE]=Radschlepper_Rheinfahrt_IX.0.6,4,0
 EmptyImage[S]=Radschlepper_Rheinfahrt_IX.0.7,8,8
-EmptyImage[SW]=Radschlepper_Rheinfahrt_IX.0.8,4,4
+EmptyImage[SW]=Radschlepper_Rheinfahrt_IX.0.8,-6,2
 ------------------------------------------------------

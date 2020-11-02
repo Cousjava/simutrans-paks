@@ -1,18 +1,17 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Schiffe
-#    Neu:
-#	Letzte Bearbeitung:   11-08-2017 Makie
 ---------------------------------
 obj=vehicle
 name=Holzschleppkahn_fluessige_Lebensmittel
 copyright=Pumuckl999
 intro_year=1800
 intro_month=1
-retire_year=1919
-retire_month=12
+retire_year=1920
+retire_month=1
 cost=3937500
-runningcost=270
+runningcost=165
+fixed_cost=1030
 waytype=water
 freight=Milch
 speed=25

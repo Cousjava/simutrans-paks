@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=MagirusIveco_T_Schuettgut
@@ -11,7 +11,8 @@ intro_month=1
 retire_year=1991
 retire_month=12
 cost=3504000
-runningcost=46
+runningcost=34
+fixed_cost=716
 waytype=road
 speed=80
 power=243

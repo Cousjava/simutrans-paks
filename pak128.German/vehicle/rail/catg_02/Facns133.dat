@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 13-05-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Schuettgutwagen Facns133
@@ -10,7 +9,8 @@ copyright=pumuckl999
 intro_year=1994
 intro_month=1
 cost=12460000
-runningcost=207
+runningcost=126
+fixed_cost=2659
 waytype=track
 freight=Kohle
 payload=68

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 16-10-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=ET174_Front
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1967
 retire_month=12
 cost=6380000
-runningcost=144
+runningcost=94
+fixed_cost=1432
 waytype=track
 freight=Post
 engine_type=electric
@@ -40,7 +40,8 @@ intro_month=1
 retire_year=1967
 retire_month=12
 cost=4850000
-runningcost=131
+runningcost=81
+fixed_cost=1103
 waytype=track
 freight=Post
 engine_type=electric
@@ -58,4 +59,3 @@ EmptyImage[W]=ET174.1.5
 EmptyImage[NW]=ET174.1.6
 EmptyImage[NE]=ET174.1.7
 ----------------------------------
-

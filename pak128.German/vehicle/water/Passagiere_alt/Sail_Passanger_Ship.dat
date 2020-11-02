@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=RVg-Sail_Passanger_Ship_0
@@ -12,7 +11,8 @@ intro_month=12
 retire_year=1901
 retire_month=5
 cost=8304000
-runningcost=571
+runningcost=358
+fixed_cost=2610
 waytype=water
 engine_type=sail
 freight=Passagiere

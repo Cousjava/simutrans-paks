@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu: 13-06-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Schute_ALR7_Siloware
@@ -13,7 +12,8 @@ intro_month=1
 retire_year=1988
 retire_month=12
 cost=18750000
-runningcost=1252
+runningcost=751
+fixed_cost=3951
 waytype=water
 freight=Tierfutter
 speed=25

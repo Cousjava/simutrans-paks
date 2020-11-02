@@ -9,7 +9,8 @@ retire_year=2999
 retire_month=12
 waytype=tram_track
 cost=2065000
-runningcost=95
+runningcost=60
+fixed_cost=538
 freight=Passagiere
 payload=35
 engine_type=electric
@@ -41,4 +42,3 @@ EmptyImage[NE]=tw103b.0.3
 #freightimage[0][SE]=
 #freightimage[0][NE]=
 #freightimage[0][NW]=
-#_EO_

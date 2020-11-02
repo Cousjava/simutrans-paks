@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Schuettgutfrachter_Typ_Boizenburg
@@ -13,7 +12,8 @@ retire_year=2011
 retire_month=12
 waytype=water
 cost=5323500
-runningcost=545
+runningcost=329
+fixed_cost=1153
 freight=Kohle
 payload=180
 engine_type=diesel

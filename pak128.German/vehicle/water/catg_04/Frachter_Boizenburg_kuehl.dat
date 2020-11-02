@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Frachter_Typ_Boizenburg_Kuehlwaren
@@ -13,7 +12,8 @@ retire_year=2011
 retire_month=12
 waytype=water
 cost=8563500
-runningcost=905
+runningcost=545
+fixed_cost=1828
 freight=Fleisch
 payload=180
 engine_type=diesel

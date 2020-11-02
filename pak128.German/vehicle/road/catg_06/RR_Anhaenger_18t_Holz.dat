@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Anhaenger_18t_Holztransport
@@ -10,7 +9,8 @@ copyright=RedRabbit
 intro_year=1986
 intro_month=1
 cost=2212000
-runningcost=47
+runningcost=29
+fixed_cost=520
 waytype=road
 speed=80
 weight=5.2

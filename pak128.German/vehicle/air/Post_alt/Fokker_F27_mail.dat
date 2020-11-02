@@ -2,7 +2,7 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung 
+#	Letzte Bearbeitung
 #    11-10-2015 The Transporter
 ---------------------------------
 obj=vehicle
@@ -13,7 +13,8 @@ intro_month=6
 retire_year=1972
 retire_month=11
 cost=86100000
-runningcost=231
+runningcost=125
+fixed_cost=9474
 waytype=air
 engine_type=diesel
 freight=Post

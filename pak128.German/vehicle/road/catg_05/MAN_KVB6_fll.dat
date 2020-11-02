@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 31-01-2018
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=MAN_KVB-6_fl_Lebensmittel
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1950
 retire_month=12
 cost=664500
-runningcost=23
+runningcost=16
+fixed_cost=189
 waytype=road
 speed=30
 power=89

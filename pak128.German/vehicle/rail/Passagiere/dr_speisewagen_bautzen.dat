@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=DR_Speisewagen_Bautzen
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1995
 retire_month=12
 cost=7850000
-runningcost=119
+runningcost=78
+fixed_cost=1969
 waytype=track
 freight=Passagiere
 payload=42

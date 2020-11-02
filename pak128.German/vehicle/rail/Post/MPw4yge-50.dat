@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 28.08.2020
+#	Letzte Bearbeitung:
+---------------------------------
+obj=vehicle
+name=Behelfsgepaeckwagen_MPw4yge-50
+copyright=pumuckl999
+intro_year=1950
+intro_month=3
+retire_year=1982
+retire_month=9
+cost=21901000
+runningcost=207
+fixed_cost=5181
+waytype=track
+freight=Post
+payload=120
+speed=120
+weight=30.1
+length=13
+sound=-1
+EmptyImage[S]=MPw4yge-50.0.0
+EmptyImage[E]=MPw4yge-50.0.1
+EmptyImage[SE]=MPw4yge-50.0.2
+EmptyImage[SW]=MPw4yge-50.0.3,3,0
+EmptyImage[N]=MPw4yge-50.0.4
+EmptyImage[W]=MPw4yge-50.0.5
+EmptyImage[NW]=MPw4yge-50.0.6
+EmptyImage[NE]=MPw4yge-50.0.7,-4,0
+-------------------------------------------------

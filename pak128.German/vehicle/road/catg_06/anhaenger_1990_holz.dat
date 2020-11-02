@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Anhaenger_1990_16t_Holz
@@ -10,7 +9,8 @@ copyright=RedRabbit
 intro_year=1986
 intro_month=1
 cost=2072000
-runningcost=44
+runningcost=28
+fixed_cost=490
 waytype=road
 freight=Holz
 payload=14

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:01-08-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=MS_Anita_Ehlers
@@ -11,7 +10,8 @@ intro_year=2000
 intro_month=1
 waytype=water
 cost=1863000
-runningcost=181
+runningcost=109
+fixed_cost=364
 freight=Passagiere
 payload=72
 engine_type=diesel

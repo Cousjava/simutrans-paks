@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 2008
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=BZT_Culemeyer_st
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1961
 retire_month=12
 cost=1090000
-runningcost=61
+runningcost=37
+fixed_cost=220
 waytype=road
 freight=Bier
 payload=12

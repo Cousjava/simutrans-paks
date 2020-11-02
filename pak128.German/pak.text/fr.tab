@@ -9,7 +9,7 @@
 #                             Language: fr Francais                            #
 #                             Encoding: ISO-8859-1                             #
 #                             Font: Prop-Latin1.bdf                            #
-#                           Date Created: 12.06 2020                           #
+#                            Date Created: 1.09 2020                           #
 #                                                                              #
 ################################################################################
 #________________________________building - stop________________________________
@@ -56,10 +56,22 @@ Wafer
 Wafers
 #__________________________vehicle - electrified_track__________________________
 #__________________________vehicle - electrified_track__________________________
+BR101_Metropolitan
+DB 101 argent MetropolitaN
+E32
+DRG E32
+E60
+DRG E60
 E91_3
 EG 538 (DR E91.3)
 LEW_EL2
 LEW EL 2
+#________________________________vehicle - road_________________________________
+#________________________________vehicle - road_________________________________
+LO3000_Bus
+Robur LO 3000
+LO3000_Post
+Robur LO 3000
 #________________________________vehicle - track________________________________
 #________________________________vehicle - track________________________________
 bayrischer_BC4ue_Bay_99
@@ -78,6 +90,16 @@ BZT_Leig1b
 Couvert léger jumeau derrier
 BZT_WR4ue-35
 DRG expresse restaurant WR4ü-35
+DB_BR_210
+DB 210
+DB_BR_216
+DB 216
+DB_BR_218.0
+DB 218.0
+DB_BR_218.4
+DB 218.4
+DR118
+DR 118
 Flachwagen_catg_01
 Plat plancher bas
 G10
@@ -88,6 +110,12 @@ gedeckter_Gueterwagen1895_Stueckgut
 Couvert 1895
 Getreidewagen
 Toit ouvrant récolte 4-axes
+Leichttriebwagen_SVG
+autorail de Sylt
+NE81-DB_BR626_VT
+NE 81 (DB 626)
+NE81-DB_BR926_VB
+NE 81 (DB 926) 
 NGT_Post_Ende
 NGT postale derriere
 NGT_Post_Front
@@ -102,10 +130,16 @@ Offener Drehgestellwagen Eanos-x059
 Tombereau Eanos-x059
 offener Gueterwagen 1835 Stueckgut
 Tombeaurau 1835
+Postwagen 2ss-t13
+postale 2ss-t/13
+Postwagen 2ss-t15
+postale 2ss-t/15
 Postwaggon Post4-a17
 postale Post4ü-a/17
 preussische_T0
 Prusse T0
+Preussischer_ET531
+Prusse 531 "Berlin"
 PwgPr14
 Fourgon frein-baggage PwgPr14
 Saechsischer_Bahnpostwagen_1860
@@ -116,6 +150,8 @@ saechsischer_C4ue_sa07
 saxon C4ü Sa 07
 Schnellzugwagen_3.Kl._C4uepr11
 prusse expresse C4ü Pr11 3me classe
+Taschenwagen Sdgmns 743Post
+kangourou Sdgmns 743
 Triebwagen_ET_184_4
 ET 184-4
 Triebwagen_ET_186_11

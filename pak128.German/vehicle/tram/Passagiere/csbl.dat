@@ -10,6 +10,7 @@ intro_month=7
 waytype=tram_track
 cost=138000
 runningcost=2
+fixed_cost=68
 engine_type=steam
 power=44
 gear=150

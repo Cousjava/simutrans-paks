@@ -1,0 +1,137 @@
+/* Copyright 1997-2003 W3C (MIT, ERCIM, Keio). All Rights Reserved.
+   The following software licensing rules apply:
+   http://www.w3.org/Consortium/Legal/copyright-software */
+
+/* $Id: style.css,v 1.15 2003/04/04 05:31:06 dom Exp $ */
+
+/* This stylesheet is used to give a basic layout for RSS 1.0 feeds */
+
+/* Add it to your RSS feed with
+
+<?xml-stylesheet href="http://www.w3.org/2000/08/w3c-synd/style.css" type="text/css"?>
+
+*/
+
+rss, channel, item, title, description, link
+{
+  display: block;
+}
+
+language, managingEditor, webMaster, docs, copyright,
+lastBuildDate, pubDate, rating, day, hour,
+skipDays, skipHours, textinput, name
+{
+  display: none;
+}
+
+channel, item {
+        z-index:1; 
+        border:2px solid black; 
+        padding:5px;
+  width:95%;
+        margin-top:3px;
+        
+}
+
+item {
+        background-color:#CEE0E1;
+  
+}
+
+RDF {
+  max-width:50em;
+  min-width:12em;
+  display:block;
+  margin-right:0;
+  margin-left:0;
+  padding-right:2%;
+  padding-left:2%;
+  display: none;
+}
+
+channel>title {
+  font-family: Geneva, Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size:1.4em;
+  padding-bottom:0.5em;
+  
+}
+
+channel>description {
+  margin-top: 6pt;
+  font-style: italic;
+  font-family: Times, "Times New Roman", serif;
+  font-size:1.2em;
+}
+
+item>title {
+  text-align:left;
+        margin-top:5px;
+        margin-bottom:3px;
+        font-family: Geneva, Arial, sans-serif;
+        font-size:1.2em;
+}
+
+date {
+          margin-left: 1em;
+}
+
+link {
+  text-decoration: underline;
+  margin-left: 1em;
+}
+
+*[class~=trans_text], *[class~=sug_text] {
+  padding: 8px 12px 8px 15px;
+  margin: 0px 5px 0px 5px;
+  border:1;
+  
+}
+
+*[class~=trans_text] {
+  background-color: #88C4FF;
+}
+
+*[class~=sug_text] {
+  background-color: #79FFFF;
+}
+
+/* css for translator rss info page */
+#rssinfo_boxes {
+  width: 90%; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: start; 
+  flex-wrap: wrap; 
+  margin-left: 5%; 
+}
+
+#rssinfo_items {
+  height: 6em;
+  width: 23em;
+  /*font-style:italic; */
+  padding: 5px 5px 5px 5px;
+  text-align:center;
+  margin: 3px 4px 3px 4px;
+  border-radius: 2px;
+  /*background-color: #d9e0e1;*/
+  border: 1px solid #c2cdce;
+  box-shadow: inset 0 0 2px 2px #c1c7c7; 
+    
+}
+
+#rssinfo_items > div {
+  padding: 0px 5px 5px 5px;
+    
+}
+
+h3.rssinfo
+{
+  padding-bottom:10px;
+  padding-top:3px;
+  color:#588A9A;
+  margin-top:0;
+  text-align:center;
+}

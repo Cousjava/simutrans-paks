@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 03-09-2020
+---------------------------------
+obj=vehicle
+name=Abteilwagen_C4_Bay_04
+copyright=pumuckl999
+intro_year=1904
+intro_month=1
+retire_year=1957
+retire_month=12
+cost=12890000
+runningcost=168
+fixed_cost=3688
+waytype=track
+freight=Passagiere
+payload=84
+speed=100
+weight=29
+length=12
+EmptyImage[S]=C4Bay04.0.0
+EmptyImage[E]=C4Bay04.0.1
+EmptyImage[SE]=C4Bay04.0.2
+EmptyImage[SW]=C4Bay04.0.3
+EmptyImage[N]=C4Bay04.0.4
+EmptyImage[W]=C4Bay04.0.5
+EmptyImage[NW]=C4Bay04.0.6
+EmptyImage[NE]=C4Bay04.0.7
+--------------------------------

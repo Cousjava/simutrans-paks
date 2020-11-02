@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=MB_O10000_Reisebus_Postbus
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1950
 retire_month=6
 cost=5710000
-runningcost=138
+runningcost=89
+fixed_cost=1388
 waytype=road
 freight=Passagiere
 payload=50

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Frachter_Esslingen_fl._Lebensmittel
@@ -13,7 +12,8 @@ intro_month=1
 #retire_year=2030
 #retire_month=12
 cost=15105000
-runningcost=1163
+runningcost=713
+fixed_cost=3633
 waytype=water
 freight=Milch
 engine_type=diesel

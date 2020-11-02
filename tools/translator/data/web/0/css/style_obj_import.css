@@ -1,0 +1,13 @@
+@charset "iso-8859-2";
+
+p.tight
+{
+    text-align: left;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+div.note
+{
+    font-size: 85%;
+}

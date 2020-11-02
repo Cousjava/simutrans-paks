@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu:2008
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Offs59a_1931
@@ -12,7 +11,8 @@ intro_month=5
 retire_year=1965
 retire_month=5
 cost=3060000
-runningcost=73
+runningcost=50
+fixed_cost=967
 waytype=track
 freight=Autos
 payload=4

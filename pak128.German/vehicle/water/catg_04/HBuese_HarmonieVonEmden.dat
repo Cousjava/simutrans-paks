@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu: 06-04-2019
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=HarmonieVonEmden
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1870
 retire_month=12
 cost=1625000
-runningcost=206
+runningcost=126
+fixed_cost=477
 waytype=water
 freight=Fleisch
 engine_type=sail

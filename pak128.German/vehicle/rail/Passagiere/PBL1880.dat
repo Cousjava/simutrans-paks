@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 21-04-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Vicinalbahn-Wagen PBL
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1922
 retire_month=12
 cost=1540000
-runningcost=53
+runningcost=39
+fixed_cost=684
 waytype=track
 freight=Passagiere
 length=6

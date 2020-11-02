@@ -10,6 +10,7 @@ power=0,3
 cost=100
 weight=0,01
 RunningCost=1
+fixed_cost=x
 intro_year=1995
 engine_type=Bio
 EmptyImage[S]=hk_mb.0.0

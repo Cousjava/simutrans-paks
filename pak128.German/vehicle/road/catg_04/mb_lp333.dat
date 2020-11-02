@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=DaimlerBenz_LP333_Kuehlwaren
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1960
 retire_month=12
 cost=4328800
-runningcost=76
+runningcost=53
+fixed_cost=1076
 waytype=road
 freight=Fleisch
 engine_type=diesel

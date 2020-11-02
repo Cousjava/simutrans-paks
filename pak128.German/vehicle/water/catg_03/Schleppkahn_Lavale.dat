@@ -1,8 +1,6 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Schiffe
-#    Neu:
-#	Letzte Bearbeitung:   11-08-2017 Makie
 ---------------------------------
 obj=vehicle
 name=Tankschleppkahn_Geheimrat_von_Lavale
@@ -13,7 +11,8 @@ retire_year=1925
 retire_month=12
 waytype=water
 cost=2160000
-runningcost=302
+runningcost=182
+fixed_cost=508
 freight=Oel
 payload=80
 speed=12
@@ -61,6 +60,7 @@ constraint[prev][37]=DS_Stadt_Mainz_Stueckgut
 constraint[prev][38]=DS_Stadt_Mainz_Kuehlwaren
 constraint[prev][39]=DS_Stadt_Mainz_lw.Gueter
 constraint[prev][40]=DS_Stadt_Mainz_Stahl
+constraint[prev][41]=Stahldampfer_Duenung
 constraint[next][0]=Tankschleppkahn_Geheimrat_von_Lavale
 constraint[next][1]=Holzschleppkahn_fluessige_Lebensmittel
 constraint[next][2]=Holzschleppkahn_Holz

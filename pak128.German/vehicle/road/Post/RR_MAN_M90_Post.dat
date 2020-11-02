@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=MAN_M90_Post
@@ -11,7 +11,8 @@ intro_month=1
 retire_year=1997
 retire_month=12
 cost=13168900
-runningcost=258
+runningcost=158
+fixed_cost=2710
 waytype=road
 speed=80
 power=136
@@ -21,9 +22,6 @@ payload=100
 length=7
 smoke=smoke_diesel
 constraint[prev][0]=none
-constraint[next][0]=Anhaenger_18t_Post
-constraint[next][1]=Anhaenger_12t_Post
-constraint[next][2]=none
 EmptyImage[S]=RR_MAN_M90_Post.0.1
 EmptyImage[N]=RR_MAN_M90_Post.0.2
 EmptyImage[E]=RR_MAN_M90_Post.0.3

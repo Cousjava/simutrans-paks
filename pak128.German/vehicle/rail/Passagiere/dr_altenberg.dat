@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
+#    Neu:
 #	Letzte Bearbeitung:
 ---------------------------------
 obj=vehicle
@@ -12,7 +12,8 @@ intro_month=6
 retire_year=1968
 retire_month=7
 cost=11060000
-runningcost=181
+runningcost=124
+fixed_cost=3123
 waytype=track
 freight=Passagiere
 payload=60

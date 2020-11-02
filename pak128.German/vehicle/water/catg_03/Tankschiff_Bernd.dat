@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Tank-KueMo_Bernd
@@ -13,7 +12,8 @@ retire_year=2004
 retire_month=12
 waytype=water
 cost=9249200
-runningcost=757
+runningcost=458
+fixed_cost=1995
 freight=Oel
 payload=200
 engine_type=diesel

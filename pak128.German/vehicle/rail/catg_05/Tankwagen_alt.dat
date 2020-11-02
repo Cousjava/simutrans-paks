@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Tankwagen_alt
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1928
 retire_month=8
 cost=2782500
-runningcost=79
+runningcost=53
+fixed_cost=875
 waytype=track
 freight=Milch
 payload=18

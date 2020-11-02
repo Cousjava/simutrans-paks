@@ -9,7 +9,8 @@ retire_year=1953
 retire_month=12
 waytype=tram_track
 cost=417500
-runningcost=24
+runningcost=15
+fixed_cost=118
 freight=Milch
 payload=6
 speed=25
@@ -48,4 +49,3 @@ EmptyImage[NE]=gsb_flm.0.3
 #FreightImage[0][SE]=rft.3.5
 #FreightImage[0][S]=rft.3.6
 #FreightImage[0][SW]=rft.3.7
-#_EO_

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 05-02-2018
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Vomag8LR_Stahl
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1963
 retire_month=12
 cost=2680000
-runningcost=77
+runningcost=50
+fixed_cost=682
 waytype=road
 speed=50
 power=111

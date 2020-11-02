@@ -11,6 +11,7 @@ cost=2760000
 weight=6
 power=210
 runningcost=51
+fixed_cost=x
 sound=1
 Constraint[Prev][0]=none
 intro_year = 1920

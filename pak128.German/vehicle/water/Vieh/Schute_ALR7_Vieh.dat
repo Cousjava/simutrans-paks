@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Schute_ALR7_Vieh
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1988
 retire_month=12
 cost=5625000
-runningcost=377
+runningcost=227
+fixed_cost=1222
 waytype=water
 freight=Vieh
 speed=25

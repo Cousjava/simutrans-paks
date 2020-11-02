@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 25-11-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=ET403_Front
@@ -12,7 +11,8 @@ intro_month=3
 retire_year=1993
 retire_month=8
 cost=33300000
-runningcost=297
+runningcost=255
+fixed_cost=7524
 waytype=track
 freight=Passagiere
 engine_type=electric
@@ -43,7 +43,8 @@ intro_month=3
 retire_year=1993
 retire_month=8
 cost=35100000
-runningcost=312
+runningcost=264
+fixed_cost=7899
 waytype=track
 freight=Passagiere
 engine_type=electric
@@ -76,7 +77,8 @@ intro_month=3
 retire_year=1993
 retire_month=8
 cost=32357000
-runningcost=286
+runningcost=248
+fixed_cost=7272
 waytype=track
 freight=Passagiere
 engine_type=electric
@@ -109,7 +111,8 @@ intro_month=3
 retire_year=1993
 retire_month=8
 cost=33300000
-runningcost=297
+runningcost=255
+fixed_cost=7524
 waytype=track
 freight=Passagiere
 engine_type=electric

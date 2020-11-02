@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 30-08-2020
+---------------------------------
+obj=vehicle
+name=E_16
+copyright=pumuckl999
+intro_year=1927
+intro_month=1
+retire_year=1980
+retire_month=1
+cost=32060000
+runningcost=441
+fixed_cost=11044
+waytype=electrified_track
+power=2580
+gear=255
+speed=120
+weight=110
+length=10
+sound=-1
+EmptyImage[S]=E16.0.0
+EmptyImage[E]=E16.0.1
+EmptyImage[SE]=E16.0.2
+EmptyImage[SW]=E16.0.3
+EmptyImage[N]=E16.0.4
+EmptyImage[W]=E16.0.5
+EmptyImage[NW]=E16.0.6
+EmptyImage[NE]=E16.0.7
+-----------------------------

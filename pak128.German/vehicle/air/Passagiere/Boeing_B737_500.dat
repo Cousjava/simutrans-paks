@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Boeing737-500
@@ -12,15 +11,16 @@ intro_month=1
 retire_year=2015
 retire_month=12
 waytype=air
-cost=326520000
-runningcost=489
+cost=313200000
+runningcost=293
+fixed_cost=35461
 freight=Passagiere
 payload=120
 engine_type=diesel
-power=10500
-gear=130
-speed=907
-weight=61
+power=32800
+gear=100
+speed=870
+weight=51
 length=5
 sound=5
 EmptyImage[S]=Boeing_B737_500.0.6

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu: 13-06-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Frachter_fuer_Siloware_Typ_Boizenburg
@@ -13,7 +12,8 @@ retire_year=2011
 retire_month=12
 waytype=water
 cost=13963500
-runningcost=1505
+runningcost=905
+fixed_cost=2953
 freight=Tierfutter
 payload=300
 engine_type=diesel

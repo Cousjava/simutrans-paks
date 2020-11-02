@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Solaris_Urbinio10
@@ -9,11 +9,12 @@ copyright=RedRabbit
 intro_year=1999
 intro_month=1
 cost=4965000
-runningcost=136
+runningcost=83
+fixed_cost=936
 waytype=road
 freight=Passagiere
 payload=53
-engine_type=diesel 
+engine_type=diesel
 speed=50
 weight=10
 power=178

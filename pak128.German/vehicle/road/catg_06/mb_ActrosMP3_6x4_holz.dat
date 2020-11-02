@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=MB_ActrosMP3_Holztransporter
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=2020
 retire_month=12
 cost=4530000
-runningcost=50
+runningcost=34
+fixed_cost=640
 waytype=road
 freight=Holz
 engine_type=diesel
@@ -50,4 +50,3 @@ FreightImage[1][SE]=mb_ActrosMP3_6x4_holz.2.6
 FreightImage[1][S]=mb_ActrosMP3_6x4_holz.2.7
 FreightImage[1][SW]=mb_ActrosMP3_6x4_holz.2.8,20
 ---------------------------------------------------------
-

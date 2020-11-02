@@ -14,6 +14,7 @@ speed=160
 cost=365000
 weight=45
 RunningCost=7
+fixed_cost=x
 intro_year=1962
 intro_month=1
 EmptyImage[S]=ADm101.0.0

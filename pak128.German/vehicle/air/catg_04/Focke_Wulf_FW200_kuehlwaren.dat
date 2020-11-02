@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Focke-Wulf_FW200_Kuehlwaren
@@ -13,7 +12,8 @@ retire_year=1945
 retire_month=12
 waytype=air
 cost=41040000
-runningcost=154
+runningcost=78
+fixed_cost=4897
 freight=Fleisch
 payload=18
 engine_type=diesel

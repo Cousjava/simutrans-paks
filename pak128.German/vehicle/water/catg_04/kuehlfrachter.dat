@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Frachter_Esslingen_Kuehltransporter
@@ -13,7 +12,8 @@ intro_month=1
 #retire_year=2030
 #retire_month=12
 cost=16245000
-runningcost=1263
+runningcost=773
+fixed_cost=3870
 waytype=water
 freight=Fleisch
 engine_type=diesel

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 19-10-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Drehgestell-Flachwagen_Rils653_Stahl
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=2004
 retire_month=12
 cost=24552000
-runningcost=409
+runningcost=248
+fixed_cost=5198
 waytype=track
 freight=Stahl
 payload=54

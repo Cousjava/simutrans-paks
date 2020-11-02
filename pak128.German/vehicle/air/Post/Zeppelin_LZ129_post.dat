@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=LZ129_Hindenburg_Post
@@ -13,7 +12,8 @@ retire_year=1937
 retire_month=5
 waytype=air
 cost=26250000
-runningcost=191
+runningcost=111
+fixed_cost=2887
 freight=Post
 payload=70
 engine_type=diesel

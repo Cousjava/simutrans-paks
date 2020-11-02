@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=AdlerSchuettgutwagen
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1870
 retire_month=12
 cost=245000
-runningcost=18
+runningcost=12
+fixed_cost=138
 waytype=track
 freight=Kohle
 payload=5

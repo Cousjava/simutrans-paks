@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Henschel_HS16TL_Lebensmittel_Tankwagen
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1967
 retire_month=12
 cost=3185000
-runningcost=48
+runningcost=37
+fixed_cost=786
 waytype=road
 freight=Milch
 engine_type=diesel

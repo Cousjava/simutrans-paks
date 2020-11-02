@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 07-08-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Kfz-Transportwagen1979
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1995
 retire_month=6
 cost=3840000
-runningcost=67
+runningcost=43
+fixed_cost=948
 waytype=track
 freight=Autos
 payload=4

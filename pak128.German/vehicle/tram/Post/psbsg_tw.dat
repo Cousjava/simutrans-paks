@@ -9,7 +9,8 @@ retire_year=1950
 retire_month=12
 waytype=tram_track
 cost=5910000
-runningcost=306
+runningcost=186
+fixed_cost=1284
 freight=Post
 payload=120
 engine_type=electric
@@ -43,4 +44,3 @@ EmptyImage[NE]=psbsg.0.3
 #freightimage[0][SE]=
 #freightimage[0][NE]=
 #freightimage[0][NW]=
-#_EO_

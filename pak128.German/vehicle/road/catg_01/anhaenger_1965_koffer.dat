@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=anhaenger_1965_16t_Stueckgut_Koffer
@@ -12,13 +11,15 @@ intro_month=1
 retire_year=1986
 retire_month=12
 cost=2941000
-runningcost=64
+runningcost=41
+fixed_cost=738
 waytype=road
 freight=Buecher
 speed=80
 weight=6.1
 payload=12
 length=7
+constraint[prev][0]=any
 constraint[next][0]=none
 EmptyImage[W]=anhaenger_1965.2.1
 EmptyImage[NW]=anhaenger_1965.2.2

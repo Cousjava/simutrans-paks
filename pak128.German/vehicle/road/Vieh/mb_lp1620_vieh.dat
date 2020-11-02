@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=DaimlerBenz_LP1620_Vieh
@@ -11,20 +10,20 @@ intro_year=1966
 intro_month=1
 retire_year=1975
 retire_month=12
-cost=3276000
-runningcost=54
+cost=3228000
+runningcost=39
+fixed_cost=766
 waytype=road
 freight=Vieh
 engine_type=diesel
-power=160
+power=154
 speed=80
+# 210PS, Nutzlast 9t, Gesamtgewicht 16t Anhänger 22t Lastzug 38t
 weight=7.6
 payload=8
 length=8
 sound=1
 constraint[prev][0]=none
-constraint[next][0]=anhaenger_1965_16t_Vieh
-constraint[next][1]=none
 EmptyImage[W]=mb_lp1620.3.1
 EmptyImage[NW]=mb_lp1620.3.2
 EmptyImage[N]=mb_lp1620.3.3

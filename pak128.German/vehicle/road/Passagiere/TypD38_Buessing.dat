@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Strasse
+#    Neu: 22.07.2020
+---------------------------------
+obj=vehicle
+name=Typ_D38_Buessing
+copyright=pumuckl999
+intro_year=1938
+intro_month=1
+retire_year=1958
+retire_month=12
+cost=7244400
+runningcost=124
+fixed_cost=1663
+waytype=road
+freight=Passagiere
+payload=75
+engine_type=diesel
+speed=58
+weight=12.2
+power=103
+length=11
+smoke=smoke_diesel
+sound=1
+Constraint[Prev][0]=none
+Constraint[Next][0]=none
+EmptyImage[S]=TypD38_Buessing.0.0
+EmptyImage[N]=TypD38_Buessing.0.1
+EmptyImage[E]=TypD38_Buessing.0.2
+EmptyImage[W]=TypD38_Buessing.0.3
+EmptyImage[SE]=TypD38_Buessing.0.4
+EmptyImage[NW]=TypD38_Buessing.0.5
+EmptyImage[NE]=TypD38_Buessing.0.6
+EmptyImage[SW]=TypD38_Buessing.0.7
+----------------------------------------

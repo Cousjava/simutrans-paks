@@ -1,5 +1,7 @@
+---------------------------------
 #	PAK128.german
 #	Vehicle
+---------------------------------
 obj=vehicle
 name=Tatra T3D
 copyright=pumuckl999
@@ -9,7 +11,8 @@ retire_year=2015
 retire_month=12
 waytype=tram_track
 cost=10135000
-runningcost=284
+runningcost=175
+fixed_cost=2142
 freight=Passagiere
 payload=110
 engine_type=electric
@@ -18,8 +21,6 @@ gear=100
 speed=55
 weight=18
 length=12
-#sound=
-#smoke=
 Constraint[Prev][0]=Tatra T3D
 Constraint[Prev][1]=Tatra T3D2
 Constraint[Prev][2]=Tatra B3D
@@ -36,13 +37,3 @@ EmptyImage[SW]=tt3d.0.7
 EmptyImage[SE]=tt3d.0.5
 EmptyImage[NW]=tt3d.0.1
 EmptyImage[NE]=tt3d.0.3
-#freightImageType[0]=
-#freightimage[0][S]=
-#freightimage[0][N]=
-#freightimage[0][E]=
-#freightimage[0][W]=
-#freightimage[0][SW]=
-#freightimage[0][SE]=
-#freightimage[0][NE]=
-#freightimage[0][NW]=
-#_EO_

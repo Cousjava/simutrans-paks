@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu: 13-06-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Schute_No.9_Siloware
@@ -13,6 +12,7 @@ retire_year=1951
 retire_month=12
 cost=15000000
 runningcost=1004
+fixed_cost=x
 waytype=water
 freight=Tierfutter
 speed=25

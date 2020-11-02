@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 14-09-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Behaelter-Tragwagen_Lbms589_Stueckgut
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=2004
 retire_month=12
 cost=7583000
-runningcost=133
+runningcost=85
+fixed_cost=1820
 waytype=track
 freight=Plastik
 payload=25

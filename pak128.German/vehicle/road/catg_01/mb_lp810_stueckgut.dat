@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=DaimlerBenz_LP810_Stueckgut
@@ -11,7 +11,8 @@ intro_month=12
 retire_year=1984
 retire_month=12
 cost=2953500
-runningcost=54
+runningcost=37
+fixed_cost=742
 waytype=road
 freight=Buecher
 engine_type=diesel
@@ -41,4 +42,3 @@ FreightImage[0][SE]=mb_lp810.1.6
 FreightImage[0][S]=mb_lp810.1.7
 FreightImage[0][SW]=mb_lp810.1.8
 ---------------------------------------
-

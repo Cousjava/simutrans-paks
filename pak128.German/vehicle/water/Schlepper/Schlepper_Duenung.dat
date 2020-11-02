@@ -1,8 +1,6 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Schiffe
-#    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Stahldampfer_Duenung
@@ -14,6 +12,7 @@ retire_month=12
 waytype=water
 cost=384000
 runningcost=5
+fixed_cost=142
 engine_type=steam
 power=240
 gear=1200

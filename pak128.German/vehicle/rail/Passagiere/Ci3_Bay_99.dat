@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 02-09-2020
+#	Letzte Bearbeitung:
+---------------------------------
+obj=vehicle
+name=Durchgangswagen_Ci3_Bay_99
+copyright=pumuckl999
+intro_year=1899
+intro_month=10
+retire_year=1961
+retire_month=10
+cost=7395000
+runningcost=111
+fixed_cost=2485
+waytype=track
+freight=Passagiere
+payload=48
+speed=100
+weight=19.5
+length=9
+EmptyImage[S]=Ci3_Bay_99.0.0
+EmptyImage[E]=Ci3_Bay_99.0.1
+EmptyImage[SE]=Ci3_Bay_99.0.2
+EmptyImage[SW]=Ci3_Bay_99.0.3
+EmptyImage[N]=Ci3_Bay_99.0.4
+EmptyImage[W]=Ci3_Bay_99.0.5
+EmptyImage[NW]=Ci3_Bay_99.0.6
+EmptyImage[NE]=Ci3_Bay_99.0.7
+--------------------------------

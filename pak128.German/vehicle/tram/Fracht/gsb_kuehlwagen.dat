@@ -9,7 +9,8 @@ retire_year=1953
 retire_month=12
 waytype=tram_track
 cost=745000
-runningcost=47
+runningcost=28
+fixed_cost=187
 freight=Fleisch
 payload=9
 speed=25
@@ -48,4 +49,3 @@ EmptyImage[NE]=gsb_kuehlw.0.3
 #FreightImage[0][SE]=rft.3.5
 #FreightImage[0][S]=rft.3.6
 #FreightImage[0][SW]=rft.3.7
-#_EO_

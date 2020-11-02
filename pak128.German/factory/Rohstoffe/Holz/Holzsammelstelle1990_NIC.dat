@@ -15,6 +15,9 @@ DistributionWeight=1
 Productivity=310
 OutputGood[0]=Holz
 OutputCapacity[0]=500
+sound=tree-cutting.wav
+sound_interval=30000
+# 30 Sekunden
 max_fields=30
 min_fields=3
 probability_to_spawn=20

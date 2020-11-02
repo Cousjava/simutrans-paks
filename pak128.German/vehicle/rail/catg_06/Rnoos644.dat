@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 18-10-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Drehgestell-Flachwagen Rnoos644
@@ -10,7 +9,8 @@ copyright=pumuckl999
 intro_year=2008
 intro_month=1
 cost=8535000
-runningcost=140
+runningcost=85
+fixed_cost=1780
 waytype=track
 freight=Holz
 payload=46

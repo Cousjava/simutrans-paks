@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=LZ129 Hindenburg
@@ -13,7 +12,8 @@ retire_year=1937
 retire_month=5
 waytype=air
 cost=28296000
-runningcost=203
+runningcost=115
+fixed_cost=3124
 freight=Passagiere
 payload=72
 engine_type=diesel

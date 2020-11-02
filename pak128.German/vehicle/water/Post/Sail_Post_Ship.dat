@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Sail_Post_Ship_0
@@ -12,7 +11,8 @@ intro_month=5
 retire_year=1935
 retire_month=12
 cost=5516000
-runningcost=372
+runningcost=264
+fixed_cost=3443
 waytype=water
 engine_type=sail
 freight=Post

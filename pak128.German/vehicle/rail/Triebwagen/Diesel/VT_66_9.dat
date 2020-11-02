@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 30.08.2020
+#	Letzte Bearbeitung:
+---------------------------------
+obj=vehicle
+name=VT66.9
+copyright=pumuckl999
+intro_year=1927
+intro_month=1
+retire_year=1979
+retire_month=12
+cost=17729500
+runningcost=228
+fixed_cost=4335
+freight=Passagiere
+power=162
+gear=150
+payload=125
+speed=85
+length=13
+weight=41.5
+waytype=track
+engine_type=diesel
+EmptyImage[S]=VT_66_9.0.0
+EmptyImage[E]=VT_66_9.0.1
+EmptyImage[SE]=VT_66_9.0.2
+EmptyImage[SW]=VT_66_9.0.3
+EmptyImage[N]=VT_66_9.0.4
+EmptyImage[W]=VT_66_9.0.5
+EmptyImage[NW]=VT_66_9.0.6
+EmptyImage[NE]=VT_66_9.0.7

@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Buessing_BS11_Kuehlwaren1
@@ -11,7 +11,8 @@ intro_month=1
 retire_year=1973
 retire_month=12
 cost=3252000
-runningcost=60
+runningcost=41
+fixed_cost=775
 waytype=road
 freight=Fleisch
 speed=80

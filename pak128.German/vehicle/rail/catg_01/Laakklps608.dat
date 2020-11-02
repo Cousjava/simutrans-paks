@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 18-10-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Laakklps608_Front
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=2001
 retire_month=12
 cost=6715000
-runningcost=119
+runningcost=76
+fixed_cost=1636
 waytype=track
 freight=Plastik
 payload=22
@@ -45,7 +45,8 @@ intro_month=1
 retire_year=2001
 retire_month=12
 cost=6715000
-runningcost=119
+runningcost=76
+fixed_cost=1636
 waytype=track
 freight=Plastik
 payload=22

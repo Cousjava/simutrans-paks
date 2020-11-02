@@ -29,7 +29,7 @@ $userstates = array('active', 'suspended', 'removed');
 // directorys
 $datapfad   = '../data/';
 $tempfilepfad = '../data/temp/';
-$htmlpfad   = '../data/html/';
+$htmlpfad   = '../data/web/0/help/';
 $htmlexpfad = '../data/htmlex/';
 $imagepfad  = '../data/img/';
 $tabpfad    = '../data/tab/';

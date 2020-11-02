@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Lockheed_L1049G_Super_Constellation
@@ -13,7 +12,8 @@ retire_year=1958
 retire_month=12
 waytype=air
 cost=143154000
-runningcost=403
+runningcost=204
+fixed_cost=16304
 freight=Passagiere
 payload=99
 engine_type=diesel

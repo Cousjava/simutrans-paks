@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Oeltanker Seamullet
@@ -10,7 +9,8 @@ Copyright=pumuckl999
 intro_year=2001
 intro_month=1
 cost=42252000
-runningcost=1249
+runningcost=799
+fixed_cost=7053
 waytype=water
 freight=Oel
 engine_type=diesel

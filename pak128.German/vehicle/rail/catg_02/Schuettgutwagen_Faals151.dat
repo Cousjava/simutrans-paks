@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 02-04-2019
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Faals151
@@ -10,7 +9,8 @@ copyright=pumuckl999
 intro_year=1996
 intro_month=1
 cost=18710000
-runningcost=261
+runningcost=159
+fixed_cost=3999
 waytype=track
 freight=Kohle
 payload=85

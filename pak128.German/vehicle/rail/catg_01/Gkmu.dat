@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$ 
 ---------------------------------
 obj=vehicle
 name=Gkmu
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1979
 retire_month=9
 cost=3630000
-runningcost=74
+runningcost=50
+fixed_cost=1015
 waytype=track
 freight=Papier
 payload=13

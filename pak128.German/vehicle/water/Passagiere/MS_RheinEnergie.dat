@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=MS RheinEnergie
@@ -11,7 +10,8 @@ intro_year=2004
 intro_month=1
 waytype=water
 cost=83040000
-runningcost=4144
+runningcost=2494
+fixed_cost=16984
 freight=Passagiere
 payload=1650
 engine_type=diesel

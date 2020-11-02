@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=DaimlerBenz_LPS1620_Sattelzugmaschine
@@ -10,13 +10,15 @@ intro_year=1963
 intro_month=1
 retire_year=1975
 retire_month=12
-cost=1345000
+cost=1292000
 runningcost=15
+fixed_cost=382
 waytype=road
 engine_type=diesel
-power=160
+power=154
 speed=80
-weight=6.5
+# 210PS, Sattellast 10t, Gesamtgewicht 16t Auflieger 32t Lastzug 38t
+weight=6
 length=6
 sound=1
 smoke=smoke_diesel
@@ -40,7 +42,7 @@ constraint[next][15]=Auflieger_38t_Mineraloel
 constraint[next][16]=Auflieger_32t_Stueckgut
 constraint[next][17]=Personenanhaenger
 constraint[next][18]=Dosto-Personenanhaenger
-constraint[next][19]=none
+constraint[next][19]=W50A_fluessigeLebensmittel
 EmptyImage[W]=mb_lps1620.0.1,19,13
 EmptyImage[NW]=mb_lps1620.0.2,1,29
 EmptyImage[N]=mb_lps1620.0.3,-23,13

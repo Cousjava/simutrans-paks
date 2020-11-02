@@ -7,10 +7,11 @@
 obj=vehicle
 name=E151-gruen
 copyright=TonyBzt
-intro_year=1973	
+intro_year=1973
 intro_month=4
 cost=76780000
 runningcost=539
+fixed_cost=13514
 waytype=electrified_track
 freight=None
 speed=120

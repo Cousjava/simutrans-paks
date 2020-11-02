@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 04-02-2018
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Vomag8LR_Anhaenger_Holz
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1963
 retire_month=12
 cost=850000
-runningcost=30
+runningcost=20
+fixed_cost=269
 waytype=road
 speed=50
 weight=4

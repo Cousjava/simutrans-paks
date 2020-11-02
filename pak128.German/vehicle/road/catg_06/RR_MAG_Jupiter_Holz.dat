@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Magirus_Saturn150D_Holztransporter
@@ -11,7 +11,8 @@ intro_month=1
 retire_year=1970
 retire_month=12
 cost=2488000
-runningcost=50
+runningcost=35
+fixed_cost=641
 waytype=road
 speed=70
 power=110

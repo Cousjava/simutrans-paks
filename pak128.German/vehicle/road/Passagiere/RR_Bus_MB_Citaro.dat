@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=MercedesBenz_Citaro
@@ -9,11 +9,12 @@ copyright=RedRabbit
 intro_year=1998
 intro_month=1
 cost=6245000
-runningcost=172
+runningcost=105
+fixed_cost=1181
 waytype=road
 freight=Passagiere
 payload=67
-engine_type=diesel 
+engine_type=diesel
 speed=50
 weight=12
 power=220

@@ -60,8 +60,8 @@ $makie_way_multi['tunnel0'] = 15;
 
 // bits_per_month Einstellungen in den paks
 $bits_p_faktor = array();
-$bits_p_faktor['1'] = 4; // pak128.german bits_per_month = 20
-$bits_p_faktor['19'] = 2; // pak128.german bits_per_month = 19
+$bits_p_faktor['1']  = 4; // pak64         bits_per_month = 20
+$bits_p_faktor['19'] = 2; // pak128        bits_per_month = 19
 $bits_p_faktor['20'] = 4; // pak128.german bits_per_month = 20
   
 ////////////////////////////////////////////////////////////////////////////////
@@ -442,7 +442,7 @@ function print_table_line ($property_list,$ob_id)
     // speichern
     if (in_array('cost_makie',$property_list) and abs($cost - $makie_c) > 2)      $makie_p .= $obj_name.'>'.'cost='.intval($makie_c)."\n";
     if (in_array('rcost_makie'  ,$property_list) and abs($rcost - $makie_rc) > 2) $makie_p .= $obj_name.'>'.'runningcost='.intval($makie_rc)."\n";
-    if (in_array('fcost_makie'  ,$property_list) and abs($fcost - $makie_fc) > 2) $makie_p .= $obj_name.'>'.'fixed_cost='.intval($makie_fc / $bits_per_month_faktor)."\n"; 
+    if (in_array('fcost_makie'  ,$property_list) and abs($fcost - $makie_fc / $bits_per_month_faktor) > 1) $makie_p .= $obj_name.'>'.'fixed_cost='.intval($makie_fc / $bits_per_month_faktor)."\n"; 
     if (in_array('maint_makie'  ,$property_list) and abs($maintenance - $makie_m) > 2) $makie_p .= $obj_name.'>'.'maintenance='.intval($makie_m)."\n";
 
     // zugkraft berechnen
@@ -617,8 +617,9 @@ function print_table_line ($property_list,$ob_id)
                                             .'+'.sprintf('%03.1f',$makie_rcl)
                                             .'+'.sprintf('%03.1f',$makie_rcw)
                                             .'+'.sprintf('%03.1f',$makie_rcp); 
+        if ($p_name=='fixed_cost') $wert = sprintf('%05.2f',$fcost * $bits_per_month_faktor / 100);
         if ($p_name=='fcost_makie')
-        { if (abs($fcost - $makie_fc) > 2) $wert = sprintf('%05.2f',$makie_fc/100);
+        { if (abs($fcost - intval($makie_fc / $bits_per_month_faktor)) > 2) $wert = sprintf('%05.2f',$makie_fc / 100);
           else $wert = 'ok';
         } 
         if ($p_name=='cost') $wert = format_b($cost);

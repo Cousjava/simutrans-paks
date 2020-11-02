@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$ 
 ---------------------------------
 obj=vehicle
 name=LZ129_Hindenburg_Kuehlwaren
@@ -13,7 +12,8 @@ retire_year=1937
 retire_month=5
 waytype=air
 cost=20250000
-runningcost=151
+runningcost=87
+fixed_cost=2262
 freight=Fleisch
 payload=27
 engine_type=diesel

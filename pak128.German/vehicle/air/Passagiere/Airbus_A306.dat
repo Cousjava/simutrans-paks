@@ -2,25 +2,25 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Airbus_A300-600
 copyright=Pumuckl999
-intro_year=1987
+intro_year=1983
 intro_month=3
 retire_year=2007
 retire_month=12
 waytype=air
-cost=519000000
-runningcost=806
+cost=726600000
+runningcost=813
+fixed_cost=85532
 freight=Passagiere
-payload=200
+payload=280
 engine_type=diesel
-power=18000
-gear=150
+power=99600
+gear=100
 speed=865
-weight=78
+weight=140
 length=5
 sound=5
 EmptyImage[W]=Airbus_A306.0.0

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 02-02-2018
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=MB_N56_Anhaenger_Getreide
@@ -12,17 +11,16 @@ intro_month=1
 retire_year=1945
 retire_month=12
 cost=344000
-runningcost=14
+runningcost=10
+fixed_cost=158
 waytype=road
 speed=45
 weight=2
 freight=Gerste
 payload=4
 length=4
-constraint[prev][0]=MB_N56_Getreide
-constraint[prev][1]=none
-constraint[next][0]=MB_N56_Anhaenger_Getreide
-constraint[next][1]=none
+Constraint[Prev][0]=any
+Constraint[next][0]=none
 EmptyImage[S]=MB_N56Getreide_Anhaenger.0.0
 EmptyImage[N]=MB_N56Getreide_Anhaenger.0.1
 EmptyImage[E]=MB_N56Getreide_Anhaenger.0.2

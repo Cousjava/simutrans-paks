@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=DaimlerBenz_LP333_Mineraloel
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1960
 retire_month=12
 cost=3053000
-runningcost=53
+runningcost=39
+fixed_cost=794
 waytype=road
 freight=Oel
 engine_type=diesel

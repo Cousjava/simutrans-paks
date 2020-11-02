@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Buessing_6500T_Aero
@@ -11,11 +11,12 @@ intro_month=1
 retire_year=1965
 retire_month=12
 cost=8160000
-runningcost=257
+runningcost=157
+fixed_cost=1756
 waytype=road
 freight=Passagiere
 payload=100
-engine_type=diesel 
+engine_type=diesel
 speed=50
 weight=11
 power=110

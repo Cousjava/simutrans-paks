@@ -3,7 +3,6 @@
 #     Vehicle
 #     02-2017
 --------------------------------
-
 obj=vehicle
 name=Kutschen_Schuettgut
 copyright=RedRabbit
@@ -12,7 +11,8 @@ retire_year=1949
 retire_month=10
 waytype=road
 cost=168000
-runningcost=17
+runningcost=11
+fixed_cost=96
 freight=Kohle
 payload=5
 speed=18
@@ -24,7 +24,6 @@ constraint[prev][2]=Zugpferde_4
 Constraint[Prev][3]=BZT_Traktor-gruen
 Constraint[Prev][4]=Lanz_Bulldog_FMD
 constraint[next][0]=none
-
 EmptyImage[W]=Kutschen_Schuettgut.0.1
 EmptyImage[NW]=Kutschen_Schuettgut.0.2
 EmptyImage[N]=Kutschen_Schuettgut.0.3
@@ -33,7 +32,6 @@ EmptyImage[E]=Kutschen_Schuettgut.0.5,-32,-16
 EmptyImage[SE]=Kutschen_Schuettgut.0.6
 EmptyImage[S]=Kutschen_Schuettgut.0.7
 EmptyImage[SW]=Kutschen_Schuettgut.0.8,20
-
 FreightImagetype[0]=Eisenerz
 FreightImage[0][W]=Kutschen_Schuettgut.1.1
 FreightImage[0][NW]=Kutschen_Schuettgut.1.2
@@ -43,7 +41,6 @@ FreightImage[0][E]=Kutschen_Schuettgut.1.5,-32,-16
 FreightImage[0][SE]=Kutschen_Schuettgut.1.6
 FreightImage[0][S]=Kutschen_Schuettgut.1.7
 FreightImage[0][SW]=Kutschen_Schuettgut.1.8,20
-
 FreightImagetype[1]=Kohle
 FreightImage[1][W]=Kutschen_Schuettgut.2.1
 FreightImage[1][NW]=Kutschen_Schuettgut.2.2
@@ -53,7 +50,6 @@ FreightImage[1][E]=Kutschen_Schuettgut.2.5,-32,-16
 FreightImage[1][SE]=Kutschen_Schuettgut.2.6
 FreightImage[1][S]=Kutschen_Schuettgut.2.7
 FreightImage[1][SW]=Kutschen_Schuettgut.2.8,20
-
 FreightImagetype[2]=Abfall
 FreightImage[2][W]=Kutschen_Schuettgut.3.1
 FreightImage[2][NW]=Kutschen_Schuettgut.3.2
@@ -63,7 +59,6 @@ FreightImage[2][E]=Kutschen_Schuettgut.3.5,-32,-16
 FreightImage[2][SE]=Kutschen_Schuettgut.3.6
 FreightImage[2][S]=Kutschen_Schuettgut.3.7
 FreightImage[2][SW]=Kutschen_Schuettgut.3.8,20
-
 FreightImagetype[3]=Sand
 FreightImage[3][W]=Kutschen_Schuettgut.5.1
 FreightImage[3][NW]=Kutschen_Schuettgut.5.2
@@ -73,7 +68,6 @@ FreightImage[3][E]=Kutschen_Schuettgut.5.5,-32,-16
 FreightImage[3][SE]=Kutschen_Schuettgut.5.6
 FreightImage[3][S]=Kutschen_Schuettgut.5.7
 FreightImage[3][SW]=Kutschen_Schuettgut.5.8,20
-
 FreightImagetype[4]=Schrott
 FreightImage[4][W]=Kutschen_Schuettgut.6.1
 FreightImage[4][NW]=Kutschen_Schuettgut.6.2
@@ -83,7 +77,6 @@ FreightImage[4][E]=Kutschen_Schuettgut.6.5,-32,-16
 FreightImage[4][SE]=Kutschen_Schuettgut.6.6
 FreightImage[4][S]=Kutschen_Schuettgut.6.7
 FreightImage[4][SW]=Kutschen_Schuettgut.6.8,20
-
 FreightImagetype[5]=Steine
 FreightImage[5][W]=Kutschen_Schuettgut.7.1
 FreightImage[5][NW]=Kutschen_Schuettgut.7.2

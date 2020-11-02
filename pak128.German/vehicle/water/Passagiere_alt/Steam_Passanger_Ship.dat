@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=RVg-Steam_Passanger_Ship_0
@@ -12,7 +11,8 @@ intro_month=5
 retire_year=1935
 retire_month=5
 cost=13416000
-runningcost=809
+runningcost=500
+fixed_cost=3398
 waytype=water
 engine_type=steam
 freight=Passagiere

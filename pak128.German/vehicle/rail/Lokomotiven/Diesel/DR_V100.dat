@@ -13,6 +13,7 @@ retire_year=1992
 retire_Month=11
 cost=9460000
 runningcost=83
+fixed_cost=2106
 waytype=track
 engine_type=diesel
 speed=100

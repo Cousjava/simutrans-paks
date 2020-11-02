@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Buessing_BS11_Stueckgut
@@ -11,19 +11,17 @@ intro_month=1
 retire_year=1973
 retire_month=12
 cost=2772000
-runningcost=50
+runningcost=35
+fixed_cost=675
 waytype=road
 freight=Buecher
 payload=8
 speed=80
 weight=6
 power=99
-length=7
+length=8
 smoke=smoke_diesel
 constraint[prev][0]=none
-constraint[next][0]=anhaenger_1965_16t_Stueckgut_Koffer
-constraint[next][1]=anhaenger_1965_16t_Stueckgut_Plane
-constraint[next][2]=none
 EmptyImage[S]=RR_Buessing_BS11_Stueck.0.1
 EmptyImage[N]=RR_Buessing_BS11_Stueck.0.2
 EmptyImage[E]=RR_Buessing_BS11_Stueck.0.3

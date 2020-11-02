@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=MHz-McDonnell-Douglas_DC10
@@ -12,15 +11,16 @@ intro_month=3
 retire_year=1990
 retire_month=8
 cost=702180000
-runningcost=1154
+runningcost=1016
+fixed_cost=87988
 waytype=air
 engine_type=diesel
 freight=Passagiere
 payload=282
 speed=830
-power=19200
-gear=150
-weight=121
+power=114000
+gear=100
+weight=145
 smoke=-1
 sound=smalloldplanes.wav
 emptyimage[w]=air_pass-post_01.1.1

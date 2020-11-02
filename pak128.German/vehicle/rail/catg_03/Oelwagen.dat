@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Oelwagen
@@ -10,7 +9,8 @@ copyright=TonyBzt
 intro_year=1929
 intro_month=1
 cost=9292500
-runningcost=185
+runningcost=120
+fixed_cost=2380
 waytype=track
 freight=Oel
 payload=45

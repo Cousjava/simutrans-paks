@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=DaimlerBenz_LP1620_Schuettgut
@@ -11,19 +10,20 @@ intro_year=1966
 intro_month=1
 retire_year=1975
 retire_month=12
-cost=2813000
-runningcost=42
+cost=2604000
+runningcost=32
+fixed_cost=636
 waytype=road
 freight=Kohle
 engine_type=diesel
-power=160
-speed=85
+power=154
+speed=80
+# 210PS, Nutzlast 9t, Gesamtgewicht 16t Anhänger 22t Lastzug 38t
 weight=7.6
 payload=9
 length=8
 sound=1
 constraint[prev][0]=none
-constraint[next][0]=none
 EmptyImage[W]=mb_lp1620_schuettgut.0.1
 EmptyImage[NW]=mb_lp1620_schuettgut.0.2
 EmptyImage[N]=mb_lp1620_schuettgut.0.3

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Schute_ALR7_landwirtschaftl._Gueter
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1988
 retire_month=12
 cost=11250000
-runningcost=751
+runningcost=452
+fixed_cost=2394
 waytype=water
 freight=Weizen
 speed=25

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Schotterwagen
@@ -10,7 +9,8 @@ copyright=TonyBzt
 intro_year=1950
 intro_month=3
 cost=4100000
-runningcost=78
+runningcost=54
+fixed_cost=1189
 waytype=track
 freight=Kohle
 payload=22

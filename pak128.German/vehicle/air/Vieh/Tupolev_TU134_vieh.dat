@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Tupolev_TU134_Vieh
@@ -12,15 +11,16 @@ intro_month=1
 retire_year=1990
 retire_month=12
 waytype=air
-cost=172800000
-runningcost=354
+cost=76800000
+runningcost=201
+fixed_cost=11837
 freight=Vieh
-payload=36
+payload=16
 engine_type=diesel
-power=7526
+power=26400
 gear=100
 speed=800
-weight=27
+weight=30
 length=5
 sound=5
 EmptyImage[W]=Tupolev_TU134_Fracht.4.1

@@ -13,6 +13,7 @@ retire_year=1935
 retire_month=12
 cost=1240000
 runningcost=58
+fixed_cost=x
 waytype=track
 freight=Tierfutter
 payload=10

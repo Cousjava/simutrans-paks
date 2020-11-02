@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 21-10-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Baureihe_IK_Front
@@ -10,7 +9,8 @@ copyright=pumuckl999
 intro_year=2015
 intro_month=1
 cost=10785000
-runningcost=216
+runningcost=132
+fixed_cost=1992
 waytype=track
 freight=Passagiere
 engine_type=electric
@@ -36,7 +36,8 @@ copyright=pumuckl999
 intro_year=2015
 intro_month=1
 cost=10890000
-runningcost=218
+runningcost=133
+fixed_cost=2014
 waytype=track
 freight=Passagiere
 engine_type=electric
@@ -63,7 +64,8 @@ copyright=pumuckl999
 intro_year=2015
 intro_month=1
 cost=10890000
-runningcost=218
+runningcost=133
+fixed_cost=2014
 waytype=track
 freight=Passagiere
 engine_type=electric
@@ -90,7 +92,8 @@ copyright=pumuckl999
 intro_year=2015
 intro_month=1
 cost=10785000
-runningcost=216
+runningcost=132
+fixed_cost=1992
 waytype=track
 freight=Passagiere
 engine_type=electric

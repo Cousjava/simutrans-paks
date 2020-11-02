@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 08-08-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Schneepflug_BA_Meiningen_DB
@@ -12,6 +11,7 @@ intro_year=1968
 intro_month=9
 cost=540000
 runningcost=15
+fixed_cost=406
 freight=None
 speed=100
 weight=54
@@ -34,6 +34,7 @@ intro_year=1968
 intro_month=9
 cost=540000
 runningcost=5
+fixed_cost=101
 freight=None
 speed=50
 weight=54

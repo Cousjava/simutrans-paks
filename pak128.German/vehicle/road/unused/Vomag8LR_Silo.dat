@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 04-02-2018
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Vomag8LR_Siloware
@@ -13,6 +12,7 @@ retire_year=1963
 retire_month=12
 cost=2005000
 runningcost=54
+fixed_cost=x
 waytype=road
 speed=50
 power=111

@@ -1,0 +1,33 @@
+---------------------------------
+#	PAK128.german
+#	Vehicle
+#	neu: 08.07.2020
+---------------------------------
+obj=vehicle
+name=Pferdebahnwagen_1_Typ_BPfE
+copyright=pumuckl999
+intro_year=1865
+intro_month=7
+retire_year=1902
+retire_month=12
+waytype=tram_track
+cost=1220000
+runningcost=79
+fixed_cost=269
+freight=Passagiere
+payload=52
+speed=15
+weight=5
+length=6
+#sound=
+#smoke=
+constraint[prev][0]=Zugpferde_Tram_2
+constraint[next][0]=none
+EmptyImage[S]=Pferdebahnwagen1TypBPfE.0.6
+EmptyImage[N]=Pferdebahnwagen1TypBPfE.0.2
+EmptyImage[E]=Pferdebahnwagen1TypBPfE.0.4
+EmptyImage[W]=Pferdebahnwagen1TypBPfE.0.0
+EmptyImage[SW]=Pferdebahnwagen1TypBPfE.0.7
+EmptyImage[SE]=Pferdebahnwagen1TypBPfE.0.5
+EmptyImage[NW]=Pferdebahnwagen1TypBPfE.0.1
+EmptyImage[NE]=Pferdebahnwagen1TypBPfE.0.3

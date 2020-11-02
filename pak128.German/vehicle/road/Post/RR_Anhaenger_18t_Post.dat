@@ -6,10 +6,11 @@
 obj=vehicle
 name=Anhaenger_18t_Post
 copyright=RedRabbit
-intro_year=1986
+intro_year=1988
 intro_month=1
 cost=12056000
-runningcost=253
+runningcost=152
+fixed_cost=2565
 waytype=road
 speed=80
 weight=5.6

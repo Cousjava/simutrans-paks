@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Boeing747-200f_Vieh
@@ -12,15 +11,16 @@ intro_month=3
 retire_year=2005
 retire_month=6
 waytype=air
-cost=1208250000
-runningcost=1928
+cost=617550000
+runningcost=1468
+fixed_cost=92424
 freight=Vieh
-payload=225
+payload=115
 engine_type=diesel
-power=26644
-gear=150
+power=194400
+gear=100
 speed=895
-weight=351
+weight=250
 length=8
 sound=5
 EmptyImage[S]=Boeing_B747-200f_vieh.0.6

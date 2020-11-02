@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Schlepper Fairplay V
@@ -10,7 +9,8 @@ Copyright=pumuckl999
 intro_year=1980
 intro_month=1
 cost=1682100
-runningcost=66
+runningcost=42
+fixed_cost=325
 waytype=water
 freight=Schiffssektionen
 engine_type=diesel

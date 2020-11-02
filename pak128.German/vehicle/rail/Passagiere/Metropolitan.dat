@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 02-09-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Metropolitan_Mittelwagen
@@ -10,7 +9,8 @@ copyright=pumuckl999
 intro_year=1999
 intro_month=8
 cost=19360000
-runningcost=166
+runningcost=111
+fixed_cost=4562
 freight=Passagiere
 payload=57
 speed=220
@@ -30,14 +30,14 @@ EmptyImage[W]=Metropolitan.0.5
 EmptyImage[NW]=Metropolitan.0.6
 EmptyImage[NE]=Metropolitan.0.7
 --------------------------------
-
 obj=vehicle
 name=Metropolitan_Steuerwagen
 copyright=pumuckl999
 intro_year=1999
 intro_month=8
 cost=15440000
-runningcost=137
+runningcost=94
+fixed_cost=3764
 freight=Passagiere
 payload=45
 speed=220

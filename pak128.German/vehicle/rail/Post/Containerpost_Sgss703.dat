@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 28-03-2019
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Containertragwagen_Sgss-y703
@@ -10,7 +9,8 @@ copyright=pumuckl999
 intro_year=1991
 intro_month=1
 cost=60220000
-runningcost=636
+runningcost=387
+fixed_cost=12817
 waytype=track
 freight=Post
 payload=250

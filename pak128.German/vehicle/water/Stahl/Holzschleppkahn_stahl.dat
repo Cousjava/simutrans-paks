@@ -1,18 +1,17 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Schiffe
-#    Neu:
-#	Letzte Bearbeitung:    11-08-2017 Makie
 ---------------------------------
 obj=vehicle
 name=Holzschleppkahn_Stahl
 copyright=Pumuckl999
 intro_year=1800
 intro_month=1
-retire_year=1919
-retire_month=12
+retire_year=1920
+retire_month=1
 cost=11250000
-runningcost=757
+runningcost=458
+fixed_cost=2553
 waytype=water
 freight=Stahl
 speed=25

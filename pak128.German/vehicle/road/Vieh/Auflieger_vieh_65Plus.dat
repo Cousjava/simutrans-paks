@@ -7,11 +7,12 @@ obj=vehicle
 name=Auflieger_Vieh_alt
 copyright=RedRabbit
 intro_year=1933
-intro_month=1
+intro_month=2
 retire_year=1985
 retire_month=12
 cost=3872000
-runningcost=98
+runningcost=63
+fixed_cost=1017
 waytype=road
 freight=Vieh
 speed=70
@@ -31,6 +32,7 @@ constraint[prev][9]=MercedesBenz_SK_Zugmaschiene
 constraint[prev][10]=Magirus_Jupiter200D_Zugmaschine
 constraint[prev][11]=MB_LZ6000
 constraint[prev][12]=MB_LZ8000
+constraint[prev][13]=W50_fluessigeLebensmittel
 Constraint[next][0]=none
 EmptyImage[W]=Auflieger_65Plus.3.1,11,9
 EmptyImage[NW]=Auflieger_65Plus.3.2,1,19
@@ -41,4 +43,3 @@ EmptyImage[SE]=Auflieger_65Plus.3.6,-1,22
 EmptyImage[S]=Auflieger_65Plus.3.7,-24,16
 EmptyImage[SW]=Auflieger_65Plus.3.8,17,1
 -------------------------------------------------
-

@@ -9,7 +9,8 @@ copyright=RedRabbit
 intro_year=1956
 intro_month=1
 cost=3692000
-runningcost=80
+runningcost=52
+fixed_cost=935
 waytype=road
 freight=Fleisch
 speed=80
@@ -29,6 +30,7 @@ constraint[prev][9]=MercedesBenz_SK_Zugmaschiene
 constraint[prev][10]=Magirus_Jupiter200D_Zugmaschine
 constraint[prev][11]=MB_LZ6000
 constraint[prev][12]=MB_LZ8000
+constraint[prev][13]=W50_fluessigeLebensmittel
 Constraint[next][0]=none
 EmptyImage[W]=Auflieger_65Plus.2.1,11,9
 EmptyImage[NW]=Auflieger_65Plus.2.2,1,19
@@ -39,4 +41,3 @@ EmptyImage[SE]=Auflieger_65Plus.2.6,-1,22
 EmptyImage[S]=Auflieger_65Plus.2.7,-24,16
 EmptyImage[SW]=Auflieger_65Plus.2.8,17,1
 -------------------------------------------------
-

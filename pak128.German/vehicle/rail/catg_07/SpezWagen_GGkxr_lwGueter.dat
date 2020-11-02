@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 05-09-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Spezialwagen_GGkxr_lw.Gueter
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1970
 retire_month=12
 cost=9920000
-runningcost=189
+runningcost=119
+fixed_cost=2304
 waytype=track
 freight=Weizen
 payload=60

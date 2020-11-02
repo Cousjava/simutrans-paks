@@ -11,7 +11,8 @@ retire_year=1949
 retire_month=10
 waytype=road
 cost=264200
-runningcost=26
+runningcost=16
+fixed_cost=116
 freight=Holz
 payload=8
 speed=18
@@ -23,7 +24,6 @@ constraint[prev][2]=Zugpferde_4
 Constraint[Prev][3]=BZT_Traktor-gruen
 Constraint[Prev][4]=Lanz_Bulldog_FMD
 constraint[next][0]=none
-
 EmptyImage[W]=Kutschen_Holz.0.1
 EmptyImage[NW]=Kutschen_Holz.0.2
 EmptyImage[N]=Kutschen_Holz.0.3
@@ -32,7 +32,6 @@ EmptyImage[E]=Kutschen_Holz.0.5,-32,-16
 EmptyImage[SE]=Kutschen_Holz.0.6
 EmptyImage[S]=Kutschen_Holz.0.7
 EmptyImage[SW]=Kutschen_Holz.0.8,20
-
 FreightImagetype[0]=Holz
 FreightImage[0][W]=Kutschen_Holz.1.1
 FreightImage[0][NW]=Kutschen_Holz.1.2
@@ -42,7 +41,6 @@ FreightImage[0][E]=Kutschen_Holz.1.5,-32,-16
 FreightImage[0][SE]=Kutschen_Holz.1.6
 FreightImage[0][S]=Kutschen_Holz.1.7
 FreightImage[0][SW]=Kutschen_Holz.1.8,20
-
 FreightImagetype[1]=Bretter
 FreightImage[1][W]=Kutschen_Holz.2.1
 FreightImage[1][NW]=Kutschen_Holz.2.2

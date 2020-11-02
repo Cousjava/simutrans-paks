@@ -2,7 +2,7 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 14-06-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
+#	dem fehlen Ladungsgrafiken, Kohle Salz usw.
 ---------------------------------
 obj=vehicle
 name=offener Gueterwagen 1850 Schuettgut
@@ -12,7 +12,8 @@ intro_month=1
 retire_year=1905
 retire_month=12
 cost=534000
-runningcost=28
+runningcost=20
+fixed_cost=311
 waytype=track
 freight=Kohle
 payload=7

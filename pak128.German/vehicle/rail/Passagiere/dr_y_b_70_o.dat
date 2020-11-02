@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=YB70_1.Kl._Schnellzugwagen
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1995
 retire_month=12
 cost=18290000
-runningcost=264
+runningcost=165
+fixed_cost=4144
 waytype=track
 freight=Passagiere
 payload=100

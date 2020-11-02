@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=MAN_SR240
@@ -11,7 +11,8 @@ intro_month=1
 retire_year=1986
 retire_month=12
 cost=8790000
-runningcost=132
+runningcost=87
+fixed_cost=1908
 waytype=road
 freight=Passagiere
 payload=46

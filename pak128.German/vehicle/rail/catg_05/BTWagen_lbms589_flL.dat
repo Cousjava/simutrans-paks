@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 14-09-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Behaelter-Tragwagen_Lbms589_fl.Lebensmittel
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=2004
 retire_month=12
 cost=6608000
-runningcost=117
+runningcost=75
+fixed_cost=1616
 waytype=track
 freight=Milch
 payload=29

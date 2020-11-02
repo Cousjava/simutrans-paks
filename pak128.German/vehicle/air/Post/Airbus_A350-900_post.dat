@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Airbus_A350-900_Post
@@ -12,15 +11,16 @@ intro_month=4
 retire_year=2045
 retire_month=12
 waytype=air
-cost=857220000
-runningcost=1081
+cost=1403220000
+runningcost=967
+fixed_cost=151076
 freight=Post
-payload=314
+payload=514
 engine_type=diesel
-power=32000
-gear=150
+power=172400
+gear=100
 speed=910
-weight=116
+weight=190
 length=6
 sound=5
 EmptyImage[S]=Airbus_A350-900_post.0.6

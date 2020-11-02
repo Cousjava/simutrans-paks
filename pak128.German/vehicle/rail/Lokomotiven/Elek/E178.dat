@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 23-08-2020
+---------------------------------
+obj=vehicle
+name=E_178
+copyright=pumuckl999
+intro_year=1929
+intro_month=1
+retire_year=1945
+retire_month=12
+cost=7786000
+runningcost=110
+fixed_cost=2797
+waytype=electrified_track
+speed=80
+weight=98.6
+power=850
+gear=200
+length=12
+sound=-1
+EmptyImage[S]=E178.0.0
+EmptyImage[E]=E178.0.1
+EmptyImage[SE]=E178.0.2
+EmptyImage[SW]=E178.0.3
+EmptyImage[N]=E178.0.4
+EmptyImage[W]=E178.0.5
+EmptyImage[NW]=E178.0.6
+EmptyImage[NE]=E178.0.7
+-----------------------------

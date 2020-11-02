@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 30-01-2018
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=MAN_KVB-6_Kuehlwaren
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1950
 retire_month=12
 cost=777000
-runningcost=29
+runningcost=19
+fixed_cost=213
 waytype=road
 speed=30
 power=89

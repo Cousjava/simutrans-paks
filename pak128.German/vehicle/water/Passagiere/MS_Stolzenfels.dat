@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=MS Stolzenfels
@@ -13,7 +12,8 @@ retire_year=2004
 retire_month=12
 waytype=water
 cost=42120000
-runningcost=2524
+runningcost=1524
+fixed_cost=8749
 freight=Passagiere
 payload=1000
 engine_type=diesel

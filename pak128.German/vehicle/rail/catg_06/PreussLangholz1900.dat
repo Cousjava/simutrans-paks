@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 05-08-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Preussischer_Langholzwagen1900
@@ -11,7 +10,8 @@ intro_year=1900
 intro_month=1
 retire_year=1935
 cost=1700000
-runningcost=54
+runningcost=38
+fixed_cost=619
 waytype=track
 freight=Holz
 payload=15

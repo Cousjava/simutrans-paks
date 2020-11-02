@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Inselversorger Jannessand
@@ -13,7 +12,8 @@ intro_month=1
 retire_year=2030
 retire_month=12
 cost=7500000
-runningcost=349
+runningcost=229
+fixed_cost=2181
 waytype=water
 freight=Vieh
 engine_type=diesel

@@ -16,6 +16,7 @@ weight=85
 power=6400
 gear=120
 RunningCost=604
+fixed_cost=x
 intro_year=2000
 EmptyImage[S]=Taurus_OeBB1116_PC.0.0
 EmptyImage[E]=Taurus_OeBB1116_PC.0.1

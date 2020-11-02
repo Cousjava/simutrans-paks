@@ -2,9 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$ 
-
-
 ---------------------------------
 obj=vehicle
 name=Tieflader
@@ -15,7 +12,8 @@ payload=23
 speed=100
 cost=7040000
 weight=14
-runningcost=126
+runningcost=82
+fixed_cost=1762
 intro_year=1955
 intro_month=3
 length=11

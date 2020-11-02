@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
+#    Neu:
 #	Letzte Bearbeitung: 04-09-2018 pumuckl999 neue Grafiken
 ---------------------------------
 obj=vehicle
@@ -10,7 +10,8 @@ copyright=pumuckl999
 intro_year=1956
 intro_month=1
 cost=24356000
-runningcost=292
+runningcost=195
+fixed_cost=6137
 waytype=track
 freight=Post
 payload=100

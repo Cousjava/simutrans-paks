@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 27-7-2017
-#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
 ---------------------------------
 obj=vehicle
 name=NE81-DB_BR626_VT
@@ -10,7 +9,8 @@ copyright=pumuckl999
 intro_year=1981
 intro_month=1
 cost=17160000
-runningcost=233
+runningcost=156
+fixed_cost=3424
 freight=Passagiere
 power=500
 gear=200
@@ -21,7 +21,8 @@ weight=46
 waytype=track
 engine_type=diesel
 constraint[prev][0]=NE81-DB_BR926_VB
-constraint[prev][1]=none
+constraint[prev][1]=NE81-DB_BR626_VT
+constraint[prev][2]=none
 EmptyImage[S]=NE81.0.0
 EmptyImage[E]=NE81.0.1
 EmptyImage[SE]=NE81.0.2
@@ -31,22 +32,23 @@ EmptyImage[W]=NE81.0.5
 EmptyImage[NW]=NE81.0.6
 EmptyImage[NE]=NE81.0.7
 --------------------------------
-
 obj=vehicle
 name=NE81-DB_BR926_VB
 copyright=pumuckl999
 intro_year=1981
 intro_month=1
-cost=12090000
-runningcost=203
+cost=12330000
+runningcost=128
+fixed_cost=2711
 freight=Passagiere
-payload=78
+payload=80
 speed=100
 length=14
-weight=39
+weight=33
 waytype=track
 constraint[prev][0]=NE81-DB_BR626_VT
-#constraint[next][0]=none
+constraint[prev][1]=NE81-DB_BR926_VB
+constraint[prev][2]=none
 EmptyImage[S]=NE81.0.0
 EmptyImage[E]=NE81.0.1
 EmptyImage[SE]=NE81.0.2

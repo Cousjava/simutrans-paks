@@ -12,6 +12,7 @@ retire_year=1991
 retire_month=12
 cost=28190000
 runningcost=311
+fixed_cost=7823
 waytype=electrified_track
 power=3000
 gear=320

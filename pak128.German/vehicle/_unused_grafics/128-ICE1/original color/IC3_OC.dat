@@ -3,7 +3,7 @@
 #   IC3 (original color)
 #
 # (Formation Example)
-#  _____ _____ _____ 
+#  _____ _____ _____
 # (_____H_____H_____)
 # (head) (mid) (tail)
 #
@@ -23,6 +23,7 @@ weight=34
 power=580
 gear=130
 RunningCost=63
+fixed_cost=x
 intro_year=1989
 intro_month=9
 Constraint[Prev][0]=DSB_IC3(tail)(OC)
@@ -51,6 +52,7 @@ weight=34
 power=580
 gear=130
 RunningCost=63
+fixed_cost=x
 intro_year=1989
 intro_month=9
 Constraint[Prev][0]=DSB_IC3(mid)(OC)
@@ -76,6 +78,7 @@ speed=180
 cost=2870000
 weight=29
 RunningCost=81
+fixed_cost=x
 intro_year=1989
 intro_month=9
 Constraint[Prev][0]=DSB_IC3(head)(OC)

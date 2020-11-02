@@ -1,29 +1,30 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=MAN_13280_F_Post
+# MAN 13.275 F von 12/68-12/69
 copyright=RedRabbit
 intro_year=1967
 intro_month=1
-retire_year=1986
+retire_year=1988
 retire_month=12
-cost=12514000
-runningcost=233
+cost=11890000
+runningcost=144
+fixed_cost=2554
 waytype=road
 freight=Post
 engine_type=diesel
-power=280
+power=202
 speed=80
+# 275PS, Nutzlast 8.1t, Gesamtgewicht 16t Anhänger 22t
 weight=7.4
 payload=85
 length=8
 sound=1
 constraint[prev][0]=none
-constraint[next][0]=none
 EmptyImage[W]=MAN_13275_F.2.1
 EmptyImage[NW]=MAN_13275_F.2.2
 EmptyImage[N]=MAN_13275_F.2.3

@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Viehwagen
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1977
 retire_month=4
 cost=3480000
-runningcost=86
+runningcost=60
+fixed_cost=1168
 length=8
 waytype=track
 freight=Vieh

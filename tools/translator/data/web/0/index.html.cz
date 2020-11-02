@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//CZ">
+<html>
+  <head>
+    <title>Simutrans Home</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="Simutrans, Help, Simutrans Help">
+    <meta name="robots" content="index,follow">
+    <link href="css/style.css" type="text/css" rel="StyleSheet" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> 
+  </head>
+  <body>
+    <img style="margin-left:auto;margin-right: auto;" id="logo" src="img/simutrans.png" alt="SimuTranslator logo" width="50%" height="auto" title="SimuTranslator" />   
+    <hr />
+<div align="center">
+<a href="https://sourceforge.net/projects/simutrans/"><img src="img/sourceforge.png" alt="Spiele download sourceforge" title="Simutrans auf SourceForge" ></a> 
+<a href="https://store.steampowered.com/app/434520/Simutrans"><img src="img/steam_de.png" alt="Spiele auf Steam" title="Simutrans auf Steam" ></a>
+</div>
+<div id='width600train3'>
+<h1 align="center"><font size="+3">Simutrans</font></h1>
+<p>
+    <a href="index.html.en">english</a>
+    <a href="index.html.de">deutsch</a>
+</p>
+
+<p>
+Simutrans je freeware a v novějších verzí open-source hra simulující dopravu. Cílem hry je postavit infrastrukturu, která umožní přepravovat různé výrobky nebo cestující. Cestující potřebují dojíždět do práce, mezi městy a k turistickým atrakcím. Suroviny je třeba dopravit do továren, kde jsou přetvořeny a doručeny spotřebitelům do města. Druhým cílem je stát se co nejbohatším, ale je třeba opětovně investovat značnou sumu vydělaných peněz do rozšíření své dopravní sítě. Je třeba udržovat bankovní účet v plusu nebo se neudržíte dlouho. Vaše konkurence nespí! Hrajte jak dlouho chcete. Začněte v roce 1880 a skončete třeba v roce 2050. Budou zde přibývat stále nová vozidla a budovy. Města budou růst a slučovat se v metropole. Hrajte proti umělé inteligenci nebo sami.
+
+<h2 class="bb_tag">Grafické verze hry</h2>
+Simutrans existuje v několika grafických verzí zvaných PakSety. PakSet obsahuje veškerou grafiku dokonce i základní parametry hry jako jsou výše nákladů, počáteční finanční obnos a další. Za dobu vývoje Simutransu byla vytvořena spousta PakSetů jako jsou původní Pak64 či dnes velice populární Pak128.
+
+<h2 class="bb_tag">Historie hry</h2>
+S vývojem Simutransu začal Hansjörg Malthaner v létě 1997, protože byl zklamán ze špatné AI v Transport Tycoon Deluxe, a protože se chtěl naučit objektové programování v programovacím jazyce C++. Od té doby, hra rostla od jednoduchého programu, na velký projekt, který má svůj vlastní život a komunitu fanoušků a přispěvatelů. Hansjörg odešel z vývoje Simutransu v roce 2004. Od té doby je vývoj v rukou komunity Simutransu. Každá část Simutransu má nyní svého vlastního koordinátora. Díky úsilí lidí, kteří se podílí na vývoji Simutransu, vývoj pokračuje v přátelské atmosféře do dnešního dne.						
+</p>
+
+</div>
+</body>
+</html>

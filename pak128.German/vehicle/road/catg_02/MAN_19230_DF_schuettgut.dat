@@ -1,25 +1,27 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=MAN_19230_DF_Schuettgut
+# MAN F 7 19.230 DF von 09/67-04/71 Modellreihe geht bis 08/88
 copyright=RedRabbit
 intro_year=1967
 intro_month=1
 retire_year=1986
 retire_month=12
-cost=4236000
-runningcost=66
+cost=3172000
+runningcost=37
+fixed_cost=746
 waytype=road
 freight=Kohle
 engine_type=diesel
-power=230
+power=169
 speed=80
+# 230PS, Nutzlast 12.8t, Gesamtgewicht 22t Anhänger 16t
 weight=9.2
-payload=16.8
+payload=12.8
 length=9
 sound=1
 constraint[prev][0]=none

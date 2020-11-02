@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Air
-#	Neu: 
+#	Neu:
 ---------------------------------
 obj=vehicle
 name=Iljuschin_Il14G_Fracht_Stueckgut
@@ -12,7 +12,8 @@ retire_year=1967
 retire_month=12
 waytype=air
 cost=31050000
-runningcost=108
+runningcost=57
+fixed_cost=3546
 freight=Buecher
 payload=15
 engine_type=diesel

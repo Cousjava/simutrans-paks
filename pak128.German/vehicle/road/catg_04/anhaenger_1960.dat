@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Anhaenger_1960_Kuehlwaren
@@ -12,14 +11,16 @@ intro_month=1
 retire_year=1988
 retire_month=12
 cost=3664000
-runningcost=80
+runningcost=51
+fixed_cost=908
 waytype=road
 freight=Fleisch
 payload=15
 speed=80
 weight=6.4
 length=8
-constraint[next][0]=none
+Constraint[Prev][0]=any
+Constraint[next][0]=none
 EmptyImage[W]=anhaenger_1960.0.0
 EmptyImage[NW]=anhaenger_1960.0.1
 EmptyImage[N]=anhaenger_1960.0.2
@@ -29,5 +30,3 @@ EmptyImage[SE]=anhaenger_1960.0.5
 EmptyImage[S]=anhaenger_1960.0.6
 EmptyImage[SW]=anhaenger_1960.0.7
 ----------------------------------------------
-
-

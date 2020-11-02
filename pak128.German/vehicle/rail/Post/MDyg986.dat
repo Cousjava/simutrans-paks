@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 28.08.2020
+#	Letzte Bearbeitung:
+---------------------------------
+obj=vehicle
+name=Behelfsgepaeckwagen_MDyg986
+copyright=pumuckl999
+intro_year=1957
+intro_month=1
+retire_year=1998
+retire_month=11
+cost=25501000
+runningcost=211
+fixed_cost=6038
+waytype=track
+freight=Post
+payload=120
+speed=140
+weight=30.1
+length=13
+sound=-1
+EmptyImage[S]=MDyg986.0.0
+EmptyImage[E]=MDyg986.0.1
+EmptyImage[SE]=MDyg986.0.2
+EmptyImage[SW]=MDyg986.0.3,3,0
+EmptyImage[N]=MDyg986.0.4
+EmptyImage[W]=MDyg986.0.5
+EmptyImage[NW]=MDyg986.0.6
+EmptyImage[NE]=MDyg986.0.7,-4,0
+-------------------------------------------------

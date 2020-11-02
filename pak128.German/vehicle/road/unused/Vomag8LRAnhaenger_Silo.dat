@@ -12,6 +12,7 @@ retire_year=1963
 retire_month=12
 cost=1390000
 runningcost=50
+fixed_cost=x
 waytype=road
 speed=50
 weight=4

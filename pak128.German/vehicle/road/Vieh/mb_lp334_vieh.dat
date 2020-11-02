@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=DaimlerBenz_LP334_Vieh
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1965
 retire_month=12
 cost=2474700
-runningcost=43
+runningcost=32
+fixed_cost=632
 waytype=road
 freight=Vieh
 engine_type=diesel

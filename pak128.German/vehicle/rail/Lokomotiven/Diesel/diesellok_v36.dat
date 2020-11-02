@@ -14,6 +14,7 @@ retire_year=1985
 retire_Month=1
 cost=1857500
 runningcost=22
+fixed_cost=589
 waytype=track
 engine_type=diesel
 speed=55

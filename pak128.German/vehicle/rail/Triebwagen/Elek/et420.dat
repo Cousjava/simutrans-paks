@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 17-04-2017
-#	Letzte Bearbeitung: $Date$ - $Author$:
 ---------------------------------
 obj=vehicle
 name=ET420_Front
@@ -10,15 +9,18 @@ copyright=pumuckl999
 intro_year=1969
 intro_month=1
 cost=37540000
-runningcost=468
+runningcost=317
+fixed_cost=7925
 waytype=track
 freight=Passagiere
 engine_type=electric
 power=800
+gear=200
 payload=153
 speed=120
 length=13
 weight=40
+sound=ET420.wav
 constraint[prev][0]=ET420_Ende
 constraint[prev][1]=none
 constraint[next][0]=ET420_Mitte
@@ -37,7 +39,8 @@ copyright=pumuckl999
 intro_year=1969
 intro_month=1
 cost=37450000
-runningcost=468
+runningcost=317
+fixed_cost=7942
 waytype=track
 freight=Passagiere
 engine_type=electric
@@ -47,6 +50,7 @@ payload=152
 speed=120
 length=13
 weight=49
+sound=ET420.wav
 constraint[prev][0]=ET420_Front
 constraint[next][0]=ET420_Ende
 EmptyImage[S]=et420.2.0
@@ -64,15 +68,18 @@ copyright=pumuckl999
 intro_year=1969
 intro_month=1
 cost=37540000
-runningcost=468
+runningcost=317
+fixed_cost=7925
 waytype=track
 freight=Passagiere
 engine_type=electric
 power=800
+gear=200
 payload=153
 speed=120
 length=13
 weight=40
+sound=ET420.wav
 constraint[prev][0]=ET420_Mitte
 constraint[next][0]=ET420_Front
 constraint[next][1]=none
@@ -85,4 +92,3 @@ EmptyImage[W]=et420.1.5,-4,-2
 EmptyImage[NW]=et420.1.6
 EmptyImage[NE]=et420.1.7,-4,0
 ----------------------------------
-

@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=MAN_NM_192
@@ -11,11 +11,12 @@ intro_month=1
 retire_year=1999
 retire_month=12
 cost=6147000
-runningcost=126
+runningcost=78
+fixed_cost=1212
 waytype=road
 freight=Passagiere
 payload=48
-engine_type=diesel 
+engine_type=diesel
 speed=70
 weight=12
 power=141

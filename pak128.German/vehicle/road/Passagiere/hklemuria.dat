@@ -12,6 +12,7 @@ retire_year=2014
 retire_month=12
 cost=92500
 runningcost=5
+fixed_cost=28
 waytype=road
 freight=Passagiere
 payload=2

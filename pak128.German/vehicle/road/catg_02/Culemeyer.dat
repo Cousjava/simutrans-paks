@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 2008
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=BZT_Culemeyer2
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1961
 retire_month=12
 cost=865000
-runningcost=46
+runningcost=28
+fixed_cost=173
 waytype=road
 freight=Sand
 payload=15

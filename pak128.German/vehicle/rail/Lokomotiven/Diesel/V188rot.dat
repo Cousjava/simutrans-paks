@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=V188_DB_Version
@@ -12,6 +12,7 @@ retire_year=1971
 retire_Month=11
 cost=13620000
 runningcost=135
+fixed_cost=3402
 waytype=track
 engine_type=diesel
 speed=75

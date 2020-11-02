@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 13-09-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=D-Zug-Wagen_C4ue-26_3.Kl.
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1975
 retire_month=12
 cost=17240000
-runningcost=264
+runningcost=190
+fixed_cost=5251
 waytype=track
 freight=Passagiere
 payload=80
@@ -36,7 +36,8 @@ intro_month=1
 retire_year=1975
 retire_month=12
 cost=9710000
-runningcost=177
+runningcost=138
+fixed_cost=3739
 waytype=track
 freight=Passagiere
 payload=44

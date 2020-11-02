@@ -13,6 +13,7 @@ retire_year=1972
 retire_month=12
 cost=8323000
 runningcost=115
+fixed_cost=2920
 waytype=electrified_track
 speed=75
 weight=74.8

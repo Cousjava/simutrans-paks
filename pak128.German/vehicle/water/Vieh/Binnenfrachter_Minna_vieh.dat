@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Binnenfrachter_Minna_Vieh
@@ -13,7 +12,8 @@ retire_year=2009
 retire_month=12
 waytype=water
 cost=2892500
-runningcost=356
+runningcost=215
+fixed_cost=708
 freight=Vieh
 payload=70
 engine_type=diesel

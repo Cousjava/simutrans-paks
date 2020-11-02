@@ -1,7 +1,6 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Schiffe
-#    Neu:
 ---------------------------------
 obj=vehicle
 name=Schute_No.9_fluessige_Lebensmittel
@@ -11,7 +10,8 @@ intro_month=1
 retire_year=1950
 retire_month=12
 cost=7875000
-runningcost=529
+runningcost=318
+fixed_cost=1715
 waytype=water
 freight=Milch
 speed=25
@@ -33,6 +33,13 @@ constraint[prev][10]=Schute_No.9_Stahl
 constraint[prev][11]=Schute_No.9_Vieh
 constraint[prev][12]=Schute_No.9_Siloware
 constraint[prev][13]=Main-Kettenschlepper_K.B.K.S._No._V
+constraint[prev][14]=Kettenschlepper_Ladung_Pax
+constraint[prev][15]=Kettenschlepper_Ladung_Mail
+constraint[prev][16]=Kettenschlepper_Ladung_Kohle
+constraint[prev][17]=Kettenschlepper_Ladung_Holz
+constraint[prev][18]=Kettenschlepper_Ladung_Stueckgut
+constraint[prev][19]=Kettenschlepper_Ladung_Fisch
+constraint[prev][20]=Kettenschlepper_Ladung_Vieh
 constraint[next][0]=Tankschleppkahn_Wilde_Hilde
 constraint[next][1]=Tankschleppkahn_Geheimrat_von_Lavale
 constraint[next][2]=Tankschleppkahn_Schluckspecht

@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
+#    Neu:
 ---------------------------------
 # Gepäckwagen PW 4 Pr 04 Musterblatt IIa 10 von 1904
 obj=vehicle
@@ -12,7 +12,8 @@ intro_month=5
 retire_year=1960
 retire_month=12
 cost=7820000
-runningcost=165
+runningcost=118
+fixed_cost=2656
 waytype=track
 length=11
 freight=Post
@@ -29,7 +30,7 @@ EmptyImage[W]=PrAbteilwagen.2.5
 EmptyImage[NW]=PrAbteilwagen.2.6
 EmptyImage[NE]=PrAbteilwagen.2.7
 -----------------------------------------
-# Post4-b/17 
+# Post4-b/17
 obj=vehicle
 name=BZT_PrPost4
 copyright=TonyBzt
@@ -38,7 +39,8 @@ intro_month=5
 retire_year=1960
 retire_month=12
 cost=10820000
-runningcost=215
+runningcost=148
+fixed_cost=3281
 waytype=track
 length=11
 freight=Post

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Haru_Boeing747-200F_(MAIL)
@@ -12,15 +11,16 @@ intro_month=12
 retire_year=1999
 retire_month=3
 cost=1344750000
-runningcost=1977
+runningcost=1847
+fixed_cost=165630
 waytype=air
 engine_type=diesel
 freight=Post
 payload=550
 speed=815
-power=26644
-gear=150
-weight=170
+power=194400
+gear=100
+weight=345
 smoke=-1
 sound=engine-start-diesel-1.wav
 emptyimage[w]=air_pass-post_01.3.1

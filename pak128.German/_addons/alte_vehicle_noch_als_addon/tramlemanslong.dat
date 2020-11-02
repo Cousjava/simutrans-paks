@@ -2,7 +2,7 @@
 #	PAK128.german
 #	Vehicle: Strassenbahn
 #    Übernahme aus pak128: 05-2015
-#	Letzte Bearbeitung 
+#	Letzte Bearbeitung
 #    12-05-2015 The Transporter
 #	Kaufpreis angepasst: 24.05.15 NNW
 #    11-10-2015 The Transporter
@@ -14,7 +14,8 @@ intro_year=2007
 intro_month=1
 waytype=tram_track
 cost=3210000
-runningcost=76
+runningcost=45
+fixed_cost=676
 freight=Passagiere
 payload=30
 engine_type=electric

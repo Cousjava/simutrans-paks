@@ -12,6 +12,7 @@ retire_year=1929
 retire_month=12
 cost=15600
 runningcost=3
+fixed_cost=66
 waytype=road
 engine_type=Bio
 speed=18

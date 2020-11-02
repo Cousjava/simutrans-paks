@@ -12,6 +12,7 @@ retire_year=1938
 retire_month=12
 cost=3330000
 runningcost=47
+fixed_cost=1204
 waytype=electrified_track
 speed=50
 weight=68

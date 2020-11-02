@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Frachter_Esslingen_Landw.Gueter
@@ -13,7 +12,8 @@ intro_month=1
 #retire_year=2030
 #retire_month=12
 cost=24890000
-runningcost=1604
+runningcost=1004
+fixed_cost=6176
 waytype=water
 freight=Weizen
 engine_type=diesel

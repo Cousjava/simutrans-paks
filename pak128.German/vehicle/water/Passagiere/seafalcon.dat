@@ -2,8 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$ 
-
 ---------------------------------
 obj=vehicle
 name=Bodeneffektfahrzeug Seafalcon
@@ -12,7 +10,8 @@ intro_year=2010
 intro_month=1
 waytype=water
 cost=5325000
-runningcost=31
+runningcost=24
+fixed_cost=680
 freight=Passagiere
 payload=7
 engine_type=diesel

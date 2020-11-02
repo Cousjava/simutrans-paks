@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Henschel_HS22TL_Pritsche
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1967
 retire_month=12
 cost=5345000
-runningcost=89
+runningcost=62
+fixed_cost=1216
 waytype=road
 freight=Buecher
 engine_type=diesel
@@ -22,7 +22,6 @@ weight=6.5
 payload=14
 length=9
 constraint[prev][0]=none
-constraint[next][0]=none
 EmptyImage[W]=Henschel_HS22TL_Pritsche.0.1
 EmptyImage[NW]=Henschel_HS22TL_Pritsche.0.2
 EmptyImage[N]=Henschel_HS22TL_Pritsche.0.3
@@ -31,12 +30,52 @@ EmptyImage[E]=Henschel_HS22TL_Pritsche.0.5
 EmptyImage[SE]=Henschel_HS22TL_Pritsche.0.6
 EmptyImage[S]=Henschel_HS22TL_Pritsche.0.7
 EmptyImage[SW]=Henschel_HS22TL_Pritsche.0.8
-FreightImage[W]=Henschel_HS22TL_Pritsche.1.1
-FreightImage[NW]=Henschel_HS22TL_Pritsche.1.2
-FreightImage[N]=Henschel_HS22TL_Pritsche.1.3
-FreightImage[NE]=Henschel_HS22TL_Pritsche.1.4
-FreightImage[E]=Henschel_HS22TL_Pritsche.1.5
-FreightImage[SE]=Henschel_HS22TL_Pritsche.1.6
-FreightImage[S]=Henschel_HS22TL_Pritsche.1.7
-FreightImage[SW]=Henschel_HS22TL_Pritsche.1.8
+FreightImagetype[0]=Buecher
+FreightImage[0][W]=Henschel_HS22TL_Pritsche.1.1
+FreightImage[0][NW]=Henschel_HS22TL_Pritsche.1.2
+FreightImage[0][N]=Henschel_HS22TL_Pritsche.1.3
+FreightImage[0][NE]=Henschel_HS22TL_Pritsche.1.4
+FreightImage[0][E]=Henschel_HS22TL_Pritsche.1.5
+FreightImage[0][SE]=Henschel_HS22TL_Pritsche.1.6
+FreightImage[0][S]=Henschel_HS22TL_Pritsche.1.7
+FreightImage[0][SW]=Henschel_HS22TL_Pritsche.1.8
+# Papierrollen in blauer Plastikfolie
+FreightImagetype[1]=Papier
+FreightImage[1][W]=Henschel_HS22TL_Pritsche.2.1
+FreightImage[1][NW]=Henschel_HS22TL_Pritsche.2.2
+FreightImage[1][N]=Henschel_HS22TL_Pritsche.2.3
+FreightImage[1][NE]=Henschel_HS22TL_Pritsche.2.4
+FreightImage[1][E]=Henschel_HS22TL_Pritsche.2.5
+FreightImage[1][SE]=Henschel_HS22TL_Pritsche.2.6
+FreightImage[1][S]=Henschel_HS22TL_Pritsche.2.7
+FreightImage[1][SW]=Henschel_HS22TL_Pritsche.2.8
+# Maschinenteile
+FreightImagetype[2]=Maschinen
+FreightImage[2][W]=Henschel_HS22TL_Pritsche.3.1
+FreightImage[2][NW]=Henschel_HS22TL_Pritsche.3.2
+FreightImage[2][N]=Henschel_HS22TL_Pritsche.3.3
+FreightImage[2][NE]=Henschel_HS22TL_Pritsche.3.4
+FreightImage[2][E]=Henschel_HS22TL_Pritsche.3.5
+FreightImage[2][SE]=Henschel_HS22TL_Pritsche.3.6
+FreightImage[2][S]=Henschel_HS22TL_Pritsche.3.7
+FreightImage[2][SW]=Henschel_HS22TL_Pritsche.3.8
+# Paletten neu im Bündel
+FreightImagetype[3]=Verpackungsmittel
+FreightImage[3][W]=Henschel_HS22TL_Pritsche.4.1
+FreightImage[3][NW]=Henschel_HS22TL_Pritsche.4.2
+FreightImage[3][N]=Henschel_HS22TL_Pritsche.4.3
+FreightImage[3][NE]=Henschel_HS22TL_Pritsche.4.4
+FreightImage[3][E]=Henschel_HS22TL_Pritsche.4.5
+FreightImage[3][SE]=Henschel_HS22TL_Pritsche.4.6
+FreightImage[3][S]=Henschel_HS22TL_Pritsche.4.7
+FreightImage[3][SW]=Henschel_HS22TL_Pritsche.4.8
+FreightImagetype[4]=Betonfertigteile
+FreightImage[4][W]=Henschel_HS22TL_Pritsche.5.1
+FreightImage[4][NW]=Henschel_HS22TL_Pritsche.5.2
+FreightImage[4][N]=Henschel_HS22TL_Pritsche.5.3
+FreightImage[4][NE]=Henschel_HS22TL_Pritsche.5.4
+FreightImage[4][E]=Henschel_HS22TL_Pritsche.5.5
+FreightImage[4][SE]=Henschel_HS22TL_Pritsche.5.6
+FreightImage[4][S]=Henschel_HS22TL_Pritsche.5.7
+FreightImage[4][SW]=Henschel_HS22TL_Pritsche.5.8
 ------------------------------------------------------

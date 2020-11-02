@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 12-2014
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Solaris_Urbino18_Heck
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=2014
 retire_month=6
 cost=5395000
-runningcost=138
+runningcost=85
+fixed_cost=985
 waytype=road
 freight=Passagiere
 payload=53

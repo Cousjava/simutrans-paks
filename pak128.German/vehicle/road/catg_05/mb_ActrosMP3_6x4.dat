@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=MB_ActrosMP3_fl_Lebensmittel
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=2016
 retire_month=12
 cost=4668300
-runningcost=53
+runningcost=35
+fixed_cost=669
 waytype=road
 freight=Milch
 engine_type=diesel

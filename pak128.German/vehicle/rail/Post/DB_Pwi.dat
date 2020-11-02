@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=BZT_Pwi
@@ -11,7 +11,8 @@ intro_month=1
 retire_year=1962
 retire_month=10
 cost=4340000
-runningcost=97
+runningcost=70
+fixed_cost=1470
 waytype=track
 freight=Post
 payload=30
@@ -28,5 +29,3 @@ EmptyImage[W]=DB_Pwi.0.5
 EmptyImage[NW]=DB_Pwi.0.6
 EmptyImage[NE]=DB_Pwi.0.7
 --------------------------------
-
-

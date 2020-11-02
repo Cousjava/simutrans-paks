@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Stahlwagen1
@@ -10,7 +9,8 @@ copyright=TonyBzt
 intro_year=1910
 intro_month=1
 cost=4487500
-runningcost=122
+runningcost=79
+fixed_cost=1211
 waytype=track
 freight=Stahl
 payload=15

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Motorschlepper_Priel
@@ -14,6 +13,7 @@ retire_month=12
 waytype=water
 cost=800000
 runningcost=8
+fixed_cost=207
 engine_type=diesel
 power=400
 gear=1200

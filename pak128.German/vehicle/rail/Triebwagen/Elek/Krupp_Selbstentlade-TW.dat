@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 25-03-2019
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Selbstendlade-TW_Fr.-Krupp_AG
@@ -12,7 +11,8 @@ intro_month=6
 retire_year=1940
 retire_month=12
 cost=3026000
-runningcost=154
+runningcost=94
+fixed_cost=680
 waytype=track
 freight=Kohle
 engine_type=electric

@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=DaimlerBenz_LP1213_Post
@@ -11,14 +10,16 @@ intro_year=1965
 intro_month=1
 retire_year=1977
 retire_month=12
-cost=9895800
-runningcost=208
+cost=9992400
+runningcost=129
+fixed_cost=2181
 waytype=road
 freight=Post
 engine_type=diesel
-power=80
+power=92
 speed=77
-weight=3.98
+# 126PS, Nutzlast 7.6t, Gesamtgewicht 12t Anhänger 9t Lastzug 21t
+weight=4.4
 payload=80
 length=8
 sound=1

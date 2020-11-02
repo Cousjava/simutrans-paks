@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
+#    Neu:
 #	Letzte Bearbeitung: $Date$ - $Author$:
 ---------------------------------
 obj=vehicle
@@ -10,7 +10,8 @@ copyright=Lemuria
 intro_year=1987
 intro_month=6
 cost=19605000
-runningcost=333
+runningcost=207
+fixed_cost=3990
 waytype=track
 engine_type=electric
 freight=Passagiere
@@ -32,14 +33,14 @@ emptyimage[w]=BR485.0.6
 emptyimage[nw]=BR485.0.7
 emptyimage[ne]=BR485.0.8
 ---------------------------------
-
 obj=vehicle
 name=BR485_Waggon1
 copyright=Lemuria
 intro_year=1987
 intro_month=6
 cost=17580000
-runningcost=324
+runningcost=197
+fixed_cost=3732
 waytype=track
 engine_type=electric
 freight=Passagiere
@@ -60,14 +61,14 @@ emptyimage[w]=BR485.1.6
 emptyimage[nw]=BR485.1.7
 emptyimage[ne]=BR485.1.8
 --------------------------------
-
 obj=vehicle
 name=BR485_Waggon2
 copyright=Lemuria
 intro_year=1987
 intro_month=6
 cost=17580000
-runningcost=324
+runningcost=197
+fixed_cost=3732
 waytype=track
 engine_type=electric
 freight=Passagiere
@@ -88,14 +89,14 @@ emptyimage[w]=BR485.1.6
 emptyimage[nw]=BR485.1.7
 emptyimage[ne]=BR485.1.8
 --------------------------------
-
 obj=vehicle
 name=BR485_Ende
 copyright=Lemuria
 intro_year=1987
 intro_month=6
 cost=19740000
-runningcost=336
+runningcost=208
+fixed_cost=4018
 waytype=track
 engine_type=electric
 freight=Passagiere

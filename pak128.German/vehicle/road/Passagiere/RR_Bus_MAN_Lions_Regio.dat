@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=MAN_Lions_Regio
@@ -9,11 +9,12 @@ copyright=RedRabbit
 intro_year=2004
 intro_month=1
 cost=10650000
-runningcost=147
+runningcost=92
+fixed_cost=1980
 waytype=road
 freight=Passagiere
 payload=55
-engine_type=diesel 
+engine_type=diesel
 speed=100
 weight=12
 power=228

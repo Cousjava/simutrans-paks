@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu:06-08-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Staubgutwagen_Uacs
@@ -13,7 +12,8 @@ intro_month=1
 retire_year=1999
 retire_month=6
 cost=17040000
-runningcost=294
+runningcost=183
+fixed_cost=3876
 waytype=track
 freight=Zement_lose
 payload=56

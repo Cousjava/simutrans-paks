@@ -9,7 +9,8 @@ retire_year=1965
 retire_month=12
 waytype=tram_track
 cost=1680000
-runningcost=64
+runningcost=42
+fixed_cost=413
 freight=Mehl
 payload=12
 engine_type=electric
@@ -41,4 +42,3 @@ EmptyImage[NE]=ftbm.0.3
 #freightimage[0][SE]=
 #freightimage[0][NE]=
 #freightimage[0][NW]=
-#_EO_

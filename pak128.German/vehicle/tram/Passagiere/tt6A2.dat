@@ -1,5 +1,7 @@
+---------------------------------
 #	PAK128.german
 #	Vehicle
+---------------------------------
 obj=vehicle
 name=Tatra T6A2
 copyright=pumuckl999
@@ -9,7 +11,8 @@ intro_month=1
 #retire_month=12
 waytype=tram_track
 cost=10162500
-runningcost=279
+runningcost=170
+fixed_cost=2041
 freight=Passagiere
 payload=109
 engine_type=electric
@@ -36,13 +39,3 @@ EmptyImage[SW]=tt6A2.0.7
 EmptyImage[SE]=tt6A2.0.5
 EmptyImage[NW]=tt6A2.0.1
 EmptyImage[NE]=tt6A2.0.3
-#freightImageType[0]=
-#freightimage[0][S]=
-#freightimage[0][N]=
-#freightimage[0][E]=
-#freightimage[0][W]=
-#freightimage[0][SW]=
-#freightimage[0][SE]=
-#freightimage[0][NE]=
-#freightimage[0][NW]=
-#_EO_

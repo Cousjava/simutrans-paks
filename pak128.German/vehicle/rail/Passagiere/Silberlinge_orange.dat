@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Silberlinge_orange
@@ -12,7 +11,8 @@ intro_month=4
 retire_year=2020
 retire_month=9
 cost=21290000
-runningcost=267
+runningcost=169
+fixed_cost=4865
 waytype=track
 freight=Passagiere
 payload=100

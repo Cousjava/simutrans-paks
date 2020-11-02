@@ -1,29 +1,30 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=MAN_16320_F_Stahltransporter_1
+# MAN F 7 16.320 U von 11/73-05/77 Modellreihe geht bis 08/88
 copyright=RedRabbit
 intro_year=1967
 intro_month=1
 retire_year=1986
 retire_month=12
-cost=7354000
-runningcost=121
+cost=4839000
+runningcost=55
+fixed_cost=1079
 waytype=road
 freight=Stahl
 engine_type=diesel
-power=320
+power=235
 speed=80
-weight=11.4
-payload=13
+# 320PS, Nutzlast 8t, Gesamtgewicht 16t Anhänger 22t Lastzug 38t
+weight=7.9
+payload=8
 length=8
 sound=1
 constraint[prev][0]=none
-constraint[next][0]=none
 EmptyImage[W]=MAN_16320_F_pritsche.0.1
 EmptyImage[NW]=MAN_16320_F_pritsche.0.2
 EmptyImage[N]=MAN_16320_F_pritsche.0.3
@@ -41,4 +42,3 @@ FreightImage[SE]=MAN_16320_F_pritsche.2.6
 FreightImage[S]=MAN_16320_F_pritsche.2.7
 FreightImage[SW]=MAN_16320_F_pritsche.2.8
 ---------------------------------------------------
-

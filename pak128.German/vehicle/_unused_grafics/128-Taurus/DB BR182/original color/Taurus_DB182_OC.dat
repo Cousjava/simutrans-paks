@@ -16,6 +16,7 @@ weight=85
 power=6400
 gear=120
 RunningCost=432
+fixed_cost=x
 intro_year=2001
 EmptyImage[S]=Taurus_DB182_OC.0.0
 EmptyImage[E]=Taurus_DB182_OC.0.1

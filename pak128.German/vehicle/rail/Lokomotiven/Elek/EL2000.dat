@@ -13,6 +13,7 @@ intro_month=1
 #retire_month=
 cost=22680000
 runningcost=92
+fixed_cost=2304
 waytype=electrified_track
 speed=70
 weight=140

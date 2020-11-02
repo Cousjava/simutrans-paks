@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=O-Nuernberg
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1935
 retire_month=12
 cost=940000
-runningcost=37
+runningcost=28
+fixed_cost=440
 waytype=track
 freight=Sand
 payload=10

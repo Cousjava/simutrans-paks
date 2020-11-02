@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=MB_ActrosMP3_Stueckgut
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=2016
 retire_month=12
 cost=6834000
-runningcost=98
+runningcost=62
+fixed_cost=1120
 waytype=road
 freight=Buecher
 engine_type=diesel
@@ -22,8 +22,6 @@ weight=11.4
 payload=18
 length=9
 constraint[prev][0]=none
-constraint[next][0]=anhaenger_1990_16t_Stueckgut
-constraint[next][1]=none
 EmptyImage[W]=mb_ActrosMP3_6x4.0.1
 EmptyImage[NW]=mb_ActrosMP3_6x4.0.2
 EmptyImage[N]=mb_ActrosMP3_6x4.0.3

@@ -16,6 +16,7 @@ weight=85
 power=6400
 gear=120
 RunningCost=471
+fixed_cost=x
 intro_year=2002
 EmptyImage[S]=Taurus_MAV1047_OC.0.0
 EmptyImage[E]=Taurus_MAV1047_OC.0.1

@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Anhaenger_Unimog_Landwirt
@@ -11,7 +11,8 @@ intro_month=1
 retire_year=1997
 retire_month=12
 cost=1460000
-runningcost=36
+runningcost=25
+fixed_cost=481
 waytype=road
 speed=80
 weight=2

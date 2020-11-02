@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 2008
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=BZT_ICSpeisewagen
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=2000
 retire_month=12
 cost=3290000
-runningcost=64
+runningcost=58
+fixed_cost=1720
 waytype=track
 freight=Passagiere
 payload=10
@@ -36,7 +36,8 @@ intro_month=1
 retire_year=2000
 retire_month=12
 cost=30290000
-runningcost=289
+runningcost=193
+fixed_cost=7345
 waytype=track
 freight=Passagiere
 payload=100
@@ -52,4 +53,3 @@ EmptyImage[W]=ICWagen.0.5
 EmptyImage[NW]=ICWagen.0.6
 EmptyImage[NE]=ICWagen.0.7
 ---------------------------------
-

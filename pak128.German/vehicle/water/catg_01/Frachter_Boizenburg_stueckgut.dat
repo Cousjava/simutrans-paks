@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Frachter_Typ_Boizenburg_Stueckgut
@@ -13,7 +12,8 @@ retire_year=2011
 retire_month=12
 waytype=water
 cost=49708000
-runningcost=3639
+runningcost=2239
+fixed_cost=10929
 freight=Buecher
 payload=700
 engine_type=diesel

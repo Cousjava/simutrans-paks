@@ -57,14 +57,44 @@ Die folgende Gegenüberstellung gibt Auskunft über das Klimazonenschema des Pak
 <li>Alpines Klima 13</li>
 </ul>
 <p class="hinweis">Karte 33, 896x896 Kacheln; simutrans 120.2.x, PAK128.german 0.10.x. Die Ergebnisse hängen nicht zuletzt auch von der ausgewählten Karte und der Kartengröße ab.</p>
+</article>
 <h5>Alte Spiele importieren</h5>
+<article>
 <p>Das Set hat sich stark verändert. Nach unseren Erfahrungen sind alte Spielstände dennoch weiter nutzbar, Abstürze scheinen seltene Ausnahmen zu sein.
 Auf der sicheren Seite ist, wer eine alte Paksetversion behält (Ordner vor dem Installiern der 1.0 umbenennen genügt).
 </p>
 <p>Aber auch wenn euer Spiel klaglos gestartet ist, meldet Simutrans womöglich fehlende Objekte. Noch &quot;gefährlicher&quot;, wenn ihr gar keine Rückmeldung bekommt und glaubt, alles sei in Ordnung. Denn wahrscheinlich erfordert die eine oder andere Fabrik einen Rohstoff oder die neu eingeführten Verpackungsmittel, ohne die die Produktion stoppt, was ihr vielleicht erst etliche Spielmonate später merkt.
 <br>Fehlen mehrere Objekte, bleibt nichts anderes übrig, als sie anhand der Version aufzufinden, mit der ihr die Karte zuletzt abgespeichert habt, und sie durch die neuen Versionen zu ersetzen.</p>
 </article>
+<h5>Welche Fahrzeuge wähle ich für eine Strecke?</h5>
+<article>
+<p>Man sollte immer von der Warenart ausgehen. Einen günstigen, in dieser Zeit verfügbaren, modernen Wagen wählen. Im Depot kann man seit Version 120.4.1 nach Kosten/Einheit sortieren. Auch hier in der Datenbank der Fahrzeuge kann man sich Fahrzeuge nach "rcost%e" sortieren lassen. Das ist der prozentuale Anteil der Kosten am möglichen Erlös. Ein so gefundener Wagen hat möglicherweise eine niedrige Höchstgeschwindigkeit. Bei Güterzügen zum Beispiel wird dies oft nur 65 km/h oder 90 km/h sein. Nun kann man passend zu Geschwindigkeit und zur Zuglänge eine passen Lokomotive wählen. Der Einsatz von Schnellzuglokomotiven vor Güterzügen ist wirtschaftlich meist nicht sinnvoll. Bei Bussen im Stadtverkehr sollte man beachten, dass in der Stadt ein Tempolimit von 50km/h herrscht. Schnellere Busse sind dann nur unnötig teuer. <br>
+</p><p>
+Ganz allgemein kann man sich bei der Zugbildung an der Realität bei der Bundesbahn orientieren:<br>
+Auf schwach frequentierten Nebenbahnen hat die Bahn kostengünstige Fahrzeuge eingesetzt. Das waren Dampftriebwagen, Schienenbusse, V100 mit Silberlinge und BR 628.<br>
+Im Nahverkehr mit vielen Passagieren, die Berliner S-Bahn, Doppelstockwagen oder ET420.<br>
+Prototypen, Luxuszüge, Hochgeschwindigkeitszüge sind dagegen normal teuer. Deshalb ist der wirtschaftliche Betrieb von Rheingold, Schienenzeppelin,  TEE VT11.5, BR103 mit InterCity(Speisewagen), ET403, ICE herausfordernd.<br>
+</p><p>
+Als groben Anhaltspunkt:<br>Nahverkehr braucht eine Auslastung von 30% in beiden Richtungen um wirtschaftlich zu fahren.<br>Schnellzüge brauchen eine Auslastung von 50% in beiden Richtungen.<br>Luxsuszüge, Prototypen, Versuchstriebwagen und technische Pioniertaten brauchen bis zu 100% Auslastung.</p>
+</article>
+<h5>Zweispurig Straßen?</h5>
+<article>
+<p>Beim Spielstart und während dem normalen Stadtwachstum werden seit Version 1.2 zweispurige Straßen gebaut. Das könnten Prachtstraßen, oder Autobahnen sein. Leider entstehen diese Straßen etwas zufällig und sind von keinem Stadtplaner geplant. Zudem ist, wenn es Autobahnen werden sollen, etwas Nacharbeit nötig. Die Querverbindungen, die Simutrans automatisch baut, müssen wieder gelöscht werden und die Verkehrsschilder entsprechend aufgestellt werden. Für mich waren zweispurige Straßenbahnen der Anlass die Konfigurationsdatei cityrules.tab so zu ändern, damit zweispurige Straßen entstehen. Ich wollte nicht mehr immer reihenweise Häuser abreißen und die Stadt schwächen. Andere Spieler starten mit sehr kleinen Städten und geben das Straßenraster und die zweispurigen Verkehrswege von Anfang an vor. Jeder Spieler geht anders vor.<br>
+Da die Autobahnen etwas Geschmackssache sind, der eine mag sie, der andere nicht. Gibt es von der cityrules.tab zwei Versionen im config Ordner.<br>
+cityrules_VS1.2_mit_Autobahn.tab <br>
+cityrules_VS1.2_ohne_Autobahn.tab <br>
+Wie der Name sagt: mit oder ohne Autobahnen. Durch umbenennen oder kopieren nach cityrules.tab kann man wählen ob zweispurige Straßen gebaut werden.
+</p>
+</article>
+<h5>Stadtwachstum?<br>Pfannenkuchen oder Hochhauswüste?</h5>
+<article>
+<p>In der Datei "cityrules.tab" im Ordner "config" gibt es einen Parameter "renovation_percentage=4"<br>
+"renovation_percentage=1" und die Städte laufen wie Pfannkuchen auseinander,<br>
+"renovation_percentage=10" die Häuser steigen recht rasch im Level auf und werden Hochhäuser.<br>
+Der Wert kann auch in der GUI bei den Einstellungen im Werkzeugkasten geändert werden. Wichtig ist: nach der Änderung das Spiel speichern und neu laden.
+</p>
+</article>
 </main>
-<footer><p class="wir">&copy; 25.12.2018 - Team PAK128.german</p></footer>
+<footer><p class="wir">&copy; 21.10.2020 - Team PAK128.german</p></footer>
 </body>
 </html>

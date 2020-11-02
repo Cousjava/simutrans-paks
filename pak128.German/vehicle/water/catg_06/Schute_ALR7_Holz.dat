@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Schute_ALR7_Holz
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1988
 retire_month=12
 cost=4950000
-runningcost=331
+runningcost=200
+fixed_cost=1081
 waytype=water
 freight=Holz
 speed=25

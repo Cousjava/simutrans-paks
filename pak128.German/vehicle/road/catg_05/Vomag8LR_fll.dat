@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 04-02-2018
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Vomag8LR_fl_Lebensmittel
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1963
 retire_month=12
 cost=1667500
-runningcost=43
+runningcost=30
+fixed_cost=471
 waytype=road
 speed=50
 power=111

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Faehre_KoenigswinterIII_Vieh
@@ -13,7 +12,8 @@ retire_year=1997
 retire_month=12
 waytype=water
 cost=6358000
-runningcost=558
+runningcost=338
+fixed_cost=1370
 freight=Vieh
 payload=110
 engine_type=diesel

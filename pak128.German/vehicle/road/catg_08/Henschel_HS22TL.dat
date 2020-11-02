@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 #	Letzte Bearbeitung: $Date - $Author$
 ---------------------------------
 obj=vehicle
@@ -12,7 +12,8 @@ intro_month=1
 retire_year=1967
 retire_month=12
 cost=3905000
-runningcost=59
+runningcost=44
+fixed_cost=916
 waytype=road
 freight=Zement_lose
 engine_type=diesel

@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 #	Letzte Bearbeitung
 #    21-10-2015 The Transporter
 ---------------------------------
@@ -13,7 +13,8 @@ intro_month=1
 retire_year=1965
 retire_month=12
 cost=2346500
-runningcost=40
+runningcost=30
+fixed_cost=606
 waytype=road
 freight=Kohle
 engine_type=diesel

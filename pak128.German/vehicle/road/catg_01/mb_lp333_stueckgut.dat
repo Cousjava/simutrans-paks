@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=DaimlerBenz_LP333_Stueckgut
@@ -12,13 +11,15 @@ intro_month=1
 retire_year=1960
 retire_month=12
 cost=4328800
-runningcost=76
+runningcost=53
+fixed_cost=1076
 waytype=road
 freight=Buecher
 engine_type=diesel
 power=147
 speed=84
 weight=7
+# 200PS, Nutzlast 9t, Gesamtgewicht 16
 payload=12
 length=8
 constraint[prev][0] = none

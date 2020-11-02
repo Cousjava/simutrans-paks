@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 26-07-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Alstom_H3_Akku
@@ -12,6 +11,7 @@ intro_year=2014
 intro_month=9
 cost=4270000
 runningcost=11
+fixed_cost=298
 freight=None
 engine_type=battery
 smoke=none

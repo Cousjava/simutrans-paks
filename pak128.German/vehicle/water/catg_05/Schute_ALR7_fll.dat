@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Schute_ALR7_fluessige_Lebensmittel
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1988
 retire_month=12
 cost=9562500
-runningcost=640
+runningcost=384
+fixed_cost=2042
 waytype=water
 freight=Milch
 speed=25

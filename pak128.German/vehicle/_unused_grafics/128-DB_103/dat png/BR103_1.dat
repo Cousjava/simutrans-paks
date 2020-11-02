@@ -17,6 +17,7 @@ weight=114
 power=7440
 gear=177
 RunningCost=547
+fixed_cost=x
 intro_year=1970
 intro_month=5
 #retire_year =2021

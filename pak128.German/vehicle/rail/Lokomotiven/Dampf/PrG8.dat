@@ -12,6 +12,7 @@ retire_year=1969
 retire_month=12
 cost=5039500
 runningcost=79
+fixed_cost=2010
 waytype=track
 speed=55
 weight=59

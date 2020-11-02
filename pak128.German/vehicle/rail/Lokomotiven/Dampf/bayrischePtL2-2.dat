@@ -12,6 +12,7 @@ retire_year=1963
 retire_month=6
 cost=1002000
 RunningCost=18
+fixed_cost=483
 engine_type=steam
 smoke=Steam
 waytype=track

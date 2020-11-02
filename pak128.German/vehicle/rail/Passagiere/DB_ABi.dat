@@ -5,11 +5,11 @@
 ---------------------------------
 obj=vehicle
 name=BZT_ABi
-# seltsame Bezeichnung ABi 
+# seltsame Bezeichnung ABi
 # die Grafik ist aber eindeutig eine 2 Achs Donnerbüchse
 # Das ist ein BCi-28
 # Donnerbüchse hat es in der 1. Klasse nie gegeben, Fahreigenschaften viel zu schlecht
-# der Gelbe Streifen der Grafik deutet aber auf eine 1. Klasse hin 
+# der Gelbe Streifen der Grafik deutet aber auf eine 1. Klasse hin
 # hat die DB kurz vor der Ausmusterung umbenannt (aus B mach A und aus C mach B)
 # gibt es von Fleischmann
 # ich ändere das mal in Ci-28 der wurde 1744 mal gebaut
@@ -21,7 +21,8 @@ intro_month=1
 retire_year=1962
 retire_month=4
 cost=8030000
-runningcost=163
+runningcost=107
+fixed_cost=2139
 waytype=track
 freight=Passagiere
 payload=58

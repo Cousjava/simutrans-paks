@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=MercedesBenz_L2200_Schuettgut
@@ -11,7 +11,8 @@ intro_month=1
 retire_year=1982
 retire_month=12
 cost=2574000
-runningcost=46
+runningcost=34
+fixed_cost=649
 waytype=road
 speed=70
 power=154

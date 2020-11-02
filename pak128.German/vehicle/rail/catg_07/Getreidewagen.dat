@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 2008
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Getreidewagen
@@ -10,7 +9,8 @@ copyright=TonyBzt
 intro_year=1960
 intro_month=1
 cost=5530000
-runningcost=99
+runningcost=65
+fixed_cost=1407
 waytype=track
 freight=Weizen
 payload=30

@@ -260,7 +260,7 @@ function process_dat_file ($dat_file_name, $target_version_id, $t_size,$tmp_dir)
 function import_zip ($version_id,$tmp_dir)
 {
     //will get filled during call of import file
-    global $versions_all, $tempfilepfad, $LNG_OBJ_IMPORT;
+    global $versions_all,$language_all, $tempfilepfad, $LNG_OBJ_IMPORT;
     GLOBAL $ob_unmodified,$ob_updated,$ob_inserted;
     GLOBAL $sum_prob,$sum_img,$sum_tran,$sum_alles;
  
@@ -383,6 +383,33 @@ if ( substr($tmp_file, strlen($tmp_file) - 3) == "zip" ) {
         echo "<hr>\n".$LNG_OBJ_IMPORT[14].": <i>".path_html_process($file_name,$tmp_dir)."</i>"."<br>\n";
         tr_parsetab($file_name,$path,$language,$version_id,3,$compatNo,$compat); 
     }
+
+    // search for .txt files in languge folder
+    if ($version_id > 300 or $version_id == 10 or $version_id == 102)
+    { $file_count = 0;
+      browsedir($tmp_dir,$file_count,$files,"#.*\\.txt\$#i");
+      echo "<h2>translate text files found = ".$file_count."</h2>";
+      foreach ($files as $dat_file_to_process)
+      {  $path = $dat_file_to_process['filename'];
+         $file_name = basename($path);
+         $zip_path = explode('/',path_html_process($path,$tmp_dir));
+         if ($file_name == "translate_users.txt") continue; 
+         echo "Path=".path_html_process($path,$tmp_dir)."<br>";
+         $language = ''; # find offset of language dir because there can be capselt in main dir
+         $object_name = $file_name;
+         foreach ($zip_path as $test_lang)
+         { $low_lang = strtolower($test_lang);
+           if(isset($language_all[$low_lang])) $language = $low_lang;
+           elseif ($language != '' and $test_lang != $file_name)  $object_name = $test_lang.'#'.$object_name;
+         }
+         if (isset($language_all[$language]))
+         { echo "<hr>\n".$LNG_OBJ_IMPORT[14].": <i>".path_html_process($object_name,$tmp_dir)."</i>"."<br>\n";
+           tr_parsetab($object_name,$path,$language,$version_id,3,$compatNo,$compat); 
+         }
+      }
+
+   }
+
     //finished
     echo "<hr />\n";
 

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 23-11-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Triebwagen_ET89
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1959
 retire_month=12
 cost=8110000
-runningcost=175
+runningcost=124
+fixed_cost=2226
 waytype=track
 freight=Passagiere
 engine_type=electric
@@ -47,7 +47,8 @@ intro_month=1
 retire_year=1959
 retire_month=12
 cost=5960000
-runningcost=153
+runningcost=98
+fixed_cost=1493
 waytype=track
 freight=Passagiere
 engine_type=electric
@@ -80,7 +81,8 @@ intro_month=1
 retire_year=1959
 retire_month=12
 cost=7760000
-runningcost=158
+runningcost=105
+fixed_cost=2101
 waytype=track
 freight=Passagiere
 engine_type=electric

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Curtiss_C46
@@ -13,7 +12,8 @@ retire_year=1945
 retire_month=12
 waytype=air
 cost=46980000
-runningcost=169
+runningcost=88
+fixed_cost=5749
 freight=Passagiere
 payload=36
 engine_type=diesel

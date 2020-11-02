@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Fokker_F28
@@ -13,14 +12,15 @@ retire_year=1987
 retire_month=12
 waytype=air
 cost=165555000
-runningcost=285
+runningcost=225
+fixed_cost=20454
 freight=Passagiere
 payload=65
 engine_type=diesel
-power=4500
-gear=45
+power=17600
+gear=100
 speed=849
-weight=17
+weight=24
 length=4
 sound=5
 EmptyImage[S]=Fokker F28.0.6

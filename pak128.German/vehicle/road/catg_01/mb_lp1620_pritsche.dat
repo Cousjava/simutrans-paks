@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=DaimlerBenz_LP1620_Pritsche
@@ -11,19 +10,19 @@ intro_year=1966
 intro_month=1
 retire_year=1975
 retire_month=12
-cost=4716000
-runningcost=84
+cost=4662000
+runningcost=57
+fixed_cost=1065
 waytype=road
 freight=Buecher
 engine_type=diesel
-power=160
+power=154
 speed=80
-weight=7.6
+# 210PS, Nutzlast 9t, Gesamtgewicht 16t Anhänger 22t Lastzug 38t
+weight=7
 payload=14
 length=8
 constraint[prev][0]=none
-constraint[next][0]=anhaenger_1965_16t_Stueckgut_Plane
-constraint[next][1]=none
 EmptyImage[W]=mb_lp1620_pritsche.0.1
 EmptyImage[NW]=mb_lp1620_pritsche.0.2
 EmptyImage[N]=mb_lp1620_pritsche.0.3
@@ -32,12 +31,52 @@ EmptyImage[E]=mb_lp1620_pritsche.0.5
 EmptyImage[SE]=mb_lp1620_pritsche.0.6
 EmptyImage[S]=mb_lp1620_pritsche.0.7
 EmptyImage[SW]=mb_lp1620_pritsche.0.8
-FreightImage[W]=mb_lp1620_pritsche.1.1
-FreightImage[NW]=mb_lp1620_pritsche.1.2
-FreightImage[N]=mb_lp1620_pritsche.1.3
-FreightImage[NE]=mb_lp1620_pritsche.1.4
-FreightImage[E]=mb_lp1620_pritsche.1.5
-FreightImage[SE]=mb_lp1620_pritsche.1.6
-FreightImage[S]=mb_lp1620_pritsche.1.7
-FreightImage[SW]=mb_lp1620_pritsche.1.8
+FreightImagetype[0]=Buecher
+FreightImage[0][W]=mb_lp1620_pritsche.1.1
+FreightImage[0][NW]=mb_lp1620_pritsche.1.2
+FreightImage[0][N]=mb_lp1620_pritsche.1.3
+FreightImage[0][NE]=mb_lp1620_pritsche.1.4
+FreightImage[0][E]=mb_lp1620_pritsche.1.5
+FreightImage[0][SE]=mb_lp1620_pritsche.1.6
+FreightImage[0][S]=mb_lp1620_pritsche.1.7
+FreightImage[0][SW]=mb_lp1620_pritsche.1.8
+# Papierrollen in grauer Plastikfolie
+FreightImagetype[1]=Papier
+FreightImage[1][W]=mb_lp1620_pritsche.2.1
+FreightImage[1][NW]=mb_lp1620_pritsche.2.2
+FreightImage[1][N]=mb_lp1620_pritsche.2.3
+FreightImage[1][NE]=mb_lp1620_pritsche.2.4
+FreightImage[1][E]=mb_lp1620_pritsche.2.5
+FreightImage[1][SE]=mb_lp1620_pritsche.2.6
+FreightImage[1][S]=mb_lp1620_pritsche.2.7
+FreightImage[1][SW]=mb_lp1620_pritsche.2.8
+# Maschinenteile
+FreightImagetype[2]=Maschinen
+FreightImage[2][W]=mb_lp1620_pritsche.3.1
+FreightImage[2][NW]=mb_lp1620_pritsche.3.2
+FreightImage[2][N]=mb_lp1620_pritsche.3.3
+FreightImage[2][NE]=mb_lp1620_pritsche.3.4
+FreightImage[2][E]=mb_lp1620_pritsche.3.5
+FreightImage[2][SE]=mb_lp1620_pritsche.3.6
+FreightImage[2][S]=mb_lp1620_pritsche.3.7
+FreightImage[2][SW]=mb_lp1620_pritsche.3.8
+# Paletten neu im Bündel
+FreightImagetype[3]=Verpackungsmittel
+FreightImage[3][W]=mb_lp1620_pritsche.4.1
+FreightImage[3][NW]=mb_lp1620_pritsche.4.2
+FreightImage[3][N]=mb_lp1620_pritsche.4.3
+FreightImage[3][NE]=mb_lp1620_pritsche.4.4
+FreightImage[3][E]=mb_lp1620_pritsche.4.5
+FreightImage[3][SE]=mb_lp1620_pritsche.4.6
+FreightImage[3][S]=mb_lp1620_pritsche.4.7
+FreightImage[3][SW]=mb_lp1620_pritsche.4.8
+FreightImagetype[4]=Betonfertigteile
+FreightImage[4][W]=mb_lp1620_pritsche.5.1
+FreightImage[4][NW]=mb_lp1620_pritsche.5.2
+FreightImage[4][N]=mb_lp1620_pritsche.5.3
+FreightImage[4][NE]=mb_lp1620_pritsche.5.4
+FreightImage[4][E]=mb_lp1620_pritsche.5.5
+FreightImage[4][SE]=mb_lp1620_pritsche.5.6
+FreightImage[4][S]=mb_lp1620_pritsche.5.7
+FreightImage[4][SW]=mb_lp1620_pritsche.5.8
 -------------------------------------------------

@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=DaimlerBenz_LP810_Schuettgut
@@ -11,7 +11,8 @@ intro_month=12
 retire_year=1984
 retire_month=12
 cost=1423500
-runningcost=25
+runningcost=19
+fixed_cost=424
 waytype=road
 freight=Kohle
 engine_type=diesel
@@ -114,4 +115,3 @@ FreightImage[8][SE]=mb_lp810_schuettgut.2.6
 FreightImage[8][S]=mb_lp810_schuettgut.2.7
 FreightImage[8][SW]=mb_lp810_schuettgut.2.8
 -------------------------------------------------------
-

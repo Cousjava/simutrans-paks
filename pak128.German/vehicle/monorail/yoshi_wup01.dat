@@ -2,7 +2,7 @@
 #	PAK128.german
 #	Vehicle: Monorail
 #	Neu:
-#	Letzte Bearbeitung 
+#	Letzte Bearbeitung
 #   27.02.2018 NNW
 ---------------------------------
 obj=vehicle
@@ -11,7 +11,8 @@ copyright=yoshi
 intro_year=1972
 intro_month=11
 cost=10125000
-runningcost=214
+runningcost=132
+fixed_cost=2168
 waytype=monorail_track
 engine_type=battery
 freight=Passagiere

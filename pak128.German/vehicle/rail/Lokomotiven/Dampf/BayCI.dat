@@ -12,6 +12,7 @@ retire_year=1896
 retire_month=1
 cost=772000
 RunningCost=21
+fixed_cost=574
 engine_type=steam
 smoke=Steam
 waytype=track
@@ -40,6 +41,7 @@ retire_year=1896
 retire_month=1
 cost=76000
 RunningCost=8
+fixed_cost=236
 waytype=track
 freight=None
 weight=7.6
@@ -56,4 +58,3 @@ EmptyImage[W]=BayCI.1.5
 EmptyImage[NW]=BayCI.1.6
 EmptyImage[NE]=BayCI.1.7
 --------------------------------------
-

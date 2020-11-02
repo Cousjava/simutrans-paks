@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:28-01-2018
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=LZ127_Graf_Zeppelin_Stueckgut
@@ -13,7 +12,8 @@ retire_year=1937
 retire_month=7
 waytype=air
 cost=8280000
-runningcost=71
+runningcost=39
+fixed_cost=959
 freight=Buecher
 payload=12
 engine_type=diesel

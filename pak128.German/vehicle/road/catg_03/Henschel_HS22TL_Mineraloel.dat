@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Henschel_HS22TL_Tankwagen
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1967
 retire_month=12
 cost=3785000
-runningcost=57
+runningcost=43
+fixed_cost=891
 waytype=road
 freight=Oel
 engine_type=diesel

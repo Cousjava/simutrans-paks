@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Magirus_Jupiter200D_Zugmaschine
@@ -12,6 +12,7 @@ retire_year=1970
 retire_month=12
 cost=1155000
 runningcost=13
+fixed_cost=368
 waytype=road
 speed=71
 power=150
@@ -38,7 +39,7 @@ constraint[next][15]=Auflieger_38t_Mineraloel
 constraint[next][16]=Auflieger_32t_Stueckgut
 constraint[next][17]=Personenanhaenger
 constraint[next][18]=Dosto-Personenanhaenger
-constraint[next][19]=none
+constraint[next][19]=W50A_fluessigeLebensmittel
 EmptyImage[S]=RR_MAG_Jupiter_Zugmaschine.0.1,-11,8
 EmptyImage[N]=RR_MAG_Jupiter_Zugmaschine.0.2,3,2
 EmptyImage[E]=RR_MAG_Jupiter_Zugmaschine.0.3,18,9

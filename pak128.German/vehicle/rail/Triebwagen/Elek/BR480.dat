@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=BR480_Kopf
@@ -10,7 +9,8 @@ copyright=Lemuria
 intro_year=1986
 intro_month=2
 cost=25650000
-runningcost=388
+runningcost=243
+fixed_cost=5187
 waytype=track
 engine_type=electric
 freight=Passagiere
@@ -32,14 +32,14 @@ emptyimage[w]=BR480.0.6
 emptyimage[nw]=BR480.0.7
 emptyimage[ne]=BR480.0.8
 -------------------------------
-
 obj=vehicle
 name=BR480_Ende
 copyright=Lemuria
 intro_year=1986
 intro_month=2
 cost=25950000
-runningcost=393
+runningcost=246
+fixed_cost=5249
 waytype=track
 engine_type=electric
 freight=Passagiere

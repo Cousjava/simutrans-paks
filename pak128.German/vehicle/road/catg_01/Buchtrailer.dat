@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 2008
-#	Letzte Bearbeitung: NNW 21.03.20
 ---------------------------------
 obj=vehicle
 name=LKW_Buchtrailer
@@ -11,15 +10,16 @@ intro_year=1928
 intro_month=1
 retire_year=1958
 retire_month=12
-cost=830000
-runningcost=33
+cost=850000
+runningcost=21
+fixed_cost=261
 waytype=road
 freight=Buecher
 payload=6
-speed=70
+speed=45
 weight=4
-Constraint[Prev][0]=LKW_Buessing
-Constraint[Prev][1]=none
+Constraint[Prev][0]=any
+Constraint[next][0]=none
 EmptyImage[S]=Buchtrailer.0.0
 EmptyImage[N]=Buchtrailer.0.1
 EmptyImage[E]=Buchtrailer.0.2

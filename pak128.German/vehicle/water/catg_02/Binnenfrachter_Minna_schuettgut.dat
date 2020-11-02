@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Binnenfrachter_Minna_Schuettgut
@@ -13,7 +12,8 @@ retire_year=2009
 retire_month=12
 waytype=water
 cost=3438500
-runningcost=425
+runningcost=257
+fixed_cost=822
 freight=Kohle
 payload=140
 engine_type=diesel

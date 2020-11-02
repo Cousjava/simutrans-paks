@@ -9,7 +9,8 @@ copyright=pumuckl999
 intro_year=1996
 intro_month=1
 cost=22970000
-runningcost=259
+runningcost=170
+fixed_cost=4262
 waytype=track
 freight=Buecher
 engine_type=diesel
@@ -80,7 +81,7 @@ FreightImage[4][W]=Csprinter_stgut.1.5
 FreightImage[4][NW]=Csprinter_stgut.1.6
 FreightImage[4][NE]=Csprinter_stgut.1.7
 # hellblau
-# Chemikalien 
+# Chemikalien
 FreightImagetype[5]=Chemikalien
 FreightImage[5][S]=Csprinter_stgut.2.0
 FreightImage[5][E]=Csprinter_stgut.2.1
@@ -90,7 +91,7 @@ FreightImage[5][N]=Csprinter_stgut.2.4
 FreightImage[5][W]=Csprinter_stgut.2.5
 FreightImage[5][NW]=Csprinter_stgut.2.6
 FreightImage[5][NE]=Csprinter_stgut.2.7
-# Medikamente 
+# Medikamente
 FreightImagetype[6]=Medikamente
 FreightImage[6][S]=Csprinter_stgut.2.0
 FreightImage[6][E]=Csprinter_stgut.2.1
@@ -301,7 +302,8 @@ copyright=pumuckl999
 intro_year=1996
 intro_month=1
 cost=16320000
-runningcost=231
+runningcost=139
+fixed_cost=3495
 waytype=track
 freight=Buecher
 payload=45
@@ -372,7 +374,7 @@ FreightImage[4][W]=Csprinter_Wagen_stgut.1.5
 FreightImage[4][NW]=Csprinter_Wagen_stgut.1.6
 FreightImage[4][NE]=Csprinter_Wagen_stgut.1.7
 # hellblau
-# Chemikalien 
+# Chemikalien
 FreightImagetype[5]=Chemikalien
 FreightImage[5][S]=Csprinter_Wagen_stgut.2.0
 FreightImage[5][E]=Csprinter_Wagen_stgut.2.1
@@ -382,7 +384,7 @@ FreightImage[5][N]=Csprinter_Wagen_stgut.2.4
 FreightImage[5][W]=Csprinter_Wagen_stgut.2.5
 FreightImage[5][NW]=Csprinter_Wagen_stgut.2.6
 FreightImage[5][NE]=Csprinter_Wagen_stgut.2.7
-# Medikamente 
+# Medikamente
 FreightImagetype[6]=Medikamente
 FreightImage[6][S]=Csprinter_Wagen_stgut.2.0
 FreightImage[6][E]=Csprinter_Wagen_stgut.2.1
@@ -593,7 +595,8 @@ copyright=pumuckl999
 intro_year=1996
 intro_month=1
 cost=22970000
-runningcost=259
+runningcost=170
+fixed_cost=4262
 waytype=track
 freight=Buecher
 engine_type=diesel
@@ -664,7 +667,7 @@ FreightImage[4][W]=Csprinter_stgut.1.1,6,3
 FreightImage[4][NW]=Csprinter_stgut.1.2,0,6
 FreightImage[4][NE]=Csprinter_stgut.1.3,-10,0
 # hellblau
-# Chemikalien 
+# Chemikalien
 FreightImagetype[5]=Chemikalien
 FreightImage[5][S]=Csprinter_stgut.2.4,8,-4
 FreightImage[5][E]=Csprinter_stgut.2.5,-4,-2
@@ -674,7 +677,7 @@ FreightImage[5][N]=Csprinter_stgut.2.0,-11,6
 FreightImage[5][W]=Csprinter_stgut.2.1,6,3
 FreightImage[5][NW]=Csprinter_stgut.2.2,0,6
 FreightImage[5][NE]=Csprinter_stgut.2.3,-10,0
-# Medikamente 
+# Medikamente
 FreightImagetype[6]=Medikamente
 FreightImage[6][S]=Csprinter_stgut.2.4,8,-4
 FreightImage[6][E]=Csprinter_stgut.2.5,-4,-2

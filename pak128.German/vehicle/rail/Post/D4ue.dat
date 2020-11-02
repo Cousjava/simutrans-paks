@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=BZT_D4ue-36
@@ -9,7 +9,8 @@ copyright=TonyBzt
 intro_year=1935
 intro_month=1
 cost=18290000
-runningcost=251
+runningcost=177
+fixed_cost=5176
 waytype=track
 freight=Post
 payload=80

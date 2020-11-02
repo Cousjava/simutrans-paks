@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
+#    Neu:
 #	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
 ---------------------------------
 obj=vehicle
@@ -10,7 +10,8 @@ copyright=Lemuria
 intro_year=1987
 intro_month=6
 cost=22620000
-runningcost=221
+runningcost=151
+fixed_cost=4687
 waytype=track
 engine_type=diesel
 freight=Passagiere
@@ -32,14 +33,14 @@ emptyimage[w]=Integral_BOB.0.6
 emptyimage[nw]=Integral_BOB.0.7
 emptyimage[ne]=Integral_BOB.0.8
 -------------------------------------
-
 obj=vehicle
 name=IntegBOB_Gondel1
 copyright=Lemuria
 intro_year=1987
 intro_month=6
 cost=17820000
-runningcost=197
+runningcost=126
+fixed_cost=4069
 waytype=track
 engine_type=diesel
 freight=Passagiere
@@ -60,14 +61,14 @@ emptyimage[w]=Integral_BOB.1.6
 emptyimage[nw]=Integral_BOB.1.7
 emptyimage[ne]=Integral_BOB.1.8
 -------------------------------------
-
 obj=vehicle
 name=IntegBOB_LW
 copyright=Lemuria
 intro_year=1987
 intro_month=6
 cost=22860000
-runningcost=224
+runningcost=152
+fixed_cost=4737
 waytype=track
 engine_type=diesel
 freight=Passagiere
@@ -90,14 +91,14 @@ emptyimage[w]=Integral_BOB.2.6
 emptyimage[nw]=Integral_BOB.2.7
 emptyimage[ne]=Integral_BOB.2.8
 ---------------------------------------
-
 obj=vehicle
 name=IntegBOB_Gondel2
 copyright=Lemuria
 intro_year=1987
 intro_month=6
 cost=17820000
-runningcost=197
+runningcost=126
+fixed_cost=4069
 waytype=track
 engine_type=diesel
 freight=Passagiere
@@ -118,14 +119,14 @@ emptyimage[w]=Integral_BOB.1.6
 emptyimage[nw]=Integral_BOB.1.7
 emptyimage[ne]=Integral_BOB.1.8
 -------------------------------------
-
 obj=vehicle
 name=IntegBOB_Ende
 copyright=Lemuria
 intro_year=1987
 intro_month=6
 cost=22860000
-runningcost=224
+runningcost=152
+fixed_cost=4737
 waytype=track
 engine_type=diesel
 freight=Passagiere

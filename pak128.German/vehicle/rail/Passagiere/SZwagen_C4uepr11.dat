@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 04-09-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Schnellzugwagen_3.Kl._C4uepr11
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1955
 retire_month=12
 cost=12665000
-runningcost=230
+runningcost=167
+fixed_cost=4197
 waytype=track
 freight=Passagiere
 length=12

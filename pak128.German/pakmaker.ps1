@@ -46,6 +46,8 @@ Copy-Item .\compat.tab $repo\simutrans\PAK128.german -PassThru 4>&1>> $repo\log\
 Copy-Item .\de2.tab $repo\simutrans\PAK128.german\text -PassThru 4>&1>> $repo\log\Pakmaker.log 2>>$repo\log\Error_Pakmaker.log
 Copy-Item .\de.tab $repo\simutrans\PAK128.german\text -PassThru 4>&1>> $repo\log\Pakmaker.log 2>>$repo\log\Error_Pakmaker.log
 Copy-Item .\en.tab $repo\simutrans\PAK128.german\text -PassThru 4>&1>> $repo\log\Pakmaker.log 2>>$repo\log\Error_Pakmaker.log
+Copy-Item .\es.tab $repo\simutrans\PAK128.german\text -PassThru 4>&1>> $repo\log\Pakmaker.log 2>>$repo\log\Error_Pakmaker.log
+Copy-Item .\fr.tab $repo\simutrans\PAK128.german\text -PassThru 4>&1>> $repo\log\Pakmaker.log 2>>$repo\log\Error_Pakmaker.log
 Copy-Item .\ja.tab $repo\simutrans\PAK128.german\text -PassThru 4>&1>> $repo\log\Pakmaker.log 2>>$repo\log\Error_Pakmaker.log
 Copy-Item .\pl.tab $repo\simutrans\PAK128.german\text -PassThru 4>&1>> $repo\log\Pakmaker.log 2>>$repo\log\Error_Pakmaker.log
 $empty_line

@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Magirus_Saturn150D_Tiertransporter
@@ -12,7 +12,8 @@ intro_month=1
 retire_year=1970
 retire_month=12
 cost=3001000
-runningcost=62
+runningcost=43
+fixed_cost=786
 waytype=road
 speed=71
 power=110

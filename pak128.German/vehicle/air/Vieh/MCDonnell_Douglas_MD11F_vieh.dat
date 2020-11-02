@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=McDonnell_Douglas_MD11F_Vieh
@@ -13,14 +12,15 @@ retire_year=2001
 retire_month=02
 waytype=air
 cost=598080000
-runningcost=1042
+runningcost=826
+fixed_cost=74558
 freight=Vieh
 payload=112
 engine_type=diesel
-power=30000
-gear=150
+power=159600
+gear=100
 speed=890
-weight=126
+weight=191
 length=6
 sound=5
 EmptyImage[W]=MCDonnell_Douglas_MD11F.0.1

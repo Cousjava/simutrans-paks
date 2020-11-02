@@ -1,0 +1,33 @@
+--------------------------------
+#	PAK128.german
+#	Gleise
+#	Neu:14-10-2017
+---------------------------------
+obj=tunnel
+name=Hochgeschwindigkeitstunnel_350
+waytype=track
+copyright=The Transporter, pumuckl999
+intro_year=2000
+intro_month=1
+cost=525000
+maintenance=5250
+topspeed=350
+icon=> ETunnel350.2.0
+cursor=ETunnel350.0.0
+BackImage[N][0]=ETunnel350.0.0
+FrontImage[N][0]=ETunnel350.1.0
+BackImage[W][0]=ETunnel350.0.3
+FrontImage[W][0]=ETunnel350.1.3
+BackImage[S][0]=ETunnel350.0.2
+FrontImage[S][0]=ETunnel350.1.2
+BackImage[E][0]=ETunnel350.0.1
+FrontImage[E][0]=ETunnel350.1.1
+#Wintergrafiken
+BackImage[N][1]=ETunnel350.0.4
+FrontImage[N][1]=ETunnel350.1.4
+BackImage[W][1]=ETunnel350.0.7
+FrontImage[W][1]=ETunnel350.1.7
+BackImage[S][1]=ETunnel350.0.6
+FrontImage[S][1]=ETunnel350.1.6
+BackImage[E][1]=ETunnel350.0.5
+FrontImage[E][1]=ETunnel350.1.5

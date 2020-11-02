@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=DaimlerBenz_LP322_Landwirtschaft
@@ -12,17 +11,20 @@ intro_month=1
 retire_year=1965
 retire_month=12
 cost=1910400
-runningcost=36
+runningcost=26
+fixed_cost=529
 waytype=road
 freight=Hopfen
 engine_type=diesel
 power=80
 speed=77
+# 110PS, Nutzlast 6.8t, Gesamtgewicht 10.5t Anhänger 8t Lastzug 18t
 weight=4.7
 payload=9
 length=8
 sound=1
 constraint[prev][0]=none
+constraint[next][0]=none
 EmptyImage[W]=mb_lp322_landwirtschaft.0.1
 EmptyImage[NW]=mb_lp322_landwirtschaft.0.2
 EmptyImage[N]=mb_lp322_landwirtschaft.0.3

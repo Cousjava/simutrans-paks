@@ -1,18 +1,17 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Schiffe
-#    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Holzschleppkahn_Stueckgut
 copyright=Pumuckl999
 intro_year=1800
 intro_month=1
-retire_year=1919
-retire_month=12
+retire_year=1920
+retire_month=1
 cost=7500000
-runningcost=507
+runningcost=308
+fixed_cost=1772
 waytype=water
 freight=Buecher
 speed=25

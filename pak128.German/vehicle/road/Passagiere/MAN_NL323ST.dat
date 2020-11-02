@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=MAN_NL_323_Simutrans
@@ -10,7 +9,8 @@ copyright=RedRabbit
 intro_year=2005
 intro_month=1
 cost=11272720
-runningcost=325
+runningcost=197
+fixed_cost=2148
 waytype=road
 freight=Passagiere
 payload=128

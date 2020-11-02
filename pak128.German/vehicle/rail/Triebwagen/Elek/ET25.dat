@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$:
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=ET25A
@@ -11,11 +10,12 @@ intro_year=1935
 intro_month=9
 retire_year=1985
 retire_month=12
-cost=18720000
-runningcost=275
+cost=20700000
+runningcost=224
+fixed_cost=5608
 waytype=electrified_track
 freight=Passagiere
-payload=71
+payload=82
 speed=120
 weight=42
 power=460
@@ -37,11 +37,12 @@ intro_year=1935
 intro_month=9
 retire_year=1985
 retire_month=12
-cost=18720000
-runningcost=275
+cost=20700000
+runningcost=224
+fixed_cost=5608
 waytype=electrified_track
 freight=Passagiere
-payload=71
+payload=82
 speed=120
 weight=42
 power=460
@@ -59,15 +60,16 @@ EmptyImage[NE]=ET25.2.7
 obj=vehicle
 name=BZT_ET25C
 copyright=TonyBzt
-intro_year=1930
+intro_year=1935
 intro_month=9
 retire_year=1985
 retire_month=12
-cost=11920000
-runningcost=202
+cost=16420000
+runningcost=175
+fixed_cost=4395
 waytype=electrified_track
 freight=Passagiere
-payload=64
+payload=89
 speed=120
 weight=40
 length=11

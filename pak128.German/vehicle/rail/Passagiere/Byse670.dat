@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 2008
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=BZT_Eilzugwagen
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1975
 retire_month=12
 cost=6780000
-runningcost=132
+runningcost=91
+fixed_cost=2014
 waytype=track
 freight=Passagiere
 length=10

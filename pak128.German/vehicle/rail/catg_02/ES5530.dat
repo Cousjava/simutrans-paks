@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=ES_5530
@@ -10,7 +9,8 @@ copyright=TonyBzt
 intro_year=1900
 intro_month=1
 cost=1815000
-runningcost=55
+runningcost=39
+fixed_cost=683
 waytype=track
 freight=Kohle
 payload=15

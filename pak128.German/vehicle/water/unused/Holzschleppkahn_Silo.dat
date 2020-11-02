@@ -13,6 +13,7 @@ retire_year=1919
 retire_month=12
 cost=7500000
 runningcost=507
+fixed_cost=x
 waytype=water
 freight=Tierfutter
 speed=25

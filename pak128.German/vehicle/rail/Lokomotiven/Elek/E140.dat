@@ -11,6 +11,7 @@ intro_year=1957
 intro_month=10
 cost=41530000
 runningcost=370
+fixed_cost=9299
 waytype=electrified_track
 freight=None
 speed=110

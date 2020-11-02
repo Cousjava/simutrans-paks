@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Flachwagen_Holz
@@ -10,7 +9,8 @@ copyright=TonyBzt
 intro_year=1942
 intro_month=1
 cost=4620000
-runningcost=89
+runningcost=61
+fixed_cost=1353
 waytype=track
 freight=Bretter
 payload=25

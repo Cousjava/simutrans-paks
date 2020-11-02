@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 22-06-2020
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Hensel-Fleischwagon_1906
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1930
 retire_month=12
 cost=1940000
-runningcost=60
+runningcost=41
+fixed_cost=665
 waytype=track
 freight=Fleisch
 payload=10

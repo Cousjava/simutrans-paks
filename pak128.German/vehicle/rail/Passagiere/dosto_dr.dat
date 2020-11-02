@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Doppelstock_DR_Steuerwagen
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1995
 retire_month=12
 cost=23420000
-runningcost=336
+runningcost=209
+fixed_cost=5245
 waytype=track
 freight=Passagiere
 payload=128
@@ -39,7 +39,8 @@ intro_month=1
 retire_year=1995
 retire_month=12
 cost=23340000
-runningcost=334
+runningcost=207
+fixed_cost=5199
 waytype=track
 freight=Passagiere
 payload=128
@@ -67,7 +68,8 @@ intro_month=1
 retire_year=1995
 retire_month=12
 cost=23420000
-runningcost=336
+runningcost=209
+fixed_cost=5245
 waytype=track
 freight=Passagiere
 payload=128

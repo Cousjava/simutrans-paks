@@ -9,7 +9,8 @@ retire_year=1997
 retire_month=12
 waytype=water
 cost=41548000
-runningcost=4009
+runningcost=2408
+fixed_cost=8717
 freight=Passagiere
 payload=1600
 engine_type=diesel
@@ -41,4 +42,3 @@ EmptyImage[NE]=fkwIII_passagiere.0.3,-42,-15
 #freightimage[0][SE]=
 #freightimage[0][NW]=
 #freightimage[0][NE]=
-#_EO_

@@ -9,7 +9,7 @@
 #                             Language: en English                             #
 #                             Encoding: ISO-8859-1                             #
 #                             Font: Prop-Latin1.bdf                            #
-#                           Date Created: 12.06 2020                           #
+#                           Date Created: 19.10 2020                           #
 #                                                                              #
 ################################################################################
 #____________________________bridge - monorail_track____________________________
@@ -25,7 +25,7 @@ Power Bridge
 alte_Autobahnbruecke
 old Interstate bridge
 alte_Steinbruecke
-old Stonebridge
+old Stone Bridge
 alte_Strassenbruecke
 old Roadbridge
 BZT_Strassenbruecke
@@ -37,15 +37,21 @@ modern Interstate-Bridge
 Schraegseilbruecke
 Cabel-stayed-Bridge
 Stadtbruecke
-Citystop
+City bridge
 Stahlbogen_Strassenbruecke
 Steelbeambridge
 #________________________________bridge - track_________________________________
 #________________________________bridge - track_________________________________
 alte_Stahlbruecke
 Old Steelbridge
+Bahnbruecke_120Kmh
+Rail bridge 120 km/h
 Bahnbruecke_210Kmh
 Trainbridge 210 km/h
+Bahnbruecke_40Kmh
+Rail bridge 40 km/h
+Bahnbruecke_60Kmh
+Rail bridge 60 km/h
 Stahlbruecke
 Steelbridge
 #________________________________bridge - water_________________________________
@@ -1433,35 +1439,35 @@ Rail crossing
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 ALP_Apotheke_NIC
-Chemist
+Pharmacy
 factory_ALP_Apotheke_NIC_details
-<title>Alpine Drugstore</title><p>This pharmacy, sold medicines for the little whey and medical products. The pharmacist  helps the customerss with his advice.</p>
+<title>Alpine Drugstore</title><p>This pharmacy sells medicines and medical products. The pharmacist  often helps customers with his advice.</p>
 ALP_Baumarkt_NIC
-DIY-Market (Southger. 1930)
+DIY Store
 factory_ALP_Baumarkt_NIC_details
-<title>Hardware Store</title><p>The "Alpbau-Baumarkt" is the central contact point for all handy and DIY workers in the surrounding area.</p>
+<title>DIY Store</title><p>The "Alpbau-Baumarkt" is the central contact point for all handy and DIY workers in the surrounding area.</p>
 ALP_Buchladen_NIC
-Bookstore (alpine)
+Bookstore
 factory_ALP_Buchladen_NIC_details
-<title>Bookstore</title><p>Novels,Thriller,Documentations and much more can be bought here.</p>
+<title>Bookstore</title><p>Novels, thrillers, documentaries and other literature can be bought here.</p>
 ALP_Elektroshop_NIC
-Electroshop (alpine)
+Electronics Store
 factory_ALP_Elektroshop_NIC_details
-<title>E-store</title><p>The Simmos E-store GmbH is an electronics retail shop, that sells telecommunications, photo, computer, hifi, games, DVDs, CDs, TV and accessories.</p>
+<title>E-store</title><p>Simmos E-store GmbH is an electronics retail shop that sells phones, cameras, computers, hifi systems, games, DVDs, CDs, TVs and other acronyms.</p>
 ALP_Moebelhaus_NIC
-Furniture-store (alpine)
+Furniture Store
 factory_ALP_Moebelhaus_NIC_details
 <title>Furnish-store</title><p>Kitchens, sleeping- and living rooms, study and much more. The furniture pin furnishing house fulfills all your living dreams!</p>
 ALP_Saegewerk_NIC
-Sawmill (alpine)
+Sawmill
 factory_ALP_Saegewerk_NIC_details
 <title>BORR-Saw Mill</title><p>BORR produces Planks, laths, logs and scattlings for the professionels and homeworkers.</p>
 ALP_Supermarkt_NIC
-Supermarket (alpine, 1958)
+Supermarket
 factory_ALP_Supermarkt_NIC_details
 <title>Alpine Supermarket</title><p>The Michelstadt Sales GmbH Supermarkets sales daily food.</p>
 ALP_Tankstelle_NIC
-Gas station (alpine, 1950)
+Gas Station
 factory_ALP_Tankstelle_NIC_details
 <title>SEMI Gas Station</title><p>This shop sells beside diesel and petrol, car accessories and -care products.</p>
 ALP_Viehhof_NIC
@@ -1469,25 +1475,25 @@ outdated do not use
 factory_ALP_Viehhof_NIC_details
 <title>Cattleyard (alpine)</title><p>This cattle farm with its eggs laying cows serves only the compatibility to old save games. Do not build new.</p>
 ALP_Viehhof_NIC_2
-Cattleyard (alpine)
+Stockyard
 factory_ALP_Viehhof_NIC_2_details
 <title>Stock yard Untermoser</title><p>The family Untermoser is a cattle breeder in the 4th generation.</p>
 alte Raffinerie
-Refinery (1905)
+Refinery
 factory_alte Raffinerie_details
 <title>Petroleum Refinery</title><p>A petroleum refinery extract's from the raw material petroleum by distillation, fraction and extraction, using pressure and vacuum, fuels, lubricating oils, asphalt as well as various plastic starting products.</p>
 alte_Kfz-Fabrik
-Car Fab (1905)
+Auto Factory
 factory_alte_Kfz-Fabrik_details
-<title>Lemuria AG</title><p>The Lemuria Corp produces elegant sportscars, Cabrios and good Family Cars.</p>
+<title>Lemuria AG</title><p>The Lemuria Corp produces elegant sportscars, convertibles, and good family cars.</p>
 alte_Lebensmittelfabrik
-Food factory (1892)
+Food Processing Plant
 factory_alte_Lebensmittelfabrik_details
 <title></title><p>Mayerhofers handles meat, poultry and fish for long-lasting preserves, frozen foods such as fish fillets & chicken as well as Schnitzel & Kotletts, which are eagerly eaten by young and old ...</p>
 alte_Molkerei
-Dairy factory 
+Dairy Factory 
 alte_Papierfabrik
-Paper mill (1919)
+Paper Mill
 alte_Werft
 Dock
 factory_alte_Werft_details
@@ -1495,27 +1501,27 @@ factory_alte_Werft_details
 AlteGastwirtschaft
 Inn
 factory_AlteGastwirtschaft_details
-<title>Old inn</title><p>Wine,women and singing. Also a good meal, what is more to want?</p>
+<title>Old Inn</title><p>Wine, women, and singing. Add to that a good meal, and what is there more to want?</p>
 alter_Kamerahersteller
-Camera factory (1912)
+Camera Workshop
 factory_alter_Kamerahersteller_details
 <title> Simhof </title><p> The Simhof Company, founded in 1887, had it self-specialised in the producing of cameras after arising of gelatine dry plates. The good cooperation with a glassworks in the Alpine foothills allows the production of lenses of exceptional quality and international reputation.</p>
 alter_Obstbauer
-Obstbauer
+Fruit Grower
 factory_alter_Obstbauer_details
 <title>Fruit Farm</title><p>Sweet fruits for young and old</p>
 alter_Schlachthof
-Stockyard (1892)
+Slaughterhouse
 altes Kohlekraftwerk
-Coal power station (Eastger. 1908)
+Coal Powerplant
 factory_altes Kohlekraftwerk_details
 <title>Old Coal Power plant</title><p>The power plant converts heat generated by thermal combustion into electrical energy.</p>
 Apotheke1800_NIC
 Pharmacy
 factory_Apotheke1800_NIC_details
-<title>Drugstore</title><p>The owner of this pharmacy knows the customer by their first name and about the medical history almost as well as the family doctor.</p>
+<title>Drugstore</title><p>The owner of this pharmacy knows the customers by their first name and knows their medical history almost as well as the family doctor.</p>
 Apotheke1965_NIC
-Pharmacy (1965)
+Pharmacy
 factory_Apotheke1965_NIC_details
 <title>Modern Pharmacy</title><p>A Pharmacy is a shop that sells Medical products and drugs and produces them in a lesser extend.</p>
 AVL_Apotheke_NIC
@@ -1523,67 +1529,67 @@ Pharmacy
 factory_AVL_Apotheke_NIC_details
 <title>South german Pharmacy</title><p>A pretty South German pharmacy. Here, knows the owner its customers firstname, which is good for the personal advice. The pharmacist knows the patient's medical history almost as well as his family doctor.</p>
 AVL_Autohaus_NIC
-Car dealer (Southger., 1982)
+Auto Dealer
 factory_AVL_Autohaus_NIC_details
 <title>South-german Car shop</title><p>In this car shop is from the brisk sports car to the family van everything  available, , which the carlovers heart desires.</p>
 AVL_Baggersee
-Quarry pond (Southger. 1900)
+Quarry Pond
 factory_AVL_Baggersee_details
 <title>Southgerman quarry pond</title><p>Roaaar Roaar, lots of sand and stones.</p>
 AVL_Baumarkt_NIC
-DIY-Market (Southger. 1930)
+DIY Store
 factory_AVL_Baumarkt_NIC_details
-<title>Modern Hardwarestore</title><p>The hardware store sells a wide range of sanitary, electrical and building materials for home builders and DIY enthusiasts.</p>
+<title>Modern DIY Store</title><p>This hardware store sells a wide range of sanitary, electrical and building materials for home builders and DIY enthusiasts.</p>
 AVL_Betonwerk
-Concrete plant
+Concrete Plant
 factory_AVL_Betonwerk_details
 <title>South-german Concrete Plant</title><p>The concrete plant produces stairs & balconies, ceilings & walls as well as flower trunks and path limitations.</p>
 AVL_Brauerei1897_NIC
-Brewery (South Ger.)
+Brewery
 factory_AVL_Brauerei1897_NIC_details
-<title>South German Brewery</title><p>Grain and hops become beer here. A good measure for the man with taste.</p>
+<title>South German Brewery</title><p>Grain and hops are made into beer here - a good measure for a man with taste.</p>
 AVL_Brauerei1965_NIC
-Brewery (Southger. 1965)
+Brewery
 factory_AVL_Brauerei1965_NIC_details
-<title>South-german Brewery - 1965</title><p>This Brewery rules the art of brewing on top level.</p>
+<title>South-german Brewery - 1965</title><p>This brewery rules the art of brewing at the top level.</p>
 AVL_Buchladen_NIC
-Bookstore (Southger.)
+Bookstore
 factory_AVL_Buchladen_NIC_details
-<title>Bookshop</title><p>Novels, thrillers, documentaries and much more of literature can be purchased here.</p>
+<<title>Bookstore</title><p>Novels, thrillers, documentaries and other literature can be bought here.</p>
 AVL_E-Laden_NIC
-Electroshop (Southger.)
+Electronics Store
 factory_AVL_E-Laden_NIC_details
-<title>Electronic Shop</title><p>This shop sells from TVs to refrigerators  various household appliances.</p>
+<title>Electronic Store</title><p>This store sells TVs, refrigerators and various other household appliances.</p>
 AVL_Getreidehof_alt
-Farm (Southger.)
+Farm
 factory_AVL_Getreidehof_alt_details
 <title>Farm</title><p>Cereals and hemp for the breweries and textile industry.</p>
 AVL_Getreidehof_alt_1975
-Farm (Southger. 1975)
+Grain Farm
 factory_AVL_Getreidehof_alt_1975_details
 <title>Farmyard 1975</title><p>Cereals and hemp for the breweries and textile industry.</p>
 AVL_Kelterei1800_NIC
-Wine-press-house
+Winepress House
 factory_AVL_Kelterei1800_NIC_details
 <title>Wine-press-house</title><p>In a wine-press-house squeeze an "Kelter" with pressure the juice from the grapes.</p>
 AVL_Marktplatz_1800
-Marketplace (Southger.)
+Market
 factory_AVL_Marktplatz_1800_details
 <title>Marktplatz (1800)</title><p>The market is generally defined as a place where goods are regularly traded in a most central spot.</p>
 AVL_Marktplatz_NIC
-Marketplace (Southger.1955)
+Market
 factory_AVL_Marktplatz_NIC_details
 <title>South-german Market place</title><p>The market is generally defined as a place where goods are regularly traded in a mostly central spot.</p>
 AVL_Moebelhaus_NIC
-Furniture-store (Southger., 1999)
+Furniture Store
 factory_AVL_Moebelhaus_NIC_details
 <title>Furniture Store</title><p>Kitchens, sleeping and living rooms, study and much more. The Roller furnitureshop fulfills all your living-dreams!</p>
 AVL_Muehle1983_NIC
-Mill (Southger. 1983)
+Grain Processing Plant
 factory_AVL_Muehle1983_NIC_details
 <title>Mill-Alpine foreland</title><p>Grain mills produces from various cereal varieties such as rye, spelled, wheat, barley and maize into flour. This will then delivered to large customers such as the bakeries or also to the retail trade.</p>
 AVL_Oelfeld
-Oilfield (Southger. 1990)
+Oilfield
 factory_AVL_Oelfeld_details
 <title>Fossil oil area</title><p>An 'oil field' is an area under which a mineral oil deposit is located.</p>
 AVL_Saegewerk1800_NIC
@@ -1591,15 +1597,15 @@ Sawmill
 factory_AVL_Saegewerk1800_NIC_details
 <title>South-german Sawmill</title><p>Planks, lathes, logs and precious wood for the homeworker and the local craftsmanship.</p>
 AVL_Saegewerk1969_NIC
-Sägewerk (Süddt.)
+Sawmill
 factory_AVL_Saegewerk1969_NIC_details
 <title>Modern Sawmill</title><p>The ASIM-Holz GesmbH produces boards, slats, cantiles and veneer for the furniture industry.</p>
 AVL_Schafsscheune_NIC
-Sheep barn
+Sheep Farm
 factory_AVL_Schafsscheune_NIC_details
 <title>Sheepfarm Rainthaler</title><p>Maeh Maeeeeeeeh</p>
 AVL_Schlachthof_NIC
-Butchery
+Meat Processing Plant
 factory_AVL_Schlachthof_NIC_details
 <title>Butchery</title><p>Cows go in, meat cames out.</p>
 AVL_Supermarkt_NIC
@@ -1607,201 +1613,207 @@ Supermarket
 factory_AVL_Supermarkt_NIC_details
 <title>Forealpine Supermarket</title><p>The supermarkets of the Michelstadt Handels GesmbH sells mainly daily foods.</p>
 AVL_Tankstelle_NIC
-Gas station
+Gas Station
 factory_AVL_Tankstelle_NIC_details
 <title>Gas station</title><p>Diesel and Fuel for cheap prices.</p>
 AVL_Textil_1836
-Textile factory
+Textile Factory
 factory_AVL_Textil_1836_details
-<title>Textile Factory</title><p>The Textile factory produces fashion for everybody.</p>
+<title>Textile Factory</title><p>This Textile factory produce fashion for everybody.</p>
 AVL_Viehhof1940_NIC
-Cattleyard (Southger. 1940)
+Stockyard
 factory_AVL_Viehhof1940_NIC_details
 <title>Stockyard Henkelsberg</title><p>Muh Muuuuuuuh</p>
 AVL_Zementwerk1800_NIC
-Cement factory
+Cement Plant
 factory_AVL_Zementwerk1800_NIC_details
-<title>Concrete Factory</title><p>Sand and stones becomes a grey mass named cement.</p>
+<title>Concrete Factory</title><p>Sand and stones becomes a grey mass known as cement.</p>
 AVL_Zementwerk1960_NIC
-Cement factory
+Cement Plant
 factory_AVL_Zementwerk1960_NIC_details
-<title>Cement Factory 1960</title><p>Sand and stones becomes a grey mass named cement.</p>
+<title>Cement Factory 1960</title><p>Sand and stones becomes a grey mass known as cement.</p>
 BaeckereiGadebusch_NIC
-Bakery (Northgerm. 1920]
+Pastry Factory
 factory_BaeckereiGadebusch_NIC_details
 <title>Industrial bakery</title><p>Here were made bread rolls, pastries and delicious breads from early morning until late.</p>
 Bauernhof_All1800
-Hen farm
+Hen Farm
 factory_Bauernhof_All1800_details
 <p> Small farmers used to be called Cottagers. Cottagers did not have enough land to live from. One possibility was to work as a day laborer for the local farmers. What was poorly paid and underestimated. Or to produce higher quality goods, as craftsmen or home workers. This one hardly sells barley, he prefers to feed them to his chickens and can sell their eggs at a higher price than would be possible with cereals.<br><strong>If he can sell the eggs well, he will lease additional fields and increase production significantly.</strong></p><p>Only chicken with porridge every day, the farmer, his wife and children can no longer see the tough, bony old hens. But it doesn't help, it's the only food they have.</p><p>The graphic shows a typical Upper Bavarian poor people's house. </p>
 Bauernhof_MGB
-Farm
+Wheat Farm
 Bauernhof_MGB1850
-Fruit farm
+Fruit Farm
 Bauernhof_Ost1870
-Sugar beet plantation
+Sugar Beet Plantation
 Bauernhof_Tierfutter
-Feed mill
+Feed Mill
+factory_Bauernhof_Tierfutter_details
+<title>Animal Feed Mill</title> <p> The Pell family sells concentrated feed for chickens. For this, barley is precisely tailored to the needs of the animals, mixed with protein, oils and minerals, ground and pressed into sausages. The handling of pellets is easy in terms of sale, transport, storage, portioning and distribution. Since it is largely dust-free, there is no need for packaging and it can be stored and transported in silos. Originally, the Pell family only made the concentrate for their own chickens. Neighbors and friends found this type of feeding practical and so the Pell family now sells all of their grain production in the form of pellets to chicken farmers across the country. Business is good and demand is high. </p>
 Baumarkt_NIC
-DIY-Store(1965)
+DIY Store
 factory_Baumarkt_NIC_details
 <title>Hardware Store</title><p>This DIY store carries a wide range of plumbing, electrical and building materials for home builders and DIY enthusiasts.</p>
+Baustelle_Eisenbahntunnel
+Railway Tunnel Construction Site
 Baustoffhandel1800
-Building supplies store
+Supply Mill
 factory_Baustoffhandel1800_details
 <title>Supplier Shop</title><p>The building suppliers shop (that sells fuels in the past too) supplies usually smaller and larger construction companies and craft businesses with bricks, cement, wood, insulating materials, structural steels and suitable tools, as well as scaffolding and ladders.</p>
 Baustoffhof_1800
-DIY-supplies store
+Supply Yard
 Betonwerk
-Concrete Factory
+Concrete Plant
 factory_Betonwerk_details
 <title>Concrete Fab</title><p>Troughs, stairways, walls, floors and arches of prefabricated concrete.</p>
 Betonwerk_1871
-Concrete Factory
+Concrete Plant
 Biokraftwerk
-Biogas-Powerstation
+Biogas Powerplant
 Biomassekraftwerk
-Biomass-Powerstation
+Biomass Powerplant
 factory_Biomassekraftwerk_details
 <title>Biomass-Power Plant.</title><p>This power plant produces energy from "shit".</p>
 Brennstoffhandel
-Combustible-store
+Fuel Stock
 Buchhandlung
-Bookstore (1800)
+Bookshop
 factory_Buchhandlung_details
-<title>Bookstore</title><p>You can buy Novels,Storys and Writing tools here</p>
+<title>Bookstore</title><p>You can buy novels, stories and writing tools here.</p>
 Chemiewerk_1886
-Chemistryplant
+Chemical Plant
 factory_Chemiewerk_1886_details
 <p>Beside paints and chemicals, this factory also produces pills, ointments and cough syrups for small and large booboos. In 1863, raised a whole series of today's major chemical plants including Höchst, Bayer and BASF. All started with the production of tar colours. BASF has been explicitly set up to recycle the coal tar remnants of the Mannheim gasworks. They soon negotiated with chemicals for and from the production. The production of medicines was then obvious.</p>
 Chemiewerk_1920
-Chemical Plant (1920)
+Chemical Plant
 Chemiewerk_NIC
-Chemistryplant (1920)
+Chemical Plant
 factory_Chemiewerk_NIC_details
-<title>Petrochemical Factory</title><p>This factory produces Chemicals for the Pharmazeutic plus varnish and Paint.</p>
+<title>Petrochemical Plant</title><p>This plant produces chemicals for the Pharmazeutic Plus varnish and paint.</p>
 Chemiewerk1975_NIC
-Chemistryplant (1975)
+Chemical Plant
 factory_Chemiewerk1975_NIC_details
-<title>Modern Petrochemical fab</title><p>This factory produces Chemicals for the Pharmazeutic plus varnish and paints for the furnitur and printing industry.</p>
+<title>Modern Petrochemical Plant</title><p>This plant produces chemicals for the Pharmazeutic Plus varnish and paints for the furniture and printing industry.</p>
+Computerhersteller_1965
+Computer Manufacturer 
 Computerhersteller1980
-PC-Supplier
+Computer Manufacturer
 factory_Computerhersteller1980_details
-<title>Computer Manufacture</title><p>Simutel Corp. produces Desktopsystems, Servers and Controldesks.</p>
+<title>Computer Manufacture</title><p>Simutel Corp. produces desktop systems, servers and control desks.</p>
 Computerhersteller1990
-PC-Supplier (1990)
+Computer Manufacturer
 factory_Computerhersteller1990_details
-<title>Simutel Corp.</title><p>Simutel Corp. produces Desktopsystems, Servers and Controldesks.</p>
+<title>Computer Manufacture</title><p>Simutel Corp. produces desktop systems, servers and control desks.</p>
 Dessauer_Kohlekraftwerk
-Coal-power plant (Eastger. 1995)
+Coal Powerplant
 factory_Dessauer_Kohlekraftwerk_details
 <title>Coal-power-plant (Dessau)</title><p>The coal-power plant converts by thermal combustion produced heat to electrical energy. Through elaborate filter systems, a large part of the exhaust gases are freed from pollutant particles.</p>
 Discounter_MGB_AVL_ALP_1990
-Discounter SIMSTARR SÜD
+Discount Supermarket
 factory_Discounter_MGB_AVL_ALP_1990_details
 <title>Discounter</title><p>The Daily-food discounter at the corner.</p>
 Discounter_NDL_ODL_1990
-Discounter SIMSTARR NORD
+Discount Supermarket
 factory_Discounter_NDL_ODL_1990_details
 <title>Discounter</title><p>Cheap daily food and more.</p>
 Druckerei_NIC
-Printing works
+Printing Workshop
 factory_Druckerei_NIC_details
-<title>Book Printing</title><p>Here will bounded literature produced.</p>
+<title>Printing Works</title><p>This factory is where books are produced.</p>
 Druckerei_SM
-Printing works (1980)
+Printing Plant
 factory_Druckerei_SM_details
-<title>Printing</title><p>Here will modern literature and world tastes produced.</p>
+<title>Printing Works</title><p>This factory is where books and other literature are produced.</p>
 Druckwerkstatt
-Printing studio (1800)
+Printing Workshop
 Erzbergwerk_NIC
-Ore mine
+Ore Mine
 factory_Erzbergwerk_NIC_details
 <title>Iron-Ore Mine</title><p>As Mine will be all facilities for the overground and underground mining and treatment of mineral deposits named.</p>
 Fahrzeuge_und_Haushaltsartikel
-Vehicle & Home supplies
+Autos & Home Supplies
 Fischzucht_NIC
-Fish farming
+Fish Farm
 factory_Fischzucht_NIC_details
 <title>Aquafood Ltd.</title><p>The Aquafood KG is Part of the SIM-Food AG and breeds fish for them.</p>
 Forellenhof Markusmuehle
-Fishyard (1985)
+Fish Farm
 factory_Forellenhof Markusmuehle_details
-<title>Fish Farm</title><p>This Workshop breeds fish for the SIM-Food AG.</p>
+<title>Fish Farm</title><p>This workshop breeds fish for the SIM-Food AG.</p>
 Frischfisch
-Fishing area
+Fishing Area
 factory_Frischfisch_details
 <title>Fishswarm</title><p>Blub blub</p>
 Gasthof_1800
 Inn
 Gastwirtschaft_mit_Laden
-Gastwirtschaft mit Laden
+Restaurant & Shop
 factory_Gastwirtschaft_mit_Laden_details
 <title>Puntis Kolonial-Shop</title><p>The owners run a Shop besides the Inn.</p>
 Gefluegelhof_NIC
-Poultry yard
+Poultry Yard
 factory_Gefluegelhof_NIC_details
 <title>Galliform Ltd.-Poultryfarm</title><p>Here will eggs and poultry for the SIM Food AG breeded.</p>
 Geraete_und_Haushaltsartikel
-Devices & Household items
+Appliances & Household Items
 Getraenkemarkt_NIC
-Beverage market
+Beverage Market
 factory_Getraenkemarkt_NIC_details
-<title>Beverage Market</title><p>As beverage market in southern Germany knowed is in north often referred as a "drinking hall".</p>
+<title>Beverage Market</title><p>Beverage markets in southern Germany are often referred to in the north as "drinking halls."</p>
 Getreidehof_alt
-Grain yard (1800)
+Farm
 GetreideSilo_NIC
-Grain silo
+Grain Silo
 factory_GetreideSilo_NIC_details
-<title>Grainsilo</title><p>That silo bunches grain for subsequent processing.</p>
+<title>Grain Silo</title><p>This silo bunches grain for subsequent processing.</p>
 Glasfabrik
-Glass factory
+Glassworks
 factory_Glasfabrik_details
 <title>Glass Manufacturing</title><p>The cheapest material in the world - sand- becomes one of the hardest - namely glass.</p>
 Glasmanufaktur
-Glassmanufatory
+Glass Factory
 Grossbaeckerei_NIC
-Bakery (1980)
+Pastry Plant
 factory_Grossbaeckerei_NIC_details
 <title>Bakery</title><p>Here will breads and shrubs as well as fine pastries produced.</p>
 Grossmuehle_NIC
-Mill (Eastger. 1913)
+Mill
 factory_Grossmuehle_NIC_details
-<title>Big-mill</title><p>In a large mill, various cereal varieties such as rye, spelled, wheat, barley and maize are processed into flour. This is then delivered to large customers such as bakeries / noodle manufacturers or also to retail stores either.</p>
+<title>Big-mill</title><p>These large mills process various cereal varieties such as rye, spelled, wheat, barley and maize into flour, which is then delivered to bakeries, noodle manufacturers and other retail stores.</p>
 Heizkraftwerk
-Heat and power plant
+Powerplant
 factory_Heizkraftwerk_details
 <p>An HKW is an industrial plant that produces electricity and heat in a cogeneration process from coal or oil .</p>
 Hochofen_alt
-Steelworks (high oven 1800)
+Steel Mill
 Holzsammelstelle1800_NIC
-Forest (1800)
+Logging Site
 factory_Holzsammelstelle1800_NIC_details
 <title>Commercial Timberland 1800</title><p>A german commercial Timberland.</p>
 Holzsammelstelle1950_NIC
-Forest (1950)
+Logging Site
 factory_Holzsammelstelle1950_NIC_details
 <title>Com. Timberland 1950</title><p>A german commercial Timberland.</p>
 Holzsammelstelle1990_NIC
-Forest (1990)
+Logging Site
 factory_Holzsammelstelle1990_NIC_details
 <title>Com. Timberland 1990</title><p>A german commercial Timberland.</p>
 Hopfenhof_NIC
-Hop farm
+Hop Farm
 factory_Hopfenhof_NIC_details
 <title>Mayerthaler Hop grow</title><p>Hops is a plant species belonging to the family of hemp plants and is used as a flavor in beer brewing.</p>
 Kalibergwerk
-Potash mine
+Potash Mine
 factory_Kalibergwerk_details
 <title>Kalibergwerk</title><p>The underground mining of potash is referred as potash mining.</p>
 Kamerahersteller
-Camera factory
+Camera Manufacturer
 factory_Kamerahersteller_details
 <title>SICON Ltd.</title><p>The SICON cameras are known and sought in the whole Simworld.</p>
 Kaufhaus_1912
-Mall (1912)
+Department Store
 Kaufhaus_NIC
-Mall
+Department Store
 factory_Kaufhaus_NIC_details
 <title>Large north-german Warehouse</title><p>A department store is a single or wholesale shop that, in contrast to the "Simple Shop", Goods of all kind on mostly several floors for sale offers.</p>
 KFZ_Fabrik_NIC
@@ -1809,169 +1821,175 @@ Car Fab (please do not use this anymore!)
 factory_KFZ_Fabrik_NIC_details
 <title> Discarded factory </title> <p> This car factory is still included in PAK128.german, so old saved games can be loaded without problems. <br> Please do not <strong> rebuilt this factory. </strong> </p>
 Kfz_Fabrik1961
-Car factory (1961)
+Auto Factory
 Kiesgrube
-Quarry (1993)
+Quarry
 factory_Kiesgrube_details
 <title>Gravel pit</title><p>Little stones for the concrete production.</p>
 Kieswerk1
-Quarry (1950)
+Quarry
 factory_Kieswerk1_details
 <title>Stone-quarry</title><p>Stones and pebbles for the cement factory and road construction.</p>
+Klinik_1912
+Clinic
+Klinik_1927
+Clinic
 Klosterbrauerei1610_NIC
-Brewery (Abbey brewery)
+Monastery Brewery
 factory_Klosterbrauerei1610_NIC_details
 <title>Abbey Brewery</title><p>This time-honoured brewery produces delicious beer from hops and barley.</p>
 Kohlemine_NIC
-Shaft-Coal mine
+Coal Mine
 factory_Kohlemine_NIC_details
-<title>As Coal mining is the extraction of hard coal named, which is used in day or underground mining.</title><p>Coal Mine</p>
+<title>Coal Mine</title><p>Coal mining is the extraction of coal from the surface or underground.</p>
 Konditorei
 Confectionary
 factory_Konditorei_details
-<title>Confectionery</title><p>Selfmade deliciousness</p>
+<title>Confectionary</title><p>Selfmade deliciousness</p>
+Krankenhaus_Hellmig_Kamen
+Hospital
 Lagerhalle_NIC
-Building supplies Store (1930)
+Supply Warehouse
 factory_Lagerhalle_NIC_details
-<title>Old Builder's Merchant</title><p>The builders merchant sells everything what the do-it-your-selfer demands, from the cement sack to the mixing machine.</p>
+<title>Old Builder's Merchant</title><p>This store sells everything a do-it-your-selfer would need, from cement sacks to mixing machines.</p>
 Lebensmittelfabrik_NIC
-Foodfab (1957)
+Food Processing Plant
 factory_Lebensmittelfabrik_NIC_details
 <title>SIM-Food Factury</title><p>The SIM-Food AG processes meat, poultry and fish for long-lasting preserves, frozen goods such as fish chops, chickens' eggs, as well as ready-to-serve meals that thrill large and small ...</p>
 Markt_AK
 Market
 Markt_AK_1920
-Market (1920)
+Market
 Markt_NIC
-Market (Northger.)
+Market
 factory_Markt_NIC_details
 <title>Grocery</title><p>The small Grocery Store at the corner.</p>
 Markt_NIC_1920
-Market (northger. 1920)
+Market
 Markthalle_1891
-Indoor-Market (1891)
+Indoor Market
 Maschinenfabrik_1800
-Devices-/Machinefactory
+Machine Manufacturer
 Maschinenfabrik_NIC
-Devices-/Machinefactory (1909)
+Machine Factory
 factory_Maschinenfabrik_NIC_details
 <title>MU-Tec Domestic Appliances</title><p>The Specialist for Machine and Hardware Manufactoring.</p>
 MGB_alter_Markt_1920
-Market (Uplands 1920)
+Market
 MGB_alter_Markt_NIC
-Market (Uplands)
+Market
 factory_MGB_alter_Markt_NIC_details
 <title>Sout german Market</title><p>The weekly market is the hub for all who want to buy products from the region.</p>
 MGB_Einkaufszentrum_NIC
-Shoppingmall (1980)
+Shopping Mall
 factory_MGB_Einkaufszentrum_NIC_details
 <title>Shoppingmall</title><p>The LEMURIA Shoppingmall contains  a Supermarket, a Furniturestore & E-Store, a Boutique plus some Coffeeshops and Bars.</p>
 MGB_Erzbergwerk_NIC
-Ore mine (Uplands 1900)
+Ore Mine
 factory_MGB_Erzbergwerk_NIC_details
 <title>Schneeberg-Mining AG</title><p>Schneeberg Mining AG supports soil treasures such as iron and silver ore.</p>
 MGB_Kokerei_NIC
-Coke plant
+Coke Plant
 factory_MGB_Kokerei_NIC_details
-<p>Makes coke and raw gas from coal in a kind of distillation process. </p>
+<p>Makes coke and raw gas from coal in a kind of distillation process. </p><p>Oil from the coking plant? Yes and no. Here in the game, we equalize <i>petroleum</i> and <i>coal tar</i>, which is produced in the coking process, since both serve as raw materials in the chemical industry, but not at the same historical time. This should help reduce excessive number of goods in supply chains. In detail: in a coking plant, gas and coke are generated from coal by heating with the exclusion of air. In 1870 there were already over 340 gas plants in Germany. Primary interest was in gas. It was used to illuminate streets and public buildings. Coke was a by-product and was needed in the blast furnace to produce pig iron. Excess coke was used to heat public buildings. In addition to gas and coke, coal tar was also produced. This viscous, sticky mass was initially difficult to get rid of. Coal tar consists of several thousand different hydrocarbons and other compounds. After the discovery of tar paints, large chemical factories emerged and the formerly sticky waste became a precious raw material. Today, major chemical giants like Bayer, Höchst and BASF have started using coal tar. When the city's gas supply was switched to natural gas in 1960, only small amounts of coal tar were left. Therefore the chemical industry had to switch to petroleum. Today, the few remaining coking plants only produce coke for steel plants. The gas is either supplied to steelworks or used to heat coke ovens. Only non-toxic natural gas is fed into the gas networks today.</p>
 MGB_Schrottplatz_NIC
 Junkyard
 factory_MGB_Schrottplatz_NIC_details
 <title>Scrapyard</title><p>Scrap is an metallic secondary raw material, which is obtained, for example, from car scrapers and old equipment.</p>
 MGBStahlwerkKoks_NIC
-Steelmill (coke)
+Steel Mill
 factory_MGBStahlwerkKoks_NIC_details
 <title>RR_Metalgroup</title><p>This steel mill belongs to the RR-Metalgroup and produces alloyed and unalloyed steel for the automotive, computer and mechanical engineering industries.</p>
 MGBWeingut_NIC
-Vinery
+Winery
 factory_MGBWeingut_NIC_details
 <title>Vineyard</title><p>A winery is a farm where grapes are cultivated and wine, champagne and sparkling wine are produced from it.</p>
 Milchfabrik_NIC
-Dairy factory (1930)
+Dairy Plant
 factory_Milchfabrik_NIC_details
-<p>Here will milk pasteurized, bottled and then sold.</p>
+<p>Here milk is pasteurized, bottled and then sold.</p>
 Minimarkt_NIC
-Minimarket (1957)
+Minimart
 factory_Minimarkt_NIC_details
 <title>Supermarket</title><p>A small Supermarket</p>
 moderne_Glashuette
-Glassfoundry (Eastger. 2005)
+Glassworks
 factory_moderne_Glashuette_details
 <title>Glass-Factory</title><p>A Glas factory produces Glass and Glassproducts.</p>
 moderne_Maschinenfabrik
-Devices-/Machinefactory (1997)
+Machine Plant
 factory_moderne_Maschinenfabrik_details
 <title>SiKraft - Domestic Appliances</title><p>The Specialist for Domestic Appliances</p>
 moderner_GetreideSilo
-Cereal silo
+Grain Silo
 factory_moderner_GetreideSilo_details
-<title>Grainsilo</title><p>A Grainsilo is a kind of warehouse.</p>
+<title>Grain Silo</title><p>A grain silo is a kind of warehouse.</p>
 moderner_Importeur
-Import company (Nord-/Ostdt.
+Import Company
 factory_moderner_Importeur_details
 <title>Importeur</title><p>These Trading House imports almonds and silicium wavers.</p>
 Moebelfabrik Pirna
-Furniture-factory (Eastger.)
+Furniture Factory
 factory_Moebelfabrik Pirna_details
 <title>Furniture Fab</title><p>The former Woodindustry Friedrich Hengst is a historic building in Pirna. The company was founded in 1900 and was in operation until 2007.</p>
 Moebelfabrik_NIC
-Furniture-factory (Southger.)
+Furniture Factory
 factory_Moebelfabrik_NIC_details
 <title>Furniture factory</title><p>Tables, chairs, cabinets, beds, chests of drawers, toilets, shelves, sofas and much more, which makes living more comfortable is manufactured in the BZT furniture factory.</p>
 Moebeltischlerei
-Furniture store
+Furniture Workshop
 factory_Moebeltischlerei_details
 <title>Furniture Store</title><p>Tables, chairs, cabinets, beds, chests of drawers, toilets, shelves, sofas and much more, which makes living more comfortable produces the BZT furniture factory.</p>
 Moebeltischlerei_1800
-Furniture-workshop
+Furniture Workshop
 Muehle_1924
-Mill (1924)
+Mill
 Muehle_NIC
-Mill (1898)
+Grain Mill
 factory_Muehle_NIC_details
 <title>Grainmill</title><p>In grain mills, various cereal varieties such as rye, spelled, wheat, barley and maize are processed into flour. This is then delivered either to large customers such as the bakeries or also to the retail trade.</p>
 MuellContainer
-Waste collection point
+Waste Collection Center
 factory_MuellContainer_details
-<title>Garbage collection-point</title><p>This is where the households of the surrounding area bring bulky waste and waste, which can not be disposed of with household waste.</p>
+<title>Garbage collection-point</title><p>This is where households in the surrounding area bring bulky waste which can not be disposed of with common household waste.</p>
 NDT_alte_Marzipanfabrik
-Marzipan factory (Norddt.)
+Marzipan Factory
 factory_NDT_alte_Marzipanfabrik_details
 <title>Marzipan is a confectionery, made from grind almonds and sugar.</title><p>Marzipan Fab</p>
 NDT_alterBauernhof_NIC
-Sugar farm (Norddt.)
+Sugar Farm
 factory_NDT_alterBauernhof_NIC_details
 <title>North-german Farmyard</title><p>Here will be sugar beets cultivated</p>
 NDT_Importeur
-Import company (Norddt.)
+Import Company
 factory_NDT_Importeur_details
 <title>Importeur</title><p>These Trading House imports almonds and silicium wavers.</p>
 NDTZuckerfabrik_NIC
-Sugar factory (Norddt.)
+Sugar Factory
 factory_NDTZuckerfabrik_NIC_details
 <title>Sigrana - Zucker Comp.</title><p>In the sugar production, the sugar will extract from certain plants with a high sugar content (sugar beet, -cane) and in various forms made to ready for use.</p>
 Neues_Kohlekraftwerk
-Coal powerplant (1963)
+Coal Powerplant
 factory_Neues_Kohlekraftwerk_details
 <title>Coal-Power-plant</title><p>The coal-power plant converts by thermal combustion produced heat to electrical energy. Through elaborate filter systems, a large part of the exhaust gases are freed from pollutant particles.</p>
 NorddeutscherExporteur
-Export company (Norddt.
+Export Company
 factory_NorddeutscherExporteur_details
 <title>NN-Exports</title><p>The exporter sells and shipped goods from the inland to all over the world.</p>
 NorddeutscherExporteur_1891
-Export company (Northger. 1891)
+Export Company
 factory_NorddeutscherExporteur_1891_details
 <title>SQ-Exports Ltd.</title><p>The exporter sells and shipped goods from the inland to all over the world.</p>
 Nordschacht Mettingen
-Coal mine (Mettingen 1950)
+Coal Mine
 factory_Nordschacht Mettingen_details
 <title>Coal mine</title><p>As Coal mining is the extraction of hard coal named, which is used in day or underground mining.</p>
 Obstbauer
-Fruit farm (1930)
+Fruit Farm
 factory_Obstbauer_details
 <title>fruit farm</title><p>Sweet fruits for young and old</p>
 Oelbohrinsel
-Oildrilling-Platform
+Oilrig
 factory_Oelbohrinsel_details
 <title>Small Oil-drilling-rig</title><p>The oil drilling rigs were developed in the 1960s and 1970s of the twentieth century. The drilling rigs are usually located in the middle of the ocean, so that a ship fleet is needed to process the logistics.</p>
 Oelfeld
@@ -1981,29 +1999,29 @@ factory_Oelfeld_details
 factory_Oktoberfest_details
 <title>Oktoberfest in Munich</title><p>Called "The Wiesn" by the locals, takes place in September, lasts two weeks and ends on the first Sunday in October. The first festival took place in 1910 on the occasion of the wedding of the future Bavarian King Ludwig I. Since then, the festival has been growing from year to year. <br>1818 the first carousel<br>1869 the Schichtl, magics and curiosities are presented and visitors are beheaded by guillotine,<br>1880 a Ferris wheel with 12 meters of wood<br>1894 the witch swing<br>1898 the landlord Georg Lang raises five stall places and builds on it his "beer castle", that was the beginning of the big beer tent<br>1906 a slide, since 1933 with a conveyor belt for the passengers,<br>1910 Devil's Wheel, who manages to stay on top wins,<br>1920 Krinoline a round carousel,<br>1932 Pitt's death wall, motorcyclist on a wooden cylindrical steep wall, <br>1979 Steel Ferris Wheel with 48 meters<br> These lovingly maintained attractions are still represented today.</p> <p><em>To provide such a big festival with beer and everything else requires sophisticated logistics. Visitors also want to be driven to the festival and then back again. If the festival is optimally served, it will grow into the largest folk festival in the world. </em></p><p>For Oktoberfest, Munich breweries brew a special beer containing up to 6.4 percent alcohol by volume. Some visitors underestimate both the content of the beer glasses and the alcohol content of the beer. Often they then try, with the last strength, to leave the festival through the shortest way. This leads behind the marquees up the slope of a small hill. Some fail at the small incline and stay lying down. Some fall asleep instantly, others vomit. The locals therefore call it the Kotz hill. Unfortunately, this particular attraction is attracting more and more onlookers, so that the police have recently had to look increasingly to the right.  </p>
 Papierfabrik_NIC
-Paper mill (1950)
+Paper Mill
 factory_Papierfabrik_NIC_details
 <title>Paper Factory</title><p>A paper factory produces paper and cardboard in an industrial scale.</p>
 Papierfabrik1990
-Paper mill 1990
+Paper Plant
 factory_Papierfabrik1990_details
 <title>Papermill</title><p>A paper factory produces paper and cardboard in an industrial scale.</p>
 Papiermuehle
-Paper mill
+Paper Mill
 Pharmawerk_NIC
-Pharmaceutical Factory
+Pharmaceutical Plant
 factory_Pharmawerk_NIC_details
 <title>LEM-Pharmacy Plant</title><p>Here will medicines and supplementary preparations produced.</p>
 Raffinerie_NIC
-Refinery (1961)
+Refinery
 factory_Raffinerie_NIC_details
 <title>LEM-Petro Ltd.</title><p>A petroleum refinery extract's from the raw material petroleum by distillation, fraction and extraction, using pressure and vacuum, fuels, lubricating oils, asphalt as well as various plastic starting products.</p>
 Saegewerk_NIC
-Sawmill (1950)
+Sawmill
 factory_Saegewerk_NIC_details
 <title>East-german Sawmill</title><p>Boards, slats, round and precious wood for the professional, DIY and the industry</p>
 Sandgrube
-Sandpit (Southger. 1919)
+Sandpit
 factory_Sandgrube_details
 <title>Sandpit</title><p>Sand for the concrete production</p>
 Sandgrube_1800
@@ -2013,7 +2031,7 @@ Slaughterhouse
 factory_Schlachthaus_1800_details
 <h1>Old slaughterhouse in Bamberg</h1><p>A slaughterhouse is a complex of buildings that serve to extract and store fresh meat in order to supply markets and inns. The old slaughterhouse in Bamberg was built next to and partly over the Regnitz river. Slaughtering waste was dropped into the river through slots in the ground, hoping that the river would carry it away. A rather rational and hygienic disposal in itself. Only the river will have washed up on them elsewhere, where they will rot and stink. Due to ongoing hygienic conditions and the strong smell, there were protests against the company. So at 1904, the old slaughterhouse was taken out of service </p>
 Schlachthof_NIC
-Slaughterhouse (1940)
+Slaughterhouse
 factory_Schlachthof_NIC_details
 <p>Cows go in at one end and meat comes out at the other.</p><p>This modern slaughterhouse does not require coal.<br>A steam engine was dispensed with in the design of the new slaughterhouse and uses electricity exclusively from the public network. Providing the chillers with their own steam engine would have some advantages, such as reliability and electricity costs, especially since the waste heat from the steam engine is good for cooking sausages, but butchers have proven to be poor machinists and steam engines are sensitive to rough handling. In the old slaughterhouse, the cost of repairs more than ate up the efficiency gain and so there is no steam jet to clean the equipment and rooms anymore. </p>
 Schrotthandel_NIC
@@ -2021,77 +2039,77 @@ Scrapyard
 factory_Schrotthandel_NIC_details
 <title>Scrap Yard</title><p>Car wreck and scrap metal recyling.</p>
 Schwimmdock
-Floating dry dock
+Floating Dry Dock
 factory_Schwimmdock_details
 <title>Dock</title><p>Ship Production. This Fab connect segments to freighters or other big ships. A floating dry dock is pontoon for dry docking ships, possessing floodable buoyancy chambers and a "U"-shaped cross-section. When the chambers fill with water, the dry dock float lower in the water.  This allows a ship to be moved inside. When the water is pumped out of the chambers, the dry dock rises and the ship is lifted out of the water on the rising deck, allowing work to proceed on the ship's hull. </p>
 Stahlwerk_NIC
-Steel factory (1891)
+Steel Mill
 factory_Stahlwerk_NIC_details
 <title>BZT-Tony Steel-Industries LTD.</title><p>This plant produces high-quality steel for machinery and shipbuilding. But the automotive industry is also a welcome customer.</p>
 Stahlwerk_StAntony-Huette
-Steelfactory
+Ironworks
 Steinbruch_alt
-Quarry (Southger.)
+Quarry
 factory_Steinbruch_alt_details
 <title>Quarry</title><p>Coarse gravel is extracted here.</p>
 Steinbruch_gross
-Quarry (Southger. 1959)
+Quarry
 factory_Steinbruch_gross_details
 <title>Quarry</title><p>Stones for the Concrete production.</p>
 SteinbruchHartkoppe
-Quarry -Hartkoppe (1970)
+Quarry
 factory_SteinbruchHartkoppe_details
 <title>Gravel Pit</title><p>Coarse gravel will be here extracted.</p>
 Steinkohlekraftwerk
-Stonecoal-powerplant
+Coal Powerplant
 factory_Steinkohlekraftwerk_details
 <title>Coal-Power plant</title><p>The coal-power plant converts by thermal combustion produced heat to electrical energy. Through elaborate filter systems, a large part of the exhaust gases are freed from pollutant particles.</p>
 sueddt_alte_baeckerei
-Bakery (Southger.)
+Bakery
 factory_sueddt_alte_baeckerei_details
 <title>South-german bakery</title><p>Cakes and bred</p>
 Supermarkt_AVL_ALP_2000
-Supermarket SIMRER
+Supermarket
 factory_Supermarkt_AVL_ALP_2000_details
 <title>A Supermarket</title><p>A supermarket is usually a very large retail store, which offers besides food also other articles of daily necessities (socks, vacuum cleaners & toilet articles).</p>
 Supermarkt_MGB_AVL_1970
-Supermarket SIMRER (1970)
+Supermarket
 factory_Supermarkt_MGB_AVL_1970_details
 <title>Typical german Supermarket</title><p>A supermarket is usually a very large retail store, which offers besides food also other articles of daily necessities (socks, vacuum cleaners & toilet articles).</p>
 Supermarkt_ODL_MGB_2000
-Supermarket SIMRERAB
+Supermarket
 factory_Supermarkt_ODL_MGB_2000_details
 <title>Supermarket</title><p>A supermarket is usually a very large retail store, which offers besides food also other articles of daily necessities (socks, vacuum cleaners & toilet articles).</p>
 Tankstelle_Pascale
-Gas station (1988)
+Gas Station
 factory_Tankstelle_Pascale_details
 <title>Pascalloks Gasstation</title><p>Refueling gas, car washing and slurp a cappuccino by the way.</p>
 Tankstelle1941_NIC
-Tankstelle
+Fueling Station
 factory_Tankstelle1941_NIC_details
 <title>Gas-Station 1941</title><p>fuels and lubricants for theTöff töff.</p>
 Textilfabrik_1800
-Textile factory (1800)
+Textile Mill
 factory_Textilfabrik_1800_details
 <title>Textil Factory</title><p> The Factory produces fashion for everyone.</p>
 TierfutterFabrik_alt
-Feed mill
+Feed Mill
 TierfutterFabrik_NIC
-Feed mill
+Feed Mill
 factory_TierfutterFabrik_NIC_details
 <title>Animal-food Factory</title><p>The power feed of this factory is the fuel for the poultry farm.</p>
 Verbrennungskraftwerk
-Waste incineration and power plant
+Waste-to-energy Plant
 factory_Verbrennungskraftwerk_details
 <p>A heating plant generates heat for hot water supply, room heating and industrial processes. By the way, electricity is also produced to cover peak consumption times.</p>
 Verpackungshersteller
-Package Factory
+Packaging Plant
 Verpackungsmittelfabrik_1909
-Packaging Supplies Factory
+Packaging Plant
 Versandhandel_1886
-Mail order company 1886
+Mail-order Company
 factory_Versandhandel_1886_details
-<title> Mail order company Mey & Edlich </title> <p> in Leipzig is the oldest and still active mail-order business. When it comes to mail order, customers do not go to the market to buy, but choose the desired products in newspaper advertisements or in catalogs. They order them by letter and then get the goods delivered by parcel post. Therefore, a mail order requires a well-functioning postal system. The letters with the orders must be reliably delivered to the factory. As well as the packages do. Also here in the game, the mail order works only with a good post connection. Clothing, stationery and small machines are ideal for the mail order, as they can be easily sent in packages. They are not perishable, light and of high value. </p>
+<title>Mail-order company Mey & Edlich</title> <p> Located in Leipzig, this company is the oldest, still active mail-order business. When it comes to mail order, customers don't go to the market to buy but rather order products from newspaper advertisements and catalogs. They place their orders through mail and then have their goods delivered. A mail order requires a well-functioning postal system. The letters with the orders must be reliably delivered to the factory as  well as the packages. In Simutrans, the mail order works only with a good mail connection. Clothing, stationery and small machines are ideal for this type of factory as they can be easily sent in packages, are not perishable, and are light and high in value. </p>
 Verwaltung_Muenchen_1965
 City Hall
 factory_Verwaltung_Muenchen_1965_details
@@ -2101,45 +2119,61 @@ outdated do not use
 factory_Viehhof_NIC_details
 <title>Cattlehof (1919)</title><p>This cattle farm with its eggs laying cows serves only the compatibility to old save games. Do not build new.</p>
 Viehhof_NIC_2
-Cattleyard (1919)
+Stockyard
 factory_Viehhof_NIC_2_details
 <title>Farmyard</title><p>A farm with stable. So that dear cattle does not freeze when it rains or snows.</p>
+Viehhof_Nord1800
+Stockyard
 VWAutohaus_NIC
-VW-Car shop
+Volkswagen Auto Dealer
 factory_VWAutohaus_NIC_details
 <p>The Bestseller of this Car shop is, of course, the VW Bulli and the beetle. If you prefer a VW Golf or Passat, you can also be helped here.</p>
 Waferfabrik_1965
-Wafer factory
+Wafer Plant
 factory_Waferfabrik_1965_details
 <title> Wacker Chemie </title> <p> This chemical plant produces high-purity silicon and from it monocrystalline wafers. Wafers that's what we call the slices of pure silicon on which integrated circuits are built. Better known as IC or chips. The production of high-purity silicon and the pulling of monocrystals from a melt is very energy-consuming. Wacker in Burghausen can use the power of its own hydroelectric power station. Again, in the game, the factory relies on a good power supply. Only with sufficient power will this Frabik supply enough wafers for the computer manufacturers. </p>
+Wasserkraftwerk
+Hydropower Plant
 Weinberg_NIC
 Vineyard
 factory_Weinberg_NIC_details
 <title>Vineyard Grettman</title><p>At a vineyard, will noble grapes used to produce fine grapes for noble drops.</p>
 Werft
-Dock (1980)
+Shipyard
 factory_Werft_details
 <title>Shipyard</title><p>Here will be luxury cruisers and ocean giants builted.</p>
+Werft_1870
+Shipyard
 Windmuehle_1800
 Windmill
 Zementwerk1800_NIC
-Zementwerk (1800)
+Cement Plant
 factory_Zementwerk1800_NIC_details
-<title>Cement Factory 1800</title><p>Here will cement from sand and stones made. This is used for the construction of the Simutranshäuser and for the concrete work.</p>
+<title> Cement Plant (1859) </title> <p> Here cement is made from sand and stones. This is used for the construction of Simutrans houses and later from 1871 for the concrete works. Disused wine barrels and old jute flour sacks serve as packaging, but any container provided by the customer such as tin tubs and tubs is also filled. </p>
 Zementwerk1914
-Cement-factory (1914)
+Cement Factory
 factory_Zementwerk1914_details
 <title>Cement plant Burglengenfeld.</title>From lime and clay here cement is fired. In the long building a rotary kiln was used for the first time to burn the cement.
 Zementwerk1979_NIC
-Cement-factory (1979)
+Cement Plant
 factory_Zementwerk1979_NIC_details
 <title> Cement Plant 1962 </title> <p> This Plant produces from sand, stones and by adding additives, high-tech cement. This is necessary for the construction of the Simutransbiuldings and for the concrete plant. Most customers load their cement with the own trucks. The good exhaust gas cleaning and the high combustion temperature allows burning problematic waste. Given to the low cement price, this is a welcome opportunity to increase the profitability of the plant. </p>
+#_____________________________________field_____________________________________
+#_____________________________________field_____________________________________
+hopfen_1
+Hop Field
+Riesenrad
+Ferris wheel
+Weinfelder
+Vineyard
+Weinfelder2
+Vineyard
 #_____________________________________good______________________________________
 #_____________________________________good______________________________________
 Abfall
 Waste
 Autos
-Cars
+Automobiles
 Backwaren
 Pastries
 Benzin
@@ -2147,7 +2181,7 @@ Petrol
 Beton
 Concrete
 Betonfertigteile
-Concrete-components
+Precast concrete
 Bier
 Beer
 Bretter
@@ -2167,7 +2201,7 @@ Iron
 Farben
 Colors
 Fertiggerichte
-Convenience Food
+Convenience food
 Fisch
 Fish
 Flachs
@@ -2185,11 +2219,11 @@ Glass
 Heizoel
 Heating oil
 Holz
-Wood
+Logs
 Hopfen
 Hops
 Kameras
-Camera
+Cameras
 Kohle
 Coal
 Koks
@@ -2209,11 +2243,9 @@ Milk
 Moebel
 Furniture
 Molkereiprodukte
-Dairy Products
-None
-none
+Dairy products
 Obst
-Fruits
+Fruit
 Oel
 Oil
 Papier
@@ -2227,7 +2259,7 @@ Mail
 Salze
 Salts
 Schiffssektionen
-Shipsections
+Ship sections
 Schrott
 Scrap
 Silizium
@@ -2261,7 +2293,7 @@ Wool
 Zement
 Cement
 Zement_lose
-Cement-loose
+Loose cement
 Zucker
 Sugar
 Zuckerrueben
@@ -2316,24 +2348,26 @@ UNDERGROUND
 Underground-Tools
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
+ Tonnen
+tons
 arctic
 Glacial Zone
 CATEGORY_01
-Piece Goods
+Packaged goods
 CATEGORY_02
-Bulk goods
+Bulk
 CATEGORY_03
 Oil
 CATEGORY_04
-Cooled Goods
+Perishables
 CATEGORY_05
-Fluid Food
+Liquids
 CATEGORY_06
-Lumberwood
+Timber
 CATEGORY_07
-Farm Products
+Agriculture products
 CATEGORY_08
-Silo-ware
+Pourable
 CATEGORY_09
 Unused
 CATEGORY_10
@@ -2535,21 +2569,25 @@ Powercable
 #_________________________________tunnel - road_________________________________
 #_________________________________tunnel - road_________________________________
 Alter Autobahntunnel
-Old Highway tunnel
+Concrete road tunnel
 Moderner Autobahntunnel
-modern Highway tunnel
+Autobahn tunnel
 road_070_tunnel
-Road tunnel 70 km/h
+Old road tunnel
 road_100_tunnel
-Road tunnel 100 km/h
+Highway road tunnel
+Strassentunnel_schotter
+Gravel road tunnel
 Strassentunnel20
-Road tunnel 20 km/h
+Cobblestone road tunnel
+Strassentunnel30
+Macadam road tunnel
 Strassentunnel40
-Road tunnel 40 km/h
+Cobble stone tunnel
 Strassentunnel50
-Road tunnel 50 km/h
+Modern road tunnel
 Strassentunnel70
-Road tunnel 70 km/h
+Cobblestone road tunnel
 #________________________________tunnel - track_________________________________
 #________________________________tunnel - track_________________________________
 alter Eisenbahntunnel
@@ -2567,7 +2605,7 @@ Railroad tunnel (modern)
 #________________________________tunnel - water_________________________________
 #________________________________tunnel - water_________________________________
 Kanaltunnel
-Canal-tunnel
+Canal tunnel
 #_________________________________vehicle - air_________________________________
 #_________________________________vehicle - air_________________________________
 Airbus_A300-600
@@ -2577,87 +2615,87 @@ Airbus A340-600
 Airbus_A350-900
 Airbus A350-900
 Airbus_A350-900_Post
-Airbus A350-900 Mail
+Airbus A350-900 mail
 Albatros_L58
-Albatros L58
+Albatros L 58
 Albatros_L58_Kuehlwaren
-Albatros L58 Chilled-goods
+Albatros L 58 perishables
 Albatros_L58_Post
-Albatros L58 Mail
+Albatros L58 mail
 Albatros_L58_Stueckgut
-Albatros L58 Piece-good
+Albatros L58 packaged goods
 Antonow_An-2
-Antonow An-2
+Antonov An-2
 Antonow_An24
-Antonow An24
+Antonov An-24
 Antonow_AN24_Kuehlwaren
-Antonov AN24 Chilled-goods
+Antonov An-24 perishables
 Antonow_AN24_Post
-Antonow An24 Mail
+Antonov An-24 mail
 Antonow_AN24_Stueckgut
-Antonow AN24 Piece-good
+Antonov An-24 packaged goods
 Antonow_AN24_Vieh
-Antonow AN24 Cattle
+Antonov An-24 stock
 Boeing_B247
-Boeing B247
+Boeing 247
 Boeing_B707
-Boeing B707
+Boeing 707
 Boeing_B777F_Kuehlwaren
-Boeing B777F Chilled-goods
+Boeing 777F perishables
 Boeing_B777F_Post
-Boeing B777F Mail
+Boeing 777F mail
 Boeing_B777F_Stueckgut
-Boeing B777F Piece-good
+Boeing 777F packaged goods
 Boeing_B777F_Viehtransporter
-Boeing B777F Cattle
+Boeing 777F stock
 Boeing737-500
 Boeing 737-500
 Boeing737-500_Post
-Boeing 737-500 Mail
+Boeing 737-500 mail
 Boeing747-200f_Kuehlwaren
-Boeing 747-200f Chilled-goods
+Boeing 747-200F perishables
 Boeing747-200f_Stueckgut
-Boeing 747-200f Piece-good
+Boeing 747-200F packaged goods
 Boeing747-200f_Vieh
-Boeing 747-200f Cattle
+Boeing 747-200F stock
 Convair CV340_Post
-Convair CV340 Mail
+Convair CV-340 mail
 Convair_CV340
-Convair CV340
+Convair CV-340
 Curtiss_C46
-Curtiss C46
+Curtiss C-46
 Curtiss_C46_Lufthansa_Kuehlwaren
-Curtiss C46 Chilled-goods
+Curtiss C-46 perishables
 Curtiss_C46_Lufthansa_Post
-Curtiss C46 Mail
+Curtiss C-46 mail
 Curtiss_C46_Lufthansa_Stueckgut
-Curtiss C46 Piece-good
+Curtiss C-46 packaged goods
 Curtiss_C46_Lufthansa_Vieh
-Curtiss C46 Cattle
+Curtiss C-46 stock
 Focke-Wulf_FW200
-Focke-Wulf FW200
+Focke-Wulf FW200 
 Focke-Wulf_FW200_ Stueckgut
-Focke-Wulf FW200 freighter
+Focke-Wulf FW200 packaged goods
 Focke-Wulf_FW200_Kuehlwaren
-Focke-Wulf FW200 Chilled-goods
+Focke-Wulf FW200 perishables
 Focke-Wulf_FW200_Post
-Focke-Wulf FW200 Mail
+Focke-Wulf FW200 mail
 Focke-Wulf_FW200_Vieh
-Focke-Wulf FW200 Cattle
+Focke-Wulf FW200 stock
 Fokker_F.III_Kuehlwaren
-Fokker F.III Chilled-goods
+Fokker F.III perishables
 Fokker_F.III_Post
-Albatros L58 Mail
+Albatros L 58 mail
 Fokker_F.III_Stueckgut
-Fokker F.III Piece-good
+Fokker F.III packaged goods
 Fokker_F28
 Fokker F28
 Fokker_F28_Post
-Fokker F28 Mail
+Fokker F28 mail
 Fokker_FIII
 Focker F.III
 Haru_Boeing747-200F_(MAIL)
-Boeing 747-200F Mail
+Boeing 747-200F mail
 Haru_Boeing747-400
 Boeing 747-400
 Heinkel_He111B
@@ -2665,7 +2703,7 @@ Heinkel He111B
 Heinkel_He111B_Kuehlwaren
 Heinkel He111B Chilled-goods
 Heinkel_He111B_Post
-Heinkel He111B Mail
+Heinkel He111B mail
 Heinkel_He111B_Stueckgut
 Heinkel He111B Piece-good
 Iljuschin_Il-14P
@@ -2677,13 +2715,13 @@ Iljuschin Il14G Cattle
 Iljuschin_Il14G_Kuehlwaren
 Iljuschin Il14G Cooling
 Iljuschin_Il14P_Fracht_Post
-Iljuschin Il14P Mail
+Iljuschin Il14P mail
 Iljuschin_Il62M
 Iljuschin Il62M
 Junkers_G24_Kuehlwaren
 Junkers G24 Chilled-goods
 Junkers_G24_Post
-Junkers G24 Mail
+Junkers G24 mail
 Junkers_G24_Stueckgut
 Junkers G24 Piece-good
 Junkers_G24a
@@ -2693,7 +2731,7 @@ Junkers Ju90
 Junkers_Ju90_Kuehlwaren
 Junkers Ju90 Chilled-goods
 Junkers_JU90_Post
-Junkers JU90 Mail
+Junkers JU90 mail
 Junkers_Ju90_Stueckgut
 Junkers Ju90 Piece-good
 Junkers_Ju90_Vieh
@@ -2705,13 +2743,13 @@ LZ11 "Viktoria Luise"
 LZ127_Graf_Zeppelin
 LZ127-Graf Zeppelin
 LZ127_Graf_Zeppelin_Post
-LZ127-Graf Zeppelin Mail
+LZ127-Graf Zeppelin mail
 LZ127_Graf_Zeppelin_Stueckgut
 LZ127 Graf-Zeppelin Package
 LZ129_Hindenburg_Kuehlwaren
 LZ129 Hindenburg Chilled-goods
 LZ129_Hindenburg_Post
-LZ129 Hindenburg Mail
+LZ129 Hindenburg mail
 LZ129_Hindenburg_Stueckgut
 LZ129 Hindenburg Piece-good
 McDonnell_Douglas_MD-11F_Kuehlwaren
@@ -2719,7 +2757,7 @@ McDonnell-Douglas MD 11F Chilled-goods
 McDonnell_Douglas_MD11F_Container
 McDonnell-Douglas MD11F Piece-good
 McDonnell_Douglas_MD11F_Post
-McDonnell-Douglas MD11F Mail
+McDonnell-Douglas MD11F mail
 McDonnell_Douglas_MD11F_Vieh
 McDonnell-Douglas MD11F Cattle
 MHz-Fokker_F27
@@ -2731,7 +2769,7 @@ McDonnell-Douglas DC10
 MHz-McDonnell-Douglas_DC3
 McDonnell-Douglas DC3
 MHz-McDonnell-Douglas_DC3_mail
-McDonnell-Douglas DC3 Mail
+McDonnell-Douglas DC3 mail
 Parseval_PL12_Charlotte
 Parseval PL12 "Charlotte"
 Tupolev_Tu134
@@ -2739,7 +2777,7 @@ Tupolev Tu134
 Tupolev_TU134_Kuehlwaren
 Tupolev TU134 Chilled-goods
 Tupolev_TU134_Post
-Tupolev TU134 Mail
+Tupolev TU134 mail
 Tupolev_TU134_Stueckgut
 Tupolev TU134 Piece-good
 Tupolev_TU134_Vieh
@@ -2749,7 +2787,7 @@ Tupolev TU134 Cattle
 ADtranz_EL2000
 ADtranz EL2000
 BR101_Metropolitan
-BR MET 101
+DB 101 MetropolitaN silver
 BR103
 DB Express Loco BR 103
 BR110-blau
@@ -2759,15 +2797,15 @@ BR 146.5
 BZT_BR111
 BR 111
 BZT_ET25B
-DRG Railcar ET 25 (B-Waggon)
+DRG ET 25 rear motor
 BZT_ET25C
-DRG Railcar ET 25 (Middlewaggon)
+DRG ES 25 steering/central
 DB BR143
 DB BR 143
 DR BR112
 DR BR 112
 DR_BR101
-BR 101
+DB 101
 DR_BR120
 BR 120
 DR_E11
@@ -2786,12 +2824,16 @@ E151-gruen
 E 151 green
 E18
 DRG E 18
+E32
+DRG E32
 E36
 E 36
 E44
 DRG BR 44
 E52
 E 52
+E60
+DRG E60
 E71
 E 71
 E91_3
@@ -2803,7 +2845,7 @@ E-94.5
 E95
 E 95
 ET25A
-DRG Boxcar ET 25 - A-Wagen
+DRG ET 25 front motor
 LEW_EL2
 LEW EL 2
 Preussische_EG_507
@@ -2834,64 +2876,66 @@ yoshi_wup196503
 SchwebebahnEndwaggon
 #________________________________vehicle - road_________________________________
 #________________________________vehicle - road_________________________________
+ABOAG_RK
+ABOAG bus
 Anhaenger_12t_Kuehltransport
-Tanktrailer for Liqud-food 12t
+Refrigerated trailer
 Anhaenger_12t_Milchtransport
-Tanktrailer for Liqud-food 12t
+Tanker trailer
 Anhaenger_12t_Post
-Trailer 12t (Mail)
+Delivery trailer
 Anhaenger_12t_Stueckgut
-Piecegoodtrailer 12t
+Box trailer
 Anhaenger_18t_Holztransport
-Trailer for Timber 18t
+Timber trailer
 Anhaenger_18t_ISO_Container
-Container trailer 18t
+Container trailer
 Anhaenger_18t_Kuehltransport
-Chilled-goods trailer 18t
+Refrigerated trailer
 Anhaenger_18t_Kuehlwaren_2
-Chilled-goods trailer 18t
+Refrigerated trailer
 Anhaenger_18t_Landwirtschaft
-Trailer for agri. Goods 18t
+Grain trailer
 Anhaenger_18t_Milchtransport
-Tank trailer for Food 18t
+Tanker trailer
 Anhaenger_18t_Mineraloeltransport
-Oil trailer 18t
+Oil tanker trailer
 Anhaenger_18t_neu_Landwirtschaft
-Trailer for agri. Goods 18t
+Grain trailer
 Anhaenger_18t_Post
-Trailer 18t (Mail)
+Delivery trailer
 Anhaenger_18t_Silotransport
-Silo trailer 18t
+Silo trailer
 Anhaenger_18t_Stahltransport
-Trailer for Steel 18t
+Steel trailer
 Anhaenger_18t_Stueck
-MAN Piece-good trailer 18t
+Box trailer
 Anhaenger_18t_Tautliner
-Piece-good trailer 18t
+Box trailer
 Anhaenger_18t_Tiertransport
-Cattle trailer 18t
+Cattle trailer
 Anhaenger_1960_Kuehlwaren
-Cooling-good trailer 16t
+Refrigerated trailer
 anhaenger_1965_16t_Stueckgut_Koffer
-P-Middlewaggone
+Box trailer
 anhaenger_1965_16t_Stueckgut_Plane
-Piece-good trailer 16t
+Box trailer
 anhaenger_1965_16t_Vieh
-Cattle trailer 16t
+Cattle trailer
 Anhaenger_1990_16t_Holz
-Trailer for Timbertransporte 16t
+Timber trailer
 Anhaenger_1990_16t_Kuehlwaren
-Cooling-good trailer 16t
+Refrigerated trailer
 anhaenger_1990_16t_Silo
-Silo trailer 16t
+Silo trailer 
 anhaenger_1990_16t_Stueckgut
-Piece-good trailer 16t
+Box trailer
 Anhaenger_Unimog_Landwirt
-Unimog-Trailer (agri. Goods)
+Grain trailer
 Anhaenger_Unimog_Landwirt2
 Unimog-Trailer (agri. Goods)
 Auflieger_32t_Stueckgut
-Trailer for Piece-good 32t
+Box semi-trailer
 Auflieger_38t_Mineraloel
 Magirus-Iveco Oilauflieger
 Auflieger_38t_Stahl
@@ -2899,7 +2943,7 @@ Trailer for Steel 38t
 Auflieger_40t_Holztransport_Kran
 Trailer mit Kran for Timbertransporte 40t
 Auflieger_40t_ISO_Container
-Trailer for Piece-goodcontainer 40t
+Box semi-trailer
 Auflieger_40t_Kuehltransport
 Trailer for Chilled-goods 40t
 Auflieger_40t_Milchtransport
@@ -2915,59 +2959,61 @@ Trailer for Silotransporte 40t
 Auflieger_40t_Stahltransport
 Trailer for Steel 40t
 Auflieger_40t_Tautliner
-Trailer for Piece-good 40t
+Box semi-trailer
 Auflieger_40t_Viehtransport
-Trailer for Cattletransport 40t
+Cattle semi-trailer
 Auflieger_Autotransport_alt
-Car-Trailer
+Car carrier semi-trailer
 Auflieger_Kuehlwaren_alt
-Coolingtrailer
+Refrigerated semi-trailer
 Auflieger_Vieh_alt
-Cattletrailer
+Cattle trailer
 Benz3K2_fluessigeLebensmittel
-Benz-3K2 (liquid-food)
+Benz 3K2 tanker
 Benz3K2_Getreide
-Benz-3K2 for Grain
+Benz 3K2 box truck
 Benz3K2_Holz
-Benz-3K2 Wood
+Benz 3K2 timber truck
 Benz3K2_Kuehlwaren
-Benz-3K2 Cooling
+Benz 3K2 refrigerated truck
 Benz3K2_Oel
-Benz-3K2 Oiltransporter
+Benz 3K2 oil tanker
 Benz3K2_Schuettgut
-Benz-3K2 Dumper
+Benz 3K2 dumper
 Benz3K2_Stahl
-Benz-3K2 Stahllaster
+Benz 3K2 steel truck
 Benz3K2_Stgut
-Benz-3K2 Stückgutlaster
+Benz 3K2 box truck
 Benz3K2_Vieh
-Benz-3K2 Cattletransportr
+Benz 3K2 cattle truck
 Bergmann_BEL2500
-Bergmann BEL2500
+Bergmann BEL 2500 delivery truck
 Buessing_6500T_Aero
-Buessing Aero 6500
+Büssing Aero 6500 bus
 Buessing_BS11_Kuehlwaren1
-Buessing BS11 Chilled-goods
+Büssing BS 11 refrigerated truck
 Buessing_BS11_Kuehlwaren2
-Buessing BS11 liquid-food
+Büssing BS 16 tanker
 Buessing_BS11_Stueckgut
-Buessing BS11 Piece-good Truck
+Büssing BS 11 box truck
 Buessing_NAG_D2
-Buessing NAG D2
+Büssing NAG D2 bus
 BZT_Culemeyer_st
-Culemeyer Packagetrailer
+Culemeyer package trailer
 BZT_Culemeyer2
-Culemeyer Bulkgood trailer
+Culemeyer bulk trailer
 BZT_Kaelble-1931
 Kaelble Tractor unit
 BZT_LKW_Milch
-Milchlaster
+Tanker truck
 BZT_LKW_Milch_Trailer
-Trailer for Milch
+tanker trailer
 BZT_LKW_Milch-alt
-Milchlaster early
+Old tanker truck
 BZT_Traktor-gruen
 Traktor
+BZT-Betonlaster
+Cement truck
 CoilsLaster
 Steeltruck
 CoilsLaster_Bretter
@@ -2977,13 +3023,13 @@ Freezegoodtruck(early)
 DAF_95XF_Holztransport
 DAF 95XF Timbertransporter
 DAF_95XF_ISO_Container
-DAF 95XF for Piece-goodcontainer
+DAF 95XF box truck
 DAF_95XF_Silotransport
 DAF 95XF Silofahrzeug
 DAF_95XF_Stahltransport
 DAF 95XF Steel
 DAF_95XF_Viehtransport
-DAF 95XF Cattletransporter
+DAF 95XF cattle truck
 DAF_95XF_Zugmaschiene
 DAF 95XF Traction-engine
 Daimler_DC_3c_Getreide
@@ -2991,7 +3037,7 @@ Daimler DC 3c for Grain
 Daimler_DC_3c_Schuettgut
 Daimler DC 3c Bulktruck
 Daimler_DC_3c_Vieh
-Daimler DC 3c Cattletruck
+Daimler DC 3c cattle truck
 DaimlerBenz_L6600_Mineraloel
 Daimler-Benz L6600 Oiltruck
 DaimlerBenz_L6600_Schuettgut
@@ -3000,14 +3046,12 @@ DaimlerBenz_L6600_Stueckgut
 Daimler-Benz L6600 Packagetruck
 DaimlerBenz_LP1213_Post
 Daimler-Benz LP1213 (Mail)
-DaimlerBenz_LP1620_Betonteiletransporter
-Daimler-Benz LP1620 Concreteparts transporter
 DaimlerBenz_LP1620_fl_Lebensmittel
-Daimler-Benz LP1620 Foodtanker
+Mercedes-Benz LP 1620 tanker
 DaimlerBenz_LP1620_Kuehlwaren
 Daimler-Benz LP1620 Chilled-goodstransporter
 DaimlerBenz_LP1620_Pritsche
-Daimler-Benz LP1620 Piece-goodlaster (Pritsche)
+Daimler-Benz LP1620 box truck
 DaimlerBenz_LP1620_Schuettgut
 Daimler-Benz LP1620 Bulkgoodlaster
 DaimlerBenz_LP1620_Stahltransporter_1
@@ -3015,9 +3059,9 @@ Daimler-Benz LP1620 Steel
 DaimlerBenz_LP1620_Stahltransporter_2
 Daimler-Benz LP1620 Steel
 DaimlerBenz_LP1620_Stueckgut
-Daimler-Benz LP1620 Piece-goodlaster
+Daimler-Benz LP1620 box truck
 DaimlerBenz_LP1620_Vieh
-Daimler-Benz LP1620 Cattletransporter
+Daimler-Benz LP1620 cattle truck
 DaimlerBenz_LP322_Kuehlwaren
 Daimler-Benz LP322 Chilled-goodstransporter
 DaimlerBenz_LP322_Landwirtschaft
@@ -3025,7 +3069,7 @@ Daimler-Benz LP322 agri. Goods
 DaimlerBenz_LP322_Post
 Daimler-Benz LP322 (Mail)
 DaimlerBenz_LP322_Stueckgut
-Daimler-Benz LP322 Piece-goodlaster
+Daimler-Benz LP322 box truck
 DaimlerBenz_LP333_Kuehlwaren
 Daimler-Benz LP333 Chilled-goodstransporter
 DaimlerBenz_LP333_Mineraloel
@@ -3033,9 +3077,9 @@ Daimler-Benz LP333 Oiltransporter
 DaimlerBenz_LP333_Schuettgut
 Daimler-Benz LP333 Bulkgoodlaster
 DaimlerBenz_LP333_Stueckgut
-Daimler-Benz LP333 Piece-goodlaster
+Daimler-Benz LP333 box truck
 DaimlerBenz_LP333_Vieh
-Daimler-Benz LP333 Cattletransporter
+Daimler-Benz LP333 cattle truck
 DaimlerBenz_LP334_Kuehlwaren
 Daimler-Benz LP334 Chilled-goodstransporter
 DaimlerBenz_LP334_Mineraloel
@@ -3043,15 +3087,15 @@ Daimler-Benz LP334 Oillaster
 DaimlerBenz_LP334_Schuettgut
 Daimler-Benz LP334 Bulkgoodlaster
 DaimlerBenz_LP334_Stueckgut
-Daimler-Benz LP334 Piece-goodlaster
+Daimler-Benz LP334 box truck
 DaimlerBenz_LP334_Vieh
-Daimler-Benz LP334 Cattletransporter
+Daimler-Benz LP334 cattle truck
 DaimlerBenz_LP810_Landwirtschaft
 Daimler-Benz L810 agri. Goods
 DaimlerBenz_LP810_Schuettgut
 Daimler-Benz L810 Bulkgoodlaster
 DaimlerBenz_LP810_Stueckgut
-Daimler-Benz L810 Piece-goodlaster
+Daimler-Benz L810 box truck
 DaimlerBenz_LPS1620_Sattelzugmaschine
 Daimler-Benz LPS1620 Traction-engine
 DaimlerBenz_LPS2220_Sattelzugmaschine
@@ -3067,17 +3111,15 @@ Trailer for Getreide
 Henschel_HS160_Typ_448
 Henschel HS 160 Typ 448
 Henschel_HS16TL_Lebensmittel_Tankwagen
-Henschel HS 16TL Foodtanker
+Henschel HS 16 TL tanker
 Henschel_HS16TL_Post
 Henschel HS 16TL (Mail)
 Henschel_HS16TL_Tankwagen
 Henschel HS 16TL Oillaster
-Henschel_HS22TL_Betonteiletransporter
-Henschel HS 22TL Concreteparts trasnporter
 Henschel_HS22TL_Kuehlwaren
 Henschel HS 22TL Chilled-goodstransporter
 Henschel_HS22TL_Pritsche
-Henschel HS 22TL Piece-good (Platform)
+Henschel HS 22TL box truck
 Henschel_HS22TL_Silo
 Henschel HS 22TL Silotruck
 Henschel_HS22TL_Stahltransporter_1
@@ -3085,7 +3127,7 @@ Henschel HS 22TL Steel (Scrolls)
 Henschel_HS22TL_Stahltransporter_2
 Henschel HS 22TL Steel (Beams)
 Henschel_HS22TL_Stueckgut
-Henschel HS 22TL Piece-goodlaster
+Henschel HS 22TL box truck
 Henschel_HS22TL_Tankwagen
 Henschel HS 22TL Oiltruck
 IFA_H3B
@@ -3097,7 +3139,7 @@ Ikarus 620
 Ikarus_630
 Ikarus 630
 IVECO_Stralis_ISO_Container
-Iveco Stralis for Piece-goodcontainer
+Iveco Stralis box truck
 IVECO_Stralis_Mineraloeltransport
 Iveco Stralis Oiltransporter
 IVECO_Stralis_Post
@@ -3107,39 +3149,43 @@ Iveco Stralis Silotruck
 IVECO_Stralis_Stahltransport
 Iveco Stralis Steel
 IVECO_Stralis_Viehtransport
-Iveco Stralis Cattletransporter
+Iveco Stralis cattle truck
 Iveco_Stralis_Zugmaschiene
 Iveco Stralis Tractor-unit
 Kuehllaster
-Refrigeratedtruck
+Refrigerated truck
 Kutsche
 Carriage
 Kutsche_Kuehlwagen
-Cooling-Waggon (for Horsecarte)
+Refrigerated wagon
 Kutsche_Milchwagen
 Milk trailer (for Carriages)
 Kutsche_Planwagen
-Piece-good-Planwagen (for Horsecarte)
+Covered wagon
 Kutsche_Postwagen
 Mail-Carriage
 Kutsche_Stueckgutwagen_offen
-Open Cargowaggon (for Horsecarte)
+Open wagon
 Kutsche_Tankwagen
-Tankwagen (for Horsecarte)
+Tank wagon
 Kutschen_Holz
-Timberwagen (for Horsecarte)
+Timber wagon
 Kutschen_Landwirtschaft
-Agric. Waggon (for Horsecarte)
+Farm wagon
 Kutschen_Schuettgut
-Hopper Waggon (for Horsecarte)
+Hopper wagon
 Lemurias Hochzeitskutsche
 Wedding-Carriage
 LKW_Buchtrailer
 Trailer for Books
 LKW_Buessing
-Buessing Laster (Piece-good)
+Büssing box truck
 LKW_Kieskipper
 Kieskipper
+LO3000_Bus
+Robur LO 3000
+LO3000_Post
+Robur LO 3000
 Magirus_Jupiter200D_Zugmaschine
 Magirus-Tractor unit Jupiter 200D
 Magirus_Saturn150D_Holztransporter
@@ -3147,7 +3193,7 @@ Magirus Saturn Timbertransporter 150D
 Magirus_Saturn150D_Stahltransporter
 Magirus Steelr Typ Saturn 150D
 Magirus_Saturn150D_Tiertransporter
-Magirus Cattletransporter Typ Saturn 150D
+ Magirus-Deutz Saturn 150 cattle truck
 MagirusIveco_T_Holz
 Magirus-Iveco Timbertransporter Typ T
 MagirusIveco_T_Mineraloeltransport
@@ -3161,45 +3207,43 @@ Magirus-Tractor unit Typ T
 MAN_13280_F_Post
 MAN 13280 F (Mail)
 MAN_13280_F_Stueckgut
-MAN 13280 F Piece-goodlaster
-MAN_16320_F_Betonteiletransporter
-MAN 16320 F Betonteiletransporter
+MAN 13280 F box truck
 MAN_16320_F_Kuehlwaren
 MAN 16320 F Chilled-goodstransporter
 MAN_16320_F_Pritsche
-MAN 16320 F Piece-good (Pritsche)
+MAN 16320 F box truck
 MAN_16320_F_Stahltransporter_1
 MAN 16320 F Steelr
 MAN_16320_F_Stahltransporter_2
 MAN 16320 F Steelr
 MAN_16320_F_Stueckgut
-MAN 16320 F Piece-goodlaster
+MAN 16320 F box truck
 MAN_19230_DF_Landwirtschaft
 MAN 19230 DF agri. Goods
 MAN_19230_DF_Schuettgut
 MAN 19230 DF Bulkgoodlaster
 MAN_19230_DF_Stueckgut
-MAN 19230 DF Piece-goodlaster
+MAN 19230 DF box truck
 MAN_19230_DF_Viehtransporter
-MAN 19230 DF Cattletransporter
+MAN 19230 DF cattle truck
 MAN_F90_ISO_Container
-MAN F90 for Piece-goodcontainer
+MAN F90 box truck
 MAN_F90_Landwirtschaft
 MAN F90 agri. Goods
 MAN_F90_Silotransport
 MAN F90 Silotransporter
 MAN_F90_Tiertransport
-MAN Cattletransporter Typ F90
+MAN F90 cattle truck 
 MAN_F90_Zementtransporter
 MAN F90 Cementtransporter
 MAN_F90_Zugmaschiene
 MAN F90 Tractor unit
 MAN_KVB-6_fl_Lebensmittel
-MAN KVB-6 for liquid-food
+MAN KVB/6 tanker
 MAN_KVB-6_Getreide
 MAN KVB-6 for agric. goods
 MAN_KVB-6_Kuehlwaren
-MAN KVB-6 Coolingtrailer
+MAN KVB-6 refrigerated trailer
 MAN_KVB-6_Oel
 MAN KVB-6 Mineralöltransporter
 MAN_KVB-6_Schuettgut
@@ -3207,7 +3251,7 @@ MAN KVB-6 bulkwarelaster
 MAN_KVB-6_Stueckgut
 MAN KVB-6 Stückguttransporter
 MAN_KVB-6Anhaenger_fl_Lebensmittel
-MAN KVB-6 trailer for liquid-food
+MAN KVB/6 tanker trailer
 MAN_KVB-6Anhaenger_Getreide
 MAN KVB-6 trailer for agric. goods
 MAN_KVB-6Anhaenger_Kuehlwaren
@@ -3225,11 +3269,11 @@ MAN LionsCity DD
 MAN_M90_Kuehltransport
 MAN M90 Chilled-goodstransporter
 MAN_M90_Michtransport
-MAN M90 Foodtanker
+MAN M90 tanker
 MAN_M90_Post
 MAN M90 (Mail)
 MAN_M90_Stueckgut
-MAN M 90 Piece-goodlaster
+MAN M 90 box truck
 MAN_NL_313
 MAN NL 313
 MAN_NL_323_Kunterbunt
@@ -3255,11 +3299,11 @@ MAN TGA Timbertransporter
 MAN_TGA_Mineraloeltransport
 MAN TGA Oiltransporter
 MAN_TGA_Tautliner
-MAN TGA Piece-goodlaster
+MAN TGA box truck
 MAN_TGA_Zugmaschiene
 MAN TGA Tractor unit
 MB_ActrosMP3_fl_Lebensmittel
-Mercedes-Benz Actros MP3 Foodtanker
+Mercedes-Benz Actros MP3 tanker
 MB_ActrosMP3_Holztransporter
 Mercedes-Benz Actros MP3 Timbertransporter
 MB_ActrosMP3_Kuehlwaren
@@ -3267,7 +3311,7 @@ Mercedes-Benz Actros MP3 Chilled-goodstransporter
 MB_ActrosMP3_Silo
 Mercedes-Benz Actros MP3 Silofahrzeug
 MB_ActrosMP3_Stueckgut
-Mercedes-Benz Actros MP3 Piece-goodlaster
+Mercedes-Benz Actros MP3 box truck
 MB_Citaro_2Tueren_1gen
 Mercedes-Benz 1gen 2-door
 MB_Citaro_3Tueren_1gen
@@ -3289,11 +3333,11 @@ Mercedes-Benz L6600 Silotrailer
 MB_LP1620_Holztransporter
 Daimler-Benz LP1620 Timbertransporter
 MB_N56_Anhaenger_fluessigeLebensmittel
-Mercedes-Benz N56 trailer for liquid-food
+Mercedes-Benz N56 tanker trailer
 MB_N56_Anhaenger_Getreide
 Mercedes-Benz N56 trailer for agric. goods
 MB_N56_Anhaenger_Kuehlwaren
-Mercedes-Benz N56  Coolingtrailer
+Mercedes-Benz N56  refrigerated trailer
 MB_N56_Anhaenger_Schuettgut
 Mercedes-Benz N56 bulkwaretrailer
 MB_N56_Anhaenger_Stahl
@@ -3303,13 +3347,13 @@ Mercedes-Benz N56 Packagetrailer
 MB_N56_Anhaenger_Tank
 Mercedes-Benz N56 Tanktrailer
 MB_N56_Anhaenger_Vieh
-Mercedes-Benz N56 Cattletrailer
+Mercedes-Benz N56 cattle trailer
 MB_N56_fluessigeLebensmittel
-Mercedes-Benz N56 for liquid-food
+Mercedes-Benz N56 tanker
 MB_N56_Getreide
 Mercedes-Benz N56 for agric. goods
 MB_N56_Kuehlwaren
-Mercedes-Benz N56 Coolingtrailer
+Mercedes-Benz N56 refrigerated trailer
 MB_N56_Schuettgut
 Mercedes-Benz N56 bulkware
 MB_N56_Stahl
@@ -3319,7 +3363,7 @@ Mercedes-Benz N56 Packagetransporter
 MB_N56_Tank
 MB N56 Tanktruck
 MB_N56_Vieh
-Mercedes-Benz N56 Cattletransportr
+Mercedes-Benz N56 cattle truck
 MB_O10000_Post
 Mercedes-Benz Mailtruck
 MB_O10000_Reisebus_Postbus
@@ -3337,7 +3381,7 @@ Mercedes-Benz Actros MP3 Chilled-goodstransporter
 MercedesBenz_Actros_MP3_Landwirtschaft
 Mercedes-Benz Actros MP3 Agric. Goods
 MercedesBenz_Actros_MP3_Tautliner
-Mercedes-Benz Actros MP3 Piece-goodlaster
+Mercedes-Benz Actros MP3 box truck
 MercedesBenz_Actros_MP3_Zugmaschiene
 Mercedes-Benz Actros MP3 Tractor unit
 MercedesBenz_Atego_Kuehltransport
@@ -3345,11 +3389,11 @@ Mercedes-Benz Atego Chilled-goodstransporter
 MercedesBenz_Atego_Landwirtschaft
 Mercedes-Benz AtegoAgric. Goods
 MercedesBenz_Atego_Milchtransport
-Mercedes-Benz Atego Foodtanker
+Mercedes-Benz Atego tanker
 MercedesBenz_Atego_Post
 Mercedes-Benz Atego (Mail)
 MercedesBenz_Atego_Tautliner
-Mercedes-Benz Atego Piece-goodlaster
+Mercedes-Benz Atego box truck
 MercedesBenz_Citaro
 Mercedes-Benz Citaro
 MercedesBenz_L2200_Schuettgut
@@ -3367,7 +3411,7 @@ Mercedes-Benz O 405
 MercedesBenz_SK_Holztransport
 Mercedes-Benz SK Timbertransporter
 MercedesBenz_SK_ISO_Container
-Mercedes-Benz SK for Piece-goodcontainer
+Mercedes-Benz SK for box truck
 MercedesBenz_SK_Landwirtschaft
 Mercedes-Benz SK Agric. Goods
 MercedesBenz_SK_Mineraloeltransport
@@ -3385,11 +3429,11 @@ Mercedes-Benz Sprinter Mail
 MuellAbfuhr-alt
 Wastetruck
 Pferdegespann
-Horsecart for Carriage
+Horses
 Phaenomen_4RL-K_Holz
 Phaenomen 4RL Timbertruck
 Phaenomen_4RL-K_Kuehlwaren
-Phänomen 4RL-K Coolingtruck
+Phänomen 4RL-K refrigerated trailer
 Phaenomen_4RL-K_Post
 Phänomen 4RL-K Mail
 Postkutsche
@@ -3419,17 +3463,17 @@ Solaris Urbino 18 Tail
 Steyrbus
 Bahnbus 1935
 StueckgutLaster
-Piece-goodlaster (early)
+Package truck
 Traditioneller_Viehtrieb_hinten
 Cattle drive (tail)
 Traditioneller_Viehtrieb_vorne
-Cattle drive(head)
+Cattle drive
 Unimog_401
 Unimog 401
 Unimog_406
 Unimog 406
 Vomag8LR_Anhaenger_fl_Lebensmittel
-Vomag 8LR trailer for liquid-food
+Vomag 8 LR tanker trailer
 Vomag8LR_Anhaenger_Holz
 Vomag 8LR Holztrailer
 Vomag8LR_Anhaenger_Oel
@@ -3441,7 +3485,7 @@ Vomag 8LR Packagetrailer
 Vomag8LR_Anhaenger_Vieh
 Vomag 8LR Viehtrailer
 Vomag8LR_fl_Lebensmittel
-Vomag 8LR for liquid-food
+Vomag 8 LR tanker
 Vomag8LR_Holz
 Vomag 8LR Woodr
 Vomag8LR_Oel
@@ -3451,23 +3495,25 @@ Vomag 8LR Steeltransporter
 Vomag8LR_Stueckgut
 Vomag 8LR Packagetruck
 Vomag8LR_Vieh
-Vomag 8LR Cattletransportr
+Vomag 8LR cattle truck
 Zugpferde_1
-Carthorse
+Draft horse
 Zugpferde_2
 Dualhorse Buggy
 Zugpferde_4
 Quarterhorse Buggy
 #________________________________vehicle - track________________________________
 #________________________________vehicle - track________________________________
+Aachener Rail Shuttle
+Aachen Rail Shuttle concept
 AdlerSchuettgutwagen
 Bulkwaggon for Adler
 AdlerTender
 Tender for Adler
 Akkutriebwagen AT1
-Accuboxcar AT 1
+Prussian railcar AT 1
 Akkutriebwagen ETA150
-Battery-Railcar ETA 150
+DB ETA 150 motor
 Alstom_H3_Akku
 Alstom H3 Akkumulator
 Alstom_H3_Diesel
@@ -3475,13 +3521,13 @@ Alstom H3 Diesel
 Autos_alt
 Old flat car transporter
 Autotransporter_Hcceerrs330A
-Cartrailer Hcceerrs 330 A
+Autorack Hcceerrs 330 A
 Autotransporter_Hcceerrs330B
-Cartrailer Hcceerrs 330 B
+Autorack Hcceerrs 330 B
 Autotransporter_Hcceerrs330C
-Cartrailer Hcceerrs 330 C
+Autorack Hcceerrs 330 C
 Autotransporter_Hcceerrs330D
-Cartrailer Hcceerrs 330 D
+Autorack Hcceerrs 330 D
 B100_KWStE_IIKlasse
 Württemberg 2nd class B100
 Badische_IVh
@@ -3489,23 +3535,25 @@ Baden IVh
 Bahndienstwagen_262
 Utility tank type 262
 Bahnpostwagen_mr-a26
-Mailwaggon mr-a26
+express mail coach Post mr-a/26
+Bahnpostwagen_mr-a26_140
+mail coach Post mr-a/26
 Bahnpostwagen_mr-a26_rot
-Mailwaggon mr-a26 200 km/h
+express mail coach Post mr-a/26 200 km/h
 Bahnpostwagen_r-a24-2
-Mailwaggon R-A24-2
+mail coach Post r-a/24
 Bananenwagen
-2-axle crops van
+banana fruit van
 Bassinwagen_1885
-Bassin tank
+Bassin oil tanker car
 Baureihe_IK_Ende
-Model IK - End
+U-Bahn IK rear
 Baureihe_IK_Front
-Model IK - Head
+U-Bahn IK front
 Baureihe_IK_Mitte1
-Model IK - Middelwagon 1
+U-Bahn IK 2nd
 Baureihe_IK_Mitte2
-Model IK - Middlewagon 2
+U-Bahn IK 3rd
 Bayrische_A1
 Bavarian A I
 Bayrische_A1_Tender
@@ -3542,18 +3590,22 @@ Behaelter-Tragwagen_Lbms589_Siloware
 Lbms 589 multi-silo powder
 Behaelter-Tragwagen_Lbms589_Stueckgut
 Lbms 589 multi-container
+Behelfsgepaeckwagen_MPw4yge-50
+auxiliary brake van MPw4yge-50
+Behelfspersonenwagen_MCi-43
+auxiliary 3rd class MCi-43
 Beiwagen ESA150
-Sidewaggon ESA 150
+ESA 150 trailer
 Beiwagen_Cid-24
 Cid-24 coach trailer
 Betonwagen
 Concrete-waggon
 Blauer_Enzian_Gepaeckwagen
-TEE-Blue Enzian (Luggage)
+TEE "Blue Gentian" luggage
 Blauer_Enzian_Mittelwagen
-TEE-Blue Enzian (Middlew.)
+TEE "Blue Gentian"
 Blauer_Enzian_Steuerwagen
-TEE-Blue Enzian
+TEE "Blue Gentian" observation
 BR01_DRG
 DRG Expresslocomotive BR 01
 BR01Tender
@@ -3567,33 +3619,33 @@ DRG BR 38
 BR44
 Cargolocomotive BR 44
 BR477_Ende
-S-Bahn BR 477 End
+S-Bahn BR 477 rear
 BR477_Kopf
-S-Bahn BR 477 Head
+S-Bahn BR 477 front
 BR477_Waggon1
-S-Bahn BR 477 Waggon
+S-Bahn BR 477 2nd middle
 BR477_Waggon2
-S-Bahn BR 477 Waggon
+S-Bahn BR 477 3rd middle
 BR480_Ende
 S-Bahn BR 480 End
 BR480_Kopf
-S-Bahn BR 480 Head
+S-Bahn BR 480 front
 BR481_Ende
-S-Bahn BR 481 End
+S-Bahn BR 481 rear
 BR481_Kopf
-S-Bahn BR 481 Head
+S-Bahn BR 481 front
 BR481_Waggon1
-S-Bahn BR 481 Waggon
+S-Bahn BR 482 2nd middle
 BR481_Waggon2
-S-Bahn BR 481 Waggon
+S-Bahn BR 482 3rd middle
 BR485_Ende
 S-Bahn BR 485 End
 BR485_Kopf
-S-Bahn BR 485 Head
+S-Bahn DR 270 (DB 485) front
 BR485_rot_Ende
 S-Bahn BR 485 End
 BR485_rot_Kopf
-S-Bahn BR 485 Head
+S-Bahn DR 270 (DB 485) "Colalook" front
 BR485_rot_Waggon1
 S-Bahn BR 485 Waggon
 BR485_rot_Waggon2
@@ -3618,8 +3670,12 @@ BR78-R
 BR 78 return
 BR84
 Cargolocomotive BR 84
+Bvmmsz_187
+Intercity coach Bvmmsz187
+Bvmmz_188
+Intercity coach Bvmmz188
 Bvmz_185
-IC-Waggon Bvmz 185
+Intercity coach Bvmz 185
 BZT_3Achser
 3-axle coach
 BZT_A4ue-35
@@ -3635,17 +3691,17 @@ DRG Fast-train waggon
 BZT_G10-Brh
 2-axle van Kassel brake
 BZT_ICSpeisewagen
-InterCity Dinerwaggon
+Intercity dining
 BZT_ICWagen
-InterCity Waggon
+Intercity coach
 BZT_Leig1a
 Light goods twin front
 BZT_Leig1b
 Light goods twin rear
 BZT_PrAbteilwagen
-Prussian Cabinwaggon BC 4
+Prussian compartment BC4
 BZT_PrAbteilwagen_Brh
-Prussian Cabinwaggon with break
+Prussian compartment BC4 brake-fitted
 BZT_PrPostwagen
 Prussian baggage Pw4-Pr04
 BZT_Pwi
@@ -3680,40 +3736,52 @@ Cargosprinter_MW_Stueckgut
 Cargosprinter Piecegood-Middlew.
 City_Nightline_Schlafwagen
 Sleeper - City Nightline
+Containertragwagen_Sgss-y703
+container flat Sgss-y703
 D-Zug-Wagen_C4ue-26_1.u.2.Kl.
-D-Train Waggon C4UE-26
+Pike coach AB4ü-26 1st/2nd class
 D-Zug-Wagen_C4ue-26_3.Kl.
-Expresstrain-waggon C4UE-26
+Pike coach C4ü-26 3rd class
 Dampftriebwagen Bauart Thomas
 steam railcar Thomas design
+DB_BR_210
+DB 210
+DB_BR_216
+DB 216
+DB_BR_218.0
+DB 218.0
+DB_BR_218.4
+DB 218.4
 DB_BR628
-DB BR 628 Motorwagen
+DB BR 628 motor
 DB_BR928
-DB BR 928 Waggon
+DB BR 928 steering
 DB240
 DB 24
 Doppelstock_DR_Endwagen
-DR-Doubledeck-unit (End)
+DR double-deck rear
 Doppelstock_DR_Mittelwagen
-DR-Doubledeck-unit
+DR double-deck
 Doppelstock_DR_Steuerwagen
-DR-Doubledeck-unit (Wheelcar)
+DR double-deck steering
 Doppelstock_LBE_Front
-Doubledeck-unit LBE Head
+doubledeck unit LBE front
 Doppelstock_LBE_Hinten
-Doubledeck-unit LBE End
+doubledeck unit LBE rear
 Doppelstock_Steuerwagen_rot_Ende
-DB Doppelstock-Wheelcar (End)
+DB double-deck steering rear
 Doppelstock_Steuerwagen_rot_Kopf
-DB Doppelstock-Wheelcar (Head)
+DB double-deck steering front
 Doppelstock_Wagen_rot
-DB Doubledeck-unit
+DB double-deck 751 DB(p)za
 DR_Reisezugwagen_Altenberg
 DR Railroadcar Type Altenberg
 DR_Speisewagen_Bautzen
 DR Dinerwaggon Type Bautzen
 DR_V100
 DR V 100
+DR118
+DR 118
 DR713
 DR 713 motor
 DR714
@@ -3731,7 +3799,9 @@ Bogie Flat waggon Sahmms 711
 Drehgestell-Flachwagen_Rils653_Stahl
 Bogie-flat-wagon Rils653 (Steel)
 Drehgestell-Flachwagen_Rils653_Stueckgut
-Bogie-flat-wagon Rils653 (Piece goods)
+tarpaulin Rils 653
+Durchgangswagen_Ci3_Bay_99
+corridor coach Ci3 Bay 99
 DWA_LVTS-BR672
 Bombardier LVTS-BR 672
 E80_PO
@@ -3739,31 +3809,31 @@ DRG E 80 (Powerconnector up)
 ES_5530
 Hopper Waggon 1900 
 ET165_Ende
-S-Bahn ET 165 End
+S-Bahn ET 165 rear
 ET165_Kopf
-S-Bahn ET 165 Head
+S-Bahn ET 165 front
 ET165_Waggon1
-S-Bahn ET 165 Waggon
+S-Bahn ET 165 2nd middle
 ET165_Waggon2
-S-Bahn ET 165 Waggon
+S-Bahn ET 165 3rd middle
 ET174_Ende
 ET 174 - Wagon
 ET174_Front
 Mail-Boxcar ET-174
 ET403_Ende
-ET 403 - End
+ET 403 rear
 ET403_Front
-ET 403 - Head
+ET 403 front
 ET403_Mittelwagen
-ET 403 - Middlewagon
+ET 404 middle
 ET403_Speisewagen
-ET 403 - Restaurant
+ET 404 dining
 ET420_Ende
-ET 420 Endwaggon
+Munich S-Bahn BR 420 rear
 ET420_Front
-ET 420 (Head)
+Munich S-Bahn BR 420 front
 ET420_Mitte
-ET 420 Middlewaggon
+Munich S-Bahn BR 421 central
 ET91
 ET 91
 ETA177_hinten
@@ -3793,7 +3863,7 @@ FLIRT-Waggon
 G10
 2-axle van Kassel
 G11-Wagen
-Cargowaggon 1953
+Gl11 large load
 G20
 2-axle van Kassel G20
 G3_Tender
@@ -3829,7 +3899,7 @@ closed Bulkwaggon Gbs252 Stock
 Getreidewagen
 Opening roof crops 4-axle
 Gkmu
-Cargowaggon 1950
+Gkmu short van 1950
 Gleiskraftwagen_SKL26
 Railpowercar SKL 26
 Gleiskraftwagen_SKL26_Wagon
@@ -3839,7 +3909,9 @@ GTW Endwaggon
 GTW_Mittelwagen
 GTW-Middlewaggon
 Hechtwagen_AB4ue23a
-Pike coach AB4ü 23a
+Pike coach AB4ü-23a
+Henschel_DHG500C
+Henschel DHG 500 C
 Henschel-Wegmann-Zug_Gepaeckwagen
 Henschel-Wegmann SWRPwMail 4ü
 Henschel-Wegmann-Zug_Mittelwagen
@@ -3861,15 +3933,15 @@ ICE3 - Head
 ICE3_Mitte
 ICE3 - Wagon
 IntegBOB_Ende
-Integral End (BoB)
+Integral S5D95 rear motor
 IntegBOB_Gondel1
-Integral Gondel 1 (BoB)
+Integral S5D95 front coach
 IntegBOB_Gondel2
-Integral Gondel 2 (BoB)
+Integral S5D95 rear coach
 IntegBOB_Kopf
-Integral Head (BoB)
+Integral S5D95 front motor
 IntegBOB_LW
-Integral Waggon (BoB)
+Integral S5D95 central motor
 KabTender
 Cargolocomotive BR 50 cabin tender
 Kesselwagen Zacens
@@ -3905,9 +3977,9 @@ DB Laaijrs-567-End
 Laaijrs567_Front
 DB Laaijrs-567-Head
 Laakklps608_Ende
-Wippenwagen Laakklps-608-End
+intermodal Laakklps 608 rear
 Laakklps608_Front
-Wippenwagen Laakklps-608-Head
+intermodal Laakklps608 front
 Laaps565_Ende
 VTG Laaps565-End
 Laaps565_Front
@@ -3923,7 +3995,7 @@ Longtimber-waggon 1840
 LEG-Wagon_Nr8
 Ludwigsbahn coach #8
 Leichttriebwagen_SVG
-SVG-Railcar
+Sylt railbus
 lgns583_fluessige Lebensmittel
 Containerwaggon for liquid-food
 lgns583_Kuehlwaren
@@ -3931,13 +4003,13 @@ Containerwaggon Cooling-good
 lgns583_Stueckgut
 Containerwaggon Piece-good
 Metropolitan_Mittelwagen
-MET Middlewaggon
+MetropolitaN Intercity coach
 Metropolitan_Steuerwagen
-MET Wheelcar
+MetropolitaN steering
 NE81-DB_BR626_VT
-NE 81/DB VT 626
+NE 81 (DB 626) motor
 NE81-DB_BR926_VB
-NE 81/DB VB 626
+NE 81 (DB 926) steering
 NeuhaldenslebenerEisenbahn_T03
 NEG-T03
 NGT_CARGO_Ende-Stueckgut
@@ -3946,6 +4018,12 @@ NGT_CARGO_Front-Stueckgut
 NGT Cargo front
 NGT_CARGO_Mitte-Stueckgut
 NGT Cargo middle
+NGT_HST_Ende
+NGT rear
+NGT_HST_Front
+NGT front
+NGT_HST_Mitte
+NGT middle
 NGT_Post_Ende
 NGT mail rear
 NGT_Post_Front
@@ -3953,9 +4031,9 @@ NGT mail front
 NGT_Post_Mitte
 NGT mail middle
 Nuernberg-Fuehrter_1._und_2.Klasse
-Ludwigsbahn 1st/2nd class
+1./2. Classwaggon Nürnberg-forth
 Nuernberg-Fuehrter_1.Klasse
-Ludwigsbahn 1st class
+1. Classwaggon Nürnberg-forth
 O-Nuernberg
 Hopper Waggon 1874
 Oelwagen
@@ -3993,7 +4071,7 @@ Prussian P8
 P8Tender
 Prussian P8 tender
 PBL Post
-Post extension
+mail compartment
 Personenwagen CL Bay 11
 Bavarian branch lines CL Bay 11
 pfaelzischer_ABueBay97b
@@ -4001,9 +4079,9 @@ Palatine ABü Bay97b
 pfaelzischer_C4ueBay98
 Palatine express C4ü Bay98
 Postwagen 2ss-t13
-Postwagon 2SS-t13
+mail van 2ss-t/13
 Postwagen 2ss-t15
-Postwagon 2SS-t15
+mail van 2ss-t/15
 Postwaggon Post3-cl12,8
 Postwagon P3-CL 12.8
 Postwaggon Post4-a17
@@ -4021,7 +4099,7 @@ Prussian S1
 preussische_T0
 Prussian T0
 Preussischer_ET531
-Prussian ET 531
+Prussian 531 "Berlin"
 Preussischer_Langholzwagen1900
 Prussian Longtimber-waggon 1900
 preussischer_PW_fuer_T0_Kl.2_3_4
@@ -4033,9 +4111,9 @@ Prussian G8 - tender
 PwgPr14
 Freight baggage brake van PwgPr14
 Rekowagen Baag
-Rekowagon BAAG
+upgraded Baag
 Rekowagen Bghw
-Rekowagon BghW
+upgraded Bghw
 Rheingold_1_1Kl
 Rheingold 1. Class
 Rungenwagen
@@ -4063,7 +4141,7 @@ Palettewagon Hbbills-311
 Schienenbus_Bauart_Henschel
 Railbus VT133-006
 Schienenzeppelin
-Rail-ship
+railway Zeppelin
 Schneepflug_BA_Meiningen_DB
 DB Schneepflug BA Meiningen
 Schneepflug_BA_Meiningen_DR
@@ -4081,9 +4159,9 @@ Rail wagon Taems 890
 Selbstentladewagen Tals 966
 Swing-roof side-lids Tals 966
 Silberlinge_orange
-Localrail-waggon ("Silberlinge") orange
+"Silberlinge" branch lines B4nb-59 orange
 Silberlinge_silbern
-Localrail-waggon B4nb-59 ("Silberlinge")
+"Silberlinge" branch lines B4nb-59
 Spezialwagen_GGkxr_lw.Gueter
 Crops van GGkxr
 Spezialwagen_GGkxr_Stueckgut
@@ -4111,19 +4189,19 @@ Tankwaggoon 4-axis
 Tankwagen_alt
 Tankwaggon 2-axis
 Taschenwagen Sdgmns 743Post
-Baggagewaggon Sdgmns 743 Mail
+semi-trailer carrier Sdgmns 743
 Taschenwagen Sdgmns 743Vieh
 Baggagewaggon Sdgmns 743 Cattle
 TEE_Triebwagen_Ende
-TEE VT 11.5 Railcar-end
+TEE VT 11.5 rear motor
 TEE_Triebwagen_Kopf
-TEE VT 11.5 Railcar-head
+TEE VT 11.5 front motor
 TEE_Waggon
-TEE VT 11.5 Waggon
+TEE VT 11.5 middle
 Teleskophaubenwagen Sahimms-u 900
 Capcar Sahi MMS-u 900
 Tieflader
-Flatbed-Trailer
+Well wagon
 Torpedopfannenwagen_8008
 Torpedopanwaggon 8008
 Triebwagen_ET_184_4
@@ -4133,7 +4211,11 @@ ET 186-11
 Triebwagen_ET89
 ET 89 motor
 TW121a_Baden
-Steamrailcar TW 212a Baden
+Baden 121a
+TwindexxVario_Mittelwagen
+Twindexx Vario middle
+TwindexxVario_Steuerwagen
+Twindexx Vario rear control
 V100
 DB V 100
 V188_DB_Version
@@ -4149,9 +4231,9 @@ V 36
 V80
 V 80
 VB140
-VB 140
+VS 145 control (for VT33.2)
 VB75
-VB 75 Passengerwaggon
+DR 135 (DB VB 140 032-047) coach
 Versuchstriebwagen_Siemens_und_Halske
 Hi-speed railcar Siemens&Halske
 Vicinalbahn-Wagen BCL
@@ -4173,11 +4255,17 @@ VT 10
 VT133
 VT 133
 VT33
-Railcar VT 33
+VT 33.2 motor
 VT75
-VT 75 Motorwaggon
+DR 135 (DB VT 75) motor
 Wannentender
 Tubetender (BR 38, 44, 50)
+x-Wagen_ABx791
+x-series ABx791
+x-Wagen_Bx794
+x-series Bx794
+x-Wagen_Bxf796
+x-series control Bxf796
 YB70_1.Kl._Schnellzugwagen
 Expresstrain-waggon 1. Class
 YB70_2.Kl._Schnellzugwagen
@@ -4362,6 +4450,8 @@ DS_Stadt_Mainz_Schuettgut
 Steamboat Stadt Mainz for bulkware
 DS_Stadt_Mainz_Vieh
 Steamboat Stadt Mainz for Cattletransport
+Faehre KoenigswinterIII
+Königswinter III ferry
 Faehre_KoenigswinterIII_Autos
 Car ferry Königswinter III
 Faehre_KoenigswinterIII_Vieh
@@ -4445,9 +4535,9 @@ Paddleboat Diessen
 Radschlepper_Rheinfahrt_IX
 Paddle boat Rheinfahrt IX
 RVg-Sail_Passanger_Ship_0
-Segelschiff
+Sailing ship
 RVg-Steam_Passanger_Ship_0
-Paddlewheeler
+Paddle steamer
 Sail_Post_Ship_0
 Mail-Sailship
 Schlepper Fairplay V
@@ -4527,31 +4617,47 @@ Powercable
 #__________________________________way - road___________________________________
 #__________________________________way - road___________________________________
 asphalt_road_100
-bitumized Road
+Asphalt road
 Asphalt-Autobahn
-Asphalt-highway
+Autobahn
 Betonierte_Autobahn
-Concrete Highway
+Concrete road
 city_road
-Cityroad
+City street
 city_road50
-City-Road (diagonal)
+City street with diagonals
 cobblestone_road_20
-Cobbled Road 20 km/h
+Slow cobblestone road
 cobblestone_road_40
-Cobbled Road 40 km/h
+Inter. cobblestone road
 cobblestone_road_70
-Cobbled Road 70 km/h
+Fast cobblestone road
 dirt_cityroad
-dirt city road
+Dirt city road
 dirt_road
-dirt road
+Dirt road
 Hochstrasse100
-Highroad 100 km/h
+Elevated road
 Hochstrasse130
-Highroad 130 km/h
+Elevated concrete road
 Hochstrasse50
-Highway 50 km/h
+Elevated city road
+schotterpiste
+Gravel road
+schotterpiste_cityroad
+Gravel city street
+teer_road
+Tar-bound macadam road
+teer_road_city
+Tar-bound macadam city street
+teertraenkmakadam
+Tarmacadam road
+teertraenkmakadam_cityroad
+Tarmacadam city street
+wiesenrand
+Meadow-edged road
+wiesenrand_city
+Meadow-edged city street
 #__________________________________way - track__________________________________
 #__________________________________way - track__________________________________
 Abstellgleis_Gueterzug_90kmh
@@ -4570,6 +4676,8 @@ Gleis_120
 Rail track 120 km/h
 Hecke
 Hedge
+Hochbahn120
+Elevated rail 120 km/h
 Hochbahn160
 Elevated Rail 160 km/h
 Hochbahn210
@@ -4586,10 +4694,12 @@ kleiner Park
 Tiny park
 Schnellfahrgleis_350
 Highspeedrail 350 km/h
+Schnellfahrgleis_450
+High-speed track 450 km/h
 Stadtmauer
-Citywall
+City wall
 Stadtmauer_mit_Eckturm
-Citywall with Tower
+City wall with tower
 Standardgleis
 Railway track (160 km/h)
 Strassenbahnschiene_30
@@ -4601,15 +4711,15 @@ Tramtrack 90 km/h
 #__________________________________way - water__________________________________
 #__________________________________way - water__________________________________
 river_00
-Strom
+River
 river_01
-Großer Fluss
+Wide stream
 river_02
-Fluss
+Stream
 river_03
-Kleiner Fluss (schiffbar)
+Small river (navigable)
 river_04
-Bach
+Brook
 water_road
 Canal
 #_______________________________way-object - road_______________________________

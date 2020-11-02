@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Eisenbahn
-#    Neu: 
+#    Neu:
 #	Letzte Bearbeitung: $Date$ - $Author$:
 ---------------------------------
 obj=vehicle
@@ -12,7 +12,8 @@ intro_month=1
 retire_year=1997
 retire_month=12
 cost=17708000
-runningcost=369
+runningcost=236
+fixed_cost=4215
 waytype=track
 engine_type=electric
 freight=Passagiere
@@ -34,7 +35,6 @@ emptyimage[w]=ET165.0.6
 emptyimage[nw]=ET165.0.7
 emptyimage[ne]=ET165.0.8
 ---------------------------------
-
 obj=vehicle
 name=ET165_Waggon1
 copyright=Lemuria
@@ -43,7 +43,8 @@ intro_month=1
 retire_year=1997
 retire_month=12
 cost=16710000
-runningcost=358
+runningcost=223
+fixed_cost=3881
 waytype=track
 engine_type=electric
 freight=Passagiere
@@ -64,7 +65,6 @@ emptyimage[w]=ET165.1.6
 emptyimage[nw]=ET165.1.7
 emptyimage[ne]=ET165.1.8
 -------------------------------
-
 obj=vehicle
 name=ET165_Waggon2
 copyright=Lemuria
@@ -73,7 +73,8 @@ intro_month=1
 retire_year=1997
 retire_month=12
 cost=16710000
-runningcost=358
+runningcost=223
+fixed_cost=3881
 waytype=track
 engine_type=electric
 freight=Passagiere
@@ -94,7 +95,6 @@ emptyimage[w]=ET165.1.6
 emptyimage[nw]=ET165.1.7
 emptyimage[ne]=ET165.1.8
 ---------------------------------
-
 obj=vehicle
 name=ET165_Ende
 copyright=Lemuria
@@ -103,7 +103,8 @@ intro_month=1
 retire_year=1997
 retire_month=12
 cost=17948000
-runningcost=374
+runningcost=239
+fixed_cost=4265
 waytype=track
 engine_type=electric
 freight=Passagiere

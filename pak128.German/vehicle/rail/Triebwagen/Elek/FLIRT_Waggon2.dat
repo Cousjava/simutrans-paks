@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 09-2010
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=FLIRT_Waggon2
@@ -10,7 +9,8 @@ copyright=Lemuria
 intro_year=1991
 intro_month=8
 cost=15890000
-runningcost=175
+runningcost=111
+fixed_cost=3603
 waytype=track
 engine_type=electric
 freight=Passagiere

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu:
-#	Letzte Bearbeitung: $Date - $Author$
 ---------------------------------
 obj=vehicle
 name=Anhaenger_18t_Silotransport
@@ -10,14 +9,16 @@ copyright=RedRabbit
 intro_year=1986
 intro_month=1
 cost=2462000
-runningcost=53
+runningcost=32
+fixed_cost=571
 waytype=road
 speed=80
 weight=6.2
 freight=Zement_lose
 payload=10
 length=7
-constraint[next][0]=none
+Constraint[Prev][0]=any
+Constraint[next][0]=none
 EmptyImage[S]=RR_Anhaenger_18t_Silo.0.1
 EmptyImage[N]=RR_Anhaenger_18t_Silo.0.2
 EmptyImage[E]=RR_Anhaenger_18t_Silo.0.3

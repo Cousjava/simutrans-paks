@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 20-11-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=gedeckter_Gueterwagen_GGhs_Bromberg_lwGueter
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1971
 retire_month=12
 cost=6535000
-runningcost=122
+runningcost=82
+fixed_cost=1800
 waytype=track
 freight=Gerste
 payload=35
@@ -36,7 +36,8 @@ intro_month=1
 retire_year=1971
 retire_month=12
 cost=9235000
-runningcost=167
+runningcost=109
+fixed_cost=2362
 waytype=track
 freight=Plastik
 payload=30

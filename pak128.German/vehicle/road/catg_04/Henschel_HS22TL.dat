@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Henschel_HS22TL_Kuehlwaren
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1967
 retire_month=12
 cost=5345000
-runningcost=89
+runningcost=62
+fixed_cost=1216
 waytype=road
 freight=Fleisch
 engine_type=diesel

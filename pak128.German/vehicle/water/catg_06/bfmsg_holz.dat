@@ -9,7 +9,8 @@ retire_year=2011
 retire_month=12
 waytype=water
 cost=5323500
-runningcost=545
+runningcost=328
+fixed_cost=1135
 freight=Holz
 payload=180
 engine_type=diesel
@@ -50,4 +51,3 @@ freightimage[1][SW]=bfmsg_holz.2.8,-6,-12
 freightimage[1][SE]=bfmsg_holz.2.6,-5,-35
 freightimage[1][NW]=bfmsg_holz.2.2,-19,0
 freightimage[1][NE]=bfmsg_holz.2.4,-45,-8
-#_EO_

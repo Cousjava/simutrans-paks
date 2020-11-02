@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 19-05-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Postwaggon PwPost4ue-28
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1975
 retire_month=12
 cost=14840000
-runningcost=246
+runningcost=170
+fixed_cost=4264
 waytype=track
 length=12
 freight=Post

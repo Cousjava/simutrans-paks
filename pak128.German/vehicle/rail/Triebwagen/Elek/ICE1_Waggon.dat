@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 08-2010
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=ICE1_Waggon
@@ -10,7 +9,8 @@ copyright=Lemuria
 intro_year=1991
 intro_month=6
 cost=25040000
-runningcost=196
+runningcost=133
+fixed_cost=6019
 waytype=track
 engine_type=electric
 freight=Passagiere

@@ -1,8 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=MAN_LionsCity_DD
@@ -10,7 +9,8 @@ copyright=RedRabbit
 intro_year=2005
 intro_month=1
 cost=12547720
-runningcost=368
+runningcost=223
+fixed_cost=2414
 waytype=road
 freight=Passagiere
 payload=145

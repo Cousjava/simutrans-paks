@@ -9,6 +9,7 @@ intro_year=2002
 intro_month=8
 cost=11800000
 RunningCost=47
+fixed_cost=1189
 waytype=track
 engine_type=diesel
 power=1100

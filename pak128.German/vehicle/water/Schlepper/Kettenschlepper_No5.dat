@@ -1,18 +1,17 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Schiffe
-#    Neu:
-#	Letzte Bearbeitung:    11-08-2017 Makie
 ---------------------------------
 obj=vehicle
 name=Main-Kettenschlepper_K.B.K.S._No._V
 copyright=Pumuckl999
 intro_year=1866
 intro_month=1
-retire_year=1919
+retire_year=1931
 retire_month=12
 cost=104500
 runningcost=3
+fixed_cost=102
 waytype=water
 engine_type=steam
 smoke=Steam_ship
@@ -47,7 +46,8 @@ constraint[next][20]=Schute_No.9_Schuettgut
 constraint[next][21]=Schute_No.9_Stahl
 constraint[next][22]=Schute_No.9_Vieh
 constraint[next][23]=Schute_No.9_Siloware
-constraint[next][24]=none
+constraint[next][24]=Tankschleppkahn_Wilde_Hilde
+constraint[next][25]=none
 EmptyImage[W]=Kettenschlepper_No5.0.1,-44,-4
 EmptyImage[NW]=Kettenschlepper_No5.0.2,-16,4
 EmptyImage[N]=Kettenschlepper_No5.0.3,-24,0

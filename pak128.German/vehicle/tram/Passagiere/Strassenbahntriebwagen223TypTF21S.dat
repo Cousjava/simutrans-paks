@@ -1,0 +1,42 @@
+---------------------------------
+#	PAK128.german
+#	Vehicle
+#	neu: 06.07.2020
+---------------------------------
+obj=vehicle
+name=Strassenbahntriebwagen223_Typ_TF21S
+copyright=pumuckl999
+intro_year=1916
+intro_month=1
+retire_year=1967
+retire_month=12
+waytype=tram_track
+cost=2515000
+runningcost=94
+fixed_cost=548
+freight=Passagiere
+payload=61
+engine_type=electric
+power=37
+gear=105
+speed=25
+weight=13.5
+length=9
+#sound=
+#smoke=
+constraint[prev][0]=Strassenbahntriebwagen223_Typ_TF21S
+constraint[prev][1]=Strassenbahnbeiwagen140_Typ_Neu-Berolina
+constraint[prev][2]=Beiwagen T24
+constraint[prev][3]=none
+constraint[next][0]=Strassenbahntriebwagen223_Typ_TF21S
+constraint[next][1]=Strassenbahnbeiwagen140_Typ_Neu-Berolina
+constraint[next][2]=Beiwagen T24
+constraint[next][3]=none
+EmptyImage[S]=Strassenbahntriebwagen223TypTF21S.0.6
+EmptyImage[N]=Strassenbahntriebwagen223TypTF21S.0.2
+EmptyImage[E]=Strassenbahntriebwagen223TypTF21S.0.4
+EmptyImage[W]=Strassenbahntriebwagen223TypTF21S.0.0
+EmptyImage[SW]=Strassenbahntriebwagen223TypTF21S.0.7
+EmptyImage[SE]=Strassenbahntriebwagen223TypTF21S.0.5
+EmptyImage[NW]=Strassenbahntriebwagen223TypTF21S.0.1
+EmptyImage[NE]=Strassenbahntriebwagen223TypTF21S.0.3

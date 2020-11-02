@@ -12,6 +12,7 @@ retire_year=1954
 retire_month=12
 cost=327200
 runningcost=16
+fixed_cost=x
 waytype=road
 speed=24
 power=33

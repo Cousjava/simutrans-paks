@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Strasse
 #    Neu: 30-01-2018
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=MAN_KVB-6Anhaenger_Siloware
@@ -13,6 +12,7 @@ retire_year=1950
 retire_month=12
 cost=470000
 runningcost=27
+fixed_cost=x
 waytype=road
 speed=30
 weight=2

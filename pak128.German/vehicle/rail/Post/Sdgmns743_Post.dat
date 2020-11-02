@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 09-06-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Taschenwagen Sdgmns 743Post
@@ -10,7 +9,8 @@ copyright=pumuckl999
 intro_year=1990
 intro_month=1
 cost=37840000
-runningcost=630
+runningcost=381
+fixed_cost=7966
 waytype=track
 freight=Post
 payload=250

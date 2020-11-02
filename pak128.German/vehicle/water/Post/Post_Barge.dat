@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Schiffe
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Post_Barge
@@ -12,7 +11,8 @@ intro_month=12
 retire_year=1972
 retire_month=4
 cost=11220000
-runningcost=569
+runningcost=349
+fixed_cost=2551
 waytype=water
 engine_type=diesel
 freight=Post

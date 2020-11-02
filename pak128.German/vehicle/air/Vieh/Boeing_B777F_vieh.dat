@@ -2,23 +2,23 @@
 #	PAK128.german
 #	Vehicle: Air
 #	Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Boeing_B777F_Viehtransporter
 copyright=Pumuckl999
-intro_year=2005
+intro_year=2008
 intro_month=1
 waytype=air
 cost=645120000
-runningcost=949
+runningcost=611
+fixed_cost=73482
 freight=Vieh
 payload=120
 engine_type=diesel
-power=32000
-gear=150
+power=197200
+gear=100
 speed=896
-weight=144
+weight=244
 length=6
 sound=5
 EmptyImage[W]=Boeing_B777F.0.1

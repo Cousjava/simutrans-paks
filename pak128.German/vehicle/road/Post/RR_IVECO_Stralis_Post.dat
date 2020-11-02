@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=IVECO_Stralis_Post
@@ -9,7 +9,8 @@ copyright=RedRabbit
 intro_year=2003
 intro_month=1
 cost=26627000
-runningcost=510
+runningcost=310
+fixed_cost=5270
 waytype=road
 speed=80
 power=316
@@ -19,9 +20,6 @@ payload=200
 length=8
 smoke=smoke_diesel
 constraint[prev][0]=none
-constraint[next][0]=Anhaenger_18t_Post
-constraint[next][1]=Anhaenger_12t_Post
-constraint[next][2]=none
 EmptyImage[S]=RR_IVECO_Stralis_Post.0.1
 EmptyImage[N]=RR_IVECO_Stralis_Post.0.2
 EmptyImage[E]=RR_IVECO_Stralis_Post.0.3

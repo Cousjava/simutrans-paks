@@ -1,30 +1,30 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
-#	Letzte Bearbeitung: $Date$ - $Author$
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=MAN_16320_F_Kuehlwaren
+# MAN F 7 16.320 U von 11/73-05/77 Modellreihe geht bis 08/88
 copyright=RedRabbit
 intro_year=1967
 intro_month=1
 retire_year=1986
 retire_month=12
-cost=6917500
-runningcost=91
+cost=4843000
+runningcost=55
+fixed_cost=1080
 waytype=road
 freight=Fleisch
 engine_type=diesel
-power=320
-speed=100
-weight=11.75
+power=235
+speed=80
+# 320PS, Nutzlast 8t, Gesamtgewicht 16t Anhänger 22t Lastzug 38t
+weight=8.3
 payload=12
 length=8
 sound=1
 constraint[prev][0]=none
-constraint[next][0]=anhaenger_1965_16t_Kuehlwaren
-constraint[next][1]=none
 EmptyImage[W]=MAN_16320_F.1.1
 EmptyImage[NW]=MAN_16320_F.1.2
 EmptyImage[N]=MAN_16320_F.1.3
@@ -34,4 +34,3 @@ EmptyImage[SE]=MAN_16320_F.1.6
 EmptyImage[S]=MAN_16320_F.1.7
 EmptyImage[SW]=MAN_16320_F.1.8
 ---------------------------------------
-

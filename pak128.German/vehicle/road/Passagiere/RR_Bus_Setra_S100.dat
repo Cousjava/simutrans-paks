@@ -1,7 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Strasse
-#    Neu: 
+#    Neu:
 ---------------------------------
 obj=vehicle
 name=Setra_S100
@@ -11,11 +11,12 @@ intro_month=1
 retire_year=1976
 retire_month=12
 cost=6938000
-runningcost=120
+runningcost=78
+fixed_cost=1559
 waytype=road
 freight=Passagiere
 payload=43
-engine_type=diesel 
+engine_type=diesel
 speed=90
 weight=8
 power=117

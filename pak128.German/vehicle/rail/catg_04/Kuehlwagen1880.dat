@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 04-09-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=Kuehlwagen1880
@@ -12,7 +11,8 @@ intro_month=1
 retire_year=1915
 retire_month=12
 cost=1530000
-runningcost=53
+runningcost=39
+fixed_cost=676
 waytype=track
 freight=Fleisch
 payload=8
