@@ -220,17 +220,18 @@ zip: $(DESTFILE).zip
 
 $(DESTFILE).tbz2: $(PAKDIR)
 	@echo "===> TAR $@"
-	@tar cjf $@ $(DESTDIR)
+	@tar cjf $@ $(PAKDIR)
 
 $(DESTFILE).zip: $(PAKDIR)
 	@echo "===> ZIP $@"
-	@zip -rq $@ $(DESTDIR)
+	@zip -rq $@ $(PAKDIR)
 
 # Recursive copy cannot be used as it would copy .svn files too!
 copy:
 	@echo "===> COPY"
 	@mkdir -p $(PAKDIR) $(PAKDIR)/config $(PAKDIR)/sound $(PAKDIR)/doc $(PAKDIR)/scenario $(PAKDIR)/sound $(PAKDIR)/text
 	@cp -pt $(PAKDIR) $(CPFILES)/compat.tab
+	@cp -pt $(PAKDIR) $(CPFILES)/demo.sve
 	@cp -pt $(PAKDIR)/config $(CPFILES)/config/*
 	@cp -pt $(PAKDIR)/sound $(CPFILES)/sound/*
 	@cp -pt $(PAKDIR)/text $(CPFILES)/text/*

@@ -1,3 +1,6 @@
+Hlaska "smi byt pripojen az na konci vlaku" efektivne znamena, max tah na haku 160 kN
+Viz diskuse: https://zdopravy.cz/sprava-zeleznic-shani-ctyri-lokomotivy-i-se-strojvedoucim-kvuli-postrkum-a-priprezi-pres-vysocinu-58804/
+
 CSD - CD 
 
 Btax-780 - puvodni model Blm, Baafx, 010. Ovladani dveri pouze z 810, nebo nekterych dieslovych loko: 704, 708, 714, 714.2, 730, 731, 742 a 743 ČD a 742 ŽSR/ZSSK) i jedna elektrická (210.026-1), motoraky 842 a 843, rekonstruovanou řadou 854 a s motorovými vozy a jednotkami vzniklými rekonstrukcí na bázi řady 810.

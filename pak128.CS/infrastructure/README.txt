@@ -152,6 +152,15 @@ Prazce: https://www.fd.cvut.cz/personal/tyfal/str/predmety/ikod-pr/ikod04.pdf
 - pro simutrans bych videl: cost drevo < beton, maintenance drevo > beton
 - pro extended: wear_capacity drevo < beton; Xa < A < T,S49 < R65,UIC60
 
+Rychlost vs. signalizace: https://www.k-report.net/discus/messages/28/103652.html?1603463503
+- Podle rozhledu metro: 20 km/h
+- Podle rozhledu vlak: 30 km/h (posun, privolavacka)
+- D3: 60 km/h (jednu dobu bylo az 90 km/h)
+- D4: 100 km/h
+- Telefonni dorozumivani: dnes 60 km/h, bylo i vic
+- Bez cab-signalling: dnes 100 km/h, bylo i vic
+- cab-signal LS/MIREL: 160 km/h
+- ETCS: bez limitu
 
 Narrow Gauge:
 ~~~~~~~~~~~~~

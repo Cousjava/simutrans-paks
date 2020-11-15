@@ -368,6 +368,7 @@ default_citycar_life = 120
 # Je u nas povolene nevykompenzovane odstredive zrychleni 0.65 m/s^2 (G/15 = 0.654)
 # V klopene zatacce (prevyseni 150 mm), cca 1.65 (G/6 = 1.635)
 # Pendolino muze je o 30% rychleji uz od polomeru 300 m
+# Nebo uz od 250m podle https://cs.wikipedia.org/wiki/Elektrick%C3%A1_jednotka_680
 #
 # treni v zatacce dle http://www.vagony.cz/vagony/energie.html
 # vedlejsi trate 500 / (R-30) [N/kN]
@@ -388,7 +389,7 @@ curve_friction_factor_monorail=0
 curve_friction_factor_maglev=0
 curve_friction_factor_narrowgauge=0
 
-tilting_min_radius_effect=300
+tilting_min_radius_effect=250
 
 # These settings determine how long that it takes a train-type convoy to turn
 # around when it reaches the end of the line. They do not apply to road vehicles
