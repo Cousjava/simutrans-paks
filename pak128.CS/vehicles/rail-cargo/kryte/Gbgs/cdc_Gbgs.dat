@@ -1,16 +1,22 @@
+# Parostroj.net: vyroba 1970-73 (Gbgs) 1983-86 (Gbgkks)
+# Delka 14,02 m; s brzdarskou budkou 14,72 m; rychlost 100 km/h
+# Hmotnost 15 t; s budkou 15.5-16 t; gbgkks 15.5 t
+# Lozna hmotnost 25 t; objem 80 m3; plocha 33 m2 (s budkou jen 24 t)
+# Lozna hmotnost 24 t; objem 88 m3; plocha 33 m2
+# Vagon pro dobytek - vyssi mesicni naklady (uklid)
+# Nechavam vsechny s parametry Gbgs at mame jednotnou casovou osu
 ----------------------------
 
 obj=vehicle
 name=cdc_gbgkks
 speed=100
 copyright=Lubak91
-intro_year=2007
-intro_month=12
+intro_year=1970
 waytype=track
 freight=grain
-payload=24
+payload=25
 length=7
-weight=16
+weight=15
 cost=599900
 runningcost=7
 fixed_cost=45
@@ -37,11 +43,10 @@ obj=vehicle
 name=cdc_gbgs
 speed=100
 copyright=Lubak91
-intro_year=2007
-intro_month=12
+intro_year=1970
 waytype=track
 freight=goods_
-payload=31
+payload=25
 length=7
 weight=15
 cost=599900
@@ -65,3 +70,33 @@ FreightImage[s]=cdc_Gbgs.0.6,0,4
 FreightImage[sw]=cdc_Gbgs.0.7,0,4
 
 ----------------------------
+
+obj=vehicle
+name=cdc_gbgs_livestock
+speed=100
+copyright=Lubak91
+intro_year=1970
+waytype=track
+freight=livestock
+payload=12
+length=7
+weight=15
+cost=599900
+runningcost=7
+fixed_cost=65
+EmptyImage[w]=cdc_gbgs_livestock_empty.0.0,0,4
+EmptyImage[nw]=cdc_gbgs_livestock_empty.0.1,0,4
+EmptyImage[n]=cdc_gbgs_livestock_empty.0.2,0,4
+EmptyImage[ne]=cdc_gbgs_livestock_empty.0.3,0,4
+EmptyImage[e]=cdc_gbgs_livestock_empty.0.4,0,4
+EmptyImage[se]=cdc_gbgs_livestock_empty.0.5,0,4
+EmptyImage[s]=cdc_gbgs_livestock_empty.0.6,0,4
+EmptyImage[sw]=cdc_gbgs_livestock_empty.0.7,0,4
+FreightImage[w]=cdc_gbgs_livestock.0.0,0,4
+FreightImage[nw]=cdc_gbgs_livestock.0.1,0,4
+FreightImage[n]=cdc_gbgs_livestock.0.2,0,4
+FreightImage[ne]=cdc_gbgs_livestock.0.3,0,4
+FreightImage[e]=cdc_gbgs_livestock.0.4,0,4
+FreightImage[se]=cdc_gbgs_livestock.0.5,0,4
+FreightImage[s]=cdc_gbgs_livestock.0.6,0,4
+FreightImage[sw]=cdc_gbgs_livestock.0.7,0,4

@@ -1,22 +1,28 @@
+# Parostroj.net (totez jako Habbillns, ale se silnejsi brzdou, omezenou kapacitou a vyssi rychlosti)
+# Vyroba 2005 (druha serie); rychlost 100 km/h (do 20 t/napravu povoleno az 120 km/h)
+# Delka 23.264 m; hmotost 29.840 t
+# Lozna hmotnost 60 t; objem 161.4 m3; plocha 60.3 m2; palet 60 ks
+# Pouze na zbozi, delici prepazky (v ext. povolit mix)
+# https://www.parostroj.net/katalog/nv/clanky/Habbillnss/Habbillnss.php3
 obj=vehicle
 name=CDC_Habbillnss
 speed=120
 copyright=Lubak91
 intro_year=2005
 intro_month=1
-retire_year=2035
-retire_month=1
 waytype=track
 freight=goods_
-payload=40
+payload=50
 length=12
-
 weight=30
-cost=150000
+axles=4
+bidirectional=1
+# nastavit silnejsi brzdeni nez u Habbillns
+# vyssi opotrebeni kol kvuli silnejsim brzdam
+#brake_force=
+cost=1000000
 runningcost=15
-fixed_cost=115
-sound=-1
-
+fixed_cost=64
 EmptyImage[W]=cdc_Habbillnss.0.0,0,4
 EmptyImage[NW]=cdc_Habbillnss.0.1,0,4
 EmptyImage[N]=cdc_Habbillnss.0.2,0,4

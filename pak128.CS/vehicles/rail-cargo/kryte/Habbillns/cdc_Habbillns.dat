@@ -1,22 +1,24 @@
+# Parostroj.net
+# Vyroba 2002; rychlost 100 km/h (prazdny 120 km/h)
+# Delka 23.264 m; hmotost 29.840 t
+# Lozna hmotnost 60 t; objem 161.4 m3; plocha 60.3 m2; palet 60 ks
+# Pouze na zbozi, delici prepazky (v ext. povolit mix)
 obj=vehicle
 name=CDC_Habbillns
 speed=100
 copyright=Lubak91
-intro_year=2002
-intro_month=1
-retire_year=2032
-retire_month=1
+intro_year=2007
+intro_month=12
 waytype=track
-freight=canned_food
-payload=40
+freight=goods_
+payload=60
 length=12
-
 weight=30
-cost=100000
+axles=4
+bidirectional=1
+cost=1000000
 runningcost=10
 fixed_cost=64
-sound=-1
-
 EmptyImage[W]=cdc_Habbillns.0.0,0,4
 EmptyImage[NW]=cdc_Habbillns.0.1,0,4
 EmptyImage[N]=cdc_Habbillns.0.2,0,4
