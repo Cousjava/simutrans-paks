@@ -1,0 +1,81 @@
+# Parostroj.net, vyroba 1969 - 1975
+# Delka 14.020 m, hmotnost 18.5 t, rychlat 100 km/h
+# Lozna hmotnost 17 t, objem 51.5 m3, plocha 27.0 m2
+# Asi jeste porad v provozu, udaje u CD cargo se lisi:
+# Prazdny 16.5 t, objem 55 m3, plocha 27.5 m2
+# Zatez podle tratove tridy: A:15.5, B:19.5, C:23.5 t
+# Rychlost asi az 120 km/h. Zeby reko?
+
+obj=vehicle
+name=csd_lpc
+speed=100
+copyright=Lubak91
+intro_year=1969
+retire_year=1993
+waytype=track
+freight=food
+payload=17
+length=7
+weight=18
+cost=1199000
+runningcost=10
+fixed_cost=77
+EmptyImage[w]=csd_lpc.0.0,0,4
+EmptyImage[nw]=csd_lpc.0.1,0,4
+EmptyImage[n]=csd_lpc.0.2,0,4
+EmptyImage[ne]=csd_lpc.0.3,0,4
+EmptyImage[e]=csd_lpc.0.4,0,4
+EmptyImage[se]=csd_lpc.0.5,0,4
+EmptyImage[s]=csd_lpc.0.6,0,4
+EmptyImage[sw]=csd_lpc.0.7,0,4
+
+-----------------------------
+
+obj=vehicle
+name=cd_ibbhps
+speed=100
+copyright=Lubak91
+intro_year=1993
+retire_month=12
+retire_year=2007
+waytype=track
+freight=food
+payload=17
+length=7
+weight=18
+cost=1199000
+runningcost=10
+fixed_cost=77
+EmptyImage[w]=cd_ibbhps.0.0,0,4
+EmptyImage[nw]=cd_ibbhps.0.1,0,4
+EmptyImage[n]=cd_ibbhps.0.2,0,4
+EmptyImage[ne]=cd_ibbhps.0.3,0,4
+EmptyImage[e]=cd_ibbhps.0.4,0,4
+EmptyImage[se]=cd_ibbhps.0.5,0,4
+EmptyImage[s]=cd_ibbhps.0.6,0,4
+EmptyImage[sw]=cd_ibbhps.0.7,0,4
+
+-----------------------------
+
+obj=vehicle
+name=cdc_ibbhps
+speed=100
+copyright=Lubak91
+intro_year=2007
+intro_month=12
+waytype=track
+freight=food
+payload=17
+length=7
+weight=18
+cost=1199000
+runningcost=10
+fixed_cost=77
+EmptyImage[w]=cdc_ibbhps.0.0,0,4
+EmptyImage[nw]=cdc_ibbhps.0.1,0,4
+EmptyImage[n]=cdc_ibbhps.0.2,0,4
+EmptyImage[ne]=cdc_ibbhps.0.3,0,4
+EmptyImage[e]=cdc_ibbhps.0.4,0,4
+EmptyImage[se]=cdc_ibbhps.0.5,0,4
+EmptyImage[s]=cdc_ibbhps.0.6,0,4
+EmptyImage[sw]=cdc_ibbhps.0.7,0,4

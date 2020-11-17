@@ -1,18 +1,24 @@
+# Parostroj.net, vyroba 1956-58
+# Delka 16.270 m; rychlost 100 km/h; hmotnost 33 t
+# lozna hmotnost 31t, objem 50.5 m3, plocha 27.0 m2 (s brzd. budkou)
+# lozna hmotnost 31t, objem 54 m3, plocha 29 m2 (bez brzd. budky)
+# vyrazeni z provozu nevime
 obj=vehicle
 name=CSD_La
-speed=120
+speed=100
 copyright=Lubak91
-intro_year=1960
-retire_year=1990
+intro_year=1956
+retire_year=1993
 waytype=track
 freight=food
-payload=30
+payload=31
 length=8
-
+axles=4
+bidirectional=1
 weight=33
-cost=100000
-runningcost=10
-fixed_cost=77
+cost=1599000
+runningcost=13
+fixed_cost=87
 
 emptyimage[w]=csd_la.0.0,0,4
 emptyimage[nw]=csd_la.0.1,0,4
