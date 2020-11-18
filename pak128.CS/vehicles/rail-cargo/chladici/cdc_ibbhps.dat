@@ -5,6 +5,7 @@
 # Prazdny 16.5 t, objem 55 m3, plocha 27.5 m2
 # Zatez podle tratove tridy: A:15.5, B:19.5, C:23.5 t
 # Rychlost asi az 120 km/h. Zeby reko?
+# Rozdily v barve - novy, zazloutly, premalovany
 
 obj=vehicle
 name=csd_lpc

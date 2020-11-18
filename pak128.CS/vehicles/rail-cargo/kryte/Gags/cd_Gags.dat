@@ -3,11 +3,46 @@
 # Lozna hmotnost 55 tun, objem 95 m3, plocha 40 m2
 # přeprava nebalených kusových zásilek s nutností ochrany před povětrnostními vlivy, paletizované zboží, obilí
 # Ve vnitřním prostoru vozu 10 uvazovacích kroužků na vnitřní straně bočnic. (takze i dobytek?)
+# CSD - je jenom v "novych barvach", CD je vybledle...
+--------------------------------------------
+obj=vehicle
+name=csd_gags
+speed=100
+copyright=Lubak91
+intro_year=1976
+retire_year=1993
+waytype=track
+freight=goods_
+payload=55
+length=8
+weight=25
+axles=4
+bidirectional=1
+cost=859900
+runningcost=19
+fixed_cost=146
+EmptyImage[w]=csd_Gags_open.0.0,0,4
+EmptyImage[nw]=csd_Gags_open.0.1,0,4
+EmptyImage[n]=csd_Gags_open.0.2,0,4
+EmptyImage[ne]=csd_Gags_open.0.3,0,4
+EmptyImage[e]=csd_Gags_open.0.4,0,4
+EmptyImage[se]=csd_Gags_open.0.5,0,4
+EmptyImage[s]=csd_Gags_open.0.6,0,4
+EmptyImage[sw]=csd_Gags_open.0.7,0,4
+FreightImage[w]=csd_Gags.0.0,0,4
+FreightImage[nw]=csd_Gags.0.1,0,4
+FreightImage[n]=csd_Gags.0.2,0,4
+FreightImage[ne]=csd_Gags.0.3,0,4
+FreightImage[e]=csd_Gags.0.4,0,4
+FreightImage[se]=csd_Gags.0.5,0,4
+FreightImage[s]=csd_Gags.0.6,0,4
+FreightImage[sw]=csd_Gags.0.7,0,4
+--------------------------------------------
 obj=vehicle
 name=cd_gags
 speed=100
 copyright=Lubak91
-intro_year=1976
+intro_year=1993
 waytype=track
 freight=goods_
 payload=55

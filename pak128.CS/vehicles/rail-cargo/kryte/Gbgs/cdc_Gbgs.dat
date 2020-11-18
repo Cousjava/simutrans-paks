@@ -2,21 +2,20 @@
 # Delka 14,02 m; s brzdarskou budkou 14,72 m; rychlost 100 km/h
 # Hmotnost 15 t; s budkou 15.5-16 t; gbgkks 15.5 t
 # Lozna hmotnost 25 t; objem 80 m3; plocha 33 m2 (s budkou jen 24 t)
-# Lozna hmotnost 24 t; objem 88 m3; plocha 33 m2
+# Lozna hmotnost 24 t; objem 88 m3; plocha 33 m2 (Gbgkks)
 # Vagon pro dobytek - vyssi mesicni naklady (uklid)
-# Nechavam vsechny s parametry Gbgs at mame jednotnou casovou osu
 ----------------------------
 
 obj=vehicle
 name=cdc_gbgkks
 speed=100
 copyright=Lubak91
-intro_year=1970
+intro_year=1983
 waytype=track
 freight=grain
-payload=25
+payload=24
 length=7
-weight=15
+weight=16
 axles=2
 bidirectional=1
 cost=599900

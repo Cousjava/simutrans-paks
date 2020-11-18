@@ -1,0 +1,72 @@
+# Parostroj.net: # Vyroba 1965-73 (hodne podobne prvni serii Gags)
+# Delka 16.52 m; hmotnost 25 ; Rychlost 100 km/2
+# Lozna hmotnost 55 tun, objem 95 m3, plocha 40 m2
+# přeprava nebalených kusových zásilek s nutností ochrany před povětrnostními vlivy, paletizované zboží, obilí
+# Ve vnitřním prostoru vozu 10 uvazovacích kroužků na vnitřní straně bočnic. (takze i dobytek?)
+# Podlaha: smrkové desky 45 mm, 12 trychtýřovitých výsypných otvorů s odklopnými víky
+# CSD - je jenom v "novych barvach", CD je vybledle...
+--------------------------------------------
+obj=vehicle
+name=csd_hadgs
+speed=100
+copyright=Lubak91
+intro_year=1976
+retire_year=1993
+waytype=track
+freight=grain
+payload=55
+length=8
+weight=25
+axles=4
+bidirectional=1
+cost=859900
+runningcost=19
+fixed_cost=146
+EmptyImage[w]=csd_hadgs_open.0.0,0,4
+EmptyImage[nw]=csd_hadgs_open.0.1,0,4
+EmptyImage[n]=csd_hadgs_open.0.2,0,4
+EmptyImage[ne]=csd_hadgs_open.0.3,0,4
+EmptyImage[e]=csd_hadgs_open.0.4,0,4
+EmptyImage[se]=csd_hadgs_open.0.5,0,4
+EmptyImage[s]=csd_hadgs_open.0.6,0,4
+EmptyImage[sw]=csd_hadgs_open.0.7,0,4
+FreightImage[w]=csd_hadgs.0.0,0,4
+FreightImage[nw]=csd_hadgs.0.1,0,4
+FreightImage[n]=csd_hadgs.0.2,0,4
+FreightImage[ne]=csd_hadgs.0.3,0,4
+FreightImage[e]=csd_hadgs.0.4,0,4
+FreightImage[se]=csd_hadgs.0.5,0,4
+FreightImage[s]=csd_hadgs.0.6,0,4
+FreightImage[sw]=csd_hadgs.0.7,0,4
+--------------------------------------------
+obj=vehicle
+name=cd_hadgs
+speed=100
+copyright=Lubak91
+intro_year=1993
+waytype=track
+freight=grain
+payload=55
+length=8
+weight=25
+axles=4
+bidirectional=1
+cost=859900
+runningcost=19
+fixed_cost=146
+EmptyImage[w]=cd_hadgs_open.0.0,0,4
+EmptyImage[nw]=cd_hadgs_open.0.1,0,4
+EmptyImage[n]=cd_hadgs_open.0.2,0,4
+EmptyImage[ne]=cd_hadgs_open.0.3,0,4
+EmptyImage[e]=cd_hadgs_open.0.4,0,4
+EmptyImage[se]=cd_hadgs_open.0.5,0,4
+EmptyImage[s]=cd_hadgs_open.0.6,0,4
+EmptyImage[sw]=cd_hadgs_open.0.7,0,4
+FreightImage[w]=cd_hadgs.0.0,0,4
+FreightImage[nw]=cd_hadgs.0.1,0,4
+FreightImage[n]=cd_hadgs.0.2,0,4
+FreightImage[ne]=cd_hadgs.0.3,0,4
+FreightImage[e]=cd_hadgs.0.4,0,4
+FreightImage[se]=cd_hadgs.0.5,0,4
+FreightImage[s]=cd_hadgs.0.6,0,4
+FreightImage[sw]=cd_hadgs.0.7,0,4
