@@ -4,6 +4,8 @@
 # Lozna hmotnost 25 t; objem 80 m3; plocha 33 m2 (s budkou jen 24 t)
 # Lozna hmotnost 24 t; objem 88 m3; plocha 33 m2 (Gbgkks)
 # Vagon pro dobytek - vyssi mesicni naklady (uklid)
+# Střešní násypné otvory o průměru 600 mm - 2 ks, i Gbgs je vhodne pro obili
+# Ve spodní části posuvných dveří jsou umístěny 2 odsypné klapky (alternativně - 3 ks)
 ----------------------------
 
 obj=vehicle

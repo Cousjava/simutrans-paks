@@ -2,7 +2,6 @@
 # Delka 16.52 m; hmotnost 25 / 24.5 t; Rychlost 100 km/2, prazdny (2. serie) 120 km/h
 # Lozna hmotnost 55 tun, objem 95 m3, plocha 40 m2
 # přeprava nebalených kusových zásilek s nutností ochrany před povětrnostními vlivy, paletizované zboží, obilí
-# Ve vnitřním prostoru vozu 10 uvazovacích kroužků na vnitřní straně bočnic. (takze i dobytek?)
 # CSD - je jenom v "novych barvach", CD je vybledle...
 --------------------------------------------
 obj=vehicle

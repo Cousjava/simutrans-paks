@@ -1,9 +1,70 @@
-# Parostroj.net (totez jako Habbillns, ale se silnejsi brzdou, omezenou kapacitou a vyssi rychlosti)
-# Vyroba 2005 (druha serie); rychlost 100 km/h (do 20 t/napravu povoleno az 120 km/h)
+# Parostroj.net: https://www.parostroj.net/katalog/nv/clanky/Habbillnss/Habbillnss.php3
+# Vyroba 2002; Druha serie 2005;
 # Delka 23.264 m; hmotost 29.840 t
 # Lozna hmotnost 60 t; objem 161.4 m3; plocha 60.3 m2; palet 60 ks
 # Pouze na zbozi, delici prepazky (v ext. povolit mix)
-# https://www.parostroj.net/katalog/nv/clanky/Habbillnss/Habbillnss.php3
+#
+# Habbillns = 100 km/h; Habbillnss = 120 km/h (ale jen do 20 t/napravu)
+# Vzhledem k tomu, že vozy v režimu "SS", které jsou řazeny v
+# soupravách s vozy režimu "S" trpí "přebrzděním" a dochází u nich k
+# teplotnímu ovlivnění a zborcení desky kola. Pro zabránění těchto
+# těžkých škod na dvojkolí, je prozatím brzda vozů nastavena v
+# režimu "S", čemuž odpovídá i současné značení vozu. V případě
+# vytvoření ucelených souprav z vozů v režimu "SS" je možné brzdu
+# těchto vozů upravit na režim "SS".
+-------
+obj=vehicle
+name=CD_Habbillns
+speed=100
+copyright=Lubak91
+intro_year=2002
+intro_month=1
+retire_year=2007
+retire_month=12
+waytype=track
+freight=goods_
+payload=60
+length=12
+weight=30
+axles=4
+bidirectional=1
+cost=1000000
+runningcost=10
+fixed_cost=64
+emptyimage[w]=cd_Habbillns.0.0,0,4
+emptyimage[nw]=cd_Habbillns.0.1,0,4
+emptyimage[n]=cd_Habbillns.0.2,0,4
+emptyimage[ne]=cd_Habbillns.0.3,0,4
+emptyimage[e]=cd_Habbillns.0.4,0,4
+emptyimage[se]=cd_Habbillns.0.5,0,4
+emptyimage[s]=cd_Habbillns.0.6,0,4
+emptyimage[sw]=cd_Habbillns.0.7,0,4
+------
+obj=vehicle
+name=CDC_Habbillns
+speed=100
+copyright=Lubak91
+intro_year=2007
+intro_month=12
+waytype=track
+freight=goods_
+payload=60
+length=12
+weight=30
+axles=4
+bidirectional=1
+cost=1000000
+runningcost=10
+fixed_cost=64
+EmptyImage[W]=cdc_Habbillns.0.0,0,4
+EmptyImage[NW]=cdc_Habbillns.0.1,0,4
+EmptyImage[N]=cdc_Habbillns.0.2,0,4
+EmptyImage[NE]=cdc_Habbillns.0.3,0,4
+EmptyImage[E]=cdc_Habbillns.0.4,0,4
+EmptyImage[SE]=cdc_Habbillns.0.5,0,4
+EmptyImage[S]=cdc_Habbillns.0.6,0,4
+EmptyImage[SW]=cdc_Habbillns.0.7,0,4
+-------------
 obj=vehicle
 name=CDC_Habbillnss
 speed=120
@@ -18,9 +79,9 @@ weight=30
 axles=4
 bidirectional=1
 # nastavit silnejsi brzdeni nez u Habbillns
-# vyssi opotrebeni kol kvuli silnejsim brzdam
 #brake_force=
 cost=1000000
+# vyssi opotrebeni kol kvuli silnejsim brzdam
 runningcost=15
 fixed_cost=64
 EmptyImage[W]=cdc_Habbillnss.0.0,0,4
