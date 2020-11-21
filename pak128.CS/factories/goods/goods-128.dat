@@ -576,6 +576,12 @@ weight_per_unit=1000
 # je to pouzito pro kontajnerove vozy Lgs, Sggrss, Sgnss
 # cukr? - lze vozit ve velkem catg=7 (Tpps) i baleny catg=1
 # speed bonus stredni
+# pšenice 	780-800 kg/m3
+# ječmen 	600 kg/m3
+# kukuřice 	720 kg/m3
+# cukr		800-850 kg/m3
+# slad 		340 kg/m3
+# sůl mletá 	1200 kg/m3
 ###########################
 obj=good
 name=grain

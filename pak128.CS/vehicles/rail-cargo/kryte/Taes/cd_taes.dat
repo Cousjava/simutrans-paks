@@ -3,8 +3,9 @@
 # Lozna hmotnost 46 tun, objem 95 m3, plocha 40 m2
 # přeprava nebalených kusových zásilek s nutností ochrany před povětrnostními vlivy, paletizované zboží
 # Střecha: dvoudílná, přesuvná střecha, přesunutím jednoho dílu střechy se odkryje nakládací otvor o rozměrech 7080 mm x 2600 mm
-# Otazka jestli vyradit pote co se objevi has, nebo az Habbillns. Spis Habbillns - otviraci strecha. Nebo vubec ?
-# Mohly by mit rychlejsi nakladku nez Gags/Gbgs, ktere nemaji otviraci strechu.
+# Otazka jestli vyradit pote co se objevi Gags, nebo az Habbillns. Spis Habbillns - otviraci strecha. Nebo vubec ?
+# Mohly by mit rychlejsi nakladku nez Gags/Gbgs, ktere nemaji otviraci strechu. Diky strese i long_goods (drevo)
+# Alternativa Taeqrs (Zac) pro spesniny/postu (ma topeni pro zarazeni do osobniho vlaku)
 # CSD - je jenom v "novych barvach", CD je vybledle...
 --------------------------------------------
 obj=vehicle
