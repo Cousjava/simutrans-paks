@@ -6,13 +6,13 @@
 # Obrazek csd-gags-za by mohl jit pouzit pro tu prvni serii - jine podvozky
 ----------------------------------------
 obj=vehicle
-name=csd_gags-za
+name=csd_gags_grain
 speed=100
 copyright=Lubak91
 intro_year=1976
-retire_year=1987
+retire_year=1993
 waytype=track
-freight=goods_
+freight=grain
 payload=55
 length=8
 weight=25
@@ -42,7 +42,7 @@ obj=vehicle
 name=csd_gags
 speed=100
 copyright=Lubak91
-intro_year=1987
+intro_year=1976
 retire_year=1993
 waytype=track
 freight=goods_

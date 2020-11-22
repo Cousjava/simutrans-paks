@@ -1,0 +1,66 @@
+# Parostroj 1965-1969
+# Gbs: 100 km/h, 25 t
+# Gbss: 120 km/h, 18 t
+# Delka 14 m, Vaha 13,5 t 
+# Plocha 33 m2, objem 80 m3
+# Ložná hmotnost pro rychlost 120 km/h je 18,5 tuny. Pro rychlost 80 km/h až 26,5 tuny.
+--------------
+obj=vehicle
+name=csd_gbs
+speed=100
+copyright=Lubak91
+intro_year=1965
+retire_year=1993
+waytype=track
+freight=goods_
+payload=25
+length=7
+weight=13.5
+cost=1299900
+runningcost=12
+EmptyImage[w]=csd_zst_empty.0.0,0,4
+EmptyImage[nw]=csd_zst_empty.0.1,0,4
+EmptyImage[n]=csd_zst_empty.0.2,0,4
+EmptyImage[ne]=csd_zst_empty.0.3,0,4
+EmptyImage[e]=csd_zst_empty.0.4,0,4
+EmptyImage[se]=csd_zst_empty.0.5,0,4
+EmptyImage[s]=csd_zst_empty.0.6,0,4
+EmptyImage[sw]=csd_zst_empty.0.7,0,4
+FreightImage[w]=csd_zst.0.0,0,4
+FreightImage[nw]=csd_zst.0.1,0,4
+FreightImage[n]=csd_zst.0.2,0,4
+FreightImage[ne]=csd_zst.0.3,0,4
+FreightImage[e]=csd_zst.0.4,0,4
+FreightImage[se]=csd_zst.0.5,0,4
+FreightImage[s]=csd_zst.0.6,0,4
+FreightImage[sw]=csd_zst.0.7,0,4
+-------------------
+obj=vehicle
+name=csd_gbss
+speed=120
+copyright=Lubak91
+intro_year=1965
+retire_year=1993
+waytype=track
+freight=goods_
+payload=18
+length=7
+weight=13.5
+cost=1299900
+runningcost=13
+EmptyImage[w]=csd_zst_empty.0.0,0,4
+EmptyImage[nw]=csd_zst_empty.0.1,0,4
+EmptyImage[n]=csd_zst_empty.0.2,0,4
+EmptyImage[ne]=csd_zst_empty.0.3,0,4
+EmptyImage[e]=csd_zst_empty.0.4,0,4
+EmptyImage[se]=csd_zst_empty.0.5,0,4
+EmptyImage[s]=csd_zst_empty.0.6,0,4
+EmptyImage[sw]=csd_zst_empty.0.7,0,4
+FreightImage[w]=csd_zst.0.0,0,4
+FreightImage[nw]=csd_zst.0.1,0,4
+FreightImage[n]=csd_zst.0.2,0,4
+FreightImage[ne]=csd_zst.0.3,0,4
+FreightImage[e]=csd_zst.0.4,0,4
+FreightImage[se]=csd_zst.0.5,0,4
+FreightImage[s]=csd_zst.0.6,0,4
+FreightImage[sw]=csd_zst.0.7,0,4

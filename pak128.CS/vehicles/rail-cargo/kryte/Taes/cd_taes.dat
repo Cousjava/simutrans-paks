@@ -1,11 +1,11 @@
 # Parostroj.net: # Vyroba 1965-73
 # Delka 16.25 m; hmotnost 23.460 t; Rychlost 100 km/2, prazdny 120 km/h
-# Lozna hmotnost 46 tun, objem 95 m3, plocha 40 m2
+# Lozna hmotnost 46 tun, objem 95 m3, plocha 40 m2; pro postu pocitam 4 pytle na m2
 # přeprava nebalených kusových zásilek s nutností ochrany před povětrnostními vlivy, paletizované zboží
 # Střecha: dvoudílná, přesuvná střecha, přesunutím jednoho dílu střechy se odkryje nakládací otvor o rozměrech 7080 mm x 2600 mm
 # Otazka jestli vyradit pote co se objevi Gags, nebo az Habbillns. Spis Habbillns - otviraci strecha. Nebo vubec ?
 # Mohly by mit rychlejsi nakladku nez Gags/Gbgs, ktere nemaji otviraci strechu. Diky strese i long_goods (drevo)
-# Alternativa Taeqrs (Zac) pro spesniny/postu (ma topeni pro zarazeni do osobniho vlaku)
+# Alternativa Taeqrs (Zac) pro spesniny/postu (ma topeni pro zarazeni do osobniho vlaku), retire s prichodem gbkkqs(s) - 1986
 # CSD - je jenom v "novych barvach", CD je vybledle...
 --------------------------------------------
 obj=vehicle
@@ -40,6 +40,72 @@ FreightImage[e]=csd_has.0.4,0,4
 FreightImage[se]=csd_has.0.5,0,4
 FreightImage[s]=csd_has.0.6,0,4
 FreightImage[sw]=csd_has.0.7,0,4
+--------------------------------------------
+obj=vehicle
+name=csd_taes_wood
+speed=100
+copyright=Lubak91
+intro_year=1965
+retire_year=1993
+waytype=track
+freight=Holz
+payload=46
+length=8
+weight=24
+axles=4
+bidirectional=1
+cost=859900
+runningcost=19
+fixed_cost=146
+EmptyImage[w]=csd_zaz_open.0.0,0,4
+EmptyImage[nw]=csd_zaz_open.0.1,0,4
+EmptyImage[n]=csd_zaz_open.0.2,0,4
+EmptyImage[ne]=csd_zaz_open.0.3,0,4
+EmptyImage[e]=csd_zaz_open.0.4,0,4
+EmptyImage[se]=csd_zaz_open.0.5,0,4
+EmptyImage[s]=csd_zaz_open.0.6,0,4
+EmptyImage[sw]=csd_zaz_open.0.7,0,4
+FreightImage[w]=csd_zaz.0.0,0,4
+FreightImage[nw]=csd_zaz.0.1,0,4
+FreightImage[n]=csd_zaz.0.2,0,4
+FreightImage[ne]=csd_zaz.0.3,0,4
+FreightImage[e]=csd_zaz.0.4,0,4
+FreightImage[se]=csd_zaz.0.5,0,4
+FreightImage[s]=csd_zaz.0.6,0,4
+FreightImage[sw]=csd_zaz.0.7,0,4
+--------------------------------------------
+obj=vehicle
+name=csd_taeqrs
+speed=100
+copyright=Lubak91
+intro_year=1965
+retire_year=1986
+waytype=track
+freight=Post
+payload=160
+length=8
+weight=24
+axles=4
+bidirectional=1
+cost=859900
+runningcost=19
+fixed_cost=146
+EmptyImage[w]=csd_zac_open.0.0,0,4
+EmptyImage[nw]=csd_zac_open.0.1,0,4
+EmptyImage[n]=csd_zac_open.0.2,0,4
+EmptyImage[ne]=csd_zac_open.0.3,0,4
+EmptyImage[e]=csd_zac_open.0.4,0,4
+EmptyImage[se]=csd_zac_open.0.5,0,4
+EmptyImage[s]=csd_zac_open.0.6,0,4
+EmptyImage[sw]=csd_zac_open.0.7,0,4
+FreightImage[w]=csd_zac.0.0,0,4
+FreightImage[nw]=csd_zac.0.1,0,4
+FreightImage[n]=csd_zac.0.2,0,4
+FreightImage[ne]=csd_zac.0.3,0,4
+FreightImage[e]=csd_zac.0.4,0,4
+FreightImage[se]=csd_zac.0.5,0,4
+FreightImage[s]=csd_zac.0.6,0,4
+FreightImage[sw]=csd_zac.0.7,0,4
 --------------------------------------------
 obj=vehicle
 name=cd_taes

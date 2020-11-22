@@ -77,6 +77,7 @@ DIRS128VEHICLES += rail-cargo/tank-cars/Zans
 DIRS128VEHICLES += rail-cargo/chladici
 DIRS128VEHICLES += rail-cargo/kryte/Gags
 DIRS128VEHICLES += rail-cargo/kryte/Gbgs
+DIRS128VEHICLES += rail-cargo/kryte/Gbkkqss
 DIRS128VEHICLES += rail-cargo/kryte/Gbs
 DIRS128VEHICLES += rail-cargo/kryte/Glm
 DIRS128VEHICLES += rail-cargo/kryte/Habbillnss

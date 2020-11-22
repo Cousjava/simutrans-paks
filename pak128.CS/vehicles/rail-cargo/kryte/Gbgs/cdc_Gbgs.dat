@@ -11,15 +11,15 @@
 ----------------------------
 
 obj=vehicle
-name=cdc_gbgkks
+name=cdc_gbgs_grain
 speed=100
 copyright=Lubak91
-intro_year=1983
+intro_year=1970
 waytype=track
 freight=grain
-payload=24
+payload=25
 length=7
-weight=16
+weight=15
 axles=2
 bidirectional=1
 cost=599900
@@ -85,7 +85,7 @@ copyright=Lubak91
 intro_year=1970
 waytype=track
 freight=livestock
-payload=12
+payload=10
 length=7
 weight=15
 axles=2

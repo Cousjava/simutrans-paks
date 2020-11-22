@@ -1,0 +1,39 @@
+# Parostroj - vyroba 1986-87 Gbkkqs/Gbkkqss
+# Vaha 15,1 / 15,6 t
+# Rychost 100 / 120 km/h
+# Lozna hmotnost 24 / 20 t; pytel = 50 kg
+# Objem 88, Plocha 33; 4 pytle na m2 = 132 ks = 6,6 t
+# Prubezne topeni, spesniny, posta 
+# Nema moc smysl davat oba, kapacitne se nelisi, takze rychlejsi je jasna volba
+# Rozdil je poznat jen u tezsich zasilek, nebo v cene/udrzbe ?
+
+obj=vehicle
+name=dr_gbkkqss
+speed=120
+copyright=Lubak91
+intro_year=1986
+waytype=track
+freight=Post
+payload=132
+length=7
+weight=20
+cost=659900
+runningcost=17
+EmptyImage[w]=dr_gbkkqss.1.0,0,4
+EmptyImage[nw]=dr_gbkkqss.1.1,0,4
+EmptyImage[n]=dr_gbkkqss.1.2,0,4
+EmptyImage[ne]=dr_gbkkqss.1.3,0,4
+EmptyImage[e]=dr_gbkkqss.1.4,0,4
+EmptyImage[se]=dr_gbkkqss.1.5,0,4
+EmptyImage[s]=dr_gbkkqss.1.6,0,4
+EmptyImage[sw]=dr_gbkkqss.1.7,0,4
+FreightImage[w]=dr_gbkkqss.0.0,0,4
+FreightImage[nw]=dr_gbkkqss.0.1,0,4
+FreightImage[n]=dr_gbkkqss.0.2,0,4
+FreightImage[ne]=dr_gbkkqss.0.3,0,4
+FreightImage[e]=dr_gbkkqss.0.4,0,4
+FreightImage[se]=dr_gbkkqss.0.5,0,4
+FreightImage[s]=dr_gbkkqss.0.6,0,4
+FreightImage[sw]=dr_gbkkqss.0.7,0,4
+
+-------------------------------
