@@ -4,7 +4,7 @@
 
 obj=vehicle
 name=dr_ibblps
-speed=100
+speed=80
 copyright=Lubak91
 intro_year=1968
 retire_year=1994
