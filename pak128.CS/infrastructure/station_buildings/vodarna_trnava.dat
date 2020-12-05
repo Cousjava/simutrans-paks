@@ -1,0 +1,17 @@
+Obj=building
+name=vodarna_trnava
+copyright=lubak91, Vladki
+
+intro_year=1959
+retire_year=1980
+type=extension
+needs_ground=1
+waytype=track
+level=1
+
+Dims=1,1,1
+BackImage[0][0][0][0][0][0]=vodarna_trnava.0.0
+BackImage[0][0][0][0][0][1]=vodarna_trnava.0.3
+Cursor=vodarna_trnava.0.1
+Icon=> vodarna_trnava.0.2
+
