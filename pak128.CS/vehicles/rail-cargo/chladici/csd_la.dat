@@ -1,14 +1,43 @@
-# Parostroj.net, vyroba 1956-58
+# Parostroj.net, vyroba 1956-58 La/Iacqs
 # Delka 16.270 m; rychlost 100 km/h; hmotnost 33 t
 # lozna hmotnost 31t, objem 50.5 m3, plocha 27.0 m2 (s brzd. budkou)
 # lozna hmotnost 31t, objem 54 m3, plocha 29 m2 (bez brzd. budky)
 # vyrazeni z provozu nevime
+---------------------------
 obj=vehicle
-name=CSD_La
+name=csd_iacqs
 speed=100
 copyright=Lubak91
 intro_year=1956
 retire_year=1993
+waytype=track
+freight=food
+payload=31
+length=8
+axles=4
+bidirectional=1
+weight=33
+cost=1599000
+runningcost=13
+fixed_cost=87
+
+EmptyImage[w]=csd_la_bez.0.0,0,4
+EmptyImage[nw]=csd_la_bez.0.1,0,4
+EmptyImage[n]=csd_la_bez.0.2,0,4
+EmptyImage[ne]=csd_la_bez.0.3,0,4
+EmptyImage[e]=csd_la_bez.0.0,0,4
+EmptyImage[se]=csd_la_bez.0.1,0,4
+EmptyImage[s]=csd_la_bez.0.2,0,4
+EmptyImage[sw]=csd_la_bez.0.3,0,4
+
+---------------------------
+obj=vehicle
+name=cd_iacqs
+speed=100
+copyright=Lubak91
+intro_year=1993
+retire_year=2007
+retire_month=12
 waytype=track
 freight=food
 payload=31
@@ -28,3 +57,4 @@ emptyimage[e]=csd_la.0.4,0,4
 emptyimage[se]=csd_la.0.5,0,4
 emptyimage[s]=csd_la.0.6,0,4
 emptyimage[sw]=csd_la.0.7,0,4
+

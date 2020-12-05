@@ -1,4 +1,4 @@
-# Parostroj.net, vyroba 1969 - 1975
+# Parostroj.net, vyroba 1969 - 1975 Lpc/Ibbhps
 # Delka 14.020 m, hmotnost 18.5 t, rychlat 100 km/h
 # Lozna hmotnost 17 t, objem 51.5 m3, plocha 27.0 m2
 # Asi jeste porad v provozu, udaje u CD cargo se lisi:
@@ -8,7 +8,7 @@
 # Rozdily v barve - novy, zazloutly, premalovany
 
 obj=vehicle
-name=csd_lpc
+name=csd_ibbhps
 speed=100
 copyright=Lubak91
 intro_year=1969
@@ -17,7 +17,7 @@ waytype=track
 freight=food
 payload=17
 length=7
-weight=18
+weight=18.5
 axles=2
 bidirectional=1
 cost=1199000
@@ -45,7 +45,7 @@ waytype=track
 freight=food
 payload=17
 length=7
-weight=18
+weight=18.5
 axles=2
 bidirectional=1
 cost=1199000
@@ -72,7 +72,7 @@ waytype=track
 freight=food
 payload=17
 length=7
-weight=18
+weight=18.5
 axles=2
 bidirectional=1
 cost=1199000
