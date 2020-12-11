@@ -3,11 +3,14 @@
 # Hmotnost 15 t; s budkou 15.5-16 t; gbgkks 15.5 t
 # Lozna hmotnost 25 t; objem 80 m3; plocha 33 m2 (s budkou jen 24 t)
 # Lozna hmotnost 24 t; objem 88 m3; plocha 33 m2 (Gbgkks)
+# Kapacita omezena hmotnosti 1 tuna / paletu, jinak by se veslo 31 palet
+# https://www.cdcargo.cz/documents/10179/20727/ulozeni-palet_gbgkks-12.pdf (9x3 + 2x2) nebo (14x2 + 1x3)
 # Vagon pro dobytek - vyssi mesicni naklady (uklid)
 # Střešní násypné otvory o průměru 600 mm - 2 ks, i Gbgs je vhodne pro obili
 # Ve spodní části posuvných dveří jsou umístěny 2 odsypné klapky (alternativně - 3 ks)
 # https://www.parostroj.net/katalog/nv/clanky/Rekonstrukce_Gbgkks/reko_Gbgkks.php3
 # Gbgkks - predelavky na Hbis (Hirrs, Heirrs); Kils (Laails); Lgs; Laaps
+# https://www.parostroj.net/katalog/nv/clanky/Zts/vozy_Zts.php3 - posledni revize 2000
 ----------------------------
 
 obj=vehicle
@@ -15,6 +18,7 @@ name=cdc_gbgs_grain
 speed=100
 copyright=Lubak91
 intro_year=1970
+retire_year=2000
 waytype=track
 freight=grain
 payload=25
@@ -49,6 +53,7 @@ name=cdc_gbgs
 speed=100
 copyright=Lubak91
 intro_year=1970
+retire_year=2000
 waytype=track
 freight=goods_
 payload=25
@@ -83,6 +88,7 @@ name=cdc_gbgs_livestock
 speed=100
 copyright=Lubak91
 intro_year=1970
+retire_year=2000
 waytype=track
 freight=livestock
 payload=10

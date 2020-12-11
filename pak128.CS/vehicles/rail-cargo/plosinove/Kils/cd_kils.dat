@@ -1,3 +1,7 @@
+# parostroj: rekonstrukce z Gbgkks
+# Lozna plocha 34, objem 88, delka 12.7, 31 palet
+# Hotnost vozu 15 t, lozna hmotnost 25 t
+# Kulata verze LOSTR (6/2003), Hranata OOS (2006)
 --------------------------
 
 obj=vehicle
@@ -7,12 +11,14 @@ copyright=Lubak91
 intro_year=2006
 intro_month=2
 retire_year=2007
-retire_month=11
+retire_month=12
 waytype=track
 freight=goods_
-payload=31
+payload=25
 length=7
 weight=15
+axles=2
+bidirectional=1
 cost=742800
 runningcost=14
 fixed_cost=90

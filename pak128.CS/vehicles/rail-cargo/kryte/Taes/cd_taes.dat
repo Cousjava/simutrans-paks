@@ -1,11 +1,14 @@
 # Parostroj.net: # Vyroba 1965-73
 # Delka 16.25 m; hmotnost 23.460 t; Rychlost 100 km/2, prazdny 120 km/h
 # Lozna hmotnost 46 tun, objem 95 m3, plocha 40 m2; pro postu pocitam 4 pytle na m2
+# Kapacita: 2x19 palet, hmotnost na 18 t/axle
 # přeprava nebalených kusových zásilek s nutností ochrany před povětrnostními vlivy, paletizované zboží
-# Střecha: dvoudílná, přesuvná střecha, přesunutím jednoho dílu střechy se odkryje nakládací otvor o rozměrech 7080 mm x 2600 mm
+# Střecha: dvoudílná, přesuvná střecha, přesunutím jednoho dílu střechy se odkryje nakládací otvor o rozměrech 7080 x 2600
 # Otazka jestli vyradit pote co se objevi Gags, nebo az Habbillns. Spis Habbillns - otviraci strecha. Nebo vubec ?
+# Taeqrs - na spesnych vlacich nahrazeny od 1986 radou Gbkkqs(s), podle parostroje zruseny do roku 2001
+# Taes - v roce 2001 jeste v provozu 670 vozu, vyrazuji s prichodem Habbillns(s)
 # Mohly by mit rychlejsi nakladku nez Gags/Gbgs, ktere nemaji otviraci strechu. Diky strese i long_goods (drevo)
-# Alternativa Taeqrs (Zac) pro spesniny/postu (ma topeni pro zarazeni do osobniho vlaku), retire s prichodem gbkkqs(s) - 1986
+# Alternativa Taeqrs (Zac) pro spesniny/postu (ma topeni pro zarazeni do osobniho vlaku)
 # CSD - je jenom v "novych barvach", CD je vybledle...
 --------------------------------------------
 obj=vehicle
@@ -16,7 +19,7 @@ intro_year=1965
 retire_year=1993
 waytype=track
 freight=goods_
-payload=46
+payload=38
 length=8
 weight=24
 axles=4
@@ -115,7 +118,7 @@ intro_year=1993
 retire_year=2002
 waytype=track
 freight=goods_
-payload=46
+payload=38
 length=8
 weight=24
 axles=4

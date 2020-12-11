@@ -3,17 +3,22 @@
 # Gbss: 120 km/h, 18 t
 # Delka 14 m, Vaha 13,5 t 
 # Plocha 33 m2, objem 80 m3
+# Kapacita omezena hmotnosti 1 t/paletu, jinak je plocha na 30 palet (2x15 nebo 3x10)
 # Ložná hmotnost pro rychlost 120 km/h je 18,5 tuny. Pro rychlost 80 km/h až 26,5 tuny.
+# To by mohlo byt dobre pro vyber mezi gbs a gbgs (rychlost vs. kapacita?)
+# Nebo to vzit s omezenim na 18 t/napravu, at je vagon pro lehci koleje...
+# https://commons.wikimedia.org/wiki/File:Gbs_150_2_010_bok.jpg = 100 km/h = 27 tun (vaha jenom 12.7 t)
+# https://www.parostroj.net/katalog/nv/clanky/Zts/vozy_Zts.php3 - posledni revize 1994
 --------------
 obj=vehicle
 name=csd_gbs
 speed=100
 copyright=Lubak91
 intro_year=1965
-retire_year=1993
+retire_year=1994
 waytype=track
 freight=goods_
-payload=25
+payload=22
 length=7
 weight=13.5
 axles=2
@@ -42,7 +47,7 @@ name=csd_gbss
 speed=120
 copyright=Lubak91
 intro_year=1965
-retire_year=1993
+retire_year=1994
 waytype=track
 freight=goods_
 payload=18

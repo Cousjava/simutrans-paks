@@ -242,12 +242,9 @@ freightimage[sw]=db_lgs_40_post.0.7,0,4
 
 obj=vehicle
 name=db_lgs_light
-# ???
-#obj=vehicle
-#name=db_lgs_post
 Copyright=Lubak91
 waytype=track
-freight=woodchips
+freight=corn
 payload=90
 speed=100
 cost=599000

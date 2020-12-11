@@ -4,6 +4,8 @@
 # 2 - s brzdou bozic bez budky, delka 10 m, hmotnost 10.2 t
 # 3 - bez brzdy, delka 10 m, hotnost 9.4 t
 # Lozna hmotnost 29 t, objem 61 m3, plocha 23.8 m2; posta 4 pytle na m2
+# Palety 3x7 = 21 kusu - zaroven dobre i pro 16 t/napravu.
+# Dle foto: tridy zatizeni A:21t B:25t C:28.5t, hmotnost 11.53 t, delka 10.7 m (s budkou)
 # Max rychlost 80 km/h
 # Ztrc/Glmrs/Glmqrs - prubezne parni topeni (100 km/h), nahrazeno az Gbkkqs(s) 1986
 # Ztrcc - vytapene (q = elektricky, s= 100 km/h)
@@ -15,20 +17,21 @@
 # - generatorove vozy
 # - zive ryby
 # M/Hks - ziva zvirata, krmici zlaby, vetrani, brzdarska plosina (budka jen prototyp 1956), serie 1959-61, zruseni do 1993,
-# kapacita asi 16 zvirat, prepazka pro oddeleni 2 druhu, zlaby ve dvou vyskach. (Hks -> 100 km/h ?)
+# kapacita asi 8 zvirat (1m na sirku), prepazka pro oddeleni 2 druhu, zlaby ve dvou vyskach. (Hks -> 100 km/h ?)
+# 1956 - prototyp, 1959 1. serie, 1960 2. serie, 1961 3. serie pojezd UIC -> 100 km/h mozna jen 3. serie ?
 # https://www.parostroj.net/katalog/nv/clanky/M_zvirata/M_zvirata.php
 # http://diskuze.modely.biz/viewtopic.php?f=11&t=3059
 # R - kyselina solna
 ----------
 obj=vehicle
-name=csd_ztr
+name=csd_glm
 speed=80
 copyright=Lubak91
 intro_year=1946
 retire_year=1993
 waytype=track
 freight=goods_
-payload=29
+payload=21
 length=5
 weight=10
 axles=2
@@ -53,14 +56,14 @@ FreightImage[s]=csd_ztrc.0.6,0,4
 FreightImage[sw]=csd_ztrc.0.7,0,4
 -----------------
 obj=vehicle
-name=csd_ztrc
+name=csd_glmqs
 speed=100
 copyright=Lubak91
 intro_year=1946
 retire_year=1986
 waytype=track
 freight=Post
-payload=96
+payload=92
 length=5
 weight=10
 axles=2
@@ -85,14 +88,14 @@ FreightImage[s]=csd_ztrc.0.6,0,4
 FreightImage[sw]=csd_ztrc.0.7,0,4
 ------------
 obj=vehicle
-name=csd_m
+name=csd_hks
 speed=100
 copyright=Lubak91
-intro_year=1956
+intro_year=1959
 retire_year=1993
 waytype=track
 freight=livestock
-payload=6
+payload=8
 length=5
 weight=10
 axles=2

@@ -123,6 +123,7 @@ weight_per_unit=1000
 obj=good
 name=clay
 metric=tonnen
+copyright=none
 catg=2
 value=70
 speed_bonus=0
@@ -144,6 +145,15 @@ metric=tonnen
 catg=2
 value=76
 speed_bonus=3
+weight_per_unit=1000
+-----------------------
+obj=good
+name=woodchips
+copyright=none
+metric=tonnen
+catg=2
+value=120
+speed_bonus=5
 weight_per_unit=1000
 -----------------------
 ##########################
@@ -324,6 +334,7 @@ weight_per_unit=350
 -----------------------
 obj=good
 name=fruit
+copyright=none
 metric=paletten
 catg=1
 value=90
@@ -332,6 +343,7 @@ weight_per_unit=800
 -----------------------
 obj=good
 name=vegetables
+copyright=none
 metric=paletten
 catg=1
 value=90
@@ -340,6 +352,7 @@ weight_per_unit=800
 -----------------------
 obj=good
 name=bricks
+copyright=none
 metric=paletten
 catg=1
 value=70
@@ -348,6 +361,7 @@ weight_per_unit=800
 -----------------------
 obj=good
 name=china
+copyright=none
 metric=paletten
 catg=1
 value=70
@@ -427,7 +441,7 @@ catg=3
 value=80
 #value=31
 speed_bonus=4
-weight_per_unit=860
+weight_per_unit=700
 -----------------------
 obj=good
 name=Ethanol
@@ -438,7 +452,7 @@ value=106
 #value=42
 #value=31
 speed_bonus=6
-weight_per_unit=780
+weight_per_unit=789
 -----------------------
 obj=good
 name=Chemicals
@@ -497,7 +511,7 @@ metric=
 catg=0
 value=70
 speed_bonus=2
-weight_per_unit=100
+weight_per_unit=1000
 -----------------------
 ###########################
 ### catg=4 COOLED GOODS ###
@@ -562,7 +576,7 @@ catg=5
 value=100
 #value=40
 speed_bonus=15
-weight_per_unit=1000
+weight_per_unit=1030
 -----------------------
 ######################################
 ### catg=7 BULK FOOD (LIGHT GOODS) ###
@@ -571,8 +585,7 @@ weight_per_unit=1000
 # vozidla - vysypne kryte
 # driv sem patrily i vlna, bavlna - presunuto do catg=1
 # chmel, len, zelenina, ovoce, a pod taky do catg=1
-# brambory, repa - zablacene - do catg=2
-# piliny? no to by mozna mely taky byt catg=2
+# brambory, repa - zablacene - do catg=2, stepka taky
 # je to pouzito pro kontajnerove vozy Lgs, Sggrss, Sgnss
 # cukr? - lze vozit ve velkem catg=7 (Tpps) i baleny catg=1
 # speed bonus stredni
@@ -621,14 +634,6 @@ value=70
 #value=29
 speed_bonus=5
 weight_per_unit=1000
------------------------
-obj=good
-name=woodchips
-catg=7
-metric=m3
-weight_per_unit=250
-value=120
-speed_bonus=5
 -----------------------
 #
 #

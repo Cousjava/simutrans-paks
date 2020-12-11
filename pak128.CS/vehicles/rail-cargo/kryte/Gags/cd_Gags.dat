@@ -1,6 +1,7 @@
 # Parostroj.net: # Vyroba 1976-78 a 1987-90 
 # Delka 16.52 m; hmotnost 25 / 24.5 t; Rychlost 100 km/2, prazdny (2. serie) 120 km/h
-# Lozna hmotnost 55 tun, objem 95 m3, plocha 40 m2
+# Lozna hmotnost 55 tun, objem 95 m3, plocha 40 m2, 20 t/axle
+# Pri pouziti europalet: 1200x800 to vychazi na 38 palet 2x19 = 2400x15200. Vagon ma plochu 2600x15200
 # přeprava nebalených kusových zásilek s nutností ochrany před povětrnostními vlivy, paletizované zboží, obilí
 # CSD - je jenom v "novych barvach", CD je vybledle...
 # Obrazek csd-gags-za by mohl jit pouzit pro tu prvni serii - jine podvozky
@@ -46,9 +47,9 @@ intro_year=1976
 retire_year=1993
 waytype=track
 freight=goods_
-payload=55
+payload=38
 length=8
-weight=24.5
+weight=25
 axles=4
 bidirectional=1
 cost=859900
@@ -78,9 +79,9 @@ copyright=Lubak91
 intro_year=1993
 waytype=track
 freight=goods_
-payload=55
+payload=38
 length=8
-weight=24.5
+weight=25
 axles=4
 bidirectional=1
 cost=859900

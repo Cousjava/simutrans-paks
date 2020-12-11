@@ -1,3 +1,6 @@
+# parostroj: rekostrikce z Res, prototyp 1994, serie 2001, 2004-5, 2008-9
+# Rychlost 100 (prazdny 120), hmotnost cca 25 t (+/- 0.5 t podle serie)
+# Lozna hmotnost 55, plocha 49 m2, objem 102 m3, druha seria 130 m3, 23x2 palety
 -----------------------------------
 
 obj=vehicle
@@ -7,10 +10,12 @@ copyright=Lubak91
 intro_year=2000
 waytype=track
 freight=goods_
-payload=55
+payload=46
 length=10
 
 weight=25
+axles=4
+bidirectional=1
 cost=100000
 runningcost=10
 fixed_cost=64

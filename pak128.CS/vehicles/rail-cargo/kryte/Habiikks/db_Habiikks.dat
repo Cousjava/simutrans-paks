@@ -1,3 +1,5 @@
+# podle fotek: objem 188, plocha 60, delka 21, lozna hmotnost 42
+# vlastni hmotnost 30 t, delka pres narazniky 24, rychlost 100
 ----------------------------
 
 obj=vehicle
@@ -7,7 +9,7 @@ copyright=Lubak91
 intro_year=1994
 waytype=track
 freight=goods_
-payload=60
+payload=42
 length=12
 weight=30
 axles=4
@@ -34,7 +36,7 @@ copyright=Lubak91
 intro_year=1994
 waytype=track
 freight=goods_
-payload=60
+payload=42
 length=12
 weight=30
 axles=4
