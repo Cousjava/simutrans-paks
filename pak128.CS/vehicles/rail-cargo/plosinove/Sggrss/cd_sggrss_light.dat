@@ -1,19 +1,26 @@
-
+# Tady uz se cdcargo a vagonka poprad brutalne rozchazi:
+# CDCargo: hmotnost 28.9, lozna hmotnost 106.1 (100 km/h), 94.1 (120 km/h), delka 26.7 m
+# Poprad: hmotnost 25.3, lozna hmotnost 90 t (120 km/h)
+# 4 kontajnery 20' (po 11 tunach stepky) - vic se nevejde objemove
+# Zvladlo by i uhli (23 tun na kontejner - 22t/axle)
+# 28.9/2 + 2*2.9 = 14.45 + 5.8 = 20.25 (pul vagon + 2 prazdne kontejnery)
 ------------------------------------------
 
 obj=vehicle
 name=cd_sggrss_light_a
 Copyright=Lubak91
 waytype=track
-freight=corn
-payload=55
+freight=woodchips
+payload=22
 speed=120
 cost=749000
-weight=14
+weight=20
 length=7
+axles=3
+bidirectional=1
 RunningCost=9
 fixed_cost=69
-intro_year=2004
+intro_year=2005
 retire_year=2008
 Constraint[Next][0]=cd_sggrss_light_b
 
@@ -41,15 +48,17 @@ obj=vehicle
 name=cd_sggrss_light_b
 Copyright=Lubak91
 waytype=track
-freight=corn
-payload=55
+freight=woodchips
+payload=22
 speed=120
 cost=749000
-weight=14
+weight=20
 length=7
+axles=3
+bidirectional=1
 RunningCost=9
 fixed_cost=69
-intro_year=2004
+intro_year=2005
 retire_year=2008
 Constraint[Prev][0]=cd_sggrss_light_a
 

@@ -1,3 +1,10 @@
+# http://tatravagonka.sk/wagons/sggnss-80/
+# Hmotnost 21.5 t, lozna hmotnost 68.5 t, delka 25.94 m
+# 100 km/h pri 22.5 t/axle, 120 km/h pri 20 t/axle (58 t naklad)
+# Naklad 2x40 kontejner, nebo ruzne kombinace mensich
+# 40' kontejner = 28 palet / 26.6t + 3.8t za kontejner
+# Vagon + 2 kontajnery = 29 t, na naklad zbyva 51 t
+# Vetsina palet je < 1 t, dame tedy 2x26 = 52 t
 -----------------------------------
 
 obj=vehicle
@@ -5,11 +12,13 @@ name=mtr_sggnss_80
 Copyright=Lubak91
 waytype=track
 freight=goods_
-payload=68
+payload=52
 speed=120
 cost=1699000
-weight=22
+weight=29
 length=13
+axles=4
+bidirectional=1
 RunningCost=14
 fixed_cost=108
 intro_year=2012

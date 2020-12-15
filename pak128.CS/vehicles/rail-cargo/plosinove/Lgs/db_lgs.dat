@@ -1,3 +1,16 @@
+# Existuje asi hodne ruznych variant Lgs
+# vygooglil sem nejstarsi snad az z roku 1966-70
+# Hmotnosti: 10.8, 11.4, 11.9, 12.5, 13.9 t
+# Kontajner 40 stop, prazdny 3.8t, nebo 2x20 stop, 2x2.2 t
+# Dejme tomu tedy vagon + kontajner = 16 tun, 24 tun naklad
+# Celkove max 20 t/napravu (2 napravy), 100 km/h
+# Max plocha 25 palet. 27.9 m2 (posta 2x20' = 2x13.5 m2 x 4 = 108 baliku)
+# Nemecka posta kupuje DHL v letech 1998 - 2002
+# Chladirensky kontajner cca +0.7 tuny -> o tunu mene nakladu.
+# http://www.hz-kontejnery.cz/detail-kontejneru?id=693 (40 ft = 23 EU palet)
+# Kontajner na stepku: 42 m3 * 250 kg/m3 = 10.5 t (od 2005)
+# Jinak je nosnost kontajneru 23 t, prazdny 2.7 - 2.9 t (20 ft)
+# Takze 2x3 t + 12 t vagon = 18 t, naklad 22 t, to by slo...
 -----------------------------------
 
 obj=vehicle
@@ -5,14 +18,16 @@ name=db_lgs
 Copyright=Lubak91
 waytype=track
 freight=goods_
-payload=40
+payload=24
 speed=100
 cost=599000
-weight=13
+weight=16
 length=7
+axles=2
+bidirectional=1
 RunningCost=7
 fixed_cost=45
-intro_year=1994
+intro_year=1966
 
 freightimagetype[0]=Plastik
 freightimagetype[1]=Bucher
@@ -152,11 +167,13 @@ name=db_lgs_frost
 Copyright=Lubak91
 waytype=track
 freight=food
-payload=40
+payload=23
 speed=100
 cost=599000
-weight=13
+weight=17
 length=7
+axles=2
+bidirectional=1
 RunningCost=7
 fixed_cost=45
 intro_year=1994
@@ -211,14 +228,16 @@ name=db_lgs_post
 Copyright=Lubak91
 waytype=track
 freight=Post
-payload=120
+payload=108
 speed=100
 cost=599000
-weight=13
+weight=16
 length=7
+axles=2
+bidirectional=1
 RunningCost=7
 fixed_cost=45
-intro_year=1994
+intro_year=1999
 
 emptyimage[w]=db_lgs_empty.0.0,0,4
 emptyimage[nw]=db_lgs_empty.0.1,0,4
@@ -244,15 +263,17 @@ obj=vehicle
 name=db_lgs_light
 Copyright=Lubak91
 waytype=track
-freight=corn
-payload=90
+freight=woodchips
+payload=22
 speed=100
 cost=599000
-weight=13
+weight=18
 length=7
+axles=2
+bidirectional=1
 RunningCost=7
 fixed_cost=45
-intro_year=1994
+intro_year=2005
 
 emptyimage[w]=db_lgs_empty.0.0,0,4
 emptyimage[nw]=db_lgs_empty.0.1,0,4

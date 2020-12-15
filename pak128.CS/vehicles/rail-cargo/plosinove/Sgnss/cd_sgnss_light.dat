@@ -1,19 +1,32 @@
+# Parostroj: delka 19.640, rychlost 120, hmotnost 20 t
+# Lozna hmotnost 60t, 20 t/axle, lozna delka 18.4 m (3x20 ft), podle cdcargo az 70t (22.5 t/axle) pri plne rychlosti
+# Podle http://tatravagonka.sk/wagons/sgnss-60/ hmotnost 19t, lozna hmotnost 71t, ale jen 100 km/h. Pro 120 km/h max 61 t
+# Podle https://www.systemylogistiky.cz/2010/12/02/stepka-po-zeleznici-nove-kontejnery-a-specialni-vozik-nahradily-drahou-kamionovou-prepravu/
+# 126 m3 stepky na vagon, pri 250 kg/m3 to dela 31.5 t (asi jezdi nekde po kolejich 16 t/axle)
+# Podle http://www.cdcargologistics.cz/cs/nase-sluzby/system-innofreight/typy-kontejneru
+# Hmotnost kontejneru 2.9t, nosnost 23 t, objem 45 m3
+# Realne lze nalozit 60t - 3x3 t = 51t (17 t/kontejner)
+# Chtelo by to druhou variantu = heavy na uhli s plnou palbou (od 6.2.2014)
+# https://www.cdcargo.cz/home/-/asset_publisher/9UCZA9soM9d6/content/uhli-do-plzne-v-kontejnerech-innofreight
+# Pry kontejner na 27.5 t uhli - podle obrazku po dvou na vagonu, kratsi 4-napravove. 
 ------------------------------------------
 
 obj=vehicle
 name=cd_sgnss_light
 Copyright=Lubak91
 waytype=track
-freight=corn
-payload=135
+freight=woodchips
+payload=33
 speed=120
 cost=949000
-weight=20
+weight=29
 length=10
+axles=4
+bidirectional=1
 RunningCost=15
 fixed_cost=115
 intro_year=2005
-retire_month=11
+retire_month=12
 retire_year=2007
 
 emptyimage[w]=cdc_sgnss_empty.0.0,0,4
