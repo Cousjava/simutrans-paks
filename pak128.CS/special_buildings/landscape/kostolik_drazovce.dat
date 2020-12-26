@@ -1,0 +1,16 @@
+obj=building
+name=kostolik_drazovce
+copyright=Lubak91
+Type=cur
+level=96
+intro_year=1150
+#intro_month=0
+needs_ground=1
+build_time=0
+chance=10
+#climates=temperate
+Dims=1,1,4
+BackImage[0][0][0][0][0][0]=kostolik_drazovce.0.0
+BackImage[1][0][0][0][0][0]=kostolik_drazovce.0.3
+BackImage[2][0][0][0][0][0]=kostolik_drazovce.0.2
+BackImage[3][0][0][0][0][0]=kostolik_drazovce.0.1 
