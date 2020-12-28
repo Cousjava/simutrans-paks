@@ -86,6 +86,13 @@ Nejstarší tunely:
 -- 1837 Oberau (Dresden - Leipzig)
 -- 1839-1841 Gumpoldskirchen (Wien - Gloggnitz) - neco jako Slavicsky, https://de.wikipedia.org/wiki/Busserltunnel
 
+- Chocen 1843-1845 (StEG)
+-- V březnu 1843 byly zahájeny práce na tunelu a ražba byla
+-- ukončena 4. března 1844. Vyzdění a zaklenutí tunelu bylo započato
+-- 23. července 1844 a práce byly ukončeny slavnostním osazením
+-- posledního klenáku 17. července 1845.
+-- Zrusen (prokopan zarez) 1950.
+
 - Slavíčský 1845-1847 (KFNB)
 -- puvodni plan 12m hluboky zarez
 -- v srpnu 1845 zahajena stavba
