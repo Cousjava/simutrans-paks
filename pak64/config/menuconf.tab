@@ -70,6 +70,9 @@ icon_height = 32
 # WKZ_SET_CLIMATE=39
 # WKZ_ROTATE_BUILDING=40
 # WKZ_MERGE_STOP=41
+# TOOL_EXEC_SCRIPT=42
+# TOOL_EXEC_TWO_CLICK_SCRIPT=43
+# TOOL_PLANT_GROUNDOBJ=44
 
 general_tool[0]=0,0,9,a
 general_tool[1]=1,1,14,r
@@ -160,7 +163,8 @@ general_tool[41]=18,11,
 # WKZ_TOGGLE_RESERVATION=33
 # WKZ_VIEW_OWNER=34
 # WKZ_HIDE_UNDER_CURSOR=35
-#
+# TOOL_MOVE_MAP=36
+# TOOL_ROLLUP_ALL_WIN=37
 simple_tool[0]=0,p
 simple_tool[1]=1,W
 simple_tool[2]=2,c
@@ -227,7 +231,9 @@ simple_tool[34]=,O
 # WKZ_SCENARIO_INFO=31
 # WKZ_LIST_DEPOT=32
 # WKZ_LIST_VEHICLE=33
-#
+# DIALOG_SCRIPT_TOOL=34
+# DIALOG_EDIT_GROUNDOBJ=35
+
 dialog_tool[0]=0,?
 dialog_tool[1]=1,Q
 dialog_tool[2]=2,m
@@ -262,6 +268,8 @@ dialog_tool[30]=28
 dialog_tool[31]=29
 dialog_tool[32]=30,^d
 dialog_tool[33]=31,^e
+dialog_tool[34]=31
+dialog_tool[35]=32
 
 
 # FINAL SECTION: compose all tool bars
@@ -492,23 +500,24 @@ toolbar[9][9]=general_tool[40]
 toolbar[9][10]=general_tool[35]
 toolbar[9][11]=dialog_tool[23]
 toolbar[9][12]=general_tool[30]
-toolbar[9][13]=simple_tool[6]
-toolbar[9][14]=dialog_tool[24]
-toolbar[9][15]=general_tool[28]
+toolbar[9][13]=dialog_tool[35]
+toolbar[9][14]=simple_tool[6]
+toolbar[9][15]=dialog_tool[24]
+toolbar[9][16]=general_tool[28]
 # fill and draw bassins (images would be 30 and 31)
-toolbar[9][16]=general_tool[38],30,,+1
-toolbar[9][17]=general_tool[38],31,,-1
+toolbar[9][17]=general_tool[38],30,,+1
+toolbar[9][18]=general_tool[38],31,,-1
 # new terraforming
-toolbar[9][18]=general_tool[39],32,,0
-toolbar[9][19]=general_tool[39],33,,1
-toolbar[9][20]=general_tool[39],34,,2
-toolbar[9][21]=general_tool[39],35,,3
-toolbar[9][22]=general_tool[39],36,,4
-toolbar[9][23]=general_tool[39],37,,5
-toolbar[9][24]=general_tool[39],38,,6
-toolbar[9][25]=general_tool[39],39,,7
+toolbar[9][19]=general_tool[39],32,,0
+toolbar[9][20]=general_tool[39],33,,1
+toolbar[9][21]=general_tool[39],34,,2
+toolbar[9][22]=general_tool[39],35,,3
+toolbar[9][23]=general_tool[39],36,,4
+toolbar[9][24]=general_tool[39],37,,5
+toolbar[9][25]=general_tool[39],38,,6
+toolbar[9][26]=general_tool[39],39,,7
 # second pause
-toolbar[9][26]=simple_tool[0],,^p,
+toolbar[9][27]=simple_tool[0],,^p,
 
 # list tools
 toolbar[10][0]=dialog_tool[3]

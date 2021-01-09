@@ -79,6 +79,10 @@ Image[29]=> wkz_icons.1.14
 # depot and vehicle lists
 Image[30]=> wkz_icons.3.16
 Image[31]=> wkz_icons.3.17
+# scripted tool icon
+Image[31]=> wkz_icons.0.17
+# groundobj editor
+Image[32]=> wkz_icons.3.22
 --
 Obj=menu
 name=BarTools
