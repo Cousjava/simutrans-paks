@@ -18,12 +18,17 @@ CONFIG ?= config.default
 -include $(CONFIG)
 
 MAKEOBJ ?= makeobj
-PAKNAME ?= pak128.CS
 DESTDIR ?= .
 PAKDIR  ?= $(DESTDIR)/$(PAKNAME)
 DESTFILE ?= $(PAKNAME)
 
 EXTENDED := $(shell makeobj capabilities 2>&1 > /dev/null |grep Extended)
+
+ifdef EXTENDED
+	PAKNAME ?= pak128.CS-Ex
+else
+	PAKNAME ?= pak128.CS
+endif
 
 NAMEPREFIX ?=
 NAMESUFFIX ?=
@@ -248,7 +253,7 @@ $(DIRS64):
 $(DIRS128):
 	@echo "===> PAK128 $@"
 	@mkdir -p $(PAKDIR)
-	@$(MAKEOBJ) PAK128 $(PAKDIR)/$(call make_name,$@) $@/ > /dev/null
+	@$(MAKEOBJ) quiet PAK128 $(PAKDIR)/$(call make_name,$@) $@/ > /dev/null
 
 $(DIRS160):
 	@echo "===> PAK160 $@"

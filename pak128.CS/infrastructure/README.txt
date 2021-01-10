@@ -122,6 +122,10 @@ Nejstarší tunely:
 -- 977 000 rakúskych korún, 595,61 m (mensi prierez)
 -- elektrifikace 31.10.1967 az do 1969
 
+V ČSSR skončila éra používání klasických tunelovacích metod
+rokem 1982 na trati Brno – Česká Třebová při rekonstrukci části
+tunelu č.7.
+
 Telegraf (morse?): Brno-Blansko 1861
 140 km/h: 10.5.1988 (Zaječí - Šakvice)
 160 km/h: 2.8.1993 (Úvaly - Poříčany)
