@@ -17,14 +17,14 @@ copyright=VTPsim
 Constraint[Prev][0]=none
 Constraint[Next][0]=none
 
-emptyimage[w]=Solaris_Urbino_8.1
-emptyimage[nw]=Solaris_Urbino_8.2
-emptyimage[n]=Solaris_Urbino_8.3
-emptyimage[ne]=Solaris_Urbino_8.4
-emptyimage[e]=Solaris_Urbino_8.5
-emptyimage[se]=Solaris_Urbino_8.6
-emptyimage[s]=Solaris_Urbino_8.7
-emptyimage[sw]=Solaris_Urbino_8.8
+emptyimage[w]=Solaris_Urbino_8.0.1
+emptyimage[nw]=Solaris_Urbino_8.0.2
+emptyimage[n]=Solaris_Urbino_8.0.3
+emptyimage[ne]=Solaris_Urbino_8.0.4
+emptyimage[e]=Solaris_Urbino_8.0.5
+emptyimage[se]=Solaris_Urbino_8.0.6
+emptyimage[s]=Solaris_Urbino_8.0.7
+emptyimage[sw]=Solaris_Urbino_8.0.8
 -----------------------------------
 
 obj=vehicle

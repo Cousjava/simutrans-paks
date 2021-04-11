@@ -17,14 +17,14 @@ copyright=VTPsim
 Constraint[Prev][0]=none
 Constraint[Next][0]=none
 
-emptyimage[w]=SOR_CN_8.1
-emptyimage[nw]=SOR_CN_8.2
-emptyimage[n]=SOR_CN_8.3
-emptyimage[ne]=SOR_CN_8.4
-emptyimage[e]=SOR_CN_8.5
-emptyimage[se]=SOR_CN_8.6
-emptyimage[s]=SOR_CN_8.7
-emptyimage[sw]=SOR_CN_8.8
+emptyimage[w]=SOR_CN_8.0.1
+emptyimage[nw]=SOR_CN_8.0.2
+emptyimage[n]=SOR_CN_8.0.3
+emptyimage[ne]=SOR_CN_8.0.4
+emptyimage[e]=SOR_CN_8.0.5
+emptyimage[se]=SOR_CN_8.0.6
+emptyimage[s]=SOR_CN_8.0.7
+emptyimage[sw]=SOR_CN_8.0.8
 ----------------------------------
 obj=vehicle
 cost=427270
@@ -47,14 +47,14 @@ copyright=VTPsim
 Constraint[Prev][0]=none
 Constraint[Next][0]=none
 
-emptyimage[w]=SOR_CN_8_old.1
-emptyimage[nw]=SOR_CN_8_old.2
-emptyimage[n]=SOR_CN_8_old.3
-emptyimage[ne]=SOR_CN_8_old.4
-emptyimage[e]=SOR_CN_8_old.5
-emptyimage[se]=SOR_CN_8_old.6
-emptyimage[s]=SOR_CN_8_old.7
-emptyimage[sw]=SOR_CN_8_old.8
+emptyimage[w]=SOR_CN_8_old.0.1
+emptyimage[nw]=SOR_CN_8_old.0.2
+emptyimage[n]=SOR_CN_8_old.0.3
+emptyimage[ne]=SOR_CN_8_old.0.4
+emptyimage[e]=SOR_CN_8_old.0.5
+emptyimage[se]=SOR_CN_8_old.0.6
+emptyimage[s]=SOR_CN_8_old.0.7
+emptyimage[sw]=SOR_CN_8_old.0.8
 -----------------------------------------
 obj=vehicle
 name=sor_cn_8,5_pid

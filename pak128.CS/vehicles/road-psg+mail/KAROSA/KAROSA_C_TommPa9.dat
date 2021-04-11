@@ -208,14 +208,14 @@ copyright=VTPsim
 Constraint[Prev][0]=none
 Constraint[Next][0]=none
 
-emptyimage[w]=KAROSA_C935.1
-emptyimage[nw]=KAROSA_C935.2
-emptyimage[n]=KAROSA_C935.3
-emptyimage[ne]=KAROSA_C935.4
-emptyimage[e]=KAROSA_C935.5
-emptyimage[se]=KAROSA_C935.6
-emptyimage[s]=KAROSA_C935.7
-emptyimage[sw]=KAROSA_C935.8
+emptyimage[w]=KAROSA_C935.0.1
+emptyimage[nw]=KAROSA_C935.0.2
+emptyimage[n]=KAROSA_C935.0.3
+emptyimage[ne]=KAROSA_C935.0.4
+emptyimage[e]=KAROSA_C935.0.5
+emptyimage[se]=KAROSA_C935.0.6
+emptyimage[s]=KAROSA_C935.0.7
+emptyimage[sw]=KAROSA_C935.0.8
 ----------------------------------
 obj=vehicle
 cost=772671
