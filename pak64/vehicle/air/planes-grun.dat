@@ -11,6 +11,7 @@ waytype=air
 engine_type=diesel
 freight=Passagiere
 payload=76
+loading_time=4000
 speed=852
 gear=80
 cost=3890000
