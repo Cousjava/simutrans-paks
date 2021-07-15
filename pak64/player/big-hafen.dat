@@ -192,3 +192,24 @@ BackImage[0][0][0][0][0]=new-alpha3.2.4
 BackImage[3][0][0][0][0]=new-alpha4.2.3
 BackImage[2][0][0][0][0]=new-alpha2.2.0
 --
+Obj=building
+Name=LakeShipStop
+Dims=1,1,4
+NoInfo=1
+type=dock
+enables_ware=1
+enables_pax=1
+enables_post=1
+#level=4
+capacity=168
+maintenance=1750
+cost=294500
+intro_year = 1810
+copyright=FrankP
+icon=> lakestop.0.5
+cursor=lakestop.0.6
+BackImage[0][0][0][0][0]=lakestop.0.1
+BackImage[1][0][0][0][0]=lakestop.0.2
+BackImage[2][0][0][0][0]=lakestop.0.3
+BackImage[3][0][0][0][0]=lakestop.0.4
+--
