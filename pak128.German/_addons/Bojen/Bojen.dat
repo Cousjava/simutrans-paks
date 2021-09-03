@@ -1,0 +1,49 @@
+---------------------------------
+#	PAK128.german
+#	Spieler Gebaeude
+#    Neu: 26-08-2021
+---------------------------------
+Obj=building
+Name=Tonne_Backbord
+type=depot
+waytype=water
+level=1
+cost=5000
+maintenance=1
+intro_year=1897
+intro_month=1
+animation_time=290
+Dims=1,1,2
+icon=> Bojen_BI.1.0
+cursor=Bojen_BI.0.0,0,32
+BackImage[0][0][0][0][0][0]=Bojen_BI.0.0,0,32
+BackImage[0][0][0][0][1][0]=Bojen_BI.0.0,0,31
+BackImage[1][0][0][0][0][0]=Bojen_BI.0.0,0,32
+BackImage[1][0][0][0][1][0]=Bojen_BI.0.0,0,31
+FrontImage[0][0][0][0][0][0]=Bojen_FI.0.0,0,32
+FrontImage[0][0][0][0][1][0]=Bojen_FI.0.2,0,31
+FrontImage[1][0][0][0][0][0]=Bojen_FI.0.0,0,32
+FrontImage[1][0][0][0][1][0]=Bojen_FI.0.2,0,31
+----------------------------------------------
+Obj=building
+Name=Tonne_Steuerbord
+type=depot
+waytype=water
+level=1
+cost=5000
+maintenance=1
+intro_year=1897
+intro_month=1
+animation_time=290
+Dims=1,1,2
+icon=> Bojen_BI.1.1
+cursor=Bojen_BI.0.1
+BackImage[0][0][0][0][0][0]=Bojen_BI.0.1,0,32
+BackImage[0][0][0][0][1][0]=Bojen_BI.0.1,0,31
+BackImage[1][0][0][0][0][0]=Bojen_BI.0.1,0,32
+BackImage[1][0][0][0][1][0]=Bojen_BI.0.1,0,31
+FrontImage[0][0][0][0][0][0]=Bojen_FI.0.1,0,32
+FrontImage[0][0][0][0][1][0]=Bojen_FI.0.2,0,31
+FrontImage[1][0][0][0][0][0]=Bojen_FI.0.1,0,32
+FrontImage[1][0][0][0][1][0]=Bojen_FI.0.2,0,31
+----------------------------------------------

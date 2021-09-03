@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 10-11-2020
+---------------------------------
+obj=vehicle
+name=Koe1
+copyright=Makie
+intro_year=1934
+intro_month=1
+retire_year=1989
+retire_month=3
+cost=164400
+runningcost=1
+fixed_cost=41
+engine_type=diesel
+waytype=track
+speed=23
+gear=300
+weight=10
+power=28
+sound=koe1.wav
+length=5
+EmptyImage[S]=Koe.0.0
+EmptyImage[E]=Koe.0.1
+EmptyImage[SE]=Koe.0.2
+EmptyImage[SW]=Koe.0.3
+EmptyImage[N]=Koe.0.4
+EmptyImage[W]=Koe.0.5
+EmptyImage[NW]=Koe.0.6
+EmptyImage[NE]=Koe.0.7
+----------------------------------

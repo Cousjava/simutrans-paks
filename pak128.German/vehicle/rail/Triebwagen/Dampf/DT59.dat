@@ -1,0 +1,39 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 02.09.2021
+---------------------------------
+obj=vehicle
+name=DT_59
+copyright=pumuckl999
+intro_year=1937
+intro_month=9
+retire_year=1975
+retire_month=2
+cost=10902000
+runningcost=135
+fixed_cost=3213
+waytype=track
+engine_type=steam
+smoke=Steam2
+sound=koe1.wav
+power=222
+gear=200
+freight=Passagiere
+payload=48
+speed=110
+length=14
+weight=54
+constraint[prev][0]=any
+constraint[prev][1]=none
+constraint[next][0]=any
+constraint[next][1]=none
+EmptyImage[S]=DT59.0.0
+EmptyImage[E]=DT59.0.1
+EmptyImage[SE]=DT59.0.2
+EmptyImage[SW]=DT59.0.3,4,0
+EmptyImage[N]=DT59.0.4
+EmptyImage[W]=DT59.0.5
+EmptyImage[NW]=DT59.0.6
+EmptyImage[NE]=DT59.0.7,-6,0
+-----------------------------------

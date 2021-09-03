@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 01-12-2020
+---------------------------------
+obj=vehicle
+name=E69
+copyright=Makie
+intro_year=1905
+intro_month=1
+#retire_year=1989
+#retire_month=3
+cost=1995000
+runningcost=34
+fixed_cost=835
+waytype=electrified_track
+speed=50
+gear=200
+weight=23.5
+power=352
+sound=E69.wav
+length=6
+EmptyImage[S]=E69.0.0
+EmptyImage[E]=E69.0.1
+EmptyImage[SE]=E69.0.2
+EmptyImage[SW]=E69.0.3
+EmptyImage[N]=E69.0.4
+EmptyImage[W]=E69.0.5
+EmptyImage[NW]=E69.0.6
+EmptyImage[NE]=E69.0.7
+----------------------------------

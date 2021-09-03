@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 24-10-2020
+---------------------------------
+obj=vehicle
+name=Uaoos-y_948
+copyright=pumuckl999
+intro_year=1980
+intro_month=1
+retire_year=2005
+retire_month=12
+cost=9243000
+runningcost=187
+fixed_cost=7692
+waytype=track
+freight=Zement_lose
+payload=60
+weight=24.3
+speed=100
+length=10
+sound=-1
+EmptyImage[S]=Uaoos-y948.0.0
+EmptyImage[E]=Uaoos-y948.0.1
+EmptyImage[SE]=Uaoos-y948.0.2
+EmptyImage[SW]=Uaoos-y948.0.3
+EmptyImage[N]=Uaoos-y948.0.4
+EmptyImage[W]=Uaoos-y948.0.5
+EmptyImage[NW]=Uaoos-y948.0.6
+EmptyImage[NE]=Uaoos-y948.0.7

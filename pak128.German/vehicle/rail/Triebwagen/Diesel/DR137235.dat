@@ -1,0 +1,37 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 29.08.2021
+---------------------------------
+obj=vehicle
+name=DR_137235
+copyright=pumuckl999
+intro_year=1937
+intro_month=11
+retire_year=1967
+retire_month=6
+cost=16809000
+runningcost=201
+fixed_cost=4022
+waytype=track
+engine_type=diesel
+power=206
+gear=200
+freight=Passagiere
+payload=108
+speed=90
+length=14
+weight=37.5
+constraint[prev][0]=any
+constraint[prev][1]=none
+constraint[next][0]=any
+constraint[next][1]=none
+EmptyImage[S]=DR137235.0.0
+EmptyImage[E]=DR137235.0.1
+EmptyImage[SE]=DR137235.0.2
+EmptyImage[SW]=DR137235.0.3,4,0
+EmptyImage[N]=DR137235.0.4
+EmptyImage[W]=DR137235.0.5
+EmptyImage[NW]=DR137235.0.6
+EmptyImage[NE]=DR137235.0.7,-6,0
+-----------------------------------

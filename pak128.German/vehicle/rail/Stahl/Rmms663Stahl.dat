@@ -1,0 +1,37 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 25-10-2020
+#    Letzte Bearbeitung:
+---------------------------------
+obj=vehicle
+name=Rmms663Stahl
+copyright=pumuckl999
+intro_year=1968
+intro_month=1
+cost=16140000
+runningcost=279
+fixed_cost=13654
+waytype=track
+freight=Stahl
+payload=59
+speed=120
+weight=21
+length=9
+EmptyImage[S]=Rmms663.0.0
+EmptyImage[E]=Rmms663.0.1
+EmptyImage[SE]=Rmms663.0.2
+EmptyImage[SW]=Rmms663.0.3
+EmptyImage[N]=Rmms663.0.4
+EmptyImage[W]=Rmms663.0.5
+EmptyImage[NW]=Rmms663.0.6
+EmptyImage[NE]=Rmms663.0.7
+FreightImage[S]=Rmms663.4.0
+FreightImage[E]=Rmms663.4.1
+FreightImage[SE]=Rmms663.4.2
+FreightImage[SW]=Rmms663.4.3
+FreightImage[N]=Rmms663.4.4
+FreightImage[W]=Rmms663.4.5
+FreightImage[NW]=Rmms663.4.6
+FreightImage[NE]=Rmms663.4.7
+--------------------------------------

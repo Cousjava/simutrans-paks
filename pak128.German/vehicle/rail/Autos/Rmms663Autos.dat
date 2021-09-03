@@ -1,0 +1,36 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 25-10-2020
+---------------------------------
+obj=vehicle
+name=Rmms663Autos
+copyright=pumuckl999
+intro_year=1968
+intro_month=1
+cost=1830000
+runningcost=41
+fixed_cost=1729
+waytype=track
+freight=Autos
+payload=3
+speed=120
+weight=21
+length=9
+EmptyImage[S]=Rmms663.0.0
+EmptyImage[E]=Rmms663.0.1
+EmptyImage[SE]=Rmms663.0.2
+EmptyImage[SW]=Rmms663.0.3
+EmptyImage[N]=Rmms663.0.4
+EmptyImage[W]=Rmms663.0.5
+EmptyImage[NW]=Rmms663.0.6
+EmptyImage[NE]=Rmms663.0.7
+FreightImage[S]=Rmms663.1.0
+FreightImage[E]=Rmms663.1.1
+FreightImage[SE]=Rmms663.1.2
+FreightImage[SW]=Rmms663.1.3
+FreightImage[N]=Rmms663.1.4
+FreightImage[W]=Rmms663.1.5
+FreightImage[NW]=Rmms663.1.6
+FreightImage[NE]=Rmms663.1.7
+--------------------------------------

@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 25-08-2021
+---------------------------------
+obj=vehicle
+name=Bayrischer_E-Wagon_1858
+copyright=pumuckl999
+intro_year=1858
+intro_month=7
+retire_year=1913
+retire_month=2
+cost=1850000
+runningcost=45
+fixed_cost=756
+waytype=track
+freight=Vieh
+payload=10
+speed=60
+weight=5
+length=6
+Constraint[Prev][0]=any
+EmptyImage[S]=BayrischerE1858.0.0
+EmptyImage[E]=BayrischerE1858.0.1
+EmptyImage[SE]=BayrischerE1858.0.2
+EmptyImage[SW]=BayrischerE1858.0.3
+EmptyImage[N]=BayrischerE1858.0.4
+EmptyImage[W]=BayrischerE1858.0.5
+EmptyImage[NW]=BayrischerE1858.0.6
+EmptyImage[NE]=BayrischerE1858.0.7
+--------------------------------------

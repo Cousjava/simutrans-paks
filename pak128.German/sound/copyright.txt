@@ -1,0 +1,50 @@
+Die Urheber der Sound-Dateien.
+
+
+arctic.wav		von Pak64 kopiert 
+beaches.wav		von Pak64 kopiert 
+bigoldplanes.wav
+boat-horn.wav		von Pak64 kopiert 
+boing.wav			von Pak64 kopiert 
+br01.wav
+br143.wav
+BR218.wav			Makie
+br220.wav
+br401.wav
+BR41.wav			Makie
+BR50.wav			Makie
+bus.wav			von Pak64 kopiert mit etwas Ketten rasseln unterlegt
+buzzsaw.wav		von Pak64 kopiert 
+cash.wav			von Pak64 kopiert 
+click.wav			von Pak64 kopiert etwas lauter geändert
+comet-jet.wav		von Pak64 kopiert
+crossing.wav		von Pak64 kopiert 
+desert.wav
+diesel.wav		von Pak64 kopiert 
+dock.wav			von Pak64 kopiert
+engine-start-diesel_d.wav	von Pak128 kopiert 
+engine-start-diesel-1.wav	von Pak128 kopiert
+ET420.wav			Makie
+E69.wav			Makie
+explosion.wav		von Pak64 kopiert 
+fluss.wav			Makie
+forest.wav		von Pak64 kopiert 
+gavel.wav			von Pak128 kopiert
+horse.wav			von Pak64 kopiert etwas heller die Töne
+Integral.wav		Makie
+jackhammer.wav		von Pak64 kopiert 
+koe1.wav			Makie
+mediterran.wav
+planelow.wav
+seagulls.wav		von Pak64 kopiert 
+smalloldplanes.wav
+Schranke1960.wav		Makie
+steam.wav			von Pak64 kopiert 
+t13.wav
+temperate.wav
+train-horn-steam-0.wav	von Pak128 kopiert
+tree-cutting.wav		von Pak64 kopiert 
+tropic.wav
+truck.wav
+tundra.wav
+Water.wav

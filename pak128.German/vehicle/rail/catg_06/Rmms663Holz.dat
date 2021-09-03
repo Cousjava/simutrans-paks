@@ -1,0 +1,46 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 25-10-2020
+---------------------------------
+obj=vehicle
+name=Rmms663Holz
+copyright=pumuckl999
+intro_year=1968
+intro_month=1
+cost=3666000
+runningcost=72
+fixed_cost=3259
+waytype=track
+freight=Holz
+payload=32
+speed=120
+weight=21
+length=9
+EmptyImage[S]=Rmms663.0.0
+EmptyImage[E]=Rmms663.0.1
+EmptyImage[SE]=Rmms663.0.2
+EmptyImage[SW]=Rmms663.0.3
+EmptyImage[N]=Rmms663.0.4
+EmptyImage[W]=Rmms663.0.5
+EmptyImage[NW]=Rmms663.0.6
+EmptyImage[NE]=Rmms663.0.7
+FreightImagetype[0]=Bretter
+FreightImage[0][S]=Rmms663.2.0
+FreightImage[0][E]=Rmms663.2.1
+FreightImage[0][SE]=Rmms663.2.2
+FreightImage[0][SW]=Rmms663.2.3
+FreightImage[0][N]=Rmms663.2.4
+FreightImage[0][W]=Rmms663.2.5
+FreightImage[0][NW]=Rmms663.2.6
+FreightImage[0][NE]=Rmms663.2.7
+FreightImagetype[1]=Holz
+FreightImage[1][S]=Rmms663.3.0
+FreightImage[1][E]=Rmms663.3.1
+FreightImage[1][SE]=Rmms663.3.2
+FreightImage[1][SW]=Rmms663.3.3
+FreightImage[1][N]=Rmms663.3.4
+FreightImage[1][W]=Rmms663.3.5
+FreightImage[1][NW]=Rmms663.3.6
+FreightImage[1][NE]=Rmms663.3.7
+--------------------------------------

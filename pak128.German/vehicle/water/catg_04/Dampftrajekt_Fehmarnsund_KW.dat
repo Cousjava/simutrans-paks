@@ -1,0 +1,44 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Schiffe
+#    Neu: 25-07-2021
+---------------------------------
+obj=vehicle
+name=Fehmarnsund_Kuehlwaren
+copyright=pumuckl999
+intro_year=1903
+intro_month=2
+#retire_year=
+#retire_month=
+cost=688000
+runningcost=123
+fixed_cost=573
+waytype=water
+freight=Fleisch
+engine_type=steam
+power=88
+speed=10
+gear=400
+weight=240
+payload=40
+length=7
+sound=-1
+constraint[prev][0]=none
+constraint[next][0]=none
+EmptyImage[W]=Dampftrajekt_Fehmarnsund_KW.0.0,-24,8
+EmptyImage[NW]=Dampftrajekt_Fehmarnsund_KW.0.1,-16,16
+EmptyImage[N]=Dampftrajekt_Fehmarnsund_KW.0.2,-48,8
+EmptyImage[NE]=Dampftrajekt_Fehmarnsund_KW.0.3,-32,4
+EmptyImage[E]=Dampftrajekt_Fehmarnsund_KW.0.4,-8,-8
+EmptyImage[SE]=Dampftrajekt_Fehmarnsund_KW.0.5,8,-4
+EmptyImage[S]=Dampftrajekt_Fehmarnsund_KW.0.6,24,4
+EmptyImage[SW]=Dampftrajekt_Fehmarnsund_KW.0.7,14,8
+FreightImage[W]=Dampftrajekt_Fehmarnsund_KW.1.0,-24,8
+FreightImage[NW]=Dampftrajekt_Fehmarnsund_KW.1.1,-16,16
+FreightImage[N]=Dampftrajekt_Fehmarnsund_KW.1.2,-48,8
+FreightImage[NE]=Dampftrajekt_Fehmarnsund_KW.1.3,-32,4
+FreightImage[E]=Dampftrajekt_Fehmarnsund_KW.1.4,-8,-8
+FreightImage[SE]=Dampftrajekt_Fehmarnsund_KW.1.5,8,-4
+FreightImage[S]=Dampftrajekt_Fehmarnsund_KW.1.6,24,4
+FreightImage[SW]=Dampftrajekt_Fehmarnsund_KW.1.7,14,8
+-------------------------------------------------------
