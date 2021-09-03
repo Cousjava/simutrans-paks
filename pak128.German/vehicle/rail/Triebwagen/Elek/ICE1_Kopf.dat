@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 08-2010
-#	Letzte Bearbeitung: $Date: 2017-09-10 14:23:46 +0200 (So, 10. Sep 2017) $ - $Author: NNW $
 ---------------------------------
 obj=vehicle
 name=ICE1_Kopf
@@ -23,6 +22,8 @@ gear=135
 weight=80
 smoke=-1
 sound=-1
+constraint[prev][0]=ICE1_Schluss
+constraint[prev][1]=none
 constraint[next][0]=ICE1_Waggon
 emptyimage[s]=ICE1_Kopf.0.1
 emptyimage[e]=ICE1_Kopf.0.2

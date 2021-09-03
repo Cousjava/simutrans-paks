@@ -1,7 +1,8 @@
+--------------------------------------
 #	PAK128.german
 #	Citybuildings industrial
 #       neu: 14-10-2019
-#--------------------------------------
+--------------------------------------
 obj=building
 name=RES_ALL_1960_A_16
 # Bonhoeffer Straﬂe 15 Rostock
@@ -12,11 +13,7 @@ chance=20
 clusters=6,12
 intro_year=1963
 intro_month=1
-#retire_year=
-#retire_month=
 needs_ground=0
-noinfo=0
-noconstruction=0
 climates=desert, tropic, mediterran, temperate, tundra
 dims=2,2,4
 BackImage[0][0][0][0][0][0]=RES_ALL_1960_L16_4F_01.0.0

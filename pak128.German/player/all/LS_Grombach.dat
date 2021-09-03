@@ -1,8 +1,8 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 17-11-2017
-#---------------------------------
+---------------------------------
 Obj=building
 Name=Lagerschuppen_Grombach
 copyright=pumuckl999

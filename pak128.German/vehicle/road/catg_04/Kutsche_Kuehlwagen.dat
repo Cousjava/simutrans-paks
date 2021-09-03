@@ -1,8 +1,8 @@
-#--------------------------------
+--------------------------------
 #     PAK128.german
 #     Vehicle
 #     02-2017
-#--------------------------------
+--------------------------------
 obj=vehicle
 name=Kutsche_Kuehlwagen
 copyright=RedRabbit
@@ -11,9 +11,9 @@ intro_month=1
 retire_year=1950
 retire_month=11
 waytype=road
-cost=224000
+cost=116000
 runningcost=14
-fixed_cost=108
+fixed_cost=153
 freight=Fleisch
 payload=4
 speed=18

@@ -1,4 +1,4 @@
-echo -e "\033[0;95m Erstelle Fahrzeuge/n"
+echo -e "\033[0;95m Erstelle Fahrzeuge\n"
 echo -e "\033[0;92m Erstelle Vehicle/Air"
 cd ./air/catg_01
 $repo/makeobj PAK255 $repo/simutrans/PAK128.german/ ./ >> "$repo/LOG/air.log" 2>> "$repo/LOG/error_air.log"

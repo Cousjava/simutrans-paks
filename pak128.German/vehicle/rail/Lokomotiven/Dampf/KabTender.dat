@@ -20,7 +20,6 @@ speed=80
 length=8
 sound=-1
 Constraint[Prev][0]=BR50
-Constraint[Prev][1]=none
 EmptyImage[S]=KabTender.0.0
 EmptyImage[E]=KabTender.0.1
 EmptyImage[SE]=KabTender.0.2

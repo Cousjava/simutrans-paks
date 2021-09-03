@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 19-05-2017
-#	Letzte Bearbeitung: 18-10-2018
 ---------------------------------
 obj=vehicle
 name=Postwaggon Post3-cl12,8
@@ -11,9 +10,9 @@ intro_year=1961
 intro_month=1
 retire_year=1994
 retire_month=12
-cost=6910000
+cost=3535000
 runningcost=84
-fixed_cost=1642
+fixed_cost=3048
 waytype=track
 length=10
 freight=Post
@@ -21,6 +20,7 @@ payload=50
 weight=16
 speed=90
 sound=-1
+Constraint[Prev][0]=any
 EmptyImage[S]=Post3-cl128.0.0
 EmptyImage[E]=Post3-cl128.0.1
 EmptyImage[SE]=Post3-cl128.0.2

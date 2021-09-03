@@ -1,10 +1,7 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
-#    Neu: 
-#    letzte Bearbeitung:
-#    $Date$ - $Author$
-#---------------------------------
+---------------------------------
 Obj=building
 Name=GrosserTank
 copyright=TonyBzt

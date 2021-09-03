@@ -12,11 +12,7 @@ chance=20
 clusters=1,5
 intro_year=1822
 intro_month=1
-#retire_year=
-#retire_month=
 needs_ground=0
-noinfo=0
-noconstruction=0
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 dims=2,2,4
 BackImage[0][0][0][0][0][0]=IND_ALL_1850_L02_4F_01.0.0
@@ -51,4 +47,3 @@ BackImage[3][0][0][0][0][1]=IND_ALL_1850_L02_4F_01.4.4
 BackImage[3][0][1][0][0][1]=IND_ALL_1850_L02_4F_01.4.5
 BackImage[3][1][0][0][0][1]=IND_ALL_1850_L02_4F_01.5.0
 BackImage[3][1][1][0][0][1]=IND_ALL_1850_L02_4F_01.5.1
-#_EO_

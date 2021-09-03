@@ -1,5 +1,7 @@
+---------------------------------
 #	PAK128.german
 #	Vehicle
+---------------------------------
 obj=vehicle
 name=Kuehlwagen_Gueterstrassenbahn
 copyright=pumuckl999
@@ -8,9 +10,9 @@ intro_month=1
 retire_year=1953
 retire_month=12
 waytype=tram_track
-cost=745000
+cost=407500
 runningcost=28
-fixed_cost=187
+fixed_cost=328
 freight=Fleisch
 payload=9
 speed=25

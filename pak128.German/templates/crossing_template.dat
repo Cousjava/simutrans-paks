@@ -1,5 +1,7 @@
+--------------------------------------
 #	PAK128.german
 #	Crossing
+--------------------------------------
 obj=crossing
 name=
 copyright=
@@ -15,4 +17,3 @@ openimage[ew][0]=
 front_openimage[ew][0]=
 closedimage[ew][0]=
 front_closedimage[ew][0]=
-#_EO_

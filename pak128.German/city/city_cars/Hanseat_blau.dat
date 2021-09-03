@@ -1,11 +1,7 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	CityCar
-#    Neu: 
-#    letzte Bearbeitung:
-#    07-2012
-#    04-09-2015 The Transporter
-#---------------------------------
+---------------------------------
 Obj=citycar
 Name=Hanseat_blau
 DistributionWeight=8

@@ -1,8 +1,8 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 05-2011
-#---------------------------------
+---------------------------------
 Obj=building
 Name=ALP_Bahnhof_HG
 copyright=Lemuria
@@ -12,8 +12,7 @@ Level=10
 cost=640000
 maintenance=80
 enables_pax=1
-#NoInfo=1
-# intro_year=1954
+intro_year=1900
 climates=rocky
 Dims=1,1,4
 icon=> ALP_Bahnhof_HG.0.4

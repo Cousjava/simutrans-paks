@@ -79,6 +79,11 @@ Image[27]=> menu_buttons.5.2
 Image[28]=> menu_buttons.5.4
 # LIST_VEHICLES
 Image[29]=> menu_buttons.7.7
+# scripted tool icon
+Image[30]=> menu_buttons.6.12
+# groundobj editor
+Image[31]=> menu_buttons.6.13
+
 --
 Obj=menu
 name=BarTools
@@ -173,5 +178,10 @@ Image[62]=> menu_buttons.4.14
 Image[63]=> menu_buttons.3.3
 # Halte stellen merge / zusammenlegen
 Image[64]=> menu_buttons.3.4
+# slope tool icon X2
+Image[65]=> menu_buttons.0.19
+Image[66]=> menu_buttons.0.20
+Image[67]=> menu_buttons.1.19
+Image[68]=> menu_buttons.1.20
 
 --

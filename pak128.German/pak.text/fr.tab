@@ -9,7 +9,7 @@
 #                             Language: fr Francais                            #
 #                             Encoding: ISO-8859-1                             #
 #                             Font: Prop-Latin1.bdf                            #
-#                            Date Created: 1.09 2020                           #
+#                           Date Created: 25.08 2021                           #
 #                                                                              #
 ################################################################################
 #________________________________building - stop________________________________
@@ -54,14 +54,66 @@ Tierfutter
 Aliments
 Wafer
 Wafers
+#_____________________________________tree______________________________________
+#_____________________________________tree______________________________________
+Eiche_1
+frêne élevé
+Kiefer1
+pin
+Kiefer1_gross
+pin
+Kiefer2
+pin
+Kugel-dunkel_MHz
+chêne sessile
+Kugel-hell_MHz
+chêne châtaignier
+Laerche1
+mélèze
+Laerche2
+mélèze
+Locker_Shunter
+hêtre
+Oak
+chêne
+Obst_Shunter
+cerisier
+Obst_Shunter_Alm
+cerisier
+ObstAlm_Shunter
+cerisier
+Strubbelkopf_MHz
+érable plane
+Strubbelkopf_MHz_Alm
+érable sycomore
+Tanne_immergruen_Shunter_Mittelgebirge
+sapin
+Tanne_wechselnd_Shunter
+sapin
+Tanne_wechselnd_Shunter_Almhoehe
+sapin
+Tanne1
+sapin
+Tanne2
+sapin
+Tree1
+peuplier noir
 #__________________________vehicle - electrified_track__________________________
 #__________________________vehicle - electrified_track__________________________
 BR101_Metropolitan
 DB 101 argent MetropolitaN
+E_16
+E 16
+E_17
+E 17
+E_178
+E 178
 E32
 DRG E32
 E60
 DRG E60
+E69
+LAG 2 / DR E69 Pauline
 E91_3
 EG 538 (DR E91.3)
 LEW_EL2
@@ -74,10 +126,18 @@ LO3000_Post
 Robur LO 3000
 #________________________________vehicle - track________________________________
 #________________________________vehicle - track________________________________
+Abteilwagen_C4_Bay_04
+bavière C4Bay04
+AdlerSchuettgutwagen
+tombereau pour Adler
 bayrischer_BC4ue_Bay_99
 bavarois BC4ü Bay99
 bayrischer_Posti_Bay61
 bavarois Posti Bay61
+Bvmmsz_187
+Intercity Bvmmsz187
+Bvmmz_188
+Intercity Bvmmz188
 BZT_A4ue-35
 DRG expresse 1re classe A4ü-35
 BZT_B4ue-35
@@ -90,6 +150,26 @@ BZT_Leig1b
 Couvert léger jumeau derrier
 BZT_WR4ue-35
 DRG expresse restaurant WR4ü-35
+C3pr preussische Staatsbahn
+prusse C3Pr
+Cargosprinter_EW_fl.Lebensmittel
+Cargosprinter DB690 arrière
+Cargosprinter_EW_Kuehlwaren
+Cargosprinter DB690 arrière
+Cargosprinter_EW_Stueckgut
+Cargosprinter DB690 arrière
+Cargosprinter_FW_fl.Lebensmittel
+Cargosprinter DB690 front
+Cargosprinter_FW_Kuehlwaren
+Cargosprinter DB690 front
+Cargosprinter_FW_Stueckgut
+Cargosprinter DB690 front
+Cargosprinter_MW_fl.Lebensmittel
+Cargosprinter DB690 millieu
+Cargosprinter_MW_Kuehlwaren
+Cargosprinter DB690 millieu
+Cargosprinter_MW_Stueckgut
+Cargosprinter DB690 millieu
 DB_BR_210
 DB 210
 DB_BR_216
@@ -98,8 +178,12 @@ DB_BR_218.0
 DB 218.0
 DB_BR_218.4
 DB 218.4
+DR_Reisezugwagen_Altenberg
+C4i-35a "Altenberger"
 DR118
 DR 118
+ES_5530
+tombereau Es
 Flachwagen_catg_01
 Plat plancher bas
 G10
@@ -110,12 +194,24 @@ gedeckter_Gueterwagen1895_Stueckgut
 Couvert 1895
 Getreidewagen
 Toit ouvrant récolte 4-axes
+Gleiskraftwagen_SKL26_Wagon
+SKL26 tombereau
+Henschel_DHG700C
+Henschel DHG700C
+Henschel-Wegmann-Zug_Mittelwagen
+Henschel-Wegmann SBC4ü
+Henschel-Wegmann-Zug_Steuerwagen
+Henschel-Wegmann SBC4ü-35
+Koe1
+Kö I 0246
 Leichttriebwagen_SVG
 autorail de Sylt
 NE81-DB_BR626_VT
 NE 81 (DB 626)
 NE81-DB_BR926_VB
 NE 81 (DB 926) 
+NeuhaldenslebenerEisenbahn_T03
+NEG-T03
 NGT_Post_Ende
 NGT postale derriere
 NGT_Post_Front
@@ -126,10 +222,18 @@ Nuernberg-Fuehrter_1._und_2.Klasse
 Ludwigsbahn 1re/2de classe
 Nuernberg-Fuehrter_1.Klasse
 Ludwigsbahn 1re classe
+O-Nuernberg
+tombereau "O Nuremberg"
 Offener Drehgestellwagen Eanos-x059
 Tombereau Eanos-x059
 offener Gueterwagen 1835 Stueckgut
 Tombeaurau 1835
+offener Gueterwagen 1850 Schuettgut
+wagon-tombereau
+offener_Hochbordwagen_Ommu
+tombereau Ommu
+offener_Kohlewagen_OOmk
+tombereau OOmk
 Postwagen 2ss-t13
 postale 2ss-t/13
 Postwagen 2ss-t15
@@ -137,9 +241,13 @@ postale 2ss-t/15
 Postwaggon Post4-a17
 postale Post4ü-a/17
 preussische_T0
-Prusse T0
+prusse T0
 Preussischer_ET531
 Prusse 531 "Berlin"
+preussischer_PW_fuer_T0_Kl.2_3_4
+prusse 2cl./3cl./4cl.(de T0)
+preussischer_PW_fuer_T0_Kl.3_4
+prusse 3cl./4cl.(de T0)
 PwgPr14
 Fourgon frein-baggage PwgPr14
 Saechsischer_Bahnpostwagen_1860
@@ -148,20 +256,38 @@ saechsischer_C_Sa_12
 saxon C Sa12 3me classe
 saechsischer_C4ue_sa07
 saxon C4ü Sa 07
+Schiebewandwagen_Hbbills311
+Hbbills 311
 Schnellzugwagen_3.Kl._C4uepr11
 prusse expresse C4ü Pr11 3me classe
+Schuettgutwagen Facns133
+tombereau Facns 133 
+Schuettgutwagen Fc(s)090
+tombereau Fc(s) 090
+Talbot_Selbstentlader1896
+tombereau Talbot
 Taschenwagen Sdgmns 743Post
 kangourou Sdgmns 743
 Triebwagen_ET_184_4
 ET 184-4
 Triebwagen_ET_186_11
 ET 186-11
+Vicinalbahn-Wagen BCL
+Vicinalbahn BCL
+Vicinalbahn-Wagen PBL
+Vicinalbahn PBL
+VT66.9
+VT 66.9
 #________________________________vehicle - water________________________________
 #________________________________vehicle - water________________________________
+Hafenbarkasse Hafendockter
+Hafendockter
 Loreley_IV
 traversier Loreley IV
 Main-Kettenschlepper_K.B.K.S._No._V
 Main Toueur K.B.K.S. no. V
+TS-MHZ_Schoner
+goélette
 #__________________________________way - track__________________________________
 #__________________________________way - track__________________________________
 Abstellgleis_Gueterzug_90kmh

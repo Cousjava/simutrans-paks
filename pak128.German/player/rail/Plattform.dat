@@ -1,9 +1,8 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 
-#    Letzte Bearbeitung: $Date$ - $Author$
-#---------------------------------
+---------------------------------
 Obj=building
 Name=Plattform
 copyright=TonyBzt

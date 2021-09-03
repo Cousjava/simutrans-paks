@@ -92,11 +92,27 @@ Note=Unused
 ---------------------
 obj=program_text
 Name=Tonnen
-Note=t was ist jetzt richtig "Tonnen" ohne Blank vorne
+Note=t "Tonnen" ohne Blank vorne
 ---------------------
 obj=program_text
-Name= Tonnen
-Note=t was ist jetzt richtig " Tonnen" mit Blank vorne
+Name=fm
+Note=scm	
+---------------------
+obj=program_text
+Name=m3
+Note=m3	
+---------------------
+obj=program_text
+Name=Paletten
+Note=Paletts	
+---------------------
+obj=program_text
+Name=Sack
+Note=Pouches	
+---------------------
+obj=program_text
+Name=Stck.
+Note=pcs.	
 ---------------------
 obj=menu_text
 Name=Build air depot
@@ -157,22 +173,6 @@ Note=Bus- und LKW-Depot
 obj=program_text
 Name=Schiffe
 Note=Ships	
----------------------
-obj=program_text
-Name=fm
-Note=scm	
----------------------
-obj=program_text
-Name=Paletten
-Note=Paletts	
----------------------
-obj=program_text
-Name=Sack
-Note=Pouches	
----------------------
-obj=program_text
-Name=Stck.
-Note=pcs.	
 ---------------------
 obj=program_text
 Name=Tram_Electrification

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 2008
-#	Letzte Bearbeitung $Date$ - $Author$
 ---------------------------------
 obj=vehicle
 name=BZT_3Achser
@@ -11,15 +10,16 @@ intro_year=1912
 intro_month=1
 retire_year=1954
 retire_month=12
-cost=4170000
+cost=2145000
 runningcost=68
-fixed_cost=1418
+fixed_cost=2262
 waytype=track
 freight=Passagiere
 length=9
 payload=30
 weight=12
 speed=90
+Constraint[Prev][0]=any
 EmptyImage[S]=3Achser.0.0
 EmptyImage[E]=3Achser.0.1
 EmptyImage[SE]=3Achser.0.2

@@ -1,8 +1,8 @@
-#--------------------------------
+--------------------------------
 #     PAK128.german
 #     Vehicle
 #     02-2017
-#--------------------------------
+--------------------------------
 obj=vehicle
 name=Traditioneller_Viehtrieb_vorne
 copyright=RedRabbit
@@ -11,9 +11,9 @@ intro_month=1
 retire_year=1929
 retire_month=12
 waytype=road
-cost=306000
+cost=156000
 runningcost=60
-fixed_cost=70
+fixed_cost=132
 freight=Vieh
 engine_type=bio
 power=10
@@ -50,9 +50,9 @@ intro_month=1
 retire_year=1929
 retire_month=12
 waytype=road
-cost=306000
+cost=156000
 runningcost=60
-fixed_cost=70
+fixed_cost=132
 freight=Vieh
 engine_type=bio
 power=10

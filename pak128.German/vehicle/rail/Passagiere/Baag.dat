@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 30-05-2017
-#	Letzte Bearbeitung: 18-10-2018
 ---------------------------------
 obj=vehicle
 name=Rekowagen Baag
@@ -11,15 +10,16 @@ intro_year=1960
 intro_month=1
 retire_year=1991
 retire_month=12
-cost=6110000
+cost=3140000
 runningcost=75
-fixed_cost=1483
+fixed_cost=2721
 waytype=track
 freight=Passagiere
 payload=44
 speed=90
 weight=17
 length=10
+Constraint[Prev][0]=any
 EmptyImage[S]=Baag.0.0
 EmptyImage[E]=Baag.0.1
 EmptyImage[SE]=Baag.0.2

@@ -23,9 +23,11 @@ retire_year=1895
 retire_month=1
 Location=river
 Distributionweight=4
-Productivity=250
+Productivity=500
 Range=25
-# electricity_amount=150
+electricity_amount=150
+# Da das Kraftwerk eigntlich gegen die Heizkraftwerk plage dient, muss es nicht so viel Strom erzeugen
+# Es reicht wenn es eine hohe Productivity= hat.
 passenger_boost=1000
 mail_boost=500
 MapColor=140

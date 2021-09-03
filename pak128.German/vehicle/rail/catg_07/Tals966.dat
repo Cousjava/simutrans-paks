@@ -2,22 +2,22 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 18-05-2017
-#	Letzte Bearbeitung: 25-10-2018 pumuckl999
 ---------------------------------
 obj=vehicle
 name=Selbstentladewagen Tals 966
 copyright=pumuckl999
 intro_year=1973
 intro_month=1
-cost=9630000
+cost=4950000
 runningcost=103
-fixed_cost=2200
+fixed_cost=4150
 waytype=track
 freight=Gerste
 payload=52
 speed=100
 weight=27
 length=8
+Constraint[Prev][0]=any
 EmptyImage[S]=Tals966.0.0
 EmptyImage[E]=Tals966.0.1
 EmptyImage[SE]=Tals966.0.2

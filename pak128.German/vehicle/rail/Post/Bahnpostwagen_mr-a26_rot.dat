@@ -2,17 +2,15 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu:
-#	Letzte Bearbeitung: 04-09-2018 pumuckl999
-#    neue Grafiken und intro year
 ---------------------------------
 obj=vehicle
 name=Bahnpostwagen_mr-a26_rot
 copyright=pumuckl999
 intro_year=1971
 intro_month=1
-cost=30400000
+cost=15400000
 runningcost=200
-fixed_cost=7519
+fixed_cost=13769
 waytype=track
 freight=Post
 payload=100
@@ -20,6 +18,7 @@ speed=200
 weight=40
 length=13
 sound=-1
+Constraint[Prev][0]=any
 EmptyImage[S]=bahnpostwagen_mr-a26_rot.0.0
 EmptyImage[E]=bahnpostwagen_mr-a26_rot.0.1
 EmptyImage[SE]=bahnpostwagen_mr-a26_rot.0.2

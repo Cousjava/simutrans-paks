@@ -25,7 +25,7 @@
 #
 obj=good
 name=Passagiere
-metric= 
+metric=
 weight_per_unit=75
 catg=0
 value=30
@@ -38,7 +38,7 @@ MapColor=215
 #
 obj=good
 name=Post
-metric= Sack
+metric=Sack
 weight_per_unit=50
 catg=0
 value=30
@@ -51,7 +51,7 @@ MapColor=96
 #
 obj=good
 name=None
-metric=  
+metric=
 weight_per_unit=0
 catg=0
 value=0
@@ -69,8 +69,8 @@ MapColor=000000
 #
 obj=good
 name=Autos
-metric=  
-weight_per_unit=1260
+metric=
+weight_per_unit=1620
 catg=0
 value=180
 #=0,6
@@ -82,7 +82,7 @@ MapColor=121
 #
 obj=good
 name=Beton
-metric= Tonnen
+metric=Tonnen
 weight_per_unit=1000
 catg=0
 value=60
@@ -95,7 +95,7 @@ MapColor=217
 #
 obj=good
 name=Stahl
-metric= Tonnen
+metric=Tonnen
 weight_per_unit=1000
 catg=0
 value=90
@@ -108,10 +108,10 @@ MapColor=150
 #
 obj=good
 name=Schiffssektionen
-metric= 
+metric=
 weight_per_unit=65535
 catg=0
-value=720
+value=7200
 #=50
 speed_bonus=0
 MapColor=96
@@ -121,7 +121,7 @@ MapColor=96
 #
 #obj=good
 #name=Schiffe
-#metric= 
+#metric=
 #weight_per_unit=65535
 #catg=0
 #value=750
@@ -134,7 +134,7 @@ MapColor=96
 #
 obj=good
 name=Vieh
-metric= Stck.
+metric=Stck.
 weight_per_unit=850
 catg=0
 value=60
@@ -152,7 +152,7 @@ MapColor=118
 #
 obj=good
 name=Backwaren
-metric= Paletten
+metric=Paletten
 weight_per_unit=400
 catg=1
 value=90
@@ -165,7 +165,7 @@ MapColor=155
 #
 obj=good
 name=Bier
-metric= Paletten
+metric=Paletten
 weight_per_unit=700
 catg=1
 value=90
@@ -178,7 +178,7 @@ MapColor=28
 #
 obj=good
 name=Betonfertigteile
-metric= Paletten
+metric=Paletten
 weight_per_unit=1000
 catg=1
 value=60
@@ -191,7 +191,7 @@ MapColor=217
 #
 obj=good
 name=Buecher
-metric= Paletten
+metric=Paletten
 weight_per_unit=800
 catg=1
 value=120
@@ -204,7 +204,7 @@ MapColor=223
 #
 obj=good
 name=Chemikalien
-metric= Paletten
+metric=Paletten
 weight_per_unit=650
 catg=1
 value=120
@@ -217,7 +217,7 @@ MapColor=79
 #
 obj=good
 name=Computer
-metric= Paletten
+metric=Paletten
 weight_per_unit=350
 catg=1
 value=150
@@ -230,7 +230,7 @@ MapColor=125
 #
 obj=good
 name=Dosenessen
-metric= Paletten
+metric=Paletten
 weight_per_unit=500
 catg=1
 value=90
@@ -243,7 +243,7 @@ MapColor=48
 #
 obj=good
 name=Maschinen
-metric= Paletten
+metric=Paletten
 weight_per_unit=650
 catg=1
 value=150
@@ -256,7 +256,7 @@ MapColor=96
 #
 obj=good
 name=Farben
-metric= Paletten
+metric=Paletten
 weight_per_unit=650
 catg=1
 value=90
@@ -269,7 +269,7 @@ MapColor=38
 #
 #obj=good
 #name=Lackfarbe
-#metric= Paletten
+#metric=Paletten
 #weight_per_unit=650
 #catg=1
 #value=90
@@ -282,7 +282,7 @@ MapColor=38
 #
 obj=good
 name=Eier
-metric= Paletten
+metric=Paletten
 weight_per_unit=450
 catg=1
 value=90
@@ -295,7 +295,7 @@ MapColor=215
 #
 obj=good
 name=Flaschen
-metric= Paletten
+metric=Paletten
 weight_per_unit=450
 catg=1
 value=66
@@ -308,7 +308,7 @@ MapColor=29
 #
 obj=good
 name=Glas
-metric= Paletten
+metric=Paletten
 weight_per_unit=1000
 catg=1
 value=60
@@ -321,7 +321,7 @@ MapColor=87
 #
 obj=good
 name=Kameras
-metric= Paletten
+metric=Paletten
 weight_per_unit=1000
 catg=1
 value=150
@@ -334,7 +334,7 @@ MapColor=80
 #
 obj=good
 name=Marzipan
-metric= Paletten
+metric=Paletten
 weight_per_unit=400
 catg=1
 value=150
@@ -347,7 +347,7 @@ MapColor=90
 #
 obj=good
 name=Medikamente
-metric= Paletten
+metric=Paletten
 weight_per_unit=280
 catg=1
 value=150
@@ -360,7 +360,7 @@ MapColor=75
 #
 obj=good
 name=Mehl
-metric= Paletten
+metric=Paletten
 weight_per_unit=650
 catg=1
 value=75
@@ -373,7 +373,7 @@ MapColor=214
 #
 obj=good
 name=Moebel
-metric= Paletten
+metric=Paletten
 weight_per_unit=360
 catg=1
 value=120
@@ -386,7 +386,7 @@ MapColor=188
 #
 obj=good
 name=Papier
-metric= Paletten
+metric=Paletten
 weight_per_unit=1000
 catg=1
 value=60
@@ -399,7 +399,7 @@ MapColor=223
 #
 obj=good
 name=Plastik
-metric= Paletten
+metric=Paletten
 weight_per_unit=700
 catg=1
 value=60
@@ -412,7 +412,7 @@ MapColor=192
 #
 obj=good
 name=Silizium
-metric= Paletten
+metric=Paletten
 weight_per_unit=800
 catg=1
 value=120
@@ -425,7 +425,7 @@ MapColor=77
 #
 obj=good
 name=Textilien
-metric= Paletten
+metric=Paletten
 weight_per_unit=150
 catg=1
 value=90
@@ -438,7 +438,7 @@ MapColor=110
 #
 obj=good
 name=Wafer
-metric= Paletten
+metric=Paletten
 weight_per_unit=800
 catg=1
 value=210
@@ -451,7 +451,7 @@ MapColor=126
 #
 obj=good
 name=Wein
-metric= Paletten
+metric=Paletten
 weight_per_unit=700
 catg=1
 value=90
@@ -464,7 +464,7 @@ MapColor=130
 #
 obj=good
 name=Wolle
-metric= Paletten
+metric=Paletten
 weight_per_unit=150
 catg=1
 value=60
@@ -477,7 +477,7 @@ MapColor=135
 #
 obj=good
 name=Zement
-metric= Paletten
+metric=Paletten
 weight_per_unit=1000
 catg=1
 value=60
@@ -490,7 +490,7 @@ MapColor=208
 #
 obj=good
 name=Zucker
-metric= Paletten
+metric=Paletten
 weight_per_unit=850
 catg=1
 value=90
@@ -503,7 +503,7 @@ MapColor=213
 #
 obj=good
 name=Obst
-metric= Paletten
+metric=Paletten
 weight_per_unit=150
 catg=1
 value=120
@@ -516,7 +516,7 @@ MapColor=142
 #
 obj=good
 name=Suedfruechte
-metric= Paletten
+metric=Paletten
 weight_per_unit=150
 catg=1
 value=120
@@ -529,7 +529,7 @@ MapColor=194
 #
 obj=good
 name=Verpackungsmittel
-metric= Paletten
+metric=Paletten
 weight_per_unit=450
 catg=1
 value=66
@@ -547,7 +547,7 @@ MapColor=29
 #
 obj=good
 name=Eisenerz
-metric= Tonnen
+metric=Tonnen
 weight_per_unit=1000
 catg=2
 value=60
@@ -560,7 +560,7 @@ MapColor=15
 #
 obj=good
 name=Salze
-metric= Tonnen
+metric=Tonnen
 weight_per_unit=1000
 catg=2
 value=36
@@ -573,7 +573,7 @@ MapColor=1
 #
 obj=good
 name=Kohle
-metric= Tonnen
+metric=Tonnen
 weight_per_unit=1000
 catg=2
 value=36
@@ -586,8 +586,8 @@ MapColor=8
 #
 obj=good
 name=Koks
-metric= Tonnen
-weight_per_unit=850
+metric=Tonnen
+weight_per_unit=1000
 catg=2
 value=45
 #=0,15
@@ -599,7 +599,7 @@ MapColor=10
 #
 Obj=good
 name=Abfall
-metric= Tonnen
+metric=Tonnen
 weight_per_unit=1000
 catg=2
 value=36
@@ -612,7 +612,7 @@ MapColor=88
 #
 obj=good
 name=Sand
-metric= Tonnen
+metric=Tonnen
 weight_per_unit=1000
 catg=2
 value=36
@@ -625,7 +625,7 @@ MapColor=86
 #
 Obj=good
 name=Schrott
-metric= Tonnen
+metric=Tonnen
 weight_per_unit=1000
 catg=2
 value=45
@@ -638,7 +638,7 @@ MapColor=212
 #
 obj=good
 name=Steine
-metric= Tonnen
+metric=Tonnen
 weight_per_unit=1000
 catg=2
 value=36
@@ -651,7 +651,7 @@ MapColor=82
 #
 obj=good
 name=Zuckerrueben
-metric= Tonnen
+metric=Tonnen
 weight_per_unit=1000
 catg=2
 value=45
@@ -670,7 +670,7 @@ MapColor=207
 #
 obj=good
 name=Benzin
-metric= m3
+metric=m3
 weight_per_unit=750
 catg=3
 value=120
@@ -683,7 +683,7 @@ MapColor=174
 #
 obj=good
 name=Diesel
-metric= m3
+metric=m3
 weight_per_unit=830
 catg=3
 value=120
@@ -696,7 +696,7 @@ MapColor=175
 #
 obj=good
 name=Heizoel
-metric= m3
+metric=m3
 weight_per_unit=830
 catg=3
 value=120
@@ -709,7 +709,7 @@ MapColor=174
 #
 obj=good
 name=Oel
-metric= m3
+metric=m3
 weight_per_unit=850
 catg=3
 value=45
@@ -728,7 +728,7 @@ MapColor=31
 #
 obj=good
 name=Fertiggerichte
-metric= Paletten
+metric=Paletten
 weight_per_unit=480
 catg=4
 value=120
@@ -741,7 +741,7 @@ MapColor=53
 #
 obj=good
 name=Fisch
-metric= Paletten
+metric=Paletten
 weight_per_unit=600
 catg=4
 value=60
@@ -754,7 +754,7 @@ MapColor=6
 #
 obj=good
 name=Fleisch
-metric= Paletten
+metric=Paletten
 weight_per_unit=400
 catg=4
 value=90
@@ -767,7 +767,7 @@ MapColor=116
 #
 obj=good
 name=Gefluegel
-metric= Paletten
+metric=Paletten
 weight_per_unit=480
 catg=4
 value=90
@@ -780,7 +780,7 @@ MapColor=4
 #
 obj=good
 name=Tiefkuehlkost
-metric= Paletten
+metric=Paletten
 weight_per_unit=560
 catg=4
 value=120
@@ -793,7 +793,7 @@ MapColor=55
 #
 obj=good
 name=Molkereiprodukte
-metric= Paletten
+metric=Paletten
 weight_per_unit=440
 catg=4
 value=120
@@ -812,7 +812,7 @@ MapColor=55
 #
 obj=good
 name=Milch
-metric= m3
+metric=m3
 weight_per_unit=1030
 catg=5
 value=45
@@ -831,7 +831,7 @@ MapColor=50
 #
 obj=good
 name=Bretter
-metric= fm
+metric=fm
 weight_per_unit=550
 catg=6
 value=75
@@ -844,7 +844,7 @@ MapColor=69
 #
 obj=good
 name=Holz
-metric= fm
+metric=fm
 weight_per_unit=520
 catg=6
 value=36
@@ -863,7 +863,7 @@ MapColor=66
 #
 obj=good
 name=Flachs
-metric= Tonnen
+metric=Tonnen
 weight_per_unit=500
 catg=7
 value=45
@@ -876,7 +876,7 @@ MapColor=136
 #
 obj=good
 name=Gerste
-metric= Tonnen
+metric=Tonnen
 weight_per_unit=680
 catg=7
 value=36
@@ -889,7 +889,7 @@ MapColor=47
 #
 obj=good
 name=Hopfen
-metric= Tonnen
+metric=Tonnen
 weight_per_unit=500
 catg=7
 value=60
@@ -903,7 +903,7 @@ MapColor=166
 obj=good
 name=Mandeln
 catg=7
-metric= Sack
+metric=Sack
 weight_per_unit=40
 value=60
 speed_bonus=0
@@ -914,7 +914,7 @@ MapColor=230
 #
 obj=good
 name=Trauben
-metric= Tonnen
+metric=Tonnen
 weight_per_unit=1000
 catg=7
 value=60
@@ -927,7 +927,7 @@ MapColor=75
 #
 obj=good
 name=Weizen
-metric= Tonnen
+metric=Tonnen
 weight_per_unit=680
 catg=7
 value=36
@@ -947,7 +947,7 @@ MapColor=140
 #
 obj=good
 name=Kunststoffgranulat
-metric= m3
+metric=m3
 weight_per_unit=260
 catg=8
 value=75
@@ -960,7 +960,7 @@ MapColor=151
 #
 obj=good
 name=Zement_lose
-metric= m3
+metric=m3
 weight_per_unit=1100
 catg=8
 value=60
@@ -973,7 +973,7 @@ MapColor=208
 #
 obj=good
 name=Tierfutter
-metric= m3
+metric=m3
 weight_per_unit=850
 catg=8
 value=60

@@ -2,16 +2,15 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 23-04-2020
-#	Letzte Bearbeitung:
 ---------------------------------
 obj=vehicle
 name=NGT_Post_Front
 copyright=pumuckl999
 intro_year=2035
 intro_month=1
-cost=313920000
+cost=256170000
 runningcost=904
-fixed_cost=40103
+fixed_cost=64165
 freight=Post
 power=4500
 gear=300
@@ -38,9 +37,9 @@ name=NGT_Post_Mitte
 copyright=pumuckl999
 intro_year=2035
 intro_month=1
-cost=165320000
+cost=107570000
 runningcost=452
-fixed_cost=28820
+fixed_cost=52882
 freight=Post
 power=1125
 gear=300
@@ -68,9 +67,9 @@ name=NGT_Post_Ende
 copyright=pumuckl999
 intro_year=2035
 intro_month=1
-cost=313920000
+cost=256170000
 runningcost=904
-fixed_cost=40103
+fixed_cost=64165
 freight=Post
 power=4500
 gear=300

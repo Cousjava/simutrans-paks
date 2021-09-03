@@ -1,9 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Bahnübergang
-#	Neu:07-2017 The Transporter
-#	Letzte Bearbeitung 
-#    
+#	Neu:07-2017 
 ---------------------------------
 Obj=crossing
 Name=CrossingRoadRail0

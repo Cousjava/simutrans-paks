@@ -1,6 +1,6 @@
 #	PAK128.german
-
 #	Citybuildings commercial
+--------------------------------------
 obj=building
 name=Toilettenhaus_Neumuenster
 copyright=
@@ -32,4 +32,3 @@ BackImage[0][0][0][0][0][1]=thnm.1.0
 BackImage[1][0][0][0][0][1]=thnm.1.1
 BackImage[2][0][0][0][0][1]=thnm.1.2
 BackImage[3][0][0][0][0][1]=thnm.1.3
-#_EO_

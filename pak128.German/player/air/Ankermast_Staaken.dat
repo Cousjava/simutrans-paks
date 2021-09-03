@@ -1,9 +1,8 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 06-2015
-#    Letzte Bearbeitung: $Date$ - $Author$
-#---------------------------------
+---------------------------------
 obj=building
 name=Zeppelin-Ankermast_Staaken
 copyright=pumuckl999
@@ -13,7 +12,7 @@ level=1
 cost=64000
 maintenance=8
 enables_pax=1
-intro_year=1916
+intro_year=1912
 intro_month=1
 allow_underground=0
 climates=desert, tropic, mediterran, temperate, tundra, rocky

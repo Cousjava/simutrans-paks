@@ -1,8 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-# --------------------------------
+--------------------------------
 Obj=factory
 Name=Werft
 copyright=pumuckl999
@@ -18,26 +18,25 @@ Range=2
 InputGood[0]=Stahl
 InputCapacity[0]=560
 InputFactor[0]=7000
-InputSupplier[0]=1
+InputSupplier[0]=0
 InputGood[1]=Bretter
 InputCapacity[1]=240
 InputFactor[1]=3000
-InputSupplier[1]=2
+InputSupplier[1]=0
 InputGood[2]=Plastik
 InputCapacity[2]=160
 InputFactor[2]=2000
-InputSupplier[2]=1
+InputSupplier[2]=0
 InputGood[3]=Maschinen
 InputCapacity[3]=80
 InputFactor[3]=1000
-InputSupplier[3]=1
+InputSupplier[3]=0
 InputGood[4]=Computer
 InputCapacity[4]=100
 InputFactor[4]=300
-InputSupplier[4]=3
+InputSupplier[4]=0
 OutputGood[0]=Schiffssektionen
 OutputCapacity[0]=12
-#OutputFactor[0]=5000
 Electricity_amount=0
 Electricity_boost=0
 passenger_boost=1000

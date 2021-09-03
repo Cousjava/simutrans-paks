@@ -14,11 +14,7 @@ clusters=6
 # in einem Park quasi zum verdünnen der Hochhauswüste 
 intro_year=1974
 intro_month=1
-#retire_year=
-#retire_month=
 needs_ground=0
-noinfo=0
-noconstruction=0
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 dims=2,2,4
 BackImage[0][0][0][0][0][0]=RES_ALL_1974_L48_4F_01.0.0

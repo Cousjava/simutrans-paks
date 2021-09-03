@@ -5,7 +5,6 @@ type=extension
 waytype=track
 #enables_pax=1
 enables_ware=1
-NoInfo=1
 Level=4
 intro_year=1910
 # Order N,E,S,W
@@ -54,7 +53,6 @@ type=extension
 waytype=road
 #enables_pax=1
 enables_ware=1
-NoInfo=1
 Level=4
 intro_year=1910
 # Order N,E,S,W
@@ -78,7 +76,6 @@ type=extension
 waytype=track
 #enables_pax=1
 enables_ware=1
-NoInfo=1
 Level=4
 intro_year=1910
 # Order N,E,S,W

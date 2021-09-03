@@ -2,16 +2,15 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu:  04-09-2018
-#	Letzte Bearbeitung:
 ---------------------------------
 obj=vehicle
 name=Bahnpostwagen_mr-a26_140
 copyright=pumuckl999
 intro_year=1956
 intro_month=1
-cost=21356000
+cost=10856000
 runningcost=184
-fixed_cost=5246
+fixed_cost=9621
 waytype=track
 freight=Post
 payload=100
@@ -19,6 +18,7 @@ speed=140
 weight=35.6
 length=13
 sound=-1
+Constraint[Prev][0]=any
 EmptyImage[S]=Bahnpostwagen_mr-a26_gruen.0.0
 EmptyImage[E]=Bahnpostwagen_mr-a26_gruen.0.1
 EmptyImage[SE]=Bahnpostwagen_mr-a26_gruen.0.2

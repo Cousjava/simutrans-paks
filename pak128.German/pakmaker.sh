@@ -33,7 +33,7 @@ echo "Kopiere Sound"
 cd ./sound
 cp -f *.wav $repo/simutrans/PAK128.german/sound >> "$repo/LOG/sound.log" 2>> "$repo/LOG/error_sound.log"
 cp -f sound.tab $repo/simutrans/PAK128.german/sound >> "$repo/LOG/sound.log" 2>> "$repo/LOG/error_sound.log"
-echo -e "Kopiere Pakset Textdateien\033[0m\n21"
+echo -e "Kopiere Pakset Textdateien\033[0m\n"
 cd ../pak.text
 cp *.txt $repo/simutrans/PAK128.german/text >> "$repo/LOG/paktext.log" 2>> "$repo/LOG/error_paktext.log"
 cp compat.tab $repo/simutrans/PAK128.german >> "$repo/LOG/paktext.log" 2>> "$repo/LOG/error_paktext.log"
@@ -43,6 +43,7 @@ cp es.tab $repo/simutrans/PAK128.german/text >> "$repo/LOG/paktext.log" 2>> "$re
 cp fr.tab $repo/simutrans/PAK128.german/text >> "$repo/LOG/paktext.log" 2>> "$repo/LOG/error_paktext.log"
 cp ja.tab $repo/simutrans/PAK128.german/text >> "$repo/LOG/paktext.log" 2>> "$repo/LOG/error_paktext.log"
 cp pl.tab $repo/simutrans/PAK128.german/text >> "$repo/LOG/paktext.log" 2>> "$repo/LOG/error_paktext.log"
+cp it.tab $repo/simutrans/PAK128.german/text >> "$repo/LOG/paktext.log" 2>> "$repo/LOG/error_paktext.log"
 cd $repo
 cd ./city
 . ./city_config.sh

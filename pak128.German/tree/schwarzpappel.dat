@@ -1,6 +1,8 @@
+--------------------------------
 #	PAK128.german
 #	Tree
 #	Neu: 22.09.2018 NNW
+--------------------------------
 obj=tree
 name=Tree1
 copyright=NNW
@@ -17,4 +19,3 @@ Image[1][1]=schwarzpappel.1.1,0,-24
 Image[2][1]=schwarzpappel.1.2,0,-24
 Image[3][1]=schwarzpappel.1.3,0,-24
 Image[4][1]=schwarzpappel.1.4,0,-24
-#_EOF_

@@ -1,8 +1,7 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
-#    Neu: 
-#---------------------------------
+---------------------------------
 Obj=building
 Name=PostOffice1920_AirportBlg
 type=extension

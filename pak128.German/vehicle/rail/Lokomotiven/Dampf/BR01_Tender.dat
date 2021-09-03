@@ -21,7 +21,6 @@ length=6
 sound=-1
 Constraint[Prev][0]=BR01_DRG
 Constraint[Prev][1]=Badische_IVh
-Constraint[Prev][2]=none
 EmptyImage[S]=BR01_Tender.0.0
 EmptyImage[E]=BR01_Tender.0.1
 EmptyImage[SE]=BR01_Tender.0.2

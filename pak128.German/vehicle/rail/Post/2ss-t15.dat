@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 15-10-2017
-#	Letzte Bearbeitung: 18-10-2018 pumuckl999
 ---------------------------------
 obj=vehicle
 name=Postwagen 2ss-t15
@@ -11,15 +10,16 @@ intro_year=1976
 intro_month=12
 retire_year=1997
 retire_month=4
-cost=9170000
+cost=4670000
 runningcost=86
-fixed_cost=2155
+fixed_cost=4030
 waytype=track
 freight=Post
 payload=50
 speed=120
 weight=17
 length=10
+Constraint[Prev][0]=any
 EmptyImage[S]=2ss-t15.0.0
 EmptyImage[E]=2ss-t15.0.1
 EmptyImage[SE]=2ss-t15.0.2

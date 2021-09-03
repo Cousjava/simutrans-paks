@@ -19,10 +19,10 @@ BackImage[0][0][0][0][0][0]=COM_ALL_1800_L01-L10_001.1.1
 BackImage[1][0][0][0][0][0]=COM_ALL_1800_L01-L10_001.1.2
 BackImage[2][0][0][0][0][0]=COM_ALL_1800_L01-L10_001.1.3
 BackImage[3][0][0][0][0][0]=COM_ALL_1800_L01-L10_001.1.4
-#BackImage[0][0][0][0][0][0]=COM_ALL_1800_L01-L10_001-winter.1.1
-#BackImage[1][0][0][0][0][0]=COM_ALL_1800_L01-L10_001-winter.1.2
-#BackImage[2][0][0][0][0][0]=COM_ALL_1800_L01-L10_001-winter.1.3
-#BackImage[3][0][0][0][0][0]=COM_ALL_1800_L01-L10_001-winter.1.4
+BackImage[0][0][0][0][0][1]=COM_ALL_1800_L01-L10_001.1.5
+BackImage[1][0][0][0][0][1]=COM_ALL_1800_L01-L10_001.1.6
+BackImage[2][0][0][0][0][1]=COM_ALL_1800_L01-L10_001.1.7
+BackImage[3][0][0][0][0][1]=COM_ALL_1800_L01-L10_001.1.8
 -----------------------------------------------------------------
 obj=building
 name=COM_ALL_1920_A_01

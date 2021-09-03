@@ -1,5 +1,7 @@
+---------------------------------
 #	PAK128.german
 #	Vehicle
+---------------------------------
 obj=vehicle
 name=Reko-Stueckgutwagen
 copyright=pumuckl999
@@ -8,9 +10,9 @@ intro_month=1
 retire_year=1996
 retire_month=12
 waytype=tram_track
-cost=2170000
+cost=1120000
 runningcost=43
-fixed_cost=472
+fixed_cost=910
 freight=Plastik
 payload=14
 speed=50

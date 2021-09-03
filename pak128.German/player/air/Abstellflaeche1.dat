@@ -1,9 +1,7 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
-#    Neu: 
-#    Letzte Bearbeitung: $Date$ - $Author$
-#---------------------------------
+---------------------------------
 Obj=building
 Name=AirStop_AirportBlg
 type=stop
@@ -11,7 +9,7 @@ waytype=air
 Level=2
 cost=128000
 maintenance=16
-intro_year=1918
+intro_year=1912
 intro_month=1
 NoInfo=1
 Dims=1,1,4

@@ -1,9 +1,8 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 18-09-2018
-#    letzte Bearbeitung:
-#---------------------------------
+---------------------------------
 Obj=building
 Name=Stellwerk_Nuernberg
 copyright=pumuckl999

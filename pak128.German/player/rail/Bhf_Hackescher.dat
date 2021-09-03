@@ -1,7 +1,7 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
-#---------------------------------
+---------------------------------
 obj=building
 name=Hackescher_Bahnhof
 copyright=pumuckl999

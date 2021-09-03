@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 14-06-2017
-#	Letzte Bearbeitung: 25-10-2018 pumuckl999
 ---------------------------------
 obj=vehicle
 name=offener Gueterwagen 1835 Stueckgut
@@ -11,15 +10,16 @@ intro_year=1835
 intro_month=1
 retire_year=1910
 retire_month=12
-cost=870000
+cost=450000
 runningcost=30
-fixed_cost=415
+fixed_cost=590
 waytype=track
 freight=Plastik
 payload=7
 speed=40
 weight=3
 length=6
+Constraint[Prev][0]=any
 EmptyImage[S]=alter_O-Gueterwagen_stgut.0.0
 EmptyImage[E]=alter_O-Gueterwagen_stgut.0.1
 EmptyImage[SE]=alter_O-Gueterwagen_stgut.0.2

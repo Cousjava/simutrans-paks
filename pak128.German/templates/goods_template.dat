@@ -1,5 +1,7 @@
+--------------------------------------
 #	PAK128.german
 #	Goods
+--------------------------------------
 obj=good
 name=
 mapcolor=
@@ -8,4 +10,3 @@ catg=
 value=
 speed_bonus=
 weight_per_unit=
-#_EO_

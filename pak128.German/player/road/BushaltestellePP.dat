@@ -1,10 +1,8 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 21-12-2018
-#    letzte Bearbeitung:
-#    
-#---------------------------------
+---------------------------------
 obj=building
 name=animierter_Bushalt
 copyright=pumuckl999

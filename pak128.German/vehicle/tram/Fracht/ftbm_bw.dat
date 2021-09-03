@@ -1,5 +1,7 @@
+---------------------------------
 #	PAK128.german
 #	Vehicle
+---------------------------------
 obj=vehicle
 name=Bienertbahn_Beiwagen
 copyright=pumuckl999
@@ -8,9 +10,9 @@ intro_month=1
 retire_year=1965
 retire_month=12
 waytype=tram_track
-cost=1400000
+cost=770000
 runningcost=38
-fixed_cost=334
+fixed_cost=596
 freight=Mehl
 payload=12
 speed=35

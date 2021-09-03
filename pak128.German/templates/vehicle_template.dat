@@ -1,5 +1,7 @@
+--------------------------------------
 #	PAK128.german
 #	Vehicle
+--------------------------------------
 obj=vehicle
 name=
 copyright=
@@ -42,4 +44,3 @@ freightimage[0][SW]=
 freightimage[0][SE]=
 freightimage[0][NE]=
 freightimage[0][NW]=
-#_EO_

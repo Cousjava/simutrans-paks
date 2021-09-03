@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 01-09-2018
-#	Letzte Bearbeitung:
 ---------------------------------
 obj=vehicle
 name=pr_Abteilwagen_ABC4_Pr01
@@ -11,15 +10,16 @@ intro_year=1901
 intro_month=7
 retire_year=1958
 retire_month=11
-cost=6770000
+cost=3530000
 runningcost=107
-fixed_cost=2249
+fixed_cost=3599
 waytype=track
 freight=Passagiere
 payload=48
 speed=90
 weight=29
 length=11
+Constraint[Prev][0]=any
 EmptyImage[S]=prAbteilwagenABC4Pr01.0.0
 EmptyImage[E]=prAbteilwagenABC4Pr01.0.1
 EmptyImage[SE]=prAbteilwagenABC4Pr01.0.2

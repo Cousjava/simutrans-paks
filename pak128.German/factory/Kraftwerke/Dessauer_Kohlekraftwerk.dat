@@ -12,7 +12,7 @@ intro_month=1
 retire_year=2015
 retire_month=12
 # wegen Klimakatastrophe sind neue Kohlekraftwerke nicht mehr erwünscht
-location=land
+location=river
 DistributionWeight=5
 Productivity=400
 InputGood[0]=Kohle

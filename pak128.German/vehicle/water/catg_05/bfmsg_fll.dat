@@ -1,23 +1,25 @@
+--------------------------------
 #	PAK128.german
 #	Vehicle
+--------------------------------
 obj=vehicle
 name=Frachter Typ Boizenburg fl. Lebensmittel
 copyright=pumuckl999
 intro_year=1962
 intro_month=1
-retire_year=2011
-retire_month=12
+#retire_year=2011 wir haben kein moderneres Binnenschiff
+#retire_month=12  Die Typen Reihe wurde zu ganz unterschiedlichen Jahren verschrottet
 waytype=water
-cost=7956000
+cost=4209750
 runningcost=504
-fixed_cost=1684
+fixed_cost=3262
 freight=Milch
 payload=222
 engine_type=diesel
 power=309
-gear=1200
+gear=400
 speed=15
-weight=250
+weight=400
 length=17
 sound=-1
 #smoke=

@@ -1,9 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 13-02-2017
-#	Letzte Bearbeitung: $Date: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Moebeltischlerei
 copyright=pumuckl999
@@ -27,6 +26,9 @@ InputFactor[2]=25
 InputSupplier[2]=0
 OutputGood[0]=Moebel
 OutputCapacity[0]=500
+sound=buzzsaw.wav
+sound_interval=30000
+# 30 Sekunden
 electricity_amount=25
 passenger_boost=1000
 mail_boost=500

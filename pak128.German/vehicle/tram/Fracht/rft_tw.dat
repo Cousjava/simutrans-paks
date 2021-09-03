@@ -1,5 +1,7 @@
+---------------------------------
 #	PAK128.german
 #	Vehicle
+---------------------------------
 obj=vehicle
 name=Reko-Frachttram
 copyright=pumuckl999
@@ -20,7 +22,6 @@ length=8
 #sound=
 #smoke=
 constraint[prev][0]=none
-constraint[prev][1]=none
 constraint[next][0]=Reko-Frachtwagen
 constraint[next][1]=Reko-Stueckgutwagen
 constraint[next][2]=none

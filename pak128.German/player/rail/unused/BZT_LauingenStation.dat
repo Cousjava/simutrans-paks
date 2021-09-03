@@ -1,8 +1,8 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 
-#---------------------------------
+---------------------------------
 Obj=building
 Name=BahnhofLauingen
 copyright=TonyBzt
@@ -10,8 +10,7 @@ type=extension
 waytype=track
 #extension_building=1
 enables_pax=1
-#NoInfo=1
-Level=4
+#Level=4
 intro_year=1910
 # Order N,E,S,W
 # Dims=2,1,2

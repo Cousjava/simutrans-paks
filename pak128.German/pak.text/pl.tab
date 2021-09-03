@@ -9,7 +9,7 @@
 #                              Language: pl Polski                             #
 #                             Encoding: ISO-8859-2                             #
 #                             Font: prop-latin2.fnt                            #
-#                           Date Created: 14.09 2020                           #
+#                           Date Created: 25.08 2021                           #
 #                                                                              #
 ################################################################################
 #____________________________bridge - monorail_track____________________________
@@ -62,6 +62,22 @@ Akwedukt
 #________________________________building - stop________________________________
 Hackescher_Bahnhof
 dworzec Hackescher Markt
+#_________________________________climates_text_________________________________
+#_________________________________climates_text_________________________________
+arctic
+str. lodowcowa
+desert
+wybrze¿e
+mediterran
+NRD
+rocky
+alpejski
+temperate
+wzgórza
+tropic
+niziny
+tundra
+pogórze alpejskie
 #___________________________________crossing____________________________________
 #___________________________________crossing____________________________________
 CrossingRoadRail
@@ -603,7 +619,7 @@ Aparaty/Kamery
 Kohle
 Wêgiel
 Kunststoffgranulat
-Granulki plast.
+Granulat plastokwy
 Mandeln
 Migda³y
 Marzipan
@@ -635,7 +651,7 @@ Sole
 Sand
 Piasek
 Schiffssektionen
-Fragmenty statku
+Sekcje kad³ubów
 Schrott
 Z³om
 Silizium
@@ -659,7 +675,7 @@ Opakowania
 Vieh
 Byd³o
 Wafer
-Wafle krzemowe
+P³ytki krzemowe
 Wein
 Wino
 Weizen
@@ -669,7 +685,7 @@ We³na
 Zement
 Cement
 Zement_lose
-Cement (luz)
+Cement (luzem)
 Zucker
 Cukier
 Zuckerrueben
@@ -696,12 +712,8 @@ UNDERGROUND
 Buduj pod ziemi±
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
- Tonnen
-t
 \nBauzeit von
 Wybudowano w 
-arctic
-str. lodowcowa
 CATEGORY_01
 Paczkowane
 CATEGORY_02
@@ -720,32 +732,28 @@ CATEGORY_08
 Sypkie (specjalne)
 Crate_Goods_Dock
 Dok na towary paczkowane
-desert
-wybrze¿e
+fm
+ m3
 Gewinn
 Roczny zysk:
 land stop
 Stacja na l±dzie
 Long_Goods_Dock
 Pomost na drewno
-mediterran
-NRD
+m3
+ m3
 Paletten
-pal.
-rocky
-alpejski
-temperate
-wzgórza
+ pal.
+Sack
+ worków
+Stck.
+ szt.
 Tonnen
-t
+ t
 Tram_Electrification
 Trakcja tramwajowa
 TrolleyBus_Electrification
 Trakcja trolejbusowa
-tropic
-niziny
-tundra
-pogórze alpejskie
 #________________________________roadsign - air_________________________________
 #________________________________roadsign - air_________________________________
 airport_oneway
@@ -754,6 +762,96 @@ Strza³ki wskazuj±ce kierunek
 #________________________________roadsign - road________________________________
 Ampel
 Sygnalizator
+#_____________________________________tree______________________________________
+#_____________________________________tree______________________________________
+Baumgruppe_MHz
+kêpa drzew
+Baumgruppe_MHz_Berg
+górska kepa drzew
+Birke_Berg
+brzoza
+Birke1
+brzoza omszona
+Birke2
+brzoza omszona
+Buesche
+krzaki
+BuescheDuenen
+suchoro¶la
+Eiche_1
+jesion
+Eiche1
+d±b
+Eiche2
+d±b
+Erle1
+olcha
+Erle2
+olcha
+Fichte1
+¶wierk
+Fichte1_gross
+¶wierk
+Fichte2
+¶wierk
+GrosserBaum_Shunter
+brzoza omszona
+GrosserBaum_Shunter_Alm
+brzoza omszona
+Hochbreit_Shunter
+wierzba p³acz±ca
+Kiefer
+sosna
+Kiefer_Alm
+kosodrzewina
+Kiefer1
+sosna
+Kiefer1_gross
+du¿a sosna
+Kiefer2
+sosna
+Kugel-dunkel_MHz
+d±b bezszypu³kowy
+Kugel-hell_MHz
+d±b kasztanowy
+Laerche1
+modrzew
+Laerche2
+ma³y modrzew
+Locker_Shunter
+buk
+Oak
+d±b
+Obst_Shunter
+wi¶nia
+Obst_Shunter_Alm
+wi¶nia
+ObstAlm_Shunter
+wi¶nia
+Strubbelkopf_MHz
+klon
+Strubbelkopf_MHz_Alm
+jawor
+Tanne_immergruen_Shunter_Alpen
+jod³a wy¿ynna
+Tanne_immergruen_Shunter_Mittelgebirge
+jod³a
+Tanne_immergruen_Shunter_Norddeutschland
+jod³a nizinna
+Tanne_klein
+ma³a jod³a
+Tanne_klein_Berg
+jod³a kalifornijska
+Tanne_wechselnd_Shunter
+jod³a
+Tanne_wechselnd_Shunter_Almhoehe
+jod³a
+Tanne1
+jod³a
+Tanne2
+jod³a
+Tree1
+topola czarna
 #__________________________vehicle - electrified_track__________________________
 #__________________________vehicle - electrified_track__________________________
 BR101_Metropolitan
@@ -766,10 +864,18 @@ BZT_ET25C
 DRG ES 25 pasa¿./ster.
 DR_BR101
 DB 101
+E_16
+E 16
+E_17
+E 17
+E_178
+E 178
 E32
 DRG E32
 E60
 DRG E60
+E69
+LAG 2 / DR E69 Pauline
 E91_3
 EG 538 (DR E91.3)
 ET25A
@@ -778,18 +884,62 @@ LEW_EL2
 LEW EL 2
 #________________________________vehicle - road_________________________________
 #________________________________vehicle - road_________________________________
+Lanz_Bulldog_FMD
+Lanz Bulldog FMD
 LO3000_Bus
+Robur LO 3000
+LO3000_Fluessige_Lebensmittel
+Robur LO 3000
+LO3000_Kuehlware
 Robur LO 3000
 LO3000_Post
 Robur LO 3000
+LO3000_Schuettgut
+Robur LO 3000
+LO3000_Schuettgut_A
+Robur przyczepa skzyn.
+LO3000_Stueckgut
+Robur LO 3000
+LO3000_Stueckgut_A
+Robur przyczepa zabud.
+MAN_MKN_26
+MAN MKN 26
+MAN_MKN_26_Anhaenger
+MAN MKN 26 przyczepa
+MAN_MKN_26Post
+MAN MKN 26
+MAN_MKN_26Post_Anhaenger
+MAN MKN 26 przyczepa
+MB_LZ6000
+MB LZ6000
+MB_LZ8000
+MB LZ8000
+Typ_D38_Buessing
+Buessing D38
+W50_fluessigeLebensmittel
+W50 ci±gnik
+W50A_fluessigeLebensmittel
+W50 naczepa
 #________________________________vehicle - track________________________________
 #________________________________vehicle - track________________________________
 Aachener Rail Shuttle
 Aachen Rail Shuttle projekt
+Abteilwagen_C4_Bay_04
+bawarski C4Bay04
+AdlerSchuettgutwagen
+wêglarka Adler
 Akkutriebwagen AT1
 Pruski szynobus AT1
 Akkutriebwagen ETA150
 DB ETA 150 silnikowy
+Autotransporter_Hcceerrs330A
+zespolony Hcceerrs 330 1.segment
+Autotransporter_Hcceerrs330B
+zespolony Hcceerrs 330 2.segment
+Autotransporter_Hcceerrs330C
+zespolony Hcceerrs 330 3.segment
+Autotransporter_Hcceerrs330D
+zespolony Hcceerrs 330 4.segment
 B100_KWStE_IIKlasse
 wirtemberski 2kl. B100
 Bahndienstwagen_262
@@ -827,15 +977,19 @@ Lbms 589 platforma
 Behaelter-Tragwagen_Lbms589_Schuettgut
 Lbms 589 platforma
 Behaelter-Tragwagen_Lbms589_Siloware
-Lbms 589 wielozb. sypkie
+Lbms 589 wielozb.
 Behaelter-Tragwagen_Lbms589_Stueckgut
 Lbms 589 platforma
+Behelfsgepaeckwagen_MDyg986
+pomocniczy baga¿. MDyg 986
 Behelfsgepaeckwagen_MPw4yge-50
 pomocniczy baga¿. MPw4yge-50
 Behelfspersonenwagen_MCi-43
 zastêpczy 3-kl. MCi-43
 Beiwagen_Cid-24
 Cid-24 pasa¿erski
+Betonwagen
+wapaniarka cementowa
 Blauer_Enzian_Gepaeckwagen
 TEE "Niebieska goryczka"
 Blauer_Enzian_Mittelwagen
@@ -852,6 +1006,8 @@ BR477_Waggon1
 S-Bahn BR 477 2. ¶rodk.
 BR477_Waggon2
 S-Bahn BR 477 3. ¶rodk.
+BR480_Ende
+S-Bahn BR 480 ty³
 BR481_Ende
 S-Bahn BR 481 ty³
 BR481_Kopf
@@ -864,8 +1020,14 @@ BR485_Ende
 S-Bahn DR 270 (DB 485) ty³
 BR485_Kopf
 S-Bahn DR 270 (DB 485) przód
+BR485_rot_Ende
+S-Bahn DR 270 (DB 485) "Colalook" ty³
 BR485_rot_Kopf
 S-Bahn DR 270 (DB 485) "Colalook" przód
+BR485_rot_Waggon1
+S-Bahn DR 270 (DB 485) "Colalook" pasa¿.
+BR485_rot_Waggon2
+S-Bahn DR 270 (DB 485) "Colalook" pasa¿.
 BR485_Waggon1
 S-Bahn DR 270 (DB 485) pasa¿.
 BR485_Waggon2
@@ -873,7 +1035,7 @@ S-Bahn DR 270 (DB 485) pasa¿.
 Bvmmsz_187
 Intercity Bvmmsz187
 Bvmmz_188
-Intercity coach Bvmmz188
+Intercity Bvmmz188
 Bvmz_185
 Intercity Bvmz 185
 BZT_3Achser
@@ -900,6 +1062,18 @@ BZT_Pwi
 pruski baga¿owy Pwi
 BZT_WR4ue-35
 DRG ekspresowy restauracyjny WR4ü-35
+C3pr preussische Staatsbahn
+pruski C3Pr
+Cargosprinter_EW_fl.Lebensmittel
+Cargosprinter DB690 ty³
+Cargosprinter_EW_Kuehlwaren
+Cargosprinter DB690 ty³
+Cargosprinter_EW_Stueckgut
+Cargosprinter DB690 ty³
+Cargosprinter_FW_Kuehlwaren
+Cargosprinter DB690 przód
+Cargosprinter_FW_Stueckgut
+Cargosprinter DB690 przód
 Containertragwagen_Sgss-y703
 platforma kontenerowa Sgss-y703
 D-Zug-Wagen_C4ue-26_1.u.2.Kl.
@@ -907,7 +1081,7 @@ D-Zug-Wagen_C4ue-26_1.u.2.Kl.
 D-Zug-Wagen_C4ue-26_3.Kl.
 "Szczupak" C4ü-26 3.kl
 Dampftriebwagen Bauart Thomas
-szynobus parowy Thomasa
+szynobus Thomasa
 DB_BR_210
 DB 210
 DB_BR_216
@@ -930,6 +1104,8 @@ Doppelstock_Steuerwagen_rot_Kopf
 DB piêtrowy ster. przód
 Doppelstock_Wagen_rot
 DB piêtrowy 751 DB(p)za
+DR_Reisezugwagen_Altenberg
+C4i-35a "Altenberger"
 DR118
 DR 118
 DR713
@@ -938,8 +1114,24 @@ DR714
 DR 714 pasa¿erski
 DR749
 DR 749
+Drehgestell-Flachwagen Rbns641
+platforma Rbns 641
+Drehgestell-Flachwagen Rnoos644
+platforma Rnoos644
+Drehgestell-Flachwagen Roos-t645
+platforma Roos-t645
+Drehgestell-Flachwagen Sahmms 711
+platforma bêbnowa Sahmms 711
+Drehgestell-Flachwagen_Rils653_Stahl
+plandeka Rils 653
 Drehgestell-Flachwagen_Rils653_Stueckgut
 plandeka Rils 653
+Drehgestellflachwagen_Snps719_Holz
+platforma Snps 719
+Drehgestellflachwagen_Snps719_Stahl
+platforma Snps 719
+ES_5530
+weglarka Es
 ET165_Ende
 S-Bahn ET 165 ty³
 ET165_Kopf
@@ -962,8 +1154,22 @@ ET420_Front
 S-Bahn BR 420 przód (Monachium)
 ET420_Mitte
 S-Bahn BR 421 ¶rodk.
+Faals151
+zsypowy 6-os. Faals 151
+Fas126
+samowy³adowczy Fas 126
 Flachwagen_catg_01
 Platforma obni¿ona
+Flachwagen_Holz
+platforma
+FLIRT_Kopf
+FLIRT przód
+FLIRT_Schluss
+FLIRT ty³
+FLIRT_Waggon1
+FLIRT pantograf
+FLIRT_Waggon2
+FLIRT
 G10
 2-os. kryty Kassel
 G11-Wagen
@@ -972,12 +1178,56 @@ G20
 2-os. kryty Kassel G20
 gedeckter_Gueterwagen1895_Stueckgut
 Kryty 1895
+gedeckter_Gueterwagen1895_Vieh
+bydlêcy 1895
+Gelenkwagen_Sggrss733T1_Fll
+przegubowa cyst. Sggrss 733 przód
+Gelenkwagen_Sggrss733T1_Kuehlw.
+przegubowa ch³odnia Sggrss 733 przód
+Gelenkwagen_Sggrss733T1_Stgut
+przegubowy Sggrss 733 przód
+Gelenkwagen_Sggrss733T2_Fll
+przegubowa cyst. Sggrss 733 ty³
+Gelenkwagen_Sggrss733T2_Kuehlw.
+przegubowa ch³odnia Sggrss 733 ty³
+Gelenkwagen_Sggrss733T2_Stgut
+przegubowy Sggrss 733 ty³
+Geschlossener Gueterwagen Gbs252 Vieh
+bydlêcy Gbs252
 Getreidewagen
 Otw. dach p³ody rolne, 4-os.
+Gleiskraftwagen_SKL26
+SKL26 drezyna mot.
+Gleiskraftwagen_SKL26_Wagon
+SKL26 platforma
+GTW_Back
+Stadler GTW ty³
+GTW_Mittelwagen
+Stadler GTW siln.
 Hechtwagen_AB4ue23a
 "Szczupak" AB4ü 23a
 Henschel_DHG500C
 Henschel DHG 500 C
+Henschel_DHG700C
+Henschel DHG700C
+Henschel-Wegmann-Zug_Mittelwagen
+Henschel-Wegmann SBC4ü
+Henschel-Wegmann-Zug_Steuerwagen
+Henschel-Wegmann SBC4ü-35
+ICE1_Bistro
+ICE1 barowy
+ICE1_Kopf
+ICE1 przód
+ICE1_Schluss
+ICE1 ty³
+ICE1_Waggon
+ICE1 ¶rodk.
+ICE3_Ende
+ICE3 ty³
+ICE3_Front
+ICE3 przód
+ICE3_Mitte
+ICE3 ¶rodk.
 IntegBOB_Ende
 Integral S5D95 tyl. siln.
 IntegBOB_Gondel1
@@ -998,18 +1248,44 @@ Kesselwagen Zaes
 Cysterna 4-os. Zaes
 Kesselwagen Zs
 Cysterna 2-os. Zs
+Kesselwagen_BLME42P
+cysterna BLME42P 
+Kfz-Transportwagen1979
+platforma zespolona Laads
+Klappdeckelwagen_Kmm36
+klapowy Kmm36
+Koe1
+Kö I 0246
+Kohletrichterwagen_OOt
+zsypowy OOt 08 bay
+Kuehlwagen_Milch_1850
+mleczarski 1850
+Laaijrs567_Ende
+podw. plandeka Laaijrs 587 ty³
+Laaijrs567_Front
+podw. plandeka Laaijrs 587 przód
 Laakklps608_Ende
 intermodalny Laakklps 608 ty³
 Laakklps608_Front
 intermodalny Laakklps 608 przód
+Laaps565_Ende
+VTG Laaps565 ty³
+Laaps565_Front
+VTG Laaps565 przód
 LAG_Nr891-ET194_Stueckgut
 LAG No 891 / ET 194 kryty
 LAG_Nr891-ET194_Vieh
 LAG 891 ET 194 bydlêcy
+Langholzwagen_RhEB1840
+platforma RhEB 1840
 LEG-Wagon_Nr8
 Ludwigsbahn wagon nr8
 Leichttriebwagen_SVG
 szynobus z Sylt
+lgns583_fluessige Lebensmittel
+kontener ch³odn. Lgns 583 
+lgns583_Stueckgut
+platforma Lgns 583
 Metropolitan_Mittelwagen
 MetropolitaN Intercity
 Metropolitan_Steuerwagen
@@ -1019,21 +1295,43 @@ NE 81 (DB 626) siln.
 NE81-DB_BR926_VB
 NE 81 (DB 926) ster.
 NGT_HST_Ende
-NGT ty³
+NGT HST ty³
 NGT_HST_Front
-NGT przód
+NGT HST przód
 NGT_HST_Mitte
-NGT ¶rodk.
+NGT HST ¶rodk.
 NGT_Post_Ende
 NGT pocztowy ty³
 NGT_Post_Front
 NGT pocztowy przód
 NGT_Post_Mitte
 NGT pocztowy ¶rodek
+O-Nuernberg
+wêglarka "O Norymberga"
 Offener Drehgestellwagen Eanos-x059
 Otwarty obrotn. Eanos-x059
+offener Gueterwagen 1835 fl.Lebensmittel
+platforma st±giewna 1835
+offener Gueterwagen 1835 Stahl
+wêglarka na stal 1835
 offener Gueterwagen 1835 Stueckgut
 Wêglarka 1835
+offener Gueterwagen 1850 Schuettgut
+wêglarka
+offener Gueterwagen 1850 Vieh
+weglarka bydlêca
+offener_Gueterwagen_SSlm25_Holz
+platforma SSLm 25 Köln
+offener_Gueterwagen_SSlm25_Stahl
+platforma SSLm 25 Köln
+offener_Hochbordwagen_Ommu
+wêglarka Ommu
+offener_Kohlewagen_OOmk
+wêglarka OOmk 
+Offs59a_1958
+platforma samochodowa Offs 59 przód
+Offs59b_1958
+platforma samochodowa Offs 59 ty³
 P8Tender
 Pruska P8 - tender
 PBL Post
@@ -1058,6 +1356,8 @@ preussische_T0
 Pruska T0
 Preussischer_ET531
 pruski 531 "Berlin"
+Preussischer_Langholzwagen1900
+wózek sprzê¿. 1840
 preussischer_PW_fuer_T0_Kl.2_3_4
 pruski 2kl./3kl./4kl.(sk³ad T0)
 preussischer_PW_fuer_T0_Kl.3_4
@@ -1070,6 +1370,16 @@ Rekowagen Baag
 przebudowany Baag
 Rekowagen Bghw
 przebudowany Bghw
+Rmms663Autos
+platforma Rmms 663
+Rmms663Holz
+platforma Rmms 663
+Rmms663Stahl
+platforma Rmms 663
+Rungenwagen
+platforma 2-os.
+Rungenwagen KS446
+platforma Ks446
 S1_Tender
 Pruska S1 - tender
 Saechsischer_Bahnpostwagen_1860
@@ -1078,23 +1388,59 @@ saechsischer_C_Sa_12
 saski C Sa12 3-kl.
 saechsischer_C4ue_sa07
 saski C4ü Sa 07
+Schiebeplanenwagen Shimmns-ttu 722
+plandeka Shimmns-ttu 722
+Schiebewandwagen Hbis 299
+przesuwne ¶ciany Hbis 299
+Schiebewandwagen_Habbiins352
+rozsuwny Habbiins 352
+Schiebewandwagen_Hbbills311
+rozsuwny Hbbills 311
 Schienenzeppelin
 Zeppelin szynowy
 Schnellzugwagen_3.Kl._C4uepr11
 pruski ekspresowy C4ü Pr11 3-kl.
+Schotterwagen
+zsypowy do t³ucznia
+Schuettgutwagen Facns133
+zsypowy Facns 133 
+Schuettgutwagen Fc(s)090
+zsypowy Fc(s) 090 
+Schwenkdachwagen Taems 890
+rozchylany dach Taems 890 
+Selbstendlade-TW_Fr.-Krupp_AG
+zsypowy Krupp
 Selbstentladewagen Tals 966
 Tals 966
 Silberlinge_orange
 "Srebrzyk" osob. B4nb-59 pom.
 Silberlinge_silbern
 "Srebrzyk" osob. B4nb-59
+Silberlinge_steuerw_Post_BDnf_738
+Silberlinge BDnf738 ster. poczt.
+Silberlinge_steuerw_v_BDnf_738
+Silberlinge BDnf738 ster.
 Spirituswagen_1875
 Cysterna destylaty
+Stadler_GTW
+Stadler GTW przód
+Stahlwagen1
+platforma 2-os.
+Staubgutwagen_Uacs
+poczw. silos Uacs 946
+Staubkesselwagen_KKd49
+4-os. wapaniarka
+Staubwagen
+podwójny silos Ucs 908
 Steuerwagen_ES89
 ES 89 sterowniczy
 T34Tender
 DRG BR 38 - tender typ T34
+Talbot_Selbstentlader1896
+wêglarka zsypowa Talbot
 Taschenwagen Sdgmns 743Post
+kieszeniowy Sdgmns 743
+Taschenwagen Sdgmns 743Vieh
 kieszeniowy Sdgmns 743
 TEE_Triebwagen_Ende
 TEE VT 11.5 tylny siln.
@@ -1102,8 +1448,12 @@ TEE_Triebwagen_Kopf
 TEE VT 11.5 przedni siln.
 TEE_Waggon
 TEE VT 11.5 pasa¿. ¶rodk.
+Teleskophaubenwagen Sahimms-u 900
+przesuwna obudowa Sahimms-u 900
 Tieflader
 obni¿ona platforma
+Torpedopfannenwagen_8008
+torpeda typ 8008
 Triebwagen_ET_184_4
 ET 184-4
 Triebwagen_ET_186_11
@@ -1113,17 +1463,39 @@ ET 89 silnikowy
 TW121a_Baden
 badeñski 121a
 TwindexxVario_Mittelwagen
-Twindexx Vario ¶rodk.
+IC2 Twindexx Vario ¶rodk.
 TwindexxVario_Steuerwagen
-Twindexx Vario ty³ ster.
+IC2 Twindexx Vario ty³ ster.
+TwindexxVario_Steuerwagen_v
+IC2 Twindexx Vario przód ster.
+U-Bahn_Berlin_A-Serie_BW
+Berlin U-Bahn typ A siln.
+U-Bahn_Berlin_A-Serie_TW
+Berlin U-Bahn typ A
+U-Bahn_Berlin_B-Serie_BW
+Berlin U-Bahn typ B siln.
+U-Bahn_Berlin_B-Serie_TW
+Berlin U-Bahn typ B
+U-Bahn_Berlin_C-Serie_BW
+Berlin U-Bahn typ C siln.
+U-Bahn_Berlin_C-Serie_TW
+Berlin U-Bahn typ C
 VB140
 VS 145 sterowniczy (do VT 33.2)
 VB75
 DR 135 (DB VB 140 032-047) pasa¿.
 Versuchstriebwagen_Siemens_und_Halske
 Szynobus 3-faz. Siemens&Halske
+Vicinalbahn-Wagen BCL
+Vicinalbahn BCL
+Vicinalbahn-Wagen PBL
+Vicinalbahn PBL
+Viehwagen
+bydlêcy
 VT33
 VT 33.2 silnikowy
+VT66.9
+VT 66.9
 VT75
 DR 135 (DB VT 75) siln.
 Wannentender
@@ -1134,12 +1506,40 @@ x-Wagen_Bx794
 iks Bx794
 x-Wagen_Bxf796
 iks ster. Bxf796
+x-Wagen_Bxf796_steuer
+iks ster. Bxf796
 #________________________________vehicle - water________________________________
 #________________________________vehicle - water________________________________
+Barkasse Altona
+Altona
+Barkasse Post
+³adownia pocztowa
+Barkasse_HansaII
+Hansa II
+Barkasse_Otto_Abicht
+Otto Abicht
+Barkasse_Otto_Abicht_Post
+Otto Abicht
 Faehre KoenigswinterIII
 prom Königswinter III
 Faehre_KoenigswinterIII_Autos
 Prom samochodowy Königswinter III
+Hafenbarkasse Hafendockter
+Hafendockter
+Kettenschlepper_Ladung_Fisch
+Holownik K.B.K.S. lodownia
+Kettenschlepper_Ladung_Holz
+Holownik K.B.K.S. ³adownia na drewno
+Kettenschlepper_Ladung_Kohle
+Holownik K.B.K.S. ³adownia masowa
+Kettenschlepper_Ladung_Mail
+Holownik K.B.K.S. ³adownia pocztowa
+Kettenschlepper_Ladung_Pax
+Holownik K.B.K.S. kabiny pasa¿erskie
+Kettenschlepper_Ladung_Stueckgut
+Holownik K.B.K.S. ³adownia drobnicowa
+Kettenschlepper_Ladung_Vieh
+Holownik K.B.K.S. ³adownia bydlêca
 Loreley_IV
 Prom samochodowy Loreley IV
 Main-Kettenschlepper_K.B.K.S._No._V
@@ -1156,6 +1556,8 @@ Treidel_Pferd2
 zaprzêg podwójny
 Treidel_Pferd4
 4-konny zaprzêg
+TS-MHZ_Schoner
+szkuner
 #___________________________________way - air___________________________________
 #___________________________________way - air___________________________________
 air_movement_area
@@ -1191,7 +1593,7 @@ Autostrada betonowa
 city_road
 Droga miejska
 city_road50
-Droga miejska, po przek±tnej
+Droga miejska
 cobblestone_road_20
 Droga brukowana 20 km/h
 cobblestone_road_40

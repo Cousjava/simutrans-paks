@@ -1,9 +1,8 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 10-07-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
-#---------------------------------
+---------------------------------
 Obj=building
 type=hq
 Name=Hauptquartier7

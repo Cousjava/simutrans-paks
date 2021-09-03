@@ -3,28 +3,28 @@
 #	Vehicle
 ---------------------------------
 obj=vehicle
-name=Beiwagen T24
+name=Beiwagen_T24
 copyright=pumuckl999
 intro_year=1924
 intro_month=1
 retire_year=1967
 retire_month=10
 waytype=tram_track
-cost=3220000
+cost=1645000
 runningcost=106
-fixed_cost=703
+fixed_cost=1359
 freight=Passagiere
 payload=70
 engine_type=electric
 speed=30
 weight=7
 length=9
-constraint[prev][0]=Triebwagen T24
-constraint[prev][1]=Beiwagen T24
+constraint[prev][0]=Triebwagen_T24
+constraint[prev][1]=Beiwagen_T24
 constraint[prev][2]=Strassenbahntriebwagen223_Typ_TF21S
 constraint[prev][3]=none
-constraint[next][0]=Triebwagen T24
-constraint[next][1]=Beiwagen T24
+constraint[next][0]=Triebwagen_T24
+constraint[next][1]=Beiwagen_T24
 constraint[next][2]=Strassenbahntriebwagen223_Typ_TF21S
 constraint[next][3]=none
 EmptyImage[S]=t24.1.6

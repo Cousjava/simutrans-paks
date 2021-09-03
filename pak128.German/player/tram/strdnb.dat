@@ -1,5 +1,7 @@
+--------------------------------------
 #	PAK128.german
 #	Players Building
+--------------------------------------
 obj=building
 name=StrabaDepot Naumburg
 copyright=pumuckl999
@@ -33,4 +35,4 @@ FrontImage[0][0][0][0][0][0]=strdnb.2.0
 FrontImage[0][0][0][0][0][1]=strdnb.3.0
 FrontImage[1][0][0][0][0][0]=strdnb.2.1
 FrontImage[1][0][0][0][0][1]=strdnb.3.1
-#_EO_
+

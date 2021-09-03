@@ -70,6 +70,9 @@ icon_height = 32
 # WRK_SET_CLIMATE=39
 # WRK_ROTATE_BUILDING=40
 # WRK_MERGE_STOP=41
+# TOOL_EXEC_SCRIPT=42
+# TOOL_EXEC_TWO_CLICK_SCRIPT=43
+# TOOL_PLANT_GROUNDOBJ=44
 
 #
 general_tool[0]=0,0,9,a
@@ -157,6 +160,9 @@ general_tool[35]=16,13,11,
 # WKZ_TOGGLE_RESERVATION=33
 # WKZ_VIEW_OWNER=34
 # WKZ_HIDE_UNDER_CURSOR=35
+# TOOL_MOVE_MAP=36
+# TOOL_ROLLUP_ALL_WIN=37
+
 #
 simple_tool[0]=0,p
 simple_tool[1]=1,W
@@ -224,6 +230,9 @@ simple_tool[34]=,O
 # WKZ_SCENARIO_INFO=31
 # WKZ_LIST_DEPOTS=32
 # WKZ_LIST_VEHICLES=33
+# DIALOG_SCRIPT_TOOL=34
+# DIALOG_EDIT_GROUNDOBJ=35
+
 
 dialog_tool[0]=0,?
 dialog_tool[1]=1,Q
@@ -256,7 +265,8 @@ dialog_tool[27]=28,E
 dialog_tool[28]=27,n
 dialog_tool[32]=26
 dialog_tool[33]=29
-
+dialog_tool[34]=30
+dialog_tool[35]=31
 
 # FINAL SECTION: compose all tool bars
 # now the defintion of all tool bars
@@ -377,10 +387,10 @@ toolbar[1][15]=general_tool[39],48,,4
 toolbar[1][16]=general_tool[39],50,,5
 toolbar[1][17]=general_tool[39],51,,6
 toolbar[1][18]=general_tool[39],53,,7
-toolbar[1][19]=general_tool[4],10,,72 #double southslope
-toolbar[1][20]=general_tool[4],11,,8 #double northslope
-toolbar[1][21]=general_tool[4],12,,24 #double westslope
-toolbar[1][22]=general_tool[4],13,,56 #double eastslope
+toolbar[1][19]=general_tool[4],65,,72 #double southslope
+toolbar[1][20]=general_tool[4],66,,8 #double northslope
+toolbar[1][21]=general_tool[4],67,,24 #double westslope
+toolbar[1][22]=general_tool[4],68,,56 #double eastslope
 
 # railtools
 toolbar[2][0]=buildings(33,2)
@@ -449,6 +459,7 @@ toolbar[6][8]=signs(3)
 toolbar[6][9]=buildings(34,3)
 toolbar[6][10]=buildings(11,3)
 toolbar[6][11]=buildings(35,3)
+toolbar[6][12]=buildings(36,3)
 
 # airtools (waytype 16)
 toolbar[7][0]=buildings(33,16)
@@ -528,8 +539,9 @@ toolbar[11][4]=general_tool[26]
 toolbar[11][5]=general_tool[11]
 toolbar[11][6]=general_tool[30]
 toolbar[11][7]=ways(3,255)
-toolbar[11][8]=simple_tool[6]
-toolbar[11][9]=general_tool[27]
+toolbar[11][8]=general_tool[27]
+toolbar[11][9]=dialog_tool[35]
+toolbar[11][10]=dialog_tool[34]
 
 # editor tools
 toolbar[12][0]=simple_tool[3]
@@ -538,4 +550,5 @@ toolbar[12][2]=general_tool[10],26,,-100
 toolbar[12][3]=general_tool[14],28,,city_road
 toolbar[12][4]=general_tool[28]
 toolbar[12][5]=general_tool[29]
+toolbar[12][6]=simple_tool[6]
 

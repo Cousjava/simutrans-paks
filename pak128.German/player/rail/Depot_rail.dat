@@ -1,9 +1,8 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 05-2011
-#    Letzte Bearbeitung: $Date$ - $Author$
-#---------------------------------
+---------------------------------
 Obj=building
 Name=TrainDepot_1
 copyright=Tony_Bzt

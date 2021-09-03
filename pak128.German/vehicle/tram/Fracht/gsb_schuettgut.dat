@@ -1,5 +1,7 @@
+---------------------------------
 #	PAK128.german
 #	Vehicle
+---------------------------------
 obj=vehicle
 name=Schuettgutwagen_Gueterstrassenbahn
 copyright=pumuckl999
@@ -8,9 +10,9 @@ intro_month=1
 retire_year=1953
 retire_month=12
 waytype=tram_track
-cost=375000
+cost=217500
 runningcost=14
-fixed_cost=111
+fixed_cost=177
 freight=Kohle
 payload=7
 #engine_type=electric

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 12-09-2017
-#	Letzte Bearbeitung: 26-10-2018 pumuckl999
 ---------------------------------
 obj=vehicle
 name=Talbot_Selbstentlader1896
@@ -11,9 +10,9 @@ intro_year=1896
 intro_month=1
 retire_year=1935
 retire_month=7
-cost=1469000
+cost=767000
 runningcost=34
-fixed_cost=581
+fixed_cost=874
 waytype=track
 freight=Kohle
 payload=13
@@ -21,6 +20,7 @@ weight=6.5
 speed=60
 length=6
 sound=-1
+Constraint[Prev][0]=any
 EmptyImage[S]=TalbotSEntlader1896.0.0
 EmptyImage[E]=TalbotSEntlader1896.0.1
 EmptyImage[SE]=TalbotSEntlader1896.0.2

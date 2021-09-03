@@ -1,10 +1,8 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 2008
-#    letzte Bearbeitung:
-#    03-09-2015 The Transporter
-#---------------------------------
+---------------------------------
 Obj=building
 Name=MonorailDepot
 copyright=vilvoh

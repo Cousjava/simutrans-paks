@@ -1,7 +1,8 @@
+--------------------------------------
 #	PAK128.german
 #	Citycars
 #       neu: 16-09-2018
-#---------------------------------
+--------------------------------------
 obj=citycar
 name=citybike_Yamaha_Tenere
 DistributionWeight=4

@@ -22,7 +22,6 @@ sound=-1
 Constraint[Prev][0]=BR38
 Constraint[Prev][1]=BR44
 Constraint[Prev][2]=BR50
-Constraint[Prev][3]=none
 EmptyImage[S]=Wannentender.0.0
 EmptyImage[E]=Wannentender.0.1
 EmptyImage[SE]=Wannentender.0.2

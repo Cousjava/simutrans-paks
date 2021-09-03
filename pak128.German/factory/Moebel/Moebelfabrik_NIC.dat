@@ -24,6 +24,9 @@ InputFactor[1]=15
 InputSupplier[1]=0
 OutputGood[0]=Moebel
 OutputCapacity[0]=400
+sound=buzzsaw.wav
+sound_interval=30000
+# 30 Sekunden
 electricity_amount=25
 passenger_boost=1000
 mail_boost=500

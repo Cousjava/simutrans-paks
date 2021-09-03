@@ -26,7 +26,6 @@ sound=BR41.wav
 Constraint[Prev][0]=BR01Tender
 Constraint[Prev][1]=none
 Constraint[Next][0]=BR01Tender
-Constraint[Next][1]=none
 EmptyImage[S]=BR01.0.0
 EmptyImage[E]=BR01.0.1
 EmptyImage[SE]=BR01.0.2

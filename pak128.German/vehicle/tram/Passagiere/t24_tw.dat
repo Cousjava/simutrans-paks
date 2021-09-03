@@ -1,16 +1,18 @@
+---------------------------------
 #	PAK128.german
 #	Vehicle
+---------------------------------
 obj=vehicle
-name=Triebwagen T24
+name=Triebwagen_T24
 copyright=pumuckl999
 intro_year=1924
 intro_month=1
 retire_year=1967
 retire_month=10
 waytype=tram_track
-cost=3145000
+cost=1817500
 runningcost=94
-fixed_cost=711
+fixed_cost=1264
 freight=Passagiere
 payload=59
 engine_type=electric
@@ -20,12 +22,11 @@ speed=30
 weight=13
 length=9
 #sound=
-#smoke=
-constraint[prev][0]=Triebwagen T24
-constraint[prev][1]=Beiwagen T24
+constraint[prev][0]=Triebwagen_T24
+constraint[prev][1]=Beiwagen_T24
 constraint[prev][2]=none
-constraint[next][0]=Triebwagen T24
-constraint[next][1]=Beiwagen T24
+constraint[next][0]=Triebwagen_T24
+constraint[next][1]=Beiwagen_T24
 constraint[next][2]=none
 EmptyImage[S]=t24.0.6
 EmptyImage[N]=t24.0.2

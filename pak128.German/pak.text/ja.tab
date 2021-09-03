@@ -9,7 +9,7 @@
 #                             Language: ja Japanese                            #
 #                                Encoding: UTF-8                               #
 #                                Font: m+10r.bdf                               #
-#                           Date Created: 12.06 2020                           #
+#                           Date Created: 27.03 2021                           #
 #                                                                              #
 ################################################################################
 #________________________________bridge - power_________________________________
@@ -560,6 +560,8 @@ VT75
 Triebwagen VT75
 #________________________________vehicle - water________________________________
 #________________________________vehicle - water________________________________
+Hafenbarkasse Hafendockter
+Hafendockter
 MHz-C3P_Post_Barge
 MHz-C3P 郵便バージ
 Post_Barge

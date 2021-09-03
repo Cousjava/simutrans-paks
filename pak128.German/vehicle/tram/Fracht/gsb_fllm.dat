@@ -1,5 +1,7 @@
+---------------------------------
 #	PAK128.german
 #	Vehicle
+---------------------------------
 obj=vehicle
 name=Kesselwagen_fl_Gueterstrassenbahn
 copyright=pumuckl999
@@ -8,9 +10,9 @@ intro_month=1
 retire_year=1953
 retire_month=12
 waytype=tram_track
-cost=417500
+cost=248750
 runningcost=15
-fixed_cost=118
+fixed_cost=188
 freight=Milch
 payload=6
 speed=25

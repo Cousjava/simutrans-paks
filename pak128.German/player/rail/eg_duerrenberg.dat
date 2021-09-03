@@ -1,9 +1,8 @@
-#-------------------------------
+-------------------------------
 #	PAK128.german
 #	Players Building
 #    Neu:   27-04-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
-#-------------------------------
+-------------------------------
 Obj=building
 Name=Empfangsgebaeude_Duerrenberg
 copyright=pumuckl999

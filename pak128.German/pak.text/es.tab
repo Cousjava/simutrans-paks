@@ -9,7 +9,7 @@
 #                             Language: es Espanol                             #
 #                             Encoding: ISO-8859-1                             #
 #                             Font: Prop-Latin1.bdf                            #
-#                            Date Created: 1.09 2020                           #
+#                           Date Created: 25.08 2021                           #
 #                                                                              #
 ################################################################################
 #_________________________________bridge - road_________________________________
@@ -29,9 +29,9 @@ Parada de monorraíl
 #________________________________building - com_________________________________
 #________________________________building - com_________________________________
 COM_ALL_1800_A_01
-Lote vacío\nDedicación comercial
+Lote vacío\n\nDedicación comercial
 COM_ALL_1920_A_01
-Terreno vacío con cartel de construcción: Aquí una empresa de capital de riesgo quiere construir un alto edificio de oficinas.
+Terreno vacío con cartel de construcción\n\nAquí una empresa de capital de riesgo quiere construir un alto edificio de oficinas.
 COM_ALL_1925_A_09
 Edificio vacío
 COM_ALL_1962_B_04
@@ -368,6 +368,22 @@ Epoche1CityCar2
 Coche de un caballo
 Kaefer_Polizei
 VW Escarabajo de la policía
+#_________________________________climates_text_________________________________
+#_________________________________climates_text_________________________________
+arctic
+Zona glaciar
+desert
+Costero
+mediterran
+Alemania del Este
+rocky
+Clima alpino
+temperate
+Baja cordillera
+tropic
+Tierras bajas del norte
+tundra
+Estribaciones alpinas
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
 ALP_Apotheke_NIC
@@ -1294,8 +1310,6 @@ UNDERGROUND
 Herramientas subterráneas
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
-arctic
-Zona glaciar
 CATEGORY_01
 Carga general
 CATEGORY_02
@@ -1312,36 +1326,24 @@ CATEGORY_07
 Productos agrícolas
 CATEGORY_08
 Granos
-desert
-Costero
 Gewinn
 Ganancia anual
-mediterran
-Alemania del Este
 Paletten
-Palés
-rocky
-Clima alpino
+ Palés
 Rotate Building
 Rotar edificio
 Sack
-Bolsas
+ Bolsas
 ShipStop
 Muelle
 Stck.
-Piezas
-temperate
-Baja cordillera
+ Piezas
 Tonnen
-Toneladas
+ Toneladas
 Tram_Electrification
 Catenaria
 TrolleyBus_Electrification
 Catenaria para trolebús
-tropic
-Tierras bajas del norte
-tundra
-Estribaciones alpinas
 upgrade HQ
 Modernizar sede
 water
@@ -1422,6 +1424,16 @@ Fokker_F28
 Fokker F28
 MHz-McDonnell-Douglas_DC10
 McDonnell Douglas DC-10
+#__________________________vehicle - electrified_track__________________________
+#__________________________vehicle - electrified_track__________________________
+E_16
+E 16
+E_17
+E 17
+E_178
+E 178
+E69
+LAG 2 / DR E69 Pauline
 #________________________________vehicle - road_________________________________
 #________________________________vehicle - road_________________________________
 DAF_95XF_Zugmaschiene
@@ -1518,6 +1530,8 @@ Barkasse_Otto_Abicht
 Lancha Otto Abicht
 DS_Concordia_Passagiere
 Buque de vapor Concordia
+Hafenbarkasse Hafendockter
+Hafendockter
 Holzschleppkahn_Holz
 Barcaza de madera para madera
 Loreley_IV

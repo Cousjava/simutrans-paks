@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 05-08-2017
-#	Letzte Bearbeitung: 25-10-2018 pumuckl999
 ---------------------------------
 obj=vehicle
 name=Kesselwagen_BLME42P
@@ -11,15 +10,16 @@ intro_year=1918
 intro_month=1
 retire_year=1955
 retire_month=8
-cost=3540000
+cost=1830000
 runningcost=59
-fixed_cost=1125
+fixed_cost=1837
 waytype=track
 freight=Milch
 payload=19
 speed=80
 weight=12
 length=7
+Constraint[Prev][0]=any
 EmptyImage[S]=KW_BLME42P.0.0
 EmptyImage[E]=KW_BLME42P.0.1
 EmptyImage[SE]=KW_BLME42P.0.2

@@ -1,7 +1,8 @@
+---------------------------------
 #	PAK128.german
 #	Citycars
 #       neu: 15-09-2018
-#---------------------------------
+---------------------------------
 obj=citycar
 name=citycar_fantasy_gelb
 DistributionWeight=4

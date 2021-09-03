@@ -2,15 +2,13 @@
 #	PAK128.german
 #	Oberleitung
 #	Neu:01-2011
-#	Letzte Bearbeitung 
-#       04-2017 michelstadt
 ---------------------------------
 obj=way-object
 name=Oberleitung_Straba90
 copyright=Timothy Baldock&Gwalch
 waytype=tram_track
 own_waytype=electrified_track
-intro_year=1956
+intro_year=1925
 intro_month=1
 cost=7000
 maintenance=20

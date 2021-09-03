@@ -1,9 +1,8 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 06-2015
-#    Letzte Bearbeitung: $Date$ - $Author$
-#---------------------------------
+---------------------------------
 obj=building
 name=Tower_Fuhlsbuettel
 copyright=pumuckl999

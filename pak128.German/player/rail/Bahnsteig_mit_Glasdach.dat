@@ -1,13 +1,11 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 04-2015
-#    letzte Bearbeitung:
-#   $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
-#---------------------------------
+---------------------------------
 Obj=building
 Name=Bahnsteig_mit_Glasdach
-copyright=Lemuria+The Transporter
+copyright=Lemuria+The Transporter+Makie
 type=stop
 waytype=track
 enables_pax=1

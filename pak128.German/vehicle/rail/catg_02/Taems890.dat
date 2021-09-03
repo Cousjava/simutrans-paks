@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 14-05-2017
-#	Letzte Bearbeitung: 25-10-2018 pumuckl999
 ---------------------------------
 obj=vehicle
 name=Schwenkdachwagen Taems 890
@@ -11,15 +10,16 @@ intro_year=1966
 intro_month=1
 retire_year=2008
 retire_month=12
-cost=12537000
+cost=6381000
 runningcost=119
-fixed_cost=2975
+fixed_cost=5540
 waytype=track
 freight=Kohle
 payload=57.5
 speed=120
 weight=22.5
 length=9
+Constraint[Prev][0]=any
 EmptyImage[S]=Taems890.0.0
 EmptyImage[E]=Taems890.0.1
 EmptyImage[SE]=Taems890.0.2

@@ -22,7 +22,6 @@ length=7
 power=647
 gear=220
 sound=3
-Constraint[Prev][0]=none
 EmptyImage[S]=BR76-0.0.0
 EmptyImage[E]=BR76-0.0.1
 EmptyImage[SE]=BR76-0.0.2

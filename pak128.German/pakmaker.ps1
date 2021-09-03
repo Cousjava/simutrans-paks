@@ -50,6 +50,7 @@ Copy-Item .\es.tab $repo\simutrans\PAK128.german\text -PassThru 4>&1>> $repo\log
 Copy-Item .\fr.tab $repo\simutrans\PAK128.german\text -PassThru 4>&1>> $repo\log\Pakmaker.log 2>>$repo\log\Error_Pakmaker.log
 Copy-Item .\ja.tab $repo\simutrans\PAK128.german\text -PassThru 4>&1>> $repo\log\Pakmaker.log 2>>$repo\log\Error_Pakmaker.log
 Copy-Item .\pl.tab $repo\simutrans\PAK128.german\text -PassThru 4>&1>> $repo\log\Pakmaker.log 2>>$repo\log\Error_Pakmaker.log
+Copy-Item .\it.tab $repo\simutrans\PAK128.german\text -PassThru 4>&1>> $repo\log\Pakmaker.log 2>>$repo\log\Error_Pakmaker.log
 $empty_line
 
 Set-location $repo\city

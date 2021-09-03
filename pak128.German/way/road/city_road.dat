@@ -5,7 +5,7 @@
 ---------------------------------
 Obj=way
 Name=city_road
-copyright=The Transporter
+copyright=The Transporter / Makie
 waytype=road
 intro_year=1953
 intro_month=1
@@ -13,8 +13,8 @@ intro_month=1
 cost=5000
 maintenance=50
 topspeed=50
-icon=> city_road-128.3.2
-cursor=city_road-128.3.1
+##icon=> city_road-128.3.2
+##cursor=city_road-128.3.1
 Image[-]=city_road-128.1.2
 Image[N]=city_road-128.1.5
 Image[S]=city_road-128.2.1

@@ -1,8 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 06.02.2017
-# --------------------------------
+--------------------------------
 Obj=factory
 Name=Forellenhof Markusmuehle
 copyright=pumuckl999
@@ -74,4 +74,3 @@ BackImage[2][0][0][0][0][1]=fhmm_winter.1.1
 BackImage[2][1][0][0][0][1]=fhmm_winter.1.2
 BackImage[3][0][0][0][0][1]=fhmm_winter.2.0
 BackImage[3][0][1][0][0][1]=fhmm_winter.2.1
-#_EO_

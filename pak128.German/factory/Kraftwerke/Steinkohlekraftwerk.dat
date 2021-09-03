@@ -6,13 +6,14 @@
 Obj=factory
 Name=Steinkohlekraftwerk
 copyright=pumuckl999
-DistributionWeight=5
 pax_level=20
 intro_year=1982
 intro_month=1
 retire_year=2015
 retire_month=12
 # wegen Klimakatastrophe sind neue Kohlekraftwerke nicht mehr erwünscht
+location=river
+DistributionWeight=5
 Productivity=800
 InputGood[0]=Kohle
 InputCapacity[0]=3200

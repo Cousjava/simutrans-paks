@@ -5,7 +5,7 @@
 ---------------------------------
 obj=vehicle
 name=E141-gruen
-copyright=TonyBzt
+copyright=Makie
 intro_year=1956
 intro_month=4
 retire_year=1987
@@ -19,7 +19,7 @@ speed=120
 weight=66.4
 power=2400
 gear=250
-length=10
+length=12
 sound=-1
 EmptyImage[S]=BR141.0.0
 EmptyImage[E]=BR141.0.1
@@ -32,7 +32,7 @@ EmptyImage[NE]=BR141.0.7
 ----------------------------
 obj=vehicle
 name=E141-rot
-copyright=TonyBzt
+copyright=Makie
 intro_year=1987
 intro_month=4
 retire_year=2006
@@ -46,7 +46,7 @@ speed=120
 weight=72.5
 power=2400
 gear=300
-length=10
+length=12
 sound=-1
 EmptyImage[S]=BR141.1.0
 EmptyImage[E]=BR141.1.1

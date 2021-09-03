@@ -1,6 +1,7 @@
+--------------------------------------
 #	PAK128.german
-
 #	Citybuildings residental
+--------------------------------------
 obj=building
 name=Beisiegelsches_Boddenhus 
 copyright=
@@ -33,4 +34,3 @@ BackImage[0][0][0][0][0][1]=bsbh.1.0
 BackImage[1][0][0][0][0][1]=bsbh.1.1
 BackImage[2][0][0][0][0][1]=bsbh.1.2
 BackImage[3][0][0][0][0][1]=bsbh.1.3
-#_EO_

@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 25-04-2017
-#	Letzte Bearbeitung: 18-10-2018
 ---------------------------------
 obj=vehicle
 name=Postwaggon_4-cl15
@@ -11,9 +10,9 @@ intro_year=1932
 intro_month=1
 retire_year=1990
 retire_month=12
-cost=11090000
+cost=5690000
 runningcost=128
-fixed_cost=3215
+fixed_cost=5465
 waytype=track
 length=11
 freight=Post
@@ -21,6 +20,7 @@ payload=60
 weight=29
 speed=120
 sound=-1
+Constraint[Prev][0]=any
 EmptyImage[S]=Post4cl15.0.0
 EmptyImage[E]=Post4cl15.0.1
 EmptyImage[SE]=Post4cl15.0.2

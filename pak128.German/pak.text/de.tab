@@ -9,7 +9,7 @@
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                             Font: Prop-Latin1.bdf                            #
-#                           Date Created: 20.10 2020                           #
+#                           Date Created: 25.08 2021                           #
 #                                                                              #
 ################################################################################
 #____________________________bridge - monorail_track____________________________
@@ -68,14 +68,24 @@ COM_ALL_1800_A_01
 Leeres Grundstück\n\nGewerbewidmung
 COM_ALL_1800_A_08
 Schweinfurt Am Graben 30 gelb
+COM_ALL_1828_A_06
+Weingrosshandlung Gotthelf Kühne Leipzig
 COM_ALL_1890_A_06
 Emsturnhalle Rietberg
+COM_ALL_1893_A_04
+Schule Freital Kleinnaundorf
 COM_ALL_1900_A_02
 Rummel
+COM_ALL_1910_A_10
+Altchemnitzer Straße 46, Chemnitz
 COM_ALL_1920_A_01
 Leeres Grundstück mit Bautafel\n\nHier möchte eine Venture-Capital-Gesellschaft ein hohes Bürogebäude errichten.
 COM_ALL_1925_A_09
 Leeres Gebäude
+COM_ALL_1929_A_10
+Museum Gunzenhauser\n\nErbaut 1928 als Hauptsitz der Sparkasse Chemnitz
+COM_ALL_1929_A_24
+Karstadt am Hermannplatz\n\nDiese Kaufhaus in Berlin hatte beeindruckende 72.000 qm Nutzfläche auf 9 Geschossen. Die Grafik zeigt nur einen der beiden Türme des Straßenblock großen Gebäudes. Gebaut: 1927-1929, größtenteils zerstört: 25.04.1945. 1929 bei der Eröffnung hat man da wohl alles kaufen können, was der Weltmarkt so her gab. Ein paar Jahre später war es dann wieder Essig mit kaufen aus der großen weiten Welt. Nach dem Krieg wurde das Kaufhaus kleiner wieder aufgebaut und später erweitert. Es konnte aber nie mehr die alte Größe erreichen. Corona und das Internet geben den Großkaufhäusern mit umfassenden Angebot wohl nun den Rest. Es gibt zwar weiterhin Einkaufzentren, aber dort sind nur die bekannten Ketten mit ihrem einheitlichen Sortiment vertreten und alle diese Ketten bieten jeweils ein ähnliches Standardsortiment an. Das war aber bei Karstadt in den letzten Jahren auch schon so, dass mehr und mehr Fläche an Modelabel vermietete wurde und damit die Hosen und Hemden jeweils nicht mehr zusammen angeboten wurden, sondern man bei jedem Label extra schauen musste. Als Kunde verliert man damit die Möglichkeit Preise und Qualität zu vergleichen. Die Fusion aller großen Kaufhäuser zu Karstadt hat dem Konzept Kaufhaus auch nicht gut getan. Was soll München mit 5 oder mehr Karstadt-Kaufhäusern die alle weitgehend das Gleiche anbieten. Früher waren das verschiedene Konzerne die um die Kunden konkurriert haben. Da waren Ideen und Besonderheiten im Angebot gefragt. Heute ist es sinnlos von einem Kaufhaus zum nächsten zu gehen. Es ist sogar sinnlos in einer anderen Stadt die dortigen Kaufhäuser anzusehen. Das Angebot ist identisch. 
 COM_ALL_1930_A_03
 Baustelle Tiefbau
 COM_ALL_1937_A_12
@@ -85,7 +95,7 @@ Hier wird hart gearbeitet, aber im Winter ruht die Baustelle.
 COM_ALL_1951_A_02
 Kostenlose Kurzparkzone für jedermann.
 COM_ALL_1952_A_03
-Öffentlicher Parkplatz - Die Parkgebühren sind günstig und auf der Litfaßsäule prangt die neueste Werbung.
+Öffentlicher Parkplatz\n\nDie Parkgebühren sind günstig und auf der Litfaßsäule prangt die neueste Werbung.
 COM_ALL_1953_A_04
 Parkplatz - Die Imbissbude serviert die leckersten Bratwürste der ganzen Stadt. Besucher von Nah und Fern kommen deshalb zu einem Imbiss hier her.
 COM_ALL_1953_A_16
@@ -181,7 +191,7 @@ IBC Frankfurt
 COM_ALL_2005_A_10
 Kunstmuseum Stuttgart
 COM_ALL_2007_A_36
-SV-Hochhaus\n\n in München. Es kann eine Firma noch so profitabel sein, das Management kann jedes Unternehmen an die Wand fahren. Was macht man dann, wenn man pleite ist? Wenn man sich mit nutzlosen Übernahmen übernommen hat? Wenn man während dem Boom Schulden statt Gewinnrücklagen gebildet hat? Man verkauft die wertvollen Grundstück und Gebäude in teurer zentraler Lage und sagt zur Stadt: entweder dürfen wir auf dieser Wiese am Stadtrand bauen, oder wir gehen pleite. Und so entstand diese Haus auf der grünen Wiese. Man hat es nach Fertigstellung sofort verkauft und zurück gemietet. Das Geld reichte trotzdem nicht, so mussten Finanzinvestoren mit viel Geld her.   
+SV-Hochhaus\n\n in München. Es kann eine Firma noch so profitabel sein, das Management kann jedes Unternehmen an die Wand fahren. Was macht man dann? Wenn man pleite ist? Wenn man sich mit nutzlosen Übernahmen übernommen hat? Wenn man während dem Boom Schulden statt Gewinnrücklagen gebildet hat? Man verkauft die wertvollen Grundstück und Gebäude in teurer zentraler Lage und sagt zur Stadt: entweder dürfen wir auf dieser Wiese am Stadtrand bauen, oder wir gehen pleite. Und so entstand diese Haus auf der grünen Wiese. Man hat es nach Fertigstellung sofort verkauft und zurück gemietet. Das Geld reichte trotzdem nicht, so mussten Finanzinvestoren mit viel Geld her.   
 COM_ALL_2007_L48_A_01
 Braune Schnecke\n\n steht in München im Bavariapark vor der Verkehrsabteilung des Deutschen Museums. Sie nimmt ironisch Bezug auf das Verkehrsmuseum und dem Traum von Geschwindigkeit. Sie verkörpert aber auch mit ihrem tragbaren Haus die ewige Sehnsucht nach unbegrenzter Mobilität, bei gleichzeitigem Schutz vor dem Fremden. Das ist es, was das Auto so beliebt macht.
 COM_ALL_2010_A_10
@@ -684,6 +694,12 @@ StrabaDepot_Rostock
 Strassenbahndepot (Rostock)
 TrainDepot_1
 Eisenbahn-Depot
+#________________________________building - dock________________________________
+#________________________________building - dock________________________________
+Binnenhafen_1800
+Binnenhafen 1800
+Dock_1800
+Dock 1800
 #_____________________________building - extension______________________________
 #_____________________________building - extension______________________________
 Airport1920_AirportBlg
@@ -790,6 +806,22 @@ Anleger_1903
 Kai (1903)
 Frachthafen_1900
 Frachthafen
+Kaimauer1800_1
+Kaimauer1800 1
+Kaimauer1800_2
+Kaimauer1800 Teil 2
+Kaimauer1800_3
+Kaimauer1800 Teil 3
+Kaimauer1930_1
+Kaimauer1930 Teil 1
+Kaimauer1930_2
+Kaimauer1930 Teil 2
+Kaimauer1930_3
+Kaimauer1930 Teil 3
+Kaimauer1930_4
+Kaimauer1930 Teil 4
+Mole_1930
+Mole 1930
 Oelhafen
 Ölhafen
 Passagierterminal
@@ -798,6 +830,8 @@ Post_Dock
 Hafenkai Post
 Schuettguthafen
 Schüttguthafen
+Seebruecke_1800
+Seebrücke 1800
 Stueckguthafen
 Stückguthafen
 #_________________________________building - hq_________________________________
@@ -1811,9 +1845,9 @@ Hochbahn-Bahnhof
 BahnhofHochbahn2
 Hochbahn-Bahnhof
 Bahnsteig_Ampersand
-beidseitiger Bahnsteig
+beidseitiger Schmetterlingsdachbahnsteig
 Bahnsteig_Ampersand2
-beidseitiger Bahnsteig
+beidseitiger Schmetterlingsdachbahnsteig
 Bahnsteig_Doppelgleis
 beidseitiger Bahnsteig
 Bahnsteig_mit_Glasdach
@@ -1846,6 +1880,8 @@ Hackescher_Bahnhof
 Hackescher Bahnhof
 ISO_Verladung
 Container-Verladung
+ISO_Verladung2
+ISO Container Verladung 2
 LKW_Laderampe_1
 gepflasterter Ladeplatz
 LKW_Laderampe_2
@@ -1912,6 +1948,8 @@ Ueberdachter_Bushalt_1957
 überdachtes Wartehäuschen 1957
 Ueberdachter_Bushalt_1993
 überdachtes Wartehäuschen 1993
+unsichtbarer_Bahnhof_fuer_Abstellgleis
+unsichtbarer Bahnhof fuer Abstellgleis
 #________________________________building - tow_________________________________
 #________________________________building - tow_________________________________
 ODL_Rath_Stralsund_00
@@ -2024,12 +2062,30 @@ Kaefer_Polizei
 VW-Käfer Polizei
 Kaefer_rot
 VW-Käfer (Rot)
+Kaefer_schwarz
+Käfer schwarz
 MOTOBIKER_0
 Motorrad grün
 MOTOBIKER_1
 Motorrad gelb
 MOTOBIKER_2
 Motorrad blau
+#_________________________________climates_text_________________________________
+#_________________________________climates_text_________________________________
+arctic
+Gletscherzone
+desert
+Küste
+mediterran
+Ostdeutschland
+rocky
+Alpines Klima
+temperate
+Mittelgebirge
+tropic
+Norddt. Tiefland
+tundra
+Alpenvorland
 #___________________________________crossing____________________________________
 #___________________________________crossing____________________________________
 CrossingRoadRail
@@ -2059,7 +2115,7 @@ factory_ALP_Elektroshop_NIC_details
 ALP_Moebelhaus_NIC
 Möbelhaus (alpin)
 factory_ALP_Moebelhaus_NIC_details
-<title>Möbelhaus</title><p>Küchen, Schlaf- und Wohnzimmer, Arbeitszimmer und vieles mehr. Das Möbelpin-Einrichtungshaus erfüllt all Ihre Wohnträume!</p>
+<p>Küchen, Schlaf- und Wohnzimmer, Arbeitszimmer und vieles mehr. Das Möbelpin-Einrichtungshaus erfüllt all Ihre Wohnträume!</p>
 ALP_Saegewerk_NIC
 Sägewerk (alpin)
 factory_ALP_Saegewerk_NIC_details
@@ -2480,6 +2536,10 @@ Konditorei
 Konditorrei
 factory_Konditorei_details
 <title>Konditorei</title><p>Selbstgemachte Köstlichkeiten</p>
+Krankenhaus_Hellmig_Kamen
+Krankenhaus
+factory_Krankenhaus_Hellmig_Kamen_details
+<em>Krankenhaus Hellmig Kamen</em><br>Das Krankenhaus wurde 1895 gegründet. Hundert Jahre später wurde ein kompletter Neubau unvermeidlich. Das heutige Gebäude an Nordstraße wurde 1985 eröffnet. In den 80er war es Mode Krankenhäuser wie Fabriken zu organisieren und auch in der Architektur kam das zum Ausdruck. Ob eine derartige Gestaltung das Wohlbefinden der Kranken und deren Heilung fördert? Nun, vielleicht werden die Patienten alles tun, um den ungemütlichen Ort wieder zu verlassen.
 Lagerhalle_NIC
 Baustofflager (1930)
 factory_Lagerhalle_NIC_details
@@ -2578,6 +2638,10 @@ Moebelfabrik_NIC
 Möbelmanufaktur
 factory_Moebelfabrik_NIC_details
 <title>Möbelfabrik</title><p>Tische, Stühle, Schränke, Betten, Kommoden, Wäschetruhen Regale, Sofas und noch vieles mehr, was das Wohnen angenehmer macht, produziert die BZT Möbelfabrik.</p>
+Moebelfabrik1922
+Möbelfabrik Otto Brückner Stahlmöbel seit 1922
+factory_Moebelfabrik1922_details
+<p>Otto Brückner in Chemnitz an der Scheffelstraße 112 hatte 1922 ein feines Gespür für den Zeitgeist. Stahlmöbel waren damals neu, sie waren chic, sie galten als modern. So produzierte Brückner Möbel ausschließlich aus Stahl. Garantiert holzwurmsicher, nicht entflammbar, robust, verschleißarm, wartungsfrei, keine luftfeuchtigkeitsbedingtes verziehen wie bei "arbeitendem" Holz.</p><p>Von dem Gebäudekomplex steht heute nur noch die Fertigungshalle mit dem charakteristischen Anbau, der aussieht wie eine Säulentempel mit Gebiss. </p>
 Moebeltischlerei
 Möbelschreinerei
 factory_Moebeltischlerei_details
@@ -2609,7 +2673,7 @@ factory_NDT_Importeur_details
 NDTZuckerfabrik_NIC
 Zuckerfabrik
 factory_NDTZuckerfabrik_NIC_details
-<title>Sigrana Zucker Comp.</title><p>Bei der Zuckerproduktion wird aus Zuckerrüben, die auf einen hohen Zuckergehalt gezüchtet wurden, der Zucker extrahiert und in verschiedenen Formen gebrauchsfähig hergestellt. Die durch die Zuckergewinnung ausgelaugten Rübenschnitzel besitzen immer noch einen hohen Zuckeranteil und enthalten außerdem Eiweiß, weshalb sie als Futtermittel für Wiederkäuer verwendet werden. 1802 wurde mit der Produktion von Zucker aus Zuckerüben begonnen, da durch die Kontinentalsperre Rohrzucker aus den Kolonien nicht mehr verfügbar war.</p>
+<title>Sigrana Zucker KG.</title><p>Bei der Zuckerproduktion wird aus Zuckerrüben, die auf einen hohen Zuckergehalt gezüchtet wurden, der Zucker extrahiert und in verschiedenen Formen gebrauchsfähig hergestellt. Die durch die Zuckergewinnung ausgelaugten Rübenschnitzel besitzen immer noch einen hohen Zuckeranteil und enthalten außerdem Eiweiß, weshalb sie als Futtermittel für Wiederkäuer verwendet werden. 1802 wurde mit der Produktion von Zucker aus Zuckerüben begonnen, da durch die Kontinentalsperre Rohrzucker aus den Kolonien nicht mehr verfügbar war.</p>
 Neues_Kohlekraftwerk
 Kohlekraftwerk (1963)
 factory_Neues_Kohlekraftwerk_details
@@ -2738,6 +2802,10 @@ Textilfabrik_1800
 Textilfabrik
 factory_Textilfabrik_1800_details
 <title>Textilfabrik</title><p>In der Textilfabrik werden Kleidungsstücke für jedermann sowie Mode für die Dame von Welt hergestellt. Dabei wird sowohl Wolle als auch Leinen verwendet.</p>
+Textilfabrik1874
+Textilfabrik Kammgarnspinnerei Schaefer 
+factory_Textilfabrik1874_details
+<p>Kammgarnspinnerei Schaefer & Co. in Harthau i. Erzgebirge.</p>
 TierfutterFabrik_alt
 Tierfutter Fabrik (1953)
 factory_TierfutterFabrik_alt_details
@@ -2904,18 +2972,18 @@ UNDERGROUND
 Untergrundbauwerkzeuge
 #__________________________________pedestrian___________________________________
 #__________________________________pedestrian___________________________________
+BICYCLE_RIDER_P0
+Fahrradfahrer
+BICYCLE_RIDER_P1
+Fahrradfahrer
 DOG_WALKER_0
 Fussgänger mit Hund\n\n\Die sieht man zu jeder Zeit und bei jedem Wetter überall.
 DOG_WALKER_1
 Fußgänger mit Hund\n\n\Mal sind die Hunde groß mal sind sie klein, die Hinterlassenschaften sind immer fein.
 #_________________________________program_text__________________________________
 #_________________________________program_text__________________________________
- Tonnen
- t
 \nBauzeit von
 \nIm Spiel gebaut ab 
-arctic
-Gletscherzone
 CATEGORY_01
 Stückgut
 CATEGORY_02
@@ -2964,28 +3032,26 @@ Cluster_20
 Gartenstadt
 Cluster_21
 Schrebergärten
-desert
-Küste
+fm
+ fm
 Gewinn
 Jahresgewinn
+m3
+ m3
 Make way or stop public (will join with neighbours), %i times maintainance
 Erzeugen/verbinden mit öffentlicher Haltestelle (%i$ pro Feld und Level)
-mediterran
-Ostdeutschland
 merge stop
 Haltestellen zusammenlegen
-rocky
-Alpines Klima
+Paletten
+ Paletten
 Rotate Building
 Gebäude drehen
-temperate
-Mittelgebirge
+Sack
+ Sack
+Stck.
+ Stück
 Tonnen
-t
-tropic
-Norddt. Tiefland
-tundra
-Alpenvorland
+ t
 upgrade HQ
 Firmensitz modernisieren
 water
@@ -2997,7 +3063,7 @@ Richtungspfeile
 #___________________________roadsign - monorail_track___________________________
 #___________________________roadsign - monorail_track___________________________
 choose_signal_monorail
-Auswahlsignal
+Auswahlsignal\nPlatziere dieses Signal vor einem Bahnhof mit mehreren Gleisen und der Zug wird zu einem freien Bahnsteig geleitet. Mit dem "Auswahl Ende Schild" kann ein Bahnsteige von der Auswahl ausgenommen werden. Achtung: Das Signal bezieht sich auf den Bahnhof, in dem der Zug in seinem Fahrplan den nächsten Halt hat. Soll der Zug in diesem Bahnhof durchfahren, wenn er also keinen Halt für diesen Bahnhof in seinem Fahrplan hat, sollte er um das Auswahlsignal herum geleitet werden, oder dieser Bahnhof muss als Halt in seinem Fahrplan aufgenommen werden.
 preSignal_Monorail
 Blocksignal
 Signal_Monorail
@@ -3006,6 +3072,8 @@ Signal
 #________________________________roadsign - road________________________________
 AuswahlEndeSchild
 Auswahlendeschild
+Auswahlschild
+Auswahlschild\nPlatziere dieses Schild vor einer Haltestelle mit mehreren Haltebuchten und der Bus oder LKW wird zu einer freien Haltemöglichkeit geleitet. Mit dem "Auswahl Ende Schild" kann ein Ladebucht von der Auswahl ausgenommen werden. Achtung: Das Auswahlschild bezieht sich auf die Haltestelle, in der das Fahrzeug in seinem Fahrplan den nächsten Halt hat. Soll das Fahrzeug hier in dieser Haltestelle durchfahren, wenn es also keinen Halt für diese Haltestelle in seinem Fahrplan hat, sollte er um das Auswahlschild herum geleitet werden, oder diese Haltestelle muss als Halt in den Fahrplan aufgenommen werden.
 Autobahn_Ausfahrtschild
 Autobahn-Ausfahrtschild
 Autobahn_Schild
@@ -3023,11 +3091,11 @@ Privatstraße
 Auswahl_Ende_Schild
 Auswahlendeschild\nBeendet die Wirkung der Auswahlsignale für dieses Gleis.
 Auswahlsignal_hv
-Auswahlsignal\nPlatziere dieses Signal vor einem Bahnhof mit mehreren Gleisen und der Zug wird zu einem freien Bahnsteig geleitet. Mit dem "Auswahl Ende Schild" kann ein Bahnsteige von der Auswahl ausgenommen werden. 
+Auswahlsignal\nPlatziere dieses Signal vor einem Bahnhof mit mehreren Gleisen und der Zug wird zu einem freien Bahnsteig geleitet. Mit dem "Auswahl Ende Schild" kann ein Bahnsteige von der Auswahl ausgenommen werden. Achtung: Züge die nicht im Bahnhof halten, sollte man um das Auswahlsignal herum leiten, weil das Auswahlsignal sich auf den Bahnhof bezieht der im Fahrplan als nächster Halt angegeben ist. Wenn dort (und das kann weit entfernt sein) alle Bahnsteige belegt sind dann wird er hier warten.
 Auswahlsignal_Ks
-Auswahlsignal Ks\nPlatziere dieses Signal vor einem Bahnhof mit mehreren Gleisen und der Zug wird zu einem freien Bahnsteig geleitet. Mit dem "Auswahl Ende Schild" kann ein Bahnsteige von der Auswahl ausgenommen werden. 
+Auswahlsignal Ks\nPlatziere dieses Signal vor einem Bahnhof mit mehreren Gleisen und der Zug wird zu einem freien Bahnsteig geleitet. Mit dem "Auswahl Ende Schild" kann ein Bahnsteige von der Auswahl ausgenommen werden. Achtung: Das Auswahlsignal sucht in dem Bahnhof einen freien Bahnsteig, der im Fahrplan des Zuges als nächster Halt angegeben ist. Züge die nicht hier in diesem Bahnhof halten, sollte man um das Auswahlsignal herum leiten, oder den Bahnhof, oder einen Wegpunkt hinter dem Bahnhof, in den Fahrplan mit aufnehmen.
 ChooseSignal
-Auswahlsignal\nPlatziere dieses Signal vor einem Bahnhof mit mehreren Gleisen und der Zug wird zu einem freien Bahnsteig geleitet. Mit dem "Auswahl Ende Schild" kann ein Bahnsteige von der Auswahl ausgenommen werden. 
+Auswahlsignal\nPlatziere dieses Signal vor einem Bahnhof mit mehreren Gleisen und der Zug wird zu einem freien Bahnsteig geleitet. Mit dem "Auswahl Ende Schild" kann ein Bahnsteige von der Auswahl ausgenommen werden. Achtung: Das Signal bezieht sich auf den Bahnhof, in dem der Zug in seinem Fahrplan den nächsten Halt hat. Soll der Zug in diesem Bahnhof durchfahren, wenn er also keinen Halt für diesen Bahnhof in seinem Fahrplan hat, sollte er um das Auswahlsignal herum geleitet werden, oder ein Wegpunkt hinter dem Bahnhof, oder der Bahnhof selbst muss als Halt in den Fahrplan vom Zug mit aufgenommen werden.
 Richtungssignal_frei
 Richtungssignal freie Fahrt
 Richtungssignal_stop
@@ -3093,7 +3161,7 @@ Fichte
 Fichte1_gross
 große Fichte
 Fichte2
-Fichte, lat .Picea abies
+Fichte, lat. Picea abies
 GrosserBaum_Shunter
 Moor-Birke, lat. Betula pubescens
 GrosserBaum_Shunter_Alm
@@ -3162,6 +3230,8 @@ road_070_tunnel
 Straßentunnel 70 km/h
 road_100_tunnel
 Straßentunnel 100 km/h
+Strassentunnel_schotter
+Straßentunnel Schotter
 Strassentunnel20
 Straßentunnel 20 km/h
 Strassentunnel30
@@ -3186,6 +3256,8 @@ Eisenbahntunnel_60
 früher verbesserter Eisenbahntunnel
 Hochgeschwindigkeitstunnel_280
 Hochgeschwindigkeitstunnel
+Hochgeschwindigkeitstunnel_350
+Hochgeschwindigkeitstunnel 350
 moderner Eisenbahntunnel
 Eisenbahntunnel (modern)
 #________________________________tunnel - water_________________________________
@@ -3373,41 +3445,47 @@ Tupolev TU134 Vieh
 ADtranz_EL2000
 ADtranz EL2000
 BR101_Metropolitan
-BR 101 Metropolitan
+101 Metropolitan
 BR103
-DB BR 103
+103
 BR110-blau
-BR 110
+E 10
 BR146_5
-BR 146.5
+146.5
 BZT_BR111
-BR 111
+111
 BZT_ET25B
 DRG Triebwagen ET 25 - B-Wagen
 BZT_ET25C
 DRG Steuerwagen ES 25 passend zu ET 25
 DB BR143
-DB BR 143
+DR 243
 DR BR112
-DR BR 112
+112
 DR_BR101
-DR BR 101
+101
 DR_BR120
-DR BR 120
+120
 DR_E11
 DR E 11
+E_16
+E 16
+E_17
+E 17
+E_178
+E 178
 E01
 E 01
 E140-gruen
-E 140 grün
+E 40 grün
 E141-gruen
-E 141 grün
+E 41 grün
 E141-rot
-E 141 rot
+E 41 rot
 E150-gruen
-E 150 grün
+E 50 grün
 E151-gruen
-E 151 grün
+151 grün
 E18
 E 18
 E32
@@ -3419,11 +3497,13 @@ E 44
 E52
 E 52
 E60
-DRG E60
+E 60
+E69
+E 69 02 Pauline
 E71
 E 71
 E91_3
-E-Lok EG 538 (DR E91.3)
+Preußische EG 538 (DR E91.3)
 E94
 E 94
 E94.5
@@ -3596,6 +3676,8 @@ BZT_LKW_Milch_Trailer
 Anhänger für Milch
 BZT_LKW_Milch-alt
 Milchlaster früh
+BZT_Traktor-gruen
+Traktor grün
 BZT-Betonlaster
 Betonlaster
 CoilsLaster
@@ -3780,8 +3862,12 @@ LO3000_Post
 Robur LO 3000 Post
 LO3000_Schuettgut
 Robur LO 3000 Schüttgutlaster
+LO3000_Schuettgut_A
+LO 3000 Anhänger (Schüttgut)
 LO3000_Stueckgut
 Robur LO 3000 Stückgutlaster
+LO3000_Stueckgut_A
+LO 3000 Anhänger (Stückgut)
 lw_Anhaenger1900
 Landwirtsch. Anhänger für Pferde
 lw_Anhaenger1921
@@ -3934,6 +4020,8 @@ MB_L6600_Getreide
 Mercedes-Benz L6600 für landw. Güter
 MB_L6600_Getreide_Anhaenger
 Mercedes-Benz L6600 Anhänger für landw. Güter
+MB_L6600_Getreide_Zweit_Anhaenger
+MB L6600 Getreide Zweit_Anhänger
 MB_L6600_Siloware
 Mercedes-Benz L6600 für Silowaren
 MB_L6600_Siloware_Anhaenger
@@ -4078,6 +4166,8 @@ Traditioneller_Viehtrieb_hinten
 Viehtrieb - hinten
 Traditioneller_Viehtrieb_vorne
 Viehtrieb - vorn
+Typ_D38_Buessing
+Typ D38 Buessing
 Unimog_401
 Unimog 401
 Unimog_406
@@ -4118,6 +4208,8 @@ Zugpferde_4
 Vierergespann
 #________________________________vehicle - track________________________________
 #________________________________vehicle - track________________________________
+Abteilwagen_C4_Bay_04
+C4 Bay 04
 AdlerSchuettgutwagen
 Schüttgutwagen für Adler
 AdlerTender
@@ -4202,6 +4294,8 @@ Behaelter-Tragwagen_Lbms589_Siloware
 Behälter-Tragwagen Lbms589 für Siloware
 Behaelter-Tragwagen_Lbms589_Stueckgut
 Behälter-Tragwagen Lbms589 für Stückgut
+Behelfsgepaeckwagen_MDyg986
+Behelfsgepäckwagen MDyg986
 Behelfsgepaeckwagen_MPw4yge-50
 Behelfsgepäckwagen MPw4yge-50
 Behelfspersonenwagen_MCi-43
@@ -4387,7 +4481,7 @@ DB Doppelstock-Steuerwagen - Kopf
 Doppelstock_Wagen_rot
 DB Doppelstockwagen
 DR_Reisezugwagen_Altenberg
-DR Reisezugwagen Typ Altenberg
+C4i-35a "Altenberger"
 DR_Speisewagen_Bautzen
 DR Speisewagen Typ Bautzen
 DR_V100
@@ -4408,6 +4502,10 @@ Drehgestell-Flachwagen_Rils653_Stahl
 Drehgestell Flachwgen Rils653 für Stahl
 Drehgestell-Flachwagen_Rils653_Stueckgut
 Planenhaubeflachwagen Rils653 für Stückgut
+Drehgestellflachwagen_Snps719_Holz
+Drehgestell-Flachwagen Snps719 f. Holz
+Drehgestellflachwagen_Snps719_Stahl
+Drehgestell-Flachwagen Snps719 f. Stahl
 Durchgangswagen_Ci3_Bay_99
 Durchgangswagen Ci3 Bay 99
 DWA_LVTS-BR672
@@ -4450,6 +4548,8 @@ ETA177_vorn
 AT 3 Bauart Wittfeld - Kopf
 Faals151
 Schüttgutwagen Faals151 
+Fas126
+Schüttgutkippwagen Fas 126
 Ferkeltaxe VB172
 VB 172 "Ferkeltaxe"
 Ferkeltaxe VT172
@@ -4533,7 +4633,7 @@ Henschel-Wegmann-Zug - Mittelwagen
 Henschel-Wegmann-Zug_Steuerwagen
 Henschel-Wegmann-Zug - Endwagen (SBC 4ü-35) mit Panorama Endabteil
 Hensel-Fleischwagon_1906
-Fleischwagon Hensel 1906
+Fleischwagon Hensel Gkw 1906
 ICE1_Bistro
 ICE1 - Bistro
 ICE1_Kopf
@@ -4565,11 +4665,13 @@ Kesselwagen Zs für Öl
 Kesselwagen_BLME42P
 Kesselwagen BLME42P Milch
 Kfz-Transportwagen1979
-Autotransportwagen
+Autotransporteinheit Laads
 Klappdeckelwagen_Kmm36
 Klappdeckelwagen Kmm 36
+Koe1
+Kö I 0246
 Kohletrichterwagen_OOt
-Kohletrichterwagen OOt
+Kohletrichterwagen OOt 08 bay
 Kolonialwagen
 Kolonialwaren Wagen
 Kuehlwagen
@@ -4587,9 +4689,9 @@ Kühlwagen 2-achsig
 Kuehlwagen1910-liquid
 Kühlwagen 1910 für Milch
 Laaijrs567_Ende
-DB Laaijrs-567 - hinten
+DB Laaijrs 587 - hinten
 Laaijrs567_Front
-DB Laaijrs-567 - vorn
+DB Laaijrs 587 - vorn
 Laakklps608_Ende
 Wippenwagen Laakklps-608 - hinten
 Laakklps608_Front
@@ -4611,11 +4713,11 @@ LEG Wagen Nr. 8
 Leichttriebwagen_SVG
 SVG-Triebwagen
 lgns583_fluessige Lebensmittel
-Container-Tragwagen lgns583 fl. Lebensmittel
+Container-Tragwagen Lgns583 fl. Lebensmittel
 lgns583_Kuehlwaren
-Container-Tragwagen lgns583 für Kühlwaren
+Container-Tragwagen Lgns583 für Kühlwaren
 lgns583_Stueckgut
-Container-Tragwagen lgns583 für Stückgut
+Container-Tragwagen Lgns583 für Stückgut
 Metropolitan_Mittelwagen
 Metropolitan - Mittelwagen
 Metropolitan_Steuerwagen
@@ -4675,11 +4777,13 @@ offener Schüttgutwagen
 offener Gueterwagen 1850 Vieh
 offener Viehwagen
 offener_Gueterwagen_SSlm25_Holz
-offener Holztransporter SSlm25
+offener Holztransporter SSlm25 Köln
 offener_Gueterwagen_SSlm25_Stahl
 offener Stahltransporter SSlm25
 offener_Hochbordwagen_Ommu
 offener Hochbordwagen Ommu
+offener_Kohlewagen_OOmk
+offener Kohlewagen OOmk
 Offs59a_1931
 Autotransportwagen 2-achsig - vorne
 Offs59a_1958
@@ -4687,7 +4791,7 @@ Autotransportwagen 1958 - vorne
 Offs59b_1931
 Autotransportwagen 2-achsig - hinten
 Offs59b_1958
-Autotransportwagen 1958 - hinten
+Autotransportwagen Offs59 - hinten
 P8
 Preußische P8
 P8Tender
@@ -4730,6 +4834,12 @@ PwgPr14
 Güterbegleitwagen PwgPr 14
 Rheingold_1_1Kl
 Rheingold 1. Klasse
+Rmms663Autos
+Drehgestell-Flachwagen Rmms663 f. Autos
+Rmms663Holz
+Drehgestell-Flachwagen Rmms663 f. Holz
+Rmms663Stahl
+Drehgestell-Flachwagen Rmms663 f. Stahl
 Rungenwagen
 Rungenwagen für Nutzholz 2-achsig
 S1_Tender
@@ -4743,9 +4853,9 @@ sächsischer 3.-Klasse-Wagen C Sa 12
 saechsischer_C4ue_sa07
 sächsischer C4ü Sa07
 Schiebewandwagen_Habbiins352
-Schiebewandwagen Ha-bbiins-352
+Schiebewandwagen Habbiins 352
 Schiebewandwagen_Hbbills311
-Palettenwagen Hbbills-311
+Hbbills 311 Schiebewand
 Schienenbus_Bauart_Henschel
 Schienenbus Bauart Henschel
 Schneepflug_BA_Meiningen_DB
@@ -4759,13 +4869,17 @@ Schüttgutwagen Schotter
 Schuettgutwagen Facns133
 Schüttgutwagen Facns 133
 Schuettgutwagen Fc(s)090
-Schüttgutwagen Fc(s) 90
+Schüttgutwagen Fc(s) 090
 Selbstendlade-TW_Fr.-Krupp_AG
 Selbstendlade-TW_Fr.-Krupp AG
 Silberlinge_orange
 Nahverkehrszugwagen ("Silberlinge") orange
 Silberlinge_silbern
 Nahverkehrszugwagen B4nb-59 ("Silberlinge")
+Silberlinge_steuerw_Post_BDnf_738
+Silberlinge Post BDnf738
+Silberlinge_steuerw_v_BDnf_738
+Silberlinge Steuerwagen BDnf738
 Spezialwagen_GGkxr_lw.Gueter
 Spezialwagen GGkxr für landw. Güter
 Spezialwagen_GGkxr_Stueckgut
@@ -4779,7 +4893,7 @@ Stadler Regio-Shuttle RS1
 Stahlwagen1
 Stahlwagen 2-achsig
 Staubgutwagen_Uacs
-Staubgutwagen Uacs
+Staubgutwagen Uacs946
 Staubkesselwagen_KKd49
 Staubkesselwagen KKd49
 Staubwagen
@@ -4805,7 +4919,7 @@ TEE VT 11.5 - Kopf
 TEE_Waggon
 TEE VT 11.5 Waggon
 Teleskophaubenwagen Sahimms-u 900
-Haubenwagen Sahi MMS-u 900
+Haubenwagen Sahimms-u 900
 Tieflader
 Tiefladewagen
 Torpedopfannenwagen_8008
@@ -4822,6 +4936,22 @@ TwindexxVario_Mittelwagen
 IC2 Doppelstockwagen TwindexxVario
 TwindexxVario_Steuerwagen
 IC2 Doppelstock-Steuerwagen TwindexxVario
+TwindexxVario_Steuerwagen_v
+IC2 Doppelstock-Steuerwagen TwindexxVario
+U-Bahn_Berlin_A-Serie_BW
+U-Bahn Berlin A-Serie Beiwagen
+U-Bahn_Berlin_A-Serie_TW
+U-Bahn Berlin A-Serie TW
+U-Bahn_Berlin_B-Serie_BW
+U-Bahn Berlin B-Serie Beiwagen
+U-Bahn_Berlin_B-Serie_TW
+U-Bahn Berlin B-Serie TW
+U-Bahn_Berlin_C-Serie_BW
+U-Bahn Berlin C-Serie Beiwagen
+U-Bahn_Berlin_C-Serie_TW
+U-Bahn Berlin C-Serie TW
+Uaoos-y_948
+Uaoos-y 948
 unsichtbare_Lok_fuer_Abstellgleis
 unsichtbare Lok für Abstellgleis
 V100
@@ -4872,6 +5002,8 @@ x-Wagen_Bx794
 x-Wagen Bx 794
 x-Wagen_Bxf796
 x-Wagen Bxf796 Steuerwagen
+x-Wagen_Bxf796_steuer
+x-Wagen Bxf796 Steuerwagen
 YB70_1.Kl._Schnellzugwagen
 Schnellzugwagen 1. Klasse
 YB70_2.Kl._Schnellzugwagen
@@ -4880,6 +5012,8 @@ Schnellzugwagen 2. Klasse
 #_____________________________vehicle - tram_track______________________________
 A-Triebwagen_Post
 A-Triebwagen Post
+Beiwagen_T24
+Beiwagen T24
 Berliner Pferdebahnwagen
 Berliner-Pferdebahnwagen
 Berolina-Poststrassenbahn_BW
@@ -4890,6 +5024,8 @@ Bienertbahn_Beiwagen
 Stückgutbeiwagen (Bienertbahn)
 Bienertbahn_Triebwagen
 Triebwagen (Bienertbahn)
+BW_k1.48
+BW k1.48
 Cargotram_Dresden_Endwagen
 Cargotram Dresden Endwagen
 Cargotram_Dresden_Mittelwagen
@@ -4902,8 +5038,18 @@ Chiemseebahn Wagen 1 und 2 Klasse
 Chiemseebahn Wagen 1. und 2. Klasse
 Chiemseebahn Wagen 2 Klasse
 Chiemseebahn Wagen 2. Klasse
+Dampftram_Muenchen_BW
+Dampftram München BW
+Dampftram_Muenchen_SW
+Dampftram München SW
+Dampftram_Muenchen_TW
+Dampftram München TW
 Doebelner Pferdebahnwagen
 Döbelner Pferdebahnwagen
+DueWAG_GT6_motorwaggon
+DueWAG_GT6 Motorwagen
+DueWAG_GT6_tailwaggon
+DueWAG GT6 Ende
 Frankfurt Offenbacher Trambahn Beiwagen
 Frankfurt-Offenbacher Trambahn - Beiwagen
 Frankfurt Offenbacher Trambahn Triebwagen
@@ -4922,6 +5068,10 @@ Kesselwagen_fl_Gueterstrassenbahn
 Kesselwagen für fl. Lebensmittel
 Kesselwagen_Gueterstrassenbahn
 Kesselwagen
+KSW-Bw
+Kriegsstraßenbahnwagen (KSW) Beiwagen
+KSW-Tw
+Kriegsstraßenbahnwagen (KSW) Triebwagen
 Kuehlwagen_Gueterstrassenbahn
 Kühlwagen
 L-Beiwagen
@@ -4930,6 +5080,14 @@ L-Triebwagen
 Strassenbahn Triebwagen Typ-L
 Lok_Gueterstrassenbahn
 Lok für Güterstraßenbahn
+MHz_TRAM_1930
+MHz TRAM 1930
+MHz_TRAM_1980
+MHz TRAM 1980
+Muenchner_BW_A
+Muenchner Beiwagen Typ A
+Muenchner_TW_A
+Muenchner Tiebwagen Typ A
 NGT6DE_A
 Gelenktriebwagen NGT6DE - Kopf
 NGT6DE_B
@@ -4948,6 +5106,8 @@ P-Tw-M
 P-Mittelwagen
 Pferd
 Zugpferd
+Pferdebahnwagen_1_Typ_BPfE
+Pferdebahnwagen 1 Typ_BPfE
 Postbeiwagen_2.8
 Postbeiwagen 2.8
 Poststrassenbahn_Stuttgart_BW
@@ -4956,6 +5116,12 @@ Poststrassenbahn_Stuttgart_TW
 Stuttgarter Poststraßenbahn Triebwagen
 Posttriebwagen_2.8
 Posttriebwagen 2.8
+R-Triebwagen
+Frankfurter Triebwagen Typ R Front
+R-Tw-E
+Frankfurter Triebwagen Typ R Ende
+R-Tw-M
+Frankfurter Triebwagen Typ R Mitte
 Reko-Stueckgutwagen
 Reko-Stückgutwagen
 Rungenwagen_Gueterstrassenbahn
@@ -4970,24 +5136,44 @@ Stadler_Variobahn_Mitte_Gross
 Stadler Variobahn - großer Mittelwagen
 Stadler_Variobahn_Mitte_Klein
 Stadler Variobahn - kleiner Mittelwagen
+Strassenabhn_BW_Bed52
+Strassenbahn Beiwagen Bed52
+Strassenabhn_TW_Ted52
+Strassenbahn Tiebwage Ted52
+Strassenbahnbeiwagen140_Typ_Neu-Berolina
+Strassenbahnbeiwagen 140 Typ Neu-Berolina
+Strassenbahntriebwagen223_Typ_TF21S
+Strassenbahntriebwagen 223 Typ TF21S
+Strassenbahntriebwagen40_Typ_Neu-Berolina
+Strassenbahntriebwagen 140 Typ Neu-Berolina
 Stueckgutwagen_Gueterstrassenbahn
 Stückgutwagen
 Tatra B3D
 Schienenbus Tatra B3D
 Tatra B6A2
-Tatra B6 A-2 - Personenwagen
+Tatra B6A2 - Beiwagen
 Tatra T6A2
-Tatra T6 A-2 - Motorwagen
-Tatra T6A22
-Tatra T6 A-22 - Motorwagen
+Tatra T6A2 - Motorwagen
+TG_29-38-51_Gelenkzug_Ende
+TG 29-38-51 Gelenkzug Ende
+TG_29-38-51_Gelenkzug_Front
+TG 29-38-51 Gelenkzug Front
+TG_29-38-51_Gelenkzug_Mitte
+ TG 29-38-51 Gelenkzug Mitte
 Triebwagen 103 Braunschweig
 Triebwagen 103 (Braunschweig)
+Triebwagen_T24
+Triebwagen T24
+TW_K1.8
+TW K1.8
 Waldbahn_Thueringen_B1
 Thüringerwaldbahn Beiwagen
 Waldbahn_Thueringen_GL
 Thüringerwaldbahn Gelenkteil
 Waldbahn_Thueringen_T1
 Thüringerwaldbahn T1
+Zugpferde_Tram_2
+Zugpferde Tram 2
 #________________________________vehicle - water________________________________
 #________________________________vehicle - water________________________________
 Barkasse Altona
@@ -5068,18 +5254,42 @@ Faehre_KoenigswinterIII_Autos
 Fähre Königswinter III für Autos
 Faehre_KoenigswinterIII_Vieh
 Fähre Königswinter III für Viehtransporte
+Fehmarnsund_Autos
+Fähre Fehmarnsund f. Autos
+Fehmarnsund_fl.Lebensmittel
+Fähre Fehmarnsund f. Milch
+Fehmarnsund_Getreide
+Fähre Fehmarnsund f. Getreide
+Fehmarnsund_Holz
+Fähre Fehmarnsund f. Holz
+Fehmarnsund_Kuehlwaren
+Fähre Fehmarnsund f. Kühlwaren
+Fehmarnsund_Oel
+Fähre Fehmarnsund f. Öl
+Fehmarnsund_Passagiere
+Fähre Fehmarnsund
+Fehmarnsund_Post
+Fähre Fehmarnsund f. Post
+Fehmarnsund_Schuettgut
+Fähre Fehmarnsund f. Schüttgut
+Fehmarnsund_Stahl
+Fähre Fehmarnsund f. Stahl
+Fehmarnsund_Stueckgut
+Fähre Fehmarnsund f. Stückgut
+Fehmarnsund_Vieh
+Fähre Fehmarnsund f. Vieh
 Flos
 Floß
 Flos_Anhaenger
 Floß-Anhänger
 Frachter_Esslingen_Autotransporter
-Autofrachter Typ Esslingen
+Autofrachter Esslingen
 Frachter_Esslingen_fl._Lebensmittel
 Lebensmittelfrachter Typ Esslingen
 Frachter_Esslingen_Holztransporter
 Holzfrachter Typ Esslingen
 Frachter_Esslingen_Kuehltransporter
-Frachter Typ Esslingen für Kühlwaren
+Frachter Esslingen für Kühlwaren
 Frachter_Esslingen_Landw.Gueter
 Frachter Typ Esslingen für landw. Güter
 Frachter_Esslingen_Schuettgut
@@ -5087,7 +5297,7 @@ Schüttgutfrachter Typ Esslingen
 Frachter_Esslingen_Stueckgutfrachter
 Stückgutfrachter Typ Esslingen
 Frachter_fuer_landwirtschaftl._Gueter_Typ_Boizenburg
-Frachter Typ Boizenburg für landw.  Güter
+Frachter Typ Boizenburg für landw. Güter
 Frachter_fuer_Siloware_Typ_Boizenburg
 Frachter Typ Boizenburg für Silowaren
 Frachter_Typ_Boizenburg_Kuehlwaren
@@ -5134,6 +5344,10 @@ MS_Alsterschwan
 MS Alsterschwan
 MS_Anita_Ehlers
 MS Anita Ehlers
+MS_Neuland_G
+MS Neuland für landw. Güter
+MS_Neuland_S
+MS Neuland für Silowaren
 Oeltanker Seamullet
 Öltanker Seamullet
 Post_Barge
@@ -5185,7 +5399,7 @@ Schute No. 9 Viehtransporter
 Stahldampfer_Duenung
 Stahldampfer Dünung
 Tank-KueMo_Bernd
-Tank-Küstenmotorschiff
+Tank-Küstenmotorschiff Bernd
 Tankschleppkahn_Geheimrat_von_Lavale
 Schleppkahn Geheimrat von Lavale für Öl
 Tankschleppkahn_Schluckspecht
@@ -5208,8 +5422,6 @@ air_movement_area_old
 Rollfeld Pflaster
 runway_modern
 moderne Landebahn
-Zeppelin-Rollfeld
-Zeppelin-Startbahn
 #_____________________________way - monorail_track______________________________
 #_____________________________way - monorail_track______________________________
 Schwebebahn_p_ground
@@ -5233,7 +5445,7 @@ Betonautobahn
 city_road
 Stadtstraße asphaltiert
 city_road50
-Stadtstraße (mit Diagonalen)
+Stadtstraße
 cobblestone_road_20
 Kopfsteinpflasterstraße 20 km/h\nKopfsteinpflaster\n gepflasterte Straßen gab es schon vor den Römern. In der Römischen Stadt Pompeji sind sogar die Fugen zwischen den Pflastersteinen mit Bitumen ausgegossen. Jedoch ist diese Bauweise sehr Arbeitsaufwendig und damit teuer. Oft wurde nur eine Spur gepflastert. Siehe auch Sommerwege. Städte pflasterten nur die in die Stadt führende Fahrspur, für die schwer beladen Fuhrwerke mit Versorgungsgütern. Heute werden Pflastersteine maschinell auf einheitliche Größe gebrochen. Da härtere Steine sich besser als Straßenbelag eignen, wurden früher die Steine nicht oder nur wenig zu gehauen, sondern wie ein Puzzle so angeordnet, dass möglichst wenige Lücken bleiben. Altes Kopfsteinpflaster erkennt man an den vielfältigen Formen der Steine und deren sorgfältiger Verlegung. Kopfsteinpflaster ist sehr robust und haltbar. Leider allerdings auch holprig und unangenehm zu befahren.
 cobblestone_road_40
@@ -5292,6 +5504,8 @@ Hochgeschwindigkeit_1
 Schnellfahrtgleis 210 km/h
 Hochgeschwindigkeit_2
 Schnellfahrtgleis "feste Fahrbahn" 280 km/h
+Hochgeschwindigkeit_Teststrecke
+Hochgeschwindigkeit Teststrecke
 kleiner Park
 Kleiner Park
 Schnellfahrgleis_350

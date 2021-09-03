@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu:
-#	Letzte Bearbeitung:
 ---------------------------------
 obj=vehicle
 name=DR_Reisezugwagen_Altenberg
@@ -11,15 +10,16 @@ intro_year=1935
 intro_month=6
 retire_year=1968
 retire_month=7
-cost=11060000
+cost=5660000
 runningcost=124
-fixed_cost=3123
+fixed_cost=5373
 waytype=track
 freight=Passagiere
 payload=60
 speed=120
 weight=26
 length=9
+Constraint[Prev][0]=any
 EmptyImage[S]=DR_altenberg.0.0
 EmptyImage[E]=DR_altenberg.0.1
 EmptyImage[SE]=DR_altenberg.0.2

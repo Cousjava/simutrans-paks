@@ -1,7 +1,7 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
-#---------------------------------
+---------------------------------
 obj=building
 name=EG Hochbahn - nur auf Gleis
 copyright=pumuckl999, The Transporter

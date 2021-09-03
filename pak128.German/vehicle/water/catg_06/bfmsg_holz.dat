@@ -1,23 +1,25 @@
+--------------------------------
 #	PAK128.german
 #	Vehicle
+--------------------------------
 obj=vehicle
 name=Frachter Typ Boizenburg Holz
 copyright=pumuckl999
 intro_year=1962
 intro_month=1
-retire_year=2011
-retire_month=12
+#retire_year=2011 wir haben kein moderneres Binnenschiff
+#retire_month=12  Die Typen Reihe wurde zu ganz unterschiedlichen Jahren verschrottet
 waytype=water
-cost=5323500
-runningcost=328
-fixed_cost=1135
+cost=7888500
+runningcost=995
+fixed_cost=6328
 freight=Holz
-payload=180
+payload=550
 engine_type=diesel
 power=309
-gear=1200
+gear=400
 speed=15
-weight=250
+weight=400
 length=17
 sound=-1
 #smoke=

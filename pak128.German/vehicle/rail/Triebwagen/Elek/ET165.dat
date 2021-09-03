@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu:
-#	Letzte Bearbeitung: $Date$ - $Author$:
 ---------------------------------
 obj=vehicle
 name=ET165_Kopf
@@ -11,9 +10,9 @@ intro_year=1927
 intro_month=1
 retire_year=1997
 retire_month=12
-cost=17708000
+cost=9548000
 runningcost=236
-fixed_cost=4215
+fixed_cost=7615
 waytype=track
 engine_type=electric
 freight=Passagiere
@@ -42,9 +41,9 @@ intro_year=1927
 intro_month=1
 retire_year=1997
 retire_month=12
-cost=16710000
+cost=8490000
 runningcost=223
-fixed_cost=3881
+fixed_cost=7306
 waytype=track
 engine_type=electric
 freight=Passagiere
@@ -72,9 +71,9 @@ intro_year=1927
 intro_month=1
 retire_year=1997
 retire_month=12
-cost=16710000
+cost=8490000
 runningcost=223
-fixed_cost=3881
+fixed_cost=7306
 waytype=track
 engine_type=electric
 freight=Passagiere
@@ -102,9 +101,9 @@ intro_year=1927
 intro_month=1
 retire_year=1997
 retire_month=12
-cost=17948000
+cost=9668000
 runningcost=239
-fixed_cost=4265
+fixed_cost=7715
 waytype=track
 engine_type=electric
 freight=Passagiere

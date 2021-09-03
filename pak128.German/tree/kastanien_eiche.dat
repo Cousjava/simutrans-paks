@@ -1,7 +1,9 @@
+--------------------------------
 #	PAK128.german
 #	Tree
 #	08.09.2018
 # Eine Eiche als Ersatz fuer Kugel_*_MHZ
+--------------------------------
 obj=tree
 name=Kugel-dunkel_MHz
 seasons=4
@@ -56,4 +58,3 @@ Image[2][3]=kastanien_eiche.3.2
 Image[3][3]=kastanien_eiche.3.3
 Image[4][3]=kastanien_eiche.3.4
 -------------------------------
-#_EO_

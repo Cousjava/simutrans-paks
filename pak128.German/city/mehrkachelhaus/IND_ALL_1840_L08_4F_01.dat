@@ -1,23 +1,18 @@
 #	PAK128.german
-
 #	Citybuildings commercial
 #       neu: 10-06-2020
-#--------------------------------------
+--------------------------------------
 obj=building
-
 name=IND_ALL_1843_L08_A_01
 #Pumpenhaus Potsdam
 copyright=pumuckl999
 type=ind
 level=8
 chance=20
+clusters=5
 intro_year=1843
 intro_month=1
-#retire_year=
-#retire_month=
 needs_ground=0
-noinfo=0
-noconstruction=0
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 dims=2,2,4
 BackImage[0][0][0][0][0][0]=IND_ALL_1840_L08_4F_01.0.0
@@ -76,4 +71,3 @@ BackImage[3][0][1][1][0][1]=IND_ALL_1840_L08_4F_01.6.4
 BackImage[3][1][0][0][0][1]=IND_ALL_1840_L08_4F_01.6.5
 BackImage[3][1][0][1][0][1]=IND_ALL_1840_L08_4F_01.6.6
 BackImage[3][1][1][0][0][1]=IND_ALL_1840_L08_4F_01.6.7
-#_EO_

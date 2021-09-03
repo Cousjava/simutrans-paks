@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 02-06-2017
-#	Letzte Bearbeitung: 18-10-2018 pumuckl999
 ---------------------------------
 obj=vehicle
 name=C3pr preussische Staatsbahn
@@ -11,15 +10,16 @@ intro_year=1904
 intro_month=1
 retire_year=1967
 retire_month=12
-cost=6410000
+cost=3305000
 runningcost=98
-fixed_cost=2042
+fixed_cost=3336
 waytype=track
 freight=Passagiere
 payload=46
 speed=90
 weight=20
 length=9
+Constraint[Prev][0]=any
 EmptyImage[S]=C3pr.0.0
 EmptyImage[E]=C3pr.0.1
 EmptyImage[SE]=C3pr.0.2

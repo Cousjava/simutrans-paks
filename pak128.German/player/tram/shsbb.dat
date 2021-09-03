@@ -1,5 +1,7 @@
+--------------------------------------
 #	PAK128.german
 #	Players Building
+--------------------------------------
 obj=building
 name=Saalburgbahn Bad Homburg
 copyright=pumuckl999
@@ -38,4 +40,4 @@ BackImage[2][0][0][0][0][1]=shsbb.2.2
 Frontimage[2][0][0][0][0][1]=shsbb.3.2
 BackImage[3][0][0][0][0][1]=shsbb.2.3
 Frontimage[3][0][0][0][0][1]=shsbb.3.3
-#_EO_
+

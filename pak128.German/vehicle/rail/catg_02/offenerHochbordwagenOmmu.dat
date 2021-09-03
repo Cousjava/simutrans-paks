@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 10-09-2018
-#	Letzte Bearbeitung: 26-10-2018 pumuckl999
 ---------------------------------
 obj=vehicle
 name=offener_Hochbordwagen_Ommu
@@ -11,9 +10,9 @@ intro_year=1942
 intro_month=1
 retire_year=1972
 retire_month=2
-cost=3827000
+cost=1955000
 runningcost=56
-fixed_cost=1027
+fixed_cost=1807
 waytype=track
 freight=Kohle
 payload=26
@@ -21,6 +20,7 @@ weight=8.3
 speed=80
 length=8
 sound=-1
+Constraint[Prev][0]=any
 EmptyImage[S]=offenerHochbordwagenOmmu.0.0
 EmptyImage[E]=offenerHochbordwagenOmmu.0.1
 EmptyImage[SE]=offenerHochbordwagenOmmu.0.2

@@ -1,8 +1,8 @@
-#--------------------------------
+--------------------------------
 #     PAK128.german
 #     Vehicle
 #     11-2016
-#--------------------------------
+--------------------------------
 obj=vehicle
 name=Kutsche_Postwagen
 copyright=RedRabbit
@@ -11,9 +11,9 @@ intro_month=1
 retire_year=1950
 retire_month=6
 waytype=road
-cost=608000
+cost=308000
 runningcost=32
-fixed_cost=187
+fixed_cost=312
 freight=Post
 payload=20
 speed=20

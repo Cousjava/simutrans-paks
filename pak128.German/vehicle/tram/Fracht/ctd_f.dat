@@ -1,5 +1,7 @@
+---------------------------------
 #	PAK128.german
 #	Vehicle
+---------------------------------
 obj=vehicle
 name=Cargotram_Dresden_Triebwagen
 copyright=pumuckl999
@@ -8,9 +10,9 @@ intro_month=1
 retire_year=2016
 retire_month=12
 waytype=tram_track
-cost=7650000
+cost=6150000
 runningcost=78
-fixed_cost=1081
+fixed_cost=1706
 freight=Maschinen
 payload=20
 engine_type=electric

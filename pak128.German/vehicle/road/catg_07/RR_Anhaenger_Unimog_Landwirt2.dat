@@ -6,13 +6,13 @@
 obj=vehicle
 name=Anhaenger_Unimog_Landwirt2
 copyright=RedRabbit
-intro_year=1950
-intro_month=1
+intro_year=1951
+intro_month=3
 retire_year=1997
 retire_month=12
-cost=1100000
+cost=560000
 runningcost=22
-fixed_cost=327
+fixed_cost=549
 waytype=road
 speed=60
 weight=2

@@ -2,22 +2,22 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 14-05-2017
-#	Letzte Bearbeitung: 25-10-2018 pumuckl999
 ---------------------------------
 obj=vehicle
 name=Schiebewandwagen Hbis 299
 copyright=pumuckl999
 intro_year=1966
 intro_month=1
-cost=11300000
+cost=5720000
 runningcost=107
-fixed_cost=2679
+fixed_cost=5004
 waytype=track
 freight=Plastik
 payload=31
 speed=120
 weight=14
 length=9
+Constraint[Prev][0]=any
 EmptyImage[S]=hbis299.0.0
 EmptyImage[E]=hbis299.0.1
 EmptyImage[SE]=hbis299.0.2

@@ -1,6 +1,7 @@
+--------------------------------------
 #	PAK128.german
 #	Buildings-Factory
-#Basis Informationen
+--------------------------------------
 obj=factory
 name=
 copyright=
@@ -68,4 +69,3 @@ FrontImage[0][0][0][0][0][0]=
 FrontImage[0][0][0][0][0][0]=
 FrontImage[0][0][0][0][0][0]=
 FrontImage[0][0][0][0][0][0]=
-#_EO_

@@ -12,7 +12,7 @@ intro_month=1
 retire_year=1988
 retire_month=12
 # in Ostdeutschland wurden so vergammelte Kraftwerke bis zur Wende betrieben
-location=land
+location=river
 DistributionWeight=5
 Productivity=150
 InputGood[0]=Kohle

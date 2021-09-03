@@ -1,9 +1,8 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 07-09-2019
-#    letzte Bearbeitung:
-#---------------------------------
+---------------------------------
 Obj=building
 Name=unsichtbarer_Bahnhof_fuer_Abstellgleis
 copyright=Pumuckl999

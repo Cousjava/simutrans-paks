@@ -1,8 +1,8 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
 #    Neu: 
-#---------------------------------
+---------------------------------
 Obj=building
 Name=Lagerplatz_Stahl
 copyright=RedRabbit

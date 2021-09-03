@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 13-09-2017
-#	Letzte Bearbeitung: 25-10-2018 pumuckl999
 ---------------------------------
 obj=vehicle
 name=Klappdeckelwagen_Kmm36
@@ -11,15 +10,16 @@ intro_year=1949
 intro_month=1
 retire_year=1970
 retire_month=12
-cost=3996000
+cost=2052000
 runningcost=54
-fixed_cost=1093
+fixed_cost=1903
 waytype=track
 freight=Kohle
 payload=24
 speed=90
 weight=10.8
 length=8
+Constraint[Prev][0]=any
 EmptyImage[S]=KDWagen_Kmm36.0.0
 EmptyImage[E]=KDWagen_Kmm36.0.1
 EmptyImage[SE]=KDWagen_Kmm36.0.2

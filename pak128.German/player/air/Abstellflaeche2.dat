@@ -1,9 +1,7 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
-#    Neu: 
-#    Letzte Bearbeitung: $Date$ - $Author$
-#---------------------------------
+---------------------------------
 Obj=building
 Name=AirStop_2
 Copyright=The Transporter
@@ -12,7 +10,7 @@ waytype=air
 Level=4
 cost=256000
 maintenance=24
-intro_year=1918
+intro_year=1921
 intro_month=1
 NoInfo=1
 Dims=1,1,4

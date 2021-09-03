@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 31-08-2020
-#	Letzte Bearbeitung:
 ---------------------------------
 obj=vehicle
 name=offener_Kohlewagen_OOmk
@@ -11,9 +10,9 @@ intro_year=1890
 intro_month=1
 retire_year=1943
 retire_month=2
-cost=4530000
+cost=2370000
 runningcost=83
-fixed_cost=1632
+fixed_cost=2532
 waytype=track
 freight=Kohle
 payload=30
@@ -21,6 +20,7 @@ weight=21
 speed=80
 length=8
 sound=-1
+Constraint[Prev][0]=any
 EmptyImage[S]=OOmk.0.0
 EmptyImage[E]=OOmk.0.1
 EmptyImage[SE]=OOmk.0.2

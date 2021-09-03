@@ -1,5 +1,7 @@
+--------------------------------------
 #	PAK128.german
 #	Way
+--------------------------------------
 Obj=way
 name=
 copyright=
@@ -45,4 +47,3 @@ ImageUp[3]=
 ImageUp[6]=
 ImageUp[9]=
 ImageUp[12]=
-#_EO_

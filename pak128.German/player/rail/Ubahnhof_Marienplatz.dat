@@ -1,8 +1,8 @@
-#-------------------------------
+-------------------------------
 #	PAK128.german
 #	Players Building
 #    Neu:   21-10-2017
-#-------------------------------
+-------------------------------
 Obj=building
 Name=U-Bahnhof_Marienplatz
 copyright=pumuckl999
@@ -14,6 +14,7 @@ Level=5
 cost=384000
 maintenance=40
 enables_pax=1
+allow_underground=2 
 Dims=1,1,8
 icon=> Ubahnhof_Marienplatz.6.0
 cursor=Ubahnhof_Marienplatz.0.2

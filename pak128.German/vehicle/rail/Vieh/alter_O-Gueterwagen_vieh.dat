@@ -2,7 +2,6 @@
 #	PAK128.german
 #	Vehicle: Eisenbahn
 #    Neu: 14-06-2017
-#	Letzte Bearbeitung: 25-10-2018 pumuckl999
 ---------------------------------
 obj=vehicle
 name=offener Gueterwagen 1850 Vieh
@@ -11,15 +10,16 @@ intro_year=1850
 intro_month=1
 retire_year=1905
 retire_month=12
-cost=1300000
+cost=670000
 runningcost=40
-fixed_cost=739
+fixed_cost=1001
 waytype=track
 freight=Vieh
 payload=7
 speed=60
 weight=4
 length=6
+Constraint[Prev][0]=any
 EmptyImage[S]=alter_O-Gueterwagen_vieh.0.0
 EmptyImage[E]=alter_O-Gueterwagen_vieh.0.1
 EmptyImage[SE]=alter_O-Gueterwagen_vieh.0.2

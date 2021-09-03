@@ -1,5 +1,7 @@
+--------------------------------------
 #	PAK128.german
 #	Citycars
+--------------------------------------
 obj=citycar
 name=
 DistributionWeight=4
@@ -16,4 +18,3 @@ Image[SE]=
 Image[NW]=
 Image[NE]=
 Image[SW]=
-#_EO_

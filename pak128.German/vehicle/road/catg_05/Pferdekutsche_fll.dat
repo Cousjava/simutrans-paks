@@ -1,8 +1,8 @@
-#--------------------------------
+--------------------------------
 #     PAK128.german
 #     Vehicle
 #     11-2016
-#--------------------------------
+--------------------------------
 obj=vehicle
 name=Kutsche_Milchwagen
 copyright=pumuckl999
@@ -11,9 +11,9 @@ intro_month=1
 retire_year=1950
 retire_month=5
 waytype=road
-cost=170000
+cost=89000
 runningcost=11
-fixed_cost=97
+fixed_cost=130
 freight=Milch
 payload=4
 speed=18

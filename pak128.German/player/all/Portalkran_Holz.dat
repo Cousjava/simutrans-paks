@@ -1,10 +1,7 @@
-#---------------------------------
+---------------------------------
 #	PAK128.german
 #	Spieler Gebaeude
-#    Neu: 
-#    letzte Bearbeitung:
-#    $Date: 2018-04-21 09:34:18 +0200 (Sa, 21. Apr 2018) $ - $Author: NNW $
-#---------------------------------
+---------------------------------
 Obj=building
 Name=Portalkran_Holz_1985
 copyright=RedRabbit
