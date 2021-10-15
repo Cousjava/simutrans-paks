@@ -29,7 +29,6 @@ Obj=factory
 name=Oelkraftwerk
 copyright=Heuer & Haru (FT)
 Location=River
-Location=River
 DistributionWeight=110
 Productivity=333
 Range=167
