@@ -3,17 +3,15 @@
 #       neu: 11-10-2020
 --------------------------------------
 obj=building
-name=COM_ALL_1800_02_A_08
+name=COM_ALL_1800_F_08
 # Alte Kanzlei Stuttgart
 copyright=pumuckl999
 type=com
 level=8
 chance=10
-#clusters=6
+clusters=1
 intro_year=1800
 intro_month=1
-#retire_year=
-#retire_month=
 needs_ground=0
 climates=desert, tropic, mediterran, temperate, tundra
 dims=2,2,4

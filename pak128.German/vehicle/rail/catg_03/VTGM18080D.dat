@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 03-10-2021
+---------------------------------
+obj=vehicle
+name=VTG_M18.080D
+copyright=pumuckl999
+intro_year=2013
+intro_month=3
+cost=9260000
+runningcost=182
+fixed_cost=7549
+waytype=track
+freight=Oel
+payload=80
+weight=26
+speed=100
+length=9
+sound=-1
+Constraint[Prev][0]=any
+EmptyImage[S]=VTGM18080D.0.0
+EmptyImage[E]=VTGM18080D.0.1
+EmptyImage[SE]=VTGM18080D.0.2
+EmptyImage[SW]=VTGM18080D.0.3
+EmptyImage[N]=VTGM18080D.0.4
+EmptyImage[W]=VTGM18080D.0.5
+EmptyImage[NW]=VTGM18080D.0.6
+EmptyImage[NE]=VTGM18080D.0.7
+--------------------------------

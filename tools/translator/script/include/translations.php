@@ -12,22 +12,22 @@ hier gilt das geleiche wie für normale Texte
 help_file
 hier stehen die x0A in der Datenbank werden aber bei jeden speichern in \n umgesetzt
 im editor für die Anzeige werden \n in x0A umgesetzt
-beim Sav export wird nach \n umgesetzt 
+beim Save export wird nach \n umgesetzt 
 im import werden x0A nach \n umgesetzt
 beim help_text export wird \n umgesetzt nach x0A damit eine Angeleichung an website texte
 
 
-web_site ,help_file, history_links, history_text
+web_site , history_links, history_text
 x0A werden vor dem speichern in \n umgesetzt
 in der DB sollten kene x0A enthalten sein 
-beim export werden x0A in \n umgesetzt
+beim Save export werden x0A in \n umgesetzt
 im editor für die Anzeige werden \n in x0A umgesetzt
 im import sollten keine x0A enthalten sein
 
 scenario_textfile
 in der DB sind x0A enthalten, diese werden so im editor ausgegeben
 und wenn sie von der Eingabe kommen wieder gespeichert
-x0A werden in Simutrans werden sie ignoriert, 
+x0A werden in Simutrans ignoriert, 
 x0A sind nur Kosmetik im Editor und der Datei ???.txt
 mit \n kann Simutrans nichts anfangen, das wird einfach als \n angezeigt
 Zeilenrückläufe in Simutrans <br>
@@ -233,7 +233,10 @@ function tr_update($obj_name,$new_text,$version,$language,$tr_funk,$col_typ,$tr_
      $ta = str_replace("\r", '',$ta);
      $ta = str_replace("\0", '',$ta);
      $ta = str_replace('\n', '',$ta);
-     $tn = str_replace('\n', '',$new_text); 
+     $tn = str_replace("\n", '',$new_text); 
+     $tn = str_replace("\r", '',$tn);
+     $tn = str_replace("\0", '',$tn);
+     $tn = str_replace('\n', '',$tn);
      if ($ta == $tn and $tr_funk < 4) $tr_funk = 11; // correct silent 
  //  if ($ta != "")    echo "<br>sind die gleich? +".$ta."+".$tn."+<br>";
      switch ($tr_funk)
@@ -430,7 +433,7 @@ function tr_parsetab($file_name,$path,$language,$version,$tr_funk,$compatNo,$com
     { $objectNo++;
       $object[$objectNo]['name'] = basename($file_name);
       $object[$objectNo]['col_typ'] = 't';
-      $object[$objectNo]['descr'] = mb_convert_encoding(implode('\n',$datfile_lines),"UTF-8",$encode);
+      $object[$objectNo]['descr'] = mb_convert_encoding(implode("\n",$datfile_lines),"UTF-8",$encode);
     } 
  
    ///////////////////////////////////////////////////////////////////////////
@@ -524,10 +527,11 @@ function tr_parsetab($file_name,$path,$language,$version,$tr_funk,$compatNo,$com
     echo_table_end();
     db_query("COMMIT");
     if ($miss_file != '')
-    { $fp=fopen($datapfad.'set_'.$version.'miss_objectlist.'.$language.'.txt',"a+");
+    { $miss_filename = 'set_'.$version.'miss_objectlist.'.$language.'.txt';
+      $fp=fopen($datapfad.$miss_filename,"a+");
       fwrite($fp, $miss_file);
       fclose($fp); 
-      echo "missfile geschrieben<br>";
+      echo '<a href="../data/'.$miss_filename.'">'.$LNG_LOAD3[41].'</a><br>';
     }
 }
 

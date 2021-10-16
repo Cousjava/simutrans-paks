@@ -119,7 +119,9 @@ function generate_language_pack ($choice,$version_id)
       $pack_name = "language_pack-" . urlencode($versions_all[$version_id]) . ".zip";
       $obj_list  = $setpfad.'_objectlist.txt';
     }
-
+    // delete old things
+    verzeichnis_del($setpfad);
+    
     //fetch all languages
     foreach ($language_all as $lang_id => $lang_name )  
     { if (($version_id == HELP_BASE__SET_ID or

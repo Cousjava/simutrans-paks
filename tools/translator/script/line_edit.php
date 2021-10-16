@@ -58,7 +58,7 @@ function fatal_error($err)
   { $obj_tab     = $_SESSION['search_result_tab'];
     $obj_tab_len = $_SESSION['search_result_len'];
   }  
-  if ($obj_tab_len <= 0 or $cur_index > $obj_tab_len) fatal_error(22);
+  if ($obj_tab_len <= 0 or $cur_index >= $obj_tab_len) fatal_error(22);
 
   // $current_ob_version 
   $errg = ob_read($obj_tab[0]);
@@ -148,7 +148,7 @@ function fatal_error($err)
   $col2 = array();
   $input_text_name = array();
   $col2_max = 40;
-  $i_end = min($cur_index+$disp_lines,$obj_tab_len-1);
+  $i_end = min($cur_index+$disp_lines-1,$obj_tab_len-1);
   for ($i = $cur_index; $i <= $i_end; $i++)
   {  $cur_obj_id = $obj_tab[$i];
      $object = ob_read($cur_obj_id);

@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 05-10-2021
+---------------------------------
+obj=vehicle
+name=Postwaggon_Post4ue-b20
+copyright=pumuckl999
+intro_year=1926
+intro_month=1
+retire_year=1974
+retire_month=3
+cost=7630000
+runningcost=171
+fixed_cost=7294
+waytype=track
+length=12
+freight=Post
+payload=80
+weight=43
+speed=120
+sound=-1
+Constraint[Prev][0]=any
+EmptyImage[S]=Post4ue-b20.0.0
+EmptyImage[E]=Post4ue-b20.0.1
+EmptyImage[SE]=Post4ue-b20.0.2
+EmptyImage[SW]=Post4ue-b20.0.3
+EmptyImage[N]=Post4ue-b20.0.4
+EmptyImage[W]=Post4ue-b20.0.5
+EmptyImage[NW]=Post4ue-b20.0.6
+EmptyImage[NE]=Post4ue-b20.0.7
+-----------------------------------------

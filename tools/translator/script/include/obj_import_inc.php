@@ -1,10 +1,6 @@
 <?php
 /*
     Include file for SimuTranslator - object importer
-    (fragments of code based on original from P. Spilka)
-
-    Tomas Kubes
-    2005
 */
 include ('./include/obj.php');
 include ("./include/object.php"); 

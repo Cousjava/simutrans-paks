@@ -15,7 +15,8 @@
   <div id='width600train3'>
     This Page in: 
     <a href="index.html.de">Deutsch</a> 
-    <a href="index.html.ja">日本の</a>
+    <a href="index.html.ja">日本語</a>
+    <a href="index.html.es">Español</a> 
     <h1 align="center"><font size="+3">Simutrans</font> </h1>
     <h2 align="center">Simutrans - Translator</h2>
     <p align="center"><font size="+0">Here you can translate Simutrans.</font><br>The program

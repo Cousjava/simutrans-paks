@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 30.10.2021
+---------------------------------
+obj=vehicle
+name=E71_Version2
+copyright=pumuckl999
+intro_year=1931
+intro_month=1
+retire_year=1959
+retire_month=8
+cost=4485000
+runningcost=58
+fixed_cost=1484
+waytype=electrified_track
+power=590
+gear=300
+speed=65
+weight=65
+length=8
+sound=-1
+EmptyImage[S]=elok_e71_V2.0.0
+EmptyImage[E]=elok_e71_V2.0.1
+EmptyImage[SE]=elok_e71_V2.0.2
+EmptyImage[SW]=elok_e71_V2.0.3
+EmptyImage[N]=elok_e71_V2.0.4
+EmptyImage[W]=elok_e71_V2.0.5
+EmptyImage[NW]=elok_e71_V2.0.6
+EmptyImage[NE]=elok_e71_V2.0.7
+-----------------------------

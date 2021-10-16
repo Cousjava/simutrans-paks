@@ -159,7 +159,7 @@ if ($version_auswahl != 255)
     select_box("select_language",user_edit_languages(),$language,'',-1,$LNG_FORM[10]);
     if ($language != 255)
     { $filenamen = help_file_namen($version_auswahl);
-      select_box('select_file',$filenamen,'','',-2); 
+      select_box('select_file',$filenamen,255,'',-2,$LNG_MANAGE[34]); 
       for ( $x = 1; $x <= 8; $x++) 
       { $v_att['help_table']['line'][$x]['file_name_'] = 'file_name_'.$x;
         $v_att['help_table']['line'][$x]['select_file'] = $v_att['select_file'];

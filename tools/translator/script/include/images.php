@@ -288,7 +288,7 @@ function display_image_tile ($obj_id, $obj_ver_id, $tag_prop = '', $image_show_c
 
     if ($image_count == 0)
     {   db_free_result($result);
-//      return '<img src="../images/dummy.png" width="64" height=264"/>\n';
+//      return '<img src="./img/dummy.png" width="64" height=264"/>\n';
         return $LNG_EDIT[9];
     }
 

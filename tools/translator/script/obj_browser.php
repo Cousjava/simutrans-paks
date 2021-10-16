@@ -57,12 +57,12 @@ function obj_list_pages ($cur_index,$pagecount)
   if (!isset($_SESSION['search_result_len'])) return;
   $obj_tab     = $_SESSION['search_result_tab'];
   $obj_tab_len = $_SESSION['search_result_len'];
-  if ($obj_tab_len <= 0 or $cur_index > $obj_tab_len) return;
+  if ($obj_tab_len <= 0 or $cur_index >= $obj_tab_len) return;
 
   $page_list = '';
   $i = 0;
-  while ($i<=$obj_tab_len) 
-  { $i2 = $i+$pagecount-1; if ($i2>$obj_tab_len) $i2=$obj_tab_len-1;
+  while ($i<$obj_tab_len) 
+  { $i2 = $i+$pagecount-1; if ($i2>=$obj_tab_len) $i2=$obj_tab_len-1;
     $errg= ob_read($obj_tab[$i]);
     $n1 = $errg->obj_name;
     $errg= ob_read($obj_tab[$i2]);
@@ -87,7 +87,7 @@ function obj_list ($cur_index,$pagecount)
   if (!isset($_SESSION['search_result_len'])) return;
   $obj_tab     = $_SESSION['search_result_tab'];
   $obj_tab_len = $_SESSION['search_result_len'];
-  if ($obj_tab_len <= 0 or $cur_index > $obj_tab_len) return;
+  if ($obj_tab_len <= 0 or $cur_index >= $obj_tab_len) return;
 
   // generates html code for "prev" button if there are objects before
   if ($cur_index > 0) 
@@ -153,11 +153,8 @@ function obj_list ($cur_index,$pagecount)
   $v_att['cur_index'] = $cur_index;
 
   $pagecount = 20;
-  $user_pagecount = $_SESSION['config4'];
+  $user_pagecount = intval($_SESSION['config4']);
   if ($user_pagecount > 2) $pagecount = $user_pagecount;
-
-
-
 
   if ($version_auswahl != 255) 
   { $v_att['set_title'] = $versions_all[$version_auswahl];

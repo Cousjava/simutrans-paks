@@ -1,0 +1,29 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 04-10-2021
+---------------------------------
+obj=vehicle
+name=Rils652_Stueckgut
+copyright=pumuckl999
+intro_year=1988
+intro_month=1
+cost=8945000
+runningcost=179
+fixed_cost=7395
+waytype=track
+freight=Plastik
+payload=58
+speed=100
+length=11
+weight=24.5
+Constraint[Prev][0]=any
+EmptyImage[S]=Rils652.0.0
+EmptyImage[E]=Rils652.0.1
+EmptyImage[SE]=Rils652.0.2
+EmptyImage[SW]=Rils652.0.3
+EmptyImage[N]=Rils652.0.4
+EmptyImage[W]=Rils652.0.5
+EmptyImage[NW]=Rils652.0.6
+EmptyImage[NE]=Rils652.0.7
+-----------------------------------

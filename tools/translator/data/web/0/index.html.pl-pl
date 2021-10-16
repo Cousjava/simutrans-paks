@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <title>Simutrans Home</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Simutrans, Help, Simutrans Help">
+    <meta name="robots" content="index,follow">
+    <link href="css/style.css" type="text/css" rel="StyleSheet" >
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> 
+  </head>
+  <body>
+    <img style="margin-left:auto; margin-right:auto; width:50%;" id="logo" src="img/simutrans.png" alt="SimuTranslator logo" title="SimuTranslator">   
+    <hr>
+<div align="center">
+<a href="https://sourceforge.net/projects/simutrans/"><img src="img/sourceforge.png" alt="Spiele download sourceforge" title="Simutrans auf SourceForge" ></a> 
+<a href="https://store.steampowered.com/app/434520/Simutrans"><img src="img/steam_en.png" alt="Spiele auf Steam" title="Simutrans auf Steam" ></a>
+</div>
+
+<div id='width600train3'>
+<h1 align="center"><font size="+3">Simutrans</font></h1>
+<p>
+    <a href="index.html.de">deutsch</a>
+    <a href="index.html.es">español</a>
+    <a href="index.html.pt">português</a>
+    <a href="index.html.ja">日本語</a>
+    <a href="/">English</a>
+    <a href="index.html.fr">français</a>
+</p>
+
+<p>
+Simutrans to darmowy symulator transportu z otwartym kodem. Twoim celem jest stworzenie skutecznej firmy transportowej. Możesz przewozić pasażerów, pocztę i towary koleją, drogą, statkiem, a nawet samolotem. Łączyć dzielnice, miasta, budynki użyteczności publicznej, zakłady przemysłowe i atrakcje turystyczne, budując wymarzoną sieć transportową.</p>
+<ul class = "bb_ul">
+<li> Stwórz odnoszącą sukcesy firmę transportową </li>
+<li> Tranportuj pasażerów, poczty i towarów drogą lądową, powietrzną i wodną </li>
+<li> Łącz miasta, dzielnice, budynki publiczne, branże i atrakcje turystyczne </li>
+<li> Kontroluj i obserwuj swoje finanse oraz ruch pojazdów i towarów </li>
+<li> Wiele pakietów graficznych do wyboru </li>
+<li> Graj z ludźmi z dowolnego miejsca na świecie w grach online </li>
+</ul>
+
+<h2 class = "bb_tag"> Kilka pakietów graficznych do wyboru </h2><p>
+Zanim zaczniesz grę, masz do wyboru różne pakiety graficzne (zwane również „Pakset” lub w skrócie „Pak”) (dostępne na Steam jako darmowe DLC lub jako przedmioty w warsztacie). Liczba w ich nazwie (64, 128, 192) oznacza rozmiar kafelków w pikselach. Im więcej pikseli ma kafelek, tym bardziej szczegółowa jest grafika. Każdy gracz znajdzie dla siebie pakiet, ponieważ każdy pakiet oferuje inny styl gry, inny temat i poziom trudności. Oto krótki opis każdego pakietu dostępnego jako DLC:</p>
+<ul><li> <strong> Pak64 </strong>: Pak64 był pierwszym pakietem dla Simutrans. Jest celowo zwarty. Można go rozszerzyć o dodatki. <br>
+ - <strong> Grafika </strong>: retro. <br>
+ - <strong> Trudność </strong>: średnia. <br>
+<li> <strong> Pak64.German </strong>: Pak64.German bierze za wzór Niemcy. <br>
+ - <strong> Grafika </strong>: realistyczna. <br>
+ - <strong> Trudność </strong>: wymagająca, ale zrównoważona. <br>
+<li> <strong> Pak128 </strong>: Pak128 obejmuje wszystkie klimaty od pustyni po tundrę. Pojazdy mieszane na całym świecie. <br>
+ - <strong> Grafika </strong>: realistyczna. <br>
+ - <strong> Trudność </strong>: średnia, dość zrównoważona. <br>
+<li> <strong> Pak128.German </strong>: Pak128.German jest ograniczony do Niemiec. <br>
+ - <strong> Grafika </strong>: realistyczna i złożona. <br>
+ - <strong> Trudność </strong>: prosta, ale obszerna. Złożone łańcuchy dostaw w przepływie towarów. <br>
+<li> <strong> Pak128.Britain </strong>: Pakiet Pak128.Britain przyjmuje Anglię jako wzór. <br>
+ - <strong> Grafika </strong>: prosta, dyskretna i jednolita. <br>
+ - <strong> Trudność </strong>: ??? <br>
+<li> <strong> Pak192.Comic </strong>: Pak192.Comic oferuje najwyższy rozmiar kafelków, ze specjalnym komiksowym stylem i kilkoma detalami doprawionymi humorem. <br>
+ - <strong> Grafika </strong>: żywa, prosta, w komiksowym stylu. <br>
+ - <strong> Trudność </strong>: różni się od wszystkich innych pakietów. <br>
+<li> <strong> Inne </strong>: jest więcej pakietów, ale nie są one tutaj wymienione ani dostępne jako DLC, ponieważ są nieaktualizowane, niekompletne lub wciąż są w budowie. </ul>
+
+<h2 class = "bb_tag"> Dynamiczny i inteligentny </h2>
+<ul class = "bb_ul">
+<li> <strong> Pojazdy i ładunek </strong> <br>
+Sukces Twojej firmy będzie zależał od dobrego planowania z wykorzystaniem dostępnych środków. Simutrans dopuszcza autobusy, ciężarówki, pociągi, tramwaje, statki, samoloty, kolejki jednoszynowe, maglevy i wszelkie inne pojazdy, które poruszają się w powietrzu, na lądzie lub na wodzie. Wybierz je mądrze i przewieź ogromną różnorodność ładunków od pasażerów i poczty po surowce i produkty konsumenckie. </li>
+<li> <strong> Ładunek ma przeznaczenie </strong> <br>
+Pasażerowie i ładunki nie wskakują po prostu do twoich pojazdów i nie idą tam, gdzie ich wyślesz. W rzeczywistości mają indywidualne cele podróży: ludzie chcą zwiedzić atrakcje, zrobić zakupy lub odwiedzić przyjaciół. Towary również mają swoje przeznaczenie - fabryki nawiązują ze sobą umowy i nie będą sprzedawać ani kupować od nikogo innego. Jeśli nie dasz im możliwości przewozu do miejsca przeznaczenia, po prostu nie skorzystają z Twojej firmy transportowej. </li>
+<li> <strong> Ukończ łańcuch </strong> <br>
+Transport produktów nie tylko daje pieniądze, ale także napędza gospodarkę. Gdy transportujesz produkty między fabrykami, zaczynają produkować i sprzedawać. Każda dobrze zaopatrywana fabryka rozwija swoją ofertę i nawiązuje nowe umowy, co z kolei pozwala łączyć coraz więcej fabryk w regionie. </li>
+<li> <strong> Wpływ na miasta </strong> <br>
+Twój transport wpływa na rozwój miast. Każdy przewieziony ładunek wpłynie na pobliskie miasta, sprawiając, że będą się rozwijać i prosperować. Czasami miasta będą tworzyć nowe atrakcje i interesujące miejsca, które przyciągną znacznie więcej pasażerów. Być może Twoja oferta przyciągnie nowe branże, które dadzą Ci jeszcze więcej możliwości. Ale nie wszystko, co robisz, prowadzi do dobrych rzeczy - w miarę jak miasta rosną, na drogach jeździ więcej samochodów, a ty będziesz próbował radzić sobie z ruchem ulicznym. To, co robisz, kształtuje przyszłość. </li> </ul>
+<h2 class = "bb_tag"> Sterowanie i dostosowywanie </h2>
+<ul class = "bb_ul"> <li> <strong> Konfiguruj wszystko albo nic </strong> <br>
+Simutrans ma wiele konfiguracji, które możesz dostosować. Jeśli nie jesteś maniakiem personalizacji, nie martw się, ogólnie z kilkoma opcjami Simutrans będzie pasował do Twojego stylu gry. Ale jeśli tak, to korzystaj ze wszystkich opcji i sposobów zmiany gry. </li>
+<li> <strong> Zbuduj swój świat </strong> <br> Tworząc nową grę, nie oczekuj, że będzie to stały świat. Możesz kształtować świat zgodnie ze swoimi potrzebami, budować drogi, fabryki, domy i budynki, podnosić i obniżać teren, tworzyć rzeki, jeziora i morza lub upiększać świat, sadząc drzewa. </li> </ul>
+
+<h2 class = "bb_tag"> Jak się bawisz? </h2>
+<ul class = "bb_ul"> <li> <strong> Tryb wieloosobowy </strong> <br>
+Masz dość grania w pojedynkę? Simutrans pozwala grać w trybie wieloosobowym. Możesz dołączyć do serwera publicznego i rywalizować i współpracować z ludźmi z całego świata. Możesz także grać ze znajomymi, tworząc prywatny serwer online lub LAN. </li>
+<li> <strong> Namiętnie czy swobodnie? </strong> <br>
+Możesz rzucić sobie wyzwanie w normalnej grze, próbując rozwijać swoją firmę. Możesz też po prostu odpocząć i dobrze się bawić grając bez pośpiechu i pieniędzy, tylko dla własnej przyjemności i satysfakcji z transportu wszystkiego. </li> </ul>
+
+<h2 class = "bb_tag"> Tłumaczenia </h2>
+<p> Simutrans oferuje szereg lokalizacji przetłumaczonych przez <a href="https://translator.simutrans.com" target="_blank" rel="noopener"> wolontariuszy</a>. Dostępne wersje językowe zostają wymienione na stronie Steam, gdy osiągną co najmniej 80% tłumaczeń tekstów podstawowych i 65% tłumaczeń pakietu pak128. </p>
+
+<h2 class = "bb_tag"> Historia Simutrans </h2>
+<p> Simutrans to gra Open Source opracowana na <a href="https://github.com/aburch/simutrans/blob/master/simutrans/license.txt" target="_blank" rel="noopener"> licencji artystycznej</a>. <br>
+Ta gra została pierwotnie stworzona przez Hansjörga Malthanera w latach 1997-2004, zanim została przekazana „zespołowi twórców Simutrans” w 2005. Od samego początku była ulepszana i aktualizowana.
+</p>
+</div>
+</body>
+</html>

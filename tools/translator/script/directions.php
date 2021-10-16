@@ -80,7 +80,7 @@ function print_obj_links ($versin_id, $obj_auswahl, $obj_sub_auswahl)
     $_SESSION['search_result_tab'] = $obj_tab;
     $_SESSION['search_result_len'] = $obj_inx;
     
-    if ($obj_inx > 1 and  $user != "") $v_att['set_head']['line_edit']['link_text'] = 'diese liste mit line_edit bearbeiten';
+    if ($obj_inx > 1 and  $user != "") $v_att['set_head']['line_edit']['link_text'] = $LNG_EDIT[37];
 }
 
 function like_escape ($s,$r)
@@ -320,7 +320,7 @@ if ((isset($_POST['txt_s']) and $_POST['txt_s'] == $LNG_FORM[45]) or isset($_GET
   }
   $_SESSION['search_result_tab'] = $obj_tab;
   $_SESSION['search_result_len'] = $obj_inx;
-  if ($obj_inx > 1 and  $user != "") $v_att['set_head']['line_edit']['link_text'] = 'diese liste mit line_edit bearbeiten';
+  if ($obj_inx > 1 and  $user != "") $v_att['set_head']['line_edit']['link_text'] = $LNG_EDIT[37];
   db_free_result($search);
 
   if ( $need_buttons == 1 )

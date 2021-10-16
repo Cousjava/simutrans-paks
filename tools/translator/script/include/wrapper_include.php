@@ -114,7 +114,7 @@ function generate_translation_text ($choice,$lang_id, $version_id, $target_encod
          }
 
          //check if translation is not empty (do not print empty one)
-         if( $row->tr_text != "" and ($row->obj_name != $row->tr_text or $choice == 'save'))
+         if( $row->tr_text != "" and ($row->obj_name != $row->tr_text or $choice == 'save') and $row->obj != 'web_site')
          { $res .= $row->obj_name."\n"; //print object name
            $res .= line_preprocessor ($row->tr_text,$target_encoding)."\n"; //print translation
          }
@@ -302,7 +302,7 @@ function generate_htmlhelp_head($file,$setid,$lang_id,$code,$page_title,$imgdata
 }
 
 function generate_htmlhelp_files ($html_folder, $help_file, $page_title, $htext, $code, $setid,$lang_id)
-{  global   $imagepfad;
+{  global   $htmlpfad,$htmlexpfad;
 
    // images on page
 
@@ -310,16 +310,14 @@ function generate_htmlhelp_files ($html_folder, $help_file, $page_title, $htext,
    {   $tf = './img/';
        $ta = $html_folder.'/img/';
    } else 
-   {   $tf = '../../img/'.$setid.'/';
-       $ta = $imagepfad.$setid.'/';
-   }    
+   {   $tf = '../en/img/';
+       $ta = $htmlpfad.'en/img/';
+       if ( $setid == HELP_EXTEN_SET_ID )  $ta = $htmlexpfad.'en/img/';
+   }
    $imgfile = $help_file.'.png';
-   $timgfile = $help_file.'_t.jpg-';
         
    $imgdata = '&nbsp;';
-   if ( file_exists($ta.$timgfile) )
-   { $imgdata = '<div class="imagefile"><a href="'.$tf.$imgfile.'" target="_blank"><img src="'.$timgfile.'" alt=""></a></div>';
-   } elseif ( file_exists($ta.$imgfile) ) 
+   if ( file_exists($ta.$imgfile) ) 
    { $imgdata = '<div class="timagefile"><img src="'.$tf.$imgfile.'" alt="" ></div>';
    } 
    

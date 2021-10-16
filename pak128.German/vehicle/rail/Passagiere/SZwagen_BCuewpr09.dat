@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 04-09-2017
+---------------------------------
+obj=vehicle
+name=Schnellzugwagen_2-3.Kl._BC4uewpr09
+copyright=pumuckl999
+intro_year=1909
+intro_month=1
+retire_year=1955
+retire_month=12
+cost=5195000
+runningcost=147
+fixed_cost=5673
+waytype=track
+freight=Passagiere
+length=12
+payload=53
+weight=42.5
+speed=120
+sound=-1
+Constraint[Prev][0]=any
+EmptyImage[S]=SZwagen_BCuewpr09.0.0
+EmptyImage[E]=SZwagen_BCuewpr09.0.1
+EmptyImage[SE]=SZwagen_BCuewpr09.0.2
+EmptyImage[SW]=SZwagen_BCuewpr09.0.3
+EmptyImage[N]=SZwagen_BCuewpr09.0.4
+EmptyImage[W]=SZwagen_BCuewpr09.0.5
+EmptyImage[NW]=SZwagen_BCuewpr09.0.6
+EmptyImage[NE]=SZwagen_BCuewpr09.0.7
+---------------------------------

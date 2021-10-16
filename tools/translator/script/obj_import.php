@@ -27,9 +27,11 @@ include('./tpl_script/setadmin_links.php');
         //as first and default, place dummy - to prevent careles uploads
         $res="<option value='255' selected='selected'>".$LNG_FORM[7]."</option>\n";
         foreach ($maintainter as $id)
-        { $res .= sprintf ("<option value='%d'>%s </option>\n"
+        { if ( isset($versions_all[$id])) 
+            { $res .= sprintf ("<option value='%d'>%s </option>\n"
                           ,$id
                           ,$versions_all[$id]);
+	  }
         }
         return $res;
     }

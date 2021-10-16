@@ -9,6 +9,7 @@ copyright=pumuckl999
 type=res
 level=2
 chance=20
+clusters=1
 intro_year=1840
 intro_month=1
 needs_ground=0

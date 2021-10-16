@@ -9,7 +9,7 @@
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                             Font: Prop-Latin1.bdf                            #
-#                           Date Created: 25.08 2021                           #
+#                           Date Created: 16.10 2021                           #
 #                                                                              #
 ################################################################################
 #____________________________bridge - monorail_track____________________________
@@ -68,6 +68,8 @@ COM_ALL_1800_A_01
 Leeres Grundstück\n\nGewerbewidmung
 COM_ALL_1800_A_08
 Schweinfurt Am Graben 30 gelb
+COM_ALL_1800_F_08
+Alte Kanzlei Stuttgart
 COM_ALL_1828_A_06
 Weingrosshandlung Gotthelf Kühne Leipzig
 COM_ALL_1890_A_06
@@ -76,12 +78,18 @@ COM_ALL_1893_A_04
 Schule Freital Kleinnaundorf
 COM_ALL_1900_A_02
 Rummel
+COM_ALL_1906_A_02
+Rodgau Altes Spritzenhaus
 COM_ALL_1910_A_10
 Altchemnitzer Straße 46, Chemnitz
 COM_ALL_1920_A_01
 Leeres Grundstück mit Bautafel\n\nHier möchte eine Venture-Capital-Gesellschaft ein hohes Bürogebäude errichten.
 COM_ALL_1925_A_09
 Leeres Gebäude
+COM_ALL_1925_A_48
+Untergrundmessehaus Leipzig
+COM_ALL_1927_A_01
+Magdeburg Pferdetor
 COM_ALL_1929_A_10
 Museum Gunzenhauser\n\nErbaut 1928 als Hauptsitz der Sparkasse Chemnitz
 COM_ALL_1929_A_24
@@ -120,20 +128,28 @@ COM_ALL_1963_A_44
 Bayer-Hochhaus\n\n in Leverkusen
 COM_ALL_1967_A_34
 Postbank-Hochhaus\n\n in Essen
+COM_ALL_1969_A_22
+Sparkasse Dortmund Freistuhl 2
 COM_ALL_1970_A_04
 Zeltplatzkino Markgrafenheide
+COM_ALL_1970_A_12
+Katharinenturm Magdeburg
 COM_ALL_1970_A_34
 Bonifazius-Turm in Mainz\n\nGeplant waren zwei Bürotürme nebeneinander am Hauptbahnhof. Dummerweise gibt es zwei Kirchen die dem Heiligen Bonifaz geweiht sind und so hat sich die Baufirma Simutrans Express KG, die die Ausschreibung für den zweiten Turm gewonnen hat, im Stadtteil geirrt. Jetzt steht der zweite Turm am anderen Ende der Stadt, in der Nähe des Ostbahnhofs. 
 COM_ALL_1970_A_48
 Jentower in Jena
 COM_ALL_1970_B_00
 Zeltplatz
+COM_ALL_1972_A_14
+Blauer Turm Göttingen
 COM_ALL_1972_A_48
 City-Hochhaus Leipzig
 COM_ALL_1973_A_14
 Kölnische Straße 4x Kassel 
 COM_ALL_1973_A_38
 Radisson Blu Hotel\n\n in Hamburg. Das sind gestapelte Bretter, äh gestapelte Betonplatten, Verzeihung es sind gestapelte Betten.
+COM_ALL_1974_A_20
+R+V-Versicherung Hannover Niedersachsenring 13
 COM_ALL_1974_A_26
 Ruby Tower\n\n Lyoner Straße 40 in Frankfurt. Der frühere Sitz des Hotelkonzerns Steigenberger, wurde inzwischen zum "Ruby Tower" genannten Wohnhochhaus umgebaut
 COM_ALL_1980_A_36
@@ -158,6 +174,8 @@ COM_ALL_1990_A_38
 Victoria-Turm in Düsseldorf\n\nWenn die Mitarbeiter eines Unternehmens rotieren, dann sollte das Bürogebäude rund sein. Zum Glück besitzt das Gebäude einen eingebauten Kompass, so dass trotz aller Eile nie die Orientierung verloren geht und jeder weiß wo Norden ist. 
 COM_ALL_1990_A_44
 TrepTower Berlin
+COM_ALL_1995_A_18
+Mercure-Hotel Bochum
 COM_ALL_1997_A_48
 Commerzbank Tower \n\nBis 2003 war der 1997 vollendete Commerzbank Tower in Frankfurt/Main das höchste Hochhaus Deutschlands.
 COM_ALL_1998_A_18
@@ -188,6 +206,8 @@ COM_ALL_2003_A_28
 Channel Tower\n\n in Hamburg
 COM_ALL_2003_A_40
 IBC Frankfurt
+COM_ALL_2004_A_16
+Stadtwerkegebäude Bochum Ostring 28
 COM_ALL_2005_A_10
 Kunstmuseum Stuttgart
 COM_ALL_2007_A_36
@@ -535,7 +555,7 @@ Brandenburger Tor  \n\nEs ist das wohl bedeutendste politische Wahrzeichen und D
 Burg_Pfalzgrafenstein
 Burg Pfalzgrafenstein \n\nGehört seit 2002 zum UNESCO-Welterbe Oberes Mittelrheintal
 Burgruine_Drachenfels
-Burgruine              \n\nKaputt - und trotzdem schaurig-schön: Die Burgruine Drachenfels.
+Burgruine              \n\nKaputt - und trotzdem schaurig-schön: Die Burgruine Drachenfels im Siebengebirge am Rhein.
 BZT_JagdSchloss1
 Jagdschloss
 BZT_StMartin
@@ -563,7 +583,7 @@ modernes Gymnasium
 Hafenamt_Stralsund
 Hafenamt            \n\nStralsund
 Hasenmuseum_Eppelheim
-Hasenmuseum         \n\nEin Hasenmuseum, gibt es das? Ja, im 1907 errichteten Wasserturm, wo seit 2009 das Deutsche Hasenmuseum seinen Sitz hat.
+Hasenmuseum         \n\nEin Hasenmuseum, gibt es das? Ja, in Eppelheim, im 1907 errichteten Wasserturm, in dem seit 2009 das Deutsche Hasenmuseum seinen Sitz hat.
 Haus_Abendfrieden
 Haus Abendfrieden \n\nDenkmalgeschützte Villa in Wuppertal-Oberbarmen
 Haus_Kopfueber
@@ -615,7 +635,7 @@ Orangerie            \n\nOrangerien waren einst die Gewächshäuser der Mächtigen,
 Planetarium_Hamburg
 Planetarium          \n\nHamburg
 Propylaeen
-Propyläen\n\nin München am Königsplatz\n Entsprang der der Begeisterung des Königs für Architektur und dem klassischen Griechenland und wurde von 1854 bis 1862 mit privaten Mitteln von Ludwig I. erbaut. 
+Propyläen  \n\nin München am Königsplatz\n Entsprang der der Begeisterung des Königs für Architektur und dem klassischen Griechenland und wurde von 1854 bis 1862 mit privaten Mitteln von Ludwig I. erbaut. 
 Realschule
 Realschule\n\nIn dieser Schule werden junge Simuthanier in den verschiedensten Disziplinen unterrichtet, die man im Simu-Leben benötigt. In Deutsch und Englisch werden kreative Übersetzungstexte verfasst, Mathematik befasst sich mit der Balance von Fuhrpark und Fabriken, im Physikunterricht dreht sich alles um den Pixel als kleinsten Baustein des Universum, dessen Spaltung so katastrophale Folgen hätte, dass man sie verpixeln müsste, und in der Sporterziehung wird erlernt, wie man sich als Passant beim gehen um Ecken teleportiert.
 Rieckhuus_Hamburg-Curslack
@@ -636,6 +656,8 @@ Schloss_Schlemmin
 Schloss Schlemmin \n\nDas Gebäude in Vorpommern sieht gotisch aus, stammt aber aus der Mitte des 19. Jahrhunderts.
 Schoenbergturm
 Schönbergturm     \n\nDer Turm steht als Aussichtsturm auf dem Gipfels des Schönbergs in Schwaben und kann man bis heute nur zu Fuß zu erreichen werden, dann hat man als Dank, aber von oben einen weiten Blick über Pfullingen ins Baden-Württemberger Land.\n Niemand lästert so gerne und respektlos wie die Schwaben. So wurde der Doppelturm schnell "Pfullinger Onderhos" (Unterhose) genannt. \n http://www.pfullingeronderhos.de \n Der Turm wurde 1905 gebaut, in einer Zeit in der anderswo staatstragende Bismarktürme gebaut wurden. (240 Stück) Hier waren praktische Überlegungen formgebend. Da sich bei einem Aussichtsturm die aufsteigenden Leute ständig mit den absteigenden Leuten in die Quere kommen, wurden zwei Treppenhäuser gebaut. Es lag dann nahe die beiden Treppenhäuser mit der Aussichtsplattform zu verbinden. So kam es zu dieser eigenwilligen Konstruktion. Bismarktürme eignen sich nur mäßig als Aussichtstürme, da der obere Teil des Turms dem Staat und dem Reichsadler vorbehalten sind und sich niemand höher stellen darf. Hier hat man auf jeden Pathos verzichtet und der Funktion als Aussichtsturm Vorrang gegeben. Und trotzdem wurde er genehmigt und gebaut. 
+Seepyramide_Branitz
+Seepyramide Branitz Park  \n\nDie Pyramide steht im vom Fürst Hermann von Pückler errichteten Schlosspark in Branitz. Nach Fürst Pückler ist auch das Eis in 3 Farben Erdbeere, Vanille und Schokolade benannt. Neben Eis war seine Leidenschaft die Landschaftsplanung. Durchaus vermögend, als einer der größten Landbesitzer in Preußen, hat er sich mit der Errichtung des Park in Muskau finanziell völlig übernommen. Die Not gebar die Idee, eine reiche, ältere Witwe zu heiraten. Leider war er schon mit einer älteren geschiedenen Frau aus vermögendem Haus verheiratet. Er ließ sich also im Einvernehmen scheiden und ging nach England auf die Suche, um erneut reich zu heiraten. Er fand keine, aber er schrieb seiner ehemaligen Frau Zuhause seine Erlebnisse in der höheren englischen Gesellschaft. Diese hatte die Idee seine Briefe zu veröffentlichen. Die Bücher linderten die finanzielle Not. Trotzdem musste er die Standesherrschaft Muskau samt Schloss und Park verkaufen. Mit dem Rest des Verkaufserlöses errichtete er dann den Park um Schloß Branitz. Pückler ließ dazu Seen und Kanäle ausheben und aus dem Aushub Hügel und zwei Pyramiden modellieren. Eine davon steht in einem See. Fürst Pückler und seine geschiedene Frau sind heute in dieser Pyramide begraben.
 Siegessaeule
 Siegessäule         \n\nDie "Goldelse", wie sie im Volksmund gern genannt wird, ist ein Wahrzeichen Berlins, das an die so genannten deutschen Einigungskriege im 19. Jahrhundert erinnert. Dargestellt ist die römische Siegesgöttin Viktoria.
 Signal-Iduna-Park
@@ -692,6 +714,10 @@ StrabaDepot Naumburg
 Tram-Depot (Naumburg)
 StrabaDepot_Rostock
 Strassenbahndepot (Rostock)
+Tonne_Backbord
+Tonne Backbord
+Tonne_Steuerbord
+Tonne Steuerbord
 TrainDepot_1
 Eisenbahn-Depot
 #________________________________building - dock________________________________
@@ -876,8 +902,14 @@ IND_ALL_1862_L48_A_01
 Fabrik Herminghaus\n\nin Wülfrath Hier werden Möbel- und Türschlösser sowie Beschläge herstellte. Wie es so ist, die Firma prosperiert und in der Fertigung muss an- und ausgebaut werden. Um der Nachfrage her zu werden, muss an das Haupthaus eine Erweiterung nach der anderen gebaut werden. Der Architekt wollte eine grandiose Fassade, einem kleinen Schloss ähnlich. Er hatte sich wohl vom Namen der Produkte inspirieren lassen. Aber In der Produktion störten die Fenster und so wurden sie einfach zugemauert. 
 IND_ALL_1863_L18_A_01
 Jutespinnerei in Potsdam
+IND_ALL_1870_L06_A_01
+Textlifabrik Heinrich Otto und Söhne Wendlingen
+IND_ALL_1876_L12_A_01
+Heyligenstaedt Werkzeugmaschinen
 IND_ALL_1882_L30_A_01
 Hallesche Malzfabrik Reinicke&Co. in Halle
+IND_ALL_1890_L10_A_01
+Werkzeugmaschinenfabrik Gebr. Escher Chemnitz
 IND_ALL_1892_L20_A_01
 Alter Wasserturm in Burgdorf (Hannover)\n\nDer heute noch stehende Wasserturm gehörte ursprünglich zur Zuckerfabrik "Lehrter Zucker AG"
 IND_ALL_1897_L14_A_01
@@ -888,6 +920,8 @@ IND_ALL_1901_L48_A_01
 Heizkraftwerk West\n\n steht in Karlsruhe. Bereits 1901 in Betrieb genommen, wurde es mehrfach umgebaut von Kohle auf Schweröl auf Gas. Früher zur Stromerzeugung gebaut, wird seit 1951 die Abwärme im Fernwärmenetz genutzt, heute liefert es nur noch Spitzenlast.
 IND_ALL_1906_L22_A_01
 AEG Alte Fabrik für Bahnmaterial in Berlin Gesundbrunnen
+IND_ALL_1908_L04_A_01
+Markranstädter Automobilfabrik (MAF)
 IND_ALL_1910_A_09
 Maschinenhaus Metallwerk Coburg
 IND_ALL_1912_L24_A_01
@@ -906,6 +940,8 @@ IND_ALL_1984_A_02
 Baustelle - Hier entsteht ein neuer Industriebetrieb.
 IND_ALL_1996_L42_A_01
 Heizkraftwerk Berlin-Mitte
+IND_ALL_1998_L48_A_01
+Schlachthof Fürstenfeldbruck-Hasenheide
 IND_ALL_2005_L44_A_01
 Schapfen Mühle\n\nDas Getreidesilo in Ulm ist mit 116 Meter das zweithöchste Getreidesilo der Welt. Es können rund 8.500 Tonnen Getreide gelagert werden.\nEs könnte auch eine moderne Garvitationsmühle sein: Das Korn wird oben eingefüllt, fällt über 100m tief und zerplatzt dann unten beim Aufprall zu Mehlstaub.
 IND_ALL_Gerberei_06
@@ -1048,6 +1084,14 @@ IND_MGB_1997_A_03
 Werkstatt & Autohaus - Egal ob sportlicher Flitzer oder braver Familienvan, hier findet jeder das zu ihm passende Fahrzeug.
 IND_MGB_2000_A_30
 MVA Weisweiler
+IND_MGB_ODT_1875_A_08
+Gießerei Carl August Richter Altchemnitzer Str 114 Chemnitz
+IND_MGB_ODT_1898_A_14
+Handschuhfabrik Gebr. Becker Crusiusstraße 4 Chemnitz
+IND_MGB_ODT_1899_A_10
+Rowac-Fabrikhalle Annaberger Straße 282a Chemnitz
+IND_MGB_ODT_1905_A_12
+Strumpfwirkerei Siegfried Peretz? Elasser Str.10 Chemnitz
 IND_NDT_1800_A_01
 Scheune für Landwirtschaftliche Produkte und Geräte. Der Besitzer wollte unbedingt mal etwas "ausgefallenes" um sich von seinen Nachbarn abzuheben.
 IND_NDT_1830_A_06
@@ -1654,6 +1698,16 @@ RES_MGB_2008_A_08
 Kleiner, 3-geschossiger Wohnblock der Lemuria Immo-Verwaltungsgesellschaft.
 RES_MGB_2013_A_48
 Wohngebäude\n\nDie Bewohner sind stolz dass sie im Gebäude mit dem höchsten Level in ganz Simworld leben. 
+RES_MGB_ODT_1800_A_02
+Schulstrasse 18 Chemnitz
+RES_MGB_ODT_1800_F_02
+Eberhardtsteig 1 Chemnitz
+RES_MGB_ODT_1840_A_02
+Schulstrasse 4 & 6 Chemnitz
+RES_MGB_ODT_1905_A_10
+Altchemnitzer Str 66 Chemnitz
+RES_MGB_ODT_1927_A_08
+Am Karbel 3-7-13-15 Chemnitz
 RES_NDT_1800_A_03
 Güstrow Armesünderturm
 RES_NDT_1800_A_12
@@ -2018,10 +2072,46 @@ BICYCLE_RIDER_2
 Fahrradfahrer blau\nEin sogenanntes Sicherheitsfahrrad das ab 1885 gebaut wurde. Es ist sicherer als die zuvor verbreiteten Hochräder. Diese Bauform ist auch heute noch üblich.
 BICYCLE_RIDER_3
 Fahrradfahrer grün\nEin sogenanntes Sicherheitsfahrrad das ab 1885 gebaut wurde. Es ist sicherer als die zuvor verbreiteten Hochräder. Diese Bauform ist auch heute noch üblich.
+citybike_Yamaha_Tenere
+Yamaha Tenere
 citycar_Audi_A4grau
 Audi A4 grau
 citycar_Audi_A4gruen
 Audi A4 grün
+citycar_Audi_A4rot
+Audi A4 rot
+citycar_Audi_A4schwarz
+Audi A4 schwarz
+citycar_BMW_X5blau
+BMW X5 blau
+citycar_BMW_X5rot
+BMW X5 rot
+citycar_BMW_X5schwarz
+BMW X5 schwarz
+citycar_fantasy_gelb
+Fantasy gelb
+citycar_fantasy_pink
+Fantasy pink
+citycar_fantasy_weiss
+Fantasy weiß
+citycar_McLaren_gruen
+McLaren grün
+citycar_McLaren_rot
+McLaren rot
+citycar_RenaultKangoo_blau
+Renault Kangoo blau
+citycar_RenaultKangoo_gruen
+Renault Kangoo grün
+citycar_RenaultKangoo_rot
+Renault Kangoo rot
+citycar_Trabant601_blau
+Trabant 601 blau
+citycar_Trabant601_blauweiss
+Trabant 601 blau weiß
+citycar_Trabant601_weiss
+Trabant 601 weiß
+citycar_Trabant601_weissblau
+Trabant 601 weiß blau
 Epoche1CityCar1
 Pferdekutsche mit Fracht
 Epoche1CityCar2
@@ -2914,6 +3004,10 @@ Marker
 Markierung
 Water
 Wasser
+#__________________________________ground_obj___________________________________
+#__________________________________ground_obj___________________________________
+Zugvoegel
+Zugvögel
 #___________________________________menu_text___________________________________
 #___________________________________menu_text___________________________________
 AIRTOOLS
@@ -3502,6 +3596,8 @@ E69
 E 69 02 Pauline
 E71
 E 71
+E71_Version2
+E71 Version 2
 E91_3
 Preußische EG 538 (DR E91.3)
 E94
@@ -4280,6 +4376,8 @@ Bayrische_S2-6_Tender
 Tender für bayrische S 2/6
 bayrischer_BC4ue_Bay_99
 bayr. Schnellzugwagen BC4ü Bay 99
+Bayrischer_E-Wagon_1858
+Bayrischer E-Wagon 1858 für Vieh
 bayrischer_Posti_Bay61
 bayr. Postwagen Posti Bay61
 Behaelter-Tragwagen_Lbms589_fl.Lebensmittel
@@ -4480,6 +4578,16 @@ Doppelstock_Steuerwagen_rot_Kopf
 DB Doppelstock-Steuerwagen - Kopf
 Doppelstock_Wagen_rot
 DB Doppelstockwagen
+DR_137028
+Triebwagen DR 137 028
+DR_137155_End
+Triebwagen DR 137 155 Kruckenberg Ende
+DR_137155_Front
+Triebwagen DR 137 155 Kruckenberg Front
+DR_137155_Mitte
+Triebwagen DR 137 155 Kruckenberg Mitte
+DR_137235
+Triebwagen DR 137 235
 DR_Reisezugwagen_Altenberg
 C4i-35a "Altenberger"
 DR_Speisewagen_Bautzen
@@ -4494,24 +4602,18 @@ DR714
 Triebwagen DR 714
 DR749
 Triebwagen DR 749
-Drehgestell-Flachwagen Rbns641
-Drehgestell-Flachwagen Rbns 641
-Drehgestell-Flachwagen Rnoos644
-Drehgestell-Flachwagen Rnoos 644
-Drehgestell-Flachwagen_Rils653_Stahl
-Drehgestell Flachwgen Rils653 für Stahl
-Drehgestell-Flachwagen_Rils653_Stueckgut
-Planenhaubeflachwagen Rils653 für Stückgut
-Drehgestellflachwagen_Snps719_Holz
-Drehgestell-Flachwagen Snps719 f. Holz
-Drehgestellflachwagen_Snps719_Stahl
-Drehgestell-Flachwagen Snps719 f. Stahl
+DT_59
+Dampftriebwagen DT 59
 Durchgangswagen_Ci3_Bay_99
 Durchgangswagen Ci3 Bay 99
 DWA_LVTS-BR672
 Bombardier LVTS-BR 672
 E80_PO
 DRG E 80 (Stromabnehmer oben)
+Eanos-x051
+Offener Drehgestellwagen Eanos-x051
+Eanos-x059
+Offener Schüttgutwagen Eanos-x059
 ES_5530
 Schüttgutwagen
 ET165_Ende
@@ -4546,6 +4648,8 @@ ETA177_hinten
 AT 3 Bauart Wittfeld - Schluss
 ETA177_vorn
 AT 3 Bauart Wittfeld - Kopf
+Faals150
+offener Drehgestell Schüttgutwagen Faals150 
 Faals151
 Schüttgutwagen Faals151 
 Fas126
@@ -4582,6 +4686,10 @@ G3_Tender
 Tender für preuß. G3
 G8
 Preußische G8
+Gbs252_Vieh
+geschlossener Viehwagen Gbs 252
+Gbs254
+Geschlossener Güterwagen Gbs254
 Gedeckter Schuettgutwagen Tanoos-y898
 gedeckter Schüttgutwagen Tanoos-y898
 gedeckter_Gueterwagen_GGhs_Bromberg_lwGueter
@@ -4594,6 +4702,8 @@ gedeckter_Gueterwagen1895_Stueckgut
 gedeckter Stückgutwagen
 gedeckter_Gueterwagen1895_Vieh
 gedeckter Viehwagen
+Gedeckter_Schuettgutwagen_Tadgs959
+Gedeckter Schüttgutwagen für Getreide Tadgs959
 Gelenkwagen_Sggrss733T1_Fll
 Gelenkwagen Sggrss 733T1 für fl. Lebensmittel - vorn
 Gelenkwagen_Sggrss733T1_Kuehlw.
@@ -4606,8 +4716,6 @@ Gelenkwagen_Sggrss733T2_Kuehlw.
 Gelenkwagen Sggrss 733T2 für Kühlwaren - hinten
 Gelenkwagen_Sggrss733T2_Stgut
 Gelenkwagen Sggrss 733T2 für Stückgut - hinten
-Geschlossener Gueterwagen Gbs252 Vieh
-geschlossener Viehwagen Gbs 252
 Getreidewagen
 Wagen für landw. Güter 4-achsig
 Gkmu
@@ -4622,6 +4730,8 @@ GTW_Mittelwagen
 GTW-Mittelwagen
 Hechtwagen_AB4ue23a
 Hechtwagen AB4ü-23a
+Henschel_DH440C
+Henschel DH440 C
 Henschel_DHG500C
 Henschel DHG500C
 Henschel_DHG700C
@@ -4679,7 +4789,7 @@ Kühlwagen 4-achsig
 Kuehlwagen_Milch_1850
 Kühlwagen 1950 für Milch
 Kuehlwagen-alt
-Kühlwagen
+Kühlwagen Gk Berlin
 Kuehlwagen1850
 Kühlwagen 1850
 Kuehlwagen1880
@@ -4718,6 +4828,10 @@ lgns583_Kuehlwaren
 Container-Tragwagen Lgns583 für Kühlwaren
 lgns583_Stueckgut
 Container-Tragwagen Lgns583 für Stückgut
+MaK_G_1206
+MaK G 1206
+MaK_G_1206-2
+MaK G 1206-2
 Metropolitan_Mittelwagen
 Metropolitan - Mittelwagen
 Metropolitan_Steuerwagen
@@ -4761,9 +4875,7 @@ Schüttgutwagen O-Nürnberger
 Oelwagen
 Ölwagen 4-achsig
 Oelwagen_alt
-Ölwagen 2-achsig
-Offener Drehgestellwagen Eanos-x059
-Offener Schüttgutwagen Eanos-x059
+Ölwagen Zh 2-achsig
 offener Gueterwagen 1835 fl.Lebensmittel
 offener Güterwagen für flüssige Lebensmittel
 offener Gueterwagen 1835 Stahl
@@ -4792,6 +4904,8 @@ Offs59b_1931
 Autotransportwagen 2-achsig - hinten
 Offs59b_1958
 Autotransportwagen Offs59 - hinten
+P3i_Bay92
+P3i Bay92
 P8
 Preußische P8
 P8Tender
@@ -4812,6 +4926,8 @@ Postwaggon PwPost4ue-28
 Postwaggon PwPost4ü-28
 Postwaggon_4-cl15
 Postwaggon 4 cl15
+Postwaggon_Post4ue-b20
+Postwaggon Post4ü-b20
 pr_Abteilwagen_ABC4_Pr01
 preußischer Abteilwagen ABC4 Pr 01
 Preussische_G3
@@ -4832,14 +4948,30 @@ PrG8Tender
 Tender für G8
 PwgPr14
 Güterbegleitwagen PwgPr 14
+Rbns641
+Drehgestell-Flachwagen Rbns 641
+Rbns646
+Drehgestell-Flachwagen Rbns646
 Rheingold_1_1Kl
 Rheingold 1. Klasse
+Rils652_Stahl
+Drehgestell-Flachwagen Rils652 Stahl
+Rils652_Stueckgut
+Drehgestell-Flachwagen Rils652 Stückgut
+Rils653_Stahl
+Drehgestell Flachwgen Rils653 für Stahl
+Rils653_Stueckgut
+Planenhaubeflachwagen Rils653 für Stückgut
 Rmms663Autos
 Drehgestell-Flachwagen Rmms663 f. Autos
 Rmms663Holz
 Drehgestell-Flachwagen Rmms663 f. Holz
 Rmms663Stahl
 Drehgestell-Flachwagen Rmms663 f. Stahl
+Rnoos644
+Drehgestell-Flachwagen Rnoos 644
+Roos-t645
+Drehgestell-Flachwagen Roos-t645
 Rungenwagen
 Rungenwagen für Nutzholz 2-achsig
 S1_Tender
@@ -4852,6 +4984,8 @@ saechsischer_C_Sa_12
 sächsischer 3.-Klasse-Wagen C Sa 12
 saechsischer_C4ue_sa07
 sächsischer C4ü Sa07
+Sahmms_711
+Drehgestell-Flachwagen Sahmms 711
 Schiebewandwagen_Habbiins352
 Schiebewandwagen Habbiins 352
 Schiebewandwagen_Hbbills311
@@ -4862,6 +4996,8 @@ Schneepflug_BA_Meiningen_DB
 DB Schneepflug BA Meiningen
 Schneepflug_BA_Meiningen_DR
 DR Schneepflug BA Meiningen
+Schnellzugwagen_2-3.Kl._BC4uewpr09
+Schnellzugwagen 2-3.Kl. BC4üwpr09
 Schnellzugwagen_3.Kl._C4uepr11
 Schnellzugwagen 3. Klasse C4üpr11
 Schotterwagen
@@ -4880,6 +5016,10 @@ Silberlinge_steuerw_Post_BDnf_738
 Silberlinge Post BDnf738
 Silberlinge_steuerw_v_BDnf_738
 Silberlinge Steuerwagen BDnf738
+Snps719_Holz
+Drehgestell-Flachwagen Snps719 f. Holz
+Snps719_Stahl
+Drehgestell-Flachwagen Snps719 f. Stahl
 Spezialwagen_GGkxr_lw.Gueter
 Spezialwagen GGkxr für landw. Güter
 Spezialwagen_GGkxr_Stueckgut
@@ -4907,7 +5047,7 @@ Talbot Selbstentlader
 Tankwagen
 Tankwagen 4-achsig
 Tankwagen_alt
-Tankwagen für Milch
+Tankwagen Zh für Milch
 Taschenwagen Sdgmns 743Post
 Taschenwagen Sdgmns 743 für Post
 Taschenwagen Sdgmns 743Vieh
@@ -4994,6 +5134,8 @@ VT33
 Triebwagen VT 33.2
 VT75
 DR 135 (DB VT 75) Motorwagen
+VTG_M18.080D
+VTG M18.080D
 Wannentender
 Wannentender (für DRG BR 38, 44, 50)
 x-Wagen_ABx791
@@ -5492,6 +5634,8 @@ altes_Gleis60
 frühes Gleis im Schotterbett 60 km/h
 Gleis_120
 Gleis 120 km/h
+Hochbahn120
+Hochbahn 120  km/h
 Hochbahn160
 Hochbahn 160 km/h
 Hochbahn210

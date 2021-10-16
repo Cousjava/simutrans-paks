@@ -20,7 +20,7 @@ if ( isset($_GET['set']) && in_array($_GET['set'],  $maintainter) ) {
   $query="UPDATE `versions` SET `activ`='".$t."' WHERE `version_id`=".$_GET['set'].";";
   $result = db_query($query);
         $_GET['set'] = Null;
-} */
+} 
 
 if ( isset($_POST['set_lang']) ) {
     $sql="SELECT `language_id`,`language_name` FROM `languages` ORDER BY `language_id`;";
@@ -41,12 +41,18 @@ if ( isset($_POST['set_lang']) ) {
       ,$setid 
       );
     db_query($sql);
+} 
 
-
-}
+*/
 
 foreach ($maintainter as $id)
-{   echo '<nobr>< <a href="main.php?lang=de&page=admin_set&set='.$id.'">'.$LNG_ADMIN[40].' <b>'.$versions_all[$id].'</b></a> ></nobr></br></br>';
+{   if ( isset($versions_all[$id]))
+        echo '<nobr>< <a href="main.php?lang=de&page=admin_set&set='.$id.'">'.$LNG_ADMIN[40].': <b>'.$versions_all[$id].'</b></a> ></nobr></br></br>';
+     else 
+      { echo '<nobr>< <a href="main.php?lang=de&page=admin_set&set='.$id.'"><font color="Red">'.$LNG_ADMIN[40].' '.$LNG_INFO[6].': <b>';
+        echo db_one_field_query ("SELECT v_name FROM versions WHERE version_id=$id;");
+        echo '   </b></a> ></font></nobr></br></br>';
+      }
 }
 /*
 $version_sql = "SELECT * FROM `versions`";

@@ -1,39 +1,44 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//DE">
-<html>
+<!DOCTYPE html>
+<html lang="de">
   <head>
     <title>Simutrans Home</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
     <meta name="keywords" content="Simutrans, Help, Simutrans Help">
     <meta name="robots" content="index,follow">
-    <link href="css/style.css" type="text/css" rel="StyleSheet" />
+    <link href="css/style.css" type="text/css" rel="StyleSheet">
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> 
   </head>
   <body>
-    <img style="margin-left:auto;margin-right: auto;" id="logo" src="img/simutrans.png" alt="SimuTranslator logo" width="50%" height="auto" title="SimuTranslator" />   
-    <hr />
-<div align="center">
+    <img style="margin-left:auto; margin-right:auto; width:50%;" id="logo" src="img/simutrans.png" alt="SimuTranslator logo" title="SimuTranslator">   
+    <hr>
+<div style="margin-left:auto; margin-right:auto;">
 <a href="https://sourceforge.net/projects/simutrans/"><img src="img/sourceforge.png" alt="Spiele download sourceforge" title="Simutrans auf SourceForge" ></a> 
 <a href="https://store.steampowered.com/app/434520/Simutrans"><img src="img/steam_de.png" alt="Spiele auf Steam" title="Simutrans auf Steam" ></a>
 </div>
 <div id='width600train3'>
-<h1 align="center"><font size="+3">Simutrans</font></h1>
+<h1 style="margin-left:auto; margin-right:auto; font-size:xx-large">Simutrans</h1>
 <p>
     <a href="index.html.en">english</a>
     <a href="index.html.es">español</a>
     <a href="index.html.pt">português</a>
+    <a href="index.html.ja">日本語</a>
+    <a href="index.html.pl-pl">Polski</a>
+    <a href="index.html.fr">français</a>
 </p>
 
 <p>
-Simutrans ist ein Freeware- und Open-Source-Transportsimulator. Ihr Ziel ist es, ein erfolgreiches Transportunternehmen aufzubauen. Transportieren Sie Passagiere, Post und Waren auf Schiene, Straße, Schiff und sogar in der Luft. Verbinden Sie Stadtteile, Städte, öffentliche Gebäude, Industrien und Touristenattraktionen, indem Sie ein Verkehrsnetz aufbauen, von dem Sie immer geträumt haben. <br>
-<br>
-<ul class = "bb_ul">
+Simutrans ist ein Freeware- und Open-Source-Transportsimulator. Ihr Ziel ist es, ein erfolgreiches Transportunternehmen aufzubauen. Transportieren Sie Passagiere, Post und Waren auf Schiene, Straße, Schiff und sogar in der Luft. Verbinden Sie Stadtteile, Städte, öffentliche Gebäude, Industrien und Touristenattraktionen, indem Sie ein Verkehrsnetz aufbauen, von dem Sie immer geträumt haben. 
+</p>
+
+<ul class = "bb_ul" style="font-size:113%">
 <li> Aufbau eines erfolgreichen Transportunternehmens <br> </li>
 <li> Transport von Passagieren, Post und Waren auf dem Land-, Luft- und Wasserweg <br> </li>
 <li> Verbinden Sie Städte, Bezirke, öffentliche Gebäude, Industrien und Touristenattraktionen <br> </li>
 <li> Kontrollieren und überwachen Sie Ihre Finanzen und den Verkehr Ihrer Fahrzeuge und Güter. <br> </li>
 <li> Lenken sie die Verkehrsströme. Beseitigen sie Engpässe. <br> </li>
-<li> Viele Grafikpakete zur Auswahl <br> </li> <li> Spielen Sie mit Menschen aus aller Welt in Online-Spielen </li>
+<li> Viele Grafikpakete zur Auswahl <br> </li> 
+<li> Spielen Sie mit Menschen aus aller Welt in Online-Spielen </li>
 </ul>
 
 <h2 class = "bb_tag"> Es gibt mehrere Grafikpakete </h2>
@@ -51,13 +56,13 @@ Simutrans ist ein Freeware- und Open-Source-Transportsimulator. Ihr Ziel ist es,
 <h2 class = "bb_tag"> Spielweise, Ziele </h2>
 <ul class = "bb_ul"> 
 <li> <strong> Fahrzeuge </strong> <br>
-Der Erfolg Ihres Unternehmens hängt von einer guten Planung ab, und wir geben Ihnen die Werkzeuge dafür. In Simutrans können Sie Busse, Lastwagen, Züge, Straßenbahnen, Schiffe, Flugzeuge, U-Bahnen,  Schwebebahnen, Magnetschwebebahnen und andere Fahrzeug haben um Personen, Post oder Waren zu transportieren. Wählen Sie sie mit Bedacht aus und transportieren Sie die immense Vielfalt, die jedes Pakset bietet, wirtschaftlich mit den dafür sinnvollen Fahrzeugen. </Li> 
+Der Erfolg Ihres Unternehmens hängt von einer guten Planung ab, und wir geben Ihnen die Werkzeuge dafür. In Simutrans können Sie Busse, Lastwagen, Züge, Straßenbahnen, Schiffe, Flugzeuge, U-Bahnen,  Schwebebahnen, Magnetschwebebahnen und andere Fahrzeug benutzen um Personen, Post oder Waren zu transportieren. Wählen Sie sie mit Bedacht aus und transportieren Sie die immense Vielfalt, die jedes Pakset bietet, wirtschaftlich mit den dafür sinnvollen Fahrzeugen. </Li> 
 <li> <strong> Die Bürger und die Post haben Ziele </strong> <br>
 Bürger und Produkte von Simutrans springen nicht einfach in Ihre Fahrzeuge und gehen dorthin, wohin Sie sie senden. Sie haben tatsächlich individuelle Ziele: Die Leute wollen Attraktionen erkunden, einkaufen gehen oder Freunde besuchen. In die Fabrik zum arbeiten fahren.
 <li> <strong> Auch Fracht muss zum richtigen Bestimmungsort transportiert werden. </strong> <br>
-Fabriken haben Verträge miteinander und sie werden von niemand anderem kaufen oder verkauft. Wenn keine Transportmöglichkeit vom Lieferanten zum Verbraucher bieten, werden die Firmen Ihr Transportunternehmen einfach nicht nutzen. <br> </li>
+Fabriken haben Verträge miteinander und sie werden von niemand anderem kaufen oder verkauft. Wenn keine Transportmöglichkeit vom Lieferanten zum Verbraucher bieten, werden die Firmen Ihr Transportunternehmen einfach nicht nutzen. </li>
 <li> <strong> Schließe die Kette ab </strong> <br>
-Der Transport von Produkten bringt Ihnen nicht nur Geld, sondern bringt auch die Wirtschaft ins Rollen. Wenn Sie Produkte zwischen Fabriken transportieren, beginnen sie zu produzieren und zu verkaufen. Jede Fabrik, die die benötigten Materialien erhält, beginnt mit der Produktion neuer Waren, sodass Sie immer mehr Fabriken in der Region miteinander verbinden können. <br> </li>
+Der Transport von Produkten bringt Ihnen nicht nur Geld, sondern bringt auch die Wirtschaft ins Rollen. Wenn Sie Produkte zwischen Fabriken transportieren, beginnen sie zu produzieren und zu verkaufen. Jede Fabrik, die die benötigten Materialien erhält, beginnt mit der Produktion neuer Waren, sodass Sie immer mehr Fabriken in der Region miteinander verbinden können. </li>
 <li> <strong> Städte beeinflussen </strong> <br>
 Ihr Transport beeinflusst das Stadtwachstum. Jede Einheit von allem, was Sie transportieren, wirkt sich auf die nahe gelegenen Städte aus und lässt sie wachsen und gedeihen. Manchmal schaffen Städte neue Attraktionen und Sehenswürdigkeiten, die viel mehr Passagiere anziehen. Oder vielleicht zieht Ihr Service neue Branchen an, die Ihnen noch mehr Möglichkeiten bieten. Aber nicht alles, was Sie tun, führt zu guten Dingen - wenn die Städte wachsen, sind mehr Autos auf den Straßen und Sie werden am Ende versuchen, mit dem Verkehr fertig zu werden. Entlasten sie das innerstädtische Verkehrschaos  durch Errichtung eines Öffentlichen Nahverkehrs. Was Sie auch tun, prägt die Zukunft. </Li> 
 </ul>
@@ -74,7 +79,7 @@ Der Computer kann Transportunternehmen steuern. Das Programm bietet dafür zwei 
 <li> <strong> mit mehreren Spieler über Lan oder Internet spielen </strong> <br>
 Sind Sie es leid, alleine zu spielen? Mit Simutrans können Sie Multiplayer spielen. Sie können einem öffentlichen Server beitreten und mit Menschen auf der ganzen Welt konkurrieren oder zusammenarbeiten. Sie können das Spiel auf ihren Computer auch als Server starten. Dann können Ihren Freunden bei ihnen mitspielen. Das ist möglich privat im Lan, oder Online und öffentlich im Internet. </li>
 <li> <strong> Hardcore oder Casual? </strong> <br>
-Sie können sich in einem normalen Spiel herausfordern und versuchen, Ihr Unternehmen erfolgreich und reich zu machen. Oder Sie können sich einfach entspannen und Spaß haben, ohne Eile oder Geld zu spielen, nur zu Ihrem Vergnügen und zur Zufriedenheit, alles zu transportieren. </Li> </ul>
+Sie können sich in einem normalen Spiel herausfordern und versuchen, Ihr Unternehmen erfolgreich und reich zu machen. Oder Sie können sich einfach entspannen und Spaß haben, ohne Eile oder Geld zu spielen, nur zu Ihrem Vergnügen und zur Zufriedenheit aller, alles zu transportieren. </Li> </ul>
 
 <h2 class = "bb_tag"> Hilfe zum Spiel </h2>
 <ul class = "bb_ul">
@@ -95,12 +100,14 @@ Simutrans verfügt über viele Konfigurationen, die Sie anpassen können. Wenn S
 Aber wenn Sie die eine oder andere Kleinigkeit stört, es lässt sich fast alles anpassen. Einige Paksets sind Open-Source, das Programm selbst ist es auch. Ihnen stehen im Notfall die gleichen Möglichkeiten offen wie den Spielentwicklern auch. Wo ein Wille ist hier auch ein Weg. Einige Leute sind so zum Team der Spielentwickler gestoßen. </li>
 <li> <strong> Bauen Sie Ihre Welt auf </strong> <br> Wenn Sie ein neues Spiel erstellen, erwarten Sie nicht, dass es sich um eine feste Welt handelt. Sie können die Welt nach Ihren Bedürfnissen gestalten, Straßen, Fabriken, Häuser und Gebäude bauen, das Gelände anheben und absenken, Flüsse, Seen und Meere anlegen oder die Welt verschönern, indem Sie Bäume pflanzen. </Li> </ul>
 
-
 <h2 class = "bb_tag">verfügbare Sprachen</h2>
+<p>
 Simutrans ist in eine Reihe von Sprachen spielbar. Die Übersetzungen wurden von Freiwilligen erstellt.<br>
 Auch du kannst helfen und <a href="https://translator.simutrans.com" target="_blank" rel="noopener"> hier im Translator </a> zu den Übersetzungen beitragen. Sprachen werden auf der Steam-Seite aufgelistet, wenn sie mindestens 80% der Übersetzung von Basistexten und 65% der Übersetzung von pak128 erreichen.
+</p>
 
 <h2 class = "bb_tag"> Geschichte der Simutrans </h2>
+<p>
 Simutrans ist ein Open Source-Spiel, das unter der <a href="https://github.com/aburch/simutrans/blob/master/simutrans/license.txt" target="_blank" rel="noopener"> Artistic License</a> entwickelt wurde . <br>
 Dieses Spiel wurde ursprünglich von Hansjörg Malthaner von 1997 bis 2004 entwickelt. Es wurde 2005 Open Source und wird seit dem vom 'The Simutrans Team' kontinuierlich weiterentwickelt. Es haben inzwischen viele mit geholfen das Spiel zu verbessert .
 </p>

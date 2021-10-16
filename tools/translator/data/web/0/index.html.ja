@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Simutrans Home</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Simutrans, Help, Simutrans Help">
+    <meta name="robots" content="index,follow">
+    <link href="css/style.css" type="text/css" rel="StyleSheet">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> 
+  </head>
+  <body>
+    <img style="margin-left:auto;margin-right: auto;" id="logo" src="img/simutrans.png" alt="SimuTranslator logo" width="50%" height="auto" title="SimuTranslator">   
+    <hr>
+<div align="center">
+<a href="https://sourceforge.net/projects/simutrans/"><img src="img/sourceforge.png" alt="Spiele download sourceforge" title="Simutrans auf SourceForge" ></a> 
+<a href="https://store.steampowered.com/app/434520/Simutrans"><img src="img/steam_jp.png" alt="Spiele auf Steam" title="Simutrans auf Steam" ></a>
+</div>
+
+<div id='width600train3'>
+<h1 align="center"><font size="+3">Simutrans</font></h1>
+<p>
+    <a href="index.html.de">deutsch</a>
+    <a href="index.html.es">español</a>
+    <a href="index.html.pt">português</a>
+    <a href="index.html.ja">日本語</a>
+    <a href="index.html.pl-pl">Polski</a>
+    <a href="index.html.fr">français</a>
+</p>
+
+<p>
+Simutransは、フリーウェア・オープンソースの経営シミュレーションゲームです。ゲームの目的は鉄道･自動車･船舶･飛行機等で旅客の輸送ルートや産業物資を開拓し利益を上げることです。都市、工場、観光名所を接続し、あなたの理想の輸送ネットワークを実現させることができます。<br>
+<br>
+<ul class="bb_ul">
+<li>あなたの理想の運送会社を作ろう！<br></li>
+<li>陸路、空路、水路を駆使して乗客、郵便、貨物を輸送しよう<br></li>
+<li>都市や工場や観光名所を相互に接続しよう<br></li>
+<li>資金と乗り物と輸送量を適切に管理・運用しよう<br></li>
+<li>多くのグラフィックセットが選択可能<br></li>
+<li>どこからでも、世界中の人々と、オンラインで遊ぶことができる</li>
+</ul>
+
+<h2 class="bb_tag">選択可能なグラフィックセット(Pakセット)</h2><br>
+ゲームを始める前にさまざまなグラフィックセット(Pakセットと呼ばれる)を選択できます。Steamでは無料のDLCまたはワークショップアイテムとして入手できます。Pakセットには、ピクセル単位のタイルサイズを表す数字（64、128、192）があります。タイルあたりのピクセル数が多いほど、グラフィックはよりきめ細やかになります。地域・難易度・プレイスタイルetc、プレイヤーの趣向に応じるためにいくつものPakセットが提供されています。<br>
+それらには以下のようなものがあり、DLCとして利用可能です:<br>
+<ul><li><strong>Pak64</strong>: Pak64はSimutransの最初のPakセットです。意図的にコンパクトになっていますが、アドオンによって拡張・カスタマイズが可能です。<br>
+ - <strong>グラフィック</strong>: レトロ調 <br>
+ - <strong>難易度</strong>: 普通。<br>
+<li><strong>Pak64.German</strong>: Pak64.German はドイツをモデルとしています。<br>
+ - <strong>グラフィック</strong>: リアル調 <br>
+ - <strong>難易度</strong>: 難しい。（バランス調整されています）<br>
+<li><strong>Pak128</strong>: Pak128は砂漠からツンドラまで様々な気候をカバーしています。世界中の乗り物があります。<br>
+ - <strong>グラフィック</strong>: リアル調 <br>
+ - <strong>難易度</strong>: 普通。（あまりバランス調整されていません）<br>
+<li><strong>Pak128.German</strong>: Pak128.Germanはドイツに限定された世界感です。<br>
+ - <strong>グラフィック</strong>: リアル調(CG調) <br>
+ - <strong>難易度</strong>: シンプルだけれど幅広い輸送を楽しめます。産業ネットワークはやや複雑です。<br>
+<li><strong>Pak128.Britain</strong>: Pak128.Britainはイギリスをモデルとしています。<br>
+ - <strong>グラフィック</strong>: リアル調。統一感があります。霧の都ロンドンをイメージしています。<br>
+ - <strong>難易度</strong>: ???。古い年代からの多くの乗り物が揃っています。<br>
+<li><strong>Pak192.Comic</strong>: Pak192.Comicは、アニメ調グラフィックにユーモアを交えた独特の世界感を持つ、最も大きなタイルサイズのPakセットです。<br>
+ - <strong>グラフィック</strong>: アニメ調<br>
+ - <strong>難易度</strong>: 他のPakセットとは大きく異なります<br>
+<li><strong>その他</strong>: Pakセットは他にもありますが、長い間更新されていない、最近の更新に対応していない、未完成、などの理由により、DLCには含まれていません。</ul><br>
+
+<h2 class="bb_tag">ゲームシステム</h2>
+<ul class="bb_ul">
+<li><strong>乗り物と貨物</strong><br>
+あなたの会社が成功するかどうかはあなたの行動次第です。Simutransはそのためのツール ─ バス・トラック、鉄道、路面電車、船、飛行機、モノレール、リニアモーターカー、などの水、陸、空用の乗り物があります。それらを上手に使って乗客から郵便、資材から商品まで、あらゆるものを輸送してください。
+</li>
+<li><strong>目的地をもった乗客と貨物</strong><br>
+Simutransの住民や貨物は単純にいつでもあなたの乗り物に飛び乗って乗り物の目的地へ運ばれるわけではありません。彼らにはそれぞれの目的地があります。
+人々は観光名所へ行ったり、買い物に行ったり、友人を訪ねたいと考えて行動します。貨物にも目的地があります。産業は互いに契約を結んでおり、契約外の産業同士での売買を行いません。当然ながら彼らの希望する目的地への輸送を提供しなければ、あなたの運送会社を使おうとはしてくれません。<br></li>
+<li><strong>産業を稼働させる</strong><br>
+貨物を輸送することはお金を得るだけでなく、経済を動かします。輸送により産業ネットワークが稼働すると、生産と販売が開始されます。必要な資材を受け取った工場は新しい製品の生産を開始し、さらに多くの産業を接続できるようになります。<br></li>
+<li><strong>都市への影響</strong><br>
+あなたの交通機関は都市の成長に影響を与えます。輸送された人と物の全ては近隣の都市に影響を与え、成長・繁栄させます。それによって新たなレジャー施設、観光名所が建設される場合があり、新たな人の流れを作るかもしれません。あなたの輸送ネットワークは新しい産業を誘致する機会を増加させるでしょう。しかし良いことばかりではないかもしれません ── 都市が成長するにつれ道路に自動車が増加し、渋滞に悩まされるかもしれません。あなたの行動は全て未来を形作ります。</li></ul>
+
+<h2 class="bb_tag">豊富なカスタマイズ機能</h2>
+<ul class="bb_ul"><li><strong>自由度の高い設定機能</strong><br>
+Simutransには、カスタマイズできる設定項目がたくさんあります。 面倒くさがりな人でも心配しないでください。少しのオプションで十分あなたのプレイスタイルに合わせられます。でもさらに細かく設定することでもっとゲームが楽しめるかもしれません。<br></li>
+<li><strong>マップの生成</strong><br>新しいゲームを始める時、常に同じマップでスタートするわけではありません。 設定をカスタマイズすることで、自動で道路や工場、家々が立ち並び、地形が生成され、川や湖や海ができ、木々が植えられ、あなたのオリジナルのマップが生成されます。</li></ul>
+
+<h2 class="bb_tag">遊び方はいろいろ</h2>
+<ul class="bb_ul"><li><strong>マルチプレイ</strong><br>
+一人で遊ぶのに飽きていませんか？ Simutransはマルチプレイが可能です。公開サーバーに参加して、世界中の人々と競争したり協力したりすることができます。 プライベートオンラインサーバーまたはLANサーバーを作って友達と遊ぶこともできます。<br></li>
+<li><strong>ガッツリ遊ぶ／まったり遊ぶ</strong><br>
+オフラインであなたの目標に向かって会社を成長させることができます。お金や目標を気にせず、ただ「ものを運ぶこと」を楽しむこともできます。.</li></ul>
+
+<h2 class="bb_tag">言語</h2>
+Simutransは<a href="https://translator.simutrans.com" target="_blank" rel="noopener"  >ボランティア</a>によって翻訳された多くの言語の翻訳を提供しています。(Base textsの翻訳率が80%、pak128の翻訳率が65%に達した言語がSteamの対応言語リストに追加されます。)<br>
+
+<h2 class="bb_tag">Simutransの歴史</h2>
+Simutransは<a href="https://github.com/aburch/simutrans/blob/master/simutrans/license.txt" target="_blank" rel="noopener"  >Artistic License</a>のもとで開発されているオープンソースの経営シミュレーションゲームです。<br>
+このゲームは、1997年から2004年にかけてHansjorg Malthanerによって開発され、2005年に現在の「Simutransチーム」に移行しました。それ以来、現在においても継続的にアップデートが続けられています。					
+</p>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 01-04-2019
+---------------------------------
+obj=vehicle
+name=Henschel_DH440C
+waytype=track
+copyright=pumuckl999
+intro_year=1956
+intro_month=4
+retire_year=2009
+retire_month=4
+cost=2343000
+runningcost=23
+fixed_cost=577
+freight=None
+engine_type=diesel
+smoke=smoke_diesel
+speed=60
+gear=190
+weight=40.5
+power=323
+length=7
+sound=diesel.wav
+EmptyImage[S]=Diesellok_Henschel_DH440C.0.0
+EmptyImage[E]=Diesellok_Henschel_DH440C.0.1
+EmptyImage[SE]=Diesellok_Henschel_DH440C.0.2
+EmptyImage[SW]=Diesellok_Henschel_DH440C.0.3
+EmptyImage[N]=Diesellok_Henschel_DH440C.0.4
+EmptyImage[W]=Diesellok_Henschel_DH440C.0.5
+EmptyImage[NW]=Diesellok_Henschel_DH440C.0.6
+EmptyImage[NE]=Diesellok_Henschel_DH440C.0.7
+-----------------------------

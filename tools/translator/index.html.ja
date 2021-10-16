@@ -15,7 +15,8 @@
   <div id='width600train3'>
     This Page in: 
     <a href="index.html.de">Deutsch</a> 
-    <a href="index.html.en">english</a>
+    <a href="index.html.en">English</a>
+    <a href="index.html.es">Español</a> 
     <h1 align="center"><font size="+3">Simutrans</font> </h1>
     <h2 align="center">Simutrans - Translator</h2>
     <p align="center"><font size="+0">ここでSimutransを翻訳できます。</font><br>
@@ -50,8 +51,8 @@
       <a href="https://simutrans.net">Simutrans.net</a><br>
       <a href="https://www.pak128-german.de/">www.pak128-german.de</a><br>
       <a href="https://simutrans.net/help/ja/general.html">Simutrans のヘルプ</a><br>
-      <a href="data/htmlex/en/general.html">Simutrans Extended を拡張して、英語で表示する</a><br>
-      <a href="index.alt.html">のドキュメント Translator</a><br>
+      <a href="data/htmlex/en/general.html">Simutrans Extended の英語ヘルプを表示</a><br>
+      <a href="index.alt.html">Translator のドキュメント</a><br>
       </p>
     </div>
   </div>

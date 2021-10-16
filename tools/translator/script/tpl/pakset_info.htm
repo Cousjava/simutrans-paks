@@ -277,8 +277,9 @@ window.onload = tablecloth;
 <input type="submit" name="obj_s" value="<!--(submit)-->" />
 </p>
 
-<p>
 <!--(if:select_col_nr)-->
+<label for="col_nr" style="display: inline-flex">
+ <p><b><!--(token:field_titel)--></b><br>
   <select name="col_nr" onchange="document.getElementById('obj_s').submit();">
   <!--(list:box_entry)-->
       <!--(item)-->
@@ -286,8 +287,13 @@ window.onload = tablecloth;
 	<!--(enditem)-->
   <!--(endlist)-->  
   </select>
+ </p>
+</label>
 <!--(endif)-->
 <!--(if:select_col_content)-->
+<label for="col_content" style="display: inline-flex;">
+ <p><b><!--(token:field_titel)-->:</b></b><br>
+
   <select name="col_content" onchange="document.getElementById('obj_s').submit();">
   <!--(list:box_entry)-->
       <!--(item)-->
@@ -295,8 +301,10 @@ window.onload = tablecloth;
 	<!--(enditem)-->
   <!--(endlist)-->  
   </select>
+
+ </p>
+</label>
 <!--(endif)-->
-</p>
 </form>
 
 <!--(include:info_box)-->

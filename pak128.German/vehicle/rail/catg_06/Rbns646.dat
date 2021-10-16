@@ -1,0 +1,47 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 18-10-2017
+---------------------------------
+obj=vehicle
+name=Rbns646
+copyright=pumuckl999
+intro_year=2001
+intro_month=2
+cost=5698000
+runningcost=95
+fixed_cost=4627
+waytype=track
+freight=Holz
+payload=50
+speed=120
+weight=29.8
+length=14
+Constraint[Prev][0]=any
+EmptyImage[S]=Rbns646.0.0
+EmptyImage[E]=Rbns646.0.1
+EmptyImage[SE]=Rbns646.0.2
+EmptyImage[SW]=Rbns646.0.3
+EmptyImage[N]=Rbns646.0.4
+EmptyImage[W]=Rbns646.0.5
+EmptyImage[NW]=Rbns646.0.6
+EmptyImage[NE]=Rbns646.0.7
+FreightImagetype[0]=Bretter
+FreightImage[0][S]=Rbns646.1.0
+FreightImage[0][E]=Rbns646.1.1
+FreightImage[0][SE]=Rbns646.1.2
+FreightImage[0][SW]=Rbns646.1.3
+FreightImage[0][N]=Rbns646.1.4
+FreightImage[0][W]=Rbns646.1.5
+FreightImage[0][NW]=Rbns646.1.6
+FreightImage[0][NE]=Rbns646.1.7
+FreightImagetype[1]=Holz
+FreightImage[1][S]=Rbns646.2.0
+FreightImage[1][E]=Rbns646.2.1
+FreightImage[1][SE]=Rbns646.2.2
+FreightImage[1][SW]=Rbns646.2.3
+FreightImage[1][N]=Rbns646.2.4
+FreightImage[1][W]=Rbns646.2.5
+FreightImage[1][NW]=Rbns646.2.6
+FreightImage[1][NE]=Rbns646.2.7
+-----------------------------------------

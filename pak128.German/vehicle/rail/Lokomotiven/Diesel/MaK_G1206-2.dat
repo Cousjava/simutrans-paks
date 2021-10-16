@@ -1,0 +1,29 @@
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 03-10-2021
+----------------------------------
+obj=vehicle
+name=MaK_G_1206-2
+copyright=pumuckl999
+intro_year=2007
+intro_month=4
+cost=5473000
+RunningCost=16
+fixed_cost=408
+waytype=track
+engine_type=diesel
+power=920
+gear=190
+speed=50
+weight=87.3
+length=10
+sound=diesel.wav
+EmptyImage[S]=MaK_G1206-2.0.0
+EmptyImage[E]=MaK_G1206-2.0.1
+EmptyImage[SE]=MaK_G1206-2.0.2
+EmptyImage[SW]=MaK_G1206-2.0.3
+EmptyImage[N]=MaK_G1206-2.0.4
+EmptyImage[W]=MaK_G1206-2.0.5
+EmptyImage[NW]=MaK_G1206-2.0.6
+EmptyImage[NE]=MaK_G1206-2.0.7
+-----------------------------

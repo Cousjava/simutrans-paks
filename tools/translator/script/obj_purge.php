@@ -111,31 +111,9 @@ if (isset($_POST["submit"]) and ($_POST["submit"]=="del all" || $_POST["submit"]
 	  echo "<p class='tight'>Deleting images associated with Set: $vid - $set[1]</p>\n";
 	$tab = 'images_'.$vid;
 
-          // del image files
-        $object_auswahl = db_query("SELECT `object_id` FROM `objects` WHERE `version_version_id`=".$vid." ".$t.";" );
-    	    while ($row = db_fetch_array($object_auswahl)) {
-    	      $query = "SELECT `image_name`, `filename`, `object_obj_type` FROM `".$tab."` WHERE `object_obj_id`=".$row['object_id']." AND `object_version_version_id`=".$vid.";";
-    	      $result = db_query($query);
-   	      	  $image_count = db_num_rows($result);
-   	      
-    	      for ($i=0; $i < $image_count; $i++)
-    	      {
-        		//get the image name and free it from array
-        		$img_n = db_fetch_array($result);
-        		if ( $img_n['filename'] != NULL ) {
-        			$pfad = $imagepfad.$vid."/".$img_n['object_obj_type']."/".$img_n['filename'];
- 					if ( file_exists($pfad) ) { unlink($pfad);  }
-        	  	}
-
-    	      }    
-            }
           // different del for selected objects or all objects
-	  if ( $objtype != 255 ) { 
-            $sql_objects = " AND `object_obj_type`='".$objtype."'";
-          } else {
-            $sql_objects = "";
-          }
-
+	if ( $objtype != 255 ) $sql_objects = " AND `object_obj_type`='".$objtype."'";
+          else                   $sql_objects = "";
 
           $delete_images_q = "DELETE FROM `".$tab."` WHERE object_version_version_id=".$vid.$sql_objects.";";
           $img_res = db_query($delete_images_q);

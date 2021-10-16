@@ -4,7 +4,7 @@
 
   global $current_ob_note, $user, $LNG_EDIT, $LNG_ADMIN, $object_text, $st;
   global $current_ob_name, $current_ob_id, $current_ob_version, $current_ob_obj_type, $current_ob_obj_subtype;
-  global $imagepfad,  $current_ob_copyright,$versions_all;
+  global $htmlpfad, $htmlexpfad,  $current_ob_copyright,$versions_all;
  
   // ----- Create the template object
   $v_template = new PclTemplate();
@@ -20,7 +20,10 @@
   //if ( in_array($current_ob_obj_type, $object_text) ) { $v_att['page']['page_subtitle'] .= ', '.$LNG_EDIT[3].': '.$current_ob_copyright; }
 
   if ( $current_ob_obj_type == 'help_file' )
-  { $file = $imagepfad.$current_ob_version.'/'.$current_ob_name.'.png';
+  {  $html_folder = $htmlpfad;
+    if ( $current_ob_version == HELP_EXTEN_SET_ID ) $html_folder = $htmlexpfad;
+    $file = $html_folder.$st.'/img/'.$current_ob_name.'.png';
+    if ( !file_exists($file) ) $file = $html_folder.'en/img/'.$current_ob_name.'.png';
     if ( file_exists($file) )
     {   $v_att['gen_attr']['show_help_image']['value_img_title'] = $current_ob_name;
         $v_att['gen_attr']['show_help_image']['value_file'] = $file;

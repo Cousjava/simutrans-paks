@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 02-10-2021
+---------------------------------
+obj=vehicle
+name=P3i_Bay92
+copyright=pumuckl999
+intro_year=1892
+intro_month=4
+retire_year=1922
+retire_month=6
+cost=3505000
+runningcost=106
+fixed_cost=3596
+waytype=track
+freight=Post
+payload=50
+speed=90
+weight=13
+length=7
+Constraint[Prev][0]=any
+EmptyImage[S]=P3iBay92.0.0
+EmptyImage[E]=P3iBay92.0.1
+EmptyImage[SE]=P3iBay92.0.2
+EmptyImage[SW]=P3iBay92.0.3
+EmptyImage[N]=P3iBay92.0.4
+EmptyImage[W]=P3iBay92.0.5
+EmptyImage[NW]=P3iBay92.0.6
+EmptyImage[NE]=P3iBay92.0.7
+--------------------------------------

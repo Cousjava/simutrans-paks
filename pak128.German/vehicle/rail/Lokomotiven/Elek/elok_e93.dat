@@ -1,0 +1,32 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 04-10-2021
+#	Letzte Bearbeitung:
+--------------------------------
+obj=vehicle
+name=E93
+copyright=pumuckl999
+intro_year=1933
+intro_month=4
+retire_year=1984
+retire_month=8
+cost=15563000
+runningcost=178
+fixed_cost=4483
+waytype=electrified_track
+power=2214
+gear=180
+speed=65
+weight=117.2
+length=10
+sound=-1
+EmptyImage[S]=elok_e93.0.0
+EmptyImage[E]=elok_e93.0.1
+EmptyImage[SE]=elok_e93.0.2
+EmptyImage[SW]=elok_e93.0.3
+EmptyImage[N]=elok_e93.0.4
+EmptyImage[W]=elok_e93.0.5
+EmptyImage[NW]=elok_e93.0.6
+EmptyImage[NE]=elok_e93.0.7
+-----------------------------

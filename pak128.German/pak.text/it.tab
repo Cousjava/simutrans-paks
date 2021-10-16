@@ -9,7 +9,7 @@
 #                             Language: it Italiano                            #
 #                             Encoding: ISO-8859-1                             #
 #                             Font: Prop-Latin1.bdf                            #
-#                            Date Created: 4.05 2021                           #
+#                           Date Created: 16.10 2021                           #
 #                                                                              #
 ################################################################################
 #____________________________bridge - monorail_track____________________________
@@ -93,7 +93,7 @@ Deposito treni 1
 Airport1920_AirportBlg
 Deposito aereo 1920
 ALP_Bahnhof_HG
-Stazione Alpina Tedesca (centrale)
+Stazione Alpina (prinzipale)
 ALP_Bahnhof_NG
 Stazione Alpina (laterale)
 alter_Bahnhof_Sonneberg

@@ -61,8 +61,6 @@ if ( !file_exists('./lang/'.$st.'/lng_main.php') )  $st = 'en';
 $_SESSION['user_lang'] = $st;
 
 include ('./lang/'.$st.'/lng_main.php');
-include ('./lang/'.$st.'/lng_manage.php');
-include ('./lang/'.$st.'/lng_preferences.php');
 
 $user_type = 'guest';
 if(isset($_SESSION['role'])) $user_type = $_SESSION['role'];

@@ -53,6 +53,8 @@ MGB_Commerzbanktower
 COM_ALL_1997_A_48
 MGB-Main-Tower
 COM_ALL_2000_A_32
+COM_ALL_1800_02_A_08
+COM_ALL_1800_F_08
 #--------------------------------------
 #--------------------------------------
 # factories
@@ -147,6 +149,24 @@ V188a
 V188_erste_Version
 V188b
 V188_erste_Version
+Drehgestell-Flachwagen_Rils653_Stahl
+Rils653_Stahl
+Drehgestell-Flachwagen Sahmms 711
+Sahmms_711
+Drehgestellflachwagen_Snps719_Stahl
+Snps719_Stahl
+Drehgestell-Flachwagen_Rils653_Stueckgut
+Rils653_Stueckgut
+Offener Drehgestellwagen Eanos-x059
+Eanos-x059
+Drehgestell-Flachwagen Rbns641
+Rbns641
+Drehgestell-Flachwagen Rnoos644
+Rnoos644
+Drehgestell-Flachwagen Roos-t645
+Roos-t645
+Drehgestellflachwagen_Snps719_Holz
+Snps719_Holz
 #--------------------------------------
 # vehicles road
 #--------------------------------------

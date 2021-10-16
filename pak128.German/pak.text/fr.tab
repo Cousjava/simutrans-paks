@@ -9,7 +9,7 @@
 #                             Language: fr Francais                            #
 #                             Encoding: ISO-8859-1                             #
 #                             Font: Prop-Latin1.bdf                            #
-#                           Date Created: 25.08 2021                           #
+#                           Date Created: 16.10 2021                           #
 #                                                                              #
 ################################################################################
 #________________________________building - stop________________________________
@@ -182,6 +182,8 @@ DR_Reisezugwagen_Altenberg
 C4i-35a "Altenberger"
 DR118
 DR 118
+Eanos-x059
+Tombereau Eanos-x059
 ES_5530
 tombereau Es
 Flachwagen_catg_01
@@ -224,8 +226,6 @@ Nuernberg-Fuehrter_1.Klasse
 Ludwigsbahn 1re classe
 O-Nuernberg
 tombereau "O Nuremberg"
-Offener Drehgestellwagen Eanos-x059
-Tombereau Eanos-x059
 offener Gueterwagen 1835 Stueckgut
 Tombeaurau 1835
 offener Gueterwagen 1850 Schuettgut

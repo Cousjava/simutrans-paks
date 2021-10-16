@@ -1,7 +1,7 @@
 <?php
 
    
-  $v_att_t['gui_title'] = 'Benutzereinstellungen';
+  $v_att_t['gui_title'] = $LNG_USER[20];
   $v_att_t['gui_subtitle'] = $LNG_USER[19];
 
   $v_att_t['gui_password'] = $LNG_LOGIN[16];

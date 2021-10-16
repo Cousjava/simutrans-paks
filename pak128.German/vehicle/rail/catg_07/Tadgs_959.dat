@@ -1,0 +1,30 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 02-09-2021
+---------------------------------
+obj=vehicle
+name=Gedeckter_Schuettgutwagen_Tadgs959
+copyright=pumuckl999
+intro_year=1972
+intro_month=3
+cost=6188000
+runningcost=113
+fixed_cost=5309
+waytype=track
+freight=Gerste
+payload=55.5
+weight=24.8
+speed=120
+length=13
+sound=-1
+Constraint[Prev][0]=any
+EmptyImage[S]=Tadgs_959.0.0
+EmptyImage[E]=Tadgs_959.0.1
+EmptyImage[SE]=Tadgs_959.0.2
+EmptyImage[SW]=Tadgs_959.0.3
+EmptyImage[N]=Tadgs_959.0.4
+EmptyImage[W]=Tadgs_959.0.5
+EmptyImage[NW]=Tadgs_959.0.6
+EmptyImage[NE]=Tadgs_959.0.7
+--------------------------------------------

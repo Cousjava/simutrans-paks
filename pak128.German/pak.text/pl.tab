@@ -9,7 +9,7 @@
 #                              Language: pl Polski                             #
 #                             Encoding: ISO-8859-2                             #
 #                             Font: prop-latin2.fnt                            #
-#                           Date Created: 25.08 2021                           #
+#                           Date Created: 16.10 2021                           #
 #                                                                              #
 ################################################################################
 #____________________________bridge - monorail_track____________________________
@@ -1114,22 +1114,8 @@ DR714
 DR 714 pasa¿erski
 DR749
 DR 749
-Drehgestell-Flachwagen Rbns641
-platforma Rbns 641
-Drehgestell-Flachwagen Rnoos644
-platforma Rnoos644
-Drehgestell-Flachwagen Roos-t645
-platforma Roos-t645
-Drehgestell-Flachwagen Sahmms 711
-platforma bêbnowa Sahmms 711
-Drehgestell-Flachwagen_Rils653_Stahl
-plandeka Rils 653
-Drehgestell-Flachwagen_Rils653_Stueckgut
-plandeka Rils 653
-Drehgestellflachwagen_Snps719_Holz
-platforma Snps 719
-Drehgestellflachwagen_Snps719_Stahl
-platforma Snps 719
+Eanos-x059
+Otwarty obrotn. Eanos-x059
 ES_5530
 weglarka Es
 ET165_Ende
@@ -1176,6 +1162,8 @@ G11-Wagen
 wielkopojemny Gl11
 G20
 2-os. kryty Kassel G20
+Gbs252_Vieh
+bydlêcy Gbs252
 gedeckter_Gueterwagen1895_Stueckgut
 Kryty 1895
 gedeckter_Gueterwagen1895_Vieh
@@ -1192,8 +1180,6 @@ Gelenkwagen_Sggrss733T2_Kuehlw.
 przegubowa ch³odnia Sggrss 733 ty³
 Gelenkwagen_Sggrss733T2_Stgut
 przegubowy Sggrss 733 ty³
-Geschlossener Gueterwagen Gbs252 Vieh
-bydlêcy Gbs252
 Getreidewagen
 Otw. dach p³ody rolne, 4-os.
 Gleiskraftwagen_SKL26
@@ -1308,8 +1294,6 @@ NGT_Post_Mitte
 NGT pocztowy ¶rodek
 O-Nuernberg
 wêglarka "O Norymberga"
-Offener Drehgestellwagen Eanos-x059
-Otwarty obrotn. Eanos-x059
 offener Gueterwagen 1835 fl.Lebensmittel
 platforma st±giewna 1835
 offener Gueterwagen 1835 Stahl
@@ -1366,16 +1350,26 @@ PrG8Tender
 Pruska G8 - tender
 PwgPr14
 Brankard baga¿owy PwgPr14
+Rbns641
+platforma Rbns 641
 Rekowagen Baag
 przebudowany Baag
 Rekowagen Bghw
 przebudowany Bghw
+Rils653_Stahl
+plandeka Rils 653
+Rils653_Stueckgut
+plandeka Rils 653
 Rmms663Autos
 platforma Rmms 663
 Rmms663Holz
 platforma Rmms 663
 Rmms663Stahl
 platforma Rmms 663
+Rnoos644
+platforma Rnoos644
+Roos-t645
+platforma Roos-t645
 Rungenwagen
 platforma 2-os.
 Rungenwagen KS446
@@ -1388,6 +1382,8 @@ saechsischer_C_Sa_12
 saski C Sa12 3-kl.
 saechsischer_C4ue_sa07
 saski C4ü Sa 07
+Sahmms_711
+platforma bêbnowa Sahmms 711
 Schiebeplanenwagen Shimmns-ttu 722
 plandeka Shimmns-ttu 722
 Schiebewandwagen Hbis 299
@@ -1420,6 +1416,10 @@ Silberlinge_steuerw_Post_BDnf_738
 Silberlinge BDnf738 ster. poczt.
 Silberlinge_steuerw_v_BDnf_738
 Silberlinge BDnf738 ster.
+Snps719_Holz
+platforma Snps 719
+Snps719_Stahl
+platforma Snps 719
 Spirituswagen_1875
 Cysterna destylaty
 Stadler_GTW

@@ -46,7 +46,7 @@ knopf export als csv
   $c_list['building']    = array ('name','image','links','type','waytype','climates','location','level', 'intro','retire', 'dims','chance','passengers','enables','copyright','needs_ground','clusters','dat_file_name','other','comments');
   $c_list['roadsign']    = array ('name','image','links','waytype','intro','retire','cost','copyright','note','other','comments' );
   $c_list['way']         = array ('name','image','links','waytype','system_type','topspeed','intro','retire','cost','maintenance', 'max_weight','copyright','note','other','comments' );
-  $c_list['tunnel']      = array ('name','image','links','waytype','topspeed','intro','retire', 'maintenance','max_lenght','cost','other','comments' );
+  $c_list['tunnel']      = array ('name','image','links','waytype','way','topspeed','intro','retire', 'maintenance','max_lenght','cost','other','comments' );
   $c_list['good']        = array ('name','catg','links','metric','weight_per_unit','value','speed_bonus','mapcolor','note','other','comments' );
   $c_list['menu']        = array ('name','image','type','copyright','note','other','comments' );
   $c_list['rest']        = array ('name','image','links','type','climates','level','intro','retire', 'dims','copyright','note','other','comments' );
@@ -63,6 +63,11 @@ $bits_p_faktor = array();
 $bits_p_faktor['1']  = 4; // pak64         bits_per_month = 20
 $bits_p_faktor['19'] = 2; // pak128        bits_per_month = 19
 $bits_p_faktor['20'] = 4; // pak128.german bits_per_month = 20
+
+// CSV export (exclude this from normal handling, because special handling or none handling)
+$no_csv       = array('csv','image','links','good','input','output');
+$no_csv_title = array('csv','image','links');
+
   
 ////////////////////////////////////////////////////////////////////////////////
 function read_clusters($vid)
@@ -136,7 +141,7 @@ function read_goods ($vid)
 ////////////////////////////////////////////////////////////////////////////////
 function print_table_header ($property_list)
 {
-    GLOBAL $v_att, $LNG_STATS_VEH,$kmh,$csv_t;
+    GLOBAL $v_att, $LNG_STATS_VEH,$kmh,$csv_t,$no_csv_title;
 
     $x = 0;
     foreach ($property_list as $property)
@@ -161,9 +166,9 @@ function print_table_header ($property_list)
         $v_att['tablehead'][$x]['id'] =  $x;
         $v_att['tableheadids'][$x]['id'] =  $x;
         $x++;
-        if ($csv_t != ''and substr($property,0,5) != 'image') $csv_t .= str_replace('&nbsp;',' ',$p).';';
+        if (!in_array($property,$no_csv_title)) $csv_t .= str_replace('&nbsp;',' ',$p).';';
     }
-    if ($csv_t != '') $csv_t .= "\n";
+    $csv_t .= "\n";
 }
 
 function format_b ($betrag)
@@ -189,7 +194,7 @@ function format_l ($links)
 
 
 function factoryio($p,$io_t,$jv,$jb,$f)
-{ global $st,$version_auswahl,$obj_auswahl,$trv,$trb;
+{ global $st,$version_auswahl,$obj_auswahl,$trv,$trb,$csv_t;
   $wert = ''; $b ='';
   foreach ($io_t as $i)
   { $wn = 'nogood'; $wf = 100; $wr = ''; $wrz = '';
@@ -208,8 +213,10 @@ function factoryio($p,$io_t,$jv,$jb,$f)
     if ($wf != 100)     $wert .= '&nbsp;%'.$wf;
     if (strlen($p) >10) $wert .= '&nbsp;('.$wr.') '.sprintf('%03.1f',$wc / $f * (100/$wf));
     $wert .= '</a>';
+    $csv_t .= $b.$wn;
     $b = '<br>';
   }
+  $csv_t .= ';';
   return $wert;  
 }
 
@@ -236,7 +243,7 @@ function print_table_line ($property_list,$ob_id)
 {
     GLOBAL $v_att,$st,$x, $obj_tab,$good_tab, $cat_tab,$wfull,$we,$wg,$sub_waytypes,$makie_way_multi,$bits_p_faktor,
            $version_auswahl,$obj_auswahl,$obj_sub_auswahl,$good_auswahl,$engine_auswahl,$clu_list,
-           $in_out,$climate_auswahl,$cluster_auswahl,$is_displayed,$kmh,$trv,$trb,$csv_t,$makie_p;
+           $in_out,$climate_auswahl,$cluster_auswahl,$is_displayed,$kmh,$trv,$trb,$csv_t,$makie_p,$no_csv;
 
     //fetch some object data stored directly with the object
     $object_properties = db_query2array ("SELECT obj_name, obj_copyright, obj, note, comments, dat_file_name, dat_path  FROM objects WHERE object_id=$ob_id");
@@ -343,12 +350,20 @@ function print_table_line ($property_list,$ob_id)
 
     // check if selected
     if ($obj_auswahl == 'vehicle')
-    { if ($good_auswahl != 255 and $good_auswahl != $category ) return;
+    { if ($good_auswahl != 255)
+      { if ($wfull == 0) 
+        { if ($good_auswahl != $category)                         return;
+        }
+        else
+        { if ($good_auswahl != $category and $category != "None") return;
+        }
+      }
       if ($waytype == 'electrified_track' and $engine_type == '' and $power > 0) $engine_type = 'electric';
       if ($engine_auswahl == $engine_type) ; // ok
       elseif ($engine_auswahl == 255)      ; // ok
-      elseif ($engine_auswahl != 'none')   return;
-      elseif ($engine_type != '')          return;
+      elseif ($engine_auswahl == 'none'    and $engine_type == '' and $power == 0); // ok
+      elseif ($engine_auswahl == 'unknown' and $engine_type == '' and $power != 0); // ok
+      else return;
       if ($wfull > 0 and $power == 0 and $payload > 0) return;
     }
     if ($obj_auswahl == 'factory' and $good_auswahl != 255 and
@@ -383,7 +398,7 @@ function print_table_line ($property_list,$ob_id)
         
     // Berechnung der Kaufpreise 
     if ($obj_auswahl == 'vehicle')
-    { $makie_c = ($power * $speed * 100) + ($weight * 10000)+ ($payload * $speed * 150 * $ertrag);
+    { $makie_c = ($power * $speed * 100) + ($weight * 10000)+ ($payload * $speed * 150 * $ertrag)/2;
       /* 150 ist die von einem Fahrzeug mit Geschwindigkeit 1 km/h in einem Jahr gefahrene Entfernung in Kacheln */
       /* 150 * $speed = vom Fahrzeug in einem Jahr befahrene Anzahl Kacheln */
       /* $payload * $speed * 150 = Beförderte Menge in einem Jahr */
@@ -392,7 +407,7 @@ function print_table_line ($property_list,$ob_id)
       /* Dazu kommen noch extra individuelle Kosten für Leistung Geschwindigkeit und Gewicht. Schwere, starke oder schnell Fahrzeuge kosten also mehr. */
       if ($waytype == 'air')   $makie_c = $payload * $speed * 2 * 150 * $ertrag;
       /* Da bei Fugzeugen die Leistung nicht genau bestimmt ist oder nicht ermittelbar ist wird hier einfach 20% vom Jahreserlös auf 10 Jahre genommen */
-      if ($waytype == 'water') $makie_c = ($power * $speed * 100) + ($payload * $speed * 150 * $ertrag);
+      if ($waytype == 'water') $makie_c = ($power * $speed * 100) + ($payload * $speed * 150 * $ertrag)/2;
       /* Bei Schiffen ist im Pak128.german oft nicht der reale payload sonder ein dem Spiel angemessender Payload angegeben, das führt bei Schiffen zu einer Verzerrung vor allem beim Gewicht.. Das Gewicht wird bei Schiffen deshalb weg gelassen */  
     } elseif (in_array($obj_auswahl, $sub_waytypes))
     { if ($waytype == 'water') $makie_c = $makie_m * 1000;
@@ -437,7 +452,7 @@ function print_table_line ($property_list,$ob_id)
     $makie_rc  = $makie_rcs + $makie_rcl + $makie_rcw + $makie_rcp;
 
     // Berechnen der Fix Kosten
-    $makie_fc = ($payload * $speed * 150 * $ertrag * 1 / (12 * 100)) + $makie_rcs* 100 + $makie_rcl* 100 + $makie_rcw* 100; 
+    $makie_fc = ($payload * $speed * 150 * $ertrag * 2 / (12 * 100)) + $makie_rcs* 100 + $makie_rcl* 100 + $makie_rcw* 100; 
     
     // speichern
     if (in_array('cost_makie',$property_list) and abs($cost - $makie_c) > 2)      $makie_p .= $obj_name.'>'.'cost='.intval($makie_c)."\n";
@@ -475,7 +490,7 @@ function print_table_line ($property_list,$ob_id)
           if (strlen($n) > 40) $n = str_replace('&nbsp;',' ',$n);
           $v_att['tableline'][$x]['object_name'] = $n;
           $v_att['tableline'][$x]['edit_link']   = 'edit.php?obj_id='.$ob_id.'&index='.($x-1);
-          if ($csv_t != '') $csv_t .= $n.';';
+          $csv_t .= $n.';';
           continue;
         } 
         //special attention for comments
@@ -541,8 +556,10 @@ function print_table_line ($property_list,$ob_id)
           foreach (array_merge( array_column($in_t,'good'), array_column($out_t,'good')) as $g)
           { $wert .= $b."<a href='pakset_info.php?lang=$st&vers=$version_auswahl&obj_auw=$obj_auswahl".
                         "&good=$g' target='_blank'>".tr_translate_text($version_auswahl,$g)."</a>";
+            $csv_t .= $b.$g;
             $b = '<br>';
           }
+          $csv_t .= ';';
         }
         
        if ($p_name=='climates')
@@ -577,11 +594,11 @@ function print_table_line ($property_list,$ob_id)
         { if ($power > 0) $wert = $zieht;
           else
           { $wert = "<a href='pakset_info.php?lang=$st&vers=$version_auswahl&obj_auw=$obj_auswahl";
-            if ($obj_sub_auswahl != 255) $wert .= '&obj_sub='.$obj_sub_auswahl;
-            $wert .= '&trange='.max($intro_year,$trv)."-".min($retire_year,$trb).
+            $wert .= '&obj_sub='.$waytype.
+                     '&trange='.max($intro_year,$trv)."-".min($retire_year,$trb).
                      "&kmh=$speed&wfull=".intval($weight_full*100)."&we=".($payload*$ertrag).
                      "&wg=".(($payload*$ertrag)-(2*$makie_rc /*$rcost */)).
-                     '&name='.str_replace('&nbsp;','_',$obj_name)."' target='_blank'> 0 </a>";
+                     '&wg_name='.str_replace('&nbsp;','_',$obj_name)."' target='_blank'> 0 </a>";
           }
         }
         if ($p_name=='schwelle' and $zieht > 0)        $wert = $schwelle;
@@ -645,7 +662,7 @@ function print_table_line ($property_list,$ob_id)
           // if ($p_name=='rcost%en') $wert = intval(($makie_rc * 100) / 1000);
         }
         
-        if ($csv_t != '' and strpos($wert,'<img src=') === false) $csv_t .= str_replace('&nbsp;',' ',$wert).';';
+        if (!in_array($p_name ,$no_csv)) $csv_t .= str_replace('&nbsp;',' ',$wert).';';
         if (strlen($wert) > 3) $wert .= '&nbsp;';
         $v_att['tableline'][$x]['propertylist'][$t]['object_property'] =  $wert;
         $t++;
@@ -653,7 +670,7 @@ function print_table_line ($property_list,$ob_id)
         //delete, so that we can later collect those that were not processed
         $is_displayed[] = $p_name;
     }
-    if ($csv_t != '') $csv_t .= "\n";
+    $csv_t .= "\n";
     $obj_tab[$x-1] = $ob_id;
     $x++;
     return;
@@ -685,12 +702,11 @@ function display_statistics ($property_list)
     //print header - all properties known for vehicles
     //returns the list of property names (for corret order of values)
     $csv_t = ''; $makie_p = '';
-    if (in_array('csv',$property_list)) $csv_t = "sep=;\n";
     $x = 1; $obj_tab = array();
     print_table_header ($property_list);
     while ($row = db_fetch_object($vehicles)) print_table_line ($property_list,$row->object_id);
     db_free_result($vehicles);
-    if ($csv_t)
+    if (in_array('csv',$property_list))
     { $file_name = write_temp_file($v_name.".csv",$csv_t);
       $v_att['csv_file']['txt_csv_file']  = "Datei mit dem Tabelleninhalt als csv"; //$LNG_MAIN[20];
       $v_att['csv_file']['link_csv_file'] = $file_name;
@@ -739,7 +755,7 @@ function select_col($obj_auswahl,$col_auswahl)
   foreach ($col_list as $ck => $ci) $cnr_list["$ck"] = $ck.': '.$ci;
   $cnr_list[] = (count($col_list)  ).': empty';
   $cnr_list[] = (count($col_list)+1).': empty';
-  select_box('select_col_nr',$cnr_list,$col_auswahl,'',-1,'');
+  select_box('select_col_nr',$cnr_list,$col_auswahl,'',-1,'',55);
 
 
   $p_list = read_p_list($obj_auswahl,$col_auswahl);
@@ -751,7 +767,7 @@ function select_col($obj_auswahl,$col_auswahl)
     
   $cs = 255; $cd = 'empty';
   if ($col_auswahl < count($col_list)) { $cs = $col_list[$col_auswahl]; $cd =''; }
-  select_box('select_col_content',$p_list,$cs,'',-1,$cd);
+  select_box('select_col_content',$p_list,$cs,'',-1,$cd,56);
   
   $_SESSION['col_pos'] = $col_auswahl;
   $_SESSION['col_list'.$obj_auswahl] = $col_list;

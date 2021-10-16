@@ -1,0 +1,31 @@
+--------------------------------
+#	PAK128.german
+#	Vehicle: Eisenbahn
+#    Neu: 03-10-2021
+---------------------------------
+obj=vehicle
+name=Gbs254
+copyright=pumuckl999
+intro_year=1961
+intro_month=1
+retire_year=2007
+retire_month=12
+cost=4338000
+runningcost=94
+fixed_cost=3779
+waytype=track
+freight=Papier
+payload=28
+speed=100
+weight=13.8
+length=9
+Constraint[Prev][0]=any
+EmptyImage[S]=Gbs_254.0.0
+EmptyImage[E]=Gbs_254.0.1
+EmptyImage[SE]=Gbs_254.0.2
+EmptyImage[SW]=Gbs_254.0.3
+EmptyImage[N]=Gbs_254.0.4
+EmptyImage[W]=Gbs_254.0.5
+EmptyImage[NW]=Gbs_254.0.6
+EmptyImage[NE]=Gbs_254.0.7
+--------------------------------------

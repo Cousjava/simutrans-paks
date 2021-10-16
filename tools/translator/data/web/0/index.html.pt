@@ -1,17 +1,17 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//PT">
-<html>
+<!DOCTYPE html>
+<html lang="pt">
   <head>
     <title>Simutrans Home</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
     <meta name="keywords" content="Simutrans, Help, Simutrans Help">
     <meta name="robots" content="index,follow">
-    <link href="css/style.css" type="text/css" rel="StyleSheet" />
+    <link href="css/style.css" type="text/css" rel="StyleSheet">
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> 
   </head>
   <body>
-    <img style="margin-left:auto;margin-right: auto;" id="logo" src="img/simutrans.png" alt="SimuTranslator logo" width="50%" height="auto" title="SimuTranslator" />   
-    <hr />
+    <img style="margin-left:auto;margin-right: auto;" id="logo" src="img/simutrans.png" alt="SimuTranslator logo" width="50%" height="auto" title="SimuTranslator">   
+    <hr>
 <div align="center">
 <a href="https://sourceforge.net/projects/simutrans/"><img src="img/sourceforge.png" alt="Spiele download sourceforge" title="Simutrans auf SourceForge" ></a> 
 <a href="https://store.steampowered.com/app/434520/Simutrans"><img src="img/steam_en.png" alt="Spiele auf Steam" title="Simutrans auf Steam" ></a>
@@ -22,6 +22,9 @@
     <a href="index.html.en">english</a>
     <a href="index.html.de">deutsch</a>
     <a href="index.html.es">español</a>
+    <a href="index.html.ja">日本語</a>
+    <a href="index.html.pl-pl">Polski</a>
+    <a href="index.html.fr">français</a>
 </p>
 
 				

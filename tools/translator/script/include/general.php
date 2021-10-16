@@ -311,8 +311,9 @@ function web_file_write($version,$obj_name,$language,$trans_txt)
   $file = fopen($file_name,'wb');
   fputs($file,$trans_txt);
   fclose($file);
-  if ($language == 'en') copy($file_name,$file_name.'-us');
-  if ($language == 'de') copy($file_name,$file_name.'-de');
+  if ($language == 'en')  copy($file_name,$file_name.'-us');
+  if ($language == 'de')  copy($file_name,$file_name.'-de');
+  if ($language == 'pl') rename($file_name,$file_name.'-pl');
 }
 
 // shows the difference between two texts with html colors
@@ -418,7 +419,7 @@ function text_format($form,$box_typ,$text)
     return $n;
   }
   elseif ( $form == 'html' ) return html_format($text);
-  elseif (strlen($text) > 980) // eigentlich 4090 aber wege bug derzeit 980
+  elseif (strlen($text) > 4090) // eigentlich 4090 aber wege bug derzeit 980
   {  $tr_splitt = str_split($text,980);
      return  htmlentities($tr_splitt[0], ENT_QUOTES, "UTF-8").'<br><font color="red">!! TO LONG !!</font><br>'.
              htmlentities($tr_splitt[1], ENT_QUOTES, "UTF-8");

@@ -109,8 +109,9 @@ function select_box_read_trange()
 }
 
 
-function select_box($box_name,$tab,$auswahl,$text,$lng_offset=0,$none_select='')
-{  global $v_att;
+function select_box($box_name,$tab,$auswahl,$text,$lng_offset=0,$none_select='',$field_titel=0)
+{  global $v_att,$LNG_FORM;
+   if ($field_titel > 0) $v_att[$box_name]['field_titel'] = $LNG_FORM[$field_titel];
    $x = 0;
    $sel_tab = array();
    if ($none_select != '')
@@ -224,7 +225,10 @@ function load_engine_tab($vs_id,$obj_auswahl,$obj_sub_auswahl)
        if ($o_t->p_value != 'none') $tab[$pv] = tr_translate_text(0,$pv);
      }
      //check if empty or not
-    if (count($tab) > 0) $tab['none'] = $LNG_STATS_VEH[12];
+    if (count($tab) > 0) 
+    { $tab['none']    = $LNG_STATS_VEH[12];
+      $tab['unknown'] = $LNG_STATS_VEH[13];
+    }
     else                 $tab[255]    = $LNG_EDIT[22];
     $_SESSION[$s] = $tab;
    }
