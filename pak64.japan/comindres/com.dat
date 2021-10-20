@@ -256,6 +256,15 @@ BackImage[0][0][0][0][0][0]=com.1.7
 # no-winter!!!
 --
 Obj=building
+Name=COM_31_07
+Type=com
+Level=7
+intro_year=1981
+chance=15
+BackImage[0][0][0][0][0][0]=com.2.7
+# no-winter!!!
+--
+Obj=building
 Name=COM_34_07
 copyright=gaku
 Type=com
