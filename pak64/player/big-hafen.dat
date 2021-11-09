@@ -205,7 +205,6 @@ capacity=168
 maintenance=1750
 cost=294500
 intro_year = 1810
-copyright=FrankP
 icon=> lakestop.0.5
 cursor=lakestop.0.6
 BackImage[0][0][0][0][0]=lakestop.0.1

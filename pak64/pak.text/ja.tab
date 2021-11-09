@@ -9,7 +9,7 @@
 #                             Language: ja Japanese                            #
 #                                Encoding: UTF-8                               #
 #                                Font: m+10r.bdf                               #
-#                           Date Created: 10.01 2021                           #
+#                            Date Created: 9.11 2021                           #
 #                                                                              #
 ################################################################################
 #____________________________bridge - monorail_track____________________________
@@ -494,6 +494,8 @@ RES_12_03
 この家は容易に拡張できる\nユニークなモジュール式の\nデザインになっています。\nもし、もっと多くの部屋が\n必要なら、あなたは新しい\n部屋を空輸してきて連結す\nることができます。もし、広い家に対する要\n求が少なければ、あなたはいくつかの部屋を\n売り払いさえすることができます。\n
 RES_12_05
 18世紀様式の家
+RES_12_07
+18世紀頃の館
 RES_12_08
 植民地都市部様式の家。
 RES_12_10
@@ -670,6 +672,8 @@ Papierfabrik
 製紙工場
 Pharmaceutics
 製薬会社
+PVkraftwerk
+太陽光発電所
 Raffinerie
 プラスチック精製所
 Rinnenkraftwerk
@@ -884,6 +888,8 @@ Birke-1
 白樺\n
 Buche-1
 ブナの木\n
+Busch_1
+低木
 Busch_2
 灌木\n
 Kiefer_1
@@ -932,8 +938,14 @@ Tanne_6
 モミの木\n
 Tree1
 シナノキ
+Tree10
+トウヒ
+Tree11
+スギ
+Tree12
+スギ
 Tree3
-ギンドロ
+ポプラ
 Tree5
 セイヨウネズ\n
 Tree6
@@ -1069,7 +1081,7 @@ Autotransportanhaenger
 Autotransporter
 自動車運送車
 Book_Trike
-書籍運搬トラック
+三輪貨物自動車
 Bretteranhaenger
 WF Ultd. 板材トレーラー
 Brettertransporter
@@ -1084,6 +1096,8 @@ Buchtransporter
 Serj/H-Trans 書籍輸送トラック
 Buessig
 小型バス
+BuessingLinie
+路線バス
 Bulkcarriage
 馬車用 ばら荷カート
 Bus
@@ -1108,6 +1122,8 @@ Erztransporter
 H-Trans ばら荷トラック
 Fahrradrikscha
 輪タク
+FordZugmaschine
+フォード製トラクター
 GarbageTruck
 清掃車
 Gelenkbus_Ende
@@ -1154,6 +1170,8 @@ Kunststofftransporter
 H-Trans プラスチック運搬トラック
 Mack_Truck_01
 マック・トラック
+Mailtrailer
+郵便用トレーラー
 Milk_Truck
 牛乳トラック
 Oelanhaenger
@@ -1194,8 +1212,20 @@ Stoneanhaenger
 WF Ultd. ばら荷トレーラー
 Stonetransporter
 WF Ultd. ダンプトラック MK2
+T21_bus
+フォード T-21 バス(ディーゼル)
 Tanklastzug
 H-Trans タンクローリー
+TIRMoebelContainer
+家具輸送用コンテナトレーラー
+TIROelContainer
+オイルコンテナトレーラー
+TIRpaper
+紙製品輸送用トレーラー
+TIRPlastikContainer
+プラスチックペレット用コンテナトレーラー
+TIRsteel
+鉄鋼輸送トレーラー
 Trike
 ばら荷運搬トラック
 VolvoFH12
@@ -1210,6 +1240,8 @@ CombinoShortB(Mc)
 コンビーノ 広電5000型B車
 CombinoShortE(T)
 コンビーノ 広電5000型E車
+Lowa
+Lowa 路面電車
 Lowa_Anhaenger
 Lowa (付随車)
 Pferdebahn
@@ -1224,6 +1256,10 @@ Tatra-T4
 タトラ T4型路面電車
 Tatra-T4_Wagon
 タトラ T4型路面電車（付随車）
+TB13
+T-13形 路面電車
+TB24
+T-24形 路面電車
 Tram_GT6_Ende
 デューヴァク GT6型路面電車（後）
 Tram_GT6_Kopf
@@ -1276,10 +1312,18 @@ BB200
 BB200 電気機関車
 Be5-7
 スイスBLS Be 5/7 電気機関車
+Borsig
+Borsig 蒸気機関車
+Borsig Tender
+Borsig蒸気機関車用 炭水車(テンダー)
 Boxcar
 有蓋車
 BR01
 ドイツ国鉄 BR01 テンダー機関車
+Br118DR
+ドイツ国営鉄道 BR118 ディーゼル機関車
+Br234
+ドイツ鉄道 BR234 ディーゼル機関車
 BR38
 ドイツ国鉄 BR38 テンダー機関車
 BR38-Tender
@@ -1302,18 +1346,26 @@ BRV36
 BRV36 ディーゼル機関車
 Buchwagen
 VT Vienna 有蓋貨車
+CarFlat
+車運車(自動車運搬専用貨車)
 Cargosprinter-Front
 ドイツ国鉄 カーゴスプリンター
 Cargosprinter-Mittel
 カーゴスプリンター(中間車)
 Cargosprinter-Steuer
 カーゴスプリンター(後尾車)
+CC7100
+フランス国鉄 CC7100形電気機関車
 Class86
 イギリス国鉄 クラス86
 Cooling_Container
 低温コンテナ車
 Cooling_Waggon
 冷蔵貨車
+Crampton 80 Tender
+Crampton 80形 炭水車
+Crampton No80
+Crampton 80形 蒸気機関車
 DoubleDecker
 ２階建て客車
 E44
@@ -1330,6 +1382,8 @@ F7back
 米国 F7A (後向き)
 Flachwagen
 高速有蓋車
+Grossraumwagen
+Empire "Alto" 旅客車
 H-Trans-Pantheress
 H-Trans Pantheress
 H-Trans-Pantheress-Back
@@ -1368,18 +1422,28 @@ kkStB110
 墺国鉄 110型 蒸気機関車
 kkStB91
 墺国鉄 91型 蒸気機関車
+Klappdeckelwagen
+プラスチックペレット運搬用貨車
 Kohlewagen
 H-Trans 石炭用無蓋車
+Laaekks553_a
+ Laaekks 553 自動車運搬用貨車
 Mailcontainerwagon
 郵便コンテナ貨車
 Mailwagon
 郵便貨車
 Milk_Waggon
 ミルク用タンク車
+MoebelContainer
+家具運搬用コンテナ車
 Moebelwagen
 VT Vienna 軽貨物車
 NeuOelwagen
 新型タンク車
+NS1000
+NS-1000 電気機関車
+NS1600
+NS-1600 電気機関車
 OelContainer
 石油コンテナ車
 Oelwagen
@@ -1404,10 +1468,14 @@ SD40-2-back
 米EMD SD40-2 ディーゼル機関車(後向き)
 SD40-2-front
 米EMD SD40-2 ディーゼル機関車
+SlamdoorExpress
+コンパートメント車(旅客用)
 Stahlwagen
 VT-Vienna鉄鋼貨車
 Staubkesselwagen
 VT-Vienna プラスチック貨車
+The General
+テンダ式蒸気機関車
 TPBeiwagen
 TPI VS98
 TPPassagierwagen
@@ -1442,6 +1510,10 @@ Fishing_Boat
 漁船
 Fishing_Boat_DanMacK
 漁船DanMacK型
+Fishing-Sloop
+漁業用の帆船
+Godm_Spitz
+旅客用クリッパー(快速帆船)
 logs
 木材筏
 Moebelschiff
@@ -1451,7 +1523,9 @@ Oilbarge
 Postschiff
 郵便船
 schooner
-帆船
+スクーナー(帆船の一種)
+Schooner_Bark
+貨物用スクーナー(帆船)
 SlowFerry
 H-Trans 旅客フェリー
 Steamer

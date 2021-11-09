@@ -9,7 +9,7 @@
 #                              Language: ca Catala                             #
 #                             Encoding: ISO-8859-1                             #
 #                             Font: Prop-Latin1.bdf                            #
-#                           Date Created: 10.01 2021                           #
+#                            Date Created: 9.11 2021                           #
 #                                                                              #
 ################################################################################
 #________________________________bridge - power_________________________________
@@ -76,30 +76,72 @@ Vestíbul d'estació
 Ajuntament
 #____________________________________factory____________________________________
 #____________________________________factory____________________________________
+2Raffinerie
+Refineria (gasolina)
+3Raffinerie
+Refineria
+Aufwindkraftwerk
+Central solar de xemeneia
 Autohaus
-Concessionari cotxes
+Concessionari de cotxes
 Autohersteller
-Fàbrica cotxes
+Fàbrica de cotxes
+bakery
+Fleca
+brewery
+Cerveseria
 Buchgrosshandel
-Majorista de llibres
+Llibreria
+cannery
+Conservera
 Cementmill
 Fàbrica de ciment
+ChemicalPlant
+Planta química
 CHEMIST
-Farmàcia (per Seth)
+Farmàcia
 Concretefactory
 Fábrica de formigó
+cow_farm
+Explotació ramadera
+dairy
+Lleteria
 Druckerei
 Impremta
 Erzbergwerk
 Mina de ferro
+fish_pond
+Estany de peixos
+fish_swarm
+Eixam de peixos
+food_processing_plant
+Planta de processament d'aliments
+Geokraftwerk
+Central geotèrmica
+grain_farm
+Granja de gra
+grain_mill
+Molí de gra
+grain_windmill
+Molí de vent
+Incinerator
+Incineradora
 Kohlegrube
 Mina de carbó
 Kohlekraftwerk
 Central tèrmica
+Marketplace
+Mercat
+Materialswholesale
+Majorista de construcció
+Moebelfabrik
+Fàbrica de mobles
 Moebelhaus
 Botiga de mobles
+Muellkraftwerk
+Planta incineradora
 Nutzwald
-Explotac. forestal
+Explotació forestal
 Oelbohrinsel
 Plataforma petrolífera
 Oelfeld

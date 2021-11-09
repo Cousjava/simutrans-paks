@@ -9,7 +9,7 @@
 #                             Language: en English                             #
 #                             Encoding: ISO-8859-1                             #
 #                             Font: Prop-Latin1.bdf                            #
-#                           Date Created: 10.01 2021                           #
+#                            Date Created: 9.11 2021                           #
 #                                                                              #
 ################################################################################
 #____________________________bridge - monorail_track____________________________
@@ -731,15 +731,15 @@ Bulk Goods
 CATEGORY_03
 Oil/Petrol
 CATEGORY_04
-Cooled Goods
+Perishables
 CATEGORY_05
-Fluid Food
+Perishable Liquids
 CATEGORY_06
 Lumber
 CATEGORY_07
 Powder/Pellets
 rolls
- rolls
+Coils
 #________________________________roadsign - air_________________________________
 #________________________________roadsign - air_________________________________
 NoAirEntry
