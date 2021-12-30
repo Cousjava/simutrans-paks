@@ -5,4 +5,3 @@ The <em>Public service</em> wants you to complete the rail network running throu
 <p>
 {tx} Select <em>'{tool2}'</em> from the toolbar and build a <em>Train Depot</em> at {dep}.
 </p>
-

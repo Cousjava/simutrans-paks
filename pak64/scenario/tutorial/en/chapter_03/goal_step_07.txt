@@ -10,7 +10,7 @@ Now you may buy a locomotive. Click on the <em>Locomotives</em> tab and select <
 </p>
 <p>
 Then, click on <em>Schedule</em>. First, select the station at {f2}.<br/>
-<em>--> </em> Set <em>Minimum load</em> at <em>100%</em>."<br/>
+<em>--> </em> Set <em>Minimum load</em> at <em>{load}%</em>."<br/>
 Then select the station in {f3} and click on <em>Start</em>.
 </p>
 <p>

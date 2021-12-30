@@ -1,0 +1,19 @@
+<em>Schritt A</em> - Erster Überblick<br>
+{step_01}
+<em>Schritt B</em> - Der erste Lieferant und sein Verbraucher<br>
+{step_02}
+<em>Schritt C</em> - Baue eine Bahnstecke<br>
+{step_03}
+<em>Schritt D</em> - Und nun ein Stichgleis<br>
+{step_04}
+<em>Schritt E</em> - Baue die erste Haltestelle<br>
+{step_05}
+<em>Schritt F</em> - Erichte eine weitere Haltestelle<br>
+{step_06}
+<em>Schritt G</em> - Baue ein Bahndepot<br>
+{step_07}
+<em>Schritt H</em> - Das erste Fahrzeug<br>
+{step_08}
+<em>Schritt I</em> - Der erste Transport<br>
+{step_09}
+<br>

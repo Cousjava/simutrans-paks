@@ -1,0 +1,8 @@
+<br>
+-- SCRIPT ENDET HIER ---
+Nun wollen wir die Bahnstrecken bis zum Möbelhaus in der
+Stadt {simucity} verlängern.<br>
+Wir bauen die Gleise auf beiden Uferseiten. Im nächsten
+Schritt bauen wir die Brücke.
+
+<br>

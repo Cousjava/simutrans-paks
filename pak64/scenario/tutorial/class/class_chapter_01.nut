@@ -14,25 +14,25 @@ class tutorial.chapter_01 extends basic_chapter
 	
 	comm_script = false
 
-	// Step 1
+	// Step 1 =====================================================================================
 	c_cty = coord(111,184)
 	c_fac = coord(149,200)
 	c_st  = coord(117,197)
-	tx_cty = translate("This is a town centre")
-	tx_fac = translate("This is a factory")
-	tx_st = translate("This is a station")
-	tx_link = translate("This is a link")
+	tx_cty = "This is a town centre"
+	tx_fac = "This is a factory"
+	tx_st = "This is a station"
+	tx_link = "This is a link"
 
-	//Step 2
+	// Step 2 =====================================================================================
 	c_test = coord3d(0,0,1)
 
-	// Step 3
+	// Step 3 =====================================================================================
 	c_buil1=coord3d(113,189,1)
 	c_buil2=coord3d(113,185,1)
-	buil1_name = ""
-	buil2_name = ""
+	buil1_name = ""	//auto started
+	buil2_name = ""	//auto started
 
-	// Step 4
+	// Step 4 =====================================================================================
 	postc={ a = coord(111,184), b = coord(112,185) }
 	city_lim = {a = coord(109,181), b = coord(128,193)}
 	cty1 = {c = coord(111,184), name = ""}
@@ -42,22 +42,22 @@ class tutorial.chapter_01 extends basic_chapter
 		cty1.name = get_city_name(cty1.c)
 		local t1 = my_tile(c_buil1)
 		local buil1 = t1.find_object(mo_building)
-		buil1_name = buil1 ? translate(buil1.get_name()):"No exite"
+		buil1_name = buil1 ? translate(buil1.get_name()):"No existe"
 
 		local t2 = my_tile(c_buil2)
 		local buil2 = t2.find_object(mo_building)
-		buil2_name = buil1 ? translate(buil2.get_name()):"No exite"
+		buil2_name = buil1 ? translate(buil2.get_name()):"No existe"
 		return 0
 	}
 
-	function set_goal_text(text){
+	function set_goal_text(text) {
 		switch (this.step) {
 			case 1:
 				text.pos = c_cty.href("("+c_cty.tostring()+")")
-				text.pos1 = c_cty.href(""+tx_cty+" ("+c_cty.tostring()+")")
-				text.pos2 = c_fac.href(""+tx_fac+" ("+c_fac.tostring()+")")
-				text.pos3 = c_st.href(""+tx_st+" ("+c_st.tostring()+")")
-				text.link = "<a href='script:script_text()'>"+tx_link+"  >></a>"
+				text.pos1 = c_cty.href(""+translate(tx_cty)+" ("+c_cty.tostring()+")")
+				text.pos2 = c_fac.href(""+translate(tx_fac)+" ("+c_fac.tostring()+")")
+				text.pos3 = c_st.href(""+translate(tx_st)+" ("+c_st.tostring()+")")
+				text.link = "<a href='script:script_text()'>"+translate(tx_link)+"  >></a>"
 			break;
 			case 3: 
 				text.pos = "<a href=\"("+c_buil1.x+","+c_buil1.y+")\">"+buil1_name+" ("+c_buil1.tostring()+")</a>"
@@ -79,7 +79,6 @@ class tutorial.chapter_01 extends basic_chapter
 		switch (this.step) {
 			case 1:
 				if (pot0 == 1) {
-					//reset_pot()
 					this.next_step()
 				}
 				return percentage
@@ -92,7 +91,6 @@ class tutorial.chapter_01 extends basic_chapter
 					local del = false
 					local text = "X"
 					label_bord(city_lim.a, city_lim.b, opt, del, text)
-					//reset_pot()
 					this.next_step()
 				}
 				return percentage
@@ -138,7 +136,6 @@ class tutorial.chapter_01 extends basic_chapter
 					pot3=1
 				}
 				if (pot3==1 && pot4==0){
-					//reset_pot()
 					comm_script = false
 					this.next_step()
 				}
@@ -155,7 +152,6 @@ class tutorial.chapter_01 extends basic_chapter
 				}
 
 				if ((pot0 == 1 && next_mark)){
-					//reset_pot()
 					comm_script = false
 					this.next_step()
 				}
@@ -163,7 +159,6 @@ class tutorial.chapter_01 extends basic_chapter
 			case 5:
 				persistent.step=1
 				persistent.status.step = 1
-				//reset_pot()
 				return 100
 			break
 
@@ -224,12 +219,17 @@ class tutorial.chapter_01 extends basic_chapter
 	}
 	
 	function set_all_rules(pl) {
-		local forbid = [4129,tool_build_way,tool_build_bridge,tool_build_tunnel,tool_build_station,tool_remove_way,tool_build_depot,tool_build_roadsign,tool_build_wayobj]
+		local forbid =	[	4129,tool_build_way,tool_build_bridge,tool_build_tunnel,tool_build_station,
+							tool_remove_way,tool_build_depot,tool_build_roadsign,tool_build_wayobj
+						]
 		foreach(wt in all_waytypes)
 			foreach (tool_id in forbid) {
 				rules.forbid_way_tool(pl, tool_id, wt )
 			}
-		local forbid =[tool_remover,tool_set_marker,tool_add_city,tool_plant_tree,tool_add_citycar,tool_buy_house,tool_change_water_height,tool_set_climate,tool_lower_land,tool_raise_land,tool_setslope,tool_restoreslope,tool_make_stop_public,tool_stop_mover,tool_build_transformer,tool_build_station]
+		local forbid =	[	tool_remover,tool_set_marker,tool_add_city,tool_plant_tree,tool_add_citycar,tool_buy_house,
+							tool_change_water_height,tool_set_climate,tool_lower_land,tool_raise_land,tool_setslope, 4137,
+							tool_restoreslope,tool_make_stop_public,tool_stop_mover,tool_build_transformer,tool_build_station
+						]
 		foreach (tool_id in forbid)
 			rules.forbid_tool(pl, tool_id )
 	}
@@ -250,7 +250,6 @@ class tutorial.chapter_01 extends basic_chapter
 			label_bord(city_lim.a, city_lim.b, opt, del, text)
 			pot0=1
 			pot2=1
-			//this.next_step()
 		}
 		else if (this.step==4){
 			comm_script = true

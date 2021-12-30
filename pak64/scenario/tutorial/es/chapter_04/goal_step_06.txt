@@ -1,8 +1,10 @@
-<br>
-Se requiere transportar <em>pasajeros</em> hacia las zonas turÃ­sticas{tur}.<br><br>
-
-Coloque los 3 <em>Muelles</em> de <em>pasajeros</em> en las posiciones indicadas:<br>
-{dock}<br><br>
-
-<st>Se avanza al siguiente paso</st> cuando todos los muelles estÃ©n listos.<br><br>
-
+<p>
+Se necesita transportar <em>pasajeros</em> hacia las zonas turísticas {tur}.
+</p>
+<p>
+Coloque los {nr} <em>Muelles de pasajeros</em> en las posiciones indicadas:<br>
+{dock}
+</p>
+<p>
+<st>Se avanza al siguiente paso</st> cuando todos los muelles estén listos.
+</p>

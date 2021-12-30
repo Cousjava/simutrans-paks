@@ -1,13 +1,19 @@
-{scr}<br>
-{txtst_01}Paso A</em> - Sobre el Escenario Tutorial</a><br>
+<p>
+{scr}
+</p>
+<p>
+{txtst_01}Paso A</em> - Sobre el Escenario Tutorial<br>
 {step_01}
-
-{txtst_02}Paso B</em> - Explorando</a><br>
+</p>
+<p>
+{txtst_02}Paso B</em> - Moviéndose alrededor<br>
 {step_02}
-
-{txtst_03}Paso C</em> - Mirando los detalles</a><br>
+</p>
+<p>
+{txtst_03}Paso C</em> - Viendo los detalles<br>
 {step_03}
-
-{txtst_04}Paso D</em> - El minimapa y otras ventanas</a><br>
+</p>
+<p>
+{txtst_04}Paso D</em> - El minimapa y otras ventanas<br>
 {step_04}
-<br>
+</p>

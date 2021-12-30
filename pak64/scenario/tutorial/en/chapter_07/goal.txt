@@ -1,20 +1,20 @@
 <p>
-{txtst_01}Step A{txtst_01e} - The buse of the city I<br/>
+{txtst_01}Step A</em> - The buses of the city I<br/>
 {step_01}
 </p>
 <p>
-{txtst_02}Step B{txtst_02e} - The buse of the city II<br/>
+{txtst_02}Step B</em> - The buses of the city II<br/>
 {step_02}
 </p>
 <p>
-{txtst_03}Step C{txtst_03e} - The buse of the city III<br/>
+{txtst_03}Step C</em> - The buses of the city III<br/>
 {step_03}
 </p>
 <p>
-{txtst_04}Step D{txtst_04e} - The buse of the city IV<br/>
+{txtst_04}Step D</em> - The buses of the city IV<br/>
 {step_04}
 </p>
 <p>
-{txtst_05}Step E{txtst_05e} - End Scenario<br/>
+{txtst_05}Step E</em> - End Scenario<br/>
 {step_05}
 </p>

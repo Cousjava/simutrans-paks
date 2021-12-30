@@ -1,4 +1,3 @@
-<br>
-Se requiere transportar productos agr√≠cola <em>({good1})</em> desde la {f1} hasta el {f2} para la producci√≥n de harina de <em>({good2})</em>.<br><br>
+<p><br>Para la producciÛn de harina de {good2}, necesitar·s transportar <em>grano</em> desde {f1} hasta {f2}.<br><br>
 
-{tx} Use la Herramienta de exploraci√≥n sobre la {f2} para mostrar los detalles.<br><br>
+{tx} Usa la <em>'{tool1}'</em> en {f2} para mostrar los detalles</p>

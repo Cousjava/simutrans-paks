@@ -1,11 +1,11 @@
-<br>
-El <em>Servicio Publico</em> necesita que completes la red ferroviaria que recorre las ciudades de:<br>
-<em>{cy2}</em> {co2}<br>
-<em>{cy1}</em> {co1}<br>
-<em>{cy3}</em> {co3}<br>
-<em>{cy4}</em> {co4}<br><br>
-
-{tx} Coloque todas las <em>SeÃ±ales de Paso</em> en los puntos indicados.<br><br>
-
-{sig}<br>
-
+<p>
+El <em>Servicio Público</em> necesita que completes la red ferroviaria que recorre las siguientes ciudades de:<br>
+<em>{cy2}</em> {co2}, <em>{cy1}</em> {co1}, <em>{cy3}</em> {co3}, <em>{cy4}</em> {co4}, <em>{cy5}</em> {co5}.
+</p>
+<p>
+{tx} Selecciona <em>'{tool2}'</em> en la barra de herramientas y construye <em>Señales</em> en los puntos indicados.<br>
+{sig}
+</p>
+<p>
+<em>Nota:</em> Pulsa varias veces con la herramienta de señales para ajustar la dirección apropiadamente.
+</p>

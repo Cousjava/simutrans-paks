@@ -1,6 +1,13 @@
-<br>
-Se requiere transportar productos agrÃ­cola <em>({good1})</em> desde la {f1} hasta el {f2} para la producciÃ³n de harina de <em>({good2})</em>.<br><br>
-
-{tx} Usando la herramienta de <em>"Rieles"</em> construya una via de tren que conecte los dos puntos entre {w1} y {w2}.<br><br>
-
-<st>Nota:</st> Los rieles se encuentran en el menu de <em>"Ferrocarriles"</em> ubicado en la barra de herramientas.<br><br>
+<p>
+Para la producción de <em>{good2}</em>, necesitarás transportar <em>{good1}</em> desde {f1} hasta {f2}.
+</p>
+<p>
+{tx} Selecciona <em>'{tool2}'</em> en la barra de herramientas y construye una vía de tren que conecte los dos puntos entre {w1} y {w2}.
+</p>
+<p>
+<h1>Vías de tren</h1>
+Hay varios tipos de vías de tren para diferentes velocidades (desde 60 hasta 200 km/h), deberías tener en cuenta que las vías de alta velocidad son mucho más caras, así que te recomendamos usar vías de 60 o 80 km/h...
+</p>
+<p>
+Conecta la vía aquí: {cbor}
+</p>

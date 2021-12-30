@@ -1,4 +1,6 @@
-<br>
-Se requiere transportar productos agrÃ­cola <em>({good1})</em> desde la {f1} hasta el {f2} para la producciÃ³n de harina de <em>({good2})</em>.<br><br>
-
-{tx} Coloque un tramo de rieles desde {w1} hasta {w2}.<br><br>
+<p>
+Para la producción de <em>{good2}</em>, necesitarás transportar <em>{good1}</em> desde {f1} hasta {f2}.
+</p>
+<p>
+{tx} Selecciona <em>'{tool2}'</em> en la barra de herramientas y construye una vía de tren desde {w1} hasta {w2}.
+</p>

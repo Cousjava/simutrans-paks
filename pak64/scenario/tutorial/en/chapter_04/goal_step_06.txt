@@ -8,4 +8,3 @@ Place {nr} <em>Docks</em> of <em>passengers</em> at the indicated positions:<br/
 <p>
 <st>Advance to the next step </st> when all the springs are ready.
 </p>
-

@@ -1,7 +1,15 @@
-<br>
-El puente que conectaba la Ciudad {name} con un pequeÃ±o distrito, recientemente fue demolido.<br> 
-La Ciudad {name} necesita que construyas un puente entre {bpos1} y {bpos2} para unirlos nuevamente.<br><br>
-
-Hay dos formas de lograr esto...<br>
-<em>[1] </em> Puedes hacer click izquierdo en cualquiera de las dos laderas.<br>
-<em>[2] </em> Mantenga el click izquierdo presionado y arrastre el puente de una ladera hacia la otra.<br><br>
+<p>
+El puente hacia uno de los suburbios exteriores fue arrasado recientemente, <br>
+y a la ciudad de {name} le gustaría que reconectaras dicho suburbio construyendo un puente entre {bpos1} y {bpos2}.
+</p>
+<p>
+Los puentes también se encuentra se encuentra en la barra de herramientas <em>'{tool2}'</em>.
+</p>
+<p>
+Hay dos formas de lograr esto. Primero selecciona la herramienta de puente de 50 km/h en Herramientas de Carretera, y luego...<br>
+<em>[1]</em> Puedes construir el puente pulsando sobre una de las pendientes opuestas.<br>
+<em>[2]</em> Puedes colocar el puente arrastrando el cursor desde una pendiente en cualquiera de los lados hasta la pendiente opuesta.
+</p>
+<p>
+Para continuar, construye un puente en {bpos1}.
+</p>

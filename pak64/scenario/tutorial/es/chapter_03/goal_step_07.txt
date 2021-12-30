@@ -1,18 +1,24 @@
-<br>
-Se requiere transportar <em>{good2}</em> desde el {cmi} hasta la {cba} en la Ciudad de <em>{cy1}</em>.<br><br>
-
-<em>[1]</em> Construya un tramo de rieles entre {w1} y {w2}.<br>
-<em>[2]</em> Coloque la <em>Cochera Ferroviaria</em> en: {way1}.<br>
-<em>[3]</em> Ahora debe comprar una locomotora, presione en la pestaÃ±a <em>Locomotoras</em> y seleccione un <em>{loc2}</em>.<br>
-<em>[4]</em> Seleccione <em>{wag}</em> vagones para <em>{good2}</em> <st>(no deben exceder de {tile} Casillas de EstaciÃ³n)</st> y presione <em>Enrutar</em>.<br><br>
-
-En la ventana <em>Enrutar</em> seleccione la estaciÃ³n en el {cmi} y coloque <em>Carga MÃ­n.</em> en <em>100%</em>.<br>
-Ahora seleccione la estaciÃ³n en la {cba} y presione <em>Arrancar</em>.<br><br>
-
-<em>Consejo:</em> Use el filtro para mostrar solo los vehÃ­culos para <em>{good2}</em>.<br><br>
-
-Se avanza al siguiente paso cuando el {cba} reciba <em>{t_reach}t</em> de <em>{good2}</em>.<br><br>
-
+<p>
+Necesitas transportar <em>{good2}</em> desde {f2} hasta {f3} en <em>{cy1}</em>.
+</p>
+<p>
+<em>[1]</em> Construye un tramo de vía de tren entre {w1} y {w2}.<br>
+<em>[2]</em> Coloca el <em>Depósito de Trenes</em> en: {way1}.<br>
+</p>
+<p>
+Ahora debes comprar una locomotora, presiona en la pestaña <em>Locomotoras</em> y selecciona una locomotora <em>{loc2}</em>. Añade <em>{wag}</em> vagones que puedan transportar <em>{good2}</em> en la pestaña de <em>Vagones</em>.
+</p>
+<p>
+En la ventana <em>Itinerario</em> selecciona la estación en {f2}.<br>
+<em>--></em> Configura <em>Carga mínima</em> al <em>{load}%</em>.<br>
+Ahora selecciona la estación en {f3} y presiona <em>Arrancar</em>.
+</p>
+<p>
+<em>Consejo:</em> Usa el filtro para mostrar solo los vagones para <em>{good2}</em>.
+</p>
+<p>
+Se avanza al siguiente paso cuando el {f3} reciba <em>{t_reach}t</em> de <em>{good2}</em>.
+</p>
+<p>
 <em>Cantidad recibida:</em> <st>{reached}t</st>
-<br><br>
-
+</p>

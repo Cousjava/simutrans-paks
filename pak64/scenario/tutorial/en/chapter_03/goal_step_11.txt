@@ -13,7 +13,7 @@ The first step to use these trains is to electrify all the tracks, then in the d
 <p>
 Now you may assemble a electrify train for transport <em>passenger</em>.<br/>
 <em>[1]</em> After opening the train depot's window, select the locomotive <em>{loc3}</em> in the Locomotives tab.<br/>
-<em>[2]</em> Now select <em>6</em> Wagons for <em>passenger</em> in the <em>Cars</em> tab <st>(The train may not be longer than 4 tiles)</st>.<br/>
+<em>[2]</em> Now select <em>{wag}</em> Wagons for <em>passenger</em> in the <em>Cars</em> tab <st>(The train may not be longer than {tile} tiles)</st>.<br/>
 
 <p>
 <em>Tip:</em> Use the filter to only show passenger vehicles.
@@ -28,19 +28,19 @@ Now you may assemble a electrify train for transport <em>passenger</em>.<br/>
 
 <p>
 <em>[4]</em> After adding the stops, select the stop <em>{stnam}</em> from the list and configure as follows:<br>
-<em> -> [a]</em> The <em>Minimum load</em> at <em>100%</em>.<br>
-<em> -> [b]</em> The <em>Month Wait Time</em> to <em>1/4</em>.<br>
+<em>--> [a]</em> Set <em>Minimum load</em> to <em>{load}%</em>.<br>
+<em>--> [b]</em> Set <em>Depart after</em> to <em>{wait}</em>.<br/>
 </p>
 
 <h1>Copy convoy:</h1>
 This button allows you to copy the vehicle, including its schedule or line.
 </p>
 <p>
-- Press the <em>Copy convoy</em> button to get a total of 4 <em>Trains</em>.
+- Press the <em>Copy convoy</em> button to get a total of [{cnr}] <em>Trains</em>.
 </p>
 <p>
 <h1> Start trains: </h1>
-Once you have the <em>[4]</em> trains set up correctly, it's time to press the <em>Start</em> button.
+Once you have the <em>[{cnr}]</em> trains set up correctly, it's time to press the <em>Start</em> button.
 </p>
 <p>
 <st>Advances to the next chapter</st> when all vehicles are in circulation.

@@ -1,0 +1,8 @@
+<br>
+Um den Zug verlängern zu können, schicken wir diesen in das Depot.
+Zwei weitere Waggons anhängen. Des weiteren wollen wir den Fahrplan
+ändern.
+Dann einer Linie Zuseien, da wir gleich einen weiteren Zug für diese
+Aufgabe einsetzen wollen. Der Linie einen sinnvollen Namen geben.<br>
+Zug wieder starten.<br>
+<br>

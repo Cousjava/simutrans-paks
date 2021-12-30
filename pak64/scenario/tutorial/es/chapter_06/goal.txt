@@ -1,15 +1,16 @@
-
-{txtst_01}Paso A</em> - El primer Aeropuerto</a><br>
+<p>
+{txtst_01}Paso A</em> - El primer Aeropuerto<br>
 {step_01}
-
-{txtst_02}Paso B</em> - El Avion va a despegar</a><br>
+</p>
+<p>
+{txtst_02}Paso B</em> - El Avión está a punto de despegar<br>
 {step_02}
-
-{txtst_03}Paso C</em> - Line de Autobuses del Aeropuerto parte I</a><br>
+</p>
+<p>
+{txtst_03}Paso C</em> - Línea de Autobuses del Aeropuerto parte I<br>
 {step_03}
-
-{txtst_04}Paso D</em> - Line de Autobuses del Aeropuerto parte II</a><br>
+</p>
+<p>
+{txtst_04}Paso D</em> - Línea de Autobuses del Aeropuerto parte II<br>
 {step_04}
-
-
-<br>
+</p>

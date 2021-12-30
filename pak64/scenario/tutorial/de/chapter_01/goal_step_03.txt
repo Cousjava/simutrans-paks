@@ -1,0 +1,9 @@
+<br>
+Baue eine einspurige Bahnstecke vom Nutzwald zum Sägewerk {rect}.<br>
+<br>
+Öffne dazu die Werkzeugleiste "Eisenbahnbau" am oberen Bildschirmrand.
+Wähle in dieser Leiste "Schienen ohne Unterbau". Bewege den Mauszeiger
+an die Position von wo du bauen möchtest. Drück die linke Maustaste und
+halte sie gedrückt, bewege den Mauszeiger zu der stelle bis wo gebaut werden
+soll. Lass die Maustaste los.<br>
+<br>

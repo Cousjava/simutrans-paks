@@ -1,26 +1,35 @@
-La ciudad {name} necesita que le construyas un linea de autobuses<br>
-{scr}<br>
-{txtst_01}Paso A</em> - Construyendo un Tramo de Carretera</a><br>
+<p>
+{scr}
+</p>
+<p>
+{txtst_01}Paso A</em> - Construyendo un Tramo de Carretera<br>
 {step_01}
-
-{txtst_02}Paso B</em> - Construyendo un Deposito de Carretera</a><br>
+</p>
+<p>
+{txtst_02}Paso B</em> - Construyendo un Depósito de Carretera<br>
 {step_02}
-
-{txtst_03}Paso C</em> - Colocando Paradas de Autobuses</a><br>
+</p>
+<p>
+{txtst_03}Paso C</em> - Colocando Paradas de Autobuses<br>
 {step_03}
-
-{txtst_04}Paso D</em> - Arrancado el Primer AutobÃºs</a><br>
+</p>
+<p>
+{txtst_04}Paso D</em> - Arrancado el Primer Autobús<br>
 {step_04}
-
-{txtst_05}Paso E</em> - Construyendo un Puente</a><br><em>
+</p>
+<p>
+{txtst_05}Paso E</em> - Construyendo un Puente<br>
 {step_05}
-
-{txtst_06}Paso F</em> - Conectando el Muelle en Construccion</a><br>
+</p>
+<p>
+{txtst_06}Paso F</em> - Conectando el Muelle en Construcción<br>
 {step_06}
-
-{txtst_07}Paso G</em> - Conectando las Ciudades</a><br>
+</p>
+<p>
+{txtst_07}Paso G</em> - Conectando las Ciudades<br>
 {step_07}
-
-{txtst_08}Paso H</em> - Creando Paradas PÃºblicas</a><br>
+</p>
+<p>
+{txtst_08}Paso H</em> - Creando Paradas Públicas<br>
 {step_08}
-<br>
+</p>

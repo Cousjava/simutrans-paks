@@ -1,10 +1,13 @@
-<br>
-Ahora que el puente fue reparado, la ciudad <em>{name}</em> necesita una linea de autobÃºs que conecte con La ciudad <em>{name2}</em>.<br><br>
-{tx} Primero debes colocar las paradas en Ciudad <em>{name2}</em>.<br>
 <p>
-Stops list:<br/>
+Ahora que el puente ha sido reparado, la ciudad <em>{name}</em> necesita una linea de autobús que conecte con la Ciudad vecina de <em>{name2}</em>.
+</p>
+<p>
+{tx} Primero debes colocar las paradas en <em>{name2}</em>.
+</p>
+<p>
+Lista de paradas:<br>
 {list}
 </p>
 <p>
-<st>Se avanza al siguiente paso</st> cuando el autobÃºs llegue a la nueva parada en <em>{name2}</em>.
+<st>Se avanza al siguiente paso</st> cuando el autobús arranque desde el <em>depósito</em>.
 </p>

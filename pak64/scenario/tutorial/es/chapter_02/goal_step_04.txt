@@ -1,14 +1,18 @@
-<br>
-Ahora que las paradas estÃ¡n colocadas, necesitas comprar un <em>AutobÃºs</em> para iniciar el servicio de transporte.<br><br>
-
-<em>[1]</em> Usando la herramienta de <em>ExploraciÃ³n (tecla [a])</em> haga clic en el <em>Deposito de Carretera</em>{pos} y en la ventana del deposito elija el <em>AutobÃºs {bus1}</em>.<br>
-<em>[2]</em> Para configurar la ruta del vehÃ­culo, primero debe hacer clic en el boton <em>Enrutar</em>.<br>
-<em>[3]</em> Con la ventana <em>Enrutar</em> abierta, ahora debes seleccionar en orden todas la paradas de la ciudad para aÃ±adirlas a la lista:<br>
-{list}<br>
-<em>[4]</em> DespuÃ©s de aÃ±adir las 7 paradas, seleccione la parada <em>{stnam}</em> de la lista y configure de la siguiente forma:<br>
-<em>--> [a]</em> La <em>Carga (MÃ­n)</em> al <em>100%</em>.<br>
-<em>--> [b]</em> <em>Esperar (Meses)</em> a <em>1/16</em>.<br>
-<em>[5]</em> Ahora haga clic en el botÃ³n <em>Arrancar</em> para que el vehÃ­culo salga del deposito.<br><br>
-
-<st>Se avanza al siguiente paso</st> cuando el autobÃºs llegue a la primera parada de la lista.<br><br>
-
+<p>
+Ahora que las paradas están colocadas, necesitas comprar un <em>Autobús</em> para dar servicio.
+</p>
+<p>
+<em>[1]</em> Usando la <em>'{tool1}'</em> pulse sobre el <em>Depósito de Carretera</em>{pos} y en la ventana del depósito elige el <em>Autobús {bus1}</em>.<br>
+<em>[2]</em> Para configurar la ruta del vehículo, primero debes pulsar sobre el botón <em>Itinerario</em> para abrir la ventana del vehículo.<br>
+<em>[3]</em> En la pestaña de <em>Itinerario</em>, ahora debes seleccionar en orden todas la paradas de la ciudad para añadirlas a la lista:<br>{list}<br>
+<em>[4]</em> Después de añadir las {nr} paradas, selecciona la parada <em>{stnam}</em> de la lista y configura la parada de la siguiente forma:<br>
+<em>--> [a]</em> Configura <em>Carga mínima</em> al <em>{load}%</em>.<br>
+<em>--> [b]</em> Configura <em>Salir después de</em> a <em>{wait}</em>.<br>
+<em>[5]</em> Ahora cierra la ventana del vehículo y pulsa sobre el botón <em>Arrancar</em> para que el vehículo salga del depósito.
+</p>
+<p>
+<em>Consejo:</em> Presiona las teclas <em>[Ctrl]+["]</em> para ocultar los edificios urbanos.
+</p>
+<p>
+<st>Se avanza al siguiente paso</st> cuando el autobús llegue a la primera parada de la lista.
+</p>

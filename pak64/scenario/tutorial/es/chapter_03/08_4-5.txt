@@ -1,1 +1,22 @@
-<br>El <em>Servicio Publico</em> necesita que completes la red ferroviaria que recorre las ciudades de:<br><em>{cy2}</em> {co2}, <em>{cy1}</em> {co1}, <em>{cy3}</em> {co3}, <em>{cy4}</em> {co4}, <em>{cy5}</em> {co5}.<br><br><p>{tx} ConstrucciÃ³n de tÃºneles con pendientes:<br>[1] Active el <em>Modo sub. por capas</em> y establezca el nivel de capa en <em> {lev} </em>.<br>[2] Ahora construya un segmento de tÃºnel en {tunn}.<br>[3] Levanta el suelo usando {tool3} en {tunn}.</p><p>Debe repetir el proceso hasta obtener la altura correcta: <em>[Z = {mx_lvl}]</em></p><p>Lista de tunel:<br>{list}</p><p>Puede activar el <em>Modo sub. por capas</em> presionando <em>[ctrl] + U</em> o yendo a la configuraciÃ³n de <em>Pantalla</em>.<br/>Mientras estÃ© en <em>Modo sub. por capas</em> puede:<br/><em>[1]</em> Ir un nivel mÃ¡s profundo presionando <em>[+]</em>.<br/><em>[2]</em> Sube un nivel mÃ¡s alto presionando <em>[-]</em>.</p><p><st>Nota:</st> Al construir estructuras complicadas en varias capas, se recomienda utilizar <em>Modo sub. por capas</em>.</p>
+<p>
+El <em>Servicio Público</em> necesita que completes la red ferroviaria que recorre las siguientes ciudades de:<br>
+<em>{cy2}</em> {co2}, <em>{cy1}</em> {co1}, <em>{cy3}</em> {co3}, <em>{cy4}</em> {co4}, <em>{cy5}</em> {co5}.,.
+</p>
+<p>
+{tx} Ajusta el nivel de la capa a <em>{lev}</em>, y conecta el <em>túnel</em> {t1} con la otra entrada en {t2}.
+</p>
+<p>
+Puedes activar la <em>Vista Subterránea</em> presionando <em>[Mayús] + U</em> o en la configuración de <em>Pantalla</em>.</br>
+Puedes activar la <em>Vista Subterránea por Capas</em> presionando <em>[Ctrl] + U</em> o en la configuración de <em>Pantalla</em>.
+</p>
+<p>
+Con la <em>Vista Subterránea por Capas</em> activada puedes:<br>
+<em>[1]</em> Bajar un nivel pulsando <em>[+]</em>.<br>
+<em>[2]</em> Subir un nivel pulsando <em>[-]</em>.
+</p>
+<p>
+<st>Nota:</st> Cuando construyes estructuras complejas en varias capas, es recomendable usar la <em>Vista Subterránea por Capas</em>.
+</p>
+<p>
+<st>Advertencia: En este punto, debe mantener la tecla Ctrl presionada para extender el túnel.</st>
+</p>

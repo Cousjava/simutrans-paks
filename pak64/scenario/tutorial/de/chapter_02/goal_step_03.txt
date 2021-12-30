@@ -1,0 +1,6 @@
+<br>
+Da wir die Zuglänge gleich auch auf zwei Felder verlängern wollen bauen
+wir nun eine Haltestellen mit der Länge von zwei Felden am Möbelhaus.
+Auch hier muss die Haltestelle wieder für Warengüter geeignet sein.
+<br>
+<br>

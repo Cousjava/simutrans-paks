@@ -1,10 +1,12 @@
-<br>
-Estas ventanas son de mucha utilidad.<br>
-<br>
-El <em>'minimapa'</em> Esta ventana puede ser mostrada presionado la tecla "m".<br>
-Las <em>'finanzas'</em> Esta ventana puede ser mostrada presionado la tecla "f".<br>
-El <em>'buzÃ³n'</em> Esta ventana puede ser mostrada presionado las teclas "[Shift]+b".<br>
-La informaciÃ³n detallada de las ciudades puede ser mostrada haciendo click en el <em>Ayuntamiento</em> usando la herramienta de exploraciÃ³n.<br>
-<br>
-Para avanzar al siguiente capitulo, haga click en {pos2} de {town}<br>
-<br>
+<p>
+Hay una serie de ventanas contiene información esencial.
+</p>
+<p>
+El <em>'Minimapa'</em> se puede mostrar presionando la tecla "m".<br>
+La ventana de <em>'Finanzas'</em>  se puede mostrar presionando la tecla "f".<br>
+El <em>'Buzón'</em> se puede mostrar pulsando "[Mayús]+b".<br>
+Más información sobre la ciudad está disponible pulsando sobre el <em>'Ayuntamiento'</em> con la <em>'{tool1}'</em>.
+</p>
+<p>
+Para avanzar al siguiente capítulo, pulsa en {pos2} de {town} usando la <em>'{tool1}'</em>.
+</p>

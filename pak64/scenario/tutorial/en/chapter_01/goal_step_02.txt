@@ -16,4 +16,3 @@ Try zooming in and out and moving about the map.
 <p>
 <st>To proceed to the next step</st>, rotate the map.
 </p>
-

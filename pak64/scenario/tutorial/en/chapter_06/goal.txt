@@ -1,14 +1,16 @@
-
-{txtst_01}Step A</em> - The first Airport</a><br>
+<p>
+{txtst_01}Step A</em> - The first Airport<br>
 {step_01}
-
-{txtst_02}Step B</em> - The Plane is about to take off</a><br>
+</p>
+<p>
+{txtst_02}Step B</em> - The Plane is about to take off<br>
 {step_02}
-
-{txtst_03}Step C</em> - Airport Bus Line part I</a><br>
+</p>
+<p>
+{txtst_03}Step C</em> - Airport Bus Line part I<br>
 {step_03}
-
-{txtst_04}Step D</em> - Airport Bus Line part II</a><br>
+</p>
+<p>
+{txtst_04}Step D</em> - Airport Bus Line part II<br>
 {step_04}
-
-<br>
+</p>

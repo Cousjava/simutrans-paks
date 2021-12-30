@@ -1,18 +1,22 @@
-En este capitulo vamos a mejorar la eficiencia de nuestras cadenas industriales, trasportando <em>pasajeros</em>, <em>correo</em> y <em>energia electrica</em>.<br><br>
+<p>
+En este capítulo vamos a mejorar la eficiencia de nuestras cadenas industriales, trasportando <em>pasajeros</em>, <em>correo</em> y <em>energía eléctrica</em>
+</p>
 <p>
 {scr}
 </p>
-{txtst_01}Paso A</em> - Produccion y Consumo Electrico</a><br>
+<p>
+{txtst_01}Paso A</em> - Producción del Electricidad y Consumo<br>
 {step_01}
-
-{txtst_02}Paso B</em> - Camiones para el CarbÃ³n</a><br>
+</p>
+<p>
+{txtst_02}Paso B</em> - Camiones para el Carbón<br>
 {step_02}
-
-{txtst_03}Paso C</em> - Conectando el Sistema Electrico</a><br>
+</p>
+<p>
+{txtst_03}Paso C</em> - Conectando el Sistema Eléctrico<br>
 {step_03}
-
-{txtst_04}Paso D</em> - Entregando el Correo</a><br>
+</p>
+<p>
+{txtst_04}Paso D</em> - Entregando el Correo<br>
 {step_04}
-
-<br>
-
+</p>

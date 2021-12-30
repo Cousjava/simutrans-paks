@@ -1,4 +1,6 @@
-<br>
-Se requiere transportar productos agrÃ­cola <em>({good1})</em> desde la {f1} hasta el {f2} para la producciÃ³n de harina de <em>({good2})</em>.<br><br>
-
-{tx} Coloque una <em>Cochera ferroviaria</em> en {dep}.<br><br>
+<p>
+Para la producción de <em>{good2}</em>, necesitarás transportar <em>{good1}</em> desde {f1} hasta {f2}.
+</p>
+<p>
+{tx} Selecciona <em>'{tool2}'</em> en la barra de herramientas y construye un <em>Depósito de Trenes</em> en {dep}.
+</p>

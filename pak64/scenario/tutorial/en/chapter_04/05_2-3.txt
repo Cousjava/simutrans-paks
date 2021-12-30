@@ -4,4 +4,3 @@ It is required to transport <em>{good2}</em> from {f3} to the {f4} for the final
 <p>
 {tx} Build a <em>Canal Quay</em> of goods in {dock}.
 </p>
-

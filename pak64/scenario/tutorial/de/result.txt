@@ -1,0 +1,4 @@
+Das Kapitelziel ist zu {ratio_chapter}% erreicht.<br>
+<br>
+Das Szenarioziel ist zu {ratio_scenario}% erreicht.<br>
+<br>

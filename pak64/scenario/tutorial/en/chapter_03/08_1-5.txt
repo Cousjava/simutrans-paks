@@ -6,6 +6,5 @@ The <em>Public service</em> wants you to complete the rail network running throu
 {tx} Select <em>'{tool2}'</em> from the toolbar and choose the track tool to connect the two points between {w1} and {w2}.
 </p>
 <p>
-<p>
 <st>Connect the track here:</st> {cbor}.
 </p>

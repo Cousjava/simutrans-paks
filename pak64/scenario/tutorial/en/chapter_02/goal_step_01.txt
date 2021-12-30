@@ -14,4 +14,3 @@ Open the <em>'{tool2}'</em> toolbar in the upper menu bar and select the 50 kmph
 <p>
 <st>To take to the next step</st>, build a stretch of road between {t1} and {t2} or {t1} and {t3}.
 </p>
-

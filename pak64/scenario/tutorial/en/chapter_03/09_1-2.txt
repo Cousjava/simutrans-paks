@@ -15,4 +15,3 @@ Way list:<br>
 <p>
 <st>Connect the track here:</st> {cbor}.
 </p>
-

@@ -1,16 +1,20 @@
-<br>
-Se requiere transportar productos agr铆cola <em>({good1})</em> desde la {cfar} hasta el {cmi} para la producci贸n de harina de <em>({good2})</em>.<br><br>
-
-Ahora debe elegir un veh铆culo adecuado para transportar el trigo hasta el {cmi}.<br>
-<em>[1]</em> Primero elija una locomotora <em>{loc1}</em>.<br>
-<em>[2]</em> Ahora seleccione <em>{wag}</em> vagones para {good1} <st>(no deben exceder de {tile} Casillas de Estaci贸n)</st>.<br>
-<em>[3]</em> Presione <em>Enrutar</em> y seleccione la estaci贸n de la {cfar} y coloque <em>Carg. Min.</em> en 100%.<br>
-<em>[4]</em> Seleccione la estaci贸n en el {cmi} y presione <em>Arrancar</em>.<br><br>
-
-<em>Consejo:</em> Puede usar el <em>Filtro</em> para mostrar solo los veh铆culos de <em>{good1}s</em>.<br><br>
-
-Se avanza al siguiente paso cuando el {cmi} reciba <em>{t_reach}t</em> de <em>{good1}s</em>.<br><br>
-
+<p>
+Para la producci髇 de <em>{good2}</em>, necesitar醩 transportar <em>{good1}</em> desde {f1} hasta {f2}.
+</p>
+<p>
+Ahora debe elegir un veh韈ulo adecuado para transportar {good1} hasta {f2}.<br>
+<em>[1]</em> Abre el dep髎ito de trenes y elige una locomotora <em>{loc1}</em> en la pesta馻 de Locomotoras.<br>
+<em>[2]</em> Ahora selecciona <em>{wag}</em> vagones para <em>{good1}</em> en la pesta馻 de <em>Vagones</em> <st>(El tren no debe ser m醩 grande que {tile} casillas)</st>.<br>
+<em>[3]</em> Presiona <em>Itinerario</em>, crea una nueva l韓ea y selecciona la estaci髇 de tren cerca de {f1}.<br>
+<em>--></em> Configura <em>Carga m韓ima</em> al {load}%.<br>
+<em>[4]</em> Selecciona la estaci髇 cerca de {f2} y presiona <em>Arrancar</em>.
+</p>
+<p>
+<em>Consejo:</em> Puede usar el <em>Filtro</em> en la ventana del dep髎ito para mostrar solo los veh韈ulos que pueden transportar <em>{good1}</em>.
+</p>
+<p>
+Se avanza al siguiente paso cuando {f2} reciba <em>{t_reach}t</em> de <em>{good1}</em>.
+</p>
+<p>
 <em>Cantidad recibida:</em> <st>{reached}t</st>
-<br><br>
-
+</p>

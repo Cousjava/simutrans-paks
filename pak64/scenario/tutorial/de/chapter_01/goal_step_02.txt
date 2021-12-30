@@ -1,0 +1,17 @@
+<br>
+Wir schauen uns als erstes die Fabrik "Nutzwald" an. Um das Informationsfenster
+zu öffnen einmal mit der linken Maustaste auf den Nutzwald klicken.
+Wir sehen nun ein Fenster in dem wir die Produktionsdaten, Verbraucher
+und Wohnorte der Arbeiter sehen.<br>
+<br>
+Da wir den Nutzwald mit seinem Verbraucher "Sägewerk" verbinden wollen, nutzen
+wir direkt den Pfeil vor "Sägewerk" um auf der Karte zum Sägewerk zu gelangen.
+Auch hier lässt sich durch anklicken das Informationsfenster öffnen.<br>
+<br>
+Nun können wir erkennen das das Sägewerk zwei Lieferanten "Nutzwald" hat und einer
+von diesen beiden (38,98) unser ausgewählter Lieferant ist. Die Warenlieferung
+die aus dieser Verbindung entsteht wollen wir nun übernehmen.<br>
+<br>
+Es geht weiter zum nächsten Schritt durch klick auf {pos2}. Das
+sich öffnende Informationsfenster kann danach geschlossen werden.<br>
+<br>

@@ -1,4 +1,5 @@
-<br>
-Se requiere transportar productos agr√≠cola <em>({good1})</em> desde la {f1} hasta el {f2} para la producci√≥n de harina de <em>({good2})</em>.<br><br>
-
-{tx} Construya un puente en {br}.<br><br>
+<p>Para la producciÛn de <em>{good2}</em>, necesitar·s transportar <em>{good1}</em> desde {f1} hasta {f2}.
+</p>
+<p>
+{tx} Selecciona <em>'{tool2}'</em> de la barra de herramientas y construye un puente en {br}.
+</p>

@@ -8,6 +8,8 @@ Now that the bridge is repaired, we should create a bus service from {name} to t
 <st>Connect the road here:</st> {cbor}.
 </p>
 <p>
+<em>Tip:</em> Hold down the <em>[Ctrl]</em> key to build straight sections of roads/rails.
+</p>
+<p>
 <st>It takes to the next step</st> when the bus starts from the <em>depot</em>.
 </p>
-

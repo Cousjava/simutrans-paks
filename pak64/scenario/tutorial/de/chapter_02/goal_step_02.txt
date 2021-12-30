@@ -1,0 +1,6 @@
+<br>
+Um eine Brücke zu errichten brauchen wir einen Anfangs und einen Endpunkt.
+In diesem Fall führt die Brücke über Wasser und die beiden Punkte
+liege an sich gegenüberliegenden Hangstücken.<br>
+Einen Brückentyp auswählen und von Hang zu Hang bauen.<br>
+<br>

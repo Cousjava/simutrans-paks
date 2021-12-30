@@ -1,0 +1,5 @@
+<br>
+Um gleich ein Depot bauen zu können, baue eine kurze Bahnstrecke {rect} und
+verbinde diese mit der ersten Strecke.
+<br>
+<br>

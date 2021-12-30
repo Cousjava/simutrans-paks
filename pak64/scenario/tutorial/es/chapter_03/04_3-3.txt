@@ -1,4 +1,6 @@
-<br>
-Se requiere transportar productos agr√≠cola <em>({good1})</em> desde la {f1} hasta el {f2} para la producci√≥n de harina de <em>({good2})</em>.<br><br>
-
-{tx} Use la herramienta de exploraci√≥n sobre el deposito {dep} para avanzar al siguiente paso.<br><br>
+<p>
+Para la producciÛn de <em>{good2}</em>, necesitar·s transportar <em>{good1}</em> desde {f1} hasta {f2}.
+</p>
+<p>
+{tx} Pulsa con la <em>'{tool1}'</em> sobre el <em>DepÛsito de Trenes</em> {dep} para avanzar al siguiente paso.
+</p>
