@@ -6,7 +6,6 @@
 Obj=factory
 name=AVL_Brauerei1965_NIC
 copyright=RedRabbit
-pax_level=200
 intro_year=1965
 intro_month=1
 Location=City
@@ -23,6 +22,7 @@ Inputfactor[2]=30
 InputCapacity[2]=600
 OutputGood[0]=Bier
 OutputCapacity[0]=1200
+pax_level=80
 passenger_boost=1000
 Mail_Boost=500
 electricity_amount=150

@@ -6,7 +6,6 @@
 Obj=factory
 Name=NorddeutscherExporteur
 copyright=nnw
-pax_level=100
 intro_year=1970
 intro_month=2
 location=City
@@ -38,6 +37,7 @@ InputSupplier[5]=1
 InputFactor[5]=100
 MapColor=132
 electricity_amount=1
+pax_level=50
 mail_demand=100
 passenger_boost=500
 mail_boost=1000

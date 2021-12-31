@@ -6,7 +6,6 @@
 obj=factory
 name=Holzsammelstelle1950_NIC
 copyright=RedRabbit
-level=3
 intro_year=1950
 intro_month=1
 retire_year=1990
@@ -43,6 +42,7 @@ spawn_weight[3]=5
 production_per_field[3]=8
 storage_capacity[3]=50
 electricity_amount=1
+pax_level=5
 passenger_boost=1000
 mail_boost=500
 MapColor=66

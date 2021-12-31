@@ -13,6 +13,7 @@ fi
 rm -f $repo/LOG/*.log
 echo -e "\033[91m LOG geleert\n"
 rm -f ./simutrans/PAK128.german/*.pak > "$repo/LOG/Pakmaker.log" 2> "$repo/LOG/Error_Pakmaker.log"
+rm -f ./simutrans/PAK128.german/addons/PAK128.german/*.pak >> "$repo/LOG/Pakmaker.log" 2>> "$repo/LOG/Error_Pakmaker.log"
 rm -f ./simutrans/PAK128.german/compat.tab >> "$repo/LOG/Pakmaker.log" 2>> "$repo/LOG/Error_Pakmaker.log"
 rm -f ./simutrans/PAK128.german/README/*.html >> "$repo/LOG/Pakmaker.log" 2>> "$repo/LOG/Error_Pakmaker.log"
 rm -rf ./simutrans/PAK128.german/scenario/* >> "$repo/LOG/Pakmaker.log" 2>> "$repo/LOG/Error_Pakmaker.log"
@@ -67,6 +68,8 @@ cd ./vehicle
 . ./vehicle_config.sh
 cd ./way
 . ./way_config.sh
+cd ./_addons
+. ./addons_config.sh
 if [ ! -f $repo/Outside.png ]; then
 echo -e "\033[1;92m Kopiere Outside.png"
 cp $repo/ground/Outside.png $repo
@@ -75,6 +78,9 @@ fi
 info=$(cat ./Repository_Info.tab | grep -oP 'Revision: \K([0-9]+)')
 sed "s/Rev\. [0-9]*/Rev\. $info/" $repo/ground/Outside.dat > ./Outside.dat
 $repo/makeobj PAK128 simutrans/PAK128.german/ ./ >>"./LOG/Pakmaker.log" 2>> "./LOG/Error_Pakmaker.log"
+if [ ! -f .aendere_config.sh ]; then
+. ./aendere_config.sh
+fi
 echo -e "PAKMAKER FEHLER\nErstellt mit pakmaker.sh\n">"./PAKMAKERFEHLER.txt"
 cd ./LOG
 grep -R -i "Warning\|Error">>"../PAKMAKERFEHLER.txt"

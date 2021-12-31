@@ -165,6 +165,33 @@ house_13.chance = -8
 house_13 = ..... .sss. SsssS .s.s. .sss.
 house_13.chance = -8
 
+# Haus an einer Haltestelle bauen mit Straße rechts
+house_14 = ..... ..ss. .tn.. ..... .....
+house_14.chance = -8
+
+# Haus an einer Haltestelle bauen Straße links
+house_15 = ..... .ss.. ..nt. ..... .....
+house_15.chance = -8
+
+# Haus an einer Bushaltestelle bauen 
+house_16 = ..... .sts. ..n.. ..... .....
+house_16.chance = -8
+
+# Haus an einer Bushaltestelle mit Post oder Straßenbahn bauen 
+house_17 = ..... .tts. ..n.. ..... .....
+house_17.chance = -8
+
+# Haus an einer Bushaltestelle mit Post oder Straßenbahn bauen 
+house_18 = ..... .stt. ..n.. ..... .....
+house_18.chance = -8
+
+# Haus an einer Haltestelle bauen auch wenn eine Straße dazwischen liegt
+house_19 = ..t.. .ss.. ..n.. ..... .....
+house_19.chance = -8
+house_20 = ..t.. ..ss. ..n.. ..... .....
+house_20.chance = -8
+
+
 
 #house_4 = ..... ..... 
 #                ..nhs 

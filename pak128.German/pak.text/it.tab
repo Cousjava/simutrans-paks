@@ -9,7 +9,7 @@
 #                             Language: it Italiano                            #
 #                             Encoding: ISO-8859-1                             #
 #                             Font: Prop-Latin1.bdf                            #
-#                           Date Created: 16.10 2021                           #
+#                            Date Created: 3.12 2021                           #
 #                                                                              #
 ################################################################################
 #____________________________bridge - monorail_track____________________________
@@ -295,19 +295,19 @@ Fermata autobus 1993
 ALP_Apotheke_NIC
 Farmacia (alpina)
 factory_ALP_Apotheke_NIC_details
-<title>Farmacia alpina</title><p>Questa farmacia vende medicinali e prodotti medici. Il farmacista spesso aiuta i clienti con i suoi consigli. 
+<p>Questa farmacia vende medicinali e prodotti medici. Il farmacista spesso aiuta i clienti con i suoi consigli. </p>
 ALP_Baumarkt_NIC
 Negozio DIY
 factory_ALP_Baumarkt_NIC_details
-L '"Alpbau-Baumarkt" è il punto di contatto centrale per tutti i lavoratori manuali e fai da te nella zona circostante.
+<p>L '"Alpbau-Baumarkt" è il punto di contatto centrale per tutti i lavoratori manuali e fai da te nella zona circostante.</p>
 ALP_Buchladen_NIC
 Piccola Libreria (alpina)
 factory_ALP_Buchladen_NIC_details
-<title>Libreria (alpina)</title>Romanzi, thriller, documentari e altra letteratura possono essere acquistati qui.
+<p>Romanzi, thriller, documentari e altra letteratura possono essere acquistati qui.</p>
 ALP_Elektroshop_NIC
 Negozio elettronica (alpino)
 factory_ALP_Elektroshop_NIC_details
-<title>Negozio di elettronica</title><p>Simmos Elektrohandels GmbH è una catena di vendita al dettaglio di elettronica che vende atrrezzature per telecomunicazioni, foto, computer, hi-fi, giochi, DVD, CD, TV e accessori.</p>
+<p>Simmos Elektrohandels GmbH è una catena di vendita al dettaglio di elettronica che vende atrrezzature per telecomunicazioni, foto, computer, hi-fi, giochi, DVD, CD, TV e accessori.</p>
 ALP_Moebelhaus_NIC
 Mobilificio ALP
 ALP_Saegewerk_NIC
@@ -317,23 +317,23 @@ BORR produce assi, listelli, tronchi e raccordi per professionisti e lavoratori 
 ALP_Supermarkt_NIC
 supermercato alpino
 factory_ALP_Supermarkt_NIC_details
-<title>Supermercato Alpino</title>Un supermercato è solitamente un negozio al dettaglio molto grande che, oltre alla spesa, offre anche altri articoli di uso quotidiano (calze, aspirapolvere e articoli da toeletta).
+Un supermercato è solitamente un negozio al dettaglio molto grande che, oltre alla spesa, offre anche altri articoli di uso quotidiano (calze, aspirapolvere e articoli da toeletta).
 ALP_Tankstelle_NIC
 Stazione di servizio 
 factory_ALP_Tankstelle_NIC_details
-<title>SEMI - stazione di servizio</title><p>Oltre a diesel e benzina, questo negozio vende anche accessori per auto e articoli per la cura dell'auto 
+<p><em>SEMI - stazione di servizio</em><br>Oltre a diesel e benzina, questo negozio vende anche accessori per auto e articoli per la cura dell'auto</p> 
 ALP_Viehhof_NIC
 Allevamento Mucche
 ALP_Viehhof_NIC_2
 Allevamento di bestiame
 factory_ALP_Viehhof_NIC_2_details
-<title>Allevamento di bestiame Untermoser</title><p>La famiglia Untermoser è la quarta generazione di allevatori di bovini.</p>
+<p><em>Allevamento di bestiame Untermoser</em><br>La famiglia Untermoser è la quarta generazione di allevatori di bovini.</p>
 alte Raffinerie
 Vecchia raffineria di Petrolio
 alte_Kfz-Fabrik
 Fabbrica Automobili
 factory_alte_Kfz-Fabrik_details
-<title>Lemuria AG</title>Lemuria AG produce eleganti auto sportive, decappottabili e buone auto familiari. 
+<p><em>Lemuria AG</em><br>Lemuria AG produce eleganti auto sportive, decappottabili e buone auto familiari. </p>
 alte_Lebensmittelfabrik
 Fabbrica alimentare
 factory_alte_Lebensmittelfabrik_details
@@ -345,11 +345,11 @@ Cartiera
 alte_Werft
 Vecchio Cantiere Navale
 factory_alte_Werft_details
-<title>Vecchio Cantiere Navale</title>Le navi a vela sono ancora costruite qui in un modo molto tradizionale. Questo cantiere navale utilizza quindi principalmente legname segato sotto forma di travi e assi. C'è anche molta tela e manovre. L'acciaio viene utilizzato solo per pulegge, ancoraggi e raccordi. Di tanto in tanto un cliente chiede se un motore a vapore sulla nave potrebbe non avere senso. Il proprietario del cantiere spiega poi che le navi di legno e il fuoco non vanno bene insieme. Non vuole costruire navi in fiamme o che volano via. Molte macchine a vapore sono già esplose e lui non vuole che il suo nome appaia sui giornali come il costruttore di una nave del genere. 
+Le navi a vela sono ancora costruite qui in un modo molto tradizionale. Questo cantiere navale utilizza quindi principalmente legname segato sotto forma di travi e assi. C'è anche molta tela e manovre. L'acciaio viene utilizzato solo per pulegge, ancoraggi e raccordi. Di tanto in tanto un cliente chiede se un motore a vapore sulla nave potrebbe non avere senso. Il proprietario del cantiere spiega poi che le navi di legno e il fuoco non vanno bene insieme. Non vuole costruire navi in fiamme o che volano via. Molte macchine a vapore sono già esplose e lui non vuole che il suo nome appaia sui giornali come il costruttore di una nave del genere. 
 AlteGastwirtschaft
 Vecchia locanda
 factory_AlteGastwirtschaft_details
-<title>Vecchia Locanda</title>Vino, donne e canto. Aggiungete a ciò un buon pasto, e cosa c'è da desiderare di più? Il modello è il ristorante del faro di Halle, costruito nel 1905 e demolito nel 2013. Il nome non indica un faro per la navigazione, ma è uno stratagemma pubblicitario utilizzato dal padrone di casa. Una luce nel collegamento del tetto ha attirato l'attenzione sul ristorante da lontano. 
+Vino, donne e canto. Aggiungete a ciò un buon pasto, e cosa c'è da desiderare di più? Il modello è il ristorante del faro di Halle, costruito nel 1905 e demolito nel 2013. Il nome non indica un faro per la navigazione, ma è uno stratagemma pubblicitario utilizzato dal padrone di casa. Una luce nel collegamento del tetto ha attirato l'attenzione sul ristorante da lontano. 
 alter_Kamerahersteller
 Fabbrica macchine fotografiche
 factory_alter_Kamerahersteller_details
@@ -393,7 +393,7 @@ factory_AVL_Brauerei1965_NIC_details
 AVL_Buchladen_NIC
 Libreria (Germania meridionale)
 factory_AVL_Buchladen_NIC_details
-<title>Libreria</title>Qui è possibile acquistare romanzi, thriller, documentari e molta altra letteratura. 
+Qui è possibile acquistare romanzi, thriller, documentari e molta altra letteratura. 
 AVL_E-Laden_NIC
 Negozio di elettronica
 factory_AVL_E-Laden_NIC_details
@@ -407,7 +407,7 @@ Fattoria di grano e canapa
 AVL_Kelterei1800_NIC
 Frantoio vinicolo
 factory_AVL_Kelterei1800_NIC_details
-<title>frantoio vinicolo</title>In un frantoio da vino si ottiene "mosto" pressando il succo dell'uva.
+In un frantoio da vino si ottiene "mosto" pressando il succo dell'uva.
 AVL_Marktplatz_1800
 Piazza Mercato (1800)
 factory_AVL_Marktplatz_1800_details
@@ -431,7 +431,7 @@ Tavole, torni, tronchi e legni pregiati per il casalingo e l'artigianato locale.
 AVL_Saegewerk1969_NIC
 Segheria moderna
 factory_AVL_Saegewerk1969_NIC_details
-<title>segheria moderna</title>La Segheria produce assi, doghe, cantili e impiallacciature per l'industria del mobile.
+La Segheria produce assi, doghe, cantili e impiallacciature per l'industria del mobile.
 AVL_Schafsscheune_NIC
 Allevamento pecore
 AVL_Schlachthof_NIC
@@ -439,13 +439,13 @@ Macelleria
 AVL_Supermarkt_NIC
 supermercato Prealpi
 factory_AVL_Supermarkt_NIC_details
-<title>Supermercato Prealpi</title>I supermercati Michelstadt Handels GmbH vendono principalmente generi alimentari di tutti i giorni. Stanno sostituendo sempre più le mamme ei negozi pop. 
+I supermercati Michelstadt Handels GmbH vendono principalmente generi alimentari di tutti i giorni. Stanno sostituendo sempre più le mamme ei negozi pop. 
 AVL_Tankstelle_NIC
 Stazione servizio benzine
 AVL_Textil_1836
 Fabbrica tessile (Germania meridionale, 1836)
 factory_AVL_Textil_1836_details
-<title>Fabbrica tessile</title>La fabbrica tessile produce abbigliamento per tutti e moda per le donne del mondo. Vengono utilizzati sia lana che lino. 
+La fabbrica tessile produce abbigliamento per tutti e moda per le donne del mondo. Vengono utilizzati sia lana che lino. 
 AVL_Viehhof1940_NIC
 Allevamento mucche 1940
 AVL_Zementwerk1800_NIC
@@ -523,11 +523,11 @@ Il dipartimento di sviluppo di Siemens si chiama Legoland a Monaco. Da un lato, 
 Computerhersteller1980
 Fabbrica Computers 1980
 factory_Computerhersteller1980_details
-<title>fabbrica comuters</title>The Simutel Corp. produce sistemi desktop, server e quadri elettrici. The Simutel Corp. Nel 1980, il primo produttore riuscì a produrre PC, cioè personal computer, che le piccole imprese e gli appassionati di computer potevano permettersi anche per le loro case. I computer hanno aperto possibilità di applicazione completamente nuove oltre all'EDP nelle grandi aziende. Il multimedia era improvvisamente sulla bocca di tutti, anche se molti non sapevano nemmeno cosa significasse. 
+The Simutel Corp. produce sistemi desktop, server e quadri elettrici. The Simutel Corp. Nel 1980, il primo produttore riuscì a produrre PC, cioè personal computer, che le piccole imprese e gli appassionati di computer potevano permettersi anche per le loro case. I computer hanno aperto possibilità di applicazione completamente nuove oltre all'EDP nelle grandi aziende. Il multimedia era improvvisamente sulla bocca di tutti, anche se molti non sapevano nemmeno cosa significasse. 
 Computerhersteller1990
 Grande Fabbrica Computer 1990
 factory_Computerhersteller1990_details
-<title>SMI Copy & Clone Corp.</title>SMI Copy & Clone Corp. ha molto successo nel creare computer compatibili. Ora che i computer compatibili con SMI si sono affermati su un ampio fronte, il prezzo è un fattore decisivo per determinare il successo delle vendite. SMI Copy & Clone Corp. produce in modo efficiente in gran numero per il mercato internazionale e può trasferire i bassi costi unitari sul consumatore. La compatibilità è anche un vantaggio per l'utente, poiché tutto il software funziona su qualsiasi computer compatibile. I giorni della dipendenza dal produttore sono finiti. Sfortunatamente, questo fa sì che qualsiasi virus funzioni su qualsiasi computer compatibile. 
+<p><em>SMI Copy & Clone Corp.</em><br>SMI Copy & Clone Corp. ha molto successo nel creare computer compatibili. Ora che i computer compatibili con SMI si sono affermati su un ampio fronte, il prezzo è un fattore decisivo per determinare il successo delle vendite. SMI Copy & Clone Corp. produce in modo efficiente in gran numero per il mercato internazionale e può trasferire i bassi costi unitari sul consumatore. La compatibilità è anche un vantaggio per l'utente, poiché tutto il software funziona su qualsiasi computer compatibile. I giorni della dipendenza dal produttore sono finiti. Sfortunatamente, questo fa sì che qualsiasi virus funzioni su qualsiasi computer compatibile. </p>
 Dessauer_Kohlekraftwerk
 Centrale elettrica a carbone (Germania orientale, 1992)
 factory_Dessauer_Kohlekraftwerk_details
@@ -543,15 +543,15 @@ Discount grande
 Druckerei_NIC
 Tipografia 1886
 factory_Druckerei_NIC_details
-<title>tipografia</title>Questa fabbrica è dove vengono prodotti i libri.
+Questa fabbrica è dove vengono prodotti i libri.
 Druckerei_SM
 Tipografia 1980
 factory_Druckerei_SM_details
-<title>tipografia</title>Qui vengono prodotti letteratura moderna e bestseller mondiali. 
+Qui vengono prodotti letteratura moderna e bestseller mondiali. 
 Druckwerkstatt
 Stamperia 1800
 factory_Druckwerkstatt_details
-<title>Stamperia</title>Volantini, giornali e libri sono stampati qui. Il colore necessario è costituito dalla fuliggine e dall'olio di lino stesso. Fu solo con la produzione di inchiostri industriali alla fine del XIX secolo che divenne consuetudine acquistare inchiostri da stampa pronti per l'uso. 
+<p><em>Stamperia</em><br>Volantini, giornali e libri sono stampati qui. Il colore necessario è costituito dalla fuliggine e dall'olio di lino stesso. Fu solo con la produzione di inchiostri industriali alla fine del XIX secolo che divenne consuetudine acquistare inchiostri da stampa pronti per l'uso. </p>
 Erzbergwerk_NIC
 Miniera di ferro
 Fahrzeuge_und_Haushaltsartikel
@@ -569,11 +569,11 @@ Zona di pesca
 Gasthof_1800
 Locanda 1800
 factory_Gasthof_1800_details
-<title>Rheinbreitbacher Hof / Clouthscher Hof</title>Il Clouthsche Hof, poi Rheinbreitbacher Hof, è probabilmente il più antico (intorno al 1518, nelle parti più antiche intorno al 1348?) Ed è ancora visibile oggi, l'ex locanda di Rheinbreitbach. Le locande di questo tempo non erano solo luoghi di cibo e bevande, ma anche luoghi di sosta per i viaggiatori. Con stalle per i cavalli, rimesse per le carrozze e piccole stanze per una notte. Inoltre, ovviamente, stanze per intrattenere viaggiatori e altri ospiti. Eventualmente, come qui, anche un ampio salone per feste e matrimoni. 
+<p><em>Rheinbreitbacher Hof / Clouthscher Hof</em><br>Il Clouthsche Hof, poi Rheinbreitbacher Hof, è probabilmente il più antico (intorno al 1518, nelle parti più antiche intorno al 1348?) Ed è ancora visibile oggi, l'ex locanda di Rheinbreitbach. Le locande di questo tempo non erano solo luoghi di cibo e bevande, ma anche luoghi di sosta per i viaggiatori. Con stalle per i cavalli, rimesse per le carrozze e piccole stanze per una notte. Inoltre, ovviamente, stanze per intrattenere viaggiatori e altri ospiti. Eventualmente, come qui, anche un ampio salone per feste e matrimoni.</p> 
 Gastwirtschaft_mit_Laden
 Puntis Shop&Inn
 factory_Gastwirtschaft_mit_Laden_details
-<title>Puntis Shop&Inn</title>I proprietari della locanda gestiscono un negozio accanto.
+<p><em>Puntis Shop&Inn</em><br>I proprietari della locanda gestiscono un negozio accanto.</p>
 Gefluegelhof_NIC
 Allevamento pollame
 Geraete_und_Haushaltsartikel
@@ -581,7 +581,7 @@ Negozio elettrodomestici e articoli per la casa
 Getraenkemarkt_NIC
 Osteria
 factory_Getraenkemarkt_NIC_details
-<title>Osteria</title>Le osterie nella Germania meridionale sono spesso indicate nel nord come "sale per bere".
+Le osterie nella Germania meridionale sono spesso indicate nel nord come "sale per bere".
 Getreidehof_alt
 fattoria di grano
 GetreideSilo_NIC
@@ -591,13 +591,13 @@ Questo silo raccoglie il grano per la successiva lavorazione.
 Glasmanufaktur
 Vetreria
 factory_Glasmanufaktur_details
-<title>Vetreria Fraunhofer</title><p>La manifattura del vetro è stata fondata per produrre occhiali di alta qualità per Joseph Fraunhofer per i suoi strumenti ottici. Purtroppo le vendite di vetri ottici sono risultate molto basse, quindi è stato necessario realizzare anvhe vetri per finestre e bottiglie di vino per poter mantenere il personale altamente qualificato.</p>
+<p><em>Vetreria Fraunhofer</em><br>La manifattura del vetro è stata fondata per produrre occhiali di alta qualità per Joseph Fraunhofer per i suoi strumenti ottici. Purtroppo le vendite di vetri ottici sono risultate molto basse, quindi è stato necessario realizzare anvhe vetri per finestre e bottiglie di vino per poter mantenere il personale altamente qualificato.</p>
 Grossbaeckerei_NIC
 Forno
 Grossmuehle_NIC
 Mulino grande
 factory_Grossmuehle_NIC_details
-<title>Grande mulino Alberthafen Dresda</title>Vari tipi di cereali come segale, farro, grano e orzo vengono trasformati in farina in un grande mulino. Questo viene quindi consegnato ad acquirenti all'ingrosso come panifici e produttori di pasta o ai rivenditori. 
+<p><em>Grande mulino Alberthafen Dresda</em><br>Vari tipi di cereali come segale, farro, grano e orzo vengono trasformati in farina in un grande mulino. Questo viene quindi consegnato ad acquirenti all'ingrosso come panifici e produttori di pasta o ai rivenditori. </p>
 Heizkraftwerk
 Centrale termica HOW
 factory_Heizkraftwerk_details
@@ -649,13 +649,13 @@ Clinica 1927
 Klosterbrauerei1610_NIC
 Birreria ("Klosterbrau")
 factory_Klosterbrauerei1610_NIC_details
-<title>Birrificio del monastero</title>Questo venerabile birrificio produce una deliziosa birra con luppolo e orzo. Se vuoi comprare la birra, hai due opzioni. O prendi il tuo boccale di birra e vieni al monastero, oppure ti fai portare un barile con un carretto. I monaci chiedono la restituzione della botte che viene lavata. Ecco perché la maggior parte delle persone preferisce guardare oltre il rubinetto e raccogliere una benedizione oltre alla birra. 
+<p><em>Birrificio del monastero</em><br>Questo venerabile birrificio produce una deliziosa birra con luppolo e orzo. Se vuoi comprare la birra, hai due opzioni. O prendi il tuo boccale di birra e vieni al monastero, oppure ti fai portare un barile con un carretto. I monaci chiedono la restituzione della botte che viene lavata. Ecco perché la maggior parte delle persone preferisce guardare oltre il rubinetto e raccogliere una benedizione oltre alla birra. </p>
 Kohlemine_NIC
 Miniera di Carbone
 Konditorei
 Pasticceria
 factory_Konditorei_details
-<title>Pasticceria</title>Prelibatezze casalinghe
+Prelibatezze casalinghe
 Krankenhaus_Hellmig_Kamen
 Ospedale moderno
 Lagerhalle_NIC
@@ -683,7 +683,7 @@ Fabbrica macchinari
 Maschinenfabrik_NIC
 Fabbrica Attrezzature elettroniche(1909)
 factory_Maschinenfabrik_NIC_details
-<title>Elettrodomestici MU-Tec</title><p>Lo specialista per la produzione di macchine e hardware.</p>
+<p><em>Elettrodomestici MU-Tec</em><br>Lo specialista per la produzione di macchine e hardware.</p>
 MGB_alter_Markt_1920
 Mercato settimanale (1920)
 MGB_alter_Markt_NIC
@@ -713,15 +713,15 @@ Questa acciaieria appartiene alla RR-Metalgroup e produce acciai legati e non le
 MGBWeingut_NIC
 Cantina con vigneto
 factory_MGBWeingut_NIC_details
-<title>Cantina con vigneto</title>La "cantina" è un'azienda agricola dove si coltiva l'uva e da essa si producono vino, champagne e spumante.
+La "cantina" è un'azienda agricola dove si coltiva l'uva e da essa si producono vino, champagne e spumante.
 Milchfabrik_NIC
 Caseificio (1930)
 factory_Milchfabrik_NIC_details
-<title>caseificio</title>Qui il latte viene pastorizzato, imbottigliato e poi venduto.
+Qui il latte viene pastorizzato, imbottigliato e poi venduto.
 Minimarkt_NIC
 Minimarket
 factory_Minimarkt_NIC_details
-<title>piccolo minimarket</title>Un piccolo supermercato. Il proprietario originariamente voleva aprire una stazione di servizio con un mini market annesso. L'agenzia di protezione ambientale di nuova costituzione non ha approvato questo con riferimento a un'area di protezione delle acque. Quindi è stato in grado di creare solo il piccolo mini market. La trafficata arteria porta anche un numero sufficiente di clienti a piedi. Il proprietario è felice. Gli affari andavano meglio con una stazione di servizio, ma non si è mai pentito di aver aperto il suo negozio senza una stazione di servizio. 
+Un piccolo supermercato. Il proprietario originariamente voleva aprire una stazione di servizio con un mini market annesso. L'agenzia di protezione ambientale di nuova costituzione non ha approvato questo con riferimento a un'area di protezione delle acque. Quindi è stato in grado di creare solo il piccolo mini market. La trafficata arteria porta anche un numero sufficiente di clienti a piedi. Il proprietario è felice. Gli affari andavano meglio con una stazione di servizio, ma non si è mai pentito di aver aperto il suo negozio senza una stazione di servizio. 
 moderne_Glashuette
 Vetreria moderna
 moderne_Maschinenfabrik
@@ -735,7 +735,7 @@ Un silo per il grano è una specie di magazzino.
 moderner_Importeur
 Importatore (Nord Germania 1980)
 factory_moderner_Importeur_details
-<title>Importatore</title><p>Questa casa commerciale importa mandorle frutti tropicali e lamine di silicio per elettronica dall'estero</p>
+<p>Questa casa commerciale importa mandorle frutti tropicali e lamine di silicio per elettronica dall'estero</p>
 Moebelfabrik Pirna
 Antico mobilificio
 factory_Moebelfabrik Pirna_details
@@ -755,7 +755,7 @@ Mulino 1924
 Muehle_NIC
 Mulino per cereali
 factory_Muehle_NIC_details
-<title>mulino per cereali</title>I mulini per cereali lavorano farina di varie varietà di cereali come segale, farro, grano, orzo e mais, che viene poi consegnata a panifici o altri negozi al dettaglio.
+I mulini per cereali lavorano farina di varie varietà di cereali come segale, farro, grano, orzo e mais, che viene poi consegnata a panifici o altri negozi al dettaglio.
 MuellContainer
 Punto raccolta rifiuti
 factory_MuellContainer_details
@@ -763,7 +763,7 @@ factory_MuellContainer_details
 NDT_alte_Marzipanfabrik
 vecchia fabbrica di marzapane
 factory_NDT_alte_Marzipanfabrik_details
-<title>vecchia fabbrica di marzapane</title>Il marzapane è un dolce a base di mandorle tritate e zucchero. Le prime fabbriche di marzapane tedesche furono installate nelle città portuali, perché a quel tempo le mandorle potevano raggiungere l'Europa solo in piccole quantità dalle cosiddette colonie con l'importazione delle navi. 
+<p><em>vecchia fabbrica di marzapane</em><br>Il marzapane è un dolce a base di mandorle tritate e zucchero. Le prime fabbriche di marzapane tedesche furono installate nelle città portuali, perché a quel tempo le mandorle potevano raggiungere l'Europa solo in piccole quantità dalle cosiddette colonie con l'importazione delle navi. </p>
 NDT_alterBauernhof_NIC
 Vecchia fattoria di barbabietole da zucchero
 factory_NDT_alterBauernhof_NIC_details
@@ -773,7 +773,7 @@ Fabbrica confetturen di frutta
 NDTZuckerfabrik_NIC
 Fabbrica zucchero
 factory_NDTZuckerfabrik_NIC_details
-<title>Sigrana Zucker KG.</title>Nella produzione di zucchero, lo zucchero viene estratto dalle barbabietole da zucchero che sono state coltivate per un alto contenuto di zucchero e rese utilizzabili in varie forme. La polpa di barbabietola lisciviata dalla produzione di zucchero ha ancora un alto contenuto di zucchero e contiene anche proteine, motivo per cui vengono utilizzate come mangime per i ruminanti. Nel 1802 iniziò la produzione di zucchero di barbabietola da zucchero, poiché lo zucchero di canna delle colonie non era più disponibile a causa della barriera continentale.
+<p><em>Sigrana Zucker KG.</em><br>Nella produzione di zucchero, lo zucchero viene estratto dalle barbabietole da zucchero che sono state coltivate per un alto contenuto di zucchero e rese utilizzabili in varie forme. La polpa di barbabietola lisciviata dalla produzione di zucchero ha ancora un alto contenuto di zucchero e contiene anche proteine, motivo per cui vengono utilizzate come mangime per i ruminanti. Nel 1802 iniziò la produzione di zucchero di barbabietola da zucchero, poiché lo zucchero di canna delle colonie non era più disponibile a causa della barriera continentale.</p>
 Neues_Kohlekraftwerk
 centrale elettrica a carbone
 factory_Neues_Kohlekraftwerk_details
@@ -795,7 +795,7 @@ Pompa estrazione petrolio
 Oktoberfest
 Oktoberfest a Monaco di Baviera
 factory_Oktoberfest_details
-Chiamato "The Wiesn" dalla gente del posto, si svolge a settembre, dura due settimane e termina la prima domenica di ottobre. La prima festa ebbe luogo nel 1910 in occasione delle nozze del futuro re bavarese Ludovico I. Da allora, la festa è andata crescendo di anno in anno.1818 la prima giostra1869 vengono presentati lo schermo, la magia e le curiosità ei visitatori vengono decapitati con la ghigliottina,1880 una ruota panoramica con 12 metri di legno1894 l'altalena della strega1898 il padrone di casa Georg Lang solleva cinque posti di stallo e vi costruisce il suo "castello della birra", che fu l'inizio della grande tenda della birra1906 uno scivolo, dal 1933 con nastro trasportatore per i passeggeri,1910 Devil's Wheel, che riesce a rimanere in cima vince,1920 Crinoline una giostra rotonda,1932 Muro della morte di Pitt, motociclista su un ripido muro cilindrico di legno,1979 Ruota panoramica in acciaio con 48 metriQueste attrazioni amorevolmente mantenute sono rappresentate ancora oggi.Fornire birra e tutto il resto a una festa così grande richiede una logistica sofisticata. I visitatori vogliono anche essere accompagnati al festival e poi di nuovo indietro. Se il festival è servito in modo ottimale, diventerà il più grande festival popolare del mondo.Per l'Oktoberfest, i birrifici di Monaco producono una birra speciale contenente fino al 6,4% di alcol in volume. Alcuni visitatori sottovalutano sia il contenuto dei bicchieri da birra sia il contenuto alcolico della birra. Spesso poi cercano, con le ultime forze, di lasciare il festival per la via più breve. Questo conduce dietro i tendoni su per il pendio di una piccola collina. Alcuni falliscono sulla piccola pendenza e rimangono sdraiati. Alcuni si addormentano all'istante, altri vomitano. La gente del posto quindi lo chiama la collina di Kotz. Purtroppo questa particolare attrazione sta attirando sempre più curiosi, tanto che negli ultimi tempi la polizia ha dovuto guardare sempre più a destra.
+<p><em>Oktoberfest a Monaco di Baviera</em></p><p>Chiamato "The Wiesn" dalla gente del posto, si svolge a settembre, dura due settimane e termina la prima domenica di ottobre. La prima festa ebbe luogo nel 1910 in occasione delle nozze del futuro re bavarese Ludovico I. Da allora, la festa è andata crescendo di anno in anno.<br>1818 la prima giostra<br>1869 vengono presentati lo schermo, la magia e le curiosità ei visitatori vengono decapitati con la ghigliottina,<br>1880 una ruota panoramica con 12 metri di legno<br>1894 l'altalena della strega<br>1898 il padrone di casa Georg Lang solleva cinque posti di stallo e vi costruisce il suo "castello della birra", che fu l'inizio della grande tenda della birra<br>1906 uno scivolo, dal <br>1933 con nastro trasportatore per i passeggeri,<br>1910 Devil's Wheel, che riesce a rimanere in cima vince,<br>1920 Crinoline una giostra rotonda,<br>1932 Muro della morte di Pitt, motociclista su un ripido muro cilindrico di legno,<br>1979 Ruota panoramica in acciaio con 48 metri<br>Queste attrazioni amorevolmente mantenute sono rappresentate ancora oggi.</p> <p><em>Fornire birra e tutto il resto a una festa così grande richiede una logistica sofisticata. I visitatori vogliono anche essere accompagnati al festival e poi di nuovo indietro. Se il festival è servito in modo ottimale, diventerà il più grande festival popolare del mondo.</em></p> <p>Per l'Oktoberfest, i birrifici di Monaco producono una birra speciale contenente fino al 6,4% di alcol in volume. Alcuni visitatori sottovalutano sia il contenuto dei bicchieri da birra sia il contenuto alcolico della birra. Spesso poi cercano, con le ultime forze, di lasciare il festival per la via più breve. Questo conduce dietro i tendoni su per il pendio di una piccola collina. Alcuni falliscono sulla piccola pendenza e rimangono sdraiati. Alcuni si addormentano all'istante, altri vomitano. La gente del posto quindi lo chiama la collina di Kotz. Purtroppo questa particolare attrazione sta attirando sempre più curiosi, tanto che negli ultimi tempi la polizia ha dovuto guardare sempre più a destra.</p>
 Papierfabrik_NIC
 Cartiera
 factory_Papierfabrik_NIC_details
@@ -807,7 +807,7 @@ Vecchia cartiera a mulino
 Pharmawerk_NIC
 Stabilimento farmaceutico
 factory_Pharmawerk_NIC_details
-<title>Stabilimento farmaceutico LEM</title>Qui vengono prodotti medicinali e preparati aggiuntivi. 
+<p><em>Stabilimento farmaceutico LEM</em><br>Qui vengono prodotti medicinali e preparati aggiuntivi. </p>
 Raffinerie_NIC
 Raffineria di petrolio LEM
 factory_Raffinerie_NIC_details
@@ -859,7 +859,7 @@ Qui si producono dolci e pane.
 Supermarkt_AVL_ALP_2000
 Supermarket AVL ALP 2000
 factory_Supermarkt_AVL_ALP_2000_details
-<title>supermercato</title>I supermercati di Michelstadt Handels GmbH vendono principalmente generi alimentari di tutti i giorni. 
+I supermercati di Michelstadt Handels GmbH vendono principalmente generi alimentari di tutti i giorni. 
 Supermarkt_MGB_AVL_1970
 Supermarket tipico tedesco
 factory_Supermarkt_MGB_AVL_1970_details
@@ -867,7 +867,7 @@ factory_Supermarkt_MGB_AVL_1970_details
 Supermarkt_ODL_MGB_2000
 Supermarket MGB 2000
 factory_Supermarkt_ODL_MGB_2000_details
-<title>Supermarkt</title>Il supermercato è un negozio al dettaglio che vende generi alimentari, calze, aspirapolvere, articoli da toeletta e prodotti di gastronomia.
+Il supermercato è un negozio al dettaglio che vende generi alimentari, calze, aspirapolvere, articoli da toeletta e prodotti di gastronomia.
 Tankstelle_Pascale
 Stazione di servizio Pascale
 factory_Tankstelle_Pascale_details
@@ -909,7 +909,7 @@ l bestseller di questo negozio di auto è, ovviamente, il VW Bulli e lo scarabeo.
 Waferfabrik_1965
 Fabbrica basi per circuiti stampati
 factory_Waferfabrik_1965_details
-Qualsiasi impianto chimico può essere riconosciuto a prima vista. Ma produce silicio di elevata purezza e lo utilizza per realizzare wafer monocristallini. Wafer è il nome dato ai dischi in silicio puro su cui sono costruiti i circuiti integrati, meglio conosciuti come IC o chip. La produzione di silicio di elevata purezza e l'estrazione di monocristalli da una fusione richiede un elevato consumo di energia. A questo scopo, Wacker di Burghausen può utilizzare l'elettricità della propria centrale idroelettrica. Anche nel Mondo di Simutrans, la fabbrica dipende da una buona alimentazione. Questa fabbrica fornirà un numero sufficiente di wafer per i produttori di computer solo se l'alimentazione è sufficiente. 
+<p><em>Wacker Chemie</em><br>Qualsiasi impianto chimico può essere riconosciuto a prima vista. Ma produce silicio di elevata purezza e lo utilizza per realizzare wafer monocristallini. Wafer è il nome dato ai dischi in silicio puro su cui sono costruiti i circuiti integrati, meglio conosciuti come IC o chip. La produzione di silicio di elevata purezza e l'estrazione di monocristalli da una fusione richiede un elevato consumo di energia. A questo scopo, Wacker di Burghausen può utilizzare l'elettricità della propria centrale idroelettrica. Anche nel Mondo di Simutrans, la fabbrica dipende da una buona alimentazione. Questa fabbrica fornirà un numero sufficiente di wafer per i produttori di computer solo se l'alimentazione è sufficiente. </p>
 Wasserkraftwerk
 Centrale idroelettrica
 Weinberg_NIC
@@ -919,7 +919,7 @@ Vigneto di uve nobili utilizzate per produrre vini nobili.
 Werft
 cantiere navale
 factory_Werft_details
-<title>Cantiere Navale</title>Qui vengono costruiti pezzo per pezzo incrociatori di lusso, transatlantici, mercantili, navi portacontainer e petroliere. I segmenti, chiamati sottosezioni, vengono poi assemblati in banchine galleggianti in acque profonde. 
+<p><em>Cantiere Navale</em><br>Qui vengono costruiti pezzo per pezzo incrociatori di lusso, transatlantici, mercantili, navi portacontainer e petroliere. I segmenti, chiamati sottosezioni, vengono poi assemblati in banchine galleggianti in acque profonde. </p>
 Werft_1870
 Cantiere navale 1870
 Windmuehle_1800
@@ -935,7 +935,7 @@ Da calce e argilla qui viene prodotto il cemento. Nel lungo edificio è stato uti
 Zementwerk1979_NIC
 Cementificio 1979
 factory_Zementwerk1979_NIC_details
-Questo impianto produce da sabbia, pietre e con l'aggiunta di additivi, cemento ad alta tecnologia. Ciò è necessario per la costruzione delle costruzioni di Simutrans e per l'impianto di betonaggio. La maggior parte dei clienti carica il cemento con i propri camion. La buona depurazione dei gas di scarico e l'elevata temperatura di combustione consentono di bruciare rifiuti problematici. Dato il basso prezzo del cemento, questa è una gradita opportunità per aumentare la redditività dell'impianto. 
+<p>Questo impianto produce da sabbia, pietre e con l'aggiunta di additivi, cemento ad alta tecnologia. Ciò è necessario per la costruzione delle costruzioni di Simutrans e per l'impianto di betonaggio. La maggior parte dei clienti carica il cemento con i propri camion. La buona depurazione dei gas di scarico e l'elevata temperatura di combustione consentono di bruciare rifiuti problematici. Dato il basso prezzo del cemento, questa è una gradita opportunità per aumentare la redditività dell'impianto.</p> 
 #_____________________________________field_____________________________________
 #_____________________________________field_____________________________________
 alt_obstbauer_felder_gross

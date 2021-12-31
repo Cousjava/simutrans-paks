@@ -202,5 +202,6 @@ mv *.pak $repo/vehicle >> "$repo/LOG/cmd.log" 2>> "$repo/LOG/error_cmd.log"
 echo -e "zusammenpacken der Vehicle\033[0m"
 cd $repo/vehicle
 $repo/makeobj MERGE $repo/simutrans/PAK128.german/vehicle.all.pak ./vehicle.*.pak >> "$repo/LOG/vehicle_all.log" 2>> "$repo/LOG/error_vehicle_all.log"
+#cp ./vehicle.*.pak $repo/simutrans/PAK128.german/  >> "$repo/LOG/vehicle_all.log" 2>> "$repo/LOG/error_vehicle_all.log"
 rm ./vehicle.*.pak >> "$repo/LOG/vehicle_all.log" 2>> "$repo/LOG/error_vehicle_all.log"
 cd $repo

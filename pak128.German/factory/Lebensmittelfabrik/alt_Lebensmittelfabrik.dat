@@ -1,14 +1,11 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 27-02-2017
-#	Letzte Bearbeitung:
-#   $Date: 2017-04-09 09:56:45 +0200 (So, 09. Apr 2017) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=alte_Lebensmittelfabrik
 copyright=pumuckl999
-pax_level=10
 intro_year=1892
 intro_month=1
 retire_year=1957
@@ -30,6 +27,7 @@ OutputCapacity[0]=200
 OutputGood[1]=Dosenessen
 OutputCapacity[1]=200
 electricity_amount=15
+pax_level=60
 passenger_boost=1000
 mail_boost=500
 climates=desert, tropic, mediterran, temperate, tundra, rocky

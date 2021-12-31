@@ -40,7 +40,7 @@ h1 {color:#FFFFFF;
 	margin-left:4px;
 	border:1px solid #FF9C6C;
 	border-radius:0.4em;
-	width:20%;}
+	width:30%;}
 h2 {color:#005E00;
 	background-color:#FFFF80;
 	border:1px solid #E6E600;
@@ -49,10 +49,14 @@ h2 {color:#005E00;
 	text-align:center;
 	}
 h3.history {color:#0070A6;}
-h5 {color:#0070A6;
-		width:20%;
-		text-shadow:0.1em 0.1em #E9E9E9;
-		}
+h5 {	color:#0070A6;
+	font-size:1.1em;
+	margin-top: 1.2em;
+	margin-bottom: 0.4em;
+	width:40%;
+	text-shadow:0.1em 0.1em #E9E9E9;
+}
+
 table {width:60%;
 		}
 th,td {color:#808040;
@@ -60,11 +64,16 @@ th,td {color:#808040;
 	border-collapse: separate;
 	border-spacing: 2px;
 	padding:0.2em;}
-li {list-style-type:circle;
+li.a {list-style-type:decimal;
 	margin-top:0.25em;
 	margin-bottom:0.25em;
 	}
-.zahl {list-style-type:decimal;}
+li.b {list-style-type:circle;
+	margin-top:0.25em;
+	margin-bottom:0.25em;
+	}
+
+li.zahl {list-style-type:decimal;}
 #gfs {color:darkblue;
 	text-shadow:0.1em 0.1em 2px rgb(128,128,255);
 	}
@@ -99,3 +108,12 @@ text-shadow:0.1em 0.1em #E9E9E9;
 		}
 .addendum {color:#FF0000;
 			font-size:0.9em;}
+			
+.tipp {	border: 2px solid #ff2020;
+	padding: 10px;
+	margin: 10px;
+}
+.in_rot {color:#FF0000; 
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+	font-size:1em;}

@@ -1,12 +1,11 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-# --------------------------------
+--------------------------------
 Obj=factory
 name=AVL_Schafsscheune_NIC
 copyright=RedRabbit
-pax_level=1
 intro_year=1800
 intro_month=1
 Location=land
@@ -14,6 +13,9 @@ DistributionWeight=127
 Productivity=100
 OutputGood[0]=Wolle
 OutputCapacity[0]=100
+sound=Schafe.wav
+sound_interval=120000
+# 120 Sekunden
 max_fields=20
 min_fields=1
 probability_to_spawn=10
@@ -22,6 +24,9 @@ storage_capacity[0]=40
 production_per_field[0]=30
 has_snow[0]=1
 electricity_amount=1
+pax_level=3
+passenger_boost=1000
+mail_boost=500
 climates=tundra
 MapColor=135
 Dims=1,1,4

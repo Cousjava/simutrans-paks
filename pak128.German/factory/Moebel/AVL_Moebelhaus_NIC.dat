@@ -1,14 +1,11 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 01-2011 
-#	Letzte Bearbeitung:
-#    $LastChangedDate: 2018-06-17 10:45:39 +0200 (So, 17. Jun 2018) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=AVL_Moebelhaus_NIC
 copyright=Lemuria
-pax_level=14
 intro_year=1999
 intro_month=1
 Location=City
@@ -18,6 +15,7 @@ InputGood[0]=Moebel
 InputCapacity[0]=400
 InputSupplier[0]=0
 electricity_amount=1
+pax_level=100
 passenger_boost=2000
 mail_boost=500
 climates=tundra

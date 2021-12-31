@@ -6,7 +6,6 @@
 Obj=factory
 Name=NDT_Importeur
 copyright=pumuckl999
-pax_level=20
 intro_year=1800
 intro_month=1
 retire_year=1980
@@ -23,6 +22,7 @@ OutputFactor[1]=100
 MapColor=194
 climates=tropic, desert
 electricity_amount=3
+pax_level=30
 passenger_boost=1000
 mail_boost=500
 dims=2,3,4

@@ -1,12 +1,11 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-# --------------------------------
+--------------------------------
 Obj=factory
 name=AVL_Getreidehof_alt_1975
 copyright=RedRabbit
-pax_level=2
 intro_year=1975
 intro_month=1
 Location=land
@@ -18,6 +17,9 @@ OutputFactor[0]=100
 OutputGood[1]=Weizen
 OutputCapacity[1]=800
 OutputFactor[1]=100
+sound=Hahn.wav
+sound_interval=120000
+# 120 Sekunden
 max_fields=30
 min_fields=0
 probability_to_spawn=20
@@ -32,6 +34,7 @@ production_per_field[1]=60
 spawn_weight[1]=8
 has_snow[1]=1
 electricity_amount=2
+pax_level=5
 passenger_boost=1000
 mail_boost=500
 climates=tundra

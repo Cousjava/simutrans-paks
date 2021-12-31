@@ -1,12 +1,11 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 31-05-2018
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Fahrzeuge_und_Haushaltsartikel
 copyright=pumuckl999
-pax_level=20
 intro_year=1905
 intro_month=1
 retire_year=1982
@@ -25,6 +24,7 @@ InputGood[2]=Moebel
 InputCapacity[2]=240
 InputSupplier[2]=1
 electricity_amount=10
+pax_level=40
 passenger_boost=2000
 mail_boost=500
 MapColor=132

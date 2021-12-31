@@ -6,7 +6,6 @@
 Obj=factory
 name=Gasthof_1800
 copyright=pumuckl999
-pax_level=10
 intro_year=1800
 intro_month=1
 retire_year=1985
@@ -33,6 +32,7 @@ InputFactor[4]=50
 InputGood[5]=Backwaren
 InputCapacity[5]=400
 electricity_amount=3
+pax_level=30
 passenger_boost=2000
 mail_boost=500
 expand_probability=40

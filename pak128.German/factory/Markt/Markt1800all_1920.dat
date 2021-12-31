@@ -1,12 +1,11 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 10-10-2017
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Markt_AK_1920
 copyright=Pumuckl999
-pax_level=10
 intro_year=1920
 intro_month=1
 retire_year=1995
@@ -45,6 +44,7 @@ InputGood[8]=Fisch
 InputCapacity[8]=75
 InputFactor[8]=20
 electricity_amount=3
+pax_level=50
 passenger_boost=2000
 mail_boost=500
 expand_probability=40

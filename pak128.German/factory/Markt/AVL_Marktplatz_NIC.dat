@@ -1,14 +1,11 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 11-2011
-#	Letzte Bearbeitung:
-#   $Date: 2018-06-24 10:18:01 +0200 (So, 24. Jun 2018) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=AVL_Marktplatz_NIC
 copyright=Lemuria
-pax_level=21
 intro_year=1955
 intro_month=1
 Location=City
@@ -41,6 +38,7 @@ InputSupplier[6]=1
 InputGood[7]=Gefluegel
 InputCapacity[7]=200
 electricity_amount=1
+pax_level=100
 passenger_boost=2000
 mail_boost=500
 climates=tundra

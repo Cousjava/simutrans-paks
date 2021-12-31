@@ -9,7 +9,7 @@
 #                             Language: de Deutsch                             #
 #                             Encoding: ISO-8859-1                             #
 #                             Font: Prop-Latin1.bdf                            #
-#                           Date Created: 16.10 2021                           #
+#                           Date Created: 30.12 2021                           #
 #                                                                              #
 ################################################################################
 #____________________________bridge - monorail_track____________________________
@@ -1901,7 +1901,7 @@ Hochbahn-Bahnhof
 Bahnsteig_Ampersand
 beidseitiger Schmetterlingsdachbahnsteig
 Bahnsteig_Ampersand2
-beidseitiger Schmetterlingsdachbahnsteig
+einseitiger Schmetterlingsdachbahnsteig
 Bahnsteig_Doppelgleis
 beidseitiger Bahnsteig
 Bahnsteig_mit_Glasdach
@@ -2189,19 +2189,19 @@ Bahnübergang
 ALP_Apotheke_NIC
 Apotheke (alpin)
 factory_ALP_Apotheke_NIC_details
-<title>Alpenländische Apotheke</title><p>In dieser Apotheke werden Arzneimittel für die kleinen Wehwehchen und Medizinprodukte verkauft. Der Apotheker steht dabei der Kundschaft mit Rat Tat zur Seite.</p>
+<p>In dieser Apotheke werden Arzneimittel für die kleinen Wehwehchen und Medizinprodukte verkauft. Der Apotheker steht dabei der Kundschaft mit Rat Tat zur Seite.</p><p><em>Benzin in der Apotheke?</em><br>Ja, Benzin wurde als Reinigungsmittel verkauft. Bertha Benz, die Frau des Automobilpioniers, fuhr im August 1888 die ersten Fernfahrt der Automobilgeschichte. Die insgesamt 180 Kilomter lange Tour führt von Mannheim nach Pforzheim, ihrer Geburtsstadt und zurück. Eine Apotheke in Wiesloch bei Heidelberg kam dank der Überlandfahrt zu unerwartetem Ruhm: Sie gilt als erste Tankstelle der Welt, da Bertha Benz dort den nötigen Treibstoff Ligroin (Leichtbenzin) kaufte. Der Apotheker staunte nicht schlecht, als die Dame den gesamten verfügbaren Vorrat an Reinigungsmittel kaufte. Noch lange Zeit danach konnte man Benzin und andere Treibstoffe nur in Apotheken erwerben.</p>
 ALP_Baumarkt_NIC
 Baumarkt (Süddt., 1930)
 factory_ALP_Baumarkt_NIC_details
-<title>Baumarkt</title><p>Der "Alpbau-Baumarkt" ist die zentrale Anlaufstelle für alle Hand- und Heimwerker der näheren Umgebung.</p>
+<p>Der "Alpbau-Baumarkt" ist die zentrale Anlaufstelle für alle Hand- und Heimwerker der näheren Umgebung.</p>
 ALP_Buchladen_NIC
 Buchladen (alpin)
 factory_ALP_Buchladen_NIC_details
-<title>Buchladen</title><p>Romane,Thriller, Dokumentationen und vieles mehr an Literatur kann hier erworben werden.</p>
+<p>Romane,Thriller, Dokumentationen und vieles mehr an Literatur kann hier erworben werden.</p>
 ALP_Elektroshop_NIC
-Elektroshop (alpin)
+Elektrofachmarkt (alpin)
 factory_ALP_Elektroshop_NIC_details
-<title>Elektrofachmarkt</title><p>Die Simmos Elektrohandels GmbH ist eine Elektronik-Fachmarktkette, welche Telekommunikation, Foto, Computer, Hifi, Games, DVDs, CDs, TV und Zubehör verkauft.</p>
+<p>Die Simmos Elektrohandels GmbH ist eine Elektronik-Fachmarktkette, welche Telekommunikation, Foto, Computer, Hifi, Games, DVDs, CDs, TV und Zubehör verkauft.</p>
 ALP_Moebelhaus_NIC
 Möbelhaus (alpin)
 factory_ALP_Moebelhaus_NIC_details
@@ -2209,45 +2209,45 @@ factory_ALP_Moebelhaus_NIC_details
 ALP_Saegewerk_NIC
 Sägewerk (alpin)
 factory_ALP_Saegewerk_NIC_details
-<title>BORR - Sägemühle</title><p>Die BORR produziert Bretter, Latten, Rund- und Kanthölzer für Handwerker, die Industrie und Privatkunden.</p>
+<p><em>BORR - Sägemühle</em><br>Die BORR produziert Bretter, Latten, Rund- und Kanthölzer für Handwerker, die Industrie und Privatkunden.</p>
 ALP_Supermarkt_NIC
 Supermarkt (alpin, 1958)
 factory_ALP_Supermarkt_NIC_details
-<title>Alpenländischer Supermarkt</title><p>Ein Supermarkt ist ein meist sehr großes Einzelhandelsgeschäft, das außer Lebensmitteln auch andere Artikel des täglichen Bedarfs (Socken, Staubsauger und Toilettenartikel) anbietet.</p>
+<p>Ein Supermarkt ist ein meist sehr großes Einzelhandelsgeschäft, das außer Lebensmitteln auch andere Artikel des täglichen Bedarfs (Socken, Staubsauger und Toilettenartikel) anbietet.</p>
 ALP_Tankstelle_NIC
 Tankstelle (alpin, 1950)
 factory_ALP_Tankstelle_NIC_details
-<title>SEMI - Tankstelle</title><p>Außer Diesel und Benzin verkauft dieser Shop noch Autozubehör und -Pflegeartikel</p>
+<p><em>SEMI - Tankstelle</em><br>Außer Diesel und Benzin verkauft dieser Shop noch Autozubehör und -Pflegeartikel</p>
 ALP_Viehhof_NIC
 veraltet nicht benutzen
 factory_ALP_Viehhof_NIC_details
-<title>Viehhof (alpin)</title><p>Dieser Viehhof mit seinen Eier legenden Kühen dient nur der Kompatibilität zu alten gespeicherten Spielständen. Nicht neu bauen.</p>
+<p>Dieser Viehhof mit seinen Eier legenden Kühen dient nur der Kompatibilität zu alten gespeicherten Spielständen. Nicht neu bauen.</p>
 ALP_Viehhof_NIC_2
 Viehhof (alpin)
 factory_ALP_Viehhof_NIC_2_details
-<title>Viehhof Untermoser</title><p>Familie Untermoser ist Viehzüchter in der vierten Generation.</p>
+<p><em>Viehhof Untermoser</em><br>Familie Untermoser ist Viehzüchter in der vierten Generation.</p>
 alte Raffinerie
 Raffinerie (1905)
 factory_alte Raffinerie_details
-<title>Alte Raffinerie</title><p>Eine Erdölraffinerie gewinnt aus dem Rohstoff Erdöl durch Destillation, Fraktion und Extraktion unter Verwendung von Druck und Vakuum Treibstoffe, Schmieröle, Asphalt sowie diverse Kunstoffausgangsprodukte.</p>
+<p>Eine Erdölraffinerie gewinnt aus dem Rohstoff Erdöl durch Destillation, Fraktion und Extraktion unter Verwendung von Druck und Vakuum Treibstoffe, Schmieröle, Asphalt sowie diverse Kunstoffausgangsprodukte.</p>
 alte_Kfz-Fabrik
 Kfz-Fabrik
 factory_alte_Kfz-Fabrik_details
-<title>Lemuria AG</title><p>Die Lemuria AG produziert formschöne Sportwagen, Cabriolets und brave Familienschaukeln.</p>
+<p><em>Lemuria AG</em><br>Die Lemuria AG produziert formschöne Sportwagen, Cabriolets und brave Familienschaukeln.</p>
 alte_Lebensmittelfabrik
 Lebensmittelfabrik
 factory_alte_Lebensmittelfabrik_details
-<title>Mayerhofers Lebensmittel-Fabrik</title><p>Mayerhofers verarbeitet Fleisch, Geflügel und Fisch zu lange haltbaren Konserven, außerdem Tiefkühlware wie Fisch- und Hühnerfilets sowie Schnitzel und Koteletts, die Groß und Klein begeistert vertilgen ...</p>
+<p><em>Mayerhofers Lebensmittel-Fabrik</em><br>Mayerhofers verarbeitet Fleisch, Geflügel und Fisch zu lange haltbaren Konserven, außerdem Tiefkühlware wie Fisch- und Hühnerfilets sowie Schnitzel und Koteletts, die Groß und Klein begeistert vertilgen ...</p>
 alte_Molkerei
 Molkerei
 alte_Papierfabrik
 Papierfabrik (1919)
 factory_alte_Papierfabrik_details
-<title>Papierfabrik 1919</title><p>Eine Papierfabrik unterscheidet sich von einer Papiermühle dahingehend, dass bei letzterer der Arbeitsvorgang vor allem "von Hand" von statten geht.Die Papierfabrik hingegen beinhaltet meist mehrere Langsieb- oder Rundsiebpapiermaschinen, die aus dem Rohstoff Zellulose gewöhnliches Papier, Kartonage oder ~ erzeugen.</p>
+<p>Eine Papierfabrik unterscheidet sich von einer Papiermühle dahingehend, dass bei letzterer der Arbeitsvorgang vor allem "von Hand" von statten geht.Die Papierfabrik hingegen beinhaltet meist mehrere Langsieb- oder Rundsiebpapiermaschinen, die aus dem Rohstoff Zellulose gewöhnliches Papier, Kartonage oder ~ erzeugen.</p>
 alte_Werft
 Werft
 factory_alte_Werft_details
-<title>alte Werft</title><p>Hier werden noch ganz traditionell Segelschiffe gebaut. Diese Werft verbraucht deshalb vorwiegend Schnittholz in Form von Balken und Brettern. Dazu kommt viel Leinwand und Takelage. Nur für Umlenkrollen, Anker und Beschläge verwendet man Stahl. Gelegentlich fragt ein Kunde, ob nicht eine Dampfmaschine im Schiff sinnvoll sei. Der Besitzer der Werft erklärt dann, dass sich Holzschiffe und Feuer nicht vertragen. Er möchte weder brennende noch auseinander fliegende Schiffe bauen. So manche Dampfmaschine ist bereits explodiert und er möchte seinen Namen nicht als Erbauer solch eines Schiffs in der Zeitung stehen haben.  </p>
+<p>Hier werden noch ganz traditionell Segelschiffe gebaut. Diese Werft verbraucht deshalb vorwiegend Schnittholz in Form von Balken und Brettern. Dazu kommt viel Leinwand und Takelage. Nur für Umlenkrollen, Anker und Beschläge verwendet man Stahl. Gelegentlich fragt ein Kunde, ob nicht eine Dampfmaschine im Schiff sinnvoll sei. Der Besitzer der Werft erklärt dann, dass sich Holzschiffe und Feuer nicht vertragen. Er möchte weder brennende noch auseinander fliegende Schiffe bauen. So manche Dampfmaschine ist bereits explodiert und er möchte seinen Namen nicht als Erbauer solch eines Schiffs in der Zeitung stehen haben.  </p>
 AlteGastwirtschaft
 Gastwirtschaft
 factory_AlteGastwirtschaft_details
@@ -2255,11 +2255,11 @@ factory_AlteGastwirtschaft_details
 alter_Kamerahersteller
 Kamerahersteller (1912)
 factory_alter_Kamerahersteller_details
-<title>Simhof</title><p>Die Firma Simhof, gegründet 1887, hat sich frühzeitig, nach dem Aufkommen von Gelatine-Trockenplatten, auf die Herstellung von professionellen Fotoapparaten spezialisiert. Die gute Zusammenarbeit mit einer Glashütte im Alpenvorland erlaubt die Herstellung von Objektiven von außergewöhnlicher Güte und internationalem Ruf.  </p>
+<p><em>Simhof</em><br>Die Firma Simhof, gegründet 1887, hat sich frühzeitig, nach dem Aufkommen von Gelatine-Trockenplatten, auf die Herstellung von professionellen Fotoapparaten spezialisiert. Die gute Zusammenarbeit mit einer Glashütte im Alpenvorland erlaubt die Herstellung von Objektiven von außergewöhnlicher Güte und internationalem Ruf.  </p>
 alter_Obstbauer
 Obstbauer
 factory_alter_Obstbauer_details
-<title>Obstbauer</title><p>Süße Früchte für Jung und Alt.</p>
+<p>Süße Früchte für Jung und Alt.</p>
 alter_Schlachthof
 Schlachthof (1892)
 factory_alter_Schlachthof_details
@@ -2267,125 +2267,125 @@ factory_alter_Schlachthof_details
 altes Kohlekraftwerk
 Kohlekraftwerk (Ostdt., 1908)
 factory_altes Kohlekraftwerk_details
-<title>Altes Kohlekraftwerk</title><p>Das Kraftwerk wandelt mittels thermischer Verbrennung Wärme in elektrische Energie um.</p>
+<p>Das Kraftwerk wandelt mittels thermischer Verbrennung Wärme in elektrische Energie um.</p>
 Apotheke1800_NIC
 Apotheke
 factory_Apotheke1800_NIC_details
-<title>Apotheke</title><p>In dieser Apotheke kennt der Inhaber den Kunden beim Vornamen und weiß über seine Krankengeschichte fast so gut wie der Hausarzt Bescheid.</p>
+<p>In dieser Apotheke kennt der Inhaber den Kunden beim Vornamen und weiß über seine Krankengeschichte fast so gut wie der Hausarzt Bescheid.</p>
 Apotheke1965_NIC
 Apotheke (1965)
 factory_Apotheke1965_NIC_details
-<title>Moderne Apotheke</title><p>Als Apotheke wird ein Geschäft bezeichnet, in dem Arzneimittel und Medizinprodukte verkauft und in kleinerem Maße auch hergestellt werden.</p>
+<p>Als Apotheke wird ein Geschäft bezeichnet, in dem Arzneimittel und Medizinprodukte verkauft und in kleinerem Maße auch hergestellt werden.</p>
 AVL_Apotheke_NIC
 Apotheke (Süddt.)
 factory_AVL_Apotheke_NIC_details
-<title>Süddeutsche Apotheke</title><p>Eine hübsche süddeutsche Apotheke. Hier kennt man den Kunden noch beim Namen, was der persönlichen Beratung zugute kommt. Der Apotheker kennt die Krankengeschichte der jeweiligen Person fast so gut, wie deren Hausarzt.</p>
+<p>Eine hübsche süddeutsche Apotheke. Hier kennt man den Kunden noch beim Namen, was der persönlichen Beratung zugute kommt. Der Apotheker kennt die Krankengeschichte der jeweiligen Person fast so gut, wie deren Hausarzt.</p>
 AVL_Autohaus_NIC
 Autohaus (Süddt., 1982)
 factory_AVL_Autohaus_NIC_details
-<title>Süddeutsches Autohaus</title><p>In diesem Autohaus ist vom flotten Sportwagen bis zur Familienkutsche alles erhältlich, was des Autonarrens Herz begehrt.</p>
+<p>In diesem Autohaus ist vom flotten Sportwagen bis zur Familienkutsche alles erhältlich, was des Autonarrens Herz begehrt.</p>
 AVL_Baggersee
 Sand-Baggersee
 factory_AVL_Baggersee_details
-<title>Süddeutscher Baggersee</title><p>Brumm brumm,jede Menge Sand und Steine</p>
+<p>Brumm brumm,jede Menge Sand und Steine</p>
 AVL_Baumarkt_NIC
 Baumarkt (Süddt., 1930)
 factory_AVL_Baumarkt_NIC_details
-<title>Moderner Süddeutscher Baumarkt</title><p>Der Baumarkt führt ein umfangreiches Sortiment an Sanitär-, Elektro- und Baumaterialien für den Häuslebauer und Heimwerker.</p>
+<p>Der Baumarkt führt ein umfangreiches Sortiment an Sanitär-, Elektro- und Baumaterialien für den Häuslebauer und Heimwerker.</p>
 AVL_Betonwerk
 Betonwerk (Süddt., 1960)
 factory_AVL_Betonwerk_details
-<title>Süddeutsches Betonwerk</title><p>Das Betonwerk produziert Treppen und Balkone, Decken und Wände sowie Blumentröge und Wegbegrenzungen.</p>
+<p>Das Betonwerk produziert Treppen und Balkone, Decken und Wände sowie Blumentröge und Wegbegrenzungen.</p>
 AVL_Brauerei1897_NIC
 Brauerei (Süddt., 1897)
 factory_AVL_Brauerei1897_NIC_details
-<title>Süddeutsche - Brauerei 1897</title><p>Hier wird Getreide und Hopfen zu Bier. Ein zünftiges Maß für den Mann mit Geschmack. Das Bier wird hier erstmalig auch in Flaschen abgefüllt. Das erleichtert den Absatz an Privathaushalte. Neben den traditionellen Fässern kommen Bügelflaschen zum Einsatz. Der Kronkorken wurde 1893 in den USA erfunden. Ab 1906 wird der Kronkorken auch in Deutschland verwendet, etwas später auch in dieser Fabrik.</p>
+<p>Hier wird Getreide und Hopfen zu Bier. Ein zünftiges Maß für den Mann mit Geschmack. Das Bier wird hier erstmalig auch in Flaschen abgefüllt. Das erleichtert den Absatz an Privathaushalte. Neben den traditionellen Fässern kommen Bügelflaschen zum Einsatz. Der Kronkorken wurde 1893 in den USA erfunden. Ab 1906 wird der Kronkorken auch in Deutschland verwendet, etwas später auch in dieser Fabrik.</p>
 AVL_Brauerei1965_NIC
 Brauerei (Süddt., 1965)
 factory_AVL_Brauerei1965_NIC_details
-<title>Süddeutsche Brauerei - 1965</title><p>Diese Brauerei beherrscht die Braukunst auf höchstem Niveau.</p>
+<p>Diese Brauerei beherrscht die Braukunst auf höchstem Niveau.</p>
 AVL_Buchladen_NIC
 Buchladen (Süddt.)
 factory_AVL_Buchladen_NIC_details
-<title>Buchladen</title><p>Romane, Thriller, Dokumentationen und vieles mehr an Literatur kann hier erworben werden.</p>
+<p>Romane, Thriller, Dokumentationen und vieles mehr an Literatur kann hier erworben werden.</p>
 AVL_E-Laden_NIC
 Elektroshop (Süddt.)
 factory_AVL_E-Laden_NIC_details
-<title>Electronic Shop</title><p>Dieses Fachgeschäft verkauft vom Fernseher bis zum Kühlschrank alle möglichen Haushaltsgeräte.</p>
+<p>Dieses Fachgeschäft verkauft vom Fernseher bis zum Kühlschrank alle möglichen Haushaltsgeräte.</p>
 AVL_Getreidehof_alt
 Getreidehof (Süddt.)
 factory_AVL_Getreidehof_alt_details
-<title>Getreidehof</title><p>Getreide für die Brauereien und und Hanf für die Textilindustrie.</p>
+<p>Getreide für die Brauereien und und Hanf für die Textilindustrie.</p>
 AVL_Getreidehof_alt_1975
 Getreidehof (Süddt., 1975 modernisiert)
 factory_AVL_Getreidehof_alt_1975_details
-<title>Getreidehof 1975</title><p>Gerste für die Brauereien und Weizen für die die Bäckereien</p>
+<p>Gerste für die Brauereien und Weizen für die die Bäckereien</p>
 AVL_Kelterei1800_NIC
 Kelterei (Süddt.)
 factory_AVL_Kelterei1800_NIC_details
-<title>Kelterei</title><p>In einer Kelterei wird in einem Kelter mittels Druck der "Saft" aus den Weinbeeren gepresst.</p>
+<p>In einer Kelterei wird in einem Kelter mittels Druck der "Saft" aus den Weinbeeren gepresst.</p>
 AVL_Marktplatz_1800
 Marktplatz (Süddt.)
 AVL_Marktplatz_NIC
 Marktplatz (Süddt., 1955)
 factory_AVL_Marktplatz_NIC_details
-<title>Süddeutscher Markt</title><p>Als Markt wird im allgemeinen ein Ort bezeichnet, an dem Waren regelmäßig auf einem meist zentralen Platz gehandelt werden.</p>
+<p>Als Markt wird im allgemeinen ein Ort bezeichnet, an dem Waren regelmäßig auf einem meist zentralen Platz gehandelt werden.</p>
 AVL_Moebelhaus_NIC
 Möbelhaus (Süddt., 1999)
 factory_AVL_Moebelhaus_NIC_details
-<title>Möbelhaus</title><p>Küchen, Schlaf- und Wohnzimmer, Arbeitszimmer und vieles mehr. Das Turm & Weiß Möbelhaus erfüllt all Ihre Wohnträume!</p>
+<p>Küchen, Schlaf- und Wohnzimmer, Arbeitszimmer und vieles mehr. Das Turm & Weiß Möbelhaus erfüllt all Ihre Wohnträume!</p>
 AVL_Muehle1983_NIC
 Mühle (Süddt., 1983)
 factory_AVL_Muehle1983_NIC_details
-<title>Mühle-Alpenvorland</title><p>In Kornmühlen werden verschiedene Getreidesorten wie Roggen, Dinkel, Weizen und Gerste zu Mehl verarbeitet. Dieses wird dann entweder an Großabnehmer wie den Bäckereien oder auch an den Einzelhandel ausgeliefert.</p>
+<p>In Kornmühlen werden verschiedene Getreidesorten wie Roggen, Dinkel, Weizen und Gerste zu Mehl verarbeitet. Dieses wird dann entweder an Großabnehmer wie den Bäckereien oder auch an den Einzelhandel ausgeliefert.</p>
 AVL_Oelfeld
 Ölfeld (Süddt., 1990)
 factory_AVL_Oelfeld_details
-<title>Erdöllagerstätte</title><p>Als "Ölfeld" wird ein Gebiet bezeichnet, unter dem sich eine Erdöllagerstätte befindet.</p>
+<p><em>Erdöllagerstätte</em><br>Als "Ölfeld" wird ein Gebiet bezeichnet, unter dem sich eine Erdöllagerstätte befindet.</p>
 AVL_Saegewerk1800_NIC
 Sägewerk (Süddt.)
 factory_AVL_Saegewerk1800_NIC_details
-<title>Süddeutsche Sägemühle</title><p>Bretter, Latten, Rund- und Edelhölzer für den Heimwerker und das örtliche Handwerk</p>
+<p>Bretter, Latten, Rund- und Edelhölzer für den Heimwerker und das örtliche Handwerk</p>
 AVL_Saegewerk1969_NIC
 Sägewerk (Süddt., 1969)
 factory_AVL_Saegewerk1969_NIC_details
-<title>Modernes Sägewerk</title><p>Die ASIM-Holz GmbH produziert Bretter, Latten, Kanthölzer und Furniere für die Möbelindustrie.</p>
+<p>Die ASIM-Holz GmbH produziert Bretter, Latten, Kanthölzer und Furniere für die Möbelindustrie.</p>
 AVL_Schafsscheune_NIC
 Schafsscheune (Süddt.)
 factory_AVL_Schafsscheune_NIC_details
-<title>Schafzucht Rainthaler</title><p>Mäh määääääh</p>
+<p><em>Schafzucht Rainthaler</em><br>Mäh määääääh</p>
 AVL_Schlachthof_NIC
 Schlachthof (Süddt., 1982)
 factory_AVL_Schlachthof_NIC_details
-<title>Schlachthof</title><p>Kühe gehen an einem Ende hinein und Fleisch, gut gekühlt und hygienisch verpackt, kommt an dem anderen Ende wieder heraus.</p>
+<p>Kühe gehen an einem Ende hinein und Fleisch, gut gekühlt und hygienisch verpackt, kommt an dem anderen Ende wieder heraus.</p>
 AVL_Supermarkt_NIC
 Supermarkt (Süddt.)
 factory_AVL_Supermarkt_NIC_details
-<title>Voralpenländischer Supermarkt</title><p>Die Supermärkte der Michelstadt Handels GmbH verkaufen hauptsächlich Lebensmittel des täglichen Bedarfs. Mehr und mehr verdrängen sie die Tante-Emma-Läden.</p>
+<p>Die Supermärkte der Michelstadt Handels GmbH verkaufen hauptsächlich Lebensmittel des täglichen Bedarfs. Mehr und mehr verdrängen sie die Tante-Emma-Läden.</p>
 AVL_Tankstelle_NIC
 Tankstelle (Süddt., 1982)
 factory_AVL_Tankstelle_NIC_details
-<title>Tankstelle</title><p>Diesel und Benzin zu günstigen Preisen</p>
+><p>Diesel und Benzin zu günstigen Preisen</p>
 AVL_Textil_1836
 Textilfabrik (Süddt., 1836)
 factory_AVL_Textil_1836_details
-<title>Textilfabrik</title><p>In der Textilfabrik werden Kleidungsstücke für jedermann sowie Mode für die Dame von Welt hergestellt. Dabei wird sowohl Wolle als auch Leinen verwendet.</p>
+<p>In der Textilfabrik werden Kleidungsstücke für jedermann sowie Mode für die Dame von Welt hergestellt. Dabei wird sowohl Wolle als auch Leinen verwendet.</p>
 AVL_Viehhof1940_NIC
 Viehhof (Süddt., 1940)
 factory_AVL_Viehhof1940_NIC_details
-<title>Viehhof Graimelmeyer</title><p>Ein süddeutscher Viehhof</p>
+<p><em>Viehhof Graimelmeyer</em><br>Ein süddeutscher Viehhof<br>Muh Muuuuuuuh</p>
 AVL_Zementwerk1800_NIC
 Zementwerk (Süddt.)
 factory_AVL_Zementwerk1800_NIC_details
-<title>Zementfabrik 1852</title><p>Aus Sand und Steinen wird eine graue Masse namens Zement. Traditionell wurde der Zement in den Anfangstagen in ausgedienten Weinfässern versandt. Die leeren Gebinde wurden zurückgegeben und wieder befüllt.</p>
+<p>Aus Sand und Steinen wird eine graue Masse namens Zement. Traditionell wurde der Zement in den Anfangstagen in ausgedienten Weinfässern versandt. Die leeren Gebinde wurden zurückgegeben und wieder befüllt.</p>
 AVL_Zementwerk1960_NIC
 Zementwerk (Süddt., 1960)
 factory_AVL_Zementwerk1960_NIC_details
-<title>Zementfabrik 1960</title><p>Aus Sand und Steinen wird eine graue Masse namens Zement.</p>
+<p>Aus Sand und Steinen wird eine graue Masse namens Zement.</p>
 BaeckereiGadebusch_NIC
 Bäckerei (Norddt., 1920)
 factory_BaeckereiGadebusch_NIC_details
-<title>Großbäckerei</title><p>Jetzt hält die industrielle Produktion Einzug in das Backgewerbe. Hier werden von früh bis spät in großen Stückzahlen Brötchen, Gebäck und leckere Brote für das ganze Land hergestellt.</p>
+<p><em>Großbäckerei Gadebusch</em><br>Jetzt hält die industrielle Produktion Einzug in das Backgewerbe. Hier werden von früh bis spät in großen Stückzahlen Brötchen, Gebäck und leckere Brote auf Backstraßen für das ganze Land hergestellt.<br>Die letzte Schicht bei der Mecklenburg Bäckerei Gadebusch wurde am 17. Januar 1992 gefahren. Danach haben Mitglieder einer Airsoft-Gruppe in der Industrieruine gespielt. 2014 wurde sie ohne Genehmigung abgerissen. </p>
 Bauernhof_All1800
 Hühnerhof (1800)
 factory_Bauernhof_All1800_details
@@ -2393,37 +2393,37 @@ factory_Bauernhof_All1800_details
 Bauernhof_MGB
 Getreidehof (Norddt./Ostdt.)
 factory_Bauernhof_MGB_details
-<title>Typisch norddeutscher Fachwerkhof</title><p>Das Getreide wird hier noch mit der Sense gemäht,  zu Garben gebunden und zu traditionellen Heumanderl aufgestellt. In anderen Regionen auch Dieme genannt. Der Grund für diese seit vorgeschichtlicher Zeit tradierte Vorgehensweise: völlig trockenes Getreide lässt sich zwar noch mit einem Mähdrescher ernten aber nicht mit der Sense mähen. Erstens ist das Stroh dann hart wie Holz, zweitens fallen beim Schlag die Körner aus den Ähren. Noch leicht grünen Stängel lassen sich dagegen leicht mähen und beim trocknen im Heumanderl werden die Ären nicht mehr vom Wind bewegt, damit fallen die Körner nicht vorzeitig aus. Auch die Gefahr dass Sturm oder Regen das Getreide flach legt, ist damit gebannt. Auf den Boden gedrückte Halme lassen sich ebenfalls schwer mähen und trocken nicht mehr gut. Landwirte sprechen dann von Lagerung oder Lagergetreide. Damit ist nicht die Aufbewahrung gemeint, sondern das liegen der Halme. Noch grüne Halme können, wenn sie vom Wind nieder gedrückt wurden, wieder aufstehen. Die Pflanze verändert dazu in den Knoten das Wachstum so, dass es wie ein Gelenk wirkt. Gelbe oder trockene Halme sind dazu nicht mehr in der Lage.</p>
+<p><em>Typisch norddeutscher Fachwerkhof</em><br>Das Getreide wird hier noch mit der Sense gemäht,  zu Garben gebunden und zu traditionellen Heumanderl aufgestellt. In anderen Regionen auch Dieme genannt. Der Grund für diese seit vorgeschichtlicher Zeit tradierte Vorgehensweise: völlig trockenes Getreide lässt sich zwar noch mit einem Mähdrescher ernten aber nicht mit der Sense mähen. Erstens ist das Stroh dann hart wie Holz, zweitens fallen beim Schlag die Körner aus den Ähren. Noch leicht grünen Stängel lassen sich dagegen leicht mähen und beim trocknen im Heumanderl werden die Ären nicht mehr vom Wind bewegt, damit fallen die Körner nicht vorzeitig aus. Auch die Gefahr dass Sturm oder Regen das Getreide flach legt, ist damit gebannt. Auf den Boden gedrückte Halme lassen sich ebenfalls schwer mähen und trocken nicht mehr gut. Landwirte sprechen dann von Lagerung oder Lagergetreide. Damit ist nicht die Aufbewahrung gemeint, sondern das liegen der Halme. Noch grüne Halme können, wenn sie vom Wind nieder gedrückt wurden, wieder aufstehen. Die Pflanze verändert dazu in den Knoten das Wachstum so, dass es wie ein Gelenk wirkt. Gelbe oder trockene Halme sind dazu nicht mehr in der Lage.</p>
 Bauernhof_MGB1850
 Obstbauer Bayersoyen (1850)
 factory_Bauernhof_MGB1850_details
-<title>Bauernhof nähe Bad Bayersoyen</title><p>Wurde leicht renovierungsbedürftig anbgeboten. Deshalb noch im Originalzustand. </p>
+<p><em>Bauernhof nähe Bad Bayersoyen</em><br>Wurde leicht renovierungsbedürftig anbgeboten. Deshalb noch im Originalzustand. </p>
 Bauernhof_Ost1870
 Zuckerrübenbauer (1870)
 factory_Bauernhof_Ost1870_details
-<title>Ostdeutscher Gutshof</title><p>Hier gibt es süße Sachen, wer Obst nicht mag der darf Zuckerrüben essen und in heutiger Zeit als Gast die Ferien hier verbringen.</p>
+<p><em>Ostdeutscher Gutshof</em><br>Hier gibt es süße Sachen, wer Obst nicht mag der darf Zuckerrüben essen und in heutiger Zeit als Gast die Ferien hier verbringen.</p>
 Bauernhof_Tierfutter
 Tierfutterproduzent (Norddt.)
 factory_Bauernhof_Tierfutter_details
-<title>Tierfutter Fabrik</title><p>Die Familie Pell verkauft Kraftfutter für Hühner. Dazu wird Gerste genau abgestimmt auf die Bedürfnisse der Tiere, mit Eiweiß, Ölen und Mineralien gemischt, gemahlen und zu Würstchen gepresst. Die Handhabung von Pellets ist einfach in Verkauf, Transport, Lagerung, Portionierung und Verteilung an die Tiere. Da weitgehend Staubfrei, kann auf Verpackung verzichtet werden und es in Silos gelagert und transportiert werden. Ursprünglich stelle die Familie Pell das Kraftfutter nur für die eigenen Hühner her. Nachbarn und Freunde fanden diese Art der Fütterung praktisch und so verkauft die Familie Pell inzwischen ihre gesamte Getreideproduktion in Form von Pellets an Hühnerzüchter im ganzen Land. Die Geschäfte gehen gut, die Nachfrage ist hoch.</p>
+<p>Die Familie Pell verkauft Kraftfutter für Hühner. Dazu wird Gerste genau abgestimmt auf die Bedürfnisse der Tiere, mit Eiweiß, Ölen und Mineralien gemischt, gemahlen und zu Würstchen gepresst. Die Handhabung von Pellets ist einfach in Verkauf, Transport, Lagerung, Portionierung und Verteilung an die Tiere. Da weitgehend Staubfrei, kann auf Verpackung verzichtet werden und es in Silos gelagert und transportiert werden. Ursprünglich stelle die Familie Pell das Kraftfutter nur für die eigenen Hühner her. Nachbarn und Freunde fanden diese Art der Fütterung praktisch und so verkauft die Familie Pell inzwischen ihre gesamte Getreideproduktion in Form von Pellets an Hühnerzüchter im ganzen Land. Die Geschäfte gehen gut, die Nachfrage ist hoch.</p>
 Baumarkt_NIC
 Baumarkt (1965)
 factory_Baumarkt_NIC_details
-<title>Baumarkt</title><p>Dieser Baumarkt führt ein umfangreiches Sortiment an Sanitär-, Elektro- und Baumaterialien für den Häuslebauer und Heimwerker.</p>
+<p>Dieser Baumarkt führt ein umfangreiches Sortiment an Sanitär-, Elektro- und Baumaterialien für den Häuslebauer und Heimwerker.</p>
 Baustelle_Eisenbahntunnel
 Baustelle Eisenbahntunnel
 Baustoffhandel1800
 Baumaterial- und Brennstoffhandel
 factory_Baustoffhandel1800_details
-<title>Baustoffhandel mit Schreinerei</title><p>Dieser Baustoffhandel ist aus einer Sägemühle hervorgegangen. Da der nahegelegene Wald gerodet und zu Acker umgewandelt wurde, musste sich der Sägmüller nach neuen Einnahmequellen umsehen. Er verlegte sich auf den Handel mit Bau- und Brennstoffen. Der Wald lieferte kein Brennholz mehr, so kam die Braunkohle der nahegelegenen neuen Zeche gerade recht. Das alte Windrad treibt nun die Säge und die Hobelmaschine einer Schreinerei. Der Sägmüller kann damit neben einfachen Baustoffen auch Fenster und Türen, auf Maß gefertigt und bereits fertig verglast, anbieten. Nebenbei vermietet er noch Gerüste und Leitern.</p>
+<p><em>Baustoffhandel mit Schreinerei</em><br>Dieser Baustoffhandel ist aus einer Sägemühle hervorgegangen. Da der nahegelegene Wald gerodet und zu Acker umgewandelt wurde, musste sich der Sägmüller nach neuen Einnahmequellen umsehen. Er verlegte sich auf den Handel mit Bau- und Brennstoffen. Der Wald lieferte kein Brennholz mehr, so kam die Braunkohle der nahegelegenen neuen Zeche gerade recht. Das alte Windrad treibt nun die Säge und die Hobelmaschine einer Schreinerei. Der Sägmüller kann damit neben einfachen Baustoffen auch Fenster und Türen, auf Maß gefertigt und bereits fertig verglast, anbieten. Nebenbei vermietet er noch Gerüste und Leitern.</p>
 Baustoffhof_1800
 Baustoffhof (1871)
 factory_Baustoffhof_1800_details
-<title>Baustoffhof mit Schlosserei</title><p>Dieser Baustoffhof liefert alles, was im hochwertigen Hausbau benötigt wird. Innovativ bietet man hier modernste Baustoffe wie Zement, Betonfertigteile und Stahlträger an. Dort, wo Fürsten und Könige Glaspaläste bauen, will auch der betuchte Fabrikbesitzer nicht nachstehen. Die angegliederte Schlosserei liefert auf Maß gefertigt auch große, bereits vollständig verglaste Fenster mit modernem Metallrahmen - sehr zum Verdruss eines nahegelegenen Glasers. Die angebotenen Haushaltsgeräte funktionieren selbstverständlich nur manuell.</p>
+<p><em>Baustoffhof mit Schlosserei</em><br>Dieser Baustoffhof liefert alles, was im hochwertigen Hausbau benötigt wird. Innovativ bietet man hier modernste Baustoffe wie Zement, Betonfertigteile und Stahlträger an. Dort, wo Fürsten und Könige Glaspaläste bauen, will auch der betuchte Fabrikbesitzer nicht nachstehen. Die angegliederte Schlosserei liefert auf Maß gefertigt auch große, bereits vollständig verglaste Fenster mit modernem Metallrahmen - sehr zum Verdruss eines nahegelegenen Glasers. Die angebotenen Haushaltsgeräte funktionieren selbstverständlich nur manuell.</p>
 Betonwerk
 Betonwerk (1970)
 factory_Betonwerk_details
-<title>Betonfertigteile Werk</title><p>Tröge, Treppen, Wände, Böden und Bögen aus Fertigbeton</p>
+<p><em>Betonfertigteile Werk</em><br>Tröge, Treppen, Wände, Böden und Bögen aus Fertigbeton</p>
 Betonwerk_1871
 Betonwerk
 factory_Betonwerk_1871_details
@@ -2437,11 +2437,11 @@ Biomasse Kraftwerk
 factory_Biomassekraftwerk_details
 <h1>Biomasse-Kraftwerk-Schilling</h1><p>Es galt als eines der schönsten Biomassekraftwerke Deutschlands. Das Kraftwerk hatte 6,7 MW Leistung, das entspricht 1450 Einfamilienhäusern. Die Brennstoffe des Kraftwerks waren Baumrinde, Pferdemist und Waldhackschnitzel, sowie vermutlich auch die Holzabfälle des Holzwerk Schilling, dem Eigentümer des Kraftwerks. Die Anlage erzeugte auch Fernwärme für den Ort Schwendi und die Fachklinik für Neurologieund in Dietenbronn, sowie für die Holztrocknungsanlage. Nach der Insolvenz wurde die Anlage abgebaut und anderswo verwendet.</p>
 factory_Brennstoffhandel_details
-<title>Brennstoffhandel Untermoser</title><p>Kohle, Holz und Brickets sorgen für ein mollig warmes Heim bei der Kundschaft.</p>
+<p><em>Brennstoffhandel Untermoser</em><br>Kohle, Holz und Brickets sorgen für ein mollig warmes Heim bei der Kundschaft.</p>
 Buchhandlung
 Buchhandlung (1800)
 factory_Buchhandlung_details
-<title>Buchladen</title><p>Romane, Geschichten und Schreibutensilien können hier erworben werden.</p>
+<p>Romane, Geschichten und Schreibutensilien können hier erworben werden.</p>
 Chemiewerk_1886
 Chemiewerk
 factory_Chemiewerk_1886_details
@@ -2453,23 +2453,23 @@ factory_Chemiewerk_1920_details
 Chemiewerk_NIC
 Chemiewerk (1960)
 factory_Chemiewerk_NIC_details
-<title>Petrochemische Fabrik</title><p>Dieses Werk produziert Chemiekalien für die Pharmazeutik sowie Lack und Farben.</p>
+<p><em>Petrochemische Fabrik</em><br>Dieses Werk produziert Chemiekalien für die Pharmazeutik sowie Lack und Farben.</p>
 Chemiewerk1975_NIC
 Chemiewerk (1975)
 factory_Chemiewerk1975_NIC_details
-<title>Modernes Petrochemisches Werk</title><p>Dieses Chemiewerk produziert Chemiekalien für die Pharmazeutik, sowie Lack und Farben für die Möbelindustrie und Buchdruckerei.</p>
+<p><em>Modernes Petrochemisches Werk</em><br>Dieses Chemiewerk produziert Chemiekalien für die Pharmazeutik, sowie Lack und Farben für die Möbelindustrie und Buchdruckerei.</p>
 Computerhersteller_1965
 Computerhersteller (1965)
 factory_Computerhersteller_1965_details
-<title>Computerhersteller Siemens Legoland</title><p>Die Entwicklungsabteilung von Siemens wird in München Legoland genannt. Das kommt zum einen von der Architektur der Gebäude, ist zum anderen die Fantasie der Leute, über die Arbeit der Entwickler dort. Nach dem die KFZ Fabrik von Lemuria nicht mehr so recht ins PAK passen wollte, sie war dafür zu klein und unscheinbar, kam mir die Assoziation mit Legoland. Mein Gedächtnis hat mir zwar einen Streich gespielt, es gibt in Legoland keine grün Bedachten Gebäude, die sind blau, rot oder gelb und sie sind höher. Trotzdem es wäre schade um die schöne Grafik von Lemuria und es passt recht gut, als früher Computerhersteller. Siemens hat leider den Microprozessor Zug verpasst und damit auch den PC verschlafen.</p>
+<p><em>Computerhersteller Siemens Legoland</em><br>Die Entwicklungsabteilung von Siemens wird in München Legoland genannt. Das kommt zum einen von der Architektur der Gebäude, ist zum anderen die Fantasie der Leute, über die Arbeit der Entwickler dort. Nach dem die KFZ Fabrik von Lemuria nicht mehr so recht ins PAK passen wollte, sie war dafür zu klein und unscheinbar, kam mir die Assoziation mit Legoland. Mein Gedächtnis hat mir zwar einen Streich gespielt, es gibt in Legoland keine grün Bedachten Gebäude, die sind blau, rot oder gelb und sie sind höher. Trotzdem es wäre schade um die schöne Grafik von Lemuria und es passt recht gut. Als früher Computerhersteller hat Siemens leider den Microprozessor Zug verpasst und damit auch den PC verschlafen.</p>
 Computerhersteller1980
 Computerhersteller (1980)
 factory_Computerhersteller1980_details
-<title>Computerhersteller (1980)</title><p>Die Simutel Corp. produziert Desktopsysteme, Server und Steuerschränke. Der Simutel Corp. ist es 1980 als erstem Hersteller gelungen PCs, also Personal Computer, herzustellen die sich der Kleinbetrieb und der Computer-Hobbyist auch für zu Hause leisten konnte. Computern öffneten sich damit ganz neue Anwendungsmöglichkeiten abseits der EDV in Großbetrieben. Multimedia war plötzlich in aller Munde, auch wenn viele gar nicht wussten, was das bedeutet.</p>
+<p>Die Simutel Corp. produziert Desktopsysteme, Server und Steuerschränke. Der Simutel Corp. ist es 1980 als erstem Hersteller gelungen PCs, also Personal Computer, herzustellen die sich der Kleinbetrieb und der Computer-Hobbyist auch für zu Hause leisten konnte. Computern öffneten sich damit ganz neue Anwendungsmöglichkeiten abseits der EDV in Großbetrieben. Multimedia war plötzlich in aller Munde, auch wenn viele gar nicht wussten, was das bedeutet.</p>
 Computerhersteller1990
 Computerhersteller (1990)
 factory_Computerhersteller1990_details
-<title>SMI Copy & Clone Corp.</title><p>Die SMI Copy & Clone Corp. ist höchst erfolgreich im Herstellen von kompatiblen Computern. Nach dem sich SMI-kompatible Computer auf breiter Front durchgesetzt haben, bestimmt der Preis entscheidend über den Verkaufserfolg. Die SMI Copy & Clone Corp. produziert rationell in großen Stückzahlen für den internationalen Markt und kann die niedrigen Stückkosten an den Verbraucher weitergeben. Auch für den Anwender ist die Kompatibilität von Vorteil, läuft doch jede Software auf jedem kompatiblen Computer. Damit sind die Zeiten der Herstellerabhängigkeit vorbei. Bedauerlicherweise funktioniert dadurch aber auch jeder Virus auf jedem kompatiblen Computer.</p>
+<p><em>SMI Copy & Clone Corp.</em><br>Die SMI Copy & Clone Corp. ist höchst erfolgreich im Herstellen von kompatiblen Computern. Nach dem sich SMI-kompatible Computer auf breiter Front durchgesetzt haben, bestimmt der Preis entscheidend über den Verkaufserfolg. Die SMI Copy & Clone Corp. produziert rationell in großen Stückzahlen für den internationalen Markt und kann die niedrigen Stückkosten an den Verbraucher weitergeben. Auch für den Anwender ist die Kompatibilität von Vorteil, läuft doch jede Software auf jedem kompatiblen Computer. Damit sind die Zeiten der Herstellerabhängigkeit vorbei. Bedauerlicherweise funktioniert dadurch aber auch jeder Virus auf jedem kompatiblen Computer.</p>
 Dessauer_Kohlekraftwerk
 Kohlekraftwerk (Ostdt., 1992)
 factory_Dessauer_Kohlekraftwerk_details
@@ -2477,41 +2477,41 @@ factory_Dessauer_Kohlekraftwerk_details
 Discounter_MGB_AVL_ALP_1990
 Discounter SIMSTARR SÜD (1990)
 factory_Discounter_MGB_AVL_ALP_1990_details
-<title>Discounter</title><p>Der Lebensmittel-Discounter um die Ecke ...</p>
+<p>Der Lebensmittel-Discounter um die Ecke ...</p>
 Discounter_NDL_ODL_1990
 Discounter SIMSTARR NORD (1990)
 factory_Discounter_NDL_ODL_1990_details
-<title>Discounter</title><p>Günstige Lebensmittel und mehr</p>
+<p>Günstige Lebensmittel und mehr</p>
 Discounter_Pascal2012
 Discounter Pascal (2012)
 factory_Discounter_Pascal2012_details
-<title>Tedox Offenbach</title><p>Ein Wunsch vom fleißigen Simutrans Spieler Pascal</p>
+<p><em>Tedox Offenbach</em><br>Ein Wunsch vom fleißigen Simutrans Spieler Pascal</p>
 Druckerei_NIC
 Druckerei (1886)
 factory_Druckerei_NIC_details
-<title>Buchdruckerei</title><p>Hier wird gebundene Literatur produziert.</p>
+<p>Hier wird gebundene Literatur produziert.</p>
 Druckerei_SM
 Druckerei (1980)
 factory_Druckerei_SM_details
-<title>Buchdruckerei</title><p>Hier werden moderne Literatur und Weltbestseller produziert.</p>
+<p><em>Buchdruckerei</em><br>Hier werden moderne Literatur und Weltbestseller produziert.</p>
 Druckwerkstatt
 Druckwerkstatt (1800)
 factory_Druckwerkstatt_details
-<title>Druckerwerkstatt</title><p>Hier werden Flugblätter, Zeitungen und Bücher gedruckt. Die notwendige Farbe wird aus Ruß und Leinöl selbst hergestellt. Erst mit der industriellen Farbfertigung Ende des 19. Jahrhunderts wurde es üblich Druckfarbe gebrauchsfertig zuzukaufen. </p>
+<p><em>Druckerwerkstatt</em><br>Hier werden Flugblätter, Zeitungen und Bücher gedruckt. Die notwendige Farbe wird aus Ruß und Leinöl selbst hergestellt. Erst mit der industriellen Farbfertigung Ende des 19. Jahrhunderts wurde es üblich Druckfarbe gebrauchsfertig zuzukaufen. </p>
 Erzbergwerk_NIC
 Erzbergwerk
 factory_Erzbergwerk_NIC_details
-<title>Erzbergwerk</title><p>Als Bergwerk werden alle Anlagen zur Über- und Untertageförderung sowie zur Aufbereitung von Bodenschätzen bezeichnet.</p>
+<p>Als Bergwerk werden alle Anlagen zur Über- und Untertageförderung sowie zur Aufbereitung von Bodenschätzen bezeichnet.</p>
 Fahrzeuge_und_Haushaltsartikel
 Fahrzeuge und Haushaltsartikel
 Fischzucht_NIC
 Fischzucht
 factory_Fischzucht_NIC_details
-<title>Aquafood KG</title><p>Die Aquafood KG ist eine Tochtergesellschaft der SIM Food AG und züchtet für diese Speisefisch.</p>
+<p><em>Aquafood KG</em><br>Die Aquafood KG ist eine Tochtergesellschaft der SIM Food AG und züchtet für diese Speisefisch.</p>
 Forellenhof Markusmuehle
 Fischzucht (1985)
 factory_Forellenhof Markusmuehle_details
-<title>Fischzucht Markusmühle</title><p>Dieser Betrieb züchtet Speisefisch für die SIM-Food AG.</p>
+<p><em>Fischzucht Markusmühle</em><br>Dieser Betrieb züchtet Speisefisch für die SIM-Food AG.</p>
 Frischfisch
 Fischfanggebiet
 factory_Frischfisch_details
@@ -2519,93 +2519,93 @@ factory_Frischfisch_details
 Gasthof_1800
 Gasthof
 factory_Gasthof_1800_details
-<title>Rheinbreitbacher Hof / Clouthscher Hof</title><p>Der Clouthsche Hof, später Rheinbreitbacher Hof, ist wohl der älteste (um 1518, in den ältesten Teilen um 1348?) und auch heute noch sichtbare ehemalige Gasthof in Rheinbreitbach. Gasthöfe dieser Zeit waren nicht nur Orte von Speis und Trank, sondern Rastplätze von Reisenden. Mit Ställen für die Pferde, Remisen für die Kutschen sowie kleinen Zimmern für eine Nacht. Daneben natürlich Räume zum Bewirten der Reisenden und anderen Gästen. Eventuell, so wie hier, auch ein großer Saal für Feiern und Hochzeiten. </p>
+<p><em>Rheinbreitbacher Hof / Clouthscher Hof</em><br>Der Clouthsche Hof, später Rheinbreitbacher Hof, ist wohl der älteste (um 1518, in den ältesten Teilen um 1348?) und auch heute noch sichtbare ehemalige Gasthof in Rheinbreitbach. Gasthöfe dieser Zeit waren nicht nur Orte von Speis und Trank, sondern Rastplätze von Reisenden. Mit Ställen für die Pferde, Remisen für die Kutschen sowie kleinen Zimmern für eine Nacht. Daneben natürlich Räume zum Bewirten der Reisenden und anderen Gästen. Eventuell, so wie hier, auch ein großer Saal für Feiern und Hochzeiten. </p>
 Gastwirtschaft_mit_Laden
 Gastwirtschaft mit Laden (1892)
 factory_Gastwirtschaft_mit_Laden_details
-<title>Puntis Kolonialwaren</title><p> Neben der Gastwirtschaft betreiben die Wirtsleute noch einen Krämerladen.</p>
+<p><em>Puntis Kolonialwaren</em><br> Neben der Gastwirtschaft betreiben die Wirtsleute noch einen Krämerladen.</p>
 Gefluegelhof_NIC
 Geflügelhof
 factory_Gefluegelhof_NIC_details
-<title>Galliform Ltd.-Geflügelzucht</title><p>Hier werden Eier und Geflügel für die SIM Food AG gezüchtet.</p>
+<p><em>Galliform Ltd.-Geflügelzucht</em><br>Hier werden Eier und Geflügel für die SIM Food AG gezüchtet.</p>
 Geraete_und_Haushaltsartikel
 Geräte und Haushaltsartikel
 Getraenkemarkt_NIC
 Getränkemarkt
 factory_Getraenkemarkt_NIC_details
-<title>Getränkemarkt</title><p>Der im süddeutschen Raum bekannte Getränkemarkt wird im Norden meist als "Trinkhalle" bezeichnet.</p>
+<p>Der im süddeutschen Raum bekannte Getränkemarkt wird im Norden meist als "Trinkhalle" bezeichnet.</p>
 Getreidehof_alt
 Getreidehof
 factory_Getreidehof_alt_details
-<title>Getreidehof Rasterditsch</title><p>Flachs für die Webstühle und Gerste für die Brauereien bescheren dem Bauern ein gutes Auskommen.</p>
+<p><em>Getreidehof Rasterditsch</em><br>Flachs für die Webstühle und Gerste für die Brauereien bescheren dem Bauern ein gutes Auskommen.</p>
 GetreideSilo_NIC
 Getreidesilo
 factory_GetreideSilo_NIC_details
-<title>Kornsilo</title><p>Das Silo bunkert Getreide zur anschließenden Weiterverarbeitung.</p>
+<p>Das Silo bunkert Getreide zur anschließenden Weiterverarbeitung.</p>
 Glasfabrik
 Glasfabrik (Ostdt., 1896)
 factory_Glasfabrik_details
-<title>Glasmanufaktur</title><p>Aus dem billigstem Stoff der Welt - Sand - wird eines der härtesten - nämlich Glas - erzeugt. Dieser Betrieb stellt Gläser für hochwertige optische Geräte her. Leider ist die Nachfrage nach hochwertigen Gläsern sehr schwankend. Deshalb sieht man sich gezwungen zur Auslastung des Personals auch Bierflaschen herzustellen.</p>
+<p><em>Glasmanufaktur</em><br>Aus dem billigstem Stoff der Welt - Sand - wird eines der härtesten - nämlich Glas - erzeugt. Dieser Betrieb stellt Gläser für hochwertige optische Geräte her. Leider ist die Nachfrage nach hochwertigen Gläsern sehr schwankend. Deshalb sieht man sich gezwungen zur Auslastung des Personals auch Bierflaschen herzustellen.</p>
 factory_Glasmanufaktur_details
-<title>Fraunhofer-Glashütte</title><p>Die Glasmanufaktur wurde gegründet, um für Joseph Fraunhofer hochwertige Gläser für seine optischen Instrumente zu produzieren. Leider ist der Absatz optischer Gläser sehr gering, deshalb muss man zusätzlich Fensterglas und Weinflaschen herstellen um das hochqualifizierte Personal halten zu können. </p>  
+<p><em>Fraunhofer-Glashütte</em><br>Die Glasmanufaktur wurde gegründet, um für Joseph Fraunhofer hochwertige Gläser für seine optischen Instrumente zu produzieren. Leider ist der Absatz optischer Gläser sehr gering, deshalb muss man zusätzlich Fensterglas und Weinflaschen herstellen um das hochqualifizierte Personal halten zu können. </p>  
 Grossbaeckerei_NIC
 Bäckerei (1980)
 factory_Grossbaeckerei_NIC_details
-<title>Grossbäckerei</title><p>Hier werden Brote und Schrippen - auch Brötchen oder Semmel genannt - sowie feines Gebäck hergestellt.</p>
+<p><em>Grossbäckerei</em><br>Hier werden Brote und Schrippen - auch Brötchen oder Semmel genannt - sowie feines Gebäck hergestellt.</p>
 Grossmuehle_NIC
 Mühle (Ostdt., 1913)
 factory_Grossmuehle_NIC_details
-<title>Großmühle Alberthafen Dresden</title><p>In einer Großmühle werden verschiedene Getreidesorten wie Roggen, Dinkel, Weizen und Gerste zu Mehl verarbeitet. Dieses wird dann entweder an Großabnehmer wie Bäckereien und Nudelhersteller oder auch an den Einzelhandel ausgeliefert.</p>
+<p><em>Großmühle Alberthafen Dresden</em><br>In einer Großmühle werden verschiedene Getreidesorten wie Roggen, Dinkel, Weizen und Gerste zu Mehl verarbeitet. Dieses wird dann entweder an Großabnehmer wie Bäckereien und Nudelhersteller oder auch an den Einzelhandel ausgeliefert.</p>
 factory_Heizkraftwerk_details
 <h1>Altes Heizkraftwerk</h1><p>Ein HKW ist eine Industrieanlage die aus Kohle oder Öl - Elektrizität und Wärme in einem Kraft-Wärme-Kopplungsprozess erzeugt. 1884 wurde von Emil Rathenau in Berlin in der Markgrafenstraße 44 das erste Kraftwerk zur öffentlichen Stromversorgung errichtet. Es lieferte Gleichstrom und konnte deshalb nur die nächste Umgebung versorgen. Dieser erste wenige Strom wurde fast ausschließlich zur Beleuchtung verwendet. Ab 1896 wurde auch Strom mit einer Spannung von 500V für die erste elektrische Straßenbahn Berlins erzeugt. Mit der Einführung von Wechselstrom konnte der Strom über weite Strecken transportiert werden. Damit konnten die schmutzigen Kraftwerke an den Stadtrand oder in die Nähe der Förderorte für Kohle verlegt werden.  </p>
 Hochofen_alt
-Stahlwerk
+Stahlwerk Schmalkalden
 factory_Hochofen_alt_details
-<title>OLE-Stahlhütte.</title><p>Diese Schmelzhütte produziert hochwertigen Stahl und Eisen für die Geräteherstellung und den Schiffsbau.</p>
+<p><em>Neue Hütte Schmalkalden (Thüringen)</em><br>Diese Schmelzhütte produziert hochwertigen Stahl und Eisen für die Geräteherstellung und den Schiffsbau.<br>Eisenerz von hoher Qualität, das die Grundlage dieser Eisen- und Stahlerzeugung bildete, lieferten die beiden frühneuzeitlichen Bergbaureviere am Mommelstein und am Stahlberg. Dabei wurden um 1800 bereits etwa 86.000 Festmeter Holz in Form von Holzkohle und Scheithölzern pro Jahr verbraucht. Dies führte zum Raubbau an den umliegenden  Wäldern.<br>Das im Jahr 1835 erbaute Hauptgebäude der Hütte ist ein spätklassizistischer Fachwerkmantelbau, der den zentralen Hochofen umgibt. Es ersetzte die unrentablen und veralteten Schmelzhütten der Umgebung.<br>Heute ist es ein technisches Denkmal und Museum.</p>
 Holzsammelstelle1800_NIC
 Wald
 factory_Holzsammelstelle1800_NIC_details
-<title>Holzsammelstelle 1800</title><p>Holz, ein natürlicher, nachwachsender Baustoff, wird seit Jahrhunderten für die Herstellung von Möbeln, zum Hausbau und viele Dinge des täglichen Lebens gebraucht. Auch Kutschen, Schiffe und Eisenbahnwaggons bestehen im 19. Jahrhundert weitgend aus Holz. Der Holzeinschlag ist jedoch sehr arbeitsaufwändig, denn es stehen nur Äxte und Handsägen zur Verfügung. Umso schmerzvoller, wenn das Holz zum Feuern benutzt wird, was für einen Großteil der Bevölkerung seinerzeit noch üblich war.</p>
+<p><em>Holzsammelstelle 1800</em><br>Holz, ein natürlicher, nachwachsender Baustoff, wird seit Jahrhunderten für die Herstellung von Möbeln, zum Hausbau und viele Dinge des täglichen Lebens gebraucht. Auch Kutschen, Schiffe und Eisenbahnwaggons bestehen im 19. Jahrhundert weitgend aus Holz. Der Holzeinschlag ist jedoch sehr arbeitsaufwändig, denn es stehen nur Äxte und Handsägen zur Verfügung. Umso schmerzvoller, wenn das Holz zum Feuern benutzt wird, was für einen Großteil der Bevölkerung seinerzeit noch üblich war.</p>
 Holzsammelstelle1950_NIC
 Wald (1950)
 factory_Holzsammelstelle1950_NIC_details
-<title>Nutzwald 1950</title><p>Holz ist immer noch ein wichtiger und beliebter Werkstoff. Jetzt halten die Motorsägen Einzug bei den Holzfällern und Tecker und Hanomag unterstützen die Arbeiter beim Sammeln und Abtransportieren der Stämme.</p>
+<p><em>Nutzwald 1950</em><br>Holz ist immer noch ein wichtiger und beliebter Werkstoff. Jetzt halten die Motorsägen Einzug bei den Holzfällern und Tecker und Hanomag unterstützen die Arbeiter beim Sammeln und Abtransportieren der Stämme.</p>
 Holzsammelstelle1990_NIC
 Wald (1990)
 factory_Holzsammelstelle1990_NIC_details
-<title>Nutzwald 1990</title><p>Holz ist und bleibt ein beliebter Werkstoff. Das Holzfällen ist längst nicht mehr so hart und gefährlich wie früher. Die Bäume werden jetzt vielfach von so genannten Vollernter-Maschinen gefällt und von Ästen befreit.</p>
+<p><em>Nutzwald 1990</em><br>Holz ist und bleibt ein beliebter Werkstoff. Das Holzfällen ist längst nicht mehr so hart und gefährlich wie früher. Die Bäume werden jetzt vielfach von so genannten Vollernter-Maschinen gefällt und von Ästen befreit.</p>
 Hopfenhof_NIC
 Hopfenbauer
 factory_Hopfenhof_NIC_details
-<title>Mayerthaler Hopfenhof</title><p>Hopfen ist eine Pflanzenart, die zur Familie der Hanfgewächse gehört und als Geschmacksstoff in der Bierbrauerei verwendet wird.</p>
+<p><em>Mayerthaler Hopfenhof</em><br>Hopfen ist eine Pflanzenart, die zur Familie der Hanfgewächse gehört und als Geschmacksstoff in der Bierbrauerei verwendet wird.</p>
 Kalibergwerk
 Kalibergwerk 
 factory_Kalibergwerk_details
-<title>Kalibergwerk</title><p>Als Kalibergbau wird der Untertageabbau von Kalisalz bezeichnet. Der Kalibergbau begann in Mecklenburg, als man mit dem niedrigen Salzgehalt der Sole der Saline in Staßfurt unzufrieden war. Man versuchte 1851 mit einer Bohrung in den Salzstock, hochgesättigte Sole zu gewinnen. Doch die Sole war bitter. Man entschied das Bohrloch als Vorbohrung für einen Schacht zu nutzen, um das benötigte reine Steinsalz bergmännisch zu gewinnen. Das über dem Steinsalz anstehende Carnallit (Kalium-Magnesium-Chlorid) wurde anfangs achtlos auf Halde gestürzt. Bald suchte man nach Verwendungsmöglichkeiten und fand die Eignung des Carnallitsalzes, nach Entfernung des darin enthaltenen Magnesiumchlorids, als Düngemittel. 1861 nahm die erste Kalidünger Fabrik ihren Betrieb auf. Es setzte eine rasante Entwicklung zur Gewinnung und Verarbeitung von Kali-, Magnesia- und Borsalzen ein. Auch heute wird Kalisalz in Deutschland in großen Menge abgebaut. Das dabei in großen Mengen anfallende Steinsalz wird achtlos auf Halde gestürzt. Der höchste dieser Abraumberge ist Monte Kali in Heringen an der Werra mit 200m Höhe. Als Speisesalz ist es wegen seines bitteren Geschmacks nicht geeignet. </p>
+<p>Als Kalibergbau wird der Untertageabbau von Kalisalz bezeichnet. Der Kalibergbau begann in Mecklenburg, als man mit dem niedrigen Salzgehalt der Sole der Saline in Staßfurt unzufrieden war. Man versuchte 1851 mit einer Bohrung in den Salzstock, hochgesättigte Sole zu gewinnen. Doch die Sole war bitter. Man entschied das Bohrloch als Vorbohrung für einen Schacht zu nutzen, um das benötigte reine Steinsalz bergmännisch zu gewinnen. Das über dem Steinsalz anstehende Carnallit (Kalium-Magnesium-Chlorid) wurde anfangs achtlos auf Halde gestürzt. Bald suchte man nach Verwendungsmöglichkeiten und fand die Eignung des Carnallitsalzes, nach Entfernung des darin enthaltenen Magnesiumchlorids, als Düngemittel. 1861 nahm die erste Kalidünger Fabrik ihren Betrieb auf. Es setzte eine rasante Entwicklung zur Gewinnung und Verarbeitung von Kali-, Magnesia- und Borsalzen ein. Auch heute wird Kalisalz in Deutschland in großen Menge abgebaut. Das dabei in großen Mengen anfallende Steinsalz wird achtlos auf Halde gestürzt. Der höchste dieser Abraumberge ist Monte Kali in Heringen an der Werra mit 200m Höhe. Als Speisesalz ist es wegen seines bitteren Geschmacks nicht geeignet. </p>
 Kamerahersteller
 Kamerahersteller (Norddt., 2005)
 factory_Kamerahersteller_details
-<title>SICON AG</title><p>Die SICON Kameras sind in der gesamten Simwelt bekannt und begehrt. Im Jahr 2005 wurden erstmals mehr digitale als analoge Kameras verkauft. Die SICON AG setzt deshalb konsequent auf diesen Trend und produziert ausschließlich digitale Kameras.</p>
+<p><em>SICON AG</em><br>Die SICON Kameras sind in der gesamten Simwelt bekannt und begehrt. Im Jahr 2005 wurden erstmals mehr digitale als analoge Kameras verkauft. Die SICON AG setzt deshalb konsequent auf diesen Trend und produziert ausschließlich digitale Kameras.</p>
 Kaufhaus_1912
 Kaufhaus (1912)
 Kaufhaus_NIC
 Warenhaus
 factory_Kaufhaus_NIC_details
-<title>Großes norddeutsches Warenhaus</title><p>Ein Warenhaus ist ein Einzel- bzw. Großhandelsgeschäft, das im Gegensatz zum "Kaufhaus" Waren aller Art auf meist mehreren Stockwerken zum Verkauf anbietet.</p>
+<p><em>Großes norddeutsches Warenhaus</em><br>Ein Warenhaus ist ein Einzel- bzw. Großhandelsgeschäft, das im Gegensatz zum "Kaufhaus" Waren aller Art auf meist mehreren Stockwerken zum Verkauf anbietet.</p>
 KFZ_Fabrik_NIC
 KFZ-Fabrik (alt bitte nicht mehr verwenden)
 factory_KFZ_Fabrik_NIC_details
-<title>ausgemusterte Fabrik</title><p>Diese KFZ-Fabrik ist im PAK128.german noch enthalten, damit alte gespeicherte Spielstände ohne Probleme geladen werden können. <br>Diese Fabrik bitte <strong>nicht mehr neu bauen.</strong> </p>
+<p><em>ausgemusterte Fabrik</em><br>Diese KFZ-Fabrik ist im PAK128.german noch enthalten, damit alte gespeicherte Spielstände ohne Probleme geladen werden können. <br>Diese Fabrik bitte <strong>nicht mehr neu bauen.</strong> </p>
 Kfz_Fabrik1961
 Kfz-Fabrik (1961)
 Kiesgrube
 Kiesgrube (1993)
 factory_Kiesgrube_details
-<title>Kiesgrube</title><p>Kleine Steinchen für die Zementherstellung</p>
+<p>Kleine Steinchen für die Zementherstellung</p>
 Kieswerk1
 Kieswerk (1950)
 factory_Kieswerk1_details
-<title>Kieswerk</title><p>Steine, Steinchen und Kiesel für die Zementfabrik und den Strassenbau</p>
+<p>Steine, Steinchen und Kiesel für die Zementfabrik und den Strassenbau</p>
 Klinik_1912
 Klinik 1912
 factory_Klinik_1912_details
@@ -2617,15 +2617,15 @@ factory_Klinik_1927_details
 Klosterbrauerei1610_NIC
 Brauerei ("Klosterbrau")
 factory_Klosterbrauerei1610_NIC_details
-<title>Klosterbrauerei</title><p>Diese altehrwürdige Brauerei produziert aus Hopfen und Gerste leckeres Bier. Wer Bier kaufen möchte, hat zwei Möglichkeiten. Entweder nimmt er seinen Maßkrug und kommt ins Kloster, oder er lässt sich mit dem Fuhrwerk ein Fass kommen. Die Mönche fordern das Fass aber sauber gewaschen zurück. Weshalb die meisten dann doch lieber an der Schankpforte vorbei schauen und sich neben dem Bier auch noch einen Segen abholen.</p>
+<p><em>Klosterbrauerei</em><br>Diese altehrwürdige Brauerei produziert aus Hopfen und Gerste leckeres Bier. Wer Bier kaufen möchte, hat zwei Möglichkeiten. Entweder nimmt er seinen Maßkrug und kommt ins Kloster, oder er lässt sich mit dem Fuhrwerk ein Fass kommen. Die Mönche fordern das Fass aber sauber gewaschen zurück. Weshalb die meisten dann doch lieber an der Schankpforte vorbei schauen und sich neben dem Bier auch noch einen Segen abholen.</p>
 Kohlemine_NIC
 Kohlenbergwerk
 factory_Kohlemine_NIC_details
-<title>Kohlenbergwerk</title><p>Als Kohlenbergbau wird die Gewinnung von Steinkohle bezeichnet, die im Tage- oder Untertagebau betrieben wird.</p>
+<p>Als Kohlenbergbau wird die Gewinnung von Steinkohle bezeichnet, die im Tage- oder Untertagebau betrieben wird.</p>
 Konditorei
 Konditorrei
 factory_Konditorei_details
-<title>Konditorei</title><p>Selbstgemachte Köstlichkeiten</p>
+<p>Selbstgemachte Köstlichkeiten</p>
 Krankenhaus_Hellmig_Kamen
 Krankenhaus
 factory_Krankenhaus_Hellmig_Kamen_details
@@ -2633,69 +2633,69 @@ factory_Krankenhaus_Hellmig_Kamen_details
 Lagerhalle_NIC
 Baustofflager (1930)
 factory_Lagerhalle_NIC_details
-<title>Alter Baustoffhändler</title><p>Der Baustoffhändler verkauft vom Zementsack bis zur Mischmaschine alles, was des Heimwerkers Herz begehrt.</p>
+<p>Der Baustoffhändler verkauft vom Zementsack bis zur Mischmaschine alles, was des Heimwerkers Herz begehrt.</p>
 Lebensmittelfabrik_NIC
 Lebensmittelfabrik (1957)
 factory_Lebensmittelfabrik_NIC_details
-<title>SIM-Food Lebensmittel Fabrik</title><p>Die SIM-Food AG verarbeitet Fleisch, Geflügel und Fisch zu lange haltbaren Konserven, Tiefkühlware wie Fischstäbchen und Hühnernuggets sowie Fertiggerichten, die Groß und Klein begeistert vertilgen ...</p>
+<p><em>SIM-Food Lebensmittel Fabrik</em><br>Die SIM-Food AG verarbeitet Fleisch, Geflügel und Fisch zu lange haltbaren Konserven, Tiefkühlware wie Fischstäbchen und Hühnernuggets sowie Fertiggerichten, die Groß und Klein begeistert vertilgen ...</p>
 Markt_AK
 Markt
 factory_Markt_AK_details
-<title>Großer Markt</title><p>Eine Fläche auf der sich viele kleine Händler treffen, um ihre Waren anzubieten. Durch die große Auswahl werden viele Käufer angezogen. Trotz der größeren Konkurrenz gehen die Geschäfte auf einem Markt besser als bei einfachen Straßenständen, die auf Laufkundschft hoffen müssen. </p>
+<p>Eine Fläche auf der sich viele kleine Händler treffen, um ihre Waren anzubieten. Durch die große Auswahl werden viele Käufer angezogen. Trotz der größeren Konkurrenz gehen die Geschäfte auf einem Markt besser als bei einfachen Straßenständen, die auf Laufkundschft hoffen müssen. </p>
 Markt_AK_1920
 Markt (1920)
 factory_Markt_AK_1920_details
-<title>Großer Markt</title><p>Eine Fläche, auf der sich viele kleine Händler treffen, um ihre Waren anzubieten. Durch die große Auswahl werden viele Käufer angezogen. Trotz der größeren Konkurrenz gehen die Geschäfte auf einem Markt besser als bei einfachen Straßenständen, die auf Laufkundschft hoffen müssen. </p>
+<p>Eine Fläche, auf der sich viele kleine Händler treffen, um ihre Waren anzubieten. Durch die große Auswahl werden viele Käufer angezogen. Trotz der größeren Konkurrenz gehen die Geschäfte auf einem Markt besser als bei einfachen Straßenständen, die auf Laufkundschft hoffen müssen. </p>
 Markt_NIC
 Markt (Norddt.)
 factory_Markt_NIC_details
-<title>Kleine Einkaufsstraße</title><p>Wenn mehrere Läden nebeneinander liegen, kommen Käufer von weiter her. Dadurch gehen die Geschäfte besser als bei einem kleinen Gemischtwarenladen um die Ecke</p>
+<p><em>Kleine Einkaufsstraße</em><br>Wenn mehrere Läden nebeneinander liegen, kommen Käufer von weiter her. Dadurch gehen die Geschäfte besser als bei einem kleinen Gemischtwarenladen um die Ecke</p>
 Markt_NIC_1920
 Markt (Norddt., 1920)
 factory_Markt_NIC_1920_details
-<title>Kleine Einkaufsstraße</title><p>Wenn mehrere Läden nebeneinander liegen, kommen Käufer von weiter her. Dadurch gehen die Geschäfte besser als bei einem kleinen Gemischtwarenladen um die Ecke</p>
+<p><em>Kleine Einkaufsstraße</em><br>Wenn mehrere Läden nebeneinander liegen, kommen Käufer von weiter her. Dadurch gehen die Geschäfte besser als bei einem kleinen Gemischtwarenladen um die Ecke</p>
 Markthalle_1891
 Markthalle (1891)
 factory_Markthalle_1891_details
-<title>Markthalle Chemnitz</title><p>Die Chemnitzer Markthalle - auch Bauch von Chemnitz genannt - wurde am 9. Dezember 1891 eröffnet. Der 4500 m² Ladenfläche umfassende Innenraum bot für den Großhandel und auch für 358 Verkaufsstände Platz.</p>
+<p><em>Markthalle Chemnitz</em><br>Die Chemnitzer Markthalle - auch Bauch von Chemnitz genannt - wurde am 9. Dezember 1891 eröffnet. Der 4500 m² Ladenfläche umfassende Innenraum bot für den Großhandel und auch für 358 Verkaufsstände Platz.</p>
 Maschinenfabrik_1800
 Geräte-/Maschinenfabrik
 factory_Maschinenfabrik_1800_details
-<title>Gerätefabrik</title><p>Die "<b>Gerätefabrik</b>" produziert meist Haushaltsgeräte und Elektrowerkzeuge.</p>
+<p>Die "<b>Gerätefabrik</b>" produziert meist Haushaltsgeräte und Elektrowerkzeuge.</p>
 Maschinenfabrik_NIC
 Geräte-/Maschinenfabrik (1909)
 factory_Maschinenfabrik_NIC_details
-<title>MU-Tec Haushaltsgeräte</title><p>Der Spezialist für Maschinen- und Gerätebau.</p>
+<p><em>MU-Tec Haushaltsgeräte</em><br>Der Spezialist für Maschinen- und Gerätebau.</p>
 MGB_alter_Markt_1920
 Markt (Mittelgeb., 1920)
 MGB_alter_Markt_NIC
 Markt (Mittelgeb.)
 factory_MGB_alter_Markt_NIC_details
-<title>Süddeutscher Markt</title><p>Der Wochenmarkt ist das Zentrum für alle, die Produkte aus der Region kaufen möchten.</p>
+<p>Der Wochenmarkt ist das Zentrum für alle, die Produkte aus der Region kaufen möchten.</p>
 MGB_Einkaufszentrum_NIC
 Einkaufszentrum (Mittelgeb., 1980)
 factory_MGB_Einkaufszentrum_NIC_details
-<title>Shoppingmall</title><p>Die LEMURIA Shoppingmall beherbergt einen Supermarkt, ein Möbelgeschäft, einen Elektrofachmarkt, eine Boutique sowie diverse Cafés und Bars.</p>
+<p>Die LEMURIA Shoppingmall beherbergt einen Supermarkt, ein Möbelgeschäft, einen Elektrofachmarkt, eine Boutique sowie diverse Cafés und Bars.</p>
 MGB_Erzbergwerk_NIC
 Erzbergwerk (Mittelgeb., 1900)
 factory_MGB_Erzbergwerk_NIC_details
-<title>Schneeberg-Mining AG</title><p>Die Schneeberg Mining AG fördert Bodenschätze wie Eisen- und Silbererz.</p>
+<p><em>Schneeberg-Mining AG</em><br>Die Schneeberg Mining AG fördert Bodenschätze wie Eisen- und Silbererz.</p>
 MGB_Kokerei_NIC
 Kokerei (Mittelgeb.)
 factory_MGB_Kokerei_NIC_details
-<title>Kokerei</title><p>Öl aus der Kokerei? Ja und nein. Hier im Spiel setzen wir Erdöl und Steinkohlenteer, der beim Kokereiprozess anfällt, gleich, da beide in der chemischen Industrie als Rohstoff dienen, wenn auch nicht zu gleichen Zeit. Das soll helfen, die Komplexität der Lieferketten reduzieren. Im einzelnen. In einer Kokerei wird aus Kohle durch Erhitzen unter Luftabschluss Gas und Koks erzeugt. 1870 gab es bereits über 340 Gaswerke in Deutschland. Man war primär am Gas interessiert. Dieses wurde zum Beleuchten von Straßen und öffentlichen Gebäuden verwendet. Der Koks war Nebenprodukt und wird im Hochofen zur Erzeugung von Roheisen benötigt. Überschüssiger Koks wurde zum Heizen von öffentlichen Gebäuden verwendet. Neben Gas und Koks fällt noch Steinkohlenteer an. Diese zähflüssige, klebrige Masse war anfangs nur schwer zu entsorgen.  Steinkohlenteer besteht aus mehreren Tausend verschiedenen Kohlenwasserstoffen und anderen Verbindungen. Nach der Entdeckung der Teerfarben entwickelten sich große Chemiefabriken und der vormalig klebrige Abfall würde zum begehrten Rohstoff. Heute große Chemiegiganten wie Bayer, Höchst und BASF haben mit der Verwertung von Steinkohlenteer angefangen. Als ab 1960 die Gasversorgung der Städte auf Erdgas umgestellt wurde, fielen auch nur noch geringe Mengen Steinkohlenteer an. Die Chemische Industrie musste deshalb auf Erdöl ausweichen. Heute produzieren die wenigen verbliebenen Kokereien nur noch Koks für Stahlwerke. Das Gas wird entweder auch an die Stahlwerke geliefert, oder selbst zum Beheizen der Koksöfen verbraucht. In die Gasnetze wird heute nur noch ungiftiges Erdgas eingespeist.</p>
+<p>Öl aus der Kokerei? Ja und nein. Hier im Spiel setzen wir Erdöl und Steinkohlenteer, der beim Kokereiprozess anfällt, gleich, da beide in der chemischen Industrie als Rohstoff dienen, wenn auch nicht zu gleichen Zeit. Das soll helfen, die Komplexität der Lieferketten reduzieren. Im einzelnen. In einer Kokerei wird aus Kohle durch Erhitzen unter Luftabschluss Gas und Koks erzeugt. 1870 gab es bereits über 340 Gaswerke in Deutschland. Man war primär am Gas interessiert. Dieses wurde zum Beleuchten von Straßen und öffentlichen Gebäuden verwendet. Der Koks war Nebenprodukt und wird im Hochofen zur Erzeugung von Roheisen benötigt. Überschüssiger Koks wurde zum Heizen von öffentlichen Gebäuden verwendet. Neben Gas und Koks fällt noch Steinkohlenteer an. Diese zähflüssige, klebrige Masse war anfangs nur schwer zu entsorgen.  Steinkohlenteer besteht aus mehreren Tausend verschiedenen Kohlenwasserstoffen und anderen Verbindungen. Nach der Entdeckung der Teerfarben entwickelten sich große Chemiefabriken und der vormalig klebrige Abfall würde zum begehrten Rohstoff. Heute große Chemiegiganten wie Bayer, Höchst und BASF haben mit der Verwertung von Steinkohlenteer angefangen. Als ab 1960 die Gasversorgung der Städte auf Erdgas umgestellt wurde, fielen auch nur noch geringe Mengen Steinkohlenteer an. Die Chemische Industrie musste deshalb auf Erdöl ausweichen. Heute produzieren die wenigen verbliebenen Kokereien nur noch Koks für Stahlwerke. Das Gas wird entweder auch an die Stahlwerke geliefert, oder selbst zum Beheizen der Koksöfen verbraucht. In die Gasnetze wird heute nur noch ungiftiges Erdgas eingespeist.</p>
 MGB_Schrottplatz_NIC
 Schrottplatz (Mittelgeb., 1960)
 factory_MGB_Schrottplatz_NIC_details
-<title>Schrottplatz</title><p>Autowrack- und Altmetallverwertung</p>
+<p>Autowrack- und Altmetallverwertung</p>
 MGBStahlwerkKoks_NIC
 Stahlwerk (Mittelgeb., 1960)
 factory_MGBStahlwerkKoks_NIC_details
-<title>RR-Metalgroup</title><p>Dieses Stahlwerk gehört zur RR-Metalgroup und produziert legierten  und unlegierten Stahl für die KFZ-, Computer- und Maschinenbauindustrie. Mann stellt den notwendigen Koks nicht mehr selbst her, sondern kauft ihn bei Kokereien zu.</p>
+<p><em>RR-Metalgroup</em><br>Dieses Stahlwerk gehört zur RR-Metalgroup und produziert legierten  und unlegierten Stahl für die KFZ-, Computer- und Maschinenbauindustrie. Mann stellt den notwendigen Koks nicht mehr selbst her, sondern kauft ihn bei Kokereien zu.</p>
 MGBWeingut_NIC
 Weingut
 factory_MGBWeingut_NIC_details
-<title>Weingut</title><p>Ein Weingut ist ein landwirtschaftlicher Betrieb, in dem Weintrauben angebaut und daraus Wein sowie Sekt und Perlwein produziert werden.</p>
+<p>Ein Weingut ist ein landwirtschaftlicher Betrieb, in dem Weintrauben angebaut und daraus Wein sowie Sekt und Perlwein produziert werden.</p>
 Milchfabrik_NIC
 Molkerei (1930)
 factory_Milchfabrik_NIC_details
@@ -2703,31 +2703,31 @@ factory_Milchfabrik_NIC_details
 Minimarkt_NIC
 Minimarkt
 factory_Minimarkt_NIC_details
-<title>kleiner Minimarkt</title><p>Ein kleiner Supermarkt. Der Besitzer wollte ursprüngliche eine Tankstelle mit angegliedertem Minimarkt eröffnen. Die neu gegründete Umweltschutzbehörde hat ihm das mit Verweis auf ein Wasserschutzgebiet nicht genehmigt. So hat er nur den kleinen Minimarkt errichten können. Die belebte Ausfallstraße bringt auch so genug Laufkundschaft. Der Besitzer ist zufrieden. Mit Tankstelle gingen die Geschäfte besser, aber auch ohne hat er noch keinen Tag die Eröffnung seines Ladens bereut.</p>
+<p>Ein kleiner Supermarkt. Der Besitzer wollte ursprüngliche eine Tankstelle mit angegliedertem Minimarkt eröffnen. Die neu gegründete Umweltschutzbehörde hat ihm das mit Verweis auf ein Wasserschutzgebiet nicht genehmigt. So hat er nur den kleinen Minimarkt errichten können. Die belebte Ausfallstraße bringt auch so genug Laufkundschaft. Der Besitzer ist zufrieden. Mit Tankstelle gingen die Geschäfte besser, aber auch ohne hat er noch keinen Tag die Eröffnung seines Ladens bereut.</p>
 moderne_Glashuette
 Glashütte (Ostdt., 2005)
 factory_moderne_Glashuette_details
-<title>Glashütte</title><p>In einer Glashütte werden Glas und Glasprodukte hergestellt. Als Grundstoff dient Sand.</p>
+<p>In einer Glashütte werden Glas und Glasprodukte hergestellt. Als Grundstoff dient Sand.</p>
 moderne_Maschinenfabrik
 Geräte-/Maschinenfabrik (1997)
 factory_moderne_Maschinenfabrik_details
-<title>SiKraft - Haushaltsgeräte</title><p>Der Spezialist für sogenannte weiße Ware. Kühlschränke, Elektroherde, Spülmaschinen und Waschmaschinen werden so genannt. Die Fabrik wurde komplett neu auf der grünen Wiese errichtet. Der Architekt hat sich bei der Gestaltung der Gebäude vom Aussehen der Produkte inspirieren lassen. </p>
+<p><em>SiKraft - Haushaltsgeräte</em><br>Der Spezialist für sogenannte weiße Ware. Kühlschränke, Elektroherde, Spülmaschinen und Waschmaschinen werden so genannt. Die Fabrik wurde komplett neu auf der grünen Wiese errichtet. Der Architekt hat sich bei der Gestaltung der Gebäude vom Aussehen der Produkte inspirieren lassen. </p>
 moderner_GetreideSilo
 Getreidesilo (2011)
 factory_moderner_GetreideSilo_details
-<title>Getreidesilo</title><p>Ein Getreidesilo wird meist dazu benutzt, Getreide bis zum Weitertransport zwischenzulagern.</p>
+<p>Ein Getreidesilo wird meist dazu benutzt, Getreide bis zum Weitertransport zwischenzulagern.</p>
 moderner_Importeur
 Importeur (Nord-/Ostdt., 1980)
 factory_moderner_Importeur_details
-<title>Importeur</title><p>Dieses Handelshaus importiert Mandeln, Südfrüchte und Waver vom Ausland.</p>
+<p>Dieses Handelshaus importiert Mandeln, Südfrüchte und Waver vom Ausland.</p>
 Moebelfabrik Pirna
 Möbelfabrik
 factory_Moebelfabrik Pirna_details
-<title>Möbelfabrik</title><p>Die ehemalige Holzindustrie Friedrich Hengst ist ein historisches Gebäude in Pirna. Die Firma wurde 1900 gegründet und war bis ins Jahr 2007 in Betrieb.</p>
+<p>Die ehemalige Holzindustrie Friedrich Hengst ist ein historisches Gebäude in Pirna. Die Firma wurde 1900 gegründet und war bis ins Jahr 2007 in Betrieb.</p>
 Moebelfabrik_NIC
 Möbelmanufaktur
 factory_Moebelfabrik_NIC_details
-<title>Möbelfabrik</title><p>Tische, Stühle, Schränke, Betten, Kommoden, Wäschetruhen Regale, Sofas und noch vieles mehr, was das Wohnen angenehmer macht, produziert die BZT Möbelfabrik.</p>
+<p>Tische, Stühle, Schränke, Betten, Kommoden, Wäschetruhen Regale, Sofas und noch vieles mehr, was das Wohnen angenehmer macht, produziert die BZT Möbelfabrik.</p>
 Moebelfabrik1922
 Möbelfabrik Otto Brückner Stahlmöbel seit 1922
 factory_Moebelfabrik1922_details
@@ -2735,7 +2735,7 @@ factory_Moebelfabrik1922_details
 Moebeltischlerei
 Möbelschreinerei
 factory_Moebeltischlerei_details
-<title>Möbelschreinerei</title><p>Tische, Stühle, Schränke, Betten, Kommoden, Wäschetruhen, Regale, Sofas und noch vieles mehr, was das Wohnen angenehmer macht, produziert die BZT Möbelfabrik.</p>
+<p>Tische, Stühle, Schränke, Betten, Kommoden, Wäschetruhen, Regale, Sofas und noch vieles mehr, was das Wohnen angenehmer macht, produziert die BZT Möbelfabrik.</p>
 Moebeltischlerei_1800
 Möbeltischlerei
 Muehle_1924
@@ -2743,39 +2743,39 @@ Mühle (1924)
 Muehle_NIC
 Mühle (1898)
 factory_Muehle_NIC_details
-<title>Kornmühle</title><p>In Kornmühlen werden verschiedene Getreidesorten wie Roggen, Dinkel, Weizen und Gerste zu Mehl verarbeitet. Dieses wird dann entweder an Großabnehmer wie Bäckereien oder auch an den Einzelhandel ausgeliefert.</p>
+<p>In Kornmühlen werden verschiedene Getreidesorten wie Roggen, Dinkel, Weizen und Gerste zu Mehl verarbeitet. Dieses wird dann entweder an Großabnehmer wie Bäckereien oder auch an den Einzelhandel ausgeliefert.</p>
 MuellContainer
 Abfall-Sammelstelle
 factory_MuellContainer_details
-<title>Abfall Sammelstelle</title><p>Hier bringen die Haushalte der Umgebung Sperrmüll und Abfälle hin, die nicht mit dem Hausmüll entsorgt werden dürfen.</p>
+<p>Hier bringen die Haushalte der Umgebung Sperrmüll und Abfälle hin, die nicht mit dem Hausmüll entsorgt werden dürfen.</p>
 NDT_alte_Marzipanfabrik
 Marzipanfabrik
 factory_NDT_alte_Marzipanfabrik_details
-<title>Marzipanfabrik</title><p>Marzipan ist eine Süßware, die aus gemahlenen Mandeln und Zucker hergestellt wird. Die ersten deutschen Marzipanfabriken gründeten sich an den Hafenstädten, weil Mandeln seinerzeit nur in geringen Mengen aus so genannten Kolonien durch Schiffsimporte nach Europa gelangen konnten.</p>
+<p>Marzipan ist eine Süßware, die aus gemahlenen Mandeln und Zucker hergestellt wird. Die ersten deutschen Marzipanfabriken gründeten sich an den Hafenstädten, weil Mandeln seinerzeit nur in geringen Mengen aus so genannten Kolonien durch Schiffsimporte nach Europa gelangen konnten.</p>
 NDT_alterBauernhof_NIC
 Zuckerrübenbauer (1800)
 factory_NDT_alterBauernhof_NIC_details
-<title>Norddeutscher Bauernhof</title><p>Hier werden Zuckerrüben angebaut.</p>
+<p>Hier werden Zuckerrüben angebaut.</p>
 NDT_Importeur
 Importeur (Norddt./Ostdt.)
 factory_NDT_Importeur_details
-<title>Importeur</title><p>Dieses Handelshaus importiert Mandeln und Südfrüchte.</p>
+<p>Dieses Handelshaus importiert Mandeln und Südfrüchte.</p>
 NDTZuckerfabrik_NIC
 Zuckerfabrik
 factory_NDTZuckerfabrik_NIC_details
-<title>Sigrana Zucker KG.</title><p>Bei der Zuckerproduktion wird aus Zuckerrüben, die auf einen hohen Zuckergehalt gezüchtet wurden, der Zucker extrahiert und in verschiedenen Formen gebrauchsfähig hergestellt. Die durch die Zuckergewinnung ausgelaugten Rübenschnitzel besitzen immer noch einen hohen Zuckeranteil und enthalten außerdem Eiweiß, weshalb sie als Futtermittel für Wiederkäuer verwendet werden. 1802 wurde mit der Produktion von Zucker aus Zuckerüben begonnen, da durch die Kontinentalsperre Rohrzucker aus den Kolonien nicht mehr verfügbar war.</p>
+<p><em>Sigrana Zucker KG.</em><br>Bei der Zuckerproduktion wird aus Zuckerrüben, die auf einen hohen Zuckergehalt gezüchtet wurden, der Zucker extrahiert und in verschiedenen Formen gebrauchsfähig hergestellt. Die durch die Zuckergewinnung ausgelaugten Rübenschnitzel besitzen immer noch einen hohen Zuckeranteil und enthalten außerdem Eiweiß, weshalb sie als Futtermittel für Wiederkäuer verwendet werden. 1802 wurde mit der Produktion von Zucker aus Zuckerüben begonnen, da durch die Kontinentalsperre Rohrzucker aus den Kolonien nicht mehr verfügbar war.</p>
 Neues_Kohlekraftwerk
 Kohlekraftwerk (1963)
 factory_Neues_Kohlekraftwerk_details
-<title>Kohlekraftwerk</title><p>Das Kraftwerk wandelt die mittels thermischer Verbrennung gewonnene Wärme in elektrische Energie um. Die Abgase und Schadstoffe sollen durch hohe Schornsteine in der Luft verwirbelt und dadurch unschädlich werden. Grenzwerte können so eingehalten werden. Die Schadstoffe werden jedoch nur über ein größeres Gebiet verteilt.</p>
+<p>Das Kraftwerk wandelt die mittels thermischer Verbrennung gewonnene Wärme in elektrische Energie um. Die Abgase und Schadstoffe sollen durch hohe Schornsteine in der Luft verwirbelt und dadurch unschädlich werden. Grenzwerte können so eingehalten werden. Die Schadstoffe werden jedoch nur über ein größeres Gebiet verteilt.</p>
 NorddeutscherExporteur
 Exporteur (Norddt., 1970)
 factory_NorddeutscherExporteur_details
-<title>NN-Exports</title><p>Der Exporteur verkauft und versendet Waren aus dem Inland in alle Welt.</p>
+<p><em>NN-Exports</em><br>Der Exporteur verkauft und versendet Waren aus dem Inland in alle Welt.</p>
 NorddeutscherExporteur_1891
 Exporteur (Norddt.)
 factory_NorddeutscherExporteur_1891_details
-<title>SQ-Exports Ltd.</title><p>SQ verkauft und versendet Waren in alle Welt.</p>
+<p><em>SQ-Exports Ltd.</em><br>SQ verkauft und versendet Waren in alle Welt.</p>
 Nordschacht Mettingen
 Kohlenbergwerk (Mettingen, 1950)
 factory_Nordschacht Mettingen_details
@@ -2783,25 +2783,25 @@ factory_Nordschacht Mettingen_details
 Obstbauer
 Obstbauer (1930)
 factory_Obstbauer_details
-<title>Obstbauer</title><p>Süße Früchte für Jung und Alt.</p>
+<p>Süße Früchte für Jung und Alt.</p>
 Oelbohrinsel
 Ölbohrinsel
 factory_Oelbohrinsel_details
-<title>Ölbohrinsel</title><p>Eine Bohrplattform, auch Bohrinsel genannt, ist ein Offshorebauwerk, das zum Bohren nach Erdöl im Meer dient.</p>
+<p>Eine Bohrplattform, auch Bohrinsel genannt, ist ein Offshorebauwerk, das zum Bohren nach Erdöl im Meer dient.</p>
 Oelfeld
 Ölfeld
 factory_Oelfeld_details
-<title>Ölfeld</title><p>Die technische und medizinische Verwendbarkeit von Erdöl war zwar seit vielen Jahrhunderten bekannt, aber erst im 19. Jahrhundert ermöglichte die technische Entwicklung die industrielle Ausbeutung von "Ölfeldern", wie die unterirdischen Erdöllagern genannt werden. In Deutschland wurde in Wietze schon im Mittelalter Öl gewonnen. 1858 begann dort die industrielle Förderung  mit ersten Erdölbohrung der Welt. 1930 brach Erdöl und Gas in das Kalibergwerk Volkenroda ein. Damit wurde der Zusammenhang von Salzstöcken und Ölvorkommen erkannt. 1931 lieferte Volkenroda ein Viertel der Deutschen Ölförderung.  </p>
+<p>Die technische und medizinische Verwendbarkeit von Erdöl war zwar seit vielen Jahrhunderten bekannt, aber erst im 19. Jahrhundert ermöglichte die technische Entwicklung die industrielle Ausbeutung von "Ölfeldern", wie die unterirdischen Erdöllagern genannt werden. In Deutschland wurde in Wietze schon im Mittelalter Öl gewonnen. 1858 begann dort die industrielle Förderung  mit ersten Erdölbohrung der Welt. 1930 brach Erdöl und Gas in das Kalibergwerk Volkenroda ein. Damit wurde der Zusammenhang von Salzstöcken und Ölvorkommen erkannt. 1931 lieferte Volkenroda ein Viertel der Deutschen Ölförderung.  </p>
 factory_Oktoberfest_details
-<title>Das Oktoberfest in München</title><p>Von den Einheimischen "Die Wiesn" genannt, findet im Septembers statt, dauert zwei Wochen und endet am ersten Sonntag im Oktober. Das erste Fest fand im Jahr 1910 anlässlich der Hochzeit des späteren Bayrischen König Ludwig I statt. Seit dieser Zeit wächst das Fest von Jahr zu Jahr.<br>1818 das erste Karusell<br>1869 der Schichtl, es werden Zaubereien und Kuriositäten präsentiert und Besucher mittels Guillotine enthauptet,<br>1880 ein Riesenrad mit 12 Meter aus Holz<br>1894 die Hexenschaukel<br>1898 der Wirt Georg Lang erschleicht sich fünf Budenplätze und errichtete darauf seine "Bierburg", das war der beginn der großen Bierzelte,<br>1906 Toboggan, eine Rutsche, seit 1933 mit einem Förderband für die Fahrgäste,<br>1910 Teufelsrad, wem es gelingt oben zu bleiben gewinnt,<br>1920 Krinoline ein Rundkarussell,<br>1932 Pitts Todeswand, Motoradfahrer an einer hölzernen zylindrischen Steilwand,<br>1979 Riesenrad aus Stahl mit 48 Meter<br> Diese liebevoll gepflegten Attraktionen sind auch heute noch vertreten.</p><p><em> Ein so großes Fest mit Bier und allem anderen zu versorgen, erfordert eine ausgefeilte Logistik. Auch die Besucher möchten zum Fest gefahren werden und anschließend auch wieder zurück. Wird das Fest optimal versorgt, wird es zum größten Volksfest der Welt wachsen. </em></p><p>Für das Oktoberfest brauen die Münchner Brauereien ein spezielles Bier das bis zu 6,4 Volumenprozent Alkohol enthält. So mancher Besucher unterschätzt sowohl den Inhalt der Biergläser, als auch den Alkoholgehalt des Biers. Häufig versuchen diese dann, mit letzter Kraft, das Fest auf dem kürzesten Weg zu verlassen. Dieser führt hinter den Festzelten den Hang eines kleinen Hügels hinauf. Manche scheitern an der kleinen Steigung und bleiben liegen. Die einen schlafen augenblicklich ein, andere erbrechen sich. Die Einheimischen nennen ihn deshalb den Kotzhügel. Leider zieht diese besondere Attraktion zunehmend Schaulustige an, so dass die Polizei in letzter Zeit dort zunehmend nach dem Rechten sehen muss.  </p>
+<p><em>Das Oktoberfest in München</em></p><p>Von den Einheimischen "Die Wiesn" genannt, findet im Septembers statt, dauert zwei Wochen und endet am ersten Sonntag im Oktober. Das erste Fest fand im Jahr 1910 anlässlich der Hochzeit des späteren Bayrischen König Ludwig I statt. Seit dieser Zeit wächst das Fest von Jahr zu Jahr.<br>1818 das erste Karusell<br>1869 der Schichtl, es werden Zaubereien und Kuriositäten präsentiert und Besucher mittels Guillotine enthauptet,<br>1880 ein Riesenrad mit 12 Meter aus Holz<br>1894 die Hexenschaukel<br>1898 der Wirt Georg Lang erschleicht sich fünf Budenplätze und errichtete darauf seine "Bierburg", das war der beginn der großen Bierzelte,<br>1906 Toboggan, eine Rutsche, seit 1933 mit einem Förderband für die Fahrgäste,<br>1910 Teufelsrad, wem es gelingt oben zu bleiben gewinnt,<br>1920 Krinoline ein Rundkarussell,<br>1932 Pitts Todeswand, Motoradfahrer an einer hölzernen zylindrischen Steilwand,<br>1979 Riesenrad aus Stahl mit 48 Meter<br> Diese liebevoll gepflegten Attraktionen sind auch heute noch vertreten.</p><p><em> Ein so großes Fest mit Bier und allem anderen zu versorgen, erfordert eine ausgefeilte Logistik. Auch die Besucher möchten zum Fest gefahren werden und anschließend auch wieder zurück. Wird das Fest optimal versorgt, wird es zum größten Volksfest der Welt wachsen. </em></p><p>Für das Oktoberfest brauen die Münchner Brauereien ein spezielles Bier das bis zu 6,4 Volumenprozent Alkohol enthält. So mancher Besucher unterschätzt sowohl den Inhalt der Biergläser, als auch den Alkoholgehalt des Biers. Häufig versuchen diese dann, mit letzter Kraft, das Fest auf dem kürzesten Weg zu verlassen. Dieser führt hinter den Festzelten den Hang eines kleinen Hügels hinauf. Manche scheitern an der kleinen Steigung und bleiben liegen. Die einen schlafen augenblicklich ein, andere erbrechen sich. Die Einheimischen nennen ihn deshalb den Kotzhügel. Leider zieht diese besondere Attraktion zunehmend Schaulustige an, so dass die Polizei in letzter Zeit dort zunehmend nach dem Rechten sehen muss.  </p>
 Papierfabrik_NIC
 Papierfabrik (1950)
 factory_Papierfabrik_NIC_details
-<title>Papierfabrik</title><p>Eine Papierfabrik produziert Papier und Kartonage im industriellen Maßstab.</p>
+<p>Eine Papierfabrik produziert Papier und Kartonage im industriellen Maßstab.</p>
 Papierfabrik1990
 Papierfabrik (1990)
 factory_Papierfabrik1990_details
-<title>Papierfabrik</title><p>Eine Papierfabrik produziert Papier und Kartonage im industriellen Maßstab.</p>
+<p>Eine Papierfabrik produziert Papier und Kartonage im industriellen Maßstab.</p>
 Papiermuehle
 Papiermühle
 factory_Papiermuehle_details
@@ -2809,23 +2809,23 @@ Eine Papiermühle ist der Vorläufer zu den heutigen Papierfabriken. Bei einer Pap
 Pharmawerk_NIC
 Pharmawerk (1950)
 factory_Pharmawerk_NIC_details
-<title>LEM-Pharmawerk</title><p>Hier werden Arzneimittel und Zusatzpräparate produziert.</p>
+<p><em>LEM-Pharmawerk</em><br>Hier werden Arzneimittel und Zusatzpräparate produziert.</p>
 Raffinerie_NIC
 Raffinerie (1961)
 factory_Raffinerie_NIC_details
-<title>LEM-Petro AG</title><p>Eine Erdölraffinerie gewinnt aus dem Rohstoff Erdöl durch Destillation, Fraktion und Extraktion unter Verwendung von Druck und Vakuum Treibstoffe, Schmieröle, Asphalt sowie diverse Kunstoffausgangsprodukte.</p>
+<p><em>LEM-Petro AG</em><br>Eine Erdölraffinerie gewinnt aus dem Rohstoff Erdöl durch Destillation, Fraktion und Extraktion unter Verwendung von Druck und Vakuum Treibstoffe, Schmieröle, Asphalt sowie diverse Kunstoffausgangsprodukte.</p>
 Saegewerk_NIC
 Sägewerk (1950)
 factory_Saegewerk_NIC_details
-<title>Ostdeutsches Sägewerk</title><p>Bretter, Latten, Rund- und Edelhölzer für den Profi, Heimwerker und die Industrie</p>
+<p>Bretter, Latten, Rund- und Edelhölzer für den Profi, Heimwerker und die Industrie</p>
 Sandgrube
 Sandtagebau
 factory_Sandgrube_details
-<title>Sandgrube</title><p>Sand für die Zementherstellung</p>
+<p>Sand für die Zementherstellung</p>
 Sandgrube_1800
 Sandgrube
 factory_Sandgrube_1800_details
-<title>Sandgrube Dirschenberg</title><p>Sand gibt es an vielen stellen, zum Beispiel auch in der Wüste. Aber guter Sand, zum Mauern, oder für standfesten Beton, ist selten. Der Sand der Wüste ist beispielsweise vom Wind rund und glatt geschliffen und eignet sich deshalb nicht zum errichten von Bauwerken. Die Körner können sich nicht mehr ineinander verhaken und bieten einem Bindemittel wie Zement keine Haftflächen. Guter Sand zum bauen, wurde von reißenden Flüssen aus hartem Gestein gebrochen und ist frei von Erde.   </p>
+<p><em>Sandgrube Dirschenberg</em><br>Sand gibt es an vielen Stellen, zum Beispiel auch in der Wüste. Aber guter Sand, zum Mauern, oder für standfesten Beton, ist selten. Der Sand der Wüste ist beispielsweise vom Wind rund und glatt geschliffen und eignet sich deshalb nicht zum errichten von Bauwerken. Die Körner können sich nicht mehr ineinander verhaken und bieten einem Bindemittel wie Zement keine Haftflächen. Guter Sand zum bauen, wurde von reißenden Flüssen aus hartem Gestein gebrochen und ist frei von Erde.   </p>
 Schlachthaus_1800
 Schlachthaus
 factory_Schlachthaus_1800_details
@@ -2837,29 +2837,29 @@ factory_Schlachthof_NIC_details
 Schrotthandel_NIC
 Schrottplatz
 factory_Schrotthandel_NIC_details
-<title>Schrottplatz</title><p>Schrott ist ein metallischer Sekundärrohstoff, der z.B. aus Autowracks und alten Geräten gewonnen wird.</p>
+<p>Schrott ist ein metallischer Sekundärrohstoff, der z.B. aus Autowracks und alten Geräten gewonnen wird.</p>
 factory_Schwimmdock_details
-<title>Schwimmdock</title><p>Schiffsproduktion. Hier werden große Frachter, Tanker und Containerschiffe aus einzelnen Segmenten, Teilsektionen genannt, zusammengesetzt. Ein Schwimmdock schwimmt selbst. Zum Eindocken eines Schiffes werden die Fluttanks des Schwimmdocks mit Wasser gefüllt, so dass das Dock tief eintaucht. Dann wird das zu bearbeitende Schiff in das Dock gezogen und die Fluttanks wieder leer gepumpt. Das zu bearbeitende Schiff, oder auch die Segmente werden so aus dem Wasser gehoben und liegen dann zum bearbeiten trocken. </p>
+<p>Schiffsproduktion. Hier werden große Frachter, Tanker und Containerschiffe aus einzelnen Segmenten, Teilsektionen genannt, zusammengesetzt. Ein Schwimmdock schwimmt selbst. Zum Eindocken eines Schiffes werden die Fluttanks des Schwimmdocks mit Wasser gefüllt, so dass das Dock tief eintaucht. Dann wird das zu bearbeitende Schiff in das Dock gezogen und die Fluttanks wieder leer gepumpt. Das zu bearbeitende Schiff, oder auch die Segmente werden so aus dem Wasser gehoben und liegen dann zum bearbeiten trocken. </p>
 Stahlwerk_NIC
 Stahlwerk (1891)
 factory_Stahlwerk_NIC_details
-<title>BZT-Tony Steel-Industries LTD.</title><p>Dieses Werk produziert hochwertigen Stahl u.a. für den Maschinen- und Schiffsbau. Aber auch die Kfz-Industrie, die ab 1905 im Simutranskosmos ihre Arbeit aufnehmen wird, wird ein willkommener Kunde werden.</p>
+<p><em>BZT-Tony Stahlwerke AG</em><br>Dieses Werk produziert hochwertigen Stahl u.a. für den Maschinen- und Schiffsbau. Aber auch die Kfz-Industrie, die ab 1905 im Simutranskosmos ihre Arbeit aufnehmen wird, wird ein willkommener Kunde werden.</p>
 Stahlwerk_StAntony-Huette
 Stahlwerk St.-Antony-Hütte
 factory_Stahlwerk_StAntony-Huette_details
-<title>St.-Antony-Hütte Oberhausen</title><p>Das Hüttenwerk wurde 1758 in Osterfeld als erstes Eisenwerk im Ruhrgebiet gegründet. Die St.-Antony-Hütte gilt "Wiege der Ruhrindustrie". Verarbeitet wurde Raseneisenerz und Holzkohle der Umgebung. Die Wasserkraft des Elpenbachs wurde zum Betrieb des Hüttengebläses genutzt. Der Mühlteich ist heute noch vorhanden. 1771 misslang der erste Versuch im Ruhrgebiet, Erz mit Steinkohle zu verhütten.</p>
+<p><em>St.-Antony-Hütte Oberhausen</em><br>Das Hüttenwerk wurde 1758 in Osterfeld als erstes Eisenwerk im Ruhrgebiet gegründet. Die St.-Antony-Hütte gilt "Wiege der Ruhrindustrie". Verarbeitet wurde Raseneisenerz und Holzkohle der Umgebung. Die Wasserkraft des Elpenbachs wurde zum Betrieb des Hüttengebläses genutzt. Der Mühlteich ist heute noch vorhanden. 1771 misslang der erste Versuch im Ruhrgebiet, Erz mit Steinkohle zu verhütten.</p>
 Steinbruch_alt
 Steinbruch (Süddt.)
 factory_Steinbruch_alt_details
-<title>Steinbruch</title><p>Hier wird grober Kies gefördert.</p>
+<p>Hier wird grober Kies gefördert.</p>
 Steinbruch_gross
 Steinbruch (Süddt. 1959)
 factory_Steinbruch_gross_details
-<title>Steinbruch</title><p>Hier werden Steine für die Zementproduktion gefördert.</p>
+<p>Hier werden Steine für die Zementproduktion gefördert.</p>
 SteinbruchHartkoppe
 Steinbruch Hartkoppe (1970)
 factory_SteinbruchHartkoppe_details
-<title>Steinbruch</title><p>Hier wird grober Kies gefördert.</p>
+<p>Hier wird grober Kies gefördert.</p>
 Steinkohlekraftwerk
 Kohlekraftwerk (1982)
 factory_Steinkohlekraftwerk_details
@@ -2867,31 +2867,31 @@ factory_Steinkohlekraftwerk_details
 sueddt_alte_baeckerei
 Bäckerei (Süddt.)
 factory_sueddt_alte_baeckerei_details
-<title>Süddeutsche Bäckerei</title><p>Hier haben wir es mit einem echten Handwerksbetrieb zu tun, der Backwaren und Süßes vornehmlich für die nähere Umgebung erzeugt.</p>
+<p>Hier haben wir es mit einem echten Handwerksbetrieb zu tun, der Backwaren und Süßes vornehmlich für die nähere Umgebung erzeugt.</p>
 Supermarkt_AVL_ALP_2000
 Supermarkt SIMRER
 factory_Supermarkt_AVL_ALP_2000_details
-<title>Ein Supermarkt</title><p>Die Supermärkte der Michelstadt Handels GmbH verkaufen hauptsächlich Lebensmittel des täglichen Bedarfs.</p>
+<p>Die Supermärkte der Michelstadt Handels GmbH verkaufen hauptsächlich Lebensmittel des täglichen Bedarfs.</p>
 Supermarkt_MGB_AVL_1970
 Supermarkt SIMRER (1970)
 factory_Supermarkt_MGB_AVL_1970_details
-<title>Ein typisch deutscher Supermarkt</title><p>Der Supermarkt ist ein Einzelhandelsgeschäft, das außer Lebensmitteln auch Socken, Staubsauger, Toilettenartikel und Feinkost anbietet.</p>
+<p>Der Supermarkt ist ein Einzelhandelsgeschäft, das außer Lebensmitteln auch Socken, Staubsauger, Toilettenartikel und Feinkost anbietet.</p>
 Supermarkt_ODL_MGB_2000
 Supermarkt SIMRERAB
 factory_Supermarkt_ODL_MGB_2000_details
-<title>Supermarkt</title><p>Der Supermarkt ist ein Einzelhandelsgeschäfft, das außer Lebensmitteln auch Socken, Staubsauger, Toilettenartikel und Feinkost anbietet.</p>
+<p>Der Supermarkt ist ein Einzelhandelsgeschäfft, das außer Lebensmitteln auch Socken, Staubsauger, Toilettenartikel und Feinkost anbietet.</p>
 Tankstelle_Pascale
 Tankstelle Pascal (1988)
 factory_Tankstelle_Pascale_details
-<title>Pascalloks Tankstelle</title><p>Tanken, Auto waschen und nebenbei einen Capuccino schlürfen.</p>
+<p><em>Pascalloks Tankstelle</em><br>Tanken, Auto waschen und nebenbei einen Capuccino schlürfen.</p>
 Tankstelle1941_NIC
 Tankstelle
 factory_Tankstelle1941_NIC_details
-<title>Tankstelle 1941</title><p>Sprit und Schmierstoffe für das Töff-töff</p>
+<p>Sprit und Schmierstoffe für das Töff-töff</p>
 Textilfabrik_1800
 Textilfabrik
 factory_Textilfabrik_1800_details
-<title>Textilfabrik</title><p>In der Textilfabrik werden Kleidungsstücke für jedermann sowie Mode für die Dame von Welt hergestellt. Dabei wird sowohl Wolle als auch Leinen verwendet.</p>
+<p>In der Textilfabrik werden Kleidungsstücke für jedermann sowie Mode für die Dame von Welt hergestellt. Dabei wird sowohl Wolle als auch Leinen verwendet.</p>
 Textilfabrik1874
 Textilfabrik Kammgarnspinnerei Schaefer 
 factory_Textilfabrik1874_details
@@ -2899,41 +2899,41 @@ factory_Textilfabrik1874_details
 TierfutterFabrik_alt
 Tierfutter Fabrik (1953)
 factory_TierfutterFabrik_alt_details
-<title>Tierfutter Fabrik</title><p>Die Familie Pell verkauft Kraftfutter für Hühner. Dazu wird Gerste genau abgestimmt auf die Bedürfnisse der Tiere, mit Eiweiß, Ölen und Mineralien gemischt, gemahlen und zu Würstchen gepresst. Die Handhabung von Pellets ist einfach in Verkauf, Transport, Lagerung, Portionierung und Verteilung an die Tiere. Da weitgehend Staubfrei, kann auf Verpackung verzichtet werden und es in Silos gelagert und transportiert werden. Die Geschäfte der Familie Pell gehen inzwischen so gut, dass sie Landwirtschaft und Hühnerzucht aufgegeben haben und sich ausschließlich der Produktion von Pellets widmen. </p>
+<p>Die Familie Pell verkauft Kraftfutter für Hühner. Dazu wird Gerste genau abgestimmt auf die Bedürfnisse der Tiere, mit Eiweiß, Ölen und Mineralien gemischt, gemahlen und zu Würstchen gepresst. Die Handhabung von Pellets ist einfach in Verkauf, Transport, Lagerung, Portionierung und Verteilung an die Tiere. Da weitgehend Staubfrei, kann auf Verpackung verzichtet werden und es in Silos gelagert und transportiert werden. Die Geschäfte der Familie Pell gehen inzwischen so gut, dass sie Landwirtschaft und Hühnerzucht aufgegeben haben und sich ausschließlich der Produktion von Pellets widmen. </p>
 TierfutterFabrik_NIC
 Tierfutterfabrik (1984)
 factory_TierfutterFabrik_NIC_details
-<title>Tierfutter Fabrik</title><p>Das Kraftfutter dieser Fabrik ist der Treibstoff für den Geflügelhof.</p>
+<p>Das Kraftfutter dieser Fabrik ist der Treibstoff für den Geflügelhof.</p>
 Verbrennungskraftwerk
 Abfallkraftwerk
 factory_Verbrennungskraftwerk_details
 <p>Ein Heizkraftwerk erzeugt Wärme für die Warmwasserversorgung, Raumbeheizung und industrielle Prozesse. Nebenbei wird auch noch Strom zur Abdeckung von Spitzenverbrauchszeiten produziert.</p>
 factory_Verpackungshersteller_details
-<title>MakiePAK Verpackungsdesign GmbH</title><p>Verpackungsmaterial wird in vielen Fabriken nebenher produziert. Um sich vom Markt abzuheben, hat sich die MakiePAK Verpackungsdesign GmbH auf die Herstellung von speziellen, für hochwertige Marken designten Verpackungen spezialisiert. Schon die Verpackung soll die Hochwertigkeit der Ware vermitteln und dem Käufer damit ein besonderes Kauferlebnis bieten. Die MakiePAK GmbH unterstützt dazu den Kunden schon beim Entwurf der Verpackung und sorgt für die konkurrenzfreie Produktion der Verpackung. Die individuelle Präsentation der Ware hat natürlich ihren Preis. Produziert werden Dosen in nicht normierten Formen und Größen sowie mit Folie beschichtete Pappschachteln in allen Formen und Größen. Eine farbenfrohe Bedruckung von allen Seiten sorgt dafür, dass dem Kunden die Ware von Weitem auffällt.</p>
+<p><em>MakiePAK Verpackungsdesign GmbH</em><br>Verpackungsmaterial wird in vielen Fabriken nebenher produziert. Um sich vom Markt abzuheben, hat sich die MakiePAK Verpackungsdesign GmbH auf die Herstellung von speziellen, für hochwertige Marken designten Verpackungen spezialisiert. Schon die Verpackung soll die Hochwertigkeit der Ware vermitteln und dem Käufer damit ein besonderes Kauferlebnis bieten. Die MakiePAK GmbH unterstützt dazu den Kunden schon beim Entwurf der Verpackung und sorgt für die konkurrenzfreie Produktion der Verpackung. Die individuelle Präsentation der Ware hat natürlich ihren Preis. Produziert werden Dosen in nicht normierten Formen und Größen sowie mit Folie beschichtete Pappschachteln in vielfältigen Formen und Größen. Eine farbenfrohe Bedruckung von allen Seiten sorgt dafür, dass dem Kunden die Ware von Weitem auffällt.</p>
 Verpackungsmittelfabrik_1909
 Verpackungsmittelfabrik
 factory_Verpackungsmittelfabrik_1909_details
-<title>VerPAK GmbH</title><p>Die Firma VerPaK hat sich auf die Produktion und den Vertrieb von Dosen aus Stahl sowie Kisten und Fässern aus Holz spezialisiert. Daneben stellt sie Kartonage und reißfeste Tüten her. Da die Papierfabriken keinen Zellstoff von geeigneter Qualität liefern können, sieht man sich gezwungen, diesen im Nebengebäude aus den Holzresten der Fassproduktion selbst herzustellen. Die Anwohner klagen über den Dreck, der von dieser Fabrik ausgeht. Überall fliegen Faserbüschel aus der Zellstofffertigung herum. </p>
+<p><em>VerPAK GmbH</em><br>Die Firma VerPaK hat sich auf die Produktion und den Vertrieb von Dosen aus Stahl sowie Kisten und Fässern aus Holz spezialisiert. Daneben stellt sie Kartonage und reißfeste Tüten her. Da die Papierfabriken keinen Zellstoff von geeigneter Qualität liefern können, sieht man sich gezwungen, diesen im Nebengebäude aus den Holzresten der Fassproduktion selbst herzustellen. Die Anwohner klagen über den Dreck, der von dieser Fabrik ausgeht. Überall fliegen Faserbüschel aus der Zellstofffertigung herum. </p>
 Versandhandel_1886
 Versandhandel
 factory_Versandhandel_1886_details
-<title>Versandhandel Mey & Edlich seit 1886</title><p>in Leipzig ist der älteste und noch aktive Versandhandel. Beim Versandhandel gehen die Kunden zum Kaufen nicht auf den Markt, sondern wählen in Zeitungsanzeigen oder in Katalogen ihre gewünschte Produkte. Diese bestellen sie per Brief und bekommen die Ware dann per Paketpost geliefert. Deshalb ist ein Versandhandel auf ein gut funktionierendes Postwesen angewiesen. Die Briefe mit den Bestellungen müssen zuverlässig an der Fabrik angeliefert werden. Genauso zuverlässig müssen die Pakete ausgeliefert werden. Auch hier im Spiel funktioniert der Versandhandel nur bei einer guten Postanbindung. Kleidung, Schreibwaren und kleine Maschinen sind für den Versandhandel bestens geeignet, da sie in Pakten gut versendet werden können. Sie sind nicht verderblich, leicht und hochwertig.</p>
+<p><em>Versandhandel Mey & Edlich seit 1886</em><br>in Leipzig ist der älteste und noch aktive Versandhandel. Beim Versandhandel gehen die Kunden zum Kaufen nicht auf den Markt, sondern wählen in Zeitungsanzeigen oder in Katalogen ihre gewünschte Produkte. Diese bestellen sie per Brief und bekommen die Ware dann per Paketpost geliefert. Deshalb ist ein Versandhandel auf ein gut funktionierendes Postwesen angewiesen. Die Briefe mit den Bestellungen müssen zuverlässig an der Fabrik angeliefert werden. Genauso zuverlässig müssen die Pakete ausgeliefert werden. Auch hier im Spiel funktioniert der Versandhandel nur bei einer guten Postanbindung. Kleidung, Schreibwaren und kleine Maschinen sind für den Versandhandel bestens geeignet, da sie in Pakten gut versendet werden können. Sie sind nicht verderblich, leicht und hochwertig.</p>
 Verwaltung_Muenchen_1965
 Stadtverwaltung
 factory_Verwaltung_Muenchen_1965_details
-<title>Münchner Städtisches Hochhaus an der Blumenstraße</title><p>Das Haus ist zwar schon von 1929, aber wir brauchen einen Endverbraucher für Computer ab 1965, da wir ab 1965 eine Computerfabrik im Spiel haben. 1965 kosten Computer so viel wie ein Haus. Daher kann sich kein Simbürger privat einen Computer leisten, aber für den Staat, große Firmen und Stadtverwaltungen kann sich ein solch teurer Computer lohnen. Deshalb stellen immer mehr Stadtverwaltungen auf EDV um. Ab 1980 werden dann erste kleine Computer in Warenhäuser angeboten. </p>
+<p><em>Münchner Städtisches Hochhaus an der Blumenstraße</em><br>Das Haus ist zwar schon von 1929, aber wir brauchen einen Endverbraucher für Computer ab 1965, da wir ab 1965 eine Computerfabrik im Spiel haben. 1965 kosten Computer so viel wie ein Haus. Daher kann sich kein Simbürger privat einen Computer leisten, aber für den Staat, große Firmen und Stadtverwaltungen kann sich ein solch teurer Computer lohnen. Deshalb stellen immer mehr Stadtverwaltungen auf EDV um. Ab 1980 werden dann erste kleine Computer in Warenhäuser angeboten. </p>
 Viehhof_NIC
 veraltet nicht benutzen
 factory_Viehhof_NIC_details
-<title>Viehhof (1919)</title><p>Dieser Viehhof mit seinen Eier legenden Kühen dient nur der Kompatibilität zu alten gespeicherten Spielständen. Nicht neu bauen.</p>
+<p>Dieser Viehhof mit seinen Eier legenden Kühen dient nur der Kompatibilität zu alten gespeicherten Spielständen. Nicht neu bauen.</p>
 Viehhof_NIC_2
 Viehhof (1919)
 factory_Viehhof_NIC_2_details
-<title>Norddeutscher Bauernhof</title><p>Flaches Land, grüne, saftige Wiesen und viel Regen und Wind - das kann nur ein norddeutscher Viehhof sein.</p>
+<p>Flaches Land, grüne, saftige Wiesen und viel Regen und Wind - das kann nur ein norddeutscher Viehhof sein.</p>
 Viehhof_Nord1800
 Viehhof Norddeutschland (1800)
 factory_Viehhof_Nord1800_details
-<title>Gutshaus Benckendorf</title><p>Hier werden Rinder gezüchtet und mit den Hinterlassenschaften Zuckerrüben gedüngt. Die ausgepressten Rüben sind dann wieder kalorienreiches Futter für die Rinder. Die Biomasse geht also im Kreis, neudeutsch Recycling, übrig bleiben Zucker und Rindviecher.</p>
+<p><em>Gutshaus Benckendorf</em><br>Hier werden Rinder gezüchtet und mit den Hinterlassenschaften Zuckerrüben gedüngt. Die ausgepressten Rüben sind dann wieder kalorienreiches Futter für die Rinder. Die Biomasse geht also im Kreis, neudeutsch Recycling, übrig bleiben Zucker und Rindviecher.</p>
 VWAutohaus_NIC
 Autohaus (1952)
 factory_VWAutohaus_NIC_details
@@ -2941,35 +2941,35 @@ factory_VWAutohaus_NIC_details
 Waferfabrik_1965
 Waferfabrik
 factory_Waferfabrik_1965_details
-<title>Wacker Chemie</title><p>Auf den ersten Blick erkennt man ein beliebiges Chemiewerk. Doch es produziert hochreines Silizium und stellt daraus monokristalline Wafer her. Wafer, so nennt man die Scheiben aus reinem Silizium, auf denen integrierte Schaltungen aufgebaut werden, besser bekannt unter dem Namen ICs oder Chips. Das Herstellen von hochreinem Silizium und das Ziehen von Monokristallen aus einer Schmelze ist sehr energieaufwendig. Wacker in Burghausen kann dafür den Strom seines werkseigenen Wasserkraftwerks nutzen. Auch im Simutranskosmos ist die Fabrik auf eine gute Stromversorgung angewiesen. Nur bei ausreichender Stromversorgung wird diese Frabik genug Wafer für die Computerhersteller liefern. </p>
+<p><em>Wacker Chemie</em><br>Auf den ersten Blick erkennt man ein beliebiges Chemiewerk. Doch es produziert hochreines Silizium und stellt daraus monokristalline Wafer her. Wafer, so nennt man die Scheiben aus reinem Silizium, auf denen integrierte Schaltungen aufgebaut werden, besser bekannt unter dem Namen ICs oder Chips. Das Herstellen von hochreinem Silizium und das Ziehen von Monokristallen aus einer Schmelze ist sehr energieaufwendig. Wacker in Burghausen kann dafür den Strom seines werkseigenen Wasserkraftwerks nutzen. Auch im Simutranskosmos ist die Fabrik auf eine gute Stromversorgung angewiesen. Nur bei ausreichender Stromversorgung wird diese Frabik genug Wafer für die Computerhersteller liefern. </p>
 factory_Wasserkraftwerk_details
 <h1>Laufwasserkraftwerk Schöngeising</h1><p>Das Laufwasserkraftwerk in Schöngeising wurde 1992 gebaut um Fürstenfeldbruck und die Umgebung mit Strom zu versorgen. Es ist das älteste erhaltene Wasserkraftwerk in Deutschland, das auch heute noch in Betrieb ist. Oskar von Miller hatte bei der Planung nicht nur die Straßenbeleuchtung und Licht für die Haushalte im Sinn. Er sah vor allem die Nützlichkeit von elektrischer Antriebskraft für Handwerk und kleine Fabriken, die sich keine eigene Dampfmaschine leisten konnten. 1893 gab es in Fürstenfeldbruck bereits 16 an das Netz angeschlossene Elektromotoren. Es gab auch mobile Elektromotoren, die dank des flächendeckenden Netz überall in Fürstenfeldbruck eingesetzt werden konnten.  <br><br>In Simutrans erscheint es abweichend davon um 1880, weil es einige Jahre vor dem Heizkraftwerk erscheinen muss. Der Sinn des Wasserkraftwerks ist nicht so sehr Strom zu produzieren, als eine Eigenart vom Programm Simutrans auszugleichen. Simutrans baut vorrangig Kraftwerke bis der Bedarf aller Fabriken an Strom gedeckt ist. Wenn man eine Karte um 1800 startet, dann existieren um 1880 bereits viele Fabriken, welche alle Strom brauchen. Simutrans würde mit erscheinen des ersten Kraftwerks (Heizkraftwerk) um 1884, ab da jetzt nur noch Heizkraftwerke bauen bis der Strombedarf aller Fabriken gedeckt ist. Das kann bis nach 1963 dauern, dem Erscheinungsjahr wirklich leistungsfähiger Kraftwerke, was den Zeitraum aus Spielersicht dann langweilig macht.</p>
 Weinberg_NIC
 Weinberg
 factory_Weinberg_NIC_details
-<title>Weingut Grettman.</title><p>Bei einem Weinberg werden aus edlen Weinreben wohlschmeckende Trauben für edle Tropfen erzeugt. </p>
+<p><em>Weingut Grettman.</em><br>Bei einem Weinberg werden aus edlen Weinreben wohlschmeckende Trauben für edle Tropfen erzeugt. </p>
 Werft
 Werft (1980)
 factory_Werft_details
-<title>Schiffswerft</title><p>Hier entstehen Luxuskreuzer, Ozeanriesen, Frachter, Containerschiffe und Öltanker Stück für Stück. Die Segmente, Teilsektionen genannt, werden dann in Schwimmdocks, draußen in tiefen Gewässern zusammengesetzt.</p>
+<p><em>Schiffswerft</em><br>Hier entstehen Luxuskreuzer, Ozeanriesen, Frachter, Containerschiffe und Öltanker Stück für Stück. Die Segmente, Teilsektionen genannt, werden dann in Schwimmdocks, draußen in tiefen Gewässern zusammengesetzt.</p>
 Werft_1870
 Werft 1870
 factory_Werft_1870_details
-<title>Werft Jacobi, Haniel & Huyssen</title><p>Die Caledonia, der zweite Dampfer auf dem Rhein nach der Defiance, erlitt 1817 in Wesel einen Maschinenschaden. Der Balancier war gebrochen. Der Eigner James Watt jr. ließ sich von Gottlob Jacobi Leiter der St. Antony Hütte einen neuen gießen. Franz Haniel Miteigentümer der St. Antony Hütte konnte so die Dampfmaschine der Caledonia studieren. Die beiden beschlossen die Errichtung einer eigenen Werft für Dampfschiffe in Ruhrort. Nach ersten Wartungsarbeiten an der Concordia ab 1827, konnte 1830 mit der "Stadt Mainz" das erste im Ruhrgebiet gebaute Dampfschiff fertig gestellt werden. 1838 lief mit der "Graf von Paris" das erste Eisenrumpfschiff vom Stapel. Die 1835 mit einer Verbunddampfmaschine ausgerüstete "Kronprinz" benötigte als einziges Dampfschiff beim Binger Loch bei der Bergfahrt keinen Pferdevorspann.</p>
+<p><em>Werft Jacobi, Haniel & Huyssen</em><br>Die Caledonia, der zweite Dampfer auf dem Rhein nach der Defiance, erlitt 1817 in Wesel einen Maschinenschaden. Der Balancier war gebrochen. Der Eigner James Watt jr. ließ sich von Gottlob Jacobi Leiter der St. Antony Hütte einen neuen gießen. Franz Haniel Miteigentümer der St. Antony Hütte konnte so die Dampfmaschine der Caledonia studieren. Die beiden beschlossen die Errichtung einer eigenen Werft für Dampfschiffe in Ruhrort. Nach ersten Wartungsarbeiten an der Concordia ab 1827, konnte 1830 mit der "Stadt Mainz" das erste im Ruhrgebiet gebaute Dampfschiff fertig gestellt werden. 1838 lief mit der "Graf von Paris" das erste Eisenrumpfschiff vom Stapel. Die 1835 mit einer Verbunddampfmaschine ausgerüstete "Kronprinz" benötigte als einziges Dampfschiff beim Binger Loch bei der Bergfahrt keinen Pferdevorspann.</p>
 Windmuehle_1800
 Mühle (tradit. Windkraft)
 Zementwerk1800_NIC
 Zementwerk (Norddt./Mittelgb.)
 factory_Zementwerk1800_NIC_details
-<title>Zementwerk 1852</title><p>Hier wird aus Sand und Steinen Zement hergestellt. Dieser wird für den Bau der Simutranshäuser und später ab 1871 für das Betonwerk gebraucht. Ausgediente Weinfässer und alte Mehlsäcke aus Jute dienen als Verpackung, aber auch jegliches vom Kunden gestellte Gefäß wie Blechwannen und Zuber werden befüllt.</p>
+<p><em>Zementwerk 1852</em><br>Hier wird aus Sand und Steinen Zement hergestellt. Dieser wird für den Bau der Simutranshäuser und später ab 1871 für das Betonwerk gebraucht. Ausgediente Weinfässer und alte Mehlsäcke aus Jute dienen als Verpackung, aber auch jegliches vom Kunden gestellte Gefäß wie Blechwannen und Zuber werden befüllt.</p>
 Zementwerk1914
 Zementwerk (1914)
 factory_Zementwerk1914_details
-<title>Zementwerk Burglengenfeld.</title><p>Aus Kalk und Ton wird hier Zement gebrannt. In dem langen Gebäude wurde erstmals ein Drehofen zum Brennen des Zements benutzt. Heute werden die Drehöfen im Freien errichtet und sind mit ihren langen, schräg liegenden Rohren ein charakteristisches Erkennungsmerkmal für eine Zementfabrik. Bei diesem ersten Drehofen hat man sich offensichtlich noch nicht getraut, ihn Wind und Wetter auszusetzen und deshalb dieses schmucke Gebäude errichtet.</p>
+<p><em>Zementwerk Burglengenfeld.</em><br>Aus Kalk und Ton wird hier Zement gebrannt. In dem langen Gebäude wurde erstmals ein Drehofen zum Brennen des Zements benutzt. Heute werden die Drehöfen im Freien errichtet und sind mit ihren langen, schräg liegenden Rohren ein charakteristisches Erkennungsmerkmal für eine Zementfabrik. Bei diesem ersten Drehofen hat man sich offensichtlich noch nicht getraut, ihn Wind und Wetter auszusetzen und deshalb dieses schmucke Gebäude errichtet.</p>
 Zementwerk1979_NIC
 Zementwerk (1979)
 factory_Zementwerk1979_NIC_details
-<title>Zementwerk 1979</title><p>Hier wird aus Sand, Steinen und durch Beigabe von Zusatzstoffen, Hightech-Zement hergestellt. Dieser wird für den Bau der Simutranshäuser und für das Betonwerk gebraucht. Die meisten Kunden holen bei dieser kleinen Zementfabrik ihren Zement mit dem Lkw selbst ab. Die gute Abgasreinigung und die hohe Verbrennungstemperatur erlauben es Problemmüll zu verbrennen. Das ist, angesichts des niedrigen Zementpreises, eine willkommene Möglichkeit, die Rentabilität des Werks zu steigern. </p>
+<p>Hier wird aus Sand, Steinen und durch Beigabe von Zusatzstoffen, Hightech-Zement hergestellt. Dieser wird für den Bau der Simutranshäuser und für das Betonwerk gebraucht. Die meisten Kunden holen bei dieser kleinen Zementfabrik ihren Zement mit dem Lkw selbst ab. Die gute Abgasreinigung und die hohe Verbrennungstemperatur erlauben es Problemmüll zu verbrennen. Das ist, angesichts des niedrigen Zementpreises, eine willkommene Möglichkeit, die Rentabilität des Werks zu steigern. </p>
 #_____________________________________field_____________________________________
 #_____________________________________field_____________________________________
 Weinfelder
@@ -3251,11 +3251,11 @@ Erle
 Erle2
 Erle
 Fichte1
-Fichte
+Fichte\nPicea abies\n\nWeitverbreiteter, schlanker, immergrüner\nNadelbaum. Er erreicht eine\nHöhe von 35 bis 65m, einen\nStammdurchmesser bis 2m und\nein Alter bis zu 1000 Jahren.\nNatürliche Standorte sind Nord-\nund Osteuropa sowie die Gebirge\nMitteleuropas. Durch künstliche\nVerbreitung auch in tieferen\nRegionen angesiedelt. Daher der\nName "Brotbaum der heimischen\nForstwirtschaft". Verwendung:\nAussen- und Innenbau,\nUntertagebau, Gerüstebau,\nSpanplatten, Resonanzholz für\nMusikinstrumente, Zellulose- und\nPapierindustrie.\n
 Fichte1_gross
-große Fichte
+große Fichte\nPicea abies\n\nWeitverbreiteter, schlanker, immergrüner\nNadelbaum. Er erreicht eine\nHöhe von 35 bis 65m, einen\nStammdurchmesser bis 2m und\nein Alter bis zu 1000 Jahren.\nNatürliche Standorte sind Nord-\nund Osteuropa sowie die Gebirge\nMitteleuropas. Durch künstliche\nVerbreitung auch in tieferen\nRegionen angesiedelt. Daher der\nName "Brotbaum der heimischen\nForstwirtschaft". Verwendung:\nAussen- und Innenbau,\nUntertagebau, Gerüstebau,\nSpanplatten, Resonanzholz für\nMusikinstrumente, Zellulose- und\nPapierindustrie.\n
 Fichte2
-Fichte, lat. Picea abies
+Fichte, lat. Picea abies\nDa die Fichte in jungen Jahren schnell und gerade wächst, wurde sie gerne in der Forstwirtschaft gepflanzt. In Reih und Glied und sehr eng, damit der Baum wenig Äste bekommt. Die unteren Äste bekommen so zu wenig Licht und sterben ab. Allerdings führt das dazu, dass die Astlöcher solcher toten Äste aus dem Brett fallen. Geplant war die toten Äste per Hand zu entfernen, damit die Astlöcher zu wachsen können. Die Zeiten ändern sich, heute ist diese nur manuell durchzuführende Pflege so teuer, dass sie nicht mehr wirtschaftlich ist und unterbleibt. Werden solche Holzplantagen, denn Wald kann man das nicht nennen, geerntet, oder bricht der Sturm eine Schneise, dann kann man an den Rändern die viel zu eng stehenden Stämme, mit ihrem nur kleinen Wuschel grün oben, gut erkennen. Heute wütet der Borkenkäfer in derart geschwächten Monokulturen und was zur Profitoptimierung geplant war, wird zum Totalschaden.
 GrosserBaum_Shunter
 Moor-Birke, lat. Betula pubescens
 GrosserBaum_Shunter_Alm
@@ -3765,7 +3765,7 @@ Culemeyer Stückgutanhänger
 BZT_Culemeyer2
 Culemeyer Schüttgutanhänger
 BZT_Kaelble-1931
-Kaelble Zugmaschine Z6R
+Kaelble Zugmaschine Z6R2A100
 BZT_LKW_Milch
 Milchlaster
 BZT_LKW_Milch_Trailer
@@ -3943,9 +3943,9 @@ Lanz Bulldog FMD
 Lemurias Hochzeitskutsche
 Hochzeitskutsche
 LKW_Buchtrailer
-Anhänger für Bücher
+Anhänger für Stückgut
 LKW_Buessing
-Buessing Laster (Stückgut)
+Büssing Laster (Stückgut)
 LKW_Kieskipper
 Kieskipper
 LO3000_Bus

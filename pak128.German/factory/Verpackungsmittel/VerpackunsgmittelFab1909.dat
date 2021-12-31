@@ -1,17 +1,14 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 26-06-2018
-#	Letzte Bearbeitung: $Date: 2018-07-23 19:55:18 +0200 (Mo, 23. Jul 2018) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Verpackungsmittelfabrik_1909
 copyright=pumuckl999
-pax_level=5
 intro_year=1909
 intro_month=1
 retire_year=1960
-#retire_month=
 Location=city
 DistributionWeight=50
 Productivity=100
@@ -26,6 +23,7 @@ OutputGood[0]=Verpackungsmittel
 OutputCapacity[0]=400
 OutputFactor[0]=100
 electricity_amount=30
+pax_level=70
 passenger_boost=1000
 mail_boost=500
 climates=desert, tropic, ,tundra, mediterran, temperate, rocky

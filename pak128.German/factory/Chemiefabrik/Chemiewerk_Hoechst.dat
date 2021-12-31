@@ -6,7 +6,6 @@
 Obj=factory
 name=Chemiewerk_1920
 copyright=pumuckl999
-pax_level=3
 # dieses Gebäude wurde 1920 errichtet, wenn auch Höchst 1880 gegründet wurde 
 intro_year=1920
 intro_month=1
@@ -32,6 +31,7 @@ OutputGood[1]=Medikamente
 OutputFactor[1]=20
 OutputCapacity[1]=200
 electricity_amount=75
+pax_level=150
 passenger_boost=1000
 mail_boost=500
 MapColor=75

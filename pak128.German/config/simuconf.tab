@@ -190,7 +190,7 @@ just_in_time = 1
 # The limit is given in percent of factory storage (0=off)
 # It should be not too low to allow big convoys fully loaded at more than one
 # factory (for medium sized maps 500 seems a reasonable number)
-maximum_intransit_percentage = 2000
+maximum_intransit_percentage = 3000
 
 # use beginner mode for new maps (can be switched anyway on the new map dialog)
 first_beginner = 0
@@ -268,7 +268,7 @@ water_animation_ms = 250
 pedes_and_car_info = 1
 
 # How much citycars will be generated
-citycar_level = 12
+citycar_level = 10
 
 # After how many month a citycar breaks (and will be forever gone) ...
 # default is ten years (at bits_per_month setting of 20)
@@ -600,7 +600,7 @@ use_timeline = 3
 # Setting it below 1800 is not recommended for pak128.german set!
 # You will have problems with missing vehicles, do not complain if you do so!
 # Setting it above 2050 will render game bit boring - no new vehicles.
-starting_year = 1920
+starting_year = 1800
 
 # Starting month of the game for people who want to start in summer (default 1=January)
 starting_month = 1

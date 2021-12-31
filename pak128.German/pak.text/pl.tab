@@ -9,7 +9,7 @@
 #                              Language: pl Polski                             #
 #                             Encoding: ISO-8859-2                             #
 #                             Font: prop-latin2.fnt                            #
-#                           Date Created: 16.10 2021                           #
+#                            Date Created: 3.12 2021                           #
 #                                                                              #
 ################################################################################
 #____________________________bridge - monorail_track____________________________
@@ -91,15 +91,15 @@ Przejazd kolejowy
 ALP_Apotheke_NIC
 Apteka alpejska
 factory_ALP_Apotheke_NIC_details
-<title>Apteka Alpejska</title><p>W tej aptece sprzedawane s± wyroby medyczne i leki na niegro¼ne dolegliwo¶ci. Farmaceuta za lad± chêtnie doradzi klientom.</p>
+<p>W tej aptece sprzedawane s± wyroby medyczne i leki na niegro¼ne dolegliwo¶ci. Farmaceuta za lad± chêtnie doradzi klientom.</p>
 ALP_Baumarkt_NIC
 Alpejski market budowlany
 factory_ALP_Baumarkt_NIC_details
-<title>Alpejski market budowlany</title><p>Ten market zaopatruje wszystkich amatorów majsterkowania w okolicy.</p>
+<p>Ten market zaopatruje wszystkich amatorów majsterkowania w okolicy.</p>
 ALP_Buchladen_NIC
 Alpejska ksiêgarnia
 factory_ALP_Buchladen_NIC_details
-<title>Alpejska ksiêgarnia</title><p>Powie¶ci, thrillery, ksi±¿ki popularnonaukowe i wiele wiêcej!</p>
+<p>Powie¶ci, thrillery, ksi±¿ki popularnonaukowe i wiele wiêcej!</p>
 ALP_Elektroshop_NIC
 Alpejski sklep z elektronik±
 factory_ALP_Elektroshop_NIC_details
@@ -107,11 +107,11 @@ Detaliczny sklep oferuj±cy telefony, aparaty, komputery, gry i artyku³y RTV.
 ALP_Moebelhaus_NIC
 Alpejski sklep meblowy
 factory_ALP_Moebelhaus_NIC_details
-<title>Alpejski sklep meblowy</title><p>Kuchnia, sypialnia, biuro, salon i wiele wiêcej - ten sklep spe³nia marzenia o dobrze wyposa¿onym domu!</p>
+<p>Kuchnia, sypialnia, biuro, salon i wiele wiêcej - ten sklep spe³nia marzenia o dobrze wyposa¿onym domu!</p>
 ALP_Saegewerk_NIC
 Alpejski tartak 
 factory_ALP_Saegewerk_NIC_details
-<title>Alpejski tartak</title><p>Zak³ad produkuje ró¿nego rodzaju deski, listwy i p³yty, dla amatorów i profesjonalistów.</p>
+<p><em>Alpejski tartak</em><br>Zak³ad produkuje ró¿nego rodzaju deski, listwy i p³yty, dla amatorów i profesjonalistów.</p>
 ALP_Supermarkt_NIC
 Alpejski supermarket 
 ALP_Tankstelle_NIC
@@ -123,17 +123,15 @@ Alpejska ferma byd³a
 alte Raffinerie
 Rafineria (1905)
 factory_alte Raffinerie_details
-<title>Rafineria</title><p>Rafineria zajmuje siê destylacj± frakcjonowan± ropy naftowej. W efekcie powstaj± ró¿nego rodzaju paliwa, smary, asfalt oraz ró¿ne produkty u¿ywane do wyrobu plastiku.</p>
+<p>Rafineria zajmuje siê destylacj± frakcjonowan± ropy naftowej. W efekcie powstaj± ró¿nego rodzaju paliwa, smary, asfalt oraz ró¿ne produkty u¿ywane do wyrobu plastiku.</p>
 alte_Kfz-Fabrik
 Fabryka samochodów
 alte_Lebensmittelfabrik
 Zak³ady miêsne (1892)
 factory_alte_Lebensmittelfabrik_details
-<title>Zak³ady miêsne (1892)</title>To przedsiêbiorstwo przerabia miêso, ryby i drób na trwa³e konserwy i mro¿onki, a tak¿e na produkty garma¿eryjne uwielbiane przez ka¿dego.
+<p><em>Zak³ady miêsne (1892)</em><br>To przedsiêbiorstwo przerabia miêso, ryby i drób na trwa³e konserwy i mro¿onki, a tak¿e na produkty garma¿eryjne uwielbiane przez ka¿dego.</p>
 alte_Molkerei
 Mleczarnia (1890)
-factory_alte_Molkerei_details
-<title>Mleczarnia (1890)</title>
 alte_Papierfabrik
 Zak³ady papiernicze
 alte_Werft
@@ -143,7 +141,7 @@ Tawerna (1905)
 alter_Kamerahersteller
 Zak³ad produkuj±cy aparaty (1912)
 factory_alter_Kamerahersteller_details
-<title>Zak³ad produkuj±cy aparaty (1912)</title><p>Za³o¿ony w 1887, zak³ad wyspecjalizowa³ siê w produkcji aparatów po tym jak sucha p³yta bromo-¿elatynowa zyska³a na popularno¶ci. We wspó³pracy z lokalnymi hutami szk³a rzemie¶lnicy tworz± najlepszej jako¶ci soczewki.</p>
+<p>Za³o¿ony w 1887, zak³ad wyspecjalizowa³ siê w produkcji aparatów po tym jak sucha p³yta bromo-¿elatynowa zyska³a na popularno¶ci. We wspó³pracy z lokalnymi hutami szk³a rzemie¶lnicy tworz± najlepszej jako¶ci soczewki.</p>
 alter_Obstbauer
 Sad (1800)
 alter_Schlachthof
@@ -163,7 +161,7 @@ Po³udniowoniemiecka kopalnia piasku
 AVL_Baumarkt_NIC
 Po³udniowoniemiecki market budowlany
 factory_AVL_Baumarkt_NIC_details
-<title>Po³udniowoniemiecki market budowlany</title><p>Ten market zaopatruje wszystkich amatorów majsterkowania w okolicy.</p>
+<p>Ten market zaopatruje wszystkich amatorów majsterkowania w okolicy.</p>
 AVL_Betonwerk
 Po³udniowoniemiecka fabryka betonu
 AVL_Brauerei1897_NIC
@@ -183,7 +181,7 @@ Po³udniowoniemiecka rozlewnia win
 AVL_Marktplatz_1800
 Po³udniowoniemiecki rynek
 factory_AVL_Marktplatz_1800_details
-<title>Rynek</title><p>Na rynku sprzedawane s± ró¿ne towary.</p>
+<p>Na rynku sprzedawane s± ró¿ne towary.</p>
 AVL_Marktplatz_NIC
 Po³udniowoniemiecki rynek
 AVL_Moebelhaus_NIC
@@ -219,15 +217,15 @@ Manufaktura karmy dla zwierz±t
 Baumarkt_NIC
 Market budowlany
 factory_Baumarkt_NIC_details
-<title>Market budowlany</title><p>Ten market zaopatruje wszystkich amatorów majsterkowania w okolicy.</p>
+<p>Ten market zaopatruje wszystkich amatorów majsterkowania w okolicy.</p>
 Baustoffhandel1800
 Sk³ad materia³ów budowlanych
 factory_Baustoffhandel1800_details
-<title>Sk³ad materia³ów budowlanych</title><p>Ten sprzedawca zazwyczaj zaopatruje ma³e i du¿e firmy budowlane w ceg³y, cement, drewno, paliwo i tym podobne.</p>
+<p><em>Sk³ad materia³ów budowlanych</em><br>Ten sprzedawca zazwyczaj zaopatruje ma³e i du¿e firmy budowlane w ceg³y, cement, drewno, paliwo i tym podobne.</p>
 Baustoffhof_1800
 Sklep budowlany
 factory_Baustoffhof_1800_details
-<title>Sklep budowlany</title><p>Ten sklep oferuje wysokiej jako¶ci produkty niezbêdne do budowy domu. W sta³ej ofercie mo¿na znale¼æ betonowe prefabrykaty, cement i stalowe wsporniki. Dla fanów szklanych domów zapryzja¼niony metalurg przygotowa³ specjaln± ofertê: robione na wymiar ogromne okna z nowoczesnymi metalowymi ramami. Lokalni sklarze narzekaj± na konkurencjê.</p>
+<p><em>Sklep budowlany</em><br>Ten sklep oferuje wysokiej jako¶ci produkty niezbêdne do budowy domu. W sta³ej ofercie mo¿na znale¼æ betonowe prefabrykaty, cement i stalowe wsporniki. Dla fanów szklanych domów zapryzja¼niony metalurg przygotowa³ specjaln± ofertê: robione na wymiar ogromne okna z nowoczesnymi metalowymi ramami. Lokalni sklarze narzekaj± na konkurencjê.</p>
 Betonwerk
 Fabryka betonu
 Betonwerk_1871
@@ -239,19 +237,19 @@ Elektrownia biomasowa
 Brennstoffhandel
 Sk³ad paliw
 factory_Brennstoffhandel_details
-<title>Sk³ad paliw</title><p>Wêgiel, drewno i brykiety marki <i>Gonciarz</i> - dla wszystkich którzy "ciep³o domowego ogniska" traktuj± dos³ownie.</p>
+<p><em>Sk³ad paliw</em><br>Wêgiel, drewno i brykiety marki <i>Gonciarz</i> - dla wszystkich którzy "ciep³o domowego ogniska" traktuj± dos³ownie.</p>
 Buchhandlung
 Ksiêgarnia (1800)
 factory_Buchhandlung_details
-<title>Ksiêgarnia</title><p>W ofercie s± ró¿nego rodzaju ksi±¿ki, a tak¿e przybory do pisania</p>
+<p>W ofercie s± ró¿nego rodzaju ksi±¿ki, a tak¿e przybory do pisania</p>
 Chemiewerk_1886
 Zak³ady chemiczne
 factory_Chemiewerk_1886_details
-<title>Zak³ady chemiczne</title><p>Produkuje siê tutaj farby i ró¿ne chemikalia, ale tak¿e tabletki, ma¶ci i syropy na ma³e i du¿e kuku. W 1863 w Niemczech powsta³o ca³kiem sporo wspó³czesnych zak³adów chemicznych, miêdzy innymi Höchst, Bayer i BASF. Ten ostatni powsta³ ¿eby przerabiaæ smo³ê powsta³± w gazowni w Mannheim, ale szybko rozszerzy³ dzia³alno¶æ na szeroko pojête chemikalia, a potem na leki.</p>
+<p>Produkuje siê tutaj farby i ró¿ne chemikalia, ale tak¿e tabletki, ma¶ci i syropy na ma³e i du¿e kuku. W 1863 w Niemczech powsta³o ca³kiem sporo wspó³czesnych zak³adów chemicznych, miêdzy innymi Höchst, Bayer i BASF. Ten ostatni powsta³ ¿eby przerabiaæ smo³ê powsta³± w gazowni w Mannheim, ale szybko rozszerzy³ dzia³alno¶æ na szeroko pojête chemikalia, a potem na leki.</p>
 Chemiewerk_1920
 Zak³ady chemiczne (1920)
 factory_Chemiewerk_1920_details
-<title>Zak³ady chemiczne (1920)</title><p>Produkuje siê tutaj farby, chemikalia i lekarstwa. Zak³ad za³o¿ono w 1863 i na pocz±tku zajmowa³ siê on produkcj± barwników. W 1920 powsta³ nowy budynek zak³adów, i obecnie przetwarza on ró¿ne sole chemiczne, smo³ê i paliwa.</p>
+<p>Produkuje siê tutaj farby, chemikalia i lekarstwa. Zak³ad za³o¿ono w 1863 i na pocz±tku zajmowa³ siê on produkcj± barwników. W 1920 powsta³ nowy budynek zak³adów, i obecnie przetwarza on ró¿ne sole chemiczne, smo³ê i paliwa.</p>
 Chemiewerk_NIC
 Zak³ady chemiczne
 Chemiewerk1975_NIC
@@ -263,57 +261,57 @@ Fabryka komputerów (1990)
 Dessauer_Kohlekraftwerk
 Elektrownia wêglowa (1995)
 factory_Dessauer_Kohlekraftwerk_details
-<title>Elektrownia wêglowa</title><p>Elektrownia spala wêgiel, wytwarzaj±c ciep³o, które jest przetwarzane na energiê elektryczn±. Dziêki specjalnym filtrom, wiêkszo¶æ zanieczyszczeñ nie trafia do powietrza.</p>
+<h1>Elektrownia wêglowa</h1><p>Elektrownia spala wêgiel, wytwarzaj±c ciep³o, które jest przetwarzane na energiê elektryczn±. Dziêki specjalnym filtrom, wiêkszo¶æ zanieczyszczeñ nie trafia do powietrza.</p>
 Discounter_MGB_AVL_ALP_1990
 Dyskont "Stonka"
 factory_Discounter_MGB_AVL_ALP_1990_details
-<title>Dyskont "Stonka"</title><p>Produkty codziennego u¿ytku: wszystko i tanio, i du¿o i tanio.</p>
+<p>Produkty codziennego u¿ytku: wszystko i tanio, i du¿o i tanio.</p>
 Discounter_NDL_ODL_1990
 Supermarket "Cyryl i Metody"
 factory_Discounter_NDL_ODL_1990_details
-<title>Supermarket "Cyryl i Metody"</title><p>W ofercie znajduj± siê produkty nieco lepszej jako¶ci ni¿ w tradycyjnych dyskontach.</p>
+<p>W ofercie znajduj± siê produkty nieco lepszej jako¶ci ni¿ w tradycyjnych dyskontach.</p>
 Druckerei_NIC
 Drukarnia
 factory_Druckerei_NIC_details
-<title>Drukarnia</title><p>Drukowana jest tu literatura wysoka, niska i taka po¶rodku</p>
+<p>Drukowana jest tu literatura wysoka, niska i taka po¶rodku</p>
 Druckerei_SM
 Drukarnia (1980)
 factory_Druckerei_SM_details
-<title>Drukarnia (1980)</title><p>Nowoczesny zak³ad drukuj±cy ró¿ne rodzaje ksi±¿ek.</p>
+<p>Nowoczesny zak³ad drukuj±cy ró¿ne rodzaje ksi±¿ek.</p>
 Druckwerkstatt
 Drukarnia (1800)
 factory_Druckwerkstatt_details
-<title>Drukarnia</title><p>Drukowane tutaj s± ró¿nego rodzaju ulotki, gazety i ksi±¿ki. Tusz jest produkowany na miejscu z sadzy i oleju lnianego - przemys³owa produkcja tuszu drukarskiego ruszy³a dopiero pod koniec XIX wieku.</p>
+<p><em>Drukarnia</em><br>Drukowane tutaj s± ró¿nego rodzaju ulotki, gazety i ksi±¿ki. Tusz jest produkowany na miejscu z sadzy i oleju lnianego - przemys³owa produkcja tuszu drukarskiego ruszy³a dopiero pod koniec XIX wieku.</p>
 Erzbergwerk_NIC
 Kopalnia rudy ¿elaza
 factory_Erzbergwerk_NIC_details
-<title>Kopalnia rudy ¿elaza</title><p>Kopalni± nazywamy wszystkie obiekty s³u¿±ce do wydobycia i transportu minera³ów, tak nad jak i pod ziemi±</p>
+<p>Kopalni± nazywamy wszystkie obiekty s³u¿±ce do wydobycia i transportu minera³ów, tak nad jak i pod ziemi±</p>
 Fahrzeuge_und_Haushaltsartikel
 Pasa¿ samochodowy i sklep AGD
 Fischzucht_NIC
 Hodowla ryb
 factory_Fischzucht_NIC_details
-<title>Hodowla ryb</title><p>Zak³ad jest czê¶ci± SIM-Food s. a., i produkuje dla nich ryby/</p>
+<p><em>Hodowla ryb</em><br>Zak³ad jest czê¶ci± SIM-Food s. a., i produkuje dla nich ryby/</p>
 Forellenhof Markusmuehle
 Hodowla ryb (1985)
 factory_Forellenhof Markusmuehle_details
-<title>Hodowla ryb</title><p>Zak³ad jest czê¶ci± SIM-Food s. a., i produkuje dla nich ryby/</p>
+<p><em>Hodowla ryb</em><br>Zak³ad jest czê¶ci± SIM-Food s. a., i produkuje dla nich ryby/</p>
 Frischfisch
 Staw rybny
 factory_Frischfisch_details
-<title>Staw rybny</title><p>Bul bul bul.</p>
+<p>Bul bul bul.</p>
 Gasthof_1800
 Karczma
 factory_Gasthof_1800_details
-<title>Karczma</title><p>Der Clouthsche Hof, pó¿niej Rheinbreitbacher Hof jest prawdopodobnie najstarsz± wci±¿ dzia³aj±c± karczm± w okolicy (od ok. 1518, ale ¼ród³a mówi± nawet o 1348). W tamtych czasach karczma by³a nie tylko jad³odajni±, ale tak¿e miejscem odpoczynku podró¿ników, oferuj±cym stajnie dla koni, parking dla karoc i ma³e pokoje na jedn± noc. Co wiêksze karczmy oferowa³y te¿ rozrywkê dla go¶ci albo, jak ta tutaj, wielk± salê balow± na wynajem.</p>
+<p><em>Karczma</em><br>Der Clouthsche Hof, pó¿niej Rheinbreitbacher Hof jest prawdopodobnie najstarsz± wci±¿ dzia³aj±c± karczm± w okolicy (od ok. 1518, ale ¼ród³a mówi± nawet o 1348). W tamtych czasach karczma by³a nie tylko jad³odajni±, ale tak¿e miejscem odpoczynku podró¿ników, oferuj±cym stajnie dla koni, parking dla karoc i ma³e pokoje na jedn± noc. Co wiêksze karczmy oferowa³y te¿ rozrywkê dla go¶ci albo, jak ta tutaj, wielk± salê balow± na wynajem.</p>
 Gastwirtschaft_mit_Laden
 Zajazd ze sklepem
 factory_Gastwirtschaft_mit_Laden_details
-<title>Sklep kolonialny</title><p>Ma³y zajazd ze sklepem prowadzonym przez w³a¶ciciela</p>
+<p><em>Sklep kolonialny</em><br>Ma³y zajazd ze sklepem prowadzonym przez w³a¶ciciela</p>
 Gefluegelhof_NIC
 Ferma drobiu
 factory_Gefluegelhof_NIC_details
-<title>Ferma drobiu</title><p>Hodowane s± tutaj kury na potrzeby SIM-Food s.a.</p>
+<p><em>Ferma drobiu</em><br>Hodowane s± tutaj kury na potrzeby SIM-Food s.a.</p>
 Geraete_und_Haushaltsartikel
 Sklep z meblami i AGD
 Getraenkemarkt_NIC
@@ -321,53 +319,51 @@ Sklep monopolowy
 Getreidehof_alt
 Gospodarstwo rolne
 factory_Getreidehof_alt_details
-<title>Gospodarstwo rolne</title><p> Produkcja lnu na krosna i chmielu dla browarów zapewnia farmerowi porz±dny zarobek</p>
+<p><em>Gospodarstwo rolne</em><br>Produkcja lnu na krosna i chmielu dla browarów zapewnia farmerowi porz±dny zarobek</p>
 GetreideSilo_NIC
 Silos zbo¿owy
 factory_GetreideSilo_NIC_details
-<title>Silos zbo¿owy</title><p>W silosie zbo¿e jest przechowywane przed dalsz± obróbk±</p>
+<p>W silosie zbo¿e jest przechowywane przed dalsz± obróbk±</p>
 Glasfabrik
 Huta szk³a
 factory_Glasfabrik_details
-<title>Huta szk³a</title><p>Najtañszy zasób ¶wiata - piasek - staje siê jednym z najtwardszych - szk³em.</p>
+<p><em>Huta szk³a</em><br>Najtañszy zasób ¶wiata - piasek - staje siê jednym z najtwardszych - szk³em.</p>
 Glasmanufaktur
 Manufaktura szk³a
 Grossbaeckerei_NIC
 Piekarnia (1980)
 factory_Grossbaeckerei_NIC_details
-<title>Piekarnia</title><p>Wypiekany jest tutaj chleb, bu³ki oraz bardziej fiku¶ne wyroby.</p>
+<p><em>Piekarnia</em><br>Wypiekany jest tutaj chleb, bu³ki oraz bardziej fiku¶ne wyroby.</p>
 Grossmuehle_NIC
 M³yny
 Heizkraftwerk
 Elektrociep³ownia
-factory_Heizkraftwerk_details
-<title>Elektrociep³ownia</title>
 Hochofen_alt
 Stary wielki piec
 Holzsammelstelle1800_NIC
 Las (1800)
 factory_Holzsammelstelle1800_NIC_details
-<title>Las</title><p>Las komercyjny, przeznaczony do wycinki.</p>
+<p><em>Las</em><br>Las komercyjny, przeznaczony do wycinki.</p>
 Holzsammelstelle1950_NIC
 Las (1950)
 factory_Holzsammelstelle1950_NIC_details
-<title>Las</title><p>Las komercyjny, przeznaczony do wycinki.</p>
+<p><em>Las</em><br>Las komercyjny, przeznaczony do wycinki.</p>
 Holzsammelstelle1990_NIC
 Las (1990)
 factory_Holzsammelstelle1990_NIC_details
-<title>Las</title><p>Las komercyjny, przeznaczony do wycinki.</p>
+<p><em>Las</em><br>Las komercyjny, przeznaczony do wycinki.</p>
 Hopfenhof_NIC
 Farma chmielu
 factory_Hopfenhof_NIC_details
-<title>Farma chmielu</title><p>Chmiel jest ro¶lin± z rodziny konopiowatych. Jest u¿ywany jako dodatek podczas warzenia piwa.</p>
+<p><em>Farma chmielu</em><br>Chmiel jest ro¶lin± z rodziny konopiowatych. Jest u¿ywany jako dodatek podczas warzenia piwa.</p>
 Kalibergwerk
 Kopalnia pota¿u
 factory_Kalibergwerk_details
-<title>Kopalnia pota¿u</title><p>Pota¿ jest zanieczyszczon± postaci± wêglanu potasu, u¿ywan± przy produkcji nawozów, szk³a i wielu innych rzeczy.</p>
+<p>Pota¿ jest zanieczyszczon± postaci± wêglanu potasu, u¿ywan± przy produkcji nawozów, szk³a i wielu innych rzeczy.</p>
 Kamerahersteller
 Fabryka aparatów i kamer
 factory_Kamerahersteller_details
-<title>Fabryka aparatów i kamer</title><p>Urz±dzenia z tego zak³adu s± znane w ca³ym Sim-¶wiecie</p>
+<p><em>Fabryka aparatów i kamer</em><br>Urz±dzenia z tego zak³adu s± znane w ca³ym Sim-¶wiecie</p>
 Kaufhaus_1912
 Dom towarowy
 Kaufhaus_NIC
@@ -383,7 +379,7 @@ Browar przyklasztorny
 Kohlemine_NIC
 Kopalnia wêgla
 factory_Kohlemine_NIC_details
-<title>Kopalnia wêgla</title><p>Wydobywa wêgiel.</p><p>Czego ¿e¶ siê spodziewa³?</p>
+<p>Wydobywa wêgiel.</p><p>Czego ¿e¶ siê spodziewa³?</p>
 Konditorei
 Cukiernia
 Lagerhalle_NIC
@@ -451,7 +447,7 @@ Wysypisko
 NDT_alte_Marzipanfabrik
 Fabryka marcepanu
 factory_NDT_alte_Marzipanfabrik_details
-<title>Fabryka marcepanu</title><p>Marcepan wykonuje siê ze zmielonych migda³ów i cukru.</p>
+<p>Marcepan wykonuje siê ze zmielonych migda³ów i cukru.</p>
 NDT_alterBauernhof_NIC
 Farma buraków cukrowych
 NDT_Importeur
@@ -473,7 +469,7 @@ Platforma wiertnicza
 Oelfeld
 Pole naftowe
 factory_Oktoberfest_details
-<title>Oktoberfest w Monachium</title><p>Zwany "Wiesn" przez mieszkañców, odbywa siê we wrze¶niu, trwa dwa tygodnie i koñczy siê w pierwsz± niedzielê pa¼dziernika. Pierwszy festiwal odby³ siê w 1910 roku z okazji ¶lubu przysz³ego bawarskiego króla Ludwika I. Od tego czasu festiwal ro¶nie z roku na rok. <br>1818 pierwsza karuzela<br>1869 Schichtl, prezentowano magiê i ciekawostki a odwiedzaj±cy ¶cinani przez gilotyny,<br>1880 diabelski m³yn o wysoko¶ci 12 metrów z drewna<br>1894 hu¶tawka czarownicy<br>1898 w³a¶ciciel Georg Lang wznosi piêæ stoisk i buduje na nim swój "zamek piwa", który by³ pocz±tkiem du¿ego namiotu piwa<br>1906 zje¿d¿alnia, od 1933 roku z przeno¶nikiem ta¶mowym dla pasa¿erów,<br>1910 Devil's Wheel, komu udaje siê pozostaæ na szczycie zwyciê¿a,<br>1920 Krinoline okr±g³a karuzela <br>1932 ¦ciana ¶mierci Pitta, motocyklista na drewnianej cylindrycznej stromej ¶cianie, <br>1979 Diabelski m³yn ze stali na 48 metrów<br> Te piêknie utrzymane atrakcje s± nadal reprezentowane dzisiaj.</p><p>Na Oktoberfest monachijskie browary warz± specjalne piwo zawieraj±ce do 6,4 procent alkoholu objêto¶ciowo. Niektórzy odwiedzaj±cy nie doceniaj± zarówno zawarto¶ci kieliszków do piwa, jak i zawarto¶ci alkoholu w piwie.  </p>
+<p><em>Oktoberfest w Monachium</em><br>Zwany "Wiesn" przez mieszkañców, odbywa siê we wrze¶niu, trwa dwa tygodnie i koñczy siê w pierwsz± niedzielê pa¼dziernika. Pierwszy festiwal odby³ siê w 1910 roku z okazji ¶lubu przysz³ego bawarskiego króla Ludwika I. Od tego czasu festiwal ro¶nie z roku na rok. <br>1818 pierwsza karuzela<br>1869 Schichtl, prezentowano magiê i ciekawostki a odwiedzaj±cy ¶cinani przez gilotyny,<br>1880 diabelski m³yn o wysoko¶ci 12 metrów z drewna<br>1894 hu¶tawka czarownicy<br>1898 w³a¶ciciel Georg Lang wznosi piêæ stoisk i buduje na nim swój "zamek piwa", który by³ pocz±tkiem du¿ego namiotu piwa<br>1906 zje¿d¿alnia, od 1933 roku z przeno¶nikiem ta¶mowym dla pasa¿erów,<br>1910 Devil's Wheel, komu udaje siê pozostaæ na szczycie zwyciê¿a,<br>1920 Krinoline okr±g³a karuzela <br>1932 ¦ciana ¶mierci Pitta, motocyklista na drewnianej cylindrycznej stromej ¶cianie, <br>1979 Diabelski m³yn ze stali na 48 metrów<br> Te piêknie utrzymane atrakcje s± nadal reprezentowane dzisiaj.</p><p>Na Oktoberfest monachijskie browary warz± specjalne piwo zawieraj±ce do 6,4 procent alkoholu objêto¶ciowo. Niektórzy odwiedzaj±cy nie doceniaj± zarówno zawarto¶ci kieliszków do piwa, jak i zawarto¶ci alkoholu w piwie.  </p>
 Papierfabrik_NIC
 Zak³ady papiernicze
 Papierfabrik1990
@@ -537,7 +533,7 @@ Fabryka opakowañ
 Verwaltung_Muenchen_1965
 Urz±d Miasta
 factory_Verwaltung_Muenchen_1965_details
-<title>Stare biura ratusza przy Blumenstraße w Monachium</title><p>Budynek stoi od 1929 roku, ale potrzebny by³ koñcowy odbiorca komputerów dopiero od 1965 roku, poniewa¿ fabryka komputerów pojawia siê w grze w 1965 roku. W 1965 roku komputer kosztowa³ tyle, co dom. Dlatego ¿aden Sim-Obywatel nie móg³ sobie pozwoliæ na komputer prywatnie, ale wydatek móg³ byæ op³acalny dla instytucji, du¿ych firm i samorz±dów. Dlatego coraz wiêcej miast przechodzi na elektroniczny obieg dokumentów. Od 1980 roku pierwsze mikrokomputery by³y oferowane w domach towarowych.</p> 
+<p><em>Stare biura ratusza przy Blumenstraße w Monachium</em><br>Budynek stoi od 1929 roku, ale potrzebny by³ koñcowy odbiorca komputerów dopiero od 1965 roku, poniewa¿ fabryka komputerów pojawia siê w grze w 1965 roku. W 1965 roku komputer kosztowa³ tyle, co dom. Dlatego ¿aden Sim-Obywatel nie móg³ sobie pozwoliæ na komputer prywatnie, ale wydatek móg³ byæ op³acalny dla instytucji, du¿ych firm i samorz±dów. Dlatego coraz wiêcej miast przechodzi na elektroniczny obieg dokumentów. Od 1980 roku pierwsze mikrokomputery by³y oferowane w domach towarowych.</p> 
 Viehhof_NIC
 przestarza³e nie u¿ywaæ
 Viehhof_NIC_2

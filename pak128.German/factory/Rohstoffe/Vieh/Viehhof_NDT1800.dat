@@ -1,12 +1,11 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 16-04-2019
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Viehhof_Nord1800
 copyright=Pumuckl999
-pax_level=1
 intro_year=1800
 intro_month=1
 retire_year=1980
@@ -32,6 +31,7 @@ storage_capacity[1]=80
 spawn_weight[1]=4
 has_snow[1]=1
 electricity_amount=1
+pax_level=8
 passenger_boost=1000
 mail_boost=500
 climates=desert, tropic

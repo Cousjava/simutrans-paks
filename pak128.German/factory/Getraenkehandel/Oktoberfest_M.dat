@@ -54,6 +54,10 @@ InputCapacity[7]=200
 InputFactor[7]=5
 InputSupplier[7]=1
 
+sound=oktoberfest.wav
+sound_interval=120000
+# 120 Sekunden
+
 min_fields=0
 max_fields=84
 # das sind 3 Ringe um das Bierzelt

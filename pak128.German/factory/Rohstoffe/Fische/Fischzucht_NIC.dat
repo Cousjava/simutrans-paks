@@ -1,12 +1,11 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Fischzucht_NIC
 copyright=RedRabbit
-pax_level=5
 intro_year=1891
 intro_month=1
 retire_year=1985
@@ -24,6 +23,7 @@ production_per_field[0]=15
 storage_capacity[0]=60
 has_snow[0]=1
 electricity_amount=6
+pax_level=5
 passenger_boost=1000
 mail_boost=500
 climates=tundra, desert, tropic, mediterran, temperate, rocky

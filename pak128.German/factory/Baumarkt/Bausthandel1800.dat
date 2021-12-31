@@ -34,6 +34,7 @@ InputCapacity[5]=200
 InputFactor[5]=25
 InputSupplier[5]=1
 electricity_amount=1
+pax_level=20
 passenger_boost=1000
 mail_boost=500
 climates=desert, tropic, mediterran, temperate, tundra, rocky

@@ -19,6 +19,7 @@ speed=18
 weight=1.2
 power=2
 gear=560
+sound=Kutsche1.wav
 length=2
 Constraint[Prev][0]=none
 Constraint[Next][0]=Postkutsche

@@ -5,7 +5,6 @@
 obj=factory
 name=Supermarkt_MGB_AVL_1970
 copyright=RedRabbit
-level=30
 intro_year=1970
 retire_year=2008
 location=city
@@ -37,6 +36,7 @@ InputGood[7]=Obst
 InputCapacity[7]=200
 InputSupplier[7]=1
 electricity_amount=20
+pax_level=100
 passenger_boost=2000
 mail_boost=500
 needs_ground=1

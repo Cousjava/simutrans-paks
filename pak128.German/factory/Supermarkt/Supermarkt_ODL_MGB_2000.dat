@@ -5,7 +5,6 @@
 obj=factory
 name=Supermarkt_ODL_MGB_2000
 copyright=RedRabbit
-level=30
 intro_year=2000
 retire_year=2999
 location=city
@@ -37,6 +36,7 @@ InputGood[7]=Eier
 InputCapacity[7]=400
 InputSupplier[7]=1
 electricity_amount=20
+pax_level=100
 passenger_boost=2000
 mail_boost=500
 needs_ground=1

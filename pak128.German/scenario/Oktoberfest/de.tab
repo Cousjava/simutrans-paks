@@ -1,0 +1,50 @@
+{fac}:<br>You can increase the city's <i>growth factor</i> by supplying at least one of these wares to the factory:<br>
+{fac}:<br>Du kannst den <i>Wachstumsfaktor</i> der Stadt erhöhen, indem du mindestens eine der folgenden Waren zu dieser Fabrik lieferst: <br>
+{fac}:<br>You can increase the city's <i>growth</i> by supplying at least one of these wares to the factory:<br>
+{fac}:<br>Du kannst das <i>Wachstum</i> der Stadt erhöhen, indem du mindestens eine der folgenden Waren zu dieser Fabrik lieferst: <br>
+{fac}:<br>You can increase the city's <i>maximum growth</i> by supplying at least one of these wares to the factory:<br>
+{fac}:<br>Du kannst das <i>maximale Wachstum</i> der Stadt erhöhen, indem du mindestens eine der folgenden Waren zu dieser Fabrik lieferst: <br>
+A city can only be selected (by building a headquarter near it), if it has less than {pops} citizens.
+Nur eine Stadt mit weniger als {pops} Einwohner kann ausgewählt werden. Du kannst die Stadt auswählen indem du deine Firmenzentrale in die Nähe baust.
+A new {factory} was built in the city. See scenario goals for more information.
+Eine neue Fabrik wurde in der Stadt gebaut: {factory}. Siehe 'Missionsziele'.
+Build your company headquarter in the vincinity of a city, to 'select' it.<br><br>The goal is to grow the 'selected' city to the biggest city in the region and to celebrate a big party.
+Bauen Sie ihre Firmenzentrale in die Nähe einer Stadt, um diese Stadt 'auszuwählen'.<br><br>Das Ziel ist es, die ausgewählte Stadt zur größten Stadt in der Region wachsen zu lassen und ein großes Fest zu veranstalten.
+Build your headquarter near a city with less than {pops} citizens.
+Baue deine Firmenzentrale in die Nähe einer Stadt mit weniger als {pops} Einwohner.
+Congratulations.<br>You have finished this scenario.<br>You started in {month} {year} and finished in {endmonth} {endyear}.
+Glückwunsch.<br>Du hast das Szenario gewonnen.<br>Du hast begonnen im {month} {year} und gewonnen im {endmonth} {endyear}.
+Due to supplied wares to factories in the city
+Die Stadt wächst schneller wenn du Fabriken belieferst.<br>Zusammenfassung vom letzten Monat:<br>Erhöhtes Wachstum: {growth} Einwohner<br>Basiswert für maximales Wachstum: {baseMaxGrowth}<br>Erhöhtes maximales Wachstum: {maxGrowth}<br>Wachstumsfaktor: {growthFactor} (Erhöht das Wachstum um diesen Faktor)<br>Faktor für maximales Wachstum: {maxGrowthFactor} (Erhöht das maximale Wachstum um diesen Faktor)<br>Berechnetes maximales Wachstum: {calcMaxGrowth}<br><br>Erhöhtes Stadtwachstum im letzten Monat: {calcGrowth}
+Fully supplied wares in October for {years} out of {maxYears} consecutive years.
+Alle Waren wurden im Oktober für {years} von {maxYears} aufeinanderfolgende Jahren geliefert.
+Increase the citizens of {cityname} to {destPops}.
+Lasse deine Stadt {cityname} auf {destPops} Einwohner wachsen.
+No special rules.
+Keine speziellen Regeln.
+Optional Goals:
+Optionale Ziele:
+Passenger boost: {paxBoost}% of required {maxPax}%
+Passagierlevel: {paxBoost}% von den benötigten {maxPax}%
+Supplied wares for {current} out of {consecDest} consecutive months.
+Waren wurden für {current} von {consecDest} aufeinanderfolgende Monate geliefert.
+Supply the {okt} with ALL wares in <i>October</i> for {years} consecutive years.
+Beliefere das {okt} mit ALLEN Waren im <i>Oktober</i> jeden Jahres, für {years} aufeinanderfolgende Jahre.
+Supply the {okt} with the most essential ware for {consecGoal} consecutive months, without it going out of stock.<br>(The most essential ware is {bier}.)
+Beliefere das {okt} mit der wichtigsten Ware überhaupt für dieses Fest, für {consecGoal} aufeinanderfolgende Monate, ohne dass diese jemals nicht vorrätig ist.<br>(Die wichtigste Ware ist {bier}.)
+Supply the {okt} with these wares for {months} consecutive months, without it going out of stock:<br>{bier}, {backwaren}, {mandeln}<br>Additionally the passenger boost has to be kept above {paxBoost}% during that time.
+Beliefere das {okt} mit diesen Waren für {months} aufeinanderfolgende Monate, ohne dass eine dieser Waren jemals nicht vorrätig ist:<br>{bier}, {backwaren}, {mandeln}<br>Zusätzlich muss das Passagierlevel immer über {paxBoost}% bleiben, während der gesamten Zeit.
+The city {cityname} has currently {pops} citizens of the required {destPops} citizens.<br>(Checked every first day of the month)
+Deine Stadt {cityname} hat derzeit {pops} Einwohner der benötigten {destPops} Einwohner.<br>(Wird am Anfang jeden Monats aktualisiert.)
+The city growth can be increased by supplying the factories of the city.
+Das Stadtwachstum kann beschleunigt werden, indem du die Fabriken der Stadt mit Waren versorgst.
+The mayor is taking a decision... (Please wait)
+Der Bürgermeister trifft eine Entscheidung... (Bitte warten)
+The mayor is trying to find a suitable spot for a new factory.<br>You can help him by terraforming 5x5 flat land tiles inside the city borders.
+Der Bürgermeister versucht einen geeigneten Platz, für eine neue Fabrik zu finden.<br>Du kannst ihm dabei helfen, indem du 5x5 flache Landfelder innerhalb der Stadtgrenzen bereitstellst.
+The selected city {cityname} has too many citizens. ({pops})<br>Please build your headquarter near a city with less than {maxPops} citizens.
+Die ausgewählte Stadt {cityname} hat zuviele Einwohner. ({pops})<br>Bitte baue deine Firmenzentrale in die Nähe einer Stadt mit weniger als {maxPops} Einwohner.
+You can increase the city's <i>maximum growth</i> by supplying at least one of these wares to the factory:<br>
+Du kannst das <i>maximale Wachstum</i> der Stadt erhöhen, indem du mindestens eine der folgenden Waren zu dieser Fabrik lieferst: <br>
+Your headquarter is not built yet.
+Du hast deine Firmenzentrale noch nicht gebaut.

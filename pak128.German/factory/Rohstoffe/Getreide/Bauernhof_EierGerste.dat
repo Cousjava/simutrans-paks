@@ -1,12 +1,11 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 23-04-2019
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Bauernhof_All1800
 copyright=Pumuckl999
-pax_level=5
 intro_year=1800
 intro_month=1
 #retire_year=
@@ -22,6 +21,9 @@ OutputCapacity[1]=80
 OutputGood[2]=Gefluegel
 OutputFactor[2]=20
 OutputCapacity[2]=20
+sound=Huhnhaus.wav
+sound_interval=120000
+# 120 Sekunden
 min_fields=0
 max_fields=50
 probability_to_spawn=4
@@ -45,9 +47,10 @@ storage_capacity[3]=80
 production_per_field[3]=10
 has_snow[3]=1
 spawn_weight[3]=5
+electricity_amount=1
+pax_level=5
 passenger_boost=1000
 mail_boost=500
-electricity_amount=1
 climates=desert, tropic, mediterran, temperate, tundra, rocky
 MapColor=118
 needs_ground=1

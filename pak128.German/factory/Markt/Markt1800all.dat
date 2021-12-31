@@ -6,7 +6,6 @@
 Obj=factory
 name=Markt_AK
 copyright=Pumuckl999
-pax_level=10
 intro_year=1800
 intro_month=1
 retire_year=1920
@@ -48,6 +47,7 @@ InputGood[9]=Gefluegel
 InputCapacity[9]=200
 InputFactor[9]=20
 electricity_amount=3
+pax_level=20
 passenger_boost=2000
 mail_boost=500
 expand_probability=40

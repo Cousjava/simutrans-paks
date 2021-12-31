@@ -6,7 +6,6 @@
 obj=factory
 name=ALP_Supermarkt_NIC
 copyright=Lemuria
-pax_level=200
 intro_year=1958
 intro_month=1
 retire_year=2000
@@ -39,6 +38,7 @@ climates=rocky
 MapColor=132
 needs_ground=1
 electricity_amount=10
+pax_level=50
 passenger_boost=2000
 mail_boost=500
 dims=2,1,4

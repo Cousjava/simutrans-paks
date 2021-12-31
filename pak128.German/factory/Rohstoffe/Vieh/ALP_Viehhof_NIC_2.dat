@@ -1,8 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-# --------------------------------
+--------------------------------
 Obj=factory
 name=ALP_Viehhof_NIC_2
 copyright=RedRabbit
@@ -28,6 +28,7 @@ storage_capacity[1]=100
 production_per_field[1]=25
 spawn_weight[1]=1
 has_snow[1]=1
+pax_level=3
 passenger_boost=1000
 mail_boost=500
 electricity_amount=1

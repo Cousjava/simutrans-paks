@@ -6,7 +6,6 @@
 Obj=factory
 name=Stahlwerk_StAntony-Huette
 copyright=pumuckl999
-pax_level=10
 intro_year=1800
 # intro_year=1758
 intro_month=1
@@ -26,6 +25,7 @@ InputFactor[1]=80
 OutputGood[0]=Stahl
 OutputCapacity[0]=100
 electricity_amount=12
+pax_level=20
 passenger_boost=1000
 mail_boost=500
 climates=mediterran, tundra, temperate

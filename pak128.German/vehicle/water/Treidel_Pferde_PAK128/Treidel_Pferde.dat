@@ -1,9 +1,7 @@
 --------------------------------
 #	PAK128.german
 #	Vehicle: Schiffe
-#    Neu:
-#	Letzte Bearbeitung
-#    11-08-2017 Makie
+#    Neu: 11-08-2017 Makie
 --------------------------------
 obj=vehicle
 name=Treidel_Pferd1
@@ -22,7 +20,7 @@ gear=1100
 speed=10
 weight=0.600
 length=15
-sound=-1
+sound=Pferd1.wav
 constraint[prev][0]=Treidel_Pferd1
 constraint[prev][1]=Treidel_Pferd2
 constraint[prev][2]=Treidel_Pferd4
@@ -48,9 +46,6 @@ EmptyImage[SE]=Zugpferde.0.6,-15,0
 EmptyImage[S]=Zugpferde.0.7,-16,-16
 EmptyImage[SW]=Zugpferde.0.8,0,-16
 -----
-###################################
-#2
-##################################
 obj=vehicle
 name=Treidel_Pferd2
 copyright=RedRabbit
@@ -68,7 +63,7 @@ gear=1100
 speed=12
 weight=1.2
 length=15
-sound=-1
+sound=Pferd1.wav
 constraint[prev][0]=Treidel_Pferd1
 constraint[prev][1]=Treidel_Pferd2
 constraint[prev][2]=Treidel_Pferd4
@@ -94,9 +89,6 @@ EmptyImage[SE]=Zugpferde.1.6,-15,0
 EmptyImage[S]=Zugpferde.1.7,-16,-16
 EmptyImage[SW]=Zugpferde.1.8,0,-16
 -----
-###################################
-#4
-##################################
 obj=vehicle
 name=Treidel_Pferd4
 copyright=RedRabbit
@@ -114,7 +106,7 @@ gear=1100
 speed=15
 weight=2.4
 length=15
-sound=-1
+sound=Pferd1.wav
 constraint[prev][0]=Treidel_Pferd1
 constraint[prev][1]=Treidel_Pferd2
 constraint[prev][2]=Treidel_Pferd4

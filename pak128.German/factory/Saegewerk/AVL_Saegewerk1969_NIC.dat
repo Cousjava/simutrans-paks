@@ -6,7 +6,6 @@
 Obj=factory
 name=AVL_Saegewerk1969_NIC
 copyright=RedRabbit
-pax_level=7
 intro_year=1969
 intro_month=1
 Location=city
@@ -19,6 +18,7 @@ InputSupplier[0]=2
 OutputGood[0]=Bretter
 OutputCapacity[0]=600
 electricity_amount=150
+pax_level=30
 passenger_boost=1000
 mail_boost=500
 climates=tundra

@@ -6,7 +6,6 @@
 Obj=factory
 name=Moebelfabrik_NIC
 copyright=TonyBzt
-pax_level=200
 intro_year=1909
 intro_month=1
 retire_year=1990
@@ -28,6 +27,7 @@ sound=buzzsaw.wav
 sound_interval=30000
 # 30 Sekunden
 electricity_amount=25
+pax_level=80
 passenger_boost=1000
 mail_boost=500
 climates=tundra, rocky

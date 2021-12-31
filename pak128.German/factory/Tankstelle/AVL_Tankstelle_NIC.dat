@@ -6,7 +6,6 @@
 obj=factory
 name=AVL_Tankstelle_NIC
 copyright=Lemuria
-pax_level=9
 intro_year=1982
 intro_month=1
 Location=City
@@ -22,6 +21,7 @@ InputSupplier[1]=0
 # aber Tankstellen haben 24 Stunde auf und verkaufen auch Snacks und Alkohol 
 # wie auch immer wenn dann sollten alle Tankstellen gleich hohen boost haben
 # und wie steht es mit den Mitarbeitern?
+pax_level=30
 passenger_boost=300
 mail_boost=200
 electricity_amount=10

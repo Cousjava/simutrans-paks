@@ -1,12 +1,11 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 27-02-2017
-# --------------------------------
+--------------------------------
 Obj=factory
 Name=Konditorei
 copyright=pumuckl999
-pax_level=5
 intro_year=1956
 intro_month=1
 location=City
@@ -24,6 +23,7 @@ OutputGood[0]=Marzipan
 OutputCapacity[0]=320
 OutputFactor[0]=100
 electricity_amount=30
+pax_level=40
 passenger_boost=1000
 mail_boost=500
 MapColor=90

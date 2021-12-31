@@ -1,8 +1,13 @@
+-------------------------------
+#	PAK128.german
+#	Addon Nonsens Weihnachtsmann
+#	Neu: 
+--------------------------------
 obj=vehicle
-name=Der rote Knecht
+name=Der_rote_Knecht
 copyright=pumuckl999
 waytype=track
-freight=2
+freight=Geschenke
 payload=110
 speed=160
 gear=100
@@ -10,7 +15,7 @@ power=250
 cost=2500000
 weight=4
 RunningCost=150
-fixed_cost=x
+fixed_cost=150
 intro_year=1890
 engine_type=diesel
 smoke=Diesel_small
@@ -27,3 +32,12 @@ constraint[prev][0]=none
 constraint[prev][1]=none
 constraint[next][0]=none
 constraint[next][1]=none
+--------------------------------
+#	Goods
+obj=good
+name=Geschenke
+mapcolor=119
+metric=Stueck
+catg=15
+value=50
+weight_per_unit=75

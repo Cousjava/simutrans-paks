@@ -1,13 +1,12 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
 #	05-03-2016 NNW
-# --------------------------------
+--------------------------------
 Obj=factory
 Name=Obstbauer
 copyright=NNW
-pax_level=5
 intro_year=1930
 intro_month=1
 location=land
@@ -28,6 +27,7 @@ production_per_field[1]=10
 storage_capacity[1]=40
 has_snow[1]=1
 electricity_amount=1
+pax_level=15
 passenger_boost=1000
 mail_boost=500
 climates=tropic, tundra, desert, mediterran

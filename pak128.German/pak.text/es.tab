@@ -9,7 +9,7 @@
 #                             Language: es Espanol                             #
 #                             Encoding: ISO-8859-1                             #
 #                             Font: Prop-Latin1.bdf                            #
-#                           Date Created: 25.08 2021                           #
+#                            Date Created: 3.12 2021                           #
 #                                                                              #
 ################################################################################
 #_________________________________bridge - road_________________________________
@@ -389,19 +389,19 @@ Estribaciones alpinas
 ALP_Apotheke_NIC
 Farmacia (alpina)
 factory_ALP_Apotheke_NIC_details
-<title>Farmacia alpina</title> <p>Esta farmacia vende medicamentos para pequeñas dolencias y dispositivos médicos. El farmacéutico está allí para ayudar a los clientes con consejos.</p>
+<p>Esta farmacia vende medicamentos para pequeñas dolencias y dispositivos médicos. El farmacéutico está allí para ayudar a los clientes con consejos.</p>
 ALP_Baumarkt_NIC
 Ferretería (sur de Alemania 1930)
 factory_ALP_Baumarkt_NIC_details
-<title>Ferretería</title> <p>La Ferretería Alpbau es el punto central de contacto para todos los artesanos y aficionados al bricolaje de los alrededores.</p>
+<p>La Ferretería Alpbau es el punto central de contacto para todos los artesanos y aficionados al bricolaje de los alrededores.</p>
 ALP_Buchladen_NIC
 Librería (alpina)
 factory_ALP_Buchladen_NIC_details
-<title>Librería</title> <p> Aquí puedes comprar novelas, thrillers, documentales y mucha literatura.</p>
+<p> Aquí puedes comprar novelas, thrillers, documentales y mucha literatura.</p>
 ALP_Elektroshop_NIC
 Tienda de electrónica (alpina)
 factory_ALP_Elektroshop_NIC_details
-<title>Tienda de electrónica alpina</title> <p>Simmos Elektrohandels GmbH es una cadena minorista de electrónica que vende telecomunicaciones, fotos, computadoras, equipo de música, juegos, DVD, CD, TV y accesorios.</p>
+<p>Simmos Elektrohandels GmbH es una cadena minorista de electrónica que vende telecomunicaciones, fotos, computadoras, equipo de música, juegos, DVD, CD, TV y accesorios.</p>
 ALP_Moebelhaus_NIC
 Tienda de muebles (alpino)
 factory_ALP_Moebelhaus_NIC_details
@@ -409,7 +409,7 @@ factory_ALP_Moebelhaus_NIC_details
 ALP_Saegewerk_NIC
 Aserradero (alpino)
 factory_ALP_Saegewerk_NIC_details
-<title>Aserradero BORR</title> <p>BORR produce tablones, listones, maderas redondas y cuadradas para artesanos, la industria y clientes privados.</p>
+<p><em>Aserradero BORR</em><br>BORR produce tablones, listones, maderas redondas y cuadradas para artesanos, la industria y clientes privados.</p>
 ALP_Supermarkt_NIC
 Supermercado (alpino 1958)
 factory_ALP_Supermarkt_NIC_details
@@ -417,13 +417,13 @@ factory_ALP_Supermarkt_NIC_details
 ALP_Tankstelle_NIC
 Gasolinera (alpina)
 factory_ALP_Tankstelle_NIC_details
-<title>Gasolinera SEMI</title> <p>Además de diesel y gasolina, esta tienda también vende accesorios para automóviles y productos para el cuidado.</p>
+<p><em>Gasolinera SEMI</em><br>Además de diesel y gasolina, esta tienda también vende accesorios para automóviles y productos para el cuidado.</p>
 ALP_Viehhof_NIC
 Rancho (alpino) - No usar
 ALP_Viehhof_NIC_2
 Rancho (alpino)
 factory_ALP_Viehhof_NIC_2_details
-<title>Rancho Untermoser</title> <p>La familia Untermoser es la cuarta generación de criadores de ganado.</p>
+<p><em>Rancho Untermoser</em><br>La familia Untermoser es la cuarta generación de criadores de ganado.</p>
 alte Raffinerie
 Refinería (1905)
 factory_alte Raffinerie_details
@@ -431,11 +431,11 @@ factory_alte Raffinerie_details
 alte_Kfz-Fabrik
 Fábrica de automóviles (1905)
 factory_alte_Kfz-Fabrik_details
-<title>Lemuria AG</title> <p>Lemuria AG produce elegantes autos deportivos, descapotables y autos familiares de buen comportamiento.</p>
+<p><em>Lemuria AG</em><br>Lemuria AG produce elegantes autos deportivos, descapotables y autos familiares de buen comportamiento.</p>
 alte_Lebensmittelfabrik
 Fábrica de alimentos (1892)
 factory_alte_Lebensmittelfabrik_details
-<title>Fábrica de alimentos Mayerhofers</title> <p>Mayerhofers procesa carne, pollo y pescado en conservas duraderas, así como productos congelados como filetes de pescado y pollo, también chuletas y escalopes que deleitan a jóvenes y viejos.</p>
+<p><em>Fábrica de alimentos Mayerhofers</em><br>Mayerhofers procesa carne, pollo y pescado en conservas duraderas, así como productos congelados como filetes de pescado y pollo, también chuletas y escalopes que deleitan a jóvenes y viejos.</p>
 alte_Molkerei
 Fábrica de lácteos
 alte_Papierfabrik
@@ -453,7 +453,7 @@ factory_AlteGastwirtschaft_details
 alter_Kamerahersteller
 Fabricante de cámaras (1912)
 factory_alter_Kamerahersteller_details
-<title>Fabricante de cámaras Simhof</title> <p>La compañía Simhof, fundada en 1887, se especializó desde el principio en la producción de cámaras profesionales después del advenimiento de las placas secas de gelatina. La buena cooperación con una fábrica de vidrio en las estribaciones de los Alpes permite la producción de lentes de calidad excepcional y reputación internacional.</p>
+<p><em>Fabricante de cámaras Simhof</em><br>La compañía Simhof, fundada en 1887, se especializó desde el principio en la producción de cámaras profesionales después del advenimiento de las placas secas de gelatina. La buena cooperación con una fábrica de vidrio en las estribaciones de los Alpes permite la producción de lentes de calidad excepcional y reputación internacional.</p>
 alter_Obstbauer
 Fruticultor (1800)
 factory_alter_Obstbauer_details
@@ -489,7 +489,7 @@ factory_AVL_Baggersee_details
 AVL_Baumarkt_NIC
 Ferretería (sur de Alemania 1970)
 factory_AVL_Baumarkt_NIC_details
-<title>Ferretería del sur de Alemania</title> <p>La ferretería cuenta con una amplia gama de materiales sanitarios, eléctricos y de construcción para constructores y aficionados.</p>
+<p>La ferretería cuenta con una amplia gama de materiales sanitarios, eléctricos y de construcción para constructores y aficionados.</p>
 AVL_Betonwerk
 Planta de hormigón (sur de Alemania)
 factory_AVL_Betonwerk_details
@@ -541,7 +541,7 @@ factory_AVL_Muehle1983_NIC_details
 AVL_Oelfeld
 Campo petrolero (sur de Alemania)
 factory_AVL_Oelfeld_details
-<title>Campo petrolero</title> <p>Un campo petrolero es un área bajo la cual se encuentra un yacimiento de petróleo.</p>
+<p><em>Campo petrolero</em><br>Un campo petrolero es un área bajo la cual se encuentra un yacimiento de petróleo.</p>
 AVL_Saegewerk1800_NIC
 Aserradero (sur de Alemania)
 factory_AVL_Saegewerk1800_NIC_details
@@ -571,7 +571,7 @@ factory_AVL_Textil_1836_details
 AVL_Viehhof1940_NIC
 Rancho (sur de Alemania 1940)
 factory_AVL_Viehhof1940_NIC_details
-<title>Rancho ganadero Graimelmeyer</title> <p>Una típica granja ganadera del sur de Alemania.</p>
+<p><em>Rancho ganadero Graimelmeyer</em><br>Una típica granja ganadera del sur de Alemania.</p>
 AVL_Zementwerk1800_NIC
 Fábrica de cemento (sur de Alemania)
 factory_AVL_Zementwerk1800_NIC_details
@@ -583,7 +583,7 @@ factory_AVL_Zementwerk1960_NIC_details
 BaeckereiGadebusch_NIC
 Panificados (norte de Alemania 1920)
 factory_BaeckereiGadebusch_NIC_details
-<title>Panificados</title> <p>Ahora la producción industrial está entrando en la industria de la panificación. Aquí se elaboran grandes cantidades de panecillos, pasteles y deliciosos panes para todo el país desde la mañana hasta la noche.</p>
+<p><em>Panificados</em><br>Ahora la producción industrial está entrando en la industria de la panificación. Aquí se elaboran grandes cantidades de panecillos, pasteles y deliciosos panes para todo el país desde la mañana hasta la noche.</p>
 Bauernhof_All1800
 Gallinero (1800)
 factory_Bauernhof_All1800_details
@@ -591,15 +591,15 @@ factory_Bauernhof_All1800_details
 Bauernhof_MGB
 Granja (1800)
 factory_Bauernhof_MGB_details
-<title>Típica granja de madera del norte de Alemania</title> <p>El grano todavía se corta aquí con una guadaña, atada a gavillas y preparada para las almendras de heno tradicionales. También se llaman diems en otras regiones. La razón de este enfoque, que ha sido tradicional desde la prehistoria, es que el grano completamente seco todavía se puede cosechar con una cosechadora, pero no se puede cortar con una guadaña. En primer lugar, la paja es dura como la madera, en segundo lugar, los granos se caen de las espigas cuando se golpean. Los tallos que todavía son ligeramente verdes, por otro lado, son fáciles de cortar y cuando se secan en almendras de heno, las eras ya no se mueven por el viento, por lo que los granos no se caen prematuramente. Esto también elimina el riesgo de tormentas o lluvia que ponen el grano plano. Las pajas presionadas en el suelo también son difíciles de cortar y ya no están secas.</p>
+<p><em>Típica granja de madera del norte de Alemania</em><br>El grano todavía se corta aquí con una guadaña, atada a gavillas y preparada para las almendras de heno tradicionales. También se llaman diems en otras regiones. La razón de este enfoque, que ha sido tradicional desde la prehistoria, es que el grano completamente seco todavía se puede cosechar con una cosechadora, pero no se puede cortar con una guadaña. En primer lugar, la paja es dura como la madera, en segundo lugar, los granos se caen de las espigas cuando se golpean. Los tallos que todavía son ligeramente verdes, por otro lado, son fáciles de cortar y cuando se secan en almendras de heno, las eras ya no se mueven por el viento, por lo que los granos no se caen prematuramente. Esto también elimina el riesgo de tormentas o lluvia que ponen el grano plano. Las pajas presionadas en el suelo también son difíciles de cortar y ya no están secas.</p>
 Bauernhof_MGB1850
 Fruticultor de Bayersoyen (1850)
 factory_Bauernhof_MGB1850_details
-<title>Fruticultor cerca de Bad Bayersoyen</title> <p>Se ofreció poco para la renovación y por tanto, todavía se encuentra en su estado original.</p>
+<p><em>Fruticultor cerca de Bad Bayersoyen</em><br>Se ofreció poco para la renovación y por tanto, todavía se encuentra en su estado original.</p>
 Bauernhof_Ost1870
 Plantación de remolacha azucarera
 factory_Bauernhof_Ost1870_details
-<title>Plantación Ostdeutscher</title> <p>Aquí hay cosas dulces, si no te gusta la fruta puedes comer remolacha azucarera y pasar tus vacaciones aquí como invitado.</p>
+<p><em>Plantación Ostdeutscher</em><br>Aquí hay cosas dulces, si no te gusta la fruta puedes comer remolacha azucarera y pasar tus vacaciones aquí como invitado.</p>
 Bauernhof_Tierfutter
 Fábrica de piensos (1953)
 factory_Bauernhof_Tierfutter_details
@@ -613,15 +613,15 @@ Sitio de construcción del túnel ferroviario
 Baustoffhandel1800
 Materiales de construcción
 factory_Baustoffhandel1800_details
-<title>Venta de materiales de construcción con carpintería</title> <p>Este comercio de materiales de construcción surgió de un aserradero. Como el bosque cercano fue talado y convertido en tierra cultivable, el operador del aserradero tuvo que buscar nuevas fuentes de ingresos y se cambió al comercio de materiales de construcción y combustibles. El bosque ya no suministraba leña, por lo que el lignito (carbón) de la nueva mina cercana era perfecto. La vieja turbina eólica ahora impulsa la sierra y la máquina cepilladora de una carpintería. Además de materiales de construcción simples, también puede ofrecer ventanas y puertas, hechas a medida y ya acristaladas, además de alquilar andamios y escaleras.</p>
+<p><em>Venta de materiales de construcción con carpintería</em><br>Este comercio de materiales de construcción surgió de un aserradero. Como el bosque cercano fue talado y convertido en tierra cultivable, el operador del aserradero tuvo que buscar nuevas fuentes de ingresos y se cambió al comercio de materiales de construcción y combustibles. El bosque ya no suministraba leña, por lo que el lignito (carbón) de la nueva mina cercana era perfecto. La vieja turbina eólica ahora impulsa la sierra y la máquina cepilladora de una carpintería. Además de materiales de construcción simples, también puede ofrecer ventanas y puertas, hechas a medida y ya acristaladas, además de alquilar andamios y escaleras.</p>
 Baustoffhof_1800
 Materiales de construcción (1871)
 factory_Baustoffhof_1800_details
-<title>Venta de materiales de construcción con cerrajería</title> <p>Este comercio de materiales de construcción proporciona todo lo necesario para la construcción de viviendas de alta calidad. Aquí se ofrecen los materiales más innovadores tales como cemento, piezas de hormigón prefabricado y vigas de acero. Dondequiera que los príncipes y reyes construyan palacios de vidrio, el rico propietario de la fábrica no quiere ser menos. La cerrajería afiliada también ofrece grandes ventanas ya totalmente acristaladas con un moderno marco de metal, hecho a medida, para molestia de un vidriero cercano. Los electrodomésticos ofrecidos, naturalmente, sólo funcionan manualmente.</p>
+<p><em>Venta de materiales de construcción con cerrajería</em><br>Este comercio de materiales de construcción proporciona todo lo necesario para la construcción de viviendas de alta calidad. Aquí se ofrecen los materiales más innovadores tales como cemento, piezas de hormigón prefabricado y vigas de acero. Dondequiera que los príncipes y reyes construyan palacios de vidrio, el rico propietario de la fábrica no quiere ser menos. La cerrajería afiliada también ofrece grandes ventanas ya totalmente acristaladas con un moderno marco de metal, hecho a medida, para molestia de un vidriero cercano. Los electrodomésticos ofrecidos, naturalmente, sólo funcionan manualmente.</p>
 Betonwerk
 Planta de hormigón
 factory_Betonwerk_details
-<title>Planta de hormigón</title> <p>Comederos, escaleras, paredes, pisos y arcos de hormigón prefabricado.</p>
+<p><em>Planta de hormigón</em><br>Comederos, escaleras, paredes, pisos y arcos de hormigón prefabricado.</p>
 Betonwerk_1871
 Fábrica de hormigón (1871)
 factory_Betonwerk_1871_details
@@ -635,7 +635,7 @@ factory_Biomassekraftwerk_details
 Brennstoffhandel
 Venta de combustibles
 factory_Brennstoffhandel_details
-<title>Venta de combustibles</title> <p>El carbón, la madera y los ladrillos aseguran un hogar acogedor y cálido para los clientes.</p>
+<p><em>Venta de combustibles</em><br>El carbón, la madera y los ladrillos aseguran un hogar acogedor y cálido para los clientes.</p>
 Buchhandlung
 Librería (1800)
 factory_Buchhandlung_details
@@ -651,15 +651,15 @@ factory_Chemiewerk_1920_details
 Chemiewerk_NIC
 Planta química (1960)
 factory_Chemiewerk_NIC_details
-<title>Fábrica de petroquímicos</title> <p>Esta planta produce químicos para la industria farmacéutica, así como lacas y pinturas.</p>
+<p><em>Fábrica de petroquímicos</em><br>Esta planta produce químicos para la industria farmacéutica, así como lacas y pinturas.</p>
 Chemiewerk1975_NIC
 Planta química
 factory_Chemiewerk1975_NIC_details
-<title>Planta petroquímica moderna</title> <p>Esta planta produce productos químicos para la industria farmacéutica, así como barnices y pinturas para la industria del mueble y la tipografía.</p>
+<p><em>Planta petroquímica moderna</em><br>Esta planta produce productos químicos para la industria farmacéutica, así como barnices y pinturas para la industria del mueble y la tipografía.</p>
 Computerhersteller_1965
 Fábrica de computadoras (1965)
 factory_Computerhersteller_1965_details
-<title>Fabricante de computadoras Siemens Legoland</title> <p>El departamento de desarrollo de Siemens en Munich se llama Legoland. Por un lado, proviene de la arquitectura de los edificios, por otro lado, es la imaginación de la gente sobre el trabajo de los desarrolladores allí. Después de que la fábrica de automóviles de Lemuria ya no quisiera encajar en el PAK, era demasiado pequeña y discreta para esto, se me ocurrió la asociación con Legoland. Mi memoria me jugó una mala pasada, no hay edificios con techo verde en Legoland, son azules, rojos o amarillos y son más altos. Sin embargo, sería una lástima los hermosos gráficos de Lemuria y encaja bastante bien como un antiguo fabricante de computadoras. Desafortunadamente, Siemens perdió el tren del microprocesador y durmió con las PC.</p>
+<p><em>Fabricante de computadoras Siemens Legoland</em><br>El departamento de desarrollo de Siemens en Munich se llama Legoland. Por un lado, proviene de la arquitectura de los edificios, por otro lado, es la imaginación de la gente sobre el trabajo de los desarrolladores allí. Después de que la fábrica de automóviles de Lemuria ya no quisiera encajar en el PAK, era demasiado pequeña y discreta para esto, se me ocurrió la asociación con Legoland. Mi memoria me jugó una mala pasada, no hay edificios con techo verde en Legoland, son azules, rojos o amarillos y son más altos. Sin embargo, sería una lástima los hermosos gráficos de Lemuria y encaja bastante bien como un antiguo fabricante de computadoras. Desafortunadamente, Siemens perdió el tren del microprocesador y durmió con las PC.</p>
 Computerhersteller1980
 Fabricante de computadoras (1980)
 factory_Computerhersteller1980_details
@@ -667,11 +667,11 @@ factory_Computerhersteller1980_details
 Computerhersteller1990
 Fabricante de computadoras (1990)
 factory_Computerhersteller1990_details
-<title>SMI Copy & Clone Corp.</title> <p>SMI Copy & Clone Corp. tiene mucho éxito en la fabricación de computadoras compatibles. Una vez que las computadoras compatibles con SMI se han generalizado, el precio determina el éxito de las ventas. Este sitio produce eficientemente en grandes cantidades para el mercado internacional y puede transferir los bajos costos unitarios al consumidor. La compatibilidad también es una ventaja para el usuario, ya que todo el software se ejecuta en cualquier computadora compatible. Los días de dependencia del fabricante han terminado. Desafortunadamente, esto también significa que cada virus funciona en todas las computadoras compatibles.</p>
+<p><em>SMI Copy & Clone Corp.</em><br>SMI Copy & Clone Corp. tiene mucho éxito en la fabricación de computadoras compatibles. Una vez que las computadoras compatibles con SMI se han generalizado, el precio determina el éxito de las ventas. Este sitio produce eficientemente en grandes cantidades para el mercado internacional y puede transferir los bajos costos unitarios al consumidor. La compatibilidad también es una ventaja para el usuario, ya que todo el software se ejecuta en cualquier computadora compatible. Los días de dependencia del fabricante han terminado. Desafortunadamente, esto también significa que cada virus funciona en todas las computadoras compatibles.</p>
 Dessauer_Kohlekraftwerk
 Central eléctrica a carbón
 factory_Dessauer_Kohlekraftwerk_details
-<title>Central eléctrica de carbón de Dessau </title> <p>La central eléctrica de carbón convierte el calor en energía eléctrica mediante combustión térmica. Una gran parte de los gases de escape se liberan de partículas nocivas para el medio ambiente por medio de complejos sistemas de filtro.</p>
+<h1>Central eléctrica de carbón de Dessau </h1><p>La central eléctrica de carbón convierte el calor en energía eléctrica mediante combustión térmica. Una gran parte de los gases de escape se liberan de partículas nocivas para el medio ambiente por medio de complejos sistemas de filtro.</p>
 Discounter_MGB_AVL_ALP_1990
 Tienda de descuentos
 factory_Discounter_MGB_AVL_ALP_1990_details
@@ -693,7 +693,7 @@ factory_Druckerei_SM_details
 Druckwerkstatt
 Taller de impresión (1800)
 factory_Druckwerkstatt_details
-<title>Taller de impresión</title> <p>Aquí es donde se imprimen folletos, periódicos y libros. El color necesario está hecho de hollín y aceite de linaza. Fue sólo con la producción de tinta industrial, a fines del siglo XIX, cuando se hizo costumbre comprar tinta de impresión lista para usar.</p>
+<p><em>Taller de impresión</em><br>Aquí es donde se imprimen folletos, periódicos y libros. El color necesario está hecho de hollín y aceite de linaza. Fue sólo con la producción de tinta industrial, a fines del siglo XIX, cuando se hizo costumbre comprar tinta de impresión lista para usar.</p>
 Erzbergwerk_NIC
 Mina (1800)
 factory_Erzbergwerk_NIC_details
@@ -703,11 +703,11 @@ Vehículos y artículos para el hogar
 Fischzucht_NIC
 Piscifactoría
 factory_Fischzucht_NIC_details
-<title>Aquafood KG</title> <p>Aquafood KG es una subsidiaria de SIM Food AG y cría estos pescados comestibles.</p>
+<p><em>Aquafood KG</em><br>Aquafood KG es una subsidiaria de SIM Food AG y cría estos pescados comestibles.</p>
 Forellenhof Markusmuehle
 Piscifactoría (1985)
 factory_Forellenhof Markusmuehle_details
-<title>Piscifactoría Markusmühle</title> <p>Esta compañía cría pescado comestible para SIM-Food AG.</p>
+<p><em>Piscifactoría Markusmühle</em><br>Esta compañía cría pescado comestible para SIM-Food AG.</p>
 Frischfisch
 Zona de pesca
 factory_Frischfisch_details
@@ -715,15 +715,15 @@ factory_Frischfisch_details
 Gasthof_1800
 Posada
 factory_Gasthof_1800_details
-<title>Posada</title> <p>Las posadas de esta época no sólo eran lugares para comer y beber, sino lugares de descanso para los viajeros. Con establos para los caballos, cocheras para los carruajes y habitaciones pequeñas para que viajeros y otros huéspedes pasasen la noche. Es posible que también tuvieran un gran salón para celebraciones y bodas.</p>
+<p><em>Posada</em><br>Las posadas de esta época no sólo eran lugares para comer y beber, sino lugares de descanso para los viajeros. Con establos para los caballos, cocheras para los carruajes y habitaciones pequeñas para que viajeros y otros huéspedes pasasen la noche. Es posible que también tuvieran un gran salón para celebraciones y bodas.</p>
 Gastwirtschaft_mit_Laden
 Posada con tienda (1892)
 factory_Gastwirtschaft_mit_Laden_details
-<title>Posada con tienda</title> <p>Además de ofrecer comida, los posaderos también poseen una tienda.</p>
+<p><em>Posada con tienda</em><br>Además de ofrecer comida, los posaderos también poseen una tienda.</p>
 Gefluegelhof_NIC
 Gallinero
 factory_Gefluegelhof_NIC_details
-<title>Avícola Galliform Ltd.</title> <p>Aquí se crían huevos y aves de corral para SIM Food AG.</p>
+<p><em>Avícola Galliform Ltd.</em><br>Aquí se crían huevos y aves de corral para SIM Food AG.</p>
 Geraete_und_Haushaltsartikel
 Electrodomésticos y art. para el hogar
 Getraenkemarkt_NIC
@@ -733,7 +733,7 @@ factory_Getraenkemarkt_NIC_details
 Getreidehof_alt
 Granja (1800)
 factory_Getreidehof_alt_details
-<title>Granja Rasterditsch</title> <p>El lino para los telares y la cebada para las cervecerías le proporcionan al agricultor una buena vida.</p>
+<p><em>Granja Rasterditsch</em><br>El lino para los telares y la cebada para las cervecerías le proporcionan al agricultor una buena vida.</p>
 GetreideSilo_NIC
 Silo de granos
 factory_GetreideSilo_NIC_details
@@ -741,19 +741,19 @@ factory_GetreideSilo_NIC_details
 Glasfabrik
 Fábrica de vidrio (Alemania del Este 1896)
 factory_Glasfabrik_details
-<title>Fábrica de vidrio del Este</title> <p>El vidrio está hecho del material más barato del mundo: la arena. Esta empresa produce gafas para dispositivos ópticos de alta calidad, desafortunadamente, la demanda de gafas de alta calidad es muy volátil. Por lo tanto, se ve obligada a producir botellas de cerveza para mantener ocupado al personal.</p>
+<p><em>Fábrica de vidrio del Este</em><br>El vidrio está hecho del material más barato del mundo: la arena. Esta empresa produce gafas para dispositivos ópticos de alta calidad, desafortunadamente, la demanda de gafas de alta calidad es muy volátil. Por lo tanto, se ve obligada a producir botellas de cerveza para mantener ocupado al personal.</p>
 Glasmanufaktur
 Fábrica de vidrio (1800)
 factory_Glasmanufaktur_details
-<title>Fábrica de vidrio Fraunhofer</title> <p>Fue fundada para producir gafas de alta calidad para sus instrumentos ópticos para Joseph Fraunhofer. Desafortunadamente, la venta de vidrios ópticos es muy baja, por lo que debe fabricar vidrio de ventana adicional y botellas de vino para mantener el personal altamente calificado.</p>
+<p><em>Fábrica de vidrio Fraunhofer</em><br>Fue fundada para producir gafas de alta calidad para sus instrumentos ópticos para Joseph Fraunhofer. Desafortunadamente, la venta de vidrios ópticos es muy baja, por lo que debe fabricar vidrio de ventana adicional y botellas de vino para mantener el personal altamente calificado.</p>
 Grossbaeckerei_NIC
 Panificados
 factory_Grossbaeckerei_NIC_details
-<title>Panificados</title> <p> Aquí se hacen panes y panecillos, así como también finos pasteles.</p>
+<p><em>Panificados</em><br>Aquí se hacen panes y panecillos, así como también finos pasteles.</p>
 Grossmuehle_NIC
 Molino (Alemania del Este 1913)
 factory_Grossmuehle_NIC_details
-<title>Gran molino de Dresden</title> <p> En un gran molino, varios tipos de granos como el centeno, la espelta, el trigo y la cebada son procesados para producir harina. Esta se entrega a compradores a granel tales como panaderías, fabricantes de pasta o minoristas.</p>
+<p><em>Gran molino de Dresden</em><br>En un gran molino, varios tipos de granos como el centeno, la espelta, el trigo y la cebada son procesados para producir harina. Esta se entrega a compradores a granel tales como panaderías, fabricantes de pasta o minoristas.</p>
 Heizkraftwerk
 Central térmica
 factory_Heizkraftwerk_details
@@ -761,23 +761,23 @@ factory_Heizkraftwerk_details
 Hochofen_alt
 Fundición de acero (1800)
 factory_Hochofen_alt_details
-<title>Fundición OLE</title> <p>Esta fundición produce acero y hierro de alta calidad para la fabricación de equipos y la construcción naval.</p>
+<p><em>Fundición OLE<</em><br>Esta fundición produce acero y hierro de alta calidad para la fabricación de equipos y la construcción naval.</p>
 Holzsammelstelle1800_NIC
 Bosque (1800)
 factory_Holzsammelstelle1800_NIC_details
-<title>Punto de recolección de madera, 1800</title> <p>La madera es un material de construcción natural y renovable, se ha utilizado durante siglos para la fabricación de muebles, construcción de viviendas y muchas cosas de la vida cotidiana. En el siglo XIX, carros, barcos y vagones de ferrocarril también estaban hechos en gran parte de madera. Sin embargo, la tala requiere mucha mano de obra porque solo hay ejes y sierras manuales disponibles. La madera además se utiliza para la cocción, eso todavía era común para una gran parte de la población en ese momento.</p>
+<p><em>Punto de recolección de madera, 1800</em><br>La madera es un material de construcción natural y renovable, se ha utilizado durante siglos para la fabricación de muebles, construcción de viviendas y muchas cosas de la vida cotidiana. En el siglo XIX, carros, barcos y vagones de ferrocarril también estaban hechos en gran parte de madera. Sin embargo, la tala requiere mucha mano de obra porque solo hay ejes y sierras manuales disponibles. La madera además se utiliza para la cocción, eso todavía era común para una gran parte de la población en ese momento.</p>
 Holzsammelstelle1950_NIC
 Bosque (1950)
 factory_Holzsammelstelle1950_NIC_details
-<title>Explotación forestal, 1950</title> <p>La madera sigue siendo un material importante y popular. Ahora los leñadores se mueven con motosierras, mientras que la maquinaria ayuda a los trabajadores a recolectar y transportar los troncos. </p>
+<p><em>Explotación forestal, 1950</em><br>La madera sigue siendo un material importante y popular. Ahora los leñadores se mueven con motosierras, mientras que la maquinaria ayuda a los trabajadores a recolectar y transportar los troncos. </p>
 Holzsammelstelle1990_NIC
 Bosque (1990)
 factory_Holzsammelstelle1990_NIC_details
-<title>Explotación forestal, 1990</title> <p>La madera es y sigue siendo un material popular. El trabajo pesado ya no es tan duro y peligroso como solía ser. Los árboles ahora suelen ser talados por las llamadas máquinas cosechadoras que los dejan limpios de ramas.</p>
+<p><em>Explotación forestal, 1990</em><br>La madera es y sigue siendo un material popular. El trabajo pesado ya no es tan duro y peligroso como solía ser. Los árboles ahora suelen ser talados por las llamadas máquinas cosechadoras que los dejan limpios de ramas.</p>
 Hopfenhof_NIC
 Granja de lúpulo
 factory_Hopfenhof_NIC_details
-<title>Granja de lúpulo Mayerthaler</title> <p>El lúpulo es un tipo de planta que pertenece a la familia del cáñamo y se utiliza como saborizante en la cervecería.</p>
+<p><em>Granja de lúpulo Mayerthaler</em><br>El lúpulo es un tipo de planta que pertenece a la familia del cáñamo y se utiliza como saborizante en la cervecería.</p>
 Kalibergwerk
 Mina de potasa
 factory_Kalibergwerk_details
@@ -785,13 +785,13 @@ factory_Kalibergwerk_details
 Kamerahersteller
 Fabricante de cámaras
 factory_Kamerahersteller_details
-<title>Fabricante de cámaras SICON AG</title> <p>Las cámaras SICON son conocidas y buscadas en todo el mundo Sim. En 2005, se vendieron más cámaras digitales que analógicas por primera vez. Por lo tanto, SICON AG se centra constantemente en esta tendencia y solo produce cámaras digitales.</p>
+<p><em>Fabricante de cámaras SICON AG</em><br>Las cámaras SICON son conocidas y buscadas en todo el mundo Sim. En 2005, se vendieron más cámaras digitales que analógicas por primera vez. Por lo tanto, SICON AG se centra constantemente en esta tendencia y solo produce cámaras digitales.</p>
 Kaufhaus_1912
 Centro comercial (1912)
 Kaufhaus_NIC
 Centro comercial (1940)
 factory_Kaufhaus_NIC_details
-<title>Centro comercial del norte de Alemania</title> <p>Es una tienda minorista o mayorista que ofrece productos de todo tipo, al contrario de los pequeños comerciantes.</p>
+<p><em>Centro comercial del norte de Alemania</em><br>Es una tienda minorista o mayorista que ofrece productos de todo tipo, al contrario de los pequeños comerciantes.</p>
 KFZ_Fabrik_NIC
 Fábrica de automóviles - No usar
 Kfz_Fabrik1961
@@ -825,11 +825,11 @@ Hospital Hellmig Kamen
 Lagerhalle_NIC
 Materiales de construcción (1930)
 factory_Lagerhalle_NIC_details
-<title>Distribuidor de materiales de construcción antiguo</title> <p>El distribuidor de materiales de construcción vende todo lo que desea mejorar su hogar, desde bolsas de cemento hasta mezcladoras.</p>
+<p><em>Distribuidor de materiales de construcción antiguo</em><br>El distribuidor de materiales de construcción vende todo lo que desea mejorar su hogar, desde bolsas de cemento hasta mezcladoras.</p>
 Lebensmittelfabrik_NIC
 Fábrica de alimentos
 factory_Lebensmittelfabrik_NIC_details
-<title>Fábrica de alimentos SIM-Food</title> <p>SIM-Food AG procesa carne, pollo y pescado en conservas duraderas, productos congelados como alitas de pescado y nuggets de pollo, así como comidas preparadas que son las delicias de jóvenes y ancianos.</p>
+<p><em>Fábrica de alimentos SIM-Food</em><br>SIM-Food AG procesa carne, pollo y pescado en conservas duraderas, productos congelados como alitas de pescado y nuggets de pollo, así como comidas preparadas que son las delicias de jóvenes y ancianos.</p>
 Markt_AK
 Mercado
 factory_Markt_AK_details
@@ -841,7 +841,7 @@ factory_Markt_AK_1920_details
 Markt_NIC
 Mercado (norte de Alemania)
 factory_Markt_NIC_details
-<title>Mercado</title> <p>Si hay varias tiendas una al lado de la otra sobre la misma calle, los compradores vendrán de más lejos. Como resultado, el negocio va mejor que en una pequeña tienda general a la vuelta de la esquina.</p>
+<p>Si hay varias tiendas una al lado de la otra sobre la misma calle, los compradores vendrán de más lejos. Como resultado, el negocio va mejor que en una pequeña tienda general a la vuelta de la esquina.</p>
 Markt_NIC_1920
 Mercado (norte de Alemania 1920)
 factory_Markt_NIC_1920_details
@@ -855,7 +855,7 @@ factory_Maschinenfabrik_1800_details
 Maschinenfabrik_NIC
 Fábrica de máquinas (1909)
 factory_Maschinenfabrik_NIC_details
-<title>Electrodomésticos MU-Tec</title> <p>El especialista en construcción de máquinas y dispositivos eléctricos.</p>
+<p><em>Electrodomésticos MU-Tec</em><br>El especialista en construcción de máquinas y dispositivos eléctricos.</p>
 MGB_alter_Markt_1920
 Mercado (baja montaña 1920)
 factory_MGB_alter_Markt_1920_details
@@ -871,7 +871,7 @@ factory_MGB_Einkaufszentrum_NIC_details
 MGB_Erzbergwerk_NIC
 Mina (1900)
 factory_MGB_Erzbergwerk_NIC_details
-<title>Minera Schneeberg AG</title> <p>Esta empresa extrae recursos minerales como el mineral de hierro y plata.</p>
+<p><em>Minera Schneeberg AG</em><br>Esta empresa extrae recursos minerales como el mineral de hierro y plata.</p>
 MGB_Kokerei_NIC
 Planta de coque
 factory_MGB_Kokerei_NIC_details
@@ -883,7 +883,7 @@ factory_MGB_Schrottplatz_NIC_details
 MGBStahlwerkKoks_NIC
 Fábrica de acero (baja cordillera)
 factory_MGBStahlwerkKoks_NIC_details
-<title>RR-Metalgroup</title> <p> Esta acería de baja cordillera pertenece al RR-Metalgroup, produce aleaciones de acero y sin alear para las industrias automotriz, informática y de ingeniería mecánica. Las personas ya no producen el coque necesario, sino que lo compran en plantas de carbón.</p>
+<p><em>RR-Metalgroup</em><br>Esta acería de baja cordillera pertenece al RR-Metalgroup, produce aleaciones de acero y sin alear para las industrias automotriz, informática y de ingeniería mecánica. Las personas ya no producen el coque necesario, sino que lo compran en plantas de carbón.</p>
 MGBWeingut_NIC
 Bodega
 factory_MGBWeingut_NIC_details
@@ -901,7 +901,7 @@ factory_moderne_Glashuette_details
 moderne_Maschinenfabrik
 Fábrica de electrodomésticos (1997)
 factory_moderne_Maschinenfabrik_details
-<title>Electrodomésticos SiKraft</title> <p>El especialista en los denominados electrodomésticos como refrigeradores, cocinas eléctricas, lavavajillas y lavadoras. La fábrica fue completamente reconstruida en el verde campo. El arquitecto se inspiró en la apariencia de sus productos al diseñar los edificios.</p>
+<p><em>Electrodomésticos SiKraft</em><br>El especialista en los denominados electrodomésticos como refrigeradores, cocinas eléctricas, lavavajillas y lavadoras. La fábrica fue completamente reconstruida en el verde campo. El arquitecto se inspiró en la apariencia de sus productos al diseñar los edificios.</p>
 moderner_GetreideSilo
 Silo de granos
 factory_moderner_GetreideSilo_details
@@ -937,11 +937,11 @@ factory_MuellContainer_details
 NDT_alte_Marzipanfabrik
 Fábrica de mazapán
 factory_NDT_alte_Marzipanfabrik_details
-<title>Fábrica de mazapán</title> <p>El mazapán es un producto de confitería hecho con almendras molidas y azúcar. Las primeras fábricas alemanas de mazapán se fundaron en las ciudades portuarias porque en aquel entonces, sólo pequeñas cantidades de almendras de las colonias podían llegar a Europa mediante importación naval.</p>
+<p>El mazapán es un producto de confitería hecho con almendras molidas y azúcar. Las primeras fábricas alemanas de mazapán se fundaron en las ciudades portuarias porque en aquel entonces, sólo pequeñas cantidades de almendras de las colonias podían llegar a Europa mediante importación naval.</p>
 NDT_alterBauernhof_NIC
 Productor de remolacha azucarera (1800)
 factory_NDT_alterBauernhof_NIC_details
-<title>Granja azucarera del norte de Alemania</title> <p>La remolacha azucarera se cultiva aquí.</p>
+<p><em>Granja azucarera del norte de Alemania</em><br>La remolacha azucarera se cultiva aquí.</p>
 NDT_Importeur
 Importador (norte y este de Alemania)
 factory_NDT_Importeur_details
@@ -949,7 +949,7 @@ factory_NDT_Importeur_details
 NDTZuckerfabrik_NIC
 Fábrica de azúcar
 factory_NDTZuckerfabrik_NIC_details
-<title>Azúcar Sigrana Comp.</title> <p>En la producción de azúcar, el azúcar se extrae de ciertas plantas con un alto contenido de azúcar tales como remolacha azucarera o caña de azúcar, y se produce en varias formas listas para usar.</p>
+<p><em>Azúcar Sigrana Comp.</em><br>En la producción de azúcar, el azúcar se extrae de ciertas plantas con un alto contenido de azúcar tales como remolacha azucarera o caña de azúcar, y se produce en varias formas listas para usar.</p>
 Neues_Kohlekraftwerk
 Central eléctrica a carbón (1963)
 factory_Neues_Kohlekraftwerk_details
@@ -957,11 +957,11 @@ factory_Neues_Kohlekraftwerk_details
 NorddeutscherExporteur
 Exportador (norte de Alemania)
 factory_NorddeutscherExporteur_details
-<title>NN-Exports</title> <p>El exportador vende y envía productos desde su hogar a todo el mundo.</p>
+<p><em>NN-Exports</em><br>El exportador vende y envía productos desde su hogar a todo el mundo.</p>
 NorddeutscherExporteur_1891
 Exportador (norte de Alemania 1905)
 factory_NorddeutscherExporteur_1891_details
-<title>SQ-Exports Ltd.</title> <p>SQ vende y envía productos a todo el mundo.</p>
+<p><em>SQ-Exports Ltd.</em><br>SQ vende y envía productos a todo el mundo.</p>
 Nordschacht Mettingen
 Mina de carbón (1950)
 factory_Nordschacht Mettingen_details
@@ -979,7 +979,7 @@ Campo petrolero
 factory_Oelfeld_details
 <title>Campo petrolero</title> <p> La usabilidad técnica y médica del petróleo se conoce desde hace muchos siglos, pero fue solo en el siglo XIX que el desarrollo técnico hizo posible la explotación industrial de los campos petroleros, como se llama a los depósitos subterráneos de petróleo. En Wietze, el petróleo ya se extraía en Alemania en la Edad Media. La extracción industrial comenzó allí en 1858 con la primera perforación petrolera del mundo. En 1930, el petróleo y el gas irrumpieron en la mina de potasa Volkenroda. Se reconoció la conexión entre los domos de sal y los depósitos de petróleo. En 1931, Volkenroda suministró una cuarta parte de la producción petrolera alemana.</p>
 factory_Oktoberfest_details
-<title>Oktoberfest en Munich</title> <p>Para abastecer un festival tan grande con cerveza y todo lo demás se requiere una logística sofisticada. Los visitantes también quieren ser conducidos al festival y luego regresar. Para el Oktoberfest, las cervecerías de Munich elaboran una cerveza especial que contiene hasta 6,4% de alcohol por volumen. Algunos visitantes subestiman tanto el contenido de los vasos de cerveza como el contenido de alcohol de la cerveza, así que algunos terminan vomitando y otros durmiendo donde se encuentren.</p>
+<p><em>Oktoberfest en Munich</em><br>Para abastecer un festival tan grande con cerveza y todo lo demás se requiere una logística sofisticada. Los visitantes también quieren ser conducidos al festival y luego regresar. Para el Oktoberfest, las cervecerías de Munich elaboran una cerveza especial que contiene hasta 6,4% de alcohol por volumen. Algunos visitantes subestiman tanto el contenido de los vasos de cerveza como el contenido de alcohol de la cerveza, así que algunos terminan vomitando y otros durmiendo donde se encuentren.</p>
 Papierfabrik_NIC
 Fábrica de papel (1950)
 factory_Papierfabrik_NIC_details
@@ -995,11 +995,11 @@ factory_Papiermuehle_details
 Pharmawerk_NIC
 Droguería
 factory_Pharmawerk_NIC_details
-<title>Droguería LEM</title> <p>Aquí se producen medicamentos y productos adicionales.</p>
+<p><em>Droguería LEM</em><br>Aquí se producen medicamentos y productos adicionales.</p>
 Raffinerie_NIC
 Refinería
 factory_Raffinerie_NIC_details
-<title>Refinería LEM-Petro AG</title> <p>Una refinería de petróleo extrae petróleo, petróleo crudo, asfalto y varias materias primas plásticas del petróleo crudo por destilación, fraccionamiento y extracción usando presión y vacío.</p>
+<p><em>Refinería LEM-Petro AG</em><br>Una refinería de petróleo extrae petróleo, petróleo crudo, asfalto y varias materias primas plásticas del petróleo crudo por destilación, fraccionamiento y extracción usando presión y vacío.</p>
 Saegewerk_NIC
 Aserradero (1950)
 factory_Saegewerk_NIC_details
@@ -1011,7 +1011,7 @@ factory_Sandgrube_details
 Sandgrube_1800
 Arenal (1800)
 factory_Sandgrube_1800_details
-<title>Arenal Dirschenberg</title> <p>La arena está disponible en muchos lugares, por ejemplo, en el desierto. Pero buena arena, para paredes o para concreto estable, es rara. La arena del desierto es redondeada y suave por el viento y, por lo tanto, no es adecuada para la construcción de edificios. Los granos ya no pueden quedar atrapados entre sí y no ofrecen ninguna superficie adhesiva a un aglutinante como el cemento. Esta es una buena arena para construir, fue quebrada por ríos de roca dura y está libre de tierra.</p>
+<p><em>Arenal Dirschenberg</em><br>La arena está disponible en muchos lugares, por ejemplo, en el desierto. Pero buena arena, para paredes o para concreto estable, es rara. La arena del desierto es redondeada y suave por el viento y, por lo tanto, no es adecuada para la construcción de edificios. Los granos ya no pueden quedar atrapados entre sí y no ofrecen ninguna superficie adhesiva a un aglutinante como el cemento. Esta es una buena arena para construir, fue quebrada por ríos de roca dura y está libre de tierra.</p>
 Schlachthaus_1800
 Matadero
 factory_Schlachthaus_1800_details
@@ -1031,11 +1031,11 @@ factory_Schwimmdock_details
 Stahlwerk_NIC
 Fábrica de acero (1891)
 factory_Stahlwerk_NIC_details
-<title>BZT-Tony Industrias del Acero LTD.</title> <p>Esta planta produce acero de alta calidad y otros para máquinas y construcción naval. Pero la industria automotriz, que comenzará a operar en el Simutranscosmos en 1905, también será un cliente bienvenido.</p>
+<p><em>BZT-Tony Industrias del Acero LTD.</em><br>Esta planta produce acero de alta calidad y otros para máquinas y construcción naval. Pero la industria automotriz, que comenzará a operar en el Simutranscosmos en 1905, también será un cliente bienvenido.</p>
 Stahlwerk_StAntony-Huette
 Fábrica de acero (1800)
 factory_Stahlwerk_StAntony-Huette_details
-<title>Fábrica de acero St.-Antony-Hütte</title> <p>La fábrica de hierro y acero fue fundada en Osterfeld en 1758 como la primera herrería en el área del Ruhr. Procesaba el mineral de hierro y carbón vegetal de la zona. La energía hidroeléctrica de Elpenbach se utilizó para operar el ventilador. El estanque del molino todavía está allí al día de hoy. En 1771, tuvieron el primer intento en el área del Ruhr de fundir mineral con carbón duro, el cual fracasó.</p>
+<p><em>Fábrica de acero St.-Antony-Hütte</em><br>La fábrica de hierro y acero fue fundada en Osterfeld en 1758 como la primera herrería en el área del Ruhr. Procesaba el mineral de hierro y carbón vegetal de la zona. La energía hidroeléctrica de Elpenbach se utilizó para operar el ventilador. El estanque del molino todavía está allí al día de hoy. En 1771, tuvieron el primer intento en el área del Ruhr de fundir mineral con carbón duro, el cual fracasó.</p>
 Steinbruch_alt
 Cantera (sur de Alemania)
 factory_Steinbruch_alt_details
@@ -1047,7 +1047,7 @@ factory_Steinbruch_gross_details
 SteinbruchHartkoppe
 Cantera Hartkoppe (1970)
 factory_SteinbruchHartkoppe_details
-<title>Cantera</title> <p>La grava gruesa es extraída de aquí.</p>
+<p>La grava gruesa es extraída de aquí.</p>
 Steinkohlekraftwerk
 Central eléctrica a carbón (1982)
 sueddt_alte_baeckerei
@@ -1069,7 +1069,7 @@ factory_Supermarkt_ODL_MGB_2000_details
 Tankstelle_Pascale
 Gasolinera Pascal
 factory_Tankstelle_Pascale_details
-<title>Gasolinera Pascal</title> <p>Recargue combustible, lave su automóvil y tome un capuccino.</p>
+<p><em>Gasolinera Pascal</em><br>Recargue combustible, lave su automóvil y tome un capuccino.</p>
 Tankstelle1941_NIC
 Gasolinera (1941)
 factory_Tankstelle1941_NIC_details
@@ -1077,7 +1077,7 @@ factory_Tankstelle1941_NIC_details
 Textilfabrik_1800
 Fábrica textil (1800)
 factory_Textilfabrik_1800_details
-<title>Fábrica textil</title> <p>En la fábrica textil se confecciona ropa para todos y moda para las mujeres del mundo. Utiliza tanto lana como lino.</p>
+<p>En la fábrica textil se confecciona ropa para todos y moda para las mujeres del mundo. Utiliza tanto lana como lino.</p>
 TierfutterFabrik_alt
 Fábrica de piensos (1953)
 factory_TierfutterFabrik_alt_details
@@ -1085,7 +1085,7 @@ factory_TierfutterFabrik_alt_details
 TierfutterFabrik_NIC
 Fábrica de piensos (1984)
 factory_TierfutterFabrik_NIC_details
-<title>Fábrica de piensos</title> <p>El alimento concentrado de esta fábrica es el combustible para la granja avícola.</p>
+<p>El alimento concentrado de esta fábrica es el combustible para la granja avícola.</p>
 Verbrennungskraftwerk
 Planta de energía residual
 factory_Verbrennungskraftwerk_details
@@ -1093,19 +1093,19 @@ factory_Verbrennungskraftwerk_details
 Verpackungshersteller
 Fábrica de embalajes
 factory_Verpackungshersteller_details
-<title>MakiePAK Verpackungsdesign GmbH</title> <p>El material de embalaje se produce en el lateral en muchas fábricas. Para destacar del mercado, MakiePAK Verpackungsdesign GmbH se ha especializado en la producción de envases especiales diseñados para marcas de alta calidad. Incluso el embalaje debe transmitir la alta calidad de los productos y, por lo tanto, ofrecer al comprador una experiencia de compra especial. MakiePAK GmbH apoya al cliente con el diseño del empaque y asegura la producción competitiva del empaque. La presentación individual de los productos tiene naturalmente su precio. Las latas se producen en formas y tamaños no estandarizados, así como cajas de cartón recubiertas con papel de aluminio en todas las formas y tamaños. La impresión colorida desde todos los lados garantiza que el cliente note los productos desde la distancia.</p>
+<p><em>MakiePAK Verpackungsdesign GmbH</em><br>El material de embalaje se produce en el lateral en muchas fábricas. Para destacar del mercado, MakiePAK Verpackungsdesign GmbH se ha especializado en la producción de envases especiales diseñados para marcas de alta calidad. Incluso el embalaje debe transmitir la alta calidad de los productos y, por lo tanto, ofrecer al comprador una experiencia de compra especial. MakiePAK GmbH apoya al cliente con el diseño del empaque y asegura la producción competitiva del empaque. La presentación individual de los productos tiene naturalmente su precio. Las latas se producen en formas y tamaños no estandarizados, así como cajas de cartón recubiertas con papel de aluminio en todas las formas y tamaños. La impresión colorida desde todos los lados garantiza que el cliente note los productos desde la distancia.</p>
 Verpackungsmittelfabrik_1909
 Fábrica de embalajes (1909)
 factory_Verpackungsmittelfabrik_1909_details
-<title>VerPAK GmbH</title> <p>La compañía VerPaK se especializa en la producción y distribución de latas de acero, cajas y barriles de madera, también hace bolsas de cartón, resistentes a las rasgaduras. Dado que las fábricas de papel no pueden suministrar pulpa de una calidad adecuada, se ve obligada a hacerlo en el anexo de los residuos de madera de la producción de barriles. Los residentes locales se quejan de la suciedad que proviene de esta fábrica. Las tiras de fibras provenientes de la producción de pulpa vuelan por todas partes.</p>
+<p><em>VerPAK GmbH</em><br>La compañía VerPaK se especializa en la producción y distribución de latas de acero, cajas y barriles de madera, también hace bolsas de cartón, resistentes a las rasgaduras. Dado que las fábricas de papel no pueden suministrar pulpa de una calidad adecuada, se ve obligada a hacerlo en el anexo de los residuos de madera de la producción de barriles. Los residentes locales se quejan de la suciedad que proviene de esta fábrica. Las tiras de fibras provenientes de la producción de pulpa vuelan por todas partes.</p>
 Versandhandel_1886
 Venta por correspondencia (1886)
 factory_Versandhandel_1886_details
-<title>Venta por correspondencia Mey & Edlich</title> <p>Es la empresa de pedidos por correo más antigua y activa, ubicada en Leipzig. Aquí los clientes no van al mercado a comprar, sino que seleccionan sus productos deseados en anuncios de periódicos o por catálogos. Los ordenan por carta y luego reciben los productos por paquete postal. Por ello, depende de un sistema postal que funcione bien: las cartas con los pedidos deben entregarse de manera confiable a la fábrica y los paquetes deben entregarse con la misma fiabilidad. La ropa, papelería y las máquinas pequeñas son ideales, ya que se pueden enviar fácilmente en paquetes, no son perecederos, son ligeros y de alta calidad.</p>
+<p><em>Venta por correspondencia Mey & Edlich</em><br>Es la empresa de pedidos por correo más antigua y activa, ubicada en Leipzig. Aquí los clientes no van al mercado a comprar, sino que seleccionan sus productos deseados en anuncios de periódicos o por catálogos. Los ordenan por carta y luego reciben los productos por paquete postal. Por ello, depende de un sistema postal que funcione bien: las cartas con los pedidos deben entregarse de manera confiable a la fábrica y los paquetes deben entregarse con la misma fiabilidad. La ropa, papelería y las máquinas pequeñas son ideales, ya que se pueden enviar fácilmente en paquetes, no son perecederos, son ligeros y de alta calidad.</p>
 Verwaltung_Muenchen_1965
 Administración de la ciudad
 factory_Verwaltung_Muenchen_1965_details
-<title>Rascacielos de Munich</title> <p>La casa es de 1929 pero necesitábamos un usuario final para computadoras desde 1965, ya que tenemos una fábrica de computadoras en juego desde ese año. En 1965, las computadoras cuestan tanto como una casa. Por lo tanto, ningún Simbürger puede pagar una computadora privada, pero una computadora tan cara puede valer la pena para el Estado, las grandes empresas y las administraciones de la ciudad. Es por eso que cada vez más administraciones municipales están cambiando a TI. A partir de 1980, se ofrecieron las primeras computadoras pequeñas en los grandes almacenes.</p>
+<p><em>Rascacielos de Munich</em><br>La casa es de 1929 pero necesitábamos un usuario final para computadoras desde 1965, ya que tenemos una fábrica de computadoras en juego desde ese año. En 1965, las computadoras cuestan tanto como una casa. Por lo tanto, ningún Simbürger puede pagar una computadora privada, pero una computadora tan cara puede valer la pena para el Estado, las grandes empresas y las administraciones de la ciudad. Es por eso que cada vez más administraciones municipales están cambiando a TI. A partir de 1980, se ofrecieron las primeras computadoras pequeñas en los grandes almacenes.</p>
 Viehhof_NIC
 Rancho (1919) - No usar
 factory_Viehhof_NIC_details
@@ -1117,7 +1117,7 @@ factory_Viehhof_NIC_2_details
 Viehhof_Nord1800
 Rancho (norte de Alemania)
 factory_Viehhof_Nord1800_details
-<title>Rancho Gutshaus Benckendorf</title> <p>Aquí se cría ganado y se fertiliza la remolacha azucarera con restos. Las remolachas prensadas son entonces alimento alto en calorías para el ganado. Con la biomasa se recicla, dejando el azúcar y la carne de res.</p>
+<p><em>Rancho Gutshaus Benckendorf</em><br>Aquí se cría ganado y se fertiliza la remolacha azucarera con restos. Las remolachas prensadas son entonces alimento alto en calorías para el ganado. Con la biomasa se recicla, dejando el azúcar y la carne de res.</p>
 VWAutohaus_NIC
 Concesionario de automóviles (1952)
 factory_VWAutohaus_NIC_details
@@ -1125,7 +1125,7 @@ factory_VWAutohaus_NIC_details
 Waferfabrik_1965
 Fábrica de obleas
 factory_Waferfabrik_1965_details
-<title>Fábrica de obleas</title> <p>A primera vista puedes ver cualquier planta química. Pero produce silicio de alta pureza y lo utiliza para producir obleas monocristalinas. Obleas, ese es el nombre de las obleas de silicio puro sobre las que se construyen los circuitos integrados, mejor conocidos como circuitos integrados o chips. La producción de silicio de alta pureza y la extracción de monocristales de una masa fundida requieren mucha energía. Hay que destacar que sólo suministrará suficientes obleas para los fabricantes de computadoras si hay suficiente suministro de energía eléctrica.</p>
+<p><em>Fábrica de obleas</em><br>A primera vista puedes ver cualquier planta química. Pero produce silicio de alta pureza y lo utiliza para producir obleas monocristalinas. Obleas, ese es el nombre de las obleas de silicio puro sobre las que se construyen los circuitos integrados, mejor conocidos como circuitos integrados o chips. La producción de silicio de alta pureza y la extracción de monocristales de una masa fundida requieren mucha energía. Hay que destacar que sólo suministrará suficientes obleas para los fabricantes de computadoras si hay suficiente suministro de energía eléctrica.</p>
 Wasserkraftwerk
 Central hidroeléctrica
 factory_Wasserkraftwerk_details
@@ -1133,11 +1133,11 @@ factory_Wasserkraftwerk_details
 Weinberg_NIC
 Viñedo
 factory_Weinberg_NIC_details
-<title>Viñedo Grettman</title> <p>En un viñedo, las sabrosas uvas para vinos finos se hacen con vides especiales.</p>
+<p><em>Viñedo Grettman</em><br>En un viñedo, las sabrosas uvas para vinos finos se hacen con vides especiales.</p>
 Werft
 Astillero (1980)
 factory_Werft_details
-<title>Astillero</title> <p>Aquí los cruceros de lujo, transatlánticos, cargueros, portacontenedores y petroleros son creados pieza por pieza. Los segmentos, llamados subsecciones, se ensamblan en muelles flotantes fuera, en aguas profundas.</p>
+<p><em>Astillero</em><br>Aquí los cruceros de lujo, transatlánticos, cargueros, portacontenedores y petroleros son creados pieza por pieza. Los segmentos, llamados subsecciones, se ensamblan en muelles flotantes fuera, en aguas profundas.</p>
 Werft_1870
 Astillero (1870)
 Windmuehle_1800
@@ -1145,15 +1145,15 @@ Molino de viento
 Zementwerk1800_NIC
 Fábrica de cemento (1859)
 factory_Zementwerk1800_NIC_details
-<title>Fábrica de cemento</title> <p>El cemento está hecho de arena y piedras. Esto se utiliza para la construcción de las casas Simutrans y más tarde, para la planta de hormigón. Los barriles de vino en desuso y los viejos sacos de harina de yute sirven como embalaje, pero también se llenan todos los recipientes proporcionados por el cliente, como las latas y las tinas.</p>
+<p><em>Fábrica de cemento</em><br>El cemento está hecho de arena y piedras. Esto se utiliza para la construcción de las casas Simutrans y más tarde, para la planta de hormigón. Los barriles de vino en desuso y los viejos sacos de harina de yute sirven como embalaje, pero también se llenan todos los recipientes proporcionados por el cliente, como las latas y las tinas.</p>
 Zementwerk1914
 Fábrica de cemento (1914)
 factory_Zementwerk1914_details
-<title>Fábrica de cemento de Burglengenfeld</title> <p>El cemento está hecho de cal y arena. En el largo edificio, se utilizó por primera vez un horno rotatorio para quemar el cemento. Hoy en día, los hornos rotativos se erigen al aire libre y, con sus largas tuberías inclinadas, son un identificador característico de una fábrica de cemento. En este primer horno rotativo, obviamente todavía no se había atrevido a exponerlo al viento y al clima, por lo que se erigió este bonito edificio.</p>
+<p><em>Fábrica de cemento de Burglengenfeld</em><br>El cemento está hecho de cal y arena. En el largo edificio, se utilizó por primera vez un horno rotatorio para quemar el cemento. Hoy en día, los hornos rotativos se erigen al aire libre y, con sus largas tuberías inclinadas, son un identificador característico de una fábrica de cemento. En este primer horno rotativo, obviamente todavía no se había atrevido a exponerlo al viento y al clima, por lo que se erigió este bonito edificio.</p>
 Zementwerk1979_NIC
 Fábrica de cemento
 factory_Zementwerk1979_NIC_details
-<title>Fábrica de cemento moderna</title> <p>Aquí el cemento de alta tecnología está hecho de arena, piedras, añadiendo aditivos. Esto se utiliza para la construcción de las casas Simutrans y para la planta de hormigón. La mayoría de los clientes recogen su cemento de esta pequeña fábrica de cemento en camión. La buena limpieza de los gases de escape y la alta temperatura de combustión permiten quemar los residuos problemáticos. Esta es una forma bienvenida de aumentar la rentabilidad de la planta, dado el bajo precio del cemento.</p>
+<p>Aquí el cemento de alta tecnología está hecho de arena, piedras, añadiendo aditivos. Esto se utiliza para la construcción de las casas Simutrans y para la planta de hormigón. La mayoría de los clientes recogen su cemento de esta pequeña fábrica de cemento en camión. La buena limpieza de los gases de escape y la alta temperatura de combustión permiten quemar los residuos problemáticos. Esta es una forma bienvenida de aumentar la rentabilidad de la planta, dado el bajo precio del cemento.</p>
 #_____________________________________field_____________________________________
 #_____________________________________field_____________________________________
 Riesenrad

@@ -6,7 +6,6 @@
 Obj=factory
 name=AlteGastwirtschaft
 copyright=pumuckl999
-pax_level=125
 intro_year=1800
 intro_month=1
 retire_year=1980
@@ -30,6 +29,7 @@ InputFactor[3]=65
 InputGood[4]=Backwaren
 InputCapacity[4]=400
 electricity_amount=3
+pax_level=30
 passenger_boost=2000
 mail_boost=500
 expand_probability=40

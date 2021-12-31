@@ -1,9 +1,8 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu:27-12-2017
-#	Letzte Bearbeitung: $Date$ - $Author$
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Markthalle_1891
 copyright=pumuckl999
@@ -40,6 +39,7 @@ InputGood[6]=Fleisch
 InputCapacity[6]=400
 InputFactor[6]=65
 electricity_amount=3
+pax_level=60
 passenger_boost=2000
 mail_boost=500
 expand_probability=40

@@ -1,12 +1,11 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Weinberg_NIC
 copyright=Pumuckl999
-pax_level=15
 intro_year=1800
 intro_month=1
 Location=land
@@ -28,6 +27,7 @@ production_per_field[1]=10
 spawn_weight[1]=2
 has_snow[1]=1
 electricity_amount=1
+pax_level=3
 passenger_boost=1000
 mail_boost=500
 climates=mediterran, temperate, tundra, rocky

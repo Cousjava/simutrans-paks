@@ -1,6 +1,6 @@
 Die Urheber der Sound-Dateien.
 
-
+adler.wav			Makie
 arctic.wav		von Pak64 kopiert 
 beaches.wav		von Pak64 kopiert 
 bigoldplanes.wav
@@ -30,12 +30,20 @@ explosion.wav		von Pak64 kopiert
 fluss.wav			Makie
 forest.wav		von Pak64 kopiert 
 gavel.wav			von Pak128 kopiert
+Hahn.wav			Makie
+Huhn.wav			Makie
+Huhnhaus.wav		Makie
 horse.wav			von Pak64 kopiert etwas heller die Töne
 Integral.wav		Makie
 jackhammer.wav		von Pak64 kopiert 
 koe1.wav			Makie
+Kutsche1.wav		Makie
 mediterran.wav
+oktoberfest.wav		Makie
+Pferd1.wav		Makie
+Pferd2.wav		Makie
 planelow.wav
+Schafe.wav		Makie
 seagulls.wav		von Pak64 kopiert 
 smalloldplanes.wav
 Schranke1960.wav		Makie

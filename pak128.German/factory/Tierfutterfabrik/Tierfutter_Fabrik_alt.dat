@@ -1,12 +1,11 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-# --------------------------------
+--------------------------------
 Obj=factory
 name=TierfutterFabrik_alt
 copyright=Rainer Bluhm/TonyBzt
-pax_level=1
 intro_year=1953
 intro_month=1
 retire_year=1983
@@ -21,6 +20,7 @@ InputFactor[0]=100
 OutputGood[0]=Tierfutter
 OutputCapacity[0]=400
 electricity_amount=35
+pax_level=20
 passenger_boost=1000
 mail_boost=500
 climates=desert, tropic, mediterran, temperate

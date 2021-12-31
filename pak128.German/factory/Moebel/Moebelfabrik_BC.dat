@@ -6,7 +6,6 @@
 Obj=factory
 name=Moebelfabrik1922
 copyright=pumuckl999
-pax_level=15
 intro_year=1922
 intro_month=1
 retire_year=1990
@@ -21,6 +20,7 @@ InputSupplier[0]=1
 OutputGood[0]=Moebel
 OutputCapacity[0]=400
 electricity_amount=25
+pax_level=50
 passenger_boost=1000
 mail_boost=500
 climates=desert, tropic, mediterran, temperate

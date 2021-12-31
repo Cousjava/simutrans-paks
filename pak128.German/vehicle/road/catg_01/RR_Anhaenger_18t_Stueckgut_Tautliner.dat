@@ -6,9 +6,9 @@
 obj=vehicle
 name=Anhaenger_18t_Tautliner
 copyright=RedRabbit
-intro_year=1992
+intro_year=1988
 intro_month=1
-retire_year=2000
+retire_year=2999
 retire_month=12
 cost=1490000
 runningcost=38

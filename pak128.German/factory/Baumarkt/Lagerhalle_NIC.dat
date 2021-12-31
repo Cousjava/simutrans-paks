@@ -6,7 +6,6 @@
 Obj=factory
 name=Lagerhalle_NIC
 copyright=TonyBzt
-pax_level=10
 intro_year=1930
 intro_month=1
 Location=City
@@ -25,6 +24,7 @@ InputGood[3]=Zement
 InputCapacity[3]=360
 InputSupplier[3]=0
 electricity_amount=10
+pax_level=100
 passenger_boost=1000
 mail_boost=500
 climates=desert, tropic, mediterran, temperate

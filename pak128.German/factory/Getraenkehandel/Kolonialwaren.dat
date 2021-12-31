@@ -1,12 +1,11 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 13-08-2017
-# --------------------------------
+--------------------------------
 Obj=factory
 name=Gastwirtschaft_mit_Laden
 copyright=pumuckl999
-pax_level=20
 intro_year=1892
 intro_month=1
 retire_year=1980
@@ -37,6 +36,7 @@ InputGood[6]=Suedfruechte
 InputCapacity[6]=160
 InputFactor[6]=50
 electricity_amount=1
+pax_level=30
 passenger_boost=1000
 mail_boost=500
 MapColor=132

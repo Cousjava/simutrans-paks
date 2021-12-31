@@ -1,14 +1,11 @@
-# -------------------------------
+-------------------------------
 #	PAK128.german
 #	Industrie
 #	Neu: 
-#	Letzte Bearbeitung:
-#	$Date: 2017-04-09 09:56:45 +0200 (So, 09. Apr 2017) $ - $Author: NNW $
-# --------------------------------
+--------------------------------
 Obj=factory
 name=ALP_Saegewerk_NIC
 copyright=RedRabbit
-pax_level=13
 intro_year=1800
 intro_month=1
 retire_year=1950
@@ -23,6 +20,7 @@ InputSupplier[0]=2
 OutputGood[0]=Bretter
 OutputCapacity[0]=200
 electricity_amount=15
+pax_level=13
 passenger_boost=1000
 mail_boost=500
 climates=rocky

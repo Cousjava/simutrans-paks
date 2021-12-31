@@ -6,7 +6,6 @@
 Obj=factory
 name=Klinik_1912
 copyright=pumuckl999
-pax_level=41
 intro_year=1912
 intro_month=1
 Location=City
@@ -29,6 +28,7 @@ InputCapacity[3]=1000
 InputFactor[3]=30
 InputSupplier[3]=1
 electricity_amount=40
+pax_level=70
 passenger_boost=1000
 mail_boost=500
 climates=desert, tropic, mediterran, temperate, tundra, rocky

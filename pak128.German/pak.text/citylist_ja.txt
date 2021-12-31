@@ -1,0 +1,91 @@
+§
+# ---------------------------------------------------------
+# PAK128.german
+# Citylist
+# 12-2011
+# Grerman cities
+# in Katakana (カタカナ)
+# use for Japanese language environment
+# ---------------------------------------------------------
+
+#Aachen
+アーヘン
+#Adenau
+アデナウ
+#Ahaus
+アーハウス
+#Ahlen
+アーレン
+#Aub
+アウプ
+#Aue
+アウエ
+#Augsburg
+アウクスブルク
+#Erfurt
+エルフルト
+#Essen
+エッセン
+#Karlsruhe
+カールスルーエ
+#Kiel
+キール
+#Köln
+ケルン
+#Saarbrücken
+ザールブリュッケン
+#Schwerin
+シュベリーン
+#Stuttgart
+シュツットガルト
+#Schwarzwald
+シュワルツワルト
+#Duisburg
+デュイスブルク
+#Düsseldorf
+デュッセルドルフ
+#Dortmund
+ドルトムント
+#Dresden
+ドレスデン
+#Nuremberg
+ニュルンベルク
+#Neubrandenburg
+ノイブランデンブルク
+#Hannover
+ハノーバー
+#Hamburg
+ハンブルク
+#Würzburg
+ビュルツブルク
+#Freiburg im Breisgau
+フライブルク
+#Frankfurt am Main
+フランクフルト
+#Bremen
+ブレーメン
+#Berlin
+ベルリン
+#Potsdam
+ポツダム
+#Bonn
+ボン
+#Mainz
+マインツ
+#Magdeburg
+マクデブルク
+#Mannheim
+マンハイム
+#Münster
+ミュンスター
+#München
+ミュンヘン
+#Leipzig
+ライプチヒ
+#Lübeck
+リューベック
+#Regensburg
+レーゲンスブルク
+#Rostock
+ロストック
+

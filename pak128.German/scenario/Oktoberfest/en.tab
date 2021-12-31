@@ -1,0 +1,2 @@
+Due to supplied wares to factories in the city
+Due to supplied wares to factories in the city, the city has increased growth.<br>Summary of last month:<br>Increased growth: {growth} citizens<br>Base maximum growth: {baseMaxGrowth}<br>Increased maximum growth: {maxGrowth}<br>Growth factor: {growthFactor} (Increases growth by a factor)<br>Maximum growth factor: {maxGrowthFactor} (Increases maximum Growth by a factor)<br>Calculated maximum growth: {calcMaxGrowth}<br><br>Total increased growth last month: {calcGrowth}
